@@ -24,13 +24,12 @@ trait PageNumber extends StObject {
   
   def Select(): Unit
   
-  @JSName("Word.PageNumber_typekey")
+  /* private */ @JSName("Word.PageNumber_typekey")
   var WordDotPageNumber_typekey: PageNumber
 }
 object PageNumber {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Alignment: WdPageNumberAlignment,
     Application: Application,
     Copy: () => Unit,
@@ -47,37 +46,26 @@ object PageNumber {
     __obj.asInstanceOf[PageNumber]
   }
   
-  @scala.inline
-  implicit class PageNumberMutableBuilder[Self <: PageNumber] (val x: Self) extends AnyVal {
+  extension [Self <: PageNumber](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: WdPageNumberAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: WdPageNumberAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
+    inline def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWordDotPageNumber_typekey(value: PageNumber): Self = StObject.set(x, "Word.PageNumber_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotPageNumber_typekey(value: PageNumber): Self = StObject.set(x, "Word.PageNumber_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -66,8 +66,7 @@ trait XMethodParameter
 }
 object XMethodParameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     Position: Double,
     Type: XTypeDescription,
@@ -84,31 +83,22 @@ object XMethodParameter {
     __obj.asInstanceOf[XMethodParameter]
   }
   
-  @scala.inline
-  implicit class XMethodParameterMutableBuilder[Self <: XMethodParameter] (val x: Self) extends AnyVal {
+  extension [Self <: XMethodParameter](x: Self) {
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosition(value: () => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => XTypeDescription): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => XTypeDescription): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsIn(value: () => Boolean): Self = StObject.set(x, "isIn", js.Any.fromFunction0(value))
+    inline def setIsIn(value: () => Boolean): Self = StObject.set(x, "isIn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOut(value: () => Boolean): Self = StObject.set(x, "isOut", js.Any.fromFunction0(value))
+    inline def setIsOut(value: () => Boolean): Self = StObject.set(x, "isOut", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: XTypeDescription): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XTypeDescription): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

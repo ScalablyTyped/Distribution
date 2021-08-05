@@ -13,22 +13,17 @@ trait GetBucketCorsOutput extends StObject {
 }
 object GetBucketCorsOutput {
   
-  @scala.inline
-  def apply(): GetBucketCorsOutput = {
+  inline def apply(): GetBucketCorsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketCorsOutput]
   }
   
-  @scala.inline
-  implicit class GetBucketCorsOutputMutableBuilder[Self <: GetBucketCorsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketCorsOutput](x: Self) {
     
-    @scala.inline
-    def setCORSRules(value: CORSRules): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
+    inline def setCORSRules(value: CORSRules): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCORSRulesUndefined: Self = StObject.set(x, "CORSRules", js.undefined)
+    inline def setCORSRulesUndefined: Self = StObject.set(x, "CORSRules", js.undefined)
     
-    @scala.inline
-    def setCORSRulesVarargs(value: CORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value :_*))
+    inline def setCORSRulesVarargs(value: CORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value :_*))
   }
 }

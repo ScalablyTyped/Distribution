@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditorAutoClosingOvertypeStrategy extends StObject
 object EditorAutoClosingOvertypeStrategy {
   
-  @scala.inline
-  def always: typings.monacoEditor.monacoEditorStrings.always = "always".asInstanceOf[typings.monacoEditor.monacoEditorStrings.always]
+  inline def always: typings.monacoEditor.monacoEditorStrings.always = "always".asInstanceOf[typings.monacoEditor.monacoEditorStrings.always]
   
-  @scala.inline
-  def auto: typings.monacoEditor.monacoEditorStrings.auto = "auto".asInstanceOf[typings.monacoEditor.monacoEditorStrings.auto]
+  inline def auto: typings.monacoEditor.monacoEditorStrings.auto = "auto".asInstanceOf[typings.monacoEditor.monacoEditorStrings.auto]
   
-  @scala.inline
-  def never: typings.monacoEditor.monacoEditorStrings.never = "never".asInstanceOf[typings.monacoEditor.monacoEditorStrings.never]
+  inline def never: typings.monacoEditor.monacoEditorStrings.never = "never".asInstanceOf[typings.monacoEditor.monacoEditorStrings.never]
 }

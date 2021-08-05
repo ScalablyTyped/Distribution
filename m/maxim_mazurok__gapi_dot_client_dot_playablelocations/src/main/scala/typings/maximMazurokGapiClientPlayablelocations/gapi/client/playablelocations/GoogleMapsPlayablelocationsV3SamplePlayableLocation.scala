@@ -32,52 +32,37 @@ trait GoogleMapsPlayablelocationsV3SamplePlayableLocation extends StObject {
 }
 object GoogleMapsPlayablelocationsV3SamplePlayableLocation {
   
-  @scala.inline
-  def apply(): GoogleMapsPlayablelocationsV3SamplePlayableLocation = {
+  inline def apply(): GoogleMapsPlayablelocationsV3SamplePlayableLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SamplePlayableLocation]
   }
   
-  @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3SamplePlayableLocationMutableBuilder[Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocation](x: Self) {
     
-    @scala.inline
-    def setCenterPoint(value: GoogleTypeLatLng): Self = StObject.set(x, "centerPoint", value.asInstanceOf[js.Any])
+    inline def setCenterPoint(value: GoogleTypeLatLng): Self = StObject.set(x, "centerPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterPointUndefined: Self = StObject.set(x, "centerPoint", js.undefined)
+    inline def setCenterPointUndefined: Self = StObject.set(x, "centerPoint", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
+    inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceIdUndefined: Self = StObject.set(x, "placeId", js.undefined)
+    inline def setPlaceIdUndefined: Self = StObject.set(x, "placeId", js.undefined)
     
-    @scala.inline
-    def setPlusCode(value: String): Self = StObject.set(x, "plusCode", value.asInstanceOf[js.Any])
+    inline def setPlusCode(value: String): Self = StObject.set(x, "plusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlusCodeUndefined: Self = StObject.set(x, "plusCode", js.undefined)
+    inline def setPlusCodeUndefined: Self = StObject.set(x, "plusCode", js.undefined)
     
-    @scala.inline
-    def setSnappedPoint(value: GoogleTypeLatLng): Self = StObject.set(x, "snappedPoint", value.asInstanceOf[js.Any])
+    inline def setSnappedPoint(value: GoogleTypeLatLng): Self = StObject.set(x, "snappedPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnappedPointUndefined: Self = StObject.set(x, "snappedPoint", js.undefined)
+    inline def setSnappedPointUndefined: Self = StObject.set(x, "snappedPoint", js.undefined)
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

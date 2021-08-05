@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlSolutionScope extends StObject
 object OlSolutionScope {
   
-  @scala.inline
-  def olHideInDefaultModules: `0` = 0.asInstanceOf[`0`]
+  inline def olHideInDefaultModules: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olShowInDefaultModules: `1` = 1.asInstanceOf[`1`]
+  inline def olShowInDefaultModules: `1` = 1.asInstanceOf[`1`]
 }

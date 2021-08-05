@@ -29,8 +29,7 @@ object streamFilterWithStateStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(
+    inline def create(
       source: Stream,
       predicate: js.Function3[
           /* value */ js.Any, 

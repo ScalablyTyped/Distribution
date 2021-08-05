@@ -17,17 +17,14 @@ object Valerie {
   }
   object ConvertersStatic {
     
-    @scala.inline
-    def apply(passThrough: IConverter): ConvertersStatic = {
+    inline def apply(passThrough: IConverter): ConvertersStatic = {
       val __obj = js.Dynamic.literal(passThrough = passThrough.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConvertersStatic]
     }
     
-    @scala.inline
-    implicit class ConvertersStaticMutableBuilder[Self <: ConvertersStatic] (val x: Self) extends AnyVal {
+    extension [Self <: ConvertersStatic](x: Self) {
       
-      @scala.inline
-      def setPassThrough(value: IConverter): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
+      inline def setPassThrough(value: IConverter): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,20 +47,16 @@ object Valerie {
   }
   object IRule {
     
-    @scala.inline
-    def apply(defaultOptions: ValidationOptions, test: js.Any => ValidationResult): IRule = {
+    inline def apply(defaultOptions: ValidationOptions, test: js.Any => ValidationResult): IRule = {
       val __obj = js.Dynamic.literal(defaultOptions = defaultOptions.asInstanceOf[js.Any], test = js.Any.fromFunction1(test))
       __obj.asInstanceOf[IRule]
     }
     
-    @scala.inline
-    implicit class IRuleMutableBuilder[Self <: IRule] (val x: Self) extends AnyVal {
+    extension [Self <: IRule](x: Self) {
       
-      @scala.inline
-      def setDefaultOptions(value: ValidationOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
+      inline def setDefaultOptions(value: ValidationOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest(value: js.Any => ValidationResult): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+      inline def setTest(value: js.Any => ValidationResult): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
     }
   }
   
@@ -286,8 +279,7 @@ object Valerie {
   }
   object ModelValidationStateOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       applicable: () => Boolean,
       excludeFromSummary: Boolean,
       failureMessage: String,
@@ -298,23 +290,17 @@ object Valerie {
       __obj.asInstanceOf[ModelValidationStateOptions]
     }
     
-    @scala.inline
-    implicit class ModelValidationStateOptionsMutableBuilder[Self <: ModelValidationStateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ModelValidationStateOptions](x: Self) {
       
-      @scala.inline
-      def setApplicable(value: () => Boolean): Self = StObject.set(x, "applicable", js.Any.fromFunction0(value))
+      inline def setApplicable(value: () => Boolean): Self = StObject.set(x, "applicable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExcludeFromSummary(value: Boolean): Self = StObject.set(x, "excludeFromSummary", value.asInstanceOf[js.Any])
+      inline def setExcludeFromSummary(value: Boolean): Self = StObject.set(x, "excludeFromSummary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureMessage(value: String): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
+      inline def setFailureMessage(value: String): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
+      inline def setName(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPaused(value: () => Boolean): Self = StObject.set(x, "paused", js.Any.fromFunction0(value))
+      inline def setPaused(value: () => Boolean): Self = StObject.set(x, "paused", js.Any.fromFunction0(value))
     }
   }
   
@@ -355,8 +341,7 @@ object Valerie {
   }
   object NumericHelper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addThousandsSeparator: String => String,
       format: (Double, String) => String,
       init: (String, String, String, Double) => NumericHelper,
@@ -371,35 +356,25 @@ object Valerie {
       __obj.asInstanceOf[NumericHelper]
     }
     
-    @scala.inline
-    implicit class NumericHelperMutableBuilder[Self <: NumericHelper] (val x: Self) extends AnyVal {
+    extension [Self <: NumericHelper](x: Self) {
       
-      @scala.inline
-      def setAddThousandsSeparator(value: String => String): Self = StObject.set(x, "addThousandsSeparator", js.Any.fromFunction1(value))
+      inline def setAddThousandsSeparator(value: String => String): Self = StObject.set(x, "addThousandsSeparator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormat(value: (Double, String) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (Double, String) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInit(value: (String, String, String, Double) => NumericHelper): Self = StObject.set(x, "init", js.Any.fromFunction4(value))
+      inline def setInit(value: (String, String, String, Double) => NumericHelper): Self = StObject.set(x, "init", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setIsCurrencyMajor(value: String => Boolean): Self = StObject.set(x, "isCurrencyMajor", js.Any.fromFunction1(value))
+      inline def setIsCurrencyMajor(value: String => Boolean): Self = StObject.set(x, "isCurrencyMajor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsCurrencyMajorMinor(value: String => Boolean): Self = StObject.set(x, "isCurrencyMajorMinor", js.Any.fromFunction1(value))
+      inline def setIsCurrencyMajorMinor(value: String => Boolean): Self = StObject.set(x, "isCurrencyMajorMinor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsFloat(value: String => Boolean): Self = StObject.set(x, "isFloat", js.Any.fromFunction1(value))
+      inline def setIsFloat(value: String => Boolean): Self = StObject.set(x, "isFloat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsInteger(value: String => Boolean): Self = StObject.set(x, "isInteger", js.Any.fromFunction1(value))
+      inline def setIsInteger(value: String => Boolean): Self = StObject.set(x, "isInteger", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParse(value: String => Double): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: String => Double): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnformat(value: String => String): Self = StObject.set(x, "unformat", js.Any.fromFunction1(value))
+      inline def setUnformat(value: String => String): Self = StObject.set(x, "unformat", js.Any.fromFunction1(value))
     }
   }
   
@@ -704,20 +679,16 @@ object Valerie {
   }
   object ValidatableModel {
     
-    @scala.inline
-    def apply[T](end: () => T, name: String => PropertyValidationState[T]): ValidatableModel[T] = {
+    inline def apply[T](end: () => T, name: String => PropertyValidationState[T]): ValidatableModel[T] = {
       val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), name = js.Any.fromFunction1(name))
       __obj.asInstanceOf[ValidatableModel[T]]
     }
     
-    @scala.inline
-    implicit class ValidatableModelMutableBuilder[Self <: ValidatableModel[?], T] (val x: Self & ValidatableModel[T]) extends AnyVal {
+    extension [Self <: ValidatableModel[?], T](x: Self & ValidatableModel[T]) {
       
-      @scala.inline
-      def setEnd(value: () => T): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => T): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String => PropertyValidationState[T]): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+      inline def setName(value: String => PropertyValidationState[T]): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     }
   }
   
@@ -754,74 +725,52 @@ object Valerie {
   }
   object ValidationOptions {
     
-    @scala.inline
-    def apply(): ValidationOptions = {
+    inline def apply(): ValidationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidationOptions]
     }
     
-    @scala.inline
-    implicit class ValidationOptionsMutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationOptions](x: Self) {
       
-      @scala.inline
-      def setApplicable(value: () => js.Any): Self = StObject.set(x, "applicable", js.Any.fromFunction0(value))
+      inline def setApplicable(value: () => js.Any): Self = StObject.set(x, "applicable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setApplicableUndefined: Self = StObject.set(x, "applicable", js.undefined)
+      inline def setApplicableUndefined: Self = StObject.set(x, "applicable", js.undefined)
       
-      @scala.inline
-      def setConverter(value: IConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+      inline def setConverter(value: IConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
+      inline def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
       
-      @scala.inline
-      def setEntryFormat(value: String): Self = StObject.set(x, "entryFormat", value.asInstanceOf[js.Any])
+      inline def setEntryFormat(value: String): Self = StObject.set(x, "entryFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryFormatUndefined: Self = StObject.set(x, "entryFormat", js.undefined)
+      inline def setEntryFormatUndefined: Self = StObject.set(x, "entryFormat", js.undefined)
       
-      @scala.inline
-      def setExcludeFromSummary(value: Boolean): Self = StObject.set(x, "excludeFromSummary", value.asInstanceOf[js.Any])
+      inline def setExcludeFromSummary(value: Boolean): Self = StObject.set(x, "excludeFromSummary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeFromSummaryUndefined: Self = StObject.set(x, "excludeFromSummary", js.undefined)
+      inline def setExcludeFromSummaryUndefined: Self = StObject.set(x, "excludeFromSummary", js.undefined)
       
-      @scala.inline
-      def setInvalidFailureMessage(value: String): Self = StObject.set(x, "invalidFailureMessage", value.asInstanceOf[js.Any])
+      inline def setInvalidFailureMessage(value: String): Self = StObject.set(x, "invalidFailureMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidFailureMessageUndefined: Self = StObject.set(x, "invalidFailureMessage", js.undefined)
+      inline def setInvalidFailureMessageUndefined: Self = StObject.set(x, "invalidFailureMessage", js.undefined)
       
-      @scala.inline
-      def setMissingFailureMessage(value: String): Self = StObject.set(x, "missingFailureMessage", value.asInstanceOf[js.Any])
+      inline def setMissingFailureMessage(value: String): Self = StObject.set(x, "missingFailureMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingFailureMessageUndefined: Self = StObject.set(x, "missingFailureMessage", js.undefined)
+      inline def setMissingFailureMessageUndefined: Self = StObject.set(x, "missingFailureMessage", js.undefined)
       
-      @scala.inline
-      def setName(value: () => js.Any): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
+      inline def setName(value: () => js.Any): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRequired(value: () => js.Any): Self = StObject.set(x, "required", js.Any.fromFunction0(value))
+      inline def setRequired(value: () => js.Any): Self = StObject.set(x, "required", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setRules(value: js.Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setValueFormat(value: String): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
+      inline def setValueFormat(value: String): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
+      inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
     }
   }
   
@@ -856,20 +805,16 @@ object Valerie {
   }
   object ValidationResultStatic {
     
-    @scala.inline
-    def apply(createFailedResult: String => ValidationResult, passedInstance: ValidationResult): ValidationResultStatic = {
+    inline def apply(createFailedResult: String => ValidationResult, passedInstance: ValidationResult): ValidationResultStatic = {
       val __obj = js.Dynamic.literal(createFailedResult = js.Any.fromFunction1(createFailedResult), passedInstance = passedInstance.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationResultStatic]
     }
     
-    @scala.inline
-    implicit class ValidationResultStaticMutableBuilder[Self <: ValidationResultStatic] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationResultStatic](x: Self) {
       
-      @scala.inline
-      def setCreateFailedResult(value: String => ValidationResult): Self = StObject.set(x, "createFailedResult", js.Any.fromFunction1(value))
+      inline def setCreateFailedResult(value: String => ValidationResult): Self = StObject.set(x, "createFailedResult", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPassedInstance(value: ValidationResult): Self = StObject.set(x, "passedInstance", value.asInstanceOf[js.Any])
+      inline def setPassedInstance(value: ValidationResult): Self = StObject.set(x, "passedInstance", value.asInstanceOf[js.Any])
     }
   }
   
@@ -919,20 +864,16 @@ object Valerie {
   }
   object summaryItem {
     
-    @scala.inline
-    def apply(message: String, name: String): summaryItem = {
+    inline def apply(message: String, name: String): summaryItem = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[summaryItem]
     }
     
-    @scala.inline
-    implicit class summaryItemMutableBuilder[Self <: summaryItem] (val x: Self) extends AnyVal {
+    extension [Self <: summaryItem](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -15,19 +15,15 @@ trait GameSaveBlobInfo extends StObject {
 }
 object GameSaveBlobInfo {
   
-  @scala.inline
-  def apply(name: String, size: Double): GameSaveBlobInfo = {
+  inline def apply(name: String, size: Double): GameSaveBlobInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSaveBlobInfo]
   }
   
-  @scala.inline
-  implicit class GameSaveBlobInfoMutableBuilder[Self <: GameSaveBlobInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GameSaveBlobInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

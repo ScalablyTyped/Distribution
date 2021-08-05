@@ -27,8 +27,7 @@ trait Board
 }
 object Board {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     allowedMappings: StringDictionary[StringDictionary[js.Array[String]]],
     canEdit: Boolean,
@@ -45,37 +44,26 @@ object Board {
     __obj.asInstanceOf[Board]
   }
   
-  @scala.inline
-  implicit class BoardMutableBuilder[Self <: Board] (val x: Self) extends AnyVal {
+  extension [Self <: Board](x: Self) {
     
-    @scala.inline
-    def setAllowedMappings(value: StringDictionary[StringDictionary[js.Array[String]]]): Self = StObject.set(x, "allowedMappings", value.asInstanceOf[js.Any])
+    inline def setAllowedMappings(value: StringDictionary[StringDictionary[js.Array[String]]]): Self = StObject.set(x, "allowedMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanEdit(value: Boolean): Self = StObject.set(x, "canEdit", value.asInstanceOf[js.Any])
+    inline def setCanEdit(value: Boolean): Self = StObject.set(x, "canEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumns(value: js.Array[BoardColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[BoardColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: BoardColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: BoardColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setFields(value: BoardFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: BoardFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: js.Array[BoardRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[BoardRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: BoardRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: BoardRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

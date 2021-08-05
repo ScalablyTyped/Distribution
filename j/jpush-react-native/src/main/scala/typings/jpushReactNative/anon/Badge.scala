@@ -46,8 +46,7 @@ trait Badge extends StObject {
 }
 object Badge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     badge: String,
     content: String,
     extras: Extra,
@@ -60,28 +59,20 @@ object Badge {
     __obj.asInstanceOf[Badge]
   }
   
-  @scala.inline
-  implicit class BadgeMutableBuilder[Self <: Badge] (val x: Self) extends AnyVal {
+  extension [Self <: Badge](x: Self) {
     
-    @scala.inline
-    def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtras(value: Extra): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+    inline def setExtras(value: Extra): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageID(value: String): Self = StObject.set(x, "messageID", value.asInstanceOf[js.Any])
+    inline def setMessageID(value: String): Self = StObject.set(x, "messageID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationEventType(value: notificationArrived | notificationOpened): Self = StObject.set(x, "notificationEventType", value.asInstanceOf[js.Any])
+    inline def setNotificationEventType(value: notificationArrived | notificationOpened): Self = StObject.set(x, "notificationEventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRing(value: String): Self = StObject.set(x, "ring", value.asInstanceOf[js.Any])
+    inline def setRing(value: String): Self = StObject.set(x, "ring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

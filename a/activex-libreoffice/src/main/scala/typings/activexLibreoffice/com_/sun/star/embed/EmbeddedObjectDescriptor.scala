@@ -41,8 +41,7 @@ trait EmbeddedObjectDescriptor extends StObject {
 }
 object EmbeddedObjectDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OutplaceDispatchInterceptor: XDispatchProviderInterceptor,
     RecoveryStorage: XStorage,
     StoreVisualReplacement: Boolean
@@ -51,16 +50,12 @@ object EmbeddedObjectDescriptor {
     __obj.asInstanceOf[EmbeddedObjectDescriptor]
   }
   
-  @scala.inline
-  implicit class EmbeddedObjectDescriptorMutableBuilder[Self <: EmbeddedObjectDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: EmbeddedObjectDescriptor](x: Self) {
     
-    @scala.inline
-    def setOutplaceDispatchInterceptor(value: XDispatchProviderInterceptor): Self = StObject.set(x, "OutplaceDispatchInterceptor", value.asInstanceOf[js.Any])
+    inline def setOutplaceDispatchInterceptor(value: XDispatchProviderInterceptor): Self = StObject.set(x, "OutplaceDispatchInterceptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecoveryStorage(value: XStorage): Self = StObject.set(x, "RecoveryStorage", value.asInstanceOf[js.Any])
+    inline def setRecoveryStorage(value: XStorage): Self = StObject.set(x, "RecoveryStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreVisualReplacement(value: Boolean): Self = StObject.set(x, "StoreVisualReplacement", value.asInstanceOf[js.Any])
+    inline def setStoreVisualReplacement(value: Boolean): Self = StObject.set(x, "StoreVisualReplacement", value.asInstanceOf[js.Any])
   }
 }

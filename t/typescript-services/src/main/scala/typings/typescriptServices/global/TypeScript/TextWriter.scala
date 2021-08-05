@@ -24,21 +24,21 @@ class TextWriter protected ()
   /* CompleteClass */
   override def WriteLine(s: String): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var contents: js.Any = js.native
   
   /* CompleteClass */
   override def getOutputFile(): typings.typescriptServices.TypeScript.OutputFile = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var name: js.Any = js.native
   
   /* CompleteClass */
   var onNewLine: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var outputFileType: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var writeByteOrderMark: js.Any = js.native
 }

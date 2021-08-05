@@ -10,16 +10,13 @@ trait ICurrentTimeChangeRequestedEventArgs extends StObject {
 }
 object ICurrentTimeChangeRequestedEventArgs {
   
-  @scala.inline
-  def apply(time: Double): ICurrentTimeChangeRequestedEventArgs = {
+  inline def apply(time: Double): ICurrentTimeChangeRequestedEventArgs = {
     val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICurrentTimeChangeRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class ICurrentTimeChangeRequestedEventArgsMutableBuilder[Self <: ICurrentTimeChangeRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ICurrentTimeChangeRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

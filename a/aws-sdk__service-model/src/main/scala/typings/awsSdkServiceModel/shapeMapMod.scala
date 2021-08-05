@@ -10,6 +10,5 @@ object shapeMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isShapeMap(arg: js.Any): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.ShapeMap */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShapeMap")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.ShapeMap */ Boolean]
+  inline def isShapeMap(arg: js.Any): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.ShapeMap */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShapeMap")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.ShapeMap */ Boolean]
 }

@@ -123,160 +123,109 @@ trait Patch extends StObject {
 }
 object Patch {
   
-  @scala.inline
-  def apply(): Patch = {
+  inline def apply(): Patch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Patch]
   }
   
-  @scala.inline
-  implicit class PatchMutableBuilder[Self <: Patch] (val x: Self) extends AnyVal {
+  extension [Self <: Patch](x: Self) {
     
-    @scala.inline
-    def setAdvisoryIds(value: PatchAdvisoryIdList): Self = StObject.set(x, "AdvisoryIds", value.asInstanceOf[js.Any])
+    inline def setAdvisoryIds(value: PatchAdvisoryIdList): Self = StObject.set(x, "AdvisoryIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvisoryIdsUndefined: Self = StObject.set(x, "AdvisoryIds", js.undefined)
+    inline def setAdvisoryIdsUndefined: Self = StObject.set(x, "AdvisoryIds", js.undefined)
     
-    @scala.inline
-    def setAdvisoryIdsVarargs(value: PatchAdvisoryId*): Self = StObject.set(x, "AdvisoryIds", js.Array(value :_*))
+    inline def setAdvisoryIdsVarargs(value: PatchAdvisoryId*): Self = StObject.set(x, "AdvisoryIds", js.Array(value :_*))
     
-    @scala.inline
-    def setArch(value: PatchArch): Self = StObject.set(x, "Arch", value.asInstanceOf[js.Any])
+    inline def setArch(value: PatchArch): Self = StObject.set(x, "Arch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchUndefined: Self = StObject.set(x, "Arch", js.undefined)
+    inline def setArchUndefined: Self = StObject.set(x, "Arch", js.undefined)
     
-    @scala.inline
-    def setBugzillaIds(value: PatchBugzillaIdList): Self = StObject.set(x, "BugzillaIds", value.asInstanceOf[js.Any])
+    inline def setBugzillaIds(value: PatchBugzillaIdList): Self = StObject.set(x, "BugzillaIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBugzillaIdsUndefined: Self = StObject.set(x, "BugzillaIds", js.undefined)
+    inline def setBugzillaIdsUndefined: Self = StObject.set(x, "BugzillaIds", js.undefined)
     
-    @scala.inline
-    def setBugzillaIdsVarargs(value: PatchBugzillaId*): Self = StObject.set(x, "BugzillaIds", js.Array(value :_*))
+    inline def setBugzillaIdsVarargs(value: PatchBugzillaId*): Self = StObject.set(x, "BugzillaIds", js.Array(value :_*))
     
-    @scala.inline
-    def setCVEIds(value: PatchCVEIdList): Self = StObject.set(x, "CVEIds", value.asInstanceOf[js.Any])
+    inline def setCVEIds(value: PatchCVEIdList): Self = StObject.set(x, "CVEIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCVEIdsUndefined: Self = StObject.set(x, "CVEIds", js.undefined)
+    inline def setCVEIdsUndefined: Self = StObject.set(x, "CVEIds", js.undefined)
     
-    @scala.inline
-    def setCVEIdsVarargs(value: PatchCVEId*): Self = StObject.set(x, "CVEIds", js.Array(value :_*))
+    inline def setCVEIdsVarargs(value: PatchCVEId*): Self = StObject.set(x, "CVEIds", js.Array(value :_*))
     
-    @scala.inline
-    def setClassification(value: PatchClassification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
+    inline def setClassification(value: PatchClassification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassificationUndefined: Self = StObject.set(x, "Classification", js.undefined)
+    inline def setClassificationUndefined: Self = StObject.set(x, "Classification", js.undefined)
     
-    @scala.inline
-    def setContentUrl(value: PatchContentUrl): Self = StObject.set(x, "ContentUrl", value.asInstanceOf[js.Any])
+    inline def setContentUrl(value: PatchContentUrl): Self = StObject.set(x, "ContentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrlUndefined: Self = StObject.set(x, "ContentUrl", js.undefined)
+    inline def setContentUrlUndefined: Self = StObject.set(x, "ContentUrl", js.undefined)
     
-    @scala.inline
-    def setDescription(value: PatchDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: PatchDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEpoch(value: PatchEpoch): Self = StObject.set(x, "Epoch", value.asInstanceOf[js.Any])
+    inline def setEpoch(value: PatchEpoch): Self = StObject.set(x, "Epoch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpochUndefined: Self = StObject.set(x, "Epoch", js.undefined)
+    inline def setEpochUndefined: Self = StObject.set(x, "Epoch", js.undefined)
     
-    @scala.inline
-    def setId(value: PatchId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: PatchId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setKbNumber(value: PatchKbNumber): Self = StObject.set(x, "KbNumber", value.asInstanceOf[js.Any])
+    inline def setKbNumber(value: PatchKbNumber): Self = StObject.set(x, "KbNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKbNumberUndefined: Self = StObject.set(x, "KbNumber", js.undefined)
+    inline def setKbNumberUndefined: Self = StObject.set(x, "KbNumber", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: PatchLanguage): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: PatchLanguage): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "Language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "Language", js.undefined)
     
-    @scala.inline
-    def setMsrcNumber(value: PatchMsrcNumber): Self = StObject.set(x, "MsrcNumber", value.asInstanceOf[js.Any])
+    inline def setMsrcNumber(value: PatchMsrcNumber): Self = StObject.set(x, "MsrcNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsrcNumberUndefined: Self = StObject.set(x, "MsrcNumber", js.undefined)
+    inline def setMsrcNumberUndefined: Self = StObject.set(x, "MsrcNumber", js.undefined)
     
-    @scala.inline
-    def setMsrcSeverity(value: PatchMsrcSeverity): Self = StObject.set(x, "MsrcSeverity", value.asInstanceOf[js.Any])
+    inline def setMsrcSeverity(value: PatchMsrcSeverity): Self = StObject.set(x, "MsrcSeverity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsrcSeverityUndefined: Self = StObject.set(x, "MsrcSeverity", js.undefined)
+    inline def setMsrcSeverityUndefined: Self = StObject.set(x, "MsrcSeverity", js.undefined)
     
-    @scala.inline
-    def setName(value: PatchName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: PatchName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setProduct(value: PatchProduct): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: PatchProduct): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductFamily(value: PatchProductFamily): Self = StObject.set(x, "ProductFamily", value.asInstanceOf[js.Any])
+    inline def setProductFamily(value: PatchProductFamily): Self = StObject.set(x, "ProductFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductFamilyUndefined: Self = StObject.set(x, "ProductFamily", js.undefined)
+    inline def setProductFamilyUndefined: Self = StObject.set(x, "ProductFamily", js.undefined)
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "Product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "Product", js.undefined)
     
-    @scala.inline
-    def setRelease(value: PatchRelease): Self = StObject.set(x, "Release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: PatchRelease): Self = StObject.set(x, "Release", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDate(value: DateTime): Self = StObject.set(x, "ReleaseDate", value.asInstanceOf[js.Any])
+    inline def setReleaseDate(value: DateTime): Self = StObject.set(x, "ReleaseDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDateUndefined: Self = StObject.set(x, "ReleaseDate", js.undefined)
+    inline def setReleaseDateUndefined: Self = StObject.set(x, "ReleaseDate", js.undefined)
     
-    @scala.inline
-    def setReleaseUndefined: Self = StObject.set(x, "Release", js.undefined)
+    inline def setReleaseUndefined: Self = StObject.set(x, "Release", js.undefined)
     
-    @scala.inline
-    def setRepository(value: PatchRepository): Self = StObject.set(x, "Repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: PatchRepository): Self = StObject.set(x, "Repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryUndefined: Self = StObject.set(x, "Repository", js.undefined)
+    inline def setRepositoryUndefined: Self = StObject.set(x, "Repository", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: PatchSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: PatchSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
     
-    @scala.inline
-    def setTitle(value: PatchTitle): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: PatchTitle): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
     
-    @scala.inline
-    def setVendor(value: PatchVendor): Self = StObject.set(x, "Vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: PatchVendor): Self = StObject.set(x, "Vendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorUndefined: Self = StObject.set(x, "Vendor", js.undefined)
+    inline def setVendorUndefined: Self = StObject.set(x, "Vendor", js.undefined)
     
-    @scala.inline
-    def setVersion(value: PatchVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: PatchVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

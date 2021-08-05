@@ -10,19 +10,15 @@ trait CreateDomainResponse extends StObject {
 }
 object CreateDomainResponse {
   
-  @scala.inline
-  def apply(): CreateDomainResponse = {
+  inline def apply(): CreateDomainResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDomainResponse]
   }
   
-  @scala.inline
-  implicit class CreateDomainResponseMutableBuilder[Self <: CreateDomainResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDomainResponse](x: Self) {
     
-    @scala.inline
-    def setDomainStatus(value: DomainStatus): Self = StObject.set(x, "DomainStatus", value.asInstanceOf[js.Any])
+    inline def setDomainStatus(value: DomainStatus): Self = StObject.set(x, "DomainStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainStatusUndefined: Self = StObject.set(x, "DomainStatus", js.undefined)
+    inline def setDomainStatusUndefined: Self = StObject.set(x, "DomainStatus", js.undefined)
   }
 }

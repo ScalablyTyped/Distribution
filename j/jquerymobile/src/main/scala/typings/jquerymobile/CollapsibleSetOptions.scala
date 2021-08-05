@@ -22,55 +22,39 @@ trait CollapsibleSetOptions extends StObject {
 }
 object CollapsibleSetOptions {
   
-  @scala.inline
-  def apply(): CollapsibleSetOptions = {
+  inline def apply(): CollapsibleSetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollapsibleSetOptions]
   }
   
-  @scala.inline
-  implicit class CollapsibleSetOptionsMutableBuilder[Self <: CollapsibleSetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollapsibleSetOptions](x: Self) {
     
-    @scala.inline
-    def setCollapsedIcon(value: String): Self = StObject.set(x, "collapsedIcon", value.asInstanceOf[js.Any])
+    inline def setCollapsedIcon(value: String): Self = StObject.set(x, "collapsedIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsedIconUndefined: Self = StObject.set(x, "collapsedIcon", js.undefined)
+    inline def setCollapsedIconUndefined: Self = StObject.set(x, "collapsedIcon", js.undefined)
     
-    @scala.inline
-    def setExpandedIcon(value: String): Self = StObject.set(x, "expandedIcon", value.asInstanceOf[js.Any])
+    inline def setExpandedIcon(value: String): Self = StObject.set(x, "expandedIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedIconUndefined: Self = StObject.set(x, "expandedIcon", js.undefined)
+    inline def setExpandedIconUndefined: Self = StObject.set(x, "expandedIcon", js.undefined)
     
-    @scala.inline
-    def setIconpos(value: String): Self = StObject.set(x, "iconpos", value.asInstanceOf[js.Any])
+    inline def setIconpos(value: String): Self = StObject.set(x, "iconpos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconposUndefined: Self = StObject.set(x, "iconpos", js.undefined)
+    inline def setIconposUndefined: Self = StObject.set(x, "iconpos", js.undefined)
     
-    @scala.inline
-    def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
+    inline def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
+    inline def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
     
-    @scala.inline
-    def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
-    @scala.inline
-    def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
+    inline def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
+    inline def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

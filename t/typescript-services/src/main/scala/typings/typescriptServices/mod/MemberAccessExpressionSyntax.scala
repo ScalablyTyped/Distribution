@@ -107,6 +107,5 @@ object MemberAccessExpressionSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(expression: IExpressionSyntax, name: ISyntaxToken): typings.typescriptServices.TypeScript.MemberAccessExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MemberAccessExpressionSyntax]
+  inline def create1(expression: IExpressionSyntax, name: ISyntaxToken): typings.typescriptServices.TypeScript.MemberAccessExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MemberAccessExpressionSyntax]
 }

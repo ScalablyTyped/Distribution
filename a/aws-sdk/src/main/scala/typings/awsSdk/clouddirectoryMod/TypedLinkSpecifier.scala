@@ -28,8 +28,7 @@ trait TypedLinkSpecifier extends StObject {
 }
 object TypedLinkSpecifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IdentityAttributeValues: AttributeNameAndValueList,
     SourceObjectReference: ObjectReference,
     TargetObjectReference: ObjectReference,
@@ -39,22 +38,16 @@ object TypedLinkSpecifier {
     __obj.asInstanceOf[TypedLinkSpecifier]
   }
   
-  @scala.inline
-  implicit class TypedLinkSpecifierMutableBuilder[Self <: TypedLinkSpecifier] (val x: Self) extends AnyVal {
+  extension [Self <: TypedLinkSpecifier](x: Self) {
     
-    @scala.inline
-    def setIdentityAttributeValues(value: AttributeNameAndValueList): Self = StObject.set(x, "IdentityAttributeValues", value.asInstanceOf[js.Any])
+    inline def setIdentityAttributeValues(value: AttributeNameAndValueList): Self = StObject.set(x, "IdentityAttributeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityAttributeValuesVarargs(value: AttributeNameAndValue*): Self = StObject.set(x, "IdentityAttributeValues", js.Array(value :_*))
+    inline def setIdentityAttributeValuesVarargs(value: AttributeNameAndValue*): Self = StObject.set(x, "IdentityAttributeValues", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceObjectReference(value: ObjectReference): Self = StObject.set(x, "SourceObjectReference", value.asInstanceOf[js.Any])
+    inline def setSourceObjectReference(value: ObjectReference): Self = StObject.set(x, "SourceObjectReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetObjectReference(value: ObjectReference): Self = StObject.set(x, "TargetObjectReference", value.asInstanceOf[js.Any])
+    inline def setTargetObjectReference(value: ObjectReference): Self = StObject.set(x, "TargetObjectReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypedLinkFacet(value: TypedLinkSchemaAndFacetName): Self = StObject.set(x, "TypedLinkFacet", value.asInstanceOf[js.Any])
+    inline def setTypedLinkFacet(value: TypedLinkSchemaAndFacetName): Self = StObject.set(x, "TypedLinkFacet", value.asInstanceOf[js.Any])
   }
 }

@@ -17,8 +17,7 @@ trait SimpleBlock
 }
 object SimpleBlock {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: Buffer,
     dataSize: Double,
     discarable: Boolean,
@@ -37,13 +36,10 @@ object SimpleBlock {
     __obj.asInstanceOf[SimpleBlock]
   }
   
-  @scala.inline
-  implicit class SimpleBlockMutableBuilder[Self <: SimpleBlock] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleBlock](x: Self) {
     
-    @scala.inline
-    def setDiscarable(value: Boolean): Self = StObject.set(x, "discarable", value.asInstanceOf[js.Any])
+    inline def setDiscarable(value: Boolean): Self = StObject.set(x, "discarable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyframe(value: Boolean): Self = StObject.set(x, "keyframe", value.asInstanceOf[js.Any])
+    inline def setKeyframe(value: Boolean): Self = StObject.set(x, "keyframe", value.asInstanceOf[js.Any])
   }
 }

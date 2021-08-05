@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OnlineMeetingRole extends StObject
 object OnlineMeetingRole {
   
-  @scala.inline
-  def attendee: typings.microsoftGraph.microsoftGraphStrings.attendee = "attendee".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.attendee]
+  inline def attendee: typings.microsoftGraph.microsoftGraphStrings.attendee = "attendee".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.attendee]
   
-  @scala.inline
-  def presenter: typings.microsoftGraph.microsoftGraphStrings.presenter = "presenter".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.presenter]
+  inline def presenter: typings.microsoftGraph.microsoftGraphStrings.presenter = "presenter".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.presenter]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

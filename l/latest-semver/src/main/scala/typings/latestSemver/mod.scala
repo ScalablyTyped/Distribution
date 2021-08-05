@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(versions: js.Array[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].apply(versions.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def apply(versions: js.Array[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].apply(versions.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   @JSImport("latest-semver", JSImport.Namespace)
   @js.native

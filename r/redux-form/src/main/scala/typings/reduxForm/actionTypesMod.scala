@@ -84,8 +84,7 @@ object actionTypesMod {
   }
   object ActionTypes_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ARRAY_INSERT: String,
       ARRAY_MOVE: String,
       ARRAY_POP: String,
@@ -126,113 +125,77 @@ object actionTypesMod {
       __obj.asInstanceOf[ActionTypes_]
     }
     
-    @scala.inline
-    implicit class ActionTypes_MutableBuilder[Self <: ActionTypes_] (val x: Self) extends AnyVal {
+    extension [Self <: ActionTypes_](x: Self) {
       
-      @scala.inline
-      def setARRAY_INSERT(value: String): Self = StObject.set(x, "ARRAY_INSERT", value.asInstanceOf[js.Any])
+      inline def setARRAY_INSERT(value: String): Self = StObject.set(x, "ARRAY_INSERT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARRAY_MOVE(value: String): Self = StObject.set(x, "ARRAY_MOVE", value.asInstanceOf[js.Any])
+      inline def setARRAY_MOVE(value: String): Self = StObject.set(x, "ARRAY_MOVE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARRAY_POP(value: String): Self = StObject.set(x, "ARRAY_POP", value.asInstanceOf[js.Any])
+      inline def setARRAY_POP(value: String): Self = StObject.set(x, "ARRAY_POP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARRAY_PUSH(value: String): Self = StObject.set(x, "ARRAY_PUSH", value.asInstanceOf[js.Any])
+      inline def setARRAY_PUSH(value: String): Self = StObject.set(x, "ARRAY_PUSH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARRAY_REMOVE(value: String): Self = StObject.set(x, "ARRAY_REMOVE", value.asInstanceOf[js.Any])
+      inline def setARRAY_REMOVE(value: String): Self = StObject.set(x, "ARRAY_REMOVE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARRAY_REMOVE_ALL(value: String): Self = StObject.set(x, "ARRAY_REMOVE_ALL", value.asInstanceOf[js.Any])
+      inline def setARRAY_REMOVE_ALL(value: String): Self = StObject.set(x, "ARRAY_REMOVE_ALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARRAY_SHIFT(value: String): Self = StObject.set(x, "ARRAY_SHIFT", value.asInstanceOf[js.Any])
+      inline def setARRAY_SHIFT(value: String): Self = StObject.set(x, "ARRAY_SHIFT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARRAY_SPLICE(value: String): Self = StObject.set(x, "ARRAY_SPLICE", value.asInstanceOf[js.Any])
+      inline def setARRAY_SPLICE(value: String): Self = StObject.set(x, "ARRAY_SPLICE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARRAY_SWAP(value: String): Self = StObject.set(x, "ARRAY_SWAP", value.asInstanceOf[js.Any])
+      inline def setARRAY_SWAP(value: String): Self = StObject.set(x, "ARRAY_SWAP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARRAY_UNSHIFT(value: String): Self = StObject.set(x, "ARRAY_UNSHIFT", value.asInstanceOf[js.Any])
+      inline def setARRAY_UNSHIFT(value: String): Self = StObject.set(x, "ARRAY_UNSHIFT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAUTOFILL(value: String): Self = StObject.set(x, "AUTOFILL", value.asInstanceOf[js.Any])
+      inline def setAUTOFILL(value: String): Self = StObject.set(x, "AUTOFILL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBLUR(value: String): Self = StObject.set(x, "BLUR", value.asInstanceOf[js.Any])
+      inline def setBLUR(value: String): Self = StObject.set(x, "BLUR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHANGE(value: String): Self = StObject.set(x, "CHANGE", value.asInstanceOf[js.Any])
+      inline def setCHANGE(value: String): Self = StObject.set(x, "CHANGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEAR_ASYNC_ERROR(value: String): Self = StObject.set(x, "CLEAR_ASYNC_ERROR", value.asInstanceOf[js.Any])
+      inline def setCLEAR_ASYNC_ERROR(value: String): Self = StObject.set(x, "CLEAR_ASYNC_ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEAR_FIELDS(value: String): Self = StObject.set(x, "CLEAR_FIELDS", value.asInstanceOf[js.Any])
+      inline def setCLEAR_FIELDS(value: String): Self = StObject.set(x, "CLEAR_FIELDS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEAR_SUBMIT(value: String): Self = StObject.set(x, "CLEAR_SUBMIT", value.asInstanceOf[js.Any])
+      inline def setCLEAR_SUBMIT(value: String): Self = StObject.set(x, "CLEAR_SUBMIT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEAR_SUBMIT_ERRORS(value: String): Self = StObject.set(x, "CLEAR_SUBMIT_ERRORS", value.asInstanceOf[js.Any])
+      inline def setCLEAR_SUBMIT_ERRORS(value: String): Self = StObject.set(x, "CLEAR_SUBMIT_ERRORS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDESTROY(value: String): Self = StObject.set(x, "DESTROY", value.asInstanceOf[js.Any])
+      inline def setDESTROY(value: String): Self = StObject.set(x, "DESTROY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFOCUS(value: String): Self = StObject.set(x, "FOCUS", value.asInstanceOf[js.Any])
+      inline def setFOCUS(value: String): Self = StObject.set(x, "FOCUS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINITIALIZE(value: String): Self = StObject.set(x, "INITIALIZE", value.asInstanceOf[js.Any])
+      inline def setINITIALIZE(value: String): Self = StObject.set(x, "INITIALIZE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREGISTER_FIELD(value: String): Self = StObject.set(x, "REGISTER_FIELD", value.asInstanceOf[js.Any])
+      inline def setREGISTER_FIELD(value: String): Self = StObject.set(x, "REGISTER_FIELD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESET(value: String): Self = StObject.set(x, "RESET", value.asInstanceOf[js.Any])
+      inline def setRESET(value: String): Self = StObject.set(x, "RESET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESET_SECTION(value: String): Self = StObject.set(x, "RESET_SECTION", value.asInstanceOf[js.Any])
+      inline def setRESET_SECTION(value: String): Self = StObject.set(x, "RESET_SECTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSET_SUBMIT_FAILED(value: String): Self = StObject.set(x, "SET_SUBMIT_FAILED", value.asInstanceOf[js.Any])
+      inline def setSET_SUBMIT_FAILED(value: String): Self = StObject.set(x, "SET_SUBMIT_FAILED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSET_SUBMIT_SUCCEEDED(value: String): Self = StObject.set(x, "SET_SUBMIT_SUCCEEDED", value.asInstanceOf[js.Any])
+      inline def setSET_SUBMIT_SUCCEEDED(value: String): Self = StObject.set(x, "SET_SUBMIT_SUCCEEDED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTART_ASYNC_VALIDATION(value: String): Self = StObject.set(x, "START_ASYNC_VALIDATION", value.asInstanceOf[js.Any])
+      inline def setSTART_ASYNC_VALIDATION(value: String): Self = StObject.set(x, "START_ASYNC_VALIDATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTART_SUBMIT(value: String): Self = StObject.set(x, "START_SUBMIT", value.asInstanceOf[js.Any])
+      inline def setSTART_SUBMIT(value: String): Self = StObject.set(x, "START_SUBMIT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTOP_ASYNC_VALIDATION(value: String): Self = StObject.set(x, "STOP_ASYNC_VALIDATION", value.asInstanceOf[js.Any])
+      inline def setSTOP_ASYNC_VALIDATION(value: String): Self = StObject.set(x, "STOP_ASYNC_VALIDATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTOP_SUBMIT(value: String): Self = StObject.set(x, "STOP_SUBMIT", value.asInstanceOf[js.Any])
+      inline def setSTOP_SUBMIT(value: String): Self = StObject.set(x, "STOP_SUBMIT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUBMIT(value: String): Self = StObject.set(x, "SUBMIT", value.asInstanceOf[js.Any])
+      inline def setSUBMIT(value: String): Self = StObject.set(x, "SUBMIT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOUCH(value: String): Self = StObject.set(x, "TOUCH", value.asInstanceOf[js.Any])
+      inline def setTOUCH(value: String): Self = StObject.set(x, "TOUCH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNREGISTER_FIELD(value: String): Self = StObject.set(x, "UNREGISTER_FIELD", value.asInstanceOf[js.Any])
+      inline def setUNREGISTER_FIELD(value: String): Self = StObject.set(x, "UNREGISTER_FIELD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNTOUCH(value: String): Self = StObject.set(x, "UNTOUCH", value.asInstanceOf[js.Any])
+      inline def setUNTOUCH(value: String): Self = StObject.set(x, "UNTOUCH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUPDATE_SYNC_ERRORS(value: String): Self = StObject.set(x, "UPDATE_SYNC_ERRORS", value.asInstanceOf[js.Any])
+      inline def setUPDATE_SYNC_ERRORS(value: String): Self = StObject.set(x, "UPDATE_SYNC_ERRORS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUPDATE_SYNC_WARNINGS(value: String): Self = StObject.set(x, "UPDATE_SYNC_WARNINGS", value.asInstanceOf[js.Any])
+      inline def setUPDATE_SYNC_WARNINGS(value: String): Self = StObject.set(x, "UPDATE_SYNC_WARNINGS", value.asInstanceOf[js.Any])
     }
   }
 }

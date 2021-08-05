@@ -236,153 +236,107 @@ trait VictoryAxisProps
 }
 object VictoryAxisProps {
   
-  @scala.inline
-  def apply(): VictoryAxisProps = {
+  inline def apply(): VictoryAxisProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryAxisProps]
   }
   
-  @scala.inline
-  implicit class VictoryAxisPropsMutableBuilder[Self <: VictoryAxisProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryAxisProps](x: Self) {
     
-    @scala.inline
-    def setAxisComponent(value: ReactElement): Self = StObject.set(x, "axisComponent", value.asInstanceOf[js.Any])
+    inline def setAxisComponent(value: ReactElement): Self = StObject.set(x, "axisComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisComponentUndefined: Self = StObject.set(x, "axisComponent", js.undefined)
+    inline def setAxisComponentUndefined: Self = StObject.set(x, "axisComponent", js.undefined)
     
-    @scala.inline
-    def setAxisLabelComponent(value: ReactElement): Self = StObject.set(x, "axisLabelComponent", value.asInstanceOf[js.Any])
+    inline def setAxisLabelComponent(value: ReactElement): Self = StObject.set(x, "axisLabelComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisLabelComponentUndefined: Self = StObject.set(x, "axisLabelComponent", js.undefined)
+    inline def setAxisLabelComponentUndefined: Self = StObject.set(x, "axisLabelComponent", js.undefined)
     
-    @scala.inline
-    def setAxisValue(value: Double | String | js.Object): Self = StObject.set(x, "axisValue", value.asInstanceOf[js.Any])
+    inline def setAxisValue(value: Double | String | js.Object): Self = StObject.set(x, "axisValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisValueUndefined: Self = StObject.set(x, "axisValue", js.undefined)
+    inline def setAxisValueUndefined: Self = StObject.set(x, "axisValue", js.undefined)
     
-    @scala.inline
-    def setCrossAxis(value: Boolean): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
+    inline def setCrossAxis(value: Boolean): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossAxisUndefined: Self = StObject.set(x, "crossAxis", js.undefined)
+    inline def setCrossAxisUndefined: Self = StObject.set(x, "crossAxis", js.undefined)
     
-    @scala.inline
-    def setDependentAxis(value: Boolean): Self = StObject.set(x, "dependentAxis", value.asInstanceOf[js.Any])
+    inline def setDependentAxis(value: Boolean): Self = StObject.set(x, "dependentAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependentAxisUndefined: Self = StObject.set(x, "dependentAxis", js.undefined)
+    inline def setDependentAxisUndefined: Self = StObject.set(x, "dependentAxis", js.undefined)
     
-    @scala.inline
-    def setDomain(value: DomainPropType): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainPropType): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setEvents(
+    inline def setEvents(
       value: js.Array[
           EventPropTypeInterface[axis | axisLabel | grid | ticks | tickLabels | parent, Double | String]
         ]
     ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(
+    inline def setEventsVarargs(
       value: (EventPropTypeInterface[axis | axisLabel | grid | ticks | tickLabels | parent, Double | String])*
     ): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setFixLabelOverlap(value: Boolean): Self = StObject.set(x, "fixLabelOverlap", value.asInstanceOf[js.Any])
+    inline def setFixLabelOverlap(value: Boolean): Self = StObject.set(x, "fixLabelOverlap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixLabelOverlapUndefined: Self = StObject.set(x, "fixLabelOverlap", js.undefined)
+    inline def setFixLabelOverlapUndefined: Self = StObject.set(x, "fixLabelOverlap", js.undefined)
     
-    @scala.inline
-    def setGridComponent(value: ReactElement): Self = StObject.set(x, "gridComponent", value.asInstanceOf[js.Any])
+    inline def setGridComponent(value: ReactElement): Self = StObject.set(x, "gridComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridComponentUndefined: Self = StObject.set(x, "gridComponent", js.undefined)
+    inline def setGridComponentUndefined: Self = StObject.set(x, "gridComponent", js.undefined)
     
-    @scala.inline
-    def setInvertAxis(value: Boolean): Self = StObject.set(x, "invertAxis", value.asInstanceOf[js.Any])
+    inline def setInvertAxis(value: Boolean): Self = StObject.set(x, "invertAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertAxisUndefined: Self = StObject.set(x, "invertAxis", js.undefined)
+    inline def setInvertAxisUndefined: Self = StObject.set(x, "invertAxis", js.undefined)
     
-    @scala.inline
-    def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: top | bottom | left | right): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: top | bottom | left | right): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setStyle(value: AxisLabel): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: AxisLabel): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTickComponent(value: ReactElement): Self = StObject.set(x, "tickComponent", value.asInstanceOf[js.Any])
+    inline def setTickComponent(value: ReactElement): Self = StObject.set(x, "tickComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickComponentUndefined: Self = StObject.set(x, "tickComponent", js.undefined)
+    inline def setTickComponentUndefined: Self = StObject.set(x, "tickComponent", js.undefined)
     
-    @scala.inline
-    def setTickCount(value: Double): Self = StObject.set(x, "tickCount", value.asInstanceOf[js.Any])
+    inline def setTickCount(value: Double): Self = StObject.set(x, "tickCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickCountUndefined: Self = StObject.set(x, "tickCount", js.undefined)
+    inline def setTickCountUndefined: Self = StObject.set(x, "tickCount", js.undefined)
     
-    @scala.inline
-    def setTickFormat(
+    inline def setTickFormat(
       value: js.Array[js.Any] | (js.Function3[/* tick */ js.Any, /* index */ Double, /* ticks */ js.Array[js.Any], String | Double])
     ): Self = StObject.set(x, "tickFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickFormatFunction3(value: (/* tick */ js.Any, /* index */ Double, /* ticks */ js.Array[js.Any]) => String | Double): Self = StObject.set(x, "tickFormat", js.Any.fromFunction3(value))
+    inline def setTickFormatFunction3(value: (/* tick */ js.Any, /* index */ Double, /* ticks */ js.Array[js.Any]) => String | Double): Self = StObject.set(x, "tickFormat", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTickFormatUndefined: Self = StObject.set(x, "tickFormat", js.undefined)
+    inline def setTickFormatUndefined: Self = StObject.set(x, "tickFormat", js.undefined)
     
-    @scala.inline
-    def setTickFormatVarargs(value: js.Any*): Self = StObject.set(x, "tickFormat", js.Array(value :_*))
+    inline def setTickFormatVarargs(value: js.Any*): Self = StObject.set(x, "tickFormat", js.Array(value :_*))
     
-    @scala.inline
-    def setTickLabelComponent(value: ReactElement): Self = StObject.set(x, "tickLabelComponent", value.asInstanceOf[js.Any])
+    inline def setTickLabelComponent(value: ReactElement): Self = StObject.set(x, "tickLabelComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickLabelComponentUndefined: Self = StObject.set(x, "tickLabelComponent", js.undefined)
+    inline def setTickLabelComponentUndefined: Self = StObject.set(x, "tickLabelComponent", js.undefined)
     
-    @scala.inline
-    def setTickValues(value: js.Array[js.Any]): Self = StObject.set(x, "tickValues", value.asInstanceOf[js.Any])
+    inline def setTickValues(value: js.Array[js.Any]): Self = StObject.set(x, "tickValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickValuesUndefined: Self = StObject.set(x, "tickValues", js.undefined)
+    inline def setTickValuesUndefined: Self = StObject.set(x, "tickValues", js.undefined)
     
-    @scala.inline
-    def setTickValuesVarargs(value: js.Any*): Self = StObject.set(x, "tickValues", js.Array(value :_*))
+    inline def setTickValuesVarargs(value: js.Any*): Self = StObject.set(x, "tickValues", js.Array(value :_*))
   }
 }

@@ -22,27 +22,21 @@ trait MultiFileAppender
 }
 object MultiFileAppender {
   
-  @scala.inline
-  def apply(base: String, `extension`: String, property: String): MultiFileAppender = {
+  inline def apply(base: String, `extension`: String, property: String): MultiFileAppender = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("multiFile")
     __obj.asInstanceOf[MultiFileAppender]
   }
   
-  @scala.inline
-  implicit class MultiFileAppenderMutableBuilder[Self <: MultiFileAppender] (val x: Self) extends AnyVal {
+  extension [Self <: MultiFileAppender](x: Self) {
     
-    @scala.inline
-    def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: multiFile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: multiFile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

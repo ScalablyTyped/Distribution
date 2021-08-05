@@ -10,16 +10,13 @@ trait Value[V] extends StObject {
 }
 object Value {
   
-  @scala.inline
-  def apply[V](value: V): Value[V] = {
+  inline def apply[V](value: V): Value[V] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value[V]]
   }
   
-  @scala.inline
-  implicit class ValueMutableBuilder[Self <: Value[?], V] (val x: Self & Value[V]) extends AnyVal {
+  extension [Self <: Value[?], V](x: Self & Value[V]) {
     
-    @scala.inline
-    def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

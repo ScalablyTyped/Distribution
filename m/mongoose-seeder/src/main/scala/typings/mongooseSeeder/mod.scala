@@ -11,12 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def seed(data: js.Any, callback: seedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def seed(data: js.Any, options: IOptions): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
-  @scala.inline
-  def seed(data: js.Any, options: IOptions, callback: seedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def seed(data: js.Any, callback: seedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def seed(data: js.Any, options: IOptions): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  inline def seed(data: js.Any, options: IOptions, callback: seedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait IOptions extends StObject {
     
@@ -26,26 +23,20 @@ object mod {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(): IOptions = {
+    inline def apply(): IOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setDropCollections(value: Boolean): Self = StObject.set(x, "dropCollections", value.asInstanceOf[js.Any])
+      inline def setDropCollections(value: Boolean): Self = StObject.set(x, "dropCollections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropCollectionsUndefined: Self = StObject.set(x, "dropCollections", js.undefined)
+      inline def setDropCollectionsUndefined: Self = StObject.set(x, "dropCollections", js.undefined)
       
-      @scala.inline
-      def setDropDatabase(value: Boolean): Self = StObject.set(x, "dropDatabase", value.asInstanceOf[js.Any])
+      inline def setDropDatabase(value: Boolean): Self = StObject.set(x, "dropDatabase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropDatabaseUndefined: Self = StObject.set(x, "dropDatabase", js.undefined)
+      inline def setDropDatabaseUndefined: Self = StObject.set(x, "dropDatabase", js.undefined)
     }
   }
   

@@ -16,8 +16,7 @@ trait PeerInfo extends StObject {
 }
 object PeerInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distinctMultiaddr: () => js.Array[Multiaddr],
     id: PeerId,
     multiaddr: Multiaddr,
@@ -27,22 +26,16 @@ object PeerInfo {
     __obj.asInstanceOf[PeerInfo]
   }
   
-  @scala.inline
-  implicit class PeerInfoMutableBuilder[Self <: PeerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PeerInfo](x: Self) {
     
-    @scala.inline
-    def setDistinctMultiaddr(value: () => js.Array[Multiaddr]): Self = StObject.set(x, "distinctMultiaddr", js.Any.fromFunction0(value))
+    inline def setDistinctMultiaddr(value: () => js.Array[Multiaddr]): Self = StObject.set(x, "distinctMultiaddr", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: PeerId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: PeerId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiaddr(value: Multiaddr): Self = StObject.set(x, "multiaddr", value.asInstanceOf[js.Any])
+    inline def setMultiaddr(value: Multiaddr): Self = StObject.set(x, "multiaddr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiaddrs(value: js.Array[Multiaddr]): Self = StObject.set(x, "multiaddrs", value.asInstanceOf[js.Any])
+    inline def setMultiaddrs(value: js.Array[Multiaddr]): Self = StObject.set(x, "multiaddrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiaddrsVarargs(value: Multiaddr*): Self = StObject.set(x, "multiaddrs", js.Array(value :_*))
+    inline def setMultiaddrsVarargs(value: Multiaddr*): Self = StObject.set(x, "multiaddrs", js.Array(value :_*))
   }
 }

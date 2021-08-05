@@ -14,19 +14,15 @@ trait SafeHtmlProto extends StObject {
 }
 object SafeHtmlProto {
   
-  @scala.inline
-  def apply(): SafeHtmlProto = {
+  inline def apply(): SafeHtmlProto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SafeHtmlProto]
   }
   
-  @scala.inline
-  implicit class SafeHtmlProtoMutableBuilder[Self <: SafeHtmlProto] (val x: Self) extends AnyVal {
+  extension [Self <: SafeHtmlProto](x: Self) {
     
-    @scala.inline
-    def setPrivateDoNotAccessOrElseSafeHtmlWrappedValue(value: String): Self = StObject.set(x, "privateDoNotAccessOrElseSafeHtmlWrappedValue", value.asInstanceOf[js.Any])
+    inline def setPrivateDoNotAccessOrElseSafeHtmlWrappedValue(value: String): Self = StObject.set(x, "privateDoNotAccessOrElseSafeHtmlWrappedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateDoNotAccessOrElseSafeHtmlWrappedValueUndefined: Self = StObject.set(x, "privateDoNotAccessOrElseSafeHtmlWrappedValue", js.undefined)
+    inline def setPrivateDoNotAccessOrElseSafeHtmlWrappedValueUndefined: Self = StObject.set(x, "privateDoNotAccessOrElseSafeHtmlWrappedValue", js.undefined)
   }
 }

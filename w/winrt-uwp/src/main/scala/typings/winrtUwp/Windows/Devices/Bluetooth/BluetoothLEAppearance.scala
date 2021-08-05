@@ -18,22 +18,17 @@ trait BluetoothLEAppearance extends StObject {
 }
 object BluetoothLEAppearance {
   
-  @scala.inline
-  def apply(category: Double, rawValue: Double, subCategory: Double): BluetoothLEAppearance = {
+  inline def apply(category: Double, rawValue: Double, subCategory: Double): BluetoothLEAppearance = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], subCategory = subCategory.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothLEAppearance]
   }
   
-  @scala.inline
-  implicit class BluetoothLEAppearanceMutableBuilder[Self <: BluetoothLEAppearance] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothLEAppearance](x: Self) {
     
-    @scala.inline
-    def setCategory(value: Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawValue(value: Double): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
+    inline def setRawValue(value: Double): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubCategory(value: Double): Self = StObject.set(x, "subCategory", value.asInstanceOf[js.Any])
+    inline def setSubCategory(value: Double): Self = StObject.set(x, "subCategory", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait ResetPermissionsRequest extends StObject {
 }
 object ResetPermissionsRequest {
   
-  @scala.inline
-  def apply(): ResetPermissionsRequest = {
+  inline def apply(): ResetPermissionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResetPermissionsRequest]
   }
   
-  @scala.inline
-  implicit class ResetPermissionsRequestMutableBuilder[Self <: ResetPermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResetPermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
+    inline def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
+    inline def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
   }
 }

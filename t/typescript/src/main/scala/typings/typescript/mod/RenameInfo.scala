@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RenameInfo extends StObject
 object RenameInfo {
   
-  @scala.inline
-  def RenameInfoFailure(localizedErrorMessage: java.lang.String): typings.typescript.mod.RenameInfoFailure = {
+  inline def RenameInfoFailure(localizedErrorMessage: java.lang.String): typings.typescript.mod.RenameInfoFailure = {
     val __obj = js.Dynamic.literal(canRename = false, localizedErrorMessage = localizedErrorMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.RenameInfoFailure]
   }
   
-  @scala.inline
-  def RenameInfoSuccess(
+  inline def RenameInfoSuccess(
     displayName: java.lang.String,
     fullDisplayName: java.lang.String,
     kind: ScriptElementKind,

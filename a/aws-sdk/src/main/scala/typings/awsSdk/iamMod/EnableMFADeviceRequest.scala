@@ -28,8 +28,7 @@ trait EnableMFADeviceRequest extends StObject {
 }
 object EnableMFADeviceRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AuthenticationCode1: authenticationCodeType,
     AuthenticationCode2: authenticationCodeType,
     SerialNumber: serialNumberType,
@@ -39,19 +38,14 @@ object EnableMFADeviceRequest {
     __obj.asInstanceOf[EnableMFADeviceRequest]
   }
   
-  @scala.inline
-  implicit class EnableMFADeviceRequestMutableBuilder[Self <: EnableMFADeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableMFADeviceRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationCode1(value: authenticationCodeType): Self = StObject.set(x, "AuthenticationCode1", value.asInstanceOf[js.Any])
+    inline def setAuthenticationCode1(value: authenticationCodeType): Self = StObject.set(x, "AuthenticationCode1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationCode2(value: authenticationCodeType): Self = StObject.set(x, "AuthenticationCode2", value.asInstanceOf[js.Any])
+    inline def setAuthenticationCode2(value: authenticationCodeType): Self = StObject.set(x, "AuthenticationCode2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

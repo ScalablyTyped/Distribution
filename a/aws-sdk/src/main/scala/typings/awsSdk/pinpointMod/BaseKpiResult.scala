@@ -13,19 +13,15 @@ trait BaseKpiResult extends StObject {
 }
 object BaseKpiResult {
   
-  @scala.inline
-  def apply(Rows: ListOfResultRow): BaseKpiResult = {
+  inline def apply(Rows: ListOfResultRow): BaseKpiResult = {
     val __obj = js.Dynamic.literal(Rows = Rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseKpiResult]
   }
   
-  @scala.inline
-  implicit class BaseKpiResultMutableBuilder[Self <: BaseKpiResult] (val x: Self) extends AnyVal {
+  extension [Self <: BaseKpiResult](x: Self) {
     
-    @scala.inline
-    def setRows(value: ListOfResultRow): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: ListOfResultRow): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: ResultRow*): Self = StObject.set(x, "Rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: ResultRow*): Self = StObject.set(x, "Rows", js.Array(value :_*))
   }
 }

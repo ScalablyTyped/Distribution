@@ -22,8 +22,7 @@ object storySliderVotersFeedResponseResponseMod {
   }
   object StorySliderVotersFeedResponseResponseFriendshipStatus {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       following: Boolean,
       incoming_request: Boolean,
       is_bestie: Boolean,
@@ -35,26 +34,19 @@ object storySliderVotersFeedResponseResponseMod {
       __obj.asInstanceOf[StorySliderVotersFeedResponseResponseFriendshipStatus]
     }
     
-    @scala.inline
-    implicit class StorySliderVotersFeedResponseResponseFriendshipStatusMutableBuilder[Self <: StorySliderVotersFeedResponseResponseFriendshipStatus] (val x: Self) extends AnyVal {
+    extension [Self <: StorySliderVotersFeedResponseResponseFriendshipStatus](x: Self) {
       
-      @scala.inline
-      def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+      inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
+      inline def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
+      inline def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
+      inline def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
+      inline def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,20 +58,16 @@ object storySliderVotersFeedResponseResponseMod {
   }
   object StorySliderVotersFeedResponseResponseRootObject {
     
-    @scala.inline
-    def apply(status: String, voter_info: StorySliderVotersFeedResponseResponseVoterInfo): StorySliderVotersFeedResponseResponseRootObject = {
+    inline def apply(status: String, voter_info: StorySliderVotersFeedResponseResponseVoterInfo): StorySliderVotersFeedResponseResponseRootObject = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], voter_info = voter_info.asInstanceOf[js.Any])
       __obj.asInstanceOf[StorySliderVotersFeedResponseResponseRootObject]
     }
     
-    @scala.inline
-    implicit class StorySliderVotersFeedResponseResponseRootObjectMutableBuilder[Self <: StorySliderVotersFeedResponseResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: StorySliderVotersFeedResponseResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoter_info(value: StorySliderVotersFeedResponseResponseVoterInfo): Self = StObject.set(x, "voter_info", value.asInstanceOf[js.Any])
+      inline def setVoter_info(value: StorySliderVotersFeedResponseResponseVoterInfo): Self = StObject.set(x, "voter_info", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,8 +91,7 @@ object storySliderVotersFeedResponseResponseMod {
   }
   object StorySliderVotersFeedResponseResponseUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       friendship_status: StorySliderVotersFeedResponseResponseFriendshipStatus,
       full_name: String,
       is_private: Boolean,
@@ -118,32 +105,23 @@ object storySliderVotersFeedResponseResponseMod {
       __obj.asInstanceOf[StorySliderVotersFeedResponseResponseUser]
     }
     
-    @scala.inline
-    implicit class StorySliderVotersFeedResponseResponseUserMutableBuilder[Self <: StorySliderVotersFeedResponseResponseUser] (val x: Self) extends AnyVal {
+    extension [Self <: StorySliderVotersFeedResponseResponseUser](x: Self) {
       
-      @scala.inline
-      def setFriendship_status(value: StorySliderVotersFeedResponseResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
+      inline def setFriendship_status(value: StorySliderVotersFeedResponseResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,8 +139,7 @@ object storySliderVotersFeedResponseResponseMod {
   }
   object StorySliderVotersFeedResponseResponseVoterInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       latest_slider_vote_time: Double,
       max_id: Null,
       more_available: Boolean,
@@ -173,26 +150,19 @@ object storySliderVotersFeedResponseResponseMod {
       __obj.asInstanceOf[StorySliderVotersFeedResponseResponseVoterInfo]
     }
     
-    @scala.inline
-    implicit class StorySliderVotersFeedResponseResponseVoterInfoMutableBuilder[Self <: StorySliderVotersFeedResponseResponseVoterInfo] (val x: Self) extends AnyVal {
+    extension [Self <: StorySliderVotersFeedResponseResponseVoterInfo](x: Self) {
       
-      @scala.inline
-      def setLatest_slider_vote_time(value: Double): Self = StObject.set(x, "latest_slider_vote_time", value.asInstanceOf[js.Any])
+      inline def setLatest_slider_vote_time(value: Double): Self = StObject.set(x, "latest_slider_vote_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_id(value: Null): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
+      inline def setMax_id(value: Null): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
+      inline def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlider_id(value: String): Self = StObject.set(x, "slider_id", value.asInstanceOf[js.Any])
+      inline def setSlider_id(value: String): Self = StObject.set(x, "slider_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoters(value: js.Array[StorySliderVotersFeedResponseResponseVotersItem]): Self = StObject.set(x, "voters", value.asInstanceOf[js.Any])
+      inline def setVoters(value: js.Array[StorySliderVotersFeedResponseResponseVotersItem]): Self = StObject.set(x, "voters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVotersVarargs(value: StorySliderVotersFeedResponseResponseVotersItem*): Self = StObject.set(x, "voters", js.Array(value :_*))
+      inline def setVotersVarargs(value: StorySliderVotersFeedResponseResponseVotersItem*): Self = StObject.set(x, "voters", js.Array(value :_*))
     }
   }
   
@@ -206,23 +176,18 @@ object storySliderVotersFeedResponseResponseMod {
   }
   object StorySliderVotersFeedResponseResponseVotersItem {
     
-    @scala.inline
-    def apply(ts: Double, user: StorySliderVotersFeedResponseResponseUser, vote: Double): StorySliderVotersFeedResponseResponseVotersItem = {
+    inline def apply(ts: Double, user: StorySliderVotersFeedResponseResponseUser, vote: Double): StorySliderVotersFeedResponseResponseVotersItem = {
       val __obj = js.Dynamic.literal(ts = ts.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], vote = vote.asInstanceOf[js.Any])
       __obj.asInstanceOf[StorySliderVotersFeedResponseResponseVotersItem]
     }
     
-    @scala.inline
-    implicit class StorySliderVotersFeedResponseResponseVotersItemMutableBuilder[Self <: StorySliderVotersFeedResponseResponseVotersItem] (val x: Self) extends AnyVal {
+    extension [Self <: StorySliderVotersFeedResponseResponseVotersItem](x: Self) {
       
-      @scala.inline
-      def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
+      inline def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: StorySliderVotersFeedResponseResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: StorySliderVotersFeedResponseResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVote(value: Double): Self = StObject.set(x, "vote", value.asInstanceOf[js.Any])
+      inline def setVote(value: Double): Self = StObject.set(x, "vote", value.asInstanceOf[js.Any])
     }
   }
 }

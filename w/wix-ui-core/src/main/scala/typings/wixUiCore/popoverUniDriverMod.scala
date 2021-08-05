@@ -12,6 +12,5 @@ object popoverUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def testkit(base: UniDriver[js.Any], body: UniDriver[js.Any]): GetArrowOffset = (^.asInstanceOf[js.Dynamic].applyDynamic("testkit")(base.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetArrowOffset]
+  inline def testkit(base: UniDriver[js.Any], body: UniDriver[js.Any]): GetArrowOffset = (^.asInstanceOf[js.Dynamic].applyDynamic("testkit")(base.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetArrowOffset]
 }

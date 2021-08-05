@@ -12,8 +12,7 @@ object getWatcherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getWatcher(
+  inline def getWatcher(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
   ): js.UndefOr[Watcher] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWatcher")(compiler.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Watcher]]
   

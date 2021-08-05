@@ -14,22 +14,17 @@ trait ScriptParams extends StObject {
 }
 object ScriptParams {
   
-  @scala.inline
-  def apply(lastRefresh: String): ScriptParams = {
+  inline def apply(lastRefresh: String): ScriptParams = {
     val __obj = js.Dynamic.literal(lastRefresh = lastRefresh.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptParams]
   }
   
-  @scala.inline
-  implicit class ScriptParamsMutableBuilder[Self <: ScriptParams] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptParams](x: Self) {
     
-    @scala.inline
-    def setLastRefresh(value: String): Self = StObject.set(x, "lastRefresh", value.asInstanceOf[js.Any])
+    inline def setLastRefresh(value: String): Self = StObject.set(x, "lastRefresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleExtraction(value: Boolean): Self = StObject.set(x, "sampleExtraction", value.asInstanceOf[js.Any])
+    inline def setSampleExtraction(value: Boolean): Self = StObject.set(x, "sampleExtraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleExtractionUndefined: Self = StObject.set(x, "sampleExtraction", js.undefined)
+    inline def setSampleExtractionUndefined: Self = StObject.set(x, "sampleExtraction", js.undefined)
   }
 }

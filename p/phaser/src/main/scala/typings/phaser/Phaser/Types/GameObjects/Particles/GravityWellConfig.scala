@@ -33,43 +33,31 @@ trait GravityWellConfig extends StObject {
 }
 object GravityWellConfig {
   
-  @scala.inline
-  def apply(): GravityWellConfig = {
+  inline def apply(): GravityWellConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GravityWellConfig]
   }
   
-  @scala.inline
-  implicit class GravityWellConfigMutableBuilder[Self <: GravityWellConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GravityWellConfig](x: Self) {
     
-    @scala.inline
-    def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
+    inline def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpsilonUndefined: Self = StObject.set(x, "epsilon", js.undefined)
+    inline def setEpsilonUndefined: Self = StObject.set(x, "epsilon", js.undefined)
     
-    @scala.inline
-    def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
-    @scala.inline
-    def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+    inline def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerUndefined: Self = StObject.set(x, "power", js.undefined)
+    inline def setPowerUndefined: Self = StObject.set(x, "power", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

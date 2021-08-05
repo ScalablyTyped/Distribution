@@ -14,25 +14,19 @@ trait Qk extends StObject {
 }
 object Qk {
   
-  @scala.inline
-  def apply(qk: js.Array[ISourceKeyRecord], qtr: js.Array[ITableRecord]): Qk = {
+  inline def apply(qk: js.Array[ISourceKeyRecord], qtr: js.Array[ITableRecord]): Qk = {
     val __obj = js.Dynamic.literal(qk = qk.asInstanceOf[js.Any], qtr = qtr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Qk]
   }
   
-  @scala.inline
-  implicit class QkMutableBuilder[Self <: Qk] (val x: Self) extends AnyVal {
+  extension [Self <: Qk](x: Self) {
     
-    @scala.inline
-    def setQk(value: js.Array[ISourceKeyRecord]): Self = StObject.set(x, "qk", value.asInstanceOf[js.Any])
+    inline def setQk(value: js.Array[ISourceKeyRecord]): Self = StObject.set(x, "qk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQkVarargs(value: ISourceKeyRecord*): Self = StObject.set(x, "qk", js.Array(value :_*))
+    inline def setQkVarargs(value: ISourceKeyRecord*): Self = StObject.set(x, "qk", js.Array(value :_*))
     
-    @scala.inline
-    def setQtr(value: js.Array[ITableRecord]): Self = StObject.set(x, "qtr", value.asInstanceOf[js.Any])
+    inline def setQtr(value: js.Array[ITableRecord]): Self = StObject.set(x, "qtr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQtrVarargs(value: ITableRecord*): Self = StObject.set(x, "qtr", js.Array(value :_*))
+    inline def setQtrVarargs(value: ITableRecord*): Self = StObject.set(x, "qtr", js.Array(value :_*))
   }
 }

@@ -17,8 +17,7 @@ trait DataPilotTable
      with XModifyBroadcaster
 object DataPilotTable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnFields: XIndexAccess,
     DataFields: XIndexAccess,
     DataPilotFields: XIndexAccess,

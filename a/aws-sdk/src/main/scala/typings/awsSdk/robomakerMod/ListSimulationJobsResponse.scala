@@ -18,25 +18,19 @@ trait ListSimulationJobsResponse extends StObject {
 }
 object ListSimulationJobsResponse {
   
-  @scala.inline
-  def apply(simulationJobSummaries: SimulationJobSummaries): ListSimulationJobsResponse = {
+  inline def apply(simulationJobSummaries: SimulationJobSummaries): ListSimulationJobsResponse = {
     val __obj = js.Dynamic.literal(simulationJobSummaries = simulationJobSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSimulationJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListSimulationJobsResponseMutableBuilder[Self <: ListSimulationJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSimulationJobsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSimulationJobSummaries(value: SimulationJobSummaries): Self = StObject.set(x, "simulationJobSummaries", value.asInstanceOf[js.Any])
+    inline def setSimulationJobSummaries(value: SimulationJobSummaries): Self = StObject.set(x, "simulationJobSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimulationJobSummariesVarargs(value: SimulationJobSummary*): Self = StObject.set(x, "simulationJobSummaries", js.Array(value :_*))
+    inline def setSimulationJobSummariesVarargs(value: SimulationJobSummary*): Self = StObject.set(x, "simulationJobSummaries", js.Array(value :_*))
   }
 }

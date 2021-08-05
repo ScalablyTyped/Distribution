@@ -13,16 +13,13 @@ trait DeprecateSystemTemplateRequest extends StObject {
 }
 object DeprecateSystemTemplateRequest {
   
-  @scala.inline
-  def apply(id: Urn): DeprecateSystemTemplateRequest = {
+  inline def apply(id: Urn): DeprecateSystemTemplateRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeprecateSystemTemplateRequest]
   }
   
-  @scala.inline
-  implicit class DeprecateSystemTemplateRequestMutableBuilder[Self <: DeprecateSystemTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeprecateSystemTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

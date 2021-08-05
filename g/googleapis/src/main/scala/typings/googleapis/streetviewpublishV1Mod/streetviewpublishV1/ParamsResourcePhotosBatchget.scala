@@ -40,40 +40,29 @@ trait ParamsResourcePhotosBatchget
 }
 object ParamsResourcePhotosBatchget {
   
-  @scala.inline
-  def apply(): ParamsResourcePhotosBatchget = {
+  inline def apply(): ParamsResourcePhotosBatchget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePhotosBatchget]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePhotosBatchgetMutableBuilder[Self <: ParamsResourcePhotosBatchget] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePhotosBatchget](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setPhotoIds(value: js.Array[String]): Self = StObject.set(x, "photoIds", value.asInstanceOf[js.Any])
+    inline def setPhotoIds(value: js.Array[String]): Self = StObject.set(x, "photoIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoIdsUndefined: Self = StObject.set(x, "photoIds", js.undefined)
+    inline def setPhotoIdsUndefined: Self = StObject.set(x, "photoIds", js.undefined)
     
-    @scala.inline
-    def setPhotoIdsVarargs(value: String*): Self = StObject.set(x, "photoIds", js.Array(value :_*))
+    inline def setPhotoIdsVarargs(value: String*): Self = StObject.set(x, "photoIds", js.Array(value :_*))
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

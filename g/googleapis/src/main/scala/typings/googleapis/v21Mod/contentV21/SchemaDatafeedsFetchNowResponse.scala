@@ -14,19 +14,15 @@ trait SchemaDatafeedsFetchNowResponse extends StObject {
 }
 object SchemaDatafeedsFetchNowResponse {
   
-  @scala.inline
-  def apply(): SchemaDatafeedsFetchNowResponse = {
+  inline def apply(): SchemaDatafeedsFetchNowResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDatafeedsFetchNowResponse]
   }
   
-  @scala.inline
-  implicit class SchemaDatafeedsFetchNowResponseMutableBuilder[Self <: SchemaDatafeedsFetchNowResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDatafeedsFetchNowResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

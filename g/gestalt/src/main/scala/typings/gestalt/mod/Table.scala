@@ -27,20 +27,17 @@ object Table {
   @JSImport("gestalt", "Table.Body")
   @js.native
   def Body: FC[TableBodyProps] = js.native
-  @scala.inline
-  def Body_=(x: FC[TableBodyProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
+  inline def Body_=(x: FC[TableBodyProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
   
   @JSImport("gestalt", "Table.Cell")
   @js.native
   def Cell: FC[TableCellProps] = js.native
-  @scala.inline
-  def Cell_=(x: FC[TableCellProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
+  inline def Cell_=(x: FC[TableCellProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
   
   @JSImport("gestalt", "Table.Footer")
   @js.native
   def Footer: FC[TableFooterProps] = js.native
-  @scala.inline
-  def Footer_=(x: FC[TableFooterProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
+  inline def Footer_=(x: FC[TableFooterProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
   
   @JSImport("gestalt", "Table.Header")
   @js.native
@@ -49,11 +46,9 @@ object Table {
   @JSImport("gestalt", "Table.HeaderCell")
   @js.native
   def HeaderCell: FC[TableHeaderCellProps] = js.native
-  @scala.inline
-  def HeaderCell_=(x: FC[TableHeaderCellProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeaderCell")(x.asInstanceOf[js.Any])
+  inline def HeaderCell_=(x: FC[TableHeaderCellProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeaderCell")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Header_=(x: FC[TableHeaderProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
+  inline def Header_=(x: FC[TableHeaderProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
   
   @JSImport("gestalt", "Table.Row")
   @js.native
@@ -62,15 +57,12 @@ object Table {
   @JSImport("gestalt", "Table.RowExpandable")
   @js.native
   def RowExpandable: FC[TableRowExpandableProps] = js.native
-  @scala.inline
-  def RowExpandable_=(x: FC[TableRowExpandableProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RowExpandable")(x.asInstanceOf[js.Any])
+  inline def RowExpandable_=(x: FC[TableRowExpandableProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RowExpandable")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Row_=(x: FC[TableRowProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
+  inline def Row_=(x: FC[TableRowProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
   
   @JSImport("gestalt", "Table.SortableHeaderCell")
   @js.native
   def SortableHeaderCell: FC[TableSortableHeaderCellProps] = js.native
-  @scala.inline
-  def SortableHeaderCell_=(x: FC[TableSortableHeaderCellProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SortableHeaderCell")(x.asInstanceOf[js.Any])
+  inline def SortableHeaderCell_=(x: FC[TableSortableHeaderCellProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SortableHeaderCell")(x.asInstanceOf[js.Any])
 }

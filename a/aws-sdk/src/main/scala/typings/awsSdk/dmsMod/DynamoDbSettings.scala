@@ -13,16 +13,13 @@ trait DynamoDbSettings extends StObject {
 }
 object DynamoDbSettings {
   
-  @scala.inline
-  def apply(ServiceAccessRoleArn: String): DynamoDbSettings = {
+  inline def apply(ServiceAccessRoleArn: String): DynamoDbSettings = {
     val __obj = js.Dynamic.literal(ServiceAccessRoleArn = ServiceAccessRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamoDbSettings]
   }
   
-  @scala.inline
-  implicit class DynamoDbSettingsMutableBuilder[Self <: DynamoDbSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DynamoDbSettings](x: Self) {
     
-    @scala.inline
-    def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
+    inline def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
   }
 }

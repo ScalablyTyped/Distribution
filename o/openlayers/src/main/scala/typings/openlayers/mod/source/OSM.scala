@@ -41,6 +41,5 @@ object OSM {
   @JSImport("openlayers", "source.OSM.ATTRIBUTION")
   @js.native
   def ATTRIBUTION: Attribution = js.native
-  @scala.inline
-  def ATTRIBUTION_=(x: Attribution): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTION")(x.asInstanceOf[js.Any])
+  inline def ATTRIBUTION_=(x: Attribution): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTION")(x.asInstanceOf[js.Any])
 }

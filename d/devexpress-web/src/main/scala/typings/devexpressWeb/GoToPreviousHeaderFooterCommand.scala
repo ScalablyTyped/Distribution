@@ -18,16 +18,13 @@ trait GoToPreviousHeaderFooterCommand
 }
 object GoToPreviousHeaderFooterCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): GoToPreviousHeaderFooterCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): GoToPreviousHeaderFooterCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[GoToPreviousHeaderFooterCommand]
   }
   
-  @scala.inline
-  implicit class GoToPreviousHeaderFooterCommandMutableBuilder[Self <: GoToPreviousHeaderFooterCommand] (val x: Self) extends AnyVal {
+  extension [Self <: GoToPreviousHeaderFooterCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

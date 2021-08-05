@@ -18,31 +18,23 @@ trait PendingCloudwatchLogsExports extends StObject {
 }
 object PendingCloudwatchLogsExports {
   
-  @scala.inline
-  def apply(): PendingCloudwatchLogsExports = {
+  inline def apply(): PendingCloudwatchLogsExports = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PendingCloudwatchLogsExports]
   }
   
-  @scala.inline
-  implicit class PendingCloudwatchLogsExportsMutableBuilder[Self <: PendingCloudwatchLogsExports] (val x: Self) extends AnyVal {
+  extension [Self <: PendingCloudwatchLogsExports](x: Self) {
     
-    @scala.inline
-    def setLogTypesToDisable(value: LogTypeList): Self = StObject.set(x, "LogTypesToDisable", value.asInstanceOf[js.Any])
+    inline def setLogTypesToDisable(value: LogTypeList): Self = StObject.set(x, "LogTypesToDisable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogTypesToDisableUndefined: Self = StObject.set(x, "LogTypesToDisable", js.undefined)
+    inline def setLogTypesToDisableUndefined: Self = StObject.set(x, "LogTypesToDisable", js.undefined)
     
-    @scala.inline
-    def setLogTypesToDisableVarargs(value: String*): Self = StObject.set(x, "LogTypesToDisable", js.Array(value :_*))
+    inline def setLogTypesToDisableVarargs(value: String*): Self = StObject.set(x, "LogTypesToDisable", js.Array(value :_*))
     
-    @scala.inline
-    def setLogTypesToEnable(value: LogTypeList): Self = StObject.set(x, "LogTypesToEnable", value.asInstanceOf[js.Any])
+    inline def setLogTypesToEnable(value: LogTypeList): Self = StObject.set(x, "LogTypesToEnable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogTypesToEnableUndefined: Self = StObject.set(x, "LogTypesToEnable", js.undefined)
+    inline def setLogTypesToEnableUndefined: Self = StObject.set(x, "LogTypesToEnable", js.undefined)
     
-    @scala.inline
-    def setLogTypesToEnableVarargs(value: String*): Self = StObject.set(x, "LogTypesToEnable", js.Array(value :_*))
+    inline def setLogTypesToEnableVarargs(value: String*): Self = StObject.set(x, "LogTypesToEnable", js.Array(value :_*))
   }
 }

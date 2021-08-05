@@ -10,6 +10,5 @@ object uidMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
+  inline def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
 }

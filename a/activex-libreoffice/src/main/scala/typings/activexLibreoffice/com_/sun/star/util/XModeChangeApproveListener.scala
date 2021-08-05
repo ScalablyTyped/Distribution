@@ -26,8 +26,7 @@ trait XModeChangeApproveListener
 }
 object XModeChangeApproveListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveModeChange: ModeChangeEvent => Unit,
     disposing: EventObject => Unit,
@@ -38,10 +37,8 @@ object XModeChangeApproveListener {
     __obj.asInstanceOf[XModeChangeApproveListener]
   }
   
-  @scala.inline
-  implicit class XModeChangeApproveListenerMutableBuilder[Self <: XModeChangeApproveListener] (val x: Self) extends AnyVal {
+  extension [Self <: XModeChangeApproveListener](x: Self) {
     
-    @scala.inline
-    def setApproveModeChange(value: ModeChangeEvent => Unit): Self = StObject.set(x, "approveModeChange", js.Any.fromFunction1(value))
+    inline def setApproveModeChange(value: ModeChangeEvent => Unit): Self = StObject.set(x, "approveModeChange", js.Any.fromFunction1(value))
   }
 }

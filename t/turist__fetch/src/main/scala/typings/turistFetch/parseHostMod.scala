@@ -11,6 +11,5 @@ object parseHostMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(url: String, headers: Headers): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def default(url: String, headers: Headers): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
 }

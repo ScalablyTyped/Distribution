@@ -12,8 +12,7 @@ trait ChangeFloatingObjectAbsoluteSizeCommand
      with ChangeFloatingObjectPropertyCommandBase[FloatingObjectAbsoluteSizeSettings]
 object ChangeFloatingObjectAbsoluteSizeCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     execute: FloatingObjectAbsoluteSizeSettings => Boolean,
     getState: () => CommandState[FloatingObjectAbsoluteSizeSettings]
   ): ChangeFloatingObjectAbsoluteSizeCommand = {

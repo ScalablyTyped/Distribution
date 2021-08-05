@@ -28,8 +28,7 @@ trait StructureStorage
 }
 object StructureStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
     hits: Double,
@@ -48,13 +47,10 @@ object StructureStorage {
     __obj.asInstanceOf[StructureStorage]
   }
   
-  @scala.inline
-  implicit class StructureStorageMutableBuilder[Self <: StructureStorage] (val x: Self) extends AnyVal {
+  extension [Self <: StructureStorage](x: Self) {
     
-    @scala.inline
-    def setStore(value: StoreDefinition): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: StoreDefinition): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreCapacity(value: Double): Self = StObject.set(x, "storeCapacity", value.asInstanceOf[js.Any])
+    inline def setStoreCapacity(value: Double): Self = StObject.set(x, "storeCapacity", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(pkgPath: String): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(pkgPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  inline def apply(pkgPath: String): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(pkgPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
   @JSImport("which-pm", JSImport.Namespace)
   @js.native
@@ -24,17 +23,14 @@ object mod {
   }
   object NPM {
     
-    @scala.inline
-    def apply(): NPM = {
+    inline def apply(): NPM = {
       val __obj = js.Dynamic.literal(name = "npm")
       __obj.asInstanceOf[NPM]
     }
     
-    @scala.inline
-    implicit class NPMMutableBuilder[Self <: NPM] (val x: Self) extends AnyVal {
+    extension [Self <: NPM](x: Self) {
       
-      @scala.inline
-      def setName(value: npm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: npm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,23 +44,18 @@ object mod {
   }
   object Other {
     
-    @scala.inline
-    def apply(name: String): Other = {
+    inline def apply(name: String): Other = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Other]
     }
     
-    @scala.inline
-    implicit class OtherMutableBuilder[Self <: Other] (val x: Self) extends AnyVal {
+    extension [Self <: Other](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -78,20 +69,16 @@ object mod {
   }
   object PNPM {
     
-    @scala.inline
-    def apply(version: String): PNPM = {
+    inline def apply(version: String): PNPM = {
       val __obj = js.Dynamic.literal(name = "pnpm", version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[PNPM]
     }
     
-    @scala.inline
-    implicit class PNPMMutableBuilder[Self <: PNPM] (val x: Self) extends AnyVal {
+    extension [Self <: PNPM](x: Self) {
       
-      @scala.inline
-      def setName(value: pnpm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: pnpm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,26 +91,22 @@ object mod {
   trait Result extends StObject
   object Result {
     
-    @scala.inline
-    def NPM(): typings.whichPm.mod.NPM = {
+    inline def NPM(): typings.whichPm.mod.NPM = {
       val __obj = js.Dynamic.literal(name = "npm")
       __obj.asInstanceOf[typings.whichPm.mod.NPM]
     }
     
-    @scala.inline
-    def Other(name: String): typings.whichPm.mod.Other = {
+    inline def Other(name: String): typings.whichPm.mod.Other = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.whichPm.mod.Other]
     }
     
-    @scala.inline
-    def PNPM(version: String): typings.whichPm.mod.PNPM = {
+    inline def PNPM(version: String): typings.whichPm.mod.PNPM = {
       val __obj = js.Dynamic.literal(name = "pnpm", version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.whichPm.mod.PNPM]
     }
     
-    @scala.inline
-    def YARN(): typings.whichPm.mod.YARN = {
+    inline def YARN(): typings.whichPm.mod.YARN = {
       val __obj = js.Dynamic.literal(name = "yarn")
       __obj.asInstanceOf[typings.whichPm.mod.YARN]
     }
@@ -137,17 +120,14 @@ object mod {
   }
   object YARN {
     
-    @scala.inline
-    def apply(): YARN = {
+    inline def apply(): YARN = {
       val __obj = js.Dynamic.literal(name = "yarn")
       __obj.asInstanceOf[YARN]
     }
     
-    @scala.inline
-    implicit class YARNMutableBuilder[Self <: YARN] (val x: Self) extends AnyVal {
+    extension [Self <: YARN](x: Self) {
       
-      @scala.inline
-      def setName(value: yarn): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: yarn): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

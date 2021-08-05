@@ -8,11 +8,9 @@ object maximMazurokGapiClientCloudbillingStrings {
   
   @js.native
   sealed trait cloudbilling extends StObject
-  @scala.inline
-  def cloudbilling: cloudbilling = "cloudbilling".asInstanceOf[cloudbilling]
+  inline def cloudbilling: cloudbilling = "cloudbilling".asInstanceOf[cloudbilling]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

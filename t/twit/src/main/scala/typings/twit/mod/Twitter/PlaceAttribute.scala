@@ -27,8 +27,7 @@ trait PlaceAttribute extends StObject {
 }
 object PlaceAttribute {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appColonid: String,
     iso3: String,
     locality: String,
@@ -44,34 +43,24 @@ object PlaceAttribute {
     __obj.asInstanceOf[PlaceAttribute]
   }
   
-  @scala.inline
-  implicit class PlaceAttributeMutableBuilder[Self <: PlaceAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceAttribute](x: Self) {
     
-    @scala.inline
-    def setAppColonid(value: String): Self = StObject.set(x, "app:id", value.asInstanceOf[js.Any])
+    inline def setAppColonid(value: String): Self = StObject.set(x, "app:id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIso3(value: String): Self = StObject.set(x, "iso3", value.asInstanceOf[js.Any])
+    inline def setIso3(value: String): Self = StObject.set(x, "iso3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+    inline def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
+    inline def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreet_address(value: String): Self = StObject.set(x, "street_address", value.asInstanceOf[js.Any])
+    inline def setStreet_address(value: String): Self = StObject.set(x, "street_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwitter(value: String): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
+    inline def setTwitter(value: String): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

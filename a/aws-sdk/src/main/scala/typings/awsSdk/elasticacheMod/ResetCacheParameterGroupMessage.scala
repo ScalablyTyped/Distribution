@@ -23,31 +23,23 @@ trait ResetCacheParameterGroupMessage extends StObject {
 }
 object ResetCacheParameterGroupMessage {
   
-  @scala.inline
-  def apply(CacheParameterGroupName: String): ResetCacheParameterGroupMessage = {
+  inline def apply(CacheParameterGroupName: String): ResetCacheParameterGroupMessage = {
     val __obj = js.Dynamic.literal(CacheParameterGroupName = CacheParameterGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetCacheParameterGroupMessage]
   }
   
-  @scala.inline
-  implicit class ResetCacheParameterGroupMessageMutableBuilder[Self <: ResetCacheParameterGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ResetCacheParameterGroupMessage](x: Self) {
     
-    @scala.inline
-    def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterNameValues(value: ParameterNameValueList): Self = StObject.set(x, "ParameterNameValues", value.asInstanceOf[js.Any])
+    inline def setParameterNameValues(value: ParameterNameValueList): Self = StObject.set(x, "ParameterNameValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterNameValuesUndefined: Self = StObject.set(x, "ParameterNameValues", js.undefined)
+    inline def setParameterNameValuesUndefined: Self = StObject.set(x, "ParameterNameValues", js.undefined)
     
-    @scala.inline
-    def setParameterNameValuesVarargs(value: ParameterNameValue*): Self = StObject.set(x, "ParameterNameValues", js.Array(value :_*))
+    inline def setParameterNameValuesVarargs(value: ParameterNameValue*): Self = StObject.set(x, "ParameterNameValues", js.Array(value :_*))
     
-    @scala.inline
-    def setResetAllParameters(value: Boolean): Self = StObject.set(x, "ResetAllParameters", value.asInstanceOf[js.Any])
+    inline def setResetAllParameters(value: Boolean): Self = StObject.set(x, "ResetAllParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetAllParametersUndefined: Self = StObject.set(x, "ResetAllParameters", js.undefined)
+    inline def setResetAllParametersUndefined: Self = StObject.set(x, "ResetAllParameters", js.undefined)
   }
 }

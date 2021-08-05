@@ -31,8 +31,7 @@ trait AbstractDeclarationMemberType
 }
 object AbstractDeclarationMemberType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: js.Array[Argument],
     async: Boolean,
     extAttrs: js.Array[ExtendedAttribute],
@@ -46,31 +45,22 @@ object AbstractDeclarationMemberType {
     __obj.asInstanceOf[AbstractDeclarationMemberType]
   }
   
-  @scala.inline
-  implicit class AbstractDeclarationMemberTypeMutableBuilder[Self <: AbstractDeclarationMemberType] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractDeclarationMemberType](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdlType(value: js.Array[IDLTypeDescription]): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: js.Array[IDLTypeDescription]): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdlTypeVarargs(value: IDLTypeDescription*): Self = StObject.set(x, "idlType", js.Array(value :_*))
+    inline def setIdlTypeVarargs(value: IDLTypeDescription*): Self = StObject.set(x, "idlType", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: InterfaceMixinType | InterfaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: InterfaceMixinType | InterfaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: iterable | maplike | setlike): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: iterable | maplike | setlike): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

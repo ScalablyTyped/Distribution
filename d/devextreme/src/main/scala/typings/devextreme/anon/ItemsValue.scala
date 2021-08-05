@@ -12,28 +12,21 @@ trait ItemsValue extends StObject {
 }
 object ItemsValue {
   
-  @scala.inline
-  def apply(): ItemsValue = {
+  inline def apply(): ItemsValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItemsValue]
   }
   
-  @scala.inline
-  implicit class ItemsValueMutableBuilder[Self <: ItemsValue] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsValue](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[Double]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Double]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: Double*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Double*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

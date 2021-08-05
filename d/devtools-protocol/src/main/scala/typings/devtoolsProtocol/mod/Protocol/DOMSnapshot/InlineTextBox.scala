@@ -27,22 +27,17 @@ trait InlineTextBox extends StObject {
 }
 object InlineTextBox {
   
-  @scala.inline
-  def apply(boundingBox: Rect, numCharacters: integer, startCharacterIndex: integer): InlineTextBox = {
+  inline def apply(boundingBox: Rect, numCharacters: integer, startCharacterIndex: integer): InlineTextBox = {
     val __obj = js.Dynamic.literal(boundingBox = boundingBox.asInstanceOf[js.Any], numCharacters = numCharacters.asInstanceOf[js.Any], startCharacterIndex = startCharacterIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineTextBox]
   }
   
-  @scala.inline
-  implicit class InlineTextBoxMutableBuilder[Self <: InlineTextBox] (val x: Self) extends AnyVal {
+  extension [Self <: InlineTextBox](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: Rect): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: Rect): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumCharacters(value: integer): Self = StObject.set(x, "numCharacters", value.asInstanceOf[js.Any])
+    inline def setNumCharacters(value: integer): Self = StObject.set(x, "numCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartCharacterIndex(value: integer): Self = StObject.set(x, "startCharacterIndex", value.asInstanceOf[js.Any])
+    inline def setStartCharacterIndex(value: integer): Self = StObject.set(x, "startCharacterIndex", value.asInstanceOf[js.Any])
   }
 }

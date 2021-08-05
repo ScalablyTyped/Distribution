@@ -27,25 +27,19 @@ trait PlusBluetoothBluetoothService extends StObject {
 }
 object PlusBluetoothBluetoothService {
   
-  @scala.inline
-  def apply(): PlusBluetoothBluetoothService = {
+  inline def apply(): PlusBluetoothBluetoothService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusBluetoothBluetoothService]
   }
   
-  @scala.inline
-  implicit class PlusBluetoothBluetoothServiceMutableBuilder[Self <: PlusBluetoothBluetoothService] (val x: Self) extends AnyVal {
+  extension [Self <: PlusBluetoothBluetoothService](x: Self) {
     
-    @scala.inline
-    def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+    inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
+    inline def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

@@ -23,22 +23,17 @@ trait TopicRuleS3 extends StObject {
 }
 object TopicRuleS3 {
   
-  @scala.inline
-  def apply(bucketName: String, key: String, roleArn: String): TopicRuleS3 = {
+  inline def apply(bucketName: String, key: String, roleArn: String): TopicRuleS3 = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleS3]
   }
   
-  @scala.inline
-  implicit class TopicRuleS3MutableBuilder[Self <: TopicRuleS3] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleS3](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

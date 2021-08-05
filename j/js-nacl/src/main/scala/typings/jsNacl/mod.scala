@@ -12,10 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def instantiate(cb: NaclCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def instantiate(cb: NaclCallback, opts: NaclOpts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(cb.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def instantiate(cb: NaclCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def instantiate(cb: NaclCallback, opts: NaclOpts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(cb.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait BoxKeyPair extends StObject {
     
@@ -25,20 +23,16 @@ object mod {
   }
   object BoxKeyPair {
     
-    @scala.inline
-    def apply(boxPk: BoxPublicKey, boxSk: BoxSecretKey): BoxKeyPair = {
+    inline def apply(boxPk: BoxPublicKey, boxSk: BoxSecretKey): BoxKeyPair = {
       val __obj = js.Dynamic.literal(boxPk = boxPk.asInstanceOf[js.Any], boxSk = boxSk.asInstanceOf[js.Any])
       __obj.asInstanceOf[BoxKeyPair]
     }
     
-    @scala.inline
-    implicit class BoxKeyPairMutableBuilder[Self <: BoxKeyPair] (val x: Self) extends AnyVal {
+    extension [Self <: BoxKeyPair](x: Self) {
       
-      @scala.inline
-      def setBoxPk(value: BoxPublicKey): Self = StObject.set(x, "boxPk", value.asInstanceOf[js.Any])
+      inline def setBoxPk(value: BoxPublicKey): Self = StObject.set(x, "boxPk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxSk(value: BoxSecretKey): Self = StObject.set(x, "boxSk", value.asInstanceOf[js.Any])
+      inline def setBoxSk(value: BoxSecretKey): Self = StObject.set(x, "boxSk", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,17 +46,14 @@ object mod {
   }
   object BoxSharedSecret {
     
-    @scala.inline
-    def apply(boxK: Uint8Array): BoxSharedSecret = {
+    inline def apply(boxK: Uint8Array): BoxSharedSecret = {
       val __obj = js.Dynamic.literal(boxK = boxK.asInstanceOf[js.Any])
       __obj.asInstanceOf[BoxSharedSecret]
     }
     
-    @scala.inline
-    implicit class BoxSharedSecretMutableBuilder[Self <: BoxSharedSecret] (val x: Self) extends AnyVal {
+    extension [Self <: BoxSharedSecret](x: Self) {
       
-      @scala.inline
-      def setBoxK(value: Uint8Array): Self = StObject.set(x, "boxK", value.asInstanceOf[js.Any])
+      inline def setBoxK(value: Uint8Array): Self = StObject.set(x, "boxK", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,8 +128,7 @@ object mod {
   }
   object Nacl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       crypto_box: (Message, Nonce, BoxPublicKey, BoxSecretKey) => CipherText,
       crypto_box_keypair: () => BoxKeyPair,
       crypto_box_keypair_from_raw_sk: Uint8Array => BoxKeyPair,
@@ -171,89 +161,61 @@ object mod {
       __obj.asInstanceOf[Nacl]
     }
     
-    @scala.inline
-    implicit class NaclMutableBuilder[Self <: Nacl] (val x: Self) extends AnyVal {
+    extension [Self <: Nacl](x: Self) {
       
-      @scala.inline
-      def setCrypto_box(value: (Message, Nonce, BoxPublicKey, BoxSecretKey) => CipherText): Self = StObject.set(x, "crypto_box", js.Any.fromFunction4(value))
+      inline def setCrypto_box(value: (Message, Nonce, BoxPublicKey, BoxSecretKey) => CipherText): Self = StObject.set(x, "crypto_box", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCrypto_box_keypair(value: () => BoxKeyPair): Self = StObject.set(x, "crypto_box_keypair", js.Any.fromFunction0(value))
+      inline def setCrypto_box_keypair(value: () => BoxKeyPair): Self = StObject.set(x, "crypto_box_keypair", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCrypto_box_keypair_from_raw_sk(value: Uint8Array => BoxKeyPair): Self = StObject.set(x, "crypto_box_keypair_from_raw_sk", js.Any.fromFunction1(value))
+      inline def setCrypto_box_keypair_from_raw_sk(value: Uint8Array => BoxKeyPair): Self = StObject.set(x, "crypto_box_keypair_from_raw_sk", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCrypto_box_open(value: (CipherText, Nonce, BoxPublicKey, BoxSecretKey) => Message): Self = StObject.set(x, "crypto_box_open", js.Any.fromFunction4(value))
+      inline def setCrypto_box_open(value: (CipherText, Nonce, BoxPublicKey, BoxSecretKey) => Message): Self = StObject.set(x, "crypto_box_open", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCrypto_box_open_precomputed(value: (CipherText, Nonce, BoxSharedSecret) => Message): Self = StObject.set(x, "crypto_box_open_precomputed", js.Any.fromFunction3(value))
+      inline def setCrypto_box_open_precomputed(value: (CipherText, Nonce, BoxSharedSecret) => Message): Self = StObject.set(x, "crypto_box_open_precomputed", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCrypto_box_precompute(value: (BoxPublicKey, BoxSecretKey) => BoxSharedSecret): Self = StObject.set(x, "crypto_box_precompute", js.Any.fromFunction2(value))
+      inline def setCrypto_box_precompute(value: (BoxPublicKey, BoxSecretKey) => BoxSharedSecret): Self = StObject.set(x, "crypto_box_precompute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCrypto_box_precomputed(value: (Message, Nonce, BoxSharedSecret) => CipherText): Self = StObject.set(x, "crypto_box_precomputed", js.Any.fromFunction3(value))
+      inline def setCrypto_box_precomputed(value: (Message, Nonce, BoxSharedSecret) => CipherText): Self = StObject.set(x, "crypto_box_precomputed", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCrypto_box_random_nonce(value: () => Nonce): Self = StObject.set(x, "crypto_box_random_nonce", js.Any.fromFunction0(value))
+      inline def setCrypto_box_random_nonce(value: () => Nonce): Self = StObject.set(x, "crypto_box_random_nonce", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCrypto_box_seed_keypair(value: Uint8Array => BoxKeyPair): Self = StObject.set(x, "crypto_box_seed_keypair", js.Any.fromFunction1(value))
+      inline def setCrypto_box_seed_keypair(value: Uint8Array => BoxKeyPair): Self = StObject.set(x, "crypto_box_seed_keypair", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCrypto_hash(value: Uint8Array => Uint8Array): Self = StObject.set(x, "crypto_hash", js.Any.fromFunction1(value))
+      inline def setCrypto_hash(value: Uint8Array => Uint8Array): Self = StObject.set(x, "crypto_hash", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCrypto_hash_sha256(value: Uint8Array => Uint8Array): Self = StObject.set(x, "crypto_hash_sha256", js.Any.fromFunction1(value))
+      inline def setCrypto_hash_sha256(value: Uint8Array => Uint8Array): Self = StObject.set(x, "crypto_hash_sha256", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCrypto_secretbox(value: (Message, Nonce, BoxSecretKey) => CipherText): Self = StObject.set(x, "crypto_secretbox", js.Any.fromFunction3(value))
+      inline def setCrypto_secretbox(value: (Message, Nonce, BoxSecretKey) => CipherText): Self = StObject.set(x, "crypto_secretbox", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCrypto_secretbox_open(value: (CipherText, Nonce, BoxSecretKey) => Message): Self = StObject.set(x, "crypto_secretbox_open", js.Any.fromFunction3(value))
+      inline def setCrypto_secretbox_open(value: (CipherText, Nonce, BoxSecretKey) => Message): Self = StObject.set(x, "crypto_secretbox_open", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCrypto_secretbox_random_nonce(value: () => Nonce): Self = StObject.set(x, "crypto_secretbox_random_nonce", js.Any.fromFunction0(value))
+      inline def setCrypto_secretbox_random_nonce(value: () => Nonce): Self = StObject.set(x, "crypto_secretbox_random_nonce", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCrypto_sign(value: (Message, SignerSecretKey) => MessageWithSignature): Self = StObject.set(x, "crypto_sign", js.Any.fromFunction2(value))
+      inline def setCrypto_sign(value: (Message, SignerSecretKey) => MessageWithSignature): Self = StObject.set(x, "crypto_sign", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCrypto_sign_detached(value: (Message, SignerSecretKey) => Signature): Self = StObject.set(x, "crypto_sign_detached", js.Any.fromFunction2(value))
+      inline def setCrypto_sign_detached(value: (Message, SignerSecretKey) => Signature): Self = StObject.set(x, "crypto_sign_detached", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCrypto_sign_keypair(value: () => SignKeyPair): Self = StObject.set(x, "crypto_sign_keypair", js.Any.fromFunction0(value))
+      inline def setCrypto_sign_keypair(value: () => SignKeyPair): Self = StObject.set(x, "crypto_sign_keypair", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCrypto_sign_open(value: (MessageWithSignature, SignerPublicKey) => Message | Null): Self = StObject.set(x, "crypto_sign_open", js.Any.fromFunction2(value))
+      inline def setCrypto_sign_open(value: (MessageWithSignature, SignerPublicKey) => Message | Null): Self = StObject.set(x, "crypto_sign_open", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCrypto_sign_seed_keypair(value: Uint8Array => SignKeyPair): Self = StObject.set(x, "crypto_sign_seed_keypair", js.Any.fromFunction1(value))
+      inline def setCrypto_sign_seed_keypair(value: Uint8Array => SignKeyPair): Self = StObject.set(x, "crypto_sign_seed_keypair", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCrypto_sign_verify_detached(value: (Signature, Message, SignerPublicKey) => Boolean): Self = StObject.set(x, "crypto_sign_verify_detached", js.Any.fromFunction3(value))
+      inline def setCrypto_sign_verify_detached(value: (Signature, Message, SignerPublicKey) => Boolean): Self = StObject.set(x, "crypto_sign_verify_detached", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDecode_latin1(value: Uint8Array => String): Self = StObject.set(x, "decode_latin1", js.Any.fromFunction1(value))
+      inline def setDecode_latin1(value: Uint8Array => String): Self = StObject.set(x, "decode_latin1", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecode_utf8(value: Uint8Array => String): Self = StObject.set(x, "decode_utf8", js.Any.fromFunction1(value))
+      inline def setDecode_utf8(value: Uint8Array => String): Self = StObject.set(x, "decode_utf8", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncode_latin1(value: String => Uint8Array): Self = StObject.set(x, "encode_latin1", js.Any.fromFunction1(value))
+      inline def setEncode_latin1(value: String => Uint8Array): Self = StObject.set(x, "encode_latin1", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncode_utf8(value: String => Uint8Array): Self = StObject.set(x, "encode_utf8", js.Any.fromFunction1(value))
+      inline def setEncode_utf8(value: String => Uint8Array): Self = StObject.set(x, "encode_utf8", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFrom_hex(value: String => Uint8Array): Self = StObject.set(x, "from_hex", js.Any.fromFunction1(value))
+      inline def setFrom_hex(value: String => Uint8Array): Self = StObject.set(x, "from_hex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRandom_bytes(value: Double => Uint8Array): Self = StObject.set(x, "random_bytes", js.Any.fromFunction1(value))
+      inline def setRandom_bytes(value: Double => Uint8Array): Self = StObject.set(x, "random_bytes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTo_hex(value: Uint8Array => String): Self = StObject.set(x, "to_hex", js.Any.fromFunction1(value))
+      inline def setTo_hex(value: Uint8Array => String): Self = StObject.set(x, "to_hex", js.Any.fromFunction1(value))
     }
   }
   
@@ -271,20 +233,16 @@ object mod {
   }
   object SignKeyPair {
     
-    @scala.inline
-    def apply(signPk: SignerPublicKey, signSk: SignerSecretKey): SignKeyPair = {
+    inline def apply(signPk: SignerPublicKey, signSk: SignerSecretKey): SignKeyPair = {
       val __obj = js.Dynamic.literal(signPk = signPk.asInstanceOf[js.Any], signSk = signSk.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignKeyPair]
     }
     
-    @scala.inline
-    implicit class SignKeyPairMutableBuilder[Self <: SignKeyPair] (val x: Self) extends AnyVal {
+    extension [Self <: SignKeyPair](x: Self) {
       
-      @scala.inline
-      def setSignPk(value: SignerPublicKey): Self = StObject.set(x, "signPk", value.asInstanceOf[js.Any])
+      inline def setSignPk(value: SignerPublicKey): Self = StObject.set(x, "signPk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignSk(value: SignerSecretKey): Self = StObject.set(x, "signSk", value.asInstanceOf[js.Any])
+      inline def setSignSk(value: SignerSecretKey): Self = StObject.set(x, "signSk", value.asInstanceOf[js.Any])
     }
   }
   

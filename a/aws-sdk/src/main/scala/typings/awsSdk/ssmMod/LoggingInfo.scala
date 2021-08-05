@@ -23,25 +23,19 @@ trait LoggingInfo extends StObject {
 }
 object LoggingInfo {
   
-  @scala.inline
-  def apply(S3BucketName: S3BucketName, S3Region: S3Region): LoggingInfo = {
+  inline def apply(S3BucketName: S3BucketName, S3Region: S3Region): LoggingInfo = {
     val __obj = js.Dynamic.literal(S3BucketName = S3BucketName.asInstanceOf[js.Any], S3Region = S3Region.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingInfo]
   }
   
-  @scala.inline
-  implicit class LoggingInfoMutableBuilder[Self <: LoggingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingInfo](x: Self) {
     
-    @scala.inline
-    def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "S3KeyPrefix", value.asInstanceOf[js.Any])
+    inline def setS3KeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "S3KeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyPrefixUndefined: Self = StObject.set(x, "S3KeyPrefix", js.undefined)
+    inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "S3KeyPrefix", js.undefined)
     
-    @scala.inline
-    def setS3Region(value: S3Region): Self = StObject.set(x, "S3Region", value.asInstanceOf[js.Any])
+    inline def setS3Region(value: S3Region): Self = StObject.set(x, "S3Region", value.asInstanceOf[js.Any])
   }
 }

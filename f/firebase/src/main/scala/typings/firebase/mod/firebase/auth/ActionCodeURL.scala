@@ -44,40 +44,29 @@ trait ActionCodeURL extends StObject {
 }
 object ActionCodeURL {
   
-  @scala.inline
-  def apply(apiKey: String, code: String, operation: Operation): ActionCodeURL = {
+  inline def apply(apiKey: String, code: String, operation: Operation): ActionCodeURL = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], continueUrl = null, languageCode = null, tenantId = null)
     __obj.asInstanceOf[ActionCodeURL]
   }
   
-  @scala.inline
-  implicit class ActionCodeURLMutableBuilder[Self <: ActionCodeURL] (val x: Self) extends AnyVal {
+  extension [Self <: ActionCodeURL](x: Self) {
     
-    @scala.inline
-    def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+    inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueUrl(value: String): Self = StObject.set(x, "continueUrl", value.asInstanceOf[js.Any])
+    inline def setContinueUrl(value: String): Self = StObject.set(x, "continueUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueUrlNull: Self = StObject.set(x, "continueUrl", null)
+    inline def setContinueUrlNull: Self = StObject.set(x, "continueUrl", null)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
+    inline def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
     
-    @scala.inline
-    def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+    inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantIdNull: Self = StObject.set(x, "tenantId", null)
+    inline def setTenantIdNull: Self = StObject.set(x, "tenantId", null)
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-sails-hook"
-version := "0.7-dt-20200515Z-c33b22"
+version := "0.7-dt-20200515Z-c4a550"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -32,49 +32,35 @@ trait CacheKeyPolicy extends StObject {
 }
 object CacheKeyPolicy {
   
-  @scala.inline
-  def apply(): CacheKeyPolicy = {
+  inline def apply(): CacheKeyPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheKeyPolicy]
   }
   
-  @scala.inline
-  implicit class CacheKeyPolicyMutableBuilder[Self <: CacheKeyPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: CacheKeyPolicy](x: Self) {
     
-    @scala.inline
-    def setIncludeHost(value: Boolean): Self = StObject.set(x, "includeHost", value.asInstanceOf[js.Any])
+    inline def setIncludeHost(value: Boolean): Self = StObject.set(x, "includeHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeHostUndefined: Self = StObject.set(x, "includeHost", js.undefined)
+    inline def setIncludeHostUndefined: Self = StObject.set(x, "includeHost", js.undefined)
     
-    @scala.inline
-    def setIncludeProtocol(value: Boolean): Self = StObject.set(x, "includeProtocol", value.asInstanceOf[js.Any])
+    inline def setIncludeProtocol(value: Boolean): Self = StObject.set(x, "includeProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeProtocolUndefined: Self = StObject.set(x, "includeProtocol", js.undefined)
+    inline def setIncludeProtocolUndefined: Self = StObject.set(x, "includeProtocol", js.undefined)
     
-    @scala.inline
-    def setIncludeQueryString(value: Boolean): Self = StObject.set(x, "includeQueryString", value.asInstanceOf[js.Any])
+    inline def setIncludeQueryString(value: Boolean): Self = StObject.set(x, "includeQueryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeQueryStringUndefined: Self = StObject.set(x, "includeQueryString", js.undefined)
+    inline def setIncludeQueryStringUndefined: Self = StObject.set(x, "includeQueryString", js.undefined)
     
-    @scala.inline
-    def setQueryStringBlacklist(value: js.Array[String]): Self = StObject.set(x, "queryStringBlacklist", value.asInstanceOf[js.Any])
+    inline def setQueryStringBlacklist(value: js.Array[String]): Self = StObject.set(x, "queryStringBlacklist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringBlacklistUndefined: Self = StObject.set(x, "queryStringBlacklist", js.undefined)
+    inline def setQueryStringBlacklistUndefined: Self = StObject.set(x, "queryStringBlacklist", js.undefined)
     
-    @scala.inline
-    def setQueryStringBlacklistVarargs(value: String*): Self = StObject.set(x, "queryStringBlacklist", js.Array(value :_*))
+    inline def setQueryStringBlacklistVarargs(value: String*): Self = StObject.set(x, "queryStringBlacklist", js.Array(value :_*))
     
-    @scala.inline
-    def setQueryStringWhitelist(value: js.Array[String]): Self = StObject.set(x, "queryStringWhitelist", value.asInstanceOf[js.Any])
+    inline def setQueryStringWhitelist(value: js.Array[String]): Self = StObject.set(x, "queryStringWhitelist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringWhitelistUndefined: Self = StObject.set(x, "queryStringWhitelist", js.undefined)
+    inline def setQueryStringWhitelistUndefined: Self = StObject.set(x, "queryStringWhitelist", js.undefined)
     
-    @scala.inline
-    def setQueryStringWhitelistVarargs(value: String*): Self = StObject.set(x, "queryStringWhitelist", js.Array(value :_*))
+    inline def setQueryStringWhitelistVarargs(value: String*): Self = StObject.set(x, "queryStringWhitelist", js.Array(value :_*))
   }
 }

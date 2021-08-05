@@ -22,28 +22,21 @@ trait SchemaTypeProvidersListResponse extends StObject {
 }
 object SchemaTypeProvidersListResponse {
   
-  @scala.inline
-  def apply(): SchemaTypeProvidersListResponse = {
+  inline def apply(): SchemaTypeProvidersListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTypeProvidersListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaTypeProvidersListResponseMutableBuilder[Self <: SchemaTypeProvidersListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTypeProvidersListResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTypeProviders(value: js.Array[SchemaTypeProvider]): Self = StObject.set(x, "typeProviders", value.asInstanceOf[js.Any])
+    inline def setTypeProviders(value: js.Array[SchemaTypeProvider]): Self = StObject.set(x, "typeProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeProvidersUndefined: Self = StObject.set(x, "typeProviders", js.undefined)
+    inline def setTypeProvidersUndefined: Self = StObject.set(x, "typeProviders", js.undefined)
     
-    @scala.inline
-    def setTypeProvidersVarargs(value: SchemaTypeProvider*): Self = StObject.set(x, "typeProviders", js.Array(value :_*))
+    inline def setTypeProvidersVarargs(value: SchemaTypeProvider*): Self = StObject.set(x, "typeProviders", js.Array(value :_*))
   }
 }

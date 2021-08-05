@@ -10,16 +10,13 @@ trait EnumValuesFeedbackDesktop extends StObject {
 }
 object EnumValuesFeedbackDesktop {
   
-  @scala.inline
-  def apply(enumValues: FeedbackDesktop): EnumValuesFeedbackDesktop = {
+  inline def apply(enumValues: FeedbackDesktop): EnumValuesFeedbackDesktop = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesFeedbackDesktop]
   }
   
-  @scala.inline
-  implicit class EnumValuesFeedbackDesktopMutableBuilder[Self <: EnumValuesFeedbackDesktop] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesFeedbackDesktop](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: FeedbackDesktop): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: FeedbackDesktop): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumberFormatOptionsStyle extends StObject
 object NumberFormatOptionsStyle {
   
-  @scala.inline
-  def currency: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.currency = "currency".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.currency]
+  inline def currency: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.currency = "currency".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.currency]
   
-  @scala.inline
-  def decimal: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.decimal = "decimal".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.decimal]
+  inline def decimal: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.decimal = "decimal".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.decimal]
   
-  @scala.inline
-  def percent: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.percent = "percent".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.percent]
+  inline def percent: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.percent = "percent".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.percent]
   
-  @scala.inline
-  def unit: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.unit = "unit".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.unit]
+  inline def unit: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.unit = "unit".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.unit]
 }

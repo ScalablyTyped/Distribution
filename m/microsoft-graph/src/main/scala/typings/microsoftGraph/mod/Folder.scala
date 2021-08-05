@@ -14,31 +14,23 @@ trait Folder extends StObject {
 }
 object Folder {
   
-  @scala.inline
-  def apply(): Folder = {
+  inline def apply(): Folder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Folder]
   }
   
-  @scala.inline
-  implicit class FolderMutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
+  extension [Self <: Folder](x: Self) {
     
-    @scala.inline
-    def setChildCount(value: NullableOption[Double]): Self = StObject.set(x, "childCount", value.asInstanceOf[js.Any])
+    inline def setChildCount(value: NullableOption[Double]): Self = StObject.set(x, "childCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildCountNull: Self = StObject.set(x, "childCount", null)
+    inline def setChildCountNull: Self = StObject.set(x, "childCount", null)
     
-    @scala.inline
-    def setChildCountUndefined: Self = StObject.set(x, "childCount", js.undefined)
+    inline def setChildCountUndefined: Self = StObject.set(x, "childCount", js.undefined)
     
-    @scala.inline
-    def setView(value: NullableOption[FolderView]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: NullableOption[FolderView]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewNull: Self = StObject.set(x, "view", null)
+    inline def setViewNull: Self = StObject.set(x, "view", null)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

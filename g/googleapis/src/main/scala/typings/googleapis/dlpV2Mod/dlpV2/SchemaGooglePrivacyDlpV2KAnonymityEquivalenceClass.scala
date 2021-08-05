@@ -24,28 +24,21 @@ trait SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass extends StObject {
 }
 object SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass = {
+  inline def apply(): SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClassMutableBuilder[Self <: SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass](x: Self) {
     
-    @scala.inline
-    def setEquivalenceClassSize(value: String): Self = StObject.set(x, "equivalenceClassSize", value.asInstanceOf[js.Any])
+    inline def setEquivalenceClassSize(value: String): Self = StObject.set(x, "equivalenceClassSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquivalenceClassSizeUndefined: Self = StObject.set(x, "equivalenceClassSize", js.undefined)
+    inline def setEquivalenceClassSizeUndefined: Self = StObject.set(x, "equivalenceClassSize", js.undefined)
     
-    @scala.inline
-    def setQuasiIdsValues(value: js.Array[SchemaGooglePrivacyDlpV2Value]): Self = StObject.set(x, "quasiIdsValues", value.asInstanceOf[js.Any])
+    inline def setQuasiIdsValues(value: js.Array[SchemaGooglePrivacyDlpV2Value]): Self = StObject.set(x, "quasiIdsValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuasiIdsValuesUndefined: Self = StObject.set(x, "quasiIdsValues", js.undefined)
+    inline def setQuasiIdsValuesUndefined: Self = StObject.set(x, "quasiIdsValues", js.undefined)
     
-    @scala.inline
-    def setQuasiIdsValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "quasiIdsValues", js.Array(value :_*))
+    inline def setQuasiIdsValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "quasiIdsValues", js.Array(value :_*))
   }
 }

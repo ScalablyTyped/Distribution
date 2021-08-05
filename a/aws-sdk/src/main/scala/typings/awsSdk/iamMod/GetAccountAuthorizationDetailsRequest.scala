@@ -23,34 +23,25 @@ trait GetAccountAuthorizationDetailsRequest extends StObject {
 }
 object GetAccountAuthorizationDetailsRequest {
   
-  @scala.inline
-  def apply(): GetAccountAuthorizationDetailsRequest = {
+  inline def apply(): GetAccountAuthorizationDetailsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccountAuthorizationDetailsRequest]
   }
   
-  @scala.inline
-  implicit class GetAccountAuthorizationDetailsRequestMutableBuilder[Self <: GetAccountAuthorizationDetailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountAuthorizationDetailsRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: entityListType): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: entityListType): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setFilterVarargs(value: EntityType*): Self = StObject.set(x, "Filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: EntityType*): Self = StObject.set(x, "Filter", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

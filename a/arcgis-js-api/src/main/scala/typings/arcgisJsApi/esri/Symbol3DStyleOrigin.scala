@@ -33,8 +33,7 @@ trait Symbol3DStyleOrigin
 }
 object Symbol3DStyleOrigin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     name: String,
@@ -44,22 +43,16 @@ object Symbol3DStyleOrigin {
     __obj.asInstanceOf[Symbol3DStyleOrigin]
   }
   
-  @scala.inline
-  implicit class Symbol3DStyleOriginMutableBuilder[Self <: Symbol3DStyleOrigin] (val x: Self) extends AnyVal {
+  extension [Self <: Symbol3DStyleOrigin](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
+    inline def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNameUndefined: Self = StObject.set(x, "styleName", js.undefined)
+    inline def setStyleNameUndefined: Self = StObject.set(x, "styleName", js.undefined)
     
-    @scala.inline
-    def setStyleUrl(value: String): Self = StObject.set(x, "styleUrl", value.asInstanceOf[js.Any])
+    inline def setStyleUrl(value: String): Self = StObject.set(x, "styleUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUrlUndefined: Self = StObject.set(x, "styleUrl", js.undefined)
+    inline def setStyleUrlUndefined: Self = StObject.set(x, "styleUrl", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object tooltipHostStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: ITooltipHostStyleProps): ITooltipHostStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ITooltipHostStyles]
+  inline def getStyles(props: ITooltipHostStyleProps): ITooltipHostStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ITooltipHostStyles]
 }

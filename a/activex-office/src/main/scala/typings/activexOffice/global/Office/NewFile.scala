@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.NewFile")
 @js.native
-class NewFile protected ()
+/* private */ class NewFile ()
   extends StObject
      with typings.activexOffice.Office.NewFile

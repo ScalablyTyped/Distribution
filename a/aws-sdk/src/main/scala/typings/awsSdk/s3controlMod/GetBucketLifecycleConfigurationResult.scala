@@ -13,22 +13,17 @@ trait GetBucketLifecycleConfigurationResult extends StObject {
 }
 object GetBucketLifecycleConfigurationResult {
   
-  @scala.inline
-  def apply(): GetBucketLifecycleConfigurationResult = {
+  inline def apply(): GetBucketLifecycleConfigurationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketLifecycleConfigurationResult]
   }
   
-  @scala.inline
-  implicit class GetBucketLifecycleConfigurationResultMutableBuilder[Self <: GetBucketLifecycleConfigurationResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketLifecycleConfigurationResult](x: Self) {
     
-    @scala.inline
-    def setRules(value: LifecycleRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: LifecycleRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: LifecycleRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: LifecycleRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

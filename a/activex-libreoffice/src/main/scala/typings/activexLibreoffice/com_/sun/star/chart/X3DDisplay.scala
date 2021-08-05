@@ -41,8 +41,7 @@ trait X3DDisplay
 }
 object X3DDisplay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Floor: XPropertySet,
     Wall: XPropertySet,
     acquire: () => Unit,
@@ -55,19 +54,14 @@ object X3DDisplay {
     __obj.asInstanceOf[X3DDisplay]
   }
   
-  @scala.inline
-  implicit class X3DDisplayMutableBuilder[Self <: X3DDisplay] (val x: Self) extends AnyVal {
+  extension [Self <: X3DDisplay](x: Self) {
     
-    @scala.inline
-    def setFloor(value: XPropertySet): Self = StObject.set(x, "Floor", value.asInstanceOf[js.Any])
+    inline def setFloor(value: XPropertySet): Self = StObject.set(x, "Floor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFloor(value: () => XPropertySet): Self = StObject.set(x, "getFloor", js.Any.fromFunction0(value))
+    inline def setGetFloor(value: () => XPropertySet): Self = StObject.set(x, "getFloor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWall(value: () => XPropertySet): Self = StObject.set(x, "getWall", js.Any.fromFunction0(value))
+    inline def setGetWall(value: () => XPropertySet): Self = StObject.set(x, "getWall", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWall(value: XPropertySet): Self = StObject.set(x, "Wall", value.asInstanceOf[js.Any])
+    inline def setWall(value: XPropertySet): Self = StObject.set(x, "Wall", value.asInstanceOf[js.Any])
   }
 }

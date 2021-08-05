@@ -38,61 +38,43 @@ trait ListRepositoryAssociationsRequest extends StObject {
 }
 object ListRepositoryAssociationsRequest {
   
-  @scala.inline
-  def apply(): ListRepositoryAssociationsRequest = {
+  inline def apply(): ListRepositoryAssociationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRepositoryAssociationsRequest]
   }
   
-  @scala.inline
-  implicit class ListRepositoryAssociationsRequestMutableBuilder[Self <: ListRepositoryAssociationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListRepositoryAssociationsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNames(value: Names): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+    inline def setNames(value: Names): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    @scala.inline
-    def setNamesVarargs(value: Name*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: Name*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOwners(value: Owners): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
+    inline def setOwners(value: Owners): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnersUndefined: Self = StObject.set(x, "Owners", js.undefined)
+    inline def setOwnersUndefined: Self = StObject.set(x, "Owners", js.undefined)
     
-    @scala.inline
-    def setOwnersVarargs(value: Owner*): Self = StObject.set(x, "Owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: Owner*): Self = StObject.set(x, "Owners", js.Array(value :_*))
     
-    @scala.inline
-    def setProviderTypes(value: ProviderTypes): Self = StObject.set(x, "ProviderTypes", value.asInstanceOf[js.Any])
+    inline def setProviderTypes(value: ProviderTypes): Self = StObject.set(x, "ProviderTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderTypesUndefined: Self = StObject.set(x, "ProviderTypes", js.undefined)
+    inline def setProviderTypesUndefined: Self = StObject.set(x, "ProviderTypes", js.undefined)
     
-    @scala.inline
-    def setProviderTypesVarargs(value: ProviderType*): Self = StObject.set(x, "ProviderTypes", js.Array(value :_*))
+    inline def setProviderTypesVarargs(value: ProviderType*): Self = StObject.set(x, "ProviderTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setStates(value: RepositoryAssociationStates): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
+    inline def setStates(value: RepositoryAssociationStates): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatesUndefined: Self = StObject.set(x, "States", js.undefined)
+    inline def setStatesUndefined: Self = StObject.set(x, "States", js.undefined)
     
-    @scala.inline
-    def setStatesVarargs(value: RepositoryAssociationState*): Self = StObject.set(x, "States", js.Array(value :_*))
+    inline def setStatesVarargs(value: RepositoryAssociationState*): Self = StObject.set(x, "States", js.Array(value :_*))
   }
 }

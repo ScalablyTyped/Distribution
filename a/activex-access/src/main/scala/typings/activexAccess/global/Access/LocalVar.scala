@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.LocalVar")
 @js.native
-class LocalVar protected ()
+/* private */ class LocalVar ()
   extends StObject
      with typings.activexAccess.Access.LocalVar {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.LocalVar_typekey")
   var AccessDotLocalVar_typekey: typings.activexAccess.Access.LocalVar = js.native
   

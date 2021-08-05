@@ -18,19 +18,15 @@ trait GetQualificationScoreRequest extends StObject {
 }
 object GetQualificationScoreRequest {
   
-  @scala.inline
-  def apply(QualificationTypeId: EntityId, WorkerId: CustomerId): GetQualificationScoreRequest = {
+  inline def apply(QualificationTypeId: EntityId, WorkerId: CustomerId): GetQualificationScoreRequest = {
     val __obj = js.Dynamic.literal(QualificationTypeId = QualificationTypeId.asInstanceOf[js.Any], WorkerId = WorkerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetQualificationScoreRequest]
   }
   
-  @scala.inline
-  implicit class GetQualificationScoreRequestMutableBuilder[Self <: GetQualificationScoreRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetQualificationScoreRequest](x: Self) {
     
-    @scala.inline
-    def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
+    inline def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
   }
 }

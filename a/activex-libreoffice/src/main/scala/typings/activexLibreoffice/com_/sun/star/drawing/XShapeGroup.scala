@@ -32,8 +32,7 @@ trait XShapeGroup
 }
 object XShapeGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Position: Point,
     ShapeType: String,
     Size: Size,
@@ -52,13 +51,10 @@ object XShapeGroup {
     __obj.asInstanceOf[XShapeGroup]
   }
   
-  @scala.inline
-  implicit class XShapeGroupMutableBuilder[Self <: XShapeGroup] (val x: Self) extends AnyVal {
+  extension [Self <: XShapeGroup](x: Self) {
     
-    @scala.inline
-    def setEnterGroup(value: () => Unit): Self = StObject.set(x, "enterGroup", js.Any.fromFunction0(value))
+    inline def setEnterGroup(value: () => Unit): Self = StObject.set(x, "enterGroup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLeaveGroup(value: () => Unit): Self = StObject.set(x, "leaveGroup", js.Any.fromFunction0(value))
+    inline def setLeaveGroup(value: () => Unit): Self = StObject.set(x, "leaveGroup", js.Any.fromFunction0(value))
   }
 }

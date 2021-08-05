@@ -45,8 +45,7 @@ object anon {
   }
   object BADDATE {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BAD_DATE: String,
       EXPECTED_TYPE: String,
       FAILED_REGULAR_EXPRESSION: String,
@@ -69,59 +68,41 @@ object anon {
       __obj.asInstanceOf[BADDATE]
     }
     
-    @scala.inline
-    implicit class BADDATEMutableBuilder[Self <: BADDATE] (val x: Self) extends AnyVal {
+    extension [Self <: BADDATE](x: Self) {
       
-      @scala.inline
-      def setBAD_DATE(value: String): Self = StObject.set(x, "BAD_DATE", value.asInstanceOf[js.Any])
+      inline def setBAD_DATE(value: String): Self = StObject.set(x, "BAD_DATE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXPECTED_TYPE(value: String): Self = StObject.set(x, "EXPECTED_TYPE", value.asInstanceOf[js.Any])
+      inline def setEXPECTED_TYPE(value: String): Self = StObject.set(x, "EXPECTED_TYPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFAILED_REGULAR_EXPRESSION(value: String): Self = StObject.set(x, "FAILED_REGULAR_EXPRESSION", value.asInstanceOf[js.Any])
+      inline def setFAILED_REGULAR_EXPRESSION(value: String): Self = StObject.set(x, "FAILED_REGULAR_EXPRESSION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKEY_NOT_IN_SCHEMA(value: String): Self = StObject.set(x, "KEY_NOT_IN_SCHEMA", value.asInstanceOf[js.Any])
+      inline def setKEY_NOT_IN_SCHEMA(value: String): Self = StObject.set(x, "KEY_NOT_IN_SCHEMA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAX_COUNT(value: String): Self = StObject.set(x, "MAX_COUNT", value.asInstanceOf[js.Any])
+      inline def setMAX_COUNT(value: String): Self = StObject.set(x, "MAX_COUNT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAX_DATE(value: String): Self = StObject.set(x, "MAX_DATE", value.asInstanceOf[js.Any])
+      inline def setMAX_DATE(value: String): Self = StObject.set(x, "MAX_DATE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAX_NUMBER(value: String): Self = StObject.set(x, "MAX_NUMBER", value.asInstanceOf[js.Any])
+      inline def setMAX_NUMBER(value: String): Self = StObject.set(x, "MAX_NUMBER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAX_NUMBER_EXCLUSIVE(value: String): Self = StObject.set(x, "MAX_NUMBER_EXCLUSIVE", value.asInstanceOf[js.Any])
+      inline def setMAX_NUMBER_EXCLUSIVE(value: String): Self = StObject.set(x, "MAX_NUMBER_EXCLUSIVE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAX_STRING(value: String): Self = StObject.set(x, "MAX_STRING", value.asInstanceOf[js.Any])
+      inline def setMAX_STRING(value: String): Self = StObject.set(x, "MAX_STRING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMIN_COUNT(value: String): Self = StObject.set(x, "MIN_COUNT", value.asInstanceOf[js.Any])
+      inline def setMIN_COUNT(value: String): Self = StObject.set(x, "MIN_COUNT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMIN_DATE(value: String): Self = StObject.set(x, "MIN_DATE", value.asInstanceOf[js.Any])
+      inline def setMIN_DATE(value: String): Self = StObject.set(x, "MIN_DATE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMIN_NUMBER(value: String): Self = StObject.set(x, "MIN_NUMBER", value.asInstanceOf[js.Any])
+      inline def setMIN_NUMBER(value: String): Self = StObject.set(x, "MIN_NUMBER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMIN_NUMBER_EXCLUSIVE(value: String): Self = StObject.set(x, "MIN_NUMBER_EXCLUSIVE", value.asInstanceOf[js.Any])
+      inline def setMIN_NUMBER_EXCLUSIVE(value: String): Self = StObject.set(x, "MIN_NUMBER_EXCLUSIVE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMIN_STRING(value: String): Self = StObject.set(x, "MIN_STRING", value.asInstanceOf[js.Any])
+      inline def setMIN_STRING(value: String): Self = StObject.set(x, "MIN_STRING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMUST_BE_INTEGER(value: String): Self = StObject.set(x, "MUST_BE_INTEGER", value.asInstanceOf[js.Any])
+      inline def setMUST_BE_INTEGER(value: String): Self = StObject.set(x, "MUST_BE_INTEGER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREQUIRED(value: String): Self = StObject.set(x, "REQUIRED", value.asInstanceOf[js.Any])
+      inline def setREQUIRED(value: String): Self = StObject.set(x, "REQUIRED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVALUE_NOT_ALLOWED(value: String): Self = StObject.set(x, "VALUE_NOT_ALLOWED", value.asInstanceOf[js.Any])
+      inline def setVALUE_NOT_ALLOWED(value: String): Self = StObject.set(x, "VALUE_NOT_ALLOWED", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,8 +132,7 @@ object anon {
   }
   object Domain {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Domain: RegExp,
       Email: RegExp,
       EmailWithTLD: RegExp,
@@ -169,41 +149,29 @@ object anon {
       __obj.asInstanceOf[Domain]
     }
     
-    @scala.inline
-    implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+    extension [Self <: Domain](x: Self) {
       
-      @scala.inline
-      def setDomain(value: RegExp): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: RegExp): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: RegExp): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: RegExp): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailWithTLD(value: RegExp): Self = StObject.set(x, "EmailWithTLD", value.asInstanceOf[js.Any])
+      inline def setEmailWithTLD(value: RegExp): Self = StObject.set(x, "EmailWithTLD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIP(value: RegExp): Self = StObject.set(x, "IP", value.asInstanceOf[js.Any])
+      inline def setIP(value: RegExp): Self = StObject.set(x, "IP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIPv4(value: RegExp): Self = StObject.set(x, "IPv4", value.asInstanceOf[js.Any])
+      inline def setIPv4(value: RegExp): Self = StObject.set(x, "IPv4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIPv6(value: RegExp): Self = StObject.set(x, "IPv6", value.asInstanceOf[js.Any])
+      inline def setIPv6(value: RegExp): Self = StObject.set(x, "IPv6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: RegExp): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: RegExp): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: RegExp): Self = StObject.set(x, "Phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: RegExp): Self = StObject.set(x, "Phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: RegExp): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: RegExp): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeakDomain(value: RegExp): Self = StObject.set(x, "WeakDomain", value.asInstanceOf[js.Any])
+      inline def setWeakDomain(value: RegExp): Self = StObject.set(x, "WeakDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZipCode(value: RegExp): Self = StObject.set(x, "ZipCode", value.asInstanceOf[js.Any])
+      inline def setZipCode(value: RegExp): Self = StObject.set(x, "ZipCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -213,17 +181,14 @@ object anon {
   }
   object EndPointsOnly {
     
-    @scala.inline
-    def apply(endPointsOnly: Boolean): EndPointsOnly = {
+    inline def apply(endPointsOnly: Boolean): EndPointsOnly = {
       val __obj = js.Dynamic.literal(endPointsOnly = endPointsOnly.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndPointsOnly]
     }
     
-    @scala.inline
-    implicit class EndPointsOnlyMutableBuilder[Self <: EndPointsOnly] (val x: Self) extends AnyVal {
+    extension [Self <: EndPointsOnly](x: Self) {
       
-      @scala.inline
-      def setEndPointsOnly(value: Boolean): Self = StObject.set(x, "endPointsOnly", value.asInstanceOf[js.Any])
+      inline def setEndPointsOnly(value: Boolean): Self = StObject.set(x, "endPointsOnly", value.asInstanceOf[js.Any])
     }
   }
   
@@ -233,20 +198,16 @@ object anon {
   }
   object KeepArrays {
     
-    @scala.inline
-    def apply(): KeepArrays = {
+    inline def apply(): KeepArrays = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeepArrays]
     }
     
-    @scala.inline
-    implicit class KeepArraysMutableBuilder[Self <: KeepArrays] (val x: Self) extends AnyVal {
+    extension [Self <: KeepArrays](x: Self) {
       
-      @scala.inline
-      def setKeepArrays(value: Boolean): Self = StObject.set(x, "keepArrays", value.asInstanceOf[js.Any])
+      inline def setKeepArrays(value: Boolean): Self = StObject.set(x, "keepArrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepArraysUndefined: Self = StObject.set(x, "keepArrays", js.undefined)
+      inline def setKeepArraysUndefined: Self = StObject.set(x, "keepArrays", js.undefined)
     }
   }
 }

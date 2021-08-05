@@ -30,31 +30,31 @@ object publisherMod {
     def this(userAgent: UserAgent, targetURI: URI, eventType: String, options: PublisherOptions) = this()
     
     /** The publication state. */
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
     /** Emits when the registration state changes. */
-    var _stateEventEmitter: js.Any = js.native
+    /* private */ var _stateEventEmitter: js.Any = js.native
     
     /**
       * Destructor.
       */
     def dispose(): js.Promise[Unit] = js.native
     
-    var disposed: js.Any = js.native
+    /* private */ var disposed: js.Any = js.native
     
-    var event: js.Any = js.native
+    /* private */ var event: js.Any = js.native
     
-    var id: js.Any = js.native
+    /* private */ var id: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
-    var pubRequestBody: js.Any = js.native
+    /* private */ var pubRequestBody: js.Any = js.native
     
-    var pubRequestEtag: js.Any = js.native
+    /* private */ var pubRequestEtag: js.Any = js.native
     
-    var pubRequestExpires: js.Any = js.native
+    /* private */ var pubRequestExpires: js.Any = js.native
     
     /**
       * Publish.
@@ -63,19 +63,19 @@ object publisherMod {
     def publish(content: String): js.Promise[Unit] = js.native
     def publish(content: String, options: PublisherPublishOptions): js.Promise[Unit] = js.native
     
-    var publishRefreshTimer: js.Any = js.native
+    /* private */ var publishRefreshTimer: js.Any = js.native
     
     /** @internal */
     /* protected */ def receiveResponse(response: IncomingResponseMessage): Unit = js.native
     
-    var refreshRequest: js.Any = js.native
+    /* private */ var refreshRequest: js.Any = js.native
     
-    var request: js.Any = js.native
+    /* private */ var request: js.Any = js.native
     
     /** @internal */
     /* protected */ def send(): OutgoingPublishRequest = js.native
     
-    var sendPublishRequest: js.Any = js.native
+    /* private */ var sendPublishRequest: js.Any = js.native
     
     /** The publication state. */
     def state: PublisherState = js.native
@@ -86,9 +86,9 @@ object publisherMod {
     /**
       * Transition publication state.
       */
-    var stateTransition: js.Any = js.native
+    /* private */ var stateTransition: js.Any = js.native
     
-    var target: js.Any = js.native
+    /* private */ var target: js.Any = js.native
     
     /**
       * Unpublish.
@@ -96,6 +96,6 @@ object publisherMod {
     def unpublish(): js.Promise[Unit] = js.native
     def unpublish(options: PublisherUnpublishOptions): js.Promise[Unit] = js.native
     
-    var userAgent: js.Any = js.native
+    /* private */ var userAgent: js.Any = js.native
   }
 }

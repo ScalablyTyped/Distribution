@@ -18,25 +18,19 @@ trait CreateConnectionOutput extends StObject {
 }
 object CreateConnectionOutput {
   
-  @scala.inline
-  def apply(ConnectionArn: ConnectionArn): CreateConnectionOutput = {
+  inline def apply(ConnectionArn: ConnectionArn): CreateConnectionOutput = {
     val __obj = js.Dynamic.literal(ConnectionArn = ConnectionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConnectionOutput]
   }
   
-  @scala.inline
-  implicit class CreateConnectionOutputMutableBuilder[Self <: CreateConnectionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConnectionOutput](x: Self) {
     
-    @scala.inline
-    def setConnectionArn(value: ConnectionArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
+    inline def setConnectionArn(value: ConnectionArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -20,8 +20,7 @@ trait Client extends StObject {
 }
 object Client {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkout: CheckoutResource,
     collection: CollectionResource,
     fetchNextPage: js.Array[js.Any] => js.Array[js.Any],
@@ -33,25 +32,18 @@ object Client {
     __obj.asInstanceOf[Client]
   }
   
-  @scala.inline
-  implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+  extension [Self <: Client](x: Self) {
     
-    @scala.inline
-    def setCheckout(value: CheckoutResource): Self = StObject.set(x, "checkout", value.asInstanceOf[js.Any])
+    inline def setCheckout(value: CheckoutResource): Self = StObject.set(x, "checkout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection(value: CollectionResource): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: CollectionResource): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchNextPage(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "fetchNextPage", js.Any.fromFunction1(value))
+    inline def setFetchNextPage(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "fetchNextPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct(value: ProductResource): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: ProductResource): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShop(value: ShopResource): Self = StObject.set(x, "shop", value.asInstanceOf[js.Any])
+    inline def setShop(value: ShopResource): Self = StObject.set(x, "shop", value.asInstanceOf[js.Any])
   }
 }

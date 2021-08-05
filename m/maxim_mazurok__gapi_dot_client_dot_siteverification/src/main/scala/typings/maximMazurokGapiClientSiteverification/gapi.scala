@@ -28,26 +28,20 @@ object gapi {
       }
       object SiteVerificationWebResourceGettokenRequest {
         
-        @scala.inline
-        def apply(): SiteVerificationWebResourceGettokenRequest = {
+        inline def apply(): SiteVerificationWebResourceGettokenRequest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SiteVerificationWebResourceGettokenRequest]
         }
         
-        @scala.inline
-        implicit class SiteVerificationWebResourceGettokenRequestMutableBuilder[Self <: SiteVerificationWebResourceGettokenRequest] (val x: Self) extends AnyVal {
+        extension [Self <: SiteVerificationWebResourceGettokenRequest](x: Self) {
           
-          @scala.inline
-          def setSite(value: Identifier): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+          inline def setSite(value: Identifier): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
+          inline def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
           
-          @scala.inline
-          def setVerificationMethod(value: String): Self = StObject.set(x, "verificationMethod", value.asInstanceOf[js.Any])
+          inline def setVerificationMethod(value: String): Self = StObject.set(x, "verificationMethod", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVerificationMethodUndefined: Self = StObject.set(x, "verificationMethod", js.undefined)
+          inline def setVerificationMethodUndefined: Self = StObject.set(x, "verificationMethod", js.undefined)
         }
       }
       
@@ -64,26 +58,20 @@ object gapi {
       }
       object SiteVerificationWebResourceGettokenResponse {
         
-        @scala.inline
-        def apply(): SiteVerificationWebResourceGettokenResponse = {
+        inline def apply(): SiteVerificationWebResourceGettokenResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SiteVerificationWebResourceGettokenResponse]
         }
         
-        @scala.inline
-        implicit class SiteVerificationWebResourceGettokenResponseMutableBuilder[Self <: SiteVerificationWebResourceGettokenResponse] (val x: Self) extends AnyVal {
+        extension [Self <: SiteVerificationWebResourceGettokenResponse](x: Self) {
           
-          @scala.inline
-          def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+          inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
           
-          @scala.inline
-          def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+          inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+          inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
         }
       }
       
@@ -94,23 +82,18 @@ object gapi {
       }
       object SiteVerificationWebResourceListResponse {
         
-        @scala.inline
-        def apply(): SiteVerificationWebResourceListResponse = {
+        inline def apply(): SiteVerificationWebResourceListResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SiteVerificationWebResourceListResponse]
         }
         
-        @scala.inline
-        implicit class SiteVerificationWebResourceListResponseMutableBuilder[Self <: SiteVerificationWebResourceListResponse] (val x: Self) extends AnyVal {
+        extension [Self <: SiteVerificationWebResourceListResponse](x: Self) {
           
-          @scala.inline
-          def setItems(value: js.Array[SiteVerificationWebResourceResource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+          inline def setItems(value: js.Array[SiteVerificationWebResourceResource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+          inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
           
-          @scala.inline
-          def setItemsVarargs(value: SiteVerificationWebResourceResource*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: SiteVerificationWebResourceResource*): Self = StObject.set(x, "items", js.Array(value :_*))
         }
       }
       
@@ -127,35 +110,26 @@ object gapi {
       }
       object SiteVerificationWebResourceResource {
         
-        @scala.inline
-        def apply(): SiteVerificationWebResourceResource = {
+        inline def apply(): SiteVerificationWebResourceResource = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SiteVerificationWebResourceResource]
         }
         
-        @scala.inline
-        implicit class SiteVerificationWebResourceResourceMutableBuilder[Self <: SiteVerificationWebResourceResource] (val x: Self) extends AnyVal {
+        extension [Self <: SiteVerificationWebResourceResource](x: Self) {
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+          inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
           
-          @scala.inline
-          def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
+          inline def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
+          inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
           
-          @scala.inline
-          def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
+          inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
           
-          @scala.inline
-          def setSite(value: Identifier): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+          inline def setSite(value: Identifier): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
+          inline def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
         }
       }
       

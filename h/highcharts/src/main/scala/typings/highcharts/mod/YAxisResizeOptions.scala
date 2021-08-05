@@ -57,61 +57,43 @@ trait YAxisResizeOptions extends StObject {
 }
 object YAxisResizeOptions {
   
-  @scala.inline
-  def apply(): YAxisResizeOptions = {
+  inline def apply(): YAxisResizeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[YAxisResizeOptions]
   }
   
-  @scala.inline
-  implicit class YAxisResizeOptionsMutableBuilder[Self <: YAxisResizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: YAxisResizeOptions](x: Self) {
     
-    @scala.inline
-    def setControlledAxis(value: YAxisResizeControlledAxisOptions): Self = StObject.set(x, "controlledAxis", value.asInstanceOf[js.Any])
+    inline def setControlledAxis(value: YAxisResizeControlledAxisOptions): Self = StObject.set(x, "controlledAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlledAxisUndefined: Self = StObject.set(x, "controlledAxis", js.undefined)
+    inline def setControlledAxisUndefined: Self = StObject.set(x, "controlledAxis", js.undefined)
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
-    @scala.inline
-    def setLineDashStyle(value: String): Self = StObject.set(x, "lineDashStyle", value.asInstanceOf[js.Any])
+    inline def setLineDashStyle(value: String): Self = StObject.set(x, "lineDashStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineDashStyleUndefined: Self = StObject.set(x, "lineDashStyle", js.undefined)
+    inline def setLineDashStyleUndefined: Self = StObject.set(x, "lineDashStyle", js.undefined)
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

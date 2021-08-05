@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JsonCurve extends StObject
 object JsonCurve {
   
-  @scala.inline
-  def Arc(
+  inline def Arc(
     a: js.Tuple7[
       Position, 
       // End point: x, y, <z>, <m>
@@ -35,20 +34,17 @@ object JsonCurve {
     __obj.asInstanceOf[typings.arcgisRestApi.mod.Arc]
   }
   
-  @scala.inline
-  def BezierCurve(b: js.Tuple3[Position, Position2D, Position2D]): typings.arcgisRestApi.mod.BezierCurve = {
+  inline def BezierCurve(b: js.Tuple3[Position, Position2D, Position2D]): typings.arcgisRestApi.mod.BezierCurve = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.arcgisRestApi.mod.BezierCurve]
   }
   
-  @scala.inline
-  def CircularArc(c: js.Tuple2[Position, Position2D]): typings.arcgisRestApi.mod.CircularArc = {
+  inline def CircularArc(c: js.Tuple2[Position, Position2D]): typings.arcgisRestApi.mod.CircularArc = {
     val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.arcgisRestApi.mod.CircularArc]
   }
   
-  @scala.inline
-  def OldCircularArc(
+  inline def OldCircularArc(
     a: js.Tuple4[
       Position, 
       // End point: x, y, <z>, <m>

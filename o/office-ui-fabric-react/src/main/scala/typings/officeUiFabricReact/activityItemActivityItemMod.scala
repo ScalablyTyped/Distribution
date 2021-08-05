@@ -14,16 +14,16 @@ object activityItemActivityItemMod {
     extends Component[IActivityItemProps, js.Object, js.Any] {
     def this(props: IActivityItemProps) = this()
     
-    var _getClassNames: js.Any = js.native
+    /* private */ var _getClassNames: js.Any = js.native
     
-    var _onRenderActivityDescription: js.Any = js.native
+    /* private */ var _onRenderActivityDescription: js.Any = js.native
     
-    var _onRenderComments: js.Any = js.native
+    /* private */ var _onRenderComments: js.Any = js.native
     
-    var _onRenderIcon: js.Any = js.native
+    /* private */ var _onRenderIcon: js.Any = js.native
     
-    var _onRenderPersonaArray: js.Any = js.native
+    /* private */ var _onRenderPersonaArray: js.Any = js.native
     
-    var _onRenderTimeStamp: js.Any = js.native
+    /* private */ var _onRenderTimeStamp: js.Any = js.native
   }
 }

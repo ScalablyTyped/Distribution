@@ -75,8 +75,7 @@ trait XAccessController
 }
 object XAccessController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Context: XAccessControlContext,
     acquire: () => Unit,
     checkPermission: js.Any => Unit,
@@ -90,22 +89,16 @@ object XAccessController {
     __obj.asInstanceOf[XAccessController]
   }
   
-  @scala.inline
-  implicit class XAccessControllerMutableBuilder[Self <: XAccessController] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessController](x: Self) {
     
-    @scala.inline
-    def setCheckPermission(value: js.Any => Unit): Self = StObject.set(x, "checkPermission", js.Any.fromFunction1(value))
+    inline def setCheckPermission(value: js.Any => Unit): Self = StObject.set(x, "checkPermission", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContext(value: XAccessControlContext): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+    inline def setContext(value: XAccessControlContext): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoPrivileged(value: (XAction, XAccessControlContext) => js.Any): Self = StObject.set(x, "doPrivileged", js.Any.fromFunction2(value))
+    inline def setDoPrivileged(value: (XAction, XAccessControlContext) => js.Any): Self = StObject.set(x, "doPrivileged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDoRestricted(value: (XAction, XAccessControlContext) => js.Any): Self = StObject.set(x, "doRestricted", js.Any.fromFunction2(value))
+    inline def setDoRestricted(value: (XAction, XAccessControlContext) => js.Any): Self = StObject.set(x, "doRestricted", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetContext(value: () => XAccessControlContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
+    inline def setGetContext(value: () => XAccessControlContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
   }
 }

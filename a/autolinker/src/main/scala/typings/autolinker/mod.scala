@@ -81,10 +81,8 @@ object mod {
       *   example call.
       * @return {String} The HTML text, with matches automatically linked.
       */
-    @scala.inline
-    def link(textOrHtml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def link(textOrHtml: String, options: AutolinkerConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def link(textOrHtml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def link(textOrHtml: String, options: AutolinkerConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * For backwards compatibility with Autolinker 1.x, the Match classes are
@@ -135,8 +133,7 @@ object mod {
       * @return {Autolinker.match.Match[]} The array of Matches found in the
       *   given input `textOrHtml`.
       */
-    @scala.inline
-    def parse(textOrHtml: String, options: AutolinkerConfig): js.Array[typings.autolinker.matchMatchMod.Match] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.autolinker.matchMatchMod.Match]]
+    inline def parse(textOrHtml: String, options: AutolinkerConfig): js.Array[typings.autolinker.matchMatchMod.Match] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.autolinker.matchMatchMod.Match]]
     
     /**
       * @static
@@ -221,10 +218,8 @@ object mod {
       *   example call.
       * @return {String} The HTML text, with matches automatically linked.
       */
-    @scala.inline
-    def link(textOrHtml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def link(textOrHtml: String, options: AutolinkerConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def link(textOrHtml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def link(textOrHtml: String, options: AutolinkerConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * For backwards compatibility with Autolinker 1.x, the Match classes are
@@ -275,8 +270,7 @@ object mod {
       * @return {Autolinker.match.Match[]} The array of Matches found in the
       *   given input `textOrHtml`.
       */
-    @scala.inline
-    def parse(textOrHtml: String, options: AutolinkerConfig): js.Array[typings.autolinker.matchMatchMod.Match] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.autolinker.matchMatchMod.Match]]
+    inline def parse(textOrHtml: String, options: AutolinkerConfig): js.Array[typings.autolinker.matchMatchMod.Match] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.autolinker.matchMatchMod.Match]]
     
     /**
       * @static

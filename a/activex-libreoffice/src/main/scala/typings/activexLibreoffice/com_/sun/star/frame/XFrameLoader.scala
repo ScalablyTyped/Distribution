@@ -40,8 +40,7 @@ trait XFrameLoader
 }
 object XFrameLoader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     cancel: () => Unit,
     load: (XFrame, String, SeqEquiv[PropertyValue], XLoadEventListener) => Unit,
@@ -52,13 +51,10 @@ object XFrameLoader {
     __obj.asInstanceOf[XFrameLoader]
   }
   
-  @scala.inline
-  implicit class XFrameLoaderMutableBuilder[Self <: XFrameLoader] (val x: Self) extends AnyVal {
+  extension [Self <: XFrameLoader](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoad(value: (XFrame, String, SeqEquiv[PropertyValue], XLoadEventListener) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction4(value))
+    inline def setLoad(value: (XFrame, String, SeqEquiv[PropertyValue], XLoadEventListener) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction4(value))
   }
 }

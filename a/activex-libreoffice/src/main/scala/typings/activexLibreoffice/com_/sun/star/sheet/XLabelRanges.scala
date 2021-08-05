@@ -28,8 +28,7 @@ trait XLabelRanges
 }
 object XLabelRanges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -46,13 +45,10 @@ object XLabelRanges {
     __obj.asInstanceOf[XLabelRanges]
   }
   
-  @scala.inline
-  implicit class XLabelRangesMutableBuilder[Self <: XLabelRanges] (val x: Self) extends AnyVal {
+  extension [Self <: XLabelRanges](x: Self) {
     
-    @scala.inline
-    def setAddNew(value: (CellRangeAddress, CellRangeAddress) => Unit): Self = StObject.set(x, "addNew", js.Any.fromFunction2(value))
+    inline def setAddNew(value: (CellRangeAddress, CellRangeAddress) => Unit): Self = StObject.set(x, "addNew", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
+    inline def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait USBEndpointType extends StObject
 object USBEndpointType {
   
-  @scala.inline
-  def bulk: typings.w3cWebUsb.w3cWebUsbStrings.bulk = "bulk".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.bulk]
+  inline def bulk: typings.w3cWebUsb.w3cWebUsbStrings.bulk = "bulk".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.bulk]
   
-  @scala.inline
-  def interrupt: typings.w3cWebUsb.w3cWebUsbStrings.interrupt = "interrupt".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.interrupt]
+  inline def interrupt: typings.w3cWebUsb.w3cWebUsbStrings.interrupt = "interrupt".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.interrupt]
   
-  @scala.inline
-  def isochronous: typings.w3cWebUsb.w3cWebUsbStrings.isochronous = "isochronous".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.isochronous]
+  inline def isochronous: typings.w3cWebUsb.w3cWebUsbStrings.isochronous = "isochronous".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.isochronous]
 }

@@ -27,37 +27,27 @@ trait FirewallRule extends StObject {
 }
 object FirewallRule {
   
-  @scala.inline
-  def apply(): FirewallRule = {
+  inline def apply(): FirewallRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirewallRule]
   }
   
-  @scala.inline
-  implicit class FirewallRuleMutableBuilder[Self <: FirewallRule] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallRule](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setSourceRange(value: String): Self = StObject.set(x, "sourceRange", value.asInstanceOf[js.Any])
+    inline def setSourceRange(value: String): Self = StObject.set(x, "sourceRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRangeUndefined: Self = StObject.set(x, "sourceRange", js.undefined)
+    inline def setSourceRangeUndefined: Self = StObject.set(x, "sourceRange", js.undefined)
   }
 }

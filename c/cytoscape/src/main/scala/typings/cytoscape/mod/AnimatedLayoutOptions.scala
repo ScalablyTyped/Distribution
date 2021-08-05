@@ -17,31 +17,23 @@ trait AnimatedLayoutOptions extends StObject {
 }
 object AnimatedLayoutOptions {
   
-  @scala.inline
-  def apply(): AnimatedLayoutOptions = {
+  inline def apply(): AnimatedLayoutOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimatedLayoutOptions]
   }
   
-  @scala.inline
-  implicit class AnimatedLayoutOptionsMutableBuilder[Self <: AnimatedLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnimatedLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    @scala.inline
-    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+    inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
-    @scala.inline
-    def setAnimationEasing(value: Boolean): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
+    inline def setAnimationEasing(value: Boolean): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
+    inline def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
   }
 }

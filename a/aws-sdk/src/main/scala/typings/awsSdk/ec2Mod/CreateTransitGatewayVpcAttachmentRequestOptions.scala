@@ -23,31 +23,23 @@ trait CreateTransitGatewayVpcAttachmentRequestOptions extends StObject {
 }
 object CreateTransitGatewayVpcAttachmentRequestOptions {
   
-  @scala.inline
-  def apply(): CreateTransitGatewayVpcAttachmentRequestOptions = {
+  inline def apply(): CreateTransitGatewayVpcAttachmentRequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTransitGatewayVpcAttachmentRequestOptions]
   }
   
-  @scala.inline
-  implicit class CreateTransitGatewayVpcAttachmentRequestOptionsMutableBuilder[Self <: CreateTransitGatewayVpcAttachmentRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTransitGatewayVpcAttachmentRequestOptions](x: Self) {
     
-    @scala.inline
-    def setApplianceModeSupport(value: ApplianceModeSupportValue): Self = StObject.set(x, "ApplianceModeSupport", value.asInstanceOf[js.Any])
+    inline def setApplianceModeSupport(value: ApplianceModeSupportValue): Self = StObject.set(x, "ApplianceModeSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplianceModeSupportUndefined: Self = StObject.set(x, "ApplianceModeSupport", js.undefined)
+    inline def setApplianceModeSupportUndefined: Self = StObject.set(x, "ApplianceModeSupport", js.undefined)
     
-    @scala.inline
-    def setDnsSupport(value: DnsSupportValue): Self = StObject.set(x, "DnsSupport", value.asInstanceOf[js.Any])
+    inline def setDnsSupport(value: DnsSupportValue): Self = StObject.set(x, "DnsSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsSupportUndefined: Self = StObject.set(x, "DnsSupport", js.undefined)
+    inline def setDnsSupportUndefined: Self = StObject.set(x, "DnsSupport", js.undefined)
     
-    @scala.inline
-    def setIpv6Support(value: Ipv6SupportValue): Self = StObject.set(x, "Ipv6Support", value.asInstanceOf[js.Any])
+    inline def setIpv6Support(value: Ipv6SupportValue): Self = StObject.set(x, "Ipv6Support", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6SupportUndefined: Self = StObject.set(x, "Ipv6Support", js.undefined)
+    inline def setIpv6SupportUndefined: Self = StObject.set(x, "Ipv6Support", js.undefined)
   }
 }

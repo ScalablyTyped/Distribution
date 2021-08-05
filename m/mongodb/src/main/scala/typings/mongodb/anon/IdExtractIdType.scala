@@ -11,16 +11,13 @@ trait IdExtractIdType[TSchema] extends StObject {
 }
 object IdExtractIdType {
   
-  @scala.inline
-  def apply[TSchema](_id: ExtractIdType[TSchema]): IdExtractIdType[TSchema] = {
+  inline def apply[TSchema](_id: ExtractIdType[TSchema]): IdExtractIdType[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdExtractIdType[TSchema]]
   }
   
-  @scala.inline
-  implicit class IdExtractIdTypeMutableBuilder[Self <: IdExtractIdType[?], TSchema] (val x: Self & IdExtractIdType[TSchema]) extends AnyVal {
+  extension [Self <: IdExtractIdType[?], TSchema](x: Self & IdExtractIdType[TSchema]) {
     
-    @scala.inline
-    def set_id(value: ExtractIdType[TSchema]): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: ExtractIdType[TSchema]): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

@@ -15,6 +15,5 @@ object footerMod {
   @js.native
   val TableFooterProvider: Provider[Boolean] = js.native
   
-  @scala.inline
-  def useTableFooter(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useTableFooter")().asInstanceOf[Boolean]
+  inline def useTableFooter(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useTableFooter")().asInstanceOf[Boolean]
 }

@@ -51,49 +51,35 @@ trait SchemaProfileFilterLink extends StObject {
 }
 object SchemaProfileFilterLink {
   
-  @scala.inline
-  def apply(): SchemaProfileFilterLink = {
+  inline def apply(): SchemaProfileFilterLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProfileFilterLink]
   }
   
-  @scala.inline
-  implicit class SchemaProfileFilterLinkMutableBuilder[Self <: SchemaProfileFilterLink] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProfileFilterLink](x: Self) {
     
-    @scala.inline
-    def setFilterRef(value: SchemaFilterRef): Self = StObject.set(x, "filterRef", value.asInstanceOf[js.Any])
+    inline def setFilterRef(value: SchemaFilterRef): Self = StObject.set(x, "filterRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterRefUndefined: Self = StObject.set(x, "filterRef", js.undefined)
+    inline def setFilterRefUndefined: Self = StObject.set(x, "filterRef", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProfileRef(value: SchemaProfileRef): Self = StObject.set(x, "profileRef", value.asInstanceOf[js.Any])
+    inline def setProfileRef(value: SchemaProfileRef): Self = StObject.set(x, "profileRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileRefUndefined: Self = StObject.set(x, "profileRef", js.undefined)
+    inline def setProfileRefUndefined: Self = StObject.set(x, "profileRef", js.undefined)
     
-    @scala.inline
-    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+    inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait AssociateInstanceStorageConfigResponse extends StObject {
 }
 object AssociateInstanceStorageConfigResponse {
   
-  @scala.inline
-  def apply(): AssociateInstanceStorageConfigResponse = {
+  inline def apply(): AssociateInstanceStorageConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateInstanceStorageConfigResponse]
   }
   
-  @scala.inline
-  implicit class AssociateInstanceStorageConfigResponseMutableBuilder[Self <: AssociateInstanceStorageConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateInstanceStorageConfigResponse](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
   }
 }

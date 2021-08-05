@@ -9,8 +9,7 @@ object global {
   @JSGlobal("library")
   @js.native
   def library: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof samchon.library */ js.Any = js.native
-  @scala.inline
-  def library_=(
+  inline def library_=(
     x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof samchon.library */ js.Any
   ): Unit = js.Dynamic.global.updateDynamic("library")(x.asInstanceOf[js.Any])
 }

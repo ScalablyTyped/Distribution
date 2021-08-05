@@ -17,23 +17,18 @@ object automationConfigMod {
   }
   object ConfigValue {
     
-    @scala.inline
-    def apply(value: String): ConfigValue = {
+    inline def apply(value: String): ConfigValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigValue]
     }
     
-    @scala.inline
-    implicit class ConfigValueMutableBuilder[Self <: ConfigValue] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigValue](x: Self) {
       
-      @scala.inline
-      def setSecret(value: Boolean): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: Boolean): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+      inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

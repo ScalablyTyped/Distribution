@@ -31,8 +31,7 @@ object mod {
   //=> '🦄'
   ```
   */
-  @scala.inline
-  def apply(emoji: String, tone: Tone): String = (^.asInstanceOf[js.Dynamic].apply(emoji.asInstanceOf[js.Any], tone.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(emoji: String, tone: Tone): String = (^.asInstanceOf[js.Dynamic].apply(emoji.asInstanceOf[js.Any], tone.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("skin-tone", JSImport.Namespace)
   @js.native
@@ -49,22 +48,16 @@ object mod {
   trait Tone extends StObject
   object Tone {
     
-    @scala.inline
-    def brown: typings.skinTone.skinToneStrings.brown = "brown".asInstanceOf[typings.skinTone.skinToneStrings.brown]
+    inline def brown: typings.skinTone.skinToneStrings.brown = "brown".asInstanceOf[typings.skinTone.skinToneStrings.brown]
     
-    @scala.inline
-    def creamWhite: typings.skinTone.skinToneStrings.creamWhite = "creamWhite".asInstanceOf[typings.skinTone.skinToneStrings.creamWhite]
+    inline def creamWhite: typings.skinTone.skinToneStrings.creamWhite = "creamWhite".asInstanceOf[typings.skinTone.skinToneStrings.creamWhite]
     
-    @scala.inline
-    def darkBrown: typings.skinTone.skinToneStrings.darkBrown = "darkBrown".asInstanceOf[typings.skinTone.skinToneStrings.darkBrown]
+    inline def darkBrown: typings.skinTone.skinToneStrings.darkBrown = "darkBrown".asInstanceOf[typings.skinTone.skinToneStrings.darkBrown]
     
-    @scala.inline
-    def lightBrown: typings.skinTone.skinToneStrings.lightBrown = "lightBrown".asInstanceOf[typings.skinTone.skinToneStrings.lightBrown]
+    inline def lightBrown: typings.skinTone.skinToneStrings.lightBrown = "lightBrown".asInstanceOf[typings.skinTone.skinToneStrings.lightBrown]
     
-    @scala.inline
-    def none: typings.skinTone.skinToneStrings.none = "none".asInstanceOf[typings.skinTone.skinToneStrings.none]
+    inline def none: typings.skinTone.skinToneStrings.none = "none".asInstanceOf[typings.skinTone.skinToneStrings.none]
     
-    @scala.inline
-    def white: typings.skinTone.skinToneStrings.white = "white".asInstanceOf[typings.skinTone.skinToneStrings.white]
+    inline def white: typings.skinTone.skinToneStrings.white = "white".asInstanceOf[typings.skinTone.skinToneStrings.white]
   }
 }

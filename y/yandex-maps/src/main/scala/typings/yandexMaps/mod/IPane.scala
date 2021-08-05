@@ -23,8 +23,7 @@ trait IPane
 }
 object IPane {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     events: IEventManager[js.Object],
     getElement: () => HTMLElement,
@@ -36,22 +35,16 @@ object IPane {
     __obj.asInstanceOf[IPane]
   }
   
-  @scala.inline
-  implicit class IPaneMutableBuilder[Self <: IPane] (val x: Self) extends AnyVal {
+  extension [Self <: IPane](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+    inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMap(value: () => Map_): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
+    inline def setGetMap(value: () => Map_): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOverflow(value: () => visible | hidden): Self = StObject.set(x, "getOverflow", js.Any.fromFunction0(value))
+    inline def setGetOverflow(value: () => visible | hidden): Self = StObject.set(x, "getOverflow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetZIndex(value: () => Double): Self = StObject.set(x, "getZIndex", js.Any.fromFunction0(value))
+    inline def setGetZIndex(value: () => Double): Self = StObject.set(x, "getZIndex", js.Any.fromFunction0(value))
   }
 }

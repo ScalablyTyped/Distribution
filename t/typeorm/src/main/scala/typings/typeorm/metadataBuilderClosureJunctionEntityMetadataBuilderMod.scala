@@ -18,6 +18,6 @@ object metadataBuilderClosureJunctionEntityMetadataBuilderMod {
       */
     def build(parentClosureEntityMetadata: EntityMetadata): EntityMetadata = js.native
     
-    var connection: js.Any = js.native
+    /* private */ var connection: js.Any = js.native
   }
 }

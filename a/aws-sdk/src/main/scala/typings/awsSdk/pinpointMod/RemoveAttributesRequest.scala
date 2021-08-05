@@ -20,22 +20,17 @@ trait RemoveAttributesRequest extends StObject {
 }
 object RemoveAttributesRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, AttributeType: string, UpdateAttributesRequest: UpdateAttributesRequest): RemoveAttributesRequest = {
+  inline def apply(ApplicationId: string, AttributeType: string, UpdateAttributesRequest: UpdateAttributesRequest): RemoveAttributesRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], AttributeType = AttributeType.asInstanceOf[js.Any], UpdateAttributesRequest = UpdateAttributesRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveAttributesRequest]
   }
   
-  @scala.inline
-  implicit class RemoveAttributesRequestMutableBuilder[Self <: RemoveAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeType(value: string): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
+    inline def setAttributeType(value: string): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateAttributesRequest(value: UpdateAttributesRequest): Self = StObject.set(x, "UpdateAttributesRequest", value.asInstanceOf[js.Any])
+    inline def setUpdateAttributesRequest(value: UpdateAttributesRequest): Self = StObject.set(x, "UpdateAttributesRequest", value.asInstanceOf[js.Any])
   }
 }

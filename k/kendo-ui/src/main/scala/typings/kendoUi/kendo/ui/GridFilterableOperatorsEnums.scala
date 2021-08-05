@@ -17,37 +17,27 @@ trait GridFilterableOperatorsEnums extends StObject {
 }
 object GridFilterableOperatorsEnums {
   
-  @scala.inline
-  def apply(): GridFilterableOperatorsEnums = {
+  inline def apply(): GridFilterableOperatorsEnums = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridFilterableOperatorsEnums]
   }
   
-  @scala.inline
-  implicit class GridFilterableOperatorsEnumsMutableBuilder[Self <: GridFilterableOperatorsEnums] (val x: Self) extends AnyVal {
+  extension [Self <: GridFilterableOperatorsEnums](x: Self) {
     
-    @scala.inline
-    def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
+    inline def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
+    inline def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
     
-    @scala.inline
-    def setIsnotnull(value: String): Self = StObject.set(x, "isnotnull", value.asInstanceOf[js.Any])
+    inline def setIsnotnull(value: String): Self = StObject.set(x, "isnotnull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsnotnullUndefined: Self = StObject.set(x, "isnotnull", js.undefined)
+    inline def setIsnotnullUndefined: Self = StObject.set(x, "isnotnull", js.undefined)
     
-    @scala.inline
-    def setIsnull(value: String): Self = StObject.set(x, "isnull", value.asInstanceOf[js.Any])
+    inline def setIsnull(value: String): Self = StObject.set(x, "isnull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsnullUndefined: Self = StObject.set(x, "isnull", js.undefined)
+    inline def setIsnullUndefined: Self = StObject.set(x, "isnull", js.undefined)
     
-    @scala.inline
-    def setNeq(value: String): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
+    inline def setNeq(value: String): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
+    inline def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
   }
 }

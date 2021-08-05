@@ -8,6 +8,5 @@ object activexScriptingStrings {
   
   @js.native
   sealed trait Item extends StObject
-  @scala.inline
-  def Item: Item = "Item".asInstanceOf[Item]
+  inline def Item: Item = "Item".asInstanceOf[Item]
 }

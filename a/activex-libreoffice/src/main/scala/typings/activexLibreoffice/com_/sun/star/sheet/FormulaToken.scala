@@ -22,19 +22,15 @@ trait FormulaToken extends StObject {
 }
 object FormulaToken {
   
-  @scala.inline
-  def apply(Data: js.Any, OpCode: Double): FormulaToken = {
+  inline def apply(Data: js.Any, OpCode: Double): FormulaToken = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], OpCode = OpCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormulaToken]
   }
   
-  @scala.inline
-  implicit class FormulaTokenMutableBuilder[Self <: FormulaToken] (val x: Self) extends AnyVal {
+  extension [Self <: FormulaToken](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpCode(value: Double): Self = StObject.set(x, "OpCode", value.asInstanceOf[js.Any])
+    inline def setOpCode(value: Double): Self = StObject.set(x, "OpCode", value.asInstanceOf[js.Any])
   }
 }

@@ -21,6 +21,5 @@ object MaskedTextField {
   @JSImport("office-ui-fabric-react", "MaskedTextField.defaultProps")
   @js.native
   def defaultProps: IMaskedTextFieldProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IMaskedTextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IMaskedTextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

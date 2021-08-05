@@ -33,8 +33,7 @@ trait GeoboundingBox extends StObject {
 }
 object GeoboundingBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     altitudeReferenceSystem: AltitudeReferenceSystem,
     center: BasicGeoposition,
     geoshapeType: GeoshapeType,
@@ -48,31 +47,22 @@ object GeoboundingBox {
     __obj.asInstanceOf[GeoboundingBox]
   }
   
-  @scala.inline
-  implicit class GeoboundingBoxMutableBuilder[Self <: GeoboundingBox] (val x: Self) extends AnyVal {
+  extension [Self <: GeoboundingBox](x: Self) {
     
-    @scala.inline
-    def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
+    inline def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenter(value: BasicGeoposition): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: BasicGeoposition): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoshapeType(value: GeoshapeType): Self = StObject.set(x, "geoshapeType", value.asInstanceOf[js.Any])
+    inline def setGeoshapeType(value: GeoshapeType): Self = StObject.set(x, "geoshapeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAltitude(value: Double): Self = StObject.set(x, "maxAltitude", value.asInstanceOf[js.Any])
+    inline def setMaxAltitude(value: Double): Self = StObject.set(x, "maxAltitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinAltitude(value: Double): Self = StObject.set(x, "minAltitude", value.asInstanceOf[js.Any])
+    inline def setMinAltitude(value: Double): Self = StObject.set(x, "minAltitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNorthwestCorner(value: BasicGeoposition): Self = StObject.set(x, "northwestCorner", value.asInstanceOf[js.Any])
+    inline def setNorthwestCorner(value: BasicGeoposition): Self = StObject.set(x, "northwestCorner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoutheastCorner(value: BasicGeoposition): Self = StObject.set(x, "southeastCorner", value.asInstanceOf[js.Any])
+    inline def setSoutheastCorner(value: BasicGeoposition): Self = StObject.set(x, "southeastCorner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceId(value: Double): Self = StObject.set(x, "spatialReferenceId", value.asInstanceOf[js.Any])
+    inline def setSpatialReferenceId(value: Double): Self = StObject.set(x, "spatialReferenceId", value.asInstanceOf[js.Any])
   }
 }

@@ -109,8 +109,7 @@ object mod {
   @JSImport("js-search", "StopWordsMap")
   @js.native
   def StopWordsMap: js.Any = js.native
-  @scala.inline
-  def StopWordsMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StopWordsMap")(x.asInstanceOf[js.Any])
+  inline def StopWordsMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StopWordsMap")(x.asInstanceOf[js.Any])
   
   @JSImport("js-search", "StopWordsTokenizer")
   @js.native
@@ -165,17 +164,14 @@ object mod {
   }
   object IIndexStrategy {
     
-    @scala.inline
-    def apply(expandToken: String => js.Array[String]): IIndexStrategy = {
+    inline def apply(expandToken: String => js.Array[String]): IIndexStrategy = {
       val __obj = js.Dynamic.literal(expandToken = js.Any.fromFunction1(expandToken))
       __obj.asInstanceOf[IIndexStrategy]
     }
     
-    @scala.inline
-    implicit class IIndexStrategyMutableBuilder[Self <: IIndexStrategy] (val x: Self) extends AnyVal {
+    extension [Self <: IIndexStrategy](x: Self) {
       
-      @scala.inline
-      def setExpandToken(value: String => js.Array[String]): Self = StObject.set(x, "expandToken", js.Any.fromFunction1(value))
+      inline def setExpandToken(value: String => js.Array[String]): Self = StObject.set(x, "expandToken", js.Any.fromFunction1(value))
     }
   }
   
@@ -185,17 +181,14 @@ object mod {
   }
   object ISanitizer {
     
-    @scala.inline
-    def apply(sanitize: String => String): ISanitizer = {
+    inline def apply(sanitize: String => String): ISanitizer = {
       val __obj = js.Dynamic.literal(sanitize = js.Any.fromFunction1(sanitize))
       __obj.asInstanceOf[ISanitizer]
     }
     
-    @scala.inline
-    implicit class ISanitizerMutableBuilder[Self <: ISanitizer] (val x: Self) extends AnyVal {
+    extension [Self <: ISanitizer](x: Self) {
       
-      @scala.inline
-      def setSanitize(value: String => String): Self = StObject.set(x, "sanitize", js.Any.fromFunction1(value))
+      inline def setSanitize(value: String => String): Self = StObject.set(x, "sanitize", js.Any.fromFunction1(value))
     }
   }
   
@@ -207,8 +200,7 @@ object mod {
   }
   object ISearchIndex {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       indexDocument: (String, String, js.Object) => Unit,
       search: (js.Array[String], js.Array[js.Object]) => js.Array[js.Object]
     ): ISearchIndex = {
@@ -216,14 +208,11 @@ object mod {
       __obj.asInstanceOf[ISearchIndex]
     }
     
-    @scala.inline
-    implicit class ISearchIndexMutableBuilder[Self <: ISearchIndex] (val x: Self) extends AnyVal {
+    extension [Self <: ISearchIndex](x: Self) {
       
-      @scala.inline
-      def setIndexDocument(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "indexDocument", js.Any.fromFunction3(value))
+      inline def setIndexDocument(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "indexDocument", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSearch(value: (js.Array[String], js.Array[js.Object]) => js.Array[js.Object]): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
+      inline def setSearch(value: (js.Array[String], js.Array[js.Object]) => js.Array[js.Object]): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
     }
   }
   
@@ -242,23 +231,18 @@ object mod {
   }
   object ITfIdfTokenMetadata {
     
-    @scala.inline
-    def apply($numDocumentOccurrences: Double, $totalNumOccurrences: Double, $uidMap: ITfIdfUidMap): ITfIdfTokenMetadata = {
+    inline def apply($numDocumentOccurrences: Double, $totalNumOccurrences: Double, $uidMap: ITfIdfUidMap): ITfIdfTokenMetadata = {
       val __obj = js.Dynamic.literal($numDocumentOccurrences = $numDocumentOccurrences.asInstanceOf[js.Any], $totalNumOccurrences = $totalNumOccurrences.asInstanceOf[js.Any], $uidMap = $uidMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITfIdfTokenMetadata]
     }
     
-    @scala.inline
-    implicit class ITfIdfTokenMetadataMutableBuilder[Self <: ITfIdfTokenMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: ITfIdfTokenMetadata](x: Self) {
       
-      @scala.inline
-      def set$numDocumentOccurrences(value: Double): Self = StObject.set(x, "$numDocumentOccurrences", value.asInstanceOf[js.Any])
+      inline def set$numDocumentOccurrences(value: Double): Self = StObject.set(x, "$numDocumentOccurrences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$totalNumOccurrences(value: Double): Self = StObject.set(x, "$totalNumOccurrences", value.asInstanceOf[js.Any])
+      inline def set$totalNumOccurrences(value: Double): Self = StObject.set(x, "$totalNumOccurrences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$uidMap(value: ITfIdfUidMap): Self = StObject.set(x, "$uidMap", value.asInstanceOf[js.Any])
+      inline def set$uidMap(value: ITfIdfUidMap): Self = StObject.set(x, "$uidMap", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,20 +258,16 @@ object mod {
   }
   object ITfIdfUidMetadata {
     
-    @scala.inline
-    def apply($document: js.Object, $numTokenOccurrences: Double): ITfIdfUidMetadata = {
+    inline def apply($document: js.Object, $numTokenOccurrences: Double): ITfIdfUidMetadata = {
       val __obj = js.Dynamic.literal($document = $document.asInstanceOf[js.Any], $numTokenOccurrences = $numTokenOccurrences.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITfIdfUidMetadata]
     }
     
-    @scala.inline
-    implicit class ITfIdfUidMetadataMutableBuilder[Self <: ITfIdfUidMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: ITfIdfUidMetadata](x: Self) {
       
-      @scala.inline
-      def set$document(value: js.Object): Self = StObject.set(x, "$document", value.asInstanceOf[js.Any])
+      inline def set$document(value: js.Object): Self = StObject.set(x, "$document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$numTokenOccurrences(value: Double): Self = StObject.set(x, "$numTokenOccurrences", value.asInstanceOf[js.Any])
+      inline def set$numTokenOccurrences(value: Double): Self = StObject.set(x, "$numTokenOccurrences", value.asInstanceOf[js.Any])
     }
   }
   
@@ -297,17 +277,14 @@ object mod {
   }
   object ITokenizer {
     
-    @scala.inline
-    def apply(tokenize: String => js.Array[String]): ITokenizer = {
+    inline def apply(tokenize: String => js.Array[String]): ITokenizer = {
       val __obj = js.Dynamic.literal(tokenize = js.Any.fromFunction1(tokenize))
       __obj.asInstanceOf[ITokenizer]
     }
     
-    @scala.inline
-    implicit class ITokenizerMutableBuilder[Self <: ITokenizer] (val x: Self) extends AnyVal {
+    extension [Self <: ITokenizer](x: Self) {
       
-      @scala.inline
-      def setTokenize(value: String => js.Array[String]): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
+      inline def setTokenize(value: String => js.Array[String]): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
     }
   }
   

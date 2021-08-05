@@ -62,79 +62,55 @@ trait SchemaTestOrder extends StObject {
 }
 object SchemaTestOrder {
   
-  @scala.inline
-  def apply(): SchemaTestOrder = {
+  inline def apply(): SchemaTestOrder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestOrder]
   }
   
-  @scala.inline
-  implicit class SchemaTestOrderMutableBuilder[Self <: SchemaTestOrder] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestOrder](x: Self) {
     
-    @scala.inline
-    def setEnableOrderinvoices(value: Boolean): Self = StObject.set(x, "enableOrderinvoices", value.asInstanceOf[js.Any])
+    inline def setEnableOrderinvoices(value: Boolean): Self = StObject.set(x, "enableOrderinvoices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableOrderinvoicesUndefined: Self = StObject.set(x, "enableOrderinvoices", js.undefined)
+    inline def setEnableOrderinvoicesUndefined: Self = StObject.set(x, "enableOrderinvoices", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLineItems(value: js.Array[SchemaTestOrderLineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
+    inline def setLineItems(value: js.Array[SchemaTestOrderLineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
+    inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    @scala.inline
-    def setLineItemsVarargs(value: SchemaTestOrderLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: SchemaTestOrderLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
     
-    @scala.inline
-    def setNotificationMode(value: String): Self = StObject.set(x, "notificationMode", value.asInstanceOf[js.Any])
+    inline def setNotificationMode(value: String): Self = StObject.set(x, "notificationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationModeUndefined: Self = StObject.set(x, "notificationMode", js.undefined)
+    inline def setNotificationModeUndefined: Self = StObject.set(x, "notificationMode", js.undefined)
     
-    @scala.inline
-    def setPredefinedBillingAddress(value: String): Self = StObject.set(x, "predefinedBillingAddress", value.asInstanceOf[js.Any])
+    inline def setPredefinedBillingAddress(value: String): Self = StObject.set(x, "predefinedBillingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredefinedBillingAddressUndefined: Self = StObject.set(x, "predefinedBillingAddress", js.undefined)
+    inline def setPredefinedBillingAddressUndefined: Self = StObject.set(x, "predefinedBillingAddress", js.undefined)
     
-    @scala.inline
-    def setPredefinedDeliveryAddress(value: String): Self = StObject.set(x, "predefinedDeliveryAddress", value.asInstanceOf[js.Any])
+    inline def setPredefinedDeliveryAddress(value: String): Self = StObject.set(x, "predefinedDeliveryAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredefinedDeliveryAddressUndefined: Self = StObject.set(x, "predefinedDeliveryAddress", js.undefined)
+    inline def setPredefinedDeliveryAddressUndefined: Self = StObject.set(x, "predefinedDeliveryAddress", js.undefined)
     
-    @scala.inline
-    def setPredefinedEmail(value: String): Self = StObject.set(x, "predefinedEmail", value.asInstanceOf[js.Any])
+    inline def setPredefinedEmail(value: String): Self = StObject.set(x, "predefinedEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredefinedEmailUndefined: Self = StObject.set(x, "predefinedEmail", js.undefined)
+    inline def setPredefinedEmailUndefined: Self = StObject.set(x, "predefinedEmail", js.undefined)
     
-    @scala.inline
-    def setPromotions(value: js.Array[SchemaOrderPromotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
+    inline def setPromotions(value: js.Array[SchemaOrderPromotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
+    inline def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
     
-    @scala.inline
-    def setPromotionsVarargs(value: SchemaOrderPromotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
+    inline def setPromotionsVarargs(value: SchemaOrderPromotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
     
-    @scala.inline
-    def setShippingCost(value: SchemaPrice): Self = StObject.set(x, "shippingCost", value.asInstanceOf[js.Any])
+    inline def setShippingCost(value: SchemaPrice): Self = StObject.set(x, "shippingCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingCostUndefined: Self = StObject.set(x, "shippingCost", js.undefined)
+    inline def setShippingCostUndefined: Self = StObject.set(x, "shippingCost", js.undefined)
     
-    @scala.inline
-    def setShippingOption(value: String): Self = StObject.set(x, "shippingOption", value.asInstanceOf[js.Any])
+    inline def setShippingOption(value: String): Self = StObject.set(x, "shippingOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingOptionUndefined: Self = StObject.set(x, "shippingOption", js.undefined)
+    inline def setShippingOptionUndefined: Self = StObject.set(x, "shippingOption", js.undefined)
   }
 }

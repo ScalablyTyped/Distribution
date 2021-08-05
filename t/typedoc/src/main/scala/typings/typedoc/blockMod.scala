@@ -24,9 +24,9 @@ object blockMod {
     def convert(context: Context, node: ModuleBlock): Reflection = js.native
     def convert(context: Context, node: SourceFile): Reflection = js.native
     
-    var convertSourceFile: js.Any = js.native
+    /* private */ var convertSourceFile: js.Any = js.native
     
-    var convertStatements: js.Any = js.native
+    /* private */ var convertStatements: js.Any = js.native
     
     var mode: SourceFileMode = js.native
   }

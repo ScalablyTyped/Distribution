@@ -17,32 +17,24 @@ object anon {
   }
   object Quote {
     
-    @scala.inline
-    def apply(): Quote = {
+    inline def apply(): Quote = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Quote]
     }
     
-    @scala.inline
-    implicit class QuoteMutableBuilder[Self <: Quote] (val x: Self) extends AnyVal {
+    extension [Self <: Quote](x: Self) {
       
-      @scala.inline
-      def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+      inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
       
-      @scala.inline
-      def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any | (js.Array[Double | String]) | Null): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      inline def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any | (js.Array[Double | String]) | Null): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
+      inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
-      @scala.inline
-      def setSpace(value: Double | String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: Double | String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+      inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     }
   }
 }

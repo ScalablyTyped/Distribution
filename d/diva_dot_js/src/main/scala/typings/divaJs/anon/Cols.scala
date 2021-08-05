@@ -16,25 +16,19 @@ trait Cols extends StObject {
 }
 object Cols {
   
-  @scala.inline
-  def apply(cols: Double, rows: Double, tiles: Col, zoomLevel: Double): Cols = {
+  inline def apply(cols: Double, rows: Double, tiles: Col, zoomLevel: Double): Cols = {
     val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], tiles = tiles.asInstanceOf[js.Any], zoomLevel = zoomLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cols]
   }
   
-  @scala.inline
-  implicit class ColsMutableBuilder[Self <: Cols] (val x: Self) extends AnyVal {
+  extension [Self <: Cols](x: Self) {
     
-    @scala.inline
-    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiles(value: Col): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
+    inline def setTiles(value: Col): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
+    inline def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
   }
 }

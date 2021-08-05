@@ -13,19 +13,15 @@ trait ModifyVpcEndpointConnectionNotificationResult extends StObject {
 }
 object ModifyVpcEndpointConnectionNotificationResult {
   
-  @scala.inline
-  def apply(): ModifyVpcEndpointConnectionNotificationResult = {
+  inline def apply(): ModifyVpcEndpointConnectionNotificationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyVpcEndpointConnectionNotificationResult]
   }
   
-  @scala.inline
-  implicit class ModifyVpcEndpointConnectionNotificationResultMutableBuilder[Self <: ModifyVpcEndpointConnectionNotificationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyVpcEndpointConnectionNotificationResult](x: Self) {
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValueUndefined: Self = StObject.set(x, "ReturnValue", js.undefined)
+    inline def setReturnValueUndefined: Self = StObject.set(x, "ReturnValue", js.undefined)
   }
 }

@@ -24,25 +24,19 @@ trait SchemaRowDimensions extends StObject {
 }
 object SchemaRowDimensions {
   
-  @scala.inline
-  def apply(): SchemaRowDimensions = {
+  inline def apply(): SchemaRowDimensions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRowDimensions]
   }
   
-  @scala.inline
-  implicit class SchemaRowDimensionsMutableBuilder[Self <: SchemaRowDimensions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRowDimensions](x: Self) {
     
-    @scala.inline
-    def setPublisherIdentifier(value: String): Self = StObject.set(x, "publisherIdentifier", value.asInstanceOf[js.Any])
+    inline def setPublisherIdentifier(value: String): Self = StObject.set(x, "publisherIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherIdentifierUndefined: Self = StObject.set(x, "publisherIdentifier", js.undefined)
+    inline def setPublisherIdentifierUndefined: Self = StObject.set(x, "publisherIdentifier", js.undefined)
     
-    @scala.inline
-    def setTimeInterval(value: SchemaTimeInterval): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
+    inline def setTimeInterval(value: SchemaTimeInterval): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeIntervalUndefined: Self = StObject.set(x, "timeInterval", js.undefined)
+    inline def setTimeIntervalUndefined: Self = StObject.set(x, "timeInterval", js.undefined)
   }
 }

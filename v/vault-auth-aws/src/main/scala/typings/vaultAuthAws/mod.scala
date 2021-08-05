@@ -43,68 +43,48 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setCertFilePath(value: String): Self = StObject.set(x, "certFilePath", value.asInstanceOf[js.Any])
+      inline def setCertFilePath(value: String): Self = StObject.set(x, "certFilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertFilePathUndefined: Self = StObject.set(x, "certFilePath", js.undefined)
+      inline def setCertFilePathUndefined: Self = StObject.set(x, "certFilePath", js.undefined)
       
-      @scala.inline
-      def setFollowAllRedirects(value: Boolean): Self = StObject.set(x, "followAllRedirects", value.asInstanceOf[js.Any])
+      inline def setFollowAllRedirects(value: Boolean): Self = StObject.set(x, "followAllRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowAllRedirectsUndefined: Self = StObject.set(x, "followAllRedirects", js.undefined)
+      inline def setFollowAllRedirectsUndefined: Self = StObject.set(x, "followAllRedirects", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+      inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslRejectUnAuthorized(value: Boolean): Self = StObject.set(x, "sslRejectUnAuthorized", value.asInstanceOf[js.Any])
+      inline def setSslRejectUnAuthorized(value: Boolean): Self = StObject.set(x, "sslRejectUnAuthorized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslRejectUnAuthorizedUndefined: Self = StObject.set(x, "sslRejectUnAuthorized", js.undefined)
+      inline def setSslRejectUnAuthorizedUndefined: Self = StObject.set(x, "sslRejectUnAuthorized", js.undefined)
       
-      @scala.inline
-      def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+      inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
       
-      @scala.inline
-      def setVaultAppName(value: String): Self = StObject.set(x, "vaultAppName", value.asInstanceOf[js.Any])
+      inline def setVaultAppName(value: String): Self = StObject.set(x, "vaultAppName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVaultAppNameUndefined: Self = StObject.set(x, "vaultAppName", js.undefined)
+      inline def setVaultAppNameUndefined: Self = StObject.set(x, "vaultAppName", js.undefined)
       
-      @scala.inline
-      def setVaultLoginUrl(value: String): Self = StObject.set(x, "vaultLoginUrl", value.asInstanceOf[js.Any])
+      inline def setVaultLoginUrl(value: String): Self = StObject.set(x, "vaultLoginUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVaultLoginUrlUndefined: Self = StObject.set(x, "vaultLoginUrl", js.undefined)
+      inline def setVaultLoginUrlUndefined: Self = StObject.set(x, "vaultLoginUrl", js.undefined)
     }
   }
   
@@ -118,32 +98,24 @@ object mod {
   }
   object Creds {
     
-    @scala.inline
-    def apply(): Creds = {
+    inline def apply(): Creds = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Creds]
     }
     
-    @scala.inline
-    implicit class CredsMutableBuilder[Self <: Creds] (val x: Self) extends AnyVal {
+    extension [Self <: Creds](x: Self) {
       
-      @scala.inline
-      def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+      inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
+      inline def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
       
-      @scala.inline
-      def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
+      inline def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
+      inline def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
       
-      @scala.inline
-      def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+      inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
+      inline def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
     }
   }
   
@@ -159,29 +131,22 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(body: String, followAllRedirects: Boolean, url: String): Options = {
+    inline def apply(body: String, followAllRedirects: Boolean, url: String): Options = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], followAllRedirects = followAllRedirects.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCert(value: Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      @scala.inline
-      def setFollowAllRedirects(value: Boolean): Self = StObject.set(x, "followAllRedirects", value.asInstanceOf[js.Any])
+      inline def setFollowAllRedirects(value: Boolean): Self = StObject.set(x, "followAllRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,20 +158,16 @@ object mod {
   }
   object vaultAuthAws {
     
-    @scala.inline
-    def apply(authenticate: () => js.Promise[js.Any], getOptions: Creds => Options): typings.vaultAuthAws.mod.vaultAuthAws = {
+    inline def apply(authenticate: () => js.Promise[js.Any], getOptions: Creds => Options): typings.vaultAuthAws.mod.vaultAuthAws = {
       val __obj = js.Dynamic.literal(authenticate = js.Any.fromFunction0(authenticate), getOptions = js.Any.fromFunction1(getOptions))
       __obj.asInstanceOf[typings.vaultAuthAws.mod.vaultAuthAws]
     }
     
-    @scala.inline
-    implicit class vaultAuthAwsMutableBuilder[Self <: typings.vaultAuthAws.mod.vaultAuthAws] (val x: Self) extends AnyVal {
+    extension [Self <: typings.vaultAuthAws.mod.vaultAuthAws](x: Self) {
       
-      @scala.inline
-      def setAuthenticate(value: () => js.Promise[js.Any]): Self = StObject.set(x, "authenticate", js.Any.fromFunction0(value))
+      inline def setAuthenticate(value: () => js.Promise[js.Any]): Self = StObject.set(x, "authenticate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOptions(value: Creds => Options): Self = StObject.set(x, "getOptions", js.Any.fromFunction1(value))
+      inline def setGetOptions(value: Creds => Options): Self = StObject.set(x, "getOptions", js.Any.fromFunction1(value))
     }
   }
 }

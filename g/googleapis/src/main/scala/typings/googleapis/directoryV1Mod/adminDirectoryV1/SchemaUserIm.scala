@@ -48,49 +48,35 @@ trait SchemaUserIm extends StObject {
 }
 object SchemaUserIm {
   
-  @scala.inline
-  def apply(): SchemaUserIm = {
+  inline def apply(): SchemaUserIm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserIm]
   }
   
-  @scala.inline
-  implicit class SchemaUserImMutableBuilder[Self <: SchemaUserIm] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserIm](x: Self) {
     
-    @scala.inline
-    def setCustomProtocol(value: String): Self = StObject.set(x, "customProtocol", value.asInstanceOf[js.Any])
+    inline def setCustomProtocol(value: String): Self = StObject.set(x, "customProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomProtocolUndefined: Self = StObject.set(x, "customProtocol", js.undefined)
+    inline def setCustomProtocolUndefined: Self = StObject.set(x, "customProtocol", js.undefined)
     
-    @scala.inline
-    def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
+    inline def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
+    inline def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
     
-    @scala.inline
-    def setIm(value: String): Self = StObject.set(x, "im", value.asInstanceOf[js.Any])
+    inline def setIm(value: String): Self = StObject.set(x, "im", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImUndefined: Self = StObject.set(x, "im", js.undefined)
+    inline def setImUndefined: Self = StObject.set(x, "im", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

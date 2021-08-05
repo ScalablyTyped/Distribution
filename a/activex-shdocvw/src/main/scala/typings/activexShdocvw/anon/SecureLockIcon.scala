@@ -10,16 +10,13 @@ trait SecureLockIcon extends StObject {
 }
 object SecureLockIcon {
   
-  @scala.inline
-  def apply(SecureLockIcon: Double): SecureLockIcon = {
+  inline def apply(SecureLockIcon: Double): SecureLockIcon = {
     val __obj = js.Dynamic.literal(SecureLockIcon = SecureLockIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecureLockIcon]
   }
   
-  @scala.inline
-  implicit class SecureLockIconMutableBuilder[Self <: SecureLockIcon] (val x: Self) extends AnyVal {
+  extension [Self <: SecureLockIcon](x: Self) {
     
-    @scala.inline
-    def setSecureLockIcon(value: Double): Self = StObject.set(x, "SecureLockIcon", value.asInstanceOf[js.Any])
+    inline def setSecureLockIcon(value: Double): Self = StObject.set(x, "SecureLockIcon", value.asInstanceOf[js.Any])
   }
 }

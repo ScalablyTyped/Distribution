@@ -14,25 +14,19 @@ trait OrdersCustomBatchRequestEntryRefundItemShipping extends StObject {
 }
 object OrdersCustomBatchRequestEntryRefundItemShipping {
   
-  @scala.inline
-  def apply(): OrdersCustomBatchRequestEntryRefundItemShipping = {
+  inline def apply(): OrdersCustomBatchRequestEntryRefundItemShipping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrdersCustomBatchRequestEntryRefundItemShipping]
   }
   
-  @scala.inline
-  implicit class OrdersCustomBatchRequestEntryRefundItemShippingMutableBuilder[Self <: OrdersCustomBatchRequestEntryRefundItemShipping] (val x: Self) extends AnyVal {
+  extension [Self <: OrdersCustomBatchRequestEntryRefundItemShipping](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Price): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Price): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setFullRefund(value: Boolean): Self = StObject.set(x, "fullRefund", value.asInstanceOf[js.Any])
+    inline def setFullRefund(value: Boolean): Self = StObject.set(x, "fullRefund", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullRefundUndefined: Self = StObject.set(x, "fullRefund", js.undefined)
+    inline def setFullRefundUndefined: Self = StObject.set(x, "fullRefund", js.undefined)
   }
 }

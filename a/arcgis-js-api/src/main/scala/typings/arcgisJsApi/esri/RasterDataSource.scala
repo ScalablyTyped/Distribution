@@ -34,8 +34,7 @@ trait RasterDataSource
 }
 object RasterDataSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     dataSourceName: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -47,16 +46,12 @@ object RasterDataSource {
     __obj.asInstanceOf[RasterDataSource]
   }
   
-  @scala.inline
-  implicit class RasterDataSourceMutableBuilder[Self <: RasterDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: RasterDataSource](x: Self) {
     
-    @scala.inline
-    def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
+    inline def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: raster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: raster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
   }
 }

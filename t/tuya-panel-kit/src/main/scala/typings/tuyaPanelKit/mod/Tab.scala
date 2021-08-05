@@ -27,6 +27,5 @@ object Tab {
   @JSImport("tuya-panel-kit", "Tab.TabPane")
   @js.native
   def TabPane: ElementType[TabPaneProps] = js.native
-  @scala.inline
-  def TabPane_=(x: ElementType[TabPaneProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabPane")(x.asInstanceOf[js.Any])
+  inline def TabPane_=(x: ElementType[TabPaneProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabPane")(x.asInstanceOf[js.Any])
 }

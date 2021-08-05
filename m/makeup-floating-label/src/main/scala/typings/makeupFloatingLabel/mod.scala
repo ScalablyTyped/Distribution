@@ -24,17 +24,14 @@ object mod {
   }
   object FloatingLabel {
     
-    @scala.inline
-    def apply(refresh: () => Unit): FloatingLabel = {
+    inline def apply(refresh: () => Unit): FloatingLabel = {
       val __obj = js.Dynamic.literal(refresh = js.Any.fromFunction0(refresh))
       __obj.asInstanceOf[FloatingLabel]
     }
     
-    @scala.inline
-    implicit class FloatingLabelMutableBuilder[Self <: FloatingLabel] (val x: Self) extends AnyVal {
+    extension [Self <: FloatingLabel](x: Self) {
       
-      @scala.inline
-      def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+      inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     }
   }
 }

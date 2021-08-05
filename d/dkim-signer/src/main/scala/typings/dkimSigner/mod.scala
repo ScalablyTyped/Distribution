@@ -23,36 +23,26 @@ object mod {
     val ^ : js.Any = js.native
     
     /** Relaxed body canonicalization by rfc4871 #3.4.4 */
-    @scala.inline
-    def relaxedBody(body: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("relaxedBody")(body.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def relaxedBody(body: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("relaxedBody")(body.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Relaxed header canonicalization for single header line */
-    @scala.inline
-    def relaxedHeaderLine(line: String): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("relaxedHeaderLine")(line.asInstanceOf[js.Any]).asInstanceOf[Key]
+    inline def relaxedHeaderLine(line: String): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("relaxedHeaderLine")(line.asInstanceOf[js.Any]).asInstanceOf[Key]
     
     /** Relaxed headers canonicalization by rfc4871 #3.4.2 with filtering */
-    @scala.inline
-    def relaxedHeaders(headers: String): FieldNames = ^.asInstanceOf[js.Dynamic].applyDynamic("relaxedHeaders")(headers.asInstanceOf[js.Any]).asInstanceOf[FieldNames]
-    @scala.inline
-    def relaxedHeaders(headers: String, fieldNames: String): FieldNames = (^.asInstanceOf[js.Dynamic].applyDynamic("relaxedHeaders")(headers.asInstanceOf[js.Any], fieldNames.asInstanceOf[js.Any])).asInstanceOf[FieldNames]
+    inline def relaxedHeaders(headers: String): FieldNames = ^.asInstanceOf[js.Dynamic].applyDynamic("relaxedHeaders")(headers.asInstanceOf[js.Any]).asInstanceOf[FieldNames]
+    inline def relaxedHeaders(headers: String, fieldNames: String): FieldNames = (^.asInstanceOf[js.Dynamic].applyDynamic("relaxedHeaders")(headers.asInstanceOf[js.Any], fieldNames.asInstanceOf[js.Any])).asInstanceOf[FieldNames]
     
     /** Simple body canonicalization by rfc4871 #3.4.3 */
-    @scala.inline
-    def simpleBody(body: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleBody")(body.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def simpleBody(body: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleBody")(body.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @scala.inline
-  def DKIMSign(email: String, options: DKIMSignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("DKIMSign")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def DKIMSign(email: Buffer, options: DKIMSignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("DKIMSign")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def DKIMSign(email: String, options: DKIMSignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("DKIMSign")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def DKIMSign(email: Buffer, options: DKIMSignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("DKIMSign")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def generateDKIMHeader(domainName: String, keySelector: String, headerFieldNames: String, headers: String, body: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDKIMHeader")(domainName.asInstanceOf[js.Any], keySelector.asInstanceOf[js.Any], headerFieldNames.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generateDKIMHeader(domainName: String, keySelector: String, headerFieldNames: String, headers: String, body: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDKIMHeader")(domainName.asInstanceOf[js.Any], keySelector.asInstanceOf[js.Any], headerFieldNames.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def sha256(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def sha256(str: String, encoding: HexBase64Latin1Encoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(str.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sha256(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sha256(str: String, encoding: HexBase64Latin1Encoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(str.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait DKIMSignOptions extends StObject {
     
@@ -70,29 +60,22 @@ object mod {
   }
   object DKIMSignOptions {
     
-    @scala.inline
-    def apply(domainName: String, keySelector: String, privateKey: SignPrivateKeyInput | KeyLike): DKIMSignOptions = {
+    inline def apply(domainName: String, keySelector: String, privateKey: SignPrivateKeyInput | KeyLike): DKIMSignOptions = {
       val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], keySelector = keySelector.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[DKIMSignOptions]
     }
     
-    @scala.inline
-    implicit class DKIMSignOptionsMutableBuilder[Self <: DKIMSignOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DKIMSignOptions](x: Self) {
       
-      @scala.inline
-      def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderFieldNames(value: String): Self = StObject.set(x, "headerFieldNames", value.asInstanceOf[js.Any])
+      inline def setHeaderFieldNames(value: String): Self = StObject.set(x, "headerFieldNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderFieldNamesUndefined: Self = StObject.set(x, "headerFieldNames", js.undefined)
+      inline def setHeaderFieldNamesUndefined: Self = StObject.set(x, "headerFieldNames", js.undefined)
       
-      @scala.inline
-      def setKeySelector(value: String): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
+      inline def setKeySelector(value: String): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKey(value: SignPrivateKeyInput | KeyLike): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: SignPrivateKeyInput | KeyLike): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     }
   }
 }

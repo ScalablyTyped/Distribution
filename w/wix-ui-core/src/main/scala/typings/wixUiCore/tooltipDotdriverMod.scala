@@ -11,6 +11,5 @@ object tooltipDotdriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tooltipDriverFactory(args: js.Any): GetElementId = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltipDriverFactory")(args.asInstanceOf[js.Any]).asInstanceOf[GetElementId]
+  inline def tooltipDriverFactory(args: js.Any): GetElementId = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltipDriverFactory")(args.asInstanceOf[js.Any]).asInstanceOf[GetElementId]
 }

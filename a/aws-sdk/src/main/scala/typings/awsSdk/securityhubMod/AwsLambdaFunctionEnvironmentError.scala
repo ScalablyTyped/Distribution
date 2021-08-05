@@ -18,25 +18,19 @@ trait AwsLambdaFunctionEnvironmentError extends StObject {
 }
 object AwsLambdaFunctionEnvironmentError {
   
-  @scala.inline
-  def apply(): AwsLambdaFunctionEnvironmentError = {
+  inline def apply(): AwsLambdaFunctionEnvironmentError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsLambdaFunctionEnvironmentError]
   }
   
-  @scala.inline
-  implicit class AwsLambdaFunctionEnvironmentErrorMutableBuilder[Self <: AwsLambdaFunctionEnvironmentError] (val x: Self) extends AnyVal {
+  extension [Self <: AwsLambdaFunctionEnvironmentError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: NonEmptyString): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: NonEmptyString): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setMessage(value: NonEmptyString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: NonEmptyString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

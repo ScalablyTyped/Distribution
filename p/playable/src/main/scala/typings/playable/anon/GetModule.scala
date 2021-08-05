@@ -18,8 +18,7 @@ trait GetModule extends StObject {
 }
 object GetModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getModule: String => js.Any,
     registerModule: (String, js.Function) => Unit,
     registerModuleAsSingleton: (String, js.Function) => Unit,
@@ -30,22 +29,16 @@ object GetModule {
     __obj.asInstanceOf[GetModule]
   }
   
-  @scala.inline
-  implicit class GetModuleMutableBuilder[Self <: GetModule] (val x: Self) extends AnyVal {
+  extension [Self <: GetModule](x: Self) {
     
-    @scala.inline
-    def setGetModule(value: String => js.Any): Self = StObject.set(x, "getModule", js.Any.fromFunction1(value))
+    inline def setGetModule(value: String => js.Any): Self = StObject.set(x, "getModule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterModule(value: (String, js.Function) => Unit): Self = StObject.set(x, "registerModule", js.Any.fromFunction2(value))
+    inline def setRegisterModule(value: (String, js.Function) => Unit): Self = StObject.set(x, "registerModule", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterModuleAsSingleton(value: (String, js.Function) => Unit): Self = StObject.set(x, "registerModuleAsSingleton", js.Any.fromFunction2(value))
+    inline def setRegisterModuleAsSingleton(value: (String, js.Function) => Unit): Self = StObject.set(x, "registerModuleAsSingleton", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetConfig(value: js.Object => Unit): Self = StObject.set(x, "setConfig", js.Any.fromFunction1(value))
+    inline def setSetConfig(value: js.Object => Unit): Self = StObject.set(x, "setConfig", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPlaybackAdapters(value: js.Any => Unit): Self = StObject.set(x, "setPlaybackAdapters", js.Any.fromFunction1(value))
+    inline def setSetPlaybackAdapters(value: js.Any => Unit): Self = StObject.set(x, "setPlaybackAdapters", js.Any.fromFunction1(value))
   }
 }

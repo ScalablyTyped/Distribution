@@ -59,121 +59,83 @@ trait RecursivePartialPartialAv extends StObject {
 }
 object RecursivePartialPartialAv {
   
-  @scala.inline
-  def apply(): RecursivePartialPartialAv = {
+  inline def apply(): RecursivePartialPartialAv = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecursivePartialPartialAv]
   }
   
-  @scala.inline
-  implicit class RecursivePartialPartialAvMutableBuilder[Self <: RecursivePartialPartialAv] (val x: Self) extends AnyVal {
+  extension [Self <: RecursivePartialPartialAv](x: Self) {
     
-    @scala.inline
-    def setActiveOpacity(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+    inline def setActiveOpacity(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
+    inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
-    @scala.inline
-    def setAvatarStyle(value: RecursivePartial[js.UndefOr[ImageStyle]]): Self = StObject.set(x, "avatarStyle", value.asInstanceOf[js.Any])
+    inline def setAvatarStyle(value: RecursivePartial[js.UndefOr[ImageStyle]]): Self = StObject.set(x, "avatarStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvatarStyleUndefined: Self = StObject.set(x, "avatarStyle", js.undefined)
+    inline def setAvatarStyleUndefined: Self = StObject.set(x, "avatarStyle", js.undefined)
     
-    @scala.inline
-    def setComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
-    @scala.inline
-    def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    inline def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+    inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
-    @scala.inline
-    def setIcon(value: RecursivePartial[js.UndefOr[AvatarIcon]]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: RecursivePartial[js.UndefOr[AvatarIcon]]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
+    inline def setIconStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
+    inline def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setImageComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
+    inline def setImageComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)
+    inline def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)
     
-    @scala.inline
-    def setImageProps(value: RecursivePartial[js.UndefOr[PartialImageProps]]): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
+    inline def setImageProps(value: RecursivePartial[js.UndefOr[PartialImageProps]]): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePropsUndefined: Self = StObject.set(x, "imageProps", js.undefined)
+    inline def setImagePropsUndefined: Self = StObject.set(x, "imageProps", js.undefined)
     
-    @scala.inline
-    def setOnLongPress(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onLongPress", value.asInstanceOf[js.Any])
+    inline def setOnLongPress(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onLongPress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
+    inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
+    inline def setOnPress(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setOverlayContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "overlayContainerStyle", value.asInstanceOf[js.Any])
+    inline def setOverlayContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "overlayContainerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayContainerStyleUndefined: Self = StObject.set(x, "overlayContainerStyle", js.undefined)
+    inline def setOverlayContainerStyleUndefined: Self = StObject.set(x, "overlayContainerStyle", js.undefined)
     
-    @scala.inline
-    def setPlaceholderStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "placeholderStyle", value.asInstanceOf[js.Any])
+    inline def setPlaceholderStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "placeholderStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderStyleUndefined: Self = StObject.set(x, "placeholderStyle", js.undefined)
+    inline def setPlaceholderStyleUndefined: Self = StObject.set(x, "placeholderStyle", js.undefined)
     
-    @scala.inline
-    def setRenderPlaceholderContent(value: RecursivePartial[js.UndefOr[ReactElement]]): Self = StObject.set(x, "renderPlaceholderContent", value.asInstanceOf[js.Any])
+    inline def setRenderPlaceholderContent(value: RecursivePartial[js.UndefOr[ReactElement]]): Self = StObject.set(x, "renderPlaceholderContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderPlaceholderContentUndefined: Self = StObject.set(x, "renderPlaceholderContent", js.undefined)
+    inline def setRenderPlaceholderContentUndefined: Self = StObject.set(x, "renderPlaceholderContent", js.undefined)
     
-    @scala.inline
-    def setRounded(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    inline def setRounded(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
     
-    @scala.inline
-    def setSize(value: RecursivePartial[js.UndefOr[small | medium | large | xlarge | Double]]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: RecursivePartial[js.UndefOr[small | medium | large | xlarge | Double]]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSource(value: RecursivePartial[js.UndefOr[ImageSourcePropType]]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: RecursivePartial[js.UndefOr[ImageSourcePropType]]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTitle(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+    inline def setTitleStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
+    inline def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

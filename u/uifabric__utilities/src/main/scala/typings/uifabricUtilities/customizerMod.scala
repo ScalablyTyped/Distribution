@@ -19,7 +19,7 @@ object customizerMod {
       */
     def this(props: ICustomizerProps, context: js.Any) = this()
     
-    var _onCustomizationChange: js.Any = js.native
+    /* private */ var _onCustomizationChange: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MCustomizer(): Unit = js.native

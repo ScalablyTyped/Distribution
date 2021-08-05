@@ -16,16 +16,13 @@ trait SpinEvent
 }
 object SpinEvent {
   
-  @scala.inline
-  def apply(Source: XInterface, dummy1: Double): SpinEvent = {
+  inline def apply(Source: XInterface, dummy1: Double): SpinEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], dummy1 = dummy1.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinEvent]
   }
   
-  @scala.inline
-  implicit class SpinEventMutableBuilder[Self <: SpinEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SpinEvent](x: Self) {
     
-    @scala.inline
-    def setDummy1(value: Double): Self = StObject.set(x, "dummy1", value.asInstanceOf[js.Any])
+    inline def setDummy1(value: Double): Self = StObject.set(x, "dummy1", value.asInstanceOf[js.Any])
   }
 }

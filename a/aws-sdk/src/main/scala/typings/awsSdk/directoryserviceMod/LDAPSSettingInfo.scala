@@ -23,31 +23,23 @@ trait LDAPSSettingInfo extends StObject {
 }
 object LDAPSSettingInfo {
   
-  @scala.inline
-  def apply(): LDAPSSettingInfo = {
+  inline def apply(): LDAPSSettingInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LDAPSSettingInfo]
   }
   
-  @scala.inline
-  implicit class LDAPSSettingInfoMutableBuilder[Self <: LDAPSSettingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LDAPSSettingInfo](x: Self) {
     
-    @scala.inline
-    def setLDAPSStatus(value: LDAPSStatus): Self = StObject.set(x, "LDAPSStatus", value.asInstanceOf[js.Any])
+    inline def setLDAPSStatus(value: LDAPSStatus): Self = StObject.set(x, "LDAPSStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLDAPSStatusReason(value: LDAPSStatusReason): Self = StObject.set(x, "LDAPSStatusReason", value.asInstanceOf[js.Any])
+    inline def setLDAPSStatusReason(value: LDAPSStatusReason): Self = StObject.set(x, "LDAPSStatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLDAPSStatusReasonUndefined: Self = StObject.set(x, "LDAPSStatusReason", js.undefined)
+    inline def setLDAPSStatusReasonUndefined: Self = StObject.set(x, "LDAPSStatusReason", js.undefined)
     
-    @scala.inline
-    def setLDAPSStatusUndefined: Self = StObject.set(x, "LDAPSStatus", js.undefined)
+    inline def setLDAPSStatusUndefined: Self = StObject.set(x, "LDAPSStatus", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "LastUpdatedDateTime", js.undefined)
+    inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "LastUpdatedDateTime", js.undefined)
   }
 }

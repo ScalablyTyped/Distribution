@@ -17,16 +17,14 @@ object pseudoSelectorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compilePseudoSelector[Node, ElementNode /* <: Node */](
+  inline def compilePseudoSelector[Node, ElementNode /* <: Node */](
     next: CompiledQuery[ElementNode],
     selector: PseudoSelector,
     options: InternalOptions[Node, ElementNode],
     context: js.Array[ElementNode],
     compileToken: CompileToken[Node, ElementNode]
   ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("compilePseudoSelector")(next.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], compileToken.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
-  @scala.inline
-  def compilePseudoSelector[Node, ElementNode /* <: Node */](
+  inline def compilePseudoSelector[Node, ElementNode /* <: Node */](
     next: CompiledQuery[ElementNode],
     selector: PseudoSelector,
     options: InternalOptions[Node, ElementNode],

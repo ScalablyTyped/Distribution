@@ -16,25 +16,19 @@ trait YAxisLabelsLevelsOptions extends StObject {
 }
 object YAxisLabelsLevelsOptions {
   
-  @scala.inline
-  def apply(): YAxisLabelsLevelsOptions = {
+  inline def apply(): YAxisLabelsLevelsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[YAxisLabelsLevelsOptions]
   }
   
-  @scala.inline
-  implicit class YAxisLabelsLevelsOptionsMutableBuilder[Self <: YAxisLabelsLevelsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: YAxisLabelsLevelsOptions](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

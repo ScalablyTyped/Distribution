@@ -69,55 +69,39 @@ trait PlusNavigatorPermissionNames extends StObject {
 }
 object PlusNavigatorPermissionNames {
   
-  @scala.inline
-  def apply(): PlusNavigatorPermissionNames = {
+  inline def apply(): PlusNavigatorPermissionNames = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNavigatorPermissionNames]
   }
   
-  @scala.inline
-  implicit class PlusNavigatorPermissionNamesMutableBuilder[Self <: PlusNavigatorPermissionNames] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNavigatorPermissionNames](x: Self) {
     
-    @scala.inline
-    def setCAMERA(value: String): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
+    inline def setCAMERA(value: String): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAMERAUndefined: Self = StObject.set(x, "CAMERA", js.undefined)
+    inline def setCAMERAUndefined: Self = StObject.set(x, "CAMERA", js.undefined)
     
-    @scala.inline
-    def setCONTACTS(value: String): Self = StObject.set(x, "CONTACTS", value.asInstanceOf[js.Any])
+    inline def setCONTACTS(value: String): Self = StObject.set(x, "CONTACTS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCONTACTSUndefined: Self = StObject.set(x, "CONTACTS", js.undefined)
+    inline def setCONTACTSUndefined: Self = StObject.set(x, "CONTACTS", js.undefined)
     
-    @scala.inline
-    def setGALLERY(value: String): Self = StObject.set(x, "GALLERY", value.asInstanceOf[js.Any])
+    inline def setGALLERY(value: String): Self = StObject.set(x, "GALLERY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGALLERYUndefined: Self = StObject.set(x, "GALLERY", js.undefined)
+    inline def setGALLERYUndefined: Self = StObject.set(x, "GALLERY", js.undefined)
     
-    @scala.inline
-    def setLOCATION(value: String): Self = StObject.set(x, "LOCATION", value.asInstanceOf[js.Any])
+    inline def setLOCATION(value: String): Self = StObject.set(x, "LOCATION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLOCATIONUndefined: Self = StObject.set(x, "LOCATION", js.undefined)
+    inline def setLOCATIONUndefined: Self = StObject.set(x, "LOCATION", js.undefined)
     
-    @scala.inline
-    def setNOTIFITION(value: String): Self = StObject.set(x, "NOTIFITION", value.asInstanceOf[js.Any])
+    inline def setNOTIFITION(value: String): Self = StObject.set(x, "NOTIFITION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNOTIFITIONUndefined: Self = StObject.set(x, "NOTIFITION", js.undefined)
+    inline def setNOTIFITIONUndefined: Self = StObject.set(x, "NOTIFITION", js.undefined)
     
-    @scala.inline
-    def setRECORD(value: String): Self = StObject.set(x, "RECORD", value.asInstanceOf[js.Any])
+    inline def setRECORD(value: String): Self = StObject.set(x, "RECORD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRECORDUndefined: Self = StObject.set(x, "RECORD", js.undefined)
+    inline def setRECORDUndefined: Self = StObject.set(x, "RECORD", js.undefined)
     
-    @scala.inline
-    def setSHORTCUT(value: String): Self = StObject.set(x, "SHORTCUT", value.asInstanceOf[js.Any])
+    inline def setSHORTCUT(value: String): Self = StObject.set(x, "SHORTCUT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHORTCUTUndefined: Self = StObject.set(x, "SHORTCUT", js.undefined)
+    inline def setSHORTCUTUndefined: Self = StObject.set(x, "SHORTCUT", js.undefined)
   }
 }

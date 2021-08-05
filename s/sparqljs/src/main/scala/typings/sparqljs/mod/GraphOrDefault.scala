@@ -15,29 +15,22 @@ trait GraphOrDefault extends StObject {
 }
 object GraphOrDefault {
   
-  @scala.inline
-  def apply(): GraphOrDefault = {
+  inline def apply(): GraphOrDefault = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("graph")
     __obj.asInstanceOf[GraphOrDefault]
   }
   
-  @scala.inline
-  implicit class GraphOrDefaultMutableBuilder[Self <: GraphOrDefault] (val x: Self) extends AnyVal {
+  extension [Self <: GraphOrDefault](x: Self) {
     
-    @scala.inline
-    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setName(value: IriTerm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: IriTerm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: graph): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: graph): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

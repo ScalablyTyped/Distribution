@@ -15,22 +15,17 @@ trait QueryResultMetadata extends StObject {
 }
 object QueryResultMetadata {
   
-  @scala.inline
-  def apply(score: Double): QueryResultMetadata = {
+  inline def apply(score: Double): QueryResultMetadata = {
     val __obj = js.Dynamic.literal(score = score.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResultMetadata]
   }
   
-  @scala.inline
-  implicit class QueryResultMetadataMutableBuilder[Self <: QueryResultMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: QueryResultMetadata](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
   }
 }

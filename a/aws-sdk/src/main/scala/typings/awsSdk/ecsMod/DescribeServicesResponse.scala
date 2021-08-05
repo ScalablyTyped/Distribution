@@ -18,31 +18,23 @@ trait DescribeServicesResponse extends StObject {
 }
 object DescribeServicesResponse {
   
-  @scala.inline
-  def apply(): DescribeServicesResponse = {
+  inline def apply(): DescribeServicesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeServicesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeServicesResponseMutableBuilder[Self <: DescribeServicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeServicesResponse](x: Self) {
     
-    @scala.inline
-    def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
-    @scala.inline
-    def setServices(value: Services): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: Services): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

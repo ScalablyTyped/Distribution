@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(filename: String): js.Promise[JSONFile] = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONFile]]
+  inline def apply(filename: String): js.Promise[JSONFile] = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONFile]]
   
   @JSImport("json-file-plus", JSImport.Namespace)
   @js.native
@@ -48,8 +47,7 @@ object mod {
     def saveSync(): Unit = js.native
   }
   
-  @scala.inline
-  def sync(filename: String): JSONFile = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filename.asInstanceOf[js.Any]).asInstanceOf[JSONFile]
+  inline def sync(filename: String): JSONFile = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filename.asInstanceOf[js.Any]).asInstanceOf[JSONFile]
   
   trait Format extends StObject {
     
@@ -59,20 +57,16 @@ object mod {
   }
   object Format {
     
-    @scala.inline
-    def apply(indent: Double | Charactertabulation, trailing: Boolean): Format = {
+    inline def apply(indent: Double | Charactertabulation, trailing: Boolean): Format = {
       val __obj = js.Dynamic.literal(indent = indent.asInstanceOf[js.Any], trailing = trailing.asInstanceOf[js.Any])
       __obj.asInstanceOf[Format]
     }
     
-    @scala.inline
-    implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+    extension [Self <: Format](x: Self) {
       
-      @scala.inline
-      def setIndent(value: Double | Charactertabulation): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: Double | Charactertabulation): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
     }
   }
 }

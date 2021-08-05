@@ -16,37 +16,27 @@ trait ResponseObjectHeaderOptions extends StObject {
 }
 object ResponseObjectHeaderOptions {
   
-  @scala.inline
-  def apply(): ResponseObjectHeaderOptions = {
+  inline def apply(): ResponseObjectHeaderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseObjectHeaderOptions]
   }
   
-  @scala.inline
-  implicit class ResponseObjectHeaderOptionsMutableBuilder[Self <: ResponseObjectHeaderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseObjectHeaderOptions](x: Self) {
     
-    @scala.inline
-    def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+    inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+    inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
-    @scala.inline
-    def setDuplicate(value: Boolean): Self = StObject.set(x, "duplicate", value.asInstanceOf[js.Any])
+    inline def setDuplicate(value: Boolean): Self = StObject.set(x, "duplicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuplicateUndefined: Self = StObject.set(x, "duplicate", js.undefined)
+    inline def setDuplicateUndefined: Self = StObject.set(x, "duplicate", js.undefined)
     
-    @scala.inline
-    def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
     
-    @scala.inline
-    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait InsightsServiceAccountResponseData extends StObject {
 }
 object InsightsServiceAccountResponseData {
   
-  @scala.inline
-  def apply(user: InsightsServiceAccountResponseUser): InsightsServiceAccountResponseData = {
+  inline def apply(user: InsightsServiceAccountResponseUser): InsightsServiceAccountResponseData = {
     val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServiceAccountResponseData]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseDataMutableBuilder[Self <: InsightsServiceAccountResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseData](x: Self) {
     
-    @scala.inline
-    def setUser(value: InsightsServiceAccountResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: InsightsServiceAccountResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

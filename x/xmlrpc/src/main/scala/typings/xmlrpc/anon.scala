@@ -16,20 +16,16 @@ object anon {
   }
   object Expires {
     
-    @scala.inline
-    def apply(expires: Date, secure: Boolean): Expires = {
+    inline def apply(expires: Date, secure: Boolean): Expires = {
       val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any])
       __obj.asInstanceOf[Expires]
     }
     
-    @scala.inline
-    implicit class ExpiresMutableBuilder[Self <: Expires] (val x: Self) extends AnyVal {
+    extension [Self <: Expires](x: Self) {
       
-      @scala.inline
-      def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,20 +37,16 @@ object anon {
   }
   object Pass {
     
-    @scala.inline
-    def apply(pass: String, user: String): Pass = {
+    inline def apply(pass: String, user: String): Pass = {
       val __obj = js.Dynamic.literal(pass = pass.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pass]
     }
     
-    @scala.inline
-    implicit class PassMutableBuilder[Self <: Pass] (val x: Self) extends AnyVal {
+    extension [Self <: Pass](x: Self) {
       
-      @scala.inline
-      def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,20 +56,16 @@ object anon {
   }
   object Processors {
     
-    @scala.inline
-    def apply(processors: js.Array[HeadersProcessor]): Processors = {
+    inline def apply(processors: js.Array[HeadersProcessor]): Processors = {
       val __obj = js.Dynamic.literal(processors = processors.asInstanceOf[js.Any])
       __obj.asInstanceOf[Processors]
     }
     
-    @scala.inline
-    implicit class ProcessorsMutableBuilder[Self <: Processors] (val x: Self) extends AnyVal {
+    extension [Self <: Processors](x: Self) {
       
-      @scala.inline
-      def setProcessors(value: js.Array[HeadersProcessor]): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
+      inline def setProcessors(value: js.Array[HeadersProcessor]): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessorsVarargs(value: HeadersProcessor*): Self = StObject.set(x, "processors", js.Array(value :_*))
+      inline def setProcessorsVarargs(value: HeadersProcessor*): Self = StObject.set(x, "processors", js.Array(value :_*))
     }
   }
 }

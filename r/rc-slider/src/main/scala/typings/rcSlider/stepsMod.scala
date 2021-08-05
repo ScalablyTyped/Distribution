@@ -12,8 +12,7 @@ object stepsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     hasPrefixClsVerticalReverseMarksDotsStepIncludedLowerBoundUpperBoundMaxMinDotStyleActiveDotStyle: ActiveDotStyle
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsVerticalReverseMarksDotsStepIncludedLowerBoundUpperBoundMaxMinDotStyleActiveDotStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

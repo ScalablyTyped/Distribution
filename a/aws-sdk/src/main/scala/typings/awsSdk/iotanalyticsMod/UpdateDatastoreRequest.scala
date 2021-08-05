@@ -23,28 +23,21 @@ trait UpdateDatastoreRequest extends StObject {
 }
 object UpdateDatastoreRequest {
   
-  @scala.inline
-  def apply(datastoreName: DatastoreName): UpdateDatastoreRequest = {
+  inline def apply(datastoreName: DatastoreName): UpdateDatastoreRequest = {
     val __obj = js.Dynamic.literal(datastoreName = datastoreName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDatastoreRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDatastoreRequestMutableBuilder[Self <: UpdateDatastoreRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDatastoreRequest](x: Self) {
     
-    @scala.inline
-    def setDatastoreName(value: DatastoreName): Self = StObject.set(x, "datastoreName", value.asInstanceOf[js.Any])
+    inline def setDatastoreName(value: DatastoreName): Self = StObject.set(x, "datastoreName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatastoreStorage(value: DatastoreStorage): Self = StObject.set(x, "datastoreStorage", value.asInstanceOf[js.Any])
+    inline def setDatastoreStorage(value: DatastoreStorage): Self = StObject.set(x, "datastoreStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatastoreStorageUndefined: Self = StObject.set(x, "datastoreStorage", js.undefined)
+    inline def setDatastoreStorageUndefined: Self = StObject.set(x, "datastoreStorage", js.undefined)
     
-    @scala.inline
-    def setRetentionPeriod(value: RetentionPeriod): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
+    inline def setRetentionPeriod(value: RetentionPeriod): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
+    inline def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
   }
 }

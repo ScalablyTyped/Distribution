@@ -11,8 +11,7 @@ object measureElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: DOMElement): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Output]
+  inline def default(node: DOMElement): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Output]
   
   trait Output extends StObject {
     
@@ -28,20 +27,16 @@ object measureElementMod {
   }
   object Output {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Output = {
+    inline def apply(height: Double, width: Double): Output = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Output]
     }
     
-    @scala.inline
-    implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    extension [Self <: Output](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

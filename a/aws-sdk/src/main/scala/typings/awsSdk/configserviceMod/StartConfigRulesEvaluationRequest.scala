@@ -13,22 +13,17 @@ trait StartConfigRulesEvaluationRequest extends StObject {
 }
 object StartConfigRulesEvaluationRequest {
   
-  @scala.inline
-  def apply(): StartConfigRulesEvaluationRequest = {
+  inline def apply(): StartConfigRulesEvaluationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartConfigRulesEvaluationRequest]
   }
   
-  @scala.inline
-  implicit class StartConfigRulesEvaluationRequestMutableBuilder[Self <: StartConfigRulesEvaluationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartConfigRulesEvaluationRequest](x: Self) {
     
-    @scala.inline
-    def setConfigRuleNames(value: ReevaluateConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
+    inline def setConfigRuleNames(value: ReevaluateConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleNamesUndefined: Self = StObject.set(x, "ConfigRuleNames", js.undefined)
+    inline def setConfigRuleNamesUndefined: Self = StObject.set(x, "ConfigRuleNames", js.undefined)
     
-    @scala.inline
-    def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
+    inline def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
   }
 }

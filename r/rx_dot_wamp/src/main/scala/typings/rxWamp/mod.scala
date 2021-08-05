@@ -208,35 +208,26 @@ object mod {
   }
   object IWampEvent {
     
-    @scala.inline
-    def apply(): IWampEvent = {
+    inline def apply(): IWampEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IWampEvent]
     }
     
-    @scala.inline
-    implicit class IWampEventMutableBuilder[Self <: IWampEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IWampEvent](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setDetails(value: IEvent): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: IEvent): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setKwargs(value: js.Any): Self = StObject.set(x, "kwargs", value.asInstanceOf[js.Any])
+      inline def setKwargs(value: js.Any): Self = StObject.set(x, "kwargs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKwargsUndefined: Self = StObject.set(x, "kwargs", js.undefined)
+      inline def setKwargsUndefined: Self = StObject.set(x, "kwargs", js.undefined)
     }
   }
   

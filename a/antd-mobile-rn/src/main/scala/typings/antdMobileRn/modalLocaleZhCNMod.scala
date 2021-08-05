@@ -15,19 +15,16 @@ object modalLocaleZhCNMod {
     @JSImport("antd-mobile-rn/lib/modal/locale/zh_CN", "default.buttonText")
     @js.native
     def buttonText: String = js.native
-    @scala.inline
-    def buttonText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonText")(x.asInstanceOf[js.Any])
+    inline def buttonText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/locale/zh_CN", "default.cancelText")
     @js.native
     def cancelText: String = js.native
-    @scala.inline
-    def cancelText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
+    inline def cancelText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/locale/zh_CN", "default.okText")
     @js.native
     def okText: String = js.native
-    @scala.inline
-    def okText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("okText")(x.asInstanceOf[js.Any])
+    inline def okText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("okText")(x.asInstanceOf[js.Any])
   }
 }

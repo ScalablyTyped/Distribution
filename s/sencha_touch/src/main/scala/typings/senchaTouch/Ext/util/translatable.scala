@@ -53,62 +53,44 @@ object translatable {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setGetEasing(value: () => js.Any): Self = StObject.set(x, "getEasing", js.Any.fromFunction0(value))
+      inline def setGetEasing(value: () => js.Any): Self = StObject.set(x, "getEasing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEasingUndefined: Self = StObject.set(x, "getEasing", js.undefined)
+      inline def setGetEasingUndefined: Self = StObject.set(x, "getEasing", js.undefined)
       
-      @scala.inline
-      def setGetEasingX(value: () => js.Any): Self = StObject.set(x, "getEasingX", js.Any.fromFunction0(value))
+      inline def setGetEasingX(value: () => js.Any): Self = StObject.set(x, "getEasingX", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEasingXUndefined: Self = StObject.set(x, "getEasingX", js.undefined)
+      inline def setGetEasingXUndefined: Self = StObject.set(x, "getEasingX", js.undefined)
       
-      @scala.inline
-      def setGetEasingY(value: () => js.Any): Self = StObject.set(x, "getEasingY", js.Any.fromFunction0(value))
+      inline def setGetEasingY(value: () => js.Any): Self = StObject.set(x, "getEasingY", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEasingYUndefined: Self = StObject.set(x, "getEasingY", js.undefined)
+      inline def setGetEasingYUndefined: Self = StObject.set(x, "getEasingY", js.undefined)
       
-      @scala.inline
-      def setGetUseWrapper(value: () => js.Any): Self = StObject.set(x, "getUseWrapper", js.Any.fromFunction0(value))
+      inline def setGetUseWrapper(value: () => js.Any): Self = StObject.set(x, "getUseWrapper", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUseWrapperUndefined: Self = StObject.set(x, "getUseWrapper", js.undefined)
+      inline def setGetUseWrapperUndefined: Self = StObject.set(x, "getUseWrapper", js.undefined)
       
-      @scala.inline
-      def setSetEasing(value: /* easing */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEasing", js.Any.fromFunction1(value))
+      inline def setSetEasing(value: /* easing */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEasing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetEasingUndefined: Self = StObject.set(x, "setEasing", js.undefined)
+      inline def setSetEasingUndefined: Self = StObject.set(x, "setEasing", js.undefined)
       
-      @scala.inline
-      def setSetEasingX(value: /* easingX */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEasingX", js.Any.fromFunction1(value))
+      inline def setSetEasingX(value: /* easingX */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEasingX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetEasingXUndefined: Self = StObject.set(x, "setEasingX", js.undefined)
+      inline def setSetEasingXUndefined: Self = StObject.set(x, "setEasingX", js.undefined)
       
-      @scala.inline
-      def setSetEasingY(value: /* easingY */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEasingY", js.Any.fromFunction1(value))
+      inline def setSetEasingY(value: /* easingY */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEasingY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetEasingYUndefined: Self = StObject.set(x, "setEasingY", js.undefined)
+      inline def setSetEasingYUndefined: Self = StObject.set(x, "setEasingY", js.undefined)
       
-      @scala.inline
-      def setSetUseWrapper(value: /* useWrapper */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUseWrapper", js.Any.fromFunction1(value))
+      inline def setSetUseWrapper(value: /* useWrapper */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUseWrapper", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetUseWrapperUndefined: Self = StObject.set(x, "setUseWrapper", js.undefined)
+      inline def setSetUseWrapperUndefined: Self = StObject.set(x, "setUseWrapper", js.undefined)
     }
   }
   
@@ -117,8 +99,7 @@ object translatable {
        with IDom
   object ICssPosition {
     
-    @scala.inline
-    def apply(): ICssPosition = {
+    inline def apply(): ICssPosition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICssPosition]
     }
@@ -129,8 +110,7 @@ object translatable {
        with IDom
   object ICssTransform {
     
-    @scala.inline
-    def apply(): ICssTransform = {
+    inline def apply(): ICssTransform = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICssTransform]
     }
@@ -152,26 +132,20 @@ object translatable {
   }
   object IDom {
     
-    @scala.inline
-    def apply(): IDom = {
+    inline def apply(): IDom = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDom]
     }
     
-    @scala.inline
-    implicit class IDomMutableBuilder[Self <: IDom] (val x: Self) extends AnyVal {
+    extension [Self <: IDom](x: Self) {
       
-      @scala.inline
-      def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
+      inline def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
       
-      @scala.inline
-      def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
+      inline def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
+      inline def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
     }
   }
   
@@ -193,26 +167,20 @@ object translatable {
   }
   object IScrollPosition {
     
-    @scala.inline
-    def apply(): IScrollPosition = {
+    inline def apply(): IScrollPosition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IScrollPosition]
     }
     
-    @scala.inline
-    implicit class IScrollPositionMutableBuilder[Self <: IScrollPosition] (val x: Self) extends AnyVal {
+    extension [Self <: IScrollPosition](x: Self) {
       
-      @scala.inline
-      def setGetUseWrapper(value: () => Boolean): Self = StObject.set(x, "getUseWrapper", js.Any.fromFunction0(value))
+      inline def setGetUseWrapper(value: () => Boolean): Self = StObject.set(x, "getUseWrapper", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUseWrapperUndefined: Self = StObject.set(x, "getUseWrapper", js.undefined)
+      inline def setGetUseWrapperUndefined: Self = StObject.set(x, "getUseWrapper", js.undefined)
       
-      @scala.inline
-      def setSetUseWrapper(value: /* useWrapper */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseWrapper", js.Any.fromFunction1(value))
+      inline def setSetUseWrapper(value: /* useWrapper */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseWrapper", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetUseWrapperUndefined: Self = StObject.set(x, "setUseWrapper", js.undefined)
+      inline def setSetUseWrapperUndefined: Self = StObject.set(x, "setUseWrapper", js.undefined)
     }
   }
 }

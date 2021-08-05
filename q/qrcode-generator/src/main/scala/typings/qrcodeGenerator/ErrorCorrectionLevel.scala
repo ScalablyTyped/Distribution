@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ErrorCorrectionLevel extends StObject
 object ErrorCorrectionLevel {
   
-  @scala.inline
-  def H: typings.qrcodeGenerator.qrcodeGeneratorStrings.H = "H".asInstanceOf[typings.qrcodeGenerator.qrcodeGeneratorStrings.H]
+  inline def H: typings.qrcodeGenerator.qrcodeGeneratorStrings.H = "H".asInstanceOf[typings.qrcodeGenerator.qrcodeGeneratorStrings.H]
   
-  @scala.inline
-  def L: typings.qrcodeGenerator.qrcodeGeneratorStrings.L = "L".asInstanceOf[typings.qrcodeGenerator.qrcodeGeneratorStrings.L]
+  inline def L: typings.qrcodeGenerator.qrcodeGeneratorStrings.L = "L".asInstanceOf[typings.qrcodeGenerator.qrcodeGeneratorStrings.L]
   
-  @scala.inline
-  def M: typings.qrcodeGenerator.qrcodeGeneratorStrings.M = "M".asInstanceOf[typings.qrcodeGenerator.qrcodeGeneratorStrings.M]
+  inline def M: typings.qrcodeGenerator.qrcodeGeneratorStrings.M = "M".asInstanceOf[typings.qrcodeGenerator.qrcodeGeneratorStrings.M]
   
-  @scala.inline
-  def Q: typings.qrcodeGenerator.qrcodeGeneratorStrings.Q = "Q".asInstanceOf[typings.qrcodeGenerator.qrcodeGeneratorStrings.Q]
+  inline def Q: typings.qrcodeGenerator.qrcodeGeneratorStrings.Q = "Q".asInstanceOf[typings.qrcodeGenerator.qrcodeGeneratorStrings.Q]
 }

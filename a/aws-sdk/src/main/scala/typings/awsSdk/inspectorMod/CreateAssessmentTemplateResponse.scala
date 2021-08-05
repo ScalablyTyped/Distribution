@@ -13,16 +13,13 @@ trait CreateAssessmentTemplateResponse extends StObject {
 }
 object CreateAssessmentTemplateResponse {
   
-  @scala.inline
-  def apply(assessmentTemplateArn: Arn): CreateAssessmentTemplateResponse = {
+  inline def apply(assessmentTemplateArn: Arn): CreateAssessmentTemplateResponse = {
     val __obj = js.Dynamic.literal(assessmentTemplateArn = assessmentTemplateArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAssessmentTemplateResponse]
   }
   
-  @scala.inline
-  implicit class CreateAssessmentTemplateResponseMutableBuilder[Self <: CreateAssessmentTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAssessmentTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setAssessmentTemplateArn(value: Arn): Self = StObject.set(x, "assessmentTemplateArn", value.asInstanceOf[js.Any])
+    inline def setAssessmentTemplateArn(value: Arn): Self = StObject.set(x, "assessmentTemplateArn", value.asInstanceOf[js.Any])
   }
 }

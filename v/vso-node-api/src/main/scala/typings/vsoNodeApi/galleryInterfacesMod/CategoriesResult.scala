@@ -10,19 +10,15 @@ trait CategoriesResult extends StObject {
 }
 object CategoriesResult {
   
-  @scala.inline
-  def apply(categories: js.Array[ExtensionCategory]): CategoriesResult = {
+  inline def apply(categories: js.Array[ExtensionCategory]): CategoriesResult = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoriesResult]
   }
   
-  @scala.inline
-  implicit class CategoriesResultMutableBuilder[Self <: CategoriesResult] (val x: Self) extends AnyVal {
+  extension [Self <: CategoriesResult](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[ExtensionCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[ExtensionCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesVarargs(value: ExtensionCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: ExtensionCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
   }
 }

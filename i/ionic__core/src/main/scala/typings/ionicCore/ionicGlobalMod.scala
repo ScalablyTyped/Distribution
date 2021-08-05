@@ -11,11 +11,8 @@ object ionicGlobalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
+  inline def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
   
-  @scala.inline
-  def getIonMode(): Mode = ^.asInstanceOf[js.Dynamic].applyDynamic("getIonMode")().asInstanceOf[Mode]
-  @scala.inline
-  def getIonMode(ref: js.Any): Mode = ^.asInstanceOf[js.Dynamic].applyDynamic("getIonMode")(ref.asInstanceOf[js.Any]).asInstanceOf[Mode]
+  inline def getIonMode(): Mode = ^.asInstanceOf[js.Dynamic].applyDynamic("getIonMode")().asInstanceOf[Mode]
+  inline def getIonMode(ref: js.Any): Mode = ^.asInstanceOf[js.Dynamic].applyDynamic("getIonMode")(ref.asInstanceOf[js.Any]).asInstanceOf[Mode]
 }

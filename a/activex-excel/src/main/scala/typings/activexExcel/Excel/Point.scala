@@ -41,7 +41,7 @@ trait Point extends StObject {
   
   def Delete(): js.Any = js.native
   
-  @JSName("Excel.Point_typekey")
+  /* private */ @JSName("Excel.Point_typekey")
   var ExcelDotPoint_typekey: Point = js.native
   
   var Explosion: Double = js.native

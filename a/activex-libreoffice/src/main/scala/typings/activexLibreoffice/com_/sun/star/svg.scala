@@ -29,8 +29,7 @@ object svg {
   }
   object XSVGPrinter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       endJob: () => Unit,
       printPage: SeqEquiv[Double] => Unit,
@@ -42,17 +41,13 @@ object svg {
       __obj.asInstanceOf[XSVGPrinter]
     }
     
-    @scala.inline
-    implicit class XSVGPrinterMutableBuilder[Self <: XSVGPrinter] (val x: Self) extends AnyVal {
+    extension [Self <: XSVGPrinter](x: Self) {
       
-      @scala.inline
-      def setEndJob(value: () => Unit): Self = StObject.set(x, "endJob", js.Any.fromFunction0(value))
+      inline def setEndJob(value: () => Unit): Self = StObject.set(x, "endJob", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrintPage(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "printPage", js.Any.fromFunction1(value))
+      inline def setPrintPage(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "printPage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartJob(value: (XDocumentHandler, SeqEquiv[Double], String, Double, Boolean) => Boolean): Self = StObject.set(x, "startJob", js.Any.fromFunction5(value))
+      inline def setStartJob(value: (XDocumentHandler, SeqEquiv[Double], String, Double, Boolean) => Boolean): Self = StObject.set(x, "startJob", js.Any.fromFunction5(value))
     }
   }
   
@@ -65,8 +60,7 @@ object svg {
   }
   object XSVGWriter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit,
@@ -76,11 +70,9 @@ object svg {
       __obj.asInstanceOf[XSVGWriter]
     }
     
-    @scala.inline
-    implicit class XSVGWriterMutableBuilder[Self <: XSVGWriter] (val x: Self) extends AnyVal {
+    extension [Self <: XSVGWriter](x: Self) {
       
-      @scala.inline
-      def setWrite(value: (XDocumentHandler, SeqEquiv[Double]) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
+      inline def setWrite(value: (XDocumentHandler, SeqEquiv[Double]) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
     }
   }
 }

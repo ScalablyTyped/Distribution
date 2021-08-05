@@ -34,37 +34,27 @@ trait ParamsResourcePropertiesGet
 }
 object ParamsResourcePropertiesGet {
   
-  @scala.inline
-  def apply(): ParamsResourcePropertiesGet = {
+  inline def apply(): ParamsResourcePropertiesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePropertiesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePropertiesGetMutableBuilder[Self <: ParamsResourcePropertiesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePropertiesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setPropertyKey(value: String): Self = StObject.set(x, "propertyKey", value.asInstanceOf[js.Any])
+    inline def setPropertyKey(value: String): Self = StObject.set(x, "propertyKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyKeyUndefined: Self = StObject.set(x, "propertyKey", js.undefined)
+    inline def setPropertyKeyUndefined: Self = StObject.set(x, "propertyKey", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

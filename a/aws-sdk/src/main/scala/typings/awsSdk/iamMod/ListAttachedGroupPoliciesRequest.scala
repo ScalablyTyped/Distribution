@@ -28,34 +28,25 @@ trait ListAttachedGroupPoliciesRequest extends StObject {
 }
 object ListAttachedGroupPoliciesRequest {
   
-  @scala.inline
-  def apply(GroupName: groupNameType): ListAttachedGroupPoliciesRequest = {
+  inline def apply(GroupName: groupNameType): ListAttachedGroupPoliciesRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAttachedGroupPoliciesRequest]
   }
   
-  @scala.inline
-  implicit class ListAttachedGroupPoliciesRequestMutableBuilder[Self <: ListAttachedGroupPoliciesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAttachedGroupPoliciesRequest](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setPathPrefix(value: policyPathType): Self = StObject.set(x, "PathPrefix", value.asInstanceOf[js.Any])
+    inline def setPathPrefix(value: policyPathType): Self = StObject.set(x, "PathPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathPrefixUndefined: Self = StObject.set(x, "PathPrefix", js.undefined)
+    inline def setPathPrefixUndefined: Self = StObject.set(x, "PathPrefix", js.undefined)
   }
 }

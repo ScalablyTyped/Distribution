@@ -13,16 +13,13 @@ trait DescribeCodeRepositoryInput extends StObject {
 }
 object DescribeCodeRepositoryInput {
   
-  @scala.inline
-  def apply(CodeRepositoryName: EntityName): DescribeCodeRepositoryInput = {
+  inline def apply(CodeRepositoryName: EntityName): DescribeCodeRepositoryInput = {
     val __obj = js.Dynamic.literal(CodeRepositoryName = CodeRepositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCodeRepositoryInput]
   }
   
-  @scala.inline
-  implicit class DescribeCodeRepositoryInputMutableBuilder[Self <: DescribeCodeRepositoryInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCodeRepositoryInput](x: Self) {
     
-    @scala.inline
-    def setCodeRepositoryName(value: EntityName): Self = StObject.set(x, "CodeRepositoryName", value.asInstanceOf[js.Any])
+    inline def setCodeRepositoryName(value: EntityName): Self = StObject.set(x, "CodeRepositoryName", value.asInstanceOf[js.Any])
   }
 }

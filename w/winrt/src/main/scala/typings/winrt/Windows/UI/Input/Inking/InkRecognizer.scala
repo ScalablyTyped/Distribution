@@ -9,8 +9,7 @@ trait InkRecognizer
      with IInkRecognizer
 object InkRecognizer {
   
-  @scala.inline
-  def apply(name: String): InkRecognizer = {
+  inline def apply(name: String): InkRecognizer = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkRecognizer]
   }

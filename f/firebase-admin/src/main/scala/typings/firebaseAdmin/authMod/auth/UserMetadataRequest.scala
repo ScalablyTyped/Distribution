@@ -21,25 +21,19 @@ trait UserMetadataRequest extends StObject {
 }
 object UserMetadataRequest {
   
-  @scala.inline
-  def apply(): UserMetadataRequest = {
+  inline def apply(): UserMetadataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserMetadataRequest]
   }
   
-  @scala.inline
-  implicit class UserMetadataRequestMutableBuilder[Self <: UserMetadataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UserMetadataRequest](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setLastSignInTime(value: String): Self = StObject.set(x, "lastSignInTime", value.asInstanceOf[js.Any])
+    inline def setLastSignInTime(value: String): Self = StObject.set(x, "lastSignInTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSignInTimeUndefined: Self = StObject.set(x, "lastSignInTime", js.undefined)
+    inline def setLastSignInTimeUndefined: Self = StObject.set(x, "lastSignInTime", js.undefined)
   }
 }

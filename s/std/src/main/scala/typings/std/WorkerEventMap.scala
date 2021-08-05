@@ -14,19 +14,15 @@ trait WorkerEventMap
 }
 object WorkerEventMap {
   
-  @scala.inline
-  def apply(error: ErrorEvent, message: MessageEvent[js.Any], messageerror: MessageEvent[js.Any]): WorkerEventMap = {
+  inline def apply(error: ErrorEvent, message: MessageEvent[js.Any], messageerror: MessageEvent[js.Any]): WorkerEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageerror = messageerror.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerEventMap]
   }
   
-  @scala.inline
-  implicit class WorkerEventMapMutableBuilder[Self <: WorkerEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerEventMap](x: Self) {
     
-    @scala.inline
-    def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageerror(value: MessageEvent[js.Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
+    inline def setMessageerror(value: MessageEvent[js.Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
   }
 }

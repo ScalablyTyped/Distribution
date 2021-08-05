@@ -13,19 +13,15 @@ trait UpdateTriggerResponse extends StObject {
 }
 object UpdateTriggerResponse {
   
-  @scala.inline
-  def apply(): UpdateTriggerResponse = {
+  inline def apply(): UpdateTriggerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateTriggerResponse]
   }
   
-  @scala.inline
-  implicit class UpdateTriggerResponseMutableBuilder[Self <: UpdateTriggerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTriggerResponse](x: Self) {
     
-    @scala.inline
-    def setTrigger(value: Trigger): Self = StObject.set(x, "Trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: Trigger): Self = StObject.set(x, "Trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "Trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "Trigger", js.undefined)
   }
 }

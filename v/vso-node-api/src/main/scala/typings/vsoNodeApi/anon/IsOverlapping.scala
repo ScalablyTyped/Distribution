@@ -12,19 +12,15 @@ trait IsOverlapping extends StObject {
 }
 object IsOverlapping {
   
-  @scala.inline
-  def apply(isOverlapping: scala.Double, oK: scala.Double): IsOverlapping = {
+  inline def apply(isOverlapping: scala.Double, oK: scala.Double): IsOverlapping = {
     val __obj = js.Dynamic.literal(isOverlapping = isOverlapping.asInstanceOf[js.Any], oK = oK.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsOverlapping]
   }
   
-  @scala.inline
-  implicit class IsOverlappingMutableBuilder[Self <: IsOverlapping] (val x: Self) extends AnyVal {
+  extension [Self <: IsOverlapping](x: Self) {
     
-    @scala.inline
-    def setIsOverlapping(value: scala.Double): Self = StObject.set(x, "isOverlapping", value.asInstanceOf[js.Any])
+    inline def setIsOverlapping(value: scala.Double): Self = StObject.set(x, "isOverlapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOK(value: scala.Double): Self = StObject.set(x, "oK", value.asInstanceOf[js.Any])
+    inline def setOK(value: scala.Double): Self = StObject.set(x, "oK", value.asInstanceOf[js.Any])
   }
 }

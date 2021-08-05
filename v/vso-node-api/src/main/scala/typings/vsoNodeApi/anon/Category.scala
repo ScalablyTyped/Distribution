@@ -42,8 +42,7 @@ trait Category extends StObject {
 }
 object Category {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     category: scala.Double,
     contributionType: scala.Double,
     displayName: scala.Double,
@@ -67,58 +66,40 @@ object Category {
     __obj.asInstanceOf[Category]
   }
   
-  @scala.inline
-  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
+  extension [Self <: Category](x: Self) {
     
-    @scala.inline
-    def setCategory(value: scala.Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: scala.Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributionType(value: scala.Double): Self = StObject.set(x, "contributionType", value.asInstanceOf[js.Any])
+    inline def setContributionType(value: scala.Double): Self = StObject.set(x, "contributionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: scala.Double): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: scala.Double): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeWithFlags(value: scala.Double): Self = StObject.set(x, "excludeWithFlags", value.asInstanceOf[js.Any])
+    inline def setExcludeWithFlags(value: scala.Double): Self = StObject.set(x, "excludeWithFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatured(value: scala.Double): Self = StObject.set(x, "featured", value.asInstanceOf[js.Any])
+    inline def setFeatured(value: scala.Double): Self = StObject.set(x, "featured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturedInCategory(value: scala.Double): Self = StObject.set(x, "featuredInCategory", value.asInstanceOf[js.Any])
+    inline def setFeaturedInCategory(value: scala.Double): Self = StObject.set(x, "featuredInCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: scala.Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: scala.Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeWithFlags(value: scala.Double): Self = StObject.set(x, "includeWithFlags", value.asInstanceOf[js.Any])
+    inline def setIncludeWithFlags(value: scala.Double): Self = StObject.set(x, "includeWithFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationTarget(value: scala.Double): Self = StObject.set(x, "installationTarget", value.asInstanceOf[js.Any])
+    inline def setInstallationTarget(value: scala.Double): Self = StObject.set(x, "installationTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationTargetVersion(value: scala.Double): Self = StObject.set(x, "installationTargetVersion", value.asInstanceOf[js.Any])
+    inline def setInstallationTargetVersion(value: scala.Double): Self = StObject.set(x, "installationTargetVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationTargetVersionRange(value: scala.Double): Self = StObject.set(x, "installationTargetVersionRange", value.asInstanceOf[js.Any])
+    inline def setInstallationTargetVersionRange(value: scala.Double): Self = StObject.set(x, "installationTargetVersionRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLcid(value: scala.Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+    inline def setLcid(value: scala.Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: scala.Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: scala.Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate(value: scala.Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: scala.Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchText(value: scala.Double): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
+    inline def setSearchText(value: scala.Double): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: scala.Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: scala.Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVsixMetadata(value: scala.Double): Self = StObject.set(x, "vsixMetadata", value.asInstanceOf[js.Any])
+    inline def setVsixMetadata(value: scala.Double): Self = StObject.set(x, "vsixMetadata", value.asInstanceOf[js.Any])
   }
 }

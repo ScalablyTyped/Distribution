@@ -22,8 +22,7 @@ object mod {
   val One: Double = js.native
   
   /* static member */
-  @scala.inline
-  def extend(parser: BinaryParseStream): BinaryParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(parser.asInstanceOf[js.Any]).asInstanceOf[BinaryParseStream]
+  inline def extend(parser: BinaryParseStream): BinaryParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(parser.asInstanceOf[js.Any]).asInstanceOf[BinaryParseStream]
   
   type BinaryParseStream = Transform
 }

@@ -59,8 +59,7 @@ object gradientsMod {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  @scala.inline
-  def customGrad[T /* <: Tensor[Rank] */](f: CustomGradientFunc[T]): js.Function1[/* repeated */ Tensor[Rank], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("customGrad")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Tensor[Rank], T]]
+  inline def customGrad[T /* <: Tensor[Rank] */](f: CustomGradientFunc[T]): js.Function1[/* repeated */ Tensor[Rank], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("customGrad")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Tensor[Rank], T]]
   
   /**
     * Provided `f(x)`, returns another function `g(x, dy?)`, which gives the
@@ -96,8 +95,7 @@ object gradientsMod {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  @scala.inline
-  def grad(f: js.Function1[/* x */ Tensor[Rank], Tensor[Rank]]): js.Function2[
+  inline def grad(f: js.Function1[/* x */ Tensor[Rank], Tensor[Rank]]): js.Function2[
     /* x */ TensorLike | Tensor[Rank], 
     /* dy */ js.UndefOr[TensorLike | Tensor[Rank]], 
     Tensor[Rank]
@@ -136,8 +134,7 @@ object gradientsMod {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  @scala.inline
-  def grads(f: js.Function1[/* repeated */ Tensor[Rank], Tensor[Rank]]): js.Function2[
+  inline def grads(f: js.Function1[/* repeated */ Tensor[Rank], Tensor[Rank]]): js.Function2[
     /* args */ js.Array[Tensor[Rank] | TensorLike], 
     /* dy */ js.UndefOr[Tensor[Rank] | TensorLike], 
     js.Array[Tensor[Rank]]
@@ -172,8 +169,7 @@ object gradientsMod {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  @scala.inline
-  def valueAndGrad[I /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](f: js.Function1[/* x */ I, O]): js.Function2[/* x */ I, /* dy */ js.UndefOr[O], Grad[O, I]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valueAndGrad")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ I, /* dy */ js.UndefOr[O], Grad[O, I]]]
+  inline def valueAndGrad[I /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](f: js.Function1[/* x */ I, O]): js.Function2[/* x */ I, /* dy */ js.UndefOr[O], Grad[O, I]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valueAndGrad")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ I, /* dy */ js.UndefOr[O], Grad[O, I]]]
   
   /**
     * Like `tf.grads`, but returns also the value of `f()`. Useful when `f()`
@@ -206,8 +202,7 @@ object gradientsMod {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  @scala.inline
-  def valueAndGrads[O /* <: Tensor[Rank] */](f: js.Function1[/* repeated */ Tensor[Rank], O]): js.Function2[/* args */ js.Array[Tensor[Rank]], /* dy */ js.UndefOr[O], Grads[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valueAndGrads")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* args */ js.Array[Tensor[Rank]], /* dy */ js.UndefOr[O], Grads[O]]]
+  inline def valueAndGrads[O /* <: Tensor[Rank] */](f: js.Function1[/* repeated */ Tensor[Rank], O]): js.Function2[/* args */ js.Array[Tensor[Rank]], /* dy */ js.UndefOr[O], Grads[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valueAndGrads")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* args */ js.Array[Tensor[Rank]], /* dy */ js.UndefOr[O], Grads[O]]]
   
   /**
     * Computes and returns the gradient of f(x) with respect to the list of
@@ -239,8 +234,6 @@ object gradientsMod {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
-  @scala.inline
-  def variableGrads(f: js.Function0[Scalar]): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any]).asInstanceOf[Value]
-  @scala.inline
-  def variableGrads(f: js.Function0[Scalar], varList: js.Array[Variable[Rank]]): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any], varList.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def variableGrads(f: js.Function0[Scalar]): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any]).asInstanceOf[Value]
+  inline def variableGrads(f: js.Function0[Scalar], varList: js.Array[Variable[Rank]]): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any], varList.asInstanceOf[js.Any])).asInstanceOf[Value]
 }

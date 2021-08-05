@@ -18,22 +18,17 @@ trait DeleteVpcRequest extends StObject {
 }
 object DeleteVpcRequest {
   
-  @scala.inline
-  def apply(VpcId: VpcId): DeleteVpcRequest = {
+  inline def apply(VpcId: VpcId): DeleteVpcRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVpcRequest]
   }
   
-  @scala.inline
-  implicit class DeleteVpcRequestMutableBuilder[Self <: DeleteVpcRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVpcRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

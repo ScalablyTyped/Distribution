@@ -13,10 +13,8 @@ object defaultProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultProvider(): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")().asInstanceOf[Provider[String]]
-  @scala.inline
-  def defaultProvider(configuration: RegionProviderConfiguration): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")(configuration.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
+  inline def defaultProvider(): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")().asInstanceOf[Provider[String]]
+  inline def defaultProvider(configuration: RegionProviderConfiguration): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")(configuration.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
   
   trait RegionProviderConfiguration
     extends StObject
@@ -24,8 +22,7 @@ object defaultProviderMod {
        with SharedConfigInit
   object RegionProviderConfiguration {
     
-    @scala.inline
-    def apply(): RegionProviderConfiguration = {
+    inline def apply(): RegionProviderConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegionProviderConfiguration]
     }

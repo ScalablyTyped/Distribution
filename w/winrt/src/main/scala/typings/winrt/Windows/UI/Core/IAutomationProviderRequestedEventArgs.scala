@@ -12,16 +12,13 @@ trait IAutomationProviderRequestedEventArgs
 }
 object IAutomationProviderRequestedEventArgs {
   
-  @scala.inline
-  def apply(automationProvider: js.Any, handled: Boolean): IAutomationProviderRequestedEventArgs = {
+  inline def apply(automationProvider: js.Any, handled: Boolean): IAutomationProviderRequestedEventArgs = {
     val __obj = js.Dynamic.literal(automationProvider = automationProvider.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAutomationProviderRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class IAutomationProviderRequestedEventArgsMutableBuilder[Self <: IAutomationProviderRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IAutomationProviderRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAutomationProvider(value: js.Any): Self = StObject.set(x, "automationProvider", value.asInstanceOf[js.Any])
+    inline def setAutomationProvider(value: js.Any): Self = StObject.set(x, "automationProvider", value.asInstanceOf[js.Any])
   }
 }

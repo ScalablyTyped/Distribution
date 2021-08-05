@@ -50,46 +50,33 @@ trait SchemaGetHistogramRequest extends StObject {
 }
 object SchemaGetHistogramRequest {
   
-  @scala.inline
-  def apply(): SchemaGetHistogramRequest = {
+  inline def apply(): SchemaGetHistogramRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetHistogramRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGetHistogramRequestMutableBuilder[Self <: SchemaGetHistogramRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetHistogramRequest](x: Self) {
     
-    @scala.inline
-    def setAllowBroadening(value: Boolean): Self = StObject.set(x, "allowBroadening", value.asInstanceOf[js.Any])
+    inline def setAllowBroadening(value: Boolean): Self = StObject.set(x, "allowBroadening", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowBroadeningUndefined: Self = StObject.set(x, "allowBroadening", js.undefined)
+    inline def setAllowBroadeningUndefined: Self = StObject.set(x, "allowBroadening", js.undefined)
     
-    @scala.inline
-    def setFilters(value: SchemaJobFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: SchemaJobFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setQuery(value: SchemaJobQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: SchemaJobQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setRequestMetadata(value: SchemaRequestMetadata): Self = StObject.set(x, "requestMetadata", value.asInstanceOf[js.Any])
+    inline def setRequestMetadata(value: SchemaRequestMetadata): Self = StObject.set(x, "requestMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestMetadataUndefined: Self = StObject.set(x, "requestMetadata", js.undefined)
+    inline def setRequestMetadataUndefined: Self = StObject.set(x, "requestMetadata", js.undefined)
     
-    @scala.inline
-    def setSearchTypes(value: js.Array[String]): Self = StObject.set(x, "searchTypes", value.asInstanceOf[js.Any])
+    inline def setSearchTypes(value: js.Array[String]): Self = StObject.set(x, "searchTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTypesUndefined: Self = StObject.set(x, "searchTypes", js.undefined)
+    inline def setSearchTypesUndefined: Self = StObject.set(x, "searchTypes", js.undefined)
     
-    @scala.inline
-    def setSearchTypesVarargs(value: String*): Self = StObject.set(x, "searchTypes", js.Array(value :_*))
+    inline def setSearchTypesVarargs(value: String*): Self = StObject.set(x, "searchTypes", js.Array(value :_*))
   }
 }

@@ -14,19 +14,15 @@ trait EnumerateLoadedClassesOptions extends StObject {
 }
 object EnumerateLoadedClassesOptions {
   
-  @scala.inline
-  def apply(): EnumerateLoadedClassesOptions = {
+  inline def apply(): EnumerateLoadedClassesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnumerateLoadedClassesOptions]
   }
   
-  @scala.inline
-  implicit class EnumerateLoadedClassesOptionsMutableBuilder[Self <: EnumerateLoadedClassesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EnumerateLoadedClassesOptions](x: Self) {
     
-    @scala.inline
-    def setOwnedBy(value: ModuleMap): Self = StObject.set(x, "ownedBy", value.asInstanceOf[js.Any])
+    inline def setOwnedBy(value: ModuleMap): Self = StObject.set(x, "ownedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnedByUndefined: Self = StObject.set(x, "ownedBy", js.undefined)
+    inline def setOwnedByUndefined: Self = StObject.set(x, "ownedBy", js.undefined)
   }
 }

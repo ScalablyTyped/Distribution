@@ -19,43 +19,31 @@ trait GeneratorOptions extends StObject {
 }
 object GeneratorOptions {
   
-  @scala.inline
-  def apply(): GeneratorOptions = {
+  inline def apply(): GeneratorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeneratorOptions]
   }
   
-  @scala.inline
-  implicit class GeneratorOptionsMutableBuilder[Self <: GeneratorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeneratorOptions](x: Self) {
     
-    @scala.inline
-    def setAllPrefixes(value: Boolean): Self = StObject.set(x, "allPrefixes", value.asInstanceOf[js.Any])
+    inline def setAllPrefixes(value: Boolean): Self = StObject.set(x, "allPrefixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllPrefixesUndefined: Self = StObject.set(x, "allPrefixes", js.undefined)
+    inline def setAllPrefixesUndefined: Self = StObject.set(x, "allPrefixes", js.undefined)
     
-    @scala.inline
-    def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+    inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
-    @scala.inline
-    def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
+    inline def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewlineUndefined: Self = StObject.set(x, "newline", js.undefined)
+    inline def setNewlineUndefined: Self = StObject.set(x, "newline", js.undefined)
     
-    @scala.inline
-    def setPrefixes(value: StringDictionary[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
+    inline def setPrefixes(value: StringDictionary[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
+    inline def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
     
-    @scala.inline
-    def setSparqlStar(value: Boolean): Self = StObject.set(x, "sparqlStar", value.asInstanceOf[js.Any])
+    inline def setSparqlStar(value: Boolean): Self = StObject.set(x, "sparqlStar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSparqlStarUndefined: Self = StObject.set(x, "sparqlStar", js.undefined)
+    inline def setSparqlStarUndefined: Self = StObject.set(x, "sparqlStar", js.undefined)
   }
 }

@@ -17,23 +17,18 @@ trait BindPattern
 }
 object BindPattern {
   
-  @scala.inline
-  def apply(expression: Expression, variable: VariableTerm): BindPattern = {
+  inline def apply(expression: Expression, variable: VariableTerm): BindPattern = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("bind")
     __obj.asInstanceOf[BindPattern]
   }
   
-  @scala.inline
-  implicit class BindPatternMutableBuilder[Self <: BindPattern] (val x: Self) extends AnyVal {
+  extension [Self <: BindPattern](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: bind): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: bind): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariable(value: VariableTerm): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+    inline def setVariable(value: VariableTerm): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait DeleteKeyPairResult extends StObject {
 }
 object DeleteKeyPairResult {
   
-  @scala.inline
-  def apply(): DeleteKeyPairResult = {
+  inline def apply(): DeleteKeyPairResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteKeyPairResult]
   }
   
-  @scala.inline
-  implicit class DeleteKeyPairResultMutableBuilder[Self <: DeleteKeyPairResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteKeyPairResult](x: Self) {
     
-    @scala.inline
-    def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

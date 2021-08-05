@@ -25,8 +25,7 @@ trait BuildCompletedEvent
 }
 object BuildCompletedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: Build,
     buildErrors: js.Array[BuildRequestValidationResult],
     buildId: Double,
@@ -37,25 +36,18 @@ object BuildCompletedEvent {
     __obj.asInstanceOf[BuildCompletedEvent]
   }
   
-  @scala.inline
-  implicit class BuildCompletedEventMutableBuilder[Self <: BuildCompletedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BuildCompletedEvent](x: Self) {
     
-    @scala.inline
-    def setBuildErrors(value: js.Array[BuildRequestValidationResult]): Self = StObject.set(x, "buildErrors", value.asInstanceOf[js.Any])
+    inline def setBuildErrors(value: js.Array[BuildRequestValidationResult]): Self = StObject.set(x, "buildErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildErrorsVarargs(value: BuildRequestValidationResult*): Self = StObject.set(x, "buildErrors", js.Array(value :_*))
+    inline def setBuildErrorsVarargs(value: BuildRequestValidationResult*): Self = StObject.set(x, "buildErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setBuildWarnings(value: js.Array[BuildRequestValidationResult]): Self = StObject.set(x, "buildWarnings", value.asInstanceOf[js.Any])
+    inline def setBuildWarnings(value: js.Array[BuildRequestValidationResult]): Self = StObject.set(x, "buildWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildWarningsVarargs(value: BuildRequestValidationResult*): Self = StObject.set(x, "buildWarnings", js.Array(value :_*))
+    inline def setBuildWarningsVarargs(value: BuildRequestValidationResult*): Self = StObject.set(x, "buildWarnings", js.Array(value :_*))
     
-    @scala.inline
-    def setChanges(value: js.Array[Change]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[Change]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesVarargs(value: Change*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: Change*): Self = StObject.set(x, "changes", js.Array(value :_*))
   }
 }

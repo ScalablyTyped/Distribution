@@ -18,31 +18,23 @@ trait ResizeHeight extends StObject {
 }
 object ResizeHeight {
   
-  @scala.inline
-  def apply(): ResizeHeight = {
+  inline def apply(): ResizeHeight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResizeHeight]
   }
   
-  @scala.inline
-  implicit class ResizeHeightMutableBuilder[Self <: ResizeHeight] (val x: Self) extends AnyVal {
+  extension [Self <: ResizeHeight](x: Self) {
     
-    @scala.inline
-    def setResizeHeight(value: Double): Self = StObject.set(x, "resizeHeight", value.asInstanceOf[js.Any])
+    inline def setResizeHeight(value: Double): Self = StObject.set(x, "resizeHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeHeightUndefined: Self = StObject.set(x, "resizeHeight", js.undefined)
+    inline def setResizeHeightUndefined: Self = StObject.set(x, "resizeHeight", js.undefined)
     
-    @scala.inline
-    def setResizeQuality(value: pixelated | low | medium | high): Self = StObject.set(x, "resizeQuality", value.asInstanceOf[js.Any])
+    inline def setResizeQuality(value: pixelated | low | medium | high): Self = StObject.set(x, "resizeQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeQualityUndefined: Self = StObject.set(x, "resizeQuality", js.undefined)
+    inline def setResizeQualityUndefined: Self = StObject.set(x, "resizeQuality", js.undefined)
     
-    @scala.inline
-    def setResizeWidth(value: Double): Self = StObject.set(x, "resizeWidth", value.asInstanceOf[js.Any])
+    inline def setResizeWidth(value: Double): Self = StObject.set(x, "resizeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeWidthUndefined: Self = StObject.set(x, "resizeWidth", js.undefined)
+    inline def setResizeWidthUndefined: Self = StObject.set(x, "resizeWidth", js.undefined)
   }
 }

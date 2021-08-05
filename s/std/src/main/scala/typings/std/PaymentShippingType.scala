@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaymentShippingType extends StObject
 object PaymentShippingType {
   
-  @scala.inline
-  def delivery: typings.std.stdStrings.delivery = "delivery".asInstanceOf[typings.std.stdStrings.delivery]
+  inline def delivery: typings.std.stdStrings.delivery = "delivery".asInstanceOf[typings.std.stdStrings.delivery]
   
-  @scala.inline
-  def pickup: typings.std.stdStrings.pickup = "pickup".asInstanceOf[typings.std.stdStrings.pickup]
+  inline def pickup: typings.std.stdStrings.pickup = "pickup".asInstanceOf[typings.std.stdStrings.pickup]
   
-  @scala.inline
-  def shipping: typings.std.stdStrings.shipping = "shipping".asInstanceOf[typings.std.stdStrings.shipping]
+  inline def shipping: typings.std.stdStrings.shipping = "shipping".asInstanceOf[typings.std.stdStrings.shipping]
 }

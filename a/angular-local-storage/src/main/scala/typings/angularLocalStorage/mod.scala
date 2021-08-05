@@ -205,8 +205,7 @@ object mod {
         }
         object ILocalStorageServiceProvider {
           
-          @scala.inline
-          def apply(
+          inline def apply(
             $get: js.Any,
             setDefaultToCookie: Boolean => typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider,
             setNotify: (Boolean, Boolean) => typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider,
@@ -219,36 +218,29 @@ object mod {
             __obj.asInstanceOf[typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider]
           }
           
-          @scala.inline
-          implicit class ILocalStorageServiceProviderMutableBuilder[Self <: typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider] (val x: Self) extends AnyVal {
+          extension [Self <: typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider](x: Self) {
             
-            @scala.inline
-            def setSetDefaultToCookie(
+            inline def setSetDefaultToCookie(
               value: Boolean => typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider
             ): Self = StObject.set(x, "setDefaultToCookie", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setSetNotify(
+            inline def setSetNotify(
               value: (Boolean, Boolean) => typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider
             ): Self = StObject.set(x, "setNotify", js.Any.fromFunction2(value))
             
-            @scala.inline
-            def setSetPrefix(
+            inline def setSetPrefix(
               value: String => typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider
             ): Self = StObject.set(x, "setPrefix", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setSetStorageCookie(
+            inline def setSetStorageCookie(
               value: (Double, String, Boolean) => typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider
             ): Self = StObject.set(x, "setStorageCookie", js.Any.fromFunction3(value))
             
-            @scala.inline
-            def setSetStorageCookieDomain(
+            inline def setSetStorageCookieDomain(
               value: String => typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider
             ): Self = StObject.set(x, "setStorageCookieDomain", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setSetStorageType(
+            inline def setSetStorageType(
               value: String => typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider
             ): Self = StObject.set(x, "setStorageType", js.Any.fromFunction1(value))
           }
@@ -261,11 +253,9 @@ object mod {
         trait StorageType extends StObject
         object StorageType {
           
-          @scala.inline
-          def localStorage: typings.angularLocalStorage.angularLocalStorageStrings.localStorage = "localStorage".asInstanceOf[typings.angularLocalStorage.angularLocalStorageStrings.localStorage]
+          inline def localStorage: typings.angularLocalStorage.angularLocalStorageStrings.localStorage = "localStorage".asInstanceOf[typings.angularLocalStorage.angularLocalStorageStrings.localStorage]
           
-          @scala.inline
-          def sessionStorage: typings.angularLocalStorage.angularLocalStorageStrings.sessionStorage = "sessionStorage".asInstanceOf[typings.angularLocalStorage.angularLocalStorageStrings.sessionStorage]
+          inline def sessionStorage: typings.angularLocalStorage.angularLocalStorageStrings.sessionStorage = "sessionStorage".asInstanceOf[typings.angularLocalStorage.angularLocalStorageStrings.sessionStorage]
         }
       }
     }

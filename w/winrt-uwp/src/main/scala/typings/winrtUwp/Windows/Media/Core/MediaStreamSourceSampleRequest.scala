@@ -27,8 +27,7 @@ trait MediaStreamSourceSampleRequest extends StObject {
 }
 object MediaStreamSourceSampleRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDeferral: () => MediaStreamSourceSampleRequestDeferral,
     reportSampleProgress: Double => Unit,
     sample: MediaStreamSample,
@@ -38,19 +37,14 @@ object MediaStreamSourceSampleRequest {
     __obj.asInstanceOf[MediaStreamSourceSampleRequest]
   }
   
-  @scala.inline
-  implicit class MediaStreamSourceSampleRequestMutableBuilder[Self <: MediaStreamSourceSampleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamSourceSampleRequest](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => MediaStreamSourceSampleRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => MediaStreamSourceSampleRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReportSampleProgress(value: Double => Unit): Self = StObject.set(x, "reportSampleProgress", js.Any.fromFunction1(value))
+    inline def setReportSampleProgress(value: Double => Unit): Self = StObject.set(x, "reportSampleProgress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSample(value: MediaStreamSample): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+    inline def setSample(value: MediaStreamSample): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamDescriptor(value: IMediaStreamDescriptor): Self = StObject.set(x, "streamDescriptor", value.asInstanceOf[js.Any])
+    inline def setStreamDescriptor(value: IMediaStreamDescriptor): Self = StObject.set(x, "streamDescriptor", value.asInstanceOf[js.Any])
   }
 }

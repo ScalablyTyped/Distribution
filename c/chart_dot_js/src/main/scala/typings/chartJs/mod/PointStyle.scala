@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointStyle extends StObject
 object PointStyle {
   
-  @scala.inline
-  def circle: typings.chartJs.chartJsStrings.circle = "circle".asInstanceOf[typings.chartJs.chartJsStrings.circle]
+  inline def circle: typings.chartJs.chartJsStrings.circle = "circle".asInstanceOf[typings.chartJs.chartJsStrings.circle]
   
-  @scala.inline
-  def cross: typings.chartJs.chartJsStrings.cross = "cross".asInstanceOf[typings.chartJs.chartJsStrings.cross]
+  inline def cross: typings.chartJs.chartJsStrings.cross = "cross".asInstanceOf[typings.chartJs.chartJsStrings.cross]
   
-  @scala.inline
-  def crossRot: typings.chartJs.chartJsStrings.crossRot = "crossRot".asInstanceOf[typings.chartJs.chartJsStrings.crossRot]
+  inline def crossRot: typings.chartJs.chartJsStrings.crossRot = "crossRot".asInstanceOf[typings.chartJs.chartJsStrings.crossRot]
   
-  @scala.inline
-  def dash: typings.chartJs.chartJsStrings.dash = "dash".asInstanceOf[typings.chartJs.chartJsStrings.dash]
+  inline def dash: typings.chartJs.chartJsStrings.dash = "dash".asInstanceOf[typings.chartJs.chartJsStrings.dash]
   
-  @scala.inline
-  def line: typings.chartJs.chartJsStrings.line = "line".asInstanceOf[typings.chartJs.chartJsStrings.line]
+  inline def line: typings.chartJs.chartJsStrings.line = "line".asInstanceOf[typings.chartJs.chartJsStrings.line]
   
-  @scala.inline
-  def rect: typings.chartJs.chartJsStrings.rect = "rect".asInstanceOf[typings.chartJs.chartJsStrings.rect]
+  inline def rect: typings.chartJs.chartJsStrings.rect = "rect".asInstanceOf[typings.chartJs.chartJsStrings.rect]
   
-  @scala.inline
-  def rectRot: typings.chartJs.chartJsStrings.rectRot = "rectRot".asInstanceOf[typings.chartJs.chartJsStrings.rectRot]
+  inline def rectRot: typings.chartJs.chartJsStrings.rectRot = "rectRot".asInstanceOf[typings.chartJs.chartJsStrings.rectRot]
   
-  @scala.inline
-  def rectRounded: typings.chartJs.chartJsStrings.rectRounded = "rectRounded".asInstanceOf[typings.chartJs.chartJsStrings.rectRounded]
+  inline def rectRounded: typings.chartJs.chartJsStrings.rectRounded = "rectRounded".asInstanceOf[typings.chartJs.chartJsStrings.rectRounded]
   
-  @scala.inline
-  def star: typings.chartJs.chartJsStrings.star = "star".asInstanceOf[typings.chartJs.chartJsStrings.star]
+  inline def star: typings.chartJs.chartJsStrings.star = "star".asInstanceOf[typings.chartJs.chartJsStrings.star]
   
-  @scala.inline
-  def triangle: typings.chartJs.chartJsStrings.triangle = "triangle".asInstanceOf[typings.chartJs.chartJsStrings.triangle]
+  inline def triangle: typings.chartJs.chartJsStrings.triangle = "triangle".asInstanceOf[typings.chartJs.chartJsStrings.triangle]
 }

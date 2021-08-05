@@ -23,22 +23,17 @@ trait GetWebACLRequest extends StObject {
 }
 object GetWebACLRequest {
   
-  @scala.inline
-  def apply(Id: EntityId, Name: EntityName, Scope: Scope): GetWebACLRequest = {
+  inline def apply(Id: EntityId, Name: EntityName, Scope: Scope): GetWebACLRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWebACLRequest]
   }
   
-  @scala.inline
-  implicit class GetWebACLRequestMutableBuilder[Self <: GetWebACLRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetWebACLRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
   }
 }

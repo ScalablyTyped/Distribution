@@ -10,16 +10,13 @@ trait IInkRippleProvider extends StObject {
 }
 object IInkRippleProvider {
   
-  @scala.inline
-  def apply(disableInkRipple: () => Unit): IInkRippleProvider = {
+  inline def apply(disableInkRipple: () => Unit): IInkRippleProvider = {
     val __obj = js.Dynamic.literal(disableInkRipple = js.Any.fromFunction0(disableInkRipple))
     __obj.asInstanceOf[IInkRippleProvider]
   }
   
-  @scala.inline
-  implicit class IInkRippleProviderMutableBuilder[Self <: IInkRippleProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IInkRippleProvider](x: Self) {
     
-    @scala.inline
-    def setDisableInkRipple(value: () => Unit): Self = StObject.set(x, "disableInkRipple", js.Any.fromFunction0(value))
+    inline def setDisableInkRipple(value: () => Unit): Self = StObject.set(x, "disableInkRipple", js.Any.fromFunction0(value))
   }
 }

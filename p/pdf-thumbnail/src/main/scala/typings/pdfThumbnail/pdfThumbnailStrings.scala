@@ -11,20 +11,17 @@ object pdfThumbnailStrings {
   sealed trait compress
     extends StObject
        with Operations
-  @scala.inline
-  def compress: compress = "compress".asInstanceOf[compress]
+  inline def compress: compress = "compress".asInstanceOf[compress]
   
   @js.native
   sealed trait crop
     extends StObject
        with Operations
-  @scala.inline
-  def crop: crop = "crop".asInstanceOf[crop]
+  inline def crop: crop = "crop".asInstanceOf[crop]
   
   @js.native
   sealed trait resize
     extends StObject
        with Operations
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
+  inline def resize: resize = "resize".asInstanceOf[resize]
 }

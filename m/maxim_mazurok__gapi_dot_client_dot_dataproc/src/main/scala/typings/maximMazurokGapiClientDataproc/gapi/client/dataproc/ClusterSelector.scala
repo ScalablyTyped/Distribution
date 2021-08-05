@@ -22,29 +22,23 @@ trait ClusterSelector extends StObject {
 }
 object ClusterSelector {
   
-  @scala.inline
-  def apply(): ClusterSelector = {
+  inline def apply(): ClusterSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterSelector]
   }
   
-  @scala.inline
-  implicit class ClusterSelectorMutableBuilder[Self <: ClusterSelector] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterSelector](x: Self) {
     
-    @scala.inline
-    def setClusterLabels(
+    inline def setClusterLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterSelector & TopLevel[js.Any]
     ): Self = StObject.set(x, "clusterLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterLabelsUndefined: Self = StObject.set(x, "clusterLabels", js.undefined)
+    inline def setClusterLabelsUndefined: Self = StObject.set(x, "clusterLabels", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

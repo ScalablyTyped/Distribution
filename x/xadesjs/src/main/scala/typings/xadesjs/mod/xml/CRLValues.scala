@@ -13,6 +13,5 @@ class CRLValues ()
   extends typings.xadesjs.xmlMod.CRLValues
 object CRLValues {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.CRLValues] = ^.asInstanceOf[js.Dynamic].selectDynamic("CRLValues").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CRLValues]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.CRLValues] = ^.asInstanceOf[js.Dynamic].selectDynamic("CRLValues").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CRLValues]]
 }

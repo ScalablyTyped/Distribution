@@ -32,8 +32,7 @@ trait ContactEquation
 }
 object ContactEquation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a: Double,
     addToWlamda: Double => Double,
     b: Double,
@@ -70,40 +69,28 @@ object ContactEquation {
     __obj.asInstanceOf[ContactEquation]
   }
   
-  @scala.inline
-  implicit class ContactEquationMutableBuilder[Self <: ContactEquation] (val x: Self) extends AnyVal {
+  extension [Self <: ContactEquation](x: Self) {
     
-    @scala.inline
-    def setBiInvInertiaTimesRixn(value: Vec3): Self = StObject.set(x, "biInvInertiaTimesRixn", value.asInstanceOf[js.Any])
+    inline def setBiInvInertiaTimesRixn(value: Vec3): Self = StObject.set(x, "biInvInertiaTimesRixn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBjInvInertiaTimesRjxn(value: Vec3): Self = StObject.set(x, "bjInvInertiaTimesRjxn", value.asInstanceOf[js.Any])
+    inline def setBjInvInertiaTimesRjxn(value: Vec3): Self = StObject.set(x, "bjInvInertiaTimesRjxn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvIi(value: Mat3): Self = StObject.set(x, "invIi", value.asInstanceOf[js.Any])
+    inline def setInvIi(value: Mat3): Self = StObject.set(x, "invIi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvIj(value: Mat3): Self = StObject.set(x, "invIj", value.asInstanceOf[js.Any])
+    inline def setInvIj(value: Mat3): Self = StObject.set(x, "invIj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNi(value: Vec3): Self = StObject.set(x, "ni", value.asInstanceOf[js.Any])
+    inline def setNi(value: Vec3): Self = StObject.set(x, "ni", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPenetrationVec(value: Vec3): Self = StObject.set(x, "penetrationVec", value.asInstanceOf[js.Any])
+    inline def setPenetrationVec(value: Vec3): Self = StObject.set(x, "penetrationVec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
+    inline def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRi(value: Vec3): Self = StObject.set(x, "ri", value.asInstanceOf[js.Any])
+    inline def setRi(value: Vec3): Self = StObject.set(x, "ri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRixn(value: Vec3): Self = StObject.set(x, "rixn", value.asInstanceOf[js.Any])
+    inline def setRixn(value: Vec3): Self = StObject.set(x, "rixn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRj(value: Vec3): Self = StObject.set(x, "rj", value.asInstanceOf[js.Any])
+    inline def setRj(value: Vec3): Self = StObject.set(x, "rj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRjxn(value: Vec3): Self = StObject.set(x, "rjxn", value.asInstanceOf[js.Any])
+    inline def setRjxn(value: Vec3): Self = StObject.set(x, "rjxn", value.asInstanceOf[js.Any])
   }
 }

@@ -17,8 +17,7 @@ trait TypeofspaceMembership extends StObject {
 }
 object TypeofspaceMembership {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapSpaceMembership: (AxiosInstance, SpaceMembershipProps) => SpaceMembership,
     wrapSpaceMembershipCollection: (AxiosInstance, CollectionProp[SpaceMembershipProps]) => Collection[SpaceMembership, SpaceMembershipProps]
   ): TypeofspaceMembership = {
@@ -26,14 +25,11 @@ object TypeofspaceMembership {
     __obj.asInstanceOf[TypeofspaceMembership]
   }
   
-  @scala.inline
-  implicit class TypeofspaceMembershipMutableBuilder[Self <: TypeofspaceMembership] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofspaceMembership](x: Self) {
     
-    @scala.inline
-    def setWrapSpaceMembership(value: (AxiosInstance, SpaceMembershipProps) => SpaceMembership): Self = StObject.set(x, "wrapSpaceMembership", js.Any.fromFunction2(value))
+    inline def setWrapSpaceMembership(value: (AxiosInstance, SpaceMembershipProps) => SpaceMembership): Self = StObject.set(x, "wrapSpaceMembership", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapSpaceMembershipCollection(
+    inline def setWrapSpaceMembershipCollection(
       value: (AxiosInstance, CollectionProp[SpaceMembershipProps]) => Collection[SpaceMembership, SpaceMembershipProps]
     ): Self = StObject.set(x, "wrapSpaceMembershipCollection", js.Any.fromFunction2(value))
   }

@@ -30,31 +30,23 @@ trait SchemaProjectCreationStatus extends StObject {
 }
 object SchemaProjectCreationStatus {
   
-  @scala.inline
-  def apply(): SchemaProjectCreationStatus = {
+  inline def apply(): SchemaProjectCreationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProjectCreationStatus]
   }
   
-  @scala.inline
-  implicit class SchemaProjectCreationStatusMutableBuilder[Self <: SchemaProjectCreationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProjectCreationStatus](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setGettable(value: Boolean): Self = StObject.set(x, "gettable", value.asInstanceOf[js.Any])
+    inline def setGettable(value: Boolean): Self = StObject.set(x, "gettable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGettableUndefined: Self = StObject.set(x, "gettable", js.undefined)
+    inline def setGettableUndefined: Self = StObject.set(x, "gettable", js.undefined)
     
-    @scala.inline
-    def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+    inline def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+    inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
   }
 }

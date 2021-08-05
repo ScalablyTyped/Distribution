@@ -10,19 +10,15 @@ trait SchemaReviewsReplyResponse extends StObject {
 }
 object SchemaReviewsReplyResponse {
   
-  @scala.inline
-  def apply(): SchemaReviewsReplyResponse = {
+  inline def apply(): SchemaReviewsReplyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReviewsReplyResponse]
   }
   
-  @scala.inline
-  implicit class SchemaReviewsReplyResponseMutableBuilder[Self <: SchemaReviewsReplyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReviewsReplyResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: SchemaReviewReplyResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: SchemaReviewReplyResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

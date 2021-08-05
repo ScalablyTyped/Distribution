@@ -28,34 +28,25 @@ trait CreateBackupVaultInput extends StObject {
 }
 object CreateBackupVaultInput {
   
-  @scala.inline
-  def apply(BackupVaultName: BackupVaultName): CreateBackupVaultInput = {
+  inline def apply(BackupVaultName: BackupVaultName): CreateBackupVaultInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBackupVaultInput]
   }
   
-  @scala.inline
-  implicit class CreateBackupVaultInputMutableBuilder[Self <: CreateBackupVaultInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBackupVaultInput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
+    inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupVaultTags(value: Tags): Self = StObject.set(x, "BackupVaultTags", value.asInstanceOf[js.Any])
+    inline def setBackupVaultTags(value: Tags): Self = StObject.set(x, "BackupVaultTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupVaultTagsUndefined: Self = StObject.set(x, "BackupVaultTags", js.undefined)
+    inline def setBackupVaultTagsUndefined: Self = StObject.set(x, "BackupVaultTags", js.undefined)
     
-    @scala.inline
-    def setCreatorRequestId(value: String): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
+    inline def setCreatorRequestId(value: String): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
+    inline def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
     
-    @scala.inline
-    def setEncryptionKeyArn(value: ARN): Self = StObject.set(x, "EncryptionKeyArn", value.asInstanceOf[js.Any])
+    inline def setEncryptionKeyArn(value: ARN): Self = StObject.set(x, "EncryptionKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionKeyArnUndefined: Self = StObject.set(x, "EncryptionKeyArn", js.undefined)
+    inline def setEncryptionKeyArnUndefined: Self = StObject.set(x, "EncryptionKeyArn", js.undefined)
   }
 }

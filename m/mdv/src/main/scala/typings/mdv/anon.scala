@@ -29,29 +29,22 @@ object anon {
   }
   object Optionswarningstrue {
     
-    @scala.inline
-    def apply(warnings: js.UndefOr[Boolean] & `true`): Optionswarningstrue = {
+    inline def apply(warnings: js.UndefOr[Boolean] & `true`): Optionswarningstrue = {
       val __obj = js.Dynamic.literal(warnings = warnings.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionswarningstrue]
     }
     
-    @scala.inline
-    implicit class OptionswarningstrueMutableBuilder[Self <: Optionswarningstrue] (val x: Self) extends AnyVal {
+    extension [Self <: Optionswarningstrue](x: Self) {
       
-      @scala.inline
-      def setSave(value: Boolean): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+      inline def setSave(value: Boolean): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+      inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setWarnings(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     }
   }
 }

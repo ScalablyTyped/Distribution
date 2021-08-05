@@ -17,31 +17,23 @@ trait LayoutProps
 }
 object LayoutProps {
   
-  @scala.inline
-  def apply(): LayoutProps = {
+  inline def apply(): LayoutProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayoutProps]
   }
   
-  @scala.inline
-  implicit class LayoutPropsMutableBuilder[Self <: LayoutProps] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutProps](x: Self) {
     
-    @scala.inline
-    def setFixedDrawer(value: Boolean): Self = StObject.set(x, "fixedDrawer", value.asInstanceOf[js.Any])
+    inline def setFixedDrawer(value: Boolean): Self = StObject.set(x, "fixedDrawer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedDrawerUndefined: Self = StObject.set(x, "fixedDrawer", js.undefined)
+    inline def setFixedDrawerUndefined: Self = StObject.set(x, "fixedDrawer", js.undefined)
     
-    @scala.inline
-    def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
+    inline def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
+    inline def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
     
-    @scala.inline
-    def setFixedTabs(value: Boolean): Self = StObject.set(x, "fixedTabs", value.asInstanceOf[js.Any])
+    inline def setFixedTabs(value: Boolean): Self = StObject.set(x, "fixedTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedTabsUndefined: Self = StObject.set(x, "fixedTabs", js.undefined)
+    inline def setFixedTabsUndefined: Self = StObject.set(x, "fixedTabs", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait ConstraintSummary extends StObject {
 }
 object ConstraintSummary {
   
-  @scala.inline
-  def apply(): ConstraintSummary = {
+  inline def apply(): ConstraintSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConstraintSummary]
   }
   
-  @scala.inline
-  implicit class ConstraintSummaryMutableBuilder[Self <: ConstraintSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ConstraintSummary](x: Self) {
     
-    @scala.inline
-    def setDescription(value: ConstraintDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ConstraintDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setType(value: ConstraintType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ConstraintType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

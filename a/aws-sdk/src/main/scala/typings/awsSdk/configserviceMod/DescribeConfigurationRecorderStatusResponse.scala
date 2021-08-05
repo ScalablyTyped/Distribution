@@ -13,22 +13,17 @@ trait DescribeConfigurationRecorderStatusResponse extends StObject {
 }
 object DescribeConfigurationRecorderStatusResponse {
   
-  @scala.inline
-  def apply(): DescribeConfigurationRecorderStatusResponse = {
+  inline def apply(): DescribeConfigurationRecorderStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConfigurationRecorderStatusResponse]
   }
   
-  @scala.inline
-  implicit class DescribeConfigurationRecorderStatusResponseMutableBuilder[Self <: DescribeConfigurationRecorderStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigurationRecorderStatusResponse](x: Self) {
     
-    @scala.inline
-    def setConfigurationRecordersStatus(value: ConfigurationRecorderStatusList): Self = StObject.set(x, "ConfigurationRecordersStatus", value.asInstanceOf[js.Any])
+    inline def setConfigurationRecordersStatus(value: ConfigurationRecorderStatusList): Self = StObject.set(x, "ConfigurationRecordersStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationRecordersStatusUndefined: Self = StObject.set(x, "ConfigurationRecordersStatus", js.undefined)
+    inline def setConfigurationRecordersStatusUndefined: Self = StObject.set(x, "ConfigurationRecordersStatus", js.undefined)
     
-    @scala.inline
-    def setConfigurationRecordersStatusVarargs(value: ConfigurationRecorderStatus*): Self = StObject.set(x, "ConfigurationRecordersStatus", js.Array(value :_*))
+    inline def setConfigurationRecordersStatusVarargs(value: ConfigurationRecorderStatus*): Self = StObject.set(x, "ConfigurationRecordersStatus", js.Array(value :_*))
   }
 }

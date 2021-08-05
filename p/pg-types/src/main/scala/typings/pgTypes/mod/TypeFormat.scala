@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeFormat extends StObject
 object TypeFormat {
   
-  @scala.inline
-  def binary: typings.pgTypes.pgTypesStrings.binary = "binary".asInstanceOf[typings.pgTypes.pgTypesStrings.binary]
+  inline def binary: typings.pgTypes.pgTypesStrings.binary = "binary".asInstanceOf[typings.pgTypes.pgTypesStrings.binary]
   
-  @scala.inline
-  def text: text_ = "text".asInstanceOf[text_]
+  inline def text: text_ = "text".asInstanceOf[text_]
 }

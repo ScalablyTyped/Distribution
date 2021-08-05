@@ -28,34 +28,25 @@ trait StartChangeSetRequest extends StObject {
 }
 object StartChangeSetRequest {
   
-  @scala.inline
-  def apply(Catalog: Catalog, ChangeSet: RequestedChangeList): StartChangeSetRequest = {
+  inline def apply(Catalog: Catalog, ChangeSet: RequestedChangeList): StartChangeSetRequest = {
     val __obj = js.Dynamic.literal(Catalog = Catalog.asInstanceOf[js.Any], ChangeSet = ChangeSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartChangeSetRequest]
   }
   
-  @scala.inline
-  implicit class StartChangeSetRequestMutableBuilder[Self <: StartChangeSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartChangeSetRequest](x: Self) {
     
-    @scala.inline
-    def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSet(value: RequestedChangeList): Self = StObject.set(x, "ChangeSet", value.asInstanceOf[js.Any])
+    inline def setChangeSet(value: RequestedChangeList): Self = StObject.set(x, "ChangeSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetName(value: ChangeSetName): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
+    inline def setChangeSetName(value: ChangeSetName): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetNameUndefined: Self = StObject.set(x, "ChangeSetName", js.undefined)
+    inline def setChangeSetNameUndefined: Self = StObject.set(x, "ChangeSetName", js.undefined)
     
-    @scala.inline
-    def setChangeSetVarargs(value: Change*): Self = StObject.set(x, "ChangeSet", js.Array(value :_*))
+    inline def setChangeSetVarargs(value: Change*): Self = StObject.set(x, "ChangeSet", js.Array(value :_*))
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
   }
 }

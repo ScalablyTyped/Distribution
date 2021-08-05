@@ -15,19 +15,15 @@ trait CheckSessionOptions
 }
 object CheckSessionOptions {
   
-  @scala.inline
-  def apply(): CheckSessionOptions = {
+  inline def apply(): CheckSessionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckSessionOptions]
   }
   
-  @scala.inline
-  implicit class CheckSessionOptionsMutableBuilder[Self <: CheckSessionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CheckSessionOptions](x: Self) {
     
-    @scala.inline
-    def setUsePostMessage(value: Boolean): Self = StObject.set(x, "usePostMessage", value.asInstanceOf[js.Any])
+    inline def setUsePostMessage(value: Boolean): Self = StObject.set(x, "usePostMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePostMessageUndefined: Self = StObject.set(x, "usePostMessage", js.undefined)
+    inline def setUsePostMessageUndefined: Self = StObject.set(x, "usePostMessage", js.undefined)
   }
 }

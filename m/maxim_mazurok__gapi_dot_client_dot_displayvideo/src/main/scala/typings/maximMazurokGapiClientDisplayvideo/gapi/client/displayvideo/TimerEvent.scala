@@ -14,25 +14,19 @@ trait TimerEvent extends StObject {
 }
 object TimerEvent {
   
-  @scala.inline
-  def apply(): TimerEvent = {
+  inline def apply(): TimerEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimerEvent]
   }
   
-  @scala.inline
-  implicit class TimerEventMutableBuilder[Self <: TimerEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TimerEvent](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReportingName(value: String): Self = StObject.set(x, "reportingName", value.asInstanceOf[js.Any])
+    inline def setReportingName(value: String): Self = StObject.set(x, "reportingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportingNameUndefined: Self = StObject.set(x, "reportingName", js.undefined)
+    inline def setReportingNameUndefined: Self = StObject.set(x, "reportingName", js.undefined)
   }
 }

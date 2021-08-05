@@ -26,29 +26,22 @@ trait IFunctionIdentifier extends StObject {
 }
 object IFunctionIdentifier {
   
-  @scala.inline
-  def apply(`final`: String): IFunctionIdentifier = {
+  inline def apply(`final`: String): IFunctionIdentifier = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFunctionIdentifier]
   }
   
-  @scala.inline
-  implicit class IFunctionIdentifierMutableBuilder[Self <: IFunctionIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: IFunctionIdentifier](x: Self) {
     
-    @scala.inline
-    def setFinal(value: String): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
+    inline def setFinal(value: String): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntermediates(value: String): Self = StObject.set(x, "intermediates", value.asInstanceOf[js.Any])
+    inline def setIntermediates(value: String): Self = StObject.set(x, "intermediates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntermediatesUndefined: Self = StObject.set(x, "intermediates", js.undefined)
+    inline def setIntermediatesUndefined: Self = StObject.set(x, "intermediates", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

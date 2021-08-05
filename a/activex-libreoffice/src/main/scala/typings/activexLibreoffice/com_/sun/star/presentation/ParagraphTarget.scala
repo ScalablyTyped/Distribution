@@ -17,19 +17,15 @@ trait ParagraphTarget extends StObject {
 }
 object ParagraphTarget {
   
-  @scala.inline
-  def apply(Paragraph: Double, Shape: XShape): ParagraphTarget = {
+  inline def apply(Paragraph: Double, Shape: XShape): ParagraphTarget = {
     val __obj = js.Dynamic.literal(Paragraph = Paragraph.asInstanceOf[js.Any], Shape = Shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphTarget]
   }
   
-  @scala.inline
-  implicit class ParagraphTargetMutableBuilder[Self <: ParagraphTarget] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphTarget](x: Self) {
     
-    @scala.inline
-    def setParagraph(value: Double): Self = StObject.set(x, "Paragraph", value.asInstanceOf[js.Any])
+    inline def setParagraph(value: Double): Self = StObject.set(x, "Paragraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(value: XShape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: XShape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
   }
 }

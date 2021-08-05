@@ -20,8 +20,7 @@ trait MonitorInfoChangedEvent
 }
 object MonitorInfoChangedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceScaleFactor: Double,
     dpi: Point,
     nonPrimaryMonitors: js.Array[MonitorDetails],
@@ -35,13 +34,10 @@ object MonitorInfoChangedEvent {
     __obj.asInstanceOf[MonitorInfoChangedEvent]
   }
   
-  @scala.inline
-  implicit class MonitorInfoChangedEventMutableBuilder[Self <: MonitorInfoChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MonitorInfoChangedEvent](x: Self) {
     
-    @scala.inline
-    def setTopic(value: system): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: system): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `monitor-info-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `monitor-info-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

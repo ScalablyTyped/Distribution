@@ -13,19 +13,15 @@ trait SchemaTargetTcpProxiesSetBackendServiceRequest extends StObject {
 }
 object SchemaTargetTcpProxiesSetBackendServiceRequest {
   
-  @scala.inline
-  def apply(): SchemaTargetTcpProxiesSetBackendServiceRequest = {
+  inline def apply(): SchemaTargetTcpProxiesSetBackendServiceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTargetTcpProxiesSetBackendServiceRequest]
   }
   
-  @scala.inline
-  implicit class SchemaTargetTcpProxiesSetBackendServiceRequestMutableBuilder[Self <: SchemaTargetTcpProxiesSetBackendServiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTargetTcpProxiesSetBackendServiceRequest](x: Self) {
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

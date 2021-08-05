@@ -11,10 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def minify(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("minify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def minify(value: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("minify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def minify(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("minify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def minify(value: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("minify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Options extends StObject {
     
@@ -252,276 +250,188 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
-      @scala.inline
-      def setCollapseBooleanAttributes(value: Boolean): Self = StObject.set(x, "collapseBooleanAttributes", value.asInstanceOf[js.Any])
+      inline def setCollapseBooleanAttributes(value: Boolean): Self = StObject.set(x, "collapseBooleanAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseBooleanAttributesUndefined: Self = StObject.set(x, "collapseBooleanAttributes", js.undefined)
+      inline def setCollapseBooleanAttributesUndefined: Self = StObject.set(x, "collapseBooleanAttributes", js.undefined)
       
-      @scala.inline
-      def setCollapseInlineTagWhitespace(value: Boolean): Self = StObject.set(x, "collapseInlineTagWhitespace", value.asInstanceOf[js.Any])
+      inline def setCollapseInlineTagWhitespace(value: Boolean): Self = StObject.set(x, "collapseInlineTagWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseInlineTagWhitespaceUndefined: Self = StObject.set(x, "collapseInlineTagWhitespace", js.undefined)
+      inline def setCollapseInlineTagWhitespaceUndefined: Self = StObject.set(x, "collapseInlineTagWhitespace", js.undefined)
       
-      @scala.inline
-      def setCollapseWhitespace(value: Boolean): Self = StObject.set(x, "collapseWhitespace", value.asInstanceOf[js.Any])
+      inline def setCollapseWhitespace(value: Boolean): Self = StObject.set(x, "collapseWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseWhitespaceUndefined: Self = StObject.set(x, "collapseWhitespace", js.undefined)
+      inline def setCollapseWhitespaceUndefined: Self = StObject.set(x, "collapseWhitespace", js.undefined)
       
-      @scala.inline
-      def setConservativeCollapse(value: Boolean): Self = StObject.set(x, "conservativeCollapse", value.asInstanceOf[js.Any])
+      inline def setConservativeCollapse(value: Boolean): Self = StObject.set(x, "conservativeCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConservativeCollapseUndefined: Self = StObject.set(x, "conservativeCollapse", js.undefined)
+      inline def setConservativeCollapseUndefined: Self = StObject.set(x, "conservativeCollapse", js.undefined)
       
-      @scala.inline
-      def setContinueOnParseError(value: Boolean): Self = StObject.set(x, "continueOnParseError", value.asInstanceOf[js.Any])
+      inline def setContinueOnParseError(value: Boolean): Self = StObject.set(x, "continueOnParseError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinueOnParseErrorUndefined: Self = StObject.set(x, "continueOnParseError", js.undefined)
+      inline def setContinueOnParseErrorUndefined: Self = StObject.set(x, "continueOnParseError", js.undefined)
       
-      @scala.inline
-      def setCustomAttrAssign(value: js.Array[RegExp]): Self = StObject.set(x, "customAttrAssign", value.asInstanceOf[js.Any])
+      inline def setCustomAttrAssign(value: js.Array[RegExp]): Self = StObject.set(x, "customAttrAssign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomAttrAssignUndefined: Self = StObject.set(x, "customAttrAssign", js.undefined)
+      inline def setCustomAttrAssignUndefined: Self = StObject.set(x, "customAttrAssign", js.undefined)
       
-      @scala.inline
-      def setCustomAttrAssignVarargs(value: RegExp*): Self = StObject.set(x, "customAttrAssign", js.Array(value :_*))
+      inline def setCustomAttrAssignVarargs(value: RegExp*): Self = StObject.set(x, "customAttrAssign", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomAttrCollapse(value: RegExp): Self = StObject.set(x, "customAttrCollapse", value.asInstanceOf[js.Any])
+      inline def setCustomAttrCollapse(value: RegExp): Self = StObject.set(x, "customAttrCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomAttrCollapseUndefined: Self = StObject.set(x, "customAttrCollapse", js.undefined)
+      inline def setCustomAttrCollapseUndefined: Self = StObject.set(x, "customAttrCollapse", js.undefined)
       
-      @scala.inline
-      def setCustomAttrSurround(value: js.Array[RegExp]): Self = StObject.set(x, "customAttrSurround", value.asInstanceOf[js.Any])
+      inline def setCustomAttrSurround(value: js.Array[RegExp]): Self = StObject.set(x, "customAttrSurround", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomAttrSurroundUndefined: Self = StObject.set(x, "customAttrSurround", js.undefined)
+      inline def setCustomAttrSurroundUndefined: Self = StObject.set(x, "customAttrSurround", js.undefined)
       
-      @scala.inline
-      def setCustomAttrSurroundVarargs(value: RegExp*): Self = StObject.set(x, "customAttrSurround", js.Array(value :_*))
+      inline def setCustomAttrSurroundVarargs(value: RegExp*): Self = StObject.set(x, "customAttrSurround", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomEventAttributes(value: js.Array[RegExp]): Self = StObject.set(x, "customEventAttributes", value.asInstanceOf[js.Any])
+      inline def setCustomEventAttributes(value: js.Array[RegExp]): Self = StObject.set(x, "customEventAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomEventAttributesUndefined: Self = StObject.set(x, "customEventAttributes", js.undefined)
+      inline def setCustomEventAttributesUndefined: Self = StObject.set(x, "customEventAttributes", js.undefined)
       
-      @scala.inline
-      def setCustomEventAttributesVarargs(value: RegExp*): Self = StObject.set(x, "customEventAttributes", js.Array(value :_*))
+      inline def setCustomEventAttributesVarargs(value: RegExp*): Self = StObject.set(x, "customEventAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setDecodeEntities(value: Boolean): Self = StObject.set(x, "decodeEntities", value.asInstanceOf[js.Any])
+      inline def setDecodeEntities(value: Boolean): Self = StObject.set(x, "decodeEntities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
+      inline def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
       
-      @scala.inline
-      def setHtml5(value: Boolean): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
+      inline def setHtml5(value: Boolean): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml5Undefined: Self = StObject.set(x, "html5", js.undefined)
+      inline def setHtml5Undefined: Self = StObject.set(x, "html5", js.undefined)
       
-      @scala.inline
-      def setIgnoreCustomComments(value: js.Array[RegExp]): Self = StObject.set(x, "ignoreCustomComments", value.asInstanceOf[js.Any])
+      inline def setIgnoreCustomComments(value: js.Array[RegExp]): Self = StObject.set(x, "ignoreCustomComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCustomCommentsUndefined: Self = StObject.set(x, "ignoreCustomComments", js.undefined)
+      inline def setIgnoreCustomCommentsUndefined: Self = StObject.set(x, "ignoreCustomComments", js.undefined)
       
-      @scala.inline
-      def setIgnoreCustomCommentsVarargs(value: RegExp*): Self = StObject.set(x, "ignoreCustomComments", js.Array(value :_*))
+      inline def setIgnoreCustomCommentsVarargs(value: RegExp*): Self = StObject.set(x, "ignoreCustomComments", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreCustomFragments(value: js.Array[RegExp]): Self = StObject.set(x, "ignoreCustomFragments", value.asInstanceOf[js.Any])
+      inline def setIgnoreCustomFragments(value: js.Array[RegExp]): Self = StObject.set(x, "ignoreCustomFragments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCustomFragmentsUndefined: Self = StObject.set(x, "ignoreCustomFragments", js.undefined)
+      inline def setIgnoreCustomFragmentsUndefined: Self = StObject.set(x, "ignoreCustomFragments", js.undefined)
       
-      @scala.inline
-      def setIgnoreCustomFragmentsVarargs(value: RegExp*): Self = StObject.set(x, "ignoreCustomFragments", js.Array(value :_*))
+      inline def setIgnoreCustomFragmentsVarargs(value: RegExp*): Self = StObject.set(x, "ignoreCustomFragments", js.Array(value :_*))
       
-      @scala.inline
-      def setIncludeAutoGeneratedTags(value: Boolean): Self = StObject.set(x, "includeAutoGeneratedTags", value.asInstanceOf[js.Any])
+      inline def setIncludeAutoGeneratedTags(value: Boolean): Self = StObject.set(x, "includeAutoGeneratedTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeAutoGeneratedTagsUndefined: Self = StObject.set(x, "includeAutoGeneratedTags", js.undefined)
+      inline def setIncludeAutoGeneratedTagsUndefined: Self = StObject.set(x, "includeAutoGeneratedTags", js.undefined)
       
-      @scala.inline
-      def setKeepClosingSlash(value: Boolean): Self = StObject.set(x, "keepClosingSlash", value.asInstanceOf[js.Any])
+      inline def setKeepClosingSlash(value: Boolean): Self = StObject.set(x, "keepClosingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepClosingSlashUndefined: Self = StObject.set(x, "keepClosingSlash", js.undefined)
+      inline def setKeepClosingSlashUndefined: Self = StObject.set(x, "keepClosingSlash", js.undefined)
       
-      @scala.inline
-      def setMaxLineLength(value: Double): Self = StObject.set(x, "maxLineLength", value.asInstanceOf[js.Any])
+      inline def setMaxLineLength(value: Double): Self = StObject.set(x, "maxLineLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLineLengthUndefined: Self = StObject.set(x, "maxLineLength", js.undefined)
+      inline def setMaxLineLengthUndefined: Self = StObject.set(x, "maxLineLength", js.undefined)
       
-      @scala.inline
-      def setMinifyCSS(
+      inline def setMinifyCSS(
         value: Boolean | js.Object | (js.Function2[/* text */ String, /* type */ js.UndefOr[String], String])
       ): Self = StObject.set(x, "minifyCSS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyCSSFunction2(value: (/* text */ String, /* type */ js.UndefOr[String]) => String): Self = StObject.set(x, "minifyCSS", js.Any.fromFunction2(value))
+      inline def setMinifyCSSFunction2(value: (/* text */ String, /* type */ js.UndefOr[String]) => String): Self = StObject.set(x, "minifyCSS", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMinifyCSSUndefined: Self = StObject.set(x, "minifyCSS", js.undefined)
+      inline def setMinifyCSSUndefined: Self = StObject.set(x, "minifyCSS", js.undefined)
       
-      @scala.inline
-      def setMinifyJS(
+      inline def setMinifyJS(
         value: Boolean | js.Object | (js.Function2[/* text */ String, /* inline */ js.UndefOr[Boolean], String])
       ): Self = StObject.set(x, "minifyJS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyJSFunction2(value: (/* text */ String, /* inline */ js.UndefOr[Boolean]) => String): Self = StObject.set(x, "minifyJS", js.Any.fromFunction2(value))
+      inline def setMinifyJSFunction2(value: (/* text */ String, /* inline */ js.UndefOr[Boolean]) => String): Self = StObject.set(x, "minifyJS", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMinifyJSUndefined: Self = StObject.set(x, "minifyJS", js.undefined)
+      inline def setMinifyJSUndefined: Self = StObject.set(x, "minifyJS", js.undefined)
       
-      @scala.inline
-      def setMinifyURLs(value: Boolean | String | js.Object | (js.Function1[/* text */ String, String])): Self = StObject.set(x, "minifyURLs", value.asInstanceOf[js.Any])
+      inline def setMinifyURLs(value: Boolean | String | js.Object | (js.Function1[/* text */ String, String])): Self = StObject.set(x, "minifyURLs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyURLsFunction1(value: /* text */ String => String): Self = StObject.set(x, "minifyURLs", js.Any.fromFunction1(value))
+      inline def setMinifyURLsFunction1(value: /* text */ String => String): Self = StObject.set(x, "minifyURLs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMinifyURLsUndefined: Self = StObject.set(x, "minifyURLs", js.undefined)
+      inline def setMinifyURLsUndefined: Self = StObject.set(x, "minifyURLs", js.undefined)
       
-      @scala.inline
-      def setPreserveLineBreaks(value: Boolean): Self = StObject.set(x, "preserveLineBreaks", value.asInstanceOf[js.Any])
+      inline def setPreserveLineBreaks(value: Boolean): Self = StObject.set(x, "preserveLineBreaks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveLineBreaksUndefined: Self = StObject.set(x, "preserveLineBreaks", js.undefined)
+      inline def setPreserveLineBreaksUndefined: Self = StObject.set(x, "preserveLineBreaks", js.undefined)
       
-      @scala.inline
-      def setPreventAttributesEscaping(value: Boolean): Self = StObject.set(x, "preventAttributesEscaping", value.asInstanceOf[js.Any])
+      inline def setPreventAttributesEscaping(value: Boolean): Self = StObject.set(x, "preventAttributesEscaping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventAttributesEscapingUndefined: Self = StObject.set(x, "preventAttributesEscaping", js.undefined)
+      inline def setPreventAttributesEscapingUndefined: Self = StObject.set(x, "preventAttributesEscaping", js.undefined)
       
-      @scala.inline
-      def setProcessConditionalComments(value: Boolean): Self = StObject.set(x, "processConditionalComments", value.asInstanceOf[js.Any])
+      inline def setProcessConditionalComments(value: Boolean): Self = StObject.set(x, "processConditionalComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessConditionalCommentsUndefined: Self = StObject.set(x, "processConditionalComments", js.undefined)
+      inline def setProcessConditionalCommentsUndefined: Self = StObject.set(x, "processConditionalComments", js.undefined)
       
-      @scala.inline
-      def setProcessScripts(value: js.Array[String]): Self = StObject.set(x, "processScripts", value.asInstanceOf[js.Any])
+      inline def setProcessScripts(value: js.Array[String]): Self = StObject.set(x, "processScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessScriptsUndefined: Self = StObject.set(x, "processScripts", js.undefined)
+      inline def setProcessScriptsUndefined: Self = StObject.set(x, "processScripts", js.undefined)
       
-      @scala.inline
-      def setProcessScriptsVarargs(value: String*): Self = StObject.set(x, "processScripts", js.Array(value :_*))
+      inline def setProcessScriptsVarargs(value: String*): Self = StObject.set(x, "processScripts", js.Array(value :_*))
       
-      @scala.inline
-      def setQuoteCharacter(value: String): Self = StObject.set(x, "quoteCharacter", value.asInstanceOf[js.Any])
+      inline def setQuoteCharacter(value: String): Self = StObject.set(x, "quoteCharacter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoteCharacterUndefined: Self = StObject.set(x, "quoteCharacter", js.undefined)
+      inline def setQuoteCharacterUndefined: Self = StObject.set(x, "quoteCharacter", js.undefined)
       
-      @scala.inline
-      def setRemoveAttributeQuotes(value: Boolean): Self = StObject.set(x, "removeAttributeQuotes", value.asInstanceOf[js.Any])
+      inline def setRemoveAttributeQuotes(value: Boolean): Self = StObject.set(x, "removeAttributeQuotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveAttributeQuotesUndefined: Self = StObject.set(x, "removeAttributeQuotes", js.undefined)
+      inline def setRemoveAttributeQuotesUndefined: Self = StObject.set(x, "removeAttributeQuotes", js.undefined)
       
-      @scala.inline
-      def setRemoveComments(value: Boolean): Self = StObject.set(x, "removeComments", value.asInstanceOf[js.Any])
+      inline def setRemoveComments(value: Boolean): Self = StObject.set(x, "removeComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveCommentsUndefined: Self = StObject.set(x, "removeComments", js.undefined)
+      inline def setRemoveCommentsUndefined: Self = StObject.set(x, "removeComments", js.undefined)
       
-      @scala.inline
-      def setRemoveEmptyAttributes(value: Boolean | (js.Function2[/* attrName */ String, /* tag */ String, Boolean])): Self = StObject.set(x, "removeEmptyAttributes", value.asInstanceOf[js.Any])
+      inline def setRemoveEmptyAttributes(value: Boolean | (js.Function2[/* attrName */ String, /* tag */ String, Boolean])): Self = StObject.set(x, "removeEmptyAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveEmptyAttributesFunction2(value: (/* attrName */ String, /* tag */ String) => Boolean): Self = StObject.set(x, "removeEmptyAttributes", js.Any.fromFunction2(value))
+      inline def setRemoveEmptyAttributesFunction2(value: (/* attrName */ String, /* tag */ String) => Boolean): Self = StObject.set(x, "removeEmptyAttributes", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveEmptyAttributesUndefined: Self = StObject.set(x, "removeEmptyAttributes", js.undefined)
+      inline def setRemoveEmptyAttributesUndefined: Self = StObject.set(x, "removeEmptyAttributes", js.undefined)
       
-      @scala.inline
-      def setRemoveEmptyElements(value: Boolean): Self = StObject.set(x, "removeEmptyElements", value.asInstanceOf[js.Any])
+      inline def setRemoveEmptyElements(value: Boolean): Self = StObject.set(x, "removeEmptyElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveEmptyElementsUndefined: Self = StObject.set(x, "removeEmptyElements", js.undefined)
+      inline def setRemoveEmptyElementsUndefined: Self = StObject.set(x, "removeEmptyElements", js.undefined)
       
-      @scala.inline
-      def setRemoveOptionalTags(value: Boolean): Self = StObject.set(x, "removeOptionalTags", value.asInstanceOf[js.Any])
+      inline def setRemoveOptionalTags(value: Boolean): Self = StObject.set(x, "removeOptionalTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveOptionalTagsUndefined: Self = StObject.set(x, "removeOptionalTags", js.undefined)
+      inline def setRemoveOptionalTagsUndefined: Self = StObject.set(x, "removeOptionalTags", js.undefined)
       
-      @scala.inline
-      def setRemoveRedundantAttributes(value: Boolean): Self = StObject.set(x, "removeRedundantAttributes", value.asInstanceOf[js.Any])
+      inline def setRemoveRedundantAttributes(value: Boolean): Self = StObject.set(x, "removeRedundantAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveRedundantAttributesUndefined: Self = StObject.set(x, "removeRedundantAttributes", js.undefined)
+      inline def setRemoveRedundantAttributesUndefined: Self = StObject.set(x, "removeRedundantAttributes", js.undefined)
       
-      @scala.inline
-      def setRemoveScriptTypeAttributes(value: Boolean): Self = StObject.set(x, "removeScriptTypeAttributes", value.asInstanceOf[js.Any])
+      inline def setRemoveScriptTypeAttributes(value: Boolean): Self = StObject.set(x, "removeScriptTypeAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveScriptTypeAttributesUndefined: Self = StObject.set(x, "removeScriptTypeAttributes", js.undefined)
+      inline def setRemoveScriptTypeAttributesUndefined: Self = StObject.set(x, "removeScriptTypeAttributes", js.undefined)
       
-      @scala.inline
-      def setRemoveStyleLinkTypeAttributes(value: Boolean): Self = StObject.set(x, "removeStyleLinkTypeAttributes", value.asInstanceOf[js.Any])
+      inline def setRemoveStyleLinkTypeAttributes(value: Boolean): Self = StObject.set(x, "removeStyleLinkTypeAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveStyleLinkTypeAttributesUndefined: Self = StObject.set(x, "removeStyleLinkTypeAttributes", js.undefined)
+      inline def setRemoveStyleLinkTypeAttributesUndefined: Self = StObject.set(x, "removeStyleLinkTypeAttributes", js.undefined)
       
-      @scala.inline
-      def setRemoveTagWhitespace(value: Boolean): Self = StObject.set(x, "removeTagWhitespace", value.asInstanceOf[js.Any])
+      inline def setRemoveTagWhitespace(value: Boolean): Self = StObject.set(x, "removeTagWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveTagWhitespaceUndefined: Self = StObject.set(x, "removeTagWhitespace", js.undefined)
+      inline def setRemoveTagWhitespaceUndefined: Self = StObject.set(x, "removeTagWhitespace", js.undefined)
       
-      @scala.inline
-      def setSortAttributes(value: Boolean): Self = StObject.set(x, "sortAttributes", value.asInstanceOf[js.Any])
+      inline def setSortAttributes(value: Boolean): Self = StObject.set(x, "sortAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortAttributesUndefined: Self = StObject.set(x, "sortAttributes", js.undefined)
+      inline def setSortAttributesUndefined: Self = StObject.set(x, "sortAttributes", js.undefined)
       
-      @scala.inline
-      def setSortClassName(value: Boolean): Self = StObject.set(x, "sortClassName", value.asInstanceOf[js.Any])
+      inline def setSortClassName(value: Boolean): Self = StObject.set(x, "sortClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortClassNameUndefined: Self = StObject.set(x, "sortClassName", js.undefined)
+      inline def setSortClassNameUndefined: Self = StObject.set(x, "sortClassName", js.undefined)
       
-      @scala.inline
-      def setTrimCustomFragments(value: Boolean): Self = StObject.set(x, "trimCustomFragments", value.asInstanceOf[js.Any])
+      inline def setTrimCustomFragments(value: Boolean): Self = StObject.set(x, "trimCustomFragments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimCustomFragmentsUndefined: Self = StObject.set(x, "trimCustomFragments", js.undefined)
+      inline def setTrimCustomFragmentsUndefined: Self = StObject.set(x, "trimCustomFragments", js.undefined)
       
-      @scala.inline
-      def setUseShortDoctype(value: Boolean): Self = StObject.set(x, "useShortDoctype", value.asInstanceOf[js.Any])
+      inline def setUseShortDoctype(value: Boolean): Self = StObject.set(x, "useShortDoctype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseShortDoctypeUndefined: Self = StObject.set(x, "useShortDoctype", js.undefined)
+      inline def setUseShortDoctypeUndefined: Self = StObject.set(x, "useShortDoctype", js.undefined)
     }
   }
 }

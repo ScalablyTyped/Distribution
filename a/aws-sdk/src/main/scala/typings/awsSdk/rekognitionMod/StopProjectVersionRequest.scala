@@ -13,16 +13,13 @@ trait StopProjectVersionRequest extends StObject {
 }
 object StopProjectVersionRequest {
   
-  @scala.inline
-  def apply(ProjectVersionArn: ProjectVersionArn): StopProjectVersionRequest = {
+  inline def apply(ProjectVersionArn: ProjectVersionArn): StopProjectVersionRequest = {
     val __obj = js.Dynamic.literal(ProjectVersionArn = ProjectVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopProjectVersionRequest]
   }
   
-  @scala.inline
-  implicit class StopProjectVersionRequestMutableBuilder[Self <: StopProjectVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopProjectVersionRequest](x: Self) {
     
-    @scala.inline
-    def setProjectVersionArn(value: ProjectVersionArn): Self = StObject.set(x, "ProjectVersionArn", value.asInstanceOf[js.Any])
+    inline def setProjectVersionArn(value: ProjectVersionArn): Self = StObject.set(x, "ProjectVersionArn", value.asInstanceOf[js.Any])
   }
 }

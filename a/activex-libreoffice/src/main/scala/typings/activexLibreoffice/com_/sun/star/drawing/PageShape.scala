@@ -36,8 +36,7 @@ trait PageShape
 }
 object PageShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GluePoints: XIndexContainer,
     Hyperlink: String,
     InteropGrabBag: SafeArray[PropertyValue],
@@ -89,10 +88,8 @@ object PageShape {
     __obj.asInstanceOf[PageShape]
   }
   
-  @scala.inline
-  implicit class PageShapeMutableBuilder[Self <: PageShape] (val x: Self) extends AnyVal {
+  extension [Self <: PageShape](x: Self) {
     
-    @scala.inline
-    def setPageNumber(value: Double): Self = StObject.set(x, "PageNumber", value.asInstanceOf[js.Any])
+    inline def setPageNumber(value: Double): Self = StObject.set(x, "PageNumber", value.asInstanceOf[js.Any])
   }
 }

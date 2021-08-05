@@ -27,28 +27,21 @@ trait SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest extends StObj
 }
 object SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequestMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest](x: Self) {
     
-    @scala.inline
-    def setEntityValues(value: js.Array[String]): Self = StObject.set(x, "entityValues", value.asInstanceOf[js.Any])
+    inline def setEntityValues(value: js.Array[String]): Self = StObject.set(x, "entityValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityValuesUndefined: Self = StObject.set(x, "entityValues", js.undefined)
+    inline def setEntityValuesUndefined: Self = StObject.set(x, "entityValues", js.undefined)
     
-    @scala.inline
-    def setEntityValuesVarargs(value: String*): Self = StObject.set(x, "entityValues", js.Array(value :_*))
+    inline def setEntityValuesVarargs(value: String*): Self = StObject.set(x, "entityValues", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

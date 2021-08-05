@@ -19,23 +19,18 @@ trait InlineAssemblyStatement
 }
 object InlineAssemblyStatement {
   
-  @scala.inline
-  def apply(body: AssemblyBlock, language: String): InlineAssemblyStatement = {
+  inline def apply(body: AssemblyBlock, language: String): InlineAssemblyStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("InlineAssemblyStatement")
     __obj.asInstanceOf[InlineAssemblyStatement]
   }
   
-  @scala.inline
-  implicit class InlineAssemblyStatementMutableBuilder[Self <: InlineAssemblyStatement] (val x: Self) extends AnyVal {
+  extension [Self <: InlineAssemblyStatement](x: Self) {
     
-    @scala.inline
-    def setBody(value: AssemblyBlock): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: AssemblyBlock): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.InlineAssemblyStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.InlineAssemblyStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

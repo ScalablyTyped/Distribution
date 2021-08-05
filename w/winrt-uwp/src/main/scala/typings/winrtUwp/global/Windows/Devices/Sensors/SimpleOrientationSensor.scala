@@ -21,6 +21,5 @@ object SimpleOrientationSensor {
     * @return The default simple orientation sensor or null if no simple orientation sensors are found.
     */
   /* static member */
-  @scala.inline
-  def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.SimpleOrientationSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.SimpleOrientationSensor]
+  inline def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.SimpleOrientationSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.SimpleOrientationSensor]
 }

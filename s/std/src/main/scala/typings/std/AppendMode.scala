@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppendMode extends StObject
 object AppendMode {
   
-  @scala.inline
-  def segments: typings.std.stdStrings.segments = "segments".asInstanceOf[typings.std.stdStrings.segments]
+  inline def segments: typings.std.stdStrings.segments = "segments".asInstanceOf[typings.std.stdStrings.segments]
   
-  @scala.inline
-  def sequence: typings.std.stdStrings.sequence = "sequence".asInstanceOf[typings.std.stdStrings.sequence]
+  inline def sequence: typings.std.stdStrings.sequence = "sequence".asInstanceOf[typings.std.stdStrings.sequence]
 }

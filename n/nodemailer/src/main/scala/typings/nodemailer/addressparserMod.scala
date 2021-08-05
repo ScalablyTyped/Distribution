@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object addressparserMod {
   
-  @scala.inline
-  def apply(address: String): js.Array[AddressOrGroup] = ^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any]).asInstanceOf[js.Array[AddressOrGroup]]
+  inline def apply(address: String): js.Array[AddressOrGroup] = ^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any]).asInstanceOf[js.Array[AddressOrGroup]]
   /**
     * Parses structured e-mail addresses from an address field
     *
@@ -23,10 +22,8 @@ object addressparserMod {
     *
     * @return An array of address objects
     */
-  @scala.inline
-  def apply(address: String, options: Flatten): js.Array[Address] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Address]]
-  @scala.inline
-  def apply(address: String, options: `0`): js.Array[AddressOrGroup] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[AddressOrGroup]]
+  inline def apply(address: String, options: Flatten): js.Array[Address] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Address]]
+  inline def apply(address: String, options: `0`): js.Array[AddressOrGroup] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[AddressOrGroup]]
   
   @JSImport("nodemailer/lib/addressparser", JSImport.Namespace)
   @js.native
@@ -42,20 +39,16 @@ object addressparserMod {
   }
   object Address {
     
-    @scala.inline
-    def apply(address: String, name: String): Address = {
+    inline def apply(address: String, name: String): Address = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Address]
     }
     
-    @scala.inline
-    implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+    extension [Self <: Address](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,14 +59,12 @@ object addressparserMod {
   trait AddressOrGroup extends StObject
   object AddressOrGroup {
     
-    @scala.inline
-    def Address(address: String, name: String): typings.nodemailer.addressparserMod.Address = {
+    inline def Address(address: String, name: String): typings.nodemailer.addressparserMod.Address = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodemailer.addressparserMod.Address]
     }
     
-    @scala.inline
-    def Group(group: js.Array[AddressOrGroup], name: String): typings.nodemailer.addressparserMod.Group = {
+    inline def Group(group: js.Array[AddressOrGroup], name: String): typings.nodemailer.addressparserMod.Group = {
       val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodemailer.addressparserMod.Group]
     }
@@ -89,23 +80,18 @@ object addressparserMod {
   }
   object Group {
     
-    @scala.inline
-    def apply(group: js.Array[AddressOrGroup], name: String): Group = {
+    inline def apply(group: js.Array[AddressOrGroup], name: String): Group = {
       val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Group]
     }
     
-    @scala.inline
-    implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+    extension [Self <: Group](x: Self) {
       
-      @scala.inline
-      def setGroup(value: js.Array[AddressOrGroup]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: js.Array[AddressOrGroup]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupVarargs(value: AddressOrGroup*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: AddressOrGroup*): Self = StObject.set(x, "group", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

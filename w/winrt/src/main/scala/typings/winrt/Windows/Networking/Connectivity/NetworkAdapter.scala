@@ -10,8 +10,7 @@ trait NetworkAdapter
      with INetworkAdapter
 object NetworkAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getConnectedProfileAsync: () => IAsyncOperation[ConnectionProfile],
     ianaInterfaceType: Double,
     inboundMaxBitsPerSecond: Double,

@@ -11,18 +11,13 @@ object byteArrayUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bin(string: String): ByteArray = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")(string.asInstanceOf[js.Any]).asInstanceOf[ByteArray]
+  inline def bin(string: String): ByteArray = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")(string.asInstanceOf[js.Any]).asInstanceOf[ByteArray]
   
-  @scala.inline
-  def getInteger24(number: Double): ByteArray = ^.asInstanceOf[js.Dynamic].applyDynamic("getInteger24")(number.asInstanceOf[js.Any]).asInstanceOf[ByteArray]
+  inline def getInteger24(number: Double): ByteArray = ^.asInstanceOf[js.Dynamic].applyDynamic("getInteger24")(number.asInstanceOf[js.Any]).asInstanceOf[ByteArray]
   
-  @scala.inline
-  def getInteger32(number: Double): ByteArray = ^.asInstanceOf[js.Dynamic].applyDynamic("getInteger32")(number.asInstanceOf[js.Any]).asInstanceOf[ByteArray]
+  inline def getInteger32(number: Double): ByteArray = ^.asInstanceOf[js.Dynamic].applyDynamic("getInteger32")(number.asInstanceOf[js.Any]).asInstanceOf[ByteArray]
   
-  @scala.inline
-  def getSynchsafeInteger32(number: Double): ByteArray = ^.asInstanceOf[js.Dynamic].applyDynamic("getSynchsafeInteger32")(number.asInstanceOf[js.Any]).asInstanceOf[ByteArray]
+  inline def getSynchsafeInteger32(number: Double): ByteArray = ^.asInstanceOf[js.Dynamic].applyDynamic("getSynchsafeInteger32")(number.asInstanceOf[js.Any]).asInstanceOf[ByteArray]
   
-  @scala.inline
-  def pad(array: js.Array[js.Any], size: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(array.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def pad(array: js.Array[js.Any], size: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(array.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

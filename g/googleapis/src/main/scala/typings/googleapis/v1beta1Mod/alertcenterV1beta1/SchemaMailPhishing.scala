@@ -34,40 +34,29 @@ trait SchemaMailPhishing extends StObject {
 }
 object SchemaMailPhishing {
   
-  @scala.inline
-  def apply(): SchemaMailPhishing = {
+  inline def apply(): SchemaMailPhishing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMailPhishing]
   }
   
-  @scala.inline
-  implicit class SchemaMailPhishingMutableBuilder[Self <: SchemaMailPhishing] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMailPhishing](x: Self) {
     
-    @scala.inline
-    def setDomainId(value: SchemaDomainId): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
+    inline def setDomainId(value: SchemaDomainId): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainIdUndefined: Self = StObject.set(x, "domainId", js.undefined)
+    inline def setDomainIdUndefined: Self = StObject.set(x, "domainId", js.undefined)
     
-    @scala.inline
-    def setIsInternal(value: Boolean): Self = StObject.set(x, "isInternal", value.asInstanceOf[js.Any])
+    inline def setIsInternal(value: Boolean): Self = StObject.set(x, "isInternal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInternalUndefined: Self = StObject.set(x, "isInternal", js.undefined)
+    inline def setIsInternalUndefined: Self = StObject.set(x, "isInternal", js.undefined)
     
-    @scala.inline
-    def setMaliciousEntity(value: SchemaMaliciousEntity): Self = StObject.set(x, "maliciousEntity", value.asInstanceOf[js.Any])
+    inline def setMaliciousEntity(value: SchemaMaliciousEntity): Self = StObject.set(x, "maliciousEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaliciousEntityUndefined: Self = StObject.set(x, "maliciousEntity", js.undefined)
+    inline def setMaliciousEntityUndefined: Self = StObject.set(x, "maliciousEntity", js.undefined)
     
-    @scala.inline
-    def setMessages(value: js.Array[SchemaGmailMessageInfo]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[SchemaGmailMessageInfo]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: SchemaGmailMessageInfo*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: SchemaGmailMessageInfo*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

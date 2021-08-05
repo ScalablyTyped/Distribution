@@ -16,25 +16,19 @@ trait CredentialsHandshakeOptions extends StObject {
 }
 object CredentialsHandshakeOptions {
   
-  @scala.inline
-  def apply(authType: String, deploymentId: String, login: String, password: String): CredentialsHandshakeOptions = {
+  inline def apply(authType: String, deploymentId: String, login: String, password: String): CredentialsHandshakeOptions = {
     val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any], deploymentId = deploymentId.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialsHandshakeOptions]
   }
   
-  @scala.inline
-  implicit class CredentialsHandshakeOptionsMutableBuilder[Self <: CredentialsHandshakeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialsHandshakeOptions](x: Self) {
     
-    @scala.inline
-    def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+    inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+    inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
   }
 }

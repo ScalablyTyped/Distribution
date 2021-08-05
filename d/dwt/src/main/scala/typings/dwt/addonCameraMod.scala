@@ -102,20 +102,16 @@ object addonCameraMod {
   }
   object DeviceInfo {
     
-    @scala.inline
-    def apply(deviceId: String, label: String): DeviceInfo = {
+    inline def apply(deviceId: String, label: String): DeviceInfo = {
       val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeviceInfo]
     }
     
-    @scala.inline
-    implicit class DeviceInfoMutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceInfo](x: Self) {
       
-      @scala.inline
-      def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,20 +123,16 @@ object addonCameraMod {
   }
   object Resolution {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Resolution = {
+    inline def apply(height: Double, width: Double): Resolution = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Resolution]
     }
     
-    @scala.inline
-    implicit class ResolutionMutableBuilder[Self <: Resolution] (val x: Self) extends AnyVal {
+    extension [Self <: Resolution](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

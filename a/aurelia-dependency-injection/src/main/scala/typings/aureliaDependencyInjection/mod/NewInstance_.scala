@@ -23,8 +23,7 @@ object NewInstance_ {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
+  inline def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
     key: PrimitiveOrDependencyCtorOrFunctor[TBase, TImpl, TArgs],
     dynamicDependencies: (/* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any)*
   ): NewInstance_[TBase, TImpl, TArgs] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(key.asInstanceOf[js.Any], dynamicDependencies.asInstanceOf[js.Any])).asInstanceOf[NewInstance_[TBase, TImpl, TArgs]]

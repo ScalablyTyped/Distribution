@@ -12,16 +12,13 @@ trait CoreTextLayoutRequestedEventArgs extends StObject {
 }
 object CoreTextLayoutRequestedEventArgs {
   
-  @scala.inline
-  def apply(request: CoreTextLayoutRequest): CoreTextLayoutRequestedEventArgs = {
+  inline def apply(request: CoreTextLayoutRequest): CoreTextLayoutRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreTextLayoutRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class CoreTextLayoutRequestedEventArgsMutableBuilder[Self <: CoreTextLayoutRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CoreTextLayoutRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequest(value: CoreTextLayoutRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: CoreTextLayoutRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

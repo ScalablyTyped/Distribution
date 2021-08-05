@@ -12,19 +12,15 @@ trait DataHook_ extends StObject {
 }
 object DataHook_ {
   
-  @scala.inline
-  def apply(dataHook: String, wrapper: js.Any): DataHook_ = {
+  inline def apply(dataHook: String, wrapper: js.Any): DataHook_ = {
     val __obj = js.Dynamic.literal(dataHook = dataHook.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataHook_]
   }
   
-  @scala.inline
-  implicit class DataHook_MutableBuilder[Self <: DataHook_] (val x: Self) extends AnyVal {
+  extension [Self <: DataHook_](x: Self) {
     
-    @scala.inline
-    def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+    inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapper(value: js.Any): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    inline def setWrapper(value: js.Any): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
   }
 }

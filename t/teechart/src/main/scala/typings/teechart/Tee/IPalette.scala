@@ -12,22 +12,17 @@ trait IPalette extends StObject {
 }
 object IPalette {
   
-  @scala.inline
-  def apply(colors: js.Array[String], get: Double => String): IPalette = {
+  inline def apply(colors: js.Array[String], get: Double => String): IPalette = {
     val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[IPalette]
   }
   
-  @scala.inline
-  implicit class IPaletteMutableBuilder[Self <: IPalette] (val x: Self) extends AnyVal {
+  extension [Self <: IPalette](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
-    @scala.inline
-    def setGet(value: Double => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: Double => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

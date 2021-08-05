@@ -10,19 +10,15 @@ trait ILightsApiResponse extends StObject {
 }
 object ILightsApiResponse {
   
-  @scala.inline
-  def apply(lights: js.Array[ILight]): ILightsApiResponse = {
+  inline def apply(lights: js.Array[ILight]): ILightsApiResponse = {
     val __obj = js.Dynamic.literal(lights = lights.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILightsApiResponse]
   }
   
-  @scala.inline
-  implicit class ILightsApiResponseMutableBuilder[Self <: ILightsApiResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ILightsApiResponse](x: Self) {
     
-    @scala.inline
-    def setLights(value: js.Array[ILight]): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
+    inline def setLights(value: js.Array[ILight]): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightsVarargs(value: ILight*): Self = StObject.set(x, "lights", js.Array(value :_*))
+    inline def setLightsVarargs(value: ILight*): Self = StObject.set(x, "lights", js.Array(value :_*))
   }
 }

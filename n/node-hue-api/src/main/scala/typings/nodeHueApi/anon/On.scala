@@ -10,16 +10,13 @@ trait On extends StObject {
 }
 object On {
   
-  @scala.inline
-  def apply(on: Boolean): On = {
+  inline def apply(on: Boolean): On = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
     __obj.asInstanceOf[On]
   }
   
-  @scala.inline
-  implicit class OnMutableBuilder[Self <: On] (val x: Self) extends AnyVal {
+  extension [Self <: On](x: Self) {
     
-    @scala.inline
-    def setOn(value: Boolean): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: Boolean): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
   }
 }

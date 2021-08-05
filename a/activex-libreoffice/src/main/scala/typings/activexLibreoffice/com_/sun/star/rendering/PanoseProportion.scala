@@ -31,34 +31,24 @@ object PanoseProportion {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ANYTHING: `0` = 0.asInstanceOf[`0`]
+    inline def ANYTHING: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def CONDENSED: `6` = 6.asInstanceOf[`6`]
+    inline def CONDENSED: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def EVEN_WIDTH: `4` = 4.asInstanceOf[`4`]
+    inline def EVEN_WIDTH: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def EXPANDED: `5` = 5.asInstanceOf[`5`]
+    inline def EXPANDED: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def MODERN: `3` = 3.asInstanceOf[`3`]
+    inline def MODERN: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def MONO_SPACED: `9` = 9.asInstanceOf[`9`]
+    inline def MONO_SPACED: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def NO_FIT: `1` = 1.asInstanceOf[`1`]
+    inline def NO_FIT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def OLD_SKOOL: `2` = 2.asInstanceOf[`2`]
+    inline def OLD_SKOOL: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def VERY_CONDENSED: `8` = 8.asInstanceOf[`8`]
+    inline def VERY_CONDENSED: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def VERY_EXPANDED: `7` = 7.asInstanceOf[`7`]
+    inline def VERY_EXPANDED: `7` = 7.asInstanceOf[`7`]
   }
 }

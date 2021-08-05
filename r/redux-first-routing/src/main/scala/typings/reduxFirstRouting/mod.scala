@@ -54,42 +54,30 @@ object mod {
   @js.native
   val REPLACE_ : ROUTERSlashREPLACE = js.native
   
-  @scala.inline
-  def createBrowserHistory[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")().asInstanceOf[History[S]]
-  @scala.inline
-  def createBrowserHistory[S](options: BrowserHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
+  inline def createBrowserHistory[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")().asInstanceOf[History[S]]
+  inline def createBrowserHistory[S](options: BrowserHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
   
-  @scala.inline
-  def go[T /* <: Double */](index: T): goAction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("go")(index.asInstanceOf[js.Any]).asInstanceOf[goAction[T]]
+  inline def go[T /* <: Double */](index: T): goAction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("go")(index.asInstanceOf[js.Any]).asInstanceOf[goAction[T]]
   
-  @scala.inline
-  def goBack(): goBackAction = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")().asInstanceOf[goBackAction]
+  inline def goBack(): goBackAction = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")().asInstanceOf[goBackAction]
   
-  @scala.inline
-  def goForward(): goForwardAction = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")().asInstanceOf[goForwardAction]
+  inline def goForward(): goForwardAction = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")().asInstanceOf[goForwardAction]
   
-  @scala.inline
-  def locationChange[P /* <: Pathname */, S /* <: Search */, H /* <: Hash */](_underscore: typings.reduxFirstRouting.anon.Pathname[P, S, H]): locationChangeAction[P, S, H] = ^.asInstanceOf[js.Dynamic].applyDynamic("locationChange")(_underscore.asInstanceOf[js.Any]).asInstanceOf[locationChangeAction[P, S, H]]
+  inline def locationChange[P /* <: Pathname */, S /* <: Search */, H /* <: Hash */](_underscore: typings.reduxFirstRouting.anon.Pathname[P, S, H]): locationChangeAction[P, S, H] = ^.asInstanceOf[js.Dynamic].applyDynamic("locationChange")(_underscore.asInstanceOf[js.Any]).asInstanceOf[locationChangeAction[P, S, H]]
   
-  @scala.inline
-  def push(href: String): pushAction[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(href.asInstanceOf[js.Any]).asInstanceOf[pushAction[String]]
-  @scala.inline
-  def push(href: LocationDescriptorObject[LocationState]): pushAction[LocationDescriptorObject[LocationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(href.asInstanceOf[js.Any]).asInstanceOf[pushAction[LocationDescriptorObject[LocationState]]]
+  inline def push(href: String): pushAction[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(href.asInstanceOf[js.Any]).asInstanceOf[pushAction[String]]
+  inline def push(href: LocationDescriptorObject[LocationState]): pushAction[LocationDescriptorObject[LocationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(href.asInstanceOf[js.Any]).asInstanceOf[pushAction[LocationDescriptorObject[LocationState]]]
   
-  @scala.inline
-  def replace(href: String): replaceAction[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(href.asInstanceOf[js.Any]).asInstanceOf[replaceAction[String]]
-  @scala.inline
-  def replace(href: LocationDescriptorObject[LocationState]): replaceAction[LocationDescriptorObject[LocationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(href.asInstanceOf[js.Any]).asInstanceOf[replaceAction[LocationDescriptorObject[LocationState]]]
+  inline def replace(href: String): replaceAction[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(href.asInstanceOf[js.Any]).asInstanceOf[replaceAction[String]]
+  inline def replace(href: LocationDescriptorObject[LocationState]): replaceAction[LocationDescriptorObject[LocationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(href.asInstanceOf[js.Any]).asInstanceOf[replaceAction[LocationDescriptorObject[LocationState]]]
   
-  @scala.inline
-  def routerMiddleware(history: History[LocationState]): Middleware[js.Any, State, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("routerMiddleware")(history.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Any, State, Dispatch[AnyAction]]]
+  inline def routerMiddleware(history: History[LocationState]): Middleware[js.Any, State, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("routerMiddleware")(history.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Any, State, Dispatch[AnyAction]]]
   
   @JSImport("redux-first-routing", "routerReducer")
   @js.native
   val routerReducer: Reducer[State, AnyAction] = js.native
   
-  @scala.inline
-  def startListener(history: History[LocationState], store: Store[js.Any, AnyAction]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startListener")(history.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def startListener(history: History[LocationState], store: Store[js.Any, AnyAction]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startListener")(history.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait State extends StObject {
     
@@ -103,26 +91,20 @@ object mod {
   }
   object State {
     
-    @scala.inline
-    def apply(hash: Hash, pathname: Pathname, queries: js.Any, search: Search): State = {
+    inline def apply(hash: Hash, pathname: Pathname, queries: js.Any, search: Search): State = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueries(value: js.Any): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+      inline def setQueries(value: js.Any): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,18 +116,15 @@ object mod {
   }
   object goAction {
     
-    @scala.inline
-    def apply[T /* <: Double */](payload: T): goAction[T] = {
+    inline def apply[T /* <: Double */](payload: T): goAction[T] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("ROUTER/GO")
       __obj.asInstanceOf[goAction[T]]
     }
     
-    @scala.inline
-    implicit class goActionMutableBuilder[Self <: goAction[?], T /* <: Double */] (val x: Self & goAction[T]) extends AnyVal {
+    extension [Self <: goAction[?], T /* <: Double */](x: Self & goAction[T]) {
       
-      @scala.inline
-      def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,18 +140,15 @@ object mod {
   }
   object locationChangeAction {
     
-    @scala.inline
-    def apply[P /* <: Pathname */, S /* <: Search */, H /* <: Hash */](payload: typings.reduxFirstRouting.anon.Hash[P, S, H]): locationChangeAction[P, S, H] = {
+    inline def apply[P /* <: Pathname */, S /* <: Search */, H /* <: Hash */](payload: typings.reduxFirstRouting.anon.Hash[P, S, H]): locationChangeAction[P, S, H] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("ROUTER/LOCATION_CHANGE")
       __obj.asInstanceOf[locationChangeAction[P, S, H]]
     }
     
-    @scala.inline
-    implicit class locationChangeActionMutableBuilder[Self <: locationChangeAction[?, ?, ?], P /* <: Pathname */, S /* <: Search */, H /* <: Hash */] (val x: Self & (locationChangeAction[P, S, H])) extends AnyVal {
+    extension [Self <: locationChangeAction[?, ?, ?], P /* <: Pathname */, S /* <: Search */, H /* <: Hash */](x: Self & (locationChangeAction[P, S, H])) {
       
-      @scala.inline
-      def setPayload(value: typings.reduxFirstRouting.anon.Hash[P, S, H]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: typings.reduxFirstRouting.anon.Hash[P, S, H]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,18 +160,15 @@ object mod {
   }
   object pushAction {
     
-    @scala.inline
-    def apply[T /* <: Path | LocationDescriptorObject[LocationState] */](payload: T): pushAction[T] = {
+    inline def apply[T /* <: Path | LocationDescriptorObject[LocationState] */](payload: T): pushAction[T] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("ROUTER/PUSH")
       __obj.asInstanceOf[pushAction[T]]
     }
     
-    @scala.inline
-    implicit class pushActionMutableBuilder[Self <: pushAction[?], T /* <: Path | LocationDescriptorObject[LocationState] */] (val x: Self & pushAction[T]) extends AnyVal {
+    extension [Self <: pushAction[?], T /* <: Path | LocationDescriptorObject[LocationState] */](x: Self & pushAction[T]) {
       
-      @scala.inline
-      def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -207,18 +180,15 @@ object mod {
   }
   object replaceAction {
     
-    @scala.inline
-    def apply[T /* <: Path | LocationDescriptorObject[LocationState] */](payload: T): replaceAction[T] = {
+    inline def apply[T /* <: Path | LocationDescriptorObject[LocationState] */](payload: T): replaceAction[T] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("ROUTER/REPLACE")
       __obj.asInstanceOf[replaceAction[T]]
     }
     
-    @scala.inline
-    implicit class replaceActionMutableBuilder[Self <: replaceAction[?], T /* <: Path | LocationDescriptorObject[LocationState] */] (val x: Self & replaceAction[T]) extends AnyVal {
+    extension [Self <: replaceAction[?], T /* <: Path | LocationDescriptorObject[LocationState] */](x: Self & replaceAction[T]) {
       
-      @scala.inline
-      def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
 }

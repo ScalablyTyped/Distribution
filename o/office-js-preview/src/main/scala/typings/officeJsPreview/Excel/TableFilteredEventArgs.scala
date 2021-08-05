@@ -43,23 +43,18 @@ trait TableFilteredEventArgs extends StObject {
 }
 object TableFilteredEventArgs {
   
-  @scala.inline
-  def apply(tableId: String, worksheetId: String): TableFilteredEventArgs = {
+  inline def apply(tableId: String, worksheetId: String): TableFilteredEventArgs = {
     val __obj = js.Dynamic.literal(tableId = tableId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TableFiltered")
     __obj.asInstanceOf[TableFilteredEventArgs]
   }
   
-  @scala.inline
-  implicit class TableFilteredEventArgsMutableBuilder[Self <: TableFilteredEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TableFilteredEventArgs](x: Self) {
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TableFiltered): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TableFiltered): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
+    inline def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DescribeRuntimeConfigurationInput extends StObject {
 }
 object DescribeRuntimeConfigurationInput {
   
-  @scala.inline
-  def apply(FleetId: FleetIdOrArn): DescribeRuntimeConfigurationInput = {
+  inline def apply(FleetId: FleetIdOrArn): DescribeRuntimeConfigurationInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRuntimeConfigurationInput]
   }
   
-  @scala.inline
-  implicit class DescribeRuntimeConfigurationInputMutableBuilder[Self <: DescribeRuntimeConfigurationInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRuntimeConfigurationInput](x: Self) {
     
-    @scala.inline
-    def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
   }
 }

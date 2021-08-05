@@ -12,25 +12,19 @@ trait PrivilegeName extends StObject {
 }
 object PrivilegeName {
   
-  @scala.inline
-  def apply(): PrivilegeName = {
+  inline def apply(): PrivilegeName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrivilegeName]
   }
   
-  @scala.inline
-  implicit class PrivilegeNameMutableBuilder[Self <: PrivilegeName] (val x: Self) extends AnyVal {
+  extension [Self <: PrivilegeName](x: Self) {
     
-    @scala.inline
-    def setPrivilegeName(value: String): Self = StObject.set(x, "privilegeName", value.asInstanceOf[js.Any])
+    inline def setPrivilegeName(value: String): Self = StObject.set(x, "privilegeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegeNameUndefined: Self = StObject.set(x, "privilegeName", js.undefined)
+    inline def setPrivilegeNameUndefined: Self = StObject.set(x, "privilegeName", js.undefined)
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
+    inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
   }
 }

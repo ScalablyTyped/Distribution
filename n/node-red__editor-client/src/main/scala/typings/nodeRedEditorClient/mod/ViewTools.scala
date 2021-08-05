@@ -22,22 +22,17 @@ trait ViewTools extends StObject {
 }
 object ViewTools {
   
-  @scala.inline
-  def apply(alignSelectionToGrid: () => Unit, init: () => Unit, moveSelection: (Double, Double) => Unit): ViewTools = {
+  inline def apply(alignSelectionToGrid: () => Unit, init: () => Unit, moveSelection: (Double, Double) => Unit): ViewTools = {
     val __obj = js.Dynamic.literal(alignSelectionToGrid = js.Any.fromFunction0(alignSelectionToGrid), init = js.Any.fromFunction0(init), moveSelection = js.Any.fromFunction2(moveSelection))
     __obj.asInstanceOf[ViewTools]
   }
   
-  @scala.inline
-  implicit class ViewToolsMutableBuilder[Self <: ViewTools] (val x: Self) extends AnyVal {
+  extension [Self <: ViewTools](x: Self) {
     
-    @scala.inline
-    def setAlignSelectionToGrid(value: () => Unit): Self = StObject.set(x, "alignSelectionToGrid", js.Any.fromFunction0(value))
+    inline def setAlignSelectionToGrid(value: () => Unit): Self = StObject.set(x, "alignSelectionToGrid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveSelection(value: (Double, Double) => Unit): Self = StObject.set(x, "moveSelection", js.Any.fromFunction2(value))
+    inline def setMoveSelection(value: (Double, Double) => Unit): Self = StObject.set(x, "moveSelection", js.Any.fromFunction2(value))
   }
 }

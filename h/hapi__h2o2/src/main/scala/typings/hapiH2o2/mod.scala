@@ -100,53 +100,38 @@ object mod extends Shortcut {
   }
   object ProxyHandlerOptions {
     
-    @scala.inline
-    def apply(): ProxyHandlerOptions = {
+    inline def apply(): ProxyHandlerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProxyHandlerOptions]
     }
     
-    @scala.inline
-    implicit class ProxyHandlerOptionsMutableBuilder[Self <: ProxyHandlerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyHandlerOptions](x: Self) {
       
-      @scala.inline
-      def setAcceptEncoding(value: Boolean): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
+      inline def setAcceptEncoding(value: Boolean): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptEncodingUndefined: Self = StObject.set(x, "acceptEncoding", js.undefined)
+      inline def setAcceptEncodingUndefined: Self = StObject.set(x, "acceptEncoding", js.undefined)
       
-      @scala.inline
-      def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setLocalStatePassThrough(value: Boolean): Self = StObject.set(x, "localStatePassThrough", value.asInstanceOf[js.Any])
+      inline def setLocalStatePassThrough(value: Boolean): Self = StObject.set(x, "localStatePassThrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalStatePassThroughUndefined: Self = StObject.set(x, "localStatePassThrough", js.undefined)
+      inline def setLocalStatePassThroughUndefined: Self = StObject.set(x, "localStatePassThrough", js.undefined)
       
-      @scala.inline
-      def setMapUri(value: js.ThisFunction1[ProxyHandlerOptions, /* request */ Request, js.Promise[ProxyTarget]]): Self = StObject.set(x, "mapUri", value.asInstanceOf[js.Any])
+      inline def setMapUri(value: js.ThisFunction1[ProxyHandlerOptions, /* request */ Request, js.Promise[ProxyTarget]]): Self = StObject.set(x, "mapUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUriUndefined: Self = StObject.set(x, "mapUri", js.undefined)
+      inline def setMapUriUndefined: Self = StObject.set(x, "mapUri", js.undefined)
       
-      @scala.inline
-      def setMaxSockets(value: `false` | Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
+      inline def setMaxSockets(value: `false` | Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
+      inline def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
       
-      @scala.inline
-      def setOnResponse(
+      inline def setOnResponse(
         value: js.ThisFunction6[
               /* this */ RouteOptions, 
               /* err */ Null | Boom[js.Any], 
@@ -159,62 +144,43 @@ object mod extends Shortcut {
             ]
       ): Self = StObject.set(x, "onResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnResponseUndefined: Self = StObject.set(x, "onResponse", js.undefined)
+      inline def setOnResponseUndefined: Self = StObject.set(x, "onResponse", js.undefined)
       
-      @scala.inline
-      def setPassThrough(value: Boolean): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
+      inline def setPassThrough(value: Boolean): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassThroughUndefined: Self = StObject.set(x, "passThrough", js.undefined)
+      inline def setPassThroughUndefined: Self = StObject.set(x, "passThrough", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: http | https): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: http | https): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setRedirects(value: Double | `false`): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
+      inline def setRedirects(value: Double | `false`): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
+      inline def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
       
-      @scala.inline
-      def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
+      inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+      inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTtl(value: upstream): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: upstream): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
       
-      @scala.inline
-      def setXforward(value: Boolean): Self = StObject.set(x, "xforward", value.asInstanceOf[js.Any])
+      inline def setXforward(value: Boolean): Self = StObject.set(x, "xforward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXforwardUndefined: Self = StObject.set(x, "xforward", js.undefined)
+      inline def setXforwardUndefined: Self = StObject.set(x, "xforward", js.undefined)
     }
   }
   
@@ -228,23 +194,18 @@ object mod extends Shortcut {
   }
   object ProxyTarget {
     
-    @scala.inline
-    def apply(uri: String): ProxyTarget = {
+    inline def apply(uri: String): ProxyTarget = {
       val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProxyTarget]
     }
     
-    @scala.inline
-    implicit class ProxyTargetMutableBuilder[Self <: ProxyTarget] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyTarget](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -265,20 +226,16 @@ object mod extends Shortcut {
     }
     object HandlerDecorations {
       
-      @scala.inline
-      def apply(): HandlerDecorations = {
+      inline def apply(): HandlerDecorations = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HandlerDecorations]
       }
       
-      @scala.inline
-      implicit class HandlerDecorationsMutableBuilder[Self <: HandlerDecorations] (val x: Self) extends AnyVal {
+      extension [Self <: HandlerDecorations](x: Self) {
         
-        @scala.inline
-        def setProxy(value: ProxyHandlerOptions): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+        inline def setProxy(value: ProxyHandlerOptions): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+        inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       }
     }
     
@@ -291,17 +248,14 @@ object mod extends Shortcut {
     }
     object ResponseToolkit {
       
-      @scala.inline
-      def apply(proxy: ProxyHandlerOptions => js.Promise[ResponseObject]): typings.hapiH2o2.mod.hapiHapiAugmentingMod.ResponseToolkit = {
+      inline def apply(proxy: ProxyHandlerOptions => js.Promise[ResponseObject]): typings.hapiH2o2.mod.hapiHapiAugmentingMod.ResponseToolkit = {
         val __obj = js.Dynamic.literal(proxy = js.Any.fromFunction1(proxy))
         __obj.asInstanceOf[typings.hapiH2o2.mod.hapiHapiAugmentingMod.ResponseToolkit]
       }
       
-      @scala.inline
-      implicit class ResponseToolkitMutableBuilder[Self <: typings.hapiH2o2.mod.hapiHapiAugmentingMod.ResponseToolkit] (val x: Self) extends AnyVal {
+      extension [Self <: typings.hapiH2o2.mod.hapiHapiAugmentingMod.ResponseToolkit](x: Self) {
         
-        @scala.inline
-        def setProxy(value: ProxyHandlerOptions => js.Promise[ResponseObject]): Self = StObject.set(x, "proxy", js.Any.fromFunction1(value))
+        inline def setProxy(value: ProxyHandlerOptions => js.Promise[ResponseObject]): Self = StObject.set(x, "proxy", js.Any.fromFunction1(value))
       }
     }
   }

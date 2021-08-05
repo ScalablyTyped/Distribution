@@ -14,22 +14,17 @@ trait BorderTopColor extends StObject {
 }
 object BorderTopColor {
   
-  @scala.inline
-  def apply(backgroundColor: String, borderTopColor: String, borderTopWidth: Double): BorderTopColor = {
+  inline def apply(backgroundColor: String, borderTopColor: String, borderTopWidth: Double): BorderTopColor = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderTopColor = borderTopColor.asInstanceOf[js.Any], borderTopWidth = borderTopWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderTopColor]
   }
   
-  @scala.inline
-  implicit class BorderTopColorMutableBuilder[Self <: BorderTopColor] (val x: Self) extends AnyVal {
+  extension [Self <: BorderTopColor](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopColor(value: String): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
+    inline def setBorderTopColor(value: String): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopWidth(value: Double): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
+    inline def setBorderTopWidth(value: Double): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
   }
 }

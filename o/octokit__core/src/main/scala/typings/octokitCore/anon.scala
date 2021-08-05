@@ -20,26 +20,20 @@ object anon {
   }
   object Debug {
     
-    @scala.inline
-    def apply(debug: String => js.Any, error: String => js.Any, info: String => js.Any, warn: String => js.Any): Debug = {
+    inline def apply(debug: String => js.Any, error: String => js.Any, info: String => js.Any, warn: String => js.Any): Debug = {
       val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), warn = js.Any.fromFunction1(warn))
       __obj.asInstanceOf[Debug]
     }
     
-    @scala.inline
-    implicit class DebugMutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
+    extension [Self <: Debug](x: Self) {
       
-      @scala.inline
-      def setDebug(value: String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: String => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: String => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfo(value: String => js.Any): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: String => js.Any): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarn(value: String => js.Any): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: String => js.Any): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   
@@ -80,20 +74,16 @@ object anon {
   }
   object Plugins {
     
-    @scala.inline
-    def apply(plugins: js.Array[js.Any]): Plugins = {
+    inline def apply(plugins: js.Array[js.Any]): Plugins = {
       val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any])
       __obj.asInstanceOf[Plugins]
     }
     
-    @scala.inline
-    implicit class PluginsMutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
+    extension [Self <: Plugins](x: Self) {
       
-      @scala.inline
-      def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     }
   }
 }

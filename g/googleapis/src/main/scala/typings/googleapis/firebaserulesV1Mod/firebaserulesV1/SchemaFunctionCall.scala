@@ -22,28 +22,21 @@ trait SchemaFunctionCall extends StObject {
 }
 object SchemaFunctionCall {
   
-  @scala.inline
-  def apply(): SchemaFunctionCall = {
+  inline def apply(): SchemaFunctionCall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFunctionCall]
   }
   
-  @scala.inline
-  implicit class SchemaFunctionCallMutableBuilder[Self <: SchemaFunctionCall] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFunctionCall](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+    inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
   }
 }

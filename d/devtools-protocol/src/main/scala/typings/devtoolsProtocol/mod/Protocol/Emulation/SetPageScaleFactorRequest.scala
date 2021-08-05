@@ -13,16 +13,13 @@ trait SetPageScaleFactorRequest extends StObject {
 }
 object SetPageScaleFactorRequest {
   
-  @scala.inline
-  def apply(pageScaleFactor: Double): SetPageScaleFactorRequest = {
+  inline def apply(pageScaleFactor: Double): SetPageScaleFactorRequest = {
     val __obj = js.Dynamic.literal(pageScaleFactor = pageScaleFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetPageScaleFactorRequest]
   }
   
-  @scala.inline
-  implicit class SetPageScaleFactorRequestMutableBuilder[Self <: SetPageScaleFactorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetPageScaleFactorRequest](x: Self) {
     
-    @scala.inline
-    def setPageScaleFactor(value: Double): Self = StObject.set(x, "pageScaleFactor", value.asInstanceOf[js.Any])
+    inline def setPageScaleFactor(value: Double): Self = StObject.set(x, "pageScaleFactor", value.asInstanceOf[js.Any])
   }
 }

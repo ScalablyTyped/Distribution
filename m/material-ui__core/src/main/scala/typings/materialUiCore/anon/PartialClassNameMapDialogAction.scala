@@ -13,25 +13,19 @@ trait PartialClassNameMapDialogAction extends StObject {
 }
 object PartialClassNameMapDialogAction {
   
-  @scala.inline
-  def apply(): PartialClassNameMapDialogAction = {
+  inline def apply(): PartialClassNameMapDialogAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapDialogAction]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapDialogActionMutableBuilder[Self <: PartialClassNameMapDialogAction] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapDialogAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

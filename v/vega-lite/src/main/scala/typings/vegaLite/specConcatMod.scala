@@ -16,17 +16,13 @@ object specConcatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isAnyConcatSpec(spec: BaseSpec): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAnyConcatSpec(spec: BaseSpec): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericConcatSpec<any> */ Boolean]
+  inline def isConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericConcatSpec<any> */ Boolean]
   
-  @scala.inline
-  def isHConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ Boolean]
+  inline def isHConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ Boolean]
   
-  @scala.inline
-  def isVConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean]
+  inline def isVConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean]
   
   trait GenericConcatSpec[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */]
     extends StObject
@@ -41,20 +37,16 @@ object specConcatMod {
   }
   object GenericConcatSpec {
     
-    @scala.inline
-    def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](concat: js.Array[S]): GenericConcatSpec[S] = {
+    inline def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](concat: js.Array[S]): GenericConcatSpec[S] = {
       val __obj = js.Dynamic.literal(concat = concat.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericConcatSpec[S]]
     }
     
-    @scala.inline
-    implicit class GenericConcatSpecMutableBuilder[Self <: GenericConcatSpec[?], S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */] (val x: Self & GenericConcatSpec[S]) extends AnyVal {
+    extension [Self <: GenericConcatSpec[?], S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](x: Self & GenericConcatSpec[S]) {
       
-      @scala.inline
-      def setConcat(value: js.Array[S]): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
+      inline def setConcat(value: js.Array[S]): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcatVarargs(value: S*): Self = StObject.set(x, "concat", js.Array(value :_*))
+      inline def setConcatVarargs(value: S*): Self = StObject.set(x, "concat", js.Array(value :_*))
     }
   }
   
@@ -70,20 +62,16 @@ object specConcatMod {
   }
   object GenericHConcatSpec {
     
-    @scala.inline
-    def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](hconcat: js.Array[S]): GenericHConcatSpec[S] = {
+    inline def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](hconcat: js.Array[S]): GenericHConcatSpec[S] = {
       val __obj = js.Dynamic.literal(hconcat = hconcat.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericHConcatSpec[S]]
     }
     
-    @scala.inline
-    implicit class GenericHConcatSpecMutableBuilder[Self <: GenericHConcatSpec[?], S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */] (val x: Self & GenericHConcatSpec[S]) extends AnyVal {
+    extension [Self <: GenericHConcatSpec[?], S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](x: Self & GenericHConcatSpec[S]) {
       
-      @scala.inline
-      def setHconcat(value: js.Array[S]): Self = StObject.set(x, "hconcat", value.asInstanceOf[js.Any])
+      inline def setHconcat(value: js.Array[S]): Self = StObject.set(x, "hconcat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHconcatVarargs(value: S*): Self = StObject.set(x, "hconcat", js.Array(value :_*))
+      inline def setHconcatVarargs(value: S*): Self = StObject.set(x, "hconcat", js.Array(value :_*))
     }
   }
   
@@ -99,20 +87,16 @@ object specConcatMod {
   }
   object GenericVConcatSpec {
     
-    @scala.inline
-    def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](vconcat: js.Array[S]): GenericVConcatSpec[S] = {
+    inline def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](vconcat: js.Array[S]): GenericVConcatSpec[S] = {
       val __obj = js.Dynamic.literal(vconcat = vconcat.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericVConcatSpec[S]]
     }
     
-    @scala.inline
-    implicit class GenericVConcatSpecMutableBuilder[Self <: GenericVConcatSpec[?], S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */] (val x: Self & GenericVConcatSpec[S]) extends AnyVal {
+    extension [Self <: GenericVConcatSpec[?], S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](x: Self & GenericVConcatSpec[S]) {
       
-      @scala.inline
-      def setVconcat(value: js.Array[S]): Self = StObject.set(x, "vconcat", value.asInstanceOf[js.Any])
+      inline def setVconcat(value: js.Array[S]): Self = StObject.set(x, "vconcat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVconcatVarargs(value: S*): Self = StObject.set(x, "vconcat", js.Array(value :_*))
+      inline def setVconcatVarargs(value: S*): Self = StObject.set(x, "vconcat", js.Array(value :_*))
     }
   }
   
@@ -139,26 +123,20 @@ object specConcatMod {
   }
   object OneDirectionalConcatLayout {
     
-    @scala.inline
-    def apply(): OneDirectionalConcatLayout = {
+    inline def apply(): OneDirectionalConcatLayout = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OneDirectionalConcatLayout]
     }
     
-    @scala.inline
-    implicit class OneDirectionalConcatLayoutMutableBuilder[Self <: OneDirectionalConcatLayout] (val x: Self) extends AnyVal {
+    extension [Self <: OneDirectionalConcatLayout](x: Self) {
       
-      @scala.inline
-      def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+      inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+      inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     }
   }
 }

@@ -69,17 +69,14 @@ object callHierarchyProposedMod {
   }
   object CallHierarchyMiddleware {
     
-    @scala.inline
-    def apply(): CallHierarchyMiddleware = {
+    inline def apply(): CallHierarchyMiddleware = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CallHierarchyMiddleware]
     }
     
-    @scala.inline
-    implicit class CallHierarchyMiddlewareMutableBuilder[Self <: CallHierarchyMiddleware] (val x: Self) extends AnyVal {
+    extension [Self <: CallHierarchyMiddleware](x: Self) {
       
-      @scala.inline
-      def setPrepareCallHierarchy(
+      inline def setPrepareCallHierarchy(
         value: js.ThisFunction4[
               /* this */ Unit, 
               /* document */ TextDocument, 
@@ -90,11 +87,9 @@ object callHierarchyProposedMod {
             ]
       ): Self = StObject.set(x, "prepareCallHierarchy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrepareCallHierarchyUndefined: Self = StObject.set(x, "prepareCallHierarchy", js.undefined)
+      inline def setPrepareCallHierarchyUndefined: Self = StObject.set(x, "prepareCallHierarchy", js.undefined)
       
-      @scala.inline
-      def setProvideCallHierarchyIncomingCalls(
+      inline def setProvideCallHierarchyIncomingCalls(
         value: js.ThisFunction3[
               /* this */ Unit, 
               /* item */ CallHierarchyItem, 
@@ -104,11 +99,9 @@ object callHierarchyProposedMod {
             ]
       ): Self = StObject.set(x, "provideCallHierarchyIncomingCalls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideCallHierarchyIncomingCallsUndefined: Self = StObject.set(x, "provideCallHierarchyIncomingCalls", js.undefined)
+      inline def setProvideCallHierarchyIncomingCallsUndefined: Self = StObject.set(x, "provideCallHierarchyIncomingCalls", js.undefined)
       
-      @scala.inline
-      def setProvideCallHierarchyOutgingCalls(
+      inline def setProvideCallHierarchyOutgingCalls(
         value: js.ThisFunction3[
               /* this */ Unit, 
               /* item */ CallHierarchyItem, 
@@ -118,8 +111,7 @@ object callHierarchyProposedMod {
             ]
       ): Self = StObject.set(x, "provideCallHierarchyOutgingCalls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideCallHierarchyOutgingCallsUndefined: Self = StObject.set(x, "provideCallHierarchyOutgingCalls", js.undefined)
+      inline def setProvideCallHierarchyOutgingCallsUndefined: Self = StObject.set(x, "provideCallHierarchyOutgingCalls", js.undefined)
     }
   }
   
@@ -134,14 +126,13 @@ object callHierarchyProposedMod {
     extends StObject
        with typings.vscode.mod.CallHierarchyProvider {
     
-    var client: js.Any
+    /* private */ var client: js.Any
     
-    var middleware: js.Any
+    /* private */ var middleware: js.Any
   }
   object CallHierarchyProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client: js.Any,
       middleware: js.Any,
       prepareCallHierarchy: (TextDocument, Position, CancellationToken) => ProviderResult[CallHierarchyItem | js.Array[CallHierarchyItem]],
@@ -152,14 +143,11 @@ object callHierarchyProposedMod {
       __obj.asInstanceOf[CallHierarchyProvider]
     }
     
-    @scala.inline
-    implicit class CallHierarchyProviderMutableBuilder[Self <: CallHierarchyProvider] (val x: Self) extends AnyVal {
+    extension [Self <: CallHierarchyProvider](x: Self) {
       
-      @scala.inline
-      def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddleware(value: js.Any): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+      inline def setMiddleware(value: js.Any): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
     }
   }
   

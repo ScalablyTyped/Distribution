@@ -9,8 +9,7 @@ trait DescribeKeyInput
      with typings.awsSdkClientKmsBrowser.typesDescribeKeyInputMod.DescribeKeyInput
 object DescribeKeyInput {
   
-  @scala.inline
-  def apply(KeyId: String): DescribeKeyInput = {
+  inline def apply(KeyId: String): DescribeKeyInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeKeyInput]
   }

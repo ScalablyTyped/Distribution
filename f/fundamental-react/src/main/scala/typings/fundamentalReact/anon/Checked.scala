@@ -12,25 +12,19 @@ trait Checked extends StObject {
 }
 object Checked {
   
-  @scala.inline
-  def apply(): Checked = {
+  inline def apply(): Checked = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Checked]
   }
   
-  @scala.inline
-  implicit class CheckedMutableBuilder[Self <: Checked] (val x: Self) extends AnyVal {
+  extension [Self <: Checked](x: Self) {
     
-    @scala.inline
-    def setChecked(value: js.Any): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: js.Any): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
-    @scala.inline
-    def setUnchecked(value: js.Any): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
+    inline def setUnchecked(value: js.Any): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUncheckedUndefined: Self = StObject.set(x, "unchecked", js.undefined)
+    inline def setUncheckedUndefined: Self = StObject.set(x, "unchecked", js.undefined)
   }
 }

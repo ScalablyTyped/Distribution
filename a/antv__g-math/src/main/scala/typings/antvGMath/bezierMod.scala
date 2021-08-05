@@ -11,16 +11,14 @@ object bezierMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def nearestPoint(
+  inline def nearestPoint(
     xArr: js.Array[Double],
     yArr: js.Array[Double],
     x: Double,
     y: Double,
     tCallback: js.Function1[/* repeated */ Double, Double]
   ): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestPoint")(xArr.asInstanceOf[js.Any], yArr.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], tCallback.asInstanceOf[js.Any])).asInstanceOf[Point]
-  @scala.inline
-  def nearestPoint(
+  inline def nearestPoint(
     xArr: js.Array[Double],
     yArr: js.Array[Double],
     x: Double,
@@ -29,6 +27,5 @@ object bezierMod {
     length: Double
   ): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestPoint")(xArr.asInstanceOf[js.Any], yArr.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], tCallback.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @scala.inline
-  def snapLength(xArr: js.Array[Double], yArr: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLength")(xArr.asInstanceOf[js.Any], yArr.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def snapLength(xArr: js.Array[Double], yArr: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLength")(xArr.asInstanceOf[js.Any], yArr.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

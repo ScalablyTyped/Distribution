@@ -11,19 +11,15 @@ trait UIkitCountdownOptions extends StObject {
 }
 object UIkitCountdownOptions {
   
-  @scala.inline
-  def apply(): UIkitCountdownOptions = {
+  inline def apply(): UIkitCountdownOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitCountdownOptions]
   }
   
-  @scala.inline
-  implicit class UIkitCountdownOptionsMutableBuilder[Self <: UIkitCountdownOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitCountdownOptions](x: Self) {
     
-    @scala.inline
-    def setDate(value: String | Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String | Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
   }
 }

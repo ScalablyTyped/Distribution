@@ -24,49 +24,35 @@ trait Layout extends StObject {
 }
 object Layout {
   
-  @scala.inline
-  def apply(): Layout = {
+  inline def apply(): Layout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Layout]
   }
   
-  @scala.inline
-  implicit class LayoutMutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
+  extension [Self <: Layout](x: Self) {
     
-    @scala.inline
-    def setLayout(value: String | IClassConstructor[ISelectableControlLayout]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String | IClassConstructor[ISelectableControlLayout]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setSelectOnClick(value: Boolean): Self = StObject.set(x, "selectOnClick", value.asInstanceOf[js.Any])
+    inline def setSelectOnClick(value: Boolean): Self = StObject.set(x, "selectOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectOnClickUndefined: Self = StObject.set(x, "selectOnClick", js.undefined)
+    inline def setSelectOnClickUndefined: Self = StObject.set(x, "selectOnClick", js.undefined)
     
-    @scala.inline
-    def setSelectableLayout(value: String | IClassConstructor[ISelectableControlLayout]): Self = StObject.set(x, "selectableLayout", value.asInstanceOf[js.Any])
+    inline def setSelectableLayout(value: String | IClassConstructor[ISelectableControlLayout]): Self = StObject.set(x, "selectableLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableLayoutUndefined: Self = StObject.set(x, "selectableLayout", js.undefined)
+    inline def setSelectableLayoutUndefined: Self = StObject.set(x, "selectableLayout", js.undefined)
     
-    @scala.inline
-    def setSeparatorLayout(value: String | IClassConstructor[ISelectableControlLayout]): Self = StObject.set(x, "separatorLayout", value.asInstanceOf[js.Any])
+    inline def setSeparatorLayout(value: String | IClassConstructor[ISelectableControlLayout]): Self = StObject.set(x, "separatorLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorLayoutUndefined: Self = StObject.set(x, "separatorLayout", js.undefined)
+    inline def setSeparatorLayoutUndefined: Self = StObject.set(x, "separatorLayout", js.undefined)
     
-    @scala.inline
-    def setType(value: selectable | separator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: selectable | separator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -19,19 +19,15 @@ trait SchemaStartEnvironmentRequest extends StObject {
 }
 object SchemaStartEnvironmentRequest {
   
-  @scala.inline
-  def apply(): SchemaStartEnvironmentRequest = {
+  inline def apply(): SchemaStartEnvironmentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStartEnvironmentRequest]
   }
   
-  @scala.inline
-  implicit class SchemaStartEnvironmentRequestMutableBuilder[Self <: SchemaStartEnvironmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStartEnvironmentRequest](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
   }
 }

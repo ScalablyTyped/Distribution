@@ -14,16 +14,13 @@ trait TVVIEWERBGEXECUTABLE extends StObject {
 }
 object TVVIEWERBGEXECUTABLE {
   
-  @scala.inline
-  def apply(): TVVIEWERBGEXECUTABLE = {
+  inline def apply(): TVVIEWERBGEXECUTABLE = {
     val __obj = js.Dynamic.literal(TV_VIEWER_BG_EXECUTABLE = 0)
     __obj.asInstanceOf[TVVIEWERBGEXECUTABLE]
   }
   
-  @scala.inline
-  implicit class TVVIEWERBGEXECUTABLEMutableBuilder[Self <: TVVIEWERBGEXECUTABLE] (val x: Self) extends AnyVal {
+  extension [Self <: TVVIEWERBGEXECUTABLE](x: Self) {
     
-    @scala.inline
-    def setTV_VIEWER_BG_EXECUTABLE(value: `0`): Self = StObject.set(x, "TV_VIEWER_BG_EXECUTABLE", value.asInstanceOf[js.Any])
+    inline def setTV_VIEWER_BG_EXECUTABLE(value: `0`): Self = StObject.set(x, "TV_VIEWER_BG_EXECUTABLE", value.asInstanceOf[js.Any])
   }
 }

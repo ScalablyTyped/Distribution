@@ -23,25 +23,19 @@ trait ReplaceNetworkAclAssociationRequest extends StObject {
 }
 object ReplaceNetworkAclAssociationRequest {
   
-  @scala.inline
-  def apply(AssociationId: NetworkAclAssociationId, NetworkAclId: NetworkAclId): ReplaceNetworkAclAssociationRequest = {
+  inline def apply(AssociationId: NetworkAclAssociationId, NetworkAclId: NetworkAclId): ReplaceNetworkAclAssociationRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any], NetworkAclId = NetworkAclId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceNetworkAclAssociationRequest]
   }
   
-  @scala.inline
-  implicit class ReplaceNetworkAclAssociationRequestMutableBuilder[Self <: ReplaceNetworkAclAssociationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceNetworkAclAssociationRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: NetworkAclAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: NetworkAclAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setNetworkAclId(value: NetworkAclId): Self = StObject.set(x, "NetworkAclId", value.asInstanceOf[js.Any])
+    inline def setNetworkAclId(value: NetworkAclId): Self = StObject.set(x, "NetworkAclId", value.asInstanceOf[js.Any])
   }
 }

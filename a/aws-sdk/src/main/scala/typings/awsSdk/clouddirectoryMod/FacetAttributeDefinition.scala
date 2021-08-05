@@ -28,34 +28,25 @@ trait FacetAttributeDefinition extends StObject {
 }
 object FacetAttributeDefinition {
   
-  @scala.inline
-  def apply(Type: FacetAttributeType): FacetAttributeDefinition = {
+  inline def apply(Type: FacetAttributeType): FacetAttributeDefinition = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[FacetAttributeDefinition]
   }
   
-  @scala.inline
-  implicit class FacetAttributeDefinitionMutableBuilder[Self <: FacetAttributeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: FacetAttributeDefinition](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: TypedAttributeValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: TypedAttributeValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
-    @scala.inline
-    def setIsImmutable(value: Bool): Self = StObject.set(x, "IsImmutable", value.asInstanceOf[js.Any])
+    inline def setIsImmutable(value: Bool): Self = StObject.set(x, "IsImmutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsImmutableUndefined: Self = StObject.set(x, "IsImmutable", js.undefined)
+    inline def setIsImmutableUndefined: Self = StObject.set(x, "IsImmutable", js.undefined)
     
-    @scala.inline
-    def setRules(value: RuleMap): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: RuleMap): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    @scala.inline
-    def setType(value: FacetAttributeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: FacetAttributeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,49 +18,35 @@ trait GcReleaseBufferSize extends StObject {
 }
 object GcReleaseBufferSize {
   
-  @scala.inline
-  def apply(): GcReleaseBufferSize = {
+  inline def apply(): GcReleaseBufferSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GcReleaseBufferSize]
   }
   
-  @scala.inline
-  implicit class GcReleaseBufferSizeMutableBuilder[Self <: GcReleaseBufferSize] (val x: Self) extends AnyVal {
+  extension [Self <: GcReleaseBufferSize](x: Self) {
     
-    @scala.inline
-    def setGcReleaseBufferSize(value: Double): Self = StObject.set(x, "gcReleaseBufferSize", value.asInstanceOf[js.Any])
+    inline def setGcReleaseBufferSize(value: Double): Self = StObject.set(x, "gcReleaseBufferSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcReleaseBufferSizeNull: Self = StObject.set(x, "gcReleaseBufferSize", null)
+    inline def setGcReleaseBufferSizeNull: Self = StObject.set(x, "gcReleaseBufferSize", null)
     
-    @scala.inline
-    def setGcReleaseBufferSizeUndefined: Self = StObject.set(x, "gcReleaseBufferSize", js.undefined)
+    inline def setGcReleaseBufferSizeUndefined: Self = StObject.set(x, "gcReleaseBufferSize", js.undefined)
     
-    @scala.inline
-    def setGcScheduler(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "gcScheduler", js.Any.fromFunction1(value))
+    inline def setGcScheduler(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "gcScheduler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGcSchedulerNull: Self = StObject.set(x, "gcScheduler", null)
+    inline def setGcSchedulerNull: Self = StObject.set(x, "gcScheduler", null)
     
-    @scala.inline
-    def setGcSchedulerUndefined: Self = StObject.set(x, "gcScheduler", js.undefined)
+    inline def setGcSchedulerUndefined: Self = StObject.set(x, "gcScheduler", js.undefined)
     
-    @scala.inline
-    def setOperationLoader(value: OperationLoader): Self = StObject.set(x, "operationLoader", value.asInstanceOf[js.Any])
+    inline def setOperationLoader(value: OperationLoader): Self = StObject.set(x, "operationLoader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationLoaderNull: Self = StObject.set(x, "operationLoader", null)
+    inline def setOperationLoaderNull: Self = StObject.set(x, "operationLoader", null)
     
-    @scala.inline
-    def setOperationLoaderUndefined: Self = StObject.set(x, "operationLoader", js.undefined)
+    inline def setOperationLoaderUndefined: Self = StObject.set(x, "operationLoader", js.undefined)
     
-    @scala.inline
-    def setQueryCacheExpirationTime(value: Double): Self = StObject.set(x, "queryCacheExpirationTime", value.asInstanceOf[js.Any])
+    inline def setQueryCacheExpirationTime(value: Double): Self = StObject.set(x, "queryCacheExpirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryCacheExpirationTimeNull: Self = StObject.set(x, "queryCacheExpirationTime", null)
+    inline def setQueryCacheExpirationTimeNull: Self = StObject.set(x, "queryCacheExpirationTime", null)
     
-    @scala.inline
-    def setQueryCacheExpirationTimeUndefined: Self = StObject.set(x, "queryCacheExpirationTime", js.undefined)
+    inline def setQueryCacheExpirationTimeUndefined: Self = StObject.set(x, "queryCacheExpirationTime", js.undefined)
   }
 }

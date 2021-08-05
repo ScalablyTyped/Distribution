@@ -23,31 +23,23 @@ trait BulkEmailEntry extends StObject {
 }
 object BulkEmailEntry {
   
-  @scala.inline
-  def apply(Destination: Destination): BulkEmailEntry = {
+  inline def apply(Destination: Destination): BulkEmailEntry = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkEmailEntry]
   }
   
-  @scala.inline
-  implicit class BulkEmailEntryMutableBuilder[Self <: BulkEmailEntry] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEmailEntry](x: Self) {
     
-    @scala.inline
-    def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementEmailContent(value: ReplacementEmailContent): Self = StObject.set(x, "ReplacementEmailContent", value.asInstanceOf[js.Any])
+    inline def setReplacementEmailContent(value: ReplacementEmailContent): Self = StObject.set(x, "ReplacementEmailContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementEmailContentUndefined: Self = StObject.set(x, "ReplacementEmailContent", js.undefined)
+    inline def setReplacementEmailContentUndefined: Self = StObject.set(x, "ReplacementEmailContent", js.undefined)
     
-    @scala.inline
-    def setReplacementTags(value: MessageTagList): Self = StObject.set(x, "ReplacementTags", value.asInstanceOf[js.Any])
+    inline def setReplacementTags(value: MessageTagList): Self = StObject.set(x, "ReplacementTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementTagsUndefined: Self = StObject.set(x, "ReplacementTags", js.undefined)
+    inline def setReplacementTagsUndefined: Self = StObject.set(x, "ReplacementTags", js.undefined)
     
-    @scala.inline
-    def setReplacementTagsVarargs(value: MessageTag*): Self = StObject.set(x, "ReplacementTags", js.Array(value :_*))
+    inline def setReplacementTagsVarargs(value: MessageTag*): Self = StObject.set(x, "ReplacementTags", js.Array(value :_*))
   }
 }

@@ -18,6 +18,5 @@ object ColorHelper {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromArgb(a: Double, r: Double, g: Double, b: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArgb")(a.asInstanceOf[js.Any], r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromArgb(a: Double, r: Double, g: Double, b: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArgb")(a.asInstanceOf[js.Any], r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Color]
 }

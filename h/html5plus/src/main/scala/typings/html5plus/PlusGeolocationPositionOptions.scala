@@ -80,49 +80,35 @@ trait PlusGeolocationPositionOptions extends StObject {
 }
 object PlusGeolocationPositionOptions {
   
-  @scala.inline
-  def apply(): PlusGeolocationPositionOptions = {
+  inline def apply(): PlusGeolocationPositionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusGeolocationPositionOptions]
   }
   
-  @scala.inline
-  implicit class PlusGeolocationPositionOptionsMutableBuilder[Self <: PlusGeolocationPositionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusGeolocationPositionOptions](x: Self) {
     
-    @scala.inline
-    def setCoordsType(value: String): Self = StObject.set(x, "coordsType", value.asInstanceOf[js.Any])
+    inline def setCoordsType(value: String): Self = StObject.set(x, "coordsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordsTypeUndefined: Self = StObject.set(x, "coordsType", js.undefined)
+    inline def setCoordsTypeUndefined: Self = StObject.set(x, "coordsType", js.undefined)
     
-    @scala.inline
-    def setEnableHighAccuracy(value: Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
+    inline def setEnableHighAccuracy(value: Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableHighAccuracyUndefined: Self = StObject.set(x, "enableHighAccuracy", js.undefined)
+    inline def setEnableHighAccuracyUndefined: Self = StObject.set(x, "enableHighAccuracy", js.undefined)
     
-    @scala.inline
-    def setGeocode(value: Boolean): Self = StObject.set(x, "geocode", value.asInstanceOf[js.Any])
+    inline def setGeocode(value: Boolean): Self = StObject.set(x, "geocode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeocodeUndefined: Self = StObject.set(x, "geocode", js.undefined)
+    inline def setGeocodeUndefined: Self = StObject.set(x, "geocode", js.undefined)
     
-    @scala.inline
-    def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
+    inline def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumAgeUndefined: Self = StObject.set(x, "maximumAge", js.undefined)
+    inline def setMaximumAgeUndefined: Self = StObject.set(x, "maximumAge", js.undefined)
     
-    @scala.inline
-    def setProvider(value: system | baidu | amap): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: system | baidu | amap): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

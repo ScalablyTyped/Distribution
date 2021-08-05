@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TabStop")
 @js.native
-class TabStop protected ()
+/* private */ class TabStop ()
   extends StObject
      with typings.activexWord.Word.TabStop {
   
@@ -42,7 +42,7 @@ class TabStop protected ()
   /* CompleteClass */
   override val Previous: typings.activexWord.Word.TabStop = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.TabStop_typekey")
   var WordDotTabStop_typekey: typings.activexWord.Word.TabStop = js.native
 }

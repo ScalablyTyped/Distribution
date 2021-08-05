@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ThreatAssessmentResultType extends StObject
 object ThreatAssessmentResultType {
   
-  @scala.inline
-  def checkPolicy: typings.microsoftGraph.microsoftGraphStrings.checkPolicy = "checkPolicy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.checkPolicy]
+  inline def checkPolicy: typings.microsoftGraph.microsoftGraphStrings.checkPolicy = "checkPolicy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.checkPolicy]
   
-  @scala.inline
-  def rescan: typings.microsoftGraph.microsoftGraphStrings.rescan = "rescan".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.rescan]
+  inline def rescan: typings.microsoftGraph.microsoftGraphStrings.rescan = "rescan".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.rescan]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

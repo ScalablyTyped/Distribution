@@ -12,19 +12,15 @@ trait BusyIndicator extends StObject {
 }
 object BusyIndicator {
   
-  @scala.inline
-  def apply(hide: () => Unit, show: () => Unit): BusyIndicator = {
+  inline def apply(hide: () => Unit, show: () => Unit): BusyIndicator = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
     __obj.asInstanceOf[BusyIndicator]
   }
   
-  @scala.inline
-  implicit class BusyIndicatorMutableBuilder[Self <: BusyIndicator] (val x: Self) extends AnyVal {
+  extension [Self <: BusyIndicator](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

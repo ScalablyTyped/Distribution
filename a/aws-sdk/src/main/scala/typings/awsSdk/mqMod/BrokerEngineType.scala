@@ -18,28 +18,21 @@ trait BrokerEngineType extends StObject {
 }
 object BrokerEngineType {
   
-  @scala.inline
-  def apply(): BrokerEngineType = {
+  inline def apply(): BrokerEngineType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrokerEngineType]
   }
   
-  @scala.inline
-  implicit class BrokerEngineTypeMutableBuilder[Self <: BrokerEngineType] (val x: Self) extends AnyVal {
+  extension [Self <: BrokerEngineType](x: Self) {
     
-    @scala.inline
-    def setEngineType(value: EngineType): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
+    inline def setEngineType(value: EngineType): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineTypeUndefined: Self = StObject.set(x, "EngineType", js.undefined)
+    inline def setEngineTypeUndefined: Self = StObject.set(x, "EngineType", js.undefined)
     
-    @scala.inline
-    def setEngineVersions(value: listOfEngineVersion): Self = StObject.set(x, "EngineVersions", value.asInstanceOf[js.Any])
+    inline def setEngineVersions(value: listOfEngineVersion): Self = StObject.set(x, "EngineVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineVersionsUndefined: Self = StObject.set(x, "EngineVersions", js.undefined)
+    inline def setEngineVersionsUndefined: Self = StObject.set(x, "EngineVersions", js.undefined)
     
-    @scala.inline
-    def setEngineVersionsVarargs(value: EngineVersion*): Self = StObject.set(x, "EngineVersions", js.Array(value :_*))
+    inline def setEngineVersionsVarargs(value: EngineVersion*): Self = StObject.set(x, "EngineVersions", js.Array(value :_*))
   }
 }

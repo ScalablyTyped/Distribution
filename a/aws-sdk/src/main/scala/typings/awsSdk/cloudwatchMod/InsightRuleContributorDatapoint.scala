@@ -18,19 +18,15 @@ trait InsightRuleContributorDatapoint extends StObject {
 }
 object InsightRuleContributorDatapoint {
   
-  @scala.inline
-  def apply(ApproximateValue: InsightRuleUnboundDouble, Timestamp: Timestamp): InsightRuleContributorDatapoint = {
+  inline def apply(ApproximateValue: InsightRuleUnboundDouble, Timestamp: Timestamp): InsightRuleContributorDatapoint = {
     val __obj = js.Dynamic.literal(ApproximateValue = ApproximateValue.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightRuleContributorDatapoint]
   }
   
-  @scala.inline
-  implicit class InsightRuleContributorDatapointMutableBuilder[Self <: InsightRuleContributorDatapoint] (val x: Self) extends AnyVal {
+  extension [Self <: InsightRuleContributorDatapoint](x: Self) {
     
-    @scala.inline
-    def setApproximateValue(value: InsightRuleUnboundDouble): Self = StObject.set(x, "ApproximateValue", value.asInstanceOf[js.Any])
+    inline def setApproximateValue(value: InsightRuleUnboundDouble): Self = StObject.set(x, "ApproximateValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

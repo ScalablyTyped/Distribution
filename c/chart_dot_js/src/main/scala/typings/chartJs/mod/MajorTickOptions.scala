@@ -12,19 +12,15 @@ trait MajorTickOptions
 }
 object MajorTickOptions {
   
-  @scala.inline
-  def apply(): MajorTickOptions = {
+  inline def apply(): MajorTickOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MajorTickOptions]
   }
   
-  @scala.inline
-  implicit class MajorTickOptionsMutableBuilder[Self <: MajorTickOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MajorTickOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

@@ -16,19 +16,15 @@ trait SchemaDataLeakPreventionChange extends StObject {
 }
 object SchemaDataLeakPreventionChange {
   
-  @scala.inline
-  def apply(): SchemaDataLeakPreventionChange = {
+  inline def apply(): SchemaDataLeakPreventionChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDataLeakPreventionChange]
   }
   
-  @scala.inline
-  implicit class SchemaDataLeakPreventionChangeMutableBuilder[Self <: SchemaDataLeakPreventionChange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDataLeakPreventionChange](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait UtilStatic extends StObject {
 }
 object UtilStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     decode: String => String,
     encode: String => String,
     getKeys: js.Object => js.Array[js.Any],
@@ -36,28 +35,20 @@ object UtilStatic {
     __obj.asInstanceOf[UtilStatic]
   }
   
-  @scala.inline
-  implicit class UtilStaticMutableBuilder[Self <: UtilStatic] (val x: Self) extends AnyVal {
+  extension [Self <: UtilStatic](x: Self) {
     
-    @scala.inline
-    def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+    inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncode(value: String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    inline def setEncode(value: String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetKeys(value: js.Object => js.Array[js.Any]): Self = StObject.set(x, "getKeys", js.Any.fromFunction1(value))
+    inline def setGetKeys(value: js.Object => js.Array[js.Any]): Self = StObject.set(x, "getKeys", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsArray(value: js.Any => Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction1(value))
+    inline def setIsArray(value: js.Any => Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsObject(value: js.Any => Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
+    inline def setIsObject(value: js.Any => Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRetrieve(value: (String, String) => String): Self = StObject.set(x, "retrieve", js.Any.fromFunction2(value))
+    inline def setRetrieve(value: (String, String) => String): Self = StObject.set(x, "retrieve", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToArray(value: /* repeated */ js.Any => js.Array[js.Any]): Self = StObject.set(x, "toArray", js.Any.fromFunction1(value))
+    inline def setToArray(value: /* repeated */ js.Any => js.Array[js.Any]): Self = StObject.set(x, "toArray", js.Any.fromFunction1(value))
   }
 }

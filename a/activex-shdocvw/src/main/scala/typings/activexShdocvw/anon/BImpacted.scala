@@ -10,16 +10,13 @@ trait BImpacted extends StObject {
 }
 object BImpacted {
   
-  @scala.inline
-  def apply(bImpacted: Boolean): BImpacted = {
+  inline def apply(bImpacted: Boolean): BImpacted = {
     val __obj = js.Dynamic.literal(bImpacted = bImpacted.asInstanceOf[js.Any])
     __obj.asInstanceOf[BImpacted]
   }
   
-  @scala.inline
-  implicit class BImpactedMutableBuilder[Self <: BImpacted] (val x: Self) extends AnyVal {
+  extension [Self <: BImpacted](x: Self) {
     
-    @scala.inline
-    def setBImpacted(value: Boolean): Self = StObject.set(x, "bImpacted", value.asInstanceOf[js.Any])
+    inline def setBImpacted(value: Boolean): Self = StObject.set(x, "bImpacted", value.asInstanceOf[js.Any])
   }
 }

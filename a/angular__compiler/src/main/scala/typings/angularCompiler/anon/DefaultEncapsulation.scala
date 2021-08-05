@@ -22,52 +22,37 @@ trait DefaultEncapsulation extends StObject {
 }
 object DefaultEncapsulation {
   
-  @scala.inline
-  def apply(): DefaultEncapsulation = {
+  inline def apply(): DefaultEncapsulation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultEncapsulation]
   }
   
-  @scala.inline
-  implicit class DefaultEncapsulationMutableBuilder[Self <: DefaultEncapsulation] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultEncapsulation](x: Self) {
     
-    @scala.inline
-    def setDefaultEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "defaultEncapsulation", value.asInstanceOf[js.Any])
+    inline def setDefaultEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "defaultEncapsulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultEncapsulationUndefined: Self = StObject.set(x, "defaultEncapsulation", js.undefined)
+    inline def setDefaultEncapsulationUndefined: Self = StObject.set(x, "defaultEncapsulation", js.undefined)
     
-    @scala.inline
-    def setJitDevMode(value: Boolean): Self = StObject.set(x, "jitDevMode", value.asInstanceOf[js.Any])
+    inline def setJitDevMode(value: Boolean): Self = StObject.set(x, "jitDevMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJitDevModeUndefined: Self = StObject.set(x, "jitDevMode", js.undefined)
+    inline def setJitDevModeUndefined: Self = StObject.set(x, "jitDevMode", js.undefined)
     
-    @scala.inline
-    def setMissingTranslation(value: MissingTranslationStrategy): Self = StObject.set(x, "missingTranslation", value.asInstanceOf[js.Any])
+    inline def setMissingTranslation(value: MissingTranslationStrategy): Self = StObject.set(x, "missingTranslation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingTranslationNull: Self = StObject.set(x, "missingTranslation", null)
+    inline def setMissingTranslationNull: Self = StObject.set(x, "missingTranslation", null)
     
-    @scala.inline
-    def setMissingTranslationUndefined: Self = StObject.set(x, "missingTranslation", js.undefined)
+    inline def setMissingTranslationUndefined: Self = StObject.set(x, "missingTranslation", js.undefined)
     
-    @scala.inline
-    def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
+    inline def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveWhitespacesUndefined: Self = StObject.set(x, "preserveWhitespaces", js.undefined)
+    inline def setPreserveWhitespacesUndefined: Self = StObject.set(x, "preserveWhitespaces", js.undefined)
     
-    @scala.inline
-    def setStrictInjectionParameters(value: Boolean): Self = StObject.set(x, "strictInjectionParameters", value.asInstanceOf[js.Any])
+    inline def setStrictInjectionParameters(value: Boolean): Self = StObject.set(x, "strictInjectionParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictInjectionParametersUndefined: Self = StObject.set(x, "strictInjectionParameters", js.undefined)
+    inline def setStrictInjectionParametersUndefined: Self = StObject.set(x, "strictInjectionParameters", js.undefined)
     
-    @scala.inline
-    def setUseJit(value: Boolean): Self = StObject.set(x, "useJit", value.asInstanceOf[js.Any])
+    inline def setUseJit(value: Boolean): Self = StObject.set(x, "useJit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseJitUndefined: Self = StObject.set(x, "useJit", js.undefined)
+    inline def setUseJitUndefined: Self = StObject.set(x, "useJit", js.undefined)
   }
 }

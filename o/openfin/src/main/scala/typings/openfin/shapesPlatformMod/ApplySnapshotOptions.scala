@@ -12,25 +12,19 @@ trait ApplySnapshotOptions extends StObject {
 }
 object ApplySnapshotOptions {
   
-  @scala.inline
-  def apply(): ApplySnapshotOptions = {
+  inline def apply(): ApplySnapshotOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplySnapshotOptions]
   }
   
-  @scala.inline
-  implicit class ApplySnapshotOptionsMutableBuilder[Self <: ApplySnapshotOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ApplySnapshotOptions](x: Self) {
     
-    @scala.inline
-    def setCloseExistingWindows(value: Boolean): Self = StObject.set(x, "closeExistingWindows", value.asInstanceOf[js.Any])
+    inline def setCloseExistingWindows(value: Boolean): Self = StObject.set(x, "closeExistingWindows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseExistingWindowsUndefined: Self = StObject.set(x, "closeExistingWindows", js.undefined)
+    inline def setCloseExistingWindowsUndefined: Self = StObject.set(x, "closeExistingWindows", js.undefined)
     
-    @scala.inline
-    def setSkipOutOfBoundsCheck(value: Boolean): Self = StObject.set(x, "skipOutOfBoundsCheck", value.asInstanceOf[js.Any])
+    inline def setSkipOutOfBoundsCheck(value: Boolean): Self = StObject.set(x, "skipOutOfBoundsCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipOutOfBoundsCheckUndefined: Self = StObject.set(x, "skipOutOfBoundsCheck", js.undefined)
+    inline def setSkipOutOfBoundsCheckUndefined: Self = StObject.set(x, "skipOutOfBoundsCheck", js.undefined)
   }
 }

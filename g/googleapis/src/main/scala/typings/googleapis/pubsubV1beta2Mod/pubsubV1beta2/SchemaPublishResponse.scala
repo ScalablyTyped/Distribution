@@ -18,22 +18,17 @@ trait SchemaPublishResponse extends StObject {
 }
 object SchemaPublishResponse {
   
-  @scala.inline
-  def apply(): SchemaPublishResponse = {
+  inline def apply(): SchemaPublishResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPublishResponse]
   }
   
-  @scala.inline
-  implicit class SchemaPublishResponseMutableBuilder[Self <: SchemaPublishResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPublishResponse](x: Self) {
     
-    @scala.inline
-    def setMessageIds(value: js.Array[String]): Self = StObject.set(x, "messageIds", value.asInstanceOf[js.Any])
+    inline def setMessageIds(value: js.Array[String]): Self = StObject.set(x, "messageIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdsUndefined: Self = StObject.set(x, "messageIds", js.undefined)
+    inline def setMessageIdsUndefined: Self = StObject.set(x, "messageIds", js.undefined)
     
-    @scala.inline
-    def setMessageIdsVarargs(value: String*): Self = StObject.set(x, "messageIds", js.Array(value :_*))
+    inline def setMessageIdsVarargs(value: String*): Self = StObject.set(x, "messageIds", js.Array(value :_*))
   }
 }

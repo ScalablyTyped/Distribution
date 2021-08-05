@@ -63,44 +63,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAssetNameRegExp(value: RegExp): Self = StObject.set(x, "assetNameRegExp", value.asInstanceOf[js.Any])
+      inline def setAssetNameRegExp(value: RegExp): Self = StObject.set(x, "assetNameRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetNameRegExpUndefined: Self = StObject.set(x, "assetNameRegExp", js.undefined)
+      inline def setAssetNameRegExpUndefined: Self = StObject.set(x, "assetNameRegExp", js.undefined)
       
-      @scala.inline
-      def setCanPrint(value: Boolean): Self = StObject.set(x, "canPrint", value.asInstanceOf[js.Any])
+      inline def setCanPrint(value: Boolean): Self = StObject.set(x, "canPrint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanPrintUndefined: Self = StObject.set(x, "canPrint", js.undefined)
+      inline def setCanPrintUndefined: Self = StObject.set(x, "canPrint", js.undefined)
       
-      @scala.inline
-      def setCssProcessor(value: Process): Self = StObject.set(x, "cssProcessor", value.asInstanceOf[js.Any])
+      inline def setCssProcessor(value: Process): Self = StObject.set(x, "cssProcessor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssProcessorOptions(value: js.Object): Self = StObject.set(x, "cssProcessorOptions", value.asInstanceOf[js.Any])
+      inline def setCssProcessorOptions(value: js.Object): Self = StObject.set(x, "cssProcessorOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssProcessorOptionsUndefined: Self = StObject.set(x, "cssProcessorOptions", js.undefined)
+      inline def setCssProcessorOptionsUndefined: Self = StObject.set(x, "cssProcessorOptions", js.undefined)
       
-      @scala.inline
-      def setCssProcessorPluginOptions(value: js.Object): Self = StObject.set(x, "cssProcessorPluginOptions", value.asInstanceOf[js.Any])
+      inline def setCssProcessorPluginOptions(value: js.Object): Self = StObject.set(x, "cssProcessorPluginOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssProcessorPluginOptionsUndefined: Self = StObject.set(x, "cssProcessorPluginOptions", js.undefined)
+      inline def setCssProcessorPluginOptionsUndefined: Self = StObject.set(x, "cssProcessorPluginOptions", js.undefined)
       
-      @scala.inline
-      def setCssProcessorUndefined: Self = StObject.set(x, "cssProcessor", js.undefined)
+      inline def setCssProcessorUndefined: Self = StObject.set(x, "cssProcessor", js.undefined)
     }
   }
 }

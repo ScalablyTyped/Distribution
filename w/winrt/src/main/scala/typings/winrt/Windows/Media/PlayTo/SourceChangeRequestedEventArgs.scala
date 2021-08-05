@@ -13,8 +13,7 @@ trait SourceChangeRequestedEventArgs
      with ISourceChangeRequestedEventArgs
 object SourceChangeRequestedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     album: String,
     author: String,
     date: Date,

@@ -33,37 +33,27 @@ trait SchemaAccountTreeResponse extends StObject {
 }
 object SchemaAccountTreeResponse {
   
-  @scala.inline
-  def apply(): SchemaAccountTreeResponse = {
+  inline def apply(): SchemaAccountTreeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccountTreeResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAccountTreeResponseMutableBuilder[Self <: SchemaAccountTreeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccountTreeResponse](x: Self) {
     
-    @scala.inline
-    def setAccount(value: SchemaAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: SchemaAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProfile(value: SchemaProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: SchemaProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    @scala.inline
-    def setWebproperty(value: SchemaWebproperty): Self = StObject.set(x, "webproperty", value.asInstanceOf[js.Any])
+    inline def setWebproperty(value: SchemaWebproperty): Self = StObject.set(x, "webproperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebpropertyUndefined: Self = StObject.set(x, "webproperty", js.undefined)
+    inline def setWebpropertyUndefined: Self = StObject.set(x, "webproperty", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait Found extends StObject {
 }
 object Found {
   
-  @scala.inline
-  def apply(found: Boolean, index: Double): Found = {
+  inline def apply(found: Boolean, index: Double): Found = {
     val __obj = js.Dynamic.literal(found = found.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[Found]
   }
   
-  @scala.inline
-  implicit class FoundMutableBuilder[Self <: Found] (val x: Self) extends AnyVal {
+  extension [Self <: Found](x: Self) {
     
-    @scala.inline
-    def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+    inline def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

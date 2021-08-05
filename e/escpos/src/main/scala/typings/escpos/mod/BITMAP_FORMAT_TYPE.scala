@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BITMAP_FORMAT_TYPE extends StObject
 object BITMAP_FORMAT_TYPE {
   
-  @scala.inline
-  def D24: typings.escpos.escposStrings.D24 = "D24".asInstanceOf[typings.escpos.escposStrings.D24]
+  inline def D24: typings.escpos.escposStrings.D24 = "D24".asInstanceOf[typings.escpos.escposStrings.D24]
   
-  @scala.inline
-  def D8: typings.escpos.escposStrings.D8 = "D8".asInstanceOf[typings.escpos.escposStrings.D8]
+  inline def D8: typings.escpos.escposStrings.D8 = "D8".asInstanceOf[typings.escpos.escposStrings.D8]
   
-  @scala.inline
-  def S24: typings.escpos.escposStrings.S24 = "S24".asInstanceOf[typings.escpos.escposStrings.S24]
+  inline def S24: typings.escpos.escposStrings.S24 = "S24".asInstanceOf[typings.escpos.escposStrings.S24]
   
-  @scala.inline
-  def S8: typings.escpos.escposStrings.S8 = "S8".asInstanceOf[typings.escpos.escposStrings.S8]
+  inline def S8: typings.escpos.escposStrings.S8 = "S8".asInstanceOf[typings.escpos.escposStrings.S8]
 }

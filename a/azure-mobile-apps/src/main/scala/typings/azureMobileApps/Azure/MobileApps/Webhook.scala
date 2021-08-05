@@ -10,16 +10,13 @@ trait Webhook extends StObject {
 }
 object Webhook {
   
-  @scala.inline
-  def apply(url: String): Webhook = {
+  inline def apply(url: String): Webhook = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Webhook]
   }
   
-  @scala.inline
-  implicit class WebhookMutableBuilder[Self <: Webhook] (val x: Self) extends AnyVal {
+  extension [Self <: Webhook](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

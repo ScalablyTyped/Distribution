@@ -9,8 +9,7 @@ trait FieldUserValue
      with FieldLookupValue
 object FieldUserValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,

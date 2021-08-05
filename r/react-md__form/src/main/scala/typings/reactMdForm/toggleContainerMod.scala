@@ -32,26 +32,20 @@ object toggleContainerMod {
   }
   object ToggleContainerProps {
     
-    @scala.inline
-    def apply(): ToggleContainerProps = {
+    inline def apply(): ToggleContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToggleContainerProps]
     }
     
-    @scala.inline
-    implicit class ToggleContainerPropsMutableBuilder[Self <: ToggleContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleContainerProps](x: Self) {
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
+      inline def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
+      inline def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
     }
   }
 }

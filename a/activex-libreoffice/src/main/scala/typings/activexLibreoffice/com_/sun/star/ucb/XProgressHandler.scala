@@ -29,8 +29,7 @@ trait XProgressHandler
 }
 object XProgressHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     pop: () => Unit,
     push: js.Any => Unit,
@@ -42,16 +41,12 @@ object XProgressHandler {
     __obj.asInstanceOf[XProgressHandler]
   }
   
-  @scala.inline
-  implicit class XProgressHandlerMutableBuilder[Self <: XProgressHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XProgressHandler](x: Self) {
     
-    @scala.inline
-    def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+    inline def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

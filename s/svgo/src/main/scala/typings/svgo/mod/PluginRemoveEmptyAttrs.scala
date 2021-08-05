@@ -12,16 +12,13 @@ trait PluginRemoveEmptyAttrs
 }
 object PluginRemoveEmptyAttrs {
   
-  @scala.inline
-  def apply(removeEmptyAttrs: Boolean | js.Object): PluginRemoveEmptyAttrs = {
+  inline def apply(removeEmptyAttrs: Boolean | js.Object): PluginRemoveEmptyAttrs = {
     val __obj = js.Dynamic.literal(removeEmptyAttrs = removeEmptyAttrs.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveEmptyAttrs]
   }
   
-  @scala.inline
-  implicit class PluginRemoveEmptyAttrsMutableBuilder[Self <: PluginRemoveEmptyAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveEmptyAttrs](x: Self) {
     
-    @scala.inline
-    def setRemoveEmptyAttrs(value: Boolean | js.Object): Self = StObject.set(x, "removeEmptyAttrs", value.asInstanceOf[js.Any])
+    inline def setRemoveEmptyAttrs(value: Boolean | js.Object): Self = StObject.set(x, "removeEmptyAttrs", value.asInstanceOf[js.Any])
   }
 }

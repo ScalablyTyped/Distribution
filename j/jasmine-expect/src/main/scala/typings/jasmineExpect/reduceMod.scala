@@ -10,6 +10,5 @@ object reduceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reduce(collection: js.Any, fn: js.Any, memo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(collection.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], memo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def reduce(collection: js.Any, fn: js.Any, memo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(collection.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], memo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

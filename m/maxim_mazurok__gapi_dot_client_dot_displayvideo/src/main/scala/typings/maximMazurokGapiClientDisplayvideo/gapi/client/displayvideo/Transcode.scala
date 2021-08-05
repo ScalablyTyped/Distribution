@@ -35,67 +35,47 @@ trait Transcode extends StObject {
 }
 object Transcode {
   
-  @scala.inline
-  def apply(): Transcode = {
+  inline def apply(): Transcode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Transcode]
   }
   
-  @scala.inline
-  implicit class TranscodeMutableBuilder[Self <: Transcode] (val x: Self) extends AnyVal {
+  extension [Self <: Transcode](x: Self) {
     
-    @scala.inline
-    def setAudioBitRateKbps(value: String): Self = StObject.set(x, "audioBitRateKbps", value.asInstanceOf[js.Any])
+    inline def setAudioBitRateKbps(value: String): Self = StObject.set(x, "audioBitRateKbps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioBitRateKbpsUndefined: Self = StObject.set(x, "audioBitRateKbps", js.undefined)
+    inline def setAudioBitRateKbpsUndefined: Self = StObject.set(x, "audioBitRateKbps", js.undefined)
     
-    @scala.inline
-    def setAudioSampleRateHz(value: String): Self = StObject.set(x, "audioSampleRateHz", value.asInstanceOf[js.Any])
+    inline def setAudioSampleRateHz(value: String): Self = StObject.set(x, "audioSampleRateHz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSampleRateHzUndefined: Self = StObject.set(x, "audioSampleRateHz", js.undefined)
+    inline def setAudioSampleRateHzUndefined: Self = StObject.set(x, "audioSampleRateHz", js.undefined)
     
-    @scala.inline
-    def setBitRateKbps(value: String): Self = StObject.set(x, "bitRateKbps", value.asInstanceOf[js.Any])
+    inline def setBitRateKbps(value: String): Self = StObject.set(x, "bitRateKbps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitRateKbpsUndefined: Self = StObject.set(x, "bitRateKbps", js.undefined)
+    inline def setBitRateKbpsUndefined: Self = StObject.set(x, "bitRateKbps", js.undefined)
     
-    @scala.inline
-    def setDimensions(value: Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setFileSizeBytes(value: String): Self = StObject.set(x, "fileSizeBytes", value.asInstanceOf[js.Any])
+    inline def setFileSizeBytes(value: String): Self = StObject.set(x, "fileSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSizeBytesUndefined: Self = StObject.set(x, "fileSizeBytes", js.undefined)
+    inline def setFileSizeBytesUndefined: Self = StObject.set(x, "fileSizeBytes", js.undefined)
     
-    @scala.inline
-    def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+    inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTranscoded(value: Boolean): Self = StObject.set(x, "transcoded", value.asInstanceOf[js.Any])
+    inline def setTranscoded(value: Boolean): Self = StObject.set(x, "transcoded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscodedUndefined: Self = StObject.set(x, "transcoded", js.undefined)
+    inline def setTranscodedUndefined: Self = StObject.set(x, "transcoded", js.undefined)
   }
 }

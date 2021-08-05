@@ -70,58 +70,41 @@ trait CreateDomainOptions extends StObject {
 }
 object CreateDomainOptions {
   
-  @scala.inline
-  def apply(domainPath: String): CreateDomainOptions = {
+  inline def apply(domainPath: String): CreateDomainOptions = {
     val __obj = js.Dynamic.literal(domainPath = domainPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDomainOptions]
   }
   
-  @scala.inline
-  implicit class CreateDomainOptionsMutableBuilder[Self <: CreateDomainOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDomainOptions](x: Self) {
     
-    @scala.inline
-    def setAggregateLock(value: Db): Self = StObject.set(x, "aggregateLock", value.asInstanceOf[js.Any])
+    inline def setAggregateLock(value: Db): Self = StObject.set(x, "aggregateLock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateLockUndefined: Self = StObject.set(x, "aggregateLock", js.undefined)
+    inline def setAggregateLockUndefined: Self = StObject.set(x, "aggregateLock", js.undefined)
     
-    @scala.inline
-    def setCommandRejectedEventName(value: String): Self = StObject.set(x, "commandRejectedEventName", value.asInstanceOf[js.Any])
+    inline def setCommandRejectedEventName(value: String): Self = StObject.set(x, "commandRejectedEventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandRejectedEventNameUndefined: Self = StObject.set(x, "commandRejectedEventName", js.undefined)
+    inline def setCommandRejectedEventNameUndefined: Self = StObject.set(x, "commandRejectedEventName", js.undefined)
     
-    @scala.inline
-    def setDeduplication(value: Host): Self = StObject.set(x, "deduplication", value.asInstanceOf[js.Any])
+    inline def setDeduplication(value: Host): Self = StObject.set(x, "deduplication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeduplicationUndefined: Self = StObject.set(x, "deduplication", js.undefined)
+    inline def setDeduplicationUndefined: Self = StObject.set(x, "deduplication", js.undefined)
     
-    @scala.inline
-    def setDomainPath(value: String): Self = StObject.set(x, "domainPath", value.asInstanceOf[js.Any])
+    inline def setDomainPath(value: String): Self = StObject.set(x, "domainPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventStore(value: AuthSource): Self = StObject.set(x, "eventStore", value.asInstanceOf[js.Any])
+    inline def setEventStore(value: AuthSource): Self = StObject.set(x, "eventStore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventStoreUndefined: Self = StObject.set(x, "eventStore", js.undefined)
+    inline def setEventStoreUndefined: Self = StObject.set(x, "eventStore", js.undefined)
     
-    @scala.inline
-    def setRetryOnConcurrencyTimeout(value: Double): Self = StObject.set(x, "retryOnConcurrencyTimeout", value.asInstanceOf[js.Any])
+    inline def setRetryOnConcurrencyTimeout(value: Double): Self = StObject.set(x, "retryOnConcurrencyTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryOnConcurrencyTimeoutUndefined: Self = StObject.set(x, "retryOnConcurrencyTimeout", js.undefined)
+    inline def setRetryOnConcurrencyTimeoutUndefined: Self = StObject.set(x, "retryOnConcurrencyTimeout", js.undefined)
     
-    @scala.inline
-    def setSnapshotThreshold(value: Double): Self = StObject.set(x, "snapshotThreshold", value.asInstanceOf[js.Any])
+    inline def setSnapshotThreshold(value: Double): Self = StObject.set(x, "snapshotThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotThresholdUndefined: Self = StObject.set(x, "snapshotThreshold", js.undefined)
+    inline def setSnapshotThresholdUndefined: Self = StObject.set(x, "snapshotThreshold", js.undefined)
     
-    @scala.inline
-    def setUseLoaderExtensions(value: `true`): Self = StObject.set(x, "useLoaderExtensions", value.asInstanceOf[js.Any])
+    inline def setUseLoaderExtensions(value: `true`): Self = StObject.set(x, "useLoaderExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLoaderExtensionsUndefined: Self = StObject.set(x, "useLoaderExtensions", js.undefined)
+    inline def setUseLoaderExtensionsUndefined: Self = StObject.set(x, "useLoaderExtensions", js.undefined)
   }
 }

@@ -91,88 +91,61 @@ trait VictorySliceProps
 }
 object VictorySliceProps {
   
-  @scala.inline
-  def apply(slice: EndAngle): VictorySliceProps = {
+  inline def apply(slice: EndAngle): VictorySliceProps = {
     val __obj = js.Dynamic.literal(slice = slice.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictorySliceProps]
   }
   
-  @scala.inline
-  implicit class VictorySlicePropsMutableBuilder[Self <: VictorySliceProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictorySliceProps](x: Self) {
     
-    @scala.inline
-    def setCornerRadius(value: SliceNumberOrCallback[VictorySliceProps, cornerRadius]): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+    inline def setCornerRadius(value: SliceNumberOrCallback[VictorySliceProps, cornerRadius]): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerRadiusFunction1(value: /* props */ Omit[VictorySliceProps, cornerRadius] => Double): Self = StObject.set(x, "cornerRadius", js.Any.fromFunction1(value))
+    inline def setCornerRadiusFunction1(value: /* props */ Omit[VictorySliceProps, cornerRadius] => Double): Self = StObject.set(x, "cornerRadius", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+    inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
-    @scala.inline
-    def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+    inline def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
+    inline def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
     
-    @scala.inline
-    def setInnerRadius(value: Double | (js.Function1[/* props */ Active, Double])): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+    inline def setInnerRadius(value: Double | (js.Function1[/* props */ Active, Double])): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerRadiusFunction1(value: /* props */ Active => Double): Self = StObject.set(x, "innerRadius", js.Any.fromFunction1(value))
+    inline def setInnerRadiusFunction1(value: /* props */ Active => Double): Self = StObject.set(x, "innerRadius", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
+    inline def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
     
-    @scala.inline
-    def setPadAngle(value: SliceNumberOrCallback[VictorySliceProps, padAngle]): Self = StObject.set(x, "padAngle", value.asInstanceOf[js.Any])
+    inline def setPadAngle(value: SliceNumberOrCallback[VictorySliceProps, padAngle]): Self = StObject.set(x, "padAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadAngleFunction1(value: /* props */ Omit[VictorySliceProps, padAngle] => Double): Self = StObject.set(x, "padAngle", js.Any.fromFunction1(value))
+    inline def setPadAngleFunction1(value: /* props */ Omit[VictorySliceProps, padAngle] => Double): Self = StObject.set(x, "padAngle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPadAngleUndefined: Self = StObject.set(x, "padAngle", js.undefined)
+    inline def setPadAngleUndefined: Self = StObject.set(x, "padAngle", js.undefined)
     
-    @scala.inline
-    def setPathComponent(value: ReactElement): Self = StObject.set(x, "pathComponent", value.asInstanceOf[js.Any])
+    inline def setPathComponent(value: ReactElement): Self = StObject.set(x, "pathComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathComponentUndefined: Self = StObject.set(x, "pathComponent", js.undefined)
+    inline def setPathComponentUndefined: Self = StObject.set(x, "pathComponent", js.undefined)
     
-    @scala.inline
-    def setPathFunction(value: VictorySliceProps => String): Self = StObject.set(x, "pathFunction", js.Any.fromFunction1(value))
+    inline def setPathFunction(value: VictorySliceProps => String): Self = StObject.set(x, "pathFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPathFunctionUndefined: Self = StObject.set(x, "pathFunction", js.undefined)
+    inline def setPathFunctionUndefined: Self = StObject.set(x, "pathFunction", js.undefined)
     
-    @scala.inline
-    def setRadius(value: SliceNumberOrCallback[VictorySliceProps, radius]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: SliceNumberOrCallback[VictorySliceProps, radius]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusFunction1(value: /* props */ Omit[VictorySliceProps, radius] => Double): Self = StObject.set(x, "radius", js.Any.fromFunction1(value))
+    inline def setRadiusFunction1(value: /* props */ Omit[VictorySliceProps, radius] => Double): Self = StObject.set(x, "radius", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setSlice(value: EndAngle): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
+    inline def setSlice(value: EndAngle): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliceEndAngle(value: SliceNumberOrCallback[VictorySliceProps, sliceEndAngle]): Self = StObject.set(x, "sliceEndAngle", value.asInstanceOf[js.Any])
+    inline def setSliceEndAngle(value: SliceNumberOrCallback[VictorySliceProps, sliceEndAngle]): Self = StObject.set(x, "sliceEndAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliceEndAngleFunction1(value: /* props */ Omit[VictorySliceProps, sliceEndAngle] => Double): Self = StObject.set(x, "sliceEndAngle", js.Any.fromFunction1(value))
+    inline def setSliceEndAngleFunction1(value: /* props */ Omit[VictorySliceProps, sliceEndAngle] => Double): Self = StObject.set(x, "sliceEndAngle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSliceEndAngleUndefined: Self = StObject.set(x, "sliceEndAngle", js.undefined)
+    inline def setSliceEndAngleUndefined: Self = StObject.set(x, "sliceEndAngle", js.undefined)
     
-    @scala.inline
-    def setSliceStartAngle(value: SliceNumberOrCallback[VictorySliceProps, sliceStartAngle]): Self = StObject.set(x, "sliceStartAngle", value.asInstanceOf[js.Any])
+    inline def setSliceStartAngle(value: SliceNumberOrCallback[VictorySliceProps, sliceStartAngle]): Self = StObject.set(x, "sliceStartAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliceStartAngleFunction1(value: /* props */ Omit[VictorySliceProps, sliceStartAngle] => Double): Self = StObject.set(x, "sliceStartAngle", js.Any.fromFunction1(value))
+    inline def setSliceStartAngleFunction1(value: /* props */ Omit[VictorySliceProps, sliceStartAngle] => Double): Self = StObject.set(x, "sliceStartAngle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSliceStartAngleUndefined: Self = StObject.set(x, "sliceStartAngle", js.undefined)
+    inline def setSliceStartAngleUndefined: Self = StObject.set(x, "sliceStartAngle", js.undefined)
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlEditorType extends StObject
 object OlEditorType {
   
-  @scala.inline
-  def olEditorHTML: `2` = 2.asInstanceOf[`2`]
+  inline def olEditorHTML: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olEditorRTF: `3` = 3.asInstanceOf[`3`]
+  inline def olEditorRTF: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olEditorText: `1` = 1.asInstanceOf[`1`]
+  inline def olEditorText: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olEditorWord: `4` = 4.asInstanceOf[`4`]
+  inline def olEditorWord: `4` = 4.asInstanceOf[`4`]
 }

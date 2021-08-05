@@ -14,25 +14,19 @@ trait RunOptions extends StObject {
 }
 object RunOptions {
   
-  @scala.inline
-  def apply(): RunOptions = {
+  inline def apply(): RunOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunOptions]
   }
   
-  @scala.inline
-  implicit class RunOptionsMutableBuilder[Self <: RunOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RunOptions](x: Self) {
     
-    @scala.inline
-    def setRepeatView(value: Boolean): Self = StObject.set(x, "repeatView", value.asInstanceOf[js.Any])
+    inline def setRepeatView(value: Boolean): Self = StObject.set(x, "repeatView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatViewUndefined: Self = StObject.set(x, "repeatView", js.undefined)
+    inline def setRepeatViewUndefined: Self = StObject.set(x, "repeatView", js.undefined)
     
-    @scala.inline
-    def setRun(value: Double): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
+    inline def setRun(value: Double): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+    inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
   }
 }

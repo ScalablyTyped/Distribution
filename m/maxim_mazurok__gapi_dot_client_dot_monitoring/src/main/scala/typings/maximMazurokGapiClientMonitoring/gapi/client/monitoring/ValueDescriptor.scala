@@ -23,37 +23,27 @@ trait ValueDescriptor extends StObject {
 }
 object ValueDescriptor {
   
-  @scala.inline
-  def apply(): ValueDescriptor = {
+  inline def apply(): ValueDescriptor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValueDescriptor]
   }
   
-  @scala.inline
-  implicit class ValueDescriptorMutableBuilder[Self <: ValueDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ValueDescriptor](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setMetricKind(value: String): Self = StObject.set(x, "metricKind", value.asInstanceOf[js.Any])
+    inline def setMetricKind(value: String): Self = StObject.set(x, "metricKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricKindUndefined: Self = StObject.set(x, "metricKind", js.undefined)
+    inline def setMetricKindUndefined: Self = StObject.set(x, "metricKind", js.undefined)
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
+    inline def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
   }
 }

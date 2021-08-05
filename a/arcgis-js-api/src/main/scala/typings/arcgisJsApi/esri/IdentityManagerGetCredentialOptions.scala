@@ -33,8 +33,7 @@ trait IdentityManagerGetCredentialOptions
 }
 object IdentityManagerGetCredentialOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object IdentityManagerGetCredentialOptions {
     __obj.asInstanceOf[IdentityManagerGetCredentialOptions]
   }
   
-  @scala.inline
-  implicit class IdentityManagerGetCredentialOptionsMutableBuilder[Self <: IdentityManagerGetCredentialOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityManagerGetCredentialOptions](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setOAuthPopupConfirmation(value: Boolean): Self = StObject.set(x, "oAuthPopupConfirmation", value.asInstanceOf[js.Any])
+    inline def setOAuthPopupConfirmation(value: Boolean): Self = StObject.set(x, "oAuthPopupConfirmation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOAuthPopupConfirmationUndefined: Self = StObject.set(x, "oAuthPopupConfirmation", js.undefined)
+    inline def setOAuthPopupConfirmationUndefined: Self = StObject.set(x, "oAuthPopupConfirmation", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

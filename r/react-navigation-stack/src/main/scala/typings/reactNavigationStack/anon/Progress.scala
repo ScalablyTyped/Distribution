@@ -14,16 +14,13 @@ trait Progress extends StObject {
 }
 object Progress {
   
-  @scala.inline
-  def apply(progress: AnimatedInterpolation): Progress = {
+  inline def apply(progress: AnimatedInterpolation): Progress = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[Progress]
   }
   
-  @scala.inline
-  implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+  extension [Self <: Progress](x: Self) {
     
-    @scala.inline
-    def setProgress(value: AnimatedInterpolation): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: AnimatedInterpolation): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
   }
 }

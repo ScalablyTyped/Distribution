@@ -15,6 +15,5 @@ class Boolean ()
 }
 object Boolean {
   
-  @scala.inline
-  def apply: BooleanConstructor = js.Dynamic.global.selectDynamic("Boolean").asInstanceOf[BooleanConstructor]
+  inline def apply: BooleanConstructor = js.Dynamic.global.selectDynamic("Boolean").asInstanceOf[BooleanConstructor]
 }

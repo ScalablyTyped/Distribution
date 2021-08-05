@@ -18,19 +18,15 @@ trait SubscriptionLimits extends StObject {
 }
 object SubscriptionLimits {
   
-  @scala.inline
-  def apply(ProtectionGroupLimits: ProtectionGroupLimits, ProtectionLimits: ProtectionLimits): SubscriptionLimits = {
+  inline def apply(ProtectionGroupLimits: ProtectionGroupLimits, ProtectionLimits: ProtectionLimits): SubscriptionLimits = {
     val __obj = js.Dynamic.literal(ProtectionGroupLimits = ProtectionGroupLimits.asInstanceOf[js.Any], ProtectionLimits = ProtectionLimits.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionLimits]
   }
   
-  @scala.inline
-  implicit class SubscriptionLimitsMutableBuilder[Self <: SubscriptionLimits] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionLimits](x: Self) {
     
-    @scala.inline
-    def setProtectionGroupLimits(value: ProtectionGroupLimits): Self = StObject.set(x, "ProtectionGroupLimits", value.asInstanceOf[js.Any])
+    inline def setProtectionGroupLimits(value: ProtectionGroupLimits): Self = StObject.set(x, "ProtectionGroupLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionLimits(value: ProtectionLimits): Self = StObject.set(x, "ProtectionLimits", value.asInstanceOf[js.Any])
+    inline def setProtectionLimits(value: ProtectionLimits): Self = StObject.set(x, "ProtectionLimits", value.asInstanceOf[js.Any])
   }
 }

@@ -46,8 +46,7 @@ trait ASPxSchedulerViewType extends StObject {
 }
 object ASPxSchedulerViewType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Agenda: String,
     Day: String,
     FullWeek: String,
@@ -60,28 +59,20 @@ object ASPxSchedulerViewType {
     __obj.asInstanceOf[ASPxSchedulerViewType]
   }
   
-  @scala.inline
-  implicit class ASPxSchedulerViewTypeMutableBuilder[Self <: ASPxSchedulerViewType] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxSchedulerViewType](x: Self) {
     
-    @scala.inline
-    def setAgenda(value: String): Self = StObject.set(x, "Agenda", value.asInstanceOf[js.Any])
+    inline def setAgenda(value: String): Self = StObject.set(x, "Agenda", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDay(value: String): Self = StObject.set(x, "Day", value.asInstanceOf[js.Any])
+    inline def setDay(value: String): Self = StObject.set(x, "Day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullWeek(value: String): Self = StObject.set(x, "FullWeek", value.asInstanceOf[js.Any])
+    inline def setFullWeek(value: String): Self = StObject.set(x, "FullWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: String): Self = StObject.set(x, "Month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: String): Self = StObject.set(x, "Month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeline(value: String): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
+    inline def setTimeline(value: String): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeek(value: String): Self = StObject.set(x, "Week", value.asInstanceOf[js.Any])
+    inline def setWeek(value: String): Self = StObject.set(x, "Week", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkWeek(value: String): Self = StObject.set(x, "WorkWeek", value.asInstanceOf[js.Any])
+    inline def setWorkWeek(value: String): Self = StObject.set(x, "WorkWeek", value.asInstanceOf[js.Any])
   }
 }

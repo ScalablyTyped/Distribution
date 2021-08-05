@@ -23,29 +23,22 @@ trait PublicKeyCredentialDescriptor extends StObject {
 }
 object PublicKeyCredentialDescriptor {
   
-  @scala.inline
-  def apply(id: BufferSource): PublicKeyCredentialDescriptor = {
+  inline def apply(id: BufferSource): PublicKeyCredentialDescriptor = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("public-key")
     __obj.asInstanceOf[PublicKeyCredentialDescriptor]
   }
   
-  @scala.inline
-  implicit class PublicKeyCredentialDescriptorMutableBuilder[Self <: PublicKeyCredentialDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKeyCredentialDescriptor](x: Self) {
     
-    @scala.inline
-    def setId(value: BufferSource): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: BufferSource): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransports(value: js.Array[usb | nfc | ble | internal]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
+    inline def setTransports(value: js.Array[usb | nfc | ble | internal]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
+    inline def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
     
-    @scala.inline
-    def setTransportsVarargs(value: (usb | nfc | ble | internal)*): Self = StObject.set(x, "transports", js.Array(value :_*))
+    inline def setTransportsVarargs(value: (usb | nfc | ble | internal)*): Self = StObject.set(x, "transports", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: `public-key`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `public-key`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -23,43 +23,31 @@ trait GradeHistory extends StObject {
 }
 object GradeHistory {
   
-  @scala.inline
-  def apply(): GradeHistory = {
+  inline def apply(): GradeHistory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GradeHistory]
   }
   
-  @scala.inline
-  implicit class GradeHistoryMutableBuilder[Self <: GradeHistory] (val x: Self) extends AnyVal {
+  extension [Self <: GradeHistory](x: Self) {
     
-    @scala.inline
-    def setActorUserId(value: String): Self = StObject.set(x, "actorUserId", value.asInstanceOf[js.Any])
+    inline def setActorUserId(value: String): Self = StObject.set(x, "actorUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActorUserIdUndefined: Self = StObject.set(x, "actorUserId", js.undefined)
+    inline def setActorUserIdUndefined: Self = StObject.set(x, "actorUserId", js.undefined)
     
-    @scala.inline
-    def setGradeChangeType(value: String): Self = StObject.set(x, "gradeChangeType", value.asInstanceOf[js.Any])
+    inline def setGradeChangeType(value: String): Self = StObject.set(x, "gradeChangeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradeChangeTypeUndefined: Self = StObject.set(x, "gradeChangeType", js.undefined)
+    inline def setGradeChangeTypeUndefined: Self = StObject.set(x, "gradeChangeType", js.undefined)
     
-    @scala.inline
-    def setGradeTimestamp(value: String): Self = StObject.set(x, "gradeTimestamp", value.asInstanceOf[js.Any])
+    inline def setGradeTimestamp(value: String): Self = StObject.set(x, "gradeTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradeTimestampUndefined: Self = StObject.set(x, "gradeTimestamp", js.undefined)
+    inline def setGradeTimestampUndefined: Self = StObject.set(x, "gradeTimestamp", js.undefined)
     
-    @scala.inline
-    def setMaxPoints(value: Double): Self = StObject.set(x, "maxPoints", value.asInstanceOf[js.Any])
+    inline def setMaxPoints(value: Double): Self = StObject.set(x, "maxPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPointsUndefined: Self = StObject.set(x, "maxPoints", js.undefined)
+    inline def setMaxPointsUndefined: Self = StObject.set(x, "maxPoints", js.undefined)
     
-    @scala.inline
-    def setPointsEarned(value: Double): Self = StObject.set(x, "pointsEarned", value.asInstanceOf[js.Any])
+    inline def setPointsEarned(value: Double): Self = StObject.set(x, "pointsEarned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsEarnedUndefined: Self = StObject.set(x, "pointsEarned", js.undefined)
+    inline def setPointsEarnedUndefined: Self = StObject.set(x, "pointsEarned", js.undefined)
   }
 }

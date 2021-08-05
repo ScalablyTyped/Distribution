@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def swapCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("swapCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def swapCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("swapCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -38,52 +38,37 @@ trait RecommendationFeedback extends StObject {
 }
 object RecommendationFeedback {
   
-  @scala.inline
-  def apply(): RecommendationFeedback = {
+  inline def apply(): RecommendationFeedback = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecommendationFeedback]
   }
   
-  @scala.inline
-  implicit class RecommendationFeedbackMutableBuilder[Self <: RecommendationFeedback] (val x: Self) extends AnyVal {
+  extension [Self <: RecommendationFeedback](x: Self) {
     
-    @scala.inline
-    def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
+    inline def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeReviewArnUndefined: Self = StObject.set(x, "CodeReviewArn", js.undefined)
+    inline def setCodeReviewArnUndefined: Self = StObject.set(x, "CodeReviewArn", js.undefined)
     
-    @scala.inline
-    def setCreatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeStampUndefined: Self = StObject.set(x, "CreatedTimeStamp", js.undefined)
+    inline def setCreatedTimeStampUndefined: Self = StObject.set(x, "CreatedTimeStamp", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeStampUndefined: Self = StObject.set(x, "LastUpdatedTimeStamp", js.undefined)
+    inline def setLastUpdatedTimeStampUndefined: Self = StObject.set(x, "LastUpdatedTimeStamp", js.undefined)
     
-    @scala.inline
-    def setReactions(value: Reactions): Self = StObject.set(x, "Reactions", value.asInstanceOf[js.Any])
+    inline def setReactions(value: Reactions): Self = StObject.set(x, "Reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactionsUndefined: Self = StObject.set(x, "Reactions", js.undefined)
+    inline def setReactionsUndefined: Self = StObject.set(x, "Reactions", js.undefined)
     
-    @scala.inline
-    def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "Reactions", js.Array(value :_*))
+    inline def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "Reactions", js.Array(value :_*))
     
-    @scala.inline
-    def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
+    inline def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationIdUndefined: Self = StObject.set(x, "RecommendationId", js.undefined)
+    inline def setRecommendationIdUndefined: Self = StObject.set(x, "RecommendationId", js.undefined)
     
-    @scala.inline
-    def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

@@ -56,51 +56,37 @@ trait AutoCompleteOptions extends StObject {
 }
 object AutoCompleteOptions {
   
-  @scala.inline
-  def apply(): AutoCompleteOptions = {
+  inline def apply(): AutoCompleteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoCompleteOptions]
   }
   
-  @scala.inline
-  implicit class AutoCompleteOptionsMutableBuilder[Self <: AutoCompleteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AutoCompleteOptions](x: Self) {
     
-    @scala.inline
-    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
-    @scala.inline
-    def setConfirmKeys(value: js.Array[Double]): Self = StObject.set(x, "confirmKeys", value.asInstanceOf[js.Any])
+    inline def setConfirmKeys(value: js.Array[Double]): Self = StObject.set(x, "confirmKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmKeysUndefined: Self = StObject.set(x, "confirmKeys", js.undefined)
+    inline def setConfirmKeysUndefined: Self = StObject.set(x, "confirmKeys", js.undefined)
     
-    @scala.inline
-    def setConfirmKeysVarargs(value: Double*): Self = StObject.set(x, "confirmKeys", js.Array(value :_*))
+    inline def setConfirmKeysVarargs(value: Double*): Self = StObject.set(x, "confirmKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setFilter(value: AutoCompleteMatchingStrategy | (js.Function1[/* query */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: AutoCompleteMatchingStrategy | (js.Function1[/* query */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterFunction1(value: /* query */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilterFunction1(value: /* query */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setGetOptions(
+    inline def setGetOptions(
       value: (/* text */ String, /* path */ JSONPath, /* input */ AutoCompleteElementType, /* editor */ JSONEditor) => AutoCompleteCompletion | js.Promise[AutoCompleteCompletion]
     ): Self = StObject.set(x, "getOptions", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetOptionsUndefined: Self = StObject.set(x, "getOptions", js.undefined)
+    inline def setGetOptionsUndefined: Self = StObject.set(x, "getOptions", js.undefined)
     
-    @scala.inline
-    def setTrigger(value: AutoCompleteTrigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: AutoCompleteTrigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

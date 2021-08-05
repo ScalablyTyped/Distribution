@@ -12,19 +12,15 @@ trait PostsInsightsFeedResponseInlineInsightsNode extends StObject {
 }
 object PostsInsightsFeedResponseInlineInsightsNode {
   
-  @scala.inline
-  def apply(metrics: PostsInsightsFeedResponseMetrics, state: String): PostsInsightsFeedResponseInlineInsightsNode = {
+  inline def apply(metrics: PostsInsightsFeedResponseMetrics, state: String): PostsInsightsFeedResponseInlineInsightsNode = {
     val __obj = js.Dynamic.literal(metrics = metrics.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostsInsightsFeedResponseInlineInsightsNode]
   }
   
-  @scala.inline
-  implicit class PostsInsightsFeedResponseInlineInsightsNodeMutableBuilder[Self <: PostsInsightsFeedResponseInlineInsightsNode] (val x: Self) extends AnyVal {
+  extension [Self <: PostsInsightsFeedResponseInlineInsightsNode](x: Self) {
     
-    @scala.inline
-    def setMetrics(value: PostsInsightsFeedResponseMetrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: PostsInsightsFeedResponseMetrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

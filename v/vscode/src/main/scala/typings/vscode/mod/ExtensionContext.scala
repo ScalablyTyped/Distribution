@@ -131,8 +131,7 @@ trait ExtensionContext extends StObject {
 }
 object ExtensionContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asAbsolutePath: String => String,
     environmentVariableCollection: EnvironmentVariableCollection,
     extensionMode: ExtensionMode,
@@ -150,58 +149,40 @@ object ExtensionContext {
     __obj.asInstanceOf[ExtensionContext]
   }
   
-  @scala.inline
-  implicit class ExtensionContextMutableBuilder[Self <: ExtensionContext] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionContext](x: Self) {
     
-    @scala.inline
-    def setAsAbsolutePath(value: String => String): Self = StObject.set(x, "asAbsolutePath", js.Any.fromFunction1(value))
+    inline def setAsAbsolutePath(value: String => String): Self = StObject.set(x, "asAbsolutePath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnvironmentVariableCollection(value: EnvironmentVariableCollection): Self = StObject.set(x, "environmentVariableCollection", value.asInstanceOf[js.Any])
+    inline def setEnvironmentVariableCollection(value: EnvironmentVariableCollection): Self = StObject.set(x, "environmentVariableCollection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionMode(value: ExtensionMode): Self = StObject.set(x, "extensionMode", value.asInstanceOf[js.Any])
+    inline def setExtensionMode(value: ExtensionMode): Self = StObject.set(x, "extensionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionPath(value: String): Self = StObject.set(x, "extensionPath", value.asInstanceOf[js.Any])
+    inline def setExtensionPath(value: String): Self = StObject.set(x, "extensionPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUri(value: Uri): Self = StObject.set(x, "extensionUri", value.asInstanceOf[js.Any])
+    inline def setExtensionUri(value: Uri): Self = StObject.set(x, "extensionUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalState(value: MementosetKeysForSynckeys): Self = StObject.set(x, "globalState", value.asInstanceOf[js.Any])
+    inline def setGlobalState(value: MementosetKeysForSynckeys): Self = StObject.set(x, "globalState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalStoragePath(value: String): Self = StObject.set(x, "globalStoragePath", value.asInstanceOf[js.Any])
+    inline def setGlobalStoragePath(value: String): Self = StObject.set(x, "globalStoragePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalStorageUri(value: Uri): Self = StObject.set(x, "globalStorageUri", value.asInstanceOf[js.Any])
+    inline def setGlobalStorageUri(value: Uri): Self = StObject.set(x, "globalStorageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogPath(value: String): Self = StObject.set(x, "logPath", value.asInstanceOf[js.Any])
+    inline def setLogPath(value: String): Self = StObject.set(x, "logPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUri(value: Uri): Self = StObject.set(x, "logUri", value.asInstanceOf[js.Any])
+    inline def setLogUri(value: Uri): Self = StObject.set(x, "logUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoragePath(value: String): Self = StObject.set(x, "storagePath", value.asInstanceOf[js.Any])
+    inline def setStoragePath(value: String): Self = StObject.set(x, "storagePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoragePathUndefined: Self = StObject.set(x, "storagePath", js.undefined)
+    inline def setStoragePathUndefined: Self = StObject.set(x, "storagePath", js.undefined)
     
-    @scala.inline
-    def setStorageUri(value: Uri): Self = StObject.set(x, "storageUri", value.asInstanceOf[js.Any])
+    inline def setStorageUri(value: Uri): Self = StObject.set(x, "storageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageUriUndefined: Self = StObject.set(x, "storageUri", js.undefined)
+    inline def setStorageUriUndefined: Self = StObject.set(x, "storageUri", js.undefined)
     
-    @scala.inline
-    def setSubscriptions(value: js.Array[Dispose]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+    inline def setSubscriptions(value: js.Array[Dispose]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionsVarargs(value: Dispose*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: Dispose*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkspaceState(value: Memento): Self = StObject.set(x, "workspaceState", value.asInstanceOf[js.Any])
+    inline def setWorkspaceState(value: Memento): Self = StObject.set(x, "workspaceState", value.asInstanceOf[js.Any])
   }
 }

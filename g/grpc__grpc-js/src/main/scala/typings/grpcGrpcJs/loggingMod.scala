@@ -12,18 +12,13 @@ object loggingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLogger(): PartialConsole = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[PartialConsole]
+  inline def getLogger(): PartialConsole = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[PartialConsole]
   
-  @scala.inline
-  def log(severity: LogVerbosity, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(severity.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log(severity: LogVerbosity, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(severity.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLogger(logger: PartialConsole): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogger(logger: PartialConsole): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLoggerVerbosity(verbosity: LogVerbosity): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoggerVerbosity")(verbosity.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLoggerVerbosity(verbosity: LogVerbosity): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoggerVerbosity")(verbosity.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def trace(severity: LogVerbosity, tracer: String, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trace")(severity.asInstanceOf[js.Any], tracer.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trace(severity: LogVerbosity, tracer: String, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trace")(severity.asInstanceOf[js.Any], tracer.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

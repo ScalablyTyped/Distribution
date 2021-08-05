@@ -14,31 +14,23 @@ trait ResourceLimits extends StObject {
 }
 object ResourceLimits {
   
-  @scala.inline
-  def apply(): ResourceLimits = {
+  inline def apply(): ResourceLimits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceLimits]
   }
   
-  @scala.inline
-  implicit class ResourceLimitsMutableBuilder[Self <: ResourceLimits] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceLimits](x: Self) {
     
-    @scala.inline
-    def setMemoryBytes(value: Double): Self = StObject.set(x, "MemoryBytes", value.asInstanceOf[js.Any])
+    inline def setMemoryBytes(value: Double): Self = StObject.set(x, "MemoryBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryBytesUndefined: Self = StObject.set(x, "MemoryBytes", js.undefined)
+    inline def setMemoryBytesUndefined: Self = StObject.set(x, "MemoryBytes", js.undefined)
     
-    @scala.inline
-    def setNanoCPUs(value: Double): Self = StObject.set(x, "NanoCPUs", value.asInstanceOf[js.Any])
+    inline def setNanoCPUs(value: Double): Self = StObject.set(x, "NanoCPUs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNanoCPUsUndefined: Self = StObject.set(x, "NanoCPUs", js.undefined)
+    inline def setNanoCPUsUndefined: Self = StObject.set(x, "NanoCPUs", js.undefined)
     
-    @scala.inline
-    def setPids(value: Double): Self = StObject.set(x, "Pids", value.asInstanceOf[js.Any])
+    inline def setPids(value: Double): Self = StObject.set(x, "Pids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPidsUndefined: Self = StObject.set(x, "Pids", js.undefined)
+    inline def setPidsUndefined: Self = StObject.set(x, "Pids", js.undefined)
   }
 }

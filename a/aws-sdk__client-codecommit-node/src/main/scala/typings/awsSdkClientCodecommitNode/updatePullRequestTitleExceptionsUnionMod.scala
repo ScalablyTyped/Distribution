@@ -17,38 +17,32 @@ object updatePullRequestTitleExceptionsUnionMod {
   trait UpdatePullRequestTitleExceptionsUnion extends StObject
   object UpdatePullRequestTitleExceptionsUnion {
     
-    @scala.inline
-    def InvalidPullRequestIdException(): typings.awsSdkClientCodecommitNode.typesInvalidPullRequestIdExceptionMod.InvalidPullRequestIdException = {
+    inline def InvalidPullRequestIdException(): typings.awsSdkClientCodecommitNode.typesInvalidPullRequestIdExceptionMod.InvalidPullRequestIdException = {
       val __obj = js.Dynamic.literal(name = "InvalidPullRequestIdException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidPullRequestIdExceptionMod.InvalidPullRequestIdException]
     }
     
-    @scala.inline
-    def InvalidTitleException(): typings.awsSdkClientCodecommitNode.typesInvalidTitleExceptionMod.InvalidTitleException = {
+    inline def InvalidTitleException(): typings.awsSdkClientCodecommitNode.typesInvalidTitleExceptionMod.InvalidTitleException = {
       val __obj = js.Dynamic.literal(name = "InvalidTitleException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidTitleExceptionMod.InvalidTitleException]
     }
     
-    @scala.inline
-    def PullRequestAlreadyClosedException(): typings.awsSdkClientCodecommitNode.typesPullRequestAlreadyClosedExceptionMod.PullRequestAlreadyClosedException = {
+    inline def PullRequestAlreadyClosedException(): typings.awsSdkClientCodecommitNode.typesPullRequestAlreadyClosedExceptionMod.PullRequestAlreadyClosedException = {
       val __obj = js.Dynamic.literal(name = "PullRequestAlreadyClosedException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesPullRequestAlreadyClosedExceptionMod.PullRequestAlreadyClosedException]
     }
     
-    @scala.inline
-    def PullRequestDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesPullRequestDoesNotExistExceptionMod.PullRequestDoesNotExistException = {
+    inline def PullRequestDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesPullRequestDoesNotExistExceptionMod.PullRequestDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "PullRequestDoesNotExistException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesPullRequestDoesNotExistExceptionMod.PullRequestDoesNotExistException]
     }
     
-    @scala.inline
-    def PullRequestIdRequiredException(): typings.awsSdkClientCodecommitNode.typesPullRequestIdRequiredExceptionMod.PullRequestIdRequiredException = {
+    inline def PullRequestIdRequiredException(): typings.awsSdkClientCodecommitNode.typesPullRequestIdRequiredExceptionMod.PullRequestIdRequiredException = {
       val __obj = js.Dynamic.literal(name = "PullRequestIdRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesPullRequestIdRequiredExceptionMod.PullRequestIdRequiredException]
     }
     
-    @scala.inline
-    def TitleRequiredException(): typings.awsSdkClientCodecommitNode.typesTitleRequiredExceptionMod.TitleRequiredException = {
+    inline def TitleRequiredException(): typings.awsSdkClientCodecommitNode.typesTitleRequiredExceptionMod.TitleRequiredException = {
       val __obj = js.Dynamic.literal(name = "TitleRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesTitleRequiredExceptionMod.TitleRequiredException]
     }

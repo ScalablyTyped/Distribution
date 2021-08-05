@@ -69,8 +69,7 @@ trait ReactDOM
      with ReactSVG
 object ReactDOM {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a: DetailedHTMLFactory[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement],
     abbr: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     address: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],

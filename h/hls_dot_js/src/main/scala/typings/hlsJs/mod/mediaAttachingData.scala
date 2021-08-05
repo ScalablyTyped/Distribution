@@ -13,19 +13,15 @@ trait mediaAttachingData extends StObject {
 }
 object mediaAttachingData {
   
-  @scala.inline
-  def apply(media: HTMLMediaElement, mediaSource: String): mediaAttachingData = {
+  inline def apply(media: HTMLMediaElement, mediaSource: String): mediaAttachingData = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any], mediaSource = mediaSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[mediaAttachingData]
   }
   
-  @scala.inline
-  implicit class mediaAttachingDataMutableBuilder[Self <: mediaAttachingData] (val x: Self) extends AnyVal {
+  extension [Self <: mediaAttachingData](x: Self) {
     
-    @scala.inline
-    def setMedia(value: HTMLMediaElement): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: HTMLMediaElement): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaSource(value: String): Self = StObject.set(x, "mediaSource", value.asInstanceOf[js.Any])
+    inline def setMediaSource(value: String): Self = StObject.set(x, "mediaSource", value.asInstanceOf[js.Any])
   }
 }

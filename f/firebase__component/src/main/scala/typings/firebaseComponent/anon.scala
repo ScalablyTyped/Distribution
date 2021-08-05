@@ -16,23 +16,18 @@ object anon {
   }
   object Identifier {
     
-    @scala.inline
-    def apply(): Identifier = {
+    inline def apply(): Identifier = {
       val __obj = js.Dynamic.literal(optional = true)
       __obj.asInstanceOf[Identifier]
     }
     
-    @scala.inline
-    implicit class IdentifierMutableBuilder[Self <: Identifier] (val x: Self) extends AnyVal {
+    extension [Self <: Identifier](x: Self) {
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+      inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
       
-      @scala.inline
-      def setOptional(value: `true`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: `true`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,26 +39,20 @@ object anon {
   }
   object Optional {
     
-    @scala.inline
-    def apply(): Optional = {
+    inline def apply(): Optional = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optional]
     }
     
-    @scala.inline
-    implicit class OptionalMutableBuilder[Self <: Optional] (val x: Self) extends AnyVal {
+    extension [Self <: Optional](x: Self) {
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+      inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
       
-      @scala.inline
-      def setOptional(value: `false`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: `false`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     }
   }
 }

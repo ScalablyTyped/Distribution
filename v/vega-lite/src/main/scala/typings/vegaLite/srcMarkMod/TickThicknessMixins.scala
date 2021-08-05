@@ -18,19 +18,15 @@ trait TickThicknessMixins extends StObject {
 }
 object TickThicknessMixins {
   
-  @scala.inline
-  def apply(): TickThicknessMixins = {
+  inline def apply(): TickThicknessMixins = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TickThicknessMixins]
   }
   
-  @scala.inline
-  implicit class TickThicknessMixinsMutableBuilder[Self <: TickThicknessMixins] (val x: Self) extends AnyVal {
+  extension [Self <: TickThicknessMixins](x: Self) {
     
-    @scala.inline
-    def setThickness(value: Double | SignalRef): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    inline def setThickness(value: Double | SignalRef): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
+    inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
   }
 }

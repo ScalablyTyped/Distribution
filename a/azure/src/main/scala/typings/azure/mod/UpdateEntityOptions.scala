@@ -12,19 +12,15 @@ trait UpdateEntityOptions
 }
 object UpdateEntityOptions {
   
-  @scala.inline
-  def apply(): UpdateEntityOptions = {
+  inline def apply(): UpdateEntityOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateEntityOptions]
   }
   
-  @scala.inline
-  implicit class UpdateEntityOptionsMutableBuilder[Self <: UpdateEntityOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEntityOptions](x: Self) {
     
-    @scala.inline
-    def setCheckEtag(value: Boolean): Self = StObject.set(x, "checkEtag", value.asInstanceOf[js.Any])
+    inline def setCheckEtag(value: Boolean): Self = StObject.set(x, "checkEtag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckEtagUndefined: Self = StObject.set(x, "checkEtag", js.undefined)
+    inline def setCheckEtagUndefined: Self = StObject.set(x, "checkEtag", js.undefined)
   }
 }

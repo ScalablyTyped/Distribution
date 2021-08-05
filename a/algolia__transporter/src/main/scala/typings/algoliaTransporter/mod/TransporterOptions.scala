@@ -75,8 +75,7 @@ trait TransporterOptions extends StObject {
 }
 object TransporterOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headers: Headers,
     hosts: js.Array[HostOptions],
     hostsCache: Cache,
@@ -92,40 +91,28 @@ object TransporterOptions {
     __obj.asInstanceOf[TransporterOptions]
   }
   
-  @scala.inline
-  implicit class TransporterOptionsMutableBuilder[Self <: TransporterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TransporterOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHosts(value: js.Array[HostOptions]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+    inline def setHosts(value: js.Array[HostOptions]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostsCache(value: Cache): Self = StObject.set(x, "hostsCache", value.asInstanceOf[js.Any])
+    inline def setHostsCache(value: Cache): Self = StObject.set(x, "hostsCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostsVarargs(value: HostOptions*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+    inline def setHostsVarargs(value: HostOptions*): Self = StObject.set(x, "hosts", js.Array(value :_*))
     
-    @scala.inline
-    def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParameters(value: QueryParameters): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+    inline def setQueryParameters(value: QueryParameters): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequester(value: Requester): Self = StObject.set(x, "requester", value.asInstanceOf[js.Any])
+    inline def setRequester(value: Requester): Self = StObject.set(x, "requester", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsCache(value: Cache): Self = StObject.set(x, "requestsCache", value.asInstanceOf[js.Any])
+    inline def setRequestsCache(value: Cache): Self = StObject.set(x, "requestsCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesCache(value: Cache): Self = StObject.set(x, "responsesCache", value.asInstanceOf[js.Any])
+    inline def setResponsesCache(value: Cache): Self = StObject.set(x, "responsesCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeouts(value: Timeouts): Self = StObject.set(x, "timeouts", value.asInstanceOf[js.Any])
+    inline def setTimeouts(value: Timeouts): Self = StObject.set(x, "timeouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgent(value: UserAgent): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: UserAgent): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
   }
 }

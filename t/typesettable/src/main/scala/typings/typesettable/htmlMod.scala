@@ -32,9 +32,9 @@ object htmlMod {
     def this(element: HTMLElement, className: String, addTitle: Boolean) = this()
     def this(element: HTMLElement, className: Unit, addTitle: Boolean) = this()
     
-    var addTitle: js.Any = js.native
+    /* private */ var addTitle: js.Any = js.native
     
-    var className: js.Any = js.native
+    /* private */ var className: js.Any = js.native
     
     /* private */ def createHtmlLinePen(textBlock: js.Any): js.Any = js.native
     
@@ -53,7 +53,7 @@ object htmlMod {
     @JSName("createRuler")
     var createRuler_Original: IRulerFactory = js.native
     
-    var element: js.Any = js.native
+    /* private */ var element: js.Any = js.native
     
     def setAddTitle(addTitle: Boolean): Unit = js.native
   }
@@ -71,8 +71,7 @@ object htmlMod {
     /**
       * Adds the variadic classnames to the Element
       */
-    @scala.inline
-    def addClasses(element: Element, classNames: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClasses")(element.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addClasses(element: Element, classNames: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClasses")(element.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Appends an HTML element with the specified tag name to the provided element.
@@ -80,19 +79,16 @@ object htmlMod {
       *
       * Returns the new element.
       */
-    @scala.inline
-    def append(element: Element, tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def append(element: Element, tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /**
       * Creates and returns a new HTMLElement with the attached classnames.
       */
-    @scala.inline
-    def create(tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def create(tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /**
       * Returns the width/height of HTMLElement's bounding box
       */
-    @scala.inline
-    def getDimensions(element: HTMLElement): IDimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[IDimensions]
+    inline def getDimensions(element: HTMLElement): IDimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[IDimensions]
   }
 }

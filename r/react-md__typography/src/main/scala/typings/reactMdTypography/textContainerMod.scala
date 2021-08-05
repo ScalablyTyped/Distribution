@@ -61,41 +61,30 @@ object textContainerMod {
   }
   object TextContainerProps {
     
-    @scala.inline
-    def apply(): TextContainerProps = {
+    inline def apply(): TextContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextContainerProps]
     }
     
-    @scala.inline
-    implicit class TextContainerPropsMutableBuilder[Self <: TextContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextContainerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode | ClassNameCloneableChild[js.Object] | TextContainerRenderFunction): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode | ClassNameCloneableChild[js.Object] | TextContainerRenderFunction): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* props */ ClassName => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* props */ ClassName => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+      inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+      inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      @scala.inline
-      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setSize(value: TextContainerSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: TextContainerSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -109,13 +98,10 @@ object textContainerMod {
   trait TextContainerSize extends StObject
   object TextContainerSize {
     
-    @scala.inline
-    def auto: typings.reactMdTypography.reactMdTypographyStrings.auto = "auto".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.auto]
+    inline def auto: typings.reactMdTypography.reactMdTypographyStrings.auto = "auto".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.auto]
     
-    @scala.inline
-    def desktop: typings.reactMdTypography.reactMdTypographyStrings.desktop = "desktop".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.desktop]
+    inline def desktop: typings.reactMdTypography.reactMdTypographyStrings.desktop = "desktop".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.desktop]
     
-    @scala.inline
-    def mobile: typings.reactMdTypography.reactMdTypographyStrings.mobile = "mobile".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.mobile]
+    inline def mobile: typings.reactMdTypography.reactMdTypographyStrings.mobile = "mobile".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.mobile]
   }
 }

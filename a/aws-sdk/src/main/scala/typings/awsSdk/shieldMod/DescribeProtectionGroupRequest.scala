@@ -13,16 +13,13 @@ trait DescribeProtectionGroupRequest extends StObject {
 }
 object DescribeProtectionGroupRequest {
   
-  @scala.inline
-  def apply(ProtectionGroupId: ProtectionGroupId): DescribeProtectionGroupRequest = {
+  inline def apply(ProtectionGroupId: ProtectionGroupId): DescribeProtectionGroupRequest = {
     val __obj = js.Dynamic.literal(ProtectionGroupId = ProtectionGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProtectionGroupRequest]
   }
   
-  @scala.inline
-  implicit class DescribeProtectionGroupRequestMutableBuilder[Self <: DescribeProtectionGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProtectionGroupRequest](x: Self) {
     
-    @scala.inline
-    def setProtectionGroupId(value: ProtectionGroupId): Self = StObject.set(x, "ProtectionGroupId", value.asInstanceOf[js.Any])
+    inline def setProtectionGroupId(value: ProtectionGroupId): Self = StObject.set(x, "ProtectionGroupId", value.asInstanceOf[js.Any])
   }
 }

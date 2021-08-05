@@ -12,8 +12,6 @@ object slidingwindowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def slidingWindow[V](src: Observable[V], maxValues: Double): Property[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("slidingWindow")(src.asInstanceOf[js.Any], maxValues.asInstanceOf[js.Any])).asInstanceOf[Property[js.Array[V]]]
-  @scala.inline
-  def slidingWindow[V](src: Observable[V], maxValues: Double, minValues: Double): Property[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("slidingWindow")(src.asInstanceOf[js.Any], maxValues.asInstanceOf[js.Any], minValues.asInstanceOf[js.Any])).asInstanceOf[Property[js.Array[V]]]
+  inline def slidingWindow[V](src: Observable[V], maxValues: Double): Property[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("slidingWindow")(src.asInstanceOf[js.Any], maxValues.asInstanceOf[js.Any])).asInstanceOf[Property[js.Array[V]]]
+  inline def slidingWindow[V](src: Observable[V], maxValues: Double, minValues: Double): Property[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("slidingWindow")(src.asInstanceOf[js.Any], maxValues.asInstanceOf[js.Any], minValues.asInstanceOf[js.Any])).asInstanceOf[Property[js.Array[V]]]
 }

@@ -264,28 +264,18 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(options: ActionSheetOptions): js.Promise[HTMLIonActionSheetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonActionSheetElement]]
+    inline def create(options: ActionSheetOptions): js.Promise[HTMLIonActionSheetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonActionSheetElement]]
     
-    @scala.inline
-    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def getTop(): js.Promise[js.UndefOr[HTMLIonActionSheetElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonActionSheetElement]]]
+    inline def getTop(): js.Promise[js.UndefOr[HTMLIonActionSheetElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonActionSheetElement]]]
   }
   
   object alertController {
@@ -294,66 +284,47 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(options: AlertOptions): js.Promise[HTMLIonAlertElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonAlertElement]]
+    inline def create(options: AlertOptions): js.Promise[HTMLIonAlertElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonAlertElement]]
     
-    @scala.inline
-    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def getTop(): js.Promise[js.UndefOr[HTMLIonAlertElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonAlertElement]]]
+    inline def getTop(): js.Promise[js.UndefOr[HTMLIonAlertElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonAlertElement]]]
   }
   
   @JSImport("@ionic/core", "config")
   @js.native
   val config: typings.ionicCore.configMod.Config_ = js.native
   
-  @scala.inline
-  def configFromSession(win: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configFromSession")(win.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def configFromSession(win: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configFromSession")(win.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def configFromURL(win: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configFromURL")(win.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def configFromURL(win: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configFromURL")(win.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def createAnimation(): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")().asInstanceOf[Animation]
-  @scala.inline
-  def createAnimation(animationId: String): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")(animationId.asInstanceOf[js.Any]).asInstanceOf[Animation]
+  inline def createAnimation(): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")().asInstanceOf[Animation]
+  inline def createAnimation(animationId: String): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")(animationId.asInstanceOf[js.Any]).asInstanceOf[Animation]
   
-  @scala.inline
-  def createGesture(config: GestureConfig): Gesture = ^.asInstanceOf[js.Dynamic].applyDynamic("createGesture")(config.asInstanceOf[js.Any]).asInstanceOf[Gesture]
+  inline def createGesture(config: GestureConfig): Gesture = ^.asInstanceOf[js.Dynamic].applyDynamic("createGesture")(config.asInstanceOf[js.Any]).asInstanceOf[Gesture]
   
-  @scala.inline
-  def getMode(): Mode = ^.asInstanceOf[js.Dynamic].applyDynamic("getMode")().asInstanceOf[Mode]
+  inline def getMode(): Mode = ^.asInstanceOf[js.Dynamic].applyDynamic("getMode")().asInstanceOf[Mode]
   
-  @scala.inline
-  def getPlatforms(): js.Array[
+  inline def getPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")().asInstanceOf[js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ]]
-  @scala.inline
-  def getPlatforms(win: js.Any): js.Array[
+  inline def getPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")(win.asInstanceOf[js.Any]).asInstanceOf[js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ]]
   
-  @scala.inline
-  def getTimeGivenProgression(
+  inline def getTimeGivenProgression(
     p0: js.Array[Double],
     p1: js.Array[Double],
     p2: js.Array[Double],
@@ -361,8 +332,7 @@ object mod {
     progression: Double
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeGivenProgression")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], progression.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def iosTransitionAnimation(navEl: HTMLElement, opts: TransitionOptions): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("iosTransitionAnimation")(navEl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Animation]
+  inline def iosTransitionAnimation(navEl: HTMLElement, opts: TransitionOptions): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("iosTransitionAnimation")(navEl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Animation]
   
   @JSImport("@ionic/core", "isPlatform")
   @js.native
@@ -374,32 +344,21 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(options: LoadingOptions): js.Promise[HTMLIonLoadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonLoadingElement]]
+    inline def create(options: LoadingOptions): js.Promise[HTMLIonLoadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonLoadingElement]]
     
-    @scala.inline
-    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def getTop(): js.Promise[js.UndefOr[HTMLIonLoadingElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonLoadingElement]]]
+    inline def getTop(): js.Promise[js.UndefOr[HTMLIonLoadingElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonLoadingElement]]]
   }
   
-  @scala.inline
-  def mdTransitionAnimation(_underscore: HTMLElement, opts: TransitionOptions): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("mdTransitionAnimation")(_underscore.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Animation]
+  inline def mdTransitionAnimation(_underscore: HTMLElement, opts: TransitionOptions): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("mdTransitionAnimation")(_underscore.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Animation]
   
   object menuController {
     
@@ -407,75 +366,49 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def close(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def close(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def close(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[js.Promise[Boolean]]
+    inline def close(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def createAnimation(`type`: String, menuCmp: MenuI): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_createAnimation")(`type`.asInstanceOf[js.Any], menuCmp.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def createAnimation(`type`: String, menuCmp: MenuI): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_createAnimation")(`type`.asInstanceOf[js.Any], menuCmp.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def enable(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(shouldEnable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
-    @scala.inline
-    def enable(shouldEnable: Boolean, menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(shouldEnable.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
+    inline def enable(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(shouldEnable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
+    inline def enable(shouldEnable: Boolean, menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(shouldEnable.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
     
-    @scala.inline
-    def get(): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
-    @scala.inline
-    def get(menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
+    inline def get(): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
+    inline def get(menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
     
-    @scala.inline
-    def getMenus(): js.Promise[js.Array[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenus")().asInstanceOf[js.Promise[js.Array[HTMLIonMenuElement]]]
+    inline def getMenus(): js.Promise[js.Array[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenus")().asInstanceOf[js.Promise[js.Array[HTMLIonMenuElement]]]
     
-    @scala.inline
-    def getOpen(): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpen")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
+    inline def getOpen(): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpen")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
     
-    @scala.inline
-    def getOpenSync(): js.UndefOr[HTMLIonMenuElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("_getOpenSync")().asInstanceOf[js.UndefOr[HTMLIonMenuElement]]
+    inline def getOpenSync(): js.UndefOr[HTMLIonMenuElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("_getOpenSync")().asInstanceOf[js.UndefOr[HTMLIonMenuElement]]
     
-    @scala.inline
-    def isAnimating(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnimating")().asInstanceOf[js.Promise[Boolean]]
+    inline def isAnimating(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnimating")().asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def isEnabled(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")().asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def isEnabled(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def isEnabled(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")().asInstanceOf[js.Promise[Boolean]]
+    inline def isEnabled(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def isOpen(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isOpen")().asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def isOpen(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isOpen")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def isOpen(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isOpen")().asInstanceOf[js.Promise[Boolean]]
+    inline def isOpen(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isOpen")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def open(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def open(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def open(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[js.Promise[Boolean]]
+    inline def open(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def register(menu: MenuI): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_register")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def register(menu: MenuI): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_register")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def registerAnimation(name: String, animation: AnimationBuilder): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAnimation")(name.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerAnimation(name: String, animation: AnimationBuilder): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAnimation")(name.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def setActiveMenu(menu: MenuI): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setActiveMenu")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setActiveMenu(menu: MenuI): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setActiveMenu")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def setOpen(menu: MenuI, shouldOpen: Boolean, animated: Boolean): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("_setOpen")(menu.asInstanceOf[js.Any], shouldOpen.asInstanceOf[js.Any], animated.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def setOpen(menu: MenuI, shouldOpen: Boolean, animated: Boolean): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("_setOpen")(menu.asInstanceOf[js.Any], shouldOpen.asInstanceOf[js.Any], animated.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def swipeGesture(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("swipeGesture")(shouldEnable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
-    @scala.inline
-    def swipeGesture(shouldEnable: Boolean, menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = (^.asInstanceOf[js.Dynamic].applyDynamic("swipeGesture")(shouldEnable.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
+    inline def swipeGesture(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("swipeGesture")(shouldEnable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
+    inline def swipeGesture(shouldEnable: Boolean, menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = (^.asInstanceOf[js.Dynamic].applyDynamic("swipeGesture")(shouldEnable.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
     
-    @scala.inline
-    def toggle(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")().asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def toggle(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def toggle(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")().asInstanceOf[js.Promise[Boolean]]
+    inline def toggle(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def unregister(menu: MenuI): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_unregister")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def unregister(menu: MenuI): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_unregister")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object modalController {
@@ -484,28 +417,18 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(options: ModalOptions[ComponentRef]): js.Promise[HTMLIonModalElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonModalElement]]
+    inline def create(options: ModalOptions[ComponentRef]): js.Promise[HTMLIonModalElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonModalElement]]
     
-    @scala.inline
-    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def getTop(): js.Promise[js.UndefOr[HTMLIonModalElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonModalElement]]]
+    inline def getTop(): js.Promise[js.UndefOr[HTMLIonModalElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonModalElement]]]
   }
   
   object pickerController {
@@ -514,28 +437,18 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(options: PickerOptions): js.Promise[HTMLIonPickerElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonPickerElement]]
+    inline def create(options: PickerOptions): js.Promise[HTMLIonPickerElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonPickerElement]]
     
-    @scala.inline
-    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def getTop(): js.Promise[js.UndefOr[HTMLIonPickerElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonPickerElement]]]
+    inline def getTop(): js.Promise[js.UndefOr[HTMLIonPickerElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonPickerElement]]]
   }
   
   object popoverController {
@@ -544,35 +457,23 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(options: PopoverOptions[ComponentRef]): js.Promise[HTMLIonPopoverElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonPopoverElement]]
+    inline def create(options: PopoverOptions[ComponentRef]): js.Promise[HTMLIonPopoverElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonPopoverElement]]
     
-    @scala.inline
-    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def getTop(): js.Promise[js.UndefOr[HTMLIonPopoverElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonPopoverElement]]]
+    inline def getTop(): js.Promise[js.UndefOr[HTMLIonPopoverElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonPopoverElement]]]
   }
   
-  @scala.inline
-  def saveConfig(win: Window, c: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveConfig")(win.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveConfig(win: Window, c: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveConfig")(win.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setupConfig(config: IonicConfig): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setupConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def setupConfig(config: IonicConfig): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setupConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   object toastController {
     
@@ -580,28 +481,18 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(options: ToastOptions): js.Promise[HTMLIonToastElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonToastElement]]
+    inline def create(options: ToastOptions): js.Promise[HTMLIonToastElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonToastElement]]
     
-    @scala.inline
-    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def getTop(): js.Promise[js.UndefOr[HTMLIonToastElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonToastElement]]]
+    inline def getTop(): js.Promise[js.UndefOr[HTMLIonToastElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonToastElement]]]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -663,167 +554,113 @@ object mod {
   trait AutocompleteTypes extends StObject
   object AutocompleteTypes {
     
-    @scala.inline
-    def `additional-name`: typings.ionicCore.ionicCoreStrings.`additional-name` = "additional-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`additional-name`]
+    inline def `additional-name`: typings.ionicCore.ionicCoreStrings.`additional-name` = "additional-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`additional-name`]
     
-    @scala.inline
-    def `address-level1`: typings.ionicCore.ionicCoreStrings.`address-level1` = "address-level1".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-level1`]
+    inline def `address-level1`: typings.ionicCore.ionicCoreStrings.`address-level1` = "address-level1".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-level1`]
     
-    @scala.inline
-    def `address-level2`: typings.ionicCore.ionicCoreStrings.`address-level2` = "address-level2".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-level2`]
+    inline def `address-level2`: typings.ionicCore.ionicCoreStrings.`address-level2` = "address-level2".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-level2`]
     
-    @scala.inline
-    def `address-level3`: typings.ionicCore.ionicCoreStrings.`address-level3` = "address-level3".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-level3`]
+    inline def `address-level3`: typings.ionicCore.ionicCoreStrings.`address-level3` = "address-level3".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-level3`]
     
-    @scala.inline
-    def `address-level4`: typings.ionicCore.ionicCoreStrings.`address-level4` = "address-level4".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-level4`]
+    inline def `address-level4`: typings.ionicCore.ionicCoreStrings.`address-level4` = "address-level4".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-level4`]
     
-    @scala.inline
-    def `address-line1`: typings.ionicCore.ionicCoreStrings.`address-line1` = "address-line1".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-line1`]
+    inline def `address-line1`: typings.ionicCore.ionicCoreStrings.`address-line1` = "address-line1".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-line1`]
     
-    @scala.inline
-    def `address-line2`: typings.ionicCore.ionicCoreStrings.`address-line2` = "address-line2".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-line2`]
+    inline def `address-line2`: typings.ionicCore.ionicCoreStrings.`address-line2` = "address-line2".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-line2`]
     
-    @scala.inline
-    def `address-line3`: typings.ionicCore.ionicCoreStrings.`address-line3` = "address-line3".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-line3`]
+    inline def `address-line3`: typings.ionicCore.ionicCoreStrings.`address-line3` = "address-line3".asInstanceOf[typings.ionicCore.ionicCoreStrings.`address-line3`]
     
-    @scala.inline
-    def bday: typings.ionicCore.ionicCoreStrings.bday = "bday".asInstanceOf[typings.ionicCore.ionicCoreStrings.bday]
+    inline def bday: typings.ionicCore.ionicCoreStrings.bday = "bday".asInstanceOf[typings.ionicCore.ionicCoreStrings.bday]
     
-    @scala.inline
-    def `bday-day`: typings.ionicCore.ionicCoreStrings.`bday-day` = "bday-day".asInstanceOf[typings.ionicCore.ionicCoreStrings.`bday-day`]
+    inline def `bday-day`: typings.ionicCore.ionicCoreStrings.`bday-day` = "bday-day".asInstanceOf[typings.ionicCore.ionicCoreStrings.`bday-day`]
     
-    @scala.inline
-    def `bday-month`: typings.ionicCore.ionicCoreStrings.`bday-month` = "bday-month".asInstanceOf[typings.ionicCore.ionicCoreStrings.`bday-month`]
+    inline def `bday-month`: typings.ionicCore.ionicCoreStrings.`bday-month` = "bday-month".asInstanceOf[typings.ionicCore.ionicCoreStrings.`bday-month`]
     
-    @scala.inline
-    def `bday-year`: typings.ionicCore.ionicCoreStrings.`bday-year` = "bday-year".asInstanceOf[typings.ionicCore.ionicCoreStrings.`bday-year`]
+    inline def `bday-year`: typings.ionicCore.ionicCoreStrings.`bday-year` = "bday-year".asInstanceOf[typings.ionicCore.ionicCoreStrings.`bday-year`]
     
-    @scala.inline
-    def `cc-additional-name`: typings.ionicCore.ionicCoreStrings.`cc-additional-name` = "cc-additional-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-additional-name`]
+    inline def `cc-additional-name`: typings.ionicCore.ionicCoreStrings.`cc-additional-name` = "cc-additional-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-additional-name`]
     
-    @scala.inline
-    def `cc-csc`: typings.ionicCore.ionicCoreStrings.`cc-csc` = "cc-csc".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-csc`]
+    inline def `cc-csc`: typings.ionicCore.ionicCoreStrings.`cc-csc` = "cc-csc".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-csc`]
     
-    @scala.inline
-    def `cc-exp`: typings.ionicCore.ionicCoreStrings.`cc-exp` = "cc-exp".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-exp`]
+    inline def `cc-exp`: typings.ionicCore.ionicCoreStrings.`cc-exp` = "cc-exp".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-exp`]
     
-    @scala.inline
-    def `cc-exp-month`: typings.ionicCore.ionicCoreStrings.`cc-exp-month` = "cc-exp-month".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-exp-month`]
+    inline def `cc-exp-month`: typings.ionicCore.ionicCoreStrings.`cc-exp-month` = "cc-exp-month".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-exp-month`]
     
-    @scala.inline
-    def `cc-exp-year`: typings.ionicCore.ionicCoreStrings.`cc-exp-year` = "cc-exp-year".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-exp-year`]
+    inline def `cc-exp-year`: typings.ionicCore.ionicCoreStrings.`cc-exp-year` = "cc-exp-year".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-exp-year`]
     
-    @scala.inline
-    def `cc-family-name`: typings.ionicCore.ionicCoreStrings.`cc-family-name` = "cc-family-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-family-name`]
+    inline def `cc-family-name`: typings.ionicCore.ionicCoreStrings.`cc-family-name` = "cc-family-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-family-name`]
     
-    @scala.inline
-    def `cc-given-name`: typings.ionicCore.ionicCoreStrings.`cc-given-name` = "cc-given-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-given-name`]
+    inline def `cc-given-name`: typings.ionicCore.ionicCoreStrings.`cc-given-name` = "cc-given-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-given-name`]
     
-    @scala.inline
-    def `cc-name`: typings.ionicCore.ionicCoreStrings.`cc-name` = "cc-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-name`]
+    inline def `cc-name`: typings.ionicCore.ionicCoreStrings.`cc-name` = "cc-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-name`]
     
-    @scala.inline
-    def `cc-number`: typings.ionicCore.ionicCoreStrings.`cc-number` = "cc-number".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-number`]
+    inline def `cc-number`: typings.ionicCore.ionicCoreStrings.`cc-number` = "cc-number".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-number`]
     
-    @scala.inline
-    def `cc-type`: typings.ionicCore.ionicCoreStrings.`cc-type` = "cc-type".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-type`]
+    inline def `cc-type`: typings.ionicCore.ionicCoreStrings.`cc-type` = "cc-type".asInstanceOf[typings.ionicCore.ionicCoreStrings.`cc-type`]
     
-    @scala.inline
-    def country: typings.ionicCore.ionicCoreStrings.country = "country".asInstanceOf[typings.ionicCore.ionicCoreStrings.country]
+    inline def country: typings.ionicCore.ionicCoreStrings.country = "country".asInstanceOf[typings.ionicCore.ionicCoreStrings.country]
     
-    @scala.inline
-    def `country-name`: typings.ionicCore.ionicCoreStrings.`country-name` = "country-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`country-name`]
+    inline def `country-name`: typings.ionicCore.ionicCoreStrings.`country-name` = "country-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`country-name`]
     
-    @scala.inline
-    def `current-password`: typings.ionicCore.ionicCoreStrings.`current-password` = "current-password".asInstanceOf[typings.ionicCore.ionicCoreStrings.`current-password`]
+    inline def `current-password`: typings.ionicCore.ionicCoreStrings.`current-password` = "current-password".asInstanceOf[typings.ionicCore.ionicCoreStrings.`current-password`]
     
-    @scala.inline
-    def email: typings.ionicCore.ionicCoreStrings.email = "email".asInstanceOf[typings.ionicCore.ionicCoreStrings.email]
+    inline def email: typings.ionicCore.ionicCoreStrings.email = "email".asInstanceOf[typings.ionicCore.ionicCoreStrings.email]
     
-    @scala.inline
-    def `family-name`: typings.ionicCore.ionicCoreStrings.`family-name` = "family-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`family-name`]
+    inline def `family-name`: typings.ionicCore.ionicCoreStrings.`family-name` = "family-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`family-name`]
     
-    @scala.inline
-    def `given-name`: typings.ionicCore.ionicCoreStrings.`given-name` = "given-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`given-name`]
+    inline def `given-name`: typings.ionicCore.ionicCoreStrings.`given-name` = "given-name".asInstanceOf[typings.ionicCore.ionicCoreStrings.`given-name`]
     
-    @scala.inline
-    def `honorific-prefix`: typings.ionicCore.ionicCoreStrings.`honorific-prefix` = "honorific-prefix".asInstanceOf[typings.ionicCore.ionicCoreStrings.`honorific-prefix`]
+    inline def `honorific-prefix`: typings.ionicCore.ionicCoreStrings.`honorific-prefix` = "honorific-prefix".asInstanceOf[typings.ionicCore.ionicCoreStrings.`honorific-prefix`]
     
-    @scala.inline
-    def `honorific-suffix`: typings.ionicCore.ionicCoreStrings.`honorific-suffix` = "honorific-suffix".asInstanceOf[typings.ionicCore.ionicCoreStrings.`honorific-suffix`]
+    inline def `honorific-suffix`: typings.ionicCore.ionicCoreStrings.`honorific-suffix` = "honorific-suffix".asInstanceOf[typings.ionicCore.ionicCoreStrings.`honorific-suffix`]
     
-    @scala.inline
-    def impp: typings.ionicCore.ionicCoreStrings.impp = "impp".asInstanceOf[typings.ionicCore.ionicCoreStrings.impp]
+    inline def impp: typings.ionicCore.ionicCoreStrings.impp = "impp".asInstanceOf[typings.ionicCore.ionicCoreStrings.impp]
     
-    @scala.inline
-    def language: typings.ionicCore.ionicCoreStrings.language = "language".asInstanceOf[typings.ionicCore.ionicCoreStrings.language]
+    inline def language: typings.ionicCore.ionicCoreStrings.language = "language".asInstanceOf[typings.ionicCore.ionicCoreStrings.language]
     
-    @scala.inline
-    def name: typings.ionicCore.ionicCoreStrings.name = "name".asInstanceOf[typings.ionicCore.ionicCoreStrings.name]
+    inline def name: typings.ionicCore.ionicCoreStrings.name = "name".asInstanceOf[typings.ionicCore.ionicCoreStrings.name]
     
-    @scala.inline
-    def `new-password`: typings.ionicCore.ionicCoreStrings.`new-password` = "new-password".asInstanceOf[typings.ionicCore.ionicCoreStrings.`new-password`]
+    inline def `new-password`: typings.ionicCore.ionicCoreStrings.`new-password` = "new-password".asInstanceOf[typings.ionicCore.ionicCoreStrings.`new-password`]
     
-    @scala.inline
-    def nickname: typings.ionicCore.ionicCoreStrings.nickname = "nickname".asInstanceOf[typings.ionicCore.ionicCoreStrings.nickname]
+    inline def nickname: typings.ionicCore.ionicCoreStrings.nickname = "nickname".asInstanceOf[typings.ionicCore.ionicCoreStrings.nickname]
     
-    @scala.inline
-    def off: typings.ionicCore.ionicCoreStrings.off = "off".asInstanceOf[typings.ionicCore.ionicCoreStrings.off]
+    inline def off: typings.ionicCore.ionicCoreStrings.off = "off".asInstanceOf[typings.ionicCore.ionicCoreStrings.off]
     
-    @scala.inline
-    def on: typings.ionicCore.ionicCoreStrings.on = "on".asInstanceOf[typings.ionicCore.ionicCoreStrings.on]
+    inline def on: typings.ionicCore.ionicCoreStrings.on = "on".asInstanceOf[typings.ionicCore.ionicCoreStrings.on]
     
-    @scala.inline
-    def `one-time-code`: typings.ionicCore.ionicCoreStrings.`one-time-code` = "one-time-code".asInstanceOf[typings.ionicCore.ionicCoreStrings.`one-time-code`]
+    inline def `one-time-code`: typings.ionicCore.ionicCoreStrings.`one-time-code` = "one-time-code".asInstanceOf[typings.ionicCore.ionicCoreStrings.`one-time-code`]
     
-    @scala.inline
-    def organization: typings.ionicCore.ionicCoreStrings.organization = "organization".asInstanceOf[typings.ionicCore.ionicCoreStrings.organization]
+    inline def organization: typings.ionicCore.ionicCoreStrings.organization = "organization".asInstanceOf[typings.ionicCore.ionicCoreStrings.organization]
     
-    @scala.inline
-    def `organization-title`: typings.ionicCore.ionicCoreStrings.`organization-title` = "organization-title".asInstanceOf[typings.ionicCore.ionicCoreStrings.`organization-title`]
+    inline def `organization-title`: typings.ionicCore.ionicCoreStrings.`organization-title` = "organization-title".asInstanceOf[typings.ionicCore.ionicCoreStrings.`organization-title`]
     
-    @scala.inline
-    def photo: typings.ionicCore.ionicCoreStrings.photo = "photo".asInstanceOf[typings.ionicCore.ionicCoreStrings.photo]
+    inline def photo: typings.ionicCore.ionicCoreStrings.photo = "photo".asInstanceOf[typings.ionicCore.ionicCoreStrings.photo]
     
-    @scala.inline
-    def `postal-code`: typings.ionicCore.ionicCoreStrings.`postal-code` = "postal-code".asInstanceOf[typings.ionicCore.ionicCoreStrings.`postal-code`]
+    inline def `postal-code`: typings.ionicCore.ionicCoreStrings.`postal-code` = "postal-code".asInstanceOf[typings.ionicCore.ionicCoreStrings.`postal-code`]
     
-    @scala.inline
-    def sex: typings.ionicCore.ionicCoreStrings.sex = "sex".asInstanceOf[typings.ionicCore.ionicCoreStrings.sex]
+    inline def sex: typings.ionicCore.ionicCoreStrings.sex = "sex".asInstanceOf[typings.ionicCore.ionicCoreStrings.sex]
     
-    @scala.inline
-    def `street-address`: typings.ionicCore.ionicCoreStrings.`street-address` = "street-address".asInstanceOf[typings.ionicCore.ionicCoreStrings.`street-address`]
+    inline def `street-address`: typings.ionicCore.ionicCoreStrings.`street-address` = "street-address".asInstanceOf[typings.ionicCore.ionicCoreStrings.`street-address`]
     
-    @scala.inline
-    def tel: typings.ionicCore.ionicCoreStrings.tel = "tel".asInstanceOf[typings.ionicCore.ionicCoreStrings.tel]
+    inline def tel: typings.ionicCore.ionicCoreStrings.tel = "tel".asInstanceOf[typings.ionicCore.ionicCoreStrings.tel]
     
-    @scala.inline
-    def `tel-area-code`: typings.ionicCore.ionicCoreStrings.`tel-area-code` = "tel-area-code".asInstanceOf[typings.ionicCore.ionicCoreStrings.`tel-area-code`]
+    inline def `tel-area-code`: typings.ionicCore.ionicCoreStrings.`tel-area-code` = "tel-area-code".asInstanceOf[typings.ionicCore.ionicCoreStrings.`tel-area-code`]
     
-    @scala.inline
-    def `tel-country-code`: typings.ionicCore.ionicCoreStrings.`tel-country-code` = "tel-country-code".asInstanceOf[typings.ionicCore.ionicCoreStrings.`tel-country-code`]
+    inline def `tel-country-code`: typings.ionicCore.ionicCoreStrings.`tel-country-code` = "tel-country-code".asInstanceOf[typings.ionicCore.ionicCoreStrings.`tel-country-code`]
     
-    @scala.inline
-    def `tel-extension`: typings.ionicCore.ionicCoreStrings.`tel-extension` = "tel-extension".asInstanceOf[typings.ionicCore.ionicCoreStrings.`tel-extension`]
+    inline def `tel-extension`: typings.ionicCore.ionicCoreStrings.`tel-extension` = "tel-extension".asInstanceOf[typings.ionicCore.ionicCoreStrings.`tel-extension`]
     
-    @scala.inline
-    def `tel-local`: typings.ionicCore.ionicCoreStrings.`tel-local` = "tel-local".asInstanceOf[typings.ionicCore.ionicCoreStrings.`tel-local`]
+    inline def `tel-local`: typings.ionicCore.ionicCoreStrings.`tel-local` = "tel-local".asInstanceOf[typings.ionicCore.ionicCoreStrings.`tel-local`]
     
-    @scala.inline
-    def `tel-national`: typings.ionicCore.ionicCoreStrings.`tel-national` = "tel-national".asInstanceOf[typings.ionicCore.ionicCoreStrings.`tel-national`]
+    inline def `tel-national`: typings.ionicCore.ionicCoreStrings.`tel-national` = "tel-national".asInstanceOf[typings.ionicCore.ionicCoreStrings.`tel-national`]
     
-    @scala.inline
-    def `transaction-amount`: typings.ionicCore.ionicCoreStrings.`transaction-amount` = "transaction-amount".asInstanceOf[typings.ionicCore.ionicCoreStrings.`transaction-amount`]
+    inline def `transaction-amount`: typings.ionicCore.ionicCoreStrings.`transaction-amount` = "transaction-amount".asInstanceOf[typings.ionicCore.ionicCoreStrings.`transaction-amount`]
     
-    @scala.inline
-    def `transaction-currency`: typings.ionicCore.ionicCoreStrings.`transaction-currency` = "transaction-currency".asInstanceOf[typings.ionicCore.ionicCoreStrings.`transaction-currency`]
+    inline def `transaction-currency`: typings.ionicCore.ionicCoreStrings.`transaction-currency` = "transaction-currency".asInstanceOf[typings.ionicCore.ionicCoreStrings.`transaction-currency`]
     
-    @scala.inline
-    def url: typings.ionicCore.ionicCoreStrings.url = "url".asInstanceOf[typings.ionicCore.ionicCoreStrings.url]
+    inline def url: typings.ionicCore.ionicCoreStrings.url = "url".asInstanceOf[typings.ionicCore.ionicCoreStrings.url]
     
-    @scala.inline
-    def username: typings.ionicCore.ionicCoreStrings.username = "username".asInstanceOf[typings.ionicCore.ionicCoreStrings.username]
+    inline def username: typings.ionicCore.ionicCoreStrings.username = "username".asInstanceOf[typings.ionicCore.ionicCoreStrings.username]
   }
   
   type BackButtonEvent = CustomEvent[BackButtonEventDetail]
@@ -837,19 +674,16 @@ object mod {
   }
   object BackButtonEventDetail {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       register: (Double, js.Function1[/* processNextHandler */ js.Function0[Unit], js.Promise[js.Any] | Unit]) => Unit
     ): BackButtonEventDetail = {
       val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
       __obj.asInstanceOf[BackButtonEventDetail]
     }
     
-    @scala.inline
-    implicit class BackButtonEventDetailMutableBuilder[Self <: BackButtonEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: BackButtonEventDetail](x: Self) {
       
-      @scala.inline
-      def setRegister(
+      inline def setRegister(
         value: (Double, js.Function1[/* processNextHandler */ js.Function0[Unit], js.Promise[js.Any] | Unit]) => Unit
       ): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
@@ -882,17 +716,14 @@ object mod {
   }
   object KeyboardEventDetail {
     
-    @scala.inline
-    def apply(keyboardHeight: Double): KeyboardEventDetail = {
+    inline def apply(keyboardHeight: Double): KeyboardEventDetail = {
       val __obj = js.Dynamic.literal(keyboardHeight = keyboardHeight.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyboardEventDetail]
     }
     
-    @scala.inline
-    implicit class KeyboardEventDetailMutableBuilder[Self <: KeyboardEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: KeyboardEventDetail](x: Self) {
       
-      @scala.inline
-      def setKeyboardHeight(value: Double): Self = StObject.set(x, "keyboardHeight", value.asInstanceOf[js.Any])
+      inline def setKeyboardHeight(value: Double): Self = StObject.set(x, "keyboardHeight", value.asInstanceOf[js.Any])
     }
   }
   
@@ -903,11 +734,9 @@ object mod {
   trait Mode extends StObject
   object Mode {
     
-    @scala.inline
-    def ios: typings.ionicCore.ionicCoreStrings.ios = "ios".asInstanceOf[typings.ionicCore.ionicCoreStrings.ios]
+    inline def ios: typings.ionicCore.ionicCoreStrings.ios = "ios".asInstanceOf[typings.ionicCore.ionicCoreStrings.ios]
     
-    @scala.inline
-    def md: typings.ionicCore.ionicCoreStrings.md = "md".asInstanceOf[typings.ionicCore.ionicCoreStrings.md]
+    inline def md: typings.ionicCore.ionicCoreStrings.md = "md".asInstanceOf[typings.ionicCore.ionicCoreStrings.md]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -924,32 +753,23 @@ object mod {
   trait PredefinedColors extends StObject
   object PredefinedColors {
     
-    @scala.inline
-    def danger: typings.ionicCore.ionicCoreStrings.danger = "danger".asInstanceOf[typings.ionicCore.ionicCoreStrings.danger]
+    inline def danger: typings.ionicCore.ionicCoreStrings.danger = "danger".asInstanceOf[typings.ionicCore.ionicCoreStrings.danger]
     
-    @scala.inline
-    def dark: typings.ionicCore.ionicCoreStrings.dark = "dark".asInstanceOf[typings.ionicCore.ionicCoreStrings.dark]
+    inline def dark: typings.ionicCore.ionicCoreStrings.dark = "dark".asInstanceOf[typings.ionicCore.ionicCoreStrings.dark]
     
-    @scala.inline
-    def light: typings.ionicCore.ionicCoreStrings.light = "light".asInstanceOf[typings.ionicCore.ionicCoreStrings.light]
+    inline def light: typings.ionicCore.ionicCoreStrings.light = "light".asInstanceOf[typings.ionicCore.ionicCoreStrings.light]
     
-    @scala.inline
-    def medium: typings.ionicCore.ionicCoreStrings.medium = "medium".asInstanceOf[typings.ionicCore.ionicCoreStrings.medium]
+    inline def medium: typings.ionicCore.ionicCoreStrings.medium = "medium".asInstanceOf[typings.ionicCore.ionicCoreStrings.medium]
     
-    @scala.inline
-    def primary: typings.ionicCore.ionicCoreStrings.primary = "primary".asInstanceOf[typings.ionicCore.ionicCoreStrings.primary]
+    inline def primary: typings.ionicCore.ionicCoreStrings.primary = "primary".asInstanceOf[typings.ionicCore.ionicCoreStrings.primary]
     
-    @scala.inline
-    def secondary: typings.ionicCore.ionicCoreStrings.secondary = "secondary".asInstanceOf[typings.ionicCore.ionicCoreStrings.secondary]
+    inline def secondary: typings.ionicCore.ionicCoreStrings.secondary = "secondary".asInstanceOf[typings.ionicCore.ionicCoreStrings.secondary]
     
-    @scala.inline
-    def success: typings.ionicCore.ionicCoreStrings.success = "success".asInstanceOf[typings.ionicCore.ionicCoreStrings.success]
+    inline def success: typings.ionicCore.ionicCoreStrings.success = "success".asInstanceOf[typings.ionicCore.ionicCoreStrings.success]
     
-    @scala.inline
-    def tertiary: typings.ionicCore.ionicCoreStrings.tertiary = "tertiary".asInstanceOf[typings.ionicCore.ionicCoreStrings.tertiary]
+    inline def tertiary: typings.ionicCore.ionicCoreStrings.tertiary = "tertiary".asInstanceOf[typings.ionicCore.ionicCoreStrings.tertiary]
     
-    @scala.inline
-    def warning: typings.ionicCore.ionicCoreStrings.warning = "warning".asInstanceOf[typings.ionicCore.ionicCoreStrings.warning]
+    inline def warning: typings.ionicCore.ionicCoreStrings.warning = "warning".asInstanceOf[typings.ionicCore.ionicCoreStrings.warning]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -959,11 +779,9 @@ object mod {
   trait Side extends StObject
   object Side {
     
-    @scala.inline
-    def end: typings.ionicCore.ionicCoreStrings.end = "end".asInstanceOf[typings.ionicCore.ionicCoreStrings.end]
+    inline def end: typings.ionicCore.ionicCoreStrings.end = "end".asInstanceOf[typings.ionicCore.ionicCoreStrings.end]
     
-    @scala.inline
-    def start: typings.ionicCore.ionicCoreStrings.start = "start".asInstanceOf[typings.ionicCore.ionicCoreStrings.start]
+    inline def start: typings.ionicCore.ionicCoreStrings.start = "start".asInstanceOf[typings.ionicCore.ionicCoreStrings.start]
   }
   
   type StyleEventDetail = StringDictionary[Boolean]
@@ -985,41 +803,29 @@ object mod {
   trait TextFieldTypes extends StObject
   object TextFieldTypes {
     
-    @scala.inline
-    def date: typings.ionicCore.ionicCoreStrings.date = "date".asInstanceOf[typings.ionicCore.ionicCoreStrings.date]
+    inline def date: typings.ionicCore.ionicCoreStrings.date = "date".asInstanceOf[typings.ionicCore.ionicCoreStrings.date]
     
-    @scala.inline
-    def `datetime-local`: typings.ionicCore.ionicCoreStrings.`datetime-local` = "datetime-local".asInstanceOf[typings.ionicCore.ionicCoreStrings.`datetime-local`]
+    inline def `datetime-local`: typings.ionicCore.ionicCoreStrings.`datetime-local` = "datetime-local".asInstanceOf[typings.ionicCore.ionicCoreStrings.`datetime-local`]
     
-    @scala.inline
-    def email: typings.ionicCore.ionicCoreStrings.email = "email".asInstanceOf[typings.ionicCore.ionicCoreStrings.email]
+    inline def email: typings.ionicCore.ionicCoreStrings.email = "email".asInstanceOf[typings.ionicCore.ionicCoreStrings.email]
     
-    @scala.inline
-    def month: typings.ionicCore.ionicCoreStrings.month = "month".asInstanceOf[typings.ionicCore.ionicCoreStrings.month]
+    inline def month: typings.ionicCore.ionicCoreStrings.month = "month".asInstanceOf[typings.ionicCore.ionicCoreStrings.month]
     
-    @scala.inline
-    def number: typings.ionicCore.ionicCoreStrings.number = "number".asInstanceOf[typings.ionicCore.ionicCoreStrings.number]
+    inline def number: typings.ionicCore.ionicCoreStrings.number = "number".asInstanceOf[typings.ionicCore.ionicCoreStrings.number]
     
-    @scala.inline
-    def password: typings.ionicCore.ionicCoreStrings.password = "password".asInstanceOf[typings.ionicCore.ionicCoreStrings.password]
+    inline def password: typings.ionicCore.ionicCoreStrings.password = "password".asInstanceOf[typings.ionicCore.ionicCoreStrings.password]
     
-    @scala.inline
-    def search: typings.ionicCore.ionicCoreStrings.search = "search".asInstanceOf[typings.ionicCore.ionicCoreStrings.search]
+    inline def search: typings.ionicCore.ionicCoreStrings.search = "search".asInstanceOf[typings.ionicCore.ionicCoreStrings.search]
     
-    @scala.inline
-    def tel: typings.ionicCore.ionicCoreStrings.tel = "tel".asInstanceOf[typings.ionicCore.ionicCoreStrings.tel]
+    inline def tel: typings.ionicCore.ionicCoreStrings.tel = "tel".asInstanceOf[typings.ionicCore.ionicCoreStrings.tel]
     
-    @scala.inline
-    def text: typings.ionicCore.ionicCoreStrings.text = "text".asInstanceOf[typings.ionicCore.ionicCoreStrings.text]
+    inline def text: typings.ionicCore.ionicCoreStrings.text = "text".asInstanceOf[typings.ionicCore.ionicCoreStrings.text]
     
-    @scala.inline
-    def time: typings.ionicCore.ionicCoreStrings.time = "time".asInstanceOf[typings.ionicCore.ionicCoreStrings.time]
+    inline def time: typings.ionicCore.ionicCoreStrings.time = "time".asInstanceOf[typings.ionicCore.ionicCoreStrings.time]
     
-    @scala.inline
-    def url: typings.ionicCore.ionicCoreStrings.url = "url".asInstanceOf[typings.ionicCore.ionicCoreStrings.url]
+    inline def url: typings.ionicCore.ionicCoreStrings.url = "url".asInstanceOf[typings.ionicCore.ionicCoreStrings.url]
     
-    @scala.inline
-    def week: typings.ionicCore.ionicCoreStrings.week = "week".asInstanceOf[typings.ionicCore.ionicCoreStrings.week]
+    inline def week: typings.ionicCore.ionicCoreStrings.week = "week".asInstanceOf[typings.ionicCore.ionicCoreStrings.week]
   }
   
   /* augmented module */
@@ -1218,8 +1024,7 @@ object mod {
       }
       object IntrinsicElements {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           `ion-action-sheet`: IonActionSheet & HTMLAttributes[HTMLIonActionSheetElement],
           `ion-alert`: IonAlert & HTMLAttributes[HTMLIonAlertElement],
           `ion-app`: IonApp & HTMLAttributes[HTMLIonAppElement],
@@ -1399,269 +1204,181 @@ object mod {
           __obj.asInstanceOf[IntrinsicElements]
         }
         
-        @scala.inline
-        implicit class IntrinsicElementsMutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+        extension [Self <: IntrinsicElements](x: Self) {
           
-          @scala.inline
-          def `setIon-action-sheet`(value: IonActionSheet & HTMLAttributes[HTMLIonActionSheetElement]): Self = StObject.set(x, "ion-action-sheet", value.asInstanceOf[js.Any])
+          inline def `setIon-action-sheet`(value: IonActionSheet & HTMLAttributes[HTMLIonActionSheetElement]): Self = StObject.set(x, "ion-action-sheet", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-alert`(value: IonAlert & HTMLAttributes[HTMLIonAlertElement]): Self = StObject.set(x, "ion-alert", value.asInstanceOf[js.Any])
+          inline def `setIon-alert`(value: IonAlert & HTMLAttributes[HTMLIonAlertElement]): Self = StObject.set(x, "ion-alert", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-app`(value: IonApp & HTMLAttributes[HTMLIonAppElement]): Self = StObject.set(x, "ion-app", value.asInstanceOf[js.Any])
+          inline def `setIon-app`(value: IonApp & HTMLAttributes[HTMLIonAppElement]): Self = StObject.set(x, "ion-app", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-avatar`(value: IonAvatar & HTMLAttributes[HTMLIonAvatarElement]): Self = StObject.set(x, "ion-avatar", value.asInstanceOf[js.Any])
+          inline def `setIon-avatar`(value: IonAvatar & HTMLAttributes[HTMLIonAvatarElement]): Self = StObject.set(x, "ion-avatar", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-back-button`(value: IonBackButton & HTMLAttributes[HTMLIonBackButtonElement]): Self = StObject.set(x, "ion-back-button", value.asInstanceOf[js.Any])
+          inline def `setIon-back-button`(value: IonBackButton & HTMLAttributes[HTMLIonBackButtonElement]): Self = StObject.set(x, "ion-back-button", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-backdrop`(value: IonBackdrop & HTMLAttributes[HTMLIonBackdropElement]): Self = StObject.set(x, "ion-backdrop", value.asInstanceOf[js.Any])
+          inline def `setIon-backdrop`(value: IonBackdrop & HTMLAttributes[HTMLIonBackdropElement]): Self = StObject.set(x, "ion-backdrop", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-badge`(value: IonBadge & HTMLAttributes[HTMLIonBadgeElement]): Self = StObject.set(x, "ion-badge", value.asInstanceOf[js.Any])
+          inline def `setIon-badge`(value: IonBadge & HTMLAttributes[HTMLIonBadgeElement]): Self = StObject.set(x, "ion-badge", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-button`(value: IonButton & HTMLAttributes[HTMLIonButtonElement]): Self = StObject.set(x, "ion-button", value.asInstanceOf[js.Any])
+          inline def `setIon-button`(value: IonButton & HTMLAttributes[HTMLIonButtonElement]): Self = StObject.set(x, "ion-button", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-buttons`(value: IonButtons & HTMLAttributes[HTMLIonButtonsElement]): Self = StObject.set(x, "ion-buttons", value.asInstanceOf[js.Any])
+          inline def `setIon-buttons`(value: IonButtons & HTMLAttributes[HTMLIonButtonsElement]): Self = StObject.set(x, "ion-buttons", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-card`(value: IonCard & HTMLAttributes[HTMLIonCardElement]): Self = StObject.set(x, "ion-card", value.asInstanceOf[js.Any])
+          inline def `setIon-card`(value: IonCard & HTMLAttributes[HTMLIonCardElement]): Self = StObject.set(x, "ion-card", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-card-content`(value: IonCardContent & HTMLAttributes[HTMLIonCardContentElement]): Self = StObject.set(x, "ion-card-content", value.asInstanceOf[js.Any])
+          inline def `setIon-card-content`(value: IonCardContent & HTMLAttributes[HTMLIonCardContentElement]): Self = StObject.set(x, "ion-card-content", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-card-header`(value: IonCardHeader & HTMLAttributes[HTMLIonCardHeaderElement]): Self = StObject.set(x, "ion-card-header", value.asInstanceOf[js.Any])
+          inline def `setIon-card-header`(value: IonCardHeader & HTMLAttributes[HTMLIonCardHeaderElement]): Self = StObject.set(x, "ion-card-header", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-card-subtitle`(value: IonCardSubtitle & HTMLAttributes[HTMLIonCardSubtitleElement]): Self = StObject.set(x, "ion-card-subtitle", value.asInstanceOf[js.Any])
+          inline def `setIon-card-subtitle`(value: IonCardSubtitle & HTMLAttributes[HTMLIonCardSubtitleElement]): Self = StObject.set(x, "ion-card-subtitle", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-card-title`(value: IonCardTitle & HTMLAttributes[HTMLIonCardTitleElement]): Self = StObject.set(x, "ion-card-title", value.asInstanceOf[js.Any])
+          inline def `setIon-card-title`(value: IonCardTitle & HTMLAttributes[HTMLIonCardTitleElement]): Self = StObject.set(x, "ion-card-title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-checkbox`(value: IonCheckbox & HTMLAttributes[HTMLIonCheckboxElement]): Self = StObject.set(x, "ion-checkbox", value.asInstanceOf[js.Any])
+          inline def `setIon-checkbox`(value: IonCheckbox & HTMLAttributes[HTMLIonCheckboxElement]): Self = StObject.set(x, "ion-checkbox", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-chip`(value: IonChip & HTMLAttributes[HTMLIonChipElement]): Self = StObject.set(x, "ion-chip", value.asInstanceOf[js.Any])
+          inline def `setIon-chip`(value: IonChip & HTMLAttributes[HTMLIonChipElement]): Self = StObject.set(x, "ion-chip", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-col`(value: IonCol & HTMLAttributes[HTMLIonColElement]): Self = StObject.set(x, "ion-col", value.asInstanceOf[js.Any])
+          inline def `setIon-col`(value: IonCol & HTMLAttributes[HTMLIonColElement]): Self = StObject.set(x, "ion-col", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-content`(value: IonContent & HTMLAttributes[HTMLIonContentElement]): Self = StObject.set(x, "ion-content", value.asInstanceOf[js.Any])
+          inline def `setIon-content`(value: IonContent & HTMLAttributes[HTMLIonContentElement]): Self = StObject.set(x, "ion-content", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-datetime`(value: IonDatetime & HTMLAttributes[HTMLIonDatetimeElement]): Self = StObject.set(x, "ion-datetime", value.asInstanceOf[js.Any])
+          inline def `setIon-datetime`(value: IonDatetime & HTMLAttributes[HTMLIonDatetimeElement]): Self = StObject.set(x, "ion-datetime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-fab`(value: IonFab & HTMLAttributes[HTMLIonFabElement]): Self = StObject.set(x, "ion-fab", value.asInstanceOf[js.Any])
+          inline def `setIon-fab`(value: IonFab & HTMLAttributes[HTMLIonFabElement]): Self = StObject.set(x, "ion-fab", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-fab-button`(value: IonFabButton & HTMLAttributes[HTMLIonFabButtonElement]): Self = StObject.set(x, "ion-fab-button", value.asInstanceOf[js.Any])
+          inline def `setIon-fab-button`(value: IonFabButton & HTMLAttributes[HTMLIonFabButtonElement]): Self = StObject.set(x, "ion-fab-button", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-fab-list`(value: IonFabList & HTMLAttributes[HTMLIonFabListElement]): Self = StObject.set(x, "ion-fab-list", value.asInstanceOf[js.Any])
+          inline def `setIon-fab-list`(value: IonFabList & HTMLAttributes[HTMLIonFabListElement]): Self = StObject.set(x, "ion-fab-list", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-footer`(value: IonFooter & HTMLAttributes[HTMLIonFooterElement]): Self = StObject.set(x, "ion-footer", value.asInstanceOf[js.Any])
+          inline def `setIon-footer`(value: IonFooter & HTMLAttributes[HTMLIonFooterElement]): Self = StObject.set(x, "ion-footer", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-grid`(value: IonGrid & HTMLAttributes[HTMLIonGridElement]): Self = StObject.set(x, "ion-grid", value.asInstanceOf[js.Any])
+          inline def `setIon-grid`(value: IonGrid & HTMLAttributes[HTMLIonGridElement]): Self = StObject.set(x, "ion-grid", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-header`(value: IonHeader & HTMLAttributes[HTMLIonHeaderElement]): Self = StObject.set(x, "ion-header", value.asInstanceOf[js.Any])
+          inline def `setIon-header`(value: IonHeader & HTMLAttributes[HTMLIonHeaderElement]): Self = StObject.set(x, "ion-header", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-img`(value: IonImg & HTMLAttributes[HTMLIonImgElement]): Self = StObject.set(x, "ion-img", value.asInstanceOf[js.Any])
+          inline def `setIon-img`(value: IonImg & HTMLAttributes[HTMLIonImgElement]): Self = StObject.set(x, "ion-img", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-infinite-scroll`(value: IonInfiniteScroll & HTMLAttributes[HTMLIonInfiniteScrollElement]): Self = StObject.set(x, "ion-infinite-scroll", value.asInstanceOf[js.Any])
+          inline def `setIon-infinite-scroll`(value: IonInfiniteScroll & HTMLAttributes[HTMLIonInfiniteScrollElement]): Self = StObject.set(x, "ion-infinite-scroll", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-infinite-scroll-content`(value: IonInfiniteScrollContent & HTMLAttributes[HTMLIonInfiniteScrollContentElement]): Self = StObject.set(x, "ion-infinite-scroll-content", value.asInstanceOf[js.Any])
+          inline def `setIon-infinite-scroll-content`(value: IonInfiniteScrollContent & HTMLAttributes[HTMLIonInfiniteScrollContentElement]): Self = StObject.set(x, "ion-infinite-scroll-content", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-input`(value: IonInput & HTMLAttributes[HTMLIonInputElement]): Self = StObject.set(x, "ion-input", value.asInstanceOf[js.Any])
+          inline def `setIon-input`(value: IonInput & HTMLAttributes[HTMLIonInputElement]): Self = StObject.set(x, "ion-input", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-item`(value: IonItem & HTMLAttributes[HTMLIonItemElement]): Self = StObject.set(x, "ion-item", value.asInstanceOf[js.Any])
+          inline def `setIon-item`(value: IonItem & HTMLAttributes[HTMLIonItemElement]): Self = StObject.set(x, "ion-item", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-item-divider`(value: IonItemDivider & HTMLAttributes[HTMLIonItemDividerElement]): Self = StObject.set(x, "ion-item-divider", value.asInstanceOf[js.Any])
+          inline def `setIon-item-divider`(value: IonItemDivider & HTMLAttributes[HTMLIonItemDividerElement]): Self = StObject.set(x, "ion-item-divider", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-item-group`(value: IonItemGroup & HTMLAttributes[HTMLIonItemGroupElement]): Self = StObject.set(x, "ion-item-group", value.asInstanceOf[js.Any])
+          inline def `setIon-item-group`(value: IonItemGroup & HTMLAttributes[HTMLIonItemGroupElement]): Self = StObject.set(x, "ion-item-group", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-item-option`(value: IonItemOption & HTMLAttributes[HTMLIonItemOptionElement]): Self = StObject.set(x, "ion-item-option", value.asInstanceOf[js.Any])
+          inline def `setIon-item-option`(value: IonItemOption & HTMLAttributes[HTMLIonItemOptionElement]): Self = StObject.set(x, "ion-item-option", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-item-options`(value: IonItemOptions & HTMLAttributes[HTMLIonItemOptionsElement]): Self = StObject.set(x, "ion-item-options", value.asInstanceOf[js.Any])
+          inline def `setIon-item-options`(value: IonItemOptions & HTMLAttributes[HTMLIonItemOptionsElement]): Self = StObject.set(x, "ion-item-options", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-item-sliding`(value: IonItemSliding & HTMLAttributes[HTMLIonItemSlidingElement]): Self = StObject.set(x, "ion-item-sliding", value.asInstanceOf[js.Any])
+          inline def `setIon-item-sliding`(value: IonItemSliding & HTMLAttributes[HTMLIonItemSlidingElement]): Self = StObject.set(x, "ion-item-sliding", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-label`(value: IonLabel & HTMLAttributes[HTMLIonLabelElement]): Self = StObject.set(x, "ion-label", value.asInstanceOf[js.Any])
+          inline def `setIon-label`(value: IonLabel & HTMLAttributes[HTMLIonLabelElement]): Self = StObject.set(x, "ion-label", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-list`(value: IonList & HTMLAttributes[HTMLIonListElement]): Self = StObject.set(x, "ion-list", value.asInstanceOf[js.Any])
+          inline def `setIon-list`(value: IonList & HTMLAttributes[HTMLIonListElement]): Self = StObject.set(x, "ion-list", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-list-header`(value: IonListHeader & HTMLAttributes[HTMLIonListHeaderElement]): Self = StObject.set(x, "ion-list-header", value.asInstanceOf[js.Any])
+          inline def `setIon-list-header`(value: IonListHeader & HTMLAttributes[HTMLIonListHeaderElement]): Self = StObject.set(x, "ion-list-header", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-loading`(value: IonLoading & HTMLAttributes[HTMLIonLoadingElement]): Self = StObject.set(x, "ion-loading", value.asInstanceOf[js.Any])
+          inline def `setIon-loading`(value: IonLoading & HTMLAttributes[HTMLIonLoadingElement]): Self = StObject.set(x, "ion-loading", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-menu`(value: IonMenu & HTMLAttributes[HTMLIonMenuElement]): Self = StObject.set(x, "ion-menu", value.asInstanceOf[js.Any])
+          inline def `setIon-menu`(value: IonMenu & HTMLAttributes[HTMLIonMenuElement]): Self = StObject.set(x, "ion-menu", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-menu-button`(value: IonMenuButton & HTMLAttributes[HTMLIonMenuButtonElement]): Self = StObject.set(x, "ion-menu-button", value.asInstanceOf[js.Any])
+          inline def `setIon-menu-button`(value: IonMenuButton & HTMLAttributes[HTMLIonMenuButtonElement]): Self = StObject.set(x, "ion-menu-button", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-menu-toggle`(value: IonMenuToggle & HTMLAttributes[HTMLIonMenuToggleElement]): Self = StObject.set(x, "ion-menu-toggle", value.asInstanceOf[js.Any])
+          inline def `setIon-menu-toggle`(value: IonMenuToggle & HTMLAttributes[HTMLIonMenuToggleElement]): Self = StObject.set(x, "ion-menu-toggle", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-modal`(value: IonModal & HTMLAttributes[HTMLIonModalElement]): Self = StObject.set(x, "ion-modal", value.asInstanceOf[js.Any])
+          inline def `setIon-modal`(value: IonModal & HTMLAttributes[HTMLIonModalElement]): Self = StObject.set(x, "ion-modal", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-nav`(value: IonNav & HTMLAttributes[HTMLIonNavElement]): Self = StObject.set(x, "ion-nav", value.asInstanceOf[js.Any])
+          inline def `setIon-nav`(value: IonNav & HTMLAttributes[HTMLIonNavElement]): Self = StObject.set(x, "ion-nav", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-nav-link`(value: IonNavLink & HTMLAttributes[HTMLIonNavLinkElement]): Self = StObject.set(x, "ion-nav-link", value.asInstanceOf[js.Any])
+          inline def `setIon-nav-link`(value: IonNavLink & HTMLAttributes[HTMLIonNavLinkElement]): Self = StObject.set(x, "ion-nav-link", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-note`(value: IonNote & HTMLAttributes[HTMLIonNoteElement]): Self = StObject.set(x, "ion-note", value.asInstanceOf[js.Any])
+          inline def `setIon-note`(value: IonNote & HTMLAttributes[HTMLIonNoteElement]): Self = StObject.set(x, "ion-note", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-picker`(value: IonPicker & HTMLAttributes[HTMLIonPickerElement]): Self = StObject.set(x, "ion-picker", value.asInstanceOf[js.Any])
+          inline def `setIon-picker`(value: IonPicker & HTMLAttributes[HTMLIonPickerElement]): Self = StObject.set(x, "ion-picker", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-picker-column`(value: IonPickerColumn & HTMLAttributes[HTMLIonPickerColumnElement]): Self = StObject.set(x, "ion-picker-column", value.asInstanceOf[js.Any])
+          inline def `setIon-picker-column`(value: IonPickerColumn & HTMLAttributes[HTMLIonPickerColumnElement]): Self = StObject.set(x, "ion-picker-column", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-popover`(value: IonPopover & HTMLAttributes[HTMLIonPopoverElement]): Self = StObject.set(x, "ion-popover", value.asInstanceOf[js.Any])
+          inline def `setIon-popover`(value: IonPopover & HTMLAttributes[HTMLIonPopoverElement]): Self = StObject.set(x, "ion-popover", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-progress-bar`(value: IonProgressBar & HTMLAttributes[HTMLIonProgressBarElement]): Self = StObject.set(x, "ion-progress-bar", value.asInstanceOf[js.Any])
+          inline def `setIon-progress-bar`(value: IonProgressBar & HTMLAttributes[HTMLIonProgressBarElement]): Self = StObject.set(x, "ion-progress-bar", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-radio`(value: IonRadio & HTMLAttributes[HTMLIonRadioElement]): Self = StObject.set(x, "ion-radio", value.asInstanceOf[js.Any])
+          inline def `setIon-radio`(value: IonRadio & HTMLAttributes[HTMLIonRadioElement]): Self = StObject.set(x, "ion-radio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-radio-group`(value: IonRadioGroup & HTMLAttributes[HTMLIonRadioGroupElement]): Self = StObject.set(x, "ion-radio-group", value.asInstanceOf[js.Any])
+          inline def `setIon-radio-group`(value: IonRadioGroup & HTMLAttributes[HTMLIonRadioGroupElement]): Self = StObject.set(x, "ion-radio-group", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-range`(value: IonRange & HTMLAttributes[HTMLIonRangeElement]): Self = StObject.set(x, "ion-range", value.asInstanceOf[js.Any])
+          inline def `setIon-range`(value: IonRange & HTMLAttributes[HTMLIonRangeElement]): Self = StObject.set(x, "ion-range", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-refresher`(value: IonRefresher & HTMLAttributes[HTMLIonRefresherElement]): Self = StObject.set(x, "ion-refresher", value.asInstanceOf[js.Any])
+          inline def `setIon-refresher`(value: IonRefresher & HTMLAttributes[HTMLIonRefresherElement]): Self = StObject.set(x, "ion-refresher", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-refresher-content`(value: IonRefresherContent & HTMLAttributes[HTMLIonRefresherContentElement]): Self = StObject.set(x, "ion-refresher-content", value.asInstanceOf[js.Any])
+          inline def `setIon-refresher-content`(value: IonRefresherContent & HTMLAttributes[HTMLIonRefresherContentElement]): Self = StObject.set(x, "ion-refresher-content", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-reorder`(value: IonReorder & HTMLAttributes[HTMLIonReorderElement]): Self = StObject.set(x, "ion-reorder", value.asInstanceOf[js.Any])
+          inline def `setIon-reorder`(value: IonReorder & HTMLAttributes[HTMLIonReorderElement]): Self = StObject.set(x, "ion-reorder", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-reorder-group`(value: IonReorderGroup & HTMLAttributes[HTMLIonReorderGroupElement]): Self = StObject.set(x, "ion-reorder-group", value.asInstanceOf[js.Any])
+          inline def `setIon-reorder-group`(value: IonReorderGroup & HTMLAttributes[HTMLIonReorderGroupElement]): Self = StObject.set(x, "ion-reorder-group", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-ripple-effect`(value: IonRippleEffect & HTMLAttributes[HTMLIonRippleEffectElement]): Self = StObject.set(x, "ion-ripple-effect", value.asInstanceOf[js.Any])
+          inline def `setIon-ripple-effect`(value: IonRippleEffect & HTMLAttributes[HTMLIonRippleEffectElement]): Self = StObject.set(x, "ion-ripple-effect", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-route`(value: IonRoute & HTMLAttributes[HTMLIonRouteElement]): Self = StObject.set(x, "ion-route", value.asInstanceOf[js.Any])
+          inline def `setIon-route`(value: IonRoute & HTMLAttributes[HTMLIonRouteElement]): Self = StObject.set(x, "ion-route", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-route-redirect`(value: IonRouteRedirect & HTMLAttributes[HTMLIonRouteRedirectElement]): Self = StObject.set(x, "ion-route-redirect", value.asInstanceOf[js.Any])
+          inline def `setIon-route-redirect`(value: IonRouteRedirect & HTMLAttributes[HTMLIonRouteRedirectElement]): Self = StObject.set(x, "ion-route-redirect", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-router`(value: IonRouter & HTMLAttributes[HTMLIonRouterElement]): Self = StObject.set(x, "ion-router", value.asInstanceOf[js.Any])
+          inline def `setIon-router`(value: IonRouter & HTMLAttributes[HTMLIonRouterElement]): Self = StObject.set(x, "ion-router", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-router-link`(value: IonRouterLink & HTMLAttributes[HTMLIonRouterLinkElement]): Self = StObject.set(x, "ion-router-link", value.asInstanceOf[js.Any])
+          inline def `setIon-router-link`(value: IonRouterLink & HTMLAttributes[HTMLIonRouterLinkElement]): Self = StObject.set(x, "ion-router-link", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-router-outlet`(value: IonRouterOutlet & HTMLAttributes[HTMLIonRouterOutletElement]): Self = StObject.set(x, "ion-router-outlet", value.asInstanceOf[js.Any])
+          inline def `setIon-router-outlet`(value: IonRouterOutlet & HTMLAttributes[HTMLIonRouterOutletElement]): Self = StObject.set(x, "ion-router-outlet", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-row`(value: IonRow & HTMLAttributes[HTMLIonRowElement]): Self = StObject.set(x, "ion-row", value.asInstanceOf[js.Any])
+          inline def `setIon-row`(value: IonRow & HTMLAttributes[HTMLIonRowElement]): Self = StObject.set(x, "ion-row", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-searchbar`(value: IonSearchbar & HTMLAttributes[HTMLIonSearchbarElement]): Self = StObject.set(x, "ion-searchbar", value.asInstanceOf[js.Any])
+          inline def `setIon-searchbar`(value: IonSearchbar & HTMLAttributes[HTMLIonSearchbarElement]): Self = StObject.set(x, "ion-searchbar", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-segment`(value: IonSegment & HTMLAttributes[HTMLIonSegmentElement]): Self = StObject.set(x, "ion-segment", value.asInstanceOf[js.Any])
+          inline def `setIon-segment`(value: IonSegment & HTMLAttributes[HTMLIonSegmentElement]): Self = StObject.set(x, "ion-segment", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-segment-button`(value: IonSegmentButton & HTMLAttributes[HTMLIonSegmentButtonElement]): Self = StObject.set(x, "ion-segment-button", value.asInstanceOf[js.Any])
+          inline def `setIon-segment-button`(value: IonSegmentButton & HTMLAttributes[HTMLIonSegmentButtonElement]): Self = StObject.set(x, "ion-segment-button", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-select`(value: IonSelect & HTMLAttributes[HTMLIonSelectElement]): Self = StObject.set(x, "ion-select", value.asInstanceOf[js.Any])
+          inline def `setIon-select`(value: IonSelect & HTMLAttributes[HTMLIonSelectElement]): Self = StObject.set(x, "ion-select", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-select-option`(value: IonSelectOption & HTMLAttributes[HTMLIonSelectOptionElement]): Self = StObject.set(x, "ion-select-option", value.asInstanceOf[js.Any])
+          inline def `setIon-select-option`(value: IonSelectOption & HTMLAttributes[HTMLIonSelectOptionElement]): Self = StObject.set(x, "ion-select-option", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-select-popover`(value: IonSelectPopover & HTMLAttributes[HTMLIonSelectPopoverElement]): Self = StObject.set(x, "ion-select-popover", value.asInstanceOf[js.Any])
+          inline def `setIon-select-popover`(value: IonSelectPopover & HTMLAttributes[HTMLIonSelectPopoverElement]): Self = StObject.set(x, "ion-select-popover", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-skeleton-text`(value: IonSkeletonText & HTMLAttributes[HTMLIonSkeletonTextElement]): Self = StObject.set(x, "ion-skeleton-text", value.asInstanceOf[js.Any])
+          inline def `setIon-skeleton-text`(value: IonSkeletonText & HTMLAttributes[HTMLIonSkeletonTextElement]): Self = StObject.set(x, "ion-skeleton-text", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-slide`(value: IonSlide & HTMLAttributes[HTMLIonSlideElement]): Self = StObject.set(x, "ion-slide", value.asInstanceOf[js.Any])
+          inline def `setIon-slide`(value: IonSlide & HTMLAttributes[HTMLIonSlideElement]): Self = StObject.set(x, "ion-slide", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-slides`(value: IonSlides & HTMLAttributes[HTMLIonSlidesElement]): Self = StObject.set(x, "ion-slides", value.asInstanceOf[js.Any])
+          inline def `setIon-slides`(value: IonSlides & HTMLAttributes[HTMLIonSlidesElement]): Self = StObject.set(x, "ion-slides", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-spinner`(value: IonSpinner & HTMLAttributes[HTMLIonSpinnerElement]): Self = StObject.set(x, "ion-spinner", value.asInstanceOf[js.Any])
+          inline def `setIon-spinner`(value: IonSpinner & HTMLAttributes[HTMLIonSpinnerElement]): Self = StObject.set(x, "ion-spinner", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-split-pane`(value: IonSplitPane & HTMLAttributes[HTMLIonSplitPaneElement]): Self = StObject.set(x, "ion-split-pane", value.asInstanceOf[js.Any])
+          inline def `setIon-split-pane`(value: IonSplitPane & HTMLAttributes[HTMLIonSplitPaneElement]): Self = StObject.set(x, "ion-split-pane", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-tab`(value: IonTab & HTMLAttributes[HTMLIonTabElement]): Self = StObject.set(x, "ion-tab", value.asInstanceOf[js.Any])
+          inline def `setIon-tab`(value: IonTab & HTMLAttributes[HTMLIonTabElement]): Self = StObject.set(x, "ion-tab", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-tab-bar`(value: IonTabBar & HTMLAttributes[HTMLIonTabBarElement]): Self = StObject.set(x, "ion-tab-bar", value.asInstanceOf[js.Any])
+          inline def `setIon-tab-bar`(value: IonTabBar & HTMLAttributes[HTMLIonTabBarElement]): Self = StObject.set(x, "ion-tab-bar", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-tab-button`(value: IonTabButton & HTMLAttributes[HTMLIonTabButtonElement]): Self = StObject.set(x, "ion-tab-button", value.asInstanceOf[js.Any])
+          inline def `setIon-tab-button`(value: IonTabButton & HTMLAttributes[HTMLIonTabButtonElement]): Self = StObject.set(x, "ion-tab-button", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-tabs`(value: IonTabs & HTMLAttributes[HTMLIonTabsElement]): Self = StObject.set(x, "ion-tabs", value.asInstanceOf[js.Any])
+          inline def `setIon-tabs`(value: IonTabs & HTMLAttributes[HTMLIonTabsElement]): Self = StObject.set(x, "ion-tabs", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-text`(value: IonText & HTMLAttributes[HTMLIonTextElement]): Self = StObject.set(x, "ion-text", value.asInstanceOf[js.Any])
+          inline def `setIon-text`(value: IonText & HTMLAttributes[HTMLIonTextElement]): Self = StObject.set(x, "ion-text", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-textarea`(value: IonTextarea & HTMLAttributes[HTMLIonTextareaElement]): Self = StObject.set(x, "ion-textarea", value.asInstanceOf[js.Any])
+          inline def `setIon-textarea`(value: IonTextarea & HTMLAttributes[HTMLIonTextareaElement]): Self = StObject.set(x, "ion-textarea", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-thumbnail`(value: IonThumbnail & HTMLAttributes[HTMLIonThumbnailElement]): Self = StObject.set(x, "ion-thumbnail", value.asInstanceOf[js.Any])
+          inline def `setIon-thumbnail`(value: IonThumbnail & HTMLAttributes[HTMLIonThumbnailElement]): Self = StObject.set(x, "ion-thumbnail", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-title`(value: IonTitle & HTMLAttributes[HTMLIonTitleElement]): Self = StObject.set(x, "ion-title", value.asInstanceOf[js.Any])
+          inline def `setIon-title`(value: IonTitle & HTMLAttributes[HTMLIonTitleElement]): Self = StObject.set(x, "ion-title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-toast`(value: IonToast & HTMLAttributes[HTMLIonToastElement]): Self = StObject.set(x, "ion-toast", value.asInstanceOf[js.Any])
+          inline def `setIon-toast`(value: IonToast & HTMLAttributes[HTMLIonToastElement]): Self = StObject.set(x, "ion-toast", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-toggle`(value: IonToggle & HTMLAttributes[HTMLIonToggleElement]): Self = StObject.set(x, "ion-toggle", value.asInstanceOf[js.Any])
+          inline def `setIon-toggle`(value: IonToggle & HTMLAttributes[HTMLIonToggleElement]): Self = StObject.set(x, "ion-toggle", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-toolbar`(value: IonToolbar & HTMLAttributes[HTMLIonToolbarElement]): Self = StObject.set(x, "ion-toolbar", value.asInstanceOf[js.Any])
+          inline def `setIon-toolbar`(value: IonToolbar & HTMLAttributes[HTMLIonToolbarElement]): Self = StObject.set(x, "ion-toolbar", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setIon-virtual-scroll`(value: IonVirtualScroll & HTMLAttributes[HTMLIonVirtualScrollElement]): Self = StObject.set(x, "ion-virtual-scroll", value.asInstanceOf[js.Any])
+          inline def `setIon-virtual-scroll`(value: IonVirtualScroll & HTMLAttributes[HTMLIonVirtualScrollElement]): Self = StObject.set(x, "ion-virtual-scroll", value.asInstanceOf[js.Any])
         }
       }
     }

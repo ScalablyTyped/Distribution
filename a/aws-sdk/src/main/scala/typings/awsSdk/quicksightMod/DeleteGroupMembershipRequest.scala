@@ -28,8 +28,7 @@ trait DeleteGroupMembershipRequest extends StObject {
 }
 object DeleteGroupMembershipRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AwsAccountId: AwsAccountId,
     GroupName: GroupName,
     MemberName: GroupMemberName,
@@ -39,19 +38,14 @@ object DeleteGroupMembershipRequest {
     __obj.asInstanceOf[DeleteGroupMembershipRequest]
   }
   
-  @scala.inline
-  implicit class DeleteGroupMembershipRequestMutableBuilder[Self <: DeleteGroupMembershipRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGroupMembershipRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberName(value: GroupMemberName): Self = StObject.set(x, "MemberName", value.asInstanceOf[js.Any])
+    inline def setMemberName(value: GroupMemberName): Self = StObject.set(x, "MemberName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
   }
 }

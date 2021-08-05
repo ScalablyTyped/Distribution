@@ -19,34 +19,25 @@ trait BodySpecimenHeaders extends StObject {
 }
 object BodySpecimenHeaders {
   
-  @scala.inline
-  def apply(body: Specimen, id: String): BodySpecimenHeaders = {
+  inline def apply(body: Specimen, id: String): BodySpecimenHeaders = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "Specimen")
     __obj.asInstanceOf[BodySpecimenHeaders]
   }
   
-  @scala.inline
-  implicit class BodySpecimenHeadersMutableBuilder[Self <: BodySpecimenHeaders] (val x: Self) extends AnyVal {
+  extension [Self <: BodySpecimenHeaders](x: Self) {
     
-    @scala.inline
-    def setBody(value: Specimen): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Specimen): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: typings.fhirKitClient.fhirKitClientStrings.Specimen): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: typings.fhirKitClient.fhirKitClientStrings.Specimen): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

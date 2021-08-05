@@ -23,34 +23,25 @@ trait DescribeWorkspaceBundlesRequest extends StObject {
 }
 object DescribeWorkspaceBundlesRequest {
   
-  @scala.inline
-  def apply(): DescribeWorkspaceBundlesRequest = {
+  inline def apply(): DescribeWorkspaceBundlesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeWorkspaceBundlesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeWorkspaceBundlesRequestMutableBuilder[Self <: DescribeWorkspaceBundlesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkspaceBundlesRequest](x: Self) {
     
-    @scala.inline
-    def setBundleIds(value: BundleIdList): Self = StObject.set(x, "BundleIds", value.asInstanceOf[js.Any])
+    inline def setBundleIds(value: BundleIdList): Self = StObject.set(x, "BundleIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdsUndefined: Self = StObject.set(x, "BundleIds", js.undefined)
+    inline def setBundleIdsUndefined: Self = StObject.set(x, "BundleIds", js.undefined)
     
-    @scala.inline
-    def setBundleIdsVarargs(value: BundleId*): Self = StObject.set(x, "BundleIds", js.Array(value :_*))
+    inline def setBundleIdsVarargs(value: BundleId*): Self = StObject.set(x, "BundleIds", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOwner(value: BundleOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: BundleOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
   }
 }

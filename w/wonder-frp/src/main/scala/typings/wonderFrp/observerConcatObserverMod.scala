@@ -13,9 +13,9 @@ object observerConcatObserverMod {
   class ConcatObserver protected () extends Observer {
     def this(currentObserver: IObserver, startNextStream: js.Function) = this()
     
-    var _startNextStream: js.Any = js.native
+    /* private */ var _startNextStream: js.Any = js.native
     
-    var currentObserver: js.Any = js.native
+    /* protected */ var currentObserver: js.Any = js.native
   }
   /* static members */
   object ConcatObserver {
@@ -24,7 +24,6 @@ object observerConcatObserverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(currentObserver: IObserver, startNextStream: js.Function): ConcatObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], startNextStream.asInstanceOf[js.Any])).asInstanceOf[ConcatObserver]
+    inline def create(currentObserver: IObserver, startNextStream: js.Function): ConcatObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], startNextStream.asInstanceOf[js.Any])).asInstanceOf[ConcatObserver]
   }
 }

@@ -20,7 +20,7 @@ class Migration protected () extends StObject {
   
   def createTable(table: String, arrFieldData: js.Array[js.Object], modelName: String): js.Any = js.native
   
-  var db: js.Any = js.native
+  /* private */ var db: js.Any = js.native
   
   def down(): js.Array[String] = js.native
   
@@ -37,13 +37,13 @@ class Migration protected () extends StObject {
   
   def executeUp(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
   
-  var id: js.Any = js.native
+  /* private */ var id: js.Any = js.native
   
   def renameColumn(table: String, column: String, newColumn: String): js.Any = js.native
   
   def renameTable(table: String, newTableName: String, renameModel: String, newModelName: String): js.Any = js.native
   
-  var schema: js.Any = js.native
+  /* private */ var schema: js.Any = js.native
   
   def up(): js.Array[String] = js.native
 }

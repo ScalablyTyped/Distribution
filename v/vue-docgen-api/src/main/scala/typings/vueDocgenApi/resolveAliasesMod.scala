@@ -11,6 +11,5 @@ object resolveAliasesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(filePath: String, aliases: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(filePath.asInstanceOf[js.Any], aliases.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(filePath: String, aliases: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(filePath.asInstanceOf[js.Any], aliases.asInstanceOf[js.Any])).asInstanceOf[String]
 }

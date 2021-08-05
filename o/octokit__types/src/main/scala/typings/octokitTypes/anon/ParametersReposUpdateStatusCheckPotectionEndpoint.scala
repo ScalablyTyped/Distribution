@@ -18,8 +18,7 @@ trait ParametersReposUpdateStatusCheckPotectionEndpoint extends StObject {
 }
 object ParametersReposUpdateStatusCheckPotectionEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposUpdateStatusCheckPotectionEndpoint,
     request: ReposUpdateStatusCheckPotectionRequestOptions,
     response: OctokitResponse[ReposUpdateStatusCheckPotectionResponseData]
@@ -28,16 +27,12 @@ object ParametersReposUpdateStatusCheckPotectionEndpoint {
     __obj.asInstanceOf[ParametersReposUpdateStatusCheckPotectionEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposUpdateStatusCheckPotectionEndpointMutableBuilder[Self <: ParametersReposUpdateStatusCheckPotectionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposUpdateStatusCheckPotectionEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposUpdateStatusCheckPotectionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposUpdateStatusCheckPotectionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposUpdateStatusCheckPotectionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposUpdateStatusCheckPotectionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposUpdateStatusCheckPotectionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposUpdateStatusCheckPotectionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

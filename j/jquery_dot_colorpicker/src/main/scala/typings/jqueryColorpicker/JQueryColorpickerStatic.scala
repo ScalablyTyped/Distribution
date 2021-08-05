@@ -29,8 +29,7 @@ trait JQueryColorpickerStatic extends StObject {
 }
 object JQueryColorpickerStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Color: Instantiable,
     limits: StringDictionary[js.Function1[/* color */ js.Any, Unit]],
     parsers: StringDictionary[js.Function1[/* color */ js.Any, js.Any]],
@@ -56,26 +55,20 @@ object JQueryColorpickerStatic {
   }
   object CMYK {
     
-    @scala.inline
-    def apply(c: Double, k: Double, m: Double, y: Double): CMYK = {
+    inline def apply(c: Double, k: Double, m: Double, y: Double): CMYK = {
       val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[CMYK]
     }
     
-    @scala.inline
-    implicit class CMYKMutableBuilder[Self <: CMYK] (val x: Self) extends AnyVal {
+    extension [Self <: CMYK](x: Self) {
       
-      @scala.inline
-      def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+      inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+      inline def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,8 +122,7 @@ object JQueryColorpickerStatic {
   }
   object Color {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       copy: () => Color,
       distance: Color => Double,
       equals_ : Color => Boolean,
@@ -160,77 +152,53 @@ object JQueryColorpickerStatic {
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setCopy(value: () => Color): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+      inline def setCopy(value: () => Color): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDistance(value: Color => Double): Self = StObject.set(x, "distance", js.Any.fromFunction1(value))
+      inline def setDistance(value: Color => Double): Self = StObject.set(x, "distance", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEquals_(value: Color => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: Color => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAlpha(value: () => Double): Self = StObject.set(x, "getAlpha", js.Any.fromFunction0(value))
+      inline def setGetAlpha(value: () => Double): Self = StObject.set(x, "getAlpha", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCMYK(value: () => CMYK): Self = StObject.set(x, "getCMYK", js.Any.fromFunction0(value))
+      inline def setGetCMYK(value: () => CMYK): Self = StObject.set(x, "getCMYK", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetChannels(value: () => A): Self = StObject.set(x, "getChannels", js.Any.fromFunction0(value))
+      inline def setGetChannels(value: () => A): Self = StObject.set(x, "getChannels", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHSL(value: () => HSL): Self = StObject.set(x, "getHSL", js.Any.fromFunction0(value))
+      inline def setGetHSL(value: () => HSL): Self = StObject.set(x, "getHSL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHSV(value: () => HSV): Self = StObject.set(x, "getHSV", js.Any.fromFunction0(value))
+      inline def setGetHSV(value: () => HSV): Self = StObject.set(x, "getHSV", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLAB(value: () => LAB): Self = StObject.set(x, "getLAB", js.Any.fromFunction0(value))
+      inline def setGetLAB(value: () => LAB): Self = StObject.set(x, "getLAB", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRGB(value: () => RGB): Self = StObject.set(x, "getRGB", js.Any.fromFunction0(value))
+      inline def setGetRGB(value: () => RGB): Self = StObject.set(x, "getRGB", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSpaces(value: () => Cmyk): Self = StObject.set(x, "getSpaces", js.Any.fromFunction0(value))
+      inline def setGetSpaces(value: () => Cmyk): Self = StObject.set(x, "getSpaces", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLimit(value: Double => Unit): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
+      inline def setLimit(value: Double => Unit): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNormalize(value: () => Color): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
+      inline def setNormalize(value: () => Color): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: Boolean): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setSet(value: Boolean): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAlpha(value: Double => Color): Self = StObject.set(x, "setAlpha", js.Any.fromFunction1(value))
+      inline def setSetAlpha(value: Double => Color): Self = StObject.set(x, "setAlpha", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCMYK(value: (Double, Double, Double, Double) => Color): Self = StObject.set(x, "setCMYK", js.Any.fromFunction4(value))
+      inline def setSetCMYK(value: (Double, Double, Double, Double) => Color): Self = StObject.set(x, "setCMYK", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setSetHSL(value: (Double, Double, Double) => Color): Self = StObject.set(x, "setHSL", js.Any.fromFunction3(value))
+      inline def setSetHSL(value: (Double, Double, Double) => Color): Self = StObject.set(x, "setHSL", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetHSV(value: (Double, Double, Double) => Color): Self = StObject.set(x, "setHSV", js.Any.fromFunction3(value))
+      inline def setSetHSV(value: (Double, Double, Double) => Color): Self = StObject.set(x, "setHSV", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetLAB(value: (Double, Double, Double) => Color): Self = StObject.set(x, "setLAB", js.Any.fromFunction3(value))
+      inline def setSetLAB(value: (Double, Double, Double) => Color): Self = StObject.set(x, "setLAB", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetRGB(value: (Double, Double, Double) => Color): Self = StObject.set(x, "setRGB", js.Any.fromFunction3(value))
+      inline def setSetRGB(value: (Double, Double, Double) => Color): Self = StObject.set(x, "setRGB", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetSpaces(value: js.Any => Color): Self = StObject.set(x, "setSpaces", js.Any.fromFunction1(value))
+      inline def setSetSpaces(value: js.Any => Color): Self = StObject.set(x, "setSpaces", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToCSS(value: () => String): Self = StObject.set(x, "toCSS", js.Any.fromFunction0(value))
+      inline def setToCSS(value: () => String): Self = StObject.set(x, "toCSS", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToHEX(value: () => String): Self = StObject.set(x, "toHEX", js.Any.fromFunction0(value))
+      inline def setToHEX(value: () => String): Self = StObject.set(x, "toHEX", js.Any.fromFunction0(value))
     }
   }
   
@@ -244,23 +212,18 @@ object JQueryColorpickerStatic {
   }
   object HSL {
     
-    @scala.inline
-    def apply(h: Double, l: Double, s: Double): HSL = {
+    inline def apply(h: Double, l: Double, s: Double): HSL = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
       __obj.asInstanceOf[HSL]
     }
     
-    @scala.inline
-    implicit class HSLMutableBuilder[Self <: HSL] (val x: Self) extends AnyVal {
+    extension [Self <: HSL](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+      inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,52 +237,38 @@ object JQueryColorpickerStatic {
   }
   object HSV {
     
-    @scala.inline
-    def apply(h: Double, s: Double, v: Double): HSV = {
+    inline def apply(h: Double, s: Double, v: Double): HSV = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[HSV]
     }
     
-    @scala.inline
-    implicit class HSVMutableBuilder[Self <: HSV] (val x: Self) extends AnyVal {
+    extension [Self <: HSV](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  implicit class JQueryColorpickerStaticMutableBuilder[Self <: JQueryColorpickerStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryColorpickerStatic](x: Self) {
     
-    @scala.inline
-    def setColor(value: Instantiable): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Instantiable): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimits(value: StringDictionary[js.Function1[/* color */ js.Any, Unit]]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: StringDictionary[js.Function1[/* color */ js.Any, Unit]]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParsers(value: StringDictionary[js.Function1[/* color */ js.Any, js.Any]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
+    inline def setParsers(value: StringDictionary[js.Function1[/* color */ js.Any, js.Any]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParts(value: StringDictionary[js.Function1[/* inst */ js.Any, js.Any]]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+    inline def setParts(value: StringDictionary[js.Function1[/* inst */ js.Any, js.Any]]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartslists(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "partslists", value.asInstanceOf[js.Any])
+    inline def setPartslists(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "partslists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegional(value: StringDictionary[String]): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    inline def setRegional(value: StringDictionary[String]): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwatches(value: StringDictionary[StringDictionary[RGB]]): Self = StObject.set(x, "swatches", value.asInstanceOf[js.Any])
+    inline def setSwatches(value: StringDictionary[StringDictionary[RGB]]): Self = StObject.set(x, "swatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriters(value: StringDictionary[js.Function2[/* color */ js.Any, /* that */ js.Any, js.Any]]): Self = StObject.set(x, "writers", value.asInstanceOf[js.Any])
+    inline def setWriters(value: StringDictionary[js.Function2[/* color */ js.Any, /* that */ js.Any, js.Any]]): Self = StObject.set(x, "writers", value.asInstanceOf[js.Any])
   }
   
   trait LAB extends StObject {
@@ -332,23 +281,18 @@ object JQueryColorpickerStatic {
   }
   object LAB {
     
-    @scala.inline
-    def apply(a: Double, b: Double, l: Double): LAB = {
+    inline def apply(a: Double, b: Double, l: Double): LAB = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any])
       __obj.asInstanceOf[LAB]
     }
     
-    @scala.inline
-    implicit class LABMutableBuilder[Self <: LAB] (val x: Self) extends AnyVal {
+    extension [Self <: LAB](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+      inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     }
   }
   
@@ -362,23 +306,18 @@ object JQueryColorpickerStatic {
   }
   object RGB {
     
-    @scala.inline
-    def apply(b: Double, g: Double, r: Double): RGB = {
+    inline def apply(b: Double, g: Double, r: Double): RGB = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[RGB]
     }
     
-    @scala.inline
-    implicit class RGBMutableBuilder[Self <: RGB] (val x: Self) extends AnyVal {
+    extension [Self <: RGB](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
 }

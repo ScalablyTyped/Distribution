@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait BlendingEquation extends StObject
 object BlendingEquation {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[BlendingEquation & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("BlendingEquation")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[BlendingEquation & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[BlendingEquation & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("BlendingEquation")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[BlendingEquation & scala.Nothing]]
 }

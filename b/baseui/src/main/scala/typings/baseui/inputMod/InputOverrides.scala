@@ -42,77 +42,59 @@ trait InputOverrides
 }
 object InputOverrides {
   
-  @scala.inline
-  def apply(): InputOverrides = {
+  inline def apply(): InputOverrides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputOverrides]
   }
   
-  @scala.inline
-  implicit class InputOverridesMutableBuilder[Self <: InputOverrides] (val x: Self) extends AnyVal {
+  extension [Self <: InputOverrides](x: Self) {
     
-    @scala.inline
-    def setClearIcon(
+    inline def setClearIcon(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
     ): Self = StObject.set(x, "ClearIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearIconContainer(
+    inline def setClearIconContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
     ): Self = StObject.set(x, "ClearIconContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearIconContainerUndefined: Self = StObject.set(x, "ClearIconContainer", js.undefined)
+    inline def setClearIconContainerUndefined: Self = StObject.set(x, "ClearIconContainer", js.undefined)
     
-    @scala.inline
-    def setClearIconUndefined: Self = StObject.set(x, "ClearIcon", js.undefined)
+    inline def setClearIconUndefined: Self = StObject.set(x, "ClearIcon", js.undefined)
     
-    @scala.inline
-    def setEndEnhancer(
+    inline def setEndEnhancer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
     ): Self = StObject.set(x, "EndEnhancer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndEnhancerUndefined: Self = StObject.set(x, "EndEnhancer", js.undefined)
+    inline def setEndEnhancerUndefined: Self = StObject.set(x, "EndEnhancer", js.undefined)
     
-    @scala.inline
-    def setMaskToggleButton(
+    inline def setMaskToggleButton(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
     ): Self = StObject.set(x, "MaskToggleButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskToggleButtonUndefined: Self = StObject.set(x, "MaskToggleButton", js.undefined)
+    inline def setMaskToggleButtonUndefined: Self = StObject.set(x, "MaskToggleButton", js.undefined)
     
-    @scala.inline
-    def setMaskToggleHideIcon(
+    inline def setMaskToggleHideIcon(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
     ): Self = StObject.set(x, "MaskToggleHideIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskToggleHideIconUndefined: Self = StObject.set(x, "MaskToggleHideIcon", js.undefined)
+    inline def setMaskToggleHideIconUndefined: Self = StObject.set(x, "MaskToggleHideIcon", js.undefined)
     
-    @scala.inline
-    def setMaskToggleShowIcon(
+    inline def setMaskToggleShowIcon(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
     ): Self = StObject.set(x, "MaskToggleShowIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskToggleShowIconUndefined: Self = StObject.set(x, "MaskToggleShowIcon", js.undefined)
+    inline def setMaskToggleShowIconUndefined: Self = StObject.set(x, "MaskToggleShowIcon", js.undefined)
     
-    @scala.inline
-    def setRoot(
+    inline def setRoot(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
     ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
     
-    @scala.inline
-    def setStartEnhancer(
+    inline def setStartEnhancer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
     ): Self = StObject.set(x, "StartEnhancer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartEnhancerUndefined: Self = StObject.set(x, "StartEnhancer", js.undefined)
+    inline def setStartEnhancerUndefined: Self = StObject.set(x, "StartEnhancer", js.undefined)
   }
 }

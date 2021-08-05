@@ -18,25 +18,19 @@ trait ExportTaskExecutionInfo extends StObject {
 }
 object ExportTaskExecutionInfo {
   
-  @scala.inline
-  def apply(): ExportTaskExecutionInfo = {
+  inline def apply(): ExportTaskExecutionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportTaskExecutionInfo]
   }
   
-  @scala.inline
-  implicit class ExportTaskExecutionInfoMutableBuilder[Self <: ExportTaskExecutionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExportTaskExecutionInfo](x: Self) {
     
-    @scala.inline
-    def setCompletionTime(value: Timestamp): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
+    inline def setCompletionTime(value: Timestamp): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionTimeUndefined: Self = StObject.set(x, "completionTime", js.undefined)
+    inline def setCompletionTimeUndefined: Self = StObject.set(x, "completionTime", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
   }
 }

@@ -41,9 +41,9 @@ object matcherMod {
       */
     def matched: Boolean = js.native
     
-    var matchers: js.Any = js.native
+    /* private */ var matchers: js.Any = js.native
     
-    var nextMatch: js.Any = js.native
+    /* private */ var nextMatch: js.Any = js.native
     
     /**
       * Rest match pointer.

@@ -43,58 +43,41 @@ trait CellSelectionChangingEventUIParam extends StObject {
 }
 object CellSelectionChangingEventUIParam {
   
-  @scala.inline
-  def apply(): CellSelectionChangingEventUIParam = {
+  inline def apply(): CellSelectionChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CellSelectionChangingEventUIParam]
   }
   
-  @scala.inline
-  implicit class CellSelectionChangingEventUIParamMutableBuilder[Self <: CellSelectionChangingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: CellSelectionChangingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+    inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
-    @scala.inline
-    def setFirstColumnIndex(value: Double): Self = StObject.set(x, "firstColumnIndex", value.asInstanceOf[js.Any])
+    inline def setFirstColumnIndex(value: Double): Self = StObject.set(x, "firstColumnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstColumnIndexUndefined: Self = StObject.set(x, "firstColumnIndex", js.undefined)
+    inline def setFirstColumnIndexUndefined: Self = StObject.set(x, "firstColumnIndex", js.undefined)
     
-    @scala.inline
-    def setFirstRowIndex(value: Double): Self = StObject.set(x, "firstRowIndex", value.asInstanceOf[js.Any])
+    inline def setFirstRowIndex(value: Double): Self = StObject.set(x, "firstRowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstRowIndexUndefined: Self = StObject.set(x, "firstRowIndex", js.undefined)
+    inline def setFirstRowIndexUndefined: Self = StObject.set(x, "firstRowIndex", js.undefined)
     
-    @scala.inline
-    def setLastColumnIndex(value: Double): Self = StObject.set(x, "lastColumnIndex", value.asInstanceOf[js.Any])
+    inline def setLastColumnIndex(value: Double): Self = StObject.set(x, "lastColumnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastColumnIndexUndefined: Self = StObject.set(x, "lastColumnIndex", js.undefined)
+    inline def setLastColumnIndexUndefined: Self = StObject.set(x, "lastColumnIndex", js.undefined)
     
-    @scala.inline
-    def setLastRowIndex(value: Double): Self = StObject.set(x, "lastRowIndex", value.asInstanceOf[js.Any])
+    inline def setLastRowIndex(value: Double): Self = StObject.set(x, "lastRowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRowIndexUndefined: Self = StObject.set(x, "lastRowIndex", js.undefined)
+    inline def setLastRowIndexUndefined: Self = StObject.set(x, "lastRowIndex", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setSelectedCells(value: js.Array[js.Any]): Self = StObject.set(x, "selectedCells", value.asInstanceOf[js.Any])
+    inline def setSelectedCells(value: js.Array[js.Any]): Self = StObject.set(x, "selectedCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedCellsUndefined: Self = StObject.set(x, "selectedCells", js.undefined)
+    inline def setSelectedCellsUndefined: Self = StObject.set(x, "selectedCells", js.undefined)
     
-    @scala.inline
-    def setSelectedCellsVarargs(value: js.Any*): Self = StObject.set(x, "selectedCells", js.Array(value :_*))
+    inline def setSelectedCellsVarargs(value: js.Any*): Self = StObject.set(x, "selectedCells", js.Array(value :_*))
   }
 }

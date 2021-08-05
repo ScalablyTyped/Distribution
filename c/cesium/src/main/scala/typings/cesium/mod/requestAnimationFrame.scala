@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object requestAnimationFrame {
   
-  @scala.inline
-  def apply(callback: Callback): Double = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(callback: Callback): Double = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("cesium", "requestAnimationFrame")
   @js.native

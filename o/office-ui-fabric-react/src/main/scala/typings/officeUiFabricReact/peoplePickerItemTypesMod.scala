@@ -32,32 +32,25 @@ object peoplePickerItemTypesMod {
   }
   object IPeoplePickerItemSelectedProps {
     
-    @scala.inline
-    def apply(IPickerItemProps: IPickerItemProps[IPersonaPropsValidationSt]): IPeoplePickerItemSelectedProps = {
+    inline def apply(IPickerItemProps: IPickerItemProps[IPersonaPropsValidationSt]): IPeoplePickerItemSelectedProps = {
       val __obj = js.Dynamic.literal()
       js.Dynamic.global.Object.assign(__obj, IPickerItemProps)
       __obj.asInstanceOf[IPeoplePickerItemSelectedProps]
     }
     
-    @scala.inline
-    implicit class IPeoplePickerItemSelectedPropsMutableBuilder[Self <: IPeoplePickerItemSelectedProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPeoplePickerItemSelectedProps](x: Self) {
       
-      @scala.inline
-      def setStyles(
+      inline def setStyles(
         value: IStyleFunctionOrObject[IPeoplePickerItemSelectedStyleProps, IPeoplePickerItemSelectedStyles]
       ): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IPeoplePickerItemSelectedStyleProps => DeepPartial[IPeoplePickerItemSelectedStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IPeoplePickerItemSelectedStyleProps => DeepPartial[IPeoplePickerItemSelectedStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -77,41 +70,30 @@ object peoplePickerItemTypesMod {
   }
   object IPeoplePickerItemSelectedStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IPeoplePickerItemSelectedStyleProps = {
+    inline def apply(theme: ITheme): IPeoplePickerItemSelectedStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPeoplePickerItemSelectedStyleProps]
     }
     
-    @scala.inline
-    implicit class IPeoplePickerItemSelectedStylePropsMutableBuilder[Self <: IPeoplePickerItemSelectedStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPeoplePickerItemSelectedStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,44 +113,32 @@ object peoplePickerItemTypesMod {
   }
   object IPeoplePickerItemSelectedStyles {
     
-    @scala.inline
-    def apply(subComponentStyles: IPeoplePickerItemSelectedSubComponentStyles): IPeoplePickerItemSelectedStyles = {
+    inline def apply(subComponentStyles: IPeoplePickerItemSelectedSubComponentStyles): IPeoplePickerItemSelectedStyles = {
       val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPeoplePickerItemSelectedStyles]
     }
     
-    @scala.inline
-    implicit class IPeoplePickerItemSelectedStylesMutableBuilder[Self <: IPeoplePickerItemSelectedStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IPeoplePickerItemSelectedStyles](x: Self) {
       
-      @scala.inline
-      def setItemContent(value: IStyle): Self = StObject.set(x, "itemContent", value.asInstanceOf[js.Any])
+      inline def setItemContent(value: IStyle): Self = StObject.set(x, "itemContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemContentNull: Self = StObject.set(x, "itemContent", null)
+      inline def setItemContentNull: Self = StObject.set(x, "itemContent", null)
       
-      @scala.inline
-      def setItemContentUndefined: Self = StObject.set(x, "itemContent", js.undefined)
+      inline def setItemContentUndefined: Self = StObject.set(x, "itemContent", js.undefined)
       
-      @scala.inline
-      def setRemoveButton(value: IStyle): Self = StObject.set(x, "removeButton", value.asInstanceOf[js.Any])
+      inline def setRemoveButton(value: IStyle): Self = StObject.set(x, "removeButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveButtonNull: Self = StObject.set(x, "removeButton", null)
+      inline def setRemoveButtonNull: Self = StObject.set(x, "removeButton", null)
       
-      @scala.inline
-      def setRemoveButtonUndefined: Self = StObject.set(x, "removeButton", js.undefined)
+      inline def setRemoveButtonUndefined: Self = StObject.set(x, "removeButton", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setSubComponentStyles(value: IPeoplePickerItemSelectedSubComponentStyles): Self = StObject.set(x, "subComponentStyles", value.asInstanceOf[js.Any])
+      inline def setSubComponentStyles(value: IPeoplePickerItemSelectedSubComponentStyles): Self = StObject.set(x, "subComponentStyles", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,29 +152,22 @@ object peoplePickerItemTypesMod {
   }
   object IPeoplePickerItemSelectedSubComponentStyles {
     
-    @scala.inline
-    def apply(persona: IStyleFunctionOrObject[IPersonaStyleProps, js.Any]): IPeoplePickerItemSelectedSubComponentStyles = {
+    inline def apply(persona: IStyleFunctionOrObject[IPersonaStyleProps, js.Any]): IPeoplePickerItemSelectedSubComponentStyles = {
       val __obj = js.Dynamic.literal(persona = persona.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPeoplePickerItemSelectedSubComponentStyles]
     }
     
-    @scala.inline
-    implicit class IPeoplePickerItemSelectedSubComponentStylesMutableBuilder[Self <: IPeoplePickerItemSelectedSubComponentStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IPeoplePickerItemSelectedSubComponentStyles](x: Self) {
       
-      @scala.inline
-      def setPersona(value: IStyleFunctionOrObject[IPersonaStyleProps, js.Any]): Self = StObject.set(x, "persona", value.asInstanceOf[js.Any])
+      inline def setPersona(value: IStyleFunctionOrObject[IPersonaStyleProps, js.Any]): Self = StObject.set(x, "persona", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonaCoin(value: IStyleFunctionOrObject[IPersonaCoinStyleProps, js.Any]): Self = StObject.set(x, "personaCoin", value.asInstanceOf[js.Any])
+      inline def setPersonaCoin(value: IStyleFunctionOrObject[IPersonaCoinStyleProps, js.Any]): Self = StObject.set(x, "personaCoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonaCoinFunction1(value: IPersonaCoinStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "personaCoin", js.Any.fromFunction1(value))
+      inline def setPersonaCoinFunction1(value: IPersonaCoinStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "personaCoin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPersonaCoinUndefined: Self = StObject.set(x, "personaCoin", js.undefined)
+      inline def setPersonaCoinUndefined: Self = StObject.set(x, "personaCoin", js.undefined)
       
-      @scala.inline
-      def setPersonaFunction1(value: IPersonaStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "persona", js.Any.fromFunction1(value))
+      inline def setPersonaFunction1(value: IPersonaStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "persona", js.Any.fromFunction1(value))
     }
   }
   
@@ -218,26 +181,20 @@ object peoplePickerItemTypesMod {
   }
   object IPeoplePickerItemSharedProps {
     
-    @scala.inline
-    def apply(): IPeoplePickerItemSharedProps = {
+    inline def apply(): IPeoplePickerItemSharedProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPeoplePickerItemSharedProps]
     }
     
-    @scala.inline
-    implicit class IPeoplePickerItemSharedPropsMutableBuilder[Self <: IPeoplePickerItemSharedProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPeoplePickerItemSharedProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -265,43 +222,32 @@ object peoplePickerItemTypesMod {
   }
   object IPeoplePickerItemSuggestionProps {
     
-    @scala.inline
-    def apply(): IPeoplePickerItemSuggestionProps = {
+    inline def apply(): IPeoplePickerItemSuggestionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPeoplePickerItemSuggestionProps]
     }
     
-    @scala.inline
-    implicit class IPeoplePickerItemSuggestionPropsMutableBuilder[Self <: IPeoplePickerItemSuggestionProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPeoplePickerItemSuggestionProps](x: Self) {
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setPersonaProps(value: IPersonaProps): Self = StObject.set(x, "personaProps", value.asInstanceOf[js.Any])
+      inline def setPersonaProps(value: IPersonaProps): Self = StObject.set(x, "personaProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonaPropsUndefined: Self = StObject.set(x, "personaProps", js.undefined)
+      inline def setPersonaPropsUndefined: Self = StObject.set(x, "personaProps", js.undefined)
       
-      @scala.inline
-      def setStyles(
+      inline def setStyles(
         value: IStyleFunctionOrObject[IPeoplePickerItemSuggestionStyleProps, IPeoplePickerItemSuggestionStyles]
       ): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IPeoplePickerItemSuggestionStyleProps => DeepPartial[IPeoplePickerItemSuggestionStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IPeoplePickerItemSuggestionStyleProps => DeepPartial[IPeoplePickerItemSuggestionStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setSuggestionsProps(value: IBasePickerSuggestionsProps[js.Any]): Self = StObject.set(x, "suggestionsProps", value.asInstanceOf[js.Any])
+      inline def setSuggestionsProps(value: IBasePickerSuggestionsProps[js.Any]): Self = StObject.set(x, "suggestionsProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsPropsUndefined: Self = StObject.set(x, "suggestionsProps", js.undefined)
+      inline def setSuggestionsPropsUndefined: Self = StObject.set(x, "suggestionsProps", js.undefined)
     }
   }
   
@@ -314,23 +260,18 @@ object peoplePickerItemTypesMod {
   }
   object IPeoplePickerItemSuggestionStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IPeoplePickerItemSuggestionStyleProps = {
+    inline def apply(theme: ITheme): IPeoplePickerItemSuggestionStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPeoplePickerItemSuggestionStyleProps]
     }
     
-    @scala.inline
-    implicit class IPeoplePickerItemSuggestionStylePropsMutableBuilder[Self <: IPeoplePickerItemSuggestionStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPeoplePickerItemSuggestionStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -347,35 +288,26 @@ object peoplePickerItemTypesMod {
   }
   object IPeoplePickerItemSuggestionStyles {
     
-    @scala.inline
-    def apply(subComponentStyles: IPeoplePickerItemSelectedSubComponentStyles): IPeoplePickerItemSuggestionStyles = {
+    inline def apply(subComponentStyles: IPeoplePickerItemSelectedSubComponentStyles): IPeoplePickerItemSuggestionStyles = {
       val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPeoplePickerItemSuggestionStyles]
     }
     
-    @scala.inline
-    implicit class IPeoplePickerItemSuggestionStylesMutableBuilder[Self <: IPeoplePickerItemSuggestionStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IPeoplePickerItemSuggestionStyles](x: Self) {
       
-      @scala.inline
-      def setPersonaWrapper(value: IStyle): Self = StObject.set(x, "personaWrapper", value.asInstanceOf[js.Any])
+      inline def setPersonaWrapper(value: IStyle): Self = StObject.set(x, "personaWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonaWrapperNull: Self = StObject.set(x, "personaWrapper", null)
+      inline def setPersonaWrapperNull: Self = StObject.set(x, "personaWrapper", null)
       
-      @scala.inline
-      def setPersonaWrapperUndefined: Self = StObject.set(x, "personaWrapper", js.undefined)
+      inline def setPersonaWrapperUndefined: Self = StObject.set(x, "personaWrapper", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setSubComponentStyles(value: IPeoplePickerItemSelectedSubComponentStyles): Self = StObject.set(x, "subComponentStyles", value.asInstanceOf[js.Any])
+      inline def setSubComponentStyles(value: IPeoplePickerItemSelectedSubComponentStyles): Self = StObject.set(x, "subComponentStyles", value.asInstanceOf[js.Any])
     }
   }
   
@@ -390,23 +322,18 @@ object peoplePickerItemTypesMod {
   }
   object IPersonaWithMenu {
     
-    @scala.inline
-    def apply(): IPersonaWithMenu = {
+    inline def apply(): IPersonaWithMenu = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPersonaWithMenu]
     }
     
-    @scala.inline
-    implicit class IPersonaWithMenuMutableBuilder[Self <: IPersonaWithMenu] (val x: Self) extends AnyVal {
+    extension [Self <: IPersonaWithMenu](x: Self) {
       
-      @scala.inline
-      def setMenuItems(value: js.Array[IContextualMenuItem]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
+      inline def setMenuItems(value: js.Array[IContextualMenuItem]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
+      inline def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
       
-      @scala.inline
-      def setMenuItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "menuItems", js.Array(value :_*))
+      inline def setMenuItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "menuItems", js.Array(value :_*))
     }
   }
 }

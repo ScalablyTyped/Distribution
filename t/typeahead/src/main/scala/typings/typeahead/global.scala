@@ -37,8 +37,7 @@ object global {
       * previous value. Can be used to avoid naming collisions.
       */
     /* static member */
-    @scala.inline
-    def noConflict(): typings.typeahead.Bloodhound[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.typeahead.Bloodhound[js.Any]]
+    inline def noConflict(): typings.typeahead.Bloodhound[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.typeahead.Bloodhound[js.Any]]
     
     /**
       * The Bloodhound suggestion engine is token-based, so how datums and queries are tokenized plays a vital role in the quality of search results.
@@ -48,7 +47,6 @@ object global {
     @JSGlobal("Bloodhound.tokenizers")
     @js.native
     def tokenizers: Tokenizers = js.native
-    @scala.inline
-    def tokenizers_=(x: Tokenizers): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tokenizers")(x.asInstanceOf[js.Any])
+    inline def tokenizers_=(x: Tokenizers): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tokenizers")(x.asInstanceOf[js.Any])
   }
 }

@@ -30,8 +30,7 @@ trait XQueriesSupplier
 }
 object XQueriesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Queries: XNameAccess,
     acquire: () => Unit,
     getQueries: () => XNameAccess,
@@ -42,13 +41,10 @@ object XQueriesSupplier {
     __obj.asInstanceOf[XQueriesSupplier]
   }
   
-  @scala.inline
-  implicit class XQueriesSupplierMutableBuilder[Self <: XQueriesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XQueriesSupplier](x: Self) {
     
-    @scala.inline
-    def setGetQueries(value: () => XNameAccess): Self = StObject.set(x, "getQueries", js.Any.fromFunction0(value))
+    inline def setGetQueries(value: () => XNameAccess): Self = StObject.set(x, "getQueries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueries(value: XNameAccess): Self = StObject.set(x, "Queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: XNameAccess): Self = StObject.set(x, "Queries", value.asInstanceOf[js.Any])
   }
 }

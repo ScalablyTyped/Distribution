@@ -34,8 +34,7 @@ trait XSolver
 }
 object XSolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Constraints: SafeArray[SolverConstraint],
     Document: XSpreadsheetDocument,
     Maximize: Boolean,
@@ -53,34 +52,24 @@ object XSolver {
     __obj.asInstanceOf[XSolver]
   }
   
-  @scala.inline
-  implicit class XSolverMutableBuilder[Self <: XSolver] (val x: Self) extends AnyVal {
+  extension [Self <: XSolver](x: Self) {
     
-    @scala.inline
-    def setConstraints(value: SafeArray[SolverConstraint]): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
+    inline def setConstraints(value: SafeArray[SolverConstraint]): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument(value: XSpreadsheetDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: XSpreadsheetDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximize(value: Boolean): Self = StObject.set(x, "Maximize", value.asInstanceOf[js.Any])
+    inline def setMaximize(value: Boolean): Self = StObject.set(x, "Maximize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjective(value: CellAddress): Self = StObject.set(x, "Objective", value.asInstanceOf[js.Any])
+    inline def setObjective(value: CellAddress): Self = StObject.set(x, "Objective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultValue(value: Double): Self = StObject.set(x, "ResultValue", value.asInstanceOf[js.Any])
+    inline def setResultValue(value: Double): Self = StObject.set(x, "ResultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolution(value: SafeArray[Double]): Self = StObject.set(x, "Solution", value.asInstanceOf[js.Any])
+    inline def setSolution(value: SafeArray[Double]): Self = StObject.set(x, "Solution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolve(value: () => Unit): Self = StObject.set(x, "solve", js.Any.fromFunction0(value))
+    inline def setSolve(value: () => Unit): Self = StObject.set(x, "solve", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: SafeArray[CellAddress]): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: SafeArray[CellAddress]): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
   }
 }

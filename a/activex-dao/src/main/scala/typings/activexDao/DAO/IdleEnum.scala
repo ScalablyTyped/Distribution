@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IdleEnum extends StObject
 object IdleEnum {
   
-  @scala.inline
-  def dbFreeLocks: `1` = 1.asInstanceOf[`1`]
+  inline def dbFreeLocks: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def dbRefreshCache: `8` = 8.asInstanceOf[`8`]
+  inline def dbRefreshCache: `8` = 8.asInstanceOf[`8`]
 }

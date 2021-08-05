@@ -17,19 +17,15 @@ trait AccountInfo extends StObject {
 }
 object AccountInfo {
   
-  @scala.inline
-  def apply(Plugin: Vetsion, miniProgram: AppId): AccountInfo = {
+  inline def apply(Plugin: Vetsion, miniProgram: AppId): AccountInfo = {
     val __obj = js.Dynamic.literal(Plugin = Plugin.asInstanceOf[js.Any], miniProgram = miniProgram.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountInfo]
   }
   
-  @scala.inline
-  implicit class AccountInfoMutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AccountInfo](x: Self) {
     
-    @scala.inline
-    def setMiniProgram(value: AppId): Self = StObject.set(x, "miniProgram", value.asInstanceOf[js.Any])
+    inline def setMiniProgram(value: AppId): Self = StObject.set(x, "miniProgram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlugin(value: Vetsion): Self = StObject.set(x, "Plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: Vetsion): Self = StObject.set(x, "Plugin", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait AssociationExecutionTargetsFilter extends StObject {
 }
 object AssociationExecutionTargetsFilter {
   
-  @scala.inline
-  def apply(Key: AssociationExecutionTargetsFilterKey, Value: AssociationExecutionTargetsFilterValue): AssociationExecutionTargetsFilter = {
+  inline def apply(Key: AssociationExecutionTargetsFilterKey, Value: AssociationExecutionTargetsFilterValue): AssociationExecutionTargetsFilter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationExecutionTargetsFilter]
   }
   
-  @scala.inline
-  implicit class AssociationExecutionTargetsFilterMutableBuilder[Self <: AssociationExecutionTargetsFilter] (val x: Self) extends AnyVal {
+  extension [Self <: AssociationExecutionTargetsFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: AssociationExecutionTargetsFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: AssociationExecutionTargetsFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: AssociationExecutionTargetsFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: AssociationExecutionTargetsFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

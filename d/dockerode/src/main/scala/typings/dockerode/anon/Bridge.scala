@@ -47,8 +47,7 @@ trait Bridge extends StObject {
 }
 object Bridge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bridge: String,
     EndpointID: String,
     Gateway: String,
@@ -70,73 +69,50 @@ object Bridge {
     __obj.asInstanceOf[Bridge]
   }
   
-  @scala.inline
-  implicit class BridgeMutableBuilder[Self <: Bridge] (val x: Self) extends AnyVal {
+  extension [Self <: Bridge](x: Self) {
     
-    @scala.inline
-    def setBridge(value: String): Self = StObject.set(x, "Bridge", value.asInstanceOf[js.Any])
+    inline def setBridge(value: String): Self = StObject.set(x, "Bridge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointID(value: String): Self = StObject.set(x, "EndpointID", value.asInstanceOf[js.Any])
+    inline def setEndpointID(value: String): Self = StObject.set(x, "EndpointID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGateway(value: String): Self = StObject.set(x, "Gateway", value.asInstanceOf[js.Any])
+    inline def setGateway(value: String): Self = StObject.set(x, "Gateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalIPv6Address(value: String): Self = StObject.set(x, "GlobalIPv6Address", value.asInstanceOf[js.Any])
+    inline def setGlobalIPv6Address(value: String): Self = StObject.set(x, "GlobalIPv6Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalIPv6PrefixLen(value: Double): Self = StObject.set(x, "GlobalIPv6PrefixLen", value.asInstanceOf[js.Any])
+    inline def setGlobalIPv6PrefixLen(value: Double): Self = StObject.set(x, "GlobalIPv6PrefixLen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHairpinMode(value: Boolean): Self = StObject.set(x, "HairpinMode", value.asInstanceOf[js.Any])
+    inline def setHairpinMode(value: Boolean): Self = StObject.set(x, "HairpinMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPAddress(value: String): Self = StObject.set(x, "IPAddress", value.asInstanceOf[js.Any])
+    inline def setIPAddress(value: String): Self = StObject.set(x, "IPAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPPrefixLen(value: Double): Self = StObject.set(x, "IPPrefixLen", value.asInstanceOf[js.Any])
+    inline def setIPPrefixLen(value: Double): Self = StObject.set(x, "IPPrefixLen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPv6Gateway(value: String): Self = StObject.set(x, "IPv6Gateway", value.asInstanceOf[js.Any])
+    inline def setIPv6Gateway(value: String): Self = StObject.set(x, "IPv6Gateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkLocalIPv6Address(value: String): Self = StObject.set(x, "LinkLocalIPv6Address", value.asInstanceOf[js.Any])
+    inline def setLinkLocalIPv6Address(value: String): Self = StObject.set(x, "LinkLocalIPv6Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkLocalIPv6PrefixLen(value: Double): Self = StObject.set(x, "LinkLocalIPv6PrefixLen", value.asInstanceOf[js.Any])
+    inline def setLinkLocalIPv6PrefixLen(value: Double): Self = StObject.set(x, "LinkLocalIPv6PrefixLen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacAddress(value: String): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
+    inline def setMacAddress(value: String): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworks(value: StringDictionary[Aliases]): Self = StObject.set(x, "Networks", value.asInstanceOf[js.Any])
+    inline def setNetworks(value: StringDictionary[Aliases]): Self = StObject.set(x, "Networks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: Addr): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Addr): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "Node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "Node", js.undefined)
     
-    @scala.inline
-    def setPorts(value: StringDictionary[js.Array[HostIp]]): Self = StObject.set(x, "Ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: StringDictionary[js.Array[HostIp]]): Self = StObject.set(x, "Ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxID(value: String): Self = StObject.set(x, "SandboxID", value.asInstanceOf[js.Any])
+    inline def setSandboxID(value: String): Self = StObject.set(x, "SandboxID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxKey(value: String): Self = StObject.set(x, "SandboxKey", value.asInstanceOf[js.Any])
+    inline def setSandboxKey(value: String): Self = StObject.set(x, "SandboxKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryIPAddresses(value: js.Any): Self = StObject.set(x, "SecondaryIPAddresses", value.asInstanceOf[js.Any])
+    inline def setSecondaryIPAddresses(value: js.Any): Self = StObject.set(x, "SecondaryIPAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryIPAddressesUndefined: Self = StObject.set(x, "SecondaryIPAddresses", js.undefined)
+    inline def setSecondaryIPAddressesUndefined: Self = StObject.set(x, "SecondaryIPAddresses", js.undefined)
     
-    @scala.inline
-    def setSecondaryIPv6Addresses(value: js.Any): Self = StObject.set(x, "SecondaryIPv6Addresses", value.asInstanceOf[js.Any])
+    inline def setSecondaryIPv6Addresses(value: js.Any): Self = StObject.set(x, "SecondaryIPv6Addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryIPv6AddressesUndefined: Self = StObject.set(x, "SecondaryIPv6Addresses", js.undefined)
+    inline def setSecondaryIPv6AddressesUndefined: Self = StObject.set(x, "SecondaryIPv6Addresses", js.undefined)
   }
 }

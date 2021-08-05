@@ -14,22 +14,17 @@ trait Response[R] extends StObject {
 }
 object Response {
   
-  @scala.inline
-  def apply[R](data: R, statusCode: Double, statusText: String): Response[R] = {
+  inline def apply[R](data: R, statusCode: Double, statusText: String): Response[R] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response[R]]
   }
   
-  @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response[?], R] (val x: Self & Response[R]) extends AnyVal {
+  extension [Self <: Response[?], R](x: Self & Response[R]) {
     
-    @scala.inline
-    def setData(value: R): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: R): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
   }
 }

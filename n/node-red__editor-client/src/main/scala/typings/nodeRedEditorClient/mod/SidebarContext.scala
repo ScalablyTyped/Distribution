@@ -10,16 +10,13 @@ trait SidebarContext extends StObject {
 }
 object SidebarContext {
   
-  @scala.inline
-  def apply(init: () => Unit): SidebarContext = {
+  inline def apply(init: () => Unit): SidebarContext = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init))
     __obj.asInstanceOf[SidebarContext]
   }
   
-  @scala.inline
-  implicit class SidebarContextMutableBuilder[Self <: SidebarContext] (val x: Self) extends AnyVal {
+  extension [Self <: SidebarContext](x: Self) {
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
   }
 }

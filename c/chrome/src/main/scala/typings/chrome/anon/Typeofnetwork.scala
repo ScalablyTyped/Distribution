@@ -17,8 +17,7 @@ trait Typeofnetwork extends StObject {
 }
 object Typeofnetwork {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getHAR: js.Function1[/* harLog */ HARLog, Unit] => Unit,
     onNavigated: NavigatedEvent,
     onRequestFinished: RequestFinishedEvent
@@ -27,16 +26,12 @@ object Typeofnetwork {
     __obj.asInstanceOf[Typeofnetwork]
   }
   
-  @scala.inline
-  implicit class TypeofnetworkMutableBuilder[Self <: Typeofnetwork] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofnetwork](x: Self) {
     
-    @scala.inline
-    def setGetHAR(value: js.Function1[/* harLog */ HARLog, Unit] => Unit): Self = StObject.set(x, "getHAR", js.Any.fromFunction1(value))
+    inline def setGetHAR(value: js.Function1[/* harLog */ HARLog, Unit] => Unit): Self = StObject.set(x, "getHAR", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnNavigated(value: NavigatedEvent): Self = StObject.set(x, "onNavigated", value.asInstanceOf[js.Any])
+    inline def setOnNavigated(value: NavigatedEvent): Self = StObject.set(x, "onNavigated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRequestFinished(value: RequestFinishedEvent): Self = StObject.set(x, "onRequestFinished", value.asInstanceOf[js.Any])
+    inline def setOnRequestFinished(value: RequestFinishedEvent): Self = StObject.set(x, "onRequestFinished", value.asInstanceOf[js.Any])
   }
 }

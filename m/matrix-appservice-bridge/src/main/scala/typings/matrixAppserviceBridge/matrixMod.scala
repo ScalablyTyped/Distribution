@@ -18,7 +18,7 @@ object matrixMod {
     def this(roomId: String) = this()
     def this(roomId: String, data: MatrixRoomData) = this()
     
-    var _extras: js.Any = js.native
+    /* private */ var _extras: js.Any = js.native
     
     /**
       * Set data about this room from a serialized data object.
@@ -73,29 +73,22 @@ object matrixMod {
   }
   object MatrixRoomData {
     
-    @scala.inline
-    def apply(extras: Record[String, js.Any]): MatrixRoomData = {
+    inline def apply(extras: Record[String, js.Any]): MatrixRoomData = {
       val __obj = js.Dynamic.literal(extras = extras.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatrixRoomData]
     }
     
-    @scala.inline
-    implicit class MatrixRoomDataMutableBuilder[Self <: MatrixRoomData] (val x: Self) extends AnyVal {
+    extension [Self <: MatrixRoomData](x: Self) {
       
-      @scala.inline
-      def setExtras(value: Record[String, js.Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+      inline def setExtras(value: Record[String, js.Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+      inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     }
   }
 }

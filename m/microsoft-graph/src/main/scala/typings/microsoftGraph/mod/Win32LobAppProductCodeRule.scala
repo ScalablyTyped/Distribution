@@ -22,37 +22,27 @@ trait Win32LobAppProductCodeRule
 }
 object Win32LobAppProductCodeRule {
   
-  @scala.inline
-  def apply(): Win32LobAppProductCodeRule = {
+  inline def apply(): Win32LobAppProductCodeRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Win32LobAppProductCodeRule]
   }
   
-  @scala.inline
-  implicit class Win32LobAppProductCodeRuleMutableBuilder[Self <: Win32LobAppProductCodeRule] (val x: Self) extends AnyVal {
+  extension [Self <: Win32LobAppProductCodeRule](x: Self) {
     
-    @scala.inline
-    def setProductCode(value: NullableOption[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
+    inline def setProductCode(value: NullableOption[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductCodeNull: Self = StObject.set(x, "productCode", null)
+    inline def setProductCodeNull: Self = StObject.set(x, "productCode", null)
     
-    @scala.inline
-    def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
+    inline def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
     
-    @scala.inline
-    def setProductVersion(value: NullableOption[String]): Self = StObject.set(x, "productVersion", value.asInstanceOf[js.Any])
+    inline def setProductVersion(value: NullableOption[String]): Self = StObject.set(x, "productVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductVersionNull: Self = StObject.set(x, "productVersion", null)
+    inline def setProductVersionNull: Self = StObject.set(x, "productVersion", null)
     
-    @scala.inline
-    def setProductVersionOperator(value: Win32LobAppRuleOperator): Self = StObject.set(x, "productVersionOperator", value.asInstanceOf[js.Any])
+    inline def setProductVersionOperator(value: Win32LobAppRuleOperator): Self = StObject.set(x, "productVersionOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductVersionOperatorUndefined: Self = StObject.set(x, "productVersionOperator", js.undefined)
+    inline def setProductVersionOperatorUndefined: Self = StObject.set(x, "productVersionOperator", js.undefined)
     
-    @scala.inline
-    def setProductVersionUndefined: Self = StObject.set(x, "productVersion", js.undefined)
+    inline def setProductVersionUndefined: Self = StObject.set(x, "productVersion", js.undefined)
   }
 }

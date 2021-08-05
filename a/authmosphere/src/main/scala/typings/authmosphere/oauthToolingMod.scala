@@ -25,10 +25,8 @@ object oauthToolingMod {
     * @param queryParams - optional set of key-value pairs which will be added as query parameters to the request
     * @returns {string}
     */
-  @scala.inline
-  def createAuthCodeRequestUri(authorizationEndpoint: String, redirectUri: String, clientId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createAuthCodeRequestUri")(authorizationEndpoint.asInstanceOf[js.Any], redirectUri.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def createAuthCodeRequestUri(
+  inline def createAuthCodeRequestUri(authorizationEndpoint: String, redirectUri: String, clientId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createAuthCodeRequestUri")(authorizationEndpoint.asInstanceOf[js.Any], redirectUri.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createAuthCodeRequestUri(
     authorizationEndpoint: String,
     redirectUri: String,
     clientId: String,
@@ -45,10 +43,8 @@ object oauthToolingMod {
     * @param logger - optional logger
     * @returns {Promise<T>}
     */
-  @scala.inline
-  def getAccessToken(options: OAuthConfig): js.Promise[Token[Record[String, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Token[Record[String, js.Any]]]]
-  @scala.inline
-  def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token[Record[String, js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token[Record[String, js.Any]]]]
+  inline def getAccessToken(options: OAuthConfig): js.Promise[Token[Record[String, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Token[Record[String, js.Any]]]]
+  inline def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token[Record[String, js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token[Record[String, js.Any]]]]
   
   /**
     * Makes a request to the `tokenInfoUrl` to validate the given `accessToken`.

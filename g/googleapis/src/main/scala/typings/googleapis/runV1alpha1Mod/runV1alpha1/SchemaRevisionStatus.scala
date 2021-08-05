@@ -51,46 +51,33 @@ trait SchemaRevisionStatus extends StObject {
 }
 object SchemaRevisionStatus {
   
-  @scala.inline
-  def apply(): SchemaRevisionStatus = {
+  inline def apply(): SchemaRevisionStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRevisionStatus]
   }
   
-  @scala.inline
-  implicit class SchemaRevisionStatusMutableBuilder[Self <: SchemaRevisionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRevisionStatus](x: Self) {
     
-    @scala.inline
-    def setConditions(value: js.Array[SchemaRevisionCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[SchemaRevisionCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: SchemaRevisionCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: SchemaRevisionCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setImageDigest(value: String): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
+    inline def setImageDigest(value: String): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
+    inline def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
     
-    @scala.inline
-    def setLogUrl(value: String): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
+    inline def setLogUrl(value: String): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUrlUndefined: Self = StObject.set(x, "logUrl", js.undefined)
+    inline def setLogUrlUndefined: Self = StObject.set(x, "logUrl", js.undefined)
     
-    @scala.inline
-    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
+    inline def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
+    inline def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

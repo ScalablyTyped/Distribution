@@ -38,8 +38,7 @@ object visionMod {
     @JSImport("googleapis/build/src/apis/vision", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Vision] = js.native
-    @scala.inline
-    def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Vision]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+    inline def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Vision]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/vision", "VERSIONS.v1p1beta1")
@@ -56,8 +55,7 @@ object visionMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision
       ] = js.native
-    @scala.inline
-    def v1p1beta1_=(
+    inline def v1p1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -80,8 +78,7 @@ object visionMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision
       ] = js.native
-    @scala.inline
-    def v1p2beta1_=(
+    inline def v1p2beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -123,8 +120,7 @@ object visionMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -168,19 +164,13 @@ object visionMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def vision(options: Options): Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(options.asInstanceOf[js.Any]).asInstanceOf[Vision]
-  @scala.inline
-  def vision(options: typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Options): typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision]
-  @scala.inline
-  def vision(options: typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Options): typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision]
+  inline def vision(options: Options): Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(options.asInstanceOf[js.Any]).asInstanceOf[Vision]
+  inline def vision(options: typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Options): typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision]
+  inline def vision(options: typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Options): typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision]
   
-  @scala.inline
-  def vision_v1(version: v1): Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(version.asInstanceOf[js.Any]).asInstanceOf[Vision]
+  inline def vision_v1(version: v1): Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(version.asInstanceOf[js.Any]).asInstanceOf[Vision]
   
-  @scala.inline
-  def vision_v1p1beta1(version: v1p1beta1): typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision]
+  inline def vision_v1p1beta1(version: v1p1beta1): typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision]
   
-  @scala.inline
-  def vision_v1p2beta1(version: v1p2beta1): typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision]
+  inline def vision_v1p2beta1(version: v1p2beta1): typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision]
 }

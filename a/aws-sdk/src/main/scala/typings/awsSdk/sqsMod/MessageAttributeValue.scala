@@ -33,46 +33,33 @@ trait MessageAttributeValue extends StObject {
 }
 object MessageAttributeValue {
   
-  @scala.inline
-  def apply(DataType: String): MessageAttributeValue = {
+  inline def apply(DataType: String): MessageAttributeValue = {
     val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageAttributeValue]
   }
   
-  @scala.inline
-  implicit class MessageAttributeValueMutableBuilder[Self <: MessageAttributeValue] (val x: Self) extends AnyVal {
+  extension [Self <: MessageAttributeValue](x: Self) {
     
-    @scala.inline
-    def setBinaryListValues(value: BinaryList): Self = StObject.set(x, "BinaryListValues", value.asInstanceOf[js.Any])
+    inline def setBinaryListValues(value: BinaryList): Self = StObject.set(x, "BinaryListValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryListValuesUndefined: Self = StObject.set(x, "BinaryListValues", js.undefined)
+    inline def setBinaryListValuesUndefined: Self = StObject.set(x, "BinaryListValues", js.undefined)
     
-    @scala.inline
-    def setBinaryListValuesVarargs(value: Binary*): Self = StObject.set(x, "BinaryListValues", js.Array(value :_*))
+    inline def setBinaryListValuesVarargs(value: Binary*): Self = StObject.set(x, "BinaryListValues", js.Array(value :_*))
     
-    @scala.inline
-    def setBinaryValue(value: Binary): Self = StObject.set(x, "BinaryValue", value.asInstanceOf[js.Any])
+    inline def setBinaryValue(value: Binary): Self = StObject.set(x, "BinaryValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryValueUndefined: Self = StObject.set(x, "BinaryValue", js.undefined)
+    inline def setBinaryValueUndefined: Self = StObject.set(x, "BinaryValue", js.undefined)
     
-    @scala.inline
-    def setDataType(value: String): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: String): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringListValues(value: StringList): Self = StObject.set(x, "StringListValues", value.asInstanceOf[js.Any])
+    inline def setStringListValues(value: StringList): Self = StObject.set(x, "StringListValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringListValuesUndefined: Self = StObject.set(x, "StringListValues", js.undefined)
+    inline def setStringListValuesUndefined: Self = StObject.set(x, "StringListValues", js.undefined)
     
-    @scala.inline
-    def setStringListValuesVarargs(value: String*): Self = StObject.set(x, "StringListValues", js.Array(value :_*))
+    inline def setStringListValuesVarargs(value: String*): Self = StObject.set(x, "StringListValues", js.Array(value :_*))
     
-    @scala.inline
-    def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
   }
 }

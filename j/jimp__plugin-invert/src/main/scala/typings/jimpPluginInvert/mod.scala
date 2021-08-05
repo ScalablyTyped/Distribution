@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Invert = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Invert]
+  inline def default(): Invert = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Invert]
   
   @js.native
   trait Invert extends StObject {

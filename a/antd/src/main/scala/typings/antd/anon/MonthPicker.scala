@@ -57,8 +57,7 @@ trait MonthPicker[DateType] extends StObject {
 }
 object MonthPicker {
   
-  @scala.inline
-  def apply[DateType](
+  inline def apply[DateType](
     MonthPicker: ComponentClass[
       Pick[
         InjectDefaultProps[PickerDateProps[DateType]], 
@@ -100,11 +99,9 @@ object MonthPicker {
     __obj.asInstanceOf[MonthPicker[DateType]]
   }
   
-  @scala.inline
-  implicit class MonthPickerMutableBuilder[Self <: MonthPicker[?], DateType] (val x: Self & MonthPicker[DateType]) extends AnyVal {
+  extension [Self <: MonthPicker[?], DateType](x: Self & MonthPicker[DateType]) {
     
-    @scala.inline
-    def setMonthPicker(
+    inline def setMonthPicker(
       value: ComponentClass[
           Pick[
             InjectDefaultProps[PickerDateProps[DateType]], 
@@ -114,8 +111,7 @@ object MonthPicker {
         ]
     ): Self = StObject.set(x, "MonthPicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuarterPicker(
+    inline def setQuarterPicker(
       value: ComponentClass[
           Pick[
             InjectDefaultProps[PickerTimeProps[DateType]], 
@@ -125,11 +121,9 @@ object MonthPicker {
         ]
     ): Self = StObject.set(x, "QuarterPicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangePicker(value: ComponentClass[RangePickerProps[DateType], ComponentState]): Self = StObject.set(x, "RangePicker", value.asInstanceOf[js.Any])
+    inline def setRangePicker(value: ComponentClass[RangePickerProps[DateType], ComponentState]): Self = StObject.set(x, "RangePicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePicker(
+    inline def setTimePicker(
       value: ComponentClass[
           Pick[
             InjectDefaultProps[PickerTimeProps[DateType]], 
@@ -139,8 +133,7 @@ object MonthPicker {
         ]
     ): Self = StObject.set(x, "TimePicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekPicker(
+    inline def setWeekPicker(
       value: ComponentClass[
           Pick[
             InjectDefaultProps[PickerDateProps[DateType]], 
@@ -150,8 +143,7 @@ object MonthPicker {
         ]
     ): Self = StObject.set(x, "WeekPicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearPicker(
+    inline def setYearPicker(
       value: ComponentClass[
           Pick[
             InjectDefaultProps[PickerDateProps[DateType]], 

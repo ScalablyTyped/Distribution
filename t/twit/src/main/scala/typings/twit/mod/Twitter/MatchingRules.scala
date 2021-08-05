@@ -14,22 +14,17 @@ trait MatchingRules extends StObject {
 }
 object MatchingRules {
   
-  @scala.inline
-  def apply(id: Double, id_str: String, tag: Null): MatchingRules = {
+  inline def apply(id: Double, id_str: String, tag: Null): MatchingRules = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], id_str = id_str.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchingRules]
   }
   
-  @scala.inline
-  implicit class MatchingRulesMutableBuilder[Self <: MatchingRules] (val x: Self) extends AnyVal {
+  extension [Self <: MatchingRules](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
+    inline def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: Null): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Null): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

@@ -21,25 +21,19 @@ trait SchemaOnPremisesConfiguration extends StObject {
 }
 object SchemaOnPremisesConfiguration {
   
-  @scala.inline
-  def apply(): SchemaOnPremisesConfiguration = {
+  inline def apply(): SchemaOnPremisesConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOnPremisesConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaOnPremisesConfigurationMutableBuilder[Self <: SchemaOnPremisesConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOnPremisesConfiguration](x: Self) {
     
-    @scala.inline
-    def setHostPort(value: String): Self = StObject.set(x, "hostPort", value.asInstanceOf[js.Any])
+    inline def setHostPort(value: String): Self = StObject.set(x, "hostPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostPortUndefined: Self = StObject.set(x, "hostPort", js.undefined)
+    inline def setHostPortUndefined: Self = StObject.set(x, "hostPort", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

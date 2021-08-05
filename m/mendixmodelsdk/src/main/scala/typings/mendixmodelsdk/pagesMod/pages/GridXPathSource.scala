@@ -63,8 +63,7 @@ object GridXPathSource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): GridXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[GridXPathSource]
+  inline def create(model: IModel): GridXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[GridXPathSource]
   
   /**
     * Creates and returns a new GridXPathSource instance in the SDK and on the server.
@@ -75,8 +74,7 @@ object GridXPathSource {
     *  6.0.0 to 8.2.0
     */
   /* static member */
-  @scala.inline
-  def createIn(container: EntityWidget): GridXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[GridXPathSource]
+  inline def createIn(container: EntityWidget): GridXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[GridXPathSource]
   
   /**
     * Creates and returns a new GridXPathSource instance in the SDK and on the server.
@@ -84,8 +82,7 @@ object GridXPathSource {
     * of the parent EntityWidget element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInEntityWidgetUnderDataSource(container: EntityWidget): GridXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[GridXPathSource]
+  inline def createInEntityWidgetUnderDataSource(container: EntityWidget): GridXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[GridXPathSource]
   
   /**
     * Creates and returns a new GridXPathSource instance in the SDK and on the server.
@@ -96,20 +93,17 @@ object GridXPathSource {
     *  8.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderDataSource(container: WidgetValue): GridXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[GridXPathSource]
+  inline def createInWidgetValueUnderDataSource(container: WidgetValue): GridXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[GridXPathSource]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridXPathSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridXPathSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

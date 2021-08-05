@@ -17,23 +17,18 @@ trait DescribeQuery
 }
 object DescribeQuery {
   
-  @scala.inline
-  def apply(prefixes: StringDictionary[String], variables: js.Array[Variable | Wildcard]): DescribeQuery = {
+  inline def apply(prefixes: StringDictionary[String], variables: js.Array[Variable | Wildcard]): DescribeQuery = {
     val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = "DESCRIBE", variables = variables.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("query")
     __obj.asInstanceOf[DescribeQuery]
   }
   
-  @scala.inline
-  implicit class DescribeQueryMutableBuilder[Self <: DescribeQuery] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeQuery](x: Self) {
     
-    @scala.inline
-    def setQueryType(value: DESCRIBE): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
+    inline def setQueryType(value: DESCRIBE): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: js.Array[Variable | Wildcard]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: js.Array[Variable | Wildcard]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesVarargs(value: (Variable | Wildcard)*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: (Variable | Wildcard)*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

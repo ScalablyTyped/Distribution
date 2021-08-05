@@ -21,8 +21,7 @@ trait Typeofchrome extends StObject {
 }
 object Typeofchrome {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Driver: TypeofDriverInstantiable,
     Options: TypeofOptions,
     ServiceBuilder: Instantiable0[ServiceBuilder],
@@ -33,22 +32,16 @@ object Typeofchrome {
     __obj.asInstanceOf[Typeofchrome]
   }
   
-  @scala.inline
-  implicit class TypeofchromeMutableBuilder[Self <: Typeofchrome] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofchrome](x: Self) {
     
-    @scala.inline
-    def setDriver(value: TypeofDriverInstantiable): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: TypeofDriverInstantiable): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultService(value: () => DriverService): Self = StObject.set(x, "getDefaultService", js.Any.fromFunction0(value))
+    inline def setGetDefaultService(value: () => DriverService): Self = StObject.set(x, "getDefaultService", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOptions(value: TypeofOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: TypeofOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceBuilder(value: Instantiable0[ServiceBuilder]): Self = StObject.set(x, "ServiceBuilder", value.asInstanceOf[js.Any])
+    inline def setServiceBuilder(value: Instantiable0[ServiceBuilder]): Self = StObject.set(x, "ServiceBuilder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDefaultService(value: DriverService => Unit): Self = StObject.set(x, "setDefaultService", js.Any.fromFunction1(value))
+    inline def setSetDefaultService(value: DriverService => Unit): Self = StObject.set(x, "setDefaultService", js.Any.fromFunction1(value))
   }
 }

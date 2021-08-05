@@ -32,32 +32,24 @@ object alphaMod {
   }
   object AlphaPickerProps {
     
-    @scala.inline
-    def apply(): AlphaPickerProps = {
+    inline def apply(): AlphaPickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlphaPickerProps]
     }
     
-    @scala.inline
-    implicit class AlphaPickerPropsMutableBuilder[Self <: AlphaPickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: AlphaPickerProps](x: Self) {
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setStyles(value: PartialClassesAlphaPicker): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: PartialClassesAlphaPicker): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -69,20 +61,16 @@ object alphaMod {
   }
   object AlphaPickerStylesProps {
     
-    @scala.inline
-    def apply(alpha: CSSProperties, picker: CSSProperties): AlphaPickerStylesProps = {
+    inline def apply(alpha: CSSProperties, picker: CSSProperties): AlphaPickerStylesProps = {
       val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlphaPickerStylesProps]
     }
     
-    @scala.inline
-    implicit class AlphaPickerStylesPropsMutableBuilder[Self <: AlphaPickerStylesProps] (val x: Self) extends AnyVal {
+    extension [Self <: AlphaPickerStylesProps](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: CSSProperties): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: CSSProperties): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     }
   }
 }

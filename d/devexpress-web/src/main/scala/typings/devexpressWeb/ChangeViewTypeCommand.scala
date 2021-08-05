@@ -19,16 +19,13 @@ trait ChangeViewTypeCommand
 }
 object ChangeViewTypeCommand {
   
-  @scala.inline
-  def apply(execute: ViewType => Boolean, getState: () => CommandState[Boolean]): ChangeViewTypeCommand = {
+  inline def apply(execute: ViewType => Boolean, getState: () => CommandState[Boolean]): ChangeViewTypeCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeViewTypeCommand]
   }
   
-  @scala.inline
-  implicit class ChangeViewTypeCommandMutableBuilder[Self <: ChangeViewTypeCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeViewTypeCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: ViewType => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: ViewType => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

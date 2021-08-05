@@ -32,20 +32,16 @@ object mod {
   }
   object BaseConfig {
     
-    @scala.inline
-    def apply(): BaseConfig = {
+    inline def apply(): BaseConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseConfig]
     }
     
-    @scala.inline
-    implicit class BaseConfigMutableBuilder[Self <: BaseConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BaseConfig](x: Self) {
       
-      @scala.inline
-      def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
   
@@ -57,20 +53,17 @@ object mod {
   trait Config extends StObject
   object Config {
     
-    @scala.inline
-    def BaseConfig(): typings.keycloakConnect.mod.BaseConfig = {
+    inline def BaseConfig(): typings.keycloakConnect.mod.BaseConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.keycloakConnect.mod.BaseConfig]
     }
     
-    @scala.inline
-    def CookiesConfig(cookies: js.Any): typings.keycloakConnect.mod.CookiesConfig = {
+    inline def CookiesConfig(cookies: js.Any): typings.keycloakConnect.mod.CookiesConfig = {
       val __obj = js.Dynamic.literal(cookies = cookies.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.keycloakConnect.mod.CookiesConfig]
     }
     
-    @scala.inline
-    def StoreConfig(store: js.Any): typings.keycloakConnect.mod.StoreConfig = {
+    inline def StoreConfig(store: js.Any): typings.keycloakConnect.mod.StoreConfig = {
       val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.keycloakConnect.mod.StoreConfig]
     }
@@ -85,17 +78,14 @@ object mod {
   }
   object CookiesConfig {
     
-    @scala.inline
-    def apply(cookies: js.Any): CookiesConfig = {
+    inline def apply(cookies: js.Any): CookiesConfig = {
       val __obj = js.Dynamic.literal(cookies = cookies.asInstanceOf[js.Any])
       __obj.asInstanceOf[CookiesConfig]
     }
     
-    @scala.inline
-    implicit class CookiesConfigMutableBuilder[Self <: CookiesConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CookiesConfig](x: Self) {
       
-      @scala.inline
-      def setCookies(value: js.Any): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: js.Any): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,8 +111,7 @@ object mod {
   }
   object Grant {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       __raw: String,
       access_token: Token,
       expires_in: Double,
@@ -137,35 +126,25 @@ object mod {
       __obj.asInstanceOf[Grant]
     }
     
-    @scala.inline
-    implicit class GrantMutableBuilder[Self <: Grant] (val x: Self) extends AnyVal {
+    extension [Self <: Grant](x: Self) {
       
-      @scala.inline
-      def setAccess_token(value: Token): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      inline def setAccess_token(value: Token): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
+      inline def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId_token(value: Token): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
+      inline def setId_token(value: Token): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpired(value: () => Boolean): Self = StObject.set(x, "isExpired", js.Any.fromFunction0(value))
+      inline def setIsExpired(value: () => Boolean): Self = StObject.set(x, "isExpired", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRefresh_token(value: Token): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
+      inline def setRefresh_token(value: Token): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStore(value: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any]) => Unit): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
+      inline def setStore(value: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any]) => Unit): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
+      inline def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: Grant => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: Grant => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__raw(value: String): Self = StObject.set(x, "__raw", value.asInstanceOf[js.Any])
+      inline def set__raw(value: String): Self = StObject.set(x, "__raw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -227,26 +206,20 @@ object mod {
   }
   object MiddlewareOptions {
     
-    @scala.inline
-    def apply(): MiddlewareOptions = {
+    inline def apply(): MiddlewareOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MiddlewareOptions]
     }
     
-    @scala.inline
-    implicit class MiddlewareOptionsMutableBuilder[Self <: MiddlewareOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MiddlewareOptions](x: Self) {
       
-      @scala.inline
-      def setAdmin(value: String): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+      inline def setAdmin(value: String): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
+      inline def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
       
-      @scala.inline
-      def setLogout(value: String): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
+      inline def setLogout(value: String): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoutUndefined: Self = StObject.set(x, "logout", js.undefined)
+      inline def setLogoutUndefined: Self = StObject.set(x, "logout", js.undefined)
     }
   }
   
@@ -266,17 +239,14 @@ object mod {
   }
   object StoreConfig {
     
-    @scala.inline
-    def apply(store: js.Any): StoreConfig = {
+    inline def apply(store: js.Any): StoreConfig = {
       val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoreConfig]
     }
     
-    @scala.inline
-    implicit class StoreConfigMutableBuilder[Self <: StoreConfig] (val x: Self) extends AnyVal {
+    extension [Self <: StoreConfig](x: Self) {
       
-      @scala.inline
-      def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
   }
   
@@ -306,8 +276,7 @@ object mod {
   }
   object Token {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientId: String,
       content: TokenContent,
       hasApplicationRole: (String, String) => Boolean,
@@ -321,50 +290,35 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: TokenContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: TokenContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasApplicationRole(value: (String, String) => Boolean): Self = StObject.set(x, "hasApplicationRole", js.Any.fromFunction2(value))
+      inline def setHasApplicationRole(value: (String, String) => Boolean): Self = StObject.set(x, "hasApplicationRole", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHasPermission(value: (String, String) => Boolean): Self = StObject.set(x, "hasPermission", js.Any.fromFunction2(value))
+      inline def setHasPermission(value: (String, String) => Boolean): Self = StObject.set(x, "hasPermission", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHasRealmRole(value: String => Boolean): Self = StObject.set(x, "hasRealmRole", js.Any.fromFunction1(value))
+      inline def setHasRealmRole(value: String => Boolean): Self = StObject.set(x, "hasRealmRole", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasRole(value: String => Boolean): Self = StObject.set(x, "hasRole", js.Any.fromFunction1(value))
+      inline def setHasRole(value: String => Boolean): Self = StObject.set(x, "hasRole", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setIsExpired(value: () => Boolean): Self = StObject.set(x, "isExpired", js.Any.fromFunction0(value))
+      inline def setIsExpired(value: () => Boolean): Self = StObject.set(x, "isExpired", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+      inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
       
-      @scala.inline
-      def setSigned(value: String): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
+      inline def setSigned(value: String): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
+      inline def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -380,32 +334,24 @@ object mod {
   }
   object TokenContent {
     
-    @scala.inline
-    def apply(exp: Double, sub: String): TokenContent = {
+    inline def apply(exp: Double, sub: String): TokenContent = {
       val __obj = js.Dynamic.literal(exp = exp.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenContent]
     }
     
-    @scala.inline
-    implicit class TokenContentMutableBuilder[Self <: TokenContent] (val x: Self) extends AnyVal {
+    extension [Self <: TokenContent](x: Self) {
       
-      @scala.inline
-      def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+      inline def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealm_access(value: Roles): Self = StObject.set(x, "realm_access", value.asInstanceOf[js.Any])
+      inline def setRealm_access(value: Roles): Self = StObject.set(x, "realm_access", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealm_accessUndefined: Self = StObject.set(x, "realm_access", js.undefined)
+      inline def setRealm_accessUndefined: Self = StObject.set(x, "realm_access", js.undefined)
       
-      @scala.inline
-      def setResource_access(value: js.Any): Self = StObject.set(x, "resource_access", value.asInstanceOf[js.Any])
+      inline def setResource_access(value: js.Any): Self = StObject.set(x, "resource_access", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource_accessUndefined: Self = StObject.set(x, "resource_access", js.undefined)
+      inline def setResource_accessUndefined: Self = StObject.set(x, "resource_access", js.undefined)
       
-      @scala.inline
-      def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     }
   }
 }

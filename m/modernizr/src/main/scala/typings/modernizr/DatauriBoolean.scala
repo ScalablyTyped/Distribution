@@ -13,16 +13,13 @@ trait DatauriBoolean
 }
 object DatauriBoolean {
   
-  @scala.inline
-  def apply(over32kb: scala.Boolean): DatauriBoolean = {
+  inline def apply(over32kb: scala.Boolean): DatauriBoolean = {
     val __obj = js.Dynamic.literal(over32kb = over32kb.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatauriBoolean]
   }
   
-  @scala.inline
-  implicit class DatauriBooleanMutableBuilder[Self <: DatauriBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: DatauriBoolean](x: Self) {
     
-    @scala.inline
-    def setOver32kb(value: scala.Boolean): Self = StObject.set(x, "over32kb", value.asInstanceOf[js.Any])
+    inline def setOver32kb(value: scala.Boolean): Self = StObject.set(x, "over32kb", value.asInstanceOf[js.Any])
   }
 }

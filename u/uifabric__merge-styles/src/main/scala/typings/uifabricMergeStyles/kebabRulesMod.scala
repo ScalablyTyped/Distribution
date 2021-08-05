@@ -10,6 +10,5 @@ object kebabRulesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def kebabRules(rulePairs: js.Array[String | Double], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kebabRules")(rulePairs.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kebabRules(rulePairs: js.Array[String | Double], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kebabRules")(rulePairs.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

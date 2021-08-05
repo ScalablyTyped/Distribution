@@ -22,19 +22,15 @@ trait InsertedObjectInfo extends StObject {
 }
 object InsertedObjectInfo {
   
-  @scala.inline
-  def apply(Object: XEmbeddedObject, Options: SafeArray[NamedValue]): InsertedObjectInfo = {
+  inline def apply(Object: XEmbeddedObject, Options: SafeArray[NamedValue]): InsertedObjectInfo = {
     val __obj = js.Dynamic.literal(Object = Object.asInstanceOf[js.Any], Options = Options.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertedObjectInfo]
   }
   
-  @scala.inline
-  implicit class InsertedObjectInfoMutableBuilder[Self <: InsertedObjectInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InsertedObjectInfo](x: Self) {
     
-    @scala.inline
-    def setObject(value: XEmbeddedObject): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
+    inline def setObject(value: XEmbeddedObject): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: SafeArray[NamedValue]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SafeArray[NamedValue]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
   }
 }

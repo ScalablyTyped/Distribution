@@ -21,43 +21,31 @@ trait RuleArgs extends StObject {
 }
 object RuleArgs {
   
-  @scala.inline
-  def apply(name: String): RuleArgs = {
+  inline def apply(name: String): RuleArgs = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleArgs]
   }
   
-  @scala.inline
-  implicit class RuleArgsMutableBuilder[Self <: RuleArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RuleArgs](x: Self) {
     
-    @scala.inline
-    def setAssert(value: (js.Function1[/* value */ js.Any, Boolean]) | AnySchema): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+    inline def setAssert(value: (js.Function1[/* value */ js.Any, Boolean]) | AnySchema): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssertFunction1(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "assert", js.Any.fromFunction1(value))
+    inline def setAssertFunction1(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "assert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
+    inline def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalize(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
+    inline def setNormalize(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+    inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
-    @scala.inline
-    def setRef(value: Boolean): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: Boolean): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }
 }

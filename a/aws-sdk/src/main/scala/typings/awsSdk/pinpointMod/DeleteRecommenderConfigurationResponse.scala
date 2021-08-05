@@ -10,16 +10,13 @@ trait DeleteRecommenderConfigurationResponse extends StObject {
 }
 object DeleteRecommenderConfigurationResponse {
   
-  @scala.inline
-  def apply(RecommenderConfigurationResponse: RecommenderConfigurationResponse): DeleteRecommenderConfigurationResponse = {
+  inline def apply(RecommenderConfigurationResponse: RecommenderConfigurationResponse): DeleteRecommenderConfigurationResponse = {
     val __obj = js.Dynamic.literal(RecommenderConfigurationResponse = RecommenderConfigurationResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRecommenderConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class DeleteRecommenderConfigurationResponseMutableBuilder[Self <: DeleteRecommenderConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRecommenderConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setRecommenderConfigurationResponse(value: RecommenderConfigurationResponse): Self = StObject.set(x, "RecommenderConfigurationResponse", value.asInstanceOf[js.Any])
+    inline def setRecommenderConfigurationResponse(value: RecommenderConfigurationResponse): Self = StObject.set(x, "RecommenderConfigurationResponse", value.asInstanceOf[js.Any])
   }
 }

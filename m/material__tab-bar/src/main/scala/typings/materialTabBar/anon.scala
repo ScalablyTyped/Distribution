@@ -30,8 +30,7 @@ object anon {
   }
   object ARROWLEFTKEY {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ARROW_LEFT_KEY: String,
       ARROW_RIGHT_KEY: String,
       END_KEY: String,
@@ -46,35 +45,25 @@ object anon {
       __obj.asInstanceOf[ARROWLEFTKEY]
     }
     
-    @scala.inline
-    implicit class ARROWLEFTKEYMutableBuilder[Self <: ARROWLEFTKEY] (val x: Self) extends AnyVal {
+    extension [Self <: ARROWLEFTKEY](x: Self) {
       
-      @scala.inline
-      def setARROW_LEFT_KEY(value: String): Self = StObject.set(x, "ARROW_LEFT_KEY", value.asInstanceOf[js.Any])
+      inline def setARROW_LEFT_KEY(value: String): Self = StObject.set(x, "ARROW_LEFT_KEY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARROW_RIGHT_KEY(value: String): Self = StObject.set(x, "ARROW_RIGHT_KEY", value.asInstanceOf[js.Any])
+      inline def setARROW_RIGHT_KEY(value: String): Self = StObject.set(x, "ARROW_RIGHT_KEY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEND_KEY(value: String): Self = StObject.set(x, "END_KEY", value.asInstanceOf[js.Any])
+      inline def setEND_KEY(value: String): Self = StObject.set(x, "END_KEY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setENTER_KEY(value: String): Self = StObject.set(x, "ENTER_KEY", value.asInstanceOf[js.Any])
+      inline def setENTER_KEY(value: String): Self = StObject.set(x, "ENTER_KEY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHOME_KEY(value: String): Self = StObject.set(x, "HOME_KEY", value.asInstanceOf[js.Any])
+      inline def setHOME_KEY(value: String): Self = StObject.set(x, "HOME_KEY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPACE_KEY(value: String): Self = StObject.set(x, "SPACE_KEY", value.asInstanceOf[js.Any])
+      inline def setSPACE_KEY(value: String): Self = StObject.set(x, "SPACE_KEY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTAB_ACTIVATED_EVENT(value: String): Self = StObject.set(x, "TAB_ACTIVATED_EVENT", value.asInstanceOf[js.Any])
+      inline def setTAB_ACTIVATED_EVENT(value: String): Self = StObject.set(x, "TAB_ACTIVATED_EVENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTAB_SCROLLER_SELECTOR(value: String): Self = StObject.set(x, "TAB_SCROLLER_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setTAB_SCROLLER_SELECTOR(value: String): Self = StObject.set(x, "TAB_SCROLLER_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTAB_SELECTOR(value: String): Self = StObject.set(x, "TAB_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setTAB_SELECTOR(value: String): Self = StObject.set(x, "TAB_SELECTOR", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,8 +85,7 @@ object anon {
   }
   object ARROWLEFTKEYCODE {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ARROW_LEFT_KEYCODE: Double,
       ARROW_RIGHT_KEYCODE: Double,
       END_KEYCODE: Double,
@@ -110,29 +98,21 @@ object anon {
       __obj.asInstanceOf[ARROWLEFTKEYCODE]
     }
     
-    @scala.inline
-    implicit class ARROWLEFTKEYCODEMutableBuilder[Self <: ARROWLEFTKEYCODE] (val x: Self) extends AnyVal {
+    extension [Self <: ARROWLEFTKEYCODE](x: Self) {
       
-      @scala.inline
-      def setARROW_LEFT_KEYCODE(value: Double): Self = StObject.set(x, "ARROW_LEFT_KEYCODE", value.asInstanceOf[js.Any])
+      inline def setARROW_LEFT_KEYCODE(value: Double): Self = StObject.set(x, "ARROW_LEFT_KEYCODE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARROW_RIGHT_KEYCODE(value: Double): Self = StObject.set(x, "ARROW_RIGHT_KEYCODE", value.asInstanceOf[js.Any])
+      inline def setARROW_RIGHT_KEYCODE(value: Double): Self = StObject.set(x, "ARROW_RIGHT_KEYCODE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEND_KEYCODE(value: Double): Self = StObject.set(x, "END_KEYCODE", value.asInstanceOf[js.Any])
+      inline def setEND_KEYCODE(value: Double): Self = StObject.set(x, "END_KEYCODE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setENTER_KEYCODE(value: Double): Self = StObject.set(x, "ENTER_KEYCODE", value.asInstanceOf[js.Any])
+      inline def setENTER_KEYCODE(value: Double): Self = StObject.set(x, "ENTER_KEYCODE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXTRA_SCROLL_AMOUNT(value: Double): Self = StObject.set(x, "EXTRA_SCROLL_AMOUNT", value.asInstanceOf[js.Any])
+      inline def setEXTRA_SCROLL_AMOUNT(value: Double): Self = StObject.set(x, "EXTRA_SCROLL_AMOUNT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHOME_KEYCODE(value: Double): Self = StObject.set(x, "HOME_KEYCODE", value.asInstanceOf[js.Any])
+      inline def setHOME_KEYCODE(value: Double): Self = StObject.set(x, "HOME_KEYCODE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPACE_KEYCODE(value: Double): Self = StObject.set(x, "SPACE_KEYCODE", value.asInstanceOf[js.Any])
+      inline def setSPACE_KEYCODE(value: Double): Self = StObject.set(x, "SPACE_KEYCODE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,116 +155,80 @@ object anon {
   }
   object PartialMDCTabBarAdapter {
     
-    @scala.inline
-    def apply(): PartialMDCTabBarAdapter = {
+    inline def apply(): PartialMDCTabBarAdapter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMDCTabBarAdapter]
     }
     
-    @scala.inline
-    implicit class PartialMDCTabBarAdapterMutableBuilder[Self <: PartialMDCTabBarAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMDCTabBarAdapter](x: Self) {
       
-      @scala.inline
-      def setActivateTabAtIndex(value: (/* index */ Double, /* clientRect */ js.UndefOr[ClientRect]) => Unit): Self = StObject.set(x, "activateTabAtIndex", js.Any.fromFunction2(value))
+      inline def setActivateTabAtIndex(value: (/* index */ Double, /* clientRect */ js.UndefOr[ClientRect]) => Unit): Self = StObject.set(x, "activateTabAtIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setActivateTabAtIndexUndefined: Self = StObject.set(x, "activateTabAtIndex", js.undefined)
+      inline def setActivateTabAtIndexUndefined: Self = StObject.set(x, "activateTabAtIndex", js.undefined)
       
-      @scala.inline
-      def setDeactivateTabAtIndex(value: /* index */ Double => Unit): Self = StObject.set(x, "deactivateTabAtIndex", js.Any.fromFunction1(value))
+      inline def setDeactivateTabAtIndex(value: /* index */ Double => Unit): Self = StObject.set(x, "deactivateTabAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeactivateTabAtIndexUndefined: Self = StObject.set(x, "deactivateTabAtIndex", js.undefined)
+      inline def setDeactivateTabAtIndexUndefined: Self = StObject.set(x, "deactivateTabAtIndex", js.undefined)
       
-      @scala.inline
-      def setFocusTabAtIndex(value: /* index */ Double => Unit): Self = StObject.set(x, "focusTabAtIndex", js.Any.fromFunction1(value))
+      inline def setFocusTabAtIndex(value: /* index */ Double => Unit): Self = StObject.set(x, "focusTabAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocusTabAtIndexUndefined: Self = StObject.set(x, "focusTabAtIndex", js.undefined)
+      inline def setFocusTabAtIndexUndefined: Self = StObject.set(x, "focusTabAtIndex", js.undefined)
       
-      @scala.inline
-      def setGetFocusedTabIndex(value: () => Double): Self = StObject.set(x, "getFocusedTabIndex", js.Any.fromFunction0(value))
+      inline def setGetFocusedTabIndex(value: () => Double): Self = StObject.set(x, "getFocusedTabIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFocusedTabIndexUndefined: Self = StObject.set(x, "getFocusedTabIndex", js.undefined)
+      inline def setGetFocusedTabIndexUndefined: Self = StObject.set(x, "getFocusedTabIndex", js.undefined)
       
-      @scala.inline
-      def setGetIndexOfTabById(value: /* id */ String => Double): Self = StObject.set(x, "getIndexOfTabById", js.Any.fromFunction1(value))
+      inline def setGetIndexOfTabById(value: /* id */ String => Double): Self = StObject.set(x, "getIndexOfTabById", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetIndexOfTabByIdUndefined: Self = StObject.set(x, "getIndexOfTabById", js.undefined)
+      inline def setGetIndexOfTabByIdUndefined: Self = StObject.set(x, "getIndexOfTabById", js.undefined)
       
-      @scala.inline
-      def setGetOffsetWidth(value: () => Double): Self = StObject.set(x, "getOffsetWidth", js.Any.fromFunction0(value))
+      inline def setGetOffsetWidth(value: () => Double): Self = StObject.set(x, "getOffsetWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOffsetWidthUndefined: Self = StObject.set(x, "getOffsetWidth", js.undefined)
+      inline def setGetOffsetWidthUndefined: Self = StObject.set(x, "getOffsetWidth", js.undefined)
       
-      @scala.inline
-      def setGetPreviousActiveTabIndex(value: () => Double): Self = StObject.set(x, "getPreviousActiveTabIndex", js.Any.fromFunction0(value))
+      inline def setGetPreviousActiveTabIndex(value: () => Double): Self = StObject.set(x, "getPreviousActiveTabIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPreviousActiveTabIndexUndefined: Self = StObject.set(x, "getPreviousActiveTabIndex", js.undefined)
+      inline def setGetPreviousActiveTabIndexUndefined: Self = StObject.set(x, "getPreviousActiveTabIndex", js.undefined)
       
-      @scala.inline
-      def setGetScrollContentWidth(value: () => Double): Self = StObject.set(x, "getScrollContentWidth", js.Any.fromFunction0(value))
+      inline def setGetScrollContentWidth(value: () => Double): Self = StObject.set(x, "getScrollContentWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScrollContentWidthUndefined: Self = StObject.set(x, "getScrollContentWidth", js.undefined)
+      inline def setGetScrollContentWidthUndefined: Self = StObject.set(x, "getScrollContentWidth", js.undefined)
       
-      @scala.inline
-      def setGetScrollPosition(value: () => Double): Self = StObject.set(x, "getScrollPosition", js.Any.fromFunction0(value))
+      inline def setGetScrollPosition(value: () => Double): Self = StObject.set(x, "getScrollPosition", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScrollPositionUndefined: Self = StObject.set(x, "getScrollPosition", js.undefined)
+      inline def setGetScrollPositionUndefined: Self = StObject.set(x, "getScrollPosition", js.undefined)
       
-      @scala.inline
-      def setGetTabDimensionsAtIndex(value: /* index */ Double => MDCTabDimensions): Self = StObject.set(x, "getTabDimensionsAtIndex", js.Any.fromFunction1(value))
+      inline def setGetTabDimensionsAtIndex(value: /* index */ Double => MDCTabDimensions): Self = StObject.set(x, "getTabDimensionsAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTabDimensionsAtIndexUndefined: Self = StObject.set(x, "getTabDimensionsAtIndex", js.undefined)
+      inline def setGetTabDimensionsAtIndexUndefined: Self = StObject.set(x, "getTabDimensionsAtIndex", js.undefined)
       
-      @scala.inline
-      def setGetTabIndicatorClientRectAtIndex(value: /* index */ Double => ClientRect): Self = StObject.set(x, "getTabIndicatorClientRectAtIndex", js.Any.fromFunction1(value))
+      inline def setGetTabIndicatorClientRectAtIndex(value: /* index */ Double => ClientRect): Self = StObject.set(x, "getTabIndicatorClientRectAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTabIndicatorClientRectAtIndexUndefined: Self = StObject.set(x, "getTabIndicatorClientRectAtIndex", js.undefined)
+      inline def setGetTabIndicatorClientRectAtIndexUndefined: Self = StObject.set(x, "getTabIndicatorClientRectAtIndex", js.undefined)
       
-      @scala.inline
-      def setGetTabListLength(value: () => Double): Self = StObject.set(x, "getTabListLength", js.Any.fromFunction0(value))
+      inline def setGetTabListLength(value: () => Double): Self = StObject.set(x, "getTabListLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTabListLengthUndefined: Self = StObject.set(x, "getTabListLength", js.undefined)
+      inline def setGetTabListLengthUndefined: Self = StObject.set(x, "getTabListLength", js.undefined)
       
-      @scala.inline
-      def setIncrementScroll(value: /* scrollXIncrement */ Double => Unit): Self = StObject.set(x, "incrementScroll", js.Any.fromFunction1(value))
+      inline def setIncrementScroll(value: /* scrollXIncrement */ Double => Unit): Self = StObject.set(x, "incrementScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIncrementScrollUndefined: Self = StObject.set(x, "incrementScroll", js.undefined)
+      inline def setIncrementScrollUndefined: Self = StObject.set(x, "incrementScroll", js.undefined)
       
-      @scala.inline
-      def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
+      inline def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRTLUndefined: Self = StObject.set(x, "isRTL", js.undefined)
+      inline def setIsRTLUndefined: Self = StObject.set(x, "isRTL", js.undefined)
       
-      @scala.inline
-      def setNotifyTabActivated(value: /* index */ Double => Unit): Self = StObject.set(x, "notifyTabActivated", js.Any.fromFunction1(value))
+      inline def setNotifyTabActivated(value: /* index */ Double => Unit): Self = StObject.set(x, "notifyTabActivated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifyTabActivatedUndefined: Self = StObject.set(x, "notifyTabActivated", js.undefined)
+      inline def setNotifyTabActivatedUndefined: Self = StObject.set(x, "notifyTabActivated", js.undefined)
       
-      @scala.inline
-      def setScrollTo(value: /* scrollX */ Double => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
+      inline def setScrollTo(value: /* scrollX */ Double => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
+      inline def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
       
-      @scala.inline
-      def setSetActiveTab(value: /* index */ Double => Unit): Self = StObject.set(x, "setActiveTab", js.Any.fromFunction1(value))
+      inline def setSetActiveTab(value: /* index */ Double => Unit): Self = StObject.set(x, "setActiveTab", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetActiveTabUndefined: Self = StObject.set(x, "setActiveTab", js.undefined)
+      inline def setSetActiveTabUndefined: Self = StObject.set(x, "setActiveTab", js.undefined)
     }
   }
 }

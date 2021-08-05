@@ -29,10 +29,10 @@ object eventQueueMod {
     
     /* protected */ def consumeFn(error: Null, event: js.Any): Unit = js.native
     /* protected */ def consumeFn(error: Error, event: js.Any): Unit = js.native
-    @JSName("consumeFn")
+    /* protected */ @JSName("consumeFn")
     var consumeFn_Original: ConsumeCallback = js.native
     
-    var getQueue: js.Any = js.native
+    /* private */ var getQueue: js.Any = js.native
     
     /**
       * Push the event and its related data to the queue.
@@ -50,11 +50,11 @@ object eventQueueMod {
       * @param {consumeCallback} consumeFn Function which is called when an event
       *     is consumed.
       */
-    var queues: js.Any = js.native
+    /* private */ var queues: js.Any = js.native
     
-    var takeNext: js.Any = js.native
+    /* private */ var takeNext: js.Any = js.native
     
-    var `type`: js.Any = js.native
+    /* private */ var `type`: js.Any = js.native
   }
   /* static members */
   object EventQueue {
@@ -71,8 +71,7 @@ object eventQueueMod {
       *     is consumed.
       * @return {EventQueue} The newly created EventQueue.
       */
-    @scala.inline
-    def create(opts: `0`, consumeFn: ConsumeCallback): EventQueueSingle | EventQueuePerRoom | EventQueueNone = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any], consumeFn.asInstanceOf[js.Any])).asInstanceOf[EventQueueSingle | EventQueuePerRoom | EventQueueNone]
+    inline def create(opts: `0`, consumeFn: ConsumeCallback): EventQueueSingle | EventQueuePerRoom | EventQueueNone = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any], consumeFn.asInstanceOf[js.Any])).asInstanceOf[EventQueueSingle | EventQueuePerRoom | EventQueueNone]
   }
   
   @JSImport("matrix-appservice-bridge/lib/components/event-queue", "EventQueueNone")

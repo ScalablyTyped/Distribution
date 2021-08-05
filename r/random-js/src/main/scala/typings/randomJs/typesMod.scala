@@ -14,17 +14,14 @@ object typesMod {
   }
   object Engine {
     
-    @scala.inline
-    def apply(next: () => Double): Engine = {
+    inline def apply(next: () => Double): Engine = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
       __obj.asInstanceOf[Engine]
     }
     
-    @scala.inline
-    implicit class EngineMutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
+    extension [Self <: Engine](x: Self) {
       
-      @scala.inline
-      def setNext(value: () => Double): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Double): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
   }
   

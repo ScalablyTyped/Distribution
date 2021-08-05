@@ -20,17 +20,14 @@ object typesTagExceptionMod {
   }
   object TagException {
     
-    @scala.inline
-    def apply(): TagException = {
+    inline def apply(): TagException = {
       val __obj = js.Dynamic.literal(name = "TagException")
       __obj.asInstanceOf[TagException]
     }
     
-    @scala.inline
-    implicit class TagExceptionMutableBuilder[Self <: TagException] (val x: Self) extends AnyVal {
+    extension [Self <: TagException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.TagException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.TagException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,20 +40,16 @@ object typesTagExceptionMod {
   }
   object TagExceptionDetails {
     
-    @scala.inline
-    def apply(): TagExceptionDetails = {
+    inline def apply(): TagExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TagExceptionDetails]
     }
     
-    @scala.inline
-    implicit class TagExceptionDetailsMutableBuilder[Self <: TagExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: TagExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

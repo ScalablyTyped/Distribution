@@ -13,19 +13,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(cacheName: String): FileEntryCache = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheName.asInstanceOf[js.Any]).asInstanceOf[FileEntryCache]
-  @scala.inline
-  def create(cacheName: String, directory: String): FileEntryCache = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheName.asInstanceOf[js.Any], directory.asInstanceOf[js.Any])).asInstanceOf[FileEntryCache]
-  @scala.inline
-  def create(cacheName: String, directory: String, usecheckSum: Boolean): FileEntryCache = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheName.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], usecheckSum.asInstanceOf[js.Any])).asInstanceOf[FileEntryCache]
-  @scala.inline
-  def create(cacheName: String, directory: Unit, usecheckSum: Boolean): FileEntryCache = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheName.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], usecheckSum.asInstanceOf[js.Any])).asInstanceOf[FileEntryCache]
+  inline def create(cacheName: String): FileEntryCache = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheName.asInstanceOf[js.Any]).asInstanceOf[FileEntryCache]
+  inline def create(cacheName: String, directory: String): FileEntryCache = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheName.asInstanceOf[js.Any], directory.asInstanceOf[js.Any])).asInstanceOf[FileEntryCache]
+  inline def create(cacheName: String, directory: String, usecheckSum: Boolean): FileEntryCache = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheName.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], usecheckSum.asInstanceOf[js.Any])).asInstanceOf[FileEntryCache]
+  inline def create(cacheName: String, directory: Unit, usecheckSum: Boolean): FileEntryCache = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheName.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], usecheckSum.asInstanceOf[js.Any])).asInstanceOf[FileEntryCache]
   
-  @scala.inline
-  def createFromFile(pathToCache: String): FileEntryCache = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(pathToCache.asInstanceOf[js.Any]).asInstanceOf[FileEntryCache]
-  @scala.inline
-  def createFromFile(pathToCache: String, useCheckSum: Boolean): FileEntryCache = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(pathToCache.asInstanceOf[js.Any], useCheckSum.asInstanceOf[js.Any])).asInstanceOf[FileEntryCache]
+  inline def createFromFile(pathToCache: String): FileEntryCache = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(pathToCache.asInstanceOf[js.Any]).asInstanceOf[FileEntryCache]
+  inline def createFromFile(pathToCache: String, useCheckSum: Boolean): FileEntryCache = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(pathToCache.asInstanceOf[js.Any], useCheckSum.asInstanceOf[js.Any])).asInstanceOf[FileEntryCache]
   
   trait AnalyzedFilesInfo extends StObject {
     
@@ -37,32 +31,24 @@ object mod {
   }
   object AnalyzedFilesInfo {
     
-    @scala.inline
-    def apply(changedFiles: js.Array[String], notChangedFiles: js.Array[String], notFoundFiles: js.Array[String]): AnalyzedFilesInfo = {
+    inline def apply(changedFiles: js.Array[String], notChangedFiles: js.Array[String], notFoundFiles: js.Array[String]): AnalyzedFilesInfo = {
       val __obj = js.Dynamic.literal(changedFiles = changedFiles.asInstanceOf[js.Any], notChangedFiles = notChangedFiles.asInstanceOf[js.Any], notFoundFiles = notFoundFiles.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnalyzedFilesInfo]
     }
     
-    @scala.inline
-    implicit class AnalyzedFilesInfoMutableBuilder[Self <: AnalyzedFilesInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AnalyzedFilesInfo](x: Self) {
       
-      @scala.inline
-      def setChangedFiles(value: js.Array[String]): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
+      inline def setChangedFiles(value: js.Array[String]): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedFilesVarargs(value: String*): Self = StObject.set(x, "changedFiles", js.Array(value :_*))
+      inline def setChangedFilesVarargs(value: String*): Self = StObject.set(x, "changedFiles", js.Array(value :_*))
       
-      @scala.inline
-      def setNotChangedFiles(value: js.Array[String]): Self = StObject.set(x, "notChangedFiles", value.asInstanceOf[js.Any])
+      inline def setNotChangedFiles(value: js.Array[String]): Self = StObject.set(x, "notChangedFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotChangedFilesVarargs(value: String*): Self = StObject.set(x, "notChangedFiles", js.Array(value :_*))
+      inline def setNotChangedFilesVarargs(value: String*): Self = StObject.set(x, "notChangedFiles", js.Array(value :_*))
       
-      @scala.inline
-      def setNotFoundFiles(value: js.Array[String]): Self = StObject.set(x, "notFoundFiles", value.asInstanceOf[js.Any])
+      inline def setNotFoundFiles(value: js.Array[String]): Self = StObject.set(x, "notFoundFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotFoundFilesVarargs(value: String*): Self = StObject.set(x, "notFoundFiles", js.Array(value :_*))
+      inline def setNotFoundFilesVarargs(value: String*): Self = StObject.set(x, "notFoundFiles", js.Array(value :_*))
     }
   }
   
@@ -80,38 +66,28 @@ object mod {
   }
   object FileDescriptor {
     
-    @scala.inline
-    def apply(key: String, notFound: Boolean): FileDescriptor = {
+    inline def apply(key: String, notFound: Boolean): FileDescriptor = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], notFound = notFound.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileDescriptor]
     }
     
-    @scala.inline
-    implicit class FileDescriptorMutableBuilder[Self <: FileDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: FileDescriptor](x: Self) {
       
-      @scala.inline
-      def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+      inline def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
+      inline def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
       
-      @scala.inline
-      def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+      inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: Hash): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Hash): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setNotFound(value: Boolean): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+      inline def setNotFound(value: Boolean): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
     }
   }
   

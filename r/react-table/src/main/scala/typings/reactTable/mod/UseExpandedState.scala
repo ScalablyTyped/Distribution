@@ -11,16 +11,13 @@ trait UseExpandedState[D /* <: js.Object */] extends StObject {
 }
 object UseExpandedState {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](expanded: Record[IdType[D], Boolean]): UseExpandedState[D] = {
+  inline def apply[D /* <: js.Object */](expanded: Record[IdType[D], Boolean]): UseExpandedState[D] = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseExpandedState[D]]
   }
   
-  @scala.inline
-  implicit class UseExpandedStateMutableBuilder[Self <: UseExpandedState[?], D /* <: js.Object */] (val x: Self & UseExpandedState[D]) extends AnyVal {
+  extension [Self <: UseExpandedState[?], D /* <: js.Object */](x: Self & UseExpandedState[D]) {
     
-    @scala.inline
-    def setExpanded(value: Record[IdType[D], Boolean]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Record[IdType[D], Boolean]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
   }
 }

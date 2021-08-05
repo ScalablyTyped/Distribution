@@ -19,34 +19,25 @@ trait AddWordsParams extends StObject {
 }
 object AddWordsParams {
   
-  @scala.inline
-  def apply(customization_id: String, words: js.Array[Word]): AddWordsParams = {
+  inline def apply(customization_id: String, words: js.Array[Word]): AddWordsParams = {
     val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddWordsParams]
   }
   
-  @scala.inline
-  implicit class AddWordsParamsMutableBuilder[Self <: AddWordsParams] (val x: Self) extends AnyVal {
+  extension [Self <: AddWordsParams](x: Self) {
     
-    @scala.inline
-    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
+    inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setWords(value: js.Array[Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: js.Array[Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

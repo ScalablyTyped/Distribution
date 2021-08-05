@@ -35,49 +35,35 @@ trait TrialSummary extends StObject {
 }
 object TrialSummary {
   
-  @scala.inline
-  def apply(): TrialSummary = {
+  inline def apply(): TrialSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrialSummary]
   }
   
-  @scala.inline
-  implicit class TrialSummaryMutableBuilder[Self <: TrialSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TrialSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: ExperimentEntityName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: ExperimentEntityName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    @scala.inline
-    def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
+    inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
-    @scala.inline
-    def setTrialArn(value: TrialArn): Self = StObject.set(x, "TrialArn", value.asInstanceOf[js.Any])
+    inline def setTrialArn(value: TrialArn): Self = StObject.set(x, "TrialArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialArnUndefined: Self = StObject.set(x, "TrialArn", js.undefined)
+    inline def setTrialArnUndefined: Self = StObject.set(x, "TrialArn", js.undefined)
     
-    @scala.inline
-    def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
+    inline def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialNameUndefined: Self = StObject.set(x, "TrialName", js.undefined)
+    inline def setTrialNameUndefined: Self = StObject.set(x, "TrialName", js.undefined)
     
-    @scala.inline
-    def setTrialSource(value: TrialSource): Self = StObject.set(x, "TrialSource", value.asInstanceOf[js.Any])
+    inline def setTrialSource(value: TrialSource): Self = StObject.set(x, "TrialSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialSourceUndefined: Self = StObject.set(x, "TrialSource", js.undefined)
+    inline def setTrialSourceUndefined: Self = StObject.set(x, "TrialSource", js.undefined)
   }
 }

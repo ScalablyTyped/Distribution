@@ -21,8 +21,7 @@ trait FilePickerUniDriver
 }
 object FilePickerUniDriver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: () => js.Promise[Unit],
     element: () => js.Promise[js.Any],
     errorMessage: () => js.Promise[String],
@@ -36,22 +35,16 @@ object FilePickerUniDriver {
     __obj.asInstanceOf[FilePickerUniDriver]
   }
   
-  @scala.inline
-  implicit class FilePickerUniDriverMutableBuilder[Self <: FilePickerUniDriver] (val x: Self) extends AnyVal {
+  extension [Self <: FilePickerUniDriver](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: () => js.Promise[String]): Self = StObject.set(x, "errorMessage", js.Any.fromFunction0(value))
+    inline def setErrorMessage(value: () => js.Promise[String]): Self = StObject.set(x, "errorMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMainLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getMainLabel", js.Any.fromFunction0(value))
+    inline def setGetMainLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getMainLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getSubLabel", js.Any.fromFunction0(value))
+    inline def setGetSubLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getSubLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasError(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
+    inline def setHasError(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
   }
 }

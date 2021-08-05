@@ -13,19 +13,15 @@ trait HistoryEventExecutionDataDetails extends StObject {
 }
 object HistoryEventExecutionDataDetails {
   
-  @scala.inline
-  def apply(): HistoryEventExecutionDataDetails = {
+  inline def apply(): HistoryEventExecutionDataDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistoryEventExecutionDataDetails]
   }
   
-  @scala.inline
-  implicit class HistoryEventExecutionDataDetailsMutableBuilder[Self <: HistoryEventExecutionDataDetails] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryEventExecutionDataDetails](x: Self) {
     
-    @scala.inline
-    def setTruncated(value: truncated): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
+    inline def setTruncated(value: truncated): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
+    inline def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
   }
 }

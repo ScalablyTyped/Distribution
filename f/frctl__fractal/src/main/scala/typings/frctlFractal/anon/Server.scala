@@ -12,25 +12,19 @@ trait Server extends StObject {
 }
 object Server {
   
-  @scala.inline
-  def apply(): Server = {
+  inline def apply(): Server = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Server]
   }
   
-  @scala.inline
-  implicit class ServerMutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
+  extension [Self <: Server](x: Self) {
     
-    @scala.inline
-    def setServer(value: Double): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: Double): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
-    @scala.inline
-    def setSync(value: Double): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+    inline def setSync(value: Double): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+    inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
   }
 }

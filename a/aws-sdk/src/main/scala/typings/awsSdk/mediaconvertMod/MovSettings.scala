@@ -33,43 +33,31 @@ trait MovSettings extends StObject {
 }
 object MovSettings {
   
-  @scala.inline
-  def apply(): MovSettings = {
+  inline def apply(): MovSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MovSettings]
   }
   
-  @scala.inline
-  implicit class MovSettingsMutableBuilder[Self <: MovSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MovSettings](x: Self) {
     
-    @scala.inline
-    def setClapAtom(value: MovClapAtom): Self = StObject.set(x, "ClapAtom", value.asInstanceOf[js.Any])
+    inline def setClapAtom(value: MovClapAtom): Self = StObject.set(x, "ClapAtom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClapAtomUndefined: Self = StObject.set(x, "ClapAtom", js.undefined)
+    inline def setClapAtomUndefined: Self = StObject.set(x, "ClapAtom", js.undefined)
     
-    @scala.inline
-    def setCslgAtom(value: MovCslgAtom): Self = StObject.set(x, "CslgAtom", value.asInstanceOf[js.Any])
+    inline def setCslgAtom(value: MovCslgAtom): Self = StObject.set(x, "CslgAtom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCslgAtomUndefined: Self = StObject.set(x, "CslgAtom", js.undefined)
+    inline def setCslgAtomUndefined: Self = StObject.set(x, "CslgAtom", js.undefined)
     
-    @scala.inline
-    def setMpeg2FourCCControl(value: MovMpeg2FourCCControl): Self = StObject.set(x, "Mpeg2FourCCControl", value.asInstanceOf[js.Any])
+    inline def setMpeg2FourCCControl(value: MovMpeg2FourCCControl): Self = StObject.set(x, "Mpeg2FourCCControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpeg2FourCCControlUndefined: Self = StObject.set(x, "Mpeg2FourCCControl", js.undefined)
+    inline def setMpeg2FourCCControlUndefined: Self = StObject.set(x, "Mpeg2FourCCControl", js.undefined)
     
-    @scala.inline
-    def setPaddingControl(value: MovPaddingControl): Self = StObject.set(x, "PaddingControl", value.asInstanceOf[js.Any])
+    inline def setPaddingControl(value: MovPaddingControl): Self = StObject.set(x, "PaddingControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingControlUndefined: Self = StObject.set(x, "PaddingControl", js.undefined)
+    inline def setPaddingControlUndefined: Self = StObject.set(x, "PaddingControl", js.undefined)
     
-    @scala.inline
-    def setReference(value: MovReference): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: MovReference): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceUndefined: Self = StObject.set(x, "Reference", js.undefined)
+    inline def setReferenceUndefined: Self = StObject.set(x, "Reference", js.undefined)
   }
 }

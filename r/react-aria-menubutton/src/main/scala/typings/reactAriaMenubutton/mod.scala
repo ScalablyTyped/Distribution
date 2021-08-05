@@ -60,15 +60,11 @@ object mod {
     def this(props: WrapperProps[HTMLElement], context: js.Any) = this()
   }
   
-  @scala.inline
-  def closeMenu(wrapperId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeMenu")(wrapperId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def closeMenu(wrapperId: String, closeOptions: FocusButton): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("closeMenu")(wrapperId.asInstanceOf[js.Any], closeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def closeMenu(wrapperId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeMenu")(wrapperId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def closeMenu(wrapperId: String, closeOptions: FocusButton): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("closeMenu")(wrapperId.asInstanceOf[js.Any], closeOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def openMenu(wrapperId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openMenu")(wrapperId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def openMenu(wrapperId: String, openOptions: FocusMenu): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openMenu")(wrapperId.asInstanceOf[js.Any], openOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def openMenu(wrapperId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openMenu")(wrapperId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def openMenu(wrapperId: String, openOptions: FocusMenu): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openMenu")(wrapperId.asInstanceOf[js.Any], openOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ButtonProps[T /* <: HTMLElement */]
     extends StObject
@@ -83,20 +79,16 @@ object mod {
   }
   object ButtonProps {
     
-    @scala.inline
-    def apply[T /* <: HTMLElement */](): ButtonProps[T] = {
+    inline def apply[T /* <: HTMLElement */](): ButtonProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonProps[T]]
     }
     
-    @scala.inline
-    implicit class ButtonPropsMutableBuilder[Self <: ButtonProps[?], T /* <: HTMLElement */] (val x: Self & ButtonProps[T]) extends AnyVal {
+    extension [Self <: ButtonProps[?], T /* <: HTMLElement */](x: Self & ButtonProps[T]) {
       
-      @scala.inline
-      def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
   
@@ -126,32 +118,24 @@ object mod {
   }
   object MenuItemProps {
     
-    @scala.inline
-    def apply[T /* <: HTMLElement */](): MenuItemProps[T] = {
+    inline def apply[T /* <: HTMLElement */](): MenuItemProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuItemProps[T]]
     }
     
-    @scala.inline
-    implicit class MenuItemPropsMutableBuilder[Self <: MenuItemProps[?], T /* <: HTMLElement */] (val x: Self & MenuItemProps[T]) extends AnyVal {
+    extension [Self <: MenuItemProps[?], T /* <: HTMLElement */](x: Self & MenuItemProps[T]) {
       
-      @scala.inline
-      def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -171,26 +155,20 @@ object mod {
   }
   object MenuProps {
     
-    @scala.inline
-    def apply[T /* <: HTMLElement */](children: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element])): MenuProps[T] = {
+    inline def apply[T /* <: HTMLElement */](children: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element])): MenuProps[T] = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuProps[T]]
     }
     
-    @scala.inline
-    implicit class MenuPropsMutableBuilder[Self <: MenuProps[?], T /* <: HTMLElement */] (val x: Self & MenuProps[T]) extends AnyVal {
+    extension [Self <: MenuProps[?], T /* <: HTMLElement */](x: Self & MenuProps[T]) {
       
-      @scala.inline
-      def setChildren(value: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* hasIsOpen */ IsOpen => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* hasIsOpen */ IsOpen => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
   
@@ -231,44 +209,32 @@ object mod {
   }
   object WrapperProps {
     
-    @scala.inline
-    def apply[T /* <: HTMLElement */](): WrapperProps[T] = {
+    inline def apply[T /* <: HTMLElement */](): WrapperProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WrapperProps[T]]
     }
     
-    @scala.inline
-    implicit class WrapperPropsMutableBuilder[Self <: WrapperProps[?], T /* <: HTMLElement */] (val x: Self & WrapperProps[T]) extends AnyVal {
+    extension [Self <: WrapperProps[?], T /* <: HTMLElement */](x: Self & WrapperProps[T]) {
       
-      @scala.inline
-      def setCloseOnBlur(value: Boolean): Self = StObject.set(x, "closeOnBlur", value.asInstanceOf[js.Any])
+      inline def setCloseOnBlur(value: Boolean): Self = StObject.set(x, "closeOnBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnBlurUndefined: Self = StObject.set(x, "closeOnBlur", js.undefined)
+      inline def setCloseOnBlurUndefined: Self = StObject.set(x, "closeOnBlur", js.undefined)
       
-      @scala.inline
-      def setCloseOnSelection(value: Boolean): Self = StObject.set(x, "closeOnSelection", value.asInstanceOf[js.Any])
+      inline def setCloseOnSelection(value: Boolean): Self = StObject.set(x, "closeOnSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnSelectionUndefined: Self = StObject.set(x, "closeOnSelection", js.undefined)
+      inline def setCloseOnSelectionUndefined: Self = StObject.set(x, "closeOnSelection", js.undefined)
       
-      @scala.inline
-      def setOnMenuToggle(value: /* obj */ WrapperState => js.Any): Self = StObject.set(x, "onMenuToggle", js.Any.fromFunction1(value))
+      inline def setOnMenuToggle(value: /* obj */ WrapperState => js.Any): Self = StObject.set(x, "onMenuToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMenuToggleUndefined: Self = StObject.set(x, "onMenuToggle", js.undefined)
+      inline def setOnMenuToggleUndefined: Self = StObject.set(x, "onMenuToggle", js.undefined)
       
-      @scala.inline
-      def setOnSelection(value: (/* value */ js.Any, /* event */ SyntheticEvent[T, Event]) => js.Any): Self = StObject.set(x, "onSelection", js.Any.fromFunction2(value))
+      inline def setOnSelection(value: (/* value */ js.Any, /* event */ SyntheticEvent[T, Event]) => js.Any): Self = StObject.set(x, "onSelection", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSelectionUndefined: Self = StObject.set(x, "onSelection", js.undefined)
+      inline def setOnSelectionUndefined: Self = StObject.set(x, "onSelection", js.undefined)
       
-      @scala.inline
-      def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
   
@@ -278,17 +244,14 @@ object mod {
   }
   object WrapperState {
     
-    @scala.inline
-    def apply(isOpen: Boolean): WrapperState = {
+    inline def apply(isOpen: Boolean): WrapperState = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrapperState]
     }
     
-    @scala.inline
-    implicit class WrapperStateMutableBuilder[Self <: WrapperState] (val x: Self) extends AnyVal {
+    extension [Self <: WrapperState](x: Self) {
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }
   }
 }

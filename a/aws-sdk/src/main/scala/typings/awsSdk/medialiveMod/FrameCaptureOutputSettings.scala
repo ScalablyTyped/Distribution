@@ -13,19 +13,15 @@ trait FrameCaptureOutputSettings extends StObject {
 }
 object FrameCaptureOutputSettings {
   
-  @scala.inline
-  def apply(): FrameCaptureOutputSettings = {
+  inline def apply(): FrameCaptureOutputSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FrameCaptureOutputSettings]
   }
   
-  @scala.inline
-  implicit class FrameCaptureOutputSettingsMutableBuilder[Self <: FrameCaptureOutputSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FrameCaptureOutputSettings](x: Self) {
     
-    @scala.inline
-    def setNameModifier(value: string): Self = StObject.set(x, "NameModifier", value.asInstanceOf[js.Any])
+    inline def setNameModifier(value: string): Self = StObject.set(x, "NameModifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameModifierUndefined: Self = StObject.set(x, "NameModifier", js.undefined)
+    inline def setNameModifierUndefined: Self = StObject.set(x, "NameModifier", js.undefined)
   }
 }

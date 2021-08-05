@@ -21,8 +21,7 @@ object Checkbox {
   @JSImport("carbon-components", "Checkbox.components")
   @js.native
   def components: WeakMap[js.Object, js.Any] = js.native
-  @scala.inline
-  def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+  inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   
   /* static member */
   object stateChangeTypes {
@@ -38,8 +37,7 @@ object Checkbox {
     @JSImport("carbon-components", "Checkbox.stateChangeTypes.mixed")
     @js.native
     def mixed: String = js.native
-    @scala.inline
-    def mixed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mixed")(x.asInstanceOf[js.Any])
+    inline def mixed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mixed")(x.asInstanceOf[js.Any])
     
     @JSImport("carbon-components", "Checkbox.stateChangeTypes.true")
     @js.native

@@ -65,15 +65,12 @@ object DateDialog {
     * Creates and opens a date dialog.
     * @param date The date to be displayed in the dialog. The current date is used when no date is provided.
     */
-  @scala.inline
-  def open(): DateDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[DateDialog]
+  inline def open(): DateDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[DateDialog]
   /**
     * Makes the given date dialog visible. Meant to be used with inline-JSX. In TypeScript it also casts
     * the given JSX element from `any` to an actual DateDialog.
     * @param dateDialog The date dialog to open
     */
-  @scala.inline
-  def open(dateDialog: DateDialog): DateDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(dateDialog.asInstanceOf[js.Any]).asInstanceOf[DateDialog]
-  @scala.inline
-  def open(date: Date): DateDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(date.asInstanceOf[js.Any]).asInstanceOf[DateDialog]
+  inline def open(dateDialog: DateDialog): DateDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(dateDialog.asInstanceOf[js.Any]).asInstanceOf[DateDialog]
+  inline def open(date: Date): DateDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(date.asInstanceOf[js.Any]).asInstanceOf[DateDialog]
 }

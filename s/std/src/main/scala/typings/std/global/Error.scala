@@ -21,6 +21,5 @@ class Error ()
 }
 object Error {
   
-  @scala.inline
-  def apply: ErrorConstructor = js.Dynamic.global.selectDynamic("Error").asInstanceOf[ErrorConstructor]
+  inline def apply: ErrorConstructor = js.Dynamic.global.selectDynamic("Error").asInstanceOf[ErrorConstructor]
 }

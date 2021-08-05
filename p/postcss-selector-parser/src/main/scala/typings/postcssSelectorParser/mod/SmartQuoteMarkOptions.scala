@@ -12,19 +12,15 @@ trait SmartQuoteMarkOptions
 }
 object SmartQuoteMarkOptions {
   
-  @scala.inline
-  def apply(): SmartQuoteMarkOptions = {
+  inline def apply(): SmartQuoteMarkOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SmartQuoteMarkOptions]
   }
   
-  @scala.inline
-  implicit class SmartQuoteMarkOptionsMutableBuilder[Self <: SmartQuoteMarkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SmartQuoteMarkOptions](x: Self) {
     
-    @scala.inline
-    def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
+    inline def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmartUndefined: Self = StObject.set(x, "smart", js.undefined)
+    inline def setSmartUndefined: Self = StObject.set(x, "smart", js.undefined)
   }
 }

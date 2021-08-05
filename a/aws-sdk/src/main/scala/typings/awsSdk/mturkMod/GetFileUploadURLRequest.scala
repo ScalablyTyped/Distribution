@@ -18,19 +18,15 @@ trait GetFileUploadURLRequest extends StObject {
 }
 object GetFileUploadURLRequest {
   
-  @scala.inline
-  def apply(AssignmentId: EntityId, QuestionIdentifier: String): GetFileUploadURLRequest = {
+  inline def apply(AssignmentId: EntityId, QuestionIdentifier: String): GetFileUploadURLRequest = {
     val __obj = js.Dynamic.literal(AssignmentId = AssignmentId.asInstanceOf[js.Any], QuestionIdentifier = QuestionIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFileUploadURLRequest]
   }
   
-  @scala.inline
-  implicit class GetFileUploadURLRequestMutableBuilder[Self <: GetFileUploadURLRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFileUploadURLRequest](x: Self) {
     
-    @scala.inline
-    def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
+    inline def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestionIdentifier(value: String): Self = StObject.set(x, "QuestionIdentifier", value.asInstanceOf[js.Any])
+    inline def setQuestionIdentifier(value: String): Self = StObject.set(x, "QuestionIdentifier", value.asInstanceOf[js.Any])
   }
 }

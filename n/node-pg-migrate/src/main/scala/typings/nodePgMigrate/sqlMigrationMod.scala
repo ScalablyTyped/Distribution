@@ -11,9 +11,7 @@ object sqlMigrationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(sqlPath: String): js.Promise[MigrationBuilderActions] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sqlPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MigrationBuilderActions]]
+  inline def default(sqlPath: String): js.Promise[MigrationBuilderActions] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sqlPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MigrationBuilderActions]]
   
-  @scala.inline
-  def getActions(content: String): MigrationBuilderActions = ^.asInstanceOf[js.Dynamic].applyDynamic("getActions")(content.asInstanceOf[js.Any]).asInstanceOf[MigrationBuilderActions]
+  inline def getActions(content: String): MigrationBuilderActions = ^.asInstanceOf[js.Dynamic].applyDynamic("getActions")(content.asInstanceOf[js.Any]).asInstanceOf[MigrationBuilderActions]
 }

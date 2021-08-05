@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("firebase", "default.firestore.Firestore")
 @js.native
-class Firestore protected () extends StObject {
+/* private */ class Firestore () extends StObject {
   
   /**
     * @hidden

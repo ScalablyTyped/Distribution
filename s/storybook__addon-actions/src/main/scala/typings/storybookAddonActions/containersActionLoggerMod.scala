@@ -31,7 +31,7 @@ object containersActionLoggerMod {
     
     def handleStoryChange(): Unit = js.native
     
-    var mounted: js.Any = js.native
+    /* private */ var mounted: js.Any = js.native
   }
   
   trait ActionLoggerProps extends StObject {
@@ -42,20 +42,16 @@ object containersActionLoggerMod {
   }
   object ActionLoggerProps {
     
-    @scala.inline
-    def apply(active: Boolean, api: API): ActionLoggerProps = {
+    inline def apply(active: Boolean, api: API): ActionLoggerProps = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionLoggerProps]
     }
     
-    @scala.inline
-    implicit class ActionLoggerPropsMutableBuilder[Self <: ActionLoggerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ActionLoggerProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,20 +61,16 @@ object containersActionLoggerMod {
   }
   object ActionLoggerState {
     
-    @scala.inline
-    def apply(actions: js.Array[ActionDisplay]): ActionLoggerState = {
+    inline def apply(actions: js.Array[ActionDisplay]): ActionLoggerState = {
       val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionLoggerState]
     }
     
-    @scala.inline
-    implicit class ActionLoggerStateMutableBuilder[Self <: ActionLoggerState] (val x: Self) extends AnyVal {
+    extension [Self <: ActionLoggerState](x: Self) {
       
-      @scala.inline
-      def setActions(value: js.Array[ActionDisplay]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[ActionDisplay]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsVarargs(value: ActionDisplay*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: ActionDisplay*): Self = StObject.set(x, "actions", js.Array(value :_*))
     }
   }
 }

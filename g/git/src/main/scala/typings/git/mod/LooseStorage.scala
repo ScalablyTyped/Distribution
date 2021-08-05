@@ -28,6 +28,5 @@ object LooseStorage {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def verify_header(`type`: js.Any, size: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify_header")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify_header(`type`: js.Any, size: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify_header")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

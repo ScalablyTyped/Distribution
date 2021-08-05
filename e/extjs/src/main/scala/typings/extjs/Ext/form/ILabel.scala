@@ -30,37 +30,27 @@ trait ILabel
 }
 object ILabel {
   
-  @scala.inline
-  def apply(): ILabel = {
+  inline def apply(): ILabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILabel]
   }
   
-  @scala.inline
-  implicit class ILabelMutableBuilder[Self <: ILabel] (val x: Self) extends AnyVal {
+  extension [Self <: ILabel](x: Self) {
     
-    @scala.inline
-    def setForId(value: String): Self = StObject.set(x, "forId", value.asInstanceOf[js.Any])
+    inline def setForId(value: String): Self = StObject.set(x, "forId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForIdUndefined: Self = StObject.set(x, "forId", js.undefined)
+    inline def setForIdUndefined: Self = StObject.set(x, "forId", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setSetText(value: (/* text */ js.UndefOr[String], /* encode */ js.UndefOr[Boolean]) => ILabel): Self = StObject.set(x, "setText", js.Any.fromFunction2(value))
+    inline def setSetText(value: (/* text */ js.UndefOr[String], /* encode */ js.UndefOr[Boolean]) => ILabel): Self = StObject.set(x, "setText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetTextUndefined: Self = StObject.set(x, "setText", js.undefined)
+    inline def setSetTextUndefined: Self = StObject.set(x, "setText", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

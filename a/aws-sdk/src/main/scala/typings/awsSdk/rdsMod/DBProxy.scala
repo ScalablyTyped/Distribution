@@ -78,106 +78,73 @@ trait DBProxy extends StObject {
 }
 object DBProxy {
   
-  @scala.inline
-  def apply(): DBProxy = {
+  inline def apply(): DBProxy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBProxy]
   }
   
-  @scala.inline
-  implicit class DBProxyMutableBuilder[Self <: DBProxy] (val x: Self) extends AnyVal {
+  extension [Self <: DBProxy](x: Self) {
     
-    @scala.inline
-    def setAuth(value: UserAuthConfigInfoList): Self = StObject.set(x, "Auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: UserAuthConfigInfoList): Self = StObject.set(x, "Auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "Auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "Auth", js.undefined)
     
-    @scala.inline
-    def setAuthVarargs(value: UserAuthConfigInfo*): Self = StObject.set(x, "Auth", js.Array(value :_*))
+    inline def setAuthVarargs(value: UserAuthConfigInfo*): Self = StObject.set(x, "Auth", js.Array(value :_*))
     
-    @scala.inline
-    def setCreatedDate(value: TStamp): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: TStamp): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
-    @scala.inline
-    def setDBProxyArn(value: String): Self = StObject.set(x, "DBProxyArn", value.asInstanceOf[js.Any])
+    inline def setDBProxyArn(value: String): Self = StObject.set(x, "DBProxyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBProxyArnUndefined: Self = StObject.set(x, "DBProxyArn", js.undefined)
+    inline def setDBProxyArnUndefined: Self = StObject.set(x, "DBProxyArn", js.undefined)
     
-    @scala.inline
-    def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
+    inline def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBProxyNameUndefined: Self = StObject.set(x, "DBProxyName", js.undefined)
+    inline def setDBProxyNameUndefined: Self = StObject.set(x, "DBProxyName", js.undefined)
     
-    @scala.inline
-    def setDebugLogging(value: Boolean): Self = StObject.set(x, "DebugLogging", value.asInstanceOf[js.Any])
+    inline def setDebugLogging(value: Boolean): Self = StObject.set(x, "DebugLogging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugLoggingUndefined: Self = StObject.set(x, "DebugLogging", js.undefined)
+    inline def setDebugLoggingUndefined: Self = StObject.set(x, "DebugLogging", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
-    @scala.inline
-    def setEngineFamily(value: String): Self = StObject.set(x, "EngineFamily", value.asInstanceOf[js.Any])
+    inline def setEngineFamily(value: String): Self = StObject.set(x, "EngineFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineFamilyUndefined: Self = StObject.set(x, "EngineFamily", js.undefined)
+    inline def setEngineFamilyUndefined: Self = StObject.set(x, "EngineFamily", js.undefined)
     
-    @scala.inline
-    def setIdleClientTimeout(value: Integer): Self = StObject.set(x, "IdleClientTimeout", value.asInstanceOf[js.Any])
+    inline def setIdleClientTimeout(value: Integer): Self = StObject.set(x, "IdleClientTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleClientTimeoutUndefined: Self = StObject.set(x, "IdleClientTimeout", js.undefined)
+    inline def setIdleClientTimeoutUndefined: Self = StObject.set(x, "IdleClientTimeout", js.undefined)
     
-    @scala.inline
-    def setRequireTLS(value: Boolean): Self = StObject.set(x, "RequireTLS", value.asInstanceOf[js.Any])
+    inline def setRequireTLS(value: Boolean): Self = StObject.set(x, "RequireTLS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireTLSUndefined: Self = StObject.set(x, "RequireTLS", js.undefined)
+    inline def setRequireTLSUndefined: Self = StObject.set(x, "RequireTLS", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DBProxyStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DBProxyStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setUpdatedDate(value: TStamp): Self = StObject.set(x, "UpdatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: TStamp): Self = StObject.set(x, "UpdatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedDateUndefined: Self = StObject.set(x, "UpdatedDate", js.undefined)
+    inline def setUpdatedDateUndefined: Self = StObject.set(x, "UpdatedDate", js.undefined)
     
-    @scala.inline
-    def setVpcSecurityGroupIds(value: StringList): Self = StObject.set(x, "VpcSecurityGroupIds", value.asInstanceOf[js.Any])
+    inline def setVpcSecurityGroupIds(value: StringList): Self = StObject.set(x, "VpcSecurityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "VpcSecurityGroupIds", js.undefined)
+    inline def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "VpcSecurityGroupIds", js.undefined)
     
-    @scala.inline
-    def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value :_*))
+    inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcSubnetIds(value: StringList): Self = StObject.set(x, "VpcSubnetIds", value.asInstanceOf[js.Any])
+    inline def setVpcSubnetIds(value: StringList): Self = StObject.set(x, "VpcSubnetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcSubnetIdsUndefined: Self = StObject.set(x, "VpcSubnetIds", js.undefined)
+    inline def setVpcSubnetIdsUndefined: Self = StObject.set(x, "VpcSubnetIds", js.undefined)
     
-    @scala.inline
-    def setVpcSubnetIdsVarargs(value: String*): Self = StObject.set(x, "VpcSubnetIds", js.Array(value :_*))
+    inline def setVpcSubnetIdsVarargs(value: String*): Self = StObject.set(x, "VpcSubnetIds", js.Array(value :_*))
   }
 }

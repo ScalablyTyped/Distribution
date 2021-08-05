@@ -251,8 +251,7 @@ trait DataProvider
 }
 object DataProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCssClass: String => Unit,
     add_disposing: js.Function => Unit,
     add_propertyChanged: js.Function => Unit,
@@ -431,361 +430,242 @@ object DataProvider {
     __obj.asInstanceOf[DataProvider]
   }
   
-  @scala.inline
-  implicit class DataProviderMutableBuilder[Self <: DataProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DataProvider](x: Self) {
     
-    @scala.inline
-    def setAdd_queryIssuing(value: js.Any => Unit): Self = StObject.set(x, "add_queryIssuing", js.Any.fromFunction1(value))
+    inline def setAdd_queryIssuing(value: js.Any => Unit): Self = StObject.set(x, "add_queryIssuing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAdd_queryStateChanged(value: js.Any => Unit): Self = StObject.set(x, "add_queryStateChanged", js.Any.fromFunction1(value))
+    inline def setAdd_queryStateChanged(value: js.Any => Unit): Self = StObject.set(x, "add_queryStateChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAdd_resultReady(value: js.Any => Unit): Self = StObject.set(x, "add_resultReady", js.Any.fromFunction1(value))
+    inline def setAdd_resultReady(value: js.Any => Unit): Self = StObject.set(x, "add_resultReady", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisplayControlMessages(value: () => Unit): Self = StObject.set(x, "displayControlMessages", js.Any.fromFunction0(value))
+    inline def setDisplayControlMessages(value: () => Unit): Self = StObject.set(x, "displayControlMessages", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisplayControl_QueryReady(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "displayControl_QueryReady", js.Any.fromFunction2(value))
+    inline def setDisplayControl_QueryReady(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "displayControl_QueryReady", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSortName(value: () => String): Self = StObject.set(x, "getSortName", js.Any.fromFunction0(value))
+    inline def setGetSortName(value: () => String): Self = StObject.set(x, "getSortName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSortRankName(value: () => String): Self = StObject.set(x, "getSortRankName", js.Any.fromFunction0(value))
+    inline def setGetSortRankName(value: () => String): Self = StObject.set(x, "getSortRankName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_active(value: () => Boolean): Self = StObject.set(x, "get_active", js.Any.fromFunction0(value))
+    inline def setGet_active(value: () => Boolean): Self = StObject.set(x, "get_active", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_availableSorts(value: () => js.Any): Self = StObject.set(x, "get_availableSorts", js.Any.fromFunction0(value))
+    inline def setGet_availableSorts(value: () => js.Any): Self = StObject.set(x, "get_availableSorts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_batched(value: () => Boolean): Self = StObject.set(x, "get_batched", js.Any.fromFunction0(value))
+    inline def setGet_batched(value: () => Boolean): Self = StObject.set(x, "get_batched", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_bypassResultTypes(value: () => Boolean): Self = StObject.set(x, "get_bypassResultTypes", js.Any.fromFunction0(value))
+    inline def setGet_bypassResultTypes(value: () => Boolean): Self = StObject.set(x, "get_bypassResultTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_clientType(value: () => String): Self = StObject.set(x, "get_clientType", js.Any.fromFunction0(value))
+    inline def setGet_clientType(value: () => String): Self = StObject.set(x, "get_clientType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_collapseSpecification(value: () => String): Self = StObject.set(x, "get_collapseSpecification", js.Any.fromFunction0(value))
+    inline def setGet_collapseSpecification(value: () => String): Self = StObject.set(x, "get_collapseSpecification", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_contextualScopeUrl(value: () => String): Self = StObject.set(x, "get_contextualScopeUrl", js.Any.fromFunction0(value))
+    inline def setGet_contextualScopeUrl(value: () => String): Self = StObject.set(x, "get_contextualScopeUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_currentQueryState(value: () => js.Any): Self = StObject.set(x, "get_currentQueryState", js.Any.fromFunction0(value))
+    inline def setGet_currentQueryState(value: () => js.Any): Self = StObject.set(x, "get_currentQueryState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_desiredSnippetLength(value: () => Double): Self = StObject.set(x, "get_desiredSnippetLength", js.Any.fromFunction0(value))
+    inline def setGet_desiredSnippetLength(value: () => Double): Self = StObject.set(x, "get_desiredSnippetLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_effectiveQueryLanguage(value: () => js.Any): Self = StObject.set(x, "get_effectiveQueryLanguage", js.Any.fromFunction0(value))
+    inline def setGet_effectiveQueryLanguage(value: () => js.Any): Self = StObject.set(x, "get_effectiveQueryLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_enableInterleaving(value: () => Boolean): Self = StObject.set(x, "get_enableInterleaving", js.Any.fromFunction0(value))
+    inline def setGet_enableInterleaving(value: () => Boolean): Self = StObject.set(x, "get_enableInterleaving", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_enableNicknames(value: () => Boolean): Self = StObject.set(x, "get_enableNicknames", js.Any.fromFunction0(value))
+    inline def setGet_enableNicknames(value: () => Boolean): Self = StObject.set(x, "get_enableNicknames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_enableOrderingHitHighlightedProperty(value: () => Boolean): Self = StObject.set(x, "get_enableOrderingHitHighlightedProperty", js.Any.fromFunction0(value))
+    inline def setGet_enableOrderingHitHighlightedProperty(value: () => Boolean): Self = StObject.set(x, "get_enableOrderingHitHighlightedProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_enablePhonetic(value: () => Boolean): Self = StObject.set(x, "get_enablePhonetic", js.Any.fromFunction0(value))
+    inline def setGet_enablePhonetic(value: () => Boolean): Self = StObject.set(x, "get_enablePhonetic", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_enableQueryRules(value: () => Boolean): Self = StObject.set(x, "get_enableQueryRules", js.Any.fromFunction0(value))
+    inline def setGet_enableQueryRules(value: () => Boolean): Self = StObject.set(x, "get_enableQueryRules", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_enableStemming(value: () => Boolean): Self = StObject.set(x, "get_enableStemming", js.Any.fromFunction0(value))
+    inline def setGet_enableStemming(value: () => Boolean): Self = StObject.set(x, "get_enableStemming", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_entityInfo(value: () => js.Any): Self = StObject.set(x, "get_entityInfo", js.Any.fromFunction0(value))
+    inline def setGet_entityInfo(value: () => js.Any): Self = StObject.set(x, "get_entityInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_fallbackLanguage(value: () => js.Any): Self = StObject.set(x, "get_fallbackLanguage", js.Any.fromFunction0(value))
+    inline def setGet_fallbackLanguage(value: () => js.Any): Self = StObject.set(x, "get_fallbackLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_fallbackRankingModelID(value: () => String): Self = StObject.set(x, "get_fallbackRankingModelID", js.Any.fromFunction0(value))
+    inline def setGet_fallbackRankingModelID(value: () => String): Self = StObject.set(x, "get_fallbackRankingModelID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_fallbackRefinementFilters(value: () => js.Any): Self = StObject.set(x, "get_fallbackRefinementFilters", js.Any.fromFunction0(value))
+    inline def setGet_fallbackRefinementFilters(value: () => js.Any): Self = StObject.set(x, "get_fallbackRefinementFilters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_fallbackSort(value: () => js.Any): Self = StObject.set(x, "get_fallbackSort", js.Any.fromFunction0(value))
+    inline def setGet_fallbackSort(value: () => js.Any): Self = StObject.set(x, "get_fallbackSort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_hitHighlightedMultivaluePropertyLimit(value: () => Double): Self = StObject.set(x, "get_hitHighlightedMultivaluePropertyLimit", js.Any.fromFunction0(value))
+    inline def setGet_hitHighlightedMultivaluePropertyLimit(value: () => Double): Self = StObject.set(x, "get_hitHighlightedMultivaluePropertyLimit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_hitHighlightedProperties(value: () => js.Any): Self = StObject.set(x, "get_hitHighlightedProperties", js.Any.fromFunction0(value))
+    inline def setGet_hitHighlightedProperties(value: () => js.Any): Self = StObject.set(x, "get_hitHighlightedProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_initialQueryState(value: () => js.Any): Self = StObject.set(x, "get_initialQueryState", js.Any.fromFunction0(value))
+    inline def setGet_initialQueryState(value: () => js.Any): Self = StObject.set(x, "get_initialQueryState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_initialResult(value: () => String): Self = StObject.set(x, "get_initialResult", js.Any.fromFunction0(value))
+    inline def setGet_initialResult(value: () => String): Self = StObject.set(x, "get_initialResult", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_initialResultObject(value: () => js.Any): Self = StObject.set(x, "get_initialResultObject", js.Any.fromFunction0(value))
+    inline def setGet_initialResultObject(value: () => js.Any): Self = StObject.set(x, "get_initialResultObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_initialResultRef(value: () => js.Any): Self = StObject.set(x, "get_initialResultRef", js.Any.fromFunction0(value))
+    inline def setGet_initialResultRef(value: () => js.Any): Self = StObject.set(x, "get_initialResultRef", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_maxPagesAfterCurrent(value: () => Double): Self = StObject.set(x, "get_maxPagesAfterCurrent", js.Any.fromFunction0(value))
+    inline def setGet_maxPagesAfterCurrent(value: () => Double): Self = StObject.set(x, "get_maxPagesAfterCurrent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_parentImpressionID(value: () => js.Any): Self = StObject.set(x, "get_parentImpressionID", js.Any.fromFunction0(value))
+    inline def setGet_parentImpressionID(value: () => js.Any): Self = StObject.set(x, "get_parentImpressionID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_personalizedQuery(value: () => Boolean): Self = StObject.set(x, "get_personalizedQuery", js.Any.fromFunction0(value))
+    inline def setGet_personalizedQuery(value: () => Boolean): Self = StObject.set(x, "get_personalizedQuery", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_processBestBets(value: () => Boolean): Self = StObject.set(x, "get_processBestBets", js.Any.fromFunction0(value))
+    inline def setGet_processBestBets(value: () => Boolean): Self = StObject.set(x, "get_processBestBets", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_processPersonalFavorites(value: () => Boolean): Self = StObject.set(x, "get_processPersonalFavorites", js.Any.fromFunction0(value))
+    inline def setGet_processPersonalFavorites(value: () => Boolean): Self = StObject.set(x, "get_processPersonalFavorites", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_properties(value: () => js.Any): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
+    inline def setGet_properties(value: () => js.Any): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queryCount(value: () => Double): Self = StObject.set(x, "get_queryCount", js.Any.fromFunction0(value))
+    inline def setGet_queryCount(value: () => Double): Self = StObject.set(x, "get_queryCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queryGroupName(value: () => String): Self = StObject.set(x, "get_queryGroupName", js.Any.fromFunction0(value))
+    inline def setGet_queryGroupName(value: () => String): Self = StObject.set(x, "get_queryGroupName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queryPropertiesTemplateUrl(value: () => String): Self = StObject.set(x, "get_queryPropertiesTemplateUrl", js.Any.fromFunction0(value))
+    inline def setGet_queryPropertiesTemplateUrl(value: () => String): Self = StObject.set(x, "get_queryPropertiesTemplateUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queryTemplate(value: () => js.Any): Self = StObject.set(x, "get_queryTemplate", js.Any.fromFunction0(value))
+    inline def setGet_queryTemplate(value: () => js.Any): Self = StObject.set(x, "get_queryTemplate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_rankRules(value: () => js.Any): Self = StObject.set(x, "get_rankRules", js.Any.fromFunction0(value))
+    inline def setGet_rankRules(value: () => js.Any): Self = StObject.set(x, "get_rankRules", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_refinementInfo(value: () => StringDictionary[js.Array[RefinementInfo]]): Self = StObject.set(x, "get_refinementInfo", js.Any.fromFunction0(value))
+    inline def setGet_refinementInfo(value: () => StringDictionary[js.Array[RefinementInfo]]): Self = StObject.set(x, "get_refinementInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_resultsPerPage(value: () => Double): Self = StObject.set(x, "get_resultsPerPage", js.Any.fromFunction0(value))
+    inline def setGet_resultsPerPage(value: () => Double): Self = StObject.set(x, "get_resultsPerPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_resultsUrl(value: () => js.Any): Self = StObject.set(x, "get_resultsUrl", js.Any.fromFunction0(value))
+    inline def setGet_resultsUrl(value: () => js.Any): Self = StObject.set(x, "get_resultsUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_rowCount(value: () => Double): Self = StObject.set(x, "get_rowCount", js.Any.fromFunction0(value))
+    inline def setGet_rowCount(value: () => Double): Self = StObject.set(x, "get_rowCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_selectedProperties(value: () => js.Any): Self = StObject.set(x, "get_selectedProperties", js.Any.fromFunction0(value))
+    inline def setGet_selectedProperties(value: () => js.Any): Self = StObject.set(x, "get_selectedProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_selectedRefiners(value: () => js.Any): Self = StObject.set(x, "get_selectedRefiners", js.Any.fromFunction0(value))
+    inline def setGet_selectedRefiners(value: () => js.Any): Self = StObject.set(x, "get_selectedRefiners", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_sourceID(value: () => String): Self = StObject.set(x, "get_sourceID", js.Any.fromFunction0(value))
+    inline def setGet_sourceID(value: () => String): Self = StObject.set(x, "get_sourceID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_sourceLevel(value: () => String): Self = StObject.set(x, "get_sourceLevel", js.Any.fromFunction0(value))
+    inline def setGet_sourceLevel(value: () => String): Self = StObject.set(x, "get_sourceLevel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_sourceName(value: () => String): Self = StObject.set(x, "get_sourceName", js.Any.fromFunction0(value))
+    inline def setGet_sourceName(value: () => String): Self = StObject.set(x, "get_sourceName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_summaryLength(value: () => Double): Self = StObject.set(x, "get_summaryLength", js.Any.fromFunction0(value))
+    inline def setGet_summaryLength(value: () => Double): Self = StObject.set(x, "get_summaryLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_totalRows(value: () => Double): Self = StObject.set(x, "get_totalRows", js.Any.fromFunction0(value))
+    inline def setGet_totalRows(value: () => Double): Self = StObject.set(x, "get_totalRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_trimDuplicates(value: () => Boolean): Self = StObject.set(x, "get_trimDuplicates", js.Any.fromFunction0(value))
+    inline def setGet_trimDuplicates(value: () => Boolean): Self = StObject.set(x, "get_trimDuplicates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_upScopeUrl(value: () => js.Any): Self = StObject.set(x, "get_upScopeUrl", js.Any.fromFunction0(value))
+    inline def setGet_upScopeUrl(value: () => js.Any): Self = StObject.set(x, "get_upScopeUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_updateAjaxNavigate(value: () => Boolean): Self = StObject.set(x, "get_updateAjaxNavigate", js.Any.fromFunction0(value))
+    inline def setGet_updateAjaxNavigate(value: () => Boolean): Self = StObject.set(x, "get_updateAjaxNavigate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_userAction(value: () => js.Any): Self = StObject.set(x, "get_userAction", js.Any.fromFunction0(value))
+    inline def setGet_userAction(value: () => js.Any): Self = StObject.set(x, "get_userAction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIssueQuery(value: () => Unit): Self = StObject.set(x, "issueQuery", js.Any.fromFunction0(value))
+    inline def setIssueQuery(value: () => Unit): Self = StObject.set(x, "issueQuery", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProcessInitial(value: () => Unit): Self = StObject.set(x, "processInitial", js.Any.fromFunction0(value))
+    inline def setProcessInitial(value: () => Unit): Self = StObject.set(x, "processInitial", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRaiseEmptyResultReadyEvent(value: () => Unit): Self = StObject.set(x, "raiseEmptyResultReadyEvent", js.Any.fromFunction0(value))
+    inline def setRaiseEmptyResultReadyEvent(value: () => Unit): Self = StObject.set(x, "raiseEmptyResultReadyEvent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRaiseQueryIssuingEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseQueryIssuingEvent", js.Any.fromFunction1(value))
+    inline def setRaiseQueryIssuingEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseQueryIssuingEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRaiseQueryStateChangedEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseQueryStateChangedEvent", js.Any.fromFunction1(value))
+    inline def setRaiseQueryStateChangedEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseQueryStateChangedEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRaiseResultReadyEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseResultReadyEvent", js.Any.fromFunction1(value))
+    inline def setRaiseResultReadyEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseResultReadyEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove_queryIssuing(value: js.Any => Unit): Self = StObject.set(x, "remove_queryIssuing", js.Any.fromFunction1(value))
+    inline def setRemove_queryIssuing(value: js.Any => Unit): Self = StObject.set(x, "remove_queryIssuing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove_resultReady(value: js.Any => Unit): Self = StObject.set(x, "remove_resultReady", js.Any.fromFunction1(value))
+    inline def setRemove_resultReady(value: js.Any => Unit): Self = StObject.set(x, "remove_resultReady", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchBox_BatchQueryIssuing(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "searchBox_BatchQueryIssuing", js.Any.fromFunction2(value))
+    inline def setSearchBox_BatchQueryIssuing(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "searchBox_BatchQueryIssuing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSearchBox_BatchResultReady(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "searchBox_BatchResultReady", js.Any.fromFunction2(value))
+    inline def setSearchBox_BatchResultReady(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "searchBox_BatchResultReady", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSearchBox_QueryReady(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "searchBox_QueryReady", js.Any.fromFunction2(value))
+    inline def setSearchBox_QueryReady(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "searchBox_QueryReady", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSet_active(value: Boolean => Boolean): Self = StObject.set(x, "set_active", js.Any.fromFunction1(value))
+    inline def setSet_active(value: Boolean => Boolean): Self = StObject.set(x, "set_active", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_availableSorts(value: js.Any => js.Any): Self = StObject.set(x, "set_availableSorts", js.Any.fromFunction1(value))
+    inline def setSet_availableSorts(value: js.Any => js.Any): Self = StObject.set(x, "set_availableSorts", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_batched(value: Boolean => Boolean): Self = StObject.set(x, "set_batched", js.Any.fromFunction1(value))
+    inline def setSet_batched(value: Boolean => Boolean): Self = StObject.set(x, "set_batched", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_bypassResultTypes(value: Boolean => Boolean): Self = StObject.set(x, "set_bypassResultTypes", js.Any.fromFunction1(value))
+    inline def setSet_bypassResultTypes(value: Boolean => Boolean): Self = StObject.set(x, "set_bypassResultTypes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_clientType(value: String => String): Self = StObject.set(x, "set_clientType", js.Any.fromFunction1(value))
+    inline def setSet_clientType(value: String => String): Self = StObject.set(x, "set_clientType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_collapseSpecification(value: String => String): Self = StObject.set(x, "set_collapseSpecification", js.Any.fromFunction1(value))
+    inline def setSet_collapseSpecification(value: String => String): Self = StObject.set(x, "set_collapseSpecification", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_contextualScopeUrl(value: String => String): Self = StObject.set(x, "set_contextualScopeUrl", js.Any.fromFunction1(value))
+    inline def setSet_contextualScopeUrl(value: String => String): Self = StObject.set(x, "set_contextualScopeUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_desiredSnippetLength(value: Double => Double): Self = StObject.set(x, "set_desiredSnippetLength", js.Any.fromFunction1(value))
+    inline def setSet_desiredSnippetLength(value: Double => Double): Self = StObject.set(x, "set_desiredSnippetLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_enableInterleaving(value: Boolean => Boolean): Self = StObject.set(x, "set_enableInterleaving", js.Any.fromFunction1(value))
+    inline def setSet_enableInterleaving(value: Boolean => Boolean): Self = StObject.set(x, "set_enableInterleaving", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_enableNicknames(value: Boolean => Boolean): Self = StObject.set(x, "set_enableNicknames", js.Any.fromFunction1(value))
+    inline def setSet_enableNicknames(value: Boolean => Boolean): Self = StObject.set(x, "set_enableNicknames", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_enableOrderingHitHighlightedProperty(value: Boolean => Boolean): Self = StObject.set(x, "set_enableOrderingHitHighlightedProperty", js.Any.fromFunction1(value))
+    inline def setSet_enableOrderingHitHighlightedProperty(value: Boolean => Boolean): Self = StObject.set(x, "set_enableOrderingHitHighlightedProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_enablePhonetic(value: Boolean => Boolean): Self = StObject.set(x, "set_enablePhonetic", js.Any.fromFunction1(value))
+    inline def setSet_enablePhonetic(value: Boolean => Boolean): Self = StObject.set(x, "set_enablePhonetic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_enableQueryRules(value: Boolean => Boolean): Self = StObject.set(x, "set_enableQueryRules", js.Any.fromFunction1(value))
+    inline def setSet_enableQueryRules(value: Boolean => Boolean): Self = StObject.set(x, "set_enableQueryRules", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_enableStemming(value: Boolean => Boolean): Self = StObject.set(x, "set_enableStemming", js.Any.fromFunction1(value))
+    inline def setSet_enableStemming(value: Boolean => Boolean): Self = StObject.set(x, "set_enableStemming", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_fallbackLanguage(value: js.Any => js.Any): Self = StObject.set(x, "set_fallbackLanguage", js.Any.fromFunction1(value))
+    inline def setSet_fallbackLanguage(value: js.Any => js.Any): Self = StObject.set(x, "set_fallbackLanguage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_fallbackRankingModelID(value: String => String): Self = StObject.set(x, "set_fallbackRankingModelID", js.Any.fromFunction1(value))
+    inline def setSet_fallbackRankingModelID(value: String => String): Self = StObject.set(x, "set_fallbackRankingModelID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_fallbackRefinementFilters(value: js.Any => js.Any): Self = StObject.set(x, "set_fallbackRefinementFilters", js.Any.fromFunction1(value))
+    inline def setSet_fallbackRefinementFilters(value: js.Any => js.Any): Self = StObject.set(x, "set_fallbackRefinementFilters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_fallbackSort(value: js.Any => js.Any): Self = StObject.set(x, "set_fallbackSort", js.Any.fromFunction1(value))
+    inline def setSet_fallbackSort(value: js.Any => js.Any): Self = StObject.set(x, "set_fallbackSort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_hitHighlightedMultivaluePropertyLimit(value: Double => Double): Self = StObject.set(x, "set_hitHighlightedMultivaluePropertyLimit", js.Any.fromFunction1(value))
+    inline def setSet_hitHighlightedMultivaluePropertyLimit(value: Double => Double): Self = StObject.set(x, "set_hitHighlightedMultivaluePropertyLimit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_hitHighlightedProperties(value: js.Any => js.Any): Self = StObject.set(x, "set_hitHighlightedProperties", js.Any.fromFunction1(value))
+    inline def setSet_hitHighlightedProperties(value: js.Any => js.Any): Self = StObject.set(x, "set_hitHighlightedProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_initialQueryState(value: js.Any => js.Any): Self = StObject.set(x, "set_initialQueryState", js.Any.fromFunction1(value))
+    inline def setSet_initialQueryState(value: js.Any => js.Any): Self = StObject.set(x, "set_initialQueryState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_initialResult(value: String => String): Self = StObject.set(x, "set_initialResult", js.Any.fromFunction1(value))
+    inline def setSet_initialResult(value: String => String): Self = StObject.set(x, "set_initialResult", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_initialResultRef(value: js.Any => js.Any): Self = StObject.set(x, "set_initialResultRef", js.Any.fromFunction1(value))
+    inline def setSet_initialResultRef(value: js.Any => js.Any): Self = StObject.set(x, "set_initialResultRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_maxPagesAfterCurrent(value: Double => Double): Self = StObject.set(x, "set_maxPagesAfterCurrent", js.Any.fromFunction1(value))
+    inline def setSet_maxPagesAfterCurrent(value: Double => Double): Self = StObject.set(x, "set_maxPagesAfterCurrent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_parentImpressionID(value: js.Any => js.Any): Self = StObject.set(x, "set_parentImpressionID", js.Any.fromFunction1(value))
+    inline def setSet_parentImpressionID(value: js.Any => js.Any): Self = StObject.set(x, "set_parentImpressionID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_personalizedQuery(value: Boolean => Boolean): Self = StObject.set(x, "set_personalizedQuery", js.Any.fromFunction1(value))
+    inline def setSet_personalizedQuery(value: Boolean => Boolean): Self = StObject.set(x, "set_personalizedQuery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_processBestBets(value: Boolean => Boolean): Self = StObject.set(x, "set_processBestBets", js.Any.fromFunction1(value))
+    inline def setSet_processBestBets(value: Boolean => Boolean): Self = StObject.set(x, "set_processBestBets", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_processPersonalFavorites(value: Boolean => Boolean): Self = StObject.set(x, "set_processPersonalFavorites", js.Any.fromFunction1(value))
+    inline def setSet_processPersonalFavorites(value: Boolean => Boolean): Self = StObject.set(x, "set_processPersonalFavorites", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_properties(value: js.Any => js.Any): Self = StObject.set(x, "set_properties", js.Any.fromFunction1(value))
+    inline def setSet_properties(value: js.Any => js.Any): Self = StObject.set(x, "set_properties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_queryCount(value: Double => Double): Self = StObject.set(x, "set_queryCount", js.Any.fromFunction1(value))
+    inline def setSet_queryCount(value: Double => Double): Self = StObject.set(x, "set_queryCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_queryGroupName(value: String => String): Self = StObject.set(x, "set_queryGroupName", js.Any.fromFunction1(value))
+    inline def setSet_queryGroupName(value: String => String): Self = StObject.set(x, "set_queryGroupName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_queryPropertiesTemplateUrl(value: String => String): Self = StObject.set(x, "set_queryPropertiesTemplateUrl", js.Any.fromFunction1(value))
+    inline def setSet_queryPropertiesTemplateUrl(value: String => String): Self = StObject.set(x, "set_queryPropertiesTemplateUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_queryTemplate(value: js.Any => js.Any): Self = StObject.set(x, "set_queryTemplate", js.Any.fromFunction1(value))
+    inline def setSet_queryTemplate(value: js.Any => js.Any): Self = StObject.set(x, "set_queryTemplate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_rankRules(value: js.Any => js.Any): Self = StObject.set(x, "set_rankRules", js.Any.fromFunction1(value))
+    inline def setSet_rankRules(value: js.Any => js.Any): Self = StObject.set(x, "set_rankRules", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_resultsPerPage(value: Double => Double): Self = StObject.set(x, "set_resultsPerPage", js.Any.fromFunction1(value))
+    inline def setSet_resultsPerPage(value: Double => Double): Self = StObject.set(x, "set_resultsPerPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_resultsUrl(value: js.Any => js.Any): Self = StObject.set(x, "set_resultsUrl", js.Any.fromFunction1(value))
+    inline def setSet_resultsUrl(value: js.Any => js.Any): Self = StObject.set(x, "set_resultsUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_rowCount(value: Double => Double): Self = StObject.set(x, "set_rowCount", js.Any.fromFunction1(value))
+    inline def setSet_rowCount(value: Double => Double): Self = StObject.set(x, "set_rowCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_selectedProperties(value: js.Any => js.Any): Self = StObject.set(x, "set_selectedProperties", js.Any.fromFunction1(value))
+    inline def setSet_selectedProperties(value: js.Any => js.Any): Self = StObject.set(x, "set_selectedProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_selectedRefiners(value: js.Any => js.Any): Self = StObject.set(x, "set_selectedRefiners", js.Any.fromFunction1(value))
+    inline def setSet_selectedRefiners(value: js.Any => js.Any): Self = StObject.set(x, "set_selectedRefiners", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_sourceID(value: String => String): Self = StObject.set(x, "set_sourceID", js.Any.fromFunction1(value))
+    inline def setSet_sourceID(value: String => String): Self = StObject.set(x, "set_sourceID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_sourceLevel(value: String => String): Self = StObject.set(x, "set_sourceLevel", js.Any.fromFunction1(value))
+    inline def setSet_sourceLevel(value: String => String): Self = StObject.set(x, "set_sourceLevel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_sourceName(value: String => String): Self = StObject.set(x, "set_sourceName", js.Any.fromFunction1(value))
+    inline def setSet_sourceName(value: String => String): Self = StObject.set(x, "set_sourceName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_summaryLength(value: Double => Double): Self = StObject.set(x, "set_summaryLength", js.Any.fromFunction1(value))
+    inline def setSet_summaryLength(value: Double => Double): Self = StObject.set(x, "set_summaryLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_totalRows(value: Double => Double): Self = StObject.set(x, "set_totalRows", js.Any.fromFunction1(value))
+    inline def setSet_totalRows(value: Double => Double): Self = StObject.set(x, "set_totalRows", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_trimDuplicates(value: Boolean => Boolean): Self = StObject.set(x, "set_trimDuplicates", js.Any.fromFunction1(value))
+    inline def setSet_trimDuplicates(value: Boolean => Boolean): Self = StObject.set(x, "set_trimDuplicates", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_updateAjaxNavigate(value: Boolean => Boolean): Self = StObject.set(x, "set_updateAjaxNavigate", js.Any.fromFunction1(value))
+    inline def setSet_updateAjaxNavigate(value: Boolean => Boolean): Self = StObject.set(x, "set_updateAjaxNavigate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_userAction(value: js.Any => js.Any): Self = StObject.set(x, "set_userAction", js.Any.fromFunction1(value))
+    inline def setSet_userAction(value: js.Any => js.Any): Self = StObject.set(x, "set_userAction", js.Any.fromFunction1(value))
   }
 }

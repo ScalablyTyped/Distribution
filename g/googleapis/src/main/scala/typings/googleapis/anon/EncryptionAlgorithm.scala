@@ -12,25 +12,19 @@ trait EncryptionAlgorithm extends StObject {
 }
 object EncryptionAlgorithm {
   
-  @scala.inline
-  def apply(): EncryptionAlgorithm = {
+  inline def apply(): EncryptionAlgorithm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncryptionAlgorithm]
   }
   
-  @scala.inline
-  implicit class EncryptionAlgorithmMutableBuilder[Self <: EncryptionAlgorithm] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionAlgorithm](x: Self) {
     
-    @scala.inline
-    def setEncryptionAlgorithm(value: String): Self = StObject.set(x, "encryptionAlgorithm", value.asInstanceOf[js.Any])
+    inline def setEncryptionAlgorithm(value: String): Self = StObject.set(x, "encryptionAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionAlgorithmUndefined: Self = StObject.set(x, "encryptionAlgorithm", js.undefined)
+    inline def setEncryptionAlgorithmUndefined: Self = StObject.set(x, "encryptionAlgorithm", js.undefined)
     
-    @scala.inline
-    def setKeySha256(value: String): Self = StObject.set(x, "keySha256", value.asInstanceOf[js.Any])
+    inline def setKeySha256(value: String): Self = StObject.set(x, "keySha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySha256Undefined: Self = StObject.set(x, "keySha256", js.undefined)
+    inline def setKeySha256Undefined: Self = StObject.set(x, "keySha256", js.undefined)
   }
 }

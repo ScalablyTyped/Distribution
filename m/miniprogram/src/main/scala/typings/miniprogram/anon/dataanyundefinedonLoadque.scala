@@ -53,109 +53,75 @@ trait dataanyundefinedonLoadque
 }
 object dataanyundefinedonLoadque {
   
-  @scala.inline
-  def apply(): dataanyundefinedonLoadque = {
+  inline def apply(): dataanyundefinedonLoadque = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[dataanyundefinedonLoadque]
   }
   
-  @scala.inline
-  implicit class dataanyundefinedonLoadqueMutableBuilder[Self <: dataanyundefinedonLoadque] (val x: Self) extends AnyVal {
+  extension [Self <: dataanyundefinedonLoadque](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEvents(value: BeforeTabItemTap): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: BeforeTabItemTap): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+    inline def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+    inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    @scala.inline
-    def setOnLoad(value: /* query */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+    inline def setOnLoad(value: /* query */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+    inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
-    @scala.inline
-    def setOnOptionMenuClick(value: () => Unit): Self = StObject.set(x, "onOptionMenuClick", js.Any.fromFunction0(value))
+    inline def setOnOptionMenuClick(value: () => Unit): Self = StObject.set(x, "onOptionMenuClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnOptionMenuClickUndefined: Self = StObject.set(x, "onOptionMenuClick", js.undefined)
+    inline def setOnOptionMenuClickUndefined: Self = StObject.set(x, "onOptionMenuClick", js.undefined)
     
-    @scala.inline
-    def setOnPageScroll(value: /* opts */ ScrollTop => Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
+    inline def setOnPageScroll(value: /* opts */ ScrollTop => Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPageScrollUndefined: Self = StObject.set(x, "onPageScroll", js.undefined)
+    inline def setOnPageScrollUndefined: Self = StObject.set(x, "onPageScroll", js.undefined)
     
-    @scala.inline
-    def setOnPopMenuClick(value: () => Unit): Self = StObject.set(x, "onPopMenuClick", js.Any.fromFunction0(value))
+    inline def setOnPopMenuClick(value: () => Unit): Self = StObject.set(x, "onPopMenuClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPopMenuClickUndefined: Self = StObject.set(x, "onPopMenuClick", js.undefined)
+    inline def setOnPopMenuClickUndefined: Self = StObject.set(x, "onPopMenuClick", js.undefined)
     
-    @scala.inline
-    def setOnPullDownRefresh(value: /* opts */ Form => Unit): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction1(value))
+    inline def setOnPullDownRefresh(value: /* opts */ Form => Unit): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPullDownRefreshUndefined: Self = StObject.set(x, "onPullDownRefresh", js.undefined)
+    inline def setOnPullDownRefreshUndefined: Self = StObject.set(x, "onPullDownRefresh", js.undefined)
     
-    @scala.inline
-    def setOnPullIntercept(value: () => Unit): Self = StObject.set(x, "onPullIntercept", js.Any.fromFunction0(value))
+    inline def setOnPullIntercept(value: () => Unit): Self = StObject.set(x, "onPullIntercept", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPullInterceptUndefined: Self = StObject.set(x, "onPullIntercept", js.undefined)
+    inline def setOnPullInterceptUndefined: Self = StObject.set(x, "onPullIntercept", js.undefined)
     
-    @scala.inline
-    def setOnReachBottom(value: () => Unit): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction0(value))
+    inline def setOnReachBottom(value: () => Unit): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnReachBottomUndefined: Self = StObject.set(x, "onReachBottom", js.undefined)
+    inline def setOnReachBottomUndefined: Self = StObject.set(x, "onReachBottom", js.undefined)
     
-    @scala.inline
-    def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
+    inline def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+    inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
-    @scala.inline
-    def setOnShareAppMessage(value: /* opts */ js.Any => Unit): Self = StObject.set(x, "onShareAppMessage", js.Any.fromFunction1(value))
+    inline def setOnShareAppMessage(value: /* opts */ js.Any => Unit): Self = StObject.set(x, "onShareAppMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnShareAppMessageUndefined: Self = StObject.set(x, "onShareAppMessage", js.undefined)
+    inline def setOnShareAppMessageUndefined: Self = StObject.set(x, "onShareAppMessage", js.undefined)
     
-    @scala.inline
-    def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+    inline def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    @scala.inline
-    def setOnTabItemTap(value: /* obj */ From => Unit): Self = StObject.set(x, "onTabItemTap", js.Any.fromFunction1(value))
+    inline def setOnTabItemTap(value: /* obj */ From => Unit): Self = StObject.set(x, "onTabItemTap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTabItemTapUndefined: Self = StObject.set(x, "onTabItemTap", js.undefined)
+    inline def setOnTabItemTapUndefined: Self = StObject.set(x, "onTabItemTap", js.undefined)
     
-    @scala.inline
-    def setOnTitleClick(value: () => Unit): Self = StObject.set(x, "onTitleClick", js.Any.fromFunction0(value))
+    inline def setOnTitleClick(value: () => Unit): Self = StObject.set(x, "onTitleClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnTitleClickUndefined: Self = StObject.set(x, "onTitleClick", js.undefined)
+    inline def setOnTitleClickUndefined: Self = StObject.set(x, "onTitleClick", js.undefined)
     
-    @scala.inline
-    def setOnUnload(value: () => Unit): Self = StObject.set(x, "onUnload", js.Any.fromFunction0(value))
+    inline def setOnUnload(value: () => Unit): Self = StObject.set(x, "onUnload", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnUnloadUndefined: Self = StObject.set(x, "onUnload", js.undefined)
+    inline def setOnUnloadUndefined: Self = StObject.set(x, "onUnload", js.undefined)
   }
 }

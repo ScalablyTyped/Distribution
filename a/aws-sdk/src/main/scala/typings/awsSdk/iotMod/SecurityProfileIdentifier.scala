@@ -18,19 +18,15 @@ trait SecurityProfileIdentifier extends StObject {
 }
 object SecurityProfileIdentifier {
   
-  @scala.inline
-  def apply(arn: SecurityProfileArn, name: SecurityProfileName): SecurityProfileIdentifier = {
+  inline def apply(arn: SecurityProfileArn, name: SecurityProfileName): SecurityProfileIdentifier = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityProfileIdentifier]
   }
   
-  @scala.inline
-  implicit class SecurityProfileIdentifierMutableBuilder[Self <: SecurityProfileIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityProfileIdentifier](x: Self) {
     
-    @scala.inline
-    def setArn(value: SecurityProfileArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: SecurityProfileArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: SecurityProfileName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SecurityProfileName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

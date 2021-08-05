@@ -18,25 +18,19 @@ trait ListExecutionsOutput extends StObject {
 }
 object ListExecutionsOutput {
   
-  @scala.inline
-  def apply(executions: ExecutionList): ListExecutionsOutput = {
+  inline def apply(executions: ExecutionList): ListExecutionsOutput = {
     val __obj = js.Dynamic.literal(executions = executions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListExecutionsOutput]
   }
   
-  @scala.inline
-  implicit class ListExecutionsOutputMutableBuilder[Self <: ListExecutionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListExecutionsOutput](x: Self) {
     
-    @scala.inline
-    def setExecutions(value: ExecutionList): Self = StObject.set(x, "executions", value.asInstanceOf[js.Any])
+    inline def setExecutions(value: ExecutionList): Self = StObject.set(x, "executions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionsVarargs(value: ExecutionListItem*): Self = StObject.set(x, "executions", js.Array(value :_*))
+    inline def setExecutionsVarargs(value: ExecutionListItem*): Self = StObject.set(x, "executions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: ListExecutionsPageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: ListExecutionsPageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

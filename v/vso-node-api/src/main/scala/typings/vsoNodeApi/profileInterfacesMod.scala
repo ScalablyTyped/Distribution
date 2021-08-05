@@ -47,14 +47,12 @@ object profileInterfacesMod {
     @JSImport("vso-node-api/interfaces/ProfileInterfaces", "TypeInfo.AttributeDescriptor")
     @js.native
     def AttributeDescriptor: Fields = js.native
-    @scala.inline
-    def AttributeDescriptor_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AttributeDescriptor")(x.asInstanceOf[js.Any])
+    inline def AttributeDescriptor_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AttributeDescriptor")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProfileInterfaces", "TypeInfo.AttributesContainer")
     @js.native
     def AttributesContainer: Fields = js.native
-    @scala.inline
-    def AttributesContainer_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AttributesContainer")(x.asInstanceOf[js.Any])
+    inline def AttributesContainer_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AttributesContainer")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProfileInterfaces", "TypeInfo.Avatar")
     @js.native
@@ -63,35 +61,29 @@ object profileInterfacesMod {
     @JSImport("vso-node-api/interfaces/ProfileInterfaces", "TypeInfo.AvatarSize")
     @js.native
     def AvatarSize: EnumValuesLarge = js.native
-    @scala.inline
-    def AvatarSize_=(x: EnumValuesLarge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AvatarSize")(x.asInstanceOf[js.Any])
+    inline def AvatarSize_=(x: EnumValuesLarge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AvatarSize")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Avatar_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Avatar")(x.asInstanceOf[js.Any])
+    inline def Avatar_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Avatar")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProfileInterfaces", "TypeInfo.CoreProfileAttribute")
     @js.native
     def CoreProfileAttribute: Fields = js.native
-    @scala.inline
-    def CoreProfileAttribute_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CoreProfileAttribute")(x.asInstanceOf[js.Any])
+    inline def CoreProfileAttribute_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CoreProfileAttribute")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProfileInterfaces", "TypeInfo.Country")
     @js.native
     def Country: Fields = js.native
-    @scala.inline
-    def Country_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Country")(x.asInstanceOf[js.Any])
+    inline def Country_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Country")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProfileInterfaces", "TypeInfo.CreateProfileContext")
     @js.native
     def CreateProfileContext: Fields = js.native
-    @scala.inline
-    def CreateProfileContext_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateProfileContext")(x.asInstanceOf[js.Any])
+    inline def CreateProfileContext_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateProfileContext")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProfileInterfaces", "TypeInfo.GeoRegion")
     @js.native
     def GeoRegion: Fields = js.native
-    @scala.inline
-    def GeoRegion_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GeoRegion")(x.asInstanceOf[js.Any])
+    inline def GeoRegion_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GeoRegion")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProfileInterfaces", "TypeInfo.Profile")
     @js.native
@@ -104,26 +96,21 @@ object profileInterfacesMod {
     @JSImport("vso-node-api/interfaces/ProfileInterfaces", "TypeInfo.ProfileAttributeBase")
     @js.native
     def ProfileAttributeBase: Fields = js.native
-    @scala.inline
-    def ProfileAttributeBase_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileAttributeBase")(x.asInstanceOf[js.Any])
+    inline def ProfileAttributeBase_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileAttributeBase")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def ProfileAttribute_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileAttribute")(x.asInstanceOf[js.Any])
+    inline def ProfileAttribute_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileAttribute")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProfileInterfaces", "TypeInfo.ProfileRegion")
     @js.native
     def ProfileRegion: Fields = js.native
-    @scala.inline
-    def ProfileRegion_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileRegion")(x.asInstanceOf[js.Any])
+    inline def ProfileRegion_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileRegion")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProfileInterfaces", "TypeInfo.ProfileRegions")
     @js.native
     def ProfileRegions: Fields = js.native
-    @scala.inline
-    def ProfileRegions_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileRegions")(x.asInstanceOf[js.Any])
+    inline def ProfileRegions_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileRegions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Profile_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Profile")(x.asInstanceOf[js.Any])
+    inline def Profile_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Profile")(x.asInstanceOf[js.Any])
   }
   
   trait AttributeDescriptor extends StObject {
@@ -134,20 +121,16 @@ object profileInterfacesMod {
   }
   object AttributeDescriptor {
     
-    @scala.inline
-    def apply(attributeName: String, containerName: String): AttributeDescriptor = {
+    inline def apply(attributeName: String, containerName: String): AttributeDescriptor = {
       val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], containerName = containerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeDescriptor]
     }
     
-    @scala.inline
-    implicit class AttributeDescriptorMutableBuilder[Self <: AttributeDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeDescriptor](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+      inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,23 +144,18 @@ object profileInterfacesMod {
   }
   object AttributesContainer {
     
-    @scala.inline
-    def apply(attributes: StringDictionary[ProfileAttribute], containerName: String, revision: Double): AttributesContainer = {
+    inline def apply(attributes: StringDictionary[ProfileAttribute], containerName: String, revision: Double): AttributesContainer = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], containerName = containerName.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributesContainer]
     }
     
-    @scala.inline
-    implicit class AttributesContainerMutableBuilder[Self <: AttributesContainer] (val x: Self) extends AnyVal {
+    extension [Self <: AttributesContainer](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[ProfileAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[ProfileAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+      inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,29 +171,22 @@ object profileInterfacesMod {
   }
   object Avatar {
     
-    @scala.inline
-    def apply(isAutoGenerated: Boolean, size: AvatarSize, timeStamp: Date, value: js.Array[Double]): Avatar = {
+    inline def apply(isAutoGenerated: Boolean, size: AvatarSize, timeStamp: Date, value: js.Array[Double]): Avatar = {
       val __obj = js.Dynamic.literal(isAutoGenerated = isAutoGenerated.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Avatar]
     }
     
-    @scala.inline
-    implicit class AvatarMutableBuilder[Self <: Avatar] (val x: Self) extends AnyVal {
+    extension [Self <: Avatar](x: Self) {
       
-      @scala.inline
-      def setIsAutoGenerated(value: Boolean): Self = StObject.set(x, "isAutoGenerated", value.asInstanceOf[js.Any])
+      inline def setIsAutoGenerated(value: Boolean): Self = StObject.set(x, "isAutoGenerated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: AvatarSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: AvatarSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -229,20 +200,16 @@ object profileInterfacesMod {
   }
   object Country {
     
-    @scala.inline
-    def apply(code: String, englishName: String): Country = {
+    inline def apply(code: String, englishName: String): Country = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], englishName = englishName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Country]
     }
     
-    @scala.inline
-    implicit class CountryMutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
+    extension [Self <: Country](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnglishName(value: String): Self = StObject.set(x, "englishName", value.asInstanceOf[js.Any])
+      inline def setEnglishName(value: String): Self = StObject.set(x, "englishName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -266,8 +233,7 @@ object profileInterfacesMod {
   }
   object CreateProfileContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cIData: StringDictionary[js.Any],
       contactWithOffers: Boolean,
       countryName: String,
@@ -281,32 +247,23 @@ object profileInterfacesMod {
       __obj.asInstanceOf[CreateProfileContext]
     }
     
-    @scala.inline
-    implicit class CreateProfileContextMutableBuilder[Self <: CreateProfileContext] (val x: Self) extends AnyVal {
+    extension [Self <: CreateProfileContext](x: Self) {
       
-      @scala.inline
-      def setCIData(value: StringDictionary[js.Any]): Self = StObject.set(x, "cIData", value.asInstanceOf[js.Any])
+      inline def setCIData(value: StringDictionary[js.Any]): Self = StObject.set(x, "cIData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContactWithOffers(value: Boolean): Self = StObject.set(x, "contactWithOffers", value.asInstanceOf[js.Any])
+      inline def setContactWithOffers(value: Boolean): Self = StObject.set(x, "contactWithOffers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryName(value: String): Self = StObject.set(x, "countryName", value.asInstanceOf[js.Any])
+      inline def setCountryName(value: String): Self = StObject.set(x, "countryName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+      inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasAccount(value: Boolean): Self = StObject.set(x, "hasAccount", value.asInstanceOf[js.Any])
+      inline def setHasAccount(value: Boolean): Self = StObject.set(x, "hasAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+      inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     }
   }
   
@@ -316,17 +273,14 @@ object profileInterfacesMod {
   }
   object GeoRegion {
     
-    @scala.inline
-    def apply(regionCode: String): GeoRegion = {
+    inline def apply(regionCode: String): GeoRegion = {
       val __obj = js.Dynamic.literal(regionCode = regionCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeoRegion]
     }
     
-    @scala.inline
-    implicit class GeoRegionMutableBuilder[Self <: GeoRegion] (val x: Self) extends AnyVal {
+    extension [Self <: GeoRegion](x: Self) {
       
-      @scala.inline
-      def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
+      inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -346,8 +300,7 @@ object profileInterfacesMod {
   }
   object Profile {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       applicationContainer: AttributesContainer,
       coreAttributes: StringDictionary[CoreProfileAttribute],
       coreRevision: Double,
@@ -359,26 +312,19 @@ object profileInterfacesMod {
       __obj.asInstanceOf[Profile]
     }
     
-    @scala.inline
-    implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
+    extension [Self <: Profile](x: Self) {
       
-      @scala.inline
-      def setApplicationContainer(value: AttributesContainer): Self = StObject.set(x, "applicationContainer", value.asInstanceOf[js.Any])
+      inline def setApplicationContainer(value: AttributesContainer): Self = StObject.set(x, "applicationContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoreAttributes(value: StringDictionary[CoreProfileAttribute]): Self = StObject.set(x, "coreAttributes", value.asInstanceOf[js.Any])
+      inline def setCoreAttributes(value: StringDictionary[CoreProfileAttribute]): Self = StObject.set(x, "coreAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoreRevision(value: Double): Self = StObject.set(x, "coreRevision", value.asInstanceOf[js.Any])
+      inline def setCoreRevision(value: Double): Self = StObject.set(x, "coreRevision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -396,26 +342,20 @@ object profileInterfacesMod {
   }
   object ProfileAttributeBase {
     
-    @scala.inline
-    def apply[T](descriptor: AttributeDescriptor, revision: Double, timeStamp: Date, value: T): ProfileAttributeBase[T] = {
+    inline def apply[T](descriptor: AttributeDescriptor, revision: Double, timeStamp: Date, value: T): ProfileAttributeBase[T] = {
       val __obj = js.Dynamic.literal(descriptor = descriptor.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProfileAttributeBase[T]]
     }
     
-    @scala.inline
-    implicit class ProfileAttributeBaseMutableBuilder[Self <: ProfileAttributeBase[?], T] (val x: Self & ProfileAttributeBase[T]) extends AnyVal {
+    extension [Self <: ProfileAttributeBase[?], T](x: Self & ProfileAttributeBase[T]) {
       
-      @scala.inline
-      def setDescriptor(value: AttributeDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
+      inline def setDescriptor(value: AttributeDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -433,20 +373,16 @@ object profileInterfacesMod {
   }
   object ProfileRegion {
     
-    @scala.inline
-    def apply(code: String, name: String): ProfileRegion = {
+    inline def apply(code: String, name: String): ProfileRegion = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProfileRegion]
     }
     
-    @scala.inline
-    implicit class ProfileRegionMutableBuilder[Self <: ProfileRegion] (val x: Self) extends AnyVal {
+    extension [Self <: ProfileRegion](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -469,8 +405,7 @@ object profileInterfacesMod {
   }
   object ProfileRegions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       noticeContactConsentRequirementRegions: js.Array[String],
       optOutContactConsentRequirementRegions: js.Array[String],
       regions: js.Array[ProfileRegion]
@@ -479,26 +414,19 @@ object profileInterfacesMod {
       __obj.asInstanceOf[ProfileRegions]
     }
     
-    @scala.inline
-    implicit class ProfileRegionsMutableBuilder[Self <: ProfileRegions] (val x: Self) extends AnyVal {
+    extension [Self <: ProfileRegions](x: Self) {
       
-      @scala.inline
-      def setNoticeContactConsentRequirementRegions(value: js.Array[String]): Self = StObject.set(x, "noticeContactConsentRequirementRegions", value.asInstanceOf[js.Any])
+      inline def setNoticeContactConsentRequirementRegions(value: js.Array[String]): Self = StObject.set(x, "noticeContactConsentRequirementRegions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoticeContactConsentRequirementRegionsVarargs(value: String*): Self = StObject.set(x, "noticeContactConsentRequirementRegions", js.Array(value :_*))
+      inline def setNoticeContactConsentRequirementRegionsVarargs(value: String*): Self = StObject.set(x, "noticeContactConsentRequirementRegions", js.Array(value :_*))
       
-      @scala.inline
-      def setOptOutContactConsentRequirementRegions(value: js.Array[String]): Self = StObject.set(x, "optOutContactConsentRequirementRegions", value.asInstanceOf[js.Any])
+      inline def setOptOutContactConsentRequirementRegions(value: js.Array[String]): Self = StObject.set(x, "optOutContactConsentRequirementRegions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptOutContactConsentRequirementRegionsVarargs(value: String*): Self = StObject.set(x, "optOutContactConsentRequirementRegions", js.Array(value :_*))
+      inline def setOptOutContactConsentRequirementRegionsVarargs(value: String*): Self = StObject.set(x, "optOutContactConsentRequirementRegions", js.Array(value :_*))
       
-      @scala.inline
-      def setRegions(value: js.Array[ProfileRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      inline def setRegions(value: js.Array[ProfileRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionsVarargs(value: ProfileRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: ProfileRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
     }
   }
 }

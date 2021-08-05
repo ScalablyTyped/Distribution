@@ -12,16 +12,13 @@ trait WebViewContext extends StObject {
 }
 object WebViewContext {
   
-  @scala.inline
-  def apply(postMessage: js.Any => Unit): WebViewContext = {
+  inline def apply(postMessage: js.Any => Unit): WebViewContext = {
     val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction1(postMessage))
     __obj.asInstanceOf[WebViewContext]
   }
   
-  @scala.inline
-  implicit class WebViewContextMutableBuilder[Self <: WebViewContext] (val x: Self) extends AnyVal {
+  extension [Self <: WebViewContext](x: Self) {
     
-    @scala.inline
-    def setPostMessage(value: js.Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
+    inline def setPostMessage(value: js.Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
   }
 }

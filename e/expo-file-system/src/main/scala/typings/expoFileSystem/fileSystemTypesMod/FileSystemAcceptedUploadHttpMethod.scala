@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileSystemAcceptedUploadHttpMethod extends StObject
 object FileSystemAcceptedUploadHttpMethod {
   
-  @scala.inline
-  def PATCH: typings.expoFileSystem.expoFileSystemStrings.PATCH = "PATCH".asInstanceOf[typings.expoFileSystem.expoFileSystemStrings.PATCH]
+  inline def PATCH: typings.expoFileSystem.expoFileSystemStrings.PATCH = "PATCH".asInstanceOf[typings.expoFileSystem.expoFileSystemStrings.PATCH]
   
-  @scala.inline
-  def POST: typings.expoFileSystem.expoFileSystemStrings.POST = "POST".asInstanceOf[typings.expoFileSystem.expoFileSystemStrings.POST]
+  inline def POST: typings.expoFileSystem.expoFileSystemStrings.POST = "POST".asInstanceOf[typings.expoFileSystem.expoFileSystemStrings.POST]
   
-  @scala.inline
-  def PUT: typings.expoFileSystem.expoFileSystemStrings.PUT = "PUT".asInstanceOf[typings.expoFileSystem.expoFileSystemStrings.PUT]
+  inline def PUT: typings.expoFileSystem.expoFileSystemStrings.PUT = "PUT".asInstanceOf[typings.expoFileSystem.expoFileSystemStrings.PUT]
 }

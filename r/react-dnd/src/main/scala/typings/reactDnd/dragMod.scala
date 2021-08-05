@@ -15,13 +15,11 @@ object dragMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useDragHandler[DragObject /* <: DragObjectWithType */, DropResult, CustomProps](
+  inline def useDragHandler[DragObject /* <: DragObjectWithType */, DropResult, CustomProps](
     spec: MutableRefObject[DragSourceHookSpec[DragObject, DropResult, CustomProps]],
     monitor: DragSourceMonitor,
     connector: js.Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useDragHandler")(spec.asInstanceOf[js.Any], monitor.asInstanceOf[js.Any], connector.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def useDragSourceMonitor(): js.Tuple2[DragSourceMonitor, SourceConnector] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDragSourceMonitor")().asInstanceOf[js.Tuple2[DragSourceMonitor, SourceConnector]]
+  inline def useDragSourceMonitor(): js.Tuple2[DragSourceMonitor, SourceConnector] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDragSourceMonitor")().asInstanceOf[js.Tuple2[DragSourceMonitor, SourceConnector]]
 }

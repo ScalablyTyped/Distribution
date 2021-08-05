@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Failure[A](e: Error): Try[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("Failure")(e.asInstanceOf[js.Any]).asInstanceOf[Try[A]]
+  inline def Failure[A](e: Error): Try[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("Failure")(e.asInstanceOf[js.Any]).asInstanceOf[Try[A]]
   
   trait Future[A] extends StObject {
     
@@ -60,115 +59,80 @@ object mod {
   }
   object Future {
     
-    @scala.inline
-    def apply[A](f: js.Function0[A]): Future[A] = ^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
-    @scala.inline
-    def apply[A](f: js.Promise[A]): Future[A] = ^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    inline def apply[A](f: js.Function0[A]): Future[A] = ^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    inline def apply[A](f: js.Promise[A]): Future[A] = ^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
     
     @JSImport("scalike", "Future")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def failed[A](e: Error): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("failed")(e.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    inline def failed[A](e: Error): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("failed")(e.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
     
-    @scala.inline
-    def find[A](fus: js.Array[Future[A]], f: js.Function1[/* a */ A, Boolean]): Future[Optional[A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(fus.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Future[Optional[A]]]
+    inline def find[A](fus: js.Array[Future[A]], f: js.Function1[/* a */ A, Boolean]): Future[Optional[A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(fus.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Future[Optional[A]]]
     
-    @scala.inline
-    def firstCompletedOf[A](fus: js.Array[Future[A]]): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("firstCompletedOf")(fus.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    inline def firstCompletedOf[A](fus: js.Array[Future[A]]): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("firstCompletedOf")(fus.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
     
-    @scala.inline
-    def foldLeft[A, B](fu: js.Array[Future[A]], zero: B, f: js.Function2[/* b */ B, /* a */ A, B]): Future[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLeft")(fu.asInstanceOf[js.Any], zero.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Future[B]]
+    inline def foldLeft[A, B](fu: js.Array[Future[A]], zero: B, f: js.Function2[/* b */ B, /* a */ A, B]): Future[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLeft")(fu.asInstanceOf[js.Any], zero.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Future[B]]
     
-    @scala.inline
-    def fromPromise[A](p: js.Promise[A]): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(p.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    inline def fromPromise[A](p: js.Promise[A]): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(p.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
     
-    @scala.inline
-    def fromTry[A](t: Try[A]): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTry")(t.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    inline def fromTry[A](t: Try[A]): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTry")(t.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
     
-    @scala.inline
-    def reduceLeft[A, B](fu: js.Array[Future[A]], f: js.Function2[/* b */ B, /* a */ A, B]): Future[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceLeft")(fu.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Future[B]]
+    inline def reduceLeft[A, B](fu: js.Array[Future[A]], f: js.Function2[/* b */ B, /* a */ A, B]): Future[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceLeft")(fu.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Future[B]]
     
-    @scala.inline
-    def sequence[A](fus: js.Array[Future[A]]): Future[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(fus.asInstanceOf[js.Any]).asInstanceOf[Future[js.Array[A]]]
+    inline def sequence[A](fus: js.Array[Future[A]]): Future[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(fus.asInstanceOf[js.Any]).asInstanceOf[Future[js.Array[A]]]
     
-    @scala.inline
-    def successful[A](a: A): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("successful")(a.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
+    inline def successful[A](a: A): Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("successful")(a.asInstanceOf[js.Any]).asInstanceOf[Future[A]]
     
-    @scala.inline
-    def traverse[A, B](fu: js.Array[A], f: js.Function1[/* a */ A, Future[B]]): Future[js.Array[B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(fu.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Future[js.Array[B]]]
+    inline def traverse[A, B](fu: js.Array[A], f: js.Function1[/* a */ A, Future[B]]): Future[js.Array[B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(fu.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Future[js.Array[B]]]
     
-    @scala.inline
-    def unit(): Future[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unit")().asInstanceOf[Future[Unit]]
+    inline def unit(): Future[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unit")().asInstanceOf[Future[Unit]]
     
-    @scala.inline
-    implicit class FutureMutableBuilder[Self <: Future[?], A] (val x: Self & Future[A]) extends AnyVal {
+    extension [Self <: Future[?], A](x: Self & Future[A]) {
       
-      @scala.inline
-      def setAndThen(value: js.Function1[/* t */ Try[A], js.Any] => Future[A]): Self = StObject.set(x, "andThen", js.Any.fromFunction1(value))
+      inline def setAndThen(value: js.Function1[/* t */ Try[A], js.Any] => Future[A]): Self = StObject.set(x, "andThen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setApply1(value: (Future[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Future[js.Any]): Self = StObject.set(x, "apply1", js.Any.fromFunction2(value))
+      inline def setApply1(value: (Future[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Future[js.Any]): Self = StObject.set(x, "apply1", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setApply2(
+      inline def setApply2(
         value: (Future[js.Any], Future[js.Any], js.Function3[/* a */ A, js.Any, js.Any, js.Any]) => Future[js.Any]
       ): Self = StObject.set(x, "apply2", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setChain(value: Future[js.Any] => FutureBuilder1[A, js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
+      inline def setChain(value: Future[js.Any] => FutureBuilder1[A, js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFailed(value: () => Future[Error]): Self = StObject.set(x, "failed", js.Any.fromFunction0(value))
+      inline def setFailed(value: () => Future[Error]): Self = StObject.set(x, "failed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFallbackTo(value: Future[js.Any] => Future[A]): Self = StObject.set(x, "fallbackTo", js.Any.fromFunction1(value))
+      inline def setFallbackTo(value: Future[js.Any] => Future[A]): Self = StObject.set(x, "fallbackTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilter(value: js.Function1[/* a */ A, Boolean] => Future[A]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: js.Function1[/* a */ A, Boolean] => Future[A]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlatMap(value: js.Function1[/* a */ A, Future[js.Any]] => Future[js.Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
+      inline def setFlatMap(value: js.Function1[/* a */ A, Future[js.Any]] => Future[js.Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForeach(value: js.Function1[/* a */ A, js.Any] => Unit): Self = StObject.set(x, "foreach", js.Any.fromFunction1(value))
+      inline def setForeach(value: js.Function1[/* a */ A, js.Any] => Unit): Self = StObject.set(x, "foreach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPromise(value: () => js.Promise[A]): Self = StObject.set(x, "getPromise", js.Any.fromFunction0(value))
+      inline def setGetPromise(value: () => js.Promise[A]): Self = StObject.set(x, "getPromise", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCompleted(value: () => Boolean): Self = StObject.set(x, "isCompleted", js.Any.fromFunction0(value))
+      inline def setIsCompleted(value: () => Boolean): Self = StObject.set(x, "isCompleted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMap(value: js.Function1[/* a */ A, js.Any] => Future[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[/* a */ A, js.Any] => Future[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnComplete(value: js.Function1[/* t */ Try[A], js.Any] => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: js.Function1[/* t */ Try[A], js.Any] => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRecover(value: js.Function1[/* e */ Error, Optional[js.Any]] => Future[A]): Self = StObject.set(x, "recover", js.Any.fromFunction1(value))
+      inline def setRecover(value: js.Function1[/* e */ Error, Optional[js.Any]] => Future[A]): Self = StObject.set(x, "recover", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRecoverWith(value: js.Function1[/* e */ Error, Optional[Future[js.Any]]] => Future[A]): Self = StObject.set(x, "recoverWith", js.Any.fromFunction1(value))
+      inline def setRecoverWith(value: js.Function1[/* e */ Error, Optional[Future[js.Any]]] => Future[A]): Self = StObject.set(x, "recoverWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransform(value: js.Function1[/* t */ Try[A], Try[js.Any]] => Future[js.Any]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: js.Function1[/* t */ Try[A], Try[js.Any]] => Future[js.Any]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransform1(value: (js.Function1[/* a */ A, js.Any], js.Function1[/* e */ Error, Error]) => Future[js.Any]): Self = StObject.set(x, "transform1", js.Any.fromFunction2(value))
+      inline def setTransform1(value: (js.Function1[/* a */ A, js.Any], js.Function1[/* e */ Error, Error]) => Future[js.Any]): Self = StObject.set(x, "transform1", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransformWith(value: js.Function1[/* t */ Try[A], Future[js.Any]] => Future[js.Any]): Self = StObject.set(x, "transformWith", js.Any.fromFunction1(value))
+      inline def setTransformWith(value: js.Function1[/* t */ Try[A], Future[js.Any]] => Future[js.Any]): Self = StObject.set(x, "transformWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValue(value: () => Optional[Try[A]]): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+      inline def setValue(value: () => Optional[Try[A]]): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setZip(value: Future[js.Any] => Future[js.Tuple2[A, js.Any]]): Self = StObject.set(x, "zip", js.Any.fromFunction1(value))
+      inline def setZip(value: Future[js.Any] => Future[js.Tuple2[A, js.Any]]): Self = StObject.set(x, "zip", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZipWith(value: (Future[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Future[js.Any]): Self = StObject.set(x, "zipWith", js.Any.fromFunction2(value))
+      inline def setZipWith(value: (Future[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Future[js.Any]): Self = StObject.set(x, "zipWith", js.Any.fromFunction2(value))
     }
   }
   
@@ -179,9 +143,9 @@ object mod {
     
     def chain[C](oc: Future[C]): FutureBuilder2[A, B, C] = js.native
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
     def run[C](f: js.Function2[/* a */ A, /* b */ B, C]): Future[C] = js.native
   }
@@ -193,11 +157,11 @@ object mod {
     
     def chain[D](od: Future[D]): FutureBuilder3[A, B, C, D] = js.native
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
-    var oc: js.Any = js.native
+    /* private */ var oc: js.Any = js.native
     
     def run[D](f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Future[D] = js.native
   }
@@ -209,13 +173,13 @@ object mod {
     
     def chain[E](oe: Future[E]): FutureBuilder4[A, B, C, D, E] = js.native
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
-    var oc: js.Any = js.native
+    /* private */ var oc: js.Any = js.native
     
-    var od: js.Any = js.native
+    /* private */ var od: js.Any = js.native
     
     def run[E](f: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, E]): Future[E] = js.native
   }
@@ -227,15 +191,15 @@ object mod {
     
     def chain[F](of: Future[F]): FutureBuilder5[A, B, C, D, E, F] = js.native
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
-    var oc: js.Any = js.native
+    /* private */ var oc: js.Any = js.native
     
-    var od: js.Any = js.native
+    /* private */ var od: js.Any = js.native
     
-    var oe: js.Any = js.native
+    /* private */ var oe: js.Any = js.native
     
     def run[F](f: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, F]): Future[F] = js.native
   }
@@ -245,23 +209,22 @@ object mod {
   class FutureBuilder5[A, B, C, D, E, F] protected () extends StObject {
     def this(oa: Future[A], ob: Future[B], oc: Future[C], od: Future[D], oe: Future[E], of: Future[F]) = this()
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
-    var oc: js.Any = js.native
+    /* private */ var oc: js.Any = js.native
     
-    var od: js.Any = js.native
+    /* private */ var od: js.Any = js.native
     
-    var oe: js.Any = js.native
+    /* private */ var oe: js.Any = js.native
     
-    var of: js.Any = js.native
+    /* private */ var of: js.Any = js.native
     
     def run[G](f: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, G]): Future[G] = js.native
   }
   
-  @scala.inline
-  def Left[A, B](a: A): Either[A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("Left")(a.asInstanceOf[js.Any]).asInstanceOf[Either[A, B]]
+  inline def Left[A, B](a: A): Either[A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("Left")(a.asInstanceOf[js.Any]).asInstanceOf[Either[A, B]]
   
   @JSImport("scalike", "LeftProjection")
   @js.native
@@ -284,7 +247,7 @@ object mod {
     
     def map[X](f: js.Function1[/* a */ A, X]): Either[X | A, B] = js.native
     
-    var self: js.Any = js.native
+    /* private */ var self: js.Any = js.native
     
     def toOptional(): Optional[A] = js.native
   }
@@ -335,61 +298,43 @@ object mod {
     @js.native
     def apply[A](a: A): Optional[A] = js.native
     
-    @scala.inline
-    implicit class OptionalMutableBuilder[Self <: Optional[?], A] (val x: Self & Optional[A]) extends AnyVal {
+    extension [Self <: Optional[?], A](x: Self & Optional[A]) {
       
-      @scala.inline
-      def setApply1(value: (Optional[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Optional[js.Any]): Self = StObject.set(x, "apply1", js.Any.fromFunction2(value))
+      inline def setApply1(value: (Optional[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Optional[js.Any]): Self = StObject.set(x, "apply1", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setApply2(
+      inline def setApply2(
         value: (Optional[js.Any], Optional[js.Any], js.Function3[/* a */ A, js.Any, js.Any, js.Any]) => Optional[js.Any]
       ): Self = StObject.set(x, "apply2", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setChain(value: Optional[js.Any] => OptionalBuilder1[A, js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
+      inline def setChain(value: Optional[js.Any] => OptionalBuilder1[A, js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContains(value: js.Any => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: js.Any => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExists(value: js.Function1[/* a */ A, Boolean] => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
+      inline def setExists(value: js.Function1[/* a */ A, Boolean] => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilter(value: js.Function1[/* a */ A, Boolean] => Optional[A]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: js.Function1[/* a */ A, Boolean] => Optional[A]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlatMap(value: js.Function1[/* a */ A, Optional[js.Any]] => Optional[js.Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
+      inline def setFlatMap(value: js.Function1[/* a */ A, Optional[js.Any]] => Optional[js.Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlatten(value: () => Optional[A]): Self = StObject.set(x, "flatten", js.Any.fromFunction0(value))
+      inline def setFlatten(value: () => Optional[A]): Self = StObject.set(x, "flatten", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFold(value: (js.Any, js.Function1[/* a */ A, js.Any]) => js.Any): Self = StObject.set(x, "fold", js.Any.fromFunction2(value))
+      inline def setFold(value: (js.Any, js.Function1[/* a */ A, js.Any]) => js.Any): Self = StObject.set(x, "fold", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setForall(value: js.Function1[/* a */ A, Boolean] => Boolean): Self = StObject.set(x, "forall", js.Any.fromFunction1(value))
+      inline def setForall(value: js.Function1[/* a */ A, Boolean] => Boolean): Self = StObject.set(x, "forall", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForeach(value: js.Function1[/* a */ A, Unit] => Unit): Self = StObject.set(x, "foreach", js.Any.fromFunction1(value))
+      inline def setForeach(value: js.Function1[/* a */ A, Unit] => Unit): Self = StObject.set(x, "foreach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: () => A): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => A): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOrElse(value: js.Any => A): Self = StObject.set(x, "getOrElse", js.Any.fromFunction1(value))
+      inline def setGetOrElse(value: js.Any => A): Self = StObject.set(x, "getOrElse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+      inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: js.Function1[/* a */ A, js.Any] => Optional[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[/* a */ A, js.Any] => Optional[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNonEmpty(value: Boolean): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
+      inline def setNonEmpty(value: Boolean): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrElse(value: Optional[js.Any] => Optional[A]): Self = StObject.set(x, "orElse", js.Any.fromFunction1(value))
+      inline def setOrElse(value: Optional[js.Any] => Optional[A]): Self = StObject.set(x, "orElse", js.Any.fromFunction1(value))
     }
   }
   
@@ -400,9 +345,9 @@ object mod {
     
     def chain[C](oc: Optional[C]): OptionalBuilder2[A, B, C] = js.native
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
     def run[C](f: js.Function2[/* a */ A, /* b */ B, C]): Optional[C] = js.native
   }
@@ -414,11 +359,11 @@ object mod {
     
     def chain[D](od: Optional[D]): OptionalBuilder3[A, B, C, D] = js.native
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
-    var oc: js.Any = js.native
+    /* private */ var oc: js.Any = js.native
     
     def run[D](f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Optional[D] = js.native
   }
@@ -430,13 +375,13 @@ object mod {
     
     def chain[E](oe: Optional[E]): OptionalBuilder4[A, B, C, D, E] = js.native
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
-    var oc: js.Any = js.native
+    /* private */ var oc: js.Any = js.native
     
-    var od: js.Any = js.native
+    /* private */ var od: js.Any = js.native
     
     def run[E](f: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, E]): Optional[E] = js.native
   }
@@ -448,15 +393,15 @@ object mod {
     
     def chain[F](of: Optional[F]): OptionalBuilder5[A, B, C, D, E, F] = js.native
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
-    var oc: js.Any = js.native
+    /* private */ var oc: js.Any = js.native
     
-    var od: js.Any = js.native
+    /* private */ var od: js.Any = js.native
     
-    var oe: js.Any = js.native
+    /* private */ var oe: js.Any = js.native
     
     def run[F](f: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, F]): Optional[F] = js.native
   }
@@ -473,23 +418,22 @@ object mod {
       of: Optional[F]
     ) = this()
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
-    var oc: js.Any = js.native
+    /* private */ var oc: js.Any = js.native
     
-    var od: js.Any = js.native
+    /* private */ var od: js.Any = js.native
     
-    var oe: js.Any = js.native
+    /* private */ var oe: js.Any = js.native
     
-    var of: js.Any = js.native
+    /* private */ var of: js.Any = js.native
     
     def run[G](f: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, G]): Optional[G] = js.native
   }
   
-  @scala.inline
-  def Right[A, B](b: B): Either[A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("Right")(b.asInstanceOf[js.Any]).asInstanceOf[Either[A, B]]
+  inline def Right[A, B](b: B): Either[A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("Right")(b.asInstanceOf[js.Any]).asInstanceOf[Either[A, B]]
   
   @JSImport("scalike", "RightProjection")
   @js.native
@@ -512,16 +456,14 @@ object mod {
     
     def map[X](f: js.Function1[/* b */ B, X]): Either[A, X | B] = js.native
     
-    var self: js.Any = js.native
+    /* private */ var self: js.Any = js.native
     
     def toOptional(): Optional[B] = js.native
   }
   
-  @scala.inline
-  def Some[A](a: A): Optional[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("Some")(a.asInstanceOf[js.Any]).asInstanceOf[Optional[A]]
+  inline def Some[A](a: A): Optional[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("Some")(a.asInstanceOf[js.Any]).asInstanceOf[Optional[A]]
   
-  @scala.inline
-  def Success[A](a: A): Try[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("Success")(a.asInstanceOf[js.Any]).asInstanceOf[Try[A]]
+  inline def Success[A](a: A): Try[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("Success")(a.asInstanceOf[js.Any]).asInstanceOf[Try[A]]
   
   trait Try[A] extends StObject {
     
@@ -567,62 +509,43 @@ object mod {
     @js.native
     def apply[A](f: js.Function0[A]): Try[A] = js.native
     
-    @scala.inline
-    implicit class TryMutableBuilder[Self <: Try[?], A] (val x: Self & Try[A]) extends AnyVal {
+    extension [Self <: Try[?], A](x: Self & Try[A]) {
       
-      @scala.inline
-      def setApply1(value: (Try[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Try[js.Any]): Self = StObject.set(x, "apply1", js.Any.fromFunction2(value))
+      inline def setApply1(value: (Try[js.Any], js.Function2[/* a */ A, js.Any, js.Any]) => Try[js.Any]): Self = StObject.set(x, "apply1", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setApply2(value: (Try[js.Any], Try[js.Any], js.Function3[/* a */ A, js.Any, js.Any, js.Any]) => Try[js.Any]): Self = StObject.set(x, "apply2", js.Any.fromFunction3(value))
+      inline def setApply2(value: (Try[js.Any], Try[js.Any], js.Function3[/* a */ A, js.Any, js.Any, js.Any]) => Try[js.Any]): Self = StObject.set(x, "apply2", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setChain(value: Try[js.Any] => TryBuilder1[A, js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
+      inline def setChain(value: Try[js.Any] => TryBuilder1[A, js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFailed(value: () => Try[A]): Self = StObject.set(x, "failed", js.Any.fromFunction0(value))
+      inline def setFailed(value: () => Try[A]): Self = StObject.set(x, "failed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFilter(value: js.Function1[/* a */ A, Boolean] => Try[A]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: js.Function1[/* a */ A, Boolean] => Try[A]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlatMap(value: js.Function1[/* a */ A, Try[js.Any]] => Try[js.Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
+      inline def setFlatMap(value: js.Function1[/* a */ A, Try[js.Any]] => Try[js.Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFold(value: (js.Function1[/* e */ Error, js.Any], js.Function1[/* a */ A, js.Any]) => js.Any): Self = StObject.set(x, "fold", js.Any.fromFunction2(value))
+      inline def setFold(value: (js.Function1[/* e */ Error, js.Any], js.Function1[/* a */ A, js.Any]) => js.Any): Self = StObject.set(x, "fold", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setForeach(value: js.Function1[/* a */ A, Unit] => Unit): Self = StObject.set(x, "foreach", js.Any.fromFunction1(value))
+      inline def setForeach(value: js.Function1[/* a */ A, Unit] => Unit): Self = StObject.set(x, "foreach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: () => A): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => A): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetError(value: () => Error): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
+      inline def setGetError(value: () => Error): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOrElse(value: js.Any => A): Self = StObject.set(x, "getOrElse", js.Any.fromFunction1(value))
+      inline def setGetOrElse(value: js.Any => A): Self = StObject.set(x, "getOrElse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsFailure(value: Boolean): Self = StObject.set(x, "isFailure", value.asInstanceOf[js.Any])
+      inline def setIsFailure(value: Boolean): Self = StObject.set(x, "isFailure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSuccess(value: Boolean): Self = StObject.set(x, "isSuccess", value.asInstanceOf[js.Any])
+      inline def setIsSuccess(value: Boolean): Self = StObject.set(x, "isSuccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: js.Function1[/* a */ A, js.Any] => Try[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[/* a */ A, js.Any] => Try[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrElse(value: Try[js.Any] => Try[A]): Self = StObject.set(x, "orElse", js.Any.fromFunction1(value))
+      inline def setOrElse(value: Try[js.Any] => Try[A]): Self = StObject.set(x, "orElse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRecover(value: js.Function1[/* e */ Error, Optional[Try[js.Any]]] => Try[A]): Self = StObject.set(x, "recover", js.Any.fromFunction1(value))
+      inline def setRecover(value: js.Function1[/* e */ Error, Optional[Try[js.Any]]] => Try[A]): Self = StObject.set(x, "recover", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToOptional(value: () => Optional[A]): Self = StObject.set(x, "toOptional", js.Any.fromFunction0(value))
+      inline def setToOptional(value: () => Optional[A]): Self = StObject.set(x, "toOptional", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTransform(
+      inline def setTransform(
         value: (js.Function1[/* a */ A, Try[js.Any]], js.Function1[/* e */ Error, Try[js.Any]]) => Try[js.Any]
       ): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
     }
@@ -635,9 +558,9 @@ object mod {
     
     def chain[C](oc: Try[C]): TryBuilder2[A, B, C] = js.native
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
     def run[C](f: js.Function2[/* a */ A, /* b */ B, C]): Try[C] = js.native
   }
@@ -649,11 +572,11 @@ object mod {
     
     def chain[D](od: Try[D]): TryBuilder3[A, B, C, D] = js.native
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
-    var oc: js.Any = js.native
+    /* private */ var oc: js.Any = js.native
     
     def run[D](f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Try[D] = js.native
   }
@@ -665,13 +588,13 @@ object mod {
     
     def chain[E](oe: Try[E]): TryBuilder4[A, B, C, D, E] = js.native
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
-    var oc: js.Any = js.native
+    /* private */ var oc: js.Any = js.native
     
-    var od: js.Any = js.native
+    /* private */ var od: js.Any = js.native
     
     def run[E](f: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, E]): Try[E] = js.native
   }
@@ -683,15 +606,15 @@ object mod {
     
     def chain[F](of: Try[F]): TryBuilder5[A, B, C, D, E, F] = js.native
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
-    var oc: js.Any = js.native
+    /* private */ var oc: js.Any = js.native
     
-    var od: js.Any = js.native
+    /* private */ var od: js.Any = js.native
     
-    var oe: js.Any = js.native
+    /* private */ var oe: js.Any = js.native
     
     def run[F](f: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, F]): Try[F] = js.native
   }
@@ -701,17 +624,17 @@ object mod {
   class TryBuilder5[A, B, C, D, E, F] protected () extends StObject {
     def this(oa: Try[A], ob: Try[B], oc: Try[C], od: Try[D], oe: Try[E], of: Try[F]) = this()
     
-    var oa: js.Any = js.native
+    /* private */ var oa: js.Any = js.native
     
-    var ob: js.Any = js.native
+    /* private */ var ob: js.Any = js.native
     
-    var oc: js.Any = js.native
+    /* private */ var oc: js.Any = js.native
     
-    var od: js.Any = js.native
+    /* private */ var od: js.Any = js.native
     
-    var oe: js.Any = js.native
+    /* private */ var oe: js.Any = js.native
     
-    var of: js.Any = js.native
+    /* private */ var of: js.Any = js.native
     
     def run[G](f: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, G]): Try[G] = js.native
   }
@@ -734,8 +657,7 @@ object mod {
   }
   object Either {
     
-    @scala.inline
-    def apply[A, B](
+    inline def apply[A, B](
       fold: (js.Function1[/* a */ A, js.Any], js.Function1[/* b */ B, js.Any]) => js.Any,
       isLeft: Boolean,
       isRight: Boolean,
@@ -748,29 +670,21 @@ object mod {
       __obj.asInstanceOf[Either[A, B]]
     }
     
-    @scala.inline
-    implicit class EitherMutableBuilder[Self <: Either[?, ?], A, B] (val x: Self & (Either[A, B])) extends AnyVal {
+    extension [Self <: Either[?, ?], A, B](x: Self & (Either[A, B])) {
       
-      @scala.inline
-      def setFold(value: (js.Function1[/* a */ A, js.Any], js.Function1[/* b */ B, js.Any]) => js.Any): Self = StObject.set(x, "fold", js.Any.fromFunction2(value))
+      inline def setFold(value: (js.Function1[/* a */ A, js.Any], js.Function1[/* b */ B, js.Any]) => js.Any): Self = StObject.set(x, "fold", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsLeft(value: Boolean): Self = StObject.set(x, "isLeft", value.asInstanceOf[js.Any])
+      inline def setIsLeft(value: Boolean): Self = StObject.set(x, "isLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRight(value: Boolean): Self = StObject.set(x, "isRight", value.asInstanceOf[js.Any])
+      inline def setIsRight(value: Boolean): Self = StObject.set(x, "isRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: () => LeftProjection[A, B]): Self = StObject.set(x, "left", js.Any.fromFunction0(value))
+      inline def setLeft(value: () => LeftProjection[A, B]): Self = StObject.set(x, "left", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRight(value: () => RightProjection[A, B]): Self = StObject.set(x, "right", js.Any.fromFunction0(value))
+      inline def setRight(value: () => RightProjection[A, B]): Self = StObject.set(x, "right", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSwap(value: () => Either[B, A]): Self = StObject.set(x, "swap", js.Any.fromFunction0(value))
+      inline def setSwap(value: () => Either[B, A]): Self = StObject.set(x, "swap", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValue(value: A | B): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: A | B): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

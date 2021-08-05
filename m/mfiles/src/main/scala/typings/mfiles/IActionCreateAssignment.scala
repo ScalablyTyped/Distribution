@@ -22,8 +22,7 @@ trait IActionCreateAssignment extends StObject {
 }
 object IActionCreateAssignment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AssignedTo: IUserOrUserGroupIDExs,
     Clone: () => IActionCreateAssignment,
     Deadline: Boolean,
@@ -36,28 +35,20 @@ object IActionCreateAssignment {
     __obj.asInstanceOf[IActionCreateAssignment]
   }
   
-  @scala.inline
-  implicit class IActionCreateAssignmentMutableBuilder[Self <: IActionCreateAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: IActionCreateAssignment](x: Self) {
     
-    @scala.inline
-    def setAssignedTo(value: IUserOrUserGroupIDExs): Self = StObject.set(x, "AssignedTo", value.asInstanceOf[js.Any])
+    inline def setAssignedTo(value: IUserOrUserGroupIDExs): Self = StObject.set(x, "AssignedTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IActionCreateAssignment): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IActionCreateAssignment): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeadline(value: Boolean): Self = StObject.set(x, "Deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: Boolean): Self = StObject.set(x, "Deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadlineInDays(value: Double): Self = StObject.set(x, "DeadlineInDays", value.asInstanceOf[js.Any])
+    inline def setDeadlineInDays(value: Double): Self = StObject.set(x, "DeadlineInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoredBy(value: IUserOrUserGroupIDExs): Self = StObject.set(x, "MonitoredBy", value.asInstanceOf[js.Any])
+    inline def setMonitoredBy(value: IUserOrUserGroupIDExs): Self = StObject.set(x, "MonitoredBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

@@ -14,6 +14,5 @@ class `object`[C] ()
      with ObjectSchema[js.Object, C]
 object `object` {
   
-  @scala.inline
-  def apply: ObjectSchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("object").asInstanceOf[ObjectSchemaConstructor]
+  inline def apply: ObjectSchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("object").asInstanceOf[ObjectSchemaConstructor]
 }

@@ -64,67 +64,47 @@ trait SchemaDetail extends StObject {
 }
 object SchemaDetail {
   
-  @scala.inline
-  def apply(): SchemaDetail = {
+  inline def apply(): SchemaDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDetail]
   }
   
-  @scala.inline
-  implicit class SchemaDetailMutableBuilder[Self <: SchemaDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDetail](x: Self) {
     
-    @scala.inline
-    def setCpeUri(value: String): Self = StObject.set(x, "cpeUri", value.asInstanceOf[js.Any])
+    inline def setCpeUri(value: String): Self = StObject.set(x, "cpeUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpeUriUndefined: Self = StObject.set(x, "cpeUri", js.undefined)
+    inline def setCpeUriUndefined: Self = StObject.set(x, "cpeUri", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFixedLocation(value: SchemaVulnerabilityLocation): Self = StObject.set(x, "fixedLocation", value.asInstanceOf[js.Any])
+    inline def setFixedLocation(value: SchemaVulnerabilityLocation): Self = StObject.set(x, "fixedLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedLocationUndefined: Self = StObject.set(x, "fixedLocation", js.undefined)
+    inline def setFixedLocationUndefined: Self = StObject.set(x, "fixedLocation", js.undefined)
     
-    @scala.inline
-    def setIsObsolete(value: Boolean): Self = StObject.set(x, "isObsolete", value.asInstanceOf[js.Any])
+    inline def setIsObsolete(value: Boolean): Self = StObject.set(x, "isObsolete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsObsoleteUndefined: Self = StObject.set(x, "isObsolete", js.undefined)
+    inline def setIsObsoleteUndefined: Self = StObject.set(x, "isObsolete", js.undefined)
     
-    @scala.inline
-    def setMaxAffectedVersion(value: SchemaVersion): Self = StObject.set(x, "maxAffectedVersion", value.asInstanceOf[js.Any])
+    inline def setMaxAffectedVersion(value: SchemaVersion): Self = StObject.set(x, "maxAffectedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAffectedVersionUndefined: Self = StObject.set(x, "maxAffectedVersion", js.undefined)
+    inline def setMaxAffectedVersionUndefined: Self = StObject.set(x, "maxAffectedVersion", js.undefined)
     
-    @scala.inline
-    def setMinAffectedVersion(value: SchemaVersion): Self = StObject.set(x, "minAffectedVersion", value.asInstanceOf[js.Any])
+    inline def setMinAffectedVersion(value: SchemaVersion): Self = StObject.set(x, "minAffectedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinAffectedVersionUndefined: Self = StObject.set(x, "minAffectedVersion", js.undefined)
+    inline def setMinAffectedVersionUndefined: Self = StObject.set(x, "minAffectedVersion", js.undefined)
     
-    @scala.inline
-    def setPackageType(value: String): Self = StObject.set(x, "packageType", value.asInstanceOf[js.Any])
+    inline def setPackageType(value: String): Self = StObject.set(x, "packageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageTypeUndefined: Self = StObject.set(x, "packageType", js.undefined)
+    inline def setPackageTypeUndefined: Self = StObject.set(x, "packageType", js.undefined)
     
-    @scala.inline
-    def setSeverityName(value: String): Self = StObject.set(x, "severityName", value.asInstanceOf[js.Any])
+    inline def setSeverityName(value: String): Self = StObject.set(x, "severityName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityNameUndefined: Self = StObject.set(x, "severityName", js.undefined)
+    inline def setSeverityNameUndefined: Self = StObject.set(x, "severityName", js.undefined)
     
-    @scala.inline
-    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+    inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

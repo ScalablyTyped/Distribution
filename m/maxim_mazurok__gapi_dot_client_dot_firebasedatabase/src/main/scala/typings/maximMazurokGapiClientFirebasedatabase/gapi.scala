@@ -39,44 +39,32 @@ object gapi {
       }
       object DatabaseInstance {
         
-        @scala.inline
-        def apply(): DatabaseInstance = {
+        inline def apply(): DatabaseInstance = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[DatabaseInstance]
         }
         
-        @scala.inline
-        implicit class DatabaseInstanceMutableBuilder[Self <: DatabaseInstance] (val x: Self) extends AnyVal {
+        extension [Self <: DatabaseInstance](x: Self) {
           
-          @scala.inline
-          def setDatabaseUrl(value: String): Self = StObject.set(x, "databaseUrl", value.asInstanceOf[js.Any])
+          inline def setDatabaseUrl(value: String): Self = StObject.set(x, "databaseUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDatabaseUrlUndefined: Self = StObject.set(x, "databaseUrl", js.undefined)
+          inline def setDatabaseUrlUndefined: Self = StObject.set(x, "databaseUrl", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+          inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+          inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
           
-          @scala.inline
-          def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+          inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+          inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
           
-          @scala.inline
-          def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+          inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         }
       }
       
@@ -138,29 +126,22 @@ object gapi {
       }
       object ListDatabaseInstancesResponse {
         
-        @scala.inline
-        def apply(): ListDatabaseInstancesResponse = {
+        inline def apply(): ListDatabaseInstancesResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ListDatabaseInstancesResponse]
         }
         
-        @scala.inline
-        implicit class ListDatabaseInstancesResponseMutableBuilder[Self <: ListDatabaseInstancesResponse] (val x: Self) extends AnyVal {
+        extension [Self <: ListDatabaseInstancesResponse](x: Self) {
           
-          @scala.inline
-          def setInstances(value: js.Array[DatabaseInstance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+          inline def setInstances(value: js.Array[DatabaseInstance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+          inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
           
-          @scala.inline
-          def setInstancesVarargs(value: DatabaseInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
+          inline def setInstancesVarargs(value: DatabaseInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         }
       }
       
@@ -170,17 +151,14 @@ object gapi {
       }
       object LocationsResource {
         
-        @scala.inline
-        def apply(instances: InstancesResource): LocationsResource = {
+        inline def apply(instances: InstancesResource): LocationsResource = {
           val __obj = js.Dynamic.literal(instances = instances.asInstanceOf[js.Any])
           __obj.asInstanceOf[LocationsResource]
         }
         
-        @scala.inline
-        implicit class LocationsResourceMutableBuilder[Self <: LocationsResource] (val x: Self) extends AnyVal {
+        extension [Self <: LocationsResource](x: Self) {
           
-          @scala.inline
-          def setInstances(value: InstancesResource): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+          inline def setInstances(value: InstancesResource): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
         }
       }
       
@@ -190,17 +168,14 @@ object gapi {
       }
       object ProjectsResource {
         
-        @scala.inline
-        def apply(locations: LocationsResource): ProjectsResource = {
+        inline def apply(locations: LocationsResource): ProjectsResource = {
           val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any])
           __obj.asInstanceOf[ProjectsResource]
         }
         
-        @scala.inline
-        implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+        extension [Self <: ProjectsResource](x: Self) {
           
-          @scala.inline
-          def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+          inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
         }
       }
       

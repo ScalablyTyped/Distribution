@@ -20,32 +20,24 @@ object statusFileOptionsMod {
   }
   object StatusFileOptions {
     
-    @scala.inline
-    def apply(): StatusFileOptions = {
+    inline def apply(): StatusFileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatusFileOptions]
     }
     
-    @scala.inline
-    implicit class StatusFileOptionsMutableBuilder[Self <: StatusFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StatusFileOptions](x: Self) {
       
-      @scala.inline
-      def setEntry(value: StatusEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: StatusEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
+      inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
 }

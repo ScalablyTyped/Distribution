@@ -10,6 +10,5 @@ object isEvenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(num: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(num: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

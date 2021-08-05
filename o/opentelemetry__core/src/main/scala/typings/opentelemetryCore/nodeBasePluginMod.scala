@@ -19,10 +19,10 @@ object nodeBasePluginMod {
       * should eventually be moved somewhere else where it makes more sense.
       * https://github.com/open-telemetry/opentelemetry-js/issues/285
       */
-    var _loadInternalFilesExports: js.Any = js.native
+    /* private */ var _loadInternalFilesExports: js.Any = js.native
     
-    var _loadInternalModule: js.Any = js.native
+    /* private */ var _loadInternalModule: js.Any = js.native
     
-    var _requireInternalFiles: js.Any = js.native
+    /* private */ var _requireInternalFiles: js.Any = js.native
   }
 }

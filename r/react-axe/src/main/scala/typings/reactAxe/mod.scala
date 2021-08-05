@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(react: TypeofReact, reactDOM: TypeofReactDOM, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].apply(react.asInstanceOf[js.Any], reactDOM.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(react: TypeofReact, reactDOM: TypeofReactDOM, timeout: Double, config: ReactAxeConfig): Unit = (^.asInstanceOf[js.Dynamic].apply(react.asInstanceOf[js.Any], reactDOM.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(react: TypeofReact, reactDOM: TypeofReactDOM, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].apply(react.asInstanceOf[js.Any], reactDOM.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(react: TypeofReact, reactDOM: TypeofReactDOM, timeout: Double, config: ReactAxeConfig): Unit = (^.asInstanceOf[js.Dynamic].apply(react.asInstanceOf[js.Any], reactDOM.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("react-axe", JSImport.Namespace)
   @js.native

@@ -21,6 +21,5 @@ object Carousel {
   @JSImport("antd-mobile-rn", "Carousel.defaultProps")
   @js.native
   def defaultProps: CarouselProps = js.native
-  @scala.inline
-  def defaultProps_=(x: CarouselProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: CarouselProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

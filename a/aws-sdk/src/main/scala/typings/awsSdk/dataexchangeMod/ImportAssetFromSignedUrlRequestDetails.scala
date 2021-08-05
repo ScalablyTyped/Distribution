@@ -28,8 +28,7 @@ trait ImportAssetFromSignedUrlRequestDetails extends StObject {
 }
 object ImportAssetFromSignedUrlRequestDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AssetName: AssetName,
     DataSetId: Id,
     Md5Hash: stringMin24Max24PatternAZaZ094AZaZ092AZaZ093,
@@ -39,19 +38,14 @@ object ImportAssetFromSignedUrlRequestDetails {
     __obj.asInstanceOf[ImportAssetFromSignedUrlRequestDetails]
   }
   
-  @scala.inline
-  implicit class ImportAssetFromSignedUrlRequestDetailsMutableBuilder[Self <: ImportAssetFromSignedUrlRequestDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ImportAssetFromSignedUrlRequestDetails](x: Self) {
     
-    @scala.inline
-    def setAssetName(value: AssetName): Self = StObject.set(x, "AssetName", value.asInstanceOf[js.Any])
+    inline def setAssetName(value: AssetName): Self = StObject.set(x, "AssetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5Hash(value: stringMin24Max24PatternAZaZ094AZaZ092AZaZ093): Self = StObject.set(x, "Md5Hash", value.asInstanceOf[js.Any])
+    inline def setMd5Hash(value: stringMin24Max24PatternAZaZ094AZaZ092AZaZ093): Self = StObject.set(x, "Md5Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
   }
 }

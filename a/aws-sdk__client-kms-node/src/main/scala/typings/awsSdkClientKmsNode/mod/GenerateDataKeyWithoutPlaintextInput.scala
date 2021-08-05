@@ -9,8 +9,7 @@ trait GenerateDataKeyWithoutPlaintextInput
      with typings.awsSdkClientKmsNode.typesGenerateDataKeyWithoutPlaintextInputMod.GenerateDataKeyWithoutPlaintextInput
 object GenerateDataKeyWithoutPlaintextInput {
   
-  @scala.inline
-  def apply(KeyId: String): GenerateDataKeyWithoutPlaintextInput = {
+  inline def apply(KeyId: String): GenerateDataKeyWithoutPlaintextInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateDataKeyWithoutPlaintextInput]
   }

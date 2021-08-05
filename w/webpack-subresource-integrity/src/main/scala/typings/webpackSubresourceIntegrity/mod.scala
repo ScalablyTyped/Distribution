@@ -30,26 +30,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(hashFuncNames: js.Array[String]): Options = {
+    inline def apply(hashFuncNames: js.Array[String]): Options = {
       val __obj = js.Dynamic.literal(hashFuncNames = hashFuncNames.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setHashFuncNames(value: js.Array[String]): Self = StObject.set(x, "hashFuncNames", value.asInstanceOf[js.Any])
+      inline def setHashFuncNames(value: js.Array[String]): Self = StObject.set(x, "hashFuncNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashFuncNamesVarargs(value: String*): Self = StObject.set(x, "hashFuncNames", js.Array(value :_*))
+      inline def setHashFuncNamesVarargs(value: String*): Self = StObject.set(x, "hashFuncNames", js.Array(value :_*))
     }
   }
   

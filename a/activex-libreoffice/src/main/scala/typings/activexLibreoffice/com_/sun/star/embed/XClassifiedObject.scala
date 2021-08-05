@@ -47,8 +47,7 @@ trait XClassifiedObject
 }
 object XClassifiedObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClassID: SafeArray[Double],
     ClassName: String,
     acquire: () => Unit,
@@ -62,22 +61,16 @@ object XClassifiedObject {
     __obj.asInstanceOf[XClassifiedObject]
   }
   
-  @scala.inline
-  implicit class XClassifiedObjectMutableBuilder[Self <: XClassifiedObject] (val x: Self) extends AnyVal {
+  extension [Self <: XClassifiedObject](x: Self) {
     
-    @scala.inline
-    def setClassID(value: SafeArray[Double]): Self = StObject.set(x, "ClassID", value.asInstanceOf[js.Any])
+    inline def setClassID(value: SafeArray[Double]): Self = StObject.set(x, "ClassID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetClassID(value: () => SafeArray[Double]): Self = StObject.set(x, "getClassID", js.Any.fromFunction0(value))
+    inline def setGetClassID(value: () => SafeArray[Double]): Self = StObject.set(x, "getClassID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
+    inline def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetClassInfo(value: (SeqEquiv[Double], String) => Unit): Self = StObject.set(x, "setClassInfo", js.Any.fromFunction2(value))
+    inline def setSetClassInfo(value: (SeqEquiv[Double], String) => Unit): Self = StObject.set(x, "setClassInfo", js.Any.fromFunction2(value))
   }
 }

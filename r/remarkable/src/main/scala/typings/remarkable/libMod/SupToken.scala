@@ -18,20 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SupToken {
   
-  @scala.inline
-  def apply(content: String, level: Double): SupToken = {
+  inline def apply(content: String, level: Double): SupToken = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("sup")
     __obj.asInstanceOf[SupToken]
   }
   
-  @scala.inline
-  implicit class SupTokenMutableBuilder[Self <: SupToken] (val x: Self) extends AnyVal {
+  extension [Self <: SupToken](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: sup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: sup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

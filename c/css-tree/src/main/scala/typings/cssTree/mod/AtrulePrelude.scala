@@ -16,20 +16,16 @@ trait AtrulePrelude
 }
 object AtrulePrelude {
   
-  @scala.inline
-  def apply(children: List[CssNode]): AtrulePrelude = {
+  inline def apply(children: List[CssNode]): AtrulePrelude = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AtrulePrelude")
     __obj.asInstanceOf[AtrulePrelude]
   }
   
-  @scala.inline
-  implicit class AtrulePreludeMutableBuilder[Self <: AtrulePrelude] (val x: Self) extends AnyVal {
+  extension [Self <: AtrulePrelude](x: Self) {
     
-    @scala.inline
-    def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.AtrulePrelude): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.AtrulePrelude): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

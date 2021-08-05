@@ -36,65 +36,46 @@ object stackedBarChartMod {
   }
   object StackedBarChartProps {
     
-    @scala.inline
-    def apply(): StackedBarChartProps = {
+    inline def apply(): StackedBarChartProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StackedBarChartProps]
     }
     
-    @scala.inline
-    implicit class StackedBarChartPropsMutableBuilder[Self <: StackedBarChartProps] (val x: Self) extends AnyVal {
+    extension [Self <: StackedBarChartProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[item]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[item]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: item*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: item*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setMargin(value: Bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setTooltipTemplate(value: /* item */ item => ReactNode): Self = StObject.set(x, "tooltipTemplate", js.Any.fromFunction1(value))
+      inline def setTooltipTemplate(value: /* item */ item => ReactNode): Self = StObject.set(x, "tooltipTemplate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTooltipTemplateUndefined: Self = StObject.set(x, "tooltipTemplate", js.undefined)
+      inline def setTooltipTemplateUndefined: Self = StObject.set(x, "tooltipTemplate", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setYAxisTickFormat(value: (/* rawValue */ String, /* parsedValue */ String) => String): Self = StObject.set(x, "yAxisTickFormat", js.Any.fromFunction2(value))
+      inline def setYAxisTickFormat(value: (/* rawValue */ String, /* parsedValue */ String) => String): Self = StObject.set(x, "yAxisTickFormat", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setYAxisTickFormatUndefined: Self = StObject.set(x, "yAxisTickFormat", js.undefined)
+      inline def setYAxisTickFormatUndefined: Self = StObject.set(x, "yAxisTickFormat", js.undefined)
     }
   }
   
@@ -106,23 +87,18 @@ object stackedBarChartMod {
   }
   object item {
     
-    @scala.inline
-    def apply(label: String, values: js.Array[Double]): item = {
+    inline def apply(label: String, values: js.Array[Double]): item = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[item]
     }
     
-    @scala.inline
-    implicit class itemMutableBuilder[Self <: item] (val x: Self) extends AnyVal {
+    extension [Self <: item](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
 }

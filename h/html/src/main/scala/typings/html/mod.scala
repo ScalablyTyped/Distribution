@@ -16,10 +16,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def prettyPrint(htmlSource: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(htmlSource.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def prettyPrint(htmlSource: String, options: PrintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(htmlSource.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def prettyPrint(htmlSource: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(htmlSource.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def prettyPrint(htmlSource: String, options: PrintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(htmlSource.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait PrintOptions extends StObject {
     
@@ -47,53 +45,38 @@ object mod {
   }
   object PrintOptions {
     
-    @scala.inline
-    def apply(): PrintOptions = {
+    inline def apply(): PrintOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrintOptions]
     }
     
-    @scala.inline
-    implicit class PrintOptionsMutableBuilder[Self <: PrintOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrintOptions](x: Self) {
       
-      @scala.inline
-      def setBrace_style(value: collapse | expand | `end-expand`): Self = StObject.set(x, "brace_style", value.asInstanceOf[js.Any])
+      inline def setBrace_style(value: collapse | expand | `end-expand`): Self = StObject.set(x, "brace_style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrace_styleUndefined: Self = StObject.set(x, "brace_style", js.undefined)
+      inline def setBrace_styleUndefined: Self = StObject.set(x, "brace_style", js.undefined)
       
-      @scala.inline
-      def setIndent_char(value: String): Self = StObject.set(x, "indent_char", value.asInstanceOf[js.Any])
+      inline def setIndent_char(value: String): Self = StObject.set(x, "indent_char", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent_charUndefined: Self = StObject.set(x, "indent_char", js.undefined)
+      inline def setIndent_charUndefined: Self = StObject.set(x, "indent_char", js.undefined)
       
-      @scala.inline
-      def setIndent_scripts(value: keep | separate | normal): Self = StObject.set(x, "indent_scripts", value.asInstanceOf[js.Any])
+      inline def setIndent_scripts(value: keep | separate | normal): Self = StObject.set(x, "indent_scripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent_scriptsUndefined: Self = StObject.set(x, "indent_scripts", js.undefined)
+      inline def setIndent_scriptsUndefined: Self = StObject.set(x, "indent_scripts", js.undefined)
       
-      @scala.inline
-      def setIndent_size(value: Double): Self = StObject.set(x, "indent_size", value.asInstanceOf[js.Any])
+      inline def setIndent_size(value: Double): Self = StObject.set(x, "indent_size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent_sizeUndefined: Self = StObject.set(x, "indent_size", js.undefined)
+      inline def setIndent_sizeUndefined: Self = StObject.set(x, "indent_size", js.undefined)
       
-      @scala.inline
-      def setMax_char(value: Double): Self = StObject.set(x, "max_char", value.asInstanceOf[js.Any])
+      inline def setMax_char(value: Double): Self = StObject.set(x, "max_char", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_charUndefined: Self = StObject.set(x, "max_char", js.undefined)
+      inline def setMax_charUndefined: Self = StObject.set(x, "max_char", js.undefined)
       
-      @scala.inline
-      def setUnformatted(value: js.Array[String]): Self = StObject.set(x, "unformatted", value.asInstanceOf[js.Any])
+      inline def setUnformatted(value: js.Array[String]): Self = StObject.set(x, "unformatted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnformattedUndefined: Self = StObject.set(x, "unformatted", js.undefined)
+      inline def setUnformattedUndefined: Self = StObject.set(x, "unformatted", js.undefined)
       
-      @scala.inline
-      def setUnformattedVarargs(value: String*): Self = StObject.set(x, "unformatted", js.Array(value :_*))
+      inline def setUnformattedVarargs(value: String*): Self = StObject.set(x, "unformatted", js.Array(value :_*))
     }
   }
 }

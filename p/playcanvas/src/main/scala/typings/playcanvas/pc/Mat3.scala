@@ -80,8 +80,7 @@ trait Mat3 extends StObject {
 }
 object Mat3 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copy: Mat3 => Mat3,
     data: Float32Array,
     equals_ : Mat3 => Boolean,
@@ -95,28 +94,20 @@ object Mat3 {
     __obj.asInstanceOf[Mat3]
   }
   
-  @scala.inline
-  implicit class Mat3MutableBuilder[Self <: Mat3] (val x: Self) extends AnyVal {
+  extension [Self <: Mat3](x: Self) {
     
-    @scala.inline
-    def setCopy(value: Mat3 => Mat3): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
+    inline def setCopy(value: Mat3 => Mat3): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setData(value: Float32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Float32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquals_(value: Mat3 => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: Mat3 => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsIdentity(value: () => Boolean): Self = StObject.set(x, "isIdentity", js.Any.fromFunction0(value))
+    inline def setIsIdentity(value: () => Boolean): Self = StObject.set(x, "isIdentity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: js.Array[Double] => Mat3): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: js.Array[Double] => Mat3): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIdentity(value: () => Mat3): Self = StObject.set(x, "setIdentity", js.Any.fromFunction0(value))
+    inline def setSetIdentity(value: () => Mat3): Self = StObject.set(x, "setIdentity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTranspose(value: () => Mat3): Self = StObject.set(x, "transpose", js.Any.fromFunction0(value))
+    inline def setTranspose(value: () => Mat3): Self = StObject.set(x, "transpose", js.Any.fromFunction0(value))
   }
 }

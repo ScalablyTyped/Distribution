@@ -23,34 +23,25 @@ trait CreateIntersectionObserverOptions extends StObject {
 }
 object CreateIntersectionObserverOptions {
   
-  @scala.inline
-  def apply(): CreateIntersectionObserverOptions = {
+  inline def apply(): CreateIntersectionObserverOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateIntersectionObserverOptions]
   }
   
-  @scala.inline
-  implicit class CreateIntersectionObserverOptionsMutableBuilder[Self <: CreateIntersectionObserverOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIntersectionObserverOptions](x: Self) {
     
-    @scala.inline
-    def setInitialRatio(value: Double): Self = StObject.set(x, "initialRatio", value.asInstanceOf[js.Any])
+    inline def setInitialRatio(value: Double): Self = StObject.set(x, "initialRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialRatioUndefined: Self = StObject.set(x, "initialRatio", js.undefined)
+    inline def setInitialRatioUndefined: Self = StObject.set(x, "initialRatio", js.undefined)
     
-    @scala.inline
-    def setSelectAll(value: Boolean): Self = StObject.set(x, "selectAll", value.asInstanceOf[js.Any])
+    inline def setSelectAll(value: Boolean): Self = StObject.set(x, "selectAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectAllUndefined: Self = StObject.set(x, "selectAll", js.undefined)
+    inline def setSelectAllUndefined: Self = StObject.set(x, "selectAll", js.undefined)
     
-    @scala.inline
-    def setThresholds(value: js.Array[js.Any]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
+    inline def setThresholds(value: js.Array[js.Any]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
+    inline def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
     
-    @scala.inline
-    def setThresholdsVarargs(value: js.Any*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
+    inline def setThresholdsVarargs(value: js.Any*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
   }
 }

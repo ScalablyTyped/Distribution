@@ -15,8 +15,7 @@ trait KeyNameParams[RouteName /* <: /* keyof ParamList */ String */, ParamList /
 }
 object KeyNameParams {
   
-  @scala.inline
-  def apply[RouteName /* <: /* keyof ParamList */ String */, ParamList /* <: ParamListBase */](
+  inline def apply[RouteName /* <: /* keyof ParamList */ String */, ParamList /* <: ParamListBase */](
     name: RouteName,
     params: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
   ): KeyNameParams[RouteName, ParamList] = {
@@ -24,20 +23,15 @@ object KeyNameParams {
     __obj.asInstanceOf[KeyNameParams[RouteName, ParamList]]
   }
   
-  @scala.inline
-  implicit class KeyNameParamsMutableBuilder[Self <: KeyNameParams[?, ?], RouteName /* <: /* keyof ParamList */ String */, ParamList /* <: ParamListBase */] (val x: Self & (KeyNameParams[RouteName, ParamList])) extends AnyVal {
+  extension [Self <: KeyNameParams[?, ?], RouteName /* <: /* keyof ParamList */ String */, ParamList /* <: ParamListBase */](x: Self & (KeyNameParams[RouteName, ParamList])) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setName(value: RouteName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: RouteName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(
+    inline def setParams(
       value: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }

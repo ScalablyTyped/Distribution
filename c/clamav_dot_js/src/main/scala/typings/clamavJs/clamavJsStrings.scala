@@ -8,6 +8,5 @@ object clamavJsStrings {
   
   @js.native
   sealed trait localhost extends StObject
-  @scala.inline
-  def localhost: localhost = "localhost".asInstanceOf[localhost]
+  inline def localhost: localhost = "localhost".asInstanceOf[localhost]
 }

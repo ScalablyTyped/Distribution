@@ -18,8 +18,7 @@ trait AutoTriggerIssue extends StObject {
 }
 object AutoTriggerIssue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     issue: Issue,
     issueSource: IssueSource,
     project: ProjectReference,
@@ -30,22 +29,16 @@ object AutoTriggerIssue {
     __obj.asInstanceOf[AutoTriggerIssue]
   }
   
-  @scala.inline
-  implicit class AutoTriggerIssueMutableBuilder[Self <: AutoTriggerIssue] (val x: Self) extends AnyVal {
+  extension [Self <: AutoTriggerIssue](x: Self) {
     
-    @scala.inline
-    def setIssue(value: Issue): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+    inline def setIssue(value: Issue): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssueSource(value: IssueSource): Self = StObject.set(x, "issueSource", value.asInstanceOf[js.Any])
+    inline def setIssueSource(value: IssueSource): Self = StObject.set(x, "issueSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDefinitionReference(value: ReleaseDefinitionShallowReference): Self = StObject.set(x, "releaseDefinitionReference", value.asInstanceOf[js.Any])
+    inline def setReleaseDefinitionReference(value: ReleaseDefinitionShallowReference): Self = StObject.set(x, "releaseDefinitionReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseTriggerType(value: ReleaseTriggerType): Self = StObject.set(x, "releaseTriggerType", value.asInstanceOf[js.Any])
+    inline def setReleaseTriggerType(value: ReleaseTriggerType): Self = StObject.set(x, "releaseTriggerType", value.asInstanceOf[js.Any])
   }
 }

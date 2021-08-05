@@ -36,16 +36,14 @@ object PushNotifications {
       * @return The object, bound to the calling app, that is used to request a PushNotificationChannel from the WNS.
       */
     /* static member */
-    @scala.inline
-    def createPushNotificationChannelForApplicationAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPushNotificationChannelForApplicationAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannel]]
+    inline def createPushNotificationChannelForApplicationAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPushNotificationChannelForApplicationAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannel]]
     /**
       * Creates an object, bound to a specified app, through which you retrieve a push notification channel from Windows Push Notification Services (WNS). The specified app must be in the same package as the calling app.
       * @param applicationId The Package Relative Application ID (PRAID) of the app to bind to the push notification channel.
       * @return The object, bound to the app specified in applicationId, that is used to request a PushNotificationChannel from the WNS.
       */
     /* static member */
-    @scala.inline
-    def createPushNotificationChannelForApplicationAsync(applicationId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPushNotificationChannelForApplicationAsync")(applicationId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannel]]
+    inline def createPushNotificationChannelForApplicationAsync(applicationId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPushNotificationChannelForApplicationAsync")(applicationId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannel]]
     
     /**
       * Creates an object, bound to a secondary tile , through which you retrieve a push notification channel from Windows Push Notification Services (WNS). The tile can be a secondary tile of the calling app or any other app in the same package.
@@ -53,8 +51,7 @@ object PushNotifications {
       * @return The object, bound to the secondary tile, that is used to request a PushNotificationChannel from the WNS.
       */
     /* static member */
-    @scala.inline
-    def createPushNotificationChannelForSecondaryTileAsync(tileId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPushNotificationChannelForSecondaryTileAsync")(tileId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannel]]
+    inline def createPushNotificationChannelForSecondaryTileAsync(tileId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPushNotificationChannelForSecondaryTileAsync")(tileId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannel]]
   }
   
   /** Encapsulates a push notification that has been received from the app server, identifying the type and supplying the content of the notification. Windows passes this information in the PushNotificationReceived event. */

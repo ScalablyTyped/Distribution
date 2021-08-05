@@ -14,22 +14,17 @@ trait CreateUserResponse extends StObject {
 }
 object CreateUserResponse {
   
-  @scala.inline
-  def apply(Id: String, email: String, emailVerified: Boolean): CreateUserResponse = {
+  inline def apply(Id: String, email: String, emailVerified: Boolean): CreateUserResponse = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], emailVerified = emailVerified.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserResponse]
   }
   
-  @scala.inline
-  implicit class CreateUserResponseMutableBuilder[Self <: CreateUserResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateUserResponse](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailVerified(value: Boolean): Self = StObject.set(x, "emailVerified", value.asInstanceOf[js.Any])
+    inline def setEmailVerified(value: Boolean): Self = StObject.set(x, "emailVerified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

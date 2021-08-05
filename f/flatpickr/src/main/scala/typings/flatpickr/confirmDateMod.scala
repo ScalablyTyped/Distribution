@@ -11,8 +11,7 @@ object confirmDateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(pluginConfig: Config): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pluginConfig.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Object]]
+  inline def default(pluginConfig: Config): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pluginConfig.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Object]]
   
   trait Config extends StObject {
     
@@ -26,38 +25,28 @@ object confirmDateMod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setConfirmIcon(value: String): Self = StObject.set(x, "confirmIcon", value.asInstanceOf[js.Any])
+      inline def setConfirmIcon(value: String): Self = StObject.set(x, "confirmIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmIconUndefined: Self = StObject.set(x, "confirmIcon", js.undefined)
+      inline def setConfirmIconUndefined: Self = StObject.set(x, "confirmIcon", js.undefined)
       
-      @scala.inline
-      def setConfirmText(value: String): Self = StObject.set(x, "confirmText", value.asInstanceOf[js.Any])
+      inline def setConfirmText(value: String): Self = StObject.set(x, "confirmText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmTextUndefined: Self = StObject.set(x, "confirmText", js.undefined)
+      inline def setConfirmTextUndefined: Self = StObject.set(x, "confirmText", js.undefined)
       
-      @scala.inline
-      def setShowAlways(value: Boolean): Self = StObject.set(x, "showAlways", value.asInstanceOf[js.Any])
+      inline def setShowAlways(value: Boolean): Self = StObject.set(x, "showAlways", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAlwaysUndefined: Self = StObject.set(x, "showAlways", js.undefined)
+      inline def setShowAlwaysUndefined: Self = StObject.set(x, "showAlways", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

@@ -16,8 +16,7 @@ object BatchMode {
   @JSGlobal("sap.ui.model.odata.BatchMode.Group")
   @js.native
   def Group: js.Any = js.native
-  @scala.inline
-  def Group_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
+  inline def Group_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
   
   /**
     * No batch requests
@@ -25,6 +24,5 @@ object BatchMode {
   @JSGlobal("sap.ui.model.odata.BatchMode.None")
   @js.native
   def None: js.Any = js.native
-  @scala.inline
-  def None_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
 }

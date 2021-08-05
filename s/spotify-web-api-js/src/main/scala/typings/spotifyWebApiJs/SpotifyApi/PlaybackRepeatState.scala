@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlaybackRepeatState extends StObject
 object PlaybackRepeatState {
   
-  @scala.inline
-  def context: typings.spotifyWebApiJs.spotifyWebApiJsStrings.context = "context".asInstanceOf[typings.spotifyWebApiJs.spotifyWebApiJsStrings.context]
+  inline def context: typings.spotifyWebApiJs.spotifyWebApiJsStrings.context = "context".asInstanceOf[typings.spotifyWebApiJs.spotifyWebApiJsStrings.context]
   
-  @scala.inline
-  def off: typings.spotifyWebApiJs.spotifyWebApiJsStrings.off = "off".asInstanceOf[typings.spotifyWebApiJs.spotifyWebApiJsStrings.off]
+  inline def off: typings.spotifyWebApiJs.spotifyWebApiJsStrings.off = "off".asInstanceOf[typings.spotifyWebApiJs.spotifyWebApiJsStrings.off]
   
-  @scala.inline
-  def track: typings.spotifyWebApiJs.spotifyWebApiJsStrings.track = "track".asInstanceOf[typings.spotifyWebApiJs.spotifyWebApiJsStrings.track]
+  inline def track: typings.spotifyWebApiJs.spotifyWebApiJsStrings.track = "track".asInstanceOf[typings.spotifyWebApiJs.spotifyWebApiJsStrings.track]
 }

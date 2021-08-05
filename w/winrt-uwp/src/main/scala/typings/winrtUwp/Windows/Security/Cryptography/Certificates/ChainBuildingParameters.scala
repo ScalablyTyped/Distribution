@@ -32,8 +32,7 @@ trait ChainBuildingParameters extends StObject {
 }
 object ChainBuildingParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authorityInformationAccessEnabled: Boolean,
     currentTimeValidationEnabled: Boolean,
     enhancedKeyUsages: IVector[String],
@@ -46,28 +45,20 @@ object ChainBuildingParameters {
     __obj.asInstanceOf[ChainBuildingParameters]
   }
   
-  @scala.inline
-  implicit class ChainBuildingParametersMutableBuilder[Self <: ChainBuildingParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ChainBuildingParameters](x: Self) {
     
-    @scala.inline
-    def setAuthorityInformationAccessEnabled(value: Boolean): Self = StObject.set(x, "authorityInformationAccessEnabled", value.asInstanceOf[js.Any])
+    inline def setAuthorityInformationAccessEnabled(value: Boolean): Self = StObject.set(x, "authorityInformationAccessEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTimeValidationEnabled(value: Boolean): Self = StObject.set(x, "currentTimeValidationEnabled", value.asInstanceOf[js.Any])
+    inline def setCurrentTimeValidationEnabled(value: Boolean): Self = StObject.set(x, "currentTimeValidationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnhancedKeyUsages(value: IVector[String]): Self = StObject.set(x, "enhancedKeyUsages", value.asInstanceOf[js.Any])
+    inline def setEnhancedKeyUsages(value: IVector[String]): Self = StObject.set(x, "enhancedKeyUsages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveTrustRoots(value: IVector[Certificate]): Self = StObject.set(x, "exclusiveTrustRoots", value.asInstanceOf[js.Any])
+    inline def setExclusiveTrustRoots(value: IVector[Certificate]): Self = StObject.set(x, "exclusiveTrustRoots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkRetrievalEnabled(value: Boolean): Self = StObject.set(x, "networkRetrievalEnabled", value.asInstanceOf[js.Any])
+    inline def setNetworkRetrievalEnabled(value: Boolean): Self = StObject.set(x, "networkRetrievalEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevocationCheckEnabled(value: Boolean): Self = StObject.set(x, "revocationCheckEnabled", value.asInstanceOf[js.Any])
+    inline def setRevocationCheckEnabled(value: Boolean): Self = StObject.set(x, "revocationCheckEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationTimestamp(value: Date): Self = StObject.set(x, "validationTimestamp", value.asInstanceOf[js.Any])
+    inline def setValidationTimestamp(value: Date): Self = StObject.set(x, "validationTimestamp", value.asInstanceOf[js.Any])
   }
 }

@@ -100,9 +100,7 @@ object mod {
     def userinfo(): String | Null = js.native
   }
   
-  @scala.inline
-  def fromURI(uri: String): IRI = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURI")(uri.asInstanceOf[js.Any]).asInstanceOf[IRI]
+  inline def fromURI(uri: String): IRI = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURI")(uri.asInstanceOf[js.Any]).asInstanceOf[IRI]
   
-  @scala.inline
-  def toIRIString(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toIRIString")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toIRIString(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toIRIString")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -11,16 +11,13 @@ trait PickImplelementSize extends StObject {
 }
 object PickImplelementSize {
   
-  @scala.inline
-  def apply(elementSize: String): PickImplelementSize = {
+  inline def apply(elementSize: String): PickImplelementSize = {
     val __obj = js.Dynamic.literal(elementSize = elementSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplelementSize]
   }
   
-  @scala.inline
-  implicit class PickImplelementSizeMutableBuilder[Self <: PickImplelementSize] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplelementSize](x: Self) {
     
-    @scala.inline
-    def setElementSize(value: String): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
+    inline def setElementSize(value: String): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
   }
 }

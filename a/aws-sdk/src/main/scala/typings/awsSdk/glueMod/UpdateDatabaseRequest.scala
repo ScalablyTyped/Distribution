@@ -23,25 +23,19 @@ trait UpdateDatabaseRequest extends StObject {
 }
 object UpdateDatabaseRequest {
   
-  @scala.inline
-  def apply(DatabaseInput: DatabaseInput, Name: NameString): UpdateDatabaseRequest = {
+  inline def apply(DatabaseInput: DatabaseInput, Name: NameString): UpdateDatabaseRequest = {
     val __obj = js.Dynamic.literal(DatabaseInput = DatabaseInput.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDatabaseRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDatabaseRequestMutableBuilder[Self <: UpdateDatabaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDatabaseRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseInput(value: DatabaseInput): Self = StObject.set(x, "DatabaseInput", value.asInstanceOf[js.Any])
+    inline def setDatabaseInput(value: DatabaseInput): Self = StObject.set(x, "DatabaseInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -28,37 +28,27 @@ trait ConnectivityInfo extends StObject {
 }
 object ConnectivityInfo {
   
-  @scala.inline
-  def apply(): ConnectivityInfo = {
+  inline def apply(): ConnectivityInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectivityInfo]
   }
   
-  @scala.inline
-  implicit class ConnectivityInfoMutableBuilder[Self <: ConnectivityInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectivityInfo](x: Self) {
     
-    @scala.inline
-    def setHostAddress(value: string): Self = StObject.set(x, "HostAddress", value.asInstanceOf[js.Any])
+    inline def setHostAddress(value: string): Self = StObject.set(x, "HostAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostAddressUndefined: Self = StObject.set(x, "HostAddress", js.undefined)
+    inline def setHostAddressUndefined: Self = StObject.set(x, "HostAddress", js.undefined)
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: string): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: string): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
-    @scala.inline
-    def setPortNumber(value: integer): Self = StObject.set(x, "PortNumber", value.asInstanceOf[js.Any])
+    inline def setPortNumber(value: integer): Self = StObject.set(x, "PortNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortNumberUndefined: Self = StObject.set(x, "PortNumber", js.undefined)
+    inline def setPortNumberUndefined: Self = StObject.set(x, "PortNumber", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait GetConnectivityInfoResponse extends StObject {
 }
 object GetConnectivityInfoResponse {
   
-  @scala.inline
-  def apply(): GetConnectivityInfoResponse = {
+  inline def apply(): GetConnectivityInfoResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConnectivityInfoResponse]
   }
   
-  @scala.inline
-  implicit class GetConnectivityInfoResponseMutableBuilder[Self <: GetConnectivityInfoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectivityInfoResponse](x: Self) {
     
-    @scala.inline
-    def setConnectivityInfo(value: listOfConnectivityInfo): Self = StObject.set(x, "ConnectivityInfo", value.asInstanceOf[js.Any])
+    inline def setConnectivityInfo(value: listOfConnectivityInfo): Self = StObject.set(x, "ConnectivityInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectivityInfoUndefined: Self = StObject.set(x, "ConnectivityInfo", js.undefined)
+    inline def setConnectivityInfoUndefined: Self = StObject.set(x, "ConnectivityInfo", js.undefined)
     
-    @scala.inline
-    def setConnectivityInfoVarargs(value: ConnectivityInfo*): Self = StObject.set(x, "ConnectivityInfo", js.Array(value :_*))
+    inline def setConnectivityInfoVarargs(value: ConnectivityInfo*): Self = StObject.set(x, "ConnectivityInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

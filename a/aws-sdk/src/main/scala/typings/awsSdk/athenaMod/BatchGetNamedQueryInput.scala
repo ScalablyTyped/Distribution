@@ -13,19 +13,15 @@ trait BatchGetNamedQueryInput extends StObject {
 }
 object BatchGetNamedQueryInput {
   
-  @scala.inline
-  def apply(NamedQueryIds: NamedQueryIdList): BatchGetNamedQueryInput = {
+  inline def apply(NamedQueryIds: NamedQueryIdList): BatchGetNamedQueryInput = {
     val __obj = js.Dynamic.literal(NamedQueryIds = NamedQueryIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetNamedQueryInput]
   }
   
-  @scala.inline
-  implicit class BatchGetNamedQueryInputMutableBuilder[Self <: BatchGetNamedQueryInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetNamedQueryInput](x: Self) {
     
-    @scala.inline
-    def setNamedQueryIds(value: NamedQueryIdList): Self = StObject.set(x, "NamedQueryIds", value.asInstanceOf[js.Any])
+    inline def setNamedQueryIds(value: NamedQueryIdList): Self = StObject.set(x, "NamedQueryIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedQueryIdsVarargs(value: NamedQueryId*): Self = StObject.set(x, "NamedQueryIds", js.Array(value :_*))
+    inline def setNamedQueryIdsVarargs(value: NamedQueryId*): Self = StObject.set(x, "NamedQueryIds", js.Array(value :_*))
   }
 }

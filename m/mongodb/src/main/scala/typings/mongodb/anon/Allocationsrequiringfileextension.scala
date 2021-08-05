@@ -28,8 +28,7 @@ trait Allocationsrequiringfileextension extends StObject {
 }
 object Allocationsrequiringfileextension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `allocations requiring file extension`: Double,
     `blocks allocated`: Double,
     `blocks freed`: Double,
@@ -55,37 +54,26 @@ object Allocationsrequiringfileextension {
     __obj.asInstanceOf[Allocationsrequiringfileextension]
   }
   
-  @scala.inline
-  implicit class AllocationsrequiringfileextensionMutableBuilder[Self <: Allocationsrequiringfileextension] (val x: Self) extends AnyVal {
+  extension [Self <: Allocationsrequiringfileextension](x: Self) {
     
-    @scala.inline
-    def `setAllocations requiring file extension`(value: Double): Self = StObject.set(x, "allocations requiring file extension", value.asInstanceOf[js.Any])
+    inline def `setAllocations requiring file extension`(value: Double): Self = StObject.set(x, "allocations requiring file extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBlocks allocated`(value: Double): Self = StObject.set(x, "blocks allocated", value.asInstanceOf[js.Any])
+    inline def `setBlocks allocated`(value: Double): Self = StObject.set(x, "blocks allocated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBlocks freed`(value: Double): Self = StObject.set(x, "blocks freed", value.asInstanceOf[js.Any])
+    inline def `setBlocks freed`(value: Double): Self = StObject.set(x, "blocks freed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCheckpoint size`(value: Double): Self = StObject.set(x, "checkpoint size", value.asInstanceOf[js.Any])
+    inline def `setCheckpoint size`(value: Double): Self = StObject.set(x, "checkpoint size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFile allocation unit size`(value: Double): Self = StObject.set(x, "file allocation unit size", value.asInstanceOf[js.Any])
+    inline def `setFile allocation unit size`(value: Double): Self = StObject.set(x, "file allocation unit size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFile bytes available for reuse`(value: Double): Self = StObject.set(x, "file bytes available for reuse", value.asInstanceOf[js.Any])
+    inline def `setFile bytes available for reuse`(value: Double): Self = StObject.set(x, "file bytes available for reuse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFile magic number`(value: Double): Self = StObject.set(x, "file magic number", value.asInstanceOf[js.Any])
+    inline def `setFile magic number`(value: Double): Self = StObject.set(x, "file magic number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFile major version number`(value: Double): Self = StObject.set(x, "file major version number", value.asInstanceOf[js.Any])
+    inline def `setFile major version number`(value: Double): Self = StObject.set(x, "file major version number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFile size in bytes`(value: Double): Self = StObject.set(x, "file size in bytes", value.asInstanceOf[js.Any])
+    inline def `setFile size in bytes`(value: Double): Self = StObject.set(x, "file size in bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMinor version number`(value: Double): Self = StObject.set(x, "minor version number", value.asInstanceOf[js.Any])
+    inline def `setMinor version number`(value: Double): Self = StObject.set(x, "minor version number", value.asInstanceOf[js.Any])
   }
 }

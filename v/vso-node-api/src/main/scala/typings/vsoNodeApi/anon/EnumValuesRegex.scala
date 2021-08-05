@@ -10,16 +10,13 @@ trait EnumValuesRegex extends StObject {
 }
 object EnumValuesRegex {
   
-  @scala.inline
-  def apply(enumValues: Regex): EnumValuesRegex = {
+  inline def apply(enumValues: Regex): EnumValuesRegex = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesRegex]
   }
   
-  @scala.inline
-  implicit class EnumValuesRegexMutableBuilder[Self <: EnumValuesRegex] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesRegex](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Regex): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Regex): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

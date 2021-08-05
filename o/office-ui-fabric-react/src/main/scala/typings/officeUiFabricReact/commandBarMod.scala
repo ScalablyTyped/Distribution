@@ -28,7 +28,6 @@ object commandBarMod {
     @JSImport("office-ui-fabric-react/lib/components/CommandBar", "CommandBarBase.defaultProps")
     @js.native
     def defaultProps: ICommandBarProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ICommandBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ICommandBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

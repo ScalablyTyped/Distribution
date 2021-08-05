@@ -38,8 +38,7 @@ object modalDriverMod {
   }
   object ModalDriver {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       clickOnCloseButton: () => Boolean,
       clickOnOverlay: () => Boolean,
       closeButtonExists: () => Boolean,
@@ -57,41 +56,29 @@ object modalDriverMod {
       __obj.asInstanceOf[ModalDriver[T]]
     }
     
-    @scala.inline
-    implicit class ModalDriverMutableBuilder[Self <: ModalDriver[?], T] (val x: Self & ModalDriver[T]) extends AnyVal {
+    extension [Self <: ModalDriver[?], T](x: Self & ModalDriver[T]) {
       
-      @scala.inline
-      def setClickOnCloseButton(value: () => Boolean): Self = StObject.set(x, "clickOnCloseButton", js.Any.fromFunction0(value))
+      inline def setClickOnCloseButton(value: () => Boolean): Self = StObject.set(x, "clickOnCloseButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnOverlay(value: () => Boolean): Self = StObject.set(x, "clickOnOverlay", js.Any.fromFunction0(value))
+      inline def setClickOnOverlay(value: () => Boolean): Self = StObject.set(x, "clickOnOverlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCloseButtonExists(value: () => Boolean): Self = StObject.set(x, "closeButtonExists", js.Any.fromFunction0(value))
+      inline def setCloseButtonExists(value: () => Boolean): Self = StObject.set(x, "closeButtonExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setElement(value: () => T): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+      inline def setElement(value: () => T): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetChildBySelector(value: String => HTMLElement | Null): Self = StObject.set(x, "getChildBySelector", js.Any.fromFunction1(value))
+      inline def setGetChildBySelector(value: String => HTMLElement | Null): Self = StObject.set(x, "getChildBySelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetContent(value: () => Element): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => Element): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentLabel(value: () => String | Null): Self = StObject.set(x, "getContentLabel", js.Any.fromFunction0(value))
+      inline def setGetContentLabel(value: () => String | Null): Self = StObject.set(x, "getContentLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentStyle(value: () => CSSStyleDeclaration): Self = StObject.set(x, "getContentStyle", js.Any.fromFunction0(value))
+      inline def setGetContentStyle(value: () => CSSStyleDeclaration): Self = StObject.set(x, "getContentStyle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetZIndex(value: () => String | Null): Self = StObject.set(x, "getZIndex", js.Any.fromFunction0(value))
+      inline def setGetZIndex(value: () => String | Null): Self = StObject.set(x, "getZIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
+      inline def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsScrollable(value: () => Boolean): Self = StObject.set(x, "isScrollable", js.Any.fromFunction0(value))
+      inline def setIsScrollable(value: () => Boolean): Self = StObject.set(x, "isScrollable", js.Any.fromFunction0(value))
     }
   }
 }

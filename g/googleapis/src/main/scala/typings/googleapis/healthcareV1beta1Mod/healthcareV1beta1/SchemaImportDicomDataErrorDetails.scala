@@ -18,22 +18,17 @@ trait SchemaImportDicomDataErrorDetails extends StObject {
 }
 object SchemaImportDicomDataErrorDetails {
   
-  @scala.inline
-  def apply(): SchemaImportDicomDataErrorDetails = {
+  inline def apply(): SchemaImportDicomDataErrorDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImportDicomDataErrorDetails]
   }
   
-  @scala.inline
-  implicit class SchemaImportDicomDataErrorDetailsMutableBuilder[Self <: SchemaImportDicomDataErrorDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImportDicomDataErrorDetails](x: Self) {
     
-    @scala.inline
-    def setSampleErrors(value: js.Array[SchemaErrorDetail]): Self = StObject.set(x, "sampleErrors", value.asInstanceOf[js.Any])
+    inline def setSampleErrors(value: js.Array[SchemaErrorDetail]): Self = StObject.set(x, "sampleErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleErrorsUndefined: Self = StObject.set(x, "sampleErrors", js.undefined)
+    inline def setSampleErrorsUndefined: Self = StObject.set(x, "sampleErrors", js.undefined)
     
-    @scala.inline
-    def setSampleErrorsVarargs(value: SchemaErrorDetail*): Self = StObject.set(x, "sampleErrors", js.Array(value :_*))
+    inline def setSampleErrorsVarargs(value: SchemaErrorDetail*): Self = StObject.set(x, "sampleErrors", js.Array(value :_*))
   }
 }

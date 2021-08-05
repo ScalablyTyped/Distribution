@@ -17,25 +17,19 @@ trait MonthlySchedule extends StObject {
 }
 object MonthlySchedule {
   
-  @scala.inline
-  def apply(): MonthlySchedule = {
+  inline def apply(): MonthlySchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MonthlySchedule]
   }
   
-  @scala.inline
-  implicit class MonthlyScheduleMutableBuilder[Self <: MonthlySchedule] (val x: Self) extends AnyVal {
+  extension [Self <: MonthlySchedule](x: Self) {
     
-    @scala.inline
-    def setMonthDay(value: Double): Self = StObject.set(x, "monthDay", value.asInstanceOf[js.Any])
+    inline def setMonthDay(value: Double): Self = StObject.set(x, "monthDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthDayUndefined: Self = StObject.set(x, "monthDay", js.undefined)
+    inline def setMonthDayUndefined: Self = StObject.set(x, "monthDay", js.undefined)
     
-    @scala.inline
-    def setWeekDayOfMonth(value: WeekDayOfMonth): Self = StObject.set(x, "weekDayOfMonth", value.asInstanceOf[js.Any])
+    inline def setWeekDayOfMonth(value: WeekDayOfMonth): Self = StObject.set(x, "weekDayOfMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekDayOfMonthUndefined: Self = StObject.set(x, "weekDayOfMonth", js.undefined)
+    inline def setWeekDayOfMonthUndefined: Self = StObject.set(x, "weekDayOfMonth", js.undefined)
   }
 }

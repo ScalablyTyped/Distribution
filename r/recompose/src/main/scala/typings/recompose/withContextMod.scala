@@ -14,6 +14,5 @@ object withContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TContext, TProps](childContextTypes: ValidationMap[TContext], getChildContext: mapper[TProps, js.Any]): InferableComponentEnhancer[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(childContextTypes.asInstanceOf[js.Any], getChildContext.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancer[js.Object]]
+  inline def default[TContext, TProps](childContextTypes: ValidationMap[TContext], getChildContext: mapper[TProps, js.Any]): InferableComponentEnhancer[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(childContextTypes.asInstanceOf[js.Any], getChildContext.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancer[js.Object]]
 }

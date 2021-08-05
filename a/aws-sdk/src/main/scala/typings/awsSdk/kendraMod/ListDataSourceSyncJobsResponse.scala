@@ -18,28 +18,21 @@ trait ListDataSourceSyncJobsResponse extends StObject {
 }
 object ListDataSourceSyncJobsResponse {
   
-  @scala.inline
-  def apply(): ListDataSourceSyncJobsResponse = {
+  inline def apply(): ListDataSourceSyncJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDataSourceSyncJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListDataSourceSyncJobsResponseMutableBuilder[Self <: ListDataSourceSyncJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDataSourceSyncJobsResponse](x: Self) {
     
-    @scala.inline
-    def setHistory(value: DataSourceSyncJobHistoryList): Self = StObject.set(x, "History", value.asInstanceOf[js.Any])
+    inline def setHistory(value: DataSourceSyncJobHistoryList): Self = StObject.set(x, "History", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "History", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "History", js.undefined)
     
-    @scala.inline
-    def setHistoryVarargs(value: DataSourceSyncJob*): Self = StObject.set(x, "History", js.Array(value :_*))
+    inline def setHistoryVarargs(value: DataSourceSyncJob*): Self = StObject.set(x, "History", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

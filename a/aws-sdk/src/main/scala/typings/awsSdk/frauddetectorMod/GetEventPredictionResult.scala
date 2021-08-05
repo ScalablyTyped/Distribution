@@ -18,31 +18,23 @@ trait GetEventPredictionResult extends StObject {
 }
 object GetEventPredictionResult {
   
-  @scala.inline
-  def apply(): GetEventPredictionResult = {
+  inline def apply(): GetEventPredictionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEventPredictionResult]
   }
   
-  @scala.inline
-  implicit class GetEventPredictionResultMutableBuilder[Self <: GetEventPredictionResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetEventPredictionResult](x: Self) {
     
-    @scala.inline
-    def setModelScores(value: ListOfModelScores): Self = StObject.set(x, "modelScores", value.asInstanceOf[js.Any])
+    inline def setModelScores(value: ListOfModelScores): Self = StObject.set(x, "modelScores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelScoresUndefined: Self = StObject.set(x, "modelScores", js.undefined)
+    inline def setModelScoresUndefined: Self = StObject.set(x, "modelScores", js.undefined)
     
-    @scala.inline
-    def setModelScoresVarargs(value: ModelScores*): Self = StObject.set(x, "modelScores", js.Array(value :_*))
+    inline def setModelScoresVarargs(value: ModelScores*): Self = StObject.set(x, "modelScores", js.Array(value :_*))
     
-    @scala.inline
-    def setRuleResults(value: ListOfRuleResults): Self = StObject.set(x, "ruleResults", value.asInstanceOf[js.Any])
+    inline def setRuleResults(value: ListOfRuleResults): Self = StObject.set(x, "ruleResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleResultsUndefined: Self = StObject.set(x, "ruleResults", js.undefined)
+    inline def setRuleResultsUndefined: Self = StObject.set(x, "ruleResults", js.undefined)
     
-    @scala.inline
-    def setRuleResultsVarargs(value: RuleResult*): Self = StObject.set(x, "ruleResults", js.Array(value :_*))
+    inline def setRuleResultsVarargs(value: RuleResult*): Self = StObject.set(x, "ruleResults", js.Array(value :_*))
   }
 }

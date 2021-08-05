@@ -20,22 +20,17 @@ trait GetLocalGatewayRouteTableFilter extends StObject {
 }
 object GetLocalGatewayRouteTableFilter {
   
-  @scala.inline
-  def apply(name: String, values: js.Array[String]): GetLocalGatewayRouteTableFilter = {
+  inline def apply(name: String, values: js.Array[String]): GetLocalGatewayRouteTableFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLocalGatewayRouteTableFilter]
   }
   
-  @scala.inline
-  implicit class GetLocalGatewayRouteTableFilterMutableBuilder[Self <: GetLocalGatewayRouteTableFilter] (val x: Self) extends AnyVal {
+  extension [Self <: GetLocalGatewayRouteTableFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

@@ -18,19 +18,15 @@ trait EBSOptionsStatus extends StObject {
 }
 object EBSOptionsStatus {
   
-  @scala.inline
-  def apply(Options: EBSOptions, Status: OptionStatus): EBSOptionsStatus = {
+  inline def apply(Options: EBSOptions, Status: OptionStatus): EBSOptionsStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[EBSOptionsStatus]
   }
   
-  @scala.inline
-  implicit class EBSOptionsStatusMutableBuilder[Self <: EBSOptionsStatus] (val x: Self) extends AnyVal {
+  extension [Self <: EBSOptionsStatus](x: Self) {
     
-    @scala.inline
-    def setOptions(value: EBSOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: EBSOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

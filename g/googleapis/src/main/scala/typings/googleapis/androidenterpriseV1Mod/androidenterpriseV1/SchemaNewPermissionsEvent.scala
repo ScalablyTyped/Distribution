@@ -31,37 +31,27 @@ trait SchemaNewPermissionsEvent extends StObject {
 }
 object SchemaNewPermissionsEvent {
   
-  @scala.inline
-  def apply(): SchemaNewPermissionsEvent = {
+  inline def apply(): SchemaNewPermissionsEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNewPermissionsEvent]
   }
   
-  @scala.inline
-  implicit class SchemaNewPermissionsEventMutableBuilder[Self <: SchemaNewPermissionsEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNewPermissionsEvent](x: Self) {
     
-    @scala.inline
-    def setApprovedPermissions(value: js.Array[String]): Self = StObject.set(x, "approvedPermissions", value.asInstanceOf[js.Any])
+    inline def setApprovedPermissions(value: js.Array[String]): Self = StObject.set(x, "approvedPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovedPermissionsUndefined: Self = StObject.set(x, "approvedPermissions", js.undefined)
+    inline def setApprovedPermissionsUndefined: Self = StObject.set(x, "approvedPermissions", js.undefined)
     
-    @scala.inline
-    def setApprovedPermissionsVarargs(value: String*): Self = StObject.set(x, "approvedPermissions", js.Array(value :_*))
+    inline def setApprovedPermissionsVarargs(value: String*): Self = StObject.set(x, "approvedPermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setRequestedPermissions(value: js.Array[String]): Self = StObject.set(x, "requestedPermissions", value.asInstanceOf[js.Any])
+    inline def setRequestedPermissions(value: js.Array[String]): Self = StObject.set(x, "requestedPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedPermissionsUndefined: Self = StObject.set(x, "requestedPermissions", js.undefined)
+    inline def setRequestedPermissionsUndefined: Self = StObject.set(x, "requestedPermissions", js.undefined)
     
-    @scala.inline
-    def setRequestedPermissionsVarargs(value: String*): Self = StObject.set(x, "requestedPermissions", js.Array(value :_*))
+    inline def setRequestedPermissionsVarargs(value: String*): Self = StObject.set(x, "requestedPermissions", js.Array(value :_*))
   }
 }

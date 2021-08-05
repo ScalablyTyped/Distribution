@@ -192,7 +192,7 @@ object mlParserAstMod {
     /* CompleteClass */
     override def visitAttribute(attribute: Attribute, context: js.Any): js.Any = js.native
     
-    var visitChildren: js.Any = js.native
+    /* private */ var visitChildren: js.Any = js.native
     
     /* CompleteClass */
     override def visitComment(comment: Comment, context: js.Any): js.Any = js.native
@@ -219,13 +219,10 @@ object mlParserAstMod {
     var value: String = js.native
   }
   
-  @scala.inline
-  def findNode(nodes: js.Array[Node], position: Double): HtmlAstPath = (^.asInstanceOf[js.Dynamic].applyDynamic("findNode")(nodes.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[HtmlAstPath]
+  inline def findNode(nodes: js.Array[Node], position: Double): HtmlAstPath = (^.asInstanceOf[js.Dynamic].applyDynamic("findNode")(nodes.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[HtmlAstPath]
   
-  @scala.inline
-  def visitAll(visitor: Visitor, nodes: js.Array[Node]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitAll")(visitor.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def visitAll(visitor: Visitor, nodes: js.Array[Node], context: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitAll")(visitor.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def visitAll(visitor: Visitor, nodes: js.Array[Node]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitAll")(visitor.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def visitAll(visitor: Visitor, nodes: js.Array[Node], context: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitAll")(visitor.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   type HtmlAstPath = AstPath[Node]
   
@@ -237,20 +234,16 @@ object mlParserAstMod {
   }
   object Node {
     
-    @scala.inline
-    def apply(sourceSpan: ParseSourceSpan, visit: (Visitor, js.Any) => js.Any): Node = {
+    inline def apply(sourceSpan: ParseSourceSpan, visit: (Visitor, js.Any) => js.Any): Node = {
       val __obj = js.Dynamic.literal(sourceSpan = sourceSpan.asInstanceOf[js.Any], visit = js.Any.fromFunction2(visit))
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
+      inline def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisit(value: (Visitor, js.Any) => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
+      inline def setVisit(value: (Visitor, js.Any) => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
     }
   }
   
@@ -272,8 +265,7 @@ object mlParserAstMod {
   }
   object Visitor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       visitAttribute: (Attribute, js.Any) => js.Any,
       visitComment: (Comment, js.Any) => js.Any,
       visitElement: (Element, js.Any) => js.Any,
@@ -285,32 +277,23 @@ object mlParserAstMod {
       __obj.asInstanceOf[Visitor]
     }
     
-    @scala.inline
-    implicit class VisitorMutableBuilder[Self <: Visitor] (val x: Self) extends AnyVal {
+    extension [Self <: Visitor](x: Self) {
       
-      @scala.inline
-      def setVisit(value: (/* node */ Node, /* context */ js.Any) => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
+      inline def setVisit(value: (/* node */ Node, /* context */ js.Any) => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitAttribute(value: (Attribute, js.Any) => js.Any): Self = StObject.set(x, "visitAttribute", js.Any.fromFunction2(value))
+      inline def setVisitAttribute(value: (Attribute, js.Any) => js.Any): Self = StObject.set(x, "visitAttribute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitComment(value: (Comment, js.Any) => js.Any): Self = StObject.set(x, "visitComment", js.Any.fromFunction2(value))
+      inline def setVisitComment(value: (Comment, js.Any) => js.Any): Self = StObject.set(x, "visitComment", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitElement(value: (Element, js.Any) => js.Any): Self = StObject.set(x, "visitElement", js.Any.fromFunction2(value))
+      inline def setVisitElement(value: (Element, js.Any) => js.Any): Self = StObject.set(x, "visitElement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitExpansion(value: (Expansion, js.Any) => js.Any): Self = StObject.set(x, "visitExpansion", js.Any.fromFunction2(value))
+      inline def setVisitExpansion(value: (Expansion, js.Any) => js.Any): Self = StObject.set(x, "visitExpansion", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitExpansionCase(value: (ExpansionCase, js.Any) => js.Any): Self = StObject.set(x, "visitExpansionCase", js.Any.fromFunction2(value))
+      inline def setVisitExpansionCase(value: (ExpansionCase, js.Any) => js.Any): Self = StObject.set(x, "visitExpansionCase", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitText(value: (Text, js.Any) => js.Any): Self = StObject.set(x, "visitText", js.Any.fromFunction2(value))
+      inline def setVisitText(value: (Text, js.Any) => js.Any): Self = StObject.set(x, "visitText", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitUndefined: Self = StObject.set(x, "visit", js.undefined)
+      inline def setVisitUndefined: Self = StObject.set(x, "visit", js.undefined)
     }
   }
 }

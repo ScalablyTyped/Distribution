@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPivotLineType extends StObject
 object XlPivotLineType {
   
-  @scala.inline
-  def xlPivotLineBlank: `3` = 3.asInstanceOf[`3`]
+  inline def xlPivotLineBlank: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlPivotLineGrandTotal: `2` = 2.asInstanceOf[`2`]
+  inline def xlPivotLineGrandTotal: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlPivotLineRegular: `0` = 0.asInstanceOf[`0`]
+  inline def xlPivotLineRegular: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlPivotLineSubtotal: `1` = 1.asInstanceOf[`1`]
+  inline def xlPivotLineSubtotal: `1` = 1.asInstanceOf[`1`]
 }

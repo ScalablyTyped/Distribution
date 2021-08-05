@@ -17,19 +17,15 @@ trait QuickDiffProvider extends StObject {
 }
 object QuickDiffProvider {
   
-  @scala.inline
-  def apply(): QuickDiffProvider = {
+  inline def apply(): QuickDiffProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QuickDiffProvider]
   }
   
-  @scala.inline
-  implicit class QuickDiffProviderMutableBuilder[Self <: QuickDiffProvider] (val x: Self) extends AnyVal {
+  extension [Self <: QuickDiffProvider](x: Self) {
     
-    @scala.inline
-    def setProvideOriginalResource(value: (/* uri */ Uri, /* token */ CancellationToken) => ProviderResult[Uri]): Self = StObject.set(x, "provideOriginalResource", js.Any.fromFunction2(value))
+    inline def setProvideOriginalResource(value: (/* uri */ Uri, /* token */ CancellationToken) => ProviderResult[Uri]): Self = StObject.set(x, "provideOriginalResource", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProvideOriginalResourceUndefined: Self = StObject.set(x, "provideOriginalResource", js.undefined)
+    inline def setProvideOriginalResourceUndefined: Self = StObject.set(x, "provideOriginalResource", js.undefined)
   }
 }

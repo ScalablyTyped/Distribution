@@ -65,8 +65,7 @@ trait SheetFilterDescriptor
 }
 object SheetFilterDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContainsHeader: Boolean,
     CopyOutputData: Boolean,
     FilterFields: SafeArray[TableFilterField],
@@ -98,34 +97,24 @@ object SheetFilterDescriptor {
     __obj.asInstanceOf[SheetFilterDescriptor]
   }
   
-  @scala.inline
-  implicit class SheetFilterDescriptorMutableBuilder[Self <: SheetFilterDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: SheetFilterDescriptor](x: Self) {
     
-    @scala.inline
-    def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
+    inline def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyOutputData(value: Boolean): Self = StObject.set(x, "CopyOutputData", value.asInstanceOf[js.Any])
+    inline def setCopyOutputData(value: Boolean): Self = StObject.set(x, "CopyOutputData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
+    inline def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFieldCount(value: Double): Self = StObject.set(x, "MaxFieldCount", value.asInstanceOf[js.Any])
+    inline def setMaxFieldCount(value: Double): Self = StObject.set(x, "MaxFieldCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: TableOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: TableOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputPosition(value: CellAddress): Self = StObject.set(x, "OutputPosition", value.asInstanceOf[js.Any])
+    inline def setOutputPosition(value: CellAddress): Self = StObject.set(x, "OutputPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveOutputPosition(value: Boolean): Self = StObject.set(x, "SaveOutputPosition", value.asInstanceOf[js.Any])
+    inline def setSaveOutputPosition(value: Boolean): Self = StObject.set(x, "SaveOutputPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipDuplicates(value: Boolean): Self = StObject.set(x, "SkipDuplicates", value.asInstanceOf[js.Any])
+    inline def setSkipDuplicates(value: Boolean): Self = StObject.set(x, "SkipDuplicates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseRegularExpressions(value: Boolean): Self = StObject.set(x, "UseRegularExpressions", value.asInstanceOf[js.Any])
+    inline def setUseRegularExpressions(value: Boolean): Self = StObject.set(x, "UseRegularExpressions", value.asInstanceOf[js.Any])
   }
 }

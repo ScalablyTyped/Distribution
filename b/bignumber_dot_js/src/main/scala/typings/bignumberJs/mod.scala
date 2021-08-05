@@ -189,8 +189,7 @@ object mod {
     @JSImport("bignumber.js", "default.DEBUG")
     @js.native
     def DEBUG: js.UndefOr[Boolean] = js.native
-    @scala.inline
-    def DEBUG_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+    inline def DEBUG_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
     
     /** See `MODULO_MODE`. */
     @JSImport("bignumber.js", "default.EUCLID")
@@ -242,8 +241,7 @@ object mod {
     @js.native
     val ROUND_UP: `0` = js.native
     
-    @scala.inline
-    def clone(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
+    inline def clone(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
     /**
       * Configures the settings that apply to this BigNumber constructor.
@@ -278,8 +276,7 @@ object mod {
       *
       * @param object The configuration object.
       */
-    @scala.inline
-    def config(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
+    inline def config(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
     
     /**
       * Returns `true` if `value` is a BigNumber instance, otherwise returns `false`.
@@ -302,8 +299,7 @@ object mod {
       *
       * @param value The value to test.
       */
-    @scala.inline
-    def isBigNumber(value: js.Any): /* is bignumber.js.bignumber.js.BigNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is bignumber.js.bignumber.js.BigNumber */ Boolean]
+    inline def isBigNumber(value: js.Any): /* is bignumber.js.bignumber.js.BigNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is bignumber.js.bignumber.js.BigNumber */ Boolean]
     
     /**
       * Returns a BigNumber whose value is the maximum of the arguments.
@@ -320,8 +316,7 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @scala.inline
-    def max(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def max(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a BigNumber whose value is the maximum of the arguments.
@@ -338,8 +333,7 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @scala.inline
-    def maximum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def maximum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a BigNumber whose value is the minimum of the arguments.
@@ -356,8 +350,7 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @scala.inline
-    def min(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def min(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a BigNumber whose value is the minimum of the arguments.
@@ -374,8 +367,7 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @scala.inline
-    def minimum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def minimum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a new BigNumber with a pseudo-random value equal to or greater than 0 and less than 1.
@@ -409,10 +401,8 @@ object mod {
       *
       * @param [decimalPlaces] Decimal places, integer, 0 to 1e+9.
       */
-    @scala.inline
-    def random(): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.bignumberJs.mod.BigNumber]
-    @scala.inline
-    def random(decimalPlaces: Double): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(decimalPlaces.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def random(): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def random(decimalPlaces: Double): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(decimalPlaces.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Configures the settings that apply to this BigNumber constructor.
@@ -447,8 +437,7 @@ object mod {
       *
       * @param object The configuration object.
       */
-    @scala.inline
-    def set(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
+    inline def set(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
     
     /**
       * Returns a BigNumber whose value is the sum of the arguments.
@@ -465,8 +454,7 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @scala.inline
-    def sum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def sum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
   }
   
   @JSImport("bignumber.js", "BigNumber")
@@ -574,7 +562,7 @@ object mod {
     def this(n: Value, base: Double) = this()
     
     /** Used internally to identify a BigNumber instance. */
-    val _isBigNumber: `true` = js.native
+    /* private */ val _isBigNumber: `true` = js.native
     
     /**
       * Returns a BigNumber whose value is the absolute value, i.e. the magnitude, of the value of this
@@ -1683,8 +1671,7 @@ object mod {
     @JSImport("bignumber.js", "BigNumber.DEBUG")
     @js.native
     def DEBUG: js.UndefOr[Boolean] = js.native
-    @scala.inline
-    def DEBUG_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+    inline def DEBUG_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
     
     /** See `MODULO_MODE`. */
     @JSImport("bignumber.js", "BigNumber.EUCLID")
@@ -1736,8 +1723,7 @@ object mod {
     @js.native
     val ROUND_UP: `0` = js.native
     
-    @scala.inline
-    def clone(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
+    inline def clone(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
     /**
       * Configures the settings that apply to this BigNumber constructor.
@@ -1772,8 +1758,7 @@ object mod {
       *
       * @param object The configuration object.
       */
-    @scala.inline
-    def config(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
+    inline def config(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
     
     /**
       * Returns `true` if `value` is a BigNumber instance, otherwise returns `false`.
@@ -1796,8 +1781,7 @@ object mod {
       *
       * @param value The value to test.
       */
-    @scala.inline
-    def isBigNumber(value: js.Any): /* is bignumber.js.bignumber.js.BigNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is bignumber.js.bignumber.js.BigNumber */ Boolean]
+    inline def isBigNumber(value: js.Any): /* is bignumber.js.bignumber.js.BigNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is bignumber.js.bignumber.js.BigNumber */ Boolean]
     
     /**
       * Returns a BigNumber whose value is the maximum of the arguments.
@@ -1814,8 +1798,7 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @scala.inline
-    def max(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def max(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a BigNumber whose value is the maximum of the arguments.
@@ -1832,8 +1815,7 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @scala.inline
-    def maximum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def maximum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a BigNumber whose value is the minimum of the arguments.
@@ -1850,8 +1832,7 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @scala.inline
-    def min(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def min(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a BigNumber whose value is the minimum of the arguments.
@@ -1868,8 +1849,7 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @scala.inline
-    def minimum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def minimum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a new BigNumber with a pseudo-random value equal to or greater than 0 and less than 1.
@@ -1903,10 +1883,8 @@ object mod {
       *
       * @param [decimalPlaces] Decimal places, integer, 0 to 1e+9.
       */
-    @scala.inline
-    def random(): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.bignumberJs.mod.BigNumber]
-    @scala.inline
-    def random(decimalPlaces: Double): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(decimalPlaces.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def random(): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def random(decimalPlaces: Double): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(decimalPlaces.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Configures the settings that apply to this BigNumber constructor.
@@ -1941,8 +1919,7 @@ object mod {
       *
       * @param object The configuration object.
       */
-    @scala.inline
-    def set(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
+    inline def set(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
     
     /**
       * Returns a BigNumber whose value is the sum of the arguments.
@@ -1959,8 +1936,7 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @scala.inline
-    def sum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    inline def sum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /** See `BigNumber.config` (alias `BigNumber.set`) and `BigNumber.clone`. */
     trait Config extends StObject {
@@ -2207,68 +2183,48 @@ object mod {
     }
     object Config {
       
-      @scala.inline
-      def apply(): Config = {
+      inline def apply(): Config = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Config]
       }
       
-      @scala.inline
-      implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+      extension [Self <: Config](x: Self) {
         
-        @scala.inline
-        def setALPHABET(value: String): Self = StObject.set(x, "ALPHABET", value.asInstanceOf[js.Any])
+        inline def setALPHABET(value: String): Self = StObject.set(x, "ALPHABET", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setALPHABETUndefined: Self = StObject.set(x, "ALPHABET", js.undefined)
+        inline def setALPHABETUndefined: Self = StObject.set(x, "ALPHABET", js.undefined)
         
-        @scala.inline
-        def setCRYPTO(value: Boolean): Self = StObject.set(x, "CRYPTO", value.asInstanceOf[js.Any])
+        inline def setCRYPTO(value: Boolean): Self = StObject.set(x, "CRYPTO", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCRYPTOUndefined: Self = StObject.set(x, "CRYPTO", js.undefined)
+        inline def setCRYPTOUndefined: Self = StObject.set(x, "CRYPTO", js.undefined)
         
-        @scala.inline
-        def setDECIMAL_PLACES(value: Double): Self = StObject.set(x, "DECIMAL_PLACES", value.asInstanceOf[js.Any])
+        inline def setDECIMAL_PLACES(value: Double): Self = StObject.set(x, "DECIMAL_PLACES", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDECIMAL_PLACESUndefined: Self = StObject.set(x, "DECIMAL_PLACES", js.undefined)
+        inline def setDECIMAL_PLACESUndefined: Self = StObject.set(x, "DECIMAL_PLACES", js.undefined)
         
-        @scala.inline
-        def setEXPONENTIAL_AT(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "EXPONENTIAL_AT", value.asInstanceOf[js.Any])
+        inline def setEXPONENTIAL_AT(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "EXPONENTIAL_AT", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEXPONENTIAL_ATUndefined: Self = StObject.set(x, "EXPONENTIAL_AT", js.undefined)
+        inline def setEXPONENTIAL_ATUndefined: Self = StObject.set(x, "EXPONENTIAL_AT", js.undefined)
         
-        @scala.inline
-        def setFORMAT(value: Format): Self = StObject.set(x, "FORMAT", value.asInstanceOf[js.Any])
+        inline def setFORMAT(value: Format): Self = StObject.set(x, "FORMAT", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFORMATUndefined: Self = StObject.set(x, "FORMAT", js.undefined)
+        inline def setFORMATUndefined: Self = StObject.set(x, "FORMAT", js.undefined)
         
-        @scala.inline
-        def setMODULO_MODE(value: ModuloMode): Self = StObject.set(x, "MODULO_MODE", value.asInstanceOf[js.Any])
+        inline def setMODULO_MODE(value: ModuloMode): Self = StObject.set(x, "MODULO_MODE", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMODULO_MODEUndefined: Self = StObject.set(x, "MODULO_MODE", js.undefined)
+        inline def setMODULO_MODEUndefined: Self = StObject.set(x, "MODULO_MODE", js.undefined)
         
-        @scala.inline
-        def setPOW_PRECISION(value: Double): Self = StObject.set(x, "POW_PRECISION", value.asInstanceOf[js.Any])
+        inline def setPOW_PRECISION(value: Double): Self = StObject.set(x, "POW_PRECISION", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPOW_PRECISIONUndefined: Self = StObject.set(x, "POW_PRECISION", js.undefined)
+        inline def setPOW_PRECISIONUndefined: Self = StObject.set(x, "POW_PRECISION", js.undefined)
         
-        @scala.inline
-        def setRANGE(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "RANGE", value.asInstanceOf[js.Any])
+        inline def setRANGE(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "RANGE", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRANGEUndefined: Self = StObject.set(x, "RANGE", js.undefined)
+        inline def setRANGEUndefined: Self = StObject.set(x, "RANGE", js.undefined)
         
-        @scala.inline
-        def setROUNDING_MODE(value: RoundingMode): Self = StObject.set(x, "ROUNDING_MODE", value.asInstanceOf[js.Any])
+        inline def setROUNDING_MODE(value: RoundingMode): Self = StObject.set(x, "ROUNDING_MODE", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setROUNDING_MODEUndefined: Self = StObject.set(x, "ROUNDING_MODE", js.undefined)
+        inline def setROUNDING_MODEUndefined: Self = StObject.set(x, "ROUNDING_MODE", js.undefined)
       }
     }
     
@@ -2279,10 +2235,10 @@ object mod {
          with Instantiable2[/* n */ Value, /* base */ Double, typings.bignumberJs.mod.BigNumber] {
       
       /** Helps ES6 import. */
-      val default: js.UndefOr[Constructor] = js.native
+      /* private */ val default: js.UndefOr[Constructor] = js.native
       
       /** Helps ES6 import. */
-      val BigNumber: js.UndefOr[Constructor] = js.native
+      /* private */ val BigNumber: js.UndefOr[Constructor] = js.native
       
       /**
         * To aid in debugging, if a `BigNumber.DEBUG` property is `true` then an error will be thrown
@@ -2603,62 +2559,44 @@ object mod {
     }
     object Format {
       
-      @scala.inline
-      def apply(): Format = {
+      inline def apply(): Format = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Format]
       }
       
-      @scala.inline
-      implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+      extension [Self <: Format](x: Self) {
         
-        @scala.inline
-        def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
+        inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
+        inline def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
         
-        @scala.inline
-        def setFractionGroupSeparator(value: String): Self = StObject.set(x, "fractionGroupSeparator", value.asInstanceOf[js.Any])
+        inline def setFractionGroupSeparator(value: String): Self = StObject.set(x, "fractionGroupSeparator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFractionGroupSeparatorUndefined: Self = StObject.set(x, "fractionGroupSeparator", js.undefined)
+        inline def setFractionGroupSeparatorUndefined: Self = StObject.set(x, "fractionGroupSeparator", js.undefined)
         
-        @scala.inline
-        def setFractionGroupSize(value: Double): Self = StObject.set(x, "fractionGroupSize", value.asInstanceOf[js.Any])
+        inline def setFractionGroupSize(value: Double): Self = StObject.set(x, "fractionGroupSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFractionGroupSizeUndefined: Self = StObject.set(x, "fractionGroupSize", js.undefined)
+        inline def setFractionGroupSizeUndefined: Self = StObject.set(x, "fractionGroupSize", js.undefined)
         
-        @scala.inline
-        def setGroupSeparator(value: String): Self = StObject.set(x, "groupSeparator", value.asInstanceOf[js.Any])
+        inline def setGroupSeparator(value: String): Self = StObject.set(x, "groupSeparator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupSeparatorUndefined: Self = StObject.set(x, "groupSeparator", js.undefined)
+        inline def setGroupSeparatorUndefined: Self = StObject.set(x, "groupSeparator", js.undefined)
         
-        @scala.inline
-        def setGroupSize(value: Double): Self = StObject.set(x, "groupSize", value.asInstanceOf[js.Any])
+        inline def setGroupSize(value: Double): Self = StObject.set(x, "groupSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupSizeUndefined: Self = StObject.set(x, "groupSize", js.undefined)
+        inline def setGroupSizeUndefined: Self = StObject.set(x, "groupSize", js.undefined)
         
-        @scala.inline
-        def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+        inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+        inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
         
-        @scala.inline
-        def setSecondaryGroupSize(value: Double): Self = StObject.set(x, "secondaryGroupSize", value.asInstanceOf[js.Any])
+        inline def setSecondaryGroupSize(value: Double): Self = StObject.set(x, "secondaryGroupSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecondaryGroupSizeUndefined: Self = StObject.set(x, "secondaryGroupSize", js.undefined)
+        inline def setSecondaryGroupSizeUndefined: Self = StObject.set(x, "secondaryGroupSize", js.undefined)
         
-        @scala.inline
-        def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+        inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+        inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       }
     }
     
@@ -2677,35 +2615,26 @@ object mod {
     }
     object Instance {
       
-      @scala.inline
-      def apply(): Instance = {
+      inline def apply(): Instance = {
         val __obj = js.Dynamic.literal(c = null, e = null, s = null)
         __obj.asInstanceOf[Instance]
       }
       
-      @scala.inline
-      implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+      extension [Self <: Instance](x: Self) {
         
-        @scala.inline
-        def setC(value: js.Array[Double]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+        inline def setC(value: js.Array[Double]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCNull: Self = StObject.set(x, "c", null)
+        inline def setCNull: Self = StObject.set(x, "c", null)
         
-        @scala.inline
-        def setCVarargs(value: Double*): Self = StObject.set(x, "c", js.Array(value :_*))
+        inline def setCVarargs(value: Double*): Self = StObject.set(x, "c", js.Array(value :_*))
         
-        @scala.inline
-        def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+        inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setENull: Self = StObject.set(x, "e", null)
+        inline def setENull: Self = StObject.set(x, "e", null)
         
-        @scala.inline
-        def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+        inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSNull: Self = StObject.set(x, "s", null)
+        inline def setSNull: Self = StObject.set(x, "s", null)
       }
     }
     
@@ -2719,20 +2648,15 @@ object mod {
     trait ModuloMode extends StObject
     object ModuloMode {
       
-      @scala.inline
-      def `0`: typings.bignumberJs.bignumberJsNumbers.`0` = 0.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`0`]
+      inline def `0`: typings.bignumberJs.bignumberJsNumbers.`0` = 0.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`0`]
       
-      @scala.inline
-      def `1`: typings.bignumberJs.bignumberJsNumbers.`1` = 1.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`1`]
+      inline def `1`: typings.bignumberJs.bignumberJsNumbers.`1` = 1.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`1`]
       
-      @scala.inline
-      def `3`: typings.bignumberJs.bignumberJsNumbers.`3` = 3.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`3`]
+      inline def `3`: typings.bignumberJs.bignumberJsNumbers.`3` = 3.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`3`]
       
-      @scala.inline
-      def `6`: typings.bignumberJs.bignumberJsNumbers.`6` = 6.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`6`]
+      inline def `6`: typings.bignumberJs.bignumberJsNumbers.`6` = 6.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`6`]
       
-      @scala.inline
-      def `9`: typings.bignumberJs.bignumberJsNumbers.`9` = 9.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`9`]
+      inline def `9`: typings.bignumberJs.bignumberJsNumbers.`9` = 9.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`9`]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -2749,32 +2673,23 @@ object mod {
     trait RoundingMode extends StObject
     object RoundingMode {
       
-      @scala.inline
-      def `0`: typings.bignumberJs.bignumberJsNumbers.`0` = 0.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`0`]
+      inline def `0`: typings.bignumberJs.bignumberJsNumbers.`0` = 0.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`0`]
       
-      @scala.inline
-      def `1`: typings.bignumberJs.bignumberJsNumbers.`1` = 1.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`1`]
+      inline def `1`: typings.bignumberJs.bignumberJsNumbers.`1` = 1.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`1`]
       
-      @scala.inline
-      def `2`: typings.bignumberJs.bignumberJsNumbers.`2` = 2.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`2`]
+      inline def `2`: typings.bignumberJs.bignumberJsNumbers.`2` = 2.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`2`]
       
-      @scala.inline
-      def `3`: typings.bignumberJs.bignumberJsNumbers.`3` = 3.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`3`]
+      inline def `3`: typings.bignumberJs.bignumberJsNumbers.`3` = 3.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`3`]
       
-      @scala.inline
-      def `4`: typings.bignumberJs.bignumberJsNumbers.`4` = 4.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`4`]
+      inline def `4`: typings.bignumberJs.bignumberJsNumbers.`4` = 4.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`4`]
       
-      @scala.inline
-      def `5`: typings.bignumberJs.bignumberJsNumbers.`5` = 5.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`5`]
+      inline def `5`: typings.bignumberJs.bignumberJsNumbers.`5` = 5.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`5`]
       
-      @scala.inline
-      def `6`: typings.bignumberJs.bignumberJsNumbers.`6` = 6.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`6`]
+      inline def `6`: typings.bignumberJs.bignumberJsNumbers.`6` = 6.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`6`]
       
-      @scala.inline
-      def `7`: typings.bignumberJs.bignumberJsNumbers.`7` = 7.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`7`]
+      inline def `7`: typings.bignumberJs.bignumberJsNumbers.`7` = 7.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`7`]
       
-      @scala.inline
-      def `8`: typings.bignumberJs.bignumberJsNumbers.`8` = 8.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`8`]
+      inline def `8`: typings.bignumberJs.bignumberJsNumbers.`8` = 8.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`8`]
     }
     
     type Value = String | Double | Instance

@@ -16,8 +16,7 @@ trait Statement[T] extends StObject {
 }
 object Statement {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     bind: (String, js.Any) => Unit,
     execute: () => Cursor[T],
     getBatchSize: () => Double,
@@ -27,19 +26,14 @@ object Statement {
     __obj.asInstanceOf[Statement[T]]
   }
   
-  @scala.inline
-  implicit class StatementMutableBuilder[Self <: Statement[?], T] (val x: Self & Statement[T]) extends AnyVal {
+  extension [Self <: Statement[?], T](x: Self & Statement[T]) {
     
-    @scala.inline
-    def setBind(value: (String, js.Any) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
+    inline def setBind(value: (String, js.Any) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExecute(value: () => Cursor[T]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Cursor[T]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBatchSize(value: () => Double): Self = StObject.set(x, "getBatchSize", js.Any.fromFunction0(value))
+    inline def setGetBatchSize(value: () => Double): Self = StObject.set(x, "getBatchSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetBatchSize(value: Double => Unit): Self = StObject.set(x, "setBatchSize", js.Any.fromFunction1(value))
+    inline def setSetBatchSize(value: Double => Unit): Self = StObject.set(x, "setBatchSize", js.Any.fromFunction1(value))
   }
 }

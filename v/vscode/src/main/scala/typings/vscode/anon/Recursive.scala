@@ -10,16 +10,13 @@ trait Recursive extends StObject {
 }
 object Recursive {
   
-  @scala.inline
-  def apply(recursive: Boolean): Recursive = {
+  inline def apply(recursive: Boolean): Recursive = {
     val __obj = js.Dynamic.literal(recursive = recursive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Recursive]
   }
   
-  @scala.inline
-  implicit class RecursiveMutableBuilder[Self <: Recursive] (val x: Self) extends AnyVal {
+  extension [Self <: Recursive](x: Self) {
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
   }
 }

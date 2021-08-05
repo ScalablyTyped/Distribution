@@ -13,17 +13,14 @@ object iwrappedcomponentMod {
   }
   object IWrappedComponent {
     
-    @scala.inline
-    def apply[P](wrappedComponent: IReactComponent[P]): IWrappedComponent[P] = {
+    inline def apply[P](wrappedComponent: IReactComponent[P]): IWrappedComponent[P] = {
       val __obj = js.Dynamic.literal(wrappedComponent = wrappedComponent.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWrappedComponent[P]]
     }
     
-    @scala.inline
-    implicit class IWrappedComponentMutableBuilder[Self <: IWrappedComponent[?], P] (val x: Self & IWrappedComponent[P]) extends AnyVal {
+    extension [Self <: IWrappedComponent[?], P](x: Self & IWrappedComponent[P]) {
       
-      @scala.inline
-      def setWrappedComponent(value: IReactComponent[P]): Self = StObject.set(x, "wrappedComponent", value.asInstanceOf[js.Any])
+      inline def setWrappedComponent(value: IReactComponent[P]): Self = StObject.set(x, "wrappedComponent", value.asInstanceOf[js.Any])
     }
   }
 }

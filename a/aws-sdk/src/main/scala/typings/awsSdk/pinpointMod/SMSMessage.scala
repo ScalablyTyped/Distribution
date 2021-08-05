@@ -43,55 +43,39 @@ trait SMSMessage extends StObject {
 }
 object SMSMessage {
   
-  @scala.inline
-  def apply(): SMSMessage = {
+  inline def apply(): SMSMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SMSMessage]
   }
   
-  @scala.inline
-  implicit class SMSMessageMutableBuilder[Self <: SMSMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SMSMessage](x: Self) {
     
-    @scala.inline
-    def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
-    @scala.inline
-    def setKeyword(value: string): Self = StObject.set(x, "Keyword", value.asInstanceOf[js.Any])
+    inline def setKeyword(value: string): Self = StObject.set(x, "Keyword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordUndefined: Self = StObject.set(x, "Keyword", js.undefined)
+    inline def setKeywordUndefined: Self = StObject.set(x, "Keyword", js.undefined)
     
-    @scala.inline
-    def setMediaUrl(value: string): Self = StObject.set(x, "MediaUrl", value.asInstanceOf[js.Any])
+    inline def setMediaUrl(value: string): Self = StObject.set(x, "MediaUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUrlUndefined: Self = StObject.set(x, "MediaUrl", js.undefined)
+    inline def setMediaUrlUndefined: Self = StObject.set(x, "MediaUrl", js.undefined)
     
-    @scala.inline
-    def setMessageType(value: MessageType): Self = StObject.set(x, "MessageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: MessageType): Self = StObject.set(x, "MessageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTypeUndefined: Self = StObject.set(x, "MessageType", js.undefined)
+    inline def setMessageTypeUndefined: Self = StObject.set(x, "MessageType", js.undefined)
     
-    @scala.inline
-    def setOriginationNumber(value: string): Self = StObject.set(x, "OriginationNumber", value.asInstanceOf[js.Any])
+    inline def setOriginationNumber(value: string): Self = StObject.set(x, "OriginationNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginationNumberUndefined: Self = StObject.set(x, "OriginationNumber", js.undefined)
+    inline def setOriginationNumberUndefined: Self = StObject.set(x, "OriginationNumber", js.undefined)
     
-    @scala.inline
-    def setSenderId(value: string): Self = StObject.set(x, "SenderId", value.asInstanceOf[js.Any])
+    inline def setSenderId(value: string): Self = StObject.set(x, "SenderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderIdUndefined: Self = StObject.set(x, "SenderId", js.undefined)
+    inline def setSenderIdUndefined: Self = StObject.set(x, "SenderId", js.undefined)
     
-    @scala.inline
-    def setSubstitutions(value: MapOfListOfString): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
+    inline def setSubstitutions(value: MapOfListOfString): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
+    inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
   }
 }

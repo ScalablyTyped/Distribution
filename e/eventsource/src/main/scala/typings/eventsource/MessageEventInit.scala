@@ -16,31 +16,23 @@ trait MessageEventInit[T]
 }
 object MessageEventInit {
   
-  @scala.inline
-  def apply[T](): MessageEventInit[T] = {
+  inline def apply[T](): MessageEventInit[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageEventInit[T]]
   }
   
-  @scala.inline
-  implicit class MessageEventInitMutableBuilder[Self <: MessageEventInit[?], T] (val x: Self & MessageEventInit[T]) extends AnyVal {
+  extension [Self <: MessageEventInit[?], T](x: Self & MessageEventInit[T]) {
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setLastEventId(value: String): Self = StObject.set(x, "lastEventId", value.asInstanceOf[js.Any])
+    inline def setLastEventId(value: String): Self = StObject.set(x, "lastEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEventIdUndefined: Self = StObject.set(x, "lastEventId", js.undefined)
+    inline def setLastEventIdUndefined: Self = StObject.set(x, "lastEventId", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
   }
 }

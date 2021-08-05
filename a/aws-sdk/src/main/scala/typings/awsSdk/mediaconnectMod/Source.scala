@@ -63,73 +63,51 @@ trait Source extends StObject {
 }
 object Source {
   
-  @scala.inline
-  def apply(Name: string, SourceArn: string): Source = {
+  inline def apply(Name: string, SourceArn: string): Source = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SourceArn = SourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
   
-  @scala.inline
-  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+  extension [Self <: Source](x: Self) {
     
-    @scala.inline
-    def setDataTransferSubscriberFeePercent(value: integer): Self = StObject.set(x, "DataTransferSubscriberFeePercent", value.asInstanceOf[js.Any])
+    inline def setDataTransferSubscriberFeePercent(value: integer): Self = StObject.set(x, "DataTransferSubscriberFeePercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTransferSubscriberFeePercentUndefined: Self = StObject.set(x, "DataTransferSubscriberFeePercent", js.undefined)
+    inline def setDataTransferSubscriberFeePercentUndefined: Self = StObject.set(x, "DataTransferSubscriberFeePercent", js.undefined)
     
-    @scala.inline
-    def setDecryption(value: Encryption): Self = StObject.set(x, "Decryption", value.asInstanceOf[js.Any])
+    inline def setDecryption(value: Encryption): Self = StObject.set(x, "Decryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecryptionUndefined: Self = StObject.set(x, "Decryption", js.undefined)
+    inline def setDecryptionUndefined: Self = StObject.set(x, "Decryption", js.undefined)
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
+    inline def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
+    inline def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
     
-    @scala.inline
-    def setIngestIp(value: string): Self = StObject.set(x, "IngestIp", value.asInstanceOf[js.Any])
+    inline def setIngestIp(value: string): Self = StObject.set(x, "IngestIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestIpUndefined: Self = StObject.set(x, "IngestIp", js.undefined)
+    inline def setIngestIpUndefined: Self = StObject.set(x, "IngestIp", js.undefined)
     
-    @scala.inline
-    def setIngestPort(value: integer): Self = StObject.set(x, "IngestPort", value.asInstanceOf[js.Any])
+    inline def setIngestPort(value: integer): Self = StObject.set(x, "IngestPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestPortUndefined: Self = StObject.set(x, "IngestPort", js.undefined)
+    inline def setIngestPortUndefined: Self = StObject.set(x, "IngestPort", js.undefined)
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceArn(value: string): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+    inline def setSourceArn(value: string): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransport(value: Transport): Self = StObject.set(x, "Transport", value.asInstanceOf[js.Any])
+    inline def setTransport(value: Transport): Self = StObject.set(x, "Transport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportUndefined: Self = StObject.set(x, "Transport", js.undefined)
+    inline def setTransportUndefined: Self = StObject.set(x, "Transport", js.undefined)
     
-    @scala.inline
-    def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
+    inline def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcInterfaceNameUndefined: Self = StObject.set(x, "VpcInterfaceName", js.undefined)
+    inline def setVpcInterfaceNameUndefined: Self = StObject.set(x, "VpcInterfaceName", js.undefined)
     
-    @scala.inline
-    def setWhitelistCidr(value: string): Self = StObject.set(x, "WhitelistCidr", value.asInstanceOf[js.Any])
+    inline def setWhitelistCidr(value: string): Self = StObject.set(x, "WhitelistCidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistCidrUndefined: Self = StObject.set(x, "WhitelistCidr", js.undefined)
+    inline def setWhitelistCidrUndefined: Self = StObject.set(x, "WhitelistCidr", js.undefined)
   }
 }

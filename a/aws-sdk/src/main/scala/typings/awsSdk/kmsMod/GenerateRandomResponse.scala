@@ -13,19 +13,15 @@ trait GenerateRandomResponse extends StObject {
 }
 object GenerateRandomResponse {
   
-  @scala.inline
-  def apply(): GenerateRandomResponse = {
+  inline def apply(): GenerateRandomResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateRandomResponse]
   }
   
-  @scala.inline
-  implicit class GenerateRandomResponseMutableBuilder[Self <: GenerateRandomResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateRandomResponse](x: Self) {
     
-    @scala.inline
-    def setPlaintext(value: PlaintextType): Self = StObject.set(x, "Plaintext", value.asInstanceOf[js.Any])
+    inline def setPlaintext(value: PlaintextType): Self = StObject.set(x, "Plaintext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaintextUndefined: Self = StObject.set(x, "Plaintext", js.undefined)
+    inline def setPlaintextUndefined: Self = StObject.set(x, "Plaintext", js.undefined)
   }
 }

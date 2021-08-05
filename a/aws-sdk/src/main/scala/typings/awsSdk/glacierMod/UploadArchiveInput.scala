@@ -33,37 +33,27 @@ trait UploadArchiveInput extends StObject {
 }
 object UploadArchiveInput {
   
-  @scala.inline
-  def apply(accountId: String, vaultName: String): UploadArchiveInput = {
+  inline def apply(accountId: String, vaultName: String): UploadArchiveInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadArchiveInput]
   }
   
-  @scala.inline
-  implicit class UploadArchiveInputMutableBuilder[Self <: UploadArchiveInput] (val x: Self) extends AnyVal {
+  extension [Self <: UploadArchiveInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveDescription(value: String): Self = StObject.set(x, "archiveDescription", value.asInstanceOf[js.Any])
+    inline def setArchiveDescription(value: String): Self = StObject.set(x, "archiveDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveDescriptionUndefined: Self = StObject.set(x, "archiveDescription", js.undefined)
+    inline def setArchiveDescriptionUndefined: Self = StObject.set(x, "archiveDescription", js.undefined)
     
-    @scala.inline
-    def setBody(value: Stream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Stream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait StartChatContactResponse extends StObject {
 }
 object StartChatContactResponse {
   
-  @scala.inline
-  def apply(): StartChatContactResponse = {
+  inline def apply(): StartChatContactResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartChatContactResponse]
   }
   
-  @scala.inline
-  implicit class StartChatContactResponseMutableBuilder[Self <: StartChatContactResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartChatContactResponse](x: Self) {
     
-    @scala.inline
-    def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
+    inline def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactIdUndefined: Self = StObject.set(x, "ContactId", js.undefined)
+    inline def setContactIdUndefined: Self = StObject.set(x, "ContactId", js.undefined)
     
-    @scala.inline
-    def setParticipantId(value: ParticipantId): Self = StObject.set(x, "ParticipantId", value.asInstanceOf[js.Any])
+    inline def setParticipantId(value: ParticipantId): Self = StObject.set(x, "ParticipantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantIdUndefined: Self = StObject.set(x, "ParticipantId", js.undefined)
+    inline def setParticipantIdUndefined: Self = StObject.set(x, "ParticipantId", js.undefined)
     
-    @scala.inline
-    def setParticipantToken(value: ParticipantToken): Self = StObject.set(x, "ParticipantToken", value.asInstanceOf[js.Any])
+    inline def setParticipantToken(value: ParticipantToken): Self = StObject.set(x, "ParticipantToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantTokenUndefined: Self = StObject.set(x, "ParticipantToken", js.undefined)
+    inline def setParticipantTokenUndefined: Self = StObject.set(x, "ParticipantToken", js.undefined)
   }
 }

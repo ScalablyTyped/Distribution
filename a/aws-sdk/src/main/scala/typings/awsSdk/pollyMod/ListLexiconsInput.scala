@@ -13,19 +13,15 @@ trait ListLexiconsInput extends StObject {
 }
 object ListLexiconsInput {
   
-  @scala.inline
-  def apply(): ListLexiconsInput = {
+  inline def apply(): ListLexiconsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLexiconsInput]
   }
   
-  @scala.inline
-  implicit class ListLexiconsInputMutableBuilder[Self <: ListLexiconsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListLexiconsInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

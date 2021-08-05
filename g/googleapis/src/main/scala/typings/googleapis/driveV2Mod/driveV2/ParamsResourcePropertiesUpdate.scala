@@ -40,43 +40,31 @@ trait ParamsResourcePropertiesUpdate
 }
 object ParamsResourcePropertiesUpdate {
   
-  @scala.inline
-  def apply(): ParamsResourcePropertiesUpdate = {
+  inline def apply(): ParamsResourcePropertiesUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePropertiesUpdate]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePropertiesUpdateMutableBuilder[Self <: ParamsResourcePropertiesUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePropertiesUpdate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setPropertyKey(value: String): Self = StObject.set(x, "propertyKey", value.asInstanceOf[js.Any])
+    inline def setPropertyKey(value: String): Self = StObject.set(x, "propertyKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyKeyUndefined: Self = StObject.set(x, "propertyKey", js.undefined)
+    inline def setPropertyKeyUndefined: Self = StObject.set(x, "propertyKey", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaProperty): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaProperty): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object functionCallTagHandlerAndroidMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(functionName: String, handler: Handler): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(functionName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def default(functionName: String, handler: Handler): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(functionName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
 }

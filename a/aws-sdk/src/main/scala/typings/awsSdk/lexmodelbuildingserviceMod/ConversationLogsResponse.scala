@@ -18,28 +18,21 @@ trait ConversationLogsResponse extends StObject {
 }
 object ConversationLogsResponse {
   
-  @scala.inline
-  def apply(): ConversationLogsResponse = {
+  inline def apply(): ConversationLogsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConversationLogsResponse]
   }
   
-  @scala.inline
-  implicit class ConversationLogsResponseMutableBuilder[Self <: ConversationLogsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ConversationLogsResponse](x: Self) {
     
-    @scala.inline
-    def setIamRoleArn(value: IamRoleArn): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
+    inline def setIamRoleArn(value: IamRoleArn): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
+    inline def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
     
-    @scala.inline
-    def setLogSettings(value: LogSettingsResponseList): Self = StObject.set(x, "logSettings", value.asInstanceOf[js.Any])
+    inline def setLogSettings(value: LogSettingsResponseList): Self = StObject.set(x, "logSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogSettingsUndefined: Self = StObject.set(x, "logSettings", js.undefined)
+    inline def setLogSettingsUndefined: Self = StObject.set(x, "logSettings", js.undefined)
     
-    @scala.inline
-    def setLogSettingsVarargs(value: LogSettingsResponse*): Self = StObject.set(x, "logSettings", js.Array(value :_*))
+    inline def setLogSettingsVarargs(value: LogSettingsResponse*): Self = StObject.set(x, "logSettings", js.Array(value :_*))
   }
 }

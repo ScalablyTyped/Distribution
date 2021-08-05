@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaStreamDirection extends StObject
 object MediaStreamDirection {
   
-  @scala.inline
-  def calleeToCaller: typings.microsoftGraph.microsoftGraphStrings.calleeToCaller = "calleeToCaller".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.calleeToCaller]
+  inline def calleeToCaller: typings.microsoftGraph.microsoftGraphStrings.calleeToCaller = "calleeToCaller".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.calleeToCaller]
   
-  @scala.inline
-  def callerToCallee: typings.microsoftGraph.microsoftGraphStrings.callerToCallee = "callerToCallee".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.callerToCallee]
+  inline def callerToCallee: typings.microsoftGraph.microsoftGraphStrings.callerToCallee = "callerToCallee".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.callerToCallee]
 }

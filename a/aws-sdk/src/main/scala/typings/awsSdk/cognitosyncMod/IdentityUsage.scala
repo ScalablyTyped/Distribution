@@ -33,43 +33,31 @@ trait IdentityUsage extends StObject {
 }
 object IdentityUsage {
   
-  @scala.inline
-  def apply(): IdentityUsage = {
+  inline def apply(): IdentityUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentityUsage]
   }
   
-  @scala.inline
-  implicit class IdentityUsageMutableBuilder[Self <: IdentityUsage] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityUsage](x: Self) {
     
-    @scala.inline
-    def setDataStorage(value: Long): Self = StObject.set(x, "DataStorage", value.asInstanceOf[js.Any])
+    inline def setDataStorage(value: Long): Self = StObject.set(x, "DataStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataStorageUndefined: Self = StObject.set(x, "DataStorage", js.undefined)
+    inline def setDataStorageUndefined: Self = StObject.set(x, "DataStorage", js.undefined)
     
-    @scala.inline
-    def setDatasetCount(value: Integer): Self = StObject.set(x, "DatasetCount", value.asInstanceOf[js.Any])
+    inline def setDatasetCount(value: Integer): Self = StObject.set(x, "DatasetCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetCountUndefined: Self = StObject.set(x, "DatasetCount", js.undefined)
+    inline def setDatasetCountUndefined: Self = StObject.set(x, "DatasetCount", js.undefined)
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+    inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
   }
 }

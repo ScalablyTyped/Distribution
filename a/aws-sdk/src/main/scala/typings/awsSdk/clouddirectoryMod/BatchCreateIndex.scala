@@ -33,40 +33,29 @@ trait BatchCreateIndex extends StObject {
 }
 object BatchCreateIndex {
   
-  @scala.inline
-  def apply(IsUnique: Bool, OrderedIndexedAttributeList: AttributeKeyList): BatchCreateIndex = {
+  inline def apply(IsUnique: Bool, OrderedIndexedAttributeList: AttributeKeyList): BatchCreateIndex = {
     val __obj = js.Dynamic.literal(IsUnique = IsUnique.asInstanceOf[js.Any], OrderedIndexedAttributeList = OrderedIndexedAttributeList.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchCreateIndex]
   }
   
-  @scala.inline
-  implicit class BatchCreateIndexMutableBuilder[Self <: BatchCreateIndex] (val x: Self) extends AnyVal {
+  extension [Self <: BatchCreateIndex](x: Self) {
     
-    @scala.inline
-    def setBatchReferenceName(value: BatchReferenceName): Self = StObject.set(x, "BatchReferenceName", value.asInstanceOf[js.Any])
+    inline def setBatchReferenceName(value: BatchReferenceName): Self = StObject.set(x, "BatchReferenceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchReferenceNameUndefined: Self = StObject.set(x, "BatchReferenceName", js.undefined)
+    inline def setBatchReferenceNameUndefined: Self = StObject.set(x, "BatchReferenceName", js.undefined)
     
-    @scala.inline
-    def setIsUnique(value: Bool): Self = StObject.set(x, "IsUnique", value.asInstanceOf[js.Any])
+    inline def setIsUnique(value: Bool): Self = StObject.set(x, "IsUnique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkName(value: LinkName): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
+    inline def setLinkName(value: LinkName): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkNameUndefined: Self = StObject.set(x, "LinkName", js.undefined)
+    inline def setLinkNameUndefined: Self = StObject.set(x, "LinkName", js.undefined)
     
-    @scala.inline
-    def setOrderedIndexedAttributeList(value: AttributeKeyList): Self = StObject.set(x, "OrderedIndexedAttributeList", value.asInstanceOf[js.Any])
+    inline def setOrderedIndexedAttributeList(value: AttributeKeyList): Self = StObject.set(x, "OrderedIndexedAttributeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderedIndexedAttributeListVarargs(value: AttributeKey*): Self = StObject.set(x, "OrderedIndexedAttributeList", js.Array(value :_*))
+    inline def setOrderedIndexedAttributeListVarargs(value: AttributeKey*): Self = StObject.set(x, "OrderedIndexedAttributeList", js.Array(value :_*))
     
-    @scala.inline
-    def setParentReference(value: ObjectReference): Self = StObject.set(x, "ParentReference", value.asInstanceOf[js.Any])
+    inline def setParentReference(value: ObjectReference): Self = StObject.set(x, "ParentReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentReferenceUndefined: Self = StObject.set(x, "ParentReference", js.undefined)
+    inline def setParentReferenceUndefined: Self = StObject.set(x, "ParentReference", js.undefined)
   }
 }

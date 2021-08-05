@@ -11,10 +11,10 @@ class Slot protected ()
      with typings.phaser.spine.Slot {
   def this(data: typings.phaser.spine.SlotData, bone: typings.phaser.spine.Bone) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var attachment: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var attachmentTime: js.Any = js.native
   
   /* CompleteClass */

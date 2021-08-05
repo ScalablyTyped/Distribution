@@ -11,8 +11,7 @@ trait Articulation
      with Modifier
 object Articulation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignSubNotesWithNote: (js.Array[Note], Note) => Unit,
     draw: () => Unit,
     getCategory: () => String,

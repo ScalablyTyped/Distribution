@@ -13,19 +13,15 @@ trait OSNotificationOpenedResult extends StObject {
 }
 object OSNotificationOpenedResult {
   
-  @scala.inline
-  def apply(action: ActionID, notification: OSNotification): OSNotificationOpenedResult = {
+  inline def apply(action: ActionID, notification: OSNotification): OSNotificationOpenedResult = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], notification = notification.asInstanceOf[js.Any])
     __obj.asInstanceOf[OSNotificationOpenedResult]
   }
   
-  @scala.inline
-  implicit class OSNotificationOpenedResultMutableBuilder[Self <: OSNotificationOpenedResult] (val x: Self) extends AnyVal {
+  extension [Self <: OSNotificationOpenedResult](x: Self) {
     
-    @scala.inline
-    def setAction(value: ActionID): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ActionID): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotification(value: OSNotification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: OSNotification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
   }
 }

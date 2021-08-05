@@ -13,9 +13,9 @@ object testCaseEventGeneratorMod {
   class TestCaseEventGenerator protected () extends StObject {
     def this(eventBroadcaster: EventEmitter, eventDataCollector: js.Any) = this()
     
-    var eventBroadcaster: js.Any = js.native
+    /* private */ var eventBroadcaster: js.Any = js.native
     
-    var eventDataCollector: js.Any = js.native
+    /* private */ var eventDataCollector: js.Any = js.native
     
     def generateTestCaseFinishedEvent(scenarioResult: IScenarioResult, testResult: js.Any): Unit = js.native
     
@@ -23,8 +23,8 @@ object testCaseEventGeneratorMod {
     
     def generateTestCaseStepEvents(scenarioResult: IScenarioResult): Unit = js.native
     
-    var getTestCasePickle: js.Any = js.native
+    /* private */ var getTestCasePickle: js.Any = js.native
     
-    var getTestCaseSourceLocation: js.Any = js.native
+    /* private */ var getTestCaseSourceLocation: js.Any = js.native
   }
 }

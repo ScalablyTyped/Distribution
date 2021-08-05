@@ -33,16 +33,16 @@ object registrarConnectorMod {
       */
     def this(channelType: String, context: js.Any, transport: Transport, config: Configuration) = this()
     
-    val channelType: js.Any = js.native
+    /* private */ val channelType: js.Any = js.native
     
-    val context: js.Any = js.native
+    /* private */ val context: js.Any = js.native
     
-    var persistedToken: js.Any = js.native
+    /* private */ var persistedToken: js.Any = js.native
     
-    var register: js.Any = js.native
+    /* private */ var register: js.Any = js.native
     
-    var registrationId: js.Any = js.native
+    /* private */ var registrationId: js.Any = js.native
     
-    val transport: js.Any = js.native
+    /* private */ val transport: js.Any = js.native
   }
 }

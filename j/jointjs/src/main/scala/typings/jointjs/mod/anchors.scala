@@ -35,47 +35,39 @@ object anchors {
   @JSImport("jointjs", "anchors.bottomLeft")
   @js.native
   def bottomLeft: GenericAnchor[typings.jointjs.jointjsStrings.bottomLeft] = js.native
-  @scala.inline
-  def bottomLeft_=(x: GenericAnchor[bottomLeft]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomLeft")(x.asInstanceOf[js.Any])
+  inline def bottomLeft_=(x: GenericAnchor[bottomLeft]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomLeft")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "anchors.bottomRight")
   @js.native
   def bottomRight: GenericAnchor[typings.jointjs.jointjsStrings.bottomRight] = js.native
-  @scala.inline
-  def bottomRight_=(x: GenericAnchor[bottomRight]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomRight")(x.asInstanceOf[js.Any])
+  inline def bottomRight_=(x: GenericAnchor[bottomRight]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomRight")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def bottom_=(x: GenericAnchor[bottom]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
+  inline def bottom_=(x: GenericAnchor[bottom]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "anchors.center")
   @js.native
   def center: GenericAnchor[typings.jointjs.jointjsStrings.center] = js.native
-  @scala.inline
-  def center_=(x: GenericAnchor[center]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("center")(x.asInstanceOf[js.Any])
+  inline def center_=(x: GenericAnchor[center]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("center")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "anchors.left")
   @js.native
   def left: GenericAnchor[typings.jointjs.jointjsStrings.left] = js.native
-  @scala.inline
-  def left_=(x: GenericAnchor[left]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
+  inline def left_=(x: GenericAnchor[left]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "anchors.midSide")
   @js.native
   def midSide: GenericAnchor[typings.jointjs.jointjsStrings.midSide] = js.native
-  @scala.inline
-  def midSide_=(x: GenericAnchor[midSide]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("midSide")(x.asInstanceOf[js.Any])
+  inline def midSide_=(x: GenericAnchor[midSide]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("midSide")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "anchors.perpendicular")
   @js.native
   def perpendicular: GenericAnchor[typings.jointjs.jointjsStrings.perpendicular] = js.native
-  @scala.inline
-  def perpendicular_=(x: GenericAnchor[perpendicular]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("perpendicular")(x.asInstanceOf[js.Any])
+  inline def perpendicular_=(x: GenericAnchor[perpendicular]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("perpendicular")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "anchors.right")
   @js.native
   def right: GenericAnchor[typings.jointjs.jointjsStrings.right] = js.native
-  @scala.inline
-  def right_=(x: GenericAnchor[right]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
+  inline def right_=(x: GenericAnchor[right]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "anchors.top")
   @js.native
@@ -84,17 +76,14 @@ object anchors {
   @JSImport("jointjs", "anchors.topLeft")
   @js.native
   def topLeft: GenericAnchor[typings.jointjs.jointjsStrings.topLeft] = js.native
-  @scala.inline
-  def topLeft_=(x: GenericAnchor[topLeft]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topLeft")(x.asInstanceOf[js.Any])
+  inline def topLeft_=(x: GenericAnchor[topLeft]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topLeft")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "anchors.topRight")
   @js.native
   def topRight: GenericAnchor[typings.jointjs.jointjsStrings.topRight] = js.native
-  @scala.inline
-  def topRight_=(x: GenericAnchor[topRight]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topRight")(x.asInstanceOf[js.Any])
+  inline def topRight_=(x: GenericAnchor[topRight]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topRight")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def top_=(x: GenericAnchor[top]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
+  inline def top_=(x: GenericAnchor[top]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
   
   type Anchor = GenericAnchor[AnchorType]
   
@@ -110,23 +99,17 @@ object anchors {
   trait AnchorArguments extends StObject
   object AnchorArguments {
     
-    @scala.inline
-    def dx: typings.jointjs.jointjsStrings.dx = "dx".asInstanceOf[typings.jointjs.jointjsStrings.dx]
+    inline def dx: typings.jointjs.jointjsStrings.dx = "dx".asInstanceOf[typings.jointjs.jointjsStrings.dx]
     
-    @scala.inline
-    def dy: typings.jointjs.jointjsStrings.dy = "dy".asInstanceOf[typings.jointjs.jointjsStrings.dy]
+    inline def dy: typings.jointjs.jointjsStrings.dy = "dy".asInstanceOf[typings.jointjs.jointjsStrings.dy]
     
-    @scala.inline
-    def fallbackAt: typings.jointjs.jointjsStrings.fallbackAt = "fallbackAt".asInstanceOf[typings.jointjs.jointjsStrings.fallbackAt]
+    inline def fallbackAt: typings.jointjs.jointjsStrings.fallbackAt = "fallbackAt".asInstanceOf[typings.jointjs.jointjsStrings.fallbackAt]
     
-    @scala.inline
-    def fixedAt: typings.jointjs.jointjsStrings.fixedAt = "fixedAt".asInstanceOf[typings.jointjs.jointjsStrings.fixedAt]
+    inline def fixedAt: typings.jointjs.jointjsStrings.fixedAt = "fixedAt".asInstanceOf[typings.jointjs.jointjsStrings.fixedAt]
     
-    @scala.inline
-    def length: typings.jointjs.jointjsStrings.length = "length".asInstanceOf[typings.jointjs.jointjsStrings.length]
+    inline def length: typings.jointjs.jointjsStrings.length = "length".asInstanceOf[typings.jointjs.jointjsStrings.length]
     
-    @scala.inline
-    def padding: typings.jointjs.jointjsStrings.padding = "padding".asInstanceOf[typings.jointjs.jointjsStrings.padding]
+    inline def padding: typings.jointjs.jointjsStrings.padding = "padding".asInstanceOf[typings.jointjs.jointjsStrings.padding]
   }
   
   trait AnchorArgumentsMap
@@ -167,8 +150,7 @@ object anchors {
   }
   object AnchorArgumentsMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bottom: BBoxAnchorArguments,
       bottomLeft: BBoxAnchorArguments,
       bottomRight: BBoxAnchorArguments,
@@ -190,56 +172,39 @@ object anchors {
       __obj.asInstanceOf[AnchorArgumentsMap]
     }
     
-    @scala.inline
-    implicit class AnchorArgumentsMapMutableBuilder[Self <: AnchorArgumentsMap] (val x: Self) extends AnyVal {
+    extension [Self <: AnchorArgumentsMap](x: Self) {
       
-      @scala.inline
-      def setBottom(value: BBoxAnchorArguments): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: BBoxAnchorArguments): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomLeft(value: BBoxAnchorArguments): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
+      inline def setBottomLeft(value: BBoxAnchorArguments): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomRight(value: BBoxAnchorArguments): Self = StObject.set(x, "bottomRight", value.asInstanceOf[js.Any])
+      inline def setBottomRight(value: BBoxAnchorArguments): Self = StObject.set(x, "bottomRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenter(value: BBoxAnchorArguments): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: BBoxAnchorArguments): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionClosest(value: ConnectionClosestAnchorArguments): Self = StObject.set(x, "connectionClosest", value.asInstanceOf[js.Any])
+      inline def setConnectionClosest(value: ConnectionClosestAnchorArguments): Self = StObject.set(x, "connectionClosest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionLength(value: ConnectionLengthAnchorArguments): Self = StObject.set(x, "connectionLength", value.asInstanceOf[js.Any])
+      inline def setConnectionLength(value: ConnectionLengthAnchorArguments): Self = StObject.set(x, "connectionLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionPerpendicular(value: ConnectionPerpendicularAnchorArguments): Self = StObject.set(x, "connectionPerpendicular", value.asInstanceOf[js.Any])
+      inline def setConnectionPerpendicular(value: ConnectionPerpendicularAnchorArguments): Self = StObject.set(x, "connectionPerpendicular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionRatio(value: ConnectionLengthAnchorArguments): Self = StObject.set(x, "connectionRatio", value.asInstanceOf[js.Any])
+      inline def setConnectionRatio(value: ConnectionLengthAnchorArguments): Self = StObject.set(x, "connectionRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: BBoxAnchorArguments): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: BBoxAnchorArguments): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMidSide(value: MidSideAnchorArguments): Self = StObject.set(x, "midSide", value.asInstanceOf[js.Any])
+      inline def setMidSide(value: MidSideAnchorArguments): Self = StObject.set(x, "midSide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelCenter(value: ModelCenterAnchorArguments): Self = StObject.set(x, "modelCenter", value.asInstanceOf[js.Any])
+      inline def setModelCenter(value: ModelCenterAnchorArguments): Self = StObject.set(x, "modelCenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerpendicular(value: PaddingAnchorArguments): Self = StObject.set(x, "perpendicular", value.asInstanceOf[js.Any])
+      inline def setPerpendicular(value: PaddingAnchorArguments): Self = StObject.set(x, "perpendicular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: BBoxAnchorArguments): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: BBoxAnchorArguments): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: BBoxAnchorArguments): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: BBoxAnchorArguments): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopLeft(value: BBoxAnchorArguments): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
+      inline def setTopLeft(value: BBoxAnchorArguments): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopRight(value: BBoxAnchorArguments): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
+      inline def setTopRight(value: BBoxAnchorArguments): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
     }
   }
   
@@ -275,26 +240,20 @@ object anchors {
   }
   object BBoxAnchorArguments {
     
-    @scala.inline
-    def apply(): BBoxAnchorArguments = {
+    inline def apply(): BBoxAnchorArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BBoxAnchorArguments]
     }
     
-    @scala.inline
-    implicit class BBoxAnchorArgumentsMutableBuilder[Self <: BBoxAnchorArguments] (val x: Self) extends AnyVal {
+    extension [Self <: BBoxAnchorArguments](x: Self) {
       
-      @scala.inline
-      def setDx(value: Double | String): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+      inline def setDx(value: Double | String): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+      inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
       
-      @scala.inline
-      def setDy(value: Double | String): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+      inline def setDy(value: Double | String): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+      inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     }
   }
   
@@ -318,25 +277,20 @@ object anchors {
   }
   object GenericAnchorJSON {
     
-    @scala.inline
-    def apply[K /* <: AnchorType */](name: K): GenericAnchorJSON[K] = {
+    inline def apply[K /* <: AnchorType */](name: K): GenericAnchorJSON[K] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericAnchorJSON[K]]
     }
     
-    @scala.inline
-    implicit class GenericAnchorJSONMutableBuilder[Self <: GenericAnchorJSON[?], K /* <: AnchorType */] (val x: Self & GenericAnchorJSON[K]) extends AnyVal {
+    extension [Self <: GenericAnchorJSON[?], K /* <: AnchorType */](x: Self & GenericAnchorJSON[K]) {
       
-      @scala.inline
-      def setArgs(
+      inline def setArgs(
         value: /* import warning: importer.ImportType#apply Failed type conversion: jointjs.jointjs.anchors.AnchorArgumentsMap[K] */ js.Any
       ): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -346,8 +300,7 @@ object anchors {
        with PaddingAnchorArguments
   object MidSideAnchorArguments {
     
-    @scala.inline
-    def apply(): MidSideAnchorArguments = {
+    inline def apply(): MidSideAnchorArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MidSideAnchorArguments]
     }
@@ -361,26 +314,20 @@ object anchors {
   }
   object ModelCenterAnchorArguments {
     
-    @scala.inline
-    def apply(): ModelCenterAnchorArguments = {
+    inline def apply(): ModelCenterAnchorArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModelCenterAnchorArguments]
     }
     
-    @scala.inline
-    implicit class ModelCenterAnchorArgumentsMutableBuilder[Self <: ModelCenterAnchorArguments] (val x: Self) extends AnyVal {
+    extension [Self <: ModelCenterAnchorArguments](x: Self) {
       
-      @scala.inline
-      def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+      inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+      inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
       
-      @scala.inline
-      def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+      inline def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+      inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     }
   }
   
@@ -390,20 +337,16 @@ object anchors {
   }
   object PaddingAnchorArguments {
     
-    @scala.inline
-    def apply(): PaddingAnchorArguments = {
+    inline def apply(): PaddingAnchorArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaddingAnchorArguments]
     }
     
-    @scala.inline
-    implicit class PaddingAnchorArgumentsMutableBuilder[Self <: PaddingAnchorArguments] (val x: Self) extends AnyVal {
+    extension [Self <: PaddingAnchorArguments](x: Self) {
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     }
   }
   
@@ -413,20 +356,16 @@ object anchors {
   }
   object RotateAnchorArguments {
     
-    @scala.inline
-    def apply(): RotateAnchorArguments = {
+    inline def apply(): RotateAnchorArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RotateAnchorArguments]
     }
     
-    @scala.inline
-    implicit class RotateAnchorArgumentsMutableBuilder[Self <: RotateAnchorArguments] (val x: Self) extends AnyVal {
+    extension [Self <: RotateAnchorArguments](x: Self) {
       
-      @scala.inline
-      def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     }
   }
 }

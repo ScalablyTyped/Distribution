@@ -25,25 +25,19 @@ trait ShapeUpdateData extends StObject {
 }
 object ShapeUpdateData {
   
-  @scala.inline
-  def apply(): ShapeUpdateData = {
+  inline def apply(): ShapeUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeUpdateData]
   }
   
-  @scala.inline
-  implicit class ShapeUpdateDataMutableBuilder[Self <: ShapeUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeUpdateData](x: Self) {
     
-    @scala.inline
-    def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setView(value: ShapeViewUpdateData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: ShapeViewUpdateData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -163,21 +163,16 @@ object opsworksStackMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Stack]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stack]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StackState): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stack]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StackState, opts: CustomResourceOptions): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    inline def get(name: String, id: Input[ID]): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    inline def get(name: String, id: Input[ID], state: StackState): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    inline def get(name: String, id: Input[ID], state: StackState, opts: CustomResourceOptions): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stack]
     
     /**
       * Returns true if the given object is an instance of Stack.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/stack.Stack */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/stack.Stack */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/stack.Stack */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/stack.Stack */ Boolean]
   }
   
   trait StackArgs extends StObject {
@@ -303,140 +298,96 @@ object opsworksStackMod {
   }
   object StackArgs {
     
-    @scala.inline
-    def apply(defaultInstanceProfileArn: Input[String], region: Input[String], serviceRoleArn: Input[String]): StackArgs = {
+    inline def apply(defaultInstanceProfileArn: Input[String], region: Input[String], serviceRoleArn: Input[String]): StackArgs = {
       val __obj = js.Dynamic.literal(defaultInstanceProfileArn = defaultInstanceProfileArn.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], serviceRoleArn = serviceRoleArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackArgs]
     }
     
-    @scala.inline
-    implicit class StackArgsMutableBuilder[Self <: StackArgs] (val x: Self) extends AnyVal {
+    extension [Self <: StackArgs](x: Self) {
       
-      @scala.inline
-      def setAgentVersion(value: Input[String]): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
+      inline def setAgentVersion(value: Input[String]): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
+      inline def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
       
-      @scala.inline
-      def setBerkshelfVersion(value: Input[String]): Self = StObject.set(x, "berkshelfVersion", value.asInstanceOf[js.Any])
+      inline def setBerkshelfVersion(value: Input[String]): Self = StObject.set(x, "berkshelfVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBerkshelfVersionUndefined: Self = StObject.set(x, "berkshelfVersion", js.undefined)
+      inline def setBerkshelfVersionUndefined: Self = StObject.set(x, "berkshelfVersion", js.undefined)
       
-      @scala.inline
-      def setColor(value: Input[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Input[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setConfigurationManagerName(value: Input[String]): Self = StObject.set(x, "configurationManagerName", value.asInstanceOf[js.Any])
+      inline def setConfigurationManagerName(value: Input[String]): Self = StObject.set(x, "configurationManagerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationManagerNameUndefined: Self = StObject.set(x, "configurationManagerName", js.undefined)
+      inline def setConfigurationManagerNameUndefined: Self = StObject.set(x, "configurationManagerName", js.undefined)
       
-      @scala.inline
-      def setConfigurationManagerVersion(value: Input[String]): Self = StObject.set(x, "configurationManagerVersion", value.asInstanceOf[js.Any])
+      inline def setConfigurationManagerVersion(value: Input[String]): Self = StObject.set(x, "configurationManagerVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationManagerVersionUndefined: Self = StObject.set(x, "configurationManagerVersion", js.undefined)
+      inline def setConfigurationManagerVersionUndefined: Self = StObject.set(x, "configurationManagerVersion", js.undefined)
       
-      @scala.inline
-      def setCustomCookbooksSources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.StackCustomCookbooksSource]]]): Self = StObject.set(x, "customCookbooksSources", value.asInstanceOf[js.Any])
+      inline def setCustomCookbooksSources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.StackCustomCookbooksSource]]]): Self = StObject.set(x, "customCookbooksSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomCookbooksSourcesUndefined: Self = StObject.set(x, "customCookbooksSources", js.undefined)
+      inline def setCustomCookbooksSourcesUndefined: Self = StObject.set(x, "customCookbooksSources", js.undefined)
       
-      @scala.inline
-      def setCustomCookbooksSourcesVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.StackCustomCookbooksSource]*): Self = StObject.set(x, "customCookbooksSources", js.Array(value :_*))
+      inline def setCustomCookbooksSourcesVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.StackCustomCookbooksSource]*): Self = StObject.set(x, "customCookbooksSources", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomJson(value: Input[String]): Self = StObject.set(x, "customJson", value.asInstanceOf[js.Any])
+      inline def setCustomJson(value: Input[String]): Self = StObject.set(x, "customJson", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomJsonUndefined: Self = StObject.set(x, "customJson", js.undefined)
+      inline def setCustomJsonUndefined: Self = StObject.set(x, "customJson", js.undefined)
       
-      @scala.inline
-      def setDefaultAvailabilityZone(value: Input[String]): Self = StObject.set(x, "defaultAvailabilityZone", value.asInstanceOf[js.Any])
+      inline def setDefaultAvailabilityZone(value: Input[String]): Self = StObject.set(x, "defaultAvailabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultAvailabilityZoneUndefined: Self = StObject.set(x, "defaultAvailabilityZone", js.undefined)
+      inline def setDefaultAvailabilityZoneUndefined: Self = StObject.set(x, "defaultAvailabilityZone", js.undefined)
       
-      @scala.inline
-      def setDefaultInstanceProfileArn(value: Input[String]): Self = StObject.set(x, "defaultInstanceProfileArn", value.asInstanceOf[js.Any])
+      inline def setDefaultInstanceProfileArn(value: Input[String]): Self = StObject.set(x, "defaultInstanceProfileArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOs(value: Input[String]): Self = StObject.set(x, "defaultOs", value.asInstanceOf[js.Any])
+      inline def setDefaultOs(value: Input[String]): Self = StObject.set(x, "defaultOs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOsUndefined: Self = StObject.set(x, "defaultOs", js.undefined)
+      inline def setDefaultOsUndefined: Self = StObject.set(x, "defaultOs", js.undefined)
       
-      @scala.inline
-      def setDefaultRootDeviceType(value: Input[String]): Self = StObject.set(x, "defaultRootDeviceType", value.asInstanceOf[js.Any])
+      inline def setDefaultRootDeviceType(value: Input[String]): Self = StObject.set(x, "defaultRootDeviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRootDeviceTypeUndefined: Self = StObject.set(x, "defaultRootDeviceType", js.undefined)
+      inline def setDefaultRootDeviceTypeUndefined: Self = StObject.set(x, "defaultRootDeviceType", js.undefined)
       
-      @scala.inline
-      def setDefaultSshKeyName(value: Input[String]): Self = StObject.set(x, "defaultSshKeyName", value.asInstanceOf[js.Any])
+      inline def setDefaultSshKeyName(value: Input[String]): Self = StObject.set(x, "defaultSshKeyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSshKeyNameUndefined: Self = StObject.set(x, "defaultSshKeyName", js.undefined)
+      inline def setDefaultSshKeyNameUndefined: Self = StObject.set(x, "defaultSshKeyName", js.undefined)
       
-      @scala.inline
-      def setDefaultSubnetId(value: Input[String]): Self = StObject.set(x, "defaultSubnetId", value.asInstanceOf[js.Any])
+      inline def setDefaultSubnetId(value: Input[String]): Self = StObject.set(x, "defaultSubnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSubnetIdUndefined: Self = StObject.set(x, "defaultSubnetId", js.undefined)
+      inline def setDefaultSubnetIdUndefined: Self = StObject.set(x, "defaultSubnetId", js.undefined)
       
-      @scala.inline
-      def setHostnameTheme(value: Input[String]): Self = StObject.set(x, "hostnameTheme", value.asInstanceOf[js.Any])
+      inline def setHostnameTheme(value: Input[String]): Self = StObject.set(x, "hostnameTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameThemeUndefined: Self = StObject.set(x, "hostnameTheme", js.undefined)
+      inline def setHostnameThemeUndefined: Self = StObject.set(x, "hostnameTheme", js.undefined)
       
-      @scala.inline
-      def setManageBerkshelf(value: Input[Boolean]): Self = StObject.set(x, "manageBerkshelf", value.asInstanceOf[js.Any])
+      inline def setManageBerkshelf(value: Input[Boolean]): Self = StObject.set(x, "manageBerkshelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManageBerkshelfUndefined: Self = StObject.set(x, "manageBerkshelf", js.undefined)
+      inline def setManageBerkshelfUndefined: Self = StObject.set(x, "manageBerkshelf", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
+      inline def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUseCustomCookbooks(value: Input[Boolean]): Self = StObject.set(x, "useCustomCookbooks", value.asInstanceOf[js.Any])
+      inline def setUseCustomCookbooks(value: Input[Boolean]): Self = StObject.set(x, "useCustomCookbooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCustomCookbooksUndefined: Self = StObject.set(x, "useCustomCookbooks", js.undefined)
+      inline def setUseCustomCookbooksUndefined: Self = StObject.set(x, "useCustomCookbooks", js.undefined)
       
-      @scala.inline
-      def setUseOpsworksSecurityGroups(value: Input[Boolean]): Self = StObject.set(x, "useOpsworksSecurityGroups", value.asInstanceOf[js.Any])
+      inline def setUseOpsworksSecurityGroups(value: Input[Boolean]): Self = StObject.set(x, "useOpsworksSecurityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseOpsworksSecurityGroupsUndefined: Self = StObject.set(x, "useOpsworksSecurityGroups", js.undefined)
+      inline def setUseOpsworksSecurityGroupsUndefined: Self = StObject.set(x, "useOpsworksSecurityGroups", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
   
@@ -567,161 +518,110 @@ object opsworksStackMod {
   }
   object StackState {
     
-    @scala.inline
-    def apply(): StackState = {
+    inline def apply(): StackState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StackState]
     }
     
-    @scala.inline
-    implicit class StackStateMutableBuilder[Self <: StackState] (val x: Self) extends AnyVal {
+    extension [Self <: StackState](x: Self) {
       
-      @scala.inline
-      def setAgentVersion(value: Input[String]): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
+      inline def setAgentVersion(value: Input[String]): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
+      inline def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setBerkshelfVersion(value: Input[String]): Self = StObject.set(x, "berkshelfVersion", value.asInstanceOf[js.Any])
+      inline def setBerkshelfVersion(value: Input[String]): Self = StObject.set(x, "berkshelfVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBerkshelfVersionUndefined: Self = StObject.set(x, "berkshelfVersion", js.undefined)
+      inline def setBerkshelfVersionUndefined: Self = StObject.set(x, "berkshelfVersion", js.undefined)
       
-      @scala.inline
-      def setColor(value: Input[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Input[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setConfigurationManagerName(value: Input[String]): Self = StObject.set(x, "configurationManagerName", value.asInstanceOf[js.Any])
+      inline def setConfigurationManagerName(value: Input[String]): Self = StObject.set(x, "configurationManagerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationManagerNameUndefined: Self = StObject.set(x, "configurationManagerName", js.undefined)
+      inline def setConfigurationManagerNameUndefined: Self = StObject.set(x, "configurationManagerName", js.undefined)
       
-      @scala.inline
-      def setConfigurationManagerVersion(value: Input[String]): Self = StObject.set(x, "configurationManagerVersion", value.asInstanceOf[js.Any])
+      inline def setConfigurationManagerVersion(value: Input[String]): Self = StObject.set(x, "configurationManagerVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationManagerVersionUndefined: Self = StObject.set(x, "configurationManagerVersion", js.undefined)
+      inline def setConfigurationManagerVersionUndefined: Self = StObject.set(x, "configurationManagerVersion", js.undefined)
       
-      @scala.inline
-      def setCustomCookbooksSources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.StackCustomCookbooksSource]]]): Self = StObject.set(x, "customCookbooksSources", value.asInstanceOf[js.Any])
+      inline def setCustomCookbooksSources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.StackCustomCookbooksSource]]]): Self = StObject.set(x, "customCookbooksSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomCookbooksSourcesUndefined: Self = StObject.set(x, "customCookbooksSources", js.undefined)
+      inline def setCustomCookbooksSourcesUndefined: Self = StObject.set(x, "customCookbooksSources", js.undefined)
       
-      @scala.inline
-      def setCustomCookbooksSourcesVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.StackCustomCookbooksSource]*): Self = StObject.set(x, "customCookbooksSources", js.Array(value :_*))
+      inline def setCustomCookbooksSourcesVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.StackCustomCookbooksSource]*): Self = StObject.set(x, "customCookbooksSources", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomJson(value: Input[String]): Self = StObject.set(x, "customJson", value.asInstanceOf[js.Any])
+      inline def setCustomJson(value: Input[String]): Self = StObject.set(x, "customJson", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomJsonUndefined: Self = StObject.set(x, "customJson", js.undefined)
+      inline def setCustomJsonUndefined: Self = StObject.set(x, "customJson", js.undefined)
       
-      @scala.inline
-      def setDefaultAvailabilityZone(value: Input[String]): Self = StObject.set(x, "defaultAvailabilityZone", value.asInstanceOf[js.Any])
+      inline def setDefaultAvailabilityZone(value: Input[String]): Self = StObject.set(x, "defaultAvailabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultAvailabilityZoneUndefined: Self = StObject.set(x, "defaultAvailabilityZone", js.undefined)
+      inline def setDefaultAvailabilityZoneUndefined: Self = StObject.set(x, "defaultAvailabilityZone", js.undefined)
       
-      @scala.inline
-      def setDefaultInstanceProfileArn(value: Input[String]): Self = StObject.set(x, "defaultInstanceProfileArn", value.asInstanceOf[js.Any])
+      inline def setDefaultInstanceProfileArn(value: Input[String]): Self = StObject.set(x, "defaultInstanceProfileArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultInstanceProfileArnUndefined: Self = StObject.set(x, "defaultInstanceProfileArn", js.undefined)
+      inline def setDefaultInstanceProfileArnUndefined: Self = StObject.set(x, "defaultInstanceProfileArn", js.undefined)
       
-      @scala.inline
-      def setDefaultOs(value: Input[String]): Self = StObject.set(x, "defaultOs", value.asInstanceOf[js.Any])
+      inline def setDefaultOs(value: Input[String]): Self = StObject.set(x, "defaultOs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOsUndefined: Self = StObject.set(x, "defaultOs", js.undefined)
+      inline def setDefaultOsUndefined: Self = StObject.set(x, "defaultOs", js.undefined)
       
-      @scala.inline
-      def setDefaultRootDeviceType(value: Input[String]): Self = StObject.set(x, "defaultRootDeviceType", value.asInstanceOf[js.Any])
+      inline def setDefaultRootDeviceType(value: Input[String]): Self = StObject.set(x, "defaultRootDeviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRootDeviceTypeUndefined: Self = StObject.set(x, "defaultRootDeviceType", js.undefined)
+      inline def setDefaultRootDeviceTypeUndefined: Self = StObject.set(x, "defaultRootDeviceType", js.undefined)
       
-      @scala.inline
-      def setDefaultSshKeyName(value: Input[String]): Self = StObject.set(x, "defaultSshKeyName", value.asInstanceOf[js.Any])
+      inline def setDefaultSshKeyName(value: Input[String]): Self = StObject.set(x, "defaultSshKeyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSshKeyNameUndefined: Self = StObject.set(x, "defaultSshKeyName", js.undefined)
+      inline def setDefaultSshKeyNameUndefined: Self = StObject.set(x, "defaultSshKeyName", js.undefined)
       
-      @scala.inline
-      def setDefaultSubnetId(value: Input[String]): Self = StObject.set(x, "defaultSubnetId", value.asInstanceOf[js.Any])
+      inline def setDefaultSubnetId(value: Input[String]): Self = StObject.set(x, "defaultSubnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSubnetIdUndefined: Self = StObject.set(x, "defaultSubnetId", js.undefined)
+      inline def setDefaultSubnetIdUndefined: Self = StObject.set(x, "defaultSubnetId", js.undefined)
       
-      @scala.inline
-      def setHostnameTheme(value: Input[String]): Self = StObject.set(x, "hostnameTheme", value.asInstanceOf[js.Any])
+      inline def setHostnameTheme(value: Input[String]): Self = StObject.set(x, "hostnameTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameThemeUndefined: Self = StObject.set(x, "hostnameTheme", js.undefined)
+      inline def setHostnameThemeUndefined: Self = StObject.set(x, "hostnameTheme", js.undefined)
       
-      @scala.inline
-      def setManageBerkshelf(value: Input[Boolean]): Self = StObject.set(x, "manageBerkshelf", value.asInstanceOf[js.Any])
+      inline def setManageBerkshelf(value: Input[Boolean]): Self = StObject.set(x, "manageBerkshelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManageBerkshelfUndefined: Self = StObject.set(x, "manageBerkshelf", js.undefined)
+      inline def setManageBerkshelfUndefined: Self = StObject.set(x, "manageBerkshelf", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
+      inline def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
+      inline def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
       
-      @scala.inline
-      def setStackEndpoint(value: Input[String]): Self = StObject.set(x, "stackEndpoint", value.asInstanceOf[js.Any])
+      inline def setStackEndpoint(value: Input[String]): Self = StObject.set(x, "stackEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackEndpointUndefined: Self = StObject.set(x, "stackEndpoint", js.undefined)
+      inline def setStackEndpointUndefined: Self = StObject.set(x, "stackEndpoint", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUseCustomCookbooks(value: Input[Boolean]): Self = StObject.set(x, "useCustomCookbooks", value.asInstanceOf[js.Any])
+      inline def setUseCustomCookbooks(value: Input[Boolean]): Self = StObject.set(x, "useCustomCookbooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCustomCookbooksUndefined: Self = StObject.set(x, "useCustomCookbooks", js.undefined)
+      inline def setUseCustomCookbooksUndefined: Self = StObject.set(x, "useCustomCookbooks", js.undefined)
       
-      @scala.inline
-      def setUseOpsworksSecurityGroups(value: Input[Boolean]): Self = StObject.set(x, "useOpsworksSecurityGroups", value.asInstanceOf[js.Any])
+      inline def setUseOpsworksSecurityGroups(value: Input[Boolean]): Self = StObject.set(x, "useOpsworksSecurityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseOpsworksSecurityGroupsUndefined: Self = StObject.set(x, "useOpsworksSecurityGroups", js.undefined)
+      inline def setUseOpsworksSecurityGroupsUndefined: Self = StObject.set(x, "useOpsworksSecurityGroups", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

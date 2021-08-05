@@ -94,8 +94,7 @@ trait IPropertyValueStatics extends StObject {
 }
 object IPropertyValueStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createBoolean: Boolean => js.Any,
     createBooleanArray: js.Array[Boolean] => js.Any,
     createChar16: String => js.Any,
@@ -140,124 +139,84 @@ object IPropertyValueStatics {
     __obj.asInstanceOf[IPropertyValueStatics]
   }
   
-  @scala.inline
-  implicit class IPropertyValueStaticsMutableBuilder[Self <: IPropertyValueStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyValueStatics](x: Self) {
     
-    @scala.inline
-    def setCreateBoolean(value: Boolean => js.Any): Self = StObject.set(x, "createBoolean", js.Any.fromFunction1(value))
+    inline def setCreateBoolean(value: Boolean => js.Any): Self = StObject.set(x, "createBoolean", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateBooleanArray(value: js.Array[Boolean] => js.Any): Self = StObject.set(x, "createBooleanArray", js.Any.fromFunction1(value))
+    inline def setCreateBooleanArray(value: js.Array[Boolean] => js.Any): Self = StObject.set(x, "createBooleanArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateChar16(value: String => js.Any): Self = StObject.set(x, "createChar16", js.Any.fromFunction1(value))
+    inline def setCreateChar16(value: String => js.Any): Self = StObject.set(x, "createChar16", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateChar16Array(value: js.Array[String] => js.Any): Self = StObject.set(x, "createChar16Array", js.Any.fromFunction1(value))
+    inline def setCreateChar16Array(value: js.Array[String] => js.Any): Self = StObject.set(x, "createChar16Array", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateDateTime(value: Date => js.Any): Self = StObject.set(x, "createDateTime", js.Any.fromFunction1(value))
+    inline def setCreateDateTime(value: Date => js.Any): Self = StObject.set(x, "createDateTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateDateTimeArray(value: js.Array[Date] => js.Any): Self = StObject.set(x, "createDateTimeArray", js.Any.fromFunction1(value))
+    inline def setCreateDateTimeArray(value: js.Array[Date] => js.Any): Self = StObject.set(x, "createDateTimeArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateDouble(value: Double => js.Any): Self = StObject.set(x, "createDouble", js.Any.fromFunction1(value))
+    inline def setCreateDouble(value: Double => js.Any): Self = StObject.set(x, "createDouble", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateDoubleArray(value: Float64Array => js.Any): Self = StObject.set(x, "createDoubleArray", js.Any.fromFunction1(value))
+    inline def setCreateDoubleArray(value: Float64Array => js.Any): Self = StObject.set(x, "createDoubleArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateEmpty(value: () => js.Any): Self = StObject.set(x, "createEmpty", js.Any.fromFunction0(value))
+    inline def setCreateEmpty(value: () => js.Any): Self = StObject.set(x, "createEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateGuid(value: String => js.Any): Self = StObject.set(x, "createGuid", js.Any.fromFunction1(value))
+    inline def setCreateGuid(value: String => js.Any): Self = StObject.set(x, "createGuid", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateGuidArray(value: js.Array[String] => js.Any): Self = StObject.set(x, "createGuidArray", js.Any.fromFunction1(value))
+    inline def setCreateGuidArray(value: js.Array[String] => js.Any): Self = StObject.set(x, "createGuidArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateInspectable(value: js.Any => js.Any): Self = StObject.set(x, "createInspectable", js.Any.fromFunction1(value))
+    inline def setCreateInspectable(value: js.Any => js.Any): Self = StObject.set(x, "createInspectable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateInspectableArray(value: js.Array[js.Any] => js.Any): Self = StObject.set(x, "createInspectableArray", js.Any.fromFunction1(value))
+    inline def setCreateInspectableArray(value: js.Array[js.Any] => js.Any): Self = StObject.set(x, "createInspectableArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateInt16(value: Double => js.Any): Self = StObject.set(x, "createInt16", js.Any.fromFunction1(value))
+    inline def setCreateInt16(value: Double => js.Any): Self = StObject.set(x, "createInt16", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateInt16Array(value: Int16Array => js.Any): Self = StObject.set(x, "createInt16Array", js.Any.fromFunction1(value))
+    inline def setCreateInt16Array(value: Int16Array => js.Any): Self = StObject.set(x, "createInt16Array", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateInt32(value: Double => js.Any): Self = StObject.set(x, "createInt32", js.Any.fromFunction1(value))
+    inline def setCreateInt32(value: Double => js.Any): Self = StObject.set(x, "createInt32", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateInt32Array(value: Int32Array => js.Any): Self = StObject.set(x, "createInt32Array", js.Any.fromFunction1(value))
+    inline def setCreateInt32Array(value: Int32Array => js.Any): Self = StObject.set(x, "createInt32Array", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateInt64(value: Double => js.Any): Self = StObject.set(x, "createInt64", js.Any.fromFunction1(value))
+    inline def setCreateInt64(value: Double => js.Any): Self = StObject.set(x, "createInt64", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateInt64Array(value: js.Array[Double] => js.Any): Self = StObject.set(x, "createInt64Array", js.Any.fromFunction1(value))
+    inline def setCreateInt64Array(value: js.Array[Double] => js.Any): Self = StObject.set(x, "createInt64Array", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreatePoint(value: Point => js.Any): Self = StObject.set(x, "createPoint", js.Any.fromFunction1(value))
+    inline def setCreatePoint(value: Point => js.Any): Self = StObject.set(x, "createPoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreatePointArray(value: js.Array[Point] => js.Any): Self = StObject.set(x, "createPointArray", js.Any.fromFunction1(value))
+    inline def setCreatePointArray(value: js.Array[Point] => js.Any): Self = StObject.set(x, "createPointArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateRect(value: Rect => js.Any): Self = StObject.set(x, "createRect", js.Any.fromFunction1(value))
+    inline def setCreateRect(value: Rect => js.Any): Self = StObject.set(x, "createRect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateRectArray(value: js.Array[Rect] => js.Any): Self = StObject.set(x, "createRectArray", js.Any.fromFunction1(value))
+    inline def setCreateRectArray(value: js.Array[Rect] => js.Any): Self = StObject.set(x, "createRectArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateSingle(value: Double => js.Any): Self = StObject.set(x, "createSingle", js.Any.fromFunction1(value))
+    inline def setCreateSingle(value: Double => js.Any): Self = StObject.set(x, "createSingle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateSingleArray(value: Float32Array => js.Any): Self = StObject.set(x, "createSingleArray", js.Any.fromFunction1(value))
+    inline def setCreateSingleArray(value: Float32Array => js.Any): Self = StObject.set(x, "createSingleArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateSize(value: Size => js.Any): Self = StObject.set(x, "createSize", js.Any.fromFunction1(value))
+    inline def setCreateSize(value: Size => js.Any): Self = StObject.set(x, "createSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateSizeArray(value: js.Array[Size] => js.Any): Self = StObject.set(x, "createSizeArray", js.Any.fromFunction1(value))
+    inline def setCreateSizeArray(value: js.Array[Size] => js.Any): Self = StObject.set(x, "createSizeArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateString(value: String => js.Any): Self = StObject.set(x, "createString", js.Any.fromFunction1(value))
+    inline def setCreateString(value: String => js.Any): Self = StObject.set(x, "createString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateStringArray(value: js.Array[String] => js.Any): Self = StObject.set(x, "createStringArray", js.Any.fromFunction1(value))
+    inline def setCreateStringArray(value: js.Array[String] => js.Any): Self = StObject.set(x, "createStringArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateTimeSpan(value: Double => js.Any): Self = StObject.set(x, "createTimeSpan", js.Any.fromFunction1(value))
+    inline def setCreateTimeSpan(value: Double => js.Any): Self = StObject.set(x, "createTimeSpan", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateTimeSpanArray(value: js.Array[Double] => js.Any): Self = StObject.set(x, "createTimeSpanArray", js.Any.fromFunction1(value))
+    inline def setCreateTimeSpanArray(value: js.Array[Double] => js.Any): Self = StObject.set(x, "createTimeSpanArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateUInt16(value: Double => js.Any): Self = StObject.set(x, "createUInt16", js.Any.fromFunction1(value))
+    inline def setCreateUInt16(value: Double => js.Any): Self = StObject.set(x, "createUInt16", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateUInt16Array(value: Uint16Array => js.Any): Self = StObject.set(x, "createUInt16Array", js.Any.fromFunction1(value))
+    inline def setCreateUInt16Array(value: Uint16Array => js.Any): Self = StObject.set(x, "createUInt16Array", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateUInt32(value: Double => js.Any): Self = StObject.set(x, "createUInt32", js.Any.fromFunction1(value))
+    inline def setCreateUInt32(value: Double => js.Any): Self = StObject.set(x, "createUInt32", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateUInt32Array(value: Uint32Array => js.Any): Self = StObject.set(x, "createUInt32Array", js.Any.fromFunction1(value))
+    inline def setCreateUInt32Array(value: Uint32Array => js.Any): Self = StObject.set(x, "createUInt32Array", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateUInt64(value: Double => js.Any): Self = StObject.set(x, "createUInt64", js.Any.fromFunction1(value))
+    inline def setCreateUInt64(value: Double => js.Any): Self = StObject.set(x, "createUInt64", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateUInt64Array(value: js.Array[Double] => js.Any): Self = StObject.set(x, "createUInt64Array", js.Any.fromFunction1(value))
+    inline def setCreateUInt64Array(value: js.Array[Double] => js.Any): Self = StObject.set(x, "createUInt64Array", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateUInt8(value: Double => js.Any): Self = StObject.set(x, "createUInt8", js.Any.fromFunction1(value))
+    inline def setCreateUInt8(value: Double => js.Any): Self = StObject.set(x, "createUInt8", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateUInt8Array(value: Uint8Array => js.Any): Self = StObject.set(x, "createUInt8Array", js.Any.fromFunction1(value))
+    inline def setCreateUInt8Array(value: Uint8Array => js.Any): Self = StObject.set(x, "createUInt8Array", js.Any.fromFunction1(value))
   }
 }

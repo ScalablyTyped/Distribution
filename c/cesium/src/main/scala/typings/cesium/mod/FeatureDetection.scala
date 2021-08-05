@@ -10,15 +10,11 @@ object FeatureDetection {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def supportsFullscreen(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsFullscreen")().asInstanceOf[Boolean]
+  inline def supportsFullscreen(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsFullscreen")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def supportsTypedArrays(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsTypedArrays")().asInstanceOf[Boolean]
+  inline def supportsTypedArrays(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsTypedArrays")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def supportsWebAssembly(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsWebAssembly")().asInstanceOf[Boolean]
+  inline def supportsWebAssembly(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsWebAssembly")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def supportsWebWorkers(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsWebWorkers")().asInstanceOf[Boolean]
+  inline def supportsWebWorkers(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsWebWorkers")().asInstanceOf[Boolean]
 }

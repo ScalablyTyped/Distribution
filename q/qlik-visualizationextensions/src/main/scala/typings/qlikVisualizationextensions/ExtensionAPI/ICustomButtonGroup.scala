@@ -17,8 +17,7 @@ trait ICustomButtonGroup
 }
 object ICustomButtonGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultValue: String,
     label: String,
     options: valueOrfunc[ICustomControlOption],
@@ -30,19 +29,14 @@ object ICustomButtonGroup {
     __obj.asInstanceOf[ICustomButtonGroup]
   }
   
-  @scala.inline
-  implicit class ICustomButtonGroupMutableBuilder[Self <: ICustomButtonGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomButtonGroup](x: Self) {
     
-    @scala.inline
-    def setComponent(value: buttongroup): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: buttongroup): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: valueOrfunc[ICustomControlOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: valueOrfunc[ICustomControlOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsFunction0(value: () => ICustomControlOption): Self = StObject.set(x, "options", js.Any.fromFunction0(value))
+    inline def setOptionsFunction0(value: () => ICustomControlOption): Self = StObject.set(x, "options", js.Any.fromFunction0(value))
   }
 }

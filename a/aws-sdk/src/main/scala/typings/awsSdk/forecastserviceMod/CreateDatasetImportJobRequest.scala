@@ -33,37 +33,27 @@ trait CreateDatasetImportJobRequest extends StObject {
 }
 object CreateDatasetImportJobRequest {
   
-  @scala.inline
-  def apply(DataSource: DataSource, DatasetArn: Arn, DatasetImportJobName: Name): CreateDatasetImportJobRequest = {
+  inline def apply(DataSource: DataSource, DatasetArn: Arn, DatasetImportJobName: Name): CreateDatasetImportJobRequest = {
     val __obj = js.Dynamic.literal(DataSource = DataSource.asInstanceOf[js.Any], DatasetArn = DatasetArn.asInstanceOf[js.Any], DatasetImportJobName = DatasetImportJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDatasetImportJobRequest]
   }
   
-  @scala.inline
-  implicit class CreateDatasetImportJobRequestMutableBuilder[Self <: CreateDatasetImportJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDatasetImportJobRequest](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: DataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetArn(value: Arn): Self = StObject.set(x, "DatasetArn", value.asInstanceOf[js.Any])
+    inline def setDatasetArn(value: Arn): Self = StObject.set(x, "DatasetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetImportJobName(value: Name): Self = StObject.set(x, "DatasetImportJobName", value.asInstanceOf[js.Any])
+    inline def setDatasetImportJobName(value: Name): Self = StObject.set(x, "DatasetImportJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestampFormat(value: TimestampFormat): Self = StObject.set(x, "TimestampFormat", value.asInstanceOf[js.Any])
+    inline def setTimestampFormat(value: TimestampFormat): Self = StObject.set(x, "TimestampFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampFormatUndefined: Self = StObject.set(x, "TimestampFormat", js.undefined)
+    inline def setTimestampFormatUndefined: Self = StObject.set(x, "TimestampFormat", js.undefined)
   }
 }

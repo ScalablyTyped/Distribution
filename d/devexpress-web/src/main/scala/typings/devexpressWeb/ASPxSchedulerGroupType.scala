@@ -26,22 +26,17 @@ trait ASPxSchedulerGroupType extends StObject {
 }
 object ASPxSchedulerGroupType {
   
-  @scala.inline
-  def apply(Date: String, None: String, Resource: String): ASPxSchedulerGroupType = {
+  inline def apply(Date: String, None: String, Resource: String): ASPxSchedulerGroupType = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], None = None.asInstanceOf[js.Any], Resource = Resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxSchedulerGroupType]
   }
   
-  @scala.inline
-  implicit class ASPxSchedulerGroupTypeMutableBuilder[Self <: ASPxSchedulerGroupType] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxSchedulerGroupType](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: String): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
+    inline def setNone(value: String): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
   }
 }

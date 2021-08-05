@@ -34,8 +34,7 @@ trait TimelineFeedResponse extends StObject {
 }
 object TimelineFeedResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     auto_load_more_enabled: Boolean,
     client_feed_changelist_applied: Boolean,
     client_gap_enforcer_matrix: js.Array[TimelineFeedResponseClientGapEnforcerMatrixItem],
@@ -54,52 +53,36 @@ object TimelineFeedResponse {
     __obj.asInstanceOf[TimelineFeedResponse]
   }
   
-  @scala.inline
-  implicit class TimelineFeedResponseMutableBuilder[Self <: TimelineFeedResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineFeedResponse](x: Self) {
     
-    @scala.inline
-    def setAuto_load_more_enabled(value: Boolean): Self = StObject.set(x, "auto_load_more_enabled", value.asInstanceOf[js.Any])
+    inline def setAuto_load_more_enabled(value: Boolean): Self = StObject.set(x, "auto_load_more_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_feed_changelist_applied(value: Boolean): Self = StObject.set(x, "client_feed_changelist_applied", value.asInstanceOf[js.Any])
+    inline def setClient_feed_changelist_applied(value: Boolean): Self = StObject.set(x, "client_feed_changelist_applied", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_gap_enforcer_matrix(value: js.Array[TimelineFeedResponseClientGapEnforcerMatrixItem]): Self = StObject.set(x, "client_gap_enforcer_matrix", value.asInstanceOf[js.Any])
+    inline def setClient_gap_enforcer_matrix(value: js.Array[TimelineFeedResponseClientGapEnforcerMatrixItem]): Self = StObject.set(x, "client_gap_enforcer_matrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_gap_enforcer_matrixVarargs(value: TimelineFeedResponseClientGapEnforcerMatrixItem*): Self = StObject.set(x, "client_gap_enforcer_matrix", js.Array(value :_*))
+    inline def setClient_gap_enforcer_matrixVarargs(value: TimelineFeedResponseClientGapEnforcerMatrixItem*): Self = StObject.set(x, "client_gap_enforcer_matrix", js.Array(value :_*))
     
-    @scala.inline
-    def setClient_session_id(value: String): Self = StObject.set(x, "client_session_id", value.asInstanceOf[js.Any])
+    inline def setClient_session_id(value: String): Self = StObject.set(x, "client_session_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeed_items(value: js.Array[TimelineFeedResponseFeedItemsItem]): Self = StObject.set(x, "feed_items", value.asInstanceOf[js.Any])
+    inline def setFeed_items(value: js.Array[TimelineFeedResponseFeedItemsItem]): Self = StObject.set(x, "feed_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeed_itemsVarargs(value: TimelineFeedResponseFeedItemsItem*): Self = StObject.set(x, "feed_items", js.Array(value :_*))
+    inline def setFeed_itemsVarargs(value: TimelineFeedResponseFeedItemsItem*): Self = StObject.set(x, "feed_items", js.Array(value :_*))
     
-    @scala.inline
-    def setFeed_pill_text(value: String): Self = StObject.set(x, "feed_pill_text", value.asInstanceOf[js.Any])
+    inline def setFeed_pill_text(value: String): Self = StObject.set(x, "feed_pill_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_direct_v2_enabled(value: Boolean): Self = StObject.set(x, "is_direct_v2_enabled", value.asInstanceOf[js.Any])
+    inline def setIs_direct_v2_enabled(value: Boolean): Self = StObject.set(x, "is_direct_v2_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
+    inline def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
+    inline def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum_results(value: Double): Self = StObject.set(x, "num_results", value.asInstanceOf[js.Any])
+    inline def setNum_results(value: Double): Self = StObject.set(x, "num_results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagination_info(value: TimelineFeedResponsePaginationInfo): Self = StObject.set(x, "pagination_info", value.asInstanceOf[js.Any])
+    inline def setPagination_info(value: TimelineFeedResponsePaginationInfo): Self = StObject.set(x, "pagination_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView_state_version(value: String): Self = StObject.set(x, "view_state_version", value.asInstanceOf[js.Any])
+    inline def setView_state_version(value: String): Self = StObject.set(x, "view_state_version", value.asInstanceOf[js.Any])
   }
 }

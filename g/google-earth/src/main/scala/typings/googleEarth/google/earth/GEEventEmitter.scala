@@ -43,8 +43,7 @@ trait GEEventEmitter extends StObject {
 }
 object GEEventEmitter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     mousedown: KmlMouseEvent => Unit,
@@ -57,28 +56,20 @@ object GEEventEmitter {
     __obj.asInstanceOf[GEEventEmitter]
   }
   
-  @scala.inline
-  implicit class GEEventEmitterMutableBuilder[Self <: GEEventEmitter] (val x: Self) extends AnyVal {
+  extension [Self <: GEEventEmitter](x: Self) {
     
-    @scala.inline
-    def setClick(value: KmlMouseEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+    inline def setClick(value: KmlMouseEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDblclick(value: KmlMouseEvent => Unit): Self = StObject.set(x, "dblclick", js.Any.fromFunction1(value))
+    inline def setDblclick(value: KmlMouseEvent => Unit): Self = StObject.set(x, "dblclick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMousedown(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mousedown", js.Any.fromFunction1(value))
+    inline def setMousedown(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mousedown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMousemove(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mousemove", js.Any.fromFunction1(value))
+    inline def setMousemove(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mousemove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseout(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mouseout", js.Any.fromFunction1(value))
+    inline def setMouseout(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mouseout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseover(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mouseover", js.Any.fromFunction1(value))
+    inline def setMouseover(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mouseover", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseup(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mouseup", js.Any.fromFunction1(value))
+    inline def setMouseup(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mouseup", js.Any.fromFunction1(value))
   }
 }

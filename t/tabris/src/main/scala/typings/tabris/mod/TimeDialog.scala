@@ -43,15 +43,12 @@ object TimeDialog {
     * Creates and opens a time dialog.
     * @param date The time to be displayed in the dialog. The current time is used when no date object is provided.
     */
-  @scala.inline
-  def open(): TimeDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[TimeDialog]
-  @scala.inline
-  def open(date: Date): TimeDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(date.asInstanceOf[js.Any]).asInstanceOf[TimeDialog]
+  inline def open(): TimeDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[TimeDialog]
+  inline def open(date: Date): TimeDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(date.asInstanceOf[js.Any]).asInstanceOf[TimeDialog]
   /**
     * Makes the given time dialog visible. Meant to be used with inline-JSX. In TypeScript it also casts
     * the given JSX element from `any` to an actual TimeDialog.
     * @param timeDialog The time dialog to open
     */
-  @scala.inline
-  def open(timeDialog: TimeDialog): TimeDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(timeDialog.asInstanceOf[js.Any]).asInstanceOf[TimeDialog]
+  inline def open(timeDialog: TimeDialog): TimeDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(timeDialog.asInstanceOf[js.Any]).asInstanceOf[TimeDialog]
 }

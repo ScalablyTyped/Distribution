@@ -35,7 +35,7 @@ object stylableResolverMod {
     def deepResolve(maybeImport: StylableSymbol): CSSResolve[StylableSymbol] | JSResolve | Null = js.native
     def deepResolve(maybeImport: StylableSymbol, path: js.Array[StylableSymbol]): CSSResolve[StylableSymbol] | JSResolve | Null = js.native
     
-    var fileProcessor: FileProcessor[StylableMeta] = js.native
+    /* protected */ var fileProcessor: FileProcessor[StylableMeta] = js.native
     
     /* protected */ def requireModule(modulePath: String): js.Any = js.native
     
@@ -130,8 +130,7 @@ object stylableResolverMod {
     def validateImports(meta: StylableMeta, diagnostics: Diagnostics): Unit = js.native
   }
   
-  @scala.inline
-  def isInPath(
+  inline def isInPath(
     extendPath: js.Array[CSSResolve[ClassSymbol | ElementSymbol]],
     hasHasName1HasSource1: CSSResolve[ClassSymbol | ElementSymbol]
   ): js.UndefOr[CSSResolve[ClassSymbol | ElementSymbol]] = (^.asInstanceOf[js.Dynamic].applyDynamic("isInPath")(extendPath.asInstanceOf[js.Any], hasHasName1HasSource1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CSSResolve[ClassSymbol | ElementSymbol]]]
@@ -142,11 +141,9 @@ object stylableResolverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def UNKNOWN_IMPORTED_FILE(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_IMPORTED_FILE")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def UNKNOWN_IMPORTED_FILE(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_IMPORTED_FILE")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def UNKNOWN_IMPORTED_SYMBOL(name: String, path: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_IMPORTED_SYMBOL")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def UNKNOWN_IMPORTED_SYMBOL(name: String, path: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_IMPORTED_SYMBOL")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   trait CSSResolve[T /* <: StylableSymbol */] extends StObject {
@@ -159,23 +156,18 @@ object stylableResolverMod {
   }
   object CSSResolve {
     
-    @scala.inline
-    def apply[T /* <: StylableSymbol */](meta: StylableMeta, symbol: T): CSSResolve[T] = {
+    inline def apply[T /* <: StylableSymbol */](meta: StylableMeta, symbol: T): CSSResolve[T] = {
       val __obj = js.Dynamic.literal(_kind = "css", meta = meta.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
       __obj.asInstanceOf[CSSResolve[T]]
     }
     
-    @scala.inline
-    implicit class CSSResolveMutableBuilder[Self <: CSSResolve[?], T /* <: StylableSymbol */] (val x: Self & CSSResolve[T]) extends AnyVal {
+    extension [Self <: CSSResolve[?], T /* <: StylableSymbol */](x: Self & CSSResolve[T]) {
       
-      @scala.inline
-      def setMeta(value: StylableMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: StylableMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: T): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: T): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_kind(value: css): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
+      inline def set_kind(value: css): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,23 +181,18 @@ object stylableResolverMod {
   }
   object JSResolve {
     
-    @scala.inline
-    def apply(meta: Null, symbol: js.Any): JSResolve = {
+    inline def apply(meta: Null, symbol: js.Any): JSResolve = {
       val __obj = js.Dynamic.literal(_kind = "js", meta = meta.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSResolve]
     }
     
-    @scala.inline
-    implicit class JSResolveMutableBuilder[Self <: JSResolve] (val x: Self) extends AnyVal {
+    extension [Self <: JSResolve](x: Self) {
       
-      @scala.inline
-      def setMeta(value: Null): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Null): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: js.Any): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: js.Any): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_kind(value: js_): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
+      inline def set_kind(value: js_): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
     }
   }
 }

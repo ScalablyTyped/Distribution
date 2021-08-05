@@ -53,67 +53,47 @@ trait SegmentDetection extends StObject {
 }
 object SegmentDetection {
   
-  @scala.inline
-  def apply(): SegmentDetection = {
+  inline def apply(): SegmentDetection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentDetection]
   }
   
-  @scala.inline
-  implicit class SegmentDetectionMutableBuilder[Self <: SegmentDetection] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentDetection](x: Self) {
     
-    @scala.inline
-    def setDurationMillis(value: ULong): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
+    inline def setDurationMillis(value: ULong): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationMillisUndefined: Self = StObject.set(x, "DurationMillis", js.undefined)
+    inline def setDurationMillisUndefined: Self = StObject.set(x, "DurationMillis", js.undefined)
     
-    @scala.inline
-    def setDurationSMPTE(value: Timecode): Self = StObject.set(x, "DurationSMPTE", value.asInstanceOf[js.Any])
+    inline def setDurationSMPTE(value: Timecode): Self = StObject.set(x, "DurationSMPTE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationSMPTEUndefined: Self = StObject.set(x, "DurationSMPTE", js.undefined)
+    inline def setDurationSMPTEUndefined: Self = StObject.set(x, "DurationSMPTE", js.undefined)
     
-    @scala.inline
-    def setEndTimecodeSMPTE(value: Timecode): Self = StObject.set(x, "EndTimecodeSMPTE", value.asInstanceOf[js.Any])
+    inline def setEndTimecodeSMPTE(value: Timecode): Self = StObject.set(x, "EndTimecodeSMPTE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimecodeSMPTEUndefined: Self = StObject.set(x, "EndTimecodeSMPTE", js.undefined)
+    inline def setEndTimecodeSMPTEUndefined: Self = StObject.set(x, "EndTimecodeSMPTE", js.undefined)
     
-    @scala.inline
-    def setEndTimestampMillis(value: Timestamp): Self = StObject.set(x, "EndTimestampMillis", value.asInstanceOf[js.Any])
+    inline def setEndTimestampMillis(value: Timestamp): Self = StObject.set(x, "EndTimestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimestampMillisUndefined: Self = StObject.set(x, "EndTimestampMillis", js.undefined)
+    inline def setEndTimestampMillisUndefined: Self = StObject.set(x, "EndTimestampMillis", js.undefined)
     
-    @scala.inline
-    def setShotSegment(value: ShotSegment): Self = StObject.set(x, "ShotSegment", value.asInstanceOf[js.Any])
+    inline def setShotSegment(value: ShotSegment): Self = StObject.set(x, "ShotSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShotSegmentUndefined: Self = StObject.set(x, "ShotSegment", js.undefined)
+    inline def setShotSegmentUndefined: Self = StObject.set(x, "ShotSegment", js.undefined)
     
-    @scala.inline
-    def setStartTimecodeSMPTE(value: Timecode): Self = StObject.set(x, "StartTimecodeSMPTE", value.asInstanceOf[js.Any])
+    inline def setStartTimecodeSMPTE(value: Timecode): Self = StObject.set(x, "StartTimecodeSMPTE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimecodeSMPTEUndefined: Self = StObject.set(x, "StartTimecodeSMPTE", js.undefined)
+    inline def setStartTimecodeSMPTEUndefined: Self = StObject.set(x, "StartTimecodeSMPTE", js.undefined)
     
-    @scala.inline
-    def setStartTimestampMillis(value: Timestamp): Self = StObject.set(x, "StartTimestampMillis", value.asInstanceOf[js.Any])
+    inline def setStartTimestampMillis(value: Timestamp): Self = StObject.set(x, "StartTimestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimestampMillisUndefined: Self = StObject.set(x, "StartTimestampMillis", js.undefined)
+    inline def setStartTimestampMillisUndefined: Self = StObject.set(x, "StartTimestampMillis", js.undefined)
     
-    @scala.inline
-    def setTechnicalCueSegment(value: TechnicalCueSegment): Self = StObject.set(x, "TechnicalCueSegment", value.asInstanceOf[js.Any])
+    inline def setTechnicalCueSegment(value: TechnicalCueSegment): Self = StObject.set(x, "TechnicalCueSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTechnicalCueSegmentUndefined: Self = StObject.set(x, "TechnicalCueSegment", js.undefined)
+    inline def setTechnicalCueSegmentUndefined: Self = StObject.set(x, "TechnicalCueSegment", js.undefined)
     
-    @scala.inline
-    def setType(value: SegmentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: SegmentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -47,26 +47,20 @@ object anon {
   }
   object Body {
     
-    @scala.inline
-    def apply(): Body = {
+    inline def apply(): Body = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Body]
     }
     
-    @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+    extension [Self <: Body](x: Self) {
       
-      @scala.inline
-      def setBody(value: Double): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Double): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHead(value: Double): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: Double): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
     }
   }
   
@@ -468,20 +462,16 @@ object anon {
   }
   object Context {
     
-    @scala.inline
-    def apply(context: BackContext, nockDone: () => Unit): Context = {
+    inline def apply(context: BackContext, nockDone: () => Unit): Context = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], nockDone = js.Any.fromFunction0(nockDone))
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setContext(value: BackContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: BackContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNockDone(value: () => Unit): Self = StObject.set(x, "nockDone", js.Any.fromFunction0(value))
+      inline def setNockDone(value: () => Unit): Self = StObject.set(x, "nockDone", js.Any.fromFunction0(value))
     }
   }
   
@@ -493,23 +483,18 @@ object anon {
   }
   object Pass {
     
-    @scala.inline
-    def apply(user: String): Pass = {
+    inline def apply(user: String): Pass = {
       val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pass]
     }
     
-    @scala.inline
-    implicit class PassMutableBuilder[Self <: Pass] (val x: Self) extends AnyVal {
+    extension [Self <: Pass](x: Self) {
       
-      @scala.inline
-      def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
+      inline def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
 }

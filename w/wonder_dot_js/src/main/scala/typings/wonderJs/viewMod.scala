@@ -56,8 +56,7 @@ object viewMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(view: js.Any): ViewWebGL = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(view.asInstanceOf[js.Any]).asInstanceOf[ViewWebGL]
+    inline def create(view: js.Any): ViewWebGL = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(view.asInstanceOf[js.Any]).asInstanceOf[ViewWebGL]
   }
   
   trait IView extends StObject {
@@ -84,8 +83,7 @@ object viewMod {
   }
   object IView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dom: js.Any,
       getContext: ContextConfigData => WebGLRenderingContext,
       height: Double,
@@ -101,38 +99,27 @@ object viewMod {
       __obj.asInstanceOf[IView]
     }
     
-    @scala.inline
-    implicit class IViewMutableBuilder[Self <: IView] (val x: Self) extends AnyVal {
+    extension [Self <: IView](x: Self) {
       
-      @scala.inline
-      def setDom(value: js.Any): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+      inline def setDom(value: js.Any): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetContext(value: ContextConfigData => WebGLRenderingContext): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
+      inline def setGetContext(value: ContextConfigData => WebGLRenderingContext): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitCanvas(value: () => Unit): Self = StObject.set(x, "initCanvas", js.Any.fromFunction0(value))
+      inline def setInitCanvas(value: () => Unit): Self = StObject.set(x, "initCanvas", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOffset(value: Y): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Y): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleHeight(value: String): Self = StObject.set(x, "styleHeight", value.asInstanceOf[js.Any])
+      inline def setStyleHeight(value: String): Self = StObject.set(x, "styleHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleWidth(value: String): Self = StObject.set(x, "styleWidth", value.asInstanceOf[js.Any])
+      inline def setStyleWidth(value: String): Self = StObject.set(x, "styleWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

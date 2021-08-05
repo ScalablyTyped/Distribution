@@ -16,8 +16,7 @@ trait TypeReference
 }
 object TypeReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: TypeFlags,
     getApparentProperties: () => js.Array[Symbol],
     getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
@@ -49,25 +48,18 @@ object TypeReference {
     __obj.asInstanceOf[TypeReference]
   }
   
-  @scala.inline
-  implicit class TypeReferenceMutableBuilder[Self <: TypeReference] (val x: Self) extends AnyVal {
+  extension [Self <: TypeReference](x: Self) {
     
-    @scala.inline
-    def setNode(value: TypeReferenceNode | ArrayTypeNode | TupleTypeNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: TypeReferenceNode | ArrayTypeNode | TupleTypeNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    @scala.inline
-    def setTarget(value: GenericType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: GenericType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeArguments(value: js.Array[Type]): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
+    inline def setTypeArguments(value: js.Array[Type]): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeArgumentsUndefined: Self = StObject.set(x, "typeArguments", js.undefined)
+    inline def setTypeArgumentsUndefined: Self = StObject.set(x, "typeArguments", js.undefined)
     
-    @scala.inline
-    def setTypeArgumentsVarargs(value: Type*): Self = StObject.set(x, "typeArguments", js.Array(value :_*))
+    inline def setTypeArgumentsVarargs(value: Type*): Self = StObject.set(x, "typeArguments", js.Array(value :_*))
   }
 }

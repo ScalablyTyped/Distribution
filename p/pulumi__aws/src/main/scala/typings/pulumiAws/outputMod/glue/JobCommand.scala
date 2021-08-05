@@ -23,25 +23,19 @@ trait JobCommand extends StObject {
 }
 object JobCommand {
   
-  @scala.inline
-  def apply(pythonVersion: String, scriptLocation: String): JobCommand = {
+  inline def apply(pythonVersion: String, scriptLocation: String): JobCommand = {
     val __obj = js.Dynamic.literal(pythonVersion = pythonVersion.asInstanceOf[js.Any], scriptLocation = scriptLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobCommand]
   }
   
-  @scala.inline
-  implicit class JobCommandMutableBuilder[Self <: JobCommand] (val x: Self) extends AnyVal {
+  extension [Self <: JobCommand](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
+    inline def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptLocation(value: String): Self = StObject.set(x, "scriptLocation", value.asInstanceOf[js.Any])
+    inline def setScriptLocation(value: String): Self = StObject.set(x, "scriptLocation", value.asInstanceOf[js.Any])
   }
 }

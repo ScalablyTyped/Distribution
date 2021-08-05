@@ -76,8 +76,7 @@ trait ListLevelSettings extends StObject {
 }
 object ListLevelSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignment: ListLevelNumberAlignment,
     displayFormatString: String,
     firstLineIndent: Double,
@@ -96,46 +95,32 @@ object ListLevelSettings {
     __obj.asInstanceOf[ListLevelSettings]
   }
   
-  @scala.inline
-  implicit class ListLevelSettingsMutableBuilder[Self <: ListLevelSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ListLevelSettings](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: ListLevelNumberAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: ListLevelNumberAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFormatString(value: String): Self = StObject.set(x, "displayFormatString", value.asInstanceOf[js.Any])
+    inline def setDisplayFormatString(value: String): Self = StObject.set(x, "displayFormatString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstLineIndent(value: Double): Self = StObject.set(x, "firstLineIndent", value.asInstanceOf[js.Any])
+    inline def setFirstLineIndent(value: Double): Self = StObject.set(x, "firstLineIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstLineIndentType(value: ParagraphFirstLineIndent): Self = StObject.set(x, "firstLineIndentType", value.asInstanceOf[js.Any])
+    inline def setFirstLineIndentType(value: ParagraphFirstLineIndent): Self = StObject.set(x, "firstLineIndentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontBold(value: Boolean): Self = StObject.set(x, "fontBold", value.asInstanceOf[js.Any])
+    inline def setFontBold(value: Boolean): Self = StObject.set(x, "fontBold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+    inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontItalic(value: Boolean): Self = StObject.set(x, "fontItalic", value.asInstanceOf[js.Any])
+    inline def setFontItalic(value: Boolean): Self = StObject.set(x, "fontItalic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+    inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: ListLevelFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ListLevelFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftIndent(value: Double): Self = StObject.set(x, "leftIndent", value.asInstanceOf[js.Any])
+    inline def setLeftIndent(value: Double): Self = StObject.set(x, "leftIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

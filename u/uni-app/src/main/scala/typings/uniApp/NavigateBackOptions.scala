@@ -45,33 +45,25 @@ trait NavigateBackOptions extends StObject {
 }
 object NavigateBackOptions {
   
-  @scala.inline
-  def apply(): NavigateBackOptions = {
+  inline def apply(): NavigateBackOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigateBackOptions]
   }
   
-  @scala.inline
-  implicit class NavigateBackOptionsMutableBuilder[Self <: NavigateBackOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigateBackOptions](x: Self) {
     
-    @scala.inline
-    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+    inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
-    @scala.inline
-    def setAnimationType(
+    inline def setAnimationType(
       value: auto | none | `slide-out-right` | `slide-out-left` | `slide-out-top` | `slide-out-bottom` | `fade-out` | `zoom-in` | `zoom-fade-in` | `pop-out`
     ): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
+    inline def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
     
-    @scala.inline
-    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+    inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
   }
 }

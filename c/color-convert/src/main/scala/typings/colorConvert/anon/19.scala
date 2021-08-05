@@ -14,16 +14,13 @@ trait `19` extends StObject {
 }
 object `19` {
   
-  @scala.inline
-  def apply(raw: /* from */ HSL_ => CMYK_): `19` = {
+  inline def apply(raw: /* from */ HSL_ => CMYK_): `19` = {
     val __obj = js.Dynamic.literal(raw = js.Any.fromFunction1(raw))
     __obj.asInstanceOf[`19`]
   }
   
-  @scala.inline
-  implicit class `19MutableBuilder`[Self <: `19`] (val x: Self) extends AnyVal {
+  extension [Self <: `19`](x: Self) {
     
-    @scala.inline
-    def setRaw(value: /* from */ HSL_ => CMYK_): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
+    inline def setRaw(value: /* from */ HSL_ => CMYK_): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
   }
 }

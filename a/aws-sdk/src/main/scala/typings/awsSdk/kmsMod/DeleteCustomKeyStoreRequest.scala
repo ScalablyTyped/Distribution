@@ -13,16 +13,13 @@ trait DeleteCustomKeyStoreRequest extends StObject {
 }
 object DeleteCustomKeyStoreRequest {
   
-  @scala.inline
-  def apply(CustomKeyStoreId: CustomKeyStoreIdType): DeleteCustomKeyStoreRequest = {
+  inline def apply(CustomKeyStoreId: CustomKeyStoreIdType): DeleteCustomKeyStoreRequest = {
     val __obj = js.Dynamic.literal(CustomKeyStoreId = CustomKeyStoreId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCustomKeyStoreRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCustomKeyStoreRequestMutableBuilder[Self <: DeleteCustomKeyStoreRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCustomKeyStoreRequest](x: Self) {
     
-    @scala.inline
-    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
+    inline def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
   }
 }

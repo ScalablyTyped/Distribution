@@ -23,34 +23,25 @@ trait RecommendationFeedbackSummary extends StObject {
 }
 object RecommendationFeedbackSummary {
   
-  @scala.inline
-  def apply(): RecommendationFeedbackSummary = {
+  inline def apply(): RecommendationFeedbackSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecommendationFeedbackSummary]
   }
   
-  @scala.inline
-  implicit class RecommendationFeedbackSummaryMutableBuilder[Self <: RecommendationFeedbackSummary] (val x: Self) extends AnyVal {
+  extension [Self <: RecommendationFeedbackSummary](x: Self) {
     
-    @scala.inline
-    def setReactions(value: Reactions): Self = StObject.set(x, "Reactions", value.asInstanceOf[js.Any])
+    inline def setReactions(value: Reactions): Self = StObject.set(x, "Reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactionsUndefined: Self = StObject.set(x, "Reactions", js.undefined)
+    inline def setReactionsUndefined: Self = StObject.set(x, "Reactions", js.undefined)
     
-    @scala.inline
-    def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "Reactions", js.Array(value :_*))
+    inline def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "Reactions", js.Array(value :_*))
     
-    @scala.inline
-    def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
+    inline def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationIdUndefined: Self = StObject.set(x, "RecommendationId", js.undefined)
+    inline def setRecommendationIdUndefined: Self = StObject.set(x, "RecommendationId", js.undefined)
     
-    @scala.inline
-    def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

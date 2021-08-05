@@ -28,37 +28,27 @@ trait ApiCallDetails extends StObject {
 }
 object ApiCallDetails {
   
-  @scala.inline
-  def apply(): ApiCallDetails = {
+  inline def apply(): ApiCallDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiCallDetails]
   }
   
-  @scala.inline
-  implicit class ApiCallDetailsMutableBuilder[Self <: ApiCallDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ApiCallDetails](x: Self) {
     
-    @scala.inline
-    def setApi(value: string): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: string): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiServiceName(value: string): Self = StObject.set(x, "apiServiceName", value.asInstanceOf[js.Any])
+    inline def setApiServiceName(value: string): Self = StObject.set(x, "apiServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiServiceNameUndefined: Self = StObject.set(x, "apiServiceName", js.undefined)
+    inline def setApiServiceNameUndefined: Self = StObject.set(x, "apiServiceName", js.undefined)
     
-    @scala.inline
-    def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
+    inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
-    @scala.inline
-    def setFirstSeen(value: timestampIso8601): Self = StObject.set(x, "firstSeen", value.asInstanceOf[js.Any])
+    inline def setFirstSeen(value: timestampIso8601): Self = StObject.set(x, "firstSeen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstSeenUndefined: Self = StObject.set(x, "firstSeen", js.undefined)
+    inline def setFirstSeenUndefined: Self = StObject.set(x, "firstSeen", js.undefined)
     
-    @scala.inline
-    def setLastSeen(value: timestampIso8601): Self = StObject.set(x, "lastSeen", value.asInstanceOf[js.Any])
+    inline def setLastSeen(value: timestampIso8601): Self = StObject.set(x, "lastSeen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSeenUndefined: Self = StObject.set(x, "lastSeen", js.undefined)
+    inline def setLastSeenUndefined: Self = StObject.set(x, "lastSeen", js.undefined)
   }
 }

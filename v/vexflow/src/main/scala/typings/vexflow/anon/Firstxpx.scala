@@ -18,8 +18,7 @@ trait Firstxpx extends StObject {
 }
 object Firstxpx {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     direction: Double,
     first_x_px: Double,
     first_ys: js.Array[Double],
@@ -30,28 +29,20 @@ object Firstxpx {
     __obj.asInstanceOf[Firstxpx]
   }
   
-  @scala.inline
-  implicit class FirstxpxMutableBuilder[Self <: Firstxpx] (val x: Self) extends AnyVal {
+  extension [Self <: Firstxpx](x: Self) {
     
-    @scala.inline
-    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_x_px(value: Double): Self = StObject.set(x, "first_x_px", value.asInstanceOf[js.Any])
+    inline def setFirst_x_px(value: Double): Self = StObject.set(x, "first_x_px", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_ys(value: js.Array[Double]): Self = StObject.set(x, "first_ys", value.asInstanceOf[js.Any])
+    inline def setFirst_ys(value: js.Array[Double]): Self = StObject.set(x, "first_ys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_ysVarargs(value: Double*): Self = StObject.set(x, "first_ys", js.Array(value :_*))
+    inline def setFirst_ysVarargs(value: Double*): Self = StObject.set(x, "first_ys", js.Array(value :_*))
     
-    @scala.inline
-    def setLast_x_px(value: Double): Self = StObject.set(x, "last_x_px", value.asInstanceOf[js.Any])
+    inline def setLast_x_px(value: Double): Self = StObject.set(x, "last_x_px", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_ys(value: js.Array[Double]): Self = StObject.set(x, "last_ys", value.asInstanceOf[js.Any])
+    inline def setLast_ys(value: js.Array[Double]): Self = StObject.set(x, "last_ys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_ysVarargs(value: Double*): Self = StObject.set(x, "last_ys", js.Array(value :_*))
+    inline def setLast_ysVarargs(value: Double*): Self = StObject.set(x, "last_ys", js.Array(value :_*))
   }
 }

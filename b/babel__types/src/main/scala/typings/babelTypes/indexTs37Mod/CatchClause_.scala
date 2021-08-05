@@ -21,26 +21,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object CatchClause_ {
   
-  @scala.inline
-  def apply(body: BlockStatement_): CatchClause_ = {
+  inline def apply(body: BlockStatement_): CatchClause_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, param = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("CatchClause")
     __obj.asInstanceOf[CatchClause_]
   }
   
-  @scala.inline
-  implicit class CatchClause_MutableBuilder[Self <: CatchClause_] (val x: Self) extends AnyVal {
+  extension [Self <: CatchClause_](x: Self) {
     
-    @scala.inline
-    def setBody(value: BlockStatement_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BlockStatement_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParam(value: Identifier_ | ArrayPattern_ | ObjectPattern_): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setParam(value: Identifier_ | ArrayPattern_ | ObjectPattern_): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamNull: Self = StObject.set(x, "param", null)
+    inline def setParamNull: Self = StObject.set(x, "param", null)
     
-    @scala.inline
-    def setType(value: CatchClause): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CatchClause): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

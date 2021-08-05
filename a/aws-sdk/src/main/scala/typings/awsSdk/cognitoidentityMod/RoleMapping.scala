@@ -23,28 +23,21 @@ trait RoleMapping extends StObject {
 }
 object RoleMapping {
   
-  @scala.inline
-  def apply(Type: RoleMappingType): RoleMapping = {
+  inline def apply(Type: RoleMappingType): RoleMapping = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleMapping]
   }
   
-  @scala.inline
-  implicit class RoleMappingMutableBuilder[Self <: RoleMapping] (val x: Self) extends AnyVal {
+  extension [Self <: RoleMapping](x: Self) {
     
-    @scala.inline
-    def setAmbiguousRoleResolution(value: AmbiguousRoleResolutionType): Self = StObject.set(x, "AmbiguousRoleResolution", value.asInstanceOf[js.Any])
+    inline def setAmbiguousRoleResolution(value: AmbiguousRoleResolutionType): Self = StObject.set(x, "AmbiguousRoleResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmbiguousRoleResolutionUndefined: Self = StObject.set(x, "AmbiguousRoleResolution", js.undefined)
+    inline def setAmbiguousRoleResolutionUndefined: Self = StObject.set(x, "AmbiguousRoleResolution", js.undefined)
     
-    @scala.inline
-    def setRulesConfiguration(value: RulesConfigurationType): Self = StObject.set(x, "RulesConfiguration", value.asInstanceOf[js.Any])
+    inline def setRulesConfiguration(value: RulesConfigurationType): Self = StObject.set(x, "RulesConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesConfigurationUndefined: Self = StObject.set(x, "RulesConfiguration", js.undefined)
+    inline def setRulesConfigurationUndefined: Self = StObject.set(x, "RulesConfiguration", js.undefined)
     
-    @scala.inline
-    def setType(value: RoleMappingType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RoleMappingType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

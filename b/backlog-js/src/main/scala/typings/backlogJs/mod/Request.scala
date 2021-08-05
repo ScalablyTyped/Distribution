@@ -11,7 +11,7 @@ trait Request extends StObject {
   
   def checkStatus(response: Response): js.Promise[Response] = js.native
   
-  var configure: js.Any = js.native
+  /* private */ var configure: js.Any = js.native
   
   def delete[T](path: String): js.Promise[T] = js.native
   def delete[T](path: String, params: js.Any): js.Promise[T] = js.native

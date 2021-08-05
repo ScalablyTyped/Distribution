@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Legend")
 @js.native
-class Legend protected ()
+/* private */ class Legend ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Legend

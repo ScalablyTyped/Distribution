@@ -10,16 +10,13 @@ trait PlayerOptions extends StObject {
 }
 object PlayerOptions {
   
-  @scala.inline
-  def apply(playerOptions: Sharingenable): PlayerOptions = {
+  inline def apply(playerOptions: Sharingenable): PlayerOptions = {
     val __obj = js.Dynamic.literal(playerOptions = playerOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerOptions]
   }
   
-  @scala.inline
-  implicit class PlayerOptionsMutableBuilder[Self <: PlayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlayerOptions](x: Self) {
     
-    @scala.inline
-    def setPlayerOptions(value: Sharingenable): Self = StObject.set(x, "playerOptions", value.asInstanceOf[js.Any])
+    inline def setPlayerOptions(value: Sharingenable): Self = StObject.set(x, "playerOptions", value.asInstanceOf[js.Any])
   }
 }

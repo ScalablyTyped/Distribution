@@ -17,20 +17,16 @@ object nativeModulesProxyTypesMod {
   }
   object ProxyNativeModule {
     
-    @scala.inline
-    def apply(addListener: String => Unit, removeListeners: Double => Unit): ProxyNativeModule = {
+    inline def apply(addListener: String => Unit, removeListeners: Double => Unit): ProxyNativeModule = {
       val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener), removeListeners = js.Any.fromFunction1(removeListeners))
       __obj.asInstanceOf[ProxyNativeModule]
     }
     
-    @scala.inline
-    implicit class ProxyNativeModuleMutableBuilder[Self <: ProxyNativeModule] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyNativeModule](x: Self) {
       
-      @scala.inline
-      def setAddListener(value: String => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+      inline def setAddListener(value: String => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveListeners(value: Double => Unit): Self = StObject.set(x, "removeListeners", js.Any.fromFunction1(value))
+      inline def setRemoveListeners(value: Double => Unit): Self = StObject.set(x, "removeListeners", js.Any.fromFunction1(value))
     }
   }
 }

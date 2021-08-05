@@ -18,19 +18,15 @@ trait KmlObjectList[T /* <: KmlObject */] extends StObject {
 }
 object KmlObjectList {
   
-  @scala.inline
-  def apply[T /* <: KmlObject */](getLength: () => Double, item: Double => T): KmlObjectList[T] = {
+  inline def apply[T /* <: KmlObject */](getLength: () => Double, item: Double => T): KmlObjectList[T] = {
     val __obj = js.Dynamic.literal(getLength = js.Any.fromFunction0(getLength), item = js.Any.fromFunction1(item))
     __obj.asInstanceOf[KmlObjectList[T]]
   }
   
-  @scala.inline
-  implicit class KmlObjectListMutableBuilder[Self <: KmlObjectList[?], T /* <: KmlObject */] (val x: Self & KmlObjectList[T]) extends AnyVal {
+  extension [Self <: KmlObjectList[?], T /* <: KmlObject */](x: Self & KmlObjectList[T]) {
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItem(value: Double => T): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => T): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
   }
 }

@@ -20,25 +20,19 @@ trait EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions extends S
 }
 object EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/enterprises/:enterprise/actions/runners/downloads")
     __obj.asInstanceOf[EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptionsMutableBuilder[Self <: EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminListRunnerApplicationsForEnterpriseRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

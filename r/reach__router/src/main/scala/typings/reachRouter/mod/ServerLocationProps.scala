@@ -10,16 +10,13 @@ trait ServerLocationProps extends StObject {
 }
 object ServerLocationProps {
   
-  @scala.inline
-  def apply(url: String): ServerLocationProps = {
+  inline def apply(url: String): ServerLocationProps = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerLocationProps]
   }
   
-  @scala.inline
-  implicit class ServerLocationPropsMutableBuilder[Self <: ServerLocationProps] (val x: Self) extends AnyVal {
+  extension [Self <: ServerLocationProps](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

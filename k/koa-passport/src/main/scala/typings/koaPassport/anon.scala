@@ -53,17 +53,14 @@ object anon {
   }
   object PauseStream {
     
-    @scala.inline
-    def apply(pauseStream: Boolean): PauseStream = {
+    inline def apply(pauseStream: Boolean): PauseStream = {
       val __obj = js.Dynamic.literal(pauseStream = pauseStream.asInstanceOf[js.Any])
       __obj.asInstanceOf[PauseStream]
     }
     
-    @scala.inline
-    implicit class PauseStreamMutableBuilder[Self <: PauseStream] (val x: Self) extends AnyVal {
+    extension [Self <: PauseStream](x: Self) {
       
-      @scala.inline
-      def setPauseStream(value: Boolean): Self = StObject.set(x, "pauseStream", value.asInstanceOf[js.Any])
+      inline def setPauseStream(value: Boolean): Self = StObject.set(x, "pauseStream", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,17 +70,14 @@ object anon {
   }
   object UserProperty {
     
-    @scala.inline
-    def apply(userProperty: String): UserProperty = {
+    inline def apply(userProperty: String): UserProperty = {
       val __obj = js.Dynamic.literal(userProperty = userProperty.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserProperty]
     }
     
-    @scala.inline
-    implicit class UserPropertyMutableBuilder[Self <: UserProperty] (val x: Self) extends AnyVal {
+    extension [Self <: UserProperty](x: Self) {
       
-      @scala.inline
-      def setUserProperty(value: String): Self = StObject.set(x, "userProperty", value.asInstanceOf[js.Any])
+      inline def setUserProperty(value: String): Self = StObject.set(x, "userProperty", value.asInstanceOf[js.Any])
     }
   }
 }

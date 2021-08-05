@@ -18,22 +18,17 @@ trait GetRevisionResponse extends StObject {
 }
 object GetRevisionResponse {
   
-  @scala.inline
-  def apply(Revision: ValueHolder): GetRevisionResponse = {
+  inline def apply(Revision: ValueHolder): GetRevisionResponse = {
     val __obj = js.Dynamic.literal(Revision = Revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRevisionResponse]
   }
   
-  @scala.inline
-  implicit class GetRevisionResponseMutableBuilder[Self <: GetRevisionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetRevisionResponse](x: Self) {
     
-    @scala.inline
-    def setProof(value: ValueHolder): Self = StObject.set(x, "Proof", value.asInstanceOf[js.Any])
+    inline def setProof(value: ValueHolder): Self = StObject.set(x, "Proof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProofUndefined: Self = StObject.set(x, "Proof", js.undefined)
+    inline def setProofUndefined: Self = StObject.set(x, "Proof", js.undefined)
     
-    @scala.inline
-    def setRevision(value: ValueHolder): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: ValueHolder): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
   }
 }

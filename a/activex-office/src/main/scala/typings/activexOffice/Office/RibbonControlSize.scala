@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RibbonControlSize extends StObject
 object RibbonControlSize {
   
-  @scala.inline
-  def RibbonControlSizeLarge: `1` = 1.asInstanceOf[`1`]
+  inline def RibbonControlSizeLarge: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def RibbonControlSizeRegular: `0` = 0.asInstanceOf[`0`]
+  inline def RibbonControlSizeRegular: `0` = 0.asInstanceOf[`0`]
 }

@@ -33,58 +33,41 @@ trait ArrayValue extends StObject {
 }
 object ArrayValue {
   
-  @scala.inline
-  def apply(): ArrayValue = {
+  inline def apply(): ArrayValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArrayValue]
   }
   
-  @scala.inline
-  implicit class ArrayValueMutableBuilder[Self <: ArrayValue] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayValue](x: Self) {
     
-    @scala.inline
-    def setArrayValues(value: ArrayOfArray): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
+    inline def setArrayValues(value: ArrayOfArray): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayValuesUndefined: Self = StObject.set(x, "arrayValues", js.undefined)
+    inline def setArrayValuesUndefined: Self = StObject.set(x, "arrayValues", js.undefined)
     
-    @scala.inline
-    def setArrayValuesVarargs(value: ArrayValue*): Self = StObject.set(x, "arrayValues", js.Array(value :_*))
+    inline def setArrayValuesVarargs(value: ArrayValue*): Self = StObject.set(x, "arrayValues", js.Array(value :_*))
     
-    @scala.inline
-    def setBooleanValues(value: BooleanArray): Self = StObject.set(x, "booleanValues", value.asInstanceOf[js.Any])
+    inline def setBooleanValues(value: BooleanArray): Self = StObject.set(x, "booleanValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBooleanValuesUndefined: Self = StObject.set(x, "booleanValues", js.undefined)
+    inline def setBooleanValuesUndefined: Self = StObject.set(x, "booleanValues", js.undefined)
     
-    @scala.inline
-    def setBooleanValuesVarargs(value: BoxedBoolean*): Self = StObject.set(x, "booleanValues", js.Array(value :_*))
+    inline def setBooleanValuesVarargs(value: BoxedBoolean*): Self = StObject.set(x, "booleanValues", js.Array(value :_*))
     
-    @scala.inline
-    def setDoubleValues(value: DoubleArray): Self = StObject.set(x, "doubleValues", value.asInstanceOf[js.Any])
+    inline def setDoubleValues(value: DoubleArray): Self = StObject.set(x, "doubleValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleValuesUndefined: Self = StObject.set(x, "doubleValues", js.undefined)
+    inline def setDoubleValuesUndefined: Self = StObject.set(x, "doubleValues", js.undefined)
     
-    @scala.inline
-    def setDoubleValuesVarargs(value: BoxedDouble*): Self = StObject.set(x, "doubleValues", js.Array(value :_*))
+    inline def setDoubleValuesVarargs(value: BoxedDouble*): Self = StObject.set(x, "doubleValues", js.Array(value :_*))
     
-    @scala.inline
-    def setLongValues(value: LongArray): Self = StObject.set(x, "longValues", value.asInstanceOf[js.Any])
+    inline def setLongValues(value: LongArray): Self = StObject.set(x, "longValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongValuesUndefined: Self = StObject.set(x, "longValues", js.undefined)
+    inline def setLongValuesUndefined: Self = StObject.set(x, "longValues", js.undefined)
     
-    @scala.inline
-    def setLongValuesVarargs(value: BoxedLong*): Self = StObject.set(x, "longValues", js.Array(value :_*))
+    inline def setLongValuesVarargs(value: BoxedLong*): Self = StObject.set(x, "longValues", js.Array(value :_*))
     
-    @scala.inline
-    def setStringValues(value: StringArray): Self = StObject.set(x, "stringValues", value.asInstanceOf[js.Any])
+    inline def setStringValues(value: StringArray): Self = StObject.set(x, "stringValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValuesUndefined: Self = StObject.set(x, "stringValues", js.undefined)
+    inline def setStringValuesUndefined: Self = StObject.set(x, "stringValues", js.undefined)
     
-    @scala.inline
-    def setStringValuesVarargs(value: String*): Self = StObject.set(x, "stringValues", js.Array(value :_*))
+    inline def setStringValuesVarargs(value: String*): Self = StObject.set(x, "stringValues", js.Array(value :_*))
   }
 }

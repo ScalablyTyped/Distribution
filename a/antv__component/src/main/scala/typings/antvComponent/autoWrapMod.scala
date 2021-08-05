@@ -11,6 +11,5 @@ object autoWrapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapLabels(labelGroup: IGroup, limitLength: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapLabels")(labelGroup.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def wrapLabels(labelGroup: IGroup, limitLength: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapLabels")(labelGroup.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(value: String): js.Tuple2[Double, String] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, String]]
-  @scala.inline
-  def apply(value: Double): js.Tuple2[Double, String] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, String]]
+  inline def apply(value: String): js.Tuple2[Double, String] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, String]]
+  inline def apply(value: Double): js.Tuple2[Double, String] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, String]]
   
   @JSImport("parse-unit", JSImport.Namespace)
   @js.native

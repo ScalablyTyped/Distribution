@@ -13,19 +13,15 @@ trait Owner extends StObject {
 }
 object Owner {
   
-  @scala.inline
-  def apply(): Owner = {
+  inline def apply(): Owner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Owner]
   }
   
-  @scala.inline
-  implicit class OwnerMutableBuilder[Self <: Owner] (val x: Self) extends AnyVal {
+  extension [Self <: Owner](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
   }
 }

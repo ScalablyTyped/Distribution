@@ -33,46 +33,33 @@ trait GetFaceDetectionResponse extends StObject {
 }
 object GetFaceDetectionResponse {
   
-  @scala.inline
-  def apply(): GetFaceDetectionResponse = {
+  inline def apply(): GetFaceDetectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFaceDetectionResponse]
   }
   
-  @scala.inline
-  implicit class GetFaceDetectionResponseMutableBuilder[Self <: GetFaceDetectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFaceDetectionResponse](x: Self) {
     
-    @scala.inline
-    def setFaces(value: FaceDetections): Self = StObject.set(x, "Faces", value.asInstanceOf[js.Any])
+    inline def setFaces(value: FaceDetections): Self = StObject.set(x, "Faces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacesUndefined: Self = StObject.set(x, "Faces", js.undefined)
+    inline def setFacesUndefined: Self = StObject.set(x, "Faces", js.undefined)
     
-    @scala.inline
-    def setFacesVarargs(value: FaceDetection*): Self = StObject.set(x, "Faces", js.Array(value :_*))
+    inline def setFacesVarargs(value: FaceDetection*): Self = StObject.set(x, "Faces", js.Array(value :_*))
     
-    @scala.inline
-    def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
+    inline def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
+    inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setVideoMetadata(value: VideoMetadata): Self = StObject.set(x, "VideoMetadata", value.asInstanceOf[js.Any])
+    inline def setVideoMetadata(value: VideoMetadata): Self = StObject.set(x, "VideoMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoMetadataUndefined: Self = StObject.set(x, "VideoMetadata", js.undefined)
+    inline def setVideoMetadataUndefined: Self = StObject.set(x, "VideoMetadata", js.undefined)
   }
 }

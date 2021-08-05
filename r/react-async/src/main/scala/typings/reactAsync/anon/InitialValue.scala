@@ -17,31 +17,23 @@ trait InitialValue[T] extends StObject {
 }
 object InitialValue {
   
-  @scala.inline
-  def apply[T](): InitialValue[T] = {
+  inline def apply[T](): InitialValue[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitialValue[T]]
   }
   
-  @scala.inline
-  implicit class InitialValueMutableBuilder[Self <: InitialValue[?], T] (val x: Self & InitialValue[T]) extends AnyVal {
+  extension [Self <: InitialValue[?], T](x: Self & InitialValue[T]) {
     
-    @scala.inline
-    def setInitialValue(value: typings.std.Error | T): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+    inline def setInitialValue(value: typings.std.Error | T): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
+    inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
-    @scala.inline
-    def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromiseFn(value: (/* props */ AsyncProps[T], /* controller */ AbortController) => js.Promise[T]): Self = StObject.set(x, "promiseFn", js.Any.fromFunction2(value))
+    inline def setPromiseFn(value: (/* props */ AsyncProps[T], /* controller */ AbortController) => js.Promise[T]): Self = StObject.set(x, "promiseFn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPromiseFnUndefined: Self = StObject.set(x, "promiseFn", js.undefined)
+    inline def setPromiseFnUndefined: Self = StObject.set(x, "promiseFn", js.undefined)
     
-    @scala.inline
-    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+    inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
   }
 }

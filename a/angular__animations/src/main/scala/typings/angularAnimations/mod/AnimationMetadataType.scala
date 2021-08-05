@@ -39,90 +39,77 @@ object AnimationMetadataType {
     * Contains an animation step.
     * See `animate()`
     */
-  @scala.inline
-  def Animate: `4` = 4.asInstanceOf[`4`]
+  inline def Animate: `4` = 4.asInstanceOf[`4`]
   
   /**
     * Contains data to use in executing child animations returned by a query.
     * See `animateChild()`
     */
-  @scala.inline
-  def AnimateChild: `9` = 9.asInstanceOf[`9`]
+  inline def AnimateChild: `9` = 9.asInstanceOf[`9`]
   
   /**
     * Contains animation parameters for a re-usable animation.
     * See `useAnimation()`
     */
-  @scala.inline
-  def AnimateRef: `10` = 10.asInstanceOf[`10`]
+  inline def AnimateRef: `10` = 10.asInstanceOf[`10`]
   
   /**
     * Contains a set of animation steps.
     * See `{@link animations/group group()}`
     */
-  @scala.inline
-  def Group: `3` = 3.asInstanceOf[`3`]
+  inline def Group: `3` = 3.asInstanceOf[`3`]
   
   /**
     * Contains a set of animation steps.
     * See `keyframes()`
     */
-  @scala.inline
-  def Keyframes: `5` = 5.asInstanceOf[`5`]
+  inline def Keyframes: `5` = 5.asInstanceOf[`5`]
   
   /**
     * Contains child-animation query data.
     * See `query()`
     */
-  @scala.inline
-  def Query: `11` = 11.asInstanceOf[`11`]
+  inline def Query: `11` = 11.asInstanceOf[`11`]
   
   /**
     * Contains a re-usable animation.
     * See `animation()`
     */
-  @scala.inline
-  def Reference: `8` = 8.asInstanceOf[`8`]
+  inline def Reference: `8` = 8.asInstanceOf[`8`]
   
   /**
     * Contains a set of animation steps.
     * See `sequence()`
     */
-  @scala.inline
-  def Sequence: `2` = 2.asInstanceOf[`2`]
+  inline def Sequence: `2` = 2.asInstanceOf[`2`]
   
   /**
     * Contains data for staggering an animation sequence.
     * See `stagger()`
     */
-  @scala.inline
-  def Stagger: `12` = 12.asInstanceOf[`12`]
+  inline def Stagger: `12` = 12.asInstanceOf[`12`]
   
   /**
     * Associates a named animation state with a set of CSS styles.
     * See `state()`
     */
-  @scala.inline
-  def State: `0` = 0.asInstanceOf[`0`]
+  inline def State: `0` = 0.asInstanceOf[`0`]
   
   /**
     * Contains a set of CSS property-value pairs into a named style.
     * See `style()`
     */
-  @scala.inline
-  def Style: `6` = 6.asInstanceOf[`6`]
+  inline def Style: `6` = 6.asInstanceOf[`6`]
   
   /**
     * Data for a transition from one animation state to another.
     * See `transition()`
     */
-  @scala.inline
-  def Transition: `1` = 1.asInstanceOf[`1`]
+  inline def Transition: `1` = 1.asInstanceOf[`1`]
   
   /**
     * Associates an animation with an entry trigger that can be attached to an element.
     * See `trigger()`
     */
-  @scala.inline
-  def Trigger: `7` = 7.asInstanceOf[`7`]
+  inline def Trigger: `7` = 7.asInstanceOf[`7`]
 }

@@ -16,19 +16,15 @@ trait ChoiceBase extends StObject {
 }
 object ChoiceBase {
   
-  @scala.inline
-  def apply(): ChoiceBase = {
+  inline def apply(): ChoiceBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChoiceBase]
   }
   
-  @scala.inline
-  implicit class ChoiceBaseMutableBuilder[Self <: ChoiceBase] (val x: Self) extends AnyVal {
+  extension [Self <: ChoiceBase](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

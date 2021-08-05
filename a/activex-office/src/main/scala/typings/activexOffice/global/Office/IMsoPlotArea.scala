@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoPlotArea")
 @js.native
-class IMsoPlotArea protected ()
+/* private */ class IMsoPlotArea ()
   extends StObject
      with typings.activexOffice.Office.IMsoPlotArea {
   
@@ -53,7 +53,7 @@ class IMsoPlotArea protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.IMsoPlotArea_typekey")
   var OfficeDotIMsoPlotArea_typekey: typings.activexOffice.Office.IMsoPlotArea = js.native
   

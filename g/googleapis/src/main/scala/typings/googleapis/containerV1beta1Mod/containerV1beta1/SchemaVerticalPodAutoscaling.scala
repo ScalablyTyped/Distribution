@@ -18,19 +18,15 @@ trait SchemaVerticalPodAutoscaling extends StObject {
 }
 object SchemaVerticalPodAutoscaling {
   
-  @scala.inline
-  def apply(): SchemaVerticalPodAutoscaling = {
+  inline def apply(): SchemaVerticalPodAutoscaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVerticalPodAutoscaling]
   }
   
-  @scala.inline
-  implicit class SchemaVerticalPodAutoscalingMutableBuilder[Self <: SchemaVerticalPodAutoscaling] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVerticalPodAutoscaling](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

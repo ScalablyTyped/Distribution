@@ -29,31 +29,23 @@ trait SearchLayerProperties extends StObject {
 }
 object SearchLayerProperties {
   
-  @scala.inline
-  def apply(): SearchLayerProperties = {
+  inline def apply(): SearchLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchLayerProperties]
   }
   
-  @scala.inline
-  implicit class SearchLayerPropertiesMutableBuilder[Self <: SearchLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SearchLayerProperties](x: Self) {
     
-    @scala.inline
-    def setField(value: SearchLayerFieldProperties): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: SearchLayerFieldProperties): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setSubLayer(value: Double): Self = StObject.set(x, "subLayer", value.asInstanceOf[js.Any])
+    inline def setSubLayer(value: Double): Self = StObject.set(x, "subLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubLayerUndefined: Self = StObject.set(x, "subLayer", js.undefined)
+    inline def setSubLayerUndefined: Self = StObject.set(x, "subLayer", js.undefined)
   }
 }

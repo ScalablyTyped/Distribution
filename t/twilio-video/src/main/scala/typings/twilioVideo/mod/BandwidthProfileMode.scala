@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BandwidthProfileMode extends StObject
 object BandwidthProfileMode {
   
-  @scala.inline
-  def collaboration: typings.twilioVideo.twilioVideoStrings.collaboration = "collaboration".asInstanceOf[typings.twilioVideo.twilioVideoStrings.collaboration]
+  inline def collaboration: typings.twilioVideo.twilioVideoStrings.collaboration = "collaboration".asInstanceOf[typings.twilioVideo.twilioVideoStrings.collaboration]
   
-  @scala.inline
-  def grid: typings.twilioVideo.twilioVideoStrings.grid = "grid".asInstanceOf[typings.twilioVideo.twilioVideoStrings.grid]
+  inline def grid: typings.twilioVideo.twilioVideoStrings.grid = "grid".asInstanceOf[typings.twilioVideo.twilioVideoStrings.grid]
   
-  @scala.inline
-  def presentation: typings.twilioVideo.twilioVideoStrings.presentation = "presentation".asInstanceOf[typings.twilioVideo.twilioVideoStrings.presentation]
+  inline def presentation: typings.twilioVideo.twilioVideoStrings.presentation = "presentation".asInstanceOf[typings.twilioVideo.twilioVideoStrings.presentation]
 }

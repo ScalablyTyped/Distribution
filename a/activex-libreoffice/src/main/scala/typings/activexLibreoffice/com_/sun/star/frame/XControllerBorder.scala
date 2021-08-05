@@ -40,8 +40,7 @@ trait XControllerBorder
 }
 object XControllerBorder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Border: BorderWidths,
     acquire: () => Unit,
     addBorderResizeListener: XBorderResizeListener => Unit,
@@ -55,22 +54,16 @@ object XControllerBorder {
     __obj.asInstanceOf[XControllerBorder]
   }
   
-  @scala.inline
-  implicit class XControllerBorderMutableBuilder[Self <: XControllerBorder] (val x: Self) extends AnyVal {
+  extension [Self <: XControllerBorder](x: Self) {
     
-    @scala.inline
-    def setAddBorderResizeListener(value: XBorderResizeListener => Unit): Self = StObject.set(x, "addBorderResizeListener", js.Any.fromFunction1(value))
+    inline def setAddBorderResizeListener(value: XBorderResizeListener => Unit): Self = StObject.set(x, "addBorderResizeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBorder(value: BorderWidths): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: BorderWidths): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBorder(value: () => BorderWidths): Self = StObject.set(x, "getBorder", js.Any.fromFunction0(value))
+    inline def setGetBorder(value: () => BorderWidths): Self = StObject.set(x, "getBorder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryBorderedArea(value: Rectangle => Rectangle): Self = StObject.set(x, "queryBorderedArea", js.Any.fromFunction1(value))
+    inline def setQueryBorderedArea(value: Rectangle => Rectangle): Self = StObject.set(x, "queryBorderedArea", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveBorderResizeListener(value: XBorderResizeListener => Unit): Self = StObject.set(x, "removeBorderResizeListener", js.Any.fromFunction1(value))
+    inline def setRemoveBorderResizeListener(value: XBorderResizeListener => Unit): Self = StObject.set(x, "removeBorderResizeListener", js.Any.fromFunction1(value))
   }
 }

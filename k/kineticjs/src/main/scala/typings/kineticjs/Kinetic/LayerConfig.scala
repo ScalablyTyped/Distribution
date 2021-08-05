@@ -12,19 +12,15 @@ trait LayerConfig
 }
 object LayerConfig {
   
-  @scala.inline
-  def apply(): LayerConfig = {
+  inline def apply(): LayerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayerConfig]
   }
   
-  @scala.inline
-  implicit class LayerConfigMutableBuilder[Self <: LayerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LayerConfig](x: Self) {
     
-    @scala.inline
-    def setClearBeforeDraw(value: Boolean): Self = StObject.set(x, "clearBeforeDraw", value.asInstanceOf[js.Any])
+    inline def setClearBeforeDraw(value: Boolean): Self = StObject.set(x, "clearBeforeDraw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearBeforeDrawUndefined: Self = StObject.set(x, "clearBeforeDraw", js.undefined)
+    inline def setClearBeforeDrawUndefined: Self = StObject.set(x, "clearBeforeDraw", js.undefined)
   }
 }

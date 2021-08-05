@@ -379,8 +379,7 @@ object globalMod {
   }
   object Global {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Array: () => js.Array[js.Any],
       ArrayBuffer: ArrayBufferConstructor,
       Boolean: () => Boolean,
@@ -463,253 +462,173 @@ object globalMod {
       __obj.asInstanceOf[Global]
     }
     
-    @scala.inline
-    implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
+    extension [Self <: Global](x: Self) {
       
-      @scala.inline
-      def setAfterAll(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "afterAll", js.Any.fromFunction2(value))
+      inline def setAfterAll(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "afterAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAfterEach(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction2(value))
+      inline def setAfterEach(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "Array", js.Any.fromFunction0(value))
+      inline def setArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "Array", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setArrayBuffer(value: ArrayBufferConstructor): Self = StObject.set(x, "ArrayBuffer", value.asInstanceOf[js.Any])
+      inline def setArrayBuffer(value: ArrayBufferConstructor): Self = StObject.set(x, "ArrayBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeAll(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "beforeAll", js.Any.fromFunction2(value))
+      inline def setBeforeAll(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "beforeAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeEach(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "beforeEach", js.Any.fromFunction2(value))
+      inline def setBeforeEach(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "beforeEach", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBoolean(value: () => Boolean): Self = StObject.set(x, "Boolean", js.Any.fromFunction0(value))
+      inline def setBoolean(value: () => Boolean): Self = StObject.set(x, "Boolean", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBuffer(
+      inline def setBuffer(
         value: TypeofBuffer & (Instantiable2[/* str */ String, /* encoding */ js.UndefOr[BufferEncoding], Buffer])
       ): Self = StObject.set(x, "Buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearImmediate(value: /* immediateId */ Immediate => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
+      inline def setClearImmediate(value: /* immediateId */ Immediate => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearInterval(value: /* intervalId */ Timeout => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
+      inline def setClearInterval(value: /* intervalId */ Timeout => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearTimeout(value: /* timeoutId */ Timeout => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
+      inline def setClearTimeout(value: /* timeoutId */ Timeout => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDataView(value: DataViewConstructor): Self = StObject.set(x, "DataView", value.asInstanceOf[js.Any])
+      inline def setDataView(value: DataViewConstructor): Self = StObject.set(x, "DataView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: () => String): Self = StObject.set(x, "Date", js.Any.fromFunction0(value))
+      inline def setDate(value: () => String): Self = StObject.set(x, "Date", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDecodeURI(value: /* encodedURI */ String => String): Self = StObject.set(x, "decodeURI", js.Any.fromFunction1(value))
+      inline def setDecodeURI(value: /* encodedURI */ String => String): Self = StObject.set(x, "decodeURI", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecodeURIComponent(value: /* encodedURIComponent */ String => String): Self = StObject.set(x, "decodeURIComponent", js.Any.fromFunction1(value))
+      inline def setDecodeURIComponent(value: /* encodedURIComponent */ String => String): Self = StObject.set(x, "decodeURIComponent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDescribe(value: Describe): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+      inline def setDescribe(value: Describe): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodeURI(value: /* uri */ String => String): Self = StObject.set(x, "encodeURI", js.Any.fromFunction1(value))
+      inline def setEncodeURI(value: /* uri */ String => String): Self = StObject.set(x, "encodeURI", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodeURIComponent(value: /* uriComponent */ Boolean => String): Self = StObject.set(x, "encodeURIComponent", js.Any.fromFunction1(value))
+      inline def setEncodeURIComponent(value: /* uriComponent */ Boolean => String): Self = StObject.set(x, "encodeURIComponent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: () => Error): Self = StObject.set(x, "Error", js.Any.fromFunction0(value))
+      inline def setError(value: () => Error): Self = StObject.set(x, "Error", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEscape(value: /* str */ String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* str */ String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEval(value: /* x */ String => js.Any): Self = StObject.set(x, "eval", js.Any.fromFunction1(value))
+      inline def setEval(value: /* x */ String => js.Any): Self = StObject.set(x, "eval", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEvalError(value: () => EvalError): Self = StObject.set(x, "EvalError", js.Any.fromFunction0(value))
+      inline def setEvalError(value: () => EvalError): Self = StObject.set(x, "EvalError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+      inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFdescribe(value: DescribeBase): Self = StObject.set(x, "fdescribe", value.asInstanceOf[js.Any])
+      inline def setFdescribe(value: DescribeBase): Self = StObject.set(x, "fdescribe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFit(value: ItBaseconcurrentItConcurr): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+      inline def setFit(value: ItBaseconcurrentItConcurr): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloat32Array(value: Float32ArrayConstructor): Self = StObject.set(x, "Float32Array", value.asInstanceOf[js.Any])
+      inline def setFloat32Array(value: Float32ArrayConstructor): Self = StObject.set(x, "Float32Array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloat64Array(value: Float64ArrayConstructor): Self = StObject.set(x, "Float64Array", value.asInstanceOf[js.Any])
+      inline def setFloat64Array(value: Float64ArrayConstructor): Self = StObject.set(x, "Float64Array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunction(value: /* repeated */ String => js.Function): Self = StObject.set(x, "Function", js.Any.fromFunction1(value))
+      inline def setFunction(value: /* repeated */ String => js.Function): Self = StObject.set(x, "Function", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGc(value: () => Unit): Self = StObject.set(x, "gc", js.Any.fromFunction0(value))
+      inline def setGc(value: () => Unit): Self = StObject.set(x, "gc", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGlobal(value: typings.node.NodeJS.Global): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: typings.node.NodeJS.Global): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfinity(value: Double): Self = StObject.set(x, "Infinity", value.asInstanceOf[js.Any])
+      inline def setInfinity(value: Double): Self = StObject.set(x, "Infinity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInt16Array(value: Int16ArrayConstructor): Self = StObject.set(x, "Int16Array", value.asInstanceOf[js.Any])
+      inline def setInt16Array(value: Int16ArrayConstructor): Self = StObject.set(x, "Int16Array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInt32Array(value: Int32ArrayConstructor): Self = StObject.set(x, "Int32Array", value.asInstanceOf[js.Any])
+      inline def setInt32Array(value: Int32ArrayConstructor): Self = StObject.set(x, "Int32Array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInt8Array(value: Int8ArrayConstructor): Self = StObject.set(x, "Int8Array", value.asInstanceOf[js.Any])
+      inline def setInt8Array(value: Int8ArrayConstructor): Self = StObject.set(x, "Int8Array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntl(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Intl */ js.Any): Self = StObject.set(x, "Intl", value.asInstanceOf[js.Any])
+      inline def setIntl(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Intl */ js.Any): Self = StObject.set(x, "Intl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFinite(value: /* number */ Double => Boolean): Self = StObject.set(x, "isFinite", js.Any.fromFunction1(value))
+      inline def setIsFinite(value: /* number */ Double => Boolean): Self = StObject.set(x, "isFinite", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsNaN(value: /* number */ Double => Boolean): Self = StObject.set(x, "isNaN", js.Any.fromFunction1(value))
+      inline def setIsNaN(value: /* number */ Double => Boolean): Self = StObject.set(x, "isNaN", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIt(value: ItConcurrent): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+      inline def setIt(value: ItConcurrent): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSON(value: JSON): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
+      inline def setJSON(value: JSON): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJasmine(value: Jasmine): Self = StObject.set(x, "jasmine", value.asInstanceOf[js.Any])
+      inline def setJasmine(value: Jasmine): Self = StObject.set(x, "jasmine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: MapConstructor): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
+      inline def setMap(value: MapConstructor): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMath(value: Math): Self = StObject.set(x, "Math", value.asInstanceOf[js.Any])
+      inline def setMath(value: Math): Self = StObject.set(x, "Math", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNaN(value: Double): Self = StObject.set(x, "NaN", value.asInstanceOf[js.Any])
+      inline def setNaN(value: Double): Self = StObject.set(x, "NaN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: () => Double): Self = StObject.set(x, "Number", js.Any.fromFunction0(value))
+      inline def setNumber(value: () => Double): Self = StObject.set(x, "Number", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setObject(value: () => js.Any): Self = StObject.set(x, "Object", js.Any.fromFunction0(value))
+      inline def setObject(value: () => js.Any): Self = StObject.set(x, "Object", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParseFloat(value: /* string */ String => Double): Self = StObject.set(x, "parseFloat", js.Any.fromFunction1(value))
+      inline def setParseFloat(value: /* string */ String => Double): Self = StObject.set(x, "parseFloat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParseInt(value: (/* s */ String, /* radix */ Double) => Double): Self = StObject.set(x, "parseInt", js.Any.fromFunction2(value))
+      inline def setParseInt(value: (/* s */ String, /* radix */ Double) => Double): Self = StObject.set(x, "parseInt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPending(value: () => Unit): Self = StObject.set(x, "pending", js.Any.fromFunction0(value))
+      inline def setPending(value: () => Unit): Self = StObject.set(x, "pending", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueMicrotask(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "queueMicrotask", js.Any.fromFunction1(value))
+      inline def setQueueMicrotask(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "queueMicrotask", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRangeError(value: () => RangeError): Self = StObject.set(x, "RangeError", js.Any.fromFunction0(value))
+      inline def setRangeError(value: () => RangeError): Self = StObject.set(x, "RangeError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReferenceError(value: () => ReferenceError): Self = StObject.set(x, "ReferenceError", js.Any.fromFunction0(value))
+      inline def setReferenceError(value: () => ReferenceError): Self = StObject.set(x, "ReferenceError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegExp(value: /* pattern */ RegExp => RegExp): Self = StObject.set(x, "RegExp", js.Any.fromFunction1(value))
+      inline def setRegExp(value: /* pattern */ RegExp => RegExp): Self = StObject.set(x, "RegExp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: SetConstructor): Self = StObject.set(x, "Set", value.asInstanceOf[js.Any])
+      inline def setSet(value: SetConstructor): Self = StObject.set(x, "Set", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetImmediate(
+      inline def setSetImmediate(
         value: (/* callback */ js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => Immediate
       ): Self = StObject.set(x, "setImmediate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetInterval(
+      inline def setSetInterval(
         value: (/* callback */ js.Function1[/* repeated */ js.Any, Unit], /* ms */ Double, /* repeated */ js.Any) => Timeout
       ): Self = StObject.set(x, "setInterval", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetTimeout(
+      inline def setSetTimeout(
         value: (/* callback */ js.Function1[/* repeated */ js.Any, Unit], /* ms */ Double, /* repeated */ js.Any) => Timeout
       ): Self = StObject.set(x, "setTimeout", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSpyOn(value: () => Unit): Self = StObject.set(x, "spyOn", js.Any.fromFunction0(value))
+      inline def setSpyOn(value: () => Unit): Self = StObject.set(x, "spyOn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSpyOnProperty(value: () => Unit): Self = StObject.set(x, "spyOnProperty", js.Any.fromFunction0(value))
+      inline def setSpyOnProperty(value: () => Unit): Self = StObject.set(x, "spyOnProperty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setString(value: () => String): Self = StObject.set(x, "String", js.Any.fromFunction0(value))
+      inline def setString(value: () => String): Self = StObject.set(x, "String", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSymbol(value: js.Function): Self = StObject.set(x, "Symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: js.Function): Self = StObject.set(x, "Symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyntaxError(value: () => SyntaxError): Self = StObject.set(x, "SyntaxError", js.Any.fromFunction0(value))
+      inline def setSyntaxError(value: () => SyntaxError): Self = StObject.set(x, "SyntaxError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTest(value: ItConcurrent): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: ItConcurrent): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeError(value: () => TypeError): Self = StObject.set(x, "TypeError", js.Any.fromFunction0(value))
+      inline def setTypeError(value: () => TypeError): Self = StObject.set(x, "TypeError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setURIError(value: () => URIError): Self = StObject.set(x, "URIError", js.Any.fromFunction0(value))
+      inline def setURIError(value: () => URIError): Self = StObject.set(x, "URIError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUint16Array(value: Uint16ArrayConstructor): Self = StObject.set(x, "Uint16Array", value.asInstanceOf[js.Any])
+      inline def setUint16Array(value: Uint16ArrayConstructor): Self = StObject.set(x, "Uint16Array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUint32Array(value: Uint32ArrayConstructor): Self = StObject.set(x, "Uint32Array", value.asInstanceOf[js.Any])
+      inline def setUint32Array(value: Uint32ArrayConstructor): Self = StObject.set(x, "Uint32Array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUint8Array(value: Uint8ArrayConstructor): Self = StObject.set(x, "Uint8Array", value.asInstanceOf[js.Any])
+      inline def setUint8Array(value: Uint8ArrayConstructor): Self = StObject.set(x, "Uint8Array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUint8ClampedArray(value: Uint8ClampedArrayConstructor): Self = StObject.set(x, "Uint8ClampedArray", value.asInstanceOf[js.Any])
+      inline def setUint8ClampedArray(value: Uint8ClampedArrayConstructor): Self = StObject.set(x, "Uint8ClampedArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUndefined(value: Unit): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+      inline def setUndefined(value: Unit): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnescape(value: /* str */ String => String): Self = StObject.set(x, "unescape", js.Any.fromFunction1(value))
+      inline def setUnescape(value: /* str */ String => String): Self = StObject.set(x, "unescape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setV8debug(value: js.Any): Self = StObject.set(x, "v8debug", value.asInstanceOf[js.Any])
+      inline def setV8debug(value: js.Any): Self = StObject.set(x, "v8debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV8debugUndefined: Self = StObject.set(x, "v8debug", js.undefined)
+      inline def setV8debugUndefined: Self = StObject.set(x, "v8debug", js.undefined)
       
-      @scala.inline
-      def setWeakMap(value: WeakMapConstructor): Self = StObject.set(x, "WeakMap", value.asInstanceOf[js.Any])
+      inline def setWeakMap(value: WeakMapConstructor): Self = StObject.set(x, "WeakMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeakSet(value: WeakSetConstructor): Self = StObject.set(x, "WeakSet", value.asInstanceOf[js.Any])
+      inline def setWeakSet(value: WeakSetConstructor): Self = StObject.set(x, "WeakSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXdescribe(value: DescribeBase): Self = StObject.set(x, "xdescribe", value.asInstanceOf[js.Any])
+      inline def setXdescribe(value: DescribeBase): Self = StObject.set(x, "xdescribe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXit(value: ItBase): Self = StObject.set(x, "xit", value.asInstanceOf[js.Any])
+      inline def setXit(value: ItBase): Self = StObject.set(x, "xit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXtest(value: ItBase): Self = StObject.set(x, "xtest", value.asInstanceOf[js.Any])
+      inline def setXtest(value: ItBase): Self = StObject.set(x, "xtest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__coverage__(value: CoverageMapData): Self = StObject.set(x, "__coverage__", value.asInstanceOf[js.Any])
+      inline def set__coverage__(value: CoverageMapData): Self = StObject.set(x, "__coverage__", value.asInstanceOf[js.Any])
     }
   }
   
@@ -731,8 +650,7 @@ object globalMod {
   }
   object GlobalAdditions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       __coverage__ : CoverageMapData,
       afterAll: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit,
       afterEach: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit,
@@ -756,26 +674,19 @@ object globalMod {
       __obj.asInstanceOf[GlobalAdditions]
     }
     
-    @scala.inline
-    implicit class GlobalAdditionsMutableBuilder[Self <: GlobalAdditions] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalAdditions](x: Self) {
       
-      @scala.inline
-      def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+      inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setJasmine(value: Jasmine): Self = StObject.set(x, "jasmine", value.asInstanceOf[js.Any])
+      inline def setJasmine(value: Jasmine): Self = StObject.set(x, "jasmine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending(value: () => Unit): Self = StObject.set(x, "pending", js.Any.fromFunction0(value))
+      inline def setPending(value: () => Unit): Self = StObject.set(x, "pending", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSpyOn(value: () => Unit): Self = StObject.set(x, "spyOn", js.Any.fromFunction0(value))
+      inline def setSpyOn(value: () => Unit): Self = StObject.set(x, "spyOn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSpyOnProperty(value: () => Unit): Self = StObject.set(x, "spyOnProperty", js.Any.fromFunction0(value))
+      inline def setSpyOnProperty(value: () => Unit): Self = StObject.set(x, "spyOnProperty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set__coverage__(value: CoverageMapData): Self = StObject.set(x, "__coverage__", value.asInstanceOf[js.Any])
+      inline def set__coverage__(value: CoverageMapData): Self = StObject.set(x, "__coverage__", value.asInstanceOf[js.Any])
     }
   }
   
@@ -854,23 +765,18 @@ object globalMod {
   }
   object Jasmine {
     
-    @scala.inline
-    def apply(addMatchers: Record[String, js.Any] => Unit): Jasmine = {
+    inline def apply(addMatchers: Record[String, js.Any] => Unit): Jasmine = {
       val __obj = js.Dynamic.literal(addMatchers = js.Any.fromFunction1(addMatchers))
       __obj.asInstanceOf[Jasmine]
     }
     
-    @scala.inline
-    implicit class JasmineMutableBuilder[Self <: Jasmine] (val x: Self) extends AnyVal {
+    extension [Self <: Jasmine](x: Self) {
       
-      @scala.inline
-      def setAddMatchers(value: Record[String, js.Any] => Unit): Self = StObject.set(x, "addMatchers", js.Any.fromFunction1(value))
+      inline def setAddMatchers(value: Record[String, js.Any] => Unit): Self = StObject.set(x, "addMatchers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_DEFAULT_TIMEOUT_INTERVAL(value: Double): Self = StObject.set(x, "_DEFAULT_TIMEOUT_INTERVAL", value.asInstanceOf[js.Any])
+      inline def set_DEFAULT_TIMEOUT_INTERVAL(value: Double): Self = StObject.set(x, "_DEFAULT_TIMEOUT_INTERVAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_DEFAULT_TIMEOUT_INTERVALUndefined: Self = StObject.set(x, "_DEFAULT_TIMEOUT_INTERVAL", js.undefined)
+      inline def set_DEFAULT_TIMEOUT_INTERVALUndefined: Self = StObject.set(x, "_DEFAULT_TIMEOUT_INTERVAL", js.undefined)
     }
   }
   
@@ -950,8 +856,7 @@ object globalMod {
   }
   object TestFrameworkGlobals {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       afterAll: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit,
       afterEach: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit,
       beforeAll: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit,
@@ -969,44 +874,31 @@ object globalMod {
       __obj.asInstanceOf[TestFrameworkGlobals]
     }
     
-    @scala.inline
-    implicit class TestFrameworkGlobalsMutableBuilder[Self <: TestFrameworkGlobals] (val x: Self) extends AnyVal {
+    extension [Self <: TestFrameworkGlobals](x: Self) {
       
-      @scala.inline
-      def setAfterAll(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "afterAll", js.Any.fromFunction2(value))
+      inline def setAfterAll(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "afterAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAfterEach(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction2(value))
+      inline def setAfterEach(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeAll(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "beforeAll", js.Any.fromFunction2(value))
+      inline def setBeforeAll(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "beforeAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeEach(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "beforeEach", js.Any.fromFunction2(value))
+      inline def setBeforeEach(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "beforeEach", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDescribe(value: Describe): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+      inline def setDescribe(value: Describe): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFdescribe(value: DescribeBase): Self = StObject.set(x, "fdescribe", value.asInstanceOf[js.Any])
+      inline def setFdescribe(value: DescribeBase): Self = StObject.set(x, "fdescribe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFit(value: ItBaseconcurrentItConcurr): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+      inline def setFit(value: ItBaseconcurrentItConcurr): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIt(value: ItConcurrent): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+      inline def setIt(value: ItConcurrent): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest(value: ItConcurrent): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: ItConcurrent): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXdescribe(value: DescribeBase): Self = StObject.set(x, "xdescribe", value.asInstanceOf[js.Any])
+      inline def setXdescribe(value: DescribeBase): Self = StObject.set(x, "xdescribe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXit(value: ItBase): Self = StObject.set(x, "xit", value.asInstanceOf[js.Any])
+      inline def setXit(value: ItBase): Self = StObject.set(x, "xit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXtest(value: ItBase): Self = StObject.set(x, "xtest", value.asInstanceOf[js.Any])
+      inline def setXtest(value: ItBase): Self = StObject.set(x, "xtest", value.asInstanceOf[js.Any])
     }
   }
   

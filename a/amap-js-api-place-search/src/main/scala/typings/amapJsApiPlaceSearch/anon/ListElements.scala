@@ -17,8 +17,7 @@ trait ListElements extends StObject {
 }
 object ListElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     listElements: js.Array[HTMLElement],
     markers: js.Array[Marker[js.Any]],
     result: js.Array[SelectChangeEventData]
@@ -27,25 +26,18 @@ object ListElements {
     __obj.asInstanceOf[ListElements]
   }
   
-  @scala.inline
-  implicit class ListElementsMutableBuilder[Self <: ListElements] (val x: Self) extends AnyVal {
+  extension [Self <: ListElements](x: Self) {
     
-    @scala.inline
-    def setListElements(value: js.Array[HTMLElement]): Self = StObject.set(x, "listElements", value.asInstanceOf[js.Any])
+    inline def setListElements(value: js.Array[HTMLElement]): Self = StObject.set(x, "listElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListElementsVarargs(value: HTMLElement*): Self = StObject.set(x, "listElements", js.Array(value :_*))
+    inline def setListElementsVarargs(value: HTMLElement*): Self = StObject.set(x, "listElements", js.Array(value :_*))
     
-    @scala.inline
-    def setMarkers(value: js.Array[Marker[js.Any]]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+    inline def setMarkers(value: js.Array[Marker[js.Any]]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkersVarargs(value: Marker[js.Any]*): Self = StObject.set(x, "markers", js.Array(value :_*))
+    inline def setMarkersVarargs(value: Marker[js.Any]*): Self = StObject.set(x, "markers", js.Array(value :_*))
     
-    @scala.inline
-    def setResult(value: js.Array[SelectChangeEventData]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Array[SelectChangeEventData]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultVarargs(value: SelectChangeEventData*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: SelectChangeEventData*): Self = StObject.set(x, "result", js.Array(value :_*))
   }
 }

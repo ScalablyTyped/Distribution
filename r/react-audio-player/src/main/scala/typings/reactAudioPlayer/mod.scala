@@ -25,17 +25,13 @@ object mod {
   trait Preload extends StObject
   object Preload {
     
-    @scala.inline
-    def _empty: typings.reactAudioPlayer.reactAudioPlayerStrings._empty = "".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings._empty]
+    inline def _empty: typings.reactAudioPlayer.reactAudioPlayerStrings._empty = "".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings._empty]
     
-    @scala.inline
-    def auto: typings.reactAudioPlayer.reactAudioPlayerStrings.auto = "auto".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings.auto]
+    inline def auto: typings.reactAudioPlayer.reactAudioPlayerStrings.auto = "auto".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings.auto]
     
-    @scala.inline
-    def metadata: typings.reactAudioPlayer.reactAudioPlayerStrings.metadata = "metadata".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings.metadata]
+    inline def metadata: typings.reactAudioPlayer.reactAudioPlayerStrings.metadata = "metadata".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings.metadata]
     
-    @scala.inline
-    def none: typings.reactAudioPlayer.reactAudioPlayerStrings.none = "none".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings.none]
+    inline def none: typings.reactAudioPlayer.reactAudioPlayerStrings.none = "none".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings.none]
   }
   
   @js.native
@@ -107,170 +103,116 @@ object mod {
   }
   object ReactAudioPlayerProps {
     
-    @scala.inline
-    def apply(): ReactAudioPlayerProps = {
+    inline def apply(): ReactAudioPlayerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactAudioPlayerProps]
     }
     
-    @scala.inline
-    implicit class ReactAudioPlayerPropsMutableBuilder[Self <: ReactAudioPlayerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactAudioPlayerProps](x: Self) {
       
-      @scala.inline
-      def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
+      inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
+      inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlsList(value: String): Self = StObject.set(x, "controlsList", value.asInstanceOf[js.Any])
+      inline def setControlsList(value: String): Self = StObject.set(x, "controlsList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlsListUndefined: Self = StObject.set(x, "controlsList", js.undefined)
+      inline def setControlsListUndefined: Self = StObject.set(x, "controlsList", js.undefined)
       
-      @scala.inline
-      def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+      inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
       
-      @scala.inline
-      def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setListenInterval(value: Double): Self = StObject.set(x, "listenInterval", value.asInstanceOf[js.Any])
+      inline def setListenInterval(value: Double): Self = StObject.set(x, "listenInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenIntervalUndefined: Self = StObject.set(x, "listenInterval", js.undefined)
+      inline def setListenIntervalUndefined: Self = StObject.set(x, "listenInterval", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+      inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
+      inline def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
       
-      @scala.inline
-      def setOnAbort(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+      inline def setOnAbort(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
+      inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
       
-      @scala.inline
-      def setOnCanPlay(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
+      inline def setOnCanPlay(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCanPlayThrough(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
+      inline def setOnCanPlayThrough(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
+      inline def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
       
-      @scala.inline
-      def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
+      inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      @scala.inline
-      def setOnEnded(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+      inline def setOnEnded(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
+      inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnListen(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onListen", js.Any.fromFunction1(value))
+      inline def setOnListen(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onListen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnListenUndefined: Self = StObject.set(x, "onListen", js.undefined)
+      inline def setOnListenUndefined: Self = StObject.set(x, "onListen", js.undefined)
       
-      @scala.inline
-      def setOnLoadedMetadata(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
+      inline def setOnLoadedMetadata(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
+      inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
       
-      @scala.inline
-      def setOnPause(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+      inline def setOnPause(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
+      inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
-      @scala.inline
-      def setOnPlay(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+      inline def setOnPlay(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
+      inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
-      @scala.inline
-      def setOnSeeked(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
+      inline def setOnSeeked(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
+      inline def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
       
-      @scala.inline
-      def setOnVolumeChanged(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onVolumeChanged", js.Any.fromFunction1(value))
+      inline def setOnVolumeChanged(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onVolumeChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVolumeChangedUndefined: Self = StObject.set(x, "onVolumeChanged", js.undefined)
+      inline def setOnVolumeChangedUndefined: Self = StObject.set(x, "onVolumeChanged", js.undefined)
       
-      @scala.inline
-      def setPreload(value: Preload): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+      inline def setPreload(value: Preload): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+      inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+      inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+      inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     }
   }
 }

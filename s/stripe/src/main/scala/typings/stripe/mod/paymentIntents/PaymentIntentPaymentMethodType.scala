@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaymentIntentPaymentMethodType extends StObject
 object PaymentIntentPaymentMethodType {
   
-  @scala.inline
-  def card: typings.stripe.stripeStrings.card = "card".asInstanceOf[typings.stripe.stripeStrings.card]
+  inline def card: typings.stripe.stripeStrings.card = "card".asInstanceOf[typings.stripe.stripeStrings.card]
   
-  @scala.inline
-  def ideal: typings.stripe.stripeStrings.ideal = "ideal".asInstanceOf[typings.stripe.stripeStrings.ideal]
+  inline def ideal: typings.stripe.stripeStrings.ideal = "ideal".asInstanceOf[typings.stripe.stripeStrings.ideal]
   
-  @scala.inline
-  def sepa_debit: typings.stripe.stripeStrings.sepa_debit = "sepa_debit".asInstanceOf[typings.stripe.stripeStrings.sepa_debit]
+  inline def sepa_debit: typings.stripe.stripeStrings.sepa_debit = "sepa_debit".asInstanceOf[typings.stripe.stripeStrings.sepa_debit]
 }

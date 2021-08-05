@@ -15,8 +15,7 @@ trait IAccessControlListComponentKey extends StObject {
 }
 object IAccessControlListComponentKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IAccessControlListComponentKey,
     ItemID: Double,
     PropertyDefID: MFBuiltInPropertyDef | Double
@@ -25,16 +24,12 @@ object IAccessControlListComponentKey {
     __obj.asInstanceOf[IAccessControlListComponentKey]
   }
   
-  @scala.inline
-  implicit class IAccessControlListComponentKeyMutableBuilder[Self <: IAccessControlListComponentKey] (val x: Self) extends AnyVal {
+  extension [Self <: IAccessControlListComponentKey](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IAccessControlListComponentKey): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IAccessControlListComponentKey): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItemID(value: Double): Self = StObject.set(x, "ItemID", value.asInstanceOf[js.Any])
+    inline def setItemID(value: Double): Self = StObject.set(x, "ItemID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyDefID(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDefID", value.asInstanceOf[js.Any])
+    inline def setPropertyDefID(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDefID", value.asInstanceOf[js.Any])
   }
 }

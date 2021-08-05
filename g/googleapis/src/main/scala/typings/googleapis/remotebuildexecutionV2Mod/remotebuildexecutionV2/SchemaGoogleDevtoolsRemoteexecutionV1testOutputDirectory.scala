@@ -31,31 +31,23 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory extends StObject 
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectoryMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory](x: Self) {
     
-    @scala.inline
-    def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setTreeDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "treeDigest", value.asInstanceOf[js.Any])
+    inline def setTreeDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "treeDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeDigestUndefined: Self = StObject.set(x, "treeDigest", js.undefined)
+    inline def setTreeDigestUndefined: Self = StObject.set(x, "treeDigest", js.undefined)
   }
 }

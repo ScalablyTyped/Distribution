@@ -18,28 +18,21 @@ trait ListConstraintsForPortfolioOutput extends StObject {
 }
 object ListConstraintsForPortfolioOutput {
   
-  @scala.inline
-  def apply(): ListConstraintsForPortfolioOutput = {
+  inline def apply(): ListConstraintsForPortfolioOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListConstraintsForPortfolioOutput]
   }
   
-  @scala.inline
-  implicit class ListConstraintsForPortfolioOutputMutableBuilder[Self <: ListConstraintsForPortfolioOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListConstraintsForPortfolioOutput](x: Self) {
     
-    @scala.inline
-    def setConstraintDetails(value: ConstraintDetails): Self = StObject.set(x, "ConstraintDetails", value.asInstanceOf[js.Any])
+    inline def setConstraintDetails(value: ConstraintDetails): Self = StObject.set(x, "ConstraintDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintDetailsUndefined: Self = StObject.set(x, "ConstraintDetails", js.undefined)
+    inline def setConstraintDetailsUndefined: Self = StObject.set(x, "ConstraintDetails", js.undefined)
     
-    @scala.inline
-    def setConstraintDetailsVarargs(value: ConstraintDetail*): Self = StObject.set(x, "ConstraintDetails", js.Array(value :_*))
+    inline def setConstraintDetailsVarargs(value: ConstraintDetail*): Self = StObject.set(x, "ConstraintDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
   }
 }

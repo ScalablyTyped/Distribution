@@ -18,9 +18,7 @@ object middlewareMod {
   @js.native
   val getUserAgentMiddlewareOptions: BuildHandlerOptions = js.native
   
-  @scala.inline
-  def getUserAgentPlugin(config: UserAgentResolvedConfig): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserAgentPlugin")(config.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  inline def getUserAgentPlugin(config: UserAgentResolvedConfig): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserAgentPlugin")(config.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
   
-  @scala.inline
-  def userAgentMiddleware(options: UserAgentResolvedConfig): js.Function1[/* next */ BuildHandler[js.Any, js.Any], BuildHandler[js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgentMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* next */ BuildHandler[js.Any, js.Any], BuildHandler[js.Any, js.Any]]]
+  inline def userAgentMiddleware(options: UserAgentResolvedConfig): js.Function1[/* next */ BuildHandler[js.Any, js.Any], BuildHandler[js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgentMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* next */ BuildHandler[js.Any, js.Any], BuildHandler[js.Any, js.Any]]]
 }

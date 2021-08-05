@@ -10,16 +10,13 @@ trait AppearanceString extends StObject {
 }
 object AppearanceString {
   
-  @scala.inline
-  def apply(appearance: String): AppearanceString = {
+  inline def apply(appearance: String): AppearanceString = {
     val __obj = js.Dynamic.literal(appearance = appearance.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppearanceString]
   }
   
-  @scala.inline
-  implicit class AppearanceStringMutableBuilder[Self <: AppearanceString] (val x: Self) extends AnyVal {
+  extension [Self <: AppearanceString](x: Self) {
     
-    @scala.inline
-    def setAppearance(value: String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+    inline def setAppearance(value: String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
   }
 }

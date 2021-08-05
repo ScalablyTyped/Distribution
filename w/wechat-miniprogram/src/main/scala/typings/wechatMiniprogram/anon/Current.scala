@@ -27,22 +27,17 @@ trait Current extends StObject {
 }
 object Current {
   
-  @scala.inline
-  def apply(current: Double, currentItemId: String, source: _empty | autoplay | touch): Current = {
+  inline def apply(current: Double, currentItemId: String, source: _empty | autoplay | touch): Current = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], currentItemId = currentItemId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Current]
   }
   
-  @scala.inline
-  implicit class CurrentMutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
+  extension [Self <: Current](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentItemId(value: String): Self = StObject.set(x, "currentItemId", value.asInstanceOf[js.Any])
+    inline def setCurrentItemId(value: String): Self = StObject.set(x, "currentItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: _empty | autoplay | touch): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: _empty | autoplay | touch): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

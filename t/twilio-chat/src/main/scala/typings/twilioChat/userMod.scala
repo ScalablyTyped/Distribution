@@ -50,7 +50,7 @@ object userMod {
     
     def attributes: js.Any = js.native
     
-    var entity: js.Any = js.native
+    /* private */ var entity: js.Any = js.native
     
     def entityName_=(name: String): Unit = js.native
     
@@ -65,13 +65,13 @@ object userMod {
     
     def online: Boolean = js.native
     
-    var promiseToFetch: js.Any = js.native
+    /* private */ var promiseToFetch: js.Any = js.native
     
-    var services: js.Any = js.native
+    /* private */ var services: js.Any = js.native
     
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
     
-    var subscribed: js.Any = js.native
+    /* private */ var subscribed: js.Any = js.native
     
     /**
       * Removes User from subscription list.
@@ -103,14 +103,11 @@ object userMod {
     trait SubscriptionState extends StObject
     object SubscriptionState {
       
-      @scala.inline
-      def initializing: typings.twilioChat.twilioChatStrings.initializing = "initializing".asInstanceOf[typings.twilioChat.twilioChatStrings.initializing]
+      inline def initializing: typings.twilioChat.twilioChatStrings.initializing = "initializing".asInstanceOf[typings.twilioChat.twilioChatStrings.initializing]
       
-      @scala.inline
-      def subscribed: typings.twilioChat.twilioChatStrings.subscribed = "subscribed".asInstanceOf[typings.twilioChat.twilioChatStrings.subscribed]
+      inline def subscribed: typings.twilioChat.twilioChatStrings.subscribed = "subscribed".asInstanceOf[typings.twilioChat.twilioChatStrings.subscribed]
       
-      @scala.inline
-      def unsubscribed: typings.twilioChat.twilioChatStrings.unsubscribed = "unsubscribed".asInstanceOf[typings.twilioChat.twilioChatStrings.unsubscribed]
+      inline def unsubscribed: typings.twilioChat.twilioChatStrings.unsubscribed = "unsubscribed".asInstanceOf[typings.twilioChat.twilioChatStrings.unsubscribed]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -122,17 +119,13 @@ object userMod {
     trait UpdateReason extends StObject
     object UpdateReason {
       
-      @scala.inline
-      def attributes: typings.twilioChat.twilioChatStrings.attributes = "attributes".asInstanceOf[typings.twilioChat.twilioChatStrings.attributes]
+      inline def attributes: typings.twilioChat.twilioChatStrings.attributes = "attributes".asInstanceOf[typings.twilioChat.twilioChatStrings.attributes]
       
-      @scala.inline
-      def friendlyName: typings.twilioChat.twilioChatStrings.friendlyName = "friendlyName".asInstanceOf[typings.twilioChat.twilioChatStrings.friendlyName]
+      inline def friendlyName: typings.twilioChat.twilioChatStrings.friendlyName = "friendlyName".asInstanceOf[typings.twilioChat.twilioChatStrings.friendlyName]
       
-      @scala.inline
-      def notifiable: typings.twilioChat.twilioChatStrings.notifiable = "notifiable".asInstanceOf[typings.twilioChat.twilioChatStrings.notifiable]
+      inline def notifiable: typings.twilioChat.twilioChatStrings.notifiable = "notifiable".asInstanceOf[typings.twilioChat.twilioChatStrings.notifiable]
       
-      @scala.inline
-      def online: typings.twilioChat.twilioChatStrings.online = "online".asInstanceOf[typings.twilioChat.twilioChatStrings.online]
+      inline def online: typings.twilioChat.twilioChatStrings.online = "online".asInstanceOf[typings.twilioChat.twilioChatStrings.online]
     }
     
     trait UpdatedEventArgs extends StObject {
@@ -143,23 +136,18 @@ object userMod {
     }
     object UpdatedEventArgs {
       
-      @scala.inline
-      def apply(updateReasons: js.Array[UpdateReason], user: User): UpdatedEventArgs = {
+      inline def apply(updateReasons: js.Array[UpdateReason], user: User): UpdatedEventArgs = {
         val __obj = js.Dynamic.literal(updateReasons = updateReasons.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
         __obj.asInstanceOf[UpdatedEventArgs]
       }
       
-      @scala.inline
-      implicit class UpdatedEventArgsMutableBuilder[Self <: UpdatedEventArgs] (val x: Self) extends AnyVal {
+      extension [Self <: UpdatedEventArgs](x: Self) {
         
-        @scala.inline
-        def setUpdateReasons(value: js.Array[UpdateReason]): Self = StObject.set(x, "updateReasons", value.asInstanceOf[js.Any])
+        inline def setUpdateReasons(value: js.Array[UpdateReason]): Self = StObject.set(x, "updateReasons", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateReasonsVarargs(value: UpdateReason*): Self = StObject.set(x, "updateReasons", js.Array(value :_*))
+        inline def setUpdateReasonsVarargs(value: UpdateReason*): Self = StObject.set(x, "updateReasons", js.Array(value :_*))
         
-        @scala.inline
-        def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -172,20 +160,16 @@ object userMod {
   }
   object UserServices {
     
-    @scala.inline
-    def apply(session: Session, syncClient: SyncClient): UserServices = {
+    inline def apply(session: Session, syncClient: SyncClient): UserServices = {
       val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], syncClient = syncClient.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserServices]
     }
     
-    @scala.inline
-    implicit class UserServicesMutableBuilder[Self <: UserServices] (val x: Self) extends AnyVal {
+    extension [Self <: UserServices](x: Self) {
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
+      inline def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
     }
   }
 }

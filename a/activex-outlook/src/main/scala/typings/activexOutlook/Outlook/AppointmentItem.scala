@@ -137,7 +137,7 @@ trait AppointmentItem extends StObject {
   
   val Organizer: String = js.native
   
-  @JSName("Outlook.AppointmentItem_typekey")
+  /* private */ @JSName("Outlook.AppointmentItem_typekey")
   var OutlookDotAppointmentItem_typekey: AppointmentItem = js.native
   
   val OutlookInternalVersion: Double = js.native

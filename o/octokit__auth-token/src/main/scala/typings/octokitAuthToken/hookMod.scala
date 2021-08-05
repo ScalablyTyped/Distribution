@@ -16,12 +16,8 @@ object hookMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hook(token: Token, request: RequestInterface, route: EndpointOptions): js.Promise[AnyResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(token.asInstanceOf[js.Any], request.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AnyResponse]]
-  @scala.inline
-  def hook(token: Token, request: RequestInterface, route: EndpointOptions, parameters: RequestParameters): js.Promise[AnyResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(token.asInstanceOf[js.Any], request.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AnyResponse]]
-  @scala.inline
-  def hook(token: Token, request: RequestInterface, route: Route): js.Promise[AnyResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(token.asInstanceOf[js.Any], request.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AnyResponse]]
-  @scala.inline
-  def hook(token: Token, request: RequestInterface, route: Route, parameters: RequestParameters): js.Promise[AnyResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(token.asInstanceOf[js.Any], request.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AnyResponse]]
+  inline def hook(token: Token, request: RequestInterface, route: EndpointOptions): js.Promise[AnyResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(token.asInstanceOf[js.Any], request.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AnyResponse]]
+  inline def hook(token: Token, request: RequestInterface, route: EndpointOptions, parameters: RequestParameters): js.Promise[AnyResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(token.asInstanceOf[js.Any], request.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AnyResponse]]
+  inline def hook(token: Token, request: RequestInterface, route: Route): js.Promise[AnyResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(token.asInstanceOf[js.Any], request.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AnyResponse]]
+  inline def hook(token: Token, request: RequestInterface, route: Route, parameters: RequestParameters): js.Promise[AnyResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(token.asInstanceOf[js.Any], request.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AnyResponse]]
 }

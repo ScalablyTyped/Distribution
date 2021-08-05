@@ -18,26 +18,20 @@ object mod {
   }
   object FocusElements {
     
-    @scala.inline
-    def apply(): FocusElements = {
+    inline def apply(): FocusElements = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FocusElements]
     }
     
-    @scala.inline
-    implicit class FocusElementsMutableBuilder[Self <: FocusElements] (val x: Self) extends AnyVal {
+    extension [Self <: FocusElements](x: Self) {
       
-      @scala.inline
-      def setGainedFocus(value: HTMLElement): Self = StObject.set(x, "gainedFocus", value.asInstanceOf[js.Any])
+      inline def setGainedFocus(value: HTMLElement): Self = StObject.set(x, "gainedFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGainedFocusUndefined: Self = StObject.set(x, "gainedFocus", js.undefined)
+      inline def setGainedFocusUndefined: Self = StObject.set(x, "gainedFocus", js.undefined)
       
-      @scala.inline
-      def setLostFocus(value: HTMLElement): Self = StObject.set(x, "lostFocus", value.asInstanceOf[js.Any])
+      inline def setLostFocus(value: HTMLElement): Self = StObject.set(x, "lostFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLostFocusUndefined: Self = StObject.set(x, "lostFocus", js.undefined)
+      inline def setLostFocusUndefined: Self = StObject.set(x, "lostFocus", js.undefined)
     }
   }
   
@@ -48,20 +42,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     }
   }
   

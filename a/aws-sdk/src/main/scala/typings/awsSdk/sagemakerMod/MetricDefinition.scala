@@ -18,19 +18,15 @@ trait MetricDefinition extends StObject {
 }
 object MetricDefinition {
   
-  @scala.inline
-  def apply(Name: MetricName, Regex: MetricRegex): MetricDefinition = {
+  inline def apply(Name: MetricName, Regex: MetricRegex): MetricDefinition = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Regex = Regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDefinition]
   }
   
-  @scala.inline
-  implicit class MetricDefinitionMutableBuilder[Self <: MetricDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: MetricDefinition](x: Self) {
     
-    @scala.inline
-    def setName(value: MetricName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: MetricName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegex(value: MetricRegex): Self = StObject.set(x, "Regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: MetricRegex): Self = StObject.set(x, "Regex", value.asInstanceOf[js.Any])
   }
 }

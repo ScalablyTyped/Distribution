@@ -12,22 +12,17 @@ trait CallHierarchyIncomingCall extends StObject {
 }
 object CallHierarchyIncomingCall {
   
-  @scala.inline
-  def apply(from: CallHierarchyItem, fromSpans: js.Array[TextSpan]): CallHierarchyIncomingCall = {
+  inline def apply(from: CallHierarchyItem, fromSpans: js.Array[TextSpan]): CallHierarchyIncomingCall = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], fromSpans = fromSpans.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallHierarchyIncomingCall]
   }
   
-  @scala.inline
-  implicit class CallHierarchyIncomingCallMutableBuilder[Self <: CallHierarchyIncomingCall] (val x: Self) extends AnyVal {
+  extension [Self <: CallHierarchyIncomingCall](x: Self) {
     
-    @scala.inline
-    def setFrom(value: CallHierarchyItem): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: CallHierarchyItem): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromSpans(value: js.Array[TextSpan]): Self = StObject.set(x, "fromSpans", value.asInstanceOf[js.Any])
+    inline def setFromSpans(value: js.Array[TextSpan]): Self = StObject.set(x, "fromSpans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromSpansVarargs(value: TextSpan*): Self = StObject.set(x, "fromSpans", js.Array(value :_*))
+    inline def setFromSpansVarargs(value: TextSpan*): Self = StObject.set(x, "fromSpans", js.Array(value :_*))
   }
 }

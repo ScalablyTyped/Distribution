@@ -48,61 +48,43 @@ trait Datapoint extends StObject {
 }
 object Datapoint {
   
-  @scala.inline
-  def apply(): Datapoint = {
+  inline def apply(): Datapoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Datapoint]
   }
   
-  @scala.inline
-  implicit class DatapointMutableBuilder[Self <: Datapoint] (val x: Self) extends AnyVal {
+  extension [Self <: Datapoint](x: Self) {
     
-    @scala.inline
-    def setAverage(value: DatapointValue): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
+    inline def setAverage(value: DatapointValue): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageUndefined: Self = StObject.set(x, "Average", js.undefined)
+    inline def setAverageUndefined: Self = StObject.set(x, "Average", js.undefined)
     
-    @scala.inline
-    def setExtendedStatistics(value: DatapointValueMap): Self = StObject.set(x, "ExtendedStatistics", value.asInstanceOf[js.Any])
+    inline def setExtendedStatistics(value: DatapointValueMap): Self = StObject.set(x, "ExtendedStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedStatisticsUndefined: Self = StObject.set(x, "ExtendedStatistics", js.undefined)
+    inline def setExtendedStatisticsUndefined: Self = StObject.set(x, "ExtendedStatistics", js.undefined)
     
-    @scala.inline
-    def setMaximum(value: DatapointValue): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: DatapointValue): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "Maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "Maximum", js.undefined)
     
-    @scala.inline
-    def setMinimum(value: DatapointValue): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: DatapointValue): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumUndefined: Self = StObject.set(x, "Minimum", js.undefined)
+    inline def setMinimumUndefined: Self = StObject.set(x, "Minimum", js.undefined)
     
-    @scala.inline
-    def setSampleCount(value: DatapointValue): Self = StObject.set(x, "SampleCount", value.asInstanceOf[js.Any])
+    inline def setSampleCount(value: DatapointValue): Self = StObject.set(x, "SampleCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleCountUndefined: Self = StObject.set(x, "SampleCount", js.undefined)
+    inline def setSampleCountUndefined: Self = StObject.set(x, "SampleCount", js.undefined)
     
-    @scala.inline
-    def setSum(value: DatapointValue): Self = StObject.set(x, "Sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: DatapointValue): Self = StObject.set(x, "Sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumUndefined: Self = StObject.set(x, "Sum", js.undefined)
+    inline def setSumUndefined: Self = StObject.set(x, "Sum", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
-    @scala.inline
-    def setUnit(value: StandardUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: StandardUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

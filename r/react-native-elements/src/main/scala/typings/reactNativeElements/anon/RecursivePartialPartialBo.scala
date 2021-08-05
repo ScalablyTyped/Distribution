@@ -15,25 +15,19 @@ trait RecursivePartialPartialBo extends StObject {
 }
 object RecursivePartialPartialBo {
   
-  @scala.inline
-  def apply(): RecursivePartialPartialBo = {
+  inline def apply(): RecursivePartialPartialBo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecursivePartialPartialBo]
   }
   
-  @scala.inline
-  implicit class RecursivePartialPartialBoMutableBuilder[Self <: RecursivePartialPartialBo] (val x: Self) extends AnyVal {
+  extension [Self <: RecursivePartialPartialBo](x: Self) {
     
-    @scala.inline
-    def setIsVisible(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
+    inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
-    @scala.inline
-    def setModalProps(value: RecursivePartial[js.UndefOr[ModalProps]]): Self = StObject.set(x, "modalProps", value.asInstanceOf[js.Any])
+    inline def setModalProps(value: RecursivePartial[js.UndefOr[ModalProps]]): Self = StObject.set(x, "modalProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalPropsUndefined: Self = StObject.set(x, "modalProps", js.undefined)
+    inline def setModalPropsUndefined: Self = StObject.set(x, "modalProps", js.undefined)
   }
 }

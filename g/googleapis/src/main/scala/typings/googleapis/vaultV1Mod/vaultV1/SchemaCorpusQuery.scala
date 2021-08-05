@@ -32,37 +32,27 @@ trait SchemaCorpusQuery extends StObject {
 }
 object SchemaCorpusQuery {
   
-  @scala.inline
-  def apply(): SchemaCorpusQuery = {
+  inline def apply(): SchemaCorpusQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCorpusQuery]
   }
   
-  @scala.inline
-  implicit class SchemaCorpusQueryMutableBuilder[Self <: SchemaCorpusQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCorpusQuery](x: Self) {
     
-    @scala.inline
-    def setDriveQuery(value: SchemaHeldDriveQuery): Self = StObject.set(x, "driveQuery", value.asInstanceOf[js.Any])
+    inline def setDriveQuery(value: SchemaHeldDriveQuery): Self = StObject.set(x, "driveQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveQueryUndefined: Self = StObject.set(x, "driveQuery", js.undefined)
+    inline def setDriveQueryUndefined: Self = StObject.set(x, "driveQuery", js.undefined)
     
-    @scala.inline
-    def setGroupsQuery(value: SchemaHeldGroupsQuery): Self = StObject.set(x, "groupsQuery", value.asInstanceOf[js.Any])
+    inline def setGroupsQuery(value: SchemaHeldGroupsQuery): Self = StObject.set(x, "groupsQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsQueryUndefined: Self = StObject.set(x, "groupsQuery", js.undefined)
+    inline def setGroupsQueryUndefined: Self = StObject.set(x, "groupsQuery", js.undefined)
     
-    @scala.inline
-    def setHangoutsChatQuery(value: SchemaHeldHangoutsChatQuery): Self = StObject.set(x, "hangoutsChatQuery", value.asInstanceOf[js.Any])
+    inline def setHangoutsChatQuery(value: SchemaHeldHangoutsChatQuery): Self = StObject.set(x, "hangoutsChatQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHangoutsChatQueryUndefined: Self = StObject.set(x, "hangoutsChatQuery", js.undefined)
+    inline def setHangoutsChatQueryUndefined: Self = StObject.set(x, "hangoutsChatQuery", js.undefined)
     
-    @scala.inline
-    def setMailQuery(value: SchemaHeldMailQuery): Self = StObject.set(x, "mailQuery", value.asInstanceOf[js.Any])
+    inline def setMailQuery(value: SchemaHeldMailQuery): Self = StObject.set(x, "mailQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailQueryUndefined: Self = StObject.set(x, "mailQuery", js.undefined)
+    inline def setMailQueryUndefined: Self = StObject.set(x, "mailQuery", js.undefined)
   }
 }

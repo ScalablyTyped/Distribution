@@ -5,14 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def Promise_=(x: typings.officeJs.Office.IPromiseConstructor): scala.Unit = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
+inline def Promise_=(x: typings.officeJs.Office.IPromiseConstructor): scala.Unit = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
 
 /**
   * Represents the add-in.
   */
-@scala.inline
-def addin: typings.officeJs.Office.Addin = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].selectDynamic("addin").asInstanceOf[typings.officeJs.Office.Addin]
+inline def addin: typings.officeJs.Office.Addin = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].selectDynamic("addin").asInstanceOf[typings.officeJs.Office.Addin]
 
 /**
   * Gets the Context object that represents the runtime environment of the add-in and provides access to the top-level objects of the API.
@@ -37,10 +35,8 @@ def addin: typings.officeJs.Office.Addin = typings.officeJs.global.Office.^.asIn
   *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
   *  </table>
   */
-@scala.inline
-def context: typings.officeJs.Office.Context = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].selectDynamic("context").asInstanceOf[typings.officeJs.Office.Context]
-@scala.inline
-def context_=(x: typings.officeJs.Office.Context): scala.Unit = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
+inline def context: typings.officeJs.Office.Context = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].selectDynamic("context").asInstanceOf[typings.officeJs.Office.Context]
+inline def context_=(x: typings.officeJs.Office.Context): scala.Unit = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
 
 /**
   * Occurs when the runtime environment is loaded and the add-in is ready to start interacting with the application and hosted document. 
@@ -78,8 +74,7 @@ def context_=(x: typings.officeJs.Office.Context): scala.Unit = typings.officeJs
   * 
   * @param reason Indicates how the app was initialized.
   */
-@scala.inline
-def initialize(reason: typings.officeJs.Office.InitializationReason): scala.Unit = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(reason.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def initialize(reason: typings.officeJs.Office.InitializationReason): scala.Unit = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(reason.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
 /**
   * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise 
@@ -91,10 +86,8 @@ def initialize(reason: typings.officeJs.Office.InitializationReason): scala.Unit
   *                   Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
   * @returns A Promise that contains the host and platform info, once initialization is completed.
   */
-@scala.inline
-def onReady(): js.Promise[typings.officeJs.anon.Host] = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("onReady")().asInstanceOf[js.Promise[typings.officeJs.anon.Host]]
-@scala.inline
-def onReady(callback: js.Function1[/* info */ typings.officeJs.anon.Host, js.Any]): js.Promise[typings.officeJs.anon.Host] = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("onReady")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.officeJs.anon.Host]]
+inline def onReady(): js.Promise[typings.officeJs.anon.Host] = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("onReady")().asInstanceOf[js.Promise[typings.officeJs.anon.Host]]
+inline def onReady(callback: js.Function1[/* info */ typings.officeJs.anon.Host, js.Any]): js.Promise[typings.officeJs.anon.Host] = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("onReady")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.officeJs.anon.Host]]
 
 /**
   * Returns a promise of an object described in the expression. Callback is invoked only if method fails.
@@ -119,10 +112,8 @@ def onReady(callback: js.Function1[/* info */ typings.officeJs.anon.Host, js.Any
   *   <tr><td><strong> Word   </strong></td><td> Y                 </td><td>                       </td><td> Y              </td></tr>
   *  </table>
   */
-@scala.inline
-def select(expression: java.lang.String): typings.officeJs.Office.Binding = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("select")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.officeJs.Office.Binding]
-@scala.inline
-def select(
+inline def select(expression: java.lang.String): typings.officeJs.Office.Binding = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("select")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.officeJs.Office.Binding]
+inline def select(
   expression: java.lang.String,
   callback: js.Function1[/* result */ typings.officeJs.Office.AsyncResult[js.Any], scala.Unit]
 ): typings.officeJs.Office.Binding = (typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("select")(expression.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.officeJs.Office.Binding]
@@ -152,5 +143,4 @@ def select(
   * 
   * @param useShortNamespace True to use the shortcut alias; otherwise false to disable it. The default is true.
   */
-@scala.inline
-def useShortNamespace(useShortNamespace: scala.Boolean): scala.Unit = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("useShortNamespace")(useShortNamespace.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def useShortNamespace(useShortNamespace: scala.Boolean): scala.Unit = typings.officeJs.global.Office.^.asInstanceOf[js.Dynamic].applyDynamic("useShortNamespace")(useShortNamespace.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]

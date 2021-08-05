@@ -18,28 +18,21 @@ trait SearchProductsAsAdminOutput extends StObject {
 }
 object SearchProductsAsAdminOutput {
   
-  @scala.inline
-  def apply(): SearchProductsAsAdminOutput = {
+  inline def apply(): SearchProductsAsAdminOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchProductsAsAdminOutput]
   }
   
-  @scala.inline
-  implicit class SearchProductsAsAdminOutputMutableBuilder[Self <: SearchProductsAsAdminOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SearchProductsAsAdminOutput](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setProductViewDetails(value: ProductViewDetails): Self = StObject.set(x, "ProductViewDetails", value.asInstanceOf[js.Any])
+    inline def setProductViewDetails(value: ProductViewDetails): Self = StObject.set(x, "ProductViewDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductViewDetailsUndefined: Self = StObject.set(x, "ProductViewDetails", js.undefined)
+    inline def setProductViewDetailsUndefined: Self = StObject.set(x, "ProductViewDetails", js.undefined)
     
-    @scala.inline
-    def setProductViewDetailsVarargs(value: ProductViewDetail*): Self = StObject.set(x, "ProductViewDetails", js.Array(value :_*))
+    inline def setProductViewDetailsVarargs(value: ProductViewDetail*): Self = StObject.set(x, "ProductViewDetails", js.Array(value :_*))
   }
 }

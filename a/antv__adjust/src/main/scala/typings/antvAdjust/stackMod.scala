@@ -17,10 +17,10 @@ object stackMod {
   trait Stack
     extends typings.antvAdjust.adjustMod.default {
     
-    var processOneDimStack: js.Any = js.native
+    /* private */ var processOneDimStack: js.Any = js.native
     
-    var processStack: js.Any = js.native
+    /* private */ var processStack: js.Any = js.native
     
-    var reverse: js.Any = js.native
+    /* private */ var reverse: js.Any = js.native
   }
 }

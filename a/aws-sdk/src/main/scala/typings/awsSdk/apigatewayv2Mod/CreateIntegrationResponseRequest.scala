@@ -43,46 +43,33 @@ trait CreateIntegrationResponseRequest extends StObject {
 }
 object CreateIntegrationResponseRequest {
   
-  @scala.inline
-  def apply(ApiId: string, IntegrationId: string, IntegrationResponseKey: SelectionKey): CreateIntegrationResponseRequest = {
+  inline def apply(ApiId: string, IntegrationId: string, IntegrationResponseKey: SelectionKey): CreateIntegrationResponseRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], IntegrationId = IntegrationId.asInstanceOf[js.Any], IntegrationResponseKey = IntegrationResponseKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIntegrationResponseRequest]
   }
   
-  @scala.inline
-  implicit class CreateIntegrationResponseRequestMutableBuilder[Self <: CreateIntegrationResponseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIntegrationResponseRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentHandlingStrategy(value: ContentHandlingStrategy): Self = StObject.set(x, "ContentHandlingStrategy", value.asInstanceOf[js.Any])
+    inline def setContentHandlingStrategy(value: ContentHandlingStrategy): Self = StObject.set(x, "ContentHandlingStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentHandlingStrategyUndefined: Self = StObject.set(x, "ContentHandlingStrategy", js.undefined)
+    inline def setContentHandlingStrategyUndefined: Self = StObject.set(x, "ContentHandlingStrategy", js.undefined)
     
-    @scala.inline
-    def setIntegrationId(value: string): Self = StObject.set(x, "IntegrationId", value.asInstanceOf[js.Any])
+    inline def setIntegrationId(value: string): Self = StObject.set(x, "IntegrationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrationResponseKey(value: SelectionKey): Self = StObject.set(x, "IntegrationResponseKey", value.asInstanceOf[js.Any])
+    inline def setIntegrationResponseKey(value: SelectionKey): Self = StObject.set(x, "IntegrationResponseKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseParameters(value: IntegrationParameters): Self = StObject.set(x, "ResponseParameters", value.asInstanceOf[js.Any])
+    inline def setResponseParameters(value: IntegrationParameters): Self = StObject.set(x, "ResponseParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseParametersUndefined: Self = StObject.set(x, "ResponseParameters", js.undefined)
+    inline def setResponseParametersUndefined: Self = StObject.set(x, "ResponseParameters", js.undefined)
     
-    @scala.inline
-    def setResponseTemplates(value: TemplateMap): Self = StObject.set(x, "ResponseTemplates", value.asInstanceOf[js.Any])
+    inline def setResponseTemplates(value: TemplateMap): Self = StObject.set(x, "ResponseTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTemplatesUndefined: Self = StObject.set(x, "ResponseTemplates", js.undefined)
+    inline def setResponseTemplatesUndefined: Self = StObject.set(x, "ResponseTemplates", js.undefined)
     
-    @scala.inline
-    def setTemplateSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "TemplateSelectionExpression", value.asInstanceOf[js.Any])
+    inline def setTemplateSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "TemplateSelectionExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateSelectionExpressionUndefined: Self = StObject.set(x, "TemplateSelectionExpression", js.undefined)
+    inline def setTemplateSelectionExpressionUndefined: Self = StObject.set(x, "TemplateSelectionExpression", js.undefined)
   }
 }

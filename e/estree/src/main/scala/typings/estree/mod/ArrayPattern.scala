@@ -16,23 +16,18 @@ trait ArrayPattern
 }
 object ArrayPattern {
   
-  @scala.inline
-  def apply(elements: js.Array[Pattern]): ArrayPattern = {
+  inline def apply(elements: js.Array[Pattern]): ArrayPattern = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ArrayPattern")
     __obj.asInstanceOf[ArrayPattern]
   }
   
-  @scala.inline
-  implicit class ArrayPatternMutableBuilder[Self <: ArrayPattern] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayPattern](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[Pattern]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[Pattern]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: Pattern*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: Pattern*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ArrayPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ArrayPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

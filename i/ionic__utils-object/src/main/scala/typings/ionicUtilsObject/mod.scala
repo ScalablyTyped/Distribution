@@ -30,8 +30,7 @@ object mod {
   @js.native
   val CaseInsensitiveProxyHandler: ProxyHandler[js.Any] = js.native
   
-  @scala.inline
-  def createCaseInsensitiveObject[T](): StringDictionary[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCaseInsensitiveObject")().asInstanceOf[StringDictionary[T]]
+  inline def createCaseInsensitiveObject[T](): StringDictionary[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCaseInsensitiveObject")().asInstanceOf[StringDictionary[T]]
   
   type AliasedMapKey = String | js.Symbol
 }

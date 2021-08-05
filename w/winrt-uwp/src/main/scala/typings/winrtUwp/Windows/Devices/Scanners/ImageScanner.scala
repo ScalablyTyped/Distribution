@@ -58,8 +58,7 @@ trait ImageScanner extends StObject {
 }
 object ImageScanner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoConfiguration: ImageScannerAutoConfiguration,
     defaultScanSource: ImageScannerScanSource,
     deviceId: String,
@@ -74,37 +73,27 @@ object ImageScanner {
     __obj.asInstanceOf[ImageScanner]
   }
   
-  @scala.inline
-  implicit class ImageScannerMutableBuilder[Self <: ImageScanner] (val x: Self) extends AnyVal {
+  extension [Self <: ImageScanner](x: Self) {
     
-    @scala.inline
-    def setAutoConfiguration(value: ImageScannerAutoConfiguration): Self = StObject.set(x, "autoConfiguration", value.asInstanceOf[js.Any])
+    inline def setAutoConfiguration(value: ImageScannerAutoConfiguration): Self = StObject.set(x, "autoConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultScanSource(value: ImageScannerScanSource): Self = StObject.set(x, "defaultScanSource", value.asInstanceOf[js.Any])
+    inline def setDefaultScanSource(value: ImageScannerScanSource): Self = StObject.set(x, "defaultScanSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeederConfiguration(value: ImageScannerFeederConfiguration): Self = StObject.set(x, "feederConfiguration", value.asInstanceOf[js.Any])
+    inline def setFeederConfiguration(value: ImageScannerFeederConfiguration): Self = StObject.set(x, "feederConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatbedConfiguration(value: ImageScannerFlatbedConfiguration): Self = StObject.set(x, "flatbedConfiguration", value.asInstanceOf[js.Any])
+    inline def setFlatbedConfiguration(value: ImageScannerFlatbedConfiguration): Self = StObject.set(x, "flatbedConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPreviewSupported(value: ImageScannerScanSource => Boolean): Self = StObject.set(x, "isPreviewSupported", js.Any.fromFunction1(value))
+    inline def setIsPreviewSupported(value: ImageScannerScanSource => Boolean): Self = StObject.set(x, "isPreviewSupported", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsScanSourceSupported(value: ImageScannerScanSource => Boolean): Self = StObject.set(x, "isScanSourceSupported", js.Any.fromFunction1(value))
+    inline def setIsScanSourceSupported(value: ImageScannerScanSource => Boolean): Self = StObject.set(x, "isScanSourceSupported", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanFilesToFolderAsync(
+    inline def setScanFilesToFolderAsync(
       value: (ImageScannerScanSource, StorageFolder) => IPromiseWithIAsyncOperationWithProgress[ImageScannerScanResult, Double]
     ): Self = StObject.set(x, "scanFilesToFolderAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScanPreviewToStreamAsync(
+    inline def setScanPreviewToStreamAsync(
       value: (ImageScannerScanSource, IRandomAccessStream) => IPromiseWithIAsyncOperation[ImageScannerPreviewResult]
     ): Self = StObject.set(x, "scanPreviewToStreamAsync", js.Any.fromFunction2(value))
   }

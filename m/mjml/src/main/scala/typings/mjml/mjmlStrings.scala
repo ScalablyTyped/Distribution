@@ -8,16 +8,13 @@ object mjmlStrings {
   
   @js.native
   sealed trait skip extends StObject
-  @scala.inline
-  def skip: skip = "skip".asInstanceOf[skip]
+  inline def skip: skip = "skip".asInstanceOf[skip]
   
   @js.native
   sealed trait soft extends StObject
-  @scala.inline
-  def soft: soft = "soft".asInstanceOf[soft]
+  inline def soft: soft = "soft".asInstanceOf[soft]
   
   @js.native
   sealed trait strict extends StObject
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
+  inline def strict: strict = "strict".asInstanceOf[strict]
 }

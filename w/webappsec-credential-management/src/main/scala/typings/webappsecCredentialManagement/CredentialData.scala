@@ -17,16 +17,13 @@ trait CredentialData extends StObject {
 }
 object CredentialData {
   
-  @scala.inline
-  def apply(id: String): CredentialData = {
+  inline def apply(id: String): CredentialData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialData]
   }
   
-  @scala.inline
-  implicit class CredentialDataMutableBuilder[Self <: CredentialData] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

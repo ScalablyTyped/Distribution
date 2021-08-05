@@ -12,19 +12,15 @@ trait IInt64Value extends StObject {
 }
 object IInt64Value {
   
-  @scala.inline
-  def apply(): IInt64Value = {
+  inline def apply(): IInt64Value = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IInt64Value]
   }
   
-  @scala.inline
-  implicit class IInt64ValueMutableBuilder[Self <: IInt64Value] (val x: Self) extends AnyVal {
+  extension [Self <: IInt64Value](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double | Long): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | Long): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

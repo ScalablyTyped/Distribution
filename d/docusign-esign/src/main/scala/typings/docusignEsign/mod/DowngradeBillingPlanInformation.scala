@@ -17,27 +17,21 @@ trait DowngradeBillingPlanInformation extends StObject {
 }
 object DowngradeBillingPlanInformation {
   
-  @scala.inline
-  def apply(): DowngradeBillingPlanInformation = {
+  inline def apply(): DowngradeBillingPlanInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DowngradeBillingPlanInformation]
   }
   
-  @scala.inline
-  implicit class DowngradeBillingPlanInformationMutableBuilder[Self <: DowngradeBillingPlanInformation] (val x: Self) extends AnyVal {
+  extension [Self <: DowngradeBillingPlanInformation](x: Self) {
     
-    @scala.inline
-    def setDowngradeEventType(value: String): Self = StObject.set(x, "downgradeEventType", value.asInstanceOf[js.Any])
+    inline def setDowngradeEventType(value: String): Self = StObject.set(x, "downgradeEventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDowngradeEventTypeUndefined: Self = StObject.set(x, "downgradeEventType", js.undefined)
+    inline def setDowngradeEventTypeUndefined: Self = StObject.set(x, "downgradeEventType", js.undefined)
     
-    @scala.inline
-    def setPlanInformation(
+    inline def setPlanInformation(
       value: /* An object used to identify the features and attributes of the account being created. */ PlanInformation
     ): Self = StObject.set(x, "planInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanInformationUndefined: Self = StObject.set(x, "planInformation", js.undefined)
+    inline def setPlanInformationUndefined: Self = StObject.set(x, "planInformation", js.undefined)
   }
 }

@@ -14,32 +14,24 @@ object anon {
   }
   object Leading {
     
-    @scala.inline
-    def apply(): Leading = {
+    inline def apply(): Leading = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Leading]
     }
     
-    @scala.inline
-    implicit class LeadingMutableBuilder[Self <: Leading] (val x: Self) extends AnyVal {
+    extension [Self <: Leading](x: Self) {
       
-      @scala.inline
-      def setLeading(value: String): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: String): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingNull: Self = StObject.set(x, "leading", null)
+      inline def setLeadingNull: Self = StObject.set(x, "leading", null)
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
-      @scala.inline
-      def setTrailing(value: String): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: String): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingNull: Self = StObject.set(x, "trailing", null)
+      inline def setTrailingNull: Self = StObject.set(x, "trailing", null)
       
-      @scala.inline
-      def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+      inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
     }
   }
   
@@ -49,23 +41,18 @@ object anon {
   }
   object TightLists {
     
-    @scala.inline
-    def apply(): TightLists = {
+    inline def apply(): TightLists = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TightLists]
     }
     
-    @scala.inline
-    implicit class TightListsMutableBuilder[Self <: TightLists] (val x: Self) extends AnyVal {
+    extension [Self <: TightLists](x: Self) {
       
-      @scala.inline
-      def setTightLists(value: Boolean): Self = StObject.set(x, "tightLists", value.asInstanceOf[js.Any])
+      inline def setTightLists(value: Boolean): Self = StObject.set(x, "tightLists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTightListsNull: Self = StObject.set(x, "tightLists", null)
+      inline def setTightListsNull: Self = StObject.set(x, "tightLists", null)
       
-      @scala.inline
-      def setTightListsUndefined: Self = StObject.set(x, "tightLists", js.undefined)
+      inline def setTightListsUndefined: Self = StObject.set(x, "tightLists", js.undefined)
     }
   }
 }

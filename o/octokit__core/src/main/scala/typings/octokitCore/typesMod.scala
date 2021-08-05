@@ -38,65 +38,46 @@ object typesMod {
   }
   object OctokitOptions {
     
-    @scala.inline
-    def apply(): OctokitOptions = {
+    inline def apply(): OctokitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OctokitOptions]
     }
     
-    @scala.inline
-    implicit class OctokitOptionsMutableBuilder[Self <: OctokitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OctokitOptions](x: Self) {
       
-      @scala.inline
-      def setAuth(value: js.Any): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: js.Any): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthStrategy(value: js.Any): Self = StObject.set(x, "authStrategy", value.asInstanceOf[js.Any])
+      inline def setAuthStrategy(value: js.Any): Self = StObject.set(x, "authStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthStrategyUndefined: Self = StObject.set(x, "authStrategy", js.undefined)
+      inline def setAuthStrategyUndefined: Self = StObject.set(x, "authStrategy", js.undefined)
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setLog(value: Debug): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Debug): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setPreviews(value: js.Array[String]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
+      inline def setPreviews(value: js.Array[String]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewsUndefined: Self = StObject.set(x, "previews", js.undefined)
+      inline def setPreviewsUndefined: Self = StObject.set(x, "previews", js.undefined)
       
-      @scala.inline
-      def setPreviewsVarargs(value: String*): Self = StObject.set(x, "previews", js.Array(value :_*))
+      inline def setPreviewsVarargs(value: String*): Self = StObject.set(x, "previews", js.Array(value :_*))
       
-      @scala.inline
-      def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+      inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+      inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     }
   }
   

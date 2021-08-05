@@ -20,22 +20,17 @@ trait ExecuteWasmEvaluatorResponse extends StObject {
 }
 object ExecuteWasmEvaluatorResponse {
   
-  @scala.inline
-  def apply(result: RemoteObject): ExecuteWasmEvaluatorResponse = {
+  inline def apply(result: RemoteObject): ExecuteWasmEvaluatorResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteWasmEvaluatorResponse]
   }
   
-  @scala.inline
-  implicit class ExecuteWasmEvaluatorResponseMutableBuilder[Self <: ExecuteWasmEvaluatorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteWasmEvaluatorResponse](x: Self) {
     
-    @scala.inline
-    def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
+    inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
+    inline def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
     
-    @scala.inline
-    def setResult(value: RemoteObject): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: RemoteObject): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

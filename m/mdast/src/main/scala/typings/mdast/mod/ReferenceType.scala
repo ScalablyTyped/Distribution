@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReferenceType extends StObject
 object ReferenceType {
   
-  @scala.inline
-  def collapsed: typings.mdast.mdastStrings.collapsed = "collapsed".asInstanceOf[typings.mdast.mdastStrings.collapsed]
+  inline def collapsed: typings.mdast.mdastStrings.collapsed = "collapsed".asInstanceOf[typings.mdast.mdastStrings.collapsed]
   
-  @scala.inline
-  def full: typings.mdast.mdastStrings.full = "full".asInstanceOf[typings.mdast.mdastStrings.full]
+  inline def full: typings.mdast.mdastStrings.full = "full".asInstanceOf[typings.mdast.mdastStrings.full]
   
-  @scala.inline
-  def shortcut: typings.mdast.mdastStrings.shortcut = "shortcut".asInstanceOf[typings.mdast.mdastStrings.shortcut]
+  inline def shortcut: typings.mdast.mdastStrings.shortcut = "shortcut".asInstanceOf[typings.mdast.mdastStrings.shortcut]
 }

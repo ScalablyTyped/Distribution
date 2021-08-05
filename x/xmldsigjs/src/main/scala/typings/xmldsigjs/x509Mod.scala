@@ -77,13 +77,13 @@ object x509Mod {
     def exportKey(algorithm: EcKeyImportParams): js.Promise[js.Any] = js.native
     def exportKey(algorithm: RsaHashedImportParams): js.Promise[js.Any] = js.native
     
-    var isHashedAlgorithm: js.Any = js.native
+    /* private */ var isHashedAlgorithm: js.Any = js.native
     
-    var publicKey: CryptoKey | Null = js.native
+    /* protected */ var publicKey: CryptoKey | Null = js.native
     
-    var raw: Uint8Array = js.native
+    /* protected */ var raw: Uint8Array = js.native
     
-    var simpl: js.Any = js.native
+    /* protected */ var simpl: js.Any = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

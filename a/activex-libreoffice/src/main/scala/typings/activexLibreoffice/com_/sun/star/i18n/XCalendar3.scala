@@ -48,8 +48,7 @@ trait XCalendar3
 }
 object XCalendar3 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DateTime: Double,
     Days: SafeArray[CalendarItem],
     Days2: SafeArray[CalendarItem2],
@@ -98,37 +97,26 @@ object XCalendar3 {
     __obj.asInstanceOf[XCalendar3]
   }
   
-  @scala.inline
-  implicit class XCalendar3MutableBuilder[Self <: XCalendar3] (val x: Self) extends AnyVal {
+  extension [Self <: XCalendar3](x: Self) {
     
-    @scala.inline
-    def setDays2(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "Days2", value.asInstanceOf[js.Any])
+    inline def setDays2(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "Days2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenitiveMonths2(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "GenitiveMonths2", value.asInstanceOf[js.Any])
+    inline def setGenitiveMonths2(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "GenitiveMonths2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDays2(value: () => SafeArray[CalendarItem2]): Self = StObject.set(x, "getDays2", js.Any.fromFunction0(value))
+    inline def setGetDays2(value: () => SafeArray[CalendarItem2]): Self = StObject.set(x, "getDays2", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGenitiveMonths2(value: () => SafeArray[CalendarItem2]): Self = StObject.set(x, "getGenitiveMonths2", js.Any.fromFunction0(value))
+    inline def setGetGenitiveMonths2(value: () => SafeArray[CalendarItem2]): Self = StObject.set(x, "getGenitiveMonths2", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLoadedCalendar2(value: () => Calendar2): Self = StObject.set(x, "getLoadedCalendar2", js.Any.fromFunction0(value))
+    inline def setGetLoadedCalendar2(value: () => Calendar2): Self = StObject.set(x, "getLoadedCalendar2", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMonths2(value: () => SafeArray[CalendarItem2]): Self = StObject.set(x, "getMonths2", js.Any.fromFunction0(value))
+    inline def setGetMonths2(value: () => SafeArray[CalendarItem2]): Self = StObject.set(x, "getMonths2", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPartitiveMonths2(value: () => SafeArray[CalendarItem2]): Self = StObject.set(x, "getPartitiveMonths2", js.Any.fromFunction0(value))
+    inline def setGetPartitiveMonths2(value: () => SafeArray[CalendarItem2]): Self = StObject.set(x, "getPartitiveMonths2", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadedCalendar2(value: Calendar2): Self = StObject.set(x, "LoadedCalendar2", value.asInstanceOf[js.Any])
+    inline def setLoadedCalendar2(value: Calendar2): Self = StObject.set(x, "LoadedCalendar2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonths2(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "Months2", value.asInstanceOf[js.Any])
+    inline def setMonths2(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "Months2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitiveMonths2(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "PartitiveMonths2", value.asInstanceOf[js.Any])
+    inline def setPartitiveMonths2(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "PartitiveMonths2", value.asInstanceOf[js.Any])
   }
 }

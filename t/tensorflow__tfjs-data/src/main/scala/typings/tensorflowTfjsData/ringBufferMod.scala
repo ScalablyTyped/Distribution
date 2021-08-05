@@ -15,15 +15,15 @@ object ringBufferMod {
       */
     def this(capacity: Double) = this()
     
-    var begin: Double = js.native
+    /* protected */ var begin: Double = js.native
     
     var capacity: Double = js.native
     
-    var data: js.Array[T] = js.native
+    /* protected */ var data: js.Array[T] = js.native
     
-    var doubledCapacity: Double = js.native
+    /* protected */ var doubledCapacity: Double = js.native
     
-    var end: Double = js.native
+    /* protected */ var end: Double = js.native
     
     /* protected */ def get(index: Double): T = js.native
     

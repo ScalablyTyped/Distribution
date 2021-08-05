@@ -14,16 +14,13 @@ trait SerializeHandlerOptions
 }
 object SerializeHandlerOptions {
   
-  @scala.inline
-  def apply(): SerializeHandlerOptions = {
+  inline def apply(): SerializeHandlerOptions = {
     val __obj = js.Dynamic.literal(step = "serialize")
     __obj.asInstanceOf[SerializeHandlerOptions]
   }
   
-  @scala.inline
-  implicit class SerializeHandlerOptionsMutableBuilder[Self <: SerializeHandlerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SerializeHandlerOptions](x: Self) {
     
-    @scala.inline
-    def setStep(value: serialize): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: serialize): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

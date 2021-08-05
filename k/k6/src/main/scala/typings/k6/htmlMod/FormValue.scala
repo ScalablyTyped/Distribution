@@ -14,19 +14,15 @@ trait FormValue extends StObject {
 }
 object FormValue {
   
-  @scala.inline
-  def apply(name: String, value: String): FormValue = {
+  inline def apply(name: String, value: String): FormValue = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormValue]
   }
   
-  @scala.inline
-  implicit class FormValueMutableBuilder[Self <: FormValue] (val x: Self) extends AnyVal {
+  extension [Self <: FormValue](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

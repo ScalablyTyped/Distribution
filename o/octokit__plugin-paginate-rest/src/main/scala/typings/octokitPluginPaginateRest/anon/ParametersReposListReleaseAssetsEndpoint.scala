@@ -15,8 +15,7 @@ trait ParametersReposListReleaseAssetsEndpoint extends StObject {
 }
 object ParametersReposListReleaseAssetsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposListReleaseAssetsEndpoint,
     response: OctokitResponse[ReposListReleaseAssetsResponseData]
   ): ParametersReposListReleaseAssetsEndpoint = {
@@ -24,13 +23,10 @@ object ParametersReposListReleaseAssetsEndpoint {
     __obj.asInstanceOf[ParametersReposListReleaseAssetsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposListReleaseAssetsEndpointMutableBuilder[Self <: ParametersReposListReleaseAssetsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposListReleaseAssetsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposListReleaseAssetsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposListReleaseAssetsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposListReleaseAssetsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposListReleaseAssetsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

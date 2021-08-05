@@ -43,58 +43,41 @@ trait ApplicationConfigurationDescription extends StObject {
 }
 object ApplicationConfigurationDescription {
   
-  @scala.inline
-  def apply(): ApplicationConfigurationDescription = {
+  inline def apply(): ApplicationConfigurationDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationConfigurationDescription]
   }
   
-  @scala.inline
-  implicit class ApplicationConfigurationDescriptionMutableBuilder[Self <: ApplicationConfigurationDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationConfigurationDescription](x: Self) {
     
-    @scala.inline
-    def setApplicationCodeConfigurationDescription(value: ApplicationCodeConfigurationDescription): Self = StObject.set(x, "ApplicationCodeConfigurationDescription", value.asInstanceOf[js.Any])
+    inline def setApplicationCodeConfigurationDescription(value: ApplicationCodeConfigurationDescription): Self = StObject.set(x, "ApplicationCodeConfigurationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationCodeConfigurationDescriptionUndefined: Self = StObject.set(x, "ApplicationCodeConfigurationDescription", js.undefined)
+    inline def setApplicationCodeConfigurationDescriptionUndefined: Self = StObject.set(x, "ApplicationCodeConfigurationDescription", js.undefined)
     
-    @scala.inline
-    def setApplicationSnapshotConfigurationDescription(value: ApplicationSnapshotConfigurationDescription): Self = StObject.set(x, "ApplicationSnapshotConfigurationDescription", value.asInstanceOf[js.Any])
+    inline def setApplicationSnapshotConfigurationDescription(value: ApplicationSnapshotConfigurationDescription): Self = StObject.set(x, "ApplicationSnapshotConfigurationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationSnapshotConfigurationDescriptionUndefined: Self = StObject.set(x, "ApplicationSnapshotConfigurationDescription", js.undefined)
+    inline def setApplicationSnapshotConfigurationDescriptionUndefined: Self = StObject.set(x, "ApplicationSnapshotConfigurationDescription", js.undefined)
     
-    @scala.inline
-    def setEnvironmentPropertyDescriptions(value: EnvironmentPropertyDescriptions): Self = StObject.set(x, "EnvironmentPropertyDescriptions", value.asInstanceOf[js.Any])
+    inline def setEnvironmentPropertyDescriptions(value: EnvironmentPropertyDescriptions): Self = StObject.set(x, "EnvironmentPropertyDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentPropertyDescriptionsUndefined: Self = StObject.set(x, "EnvironmentPropertyDescriptions", js.undefined)
+    inline def setEnvironmentPropertyDescriptionsUndefined: Self = StObject.set(x, "EnvironmentPropertyDescriptions", js.undefined)
     
-    @scala.inline
-    def setFlinkApplicationConfigurationDescription(value: FlinkApplicationConfigurationDescription): Self = StObject.set(x, "FlinkApplicationConfigurationDescription", value.asInstanceOf[js.Any])
+    inline def setFlinkApplicationConfigurationDescription(value: FlinkApplicationConfigurationDescription): Self = StObject.set(x, "FlinkApplicationConfigurationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlinkApplicationConfigurationDescriptionUndefined: Self = StObject.set(x, "FlinkApplicationConfigurationDescription", js.undefined)
+    inline def setFlinkApplicationConfigurationDescriptionUndefined: Self = StObject.set(x, "FlinkApplicationConfigurationDescription", js.undefined)
     
-    @scala.inline
-    def setRunConfigurationDescription(value: RunConfigurationDescription): Self = StObject.set(x, "RunConfigurationDescription", value.asInstanceOf[js.Any])
+    inline def setRunConfigurationDescription(value: RunConfigurationDescription): Self = StObject.set(x, "RunConfigurationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunConfigurationDescriptionUndefined: Self = StObject.set(x, "RunConfigurationDescription", js.undefined)
+    inline def setRunConfigurationDescriptionUndefined: Self = StObject.set(x, "RunConfigurationDescription", js.undefined)
     
-    @scala.inline
-    def setSqlApplicationConfigurationDescription(value: SqlApplicationConfigurationDescription): Self = StObject.set(x, "SqlApplicationConfigurationDescription", value.asInstanceOf[js.Any])
+    inline def setSqlApplicationConfigurationDescription(value: SqlApplicationConfigurationDescription): Self = StObject.set(x, "SqlApplicationConfigurationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlApplicationConfigurationDescriptionUndefined: Self = StObject.set(x, "SqlApplicationConfigurationDescription", js.undefined)
+    inline def setSqlApplicationConfigurationDescriptionUndefined: Self = StObject.set(x, "SqlApplicationConfigurationDescription", js.undefined)
     
-    @scala.inline
-    def setVpcConfigurationDescriptions(value: VpcConfigurationDescriptions): Self = StObject.set(x, "VpcConfigurationDescriptions", value.asInstanceOf[js.Any])
+    inline def setVpcConfigurationDescriptions(value: VpcConfigurationDescriptions): Self = StObject.set(x, "VpcConfigurationDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigurationDescriptionsUndefined: Self = StObject.set(x, "VpcConfigurationDescriptions", js.undefined)
+    inline def setVpcConfigurationDescriptionsUndefined: Self = StObject.set(x, "VpcConfigurationDescriptions", js.undefined)
     
-    @scala.inline
-    def setVpcConfigurationDescriptionsVarargs(value: VpcConfigurationDescription*): Self = StObject.set(x, "VpcConfigurationDescriptions", js.Array(value :_*))
+    inline def setVpcConfigurationDescriptionsVarargs(value: VpcConfigurationDescription*): Self = StObject.set(x, "VpcConfigurationDescriptions", js.Array(value :_*))
   }
 }

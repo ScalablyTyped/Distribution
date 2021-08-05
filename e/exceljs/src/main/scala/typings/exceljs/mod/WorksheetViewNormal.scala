@@ -21,19 +21,15 @@ trait WorksheetViewNormal extends StObject {
 }
 object WorksheetViewNormal {
   
-  @scala.inline
-  def apply(style: pageBreakPreview | pageLayout): WorksheetViewNormal = {
+  inline def apply(style: pageBreakPreview | pageLayout): WorksheetViewNormal = {
     val __obj = js.Dynamic.literal(state = "normal", style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetViewNormal]
   }
   
-  @scala.inline
-  implicit class WorksheetViewNormalMutableBuilder[Self <: WorksheetViewNormal] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetViewNormal](x: Self) {
     
-    @scala.inline
-    def setState(value: normal): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: normal): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: pageBreakPreview | pageLayout): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: pageBreakPreview | pageLayout): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

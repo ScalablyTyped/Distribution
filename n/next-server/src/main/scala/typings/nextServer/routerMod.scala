@@ -46,14 +46,12 @@ object routerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def _rewriteUrlForNextExport(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_rewriteUrlForNextExport")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def _rewriteUrlForNextExport(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_rewriteUrlForNextExport")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("next-server/dist/lib/router/router", "default.events")
     @js.native
     def events: MittEmitter = js.native
-    @scala.inline
-    def events_=(x: MittEmitter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
+    inline def events_=(x: MittEmitter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
   }
   
   trait BaseRouter extends StObject {
@@ -68,26 +66,20 @@ object routerMod {
   }
   object BaseRouter {
     
-    @scala.inline
-    def apply(asPath: String, pathname: String, query: ParsedUrlQuery, route: String): BaseRouter = {
+    inline def apply(asPath: String, pathname: String, query: ParsedUrlQuery, route: String): BaseRouter = {
       val __obj = js.Dynamic.literal(asPath = asPath.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseRouter]
     }
     
-    @scala.inline
-    implicit class BaseRouterMutableBuilder[Self <: BaseRouter] (val x: Self) extends AnyVal {
+    extension [Self <: BaseRouter](x: Self) {
       
-      @scala.inline
-      def setAsPath(value: String): Self = StObject.set(x, "asPath", value.asInstanceOf[js.Any])
+      inline def setAsPath(value: String): Self = StObject.set(x, "asPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,8 +124,7 @@ object routerMod {
   }
   object NextRouter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asPath: String,
       back: () => Unit,
       beforePopState: /* cb */ BeforePopStateCallback => Unit,
@@ -150,45 +141,33 @@ object routerMod {
       __obj.asInstanceOf[NextRouter]
     }
     
-    @scala.inline
-    implicit class NextRouterMutableBuilder[Self <: NextRouter] (val x: Self) extends AnyVal {
+    extension [Self <: NextRouter](x: Self) {
       
-      @scala.inline
-      def setAsPath(value: String): Self = StObject.set(x, "asPath", value.asInstanceOf[js.Any])
+      inline def setAsPath(value: String): Self = StObject.set(x, "asPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBack(value: () => Unit): Self = StObject.set(x, "back", js.Any.fromFunction0(value))
+      inline def setBack(value: () => Unit): Self = StObject.set(x, "back", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforePopState(value: /* cb */ BeforePopStateCallback => Unit): Self = StObject.set(x, "beforePopState", js.Any.fromFunction1(value))
+      inline def setBeforePopState(value: /* cb */ BeforePopStateCallback => Unit): Self = StObject.set(x, "beforePopState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEvents(value: MittEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: MittEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefetch(value: /* url */ String => js.Promise[Unit]): Self = StObject.set(x, "prefetch", js.Any.fromFunction1(value))
+      inline def setPrefetch(value: /* url */ String => js.Promise[Unit]): Self = StObject.set(x, "prefetch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPush(
+      inline def setPush(
         value: (/* url */ Url, /* as */ js.UndefOr[Url], /* options */ js.UndefOr[js.Object]) => js.Promise[Boolean]
       ): Self = StObject.set(x, "push", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
+      inline def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReplace(
+      inline def setReplace(
         value: (/* url */ Url, /* as */ js.UndefOr[Url], /* options */ js.UndefOr[js.Object]) => js.Promise[Boolean]
       ): Self = StObject.set(x, "replace", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,35 +183,26 @@ object routerMod {
   }
   object RouteInfo {
     
-    @scala.inline
-    def apply(Component: ComponentType[js.Object]): RouteInfo = {
+    inline def apply(Component: ComponentType[js.Object]): RouteInfo = {
       val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteInfo]
     }
     
-    @scala.inline
-    implicit class RouteInfoMutableBuilder[Self <: RouteInfo] (val x: Self) extends AnyVal {
+    extension [Self <: RouteInfo](x: Self) {
       
-      @scala.inline
-      def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+      inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }
   }
   

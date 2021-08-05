@@ -31,25 +31,19 @@ trait ICustomConnector extends StObject {
 }
 object ICustomConnector {
   
-  @scala.inline
-  def apply(qDisplayName: String, qMachineMode: MachineModeType, qParent: String, qProvider: String): ICustomConnector = {
+  inline def apply(qDisplayName: String, qMachineMode: MachineModeType, qParent: String, qProvider: String): ICustomConnector = {
     val __obj = js.Dynamic.literal(qDisplayName = qDisplayName.asInstanceOf[js.Any], qMachineMode = qMachineMode.asInstanceOf[js.Any], qParent = qParent.asInstanceOf[js.Any], qProvider = qProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomConnector]
   }
   
-  @scala.inline
-  implicit class ICustomConnectorMutableBuilder[Self <: ICustomConnector] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomConnector](x: Self) {
     
-    @scala.inline
-    def setQDisplayName(value: String): Self = StObject.set(x, "qDisplayName", value.asInstanceOf[js.Any])
+    inline def setQDisplayName(value: String): Self = StObject.set(x, "qDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMachineMode(value: MachineModeType): Self = StObject.set(x, "qMachineMode", value.asInstanceOf[js.Any])
+    inline def setQMachineMode(value: MachineModeType): Self = StObject.set(x, "qMachineMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQParent(value: String): Self = StObject.set(x, "qParent", value.asInstanceOf[js.Any])
+    inline def setQParent(value: String): Self = StObject.set(x, "qParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQProvider(value: String): Self = StObject.set(x, "qProvider", value.asInstanceOf[js.Any])
+    inline def setQProvider(value: String): Self = StObject.set(x, "qProvider", value.asInstanceOf[js.Any])
   }
 }

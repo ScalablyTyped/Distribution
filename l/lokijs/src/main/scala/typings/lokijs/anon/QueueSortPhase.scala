@@ -10,19 +10,15 @@ trait QueueSortPhase extends StObject {
 }
 object QueueSortPhase {
   
-  @scala.inline
-  def apply(): QueueSortPhase = {
+  inline def apply(): QueueSortPhase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueueSortPhase]
   }
   
-  @scala.inline
-  implicit class QueueSortPhaseMutableBuilder[Self <: QueueSortPhase] (val x: Self) extends AnyVal {
+  extension [Self <: QueueSortPhase](x: Self) {
     
-    @scala.inline
-    def setQueueSortPhase(value: Boolean): Self = StObject.set(x, "queueSortPhase", value.asInstanceOf[js.Any])
+    inline def setQueueSortPhase(value: Boolean): Self = StObject.set(x, "queueSortPhase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueSortPhaseUndefined: Self = StObject.set(x, "queueSortPhase", js.undefined)
+    inline def setQueueSortPhaseUndefined: Self = StObject.set(x, "queueSortPhase", js.undefined)
   }
 }

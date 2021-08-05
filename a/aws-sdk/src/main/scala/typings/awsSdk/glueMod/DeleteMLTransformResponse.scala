@@ -13,19 +13,15 @@ trait DeleteMLTransformResponse extends StObject {
 }
 object DeleteMLTransformResponse {
   
-  @scala.inline
-  def apply(): DeleteMLTransformResponse = {
+  inline def apply(): DeleteMLTransformResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteMLTransformResponse]
   }
   
-  @scala.inline
-  implicit class DeleteMLTransformResponseMutableBuilder[Self <: DeleteMLTransformResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMLTransformResponse](x: Self) {
     
-    @scala.inline
-    def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
+    inline def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformIdUndefined: Self = StObject.set(x, "TransformId", js.undefined)
+    inline def setTransformIdUndefined: Self = StObject.set(x, "TransformId", js.undefined)
   }
 }

@@ -30,22 +30,17 @@ trait FloatingActionButtonOptions extends StObject {
 }
 object FloatingActionButtonOptions {
   
-  @scala.inline
-  def apply(direction: top | right | buttom | left, hoverEnabled: Boolean, toolbarEnabled: Boolean): FloatingActionButtonOptions = {
+  inline def apply(direction: top | right | buttom | left, hoverEnabled: Boolean, toolbarEnabled: Boolean): FloatingActionButtonOptions = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], hoverEnabled = hoverEnabled.asInstanceOf[js.Any], toolbarEnabled = toolbarEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloatingActionButtonOptions]
   }
   
-  @scala.inline
-  implicit class FloatingActionButtonOptionsMutableBuilder[Self <: FloatingActionButtonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FloatingActionButtonOptions](x: Self) {
     
-    @scala.inline
-    def setDirection(value: top | right | buttom | left): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: top | right | buttom | left): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverEnabled(value: Boolean): Self = StObject.set(x, "hoverEnabled", value.asInstanceOf[js.Any])
+    inline def setHoverEnabled(value: Boolean): Self = StObject.set(x, "hoverEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarEnabled(value: Boolean): Self = StObject.set(x, "toolbarEnabled", value.asInstanceOf[js.Any])
+    inline def setToolbarEnabled(value: Boolean): Self = StObject.set(x, "toolbarEnabled", value.asInstanceOf[js.Any])
   }
 }

@@ -72,8 +72,7 @@ trait IPropertyDef extends StObject {
 }
 object IPropertyDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessControlList: IAccessControlList,
     AllObjectTypes: Boolean,
     AllowedAsGroupingLevel: Boolean,
@@ -106,88 +105,60 @@ object IPropertyDef {
     __obj.asInstanceOf[IPropertyDef]
   }
   
-  @scala.inline
-  implicit class IPropertyDefMutableBuilder[Self <: IPropertyDef] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyDef](x: Self) {
     
-    @scala.inline
-    def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
+    inline def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllObjectTypes(value: Boolean): Self = StObject.set(x, "AllObjectTypes", value.asInstanceOf[js.Any])
+    inline def setAllObjectTypes(value: Boolean): Self = StObject.set(x, "AllObjectTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedAsGroupingLevel(value: Boolean): Self = StObject.set(x, "AllowedAsGroupingLevel", value.asInstanceOf[js.Any])
+    inline def setAllowedAsGroupingLevel(value: Boolean): Self = StObject.set(x, "AllowedAsGroupingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticValueDefinition(value: ITypedValue): Self = StObject.set(x, "AutomaticValueDefinition", value.asInstanceOf[js.Any])
+    inline def setAutomaticValueDefinition(value: ITypedValue): Self = StObject.set(x, "AutomaticValueDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticValueType(value: MFAutomaticValueType): Self = StObject.set(x, "AutomaticValueType", value.asInstanceOf[js.Any])
+    inline def setAutomaticValueType(value: MFAutomaticValueType): Self = StObject.set(x, "AutomaticValueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasedOnValueList(value: Boolean): Self = StObject.set(x, "BasedOnValueList", value.asInstanceOf[js.Any])
+    inline def setBasedOnValueList(value: Boolean): Self = StObject.set(x, "BasedOnValueList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IPropertyDef): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IPropertyDef): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContentType(value: MFContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: MFContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataType(value: MFDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: MFDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependencyPD(value: Double): Self = StObject.set(x, "DependencyPD", value.asInstanceOf[js.Any])
+    inline def setDependencyPD(value: Double): Self = StObject.set(x, "DependencyPD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependencyRelation(value: MFDependencyRelation): Self = StObject.set(x, "DependencyRelation", value.asInstanceOf[js.Any])
+    inline def setDependencyRelation(value: MFDependencyRelation): Self = StObject.set(x, "DependencyRelation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattingType(value: MFFormattingType): Self = StObject.set(x, "FormattingType", value.asInstanceOf[js.Any])
+    inline def setFormattingType(value: MFFormattingType): Self = StObject.set(x, "FormattingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
+    inline def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectType(value: MFBuiltInObjectType | Double): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: MFBuiltInObjectType | Double): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerPropertyDef(value: IOwnerPropertyDef): Self = StObject.set(x, "OwnerPropertyDef", value.asInstanceOf[js.Any])
+    inline def setOwnerPropertyDef(value: IOwnerPropertyDef): Self = StObject.set(x, "OwnerPropertyDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredefined(value: Boolean): Self = StObject.set(x, "Predefined", value.asInstanceOf[js.Any])
+    inline def setPredefined(value: Boolean): Self = StObject.set(x, "Predefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortAscending(value: Boolean): Self = StObject.set(x, "SortAscending", value.asInstanceOf[js.Any])
+    inline def setSortAscending(value: Boolean): Self = StObject.set(x, "SortAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticFilter(value: ISearchConditions): Self = StObject.set(x, "StaticFilter", value.asInstanceOf[js.Any])
+    inline def setStaticFilter(value: ISearchConditions): Self = StObject.set(x, "StaticFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThisIsConflictPD(value: Boolean): Self = StObject.set(x, "ThisIsConflictPD", value.asInstanceOf[js.Any])
+    inline def setThisIsConflictPD(value: Boolean): Self = StObject.set(x, "ThisIsConflictPD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThisIsDefaultPD(value: Boolean): Self = StObject.set(x, "ThisIsDefaultPD", value.asInstanceOf[js.Any])
+    inline def setThisIsDefaultPD(value: Boolean): Self = StObject.set(x, "ThisIsDefaultPD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThisIsOwnerPD(value: Boolean): Self = StObject.set(x, "ThisIsOwnerPD", value.asInstanceOf[js.Any])
+    inline def setThisIsOwnerPD(value: Boolean): Self = StObject.set(x, "ThisIsOwnerPD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateType(value: MFUpdateType): Self = StObject.set(x, "UpdateType", value.asInstanceOf[js.Any])
+    inline def setUpdateType(value: MFUpdateType): Self = StObject.set(x, "UpdateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationType(value: MFValidationType): Self = StObject.set(x, "ValidationType", value.asInstanceOf[js.Any])
+    inline def setValidationType(value: MFValidationType): Self = StObject.set(x, "ValidationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueList(value: MFBuiltInValueList | Double): Self = StObject.set(x, "ValueList", value.asInstanceOf[js.Any])
+    inline def setValueList(value: MFBuiltInValueList | Double): Self = StObject.set(x, "ValueList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueListSortingType(value: MFValueListSortingType): Self = StObject.set(x, "ValueListSortingType", value.asInstanceOf[js.Any])
+    inline def setValueListSortingType(value: MFValueListSortingType): Self = StObject.set(x, "ValueListSortingType", value.asInstanceOf[js.Any])
   }
 }

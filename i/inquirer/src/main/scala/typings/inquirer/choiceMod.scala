@@ -92,29 +92,22 @@ object choiceMod {
   }
   object Choice {
     
-    @scala.inline
-    def apply[T /* <: Answers */](disabled: Boolean, name: String, short: String): Choice[T] = {
+    inline def apply[T /* <: Answers */](disabled: Boolean, name: String, short: String): Choice[T] = {
       val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
       __obj.asInstanceOf[Choice[T]]
     }
     
-    @scala.inline
-    implicit class ChoiceMutableBuilder[Self <: Choice[?], T /* <: Answers */] (val x: Self & Choice[T]) extends AnyVal {
+    extension [Self <: Choice[?], T /* <: Answers */](x: Self & Choice[T]) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     }
   }
 }

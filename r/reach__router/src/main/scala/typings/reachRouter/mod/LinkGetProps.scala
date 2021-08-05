@@ -17,8 +17,7 @@ trait LinkGetProps extends StObject {
 }
 object LinkGetProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     href: String,
     isCurrent: Boolean,
     isPartiallyCurrent: Boolean,
@@ -28,19 +27,14 @@ object LinkGetProps {
     __obj.asInstanceOf[LinkGetProps]
   }
   
-  @scala.inline
-  implicit class LinkGetPropsMutableBuilder[Self <: LinkGetProps] (val x: Self) extends AnyVal {
+  extension [Self <: LinkGetProps](x: Self) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCurrent(value: Boolean): Self = StObject.set(x, "isCurrent", value.asInstanceOf[js.Any])
+    inline def setIsCurrent(value: Boolean): Self = StObject.set(x, "isCurrent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPartiallyCurrent(value: Boolean): Self = StObject.set(x, "isPartiallyCurrent", value.asInstanceOf[js.Any])
+    inline def setIsPartiallyCurrent(value: Boolean): Self = StObject.set(x, "isPartiallyCurrent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

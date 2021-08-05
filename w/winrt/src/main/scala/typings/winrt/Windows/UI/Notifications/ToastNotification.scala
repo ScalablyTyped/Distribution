@@ -11,8 +11,7 @@ trait ToastNotification
      with IToastNotification
 object ToastNotification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     content: XmlDocument,
     expirationTime: Date,
     onactivated: js.Any,

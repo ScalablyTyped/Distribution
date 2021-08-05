@@ -23,8 +23,7 @@ trait Handle extends StObject {
 }
 object Handle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     data: js.Any,
     length: Double,
@@ -37,28 +36,20 @@ object Handle {
     __obj.asInstanceOf[Handle]
   }
   
-  @scala.inline
-  implicit class HandleMutableBuilder[Self <: Handle] (val x: Self) extends AnyVal {
+  extension [Self <: Handle](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuSize(value: () => Double): Self = StObject.set(x, "menuSize", js.Any.fromFunction0(value))
+    inline def setMenuSize(value: () => Double): Self = StObject.set(x, "menuSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveFocus(value: (Double, Boolean) => Unit): Self = StObject.set(x, "moveFocus", js.Any.fromFunction2(value))
+    inline def setMoveFocus(value: (Double, Boolean) => Unit): Self = StObject.set(x, "moveFocus", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPick(value: () => Unit): Self = StObject.set(x, "pick", js.Any.fromFunction0(value))
+    inline def setPick(value: () => Unit): Self = StObject.set(x, "pick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFocus(value: Double => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction1(value))
+    inline def setSetFocus(value: Double => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction1(value))
   }
 }

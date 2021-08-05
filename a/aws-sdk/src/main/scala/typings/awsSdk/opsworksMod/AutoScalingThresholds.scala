@@ -43,58 +43,41 @@ trait AutoScalingThresholds extends StObject {
 }
 object AutoScalingThresholds {
   
-  @scala.inline
-  def apply(): AutoScalingThresholds = {
+  inline def apply(): AutoScalingThresholds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoScalingThresholds]
   }
   
-  @scala.inline
-  implicit class AutoScalingThresholdsMutableBuilder[Self <: AutoScalingThresholds] (val x: Self) extends AnyVal {
+  extension [Self <: AutoScalingThresholds](x: Self) {
     
-    @scala.inline
-    def setAlarms(value: Strings): Self = StObject.set(x, "Alarms", value.asInstanceOf[js.Any])
+    inline def setAlarms(value: Strings): Self = StObject.set(x, "Alarms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmsUndefined: Self = StObject.set(x, "Alarms", js.undefined)
+    inline def setAlarmsUndefined: Self = StObject.set(x, "Alarms", js.undefined)
     
-    @scala.inline
-    def setAlarmsVarargs(value: String*): Self = StObject.set(x, "Alarms", js.Array(value :_*))
+    inline def setAlarmsVarargs(value: String*): Self = StObject.set(x, "Alarms", js.Array(value :_*))
     
-    @scala.inline
-    def setCpuThreshold(value: Double): Self = StObject.set(x, "CpuThreshold", value.asInstanceOf[js.Any])
+    inline def setCpuThreshold(value: Double): Self = StObject.set(x, "CpuThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuThresholdUndefined: Self = StObject.set(x, "CpuThreshold", js.undefined)
+    inline def setCpuThresholdUndefined: Self = StObject.set(x, "CpuThreshold", js.undefined)
     
-    @scala.inline
-    def setIgnoreMetricsTime(value: Minute): Self = StObject.set(x, "IgnoreMetricsTime", value.asInstanceOf[js.Any])
+    inline def setIgnoreMetricsTime(value: Minute): Self = StObject.set(x, "IgnoreMetricsTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreMetricsTimeUndefined: Self = StObject.set(x, "IgnoreMetricsTime", js.undefined)
+    inline def setIgnoreMetricsTimeUndefined: Self = StObject.set(x, "IgnoreMetricsTime", js.undefined)
     
-    @scala.inline
-    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
+    inline def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
     
-    @scala.inline
-    def setLoadThreshold(value: Double): Self = StObject.set(x, "LoadThreshold", value.asInstanceOf[js.Any])
+    inline def setLoadThreshold(value: Double): Self = StObject.set(x, "LoadThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadThresholdUndefined: Self = StObject.set(x, "LoadThreshold", js.undefined)
+    inline def setLoadThresholdUndefined: Self = StObject.set(x, "LoadThreshold", js.undefined)
     
-    @scala.inline
-    def setMemoryThreshold(value: Double): Self = StObject.set(x, "MemoryThreshold", value.asInstanceOf[js.Any])
+    inline def setMemoryThreshold(value: Double): Self = StObject.set(x, "MemoryThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryThresholdUndefined: Self = StObject.set(x, "MemoryThreshold", js.undefined)
+    inline def setMemoryThresholdUndefined: Self = StObject.set(x, "MemoryThreshold", js.undefined)
     
-    @scala.inline
-    def setThresholdsWaitTime(value: Minute): Self = StObject.set(x, "ThresholdsWaitTime", value.asInstanceOf[js.Any])
+    inline def setThresholdsWaitTime(value: Minute): Self = StObject.set(x, "ThresholdsWaitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdsWaitTimeUndefined: Self = StObject.set(x, "ThresholdsWaitTime", js.undefined)
+    inline def setThresholdsWaitTimeUndefined: Self = StObject.set(x, "ThresholdsWaitTime", js.undefined)
   }
 }

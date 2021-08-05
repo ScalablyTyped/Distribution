@@ -38,40 +38,30 @@ object typesMessageResponseMod {
   }
   object MessageResponse {
     
-    @scala.inline
-    def apply(): MessageResponse = {
+    inline def apply(): MessageResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MessageResponse]
     }
     
-    @scala.inline
-    implicit class MessageResponseMutableBuilder[Self <: MessageResponse] (val x: Self) extends AnyVal {
+    extension [Self <: MessageResponse](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
       
-      @scala.inline
-      def setEndpointResult(
+      inline def setEndpointResult(
         value: StringDictionary[EndpointMessageResult] | (Iterable[js.Tuple2[String, EndpointMessageResult]])
       ): Self = StObject.set(x, "EndpointResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointResultUndefined: Self = StObject.set(x, "EndpointResult", js.undefined)
+      inline def setEndpointResultUndefined: Self = StObject.set(x, "EndpointResult", js.undefined)
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+      inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
       
-      @scala.inline
-      def setResult(value: StringDictionary[MessageResult] | (Iterable[js.Tuple2[String, MessageResult]])): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+      inline def setResult(value: StringDictionary[MessageResult] | (Iterable[js.Tuple2[String, MessageResult]])): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
     }
   }
   
@@ -93,26 +83,20 @@ object typesMessageResponseMod {
   }
   object UnmarshalledMessageResponse {
     
-    @scala.inline
-    def apply(): UnmarshalledMessageResponse = {
+    inline def apply(): UnmarshalledMessageResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledMessageResponse]
     }
     
-    @scala.inline
-    implicit class UnmarshalledMessageResponseMutableBuilder[Self <: UnmarshalledMessageResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledMessageResponse](x: Self) {
       
-      @scala.inline
-      def setEndpointResult(value: StringDictionary[UnmarshalledEndpointMessageResult]): Self = StObject.set(x, "EndpointResult", value.asInstanceOf[js.Any])
+      inline def setEndpointResult(value: StringDictionary[UnmarshalledEndpointMessageResult]): Self = StObject.set(x, "EndpointResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointResultUndefined: Self = StObject.set(x, "EndpointResult", js.undefined)
+      inline def setEndpointResultUndefined: Self = StObject.set(x, "EndpointResult", js.undefined)
       
-      @scala.inline
-      def setResult(value: StringDictionary[UnmarshalledMessageResult]): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+      inline def setResult(value: StringDictionary[UnmarshalledMessageResult]): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
     }
   }
 }

@@ -21,7 +21,7 @@ object stackedpanelMod {
   class StackedPanel () extends Panel {
     def this(options: IOptions) = this()
     
-    var _widgetRemoved: js.Any = js.native
+    /* private */ var _widgetRemoved: js.Any = js.native
     
     /**
       * A signal emitted when a widget is removed from a stacked panel.
@@ -44,20 +44,16 @@ object stackedpanelMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setLayout(value: StackedLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+        inline def setLayout(value: StackedLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+        inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       }
     }
   }

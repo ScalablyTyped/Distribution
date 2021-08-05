@@ -14,19 +14,15 @@ trait WrappingPublicKey extends StObject {
 }
 object WrappingPublicKey {
   
-  @scala.inline
-  def apply(): WrappingPublicKey = {
+  inline def apply(): WrappingPublicKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WrappingPublicKey]
   }
   
-  @scala.inline
-  implicit class WrappingPublicKeyMutableBuilder[Self <: WrappingPublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: WrappingPublicKey](x: Self) {
     
-    @scala.inline
-    def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
+    inline def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
+    inline def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
   }
 }

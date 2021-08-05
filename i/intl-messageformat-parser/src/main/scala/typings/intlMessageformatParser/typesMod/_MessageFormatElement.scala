@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _MessageFormatElement extends StObject
 object _MessageFormatElement {
   
-  @scala.inline
-  def PluralElement(
+  inline def PluralElement(
     offset: Double,
     options: Record[ValidPluralRule, PluralOrSelectOption],
     `type`: plural,
@@ -24,22 +23,19 @@ object _MessageFormatElement {
     __obj.asInstanceOf[typings.intlMessageformatParser.typesMod.PluralElement]
   }
   
-  @scala.inline
-  def PoundElement(`type`: pound): typings.intlMessageformatParser.typesMod.PoundElement = {
+  inline def PoundElement(`type`: pound): typings.intlMessageformatParser.typesMod.PoundElement = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.intlMessageformatParser.typesMod.PoundElement]
   }
   
-  @scala.inline
-  def SelectElement(options: Record[String, PluralOrSelectOption], `type`: select, value: String): typings.intlMessageformatParser.typesMod.SelectElement = {
+  inline def SelectElement(options: Record[String, PluralOrSelectOption], `type`: select, value: String): typings.intlMessageformatParser.typesMod.SelectElement = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.intlMessageformatParser.typesMod.SelectElement]
   }
   
-  @scala.inline
-  def TagElement(children: js.Array[MessageFormatElement], `type`: tag, value: String): typings.intlMessageformatParser.typesMod.TagElement = {
+  inline def TagElement(children: js.Array[MessageFormatElement], `type`: tag, value: String): typings.intlMessageformatParser.typesMod.TagElement = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.intlMessageformatParser.typesMod.TagElement]

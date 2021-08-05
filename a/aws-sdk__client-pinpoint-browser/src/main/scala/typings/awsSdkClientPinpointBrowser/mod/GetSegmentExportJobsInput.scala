@@ -9,8 +9,7 @@ trait GetSegmentExportJobsInput
      with typings.awsSdkClientPinpointBrowser.typesGetSegmentExportJobsInputMod.GetSegmentExportJobsInput
 object GetSegmentExportJobsInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, SegmentId: String): GetSegmentExportJobsInput = {
+  inline def apply(ApplicationId: String, SegmentId: String): GetSegmentExportJobsInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSegmentExportJobsInput]
   }

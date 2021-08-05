@@ -134,63 +134,45 @@ object raycasterMod {
   }
   object Intersection {
     
-    @scala.inline
-    def apply(distance: Double, `object`: Object3D, point: Vector3): Intersection = {
+    inline def apply(distance: Double, `object`: Object3D, point: Vector3): Intersection = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Intersection]
     }
     
-    @scala.inline
-    implicit class IntersectionMutableBuilder[Self <: Intersection] (val x: Self) extends AnyVal {
+    extension [Self <: Intersection](x: Self) {
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceToRay(value: Double): Self = StObject.set(x, "distanceToRay", value.asInstanceOf[js.Any])
+      inline def setDistanceToRay(value: Double): Self = StObject.set(x, "distanceToRay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceToRayUndefined: Self = StObject.set(x, "distanceToRay", js.undefined)
+      inline def setDistanceToRayUndefined: Self = StObject.set(x, "distanceToRay", js.undefined)
       
-      @scala.inline
-      def setFace(value: Face3): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
+      inline def setFace(value: Face3): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
+      inline def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaceIndexUndefined: Self = StObject.set(x, "faceIndex", js.undefined)
+      inline def setFaceIndexUndefined: Self = StObject.set(x, "faceIndex", js.undefined)
       
-      @scala.inline
-      def setFaceNull: Self = StObject.set(x, "face", null)
+      inline def setFaceNull: Self = StObject.set(x, "face", null)
       
-      @scala.inline
-      def setFaceUndefined: Self = StObject.set(x, "face", js.undefined)
+      inline def setFaceUndefined: Self = StObject.set(x, "face", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setObject(value: Object3D): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Object3D): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoint(value: Vector3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: Vector3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUv(value: Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
+      inline def setUv(value: Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
+      inline def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
     }
   }
   
@@ -208,44 +190,32 @@ object raycasterMod {
   }
   object RaycasterParameters {
     
-    @scala.inline
-    def apply(): RaycasterParameters = {
+    inline def apply(): RaycasterParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RaycasterParameters]
     }
     
-    @scala.inline
-    implicit class RaycasterParametersMutableBuilder[Self <: RaycasterParameters] (val x: Self) extends AnyVal {
+    extension [Self <: RaycasterParameters](x: Self) {
       
-      @scala.inline
-      def setLOD(value: js.Any): Self = StObject.set(x, "LOD", value.asInstanceOf[js.Any])
+      inline def setLOD(value: js.Any): Self = StObject.set(x, "LOD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLODUndefined: Self = StObject.set(x, "LOD", js.undefined)
+      inline def setLODUndefined: Self = StObject.set(x, "LOD", js.undefined)
       
-      @scala.inline
-      def setLine(value: Threshold): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Threshold): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineUndefined: Self = StObject.set(x, "Line", js.undefined)
+      inline def setLineUndefined: Self = StObject.set(x, "Line", js.undefined)
       
-      @scala.inline
-      def setMesh(value: js.Any): Self = StObject.set(x, "Mesh", value.asInstanceOf[js.Any])
+      inline def setMesh(value: js.Any): Self = StObject.set(x, "Mesh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshUndefined: Self = StObject.set(x, "Mesh", js.undefined)
+      inline def setMeshUndefined: Self = StObject.set(x, "Mesh", js.undefined)
       
-      @scala.inline
-      def setPoints(value: Threshold): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: Threshold): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointsUndefined: Self = StObject.set(x, "Points", js.undefined)
+      inline def setPointsUndefined: Self = StObject.set(x, "Points", js.undefined)
       
-      @scala.inline
-      def setSprite(value: js.Any): Self = StObject.set(x, "Sprite", value.asInstanceOf[js.Any])
+      inline def setSprite(value: js.Any): Self = StObject.set(x, "Sprite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpriteUndefined: Self = StObject.set(x, "Sprite", js.undefined)
+      inline def setSpriteUndefined: Self = StObject.set(x, "Sprite", js.undefined)
     }
   }
 }

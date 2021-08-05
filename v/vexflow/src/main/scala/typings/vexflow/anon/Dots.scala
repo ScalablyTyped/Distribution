@@ -14,23 +14,18 @@ trait Dots extends StObject {
 }
 object Dots {
   
-  @scala.inline
-  def apply(dots: Double, duration: String, `type`: String): Dots = {
+  inline def apply(dots: Double, duration: String, `type`: String): Dots = {
     val __obj = js.Dynamic.literal(dots = dots.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dots]
   }
   
-  @scala.inline
-  implicit class DotsMutableBuilder[Self <: Dots] (val x: Self) extends AnyVal {
+  extension [Self <: Dots](x: Self) {
     
-    @scala.inline
-    def setDots(value: Double): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
+    inline def setDots(value: Double): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

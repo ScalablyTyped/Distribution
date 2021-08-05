@@ -105,7 +105,7 @@ trait NameSpace extends StObject {
   
   def OpenSharedItem(Path: String): js.Any = js.native
   
-  @JSName("Outlook.NameSpace_typekey")
+  /* private */ @JSName("Outlook.NameSpace_typekey")
   var OutlookDotNameSpace_typekey: NameSpace = js.native
   
   val Parent: js.Any = js.native

@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object utf8DecodeMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(strData: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(strData.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(strData: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(strData.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/xml/utf8_decode", JSImport.Namespace)
   @js.native

@@ -21,13 +21,11 @@ object SnippetType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SnippetType.Native")
   @js.native
   def Native: SnippetType = js.native
-  @scala.inline
-  def Native_=(x: SnippetType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Native")(x.asInstanceOf[js.Any])
+  inline def Native_=(x: SnippetType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Native")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SnippetType.Web")
   @js.native
   def Web: SnippetType = js.native
-  @scala.inline
-  def Web_=(x: SnippetType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Web")(x.asInstanceOf[js.Any])
+  inline def Web_=(x: SnippetType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Web")(x.asInstanceOf[js.Any])
 }

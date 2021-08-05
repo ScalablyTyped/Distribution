@@ -11,19 +11,15 @@ trait GcsIntegration extends StObject {
 }
 object GcsIntegration {
   
-  @scala.inline
-  def apply(): GcsIntegration = {
+  inline def apply(): GcsIntegration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GcsIntegration]
   }
   
-  @scala.inline
-  implicit class GcsIntegrationMutableBuilder[Self <: GcsIntegration] (val x: Self) extends AnyVal {
+  extension [Self <: GcsIntegration](x: Self) {
     
-    @scala.inline
-    def setGcp_service_account(value: GcpServiceAccount): Self = StObject.set(x, "gcp_service_account", value.asInstanceOf[js.Any])
+    inline def setGcp_service_account(value: GcpServiceAccount): Self = StObject.set(x, "gcp_service_account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcp_service_accountUndefined: Self = StObject.set(x, "gcp_service_account", js.undefined)
+    inline def setGcp_service_accountUndefined: Self = StObject.set(x, "gcp_service_account", js.undefined)
   }
 }

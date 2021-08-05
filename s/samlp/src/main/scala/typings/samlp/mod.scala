@@ -20,33 +20,26 @@ object mod {
   @JSImport("samlp", "PassportProfileMapper")
   @js.native
   def PassportProfileMapper: ProfileMapperConstructor = js.native
-  @scala.inline
-  def PassportProfileMapper_=(x: ProfileMapperConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PassportProfileMapper")(x.asInstanceOf[js.Any])
+  inline def PassportProfileMapper_=(x: ProfileMapperConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PassportProfileMapper")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def auth(options: IdPOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("auth")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def auth(options: IdPOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("auth")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
-  @scala.inline
-  def getSamlResponse(
+  inline def getSamlResponse(
     options: IdPOptions,
     user: js.Any,
     callback: js.Function2[/* err */ js.Any, /* samlResponse */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSamlResponse")(options.asInstanceOf[js.Any], user.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def logout(options: IdPOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def logout(options: IdPOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
-  @scala.inline
-  def metadata(options: IdPMetadataOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def metadata(options: IdPMetadataOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
-  @scala.inline
-  def parseRequest(
+  inline def parseRequest(
     req: Request_[ParamsDictionary, js.Any, js.Any, Query],
     callback: js.Function2[/* err */ js.Any, /* data */ SamlRequest, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(req.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def sendError(options: IdPOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("sendError")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def sendError(options: IdPOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("sendError")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
   /* Rewritten from type alias, can be one of: 
     - typings.samlp.samlpStrings.sha1
@@ -55,11 +48,9 @@ object mod {
   trait DigestAlgorithmType extends StObject
   object DigestAlgorithmType {
     
-    @scala.inline
-    def sha1: typings.samlp.samlpStrings.sha1 = "sha1".asInstanceOf[typings.samlp.samlpStrings.sha1]
+    inline def sha1: typings.samlp.samlpStrings.sha1 = "sha1".asInstanceOf[typings.samlp.samlpStrings.sha1]
     
-    @scala.inline
-    def sha256: typings.samlp.samlpStrings.sha256 = "sha256".asInstanceOf[typings.samlp.samlpStrings.sha256]
+    inline def sha256: typings.samlp.samlpStrings.sha256 = "sha256".asInstanceOf[typings.samlp.samlpStrings.sha256]
   }
   
   trait IdPMetadataOptions extends StObject {
@@ -78,44 +69,32 @@ object mod {
   }
   object IdPMetadataOptions {
     
-    @scala.inline
-    def apply(cert: String | Buffer, issuer: String): IdPMetadataOptions = {
+    inline def apply(cert: String | Buffer, issuer: String): IdPMetadataOptions = {
       val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdPMetadataOptions]
     }
     
-    @scala.inline
-    implicit class IdPMetadataOptionsMutableBuilder[Self <: IdPMetadataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IdPMetadataOptions](x: Self) {
       
-      @scala.inline
-      def setCert(value: String | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoutEndpointPaths(value: Post): Self = StObject.set(x, "logoutEndpointPaths", value.asInstanceOf[js.Any])
+      inline def setLogoutEndpointPaths(value: Post): Self = StObject.set(x, "logoutEndpointPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoutEndpointPathsUndefined: Self = StObject.set(x, "logoutEndpointPaths", js.undefined)
+      inline def setLogoutEndpointPathsUndefined: Self = StObject.set(x, "logoutEndpointPaths", js.undefined)
       
-      @scala.inline
-      def setPostEndpointPath(value: String): Self = StObject.set(x, "postEndpointPath", value.asInstanceOf[js.Any])
+      inline def setPostEndpointPath(value: String): Self = StObject.set(x, "postEndpointPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostEndpointPathUndefined: Self = StObject.set(x, "postEndpointPath", js.undefined)
+      inline def setPostEndpointPathUndefined: Self = StObject.set(x, "postEndpointPath", js.undefined)
       
-      @scala.inline
-      def setProfileMapper(value: ProfileMapperConstructor): Self = StObject.set(x, "profileMapper", value.asInstanceOf[js.Any])
+      inline def setProfileMapper(value: ProfileMapperConstructor): Self = StObject.set(x, "profileMapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileMapperUndefined: Self = StObject.set(x, "profileMapper", js.undefined)
+      inline def setProfileMapperUndefined: Self = StObject.set(x, "profileMapper", js.undefined)
       
-      @scala.inline
-      def setRedirectEndpointPath(value: String): Self = StObject.set(x, "redirectEndpointPath", value.asInstanceOf[js.Any])
+      inline def setRedirectEndpointPath(value: String): Self = StObject.set(x, "redirectEndpointPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectEndpointPathUndefined: Self = StObject.set(x, "redirectEndpointPath", js.undefined)
+      inline def setRedirectEndpointPathUndefined: Self = StObject.set(x, "redirectEndpointPath", js.undefined)
     }
   }
   
@@ -170,8 +149,7 @@ object mod {
   }
   object IdPOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cert: String | Buffer,
       getPostURL: (String, js.Any, Request_[ParamsDictionary, js.Any, js.Any, Query], js.Function2[/* err */ js.Any, /* url */ String, Unit]) => Unit,
       issuer: String,
@@ -181,118 +159,81 @@ object mod {
       __obj.asInstanceOf[IdPOptions]
     }
     
-    @scala.inline
-    implicit class IdPOptionsMutableBuilder[Self <: IdPOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IdPOptions](x: Self) {
       
-      @scala.inline
-      def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+      inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      @scala.inline
-      def setAuthnContextClassRef(value: String): Self = StObject.set(x, "authnContextClassRef", value.asInstanceOf[js.Any])
+      inline def setAuthnContextClassRef(value: String): Self = StObject.set(x, "authnContextClassRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthnContextClassRefUndefined: Self = StObject.set(x, "authnContextClassRef", js.undefined)
+      inline def setAuthnContextClassRefUndefined: Self = StObject.set(x, "authnContextClassRef", js.undefined)
       
-      @scala.inline
-      def setCert(value: String | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+      inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
       
-      @scala.inline
-      def setDigestAlgorithm(value: DigestAlgorithmType): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
+      inline def setDigestAlgorithm(value: DigestAlgorithmType): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
+      inline def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
       
-      @scala.inline
-      def setEncryptionAlgorithm(value: String): Self = StObject.set(x, "encryptionAlgorithm", value.asInstanceOf[js.Any])
+      inline def setEncryptionAlgorithm(value: String): Self = StObject.set(x, "encryptionAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionAlgorithmUndefined: Self = StObject.set(x, "encryptionAlgorithm", js.undefined)
+      inline def setEncryptionAlgorithmUndefined: Self = StObject.set(x, "encryptionAlgorithm", js.undefined)
       
-      @scala.inline
-      def setEncryptionCert(value: String | Buffer): Self = StObject.set(x, "encryptionCert", value.asInstanceOf[js.Any])
+      inline def setEncryptionCert(value: String | Buffer): Self = StObject.set(x, "encryptionCert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionCertUndefined: Self = StObject.set(x, "encryptionCert", js.undefined)
+      inline def setEncryptionCertUndefined: Self = StObject.set(x, "encryptionCert", js.undefined)
       
-      @scala.inline
-      def setEncryptionPublicKey(value: String | Buffer): Self = StObject.set(x, "encryptionPublicKey", value.asInstanceOf[js.Any])
+      inline def setEncryptionPublicKey(value: String | Buffer): Self = StObject.set(x, "encryptionPublicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionPublicKeyUndefined: Self = StObject.set(x, "encryptionPublicKey", js.undefined)
+      inline def setEncryptionPublicKeyUndefined: Self = StObject.set(x, "encryptionPublicKey", js.undefined)
       
-      @scala.inline
-      def setGetPostURL(
+      inline def setGetPostURL(
         value: (String, js.Any, Request_[ParamsDictionary, js.Any, js.Any, Query], js.Function2[/* err */ js.Any, /* url */ String, Unit]) => Unit
       ): Self = StObject.set(x, "getPostURL", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGetUserFromRequest(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => js.Any): Self = StObject.set(x, "getUserFromRequest", js.Any.fromFunction1(value))
+      inline def setGetUserFromRequest(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => js.Any): Self = StObject.set(x, "getUserFromRequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUserFromRequestUndefined: Self = StObject.set(x, "getUserFromRequest", js.undefined)
+      inline def setGetUserFromRequestUndefined: Self = StObject.set(x, "getUserFromRequest", js.undefined)
       
-      @scala.inline
-      def setInResponseTo(value: String): Self = StObject.set(x, "inResponseTo", value.asInstanceOf[js.Any])
+      inline def setInResponseTo(value: String): Self = StObject.set(x, "inResponseTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInResponseToUndefined: Self = StObject.set(x, "inResponseTo", js.undefined)
+      inline def setInResponseToUndefined: Self = StObject.set(x, "inResponseTo", js.undefined)
       
-      @scala.inline
-      def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyEncryptionAlgorighm(value: String): Self = StObject.set(x, "keyEncryptionAlgorighm", value.asInstanceOf[js.Any])
+      inline def setKeyEncryptionAlgorighm(value: String): Self = StObject.set(x, "keyEncryptionAlgorighm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyEncryptionAlgorighmUndefined: Self = StObject.set(x, "keyEncryptionAlgorighm", js.undefined)
+      inline def setKeyEncryptionAlgorighmUndefined: Self = StObject.set(x, "keyEncryptionAlgorighm", js.undefined)
       
-      @scala.inline
-      def setLifetimeInSeconds(value: Double): Self = StObject.set(x, "lifetimeInSeconds", value.asInstanceOf[js.Any])
+      inline def setLifetimeInSeconds(value: Double): Self = StObject.set(x, "lifetimeInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifetimeInSecondsUndefined: Self = StObject.set(x, "lifetimeInSeconds", js.undefined)
+      inline def setLifetimeInSecondsUndefined: Self = StObject.set(x, "lifetimeInSeconds", js.undefined)
       
-      @scala.inline
-      def setProfileMapper(value: ProfileMapperConstructor): Self = StObject.set(x, "profileMapper", value.asInstanceOf[js.Any])
+      inline def setProfileMapper(value: ProfileMapperConstructor): Self = StObject.set(x, "profileMapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileMapperUndefined: Self = StObject.set(x, "profileMapper", js.undefined)
+      inline def setProfileMapperUndefined: Self = StObject.set(x, "profileMapper", js.undefined)
       
-      @scala.inline
-      def setRecipient(value: String): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+      inline def setRecipient(value: String): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
+      inline def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
       
-      @scala.inline
-      def setRelayState(value: String): Self = StObject.set(x, "RelayState", value.asInstanceOf[js.Any])
+      inline def setRelayState(value: String): Self = StObject.set(x, "RelayState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelayStateUndefined: Self = StObject.set(x, "RelayState", js.undefined)
+      inline def setRelayStateUndefined: Self = StObject.set(x, "RelayState", js.undefined)
       
-      @scala.inline
-      def setSignResponse(value: Boolean): Self = StObject.set(x, "signResponse", value.asInstanceOf[js.Any])
+      inline def setSignResponse(value: Boolean): Self = StObject.set(x, "signResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignResponseUndefined: Self = StObject.set(x, "signResponse", js.undefined)
+      inline def setSignResponseUndefined: Self = StObject.set(x, "signResponse", js.undefined)
       
-      @scala.inline
-      def setSignatureAlgorithm(value: SignatureAlgorithmType): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
+      inline def setSignatureAlgorithm(value: SignatureAlgorithmType): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
+      inline def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
     }
   }
   
@@ -308,26 +249,20 @@ object mod {
   }
   object MetadataItem {
     
-    @scala.inline
-    def apply(description: String, displayName: String, id: String, optional: Boolean): MetadataItem = {
+    inline def apply(description: String, displayName: String, id: String, optional: Boolean): MetadataItem = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetadataItem]
     }
     
-    @scala.inline
-    implicit class MetadataItemMutableBuilder[Self <: MetadataItem] (val x: Self) extends AnyVal {
+    extension [Self <: MetadataItem](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     }
   }
   
@@ -341,26 +276,20 @@ object mod {
   }
   object ProfileMapper {
     
-    @scala.inline
-    def apply(getClaims: () => js.Any, getNameIdentifier: () => js.Any, metadata: js.Array[MetadataItem]): ProfileMapper = {
+    inline def apply(getClaims: () => js.Any, getNameIdentifier: () => js.Any, metadata: js.Array[MetadataItem]): ProfileMapper = {
       val __obj = js.Dynamic.literal(getClaims = js.Any.fromFunction0(getClaims), getNameIdentifier = js.Any.fromFunction0(getNameIdentifier), metadata = metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProfileMapper]
     }
     
-    @scala.inline
-    implicit class ProfileMapperMutableBuilder[Self <: ProfileMapper] (val x: Self) extends AnyVal {
+    extension [Self <: ProfileMapper](x: Self) {
       
-      @scala.inline
-      def setGetClaims(value: () => js.Any): Self = StObject.set(x, "getClaims", js.Any.fromFunction0(value))
+      inline def setGetClaims(value: () => js.Any): Self = StObject.set(x, "getClaims", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNameIdentifier(value: () => js.Any): Self = StObject.set(x, "getNameIdentifier", js.Any.fromFunction0(value))
+      inline def setGetNameIdentifier(value: () => js.Any): Self = StObject.set(x, "getNameIdentifier", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMetadata(value: js.Array[MetadataItem]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Array[MetadataItem]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataVarargs(value: MetadataItem*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+      inline def setMetadataVarargs(value: MetadataItem*): Self = StObject.set(x, "metadata", js.Array(value :_*))
     }
   }
   
@@ -384,44 +313,32 @@ object mod {
   }
   object SamlRequest {
     
-    @scala.inline
-    def apply(): SamlRequest = {
+    inline def apply(): SamlRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SamlRequest]
     }
     
-    @scala.inline
-    implicit class SamlRequestMutableBuilder[Self <: SamlRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SamlRequest](x: Self) {
       
-      @scala.inline
-      def setAssertionConsumerServiceURL(value: String): Self = StObject.set(x, "assertionConsumerServiceURL", value.asInstanceOf[js.Any])
+      inline def setAssertionConsumerServiceURL(value: String): Self = StObject.set(x, "assertionConsumerServiceURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssertionConsumerServiceURLUndefined: Self = StObject.set(x, "assertionConsumerServiceURL", js.undefined)
+      inline def setAssertionConsumerServiceURLUndefined: Self = StObject.set(x, "assertionConsumerServiceURL", js.undefined)
       
-      @scala.inline
-      def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+      inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
       
-      @scala.inline
-      def setForceAuthn(value: String): Self = StObject.set(x, "forceAuthn", value.asInstanceOf[js.Any])
+      inline def setForceAuthn(value: String): Self = StObject.set(x, "forceAuthn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceAuthnUndefined: Self = StObject.set(x, "forceAuthn", js.undefined)
+      inline def setForceAuthnUndefined: Self = StObject.set(x, "forceAuthn", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+      inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     }
   }
   
@@ -432,10 +349,8 @@ object mod {
   trait SignatureAlgorithmType extends StObject
   object SignatureAlgorithmType {
     
-    @scala.inline
-    def `rsa-sha1`: typings.samlp.samlpStrings.`rsa-sha1` = "rsa-sha1".asInstanceOf[typings.samlp.samlpStrings.`rsa-sha1`]
+    inline def `rsa-sha1`: typings.samlp.samlpStrings.`rsa-sha1` = "rsa-sha1".asInstanceOf[typings.samlp.samlpStrings.`rsa-sha1`]
     
-    @scala.inline
-    def `rsa-sha256`: typings.samlp.samlpStrings.`rsa-sha256` = "rsa-sha256".asInstanceOf[typings.samlp.samlpStrings.`rsa-sha256`]
+    inline def `rsa-sha256`: typings.samlp.samlpStrings.`rsa-sha256` = "rsa-sha256".asInstanceOf[typings.samlp.samlpStrings.`rsa-sha256`]
   }
 }

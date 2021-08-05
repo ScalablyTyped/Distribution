@@ -25,17 +25,14 @@ object pageAction {
   }
   object GetDetails {
     
-    @scala.inline
-    def apply(tabId: Double): GetDetails = {
+    inline def apply(tabId: Double): GetDetails = {
       val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDetails]
     }
     
-    @scala.inline
-    implicit class GetDetailsMutableBuilder[Self <: GetDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GetDetails](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,35 +61,26 @@ object pageAction {
   }
   object IconDetails {
     
-    @scala.inline
-    def apply(tabId: Double): IconDetails = {
+    inline def apply(tabId: Double): IconDetails = {
       val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconDetails]
     }
     
-    @scala.inline
-    implicit class IconDetailsMutableBuilder[Self <: IconDetails] (val x: Self) extends AnyVal {
+    extension [Self <: IconDetails](x: Self) {
       
-      @scala.inline
-      def setIconIndex(value: Double): Self = StObject.set(x, "iconIndex", value.asInstanceOf[js.Any])
+      inline def setIconIndex(value: Double): Self = StObject.set(x, "iconIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconIndexUndefined: Self = StObject.set(x, "iconIndex", js.undefined)
+      inline def setIconIndexUndefined: Self = StObject.set(x, "iconIndex", js.undefined)
       
-      @scala.inline
-      def setImageData(value: ImageData | NumberDictionary[ImageData]): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
+      inline def setImageData(value: ImageData | NumberDictionary[ImageData]): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
+      inline def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
       
-      @scala.inline
-      def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,20 +96,16 @@ object pageAction {
   }
   object PopupDetails {
     
-    @scala.inline
-    def apply(popup: String, tabId: Double): PopupDetails = {
+    inline def apply(popup: String, tabId: Double): PopupDetails = {
       val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopupDetails]
     }
     
-    @scala.inline
-    implicit class PopupDetailsMutableBuilder[Self <: PopupDetails] (val x: Self) extends AnyVal {
+    extension [Self <: PopupDetails](x: Self) {
       
-      @scala.inline
-      def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+      inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,20 +119,16 @@ object pageAction {
   }
   object TitleDetails {
     
-    @scala.inline
-    def apply(tabId: Double, title: String): TitleDetails = {
+    inline def apply(tabId: Double, title: String): TitleDetails = {
       val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[TitleDetails]
     }
     
-    @scala.inline
-    implicit class TitleDetailsMutableBuilder[Self <: TitleDetails] (val x: Self) extends AnyVal {
+    extension [Self <: TitleDetails](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

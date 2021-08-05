@@ -31,6 +31,5 @@ trait TreeAPI extends StObject {
 }
 object TreeAPI {
   
-  @scala.inline
-  def apply: TreeAPI = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeAPI").asInstanceOf[TreeAPI]
+  inline def apply: TreeAPI = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeAPI").asInstanceOf[TreeAPI]
 }

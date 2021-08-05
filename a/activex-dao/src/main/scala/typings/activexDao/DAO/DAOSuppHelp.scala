@@ -7,18 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DAOSuppHelp {
   
-  @scala.inline
-  def KeepLocal: `0` = 0.asInstanceOf[`0`]
+  inline def KeepLocal: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def LogMessages: `0` = 0.asInstanceOf[`0`]
+  inline def LogMessages: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Replicable: `0` = 0.asInstanceOf[`0`]
+  inline def Replicable: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ReplicableBool: `0` = 0.asInstanceOf[`0`]
+  inline def ReplicableBool: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def V1xNullBehavior: `0` = 0.asInstanceOf[`0`]
+  inline def V1xNullBehavior: `0` = 0.asInstanceOf[`0`]
 }

@@ -13,6 +13,5 @@ class Integer ()
   extends typings.xadesjs.xmlMod.Integer
 object Integer {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.Integer] = ^.asInstanceOf[js.Dynamic].selectDynamic("Integer").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.Integer]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.Integer] = ^.asInstanceOf[js.Dynamic].selectDynamic("Integer").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.Integer]]
 }

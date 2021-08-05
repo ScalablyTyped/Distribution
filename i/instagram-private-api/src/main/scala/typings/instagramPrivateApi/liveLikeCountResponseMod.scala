@@ -20,32 +20,24 @@ object liveLikeCountResponseMod {
   }
   object LiveLikeCountResponseRootObject {
     
-    @scala.inline
-    def apply(burst_likes: Double, like_ts: Double, likers: js.Array[js.Any], likes: Double, status: String): LiveLikeCountResponseRootObject = {
+    inline def apply(burst_likes: Double, like_ts: Double, likers: js.Array[js.Any], likes: Double, status: String): LiveLikeCountResponseRootObject = {
       val __obj = js.Dynamic.literal(burst_likes = burst_likes.asInstanceOf[js.Any], like_ts = like_ts.asInstanceOf[js.Any], likers = likers.asInstanceOf[js.Any], likes = likes.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[LiveLikeCountResponseRootObject]
     }
     
-    @scala.inline
-    implicit class LiveLikeCountResponseRootObjectMutableBuilder[Self <: LiveLikeCountResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: LiveLikeCountResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setBurst_likes(value: Double): Self = StObject.set(x, "burst_likes", value.asInstanceOf[js.Any])
+      inline def setBurst_likes(value: Double): Self = StObject.set(x, "burst_likes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLike_ts(value: Double): Self = StObject.set(x, "like_ts", value.asInstanceOf[js.Any])
+      inline def setLike_ts(value: Double): Self = StObject.set(x, "like_ts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLikers(value: js.Array[js.Any]): Self = StObject.set(x, "likers", value.asInstanceOf[js.Any])
+      inline def setLikers(value: js.Array[js.Any]): Self = StObject.set(x, "likers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLikersVarargs(value: js.Any*): Self = StObject.set(x, "likers", js.Array(value :_*))
+      inline def setLikersVarargs(value: js.Any*): Self = StObject.set(x, "likers", js.Array(value :_*))
       
-      @scala.inline
-      def setLikes(value: Double): Self = StObject.set(x, "likes", value.asInstanceOf[js.Any])
+      inline def setLikes(value: Double): Self = StObject.set(x, "likes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

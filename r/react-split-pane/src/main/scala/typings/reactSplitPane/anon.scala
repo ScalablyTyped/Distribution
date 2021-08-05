@@ -15,26 +15,20 @@ object anon {
   }
   object PartialSplitPaneState {
     
-    @scala.inline
-    def apply(): PartialSplitPaneState = {
+    inline def apply(): PartialSplitPaneState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSplitPaneState]
     }
     
-    @scala.inline
-    implicit class PartialSplitPaneStateMutableBuilder[Self <: PartialSplitPaneState] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSplitPaneState](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setResized(value: Boolean): Self = StObject.set(x, "resized", value.asInstanceOf[js.Any])
+      inline def setResized(value: Boolean): Self = StObject.set(x, "resized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizedUndefined: Self = StObject.set(x, "resized", js.undefined)
+      inline def setResizedUndefined: Self = StObject.set(x, "resized", js.undefined)
     }
   }
 }

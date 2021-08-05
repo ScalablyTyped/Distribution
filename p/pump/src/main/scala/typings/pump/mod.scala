@@ -10,12 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   // callback have to be passed as last argument
-  @scala.inline
-  def apply(streams: (Stream | Callback)*): Stream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[Stream]
-  @scala.inline
-  def apply(streams: js.Array[Stream]): Stream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[Stream]
-  @scala.inline
-  def apply(streams: js.Array[Stream], callback: Callback): Stream = (^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stream]
+  inline def apply(streams: (Stream | Callback)*): Stream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[Stream]
+  inline def apply(streams: js.Array[Stream]): Stream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[Stream]
+  inline def apply(streams: js.Array[Stream], callback: Callback): Stream = (^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stream]
   
   @JSImport("pump", JSImport.Namespace)
   @js.native

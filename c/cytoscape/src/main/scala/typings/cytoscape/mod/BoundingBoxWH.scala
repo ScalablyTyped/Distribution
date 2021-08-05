@@ -16,25 +16,19 @@ trait BoundingBoxWH extends StObject {
 }
 object BoundingBoxWH {
   
-  @scala.inline
-  def apply(h: Double, w: Double, x1: Double, y1: Double): BoundingBoxWH = {
+  inline def apply(h: Double, w: Double, x1: Double, y1: Double): BoundingBoxWH = {
     val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoundingBoxWH]
   }
   
-  @scala.inline
-  implicit class BoundingBoxWHMutableBuilder[Self <: BoundingBoxWH] (val x: Self) extends AnyVal {
+  extension [Self <: BoundingBoxWH](x: Self) {
     
-    @scala.inline
-    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+    inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
   }
 }

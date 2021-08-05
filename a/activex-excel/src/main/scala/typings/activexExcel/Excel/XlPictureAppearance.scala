@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPictureAppearance extends StObject
 object XlPictureAppearance {
   
-  @scala.inline
-  def xlPrinter: `2` = 2.asInstanceOf[`2`]
+  inline def xlPrinter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlScreen: `1` = 1.asInstanceOf[`1`]
+  inline def xlScreen: `1` = 1.asInstanceOf[`1`]
 }

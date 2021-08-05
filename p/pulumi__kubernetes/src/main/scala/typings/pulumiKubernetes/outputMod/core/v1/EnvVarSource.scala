@@ -31,8 +31,7 @@ trait EnvVarSource extends StObject {
 }
 object EnvVarSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configMapKeyRef: ConfigMapKeySelector,
     fieldRef: ObjectFieldSelector,
     resourceFieldRef: ResourceFieldSelector,
@@ -42,19 +41,14 @@ object EnvVarSource {
     __obj.asInstanceOf[EnvVarSource]
   }
   
-  @scala.inline
-  implicit class EnvVarSourceMutableBuilder[Self <: EnvVarSource] (val x: Self) extends AnyVal {
+  extension [Self <: EnvVarSource](x: Self) {
     
-    @scala.inline
-    def setConfigMapKeyRef(value: ConfigMapKeySelector): Self = StObject.set(x, "configMapKeyRef", value.asInstanceOf[js.Any])
+    inline def setConfigMapKeyRef(value: ConfigMapKeySelector): Self = StObject.set(x, "configMapKeyRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldRef(value: ObjectFieldSelector): Self = StObject.set(x, "fieldRef", value.asInstanceOf[js.Any])
+    inline def setFieldRef(value: ObjectFieldSelector): Self = StObject.set(x, "fieldRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceFieldRef(value: ResourceFieldSelector): Self = StObject.set(x, "resourceFieldRef", value.asInstanceOf[js.Any])
+    inline def setResourceFieldRef(value: ResourceFieldSelector): Self = StObject.set(x, "resourceFieldRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretKeyRef(value: SecretKeySelector): Self = StObject.set(x, "secretKeyRef", value.asInstanceOf[js.Any])
+    inline def setSecretKeyRef(value: SecretKeySelector): Self = StObject.set(x, "secretKeyRef", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,11 @@ object renderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def render(element: Element): SketchLayer | js.Array[SketchLayer] = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any]).asInstanceOf[SketchLayer | js.Array[SketchLayer]]
-  @scala.inline
-  def render(element: Element, container: SketchLayer): SketchLayer | js.Array[SketchLayer] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[SketchLayer | js.Array[SketchLayer]]
-  @scala.inline
-  def render(element: Element, container: WrappedSketchLayer): SketchLayer | js.Array[SketchLayer] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[SketchLayer | js.Array[SketchLayer]]
+  inline def render(element: Element): SketchLayer | js.Array[SketchLayer] = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any]).asInstanceOf[SketchLayer | js.Array[SketchLayer]]
+  inline def render(element: Element, container: SketchLayer): SketchLayer | js.Array[SketchLayer] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[SketchLayer | js.Array[SketchLayer]]
+  inline def render(element: Element, container: WrappedSketchLayer): SketchLayer | js.Array[SketchLayer] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[SketchLayer | js.Array[SketchLayer]]
   
-  @scala.inline
-  def renderLayers(layers: js.Array[js.Any], container: SketchLayer): SketchLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("renderLayers")(layers.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[SketchLayer]
+  inline def renderLayers(layers: js.Array[js.Any], container: SketchLayer): SketchLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("renderLayers")(layers.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[SketchLayer]
   
-  @scala.inline
-  def renderToJSON(element: Element): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToJSON")(element.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def renderToJSON(element: Element): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToJSON")(element.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

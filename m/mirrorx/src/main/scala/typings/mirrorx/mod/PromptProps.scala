@@ -14,25 +14,19 @@ trait PromptProps extends StObject {
 }
 object PromptProps {
   
-  @scala.inline
-  def apply(message: String | (js.Function1[/* location */ Location[LocationState], String | Boolean])): PromptProps = {
+  inline def apply(message: String | (js.Function1[/* location */ Location[LocationState], String | Boolean])): PromptProps = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromptProps]
   }
   
-  @scala.inline
-  implicit class PromptPropsMutableBuilder[Self <: PromptProps] (val x: Self) extends AnyVal {
+  extension [Self <: PromptProps](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String | (js.Function1[/* location */ Location[LocationState], String | Boolean])): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String | (js.Function1[/* location */ Location[LocationState], String | Boolean])): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFunction1(value: /* location */ Location[LocationState] => String | Boolean): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
+    inline def setMessageFunction1(value: /* location */ Location[LocationState] => String | Boolean): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWhen(value: Boolean): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    inline def setWhen(value: Boolean): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+    inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }
 }

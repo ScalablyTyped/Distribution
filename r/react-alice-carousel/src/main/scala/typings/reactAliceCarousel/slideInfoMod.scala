@@ -12,6 +12,5 @@ object slideInfoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def SlideInfo(hasActiveIndexSlidesLength: SlidesLength): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SlideInfo")(hasActiveIndexSlidesLength.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SlideInfo(hasActiveIndexSlidesLength: SlidesLength): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SlideInfo")(hasActiveIndexSlidesLength.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

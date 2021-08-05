@@ -18,20 +18,16 @@ object typesCorsconfigurationMod {
   }
   object CORSConfiguration {
     
-    @scala.inline
-    def apply(CORSRules: js.Array[CORSRule] | Iterable[CORSRule]): CORSConfiguration = {
+    inline def apply(CORSRules: js.Array[CORSRule] | Iterable[CORSRule]): CORSConfiguration = {
       val __obj = js.Dynamic.literal(CORSRules = CORSRules.asInstanceOf[js.Any])
       __obj.asInstanceOf[CORSConfiguration]
     }
     
-    @scala.inline
-    implicit class CORSConfigurationMutableBuilder[Self <: CORSConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: CORSConfiguration](x: Self) {
       
-      @scala.inline
-      def setCORSRules(value: js.Array[CORSRule] | Iterable[CORSRule]): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
+      inline def setCORSRules(value: js.Array[CORSRule] | Iterable[CORSRule]): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCORSRulesVarargs(value: CORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value :_*))
+      inline def setCORSRulesVarargs(value: CORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value :_*))
     }
   }
   
@@ -47,20 +43,16 @@ object typesCorsconfigurationMod {
   }
   object UnmarshalledCORSConfiguration {
     
-    @scala.inline
-    def apply(CORSRules: js.Array[UnmarshalledCORSRule]): UnmarshalledCORSConfiguration = {
+    inline def apply(CORSRules: js.Array[UnmarshalledCORSRule]): UnmarshalledCORSConfiguration = {
       val __obj = js.Dynamic.literal(CORSRules = CORSRules.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledCORSConfiguration]
     }
     
-    @scala.inline
-    implicit class UnmarshalledCORSConfigurationMutableBuilder[Self <: UnmarshalledCORSConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledCORSConfiguration](x: Self) {
       
-      @scala.inline
-      def setCORSRules(value: js.Array[UnmarshalledCORSRule]): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
+      inline def setCORSRules(value: js.Array[UnmarshalledCORSRule]): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCORSRulesVarargs(value: UnmarshalledCORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value :_*))
+      inline def setCORSRulesVarargs(value: UnmarshalledCORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value :_*))
     }
   }
 }

@@ -16,19 +16,16 @@ trait IVaultExternalObjectOperations extends StObject {
 }
 object IVaultExternalObjectOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PromoteObject: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList) => IObjectVersionAndProperties
   ): IVaultExternalObjectOperations = {
     val __obj = js.Dynamic.literal(PromoteObject = js.Any.fromFunction4(PromoteObject))
     __obj.asInstanceOf[IVaultExternalObjectOperations]
   }
   
-  @scala.inline
-  implicit class IVaultExternalObjectOperationsMutableBuilder[Self <: IVaultExternalObjectOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultExternalObjectOperations](x: Self) {
     
-    @scala.inline
-    def setPromoteObject(
+    inline def setPromoteObject(
       value: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList) => IObjectVersionAndProperties
     ): Self = StObject.set(x, "PromoteObject", js.Any.fromFunction4(value))
   }

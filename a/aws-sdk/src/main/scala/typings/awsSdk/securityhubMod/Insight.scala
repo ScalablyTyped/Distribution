@@ -28,8 +28,7 @@ trait Insight extends StObject {
 }
 object Insight {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Filters: AwsSecurityFindingFilters,
     GroupByAttribute: NonEmptyString,
     InsightArn: NonEmptyString,
@@ -39,19 +38,14 @@ object Insight {
     __obj.asInstanceOf[Insight]
   }
   
-  @scala.inline
-  implicit class InsightMutableBuilder[Self <: Insight] (val x: Self) extends AnyVal {
+  extension [Self <: Insight](x: Self) {
     
-    @scala.inline
-    def setFilters(value: AwsSecurityFindingFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: AwsSecurityFindingFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByAttribute(value: NonEmptyString): Self = StObject.set(x, "GroupByAttribute", value.asInstanceOf[js.Any])
+    inline def setGroupByAttribute(value: NonEmptyString): Self = StObject.set(x, "GroupByAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsightArn(value: NonEmptyString): Self = StObject.set(x, "InsightArn", value.asInstanceOf[js.Any])
+    inline def setInsightArn(value: NonEmptyString): Self = StObject.set(x, "InsightArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -37,8 +37,7 @@ trait SheetLink
 }
 object SheetLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Filter: String,
     FilterOptions: String,
     Name: String,
@@ -64,16 +63,12 @@ object SheetLink {
     __obj.asInstanceOf[SheetLink]
   }
   
-  @scala.inline
-  implicit class SheetLinkMutableBuilder[Self <: SheetLink] (val x: Self) extends AnyVal {
+  extension [Self <: SheetLink](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterOptions(value: String): Self = StObject.set(x, "FilterOptions", value.asInstanceOf[js.Any])
+    inline def setFilterOptions(value: String): Self = StObject.set(x, "FilterOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }
 }

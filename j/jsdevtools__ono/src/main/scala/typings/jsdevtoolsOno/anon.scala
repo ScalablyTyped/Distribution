@@ -17,29 +17,22 @@ object anon {
   }
   object Message {
     
-    @scala.inline
-    def apply[E /* <: ErrorLike */, P /* <: js.Object */](message: String): Message[E, P] = {
+    inline def apply[E /* <: ErrorLike */, P /* <: js.Object */](message: String): Message[E, P] = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message[E, P]]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message[?, ?], E /* <: ErrorLike */, P /* <: js.Object */] (val x: Self & (Message[E, P])) extends AnyVal {
+    extension [Self <: Message[?, ?], E /* <: ErrorLike */, P /* <: js.Object */](x: Self & (Message[E, P])) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalError(value: E): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
+      inline def setOriginalError(value: E): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalErrorUndefined: Self = StObject.set(x, "originalError", js.undefined)
+      inline def setOriginalErrorUndefined: Self = StObject.set(x, "originalError", js.undefined)
       
-      @scala.inline
-      def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }
   }
 }

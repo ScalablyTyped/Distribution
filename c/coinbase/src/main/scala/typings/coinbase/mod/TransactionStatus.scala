@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TransactionStatus extends StObject
 object TransactionStatus {
   
-  @scala.inline
-  def canceled: typings.coinbase.coinbaseStrings.canceled = "canceled".asInstanceOf[typings.coinbase.coinbaseStrings.canceled]
+  inline def canceled: typings.coinbase.coinbaseStrings.canceled = "canceled".asInstanceOf[typings.coinbase.coinbaseStrings.canceled]
   
-  @scala.inline
-  def completed: typings.coinbase.coinbaseStrings.completed = "completed".asInstanceOf[typings.coinbase.coinbaseStrings.completed]
+  inline def completed: typings.coinbase.coinbaseStrings.completed = "completed".asInstanceOf[typings.coinbase.coinbaseStrings.completed]
   
-  @scala.inline
-  def expired: typings.coinbase.coinbaseStrings.expired = "expired".asInstanceOf[typings.coinbase.coinbaseStrings.expired]
+  inline def expired: typings.coinbase.coinbaseStrings.expired = "expired".asInstanceOf[typings.coinbase.coinbaseStrings.expired]
   
-  @scala.inline
-  def failed: typings.coinbase.coinbaseStrings.failed = "failed".asInstanceOf[typings.coinbase.coinbaseStrings.failed]
+  inline def failed: typings.coinbase.coinbaseStrings.failed = "failed".asInstanceOf[typings.coinbase.coinbaseStrings.failed]
   
-  @scala.inline
-  def pending: typings.coinbase.coinbaseStrings.pending = "pending".asInstanceOf[typings.coinbase.coinbaseStrings.pending]
+  inline def pending: typings.coinbase.coinbaseStrings.pending = "pending".asInstanceOf[typings.coinbase.coinbaseStrings.pending]
   
-  @scala.inline
-  def waiting_for_clearing: typings.coinbase.coinbaseStrings.waiting_for_clearing = "waiting_for_clearing".asInstanceOf[typings.coinbase.coinbaseStrings.waiting_for_clearing]
+  inline def waiting_for_clearing: typings.coinbase.coinbaseStrings.waiting_for_clearing = "waiting_for_clearing".asInstanceOf[typings.coinbase.coinbaseStrings.waiting_for_clearing]
   
-  @scala.inline
-  def waiting_for_signature: typings.coinbase.coinbaseStrings.waiting_for_signature = "waiting_for_signature".asInstanceOf[typings.coinbase.coinbaseStrings.waiting_for_signature]
+  inline def waiting_for_signature: typings.coinbase.coinbaseStrings.waiting_for_signature = "waiting_for_signature".asInstanceOf[typings.coinbase.coinbaseStrings.waiting_for_signature]
 }

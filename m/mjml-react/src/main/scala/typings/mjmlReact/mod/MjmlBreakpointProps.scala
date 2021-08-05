@@ -10,19 +10,15 @@ trait MjmlBreakpointProps extends StObject {
 }
 object MjmlBreakpointProps {
   
-  @scala.inline
-  def apply(): MjmlBreakpointProps = {
+  inline def apply(): MjmlBreakpointProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MjmlBreakpointProps]
   }
   
-  @scala.inline
-  implicit class MjmlBreakpointPropsMutableBuilder[Self <: MjmlBreakpointProps] (val x: Self) extends AnyVal {
+  extension [Self <: MjmlBreakpointProps](x: Self) {
     
-    @scala.inline
-    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

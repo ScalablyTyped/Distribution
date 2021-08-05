@@ -20,52 +20,37 @@ trait ChartXAxisItemNotes extends StObject {
 }
 object ChartXAxisItemNotes {
   
-  @scala.inline
-  def apply(): ChartXAxisItemNotes = {
+  inline def apply(): ChartXAxisItemNotes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartXAxisItemNotes]
   }
   
-  @scala.inline
-  implicit class ChartXAxisItemNotesMutableBuilder[Self <: ChartXAxisItemNotes] (val x: Self) extends AnyVal {
+  extension [Self <: ChartXAxisItemNotes](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[ChartXAxisItemNotesDataItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[ChartXAxisItemNotesDataItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: ChartXAxisItemNotesDataItem*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ChartXAxisItemNotesDataItem*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setIcon(value: ChartXAxisItemNotesIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: ChartXAxisItemNotesIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setLabel(value: ChartXAxisItemNotesLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: ChartXAxisItemNotesLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLine(value: ChartXAxisItemNotesLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: ChartXAxisItemNotesLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setVisual(value: js.Function): Self = StObject.set(x, "visual", value.asInstanceOf[js.Any])
+    inline def setVisual(value: js.Function): Self = StObject.set(x, "visual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualUndefined: Self = StObject.set(x, "visual", js.undefined)
+    inline def setVisualUndefined: Self = StObject.set(x, "visual", js.undefined)
   }
 }

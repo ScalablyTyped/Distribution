@@ -60,8 +60,7 @@ object AnimatedSprite {
     * @return {PIXI.AnimatedSprite} The new animated sprite with the specified frames.
     */
   /* static member */
-  @scala.inline
-  def fromFrames(frames: js.Array[String]): typings.pixiJs.PIXI.AnimatedSprite = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFrames")(frames.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.AnimatedSprite]
+  inline def fromFrames(frames: js.Array[String]): typings.pixiJs.PIXI.AnimatedSprite = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFrames")(frames.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.AnimatedSprite]
   
   /**
     * A short hand way of creating an AnimatedSprite from an array of image ids.
@@ -71,6 +70,5 @@ object AnimatedSprite {
     * @return {PIXI.AnimatedSprite} The new animate sprite with the specified images as frames.
     */
   /* static member */
-  @scala.inline
-  def fromImages(images: js.Array[String]): typings.pixiJs.PIXI.AnimatedSprite = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImages")(images.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.AnimatedSprite]
+  inline def fromImages(images: js.Array[String]): typings.pixiJs.PIXI.AnimatedSprite = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImages")(images.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.AnimatedSprite]
 }

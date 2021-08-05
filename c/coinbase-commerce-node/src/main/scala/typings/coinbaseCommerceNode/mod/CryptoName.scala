@@ -18,18 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CryptoName extends StObject
 object CryptoName {
   
-  @scala.inline
-  def bitcoin: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoin = "bitcoin".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoin]
+  inline def bitcoin: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoin = "bitcoin".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoin]
   
-  @scala.inline
-  def bitcoincash: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoincash = "bitcoincash".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoincash]
+  inline def bitcoincash: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoincash = "bitcoincash".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoincash]
   
-  @scala.inline
-  def ethereum: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.ethereum = "ethereum".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.ethereum]
+  inline def ethereum: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.ethereum = "ethereum".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.ethereum]
   
-  @scala.inline
-  def litecoin: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.litecoin = "litecoin".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.litecoin]
+  inline def litecoin: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.litecoin = "litecoin".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.litecoin]
   
-  @scala.inline
-  def usdc: usdc_ = "usdc".asInstanceOf[usdc_]
+  inline def usdc: usdc_ = "usdc".asInstanceOf[usdc_]
 }

@@ -12,8 +12,7 @@ trait Swarm
 }
 object Swarm {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataPathPort: Double,
     DefaultAddrPool: js.Array[String],
     ID: String,
@@ -27,10 +26,8 @@ object Swarm {
     __obj.asInstanceOf[Swarm]
   }
   
-  @scala.inline
-  implicit class SwarmMutableBuilder[Self <: Swarm] (val x: Self) extends AnyVal {
+  extension [Self <: Swarm](x: Self) {
     
-    @scala.inline
-    def setJoinTokens(value: JoinTokens): Self = StObject.set(x, "JoinTokens", value.asInstanceOf[js.Any])
+    inline def setJoinTokens(value: JoinTokens): Self = StObject.set(x, "JoinTokens", value.asInstanceOf[js.Any])
   }
 }

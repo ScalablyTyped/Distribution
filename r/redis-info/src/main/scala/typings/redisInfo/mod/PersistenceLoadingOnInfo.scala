@@ -21,8 +21,7 @@ trait PersistenceLoadingOnInfo extends StObject {
 }
 object PersistenceLoadingOnInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     loading: ON,
     loading_eta_seconds: String,
     loading_loaded_bytes: String,
@@ -34,25 +33,18 @@ object PersistenceLoadingOnInfo {
     __obj.asInstanceOf[PersistenceLoadingOnInfo]
   }
   
-  @scala.inline
-  implicit class PersistenceLoadingOnInfoMutableBuilder[Self <: PersistenceLoadingOnInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PersistenceLoadingOnInfo](x: Self) {
     
-    @scala.inline
-    def setLoading(value: ON): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: ON): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoading_eta_seconds(value: String): Self = StObject.set(x, "loading_eta_seconds", value.asInstanceOf[js.Any])
+    inline def setLoading_eta_seconds(value: String): Self = StObject.set(x, "loading_eta_seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoading_loaded_bytes(value: String): Self = StObject.set(x, "loading_loaded_bytes", value.asInstanceOf[js.Any])
+    inline def setLoading_loaded_bytes(value: String): Self = StObject.set(x, "loading_loaded_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoading_loaded_perc(value: String): Self = StObject.set(x, "loading_loaded_perc", value.asInstanceOf[js.Any])
+    inline def setLoading_loaded_perc(value: String): Self = StObject.set(x, "loading_loaded_perc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoading_start_time(value: String): Self = StObject.set(x, "loading_start_time", value.asInstanceOf[js.Any])
+    inline def setLoading_start_time(value: String): Self = StObject.set(x, "loading_start_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoading_total_bytes(value: String): Self = StObject.set(x, "loading_total_bytes", value.asInstanceOf[js.Any])
+    inline def setLoading_total_bytes(value: String): Self = StObject.set(x, "loading_total_bytes", value.asInstanceOf[js.Any])
   }
 }

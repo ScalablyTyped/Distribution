@@ -18,19 +18,15 @@ trait ResultsPerPage extends StObject {
 }
 object ResultsPerPage {
   
-  @scala.inline
-  def apply(resultsPerPage: Double, totalResults: Double): ResultsPerPage = {
+  inline def apply(resultsPerPage: Double, totalResults: Double): ResultsPerPage = {
     val __obj = js.Dynamic.literal(resultsPerPage = resultsPerPage.asInstanceOf[js.Any], totalResults = totalResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultsPerPage]
   }
   
-  @scala.inline
-  implicit class ResultsPerPageMutableBuilder[Self <: ResultsPerPage] (val x: Self) extends AnyVal {
+  extension [Self <: ResultsPerPage](x: Self) {
     
-    @scala.inline
-    def setResultsPerPage(value: Double): Self = StObject.set(x, "resultsPerPage", value.asInstanceOf[js.Any])
+    inline def setResultsPerPage(value: Double): Self = StObject.set(x, "resultsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
+    inline def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
   }
 }

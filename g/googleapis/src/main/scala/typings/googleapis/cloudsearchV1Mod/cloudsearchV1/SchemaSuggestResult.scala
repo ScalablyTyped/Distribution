@@ -26,37 +26,27 @@ trait SchemaSuggestResult extends StObject {
 }
 object SchemaSuggestResult {
   
-  @scala.inline
-  def apply(): SchemaSuggestResult = {
+  inline def apply(): SchemaSuggestResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSuggestResult]
   }
   
-  @scala.inline
-  implicit class SchemaSuggestResultMutableBuilder[Self <: SchemaSuggestResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSuggestResult](x: Self) {
     
-    @scala.inline
-    def setPeopleSuggestion(value: SchemaPeopleSuggestion): Self = StObject.set(x, "peopleSuggestion", value.asInstanceOf[js.Any])
+    inline def setPeopleSuggestion(value: SchemaPeopleSuggestion): Self = StObject.set(x, "peopleSuggestion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeopleSuggestionUndefined: Self = StObject.set(x, "peopleSuggestion", js.undefined)
+    inline def setPeopleSuggestionUndefined: Self = StObject.set(x, "peopleSuggestion", js.undefined)
     
-    @scala.inline
-    def setQuerySuggestion(value: SchemaQuerySuggestion): Self = StObject.set(x, "querySuggestion", value.asInstanceOf[js.Any])
+    inline def setQuerySuggestion(value: SchemaQuerySuggestion): Self = StObject.set(x, "querySuggestion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuerySuggestionUndefined: Self = StObject.set(x, "querySuggestion", js.undefined)
+    inline def setQuerySuggestionUndefined: Self = StObject.set(x, "querySuggestion", js.undefined)
     
-    @scala.inline
-    def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setSuggestedQuery(value: String): Self = StObject.set(x, "suggestedQuery", value.asInstanceOf[js.Any])
+    inline def setSuggestedQuery(value: String): Self = StObject.set(x, "suggestedQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedQueryUndefined: Self = StObject.set(x, "suggestedQuery", js.undefined)
+    inline def setSuggestedQueryUndefined: Self = StObject.set(x, "suggestedQuery", js.undefined)
   }
 }

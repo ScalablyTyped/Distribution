@@ -17,20 +17,16 @@ object configUseDualstackMod {
   }
   object UseDualstackConfigOptions {
     
-    @scala.inline
-    def apply(): UseDualstackConfigOptions = {
+    inline def apply(): UseDualstackConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UseDualstackConfigOptions]
     }
     
-    @scala.inline
-    implicit class UseDualstackConfigOptionsMutableBuilder[Self <: UseDualstackConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UseDualstackConfigOptions](x: Self) {
       
-      @scala.inline
-      def setUseDualstack(value: Boolean): Self = StObject.set(x, "useDualstack", value.asInstanceOf[js.Any])
+      inline def setUseDualstack(value: Boolean): Self = StObject.set(x, "useDualstack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseDualstackUndefined: Self = StObject.set(x, "useDualstack", js.undefined)
+      inline def setUseDualstackUndefined: Self = StObject.set(x, "useDualstack", js.undefined)
     }
   }
 }

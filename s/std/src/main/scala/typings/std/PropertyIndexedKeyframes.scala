@@ -19,40 +19,29 @@ trait PropertyIndexedKeyframes
 }
 object PropertyIndexedKeyframes {
   
-  @scala.inline
-  def apply(): PropertyIndexedKeyframes = {
+  inline def apply(): PropertyIndexedKeyframes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyIndexedKeyframes]
   }
   
-  @scala.inline
-  implicit class PropertyIndexedKeyframesMutableBuilder[Self <: PropertyIndexedKeyframes] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyIndexedKeyframes](x: Self) {
     
-    @scala.inline
-    def setComposite(value: CompositeOperationOrAuto | js.Array[CompositeOperationOrAuto]): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
+    inline def setComposite(value: CompositeOperationOrAuto | js.Array[CompositeOperationOrAuto]): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
+    inline def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
     
-    @scala.inline
-    def setCompositeVarargs(value: CompositeOperationOrAuto*): Self = StObject.set(x, "composite", js.Array(value :_*))
+    inline def setCompositeVarargs(value: CompositeOperationOrAuto*): Self = StObject.set(x, "composite", js.Array(value :_*))
     
-    @scala.inline
-    def setEasing(value: java.lang.String | js.Array[java.lang.String]): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: java.lang.String | js.Array[java.lang.String]): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setEasingVarargs(value: java.lang.String*): Self = StObject.set(x, "easing", js.Array(value :_*))
+    inline def setEasingVarargs(value: java.lang.String*): Self = StObject.set(x, "easing", js.Array(value :_*))
     
-    @scala.inline
-    def setOffset(value: Double | (js.Array[Double | Null])): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double | (js.Array[Double | Null])): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setOffsetVarargs(value: (Double | Null)*): Self = StObject.set(x, "offset", js.Array(value :_*))
+    inline def setOffsetVarargs(value: (Double | Null)*): Self = StObject.set(x, "offset", js.Array(value :_*))
   }
 }

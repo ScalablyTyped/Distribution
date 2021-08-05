@@ -16,7 +16,7 @@ trait SharedWorkspaceFolder extends StObject {
   
   val FolderName: String = js.native
   
-  @JSName("Office.SharedWorkspaceFolder_typekey")
+  /* private */ @JSName("Office.SharedWorkspaceFolder_typekey")
   var OfficeDotSharedWorkspaceFolder_typekey: SharedWorkspaceFolder = js.native
   
   val Parent: js.Any = js.native

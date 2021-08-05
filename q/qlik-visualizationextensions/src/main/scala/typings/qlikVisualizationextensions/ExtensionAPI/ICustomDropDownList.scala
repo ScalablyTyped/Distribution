@@ -17,8 +17,7 @@ trait ICustomDropDownList
 }
 object ICustomDropDownList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultValue: String,
     label: String,
     options: valueOrfunc[ICustomControlOption],
@@ -30,19 +29,14 @@ object ICustomDropDownList {
     __obj.asInstanceOf[ICustomDropDownList]
   }
   
-  @scala.inline
-  implicit class ICustomDropDownListMutableBuilder[Self <: ICustomDropDownList] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomDropDownList](x: Self) {
     
-    @scala.inline
-    def setComponent(value: dropdown): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dropdown): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: valueOrfunc[ICustomControlOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: valueOrfunc[ICustomControlOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsFunction0(value: () => ICustomControlOption): Self = StObject.set(x, "options", js.Any.fromFunction0(value))
+    inline def setOptionsFunction0(value: () => ICustomControlOption): Self = StObject.set(x, "options", js.Any.fromFunction0(value))
   }
 }

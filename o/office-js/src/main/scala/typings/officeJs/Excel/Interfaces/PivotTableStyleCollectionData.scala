@@ -11,22 +11,17 @@ trait PivotTableStyleCollectionData extends StObject {
 }
 object PivotTableStyleCollectionData {
   
-  @scala.inline
-  def apply(): PivotTableStyleCollectionData = {
+  inline def apply(): PivotTableStyleCollectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotTableStyleCollectionData]
   }
   
-  @scala.inline
-  implicit class PivotTableStyleCollectionDataMutableBuilder[Self <: PivotTableStyleCollectionData] (val x: Self) extends AnyVal {
+  extension [Self <: PivotTableStyleCollectionData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[PivotTableStyleData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[PivotTableStyleData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: PivotTableStyleData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PivotTableStyleData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

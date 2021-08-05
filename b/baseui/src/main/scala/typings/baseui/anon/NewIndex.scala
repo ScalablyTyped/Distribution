@@ -15,25 +15,19 @@ trait NewIndex extends StObject {
 }
 object NewIndex {
   
-  @scala.inline
-  def apply(newIndex: Double, newState: js.Array[ReactNode], oldIndex: Double): NewIndex = {
+  inline def apply(newIndex: Double, newState: js.Array[ReactNode], oldIndex: Double): NewIndex = {
     val __obj = js.Dynamic.literal(newIndex = newIndex.asInstanceOf[js.Any], newState = newState.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewIndex]
   }
   
-  @scala.inline
-  implicit class NewIndexMutableBuilder[Self <: NewIndex] (val x: Self) extends AnyVal {
+  extension [Self <: NewIndex](x: Self) {
     
-    @scala.inline
-    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewState(value: js.Array[ReactNode]): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
+    inline def setNewState(value: js.Array[ReactNode]): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewStateVarargs(value: ReactNode*): Self = StObject.set(x, "newState", js.Array(value :_*))
+    inline def setNewStateVarargs(value: ReactNode*): Self = StObject.set(x, "newState", js.Array(value :_*))
     
-    @scala.inline
-    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+    inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -22,20 +22,16 @@ object locationMod extends Shortcut {
   }
   object LocationProps {
     
-    @scala.inline
-    def apply(): LocationProps = {
+    inline def apply(): LocationProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocationProps]
     }
     
-    @scala.inline
-    implicit class LocationPropsMutableBuilder[Self <: LocationProps] (val x: Self) extends AnyVal {
+    extension [Self <: LocationProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

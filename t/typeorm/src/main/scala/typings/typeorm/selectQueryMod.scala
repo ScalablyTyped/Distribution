@@ -16,29 +16,22 @@ object selectQueryMod {
   }
   object SelectQuery {
     
-    @scala.inline
-    def apply(selection: String): SelectQuery = {
+    inline def apply(selection: String): SelectQuery = {
       val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectQuery]
     }
     
-    @scala.inline
-    implicit class SelectQueryMutableBuilder[Self <: SelectQuery] (val x: Self) extends AnyVal {
+    extension [Self <: SelectQuery](x: Self) {
       
-      @scala.inline
-      def setAliasName(value: String): Self = StObject.set(x, "aliasName", value.asInstanceOf[js.Any])
+      inline def setAliasName(value: String): Self = StObject.set(x, "aliasName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasNameUndefined: Self = StObject.set(x, "aliasName", js.undefined)
+      inline def setAliasNameUndefined: Self = StObject.set(x, "aliasName", js.undefined)
       
-      @scala.inline
-      def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
+      inline def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
+      inline def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
     }
   }
 }

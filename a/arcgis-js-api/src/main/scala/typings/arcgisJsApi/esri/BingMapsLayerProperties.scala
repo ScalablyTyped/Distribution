@@ -41,37 +41,27 @@ trait BingMapsLayerProperties
 }
 object BingMapsLayerProperties {
   
-  @scala.inline
-  def apply(): BingMapsLayerProperties = {
+  inline def apply(): BingMapsLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BingMapsLayerProperties]
   }
   
-  @scala.inline
-  implicit class BingMapsLayerPropertiesMutableBuilder[Self <: BingMapsLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BingMapsLayerProperties](x: Self) {
     
-    @scala.inline
-    def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+    inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
+    inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setStyle(value: road | aerial | hybrid): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: road | aerial | hybrid): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

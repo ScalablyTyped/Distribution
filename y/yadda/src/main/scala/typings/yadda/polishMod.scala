@@ -1432,8 +1432,7 @@ object polishMod extends Shortcut {
   }
   object Vocabulary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _steps: js.Array[String],
       background: String,
       examples: String,
@@ -1458,29 +1457,21 @@ object polishMod extends Shortcut {
       __obj.asInstanceOf[Vocabulary]
     }
     
-    @scala.inline
-    implicit class VocabularyMutableBuilder[Self <: Vocabulary] (val x: Self) extends AnyVal {
+    extension [Self <: Vocabulary](x: Self) {
       
-      @scala.inline
-      def setGdy(value: String): Self = StObject.set(x, "gdy", value.asInstanceOf[js.Any])
+      inline def setGdy(value: String): Self = StObject.set(x, "gdy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJesli(value: String): Self = StObject.set(x, "jesli", value.asInstanceOf[js.Any])
+      inline def setJesli(value: String): Self = StObject.set(x, "jesli", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJezeli(value: String): Self = StObject.set(x, "jezeli", value.asInstanceOf[js.Any])
+      inline def setJezeli(value: String): Self = StObject.set(x, "jezeli", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKiedy(value: String): Self = StObject.set(x, "kiedy", value.asInstanceOf[js.Any])
+      inline def setKiedy(value: String): Self = StObject.set(x, "kiedy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajac(value: String): Self = StObject.set(x, "majac", value.asInstanceOf[js.Any])
+      inline def setMajac(value: String): Self = StObject.set(x, "majac", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWtedy(value: String): Self = StObject.set(x, "wtedy", value.asInstanceOf[js.Any])
+      inline def setWtedy(value: String): Self = StObject.set(x, "wtedy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZakladajac(value: String): Self = StObject.set(x, "zakladajac", value.asInstanceOf[js.Any])
+      inline def setZakladajac(value: String): Self = StObject.set(x, "zakladajac", value.asInstanceOf[js.Any])
     }
   }
   

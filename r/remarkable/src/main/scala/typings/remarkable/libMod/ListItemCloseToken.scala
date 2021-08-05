@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ListItemCloseToken {
   
-  @scala.inline
-  def apply(level: Double): ListItemCloseToken = {
+  inline def apply(level: Double): ListItemCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("list_item_close")
     __obj.asInstanceOf[ListItemCloseToken]
   }
   
-  @scala.inline
-  implicit class ListItemCloseTokenMutableBuilder[Self <: ListItemCloseToken] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemCloseToken](x: Self) {
     
-    @scala.inline
-    def setType(value: list_item_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: list_item_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

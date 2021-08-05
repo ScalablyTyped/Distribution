@@ -23,25 +23,19 @@ trait FolderConfiguration extends StObject {
 }
 object FolderConfiguration {
   
-  @scala.inline
-  def apply(Action: RetentionAction, Name: FolderName): FolderConfiguration = {
+  inline def apply(Action: RetentionAction, Name: FolderName): FolderConfiguration = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FolderConfiguration]
   }
   
-  @scala.inline
-  implicit class FolderConfigurationMutableBuilder[Self <: FolderConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: FolderConfiguration](x: Self) {
     
-    @scala.inline
-    def setAction(value: RetentionAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: RetentionAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: FolderName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: FolderName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: RetentionPeriod): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: RetentionPeriod): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "Period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "Period", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait ObjectExplorerProviderBase
 }
 object ObjectExplorerProviderBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     expandNode: ExpandNodeInfo => Thenable[Boolean],
     findNodes: FindNodesInfo => Thenable[ObjectExplorerFindNodesResponse],
     providerId: String,
@@ -31,19 +30,14 @@ object ObjectExplorerProviderBase {
     __obj.asInstanceOf[ObjectExplorerProviderBase]
   }
   
-  @scala.inline
-  implicit class ObjectExplorerProviderBaseMutableBuilder[Self <: ObjectExplorerProviderBase] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectExplorerProviderBase](x: Self) {
     
-    @scala.inline
-    def setExpandNode(value: ExpandNodeInfo => Thenable[Boolean]): Self = StObject.set(x, "expandNode", js.Any.fromFunction1(value))
+    inline def setExpandNode(value: ExpandNodeInfo => Thenable[Boolean]): Self = StObject.set(x, "expandNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindNodes(value: FindNodesInfo => Thenable[ObjectExplorerFindNodesResponse]): Self = StObject.set(x, "findNodes", js.Any.fromFunction1(value))
+    inline def setFindNodes(value: FindNodesInfo => Thenable[ObjectExplorerFindNodesResponse]): Self = StObject.set(x, "findNodes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefreshNode(value: ExpandNodeInfo => Thenable[Boolean]): Self = StObject.set(x, "refreshNode", js.Any.fromFunction1(value))
+    inline def setRefreshNode(value: ExpandNodeInfo => Thenable[Boolean]): Self = StObject.set(x, "refreshNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnExpandCompleted(value: js.Function1[/* response */ ObjectExplorerExpandInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnExpandCompleted", js.Any.fromFunction1(value))
+    inline def setRegisterOnExpandCompleted(value: js.Function1[/* response */ ObjectExplorerExpandInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnExpandCompleted", js.Any.fromFunction1(value))
   }
 }

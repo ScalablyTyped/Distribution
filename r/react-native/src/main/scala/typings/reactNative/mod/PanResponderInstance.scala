@@ -10,16 +10,13 @@ trait PanResponderInstance extends StObject {
 }
 object PanResponderInstance {
   
-  @scala.inline
-  def apply(panHandlers: GestureResponderHandlers): PanResponderInstance = {
+  inline def apply(panHandlers: GestureResponderHandlers): PanResponderInstance = {
     val __obj = js.Dynamic.literal(panHandlers = panHandlers.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanResponderInstance]
   }
   
-  @scala.inline
-  implicit class PanResponderInstanceMutableBuilder[Self <: PanResponderInstance] (val x: Self) extends AnyVal {
+  extension [Self <: PanResponderInstance](x: Self) {
     
-    @scala.inline
-    def setPanHandlers(value: GestureResponderHandlers): Self = StObject.set(x, "panHandlers", value.asInstanceOf[js.Any])
+    inline def setPanHandlers(value: GestureResponderHandlers): Self = StObject.set(x, "panHandlers", value.asInstanceOf[js.Any])
   }
 }

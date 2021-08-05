@@ -21,19 +21,15 @@ trait EmptyDirVolumeSource extends StObject {
 }
 object EmptyDirVolumeSource {
   
-  @scala.inline
-  def apply(medium: String, sizeLimit: String): EmptyDirVolumeSource = {
+  inline def apply(medium: String, sizeLimit: String): EmptyDirVolumeSource = {
     val __obj = js.Dynamic.literal(medium = medium.asInstanceOf[js.Any], sizeLimit = sizeLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmptyDirVolumeSource]
   }
   
-  @scala.inline
-  implicit class EmptyDirVolumeSourceMutableBuilder[Self <: EmptyDirVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: EmptyDirVolumeSource](x: Self) {
     
-    @scala.inline
-    def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeLimit(value: String): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
+    inline def setSizeLimit(value: String): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
   }
 }

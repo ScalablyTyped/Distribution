@@ -20,9 +20,9 @@ object contentMod {
     extends StObject
        with ComponentInterface {
     
-    var cBottom: js.Any = js.native
+    /* private */ var cBottom: js.Any = js.native
     
-    var cTop: js.Any = js.native
+    /* private */ var cTop: js.Any = js.native
     
     /**
       * The color to use from your application's color palette.
@@ -31,7 +31,7 @@ object contentMod {
       */
     var color: js.UndefOr[Color] = js.native
     
-    var detail: js.Any = js.native
+    /* private */ var detail: js.Any = js.native
     
     @JSName("disconnectedCallback")
     def disconnectedCallback_MContent(): Unit = js.native
@@ -78,28 +78,28 @@ object contentMod {
       */
     var ionScrollStart: EventEmitter[ScrollBaseDetail] = js.native
     
-    var isScrolling: js.Any = js.native
+    /* private */ var isScrolling: js.Any = js.native
     
-    var lastScroll: js.Any = js.native
+    /* private */ var lastScroll: js.Any = js.native
     
     def onAppLoad(): Unit = js.native
     
     def onClick(ev: Event): Unit = js.native
     
-    var onScroll: js.Any = js.native
+    /* private */ var onScroll: js.Any = js.native
     
-    var onScrollEnd: js.Any = js.native
+    /* private */ var onScrollEnd: js.Any = js.native
     
-    var onScrollStart: js.Any = js.native
+    /* private */ var onScrollStart: js.Any = js.native
     
-    var queued: js.Any = js.native
+    /* private */ var queued: js.Any = js.native
     
-    var readDimensions: js.Any = js.native
+    /* private */ var readDimensions: js.Any = js.native
     
     @JSName("render")
     def render_MContent(): js.Any = js.native
     
-    var resize: js.Any = js.native
+    /* private */ var resize: js.Any = js.native
     
     /**
       * Scroll by a specified X/Y distance in the component.
@@ -110,7 +110,7 @@ object contentMod {
       */
     def scrollByPoint(x: Double, y: Double, duration: Double): js.Promise[Unit] = js.native
     
-    var scrollEl: js.Any = js.native
+    /* private */ var scrollEl: js.Any = js.native
     
     /**
       * Because of performance reasons, ionScroll events are disabled by default, in order to enable them
@@ -166,8 +166,8 @@ object contentMod {
       */
     var scrollY: Boolean = js.native
     
-    var shouldForceOverscroll: js.Any = js.native
+    /* private */ var shouldForceOverscroll: js.Any = js.native
     
-    var watchDog: js.Any = js.native
+    /* private */ var watchDog: js.Any = js.native
   }
 }

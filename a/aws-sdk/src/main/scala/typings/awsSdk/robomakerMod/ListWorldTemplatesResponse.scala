@@ -18,28 +18,21 @@ trait ListWorldTemplatesResponse extends StObject {
 }
 object ListWorldTemplatesResponse {
   
-  @scala.inline
-  def apply(): ListWorldTemplatesResponse = {
+  inline def apply(): ListWorldTemplatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListWorldTemplatesResponse]
   }
   
-  @scala.inline
-  implicit class ListWorldTemplatesResponseMutableBuilder[Self <: ListWorldTemplatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListWorldTemplatesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTemplateSummaries(value: TemplateSummaries): Self = StObject.set(x, "templateSummaries", value.asInstanceOf[js.Any])
+    inline def setTemplateSummaries(value: TemplateSummaries): Self = StObject.set(x, "templateSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateSummariesUndefined: Self = StObject.set(x, "templateSummaries", js.undefined)
+    inline def setTemplateSummariesUndefined: Self = StObject.set(x, "templateSummaries", js.undefined)
     
-    @scala.inline
-    def setTemplateSummariesVarargs(value: TemplateSummary*): Self = StObject.set(x, "templateSummaries", js.Array(value :_*))
+    inline def setTemplateSummariesVarargs(value: TemplateSummary*): Self = StObject.set(x, "templateSummaries", js.Array(value :_*))
   }
 }

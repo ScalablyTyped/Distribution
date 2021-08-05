@@ -20,8 +20,7 @@ trait IScheduledToastNotification extends StObject {
 }
 object IScheduledToastNotification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     content: XmlDocument,
     deliveryTime: Date,
     id: String,
@@ -32,22 +31,16 @@ object IScheduledToastNotification {
     __obj.asInstanceOf[IScheduledToastNotification]
   }
   
-  @scala.inline
-  implicit class IScheduledToastNotificationMutableBuilder[Self <: IScheduledToastNotification] (val x: Self) extends AnyVal {
+  extension [Self <: IScheduledToastNotification](x: Self) {
     
-    @scala.inline
-    def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryTime(value: Date): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
+    inline def setDeliveryTime(value: Date): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumSnoozeCount(value: Double): Self = StObject.set(x, "maximumSnoozeCount", value.asInstanceOf[js.Any])
+    inline def setMaximumSnoozeCount(value: Double): Self = StObject.set(x, "maximumSnoozeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnoozeInterval(value: Double): Self = StObject.set(x, "snoozeInterval", value.asInstanceOf[js.Any])
+    inline def setSnoozeInterval(value: Double): Self = StObject.set(x, "snoozeInterval", value.asInstanceOf[js.Any])
   }
 }

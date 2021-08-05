@@ -14,31 +14,23 @@ trait Orientation extends StObject {
 }
 object Orientation {
   
-  @scala.inline
-  def apply(): Orientation = {
+  inline def apply(): Orientation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Orientation]
   }
   
-  @scala.inline
-  implicit class OrientationMutableBuilder[Self <: Orientation] (val x: Self) extends AnyVal {
+  extension [Self <: Orientation](x: Self) {
     
-    @scala.inline
-    def setOrientation(value: QuaternionLike): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: QuaternionLike): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationNull: Self = StObject.set(x, "orientation", null)
+    inline def setOrientationNull: Self = StObject.set(x, "orientation", null)
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Vector3Like): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Vector3Like): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionNull: Self = StObject.set(x, "position", null)
+    inline def setPositionNull: Self = StObject.set(x, "position", null)
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

@@ -17,15 +17,11 @@ object parseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseFile(opt: ParseOptions): js.Promise[js.Array[default]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(opt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[default]]]
-  @scala.inline
-  def parseFile(opt: ParseOptions, documentation: default): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(opt.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
+  inline def parseFile(opt: ParseOptions): js.Promise[js.Array[default]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(opt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[default]]]
+  inline def parseFile(opt: ParseOptions, documentation: default): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(opt.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
   
-  @scala.inline
-  def parseSource(source: String, opt: ParseOptions): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSource")(source.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
-  @scala.inline
-  def parseSource(source: String, opt: ParseOptions, documentation: default): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSource")(source.asInstanceOf[js.Any], opt.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
+  inline def parseSource(source: String, opt: ParseOptions): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSource")(source.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
+  inline def parseSource(source: String, opt: ParseOptions, documentation: default): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSource")(source.asInstanceOf[js.Any], opt.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
   
   trait DocGenOptions extends StObject {
     
@@ -90,101 +86,70 @@ object parseMod {
   }
   object DocGenOptions {
     
-    @scala.inline
-    def apply(): DocGenOptions = {
+    inline def apply(): DocGenOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DocGenOptions]
     }
     
-    @scala.inline
-    implicit class DocGenOptionsMutableBuilder[Self <: DocGenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DocGenOptions](x: Self) {
       
-      @scala.inline
-      def setAddScriptHandlers(value: js.Array[Handler]): Self = StObject.set(x, "addScriptHandlers", value.asInstanceOf[js.Any])
+      inline def setAddScriptHandlers(value: js.Array[Handler]): Self = StObject.set(x, "addScriptHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddScriptHandlersUndefined: Self = StObject.set(x, "addScriptHandlers", js.undefined)
+      inline def setAddScriptHandlersUndefined: Self = StObject.set(x, "addScriptHandlers", js.undefined)
       
-      @scala.inline
-      def setAddScriptHandlersVarargs(value: Handler*): Self = StObject.set(x, "addScriptHandlers", js.Array(value :_*))
+      inline def setAddScriptHandlersVarargs(value: Handler*): Self = StObject.set(x, "addScriptHandlers", js.Array(value :_*))
       
-      @scala.inline
-      def setAddTemplateHandlers(value: js.Array[typings.vueDocgenApi.parseTemplateMod.Handler]): Self = StObject.set(x, "addTemplateHandlers", value.asInstanceOf[js.Any])
+      inline def setAddTemplateHandlers(value: js.Array[typings.vueDocgenApi.parseTemplateMod.Handler]): Self = StObject.set(x, "addTemplateHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddTemplateHandlersUndefined: Self = StObject.set(x, "addTemplateHandlers", js.undefined)
+      inline def setAddTemplateHandlersUndefined: Self = StObject.set(x, "addTemplateHandlers", js.undefined)
       
-      @scala.inline
-      def setAddTemplateHandlersVarargs(value: typings.vueDocgenApi.parseTemplateMod.Handler*): Self = StObject.set(x, "addTemplateHandlers", js.Array(value :_*))
+      inline def setAddTemplateHandlersVarargs(value: typings.vueDocgenApi.parseTemplateMod.Handler*): Self = StObject.set(x, "addTemplateHandlers", js.Array(value :_*))
       
-      @scala.inline
-      def setAlias(value: StringDictionary[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: StringDictionary[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setJsx(value: Boolean): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
+      inline def setJsx(value: Boolean): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
+      inline def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
       
-      @scala.inline
-      def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+      inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
-      @scala.inline
-      def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
+      inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
       
-      @scala.inline
-      def setNameFilter(value: js.Array[String]): Self = StObject.set(x, "nameFilter", value.asInstanceOf[js.Any])
+      inline def setNameFilter(value: js.Array[String]): Self = StObject.set(x, "nameFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameFilterUndefined: Self = StObject.set(x, "nameFilter", js.undefined)
+      inline def setNameFilterUndefined: Self = StObject.set(x, "nameFilter", js.undefined)
       
-      @scala.inline
-      def setNameFilterVarargs(value: String*): Self = StObject.set(x, "nameFilter", js.Array(value :_*))
+      inline def setNameFilterVarargs(value: String*): Self = StObject.set(x, "nameFilter", js.Array(value :_*))
       
-      @scala.inline
-      def setPugOptions(value: Options): Self = StObject.set(x, "pugOptions", value.asInstanceOf[js.Any])
+      inline def setPugOptions(value: Options): Self = StObject.set(x, "pugOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPugOptionsUndefined: Self = StObject.set(x, "pugOptions", js.undefined)
+      inline def setPugOptionsUndefined: Self = StObject.set(x, "pugOptions", js.undefined)
       
-      @scala.inline
-      def setScriptHandlers(value: js.Array[Handler]): Self = StObject.set(x, "scriptHandlers", value.asInstanceOf[js.Any])
+      inline def setScriptHandlers(value: js.Array[Handler]): Self = StObject.set(x, "scriptHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptHandlersUndefined: Self = StObject.set(x, "scriptHandlers", js.undefined)
+      inline def setScriptHandlersUndefined: Self = StObject.set(x, "scriptHandlers", js.undefined)
       
-      @scala.inline
-      def setScriptHandlersVarargs(value: Handler*): Self = StObject.set(x, "scriptHandlers", js.Array(value :_*))
+      inline def setScriptHandlersVarargs(value: Handler*): Self = StObject.set(x, "scriptHandlers", js.Array(value :_*))
       
-      @scala.inline
-      def setScriptPreHandlers(value: js.Array[Handler]): Self = StObject.set(x, "scriptPreHandlers", value.asInstanceOf[js.Any])
+      inline def setScriptPreHandlers(value: js.Array[Handler]): Self = StObject.set(x, "scriptPreHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptPreHandlersUndefined: Self = StObject.set(x, "scriptPreHandlers", js.undefined)
+      inline def setScriptPreHandlersUndefined: Self = StObject.set(x, "scriptPreHandlers", js.undefined)
       
-      @scala.inline
-      def setScriptPreHandlersVarargs(value: Handler*): Self = StObject.set(x, "scriptPreHandlers", js.Array(value :_*))
+      inline def setScriptPreHandlersVarargs(value: Handler*): Self = StObject.set(x, "scriptPreHandlers", js.Array(value :_*))
       
-      @scala.inline
-      def setTemplateHandlers(value: js.Array[typings.vueDocgenApi.parseTemplateMod.Handler]): Self = StObject.set(x, "templateHandlers", value.asInstanceOf[js.Any])
+      inline def setTemplateHandlers(value: js.Array[typings.vueDocgenApi.parseTemplateMod.Handler]): Self = StObject.set(x, "templateHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateHandlersUndefined: Self = StObject.set(x, "templateHandlers", js.undefined)
+      inline def setTemplateHandlersUndefined: Self = StObject.set(x, "templateHandlers", js.undefined)
       
-      @scala.inline
-      def setTemplateHandlersVarargs(value: typings.vueDocgenApi.parseTemplateMod.Handler*): Self = StObject.set(x, "templateHandlers", js.Array(value :_*))
+      inline def setTemplateHandlersVarargs(value: typings.vueDocgenApi.parseTemplateMod.Handler*): Self = StObject.set(x, "templateHandlers", js.Array(value :_*))
       
-      @scala.inline
-      def setValidExtends(value: /* fullFilePath */ String => Boolean): Self = StObject.set(x, "validExtends", js.Any.fromFunction1(value))
+      inline def setValidExtends(value: /* fullFilePath */ String => Boolean): Self = StObject.set(x, "validExtends", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidExtendsUndefined: Self = StObject.set(x, "validExtends", js.undefined)
+      inline def setValidExtendsUndefined: Self = StObject.set(x, "validExtends", js.undefined)
     }
   }
   
@@ -206,26 +171,20 @@ object parseMod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(filePath: String, validExtends: String => Boolean): ParseOptions = {
+    inline def apply(filePath: String, validExtends: String => Boolean): ParseOptions = {
       val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], validExtends = js.Any.fromFunction1(validExtends))
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLang(value: ts | js_): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: ts | js_): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setValidExtends(value: String => Boolean): Self = StObject.set(x, "validExtends", js.Any.fromFunction1(value))
+      inline def setValidExtends(value: String => Boolean): Self = StObject.set(x, "validExtends", js.Any.fromFunction1(value))
     }
   }
 }

@@ -38,49 +38,35 @@ trait InputSummary extends StObject {
 }
 object InputSummary {
   
-  @scala.inline
-  def apply(): InputSummary = {
+  inline def apply(): InputSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputSummary]
   }
   
-  @scala.inline
-  implicit class InputSummaryMutableBuilder[Self <: InputSummary] (val x: Self) extends AnyVal {
+  extension [Self <: InputSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setInputArn(value: InputArn): Self = StObject.set(x, "inputArn", value.asInstanceOf[js.Any])
+    inline def setInputArn(value: InputArn): Self = StObject.set(x, "inputArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputArnUndefined: Self = StObject.set(x, "inputArn", js.undefined)
+    inline def setInputArnUndefined: Self = StObject.set(x, "inputArn", js.undefined)
     
-    @scala.inline
-    def setInputDescription(value: InputDescription): Self = StObject.set(x, "inputDescription", value.asInstanceOf[js.Any])
+    inline def setInputDescription(value: InputDescription): Self = StObject.set(x, "inputDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescriptionUndefined: Self = StObject.set(x, "inputDescription", js.undefined)
+    inline def setInputDescriptionUndefined: Self = StObject.set(x, "inputDescription", js.undefined)
     
-    @scala.inline
-    def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+    inline def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
+    inline def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

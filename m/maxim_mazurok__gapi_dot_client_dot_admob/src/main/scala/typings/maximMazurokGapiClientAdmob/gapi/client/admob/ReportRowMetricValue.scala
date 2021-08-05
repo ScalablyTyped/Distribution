@@ -20,31 +20,23 @@ trait ReportRowMetricValue extends StObject {
 }
 object ReportRowMetricValue {
   
-  @scala.inline
-  def apply(): ReportRowMetricValue = {
+  inline def apply(): ReportRowMetricValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportRowMetricValue]
   }
   
-  @scala.inline
-  implicit class ReportRowMetricValueMutableBuilder[Self <: ReportRowMetricValue] (val x: Self) extends AnyVal {
+  extension [Self <: ReportRowMetricValue](x: Self) {
     
-    @scala.inline
-    def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
+    inline def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
+    inline def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
-    @scala.inline
-    def setIntegerValue(value: String): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
+    inline def setIntegerValue(value: String): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
+    inline def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
     
-    @scala.inline
-    def setMicrosValue(value: String): Self = StObject.set(x, "microsValue", value.asInstanceOf[js.Any])
+    inline def setMicrosValue(value: String): Self = StObject.set(x, "microsValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrosValueUndefined: Self = StObject.set(x, "microsValue", js.undefined)
+    inline def setMicrosValueUndefined: Self = StObject.set(x, "microsValue", js.undefined)
   }
 }

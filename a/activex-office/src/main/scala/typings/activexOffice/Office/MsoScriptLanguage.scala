@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoScriptLanguage extends StObject
 object MsoScriptLanguage {
   
-  @scala.inline
-  def msoScriptLanguageASP: `3` = 3.asInstanceOf[`3`]
+  inline def msoScriptLanguageASP: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoScriptLanguageJava: `1` = 1.asInstanceOf[`1`]
+  inline def msoScriptLanguageJava: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoScriptLanguageOther: `4` = 4.asInstanceOf[`4`]
+  inline def msoScriptLanguageOther: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoScriptLanguageVisualBasic: `2` = 2.asInstanceOf[`2`]
+  inline def msoScriptLanguageVisualBasic: `2` = 2.asInstanceOf[`2`]
 }

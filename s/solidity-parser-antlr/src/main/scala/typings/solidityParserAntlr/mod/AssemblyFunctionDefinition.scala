@@ -15,17 +15,14 @@ trait AssemblyFunctionDefinition
 }
 object AssemblyFunctionDefinition {
   
-  @scala.inline
-  def apply(): AssemblyFunctionDefinition = {
+  inline def apply(): AssemblyFunctionDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("AssemblyFunctionDefinition")
     __obj.asInstanceOf[AssemblyFunctionDefinition]
   }
   
-  @scala.inline
-  implicit class AssemblyFunctionDefinitionMutableBuilder[Self <: AssemblyFunctionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: AssemblyFunctionDefinition](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

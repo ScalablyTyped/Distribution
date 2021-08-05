@@ -16,16 +16,13 @@ trait NetworkInfo extends StObject {
 }
 object NetworkInfo {
   
-  @scala.inline
-  def apply(packetLoss: Double): NetworkInfo = {
+  inline def apply(packetLoss: Double): NetworkInfo = {
     val __obj = js.Dynamic.literal(packetLoss = packetLoss.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInfo]
   }
   
-  @scala.inline
-  implicit class NetworkInfoMutableBuilder[Self <: NetworkInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkInfo](x: Self) {
     
-    @scala.inline
-    def setPacketLoss(value: Double): Self = StObject.set(x, "packetLoss", value.asInstanceOf[js.Any])
+    inline def setPacketLoss(value: Double): Self = StObject.set(x, "packetLoss", value.asInstanceOf[js.Any])
   }
 }

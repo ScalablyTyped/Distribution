@@ -29,31 +29,23 @@ trait CrosshairBaseCfg
 }
 object CrosshairBaseCfg {
   
-  @scala.inline
-  def apply(container: IGroup): CrosshairBaseCfg = {
+  inline def apply(container: IGroup): CrosshairBaseCfg = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrosshairBaseCfg]
   }
   
-  @scala.inline
-  implicit class CrosshairBaseCfgMutableBuilder[Self <: CrosshairBaseCfg] (val x: Self) extends AnyVal {
+  extension [Self <: CrosshairBaseCfg](x: Self) {
     
-    @scala.inline
-    def setLine(value: CrosshairLineCfg): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: CrosshairLineCfg): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setText(value: CrosshairTextCfg): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: CrosshairTextCfg): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextBackground(value: CrosshairTextBackgroundCfg): Self = StObject.set(x, "textBackground", value.asInstanceOf[js.Any])
+    inline def setTextBackground(value: CrosshairTextBackgroundCfg): Self = StObject.set(x, "textBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextBackgroundUndefined: Self = StObject.set(x, "textBackground", js.undefined)
+    inline def setTextBackgroundUndefined: Self = StObject.set(x, "textBackground", js.undefined)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

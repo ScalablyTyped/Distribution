@@ -18,50 +18,42 @@ object esmGlobalsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assign(globals: AnimatedGlobals): AnimatedGlobals = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(globals.asInstanceOf[js.Any]).asInstanceOf[AnimatedGlobals]
+  inline def assign(globals: AnimatedGlobals): AnimatedGlobals = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(globals.asInstanceOf[js.Any]).asInstanceOf[AnimatedGlobals]
   
   @JSImport("@react-spring/shared/esm/globals", "batchedUpdates")
   @js.native
   def batchedUpdates: js.Function1[/* callback */ js.Function0[Unit], Unit] = js.native
-  @scala.inline
-  def batchedUpdates_=(x: js.Function1[/* callback */ js.Function0[Unit], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("batchedUpdates")(x.asInstanceOf[js.Any])
+  inline def batchedUpdates_=(x: js.Function1[/* callback */ js.Function0[Unit], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("batchedUpdates")(x.asInstanceOf[js.Any])
   
   @JSImport("@react-spring/shared/esm/globals", "colorNames")
   @js.native
   def colorNames: StringDictionary[Double] | Null = js.native
-  @scala.inline
-  def colorNames_=(x: StringDictionary[Double] | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colorNames")(x.asInstanceOf[js.Any])
+  inline def colorNames_=(x: StringDictionary[Double] | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colorNames")(x.asInstanceOf[js.Any])
   
   @JSImport("@react-spring/shared/esm/globals", "createStringInterpolator")
   @js.native
   def createStringInterpolator: js.Function1[/* config */ InterpolatorConfig[String], js.Function1[/* input */ Double, String]] = js.native
-  @scala.inline
-  def createStringInterpolator_=(x: js.Function1[/* config */ InterpolatorConfig[String], js.Function1[/* input */ Double, String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createStringInterpolator")(x.asInstanceOf[js.Any])
+  inline def createStringInterpolator_=(x: js.Function1[/* config */ InterpolatorConfig[String], js.Function1[/* input */ Double, String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createStringInterpolator")(x.asInstanceOf[js.Any])
   
   @JSImport("@react-spring/shared/esm/globals", "frameLoop")
   @js.native
   def frameLoop: FrameLoop = js.native
-  @scala.inline
-  def frameLoop_=(x: FrameLoop): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameLoop")(x.asInstanceOf[js.Any])
+  inline def frameLoop_=(x: FrameLoop): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameLoop")(x.asInstanceOf[js.Any])
   
   @JSImport("@react-spring/shared/esm/globals", "now")
   @js.native
   def now: js.Function0[Double] = js.native
-  @scala.inline
-  def now_=(x: js.Function0[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("now")(x.asInstanceOf[js.Any])
+  inline def now_=(x: js.Function0[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("now")(x.asInstanceOf[js.Any])
   
   @JSImport("@react-spring/shared/esm/globals", "requestAnimationFrame")
   @js.native
   def requestAnimationFrame: js.Function1[/* cb */ js.Function1[/* time */ Double, Unit], Unit] = js.native
-  @scala.inline
-  def requestAnimationFrame_=(x: js.Function1[/* cb */ js.Function1[/* time */ Double, Unit], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestAnimationFrame")(x.asInstanceOf[js.Any])
+  inline def requestAnimationFrame_=(x: js.Function1[/* cb */ js.Function1[/* time */ Double, Unit], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestAnimationFrame")(x.asInstanceOf[js.Any])
   
   @JSImport("@react-spring/shared/esm/globals", "skipAnimation")
   @js.native
   def skipAnimation: Boolean = js.native
-  @scala.inline
-  def skipAnimation_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("skipAnimation")(x.asInstanceOf[js.Any])
+  inline def skipAnimation_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("skipAnimation")(x.asInstanceOf[js.Any])
   
   @JSImport("@react-spring/shared/esm/globals", "to")
   @js.native
@@ -70,8 +62,7 @@ object esmGlobalsMod {
     /* args */ InterpolatorArgs[js.Any, js.Any], 
     FluidValue[js.Any, js.Any]
   ] = js.native
-  @scala.inline
-  def to_=(
+  inline def to_=(
     x: js.Function2[
       /* source */ OneOrMore[FluidValue[js.Any, js.Any]], 
       /* args */ InterpolatorArgs[js.Any, js.Any], 
@@ -82,8 +73,7 @@ object esmGlobalsMod {
   @JSImport("@react-spring/shared/esm/globals", "willAdvance")
   @js.native
   def willAdvance: js.Function1[/* animations */ js.Array[OpaqueAnimation], Unit] = js.native
-  @scala.inline
-  def willAdvance_=(x: js.Function1[/* animations */ js.Array[OpaqueAnimation], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("willAdvance")(x.asInstanceOf[js.Any])
+  inline def willAdvance_=(x: js.Function1[/* animations */ js.Array[OpaqueAnimation], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("willAdvance")(x.asInstanceOf[js.Any])
   
   trait AnimatedGlobals extends StObject {
     
@@ -118,71 +108,50 @@ object esmGlobalsMod {
   }
   object AnimatedGlobals {
     
-    @scala.inline
-    def apply(): AnimatedGlobals = {
+    inline def apply(): AnimatedGlobals = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnimatedGlobals]
     }
     
-    @scala.inline
-    implicit class AnimatedGlobalsMutableBuilder[Self <: AnimatedGlobals] (val x: Self) extends AnyVal {
+    extension [Self <: AnimatedGlobals](x: Self) {
       
-      @scala.inline
-      def setBatchedUpdates(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "batchedUpdates", js.Any.fromFunction1(value))
+      inline def setBatchedUpdates(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "batchedUpdates", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBatchedUpdatesUndefined: Self = StObject.set(x, "batchedUpdates", js.undefined)
+      inline def setBatchedUpdatesUndefined: Self = StObject.set(x, "batchedUpdates", js.undefined)
       
-      @scala.inline
-      def setColorNames(value: StringDictionary[Double]): Self = StObject.set(x, "colorNames", value.asInstanceOf[js.Any])
+      inline def setColorNames(value: StringDictionary[Double]): Self = StObject.set(x, "colorNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorNamesNull: Self = StObject.set(x, "colorNames", null)
+      inline def setColorNamesNull: Self = StObject.set(x, "colorNames", null)
       
-      @scala.inline
-      def setColorNamesUndefined: Self = StObject.set(x, "colorNames", js.undefined)
+      inline def setColorNamesUndefined: Self = StObject.set(x, "colorNames", js.undefined)
       
-      @scala.inline
-      def setCreateStringInterpolator(value: /* config */ InterpolatorConfig[String] => js.Function1[/* input */ Double, String]): Self = StObject.set(x, "createStringInterpolator", js.Any.fromFunction1(value))
+      inline def setCreateStringInterpolator(value: /* config */ InterpolatorConfig[String] => js.Function1[/* input */ Double, String]): Self = StObject.set(x, "createStringInterpolator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateStringInterpolatorUndefined: Self = StObject.set(x, "createStringInterpolator", js.undefined)
+      inline def setCreateStringInterpolatorUndefined: Self = StObject.set(x, "createStringInterpolator", js.undefined)
       
-      @scala.inline
-      def setFrameLoop(value: FrameLoop): Self = StObject.set(x, "frameLoop", value.asInstanceOf[js.Any])
+      inline def setFrameLoop(value: FrameLoop): Self = StObject.set(x, "frameLoop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameLoopUndefined: Self = StObject.set(x, "frameLoop", js.undefined)
+      inline def setFrameLoopUndefined: Self = StObject.set(x, "frameLoop", js.undefined)
       
-      @scala.inline
-      def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
+      inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
       
-      @scala.inline
-      def setRequestAnimationFrame(value: /* cb */ js.Function1[/* time */ Double, Unit] => Unit): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
+      inline def setRequestAnimationFrame(value: /* cb */ js.Function1[/* time */ Double, Unit] => Unit): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestAnimationFrameUndefined: Self = StObject.set(x, "requestAnimationFrame", js.undefined)
+      inline def setRequestAnimationFrameUndefined: Self = StObject.set(x, "requestAnimationFrame", js.undefined)
       
-      @scala.inline
-      def setSkipAnimation(value: Boolean): Self = StObject.set(x, "skipAnimation", value.asInstanceOf[js.Any])
+      inline def setSkipAnimation(value: Boolean): Self = StObject.set(x, "skipAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipAnimationUndefined: Self = StObject.set(x, "skipAnimation", js.undefined)
+      inline def setSkipAnimationUndefined: Self = StObject.set(x, "skipAnimation", js.undefined)
       
-      @scala.inline
-      def setTo(value: FnCallSourceArgs): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: FnCallSourceArgs): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
-      @scala.inline
-      def setWillAdvance(value: /* animations */ js.Array[OpaqueAnimation] => Unit): Self = StObject.set(x, "willAdvance", js.Any.fromFunction1(value))
+      inline def setWillAdvance(value: /* animations */ js.Array[OpaqueAnimation] => Unit): Self = StObject.set(x, "willAdvance", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWillAdvanceUndefined: Self = StObject.set(x, "willAdvance", js.undefined)
+      inline def setWillAdvanceUndefined: Self = StObject.set(x, "willAdvance", js.undefined)
     }
   }
 }

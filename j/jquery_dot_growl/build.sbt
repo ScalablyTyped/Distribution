@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_growl"
-version := "1.3-dt-20200515Z-381997"
+version := "1.3-dt-20200515Z-bcb715"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

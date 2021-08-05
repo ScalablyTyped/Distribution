@@ -53,76 +53,53 @@ trait EnvelopesInformation extends StObject {
 }
 object EnvelopesInformation {
   
-  @scala.inline
-  def apply(): EnvelopesInformation = {
+  inline def apply(): EnvelopesInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopesInformation]
   }
   
-  @scala.inline
-  implicit class EnvelopesInformationMutableBuilder[Self <: EnvelopesInformation] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopesInformation](x: Self) {
     
-    @scala.inline
-    def setContinuationToken(value: String): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
+    inline def setContinuationToken(value: String): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuationTokenUndefined: Self = StObject.set(x, "continuationToken", js.undefined)
+    inline def setContinuationTokenUndefined: Self = StObject.set(x, "continuationToken", js.undefined)
     
-    @scala.inline
-    def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+    inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
+    inline def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
-    @scala.inline
-    def setEnvelopeTransactionStatuses(value: js.Array[EnvelopeTransactionStatus]): Self = StObject.set(x, "envelopeTransactionStatuses", value.asInstanceOf[js.Any])
+    inline def setEnvelopeTransactionStatuses(value: js.Array[EnvelopeTransactionStatus]): Self = StObject.set(x, "envelopeTransactionStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeTransactionStatusesUndefined: Self = StObject.set(x, "envelopeTransactionStatuses", js.undefined)
+    inline def setEnvelopeTransactionStatusesUndefined: Self = StObject.set(x, "envelopeTransactionStatuses", js.undefined)
     
-    @scala.inline
-    def setEnvelopeTransactionStatusesVarargs(value: EnvelopeTransactionStatus*): Self = StObject.set(x, "envelopeTransactionStatuses", js.Array(value :_*))
+    inline def setEnvelopeTransactionStatusesVarargs(value: EnvelopeTransactionStatus*): Self = StObject.set(x, "envelopeTransactionStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvelopes(value: js.Array[Envelope]): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
+    inline def setEnvelopes(value: js.Array[Envelope]): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopesUndefined: Self = StObject.set(x, "envelopes", js.undefined)
+    inline def setEnvelopesUndefined: Self = StObject.set(x, "envelopes", js.undefined)
     
-    @scala.inline
-    def setEnvelopesVarargs(value: Envelope*): Self = StObject.set(x, "envelopes", js.Array(value :_*))
+    inline def setEnvelopesVarargs(value: Envelope*): Self = StObject.set(x, "envelopes", js.Array(value :_*))
     
-    @scala.inline
-    def setFolders(value: js.Array[/* This object contains details about a folder. */ Folder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
+    inline def setFolders(value: js.Array[/* This object contains details about a folder. */ Folder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
+    inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
-    @scala.inline
-    def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = StObject.set(x, "folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = StObject.set(x, "folders", js.Array(value :_*))
     
-    @scala.inline
-    def setLastQueriedDateTime(value: String): Self = StObject.set(x, "lastQueriedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastQueriedDateTime(value: String): Self = StObject.set(x, "lastQueriedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastQueriedDateTimeUndefined: Self = StObject.set(x, "lastQueriedDateTime", js.undefined)
+    inline def setLastQueriedDateTimeUndefined: Self = StObject.set(x, "lastQueriedDateTime", js.undefined)
     
-    @scala.inline
-    def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
+    inline def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
+    inline def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
     
-    @scala.inline
-    def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
+    inline def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
-    @scala.inline
-    def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
+    inline def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
+    inline def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
   }
 }

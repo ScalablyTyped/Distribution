@@ -12,19 +12,15 @@ trait WEBGLLoseContext extends StObject {
 }
 object WEBGLLoseContext {
   
-  @scala.inline
-  def apply(loseContext: () => Unit, restoreContext: () => Unit): WEBGLLoseContext = {
+  inline def apply(loseContext: () => Unit, restoreContext: () => Unit): WEBGLLoseContext = {
     val __obj = js.Dynamic.literal(loseContext = js.Any.fromFunction0(loseContext), restoreContext = js.Any.fromFunction0(restoreContext))
     __obj.asInstanceOf[WEBGLLoseContext]
   }
   
-  @scala.inline
-  implicit class WEBGLLoseContextMutableBuilder[Self <: WEBGLLoseContext] (val x: Self) extends AnyVal {
+  extension [Self <: WEBGLLoseContext](x: Self) {
     
-    @scala.inline
-    def setLoseContext(value: () => Unit): Self = StObject.set(x, "loseContext", js.Any.fromFunction0(value))
+    inline def setLoseContext(value: () => Unit): Self = StObject.set(x, "loseContext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRestoreContext(value: () => Unit): Self = StObject.set(x, "restoreContext", js.Any.fromFunction0(value))
+    inline def setRestoreContext(value: () => Unit): Self = StObject.set(x, "restoreContext", js.Any.fromFunction0(value))
   }
 }

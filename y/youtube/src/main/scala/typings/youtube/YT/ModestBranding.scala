@@ -16,12 +16,10 @@ object ModestBranding {
   /**
     * Player will contain full YouTube branding.
     */
-  @scala.inline
-  def Full: `0` = 0.asInstanceOf[`0`]
+  inline def Full: `0` = 0.asInstanceOf[`0`]
   
   /**
     * YouTube logo will not display in the control bar.
     */
-  @scala.inline
-  def Modest: `1` = 1.asInstanceOf[`1`]
+  inline def Modest: `1` = 1.asInstanceOf[`1`]
 }

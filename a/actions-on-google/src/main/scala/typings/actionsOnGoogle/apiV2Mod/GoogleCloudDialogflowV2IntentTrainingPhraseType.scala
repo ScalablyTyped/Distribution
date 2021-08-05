@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleCloudDialogflowV2IntentTrainingPhraseType extends StObject
 object GoogleCloudDialogflowV2IntentTrainingPhraseType {
   
-  @scala.inline
-  def EXAMPLE: typings.actionsOnGoogle.actionsOnGoogleStrings.EXAMPLE = "EXAMPLE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EXAMPLE]
+  inline def EXAMPLE: typings.actionsOnGoogle.actionsOnGoogleStrings.EXAMPLE = "EXAMPLE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EXAMPLE]
   
-  @scala.inline
-  def TEMPLATE: typings.actionsOnGoogle.actionsOnGoogleStrings.TEMPLATE = "TEMPLATE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TEMPLATE]
+  inline def TEMPLATE: typings.actionsOnGoogle.actionsOnGoogleStrings.TEMPLATE = "TEMPLATE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TEMPLATE]
   
-  @scala.inline
-  def TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED = "TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED]
+  inline def TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED = "TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED]
 }

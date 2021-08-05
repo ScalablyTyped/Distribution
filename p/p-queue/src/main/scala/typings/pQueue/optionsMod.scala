@@ -22,20 +22,16 @@ object optionsMod {
   }
   object DefaultAddOptions {
     
-    @scala.inline
-    def apply(): DefaultAddOptions = {
+    inline def apply(): DefaultAddOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultAddOptions]
     }
     
-    @scala.inline
-    implicit class DefaultAddOptionsMutableBuilder[Self <: DefaultAddOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultAddOptions](x: Self) {
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
   
@@ -92,62 +88,44 @@ object optionsMod {
   }
   object Options {
     
-    @scala.inline
-    def apply[QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */](): Options[QueueType, QueueOptions] = {
+    inline def apply[QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */](): Options[QueueType, QueueOptions] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[QueueType, QueueOptions]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?], QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */] (val x: Self & (Options[QueueType, QueueOptions])) extends AnyVal {
+    extension [Self <: Options[?, ?], QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */](x: Self & (Options[QueueType, QueueOptions])) {
       
-      @scala.inline
-      def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+      inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+      inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
       
-      @scala.inline
-      def setCarryoverConcurrencyCount(value: Boolean): Self = StObject.set(x, "carryoverConcurrencyCount", value.asInstanceOf[js.Any])
+      inline def setCarryoverConcurrencyCount(value: Boolean): Self = StObject.set(x, "carryoverConcurrencyCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCarryoverConcurrencyCountUndefined: Self = StObject.set(x, "carryoverConcurrencyCount", js.undefined)
+      inline def setCarryoverConcurrencyCountUndefined: Self = StObject.set(x, "carryoverConcurrencyCount", js.undefined)
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalCap(value: Double): Self = StObject.set(x, "intervalCap", value.asInstanceOf[js.Any])
+      inline def setIntervalCap(value: Double): Self = StObject.set(x, "intervalCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalCapUndefined: Self = StObject.set(x, "intervalCap", js.undefined)
+      inline def setIntervalCapUndefined: Self = StObject.set(x, "intervalCap", js.undefined)
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setQueueClass(value: Instantiable0[QueueType]): Self = StObject.set(x, "queueClass", value.asInstanceOf[js.Any])
+      inline def setQueueClass(value: Instantiable0[QueueType]): Self = StObject.set(x, "queueClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueClassUndefined: Self = StObject.set(x, "queueClass", js.undefined)
+      inline def setQueueClassUndefined: Self = StObject.set(x, "queueClass", js.undefined)
       
-      @scala.inline
-      def setThrowOnTimeout(value: Boolean): Self = StObject.set(x, "throwOnTimeout", value.asInstanceOf[js.Any])
+      inline def setThrowOnTimeout(value: Boolean): Self = StObject.set(x, "throwOnTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowOnTimeoutUndefined: Self = StObject.set(x, "throwOnTimeout", js.undefined)
+      inline def setThrowOnTimeoutUndefined: Self = StObject.set(x, "throwOnTimeout", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   

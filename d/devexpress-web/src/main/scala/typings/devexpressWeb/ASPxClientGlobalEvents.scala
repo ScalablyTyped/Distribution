@@ -41,8 +41,7 @@ trait ASPxClientGlobalEvents extends StObject {
 }
 object ASPxClientGlobalEvents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BeginCallback: ASPxClientEvent[ASPxClientGlobalBeginCallbackEventHandler[ASPxClientGlobalEvents]],
     BrowserWindowResized: ASPxClientEvent[ASPxClientEventHandler[ASPxClientGlobalEvents]],
     CallbackError: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[ASPxClientGlobalEvents]],
@@ -54,25 +53,18 @@ object ASPxClientGlobalEvents {
     __obj.asInstanceOf[ASPxClientGlobalEvents]
   }
   
-  @scala.inline
-  implicit class ASPxClientGlobalEventsMutableBuilder[Self <: ASPxClientGlobalEvents] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGlobalEvents](x: Self) {
     
-    @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientGlobalBeginCallbackEventHandler[ASPxClientGlobalEvents]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: ASPxClientEvent[ASPxClientGlobalBeginCallbackEventHandler[ASPxClientGlobalEvents]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserWindowResized(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientGlobalEvents]]): Self = StObject.set(x, "BrowserWindowResized", value.asInstanceOf[js.Any])
+    inline def setBrowserWindowResized(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientGlobalEvents]]): Self = StObject.set(x, "BrowserWindowResized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[ASPxClientGlobalEvents]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
+    inline def setCallbackError(value: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[ASPxClientGlobalEvents]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlsInitialized(value: ASPxClientEvent[ASPxClientControlsInitializedEventHandler[ASPxClientGlobalEvents]]): Self = StObject.set(x, "ControlsInitialized", value.asInstanceOf[js.Any])
+    inline def setControlsInitialized(value: ASPxClientEvent[ASPxClientControlsInitializedEventHandler[ASPxClientGlobalEvents]]): Self = StObject.set(x, "ControlsInitialized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[ASPxClientGlobalEvents]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
+    inline def setEndCallback(value: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[ASPxClientGlobalEvents]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationCompleted(value: ASPxClientEvent[ASPxClientValidationCompletedEventHandler[ASPxClientGlobalEvents]]): Self = StObject.set(x, "ValidationCompleted", value.asInstanceOf[js.Any])
+    inline def setValidationCompleted(value: ASPxClientEvent[ASPxClientValidationCompletedEventHandler[ASPxClientGlobalEvents]]): Self = StObject.set(x, "ValidationCompleted", value.asInstanceOf[js.Any])
   }
 }

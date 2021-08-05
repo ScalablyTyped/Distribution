@@ -54,8 +54,7 @@ object mailComposerMod {
   }
   object MailComposer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compile: () => typings.nodemailer.mimeNodeMod.^,
       getAlternatives: () => js.Array[Attachment],
       getAttachments: Boolean => js.Array[Attachment],
@@ -66,23 +65,17 @@ object mailComposerMod {
       __obj.asInstanceOf[MailComposer]
     }
     
-    @scala.inline
-    implicit class MailComposerMutableBuilder[Self <: MailComposer] (val x: Self) extends AnyVal {
+    extension [Self <: MailComposer](x: Self) {
       
-      @scala.inline
-      def setCompile(value: () => typings.nodemailer.mimeNodeMod.^): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
+      inline def setCompile(value: () => typings.nodemailer.mimeNodeMod.^): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAlternatives(value: () => js.Array[Attachment]): Self = StObject.set(x, "getAlternatives", js.Any.fromFunction0(value))
+      inline def setGetAlternatives(value: () => js.Array[Attachment]): Self = StObject.set(x, "getAlternatives", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAttachments(value: Boolean => js.Array[Attachment]): Self = StObject.set(x, "getAttachments", js.Any.fromFunction1(value))
+      inline def setGetAttachments(value: Boolean => js.Array[Attachment]): Self = StObject.set(x, "getAttachments", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMail(value: Options): Self = StObject.set(x, "mail", value.asInstanceOf[js.Any])
+      inline def setMail(value: Options): Self = StObject.set(x, "mail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: typings.nodemailer.mimeNodeMod.^ | `false`): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: typings.nodemailer.mimeNodeMod.^ | `false`): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -16,16 +16,13 @@ trait ASPxClientHtmlEditorCommandArguments extends StObject {
 }
 object ASPxClientHtmlEditorCommandArguments {
   
-  @scala.inline
-  def apply(selectedElement: js.Any): ASPxClientHtmlEditorCommandArguments = {
+  inline def apply(selectedElement: js.Any): ASPxClientHtmlEditorCommandArguments = {
     val __obj = js.Dynamic.literal(selectedElement = selectedElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorCommandArguments]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorCommandArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorCommandArguments](x: Self) {
     
-    @scala.inline
-    def setSelectedElement(value: js.Any): Self = StObject.set(x, "selectedElement", value.asInstanceOf[js.Any])
+    inline def setSelectedElement(value: js.Any): Self = StObject.set(x, "selectedElement", value.asInstanceOf[js.Any])
   }
 }

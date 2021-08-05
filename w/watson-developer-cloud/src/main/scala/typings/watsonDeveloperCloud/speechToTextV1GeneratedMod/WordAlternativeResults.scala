@@ -18,25 +18,19 @@ trait WordAlternativeResults extends StObject {
 }
 object WordAlternativeResults {
   
-  @scala.inline
-  def apply(alternatives: js.Array[WordAlternativeResult], end_time: Double, start_time: Double): WordAlternativeResults = {
+  inline def apply(alternatives: js.Array[WordAlternativeResult], end_time: Double, start_time: Double): WordAlternativeResults = {
     val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end_time = end_time.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any])
     __obj.asInstanceOf[WordAlternativeResults]
   }
   
-  @scala.inline
-  implicit class WordAlternativeResultsMutableBuilder[Self <: WordAlternativeResults] (val x: Self) extends AnyVal {
+  extension [Self <: WordAlternativeResults](x: Self) {
     
-    @scala.inline
-    def setAlternatives(value: js.Array[WordAlternativeResult]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
+    inline def setAlternatives(value: js.Array[WordAlternativeResult]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativesVarargs(value: WordAlternativeResult*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+    inline def setAlternativesVarargs(value: WordAlternativeResult*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
     
-    @scala.inline
-    def setEnd_time(value: Double): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
+    inline def setEnd_time(value: Double): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_time(value: Double): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
+    inline def setStart_time(value: Double): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
   }
 }

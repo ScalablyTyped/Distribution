@@ -43,58 +43,41 @@ trait EmailMessage extends StObject {
 }
 object EmailMessage {
   
-  @scala.inline
-  def apply(): EmailMessage = {
+  inline def apply(): EmailMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmailMessage]
   }
   
-  @scala.inline
-  implicit class EmailMessageMutableBuilder[Self <: EmailMessage] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMessage](x: Self) {
     
-    @scala.inline
-    def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
-    @scala.inline
-    def setFeedbackForwardingAddress(value: string): Self = StObject.set(x, "FeedbackForwardingAddress", value.asInstanceOf[js.Any])
+    inline def setFeedbackForwardingAddress(value: string): Self = StObject.set(x, "FeedbackForwardingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackForwardingAddressUndefined: Self = StObject.set(x, "FeedbackForwardingAddress", js.undefined)
+    inline def setFeedbackForwardingAddressUndefined: Self = StObject.set(x, "FeedbackForwardingAddress", js.undefined)
     
-    @scala.inline
-    def setFromAddress(value: string): Self = StObject.set(x, "FromAddress", value.asInstanceOf[js.Any])
+    inline def setFromAddress(value: string): Self = StObject.set(x, "FromAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromAddressUndefined: Self = StObject.set(x, "FromAddress", js.undefined)
+    inline def setFromAddressUndefined: Self = StObject.set(x, "FromAddress", js.undefined)
     
-    @scala.inline
-    def setRawEmail(value: RawEmail): Self = StObject.set(x, "RawEmail", value.asInstanceOf[js.Any])
+    inline def setRawEmail(value: RawEmail): Self = StObject.set(x, "RawEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawEmailUndefined: Self = StObject.set(x, "RawEmail", js.undefined)
+    inline def setRawEmailUndefined: Self = StObject.set(x, "RawEmail", js.undefined)
     
-    @scala.inline
-    def setReplyToAddresses(value: ListOfString): Self = StObject.set(x, "ReplyToAddresses", value.asInstanceOf[js.Any])
+    inline def setReplyToAddresses(value: ListOfString): Self = StObject.set(x, "ReplyToAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
+    inline def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
     
-    @scala.inline
-    def setReplyToAddressesVarargs(value: string*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
+    inline def setReplyToAddressesVarargs(value: string*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setSimpleEmail(value: SimpleEmail): Self = StObject.set(x, "SimpleEmail", value.asInstanceOf[js.Any])
+    inline def setSimpleEmail(value: SimpleEmail): Self = StObject.set(x, "SimpleEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimpleEmailUndefined: Self = StObject.set(x, "SimpleEmail", js.undefined)
+    inline def setSimpleEmailUndefined: Self = StObject.set(x, "SimpleEmail", js.undefined)
     
-    @scala.inline
-    def setSubstitutions(value: MapOfListOfString): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
+    inline def setSubstitutions(value: MapOfListOfString): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
+    inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
   }
 }

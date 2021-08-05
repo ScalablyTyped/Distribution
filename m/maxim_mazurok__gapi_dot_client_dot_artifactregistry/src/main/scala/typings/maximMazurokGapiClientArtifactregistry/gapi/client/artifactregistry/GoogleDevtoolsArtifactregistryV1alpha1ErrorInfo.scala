@@ -14,25 +14,19 @@ trait GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo extends StObject {
 }
 object GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo = {
+  inline def apply(): GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsArtifactregistryV1alpha1ErrorInfoMutableBuilder[Self <: GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo](x: Self) {
     
-    @scala.inline
-    def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setGcsSource(value: GoogleDevtoolsArtifactregistryV1alpha1GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
+    inline def setGcsSource(value: GoogleDevtoolsArtifactregistryV1alpha1GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
+    inline def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
   }
 }

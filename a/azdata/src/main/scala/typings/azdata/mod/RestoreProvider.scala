@@ -19,8 +19,7 @@ trait RestoreProvider
 }
 object RestoreProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancelRestorePlan: (String, RestoreInfo) => Thenable[Boolean],
     getRestoreConfigInfo: String => Thenable[RestoreConfigInfo],
     getRestorePlan: (String, RestoreInfo) => Thenable[RestorePlanResponse],
@@ -31,19 +30,14 @@ object RestoreProvider {
     __obj.asInstanceOf[RestoreProvider]
   }
   
-  @scala.inline
-  implicit class RestoreProviderMutableBuilder[Self <: RestoreProvider] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreProvider](x: Self) {
     
-    @scala.inline
-    def setCancelRestorePlan(value: (String, RestoreInfo) => Thenable[Boolean]): Self = StObject.set(x, "cancelRestorePlan", js.Any.fromFunction2(value))
+    inline def setCancelRestorePlan(value: (String, RestoreInfo) => Thenable[Boolean]): Self = StObject.set(x, "cancelRestorePlan", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetRestoreConfigInfo(value: String => Thenable[RestoreConfigInfo]): Self = StObject.set(x, "getRestoreConfigInfo", js.Any.fromFunction1(value))
+    inline def setGetRestoreConfigInfo(value: String => Thenable[RestoreConfigInfo]): Self = StObject.set(x, "getRestoreConfigInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRestorePlan(value: (String, RestoreInfo) => Thenable[RestorePlanResponse]): Self = StObject.set(x, "getRestorePlan", js.Any.fromFunction2(value))
+    inline def setGetRestorePlan(value: (String, RestoreInfo) => Thenable[RestorePlanResponse]): Self = StObject.set(x, "getRestorePlan", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRestore(value: (String, RestoreInfo) => Thenable[RestoreResponse]): Self = StObject.set(x, "restore", js.Any.fromFunction2(value))
+    inline def setRestore(value: (String, RestoreInfo) => Thenable[RestoreResponse]): Self = StObject.set(x, "restore", js.Any.fromFunction2(value))
   }
 }

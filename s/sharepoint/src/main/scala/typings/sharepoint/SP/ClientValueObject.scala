@@ -18,8 +18,7 @@ trait ClientValueObject extends StObject {
 }
 object ClientValueObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -30,22 +29,16 @@ object ClientValueObject {
     __obj.asInstanceOf[ClientValueObject]
   }
   
-  @scala.inline
-  implicit class ClientValueObjectMutableBuilder[Self <: ClientValueObject] (val x: Self) extends AnyVal {
+  extension [Self <: ClientValueObject](x: Self) {
     
-    @scala.inline
-    def setCustomFromJson(value: js.Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
+    inline def setCustomFromJson(value: js.Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomWriteToXml(value: (XmlWriter, SerializationContext) => Boolean): Self = StObject.set(x, "customWriteToXml", js.Any.fromFunction2(value))
+    inline def setCustomWriteToXml(value: (XmlWriter, SerializationContext) => Boolean): Self = StObject.set(x, "customWriteToXml", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFromJson(value: js.Any => Unit): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
+    inline def setFromJson(value: js.Any => Unit): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet_typeId(value: () => String): Self = StObject.set(x, "get_typeId", js.Any.fromFunction0(value))
+    inline def setGet_typeId(value: () => String): Self = StObject.set(x, "get_typeId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWriteToXml(value: (XmlWriter, SerializationContext) => Unit): Self = StObject.set(x, "writeToXml", js.Any.fromFunction2(value))
+    inline def setWriteToXml(value: (XmlWriter, SerializationContext) => Unit): Self = StObject.set(x, "writeToXml", js.Any.fromFunction2(value))
   }
 }

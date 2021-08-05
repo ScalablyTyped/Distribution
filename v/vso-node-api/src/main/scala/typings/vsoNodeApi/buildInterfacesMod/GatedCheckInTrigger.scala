@@ -22,8 +22,7 @@ trait GatedCheckInTrigger
 }
 object GatedCheckInTrigger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     pathFilters: js.Array[String],
     runContinuousIntegration: Boolean,
     triggerType: DefinitionTriggerType,
@@ -33,19 +32,14 @@ object GatedCheckInTrigger {
     __obj.asInstanceOf[GatedCheckInTrigger]
   }
   
-  @scala.inline
-  implicit class GatedCheckInTriggerMutableBuilder[Self <: GatedCheckInTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: GatedCheckInTrigger](x: Self) {
     
-    @scala.inline
-    def setPathFilters(value: js.Array[String]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
+    inline def setPathFilters(value: js.Array[String]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathFiltersVarargs(value: String*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
+    inline def setPathFiltersVarargs(value: String*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setRunContinuousIntegration(value: Boolean): Self = StObject.set(x, "runContinuousIntegration", value.asInstanceOf[js.Any])
+    inline def setRunContinuousIntegration(value: Boolean): Self = StObject.set(x, "runContinuousIntegration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseWorkspaceMappings(value: Boolean): Self = StObject.set(x, "useWorkspaceMappings", value.asInstanceOf[js.Any])
+    inline def setUseWorkspaceMappings(value: Boolean): Self = StObject.set(x, "useWorkspaceMappings", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait ActionParameter extends StObject {
 }
 object ActionParameter {
   
-  @scala.inline
-  def apply(): ActionParameter = {
+  inline def apply(): ActionParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionParameter]
   }
   
-  @scala.inline
-  implicit class ActionParameterMutableBuilder[Self <: ActionParameter] (val x: Self) extends AnyVal {
+  extension [Self <: ActionParameter](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

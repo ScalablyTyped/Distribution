@@ -22,8 +22,7 @@ trait ExtraLeftPx_ extends StObject {
 }
 object ExtraLeftPx_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extraLeftPx: Double,
     extraRightPx: Double,
     left_shift: Double,
@@ -36,28 +35,20 @@ object ExtraLeftPx_ {
     __obj.asInstanceOf[ExtraLeftPx_]
   }
   
-  @scala.inline
-  implicit class ExtraLeftPx_MutableBuilder[Self <: ExtraLeftPx_] (val x: Self) extends AnyVal {
+  extension [Self <: ExtraLeftPx_](x: Self) {
     
-    @scala.inline
-    def setExtraLeftPx(value: Double): Self = StObject.set(x, "extraLeftPx", value.asInstanceOf[js.Any])
+    inline def setExtraLeftPx(value: Double): Self = StObject.set(x, "extraLeftPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraRightPx(value: Double): Self = StObject.set(x, "extraRightPx", value.asInstanceOf[js.Any])
+    inline def setExtraRightPx(value: Double): Self = StObject.set(x, "extraRightPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft_shift(value: Double): Self = StObject.set(x, "left_shift", value.asInstanceOf[js.Any])
+    inline def setLeft_shift(value: Double): Self = StObject.set(x, "left_shift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModLeftPx(value: Double): Self = StObject.set(x, "modLeftPx", value.asInstanceOf[js.Any])
+    inline def setModLeftPx(value: Double): Self = StObject.set(x, "modLeftPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModRightPx(value: Double): Self = StObject.set(x, "modRightPx", value.asInstanceOf[js.Any])
+    inline def setModRightPx(value: Double): Self = StObject.set(x, "modRightPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteWidth(value: Double): Self = StObject.set(x, "noteWidth", value.asInstanceOf[js.Any])
+    inline def setNoteWidth(value: Double): Self = StObject.set(x, "noteWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

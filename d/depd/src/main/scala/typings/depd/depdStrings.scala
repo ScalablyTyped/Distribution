@@ -8,11 +8,9 @@ object depdStrings {
   
   @js.native
   sealed trait DeprecationError extends StObject
-  @scala.inline
-  def DeprecationError: DeprecationError = "DeprecationError".asInstanceOf[DeprecationError]
+  inline def DeprecationError: DeprecationError = "DeprecationError".asInstanceOf[DeprecationError]
   
   @js.native
   sealed trait deprecation extends StObject
-  @scala.inline
-  def deprecation: deprecation = "deprecation".asInstanceOf[deprecation]
+  inline def deprecation: deprecation = "deprecation".asInstanceOf[deprecation]
 }

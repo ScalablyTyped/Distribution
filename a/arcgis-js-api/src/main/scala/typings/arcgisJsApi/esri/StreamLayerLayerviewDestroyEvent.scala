@@ -12,19 +12,15 @@ trait StreamLayerLayerviewDestroyEvent extends StObject {
 }
 object StreamLayerLayerviewDestroyEvent {
   
-  @scala.inline
-  def apply(layerView: LayerView, view: View): StreamLayerLayerviewDestroyEvent = {
+  inline def apply(layerView: LayerView, view: View): StreamLayerLayerviewDestroyEvent = {
     val __obj = js.Dynamic.literal(layerView = layerView.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamLayerLayerviewDestroyEvent]
   }
   
-  @scala.inline
-  implicit class StreamLayerLayerviewDestroyEventMutableBuilder[Self <: StreamLayerLayerviewDestroyEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StreamLayerLayerviewDestroyEvent](x: Self) {
     
-    @scala.inline
-    def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
+    inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

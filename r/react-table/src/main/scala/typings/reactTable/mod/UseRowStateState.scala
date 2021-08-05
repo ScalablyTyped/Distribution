@@ -12,16 +12,13 @@ trait UseRowStateState[D /* <: js.Object */] extends StObject {
 }
 object UseRowStateState {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](rowState: Record[String, CellState[D]]): UseRowStateState[D] = {
+  inline def apply[D /* <: js.Object */](rowState: Record[String, CellState[D]]): UseRowStateState[D] = {
     val __obj = js.Dynamic.literal(rowState = rowState.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseRowStateState[D]]
   }
   
-  @scala.inline
-  implicit class UseRowStateStateMutableBuilder[Self <: UseRowStateState[?], D /* <: js.Object */] (val x: Self & UseRowStateState[D]) extends AnyVal {
+  extension [Self <: UseRowStateState[?], D /* <: js.Object */](x: Self & UseRowStateState[D]) {
     
-    @scala.inline
-    def setRowState(value: Record[String, CellState[D]]): Self = StObject.set(x, "rowState", value.asInstanceOf[js.Any])
+    inline def setRowState(value: Record[String, CellState[D]]): Self = StObject.set(x, "rowState", value.asInstanceOf[js.Any])
   }
 }

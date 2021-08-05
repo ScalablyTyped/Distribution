@@ -18,28 +18,21 @@ trait DescribeLDAPSSettingsResult extends StObject {
 }
 object DescribeLDAPSSettingsResult {
   
-  @scala.inline
-  def apply(): DescribeLDAPSSettingsResult = {
+  inline def apply(): DescribeLDAPSSettingsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLDAPSSettingsResult]
   }
   
-  @scala.inline
-  implicit class DescribeLDAPSSettingsResultMutableBuilder[Self <: DescribeLDAPSSettingsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLDAPSSettingsResult](x: Self) {
     
-    @scala.inline
-    def setLDAPSSettingsInfo(value: LDAPSSettingsInfo): Self = StObject.set(x, "LDAPSSettingsInfo", value.asInstanceOf[js.Any])
+    inline def setLDAPSSettingsInfo(value: LDAPSSettingsInfo): Self = StObject.set(x, "LDAPSSettingsInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLDAPSSettingsInfoUndefined: Self = StObject.set(x, "LDAPSSettingsInfo", js.undefined)
+    inline def setLDAPSSettingsInfoUndefined: Self = StObject.set(x, "LDAPSSettingsInfo", js.undefined)
     
-    @scala.inline
-    def setLDAPSSettingsInfoVarargs(value: LDAPSSettingInfo*): Self = StObject.set(x, "LDAPSSettingsInfo", js.Array(value :_*))
+    inline def setLDAPSSettingsInfoVarargs(value: LDAPSSettingInfo*): Self = StObject.set(x, "LDAPSSettingsInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

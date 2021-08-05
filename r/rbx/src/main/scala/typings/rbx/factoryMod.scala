@@ -25,8 +25,7 @@ object factoryMod {
   @js.native
   val makePropTypesFactory: MakePropTypesFactoryFunction = js.native
   
-  @scala.inline
-  def makeRootValidatingTransformFactory[T /* <: js.Array[MakeValidatingTransformFunction[js.Any, js.Any]] */](
+  inline def makeRootValidatingTransformFactory[T /* <: js.Array[MakeValidatingTransformFunction[js.Any, js.Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param mvtfs because its type T is not an array type */ mvtfs: T
   ): js.Function1[
     /* variables */ PartialVariablesDefinitio, 
@@ -82,8 +81,7 @@ object factoryMod {
     ]
   ]]
   
-  @scala.inline
-  def makeValidatingTransformFactory[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */](
+  inline def makeValidatingTransformFactory[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */](
     makePropTypesFunc: MakePropTypesFunction,
     transformFunc: TransformFunction[TTransformProps, TNewProps]
   ): MakeValidatingTransformFunction[TTransformProps, TNewProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeValidatingTransformFactory")(makePropTypesFunc.asInstanceOf[js.Any], transformFunc.asInstanceOf[js.Any])).asInstanceOf[MakeValidatingTransformFunction[TTransformProps, TNewProps]]

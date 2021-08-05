@@ -16,20 +16,16 @@ trait RestElement
 }
 object RestElement {
   
-  @scala.inline
-  def apply(argument: Pattern): RestElement = {
+  inline def apply(argument: Pattern): RestElement = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("RestElement")
     __obj.asInstanceOf[RestElement]
   }
   
-  @scala.inline
-  implicit class RestElementMutableBuilder[Self <: RestElement] (val x: Self) extends AnyVal {
+  extension [Self <: RestElement](x: Self) {
     
-    @scala.inline
-    def setArgument(value: Pattern): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Pattern): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.RestElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.RestElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

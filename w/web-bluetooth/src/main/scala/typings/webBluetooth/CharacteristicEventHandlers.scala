@@ -11,16 +11,13 @@ trait CharacteristicEventHandlers extends StObject {
 }
 object CharacteristicEventHandlers {
   
-  @scala.inline
-  def apply(oncharacteristicvaluechanged: Event => js.Any): CharacteristicEventHandlers = {
+  inline def apply(oncharacteristicvaluechanged: Event => js.Any): CharacteristicEventHandlers = {
     val __obj = js.Dynamic.literal(oncharacteristicvaluechanged = js.Any.fromFunction1(oncharacteristicvaluechanged))
     __obj.asInstanceOf[CharacteristicEventHandlers]
   }
   
-  @scala.inline
-  implicit class CharacteristicEventHandlersMutableBuilder[Self <: CharacteristicEventHandlers] (val x: Self) extends AnyVal {
+  extension [Self <: CharacteristicEventHandlers](x: Self) {
     
-    @scala.inline
-    def setOncharacteristicvaluechanged(value: Event => js.Any): Self = StObject.set(x, "oncharacteristicvaluechanged", js.Any.fromFunction1(value))
+    inline def setOncharacteristicvaluechanged(value: Event => js.Any): Self = StObject.set(x, "oncharacteristicvaluechanged", js.Any.fromFunction1(value))
   }
 }

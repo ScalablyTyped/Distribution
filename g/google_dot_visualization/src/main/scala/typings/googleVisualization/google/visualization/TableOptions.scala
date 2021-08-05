@@ -46,115 +46,79 @@ trait TableOptions extends StObject {
 }
 object TableOptions {
   
-  @scala.inline
-  def apply(): TableOptions = {
+  inline def apply(): TableOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableOptions]
   }
   
-  @scala.inline
-  implicit class TableOptionsMutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TableOptions](x: Self) {
     
-    @scala.inline
-    def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
+    inline def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowHtmlUndefined: Self = StObject.set(x, "allowHtml", js.undefined)
+    inline def setAllowHtmlUndefined: Self = StObject.set(x, "allowHtml", js.undefined)
     
-    @scala.inline
-    def setAlternatingRowStyle(value: Boolean): Self = StObject.set(x, "alternatingRowStyle", value.asInstanceOf[js.Any])
+    inline def setAlternatingRowStyle(value: Boolean): Self = StObject.set(x, "alternatingRowStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternatingRowStyleUndefined: Self = StObject.set(x, "alternatingRowStyle", js.undefined)
+    inline def setAlternatingRowStyleUndefined: Self = StObject.set(x, "alternatingRowStyle", js.undefined)
     
-    @scala.inline
-    def setCssClassNames(value: CssClassNames): Self = StObject.set(x, "cssClassNames", value.asInstanceOf[js.Any])
+    inline def setCssClassNames(value: CssClassNames): Self = StObject.set(x, "cssClassNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassNamesUndefined: Self = StObject.set(x, "cssClassNames", js.undefined)
+    inline def setCssClassNamesUndefined: Self = StObject.set(x, "cssClassNames", js.undefined)
     
-    @scala.inline
-    def setFirstRowNumber(value: Double): Self = StObject.set(x, "firstRowNumber", value.asInstanceOf[js.Any])
+    inline def setFirstRowNumber(value: Double): Self = StObject.set(x, "firstRowNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstRowNumberUndefined: Self = StObject.set(x, "firstRowNumber", js.undefined)
+    inline def setFirstRowNumberUndefined: Self = StObject.set(x, "firstRowNumber", js.undefined)
     
-    @scala.inline
-    def setFrozenColumns(value: Double): Self = StObject.set(x, "frozenColumns", value.asInstanceOf[js.Any])
+    inline def setFrozenColumns(value: Double): Self = StObject.set(x, "frozenColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrozenColumnsUndefined: Self = StObject.set(x, "frozenColumns", js.undefined)
+    inline def setFrozenColumnsUndefined: Self = StObject.set(x, "frozenColumns", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPagingButtons(value: Double | both | prev | next | auto): Self = StObject.set(x, "pagingButtons", value.asInstanceOf[js.Any])
+    inline def setPagingButtons(value: Double | both | prev | next | auto): Self = StObject.set(x, "pagingButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagingButtonsUndefined: Self = StObject.set(x, "pagingButtons", js.undefined)
+    inline def setPagingButtonsUndefined: Self = StObject.set(x, "pagingButtons", js.undefined)
     
-    @scala.inline
-    def setRtlTable(value: Boolean): Self = StObject.set(x, "rtlTable", value.asInstanceOf[js.Any])
+    inline def setRtlTable(value: Boolean): Self = StObject.set(x, "rtlTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtlTableUndefined: Self = StObject.set(x, "rtlTable", js.undefined)
+    inline def setRtlTableUndefined: Self = StObject.set(x, "rtlTable", js.undefined)
     
-    @scala.inline
-    def setScrollLeftStartPosition(value: Double): Self = StObject.set(x, "scrollLeftStartPosition", value.asInstanceOf[js.Any])
+    inline def setScrollLeftStartPosition(value: Double): Self = StObject.set(x, "scrollLeftStartPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeftStartPositionUndefined: Self = StObject.set(x, "scrollLeftStartPosition", js.undefined)
+    inline def setScrollLeftStartPositionUndefined: Self = StObject.set(x, "scrollLeftStartPosition", js.undefined)
     
-    @scala.inline
-    def setShowRowNumber(value: Boolean): Self = StObject.set(x, "showRowNumber", value.asInstanceOf[js.Any])
+    inline def setShowRowNumber(value: Boolean): Self = StObject.set(x, "showRowNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowRowNumberUndefined: Self = StObject.set(x, "showRowNumber", js.undefined)
+    inline def setShowRowNumberUndefined: Self = StObject.set(x, "showRowNumber", js.undefined)
     
-    @scala.inline
-    def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortAscending(value: Boolean): Self = StObject.set(x, "sortAscending", value.asInstanceOf[js.Any])
+    inline def setSortAscending(value: Boolean): Self = StObject.set(x, "sortAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortAscendingUndefined: Self = StObject.set(x, "sortAscending", js.undefined)
+    inline def setSortAscendingUndefined: Self = StObject.set(x, "sortAscending", js.undefined)
     
-    @scala.inline
-    def setSortColumn(value: Double): Self = StObject.set(x, "sortColumn", value.asInstanceOf[js.Any])
+    inline def setSortColumn(value: Double): Self = StObject.set(x, "sortColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortColumnUndefined: Self = StObject.set(x, "sortColumn", js.undefined)
+    inline def setSortColumnUndefined: Self = StObject.set(x, "sortColumn", js.undefined)
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setStartPage(value: Double): Self = StObject.set(x, "startPage", value.asInstanceOf[js.Any])
+    inline def setStartPage(value: Double): Self = StObject.set(x, "startPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPageUndefined: Self = StObject.set(x, "startPage", js.undefined)
+    inline def setStartPageUndefined: Self = StObject.set(x, "startPage", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

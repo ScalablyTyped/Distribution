@@ -12,20 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TooltipConfig extends StObject
 object TooltipConfig {
   
-  @scala.inline
-  def CanvasTooltipConfig(): typings.antvG2.mod.CanvasTooltipConfig = {
+  inline def CanvasTooltipConfig(): typings.antvG2.mod.CanvasTooltipConfig = {
     val __obj = js.Dynamic.literal(useHtml = false)
     __obj.asInstanceOf[typings.antvG2.mod.CanvasTooltipConfig]
   }
   
-  @scala.inline
-  def HtmlTooltipConfig(): typings.antvG2.mod.HtmlTooltipConfig = {
+  inline def HtmlTooltipConfig(): typings.antvG2.mod.HtmlTooltipConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.antvG2.mod.HtmlTooltipConfig]
   }
   
-  @scala.inline
-  def MiniTooltipConfig(): typings.antvG2.mod.MiniTooltipConfig = {
+  inline def MiniTooltipConfig(): typings.antvG2.mod.MiniTooltipConfig = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("mini")
     __obj.asInstanceOf[typings.antvG2.mod.MiniTooltipConfig]

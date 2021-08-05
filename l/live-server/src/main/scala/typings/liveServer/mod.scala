@@ -13,11 +13,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def shutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Unit]
+  inline def shutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Unit]
   
-  @scala.inline
-  def start(params: LiveServerParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def start(params: LiveServerParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait LiveServerParams extends StObject {
     
@@ -56,80 +54,56 @@ object mod {
   }
   object LiveServerParams {
     
-    @scala.inline
-    def apply(): LiveServerParams = {
+    inline def apply(): LiveServerParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LiveServerParams]
     }
     
-    @scala.inline
-    implicit class LiveServerParamsMutableBuilder[Self <: LiveServerParams] (val x: Self) extends AnyVal {
+    extension [Self <: LiveServerParams](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: `0` | `1` | `2`): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: `0` | `1` | `2`): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setMiddleware(value: js.Array[js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, Unit]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+      inline def setMiddleware(value: js.Array[js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, Unit]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
+      inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
       
-      @scala.inline
-      def setMiddlewareVarargs(value: (js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, Unit])*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+      inline def setMiddlewareVarargs(value: (js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, Unit])*): Self = StObject.set(x, "middleware", js.Array(value :_*))
       
-      @scala.inline
-      def setMount(value: js.Array[js.Array[String]]): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+      inline def setMount(value: js.Array[js.Array[String]]): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
+      inline def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
       
-      @scala.inline
-      def setMountVarargs(value: js.Array[String]*): Self = StObject.set(x, "mount", js.Array(value :_*))
+      inline def setMountVarargs(value: js.Array[String]*): Self = StObject.set(x, "mount", js.Array(value :_*))
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+      inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
     }
   }
 }

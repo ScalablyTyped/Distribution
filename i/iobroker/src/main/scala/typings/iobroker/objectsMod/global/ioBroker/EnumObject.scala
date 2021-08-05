@@ -19,20 +19,16 @@ trait EnumObject
 }
 object EnumObject {
   
-  @scala.inline
-  def apply(_id: String, common: EnumCommon, native: Record[String, js.Any]): EnumObject = {
+  inline def apply(_id: String, common: EnumCommon, native: Record[String, js.Any]): EnumObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("enum")
     __obj.asInstanceOf[EnumObject]
   }
   
-  @scala.inline
-  implicit class EnumObjectMutableBuilder[Self <: EnumObject] (val x: Self) extends AnyVal {
+  extension [Self <: EnumObject](x: Self) {
     
-    @scala.inline
-    def setCommon(value: EnumCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: EnumCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `enum`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `enum`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

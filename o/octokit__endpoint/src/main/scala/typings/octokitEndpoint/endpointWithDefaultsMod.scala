@@ -15,12 +15,8 @@ object endpointWithDefaultsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def endpointWithDefaults(defaults: EndpointDefaults, route: EndpointOptions): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("endpointWithDefaults")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
-  @scala.inline
-  def endpointWithDefaults(defaults: EndpointDefaults, route: EndpointOptions, options: RequestParameters): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("endpointWithDefaults")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
-  @scala.inline
-  def endpointWithDefaults(defaults: EndpointDefaults, route: Route): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("endpointWithDefaults")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
-  @scala.inline
-  def endpointWithDefaults(defaults: EndpointDefaults, route: Route, options: RequestParameters): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("endpointWithDefaults")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+  inline def endpointWithDefaults(defaults: EndpointDefaults, route: EndpointOptions): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("endpointWithDefaults")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+  inline def endpointWithDefaults(defaults: EndpointDefaults, route: EndpointOptions, options: RequestParameters): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("endpointWithDefaults")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+  inline def endpointWithDefaults(defaults: EndpointDefaults, route: Route): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("endpointWithDefaults")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+  inline def endpointWithDefaults(defaults: EndpointDefaults, route: Route, options: RequestParameters): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("endpointWithDefaults")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
 }

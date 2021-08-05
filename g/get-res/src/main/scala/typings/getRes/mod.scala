@@ -11,8 +11,7 @@ object mod {
     *
     * @returns An array with the details of ten most popular screen resolutions
     */
-  @scala.inline
-  def apply(): js.Promise[js.Array[Resolution]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[Resolution]]]
+  inline def apply(): js.Promise[js.Array[Resolution]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[Resolution]]]
   
   @JSImport("get-res", JSImport.Namespace)
   @js.native
@@ -26,20 +25,16 @@ object mod {
   }
   object Resolution {
     
-    @scala.inline
-    def apply(item: String, percent: String): Resolution = {
+    inline def apply(item: String, percent: String): Resolution = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any])
       __obj.asInstanceOf[Resolution]
     }
     
-    @scala.inline
-    implicit class ResolutionMutableBuilder[Self <: Resolution] (val x: Self) extends AnyVal {
+    extension [Self <: Resolution](x: Self) {
       
-      @scala.inline
-      def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     }
   }
 }

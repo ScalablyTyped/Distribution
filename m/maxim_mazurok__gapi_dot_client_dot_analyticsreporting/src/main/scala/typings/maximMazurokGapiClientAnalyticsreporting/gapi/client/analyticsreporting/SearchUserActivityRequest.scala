@@ -35,52 +35,37 @@ trait SearchUserActivityRequest extends StObject {
 }
 object SearchUserActivityRequest {
   
-  @scala.inline
-  def apply(): SearchUserActivityRequest = {
+  inline def apply(): SearchUserActivityRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchUserActivityRequest]
   }
   
-  @scala.inline
-  implicit class SearchUserActivityRequestMutableBuilder[Self <: SearchUserActivityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchUserActivityRequest](x: Self) {
     
-    @scala.inline
-    def setActivityTypes(value: js.Array[String]): Self = StObject.set(x, "activityTypes", value.asInstanceOf[js.Any])
+    inline def setActivityTypes(value: js.Array[String]): Self = StObject.set(x, "activityTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityTypesUndefined: Self = StObject.set(x, "activityTypes", js.undefined)
+    inline def setActivityTypesUndefined: Self = StObject.set(x, "activityTypes", js.undefined)
     
-    @scala.inline
-    def setActivityTypesVarargs(value: String*): Self = StObject.set(x, "activityTypes", js.Array(value :_*))
+    inline def setActivityTypesVarargs(value: String*): Self = StObject.set(x, "activityTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+    inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
+    inline def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
-    @scala.inline
-    def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
+    inline def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewIdUndefined: Self = StObject.set(x, "viewId", js.undefined)
+    inline def setViewIdUndefined: Self = StObject.set(x, "viewId", js.undefined)
   }
 }

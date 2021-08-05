@@ -14,31 +14,23 @@ trait VoiceMessageContent extends StObject {
 }
 object VoiceMessageContent {
   
-  @scala.inline
-  def apply(): VoiceMessageContent = {
+  inline def apply(): VoiceMessageContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VoiceMessageContent]
   }
   
-  @scala.inline
-  implicit class VoiceMessageContentMutableBuilder[Self <: VoiceMessageContent] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceMessageContent](x: Self) {
     
-    @scala.inline
-    def setCallInstructionsMessage(value: CallInstructionsMessageType): Self = StObject.set(x, "CallInstructionsMessage", value.asInstanceOf[js.Any])
+    inline def setCallInstructionsMessage(value: CallInstructionsMessageType): Self = StObject.set(x, "CallInstructionsMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallInstructionsMessageUndefined: Self = StObject.set(x, "CallInstructionsMessage", js.undefined)
+    inline def setCallInstructionsMessageUndefined: Self = StObject.set(x, "CallInstructionsMessage", js.undefined)
     
-    @scala.inline
-    def setPlainTextMessage(value: PlainTextMessageType): Self = StObject.set(x, "PlainTextMessage", value.asInstanceOf[js.Any])
+    inline def setPlainTextMessage(value: PlainTextMessageType): Self = StObject.set(x, "PlainTextMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlainTextMessageUndefined: Self = StObject.set(x, "PlainTextMessage", js.undefined)
+    inline def setPlainTextMessageUndefined: Self = StObject.set(x, "PlainTextMessage", js.undefined)
     
-    @scala.inline
-    def setSSMLMessage(value: SSMLMessageType): Self = StObject.set(x, "SSMLMessage", value.asInstanceOf[js.Any])
+    inline def setSSMLMessage(value: SSMLMessageType): Self = StObject.set(x, "SSMLMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSMLMessageUndefined: Self = StObject.set(x, "SSMLMessage", js.undefined)
+    inline def setSSMLMessageUndefined: Self = StObject.set(x, "SSMLMessage", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait FinishingCoating extends StObject {
 }
 object FinishingCoating {
   
-  @scala.inline
-  def apply(): FinishingCoating = {
+  inline def apply(): FinishingCoating = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FinishingCoating]
   }
   
-  @scala.inline
-  implicit class FinishingCoatingMutableBuilder[Self <: FinishingCoating] (val x: Self) extends AnyVal {
+  extension [Self <: FinishingCoating](x: Self) {
     
-    @scala.inline
-    def `setCoating-sides`(value: FinishingSides): Self = StObject.set(x, "coating-sides", value.asInstanceOf[js.Any])
+    inline def `setCoating-sides`(value: FinishingSides): Self = StObject.set(x, "coating-sides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCoating-sidesUndefined`: Self = StObject.set(x, "coating-sides", js.undefined)
+    inline def `setCoating-sidesUndefined`: Self = StObject.set(x, "coating-sides", js.undefined)
     
-    @scala.inline
-    def `setCoating-type`(value: CoatingType): Self = StObject.set(x, "coating-type", value.asInstanceOf[js.Any])
+    inline def `setCoating-type`(value: CoatingType): Self = StObject.set(x, "coating-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCoating-typeUndefined`: Self = StObject.set(x, "coating-type", js.undefined)
+    inline def `setCoating-typeUndefined`: Self = StObject.set(x, "coating-type", js.undefined)
   }
 }

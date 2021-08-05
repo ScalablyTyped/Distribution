@@ -39,8 +39,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationOutput exten
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationOutput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destinationSchema: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema,
     name: String,
     outputId: String
@@ -49,34 +48,24 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationOutput {
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationOutput]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationOutput](x: Self) {
     
-    @scala.inline
-    def setDestinationSchema(value: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema): Self = StObject.set(x, "destinationSchema", value.asInstanceOf[js.Any])
+    inline def setDestinationSchema(value: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema): Self = StObject.set(x, "destinationSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisFirehoseOutput(value: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput): Self = StObject.set(x, "kinesisFirehoseOutput", value.asInstanceOf[js.Any])
+    inline def setKinesisFirehoseOutput(value: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput): Self = StObject.set(x, "kinesisFirehoseOutput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisFirehoseOutputUndefined: Self = StObject.set(x, "kinesisFirehoseOutput", js.undefined)
+    inline def setKinesisFirehoseOutputUndefined: Self = StObject.set(x, "kinesisFirehoseOutput", js.undefined)
     
-    @scala.inline
-    def setKinesisStreamsOutput(value: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput): Self = StObject.set(x, "kinesisStreamsOutput", value.asInstanceOf[js.Any])
+    inline def setKinesisStreamsOutput(value: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput): Self = StObject.set(x, "kinesisStreamsOutput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisStreamsOutputUndefined: Self = StObject.set(x, "kinesisStreamsOutput", js.undefined)
+    inline def setKinesisStreamsOutputUndefined: Self = StObject.set(x, "kinesisStreamsOutput", js.undefined)
     
-    @scala.inline
-    def setLambdaOutput(value: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput): Self = StObject.set(x, "lambdaOutput", value.asInstanceOf[js.Any])
+    inline def setLambdaOutput(value: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput): Self = StObject.set(x, "lambdaOutput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaOutputUndefined: Self = StObject.set(x, "lambdaOutput", js.undefined)
+    inline def setLambdaOutputUndefined: Self = StObject.set(x, "lambdaOutput", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputId(value: String): Self = StObject.set(x, "outputId", value.asInstanceOf[js.Any])
+    inline def setOutputId(value: String): Self = StObject.set(x, "outputId", value.asInstanceOf[js.Any])
   }
 }

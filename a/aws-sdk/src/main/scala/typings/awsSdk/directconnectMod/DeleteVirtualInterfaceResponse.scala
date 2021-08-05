@@ -13,19 +13,15 @@ trait DeleteVirtualInterfaceResponse extends StObject {
 }
 object DeleteVirtualInterfaceResponse {
   
-  @scala.inline
-  def apply(): DeleteVirtualInterfaceResponse = {
+  inline def apply(): DeleteVirtualInterfaceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteVirtualInterfaceResponse]
   }
   
-  @scala.inline
-  implicit class DeleteVirtualInterfaceResponseMutableBuilder[Self <: DeleteVirtualInterfaceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVirtualInterfaceResponse](x: Self) {
     
-    @scala.inline
-    def setVirtualInterfaceState(value: VirtualInterfaceState): Self = StObject.set(x, "virtualInterfaceState", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaceState(value: VirtualInterfaceState): Self = StObject.set(x, "virtualInterfaceState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualInterfaceStateUndefined: Self = StObject.set(x, "virtualInterfaceState", js.undefined)
+    inline def setVirtualInterfaceStateUndefined: Self = StObject.set(x, "virtualInterfaceState", js.undefined)
   }
 }

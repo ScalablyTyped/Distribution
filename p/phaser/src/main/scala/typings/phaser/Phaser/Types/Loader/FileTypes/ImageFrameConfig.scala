@@ -39,46 +39,33 @@ trait ImageFrameConfig extends StObject {
 }
 object ImageFrameConfig {
   
-  @scala.inline
-  def apply(frameWidth: integer): ImageFrameConfig = {
+  inline def apply(frameWidth: integer): ImageFrameConfig = {
     val __obj = js.Dynamic.literal(frameWidth = frameWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageFrameConfig]
   }
   
-  @scala.inline
-  implicit class ImageFrameConfigMutableBuilder[Self <: ImageFrameConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ImageFrameConfig](x: Self) {
     
-    @scala.inline
-    def setEndFrame(value: integer): Self = StObject.set(x, "endFrame", value.asInstanceOf[js.Any])
+    inline def setEndFrame(value: integer): Self = StObject.set(x, "endFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndFrameUndefined: Self = StObject.set(x, "endFrame", js.undefined)
+    inline def setEndFrameUndefined: Self = StObject.set(x, "endFrame", js.undefined)
     
-    @scala.inline
-    def setFrameHeight(value: integer): Self = StObject.set(x, "frameHeight", value.asInstanceOf[js.Any])
+    inline def setFrameHeight(value: integer): Self = StObject.set(x, "frameHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameHeightUndefined: Self = StObject.set(x, "frameHeight", js.undefined)
+    inline def setFrameHeightUndefined: Self = StObject.set(x, "frameHeight", js.undefined)
     
-    @scala.inline
-    def setFrameWidth(value: integer): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
+    inline def setFrameWidth(value: integer): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMargin(value: integer): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: integer): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setSpacing(value: integer): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: integer): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     
-    @scala.inline
-    def setStartFrame(value: integer): Self = StObject.set(x, "startFrame", value.asInstanceOf[js.Any])
+    inline def setStartFrame(value: integer): Self = StObject.set(x, "startFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartFrameUndefined: Self = StObject.set(x, "startFrame", js.undefined)
+    inline def setStartFrameUndefined: Self = StObject.set(x, "startFrame", js.undefined)
   }
 }

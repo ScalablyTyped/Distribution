@@ -20,20 +20,16 @@ object FS {
   }
   object Lookup {
     
-    @scala.inline
-    def apply(node: FSNode, path: String): Lookup = {
+    inline def apply(node: FSNode, path: String): Lookup = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Lookup]
     }
     
-    @scala.inline
-    implicit class LookupMutableBuilder[Self <: Lookup] (val x: Self) extends AnyVal {
+    extension [Self <: Lookup](x: Self) {
       
-      @scala.inline
-      def setNode(value: FSNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: FSNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -84,8 +84,7 @@ trait LokiPartitioningAdapter
 }
 object LokiPartitioningAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dbname: String,
     exportDatabase: (String, Loki, js.Function1[/* err */ Error | Null, Unit]) => Unit,
     loadDatabase: (String, js.Function1[/* value */ js.Any, Unit]) => Unit,
@@ -101,55 +100,38 @@ object LokiPartitioningAdapter {
     __obj.asInstanceOf[LokiPartitioningAdapter]
   }
   
-  @scala.inline
-  implicit class LokiPartitioningAdapterMutableBuilder[Self <: LokiPartitioningAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: LokiPartitioningAdapter](x: Self) {
     
-    @scala.inline
-    def setAdapter(value: LokiPersistenceAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+    inline def setAdapter(value: LokiPersistenceAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdapterNull: Self = StObject.set(x, "adapter", null)
+    inline def setAdapterNull: Self = StObject.set(x, "adapter", null)
     
-    @scala.inline
-    def setDbname(value: String): Self = StObject.set(x, "dbname", value.asInstanceOf[js.Any])
+    inline def setDbname(value: String): Self = StObject.set(x, "dbname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbref(value: Loki): Self = StObject.set(x, "dbref", value.asInstanceOf[js.Any])
+    inline def setDbref(value: Loki): Self = StObject.set(x, "dbref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbrefNull: Self = StObject.set(x, "dbref", null)
+    inline def setDbrefNull: Self = StObject.set(x, "dbref", null)
     
-    @scala.inline
-    def setDirtyPartitions(value: js.Array[Double]): Self = StObject.set(x, "dirtyPartitions", value.asInstanceOf[js.Any])
+    inline def setDirtyPartitions(value: js.Array[Double]): Self = StObject.set(x, "dirtyPartitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirtyPartitionsUndefined: Self = StObject.set(x, "dirtyPartitions", js.undefined)
+    inline def setDirtyPartitionsUndefined: Self = StObject.set(x, "dirtyPartitions", js.undefined)
     
-    @scala.inline
-    def setDirtyPartitionsVarargs(value: Double*): Self = StObject.set(x, "dirtyPartitions", js.Array(value :_*))
+    inline def setDirtyPartitionsVarargs(value: Double*): Self = StObject.set(x, "dirtyPartitions", js.Array(value :_*))
     
-    @scala.inline
-    def setExportDatabase(value: (String, Loki, js.Function1[/* err */ Error | Null, Unit]) => Unit): Self = StObject.set(x, "exportDatabase", js.Any.fromFunction3(value))
+    inline def setExportDatabase(value: (String, Loki, js.Function1[/* err */ Error | Null, Unit]) => Unit): Self = StObject.set(x, "exportDatabase", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setLoadNextPage(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "loadNextPage", js.Any.fromFunction1(value))
+    inline def setLoadNextPage(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "loadNextPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadNextPartition(value: (Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "loadNextPartition", js.Any.fromFunction2(value))
+    inline def setLoadNextPartition(value: (Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "loadNextPartition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: PageSize): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: PageSize): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIterator(value: PageIterator | js.Object): Self = StObject.set(x, "pageIterator", value.asInstanceOf[js.Any])
+    inline def setPageIterator(value: PageIterator | js.Object): Self = StObject.set(x, "pageIterator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveNextPage(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "saveNextPage", js.Any.fromFunction1(value))
+    inline def setSaveNextPage(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "saveNextPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveNextPartition(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "saveNextPartition", js.Any.fromFunction1(value))
+    inline def setSaveNextPartition(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "saveNextPartition", js.Any.fromFunction1(value))
   }
 }

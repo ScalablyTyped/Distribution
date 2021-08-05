@@ -16,11 +16,9 @@ object appInstallationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapAppInstallation(http: AxiosInstance, data: AppInstallationProps): AppInstallation = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAppInstallation")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[AppInstallation]
+  inline def wrapAppInstallation(http: AxiosInstance, data: AppInstallationProps): AppInstallation = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAppInstallation")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[AppInstallation]
   
-  @scala.inline
-  def wrapAppInstallationCollection(http: AxiosInstance, data: CollectionProp[AppInstallationProps]): Collection[AppInstallation, AppInstallationProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAppInstallationCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[AppInstallation, AppInstallationProps]]
+  inline def wrapAppInstallationCollection(http: AxiosInstance, data: CollectionProp[AppInstallationProps]): Collection[AppInstallation, AppInstallationProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAppInstallationCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[AppInstallation, AppInstallationProps]]
   
   trait AppInstallation
     extends StObject
@@ -72,8 +70,7 @@ object appInstallationMod {
   }
   object AppInstallation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delete: () => js.Promise[Unit],
       parameters: StringDictionary[String],
       sys: MetaSysPropsappDefinition,
@@ -84,14 +81,11 @@ object appInstallationMod {
       __obj.asInstanceOf[AppInstallation]
     }
     
-    @scala.inline
-    implicit class AppInstallationMutableBuilder[Self <: AppInstallation] (val x: Self) extends AnyVal {
+    extension [Self <: AppInstallation](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[AppInstallation]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[AppInstallation]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -104,20 +98,16 @@ object appInstallationMod {
   }
   object AppInstallationProps {
     
-    @scala.inline
-    def apply(parameters: StringDictionary[String], sys: MetaSysPropsappDefinition): AppInstallationProps = {
+    inline def apply(parameters: StringDictionary[String], sys: MetaSysPropsappDefinition): AppInstallationProps = {
       val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppInstallationProps]
     }
     
-    @scala.inline
-    implicit class AppInstallationPropsMutableBuilder[Self <: AppInstallationProps] (val x: Self) extends AnyVal {
+    extension [Self <: AppInstallationProps](x: Self) {
       
-      @scala.inline
-      def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysPropsappDefinition): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysPropsappDefinition): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

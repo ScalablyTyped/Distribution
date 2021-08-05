@@ -13,19 +13,15 @@ trait ListPayload
 }
 object ListPayload {
   
-  @scala.inline
-  def apply(count: Double, users: js.Array[ResponseModel]): ListPayload = {
+  inline def apply(count: Double, users: js.Array[ResponseModel]): ListPayload = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any], next_page = null, previous_page = null)
     __obj.asInstanceOf[ListPayload]
   }
   
-  @scala.inline
-  implicit class ListPayloadMutableBuilder[Self <: ListPayload] (val x: Self) extends AnyVal {
+  extension [Self <: ListPayload](x: Self) {
     
-    @scala.inline
-    def setUsers(value: js.Array[ResponseModel]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[ResponseModel]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersVarargs(value: ResponseModel*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: ResponseModel*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

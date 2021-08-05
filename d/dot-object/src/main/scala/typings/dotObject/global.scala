@@ -26,6 +26,5 @@ object global {
   @JSGlobal("dot")
   @js.native
   def dot: DotConstructor = js.native
-  @scala.inline
-  def dot_=(x: DotConstructor): Unit = js.Dynamic.global.updateDynamic("dot")(x.asInstanceOf[js.Any])
+  inline def dot_=(x: DotConstructor): Unit = js.Dynamic.global.updateDynamic("dot")(x.asInstanceOf[js.Any])
 }

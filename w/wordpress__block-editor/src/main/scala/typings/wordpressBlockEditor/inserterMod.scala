@@ -45,56 +45,40 @@ object inserterMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+        inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+        inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
         
-        @scala.inline
-        def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+        inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
         
-        @scala.inline
-        def setIsAppender(value: Boolean): Self = StObject.set(x, "isAppender", value.asInstanceOf[js.Any])
+        inline def setIsAppender(value: Boolean): Self = StObject.set(x, "isAppender", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsAppenderUndefined: Self = StObject.set(x, "isAppender", js.undefined)
+        inline def setIsAppenderUndefined: Self = StObject.set(x, "isAppender", js.undefined)
         
-        @scala.inline
-        def setOnToggle(value: /* isOpen */ Boolean => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
+        inline def setOnToggle(value: /* isOpen */ Boolean => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
+        inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
         
-        @scala.inline
-        def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setRenderToggle(value: /* props */ RenderProps => Element): Self = StObject.set(x, "renderToggle", js.Any.fromFunction1(value))
+        inline def setRenderToggle(value: /* props */ RenderProps => Element): Self = StObject.set(x, "renderToggle", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRenderToggleUndefined: Self = StObject.set(x, "renderToggle", js.undefined)
+        inline def setRenderToggleUndefined: Self = StObject.set(x, "renderToggle", js.undefined)
         
-        @scala.inline
-        def setRootClientId(value: String): Self = StObject.set(x, "rootClientId", value.asInstanceOf[js.Any])
+        inline def setRootClientId(value: String): Self = StObject.set(x, "rootClientId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRootClientIdUndefined: Self = StObject.set(x, "rootClientId", js.undefined)
+        inline def setRootClientIdUndefined: Self = StObject.set(x, "rootClientId", js.undefined)
       }
     }
   }

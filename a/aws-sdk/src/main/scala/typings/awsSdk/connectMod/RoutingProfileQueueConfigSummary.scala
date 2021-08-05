@@ -38,8 +38,7 @@ trait RoutingProfileQueueConfigSummary extends StObject {
 }
 object RoutingProfileQueueConfigSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Channel: Channel,
     Delay: Delay,
     Priority: Priority,
@@ -51,25 +50,18 @@ object RoutingProfileQueueConfigSummary {
     __obj.asInstanceOf[RoutingProfileQueueConfigSummary]
   }
   
-  @scala.inline
-  implicit class RoutingProfileQueueConfigSummaryMutableBuilder[Self <: RoutingProfileQueueConfigSummary] (val x: Self) extends AnyVal {
+  extension [Self <: RoutingProfileQueueConfigSummary](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay(value: Delay): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Delay): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueArn(value: ARN): Self = StObject.set(x, "QueueArn", value.asInstanceOf[js.Any])
+    inline def setQueueArn(value: ARN): Self = StObject.set(x, "QueueArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueId(value: QueueId): Self = StObject.set(x, "QueueId", value.asInstanceOf[js.Any])
+    inline def setQueueId(value: QueueId): Self = StObject.set(x, "QueueId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueName(value: QueueName): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
+    inline def setQueueName(value: QueueName): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
   }
 }

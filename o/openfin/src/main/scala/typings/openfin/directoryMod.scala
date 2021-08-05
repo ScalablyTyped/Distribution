@@ -31,38 +31,28 @@ object directoryMod {
   }
   object AppDirIntent {
     
-    @scala.inline
-    def apply(name: String): AppDirIntent = {
+    inline def apply(name: String): AppDirIntent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppDirIntent]
     }
     
-    @scala.inline
-    implicit class AppDirIntentMutableBuilder[Self <: AppDirIntent] (val x: Self) extends AnyVal {
+    extension [Self <: AppDirIntent](x: Self) {
       
-      @scala.inline
-      def setContexts(value: js.Array[String]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+      inline def setContexts(value: js.Array[String]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
+      inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
       
-      @scala.inline
-      def setContextsVarargs(value: String*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: String*): Self = StObject.set(x, "contexts", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomConfig(value: js.Any): Self = StObject.set(x, "customConfig", value.asInstanceOf[js.Any])
+      inline def setCustomConfig(value: js.Any): Self = StObject.set(x, "customConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomConfigUndefined: Self = StObject.set(x, "customConfig", js.undefined)
+      inline def setCustomConfigUndefined: Self = StObject.set(x, "customConfig", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,29 +77,22 @@ object directoryMod {
   }
   object AppImage {
     
-    @scala.inline
-    def apply(url: String): AppImage = {
+    inline def apply(url: String): AppImage = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppImage]
     }
     
-    @scala.inline
-    implicit class AppImageMutableBuilder[Self <: AppImage] (val x: Self) extends AnyVal {
+    extension [Self <: AppImage](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -209,104 +192,72 @@ object directoryMod {
   }
   object Application {
     
-    @scala.inline
-    def apply(appId: AppId, manifest: String, manifestType: String, name: AppName): Application = {
+    inline def apply(appId: AppId, manifest: String, manifestType: String, name: AppName): Application = {
       val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], manifestType = manifestType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Application]
     }
     
-    @scala.inline
-    implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
+    extension [Self <: Application](x: Self) {
       
-      @scala.inline
-      def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
+      inline def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
+      inline def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
       
-      @scala.inline
-      def setCustomConfig(value: js.Array[NameValuePair]): Self = StObject.set(x, "customConfig", value.asInstanceOf[js.Any])
+      inline def setCustomConfig(value: js.Array[NameValuePair]): Self = StObject.set(x, "customConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomConfigUndefined: Self = StObject.set(x, "customConfig", js.undefined)
+      inline def setCustomConfigUndefined: Self = StObject.set(x, "customConfig", js.undefined)
       
-      @scala.inline
-      def setCustomConfigVarargs(value: NameValuePair*): Self = StObject.set(x, "customConfig", js.Array(value :_*))
+      inline def setCustomConfigVarargs(value: NameValuePair*): Self = StObject.set(x, "customConfig", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setIcons(value: js.Array[Icon]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: js.Array[Icon]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+      inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
-      @scala.inline
-      def setIconsVarargs(value: Icon*): Self = StObject.set(x, "icons", js.Array(value :_*))
+      inline def setIconsVarargs(value: Icon*): Self = StObject.set(x, "icons", js.Array(value :_*))
       
-      @scala.inline
-      def setImages(value: js.Array[AppImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[AppImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+      inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      @scala.inline
-      def setImagesVarargs(value: AppImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: AppImage*): Self = StObject.set(x, "images", js.Array(value :_*))
       
-      @scala.inline
-      def setIntents(value: js.Array[AppDirIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+      inline def setIntents(value: js.Array[AppDirIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
+      inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
       
-      @scala.inline
-      def setIntentsVarargs(value: AppDirIntent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+      inline def setIntentsVarargs(value: AppDirIntent*): Self = StObject.set(x, "intents", js.Array(value :_*))
       
-      @scala.inline
-      def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+      inline def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestType(value: String): Self = StObject.set(x, "manifestType", value.asInstanceOf[js.Any])
+      inline def setManifestType(value: String): Self = StObject.set(x, "manifestType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: AppName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: AppName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+      inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
+      inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
       
-      @scala.inline
-      def setSupportEmail(value: String): Self = StObject.set(x, "supportEmail", value.asInstanceOf[js.Any])
+      inline def setSupportEmail(value: String): Self = StObject.set(x, "supportEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportEmailUndefined: Self = StObject.set(x, "supportEmail", js.undefined)
+      inline def setSupportEmailUndefined: Self = StObject.set(x, "supportEmail", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -319,17 +270,14 @@ object directoryMod {
   }
   object Icon {
     
-    @scala.inline
-    def apply(icon: String): Icon = {
+    inline def apply(icon: String): Icon = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
       __obj.asInstanceOf[Icon]
     }
     
-    @scala.inline
-    implicit class IconMutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
+    extension [Self <: Icon](x: Self) {
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     }
   }
   
@@ -341,20 +289,16 @@ object directoryMod {
   }
   object NameValuePair {
     
-    @scala.inline
-    def apply(name: String, value: String): NameValuePair = {
+    inline def apply(name: String, value: String): NameValuePair = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[NameValuePair]
     }
     
-    @scala.inline
-    implicit class NameValuePairMutableBuilder[Self <: NameValuePair] (val x: Self) extends AnyVal {
+    extension [Self <: NameValuePair](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

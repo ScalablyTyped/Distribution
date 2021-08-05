@@ -25,17 +25,14 @@ object elementMod {
   }
   object ElementProps {
     
-    @scala.inline
-    def apply(name: String): ElementProps = {
+    inline def apply(name: String): ElementProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElementProps]
     }
     
-    @scala.inline
-    implicit class ElementPropsMutableBuilder[Self <: ElementProps] (val x: Self) extends AnyVal {
+    extension [Self <: ElementProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

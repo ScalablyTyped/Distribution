@@ -18,8 +18,7 @@ trait CellAnnotations
      with XEnumerationAccess
 object CellAnnotations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,

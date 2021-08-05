@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "smshelper"
-version := "0.1-dt-20200205Z-c29a76"
+version := "0.1-dt-20200205Z-0e76c9"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

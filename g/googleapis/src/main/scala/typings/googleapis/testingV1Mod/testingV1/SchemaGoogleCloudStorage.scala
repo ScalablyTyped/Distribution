@@ -18,19 +18,15 @@ trait SchemaGoogleCloudStorage extends StObject {
 }
 object SchemaGoogleCloudStorage {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudStorage = {
+  inline def apply(): SchemaGoogleCloudStorage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudStorage]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudStorageMutableBuilder[Self <: SchemaGoogleCloudStorage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudStorage](x: Self) {
     
-    @scala.inline
-    def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
+    inline def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
+    inline def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
   }
 }

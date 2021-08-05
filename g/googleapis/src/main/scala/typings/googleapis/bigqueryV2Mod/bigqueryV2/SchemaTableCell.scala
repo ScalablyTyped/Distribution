@@ -10,19 +10,15 @@ trait SchemaTableCell extends StObject {
 }
 object SchemaTableCell {
   
-  @scala.inline
-  def apply(): SchemaTableCell = {
+  inline def apply(): SchemaTableCell = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTableCell]
   }
   
-  @scala.inline
-  implicit class SchemaTableCellMutableBuilder[Self <: SchemaTableCell] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTableCell](x: Self) {
     
-    @scala.inline
-    def setV(value: js.Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: js.Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait IdleParam extends StObject {
 }
 object IdleParam {
   
-  @scala.inline
-  def apply(oldstate: buffering | playing | paused): IdleParam = {
+  inline def apply(oldstate: buffering | playing | paused): IdleParam = {
     val __obj = js.Dynamic.literal(oldstate = oldstate.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdleParam]
   }
   
-  @scala.inline
-  implicit class IdleParamMutableBuilder[Self <: IdleParam] (val x: Self) extends AnyVal {
+  extension [Self <: IdleParam](x: Self) {
     
-    @scala.inline
-    def setOldstate(value: buffering | playing | paused): Self = StObject.set(x, "oldstate", value.asInstanceOf[js.Any])
+    inline def setOldstate(value: buffering | playing | paused): Self = StObject.set(x, "oldstate", value.asInstanceOf[js.Any])
   }
 }

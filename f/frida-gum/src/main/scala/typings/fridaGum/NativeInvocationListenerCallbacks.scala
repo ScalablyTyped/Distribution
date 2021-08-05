@@ -28,25 +28,19 @@ trait NativeInvocationListenerCallbacks
 }
 object NativeInvocationListenerCallbacks {
   
-  @scala.inline
-  def apply(): NativeInvocationListenerCallbacks = {
+  inline def apply(): NativeInvocationListenerCallbacks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NativeInvocationListenerCallbacks]
   }
   
-  @scala.inline
-  implicit class NativeInvocationListenerCallbacksMutableBuilder[Self <: NativeInvocationListenerCallbacks] (val x: Self) extends AnyVal {
+  extension [Self <: NativeInvocationListenerCallbacks](x: Self) {
     
-    @scala.inline
-    def setOnEnter(value: NativePointer): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+    inline def setOnEnter(value: NativePointer): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+    inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
-    @scala.inline
-    def setOnLeave(value: NativePointer): Self = StObject.set(x, "onLeave", value.asInstanceOf[js.Any])
+    inline def setOnLeave(value: NativePointer): Self = StObject.set(x, "onLeave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
+    inline def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
   }
 }

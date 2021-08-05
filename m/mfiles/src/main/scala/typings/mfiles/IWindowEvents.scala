@@ -13,19 +13,15 @@ trait IWindowEvents
 }
 object IWindowEvents {
   
-  @scala.inline
-  def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): IWindowEvents = {
+  inline def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): IWindowEvents = {
     val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
     __obj.asInstanceOf[IWindowEvents]
   }
   
-  @scala.inline
-  implicit class IWindowEventsMutableBuilder[Self <: IWindowEvents] (val x: Self) extends AnyVal {
+  extension [Self <: IWindowEvents](x: Self) {
     
-    @scala.inline
-    def setOnCloseWindow(value: () => Boolean): Self = StObject.set(x, "OnCloseWindow", js.Any.fromFunction0(value))
+    inline def setOnCloseWindow(value: () => Boolean): Self = StObject.set(x, "OnCloseWindow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnCloseWindowUndefined: Self = StObject.set(x, "OnCloseWindow", js.undefined)
+    inline def setOnCloseWindowUndefined: Self = StObject.set(x, "OnCloseWindow", js.undefined)
   }
 }

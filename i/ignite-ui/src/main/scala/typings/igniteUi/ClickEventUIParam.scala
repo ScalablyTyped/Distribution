@@ -13,19 +13,15 @@ trait ClickEventUIParam extends StObject {
 }
 object ClickEventUIParam {
   
-  @scala.inline
-  def apply(): ClickEventUIParam = {
+  inline def apply(): ClickEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClickEventUIParam]
   }
   
-  @scala.inline
-  implicit class ClickEventUIParamMutableBuilder[Self <: ClickEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ClickEventUIParam](x: Self) {
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

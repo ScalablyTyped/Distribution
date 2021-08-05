@@ -13,19 +13,15 @@ trait StreamType extends StObject {
 }
 object StreamType {
   
-  @scala.inline
-  def apply(returnValue: Double, streamType: NDMediaStreamType): StreamType = {
+  inline def apply(returnValue: Double, streamType: NDMediaStreamType): StreamType = {
     val __obj = js.Dynamic.literal(returnValue = returnValue.asInstanceOf[js.Any], streamType = streamType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamType]
   }
   
-  @scala.inline
-  implicit class StreamTypeMutableBuilder[Self <: StreamType] (val x: Self) extends AnyVal {
+  extension [Self <: StreamType](x: Self) {
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamType(value: NDMediaStreamType): Self = StObject.set(x, "streamType", value.asInstanceOf[js.Any])
+    inline def setStreamType(value: NDMediaStreamType): Self = StObject.set(x, "streamType", value.asInstanceOf[js.Any])
   }
 }

@@ -17,25 +17,19 @@ trait GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest extends StOb
 }
 object GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequestMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest](x: Self) {
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

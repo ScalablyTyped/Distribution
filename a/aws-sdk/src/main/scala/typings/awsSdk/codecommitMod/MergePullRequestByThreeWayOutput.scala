@@ -10,19 +10,15 @@ trait MergePullRequestByThreeWayOutput extends StObject {
 }
 object MergePullRequestByThreeWayOutput {
   
-  @scala.inline
-  def apply(): MergePullRequestByThreeWayOutput = {
+  inline def apply(): MergePullRequestByThreeWayOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergePullRequestByThreeWayOutput]
   }
   
-  @scala.inline
-  implicit class MergePullRequestByThreeWayOutputMutableBuilder[Self <: MergePullRequestByThreeWayOutput] (val x: Self) extends AnyVal {
+  extension [Self <: MergePullRequestByThreeWayOutput](x: Self) {
     
-    @scala.inline
-    def setPullRequest(value: PullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
+    inline def setPullRequest(value: PullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestUndefined: Self = StObject.set(x, "pullRequest", js.undefined)
+    inline def setPullRequestUndefined: Self = StObject.set(x, "pullRequest", js.undefined)
   }
 }

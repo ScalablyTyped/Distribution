@@ -18,25 +18,19 @@ trait DescribeRdsDbInstancesRequest extends StObject {
 }
 object DescribeRdsDbInstancesRequest {
   
-  @scala.inline
-  def apply(StackId: String): DescribeRdsDbInstancesRequest = {
+  inline def apply(StackId: String): DescribeRdsDbInstancesRequest = {
     val __obj = js.Dynamic.literal(StackId = StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRdsDbInstancesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRdsDbInstancesRequestMutableBuilder[Self <: DescribeRdsDbInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRdsDbInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setRdsDbInstanceArns(value: Strings): Self = StObject.set(x, "RdsDbInstanceArns", value.asInstanceOf[js.Any])
+    inline def setRdsDbInstanceArns(value: Strings): Self = StObject.set(x, "RdsDbInstanceArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdsDbInstanceArnsUndefined: Self = StObject.set(x, "RdsDbInstanceArns", js.undefined)
+    inline def setRdsDbInstanceArnsUndefined: Self = StObject.set(x, "RdsDbInstanceArns", js.undefined)
     
-    @scala.inline
-    def setRdsDbInstanceArnsVarargs(value: String*): Self = StObject.set(x, "RdsDbInstanceArns", js.Array(value :_*))
+    inline def setRdsDbInstanceArnsVarargs(value: String*): Self = StObject.set(x, "RdsDbInstanceArns", js.Array(value :_*))
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
   }
 }

@@ -27,8 +27,7 @@ object pagerMod {
   @JSImport("react-bootstrap/lib/Pager", "Item")
   @js.native
   def Item: Instantiable0[typings.reactBootstrap.pagerItemMod.^] = js.native
-  @scala.inline
-  def Item_=(x: Instantiable0[typings.reactBootstrap.pagerItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: Instantiable0[typings.reactBootstrap.pagerItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Pager
@@ -45,26 +44,20 @@ object pagerMod {
   }
   object PagerProps {
     
-    @scala.inline
-    def apply(): PagerProps = {
+    inline def apply(): PagerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PagerProps]
     }
     
-    @scala.inline
-    implicit class PagerPropsMutableBuilder[Self <: PagerProps] (val x: Self) extends AnyVal {
+    extension [Self <: PagerProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: SelectCallback): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
+      inline def setOnSelect(value: SelectCallback): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     }
   }
 }

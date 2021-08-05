@@ -20,31 +20,23 @@ trait YAxisResizeControlledAxisOptions extends StObject {
 }
 object YAxisResizeControlledAxisOptions {
   
-  @scala.inline
-  def apply(): YAxisResizeControlledAxisOptions = {
+  inline def apply(): YAxisResizeControlledAxisOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[YAxisResizeControlledAxisOptions]
   }
   
-  @scala.inline
-  implicit class YAxisResizeControlledAxisOptionsMutableBuilder[Self <: YAxisResizeControlledAxisOptions] (val x: Self) extends AnyVal {
+  extension [Self <: YAxisResizeControlledAxisOptions](x: Self) {
     
-    @scala.inline
-    def setNext(value: js.Array[Double | String]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: js.Array[Double | String]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setNextVarargs(value: (Double | String)*): Self = StObject.set(x, "next", js.Array(value :_*))
+    inline def setNextVarargs(value: (Double | String)*): Self = StObject.set(x, "next", js.Array(value :_*))
     
-    @scala.inline
-    def setPrev(value: js.Array[Double | String]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: js.Array[Double | String]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+    inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
-    @scala.inline
-    def setPrevVarargs(value: (Double | String)*): Self = StObject.set(x, "prev", js.Array(value :_*))
+    inline def setPrevVarargs(value: (Double | String)*): Self = StObject.set(x, "prev", js.Array(value :_*))
   }
 }

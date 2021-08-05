@@ -12,6 +12,5 @@ object useModalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Tuple2[OmitModalStaticFunctionsw, ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[OmitModalStaticFunctionsw, ReactElement]]
+  inline def default(): js.Tuple2[OmitModalStaticFunctionsw, ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[OmitModalStaticFunctionsw, ReactElement]]
 }

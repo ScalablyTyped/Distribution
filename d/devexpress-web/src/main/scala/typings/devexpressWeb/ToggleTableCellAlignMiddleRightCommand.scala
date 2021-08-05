@@ -18,16 +18,13 @@ trait ToggleTableCellAlignMiddleRightCommand
 }
 object ToggleTableCellAlignMiddleRightCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): ToggleTableCellAlignMiddleRightCommand = {
+  inline def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): ToggleTableCellAlignMiddleRightCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ToggleTableCellAlignMiddleRightCommand]
   }
   
-  @scala.inline
-  implicit class ToggleTableCellAlignMiddleRightCommandMutableBuilder[Self <: ToggleTableCellAlignMiddleRightCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ToggleTableCellAlignMiddleRightCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

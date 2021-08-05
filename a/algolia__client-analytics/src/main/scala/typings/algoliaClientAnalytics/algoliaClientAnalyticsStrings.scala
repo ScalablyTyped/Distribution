@@ -8,11 +8,9 @@ object algoliaClientAnalyticsStrings {
   
   @js.native
   sealed trait de extends StObject
-  @scala.inline
-  def de: de = "de".asInstanceOf[de]
+  inline def de: de = "de".asInstanceOf[de]
   
   @js.native
   sealed trait us extends StObject
-  @scala.inline
-  def us: us = "us".asInstanceOf[us]
+  inline def us: us = "us".asInstanceOf[us]
 }

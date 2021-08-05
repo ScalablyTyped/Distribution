@@ -27,7 +27,7 @@ object deleteIdentityPoolCommandMod {
         ] {
     def this(input: DeleteIdentityPoolCommandInput) = this()
     
-    var deserialize: js.Any = js.native
+    /* private */ var deserialize: js.Any = js.native
     
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
@@ -39,7 +39,7 @@ object deleteIdentityPoolCommandMod {
       options: HttpHandlerOptions
     ): Handler[DeleteIdentityPoolCommandInput, DeleteIdentityPoolCommandOutput] = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
   }
   
   type DeleteIdentityPoolCommandInput = DeleteIdentityPoolInput

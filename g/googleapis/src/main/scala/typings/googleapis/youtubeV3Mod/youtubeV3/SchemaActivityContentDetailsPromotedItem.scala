@@ -69,79 +69,55 @@ trait SchemaActivityContentDetailsPromotedItem extends StObject {
 }
 object SchemaActivityContentDetailsPromotedItem {
   
-  @scala.inline
-  def apply(): SchemaActivityContentDetailsPromotedItem = {
+  inline def apply(): SchemaActivityContentDetailsPromotedItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaActivityContentDetailsPromotedItem]
   }
   
-  @scala.inline
-  implicit class SchemaActivityContentDetailsPromotedItemMutableBuilder[Self <: SchemaActivityContentDetailsPromotedItem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaActivityContentDetailsPromotedItem](x: Self) {
     
-    @scala.inline
-    def setAdTag(value: String): Self = StObject.set(x, "adTag", value.asInstanceOf[js.Any])
+    inline def setAdTag(value: String): Self = StObject.set(x, "adTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdTagUndefined: Self = StObject.set(x, "adTag", js.undefined)
+    inline def setAdTagUndefined: Self = StObject.set(x, "adTag", js.undefined)
     
-    @scala.inline
-    def setClickTrackingUrl(value: String): Self = StObject.set(x, "clickTrackingUrl", value.asInstanceOf[js.Any])
+    inline def setClickTrackingUrl(value: String): Self = StObject.set(x, "clickTrackingUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickTrackingUrlUndefined: Self = StObject.set(x, "clickTrackingUrl", js.undefined)
+    inline def setClickTrackingUrlUndefined: Self = StObject.set(x, "clickTrackingUrl", js.undefined)
     
-    @scala.inline
-    def setCreativeViewUrl(value: String): Self = StObject.set(x, "creativeViewUrl", value.asInstanceOf[js.Any])
+    inline def setCreativeViewUrl(value: String): Self = StObject.set(x, "creativeViewUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeViewUrlUndefined: Self = StObject.set(x, "creativeViewUrl", js.undefined)
+    inline def setCreativeViewUrlUndefined: Self = StObject.set(x, "creativeViewUrl", js.undefined)
     
-    @scala.inline
-    def setCtaType(value: String): Self = StObject.set(x, "ctaType", value.asInstanceOf[js.Any])
+    inline def setCtaType(value: String): Self = StObject.set(x, "ctaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtaTypeUndefined: Self = StObject.set(x, "ctaType", js.undefined)
+    inline def setCtaTypeUndefined: Self = StObject.set(x, "ctaType", js.undefined)
     
-    @scala.inline
-    def setCustomCtaButtonText(value: String): Self = StObject.set(x, "customCtaButtonText", value.asInstanceOf[js.Any])
+    inline def setCustomCtaButtonText(value: String): Self = StObject.set(x, "customCtaButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomCtaButtonTextUndefined: Self = StObject.set(x, "customCtaButtonText", js.undefined)
+    inline def setCustomCtaButtonTextUndefined: Self = StObject.set(x, "customCtaButtonText", js.undefined)
     
-    @scala.inline
-    def setDescriptionText(value: String): Self = StObject.set(x, "descriptionText", value.asInstanceOf[js.Any])
+    inline def setDescriptionText(value: String): Self = StObject.set(x, "descriptionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionTextUndefined: Self = StObject.set(x, "descriptionText", js.undefined)
+    inline def setDescriptionTextUndefined: Self = StObject.set(x, "descriptionText", js.undefined)
     
-    @scala.inline
-    def setDestinationUrl(value: String): Self = StObject.set(x, "destinationUrl", value.asInstanceOf[js.Any])
+    inline def setDestinationUrl(value: String): Self = StObject.set(x, "destinationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUrlUndefined: Self = StObject.set(x, "destinationUrl", js.undefined)
+    inline def setDestinationUrlUndefined: Self = StObject.set(x, "destinationUrl", js.undefined)
     
-    @scala.inline
-    def setForecastingUrl(value: js.Array[String]): Self = StObject.set(x, "forecastingUrl", value.asInstanceOf[js.Any])
+    inline def setForecastingUrl(value: js.Array[String]): Self = StObject.set(x, "forecastingUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastingUrlUndefined: Self = StObject.set(x, "forecastingUrl", js.undefined)
+    inline def setForecastingUrlUndefined: Self = StObject.set(x, "forecastingUrl", js.undefined)
     
-    @scala.inline
-    def setForecastingUrlVarargs(value: String*): Self = StObject.set(x, "forecastingUrl", js.Array(value :_*))
+    inline def setForecastingUrlVarargs(value: String*): Self = StObject.set(x, "forecastingUrl", js.Array(value :_*))
     
-    @scala.inline
-    def setImpressionUrl(value: js.Array[String]): Self = StObject.set(x, "impressionUrl", value.asInstanceOf[js.Any])
+    inline def setImpressionUrl(value: js.Array[String]): Self = StObject.set(x, "impressionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpressionUrlUndefined: Self = StObject.set(x, "impressionUrl", js.undefined)
+    inline def setImpressionUrlUndefined: Self = StObject.set(x, "impressionUrl", js.undefined)
     
-    @scala.inline
-    def setImpressionUrlVarargs(value: String*): Self = StObject.set(x, "impressionUrl", js.Array(value :_*))
+    inline def setImpressionUrlVarargs(value: String*): Self = StObject.set(x, "impressionUrl", js.Array(value :_*))
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
+    inline def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
   }
 }

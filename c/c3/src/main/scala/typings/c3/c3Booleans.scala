@@ -8,6 +8,5 @@ object c3Booleans {
   
   @js.native
   sealed trait `true` extends StObject
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }

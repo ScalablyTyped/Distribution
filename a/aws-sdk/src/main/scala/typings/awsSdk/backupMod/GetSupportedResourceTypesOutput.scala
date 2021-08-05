@@ -13,22 +13,17 @@ trait GetSupportedResourceTypesOutput extends StObject {
 }
 object GetSupportedResourceTypesOutput {
   
-  @scala.inline
-  def apply(): GetSupportedResourceTypesOutput = {
+  inline def apply(): GetSupportedResourceTypesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSupportedResourceTypesOutput]
   }
   
-  @scala.inline
-  implicit class GetSupportedResourceTypesOutputMutableBuilder[Self <: GetSupportedResourceTypesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetSupportedResourceTypesOutput](x: Self) {
     
-    @scala.inline
-    def setResourceTypes(value: ResourceTypes): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
+    inline def setResourceTypes(value: ResourceTypes): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
+    inline def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
     
-    @scala.inline
-    def setResourceTypesVarargs(value: ResourceType*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: ResourceType*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
   }
 }

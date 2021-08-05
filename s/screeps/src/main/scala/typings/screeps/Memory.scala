@@ -19,8 +19,7 @@ trait Memory extends StObject {
 }
 object Memory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     creeps: StringDictionary[CreepMemory],
     flags: StringDictionary[FlagMemory],
     powerCreeps: StringDictionary[PowerCreepMemory],
@@ -31,22 +30,16 @@ object Memory {
     __obj.asInstanceOf[Memory]
   }
   
-  @scala.inline
-  implicit class MemoryMutableBuilder[Self <: Memory] (val x: Self) extends AnyVal {
+  extension [Self <: Memory](x: Self) {
     
-    @scala.inline
-    def setCreeps(value: StringDictionary[CreepMemory]): Self = StObject.set(x, "creeps", value.asInstanceOf[js.Any])
+    inline def setCreeps(value: StringDictionary[CreepMemory]): Self = StObject.set(x, "creeps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: StringDictionary[FlagMemory]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: StringDictionary[FlagMemory]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerCreeps(value: StringDictionary[PowerCreepMemory]): Self = StObject.set(x, "powerCreeps", value.asInstanceOf[js.Any])
+    inline def setPowerCreeps(value: StringDictionary[PowerCreepMemory]): Self = StObject.set(x, "powerCreeps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRooms(value: StringDictionary[RoomMemory]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
+    inline def setRooms(value: StringDictionary[RoomMemory]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpawns(value: StringDictionary[SpawnMemory]): Self = StObject.set(x, "spawns", value.asInstanceOf[js.Any])
+    inline def setSpawns(value: StringDictionary[SpawnMemory]): Self = StObject.set(x, "spawns", value.asInstanceOf[js.Any])
   }
 }

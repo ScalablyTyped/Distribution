@@ -22,46 +22,33 @@ trait Coupon
 }
 object Coupon {
   
-  @scala.inline
-  def apply(): Coupon = {
+  inline def apply(): Coupon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Coupon]
   }
   
-  @scala.inline
-  implicit class CouponMutableBuilder[Self <: Coupon] (val x: Self) extends AnyVal {
+  extension [Self <: Coupon](x: Self) {
     
-    @scala.inline
-    def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
+    inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
+    inline def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setShipping_tier(value: String): Self = StObject.set(x, "shipping_tier", value.asInstanceOf[js.Any])
+    inline def setShipping_tier(value: String): Self = StObject.set(x, "shipping_tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipping_tierUndefined: Self = StObject.set(x, "shipping_tier", js.undefined)
+    inline def setShipping_tierUndefined: Self = StObject.set(x, "shipping_tier", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

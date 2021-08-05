@@ -35,8 +35,7 @@ trait XSheetAnnotations
 }
 object XSheetAnnotations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -53,13 +52,10 @@ object XSheetAnnotations {
     __obj.asInstanceOf[XSheetAnnotations]
   }
   
-  @scala.inline
-  implicit class XSheetAnnotationsMutableBuilder[Self <: XSheetAnnotations] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetAnnotations](x: Self) {
     
-    @scala.inline
-    def setInsertNew(value: (CellAddress, String) => Unit): Self = StObject.set(x, "insertNew", js.Any.fromFunction2(value))
+    inline def setInsertNew(value: (CellAddress, String) => Unit): Self = StObject.set(x, "insertNew", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
+    inline def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
   }
 }

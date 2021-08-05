@@ -17,43 +17,31 @@ trait ShiftAvailability extends StObject {
 }
 object ShiftAvailability {
   
-  @scala.inline
-  def apply(): ShiftAvailability = {
+  inline def apply(): ShiftAvailability = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShiftAvailability]
   }
   
-  @scala.inline
-  implicit class ShiftAvailabilityMutableBuilder[Self <: ShiftAvailability] (val x: Self) extends AnyVal {
+  extension [Self <: ShiftAvailability](x: Self) {
     
-    @scala.inline
-    def setRecurrence(value: NullableOption[PatternedRecurrence]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
+    inline def setRecurrence(value: NullableOption[PatternedRecurrence]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrenceNull: Self = StObject.set(x, "recurrence", null)
+    inline def setRecurrenceNull: Self = StObject.set(x, "recurrence", null)
     
-    @scala.inline
-    def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
+    inline def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
     
-    @scala.inline
-    def setTimeSlots(value: NullableOption[js.Array[TimeRange]]): Self = StObject.set(x, "timeSlots", value.asInstanceOf[js.Any])
+    inline def setTimeSlots(value: NullableOption[js.Array[TimeRange]]): Self = StObject.set(x, "timeSlots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSlotsNull: Self = StObject.set(x, "timeSlots", null)
+    inline def setTimeSlotsNull: Self = StObject.set(x, "timeSlots", null)
     
-    @scala.inline
-    def setTimeSlotsUndefined: Self = StObject.set(x, "timeSlots", js.undefined)
+    inline def setTimeSlotsUndefined: Self = StObject.set(x, "timeSlots", js.undefined)
     
-    @scala.inline
-    def setTimeSlotsVarargs(value: TimeRange*): Self = StObject.set(x, "timeSlots", js.Array(value :_*))
+    inline def setTimeSlotsVarargs(value: TimeRange*): Self = StObject.set(x, "timeSlots", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeZone(value: NullableOption[String]): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: NullableOption[String]): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneNull: Self = StObject.set(x, "timeZone", null)
+    inline def setTimeZoneNull: Self = StObject.set(x, "timeZone", null)
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

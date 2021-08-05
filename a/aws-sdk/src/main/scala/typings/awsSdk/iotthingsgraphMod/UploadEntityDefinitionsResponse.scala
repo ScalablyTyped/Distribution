@@ -13,16 +13,13 @@ trait UploadEntityDefinitionsResponse extends StObject {
 }
 object UploadEntityDefinitionsResponse {
   
-  @scala.inline
-  def apply(uploadId: UploadId): UploadEntityDefinitionsResponse = {
+  inline def apply(uploadId: UploadId): UploadEntityDefinitionsResponse = {
     val __obj = js.Dynamic.literal(uploadId = uploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadEntityDefinitionsResponse]
   }
   
-  @scala.inline
-  implicit class UploadEntityDefinitionsResponseMutableBuilder[Self <: UploadEntityDefinitionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UploadEntityDefinitionsResponse](x: Self) {
     
-    @scala.inline
-    def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
   }
 }

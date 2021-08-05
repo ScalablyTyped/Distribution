@@ -11,22 +11,17 @@ trait DistributionPolicy extends StObject {
 }
 object DistributionPolicy {
   
-  @scala.inline
-  def apply(): DistributionPolicy = {
+  inline def apply(): DistributionPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DistributionPolicy]
   }
   
-  @scala.inline
-  implicit class DistributionPolicyMutableBuilder[Self <: DistributionPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionPolicy](x: Self) {
     
-    @scala.inline
-    def setZones(value: js.Array[DistributionPolicyZoneConfiguration]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+    inline def setZones(value: js.Array[DistributionPolicyZoneConfiguration]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
+    inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    @scala.inline
-    def setZonesVarargs(value: DistributionPolicyZoneConfiguration*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: DistributionPolicyZoneConfiguration*): Self = StObject.set(x, "zones", js.Array(value :_*))
   }
 }

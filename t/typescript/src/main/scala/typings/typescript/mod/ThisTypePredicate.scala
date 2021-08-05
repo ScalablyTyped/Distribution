@@ -22,26 +22,20 @@ trait ThisTypePredicate
 }
 object ThisTypePredicate {
   
-  @scala.inline
-  def apply(kind: This, parameterIndex: Unit, parameterName: Unit, `type`: Type): ThisTypePredicate = {
+  inline def apply(kind: This, parameterIndex: Unit, parameterName: Unit, `type`: Type): ThisTypePredicate = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThisTypePredicate]
   }
   
-  @scala.inline
-  implicit class ThisTypePredicateMutableBuilder[Self <: ThisTypePredicate] (val x: Self) extends AnyVal {
+  extension [Self <: ThisTypePredicate](x: Self) {
     
-    @scala.inline
-    def setKind(value: This): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: This): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterIndex(value: Unit): Self = StObject.set(x, "parameterIndex", value.asInstanceOf[js.Any])
+    inline def setParameterIndex(value: Unit): Self = StObject.set(x, "parameterIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterName(value: Unit): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: Unit): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

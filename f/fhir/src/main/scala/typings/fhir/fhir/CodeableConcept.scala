@@ -28,34 +28,25 @@ trait CodeableConcept
 }
 object CodeableConcept {
   
-  @scala.inline
-  def apply(): CodeableConcept = {
+  inline def apply(): CodeableConcept = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeableConcept]
   }
   
-  @scala.inline
-  implicit class CodeableConceptMutableBuilder[Self <: CodeableConcept] (val x: Self) extends AnyVal {
+  extension [Self <: CodeableConcept](x: Self) {
     
-    @scala.inline
-    def setCoding(value: js.Array[Coding]): Self = StObject.set(x, "coding", value.asInstanceOf[js.Any])
+    inline def setCoding(value: js.Array[Coding]): Self = StObject.set(x, "coding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodingUndefined: Self = StObject.set(x, "coding", js.undefined)
+    inline def setCodingUndefined: Self = StObject.set(x, "coding", js.undefined)
     
-    @scala.inline
-    def setCodingVarargs(value: Coding*): Self = StObject.set(x, "coding", js.Array(value :_*))
+    inline def setCodingVarargs(value: Coding*): Self = StObject.set(x, "coding", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
+    inline def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
+    inline def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
   }
 }

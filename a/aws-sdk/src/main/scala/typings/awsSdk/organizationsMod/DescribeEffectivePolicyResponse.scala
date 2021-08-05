@@ -13,19 +13,15 @@ trait DescribeEffectivePolicyResponse extends StObject {
 }
 object DescribeEffectivePolicyResponse {
   
-  @scala.inline
-  def apply(): DescribeEffectivePolicyResponse = {
+  inline def apply(): DescribeEffectivePolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEffectivePolicyResponse]
   }
   
-  @scala.inline
-  implicit class DescribeEffectivePolicyResponseMutableBuilder[Self <: DescribeEffectivePolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEffectivePolicyResponse](x: Self) {
     
-    @scala.inline
-    def setEffectivePolicy(value: EffectivePolicy): Self = StObject.set(x, "EffectivePolicy", value.asInstanceOf[js.Any])
+    inline def setEffectivePolicy(value: EffectivePolicy): Self = StObject.set(x, "EffectivePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectivePolicyUndefined: Self = StObject.set(x, "EffectivePolicy", js.undefined)
+    inline def setEffectivePolicyUndefined: Self = StObject.set(x, "EffectivePolicy", js.undefined)
   }
 }

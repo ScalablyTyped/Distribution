@@ -23,17 +23,14 @@ object messagesMod {
     @JSImport("rc-field-form/es/utils/messages", "defaultValidateMessages.array")
     @js.native
     def array: Max = js.native
-    @scala.inline
-    def array_=(x: Max): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("array")(x.asInstanceOf[js.Any])
+    inline def array_=(x: Max): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("array")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-field-form/es/utils/messages", "defaultValidateMessages.date")
     @js.native
     def date: Invalid = js.native
-    @scala.inline
-    def date_=(x: Invalid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("date")(x.asInstanceOf[js.Any])
+    inline def date_=(x: Invalid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("date")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def default_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+    inline def default_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-field-form/es/utils/messages", "defaultValidateMessages.enum")
     @js.native
@@ -42,37 +39,31 @@ object messagesMod {
     @JSImport("rc-field-form/es/utils/messages", "defaultValidateMessages.number")
     @js.native
     def number: Max = js.native
-    @scala.inline
-    def number_=(x: Max): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("number")(x.asInstanceOf[js.Any])
+    inline def number_=(x: Max): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("number")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-field-form/es/utils/messages", "defaultValidateMessages.pattern")
     @js.native
     def pattern: MismatchString = js.native
-    @scala.inline
-    def pattern_=(x: MismatchString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pattern")(x.asInstanceOf[js.Any])
+    inline def pattern_=(x: MismatchString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pattern")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-field-form/es/utils/messages", "defaultValidateMessages.required")
     @js.native
     def required: String = js.native
-    @scala.inline
-    def required_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("required")(x.asInstanceOf[js.Any])
+    inline def required_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("required")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-field-form/es/utils/messages", "defaultValidateMessages.string")
     @js.native
     def string: Max = js.native
-    @scala.inline
-    def string_=(x: Max): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
+    inline def string_=(x: Max): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-field-form/es/utils/messages", "defaultValidateMessages.types")
     @js.native
     def types: Boolean = js.native
-    @scala.inline
-    def types_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
+    inline def types_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-field-form/es/utils/messages", "defaultValidateMessages.whitespace")
     @js.native
     def whitespace: String = js.native
-    @scala.inline
-    def whitespace_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("whitespace")(x.asInstanceOf[js.Any])
+    inline def whitespace_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("whitespace")(x.asInstanceOf[js.Any])
   }
 }

@@ -29,17 +29,14 @@ object multiSamlStrategyMod {
   }
   object MultiSamlConfig {
     
-    @scala.inline
-    def apply(getSamlOptions: (Request_[ParamsDictionary, js.Any, js.Any, Query], SamlOptionsCallback) => Unit): MultiSamlConfig = {
+    inline def apply(getSamlOptions: (Request_[ParamsDictionary, js.Any, js.Any, Query], SamlOptionsCallback) => Unit): MultiSamlConfig = {
       val __obj = js.Dynamic.literal(getSamlOptions = js.Any.fromFunction2(getSamlOptions))
       __obj.asInstanceOf[MultiSamlConfig]
     }
     
-    @scala.inline
-    implicit class MultiSamlConfigMutableBuilder[Self <: MultiSamlConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MultiSamlConfig](x: Self) {
       
-      @scala.inline
-      def setGetSamlOptions(value: (Request_[ParamsDictionary, js.Any, js.Any, Query], SamlOptionsCallback) => Unit): Self = StObject.set(x, "getSamlOptions", js.Any.fromFunction2(value))
+      inline def setGetSamlOptions(value: (Request_[ParamsDictionary, js.Any, js.Any, Query], SamlOptionsCallback) => Unit): Self = StObject.set(x, "getSamlOptions", js.Any.fromFunction2(value))
     }
   }
   

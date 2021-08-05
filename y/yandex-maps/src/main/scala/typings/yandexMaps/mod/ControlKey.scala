@@ -21,39 +21,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ControlKey extends StObject
 object ControlKey {
   
-  @scala.inline
-  def default: typings.yandexMaps.yandexMapsStrings.default = "default".asInstanceOf[typings.yandexMaps.yandexMapsStrings.default]
+  inline def default: typings.yandexMaps.yandexMapsStrings.default = "default".asInstanceOf[typings.yandexMaps.yandexMapsStrings.default]
   
-  @scala.inline
-  def fullscreenControl: typings.yandexMaps.yandexMapsStrings.fullscreenControl = "fullscreenControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.fullscreenControl]
+  inline def fullscreenControl: typings.yandexMaps.yandexMapsStrings.fullscreenControl = "fullscreenControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.fullscreenControl]
   
-  @scala.inline
-  def geolocationControl: typings.yandexMaps.yandexMapsStrings.geolocationControl = "geolocationControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.geolocationControl]
+  inline def geolocationControl: typings.yandexMaps.yandexMapsStrings.geolocationControl = "geolocationControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.geolocationControl]
   
-  @scala.inline
-  def largeMapDefaultSet: typings.yandexMaps.yandexMapsStrings.largeMapDefaultSet = "largeMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.largeMapDefaultSet]
+  inline def largeMapDefaultSet: typings.yandexMaps.yandexMapsStrings.largeMapDefaultSet = "largeMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.largeMapDefaultSet]
   
-  @scala.inline
-  def mediumMapDefaultSet: typings.yandexMaps.yandexMapsStrings.mediumMapDefaultSet = "mediumMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.mediumMapDefaultSet]
+  inline def mediumMapDefaultSet: typings.yandexMaps.yandexMapsStrings.mediumMapDefaultSet = "mediumMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.mediumMapDefaultSet]
   
-  @scala.inline
-  def routeEditor: typings.yandexMaps.yandexMapsStrings.routeEditor = "routeEditor".asInstanceOf[typings.yandexMaps.yandexMapsStrings.routeEditor]
+  inline def routeEditor: typings.yandexMaps.yandexMapsStrings.routeEditor = "routeEditor".asInstanceOf[typings.yandexMaps.yandexMapsStrings.routeEditor]
   
-  @scala.inline
-  def rulerControl: typings.yandexMaps.yandexMapsStrings.rulerControl = "rulerControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.rulerControl]
+  inline def rulerControl: typings.yandexMaps.yandexMapsStrings.rulerControl = "rulerControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.rulerControl]
   
-  @scala.inline
-  def searchControl: typings.yandexMaps.yandexMapsStrings.searchControl = "searchControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.searchControl]
+  inline def searchControl: typings.yandexMaps.yandexMapsStrings.searchControl = "searchControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.searchControl]
   
-  @scala.inline
-  def smallMapDefaultSet: typings.yandexMaps.yandexMapsStrings.smallMapDefaultSet = "smallMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.smallMapDefaultSet]
+  inline def smallMapDefaultSet: typings.yandexMaps.yandexMapsStrings.smallMapDefaultSet = "smallMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.smallMapDefaultSet]
   
-  @scala.inline
-  def trafficControl: typings.yandexMaps.yandexMapsStrings.trafficControl = "trafficControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.trafficControl]
+  inline def trafficControl: typings.yandexMaps.yandexMapsStrings.trafficControl = "trafficControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.trafficControl]
   
-  @scala.inline
-  def typeSelector: typings.yandexMaps.yandexMapsStrings.typeSelector = "typeSelector".asInstanceOf[typings.yandexMaps.yandexMapsStrings.typeSelector]
+  inline def typeSelector: typings.yandexMaps.yandexMapsStrings.typeSelector = "typeSelector".asInstanceOf[typings.yandexMaps.yandexMapsStrings.typeSelector]
   
-  @scala.inline
-  def zoomControl: typings.yandexMaps.yandexMapsStrings.zoomControl = "zoomControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.zoomControl]
+  inline def zoomControl: typings.yandexMaps.yandexMapsStrings.zoomControl = "zoomControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.zoomControl]
 }

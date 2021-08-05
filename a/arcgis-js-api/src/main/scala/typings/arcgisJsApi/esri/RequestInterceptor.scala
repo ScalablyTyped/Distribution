@@ -62,8 +62,7 @@ trait RequestInterceptor
 }
 object RequestInterceptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -72,52 +71,36 @@ object RequestInterceptor {
     __obj.asInstanceOf[RequestInterceptor]
   }
   
-  @scala.inline
-  implicit class RequestInterceptorMutableBuilder[Self <: RequestInterceptor] (val x: Self) extends AnyVal {
+  extension [Self <: RequestInterceptor](x: Self) {
     
-    @scala.inline
-    def setAfter(value: /* response */ RequestResponse => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+    inline def setAfter(value: /* response */ RequestResponse => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setBefore(value: /* params */ js.Any => js.Any): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+    inline def setBefore(value: /* params */ js.Any => js.Any): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setResponseData(value: js.Any): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
+    inline def setResponseData(value: js.Any): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseDataUndefined: Self = StObject.set(x, "responseData", js.undefined)
+    inline def setResponseDataUndefined: Self = StObject.set(x, "responseData", js.undefined)
     
-    @scala.inline
-    def setUrls(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    @scala.inline
-    def setUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

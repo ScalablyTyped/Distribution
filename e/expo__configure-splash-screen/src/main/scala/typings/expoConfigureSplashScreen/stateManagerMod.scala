@@ -54,8 +54,7 @@ object stateManagerMod {
   }
   object StateManager {
     
-    @scala.inline
-    def apply[StateType, AppliedActionResultType, ActionName /* <: String */](
+    inline def apply[StateType, AppliedActionResultType, ActionName /* <: String */](
       appliedActions: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in ActionName ]: AppliedActionResultType}
       */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager & TopLevel[js.Any],
@@ -72,18 +71,15 @@ object stateManagerMod {
       __obj.asInstanceOf[StateManager[StateType, AppliedActionResultType, ActionName]]
     }
     
-    @scala.inline
-    implicit class StateManagerMutableBuilder[Self <: StateManager[?, ?, ?], StateType, AppliedActionResultType, ActionName /* <: String */] (val x: Self & (StateManager[StateType, AppliedActionResultType, ActionName])) extends AnyVal {
+    extension [Self <: StateManager[?, ?, ?], StateType, AppliedActionResultType, ActionName /* <: String */](x: Self & (StateManager[StateType, AppliedActionResultType, ActionName])) {
       
-      @scala.inline
-      def setAppliedActions(
+      inline def setAppliedActions(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in ActionName ]: AppliedActionResultType}
         */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager & TopLevel[js.Any]
       ): Self = StObject.set(x, "appliedActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyAction(
+      inline def setApplyAction(
         value: js.Function2[
               /* content */ StateType, 
               /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -93,8 +89,7 @@ object stateManagerMod {
             ] => StateManager[StateType, AppliedActionResultType, ActionName | js.Any]
       ): Self = StObject.set(x, "applyAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setState(value: StateType): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: StateType): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

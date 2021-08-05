@@ -109,100 +109,69 @@ trait INxInlineMeasureDef extends StObject {
 }
 object INxInlineMeasureDef {
   
-  @scala.inline
-  def apply(qDef: String): INxInlineMeasureDef = {
+  inline def apply(qDef: String): INxInlineMeasureDef = {
     val __obj = js.Dynamic.literal(qDef = qDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxInlineMeasureDef]
   }
   
-  @scala.inline
-  implicit class INxInlineMeasureDefMutableBuilder[Self <: INxInlineMeasureDef] (val x: Self) extends AnyVal {
+  extension [Self <: INxInlineMeasureDef](x: Self) {
     
-    @scala.inline
-    def setQAccumulate(value: Double): Self = StObject.set(x, "qAccumulate", value.asInstanceOf[js.Any])
+    inline def setQAccumulate(value: Double): Self = StObject.set(x, "qAccumulate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAccumulateUndefined: Self = StObject.set(x, "qAccumulate", js.undefined)
+    inline def setQAccumulateUndefined: Self = StObject.set(x, "qAccumulate", js.undefined)
     
-    @scala.inline
-    def setQActiveExpression(value: Double): Self = StObject.set(x, "qActiveExpression", value.asInstanceOf[js.Any])
+    inline def setQActiveExpression(value: Double): Self = StObject.set(x, "qActiveExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQActiveExpressionUndefined: Self = StObject.set(x, "qActiveExpression", js.undefined)
+    inline def setQActiveExpressionUndefined: Self = StObject.set(x, "qActiveExpression", js.undefined)
     
-    @scala.inline
-    def setQAggrFunc(value: String): Self = StObject.set(x, "qAggrFunc", value.asInstanceOf[js.Any])
+    inline def setQAggrFunc(value: String): Self = StObject.set(x, "qAggrFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAggrFuncUndefined: Self = StObject.set(x, "qAggrFunc", js.undefined)
+    inline def setQAggrFuncUndefined: Self = StObject.set(x, "qAggrFunc", js.undefined)
     
-    @scala.inline
-    def setQBrutalSum(value: Boolean): Self = StObject.set(x, "qBrutalSum", value.asInstanceOf[js.Any])
+    inline def setQBrutalSum(value: Boolean): Self = StObject.set(x, "qBrutalSum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQBrutalSumUndefined: Self = StObject.set(x, "qBrutalSum", js.undefined)
+    inline def setQBrutalSumUndefined: Self = StObject.set(x, "qBrutalSum", js.undefined)
     
-    @scala.inline
-    def setQDef(value: String): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
+    inline def setQDef(value: String): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDescription(value: String): Self = StObject.set(x, "qDescription", value.asInstanceOf[js.Any])
+    inline def setQDescription(value: String): Self = StObject.set(x, "qDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDescriptionUndefined: Self = StObject.set(x, "qDescription", js.undefined)
+    inline def setQDescriptionUndefined: Self = StObject.set(x, "qDescription", js.undefined)
     
-    @scala.inline
-    def setQExpressions(value: js.Array[String]): Self = StObject.set(x, "qExpressions", value.asInstanceOf[js.Any])
+    inline def setQExpressions(value: js.Array[String]): Self = StObject.set(x, "qExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQExpressionsUndefined: Self = StObject.set(x, "qExpressions", js.undefined)
+    inline def setQExpressionsUndefined: Self = StObject.set(x, "qExpressions", js.undefined)
     
-    @scala.inline
-    def setQExpressionsVarargs(value: String*): Self = StObject.set(x, "qExpressions", js.Array(value :_*))
+    inline def setQExpressionsVarargs(value: String*): Self = StObject.set(x, "qExpressions", js.Array(value :_*))
     
-    @scala.inline
-    def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
+    inline def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGroupingUndefined: Self = StObject.set(x, "qGrouping", js.undefined)
+    inline def setQGroupingUndefined: Self = StObject.set(x, "qGrouping", js.undefined)
     
-    @scala.inline
-    def setQLabel(value: String): Self = StObject.set(x, "qLabel", value.asInstanceOf[js.Any])
+    inline def setQLabel(value: String): Self = StObject.set(x, "qLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLabelExpression(value: String): Self = StObject.set(x, "qLabelExpression", value.asInstanceOf[js.Any])
+    inline def setQLabelExpression(value: String): Self = StObject.set(x, "qLabelExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLabelExpressionUndefined: Self = StObject.set(x, "qLabelExpression", js.undefined)
+    inline def setQLabelExpressionUndefined: Self = StObject.set(x, "qLabelExpression", js.undefined)
     
-    @scala.inline
-    def setQLabelUndefined: Self = StObject.set(x, "qLabel", js.undefined)
+    inline def setQLabelUndefined: Self = StObject.set(x, "qLabel", js.undefined)
     
-    @scala.inline
-    def setQNumFormat(value: IFieldAttributes): Self = StObject.set(x, "qNumFormat", value.asInstanceOf[js.Any])
+    inline def setQNumFormat(value: IFieldAttributes): Self = StObject.set(x, "qNumFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNumFormatUndefined: Self = StObject.set(x, "qNumFormat", js.undefined)
+    inline def setQNumFormatUndefined: Self = StObject.set(x, "qNumFormat", js.undefined)
     
-    @scala.inline
-    def setQRelative(value: Boolean): Self = StObject.set(x, "qRelative", value.asInstanceOf[js.Any])
+    inline def setQRelative(value: Boolean): Self = StObject.set(x, "qRelative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQRelativeUndefined: Self = StObject.set(x, "qRelative", js.undefined)
+    inline def setQRelativeUndefined: Self = StObject.set(x, "qRelative", js.undefined)
     
-    @scala.inline
-    def setQReverseSort(value: Boolean): Self = StObject.set(x, "qReverseSort", value.asInstanceOf[js.Any])
+    inline def setQReverseSort(value: Boolean): Self = StObject.set(x, "qReverseSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQReverseSortUndefined: Self = StObject.set(x, "qReverseSort", js.undefined)
+    inline def setQReverseSortUndefined: Self = StObject.set(x, "qReverseSort", js.undefined)
     
-    @scala.inline
-    def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
+    inline def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTagsUndefined: Self = StObject.set(x, "qTags", js.undefined)
+    inline def setQTagsUndefined: Self = StObject.set(x, "qTags", js.undefined)
     
-    @scala.inline
-    def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
   }
 }

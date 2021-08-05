@@ -24,25 +24,19 @@ trait SchemaOutputConfig extends StObject {
 }
 object SchemaOutputConfig {
   
-  @scala.inline
-  def apply(): SchemaOutputConfig = {
+  inline def apply(): SchemaOutputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOutputConfig]
   }
   
-  @scala.inline
-  implicit class SchemaOutputConfigMutableBuilder[Self <: SchemaOutputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOutputConfig](x: Self) {
     
-    @scala.inline
-    def setBigQueryDestination(value: SchemaBigQueryDestination): Self = StObject.set(x, "bigQueryDestination", value.asInstanceOf[js.Any])
+    inline def setBigQueryDestination(value: SchemaBigQueryDestination): Self = StObject.set(x, "bigQueryDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigQueryDestinationUndefined: Self = StObject.set(x, "bigQueryDestination", js.undefined)
+    inline def setBigQueryDestinationUndefined: Self = StObject.set(x, "bigQueryDestination", js.undefined)
     
-    @scala.inline
-    def setGcsDestination(value: SchemaGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
+    inline def setGcsDestination(value: SchemaGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
+    inline def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
   }
 }

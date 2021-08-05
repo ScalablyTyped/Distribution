@@ -10,9 +10,7 @@ object switchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def switch[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_switch")().asInstanceOf[js.Any]
+  inline def switch[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_switch")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def switch_TR[T, R](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_switch")().asInstanceOf[js.Any]
+  inline def switch_TR[T, R](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_switch")().asInstanceOf[js.Any]
 }

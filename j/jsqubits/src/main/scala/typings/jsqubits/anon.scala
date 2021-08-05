@@ -12,20 +12,16 @@ object anon {
   }
   object DecimalPlaces {
     
-    @scala.inline
-    def apply(): DecimalPlaces = {
+    inline def apply(): DecimalPlaces = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecimalPlaces]
     }
     
-    @scala.inline
-    implicit class DecimalPlacesMutableBuilder[Self <: DecimalPlaces] (val x: Self) extends AnyVal {
+    extension [Self <: DecimalPlaces](x: Self) {
       
-      @scala.inline
-      def setDecimalPlaces(value: Double): Self = StObject.set(x, "decimalPlaces", value.asInstanceOf[js.Any])
+      inline def setDecimalPlaces(value: Double): Self = StObject.set(x, "decimalPlaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalPlacesUndefined: Self = StObject.set(x, "decimalPlaces", js.undefined)
+      inline def setDecimalPlacesUndefined: Self = StObject.set(x, "decimalPlaces", js.undefined)
     }
   }
 }

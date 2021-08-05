@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventName extends StObject
 object EventName {
   
-  @scala.inline
-  def account_status: typings.zchatBrowser.zchatBrowserStrings.account_status = "account_status".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.account_status]
+  inline def account_status: typings.zchatBrowser.zchatBrowserStrings.account_status = "account_status".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.account_status]
   
-  @scala.inline
-  def agent_update: typings.zchatBrowser.zchatBrowserStrings.agent_update = "agent_update".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.agent_update]
+  inline def agent_update: typings.zchatBrowser.zchatBrowserStrings.agent_update = "agent_update".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.agent_update]
   
-  @scala.inline
-  def chat: typings.zchatBrowser.zchatBrowserStrings.chat = "chat".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.chat]
+  inline def chat: typings.zchatBrowser.zchatBrowserStrings.chat = "chat".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.chat]
   
-  @scala.inline
-  def connection_update: typings.zchatBrowser.zchatBrowserStrings.connection_update = "connection_update".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.connection_update]
+  inline def connection_update: typings.zchatBrowser.zchatBrowserStrings.connection_update = "connection_update".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.connection_update]
   
-  @scala.inline
-  def department_update: typings.zchatBrowser.zchatBrowserStrings.department_update = "department_update".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.department_update]
+  inline def department_update: typings.zchatBrowser.zchatBrowserStrings.department_update = "department_update".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.department_update]
   
-  @scala.inline
-  def error: typings.zchatBrowser.zchatBrowserStrings.error = "error".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.error]
+  inline def error: typings.zchatBrowser.zchatBrowserStrings.error = "error".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.error]
   
-  @scala.inline
-  def history: typings.zchatBrowser.zchatBrowserStrings.history = "history".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.history]
+  inline def history: typings.zchatBrowser.zchatBrowserStrings.history = "history".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.history]
   
-  @scala.inline
-  def typing: typings.zchatBrowser.zchatBrowserStrings.typing = "typing".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.typing]
+  inline def typing: typings.zchatBrowser.zchatBrowserStrings.typing = "typing".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.typing]
   
-  @scala.inline
-  def visitor_update: typings.zchatBrowser.zchatBrowserStrings.visitor_update = "visitor_update".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.visitor_update]
+  inline def visitor_update: typings.zchatBrowser.zchatBrowserStrings.visitor_update = "visitor_update".asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.visitor_update]
 }

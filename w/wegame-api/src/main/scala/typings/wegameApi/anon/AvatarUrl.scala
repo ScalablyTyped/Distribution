@@ -23,22 +23,17 @@ trait AvatarUrl extends StObject {
 }
 object AvatarUrl {
   
-  @scala.inline
-  def apply(avatarUrl: String, nickname: String, openid: String): AvatarUrl = {
+  inline def apply(avatarUrl: String, nickname: String, openid: String): AvatarUrl = {
     val __obj = js.Dynamic.literal(avatarUrl = avatarUrl.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], openid = openid.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvatarUrl]
   }
   
-  @scala.inline
-  implicit class AvatarUrlMutableBuilder[Self <: AvatarUrl] (val x: Self) extends AnyVal {
+  extension [Self <: AvatarUrl](x: Self) {
     
-    @scala.inline
-    def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
+    inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+    inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
+    inline def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
   }
 }

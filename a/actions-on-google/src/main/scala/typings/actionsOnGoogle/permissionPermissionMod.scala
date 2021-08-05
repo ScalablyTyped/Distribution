@@ -47,36 +47,28 @@ object permissionPermissionMod {
   }
   object PermissionOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       permissions: GoogleActionsV2PermissionValueSpecPermissions | js.Array[GoogleActionsV2PermissionValueSpecPermissions]
     ): PermissionOptions = {
       val __obj = js.Dynamic.literal(permissions = permissions.asInstanceOf[js.Any])
       __obj.asInstanceOf[PermissionOptions]
     }
     
-    @scala.inline
-    implicit class PermissionOptionsMutableBuilder[Self <: PermissionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PermissionOptions](x: Self) {
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setExtra(value: GoogleActionsV2PermissionValueSpec): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: GoogleActionsV2PermissionValueSpec): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setPermissions(
+      inline def setPermissions(
         value: GoogleActionsV2PermissionValueSpecPermissions | js.Array[GoogleActionsV2PermissionValueSpecPermissions]
       ): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsVarargs(value: GoogleActionsV2PermissionValueSpecPermissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+      inline def setPermissionsVarargs(value: GoogleActionsV2PermissionValueSpecPermissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     }
   }
 }

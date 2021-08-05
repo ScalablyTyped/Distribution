@@ -13,7 +13,7 @@ object streamIntervalRequestStreamMod {
   class IntervalRequestStream protected () extends BaseStream {
     def this(scheduler: Scheduler) = this()
     
-    var _isEnd: js.Any = js.native
+    /* private */ var _isEnd: js.Any = js.native
   }
   /* static members */
   object IntervalRequestStream {
@@ -22,7 +22,6 @@ object streamIntervalRequestStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(scheduler: Scheduler): IntervalRequestStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any]).asInstanceOf[IntervalRequestStream]
+    inline def create(scheduler: Scheduler): IntervalRequestStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any]).asInstanceOf[IntervalRequestStream]
   }
 }

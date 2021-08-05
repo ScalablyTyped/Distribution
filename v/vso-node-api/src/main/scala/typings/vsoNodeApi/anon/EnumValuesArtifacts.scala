@@ -10,16 +10,13 @@ trait EnumValuesArtifacts extends StObject {
 }
 object EnumValuesArtifacts {
   
-  @scala.inline
-  def apply(enumValues: Artifacts): EnumValuesArtifacts = {
+  inline def apply(enumValues: Artifacts): EnumValuesArtifacts = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesArtifacts]
   }
   
-  @scala.inline
-  implicit class EnumValuesArtifactsMutableBuilder[Self <: EnumValuesArtifacts] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesArtifacts](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Artifacts): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Artifacts): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

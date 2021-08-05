@@ -26,8 +26,7 @@ trait Typeofomnibox extends StObject {
 }
 object Typeofomnibox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onDeleteSuggestion: OmniboxSuggestionDeletedEvent,
     onInputCancelled: OmniboxInputCancelledEvent,
     onInputChanged: OmniboxInputChangedEvent,
@@ -39,25 +38,18 @@ object Typeofomnibox {
     __obj.asInstanceOf[Typeofomnibox]
   }
   
-  @scala.inline
-  implicit class TypeofomniboxMutableBuilder[Self <: Typeofomnibox] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofomnibox](x: Self) {
     
-    @scala.inline
-    def setOnDeleteSuggestion(value: OmniboxSuggestionDeletedEvent): Self = StObject.set(x, "onDeleteSuggestion", value.asInstanceOf[js.Any])
+    inline def setOnDeleteSuggestion(value: OmniboxSuggestionDeletedEvent): Self = StObject.set(x, "onDeleteSuggestion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnInputCancelled(value: OmniboxInputCancelledEvent): Self = StObject.set(x, "onInputCancelled", value.asInstanceOf[js.Any])
+    inline def setOnInputCancelled(value: OmniboxInputCancelledEvent): Self = StObject.set(x, "onInputCancelled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnInputChanged(value: OmniboxInputChangedEvent): Self = StObject.set(x, "onInputChanged", value.asInstanceOf[js.Any])
+    inline def setOnInputChanged(value: OmniboxInputChangedEvent): Self = StObject.set(x, "onInputChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnInputEntered(value: OmniboxInputEnteredEvent): Self = StObject.set(x, "onInputEntered", value.asInstanceOf[js.Any])
+    inline def setOnInputEntered(value: OmniboxInputEnteredEvent): Self = StObject.set(x, "onInputEntered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnInputStarted(value: OmniboxInputStartedEvent): Self = StObject.set(x, "onInputStarted", value.asInstanceOf[js.Any])
+    inline def setOnInputStarted(value: OmniboxInputStartedEvent): Self = StObject.set(x, "onInputStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDefaultSuggestion(value: Suggestion => Unit): Self = StObject.set(x, "setDefaultSuggestion", js.Any.fromFunction1(value))
+    inline def setSetDefaultSuggestion(value: Suggestion => Unit): Self = StObject.set(x, "setDefaultSuggestion", js.Any.fromFunction1(value))
   }
 }

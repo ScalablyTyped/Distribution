@@ -54,8 +54,7 @@ trait IDirectionsStep extends StObject {
 }
 object IDirectionsStep {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     childItineraryItems: js.Array[IDirectionsStep],
     coordinate: Location,
     distance: String,
@@ -76,64 +75,44 @@ object IDirectionsStep {
     __obj.asInstanceOf[IDirectionsStep]
   }
   
-  @scala.inline
-  implicit class IDirectionsStepMutableBuilder[Self <: IDirectionsStep] (val x: Self) extends AnyVal {
+  extension [Self <: IDirectionsStep](x: Self) {
     
-    @scala.inline
-    def setChildItineraryItems(value: js.Array[IDirectionsStep]): Self = StObject.set(x, "childItineraryItems", value.asInstanceOf[js.Any])
+    inline def setChildItineraryItems(value: js.Array[IDirectionsStep]): Self = StObject.set(x, "childItineraryItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildItineraryItemsVarargs(value: IDirectionsStep*): Self = StObject.set(x, "childItineraryItems", js.Array(value :_*))
+    inline def setChildItineraryItemsVarargs(value: IDirectionsStep*): Self = StObject.set(x, "childItineraryItems", js.Array(value :_*))
     
-    @scala.inline
-    def setCoordinate(value: Location): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
+    inline def setCoordinate(value: Location): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInSeconds(value: Double): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationInSeconds(value: Double): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedText(value: String): Self = StObject.set(x, "formattedText", value.asInstanceOf[js.Any])
+    inline def setFormattedText(value: String): Self = StObject.set(x, "formattedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsImageRoadShield(value: Boolean): Self = StObject.set(x, "isImageRoadShield", value.asInstanceOf[js.Any])
+    inline def setIsImageRoadShield(value: Boolean): Self = StObject.set(x, "isImageRoadShield", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManeuver(value: String): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
+    inline def setManeuver(value: String): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostIntersectionHints(value: js.Array[String]): Self = StObject.set(x, "postIntersectionHints", value.asInstanceOf[js.Any])
+    inline def setPostIntersectionHints(value: js.Array[String]): Self = StObject.set(x, "postIntersectionHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostIntersectionHintsVarargs(value: String*): Self = StObject.set(x, "postIntersectionHints", js.Array(value :_*))
+    inline def setPostIntersectionHintsVarargs(value: String*): Self = StObject.set(x, "postIntersectionHints", js.Array(value :_*))
     
-    @scala.inline
-    def setPreIntersectionHints(value: js.Array[String]): Self = StObject.set(x, "preIntersectionHints", value.asInstanceOf[js.Any])
+    inline def setPreIntersectionHints(value: js.Array[String]): Self = StObject.set(x, "preIntersectionHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreIntersectionHintsVarargs(value: String*): Self = StObject.set(x, "preIntersectionHints", js.Array(value :_*))
+    inline def setPreIntersectionHintsVarargs(value: String*): Self = StObject.set(x, "preIntersectionHints", js.Array(value :_*))
     
-    @scala.inline
-    def setStartStopName(value: String): Self = StObject.set(x, "startStopName", value.asInstanceOf[js.Any])
+    inline def setStartStopName(value: String): Self = StObject.set(x, "startStopName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitLine(value: ITransitLine): Self = StObject.set(x, "transitLine", value.asInstanceOf[js.Any])
+    inline def setTransitLine(value: ITransitLine): Self = StObject.set(x, "transitLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitStepIcon(value: String): Self = StObject.set(x, "transitStepIcon", value.asInstanceOf[js.Any])
+    inline def setTransitStepIcon(value: String): Self = StObject.set(x, "transitStepIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitStopId(value: String): Self = StObject.set(x, "transitStopId", value.asInstanceOf[js.Any])
+    inline def setTransitStopId(value: String): Self = StObject.set(x, "transitStopId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitTerminus(value: String): Self = StObject.set(x, "transitTerminus", value.asInstanceOf[js.Any])
+    inline def setTransitTerminus(value: String): Self = StObject.set(x, "transitTerminus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnings(value: js.Array[IDirectionsStepWarning]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[IDirectionsStepWarning]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsVarargs(value: IDirectionsStepWarning*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: IDirectionsStepWarning*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

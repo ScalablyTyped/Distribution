@@ -14,19 +14,15 @@ trait OnLocalServiceResolveFailCallbackResult extends StObject {
 }
 object OnLocalServiceResolveFailCallbackResult {
   
-  @scala.inline
-  def apply(serviceName: String, serviceType: String): OnLocalServiceResolveFailCallbackResult = {
+  inline def apply(serviceName: String, serviceType: String): OnLocalServiceResolveFailCallbackResult = {
     val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], serviceType = serviceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnLocalServiceResolveFailCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnLocalServiceResolveFailCallbackResultMutableBuilder[Self <: OnLocalServiceResolveFailCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnLocalServiceResolveFailCallbackResult](x: Self) {
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
   }
 }

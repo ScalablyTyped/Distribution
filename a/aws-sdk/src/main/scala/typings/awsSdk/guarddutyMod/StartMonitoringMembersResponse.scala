@@ -13,19 +13,15 @@ trait StartMonitoringMembersResponse extends StObject {
 }
 object StartMonitoringMembersResponse {
   
-  @scala.inline
-  def apply(UnprocessedAccounts: UnprocessedAccounts): StartMonitoringMembersResponse = {
+  inline def apply(UnprocessedAccounts: UnprocessedAccounts): StartMonitoringMembersResponse = {
     val __obj = js.Dynamic.literal(UnprocessedAccounts = UnprocessedAccounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartMonitoringMembersResponse]
   }
   
-  @scala.inline
-  implicit class StartMonitoringMembersResponseMutableBuilder[Self <: StartMonitoringMembersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartMonitoringMembersResponse](x: Self) {
     
-    @scala.inline
-    def setUnprocessedAccounts(value: UnprocessedAccounts): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
+    inline def setUnprocessedAccounts(value: UnprocessedAccounts): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
+    inline def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
   }
 }

@@ -13,19 +13,15 @@ trait ItemsPnpObject extends StObject {
 }
 object ItemsPnpObject {
   
-  @scala.inline
-  def apply(items: PnpObject, returnValue: Double): ItemsPnpObject = {
+  inline def apply(items: PnpObject, returnValue: Double): ItemsPnpObject = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsPnpObject]
   }
   
-  @scala.inline
-  implicit class ItemsPnpObjectMutableBuilder[Self <: ItemsPnpObject] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsPnpObject](x: Self) {
     
-    @scala.inline
-    def setItems(value: PnpObject): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: PnpObject): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

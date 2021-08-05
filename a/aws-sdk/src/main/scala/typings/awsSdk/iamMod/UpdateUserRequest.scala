@@ -23,28 +23,21 @@ trait UpdateUserRequest extends StObject {
 }
 object UpdateUserRequest {
   
-  @scala.inline
-  def apply(UserName: existingUserNameType): UpdateUserRequest = {
+  inline def apply(UserName: existingUserNameType): UpdateUserRequest = {
     val __obj = js.Dynamic.literal(UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserRequest]
   }
   
-  @scala.inline
-  implicit class UpdateUserRequestMutableBuilder[Self <: UpdateUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUserRequest](x: Self) {
     
-    @scala.inline
-    def setNewPath(value: pathType): Self = StObject.set(x, "NewPath", value.asInstanceOf[js.Any])
+    inline def setNewPath(value: pathType): Self = StObject.set(x, "NewPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPathUndefined: Self = StObject.set(x, "NewPath", js.undefined)
+    inline def setNewPathUndefined: Self = StObject.set(x, "NewPath", js.undefined)
     
-    @scala.inline
-    def setNewUserName(value: userNameType): Self = StObject.set(x, "NewUserName", value.asInstanceOf[js.Any])
+    inline def setNewUserName(value: userNameType): Self = StObject.set(x, "NewUserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewUserNameUndefined: Self = StObject.set(x, "NewUserName", js.undefined)
+    inline def setNewUserNameUndefined: Self = StObject.set(x, "NewUserName", js.undefined)
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

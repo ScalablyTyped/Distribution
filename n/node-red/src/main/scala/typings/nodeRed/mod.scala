@@ -262,8 +262,7 @@ object mod extends Shortcut {
   }
   object NodeRedApp {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       auth: Auth,
       events: EventEmitter,
       httpAdmin: Express,
@@ -283,50 +282,35 @@ object mod extends Shortcut {
       __obj.asInstanceOf[NodeRedApp]
     }
     
-    @scala.inline
-    implicit class NodeRedAppMutableBuilder[Self <: NodeRedApp] (val x: Self) extends AnyVal {
+    extension [Self <: NodeRedApp](x: Self) {
       
-      @scala.inline
-      def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpAdmin(value: Express): Self = StObject.set(x, "httpAdmin", value.asInstanceOf[js.Any])
+      inline def setHttpAdmin(value: Express): Self = StObject.set(x, "httpAdmin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpNode(value: Express): Self = StObject.set(x, "httpNode", value.asInstanceOf[js.Any])
+      inline def setHttpNode(value: Express): Self = StObject.set(x, "httpNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit(value: (Server, LocalSettings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+      inline def setInit(value: (Server, LocalSettings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLog(value: Log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodes(value: InternalNodesModule): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: InternalNodesModule): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntime(value: RuntimeModule): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: RuntimeModule): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings(value: PersistentSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: PersistentSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: () => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => js.Promise[Unit]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => js.Promise[Unit]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUtil(value: Util): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
+      inline def setUtil(value: Util): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

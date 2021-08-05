@@ -179,26 +179,20 @@ object Graph {
   }
   object ConnectionOptions {
     
-    @scala.inline
-    def apply(): ConnectionOptions = {
+    inline def apply(): ConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    @scala.inline
-    implicit class ConnectionOptionsMutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setInbound(value: Boolean): Self = StObject.set(x, "inbound", value.asInstanceOf[js.Any])
+      inline def setInbound(value: Boolean): Self = StObject.set(x, "inbound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInboundUndefined: Self = StObject.set(x, "inbound", js.undefined)
+      inline def setInboundUndefined: Self = StObject.set(x, "inbound", js.undefined)
       
-      @scala.inline
-      def setOutbound(value: Boolean): Self = StObject.set(x, "outbound", value.asInstanceOf[js.Any])
+      inline def setOutbound(value: Boolean): Self = StObject.set(x, "outbound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutboundUndefined: Self = StObject.set(x, "outbound", js.undefined)
+      inline def setOutboundUndefined: Self = StObject.set(x, "outbound", js.undefined)
     }
   }
   
@@ -210,20 +204,16 @@ object Graph {
   }
   object ExploreOptions {
     
-    @scala.inline
-    def apply(): ExploreOptions = {
+    inline def apply(): ExploreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExploreOptions]
     }
     
-    @scala.inline
-    implicit class ExploreOptionsMutableBuilder[Self <: ExploreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExploreOptions](x: Self) {
       
-      @scala.inline
-      def setBreadthFirst(value: Boolean): Self = StObject.set(x, "breadthFirst", value.asInstanceOf[js.Any])
+      inline def setBreadthFirst(value: Boolean): Self = StObject.set(x, "breadthFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreadthFirstUndefined: Self = StObject.set(x, "breadthFirst", js.undefined)
+      inline def setBreadthFirstUndefined: Self = StObject.set(x, "breadthFirst", js.undefined)
     }
   }
   

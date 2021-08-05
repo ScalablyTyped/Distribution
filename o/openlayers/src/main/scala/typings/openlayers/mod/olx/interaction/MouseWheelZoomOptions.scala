@@ -16,37 +16,27 @@ trait MouseWheelZoomOptions extends StObject {
 }
 object MouseWheelZoomOptions {
   
-  @scala.inline
-  def apply(): MouseWheelZoomOptions = {
+  inline def apply(): MouseWheelZoomOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MouseWheelZoomOptions]
   }
   
-  @scala.inline
-  implicit class MouseWheelZoomOptionsMutableBuilder[Self <: MouseWheelZoomOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MouseWheelZoomOptions](x: Self) {
     
-    @scala.inline
-    def setConstrainResolution(value: Boolean): Self = StObject.set(x, "constrainResolution", value.asInstanceOf[js.Any])
+    inline def setConstrainResolution(value: Boolean): Self = StObject.set(x, "constrainResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstrainResolutionUndefined: Self = StObject.set(x, "constrainResolution", js.undefined)
+    inline def setConstrainResolutionUndefined: Self = StObject.set(x, "constrainResolution", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUseAnchor(value: Boolean): Self = StObject.set(x, "useAnchor", value.asInstanceOf[js.Any])
+    inline def setUseAnchor(value: Boolean): Self = StObject.set(x, "useAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseAnchorUndefined: Self = StObject.set(x, "useAnchor", js.undefined)
+    inline def setUseAnchorUndefined: Self = StObject.set(x, "useAnchor", js.undefined)
   }
 }

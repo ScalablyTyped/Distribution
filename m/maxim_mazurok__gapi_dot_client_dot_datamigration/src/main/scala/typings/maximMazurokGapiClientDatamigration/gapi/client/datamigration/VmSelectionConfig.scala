@@ -11,19 +11,15 @@ trait VmSelectionConfig extends StObject {
 }
 object VmSelectionConfig {
   
-  @scala.inline
-  def apply(): VmSelectionConfig = {
+  inline def apply(): VmSelectionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VmSelectionConfig]
   }
   
-  @scala.inline
-  implicit class VmSelectionConfigMutableBuilder[Self <: VmSelectionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: VmSelectionConfig](x: Self) {
     
-    @scala.inline
-    def setVmZone(value: String): Self = StObject.set(x, "vmZone", value.asInstanceOf[js.Any])
+    inline def setVmZone(value: String): Self = StObject.set(x, "vmZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmZoneUndefined: Self = StObject.set(x, "vmZone", js.undefined)
+    inline def setVmZoneUndefined: Self = StObject.set(x, "vmZone", js.undefined)
   }
 }

@@ -17,20 +17,16 @@ trait IPaymentMethodListOptions[T /* <: IPaymentMethodType */]
 }
 object IPaymentMethodListOptions {
   
-  @scala.inline
-  def apply[T /* <: IPaymentMethodType */](customer: String, `type`: T): IPaymentMethodListOptions[T] = {
+  inline def apply[T /* <: IPaymentMethodType */](customer: String, `type`: T): IPaymentMethodListOptions[T] = {
     val __obj = js.Dynamic.literal(customer = customer.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodListOptions[T]]
   }
   
-  @scala.inline
-  implicit class IPaymentMethodListOptionsMutableBuilder[Self <: IPaymentMethodListOptions[?], T /* <: IPaymentMethodType */] (val x: Self & IPaymentMethodListOptions[T]) extends AnyVal {
+  extension [Self <: IPaymentMethodListOptions[?], T /* <: IPaymentMethodType */](x: Self & IPaymentMethodListOptions[T]) {
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

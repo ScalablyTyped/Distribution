@@ -14,25 +14,19 @@ trait UrlDownloadSize extends StObject {
 }
 object UrlDownloadSize {
   
-  @scala.inline
-  def apply(): UrlDownloadSize = {
+  inline def apply(): UrlDownloadSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UrlDownloadSize]
   }
   
-  @scala.inline
-  implicit class UrlDownloadSizeMutableBuilder[Self <: UrlDownloadSize] (val x: Self) extends AnyVal {
+  extension [Self <: UrlDownloadSize](x: Self) {
     
-    @scala.inline
-    def setDownloadSizeKb(value: Double): Self = StObject.set(x, "downloadSizeKb", value.asInstanceOf[js.Any])
+    inline def setDownloadSizeKb(value: Double): Self = StObject.set(x, "downloadSizeKb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadSizeKbUndefined: Self = StObject.set(x, "downloadSizeKb", js.undefined)
+    inline def setDownloadSizeKbUndefined: Self = StObject.set(x, "downloadSizeKb", js.undefined)
     
-    @scala.inline
-    def setNormalizedUrl(value: String): Self = StObject.set(x, "normalizedUrl", value.asInstanceOf[js.Any])
+    inline def setNormalizedUrl(value: String): Self = StObject.set(x, "normalizedUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedUrlUndefined: Self = StObject.set(x, "normalizedUrl", js.undefined)
+    inline def setNormalizedUrlUndefined: Self = StObject.set(x, "normalizedUrl", js.undefined)
   }
 }

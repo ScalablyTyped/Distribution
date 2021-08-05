@@ -11,11 +11,9 @@ object localesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[StringDictionary[String]]
+  inline def default(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[StringDictionary[String]]
   
-  @scala.inline
-  def getLanguage(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")().asInstanceOf[String]
+  inline def getLanguage(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")().asInstanceOf[String]
   
   /* keyof @ant-design/pro-layout.anon.EnUS */ /* Rewritten from type alias, can be one of: 
     - typings.antDesignProLayout.antDesignProLayoutStrings.`zh-CN`

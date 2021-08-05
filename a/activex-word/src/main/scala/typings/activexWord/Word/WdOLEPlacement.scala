@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdOLEPlacement extends StObject
 object WdOLEPlacement {
   
-  @scala.inline
-  def wdFloatOverText: `1` = 1.asInstanceOf[`1`]
+  inline def wdFloatOverText: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdInLine: `0` = 0.asInstanceOf[`0`]
+  inline def wdInLine: `0` = 0.asInstanceOf[`0`]
 }

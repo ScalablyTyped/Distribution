@@ -10,16 +10,13 @@ trait EnumValuesPublisherCreated extends StObject {
 }
 object EnumValuesPublisherCreated {
   
-  @scala.inline
-  def apply(enumValues: PublisherCreated): EnumValuesPublisherCreated = {
+  inline def apply(enumValues: PublisherCreated): EnumValuesPublisherCreated = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesPublisherCreated]
   }
   
-  @scala.inline
-  implicit class EnumValuesPublisherCreatedMutableBuilder[Self <: EnumValuesPublisherCreated] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesPublisherCreated](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: PublisherCreated): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: PublisherCreated): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

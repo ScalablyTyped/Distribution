@@ -39,8 +39,7 @@ object mod {
   }
   object GraphemeSplitter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       countGraphemes: String => Double,
       iterateGraphemes: String => IterableIterator[String],
       splitGraphemes: String => js.Array[String]
@@ -49,17 +48,13 @@ object mod {
       __obj.asInstanceOf[GraphemeSplitter]
     }
     
-    @scala.inline
-    implicit class GraphemeSplitterMutableBuilder[Self <: GraphemeSplitter] (val x: Self) extends AnyVal {
+    extension [Self <: GraphemeSplitter](x: Self) {
       
-      @scala.inline
-      def setCountGraphemes(value: String => Double): Self = StObject.set(x, "countGraphemes", js.Any.fromFunction1(value))
+      inline def setCountGraphemes(value: String => Double): Self = StObject.set(x, "countGraphemes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIterateGraphemes(value: String => IterableIterator[String]): Self = StObject.set(x, "iterateGraphemes", js.Any.fromFunction1(value))
+      inline def setIterateGraphemes(value: String => IterableIterator[String]): Self = StObject.set(x, "iterateGraphemes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSplitGraphemes(value: String => js.Array[String]): Self = StObject.set(x, "splitGraphemes", js.Any.fromFunction1(value))
+      inline def setSplitGraphemes(value: String => js.Array[String]): Self = StObject.set(x, "splitGraphemes", js.Any.fromFunction1(value))
     }
   }
 }

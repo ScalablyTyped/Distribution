@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object collectionMod {
   
-  @scala.inline
-  def apply(options: String | Collection[js.Any]): CollectionSessionStorage = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[CollectionSessionStorage]
-  @scala.inline
-  def apply(options: CollectionStorageOptions): CollectionSessionStorage = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[CollectionSessionStorage]
+  inline def apply(options: String | Collection[js.Any]): CollectionSessionStorage = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[CollectionSessionStorage]
+  inline def apply(options: CollectionStorageOptions): CollectionSessionStorage = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[CollectionSessionStorage]
   
   @JSImport("@arangodb/foxx/sessions/storages/collection", JSImport.Namespace)
   @js.native
@@ -29,35 +27,26 @@ object collectionMod {
   }
   object CollectionStorageOptions {
     
-    @scala.inline
-    def apply(collection: String | Collection[js.Any]): CollectionStorageOptions = {
+    inline def apply(collection: String | Collection[js.Any]): CollectionStorageOptions = {
       val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollectionStorageOptions]
     }
     
-    @scala.inline
-    implicit class CollectionStorageOptionsMutableBuilder[Self <: CollectionStorageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CollectionStorageOptions](x: Self) {
       
-      @scala.inline
-      def setAutoUpdate(value: Boolean): Self = StObject.set(x, "autoUpdate", value.asInstanceOf[js.Any])
+      inline def setAutoUpdate(value: Boolean): Self = StObject.set(x, "autoUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUpdateUndefined: Self = StObject.set(x, "autoUpdate", js.undefined)
+      inline def setAutoUpdateUndefined: Self = StObject.set(x, "autoUpdate", js.undefined)
       
-      @scala.inline
-      def setCollection(value: String | Collection[js.Any]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: String | Collection[js.Any]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPruneExpired(value: Boolean): Self = StObject.set(x, "pruneExpired", value.asInstanceOf[js.Any])
+      inline def setPruneExpired(value: Boolean): Self = StObject.set(x, "pruneExpired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPruneExpiredUndefined: Self = StObject.set(x, "pruneExpired", js.undefined)
+      inline def setPruneExpiredUndefined: Self = StObject.set(x, "pruneExpired", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
 }

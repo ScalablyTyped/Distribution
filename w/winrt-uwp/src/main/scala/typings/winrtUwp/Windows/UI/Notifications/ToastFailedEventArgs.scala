@@ -13,16 +13,13 @@ trait ToastFailedEventArgs extends StObject {
 }
 object ToastFailedEventArgs {
   
-  @scala.inline
-  def apply(errorCode: WinRTError): ToastFailedEventArgs = {
+  inline def apply(errorCode: WinRTError): ToastFailedEventArgs = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastFailedEventArgs]
   }
   
-  @scala.inline
-  implicit class ToastFailedEventArgsMutableBuilder[Self <: ToastFailedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ToastFailedEventArgs](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: WinRTError): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: WinRTError): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
   }
 }

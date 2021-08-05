@@ -13,19 +13,15 @@ trait PpvObj extends StObject {
 }
 object PpvObj {
   
-  @scala.inline
-  def apply(ppvObj: Unit, riid: GUID): PpvObj = {
+  inline def apply(ppvObj: Unit, riid: GUID): PpvObj = {
     val __obj = js.Dynamic.literal(ppvObj = ppvObj.asInstanceOf[js.Any], riid = riid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PpvObj]
   }
   
-  @scala.inline
-  implicit class PpvObjMutableBuilder[Self <: PpvObj] (val x: Self) extends AnyVal {
+  extension [Self <: PpvObj](x: Self) {
     
-    @scala.inline
-    def setPpvObj(value: Unit): Self = StObject.set(x, "ppvObj", value.asInstanceOf[js.Any])
+    inline def setPpvObj(value: Unit): Self = StObject.set(x, "ppvObj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+    inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
   }
 }

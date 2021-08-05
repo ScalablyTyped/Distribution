@@ -12,25 +12,19 @@ trait PromptMessages extends StObject {
 }
 object PromptMessages {
   
-  @scala.inline
-  def apply(): PromptMessages = {
+  inline def apply(): PromptMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PromptMessages]
   }
   
-  @scala.inline
-  implicit class PromptMessagesMutableBuilder[Self <: PromptMessages] (val x: Self) extends AnyVal {
+  extension [Self <: PromptMessages](x: Self) {
     
-    @scala.inline
-    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+    inline def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
+    inline def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait PaymentProcessorInformation extends StObject {
 }
 object PaymentProcessorInformation {
   
-  @scala.inline
-  def apply(): PaymentProcessorInformation = {
+  inline def apply(): PaymentProcessorInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaymentProcessorInformation]
   }
   
-  @scala.inline
-  implicit class PaymentProcessorInformationMutableBuilder[Self <: PaymentProcessorInformation] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentProcessorInformation](x: Self) {
     
-    @scala.inline
-    def setAddress(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setBillingAgreementId(value: String): Self = StObject.set(x, "billingAgreementId", value.asInstanceOf[js.Any])
+    inline def setBillingAgreementId(value: String): Self = StObject.set(x, "billingAgreementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAgreementIdUndefined: Self = StObject.set(x, "billingAgreementId", js.undefined)
+    inline def setBillingAgreementIdUndefined: Self = StObject.set(x, "billingAgreementId", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
   }
 }

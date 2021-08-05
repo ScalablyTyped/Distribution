@@ -13,16 +13,13 @@ trait ListQueueTagsRequest extends StObject {
 }
 object ListQueueTagsRequest {
   
-  @scala.inline
-  def apply(QueueUrl: String): ListQueueTagsRequest = {
+  inline def apply(QueueUrl: String): ListQueueTagsRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQueueTagsRequest]
   }
   
-  @scala.inline
-  implicit class ListQueueTagsRequestMutableBuilder[Self <: ListQueueTagsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListQueueTagsRequest](x: Self) {
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
   }
 }

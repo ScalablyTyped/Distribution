@@ -18,28 +18,21 @@ trait SourceInfo extends StObject {
 }
 object SourceInfo {
   
-  @scala.inline
-  def apply(deviceId: String, facing: String, id: String, kind: String, label: String): SourceInfo = {
+  inline def apply(deviceId: String, facing: String, id: String, kind: String, label: String): SourceInfo = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], facing = facing.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceInfo]
   }
   
-  @scala.inline
-  implicit class SourceInfoMutableBuilder[Self <: SourceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SourceInfo](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacing(value: String): Self = StObject.set(x, "facing", value.asInstanceOf[js.Any])
+    inline def setFacing(value: String): Self = StObject.set(x, "facing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

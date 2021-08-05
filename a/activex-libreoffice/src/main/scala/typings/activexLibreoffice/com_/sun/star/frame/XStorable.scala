@@ -89,8 +89,7 @@ trait XStorable
 }
 object XStorable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Location: String,
     acquire: () => Unit,
     getLocation: () => String,
@@ -106,28 +105,20 @@ object XStorable {
     __obj.asInstanceOf[XStorable]
   }
   
-  @scala.inline
-  implicit class XStorableMutableBuilder[Self <: XStorable] (val x: Self) extends AnyVal {
+  extension [Self <: XStorable](x: Self) {
     
-    @scala.inline
-    def setGetLocation(value: () => String): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
+    inline def setGetLocation(value: () => String): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasLocation(value: () => Boolean): Self = StObject.set(x, "hasLocation", js.Any.fromFunction0(value))
+    inline def setHasLocation(value: () => Boolean): Self = StObject.set(x, "hasLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsReadonly(value: () => Boolean): Self = StObject.set(x, "isReadonly", js.Any.fromFunction0(value))
+    inline def setIsReadonly(value: () => Boolean): Self = StObject.set(x, "isReadonly", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStore(value: () => Unit): Self = StObject.set(x, "store", js.Any.fromFunction0(value))
+    inline def setStore(value: () => Unit): Self = StObject.set(x, "store", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStoreAsURL(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeAsURL", js.Any.fromFunction2(value))
+    inline def setStoreAsURL(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeAsURL", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStoreToURL(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToURL", js.Any.fromFunction2(value))
+    inline def setStoreToURL(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToURL", js.Any.fromFunction2(value))
   }
 }

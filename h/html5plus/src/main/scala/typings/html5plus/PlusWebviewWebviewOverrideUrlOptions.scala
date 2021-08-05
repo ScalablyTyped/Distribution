@@ -80,37 +80,27 @@ trait PlusWebviewWebviewOverrideUrlOptions extends StObject {
 }
 object PlusWebviewWebviewOverrideUrlOptions {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewOverrideUrlOptions = {
+  inline def apply(): PlusWebviewWebviewOverrideUrlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewOverrideUrlOptions]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewOverrideUrlOptionsMutableBuilder[Self <: PlusWebviewWebviewOverrideUrlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewOverrideUrlOptions](x: Self) {
     
-    @scala.inline
-    def setEffect(value: instant | _empty): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: instant | _empty): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+    inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
-    @scala.inline
-    def setExclude(value: none | redirect): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: none | redirect): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
-    @scala.inline
-    def setMode(value: allow | reject): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: allow | reject): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

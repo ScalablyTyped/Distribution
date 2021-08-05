@@ -15,22 +15,17 @@ trait SynonymCollection extends StObject {
 }
 object SynonymCollection {
   
-  @scala.inline
-  def apply(pagination: Pagination, synonyms: js.Array[Synonym]): SynonymCollection = {
+  inline def apply(pagination: Pagination, synonyms: js.Array[Synonym]): SynonymCollection = {
     val __obj = js.Dynamic.literal(pagination = pagination.asInstanceOf[js.Any], synonyms = synonyms.asInstanceOf[js.Any])
     __obj.asInstanceOf[SynonymCollection]
   }
   
-  @scala.inline
-  implicit class SynonymCollectionMutableBuilder[Self <: SynonymCollection] (val x: Self) extends AnyVal {
+  extension [Self <: SynonymCollection](x: Self) {
     
-    @scala.inline
-    def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynonyms(value: js.Array[Synonym]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
+    inline def setSynonyms(value: js.Array[Synonym]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynonymsVarargs(value: Synonym*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+    inline def setSynonymsVarargs(value: Synonym*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
   }
 }

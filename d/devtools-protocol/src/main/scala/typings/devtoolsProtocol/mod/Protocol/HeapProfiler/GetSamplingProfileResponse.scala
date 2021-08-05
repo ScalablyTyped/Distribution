@@ -13,16 +13,13 @@ trait GetSamplingProfileResponse extends StObject {
 }
 object GetSamplingProfileResponse {
   
-  @scala.inline
-  def apply(profile: SamplingHeapProfile): GetSamplingProfileResponse = {
+  inline def apply(profile: SamplingHeapProfile): GetSamplingProfileResponse = {
     val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSamplingProfileResponse]
   }
   
-  @scala.inline
-  implicit class GetSamplingProfileResponseMutableBuilder[Self <: GetSamplingProfileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSamplingProfileResponse](x: Self) {
     
-    @scala.inline
-    def setProfile(value: SamplingHeapProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: SamplingHeapProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait TargetCoordinates extends StObject {
 }
 object TargetCoordinates {
   
-  @scala.inline
-  def apply(returnValue: IPromiseWithIAsyncAction, targetCoordinates: Point): TargetCoordinates = {
+  inline def apply(returnValue: IPromiseWithIAsyncAction, targetCoordinates: Point): TargetCoordinates = {
     val __obj = js.Dynamic.literal(returnValue = returnValue.asInstanceOf[js.Any], targetCoordinates = targetCoordinates.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetCoordinates]
   }
   
-  @scala.inline
-  implicit class TargetCoordinatesMutableBuilder[Self <: TargetCoordinates] (val x: Self) extends AnyVal {
+  extension [Self <: TargetCoordinates](x: Self) {
     
-    @scala.inline
-    def setReturnValue(value: IPromiseWithIAsyncAction): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: IPromiseWithIAsyncAction): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCoordinates(value: Point): Self = StObject.set(x, "targetCoordinates", value.asInstanceOf[js.Any])
+    inline def setTargetCoordinates(value: Point): Self = StObject.set(x, "targetCoordinates", value.asInstanceOf[js.Any])
   }
 }

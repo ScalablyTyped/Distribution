@@ -26,31 +26,23 @@ trait RestartFrameReturnType extends StObject {
 }
 object RestartFrameReturnType {
   
-  @scala.inline
-  def apply(callFrames: js.Array[CallFrame]): RestartFrameReturnType = {
+  inline def apply(callFrames: js.Array[CallFrame]): RestartFrameReturnType = {
     val __obj = js.Dynamic.literal(callFrames = callFrames.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestartFrameReturnType]
   }
   
-  @scala.inline
-  implicit class RestartFrameReturnTypeMutableBuilder[Self <: RestartFrameReturnType] (val x: Self) extends AnyVal {
+  extension [Self <: RestartFrameReturnType](x: Self) {
     
-    @scala.inline
-    def setAsyncStackTrace(value: StackTrace): Self = StObject.set(x, "asyncStackTrace", value.asInstanceOf[js.Any])
+    inline def setAsyncStackTrace(value: StackTrace): Self = StObject.set(x, "asyncStackTrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncStackTraceId(value: StackTraceId): Self = StObject.set(x, "asyncStackTraceId", value.asInstanceOf[js.Any])
+    inline def setAsyncStackTraceId(value: StackTraceId): Self = StObject.set(x, "asyncStackTraceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncStackTraceIdUndefined: Self = StObject.set(x, "asyncStackTraceId", js.undefined)
+    inline def setAsyncStackTraceIdUndefined: Self = StObject.set(x, "asyncStackTraceId", js.undefined)
     
-    @scala.inline
-    def setAsyncStackTraceUndefined: Self = StObject.set(x, "asyncStackTrace", js.undefined)
+    inline def setAsyncStackTraceUndefined: Self = StObject.set(x, "asyncStackTrace", js.undefined)
     
-    @scala.inline
-    def setCallFrames(value: js.Array[CallFrame]): Self = StObject.set(x, "callFrames", value.asInstanceOf[js.Any])
+    inline def setCallFrames(value: js.Array[CallFrame]): Self = StObject.set(x, "callFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value :_*))
+    inline def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value :_*))
   }
 }

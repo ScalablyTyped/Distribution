@@ -10,16 +10,13 @@ trait DeleteVoiceTemplateResponse extends StObject {
 }
 object DeleteVoiceTemplateResponse {
   
-  @scala.inline
-  def apply(MessageBody: MessageBody): DeleteVoiceTemplateResponse = {
+  inline def apply(MessageBody: MessageBody): DeleteVoiceTemplateResponse = {
     val __obj = js.Dynamic.literal(MessageBody = MessageBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVoiceTemplateResponse]
   }
   
-  @scala.inline
-  implicit class DeleteVoiceTemplateResponseMutableBuilder[Self <: DeleteVoiceTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVoiceTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setMessageBody(value: MessageBody): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
+    inline def setMessageBody(value: MessageBody): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
   }
 }

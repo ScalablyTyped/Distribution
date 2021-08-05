@@ -106,134 +106,92 @@ object Extensions {
   }
   object DragAndDrop5 {
     
-    @scala.inline
-    def apply(): DragAndDrop5 = {
+    inline def apply(): DragAndDrop5 = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DragAndDrop5]
     }
     
-    @scala.inline
-    implicit class DragAndDrop5MutableBuilder[Self <: DragAndDrop5] (val x: Self) extends AnyVal {
+    extension [Self <: DragAndDrop5](x: Self) {
       
-      @scala.inline
-      def setAutoExpandMS(value: Double): Self = StObject.set(x, "autoExpandMS", value.asInstanceOf[js.Any])
+      inline def setAutoExpandMS(value: Double): Self = StObject.set(x, "autoExpandMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoExpandMSUndefined: Self = StObject.set(x, "autoExpandMS", js.undefined)
+      inline def setAutoExpandMSUndefined: Self = StObject.set(x, "autoExpandMS", js.undefined)
       
-      @scala.inline
-      def setDragDrag(value: (/* sourceNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragDrag", js.Any.fromFunction2(value))
+      inline def setDragDrag(value: (/* sourceNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragDrag", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragDragUndefined: Self = StObject.set(x, "dragDrag", js.undefined)
+      inline def setDragDragUndefined: Self = StObject.set(x, "dragDrag", js.undefined)
       
-      @scala.inline
-      def setDragDrop(value: (/* node */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragDrop", js.Any.fromFunction2(value))
+      inline def setDragDrop(value: (/* node */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragDrop", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragDropUndefined: Self = StObject.set(x, "dragDrop", js.undefined)
+      inline def setDragDropUndefined: Self = StObject.set(x, "dragDrop", js.undefined)
       
-      @scala.inline
-      def setDragEnd(value: (/* sourceNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragEnd", js.Any.fromFunction2(value))
+      inline def setDragEnd(value: (/* sourceNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragEndUndefined: Self = StObject.set(x, "dragEnd", js.undefined)
+      inline def setDragEndUndefined: Self = StObject.set(x, "dragEnd", js.undefined)
       
-      @scala.inline
-      def setDragEnter(value: (/* targetNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragEnter", js.Any.fromFunction2(value))
+      inline def setDragEnter(value: (/* targetNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragEnterUndefined: Self = StObject.set(x, "dragEnter", js.undefined)
+      inline def setDragEnterUndefined: Self = StObject.set(x, "dragEnter", js.undefined)
       
-      @scala.inline
-      def setDragExpand(value: (/* targetNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragExpand", js.Any.fromFunction2(value))
+      inline def setDragExpand(value: (/* targetNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragExpand", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragExpandUndefined: Self = StObject.set(x, "dragExpand", js.undefined)
+      inline def setDragExpandUndefined: Self = StObject.set(x, "dragExpand", js.undefined)
       
-      @scala.inline
-      def setDragLeave(value: (/* targetNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragLeave", js.Any.fromFunction2(value))
+      inline def setDragLeave(value: (/* targetNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragLeaveUndefined: Self = StObject.set(x, "dragLeave", js.undefined)
+      inline def setDragLeaveUndefined: Self = StObject.set(x, "dragLeave", js.undefined)
       
-      @scala.inline
-      def setDragOver(value: (/* targetNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction2(value))
+      inline def setDragOver(value: (/* targetNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragOverUndefined: Self = StObject.set(x, "dragOver", js.undefined)
+      inline def setDragOverUndefined: Self = StObject.set(x, "dragOver", js.undefined)
       
-      @scala.inline
-      def setDragStart(value: (/* sourceNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction2(value))
+      inline def setDragStart(value: (/* sourceNode */ FancytreeNode, /* data */ js.Any) => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
+      inline def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
       
-      @scala.inline
-      def setDropMarkerInsertOffsetX(value: Double): Self = StObject.set(x, "dropMarkerInsertOffsetX", value.asInstanceOf[js.Any])
+      inline def setDropMarkerInsertOffsetX(value: Double): Self = StObject.set(x, "dropMarkerInsertOffsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropMarkerInsertOffsetXUndefined: Self = StObject.set(x, "dropMarkerInsertOffsetX", js.undefined)
+      inline def setDropMarkerInsertOffsetXUndefined: Self = StObject.set(x, "dropMarkerInsertOffsetX", js.undefined)
       
-      @scala.inline
-      def setDropMarkerOffsetX(value: Double): Self = StObject.set(x, "dropMarkerOffsetX", value.asInstanceOf[js.Any])
+      inline def setDropMarkerOffsetX(value: Double): Self = StObject.set(x, "dropMarkerOffsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropMarkerOffsetXUndefined: Self = StObject.set(x, "dropMarkerOffsetX", js.undefined)
+      inline def setDropMarkerOffsetXUndefined: Self = StObject.set(x, "dropMarkerOffsetX", js.undefined)
       
-      @scala.inline
-      def setMultiSource(value: Boolean): Self = StObject.set(x, "multiSource", value.asInstanceOf[js.Any])
+      inline def setMultiSource(value: Boolean): Self = StObject.set(x, "multiSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiSourceUndefined: Self = StObject.set(x, "multiSource", js.undefined)
+      inline def setMultiSourceUndefined: Self = StObject.set(x, "multiSource", js.undefined)
       
-      @scala.inline
-      def setPreventForeignNodes(value: Boolean): Self = StObject.set(x, "preventForeignNodes", value.asInstanceOf[js.Any])
+      inline def setPreventForeignNodes(value: Boolean): Self = StObject.set(x, "preventForeignNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventForeignNodesUndefined: Self = StObject.set(x, "preventForeignNodes", js.undefined)
+      inline def setPreventForeignNodesUndefined: Self = StObject.set(x, "preventForeignNodes", js.undefined)
       
-      @scala.inline
-      def setPreventNonNodes(value: Boolean): Self = StObject.set(x, "preventNonNodes", value.asInstanceOf[js.Any])
+      inline def setPreventNonNodes(value: Boolean): Self = StObject.set(x, "preventNonNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventNonNodesUndefined: Self = StObject.set(x, "preventNonNodes", js.undefined)
+      inline def setPreventNonNodesUndefined: Self = StObject.set(x, "preventNonNodes", js.undefined)
       
-      @scala.inline
-      def setPreventRecursiveMoves(value: Boolean): Self = StObject.set(x, "preventRecursiveMoves", value.asInstanceOf[js.Any])
+      inline def setPreventRecursiveMoves(value: Boolean): Self = StObject.set(x, "preventRecursiveMoves", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventRecursiveMovesUndefined: Self = StObject.set(x, "preventRecursiveMoves", js.undefined)
+      inline def setPreventRecursiveMovesUndefined: Self = StObject.set(x, "preventRecursiveMoves", js.undefined)
       
-      @scala.inline
-      def setPreventVoidMoves(value: Boolean): Self = StObject.set(x, "preventVoidMoves", value.asInstanceOf[js.Any])
+      inline def setPreventVoidMoves(value: Boolean): Self = StObject.set(x, "preventVoidMoves", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventVoidMovesUndefined: Self = StObject.set(x, "preventVoidMoves", js.undefined)
+      inline def setPreventVoidMovesUndefined: Self = StObject.set(x, "preventVoidMoves", js.undefined)
       
-      @scala.inline
-      def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
+      inline def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollSensitivityUndefined: Self = StObject.set(x, "scrollSensitivity", js.undefined)
+      inline def setScrollSensitivityUndefined: Self = StObject.set(x, "scrollSensitivity", js.undefined)
       
-      @scala.inline
-      def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
+      inline def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
+      inline def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
       
-      @scala.inline
-      def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       
-      @scala.inline
-      def setSetTextTypeJson(value: Boolean): Self = StObject.set(x, "setTextTypeJson", value.asInstanceOf[js.Any])
+      inline def setSetTextTypeJson(value: Boolean): Self = StObject.set(x, "setTextTypeJson", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetTextTypeJsonUndefined: Self = StObject.set(x, "setTextTypeJson", js.undefined)
+      inline def setSetTextTypeJsonUndefined: Self = StObject.set(x, "setTextTypeJson", js.undefined)
     }
   }
   
@@ -296,74 +254,52 @@ object Extensions {
   }
   object Filter {
     
-    @scala.inline
-    def apply(): Filter = {
+    inline def apply(): Filter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setAutoApply(value: Boolean): Self = StObject.set(x, "autoApply", value.asInstanceOf[js.Any])
+      inline def setAutoApply(value: Boolean): Self = StObject.set(x, "autoApply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoApplyUndefined: Self = StObject.set(x, "autoApply", js.undefined)
+      inline def setAutoApplyUndefined: Self = StObject.set(x, "autoApply", js.undefined)
       
-      @scala.inline
-      def setAutoExpand(value: Boolean): Self = StObject.set(x, "autoExpand", value.asInstanceOf[js.Any])
+      inline def setAutoExpand(value: Boolean): Self = StObject.set(x, "autoExpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoExpandUndefined: Self = StObject.set(x, "autoExpand", js.undefined)
+      inline def setAutoExpandUndefined: Self = StObject.set(x, "autoExpand", js.undefined)
       
-      @scala.inline
-      def setCounter(value: Boolean): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+      inline def setCounter(value: Boolean): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
+      inline def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
       
-      @scala.inline
-      def setFuzzy(value: Boolean): Self = StObject.set(x, "fuzzy", value.asInstanceOf[js.Any])
+      inline def setFuzzy(value: Boolean): Self = StObject.set(x, "fuzzy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFuzzyUndefined: Self = StObject.set(x, "fuzzy", js.undefined)
+      inline def setFuzzyUndefined: Self = StObject.set(x, "fuzzy", js.undefined)
       
-      @scala.inline
-      def setHideExpandedCounter(value: Boolean): Self = StObject.set(x, "hideExpandedCounter", value.asInstanceOf[js.Any])
+      inline def setHideExpandedCounter(value: Boolean): Self = StObject.set(x, "hideExpandedCounter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideExpandedCounterUndefined: Self = StObject.set(x, "hideExpandedCounter", js.undefined)
+      inline def setHideExpandedCounterUndefined: Self = StObject.set(x, "hideExpandedCounter", js.undefined)
       
-      @scala.inline
-      def setHideExpanders(value: Boolean): Self = StObject.set(x, "hideExpanders", value.asInstanceOf[js.Any])
+      inline def setHideExpanders(value: Boolean): Self = StObject.set(x, "hideExpanders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideExpandersUndefined: Self = StObject.set(x, "hideExpanders", js.undefined)
+      inline def setHideExpandersUndefined: Self = StObject.set(x, "hideExpanders", js.undefined)
       
-      @scala.inline
-      def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+      inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       
-      @scala.inline
-      def setLeavesOnly(value: Boolean): Self = StObject.set(x, "leavesOnly", value.asInstanceOf[js.Any])
+      inline def setLeavesOnly(value: Boolean): Self = StObject.set(x, "leavesOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeavesOnlyUndefined: Self = StObject.set(x, "leavesOnly", js.undefined)
+      inline def setLeavesOnlyUndefined: Self = StObject.set(x, "leavesOnly", js.undefined)
       
-      @scala.inline
-      def setMode(value: dimm | hide): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: dimm | hide): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setNodata(value: Boolean): Self = StObject.set(x, "nodata", value.asInstanceOf[js.Any])
+      inline def setNodata(value: Boolean): Self = StObject.set(x, "nodata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodataUndefined: Self = StObject.set(x, "nodata", js.undefined)
+      inline def setNodataUndefined: Self = StObject.set(x, "nodata", js.undefined)
     }
   }
   
@@ -379,32 +315,24 @@ object Extensions {
   }
   object List {
     
-    @scala.inline
-    def apply(): List = {
+    inline def apply(): List = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[List]
     }
     
-    @scala.inline
-    implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
+    extension [Self <: List](x: Self) {
       
-      @scala.inline
-      def setDnd5(value: DragAndDrop5): Self = StObject.set(x, "dnd5", value.asInstanceOf[js.Any])
+      inline def setDnd5(value: DragAndDrop5): Self = StObject.set(x, "dnd5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnd5Undefined: Self = StObject.set(x, "dnd5", js.undefined)
+      inline def setDnd5Undefined: Self = StObject.set(x, "dnd5", js.undefined)
       
-      @scala.inline
-      def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     }
   }
   
@@ -432,23 +360,18 @@ object Extensions {
   }
   object Table {
     
-    @scala.inline
-    def apply(checkboxColumnIdx: js.Any, indentation: Double, nodeColumnIdx: Double): Table = {
+    inline def apply(checkboxColumnIdx: js.Any, indentation: Double, nodeColumnIdx: Double): Table = {
       val __obj = js.Dynamic.literal(checkboxColumnIdx = checkboxColumnIdx.asInstanceOf[js.Any], indentation = indentation.asInstanceOf[js.Any], nodeColumnIdx = nodeColumnIdx.asInstanceOf[js.Any])
       __obj.asInstanceOf[Table]
     }
     
-    @scala.inline
-    implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
+    extension [Self <: Table](x: Self) {
       
-      @scala.inline
-      def setCheckboxColumnIdx(value: js.Any): Self = StObject.set(x, "checkboxColumnIdx", value.asInstanceOf[js.Any])
+      inline def setCheckboxColumnIdx(value: js.Any): Self = StObject.set(x, "checkboxColumnIdx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentation(value: Double): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
+      inline def setIndentation(value: Double): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeColumnIdx(value: Double): Self = StObject.set(x, "nodeColumnIdx", value.asInstanceOf[js.Any])
+      inline def setNodeColumnIdx(value: Double): Self = StObject.set(x, "nodeColumnIdx", value.asInstanceOf[js.Any])
     }
   }
 }

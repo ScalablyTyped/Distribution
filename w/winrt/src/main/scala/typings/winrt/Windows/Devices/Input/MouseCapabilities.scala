@@ -9,8 +9,7 @@ trait MouseCapabilities
      with IMouseCapabilities
 object MouseCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     horizontalWheelPresent: Double,
     mousePresent: Double,
     numberOfButtons: Double,

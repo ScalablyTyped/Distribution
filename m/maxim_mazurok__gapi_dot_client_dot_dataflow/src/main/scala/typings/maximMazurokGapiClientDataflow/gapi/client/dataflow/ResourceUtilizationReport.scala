@@ -22,41 +22,31 @@ trait ResourceUtilizationReport extends StObject {
 }
 object ResourceUtilizationReport {
   
-  @scala.inline
-  def apply(): ResourceUtilizationReport = {
+  inline def apply(): ResourceUtilizationReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceUtilizationReport]
   }
   
-  @scala.inline
-  implicit class ResourceUtilizationReportMutableBuilder[Self <: ResourceUtilizationReport] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceUtilizationReport](x: Self) {
     
-    @scala.inline
-    def setContainers(
+    inline def setContainers(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.ResourceUtilizationReport}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ResourceUtilizationReport & TopLevel[js.Any]
     ): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
+    inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
-    @scala.inline
-    def setCpuTime(value: js.Array[CPUTime]): Self = StObject.set(x, "cpuTime", value.asInstanceOf[js.Any])
+    inline def setCpuTime(value: js.Array[CPUTime]): Self = StObject.set(x, "cpuTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuTimeUndefined: Self = StObject.set(x, "cpuTime", js.undefined)
+    inline def setCpuTimeUndefined: Self = StObject.set(x, "cpuTime", js.undefined)
     
-    @scala.inline
-    def setCpuTimeVarargs(value: CPUTime*): Self = StObject.set(x, "cpuTime", js.Array(value :_*))
+    inline def setCpuTimeVarargs(value: CPUTime*): Self = StObject.set(x, "cpuTime", js.Array(value :_*))
     
-    @scala.inline
-    def setMemoryInfo(value: js.Array[MemInfo]): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
+    inline def setMemoryInfo(value: js.Array[MemInfo]): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryInfoUndefined: Self = StObject.set(x, "memoryInfo", js.undefined)
+    inline def setMemoryInfoUndefined: Self = StObject.set(x, "memoryInfo", js.undefined)
     
-    @scala.inline
-    def setMemoryInfoVarargs(value: MemInfo*): Self = StObject.set(x, "memoryInfo", js.Array(value :_*))
+    inline def setMemoryInfoVarargs(value: MemInfo*): Self = StObject.set(x, "memoryInfo", js.Array(value :_*))
   }
 }

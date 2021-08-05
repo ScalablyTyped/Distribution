@@ -22,8 +22,7 @@ trait JSONEditorHistory extends StObject {
 }
 object JSONEditorHistory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (String, js.Object) => Unit,
     canRedo: () => Boolean,
     canUndo: () => Boolean,
@@ -36,28 +35,20 @@ object JSONEditorHistory {
     __obj.asInstanceOf[JSONEditorHistory]
   }
   
-  @scala.inline
-  implicit class JSONEditorHistoryMutableBuilder[Self <: JSONEditorHistory] (val x: Self) extends AnyVal {
+  extension [Self <: JSONEditorHistory](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, js.Object) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, js.Object) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCanRedo(value: () => Boolean): Self = StObject.set(x, "canRedo", js.Any.fromFunction0(value))
+    inline def setCanRedo(value: () => Boolean): Self = StObject.set(x, "canRedo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCanUndo(value: () => Boolean): Self = StObject.set(x, "canUndo", js.Any.fromFunction0(value))
+    inline def setCanUndo(value: () => Boolean): Self = StObject.set(x, "canUndo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+    inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
+    inline def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUndo(value: () => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
+    inline def setUndo(value: () => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
   }
 }

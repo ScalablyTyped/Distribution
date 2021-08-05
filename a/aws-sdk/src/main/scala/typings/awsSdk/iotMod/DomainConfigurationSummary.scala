@@ -23,31 +23,23 @@ trait DomainConfigurationSummary extends StObject {
 }
 object DomainConfigurationSummary {
   
-  @scala.inline
-  def apply(): DomainConfigurationSummary = {
+  inline def apply(): DomainConfigurationSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainConfigurationSummary]
   }
   
-  @scala.inline
-  implicit class DomainConfigurationSummaryMutableBuilder[Self <: DomainConfigurationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DomainConfigurationSummary](x: Self) {
     
-    @scala.inline
-    def setDomainConfigurationArn(value: DomainConfigurationArn): Self = StObject.set(x, "domainConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setDomainConfigurationArn(value: DomainConfigurationArn): Self = StObject.set(x, "domainConfigurationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainConfigurationArnUndefined: Self = StObject.set(x, "domainConfigurationArn", js.undefined)
+    inline def setDomainConfigurationArnUndefined: Self = StObject.set(x, "domainConfigurationArn", js.undefined)
     
-    @scala.inline
-    def setDomainConfigurationName(value: ReservedDomainConfigurationName): Self = StObject.set(x, "domainConfigurationName", value.asInstanceOf[js.Any])
+    inline def setDomainConfigurationName(value: ReservedDomainConfigurationName): Self = StObject.set(x, "domainConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainConfigurationNameUndefined: Self = StObject.set(x, "domainConfigurationName", js.undefined)
+    inline def setDomainConfigurationNameUndefined: Self = StObject.set(x, "domainConfigurationName", js.undefined)
     
-    @scala.inline
-    def setServiceType(value: ServiceType): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: ServiceType): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
+    inline def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
   }
 }

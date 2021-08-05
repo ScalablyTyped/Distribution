@@ -131,9 +131,9 @@ object translationBundleMod {
       console: Console
     ) = this()
     
-    var _i18nNodesByMsgId: js.Any = js.native
+    /* private */ var _i18nNodesByMsgId: js.Any = js.native
     
-    var _i18nToHtml: js.Any = js.native
+    /* private */ var _i18nToHtml: js.Any = js.native
     
     def digest(m: Message): String = js.native
     
@@ -150,15 +150,13 @@ object translationBundleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def load(
+    inline def load(
       content: String,
       url: String,
       serializer: Serializer,
       missingTranslationStrategy: MissingTranslationStrategy
     ): TranslationBundle = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], url.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], missingTranslationStrategy.asInstanceOf[js.Any])).asInstanceOf[TranslationBundle]
-    @scala.inline
-    def load(
+    inline def load(
       content: String,
       url: String,
       serializer: Serializer,

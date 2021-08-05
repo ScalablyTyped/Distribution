@@ -14,20 +14,16 @@ trait GeneralParameterObject
 }
 object GeneralParameterObject {
   
-  @scala.inline
-  def apply(in: String, name: String, `type`: String): GeneralParameterObject = {
+  inline def apply(in: String, name: String, `type`: String): GeneralParameterObject = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralParameterObject]
   }
   
-  @scala.inline
-  implicit class GeneralParameterObjectMutableBuilder[Self <: GeneralParameterObject] (val x: Self) extends AnyVal {
+  extension [Self <: GeneralParameterObject](x: Self) {
     
-    @scala.inline
-    def setAllowEmptyValue(value: Boolean): Self = StObject.set(x, "allowEmptyValue", value.asInstanceOf[js.Any])
+    inline def setAllowEmptyValue(value: Boolean): Self = StObject.set(x, "allowEmptyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEmptyValueUndefined: Self = StObject.set(x, "allowEmptyValue", js.undefined)
+    inline def setAllowEmptyValueUndefined: Self = StObject.set(x, "allowEmptyValue", js.undefined)
   }
 }

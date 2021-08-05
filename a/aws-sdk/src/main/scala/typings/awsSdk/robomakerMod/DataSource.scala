@@ -23,34 +23,25 @@ trait DataSource extends StObject {
 }
 object DataSource {
   
-  @scala.inline
-  def apply(): DataSource = {
+  inline def apply(): DataSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSource]
   }
   
-  @scala.inline
-  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
+  extension [Self <: DataSource](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
+    inline def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
     
-    @scala.inline
-    def setS3Keys(value: S3KeyOutputs): Self = StObject.set(x, "s3Keys", value.asInstanceOf[js.Any])
+    inline def setS3Keys(value: S3KeyOutputs): Self = StObject.set(x, "s3Keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeysUndefined: Self = StObject.set(x, "s3Keys", js.undefined)
+    inline def setS3KeysUndefined: Self = StObject.set(x, "s3Keys", js.undefined)
     
-    @scala.inline
-    def setS3KeysVarargs(value: S3KeyOutput*): Self = StObject.set(x, "s3Keys", js.Array(value :_*))
+    inline def setS3KeysVarargs(value: S3KeyOutput*): Self = StObject.set(x, "s3Keys", js.Array(value :_*))
   }
 }

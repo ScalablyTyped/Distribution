@@ -43,73 +43,51 @@ trait BorderColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exte
 }
 object BorderColorProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BorderColorProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BorderColorProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderColorProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class BorderColorPropsMutableBuilder[Self <: BorderColorProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderColorProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: BorderColorProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BorderColorProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setBorderBottomColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
+    inline def setBorderBottomColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomColorNull: Self = StObject.set(x, "borderBottomColor", null)
+    inline def setBorderBottomColorNull: Self = StObject.set(x, "borderBottomColor", null)
     
-    @scala.inline
-    def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
+    inline def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
     
-    @scala.inline
-    def setBorderBottomColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottomColor", js.Array(value :_*))
+    inline def setBorderBottomColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottomColor", js.Array(value :_*))
     
-    @scala.inline
-    def setBorderColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorNull: Self = StObject.set(x, "borderColor", null)
+    inline def setBorderColorNull: Self = StObject.set(x, "borderColor", null)
     
-    @scala.inline
-    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    @scala.inline
-    def setBorderColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderColor", js.Array(value :_*))
+    inline def setBorderColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderColor", js.Array(value :_*))
     
-    @scala.inline
-    def setBorderLeftColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
+    inline def setBorderLeftColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderLeftColorNull: Self = StObject.set(x, "borderLeftColor", null)
+    inline def setBorderLeftColorNull: Self = StObject.set(x, "borderLeftColor", null)
     
-    @scala.inline
-    def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
+    inline def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
     
-    @scala.inline
-    def setBorderLeftColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderLeftColor", js.Array(value :_*))
+    inline def setBorderLeftColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderLeftColor", js.Array(value :_*))
     
-    @scala.inline
-    def setBorderRightColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
+    inline def setBorderRightColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRightColorNull: Self = StObject.set(x, "borderRightColor", null)
+    inline def setBorderRightColorNull: Self = StObject.set(x, "borderRightColor", null)
     
-    @scala.inline
-    def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
+    inline def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
     
-    @scala.inline
-    def setBorderRightColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderRightColor", js.Array(value :_*))
+    inline def setBorderRightColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderRightColor", js.Array(value :_*))
     
-    @scala.inline
-    def setBorderTopColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
+    inline def setBorderTopColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopColorNull: Self = StObject.set(x, "borderTopColor", null)
+    inline def setBorderTopColorNull: Self = StObject.set(x, "borderTopColor", null)
     
-    @scala.inline
-    def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
+    inline def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
     
-    @scala.inline
-    def setBorderTopColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTopColor", js.Array(value :_*))
+    inline def setBorderTopColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTopColor", js.Array(value :_*))
   }
 }

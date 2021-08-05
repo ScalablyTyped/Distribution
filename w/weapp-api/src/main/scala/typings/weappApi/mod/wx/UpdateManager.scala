@@ -28,8 +28,7 @@ trait UpdateManager extends StObject {
 }
 object UpdateManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyUpdate: DataResponseCallback => Unit,
     onCheckForUpdate: () => Unit,
     onUpdateFailed: NoneParamCallback => Unit,
@@ -39,19 +38,14 @@ object UpdateManager {
     __obj.asInstanceOf[UpdateManager]
   }
   
-  @scala.inline
-  implicit class UpdateManagerMutableBuilder[Self <: UpdateManager] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateManager](x: Self) {
     
-    @scala.inline
-    def setApplyUpdate(value: DataResponseCallback => Unit): Self = StObject.set(x, "applyUpdate", js.Any.fromFunction1(value))
+    inline def setApplyUpdate(value: DataResponseCallback => Unit): Self = StObject.set(x, "applyUpdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCheckForUpdate(value: () => Unit): Self = StObject.set(x, "onCheckForUpdate", js.Any.fromFunction0(value))
+    inline def setOnCheckForUpdate(value: () => Unit): Self = StObject.set(x, "onCheckForUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnUpdateFailed(value: NoneParamCallback => Unit): Self = StObject.set(x, "onUpdateFailed", js.Any.fromFunction1(value))
+    inline def setOnUpdateFailed(value: NoneParamCallback => Unit): Self = StObject.set(x, "onUpdateFailed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnUpdateReady(value: NoneParamCallback => Unit): Self = StObject.set(x, "onUpdateReady", js.Any.fromFunction1(value))
+    inline def setOnUpdateReady(value: NoneParamCallback => Unit): Self = StObject.set(x, "onUpdateReady", js.Any.fromFunction1(value))
   }
 }

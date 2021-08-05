@@ -40,8 +40,7 @@ object mod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
     ]
   ] = js.native
-  @scala.inline
-  def extract_=(
+  inline def extract_=(
     x: js.Function1[
       /* loader */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any) | (js.Array[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
@@ -102,8 +101,7 @@ object mod {
   }
   object LoaderOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       use: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any) | (js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
         ])
@@ -112,39 +110,31 @@ object mod {
       __obj.asInstanceOf[LoaderOptions]
     }
     
-    @scala.inline
-    implicit class LoaderOptionsMutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderOptions](x: Self) {
       
-      @scala.inline
-      def setFallback(
+      inline def setFallback(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any) | (js.Array[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
             ])
       ): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setFallbackVarargs(
+      inline def setFallbackVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any)*
       ): Self = StObject.set(x, "fallback", js.Array(value :_*))
       
-      @scala.inline
-      def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      @scala.inline
-      def setUse(
+      inline def setUse(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any) | (js.Array[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
             ])
       ): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseVarargs(
+      inline def setUseVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any)*
       ): Self = StObject.set(x, "use", js.Array(value :_*))
     }
@@ -166,35 +156,26 @@ object mod {
   }
   object PluginOptions {
     
-    @scala.inline
-    def apply(filename: String): PluginOptions = {
+    inline def apply(filename: String): PluginOptions = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluginOptions]
     }
     
-    @scala.inline
-    implicit class PluginOptionsMutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluginOptions](x: Self) {
       
-      @scala.inline
-      def setAllChunks(value: Boolean): Self = StObject.set(x, "allChunks", value.asInstanceOf[js.Any])
+      inline def setAllChunks(value: Boolean): Self = StObject.set(x, "allChunks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllChunksUndefined: Self = StObject.set(x, "allChunks", js.undefined)
+      inline def setAllChunksUndefined: Self = StObject.set(x, "allChunks", js.undefined)
       
-      @scala.inline
-      def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+      inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+      inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
 }

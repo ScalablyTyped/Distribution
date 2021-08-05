@@ -25,8 +25,7 @@ trait NumericMenuProvided extends StObject {
 }
 object NumericMenuProvided {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createURL: /* repeated */ js.Any => js.Any,
     currentRefinement: String,
     items: js.Array[IsRefined],
@@ -36,22 +35,16 @@ object NumericMenuProvided {
     __obj.asInstanceOf[NumericMenuProvided]
   }
   
-  @scala.inline
-  implicit class NumericMenuProvidedMutableBuilder[Self <: NumericMenuProvided] (val x: Self) extends AnyVal {
+  extension [Self <: NumericMenuProvided](x: Self) {
     
-    @scala.inline
-    def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
+    inline def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCurrentRefinement(value: String): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
+    inline def setCurrentRefinement(value: String): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[IsRefined]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[IsRefined]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: IsRefined*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: IsRefined*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
+    inline def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
   }
 }

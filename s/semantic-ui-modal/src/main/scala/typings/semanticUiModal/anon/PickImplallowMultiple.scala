@@ -11,16 +11,13 @@ trait PickImplallowMultiple extends StObject {
 }
 object PickImplallowMultiple {
   
-  @scala.inline
-  def apply(allowMultiple: Boolean): PickImplallowMultiple = {
+  inline def apply(allowMultiple: Boolean): PickImplallowMultiple = {
     val __obj = js.Dynamic.literal(allowMultiple = allowMultiple.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplallowMultiple]
   }
   
-  @scala.inline
-  implicit class PickImplallowMultipleMutableBuilder[Self <: PickImplallowMultiple] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplallowMultiple](x: Self) {
     
-    @scala.inline
-    def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
+    inline def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
   }
 }

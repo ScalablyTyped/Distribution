@@ -44,8 +44,7 @@ object Shapes {
   }
   object b2CircleShape {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ComputeAABB: (b2AABB, b2Transform) => Unit,
       ComputeMass: (b2MassData, Double) => Unit,
       ComputeSubmergedArea: (b2Vec2, Double, b2Transform, b2Vec2) => Double,
@@ -63,23 +62,17 @@ object Shapes {
       __obj.asInstanceOf[b2CircleShape]
     }
     
-    @scala.inline
-    implicit class b2CircleShapeMutableBuilder[Self <: b2CircleShape] (val x: Self) extends AnyVal {
+    extension [Self <: b2CircleShape](x: Self) {
       
-      @scala.inline
-      def setGetLocalPosition(value: () => b2Vec2): Self = StObject.set(x, "GetLocalPosition", js.Any.fromFunction0(value))
+      inline def setGetLocalPosition(value: () => b2Vec2): Self = StObject.set(x, "GetLocalPosition", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRadius(value: () => Double): Self = StObject.set(x, "GetRadius", js.Any.fromFunction0(value))
+      inline def setGetRadius(value: () => Double): Self = StObject.set(x, "GetRadius", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: b2CircleShape => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
+      inline def setSet(value: b2CircleShape => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLocalPosition(value: b2Vec2 => Unit): Self = StObject.set(x, "SetLocalPosition", js.Any.fromFunction1(value))
+      inline def setSetLocalPosition(value: b2Vec2 => Unit): Self = StObject.set(x, "SetLocalPosition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRadius(value: Double => Unit): Self = StObject.set(x, "SetRadius", js.Any.fromFunction1(value))
+      inline def setSetRadius(value: Double => Unit): Self = StObject.set(x, "SetRadius", js.Any.fromFunction1(value))
     }
   }
   
@@ -102,23 +95,18 @@ object Shapes {
   }
   object b2EdgeChainDef {
     
-    @scala.inline
-    def apply(isALoop: Boolean, vertexCount: Double, vertices: b2Vec2): b2EdgeChainDef = {
+    inline def apply(isALoop: Boolean, vertexCount: Double, vertices: b2Vec2): b2EdgeChainDef = {
       val __obj = js.Dynamic.literal(isALoop = isALoop.asInstanceOf[js.Any], vertexCount = vertexCount.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
       __obj.asInstanceOf[b2EdgeChainDef]
     }
     
-    @scala.inline
-    implicit class b2EdgeChainDefMutableBuilder[Self <: b2EdgeChainDef] (val x: Self) extends AnyVal {
+    extension [Self <: b2EdgeChainDef](x: Self) {
       
-      @scala.inline
-      def setIsALoop(value: Boolean): Self = StObject.set(x, "isALoop", value.asInstanceOf[js.Any])
+      inline def setIsALoop(value: Boolean): Self = StObject.set(x, "isALoop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexCount(value: Double): Self = StObject.set(x, "vertexCount", value.asInstanceOf[js.Any])
+      inline def setVertexCount(value: Double): Self = StObject.set(x, "vertexCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertices(value: b2Vec2): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+      inline def setVertices(value: b2Vec2): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,8 +210,7 @@ object Shapes {
   }
   object b2EdgeShape {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ComputeAABB: (b2AABB, b2Transform) => Unit,
       ComputeMass: (b2MassData, Double) => Unit,
       ComputeSubmergedArea: (b2Vec2, Double, b2Transform, b2Vec2) => Double,
@@ -252,53 +239,37 @@ object Shapes {
       __obj.asInstanceOf[b2EdgeShape]
     }
     
-    @scala.inline
-    implicit class b2EdgeShapeMutableBuilder[Self <: b2EdgeShape] (val x: Self) extends AnyVal {
+    extension [Self <: b2EdgeShape](x: Self) {
       
-      @scala.inline
-      def setCorner1IsConvex(value: () => Boolean): Self = StObject.set(x, "Corner1IsConvex", js.Any.fromFunction0(value))
+      inline def setCorner1IsConvex(value: () => Boolean): Self = StObject.set(x, "Corner1IsConvex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCorner2IsConvex(value: () => Boolean): Self = StObject.set(x, "Corner2IsConvex", js.Any.fromFunction0(value))
+      inline def setCorner2IsConvex(value: () => Boolean): Self = StObject.set(x, "Corner2IsConvex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCoreVertex1(value: () => b2Vec2): Self = StObject.set(x, "GetCoreVertex1", js.Any.fromFunction0(value))
+      inline def setGetCoreVertex1(value: () => b2Vec2): Self = StObject.set(x, "GetCoreVertex1", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCoreVertex2(value: () => b2Vec2): Self = StObject.set(x, "GetCoreVertex2", js.Any.fromFunction0(value))
+      inline def setGetCoreVertex2(value: () => b2Vec2): Self = StObject.set(x, "GetCoreVertex2", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCorner1Vector(value: () => b2Vec2): Self = StObject.set(x, "GetCorner1Vector", js.Any.fromFunction0(value))
+      inline def setGetCorner1Vector(value: () => b2Vec2): Self = StObject.set(x, "GetCorner1Vector", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCorner2Vector(value: () => b2Vec2): Self = StObject.set(x, "GetCorner2Vector", js.Any.fromFunction0(value))
+      inline def setGetCorner2Vector(value: () => b2Vec2): Self = StObject.set(x, "GetCorner2Vector", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDirectionVector(value: () => b2Vec2): Self = StObject.set(x, "GetDirectionVector", js.Any.fromFunction0(value))
+      inline def setGetDirectionVector(value: () => b2Vec2): Self = StObject.set(x, "GetDirectionVector", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFirstVertex(value: b2Transform => b2Vec2): Self = StObject.set(x, "GetFirstVertex", js.Any.fromFunction1(value))
+      inline def setGetFirstVertex(value: b2Transform => b2Vec2): Self = StObject.set(x, "GetFirstVertex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "GetLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "GetLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNextEdge(value: () => b2EdgeShape): Self = StObject.set(x, "GetNextEdge", js.Any.fromFunction0(value))
+      inline def setGetNextEdge(value: () => b2EdgeShape): Self = StObject.set(x, "GetNextEdge", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNormalVector(value: () => b2Vec2): Self = StObject.set(x, "GetNormalVector", js.Any.fromFunction0(value))
+      inline def setGetNormalVector(value: () => b2Vec2): Self = StObject.set(x, "GetNormalVector", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrevEdge(value: () => b2EdgeShape): Self = StObject.set(x, "GetPrevEdge", js.Any.fromFunction0(value))
+      inline def setGetPrevEdge(value: () => b2EdgeShape): Self = StObject.set(x, "GetPrevEdge", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVertex1(value: () => b2Vec2): Self = StObject.set(x, "GetVertex1", js.Any.fromFunction0(value))
+      inline def setGetVertex1(value: () => b2Vec2): Self = StObject.set(x, "GetVertex1", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVertex2(value: () => b2Vec2): Self = StObject.set(x, "GetVertex2", js.Any.fromFunction0(value))
+      inline def setGetVertex2(value: () => b2Vec2): Self = StObject.set(x, "GetVertex2", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSupport(value: (b2Transform, Double, Double) => b2Vec2): Self = StObject.set(x, "Support", js.Any.fromFunction3(value))
+      inline def setSupport(value: (b2Transform, Double, Double) => b2Vec2): Self = StObject.set(x, "Support", js.Any.fromFunction3(value))
     }
   }
   
@@ -321,23 +292,18 @@ object Shapes {
   }
   object b2MassData {
     
-    @scala.inline
-    def apply(I: Double, center: b2Vec2, mass: Double): b2MassData = {
+    inline def apply(I: Double, center: b2Vec2, mass: Double): b2MassData = {
       val __obj = js.Dynamic.literal(I = I.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], mass = mass.asInstanceOf[js.Any])
       __obj.asInstanceOf[b2MassData]
     }
     
-    @scala.inline
-    implicit class b2MassDataMutableBuilder[Self <: b2MassData] (val x: Self) extends AnyVal {
+    extension [Self <: b2MassData](x: Self) {
       
-      @scala.inline
-      def setCenter(value: b2Vec2): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: b2Vec2): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI(value: Double): Self = StObject.set(x, "I", value.asInstanceOf[js.Any])
+      inline def setI(value: Double): Self = StObject.set(x, "I", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
+      inline def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
     }
   }
   
@@ -486,8 +452,7 @@ object Shapes {
   }
   object b2Shape {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ComputeAABB: (b2AABB, b2Transform) => Unit,
       ComputeMass: (b2MassData, Double) => Unit,
       ComputeSubmergedArea: (b2Vec2, Double, b2Transform, b2Vec2) => Double,
@@ -501,32 +466,23 @@ object Shapes {
       __obj.asInstanceOf[b2Shape]
     }
     
-    @scala.inline
-    implicit class b2ShapeMutableBuilder[Self <: b2Shape] (val x: Self) extends AnyVal {
+    extension [Self <: b2Shape](x: Self) {
       
-      @scala.inline
-      def setComputeAABB(value: (b2AABB, b2Transform) => Unit): Self = StObject.set(x, "ComputeAABB", js.Any.fromFunction2(value))
+      inline def setComputeAABB(value: (b2AABB, b2Transform) => Unit): Self = StObject.set(x, "ComputeAABB", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setComputeMass(value: (b2MassData, Double) => Unit): Self = StObject.set(x, "ComputeMass", js.Any.fromFunction2(value))
+      inline def setComputeMass(value: (b2MassData, Double) => Unit): Self = StObject.set(x, "ComputeMass", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setComputeSubmergedArea(value: (b2Vec2, Double, b2Transform, b2Vec2) => Double): Self = StObject.set(x, "ComputeSubmergedArea", js.Any.fromFunction4(value))
+      inline def setComputeSubmergedArea(value: (b2Vec2, Double, b2Transform, b2Vec2) => Double): Self = StObject.set(x, "ComputeSubmergedArea", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCopy(value: () => b2Shape): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+      inline def setCopy(value: () => b2Shape): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetType(value: () => Double): Self = StObject.set(x, "GetType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => Double): Self = StObject.set(x, "GetType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRayCast(value: (b2RayCastOutput, b2RayCastInput, b2Transform) => Boolean): Self = StObject.set(x, "RayCast", js.Any.fromFunction3(value))
+      inline def setRayCast(value: (b2RayCastOutput, b2RayCastInput, b2Transform) => Boolean): Self = StObject.set(x, "RayCast", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSet(value: b2Shape => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
+      inline def setSet(value: b2Shape => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTestPoint(value: (b2Transform, b2Vec2) => Boolean): Self = StObject.set(x, "TestPoint", js.Any.fromFunction2(value))
+      inline def setTestPoint(value: (b2Transform, b2Vec2) => Boolean): Self = StObject.set(x, "TestPoint", js.Any.fromFunction2(value))
     }
   }
 }

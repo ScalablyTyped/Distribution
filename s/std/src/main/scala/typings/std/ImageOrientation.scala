@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageOrientation extends StObject
 object ImageOrientation {
   
-  @scala.inline
-  def flipY: typings.std.stdStrings.flipY = "flipY".asInstanceOf[typings.std.stdStrings.flipY]
+  inline def flipY: typings.std.stdStrings.flipY = "flipY".asInstanceOf[typings.std.stdStrings.flipY]
   
-  @scala.inline
-  def none: typings.std.stdStrings.none = "none".asInstanceOf[typings.std.stdStrings.none]
+  inline def none: typings.std.stdStrings.none = "none".asInstanceOf[typings.std.stdStrings.none]
 }

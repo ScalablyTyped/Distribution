@@ -13,16 +13,13 @@ trait DeleteGatewayRequest extends StObject {
 }
 object DeleteGatewayRequest {
   
-  @scala.inline
-  def apply(gatewayId: ID): DeleteGatewayRequest = {
+  inline def apply(gatewayId: ID): DeleteGatewayRequest = {
     val __obj = js.Dynamic.literal(gatewayId = gatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGatewayRequest]
   }
   
-  @scala.inline
-  implicit class DeleteGatewayRequestMutableBuilder[Self <: DeleteGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
   }
 }

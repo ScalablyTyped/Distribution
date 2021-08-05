@@ -44,62 +44,44 @@ object mod extends Shortcut {
   }
   object BasicOptions {
     
-    @scala.inline
-    def apply(): BasicOptions = {
+    inline def apply(): BasicOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BasicOptions]
     }
     
-    @scala.inline
-    implicit class BasicOptionsMutableBuilder[Self <: BasicOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BasicOptions](x: Self) {
       
-      @scala.inline
-      def setContain(value: Boolean): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
+      inline def setContain(value: Boolean): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
+      inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
       
-      @scala.inline
-      def setCover(value: Boolean): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
+      inline def setCover(value: Boolean): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverUndefined: Self = StObject.set(x, "cover", js.undefined)
+      inline def setCoverUndefined: Self = StObject.set(x, "cover", js.undefined)
       
-      @scala.inline
-      def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+      inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setNoRevoke(value: Boolean): Self = StObject.set(x, "noRevoke", value.asInstanceOf[js.Any])
+      inline def setNoRevoke(value: Boolean): Self = StObject.set(x, "noRevoke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoRevokeUndefined: Self = StObject.set(x, "noRevoke", js.undefined)
+      inline def setNoRevokeUndefined: Self = StObject.set(x, "noRevoke", js.undefined)
     }
   }
   
@@ -111,20 +93,16 @@ object mod extends Shortcut {
   }
   object CanvasFalseOptions {
     
-    @scala.inline
-    def apply(): CanvasFalseOptions = {
+    inline def apply(): CanvasFalseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CanvasFalseOptions]
     }
     
-    @scala.inline
-    implicit class CanvasFalseOptionsMutableBuilder[Self <: CanvasFalseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CanvasFalseOptions](x: Self) {
       
-      @scala.inline
-      def setCanvas(value: `false`): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+      inline def setCanvas(value: `false`): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
+      inline def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
     }
   }
   
@@ -135,14 +113,12 @@ object mod extends Shortcut {
   trait CanvasOptions extends StObject
   object CanvasOptions {
     
-    @scala.inline
-    def CanvasFalseOptions(): typings.blueimpLoadImage.mod.CanvasFalseOptions = {
+    inline def CanvasFalseOptions(): typings.blueimpLoadImage.mod.CanvasFalseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.blueimpLoadImage.mod.CanvasFalseOptions]
     }
     
-    @scala.inline
-    def CanvasTrueOptions(): typings.blueimpLoadImage.mod.CanvasTrueOptions = {
+    inline def CanvasTrueOptions(): typings.blueimpLoadImage.mod.CanvasTrueOptions = {
       val __obj = js.Dynamic.literal(canvas = true)
       __obj.asInstanceOf[typings.blueimpLoadImage.mod.CanvasTrueOptions]
     }
@@ -180,77 +156,54 @@ object mod extends Shortcut {
   }
   object CanvasTrueOptions {
     
-    @scala.inline
-    def apply(): CanvasTrueOptions = {
+    inline def apply(): CanvasTrueOptions = {
       val __obj = js.Dynamic.literal(canvas = true)
       __obj.asInstanceOf[CanvasTrueOptions]
     }
     
-    @scala.inline
-    implicit class CanvasTrueOptionsMutableBuilder[Self <: CanvasTrueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CanvasTrueOptions](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setCanvas(value: `true`): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+      inline def setCanvas(value: `true`): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrop(value: Boolean): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+      inline def setCrop(value: Boolean): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+      inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
       
-      @scala.inline
-      def setDownsamplingRatio(value: Double): Self = StObject.set(x, "downsamplingRatio", value.asInstanceOf[js.Any])
+      inline def setDownsamplingRatio(value: Double): Self = StObject.set(x, "downsamplingRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownsamplingRatioUndefined: Self = StObject.set(x, "downsamplingRatio", js.undefined)
+      inline def setDownsamplingRatioUndefined: Self = StObject.set(x, "downsamplingRatio", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+      inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setSourceHeight(value: Double): Self = StObject.set(x, "sourceHeight", value.asInstanceOf[js.Any])
+      inline def setSourceHeight(value: Double): Self = StObject.set(x, "sourceHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceHeightUndefined: Self = StObject.set(x, "sourceHeight", js.undefined)
+      inline def setSourceHeightUndefined: Self = StObject.set(x, "sourceHeight", js.undefined)
       
-      @scala.inline
-      def setSourceWidth(value: Double): Self = StObject.set(x, "sourceWidth", value.asInstanceOf[js.Any])
+      inline def setSourceWidth(value: Double): Self = StObject.set(x, "sourceWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceWidthUndefined: Self = StObject.set(x, "sourceWidth", js.undefined)
+      inline def setSourceWidthUndefined: Self = StObject.set(x, "sourceWidth", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -262,20 +215,16 @@ object mod extends Shortcut {
   }
   object CropFalseOptions {
     
-    @scala.inline
-    def apply(): CropFalseOptions = {
+    inline def apply(): CropFalseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CropFalseOptions]
     }
     
-    @scala.inline
-    implicit class CropFalseOptionsMutableBuilder[Self <: CropFalseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CropFalseOptions](x: Self) {
       
-      @scala.inline
-      def setCrop(value: `false`): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+      inline def setCrop(value: `false`): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+      inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     }
   }
   
@@ -286,14 +235,12 @@ object mod extends Shortcut {
   trait CropOptions extends StObject
   object CropOptions {
     
-    @scala.inline
-    def CropFalseOptions(): typings.blueimpLoadImage.mod.CropFalseOptions = {
+    inline def CropFalseOptions(): typings.blueimpLoadImage.mod.CropFalseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.blueimpLoadImage.mod.CropFalseOptions]
     }
     
-    @scala.inline
-    def CropTrueOptions(): typings.blueimpLoadImage.mod.CropTrueOptions = {
+    inline def CropTrueOptions(): typings.blueimpLoadImage.mod.CropTrueOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.blueimpLoadImage.mod.CropTrueOptions]
     }
@@ -311,26 +258,20 @@ object mod extends Shortcut {
   }
   object CropTrueOptions {
     
-    @scala.inline
-    def apply(): CropTrueOptions = {
+    inline def apply(): CropTrueOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CropTrueOptions]
     }
     
-    @scala.inline
-    implicit class CropTrueOptionsMutableBuilder[Self <: CropTrueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CropTrueOptions](x: Self) {
       
-      @scala.inline
-      def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      inline def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+      inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
       
-      @scala.inline
-      def setCrop(value: `true`): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+      inline def setCrop(value: `true`): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+      inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     }
   }
   
@@ -342,20 +283,16 @@ object mod extends Shortcut {
   }
   object ImageHead {
     
-    @scala.inline
-    def apply(): ImageHead = {
+    inline def apply(): ImageHead = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageHead]
     }
     
-    @scala.inline
-    implicit class ImageHeadMutableBuilder[Self <: ImageHead] (val x: Self) extends AnyVal {
+    extension [Self <: ImageHead](x: Self) {
       
-      @scala.inline
-      def setImageHead(value: ArrayBuffer | Uint8Array): Self = StObject.set(x, "imageHead", value.asInstanceOf[js.Any])
+      inline def setImageHead(value: ArrayBuffer | Uint8Array): Self = StObject.set(x, "imageHead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageHeadUndefined: Self = StObject.set(x, "imageHead", js.undefined)
+      inline def setImageHeadUndefined: Self = StObject.set(x, "imageHead", js.undefined)
     }
   }
   
@@ -411,38 +348,28 @@ object mod extends Shortcut {
   }
   object MetaData {
     
-    @scala.inline
-    def apply(): MetaData = {
+    inline def apply(): MetaData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MetaData]
     }
     
-    @scala.inline
-    implicit class MetaDataMutableBuilder[Self <: MetaData] (val x: Self) extends AnyVal {
+    extension [Self <: MetaData](x: Self) {
       
-      @scala.inline
-      def setExif(value: Exif): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
+      inline def setExif(value: Exif): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExifUndefined: Self = StObject.set(x, "exif", js.undefined)
+      inline def setExifUndefined: Self = StObject.set(x, "exif", js.undefined)
       
-      @scala.inline
-      def setIptc(value: Iptc): Self = StObject.set(x, "iptc", value.asInstanceOf[js.Any])
+      inline def setIptc(value: Iptc): Self = StObject.set(x, "iptc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIptcUndefined: Self = StObject.set(x, "iptc", js.undefined)
+      inline def setIptcUndefined: Self = StObject.set(x, "iptc", js.undefined)
       
-      @scala.inline
-      def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
+      inline def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalHeightUndefined: Self = StObject.set(x, "originalHeight", js.undefined)
+      inline def setOriginalHeightUndefined: Self = StObject.set(x, "originalHeight", js.undefined)
       
-      @scala.inline
-      def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
+      inline def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalWidthUndefined: Self = StObject.set(x, "originalWidth", js.undefined)
+      inline def setOriginalWidthUndefined: Self = StObject.set(x, "originalWidth", js.undefined)
     }
   }
   
@@ -454,20 +381,16 @@ object mod extends Shortcut {
   }
   object MetaFalseOptions {
     
-    @scala.inline
-    def apply(): MetaFalseOptions = {
+    inline def apply(): MetaFalseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MetaFalseOptions]
     }
     
-    @scala.inline
-    implicit class MetaFalseOptionsMutableBuilder[Self <: MetaFalseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MetaFalseOptions](x: Self) {
       
-      @scala.inline
-      def setMeta(value: `false`): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: `false`): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     }
   }
   
@@ -478,14 +401,12 @@ object mod extends Shortcut {
   trait MetaOptions extends StObject
   object MetaOptions {
     
-    @scala.inline
-    def MetaFalseOptions(): typings.blueimpLoadImage.mod.MetaFalseOptions = {
+    inline def MetaFalseOptions(): typings.blueimpLoadImage.mod.MetaFalseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.blueimpLoadImage.mod.MetaFalseOptions]
     }
     
-    @scala.inline
-    def MetaTrueOptions(orientation: Orientation): typings.blueimpLoadImage.mod.MetaTrueOptions = {
+    inline def MetaTrueOptions(orientation: Orientation): typings.blueimpLoadImage.mod.MetaTrueOptions = {
       val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.blueimpLoadImage.mod.MetaTrueOptions]
     }
@@ -503,23 +424,18 @@ object mod extends Shortcut {
   }
   object MetaTrueOptions {
     
-    @scala.inline
-    def apply(orientation: Orientation): MetaTrueOptions = {
+    inline def apply(orientation: Orientation): MetaTrueOptions = {
       val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetaTrueOptions]
     }
     
-    @scala.inline
-    implicit class MetaTrueOptionsMutableBuilder[Self <: MetaTrueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MetaTrueOptions](x: Self) {
       
-      @scala.inline
-      def setMeta(value: `true`): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: `true`): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -537,26 +453,20 @@ object mod extends Shortcut {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setDisableImageHead(value: Boolean): Self = StObject.set(x, "disableImageHead", value.asInstanceOf[js.Any])
+      inline def setDisableImageHead(value: Boolean): Self = StObject.set(x, "disableImageHead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableImageHeadUndefined: Self = StObject.set(x, "disableImageHead", js.undefined)
+      inline def setDisableImageHeadUndefined: Self = StObject.set(x, "disableImageHead", js.undefined)
       
-      @scala.inline
-      def setMaxMetaDataSize(value: Double): Self = StObject.set(x, "maxMetaDataSize", value.asInstanceOf[js.Any])
+      inline def setMaxMetaDataSize(value: Double): Self = StObject.set(x, "maxMetaDataSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMetaDataSizeUndefined: Self = StObject.set(x, "maxMetaDataSize", js.undefined)
+      inline def setMaxMetaDataSizeUndefined: Self = StObject.set(x, "maxMetaDataSize", js.undefined)
     }
   }
   

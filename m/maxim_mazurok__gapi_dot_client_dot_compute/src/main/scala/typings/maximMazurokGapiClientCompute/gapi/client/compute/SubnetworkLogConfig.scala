@@ -38,52 +38,37 @@ trait SubnetworkLogConfig extends StObject {
 }
 object SubnetworkLogConfig {
   
-  @scala.inline
-  def apply(): SubnetworkLogConfig = {
+  inline def apply(): SubnetworkLogConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubnetworkLogConfig]
   }
   
-  @scala.inline
-  implicit class SubnetworkLogConfigMutableBuilder[Self <: SubnetworkLogConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SubnetworkLogConfig](x: Self) {
     
-    @scala.inline
-    def setAggregationInterval(value: String): Self = StObject.set(x, "aggregationInterval", value.asInstanceOf[js.Any])
+    inline def setAggregationInterval(value: String): Self = StObject.set(x, "aggregationInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationIntervalUndefined: Self = StObject.set(x, "aggregationInterval", js.undefined)
+    inline def setAggregationIntervalUndefined: Self = StObject.set(x, "aggregationInterval", js.undefined)
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    @scala.inline
-    def setFilterExpr(value: String): Self = StObject.set(x, "filterExpr", value.asInstanceOf[js.Any])
+    inline def setFilterExpr(value: String): Self = StObject.set(x, "filterExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterExprUndefined: Self = StObject.set(x, "filterExpr", js.undefined)
+    inline def setFilterExprUndefined: Self = StObject.set(x, "filterExpr", js.undefined)
     
-    @scala.inline
-    def setFlowSampling(value: Double): Self = StObject.set(x, "flowSampling", value.asInstanceOf[js.Any])
+    inline def setFlowSampling(value: Double): Self = StObject.set(x, "flowSampling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowSamplingUndefined: Self = StObject.set(x, "flowSampling", js.undefined)
+    inline def setFlowSamplingUndefined: Self = StObject.set(x, "flowSampling", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataFields(value: js.Array[String]): Self = StObject.set(x, "metadataFields", value.asInstanceOf[js.Any])
+    inline def setMetadataFields(value: js.Array[String]): Self = StObject.set(x, "metadataFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataFieldsUndefined: Self = StObject.set(x, "metadataFields", js.undefined)
+    inline def setMetadataFieldsUndefined: Self = StObject.set(x, "metadataFields", js.undefined)
     
-    @scala.inline
-    def setMetadataFieldsVarargs(value: String*): Self = StObject.set(x, "metadataFields", js.Array(value :_*))
+    inline def setMetadataFieldsVarargs(value: String*): Self = StObject.set(x, "metadataFields", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

@@ -30,8 +30,7 @@ trait configLog
 }
 object configLog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     interceptors: js.Array[LogInterceptor],
@@ -42,16 +41,12 @@ object configLog {
     __obj.asInstanceOf[configLog]
   }
   
-  @scala.inline
-  implicit class configLogMutableBuilder[Self <: configLog] (val x: Self) extends AnyVal {
+  extension [Self <: configLog](x: Self) {
     
-    @scala.inline
-    def setInterceptors(value: js.Array[LogInterceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
+    inline def setInterceptors(value: js.Array[LogInterceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterceptorsVarargs(value: LogInterceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
+    inline def setInterceptorsVarargs(value: LogInterceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
     
-    @scala.inline
-    def setLevel(value: none | error | warn | info): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: none | error | warn | info): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

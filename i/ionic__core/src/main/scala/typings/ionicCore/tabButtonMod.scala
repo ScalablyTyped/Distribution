@@ -47,16 +47,16 @@ object tabButtonMod {
       */
     var layout: js.UndefOr[TabButtonLayout] = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
-    var onKeyUp: js.Any = js.native
+    /* private */ var onKeyUp: js.Any = js.native
     
     def onTabBarChanged(ev: CustomEvent[TabBarChangedEventDetail]): Unit = js.native
     
     @JSName("render")
     def render_MTabButton(): js.Any = js.native
     
-    var selectTab: js.Any = js.native
+    /* private */ var selectTab: js.Any = js.native
     
     /**
       * The selected tab component

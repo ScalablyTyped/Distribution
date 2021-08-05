@@ -12,16 +12,13 @@ trait WebAccountInvokedArgs extends StObject {
 }
 object WebAccountInvokedArgs {
   
-  @scala.inline
-  def apply(action: WebAccountAction): WebAccountInvokedArgs = {
+  inline def apply(action: WebAccountAction): WebAccountInvokedArgs = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAccountInvokedArgs]
   }
   
-  @scala.inline
-  implicit class WebAccountInvokedArgsMutableBuilder[Self <: WebAccountInvokedArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WebAccountInvokedArgs](x: Self) {
     
-    @scala.inline
-    def setAction(value: WebAccountAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: WebAccountAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

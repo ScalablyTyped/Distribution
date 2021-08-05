@@ -26,35 +26,27 @@ trait SourceProvenance extends StObject {
 }
 object SourceProvenance {
   
-  @scala.inline
-  def apply(): SourceProvenance = {
+  inline def apply(): SourceProvenance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceProvenance]
   }
   
-  @scala.inline
-  implicit class SourceProvenanceMutableBuilder[Self <: SourceProvenance] (val x: Self) extends AnyVal {
+  extension [Self <: SourceProvenance](x: Self) {
     
-    @scala.inline
-    def setFileHashes(
+    inline def setFileHashes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudbuild.gapi.client.cloudbuild.FileHashes}
       */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.SourceProvenance & TopLevel[js.Any]
     ): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
+    inline def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
     
-    @scala.inline
-    def setResolvedRepoSource(value: RepoSource): Self = StObject.set(x, "resolvedRepoSource", value.asInstanceOf[js.Any])
+    inline def setResolvedRepoSource(value: RepoSource): Self = StObject.set(x, "resolvedRepoSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedRepoSourceUndefined: Self = StObject.set(x, "resolvedRepoSource", js.undefined)
+    inline def setResolvedRepoSourceUndefined: Self = StObject.set(x, "resolvedRepoSource", js.undefined)
     
-    @scala.inline
-    def setResolvedStorageSource(value: StorageSource): Self = StObject.set(x, "resolvedStorageSource", value.asInstanceOf[js.Any])
+    inline def setResolvedStorageSource(value: StorageSource): Self = StObject.set(x, "resolvedStorageSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedStorageSourceUndefined: Self = StObject.set(x, "resolvedStorageSource", js.undefined)
+    inline def setResolvedStorageSourceUndefined: Self = StObject.set(x, "resolvedStorageSource", js.undefined)
   }
 }

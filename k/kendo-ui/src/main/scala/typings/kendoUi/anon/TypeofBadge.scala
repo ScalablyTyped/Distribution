@@ -15,19 +15,15 @@ trait TypeofBadge extends StObject {
 }
 object TypeofBadge {
   
-  @scala.inline
-  def apply(extend: js.Object => Badge, fn: Badge): TypeofBadge = {
+  inline def apply(extend: js.Object => Badge, fn: Badge): TypeofBadge = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofBadge]
   }
   
-  @scala.inline
-  implicit class TypeofBadgeMutableBuilder[Self <: TypeofBadge] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofBadge](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Badge): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Badge): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Badge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Badge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

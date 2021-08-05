@@ -29,22 +29,17 @@ trait UpdateBrokerCountRequest extends StObject {
 }
 object UpdateBrokerCountRequest {
   
-  @scala.inline
-  def apply(ClusterArn: string, CurrentVersion: string, TargetNumberOfBrokerNodes: integerMin1Max15): UpdateBrokerCountRequest = {
+  inline def apply(ClusterArn: string, CurrentVersion: string, TargetNumberOfBrokerNodes: integerMin1Max15): UpdateBrokerCountRequest = {
     val __obj = js.Dynamic.literal(ClusterArn = ClusterArn.asInstanceOf[js.Any], CurrentVersion = CurrentVersion.asInstanceOf[js.Any], TargetNumberOfBrokerNodes = TargetNumberOfBrokerNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBrokerCountRequest]
   }
   
-  @scala.inline
-  implicit class UpdateBrokerCountRequestMutableBuilder[Self <: UpdateBrokerCountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateBrokerCountRequest](x: Self) {
     
-    @scala.inline
-    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersion(value: string): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: string): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNumberOfBrokerNodes(value: integerMin1Max15): Self = StObject.set(x, "TargetNumberOfBrokerNodes", value.asInstanceOf[js.Any])
+    inline def setTargetNumberOfBrokerNodes(value: integerMin1Max15): Self = StObject.set(x, "TargetNumberOfBrokerNodes", value.asInstanceOf[js.Any])
   }
 }

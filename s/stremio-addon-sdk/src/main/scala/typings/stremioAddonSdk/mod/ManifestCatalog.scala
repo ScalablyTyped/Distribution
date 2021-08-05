@@ -36,41 +36,30 @@ trait ManifestCatalog extends StObject {
 }
 object ManifestCatalog {
   
-  @scala.inline
-  def apply(id: String, name: String, `type`: ContentType): ManifestCatalog = {
+  inline def apply(id: String, name: String, `type`: ContentType): ManifestCatalog = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManifestCatalog]
   }
   
-  @scala.inline
-  implicit class ManifestCatalogMutableBuilder[Self <: ManifestCatalog] (val x: Self) extends AnyVal {
+  extension [Self <: ManifestCatalog](x: Self) {
     
-    @scala.inline
-    def setExtra(value: js.Array[ManifestExtra]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: js.Array[ManifestExtra]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
-    @scala.inline
-    def setExtraVarargs(value: ManifestExtra*): Self = StObject.set(x, "extra", js.Array(value :_*))
+    inline def setExtraVarargs(value: ManifestExtra*): Self = StObject.set(x, "extra", js.Array(value :_*))
     
-    @scala.inline
-    def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
+    inline def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
+    inline def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
     
-    @scala.inline
-    def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
+    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

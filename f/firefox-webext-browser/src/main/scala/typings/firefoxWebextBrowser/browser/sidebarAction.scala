@@ -30,26 +30,20 @@ object sidebarAction {
   }
   object GetPanelDetails {
     
-    @scala.inline
-    def apply(): GetPanelDetails = {
+    inline def apply(): GetPanelDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetPanelDetails]
     }
     
-    @scala.inline
-    implicit class GetPanelDetailsMutableBuilder[Self <: GetPanelDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GetPanelDetails](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       
-      @scala.inline
-      def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+      inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
     }
   }
   
@@ -67,26 +61,20 @@ object sidebarAction {
   }
   object GetTitleDetails {
     
-    @scala.inline
-    def apply(): GetTitleDetails = {
+    inline def apply(): GetTitleDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetTitleDetails]
     }
     
-    @scala.inline
-    implicit class GetTitleDetailsMutableBuilder[Self <: GetTitleDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GetTitleDetails](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       
-      @scala.inline
-      def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+      inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
     }
   }
   
@@ -101,20 +89,16 @@ object sidebarAction {
   }
   object IsOpenDetails {
     
-    @scala.inline
-    def apply(): IsOpenDetails = {
+    inline def apply(): IsOpenDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IsOpenDetails]
     }
     
-    @scala.inline
-    implicit class IsOpenDetailsMutableBuilder[Self <: IsOpenDetails] (val x: Self) extends AnyVal {
+    extension [Self <: IsOpenDetails](x: Self) {
       
-      @scala.inline
-      def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+      inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
     }
   }
   
@@ -138,38 +122,28 @@ object sidebarAction {
   }
   object SetIconDetails {
     
-    @scala.inline
-    def apply(): SetIconDetails = {
+    inline def apply(): SetIconDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetIconDetails]
     }
     
-    @scala.inline
-    implicit class SetIconDetailsMutableBuilder[Self <: SetIconDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SetIconDetails](x: Self) {
       
-      @scala.inline
-      def setImageData(value: ImageDataType | NumberDictionary[ImageDataType]): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
+      inline def setImageData(value: ImageDataType | NumberDictionary[ImageDataType]): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
+      inline def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
       
-      @scala.inline
-      def setPath(value: String | StringDictionary[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | StringDictionary[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       
-      @scala.inline
-      def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+      inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
     }
   }
   
@@ -186,32 +160,24 @@ object sidebarAction {
   }
   object SetPanelDetails {
     
-    @scala.inline
-    def apply(): SetPanelDetails = {
+    inline def apply(): SetPanelDetails = {
       val __obj = js.Dynamic.literal(panel = null)
       __obj.asInstanceOf[SetPanelDetails]
     }
     
-    @scala.inline
-    implicit class SetPanelDetailsMutableBuilder[Self <: SetPanelDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SetPanelDetails](x: Self) {
       
-      @scala.inline
-      def setPanel(value: String): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+      inline def setPanel(value: String): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelNull: Self = StObject.set(x, "panel", null)
+      inline def setPanelNull: Self = StObject.set(x, "panel", null)
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       
-      @scala.inline
-      def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+      inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
     }
   }
   
@@ -228,32 +194,24 @@ object sidebarAction {
   }
   object SetTitleDetails {
     
-    @scala.inline
-    def apply(): SetTitleDetails = {
+    inline def apply(): SetTitleDetails = {
       val __obj = js.Dynamic.literal(title = null)
       __obj.asInstanceOf[SetTitleDetails]
     }
     
-    @scala.inline
-    implicit class SetTitleDetailsMutableBuilder[Self <: SetTitleDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SetTitleDetails](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleNull: Self = StObject.set(x, "title", null)
+      inline def setTitleNull: Self = StObject.set(x, "title", null)
       
-      @scala.inline
-      def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+      inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
     }
   }
 }

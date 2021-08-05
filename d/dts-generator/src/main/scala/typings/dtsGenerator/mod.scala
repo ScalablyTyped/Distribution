@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: DtsGeneratorOptions): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  inline def apply(options: DtsGeneratorOptions): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   @JSImport("dts-generator", JSImport.Namespace)
   @js.native
@@ -87,110 +86,76 @@ object mod {
   }
   object DtsGeneratorOptions {
     
-    @scala.inline
-    def apply(name: String, out: String): DtsGeneratorOptions = {
+    inline def apply(name: String, out: String): DtsGeneratorOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], out = out.asInstanceOf[js.Any])
       __obj.asInstanceOf[DtsGeneratorOptions]
     }
     
-    @scala.inline
-    implicit class DtsGeneratorOptionsMutableBuilder[Self <: DtsGeneratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DtsGeneratorOptions](x: Self) {
       
-      @scala.inline
-      def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
+      inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
+      inline def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
       
-      @scala.inline
-      def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setExterns(value: js.Array[String]): Self = StObject.set(x, "externs", value.asInstanceOf[js.Any])
+      inline def setExterns(value: js.Array[String]): Self = StObject.set(x, "externs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternsUndefined: Self = StObject.set(x, "externs", js.undefined)
+      inline def setExternsUndefined: Self = StObject.set(x, "externs", js.undefined)
       
-      @scala.inline
-      def setExternsVarargs(value: String*): Self = StObject.set(x, "externs", js.Array(value :_*))
+      inline def setExternsVarargs(value: String*): Self = StObject.set(x, "externs", js.Array(value :_*))
       
-      @scala.inline
-      def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
+      inline def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
       
-      @scala.inline
-      def setModuleResolution(value: ModuleResolutionKind): Self = StObject.set(x, "moduleResolution", value.asInstanceOf[js.Any])
+      inline def setModuleResolution(value: ModuleResolutionKind): Self = StObject.set(x, "moduleResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleResolutionUndefined: Self = StObject.set(x, "moduleResolution", js.undefined)
+      inline def setModuleResolutionUndefined: Self = StObject.set(x, "moduleResolution", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOut(value: String): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
+      inline def setOut(value: String): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
-      @scala.inline
-      def setResolveModuleId(value: /* params */ ResolveModuleIdParams => String): Self = StObject.set(x, "resolveModuleId", js.Any.fromFunction1(value))
+      inline def setResolveModuleId(value: /* params */ ResolveModuleIdParams => String): Self = StObject.set(x, "resolveModuleId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveModuleIdUndefined: Self = StObject.set(x, "resolveModuleId", js.undefined)
+      inline def setResolveModuleIdUndefined: Self = StObject.set(x, "resolveModuleId", js.undefined)
       
-      @scala.inline
-      def setResolveModuleImport(value: /* params */ ResolveModuleImportParams => String): Self = StObject.set(x, "resolveModuleImport", js.Any.fromFunction1(value))
+      inline def setResolveModuleImport(value: /* params */ ResolveModuleImportParams => String): Self = StObject.set(x, "resolveModuleImport", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveModuleImportUndefined: Self = StObject.set(x, "resolveModuleImport", js.undefined)
+      inline def setResolveModuleImportUndefined: Self = StObject.set(x, "resolveModuleImport", js.undefined)
       
-      @scala.inline
-      def setTarget(value: ScriptTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: ScriptTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+      inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      @scala.inline
-      def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
     }
   }
   
@@ -201,17 +166,14 @@ object mod {
   }
   object ResolveModuleIdParams {
     
-    @scala.inline
-    def apply(currentModuleId: String): ResolveModuleIdParams = {
+    inline def apply(currentModuleId: String): ResolveModuleIdParams = {
       val __obj = js.Dynamic.literal(currentModuleId = currentModuleId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolveModuleIdParams]
     }
     
-    @scala.inline
-    implicit class ResolveModuleIdParamsMutableBuilder[Self <: ResolveModuleIdParams] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveModuleIdParams](x: Self) {
       
-      @scala.inline
-      def setCurrentModuleId(value: String): Self = StObject.set(x, "currentModuleId", value.asInstanceOf[js.Any])
+      inline def setCurrentModuleId(value: String): Self = StObject.set(x, "currentModuleId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -228,23 +190,18 @@ object mod {
   }
   object ResolveModuleImportParams {
     
-    @scala.inline
-    def apply(currentModuleId: String, importedModuleId: String, isDeclaredExternalModule: Boolean): ResolveModuleImportParams = {
+    inline def apply(currentModuleId: String, importedModuleId: String, isDeclaredExternalModule: Boolean): ResolveModuleImportParams = {
       val __obj = js.Dynamic.literal(currentModuleId = currentModuleId.asInstanceOf[js.Any], importedModuleId = importedModuleId.asInstanceOf[js.Any], isDeclaredExternalModule = isDeclaredExternalModule.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolveModuleImportParams]
     }
     
-    @scala.inline
-    implicit class ResolveModuleImportParamsMutableBuilder[Self <: ResolveModuleImportParams] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveModuleImportParams](x: Self) {
       
-      @scala.inline
-      def setCurrentModuleId(value: String): Self = StObject.set(x, "currentModuleId", value.asInstanceOf[js.Any])
+      inline def setCurrentModuleId(value: String): Self = StObject.set(x, "currentModuleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportedModuleId(value: String): Self = StObject.set(x, "importedModuleId", value.asInstanceOf[js.Any])
+      inline def setImportedModuleId(value: String): Self = StObject.set(x, "importedModuleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDeclaredExternalModule(value: Boolean): Self = StObject.set(x, "isDeclaredExternalModule", value.asInstanceOf[js.Any])
+      inline def setIsDeclaredExternalModule(value: Boolean): Self = StObject.set(x, "isDeclaredExternalModule", value.asInstanceOf[js.Any])
     }
   }
 }

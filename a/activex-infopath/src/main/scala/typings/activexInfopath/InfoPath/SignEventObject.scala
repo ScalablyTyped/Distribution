@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SignEventObject extends StObject {
   
-  @JSName("InfoPath.SignEventObject_typekey")
+  /* private */ @JSName("InfoPath.SignEventObject_typekey")
   var InfoPathDotSignEventObject_typekey: SignEventObject
   
   var ReturnStatus: Boolean
@@ -17,8 +17,7 @@ trait SignEventObject extends StObject {
 }
 object SignEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InfoPathDotSignEventObject_typekey: SignEventObject,
     ReturnStatus: Boolean,
     SignedDataBlock: SignedDataBlockObject,
@@ -29,19 +28,14 @@ object SignEventObject {
     __obj.asInstanceOf[SignEventObject]
   }
   
-  @scala.inline
-  implicit class SignEventObjectMutableBuilder[Self <: SignEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: SignEventObject](x: Self) {
     
-    @scala.inline
-    def setInfoPathDotSignEventObject_typekey(value: SignEventObject): Self = StObject.set(x, "InfoPath.SignEventObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotSignEventObject_typekey(value: SignEventObject): Self = StObject.set(x, "InfoPath.SignEventObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
+    inline def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedDataBlock(value: SignedDataBlockObject): Self = StObject.set(x, "SignedDataBlock", value.asInstanceOf[js.Any])
+    inline def setSignedDataBlock(value: SignedDataBlockObject): Self = StObject.set(x, "SignedDataBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
+    inline def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
   }
 }

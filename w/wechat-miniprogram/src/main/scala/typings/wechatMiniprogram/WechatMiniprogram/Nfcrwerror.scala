@@ -50,19 +50,15 @@ trait Nfcrwerror extends StObject {
 }
 object Nfcrwerror {
   
-  @scala.inline
-  def apply(errCode: Double, errMsg: String): Nfcrwerror = {
+  inline def apply(errCode: Double, errMsg: String): Nfcrwerror = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nfcrwerror]
   }
   
-  @scala.inline
-  implicit class NfcrwerrorMutableBuilder[Self <: Nfcrwerror] (val x: Self) extends AnyVal {
+  extension [Self <: Nfcrwerror](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

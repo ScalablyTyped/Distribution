@@ -228,8 +228,7 @@ trait SearchBox
 }
 object SearchBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activate: (String, String, String, String, String, String, String, String, String) => Unit,
     activateDefaultNavigationBehavior: () => Unit,
     activateDefaultQuerySuggestionBehavior: () => Unit,
@@ -379,274 +378,184 @@ object SearchBox {
     __obj.asInstanceOf[SearchBox]
   }
   
-  @scala.inline
-  implicit class SearchBoxMutableBuilder[Self <: SearchBox] (val x: Self) extends AnyVal {
+  extension [Self <: SearchBox](x: Self) {
     
-    @scala.inline
-    def setActivate(value: (String, String, String, String, String, String, String, String, String) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction9(value))
+    inline def setActivate(value: (String, String, String, String, String, String, String, String, String) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction9(value))
     
-    @scala.inline
-    def setActivateDefaultNavigationBehavior(value: () => Unit): Self = StObject.set(x, "activateDefaultNavigationBehavior", js.Any.fromFunction0(value))
+    inline def setActivateDefaultNavigationBehavior(value: () => Unit): Self = StObject.set(x, "activateDefaultNavigationBehavior", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActivateDefaultQuerySuggestionBehavior(value: () => Unit): Self = StObject.set(x, "activateDefaultQuerySuggestionBehavior", js.Any.fromFunction0(value))
+    inline def setActivateDefaultQuerySuggestionBehavior(value: () => Unit): Self = StObject.set(x, "activateDefaultQuerySuggestionBehavior", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAdd_batchQueryIssuing(value: js.Any => Unit): Self = StObject.set(x, "add_batchQueryIssuing", js.Any.fromFunction1(value))
+    inline def setAdd_batchQueryIssuing(value: js.Any => Unit): Self = StObject.set(x, "add_batchQueryIssuing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAdd_batchResultReady(value: js.Any => Unit): Self = StObject.set(x, "add_batchResultReady", js.Any.fromFunction1(value))
+    inline def setAdd_batchResultReady(value: js.Any => Unit): Self = StObject.set(x, "add_batchResultReady", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAdd_queryReady(value: js.Any => Unit): Self = StObject.set(x, "add_queryReady", js.Any.fromFunction1(value))
+    inline def setAdd_queryReady(value: js.Any => Unit): Self = StObject.set(x, "add_queryReady", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDataProvider_QueryIssuing(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "dataProvider_QueryIssuing", js.Any.fromFunction2(value))
+    inline def setDataProvider_QueryIssuing(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "dataProvider_QueryIssuing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDataProvider_QueryStateChanged(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "dataProvider_QueryStateChanged", js.Any.fromFunction2(value))
+    inline def setDataProvider_QueryStateChanged(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "dataProvider_QueryStateChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDataProvider_ResultReady(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "dataProvider_ResultReady", js.Any.fromFunction2(value))
+    inline def setDataProvider_ResultReady(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "dataProvider_ResultReady", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_advancedSearchPageAddress(value: () => String): Self = StObject.set(x, "get_advancedSearchPageAddress", js.Any.fromFunction0(value))
+    inline def setGet_advancedSearchPageAddress(value: () => String): Self = StObject.set(x, "get_advancedSearchPageAddress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_allowEmptySearch(value: () => Boolean): Self = StObject.set(x, "get_allowEmptySearch", js.Any.fromFunction0(value))
+    inline def setGet_allowEmptySearch(value: () => Boolean): Self = StObject.set(x, "get_allowEmptySearch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_currentPrompt(value: () => String): Self = StObject.set(x, "get_currentPrompt", js.Any.fromFunction0(value))
+    inline def setGet_currentPrompt(value: () => String): Self = StObject.set(x, "get_currentPrompt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_currentTerm(value: () => String): Self = StObject.set(x, "get_currentTerm", js.Any.fromFunction0(value))
+    inline def setGet_currentTerm(value: () => String): Self = StObject.set(x, "get_currentTerm", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_initialPrompt(value: () => String): Self = StObject.set(x, "get_initialPrompt", js.Any.fromFunction0(value))
+    inline def setGet_initialPrompt(value: () => String): Self = StObject.set(x, "get_initialPrompt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_maintainQueryState(value: () => Boolean): Self = StObject.set(x, "get_maintainQueryState", js.Any.fromFunction0(value))
+    inline def setGet_maintainQueryState(value: () => Boolean): Self = StObject.set(x, "get_maintainQueryState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_msBeforeShowingProgress(value: () => Double): Self = StObject.set(x, "get_msBeforeShowingProgress", js.Any.fromFunction0(value))
+    inline def setGet_msBeforeShowingProgress(value: () => Double): Self = StObject.set(x, "get_msBeforeShowingProgress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_navigationButtonId(value: () => String): Self = StObject.set(x, "get_navigationButtonId", js.Any.fromFunction0(value))
+    inline def setGet_navigationButtonId(value: () => String): Self = StObject.set(x, "get_navigationButtonId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_navigationListId(value: () => String): Self = StObject.set(x, "get_navigationListId", js.Any.fromFunction0(value))
+    inline def setGet_navigationListId(value: () => String): Self = StObject.set(x, "get_navigationListId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_navigationNodes(value: () => js.Any): Self = StObject.set(x, "get_navigationNodes", js.Any.fromFunction0(value))
+    inline def setGet_navigationNodes(value: () => js.Any): Self = StObject.set(x, "get_navigationNodes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_pageTitlePrefix(value: () => String): Self = StObject.set(x, "get_pageTitlePrefix", js.Any.fromFunction0(value))
+    inline def setGet_pageTitlePrefix(value: () => String): Self = StObject.set(x, "get_pageTitlePrefix", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_personalResultCount(value: () => Double): Self = StObject.set(x, "get_personalResultCount", js.Any.fromFunction0(value))
+    inline def setGet_personalResultCount(value: () => Double): Self = StObject.set(x, "get_personalResultCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_promptCssClass(value: () => String): Self = StObject.set(x, "get_promptCssClass", js.Any.fromFunction0(value))
+    inline def setGet_promptCssClass(value: () => String): Self = StObject.set(x, "get_promptCssClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queryGroupNames(value: () => js.Array[String]): Self = StObject.set(x, "get_queryGroupNames", js.Any.fromFunction0(value))
+    inline def setGet_queryGroupNames(value: () => js.Array[String]): Self = StObject.set(x, "get_queryGroupNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_querySuggestionCompletionInterval(value: () => Double): Self = StObject.set(x, "get_querySuggestionCompletionInterval", js.Any.fromFunction0(value))
+    inline def setGet_querySuggestionCompletionInterval(value: () => Double): Self = StObject.set(x, "get_querySuggestionCompletionInterval", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_querySuggestionCount(value: () => Double): Self = StObject.set(x, "get_querySuggestionCount", js.Any.fromFunction0(value))
+    inline def setGet_querySuggestionCount(value: () => Double): Self = StObject.set(x, "get_querySuggestionCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_querySuggestionMinimumPrefixLength(value: () => Double): Self = StObject.set(x, "get_querySuggestionMinimumPrefixLength", js.Any.fromFunction0(value))
+    inline def setGet_querySuggestionMinimumPrefixLength(value: () => Double): Self = StObject.set(x, "get_querySuggestionMinimumPrefixLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_querySuggestionsSourceID(value: () => String): Self = StObject.set(x, "get_querySuggestionsSourceID", js.Any.fromFunction0(value))
+    inline def setGet_querySuggestionsSourceID(value: () => String): Self = StObject.set(x, "get_querySuggestionsSourceID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_resultsPageAddress(value: () => String): Self = StObject.set(x, "get_resultsPageAddress", js.Any.fromFunction0(value))
+    inline def setGet_resultsPageAddress(value: () => String): Self = StObject.set(x, "get_resultsPageAddress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_searchBoxContainerElement(value: () => Element): Self = StObject.set(x, "get_searchBoxContainerElement", js.Any.fromFunction0(value))
+    inline def setGet_searchBoxContainerElement(value: () => Element): Self = StObject.set(x, "get_searchBoxContainerElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_searchBoxContainerId(value: () => String): Self = StObject.set(x, "get_searchBoxContainerId", js.Any.fromFunction0(value))
+    inline def setGet_searchBoxContainerId(value: () => String): Self = StObject.set(x, "get_searchBoxContainerId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_searchBoxInputElement(value: () => Element): Self = StObject.set(x, "get_searchBoxInputElement", js.Any.fromFunction0(value))
+    inline def setGet_searchBoxInputElement(value: () => Element): Self = StObject.set(x, "get_searchBoxInputElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_searchBoxInputId(value: () => String): Self = StObject.set(x, "get_searchBoxInputId", js.Any.fromFunction0(value))
+    inline def setGet_searchBoxInputId(value: () => String): Self = StObject.set(x, "get_searchBoxInputId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_searchBoxLinkElement(value: () => Element): Self = StObject.set(x, "get_searchBoxLinkElement", js.Any.fromFunction0(value))
+    inline def setGet_searchBoxLinkElement(value: () => Element): Self = StObject.set(x, "get_searchBoxLinkElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_searchBoxLinkId(value: () => String): Self = StObject.set(x, "get_searchBoxLinkId", js.Any.fromFunction0(value))
+    inline def setGet_searchBoxLinkId(value: () => String): Self = StObject.set(x, "get_searchBoxLinkId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_searchBoxProgressClass(value: () => String): Self = StObject.set(x, "get_searchBoxProgressClass", js.Any.fromFunction0(value))
+    inline def setGet_searchBoxProgressClass(value: () => String): Self = StObject.set(x, "get_searchBoxProgressClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_serverInitialRender(value: () => Boolean): Self = StObject.set(x, "get_serverInitialRender", js.Any.fromFunction0(value))
+    inline def setGet_serverInitialRender(value: () => Boolean): Self = StObject.set(x, "get_serverInitialRender", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_setFocusOnPageLoad(value: () => Boolean): Self = StObject.set(x, "get_setFocusOnPageLoad", js.Any.fromFunction0(value))
+    inline def setGet_setFocusOnPageLoad(value: () => Boolean): Self = StObject.set(x, "get_setFocusOnPageLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_showAdvancedLink(value: () => Boolean): Self = StObject.set(x, "get_showAdvancedLink", js.Any.fromFunction0(value))
+    inline def setGet_showAdvancedLink(value: () => Boolean): Self = StObject.set(x, "get_showAdvancedLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_showNavigation(value: () => Boolean): Self = StObject.set(x, "get_showNavigation", js.Any.fromFunction0(value))
+    inline def setGet_showNavigation(value: () => Boolean): Self = StObject.set(x, "get_showNavigation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_showPeopleNameSuggestions(value: () => Boolean): Self = StObject.set(x, "get_showPeopleNameSuggestions", js.Any.fromFunction0(value))
+    inline def setGet_showPeopleNameSuggestions(value: () => Boolean): Self = StObject.set(x, "get_showPeopleNameSuggestions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_showPreferencesLink(value: () => Boolean): Self = StObject.set(x, "get_showPreferencesLink", js.Any.fromFunction0(value))
+    inline def setGet_showPreferencesLink(value: () => Boolean): Self = StObject.set(x, "get_showPreferencesLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_showQuerySuggestions(value: () => Boolean): Self = StObject.set(x, "get_showQuerySuggestions", js.Any.fromFunction0(value))
+    inline def setGet_showQuerySuggestions(value: () => Boolean): Self = StObject.set(x, "get_showQuerySuggestions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_suggestionsListId(value: () => String): Self = StObject.set(x, "get_suggestionsListId", js.Any.fromFunction0(value))
+    inline def setGet_suggestionsListId(value: () => String): Self = StObject.set(x, "get_suggestionsListId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_tryInplaceQuery(value: () => Boolean): Self = StObject.set(x, "get_tryInplaceQuery", js.Any.fromFunction0(value))
+    inline def setGet_tryInplaceQuery(value: () => Boolean): Self = StObject.set(x, "get_tryInplaceQuery", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_updatePageTitle(value: () => Boolean): Self = StObject.set(x, "get_updatePageTitle", js.Any.fromFunction0(value))
+    inline def setGet_updatePageTitle(value: () => Boolean): Self = StObject.set(x, "get_updatePageTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHidePrompt(value: () => Unit): Self = StObject.set(x, "hidePrompt", js.Any.fromFunction0(value))
+    inline def setHidePrompt(value: () => Unit): Self = StObject.set(x, "hidePrompt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRaiseBatchQueryIssuingEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseBatchQueryIssuingEvent", js.Any.fromFunction1(value))
+    inline def setRaiseBatchQueryIssuingEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseBatchQueryIssuingEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRaiseBatchResultReadyEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseBatchResultReadyEvent", js.Any.fromFunction1(value))
+    inline def setRaiseBatchResultReadyEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseBatchResultReadyEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRaiseQueryReadyEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseQueryReadyEvent", js.Any.fromFunction1(value))
+    inline def setRaiseQueryReadyEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseQueryReadyEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove_batchQueryIssuing(value: js.Any => Unit): Self = StObject.set(x, "remove_batchQueryIssuing", js.Any.fromFunction1(value))
+    inline def setRemove_batchQueryIssuing(value: js.Any => Unit): Self = StObject.set(x, "remove_batchQueryIssuing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove_batchResultReady(value: js.Any => Unit): Self = StObject.set(x, "remove_batchResultReady", js.Any.fromFunction1(value))
+    inline def setRemove_batchResultReady(value: js.Any => Unit): Self = StObject.set(x, "remove_batchResultReady", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove_queryReady(value: js.Any => Unit): Self = StObject.set(x, "remove_queryReady", js.Any.fromFunction1(value))
+    inline def setRemove_queryReady(value: js.Any => Unit): Self = StObject.set(x, "remove_queryReady", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearch(value: String => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+    inline def setSearch(value: String => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBorder(value: Boolean => Unit): Self = StObject.set(x, "setBorder", js.Any.fromFunction1(value))
+    inline def setSetBorder(value: Boolean => Unit): Self = StObject.set(x, "setBorder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_advancedSearchPageAddress(value: String => String): Self = StObject.set(x, "set_advancedSearchPageAddress", js.Any.fromFunction1(value))
+    inline def setSet_advancedSearchPageAddress(value: String => String): Self = StObject.set(x, "set_advancedSearchPageAddress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_allowEmptySearch(value: Boolean => Boolean): Self = StObject.set(x, "set_allowEmptySearch", js.Any.fromFunction1(value))
+    inline def setSet_allowEmptySearch(value: Boolean => Boolean): Self = StObject.set(x, "set_allowEmptySearch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_currentPrompt(value: String => String): Self = StObject.set(x, "set_currentPrompt", js.Any.fromFunction1(value))
+    inline def setSet_currentPrompt(value: String => String): Self = StObject.set(x, "set_currentPrompt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_currentTerm(value: String => String): Self = StObject.set(x, "set_currentTerm", js.Any.fromFunction1(value))
+    inline def setSet_currentTerm(value: String => String): Self = StObject.set(x, "set_currentTerm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_initialPrompt(value: String => String): Self = StObject.set(x, "set_initialPrompt", js.Any.fromFunction1(value))
+    inline def setSet_initialPrompt(value: String => String): Self = StObject.set(x, "set_initialPrompt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_maintainQueryState(value: Boolean => Boolean): Self = StObject.set(x, "set_maintainQueryState", js.Any.fromFunction1(value))
+    inline def setSet_maintainQueryState(value: Boolean => Boolean): Self = StObject.set(x, "set_maintainQueryState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_msBeforeShowingProgress(value: Double => Double): Self = StObject.set(x, "set_msBeforeShowingProgress", js.Any.fromFunction1(value))
+    inline def setSet_msBeforeShowingProgress(value: Double => Double): Self = StObject.set(x, "set_msBeforeShowingProgress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_navigationButtonId(value: String => String): Self = StObject.set(x, "set_navigationButtonId", js.Any.fromFunction1(value))
+    inline def setSet_navigationButtonId(value: String => String): Self = StObject.set(x, "set_navigationButtonId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_navigationListId(value: String => String): Self = StObject.set(x, "set_navigationListId", js.Any.fromFunction1(value))
+    inline def setSet_navigationListId(value: String => String): Self = StObject.set(x, "set_navigationListId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_navigationNodes(value: js.Any => js.Any): Self = StObject.set(x, "set_navigationNodes", js.Any.fromFunction1(value))
+    inline def setSet_navigationNodes(value: js.Any => js.Any): Self = StObject.set(x, "set_navigationNodes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_pageTitlePrefix(value: String => String): Self = StObject.set(x, "set_pageTitlePrefix", js.Any.fromFunction1(value))
+    inline def setSet_pageTitlePrefix(value: String => String): Self = StObject.set(x, "set_pageTitlePrefix", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_personalResultCount(value: Double => Double): Self = StObject.set(x, "set_personalResultCount", js.Any.fromFunction1(value))
+    inline def setSet_personalResultCount(value: Double => Double): Self = StObject.set(x, "set_personalResultCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_promptCssClass(value: String => String): Self = StObject.set(x, "set_promptCssClass", js.Any.fromFunction1(value))
+    inline def setSet_promptCssClass(value: String => String): Self = StObject.set(x, "set_promptCssClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_queryGroupNames(value: js.Any => js.Array[String]): Self = StObject.set(x, "set_queryGroupNames", js.Any.fromFunction1(value))
+    inline def setSet_queryGroupNames(value: js.Any => js.Array[String]): Self = StObject.set(x, "set_queryGroupNames", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_querySuggestionCompletionInterval(value: Double => Double): Self = StObject.set(x, "set_querySuggestionCompletionInterval", js.Any.fromFunction1(value))
+    inline def setSet_querySuggestionCompletionInterval(value: Double => Double): Self = StObject.set(x, "set_querySuggestionCompletionInterval", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_querySuggestionCount(value: Double => Double): Self = StObject.set(x, "set_querySuggestionCount", js.Any.fromFunction1(value))
+    inline def setSet_querySuggestionCount(value: Double => Double): Self = StObject.set(x, "set_querySuggestionCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_querySuggestionMinimumPrefixLength(value: Double => Double): Self = StObject.set(x, "set_querySuggestionMinimumPrefixLength", js.Any.fromFunction1(value))
+    inline def setSet_querySuggestionMinimumPrefixLength(value: Double => Double): Self = StObject.set(x, "set_querySuggestionMinimumPrefixLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_querySuggestionsSourceID(value: String => String): Self = StObject.set(x, "set_querySuggestionsSourceID", js.Any.fromFunction1(value))
+    inline def setSet_querySuggestionsSourceID(value: String => String): Self = StObject.set(x, "set_querySuggestionsSourceID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_resultsPageAddress(value: String => String): Self = StObject.set(x, "set_resultsPageAddress", js.Any.fromFunction1(value))
+    inline def setSet_resultsPageAddress(value: String => String): Self = StObject.set(x, "set_resultsPageAddress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_searchBoxContainerId(value: String => String): Self = StObject.set(x, "set_searchBoxContainerId", js.Any.fromFunction1(value))
+    inline def setSet_searchBoxContainerId(value: String => String): Self = StObject.set(x, "set_searchBoxContainerId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_searchBoxInputId(value: String => String): Self = StObject.set(x, "set_searchBoxInputId", js.Any.fromFunction1(value))
+    inline def setSet_searchBoxInputId(value: String => String): Self = StObject.set(x, "set_searchBoxInputId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_searchBoxLinkId(value: String => String): Self = StObject.set(x, "set_searchBoxLinkId", js.Any.fromFunction1(value))
+    inline def setSet_searchBoxLinkId(value: String => String): Self = StObject.set(x, "set_searchBoxLinkId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_searchBoxProgressClass(value: String => String): Self = StObject.set(x, "set_searchBoxProgressClass", js.Any.fromFunction1(value))
+    inline def setSet_searchBoxProgressClass(value: String => String): Self = StObject.set(x, "set_searchBoxProgressClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_serverInitialRender(value: Boolean => Boolean): Self = StObject.set(x, "set_serverInitialRender", js.Any.fromFunction1(value))
+    inline def setSet_serverInitialRender(value: Boolean => Boolean): Self = StObject.set(x, "set_serverInitialRender", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_setFocusOnPageLoad(value: Boolean => Boolean): Self = StObject.set(x, "set_setFocusOnPageLoad", js.Any.fromFunction1(value))
+    inline def setSet_setFocusOnPageLoad(value: Boolean => Boolean): Self = StObject.set(x, "set_setFocusOnPageLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_showAdvancedLink(value: Boolean => Boolean): Self = StObject.set(x, "set_showAdvancedLink", js.Any.fromFunction1(value))
+    inline def setSet_showAdvancedLink(value: Boolean => Boolean): Self = StObject.set(x, "set_showAdvancedLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_showNavigation(value: Boolean => Boolean): Self = StObject.set(x, "set_showNavigation", js.Any.fromFunction1(value))
+    inline def setSet_showNavigation(value: Boolean => Boolean): Self = StObject.set(x, "set_showNavigation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_showPeopleNameSuggestions(value: Boolean => Boolean): Self = StObject.set(x, "set_showPeopleNameSuggestions", js.Any.fromFunction1(value))
+    inline def setSet_showPeopleNameSuggestions(value: Boolean => Boolean): Self = StObject.set(x, "set_showPeopleNameSuggestions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_showPreferencesLink(value: Boolean => Boolean): Self = StObject.set(x, "set_showPreferencesLink", js.Any.fromFunction1(value))
+    inline def setSet_showPreferencesLink(value: Boolean => Boolean): Self = StObject.set(x, "set_showPreferencesLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_showQuerySuggestions(value: Boolean => Boolean): Self = StObject.set(x, "set_showQuerySuggestions", js.Any.fromFunction1(value))
+    inline def setSet_showQuerySuggestions(value: Boolean => Boolean): Self = StObject.set(x, "set_showQuerySuggestions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_suggestionsListId(value: String => String): Self = StObject.set(x, "set_suggestionsListId", js.Any.fromFunction1(value))
+    inline def setSet_suggestionsListId(value: String => String): Self = StObject.set(x, "set_suggestionsListId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_tryInplaceQuery(value: Boolean => Boolean): Self = StObject.set(x, "set_tryInplaceQuery", js.Any.fromFunction1(value))
+    inline def setSet_tryInplaceQuery(value: Boolean => Boolean): Self = StObject.set(x, "set_tryInplaceQuery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_updatePageTitle(value: Boolean => Boolean): Self = StObject.set(x, "set_updatePageTitle", js.Any.fromFunction1(value))
+    inline def setSet_updatePageTitle(value: Boolean => Boolean): Self = StObject.set(x, "set_updatePageTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowPrompt(value: () => Unit): Self = StObject.set(x, "showPrompt", js.Any.fromFunction0(value))
+    inline def setShowPrompt(value: () => Unit): Self = StObject.set(x, "showPrompt", js.Any.fromFunction0(value))
   }
 }

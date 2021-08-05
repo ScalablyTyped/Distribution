@@ -17,78 +17,68 @@ object josaStrings {
     extends StObject
        with Josa_
        with Subject
-  @scala.inline
-  def 가: 가 = "\uAC00".asInstanceOf[가]
+  inline def 가: 가 = "\uAC00".asInstanceOf[가]
   
   @js.native
   sealed trait 과
     extends StObject
        with Conjunction
        with Josa_
-  @scala.inline
-  def 과: 과 = "\uACFC".asInstanceOf[과]
+  inline def 과: 과 = "\uACFC".asInstanceOf[과]
   
   @js.native
   sealed trait 는
     extends StObject
        with Josa_
        with Topic
-  @scala.inline
-  def 는: 는 = "\uB294".asInstanceOf[는]
+  inline def 는: 는 = "\uB294".asInstanceOf[는]
   
   @js.native
   sealed trait 로
     extends StObject
        with Josa_
        with Means
-  @scala.inline
-  def 로: 로 = "\uB85C".asInstanceOf[로]
+  inline def 로: 로 = "\uB85C".asInstanceOf[로]
   
   @js.native
   sealed trait 를
     extends StObject
        with Josa_
        with Objective
-  @scala.inline
-  def 를: 를 = "\uB97C".asInstanceOf[를]
+  inline def 를: 를 = "\uB97C".asInstanceOf[를]
   
   @js.native
   sealed trait 와
     extends StObject
        with Conjunction
        with Josa_
-  @scala.inline
-  def 와: 와 = "\uC640".asInstanceOf[와]
+  inline def 와: 와 = "\uC640".asInstanceOf[와]
   
   @js.native
   sealed trait 으로
     extends StObject
        with Josa_
        with Means
-  @scala.inline
-  def 으로: 으로 = "\uC73C\uB85C".asInstanceOf[으로]
+  inline def 으로: 으로 = "\uC73C\uB85C".asInstanceOf[으로]
   
   @js.native
   sealed trait 은
     extends StObject
        with Josa_
        with Topic
-  @scala.inline
-  def 은: 은 = "\uC740".asInstanceOf[은]
+  inline def 은: 은 = "\uC740".asInstanceOf[은]
   
   @js.native
   sealed trait 을
     extends StObject
        with Josa_
        with Objective
-  @scala.inline
-  def 을: 을 = "\uC744".asInstanceOf[을]
+  inline def 을: 을 = "\uC744".asInstanceOf[을]
   
   @js.native
   sealed trait 이
     extends StObject
        with Josa_
        with Subject
-  @scala.inline
-  def 이: 이 = "\uC774".asInstanceOf[이]
+  inline def 이: 이 = "\uC774".asInstanceOf[이]
 }

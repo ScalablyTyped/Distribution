@@ -91,8 +91,7 @@ object dataSetSelectorMod {
   }
   object DataSetSelector {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       comboBoxSelectText: String,
       compareText: String,
       listHeight: Double,
@@ -104,26 +103,19 @@ object dataSetSelectorMod {
       __obj.asInstanceOf[DataSetSelector]
     }
     
-    @scala.inline
-    implicit class DataSetSelectorMutableBuilder[Self <: DataSetSelector] (val x: Self) extends AnyVal {
+    extension [Self <: DataSetSelector](x: Self) {
       
-      @scala.inline
-      def setComboBoxSelectText(value: String): Self = StObject.set(x, "comboBoxSelectText", value.asInstanceOf[js.Any])
+      inline def setComboBoxSelectText(value: String): Self = StObject.set(x, "comboBoxSelectText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompareText(value: String): Self = StObject.set(x, "compareText", value.asInstanceOf[js.Any])
+      inline def setCompareText(value: String): Self = StObject.set(x, "compareText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListHeight(value: Double): Self = StObject.set(x, "listHeight", value.asInstanceOf[js.Any])
+      inline def setListHeight(value: Double): Self = StObject.set(x, "listHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectText(value: String): Self = StObject.set(x, "selectText", value.asInstanceOf[js.Any])
+      inline def setSelectText(value: String): Self = StObject.set(x, "selectText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

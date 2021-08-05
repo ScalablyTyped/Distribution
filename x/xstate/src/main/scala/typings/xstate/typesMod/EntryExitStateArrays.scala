@@ -14,8 +14,7 @@ trait EntryExitStateArrays[TContext] extends StObject {
 }
 object EntryExitStateArrays {
   
-  @scala.inline
-  def apply[TContext](
+  inline def apply[TContext](
     entry: js.Array[StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]]],
     exit: js.Array[StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]]]
   ): EntryExitStateArrays[TContext] = {
@@ -23,19 +22,14 @@ object EntryExitStateArrays {
     __obj.asInstanceOf[EntryExitStateArrays[TContext]]
   }
   
-  @scala.inline
-  implicit class EntryExitStateArraysMutableBuilder[Self <: EntryExitStateArrays[?], TContext] (val x: Self & EntryExitStateArrays[TContext]) extends AnyVal {
+  extension [Self <: EntryExitStateArrays[?], TContext](x: Self & EntryExitStateArrays[TContext]) {
     
-    @scala.inline
-    def setEntry(value: js.Array[StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: js.Array[StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryVarargs(value: (StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]])*): Self = StObject.set(x, "entry", js.Array(value :_*))
+    inline def setEntryVarargs(value: (StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]])*): Self = StObject.set(x, "entry", js.Array(value :_*))
     
-    @scala.inline
-    def setExit(value: js.Array[StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+    inline def setExit(value: js.Array[StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitVarargs(value: (StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]])*): Self = StObject.set(x, "exit", js.Array(value :_*))
+    inline def setExitVarargs(value: (StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]])*): Self = StObject.set(x, "exit", js.Array(value :_*))
   }
 }

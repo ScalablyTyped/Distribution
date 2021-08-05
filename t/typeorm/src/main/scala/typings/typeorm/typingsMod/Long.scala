@@ -211,32 +211,27 @@ object Long {
   @JSImport("typeorm/browser/driver/mongodb/typings", "Long.MAX_VALUE")
   @js.native
   def MAX_VALUE: Long = js.native
-  @scala.inline
-  def MAX_VALUE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_VALUE")(x.asInstanceOf[js.Any])
+  inline def MAX_VALUE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_VALUE")(x.asInstanceOf[js.Any])
   
   @JSImport("typeorm/browser/driver/mongodb/typings", "Long.MIN_VALUE")
   @js.native
   def MIN_VALUE: Long = js.native
-  @scala.inline
-  def MIN_VALUE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_VALUE")(x.asInstanceOf[js.Any])
+  inline def MIN_VALUE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_VALUE")(x.asInstanceOf[js.Any])
   
   @JSImport("typeorm/browser/driver/mongodb/typings", "Long.NEG_ONE")
   @js.native
   def NEG_ONE: Long = js.native
-  @scala.inline
-  def NEG_ONE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NEG_ONE")(x.asInstanceOf[js.Any])
+  inline def NEG_ONE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NEG_ONE")(x.asInstanceOf[js.Any])
   
   @JSImport("typeorm/browser/driver/mongodb/typings", "Long.ONE")
   @js.native
   def ONE: Long = js.native
-  @scala.inline
-  def ONE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+  inline def ONE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
   
   @JSImport("typeorm/browser/driver/mongodb/typings", "Long.ZERO")
   @js.native
   def ZERO: Long = js.native
-  @scala.inline
-  def ZERO_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+  inline def ZERO_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   
   /**
     * Returns a Long representing the 64-bit integer that comes by concatenating the given high and low bits.
@@ -245,24 +240,21 @@ object Long {
     * @param lowBits The low 32-bits.
     * @param highBits The high 32-bits.
     */
-  @scala.inline
-  def fromBits(lowBits: scala.Double, highBits: scala.Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromBits(lowBits: scala.Double, highBits: scala.Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[Long]
   
   /**
     * Returns a Long representing the given (32-bit) integer value.
     *
     * @param value The 32-bit integer in question.
     */
-  @scala.inline
-  def fromInt(value: scala.Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromInt(value: scala.Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
   
   /**
     * Returns a Long representing the given value, provided that it is a finite number. Otherwise, zero is returned.
     *
     * @param value The number in question.
     */
-  @scala.inline
-  def fromNumber(value: scala.Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromNumber(value: scala.Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
   
   /**
     * Returns a Long representation of the given string, written using the given radix.
@@ -270,8 +262,6 @@ object Long {
     * @param str The textual representation of the Long.
     * @param radix The radix in which the text is written.
     */
-  @scala.inline
-  def fromString(str: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def fromString(str: String, radix: scala.Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromString(str: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromString(str: String, radix: scala.Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Long]
 }

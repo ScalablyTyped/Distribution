@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FromFacet extends StObject
 object FromFacet {
   
-  @scala.inline
-  def From(): typings.vegaTypings.markMod.From = {
+  inline def From(): typings.vegaTypings.markMod.From = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.vegaTypings.markMod.From]
   }
   
-  @scala.inline
-  def FromfacetFacet(facet: Facet): typings.vegaTypings.anon.FromfacetFacet = {
+  inline def FromfacetFacet(facet: Facet): typings.vegaTypings.anon.FromfacetFacet = {
     val __obj = js.Dynamic.literal(facet = facet.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaTypings.anon.FromfacetFacet]
   }

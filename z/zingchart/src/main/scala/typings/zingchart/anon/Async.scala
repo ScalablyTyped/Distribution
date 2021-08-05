@@ -48,67 +48,47 @@ trait Async extends StObject {
 }
 object Async {
   
-  @scala.inline
-  def apply(): Async = {
+  inline def apply(): Async = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Async]
   }
   
-  @scala.inline
-  implicit class AsyncMutableBuilder[Self <: Async] (val x: Self) extends AnyVal {
+  extension [Self <: Async](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    @scala.inline
-    def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+    inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+    inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
     
-    @scala.inline
-    def `setBrush-typebrushType`(value: String): Self = StObject.set(x, "brush-typebrushType", value.asInstanceOf[js.Any])
+    inline def `setBrush-typebrushType`(value: String): Self = StObject.set(x, "brush-typebrushType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBrush-typebrushTypeUndefined`: Self = StObject.set(x, "brush-typebrushType", js.undefined)
+    inline def `setBrush-typebrushTypeUndefined`: Self = StObject.set(x, "brush-typebrushType", js.undefined)
     
-    @scala.inline
-    def setComposite(value: Boolean): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
+    inline def setComposite(value: Boolean): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
+    inline def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
     
-    @scala.inline
-    def setGraph(value: KeyscalekeyScale): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+    inline def setGraph(value: KeyscalekeyScale): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
+    inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
     
-    @scala.inline
-    def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def `setSort-datasortData`(value: Boolean): Self = StObject.set(x, "sort-datasortData", value.asInstanceOf[js.Any])
+    inline def `setSort-datasortData`(value: Boolean): Self = StObject.set(x, "sort-datasortData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSort-datasortDataUndefined`: Self = StObject.set(x, "sort-datasortData", js.undefined)
+    inline def `setSort-datasortDataUndefined`: Self = StObject.set(x, "sort-datasortData", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: Backgroundfit): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: Backgroundfit): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

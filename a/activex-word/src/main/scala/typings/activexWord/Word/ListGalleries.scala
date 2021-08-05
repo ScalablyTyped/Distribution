@@ -16,13 +16,12 @@ trait ListGalleries extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.ListGalleries_typekey")
+  /* private */ @JSName("Word.ListGalleries_typekey")
   var WordDotListGalleries_typekey: ListGalleries
 }
 object ListGalleries {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -35,25 +34,18 @@ object ListGalleries {
     __obj.asInstanceOf[ListGalleries]
   }
   
-  @scala.inline
-  implicit class ListGalleriesMutableBuilder[Self <: ListGalleries] (val x: Self) extends AnyVal {
+  extension [Self <: ListGalleries](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: WdListGalleryType => ListGallery): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: WdListGalleryType => ListGallery): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotListGalleries_typekey(value: ListGalleries): Self = StObject.set(x, "Word.ListGalleries_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotListGalleries_typekey(value: ListGalleries): Self = StObject.set(x, "Word.ListGalleries_typekey", value.asInstanceOf[js.Any])
   }
 }

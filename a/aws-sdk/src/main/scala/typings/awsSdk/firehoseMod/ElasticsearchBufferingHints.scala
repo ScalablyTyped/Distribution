@@ -18,25 +18,19 @@ trait ElasticsearchBufferingHints extends StObject {
 }
 object ElasticsearchBufferingHints {
   
-  @scala.inline
-  def apply(): ElasticsearchBufferingHints = {
+  inline def apply(): ElasticsearchBufferingHints = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElasticsearchBufferingHints]
   }
   
-  @scala.inline
-  implicit class ElasticsearchBufferingHintsMutableBuilder[Self <: ElasticsearchBufferingHints] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticsearchBufferingHints](x: Self) {
     
-    @scala.inline
-    def setIntervalInSeconds(value: ElasticsearchBufferingIntervalInSeconds): Self = StObject.set(x, "IntervalInSeconds", value.asInstanceOf[js.Any])
+    inline def setIntervalInSeconds(value: ElasticsearchBufferingIntervalInSeconds): Self = StObject.set(x, "IntervalInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalInSecondsUndefined: Self = StObject.set(x, "IntervalInSeconds", js.undefined)
+    inline def setIntervalInSecondsUndefined: Self = StObject.set(x, "IntervalInSeconds", js.undefined)
     
-    @scala.inline
-    def setSizeInMBs(value: ElasticsearchBufferingSizeInMBs): Self = StObject.set(x, "SizeInMBs", value.asInstanceOf[js.Any])
+    inline def setSizeInMBs(value: ElasticsearchBufferingSizeInMBs): Self = StObject.set(x, "SizeInMBs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInMBsUndefined: Self = StObject.set(x, "SizeInMBs", js.undefined)
+    inline def setSizeInMBsUndefined: Self = StObject.set(x, "SizeInMBs", js.undefined)
   }
 }

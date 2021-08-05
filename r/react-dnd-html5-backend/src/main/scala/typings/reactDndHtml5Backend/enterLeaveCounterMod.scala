@@ -16,9 +16,9 @@ object enterLeaveCounterMod {
     def enter(): Boolean = js.native
     def enter(enteringNode: EventTarget): Boolean = js.native
     
-    var entered: js.Any = js.native
+    /* private */ var entered: js.Any = js.native
     
-    var isNodeInDocument: js.Any = js.native
+    /* private */ var isNodeInDocument: js.Any = js.native
     
     def leave(): Boolean = js.native
     def leave(leavingNode: EventTarget): Boolean = js.native

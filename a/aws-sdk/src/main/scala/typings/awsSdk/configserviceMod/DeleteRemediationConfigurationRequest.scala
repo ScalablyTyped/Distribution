@@ -18,22 +18,17 @@ trait DeleteRemediationConfigurationRequest extends StObject {
 }
 object DeleteRemediationConfigurationRequest {
   
-  @scala.inline
-  def apply(ConfigRuleName: ConfigRuleName): DeleteRemediationConfigurationRequest = {
+  inline def apply(ConfigRuleName: ConfigRuleName): DeleteRemediationConfigurationRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRemediationConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRemediationConfigurationRequestMutableBuilder[Self <: DeleteRemediationConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRemediationConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
+    inline def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

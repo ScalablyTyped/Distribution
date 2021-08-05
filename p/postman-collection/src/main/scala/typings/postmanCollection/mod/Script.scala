@@ -33,6 +33,5 @@ object Script {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isScript(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScript")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isScript(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScript")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

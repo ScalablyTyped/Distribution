@@ -18,19 +18,15 @@ trait MemberFabricConfiguration extends StObject {
 }
 object MemberFabricConfiguration {
   
-  @scala.inline
-  def apply(AdminPassword: PasswordString, AdminUsername: UsernameString): MemberFabricConfiguration = {
+  inline def apply(AdminPassword: PasswordString, AdminUsername: UsernameString): MemberFabricConfiguration = {
     val __obj = js.Dynamic.literal(AdminPassword = AdminPassword.asInstanceOf[js.Any], AdminUsername = AdminUsername.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemberFabricConfiguration]
   }
   
-  @scala.inline
-  implicit class MemberFabricConfigurationMutableBuilder[Self <: MemberFabricConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: MemberFabricConfiguration](x: Self) {
     
-    @scala.inline
-    def setAdminPassword(value: PasswordString): Self = StObject.set(x, "AdminPassword", value.asInstanceOf[js.Any])
+    inline def setAdminPassword(value: PasswordString): Self = StObject.set(x, "AdminPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminUsername(value: UsernameString): Self = StObject.set(x, "AdminUsername", value.asInstanceOf[js.Any])
+    inline def setAdminUsername(value: UsernameString): Self = StObject.set(x, "AdminUsername", value.asInstanceOf[js.Any])
   }
 }

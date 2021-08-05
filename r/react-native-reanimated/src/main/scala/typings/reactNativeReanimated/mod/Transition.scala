@@ -28,30 +28,25 @@ object Transition {
   @JSImport("react-native-reanimated", "Transition.Change")
   @js.native
   def Change: ComponentClass[TransitionProps, ComponentState] = js.native
-  @scala.inline
-  def Change_=(x: ComponentClass[TransitionProps, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Change")(x.asInstanceOf[js.Any])
+  inline def Change_=(x: ComponentClass[TransitionProps, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Change")(x.asInstanceOf[js.Any])
   
   @JSImport("react-native-reanimated", "Transition.In")
   @js.native
   def In: ComponentClass[TransitionInOutProps, ComponentState] = js.native
-  @scala.inline
-  def In_=(x: ComponentClass[TransitionInOutProps, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("In")(x.asInstanceOf[js.Any])
+  inline def In_=(x: ComponentClass[TransitionInOutProps, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("In")(x.asInstanceOf[js.Any])
   
   @JSImport("react-native-reanimated", "Transition.Out")
   @js.native
   def Out: ComponentClass[TransitionInOutProps, ComponentState] = js.native
-  @scala.inline
-  def Out_=(x: ComponentClass[TransitionInOutProps, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Out")(x.asInstanceOf[js.Any])
+  inline def Out_=(x: ComponentClass[TransitionInOutProps, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Out")(x.asInstanceOf[js.Any])
   
   @JSImport("react-native-reanimated", "Transition.Sequence")
   @js.native
   def Sequence: ComponentClass[js.Object, ComponentState] = js.native
-  @scala.inline
-  def Sequence_=(x: ComponentClass[js.Object, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sequence")(x.asInstanceOf[js.Any])
+  inline def Sequence_=(x: ComponentClass[js.Object, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sequence")(x.asInstanceOf[js.Any])
   
   @JSImport("react-native-reanimated", "Transition.Together")
   @js.native
   def Together: ComponentClass[js.Object, ComponentState] = js.native
-  @scala.inline
-  def Together_=(x: ComponentClass[js.Object, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Together")(x.asInstanceOf[js.Any])
+  inline def Together_=(x: ComponentClass[js.Object, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Together")(x.asInstanceOf[js.Any])
 }

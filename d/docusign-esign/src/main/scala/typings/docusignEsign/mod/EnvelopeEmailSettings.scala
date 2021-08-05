@@ -36,34 +36,25 @@ trait EnvelopeEmailSettings extends StObject {
 }
 object EnvelopeEmailSettings {
   
-  @scala.inline
-  def apply(): EnvelopeEmailSettings = {
+  inline def apply(): EnvelopeEmailSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeEmailSettings]
   }
   
-  @scala.inline
-  implicit class EnvelopeEmailSettingsMutableBuilder[Self <: EnvelopeEmailSettings] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeEmailSettings](x: Self) {
     
-    @scala.inline
-    def setBccEmailAddresses(value: js.Array[/* Contains information about the BCC email address. */ BccEmailAddress]): Self = StObject.set(x, "bccEmailAddresses", value.asInstanceOf[js.Any])
+    inline def setBccEmailAddresses(value: js.Array[/* Contains information about the BCC email address. */ BccEmailAddress]): Self = StObject.set(x, "bccEmailAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBccEmailAddressesUndefined: Self = StObject.set(x, "bccEmailAddresses", js.undefined)
+    inline def setBccEmailAddressesUndefined: Self = StObject.set(x, "bccEmailAddresses", js.undefined)
     
-    @scala.inline
-    def setBccEmailAddressesVarargs(value: (/* Contains information about the BCC email address. */ BccEmailAddress)*): Self = StObject.set(x, "bccEmailAddresses", js.Array(value :_*))
+    inline def setBccEmailAddressesVarargs(value: (/* Contains information about the BCC email address. */ BccEmailAddress)*): Self = StObject.set(x, "bccEmailAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setReplyEmailAddressOverride(value: String): Self = StObject.set(x, "replyEmailAddressOverride", value.asInstanceOf[js.Any])
+    inline def setReplyEmailAddressOverride(value: String): Self = StObject.set(x, "replyEmailAddressOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyEmailAddressOverrideUndefined: Self = StObject.set(x, "replyEmailAddressOverride", js.undefined)
+    inline def setReplyEmailAddressOverrideUndefined: Self = StObject.set(x, "replyEmailAddressOverride", js.undefined)
     
-    @scala.inline
-    def setReplyEmailNameOverride(value: String): Self = StObject.set(x, "replyEmailNameOverride", value.asInstanceOf[js.Any])
+    inline def setReplyEmailNameOverride(value: String): Self = StObject.set(x, "replyEmailNameOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyEmailNameOverrideUndefined: Self = StObject.set(x, "replyEmailNameOverride", js.undefined)
+    inline def setReplyEmailNameOverrideUndefined: Self = StObject.set(x, "replyEmailNameOverride", js.undefined)
   }
 }

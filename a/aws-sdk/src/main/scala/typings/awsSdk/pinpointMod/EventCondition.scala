@@ -18,25 +18,19 @@ trait EventCondition extends StObject {
 }
 object EventCondition {
   
-  @scala.inline
-  def apply(): EventCondition = {
+  inline def apply(): EventCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventCondition]
   }
   
-  @scala.inline
-  implicit class EventConditionMutableBuilder[Self <: EventCondition] (val x: Self) extends AnyVal {
+  extension [Self <: EventCondition](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: EventDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: EventDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    @scala.inline
-    def setMessageActivity(value: string): Self = StObject.set(x, "MessageActivity", value.asInstanceOf[js.Any])
+    inline def setMessageActivity(value: string): Self = StObject.set(x, "MessageActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageActivityUndefined: Self = StObject.set(x, "MessageActivity", js.undefined)
+    inline def setMessageActivityUndefined: Self = StObject.set(x, "MessageActivity", js.undefined)
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook._RecipientControl")
 @js.native
-class RecipientControl protected ()
+/* private */ class RecipientControl ()
   extends StObject
      with typings.activexOutlook.Outlook.RecipientControl {
   
@@ -22,7 +22,7 @@ class RecipientControl protected ()
   /* CompleteClass */
   var ForeColor: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook._RecipientControl_typekey")
   var OutlookDot_RecipientControl_typekey: typings.activexOutlook.Outlook.RecipientControl = js.native
   

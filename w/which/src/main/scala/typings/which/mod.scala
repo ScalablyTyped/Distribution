@@ -10,17 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @scala.inline
-  def apply(cmd: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(cmd: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @scala.inline
-  def apply(cmd: String, cb: js.Function2[/* err */ Error | Null, /* path */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(cmd: String, cb: js.Function2[/* err */ Error | Null, /* path */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @scala.inline
-  def apply(cmd: String, options: AsyncOptions & OptionsAll & OptionsFirst): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def apply(cmd: String, options: AsyncOptions & OptionsAll & OptionsFirst): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @scala.inline
-  def apply(
+  inline def apply(
     cmd: String,
     options: (AsyncOptions & OptionsAll & OptionsFirst) | AsyncOptions,
     cb: js.Function2[Error | Null, js.UndefOr[js.Array[String] | String], Unit]
@@ -31,20 +27,16 @@ object mod {
   val ^ : js.Any = js.native
   
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @scala.inline
-  def sync(cmd: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cmd.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sync(cmd: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cmd.asInstanceOf[js.Any]).asInstanceOf[String]
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @scala.inline
-  def sync(cmd: String, options: Options & OptionsFirst & OptionsThrow): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sync(cmd: String, options: Options & OptionsFirst & OptionsThrow): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /** Finds all instances of a specified executable in the PATH environment variable */
-  @scala.inline
-  def sync_Array(cmd: String, options: Options & OptionsAll & OptionsThrow): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def sync_Array(cmd: String, options: Options & OptionsAll & OptionsThrow): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   /** Finds all instances of a specified executable in the PATH environment variable */
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @scala.inline
-  def sync_Union(cmd: String, options: (Options & OptionsAll & OptionsNoThrow & OptionsFirst) | Options): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]
+  inline def sync_Union(cmd: String, options: (Options & OptionsAll & OptionsNoThrow & OptionsFirst) | Options): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]
   
   /** Options for which() async API */
   trait AsyncOptions extends StObject {
@@ -60,32 +52,24 @@ object mod {
   }
   object AsyncOptions {
     
-    @scala.inline
-    def apply(): AsyncOptions = {
+    inline def apply(): AsyncOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsyncOptions]
     }
     
-    @scala.inline
-    implicit class AsyncOptionsMutableBuilder[Self <: AsyncOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncOptions](x: Self) {
       
-      @scala.inline
-      def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathExt(value: String): Self = StObject.set(x, "pathExt", value.asInstanceOf[js.Any])
+      inline def setPathExt(value: String): Self = StObject.set(x, "pathExt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathExtUndefined: Self = StObject.set(x, "pathExt", js.undefined)
+      inline def setPathExtUndefined: Self = StObject.set(x, "pathExt", js.undefined)
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -99,20 +83,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setNothrow(value: Boolean): Self = StObject.set(x, "nothrow", value.asInstanceOf[js.Any])
+      inline def setNothrow(value: Boolean): Self = StObject.set(x, "nothrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNothrowUndefined: Self = StObject.set(x, "nothrow", js.undefined)
+      inline def setNothrowUndefined: Self = StObject.set(x, "nothrow", js.undefined)
     }
   }
   
@@ -126,17 +106,14 @@ object mod {
   }
   object OptionsAll {
     
-    @scala.inline
-    def apply(): OptionsAll = {
+    inline def apply(): OptionsAll = {
       val __obj = js.Dynamic.literal(all = true)
       __obj.asInstanceOf[OptionsAll]
     }
     
-    @scala.inline
-    implicit class OptionsAllMutableBuilder[Self <: OptionsAll] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsAll](x: Self) {
       
-      @scala.inline
-      def setAll(value: `true`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: `true`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,20 +127,16 @@ object mod {
   }
   object OptionsFirst {
     
-    @scala.inline
-    def apply(): OptionsFirst = {
+    inline def apply(): OptionsFirst = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsFirst]
     }
     
-    @scala.inline
-    implicit class OptionsFirstMutableBuilder[Self <: OptionsFirst] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsFirst](x: Self) {
       
-      @scala.inline
-      def setAll(value: `false`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: `false`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     }
   }
   
@@ -177,17 +150,14 @@ object mod {
   }
   object OptionsNoThrow {
     
-    @scala.inline
-    def apply(): OptionsNoThrow = {
+    inline def apply(): OptionsNoThrow = {
       val __obj = js.Dynamic.literal(nothrow = true)
       __obj.asInstanceOf[OptionsNoThrow]
     }
     
-    @scala.inline
-    implicit class OptionsNoThrowMutableBuilder[Self <: OptionsNoThrow] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsNoThrow](x: Self) {
       
-      @scala.inline
-      def setNothrow(value: `true`): Self = StObject.set(x, "nothrow", value.asInstanceOf[js.Any])
+      inline def setNothrow(value: `true`): Self = StObject.set(x, "nothrow", value.asInstanceOf[js.Any])
     }
   }
   
@@ -201,20 +171,16 @@ object mod {
   }
   object OptionsThrow {
     
-    @scala.inline
-    def apply(): OptionsThrow = {
+    inline def apply(): OptionsThrow = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsThrow]
     }
     
-    @scala.inline
-    implicit class OptionsThrowMutableBuilder[Self <: OptionsThrow] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsThrow](x: Self) {
       
-      @scala.inline
-      def setNothrow(value: `false`): Self = StObject.set(x, "nothrow", value.asInstanceOf[js.Any])
+      inline def setNothrow(value: `false`): Self = StObject.set(x, "nothrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNothrowUndefined: Self = StObject.set(x, "nothrow", js.undefined)
+      inline def setNothrowUndefined: Self = StObject.set(x, "nothrow", js.undefined)
     }
   }
 }

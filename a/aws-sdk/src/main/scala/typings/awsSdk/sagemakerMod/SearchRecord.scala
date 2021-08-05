@@ -28,37 +28,27 @@ trait SearchRecord extends StObject {
 }
 object SearchRecord {
   
-  @scala.inline
-  def apply(): SearchRecord = {
+  inline def apply(): SearchRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchRecord]
   }
   
-  @scala.inline
-  implicit class SearchRecordMutableBuilder[Self <: SearchRecord] (val x: Self) extends AnyVal {
+  extension [Self <: SearchRecord](x: Self) {
     
-    @scala.inline
-    def setExperiment(value: Experiment): Self = StObject.set(x, "Experiment", value.asInstanceOf[js.Any])
+    inline def setExperiment(value: Experiment): Self = StObject.set(x, "Experiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperimentUndefined: Self = StObject.set(x, "Experiment", js.undefined)
+    inline def setExperimentUndefined: Self = StObject.set(x, "Experiment", js.undefined)
     
-    @scala.inline
-    def setTrainingJob(value: TrainingJob): Self = StObject.set(x, "TrainingJob", value.asInstanceOf[js.Any])
+    inline def setTrainingJob(value: TrainingJob): Self = StObject.set(x, "TrainingJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingJobUndefined: Self = StObject.set(x, "TrainingJob", js.undefined)
+    inline def setTrainingJobUndefined: Self = StObject.set(x, "TrainingJob", js.undefined)
     
-    @scala.inline
-    def setTrial(value: Trial): Self = StObject.set(x, "Trial", value.asInstanceOf[js.Any])
+    inline def setTrial(value: Trial): Self = StObject.set(x, "Trial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialComponent(value: TrialComponent): Self = StObject.set(x, "TrialComponent", value.asInstanceOf[js.Any])
+    inline def setTrialComponent(value: TrialComponent): Self = StObject.set(x, "TrialComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialComponentUndefined: Self = StObject.set(x, "TrialComponent", js.undefined)
+    inline def setTrialComponentUndefined: Self = StObject.set(x, "TrialComponent", js.undefined)
     
-    @scala.inline
-    def setTrialUndefined: Self = StObject.set(x, "Trial", js.undefined)
+    inline def setTrialUndefined: Self = StObject.set(x, "Trial", js.undefined)
   }
 }

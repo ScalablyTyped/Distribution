@@ -12,25 +12,19 @@ trait SwitchMessages extends StObject {
 }
 object SwitchMessages {
   
-  @scala.inline
-  def apply(): SwitchMessages = {
+  inline def apply(): SwitchMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SwitchMessages]
   }
   
-  @scala.inline
-  implicit class SwitchMessagesMutableBuilder[Self <: SwitchMessages] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchMessages](x: Self) {
     
-    @scala.inline
-    def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
-    @scala.inline
-    def setUnchecked(value: String): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
+    inline def setUnchecked(value: String): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUncheckedUndefined: Self = StObject.set(x, "unchecked", js.undefined)
+    inline def setUncheckedUndefined: Self = StObject.set(x, "unchecked", js.undefined)
   }
 }

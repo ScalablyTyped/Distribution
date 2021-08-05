@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Mitm = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Mitm]
+  inline def apply(): Mitm = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Mitm]
   
   @JSImport("mitm", JSImport.Namespace)
   @js.native
@@ -35,14 +34,11 @@ object mod {
   trait Event extends StObject
   object Event {
     
-    @scala.inline
-    def connect: typings.mitm.mitmStrings.connect = "connect".asInstanceOf[typings.mitm.mitmStrings.connect]
+    inline def connect: typings.mitm.mitmStrings.connect = "connect".asInstanceOf[typings.mitm.mitmStrings.connect]
     
-    @scala.inline
-    def connection: typings.mitm.mitmStrings.connection = "connection".asInstanceOf[typings.mitm.mitmStrings.connection]
+    inline def connection: typings.mitm.mitmStrings.connection = "connection".asInstanceOf[typings.mitm.mitmStrings.connection]
     
-    @scala.inline
-    def request: typings.mitm.mitmStrings.request = "request".asInstanceOf[typings.mitm.mitmStrings.request]
+    inline def request: typings.mitm.mitmStrings.request = "request".asInstanceOf[typings.mitm.mitmStrings.request]
   }
   
   type HttpCallback = js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit]
@@ -81,47 +77,34 @@ object mod {
   }
   object SocketOptions {
     
-    @scala.inline
-    def apply(port: Double): SocketOptions = {
+    inline def apply(port: Double): SocketOptions = {
       val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[SocketOptions]
     }
     
-    @scala.inline
-    implicit class SocketOptionsMutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SocketOptions](x: Self) {
       
-      @scala.inline
-      def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
+      inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
+      inline def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
       
-      @scala.inline
-      def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+      inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+      inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+      inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
-      @scala.inline
-      def setLocalPort(value: String): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
+      inline def setLocalPort(value: String): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
+      inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
 }

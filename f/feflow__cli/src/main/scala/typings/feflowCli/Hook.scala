@@ -16,16 +16,13 @@ trait Hook extends StObject {
 }
 object Hook {
   
-  @scala.inline
-  def apply(hook: (String, js.Function0[Unit]) => Unit): Hook = {
+  inline def apply(hook: (String, js.Function0[Unit]) => Unit): Hook = {
     val __obj = js.Dynamic.literal(hook = js.Any.fromFunction2(hook))
     __obj.asInstanceOf[Hook]
   }
   
-  @scala.inline
-  implicit class HookMutableBuilder[Self <: Hook] (val x: Self) extends AnyVal {
+  extension [Self <: Hook](x: Self) {
     
-    @scala.inline
-    def setHook(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "hook", js.Any.fromFunction2(value))
+    inline def setHook(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "hook", js.Any.fromFunction2(value))
   }
 }

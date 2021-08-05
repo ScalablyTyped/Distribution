@@ -10,6 +10,5 @@ object copyMetaDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def copyMetadata(to: js.Any, from: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copyMetadata")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def copyMetadata(to: js.Any, from: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copyMetadata")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

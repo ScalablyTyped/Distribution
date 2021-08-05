@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Status[T /* <: Context */] extends StObject
 object Status {
   
-  @scala.inline
-  def BaseStatus(
+  inline def BaseStatus(
     _links: Record[String, js.Array[Dictk]],
     name: String,
     `private`: Boolean,
@@ -32,14 +31,12 @@ object Status {
     __obj.asInstanceOf[typings.wordpressApiFetch.mod.Schema.BaseStatus]
   }
   
-  @scala.inline
-  def PickBaseStatusStatus(_links: Record[String, js.Array[Dictk]], name: String, slug: String): typings.wordpressApiFetch.anon.PickBaseStatusStatus = {
+  inline def PickBaseStatusStatus(_links: Record[String, js.Array[Dictk]], name: String, slug: String): typings.wordpressApiFetch.anon.PickBaseStatusStatus = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.wordpressApiFetch.anon.PickBaseStatusStatus]
   }
   
-  @scala.inline
-  def PickBaseStatusStatusEmbedded(
+  inline def PickBaseStatusStatusEmbedded(
     _links: Record[String, js.Array[Dictk]],
     name: String,
     public: Boolean,

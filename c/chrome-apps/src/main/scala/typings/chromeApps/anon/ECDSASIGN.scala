@@ -14,19 +14,15 @@ trait ECDSASIGN extends StObject {
 }
 object ECDSASIGN {
   
-  @scala.inline
-  def apply(): ECDSASIGN = {
+  inline def apply(): ECDSASIGN = {
     val __obj = js.Dynamic.literal(ECDSA_SIGN = "ecdsaSign", RSA_SIGN = "rsaSign")
     __obj.asInstanceOf[ECDSASIGN]
   }
   
-  @scala.inline
-  implicit class ECDSASIGNMutableBuilder[Self <: ECDSASIGN] (val x: Self) extends AnyVal {
+  extension [Self <: ECDSASIGN](x: Self) {
     
-    @scala.inline
-    def setECDSA_SIGN(value: ecdsaSign): Self = StObject.set(x, "ECDSA_SIGN", value.asInstanceOf[js.Any])
+    inline def setECDSA_SIGN(value: ecdsaSign): Self = StObject.set(x, "ECDSA_SIGN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRSA_SIGN(value: rsaSign): Self = StObject.set(x, "RSA_SIGN", value.asInstanceOf[js.Any])
+    inline def setRSA_SIGN(value: rsaSign): Self = StObject.set(x, "RSA_SIGN", value.asInstanceOf[js.Any])
   }
 }

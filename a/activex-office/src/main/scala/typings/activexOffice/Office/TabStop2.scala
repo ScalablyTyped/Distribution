@@ -12,7 +12,7 @@ trait TabStop2 extends StObject {
   
   val Creator: Double
   
-  @JSName("Office.TabStop2_typekey")
+  /* private */ @JSName("Office.TabStop2_typekey")
   var OfficeDotTabStop2_typekey: TabStop2
   
   val Parent: js.Any
@@ -23,8 +23,7 @@ trait TabStop2 extends StObject {
 }
 object TabStop2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Clear: () => Unit,
     Creator: Double,
@@ -38,28 +37,20 @@ object TabStop2 {
     __obj.asInstanceOf[TabStop2]
   }
   
-  @scala.inline
-  implicit class TabStop2MutableBuilder[Self <: TabStop2] (val x: Self) extends AnyVal {
+  extension [Self <: TabStop2](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotTabStop2_typekey(value: TabStop2): Self = StObject.set(x, "Office.TabStop2_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotTabStop2_typekey(value: TabStop2): Self = StObject.set(x, "Office.TabStop2_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoTabStopType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoTabStopType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -28,17 +28,17 @@ object mod {
       * @param locals Variables and helpers that passed to Pug compiler
       * @param compileOptions
       */
-    var compileFile: js.Any = js.native
+    /* private */ var compileFile: js.Any = js.native
     
     /**
       * Compile a Pug template string
       * @param tpl Template string or the path of template file
       */
-    var compileString: js.Any = js.native
+    /* private */ var compileString: js.Any = js.native
     
-    var defaultLocals: js.Any = js.native
+    /* private */ var defaultLocals: js.Any = js.native
     
-    var defaultOptions: js.Any = js.native
+    /* private */ var defaultOptions: js.Any = js.native
     
     var helpers: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
     
@@ -95,41 +95,30 @@ object mod {
   }
   object PugOptions {
     
-    @scala.inline
-    def apply(): PugOptions = {
+    inline def apply(): PugOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PugOptions]
     }
     
-    @scala.inline
-    implicit class PugOptionsMutableBuilder[Self <: PugOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PugOptions](x: Self) {
       
-      @scala.inline
-      def setApp(value: ^[DefaultState, DefaultContext]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: ^[DefaultState, DefaultContext]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+      inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
       
-      @scala.inline
-      def setHelperPath(value: js.Array[js.Any]): Self = StObject.set(x, "helperPath", value.asInstanceOf[js.Any])
+      inline def setHelperPath(value: js.Array[js.Any]): Self = StObject.set(x, "helperPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelperPathUndefined: Self = StObject.set(x, "helperPath", js.undefined)
+      inline def setHelperPathUndefined: Self = StObject.set(x, "helperPath", js.undefined)
       
-      @scala.inline
-      def setHelperPathVarargs(value: js.Any*): Self = StObject.set(x, "helperPath", js.Array(value :_*))
+      inline def setHelperPathVarargs(value: js.Any*): Self = StObject.set(x, "helperPath", js.Array(value :_*))
       
-      @scala.inline
-      def setLocals(value: StringDictionary[js.Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      inline def setLocals(value: StringDictionary[js.Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
+      inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
       
-      @scala.inline
-      def setViewPath(value: String): Self = StObject.set(x, "viewPath", value.asInstanceOf[js.Any])
+      inline def setViewPath(value: String): Self = StObject.set(x, "viewPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewPathUndefined: Self = StObject.set(x, "viewPath", js.undefined)
+      inline def setViewPathUndefined: Self = StObject.set(x, "viewPath", js.undefined)
     }
   }
   
@@ -144,20 +133,16 @@ object mod {
   }
   object RenderOptions {
     
-    @scala.inline
-    def apply(): RenderOptions = {
+    inline def apply(): RenderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenderOptions]
     }
     
-    @scala.inline
-    implicit class RenderOptionsMutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RenderOptions](x: Self) {
       
-      @scala.inline
-      def setFromString(value: Boolean): Self = StObject.set(x, "fromString", value.asInstanceOf[js.Any])
+      inline def setFromString(value: Boolean): Self = StObject.set(x, "fromString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromStringUndefined: Self = StObject.set(x, "fromString", js.undefined)
+      inline def setFromStringUndefined: Self = StObject.set(x, "fromString", js.undefined)
     }
   }
   

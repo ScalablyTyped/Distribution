@@ -18,28 +18,21 @@ trait GpuInfo extends StObject {
 }
 object GpuInfo {
   
-  @scala.inline
-  def apply(): GpuInfo = {
+  inline def apply(): GpuInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GpuInfo]
   }
   
-  @scala.inline
-  implicit class GpuInfoMutableBuilder[Self <: GpuInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GpuInfo](x: Self) {
     
-    @scala.inline
-    def setGpus(value: GpuDeviceInfoList): Self = StObject.set(x, "Gpus", value.asInstanceOf[js.Any])
+    inline def setGpus(value: GpuDeviceInfoList): Self = StObject.set(x, "Gpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGpusUndefined: Self = StObject.set(x, "Gpus", js.undefined)
+    inline def setGpusUndefined: Self = StObject.set(x, "Gpus", js.undefined)
     
-    @scala.inline
-    def setGpusVarargs(value: GpuDeviceInfo*): Self = StObject.set(x, "Gpus", js.Array(value :_*))
+    inline def setGpusVarargs(value: GpuDeviceInfo*): Self = StObject.set(x, "Gpus", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalGpuMemoryInMiB(value: totalGpuMemory): Self = StObject.set(x, "TotalGpuMemoryInMiB", value.asInstanceOf[js.Any])
+    inline def setTotalGpuMemoryInMiB(value: totalGpuMemory): Self = StObject.set(x, "TotalGpuMemoryInMiB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalGpuMemoryInMiBUndefined: Self = StObject.set(x, "TotalGpuMemoryInMiB", js.undefined)
+    inline def setTotalGpuMemoryInMiBUndefined: Self = StObject.set(x, "TotalGpuMemoryInMiB", js.undefined)
   }
 }

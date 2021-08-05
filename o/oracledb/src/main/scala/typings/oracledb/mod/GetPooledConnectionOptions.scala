@@ -20,31 +20,23 @@ trait GetPooledConnectionOptions extends StObject {
 }
 object GetPooledConnectionOptions {
   
-  @scala.inline
-  def apply(): GetPooledConnectionOptions = {
+  inline def apply(): GetPooledConnectionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPooledConnectionOptions]
   }
   
-  @scala.inline
-  implicit class GetPooledConnectionOptionsMutableBuilder[Self <: GetPooledConnectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetPooledConnectionOptions](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

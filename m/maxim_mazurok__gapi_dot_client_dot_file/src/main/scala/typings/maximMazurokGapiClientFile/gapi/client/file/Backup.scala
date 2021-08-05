@@ -49,83 +49,59 @@ trait Backup extends StObject {
 }
 object Backup {
   
-  @scala.inline
-  def apply(): Backup = {
+  inline def apply(): Backup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Backup]
   }
   
-  @scala.inline
-  implicit class BackupMutableBuilder[Self <: Backup] (val x: Self) extends AnyVal {
+  extension [Self <: Backup](x: Self) {
     
-    @scala.inline
-    def setCapacityGb(value: String): Self = StObject.set(x, "capacityGb", value.asInstanceOf[js.Any])
+    inline def setCapacityGb(value: String): Self = StObject.set(x, "capacityGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityGbUndefined: Self = StObject.set(x, "capacityGb", js.undefined)
+    inline def setCapacityGbUndefined: Self = StObject.set(x, "capacityGb", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDownloadBytes(value: String): Self = StObject.set(x, "downloadBytes", value.asInstanceOf[js.Any])
+    inline def setDownloadBytes(value: String): Self = StObject.set(x, "downloadBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadBytesUndefined: Self = StObject.set(x, "downloadBytes", js.undefined)
+    inline def setDownloadBytesUndefined: Self = StObject.set(x, "downloadBytes", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Backup & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSourceFileShare(value: String): Self = StObject.set(x, "sourceFileShare", value.asInstanceOf[js.Any])
+    inline def setSourceFileShare(value: String): Self = StObject.set(x, "sourceFileShare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFileShareUndefined: Self = StObject.set(x, "sourceFileShare", js.undefined)
+    inline def setSourceFileShareUndefined: Self = StObject.set(x, "sourceFileShare", js.undefined)
     
-    @scala.inline
-    def setSourceInstance(value: String): Self = StObject.set(x, "sourceInstance", value.asInstanceOf[js.Any])
+    inline def setSourceInstance(value: String): Self = StObject.set(x, "sourceInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceInstanceTier(value: String): Self = StObject.set(x, "sourceInstanceTier", value.asInstanceOf[js.Any])
+    inline def setSourceInstanceTier(value: String): Self = StObject.set(x, "sourceInstanceTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceInstanceTierUndefined: Self = StObject.set(x, "sourceInstanceTier", js.undefined)
+    inline def setSourceInstanceTierUndefined: Self = StObject.set(x, "sourceInstanceTier", js.undefined)
     
-    @scala.inline
-    def setSourceInstanceUndefined: Self = StObject.set(x, "sourceInstance", js.undefined)
+    inline def setSourceInstanceUndefined: Self = StObject.set(x, "sourceInstance", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setStorageBytes(value: String): Self = StObject.set(x, "storageBytes", value.asInstanceOf[js.Any])
+    inline def setStorageBytes(value: String): Self = StObject.set(x, "storageBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageBytesUndefined: Self = StObject.set(x, "storageBytes", js.undefined)
+    inline def setStorageBytesUndefined: Self = StObject.set(x, "storageBytes", js.undefined)
   }
 }

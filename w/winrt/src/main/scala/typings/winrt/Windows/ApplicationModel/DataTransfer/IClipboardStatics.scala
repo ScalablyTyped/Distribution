@@ -18,8 +18,7 @@ trait IClipboardStatics extends StObject {
 }
 object IClipboardStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     flush: () => Unit,
     getContent: () => DataPackageView,
@@ -30,22 +29,16 @@ object IClipboardStatics {
     __obj.asInstanceOf[IClipboardStatics]
   }
   
-  @scala.inline
-  implicit class IClipboardStaticsMutableBuilder[Self <: IClipboardStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IClipboardStatics](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContent(value: () => DataPackageView): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+    inline def setGetContent(value: () => DataPackageView): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOncontentchanged(value: js.Any): Self = StObject.set(x, "oncontentchanged", value.asInstanceOf[js.Any])
+    inline def setOncontentchanged(value: js.Any): Self = StObject.set(x, "oncontentchanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetContent(value: DataPackage => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
+    inline def setSetContent(value: DataPackage => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
   }
 }

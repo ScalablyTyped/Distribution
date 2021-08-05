@@ -23,28 +23,21 @@ trait DetectorStateDefinition extends StObject {
 }
 object DetectorStateDefinition {
   
-  @scala.inline
-  def apply(stateName: StateName, timers: TimerDefinitions, variables: VariableDefinitions): DetectorStateDefinition = {
+  inline def apply(stateName: StateName, timers: TimerDefinitions, variables: VariableDefinitions): DetectorStateDefinition = {
     val __obj = js.Dynamic.literal(stateName = stateName.asInstanceOf[js.Any], timers = timers.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectorStateDefinition]
   }
   
-  @scala.inline
-  implicit class DetectorStateDefinitionMutableBuilder[Self <: DetectorStateDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: DetectorStateDefinition](x: Self) {
     
-    @scala.inline
-    def setStateName(value: StateName): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
+    inline def setStateName(value: StateName): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimers(value: TimerDefinitions): Self = StObject.set(x, "timers", value.asInstanceOf[js.Any])
+    inline def setTimers(value: TimerDefinitions): Self = StObject.set(x, "timers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimersVarargs(value: TimerDefinition*): Self = StObject.set(x, "timers", js.Array(value :_*))
+    inline def setTimersVarargs(value: TimerDefinition*): Self = StObject.set(x, "timers", js.Array(value :_*))
     
-    @scala.inline
-    def setVariables(value: VariableDefinitions): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: VariableDefinitions): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesVarargs(value: VariableDefinition*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: VariableDefinition*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

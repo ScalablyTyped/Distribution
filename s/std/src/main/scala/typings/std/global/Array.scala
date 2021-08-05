@@ -16,6 +16,5 @@ class Array[T] protected ()
 }
 object Array {
   
-  @scala.inline
-  def apply: ArrayConstructor = js.Dynamic.global.selectDynamic("Array").asInstanceOf[ArrayConstructor]
+  inline def apply: ArrayConstructor = js.Dynamic.global.selectDynamic("Array").asInstanceOf[ArrayConstructor]
 }

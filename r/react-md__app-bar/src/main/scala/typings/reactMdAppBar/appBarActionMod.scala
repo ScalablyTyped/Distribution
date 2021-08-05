@@ -38,26 +38,20 @@ object appBarActionMod {
   }
   object AppBarActionProps {
     
-    @scala.inline
-    def apply(): AppBarActionProps = {
+    inline def apply(): AppBarActionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppBarActionProps]
     }
     
-    @scala.inline
-    implicit class AppBarActionPropsMutableBuilder[Self <: AppBarActionProps] (val x: Self) extends AnyVal {
+    extension [Self <: AppBarActionProps](x: Self) {
       
-      @scala.inline
-      def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+      inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
       
-      @scala.inline
-      def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+      inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     }
   }
 }

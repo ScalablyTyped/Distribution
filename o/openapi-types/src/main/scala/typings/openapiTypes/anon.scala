@@ -19,38 +19,28 @@ object anon {
   }
   object AuthorizationCode {
     
-    @scala.inline
-    def apply(): AuthorizationCode = {
+    inline def apply(): AuthorizationCode = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthorizationCode]
     }
     
-    @scala.inline
-    implicit class AuthorizationCodeMutableBuilder[Self <: AuthorizationCode] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizationCode](x: Self) {
       
-      @scala.inline
-      def setAuthorizationCode(value: Scopes): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
+      inline def setAuthorizationCode(value: Scopes): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizationCodeUndefined: Self = StObject.set(x, "authorizationCode", js.undefined)
+      inline def setAuthorizationCodeUndefined: Self = StObject.set(x, "authorizationCode", js.undefined)
       
-      @scala.inline
-      def setClientCredentials(value: RefreshUrl): Self = StObject.set(x, "clientCredentials", value.asInstanceOf[js.Any])
+      inline def setClientCredentials(value: RefreshUrl): Self = StObject.set(x, "clientCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientCredentialsUndefined: Self = StObject.set(x, "clientCredentials", js.undefined)
+      inline def setClientCredentialsUndefined: Self = StObject.set(x, "clientCredentials", js.undefined)
       
-      @scala.inline
-      def setImplicit(value: AuthorizationUrl): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
+      inline def setImplicit(value: AuthorizationUrl): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplicitUndefined: Self = StObject.set(x, "implicit", js.undefined)
+      inline def setImplicitUndefined: Self = StObject.set(x, "implicit", js.undefined)
       
-      @scala.inline
-      def setPassword(value: RefreshUrl): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: RefreshUrl): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     }
   }
   
@@ -64,26 +54,20 @@ object anon {
   }
   object AuthorizationUrl {
     
-    @scala.inline
-    def apply(authorizationUrl: String, scopes: StringDictionary[String]): AuthorizationUrl = {
+    inline def apply(authorizationUrl: String, scopes: StringDictionary[String]): AuthorizationUrl = {
       val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthorizationUrl]
     }
     
-    @scala.inline
-    implicit class AuthorizationUrlMutableBuilder[Self <: AuthorizationUrl] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizationUrl](x: Self) {
       
-      @scala.inline
-      def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
+      inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshUrl(value: String): Self = StObject.set(x, "refreshUrl", value.asInstanceOf[js.Any])
+      inline def setRefreshUrl(value: String): Self = StObject.set(x, "refreshUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshUrlUndefined: Self = StObject.set(x, "refreshUrl", js.undefined)
+      inline def setRefreshUrlUndefined: Self = StObject.set(x, "refreshUrl", js.undefined)
       
-      @scala.inline
-      def setScopes(value: StringDictionary[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: StringDictionary[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,26 +81,20 @@ object anon {
   }
   object RefreshUrl {
     
-    @scala.inline
-    def apply(scopes: StringDictionary[String], tokenUrl: String): RefreshUrl = {
+    inline def apply(scopes: StringDictionary[String], tokenUrl: String): RefreshUrl = {
       val __obj = js.Dynamic.literal(scopes = scopes.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[RefreshUrl]
     }
     
-    @scala.inline
-    implicit class RefreshUrlMutableBuilder[Self <: RefreshUrl] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshUrl](x: Self) {
       
-      @scala.inline
-      def setRefreshUrl(value: String): Self = StObject.set(x, "refreshUrl", value.asInstanceOf[js.Any])
+      inline def setRefreshUrl(value: String): Self = StObject.set(x, "refreshUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshUrlUndefined: Self = StObject.set(x, "refreshUrl", js.undefined)
+      inline def setRefreshUrlUndefined: Self = StObject.set(x, "refreshUrl", js.undefined)
       
-      @scala.inline
-      def setScopes(value: StringDictionary[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: StringDictionary[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUrl(value: String): Self = StObject.set(x, "tokenUrl", value.asInstanceOf[js.Any])
+      inline def setTokenUrl(value: String): Self = StObject.set(x, "tokenUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,29 +110,22 @@ object anon {
   }
   object Scopes {
     
-    @scala.inline
-    def apply(authorizationUrl: String, scopes: StringDictionary[String], tokenUrl: String): Scopes = {
+    inline def apply(authorizationUrl: String, scopes: StringDictionary[String], tokenUrl: String): Scopes = {
       val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[Scopes]
     }
     
-    @scala.inline
-    implicit class ScopesMutableBuilder[Self <: Scopes] (val x: Self) extends AnyVal {
+    extension [Self <: Scopes](x: Self) {
       
-      @scala.inline
-      def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
+      inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshUrl(value: String): Self = StObject.set(x, "refreshUrl", value.asInstanceOf[js.Any])
+      inline def setRefreshUrl(value: String): Self = StObject.set(x, "refreshUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshUrlUndefined: Self = StObject.set(x, "refreshUrl", js.undefined)
+      inline def setRefreshUrlUndefined: Self = StObject.set(x, "refreshUrl", js.undefined)
       
-      @scala.inline
-      def setScopes(value: StringDictionary[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: StringDictionary[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUrl(value: String): Self = StObject.set(x, "tokenUrl", value.asInstanceOf[js.Any])
+      inline def setTokenUrl(value: String): Self = StObject.set(x, "tokenUrl", value.asInstanceOf[js.Any])
     }
   }
 }

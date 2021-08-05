@@ -19,16 +19,13 @@ trait DeleteBookmarkCommand
 }
 object DeleteBookmarkCommand {
   
-  @scala.inline
-  def apply(execute: String => Boolean, getState: () => SimpleCommandState): DeleteBookmarkCommand = {
+  inline def apply(execute: String => Boolean, getState: () => SimpleCommandState): DeleteBookmarkCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[DeleteBookmarkCommand]
   }
   
-  @scala.inline
-  implicit class DeleteBookmarkCommandMutableBuilder[Self <: DeleteBookmarkCommand] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBookmarkCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

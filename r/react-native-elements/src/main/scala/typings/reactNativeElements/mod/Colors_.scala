@@ -41,8 +41,7 @@ trait Colors_ extends StObject {
 }
 object Colors_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disabled: String,
     divider: String,
     error: String,
@@ -64,55 +63,38 @@ object Colors_ {
     __obj.asInstanceOf[Colors_]
   }
   
-  @scala.inline
-  implicit class Colors_MutableBuilder[Self <: Colors_] (val x: Self) extends AnyVal {
+  extension [Self <: Colors_](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+    inline def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrey0(value: String): Self = StObject.set(x, "grey0", value.asInstanceOf[js.Any])
+    inline def setGrey0(value: String): Self = StObject.set(x, "grey0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrey1(value: String): Self = StObject.set(x, "grey1", value.asInstanceOf[js.Any])
+    inline def setGrey1(value: String): Self = StObject.set(x, "grey1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrey2(value: String): Self = StObject.set(x, "grey2", value.asInstanceOf[js.Any])
+    inline def setGrey2(value: String): Self = StObject.set(x, "grey2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrey3(value: String): Self = StObject.set(x, "grey3", value.asInstanceOf[js.Any])
+    inline def setGrey3(value: String): Self = StObject.set(x, "grey3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrey4(value: String): Self = StObject.set(x, "grey4", value.asInstanceOf[js.Any])
+    inline def setGrey4(value: String): Self = StObject.set(x, "grey4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrey5(value: String): Self = StObject.set(x, "grey5", value.asInstanceOf[js.Any])
+    inline def setGrey5(value: String): Self = StObject.set(x, "grey5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreyOutline(value: String): Self = StObject.set(x, "greyOutline", value.asInstanceOf[js.Any])
+    inline def setGreyOutline(value: String): Self = StObject.set(x, "greyOutline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: Android): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: Android): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchBg(value: String): Self = StObject.set(x, "searchBg", value.asInstanceOf[js.Any])
+    inline def setSearchBg(value: String): Self = StObject.set(x, "searchBg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
   }
 }

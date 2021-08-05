@@ -70,8 +70,7 @@ trait DatePicker[DateType] extends StObject {
 }
 object DatePicker {
   
-  @scala.inline
-  def apply[DateType](
+  inline def apply[DateType](
     DatePicker: ComponentClass[PickerProps[DateType], js.Any],
     MonthPicker: ComponentClass[
       Pick[
@@ -128,14 +127,11 @@ object DatePicker {
     __obj.asInstanceOf[DatePicker[DateType]]
   }
   
-  @scala.inline
-  implicit class DatePickerMutableBuilder[Self <: DatePicker[?], DateType] (val x: Self & DatePicker[DateType]) extends AnyVal {
+  extension [Self <: DatePicker[?], DateType](x: Self & DatePicker[DateType]) {
     
-    @scala.inline
-    def setDatePicker(value: ComponentClass[PickerProps[DateType], js.Any]): Self = StObject.set(x, "DatePicker", value.asInstanceOf[js.Any])
+    inline def setDatePicker(value: ComponentClass[PickerProps[DateType], js.Any]): Self = StObject.set(x, "DatePicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthPicker(
+    inline def setMonthPicker(
       value: ComponentClass[
           Pick[
             (Pick[
@@ -148,8 +144,7 @@ object DatePicker {
         ]
     ): Self = StObject.set(x, "MonthPicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuarterPicker(
+    inline def setQuarterPicker(
       value: ComponentClass[
           Pick[
             (Pick[
@@ -162,8 +157,7 @@ object DatePicker {
         ]
     ): Self = StObject.set(x, "QuarterPicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePicker(
+    inline def setTimePicker(
       value: ComponentClass[
           Pick[
             (Pick[
@@ -176,8 +170,7 @@ object DatePicker {
         ]
     ): Self = StObject.set(x, "TimePicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekPicker(
+    inline def setWeekPicker(
       value: ComponentClass[
           Pick[
             (Pick[
@@ -190,8 +183,7 @@ object DatePicker {
         ]
     ): Self = StObject.set(x, "WeekPicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearPicker(
+    inline def setYearPicker(
       value: ComponentClass[
           Pick[
             (Pick[

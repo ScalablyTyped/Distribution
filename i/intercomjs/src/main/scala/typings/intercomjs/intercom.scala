@@ -58,26 +58,20 @@ object intercom {
   }
   object SocketBindingOptions {
     
-    @scala.inline
-    def apply(): SocketBindingOptions = {
+    inline def apply(): SocketBindingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SocketBindingOptions]
     }
     
-    @scala.inline
-    implicit class SocketBindingOptionsMutableBuilder[Self <: SocketBindingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SocketBindingOptions](x: Self) {
       
-      @scala.inline
-      def setReceive(value: js.Any): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
+      inline def setReceive(value: js.Any): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiveUndefined: Self = StObject.set(x, "receive", js.undefined)
+      inline def setReceiveUndefined: Self = StObject.set(x, "receive", js.undefined)
       
-      @scala.inline
-      def setSend(value: js.Any): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+      inline def setSend(value: js.Any): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
+      inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     }
   }
 }

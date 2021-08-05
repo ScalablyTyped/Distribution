@@ -33,52 +33,52 @@ object tagInputMod {
     def this(props: ITagInputProps) = this()
     def this(props: ITagInputProps, context: js.Any) = this()
     
-    var addTags: js.Any = js.native
+    /* private */ var addTags: js.Any = js.native
     
-    var findNextIndex: js.Any = js.native
+    /* private */ var findNextIndex: js.Any = js.native
     
-    var getNextActiveIndex: js.Any = js.native
+    /* private */ var getNextActiveIndex: js.Any = js.native
     
     /**
       * Splits inputValue on separator prop,
       * trims whitespace from each new value,
       * and ignores empty values.
       */
-    var getValues: js.Any = js.native
+    /* private */ var getValues: js.Any = js.native
     
-    var handleBackspaceToRemove: js.Any = js.native
+    /* private */ var handleBackspaceToRemove: js.Any = js.native
     
-    var handleContainerBlur: js.Any = js.native
+    /* private */ var handleContainerBlur: js.Any = js.native
     
-    var handleContainerClick: js.Any = js.native
+    /* private */ var handleContainerClick: js.Any = js.native
     
-    var handleDeleteToRemove: js.Any = js.native
+    /* private */ var handleDeleteToRemove: js.Any = js.native
     
-    var handleInputChange: js.Any = js.native
+    /* private */ var handleInputChange: js.Any = js.native
     
-    var handleInputFocus: js.Any = js.native
+    /* private */ var handleInputFocus: js.Any = js.native
     
-    var handleInputKeyDown: js.Any = js.native
+    /* private */ var handleInputKeyDown: js.Any = js.native
     
-    var handleInputKeyUp: js.Any = js.native
+    /* private */ var handleInputKeyUp: js.Any = js.native
     
-    var handleInputPaste: js.Any = js.native
+    /* private */ var handleInputPaste: js.Any = js.native
     
-    var handleRemoveTag: js.Any = js.native
+    /* private */ var handleRemoveTag: js.Any = js.native
     
-    var inputElement: js.Any = js.native
+    /* private */ var inputElement: js.Any = js.native
     
-    var invokeKeyPressCallback: js.Any = js.native
+    /* private */ var invokeKeyPressCallback: js.Any = js.native
     
     /** Returns whether the given index represents a valid item in `this.props.values`. */
-    var isValidIndex: js.Any = js.native
+    /* private */ var isValidIndex: js.Any = js.native
     
-    var maybeRenderTag: js.Any = js.native
+    /* private */ var maybeRenderTag: js.Any = js.native
     
-    var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: js.Any = js.native
     
     /** Remove the item at the given index by invoking `onRemove` and `onChange` accordingly. */
-    var removeIndexFromValues: js.Any = js.native
+    /* private */ var removeIndexFromValues: js.Any = js.native
   }
   /* static members */
   object TagInput {
@@ -90,17 +90,14 @@ object tagInputMod {
     @JSImport("@blueprintjs/core/lib/esm/components/tag-input/tagInput", "TagInput.defaultProps")
     @js.native
     def defaultProps: PartialITagInputProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialITagInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialITagInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/tag-input/tagInput", "TagInput.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(props: ReadonlyITagInputProps, state: ReadonlyITagInputState): PartialITagInputState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialITagInputState | Null]
+    inline def getDerivedStateFromProps(props: ReadonlyITagInputProps, state: ReadonlyITagInputState): PartialITagInputState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialITagInputState | Null]
   }
   
   trait ITagInputProps
@@ -259,140 +256,96 @@ object tagInputMod {
   }
   object ITagInputProps {
     
-    @scala.inline
-    def apply(values: js.Array[ReactNode]): ITagInputProps = {
+    inline def apply(values: js.Array[ReactNode]): ITagInputProps = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITagInputProps]
     }
     
-    @scala.inline
-    implicit class ITagInputPropsMutableBuilder[Self <: ITagInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITagInputProps](x: Self) {
       
-      @scala.inline
-      def setAddOnBlur(value: Boolean): Self = StObject.set(x, "addOnBlur", value.asInstanceOf[js.Any])
+      inline def setAddOnBlur(value: Boolean): Self = StObject.set(x, "addOnBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddOnBlurUndefined: Self = StObject.set(x, "addOnBlur", js.undefined)
+      inline def setAddOnBlurUndefined: Self = StObject.set(x, "addOnBlur", js.undefined)
       
-      @scala.inline
-      def setAddOnPaste(value: Boolean): Self = StObject.set(x, "addOnPaste", value.asInstanceOf[js.Any])
+      inline def setAddOnPaste(value: Boolean): Self = StObject.set(x, "addOnPaste", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddOnPasteUndefined: Self = StObject.set(x, "addOnPaste", js.undefined)
+      inline def setAddOnPasteUndefined: Self = StObject.set(x, "addOnPaste", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setInputProps(value: HTMLInputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: HTMLInputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
+      inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
-      @scala.inline
-      def setInputRef(value: /* input */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRef(value: /* input */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
+      inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      @scala.inline
-      def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+      inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
+      inline def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
       
-      @scala.inline
-      def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+      inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
       
-      @scala.inline
-      def setLeftIcon(value: IconName | MaybeElement): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
+      inline def setLeftIcon(value: IconName | MaybeElement): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftIconNull: Self = StObject.set(x, "leftIcon", null)
+      inline def setLeftIconNull: Self = StObject.set(x, "leftIcon", null)
       
-      @scala.inline
-      def setLeftIconUndefined: Self = StObject.set(x, "leftIcon", js.undefined)
+      inline def setLeftIconUndefined: Self = StObject.set(x, "leftIcon", js.undefined)
       
-      @scala.inline
-      def setOnAdd(value: (/* values */ js.Array[String], /* method */ TagInputAddMethod) => Boolean | Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction2(value))
+      inline def setOnAdd(value: (/* values */ js.Array[String], /* method */ TagInputAddMethod) => Boolean | Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+      inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* values */ js.Array[ReactNode] => Boolean | Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* values */ js.Array[ReactNode] => Boolean | Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnInputChange(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInputChange", js.Any.fromFunction1(value))
+      inline def setOnInputChange(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInputChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInputChangeUndefined: Self = StObject.set(x, "onInputChange", js.undefined)
+      inline def setOnInputChangeUndefined: Self = StObject.set(x, "onInputChange", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: (/* event */ KeyboardEvent[HTMLElement], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
+      inline def setOnKeyDown(value: (/* event */ KeyboardEvent[HTMLElement], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnKeyUp(value: (/* event */ KeyboardEvent[HTMLElement], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction2(value))
+      inline def setOnKeyUp(value: (/* event */ KeyboardEvent[HTMLElement], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+      inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
-      @scala.inline
-      def setOnRemove(value: (/* value */ ReactNode, /* index */ Double) => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction2(value))
+      inline def setOnRemove(value: (/* value */ ReactNode, /* index */ Double) => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
+      inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setRightElement(value: Element): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
+      inline def setRightElement(value: Element): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
+      inline def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String | RegExp | `false`): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String | RegExp | `false`): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setTagProps(value: ITagProps | (js.Function2[/* value */ ReactNode, /* index */ Double, ITagProps])): Self = StObject.set(x, "tagProps", value.asInstanceOf[js.Any])
+      inline def setTagProps(value: ITagProps | (js.Function2[/* value */ ReactNode, /* index */ Double, ITagProps])): Self = StObject.set(x, "tagProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagPropsFunction2(value: (/* value */ ReactNode, /* index */ Double) => ITagProps): Self = StObject.set(x, "tagProps", js.Any.fromFunction2(value))
+      inline def setTagPropsFunction2(value: (/* value */ ReactNode, /* index */ Double) => ITagProps): Self = StObject.set(x, "tagProps", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTagPropsUndefined: Self = StObject.set(x, "tagProps", js.undefined)
+      inline def setTagPropsUndefined: Self = StObject.set(x, "tagProps", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Array[ReactNode]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[ReactNode]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: ReactNode*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: ReactNode*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -408,29 +361,22 @@ object tagInputMod {
   }
   object ITagInputState {
     
-    @scala.inline
-    def apply(activeIndex: Double, inputValue: String, isInputFocused: Boolean): ITagInputState = {
+    inline def apply(activeIndex: Double, inputValue: String, isInputFocused: Boolean): ITagInputState = {
       val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], isInputFocused = isInputFocused.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITagInputState]
     }
     
-    @scala.inline
-    implicit class ITagInputStateMutableBuilder[Self <: ITagInputState] (val x: Self) extends AnyVal {
+    extension [Self <: ITagInputState](x: Self) {
       
-      @scala.inline
-      def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+      inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInputFocused(value: Boolean): Self = StObject.set(x, "isInputFocused", value.asInstanceOf[js.Any])
+      inline def setIsInputFocused(value: Boolean): Self = StObject.set(x, "isInputFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevInputValueProp(value: String): Self = StObject.set(x, "prevInputValueProp", value.asInstanceOf[js.Any])
+      inline def setPrevInputValueProp(value: String): Self = StObject.set(x, "prevInputValueProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevInputValuePropUndefined: Self = StObject.set(x, "prevInputValueProp", js.undefined)
+      inline def setPrevInputValuePropUndefined: Self = StObject.set(x, "prevInputValueProp", js.undefined)
     }
   }
   
@@ -442,13 +388,10 @@ object tagInputMod {
   trait TagInputAddMethod extends StObject
   object TagInputAddMethod {
     
-    @scala.inline
-    def default: typings.blueprintjsCore.blueprintjsCoreStrings.default = "default".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.default]
+    inline def default: typings.blueprintjsCore.blueprintjsCoreStrings.default = "default".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.default]
     
-    @scala.inline
-    def blur: typings.blueprintjsCore.blueprintjsCoreStrings.blur = "blur".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.blur]
+    inline def blur: typings.blueprintjsCore.blueprintjsCoreStrings.blur = "blur".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.blur]
     
-    @scala.inline
-    def paste: typings.blueprintjsCore.blueprintjsCoreStrings.paste = "paste".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.paste]
+    inline def paste: typings.blueprintjsCore.blueprintjsCoreStrings.paste = "paste".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.paste]
   }
 }

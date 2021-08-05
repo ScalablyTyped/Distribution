@@ -14,22 +14,17 @@ trait ActionsGetArtifactEndpoint extends StObject {
 }
 object ActionsGetArtifactEndpoint {
   
-  @scala.inline
-  def apply(artifact_id: Double, owner: String, repo: String): ActionsGetArtifactEndpoint = {
+  inline def apply(artifact_id: Double, owner: String, repo: String): ActionsGetArtifactEndpoint = {
     val __obj = js.Dynamic.literal(artifact_id = artifact_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsGetArtifactEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsGetArtifactEndpointMutableBuilder[Self <: ActionsGetArtifactEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsGetArtifactEndpoint](x: Self) {
     
-    @scala.inline
-    def setArtifact_id(value: Double): Self = StObject.set(x, "artifact_id", value.asInstanceOf[js.Any])
+    inline def setArtifact_id(value: Double): Self = StObject.set(x, "artifact_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

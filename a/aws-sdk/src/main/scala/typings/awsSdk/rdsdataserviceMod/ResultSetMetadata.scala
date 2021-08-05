@@ -18,28 +18,21 @@ trait ResultSetMetadata extends StObject {
 }
 object ResultSetMetadata {
   
-  @scala.inline
-  def apply(): ResultSetMetadata = {
+  inline def apply(): ResultSetMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultSetMetadata]
   }
   
-  @scala.inline
-  implicit class ResultSetMetadataMutableBuilder[Self <: ResultSetMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ResultSetMetadata](x: Self) {
     
-    @scala.inline
-    def setColumnCount(value: Long): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: Long): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
+    inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
-    @scala.inline
-    def setColumnMetadata(value: Metadata): Self = StObject.set(x, "columnMetadata", value.asInstanceOf[js.Any])
+    inline def setColumnMetadata(value: Metadata): Self = StObject.set(x, "columnMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnMetadataUndefined: Self = StObject.set(x, "columnMetadata", js.undefined)
+    inline def setColumnMetadataUndefined: Self = StObject.set(x, "columnMetadata", js.undefined)
     
-    @scala.inline
-    def setColumnMetadataVarargs(value: ColumnMetadata*): Self = StObject.set(x, "columnMetadata", js.Array(value :_*))
+    inline def setColumnMetadataVarargs(value: ColumnMetadata*): Self = StObject.set(x, "columnMetadata", js.Array(value :_*))
   }
 }

@@ -32,8 +32,7 @@ trait AfnStrip extends StObject {
 }
 object AfnStrip {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     afnStrip: scala.Double,
     bugFilingData: scala.Double,
     codeCoverage: scala.Double,
@@ -51,43 +50,30 @@ object AfnStrip {
     __obj.asInstanceOf[AfnStrip]
   }
   
-  @scala.inline
-  implicit class AfnStripMutableBuilder[Self <: AfnStrip] (val x: Self) extends AnyVal {
+  extension [Self <: AfnStrip](x: Self) {
     
-    @scala.inline
-    def setAfnStrip(value: scala.Double): Self = StObject.set(x, "afnStrip", value.asInstanceOf[js.Any])
+    inline def setAfnStrip(value: scala.Double): Self = StObject.set(x, "afnStrip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBugFilingData(value: scala.Double): Self = StObject.set(x, "bugFilingData", value.asInstanceOf[js.Any])
+    inline def setBugFilingData(value: scala.Double): Self = StObject.set(x, "bugFilingData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeCoverage(value: scala.Double): Self = StObject.set(x, "codeCoverage", value.asInstanceOf[js.Any])
+    inline def setCodeCoverage(value: scala.Double): Self = StObject.set(x, "codeCoverage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsoleLog(value: scala.Double): Self = StObject.set(x, "consoleLog", value.asInstanceOf[js.Any])
+    inline def setConsoleLog(value: scala.Double): Self = StObject.set(x, "consoleLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneralAttachment(value: scala.Double): Self = StObject.set(x, "generalAttachment", value.asInstanceOf[js.Any])
+    inline def setGeneralAttachment(value: scala.Double): Self = StObject.set(x, "generalAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntermediateCollectorData(value: scala.Double): Self = StObject.set(x, "intermediateCollectorData", value.asInstanceOf[js.Any])
+    inline def setIntermediateCollectorData(value: scala.Double): Self = StObject.set(x, "intermediateCollectorData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunConfig(value: scala.Double): Self = StObject.set(x, "runConfig", value.asInstanceOf[js.Any])
+    inline def setRunConfig(value: scala.Double): Self = StObject.set(x, "runConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestImpactDetails(value: scala.Double): Self = StObject.set(x, "testImpactDetails", value.asInstanceOf[js.Any])
+    inline def setTestImpactDetails(value: scala.Double): Self = StObject.set(x, "testImpactDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTmiTestResultDetail(value: scala.Double): Self = StObject.set(x, "tmiTestResultDetail", value.asInstanceOf[js.Any])
+    inline def setTmiTestResultDetail(value: scala.Double): Self = StObject.set(x, "tmiTestResultDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTmiTestRunDeploymentFiles(value: scala.Double): Self = StObject.set(x, "tmiTestRunDeploymentFiles", value.asInstanceOf[js.Any])
+    inline def setTmiTestRunDeploymentFiles(value: scala.Double): Self = StObject.set(x, "tmiTestRunDeploymentFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTmiTestRunReverseDeploymentFiles(value: scala.Double): Self = StObject.set(x, "tmiTestRunReverseDeploymentFiles", value.asInstanceOf[js.Any])
+    inline def setTmiTestRunReverseDeploymentFiles(value: scala.Double): Self = StObject.set(x, "tmiTestRunReverseDeploymentFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTmiTestRunSummary(value: scala.Double): Self = StObject.set(x, "tmiTestRunSummary", value.asInstanceOf[js.Any])
+    inline def setTmiTestRunSummary(value: scala.Double): Self = StObject.set(x, "tmiTestRunSummary", value.asInstanceOf[js.Any])
   }
 }

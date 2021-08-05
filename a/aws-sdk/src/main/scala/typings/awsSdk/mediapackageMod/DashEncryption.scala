@@ -15,22 +15,17 @@ trait DashEncryption extends StObject {
 }
 object DashEncryption {
   
-  @scala.inline
-  def apply(SpekeKeyProvider: SpekeKeyProvider): DashEncryption = {
+  inline def apply(SpekeKeyProvider: SpekeKeyProvider): DashEncryption = {
     val __obj = js.Dynamic.literal(SpekeKeyProvider = SpekeKeyProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashEncryption]
   }
   
-  @scala.inline
-  implicit class DashEncryptionMutableBuilder[Self <: DashEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: DashEncryption](x: Self) {
     
-    @scala.inline
-    def setKeyRotationIntervalSeconds(value: integer): Self = StObject.set(x, "KeyRotationIntervalSeconds", value.asInstanceOf[js.Any])
+    inline def setKeyRotationIntervalSeconds(value: integer): Self = StObject.set(x, "KeyRotationIntervalSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyRotationIntervalSecondsUndefined: Self = StObject.set(x, "KeyRotationIntervalSeconds", js.undefined)
+    inline def setKeyRotationIntervalSecondsUndefined: Self = StObject.set(x, "KeyRotationIntervalSeconds", js.undefined)
     
-    @scala.inline
-    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
+    inline def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
   }
 }

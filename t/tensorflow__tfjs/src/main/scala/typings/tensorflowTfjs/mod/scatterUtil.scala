@@ -13,18 +13,15 @@ object scatterUtil {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calculateShapes(updates: TensorInfo, indices: TensorInfo, shape: js.Array[Double]): ScatterShapeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateShapes")(updates.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[ScatterShapeInfo]
+  inline def calculateShapes(updates: TensorInfo, indices: TensorInfo, shape: js.Array[Double]): ScatterShapeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateShapes")(updates.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[ScatterShapeInfo]
   
-  @scala.inline
-  def validateInput(
+  inline def validateInput(
     updates: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     shape: js.Array[Double]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateInput")(updates.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def validateUpdateShape(
+  inline def validateUpdateShape(
     shape: js.Array[Double],
     indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     updates: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]

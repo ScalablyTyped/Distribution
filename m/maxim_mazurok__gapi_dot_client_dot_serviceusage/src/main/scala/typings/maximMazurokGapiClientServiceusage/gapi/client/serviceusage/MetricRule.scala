@@ -22,29 +22,23 @@ trait MetricRule extends StObject {
 }
 object MetricRule {
   
-  @scala.inline
-  def apply(): MetricRule = {
+  inline def apply(): MetricRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricRule]
   }
   
-  @scala.inline
-  implicit class MetricRuleMutableBuilder[Self <: MetricRule] (val x: Self) extends AnyVal {
+  extension [Self <: MetricRule](x: Self) {
     
-    @scala.inline
-    def setMetricCosts(
+    inline def setMetricCosts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientServiceusage.maximMazurokGapiClientServiceusageStrings.MetricRule & TopLevel[js.Any]
     ): Self = StObject.set(x, "metricCosts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricCostsUndefined: Self = StObject.set(x, "metricCosts", js.undefined)
+    inline def setMetricCostsUndefined: Self = StObject.set(x, "metricCosts", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

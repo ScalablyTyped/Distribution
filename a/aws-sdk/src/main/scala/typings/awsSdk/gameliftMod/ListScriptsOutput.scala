@@ -18,28 +18,21 @@ trait ListScriptsOutput extends StObject {
 }
 object ListScriptsOutput {
   
-  @scala.inline
-  def apply(): ListScriptsOutput = {
+  inline def apply(): ListScriptsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListScriptsOutput]
   }
   
-  @scala.inline
-  implicit class ListScriptsOutputMutableBuilder[Self <: ListScriptsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListScriptsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setScripts(value: ScriptList): Self = StObject.set(x, "Scripts", value.asInstanceOf[js.Any])
+    inline def setScripts(value: ScriptList): Self = StObject.set(x, "Scripts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptsUndefined: Self = StObject.set(x, "Scripts", js.undefined)
+    inline def setScriptsUndefined: Self = StObject.set(x, "Scripts", js.undefined)
     
-    @scala.inline
-    def setScriptsVarargs(value: Script*): Self = StObject.set(x, "Scripts", js.Array(value :_*))
+    inline def setScriptsVarargs(value: Script*): Self = StObject.set(x, "Scripts", js.Array(value :_*))
   }
 }

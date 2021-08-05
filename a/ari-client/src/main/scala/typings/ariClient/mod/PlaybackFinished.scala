@@ -16,17 +16,14 @@ trait PlaybackFinished
 }
 object PlaybackFinished {
   
-  @scala.inline
-  def apply(application: String, playback: Playback, timestamp: Date, `type`: String): PlaybackFinished = {
+  inline def apply(application: String, playback: Playback, timestamp: Date, `type`: String): PlaybackFinished = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], playback = playback.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaybackFinished]
   }
   
-  @scala.inline
-  implicit class PlaybackFinishedMutableBuilder[Self <: PlaybackFinished] (val x: Self) extends AnyVal {
+  extension [Self <: PlaybackFinished](x: Self) {
     
-    @scala.inline
-    def setPlayback(value: Playback): Self = StObject.set(x, "playback", value.asInstanceOf[js.Any])
+    inline def setPlayback(value: Playback): Self = StObject.set(x, "playback", value.asInstanceOf[js.Any])
   }
 }

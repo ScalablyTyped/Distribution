@@ -20,25 +20,19 @@ trait SharingState extends StObject {
 }
 object SharingState {
   
-  @scala.inline
-  def apply(camera: Boolean, microphone: Boolean): SharingState = {
+  inline def apply(camera: Boolean, microphone: Boolean): SharingState = {
     val __obj = js.Dynamic.literal(camera = camera.asInstanceOf[js.Any], microphone = microphone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharingState]
   }
   
-  @scala.inline
-  implicit class SharingStateMutableBuilder[Self <: SharingState] (val x: Self) extends AnyVal {
+  extension [Self <: SharingState](x: Self) {
     
-    @scala.inline
-    def setCamera(value: Boolean): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: Boolean): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrophone(value: Boolean): Self = StObject.set(x, "microphone", value.asInstanceOf[js.Any])
+    inline def setMicrophone(value: Boolean): Self = StObject.set(x, "microphone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreen(value: String): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: String): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
+    inline def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
   }
 }

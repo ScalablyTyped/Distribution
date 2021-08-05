@@ -18,37 +18,27 @@ trait XEditableSubmitOptions extends StObject {
 }
 object XEditableSubmitOptions {
   
-  @scala.inline
-  def apply(error: js.Any => Unit, success: (js.Any, js.Any) => Unit): XEditableSubmitOptions = {
+  inline def apply(error: js.Any => Unit, success: (js.Any, js.Any) => Unit): XEditableSubmitOptions = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), success = js.Any.fromFunction2(success))
     __obj.asInstanceOf[XEditableSubmitOptions]
   }
   
-  @scala.inline
-  implicit class XEditableSubmitOptionsMutableBuilder[Self <: XEditableSubmitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: XEditableSubmitOptions](x: Self) {
     
-    @scala.inline
-    def setAjaxOptions(value: js.Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
+    inline def setAjaxOptions(value: js.Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAjaxOptionsUndefined: Self = StObject.set(x, "ajaxOptions", js.undefined)
+    inline def setAjaxOptionsUndefined: Self = StObject.set(x, "ajaxOptions", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccess(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
+    inline def setSuccess(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

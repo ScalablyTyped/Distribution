@@ -12,19 +12,15 @@ trait levelLoadingData extends StObject {
 }
 object levelLoadingData {
   
-  @scala.inline
-  def apply(level: Double, url: String): levelLoadingData = {
+  inline def apply(level: Double, url: String): levelLoadingData = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[levelLoadingData]
   }
   
-  @scala.inline
-  implicit class levelLoadingDataMutableBuilder[Self <: levelLoadingData] (val x: Self) extends AnyVal {
+  extension [Self <: levelLoadingData](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

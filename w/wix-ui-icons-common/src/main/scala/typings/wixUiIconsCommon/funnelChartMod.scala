@@ -22,20 +22,16 @@ object funnelChartMod extends Shortcut {
   }
   object FunnelChartProps {
     
-    @scala.inline
-    def apply(): FunnelChartProps = {
+    inline def apply(): FunnelChartProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FunnelChartProps]
     }
     
-    @scala.inline
-    implicit class FunnelChartPropsMutableBuilder[Self <: FunnelChartProps] (val x: Self) extends AnyVal {
+    extension [Self <: FunnelChartProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -14,25 +14,19 @@ trait DeviceTypeAssignedTargetingOptionDetails extends StObject {
 }
 object DeviceTypeAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): DeviceTypeAssignedTargetingOptionDetails = {
+  inline def apply(): DeviceTypeAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceTypeAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class DeviceTypeAssignedTargetingOptionDetailsMutableBuilder[Self <: DeviceTypeAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceTypeAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+    inline def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
+    inline def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
     
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
+    inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
+    inline def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
   }
 }

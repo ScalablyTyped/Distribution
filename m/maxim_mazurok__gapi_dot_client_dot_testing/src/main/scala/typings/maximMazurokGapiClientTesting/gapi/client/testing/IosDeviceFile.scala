@@ -17,31 +17,23 @@ trait IosDeviceFile extends StObject {
 }
 object IosDeviceFile {
   
-  @scala.inline
-  def apply(): IosDeviceFile = {
+  inline def apply(): IosDeviceFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosDeviceFile]
   }
   
-  @scala.inline
-  implicit class IosDeviceFileMutableBuilder[Self <: IosDeviceFile] (val x: Self) extends AnyVal {
+  extension [Self <: IosDeviceFile](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
-    @scala.inline
-    def setContent(value: FileReference): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: FileReference): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setDevicePath(value: String): Self = StObject.set(x, "devicePath", value.asInstanceOf[js.Any])
+    inline def setDevicePath(value: String): Self = StObject.set(x, "devicePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicePathUndefined: Self = StObject.set(x, "devicePath", js.undefined)
+    inline def setDevicePathUndefined: Self = StObject.set(x, "devicePath", js.undefined)
   }
 }

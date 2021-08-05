@@ -26,22 +26,17 @@ trait ExportFontInfo extends StObject {
 }
 object ExportFontInfo {
   
-  @scala.inline
-  def apply(GdiCharSet: js.Any, Name: String, UseCustomFontInfo: Boolean): ExportFontInfo = {
+  inline def apply(GdiCharSet: js.Any, Name: String, UseCustomFontInfo: Boolean): ExportFontInfo = {
     val __obj = js.Dynamic.literal(GdiCharSet = GdiCharSet.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], UseCustomFontInfo = UseCustomFontInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportFontInfo]
   }
   
-  @scala.inline
-  implicit class ExportFontInfoMutableBuilder[Self <: ExportFontInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExportFontInfo](x: Self) {
     
-    @scala.inline
-    def setGdiCharSet(value: js.Any): Self = StObject.set(x, "GdiCharSet", value.asInstanceOf[js.Any])
+    inline def setGdiCharSet(value: js.Any): Self = StObject.set(x, "GdiCharSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCustomFontInfo(value: Boolean): Self = StObject.set(x, "UseCustomFontInfo", value.asInstanceOf[js.Any])
+    inline def setUseCustomFontInfo(value: Boolean): Self = StObject.set(x, "UseCustomFontInfo", value.asInstanceOf[js.Any])
   }
 }

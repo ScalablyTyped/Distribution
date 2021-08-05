@@ -25,8 +25,7 @@ object metadataInterfaceMod {
   }
   object MetadataInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       created_by: String,
       key_value_metadata: js.Array[Key],
       num_rows: ^,
@@ -38,35 +37,25 @@ object metadataInterfaceMod {
       __obj.asInstanceOf[MetadataInterface]
     }
     
-    @scala.inline
-    implicit class MetadataInterfaceMutableBuilder[Self <: MetadataInterface] (val x: Self) extends AnyVal {
+    extension [Self <: MetadataInterface](x: Self) {
       
-      @scala.inline
-      def setCreated_by(value: String): Self = StObject.set(x, "created_by", value.asInstanceOf[js.Any])
+      inline def setCreated_by(value: String): Self = StObject.set(x, "created_by", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey_value_metadata(value: js.Array[Key]): Self = StObject.set(x, "key_value_metadata", value.asInstanceOf[js.Any])
+      inline def setKey_value_metadata(value: js.Array[Key]): Self = StObject.set(x, "key_value_metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey_value_metadataVarargs(value: Key*): Self = StObject.set(x, "key_value_metadata", js.Array(value :_*))
+      inline def setKey_value_metadataVarargs(value: Key*): Self = StObject.set(x, "key_value_metadata", js.Array(value :_*))
       
-      @scala.inline
-      def setNum_rows(value: ^): Self = StObject.set(x, "num_rows", value.asInstanceOf[js.Any])
+      inline def setNum_rows(value: ^): Self = StObject.set(x, "num_rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRow_groups(value: js.Array[MetadataRowGroupsInterface]): Self = StObject.set(x, "row_groups", value.asInstanceOf[js.Any])
+      inline def setRow_groups(value: js.Array[MetadataRowGroupsInterface]): Self = StObject.set(x, "row_groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRow_groupsVarargs(value: MetadataRowGroupsInterface*): Self = StObject.set(x, "row_groups", js.Array(value :_*))
+      inline def setRow_groupsVarargs(value: MetadataRowGroupsInterface*): Self = StObject.set(x, "row_groups", js.Array(value :_*))
       
-      @scala.inline
-      def setSchema(value: js.Array[MetadataSchemaInterface]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: js.Array[MetadataSchemaInterface]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaVarargs(value: MetadataSchemaInterface*): Self = StObject.set(x, "schema", js.Array(value :_*))
+      inline def setSchemaVarargs(value: MetadataSchemaInterface*): Self = StObject.set(x, "schema", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,26 +69,20 @@ object metadataInterfaceMod {
   }
   object MetadataRowGroupsColumnsInterface {
     
-    @scala.inline
-    def apply(file_offset: ^, meta_data: Codec): MetadataRowGroupsColumnsInterface = {
+    inline def apply(file_offset: ^, meta_data: Codec): MetadataRowGroupsColumnsInterface = {
       val __obj = js.Dynamic.literal(file_offset = file_offset.asInstanceOf[js.Any], meta_data = meta_data.asInstanceOf[js.Any], file_path = null)
       __obj.asInstanceOf[MetadataRowGroupsColumnsInterface]
     }
     
-    @scala.inline
-    implicit class MetadataRowGroupsColumnsInterfaceMutableBuilder[Self <: MetadataRowGroupsColumnsInterface] (val x: Self) extends AnyVal {
+    extension [Self <: MetadataRowGroupsColumnsInterface](x: Self) {
       
-      @scala.inline
-      def setFile_offset(value: ^): Self = StObject.set(x, "file_offset", value.asInstanceOf[js.Any])
+      inline def setFile_offset(value: ^): Self = StObject.set(x, "file_offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile_path(value: String): Self = StObject.set(x, "file_path", value.asInstanceOf[js.Any])
+      inline def setFile_path(value: String): Self = StObject.set(x, "file_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile_pathNull: Self = StObject.set(x, "file_path", null)
+      inline def setFile_pathNull: Self = StObject.set(x, "file_path", null)
       
-      @scala.inline
-      def setMeta_data(value: Codec): Self = StObject.set(x, "meta_data", value.asInstanceOf[js.Any])
+      inline def setMeta_data(value: Codec): Self = StObject.set(x, "meta_data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,35 +98,26 @@ object metadataInterfaceMod {
   }
   object MetadataRowGroupsInterface {
     
-    @scala.inline
-    def apply(columns: js.Array[MetadataRowGroupsColumnsInterface], num_rows: ^, total_byte_size: ^): MetadataRowGroupsInterface = {
+    inline def apply(columns: js.Array[MetadataRowGroupsColumnsInterface], num_rows: ^, total_byte_size: ^): MetadataRowGroupsInterface = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], num_rows = num_rows.asInstanceOf[js.Any], total_byte_size = total_byte_size.asInstanceOf[js.Any], sorting_columns = null)
       __obj.asInstanceOf[MetadataRowGroupsInterface]
     }
     
-    @scala.inline
-    implicit class MetadataRowGroupsInterfaceMutableBuilder[Self <: MetadataRowGroupsInterface] (val x: Self) extends AnyVal {
+    extension [Self <: MetadataRowGroupsInterface](x: Self) {
       
-      @scala.inline
-      def setColumns(value: js.Array[MetadataRowGroupsColumnsInterface]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[MetadataRowGroupsColumnsInterface]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: MetadataRowGroupsColumnsInterface*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: MetadataRowGroupsColumnsInterface*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setNum_rows(value: ^): Self = StObject.set(x, "num_rows", value.asInstanceOf[js.Any])
+      inline def setNum_rows(value: ^): Self = StObject.set(x, "num_rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSorting_columns(value: js.Array[js.Array[String] | String]): Self = StObject.set(x, "sorting_columns", value.asInstanceOf[js.Any])
+      inline def setSorting_columns(value: js.Array[js.Array[String] | String]): Self = StObject.set(x, "sorting_columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSorting_columnsNull: Self = StObject.set(x, "sorting_columns", null)
+      inline def setSorting_columnsNull: Self = StObject.set(x, "sorting_columns", null)
       
-      @scala.inline
-      def setSorting_columnsVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "sorting_columns", js.Array(value :_*))
+      inline def setSorting_columnsVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "sorting_columns", js.Array(value :_*))
       
-      @scala.inline
-      def setTotal_byte_size(value: ^): Self = StObject.set(x, "total_byte_size", value.asInstanceOf[js.Any])
+      inline def setTotal_byte_size(value: ^): Self = StObject.set(x, "total_byte_size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,66 +143,47 @@ object metadataInterfaceMod {
   }
   object MetadataSchemaInterface {
     
-    @scala.inline
-    def apply(name: String): MetadataSchemaInterface = {
+    inline def apply(name: String): MetadataSchemaInterface = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], converted_type = null, field_id = null, num_children = null, precision = null, repetition_type = null, scale = null, type_length = null)
       __obj.updateDynamic("type")(null)
       __obj.asInstanceOf[MetadataSchemaInterface]
     }
     
-    @scala.inline
-    implicit class MetadataSchemaInterfaceMutableBuilder[Self <: MetadataSchemaInterface] (val x: Self) extends AnyVal {
+    extension [Self <: MetadataSchemaInterface](x: Self) {
       
-      @scala.inline
-      def setConverted_type(value: String): Self = StObject.set(x, "converted_type", value.asInstanceOf[js.Any])
+      inline def setConverted_type(value: String): Self = StObject.set(x, "converted_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConverted_typeNull: Self = StObject.set(x, "converted_type", null)
+      inline def setConverted_typeNull: Self = StObject.set(x, "converted_type", null)
       
-      @scala.inline
-      def setField_id(value: Double): Self = StObject.set(x, "field_id", value.asInstanceOf[js.Any])
+      inline def setField_id(value: Double): Self = StObject.set(x, "field_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setField_idNull: Self = StObject.set(x, "field_id", null)
+      inline def setField_idNull: Self = StObject.set(x, "field_id", null)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_children(value: Double): Self = StObject.set(x, "num_children", value.asInstanceOf[js.Any])
+      inline def setNum_children(value: Double): Self = StObject.set(x, "num_children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_childrenNull: Self = StObject.set(x, "num_children", null)
+      inline def setNum_childrenNull: Self = StObject.set(x, "num_children", null)
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionNull: Self = StObject.set(x, "precision", null)
+      inline def setPrecisionNull: Self = StObject.set(x, "precision", null)
       
-      @scala.inline
-      def setRepetition_type(value: String): Self = StObject.set(x, "repetition_type", value.asInstanceOf[js.Any])
+      inline def setRepetition_type(value: String): Self = StObject.set(x, "repetition_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepetition_typeNull: Self = StObject.set(x, "repetition_type", null)
+      inline def setRepetition_typeNull: Self = StObject.set(x, "repetition_type", null)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleNull: Self = StObject.set(x, "scale", null)
+      inline def setScaleNull: Self = StObject.set(x, "scale", null)
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
       
-      @scala.inline
-      def setType_length(value: Double): Self = StObject.set(x, "type_length", value.asInstanceOf[js.Any])
+      inline def setType_length(value: Double): Self = StObject.set(x, "type_length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType_lengthNull: Self = StObject.set(x, "type_length", null)
+      inline def setType_lengthNull: Self = StObject.set(x, "type_length", null)
     }
   }
 }

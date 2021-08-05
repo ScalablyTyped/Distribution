@@ -19,22 +19,17 @@ trait NavigationBarColorOptions
 }
 object NavigationBarColorOptions {
   
-  @scala.inline
-  def apply(animation: NavigationBarColorAnimationOptions, backgroundColor: String, frontColor: String): NavigationBarColorOptions = {
+  inline def apply(animation: NavigationBarColorAnimationOptions, backgroundColor: String, frontColor: String): NavigationBarColorOptions = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], frontColor = frontColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationBarColorOptions]
   }
   
-  @scala.inline
-  implicit class NavigationBarColorOptionsMutableBuilder[Self <: NavigationBarColorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationBarColorOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: NavigationBarColorAnimationOptions): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: NavigationBarColorAnimationOptions): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrontColor(value: String): Self = StObject.set(x, "frontColor", value.asInstanceOf[js.Any])
+    inline def setFrontColor(value: String): Self = StObject.set(x, "frontColor", value.asInstanceOf[js.Any])
   }
 }

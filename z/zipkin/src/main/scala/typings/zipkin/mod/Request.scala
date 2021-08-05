@@ -11,6 +11,5 @@ object Request {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addZipkinHeaders[T, H](req: T & `0`, traceId: TraceId): RequestZipkinHeaders[T, H] = (^.asInstanceOf[js.Dynamic].applyDynamic("addZipkinHeaders")(req.asInstanceOf[js.Any], traceId.asInstanceOf[js.Any])).asInstanceOf[RequestZipkinHeaders[T, H]]
+  inline def addZipkinHeaders[T, H](req: T & `0`, traceId: TraceId): RequestZipkinHeaders[T, H] = (^.asInstanceOf[js.Dynamic].applyDynamic("addZipkinHeaders")(req.asInstanceOf[js.Any], traceId.asInstanceOf[js.Any])).asInstanceOf[RequestZipkinHeaders[T, H]]
 }

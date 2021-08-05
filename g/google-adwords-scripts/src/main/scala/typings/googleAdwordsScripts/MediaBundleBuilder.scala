@@ -15,8 +15,7 @@ trait MediaBundleBuilder[Media]
 }
 object MediaBundleBuilder {
   
-  @scala.inline
-  def apply[Media](
+  inline def apply[Media](
     build: () => AdWordsOperation[Media],
     withData: Blob => MediaBundleBuilder[Media],
     withName: String => MediaBundleBuilder[Media]
@@ -25,13 +24,10 @@ object MediaBundleBuilder {
     __obj.asInstanceOf[MediaBundleBuilder[Media]]
   }
   
-  @scala.inline
-  implicit class MediaBundleBuilderMutableBuilder[Self <: MediaBundleBuilder[?], Media] (val x: Self & MediaBundleBuilder[Media]) extends AnyVal {
+  extension [Self <: MediaBundleBuilder[?], Media](x: Self & MediaBundleBuilder[Media]) {
     
-    @scala.inline
-    def setWithData(value: Blob => MediaBundleBuilder[Media]): Self = StObject.set(x, "withData", js.Any.fromFunction1(value))
+    inline def setWithData(value: Blob => MediaBundleBuilder[Media]): Self = StObject.set(x, "withData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithName(value: String => MediaBundleBuilder[Media]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
+    inline def setWithName(value: String => MediaBundleBuilder[Media]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
   }
 }

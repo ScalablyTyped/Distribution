@@ -34,8 +34,7 @@ trait LocaleMessages extends StObject {
 }
 object LocaleMessages {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addDescription: String,
     addEdge: String,
     addNode: String,
@@ -54,46 +53,32 @@ object LocaleMessages {
     __obj.asInstanceOf[LocaleMessages]
   }
   
-  @scala.inline
-  implicit class LocaleMessagesMutableBuilder[Self <: LocaleMessages] (val x: Self) extends AnyVal {
+  extension [Self <: LocaleMessages](x: Self) {
     
-    @scala.inline
-    def setAddDescription(value: String): Self = StObject.set(x, "addDescription", value.asInstanceOf[js.Any])
+    inline def setAddDescription(value: String): Self = StObject.set(x, "addDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddEdge(value: String): Self = StObject.set(x, "addEdge", value.asInstanceOf[js.Any])
+    inline def setAddEdge(value: String): Self = StObject.set(x, "addEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddNode(value: String): Self = StObject.set(x, "addNode", value.asInstanceOf[js.Any])
+    inline def setAddNode(value: String): Self = StObject.set(x, "addNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBack(value: String): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+    inline def setBack(value: String): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateEdgeError(value: String): Self = StObject.set(x, "createEdgeError", value.asInstanceOf[js.Any])
+    inline def setCreateEdgeError(value: String): Self = StObject.set(x, "createEdgeError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDel(value: String): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+    inline def setDel(value: String): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteClusterError(value: String): Self = StObject.set(x, "deleteClusterError", value.asInstanceOf[js.Any])
+    inline def setDeleteClusterError(value: String): Self = StObject.set(x, "deleteClusterError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeDescription(value: String): Self = StObject.set(x, "edgeDescription", value.asInstanceOf[js.Any])
+    inline def setEdgeDescription(value: String): Self = StObject.set(x, "edgeDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditClusterError(value: String): Self = StObject.set(x, "editClusterError", value.asInstanceOf[js.Any])
+    inline def setEditClusterError(value: String): Self = StObject.set(x, "editClusterError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditEdge(value: String): Self = StObject.set(x, "editEdge", value.asInstanceOf[js.Any])
+    inline def setEditEdge(value: String): Self = StObject.set(x, "editEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditEdgeDescription(value: String): Self = StObject.set(x, "editEdgeDescription", value.asInstanceOf[js.Any])
+    inline def setEditEdgeDescription(value: String): Self = StObject.set(x, "editEdgeDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditNode(value: String): Self = StObject.set(x, "editNode", value.asInstanceOf[js.Any])
+    inline def setEditNode(value: String): Self = StObject.set(x, "editNode", value.asInstanceOf[js.Any])
   }
 }

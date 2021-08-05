@@ -16,40 +16,33 @@ object winappdeploytoolMod {
     
     val guid: String
     
-    var index: js.Any
+    /* private */ var index: js.Any
     
     val ip: String
     
     val name: String
     
-    var `type`: js.Any
+    /* private */ var `type`: js.Any
   }
   object DeviceInfo {
     
-    @scala.inline
-    def apply(guid: String, index: js.Any, ip: String, name: String, `type`: js.Any): DeviceInfo = {
+    inline def apply(guid: String, index: js.Any, ip: String, name: String, `type`: js.Any): DeviceInfo = {
       val __obj = js.Dynamic.literal(guid = guid.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeviceInfo]
     }
     
-    @scala.inline
-    implicit class DeviceInfoMutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceInfo](x: Self) {
       
-      @scala.inline
-      def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+      inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: js.Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: js.Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,7 +71,7 @@ object winappdeploytoolMod {
     
     def isAvailable: Boolean = js.native
     
-    var path: js.Any = js.native
+    /* private */ var path: js.Any = js.native
     
     def uninstallAppPackage(appName: String, targetDevice: DeviceInfo, verbose: Boolean): js.Promise[Unit] = js.native
   }

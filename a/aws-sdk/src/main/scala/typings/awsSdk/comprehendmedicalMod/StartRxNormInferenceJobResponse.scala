@@ -13,19 +13,15 @@ trait StartRxNormInferenceJobResponse extends StObject {
 }
 object StartRxNormInferenceJobResponse {
   
-  @scala.inline
-  def apply(): StartRxNormInferenceJobResponse = {
+  inline def apply(): StartRxNormInferenceJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartRxNormInferenceJobResponse]
   }
   
-  @scala.inline
-  implicit class StartRxNormInferenceJobResponseMutableBuilder[Self <: StartRxNormInferenceJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartRxNormInferenceJobResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

@@ -110,8 +110,7 @@ object mod {
   }
   object Noise {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       perlin2: (Double, Double) => Double,
       perlin3: (Double, Double, Double) => Double,
       seed: Double => Unit,
@@ -122,23 +121,17 @@ object mod {
       __obj.asInstanceOf[Noise]
     }
     
-    @scala.inline
-    implicit class NoiseMutableBuilder[Self <: Noise] (val x: Self) extends AnyVal {
+    extension [Self <: Noise](x: Self) {
       
-      @scala.inline
-      def setPerlin2(value: (Double, Double) => Double): Self = StObject.set(x, "perlin2", js.Any.fromFunction2(value))
+      inline def setPerlin2(value: (Double, Double) => Double): Self = StObject.set(x, "perlin2", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPerlin3(value: (Double, Double, Double) => Double): Self = StObject.set(x, "perlin3", js.Any.fromFunction3(value))
+      inline def setPerlin3(value: (Double, Double, Double) => Double): Self = StObject.set(x, "perlin3", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSeed(value: Double => Unit): Self = StObject.set(x, "seed", js.Any.fromFunction1(value))
+      inline def setSeed(value: Double => Unit): Self = StObject.set(x, "seed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSimplex2(value: (Double, Double) => Double): Self = StObject.set(x, "simplex2", js.Any.fromFunction2(value))
+      inline def setSimplex2(value: (Double, Double) => Double): Self = StObject.set(x, "simplex2", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSimplex3(value: (Double, Double, Double) => Double): Self = StObject.set(x, "simplex3", js.Any.fromFunction3(value))
+      inline def setSimplex3(value: (Double, Double, Double) => Double): Self = StObject.set(x, "simplex3", js.Any.fromFunction3(value))
     }
   }
 }

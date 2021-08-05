@@ -15,19 +15,15 @@ trait Normalize extends StObject {
 }
 object Normalize {
   
-  @scala.inline
-  def apply(): Normalize = {
+  inline def apply(): Normalize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Normalize]
   }
   
-  @scala.inline
-  implicit class NormalizeMutableBuilder[Self <: Normalize] (val x: Self) extends AnyVal {
+  extension [Self <: Normalize](x: Self) {
     
-    @scala.inline
-    def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+    inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+    inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
   }
 }

@@ -17,10 +17,8 @@ object metricsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def euclideanDistance(a: IPoint, b: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("euclideanDistance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def euclideanDistance(a: IPoint, b: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("euclideanDistance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def manhattanDistance(a: IPoint, b: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("manhattanDistance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def manhattanDistance(a: IPoint, b: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("manhattanDistance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

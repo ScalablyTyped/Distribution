@@ -17,37 +17,27 @@ trait seriesTypeBase extends StObject {
 }
 object seriesTypeBase {
   
-  @scala.inline
-  def apply(): seriesTypeBase = {
+  inline def apply(): seriesTypeBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[seriesTypeBase]
   }
   
-  @scala.inline
-  implicit class seriesTypeBaseMutableBuilder[Self <: seriesTypeBase] (val x: Self) extends AnyVal {
+  extension [Self <: seriesTypeBase](x: Self) {
     
-    @scala.inline
-    def setFill(value: js.Any): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: js.Any): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColor(value: js.Any): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: js.Any): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

@@ -56,8 +56,7 @@ object algo {
   }
   object AlgoStatic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AES: AES,
       DES: DES,
       EvpKDF: EvpKDF,
@@ -81,62 +80,43 @@ object algo {
       __obj.asInstanceOf[AlgoStatic]
     }
     
-    @scala.inline
-    implicit class AlgoStaticMutableBuilder[Self <: AlgoStatic] (val x: Self) extends AnyVal {
+    extension [Self <: AlgoStatic](x: Self) {
       
-      @scala.inline
-      def setAES(value: AES): Self = StObject.set(x, "AES", value.asInstanceOf[js.Any])
+      inline def setAES(value: AES): Self = StObject.set(x, "AES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDES(value: DES): Self = StObject.set(x, "DES", value.asInstanceOf[js.Any])
+      inline def setDES(value: DES): Self = StObject.set(x, "DES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvpKDF(value: EvpKDF): Self = StObject.set(x, "EvpKDF", value.asInstanceOf[js.Any])
+      inline def setEvpKDF(value: EvpKDF): Self = StObject.set(x, "EvpKDF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHMAC(value: HMAC): Self = StObject.set(x, "HMAC", value.asInstanceOf[js.Any])
+      inline def setHMAC(value: HMAC): Self = StObject.set(x, "HMAC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMD5(value: MD5): Self = StObject.set(x, "MD5", value.asInstanceOf[js.Any])
+      inline def setMD5(value: MD5): Self = StObject.set(x, "MD5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPBKDF2(value: PBKDF2): Self = StObject.set(x, "PBKDF2", value.asInstanceOf[js.Any])
+      inline def setPBKDF2(value: PBKDF2): Self = StObject.set(x, "PBKDF2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRC4(value: RC4): Self = StObject.set(x, "RC4", value.asInstanceOf[js.Any])
+      inline def setRC4(value: RC4): Self = StObject.set(x, "RC4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRC4Drop(value: RC4Drop): Self = StObject.set(x, "RC4Drop", value.asInstanceOf[js.Any])
+      inline def setRC4Drop(value: RC4Drop): Self = StObject.set(x, "RC4Drop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRIPEMD160(value: RIPEMD160): Self = StObject.set(x, "RIPEMD160", value.asInstanceOf[js.Any])
+      inline def setRIPEMD160(value: RIPEMD160): Self = StObject.set(x, "RIPEMD160", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRabbit(value: Rabbit): Self = StObject.set(x, "Rabbit", value.asInstanceOf[js.Any])
+      inline def setRabbit(value: Rabbit): Self = StObject.set(x, "Rabbit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRabbitLegacy(value: RabbitLegacy): Self = StObject.set(x, "RabbitLegacy", value.asInstanceOf[js.Any])
+      inline def setRabbitLegacy(value: RabbitLegacy): Self = StObject.set(x, "RabbitLegacy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHA1(value: SHA1): Self = StObject.set(x, "SHA1", value.asInstanceOf[js.Any])
+      inline def setSHA1(value: SHA1): Self = StObject.set(x, "SHA1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHA224(value: SHA224): Self = StObject.set(x, "SHA224", value.asInstanceOf[js.Any])
+      inline def setSHA224(value: SHA224): Self = StObject.set(x, "SHA224", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHA256(value: SHA256): Self = StObject.set(x, "SHA256", value.asInstanceOf[js.Any])
+      inline def setSHA256(value: SHA256): Self = StObject.set(x, "SHA256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHA3(value: SHA3): Self = StObject.set(x, "SHA3", value.asInstanceOf[js.Any])
+      inline def setSHA3(value: SHA3): Self = StObject.set(x, "SHA3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHA384(value: SHA384): Self = StObject.set(x, "SHA384", value.asInstanceOf[js.Any])
+      inline def setSHA384(value: SHA384): Self = StObject.set(x, "SHA384", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHA512(value: SHA512): Self = StObject.set(x, "SHA512", value.asInstanceOf[js.Any])
+      inline def setSHA512(value: SHA512): Self = StObject.set(x, "SHA512", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTripleDES(value: TripleDES): Self = StObject.set(x, "TripleDES", value.asInstanceOf[js.Any])
+      inline def setTripleDES(value: TripleDES): Self = StObject.set(x, "TripleDES", value.asInstanceOf[js.Any])
     }
   }
   
@@ -213,32 +193,24 @@ object algo {
   }
   object IEvpKDFCfg {
     
-    @scala.inline
-    def apply(): IEvpKDFCfg = {
+    inline def apply(): IEvpKDFCfg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEvpKDFCfg]
     }
     
-    @scala.inline
-    implicit class IEvpKDFCfgMutableBuilder[Self <: IEvpKDFCfg] (val x: Self) extends AnyVal {
+    extension [Self <: IEvpKDFCfg](x: Self) {
       
-      @scala.inline
-      def setHasher(value: Hasher): Self = StObject.set(x, "hasher", value.asInstanceOf[js.Any])
+      inline def setHasher(value: Hasher): Self = StObject.set(x, "hasher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasherUndefined: Self = StObject.set(x, "hasher", js.undefined)
+      inline def setHasherUndefined: Self = StObject.set(x, "hasher", js.undefined)
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+      inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
       
-      @scala.inline
-      def setKeySize(value: Double): Self = StObject.set(x, "keySize", value.asInstanceOf[js.Any])
+      inline def setKeySize(value: Double): Self = StObject.set(x, "keySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySizeUndefined: Self = StObject.set(x, "keySize", js.undefined)
+      inline def setKeySizeUndefined: Self = StObject.set(x, "keySize", js.undefined)
     }
   }
   
@@ -261,20 +233,16 @@ object algo {
   }
   object ISHA3Cfg {
     
-    @scala.inline
-    def apply(): ISHA3Cfg = {
+    inline def apply(): ISHA3Cfg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISHA3Cfg]
     }
     
-    @scala.inline
-    implicit class ISHA3CfgMutableBuilder[Self <: ISHA3Cfg] (val x: Self) extends AnyVal {
+    extension [Self <: ISHA3Cfg](x: Self) {
       
-      @scala.inline
-      def setOutputLength(value: Double): Self = StObject.set(x, "outputLength", value.asInstanceOf[js.Any])
+      inline def setOutputLength(value: Double): Self = StObject.set(x, "outputLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputLengthUndefined: Self = StObject.set(x, "outputLength", js.undefined)
+      inline def setOutputLengthUndefined: Self = StObject.set(x, "outputLength", js.undefined)
     }
   }
   

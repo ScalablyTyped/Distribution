@@ -17,31 +17,23 @@ trait HotKeyDetection extends StObject {
 }
 object HotKeyDetection {
   
-  @scala.inline
-  def apply(): HotKeyDetection = {
+  inline def apply(): HotKeyDetection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HotKeyDetection]
   }
   
-  @scala.inline
-  implicit class HotKeyDetectionMutableBuilder[Self <: HotKeyDetection] (val x: Self) extends AnyVal {
+  extension [Self <: HotKeyDetection](x: Self) {
     
-    @scala.inline
-    def setHotKeyAge(value: String): Self = StObject.set(x, "hotKeyAge", value.asInstanceOf[js.Any])
+    inline def setHotKeyAge(value: String): Self = StObject.set(x, "hotKeyAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHotKeyAgeUndefined: Self = StObject.set(x, "hotKeyAge", js.undefined)
+    inline def setHotKeyAgeUndefined: Self = StObject.set(x, "hotKeyAge", js.undefined)
     
-    @scala.inline
-    def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
+    inline def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
+    inline def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
     
-    @scala.inline
-    def setUserStepName(value: String): Self = StObject.set(x, "userStepName", value.asInstanceOf[js.Any])
+    inline def setUserStepName(value: String): Self = StObject.set(x, "userStepName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserStepNameUndefined: Self = StObject.set(x, "userStepName", js.undefined)
+    inline def setUserStepNameUndefined: Self = StObject.set(x, "userStepName", js.undefined)
   }
 }

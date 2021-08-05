@@ -42,8 +42,7 @@ trait XWindow2
 }
 object XWindow2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OutputSize: Size,
     PosSize: Rectangle,
     acquire: () => Unit,
@@ -80,28 +79,20 @@ object XWindow2 {
     __obj.asInstanceOf[XWindow2]
   }
   
-  @scala.inline
-  implicit class XWindow2MutableBuilder[Self <: XWindow2] (val x: Self) extends AnyVal {
+  extension [Self <: XWindow2](x: Self) {
     
-    @scala.inline
-    def setGetOutputSize(value: () => Size): Self = StObject.set(x, "getOutputSize", js.Any.fromFunction0(value))
+    inline def setGetOutputSize(value: () => Size): Self = StObject.set(x, "getOutputSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasFocus(value: () => Boolean): Self = StObject.set(x, "hasFocus", js.Any.fromFunction0(value))
+    inline def setHasFocus(value: () => Boolean): Self = StObject.set(x, "hasFocus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+    inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
+    inline def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOutputSize(value: Size): Self = StObject.set(x, "OutputSize", value.asInstanceOf[js.Any])
+    inline def setOutputSize(value: Size): Self = StObject.set(x, "OutputSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetOutputSize(value: Size => Unit): Self = StObject.set(x, "setOutputSize", js.Any.fromFunction1(value))
+    inline def setSetOutputSize(value: Size => Unit): Self = StObject.set(x, "setOutputSize", js.Any.fromFunction1(value))
   }
 }

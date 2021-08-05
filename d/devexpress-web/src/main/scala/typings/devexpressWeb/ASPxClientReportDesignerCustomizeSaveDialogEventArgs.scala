@@ -25,19 +25,15 @@ trait ASPxClientReportDesignerCustomizeSaveDialogEventArgs
 }
 object ASPxClientReportDesignerCustomizeSaveDialogEventArgs {
   
-  @scala.inline
-  def apply(Customize: (String, ASPxDesignerDialogModel) => Unit, Popup: ASPxDesignerSaveDialog): ASPxClientReportDesignerCustomizeSaveDialogEventArgs = {
+  inline def apply(Customize: (String, ASPxDesignerDialogModel) => Unit, Popup: ASPxDesignerSaveDialog): ASPxClientReportDesignerCustomizeSaveDialogEventArgs = {
     val __obj = js.Dynamic.literal(Customize = js.Any.fromFunction2(Customize), Popup = Popup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportDesignerCustomizeSaveDialogEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportDesignerCustomizeSaveDialogEventArgsMutableBuilder[Self <: ASPxClientReportDesignerCustomizeSaveDialogEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportDesignerCustomizeSaveDialogEventArgs](x: Self) {
     
-    @scala.inline
-    def setCustomize(value: (String, ASPxDesignerDialogModel) => Unit): Self = StObject.set(x, "Customize", js.Any.fromFunction2(value))
+    inline def setCustomize(value: (String, ASPxDesignerDialogModel) => Unit): Self = StObject.set(x, "Customize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPopup(value: ASPxDesignerSaveDialog): Self = StObject.set(x, "Popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: ASPxDesignerSaveDialog): Self = StObject.set(x, "Popup", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait ListHostedZonesRequest extends StObject {
 }
 object ListHostedZonesRequest {
   
-  @scala.inline
-  def apply(): ListHostedZonesRequest = {
+  inline def apply(): ListHostedZonesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListHostedZonesRequest]
   }
   
-  @scala.inline
-  implicit class ListHostedZonesRequestMutableBuilder[Self <: ListHostedZonesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListHostedZonesRequest](x: Self) {
     
-    @scala.inline
-    def setDelegationSetId(value: ResourceId): Self = StObject.set(x, "DelegationSetId", value.asInstanceOf[js.Any])
+    inline def setDelegationSetId(value: ResourceId): Self = StObject.set(x, "DelegationSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegationSetIdUndefined: Self = StObject.set(x, "DelegationSetId", js.undefined)
+    inline def setDelegationSetIdUndefined: Self = StObject.set(x, "DelegationSetId", js.undefined)
     
-    @scala.inline
-    def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

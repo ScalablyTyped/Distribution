@@ -12,19 +12,15 @@ trait SecurityIsolationStatus extends StObject {
 }
 object SecurityIsolationStatus {
   
-  @scala.inline
-  def apply(coep: CrossOriginEmbedderPolicyStatus, coop: CrossOriginOpenerPolicyStatus): SecurityIsolationStatus = {
+  inline def apply(coep: CrossOriginEmbedderPolicyStatus, coop: CrossOriginOpenerPolicyStatus): SecurityIsolationStatus = {
     val __obj = js.Dynamic.literal(coep = coep.asInstanceOf[js.Any], coop = coop.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityIsolationStatus]
   }
   
-  @scala.inline
-  implicit class SecurityIsolationStatusMutableBuilder[Self <: SecurityIsolationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityIsolationStatus](x: Self) {
     
-    @scala.inline
-    def setCoep(value: CrossOriginEmbedderPolicyStatus): Self = StObject.set(x, "coep", value.asInstanceOf[js.Any])
+    inline def setCoep(value: CrossOriginEmbedderPolicyStatus): Self = StObject.set(x, "coep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoop(value: CrossOriginOpenerPolicyStatus): Self = StObject.set(x, "coop", value.asInstanceOf[js.Any])
+    inline def setCoop(value: CrossOriginOpenerPolicyStatus): Self = StObject.set(x, "coop", value.asInstanceOf[js.Any])
   }
 }

@@ -15,12 +15,10 @@ object Boundary {
   @JSImport("@blueprintjs/core", "Boundary.END")
   @js.native
   def END: end = js.native
-  @scala.inline
-  def END_=(x: end): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
+  inline def END_=(x: end): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "Boundary.START")
   @js.native
   def START: start = js.native
-  @scala.inline
-  def START_=(x: start): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
+  inline def START_=(x: start): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
 }

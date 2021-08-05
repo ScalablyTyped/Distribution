@@ -25,9 +25,7 @@ object fileBrowserHandler {
   @JSGlobal("chrome.fileBrowserHandler.onExecute")
   @js.native
   def onExecute: FileBrowserHandlerExecuteEvent = js.native
-  @scala.inline
-  def onExecute_=(x: FileBrowserHandlerExecuteEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onExecute")(x.asInstanceOf[js.Any])
+  inline def onExecute_=(x: FileBrowserHandlerExecuteEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onExecute")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def selectFile(selectionParams: SelectionParams, callback: js.Function1[/* result */ SelectionResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectFile")(selectionParams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def selectFile(selectionParams: SelectionParams, callback: js.Function1[/* result */ SelectionResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectFile")(selectionParams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

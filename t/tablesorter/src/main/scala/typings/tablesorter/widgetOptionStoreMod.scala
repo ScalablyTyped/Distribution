@@ -38,8 +38,7 @@ object widgetOptionStoreMod {
   }
   object WidgetOptionStore {
     
-    @scala.inline
-    def apply[TElement](
+    inline def apply[TElement](
       $sticky: JQuery[HTMLElement],
       filter_$anyMatch: JQuery[HTMLElement],
       filter_$externalFilters: JQuery[HTMLElement],
@@ -49,20 +48,15 @@ object widgetOptionStoreMod {
       __obj.asInstanceOf[WidgetOptionStore[TElement]]
     }
     
-    @scala.inline
-    implicit class WidgetOptionStoreMutableBuilder[Self <: WidgetOptionStore[?], TElement] (val x: Self & WidgetOptionStore[TElement]) extends AnyVal {
+    extension [Self <: WidgetOptionStore[?], TElement](x: Self & WidgetOptionStore[TElement]) {
       
-      @scala.inline
-      def set$sticky(value: JQuery[HTMLElement]): Self = StObject.set(x, "$sticky", value.asInstanceOf[js.Any])
+      inline def set$sticky(value: JQuery[HTMLElement]): Self = StObject.set(x, "$sticky", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_$anyMatch(value: JQuery[HTMLElement]): Self = StObject.set(x, "filter_$anyMatch", value.asInstanceOf[js.Any])
+      inline def setFilter_$anyMatch(value: JQuery[HTMLElement]): Self = StObject.set(x, "filter_$anyMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_$externalFilters(value: JQuery[HTMLElement]): Self = StObject.set(x, "filter_$externalFilters", value.asInstanceOf[js.Any])
+      inline def setFilter_$externalFilters(value: JQuery[HTMLElement]): Self = StObject.set(x, "filter_$externalFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_initialized(value: Boolean): Self = StObject.set(x, "filter_initialized", value.asInstanceOf[js.Any])
+      inline def setFilter_initialized(value: Boolean): Self = StObject.set(x, "filter_initialized", value.asInstanceOf[js.Any])
     }
   }
 }

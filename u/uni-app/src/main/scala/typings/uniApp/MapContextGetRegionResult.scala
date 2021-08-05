@@ -18,25 +18,19 @@ trait MapContextGetRegionResult extends StObject {
 }
 object MapContextGetRegionResult {
   
-  @scala.inline
-  def apply(): MapContextGetRegionResult = {
+  inline def apply(): MapContextGetRegionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapContextGetRegionResult]
   }
   
-  @scala.inline
-  implicit class MapContextGetRegionResultMutableBuilder[Self <: MapContextGetRegionResult] (val x: Self) extends AnyVal {
+  extension [Self <: MapContextGetRegionResult](x: Self) {
     
-    @scala.inline
-    def setNortheast(value: LocationObject): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
+    inline def setNortheast(value: LocationObject): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNortheastUndefined: Self = StObject.set(x, "northeast", js.undefined)
+    inline def setNortheastUndefined: Self = StObject.set(x, "northeast", js.undefined)
     
-    @scala.inline
-    def setSouthwest(value: LocationObject): Self = StObject.set(x, "southwest", value.asInstanceOf[js.Any])
+    inline def setSouthwest(value: LocationObject): Self = StObject.set(x, "southwest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSouthwestUndefined: Self = StObject.set(x, "southwest", js.undefined)
+    inline def setSouthwestUndefined: Self = StObject.set(x, "southwest", js.undefined)
   }
 }

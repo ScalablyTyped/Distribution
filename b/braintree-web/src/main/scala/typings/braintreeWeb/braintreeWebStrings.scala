@@ -12,161 +12,137 @@ object braintreeWebStrings {
   
   @js.native
   sealed trait `1` extends StObject
-  @scala.inline
-  def `1`: `1` = "1".asInstanceOf[`1`]
+  inline def `1`: `1` = "1".asInstanceOf[`1`]
   
   @js.native
   sealed trait `2` extends StObject
-  @scala.inline
-  def `2`: `2` = "2".asInstanceOf[`2`]
+  inline def `2`: `2` = "2".asInstanceOf[`2`]
   
   @js.native
   sealed trait `2-bootstrap3-modal` extends StObject
-  @scala.inline
-  def `2-bootstrap3-modal`: `2-bootstrap3-modal` = "2-bootstrap3-modal".asInstanceOf[`2-bootstrap3-modal`]
+  inline def `2-bootstrap3-modal`: `2-bootstrap3-modal` = "2-bootstrap3-modal".asInstanceOf[`2-bootstrap3-modal`]
   
   @js.native
   sealed trait `2-inline-iframe` extends StObject
-  @scala.inline
-  def `2-inline-iframe`: `2-inline-iframe` = "2-inline-iframe".asInstanceOf[`2-inline-iframe`]
+  inline def `2-inline-iframe`: `2-inline-iframe` = "2-inline-iframe".asInstanceOf[`2-inline-iframe`]
   
   @js.native
   sealed trait CUSTOMER
     extends StObject
        with BraintreeErrorTypes
-  @scala.inline
-  def CUSTOMER: CUSTOMER = "CUSTOMER".asInstanceOf[CUSTOMER]
+  inline def CUSTOMER: CUSTOMER = "CUSTOMER".asInstanceOf[CUSTOMER]
   
   @js.native
   sealed trait INTERNAL
     extends StObject
        with BraintreeErrorTypes
-  @scala.inline
-  def INTERNAL: INTERNAL = "INTERNAL".asInstanceOf[INTERNAL]
+  inline def INTERNAL: INTERNAL = "INTERNAL".asInstanceOf[INTERNAL]
   
   @js.native
   sealed trait MERCHANT
     extends StObject
        with BraintreeErrorTypes
-  @scala.inline
-  def MERCHANT: MERCHANT = "MERCHANT".asInstanceOf[MERCHANT]
+  inline def MERCHANT: MERCHANT = "MERCHANT".asInstanceOf[MERCHANT]
   
   @js.native
   sealed trait NETWORK
     extends StObject
        with BraintreeErrorTypes
-  @scala.inline
-  def NETWORK: NETWORK = "NETWORK".asInstanceOf[NETWORK]
+  inline def NETWORK: NETWORK = "NETWORK".asInstanceOf[NETWORK]
   
   @js.native
   sealed trait No
     extends StObject
        with GooglePaymentTokenizeValues
-  @scala.inline
-  def No: No = "No".asInstanceOf[No]
+  inline def No: No = "No".asInstanceOf[No]
   
   @js.native
   sealed trait UNKNOWN
     extends StObject
        with BraintreeErrorTypes
-  @scala.inline
-  def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
+  inline def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
   @js.native
   sealed trait Unknown_
     extends StObject
        with GooglePaymentTokenizeValues
-  @scala.inline
-  def Unknown_ : Unknown_ = "Unknown".asInstanceOf[Unknown_]
+  inline def Unknown_ : Unknown_ = "Unknown".asInstanceOf[Unknown_]
   
   @js.native
   sealed trait Yes
     extends StObject
        with GooglePaymentTokenizeValues
-  @scala.inline
-  def Yes: Yes = "Yes".asInstanceOf[Yes]
+  inline def Yes: Yes = "Yes".asInstanceOf[Yes]
   
   @js.native
   sealed trait blur
     extends StObject
        with HostedFieldEventType
-  @scala.inline
-  def blur: blur = "blur".asInstanceOf[blur]
+  inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
   sealed trait cardTypeChange
     extends StObject
        with HostedFieldEventType
-  @scala.inline
-  def cardTypeChange: cardTypeChange = "cardTypeChange".asInstanceOf[cardTypeChange]
+  inline def cardTypeChange: cardTypeChange = "cardTypeChange".asInstanceOf[cardTypeChange]
   
   @js.native
   sealed trait cvv
     extends StObject
        with HostedFieldsHostedFieldsFieldName
-  @scala.inline
-  def cvv: cvv = "cvv".asInstanceOf[cvv]
+  inline def cvv: cvv = "cvv".asInstanceOf[cvv]
   
   @js.native
   sealed trait empty
     extends StObject
        with HostedFieldEventType
-  @scala.inline
-  def empty: empty = "empty".asInstanceOf[empty]
+  inline def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
   sealed trait expirationDate
     extends StObject
        with HostedFieldsHostedFieldsFieldName
-  @scala.inline
-  def expirationDate: expirationDate = "expirationDate".asInstanceOf[expirationDate]
+  inline def expirationDate: expirationDate = "expirationDate".asInstanceOf[expirationDate]
   
   @js.native
   sealed trait expirationMonth
     extends StObject
        with HostedFieldsHostedFieldsFieldName
-  @scala.inline
-  def expirationMonth: expirationMonth = "expirationMonth".asInstanceOf[expirationMonth]
+  inline def expirationMonth: expirationMonth = "expirationMonth".asInstanceOf[expirationMonth]
   
   @js.native
   sealed trait expirationYear
     extends StObject
        with HostedFieldsHostedFieldsFieldName
-  @scala.inline
-  def expirationYear: expirationYear = "expirationYear".asInstanceOf[expirationYear]
+  inline def expirationYear: expirationYear = "expirationYear".asInstanceOf[expirationYear]
   
   @js.native
   sealed trait focus
     extends StObject
        with HostedFieldEventType
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
   sealed trait notEmpty
     extends StObject
        with HostedFieldEventType
-  @scala.inline
-  def notEmpty: notEmpty = "notEmpty".asInstanceOf[notEmpty]
+  inline def notEmpty: notEmpty = "notEmpty".asInstanceOf[notEmpty]
   
   @js.native
   sealed trait number
     extends StObject
        with HostedFieldsHostedFieldsFieldName
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
   sealed trait postalCode
     extends StObject
        with HostedFieldsHostedFieldsFieldName
-  @scala.inline
-  def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
+  inline def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
   
   @js.native
   sealed trait validityChange
     extends StObject
        with HostedFieldEventType
-  @scala.inline
-  def validityChange: validityChange = "validityChange".asInstanceOf[validityChange]
+  inline def validityChange: validityChange = "validityChange".asInstanceOf[validityChange]
 }

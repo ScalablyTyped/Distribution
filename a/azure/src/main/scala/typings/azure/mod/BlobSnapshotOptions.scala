@@ -12,19 +12,15 @@ trait BlobSnapshotOptions
 }
 object BlobSnapshotOptions {
   
-  @scala.inline
-  def apply(): BlobSnapshotOptions = {
+  inline def apply(): BlobSnapshotOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlobSnapshotOptions]
   }
   
-  @scala.inline
-  implicit class BlobSnapshotOptionsMutableBuilder[Self <: BlobSnapshotOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BlobSnapshotOptions](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: StorageMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StorageMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

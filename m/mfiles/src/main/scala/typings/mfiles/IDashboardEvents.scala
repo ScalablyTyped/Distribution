@@ -15,25 +15,19 @@ trait IDashboardEvents
 }
 object IDashboardEvents {
   
-  @scala.inline
-  def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): IDashboardEvents = {
+  inline def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): IDashboardEvents = {
     val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
     __obj.asInstanceOf[IDashboardEvents]
   }
   
-  @scala.inline
-  implicit class IDashboardEventsMutableBuilder[Self <: IDashboardEvents] (val x: Self) extends AnyVal {
+  extension [Self <: IDashboardEvents](x: Self) {
     
-    @scala.inline
-    def setOnStarted(value: () => Unit): Self = StObject.set(x, "OnStarted", js.Any.fromFunction0(value))
+    inline def setOnStarted(value: () => Unit): Self = StObject.set(x, "OnStarted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnStartedUndefined: Self = StObject.set(x, "OnStarted", js.undefined)
+    inline def setOnStartedUndefined: Self = StObject.set(x, "OnStarted", js.undefined)
     
-    @scala.inline
-    def setOnStop(value: () => Unit): Self = StObject.set(x, "OnStop", js.Any.fromFunction0(value))
+    inline def setOnStop(value: () => Unit): Self = StObject.set(x, "OnStop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnStopUndefined: Self = StObject.set(x, "OnStop", js.undefined)
+    inline def setOnStopUndefined: Self = StObject.set(x, "OnStop", js.undefined)
   }
 }

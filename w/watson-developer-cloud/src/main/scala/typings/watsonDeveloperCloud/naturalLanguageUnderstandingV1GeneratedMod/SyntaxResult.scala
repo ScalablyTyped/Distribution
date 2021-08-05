@@ -13,31 +13,23 @@ trait SyntaxResult extends StObject {
 }
 object SyntaxResult {
   
-  @scala.inline
-  def apply(): SyntaxResult = {
+  inline def apply(): SyntaxResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyntaxResult]
   }
   
-  @scala.inline
-  implicit class SyntaxResultMutableBuilder[Self <: SyntaxResult] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxResult](x: Self) {
     
-    @scala.inline
-    def setSentences(value: js.Array[SentenceResult]): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
+    inline def setSentences(value: js.Array[SentenceResult]): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
+    inline def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
-    @scala.inline
-    def setSentencesVarargs(value: SentenceResult*): Self = StObject.set(x, "sentences", js.Array(value :_*))
+    inline def setSentencesVarargs(value: SentenceResult*): Self = StObject.set(x, "sentences", js.Array(value :_*))
     
-    @scala.inline
-    def setTokens(value: js.Array[TokenResult]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: js.Array[TokenResult]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+    inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     
-    @scala.inline
-    def setTokensVarargs(value: TokenResult*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: TokenResult*): Self = StObject.set(x, "tokens", js.Array(value :_*))
   }
 }

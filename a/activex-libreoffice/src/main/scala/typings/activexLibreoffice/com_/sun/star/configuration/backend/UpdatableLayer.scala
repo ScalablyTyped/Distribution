@@ -21,8 +21,7 @@ trait UpdatableLayer
      with XUpdatableLayer
 object UpdatableLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Timestamp: String,
     URL: String,
     acquire: () => Unit,

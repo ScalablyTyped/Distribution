@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcWebUserGroupsDisplay extends StObject
 object AcWebUserGroupsDisplay {
   
-  @scala.inline
-  def acWebUserGroupID: `0` = 0.asInstanceOf[`0`]
+  inline def acWebUserGroupID: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acWebUserGroupName: `1` = 1.asInstanceOf[`1`]
+  inline def acWebUserGroupName: `1` = 1.asInstanceOf[`1`]
 }

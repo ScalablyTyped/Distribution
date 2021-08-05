@@ -22,6 +22,6 @@ object expoQueryRunnerMod {
     /**
       * Database transaction object
       */
-    var transaction: js.Any = js.native
+    /* private */ var transaction: js.Any = js.native
   }
 }

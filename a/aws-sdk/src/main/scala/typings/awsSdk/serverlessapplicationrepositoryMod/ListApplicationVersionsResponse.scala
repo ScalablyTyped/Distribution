@@ -18,28 +18,21 @@ trait ListApplicationVersionsResponse extends StObject {
 }
 object ListApplicationVersionsResponse {
   
-  @scala.inline
-  def apply(): ListApplicationVersionsResponse = {
+  inline def apply(): ListApplicationVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListApplicationVersionsResponse]
   }
   
-  @scala.inline
-  implicit class ListApplicationVersionsResponseMutableBuilder[Self <: ListApplicationVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListApplicationVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVersions(value: listOfVersionSummary): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: listOfVersionSummary): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: VersionSummary*): Self = StObject.set(x, "Versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: VersionSummary*): Self = StObject.set(x, "Versions", js.Array(value :_*))
   }
 }

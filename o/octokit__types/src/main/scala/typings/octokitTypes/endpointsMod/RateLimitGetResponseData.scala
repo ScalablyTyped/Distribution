@@ -14,19 +14,15 @@ trait RateLimitGetResponseData extends StObject {
 }
 object RateLimitGetResponseData {
   
-  @scala.inline
-  def apply(rate: Limit, resources: Core): RateLimitGetResponseData = {
+  inline def apply(rate: Limit, resources: Core): RateLimitGetResponseData = {
     val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateLimitGetResponseData]
   }
   
-  @scala.inline
-  implicit class RateLimitGetResponseDataMutableBuilder[Self <: RateLimitGetResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: RateLimitGetResponseData](x: Self) {
     
-    @scala.inline
-    def setRate(value: Limit): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: Limit): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResources(value: Core): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: Core): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
   }
 }

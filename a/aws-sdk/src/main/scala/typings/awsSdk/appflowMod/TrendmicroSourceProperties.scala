@@ -13,17 +13,14 @@ trait TrendmicroSourceProperties extends StObject {
 }
 object TrendmicroSourceProperties {
   
-  @scala.inline
-  def apply(`object`: Object): TrendmicroSourceProperties = {
+  inline def apply(`object`: Object): TrendmicroSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrendmicroSourceProperties]
   }
   
-  @scala.inline
-  implicit class TrendmicroSourcePropertiesMutableBuilder[Self <: TrendmicroSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TrendmicroSourceProperties](x: Self) {
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

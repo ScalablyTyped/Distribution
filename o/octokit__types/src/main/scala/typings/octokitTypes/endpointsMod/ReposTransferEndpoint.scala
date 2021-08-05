@@ -22,34 +22,25 @@ trait ReposTransferEndpoint extends StObject {
 }
 object ReposTransferEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): ReposTransferEndpoint = {
+  inline def apply(owner: String, repo: String): ReposTransferEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposTransferEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposTransferEndpointMutableBuilder[Self <: ReposTransferEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposTransferEndpoint](x: Self) {
     
-    @scala.inline
-    def setNew_owner(value: String): Self = StObject.set(x, "new_owner", value.asInstanceOf[js.Any])
+    inline def setNew_owner(value: String): Self = StObject.set(x, "new_owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_ownerUndefined: Self = StObject.set(x, "new_owner", js.undefined)
+    inline def setNew_ownerUndefined: Self = StObject.set(x, "new_owner", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_ids(value: js.Array[Double]): Self = StObject.set(x, "team_ids", value.asInstanceOf[js.Any])
+    inline def setTeam_ids(value: js.Array[Double]): Self = StObject.set(x, "team_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_idsUndefined: Self = StObject.set(x, "team_ids", js.undefined)
+    inline def setTeam_idsUndefined: Self = StObject.set(x, "team_ids", js.undefined)
     
-    @scala.inline
-    def setTeam_idsVarargs(value: Double*): Self = StObject.set(x, "team_ids", js.Array(value :_*))
+    inline def setTeam_idsVarargs(value: Double*): Self = StObject.set(x, "team_ids", js.Array(value :_*))
   }
 }

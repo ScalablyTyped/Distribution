@@ -13,16 +13,13 @@ trait StopLabelingJobRequest extends StObject {
 }
 object StopLabelingJobRequest {
   
-  @scala.inline
-  def apply(LabelingJobName: LabelingJobName): StopLabelingJobRequest = {
+  inline def apply(LabelingJobName: LabelingJobName): StopLabelingJobRequest = {
     val __obj = js.Dynamic.literal(LabelingJobName = LabelingJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopLabelingJobRequest]
   }
   
-  @scala.inline
-  implicit class StopLabelingJobRequestMutableBuilder[Self <: StopLabelingJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopLabelingJobRequest](x: Self) {
     
-    @scala.inline
-    def setLabelingJobName(value: LabelingJobName): Self = StObject.set(x, "LabelingJobName", value.asInstanceOf[js.Any])
+    inline def setLabelingJobName(value: LabelingJobName): Self = StObject.set(x, "LabelingJobName", value.asInstanceOf[js.Any])
   }
 }

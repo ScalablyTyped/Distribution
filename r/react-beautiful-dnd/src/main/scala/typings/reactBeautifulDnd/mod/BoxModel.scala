@@ -27,8 +27,7 @@ trait BoxModel extends StObject {
 }
 object BoxModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     border: Spacing,
     borderBox: Rect,
     contentBox: Rect,
@@ -41,28 +40,20 @@ object BoxModel {
     __obj.asInstanceOf[BoxModel]
   }
   
-  @scala.inline
-  implicit class BoxModelMutableBuilder[Self <: BoxModel] (val x: Self) extends AnyVal {
+  extension [Self <: BoxModel](x: Self) {
     
-    @scala.inline
-    def setBorder(value: Spacing): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Spacing): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBox(value: Rect): Self = StObject.set(x, "borderBox", value.asInstanceOf[js.Any])
+    inline def setBorderBox(value: Rect): Self = StObject.set(x, "borderBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentBox(value: Rect): Self = StObject.set(x, "contentBox", value.asInstanceOf[js.Any])
+    inline def setContentBox(value: Rect): Self = StObject.set(x, "contentBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMargin(value: Spacing): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Spacing): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginBox(value: Rect): Self = StObject.set(x, "marginBox", value.asInstanceOf[js.Any])
+    inline def setMarginBox(value: Rect): Self = StObject.set(x, "marginBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: Spacing): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Spacing): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingBox(value: Rect): Self = StObject.set(x, "paddingBox", value.asInstanceOf[js.Any])
+    inline def setPaddingBox(value: Rect): Self = StObject.set(x, "paddingBox", value.asInstanceOf[js.Any])
   }
 }

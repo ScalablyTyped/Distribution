@@ -10,15 +10,11 @@ object splashScreenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
+  inline def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
   
-  @scala.inline
-  def hideAsync(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAsync")().asInstanceOf[js.Promise[Boolean]]
+  inline def hideAsync(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAsync")().asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def preventAutoHide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventAutoHide")().asInstanceOf[Unit]
+  inline def preventAutoHide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventAutoHide")().asInstanceOf[Unit]
   
-  @scala.inline
-  def preventAutoHideAsync(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("preventAutoHideAsync")().asInstanceOf[js.Promise[Boolean]]
+  inline def preventAutoHideAsync(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("preventAutoHideAsync")().asInstanceOf[js.Promise[Boolean]]
 }

@@ -9,8 +9,7 @@ trait EnableKeyInput
      with typings.awsSdkClientKmsNode.typesEnableKeyInputMod.EnableKeyInput
 object EnableKeyInput {
   
-  @scala.inline
-  def apply(KeyId: String): EnableKeyInput = {
+  inline def apply(KeyId: String): EnableKeyInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableKeyInput]
   }

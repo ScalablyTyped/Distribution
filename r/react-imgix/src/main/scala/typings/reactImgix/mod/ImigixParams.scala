@@ -28,8 +28,7 @@ trait ImigixParams
      with WatermarkParams
 object ImigixParams {
   
-  @scala.inline
-  def apply(): ImigixParams = {
+  inline def apply(): ImigixParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImigixParams]
   }

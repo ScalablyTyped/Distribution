@@ -8,6 +8,5 @@ object moonjsStrings {
   
   @js.native
   sealed trait Numbersigntext extends StObject
-  @scala.inline
-  def Numbersigntext: Numbersigntext = "#text".asInstanceOf[Numbersigntext]
+  inline def Numbersigntext: Numbersigntext = "#text".asInstanceOf[Numbersigntext]
 }

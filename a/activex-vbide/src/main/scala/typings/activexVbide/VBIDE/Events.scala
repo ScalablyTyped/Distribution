@@ -10,13 +10,12 @@ trait Events extends StObject {
   
   def ReferencesEvents(VBProject: VBProject): typings.activexVbide.VBIDE.ReferencesEvents
   
-  @JSName("VBIDE.Events_typekey")
+  /* private */ @JSName("VBIDE.Events_typekey")
   var VBIDEDotEvents_typekey: Events
 }
 object Events {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CommandBarEvents: js.Any => CommandBarEvents,
     ReferencesEvents: VBProject => ReferencesEvents,
     VBIDEDotEvents_typekey: Events
@@ -26,16 +25,12 @@ object Events {
     __obj.asInstanceOf[Events]
   }
   
-  @scala.inline
-  implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
+  extension [Self <: Events](x: Self) {
     
-    @scala.inline
-    def setCommandBarEvents(value: js.Any => CommandBarEvents): Self = StObject.set(x, "CommandBarEvents", js.Any.fromFunction1(value))
+    inline def setCommandBarEvents(value: js.Any => CommandBarEvents): Self = StObject.set(x, "CommandBarEvents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReferencesEvents(value: VBProject => ReferencesEvents): Self = StObject.set(x, "ReferencesEvents", js.Any.fromFunction1(value))
+    inline def setReferencesEvents(value: VBProject => ReferencesEvents): Self = StObject.set(x, "ReferencesEvents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVBIDEDotEvents_typekey(value: Events): Self = StObject.set(x, "VBIDE.Events_typekey", value.asInstanceOf[js.Any])
+    inline def setVBIDEDotEvents_typekey(value: Events): Self = StObject.set(x, "VBIDE.Events_typekey", value.asInstanceOf[js.Any])
   }
 }

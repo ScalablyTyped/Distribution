@@ -14,28 +14,21 @@ trait GoogleAnalyticsAdminV1alphaListGoogleAdsLinksResponse extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaListGoogleAdsLinksResponse {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaListGoogleAdsLinksResponse = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaListGoogleAdsLinksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaListGoogleAdsLinksResponse]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaListGoogleAdsLinksResponseMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaListGoogleAdsLinksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaListGoogleAdsLinksResponse](x: Self) {
     
-    @scala.inline
-    def setGoogleAdsLinks(value: js.Array[GoogleAnalyticsAdminV1alphaGoogleAdsLink]): Self = StObject.set(x, "googleAdsLinks", value.asInstanceOf[js.Any])
+    inline def setGoogleAdsLinks(value: js.Array[GoogleAnalyticsAdminV1alphaGoogleAdsLink]): Self = StObject.set(x, "googleAdsLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleAdsLinksUndefined: Self = StObject.set(x, "googleAdsLinks", js.undefined)
+    inline def setGoogleAdsLinksUndefined: Self = StObject.set(x, "googleAdsLinks", js.undefined)
     
-    @scala.inline
-    def setGoogleAdsLinksVarargs(value: GoogleAnalyticsAdminV1alphaGoogleAdsLink*): Self = StObject.set(x, "googleAdsLinks", js.Array(value :_*))
+    inline def setGoogleAdsLinksVarargs(value: GoogleAnalyticsAdminV1alphaGoogleAdsLink*): Self = StObject.set(x, "googleAdsLinks", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

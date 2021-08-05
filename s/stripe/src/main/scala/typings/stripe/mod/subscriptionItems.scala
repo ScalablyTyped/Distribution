@@ -59,42 +59,31 @@ object subscriptionItems {
   }
   object ISubscriptionItem {
     
-    @scala.inline
-    def apply(created: Double, id: String, metadata: IMetadata, plan: IPlan, subscription: String): ISubscriptionItem = {
+    inline def apply(created: Double, id: String, metadata: IMetadata, plan: IPlan, subscription: String): ISubscriptionItem = {
       val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], billing_thresholds = null)
       __obj.updateDynamic("object")("subscription_item")
       __obj.asInstanceOf[ISubscriptionItem]
     }
     
-    @scala.inline
-    implicit class ISubscriptionItemMutableBuilder[Self <: ISubscriptionItem] (val x: Self) extends AnyVal {
+    extension [Self <: ISubscriptionItem](x: Self) {
       
-      @scala.inline
-      def setBilling_thresholds(value: Usagegte): Self = StObject.set(x, "billing_thresholds", value.asInstanceOf[js.Any])
+      inline def setBilling_thresholds(value: Usagegte): Self = StObject.set(x, "billing_thresholds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBilling_thresholdsNull: Self = StObject.set(x, "billing_thresholds", null)
+      inline def setBilling_thresholdsNull: Self = StObject.set(x, "billing_thresholds", null)
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: subscription_item): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: subscription_item): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlan(value: IPlan): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: IPlan): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+      inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
       
-      @scala.inline
-      def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+      inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,38 +119,28 @@ object subscriptionItems {
   }
   object ISubscriptionItemCreationOptions {
     
-    @scala.inline
-    def apply(plan: String, subscription: String): ISubscriptionItemCreationOptions = {
+    inline def apply(plan: String, subscription: String): ISubscriptionItemCreationOptions = {
       val __obj = js.Dynamic.literal(plan = plan.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISubscriptionItemCreationOptions]
     }
     
-    @scala.inline
-    implicit class ISubscriptionItemCreationOptionsMutableBuilder[Self <: ISubscriptionItemCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISubscriptionItemCreationOptions](x: Self) {
       
-      @scala.inline
-      def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProrate(value: Boolean): Self = StObject.set(x, "prorate", value.asInstanceOf[js.Any])
+      inline def setProrate(value: Boolean): Self = StObject.set(x, "prorate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProrateUndefined: Self = StObject.set(x, "prorate", js.undefined)
+      inline def setProrateUndefined: Self = StObject.set(x, "prorate", js.undefined)
       
-      @scala.inline
-      def setProration_date(value: Double): Self = StObject.set(x, "proration_date", value.asInstanceOf[js.Any])
+      inline def setProration_date(value: Double): Self = StObject.set(x, "proration_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProration_dateUndefined: Self = StObject.set(x, "proration_date", js.undefined)
+      inline def setProration_dateUndefined: Self = StObject.set(x, "proration_date", js.undefined)
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+      inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
       
-      @scala.inline
-      def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+      inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,32 +167,24 @@ object subscriptionItems {
   }
   object ISubscriptionItemDeleteOptions {
     
-    @scala.inline
-    def apply(): ISubscriptionItemDeleteOptions = {
+    inline def apply(): ISubscriptionItemDeleteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISubscriptionItemDeleteOptions]
     }
     
-    @scala.inline
-    implicit class ISubscriptionItemDeleteOptionsMutableBuilder[Self <: ISubscriptionItemDeleteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISubscriptionItemDeleteOptions](x: Self) {
       
-      @scala.inline
-      def setProrate(value: Boolean): Self = StObject.set(x, "prorate", value.asInstanceOf[js.Any])
+      inline def setProrate(value: Boolean): Self = StObject.set(x, "prorate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProrateUndefined: Self = StObject.set(x, "prorate", js.undefined)
+      inline def setProrateUndefined: Self = StObject.set(x, "prorate", js.undefined)
       
-      @scala.inline
-      def setProration_behavior(value: create_prorations | always_invoice | none): Self = StObject.set(x, "proration_behavior", value.asInstanceOf[js.Any])
+      inline def setProration_behavior(value: create_prorations | always_invoice | none): Self = StObject.set(x, "proration_behavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProration_behaviorUndefined: Self = StObject.set(x, "proration_behavior", js.undefined)
+      inline def setProration_behaviorUndefined: Self = StObject.set(x, "proration_behavior", js.undefined)
       
-      @scala.inline
-      def setProration_date(value: Double): Self = StObject.set(x, "proration_date", value.asInstanceOf[js.Any])
+      inline def setProration_date(value: Double): Self = StObject.set(x, "proration_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProration_dateUndefined: Self = StObject.set(x, "proration_date", js.undefined)
+      inline def setProration_dateUndefined: Self = StObject.set(x, "proration_date", js.undefined)
     }
   }
   
@@ -228,17 +199,14 @@ object subscriptionItems {
   }
   object ISubscriptionItemListOptions {
     
-    @scala.inline
-    def apply(subscription: String): ISubscriptionItemListOptions = {
+    inline def apply(subscription: String): ISubscriptionItemListOptions = {
       val __obj = js.Dynamic.literal(subscription = subscription.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISubscriptionItemListOptions]
     }
     
-    @scala.inline
-    implicit class ISubscriptionItemListOptionsMutableBuilder[Self <: ISubscriptionItemListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISubscriptionItemListOptions](x: Self) {
       
-      @scala.inline
-      def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+      inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     }
   }
   
@@ -269,38 +237,28 @@ object subscriptionItems {
   }
   object ISubscriptionItemUpdateOptions {
     
-    @scala.inline
-    def apply(): ISubscriptionItemUpdateOptions = {
+    inline def apply(): ISubscriptionItemUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISubscriptionItemUpdateOptions]
     }
     
-    @scala.inline
-    implicit class ISubscriptionItemUpdateOptionsMutableBuilder[Self <: ISubscriptionItemUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISubscriptionItemUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
+      inline def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
       
-      @scala.inline
-      def setProrate(value: Boolean): Self = StObject.set(x, "prorate", value.asInstanceOf[js.Any])
+      inline def setProrate(value: Boolean): Self = StObject.set(x, "prorate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProrateUndefined: Self = StObject.set(x, "prorate", js.undefined)
+      inline def setProrateUndefined: Self = StObject.set(x, "prorate", js.undefined)
       
-      @scala.inline
-      def setProration_date(value: Double): Self = StObject.set(x, "proration_date", value.asInstanceOf[js.Any])
+      inline def setProration_date(value: Double): Self = StObject.set(x, "proration_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProration_dateUndefined: Self = StObject.set(x, "proration_date", js.undefined)
+      inline def setProration_dateUndefined: Self = StObject.set(x, "proration_date", js.undefined)
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+      inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     }
   }
 }

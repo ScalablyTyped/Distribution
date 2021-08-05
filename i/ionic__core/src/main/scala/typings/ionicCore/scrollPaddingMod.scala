@@ -10,6 +10,5 @@ object scrollPaddingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def enableScrollPadding(keyboardHeight: Double): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableScrollPadding")(keyboardHeight.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def enableScrollPadding(keyboardHeight: Double): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableScrollPadding")(keyboardHeight.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
 }

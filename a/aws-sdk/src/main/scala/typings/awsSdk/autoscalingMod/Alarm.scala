@@ -18,25 +18,19 @@ trait Alarm extends StObject {
 }
 object Alarm {
   
-  @scala.inline
-  def apply(): Alarm = {
+  inline def apply(): Alarm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Alarm]
   }
   
-  @scala.inline
-  implicit class AlarmMutableBuilder[Self <: Alarm] (val x: Self) extends AnyVal {
+  extension [Self <: Alarm](x: Self) {
     
-    @scala.inline
-    def setAlarmARN(value: ResourceName): Self = StObject.set(x, "AlarmARN", value.asInstanceOf[js.Any])
+    inline def setAlarmARN(value: ResourceName): Self = StObject.set(x, "AlarmARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmARNUndefined: Self = StObject.set(x, "AlarmARN", js.undefined)
+    inline def setAlarmARNUndefined: Self = StObject.set(x, "AlarmARN", js.undefined)
     
-    @scala.inline
-    def setAlarmName(value: XmlStringMaxLen255): Self = StObject.set(x, "AlarmName", value.asInstanceOf[js.Any])
+    inline def setAlarmName(value: XmlStringMaxLen255): Self = StObject.set(x, "AlarmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmNameUndefined: Self = StObject.set(x, "AlarmName", js.undefined)
+    inline def setAlarmNameUndefined: Self = StObject.set(x, "AlarmName", js.undefined)
   }
 }

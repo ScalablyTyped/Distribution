@@ -15,6 +15,5 @@ object CssSelector {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(selector: String): js.Array[typings.angularCompiler.selectorMod.CssSelector] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.angularCompiler.selectorMod.CssSelector]]
+  inline def parse(selector: String): js.Array[typings.angularCompiler.selectorMod.CssSelector] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.angularCompiler.selectorMod.CssSelector]]
 }

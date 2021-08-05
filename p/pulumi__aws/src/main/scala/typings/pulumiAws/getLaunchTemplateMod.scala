@@ -24,14 +24,10 @@ object getLaunchTemplateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLaunchTemplate(): js.Promise[GetLaunchTemplateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchTemplate")().asInstanceOf[js.Promise[GetLaunchTemplateResult]]
-  @scala.inline
-  def getLaunchTemplate(args: Unit, opts: InvokeOptions): js.Promise[GetLaunchTemplateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchTemplate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLaunchTemplateResult]]
-  @scala.inline
-  def getLaunchTemplate(args: GetLaunchTemplateArgs): js.Promise[GetLaunchTemplateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchTemplate")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLaunchTemplateResult]]
-  @scala.inline
-  def getLaunchTemplate(args: GetLaunchTemplateArgs, opts: InvokeOptions): js.Promise[GetLaunchTemplateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchTemplate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLaunchTemplateResult]]
+  inline def getLaunchTemplate(): js.Promise[GetLaunchTemplateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchTemplate")().asInstanceOf[js.Promise[GetLaunchTemplateResult]]
+  inline def getLaunchTemplate(args: Unit, opts: InvokeOptions): js.Promise[GetLaunchTemplateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchTemplate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLaunchTemplateResult]]
+  inline def getLaunchTemplate(args: GetLaunchTemplateArgs): js.Promise[GetLaunchTemplateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchTemplate")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLaunchTemplateResult]]
+  inline def getLaunchTemplate(args: GetLaunchTemplateArgs, opts: InvokeOptions): js.Promise[GetLaunchTemplateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchTemplate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLaunchTemplateResult]]
   
   trait GetLaunchTemplateArgs extends StObject {
     
@@ -52,35 +48,26 @@ object getLaunchTemplateMod {
   }
   object GetLaunchTemplateArgs {
     
-    @scala.inline
-    def apply(): GetLaunchTemplateArgs = {
+    inline def apply(): GetLaunchTemplateArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetLaunchTemplateArgs]
     }
     
-    @scala.inline
-    implicit class GetLaunchTemplateArgsMutableBuilder[Self <: GetLaunchTemplateArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetLaunchTemplateArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetLaunchTemplateFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetLaunchTemplateFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetLaunchTemplateFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetLaunchTemplateFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -240,8 +227,7 @@ object getLaunchTemplateMod {
   }
   object GetLaunchTemplateResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       blockDeviceMappings: js.Array[GetLaunchTemplateBlockDeviceMapping],
       creditSpecifications: js.Array[GetLaunchTemplateCreditSpecification],
@@ -275,146 +261,99 @@ object getLaunchTemplateMod {
       __obj.asInstanceOf[GetLaunchTemplateResult]
     }
     
-    @scala.inline
-    implicit class GetLaunchTemplateResultMutableBuilder[Self <: GetLaunchTemplateResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetLaunchTemplateResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockDeviceMappings(value: js.Array[GetLaunchTemplateBlockDeviceMapping]): Self = StObject.set(x, "blockDeviceMappings", value.asInstanceOf[js.Any])
+      inline def setBlockDeviceMappings(value: js.Array[GetLaunchTemplateBlockDeviceMapping]): Self = StObject.set(x, "blockDeviceMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockDeviceMappingsVarargs(value: GetLaunchTemplateBlockDeviceMapping*): Self = StObject.set(x, "blockDeviceMappings", js.Array(value :_*))
+      inline def setBlockDeviceMappingsVarargs(value: GetLaunchTemplateBlockDeviceMapping*): Self = StObject.set(x, "blockDeviceMappings", js.Array(value :_*))
       
-      @scala.inline
-      def setCreditSpecifications(value: js.Array[GetLaunchTemplateCreditSpecification]): Self = StObject.set(x, "creditSpecifications", value.asInstanceOf[js.Any])
+      inline def setCreditSpecifications(value: js.Array[GetLaunchTemplateCreditSpecification]): Self = StObject.set(x, "creditSpecifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreditSpecificationsVarargs(value: GetLaunchTemplateCreditSpecification*): Self = StObject.set(x, "creditSpecifications", js.Array(value :_*))
+      inline def setCreditSpecificationsVarargs(value: GetLaunchTemplateCreditSpecification*): Self = StObject.set(x, "creditSpecifications", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultVersion(value: Double): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
+      inline def setDefaultVersion(value: Double): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableApiTermination(value: Boolean): Self = StObject.set(x, "disableApiTermination", value.asInstanceOf[js.Any])
+      inline def setDisableApiTermination(value: Boolean): Self = StObject.set(x, "disableApiTermination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsOptimized(value: String): Self = StObject.set(x, "ebsOptimized", value.asInstanceOf[js.Any])
+      inline def setEbsOptimized(value: String): Self = StObject.set(x, "ebsOptimized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticGpuSpecifications(value: js.Array[GetLaunchTemplateElasticGpuSpecification]): Self = StObject.set(x, "elasticGpuSpecifications", value.asInstanceOf[js.Any])
+      inline def setElasticGpuSpecifications(value: js.Array[GetLaunchTemplateElasticGpuSpecification]): Self = StObject.set(x, "elasticGpuSpecifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticGpuSpecificationsVarargs(value: GetLaunchTemplateElasticGpuSpecification*): Self = StObject.set(x, "elasticGpuSpecifications", js.Array(value :_*))
+      inline def setElasticGpuSpecificationsVarargs(value: GetLaunchTemplateElasticGpuSpecification*): Self = StObject.set(x, "elasticGpuSpecifications", js.Array(value :_*))
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetLaunchTemplateFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetLaunchTemplateFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetLaunchTemplateFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetLaunchTemplateFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setHibernationOptions(value: js.Array[GetLaunchTemplateHibernationOption]): Self = StObject.set(x, "hibernationOptions", value.asInstanceOf[js.Any])
+      inline def setHibernationOptions(value: js.Array[GetLaunchTemplateHibernationOption]): Self = StObject.set(x, "hibernationOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHibernationOptionsVarargs(value: GetLaunchTemplateHibernationOption*): Self = StObject.set(x, "hibernationOptions", js.Array(value :_*))
+      inline def setHibernationOptionsVarargs(value: GetLaunchTemplateHibernationOption*): Self = StObject.set(x, "hibernationOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setIamInstanceProfiles(value: js.Array[GetLaunchTemplateIamInstanceProfile]): Self = StObject.set(x, "iamInstanceProfiles", value.asInstanceOf[js.Any])
+      inline def setIamInstanceProfiles(value: js.Array[GetLaunchTemplateIamInstanceProfile]): Self = StObject.set(x, "iamInstanceProfiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamInstanceProfilesVarargs(value: GetLaunchTemplateIamInstanceProfile*): Self = StObject.set(x, "iamInstanceProfiles", js.Array(value :_*))
+      inline def setIamInstanceProfilesVarargs(value: GetLaunchTemplateIamInstanceProfile*): Self = StObject.set(x, "iamInstanceProfiles", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+      inline def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceInitiatedShutdownBehavior(value: String): Self = StObject.set(x, "instanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
+      inline def setInstanceInitiatedShutdownBehavior(value: String): Self = StObject.set(x, "instanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceMarketOptions(value: js.Array[GetLaunchTemplateInstanceMarketOption]): Self = StObject.set(x, "instanceMarketOptions", value.asInstanceOf[js.Any])
+      inline def setInstanceMarketOptions(value: js.Array[GetLaunchTemplateInstanceMarketOption]): Self = StObject.set(x, "instanceMarketOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceMarketOptionsVarargs(value: GetLaunchTemplateInstanceMarketOption*): Self = StObject.set(x, "instanceMarketOptions", js.Array(value :_*))
+      inline def setInstanceMarketOptionsVarargs(value: GetLaunchTemplateInstanceMarketOption*): Self = StObject.set(x, "instanceMarketOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelId(value: String): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
+      inline def setKernelId(value: String): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
+      inline def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestVersion(value: Double): Self = StObject.set(x, "latestVersion", value.asInstanceOf[js.Any])
+      inline def setLatestVersion(value: Double): Self = StObject.set(x, "latestVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataOptions(value: js.Array[GetLaunchTemplateMetadataOption]): Self = StObject.set(x, "metadataOptions", value.asInstanceOf[js.Any])
+      inline def setMetadataOptions(value: js.Array[GetLaunchTemplateMetadataOption]): Self = StObject.set(x, "metadataOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataOptionsVarargs(value: GetLaunchTemplateMetadataOption*): Self = StObject.set(x, "metadataOptions", js.Array(value :_*))
+      inline def setMetadataOptionsVarargs(value: GetLaunchTemplateMetadataOption*): Self = StObject.set(x, "metadataOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setMonitorings(value: js.Array[GetLaunchTemplateMonitoring]): Self = StObject.set(x, "monitorings", value.asInstanceOf[js.Any])
+      inline def setMonitorings(value: js.Array[GetLaunchTemplateMonitoring]): Self = StObject.set(x, "monitorings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonitoringsVarargs(value: GetLaunchTemplateMonitoring*): Self = StObject.set(x, "monitorings", js.Array(value :_*))
+      inline def setMonitoringsVarargs(value: GetLaunchTemplateMonitoring*): Self = StObject.set(x, "monitorings", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNetworkInterfaces(value: js.Array[GetLaunchTemplateNetworkInterface]): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaces(value: js.Array[GetLaunchTemplateNetworkInterface]): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfacesVarargs(value: GetLaunchTemplateNetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
+      inline def setNetworkInterfacesVarargs(value: GetLaunchTemplateNetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
       
-      @scala.inline
-      def setPlacements(value: js.Array[GetLaunchTemplatePlacement]): Self = StObject.set(x, "placements", value.asInstanceOf[js.Any])
+      inline def setPlacements(value: js.Array[GetLaunchTemplatePlacement]): Self = StObject.set(x, "placements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementsVarargs(value: GetLaunchTemplatePlacement*): Self = StObject.set(x, "placements", js.Array(value :_*))
+      inline def setPlacementsVarargs(value: GetLaunchTemplatePlacement*): Self = StObject.set(x, "placements", js.Array(value :_*))
       
-      @scala.inline
-      def setRamDiskId(value: String): Self = StObject.set(x, "ramDiskId", value.asInstanceOf[js.Any])
+      inline def setRamDiskId(value: String): Self = StObject.set(x, "ramDiskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupNames(value: js.Array[String]): Self = StObject.set(x, "securityGroupNames", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupNames(value: js.Array[String]): Self = StObject.set(x, "securityGroupNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupNamesVarargs(value: String*): Self = StObject.set(x, "securityGroupNames", js.Array(value :_*))
+      inline def setSecurityGroupNamesVarargs(value: String*): Self = StObject.set(x, "securityGroupNames", js.Array(value :_*))
       
-      @scala.inline
-      def setTagSpecifications(value: js.Array[GetLaunchTemplateTagSpecification]): Self = StObject.set(x, "tagSpecifications", value.asInstanceOf[js.Any])
+      inline def setTagSpecifications(value: js.Array[GetLaunchTemplateTagSpecification]): Self = StObject.set(x, "tagSpecifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagSpecificationsVarargs(value: GetLaunchTemplateTagSpecification*): Self = StObject.set(x, "tagSpecifications", js.Array(value :_*))
+      inline def setTagSpecificationsVarargs(value: GetLaunchTemplateTagSpecification*): Self = StObject.set(x, "tagSpecifications", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "vpcSecurityGroupIds", value.asInstanceOf[js.Any])
+      inline def setVpcSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "vpcSecurityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "vpcSecurityGroupIds", js.Array(value :_*))
+      inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "vpcSecurityGroupIds", js.Array(value :_*))
     }
   }
 }

@@ -13,16 +13,13 @@ trait RestoreSecretRequest extends StObject {
 }
 object RestoreSecretRequest {
   
-  @scala.inline
-  def apply(SecretId: SecretIdType): RestoreSecretRequest = {
+  inline def apply(SecretId: SecretIdType): RestoreSecretRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreSecretRequest]
   }
   
-  @scala.inline
-  implicit class RestoreSecretRequestMutableBuilder[Self <: RestoreSecretRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreSecretRequest](x: Self) {
     
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
+    inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
   }
 }

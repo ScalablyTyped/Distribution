@@ -24,8 +24,7 @@ object componentMod {
   @js.native
   def index: Double = js.native
   
-  @scala.inline
-  def index_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_index")(x.asInstanceOf[js.Any])
+  inline def index_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_index")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Component extends StObject {
@@ -69,23 +68,18 @@ object componentMod {
   }
   object ComponentParameters {
     
-    @scala.inline
-    def apply(element: HTMLElement): ComponentParameters = {
+    inline def apply(element: HTMLElement): ComponentParameters = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentParameters]
     }
     
-    @scala.inline
-    implicit class ComponentParametersMutableBuilder[Self <: ComponentParameters] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentParameters](x: Self) {
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
 }

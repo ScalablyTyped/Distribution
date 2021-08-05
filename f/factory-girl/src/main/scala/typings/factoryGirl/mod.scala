@@ -33,26 +33,20 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply[T](): Options[T] = {
+    inline def apply[T](): Options[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[T]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
+    extension [Self <: Options[?], T](x: Self & Options[T]) {
       
-      @scala.inline
-      def setAfterBuild(value: (/* model */ js.Any, /* attrs */ js.Array[T], /* options */ js.Any) => Unit): Self = StObject.set(x, "afterBuild", js.Any.fromFunction3(value))
+      inline def setAfterBuild(value: (/* model */ js.Any, /* attrs */ js.Array[T], /* options */ js.Any) => Unit): Self = StObject.set(x, "afterBuild", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAfterBuildUndefined: Self = StObject.set(x, "afterBuild", js.undefined)
+      inline def setAfterBuildUndefined: Self = StObject.set(x, "afterBuild", js.undefined)
       
-      @scala.inline
-      def setAfterCreate(value: (/* model */ js.Any, /* attrs */ js.Array[T], /* options */ js.Any) => Unit): Self = StObject.set(x, "afterCreate", js.Any.fromFunction3(value))
+      inline def setAfterCreate(value: (/* model */ js.Any, /* attrs */ js.Array[T], /* options */ js.Any) => Unit): Self = StObject.set(x, "afterCreate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAfterCreateUndefined: Self = StObject.set(x, "afterCreate", js.undefined)
+      inline def setAfterCreateUndefined: Self = StObject.set(x, "afterCreate", js.undefined)
     }
   }
   

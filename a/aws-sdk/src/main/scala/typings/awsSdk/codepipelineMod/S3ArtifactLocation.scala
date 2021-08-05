@@ -18,19 +18,15 @@ trait S3ArtifactLocation extends StObject {
 }
 object S3ArtifactLocation {
   
-  @scala.inline
-  def apply(bucketName: S3BucketName, objectKey: S3ObjectKey): S3ArtifactLocation = {
+  inline def apply(bucketName: S3BucketName, objectKey: S3ObjectKey): S3ArtifactLocation = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], objectKey = objectKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3ArtifactLocation]
   }
   
-  @scala.inline
-  implicit class S3ArtifactLocationMutableBuilder[Self <: S3ArtifactLocation] (val x: Self) extends AnyVal {
+  extension [Self <: S3ArtifactLocation](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: S3BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: S3BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectKey(value: S3ObjectKey): Self = StObject.set(x, "objectKey", value.asInstanceOf[js.Any])
+    inline def setObjectKey(value: S3ObjectKey): Self = StObject.set(x, "objectKey", value.asInstanceOf[js.Any])
   }
 }

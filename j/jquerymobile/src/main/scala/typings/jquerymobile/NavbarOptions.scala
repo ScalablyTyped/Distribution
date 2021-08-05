@@ -10,16 +10,13 @@ trait NavbarOptions extends StObject {
 }
 object NavbarOptions {
   
-  @scala.inline
-  def apply(iconpos: String): NavbarOptions = {
+  inline def apply(iconpos: String): NavbarOptions = {
     val __obj = js.Dynamic.literal(iconpos = iconpos.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavbarOptions]
   }
   
-  @scala.inline
-  implicit class NavbarOptionsMutableBuilder[Self <: NavbarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavbarOptions](x: Self) {
     
-    @scala.inline
-    def setIconpos(value: String): Self = StObject.set(x, "iconpos", value.asInstanceOf[js.Any])
+    inline def setIconpos(value: String): Self = StObject.set(x, "iconpos", value.asInstanceOf[js.Any])
   }
 }

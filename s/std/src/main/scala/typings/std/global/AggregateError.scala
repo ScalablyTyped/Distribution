@@ -26,6 +26,5 @@ class AggregateError protected ()
 }
 object AggregateError {
   
-  @scala.inline
-  def apply: AggregateErrorConstructor = js.Dynamic.global.selectDynamic("AggregateError").asInstanceOf[AggregateErrorConstructor]
+  inline def apply: AggregateErrorConstructor = js.Dynamic.global.selectDynamic("AggregateError").asInstanceOf[AggregateErrorConstructor]
 }

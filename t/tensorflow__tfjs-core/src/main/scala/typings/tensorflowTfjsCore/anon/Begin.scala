@@ -14,31 +14,23 @@ trait Begin extends StObject {
 }
 object Begin {
   
-  @scala.inline
-  def apply(begin: js.Array[Double], end: js.Array[Double], strides: js.Array[Double]): Begin = {
+  inline def apply(begin: js.Array[Double], end: js.Array[Double], strides: js.Array[Double]): Begin = {
     val __obj = js.Dynamic.literal(begin = begin.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], strides = strides.asInstanceOf[js.Any])
     __obj.asInstanceOf[Begin]
   }
   
-  @scala.inline
-  implicit class BeginMutableBuilder[Self <: Begin] (val x: Self) extends AnyVal {
+  extension [Self <: Begin](x: Self) {
     
-    @scala.inline
-    def setBegin(value: js.Array[Double]): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
+    inline def setBegin(value: js.Array[Double]): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginVarargs(value: Double*): Self = StObject.set(x, "begin", js.Array(value :_*))
+    inline def setBeginVarargs(value: Double*): Self = StObject.set(x, "begin", js.Array(value :_*))
     
-    @scala.inline
-    def setEnd(value: js.Array[Double]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: js.Array[Double]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value :_*))
+    inline def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value :_*))
     
-    @scala.inline
-    def setStrides(value: js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+    inline def setStrides(value: js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+    inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
   }
 }

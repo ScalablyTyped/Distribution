@@ -15,28 +15,21 @@ trait EmailCC extends StObject {
 }
 object EmailCC {
   
-  @scala.inline
-  def apply(action: String): EmailCC = {
+  inline def apply(action: String): EmailCC = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailCC]
   }
   
-  @scala.inline
-  implicit class EmailCCMutableBuilder[Self <: EmailCC] (val x: Self) extends AnyVal {
+  extension [Self <: EmailCC](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_email(value: String): Self = StObject.set(x, "user_email", value.asInstanceOf[js.Any])
+    inline def setUser_email(value: String): Self = StObject.set(x, "user_email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_emailUndefined: Self = StObject.set(x, "user_email", js.undefined)
+    inline def setUser_emailUndefined: Self = StObject.set(x, "user_email", js.undefined)
     
-    @scala.inline
-    def setUser_id(value: ZendeskID): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: ZendeskID): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
+    inline def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
   }
 }

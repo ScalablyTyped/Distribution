@@ -10,22 +10,17 @@ trait WorkbookRangeReference extends StObject {
 }
 object WorkbookRangeReference {
   
-  @scala.inline
-  def apply(): WorkbookRangeReference = {
+  inline def apply(): WorkbookRangeReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookRangeReference]
   }
   
-  @scala.inline
-  implicit class WorkbookRangeReferenceMutableBuilder[Self <: WorkbookRangeReference] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookRangeReference](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NullableOption[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NullableOption[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressNull: Self = StObject.set(x, "address", null)
+    inline def setAddressNull: Self = StObject.set(x, "address", null)
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
   }
 }

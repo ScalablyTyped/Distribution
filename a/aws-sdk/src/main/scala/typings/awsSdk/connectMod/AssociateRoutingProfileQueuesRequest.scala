@@ -23,8 +23,7 @@ trait AssociateRoutingProfileQueuesRequest extends StObject {
 }
 object AssociateRoutingProfileQueuesRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InstanceId: InstanceId,
     QueueConfigs: RoutingProfileQueueConfigList,
     RoutingProfileId: RoutingProfileId
@@ -33,19 +32,14 @@ object AssociateRoutingProfileQueuesRequest {
     __obj.asInstanceOf[AssociateRoutingProfileQueuesRequest]
   }
   
-  @scala.inline
-  implicit class AssociateRoutingProfileQueuesRequestMutableBuilder[Self <: AssociateRoutingProfileQueuesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateRoutingProfileQueuesRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueConfigs(value: RoutingProfileQueueConfigList): Self = StObject.set(x, "QueueConfigs", value.asInstanceOf[js.Any])
+    inline def setQueueConfigs(value: RoutingProfileQueueConfigList): Self = StObject.set(x, "QueueConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueConfigsVarargs(value: RoutingProfileQueueConfig*): Self = StObject.set(x, "QueueConfigs", js.Array(value :_*))
+    inline def setQueueConfigsVarargs(value: RoutingProfileQueueConfig*): Self = StObject.set(x, "QueueConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
+    inline def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
   }
 }

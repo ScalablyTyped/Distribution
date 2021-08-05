@@ -35,6 +35,5 @@ object FactoryInvoker {
   @JSImport("aurelia-dependency-injection", "FactoryInvoker.instance")
   @js.native
   def instance: FactoryInvoker[js.Any, Impl[js.Any], Args[js.Any]] = js.native
-  @scala.inline
-  def instance_=(x: FactoryInvoker[js.Any, Impl[js.Any], Args[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+  inline def instance_=(x: FactoryInvoker[js.Any, Impl[js.Any], Args[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
 }

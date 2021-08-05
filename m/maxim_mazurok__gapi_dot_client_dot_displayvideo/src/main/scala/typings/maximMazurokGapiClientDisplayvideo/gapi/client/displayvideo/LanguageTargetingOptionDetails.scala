@@ -11,19 +11,15 @@ trait LanguageTargetingOptionDetails extends StObject {
 }
 object LanguageTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): LanguageTargetingOptionDetails = {
+  inline def apply(): LanguageTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LanguageTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class LanguageTargetingOptionDetailsMutableBuilder[Self <: LanguageTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait YAxisConfigurationWithTime
 }
 object YAxisConfigurationWithTime {
   
-  @scala.inline
-  def apply(): YAxisConfigurationWithTime = {
+  inline def apply(): YAxisConfigurationWithTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[YAxisConfigurationWithTime]
   }
   
-  @scala.inline
-  implicit class YAxisConfigurationWithTimeMutableBuilder[Self <: YAxisConfigurationWithTime] (val x: Self) extends AnyVal {
+  extension [Self <: YAxisConfigurationWithTime](x: Self) {
     
-    @scala.inline
-    def setTick(value: YTickConfigurationWithTime): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    inline def setTick(value: YTickConfigurationWithTime): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
+    inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
   }
 }

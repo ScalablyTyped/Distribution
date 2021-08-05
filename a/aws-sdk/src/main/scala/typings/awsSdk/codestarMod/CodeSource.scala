@@ -13,16 +13,13 @@ trait CodeSource extends StObject {
 }
 object CodeSource {
   
-  @scala.inline
-  def apply(s3: S3Location): CodeSource = {
+  inline def apply(s3: S3Location): CodeSource = {
     val __obj = js.Dynamic.literal(s3 = s3.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeSource]
   }
   
-  @scala.inline
-  implicit class CodeSourceMutableBuilder[Self <: CodeSource] (val x: Self) extends AnyVal {
+  extension [Self <: CodeSource](x: Self) {
     
-    @scala.inline
-    def setS3(value: S3Location): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+    inline def setS3(value: S3Location): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
   }
 }

@@ -28,40 +28,29 @@ trait SchemaTrustedApps extends StObject {
 }
 object SchemaTrustedApps {
   
-  @scala.inline
-  def apply(): SchemaTrustedApps = {
+  inline def apply(): SchemaTrustedApps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTrustedApps]
   }
   
-  @scala.inline
-  implicit class SchemaTrustedAppsMutableBuilder[Self <: SchemaTrustedApps] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTrustedApps](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTrustedApps(value: js.Array[SchemaTrustedAppId]): Self = StObject.set(x, "trustedApps", value.asInstanceOf[js.Any])
+    inline def setTrustedApps(value: js.Array[SchemaTrustedAppId]): Self = StObject.set(x, "trustedApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustedAppsUndefined: Self = StObject.set(x, "trustedApps", js.undefined)
+    inline def setTrustedAppsUndefined: Self = StObject.set(x, "trustedApps", js.undefined)
     
-    @scala.inline
-    def setTrustedAppsVarargs(value: SchemaTrustedAppId*): Self = StObject.set(x, "trustedApps", js.Array(value :_*))
+    inline def setTrustedAppsVarargs(value: SchemaTrustedAppId*): Self = StObject.set(x, "trustedApps", js.Array(value :_*))
   }
 }

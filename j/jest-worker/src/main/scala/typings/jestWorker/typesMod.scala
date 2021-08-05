@@ -90,70 +90,50 @@ object typesMod {
   }
   object FarmOptions {
     
-    @scala.inline
-    def apply(): FarmOptions = {
+    inline def apply(): FarmOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FarmOptions]
     }
     
-    @scala.inline
-    implicit class FarmOptionsMutableBuilder[Self <: FarmOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FarmOptions](x: Self) {
       
-      @scala.inline
-      def setComputeWorkerKey(value: (/* method */ String, /* repeated */ js.Any) => String | Null): Self = StObject.set(x, "computeWorkerKey", js.Any.fromFunction2(value))
+      inline def setComputeWorkerKey(value: (/* method */ String, /* repeated */ js.Any) => String | Null): Self = StObject.set(x, "computeWorkerKey", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setComputeWorkerKeyUndefined: Self = StObject.set(x, "computeWorkerKey", js.undefined)
+      inline def setComputeWorkerKeyUndefined: Self = StObject.set(x, "computeWorkerKey", js.undefined)
       
-      @scala.inline
-      def setEnableWorkerThreads(value: Boolean): Self = StObject.set(x, "enableWorkerThreads", value.asInstanceOf[js.Any])
+      inline def setEnableWorkerThreads(value: Boolean): Self = StObject.set(x, "enableWorkerThreads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableWorkerThreadsUndefined: Self = StObject.set(x, "enableWorkerThreads", js.undefined)
+      inline def setEnableWorkerThreadsUndefined: Self = StObject.set(x, "enableWorkerThreads", js.undefined)
       
-      @scala.inline
-      def setExposedMethods(value: js.Array[String]): Self = StObject.set(x, "exposedMethods", value.asInstanceOf[js.Any])
+      inline def setExposedMethods(value: js.Array[String]): Self = StObject.set(x, "exposedMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposedMethodsUndefined: Self = StObject.set(x, "exposedMethods", js.undefined)
+      inline def setExposedMethodsUndefined: Self = StObject.set(x, "exposedMethods", js.undefined)
       
-      @scala.inline
-      def setExposedMethodsVarargs(value: String*): Self = StObject.set(x, "exposedMethods", js.Array(value :_*))
+      inline def setExposedMethodsVarargs(value: String*): Self = StObject.set(x, "exposedMethods", js.Array(value :_*))
       
-      @scala.inline
-      def setForkOptions(value: ForkOptions): Self = StObject.set(x, "forkOptions", value.asInstanceOf[js.Any])
+      inline def setForkOptions(value: ForkOptions): Self = StObject.set(x, "forkOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForkOptionsUndefined: Self = StObject.set(x, "forkOptions", js.undefined)
+      inline def setForkOptionsUndefined: Self = StObject.set(x, "forkOptions", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setNumWorkers(value: Double): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
+      inline def setNumWorkers(value: Double): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumWorkersUndefined: Self = StObject.set(x, "numWorkers", js.undefined)
+      inline def setNumWorkersUndefined: Self = StObject.set(x, "numWorkers", js.undefined)
       
-      @scala.inline
-      def setSetupArgs(value: js.Array[js.Any]): Self = StObject.set(x, "setupArgs", value.asInstanceOf[js.Any])
+      inline def setSetupArgs(value: js.Array[js.Any]): Self = StObject.set(x, "setupArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupArgsUndefined: Self = StObject.set(x, "setupArgs", js.undefined)
+      inline def setSetupArgsUndefined: Self = StObject.set(x, "setupArgs", js.undefined)
       
-      @scala.inline
-      def setSetupArgsVarargs(value: js.Any*): Self = StObject.set(x, "setupArgs", js.Array(value :_*))
+      inline def setSetupArgsVarargs(value: js.Any*): Self = StObject.set(x, "setupArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setWorkerPool(
+      inline def setWorkerPool(
         value: (/* workerPath */ String, /* options */ js.UndefOr[WorkerPoolOptions]) => WorkerPoolInterface
       ): Self = StObject.set(x, "WorkerPool", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWorkerPoolUndefined: Self = StObject.set(x, "WorkerPool", js.undefined)
+      inline def setWorkerPoolUndefined: Self = StObject.set(x, "WorkerPool", js.undefined)
     }
   }
   
@@ -165,20 +145,16 @@ object typesMod {
   }
   object MessageChannel {
     
-    @scala.inline
-    def apply(port1: MessagePort, port2: MessagePort): MessageChannel = {
+    inline def apply(port1: MessagePort, port2: MessagePort): MessageChannel = {
       val __obj = js.Dynamic.literal(port1 = port1.asInstanceOf[js.Any], port2 = port2.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageChannel]
     }
     
-    @scala.inline
-    implicit class MessageChannelMutableBuilder[Self <: MessageChannel] (val x: Self) extends AnyVal {
+    extension [Self <: MessageChannel](x: Self) {
       
-      @scala.inline
-      def setPort1(value: MessagePort): Self = StObject.set(x, "port1", value.asInstanceOf[js.Any])
+      inline def setPort1(value: MessagePort): Self = StObject.set(x, "port1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort2(value: MessagePort): Self = StObject.set(x, "port2", value.asInstanceOf[js.Any])
+      inline def setPort2(value: MessagePort): Self = StObject.set(x, "port2", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,11 +171,9 @@ object typesMod {
   trait PARENT_MESSAGE_ERROR extends StObject
   object PARENT_MESSAGE_ERROR {
     
-    @scala.inline
-    def `1`: typings.jestWorker.jestWorkerNumbers.`1` = 1.asInstanceOf[typings.jestWorker.jestWorkerNumbers.`1`]
+    inline def `1`: typings.jestWorker.jestWorkerNumbers.`1` = 1.asInstanceOf[typings.jestWorker.jestWorkerNumbers.`1`]
     
-    @scala.inline
-    def `2`: typings.jestWorker.jestWorkerNumbers.`2` = 2.asInstanceOf[typings.jestWorker.jestWorkerNumbers.`2`]
+    inline def `2`: typings.jestWorker.jestWorkerNumbers.`2` = 2.asInstanceOf[typings.jestWorker.jestWorkerNumbers.`2`]
   }
   
   type ParentMessage = ParentMessageOk | ParentMessageError
@@ -234,8 +208,7 @@ object typesMod {
   }
   object QueueChildMessage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onEnd: (/* err */ Error | Null, /* result */ js.Any) => Unit,
       onStart: /* worker */ WorkerInterface => Unit,
       request: ChildMessage
@@ -244,17 +217,13 @@ object typesMod {
       __obj.asInstanceOf[QueueChildMessage]
     }
     
-    @scala.inline
-    implicit class QueueChildMessageMutableBuilder[Self <: QueueChildMessage] (val x: Self) extends AnyVal {
+    extension [Self <: QueueChildMessage](x: Self) {
       
-      @scala.inline
-      def setOnEnd(value: (/* err */ Error | Null, /* result */ js.Any) => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction2(value))
+      inline def setOnEnd(value: (/* err */ Error | Null, /* result */ js.Any) => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnStart(value: /* worker */ WorkerInterface => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* worker */ WorkerInterface => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequest(value: ChildMessage): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: ChildMessage): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -266,23 +235,18 @@ object typesMod {
   }
   object QueueItem {
     
-    @scala.inline
-    def apply(task: QueueChildMessage): QueueItem = {
+    inline def apply(task: QueueChildMessage): QueueItem = {
       val __obj = js.Dynamic.literal(task = task.asInstanceOf[js.Any], next = null)
       __obj.asInstanceOf[QueueItem]
     }
     
-    @scala.inline
-    implicit class QueueItemMutableBuilder[Self <: QueueItem] (val x: Self) extends AnyVal {
+    extension [Self <: QueueItem](x: Self) {
       
-      @scala.inline
-      def setNext(value: QueueItem): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: QueueItem): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextNull: Self = StObject.set(x, "next", null)
+      inline def setNextNull: Self = StObject.set(x, "next", null)
       
-      @scala.inline
-      def setTask(value: QueueChildMessage): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+      inline def setTask(value: QueueChildMessage): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     }
   }
   
@@ -302,8 +266,7 @@ object typesMod {
   }
   object WorkerInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getStderr: () => ReadableStream | Null,
       getStdout: () => ReadableStream | Null,
       getWorkerId: () => Double,
@@ -315,26 +278,19 @@ object typesMod {
       __obj.asInstanceOf[WorkerInterface]
     }
     
-    @scala.inline
-    implicit class WorkerInterfaceMutableBuilder[Self <: WorkerInterface] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerInterface](x: Self) {
       
-      @scala.inline
-      def setGetStderr(value: () => ReadableStream | Null): Self = StObject.set(x, "getStderr", js.Any.fromFunction0(value))
+      inline def setGetStderr(value: () => ReadableStream | Null): Self = StObject.set(x, "getStderr", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStdout(value: () => ReadableStream | Null): Self = StObject.set(x, "getStdout", js.Any.fromFunction0(value))
+      inline def setGetStdout(value: () => ReadableStream | Null): Self = StObject.set(x, "getStdout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWorkerId(value: () => Double): Self = StObject.set(x, "getWorkerId", js.Any.fromFunction0(value))
+      inline def setGetWorkerId(value: () => Double): Self = StObject.set(x, "getWorkerId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnExit(value: Double => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
+      inline def setOnExit(value: Double => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMessage(value: ParentMessage => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+      inline def setOnMessage(value: ParentMessage => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSend(value: (ChildMessage, OnStart, OnEnd) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
+      inline def setSend(value: (ChildMessage, OnStart, OnEnd) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
     }
   }
   
@@ -352,8 +308,7 @@ object typesMod {
   }
   object WorkerOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       forkOptions: ForkOptions,
       maxRetries: Double,
       setupArgs: js.Array[js.Any],
@@ -364,26 +319,19 @@ object typesMod {
       __obj.asInstanceOf[WorkerOptions]
     }
     
-    @scala.inline
-    implicit class WorkerOptionsMutableBuilder[Self <: WorkerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerOptions](x: Self) {
       
-      @scala.inline
-      def setForkOptions(value: ForkOptions): Self = StObject.set(x, "forkOptions", value.asInstanceOf[js.Any])
+      inline def setForkOptions(value: ForkOptions): Self = StObject.set(x, "forkOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupArgs(value: js.Array[js.Any]): Self = StObject.set(x, "setupArgs", value.asInstanceOf[js.Any])
+      inline def setSetupArgs(value: js.Array[js.Any]): Self = StObject.set(x, "setupArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupArgsVarargs(value: js.Any*): Self = StObject.set(x, "setupArgs", js.Array(value :_*))
+      inline def setSetupArgsVarargs(value: js.Any*): Self = StObject.set(x, "setupArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setWorkerId(value: Double): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
+      inline def setWorkerId(value: Double): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerPath(value: String): Self = StObject.set(x, "workerPath", value.asInstanceOf[js.Any])
+      inline def setWorkerPath(value: String): Self = StObject.set(x, "workerPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -403,8 +351,7 @@ object typesMod {
   }
   object WorkerPoolInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createWorker: WorkerOptions => WorkerInterface,
       end: () => Unit,
       getStderr: () => ReadableStream,
@@ -416,26 +363,19 @@ object typesMod {
       __obj.asInstanceOf[WorkerPoolInterface]
     }
     
-    @scala.inline
-    implicit class WorkerPoolInterfaceMutableBuilder[Self <: WorkerPoolInterface] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerPoolInterface](x: Self) {
       
-      @scala.inline
-      def setCreateWorker(value: WorkerOptions => WorkerInterface): Self = StObject.set(x, "createWorker", js.Any.fromFunction1(value))
+      inline def setCreateWorker(value: WorkerOptions => WorkerInterface): Self = StObject.set(x, "createWorker", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStderr(value: () => ReadableStream): Self = StObject.set(x, "getStderr", js.Any.fromFunction0(value))
+      inline def setGetStderr(value: () => ReadableStream): Self = StObject.set(x, "getStderr", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStdout(value: () => ReadableStream): Self = StObject.set(x, "getStdout", js.Any.fromFunction0(value))
+      inline def setGetStdout(value: () => ReadableStream): Self = StObject.set(x, "getStdout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWorkers(value: () => js.Array[WorkerInterface]): Self = StObject.set(x, "getWorkers", js.Any.fromFunction0(value))
+      inline def setGetWorkers(value: () => js.Array[WorkerInterface]): Self = StObject.set(x, "getWorkers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSend(value: (Double, ChildMessage, OnStart, OnEnd) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction4(value))
+      inline def setSend(value: (Double, ChildMessage, OnStart, OnEnd) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction4(value))
     }
   }
   
@@ -453,8 +393,7 @@ object typesMod {
   }
   object WorkerPoolOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       enableWorkerThreads: Boolean,
       forkOptions: ForkOptions,
       maxRetries: Double,
@@ -465,26 +404,19 @@ object typesMod {
       __obj.asInstanceOf[WorkerPoolOptions]
     }
     
-    @scala.inline
-    implicit class WorkerPoolOptionsMutableBuilder[Self <: WorkerPoolOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerPoolOptions](x: Self) {
       
-      @scala.inline
-      def setEnableWorkerThreads(value: Boolean): Self = StObject.set(x, "enableWorkerThreads", value.asInstanceOf[js.Any])
+      inline def setEnableWorkerThreads(value: Boolean): Self = StObject.set(x, "enableWorkerThreads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForkOptions(value: ForkOptions): Self = StObject.set(x, "forkOptions", value.asInstanceOf[js.Any])
+      inline def setForkOptions(value: ForkOptions): Self = StObject.set(x, "forkOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumWorkers(value: Double): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
+      inline def setNumWorkers(value: Double): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupArgs(value: js.Array[js.Any]): Self = StObject.set(x, "setupArgs", value.asInstanceOf[js.Any])
+      inline def setSetupArgs(value: js.Array[js.Any]): Self = StObject.set(x, "setupArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupArgsVarargs(value: js.Any*): Self = StObject.set(x, "setupArgs", js.Array(value :_*))
+      inline def setSetupArgsVarargs(value: js.Any*): Self = StObject.set(x, "setupArgs", js.Array(value :_*))
     }
   }
 }

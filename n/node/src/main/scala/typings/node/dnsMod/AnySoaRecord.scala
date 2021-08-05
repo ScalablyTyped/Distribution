@@ -14,8 +14,7 @@ trait AnySoaRecord
 }
 object AnySoaRecord {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     expire: Double,
     hostmaster: String,
     minttl: Double,
@@ -29,10 +28,8 @@ object AnySoaRecord {
     __obj.asInstanceOf[AnySoaRecord]
   }
   
-  @scala.inline
-  implicit class AnySoaRecordMutableBuilder[Self <: AnySoaRecord] (val x: Self) extends AnyVal {
+  extension [Self <: AnySoaRecord](x: Self) {
     
-    @scala.inline
-    def setType(value: SOA): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SOA): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

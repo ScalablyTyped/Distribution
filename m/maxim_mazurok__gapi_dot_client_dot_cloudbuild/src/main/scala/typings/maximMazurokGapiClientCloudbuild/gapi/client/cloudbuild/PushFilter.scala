@@ -17,31 +17,23 @@ trait PushFilter extends StObject {
 }
 object PushFilter {
   
-  @scala.inline
-  def apply(): PushFilter = {
+  inline def apply(): PushFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PushFilter]
   }
   
-  @scala.inline
-  implicit class PushFilterMutableBuilder[Self <: PushFilter] (val x: Self) extends AnyVal {
+  extension [Self <: PushFilter](x: Self) {
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+    inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
-    @scala.inline
-    def setInvertRegex(value: Boolean): Self = StObject.set(x, "invertRegex", value.asInstanceOf[js.Any])
+    inline def setInvertRegex(value: Boolean): Self = StObject.set(x, "invertRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertRegexUndefined: Self = StObject.set(x, "invertRegex", js.undefined)
+    inline def setInvertRegexUndefined: Self = StObject.set(x, "invertRegex", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

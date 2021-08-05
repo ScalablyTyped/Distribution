@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpPrintRangeType extends StObject
 object PpPrintRangeType {
   
-  @scala.inline
-  def ppPrintAll: `1` = 1.asInstanceOf[`1`]
+  inline def ppPrintAll: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppPrintCurrent: `3` = 3.asInstanceOf[`3`]
+  inline def ppPrintCurrent: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppPrintNamedSlideShow: `5` = 5.asInstanceOf[`5`]
+  inline def ppPrintNamedSlideShow: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ppPrintSection: `6` = 6.asInstanceOf[`6`]
+  inline def ppPrintSection: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def ppPrintSelection: `2` = 2.asInstanceOf[`2`]
+  inline def ppPrintSelection: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppPrintSlideRange: `4` = 4.asInstanceOf[`4`]
+  inline def ppPrintSlideRange: `4` = 4.asInstanceOf[`4`]
 }

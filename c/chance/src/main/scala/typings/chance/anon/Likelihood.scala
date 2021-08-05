@@ -10,16 +10,13 @@ trait Likelihood extends StObject {
 }
 object Likelihood {
   
-  @scala.inline
-  def apply(likelihood: Double): Likelihood = {
+  inline def apply(likelihood: Double): Likelihood = {
     val __obj = js.Dynamic.literal(likelihood = likelihood.asInstanceOf[js.Any])
     __obj.asInstanceOf[Likelihood]
   }
   
-  @scala.inline
-  implicit class LikelihoodMutableBuilder[Self <: Likelihood] (val x: Self) extends AnyVal {
+  extension [Self <: Likelihood](x: Self) {
     
-    @scala.inline
-    def setLikelihood(value: Double): Self = StObject.set(x, "likelihood", value.asInstanceOf[js.Any])
+    inline def setLikelihood(value: Double): Self = StObject.set(x, "likelihood", value.asInstanceOf[js.Any])
   }
 }

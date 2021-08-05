@@ -62,8 +62,7 @@ trait RichEditDocument extends StObject {
 }
 object RichEditDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abstractNumberingListsInfo: js.Array[AbstractNumberingList],
     activeSubDocument: SubDocument,
     characterStylesInfo: js.Array[CharacterStyle],
@@ -79,55 +78,38 @@ object RichEditDocument {
     __obj.asInstanceOf[RichEditDocument]
   }
   
-  @scala.inline
-  implicit class RichEditDocumentMutableBuilder[Self <: RichEditDocument] (val x: Self) extends AnyVal {
+  extension [Self <: RichEditDocument](x: Self) {
     
-    @scala.inline
-    def setAbstractNumberingListsInfo(value: js.Array[AbstractNumberingList]): Self = StObject.set(x, "abstractNumberingListsInfo", value.asInstanceOf[js.Any])
+    inline def setAbstractNumberingListsInfo(value: js.Array[AbstractNumberingList]): Self = StObject.set(x, "abstractNumberingListsInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbstractNumberingListsInfoVarargs(value: AbstractNumberingList*): Self = StObject.set(x, "abstractNumberingListsInfo", js.Array(value :_*))
+    inline def setAbstractNumberingListsInfoVarargs(value: AbstractNumberingList*): Self = StObject.set(x, "abstractNumberingListsInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setActiveSubDocument(value: SubDocument): Self = StObject.set(x, "activeSubDocument", value.asInstanceOf[js.Any])
+    inline def setActiveSubDocument(value: SubDocument): Self = StObject.set(x, "activeSubDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterStylesInfo(value: js.Array[CharacterStyle]): Self = StObject.set(x, "characterStylesInfo", value.asInstanceOf[js.Any])
+    inline def setCharacterStylesInfo(value: js.Array[CharacterStyle]): Self = StObject.set(x, "characterStylesInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterStylesInfoVarargs(value: CharacterStyle*): Self = StObject.set(x, "characterStylesInfo", js.Array(value :_*))
+    inline def setCharacterStylesInfoVarargs(value: CharacterStyle*): Self = StObject.set(x, "characterStylesInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setGetSubDocumentById(value: Double => SubDocument): Self = StObject.set(x, "getSubDocumentById", js.Any.fromFunction1(value))
+    inline def setGetSubDocumentById(value: Double => SubDocument): Self = StObject.set(x, "getSubDocumentById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMainSubDocument(value: SubDocument): Self = StObject.set(x, "mainSubDocument", value.asInstanceOf[js.Any])
+    inline def setMainSubDocument(value: SubDocument): Self = StObject.set(x, "mainSubDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphStylesInfo(value: js.Array[ParagraphStyle]): Self = StObject.set(x, "paragraphStylesInfo", value.asInstanceOf[js.Any])
+    inline def setParagraphStylesInfo(value: js.Array[ParagraphStyle]): Self = StObject.set(x, "paragraphStylesInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphStylesInfoVarargs(value: ParagraphStyle*): Self = StObject.set(x, "paragraphStylesInfo", js.Array(value :_*))
+    inline def setParagraphStylesInfoVarargs(value: ParagraphStyle*): Self = StObject.set(x, "paragraphStylesInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setSectionsInfo(value: js.Array[Section]): Self = StObject.set(x, "sectionsInfo", value.asInstanceOf[js.Any])
+    inline def setSectionsInfo(value: js.Array[Section]): Self = StObject.set(x, "sectionsInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionsInfoVarargs(value: Section*): Self = StObject.set(x, "sectionsInfo", js.Array(value :_*))
+    inline def setSectionsInfoVarargs(value: Section*): Self = StObject.set(x, "sectionsInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setSpellingInfo(value: SpellingInfo): Self = StObject.set(x, "spellingInfo", value.asInstanceOf[js.Any])
+    inline def setSpellingInfo(value: SpellingInfo): Self = StObject.set(x, "spellingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubDocuments(value: js.Array[SubDocument]): Self = StObject.set(x, "subDocuments", value.asInstanceOf[js.Any])
+    inline def setSubDocuments(value: js.Array[SubDocument]): Self = StObject.set(x, "subDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubDocumentsVarargs(value: SubDocument*): Self = StObject.set(x, "subDocuments", js.Array(value :_*))
+    inline def setSubDocumentsVarargs(value: SubDocument*): Self = StObject.set(x, "subDocuments", js.Array(value :_*))
     
-    @scala.inline
-    def setTableStylesInfo(value: js.Array[TableStyle]): Self = StObject.set(x, "tableStylesInfo", value.asInstanceOf[js.Any])
+    inline def setTableStylesInfo(value: js.Array[TableStyle]): Self = StObject.set(x, "tableStylesInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableStylesInfoVarargs(value: TableStyle*): Self = StObject.set(x, "tableStylesInfo", js.Array(value :_*))
+    inline def setTableStylesInfoVarargs(value: TableStyle*): Self = StObject.set(x, "tableStylesInfo", js.Array(value :_*))
   }
 }

@@ -13,16 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The struct type meta-constructor. */
 object mod {
   
-  @scala.inline
-  def apply(): StructType = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StructType]
-  @scala.inline
-  def apply(fields: js.Array[js.Any]): StructType = ^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any]).asInstanceOf[StructType]
-  @scala.inline
-  def apply(fields: js.Object): StructType = ^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any]).asInstanceOf[StructType]
-  @scala.inline
-  def apply(fields: js.Object, opt: js.Object): StructType = (^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StructType]
-  @scala.inline
-  def apply(fields: Unit, opt: js.Object): StructType = (^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StructType]
+  inline def apply(): StructType = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StructType]
+  inline def apply(fields: js.Array[js.Any]): StructType = ^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any]).asInstanceOf[StructType]
+  inline def apply(fields: js.Object): StructType = ^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any]).asInstanceOf[StructType]
+  inline def apply(fields: js.Object, opt: js.Object): StructType = (^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StructType]
+  inline def apply(fields: Unit, opt: js.Object): StructType = (^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StructType]
   
   @JSImport("ref-struct-di", JSImport.Namespace)
   @js.native

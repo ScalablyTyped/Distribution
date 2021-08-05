@@ -45,55 +45,39 @@ trait Angle extends StObject {
 }
 object Angle {
   
-  @scala.inline
-  def apply(): Angle = {
+  inline def apply(): Angle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Angle]
   }
   
-  @scala.inline
-  implicit class AngleMutableBuilder[Self <: Angle] (val x: Self) extends AnyVal {
+  extension [Self <: Angle](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
-    @scala.inline
-    def setTrue3d(value: Boolean): Self = StObject.set(x, "true3d", value.asInstanceOf[js.Any])
+    inline def setTrue3d(value: Boolean): Self = StObject.set(x, "true3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrue3dUndefined: Self = StObject.set(x, "true3d", js.undefined)
+    inline def setTrue3dUndefined: Self = StObject.set(x, "true3d", js.undefined)
     
-    @scala.inline
-    def `setX-angle`(value: Double): Self = StObject.set(x, "x-angle", value.asInstanceOf[js.Any])
+    inline def `setX-angle`(value: Double): Self = StObject.set(x, "x-angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-angleUndefined`: Self = StObject.set(x, "x-angle", js.undefined)
+    inline def `setX-angleUndefined`: Self = StObject.set(x, "x-angle", js.undefined)
     
-    @scala.inline
-    def `setY-angle`(value: Double): Self = StObject.set(x, "y-angle", value.asInstanceOf[js.Any])
+    inline def `setY-angle`(value: Double): Self = StObject.set(x, "y-angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setY-angleUndefined`: Self = StObject.set(x, "y-angle", js.undefined)
+    inline def `setY-angleUndefined`: Self = StObject.set(x, "y-angle", js.undefined)
     
-    @scala.inline
-    def `setZ-angle`(value: Double): Self = StObject.set(x, "z-angle", value.asInstanceOf[js.Any])
+    inline def `setZ-angle`(value: Double): Self = StObject.set(x, "z-angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setZ-angleUndefined`: Self = StObject.set(x, "z-angle", js.undefined)
+    inline def `setZ-angleUndefined`: Self = StObject.set(x, "z-angle", js.undefined)
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

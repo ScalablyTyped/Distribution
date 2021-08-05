@@ -20,25 +20,19 @@ trait InstallPackageRequest
 }
 object InstallPackageRequest {
   
-  @scala.inline
-  def apply(fileName: Path, packageName: String, projectName: String, projectRootPath: Path): InstallPackageRequest = {
+  inline def apply(fileName: Path, packageName: String, projectName: String, projectRootPath: Path): InstallPackageRequest = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], kind = "installPackage", packageName = packageName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], projectRootPath = projectRootPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallPackageRequest]
   }
   
-  @scala.inline
-  implicit class InstallPackageRequestMutableBuilder[Self <: InstallPackageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstallPackageRequest](x: Self) {
     
-    @scala.inline
-    def setFileName(value: Path): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: Path): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: installPackage): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: installPackage): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectRootPath(value: Path): Self = StObject.set(x, "projectRootPath", value.asInstanceOf[js.Any])
+    inline def setProjectRootPath(value: Path): Self = StObject.set(x, "projectRootPath", value.asInstanceOf[js.Any])
   }
 }

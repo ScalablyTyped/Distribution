@@ -16,23 +16,18 @@ object anon {
   }
   object CombinedEnv {
     
-    @scala.inline
-    def apply(combinedEnv: Env, loadedEnvFiles: LoadedEnvFiles): CombinedEnv = {
+    inline def apply(combinedEnv: Env, loadedEnvFiles: LoadedEnvFiles): CombinedEnv = {
       val __obj = js.Dynamic.literal(combinedEnv = combinedEnv.asInstanceOf[js.Any], loadedEnvFiles = loadedEnvFiles.asInstanceOf[js.Any])
       __obj.asInstanceOf[CombinedEnv]
     }
     
-    @scala.inline
-    implicit class CombinedEnvMutableBuilder[Self <: CombinedEnv] (val x: Self) extends AnyVal {
+    extension [Self <: CombinedEnv](x: Self) {
       
-      @scala.inline
-      def setCombinedEnv(value: Env): Self = StObject.set(x, "combinedEnv", value.asInstanceOf[js.Any])
+      inline def setCombinedEnv(value: Env): Self = StObject.set(x, "combinedEnv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedEnvFiles(value: LoadedEnvFiles): Self = StObject.set(x, "loadedEnvFiles", value.asInstanceOf[js.Any])
+      inline def setLoadedEnvFiles(value: LoadedEnvFiles): Self = StObject.set(x, "loadedEnvFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedEnvFilesVarargs(value: Contents*): Self = StObject.set(x, "loadedEnvFiles", js.Array(value :_*))
+      inline def setLoadedEnvFilesVarargs(value: Contents*): Self = StObject.set(x, "loadedEnvFiles", js.Array(value :_*))
     }
   }
   
@@ -44,20 +39,16 @@ object anon {
   }
   object Contents {
     
-    @scala.inline
-    def apply(contents: String, path: String): Contents = {
+    inline def apply(contents: String, path: String): Contents = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Contents]
     }
     
-    @scala.inline
-    implicit class ContentsMutableBuilder[Self <: Contents] (val x: Self) extends AnyVal {
+    extension [Self <: Contents](x: Self) {
       
-      @scala.inline
-      def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

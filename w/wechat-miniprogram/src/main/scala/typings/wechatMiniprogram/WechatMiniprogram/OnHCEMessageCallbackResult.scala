@@ -24,22 +24,17 @@ trait OnHCEMessageCallbackResult extends StObject {
 }
 object OnHCEMessageCallbackResult {
   
-  @scala.inline
-  def apply(data: ArrayBuffer, messageType: `1` | `2`, reason: Double): OnHCEMessageCallbackResult = {
+  inline def apply(data: ArrayBuffer, messageType: `1` | `2`, reason: Double): OnHCEMessageCallbackResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnHCEMessageCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnHCEMessageCallbackResultMutableBuilder[Self <: OnHCEMessageCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnHCEMessageCallbackResult](x: Self) {
     
-    @scala.inline
-    def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageType(value: `1` | `2`): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: `1` | `2`): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: Double): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Double): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(width: Double, height: Double, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def create(width: Double, height: Double, color: Color, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], color.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(width: Double, height: Double, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(width: Double, height: Double, color: Color, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], color.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def open(source: String, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def open(source: String, `type`: String, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def open(source: Buffer, `type`: String, callback: ImageCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def open(source: Buffer, `type`: Height, callback: ImageCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def open(source: String, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def open(source: String, `type`: String, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def open(source: Buffer, `type`: String, callback: ImageCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def open(source: Buffer, `type`: Height, callback: ImageCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @js.native
   trait Batch extends StObject {
@@ -483,29 +477,22 @@ object mod {
   }
   object ColorObject {
     
-    @scala.inline
-    def apply(b: Double, g: Double, r: Double): ColorObject = {
+    inline def apply(b: Double, g: Double, r: Double): ColorObject = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorObject]
     }
     
-    @scala.inline
-    implicit class ColorObjectMutableBuilder[Self <: ColorObject] (val x: Self) extends AnyVal {
+    extension [Self <: ColorObject](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+      inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -521,35 +508,26 @@ object mod {
   }
   object GifBufferParams {
     
-    @scala.inline
-    def apply(threshold: Double): GifBufferParams = {
+    inline def apply(threshold: Double): GifBufferParams = {
       val __obj = js.Dynamic.literal(threshold = threshold.asInstanceOf[js.Any])
       __obj.asInstanceOf[GifBufferParams]
     }
     
-    @scala.inline
-    implicit class GifBufferParamsMutableBuilder[Self <: GifBufferParams] (val x: Self) extends AnyVal {
+    extension [Self <: GifBufferParams](x: Self) {
       
-      @scala.inline
-      def setColors(value: Double): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Double): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setInterlaced(value: Boolean): Self = StObject.set(x, "interlaced", value.asInstanceOf[js.Any])
+      inline def setInterlaced(value: Boolean): Self = StObject.set(x, "interlaced", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterlacedUndefined: Self = StObject.set(x, "interlaced", js.undefined)
+      inline def setInterlacedUndefined: Self = StObject.set(x, "interlaced", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparency(value: Boolean | String): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
+      inline def setTransparency(value: Boolean | String): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
+      inline def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
     }
   }
   
@@ -1034,20 +1012,16 @@ object mod {
   }
   object JpegBufferParams {
     
-    @scala.inline
-    def apply(): JpegBufferParams = {
+    inline def apply(): JpegBufferParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JpegBufferParams]
     }
     
-    @scala.inline
-    implicit class JpegBufferParamsMutableBuilder[Self <: JpegBufferParams] (val x: Self) extends AnyVal {
+    extension [Self <: JpegBufferParams](x: Self) {
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     }
   }
   
@@ -1061,32 +1035,24 @@ object mod {
   }
   object PngBufferParams {
     
-    @scala.inline
-    def apply(): PngBufferParams = {
+    inline def apply(): PngBufferParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PngBufferParams]
     }
     
-    @scala.inline
-    implicit class PngBufferParamsMutableBuilder[Self <: PngBufferParams] (val x: Self) extends AnyVal {
+    extension [Self <: PngBufferParams](x: Self) {
       
-      @scala.inline
-      def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setInterlaced(value: Boolean): Self = StObject.set(x, "interlaced", value.asInstanceOf[js.Any])
+      inline def setInterlaced(value: Boolean): Self = StObject.set(x, "interlaced", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterlacedUndefined: Self = StObject.set(x, "interlaced", js.undefined)
+      inline def setInterlacedUndefined: Self = StObject.set(x, "interlaced", js.undefined)
       
-      @scala.inline
-      def setTransparency(value: Boolean | String): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
+      inline def setTransparency(value: Boolean | String): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
+      inline def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
     }
   }
 }

@@ -15,8 +15,7 @@ trait Unit
 }
 object Unit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -39,13 +38,10 @@ object Unit {
     __obj.asInstanceOf[Unit]
   }
   
-  @scala.inline
-  implicit class UnitMutableBuilder[Self <: Unit] (val x: Self) extends AnyVal {
+  extension [Self <: Unit](x: Self) {
     
-    @scala.inline
-    def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVal(value: Double): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: Double): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

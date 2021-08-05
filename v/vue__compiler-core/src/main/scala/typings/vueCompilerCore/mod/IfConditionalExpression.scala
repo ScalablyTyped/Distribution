@@ -16,8 +16,7 @@ trait IfConditionalExpression
 }
 object IfConditionalExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternate: BlockCodegenNode | IfConditionalExpression,
     consequent: BlockCodegenNode,
     loc: SourceLocation,
@@ -29,13 +28,10 @@ object IfConditionalExpression {
     __obj.asInstanceOf[IfConditionalExpression]
   }
   
-  @scala.inline
-  implicit class IfConditionalExpressionMutableBuilder[Self <: IfConditionalExpression] (val x: Self) extends AnyVal {
+  extension [Self <: IfConditionalExpression](x: Self) {
     
-    @scala.inline
-    def setAlternate(value: BlockCodegenNode | IfConditionalExpression): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
+    inline def setAlternate(value: BlockCodegenNode | IfConditionalExpression): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsequent(value: BlockCodegenNode): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
+    inline def setConsequent(value: BlockCodegenNode): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
   }
 }

@@ -31,14 +31,11 @@ object typingsSharedMod {
   trait CarbonInputSize extends StObject
   object CarbonInputSize {
     
-    @scala.inline
-    def lg: typings.carbonComponentsReact.carbonComponentsReactStrings.lg = "lg".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.lg]
+    inline def lg: typings.carbonComponentsReact.carbonComponentsReactStrings.lg = "lg".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.lg]
     
-    @scala.inline
-    def sm: typings.carbonComponentsReact.carbonComponentsReactStrings.sm = "sm".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.sm]
+    inline def sm: typings.carbonComponentsReact.carbonComponentsReactStrings.sm = "sm".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.sm]
     
-    @scala.inline
-    def xl: typings.carbonComponentsReact.carbonComponentsReactStrings.xl = "xl".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.xl]
+    inline def xl: typings.carbonComponentsReact.carbonComponentsReactStrings.xl = "xl".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.xl]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -49,14 +46,11 @@ object typingsSharedMod {
   trait CarbonSize extends StObject
   object CarbonSize {
     
-    @scala.inline
-    def lg: typings.carbonComponentsReact.carbonComponentsReactStrings.lg = "lg".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.lg]
+    inline def lg: typings.carbonComponentsReact.carbonComponentsReactStrings.lg = "lg".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.lg]
     
-    @scala.inline
-    def sm: typings.carbonComponentsReact.carbonComponentsReactStrings.sm = "sm".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.sm]
+    inline def sm: typings.carbonComponentsReact.carbonComponentsReactStrings.sm = "sm".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.sm]
     
-    @scala.inline
-    def xs: typings.carbonComponentsReact.carbonComponentsReactStrings.xs = "xs".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.xs]
+    inline def xs: typings.carbonComponentsReact.carbonComponentsReactStrings.xs = "xs".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.xs]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -68,17 +62,13 @@ object typingsSharedMod {
   trait Direction extends StObject
   object Direction {
     
-    @scala.inline
-    def bottom: typings.carbonComponentsReact.carbonComponentsReactStrings.bottom = "bottom".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.bottom]
+    inline def bottom: typings.carbonComponentsReact.carbonComponentsReactStrings.bottom = "bottom".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.bottom]
     
-    @scala.inline
-    def left: typings.carbonComponentsReact.carbonComponentsReactStrings.left = "left".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.left]
+    inline def left: typings.carbonComponentsReact.carbonComponentsReactStrings.left = "left".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.left]
     
-    @scala.inline
-    def right: typings.carbonComponentsReact.carbonComponentsReactStrings.right = "right".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.right]
+    inline def right: typings.carbonComponentsReact.carbonComponentsReactStrings.right = "right".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.right]
     
-    @scala.inline
-    def top: typings.carbonComponentsReact.carbonComponentsReactStrings.top = "top".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.top]
+    inline def top: typings.carbonComponentsReact.carbonComponentsReactStrings.top = "top".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.top]
   }
   
   trait DownshiftTypedProps[ItemType] extends StObject {
@@ -87,20 +77,16 @@ object typingsSharedMod {
   }
   object DownshiftTypedProps {
     
-    @scala.inline
-    def apply[ItemType](): DownshiftTypedProps[ItemType] = {
+    inline def apply[ItemType](): DownshiftTypedProps[ItemType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DownshiftTypedProps[ItemType]]
     }
     
-    @scala.inline
-    implicit class DownshiftTypedPropsMutableBuilder[Self <: DownshiftTypedProps[?], ItemType] (val x: Self & DownshiftTypedProps[ItemType]) extends AnyVal {
+    extension [Self <: DownshiftTypedProps[?], ItemType](x: Self & DownshiftTypedProps[ItemType]) {
       
-      @scala.inline
-      def setItemToString(value: /* item */ ItemType => String): Self = StObject.set(x, "itemToString", js.Any.fromFunction1(value))
+      inline def setItemToString(value: /* item */ ItemType => String): Self = StObject.set(x, "itemToString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItemToStringUndefined: Self = StObject.set(x, "itemToString", js.undefined)
+      inline def setItemToStringUndefined: Self = StObject.set(x, "itemToString", js.undefined)
     }
   }
   
@@ -119,11 +105,9 @@ object typingsSharedMod {
   trait HorizontalDirection extends StObject
   object HorizontalDirection {
     
-    @scala.inline
-    def left: typings.carbonComponentsReact.carbonComponentsReactStrings.left = "left".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.left]
+    inline def left: typings.carbonComponentsReact.carbonComponentsReactStrings.left = "left".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.left]
     
-    @scala.inline
-    def right: typings.carbonComponentsReact.carbonComponentsReactStrings.right = "right".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.right]
+    inline def right: typings.carbonComponentsReact.carbonComponentsReactStrings.right = "right".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.right]
   }
   
   trait InternationalProps[MID] extends StObject {
@@ -132,20 +116,16 @@ object typingsSharedMod {
   }
   object InternationalProps {
     
-    @scala.inline
-    def apply[MID](): InternationalProps[MID] = {
+    inline def apply[MID](): InternationalProps[MID] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InternationalProps[MID]]
     }
     
-    @scala.inline
-    implicit class InternationalPropsMutableBuilder[Self <: InternationalProps[?], MID] (val x: Self & InternationalProps[MID]) extends AnyVal {
+    extension [Self <: InternationalProps[?], MID](x: Self & InternationalProps[MID]) {
       
-      @scala.inline
-      def setTranslateWithId(value: /* messageId */ MID => String): Self = StObject.set(x, "translateWithId", js.Any.fromFunction1(value))
+      inline def setTranslateWithId(value: /* messageId */ MID => String): Self = StObject.set(x, "translateWithId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTranslateWithIdUndefined: Self = StObject.set(x, "translateWithId", js.undefined)
+      inline def setTranslateWithIdUndefined: Self = StObject.set(x, "translateWithId", js.undefined)
     }
   }
   
@@ -164,26 +144,20 @@ object typingsSharedMod {
   }
   object MenuOffsetData {
     
-    @scala.inline
-    def apply(): MenuOffsetData = {
+    inline def apply(): MenuOffsetData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuOffsetData]
     }
     
-    @scala.inline
-    implicit class MenuOffsetDataMutableBuilder[Self <: MenuOffsetData] (val x: Self) extends AnyVal {
+    extension [Self <: MenuOffsetData](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -211,20 +185,16 @@ object typingsSharedMod {
   }
   object RenderIconProps {
     
-    @scala.inline
-    def apply[P](): RenderIconProps[P] = {
+    inline def apply[P](): RenderIconProps[P] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenderIconProps[P]]
     }
     
-    @scala.inline
-    implicit class RenderIconPropsMutableBuilder[Self <: RenderIconProps[?], P] (val x: Self & RenderIconProps[P]) extends AnyVal {
+    extension [Self <: RenderIconProps[?], P](x: Self & RenderIconProps[P]) {
       
-      @scala.inline
-      def setRenderIcon(value: ComponentType[P]): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
+      inline def setRenderIcon(value: ComponentType[P]): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderIconUndefined: Self = StObject.set(x, "renderIcon", js.undefined)
+      inline def setRenderIconUndefined: Self = StObject.set(x, "renderIcon", js.undefined)
     }
   }
   
@@ -234,17 +204,14 @@ object typingsSharedMod {
   }
   object RequiresChildrenProps {
     
-    @scala.inline
-    def apply[T](children: NonNullable[T]): RequiresChildrenProps[T] = {
+    inline def apply[T](children: NonNullable[T]): RequiresChildrenProps[T] = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiresChildrenProps[T]]
     }
     
-    @scala.inline
-    implicit class RequiresChildrenPropsMutableBuilder[Self <: RequiresChildrenProps[?], T] (val x: Self & RequiresChildrenProps[T]) extends AnyVal {
+    extension [Self <: RequiresChildrenProps[?], T](x: Self & RequiresChildrenProps[T]) {
       
-      @scala.inline
-      def setChildren(value: NonNullable[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: NonNullable[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     }
   }
   
@@ -254,17 +221,14 @@ object typingsSharedMod {
   }
   object RequiresIdProps {
     
-    @scala.inline
-    def apply[T](id: NonNullable[T]): RequiresIdProps[T] = {
+    inline def apply[T](id: NonNullable[T]): RequiresIdProps[T] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiresIdProps[T]]
     }
     
-    @scala.inline
-    implicit class RequiresIdPropsMutableBuilder[Self <: RequiresIdProps[?], T] (val x: Self & RequiresIdProps[T]) extends AnyVal {
+    extension [Self <: RequiresIdProps[?], T](x: Self & RequiresIdProps[T]) {
       
-      @scala.inline
-      def setId(value: NonNullable[T]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: NonNullable[T]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -276,20 +240,16 @@ object typingsSharedMod {
   }
   object SideNavSharedProps {
     
-    @scala.inline
-    def apply(): SideNavSharedProps = {
+    inline def apply(): SideNavSharedProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SideNavSharedProps]
     }
     
-    @scala.inline
-    implicit class SideNavSharedPropsMutableBuilder[Self <: SideNavSharedProps] (val x: Self) extends AnyVal {
+    extension [Self <: SideNavSharedProps](x: Self) {
       
-      @scala.inline
-      def setIsSideNavExpanded(value: Boolean): Self = StObject.set(x, "isSideNavExpanded", value.asInstanceOf[js.Any])
+      inline def setIsSideNavExpanded(value: Boolean): Self = StObject.set(x, "isSideNavExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSideNavExpandedUndefined: Self = StObject.set(x, "isSideNavExpanded", js.undefined)
+      inline def setIsSideNavExpandedUndefined: Self = StObject.set(x, "isSideNavExpanded", js.undefined)
     }
   }
   
@@ -299,20 +259,16 @@ object typingsSharedMod {
   }
   object SideNavSizingProps {
     
-    @scala.inline
-    def apply(): SideNavSizingProps = {
+    inline def apply(): SideNavSizingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SideNavSizingProps]
     }
     
-    @scala.inline
-    implicit class SideNavSizingPropsMutableBuilder[Self <: SideNavSizingProps] (val x: Self) extends AnyVal {
+    extension [Self <: SideNavSizingProps](x: Self) {
       
-      @scala.inline
-      def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+      inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
     }
   }
   
@@ -322,20 +278,16 @@ object typingsSharedMod {
   }
   object SizingProps {
     
-    @scala.inline
-    def apply(): SizingProps = {
+    inline def apply(): SizingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SizingProps]
     }
     
-    @scala.inline
-    implicit class SizingPropsMutableBuilder[Self <: SizingProps] (val x: Self) extends AnyVal {
+    extension [Self <: SizingProps](x: Self) {
       
-      @scala.inline
-      def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
     }
   }
   
@@ -347,14 +299,11 @@ object typingsSharedMod {
   trait TooltipAlignment extends StObject
   object TooltipAlignment {
     
-    @scala.inline
-    def center: typings.carbonComponentsReact.carbonComponentsReactStrings.center = "center".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.center]
+    inline def center: typings.carbonComponentsReact.carbonComponentsReactStrings.center = "center".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.center]
     
-    @scala.inline
-    def end: typings.carbonComponentsReact.carbonComponentsReactStrings.end = "end".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.end]
+    inline def end: typings.carbonComponentsReact.carbonComponentsReactStrings.end = "end".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.end]
     
-    @scala.inline
-    def start: typings.carbonComponentsReact.carbonComponentsReactStrings.start = "start".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.start]
+    inline def start: typings.carbonComponentsReact.carbonComponentsReactStrings.start = "start".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.start]
   }
   
   type TooltipPosition = Direction
@@ -366,10 +315,8 @@ object typingsSharedMod {
   trait VerticalDirection extends StObject
   object VerticalDirection {
     
-    @scala.inline
-    def bottom: typings.carbonComponentsReact.carbonComponentsReactStrings.bottom = "bottom".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.bottom]
+    inline def bottom: typings.carbonComponentsReact.carbonComponentsReactStrings.bottom = "bottom".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.bottom]
     
-    @scala.inline
-    def top: typings.carbonComponentsReact.carbonComponentsReactStrings.top = "top".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.top]
+    inline def top: typings.carbonComponentsReact.carbonComponentsReactStrings.top = "top".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.top]
   }
 }

@@ -18,8 +18,7 @@ trait DeviceWatcherEvent extends StObject {
 }
 object DeviceWatcherEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceInformation: DeviceInformation,
     deviceInformationUpdate: DeviceInformationUpdate,
     kind: DeviceWatcherEventKind
@@ -28,16 +27,12 @@ object DeviceWatcherEvent {
     __obj.asInstanceOf[DeviceWatcherEvent]
   }
   
-  @scala.inline
-  implicit class DeviceWatcherEventMutableBuilder[Self <: DeviceWatcherEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceWatcherEvent](x: Self) {
     
-    @scala.inline
-    def setDeviceInformation(value: DeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
+    inline def setDeviceInformation(value: DeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceInformationUpdate(value: DeviceInformationUpdate): Self = StObject.set(x, "deviceInformationUpdate", value.asInstanceOf[js.Any])
+    inline def setDeviceInformationUpdate(value: DeviceInformationUpdate): Self = StObject.set(x, "deviceInformationUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: DeviceWatcherEventKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: DeviceWatcherEventKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

@@ -11,22 +11,17 @@ trait CommentCollectionUpdateData extends StObject {
 }
 object CommentCollectionUpdateData {
   
-  @scala.inline
-  def apply(): CommentCollectionUpdateData = {
+  inline def apply(): CommentCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommentCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class CommentCollectionUpdateDataMutableBuilder[Self <: CommentCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: CommentCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[CommentData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[CommentData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: CommentData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: CommentData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

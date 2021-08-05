@@ -25,12 +25,9 @@ object DrawerActions {
   @js.native
   val TOGGLE_DRAWER: NavigationSlashTOGGLE_DRAWER = js.native
   
-  @scala.inline
-  def closeDrawer(): NavigationCloseDrawerAction = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[NavigationCloseDrawerAction]
+  inline def closeDrawer(): NavigationCloseDrawerAction = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[NavigationCloseDrawerAction]
   
-  @scala.inline
-  def openDrawer(): NavigationOpenDrawerAction = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[NavigationOpenDrawerAction]
+  inline def openDrawer(): NavigationOpenDrawerAction = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[NavigationOpenDrawerAction]
   
-  @scala.inline
-  def toggleDrawer(): NavigationToggleDrawerAction = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[NavigationToggleDrawerAction]
+  inline def toggleDrawer(): NavigationToggleDrawerAction = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[NavigationToggleDrawerAction]
 }

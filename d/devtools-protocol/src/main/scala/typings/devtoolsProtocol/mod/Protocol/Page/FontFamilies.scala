@@ -43,55 +43,39 @@ trait FontFamilies extends StObject {
 }
 object FontFamilies {
   
-  @scala.inline
-  def apply(): FontFamilies = {
+  inline def apply(): FontFamilies = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontFamilies]
   }
   
-  @scala.inline
-  implicit class FontFamiliesMutableBuilder[Self <: FontFamilies] (val x: Self) extends AnyVal {
+  extension [Self <: FontFamilies](x: Self) {
     
-    @scala.inline
-    def setCursive(value: String): Self = StObject.set(x, "cursive", value.asInstanceOf[js.Any])
+    inline def setCursive(value: String): Self = StObject.set(x, "cursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursiveUndefined: Self = StObject.set(x, "cursive", js.undefined)
+    inline def setCursiveUndefined: Self = StObject.set(x, "cursive", js.undefined)
     
-    @scala.inline
-    def setFantasy(value: String): Self = StObject.set(x, "fantasy", value.asInstanceOf[js.Any])
+    inline def setFantasy(value: String): Self = StObject.set(x, "fantasy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFantasyUndefined: Self = StObject.set(x, "fantasy", js.undefined)
+    inline def setFantasyUndefined: Self = StObject.set(x, "fantasy", js.undefined)
     
-    @scala.inline
-    def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+    inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
-    @scala.inline
-    def setPictograph(value: String): Self = StObject.set(x, "pictograph", value.asInstanceOf[js.Any])
+    inline def setPictograph(value: String): Self = StObject.set(x, "pictograph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictographUndefined: Self = StObject.set(x, "pictograph", js.undefined)
+    inline def setPictographUndefined: Self = StObject.set(x, "pictograph", js.undefined)
     
-    @scala.inline
-    def setSansSerif(value: String): Self = StObject.set(x, "sansSerif", value.asInstanceOf[js.Any])
+    inline def setSansSerif(value: String): Self = StObject.set(x, "sansSerif", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSansSerifUndefined: Self = StObject.set(x, "sansSerif", js.undefined)
+    inline def setSansSerifUndefined: Self = StObject.set(x, "sansSerif", js.undefined)
     
-    @scala.inline
-    def setSerif(value: String): Self = StObject.set(x, "serif", value.asInstanceOf[js.Any])
+    inline def setSerif(value: String): Self = StObject.set(x, "serif", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerifUndefined: Self = StObject.set(x, "serif", js.undefined)
+    inline def setSerifUndefined: Self = StObject.set(x, "serif", js.undefined)
     
-    @scala.inline
-    def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
+    inline def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
   }
 }

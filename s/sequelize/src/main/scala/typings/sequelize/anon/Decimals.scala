@@ -12,22 +12,17 @@ trait Decimals extends StObject {
 }
 object Decimals {
   
-  @scala.inline
-  def apply(length: Double): Decimals = {
+  inline def apply(length: Double): Decimals = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[Decimals]
   }
   
-  @scala.inline
-  implicit class DecimalsMutableBuilder[Self <: Decimals] (val x: Self) extends AnyVal {
+  extension [Self <: Decimals](x: Self) {
     
-    @scala.inline
-    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+    inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+    inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

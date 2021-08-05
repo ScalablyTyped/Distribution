@@ -19,8 +19,7 @@ trait KnockoutObservableArray[T] extends StObject {
 }
 object KnockoutObservableArray {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     setSourceKey: String => Unit,
     sortDescending: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any,
     sortKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
@@ -29,19 +28,15 @@ object KnockoutObservableArray {
     __obj.asInstanceOf[KnockoutObservableArray[T]]
   }
   
-  @scala.inline
-  implicit class KnockoutObservableArrayMutableBuilder[Self <: KnockoutObservableArray[?], T] (val x: Self & KnockoutObservableArray[T]) extends AnyVal {
+  extension [Self <: KnockoutObservableArray[?], T](x: Self & KnockoutObservableArray[T]) {
     
-    @scala.inline
-    def setSetSourceKey(value: String => Unit): Self = StObject.set(x, "setSourceKey", js.Any.fromFunction1(value))
+    inline def setSetSourceKey(value: String => Unit): Self = StObject.set(x, "setSourceKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortDescending(
+    inline def setSortDescending(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
     ): Self = StObject.set(x, "sortDescending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortKey(
+    inline def setSortKey(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
     ): Self = StObject.set(x, "sortKey", value.asInstanceOf[js.Any])
   }

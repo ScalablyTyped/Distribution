@@ -26,8 +26,7 @@ trait ModuleResolutionHost extends StObject {
 }
 object ModuleResolutionHost {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fileExists: java.lang.String => Boolean,
     readFile: java.lang.String => js.UndefOr[java.lang.String]
   ): ModuleResolutionHost = {
@@ -35,43 +34,30 @@ object ModuleResolutionHost {
     __obj.asInstanceOf[ModuleResolutionHost]
   }
   
-  @scala.inline
-  implicit class ModuleResolutionHostMutableBuilder[Self <: ModuleResolutionHost] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleResolutionHost](x: Self) {
     
-    @scala.inline
-    def setDirectoryExists(value: /* directoryName */ java.lang.String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
+    inline def setDirectoryExists(value: /* directoryName */ java.lang.String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDirectoryExistsUndefined: Self = StObject.set(x, "directoryExists", js.undefined)
+    inline def setDirectoryExistsUndefined: Self = StObject.set(x, "directoryExists", js.undefined)
     
-    @scala.inline
-    def setFileExists(value: java.lang.String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
+    inline def setFileExists(value: java.lang.String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
+    inline def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentDirectoryUndefined: Self = StObject.set(x, "getCurrentDirectory", js.undefined)
+    inline def setGetCurrentDirectoryUndefined: Self = StObject.set(x, "getCurrentDirectory", js.undefined)
     
-    @scala.inline
-    def setGetDirectories(value: /* path */ java.lang.String => js.Array[java.lang.String]): Self = StObject.set(x, "getDirectories", js.Any.fromFunction1(value))
+    inline def setGetDirectories(value: /* path */ java.lang.String => js.Array[java.lang.String]): Self = StObject.set(x, "getDirectories", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDirectoriesUndefined: Self = StObject.set(x, "getDirectories", js.undefined)
+    inline def setGetDirectoriesUndefined: Self = StObject.set(x, "getDirectories", js.undefined)
     
-    @scala.inline
-    def setReadFile(value: java.lang.String => js.UndefOr[java.lang.String]): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
+    inline def setReadFile(value: java.lang.String => js.UndefOr[java.lang.String]): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRealpath(value: /* path */ java.lang.String => java.lang.String): Self = StObject.set(x, "realpath", js.Any.fromFunction1(value))
+    inline def setRealpath(value: /* path */ java.lang.String => java.lang.String): Self = StObject.set(x, "realpath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
+    inline def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
     
-    @scala.inline
-    def setTrace(value: /* s */ java.lang.String => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+    inline def setTrace(value: /* s */ java.lang.String => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+    inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
   }
 }

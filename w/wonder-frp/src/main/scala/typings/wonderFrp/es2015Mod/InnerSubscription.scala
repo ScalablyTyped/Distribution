@@ -24,13 +24,11 @@ object InnerSubscription {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(
+  inline def create(
     subject: typings.wonderFrp.subjectGeneratorSubjectMod.GeneratorSubject,
     observer: typings.wonderFrp.coreObserverMod.Observer
   ): typings.wonderFrp.disposableInnerSubscriptionMod.InnerSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(subject.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.disposableInnerSubscriptionMod.InnerSubscription]
-  @scala.inline
-  def create(
+  inline def create(
     subject: typings.wonderFrp.subjectSubjectMod.Subject,
     observer: typings.wonderFrp.coreObserverMod.Observer
   ): typings.wonderFrp.disposableInnerSubscriptionMod.InnerSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(subject.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.disposableInnerSubscriptionMod.InnerSubscription]

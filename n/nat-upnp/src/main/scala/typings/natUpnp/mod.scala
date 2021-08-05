@@ -24,8 +24,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createClient(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[Client]
+  inline def createClient(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[Client]
   
   object device {
     
@@ -37,8 +36,7 @@ object mod {
       * Create a gateway device object with the specified url
       * @param url
       */
-    @scala.inline
-    def create(url: String): Device_ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any]).asInstanceOf[Device_]
+    inline def create(url: String): Device_ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any]).asInstanceOf[Device_]
   }
   
   object ssdp {
@@ -50,8 +48,7 @@ object mod {
     /**
       * Create a Simple Service Discovery Protocol client
       */
-    @scala.inline
-    def create(): Ssdp_ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Ssdp_]
+    inline def create(): Ssdp_ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Ssdp_]
   }
   
   object utils {
@@ -60,8 +57,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getNamespace(data: _empty, uri: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNamespace")(data.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getNamespace(data: _empty, uri: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNamespace")(data.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   type CB[T] = js.Function2[/* err */ Error | Null, /* res */ js.UndefOr[T], Unit]
@@ -144,8 +140,7 @@ object mod {
   }
   object Device_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getService: (js.Array[String], CB[ControlURL]) => Unit,
       parseDescription: `0` => Devices,
       run: (String, js.Array[String], CB[RawResponse]) => Unit
@@ -154,17 +149,13 @@ object mod {
       __obj.asInstanceOf[Device_]
     }
     
-    @scala.inline
-    implicit class Device_MutableBuilder[Self <: Device_] (val x: Self) extends AnyVal {
+    extension [Self <: Device_](x: Self) {
       
-      @scala.inline
-      def setGetService(value: (js.Array[String], CB[ControlURL]) => Unit): Self = StObject.set(x, "getService", js.Any.fromFunction2(value))
+      inline def setGetService(value: (js.Array[String], CB[ControlURL]) => Unit): Self = StObject.set(x, "getService", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParseDescription(value: `0` => Devices): Self = StObject.set(x, "parseDescription", js.Any.fromFunction1(value))
+      inline def setParseDescription(value: `0` => Devices): Self = StObject.set(x, "parseDescription", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRun(value: (String, js.Array[String], CB[RawResponse]) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
+      inline def setRun(value: (String, js.Array[String], CB[RawResponse]) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
     }
   }
   
@@ -176,26 +167,20 @@ object mod {
   }
   object GetMappingOpts {
     
-    @scala.inline
-    def apply(): GetMappingOpts = {
+    inline def apply(): GetMappingOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetMappingOpts]
     }
     
-    @scala.inline
-    implicit class GetMappingOptsMutableBuilder[Self <: GetMappingOpts] (val x: Self) extends AnyVal {
+    extension [Self <: GetMappingOpts](x: Self) {
       
-      @scala.inline
-      def setDescription(value: RegExp | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: RegExp | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+      inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     }
   }
   
@@ -217,8 +202,7 @@ object mod {
   }
   object Mapping {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       enabled: Boolean,
       local: Boolean,
@@ -232,29 +216,21 @@ object mod {
       __obj.asInstanceOf[Mapping]
     }
     
-    @scala.inline
-    implicit class MappingMutableBuilder[Self <: Mapping] (val x: Self) extends AnyVal {
+    extension [Self <: Mapping](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivate(value: Port): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: Port): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic(value: Port): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Port): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -268,26 +244,20 @@ object mod {
   }
   object NewPortMappingOpts {
     
-    @scala.inline
-    def apply(): NewPortMappingOpts = {
+    inline def apply(): NewPortMappingOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NewPortMappingOpts]
     }
     
-    @scala.inline
-    implicit class NewPortMappingOptsMutableBuilder[Self <: NewPortMappingOpts] (val x: Self) extends AnyVal {
+    extension [Self <: NewPortMappingOpts](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
   
@@ -323,8 +293,7 @@ object mod {
   }
   object RawDevice {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       UDN: String,
       UPC: String,
       deviceType: String,
@@ -342,56 +311,39 @@ object mod {
       __obj.asInstanceOf[RawDevice]
     }
     
-    @scala.inline
-    implicit class RawDeviceMutableBuilder[Self <: RawDevice] (val x: Self) extends AnyVal {
+    extension [Self <: RawDevice](x: Self) {
       
-      @scala.inline
-      def setDeviceList(value: Device): Self = StObject.set(x, "deviceList", value.asInstanceOf[js.Any])
+      inline def setDeviceList(value: Device): Self = StObject.set(x, "deviceList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceListUndefined: Self = StObject.set(x, "deviceList", js.undefined)
+      inline def setDeviceListUndefined: Self = StObject.set(x, "deviceList", js.undefined)
       
-      @scala.inline
-      def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+      inline def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+      inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManufacturerURL(value: String): Self = StObject.set(x, "manufacturerURL", value.asInstanceOf[js.Any])
+      inline def setManufacturerURL(value: String): Self = StObject.set(x, "manufacturerURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelDescription(value: String): Self = StObject.set(x, "modelDescription", value.asInstanceOf[js.Any])
+      inline def setModelDescription(value: String): Self = StObject.set(x, "modelDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+      inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
+      inline def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelURL(value: String): Self = StObject.set(x, "modelURL", value.asInstanceOf[js.Any])
+      inline def setModelURL(value: String): Self = StObject.set(x, "modelURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresentationURL(value: String): Self = StObject.set(x, "presentationURL", value.asInstanceOf[js.Any])
+      inline def setPresentationURL(value: String): Self = StObject.set(x, "presentationURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+      inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceList(value: Service): Self = StObject.set(x, "serviceList", value.asInstanceOf[js.Any])
+      inline def setServiceList(value: Service): Self = StObject.set(x, "serviceList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceListUndefined: Self = StObject.set(x, "serviceList", js.undefined)
+      inline def setServiceListUndefined: Self = StObject.set(x, "serviceList", js.undefined)
       
-      @scala.inline
-      def setUDN(value: String): Self = StObject.set(x, "UDN", value.asInstanceOf[js.Any])
+      inline def setUDN(value: String): Self = StObject.set(x, "UDN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUPC(value: String): Self = StObject.set(x, "UPC", value.asInstanceOf[js.Any])
+      inline def setUPC(value: String): Self = StObject.set(x, "UPC", value.asInstanceOf[js.Any])
     }
   }
   
@@ -411,38 +363,28 @@ object mod {
   }
   object RawService {
     
-    @scala.inline
-    def apply(serviceId: String, serviceType: String): RawService = {
+    inline def apply(serviceId: String, serviceType: String): RawService = {
       val __obj = js.Dynamic.literal(serviceId = serviceId.asInstanceOf[js.Any], serviceType = serviceType.asInstanceOf[js.Any])
       __obj.asInstanceOf[RawService]
     }
     
-    @scala.inline
-    implicit class RawServiceMutableBuilder[Self <: RawService] (val x: Self) extends AnyVal {
+    extension [Self <: RawService](x: Self) {
       
-      @scala.inline
-      def setControlURL(value: String): Self = StObject.set(x, "controlURL", value.asInstanceOf[js.Any])
+      inline def setControlURL(value: String): Self = StObject.set(x, "controlURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlURLUndefined: Self = StObject.set(x, "controlURL", js.undefined)
+      inline def setControlURLUndefined: Self = StObject.set(x, "controlURL", js.undefined)
       
-      @scala.inline
-      def setEventSubURL(value: String): Self = StObject.set(x, "eventSubURL", value.asInstanceOf[js.Any])
+      inline def setEventSubURL(value: String): Self = StObject.set(x, "eventSubURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSubURLUndefined: Self = StObject.set(x, "eventSubURL", js.undefined)
+      inline def setEventSubURLUndefined: Self = StObject.set(x, "eventSubURL", js.undefined)
       
-      @scala.inline
-      def setSCPDURL(value: String): Self = StObject.set(x, "SCPDURL", value.asInstanceOf[js.Any])
+      inline def setSCPDURL(value: String): Self = StObject.set(x, "SCPDURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCPDURLUndefined: Self = StObject.set(x, "SCPDURL", js.undefined)
+      inline def setSCPDURLUndefined: Self = StObject.set(x, "SCPDURL", js.undefined)
       
-      @scala.inline
-      def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+      inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+      inline def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -474,38 +416,28 @@ object mod {
   }
   object StandardOpts {
     
-    @scala.inline
-    def apply(): StandardOpts = {
+    inline def apply(): StandardOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StandardOpts]
     }
     
-    @scala.inline
-    implicit class StandardOptsMutableBuilder[Self <: StandardOpts] (val x: Self) extends AnyVal {
+    extension [Self <: StandardOpts](x: Self) {
       
-      @scala.inline
-      def setPrivate(value: Double | Host): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: Double | Host): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateNull: Self = StObject.set(x, "private", null)
+      inline def setPrivateNull: Self = StObject.set(x, "private", null)
       
-      @scala.inline
-      def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+      inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setPublic(value: Double | Host): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Double | Host): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicNull: Self = StObject.set(x, "public", null)
+      inline def setPublicNull: Self = StObject.set(x, "public", null)
       
-      @scala.inline
-      def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
     }
   }
 }

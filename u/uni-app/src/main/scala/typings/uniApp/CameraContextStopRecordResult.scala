@@ -18,25 +18,19 @@ trait CameraContextStopRecordResult extends StObject {
 }
 object CameraContextStopRecordResult {
   
-  @scala.inline
-  def apply(): CameraContextStopRecordResult = {
+  inline def apply(): CameraContextStopRecordResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CameraContextStopRecordResult]
   }
   
-  @scala.inline
-  implicit class CameraContextStopRecordResultMutableBuilder[Self <: CameraContextStopRecordResult] (val x: Self) extends AnyVal {
+  extension [Self <: CameraContextStopRecordResult](x: Self) {
     
-    @scala.inline
-    def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
+    inline def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempThumbPathUndefined: Self = StObject.set(x, "tempThumbPath", js.undefined)
+    inline def setTempThumbPathUndefined: Self = StObject.set(x, "tempThumbPath", js.undefined)
     
-    @scala.inline
-    def setTempVideoPath(value: String): Self = StObject.set(x, "tempVideoPath", value.asInstanceOf[js.Any])
+    inline def setTempVideoPath(value: String): Self = StObject.set(x, "tempVideoPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempVideoPathUndefined: Self = StObject.set(x, "tempVideoPath", js.undefined)
+    inline def setTempVideoPathUndefined: Self = StObject.set(x, "tempVideoPath", js.undefined)
   }
 }

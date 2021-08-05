@@ -23,34 +23,25 @@ trait ListSSHPublicKeysResponse extends StObject {
 }
 object ListSSHPublicKeysResponse {
   
-  @scala.inline
-  def apply(): ListSSHPublicKeysResponse = {
+  inline def apply(): ListSSHPublicKeysResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSSHPublicKeysResponse]
   }
   
-  @scala.inline
-  implicit class ListSSHPublicKeysResponseMutableBuilder[Self <: ListSSHPublicKeysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSSHPublicKeysResponse](x: Self) {
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setSSHPublicKeys(value: SSHPublicKeyListType): Self = StObject.set(x, "SSHPublicKeys", value.asInstanceOf[js.Any])
+    inline def setSSHPublicKeys(value: SSHPublicKeyListType): Self = StObject.set(x, "SSHPublicKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSHPublicKeysUndefined: Self = StObject.set(x, "SSHPublicKeys", js.undefined)
+    inline def setSSHPublicKeysUndefined: Self = StObject.set(x, "SSHPublicKeys", js.undefined)
     
-    @scala.inline
-    def setSSHPublicKeysVarargs(value: SSHPublicKeyMetadata*): Self = StObject.set(x, "SSHPublicKeys", js.Array(value :_*))
+    inline def setSSHPublicKeysVarargs(value: SSHPublicKeyMetadata*): Self = StObject.set(x, "SSHPublicKeys", js.Array(value :_*))
   }
 }

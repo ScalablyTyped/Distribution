@@ -18,16 +18,13 @@ trait ASPxClientSplitterPaneCancelEventArgs
 }
 object ASPxClientSplitterPaneCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, pane: ASPxClientSplitterPane): ASPxClientSplitterPaneCancelEventArgs = {
+  inline def apply(cancel: Boolean, pane: ASPxClientSplitterPane): ASPxClientSplitterPaneCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], pane = pane.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSplitterPaneCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientSplitterPaneCancelEventArgsMutableBuilder[Self <: ASPxClientSplitterPaneCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSplitterPaneCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }
 }

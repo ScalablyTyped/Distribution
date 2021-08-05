@@ -11,8 +11,7 @@ object noopMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
+  inline def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
   
   @JSImport("opentracing/lib/noop", "span")
   @js.native
@@ -21,15 +20,12 @@ object noopMod {
   @JSImport("opentracing/lib/noop", "spanContext")
   @js.native
   def spanContext: typings.opentracing.spanContextMod.default | Null = js.native
-  @scala.inline
-  def spanContext_=(x: typings.opentracing.spanContextMod.default | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spanContext")(x.asInstanceOf[js.Any])
+  inline def spanContext_=(x: typings.opentracing.spanContextMod.default | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spanContext")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def span_=(x: default | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("span")(x.asInstanceOf[js.Any])
+  inline def span_=(x: default | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("span")(x.asInstanceOf[js.Any])
   
   @JSImport("opentracing/lib/noop", "tracer")
   @js.native
   def tracer: typings.opentracing.tracerMod.default | Null = js.native
-  @scala.inline
-  def tracer_=(x: typings.opentracing.tracerMod.default | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tracer")(x.asInstanceOf[js.Any])
+  inline def tracer_=(x: typings.opentracing.tracerMod.default | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tracer")(x.asInstanceOf[js.Any])
 }

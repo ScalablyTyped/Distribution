@@ -27,25 +27,19 @@ trait SchemaSecret extends StObject {
 }
 object SchemaSecret {
   
-  @scala.inline
-  def apply(): SchemaSecret = {
+  inline def apply(): SchemaSecret = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecret]
   }
   
-  @scala.inline
-  implicit class SchemaSecretMutableBuilder[Self <: SchemaSecret] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecret](x: Self) {
     
-    @scala.inline
-    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+    inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+    inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
     
-    @scala.inline
-    def setSecretEnv(value: StringDictionary[String]): Self = StObject.set(x, "secretEnv", value.asInstanceOf[js.Any])
+    inline def setSecretEnv(value: StringDictionary[String]): Self = StObject.set(x, "secretEnv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretEnvUndefined: Self = StObject.set(x, "secretEnv", js.undefined)
+    inline def setSecretEnvUndefined: Self = StObject.set(x, "secretEnv", js.undefined)
   }
 }

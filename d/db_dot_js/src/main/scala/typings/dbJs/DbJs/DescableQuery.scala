@@ -10,16 +10,13 @@ trait DescableQuery[T] extends StObject {
 }
 object DescableQuery {
   
-  @scala.inline
-  def apply[T](desc: () => DescQuery[T]): DescableQuery[T] = {
+  inline def apply[T](desc: () => DescQuery[T]): DescableQuery[T] = {
     val __obj = js.Dynamic.literal(desc = js.Any.fromFunction0(desc))
     __obj.asInstanceOf[DescableQuery[T]]
   }
   
-  @scala.inline
-  implicit class DescableQueryMutableBuilder[Self <: DescableQuery[?], T] (val x: Self & DescableQuery[T]) extends AnyVal {
+  extension [Self <: DescableQuery[?], T](x: Self & DescableQuery[T]) {
     
-    @scala.inline
-    def setDesc(value: () => DescQuery[T]): Self = StObject.set(x, "desc", js.Any.fromFunction0(value))
+    inline def setDesc(value: () => DescQuery[T]): Self = StObject.set(x, "desc", js.Any.fromFunction0(value))
   }
 }

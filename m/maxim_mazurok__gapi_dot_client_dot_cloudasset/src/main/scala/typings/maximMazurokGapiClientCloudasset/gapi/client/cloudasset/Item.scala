@@ -29,55 +29,39 @@ trait Item extends StObject {
 }
 object Item {
   
-  @scala.inline
-  def apply(): Item = {
+  inline def apply(): Item = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Item]
   }
   
-  @scala.inline
-  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+  extension [Self <: Item](x: Self) {
     
-    @scala.inline
-    def setAvailablePackage(value: SoftwarePackage): Self = StObject.set(x, "availablePackage", value.asInstanceOf[js.Any])
+    inline def setAvailablePackage(value: SoftwarePackage): Self = StObject.set(x, "availablePackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailablePackageUndefined: Self = StObject.set(x, "availablePackage", js.undefined)
+    inline def setAvailablePackageUndefined: Self = StObject.set(x, "availablePackage", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInstalledPackage(value: SoftwarePackage): Self = StObject.set(x, "installedPackage", value.asInstanceOf[js.Any])
+    inline def setInstalledPackage(value: SoftwarePackage): Self = StObject.set(x, "installedPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstalledPackageUndefined: Self = StObject.set(x, "installedPackage", js.undefined)
+    inline def setInstalledPackageUndefined: Self = StObject.set(x, "installedPackage", js.undefined)
     
-    @scala.inline
-    def setOriginType(value: String): Self = StObject.set(x, "originType", value.asInstanceOf[js.Any])
+    inline def setOriginType(value: String): Self = StObject.set(x, "originType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginTypeUndefined: Self = StObject.set(x, "originType", js.undefined)
+    inline def setOriginTypeUndefined: Self = StObject.set(x, "originType", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

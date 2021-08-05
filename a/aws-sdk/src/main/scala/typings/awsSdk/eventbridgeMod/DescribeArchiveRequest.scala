@@ -13,16 +13,13 @@ trait DescribeArchiveRequest extends StObject {
 }
 object DescribeArchiveRequest {
   
-  @scala.inline
-  def apply(ArchiveName: ArchiveName): DescribeArchiveRequest = {
+  inline def apply(ArchiveName: ArchiveName): DescribeArchiveRequest = {
     val __obj = js.Dynamic.literal(ArchiveName = ArchiveName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeArchiveRequest]
   }
   
-  @scala.inline
-  implicit class DescribeArchiveRequestMutableBuilder[Self <: DescribeArchiveRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeArchiveRequest](x: Self) {
     
-    @scala.inline
-    def setArchiveName(value: ArchiveName): Self = StObject.set(x, "ArchiveName", value.asInstanceOf[js.Any])
+    inline def setArchiveName(value: ArchiveName): Self = StObject.set(x, "ArchiveName", value.asInstanceOf[js.Any])
   }
 }

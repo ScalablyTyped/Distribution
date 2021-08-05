@@ -14,19 +14,15 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def cleanUp(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanUp")().asInstanceOf[Unit]
+    inline def cleanUp(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanUp")().asInstanceOf[Unit]
     
-    @scala.inline
-    def mockDB(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mockDB")().asInstanceOf[Unit]
+    inline def mockDB(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mockDB")().asInstanceOf[Unit]
     
-    @scala.inline
-    def promiseResultSync[T](
+    inline def promiseResultSync[T](
       promise: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Parse.IPromise<T> */ js.Any
     ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("promiseResultSync")(promise.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @scala.inline
-    def registerHook(
+    inline def registerHook(
       className: String,
       hookType: HookType,
       hookFn: js.Function1[
@@ -35,7 +31,6 @@ object global {
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(className.asInstanceOf[js.Any], hookType.asInstanceOf[js.Any], hookFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def unMockDB(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unMockDB")().asInstanceOf[Unit]
+    inline def unMockDB(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unMockDB")().asInstanceOf[Unit]
   }
 }

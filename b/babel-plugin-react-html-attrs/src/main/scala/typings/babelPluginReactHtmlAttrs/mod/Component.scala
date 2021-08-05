@@ -100,6 +100,5 @@ object Component {
   @JSImport("babel-plugin-react-html-attrs", "Component.contextType")
   @js.native
   def contextType: js.UndefOr[Context[js.Any]] = js.native
-  @scala.inline
-  def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+  inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
 }

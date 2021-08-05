@@ -54,8 +54,7 @@ trait InkStrokeBuilder extends StObject {
 }
 object InkStrokeBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendToStroke: PointerPoint => PointerPoint,
     beginStroke: PointerPoint => Unit,
     createStroke: IIterable[Point] => InkStroke,
@@ -67,25 +66,18 @@ object InkStrokeBuilder {
     __obj.asInstanceOf[InkStrokeBuilder]
   }
   
-  @scala.inline
-  implicit class InkStrokeBuilderMutableBuilder[Self <: InkStrokeBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: InkStrokeBuilder](x: Self) {
     
-    @scala.inline
-    def setAppendToStroke(value: PointerPoint => PointerPoint): Self = StObject.set(x, "appendToStroke", js.Any.fromFunction1(value))
+    inline def setAppendToStroke(value: PointerPoint => PointerPoint): Self = StObject.set(x, "appendToStroke", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginStroke(value: PointerPoint => Unit): Self = StObject.set(x, "beginStroke", js.Any.fromFunction1(value))
+    inline def setBeginStroke(value: PointerPoint => Unit): Self = StObject.set(x, "beginStroke", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateStroke(value: IIterable[Point] => InkStroke): Self = StObject.set(x, "createStroke", js.Any.fromFunction1(value))
+    inline def setCreateStroke(value: IIterable[Point] => InkStroke): Self = StObject.set(x, "createStroke", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateStrokeFromInkPoints(value: (IIterable[InkPoint], Matrix3x2) => InkStroke): Self = StObject.set(x, "createStrokeFromInkPoints", js.Any.fromFunction2(value))
+    inline def setCreateStrokeFromInkPoints(value: (IIterable[InkPoint], Matrix3x2) => InkStroke): Self = StObject.set(x, "createStrokeFromInkPoints", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEndStroke(value: PointerPoint => InkStroke): Self = StObject.set(x, "endStroke", js.Any.fromFunction1(value))
+    inline def setEndStroke(value: PointerPoint => InkStroke): Self = StObject.set(x, "endStroke", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDefaultDrawingAttributes(value: InkDrawingAttributes => Unit): Self = StObject.set(x, "setDefaultDrawingAttributes", js.Any.fromFunction1(value))
+    inline def setSetDefaultDrawingAttributes(value: InkDrawingAttributes => Unit): Self = StObject.set(x, "setDefaultDrawingAttributes", js.Any.fromFunction1(value))
   }
 }

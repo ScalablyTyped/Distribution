@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CalendarSharingAction extends StObject
 object CalendarSharingAction {
   
-  @scala.inline
-  def accept: typings.microsoftGraph.microsoftGraphStrings.accept = "accept".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.accept]
+  inline def accept: typings.microsoftGraph.microsoftGraphStrings.accept = "accept".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.accept]
   
-  @scala.inline
-  def acceptAndViewCalendar: typings.microsoftGraph.microsoftGraphStrings.acceptAndViewCalendar = "acceptAndViewCalendar".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.acceptAndViewCalendar]
+  inline def acceptAndViewCalendar: typings.microsoftGraph.microsoftGraphStrings.acceptAndViewCalendar = "acceptAndViewCalendar".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.acceptAndViewCalendar]
   
-  @scala.inline
-  def addThisCalendar: typings.microsoftGraph.microsoftGraphStrings.addThisCalendar = "addThisCalendar".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.addThisCalendar]
+  inline def addThisCalendar: typings.microsoftGraph.microsoftGraphStrings.addThisCalendar = "addThisCalendar".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.addThisCalendar]
   
-  @scala.inline
-  def viewCalendar: typings.microsoftGraph.microsoftGraphStrings.viewCalendar = "viewCalendar".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.viewCalendar]
+  inline def viewCalendar: typings.microsoftGraph.microsoftGraphStrings.viewCalendar = "viewCalendar".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.viewCalendar]
 }

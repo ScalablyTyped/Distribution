@@ -12,19 +12,15 @@ trait Constants extends StObject {
 }
 object Constants {
   
-  @scala.inline
-  def apply(constants: js.Any, cookies: js.Any): Constants = {
+  inline def apply(constants: js.Any, cookies: js.Any): Constants = {
     val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any])
     __obj.asInstanceOf[Constants]
   }
   
-  @scala.inline
-  implicit class ConstantsMutableBuilder[Self <: Constants] (val x: Self) extends AnyVal {
+  extension [Self <: Constants](x: Self) {
     
-    @scala.inline
-    def setConstants(value: js.Any): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+    inline def setConstants(value: js.Any): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookies(value: js.Any): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: js.Any): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
   }
 }

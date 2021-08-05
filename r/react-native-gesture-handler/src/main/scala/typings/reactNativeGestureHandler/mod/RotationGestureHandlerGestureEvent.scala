@@ -13,16 +13,13 @@ trait RotationGestureHandlerGestureEvent
 }
 object RotationGestureHandlerGestureEvent {
   
-  @scala.inline
-  def apply(nativeEvent: GestureHandlerGestureEventNativeEvent & RotationGestureHandlerEventExtra): RotationGestureHandlerGestureEvent = {
+  inline def apply(nativeEvent: GestureHandlerGestureEventNativeEvent & RotationGestureHandlerEventExtra): RotationGestureHandlerGestureEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotationGestureHandlerGestureEvent]
   }
   
-  @scala.inline
-  implicit class RotationGestureHandlerGestureEventMutableBuilder[Self <: RotationGestureHandlerGestureEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RotationGestureHandlerGestureEvent](x: Self) {
     
-    @scala.inline
-    def setNativeEvent(value: GestureHandlerGestureEventNativeEvent & RotationGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    inline def setNativeEvent(value: GestureHandlerGestureEventNativeEvent & RotationGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }
 }

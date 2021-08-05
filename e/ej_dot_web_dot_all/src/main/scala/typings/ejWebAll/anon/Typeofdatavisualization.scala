@@ -126,8 +126,7 @@ trait Typeofdatavisualization extends StObject {
 }
 object Typeofdatavisualization {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Barcode: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], Barcode]) & TypeofBarcode,
     BulletGraph: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], BulletGraph]) & TypeofBulletGraph,
     Chart: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], Chart]) & TypeofChart,
@@ -158,71 +157,57 @@ object Typeofdatavisualization {
     __obj.asInstanceOf[Typeofdatavisualization]
   }
   
-  @scala.inline
-  implicit class TypeofdatavisualizationMutableBuilder[Self <: Typeofdatavisualization] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofdatavisualization](x: Self) {
     
-    @scala.inline
-    def setBarcode(
+    inline def setBarcode(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], Barcode]) & TypeofBarcode
     ): Self = StObject.set(x, "Barcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletGraph(
+    inline def setBulletGraph(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], BulletGraph]) & TypeofBulletGraph
     ): Self = StObject.set(x, "BulletGraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChart(
+    inline def setChart(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], Chart]) & TypeofChart
     ): Self = StObject.set(x, "Chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircularGauge(
+    inline def setCircularGauge(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], CircularGauge]) & TypeofCircularGauge
     ): Self = StObject.set(x, "CircularGauge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagram(
+    inline def setDiagram(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], Diagram]) & TypeofDiagram
     ): Self = StObject.set(x, "Diagram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigitalGauge(
+    inline def setDigitalGauge(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], DigitalGauge]) & TypeofDigitalGauge
     ): Self = StObject.set(x, "DigitalGauge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeatMap(
+    inline def setHeatMap(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], HeatMap]) & TypeofHeatMap
     ): Self = StObject.set(x, "HeatMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeatMapLegend(
+    inline def setHeatMapLegend(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], HeatMapLegend]) & TypeofHeatMapLegend
     ): Self = StObject.set(x, "HeatMapLegend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearGauge(
+    inline def setLinearGauge(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], LinearGauge]) & TypeofLinearGauge
     ): Self = StObject.set(x, "LinearGauge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(
+    inline def setMap(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], Map]) & TypeofMap
     ): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverview(
+    inline def setOverview(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], Overview]) & TypeofOverview
     ): Self = StObject.set(x, "Overview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeNavigator(
+    inline def setRangeNavigator(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], RangeNavigator]) & TypeofRangeNavigator
     ): Self = StObject.set(x, "RangeNavigator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSparkline(
+    inline def setSparkline(
       value: (Instantiable2[
           /* element */ JQuery | Element, 
           /* options */ js.UndefOr[typings.ejWebAll.ej.Sparkline.Model], 
@@ -230,11 +215,9 @@ object Typeofdatavisualization {
         ]) & TypeofSparklineFn
     ): Self = StObject.set(x, "Sparkline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSunburst(value: js.Any): Self = StObject.set(x, "Sunburst", value.asInstanceOf[js.Any])
+    inline def setSunburst(value: js.Any): Self = StObject.set(x, "Sunburst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSunburstChart(
+    inline def setSunburstChart(
       value: (Instantiable2[
           /* element */ JQuery | Element, 
           /* options */ js.UndefOr[typings.ejWebAll.ej.SunburstChart.Model], 
@@ -242,13 +225,11 @@ object Typeofdatavisualization {
         ]) & TypeofSunburstChartFn
     ): Self = StObject.set(x, "SunburstChart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolPalette(
+    inline def setSymbolPalette(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], SymbolPalette]) & TypeofSymbolPalette
     ): Self = StObject.set(x, "SymbolPalette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeMap(
+    inline def setTreeMap(
       value: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], TreeMap]) & TypeofTreeMap
     ): Self = StObject.set(x, "TreeMap", value.asInstanceOf[js.Any])
   }

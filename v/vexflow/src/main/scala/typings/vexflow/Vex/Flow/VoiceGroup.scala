@@ -14,8 +14,7 @@ trait VoiceGroup extends StObject {
 }
 object VoiceGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addVoice: Voice => Unit,
     getModifierContexts: () => js.Array[ModifierContext],
     getVoices: () => js.Array[Voice]
@@ -24,16 +23,12 @@ object VoiceGroup {
     __obj.asInstanceOf[VoiceGroup]
   }
   
-  @scala.inline
-  implicit class VoiceGroupMutableBuilder[Self <: VoiceGroup] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceGroup](x: Self) {
     
-    @scala.inline
-    def setAddVoice(value: Voice => Unit): Self = StObject.set(x, "addVoice", js.Any.fromFunction1(value))
+    inline def setAddVoice(value: Voice => Unit): Self = StObject.set(x, "addVoice", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetModifierContexts(value: () => js.Array[ModifierContext]): Self = StObject.set(x, "getModifierContexts", js.Any.fromFunction0(value))
+    inline def setGetModifierContexts(value: () => js.Array[ModifierContext]): Self = StObject.set(x, "getModifierContexts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVoices(value: () => js.Array[Voice]): Self = StObject.set(x, "getVoices", js.Any.fromFunction0(value))
+    inline def setGetVoices(value: () => js.Array[Voice]): Self = StObject.set(x, "getVoices", js.Any.fromFunction0(value))
   }
 }

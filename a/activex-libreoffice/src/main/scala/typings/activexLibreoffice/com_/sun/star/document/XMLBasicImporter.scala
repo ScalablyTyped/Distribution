@@ -22,8 +22,7 @@ trait XMLBasicImporter
      with XDocumentHandler
 object XMLBasicImporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     characters: String => Unit,
     endDocument: () => Unit,

@@ -15,26 +15,20 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+      inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
       
-      @scala.inline
-      def setRemoveMarkdown(value: Boolean): Self = StObject.set(x, "removeMarkdown", value.asInstanceOf[js.Any])
+      inline def setRemoveMarkdown(value: Boolean): Self = StObject.set(x, "removeMarkdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveMarkdownUndefined: Self = StObject.set(x, "removeMarkdown", js.undefined)
+      inline def setRemoveMarkdownUndefined: Self = StObject.set(x, "removeMarkdown", js.undefined)
     }
   }
 }

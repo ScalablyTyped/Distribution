@@ -30,8 +30,7 @@ trait PfxImportParameters extends StObject {
 }
 object PfxImportParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containerNamePrefix: String,
     exportable: ExportOption,
     friendlyName: String,
@@ -44,28 +43,20 @@ object PfxImportParameters {
     __obj.asInstanceOf[PfxImportParameters]
   }
   
-  @scala.inline
-  implicit class PfxImportParametersMutableBuilder[Self <: PfxImportParameters] (val x: Self) extends AnyVal {
+  extension [Self <: PfxImportParameters](x: Self) {
     
-    @scala.inline
-    def setContainerNamePrefix(value: String): Self = StObject.set(x, "containerNamePrefix", value.asInstanceOf[js.Any])
+    inline def setContainerNamePrefix(value: String): Self = StObject.set(x, "containerNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportable(value: ExportOption): Self = StObject.set(x, "exportable", value.asInstanceOf[js.Any])
+    inline def setExportable(value: ExportOption): Self = StObject.set(x, "exportable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallOptions(value: InstallOptions): Self = StObject.set(x, "installOptions", value.asInstanceOf[js.Any])
+    inline def setInstallOptions(value: InstallOptions): Self = StObject.set(x, "installOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyProtectionLevel(value: KeyProtectionLevel): Self = StObject.set(x, "keyProtectionLevel", value.asInstanceOf[js.Any])
+    inline def setKeyProtectionLevel(value: KeyProtectionLevel): Self = StObject.set(x, "keyProtectionLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyStorageProviderName(value: String): Self = StObject.set(x, "keyStorageProviderName", value.asInstanceOf[js.Any])
+    inline def setKeyStorageProviderName(value: String): Self = StObject.set(x, "keyStorageProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReaderName(value: String): Self = StObject.set(x, "readerName", value.asInstanceOf[js.Any])
+    inline def setReaderName(value: String): Self = StObject.set(x, "readerName", value.asInstanceOf[js.Any])
   }
 }

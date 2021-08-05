@@ -69,8 +69,7 @@ object l2oMod {
     def this(getEnumerator: js.Function0[Enumerator[T]]) = this()
   }
   
-  @scala.inline
-  def Enumerable_=(x: EnumerableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enumerable")(x.asInstanceOf[js.Any])
+  inline def Enumerable_=(x: EnumerableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enumerable")(x.asInstanceOf[js.Any])
   
   @JSImport("l2o", "Enumerator")
   @js.native
@@ -94,6 +93,5 @@ object l2oMod {
     override def moveNext(): Boolean = js.native
   }
   
-  @scala.inline
-  def Enumerator_=(x: EnumeratorStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enumerator")(x.asInstanceOf[js.Any])
+  inline def Enumerator_=(x: EnumeratorStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enumerator")(x.asInstanceOf[js.Any])
 }

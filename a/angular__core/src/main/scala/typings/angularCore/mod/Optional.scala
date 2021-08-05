@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Optional extends StObject
 object Optional {
   
-  @scala.inline
-  def apply: OptionalDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("Optional").asInstanceOf[OptionalDecorator]
+  inline def apply: OptionalDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("Optional").asInstanceOf[OptionalDecorator]
 }

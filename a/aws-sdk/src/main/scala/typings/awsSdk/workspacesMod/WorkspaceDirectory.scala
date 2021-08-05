@@ -88,118 +88,81 @@ trait WorkspaceDirectory extends StObject {
 }
 object WorkspaceDirectory {
   
-  @scala.inline
-  def apply(): WorkspaceDirectory = {
+  inline def apply(): WorkspaceDirectory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceDirectory]
   }
   
-  @scala.inline
-  implicit class WorkspaceDirectoryMutableBuilder[Self <: WorkspaceDirectory] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceDirectory](x: Self) {
     
-    @scala.inline
-    def setAlias(value: Alias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: Alias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
     
-    @scala.inline
-    def setCustomerUserName(value: UserName): Self = StObject.set(x, "CustomerUserName", value.asInstanceOf[js.Any])
+    inline def setCustomerUserName(value: UserName): Self = StObject.set(x, "CustomerUserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUserNameUndefined: Self = StObject.set(x, "CustomerUserName", js.undefined)
+    inline def setCustomerUserNameUndefined: Self = StObject.set(x, "CustomerUserName", js.undefined)
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    @scala.inline
-    def setDirectoryName(value: DirectoryName): Self = StObject.set(x, "DirectoryName", value.asInstanceOf[js.Any])
+    inline def setDirectoryName(value: DirectoryName): Self = StObject.set(x, "DirectoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryNameUndefined: Self = StObject.set(x, "DirectoryName", js.undefined)
+    inline def setDirectoryNameUndefined: Self = StObject.set(x, "DirectoryName", js.undefined)
     
-    @scala.inline
-    def setDirectoryType(value: WorkspaceDirectoryType): Self = StObject.set(x, "DirectoryType", value.asInstanceOf[js.Any])
+    inline def setDirectoryType(value: WorkspaceDirectoryType): Self = StObject.set(x, "DirectoryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryTypeUndefined: Self = StObject.set(x, "DirectoryType", js.undefined)
+    inline def setDirectoryTypeUndefined: Self = StObject.set(x, "DirectoryType", js.undefined)
     
-    @scala.inline
-    def setDnsIpAddresses(value: DnsIpAddresses): Self = StObject.set(x, "DnsIpAddresses", value.asInstanceOf[js.Any])
+    inline def setDnsIpAddresses(value: DnsIpAddresses): Self = StObject.set(x, "DnsIpAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsIpAddressesUndefined: Self = StObject.set(x, "DnsIpAddresses", js.undefined)
+    inline def setDnsIpAddressesUndefined: Self = StObject.set(x, "DnsIpAddresses", js.undefined)
     
-    @scala.inline
-    def setDnsIpAddressesVarargs(value: IpAddress*): Self = StObject.set(x, "DnsIpAddresses", js.Array(value :_*))
+    inline def setDnsIpAddressesVarargs(value: IpAddress*): Self = StObject.set(x, "DnsIpAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setIamRoleId(value: ARN): Self = StObject.set(x, "IamRoleId", value.asInstanceOf[js.Any])
+    inline def setIamRoleId(value: ARN): Self = StObject.set(x, "IamRoleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleIdUndefined: Self = StObject.set(x, "IamRoleId", js.undefined)
+    inline def setIamRoleIdUndefined: Self = StObject.set(x, "IamRoleId", js.undefined)
     
-    @scala.inline
-    def setIpGroupIds(value: IpGroupIdList): Self = StObject.set(x, "ipGroupIds", value.asInstanceOf[js.Any])
+    inline def setIpGroupIds(value: IpGroupIdList): Self = StObject.set(x, "ipGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpGroupIdsUndefined: Self = StObject.set(x, "ipGroupIds", js.undefined)
+    inline def setIpGroupIdsUndefined: Self = StObject.set(x, "ipGroupIds", js.undefined)
     
-    @scala.inline
-    def setIpGroupIdsVarargs(value: IpGroupId*): Self = StObject.set(x, "ipGroupIds", js.Array(value :_*))
+    inline def setIpGroupIdsVarargs(value: IpGroupId*): Self = StObject.set(x, "ipGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setRegistrationCode(value: RegistrationCode): Self = StObject.set(x, "RegistrationCode", value.asInstanceOf[js.Any])
+    inline def setRegistrationCode(value: RegistrationCode): Self = StObject.set(x, "RegistrationCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationCodeUndefined: Self = StObject.set(x, "RegistrationCode", js.undefined)
+    inline def setRegistrationCodeUndefined: Self = StObject.set(x, "RegistrationCode", js.undefined)
     
-    @scala.inline
-    def setSelfservicePermissions(value: SelfservicePermissions): Self = StObject.set(x, "SelfservicePermissions", value.asInstanceOf[js.Any])
+    inline def setSelfservicePermissions(value: SelfservicePermissions): Self = StObject.set(x, "SelfservicePermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfservicePermissionsUndefined: Self = StObject.set(x, "SelfservicePermissions", js.undefined)
+    inline def setSelfservicePermissionsUndefined: Self = StObject.set(x, "SelfservicePermissions", js.undefined)
     
-    @scala.inline
-    def setState(value: WorkspaceDirectoryState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: WorkspaceDirectoryState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
+    inline def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
+    inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    @scala.inline
-    def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTenancy(value: Tenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
+    inline def setTenancy(value: Tenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenancyUndefined: Self = StObject.set(x, "Tenancy", js.undefined)
+    inline def setTenancyUndefined: Self = StObject.set(x, "Tenancy", js.undefined)
     
-    @scala.inline
-    def setWorkspaceAccessProperties(value: WorkspaceAccessProperties): Self = StObject.set(x, "WorkspaceAccessProperties", value.asInstanceOf[js.Any])
+    inline def setWorkspaceAccessProperties(value: WorkspaceAccessProperties): Self = StObject.set(x, "WorkspaceAccessProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceAccessPropertiesUndefined: Self = StObject.set(x, "WorkspaceAccessProperties", js.undefined)
+    inline def setWorkspaceAccessPropertiesUndefined: Self = StObject.set(x, "WorkspaceAccessProperties", js.undefined)
     
-    @scala.inline
-    def setWorkspaceCreationProperties(value: DefaultWorkspaceCreationProperties): Self = StObject.set(x, "WorkspaceCreationProperties", value.asInstanceOf[js.Any])
+    inline def setWorkspaceCreationProperties(value: DefaultWorkspaceCreationProperties): Self = StObject.set(x, "WorkspaceCreationProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceCreationPropertiesUndefined: Self = StObject.set(x, "WorkspaceCreationProperties", js.undefined)
+    inline def setWorkspaceCreationPropertiesUndefined: Self = StObject.set(x, "WorkspaceCreationProperties", js.undefined)
     
-    @scala.inline
-    def setWorkspaceSecurityGroupId(value: SecurityGroupId): Self = StObject.set(x, "WorkspaceSecurityGroupId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceSecurityGroupId(value: SecurityGroupId): Self = StObject.set(x, "WorkspaceSecurityGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceSecurityGroupIdUndefined: Self = StObject.set(x, "WorkspaceSecurityGroupId", js.undefined)
+    inline def setWorkspaceSecurityGroupIdUndefined: Self = StObject.set(x, "WorkspaceSecurityGroupId", js.undefined)
   }
 }

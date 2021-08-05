@@ -58,8 +58,7 @@ trait AudioStreams extends StObject {
 }
 object AudioStreams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audioStreams: js.Array[BitrateBps],
     bitrateBps: Double,
     container: String,
@@ -75,43 +74,30 @@ object AudioStreams {
     __obj.asInstanceOf[AudioStreams]
   }
   
-  @scala.inline
-  implicit class AudioStreamsMutableBuilder[Self <: AudioStreams] (val x: Self) extends AnyVal {
+  extension [Self <: AudioStreams](x: Self) {
     
-    @scala.inline
-    def setAudioStreams(value: js.Array[BitrateBps]): Self = StObject.set(x, "audioStreams", value.asInstanceOf[js.Any])
+    inline def setAudioStreams(value: js.Array[BitrateBps]): Self = StObject.set(x, "audioStreams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioStreamsVarargs(value: BitrateBps*): Self = StObject.set(x, "audioStreams", js.Array(value :_*))
+    inline def setAudioStreamsVarargs(value: BitrateBps*): Self = StObject.set(x, "audioStreams", js.Array(value :_*))
     
-    @scala.inline
-    def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
+    inline def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationMs(value: Double): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
+    inline def setDurationMs(value: Double): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordingLocation(value: Elevation): Self = StObject.set(x, "recordingLocation", value.asInstanceOf[js.Any])
+    inline def setRecordingLocation(value: Elevation): Self = StObject.set(x, "recordingLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoStreams(value: js.Array[AspectRatio]): Self = StObject.set(x, "videoStreams", value.asInstanceOf[js.Any])
+    inline def setVideoStreams(value: js.Array[AspectRatio]): Self = StObject.set(x, "videoStreams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoStreamsVarargs(value: AspectRatio*): Self = StObject.set(x, "videoStreams", js.Array(value :_*))
+    inline def setVideoStreamsVarargs(value: AspectRatio*): Self = StObject.set(x, "videoStreams", js.Array(value :_*))
   }
 }

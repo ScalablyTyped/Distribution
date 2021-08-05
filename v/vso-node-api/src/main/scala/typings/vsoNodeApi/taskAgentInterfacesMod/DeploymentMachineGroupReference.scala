@@ -16,25 +16,19 @@ trait DeploymentMachineGroupReference extends StObject {
 }
 object DeploymentMachineGroupReference {
   
-  @scala.inline
-  def apply(id: Double, name: String, pool: TaskAgentPoolReference, project: ProjectReference): DeploymentMachineGroupReference = {
+  inline def apply(id: Double, name: String, pool: TaskAgentPoolReference, project: ProjectReference): DeploymentMachineGroupReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentMachineGroupReference]
   }
   
-  @scala.inline
-  implicit class DeploymentMachineGroupReferenceMutableBuilder[Self <: DeploymentMachineGroupReference] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentMachineGroupReference](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPool(value: TaskAgentPoolReference): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+    inline def setPool(value: TaskAgentPoolReference): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
   }
 }

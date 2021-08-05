@@ -18,25 +18,19 @@ trait LineHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exten
 }
 object LineHeightProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): LineHeightProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): LineHeightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineHeightProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class LineHeightPropsMutableBuilder[Self <: LineHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (LineHeightProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: LineHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (LineHeightProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setLineHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeightNull: Self = StObject.set(x, "lineHeight", null)
+    inline def setLineHeightNull: Self = StObject.set(x, "lineHeight", null)
     
-    @scala.inline
-    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+    inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    @scala.inline
-    def setLineHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "lineHeight", js.Array(value :_*))
+    inline def setLineHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "lineHeight", js.Array(value :_*))
   }
 }

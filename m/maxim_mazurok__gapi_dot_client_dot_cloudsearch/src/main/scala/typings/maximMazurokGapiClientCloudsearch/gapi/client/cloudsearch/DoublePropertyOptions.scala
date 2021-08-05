@@ -11,19 +11,15 @@ trait DoublePropertyOptions extends StObject {
 }
 object DoublePropertyOptions {
   
-  @scala.inline
-  def apply(): DoublePropertyOptions = {
+  inline def apply(): DoublePropertyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoublePropertyOptions]
   }
   
-  @scala.inline
-  implicit class DoublePropertyOptionsMutableBuilder[Self <: DoublePropertyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DoublePropertyOptions](x: Self) {
     
-    @scala.inline
-    def setOperatorOptions(value: DoubleOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
+    inline def setOperatorOptions(value: DoubleOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
+    inline def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
   }
 }

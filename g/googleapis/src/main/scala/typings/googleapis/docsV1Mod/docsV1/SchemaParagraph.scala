@@ -51,61 +51,43 @@ trait SchemaParagraph extends StObject {
 }
 object SchemaParagraph {
   
-  @scala.inline
-  def apply(): SchemaParagraph = {
+  inline def apply(): SchemaParagraph = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaParagraph]
   }
   
-  @scala.inline
-  implicit class SchemaParagraphMutableBuilder[Self <: SchemaParagraph] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaParagraph](x: Self) {
     
-    @scala.inline
-    def setBullet(value: SchemaBullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+    inline def setBullet(value: SchemaBullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
+    inline def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
     
-    @scala.inline
-    def setElements(value: js.Array[SchemaParagraphElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[SchemaParagraphElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    @scala.inline
-    def setElementsVarargs(value: SchemaParagraphElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: SchemaParagraphElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setParagraphStyle(value: SchemaParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
+    inline def setParagraphStyle(value: SchemaParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
+    inline def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
     
-    @scala.inline
-    def setPositionedObjectIds(value: js.Array[String]): Self = StObject.set(x, "positionedObjectIds", value.asInstanceOf[js.Any])
+    inline def setPositionedObjectIds(value: js.Array[String]): Self = StObject.set(x, "positionedObjectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionedObjectIdsUndefined: Self = StObject.set(x, "positionedObjectIds", js.undefined)
+    inline def setPositionedObjectIdsUndefined: Self = StObject.set(x, "positionedObjectIds", js.undefined)
     
-    @scala.inline
-    def setPositionedObjectIdsVarargs(value: String*): Self = StObject.set(x, "positionedObjectIds", js.Array(value :_*))
+    inline def setPositionedObjectIdsVarargs(value: String*): Self = StObject.set(x, "positionedObjectIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSuggestedBulletChanges(value: StringDictionary[SchemaSuggestedBullet]): Self = StObject.set(x, "suggestedBulletChanges", value.asInstanceOf[js.Any])
+    inline def setSuggestedBulletChanges(value: StringDictionary[SchemaSuggestedBullet]): Self = StObject.set(x, "suggestedBulletChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedBulletChangesUndefined: Self = StObject.set(x, "suggestedBulletChanges", js.undefined)
+    inline def setSuggestedBulletChangesUndefined: Self = StObject.set(x, "suggestedBulletChanges", js.undefined)
     
-    @scala.inline
-    def setSuggestedParagraphStyleChanges(value: StringDictionary[SchemaSuggestedParagraphStyle]): Self = StObject.set(x, "suggestedParagraphStyleChanges", value.asInstanceOf[js.Any])
+    inline def setSuggestedParagraphStyleChanges(value: StringDictionary[SchemaSuggestedParagraphStyle]): Self = StObject.set(x, "suggestedParagraphStyleChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedParagraphStyleChangesUndefined: Self = StObject.set(x, "suggestedParagraphStyleChanges", js.undefined)
+    inline def setSuggestedParagraphStyleChangesUndefined: Self = StObject.set(x, "suggestedParagraphStyleChanges", js.undefined)
     
-    @scala.inline
-    def setSuggestedPositionedObjectIds(value: StringDictionary[SchemaObjectReferences]): Self = StObject.set(x, "suggestedPositionedObjectIds", value.asInstanceOf[js.Any])
+    inline def setSuggestedPositionedObjectIds(value: StringDictionary[SchemaObjectReferences]): Self = StObject.set(x, "suggestedPositionedObjectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedPositionedObjectIdsUndefined: Self = StObject.set(x, "suggestedPositionedObjectIds", js.undefined)
+    inline def setSuggestedPositionedObjectIdsUndefined: Self = StObject.set(x, "suggestedPositionedObjectIds", js.undefined)
   }
 }

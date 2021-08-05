@@ -12,20 +12,16 @@ object anon {
   }
   object Location {
     
-    @scala.inline
-    def apply(location: js.Array[typings.webpagetest.mod.Location]): Location = {
+    inline def apply(location: js.Array[typings.webpagetest.mod.Location]): Location = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
       __obj.asInstanceOf[Location]
     }
     
-    @scala.inline
-    implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+    extension [Self <: Location](x: Self) {
       
-      @scala.inline
-      def setLocation(value: js.Array[typings.webpagetest.mod.Location]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: js.Array[typings.webpagetest.mod.Location]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationVarargs(value: typings.webpagetest.mod.Location*): Self = StObject.set(x, "location", js.Array(value :_*))
+      inline def setLocationVarargs(value: typings.webpagetest.mod.Location*): Self = StObject.set(x, "location", js.Array(value :_*))
     }
   }
   
@@ -35,17 +31,14 @@ object anon {
   }
   object Response {
     
-    @scala.inline
-    def apply(response: typings.webpagetest.mod.Response[Location]): Response = {
+    inline def apply(response: typings.webpagetest.mod.Response[Location]): Response = {
       val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setResponse(value: typings.webpagetest.mod.Response[Location]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: typings.webpagetest.mod.Response[Location]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
 }

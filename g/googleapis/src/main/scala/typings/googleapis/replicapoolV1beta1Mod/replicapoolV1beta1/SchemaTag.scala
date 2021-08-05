@@ -22,28 +22,21 @@ trait SchemaTag extends StObject {
 }
 object SchemaTag {
   
-  @scala.inline
-  def apply(): SchemaTag = {
+  inline def apply(): SchemaTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTag]
   }
   
-  @scala.inline
-  implicit class SchemaTagMutableBuilder[Self <: SchemaTag] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTag](x: Self) {
     
-    @scala.inline
-    def setFingerPrint(value: String): Self = StObject.set(x, "fingerPrint", value.asInstanceOf[js.Any])
+    inline def setFingerPrint(value: String): Self = StObject.set(x, "fingerPrint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerPrintUndefined: Self = StObject.set(x, "fingerPrint", js.undefined)
+    inline def setFingerPrintUndefined: Self = StObject.set(x, "fingerPrint", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

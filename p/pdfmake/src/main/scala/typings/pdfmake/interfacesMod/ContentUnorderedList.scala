@@ -15,25 +15,19 @@ trait ContentUnorderedList
 }
 object ContentUnorderedList {
   
-  @scala.inline
-  def apply(ul: js.Array[UnorderedListElement]): ContentUnorderedList = {
+  inline def apply(ul: js.Array[UnorderedListElement]): ContentUnorderedList = {
     val __obj = js.Dynamic.literal(ul = ul.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentUnorderedList]
   }
   
-  @scala.inline
-  implicit class ContentUnorderedListMutableBuilder[Self <: ContentUnorderedList] (val x: Self) extends AnyVal {
+  extension [Self <: ContentUnorderedList](x: Self) {
     
-    @scala.inline
-    def setType(value: UnorderedListType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UnorderedListType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUl(value: js.Array[UnorderedListElement]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
+    inline def setUl(value: js.Array[UnorderedListElement]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUlVarargs(value: UnorderedListElement*): Self = StObject.set(x, "ul", js.Array(value :_*))
+    inline def setUlVarargs(value: UnorderedListElement*): Self = StObject.set(x, "ul", js.Array(value :_*))
   }
 }

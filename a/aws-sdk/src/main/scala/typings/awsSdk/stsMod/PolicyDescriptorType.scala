@@ -13,19 +13,15 @@ trait PolicyDescriptorType extends StObject {
 }
 object PolicyDescriptorType {
   
-  @scala.inline
-  def apply(): PolicyDescriptorType = {
+  inline def apply(): PolicyDescriptorType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyDescriptorType]
   }
   
-  @scala.inline
-  implicit class PolicyDescriptorTypeMutableBuilder[Self <: PolicyDescriptorType] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyDescriptorType](x: Self) {
     
-    @scala.inline
-    def setArn(value: arnType): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: arnType): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
   }
 }

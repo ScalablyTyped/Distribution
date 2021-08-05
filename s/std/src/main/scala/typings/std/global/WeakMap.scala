@@ -15,6 +15,5 @@ class WeakMap[K /* <: js.Object */, V] ()
 }
 object WeakMap {
   
-  @scala.inline
-  def apply: WeakMapConstructor = js.Dynamic.global.selectDynamic("WeakMap").asInstanceOf[WeakMapConstructor]
+  inline def apply: WeakMapConstructor = js.Dynamic.global.selectDynamic("WeakMap").asInstanceOf[WeakMapConstructor]
 }

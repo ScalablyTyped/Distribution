@@ -13,19 +13,15 @@ trait NetworkFrameworkConfiguration extends StObject {
 }
 object NetworkFrameworkConfiguration {
   
-  @scala.inline
-  def apply(): NetworkFrameworkConfiguration = {
+  inline def apply(): NetworkFrameworkConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkFrameworkConfiguration]
   }
   
-  @scala.inline
-  implicit class NetworkFrameworkConfigurationMutableBuilder[Self <: NetworkFrameworkConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkFrameworkConfiguration](x: Self) {
     
-    @scala.inline
-    def setFabric(value: NetworkFabricConfiguration): Self = StObject.set(x, "Fabric", value.asInstanceOf[js.Any])
+    inline def setFabric(value: NetworkFabricConfiguration): Self = StObject.set(x, "Fabric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFabricUndefined: Self = StObject.set(x, "Fabric", js.undefined)
+    inline def setFabricUndefined: Self = StObject.set(x, "Fabric", js.undefined)
   }
 }

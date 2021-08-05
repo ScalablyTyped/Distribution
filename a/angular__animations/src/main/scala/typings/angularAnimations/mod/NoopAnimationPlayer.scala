@@ -13,21 +13,21 @@ class NoopAnimationPlayer ()
   def this(duration: Double, delay: Double) = this()
   def this(duration: Unit, delay: Double) = this()
   
-  var _destroyed: js.Any = js.native
+  /* private */ var _destroyed: js.Any = js.native
   
-  var _finished: js.Any = js.native
+  /* private */ var _finished: js.Any = js.native
   
-  var _onDestroyFns: js.Any = js.native
+  /* private */ var _onDestroyFns: js.Any = js.native
   
-  var _onDoneFns: js.Any = js.native
+  /* private */ var _onDoneFns: js.Any = js.native
   
-  var _onFinish: js.Any = js.native
+  /* private */ var _onFinish: js.Any = js.native
   
-  var _onStart: js.Any = js.native
+  /* private */ var _onStart: js.Any = js.native
   
-  var _onStartFns: js.Any = js.native
+  /* private */ var _onStartFns: js.Any = js.native
   
-  var _started: js.Any = js.native
+  /* private */ var _started: js.Any = js.native
   
   /**
     * Destroys the animation, after invoking the `beforeDestroy()` callback.

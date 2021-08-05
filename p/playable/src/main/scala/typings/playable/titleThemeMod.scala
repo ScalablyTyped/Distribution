@@ -16,7 +16,6 @@ object titleThemeMod {
     @JSImport("playable/dist/src/modules/ui/title/title.theme", "default.titleText")
     @js.native
     def titleText: Color = js.native
-    @scala.inline
-    def titleText_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("titleText")(x.asInstanceOf[js.Any])
+    inline def titleText_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("titleText")(x.asInstanceOf[js.Any])
   }
 }

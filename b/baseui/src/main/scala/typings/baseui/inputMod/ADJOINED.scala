@@ -24,19 +24,14 @@ object ADJOINED {
   @js.native
   val ^ : ADJOINED = js.native
   
-  @scala.inline
-  implicit class ADJOINEDMutableBuilder[Self <: ADJOINED] (val x: Self) extends AnyVal {
+  extension [Self <: ADJOINED](x: Self) {
     
-    @scala.inline
-    def setBoth(value: both): Self = StObject.set(x, "both", value.asInstanceOf[js.Any])
+    inline def setBoth(value: both): Self = StObject.set(x, "both", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: left): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: left): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: none): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: none): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: right): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: right): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

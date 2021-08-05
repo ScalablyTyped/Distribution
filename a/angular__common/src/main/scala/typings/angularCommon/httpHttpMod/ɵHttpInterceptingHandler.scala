@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ɵHttpInterceptingHandler protected () extends HttpHandler {
   def this(backend: HttpBackend, injector: Injector) = this()
   
-  var backend: js.Any = js.native
+  /* private */ var backend: js.Any = js.native
   
-  var chain: js.Any = js.native
+  /* private */ var chain: js.Any = js.native
   
-  var injector: js.Any = js.native
+  /* private */ var injector: js.Any = js.native
 }

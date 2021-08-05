@@ -54,20 +54,16 @@ object transitionsMod {
   }
   object BaseTransition {
     
-    @scala.inline
-    def apply(in: Boolean, onExited: () => Unit): BaseTransition = {
+    inline def apply(in: Boolean, onExited: () => Unit): BaseTransition = {
       val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], onExited = js.Any.fromFunction0(onExited))
       __obj.asInstanceOf[BaseTransition]
     }
     
-    @scala.inline
-    implicit class BaseTransitionMutableBuilder[Self <: BaseTransition] (val x: Self) extends AnyVal {
+    extension [Self <: BaseTransition](x: Self) {
       
-      @scala.inline
-      def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnExited(value: () => Unit): Self = StObject.set(x, "onExited", js.Any.fromFunction0(value))
+      inline def setOnExited(value: () => Unit): Self = StObject.set(x, "onExited", js.Any.fromFunction0(value))
     }
   }
   
@@ -79,20 +75,16 @@ object transitionsMod {
   }
   object CollapseProps {
     
-    @scala.inline
-    def apply(children: js.Any, in: Boolean): CollapseProps = {
+    inline def apply(children: js.Any, in: Boolean): CollapseProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollapseProps]
     }
     
-    @scala.inline
-    implicit class CollapsePropsMutableBuilder[Self <: CollapseProps] (val x: Self) extends AnyVal {
+    extension [Self <: CollapseProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,17 +94,14 @@ object transitionsMod {
   }
   object CollapseState {
     
-    @scala.inline
-    def apply(width: Width): CollapseState = {
+    inline def apply(width: Width): CollapseState = {
       val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollapseState]
     }
     
-    @scala.inline
-    implicit class CollapseStateMutableBuilder[Self <: CollapseState] (val x: Self) extends AnyVal {
+    extension [Self <: CollapseState](x: Self) {
       
-      @scala.inline
-      def setWidth(value: Width): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Width): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -126,20 +115,16 @@ object transitionsMod {
   }
   object FadeProps {
     
-    @scala.inline
-    def apply(component: ComponentType[js.Any], duration: Double, in: Boolean, onExited: () => Unit): FadeProps = {
+    inline def apply(component: ComponentType[js.Any], duration: Double, in: Boolean, onExited: () => Unit): FadeProps = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any], onExited = js.Any.fromFunction0(onExited))
       __obj.asInstanceOf[FadeProps]
     }
     
-    @scala.inline
-    implicit class FadePropsMutableBuilder[Self <: FadeProps] (val x: Self) extends AnyVal {
+    extension [Self <: FadeProps](x: Self) {
       
-      @scala.inline
-      def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,11 +135,9 @@ object transitionsMod {
   trait TransitionState extends StObject
   object TransitionState {
     
-    @scala.inline
-    def exited: typings.reactSelect.reactSelectStrings.exited = "exited".asInstanceOf[typings.reactSelect.reactSelectStrings.exited]
+    inline def exited: typings.reactSelect.reactSelectStrings.exited = "exited".asInstanceOf[typings.reactSelect.reactSelectStrings.exited]
     
-    @scala.inline
-    def exiting: typings.reactSelect.reactSelectStrings.exiting = "exiting".asInstanceOf[typings.reactSelect.reactSelectStrings.exiting]
+    inline def exiting: typings.reactSelect.reactSelectStrings.exiting = "exiting".asInstanceOf[typings.reactSelect.reactSelectStrings.exiting]
   }
   
   type Width = Double | auto

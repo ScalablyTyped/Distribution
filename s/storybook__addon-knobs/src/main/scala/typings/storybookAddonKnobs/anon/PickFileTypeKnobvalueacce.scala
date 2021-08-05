@@ -14,22 +14,17 @@ trait PickFileTypeKnobvalueacce extends StObject {
 }
 object PickFileTypeKnobvalueacce {
   
-  @scala.inline
-  def apply(accept: String, value: DateTypeKnobValue): PickFileTypeKnobvalueacce = {
+  inline def apply(accept: String, value: DateTypeKnobValue): PickFileTypeKnobvalueacce = {
     val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickFileTypeKnobvalueacce]
   }
   
-  @scala.inline
-  implicit class PickFileTypeKnobvalueacceMutableBuilder[Self <: PickFileTypeKnobvalueacce] (val x: Self) extends AnyVal {
+  extension [Self <: PickFileTypeKnobvalueacce](x: Self) {
     
-    @scala.inline
-    def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: DateTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DateTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

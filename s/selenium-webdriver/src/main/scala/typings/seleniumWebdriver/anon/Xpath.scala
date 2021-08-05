@@ -13,16 +13,13 @@ trait Xpath
 }
 object Xpath {
   
-  @scala.inline
-  def apply(xpath: String): Xpath = {
+  inline def apply(xpath: String): Xpath = {
     val __obj = js.Dynamic.literal(xpath = xpath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xpath]
   }
   
-  @scala.inline
-  implicit class XpathMutableBuilder[Self <: Xpath] (val x: Self) extends AnyVal {
+  extension [Self <: Xpath](x: Self) {
     
-    @scala.inline
-    def setXpath(value: String): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
+    inline def setXpath(value: String): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
   }
 }

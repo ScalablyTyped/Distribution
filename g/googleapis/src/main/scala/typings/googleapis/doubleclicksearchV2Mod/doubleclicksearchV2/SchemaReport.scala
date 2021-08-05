@@ -67,73 +67,51 @@ trait SchemaReport extends StObject {
 }
 object SchemaReport {
   
-  @scala.inline
-  def apply(): SchemaReport = {
+  inline def apply(): SchemaReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReport]
   }
   
-  @scala.inline
-  implicit class SchemaReportMutableBuilder[Self <: SchemaReport] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReport](x: Self) {
     
-    @scala.inline
-    def setFiles(value: js.Array[ByteCount]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[ByteCount]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setFilesVarargs(value: ByteCount*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: ByteCount*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsReportReady(value: Boolean): Self = StObject.set(x, "isReportReady", value.asInstanceOf[js.Any])
+    inline def setIsReportReady(value: Boolean): Self = StObject.set(x, "isReportReady", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReportReadyUndefined: Self = StObject.set(x, "isReportReady", js.undefined)
+    inline def setIsReportReadyUndefined: Self = StObject.set(x, "isReportReady", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRequest(value: SchemaReportRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: SchemaReportRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[SchemaReportRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[SchemaReportRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: SchemaReportRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: SchemaReportRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setStatisticsCurrencyCode(value: String): Self = StObject.set(x, "statisticsCurrencyCode", value.asInstanceOf[js.Any])
+    inline def setStatisticsCurrencyCode(value: String): Self = StObject.set(x, "statisticsCurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsCurrencyCodeUndefined: Self = StObject.set(x, "statisticsCurrencyCode", js.undefined)
+    inline def setStatisticsCurrencyCodeUndefined: Self = StObject.set(x, "statisticsCurrencyCode", js.undefined)
     
-    @scala.inline
-    def setStatisticsTimeZone(value: String): Self = StObject.set(x, "statisticsTimeZone", value.asInstanceOf[js.Any])
+    inline def setStatisticsTimeZone(value: String): Self = StObject.set(x, "statisticsTimeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsTimeZoneUndefined: Self = StObject.set(x, "statisticsTimeZone", js.undefined)
+    inline def setStatisticsTimeZoneUndefined: Self = StObject.set(x, "statisticsTimeZone", js.undefined)
   }
 }

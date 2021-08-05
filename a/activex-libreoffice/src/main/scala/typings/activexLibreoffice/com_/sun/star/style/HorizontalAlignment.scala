@@ -23,8 +23,7 @@ object HorizontalAlignment {
     *
     * The text range is centered between the previous tabulator (or the left border, if none) and this tabulator.
     */
-  @scala.inline
-  def CENTER: `1` = 1.asInstanceOf[`1`]
+  inline def CENTER: `1` = 1.asInstanceOf[`1`]
   
   /**
     * set the horizontal alignment to the left margin from the container object
@@ -35,8 +34,7 @@ object HorizontalAlignment {
     *
     * The text range is left-aligned between the previous tabulator (or the left border, if none) and this tabulator.
     */
-  @scala.inline
-  def LEFT: `0` = 0.asInstanceOf[`0`]
+  inline def LEFT: `0` = 0.asInstanceOf[`0`]
   
   /**
     * set the horizontal alignment to the right margin from the container object
@@ -47,6 +45,5 @@ object HorizontalAlignment {
     *
     * The text range is right-aligned between the previous tabulator (or the left border, if none) and this tabulator.
     */
-  @scala.inline
-  def RIGHT: `2` = 2.asInstanceOf[`2`]
+  inline def RIGHT: `2` = 2.asInstanceOf[`2`]
 }

@@ -32,8 +32,7 @@ trait Graphic extends StObject {
 }
 object Graphic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LinearGradient: LinearGradient,
     clipPointsByRect: (js.Array[js.Array[Double]], ERectangle) => js.Array[js.Array[Double]],
     clipRectByRect: (ERectangle, ERectangle) => ERectangle
@@ -42,16 +41,12 @@ object Graphic {
     __obj.asInstanceOf[Graphic]
   }
   
-  @scala.inline
-  implicit class GraphicMutableBuilder[Self <: Graphic] (val x: Self) extends AnyVal {
+  extension [Self <: Graphic](x: Self) {
     
-    @scala.inline
-    def setClipPointsByRect(value: (js.Array[js.Array[Double]], ERectangle) => js.Array[js.Array[Double]]): Self = StObject.set(x, "clipPointsByRect", js.Any.fromFunction2(value))
+    inline def setClipPointsByRect(value: (js.Array[js.Array[Double]], ERectangle) => js.Array[js.Array[Double]]): Self = StObject.set(x, "clipPointsByRect", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClipRectByRect(value: (ERectangle, ERectangle) => ERectangle): Self = StObject.set(x, "clipRectByRect", js.Any.fromFunction2(value))
+    inline def setClipRectByRect(value: (ERectangle, ERectangle) => ERectangle): Self = StObject.set(x, "clipRectByRect", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLinearGradient(value: LinearGradient): Self = StObject.set(x, "LinearGradient", value.asInstanceOf[js.Any])
+    inline def setLinearGradient(value: LinearGradient): Self = StObject.set(x, "LinearGradient", value.asInstanceOf[js.Any])
   }
 }

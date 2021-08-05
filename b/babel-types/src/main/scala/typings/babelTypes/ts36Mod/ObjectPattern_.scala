@@ -20,8 +20,7 @@ trait ObjectPattern_
 }
 object ObjectPattern_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     loc: SourceLocation,
     properties: js.Array[AssignmentProperty | RestProperty_],
@@ -32,22 +31,16 @@ object ObjectPattern_ {
     __obj.asInstanceOf[ObjectPattern_]
   }
   
-  @scala.inline
-  implicit class ObjectPattern_MutableBuilder[Self <: ObjectPattern_] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectPattern_](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Array[AssignmentProperty | RestProperty_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[AssignmentProperty | RestProperty_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(value: (AssignmentProperty | RestProperty_)*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: (AssignmentProperty | RestProperty_)*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ObjectPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ObjectPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
+    inline def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
   }
 }

@@ -12,10 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(opts: String, cb: Callback): js.Any = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(opts: Options, cb: Callback): js.Any = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(opts: String, cb: Callback): js.Any = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(opts: Options, cb: Callback): js.Any = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("bump-regex", JSImport.Namespace)
   @js.native
@@ -45,71 +43,50 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCase(value: Boolean): Self = StObject.set(x, "case", value.asInstanceOf[js.Any])
+      inline def setCase(value: Boolean): Self = StObject.set(x, "case", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseUndefined: Self = StObject.set(x, "case", js.undefined)
+      inline def setCaseUndefined: Self = StObject.set(x, "case", js.undefined)
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      @scala.inline
-      def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
       
-      @scala.inline
-      def setPreid(value: String): Self = StObject.set(x, "preid", value.asInstanceOf[js.Any])
+      inline def setPreid(value: String): Self = StObject.set(x, "preid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreidUndefined: Self = StObject.set(x, "preid", js.undefined)
+      inline def setPreidUndefined: Self = StObject.set(x, "preid", js.undefined)
       
-      @scala.inline
-      def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+      inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       
-      @scala.inline
-      def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
+      inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrUndefined: Self = StObject.set(x, "str", js.undefined)
+      inline def setStrUndefined: Self = StObject.set(x, "str", js.undefined)
       
-      @scala.inline
-      def setType(value: major | minor | patch | prerelease): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: major | minor | patch | prerelease): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -123,21 +100,17 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(`new`: String, prev: String): Result = {
+    inline def apply(`new`: String, prev: String): Result = {
       val __obj = js.Dynamic.literal(prev = prev.asInstanceOf[js.Any])
       __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setNew(value: String): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
+      inline def setNew(value: String): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     }
   }
 }

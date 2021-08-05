@@ -21,6 +21,5 @@ object documentScan {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def scan(options: DocumentScanOptions, callback: js.Function1[/* result */ DocumentScanCallbackArg, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scan(options: DocumentScanOptions, callback: js.Function1[/* result */ DocumentScanCallbackArg, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

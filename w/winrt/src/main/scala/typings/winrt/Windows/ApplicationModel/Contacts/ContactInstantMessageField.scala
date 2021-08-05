@@ -10,8 +10,7 @@ trait ContactInstantMessageField
      with IContactInstantMessageField
 object ContactInstantMessageField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     category: ContactFieldCategory,
     displayText: String,
     launchUri: Uri,

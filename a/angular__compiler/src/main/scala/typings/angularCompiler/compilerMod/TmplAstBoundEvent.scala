@@ -54,6 +54,5 @@ object TmplAstBoundEvent {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromParsedEvent(event: typings.angularCompiler.astMod.ParsedEvent): BoundEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedEvent")(event.asInstanceOf[js.Any]).asInstanceOf[BoundEvent]
+  inline def fromParsedEvent(event: typings.angularCompiler.astMod.ParsedEvent): BoundEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedEvent")(event.asInstanceOf[js.Any]).asInstanceOf[BoundEvent]
 }

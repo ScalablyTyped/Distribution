@@ -13,19 +13,15 @@ trait DescribeConnectionsRequest extends StObject {
 }
 object DescribeConnectionsRequest {
   
-  @scala.inline
-  def apply(): DescribeConnectionsRequest = {
+  inline def apply(): DescribeConnectionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConnectionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConnectionsRequestMutableBuilder[Self <: DescribeConnectionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConnectionsRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
+    inline def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
   }
 }

@@ -32,34 +32,25 @@ trait EndpointAddress extends StObject {
 }
 object EndpointAddress {
   
-  @scala.inline
-  def apply(ip: Input[String]): EndpointAddress = {
+  inline def apply(ip: Input[String]): EndpointAddress = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointAddress]
   }
   
-  @scala.inline
-  implicit class EndpointAddressMutableBuilder[Self <: EndpointAddress] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointAddress](x: Self) {
     
-    @scala.inline
-    def setHostname(value: Input[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: Input[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
-    @scala.inline
-    def setIp(value: Input[String]): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: Input[String]): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeName(value: Input[String]): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: Input[String]): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeNameUndefined: Self = StObject.set(x, "nodeName", js.undefined)
+    inline def setNodeNameUndefined: Self = StObject.set(x, "nodeName", js.undefined)
     
-    @scala.inline
-    def setTargetRef(value: Input[ObjectReference]): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+    inline def setTargetRef(value: Input[ObjectReference]): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+    inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
   }
 }

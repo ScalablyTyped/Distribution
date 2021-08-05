@@ -11,6 +11,5 @@ object fsJetpackBooleans {
   sealed trait `false`
     extends StObject
        with ExistsResult
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

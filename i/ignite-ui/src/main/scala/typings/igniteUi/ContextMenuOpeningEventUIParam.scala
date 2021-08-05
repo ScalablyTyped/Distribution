@@ -18,25 +18,19 @@ trait ContextMenuOpeningEventUIParam extends StObject {
 }
 object ContextMenuOpeningEventUIParam {
   
-  @scala.inline
-  def apply(): ContextMenuOpeningEventUIParam = {
+  inline def apply(): ContextMenuOpeningEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContextMenuOpeningEventUIParam]
   }
   
-  @scala.inline
-  implicit class ContextMenuOpeningEventUIParamMutableBuilder[Self <: ContextMenuOpeningEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ContextMenuOpeningEventUIParam](x: Self) {
     
-    @scala.inline
-    def setMenuArea(value: String): Self = StObject.set(x, "menuArea", value.asInstanceOf[js.Any])
+    inline def setMenuArea(value: String): Self = StObject.set(x, "menuArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuAreaUndefined: Self = StObject.set(x, "menuArea", js.undefined)
+    inline def setMenuAreaUndefined: Self = StObject.set(x, "menuArea", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

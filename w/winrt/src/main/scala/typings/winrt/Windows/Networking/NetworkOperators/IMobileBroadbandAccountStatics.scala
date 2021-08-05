@@ -13,8 +13,7 @@ trait IMobileBroadbandAccountStatics extends StObject {
 }
 object IMobileBroadbandAccountStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     availableNetworkAccountIds: IVectorView[String],
     createFromNetworkAccountId: String => MobileBroadbandAccount
   ): IMobileBroadbandAccountStatics = {
@@ -22,13 +21,10 @@ object IMobileBroadbandAccountStatics {
     __obj.asInstanceOf[IMobileBroadbandAccountStatics]
   }
   
-  @scala.inline
-  implicit class IMobileBroadbandAccountStaticsMutableBuilder[Self <: IMobileBroadbandAccountStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IMobileBroadbandAccountStatics](x: Self) {
     
-    @scala.inline
-    def setAvailableNetworkAccountIds(value: IVectorView[String]): Self = StObject.set(x, "availableNetworkAccountIds", value.asInstanceOf[js.Any])
+    inline def setAvailableNetworkAccountIds(value: IVectorView[String]): Self = StObject.set(x, "availableNetworkAccountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFromNetworkAccountId(value: String => MobileBroadbandAccount): Self = StObject.set(x, "createFromNetworkAccountId", js.Any.fromFunction1(value))
+    inline def setCreateFromNetworkAccountId(value: String => MobileBroadbandAccount): Self = StObject.set(x, "createFromNetworkAccountId", js.Any.fromFunction1(value))
   }
 }

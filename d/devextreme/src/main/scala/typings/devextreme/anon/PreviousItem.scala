@@ -20,43 +20,31 @@ trait PreviousItem extends StObject {
 }
 object PreviousItem {
   
-  @scala.inline
-  def apply(): PreviousItem = {
+  inline def apply(): PreviousItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PreviousItem]
   }
   
-  @scala.inline
-  implicit class PreviousItemMutableBuilder[Self <: PreviousItem] (val x: Self) extends AnyVal {
+  extension [Self <: PreviousItem](x: Self) {
     
-    @scala.inline
-    def setComponent(value: dxDropDownButton): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxDropDownButton): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setPreviousItem(value: js.Any): Self = StObject.set(x, "previousItem", value.asInstanceOf[js.Any])
+    inline def setPreviousItem(value: js.Any): Self = StObject.set(x, "previousItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousItemUndefined: Self = StObject.set(x, "previousItem", js.undefined)
+    inline def setPreviousItemUndefined: Self = StObject.set(x, "previousItem", js.undefined)
   }
 }

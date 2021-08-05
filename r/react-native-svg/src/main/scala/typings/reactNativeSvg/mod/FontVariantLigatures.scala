@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontVariantLigatures extends StObject
 object FontVariantLigatures {
   
-  @scala.inline
-  def none: typings.reactNativeSvg.reactNativeSvgStrings.none = "none".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.none]
+  inline def none: typings.reactNativeSvg.reactNativeSvgStrings.none = "none".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.none]
   
-  @scala.inline
-  def normal: typings.reactNativeSvg.reactNativeSvgStrings.normal = "normal".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.normal]
+  inline def normal: typings.reactNativeSvg.reactNativeSvgStrings.normal = "normal".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.normal]
 }

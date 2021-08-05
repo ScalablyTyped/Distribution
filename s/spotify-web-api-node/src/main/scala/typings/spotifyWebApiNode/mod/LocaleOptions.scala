@@ -12,19 +12,15 @@ trait LocaleOptions
 }
 object LocaleOptions {
   
-  @scala.inline
-  def apply(): LocaleOptions = {
+  inline def apply(): LocaleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocaleOptions]
   }
   
-  @scala.inline
-  implicit class LocaleOptionsMutableBuilder[Self <: LocaleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocaleOptions](x: Self) {
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

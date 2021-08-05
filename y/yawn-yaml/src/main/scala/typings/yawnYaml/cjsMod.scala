@@ -38,26 +38,20 @@ object cjsMod {
   }
   object YAWN {
     
-    @scala.inline
-    def apply(getRemark: String => String, json: js.Any, setRemark: (String, String) => Boolean, yaml: String): YAWN = {
+    inline def apply(getRemark: String => String, json: js.Any, setRemark: (String, String) => Boolean, yaml: String): YAWN = {
       val __obj = js.Dynamic.literal(getRemark = js.Any.fromFunction1(getRemark), json = json.asInstanceOf[js.Any], setRemark = js.Any.fromFunction2(setRemark), yaml = yaml.asInstanceOf[js.Any])
       __obj.asInstanceOf[YAWN]
     }
     
-    @scala.inline
-    implicit class YAWNMutableBuilder[Self <: YAWN] (val x: Self) extends AnyVal {
+    extension [Self <: YAWN](x: Self) {
       
-      @scala.inline
-      def setGetRemark(value: String => String): Self = StObject.set(x, "getRemark", js.Any.fromFunction1(value))
+      inline def setGetRemark(value: String => String): Self = StObject.set(x, "getRemark", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetRemark(value: (String, String) => Boolean): Self = StObject.set(x, "setRemark", js.Any.fromFunction2(value))
+      inline def setSetRemark(value: (String, String) => Boolean): Self = StObject.set(x, "setRemark", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setYaml(value: String): Self = StObject.set(x, "yaml", value.asInstanceOf[js.Any])
+      inline def setYaml(value: String): Self = StObject.set(x, "yaml", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -21,25 +21,19 @@ trait SchemaTlsCertificatePaths extends StObject {
 }
 object SchemaTlsCertificatePaths {
   
-  @scala.inline
-  def apply(): SchemaTlsCertificatePaths = {
+  inline def apply(): SchemaTlsCertificatePaths = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTlsCertificatePaths]
   }
   
-  @scala.inline
-  implicit class SchemaTlsCertificatePathsMutableBuilder[Self <: SchemaTlsCertificatePaths] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTlsCertificatePaths](x: Self) {
     
-    @scala.inline
-    def setCertificatePath(value: String): Self = StObject.set(x, "certificatePath", value.asInstanceOf[js.Any])
+    inline def setCertificatePath(value: String): Self = StObject.set(x, "certificatePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatePathUndefined: Self = StObject.set(x, "certificatePath", js.undefined)
+    inline def setCertificatePathUndefined: Self = StObject.set(x, "certificatePath", js.undefined)
     
-    @scala.inline
-    def setPrivateKeyPath(value: String): Self = StObject.set(x, "privateKeyPath", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyPath(value: String): Self = StObject.set(x, "privateKeyPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyPathUndefined: Self = StObject.set(x, "privateKeyPath", js.undefined)
+    inline def setPrivateKeyPathUndefined: Self = StObject.set(x, "privateKeyPath", js.undefined)
   }
 }

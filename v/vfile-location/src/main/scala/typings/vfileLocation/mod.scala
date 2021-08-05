@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(vfile: String): Location = ^.asInstanceOf[js.Dynamic].apply(vfile.asInstanceOf[js.Any]).asInstanceOf[Location]
-  @scala.inline
-  def apply(vfile: VFile): Location = ^.asInstanceOf[js.Dynamic].apply(vfile.asInstanceOf[js.Any]).asInstanceOf[Location]
+  inline def apply(vfile: String): Location = ^.asInstanceOf[js.Dynamic].apply(vfile.asInstanceOf[js.Any]).asInstanceOf[Location]
+  inline def apply(vfile: VFile): Location = ^.asInstanceOf[js.Dynamic].apply(vfile.asInstanceOf[js.Any]).asInstanceOf[Location]
   
   @JSImport("vfile-location", JSImport.Namespace)
   @js.native
@@ -33,20 +31,16 @@ object mod {
   }
   object Location {
     
-    @scala.inline
-    def apply(toOffset: Column => Double, toPosition: Double => Line): Location = {
+    inline def apply(toOffset: Column => Double, toPosition: Double => Line): Location = {
       val __obj = js.Dynamic.literal(toOffset = js.Any.fromFunction1(toOffset), toPosition = js.Any.fromFunction1(toPosition))
       __obj.asInstanceOf[Location]
     }
     
-    @scala.inline
-    implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+    extension [Self <: Location](x: Self) {
       
-      @scala.inline
-      def setToOffset(value: Column => Double): Self = StObject.set(x, "toOffset", js.Any.fromFunction1(value))
+      inline def setToOffset(value: Column => Double): Self = StObject.set(x, "toOffset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToPosition(value: Double => Line): Self = StObject.set(x, "toPosition", js.Any.fromFunction1(value))
+      inline def setToPosition(value: Double => Line): Self = StObject.set(x, "toPosition", js.Any.fromFunction1(value))
     }
   }
 }

@@ -286,8 +286,7 @@ trait AddAppAccessRestrictions extends StObject {
 }
 object AddAppAccessRestrictions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acceptInvitation: `892`,
     addAppAccessRestrictions: `893`,
     addCollaborator: `894`,
@@ -432,424 +431,284 @@ object AddAppAccessRestrictions {
     __obj.asInstanceOf[AddAppAccessRestrictions]
   }
   
-  @scala.inline
-  implicit class AddAppAccessRestrictionsMutableBuilder[Self <: AddAppAccessRestrictions] (val x: Self) extends AnyVal {
+  extension [Self <: AddAppAccessRestrictions](x: Self) {
     
-    @scala.inline
-    def setAcceptInvitation(value: `892`): Self = StObject.set(x, "acceptInvitation", value.asInstanceOf[js.Any])
+    inline def setAcceptInvitation(value: `892`): Self = StObject.set(x, "acceptInvitation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddAppAccessRestrictions(value: `893`): Self = StObject.set(x, "addAppAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setAddAppAccessRestrictions(value: `893`): Self = StObject.set(x, "addAppAccessRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddCollaborator(value: `894`): Self = StObject.set(x, "addCollaborator", value.asInstanceOf[js.Any])
+    inline def setAddCollaborator(value: `894`): Self = StObject.set(x, "addCollaborator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddStatusCheckContexts(value: `895`): Self = StObject.set(x, "addStatusCheckContexts", value.asInstanceOf[js.Any])
+    inline def setAddStatusCheckContexts(value: `895`): Self = StObject.set(x, "addStatusCheckContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddTeamAccessRestrictions(value: `896`): Self = StObject.set(x, "addTeamAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setAddTeamAccessRestrictions(value: `896`): Self = StObject.set(x, "addTeamAccessRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddUserAccessRestrictions(value: `897`): Self = StObject.set(x, "addUserAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setAddUserAccessRestrictions(value: `897`): Self = StObject.set(x, "addUserAccessRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckCollaborator(value: `898`): Self = StObject.set(x, "checkCollaborator", value.asInstanceOf[js.Any])
+    inline def setCheckCollaborator(value: `898`): Self = StObject.set(x, "checkCollaborator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckVulnerabilityAlerts(value: `899`): Self = StObject.set(x, "checkVulnerabilityAlerts", value.asInstanceOf[js.Any])
+    inline def setCheckVulnerabilityAlerts(value: `899`): Self = StObject.set(x, "checkVulnerabilityAlerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareCommits(value: `900`): Self = StObject.set(x, "compareCommits", value.asInstanceOf[js.Any])
+    inline def setCompareCommits(value: `900`): Self = StObject.set(x, "compareCommits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateCommitComment(value: `901`): Self = StObject.set(x, "createCommitComment", value.asInstanceOf[js.Any])
+    inline def setCreateCommitComment(value: `901`): Self = StObject.set(x, "createCommitComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateCommitSignatureProtection(value: `902`): Self = StObject.set(x, "createCommitSignatureProtection", value.asInstanceOf[js.Any])
+    inline def setCreateCommitSignatureProtection(value: `902`): Self = StObject.set(x, "createCommitSignatureProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateCommitStatus(value: `903`): Self = StObject.set(x, "createCommitStatus", value.asInstanceOf[js.Any])
+    inline def setCreateCommitStatus(value: `903`): Self = StObject.set(x, "createCommitStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDeployKey(value: `904`): Self = StObject.set(x, "createDeployKey", value.asInstanceOf[js.Any])
+    inline def setCreateDeployKey(value: `904`): Self = StObject.set(x, "createDeployKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDeployment(value: `905`): Self = StObject.set(x, "createDeployment", value.asInstanceOf[js.Any])
+    inline def setCreateDeployment(value: `905`): Self = StObject.set(x, "createDeployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDeploymentStatus(value: `906`): Self = StObject.set(x, "createDeploymentStatus", value.asInstanceOf[js.Any])
+    inline def setCreateDeploymentStatus(value: `906`): Self = StObject.set(x, "createDeploymentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDispatchEvent(value: `907`): Self = StObject.set(x, "createDispatchEvent", value.asInstanceOf[js.Any])
+    inline def setCreateDispatchEvent(value: `907`): Self = StObject.set(x, "createDispatchEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateForAuthenticatedUser(value: `908`): Self = StObject.set(x, "createForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setCreateForAuthenticatedUser(value: `908`): Self = StObject.set(x, "createForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFork(value: `909`): Self = StObject.set(x, "createFork", value.asInstanceOf[js.Any])
+    inline def setCreateFork(value: `909`): Self = StObject.set(x, "createFork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateInOrg(value: `910`): Self = StObject.set(x, "createInOrg", value.asInstanceOf[js.Any])
+    inline def setCreateInOrg(value: `910`): Self = StObject.set(x, "createInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateOrUpdateFileContents(value: `911`): Self = StObject.set(x, "createOrUpdateFileContents", value.asInstanceOf[js.Any])
+    inline def setCreateOrUpdateFileContents(value: `911`): Self = StObject.set(x, "createOrUpdateFileContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatePagesSite(value: `912`): Self = StObject.set(x, "createPagesSite", value.asInstanceOf[js.Any])
+    inline def setCreatePagesSite(value: `912`): Self = StObject.set(x, "createPagesSite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateRelease(value: `913`): Self = StObject.set(x, "createRelease", value.asInstanceOf[js.Any])
+    inline def setCreateRelease(value: `913`): Self = StObject.set(x, "createRelease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUsingTemplate(value: `914`): Self = StObject.set(x, "createUsingTemplate", value.asInstanceOf[js.Any])
+    inline def setCreateUsingTemplate(value: `914`): Self = StObject.set(x, "createUsingTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateWebhook(value: `915`): Self = StObject.set(x, "createWebhook", value.asInstanceOf[js.Any])
+    inline def setCreateWebhook(value: `915`): Self = StObject.set(x, "createWebhook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclineInvitation(value: `916`): Self = StObject.set(x, "declineInvitation", value.asInstanceOf[js.Any])
+    inline def setDeclineInvitation(value: `916`): Self = StObject.set(x, "declineInvitation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: `917`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: `917`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteAccessRestrictions(value: `918`): Self = StObject.set(x, "deleteAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setDeleteAccessRestrictions(value: `918`): Self = StObject.set(x, "deleteAccessRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteAdminBranchProtection(value: `919`): Self = StObject.set(x, "deleteAdminBranchProtection", value.asInstanceOf[js.Any])
+    inline def setDeleteAdminBranchProtection(value: `919`): Self = StObject.set(x, "deleteAdminBranchProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteBranchProtection(value: `920`): Self = StObject.set(x, "deleteBranchProtection", value.asInstanceOf[js.Any])
+    inline def setDeleteBranchProtection(value: `920`): Self = StObject.set(x, "deleteBranchProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteCommitComment(value: `921`): Self = StObject.set(x, "deleteCommitComment", value.asInstanceOf[js.Any])
+    inline def setDeleteCommitComment(value: `921`): Self = StObject.set(x, "deleteCommitComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteCommitSignatureProtection(value: `922`): Self = StObject.set(x, "deleteCommitSignatureProtection", value.asInstanceOf[js.Any])
+    inline def setDeleteCommitSignatureProtection(value: `922`): Self = StObject.set(x, "deleteCommitSignatureProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteDeployKey(value: `923`): Self = StObject.set(x, "deleteDeployKey", value.asInstanceOf[js.Any])
+    inline def setDeleteDeployKey(value: `923`): Self = StObject.set(x, "deleteDeployKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteDeployment(value: `924`): Self = StObject.set(x, "deleteDeployment", value.asInstanceOf[js.Any])
+    inline def setDeleteDeployment(value: `924`): Self = StObject.set(x, "deleteDeployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteFile(value: `925`): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
+    inline def setDeleteFile(value: `925`): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteInvitation(value: `926`): Self = StObject.set(x, "deleteInvitation", value.asInstanceOf[js.Any])
+    inline def setDeleteInvitation(value: `926`): Self = StObject.set(x, "deleteInvitation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletePagesSite(value: `927`): Self = StObject.set(x, "deletePagesSite", value.asInstanceOf[js.Any])
+    inline def setDeletePagesSite(value: `927`): Self = StObject.set(x, "deletePagesSite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletePullRequestReviewProtection(value: `928`): Self = StObject.set(x, "deletePullRequestReviewProtection", value.asInstanceOf[js.Any])
+    inline def setDeletePullRequestReviewProtection(value: `928`): Self = StObject.set(x, "deletePullRequestReviewProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteRelease(value: `929`): Self = StObject.set(x, "deleteRelease", value.asInstanceOf[js.Any])
+    inline def setDeleteRelease(value: `929`): Self = StObject.set(x, "deleteRelease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteReleaseAsset(value: `930`): Self = StObject.set(x, "deleteReleaseAsset", value.asInstanceOf[js.Any])
+    inline def setDeleteReleaseAsset(value: `930`): Self = StObject.set(x, "deleteReleaseAsset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteWebhook(value: `931`): Self = StObject.set(x, "deleteWebhook", value.asInstanceOf[js.Any])
+    inline def setDeleteWebhook(value: `931`): Self = StObject.set(x, "deleteWebhook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableAutomatedSecurityFixes(value: `932`): Self = StObject.set(x, "disableAutomatedSecurityFixes", value.asInstanceOf[js.Any])
+    inline def setDisableAutomatedSecurityFixes(value: `932`): Self = StObject.set(x, "disableAutomatedSecurityFixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableVulnerabilityAlerts(value: `933`): Self = StObject.set(x, "disableVulnerabilityAlerts", value.asInstanceOf[js.Any])
+    inline def setDisableVulnerabilityAlerts(value: `933`): Self = StObject.set(x, "disableVulnerabilityAlerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadArchive(value: `934`): Self = StObject.set(x, "downloadArchive", value.asInstanceOf[js.Any])
+    inline def setDownloadArchive(value: `934`): Self = StObject.set(x, "downloadArchive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAutomatedSecurityFixes(value: `935`): Self = StObject.set(x, "enableAutomatedSecurityFixes", value.asInstanceOf[js.Any])
+    inline def setEnableAutomatedSecurityFixes(value: `935`): Self = StObject.set(x, "enableAutomatedSecurityFixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableVulnerabilityAlerts(value: `936`): Self = StObject.set(x, "enableVulnerabilityAlerts", value.asInstanceOf[js.Any])
+    inline def setEnableVulnerabilityAlerts(value: `936`): Self = StObject.set(x, "enableVulnerabilityAlerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: `937`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `937`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAccessRestrictions(value: `938`): Self = StObject.set(x, "getAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setGetAccessRestrictions(value: `938`): Self = StObject.set(x, "getAccessRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAdminBranchProtection(value: `939`): Self = StObject.set(x, "getAdminBranchProtection", value.asInstanceOf[js.Any])
+    inline def setGetAdminBranchProtection(value: `939`): Self = StObject.set(x, "getAdminBranchProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAllStatusCheckContexts(value: `940`): Self = StObject.set(x, "getAllStatusCheckContexts", value.asInstanceOf[js.Any])
+    inline def setGetAllStatusCheckContexts(value: `940`): Self = StObject.set(x, "getAllStatusCheckContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAllTopics(value: `941`): Self = StObject.set(x, "getAllTopics", value.asInstanceOf[js.Any])
+    inline def setGetAllTopics(value: `941`): Self = StObject.set(x, "getAllTopics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAppsWithAccessToProtectedBranch(value: `942`): Self = StObject.set(x, "getAppsWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
+    inline def setGetAppsWithAccessToProtectedBranch(value: `942`): Self = StObject.set(x, "getAppsWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBranch(value: `943`): Self = StObject.set(x, "getBranch", value.asInstanceOf[js.Any])
+    inline def setGetBranch(value: `943`): Self = StObject.set(x, "getBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBranchProtection(value: `944`): Self = StObject.set(x, "getBranchProtection", value.asInstanceOf[js.Any])
+    inline def setGetBranchProtection(value: `944`): Self = StObject.set(x, "getBranchProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetClones(value: `945`): Self = StObject.set(x, "getClones", value.asInstanceOf[js.Any])
+    inline def setGetClones(value: `945`): Self = StObject.set(x, "getClones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCodeFrequencyStats(value: `946`): Self = StObject.set(x, "getCodeFrequencyStats", value.asInstanceOf[js.Any])
+    inline def setGetCodeFrequencyStats(value: `946`): Self = StObject.set(x, "getCodeFrequencyStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCollaboratorPermissionLevel(value: `947`): Self = StObject.set(x, "getCollaboratorPermissionLevel", value.asInstanceOf[js.Any])
+    inline def setGetCollaboratorPermissionLevel(value: `947`): Self = StObject.set(x, "getCollaboratorPermissionLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCombinedStatusForRef(value: `948`): Self = StObject.set(x, "getCombinedStatusForRef", value.asInstanceOf[js.Any])
+    inline def setGetCombinedStatusForRef(value: `948`): Self = StObject.set(x, "getCombinedStatusForRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCommit(value: `949`): Self = StObject.set(x, "getCommit", value.asInstanceOf[js.Any])
+    inline def setGetCommit(value: `949`): Self = StObject.set(x, "getCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCommitActivityStats(value: `950`): Self = StObject.set(x, "getCommitActivityStats", value.asInstanceOf[js.Any])
+    inline def setGetCommitActivityStats(value: `950`): Self = StObject.set(x, "getCommitActivityStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCommitComment(value: `951`): Self = StObject.set(x, "getCommitComment", value.asInstanceOf[js.Any])
+    inline def setGetCommitComment(value: `951`): Self = StObject.set(x, "getCommitComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCommitSignatureProtection(value: `952`): Self = StObject.set(x, "getCommitSignatureProtection", value.asInstanceOf[js.Any])
+    inline def setGetCommitSignatureProtection(value: `952`): Self = StObject.set(x, "getCommitSignatureProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCommunityProfileMetrics(value: `953`): Self = StObject.set(x, "getCommunityProfileMetrics", value.asInstanceOf[js.Any])
+    inline def setGetCommunityProfileMetrics(value: `953`): Self = StObject.set(x, "getCommunityProfileMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContent(value: `954`): Self = StObject.set(x, "getContent", value.asInstanceOf[js.Any])
+    inline def setGetContent(value: `954`): Self = StObject.set(x, "getContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContributorsStats(value: `955`): Self = StObject.set(x, "getContributorsStats", value.asInstanceOf[js.Any])
+    inline def setGetContributorsStats(value: `955`): Self = StObject.set(x, "getContributorsStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeployKey(value: `956`): Self = StObject.set(x, "getDeployKey", value.asInstanceOf[js.Any])
+    inline def setGetDeployKey(value: `956`): Self = StObject.set(x, "getDeployKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeployment(value: `957`): Self = StObject.set(x, "getDeployment", value.asInstanceOf[js.Any])
+    inline def setGetDeployment(value: `957`): Self = StObject.set(x, "getDeployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeploymentStatus(value: `958`): Self = StObject.set(x, "getDeploymentStatus", value.asInstanceOf[js.Any])
+    inline def setGetDeploymentStatus(value: `958`): Self = StObject.set(x, "getDeploymentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetLatestPagesBuild(value: `959`): Self = StObject.set(x, "getLatestPagesBuild", value.asInstanceOf[js.Any])
+    inline def setGetLatestPagesBuild(value: `959`): Self = StObject.set(x, "getLatestPagesBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetLatestRelease(value: `960`): Self = StObject.set(x, "getLatestRelease", value.asInstanceOf[js.Any])
+    inline def setGetLatestRelease(value: `960`): Self = StObject.set(x, "getLatestRelease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPages(value: `961`): Self = StObject.set(x, "getPages", value.asInstanceOf[js.Any])
+    inline def setGetPages(value: `961`): Self = StObject.set(x, "getPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPagesBuild(value: `962`): Self = StObject.set(x, "getPagesBuild", value.asInstanceOf[js.Any])
+    inline def setGetPagesBuild(value: `962`): Self = StObject.set(x, "getPagesBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetParticipationStats(value: `963`): Self = StObject.set(x, "getParticipationStats", value.asInstanceOf[js.Any])
+    inline def setGetParticipationStats(value: `963`): Self = StObject.set(x, "getParticipationStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPullRequestReviewProtection(value: `964`): Self = StObject.set(x, "getPullRequestReviewProtection", value.asInstanceOf[js.Any])
+    inline def setGetPullRequestReviewProtection(value: `964`): Self = StObject.set(x, "getPullRequestReviewProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPunchCardStats(value: `965`): Self = StObject.set(x, "getPunchCardStats", value.asInstanceOf[js.Any])
+    inline def setGetPunchCardStats(value: `965`): Self = StObject.set(x, "getPunchCardStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetReadme(value: `966`): Self = StObject.set(x, "getReadme", value.asInstanceOf[js.Any])
+    inline def setGetReadme(value: `966`): Self = StObject.set(x, "getReadme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRelease(value: `967`): Self = StObject.set(x, "getRelease", value.asInstanceOf[js.Any])
+    inline def setGetRelease(value: `967`): Self = StObject.set(x, "getRelease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetReleaseAsset(value: `968`): Self = StObject.set(x, "getReleaseAsset", value.asInstanceOf[js.Any])
+    inline def setGetReleaseAsset(value: `968`): Self = StObject.set(x, "getReleaseAsset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetReleaseByTag(value: `969`): Self = StObject.set(x, "getReleaseByTag", value.asInstanceOf[js.Any])
+    inline def setGetReleaseByTag(value: `969`): Self = StObject.set(x, "getReleaseByTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetStatusChecksProtection(value: `970`): Self = StObject.set(x, "getStatusChecksProtection", value.asInstanceOf[js.Any])
+    inline def setGetStatusChecksProtection(value: `970`): Self = StObject.set(x, "getStatusChecksProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTeamsWithAccessToProtectedBranch(value: `971`): Self = StObject.set(x, "getTeamsWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
+    inline def setGetTeamsWithAccessToProtectedBranch(value: `971`): Self = StObject.set(x, "getTeamsWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTopPaths(value: `972`): Self = StObject.set(x, "getTopPaths", value.asInstanceOf[js.Any])
+    inline def setGetTopPaths(value: `972`): Self = StObject.set(x, "getTopPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTopReferrers(value: `973`): Self = StObject.set(x, "getTopReferrers", value.asInstanceOf[js.Any])
+    inline def setGetTopReferrers(value: `973`): Self = StObject.set(x, "getTopReferrers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetUsersWithAccessToProtectedBranch(value: `974`): Self = StObject.set(x, "getUsersWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
+    inline def setGetUsersWithAccessToProtectedBranch(value: `974`): Self = StObject.set(x, "getUsersWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetViews(value: `975`): Self = StObject.set(x, "getViews", value.asInstanceOf[js.Any])
+    inline def setGetViews(value: `975`): Self = StObject.set(x, "getViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetWebhook(value: `976`): Self = StObject.set(x, "getWebhook", value.asInstanceOf[js.Any])
+    inline def setGetWebhook(value: `976`): Self = StObject.set(x, "getWebhook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListBranches(value: `977`): Self = StObject.set(x, "listBranches", value.asInstanceOf[js.Any])
+    inline def setListBranches(value: `977`): Self = StObject.set(x, "listBranches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListBranchesForHeadCommit(value: `978`): Self = StObject.set(x, "listBranchesForHeadCommit", value.asInstanceOf[js.Any])
+    inline def setListBranchesForHeadCommit(value: `978`): Self = StObject.set(x, "listBranchesForHeadCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListCollaborators(value: `979`): Self = StObject.set(x, "listCollaborators", value.asInstanceOf[js.Any])
+    inline def setListCollaborators(value: `979`): Self = StObject.set(x, "listCollaborators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListCommentsForCommit(value: `980`): Self = StObject.set(x, "listCommentsForCommit", value.asInstanceOf[js.Any])
+    inline def setListCommentsForCommit(value: `980`): Self = StObject.set(x, "listCommentsForCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListCommitCommentsForRepo(value: `981`): Self = StObject.set(x, "listCommitCommentsForRepo", value.asInstanceOf[js.Any])
+    inline def setListCommitCommentsForRepo(value: `981`): Self = StObject.set(x, "listCommitCommentsForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListCommitStatusesForRef(value: `982`): Self = StObject.set(x, "listCommitStatusesForRef", value.asInstanceOf[js.Any])
+    inline def setListCommitStatusesForRef(value: `982`): Self = StObject.set(x, "listCommitStatusesForRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListCommits(value: `983`): Self = StObject.set(x, "listCommits", value.asInstanceOf[js.Any])
+    inline def setListCommits(value: `983`): Self = StObject.set(x, "listCommits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListContributors(value: `984`): Self = StObject.set(x, "listContributors", value.asInstanceOf[js.Any])
+    inline def setListContributors(value: `984`): Self = StObject.set(x, "listContributors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListDeployKeys(value: `985`): Self = StObject.set(x, "listDeployKeys", value.asInstanceOf[js.Any])
+    inline def setListDeployKeys(value: `985`): Self = StObject.set(x, "listDeployKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListDeploymentStatuses(value: `986`): Self = StObject.set(x, "listDeploymentStatuses", value.asInstanceOf[js.Any])
+    inline def setListDeploymentStatuses(value: `986`): Self = StObject.set(x, "listDeploymentStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListDeployments(value: `987`): Self = StObject.set(x, "listDeployments", value.asInstanceOf[js.Any])
+    inline def setListDeployments(value: `987`): Self = StObject.set(x, "listDeployments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForAuthenticatedUser(value: `988`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListForAuthenticatedUser(value: `988`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForOrg(value: `989`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
+    inline def setListForOrg(value: `989`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForUser(value: `990`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
+    inline def setListForUser(value: `990`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForks(value: `991`): Self = StObject.set(x, "listForks", value.asInstanceOf[js.Any])
+    inline def setListForks(value: `991`): Self = StObject.set(x, "listForks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListInvitations(value: `992`): Self = StObject.set(x, "listInvitations", value.asInstanceOf[js.Any])
+    inline def setListInvitations(value: `992`): Self = StObject.set(x, "listInvitations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListInvitationsForAuthenticatedUser(value: `993`): Self = StObject.set(x, "listInvitationsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListInvitationsForAuthenticatedUser(value: `993`): Self = StObject.set(x, "listInvitationsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListLanguages(value: `994`): Self = StObject.set(x, "listLanguages", value.asInstanceOf[js.Any])
+    inline def setListLanguages(value: `994`): Self = StObject.set(x, "listLanguages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPagesBuilds(value: `995`): Self = StObject.set(x, "listPagesBuilds", value.asInstanceOf[js.Any])
+    inline def setListPagesBuilds(value: `995`): Self = StObject.set(x, "listPagesBuilds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPublic(value: `996`): Self = StObject.set(x, "listPublic", value.asInstanceOf[js.Any])
+    inline def setListPublic(value: `996`): Self = StObject.set(x, "listPublic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPullRequestsAssociatedWithCommit(value: `997`): Self = StObject.set(x, "listPullRequestsAssociatedWithCommit", value.asInstanceOf[js.Any])
+    inline def setListPullRequestsAssociatedWithCommit(value: `997`): Self = StObject.set(x, "listPullRequestsAssociatedWithCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListReleaseAssets(value: `998`): Self = StObject.set(x, "listReleaseAssets", value.asInstanceOf[js.Any])
+    inline def setListReleaseAssets(value: `998`): Self = StObject.set(x, "listReleaseAssets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListReleases(value: `999`): Self = StObject.set(x, "listReleases", value.asInstanceOf[js.Any])
+    inline def setListReleases(value: `999`): Self = StObject.set(x, "listReleases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListTags(value: `1000`): Self = StObject.set(x, "listTags", value.asInstanceOf[js.Any])
+    inline def setListTags(value: `1000`): Self = StObject.set(x, "listTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListTeams(value: `1001`): Self = StObject.set(x, "listTeams", value.asInstanceOf[js.Any])
+    inline def setListTeams(value: `1001`): Self = StObject.set(x, "listTeams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListWebhooks(value: `1002`): Self = StObject.set(x, "listWebhooks", value.asInstanceOf[js.Any])
+    inline def setListWebhooks(value: `1002`): Self = StObject.set(x, "listWebhooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerge(value: `1003`): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: `1003`): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPingWebhook(value: `1004`): Self = StObject.set(x, "pingWebhook", value.asInstanceOf[js.Any])
+    inline def setPingWebhook(value: `1004`): Self = StObject.set(x, "pingWebhook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAppAccessRestrictions(value: `1005`): Self = StObject.set(x, "removeAppAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setRemoveAppAccessRestrictions(value: `1005`): Self = StObject.set(x, "removeAppAccessRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveCollaborator(value: `1006`): Self = StObject.set(x, "removeCollaborator", value.asInstanceOf[js.Any])
+    inline def setRemoveCollaborator(value: `1006`): Self = StObject.set(x, "removeCollaborator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveStatusCheckContexts(value: `1007`): Self = StObject.set(x, "removeStatusCheckContexts", value.asInstanceOf[js.Any])
+    inline def setRemoveStatusCheckContexts(value: `1007`): Self = StObject.set(x, "removeStatusCheckContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveStatusCheckProtection(value: `1008`): Self = StObject.set(x, "removeStatusCheckProtection", value.asInstanceOf[js.Any])
+    inline def setRemoveStatusCheckProtection(value: `1008`): Self = StObject.set(x, "removeStatusCheckProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveTeamAccessRestrictions(value: `1009`): Self = StObject.set(x, "removeTeamAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setRemoveTeamAccessRestrictions(value: `1009`): Self = StObject.set(x, "removeTeamAccessRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveUserAccessRestrictions(value: `1010`): Self = StObject.set(x, "removeUserAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setRemoveUserAccessRestrictions(value: `1010`): Self = StObject.set(x, "removeUserAccessRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceAllTopics(value: `1011`): Self = StObject.set(x, "replaceAllTopics", value.asInstanceOf[js.Any])
+    inline def setReplaceAllTopics(value: `1011`): Self = StObject.set(x, "replaceAllTopics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestPagesBuild(value: `1012`): Self = StObject.set(x, "requestPagesBuild", value.asInstanceOf[js.Any])
+    inline def setRequestPagesBuild(value: `1012`): Self = StObject.set(x, "requestPagesBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAdminBranchProtection(value: `1013`): Self = StObject.set(x, "setAdminBranchProtection", value.asInstanceOf[js.Any])
+    inline def setSetAdminBranchProtection(value: `1013`): Self = StObject.set(x, "setAdminBranchProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAppAccessRestrictions(value: `1014`): Self = StObject.set(x, "setAppAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setSetAppAccessRestrictions(value: `1014`): Self = StObject.set(x, "setAppAccessRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetStatusCheckContexts(value: `1015`): Self = StObject.set(x, "setStatusCheckContexts", value.asInstanceOf[js.Any])
+    inline def setSetStatusCheckContexts(value: `1015`): Self = StObject.set(x, "setStatusCheckContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetTeamAccessRestrictions(value: `1016`): Self = StObject.set(x, "setTeamAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setSetTeamAccessRestrictions(value: `1016`): Self = StObject.set(x, "setTeamAccessRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetUserAccessRestrictions(value: `1017`): Self = StObject.set(x, "setUserAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setSetUserAccessRestrictions(value: `1017`): Self = StObject.set(x, "setUserAccessRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPushWebhook(value: `1018`): Self = StObject.set(x, "testPushWebhook", value.asInstanceOf[js.Any])
+    inline def setTestPushWebhook(value: `1018`): Self = StObject.set(x, "testPushWebhook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransfer(value: `1019`): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
+    inline def setTransfer(value: `1019`): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: `1020`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: `1020`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateBranchProtection(value: `1021`): Self = StObject.set(x, "updateBranchProtection", value.asInstanceOf[js.Any])
+    inline def setUpdateBranchProtection(value: `1021`): Self = StObject.set(x, "updateBranchProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateCommitComment(value: `1022`): Self = StObject.set(x, "updateCommitComment", value.asInstanceOf[js.Any])
+    inline def setUpdateCommitComment(value: `1022`): Self = StObject.set(x, "updateCommitComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateInformationAboutPagesSite(value: `1023`): Self = StObject.set(x, "updateInformationAboutPagesSite", value.asInstanceOf[js.Any])
+    inline def setUpdateInformationAboutPagesSite(value: `1023`): Self = StObject.set(x, "updateInformationAboutPagesSite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateInvitation(value: `1024`): Self = StObject.set(x, "updateInvitation", value.asInstanceOf[js.Any])
+    inline def setUpdateInvitation(value: `1024`): Self = StObject.set(x, "updateInvitation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatePullRequestReviewProtection(value: `1025`): Self = StObject.set(x, "updatePullRequestReviewProtection", value.asInstanceOf[js.Any])
+    inline def setUpdatePullRequestReviewProtection(value: `1025`): Self = StObject.set(x, "updatePullRequestReviewProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateRelease(value: `1026`): Self = StObject.set(x, "updateRelease", value.asInstanceOf[js.Any])
+    inline def setUpdateRelease(value: `1026`): Self = StObject.set(x, "updateRelease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateReleaseAsset(value: `1027`): Self = StObject.set(x, "updateReleaseAsset", value.asInstanceOf[js.Any])
+    inline def setUpdateReleaseAsset(value: `1027`): Self = StObject.set(x, "updateReleaseAsset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateStatusCheckPotection(value: `1028`): Self = StObject.set(x, "updateStatusCheckPotection", value.asInstanceOf[js.Any])
+    inline def setUpdateStatusCheckPotection(value: `1028`): Self = StObject.set(x, "updateStatusCheckPotection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateWebhook(value: `1029`): Self = StObject.set(x, "updateWebhook", value.asInstanceOf[js.Any])
+    inline def setUpdateWebhook(value: `1029`): Self = StObject.set(x, "updateWebhook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadReleaseAsset(value: `1030`): Self = StObject.set(x, "uploadReleaseAsset", value.asInstanceOf[js.Any])
+    inline def setUploadReleaseAsset(value: `1030`): Self = StObject.set(x, "uploadReleaseAsset", value.asInstanceOf[js.Any])
   }
 }

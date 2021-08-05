@@ -21,20 +21,16 @@ object JQueryValidation {
   }
   object ErrorListItem {
     
-    @scala.inline
-    def apply(element: HTMLElement, message: String): ErrorListItem = {
+    inline def apply(element: HTMLElement, message: String): ErrorListItem = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorListItem]
     }
     
-    @scala.inline
-    implicit class ErrorListItemMutableBuilder[Self <: ErrorListItem] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorListItem](x: Self) {
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -252,188 +248,128 @@ object JQueryValidation {
   }
   object ValidationOptions {
     
-    @scala.inline
-    def apply(): ValidationOptions = {
+    inline def apply(): ValidationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidationOptions]
     }
     
-    @scala.inline
-    implicit class ValidationOptionsMutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setErrorClass(value: String): Self = StObject.set(x, "errorClass", value.asInstanceOf[js.Any])
+      inline def setErrorClass(value: String): Self = StObject.set(x, "errorClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorClassUndefined: Self = StObject.set(x, "errorClass", js.undefined)
+      inline def setErrorClassUndefined: Self = StObject.set(x, "errorClass", js.undefined)
       
-      @scala.inline
-      def setErrorContainer(value: String): Self = StObject.set(x, "errorContainer", value.asInstanceOf[js.Any])
+      inline def setErrorContainer(value: String): Self = StObject.set(x, "errorContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorContainerUndefined: Self = StObject.set(x, "errorContainer", js.undefined)
+      inline def setErrorContainerUndefined: Self = StObject.set(x, "errorContainer", js.undefined)
       
-      @scala.inline
-      def setErrorElement(value: String): Self = StObject.set(x, "errorElement", value.asInstanceOf[js.Any])
+      inline def setErrorElement(value: String): Self = StObject.set(x, "errorElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorElementUndefined: Self = StObject.set(x, "errorElement", js.undefined)
+      inline def setErrorElementUndefined: Self = StObject.set(x, "errorElement", js.undefined)
       
-      @scala.inline
-      def setErrorLabelContainer(value: String): Self = StObject.set(x, "errorLabelContainer", value.asInstanceOf[js.Any])
+      inline def setErrorLabelContainer(value: String): Self = StObject.set(x, "errorLabelContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorLabelContainerUndefined: Self = StObject.set(x, "errorLabelContainer", js.undefined)
+      inline def setErrorLabelContainerUndefined: Self = StObject.set(x, "errorLabelContainer", js.undefined)
       
-      @scala.inline
-      def setErrorPlacement(value: (/* error */ JQuery, /* element */ JQuery) => Unit): Self = StObject.set(x, "errorPlacement", js.Any.fromFunction2(value))
+      inline def setErrorPlacement(value: (/* error */ JQuery, /* element */ JQuery) => Unit): Self = StObject.set(x, "errorPlacement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorPlacementUndefined: Self = StObject.set(x, "errorPlacement", js.undefined)
+      inline def setErrorPlacementUndefined: Self = StObject.set(x, "errorPlacement", js.undefined)
       
-      @scala.inline
-      def setFocusCleanup(value: Boolean): Self = StObject.set(x, "focusCleanup", value.asInstanceOf[js.Any])
+      inline def setFocusCleanup(value: Boolean): Self = StObject.set(x, "focusCleanup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusCleanupUndefined: Self = StObject.set(x, "focusCleanup", js.undefined)
+      inline def setFocusCleanupUndefined: Self = StObject.set(x, "focusCleanup", js.undefined)
       
-      @scala.inline
-      def setFocusInvalid(value: Boolean): Self = StObject.set(x, "focusInvalid", value.asInstanceOf[js.Any])
+      inline def setFocusInvalid(value: Boolean): Self = StObject.set(x, "focusInvalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusInvalidUndefined: Self = StObject.set(x, "focusInvalid", js.undefined)
+      inline def setFocusInvalidUndefined: Self = StObject.set(x, "focusInvalid", js.undefined)
       
-      @scala.inline
-      def setGroups(value: StringDictionary[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: StringDictionary[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+      inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      @scala.inline
-      def setHighlight(value: (/* element */ HTMLElement, /* errorClass */ String, /* validClass */ String) => Unit): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
+      inline def setHighlight(value: (/* element */ HTMLElement, /* errorClass */ String, /* validClass */ String) => Unit): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+      inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreTitle(value: Boolean): Self = StObject.set(x, "ignoreTitle", value.asInstanceOf[js.Any])
+      inline def setIgnoreTitle(value: Boolean): Self = StObject.set(x, "ignoreTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreTitleUndefined: Self = StObject.set(x, "ignoreTitle", js.undefined)
+      inline def setIgnoreTitleUndefined: Self = StObject.set(x, "ignoreTitle", js.undefined)
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setInvalidHandler(value: (/* event */ JQueryEventObject, /* validator */ Validator) => Unit): Self = StObject.set(x, "invalidHandler", js.Any.fromFunction2(value))
+      inline def setInvalidHandler(value: (/* event */ JQueryEventObject, /* validator */ Validator) => Unit): Self = StObject.set(x, "invalidHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInvalidHandlerUndefined: Self = StObject.set(x, "invalidHandler", js.undefined)
+      inline def setInvalidHandlerUndefined: Self = StObject.set(x, "invalidHandler", js.undefined)
       
-      @scala.inline
-      def setMessages(value: js.Object): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: js.Object): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setOnclick(value: ShouldValidatePredicate): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
+      inline def setOnclick(value: ShouldValidatePredicate): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnclickFunction2(value: (/* element */ HTMLElement, /* event */ JQueryEventObject) => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction2(value))
+      inline def setOnclickFunction2(value: (/* element */ HTMLElement, /* event */ JQueryEventObject) => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
+      inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
       
-      @scala.inline
-      def setOnfocusin(value: (/* element */ HTMLElement, /* event */ JQueryEventObject) => Unit): Self = StObject.set(x, "onfocusin", js.Any.fromFunction2(value))
+      inline def setOnfocusin(value: (/* element */ HTMLElement, /* event */ JQueryEventObject) => Unit): Self = StObject.set(x, "onfocusin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnfocusinUndefined: Self = StObject.set(x, "onfocusin", js.undefined)
+      inline def setOnfocusinUndefined: Self = StObject.set(x, "onfocusin", js.undefined)
       
-      @scala.inline
-      def setOnfocusout(value: ShouldValidatePredicate): Self = StObject.set(x, "onfocusout", value.asInstanceOf[js.Any])
+      inline def setOnfocusout(value: ShouldValidatePredicate): Self = StObject.set(x, "onfocusout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnfocusoutFunction2(value: (/* element */ HTMLElement, /* event */ JQueryEventObject) => Unit): Self = StObject.set(x, "onfocusout", js.Any.fromFunction2(value))
+      inline def setOnfocusoutFunction2(value: (/* element */ HTMLElement, /* event */ JQueryEventObject) => Unit): Self = StObject.set(x, "onfocusout", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnfocusoutUndefined: Self = StObject.set(x, "onfocusout", js.undefined)
+      inline def setOnfocusoutUndefined: Self = StObject.set(x, "onfocusout", js.undefined)
       
-      @scala.inline
-      def setOnkeyup(value: ShouldValidatePredicate): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
+      inline def setOnkeyup(value: ShouldValidatePredicate): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnkeyupFunction2(value: (/* element */ HTMLElement, /* event */ JQueryEventObject) => Unit): Self = StObject.set(x, "onkeyup", js.Any.fromFunction2(value))
+      inline def setOnkeyupFunction2(value: (/* element */ HTMLElement, /* event */ JQueryEventObject) => Unit): Self = StObject.set(x, "onkeyup", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnkeyupUndefined: Self = StObject.set(x, "onkeyup", js.undefined)
+      inline def setOnkeyupUndefined: Self = StObject.set(x, "onkeyup", js.undefined)
       
-      @scala.inline
-      def setOnsubmit(value: Boolean): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
+      inline def setOnsubmit(value: Boolean): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnsubmitUndefined: Self = StObject.set(x, "onsubmit", js.undefined)
+      inline def setOnsubmitUndefined: Self = StObject.set(x, "onsubmit", js.undefined)
       
-      @scala.inline
-      def setRules(value: RulesDictionary): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: RulesDictionary): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setShowErrors(value: (/* errorMap */ ErrorDictionary, /* errorList */ js.Array[ErrorListItem]) => Unit): Self = StObject.set(x, "showErrors", js.Any.fromFunction2(value))
+      inline def setShowErrors(value: (/* errorMap */ ErrorDictionary, /* errorList */ js.Array[ErrorListItem]) => Unit): Self = StObject.set(x, "showErrors", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShowErrorsUndefined: Self = StObject.set(x, "showErrors", js.undefined)
+      inline def setShowErrorsUndefined: Self = StObject.set(x, "showErrors", js.undefined)
       
-      @scala.inline
-      def setSubmitHandler(value: (/* form */ HTMLFormElement, /* event */ js.UndefOr[JQueryEventObject]) => Unit): Self = StObject.set(x, "submitHandler", js.Any.fromFunction2(value))
+      inline def setSubmitHandler(value: (/* form */ HTMLFormElement, /* event */ js.UndefOr[JQueryEventObject]) => Unit): Self = StObject.set(x, "submitHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSubmitHandlerUndefined: Self = StObject.set(x, "submitHandler", js.undefined)
+      inline def setSubmitHandlerUndefined: Self = StObject.set(x, "submitHandler", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: String | (js.Function2[/* $label */ JQuery, /* validatedInput */ HTMLElement, Unit])): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: String | (js.Function2[/* $label */ JQuery, /* validatedInput */ HTMLElement, Unit])): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessFunction2(value: (/* $label */ JQuery, /* validatedInput */ HTMLElement) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
+      inline def setSuccessFunction2(value: (/* $label */ JQuery, /* validatedInput */ HTMLElement) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setUnhighlight(value: (/* element */ HTMLElement, /* errorClass */ String, /* validClass */ String) => Unit): Self = StObject.set(x, "unhighlight", js.Any.fromFunction3(value))
+      inline def setUnhighlight(value: (/* element */ HTMLElement, /* errorClass */ String, /* validClass */ String) => Unit): Self = StObject.set(x, "unhighlight", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUnhighlightUndefined: Self = StObject.set(x, "unhighlight", js.undefined)
+      inline def setUnhighlightUndefined: Self = StObject.set(x, "unhighlight", js.undefined)
       
-      @scala.inline
-      def setValidClass(value: String): Self = StObject.set(x, "validClass", value.asInstanceOf[js.Any])
+      inline def setValidClass(value: String): Self = StObject.set(x, "validClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidClassUndefined: Self = StObject.set(x, "validClass", js.undefined)
+      inline def setValidClassUndefined: Self = StObject.set(x, "validClass", js.undefined)
       
-      @scala.inline
-      def setWrapper(value: String): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: String): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+      inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     }
   }
   

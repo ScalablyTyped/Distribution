@@ -16,19 +16,15 @@ trait SchemaImageConfig extends StObject {
 }
 object SchemaImageConfig {
   
-  @scala.inline
-  def apply(): SchemaImageConfig = {
+  inline def apply(): SchemaImageConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImageConfig]
   }
   
-  @scala.inline
-  implicit class SchemaImageConfigMutableBuilder[Self <: SchemaImageConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImageConfig](x: Self) {
     
-    @scala.inline
-    def setTextRedactionMode(value: String): Self = StObject.set(x, "textRedactionMode", value.asInstanceOf[js.Any])
+    inline def setTextRedactionMode(value: String): Self = StObject.set(x, "textRedactionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRedactionModeUndefined: Self = StObject.set(x, "textRedactionMode", js.undefined)
+    inline def setTextRedactionModeUndefined: Self = StObject.set(x, "textRedactionMode", js.undefined)
   }
 }

@@ -20,40 +20,29 @@ trait InappproductsListResponse extends StObject {
 }
 object InappproductsListResponse {
   
-  @scala.inline
-  def apply(): InappproductsListResponse = {
+  inline def apply(): InappproductsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InappproductsListResponse]
   }
   
-  @scala.inline
-  implicit class InappproductsListResponseMutableBuilder[Self <: InappproductsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InappproductsListResponse](x: Self) {
     
-    @scala.inline
-    def setInappproduct(value: js.Array[InAppProduct]): Self = StObject.set(x, "inappproduct", value.asInstanceOf[js.Any])
+    inline def setInappproduct(value: js.Array[InAppProduct]): Self = StObject.set(x, "inappproduct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInappproductUndefined: Self = StObject.set(x, "inappproduct", js.undefined)
+    inline def setInappproductUndefined: Self = StObject.set(x, "inappproduct", js.undefined)
     
-    @scala.inline
-    def setInappproductVarargs(value: InAppProduct*): Self = StObject.set(x, "inappproduct", js.Array(value :_*))
+    inline def setInappproductVarargs(value: InAppProduct*): Self = StObject.set(x, "inappproduct", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
+    inline def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
+    inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
-    @scala.inline
-    def setTokenPagination(value: TokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+    inline def setTokenPagination(value: TokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
+    inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
   }
 }

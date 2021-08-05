@@ -23,34 +23,25 @@ trait DescribeWorkspaceDirectoriesRequest extends StObject {
 }
 object DescribeWorkspaceDirectoriesRequest {
   
-  @scala.inline
-  def apply(): DescribeWorkspaceDirectoriesRequest = {
+  inline def apply(): DescribeWorkspaceDirectoriesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeWorkspaceDirectoriesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeWorkspaceDirectoriesRequestMutableBuilder[Self <: DescribeWorkspaceDirectoriesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkspaceDirectoriesRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryIds(value: DirectoryIdList): Self = StObject.set(x, "DirectoryIds", value.asInstanceOf[js.Any])
+    inline def setDirectoryIds(value: DirectoryIdList): Self = StObject.set(x, "DirectoryIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdsUndefined: Self = StObject.set(x, "DirectoryIds", js.undefined)
+    inline def setDirectoryIdsUndefined: Self = StObject.set(x, "DirectoryIds", js.undefined)
     
-    @scala.inline
-    def setDirectoryIdsVarargs(value: DirectoryId*): Self = StObject.set(x, "DirectoryIds", js.Array(value :_*))
+    inline def setDirectoryIdsVarargs(value: DirectoryId*): Self = StObject.set(x, "DirectoryIds", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

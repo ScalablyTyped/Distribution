@@ -16,19 +16,15 @@ trait SchemaActivityContentDetailsUpload extends StObject {
 }
 object SchemaActivityContentDetailsUpload {
   
-  @scala.inline
-  def apply(): SchemaActivityContentDetailsUpload = {
+  inline def apply(): SchemaActivityContentDetailsUpload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaActivityContentDetailsUpload]
   }
   
-  @scala.inline
-  implicit class SchemaActivityContentDetailsUploadMutableBuilder[Self <: SchemaActivityContentDetailsUpload] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaActivityContentDetailsUpload](x: Self) {
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
+    inline def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
   }
 }

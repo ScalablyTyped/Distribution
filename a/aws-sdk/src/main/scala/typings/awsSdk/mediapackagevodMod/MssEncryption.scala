@@ -10,16 +10,13 @@ trait MssEncryption extends StObject {
 }
 object MssEncryption {
   
-  @scala.inline
-  def apply(SpekeKeyProvider: SpekeKeyProvider): MssEncryption = {
+  inline def apply(SpekeKeyProvider: SpekeKeyProvider): MssEncryption = {
     val __obj = js.Dynamic.literal(SpekeKeyProvider = SpekeKeyProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[MssEncryption]
   }
   
-  @scala.inline
-  implicit class MssEncryptionMutableBuilder[Self <: MssEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: MssEncryption](x: Self) {
     
-    @scala.inline
-    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
+    inline def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
   }
 }

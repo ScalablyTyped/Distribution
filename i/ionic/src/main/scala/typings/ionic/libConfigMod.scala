@@ -37,6 +37,5 @@ object libConfigMod {
   @js.native
   val GLOBAL_OPTIONS: js.Array[CommandMetadataOption] = js.native
   
-  @scala.inline
-  def parseGlobalOptions(pargv: js.Array[String]): ParsedArgs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseGlobalOptions")(pargv.asInstanceOf[js.Any]).asInstanceOf[ParsedArgs]
+  inline def parseGlobalOptions(pargv: js.Array[String]): ParsedArgs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseGlobalOptions")(pargv.asInstanceOf[js.Any]).asInstanceOf[ParsedArgs]
 }

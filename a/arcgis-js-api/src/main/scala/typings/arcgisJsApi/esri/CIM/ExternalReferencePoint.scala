@@ -20,43 +20,31 @@ trait ExternalReferencePoint
 }
 object ExternalReferencePoint {
   
-  @scala.inline
-  def apply(): ExternalReferencePoint = {
+  inline def apply(): ExternalReferencePoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExternalReferencePoint]
   }
   
-  @scala.inline
-  implicit class ExternalReferencePointMutableBuilder[Self <: ExternalReferencePoint] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalReferencePoint](x: Self) {
     
-    @scala.inline
-    def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+    inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMUndefined: Self = StObject.set(x, "m", js.undefined)
+    inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
     
-    @scala.inline
-    def setSpatialReference(value: ExternalReferenceSpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: ExternalReferenceSpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+    inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
   }
 }

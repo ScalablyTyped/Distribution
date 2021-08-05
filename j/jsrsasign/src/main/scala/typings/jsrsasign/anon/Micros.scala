@@ -14,22 +14,17 @@ trait Micros extends StObject {
 }
 object Micros {
   
-  @scala.inline
-  def apply(micros: Double, millis: Double, seconds: Double): Micros = {
+  inline def apply(micros: Double, millis: Double, seconds: Double): Micros = {
     val __obj = js.Dynamic.literal(micros = micros.asInstanceOf[js.Any], millis = millis.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Micros]
   }
   
-  @scala.inline
-  implicit class MicrosMutableBuilder[Self <: Micros] (val x: Self) extends AnyVal {
+  extension [Self <: Micros](x: Self) {
     
-    @scala.inline
-    def setMicros(value: Double): Self = StObject.set(x, "micros", value.asInstanceOf[js.Any])
+    inline def setMicros(value: Double): Self = StObject.set(x, "micros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMillis(value: Double): Self = StObject.set(x, "millis", value.asInstanceOf[js.Any])
+    inline def setMillis(value: Double): Self = StObject.set(x, "millis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
   }
 }

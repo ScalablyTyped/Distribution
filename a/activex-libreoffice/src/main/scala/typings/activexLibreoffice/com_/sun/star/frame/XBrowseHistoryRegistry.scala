@@ -21,8 +21,7 @@ trait XBrowseHistoryRegistry
 }
 object XBrowseHistoryRegistry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createNewEntry: (String, SeqEquiv[PropertyValue], String) => Unit,
     queryInterface: `type` => js.Any,
@@ -33,13 +32,10 @@ object XBrowseHistoryRegistry {
     __obj.asInstanceOf[XBrowseHistoryRegistry]
   }
   
-  @scala.inline
-  implicit class XBrowseHistoryRegistryMutableBuilder[Self <: XBrowseHistoryRegistry] (val x: Self) extends AnyVal {
+  extension [Self <: XBrowseHistoryRegistry](x: Self) {
     
-    @scala.inline
-    def setCreateNewEntry(value: (String, SeqEquiv[PropertyValue], String) => Unit): Self = StObject.set(x, "createNewEntry", js.Any.fromFunction3(value))
+    inline def setCreateNewEntry(value: (String, SeqEquiv[PropertyValue], String) => Unit): Self = StObject.set(x, "createNewEntry", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUpdateViewData(value: js.Any => Unit): Self = StObject.set(x, "updateViewData", js.Any.fromFunction1(value))
+    inline def setUpdateViewData(value: js.Any => Unit): Self = StObject.set(x, "updateViewData", js.Any.fromFunction1(value))
   }
 }

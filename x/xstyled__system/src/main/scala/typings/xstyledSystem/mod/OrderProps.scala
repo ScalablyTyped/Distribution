@@ -14,27 +14,22 @@ trait OrderProps extends StObject {
 }
 object OrderProps {
   
-  @scala.inline
-  def apply(): OrderProps = {
+  inline def apply(): OrderProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderProps]
   }
   
-  @scala.inline
-  implicit class OrderPropsMutableBuilder[Self <: OrderProps] (val x: Self) extends AnyVal {
+  extension [Self <: OrderProps](x: Self) {
     
-    @scala.inline
-    def setOrder(
+    inline def setOrder(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any
         ]
     ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setOrderVarargs(
+    inline def setOrderVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any)*
     ): Self = StObject.set(x, "order", js.Array(value :_*))
   }

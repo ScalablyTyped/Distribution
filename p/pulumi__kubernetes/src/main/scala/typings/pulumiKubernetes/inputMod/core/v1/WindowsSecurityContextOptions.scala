@@ -27,31 +27,23 @@ trait WindowsSecurityContextOptions extends StObject {
 }
 object WindowsSecurityContextOptions {
   
-  @scala.inline
-  def apply(): WindowsSecurityContextOptions = {
+  inline def apply(): WindowsSecurityContextOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsSecurityContextOptions]
   }
   
-  @scala.inline
-  implicit class WindowsSecurityContextOptionsMutableBuilder[Self <: WindowsSecurityContextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsSecurityContextOptions](x: Self) {
     
-    @scala.inline
-    def setGmsaCredentialSpec(value: Input[String]): Self = StObject.set(x, "gmsaCredentialSpec", value.asInstanceOf[js.Any])
+    inline def setGmsaCredentialSpec(value: Input[String]): Self = StObject.set(x, "gmsaCredentialSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmsaCredentialSpecName(value: Input[String]): Self = StObject.set(x, "gmsaCredentialSpecName", value.asInstanceOf[js.Any])
+    inline def setGmsaCredentialSpecName(value: Input[String]): Self = StObject.set(x, "gmsaCredentialSpecName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmsaCredentialSpecNameUndefined: Self = StObject.set(x, "gmsaCredentialSpecName", js.undefined)
+    inline def setGmsaCredentialSpecNameUndefined: Self = StObject.set(x, "gmsaCredentialSpecName", js.undefined)
     
-    @scala.inline
-    def setGmsaCredentialSpecUndefined: Self = StObject.set(x, "gmsaCredentialSpec", js.undefined)
+    inline def setGmsaCredentialSpecUndefined: Self = StObject.set(x, "gmsaCredentialSpec", js.undefined)
     
-    @scala.inline
-    def setRunAsUserName(value: Input[String]): Self = StObject.set(x, "runAsUserName", value.asInstanceOf[js.Any])
+    inline def setRunAsUserName(value: Input[String]): Self = StObject.set(x, "runAsUserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAsUserNameUndefined: Self = StObject.set(x, "runAsUserName", js.undefined)
+    inline def setRunAsUserNameUndefined: Self = StObject.set(x, "runAsUserName", js.undefined)
   }
 }

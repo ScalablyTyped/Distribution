@@ -12,8 +12,7 @@ trait ISurveyErrorOwner
 }
 object ISurveyErrorOwner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getErrorCustomText: (String, SurveyError) => String,
     getLocale: () => String,
     getMarkdownHtml: String => String,
@@ -23,10 +22,8 @@ object ISurveyErrorOwner {
     __obj.asInstanceOf[ISurveyErrorOwner]
   }
   
-  @scala.inline
-  implicit class ISurveyErrorOwnerMutableBuilder[Self <: ISurveyErrorOwner] (val x: Self) extends AnyVal {
+  extension [Self <: ISurveyErrorOwner](x: Self) {
     
-    @scala.inline
-    def setGetErrorCustomText(value: (String, SurveyError) => String): Self = StObject.set(x, "getErrorCustomText", js.Any.fromFunction2(value))
+    inline def setGetErrorCustomText(value: (String, SurveyError) => String): Self = StObject.set(x, "getErrorCustomText", js.Any.fromFunction2(value))
   }
 }

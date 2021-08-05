@@ -18,19 +18,15 @@ trait AcceptReservedNodeExchangeInputMessage extends StObject {
 }
 object AcceptReservedNodeExchangeInputMessage {
   
-  @scala.inline
-  def apply(ReservedNodeId: String, TargetReservedNodeOfferingId: String): AcceptReservedNodeExchangeInputMessage = {
+  inline def apply(ReservedNodeId: String, TargetReservedNodeOfferingId: String): AcceptReservedNodeExchangeInputMessage = {
     val __obj = js.Dynamic.literal(ReservedNodeId = ReservedNodeId.asInstanceOf[js.Any], TargetReservedNodeOfferingId = TargetReservedNodeOfferingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptReservedNodeExchangeInputMessage]
   }
   
-  @scala.inline
-  implicit class AcceptReservedNodeExchangeInputMessageMutableBuilder[Self <: AcceptReservedNodeExchangeInputMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptReservedNodeExchangeInputMessage](x: Self) {
     
-    @scala.inline
-    def setReservedNodeId(value: String): Self = StObject.set(x, "ReservedNodeId", value.asInstanceOf[js.Any])
+    inline def setReservedNodeId(value: String): Self = StObject.set(x, "ReservedNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetReservedNodeOfferingId(value: String): Self = StObject.set(x, "TargetReservedNodeOfferingId", value.asInstanceOf[js.Any])
+    inline def setTargetReservedNodeOfferingId(value: String): Self = StObject.set(x, "TargetReservedNodeOfferingId", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait IRealpathOptions extends StObject {
 }
 object IRealpathOptions {
   
-  @scala.inline
-  def apply(): IRealpathOptions = {
+  inline def apply(): IRealpathOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRealpathOptions]
   }
   
-  @scala.inline
-  implicit class IRealpathOptionsMutableBuilder[Self <: IRealpathOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IRealpathOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: TEncodingExtended): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: TEncodingExtended): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
   }
 }

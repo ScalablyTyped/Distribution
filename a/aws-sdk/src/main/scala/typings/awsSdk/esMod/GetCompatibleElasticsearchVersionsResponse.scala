@@ -13,22 +13,17 @@ trait GetCompatibleElasticsearchVersionsResponse extends StObject {
 }
 object GetCompatibleElasticsearchVersionsResponse {
   
-  @scala.inline
-  def apply(): GetCompatibleElasticsearchVersionsResponse = {
+  inline def apply(): GetCompatibleElasticsearchVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCompatibleElasticsearchVersionsResponse]
   }
   
-  @scala.inline
-  implicit class GetCompatibleElasticsearchVersionsResponseMutableBuilder[Self <: GetCompatibleElasticsearchVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCompatibleElasticsearchVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setCompatibleElasticsearchVersions(value: CompatibleElasticsearchVersionsList): Self = StObject.set(x, "CompatibleElasticsearchVersions", value.asInstanceOf[js.Any])
+    inline def setCompatibleElasticsearchVersions(value: CompatibleElasticsearchVersionsList): Self = StObject.set(x, "CompatibleElasticsearchVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibleElasticsearchVersionsUndefined: Self = StObject.set(x, "CompatibleElasticsearchVersions", js.undefined)
+    inline def setCompatibleElasticsearchVersionsUndefined: Self = StObject.set(x, "CompatibleElasticsearchVersions", js.undefined)
     
-    @scala.inline
-    def setCompatibleElasticsearchVersionsVarargs(value: CompatibleVersionsMap*): Self = StObject.set(x, "CompatibleElasticsearchVersions", js.Array(value :_*))
+    inline def setCompatibleElasticsearchVersionsVarargs(value: CompatibleVersionsMap*): Self = StObject.set(x, "CompatibleElasticsearchVersions", js.Array(value :_*))
   }
 }

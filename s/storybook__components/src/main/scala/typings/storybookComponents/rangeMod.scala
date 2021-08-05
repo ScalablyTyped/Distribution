@@ -20,8 +20,7 @@ object rangeMod {
        with NumberConfig
   object RangeProps {
     
-    @scala.inline
-    def apply(name: String, onChange: NumberValue | Null => (NumberValue | Null) | Unit): RangeProps = {
+    inline def apply(name: String, onChange: NumberValue | Null => (NumberValue | Null) | Unit): RangeProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[RangeProps]
     }

@@ -16,19 +16,15 @@ trait SchemaReadWrite extends StObject {
 }
 object SchemaReadWrite {
   
-  @scala.inline
-  def apply(): SchemaReadWrite = {
+  inline def apply(): SchemaReadWrite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReadWrite]
   }
   
-  @scala.inline
-  implicit class SchemaReadWriteMutableBuilder[Self <: SchemaReadWrite] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReadWrite](x: Self) {
     
-    @scala.inline
-    def setRetryTransaction(value: String): Self = StObject.set(x, "retryTransaction", value.asInstanceOf[js.Any])
+    inline def setRetryTransaction(value: String): Self = StObject.set(x, "retryTransaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryTransactionUndefined: Self = StObject.set(x, "retryTransaction", js.undefined)
+    inline def setRetryTransactionUndefined: Self = StObject.set(x, "retryTransaction", js.undefined)
   }
 }

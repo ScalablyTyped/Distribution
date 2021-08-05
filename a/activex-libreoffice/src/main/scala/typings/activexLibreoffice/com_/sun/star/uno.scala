@@ -69,20 +69,16 @@ object uno {
   }
   object Exception {
     
-    @scala.inline
-    def apply(Context: XInterface, Message: String): Exception = {
+    inline def apply(Context: XInterface, Message: String): Exception = {
       val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Exception]
     }
     
-    @scala.inline
-    implicit class ExceptionMutableBuilder[Self <: Exception] (val x: Self) extends AnyVal {
+    extension [Self <: Exception](x: Self) {
       
-      @scala.inline
-      def setContext(value: XInterface): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+      inline def setContext(value: XInterface): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -144,138 +140,106 @@ object uno {
   object TypeClass {
     
     /** reflecting the any type; anys can carry any UNO value except of any values */
-    @scala.inline
-    def ANY: `14` = 14.asInstanceOf[`14`]
+    inline def ANY: `14` = 14.asInstanceOf[`14`]
     
     /**
       * Deprecated, UNOIDL does not have an array concept.
       * @deprecated Deprecated
       */
-    @scala.inline
-    def ARRAY: `21` = 21.asInstanceOf[`21`]
+    inline def ARRAY: `21` = 21.asInstanceOf[`21`]
     
     /** reflecting the boolean type; true and false */
-    @scala.inline
-    def BOOLEAN: `2` = 2.asInstanceOf[`2`]
+    inline def BOOLEAN: `2` = 2.asInstanceOf[`2`]
     
     /** reflecting the 8-bit ordinal type */
-    @scala.inline
-    def BYTE: `3` = 3.asInstanceOf[`3`]
+    inline def BYTE: `3` = 3.asInstanceOf[`3`]
     
     /** reflecting the 16-bit unicode character type */
-    @scala.inline
-    def CHAR: `1` = 1.asInstanceOf[`1`]
+    inline def CHAR: `1` = 1.asInstanceOf[`1`]
     
     /** reflecting constants */
-    @scala.inline
-    def CONSTANT: `29` = 29.asInstanceOf[`29`]
+    inline def CONSTANT: `29` = 29.asInstanceOf[`29`]
     
     /** reflecting constants groups */
-    @scala.inline
-    def CONSTANTS: `30` = 30.asInstanceOf[`30`]
+    inline def CONSTANTS: `30` = 30.asInstanceOf[`30`]
     
     /** reflecting the 64-bit floating point type */
-    @scala.inline
-    def DOUBLE: `11` = 11.asInstanceOf[`11`]
+    inline def DOUBLE: `11` = 11.asInstanceOf[`11`]
     
     /** reflecting enum types */
-    @scala.inline
-    def ENUM: `15` = 15.asInstanceOf[`15`]
+    inline def ENUM: `15` = 15.asInstanceOf[`15`]
     
     /** reflecting exception types */
-    @scala.inline
-    def EXCEPTION: `19` = 19.asInstanceOf[`19`]
+    inline def EXCEPTION: `19` = 19.asInstanceOf[`19`]
     
     /** reflecting the 32-bit floating point type */
-    @scala.inline
-    def FLOAT: `10` = 10.asInstanceOf[`10`]
+    inline def FLOAT: `10` = 10.asInstanceOf[`10`]
     
     /** reflecting the signed 64-bit ordinal type */
-    @scala.inline
-    def HYPER: `8` = 8.asInstanceOf[`8`]
+    inline def HYPER: `8` = 8.asInstanceOf[`8`]
     
     /** reflecting interface types */
-    @scala.inline
-    def INTERFACE: `22` = 22.asInstanceOf[`22`]
+    inline def INTERFACE: `22` = 22.asInstanceOf[`22`]
     
     /** reflecting interface attributes */
-    @scala.inline
-    def INTERFACE_ATTRIBUTE: `26` = 26.asInstanceOf[`26`]
+    inline def INTERFACE_ATTRIBUTE: `26` = 26.asInstanceOf[`26`]
     
     /** reflecting interface methods */
-    @scala.inline
-    def INTERFACE_METHOD: `25` = 25.asInstanceOf[`25`]
+    inline def INTERFACE_METHOD: `25` = 25.asInstanceOf[`25`]
     
     /** reflecting the signed 32-bit ordinal type */
-    @scala.inline
-    def LONG: `6` = 6.asInstanceOf[`6`]
+    inline def LONG: `6` = 6.asInstanceOf[`6`]
     
     /** reflecting modules */
-    @scala.inline
-    def MODULE: `24` = 24.asInstanceOf[`24`]
+    inline def MODULE: `24` = 24.asInstanceOf[`24`]
     
     /** reflecting properties */
-    @scala.inline
-    def PROPERTY: `28` = 28.asInstanceOf[`28`]
+    inline def PROPERTY: `28` = 28.asInstanceOf[`28`]
     
     /** reflecting sequence types */
-    @scala.inline
-    def SEQUENCE: `20` = 20.asInstanceOf[`20`]
+    inline def SEQUENCE: `20` = 20.asInstanceOf[`20`]
     
     /** reflecting services */
-    @scala.inline
-    def SERVICE: `23` = 23.asInstanceOf[`23`]
+    inline def SERVICE: `23` = 23.asInstanceOf[`23`]
     
     /** reflecting the signed 16-bit ordinal type */
-    @scala.inline
-    def SHORT: `4` = 4.asInstanceOf[`4`]
+    inline def SHORT: `4` = 4.asInstanceOf[`4`]
     
     /** reflecting singletons */
-    @scala.inline
-    def SINGLETON: `31` = 31.asInstanceOf[`31`]
+    inline def SINGLETON: `31` = 31.asInstanceOf[`31`]
     
     /** reflecting the string type; strings of unicode characters */
-    @scala.inline
-    def STRING: `12` = 12.asInstanceOf[`12`]
+    inline def STRING: `12` = 12.asInstanceOf[`12`]
     
     /** reflecting compound types */
-    @scala.inline
-    def STRUCT: `17` = 17.asInstanceOf[`17`]
+    inline def STRUCT: `17` = 17.asInstanceOf[`17`]
     
     /** reflecting the meta type */
-    @scala.inline
-    def TYPE: `13` = 13.asInstanceOf[`13`]
+    inline def TYPE: `13` = 13.asInstanceOf[`13`]
     
     /** reflecting typedefed types referencing other types */
-    @scala.inline
-    def TYPEDEF: `16` = 16.asInstanceOf[`16`]
+    inline def TYPEDEF: `16` = 16.asInstanceOf[`16`]
     
     /**
       * Deprecated, UNOIDL does not have a union concept.
       * @deprecated Deprecated
       */
-    @scala.inline
-    def UNION: `18` = 18.asInstanceOf[`18`]
+    inline def UNION: `18` = 18.asInstanceOf[`18`]
     
     /** reflecting the unreflectable type */
-    @scala.inline
-    def UNKNOWN: `27` = 27.asInstanceOf[`27`]
+    inline def UNKNOWN: `27` = 27.asInstanceOf[`27`]
     
     /** reflecting the unsigned 64-bit ordinal type */
-    @scala.inline
-    def UNSIGNED_HYPER: `9` = 9.asInstanceOf[`9`]
+    inline def UNSIGNED_HYPER: `9` = 9.asInstanceOf[`9`]
     
     /** reflecting the unsigned 32-bit type */
-    @scala.inline
-    def UNSIGNED_LONG: `7` = 7.asInstanceOf[`7`]
+    inline def UNSIGNED_LONG: `7` = 7.asInstanceOf[`7`]
     
     /** reflecting the unsigned 16-bit ordinal type */
-    @scala.inline
-    def UNSIGNED_SHORT: `5` = 5.asInstanceOf[`5`]
+    inline def UNSIGNED_SHORT: `5` = 5.asInstanceOf[`5`]
     
     /** reflecting the void type; denotes no type */
-    @scala.inline
-    def VOID: `0` = 0.asInstanceOf[`0`]
+    inline def VOID: `0` = 0.asInstanceOf[`0`]
   }
   
   /**
@@ -303,29 +267,22 @@ object uno {
   }
   object Uik {
     
-    @scala.inline
-    def apply(Data1: Double, Data2: Double, Data3: Double, Data4: Double, Data5: Double): Uik = {
+    inline def apply(Data1: Double, Data2: Double, Data3: Double, Data4: Double, Data5: Double): Uik = {
       val __obj = js.Dynamic.literal(Data1 = Data1.asInstanceOf[js.Any], Data2 = Data2.asInstanceOf[js.Any], Data3 = Data3.asInstanceOf[js.Any], Data4 = Data4.asInstanceOf[js.Any], Data5 = Data5.asInstanceOf[js.Any])
       __obj.asInstanceOf[Uik]
     }
     
-    @scala.inline
-    implicit class UikMutableBuilder[Self <: Uik] (val x: Self) extends AnyVal {
+    extension [Self <: Uik](x: Self) {
       
-      @scala.inline
-      def setData1(value: Double): Self = StObject.set(x, "Data1", value.asInstanceOf[js.Any])
+      inline def setData1(value: Double): Self = StObject.set(x, "Data1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData2(value: Double): Self = StObject.set(x, "Data2", value.asInstanceOf[js.Any])
+      inline def setData2(value: Double): Self = StObject.set(x, "Data2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData3(value: Double): Self = StObject.set(x, "Data3", value.asInstanceOf[js.Any])
+      inline def setData3(value: Double): Self = StObject.set(x, "Data3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData4(value: Double): Self = StObject.set(x, "Data4", value.asInstanceOf[js.Any])
+      inline def setData4(value: Double): Self = StObject.set(x, "Data4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData5(value: Double): Self = StObject.set(x, "Data5", value.asInstanceOf[js.Any])
+      inline def setData5(value: Double): Self = StObject.set(x, "Data5", value.asInstanceOf[js.Any])
     }
   }
   
@@ -354,8 +311,7 @@ object uno {
   }
   object XAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       addReference: XReference => Unit,
       queryAdapted: () => XInterface,
@@ -367,17 +323,13 @@ object uno {
       __obj.asInstanceOf[XAdapter]
     }
     
-    @scala.inline
-    implicit class XAdapterMutableBuilder[Self <: XAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: XAdapter](x: Self) {
       
-      @scala.inline
-      def setAddReference(value: XReference => Unit): Self = StObject.set(x, "addReference", js.Any.fromFunction1(value))
+      inline def setAddReference(value: XReference => Unit): Self = StObject.set(x, "addReference", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQueryAdapted(value: () => XInterface): Self = StObject.set(x, "queryAdapted", js.Any.fromFunction0(value))
+      inline def setQueryAdapted(value: () => XInterface): Self = StObject.set(x, "queryAdapted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveReference(value: XReference => Unit): Self = StObject.set(x, "removeReference", js.Any.fromFunction1(value))
+      inline def setRemoveReference(value: XReference => Unit): Self = StObject.set(x, "removeReference", js.Any.fromFunction1(value))
     }
   }
   
@@ -424,8 +376,7 @@ object uno {
   }
   object XAggregation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       queryAggregation: `type` => js.Any,
       queryInterface: `type` => js.Any,
@@ -436,14 +387,11 @@ object uno {
       __obj.asInstanceOf[XAggregation]
     }
     
-    @scala.inline
-    implicit class XAggregationMutableBuilder[Self <: XAggregation] (val x: Self) extends AnyVal {
+    extension [Self <: XAggregation](x: Self) {
       
-      @scala.inline
-      def setQueryAggregation(value: `type` => js.Any): Self = StObject.set(x, "queryAggregation", js.Any.fromFunction1(value))
+      inline def setQueryAggregation(value: `type` => js.Any): Self = StObject.set(x, "queryAggregation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDelegator(value: XInterface => Unit): Self = StObject.set(x, "setDelegator", js.Any.fromFunction1(value))
+      inline def setSetDelegator(value: XInterface => Unit): Self = StObject.set(x, "setDelegator", js.Any.fromFunction1(value))
     }
   }
   
@@ -478,8 +426,7 @@ object uno {
   }
   object XComponentContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ServiceManager: XMultiComponentFactory,
       acquire: () => Unit,
       getServiceManager: () => XMultiComponentFactory,
@@ -491,17 +438,13 @@ object uno {
       __obj.asInstanceOf[XComponentContext]
     }
     
-    @scala.inline
-    implicit class XComponentContextMutableBuilder[Self <: XComponentContext] (val x: Self) extends AnyVal {
+    extension [Self <: XComponentContext](x: Self) {
       
-      @scala.inline
-      def setGetServiceManager(value: () => XMultiComponentFactory): Self = StObject.set(x, "getServiceManager", js.Any.fromFunction0(value))
+      inline def setGetServiceManager(value: () => XMultiComponentFactory): Self = StObject.set(x, "getServiceManager", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValueByName(value: String => js.Any): Self = StObject.set(x, "getValueByName", js.Any.fromFunction1(value))
+      inline def setGetValueByName(value: String => js.Any): Self = StObject.set(x, "getValueByName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setServiceManager(value: XMultiComponentFactory): Self = StObject.set(x, "ServiceManager", value.asInstanceOf[js.Any])
+      inline def setServiceManager(value: XMultiComponentFactory): Self = StObject.set(x, "ServiceManager", value.asInstanceOf[js.Any])
     }
   }
   
@@ -523,8 +466,7 @@ object uno {
   }
   object XCurrentContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       getValueByName: String => js.Any,
       queryInterface: `type` => js.Any,
@@ -534,11 +476,9 @@ object uno {
       __obj.asInstanceOf[XCurrentContext]
     }
     
-    @scala.inline
-    implicit class XCurrentContextMutableBuilder[Self <: XCurrentContext] (val x: Self) extends AnyVal {
+    extension [Self <: XCurrentContext](x: Self) {
       
-      @scala.inline
-      def setGetValueByName(value: String => js.Any): Self = StObject.set(x, "getValueByName", js.Any.fromFunction1(value))
+      inline def setGetValueByName(value: String => js.Any): Self = StObject.set(x, "getValueByName", js.Any.fromFunction1(value))
     }
   }
   
@@ -613,23 +553,18 @@ object uno {
   }
   object XInterface {
     
-    @scala.inline
-    def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit): XInterface = {
+    inline def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit): XInterface = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
       __obj.asInstanceOf[XInterface]
     }
     
-    @scala.inline
-    implicit class XInterfaceMutableBuilder[Self <: XInterface] (val x: Self) extends AnyVal {
+    extension [Self <: XInterface](x: Self) {
       
-      @scala.inline
-      def setAcquire(value: () => Unit): Self = StObject.set(x, "acquire", js.Any.fromFunction0(value))
+      inline def setAcquire(value: () => Unit): Self = StObject.set(x, "acquire", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setQueryInterface(value: `type` => js.Any): Self = StObject.set(x, "queryInterface", js.Any.fromFunction1(value))
+      inline def setQueryInterface(value: `type` => js.Any): Self = StObject.set(x, "queryInterface", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+      inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
     }
   }
   
@@ -657,8 +592,7 @@ object uno {
   }
   object XNamingService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       getRegisteredObject: String => XInterface,
       queryInterface: `type` => js.Any,
@@ -670,17 +604,13 @@ object uno {
       __obj.asInstanceOf[XNamingService]
     }
     
-    @scala.inline
-    implicit class XNamingServiceMutableBuilder[Self <: XNamingService] (val x: Self) extends AnyVal {
+    extension [Self <: XNamingService](x: Self) {
       
-      @scala.inline
-      def setGetRegisteredObject(value: String => XInterface): Self = StObject.set(x, "getRegisteredObject", js.Any.fromFunction1(value))
+      inline def setGetRegisteredObject(value: String => XInterface): Self = StObject.set(x, "getRegisteredObject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterObject(value: (String, XInterface) => Unit): Self = StObject.set(x, "registerObject", js.Any.fromFunction2(value))
+      inline def setRegisterObject(value: (String, XInterface) => Unit): Self = StObject.set(x, "registerObject", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRevokeObject(value: String => Unit): Self = StObject.set(x, "revokeObject", js.Any.fromFunction1(value))
+      inline def setRevokeObject(value: String => Unit): Self = StObject.set(x, "revokeObject", js.Any.fromFunction1(value))
     }
   }
   
@@ -702,17 +632,14 @@ object uno {
   }
   object XReference {
     
-    @scala.inline
-    def apply(acquire: () => Unit, dispose: () => Unit, queryInterface: `type` => js.Any, release: () => Unit): XReference = {
+    inline def apply(acquire: () => Unit, dispose: () => Unit, queryInterface: `type` => js.Any, release: () => Unit): XReference = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), dispose = js.Any.fromFunction0(dispose), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
       __obj.asInstanceOf[XReference]
     }
     
-    @scala.inline
-    implicit class XReferenceMutableBuilder[Self <: XReference] (val x: Self) extends AnyVal {
+    extension [Self <: XReference](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
   
@@ -728,8 +655,7 @@ object uno {
   }
   object XUnloadingPreference {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit,
@@ -739,11 +665,9 @@ object uno {
       __obj.asInstanceOf[XUnloadingPreference]
     }
     
-    @scala.inline
-    implicit class XUnloadingPreferenceMutableBuilder[Self <: XUnloadingPreference] (val x: Self) extends AnyVal {
+    extension [Self <: XUnloadingPreference](x: Self) {
       
-      @scala.inline
-      def setReleaseOnNotification(value: () => Boolean): Self = StObject.set(x, "releaseOnNotification", js.Any.fromFunction0(value))
+      inline def setReleaseOnNotification(value: () => Boolean): Self = StObject.set(x, "releaseOnNotification", js.Any.fromFunction0(value))
     }
   }
   
@@ -784,8 +708,7 @@ object uno {
   }
   object XWeak {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       queryAdapter: () => XAdapter,
       queryInterface: `type` => js.Any,
@@ -795,11 +718,9 @@ object uno {
       __obj.asInstanceOf[XWeak]
     }
     
-    @scala.inline
-    implicit class XWeakMutableBuilder[Self <: XWeak] (val x: Self) extends AnyVal {
+    extension [Self <: XWeak](x: Self) {
       
-      @scala.inline
-      def setQueryAdapter(value: () => XAdapter): Self = StObject.set(x, "queryAdapter", js.Any.fromFunction0(value))
+      inline def setQueryAdapter(value: () => XAdapter): Self = StObject.set(x, "queryAdapter", js.Any.fromFunction0(value))
     }
   }
 }

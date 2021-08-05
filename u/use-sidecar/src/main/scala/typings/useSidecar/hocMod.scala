@@ -14,8 +14,6 @@ object hocMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sidecar[T](importer: Importer[T]): FunctionComponent[T & SideCarHOC] = ^.asInstanceOf[js.Dynamic].applyDynamic("sidecar")(importer.asInstanceOf[js.Any]).asInstanceOf[FunctionComponent[T & SideCarHOC]]
-  @scala.inline
-  def sidecar[T](importer: Importer[T], errorComponent: ReactNode): FunctionComponent[T & SideCarHOC] = (^.asInstanceOf[js.Dynamic].applyDynamic("sidecar")(importer.asInstanceOf[js.Any], errorComponent.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[T & SideCarHOC]]
+  inline def sidecar[T](importer: Importer[T]): FunctionComponent[T & SideCarHOC] = ^.asInstanceOf[js.Dynamic].applyDynamic("sidecar")(importer.asInstanceOf[js.Any]).asInstanceOf[FunctionComponent[T & SideCarHOC]]
+  inline def sidecar[T](importer: Importer[T], errorComponent: ReactNode): FunctionComponent[T & SideCarHOC] = (^.asInstanceOf[js.Dynamic].applyDynamic("sidecar")(importer.asInstanceOf[js.Any], errorComponent.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[T & SideCarHOC]]
 }

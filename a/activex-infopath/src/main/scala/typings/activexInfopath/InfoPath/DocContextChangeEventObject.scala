@@ -9,7 +9,7 @@ trait DocContextChangeEventObject extends StObject {
   
   val Context: IXMLDOMNode
   
-  @JSName("InfoPath.DocContextChangeEventObject_typekey")
+  /* private */ @JSName("InfoPath.DocContextChangeEventObject_typekey")
   var InfoPathDotDocContextChangeEventObject_typekey: DocContextChangeEventObject
   
   val IsUndoRedo: Boolean
@@ -20,8 +20,7 @@ trait DocContextChangeEventObject extends StObject {
 }
 object DocContextChangeEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Context: IXMLDOMNode,
     InfoPathDotDocContextChangeEventObject_typekey: DocContextChangeEventObject,
     IsUndoRedo: Boolean,
@@ -33,22 +32,16 @@ object DocContextChangeEventObject {
     __obj.asInstanceOf[DocContextChangeEventObject]
   }
   
-  @scala.inline
-  implicit class DocContextChangeEventObjectMutableBuilder[Self <: DocContextChangeEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: DocContextChangeEventObject](x: Self) {
     
-    @scala.inline
-    def setContext(value: IXMLDOMNode): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+    inline def setContext(value: IXMLDOMNode): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotDocContextChangeEventObject_typekey(value: DocContextChangeEventObject): Self = StObject.set(x, "InfoPath.DocContextChangeEventObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotDocContextChangeEventObject_typekey(value: DocContextChangeEventObject): Self = StObject.set(x, "InfoPath.DocContextChangeEventObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUndoRedo(value: Boolean): Self = StObject.set(x, "IsUndoRedo", value.asInstanceOf[js.Any])
+    inline def setIsUndoRedo(value: Boolean): Self = StObject.set(x, "IsUndoRedo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
+    inline def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
   }
 }

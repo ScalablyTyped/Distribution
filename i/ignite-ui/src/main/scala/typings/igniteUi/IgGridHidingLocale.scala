@@ -80,79 +80,55 @@ trait IgGridHidingLocale
 }
 object IgGridHidingLocale {
   
-  @scala.inline
-  def apply(): IgGridHidingLocale = {
+  inline def apply(): IgGridHidingLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridHidingLocale]
   }
   
-  @scala.inline
-  implicit class IgGridHidingLocaleMutableBuilder[Self <: IgGridHidingLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridHidingLocale](x: Self) {
     
-    @scala.inline
-    def setColumnChooserButtonApplyText(value: String): Self = StObject.set(x, "columnChooserButtonApplyText", value.asInstanceOf[js.Any])
+    inline def setColumnChooserButtonApplyText(value: String): Self = StObject.set(x, "columnChooserButtonApplyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserButtonApplyTextUndefined: Self = StObject.set(x, "columnChooserButtonApplyText", js.undefined)
+    inline def setColumnChooserButtonApplyTextUndefined: Self = StObject.set(x, "columnChooserButtonApplyText", js.undefined)
     
-    @scala.inline
-    def setColumnChooserButtonCancelText(value: String): Self = StObject.set(x, "columnChooserButtonCancelText", value.asInstanceOf[js.Any])
+    inline def setColumnChooserButtonCancelText(value: String): Self = StObject.set(x, "columnChooserButtonCancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserButtonCancelTextUndefined: Self = StObject.set(x, "columnChooserButtonCancelText", js.undefined)
+    inline def setColumnChooserButtonCancelTextUndefined: Self = StObject.set(x, "columnChooserButtonCancelText", js.undefined)
     
-    @scala.inline
-    def setColumnChooserCaptionLabel(value: String): Self = StObject.set(x, "columnChooserCaptionLabel", value.asInstanceOf[js.Any])
+    inline def setColumnChooserCaptionLabel(value: String): Self = StObject.set(x, "columnChooserCaptionLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserCaptionLabelUndefined: Self = StObject.set(x, "columnChooserCaptionLabel", js.undefined)
+    inline def setColumnChooserCaptionLabelUndefined: Self = StObject.set(x, "columnChooserCaptionLabel", js.undefined)
     
-    @scala.inline
-    def setColumnChooserCloseButtonTooltip(value: String): Self = StObject.set(x, "columnChooserCloseButtonTooltip", value.asInstanceOf[js.Any])
+    inline def setColumnChooserCloseButtonTooltip(value: String): Self = StObject.set(x, "columnChooserCloseButtonTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserCloseButtonTooltipUndefined: Self = StObject.set(x, "columnChooserCloseButtonTooltip", js.undefined)
+    inline def setColumnChooserCloseButtonTooltipUndefined: Self = StObject.set(x, "columnChooserCloseButtonTooltip", js.undefined)
     
-    @scala.inline
-    def setColumnChooserDisplayText(value: String): Self = StObject.set(x, "columnChooserDisplayText", value.asInstanceOf[js.Any])
+    inline def setColumnChooserDisplayText(value: String): Self = StObject.set(x, "columnChooserDisplayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserDisplayTextUndefined: Self = StObject.set(x, "columnChooserDisplayText", js.undefined)
+    inline def setColumnChooserDisplayTextUndefined: Self = StObject.set(x, "columnChooserDisplayText", js.undefined)
     
-    @scala.inline
-    def setColumnChooserHideText(value: String): Self = StObject.set(x, "columnChooserHideText", value.asInstanceOf[js.Any])
+    inline def setColumnChooserHideText(value: String): Self = StObject.set(x, "columnChooserHideText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserHideTextUndefined: Self = StObject.set(x, "columnChooserHideText", js.undefined)
+    inline def setColumnChooserHideTextUndefined: Self = StObject.set(x, "columnChooserHideText", js.undefined)
     
-    @scala.inline
-    def setColumnChooserResetButtonLabel(value: String): Self = StObject.set(x, "columnChooserResetButtonLabel", value.asInstanceOf[js.Any])
+    inline def setColumnChooserResetButtonLabel(value: String): Self = StObject.set(x, "columnChooserResetButtonLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserResetButtonLabelUndefined: Self = StObject.set(x, "columnChooserResetButtonLabel", js.undefined)
+    inline def setColumnChooserResetButtonLabelUndefined: Self = StObject.set(x, "columnChooserResetButtonLabel", js.undefined)
     
-    @scala.inline
-    def setColumnChooserShowText(value: String): Self = StObject.set(x, "columnChooserShowText", value.asInstanceOf[js.Any])
+    inline def setColumnChooserShowText(value: String): Self = StObject.set(x, "columnChooserShowText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserShowTextUndefined: Self = StObject.set(x, "columnChooserShowText", js.undefined)
+    inline def setColumnChooserShowTextUndefined: Self = StObject.set(x, "columnChooserShowText", js.undefined)
     
-    @scala.inline
-    def setColumnHideText(value: String): Self = StObject.set(x, "columnHideText", value.asInstanceOf[js.Any])
+    inline def setColumnHideText(value: String): Self = StObject.set(x, "columnHideText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnHideTextUndefined: Self = StObject.set(x, "columnHideText", js.undefined)
+    inline def setColumnHideTextUndefined: Self = StObject.set(x, "columnHideText", js.undefined)
     
-    @scala.inline
-    def setHiddenColumnIndicatorTooltipText(value: String): Self = StObject.set(x, "hiddenColumnIndicatorTooltipText", value.asInstanceOf[js.Any])
+    inline def setHiddenColumnIndicatorTooltipText(value: String): Self = StObject.set(x, "hiddenColumnIndicatorTooltipText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenColumnIndicatorTooltipTextUndefined: Self = StObject.set(x, "hiddenColumnIndicatorTooltipText", js.undefined)
+    inline def setHiddenColumnIndicatorTooltipTextUndefined: Self = StObject.set(x, "hiddenColumnIndicatorTooltipText", js.undefined)
     
-    @scala.inline
-    def setHideColumnIconTooltip(value: String): Self = StObject.set(x, "hideColumnIconTooltip", value.asInstanceOf[js.Any])
+    inline def setHideColumnIconTooltip(value: String): Self = StObject.set(x, "hideColumnIconTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideColumnIconTooltipUndefined: Self = StObject.set(x, "hideColumnIconTooltip", js.undefined)
+    inline def setHideColumnIconTooltipUndefined: Self = StObject.set(x, "hideColumnIconTooltip", js.undefined)
   }
 }

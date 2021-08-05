@@ -21,43 +21,31 @@ trait FlyToOptions
 }
 object FlyToOptions {
   
-  @scala.inline
-  def apply(): FlyToOptions = {
+  inline def apply(): FlyToOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlyToOptions]
   }
   
-  @scala.inline
-  implicit class FlyToOptionsMutableBuilder[Self <: FlyToOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FlyToOptions](x: Self) {
     
-    @scala.inline
-    def setCurve(value: Double): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+    inline def setCurve(value: Double): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
+    inline def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
     
-    @scala.inline
-    def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
+    inline def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
+    inline def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
     
-    @scala.inline
-    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
-    @scala.inline
-    def setScreenSpeed(value: Double): Self = StObject.set(x, "screenSpeed", value.asInstanceOf[js.Any])
+    inline def setScreenSpeed(value: Double): Self = StObject.set(x, "screenSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenSpeedUndefined: Self = StObject.set(x, "screenSpeed", js.undefined)
+    inline def setScreenSpeedUndefined: Self = StObject.set(x, "screenSpeed", js.undefined)
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
   }
 }

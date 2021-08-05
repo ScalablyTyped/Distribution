@@ -16,10 +16,8 @@ object rootMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(store: Store[js.Any, AnyAction], history: History[LocationState], routes: Element): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], history.asInstanceOf[js.Any], routes.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def default(
+  inline def default(store: Store[js.Any, AnyAction], history: History[LocationState], routes: Element): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], history.asInstanceOf[js.Any], routes.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def default(
     store: Store[js.Any, AnyAction],
     history: History[LocationState],
     routes: Element,

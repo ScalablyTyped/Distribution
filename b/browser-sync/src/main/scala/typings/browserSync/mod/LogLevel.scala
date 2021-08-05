@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogLevel extends StObject
 object LogLevel {
   
-  @scala.inline
-  def debug: typings.browserSync.browserSyncStrings.debug = "debug".asInstanceOf[typings.browserSync.browserSyncStrings.debug]
+  inline def debug: typings.browserSync.browserSyncStrings.debug = "debug".asInstanceOf[typings.browserSync.browserSyncStrings.debug]
   
-  @scala.inline
-  def info: typings.browserSync.browserSyncStrings.info = "info".asInstanceOf[typings.browserSync.browserSyncStrings.info]
+  inline def info: typings.browserSync.browserSyncStrings.info = "info".asInstanceOf[typings.browserSync.browserSyncStrings.info]
   
-  @scala.inline
-  def silent: typings.browserSync.browserSyncStrings.silent = "silent".asInstanceOf[typings.browserSync.browserSyncStrings.silent]
+  inline def silent: typings.browserSync.browserSyncStrings.silent = "silent".asInstanceOf[typings.browserSync.browserSyncStrings.silent]
   
-  @scala.inline
-  def warn: typings.browserSync.browserSyncStrings.warn = "warn".asInstanceOf[typings.browserSync.browserSyncStrings.warn]
+  inline def warn: typings.browserSync.browserSyncStrings.warn = "warn".asInstanceOf[typings.browserSync.browserSyncStrings.warn]
 }

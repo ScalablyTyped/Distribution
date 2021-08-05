@@ -14,31 +14,23 @@ trait FindByUrlNameTitle extends StObject {
 }
 object FindByUrlNameTitle {
   
-  @scala.inline
-  def apply(): FindByUrlNameTitle = {
+  inline def apply(): FindByUrlNameTitle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindByUrlNameTitle]
   }
   
-  @scala.inline
-  implicit class FindByUrlNameTitleMutableBuilder[Self <: FindByUrlNameTitle] (val x: Self) extends AnyVal {
+  extension [Self <: FindByUrlNameTitle](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
+    inline def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowNameUndefined: Self = StObject.set(x, "windowName", js.undefined)
+    inline def setWindowNameUndefined: Self = StObject.set(x, "windowName", js.undefined)
   }
 }

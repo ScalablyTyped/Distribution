@@ -14,20 +14,16 @@ object anon {
   }
   object Dispatch {
     
-    @scala.inline
-    def apply(dispatch: js.Any, getState: js.Any): Dispatch = {
+    inline def apply(dispatch: js.Any, getState: js.Any): Dispatch = {
       val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any], getState = getState.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dispatch]
     }
     
-    @scala.inline
-    implicit class DispatchMutableBuilder[Self <: Dispatch] (val x: Self) extends AnyVal {
+    extension [Self <: Dispatch](x: Self) {
       
-      @scala.inline
-      def setDispatch(value: js.Any): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: js.Any): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetState(value: js.Any): Self = StObject.set(x, "getState", value.asInstanceOf[js.Any])
+      inline def setGetState(value: js.Any): Self = StObject.set(x, "getState", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,24 +35,19 @@ object anon {
   }
   object Namespace {
     
-    @scala.inline
-    def apply(`type`: String): Namespace = {
+    inline def apply(`type`: String): Namespace = {
       val __obj = js.Dynamic.literal(namespace = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Namespace]
     }
     
-    @scala.inline
-    implicit class NamespaceMutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
+    extension [Self <: Namespace](x: Self) {
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceNull: Self = StObject.set(x, "namespace", null)
+      inline def setNamespaceNull: Self = StObject.set(x, "namespace", null)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,17 +57,14 @@ object anon {
   }
   object Param {
     
-    @scala.inline
-    def apply(param: js.Any): Param = {
+    inline def apply(param: js.Any): Param = {
       val __obj = js.Dynamic.literal(param = param.asInstanceOf[js.Any])
       __obj.asInstanceOf[Param]
     }
     
-    @scala.inline
-    implicit class ParamMutableBuilder[Self <: Param] (val x: Self) extends AnyVal {
+    extension [Self <: Param](x: Self) {
       
-      @scala.inline
-      def setParam(value: js.Any): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+      inline def setParam(value: js.Any): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,17 +74,14 @@ object anon {
   }
   object Payload {
     
-    @scala.inline
-    def apply[T](payload: T): Payload[T] = {
+    inline def apply[T](payload: T): Payload[T] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[Payload[T]]
     }
     
-    @scala.inline
-    implicit class PayloadMutableBuilder[Self <: Payload[?], T] (val x: Self & Payload[T]) extends AnyVal {
+    extension [Self <: Payload[?], T](x: Self & Payload[T]) {
       
-      @scala.inline
-      def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,17 +91,14 @@ object anon {
   }
   object PayloadParam {
     
-    @scala.inline
-    def apply(payload: Param): PayloadParam = {
+    inline def apply(payload: Param): PayloadParam = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[PayloadParam]
     }
     
-    @scala.inline
-    implicit class PayloadParamMutableBuilder[Self <: PayloadParam] (val x: Self) extends AnyVal {
+    extension [Self <: PayloadParam](x: Self) {
       
-      @scala.inline
-      def setPayload(value: Param): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Param): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,19 +12,15 @@ trait ListItem extends StObject {
 }
 object ListItem {
   
-  @scala.inline
-  def apply(ContentTypeId: String, ID: Double): ListItem = {
+  inline def apply(ContentTypeId: String, ID: Double): ListItem = {
     val __obj = js.Dynamic.literal(ContentTypeId = ContentTypeId.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItem]
   }
   
-  @scala.inline
-  implicit class ListItemMutableBuilder[Self <: ListItem] (val x: Self) extends AnyVal {
+  extension [Self <: ListItem](x: Self) {
     
-    @scala.inline
-    def setContentTypeId(value: String): Self = StObject.set(x, "ContentTypeId", value.asInstanceOf[js.Any])
+    inline def setContentTypeId(value: String): Self = StObject.set(x, "ContentTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
   }
 }

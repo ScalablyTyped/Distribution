@@ -17,31 +17,23 @@ trait CloudFormationResource extends StObject {
 }
 object CloudFormationResource {
   
-  @scala.inline
-  def apply(Properties: StringDictionary[js.Any], Type: String): CloudFormationResource = {
+  inline def apply(Properties: StringDictionary[js.Any], Type: String): CloudFormationResource = {
     val __obj = js.Dynamic.literal(Properties = Properties.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudFormationResource]
   }
   
-  @scala.inline
-  implicit class CloudFormationResourceMutableBuilder[Self <: CloudFormationResource] (val x: Self) extends AnyVal {
+  extension [Self <: CloudFormationResource](x: Self) {
     
-    @scala.inline
-    def setDeletionPolicy(value: String): Self = StObject.set(x, "DeletionPolicy", value.asInstanceOf[js.Any])
+    inline def setDeletionPolicy(value: String): Self = StObject.set(x, "DeletionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionPolicyUndefined: Self = StObject.set(x, "DeletionPolicy", js.undefined)
+    inline def setDeletionPolicyUndefined: Self = StObject.set(x, "DeletionPolicy", js.undefined)
     
-    @scala.inline
-    def setDependsOn(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "DependsOn", value.asInstanceOf[js.Any])
+    inline def setDependsOn(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "DependsOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependsOnUndefined: Self = StObject.set(x, "DependsOn", js.undefined)
+    inline def setDependsOnUndefined: Self = StObject.set(x, "DependsOn", js.undefined)
     
-    @scala.inline
-    def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

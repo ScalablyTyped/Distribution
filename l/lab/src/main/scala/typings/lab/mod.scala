@@ -15,10 +15,8 @@ object mod {
   @js.native
   val assertions: js.Any = js.native
   
-  @scala.inline
-  def script(): Lab & ExperimentAlt & TestAlt = ^.asInstanceOf[js.Dynamic].applyDynamic("script")().asInstanceOf[Lab & ExperimentAlt & TestAlt]
-  @scala.inline
-  def script(options: ScriptOptions): Lab & ExperimentAlt & TestAlt = ^.asInstanceOf[js.Dynamic].applyDynamic("script")(options.asInstanceOf[js.Any]).asInstanceOf[Lab & ExperimentAlt & TestAlt]
+  inline def script(): Lab & ExperimentAlt & TestAlt = ^.asInstanceOf[js.Dynamic].applyDynamic("script")().asInstanceOf[Lab & ExperimentAlt & TestAlt]
+  inline def script(options: ScriptOptions): Lab & ExperimentAlt & TestAlt = ^.asInstanceOf[js.Dynamic].applyDynamic("script")(options.asInstanceOf[js.Any]).asInstanceOf[Lab & ExperimentAlt & TestAlt]
   
   type AsyncCallback = js.Function1[/* done */ DoneFunction, Unit]
   
@@ -29,20 +27,16 @@ object mod {
   }
   object AsyncOptions {
     
-    @scala.inline
-    def apply(): AsyncOptions = {
+    inline def apply(): AsyncOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsyncOptions]
     }
     
-    @scala.inline
-    implicit class AsyncOptionsMutableBuilder[Self <: AsyncOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncOptions](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -59,17 +53,14 @@ object mod {
   }
   object DoneNote {
     
-    @scala.inline
-    def apply(note: String => Unit): DoneNote = {
+    inline def apply(note: String => Unit): DoneNote = {
       val __obj = js.Dynamic.literal(note = js.Any.fromFunction1(note))
       __obj.asInstanceOf[DoneNote]
     }
     
-    @scala.inline
-    implicit class DoneNoteMutableBuilder[Self <: DoneNote] (val x: Self) extends AnyVal {
+    extension [Self <: DoneNote](x: Self) {
       
-      @scala.inline
-      def setNote(value: String => Unit): Self = StObject.set(x, "note", js.Any.fromFunction1(value))
+      inline def setNote(value: String => Unit): Self = StObject.set(x, "note", js.Any.fromFunction1(value))
     }
   }
   
@@ -85,23 +76,18 @@ object mod {
   }
   object ExperimentAlt {
     
-    @scala.inline
-    def apply(describe: SkipOnlyExperiment, experiment: SkipOnlyExperiment, suite: SkipOnlyExperiment): ExperimentAlt = {
+    inline def apply(describe: SkipOnlyExperiment, experiment: SkipOnlyExperiment, suite: SkipOnlyExperiment): ExperimentAlt = {
       val __obj = js.Dynamic.literal(describe = describe.asInstanceOf[js.Any], experiment = experiment.asInstanceOf[js.Any], suite = suite.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExperimentAlt]
     }
     
-    @scala.inline
-    implicit class ExperimentAltMutableBuilder[Self <: ExperimentAlt] (val x: Self) extends AnyVal {
+    extension [Self <: ExperimentAlt](x: Self) {
       
-      @scala.inline
-      def setDescribe(value: SkipOnlyExperiment): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+      inline def setDescribe(value: SkipOnlyExperiment): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExperiment(value: SkipOnlyExperiment): Self = StObject.set(x, "experiment", value.asInstanceOf[js.Any])
+      inline def setExperiment(value: SkipOnlyExperiment): Self = StObject.set(x, "experiment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuite(value: SkipOnlyExperiment): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+      inline def setSuite(value: SkipOnlyExperiment): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,38 +109,28 @@ object mod {
   }
   object ExperimentOptions {
     
-    @scala.inline
-    def apply(): ExperimentOptions = {
+    inline def apply(): ExperimentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExperimentOptions]
     }
     
-    @scala.inline
-    implicit class ExperimentOptionsMutableBuilder[Self <: ExperimentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExperimentOptions](x: Self) {
       
-      @scala.inline
-      def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      inline def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+      inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
       
-      @scala.inline
-      def setParallel(value: Boolean): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
+      inline def setParallel(value: Boolean): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
+      inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -243,26 +219,20 @@ object mod {
   }
   object ScriptOptions {
     
-    @scala.inline
-    def apply(): ScriptOptions = {
+    inline def apply(): ScriptOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScriptOptions]
     }
     
-    @scala.inline
-    implicit class ScriptOptionsMutableBuilder[Self <: ScriptOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScriptOptions](x: Self) {
       
-      @scala.inline
-      def setCli(value: js.Any): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
+      inline def setCli(value: js.Any): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCliUndefined: Self = StObject.set(x, "cli", js.undefined)
+      inline def setCliUndefined: Self = StObject.set(x, "cli", js.undefined)
       
-      @scala.inline
-      def setSchedule(value: Boolean): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Boolean): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     }
   }
   
@@ -286,20 +256,16 @@ object mod {
   }
   object SkipOnlyExperiment {
     
-    @scala.inline
-    def apply(only: ExperimentArgs & ExperimentWithOptionsArgs, skip: ExperimentArgs & ExperimentWithOptionsArgs): SkipOnlyExperiment = {
+    inline def apply(only: ExperimentArgs & ExperimentWithOptionsArgs, skip: ExperimentArgs & ExperimentWithOptionsArgs): SkipOnlyExperiment = {
       val __obj = js.Dynamic.literal(only = only.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkipOnlyExperiment]
     }
     
-    @scala.inline
-    implicit class SkipOnlyExperimentMutableBuilder[Self <: SkipOnlyExperiment] (val x: Self) extends AnyVal {
+    extension [Self <: SkipOnlyExperiment](x: Self) {
       
-      @scala.inline
-      def setOnly(value: ExperimentArgs & ExperimentWithOptionsArgs): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      inline def setOnly(value: ExperimentArgs & ExperimentWithOptionsArgs): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkip(value: ExperimentArgs & ExperimentWithOptionsArgs): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: ExperimentArgs & ExperimentWithOptionsArgs): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     }
   }
   
@@ -323,20 +289,16 @@ object mod {
   }
   object SkipOnlyTest {
     
-    @scala.inline
-    def apply(only: TestArgs & TestWithOptionsArgs, skip: TestArgs & TestWithOptionsArgs): SkipOnlyTest = {
+    inline def apply(only: TestArgs & TestWithOptionsArgs, skip: TestArgs & TestWithOptionsArgs): SkipOnlyTest = {
       val __obj = js.Dynamic.literal(only = only.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkipOnlyTest]
     }
     
-    @scala.inline
-    implicit class SkipOnlyTestMutableBuilder[Self <: SkipOnlyTest] (val x: Self) extends AnyVal {
+    extension [Self <: SkipOnlyTest](x: Self) {
       
-      @scala.inline
-      def setOnly(value: TestArgs & TestWithOptionsArgs): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      inline def setOnly(value: TestArgs & TestWithOptionsArgs): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkip(value: TestArgs & TestWithOptionsArgs): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: TestArgs & TestWithOptionsArgs): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     }
   }
   
@@ -348,20 +310,16 @@ object mod {
   }
   object TestAlt {
     
-    @scala.inline
-    def apply(it: SkipOnlyTest, test: SkipOnlyTest): TestAlt = {
+    inline def apply(it: SkipOnlyTest, test: SkipOnlyTest): TestAlt = {
       val __obj = js.Dynamic.literal(it = it.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestAlt]
     }
     
-    @scala.inline
-    implicit class TestAltMutableBuilder[Self <: TestAlt] (val x: Self) extends AnyVal {
+    extension [Self <: TestAlt](x: Self) {
       
-      @scala.inline
-      def setIt(value: SkipOnlyTest): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+      inline def setIt(value: SkipOnlyTest): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest(value: SkipOnlyTest): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: SkipOnlyTest): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     }
   }
   
@@ -382,20 +340,16 @@ object mod {
   }
   object TestOptions {
     
-    @scala.inline
-    def apply(): TestOptions = {
+    inline def apply(): TestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TestOptions]
     }
     
-    @scala.inline
-    implicit class TestOptionsMutableBuilder[Self <: TestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TestOptions](x: Self) {
       
-      @scala.inline
-      def setPlan(value: Double): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: Double): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
+      inline def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
     }
   }
   

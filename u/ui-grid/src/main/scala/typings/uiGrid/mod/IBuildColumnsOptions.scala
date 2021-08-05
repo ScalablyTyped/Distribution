@@ -10,19 +10,15 @@ trait IBuildColumnsOptions extends StObject {
 }
 object IBuildColumnsOptions {
   
-  @scala.inline
-  def apply(): IBuildColumnsOptions = {
+  inline def apply(): IBuildColumnsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBuildColumnsOptions]
   }
   
-  @scala.inline
-  implicit class IBuildColumnsOptionsMutableBuilder[Self <: IBuildColumnsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IBuildColumnsOptions](x: Self) {
     
-    @scala.inline
-    def setOrderByColumnDefs(value: Boolean): Self = StObject.set(x, "orderByColumnDefs", value.asInstanceOf[js.Any])
+    inline def setOrderByColumnDefs(value: Boolean): Self = StObject.set(x, "orderByColumnDefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByColumnDefsUndefined: Self = StObject.set(x, "orderByColumnDefs", js.undefined)
+    inline def setOrderByColumnDefsUndefined: Self = StObject.set(x, "orderByColumnDefs", js.undefined)
   }
 }

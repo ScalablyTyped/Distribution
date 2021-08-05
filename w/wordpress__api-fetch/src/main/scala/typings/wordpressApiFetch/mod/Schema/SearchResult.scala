@@ -22,8 +22,7 @@ trait SearchResult
 }
 object SearchResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: Record[String, js.Array[Dictk]],
     id: Double,
     subtype: String,
@@ -36,22 +35,16 @@ object SearchResult {
     __obj.asInstanceOf[SearchResult]
   }
   
-  @scala.inline
-  implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchResult](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+    inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

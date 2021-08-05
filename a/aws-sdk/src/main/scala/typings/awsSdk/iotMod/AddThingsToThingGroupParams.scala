@@ -18,25 +18,19 @@ trait AddThingsToThingGroupParams extends StObject {
 }
 object AddThingsToThingGroupParams {
   
-  @scala.inline
-  def apply(thingGroupNames: ThingGroupNames): AddThingsToThingGroupParams = {
+  inline def apply(thingGroupNames: ThingGroupNames): AddThingsToThingGroupParams = {
     val __obj = js.Dynamic.literal(thingGroupNames = thingGroupNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddThingsToThingGroupParams]
   }
   
-  @scala.inline
-  implicit class AddThingsToThingGroupParamsMutableBuilder[Self <: AddThingsToThingGroupParams] (val x: Self) extends AnyVal {
+  extension [Self <: AddThingsToThingGroupParams](x: Self) {
     
-    @scala.inline
-    def setOverrideDynamicGroups(value: OverrideDynamicGroups): Self = StObject.set(x, "overrideDynamicGroups", value.asInstanceOf[js.Any])
+    inline def setOverrideDynamicGroups(value: OverrideDynamicGroups): Self = StObject.set(x, "overrideDynamicGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideDynamicGroupsUndefined: Self = StObject.set(x, "overrideDynamicGroups", js.undefined)
+    inline def setOverrideDynamicGroupsUndefined: Self = StObject.set(x, "overrideDynamicGroups", js.undefined)
     
-    @scala.inline
-    def setThingGroupNames(value: ThingGroupNames): Self = StObject.set(x, "thingGroupNames", value.asInstanceOf[js.Any])
+    inline def setThingGroupNames(value: ThingGroupNames): Self = StObject.set(x, "thingGroupNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingGroupNamesVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupNames", js.Array(value :_*))
+    inline def setThingGroupNamesVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupNames", js.Array(value :_*))
   }
 }

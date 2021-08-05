@@ -24,8 +24,7 @@ trait HydratedParseArgsOptions
 }
 object HydratedParseArgsOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alias: StringDictionary[js.Array[String]],
     boolean: js.Array[String],
     default: StringDictionary[String | Boolean],
@@ -35,25 +34,18 @@ object HydratedParseArgsOptions {
     __obj.asInstanceOf[HydratedParseArgsOptions]
   }
   
-  @scala.inline
-  implicit class HydratedParseArgsOptionsMutableBuilder[Self <: HydratedParseArgsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HydratedParseArgsOptions](x: Self) {
     
-    @scala.inline
-    def setAlias(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolean(value: js.Array[String]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    inline def setBoolean(value: js.Array[String]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
+    inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
     
-    @scala.inline
-    def setDefault(value: StringDictionary[String | Boolean]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: StringDictionary[String | Boolean]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: js.Array[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: js.Array[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
+    inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
   }
 }

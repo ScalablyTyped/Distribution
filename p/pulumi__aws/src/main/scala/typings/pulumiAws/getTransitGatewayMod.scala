@@ -13,14 +13,10 @@ object getTransitGatewayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTransitGateway(): js.Promise[GetTransitGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")().asInstanceOf[js.Promise[GetTransitGatewayResult]]
-  @scala.inline
-  def getTransitGateway(args: Unit, opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTransitGatewayResult]]
-  @scala.inline
-  def getTransitGateway(args: GetTransitGatewayArgs): js.Promise[GetTransitGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTransitGatewayResult]]
-  @scala.inline
-  def getTransitGateway(args: GetTransitGatewayArgs, opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTransitGatewayResult]]
+  inline def getTransitGateway(): js.Promise[GetTransitGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")().asInstanceOf[js.Promise[GetTransitGatewayResult]]
+  inline def getTransitGateway(args: Unit, opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTransitGatewayResult]]
+  inline def getTransitGateway(args: GetTransitGatewayArgs): js.Promise[GetTransitGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTransitGatewayResult]]
+  inline def getTransitGateway(args: GetTransitGatewayArgs, opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTransitGatewayResult]]
   
   trait GetTransitGatewayArgs extends StObject {
     
@@ -41,35 +37,26 @@ object getTransitGatewayMod {
   }
   object GetTransitGatewayArgs {
     
-    @scala.inline
-    def apply(): GetTransitGatewayArgs = {
+    inline def apply(): GetTransitGatewayArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetTransitGatewayArgs]
     }
     
-    @scala.inline
-    implicit class GetTransitGatewayArgsMutableBuilder[Self <: GetTransitGatewayArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetTransitGatewayArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetTransitGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetTransitGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetTransitGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetTransitGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -144,8 +131,7 @@ object getTransitGatewayMod {
   }
   object GetTransitGatewayResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amazonSideAsn: Double,
       arn: String,
       associationDefaultRouteTableId: String,
@@ -163,59 +149,41 @@ object getTransitGatewayMod {
       __obj.asInstanceOf[GetTransitGatewayResult]
     }
     
-    @scala.inline
-    implicit class GetTransitGatewayResultMutableBuilder[Self <: GetTransitGatewayResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetTransitGatewayResult](x: Self) {
       
-      @scala.inline
-      def setAmazonSideAsn(value: Double): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
+      inline def setAmazonSideAsn(value: Double): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociationDefaultRouteTableId(value: String): Self = StObject.set(x, "associationDefaultRouteTableId", value.asInstanceOf[js.Any])
+      inline def setAssociationDefaultRouteTableId(value: String): Self = StObject.set(x, "associationDefaultRouteTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoAcceptSharedAttachments(value: String): Self = StObject.set(x, "autoAcceptSharedAttachments", value.asInstanceOf[js.Any])
+      inline def setAutoAcceptSharedAttachments(value: String): Self = StObject.set(x, "autoAcceptSharedAttachments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRouteTableAssociation(value: String): Self = StObject.set(x, "defaultRouteTableAssociation", value.asInstanceOf[js.Any])
+      inline def setDefaultRouteTableAssociation(value: String): Self = StObject.set(x, "defaultRouteTableAssociation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRouteTablePropagation(value: String): Self = StObject.set(x, "defaultRouteTablePropagation", value.asInstanceOf[js.Any])
+      inline def setDefaultRouteTablePropagation(value: String): Self = StObject.set(x, "defaultRouteTablePropagation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsSupport(value: String): Self = StObject.set(x, "dnsSupport", value.asInstanceOf[js.Any])
+      inline def setDnsSupport(value: String): Self = StObject.set(x, "dnsSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetTransitGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetTransitGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2transitgateway.GetTransitGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2transitgateway.GetTransitGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropagationDefaultRouteTableId(value: String): Self = StObject.set(x, "propagationDefaultRouteTableId", value.asInstanceOf[js.Any])
+      inline def setPropagationDefaultRouteTableId(value: String): Self = StObject.set(x, "propagationDefaultRouteTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpnEcmpSupport(value: String): Self = StObject.set(x, "vpnEcmpSupport", value.asInstanceOf[js.Any])
+      inline def setVpnEcmpSupport(value: String): Self = StObject.set(x, "vpnEcmpSupport", value.asInstanceOf[js.Any])
     }
   }
 }

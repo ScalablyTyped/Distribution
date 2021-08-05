@@ -12,17 +12,14 @@ object anon {
   }
   object Icon {
     
-    @scala.inline
-    def apply(icon: js.Object): Icon = {
+    inline def apply(icon: js.Object): Icon = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
       __obj.asInstanceOf[Icon]
     }
     
-    @scala.inline
-    implicit class IconMutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
+    extension [Self <: Icon](x: Self) {
       
-      @scala.inline
-      def setIcon(value: js.Object): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: js.Object): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     }
   }
 }

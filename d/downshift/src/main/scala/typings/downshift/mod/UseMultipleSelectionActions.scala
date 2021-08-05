@@ -18,8 +18,7 @@ trait UseMultipleSelectionActions[Item] extends StObject {
 }
 object UseMultipleSelectionActions {
   
-  @scala.inline
-  def apply[Item](
+  inline def apply[Item](
     addSelectedItem: Item => Unit,
     removeSelectedItem: Item => Unit,
     reset: () => Unit,
@@ -30,22 +29,16 @@ object UseMultipleSelectionActions {
     __obj.asInstanceOf[UseMultipleSelectionActions[Item]]
   }
   
-  @scala.inline
-  implicit class UseMultipleSelectionActionsMutableBuilder[Self <: UseMultipleSelectionActions[?], Item] (val x: Self & UseMultipleSelectionActions[Item]) extends AnyVal {
+  extension [Self <: UseMultipleSelectionActions[?], Item](x: Self & UseMultipleSelectionActions[Item]) {
     
-    @scala.inline
-    def setAddSelectedItem(value: Item => Unit): Self = StObject.set(x, "addSelectedItem", js.Any.fromFunction1(value))
+    inline def setAddSelectedItem(value: Item => Unit): Self = StObject.set(x, "addSelectedItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSelectedItem(value: Item => Unit): Self = StObject.set(x, "removeSelectedItem", js.Any.fromFunction1(value))
+    inline def setRemoveSelectedItem(value: Item => Unit): Self = StObject.set(x, "removeSelectedItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetActiveIndex(value: Double => Unit): Self = StObject.set(x, "setActiveIndex", js.Any.fromFunction1(value))
+    inline def setSetActiveIndex(value: Double => Unit): Self = StObject.set(x, "setActiveIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSelectedItems(value: js.Array[Item] => Unit): Self = StObject.set(x, "setSelectedItems", js.Any.fromFunction1(value))
+    inline def setSetSelectedItems(value: js.Array[Item] => Unit): Self = StObject.set(x, "setSelectedItems", js.Any.fromFunction1(value))
   }
 }

@@ -10,19 +10,15 @@ trait Profile extends StObject {
 }
 object Profile {
   
-  @scala.inline
-  def apply(): Profile = {
+  inline def apply(): Profile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Profile]
   }
   
-  @scala.inline
-  implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
+  extension [Self <: Profile](x: Self) {
     
-    @scala.inline
-    def setProfile(value: js.Object): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: js.Object): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
   }
 }

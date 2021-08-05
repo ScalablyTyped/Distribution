@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SketchMSBorderLineCapStyle extends StObject
 object SketchMSBorderLineCapStyle {
   
-  @scala.inline
-  def `0`: typings.sketchapp.sketchappNumbers.`0` = 0.asInstanceOf[typings.sketchapp.sketchappNumbers.`0`]
+  inline def `0`: typings.sketchapp.sketchappNumbers.`0` = 0.asInstanceOf[typings.sketchapp.sketchappNumbers.`0`]
   
-  @scala.inline
-  def `1`: typings.sketchapp.sketchappNumbers.`1` = 1.asInstanceOf[typings.sketchapp.sketchappNumbers.`1`]
+  inline def `1`: typings.sketchapp.sketchappNumbers.`1` = 1.asInstanceOf[typings.sketchapp.sketchappNumbers.`1`]
   
-  @scala.inline
-  def `2`: typings.sketchapp.sketchappNumbers.`2` = 2.asInstanceOf[typings.sketchapp.sketchappNumbers.`2`]
+  inline def `2`: typings.sketchapp.sketchappNumbers.`2` = 2.asInstanceOf[typings.sketchapp.sketchappNumbers.`2`]
 }

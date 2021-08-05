@@ -8,11 +8,9 @@ object reactTestRendererStrings {
   
   @js.native
   sealed trait component extends StObject
-  @scala.inline
-  def component: component = "component".asInstanceOf[component]
+  inline def component: component = "component".asInstanceOf[component]
   
   @js.native
   sealed trait host extends StObject
-  @scala.inline
-  def host: host = "host".asInstanceOf[host]
+  inline def host: host = "host".asInstanceOf[host]
 }

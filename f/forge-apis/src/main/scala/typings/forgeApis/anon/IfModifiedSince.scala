@@ -17,37 +17,27 @@ trait IfModifiedSince extends StObject {
 }
 object IfModifiedSince {
   
-  @scala.inline
-  def apply(): IfModifiedSince = {
+  inline def apply(): IfModifiedSince = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IfModifiedSince]
   }
   
-  @scala.inline
-  implicit class IfModifiedSinceMutableBuilder[Self <: IfModifiedSince] (val x: Self) extends AnyVal {
+  extension [Self <: IfModifiedSince](x: Self) {
     
-    @scala.inline
-    def setAcceptEncoding(value: String): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
+    inline def setAcceptEncoding(value: String): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptEncodingUndefined: Self = StObject.set(x, "acceptEncoding", js.undefined)
+    inline def setAcceptEncodingUndefined: Self = StObject.set(x, "acceptEncoding", js.undefined)
     
-    @scala.inline
-    def setIfModifiedSince(value: Date): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
+    inline def setIfModifiedSince(value: Date): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfModifiedSinceUndefined: Self = StObject.set(x, "ifModifiedSince", js.undefined)
+    inline def setIfModifiedSinceUndefined: Self = StObject.set(x, "ifModifiedSince", js.undefined)
     
-    @scala.inline
-    def setIfNoneMatch(value: String): Self = StObject.set(x, "ifNoneMatch", value.asInstanceOf[js.Any])
+    inline def setIfNoneMatch(value: String): Self = StObject.set(x, "ifNoneMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfNoneMatchUndefined: Self = StObject.set(x, "ifNoneMatch", js.undefined)
+    inline def setIfNoneMatchUndefined: Self = StObject.set(x, "ifNoneMatch", js.undefined)
     
-    @scala.inline
-    def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

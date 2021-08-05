@@ -18,21 +18,17 @@ object entryFieldsMod {
   }
   object Array {
     
-    @scala.inline
-    def apply(items: Entry | Asset | js.Symbol): Array = {
+    inline def apply(items: Entry | Asset | js.Symbol): Array = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Array")
       __obj.asInstanceOf[Array]
     }
     
-    @scala.inline
-    implicit class ArrayMutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
+    extension [Self <: Array](x: Self) {
       
-      @scala.inline
-      def setItems(value: Entry | Asset | js.Symbol): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Entry | Asset | js.Symbol): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: typings.contentfulManagement.contentfulManagementStrings.Array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.contentfulManagement.contentfulManagementStrings.Array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,21 +40,17 @@ object entryFieldsMod {
   }
   object Asset {
     
-    @scala.inline
-    def apply(): Asset = {
+    inline def apply(): Asset = {
       val __obj = js.Dynamic.literal(linkType = "Asset")
       __obj.updateDynamic("type")("Link")
       __obj.asInstanceOf[Asset]
     }
     
-    @scala.inline
-    implicit class AssetMutableBuilder[Self <: Asset] (val x: Self) extends AnyVal {
+    extension [Self <: Asset](x: Self) {
       
-      @scala.inline
-      def setLinkType(value: typings.contentfulManagement.contentfulManagementStrings.Asset): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
+      inline def setLinkType(value: typings.contentfulManagement.contentfulManagementStrings.Asset): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,18 +60,15 @@ object entryFieldsMod {
   }
   object Boolean {
     
-    @scala.inline
-    def apply(): Boolean = {
+    inline def apply(): Boolean = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Boolean")
       __obj.asInstanceOf[Boolean]
     }
     
-    @scala.inline
-    implicit class BooleanMutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
+    extension [Self <: Boolean](x: Self) {
       
-      @scala.inline
-      def setType(value: typings.contentfulManagement.contentfulManagementStrings.Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.contentfulManagement.contentfulManagementStrings.Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,18 +80,15 @@ object entryFieldsMod {
   }
   object Date {
     
-    @scala.inline
-    def apply(): Date = {
+    inline def apply(): Date = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Date")
       __obj.asInstanceOf[Date]
     }
     
-    @scala.inline
-    implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+    extension [Self <: Date](x: Self) {
       
-      @scala.inline
-      def setType(value: typings.contentfulManagement.contentfulManagementStrings.Date): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.contentfulManagement.contentfulManagementStrings.Date): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,21 +102,17 @@ object entryFieldsMod {
   }
   object Entry {
     
-    @scala.inline
-    def apply(): Entry = {
+    inline def apply(): Entry = {
       val __obj = js.Dynamic.literal(linkType = "Entry")
       __obj.updateDynamic("type")("Link")
       __obj.asInstanceOf[Entry]
     }
     
-    @scala.inline
-    implicit class EntryMutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
+    extension [Self <: Entry](x: Self) {
       
-      @scala.inline
-      def setLinkType(value: typings.contentfulManagement.contentfulManagementStrings.Entry): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
+      inline def setLinkType(value: typings.contentfulManagement.contentfulManagementStrings.Entry): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,18 +139,15 @@ object entryFieldsMod {
   }
   object Integer {
     
-    @scala.inline
-    def apply(): Integer = {
+    inline def apply(): Integer = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Integer")
       __obj.asInstanceOf[Integer]
     }
     
-    @scala.inline
-    implicit class IntegerMutableBuilder[Self <: Integer] (val x: Self) extends AnyVal {
+    extension [Self <: Integer](x: Self) {
       
-      @scala.inline
-      def setType(value: typings.contentfulManagement.contentfulManagementStrings.Integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.contentfulManagement.contentfulManagementStrings.Integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,18 +159,15 @@ object entryFieldsMod {
   }
   object Location {
     
-    @scala.inline
-    def apply(): Location = {
+    inline def apply(): Location = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Location")
       __obj.asInstanceOf[Location]
     }
     
-    @scala.inline
-    implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+    extension [Self <: Location](x: Self) {
       
-      @scala.inline
-      def setType(value: typings.contentfulManagement.contentfulManagementStrings.Location): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.contentfulManagement.contentfulManagementStrings.Location): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -201,18 +177,15 @@ object entryFieldsMod {
   }
   object Number {
     
-    @scala.inline
-    def apply(): Number = {
+    inline def apply(): Number = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Number")
       __obj.asInstanceOf[Number]
     }
     
-    @scala.inline
-    implicit class NumberMutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
+    extension [Self <: Number](x: Self) {
       
-      @scala.inline
-      def setType(value: typings.contentfulManagement.contentfulManagementStrings.Number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.contentfulManagement.contentfulManagementStrings.Number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,18 +195,15 @@ object entryFieldsMod {
   }
   object Object {
     
-    @scala.inline
-    def apply(): Object = {
+    inline def apply(): Object = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Object")
       __obj.asInstanceOf[Object]
     }
     
-    @scala.inline
-    implicit class ObjectMutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
+    extension [Self <: Object](x: Self) {
       
-      @scala.inline
-      def setType(value: typings.contentfulManagement.contentfulManagementStrings.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.contentfulManagement.contentfulManagementStrings.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,18 +215,15 @@ object entryFieldsMod {
   }
   object RichText {
     
-    @scala.inline
-    def apply(): RichText = {
+    inline def apply(): RichText = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("RichText")
       __obj.asInstanceOf[RichText]
     }
     
-    @scala.inline
-    implicit class RichTextMutableBuilder[Self <: RichText] (val x: Self) extends AnyVal {
+    extension [Self <: RichText](x: Self) {
       
-      @scala.inline
-      def setType(value: typings.contentfulManagement.contentfulManagementStrings.RichText): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.contentfulManagement.contentfulManagementStrings.RichText): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -266,18 +233,15 @@ object entryFieldsMod {
   }
   object Symbol {
     
-    @scala.inline
-    def apply(): Symbol = {
+    inline def apply(): Symbol = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Symbol")
       __obj.asInstanceOf[Symbol]
     }
     
-    @scala.inline
-    implicit class SymbolMutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
+    extension [Self <: Symbol](x: Self) {
       
-      @scala.inline
-      def setType(value: typings.contentfulManagement.contentfulManagementStrings.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.contentfulManagement.contentfulManagementStrings.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -289,68 +253,58 @@ object entryFieldsMod {
   }
   object Text {
     
-    @scala.inline
-    def apply(): Text = {
+    inline def apply(): Text = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Text")
       __obj.asInstanceOf[Text]
     }
     
-    @scala.inline
-    implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+    extension [Self <: Text](x: Self) {
       
-      @scala.inline
-      def setType(value: typings.contentfulManagement.contentfulManagementStrings.Text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.contentfulManagement.contentfulManagementStrings.Text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait _EntryFields extends StObject
   object _EntryFields {
     
-    @scala.inline
-    def Array(items: Entry | Asset | js.Symbol): typings.contentfulManagement.entryFieldsMod.Array = {
+    inline def Array(items: Entry | Asset | js.Symbol): typings.contentfulManagement.entryFieldsMod.Array = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Array")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.Array]
     }
     
-    @scala.inline
-    def Date(): typings.contentfulManagement.entryFieldsMod.Date = {
+    inline def Date(): typings.contentfulManagement.entryFieldsMod.Date = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Date")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.Date]
     }
     
-    @scala.inline
-    def Entry(): typings.contentfulManagement.entryFieldsMod.Entry = {
+    inline def Entry(): typings.contentfulManagement.entryFieldsMod.Entry = {
       val __obj = js.Dynamic.literal(linkType = "Entry")
       __obj.updateDynamic("type")("Link")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.Entry]
     }
     
-    @scala.inline
-    def Integer(): typings.contentfulManagement.entryFieldsMod.Integer = {
+    inline def Integer(): typings.contentfulManagement.entryFieldsMod.Integer = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Integer")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.Integer]
     }
     
-    @scala.inline
-    def Location(): typings.contentfulManagement.entryFieldsMod.Location = {
+    inline def Location(): typings.contentfulManagement.entryFieldsMod.Location = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Location")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.Location]
     }
     
-    @scala.inline
-    def RichText(): typings.contentfulManagement.entryFieldsMod.RichText = {
+    inline def RichText(): typings.contentfulManagement.entryFieldsMod.RichText = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("RichText")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.RichText]
     }
     
-    @scala.inline
-    def Text(): typings.contentfulManagement.entryFieldsMod.Text = {
+    inline def Text(): typings.contentfulManagement.entryFieldsMod.Text = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Text")
       __obj.asInstanceOf[typings.contentfulManagement.entryFieldsMod.Text]

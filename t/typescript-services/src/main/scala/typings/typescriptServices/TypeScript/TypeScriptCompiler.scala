@@ -21,7 +21,7 @@ trait TypeScriptCompiler extends StObject {
     sharedEmitter: DeclarationEmitter
   ): DeclarationEmitter = js.native
   
-  var _settings: js.Any = js.native
+  /* private */ var _settings: js.Any = js.native
   
   def _shouldEmit(document: Document): Boolean = js.native
   
@@ -120,7 +120,7 @@ trait TypeScriptCompiler extends StObject {
   
   def resolveAllFiles(): Unit = js.native
   
-  var semanticInfoChain: js.Any = js.native
+  /* private */ var semanticInfoChain: js.Any = js.native
   
   def setCompilationSettings(newSettings: ImmutableCompilationSettings): Unit = js.native
   

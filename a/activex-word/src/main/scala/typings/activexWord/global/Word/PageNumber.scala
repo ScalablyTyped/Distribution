@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.PageNumber")
 @js.native
-class PageNumber protected ()
+/* private */ class PageNumber ()
   extends StObject
      with typings.activexWord.Word.PageNumber {
   
@@ -38,7 +38,7 @@ class PageNumber protected ()
   /* CompleteClass */
   override def Select(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.PageNumber_typekey")
   var WordDotPageNumber_typekey: typings.activexWord.Word.PageNumber = js.native
 }

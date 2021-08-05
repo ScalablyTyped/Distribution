@@ -8,6 +8,5 @@ object d3QuadtreeNumbers {
   
   @js.native
   sealed trait `4` extends StObject
-  @scala.inline
-  def `4`: `4` = 4.asInstanceOf[`4`]
+  inline def `4`: `4` = 4.asInstanceOf[`4`]
 }

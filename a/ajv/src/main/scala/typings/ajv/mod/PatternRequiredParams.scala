@@ -12,16 +12,13 @@ trait PatternRequiredParams
 }
 object PatternRequiredParams {
   
-  @scala.inline
-  def apply(missingPattern: String): PatternRequiredParams = {
+  inline def apply(missingPattern: String): PatternRequiredParams = {
     val __obj = js.Dynamic.literal(missingPattern = missingPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatternRequiredParams]
   }
   
-  @scala.inline
-  implicit class PatternRequiredParamsMutableBuilder[Self <: PatternRequiredParams] (val x: Self) extends AnyVal {
+  extension [Self <: PatternRequiredParams](x: Self) {
     
-    @scala.inline
-    def setMissingPattern(value: String): Self = StObject.set(x, "missingPattern", value.asInstanceOf[js.Any])
+    inline def setMissingPattern(value: String): Self = StObject.set(x, "missingPattern", value.asInstanceOf[js.Any])
   }
 }

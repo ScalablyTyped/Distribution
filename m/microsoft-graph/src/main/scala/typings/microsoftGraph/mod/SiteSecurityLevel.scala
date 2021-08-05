@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SiteSecurityLevel extends StObject
 object SiteSecurityLevel {
   
-  @scala.inline
-  def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
+  inline def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
   
-  @scala.inline
-  def low: typings.microsoftGraph.microsoftGraphStrings.low = "low".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.low]
+  inline def low: typings.microsoftGraph.microsoftGraphStrings.low = "low".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.low]
   
-  @scala.inline
-  def medium: typings.microsoftGraph.microsoftGraphStrings.medium = "medium".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.medium]
+  inline def medium: typings.microsoftGraph.microsoftGraphStrings.medium = "medium".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.medium]
   
-  @scala.inline
-  def mediumHigh: typings.microsoftGraph.microsoftGraphStrings.mediumHigh = "mediumHigh".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mediumHigh]
+  inline def mediumHigh: typings.microsoftGraph.microsoftGraphStrings.mediumHigh = "mediumHigh".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mediumHigh]
   
-  @scala.inline
-  def mediumLow: typings.microsoftGraph.microsoftGraphStrings.mediumLow = "mediumLow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mediumLow]
+  inline def mediumLow: typings.microsoftGraph.microsoftGraphStrings.mediumLow = "mediumLow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mediumLow]
   
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
+  inline def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }

@@ -18,19 +18,15 @@ trait PointerAxisCoordinateObject extends StObject {
 }
 object PointerAxisCoordinateObject {
   
-  @scala.inline
-  def apply(axis: Axis, value: Double): PointerAxisCoordinateObject = {
+  inline def apply(axis: Axis, value: Double): PointerAxisCoordinateObject = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointerAxisCoordinateObject]
   }
   
-  @scala.inline
-  implicit class PointerAxisCoordinateObjectMutableBuilder[Self <: PointerAxisCoordinateObject] (val x: Self) extends AnyVal {
+  extension [Self <: PointerAxisCoordinateObject](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DrawingType extends StObject
 object DrawingType {
   
-  @scala.inline
-  def circle: typings.bmapgl.bmapglStrings.circle = "circle".asInstanceOf[typings.bmapgl.bmapglStrings.circle]
+  inline def circle: typings.bmapgl.bmapglStrings.circle = "circle".asInstanceOf[typings.bmapgl.bmapglStrings.circle]
   
-  @scala.inline
-  def marker: typings.bmapgl.bmapglStrings.marker = "marker".asInstanceOf[typings.bmapgl.bmapglStrings.marker]
+  inline def marker: typings.bmapgl.bmapglStrings.marker = "marker".asInstanceOf[typings.bmapgl.bmapglStrings.marker]
   
-  @scala.inline
-  def polygon: polygon_ = "polygon".asInstanceOf[polygon_]
+  inline def polygon: polygon_ = "polygon".asInstanceOf[polygon_]
   
-  @scala.inline
-  def polyline: typings.bmapgl.bmapglStrings.polyline = "polyline".asInstanceOf[typings.bmapgl.bmapglStrings.polyline]
+  inline def polyline: typings.bmapgl.bmapglStrings.polyline = "polyline".asInstanceOf[typings.bmapgl.bmapglStrings.polyline]
   
-  @scala.inline
-  def rectangle: typings.bmapgl.bmapglStrings.rectangle = "rectangle".asInstanceOf[typings.bmapgl.bmapglStrings.rectangle]
+  inline def rectangle: typings.bmapgl.bmapglStrings.rectangle = "rectangle".asInstanceOf[typings.bmapgl.bmapglStrings.rectangle]
 }

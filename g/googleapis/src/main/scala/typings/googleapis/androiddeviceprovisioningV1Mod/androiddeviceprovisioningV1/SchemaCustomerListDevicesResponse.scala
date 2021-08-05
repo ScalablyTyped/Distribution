@@ -22,28 +22,21 @@ trait SchemaCustomerListDevicesResponse extends StObject {
 }
 object SchemaCustomerListDevicesResponse {
   
-  @scala.inline
-  def apply(): SchemaCustomerListDevicesResponse = {
+  inline def apply(): SchemaCustomerListDevicesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomerListDevicesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCustomerListDevicesResponseMutableBuilder[Self <: SchemaCustomerListDevicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomerListDevicesResponse](x: Self) {
     
-    @scala.inline
-    def setDevices(value: js.Array[SchemaDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: js.Array[SchemaDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
-    @scala.inline
-    def setDevicesVarargs(value: SchemaDevice*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: SchemaDevice*): Self = StObject.set(x, "devices", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

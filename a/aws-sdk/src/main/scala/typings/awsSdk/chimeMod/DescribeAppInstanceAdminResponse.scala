@@ -13,19 +13,15 @@ trait DescribeAppInstanceAdminResponse extends StObject {
 }
 object DescribeAppInstanceAdminResponse {
   
-  @scala.inline
-  def apply(): DescribeAppInstanceAdminResponse = {
+  inline def apply(): DescribeAppInstanceAdminResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAppInstanceAdminResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAppInstanceAdminResponseMutableBuilder[Self <: DescribeAppInstanceAdminResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAppInstanceAdminResponse](x: Self) {
     
-    @scala.inline
-    def setAppInstanceAdmin(value: AppInstanceAdmin): Self = StObject.set(x, "AppInstanceAdmin", value.asInstanceOf[js.Any])
+    inline def setAppInstanceAdmin(value: AppInstanceAdmin): Self = StObject.set(x, "AppInstanceAdmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstanceAdminUndefined: Self = StObject.set(x, "AppInstanceAdmin", js.undefined)
+    inline def setAppInstanceAdminUndefined: Self = StObject.set(x, "AppInstanceAdmin", js.undefined)
   }
 }

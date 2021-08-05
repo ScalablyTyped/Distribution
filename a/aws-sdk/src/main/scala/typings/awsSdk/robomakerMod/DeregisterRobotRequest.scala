@@ -18,19 +18,15 @@ trait DeregisterRobotRequest extends StObject {
 }
 object DeregisterRobotRequest {
   
-  @scala.inline
-  def apply(fleet: Arn, robot: Arn): DeregisterRobotRequest = {
+  inline def apply(fleet: Arn, robot: Arn): DeregisterRobotRequest = {
     val __obj = js.Dynamic.literal(fleet = fleet.asInstanceOf[js.Any], robot = robot.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterRobotRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterRobotRequestMutableBuilder[Self <: DeregisterRobotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterRobotRequest](x: Self) {
     
-    @scala.inline
-    def setFleet(value: Arn): Self = StObject.set(x, "fleet", value.asInstanceOf[js.Any])
+    inline def setFleet(value: Arn): Self = StObject.set(x, "fleet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRobot(value: Arn): Self = StObject.set(x, "robot", value.asInstanceOf[js.Any])
+    inline def setRobot(value: Arn): Self = StObject.set(x, "robot", value.asInstanceOf[js.Any])
   }
 }

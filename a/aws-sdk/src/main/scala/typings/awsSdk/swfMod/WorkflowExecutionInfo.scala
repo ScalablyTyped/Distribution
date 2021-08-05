@@ -53,8 +53,7 @@ trait WorkflowExecutionInfo extends StObject {
 }
 object WorkflowExecutionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     execution: WorkflowExecution,
     executionStatus: ExecutionStatus,
     startTimestamp: Timestamp,
@@ -64,52 +63,36 @@ object WorkflowExecutionInfo {
     __obj.asInstanceOf[WorkflowExecutionInfo]
   }
   
-  @scala.inline
-  implicit class WorkflowExecutionInfoMutableBuilder[Self <: WorkflowExecutionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowExecutionInfo](x: Self) {
     
-    @scala.inline
-    def setCancelRequested(value: Canceled): Self = StObject.set(x, "cancelRequested", value.asInstanceOf[js.Any])
+    inline def setCancelRequested(value: Canceled): Self = StObject.set(x, "cancelRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelRequestedUndefined: Self = StObject.set(x, "cancelRequested", js.undefined)
+    inline def setCancelRequestedUndefined: Self = StObject.set(x, "cancelRequested", js.undefined)
     
-    @scala.inline
-    def setCloseStatus(value: CloseStatus): Self = StObject.set(x, "closeStatus", value.asInstanceOf[js.Any])
+    inline def setCloseStatus(value: CloseStatus): Self = StObject.set(x, "closeStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseStatusUndefined: Self = StObject.set(x, "closeStatus", js.undefined)
+    inline def setCloseStatusUndefined: Self = StObject.set(x, "closeStatus", js.undefined)
     
-    @scala.inline
-    def setCloseTimestamp(value: Timestamp): Self = StObject.set(x, "closeTimestamp", value.asInstanceOf[js.Any])
+    inline def setCloseTimestamp(value: Timestamp): Self = StObject.set(x, "closeTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseTimestampUndefined: Self = StObject.set(x, "closeTimestamp", js.undefined)
+    inline def setCloseTimestampUndefined: Self = StObject.set(x, "closeTimestamp", js.undefined)
     
-    @scala.inline
-    def setExecution(value: WorkflowExecution): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
+    inline def setExecution(value: WorkflowExecution): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStatus(value: ExecutionStatus): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
+    inline def setExecutionStatus(value: ExecutionStatus): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: WorkflowExecution): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: WorkflowExecution): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
+    inline def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagList(value: TagList): Self = StObject.set(x, "tagList", value.asInstanceOf[js.Any])
+    inline def setTagList(value: TagList): Self = StObject.set(x, "tagList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagListUndefined: Self = StObject.set(x, "tagList", js.undefined)
+    inline def setTagListUndefined: Self = StObject.set(x, "tagList", js.undefined)
     
-    @scala.inline
-    def setTagListVarargs(value: Tag*): Self = StObject.set(x, "tagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "tagList", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
+    inline def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
   }
 }

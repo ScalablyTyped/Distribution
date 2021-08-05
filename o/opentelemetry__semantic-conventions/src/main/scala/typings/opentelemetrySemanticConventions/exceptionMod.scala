@@ -15,20 +15,17 @@ object exceptionMod {
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/exception", "ExceptionAttribute.MESSAGE")
     @js.native
     def MESSAGE: String = js.native
-    @scala.inline
-    def MESSAGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MESSAGE")(x.asInstanceOf[js.Any])
+    inline def MESSAGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MESSAGE")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/exception", "ExceptionAttribute.STACKTRACE")
     @js.native
     def STACKTRACE: String = js.native
-    @scala.inline
-    def STACKTRACE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STACKTRACE")(x.asInstanceOf[js.Any])
+    inline def STACKTRACE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STACKTRACE")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/exception", "ExceptionAttribute.TYPE")
     @js.native
     def TYPE: String = js.native
-    @scala.inline
-    def TYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE")(x.asInstanceOf[js.Any])
+    inline def TYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@opentelemetry/semantic-conventions/build/src/trace/exception", "ExceptionEventName")

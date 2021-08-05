@@ -28,39 +28,29 @@ trait GetFileStreamOptions extends StObject {
 }
 object GetFileStreamOptions {
   
-  @scala.inline
-  def apply(): GetFileStreamOptions = {
+  inline def apply(): GetFileStreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFileStreamOptions]
   }
   
-  @scala.inline
-  implicit class GetFileStreamOptionsMutableBuilder[Self <: GetFileStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetFileStreamOptions](x: Self) {
     
-    @scala.inline
-    def setCheckFile(
+    inline def setCheckFile(
       value: (/* fieldname */ String, /* file */ js.Any, /* filename */ String, /* encoding */ String, /* mimetype */ String) => Unit | Error
     ): Self = StObject.set(x, "checkFile", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setCheckFileUndefined: Self = StObject.set(x, "checkFile", js.undefined)
+    inline def setCheckFileUndefined: Self = StObject.set(x, "checkFile", js.undefined)
     
-    @scala.inline
-    def setDefCharset(value: String): Self = StObject.set(x, "defCharset", value.asInstanceOf[js.Any])
+    inline def setDefCharset(value: String): Self = StObject.set(x, "defCharset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefCharsetUndefined: Self = StObject.set(x, "defCharset", js.undefined)
+    inline def setDefCharsetUndefined: Self = StObject.set(x, "defCharset", js.undefined)
     
-    @scala.inline
-    def setLimits(value: FieldNameSize): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: FieldNameSize): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+    inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
-    @scala.inline
-    def setRequireFile(value: Boolean): Self = StObject.set(x, "requireFile", value.asInstanceOf[js.Any])
+    inline def setRequireFile(value: Boolean): Self = StObject.set(x, "requireFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireFileUndefined: Self = StObject.set(x, "requireFile", js.undefined)
+    inline def setRequireFileUndefined: Self = StObject.set(x, "requireFile", js.undefined)
   }
 }

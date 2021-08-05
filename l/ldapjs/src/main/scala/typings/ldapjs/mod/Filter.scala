@@ -12,20 +12,16 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(matches: js.Any => Boolean, `type`: String): Filter = {
+  inline def apply(matches: js.Any => Boolean, `type`: String): Filter = {
     val __obj = js.Dynamic.literal(matches = js.Any.fromFunction1(matches))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setMatches(value: js.Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
+    inline def setMatches(value: js.Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

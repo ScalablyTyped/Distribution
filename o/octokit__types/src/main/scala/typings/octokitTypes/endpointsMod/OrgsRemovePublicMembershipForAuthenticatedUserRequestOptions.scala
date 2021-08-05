@@ -20,25 +20,19 @@ trait OrgsRemovePublicMembershipForAuthenticatedUserRequestOptions extends StObj
 }
 object OrgsRemovePublicMembershipForAuthenticatedUserRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): OrgsRemovePublicMembershipForAuthenticatedUserRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): OrgsRemovePublicMembershipForAuthenticatedUserRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/orgs/:org/public_members/:username")
     __obj.asInstanceOf[OrgsRemovePublicMembershipForAuthenticatedUserRequestOptions]
   }
   
-  @scala.inline
-  implicit class OrgsRemovePublicMembershipForAuthenticatedUserRequestOptionsMutableBuilder[Self <: OrgsRemovePublicMembershipForAuthenticatedUserRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsRemovePublicMembershipForAuthenticatedUserRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashorgsSlashColonorgSlashpublic_membersSlashColonusername): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashorgsSlashColonorgSlashpublic_membersSlashColonusername): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

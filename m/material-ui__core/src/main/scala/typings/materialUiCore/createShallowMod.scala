@@ -14,10 +14,8 @@ object createShallowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Fn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Fn1]
-  @scala.inline
-  def default(options: PartialShallowOptions): Fn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Fn1]
+  inline def default(): Fn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Fn1]
+  inline def default(options: PartialShallowOptions): Fn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Fn1]
   
   trait ShallowOptions extends StObject {
     
@@ -29,26 +27,20 @@ object createShallowMod {
   }
   object ShallowOptions {
     
-    @scala.inline
-    def apply(dive: Boolean, shallow: Fn1, untilSelector: EnzymeSelector): ShallowOptions = {
+    inline def apply(dive: Boolean, shallow: Fn1, untilSelector: EnzymeSelector): ShallowOptions = {
       val __obj = js.Dynamic.literal(dive = dive.asInstanceOf[js.Any], shallow = shallow.asInstanceOf[js.Any], untilSelector = untilSelector.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShallowOptions]
     }
     
-    @scala.inline
-    implicit class ShallowOptionsMutableBuilder[Self <: ShallowOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShallowOptions](x: Self) {
       
-      @scala.inline
-      def setDive(value: Boolean): Self = StObject.set(x, "dive", value.asInstanceOf[js.Any])
+      inline def setDive(value: Boolean): Self = StObject.set(x, "dive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShallow(value: Fn1): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
+      inline def setShallow(value: Fn1): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUntilSelector(value: EnzymeSelector): Self = StObject.set(x, "untilSelector", value.asInstanceOf[js.Any])
+      inline def setUntilSelector(value: EnzymeSelector): Self = StObject.set(x, "untilSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUntilSelectorFunction2(value: (js.Any, /* context */ js.UndefOr[js.Any]) => Element | Null): Self = StObject.set(x, "untilSelector", js.Any.fromFunction2(value))
+      inline def setUntilSelectorFunction2(value: (js.Any, /* context */ js.UndefOr[js.Any]) => Element | Null): Self = StObject.set(x, "untilSelector", js.Any.fromFunction2(value))
     }
   }
 }

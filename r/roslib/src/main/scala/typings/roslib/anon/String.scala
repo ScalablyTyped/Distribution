@@ -13,25 +13,19 @@ trait String extends StObject {
 }
 object String {
   
-  @scala.inline
-  def apply(xml: Node): String = {
+  inline def apply(xml: Node): String = {
     val __obj = js.Dynamic.literal(xml = xml.asInstanceOf[js.Any])
     __obj.asInstanceOf[String]
   }
   
-  @scala.inline
-  implicit class StringMutableBuilder[Self <: String] (val x: Self) extends AnyVal {
+  extension [Self <: String](x: Self) {
     
-    @scala.inline
-    def setString(value: java.lang.String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: java.lang.String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringNull: Self = StObject.set(x, "string", null)
+    inline def setStringNull: Self = StObject.set(x, "string", null)
     
-    @scala.inline
-    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     
-    @scala.inline
-    def setXml(value: Node): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
+    inline def setXml(value: Node): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
   }
 }

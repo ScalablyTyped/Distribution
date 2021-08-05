@@ -12,6 +12,5 @@ object plainCardStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IPlainCardStyleProps): IPlainCardStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IPlainCardStyles]
+  inline def getStyles(props: IPlainCardStyleProps): IPlainCardStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IPlainCardStyles]
 }

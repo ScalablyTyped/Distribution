@@ -10,8 +10,7 @@ trait AcceleratorKeyEventArgs
      with IAcceleratorKeyEventArgs
 object AcceleratorKeyEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eventType: CoreAcceleratorKeyEventType,
     handled: Boolean,
     keyStatus: CorePhysicalKeyStatus,

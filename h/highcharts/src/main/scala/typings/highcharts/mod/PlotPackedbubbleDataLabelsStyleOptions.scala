@@ -10,19 +10,15 @@ trait PlotPackedbubbleDataLabelsStyleOptions extends StObject {
 }
 object PlotPackedbubbleDataLabelsStyleOptions {
   
-  @scala.inline
-  def apply(): PlotPackedbubbleDataLabelsStyleOptions = {
+  inline def apply(): PlotPackedbubbleDataLabelsStyleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotPackedbubbleDataLabelsStyleOptions]
   }
   
-  @scala.inline
-  implicit class PlotPackedbubbleDataLabelsStyleOptionsMutableBuilder[Self <: PlotPackedbubbleDataLabelsStyleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotPackedbubbleDataLabelsStyleOptions](x: Self) {
     
-    @scala.inline
-    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

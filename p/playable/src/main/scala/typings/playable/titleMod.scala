@@ -35,22 +35,19 @@ object titleMod {
     @JSImport("playable/dist/src/modules/ui/title/title", "default.View")
     @js.native
     def View: Instantiable1[/* config */ ITitleViewConfig, typings.playable.titleViewMod.default] = js.native
-    @scala.inline
-    def View_=(x: Instantiable1[/* config */ ITitleViewConfig, typings.playable.titleViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: Instantiable1[/* config */ ITitleViewConfig, typings.playable.titleViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/title/title", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/title/title", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -58,15 +55,15 @@ object titleMod {
     extends StObject
        with ITitle {
     
-    var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: js.Any = js.native
     
-    var _callback: js.Any = js.native
+    /* private */ var _callback: js.Any = js.native
     
-    var _initUI: js.Any = js.native
+    /* private */ var _initUI: js.Any = js.native
     
-    var _theme: js.Any = js.native
+    /* private */ var _theme: js.Any = js.native
     
-    var _triggerCallback: js.Any = js.native
+    /* private */ var _triggerCallback: js.Any = js.native
     
     var isHidden: Boolean = js.native
     

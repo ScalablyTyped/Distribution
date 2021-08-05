@@ -18,22 +18,17 @@ trait GenerateServiceLastAccessedDetailsRequest extends StObject {
 }
 object GenerateServiceLastAccessedDetailsRequest {
   
-  @scala.inline
-  def apply(Arn: arnType): GenerateServiceLastAccessedDetailsRequest = {
+  inline def apply(Arn: arnType): GenerateServiceLastAccessedDetailsRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateServiceLastAccessedDetailsRequest]
   }
   
-  @scala.inline
-  implicit class GenerateServiceLastAccessedDetailsRequestMutableBuilder[Self <: GenerateServiceLastAccessedDetailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateServiceLastAccessedDetailsRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranularity(value: AccessAdvisorUsageGranularityType): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
+    inline def setGranularity(value: AccessAdvisorUsageGranularityType): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranularityUndefined: Self = StObject.set(x, "Granularity", js.undefined)
+    inline def setGranularityUndefined: Self = StObject.set(x, "Granularity", js.undefined)
   }
 }

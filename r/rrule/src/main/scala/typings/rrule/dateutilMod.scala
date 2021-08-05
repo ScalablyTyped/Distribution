@@ -50,89 +50,69 @@ object dateutilMod {
     @js.native
     val PY_WEEKDAYS: js.Array[Double] = js.native
     
-    @scala.inline
-    def cloneDates(dates: js.Array[Date | Time]): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneDates")(dates.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+    inline def cloneDates(dates: js.Array[Date | Time]): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneDates")(dates.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
     
-    @scala.inline
-    def clone_(date: Time): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
-    @scala.inline
-    def clone_(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def clone_(date: Time): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def clone_(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @scala.inline
-    def combine(date: Date, time: Time): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def combine(date: Date, time: Time): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
     /**
       * @see: <http://docs.python.org/library/datetime.html#datetime.datetime.combine>
       */
-    @scala.inline
-    def combine(date: Date, time: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def combine(date: Date, time: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     /**
       * @see: <http://www.mcfedries.com/JavaScript/DaysBetween.asp>
       */
-    @scala.inline
-    def daysBetween(date1: Date, date2: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("daysBetween")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def daysBetween(date1: Date, date2: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("daysBetween")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * @see - <http://docs.python.org/library/datetime.html#datetime.date.fromordinal>
       */
-    @scala.inline
-    def fromOrdinal(ordinal: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOrdinal")(ordinal.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def fromOrdinal(ordinal: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOrdinal")(ordinal.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @scala.inline
-    def getMonthDays(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthDays")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getMonthDays(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthDays")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * @return {Number} python-like weekday
       */
-    @scala.inline
-    def getWeekday(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeekday")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getWeekday(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeekday")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * py_date.timetuple()[7]
       */
-    @scala.inline
-    def getYearDay(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getYearDay")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getYearDay(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getYearDay")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def isDate(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
+    inline def isDate(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
     
-    @scala.inline
-    def isLeapYear(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isLeapYear(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isValidDate(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
+    inline def isValidDate(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
     
     /**
       * @see: <http://docs.python.org/library/calendar.html#calendar.monthrange>
       */
-    @scala.inline
-    def monthRange(year: Double, month: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("monthRange")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def monthRange(year: Double, month: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("monthRange")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Sorts an array of Date or dateutil.Time objects
       */
-    @scala.inline
-    def sort[T /* <: PickDategetTime */](dates: js.Array[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(dates.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def sort[T /* <: PickDategetTime */](dates: js.Array[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(dates.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def timeToUntilString(time: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeToUntilString")(time.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def timeToUntilString(time: Double, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("timeToUntilString")(time.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def timeToUntilString(time: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeToUntilString")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def timeToUntilString(time: Double, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("timeToUntilString")(time.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * @see: <http://docs.python.org/library/datetime.html#datetime.date.toordinal>
       */
-    @scala.inline
-    def toOrdinal(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toOrdinal")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def toOrdinal(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toOrdinal")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * @return {Number} the date's timezone offset in ms
       */
-    @scala.inline
-    def tzOffset(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tzOffset")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def tzOffset(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tzOffset")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def untilStringToDate(until: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("untilStringToDate")(until.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def untilStringToDate(until: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("untilStringToDate")(until.asInstanceOf[js.Any]).asInstanceOf[Date]
   }
   
   object dateutil {
@@ -176,88 +156,68 @@ object dateutilMod {
     @js.native
     val PY_WEEKDAYS: js.Array[Double] = js.native
     
-    @scala.inline
-    def cloneDates(dates: js.Array[Date | Time]): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneDates")(dates.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+    inline def cloneDates(dates: js.Array[Date | Time]): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneDates")(dates.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
     
-    @scala.inline
-    def clone_(date: Time): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
-    @scala.inline
-    def clone_(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def clone_(date: Time): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def clone_(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @scala.inline
-    def combine(date: Date, time: Time): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def combine(date: Date, time: Time): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
     /**
       * @see: <http://docs.python.org/library/datetime.html#datetime.datetime.combine>
       */
-    @scala.inline
-    def combine(date: Date, time: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def combine(date: Date, time: Date): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     /**
       * @see: <http://www.mcfedries.com/JavaScript/DaysBetween.asp>
       */
-    @scala.inline
-    def daysBetween(date1: Date, date2: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("daysBetween")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def daysBetween(date1: Date, date2: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("daysBetween")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * @see - <http://docs.python.org/library/datetime.html#datetime.date.fromordinal>
       */
-    @scala.inline
-    def fromOrdinal(ordinal: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOrdinal")(ordinal.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def fromOrdinal(ordinal: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOrdinal")(ordinal.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @scala.inline
-    def getMonthDays(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthDays")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getMonthDays(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthDays")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * @return {Number} python-like weekday
       */
-    @scala.inline
-    def getWeekday(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeekday")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getWeekday(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeekday")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * py_date.timetuple()[7]
       */
-    @scala.inline
-    def getYearDay(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getYearDay")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getYearDay(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getYearDay")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def isDate(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
+    inline def isDate(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
     
-    @scala.inline
-    def isLeapYear(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isLeapYear(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isValidDate(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
+    inline def isValidDate(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
     
     /**
       * @see: <http://docs.python.org/library/calendar.html#calendar.monthrange>
       */
-    @scala.inline
-    def monthRange(year: Double, month: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("monthRange")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def monthRange(year: Double, month: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("monthRange")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Sorts an array of Date or dateutil.Time objects
       */
-    @scala.inline
-    def sort[T /* <: PickDategetTime */](dates: js.Array[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(dates.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def sort[T /* <: PickDategetTime */](dates: js.Array[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(dates.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def timeToUntilString(time: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeToUntilString")(time.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def timeToUntilString(time: Double, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("timeToUntilString")(time.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def timeToUntilString(time: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeToUntilString")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def timeToUntilString(time: Double, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("timeToUntilString")(time.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * @see: <http://docs.python.org/library/datetime.html#datetime.date.toordinal>
       */
-    @scala.inline
-    def toOrdinal(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toOrdinal")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def toOrdinal(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toOrdinal")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * @return {Number} the date's timezone offset in ms
       */
-    @scala.inline
-    def tzOffset(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tzOffset")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def tzOffset(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tzOffset")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def untilStringToDate(until: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("untilStringToDate")(until.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def untilStringToDate(until: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("untilStringToDate")(until.asInstanceOf[js.Any]).asInstanceOf[Date]
   }
 }

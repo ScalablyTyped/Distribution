@@ -21,6 +21,5 @@ class TypeError ()
 }
 object TypeError {
   
-  @scala.inline
-  def apply: TypeErrorConstructor = js.Dynamic.global.selectDynamic("TypeError").asInstanceOf[TypeErrorConstructor]
+  inline def apply: TypeErrorConstructor = js.Dynamic.global.selectDynamic("TypeError").asInstanceOf[TypeErrorConstructor]
 }

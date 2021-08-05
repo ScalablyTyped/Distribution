@@ -17,31 +17,23 @@ trait IdRemote extends StObject {
 }
 object IdRemote {
   
-  @scala.inline
-  def apply(id: String, remote: Name): IdRemote = {
+  inline def apply(id: String, remote: Name): IdRemote = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdRemote]
   }
   
-  @scala.inline
-  implicit class IdRemoteMutableBuilder[Self <: IdRemote] (val x: Self) extends AnyVal {
+  extension [Self <: IdRemote](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemote(value: Name): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+    inline def setRemote(value: Name): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+    inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
     
-    @scala.inline
-    def setUser(value: ProjectUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: ProjectUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

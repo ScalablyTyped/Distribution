@@ -20,16 +20,13 @@ trait IOnInit extends StObject {
 }
 object IOnInit {
   
-  @scala.inline
-  def apply($onInit: () => Unit): IOnInit = {
+  inline def apply($onInit: () => Unit): IOnInit = {
     val __obj = js.Dynamic.literal($onInit = js.Any.fromFunction0($onInit))
     __obj.asInstanceOf[IOnInit]
   }
   
-  @scala.inline
-  implicit class IOnInitMutableBuilder[Self <: IOnInit] (val x: Self) extends AnyVal {
+  extension [Self <: IOnInit](x: Self) {
     
-    @scala.inline
-    def set$onInit(value: () => Unit): Self = StObject.set(x, "$onInit", js.Any.fromFunction0(value))
+    inline def set$onInit(value: () => Unit): Self = StObject.set(x, "$onInit", js.Any.fromFunction0(value))
   }
 }

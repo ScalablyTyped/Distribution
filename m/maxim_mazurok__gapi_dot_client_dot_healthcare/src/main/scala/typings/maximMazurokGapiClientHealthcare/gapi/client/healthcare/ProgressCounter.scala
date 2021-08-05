@@ -17,31 +17,23 @@ trait ProgressCounter extends StObject {
 }
 object ProgressCounter {
   
-  @scala.inline
-  def apply(): ProgressCounter = {
+  inline def apply(): ProgressCounter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProgressCounter]
   }
   
-  @scala.inline
-  implicit class ProgressCounterMutableBuilder[Self <: ProgressCounter] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressCounter](x: Self) {
     
-    @scala.inline
-    def setFailure(value: String): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+    inline def setFailure(value: String): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
+    inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
     
-    @scala.inline
-    def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+    inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

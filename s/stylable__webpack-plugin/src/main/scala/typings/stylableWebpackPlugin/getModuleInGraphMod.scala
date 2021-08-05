@@ -12,13 +12,11 @@ object getModuleInGraphMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getModuleInGraph(
+  inline def getModuleInGraph(
     chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
     filterFn: js.Function1[/* m */ StylableModule, js.Symbol | Boolean]
   ): Set[StylableModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModuleInGraph")(chunk.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any])).asInstanceOf[Set[StylableModule]]
-  @scala.inline
-  def getModuleInGraph(
+  inline def getModuleInGraph(
     chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
     filterFn: js.Function1[/* m */ StylableModule, js.Symbol | Boolean],
     filterChunkFn: js.Function1[
@@ -27,8 +25,7 @@ object getModuleInGraphMod {
     ]
   ): Set[StylableModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModuleInGraph")(chunk.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any], filterChunkFn.asInstanceOf[js.Any])).asInstanceOf[Set[StylableModule]]
   
-  @scala.inline
-  def hasStylableModuleInGraph(
+  inline def hasStylableModuleInGraph(
     chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any
   ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasStylableModuleInGraph")(chunk.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

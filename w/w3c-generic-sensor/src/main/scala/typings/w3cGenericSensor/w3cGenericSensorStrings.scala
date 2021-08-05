@@ -8,16 +8,13 @@ object w3cGenericSensorStrings {
   
   @js.native
   sealed trait activate extends StObject
-  @scala.inline
-  def activate: activate = "activate".asInstanceOf[activate]
+  inline def activate: activate = "activate".asInstanceOf[activate]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait reading extends StObject
-  @scala.inline
-  def reading: reading = "reading".asInstanceOf[reading]
+  inline def reading: reading = "reading".asInstanceOf[reading]
 }

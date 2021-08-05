@@ -27,37 +27,28 @@ trait CIMCGAAttribute extends StObject {
 }
 object CIMCGAAttribute {
   
-  @scala.inline
-  def apply(): CIMCGAAttribute = {
+  inline def apply(): CIMCGAAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMCGAAttribute")
     __obj.asInstanceOf[CIMCGAAttribute]
   }
   
-  @scala.inline
-  implicit class CIMCGAAttributeMutableBuilder[Self <: CIMCGAAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: CIMCGAAttribute](x: Self) {
     
-    @scala.inline
-    def setCGAAttributeType(
+    inline def setCGAAttributeType(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CGAAttributeType * / any */ String
     ): Self = StObject.set(x, "CGAAttributeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCGAAttributeTypeUndefined: Self = StObject.set(x, "CGAAttributeType", js.undefined)
+    inline def setCGAAttributeTypeUndefined: Self = StObject.set(x, "CGAAttributeType", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMCGAAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMCGAAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

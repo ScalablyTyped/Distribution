@@ -21,8 +21,7 @@ object modalContentMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object ModalContentProps {
     
-    @scala.inline
-    def apply(): ModalContentProps = {
+    inline def apply(): ModalContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModalContentProps]
     }
@@ -50,50 +49,36 @@ object modalContentMod extends Shortcut {
   }
   object StrictModalContentProps {
     
-    @scala.inline
-    def apply(): StrictModalContentProps = {
+    inline def apply(): StrictModalContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictModalContentProps]
     }
     
-    @scala.inline
-    implicit class StrictModalContentPropsMutableBuilder[Self <: StrictModalContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictModalContentProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setImage(value: Boolean): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: Boolean): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setScrolling(value: Boolean): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
+      inline def setScrolling(value: Boolean): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
+      inline def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
     }
   }
   

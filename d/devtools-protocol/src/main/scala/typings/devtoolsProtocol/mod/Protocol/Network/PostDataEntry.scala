@@ -10,19 +10,15 @@ trait PostDataEntry extends StObject {
 }
 object PostDataEntry {
   
-  @scala.inline
-  def apply(): PostDataEntry = {
+  inline def apply(): PostDataEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PostDataEntry]
   }
   
-  @scala.inline
-  implicit class PostDataEntryMutableBuilder[Self <: PostDataEntry] (val x: Self) extends AnyVal {
+  extension [Self <: PostDataEntry](x: Self) {
     
-    @scala.inline
-    def setBytes(value: String): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: String): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
+    inline def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
   }
 }

@@ -18,16 +18,13 @@ trait XSlidePreviewCacheListener extends StObject {
 }
 object XSlidePreviewCacheListener {
   
-  @scala.inline
-  def apply(notifyPreviewCreation: Double => Unit): XSlidePreviewCacheListener = {
+  inline def apply(notifyPreviewCreation: Double => Unit): XSlidePreviewCacheListener = {
     val __obj = js.Dynamic.literal(notifyPreviewCreation = js.Any.fromFunction1(notifyPreviewCreation))
     __obj.asInstanceOf[XSlidePreviewCacheListener]
   }
   
-  @scala.inline
-  implicit class XSlidePreviewCacheListenerMutableBuilder[Self <: XSlidePreviewCacheListener] (val x: Self) extends AnyVal {
+  extension [Self <: XSlidePreviewCacheListener](x: Self) {
     
-    @scala.inline
-    def setNotifyPreviewCreation(value: Double => Unit): Self = StObject.set(x, "notifyPreviewCreation", js.Any.fromFunction1(value))
+    inline def setNotifyPreviewCreation(value: Double => Unit): Self = StObject.set(x, "notifyPreviewCreation", js.Any.fromFunction1(value))
   }
 }

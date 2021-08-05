@@ -17,7 +17,7 @@ object transactionsMod {
   @js.native
   abstract class ClientTransaction protected ()
     extends typings.sipJs.clientTransactionMod.ClientTransaction {
-    protected def this(
+    /* protected */ def this(
       _request: OutgoingRequestMessage,
       transport: Transport,
       user: ClientTransactionUser,
@@ -35,8 +35,7 @@ object transactionsMod {
     @JSImport("sip.js/lib/core/transactions", "ClientTransaction.makeId")
     @js.native
     def makeId: js.Any = js.native
-    @scala.inline
-    def makeId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
+    inline def makeId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("sip.js/lib/core/transactions", "InviteClientTransaction")
@@ -112,7 +111,7 @@ object transactionsMod {
   @js.native
   abstract class ServerTransaction protected ()
     extends typings.sipJs.serverTransactionMod.ServerTransaction {
-    protected def this(
+    /* protected */ def this(
       _request: IncomingRequestMessage,
       transport: Transport,
       user: ServerTransactionUser,
@@ -125,7 +124,7 @@ object transactionsMod {
   @js.native
   abstract class Transaction protected ()
     extends typings.sipJs.transactionMod.Transaction {
-    protected def this(
+    /* protected */ def this(
       _transport: Transport,
       _user: TransactionUser,
       _id: String,

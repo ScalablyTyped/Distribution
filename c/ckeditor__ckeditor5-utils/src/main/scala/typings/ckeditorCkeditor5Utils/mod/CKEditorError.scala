@@ -28,6 +28,5 @@ object CKEditorError {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isCKEditorError(error: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCKEditorError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCKEditorError(error: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCKEditorError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getEndpointConfigMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function0[Apipath] = ^.asInstanceOf[js.Dynamic].apply(clientOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Apipath]]
+  inline def apply(clientOptions: ClientOptions): js.Function0[Apipath] = ^.asInstanceOf[js.Dynamic].apply(clientOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Apipath]]
   
   @JSImport("ipfs-http-client/dist/src/get-endpoint-config", JSImport.Namespace)
   @js.native

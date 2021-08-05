@@ -14,8 +14,7 @@ trait JitterEffect
 }
 object JitterEffect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     begin: Skeleton => Unit,
     end: () => Unit,
     jitterX: Double,
@@ -26,13 +25,10 @@ object JitterEffect {
     __obj.asInstanceOf[JitterEffect]
   }
   
-  @scala.inline
-  implicit class JitterEffectMutableBuilder[Self <: JitterEffect] (val x: Self) extends AnyVal {
+  extension [Self <: JitterEffect](x: Self) {
     
-    @scala.inline
-    def setJitterX(value: Double): Self = StObject.set(x, "jitterX", value.asInstanceOf[js.Any])
+    inline def setJitterX(value: Double): Self = StObject.set(x, "jitterX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJitterY(value: Double): Self = StObject.set(x, "jitterY", value.asInstanceOf[js.Any])
+    inline def setJitterY(value: Double): Self = StObject.set(x, "jitterY", value.asInstanceOf[js.Any])
   }
 }

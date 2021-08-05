@@ -27,19 +27,15 @@ trait SchemaBooleanOperatorOptions extends StObject {
 }
 object SchemaBooleanOperatorOptions {
   
-  @scala.inline
-  def apply(): SchemaBooleanOperatorOptions = {
+  inline def apply(): SchemaBooleanOperatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBooleanOperatorOptions]
   }
   
-  @scala.inline
-  implicit class SchemaBooleanOperatorOptionsMutableBuilder[Self <: SchemaBooleanOperatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBooleanOperatorOptions](x: Self) {
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
   }
 }

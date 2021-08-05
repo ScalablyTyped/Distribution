@@ -17,22 +17,17 @@ trait SheetSizeOptions extends StObject {
 }
 object SheetSizeOptions {
   
-  @scala.inline
-  def apply(behavior: SheetSizeBehaviour, maxSize: Double, minSize: Double): SheetSizeOptions = {
+  inline def apply(behavior: SheetSizeBehaviour, maxSize: Double, minSize: Double): SheetSizeOptions = {
     val __obj = js.Dynamic.literal(behavior = behavior.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetSizeOptions]
   }
   
-  @scala.inline
-  implicit class SheetSizeOptionsMutableBuilder[Self <: SheetSizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SheetSizeOptions](x: Self) {
     
-    @scala.inline
-    def setBehavior(value: SheetSizeBehaviour): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: SheetSizeBehaviour): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
   }
 }

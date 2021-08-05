@@ -18,8 +18,7 @@ trait SaxesTagPlain
 }
 object SaxesTagPlain {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributes: (Record[String, SaxesAttributeNS | String]) & (Record[String, String]),
     isSelfClosing: Boolean,
     name: String
@@ -28,16 +27,12 @@ object SaxesTagPlain {
     __obj.asInstanceOf[SaxesTagPlain]
   }
   
-  @scala.inline
-  implicit class SaxesTagPlainMutableBuilder[Self <: SaxesTagPlain] (val x: Self) extends AnyVal {
+  extension [Self <: SaxesTagPlain](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: (Record[String, SaxesAttributeNS | String]) & (Record[String, String])): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: (Record[String, SaxesAttributeNS | String]) & (Record[String, String])): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSelfClosing(value: Boolean): Self = StObject.set(x, "isSelfClosing", value.asInstanceOf[js.Any])
+    inline def setIsSelfClosing(value: Boolean): Self = StObject.set(x, "isSelfClosing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

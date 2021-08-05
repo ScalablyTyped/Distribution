@@ -23,28 +23,21 @@ trait AssociateRepositoryRequest extends StObject {
 }
 object AssociateRepositoryRequest {
   
-  @scala.inline
-  def apply(Repository: Repository): AssociateRepositoryRequest = {
+  inline def apply(Repository: Repository): AssociateRepositoryRequest = {
     val __obj = js.Dynamic.literal(Repository = Repository.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateRepositoryRequest]
   }
   
-  @scala.inline
-  implicit class AssociateRepositoryRequestMutableBuilder[Self <: AssociateRepositoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateRepositoryRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setRepository(value: Repository): Self = StObject.set(x, "Repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Repository): Self = StObject.set(x, "Repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

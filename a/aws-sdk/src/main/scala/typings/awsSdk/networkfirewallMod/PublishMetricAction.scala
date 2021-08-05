@@ -13,19 +13,15 @@ trait PublishMetricAction extends StObject {
 }
 object PublishMetricAction {
   
-  @scala.inline
-  def apply(Dimensions: Dimensions): PublishMetricAction = {
+  inline def apply(Dimensions: Dimensions): PublishMetricAction = {
     val __obj = js.Dynamic.literal(Dimensions = Dimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishMetricAction]
   }
   
-  @scala.inline
-  implicit class PublishMetricActionMutableBuilder[Self <: PublishMetricAction] (val x: Self) extends AnyVal {
+  extension [Self <: PublishMetricAction](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
   }
 }

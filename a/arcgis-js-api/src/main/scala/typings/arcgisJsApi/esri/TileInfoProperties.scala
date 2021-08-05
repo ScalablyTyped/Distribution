@@ -73,61 +73,43 @@ trait TileInfoProperties extends StObject {
 }
 object TileInfoProperties {
   
-  @scala.inline
-  def apply(): TileInfoProperties = {
+  inline def apply(): TileInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileInfoProperties]
   }
   
-  @scala.inline
-  implicit class TileInfoPropertiesMutableBuilder[Self <: TileInfoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TileInfoProperties](x: Self) {
     
-    @scala.inline
-    def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
+    inline def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
+    inline def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
     
-    @scala.inline
-    def setFormat(value: png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setIsWrappable(value: Boolean): Self = StObject.set(x, "isWrappable", value.asInstanceOf[js.Any])
+    inline def setIsWrappable(value: Boolean): Self = StObject.set(x, "isWrappable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWrappableUndefined: Self = StObject.set(x, "isWrappable", js.undefined)
+    inline def setIsWrappableUndefined: Self = StObject.set(x, "isWrappable", js.undefined)
     
-    @scala.inline
-    def setLods(value: js.Array[LODProperties]): Self = StObject.set(x, "lods", value.asInstanceOf[js.Any])
+    inline def setLods(value: js.Array[LODProperties]): Self = StObject.set(x, "lods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLodsUndefined: Self = StObject.set(x, "lods", js.undefined)
+    inline def setLodsUndefined: Self = StObject.set(x, "lods", js.undefined)
     
-    @scala.inline
-    def setLodsVarargs(value: LODProperties*): Self = StObject.set(x, "lods", js.Array(value :_*))
+    inline def setLodsVarargs(value: LODProperties*): Self = StObject.set(x, "lods", js.Array(value :_*))
     
-    @scala.inline
-    def setOrigin(value: PointProperties): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: PointProperties): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
   }
 }

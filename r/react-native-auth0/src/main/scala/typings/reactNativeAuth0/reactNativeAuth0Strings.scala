@@ -8,16 +8,13 @@ object reactNativeAuth0Strings {
   
   @js.native
   sealed trait Bearer extends StObject
-  @scala.inline
-  def Bearer: Bearer = "Bearer".asInstanceOf[Bearer]
+  inline def Bearer: Bearer = "Bearer".asInstanceOf[Bearer]
   
   @js.native
   sealed trait code extends StObject
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
   sealed trait link extends StObject
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
+  inline def link: link = "link".asInstanceOf[link]
 }

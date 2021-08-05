@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(map: Mappings): js.Any = ^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(map: Mappings, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(map: Mappings): js.Any = ^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(map: Mappings, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("env-to-object", JSImport.Namespace)
   @js.native
@@ -28,21 +26,17 @@ object mod {
   }
   object BooleanMapping {
     
-    @scala.inline
-    def apply(strict: Boolean): BooleanMapping = {
+    inline def apply(strict: Boolean): BooleanMapping = {
       val __obj = js.Dynamic.literal(strict = strict.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("boolean")
       __obj.asInstanceOf[BooleanMapping]
     }
     
-    @scala.inline
-    implicit class BooleanMappingMutableBuilder[Self <: BooleanMapping] (val x: Self) extends AnyVal {
+    extension [Self <: BooleanMapping](x: Self) {
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,23 +51,18 @@ object mod {
   }
   object GenericMapping {
     
-    @scala.inline
-    def apply(keypath: String): GenericMapping = {
+    inline def apply(keypath: String): GenericMapping = {
       val __obj = js.Dynamic.literal(keypath = keypath.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericMapping]
     }
     
-    @scala.inline
-    implicit class GenericMappingMutableBuilder[Self <: GenericMapping] (val x: Self) extends AnyVal {
+    extension [Self <: GenericMapping](x: Self) {
       
-      @scala.inline
-      def setKeypath(value: String): Self = StObject.set(x, "keypath", value.asInstanceOf[js.Any])
+      inline def setKeypath(value: String): Self = StObject.set(x, "keypath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -89,21 +78,17 @@ object mod {
   }
   object IntegerMapping {
     
-    @scala.inline
-    def apply(keypath: String, radix: Double): IntegerMapping = {
+    inline def apply(keypath: String, radix: Double): IntegerMapping = {
       val __obj = js.Dynamic.literal(keypath = keypath.asInstanceOf[js.Any], radix = radix.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("integer")
       __obj.asInstanceOf[IntegerMapping]
     }
     
-    @scala.inline
-    implicit class IntegerMappingMutableBuilder[Self <: IntegerMapping] (val x: Self) extends AnyVal {
+    extension [Self <: IntegerMapping](x: Self) {
       
-      @scala.inline
-      def setRadix(value: Double): Self = StObject.set(x, "radix", value.asInstanceOf[js.Any])
+      inline def setRadix(value: Double): Self = StObject.set(x, "radix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,21 +100,18 @@ object mod {
   trait Mapping extends StObject
   object Mapping {
     
-    @scala.inline
-    def BooleanMapping(strict: Boolean): typings.envToObject.mod.BooleanMapping = {
+    inline def BooleanMapping(strict: Boolean): typings.envToObject.mod.BooleanMapping = {
       val __obj = js.Dynamic.literal(strict = strict.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("boolean")
       __obj.asInstanceOf[typings.envToObject.mod.BooleanMapping]
     }
     
-    @scala.inline
-    def GenericMapping(keypath: String): typings.envToObject.mod.GenericMapping = {
+    inline def GenericMapping(keypath: String): typings.envToObject.mod.GenericMapping = {
       val __obj = js.Dynamic.literal(keypath = keypath.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.envToObject.mod.GenericMapping]
     }
     
-    @scala.inline
-    def IntegerMapping(keypath: String, radix: Double): typings.envToObject.mod.IntegerMapping = {
+    inline def IntegerMapping(keypath: String, radix: Double): typings.envToObject.mod.IntegerMapping = {
       val __obj = js.Dynamic.literal(keypath = keypath.asInstanceOf[js.Any], radix = radix.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("integer")
       __obj.asInstanceOf[typings.envToObject.mod.IntegerMapping]
@@ -144,17 +126,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(parsers: Parsers): Options = {
+    inline def apply(parsers: Parsers): Options = {
       val __obj = js.Dynamic.literal(parsers = parsers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setParsers(value: Parsers): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
+      inline def setParsers(value: Parsers): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
     }
   }
   

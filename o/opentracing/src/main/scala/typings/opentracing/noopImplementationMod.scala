@@ -11,13 +11,9 @@ object noopImplementationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
-  @scala.inline
-  def default(createTracer: js.Function0[Tracer]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(createTracer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
+  inline def default(createTracer: js.Function0[Tracer]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(createTracer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def noopImplementationTests(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noopImplementationTests")().asInstanceOf[Unit]
-  @scala.inline
-  def noopImplementationTests(createTracer: js.Function0[Tracer]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noopImplementationTests")(createTracer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def noopImplementationTests(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noopImplementationTests")().asInstanceOf[Unit]
+  inline def noopImplementationTests(createTracer: js.Function0[Tracer]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noopImplementationTests")(createTracer.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

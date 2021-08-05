@@ -22,25 +22,19 @@ trait SchemaGoogleDatastoreAdminV1IndexedProperty extends StObject {
 }
 object SchemaGoogleDatastoreAdminV1IndexedProperty {
   
-  @scala.inline
-  def apply(): SchemaGoogleDatastoreAdminV1IndexedProperty = {
+  inline def apply(): SchemaGoogleDatastoreAdminV1IndexedProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1IndexedProperty]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDatastoreAdminV1IndexedPropertyMutableBuilder[Self <: SchemaGoogleDatastoreAdminV1IndexedProperty] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDatastoreAdminV1IndexedProperty](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

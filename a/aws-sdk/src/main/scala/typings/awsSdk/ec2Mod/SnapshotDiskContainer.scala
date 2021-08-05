@@ -28,37 +28,27 @@ trait SnapshotDiskContainer extends StObject {
 }
 object SnapshotDiskContainer {
   
-  @scala.inline
-  def apply(): SnapshotDiskContainer = {
+  inline def apply(): SnapshotDiskContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotDiskContainer]
   }
   
-  @scala.inline
-  implicit class SnapshotDiskContainerMutableBuilder[Self <: SnapshotDiskContainer] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotDiskContainer](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
     
-    @scala.inline
-    def setUserBucket(value: UserBucket): Self = StObject.set(x, "UserBucket", value.asInstanceOf[js.Any])
+    inline def setUserBucket(value: UserBucket): Self = StObject.set(x, "UserBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserBucketUndefined: Self = StObject.set(x, "UserBucket", js.undefined)
+    inline def setUserBucketUndefined: Self = StObject.set(x, "UserBucket", js.undefined)
   }
 }

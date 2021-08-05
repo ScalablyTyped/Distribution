@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ChildrenOutletContexts () extends StObject {
   
-  var contexts: js.Any = js.native
+  /* private */ var contexts: js.Any = js.native
   
   def getContext(childName: String): OutletContext | Null = js.native
   

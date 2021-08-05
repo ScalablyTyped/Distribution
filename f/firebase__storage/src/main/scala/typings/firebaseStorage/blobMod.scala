@@ -19,17 +19,17 @@ object blobMod {
     def this(data: Blob, elideCopy: Boolean) = this()
     def this(data: Uint8Array, elideCopy: Boolean) = this()
     
-    var data_ : js.Any = js.native
+    /* private */ var data_ : js.Any = js.native
     
     def size(): Double = js.native
     
-    var size_ : js.Any = js.native
+    /* private */ var size_ : js.Any = js.native
     
     def slice(startByte: Double, endByte: Double): FbsBlob | Null = js.native
     
     def `type`(): String = js.native
     
-    var type_ : js.Any = js.native
+    /* private */ var type_ : js.Any = js.native
     
     def uploadData(): Blob | Uint8Array = js.native
   }
@@ -40,7 +40,6 @@ object blobMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getBlob(args: (String | FbsBlob)*): FbsBlob | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlob")(args.asInstanceOf[js.Any]).asInstanceOf[FbsBlob | Null]
+    inline def getBlob(args: (String | FbsBlob)*): FbsBlob | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlob")(args.asInstanceOf[js.Any]).asInstanceOf[FbsBlob | Null]
   }
 }

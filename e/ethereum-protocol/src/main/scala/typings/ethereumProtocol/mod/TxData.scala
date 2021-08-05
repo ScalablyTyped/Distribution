@@ -12,16 +12,13 @@ trait TxData
 }
 object TxData {
   
-  @scala.inline
-  def apply(from: String): TxData = {
+  inline def apply(from: String): TxData = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     __obj.asInstanceOf[TxData]
   }
   
-  @scala.inline
-  implicit class TxDataMutableBuilder[Self <: TxData] (val x: Self) extends AnyVal {
+  extension [Self <: TxData](x: Self) {
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
   }
 }

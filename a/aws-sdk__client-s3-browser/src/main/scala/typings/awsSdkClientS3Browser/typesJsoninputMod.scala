@@ -17,20 +17,16 @@ object typesJsoninputMod {
   }
   object JSONInput {
     
-    @scala.inline
-    def apply(): JSONInput = {
+    inline def apply(): JSONInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JSONInput]
     }
     
-    @scala.inline
-    implicit class JSONInputMutableBuilder[Self <: JSONInput] (val x: Self) extends AnyVal {
+    extension [Self <: JSONInput](x: Self) {
       
-      @scala.inline
-      def setType(value: DOCUMENT | LINES | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: DOCUMENT | LINES | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
   

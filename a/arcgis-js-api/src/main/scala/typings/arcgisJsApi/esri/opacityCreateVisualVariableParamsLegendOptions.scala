@@ -19,8 +19,7 @@ trait opacityCreateVisualVariableParamsLegendOptions
 }
 object opacityCreateVisualVariableParamsLegendOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object opacityCreateVisualVariableParamsLegendOptions {
     __obj.asInstanceOf[opacityCreateVisualVariableParamsLegendOptions]
   }
   
-  @scala.inline
-  implicit class opacityCreateVisualVariableParamsLegendOptionsMutableBuilder[Self <: opacityCreateVisualVariableParamsLegendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: opacityCreateVisualVariableParamsLegendOptions](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

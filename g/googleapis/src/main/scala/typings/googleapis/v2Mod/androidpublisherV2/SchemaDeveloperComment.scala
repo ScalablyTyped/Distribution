@@ -18,25 +18,19 @@ trait SchemaDeveloperComment extends StObject {
 }
 object SchemaDeveloperComment {
   
-  @scala.inline
-  def apply(): SchemaDeveloperComment = {
+  inline def apply(): SchemaDeveloperComment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeveloperComment]
   }
   
-  @scala.inline
-  implicit class SchemaDeveloperCommentMutableBuilder[Self <: SchemaDeveloperComment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeveloperComment](x: Self) {
     
-    @scala.inline
-    def setLastModified(value: SchemaTimestamp): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: SchemaTimestamp): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait ExportTaskS3LocationRequest extends StObject {
 }
 object ExportTaskS3LocationRequest {
   
-  @scala.inline
-  def apply(S3Bucket: String): ExportTaskS3LocationRequest = {
+  inline def apply(S3Bucket: String): ExportTaskS3LocationRequest = {
     val __obj = js.Dynamic.literal(S3Bucket = S3Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportTaskS3LocationRequest]
   }
   
-  @scala.inline
-  implicit class ExportTaskS3LocationRequestMutableBuilder[Self <: ExportTaskS3LocationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExportTaskS3LocationRequest](x: Self) {
     
-    @scala.inline
-    def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Prefix(value: String): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
+    inline def setS3Prefix(value: String): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
+    inline def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
   }
 }

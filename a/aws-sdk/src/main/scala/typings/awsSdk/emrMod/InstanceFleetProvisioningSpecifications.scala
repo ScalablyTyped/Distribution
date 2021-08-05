@@ -18,25 +18,19 @@ trait InstanceFleetProvisioningSpecifications extends StObject {
 }
 object InstanceFleetProvisioningSpecifications {
   
-  @scala.inline
-  def apply(): InstanceFleetProvisioningSpecifications = {
+  inline def apply(): InstanceFleetProvisioningSpecifications = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceFleetProvisioningSpecifications]
   }
   
-  @scala.inline
-  implicit class InstanceFleetProvisioningSpecificationsMutableBuilder[Self <: InstanceFleetProvisioningSpecifications] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceFleetProvisioningSpecifications](x: Self) {
     
-    @scala.inline
-    def setOnDemandSpecification(value: OnDemandProvisioningSpecification): Self = StObject.set(x, "OnDemandSpecification", value.asInstanceOf[js.Any])
+    inline def setOnDemandSpecification(value: OnDemandProvisioningSpecification): Self = StObject.set(x, "OnDemandSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandSpecificationUndefined: Self = StObject.set(x, "OnDemandSpecification", js.undefined)
+    inline def setOnDemandSpecificationUndefined: Self = StObject.set(x, "OnDemandSpecification", js.undefined)
     
-    @scala.inline
-    def setSpotSpecification(value: SpotProvisioningSpecification): Self = StObject.set(x, "SpotSpecification", value.asInstanceOf[js.Any])
+    inline def setSpotSpecification(value: SpotProvisioningSpecification): Self = StObject.set(x, "SpotSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotSpecificationUndefined: Self = StObject.set(x, "SpotSpecification", js.undefined)
+    inline def setSpotSpecificationUndefined: Self = StObject.set(x, "SpotSpecification", js.undefined)
   }
 }

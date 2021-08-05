@@ -13,22 +13,17 @@ trait DaylightTimeZoneOffset
 }
 object DaylightTimeZoneOffset {
   
-  @scala.inline
-  def apply(): DaylightTimeZoneOffset = {
+  inline def apply(): DaylightTimeZoneOffset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DaylightTimeZoneOffset]
   }
   
-  @scala.inline
-  implicit class DaylightTimeZoneOffsetMutableBuilder[Self <: DaylightTimeZoneOffset] (val x: Self) extends AnyVal {
+  extension [Self <: DaylightTimeZoneOffset](x: Self) {
     
-    @scala.inline
-    def setDaylightBias(value: NullableOption[Double]): Self = StObject.set(x, "daylightBias", value.asInstanceOf[js.Any])
+    inline def setDaylightBias(value: NullableOption[Double]): Self = StObject.set(x, "daylightBias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaylightBiasNull: Self = StObject.set(x, "daylightBias", null)
+    inline def setDaylightBiasNull: Self = StObject.set(x, "daylightBias", null)
     
-    @scala.inline
-    def setDaylightBiasUndefined: Self = StObject.set(x, "daylightBias", js.undefined)
+    inline def setDaylightBiasUndefined: Self = StObject.set(x, "daylightBias", js.undefined)
   }
 }

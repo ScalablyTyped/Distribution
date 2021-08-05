@@ -31,14 +31,10 @@ object mod {
     * @param source Source files to add to the archive
     * @param options Seven Zip Options
     */
-  @scala.inline
-  def add(archive: String, source: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(archive.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
-  @scala.inline
-  def add(archive: String, source: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(archive.asInstanceOf[js.Any], source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
-  @scala.inline
-  def add(archive: String, source: js.Array[String]): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(archive.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
-  @scala.inline
-  def add(archive: String, source: js.Array[String], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(archive.asInstanceOf[js.Any], source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def add(archive: String, source: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(archive.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def add(archive: String, source: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(archive.asInstanceOf[js.Any], source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def add(archive: String, source: js.Array[String]): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(archive.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def add(archive: String, source: js.Array[String], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(archive.asInstanceOf[js.Any], source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Delete files from an archive
@@ -46,14 +42,10 @@ object mod {
     * @param output Target files to remove from the archive
     * @param options Seven Zip Options
     */
-  @scala.inline
-  def delete(archive: String, target: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
-  @scala.inline
-  def delete(archive: String, target: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
-  @scala.inline
-  def delete(archive: String, target: js.Array[String]): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
-  @scala.inline
-  def delete(archive: String, target: js.Array[String], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def delete(archive: String, target: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def delete(archive: String, target: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def delete(archive: String, target: js.Array[String]): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def delete(archive: String, target: js.Array[String], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Extracts files from an archive to the current directory or to the output directory. This command copies all extracted files to one directory.
@@ -61,10 +53,8 @@ object mod {
     * @param output Output directory
     * @param options Seven Zip Options
     */
-  @scala.inline
-  def extract(archive: String, output: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(archive.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
-  @scala.inline
-  def extract(archive: String, output: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(archive.asInstanceOf[js.Any], output.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def extract(archive: String, output: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(archive.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def extract(archive: String, output: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(archive.asInstanceOf[js.Any], output.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Extracts files from an archive to the current directory or to the output directory.
@@ -72,42 +62,33 @@ object mod {
     * @param output Output directory
     * @param options Seven Zip Options
     */
-  @scala.inline
-  def extractFull(archive: String, output: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFull")(archive.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
-  @scala.inline
-  def extractFull(archive: String, output: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFull")(archive.asInstanceOf[js.Any], output.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def extractFull(archive: String, output: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFull")(archive.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def extractFull(archive: String, output: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFull")(archive.asInstanceOf[js.Any], output.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Calculate hash values for files
     * @param target Target files to calculate the hash of
     * @param options Seven Zip Options
     */
-  @scala.inline
-  def hash(target: String): ZipStream = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(target.asInstanceOf[js.Any]).asInstanceOf[ZipStream]
-  @scala.inline
-  def hash(target: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
-  @scala.inline
-  def hash(target: js.Array[String]): ZipStream = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(target.asInstanceOf[js.Any]).asInstanceOf[ZipStream]
-  @scala.inline
-  def hash(target: js.Array[String], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def hash(target: String): ZipStream = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(target.asInstanceOf[js.Any]).asInstanceOf[ZipStream]
+  inline def hash(target: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def hash(target: js.Array[String]): ZipStream = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(target.asInstanceOf[js.Any]).asInstanceOf[ZipStream]
+  inline def hash(target: js.Array[String], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Lists contents of archive
     * @param archive Archive to list the contents from
     * @param options Seven Zip Options
     */
-  @scala.inline
-  def list(archive: String): ZipStream = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(archive.asInstanceOf[js.Any]).asInstanceOf[ZipStream]
-  @scala.inline
-  def list(archive: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(archive.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def list(archive: String): ZipStream = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(archive.asInstanceOf[js.Any]).asInstanceOf[ZipStream]
+  inline def list(archive: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(archive.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Registers the child process given by the $childProcess option.
     * Must be deferred with the $defer option during creation.
     * @param stream ZipStream to register listeners on
     */
-  @scala.inline
-  def listen(stream: ZipStream): ZipStream = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(stream.asInstanceOf[js.Any]).asInstanceOf[ZipStream]
+  inline def listen(stream: ZipStream): ZipStream = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(stream.asInstanceOf[js.Any]).asInstanceOf[ZipStream]
   
   /**
     * Rename files in an archive
@@ -115,18 +96,15 @@ object mod {
     * @param target Pairs of target names and new names to rename to
     * @param options Seven Zip Options
     */
-  @scala.inline
-  def rename(archive: String, target: js.Array[js.Array[String]]): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
-  @scala.inline
-  def rename(archive: String, target: js.Array[js.Array[String]], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def rename(archive: String, target: js.Array[js.Array[String]]): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def rename(archive: String, target: js.Array[js.Array[String]], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Tests archive files
     * @param archive Archive to test
     * @param options Seven Zip Options
     */
-  @scala.inline
-  def test(archive: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(archive.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def test(archive: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(archive.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Update older files in the archive and add files that are not already in the archiv
@@ -134,14 +112,10 @@ object mod {
     * @param source Source files to update from the file-system to the archive
     * @param options Seven Zip Options
     */
-  @scala.inline
-  def update(archive: String, files: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(archive.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
-  @scala.inline
-  def update(archive: String, files: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(archive.asInstanceOf[js.Any], files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
-  @scala.inline
-  def update(archive: String, files: js.Array[String]): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(archive.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
-  @scala.inline
-  def update(archive: String, files: js.Array[String], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(archive.asInstanceOf[js.Any], files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def update(archive: String, files: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(archive.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def update(archive: String, files: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(archive.asInstanceOf[js.Any], files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def update(archive: String, files: js.Array[String]): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(archive.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  inline def update(archive: String, files: js.Array[String], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(archive.asInstanceOf[js.Any], files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   // NOTE - The names are not wrong, some are spelt wrong in the source
   trait CommandLineSwitches extends StObject {
@@ -274,287 +248,194 @@ object mod {
   }
   object CommandLineSwitches {
     
-    @scala.inline
-    def apply(): CommandLineSwitches = {
+    inline def apply(): CommandLineSwitches = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommandLineSwitches]
     }
     
-    @scala.inline
-    implicit class CommandLineSwitchesMutableBuilder[Self <: CommandLineSwitches] (val x: Self) extends AnyVal {
+    extension [Self <: CommandLineSwitches](x: Self) {
       
-      @scala.inline
-      def setAlternateStreamExtract(value: Boolean): Self = StObject.set(x, "alternateStreamExtract", value.asInstanceOf[js.Any])
+      inline def setAlternateStreamExtract(value: Boolean): Self = StObject.set(x, "alternateStreamExtract", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlternateStreamExtractUndefined: Self = StObject.set(x, "alternateStreamExtract", js.undefined)
+      inline def setAlternateStreamExtractUndefined: Self = StObject.set(x, "alternateStreamExtract", js.undefined)
       
-      @scala.inline
-      def setAlternateStreamReplace(value: Boolean): Self = StObject.set(x, "alternateStreamReplace", value.asInstanceOf[js.Any])
+      inline def setAlternateStreamReplace(value: Boolean): Self = StObject.set(x, "alternateStreamReplace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlternateStreamReplaceUndefined: Self = StObject.set(x, "alternateStreamReplace", js.undefined)
+      inline def setAlternateStreamReplaceUndefined: Self = StObject.set(x, "alternateStreamReplace", js.undefined)
       
-      @scala.inline
-      def setAlternateStreamStore(value: Boolean): Self = StObject.set(x, "alternateStreamStore", value.asInstanceOf[js.Any])
+      inline def setAlternateStreamStore(value: Boolean): Self = StObject.set(x, "alternateStreamStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlternateStreamStoreUndefined: Self = StObject.set(x, "alternateStreamStore", js.undefined)
+      inline def setAlternateStreamStoreUndefined: Self = StObject.set(x, "alternateStreamStore", js.undefined)
       
-      @scala.inline
-      def setArchiveNameMode(value: String): Self = StObject.set(x, "archiveNameMode", value.asInstanceOf[js.Any])
+      inline def setArchiveNameMode(value: String): Self = StObject.set(x, "archiveNameMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchiveNameModeUndefined: Self = StObject.set(x, "archiveNameMode", js.undefined)
+      inline def setArchiveNameModeUndefined: Self = StObject.set(x, "archiveNameMode", js.undefined)
       
-      @scala.inline
-      def setArchiveType(value: String): Self = StObject.set(x, "archiveType", value.asInstanceOf[js.Any])
+      inline def setArchiveType(value: String): Self = StObject.set(x, "archiveType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchiveTypeUndefined: Self = StObject.set(x, "archiveType", js.undefined)
+      inline def setArchiveTypeUndefined: Self = StObject.set(x, "archiveType", js.undefined)
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
-      @scala.inline
-      def setCpuAffinity(value: String): Self = StObject.set(x, "cpuAffinity", value.asInstanceOf[js.Any])
+      inline def setCpuAffinity(value: String): Self = StObject.set(x, "cpuAffinity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpuAffinityUndefined: Self = StObject.set(x, "cpuAffinity", js.undefined)
+      inline def setCpuAffinityUndefined: Self = StObject.set(x, "cpuAffinity", js.undefined)
       
-      @scala.inline
-      def setDeleteFilesAfter(value: Boolean): Self = StObject.set(x, "deleteFilesAfter", value.asInstanceOf[js.Any])
+      inline def setDeleteFilesAfter(value: Boolean): Self = StObject.set(x, "deleteFilesAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteFilesAfterUndefined: Self = StObject.set(x, "deleteFilesAfter", js.undefined)
+      inline def setDeleteFilesAfterUndefined: Self = StObject.set(x, "deleteFilesAfter", js.undefined)
       
-      @scala.inline
-      def setExcludeArchive(value: js.Array[String]): Self = StObject.set(x, "excludeArchive", value.asInstanceOf[js.Any])
+      inline def setExcludeArchive(value: js.Array[String]): Self = StObject.set(x, "excludeArchive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeArchiveType(value: String): Self = StObject.set(x, "excludeArchiveType", value.asInstanceOf[js.Any])
+      inline def setExcludeArchiveType(value: String): Self = StObject.set(x, "excludeArchiveType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeArchiveTypeUndefined: Self = StObject.set(x, "excludeArchiveType", js.undefined)
+      inline def setExcludeArchiveTypeUndefined: Self = StObject.set(x, "excludeArchiveType", js.undefined)
       
-      @scala.inline
-      def setExcludeArchiveUndefined: Self = StObject.set(x, "excludeArchive", js.undefined)
+      inline def setExcludeArchiveUndefined: Self = StObject.set(x, "excludeArchive", js.undefined)
       
-      @scala.inline
-      def setExcludeArchiveVarargs(value: String*): Self = StObject.set(x, "excludeArchive", js.Array(value :_*))
+      inline def setExcludeArchiveVarargs(value: String*): Self = StObject.set(x, "excludeArchive", js.Array(value :_*))
       
-      @scala.inline
-      def setExlude(value: js.Array[String]): Self = StObject.set(x, "exlude", value.asInstanceOf[js.Any])
+      inline def setExlude(value: js.Array[String]): Self = StObject.set(x, "exlude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExludeUndefined: Self = StObject.set(x, "exlude", js.undefined)
+      inline def setExludeUndefined: Self = StObject.set(x, "exlude", js.undefined)
       
-      @scala.inline
-      def setExludeVarargs(value: String*): Self = StObject.set(x, "exlude", js.Array(value :_*))
+      inline def setExludeVarargs(value: String*): Self = StObject.set(x, "exlude", js.Array(value :_*))
       
-      @scala.inline
-      def setFromStdin(value: String): Self = StObject.set(x, "fromStdin", value.asInstanceOf[js.Any])
+      inline def setFromStdin(value: String): Self = StObject.set(x, "fromStdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromStdinUndefined: Self = StObject.set(x, "fromStdin", js.undefined)
+      inline def setFromStdinUndefined: Self = StObject.set(x, "fromStdin", js.undefined)
       
-      @scala.inline
-      def setFullyQualifiedPaths(value: Boolean): Self = StObject.set(x, "fullyQualifiedPaths", value.asInstanceOf[js.Any])
+      inline def setFullyQualifiedPaths(value: Boolean): Self = StObject.set(x, "fullyQualifiedPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullyQualifiedPathsUndefined: Self = StObject.set(x, "fullyQualifiedPaths", js.undefined)
+      inline def setFullyQualifiedPathsUndefined: Self = StObject.set(x, "fullyQualifiedPaths", js.undefined)
       
-      @scala.inline
-      def setHardlinks(value: Boolean): Self = StObject.set(x, "hardlinks", value.asInstanceOf[js.Any])
+      inline def setHardlinks(value: Boolean): Self = StObject.set(x, "hardlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardlinksUndefined: Self = StObject.set(x, "hardlinks", js.undefined)
+      inline def setHardlinksUndefined: Self = StObject.set(x, "hardlinks", js.undefined)
       
-      @scala.inline
-      def setHashMethod(value: String): Self = StObject.set(x, "hashMethod", value.asInstanceOf[js.Any])
+      inline def setHashMethod(value: String): Self = StObject.set(x, "hashMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashMethodUndefined: Self = StObject.set(x, "hashMethod", js.undefined)
+      inline def setHashMethodUndefined: Self = StObject.set(x, "hashMethod", js.undefined)
       
-      @scala.inline
-      def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeArchive(value: js.Array[String]): Self = StObject.set(x, "includeArchive", value.asInstanceOf[js.Any])
+      inline def setIncludeArchive(value: js.Array[String]): Self = StObject.set(x, "includeArchive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeArchiveUndefined: Self = StObject.set(x, "includeArchive", js.undefined)
+      inline def setIncludeArchiveUndefined: Self = StObject.set(x, "includeArchive", js.undefined)
       
-      @scala.inline
-      def setIncludeArchiveVarargs(value: String*): Self = StObject.set(x, "includeArchive", js.Array(value :_*))
+      inline def setIncludeArchiveVarargs(value: String*): Self = StObject.set(x, "includeArchive", js.Array(value :_*))
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setLargePages(value: Boolean): Self = StObject.set(x, "largePages", value.asInstanceOf[js.Any])
+      inline def setLargePages(value: Boolean): Self = StObject.set(x, "largePages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargePagesUndefined: Self = StObject.set(x, "largePages", js.undefined)
+      inline def setLargePagesUndefined: Self = StObject.set(x, "largePages", js.undefined)
       
-      @scala.inline
-      def setLatestTimeStamp(value: Boolean): Self = StObject.set(x, "latestTimeStamp", value.asInstanceOf[js.Any])
+      inline def setLatestTimeStamp(value: Boolean): Self = StObject.set(x, "latestTimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestTimeStampUndefined: Self = StObject.set(x, "latestTimeStamp", js.undefined)
+      inline def setLatestTimeStampUndefined: Self = StObject.set(x, "latestTimeStamp", js.undefined)
       
-      @scala.inline
-      def setListFileCharset(value: String): Self = StObject.set(x, "listFileCharset", value.asInstanceOf[js.Any])
+      inline def setListFileCharset(value: String): Self = StObject.set(x, "listFileCharset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListFileCharsetUndefined: Self = StObject.set(x, "listFileCharset", js.undefined)
+      inline def setListFileCharsetUndefined: Self = StObject.set(x, "listFileCharset", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setMethod(value: js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
       
-      @scala.inline
-      def setMultiBlockSize(value: String): Self = StObject.set(x, "multiBlockSize", value.asInstanceOf[js.Any])
+      inline def setMultiBlockSize(value: String): Self = StObject.set(x, "multiBlockSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiBlockSizeUndefined: Self = StObject.set(x, "multiBlockSize", js.undefined)
+      inline def setMultiBlockSizeUndefined: Self = StObject.set(x, "multiBlockSize", js.undefined)
       
-      @scala.inline
-      def setNoArchiveOnFail(value: Boolean): Self = StObject.set(x, "noArchiveOnFail", value.asInstanceOf[js.Any])
+      inline def setNoArchiveOnFail(value: Boolean): Self = StObject.set(x, "noArchiveOnFail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoArchiveOnFailUndefined: Self = StObject.set(x, "noArchiveOnFail", js.undefined)
+      inline def setNoArchiveOnFailUndefined: Self = StObject.set(x, "noArchiveOnFail", js.undefined)
       
-      @scala.inline
-      def setNoRootDuplication(value: Boolean): Self = StObject.set(x, "noRootDuplication", value.asInstanceOf[js.Any])
+      inline def setNoRootDuplication(value: Boolean): Self = StObject.set(x, "noRootDuplication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoRootDuplicationUndefined: Self = StObject.set(x, "noRootDuplication", js.undefined)
+      inline def setNoRootDuplicationUndefined: Self = StObject.set(x, "noRootDuplication", js.undefined)
       
-      @scala.inline
-      def setNoWildcards(value: Boolean): Self = StObject.set(x, "noWildcards", value.asInstanceOf[js.Any])
+      inline def setNoWildcards(value: Boolean): Self = StObject.set(x, "noWildcards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoWildcardsUndefined: Self = StObject.set(x, "noWildcards", js.undefined)
+      inline def setNoWildcardsUndefined: Self = StObject.set(x, "noWildcards", js.undefined)
       
-      @scala.inline
-      def setNtSecurity(value: Boolean): Self = StObject.set(x, "ntSecurity", value.asInstanceOf[js.Any])
+      inline def setNtSecurity(value: Boolean): Self = StObject.set(x, "ntSecurity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNtSecurityUndefined: Self = StObject.set(x, "ntSecurity", js.undefined)
+      inline def setNtSecurityUndefined: Self = StObject.set(x, "ntSecurity", js.undefined)
       
-      @scala.inline
-      def setOpenFiles(value: Boolean): Self = StObject.set(x, "openFiles", value.asInstanceOf[js.Any])
+      inline def setOpenFiles(value: Boolean): Self = StObject.set(x, "openFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenFilesUndefined: Self = StObject.set(x, "openFiles", js.undefined)
+      inline def setOpenFilesUndefined: Self = StObject.set(x, "openFiles", js.undefined)
       
-      @scala.inline
-      def setOutputDir(value: String): Self = StObject.set(x, "outputDir", value.asInstanceOf[js.Any])
+      inline def setOutputDir(value: String): Self = StObject.set(x, "outputDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputDirUndefined: Self = StObject.set(x, "outputDir", js.undefined)
+      inline def setOutputDirUndefined: Self = StObject.set(x, "outputDir", js.undefined)
       
-      @scala.inline
-      def setOutputStreams(value: js.Array[String]): Self = StObject.set(x, "outputStreams", value.asInstanceOf[js.Any])
+      inline def setOutputStreams(value: js.Array[String]): Self = StObject.set(x, "outputStreams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputStreamsUndefined: Self = StObject.set(x, "outputStreams", js.undefined)
+      inline def setOutputStreamsUndefined: Self = StObject.set(x, "outputStreams", js.undefined)
       
-      @scala.inline
-      def setOutputStreamsVarargs(value: String*): Self = StObject.set(x, "outputStreams", js.Array(value :_*))
+      inline def setOutputStreamsVarargs(value: String*): Self = StObject.set(x, "outputStreams", js.Array(value :_*))
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+      inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+      inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
       
-      @scala.inline
-      def setSfx(value: String): Self = StObject.set(x, "sfx", value.asInstanceOf[js.Any])
+      inline def setSfx(value: String): Self = StObject.set(x, "sfx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSfxUndefined: Self = StObject.set(x, "sfx", js.undefined)
+      inline def setSfxUndefined: Self = StObject.set(x, "sfx", js.undefined)
       
-      @scala.inline
-      def setSortByType(value: Boolean): Self = StObject.set(x, "sortByType", value.asInstanceOf[js.Any])
+      inline def setSortByType(value: Boolean): Self = StObject.set(x, "sortByType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortByTypeUndefined: Self = StObject.set(x, "sortByType", js.undefined)
+      inline def setSortByTypeUndefined: Self = StObject.set(x, "sortByType", js.undefined)
       
-      @scala.inline
-      def setSymlinks(value: Boolean): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
+      inline def setSymlinks(value: Boolean): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
+      inline def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
       
-      @scala.inline
-      def setTechInfo(value: Boolean): Self = StObject.set(x, "techInfo", value.asInstanceOf[js.Any])
+      inline def setTechInfo(value: Boolean): Self = StObject.set(x, "techInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTechInfoUndefined: Self = StObject.set(x, "techInfo", js.undefined)
+      inline def setTechInfoUndefined: Self = StObject.set(x, "techInfo", js.undefined)
       
-      @scala.inline
-      def setTimeStats(value: Boolean): Self = StObject.set(x, "timeStats", value.asInstanceOf[js.Any])
+      inline def setTimeStats(value: Boolean): Self = StObject.set(x, "timeStats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStatsUndefined: Self = StObject.set(x, "timeStats", js.undefined)
+      inline def setTimeStatsUndefined: Self = StObject.set(x, "timeStats", js.undefined)
       
-      @scala.inline
-      def setToStdout(value: Boolean): Self = StObject.set(x, "toStdout", value.asInstanceOf[js.Any])
+      inline def setToStdout(value: Boolean): Self = StObject.set(x, "toStdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToStdoutUndefined: Self = StObject.set(x, "toStdout", js.undefined)
+      inline def setToStdoutUndefined: Self = StObject.set(x, "toStdout", js.undefined)
       
-      @scala.inline
-      def setUpdateOptions(value: String): Self = StObject.set(x, "updateOptions", value.asInstanceOf[js.Any])
+      inline def setUpdateOptions(value: String): Self = StObject.set(x, "updateOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateOptionsUndefined: Self = StObject.set(x, "updateOptions", js.undefined)
+      inline def setUpdateOptionsUndefined: Self = StObject.set(x, "updateOptions", js.undefined)
       
-      @scala.inline
-      def setVolumes(value: js.Array[String]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
+      inline def setVolumes(value: js.Array[String]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
+      inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
       
-      @scala.inline
-      def setVolumesVarargs(value: String*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+      inline def setVolumesVarargs(value: String*): Self = StObject.set(x, "volumes", js.Array(value :_*))
       
-      @scala.inline
-      def setWorkingDir(value: String): Self = StObject.set(x, "workingDir", value.asInstanceOf[js.Any])
+      inline def setWorkingDir(value: String): Self = StObject.set(x, "workingDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkingDirUndefined: Self = StObject.set(x, "workingDir", js.undefined)
+      inline def setWorkingDirUndefined: Self = StObject.set(x, "workingDir", js.undefined)
       
-      @scala.inline
-      def setYes(value: Boolean): Self = StObject.set(x, "yes", value.asInstanceOf[js.Any])
+      inline def setYes(value: Boolean): Self = StObject.set(x, "yes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYesUndefined: Self = StObject.set(x, "yes", js.undefined)
+      inline def setYesUndefined: Self = StObject.set(x, "yes", js.undefined)
     }
   }
   
@@ -574,44 +455,32 @@ object mod {
   }
   object Data {
     
-    @scala.inline
-    def apply(file: String, status: String): Data = {
+    inline def apply(file: String, status: String): Data = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: String): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: String): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeCompressed(value: Double): Self = StObject.set(x, "sizeCompressed", value.asInstanceOf[js.Any])
+      inline def setSizeCompressed(value: Double): Self = StObject.set(x, "sizeCompressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeCompressedUndefined: Self = StObject.set(x, "sizeCompressed", js.undefined)
+      inline def setSizeCompressedUndefined: Self = StObject.set(x, "sizeCompressed", js.undefined)
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -650,62 +519,44 @@ object mod {
   }
   object Node7zOptions {
     
-    @scala.inline
-    def apply(): Node7zOptions = {
+    inline def apply(): Node7zOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Node7zOptions]
     }
     
-    @scala.inline
-    implicit class Node7zOptionsMutableBuilder[Self <: Node7zOptions] (val x: Self) extends AnyVal {
+    extension [Self <: Node7zOptions](x: Self) {
       
-      @scala.inline
-      def set$bin(value: String): Self = StObject.set(x, "$bin", value.asInstanceOf[js.Any])
+      inline def set$bin(value: String): Self = StObject.set(x, "$bin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$binUndefined: Self = StObject.set(x, "$bin", js.undefined)
+      inline def set$binUndefined: Self = StObject.set(x, "$bin", js.undefined)
       
-      @scala.inline
-      def set$cherryPick(value: js.Array[String]): Self = StObject.set(x, "$cherryPick", value.asInstanceOf[js.Any])
+      inline def set$cherryPick(value: js.Array[String]): Self = StObject.set(x, "$cherryPick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$cherryPickUndefined: Self = StObject.set(x, "$cherryPick", js.undefined)
+      inline def set$cherryPickUndefined: Self = StObject.set(x, "$cherryPick", js.undefined)
       
-      @scala.inline
-      def set$cherryPickVarargs(value: String*): Self = StObject.set(x, "$cherryPick", js.Array(value :_*))
+      inline def set$cherryPickVarargs(value: String*): Self = StObject.set(x, "$cherryPick", js.Array(value :_*))
       
-      @scala.inline
-      def set$childProcess(value: ChildProcess): Self = StObject.set(x, "$childProcess", value.asInstanceOf[js.Any])
+      inline def set$childProcess(value: ChildProcess): Self = StObject.set(x, "$childProcess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$childProcessUndefined: Self = StObject.set(x, "$childProcess", js.undefined)
+      inline def set$childProcessUndefined: Self = StObject.set(x, "$childProcess", js.undefined)
       
-      @scala.inline
-      def set$defer(value: Boolean): Self = StObject.set(x, "$defer", value.asInstanceOf[js.Any])
+      inline def set$defer(value: Boolean): Self = StObject.set(x, "$defer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$deferUndefined: Self = StObject.set(x, "$defer", js.undefined)
+      inline def set$deferUndefined: Self = StObject.set(x, "$defer", js.undefined)
       
-      @scala.inline
-      def set$progress(value: Boolean): Self = StObject.set(x, "$progress", value.asInstanceOf[js.Any])
+      inline def set$progress(value: Boolean): Self = StObject.set(x, "$progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$progressUndefined: Self = StObject.set(x, "$progress", js.undefined)
+      inline def set$progressUndefined: Self = StObject.set(x, "$progress", js.undefined)
       
-      @scala.inline
-      def set$raw(value: js.Array[String]): Self = StObject.set(x, "$raw", value.asInstanceOf[js.Any])
+      inline def set$raw(value: js.Array[String]): Self = StObject.set(x, "$raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$rawUndefined: Self = StObject.set(x, "$raw", js.undefined)
+      inline def set$rawUndefined: Self = StObject.set(x, "$raw", js.undefined)
       
-      @scala.inline
-      def set$rawVarargs(value: String*): Self = StObject.set(x, "$raw", js.Array(value :_*))
+      inline def set$rawVarargs(value: String*): Self = StObject.set(x, "$raw", js.Array(value :_*))
       
-      @scala.inline
-      def set$spawnOptions(value: js.Object): Self = StObject.set(x, "$spawnOptions", value.asInstanceOf[js.Any])
+      inline def set$spawnOptions(value: js.Object): Self = StObject.set(x, "$spawnOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$spawnOptionsUndefined: Self = StObject.set(x, "$spawnOptions", js.undefined)
+      inline def set$spawnOptionsUndefined: Self = StObject.set(x, "$spawnOptions", js.undefined)
     }
   }
   
@@ -719,26 +570,20 @@ object mod {
   }
   object Progress {
     
-    @scala.inline
-    def apply(fileCount: Double, percent: Double): Progress = {
+    inline def apply(fileCount: Double, percent: Double): Progress = {
       val __obj = js.Dynamic.literal(fileCount = fileCount.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any])
       __obj.asInstanceOf[Progress]
     }
     
-    @scala.inline
-    implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+    extension [Self <: Progress](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileCount(value: Double): Self = StObject.set(x, "fileCount", value.asInstanceOf[js.Any])
+      inline def setFileCount(value: Double): Self = StObject.set(x, "fileCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -748,8 +593,7 @@ object mod {
        with CommandLineSwitches
   object SevenZipOptions {
     
-    @scala.inline
-    def apply(): SevenZipOptions = {
+    inline def apply(): SevenZipOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SevenZipOptions]
     }

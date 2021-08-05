@@ -63,79 +63,55 @@ trait AwsCloudFrontDistributionDetails extends StObject {
 }
 object AwsCloudFrontDistributionDetails {
   
-  @scala.inline
-  def apply(): AwsCloudFrontDistributionDetails = {
+  inline def apply(): AwsCloudFrontDistributionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCloudFrontDistributionDetails]
   }
   
-  @scala.inline
-  implicit class AwsCloudFrontDistributionDetailsMutableBuilder[Self <: AwsCloudFrontDistributionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCloudFrontDistributionDetails](x: Self) {
     
-    @scala.inline
-    def setCacheBehaviors(value: AwsCloudFrontDistributionCacheBehaviors): Self = StObject.set(x, "CacheBehaviors", value.asInstanceOf[js.Any])
+    inline def setCacheBehaviors(value: AwsCloudFrontDistributionCacheBehaviors): Self = StObject.set(x, "CacheBehaviors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheBehaviorsUndefined: Self = StObject.set(x, "CacheBehaviors", js.undefined)
+    inline def setCacheBehaviorsUndefined: Self = StObject.set(x, "CacheBehaviors", js.undefined)
     
-    @scala.inline
-    def setDefaultCacheBehavior(value: AwsCloudFrontDistributionDefaultCacheBehavior): Self = StObject.set(x, "DefaultCacheBehavior", value.asInstanceOf[js.Any])
+    inline def setDefaultCacheBehavior(value: AwsCloudFrontDistributionDefaultCacheBehavior): Self = StObject.set(x, "DefaultCacheBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCacheBehaviorUndefined: Self = StObject.set(x, "DefaultCacheBehavior", js.undefined)
+    inline def setDefaultCacheBehaviorUndefined: Self = StObject.set(x, "DefaultCacheBehavior", js.undefined)
     
-    @scala.inline
-    def setDefaultRootObject(value: NonEmptyString): Self = StObject.set(x, "DefaultRootObject", value.asInstanceOf[js.Any])
+    inline def setDefaultRootObject(value: NonEmptyString): Self = StObject.set(x, "DefaultRootObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRootObjectUndefined: Self = StObject.set(x, "DefaultRootObject", js.undefined)
+    inline def setDefaultRootObjectUndefined: Self = StObject.set(x, "DefaultRootObject", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: NonEmptyString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: NonEmptyString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
-    @scala.inline
-    def setETag(value: NonEmptyString): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: NonEmptyString): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setLastModifiedTime(value: NonEmptyString): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: NonEmptyString): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
+    inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
-    @scala.inline
-    def setLogging(value: AwsCloudFrontDistributionLogging): Self = StObject.set(x, "Logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: AwsCloudFrontDistributionLogging): Self = StObject.set(x, "Logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "Logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "Logging", js.undefined)
     
-    @scala.inline
-    def setOriginGroups(value: AwsCloudFrontDistributionOriginGroups): Self = StObject.set(x, "OriginGroups", value.asInstanceOf[js.Any])
+    inline def setOriginGroups(value: AwsCloudFrontDistributionOriginGroups): Self = StObject.set(x, "OriginGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginGroupsUndefined: Self = StObject.set(x, "OriginGroups", js.undefined)
+    inline def setOriginGroupsUndefined: Self = StObject.set(x, "OriginGroups", js.undefined)
     
-    @scala.inline
-    def setOrigins(value: AwsCloudFrontDistributionOrigins): Self = StObject.set(x, "Origins", value.asInstanceOf[js.Any])
+    inline def setOrigins(value: AwsCloudFrontDistributionOrigins): Self = StObject.set(x, "Origins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginsUndefined: Self = StObject.set(x, "Origins", js.undefined)
+    inline def setOriginsUndefined: Self = StObject.set(x, "Origins", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setWebAclId(value: NonEmptyString): Self = StObject.set(x, "WebAclId", value.asInstanceOf[js.Any])
+    inline def setWebAclId(value: NonEmptyString): Self = StObject.set(x, "WebAclId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAclIdUndefined: Self = StObject.set(x, "WebAclId", js.undefined)
+    inline def setWebAclIdUndefined: Self = StObject.set(x, "WebAclId", js.undefined)
   }
 }

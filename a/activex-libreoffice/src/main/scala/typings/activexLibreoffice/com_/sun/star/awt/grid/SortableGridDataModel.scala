@@ -52,8 +52,7 @@ trait SortableGridDataModel
 }
 object SortableGridDataModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnCount: Double,
     CurrentSortOrder: Pair[Double, Boolean],
     RowCount: Double,
@@ -91,13 +90,10 @@ object SortableGridDataModel {
     __obj.asInstanceOf[SortableGridDataModel]
   }
   
-  @scala.inline
-  implicit class SortableGridDataModelMutableBuilder[Self <: SortableGridDataModel] (val x: Self) extends AnyVal {
+  extension [Self <: SortableGridDataModel](x: Self) {
     
-    @scala.inline
-    def setCreate(value: XMutableGridDataModel => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: XMutableGridDataModel => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWithCollator(value: (XMutableGridDataModel, XCollator) => Unit): Self = StObject.set(x, "createWithCollator", js.Any.fromFunction2(value))
+    inline def setCreateWithCollator(value: (XMutableGridDataModel, XCollator) => Unit): Self = StObject.set(x, "createWithCollator", js.Any.fromFunction2(value))
   }
 }

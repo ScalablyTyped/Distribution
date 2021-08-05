@@ -15,19 +15,15 @@ trait GetTopOptions
 }
 object GetTopOptions {
   
-  @scala.inline
-  def apply(): GetTopOptions = {
+  inline def apply(): GetTopOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTopOptions]
   }
   
-  @scala.inline
-  implicit class GetTopOptionsMutableBuilder[Self <: GetTopOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetTopOptions](x: Self) {
     
-    @scala.inline
-    def setTime_range(value: long_term | medium_term | short_term): Self = StObject.set(x, "time_range", value.asInstanceOf[js.Any])
+    inline def setTime_range(value: long_term | medium_term | short_term): Self = StObject.set(x, "time_range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_rangeUndefined: Self = StObject.set(x, "time_range", js.undefined)
+    inline def setTime_rangeUndefined: Self = StObject.set(x, "time_range", js.undefined)
   }
 }

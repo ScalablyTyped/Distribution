@@ -28,25 +28,19 @@ trait MappingRule extends StObject {
 }
 object MappingRule {
   
-  @scala.inline
-  def apply(Claim: ClaimName, MatchType: MappingRuleMatchType, RoleARN: ARNString, Value: ClaimValue): MappingRule = {
+  inline def apply(Claim: ClaimName, MatchType: MappingRuleMatchType, RoleARN: ARNString, Value: ClaimValue): MappingRule = {
     val __obj = js.Dynamic.literal(Claim = Claim.asInstanceOf[js.Any], MatchType = MatchType.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MappingRule]
   }
   
-  @scala.inline
-  implicit class MappingRuleMutableBuilder[Self <: MappingRule] (val x: Self) extends AnyVal {
+  extension [Self <: MappingRule](x: Self) {
     
-    @scala.inline
-    def setClaim(value: ClaimName): Self = StObject.set(x, "Claim", value.asInstanceOf[js.Any])
+    inline def setClaim(value: ClaimName): Self = StObject.set(x, "Claim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchType(value: MappingRuleMatchType): Self = StObject.set(x, "MatchType", value.asInstanceOf[js.Any])
+    inline def setMatchType(value: MappingRuleMatchType): Self = StObject.set(x, "MatchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARN(value: ARNString): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: ARNString): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ClaimValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ClaimValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

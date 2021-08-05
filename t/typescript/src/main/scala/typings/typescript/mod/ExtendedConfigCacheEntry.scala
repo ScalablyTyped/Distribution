@@ -12,22 +12,17 @@ trait ExtendedConfigCacheEntry extends StObject {
 }
 object ExtendedConfigCacheEntry {
   
-  @scala.inline
-  def apply(extendedResult: TsConfigSourceFile): ExtendedConfigCacheEntry = {
+  inline def apply(extendedResult: TsConfigSourceFile): ExtendedConfigCacheEntry = {
     val __obj = js.Dynamic.literal(extendedResult = extendedResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedConfigCacheEntry]
   }
   
-  @scala.inline
-  implicit class ExtendedConfigCacheEntryMutableBuilder[Self <: ExtendedConfigCacheEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ExtendedConfigCacheEntry](x: Self) {
     
-    @scala.inline
-    def setExtendedConfig(value: ParsedTsconfig): Self = StObject.set(x, "extendedConfig", value.asInstanceOf[js.Any])
+    inline def setExtendedConfig(value: ParsedTsconfig): Self = StObject.set(x, "extendedConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedConfigUndefined: Self = StObject.set(x, "extendedConfig", js.undefined)
+    inline def setExtendedConfigUndefined: Self = StObject.set(x, "extendedConfig", js.undefined)
     
-    @scala.inline
-    def setExtendedResult(value: TsConfigSourceFile): Self = StObject.set(x, "extendedResult", value.asInstanceOf[js.Any])
+    inline def setExtendedResult(value: TsConfigSourceFile): Self = StObject.set(x, "extendedResult", value.asInstanceOf[js.Any])
   }
 }

@@ -31,6 +31,5 @@ object ReferenceProperty {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromString(targetCollection: Entity, referenceString: String): ReferenceProperty = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(targetCollection.asInstanceOf[js.Any], referenceString.asInstanceOf[js.Any])).asInstanceOf[ReferenceProperty]
+  inline def fromString(targetCollection: Entity, referenceString: String): ReferenceProperty = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(targetCollection.asInstanceOf[js.Any], referenceString.asInstanceOf[js.Any])).asInstanceOf[ReferenceProperty]
 }

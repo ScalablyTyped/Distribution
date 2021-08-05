@@ -18,22 +18,17 @@ trait DeleteTransitGatewayRequest extends StObject {
 }
 object DeleteTransitGatewayRequest {
   
-  @scala.inline
-  def apply(TransitGatewayId: TransitGatewayId): DeleteTransitGatewayRequest = {
+  inline def apply(TransitGatewayId: TransitGatewayId): DeleteTransitGatewayRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayId = TransitGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTransitGatewayRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTransitGatewayRequestMutableBuilder[Self <: DeleteTransitGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTransitGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayId(value: TransitGatewayId): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayId(value: TransitGatewayId): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
   }
 }

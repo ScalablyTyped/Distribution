@@ -10,19 +10,15 @@ trait ArrayUniqueOptions extends StObject {
 }
 object ArrayUniqueOptions {
   
-  @scala.inline
-  def apply(): ArrayUniqueOptions = {
+  inline def apply(): ArrayUniqueOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArrayUniqueOptions]
   }
   
-  @scala.inline
-  implicit class ArrayUniqueOptionsMutableBuilder[Self <: ArrayUniqueOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayUniqueOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
+    inline def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
+    inline def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
   }
 }

@@ -17,25 +17,19 @@ trait NotifierSecret extends StObject {
 }
 object NotifierSecret {
   
-  @scala.inline
-  def apply(): NotifierSecret = {
+  inline def apply(): NotifierSecret = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotifierSecret]
   }
   
-  @scala.inline
-  implicit class NotifierSecretMutableBuilder[Self <: NotifierSecret] (val x: Self) extends AnyVal {
+  extension [Self <: NotifierSecret](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -31,8 +31,7 @@ trait ContactGroup extends StObject {
 }
 object ContactGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addContact: Contact => ContactGroup,
     deleteGroup: () => Unit,
     getContacts: () => js.Array[Contact],
@@ -48,37 +47,26 @@ object ContactGroup {
     __obj.asInstanceOf[ContactGroup]
   }
   
-  @scala.inline
-  implicit class ContactGroupMutableBuilder[Self <: ContactGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ContactGroup](x: Self) {
     
-    @scala.inline
-    def setAddContact(value: Contact => ContactGroup): Self = StObject.set(x, "addContact", js.Any.fromFunction1(value))
+    inline def setAddContact(value: Contact => ContactGroup): Self = StObject.set(x, "addContact", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteGroup(value: () => Unit): Self = StObject.set(x, "deleteGroup", js.Any.fromFunction0(value))
+    inline def setDeleteGroup(value: () => Unit): Self = StObject.set(x, "deleteGroup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContacts(value: () => js.Array[Contact]): Self = StObject.set(x, "getContacts", js.Any.fromFunction0(value))
+    inline def setGetContacts(value: () => js.Array[Contact]): Self = StObject.set(x, "getContacts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroupName(value: () => String): Self = StObject.set(x, "getGroupName", js.Any.fromFunction0(value))
+    inline def setGetGroupName(value: () => String): Self = StObject.set(x, "getGroupName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSystemGroup(value: () => Boolean): Self = StObject.set(x, "isSystemGroup", js.Any.fromFunction0(value))
+    inline def setIsSystemGroup(value: () => Boolean): Self = StObject.set(x, "isSystemGroup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveContact(value: Contact => ContactGroup): Self = StObject.set(x, "removeContact", js.Any.fromFunction1(value))
+    inline def setRemoveContact(value: Contact => ContactGroup): Self = StObject.set(x, "removeContact", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGroupName(value: String => Unit): Self = StObject.set(x, "setGroupName", js.Any.fromFunction1(value))
+    inline def setSetGroupName(value: String => Unit): Self = StObject.set(x, "setGroupName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetName(value: String => ContactGroup): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: String => ContactGroup): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
   }
 }

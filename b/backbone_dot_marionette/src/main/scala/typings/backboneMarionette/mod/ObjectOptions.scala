@@ -18,19 +18,15 @@ trait ObjectOptions
 }
 object ObjectOptions {
   
-  @scala.inline
-  def apply(): ObjectOptions = {
+  inline def apply(): ObjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectOptions]
   }
   
-  @scala.inline
-  implicit class ObjectOptionsMutableBuilder[Self <: ObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectOptions](x: Self) {
     
-    @scala.inline
-    def setInitialize(value: /* options */ js.UndefOr[ObjectOptions] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+    inline def setInitialize(value: /* options */ js.UndefOr[ObjectOptions] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
+    inline def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
   }
 }

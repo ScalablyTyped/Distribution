@@ -23,17 +23,14 @@ object urlMod {
   }
   object OpenUrlActionOptions {
     
-    @scala.inline
-    def apply(url: String): OpenUrlActionOptions = {
+    inline def apply(url: String): OpenUrlActionOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenUrlActionOptions]
     }
     
-    @scala.inline
-    implicit class OpenUrlActionOptionsMutableBuilder[Self <: OpenUrlActionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenUrlActionOptions](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -25,8 +25,7 @@ trait Registries[T /* <: Ractive[T] */] extends StObject {
 }
 object Registries {
   
-  @scala.inline
-  def apply[T /* <: Ractive[T] */](
+  inline def apply[T /* <: Ractive[T] */](
     adaptors: Registry[Adaptor],
     components: Registry[Component],
     decorators: Registry[Decorator[T]],
@@ -40,31 +39,22 @@ object Registries {
     __obj.asInstanceOf[Registries[T]]
   }
   
-  @scala.inline
-  implicit class RegistriesMutableBuilder[Self <: Registries[?], T /* <: Ractive[T] */] (val x: Self & Registries[T]) extends AnyVal {
+  extension [Self <: Registries[?], T /* <: Ractive[T] */](x: Self & Registries[T]) {
     
-    @scala.inline
-    def setAdaptors(value: Registry[Adaptor]): Self = StObject.set(x, "adaptors", value.asInstanceOf[js.Any])
+    inline def setAdaptors(value: Registry[Adaptor]): Self = StObject.set(x, "adaptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponents(value: Registry[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: Registry[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecorators(value: Registry[Decorator[T]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    inline def setDecorators(value: Registry[Decorator[T]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasings(value: Registry[Easing]): Self = StObject.set(x, "easings", value.asInstanceOf[js.Any])
+    inline def setEasings(value: Registry[Easing]): Self = StObject.set(x, "easings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: Registry[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Registry[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpers(value: Registry[Helper]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
+    inline def setHelpers(value: Registry[Helper]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolators(value: Registry[Interpolator]): Self = StObject.set(x, "interpolators", value.asInstanceOf[js.Any])
+    inline def setInterpolators(value: Registry[Interpolator]): Self = StObject.set(x, "interpolators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartials(value: Registry[Partial]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
+    inline def setPartials(value: Registry[Partial]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
   }
 }

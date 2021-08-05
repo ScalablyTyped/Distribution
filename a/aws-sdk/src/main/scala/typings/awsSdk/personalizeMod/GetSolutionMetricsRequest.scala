@@ -13,16 +13,13 @@ trait GetSolutionMetricsRequest extends StObject {
 }
 object GetSolutionMetricsRequest {
   
-  @scala.inline
-  def apply(solutionVersionArn: Arn): GetSolutionMetricsRequest = {
+  inline def apply(solutionVersionArn: Arn): GetSolutionMetricsRequest = {
     val __obj = js.Dynamic.literal(solutionVersionArn = solutionVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSolutionMetricsRequest]
   }
   
-  @scala.inline
-  implicit class GetSolutionMetricsRequestMutableBuilder[Self <: GetSolutionMetricsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSolutionMetricsRequest](x: Self) {
     
-    @scala.inline
-    def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
+    inline def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
   }
 }

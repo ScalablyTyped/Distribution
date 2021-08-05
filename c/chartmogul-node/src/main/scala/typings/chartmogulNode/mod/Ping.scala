@@ -10,6 +10,5 @@ object Ping {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ping(config: Config): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ping")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def ping(config: Config): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ping")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

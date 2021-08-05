@@ -18,34 +18,25 @@ trait QueueApi extends StObject {
 }
 object QueueApi {
   
-  @scala.inline
-  def apply(read: RafCallback => Unit, tick: RafCallback => Unit, write: RafCallback => Unit): QueueApi = {
+  inline def apply(read: RafCallback => Unit, tick: RafCallback => Unit, write: RafCallback => Unit): QueueApi = {
     val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), tick = js.Any.fromFunction1(tick), write = js.Any.fromFunction1(write))
     __obj.asInstanceOf[QueueApi]
   }
   
-  @scala.inline
-  implicit class QueueApiMutableBuilder[Self <: QueueApi] (val x: Self) extends AnyVal {
+  extension [Self <: QueueApi](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setFlush(value: /* cb */ js.UndefOr[js.Function0[Unit]] => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
+    inline def setFlush(value: /* cb */ js.UndefOr[js.Function0[Unit]] => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
+    inline def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
     
-    @scala.inline
-    def setRead(value: RafCallback => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: RafCallback => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTick(value: RafCallback => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
+    inline def setTick(value: RafCallback => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrite(value: RafCallback => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: RafCallback => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

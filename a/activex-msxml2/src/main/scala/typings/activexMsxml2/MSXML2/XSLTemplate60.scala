@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** XSL Stylesheet Cache 6.0 */
 trait XSLTemplate60 extends StObject {
   
-  @JSName("MSXML2.XSLTemplate60_typekey")
+  /* private */ @JSName("MSXML2.XSLTemplate60_typekey")
   var MSXML2DotXSLTemplate60_typekey: XSLTemplate60
   
   /** create a new processor object */
@@ -18,8 +18,7 @@ trait XSLTemplate60 extends StObject {
 }
 object XSLTemplate60 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSXML2DotXSLTemplate60_typekey: XSLTemplate60,
     createProcessor: () => IXSLProcessor,
     stylesheet: IXMLDOMNode
@@ -29,16 +28,12 @@ object XSLTemplate60 {
     __obj.asInstanceOf[XSLTemplate60]
   }
   
-  @scala.inline
-  implicit class XSLTemplate60MutableBuilder[Self <: XSLTemplate60] (val x: Self) extends AnyVal {
+  extension [Self <: XSLTemplate60](x: Self) {
     
-    @scala.inline
-    def setCreateProcessor(value: () => IXSLProcessor): Self = StObject.set(x, "createProcessor", js.Any.fromFunction0(value))
+    inline def setCreateProcessor(value: () => IXSLProcessor): Self = StObject.set(x, "createProcessor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMSXML2DotXSLTemplate60_typekey(value: XSLTemplate60): Self = StObject.set(x, "MSXML2.XSLTemplate60_typekey", value.asInstanceOf[js.Any])
+    inline def setMSXML2DotXSLTemplate60_typekey(value: XSLTemplate60): Self = StObject.set(x, "MSXML2.XSLTemplate60_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesheet(value: IXMLDOMNode): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
+    inline def setStylesheet(value: IXMLDOMNode): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
   }
 }

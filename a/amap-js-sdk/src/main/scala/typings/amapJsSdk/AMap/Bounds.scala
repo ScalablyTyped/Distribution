@@ -32,8 +32,7 @@ trait Bounds extends StObject {
 }
 object Bounds {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contains: LngLat => Boolean,
     getCenter: () => LngLat,
     getNorthEast: () => LngLat,
@@ -43,19 +42,14 @@ object Bounds {
     __obj.asInstanceOf[Bounds]
   }
   
-  @scala.inline
-  implicit class BoundsMutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
+  extension [Self <: Bounds](x: Self) {
     
-    @scala.inline
-    def setContains(value: LngLat => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: LngLat => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCenter(value: () => LngLat): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
+    inline def setGetCenter(value: () => LngLat): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNorthEast(value: () => LngLat): Self = StObject.set(x, "getNorthEast", js.Any.fromFunction0(value))
+    inline def setGetNorthEast(value: () => LngLat): Self = StObject.set(x, "getNorthEast", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSouthWest(value: () => LngLat): Self = StObject.set(x, "getSouthWest", js.Any.fromFunction0(value))
+    inline def setGetSouthWest(value: () => LngLat): Self = StObject.set(x, "getSouthWest", js.Any.fromFunction0(value))
   }
 }

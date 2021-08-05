@@ -25,8 +25,7 @@ object wingBlankIndexNativeMod {
       @JSImport("antd-mobile-rn/lib/wing-blank/index.native", "default.defaultProps.size")
       @js.native
       def size: String = js.native
-      @scala.inline
-      def size_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
+      inline def size_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -42,23 +41,18 @@ object wingBlankIndexNativeMod {
   }
   object WingBlankProps {
     
-    @scala.inline
-    def apply(): WingBlankProps = {
+    inline def apply(): WingBlankProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WingBlankProps]
     }
     
-    @scala.inline
-    implicit class WingBlankPropsMutableBuilder[Self <: WingBlankProps] (val x: Self) extends AnyVal {
+    extension [Self <: WingBlankProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

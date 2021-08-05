@@ -12,19 +12,15 @@ trait Separated[A, B] extends StObject {
 }
 object Separated {
   
-  @scala.inline
-  def apply[A, B](left: A, right: B): Separated[A, B] = {
+  inline def apply[A, B](left: A, right: B): Separated[A, B] = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.asInstanceOf[Separated[A, B]]
   }
   
-  @scala.inline
-  implicit class SeparatedMutableBuilder[Self <: Separated[?, ?], A, B] (val x: Self & (Separated[A, B])) extends AnyVal {
+  extension [Self <: Separated[?, ?], A, B](x: Self & (Separated[A, B])) {
     
-    @scala.inline
-    def setLeft(value: A): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: A): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: B): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: B): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

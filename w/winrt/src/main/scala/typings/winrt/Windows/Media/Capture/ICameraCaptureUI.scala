@@ -16,8 +16,7 @@ trait ICameraCaptureUI extends StObject {
 }
 object ICameraCaptureUI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     captureFileAsync: CameraCaptureUIMode => IAsyncOperation[StorageFile],
     photoSettings: CameraCaptureUIPhotoCaptureSettings,
     videoSettings: CameraCaptureUIVideoCaptureSettings
@@ -26,16 +25,12 @@ object ICameraCaptureUI {
     __obj.asInstanceOf[ICameraCaptureUI]
   }
   
-  @scala.inline
-  implicit class ICameraCaptureUIMutableBuilder[Self <: ICameraCaptureUI] (val x: Self) extends AnyVal {
+  extension [Self <: ICameraCaptureUI](x: Self) {
     
-    @scala.inline
-    def setCaptureFileAsync(value: CameraCaptureUIMode => IAsyncOperation[StorageFile]): Self = StObject.set(x, "captureFileAsync", js.Any.fromFunction1(value))
+    inline def setCaptureFileAsync(value: CameraCaptureUIMode => IAsyncOperation[StorageFile]): Self = StObject.set(x, "captureFileAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPhotoSettings(value: CameraCaptureUIPhotoCaptureSettings): Self = StObject.set(x, "photoSettings", value.asInstanceOf[js.Any])
+    inline def setPhotoSettings(value: CameraCaptureUIPhotoCaptureSettings): Self = StObject.set(x, "photoSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSettings(value: CameraCaptureUIVideoCaptureSettings): Self = StObject.set(x, "videoSettings", value.asInstanceOf[js.Any])
+    inline def setVideoSettings(value: CameraCaptureUIVideoCaptureSettings): Self = StObject.set(x, "videoSettings", value.asInstanceOf[js.Any])
   }
 }

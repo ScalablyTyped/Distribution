@@ -83,8 +83,7 @@ trait Group[T /* <: SlickData */]
 }
 object Group {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](
+  inline def apply[T /* <: SlickData */](
     collapsed: Boolean,
     count: Double,
     equals_ : Group[T] => Boolean,
@@ -101,43 +100,30 @@ object Group {
     __obj.asInstanceOf[Group[T]]
   }
   
-  @scala.inline
-  implicit class GroupMutableBuilder[Self <: Group[?], T /* <: SlickData */] (val x: Self & Group[T]) extends AnyVal {
+  extension [Self <: Group[?], T /* <: SlickData */](x: Self & Group[T]) {
     
-    @scala.inline
-    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquals_(value: Group[T] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: Group[T] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGroupingKey(value: js.Any): Self = StObject.set(x, "groupingKey", value.asInstanceOf[js.Any])
+    inline def setGroupingKey(value: js.Any): Self = StObject.set(x, "groupingKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroups(value: js.Array[Group[T]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[Group[T]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: Group[T]*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Group[T]*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotals(value: GroupTotals[T]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
+    inline def setTotals(value: GroupTotals[T]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

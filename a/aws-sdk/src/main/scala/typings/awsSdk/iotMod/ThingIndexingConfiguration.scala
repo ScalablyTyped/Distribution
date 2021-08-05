@@ -28,40 +28,29 @@ trait ThingIndexingConfiguration extends StObject {
 }
 object ThingIndexingConfiguration {
   
-  @scala.inline
-  def apply(thingIndexingMode: ThingIndexingMode): ThingIndexingConfiguration = {
+  inline def apply(thingIndexingMode: ThingIndexingMode): ThingIndexingConfiguration = {
     val __obj = js.Dynamic.literal(thingIndexingMode = thingIndexingMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingIndexingConfiguration]
   }
   
-  @scala.inline
-  implicit class ThingIndexingConfigurationMutableBuilder[Self <: ThingIndexingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ThingIndexingConfiguration](x: Self) {
     
-    @scala.inline
-    def setCustomFields(value: Fields): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    inline def setCustomFields(value: Fields): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
+    inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
-    @scala.inline
-    def setCustomFieldsVarargs(value: Field*): Self = StObject.set(x, "customFields", js.Array(value :_*))
+    inline def setCustomFieldsVarargs(value: Field*): Self = StObject.set(x, "customFields", js.Array(value :_*))
     
-    @scala.inline
-    def setManagedFields(value: Fields): Self = StObject.set(x, "managedFields", value.asInstanceOf[js.Any])
+    inline def setManagedFields(value: Fields): Self = StObject.set(x, "managedFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedFieldsUndefined: Self = StObject.set(x, "managedFields", js.undefined)
+    inline def setManagedFieldsUndefined: Self = StObject.set(x, "managedFields", js.undefined)
     
-    @scala.inline
-    def setManagedFieldsVarargs(value: Field*): Self = StObject.set(x, "managedFields", js.Array(value :_*))
+    inline def setManagedFieldsVarargs(value: Field*): Self = StObject.set(x, "managedFields", js.Array(value :_*))
     
-    @scala.inline
-    def setThingConnectivityIndexingMode(value: ThingConnectivityIndexingMode): Self = StObject.set(x, "thingConnectivityIndexingMode", value.asInstanceOf[js.Any])
+    inline def setThingConnectivityIndexingMode(value: ThingConnectivityIndexingMode): Self = StObject.set(x, "thingConnectivityIndexingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingConnectivityIndexingModeUndefined: Self = StObject.set(x, "thingConnectivityIndexingMode", js.undefined)
+    inline def setThingConnectivityIndexingModeUndefined: Self = StObject.set(x, "thingConnectivityIndexingMode", js.undefined)
     
-    @scala.inline
-    def setThingIndexingMode(value: ThingIndexingMode): Self = StObject.set(x, "thingIndexingMode", value.asInstanceOf[js.Any])
+    inline def setThingIndexingMode(value: ThingIndexingMode): Self = StObject.set(x, "thingIndexingMode", value.asInstanceOf[js.Any])
   }
 }

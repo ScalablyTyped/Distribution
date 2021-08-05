@@ -12,22 +12,17 @@ trait HistoryLocation extends StObject {
 }
 object HistoryLocation {
   
-  @scala.inline
-  def apply(pathname: String): HistoryLocation = {
+  inline def apply(pathname: String): HistoryLocation = {
     val __obj = js.Dynamic.literal(pathname = pathname.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryLocation]
   }
   
-  @scala.inline
-  implicit class HistoryLocationMutableBuilder[Self <: HistoryLocation] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryLocation](x: Self) {
     
-    @scala.inline
-    def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+    inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
   }
 }

@@ -14,10 +14,8 @@ object serveStaticMod {
     * The file to serve will be determined by combining req.url with the provided root directory. 
     * When a file is not found, instead of sending a 404 response, this module will instead call next() to move on to the next middleware, allowing for stacking and fall-backs.
     */
-  @scala.inline
-  def apply(root: String): Handler = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[Handler]
-  @scala.inline
-  def apply(root: String, options: Dotfiles): Handler = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Handler]
+  inline def apply(root: String): Handler = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def apply(root: String, options: Dotfiles): Handler = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Handler]
   
   @JSImport("serve-static", JSImport.Namespace)
   @js.native
@@ -32,19 +30,14 @@ object serveStaticMod {
     @JSImport("serve-static", "mime.charsets")
     @js.native
     def charsets: Charsets_ = js.native
-    @scala.inline
-    def charsets_=(x: Charsets_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("charsets")(x.asInstanceOf[js.Any])
+    inline def charsets_=(x: Charsets_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("charsets")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def define(mimes: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def define(mimes: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def `extension`(mime: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extension")(mime.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def `extension`(mime: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extension")(mime.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def load(filepath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filepath.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def load(filepath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filepath.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def lookup(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def lookup(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

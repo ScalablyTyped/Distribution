@@ -12,6 +12,5 @@ object iterableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeIterable[T](iterator: Iterator[T, js.Any, Unit]): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeIterable")(iterator.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[T]]
+  inline def makeIterable[T](iterator: Iterator[T, js.Any, Unit]): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeIterable")(iterator.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[T]]
 }

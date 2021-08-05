@@ -12,17 +12,14 @@ object anon {
   }
   object Item {
     
-    @scala.inline
-    def apply[T](Item: js.Any => T): Item[T] = {
+    inline def apply[T](Item: js.Any => T): Item[T] = {
       val __obj = js.Dynamic.literal(Item = js.Any.fromFunction1(Item))
       __obj.asInstanceOf[Item[T]]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item[?], T] (val x: Self & Item[T]) extends AnyVal {
+    extension [Self <: Item[?], T](x: Self & Item[T]) {
       
-      @scala.inline
-      def setItem(value: js.Any => T): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+      inline def setItem(value: js.Any => T): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     }
   }
 }

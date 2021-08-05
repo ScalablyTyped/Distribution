@@ -12,16 +12,13 @@ trait VizManager extends StObject {
 }
 object VizManager {
   
-  @scala.inline
-  def apply(getVizs: () => js.Array[Viz]): VizManager = {
+  inline def apply(getVizs: () => js.Array[Viz]): VizManager = {
     val __obj = js.Dynamic.literal(getVizs = js.Any.fromFunction0(getVizs))
     __obj.asInstanceOf[VizManager]
   }
   
-  @scala.inline
-  implicit class VizManagerMutableBuilder[Self <: VizManager] (val x: Self) extends AnyVal {
+  extension [Self <: VizManager](x: Self) {
     
-    @scala.inline
-    def setGetVizs(value: () => js.Array[Viz]): Self = StObject.set(x, "getVizs", js.Any.fromFunction0(value))
+    inline def setGetVizs(value: () => js.Array[Viz]): Self = StObject.set(x, "getVizs", js.Any.fromFunction0(value))
   }
 }

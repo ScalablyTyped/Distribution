@@ -68,20 +68,16 @@ object Beam {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def applyAndGetBeams(
+  inline def applyAndGetBeams(
     voice: typings.vexflow.Vex.Flow.Voice,
     stem_direction: Double,
     groups: js.Array[typings.vexflow.Vex.Flow.Fraction]
   ): js.Array[typings.vexflow.Vex.Flow.Beam] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAndGetBeams")(voice.asInstanceOf[js.Any], stem_direction.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.vexflow.Vex.Flow.Beam]]
   
   /* static member */
-  @scala.inline
-  def generateBeams(notes: js.Array[typings.vexflow.Vex.Flow.StemmableNote]): js.Array[typings.vexflow.Vex.Flow.Beam] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateBeams")(notes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.vexflow.Vex.Flow.Beam]]
-  @scala.inline
-  def generateBeams(notes: js.Array[typings.vexflow.Vex.Flow.StemmableNote], config: Beammiddleonly): js.Array[typings.vexflow.Vex.Flow.Beam] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateBeams")(notes.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.vexflow.Vex.Flow.Beam]]
+  inline def generateBeams(notes: js.Array[typings.vexflow.Vex.Flow.StemmableNote]): js.Array[typings.vexflow.Vex.Flow.Beam] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateBeams")(notes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.vexflow.Vex.Flow.Beam]]
+  inline def generateBeams(notes: js.Array[typings.vexflow.Vex.Flow.StemmableNote], config: Beammiddleonly): js.Array[typings.vexflow.Vex.Flow.Beam] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateBeams")(notes.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.vexflow.Vex.Flow.Beam]]
   
   /* static member */
-  @scala.inline
-  def getDefaultBeamGroups(time_sig: String): js.Array[typings.vexflow.Vex.Flow.Fraction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultBeamGroups")(time_sig.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.vexflow.Vex.Flow.Fraction]]
+  inline def getDefaultBeamGroups(time_sig: String): js.Array[typings.vexflow.Vex.Flow.Fraction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultBeamGroups")(time_sig.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.vexflow.Vex.Flow.Fraction]]
 }

@@ -31,37 +31,27 @@ trait CompressionType extends StObject {
 }
 object CompressionType {
   
-  @scala.inline
-  def apply(): CompressionType = {
+  inline def apply(): CompressionType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompressionType]
   }
   
-  @scala.inline
-  implicit class CompressionTypeMutableBuilder[Self <: CompressionType] (val x: Self) extends AnyVal {
+  extension [Self <: CompressionType](x: Self) {
     
-    @scala.inline
-    def setCompressionType(value: EnumDWTCompressionType | Double): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
+    inline def setCompressionType(value: EnumDWTCompressionType | Double): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionTypeUndefined: Self = StObject.set(x, "compressionType", js.undefined)
+    inline def setCompressionTypeUndefined: Self = StObject.set(x, "compressionType", js.undefined)
     
-    @scala.inline
-    def setFileFormat(value: EnumDWTFileFormat | Double): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
+    inline def setFileFormat(value: EnumDWTFileFormat | Double): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileFormatUndefined: Self = StObject.set(x, "fileFormat", js.undefined)
+    inline def setFileFormatUndefined: Self = StObject.set(x, "fileFormat", js.undefined)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setJpegQuality(value: Double): Self = StObject.set(x, "jpegQuality", value.asInstanceOf[js.Any])
+    inline def setJpegQuality(value: Double): Self = StObject.set(x, "jpegQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJpegQualityUndefined: Self = StObject.set(x, "jpegQuality", js.undefined)
+    inline def setJpegQualityUndefined: Self = StObject.set(x, "jpegQuality", js.undefined)
   }
 }

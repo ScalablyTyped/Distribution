@@ -13,22 +13,17 @@ trait Integrity extends StObject {
 }
 object Integrity {
   
-  @scala.inline
-  def apply(password: String): Integrity = {
+  inline def apply(password: String): Integrity = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any])
     __obj.asInstanceOf[Integrity]
   }
   
-  @scala.inline
-  implicit class IntegrityMutableBuilder[Self <: Integrity] (val x: Self) extends AnyVal {
+  extension [Self <: Integrity](x: Self) {
     
-    @scala.inline
-    def setIntegrity(value: SealOptionsSub): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+    inline def setIntegrity(value: SealOptionsSub): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+    inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
   }
 }

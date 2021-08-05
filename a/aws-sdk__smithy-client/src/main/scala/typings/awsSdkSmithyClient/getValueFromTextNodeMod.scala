@@ -10,6 +10,5 @@ object getValueFromTextNodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getValueFromTextNode(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFromTextNode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getValueFromTextNode(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFromTextNode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

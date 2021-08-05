@@ -13,16 +13,13 @@ trait UpdateVirtualServiceOutput extends StObject {
 }
 object UpdateVirtualServiceOutput {
   
-  @scala.inline
-  def apply(virtualService: VirtualServiceData): UpdateVirtualServiceOutput = {
+  inline def apply(virtualService: VirtualServiceData): UpdateVirtualServiceOutput = {
     val __obj = js.Dynamic.literal(virtualService = virtualService.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVirtualServiceOutput]
   }
   
-  @scala.inline
-  implicit class UpdateVirtualServiceOutputMutableBuilder[Self <: UpdateVirtualServiceOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateVirtualServiceOutput](x: Self) {
     
-    @scala.inline
-    def setVirtualService(value: VirtualServiceData): Self = StObject.set(x, "virtualService", value.asInstanceOf[js.Any])
+    inline def setVirtualService(value: VirtualServiceData): Self = StObject.set(x, "virtualService", value.asInstanceOf[js.Any])
   }
 }

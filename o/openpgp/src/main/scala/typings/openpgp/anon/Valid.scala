@@ -14,22 +14,17 @@ trait Valid extends StObject {
 }
 object Valid {
   
-  @scala.inline
-  def apply(keyid: typings.openpgp.mod.`type`.keyid.Keyid, valid: Boolean, verified: js.Promise[Boolean]): Valid = {
+  inline def apply(keyid: typings.openpgp.mod.`type`.keyid.Keyid, valid: Boolean, verified: js.Promise[Boolean]): Valid = {
     val __obj = js.Dynamic.literal(keyid = keyid.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
     __obj.asInstanceOf[Valid]
   }
   
-  @scala.inline
-  implicit class ValidMutableBuilder[Self <: Valid] (val x: Self) extends AnyVal {
+  extension [Self <: Valid](x: Self) {
     
-    @scala.inline
-    def setKeyid(value: typings.openpgp.mod.`type`.keyid.Keyid): Self = StObject.set(x, "keyid", value.asInstanceOf[js.Any])
+    inline def setKeyid(value: typings.openpgp.mod.`type`.keyid.Keyid): Self = StObject.set(x, "keyid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerified(value: js.Promise[Boolean]): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+    inline def setVerified(value: js.Promise[Boolean]): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
   }
 }

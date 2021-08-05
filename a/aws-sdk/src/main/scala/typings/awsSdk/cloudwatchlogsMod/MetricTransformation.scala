@@ -28,28 +28,21 @@ trait MetricTransformation extends StObject {
 }
 object MetricTransformation {
   
-  @scala.inline
-  def apply(metricName: MetricName, metricNamespace: MetricNamespace, metricValue: MetricValue): MetricTransformation = {
+  inline def apply(metricName: MetricName, metricNamespace: MetricNamespace, metricValue: MetricValue): MetricTransformation = {
     val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], metricNamespace = metricNamespace.asInstanceOf[js.Any], metricValue = metricValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricTransformation]
   }
   
-  @scala.inline
-  implicit class MetricTransformationMutableBuilder[Self <: MetricTransformation] (val x: Self) extends AnyVal {
+  extension [Self <: MetricTransformation](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: DefaultValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: DefaultValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNamespace(value: MetricNamespace): Self = StObject.set(x, "metricNamespace", value.asInstanceOf[js.Any])
+    inline def setMetricNamespace(value: MetricNamespace): Self = StObject.set(x, "metricNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricValue(value: MetricValue): Self = StObject.set(x, "metricValue", value.asInstanceOf[js.Any])
+    inline def setMetricValue(value: MetricValue): Self = StObject.set(x, "metricValue", value.asInstanceOf[js.Any])
   }
 }

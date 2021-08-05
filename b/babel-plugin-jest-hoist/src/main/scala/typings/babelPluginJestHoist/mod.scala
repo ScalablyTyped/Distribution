@@ -12,6 +12,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): PluginObj[DeclareJestObjGetterIdentifier] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PluginObj[DeclareJestObjGetterIdentifier]]
+  inline def default(): PluginObj[DeclareJestObjGetterIdentifier] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PluginObj[DeclareJestObjGetterIdentifier]]
 }

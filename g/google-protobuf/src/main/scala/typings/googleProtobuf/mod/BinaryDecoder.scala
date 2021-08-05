@@ -116,20 +116,12 @@ object BinaryDecoder {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def alloc(): BinaryDecoder = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")().asInstanceOf[BinaryDecoder]
-  @scala.inline
-  def alloc(bytes: Unit, start: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
-  @scala.inline
-  def alloc(bytes: Unit, start: Double, length: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
-  @scala.inline
-  def alloc(bytes: Unit, start: Unit, length: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
-  @scala.inline
-  def alloc(bytes: ByteSource): BinaryDecoder = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any]).asInstanceOf[BinaryDecoder]
-  @scala.inline
-  def alloc(bytes: ByteSource, start: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
-  @scala.inline
-  def alloc(bytes: ByteSource, start: Double, length: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
-  @scala.inline
-  def alloc(bytes: ByteSource, start: Unit, length: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
+  inline def alloc(): BinaryDecoder = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")().asInstanceOf[BinaryDecoder]
+  inline def alloc(bytes: Unit, start: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
+  inline def alloc(bytes: Unit, start: Double, length: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
+  inline def alloc(bytes: Unit, start: Unit, length: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
+  inline def alloc(bytes: ByteSource): BinaryDecoder = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any]).asInstanceOf[BinaryDecoder]
+  inline def alloc(bytes: ByteSource, start: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
+  inline def alloc(bytes: ByteSource, start: Double, length: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
+  inline def alloc(bytes: ByteSource, start: Unit, length: Double): BinaryDecoder = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryDecoder]
 }

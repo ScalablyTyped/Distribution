@@ -19,8 +19,7 @@ trait MVCxClientTreeView
 }
 object MVCxClientTreeView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     BeginCallback: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientTreeView]],
     CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientTreeView]],
@@ -57,10 +56,8 @@ object MVCxClientTreeView {
     __obj.asInstanceOf[MVCxClientTreeView]
   }
   
-  @scala.inline
-  implicit class MVCxClientTreeViewMutableBuilder[Self <: MVCxClientTreeView] (val x: Self) extends AnyVal {
+  extension [Self <: MVCxClientTreeView](x: Self) {
     
-    @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientTreeView]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientTreeView]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
   }
 }

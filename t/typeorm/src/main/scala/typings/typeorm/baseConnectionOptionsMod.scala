@@ -140,132 +140,91 @@ object baseConnectionOptionsMod {
   }
   object BaseConnectionOptions {
     
-    @scala.inline
-    def apply(`type`: DatabaseType): BaseConnectionOptions = {
+    inline def apply(`type`: DatabaseType): BaseConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseConnectionOptions]
     }
     
-    @scala.inline
-    implicit class BaseConnectionOptionsMutableBuilder[Self <: BaseConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean | AlwaysEnabled): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean | AlwaysEnabled): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCli(value: EntitiesDir): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
+      inline def setCli(value: EntitiesDir): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCliUndefined: Self = StObject.set(x, "cli", js.undefined)
+      inline def setCliUndefined: Self = StObject.set(x, "cli", js.undefined)
       
-      @scala.inline
-      def setDropSchema(value: Boolean): Self = StObject.set(x, "dropSchema", value.asInstanceOf[js.Any])
+      inline def setDropSchema(value: Boolean): Self = StObject.set(x, "dropSchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropSchemaUndefined: Self = StObject.set(x, "dropSchema", js.undefined)
+      inline def setDropSchemaUndefined: Self = StObject.set(x, "dropSchema", js.undefined)
       
-      @scala.inline
-      def setEntities(value: js.Array[js.Function | String | EntitySchema[js.Any]]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+      inline def setEntities(value: js.Array[js.Function | String | EntitySchema[js.Any]]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+      inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
       
-      @scala.inline
-      def setEntitiesVarargs(value: (js.Function | String | EntitySchema[js.Any])*): Self = StObject.set(x, "entities", js.Array(value :_*))
+      inline def setEntitiesVarargs(value: (js.Function | String | EntitySchema[js.Any])*): Self = StObject.set(x, "entities", js.Array(value :_*))
       
-      @scala.inline
-      def setEntityPrefix(value: String): Self = StObject.set(x, "entityPrefix", value.asInstanceOf[js.Any])
+      inline def setEntityPrefix(value: String): Self = StObject.set(x, "entityPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityPrefixUndefined: Self = StObject.set(x, "entityPrefix", js.undefined)
+      inline def setEntityPrefixUndefined: Self = StObject.set(x, "entityPrefix", js.undefined)
       
-      @scala.inline
-      def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setLogger(value: `advanced-console` | `simple-console` | file | debug | Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: `advanced-console` | `simple-console` | file | debug | Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setLogging(value: LoggerOptions): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+      inline def setLogging(value: LoggerOptions): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+      inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
       
-      @scala.inline
-      def setLoggingVarargs(value: (query | schema | error | warn | info | log | migration)*): Self = StObject.set(x, "logging", js.Array(value :_*))
+      inline def setLoggingVarargs(value: (query | schema | error | warn | info | log | migration)*): Self = StObject.set(x, "logging", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxQueryExecutionTime(value: Double): Self = StObject.set(x, "maxQueryExecutionTime", value.asInstanceOf[js.Any])
+      inline def setMaxQueryExecutionTime(value: Double): Self = StObject.set(x, "maxQueryExecutionTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxQueryExecutionTimeUndefined: Self = StObject.set(x, "maxQueryExecutionTime", js.undefined)
+      inline def setMaxQueryExecutionTimeUndefined: Self = StObject.set(x, "maxQueryExecutionTime", js.undefined)
       
-      @scala.inline
-      def setMigrations(value: js.Array[js.Function | String]): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
+      inline def setMigrations(value: js.Array[js.Function | String]): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrationsRun(value: Boolean): Self = StObject.set(x, "migrationsRun", value.asInstanceOf[js.Any])
+      inline def setMigrationsRun(value: Boolean): Self = StObject.set(x, "migrationsRun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrationsRunUndefined: Self = StObject.set(x, "migrationsRun", js.undefined)
+      inline def setMigrationsRunUndefined: Self = StObject.set(x, "migrationsRun", js.undefined)
       
-      @scala.inline
-      def setMigrationsTableName(value: String): Self = StObject.set(x, "migrationsTableName", value.asInstanceOf[js.Any])
+      inline def setMigrationsTableName(value: String): Self = StObject.set(x, "migrationsTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrationsTableNameUndefined: Self = StObject.set(x, "migrationsTableName", js.undefined)
+      inline def setMigrationsTableNameUndefined: Self = StObject.set(x, "migrationsTableName", js.undefined)
       
-      @scala.inline
-      def setMigrationsTransactionMode(value: all | none | each): Self = StObject.set(x, "migrationsTransactionMode", value.asInstanceOf[js.Any])
+      inline def setMigrationsTransactionMode(value: all | none | each): Self = StObject.set(x, "migrationsTransactionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrationsTransactionModeUndefined: Self = StObject.set(x, "migrationsTransactionMode", js.undefined)
+      inline def setMigrationsTransactionModeUndefined: Self = StObject.set(x, "migrationsTransactionMode", js.undefined)
       
-      @scala.inline
-      def setMigrationsUndefined: Self = StObject.set(x, "migrations", js.undefined)
+      inline def setMigrationsUndefined: Self = StObject.set(x, "migrations", js.undefined)
       
-      @scala.inline
-      def setMigrationsVarargs(value: (js.Function | String)*): Self = StObject.set(x, "migrations", js.Array(value :_*))
+      inline def setMigrationsVarargs(value: (js.Function | String)*): Self = StObject.set(x, "migrations", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNamingStrategy(value: NamingStrategyInterface): Self = StObject.set(x, "namingStrategy", value.asInstanceOf[js.Any])
+      inline def setNamingStrategy(value: NamingStrategyInterface): Self = StObject.set(x, "namingStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamingStrategyUndefined: Self = StObject.set(x, "namingStrategy", js.undefined)
+      inline def setNamingStrategyUndefined: Self = StObject.set(x, "namingStrategy", js.undefined)
       
-      @scala.inline
-      def setSubscribers(value: js.Array[js.Function | String]): Self = StObject.set(x, "subscribers", value.asInstanceOf[js.Any])
+      inline def setSubscribers(value: js.Array[js.Function | String]): Self = StObject.set(x, "subscribers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscribersUndefined: Self = StObject.set(x, "subscribers", js.undefined)
+      inline def setSubscribersUndefined: Self = StObject.set(x, "subscribers", js.undefined)
       
-      @scala.inline
-      def setSubscribersVarargs(value: (js.Function | String)*): Self = StObject.set(x, "subscribers", js.Array(value :_*))
+      inline def setSubscribersVarargs(value: (js.Function | String)*): Self = StObject.set(x, "subscribers", js.Array(value :_*))
       
-      @scala.inline
-      def setSynchronize(value: Boolean): Self = StObject.set(x, "synchronize", value.asInstanceOf[js.Any])
+      inline def setSynchronize(value: Boolean): Self = StObject.set(x, "synchronize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSynchronizeUndefined: Self = StObject.set(x, "synchronize", js.undefined)
+      inline def setSynchronizeUndefined: Self = StObject.set(x, "synchronize", js.undefined)
       
-      @scala.inline
-      def setType(value: DatabaseType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: DatabaseType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

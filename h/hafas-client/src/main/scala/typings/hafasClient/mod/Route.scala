@@ -32,8 +32,7 @@ trait Route extends StObject {
 }
 object Route {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: String,
     line: String,
     mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking,
@@ -44,25 +43,18 @@ object Route {
     __obj.asInstanceOf[Route]
   }
   
-  @scala.inline
-  implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
+  extension [Self <: Route](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStops(value: js.Array[String]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[String]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsVarargs(value: String*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: String*): Self = StObject.set(x, "stops", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: route): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: route): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

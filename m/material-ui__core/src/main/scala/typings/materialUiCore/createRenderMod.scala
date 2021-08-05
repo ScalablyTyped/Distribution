@@ -12,10 +12,8 @@ object createRenderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Fn0 = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Fn0]
-  @scala.inline
-  def default(options: PartialRenderOptions): Fn0 = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Fn0]
+  inline def default(): Fn0 = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Fn0]
+  inline def default(options: PartialRenderOptions): Fn0 = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Fn0]
   
   trait RenderOptions extends StObject {
     
@@ -23,17 +21,14 @@ object createRenderMod {
   }
   object RenderOptions {
     
-    @scala.inline
-    def apply(render: Fn0): RenderOptions = {
+    inline def apply(render: Fn0): RenderOptions = {
       val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderOptions]
     }
     
-    @scala.inline
-    implicit class RenderOptionsMutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RenderOptions](x: Self) {
       
-      @scala.inline
-      def setRender(value: Fn0): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: Fn0): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     }
   }
 }

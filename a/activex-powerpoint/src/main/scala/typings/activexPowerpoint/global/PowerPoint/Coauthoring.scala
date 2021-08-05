@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Coauthoring")
 @js.native
-class Coauthoring protected ()
+/* private */ class Coauthoring ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Coauthoring {
   
@@ -31,7 +31,7 @@ class Coauthoring protected ()
   /* CompleteClass */
   override val PendingUpdates: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Coauthoring_typekey")
   var PowerPointDotCoauthoring_typekey: typings.activexPowerpoint.PowerPoint.Coauthoring = js.native
 }

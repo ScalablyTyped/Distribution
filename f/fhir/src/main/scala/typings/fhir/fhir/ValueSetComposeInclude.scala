@@ -53,73 +53,51 @@ trait ValueSetComposeInclude
 }
 object ValueSetComposeInclude {
   
-  @scala.inline
-  def apply(): ValueSetComposeInclude = {
+  inline def apply(): ValueSetComposeInclude = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValueSetComposeInclude]
   }
   
-  @scala.inline
-  implicit class ValueSetComposeIncludeMutableBuilder[Self <: ValueSetComposeInclude] (val x: Self) extends AnyVal {
+  extension [Self <: ValueSetComposeInclude](x: Self) {
     
-    @scala.inline
-    def setConcept(value: js.Array[ValueSetComposeIncludeConcept]): Self = StObject.set(x, "concept", value.asInstanceOf[js.Any])
+    inline def setConcept(value: js.Array[ValueSetComposeIncludeConcept]): Self = StObject.set(x, "concept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConceptUndefined: Self = StObject.set(x, "concept", js.undefined)
+    inline def setConceptUndefined: Self = StObject.set(x, "concept", js.undefined)
     
-    @scala.inline
-    def setConceptVarargs(value: ValueSetComposeIncludeConcept*): Self = StObject.set(x, "concept", js.Array(value :_*))
+    inline def setConceptVarargs(value: ValueSetComposeIncludeConcept*): Self = StObject.set(x, "concept", js.Array(value :_*))
     
-    @scala.inline
-    def setFilter(value: js.Array[ValueSetComposeIncludeFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Array[ValueSetComposeIncludeFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setFilterVarargs(value: ValueSetComposeIncludeFilter*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: ValueSetComposeIncludeFilter*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
-    @scala.inline
-    def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+    inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
-    @scala.inline
-    def setValueSet(value: js.Array[uri]): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
+    inline def setValueSet(value: js.Array[uri]): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueSetUndefined: Self = StObject.set(x, "valueSet", js.undefined)
+    inline def setValueSetUndefined: Self = StObject.set(x, "valueSet", js.undefined)
     
-    @scala.inline
-    def setValueSetVarargs(value: uri*): Self = StObject.set(x, "valueSet", js.Array(value :_*))
+    inline def setValueSetVarargs(value: uri*): Self = StObject.set(x, "valueSet", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
+    inline def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
+    inline def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
     
-    @scala.inline
-    def set_valueSet(value: js.Array[Element]): Self = StObject.set(x, "_valueSet", value.asInstanceOf[js.Any])
+    inline def set_valueSet(value: js.Array[Element]): Self = StObject.set(x, "_valueSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueSetUndefined: Self = StObject.set(x, "_valueSet", js.undefined)
+    inline def set_valueSetUndefined: Self = StObject.set(x, "_valueSet", js.undefined)
     
-    @scala.inline
-    def set_valueSetVarargs(value: Element*): Self = StObject.set(x, "_valueSet", js.Array(value :_*))
+    inline def set_valueSetVarargs(value: Element*): Self = StObject.set(x, "_valueSet", js.Array(value :_*))
     
-    @scala.inline
-    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
+    inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

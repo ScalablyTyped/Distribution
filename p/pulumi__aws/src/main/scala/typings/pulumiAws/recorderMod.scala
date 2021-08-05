@@ -56,21 +56,16 @@ object recorderMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Recorder = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Recorder]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Recorder = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Recorder]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RecorderState): Recorder = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Recorder]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RecorderState, opts: CustomResourceOptions): Recorder = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Recorder]
+    inline def get(name: String, id: Input[ID]): Recorder = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Recorder]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Recorder = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Recorder]
+    inline def get(name: String, id: Input[ID], state: RecorderState): Recorder = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Recorder]
+    inline def get(name: String, id: Input[ID], state: RecorderState, opts: CustomResourceOptions): Recorder = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Recorder]
     
     /**
       * Returns true if the given object is an instance of Recorder.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/recorder.Recorder */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/recorder.Recorder */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/recorder.Recorder */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/recorder.Recorder */ Boolean]
   }
   
   trait RecorderArgs extends StObject {
@@ -92,29 +87,22 @@ object recorderMod {
   }
   object RecorderArgs {
     
-    @scala.inline
-    def apply(roleArn: Input[String]): RecorderArgs = {
+    inline def apply(roleArn: Input[String]): RecorderArgs = {
       val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecorderArgs]
     }
     
-    @scala.inline
-    implicit class RecorderArgsMutableBuilder[Self <: RecorderArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RecorderArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRecordingGroup(value: Input[typings.pulumiAws.inputMod.cfg.RecorderRecordingGroup]): Self = StObject.set(x, "recordingGroup", value.asInstanceOf[js.Any])
+      inline def setRecordingGroup(value: Input[typings.pulumiAws.inputMod.cfg.RecorderRecordingGroup]): Self = StObject.set(x, "recordingGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordingGroupUndefined: Self = StObject.set(x, "recordingGroup", js.undefined)
+      inline def setRecordingGroupUndefined: Self = StObject.set(x, "recordingGroup", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,32 +125,24 @@ object recorderMod {
   }
   object RecorderState {
     
-    @scala.inline
-    def apply(): RecorderState = {
+    inline def apply(): RecorderState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RecorderState]
     }
     
-    @scala.inline
-    implicit class RecorderStateMutableBuilder[Self <: RecorderState] (val x: Self) extends AnyVal {
+    extension [Self <: RecorderState](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRecordingGroup(value: Input[typings.pulumiAws.inputMod.cfg.RecorderRecordingGroup]): Self = StObject.set(x, "recordingGroup", value.asInstanceOf[js.Any])
+      inline def setRecordingGroup(value: Input[typings.pulumiAws.inputMod.cfg.RecorderRecordingGroup]): Self = StObject.set(x, "recordingGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordingGroupUndefined: Self = StObject.set(x, "recordingGroup", js.undefined)
+      inline def setRecordingGroupUndefined: Self = StObject.set(x, "recordingGroup", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     }
   }
 }

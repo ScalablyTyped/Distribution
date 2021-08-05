@@ -23,14 +23,14 @@ object cacheRedisQueryResultCacheMod {
     /**
       * Connected redis client.
       */
-    var client: js.Any = js.native
+    /* protected */ var client: js.Any = js.native
     
     /**
       * Type of the Redis Client (redis or ioredis).
       */
-    var clientType: redis | ioredis | ioredisSlashcluster = js.native
+    /* protected */ var clientType: redis | ioredis | ioredisSlashcluster = js.native
     
-    var connection: Connection = js.native
+    /* protected */ var connection: Connection = js.native
     
     /**
       * Removes a single key from redis database.
@@ -45,6 +45,6 @@ object cacheRedisQueryResultCacheMod {
     /**
       * Redis module instance loaded dynamically.
       */
-    var redis: js.Any = js.native
+    /* protected */ var redis: js.Any = js.native
   }
 }

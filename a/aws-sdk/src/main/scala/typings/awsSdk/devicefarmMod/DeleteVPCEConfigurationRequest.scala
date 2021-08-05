@@ -13,16 +13,13 @@ trait DeleteVPCEConfigurationRequest extends StObject {
 }
 object DeleteVPCEConfigurationRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): DeleteVPCEConfigurationRequest = {
+  inline def apply(arn: AmazonResourceName): DeleteVPCEConfigurationRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVPCEConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteVPCEConfigurationRequestMutableBuilder[Self <: DeleteVPCEConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVPCEConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

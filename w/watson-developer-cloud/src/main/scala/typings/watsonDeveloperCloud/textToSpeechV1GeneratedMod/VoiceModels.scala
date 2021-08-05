@@ -12,19 +12,15 @@ trait VoiceModels extends StObject {
 }
 object VoiceModels {
   
-  @scala.inline
-  def apply(customizations: js.Array[VoiceModel]): VoiceModels = {
+  inline def apply(customizations: js.Array[VoiceModel]): VoiceModels = {
     val __obj = js.Dynamic.literal(customizations = customizations.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceModels]
   }
   
-  @scala.inline
-  implicit class VoiceModelsMutableBuilder[Self <: VoiceModels] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceModels](x: Self) {
     
-    @scala.inline
-    def setCustomizations(value: js.Array[VoiceModel]): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
+    inline def setCustomizations(value: js.Array[VoiceModel]): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomizationsVarargs(value: VoiceModel*): Self = StObject.set(x, "customizations", js.Array(value :_*))
+    inline def setCustomizationsVarargs(value: VoiceModel*): Self = StObject.set(x, "customizations", js.Array(value :_*))
   }
 }

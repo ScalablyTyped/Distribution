@@ -62,8 +62,7 @@ trait DaemonSetStatus extends StObject {
 }
 object DaemonSetStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentNumberScheduled: Input[Double],
     desiredNumberScheduled: Input[Double],
     numberMisscheduled: Input[Double],
@@ -73,58 +72,40 @@ object DaemonSetStatus {
     __obj.asInstanceOf[DaemonSetStatus]
   }
   
-  @scala.inline
-  implicit class DaemonSetStatusMutableBuilder[Self <: DaemonSetStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DaemonSetStatus](x: Self) {
     
-    @scala.inline
-    def setCollisionCount(value: Input[Double]): Self = StObject.set(x, "collisionCount", value.asInstanceOf[js.Any])
+    inline def setCollisionCount(value: Input[Double]): Self = StObject.set(x, "collisionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollisionCountUndefined: Self = StObject.set(x, "collisionCount", js.undefined)
+    inline def setCollisionCountUndefined: Self = StObject.set(x, "collisionCount", js.undefined)
     
-    @scala.inline
-    def setConditions(value: Input[js.Array[Input[DaemonSetCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: Input[js.Array[Input[DaemonSetCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: Input[DaemonSetCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Input[DaemonSetCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setCurrentNumberScheduled(value: Input[Double]): Self = StObject.set(x, "currentNumberScheduled", value.asInstanceOf[js.Any])
+    inline def setCurrentNumberScheduled(value: Input[Double]): Self = StObject.set(x, "currentNumberScheduled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredNumberScheduled(value: Input[Double]): Self = StObject.set(x, "desiredNumberScheduled", value.asInstanceOf[js.Any])
+    inline def setDesiredNumberScheduled(value: Input[Double]): Self = StObject.set(x, "desiredNumberScheduled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberAvailable(value: Input[Double]): Self = StObject.set(x, "numberAvailable", value.asInstanceOf[js.Any])
+    inline def setNumberAvailable(value: Input[Double]): Self = StObject.set(x, "numberAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberAvailableUndefined: Self = StObject.set(x, "numberAvailable", js.undefined)
+    inline def setNumberAvailableUndefined: Self = StObject.set(x, "numberAvailable", js.undefined)
     
-    @scala.inline
-    def setNumberMisscheduled(value: Input[Double]): Self = StObject.set(x, "numberMisscheduled", value.asInstanceOf[js.Any])
+    inline def setNumberMisscheduled(value: Input[Double]): Self = StObject.set(x, "numberMisscheduled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberReady(value: Input[Double]): Self = StObject.set(x, "numberReady", value.asInstanceOf[js.Any])
+    inline def setNumberReady(value: Input[Double]): Self = StObject.set(x, "numberReady", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUnavailable(value: Input[Double]): Self = StObject.set(x, "numberUnavailable", value.asInstanceOf[js.Any])
+    inline def setNumberUnavailable(value: Input[Double]): Self = StObject.set(x, "numberUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUnavailableUndefined: Self = StObject.set(x, "numberUnavailable", js.undefined)
+    inline def setNumberUnavailableUndefined: Self = StObject.set(x, "numberUnavailable", js.undefined)
     
-    @scala.inline
-    def setObservedGeneration(value: Input[Double]): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
+    inline def setObservedGeneration(value: Input[Double]): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
+    inline def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
     
-    @scala.inline
-    def setUpdatedNumberScheduled(value: Input[Double]): Self = StObject.set(x, "updatedNumberScheduled", value.asInstanceOf[js.Any])
+    inline def setUpdatedNumberScheduled(value: Input[Double]): Self = StObject.set(x, "updatedNumberScheduled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedNumberScheduledUndefined: Self = StObject.set(x, "updatedNumberScheduled", js.undefined)
+    inline def setUpdatedNumberScheduledUndefined: Self = StObject.set(x, "updatedNumberScheduled", js.undefined)
   }
 }

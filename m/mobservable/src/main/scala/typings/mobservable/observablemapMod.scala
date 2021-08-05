@@ -19,19 +19,19 @@ object observablemapMod {
     def this(initialData: Entries[V], valueModeFunc: js.Function) = this()
     def this(initialData: KeyValueMap[V], valueModeFunc: js.Function) = this()
     
-    var _data: js.Any = js.native
+    /* private */ var _data: js.Any = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
     def _has(key: String): Boolean = js.native
     
-    var _hasMap: js.Any = js.native
+    /* private */ var _hasMap: js.Any = js.native
     
-    var _keys: js.Any = js.native
+    /* private */ var _keys: js.Any = js.native
     
     def _updateHasMapEntry(key: String, value: Boolean): ObservableValue[Boolean] = js.native
     
-    var _valueMode: js.Any = js.native
+    /* private */ var _valueMode: js.Any = js.native
     
     /* private */ def assertValidKey(key: js.Any): js.Any = js.native
     

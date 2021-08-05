@@ -16,25 +16,19 @@ trait Clicked2 extends StObject {
 }
 object Clicked2 {
   
-  @scala.inline
-  def apply(clicked2: Double, clicked3: Double, clicked4: Double, clicked5: Double): Clicked2 = {
+  inline def apply(clicked2: Double, clicked3: Double, clicked4: Double, clicked5: Double): Clicked2 = {
     val __obj = js.Dynamic.literal(clicked2 = clicked2.asInstanceOf[js.Any], clicked3 = clicked3.asInstanceOf[js.Any], clicked4 = clicked4.asInstanceOf[js.Any], clicked5 = clicked5.asInstanceOf[js.Any])
     __obj.asInstanceOf[Clicked2]
   }
   
-  @scala.inline
-  implicit class Clicked2MutableBuilder[Self <: Clicked2] (val x: Self) extends AnyVal {
+  extension [Self <: Clicked2](x: Self) {
     
-    @scala.inline
-    def setClicked2(value: Double): Self = StObject.set(x, "clicked2", value.asInstanceOf[js.Any])
+    inline def setClicked2(value: Double): Self = StObject.set(x, "clicked2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClicked3(value: Double): Self = StObject.set(x, "clicked3", value.asInstanceOf[js.Any])
+    inline def setClicked3(value: Double): Self = StObject.set(x, "clicked3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClicked4(value: Double): Self = StObject.set(x, "clicked4", value.asInstanceOf[js.Any])
+    inline def setClicked4(value: Double): Self = StObject.set(x, "clicked4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClicked5(value: Double): Self = StObject.set(x, "clicked5", value.asInstanceOf[js.Any])
+    inline def setClicked5(value: Double): Self = StObject.set(x, "clicked5", value.asInstanceOf[js.Any])
   }
 }

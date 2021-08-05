@@ -10,19 +10,15 @@ trait BooksVolumesRecommendedRateResponse extends StObject {
 }
 object BooksVolumesRecommendedRateResponse {
   
-  @scala.inline
-  def apply(): BooksVolumesRecommendedRateResponse = {
+  inline def apply(): BooksVolumesRecommendedRateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BooksVolumesRecommendedRateResponse]
   }
   
-  @scala.inline
-  implicit class BooksVolumesRecommendedRateResponseMutableBuilder[Self <: BooksVolumesRecommendedRateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BooksVolumesRecommendedRateResponse](x: Self) {
     
-    @scala.inline
-    def setConsistency_token(value: String): Self = StObject.set(x, "consistency_token", value.asInstanceOf[js.Any])
+    inline def setConsistency_token(value: String): Self = StObject.set(x, "consistency_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsistency_tokenUndefined: Self = StObject.set(x, "consistency_token", js.undefined)
+    inline def setConsistency_tokenUndefined: Self = StObject.set(x, "consistency_token", js.undefined)
   }
 }

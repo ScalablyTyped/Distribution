@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthChallengeResponseResponse extends StObject
 object AuthChallengeResponseResponse {
   
-  @scala.inline
-  def CancelAuth: typings.devtoolsProtocol.devtoolsProtocolStrings.CancelAuth = "CancelAuth".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CancelAuth]
+  inline def CancelAuth: typings.devtoolsProtocol.devtoolsProtocolStrings.CancelAuth = "CancelAuth".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CancelAuth]
   
-  @scala.inline
-  def Default: typings.devtoolsProtocol.devtoolsProtocolStrings.Default = "Default".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Default]
+  inline def Default: typings.devtoolsProtocol.devtoolsProtocolStrings.Default = "Default".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Default]
   
-  @scala.inline
-  def ProvideCredentials: typings.devtoolsProtocol.devtoolsProtocolStrings.ProvideCredentials = "ProvideCredentials".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ProvideCredentials]
+  inline def ProvideCredentials: typings.devtoolsProtocol.devtoolsProtocolStrings.ProvideCredentials = "ProvideCredentials".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ProvideCredentials]
 }

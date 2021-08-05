@@ -18,25 +18,19 @@ trait BrowseResponse[TObject] extends StObject {
 }
 object BrowseResponse {
   
-  @scala.inline
-  def apply[TObject](hits: js.Array[TObject & ObjectWithObjectID]): BrowseResponse[TObject] = {
+  inline def apply[TObject](hits: js.Array[TObject & ObjectWithObjectID]): BrowseResponse[TObject] = {
     val __obj = js.Dynamic.literal(hits = hits.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowseResponse[TObject]]
   }
   
-  @scala.inline
-  implicit class BrowseResponseMutableBuilder[Self <: BrowseResponse[?], TObject] (val x: Self & BrowseResponse[TObject]) extends AnyVal {
+  extension [Self <: BrowseResponse[?], TObject](x: Self & BrowseResponse[TObject]) {
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setHits(value: js.Array[TObject & ObjectWithObjectID]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+    inline def setHits(value: js.Array[TObject & ObjectWithObjectID]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsVarargs(value: (TObject & ObjectWithObjectID)*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: (TObject & ObjectWithObjectID)*): Self = StObject.set(x, "hits", js.Array(value :_*))
   }
 }

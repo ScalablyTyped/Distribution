@@ -13,14 +13,10 @@ object getEbsVolumesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEbsVolumes(): js.Promise[GetEbsVolumesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")().asInstanceOf[js.Promise[GetEbsVolumesResult]]
-  @scala.inline
-  def getEbsVolumes(args: Unit, opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEbsVolumesResult]]
-  @scala.inline
-  def getEbsVolumes(args: GetEbsVolumesArgs): js.Promise[GetEbsVolumesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEbsVolumesResult]]
-  @scala.inline
-  def getEbsVolumes(args: GetEbsVolumesArgs, opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEbsVolumesResult]]
+  inline def getEbsVolumes(): js.Promise[GetEbsVolumesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")().asInstanceOf[js.Promise[GetEbsVolumesResult]]
+  inline def getEbsVolumes(args: Unit, opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEbsVolumesResult]]
+  inline def getEbsVolumes(args: GetEbsVolumesArgs): js.Promise[GetEbsVolumesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEbsVolumesResult]]
+  inline def getEbsVolumes(args: GetEbsVolumesArgs, opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEbsVolumesResult]]
   
   trait GetEbsVolumesArgs extends StObject {
     
@@ -37,29 +33,22 @@ object getEbsVolumesMod {
   }
   object GetEbsVolumesArgs {
     
-    @scala.inline
-    def apply(): GetEbsVolumesArgs = {
+    inline def apply(): GetEbsVolumesArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetEbsVolumesArgs]
     }
     
-    @scala.inline
-    implicit class GetEbsVolumesArgsMutableBuilder[Self <: GetEbsVolumesArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetEbsVolumesArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetEbsVolumesFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetEbsVolumesFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetEbsVolumesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetEbsVolumesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -82,38 +71,28 @@ object getEbsVolumesMod {
   }
   object GetEbsVolumesResult {
     
-    @scala.inline
-    def apply(id: String, ids: js.Array[String]): GetEbsVolumesResult = {
+    inline def apply(id: String, ids: js.Array[String]): GetEbsVolumesResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetEbsVolumesResult]
     }
     
-    @scala.inline
-    implicit class GetEbsVolumesResultMutableBuilder[Self <: GetEbsVolumesResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetEbsVolumesResult](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ebs.GetEbsVolumesFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ebs.GetEbsVolumesFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ebs.GetEbsVolumesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ebs.GetEbsVolumesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

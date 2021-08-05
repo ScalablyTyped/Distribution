@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdPhoneticGuideAlignmentType extends StObject
 object WdPhoneticGuideAlignmentType {
   
-  @scala.inline
-  def wdPhoneticGuideAlignmentCenter: `0` = 0.asInstanceOf[`0`]
+  inline def wdPhoneticGuideAlignmentCenter: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdPhoneticGuideAlignmentLeft: `3` = 3.asInstanceOf[`3`]
+  inline def wdPhoneticGuideAlignmentLeft: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdPhoneticGuideAlignmentOneTwoOne: `2` = 2.asInstanceOf[`2`]
+  inline def wdPhoneticGuideAlignmentOneTwoOne: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdPhoneticGuideAlignmentRight: `4` = 4.asInstanceOf[`4`]
+  inline def wdPhoneticGuideAlignmentRight: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdPhoneticGuideAlignmentRightVertical: `5` = 5.asInstanceOf[`5`]
+  inline def wdPhoneticGuideAlignmentRightVertical: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdPhoneticGuideAlignmentZeroOneZero: `1` = 1.asInstanceOf[`1`]
+  inline def wdPhoneticGuideAlignmentZeroOneZero: `1` = 1.asInstanceOf[`1`]
 }

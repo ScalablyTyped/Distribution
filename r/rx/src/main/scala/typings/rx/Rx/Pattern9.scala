@@ -28,8 +28,7 @@ trait Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, T9] extends StObject {
 }
 object Pattern9 {
   
-  @scala.inline
-  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9](
+  inline def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9](
     thenDo: js.Function9[
       /* item1 */ T1, 
       /* item2 */ T2, 
@@ -47,11 +46,9 @@ object Pattern9 {
     __obj.asInstanceOf[Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, T9]]
   }
   
-  @scala.inline
-  implicit class Pattern9MutableBuilder[Self <: Pattern9[?, ?, ?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, T7, T8, T9] (val x: Self & (Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, T9])) extends AnyVal {
+  extension [Self <: Pattern9[?, ?, ?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, T7, T8, T9](x: Self & (Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, T9])) {
     
-    @scala.inline
-    def setThenDo(
+    inline def setThenDo(
       value: js.Function9[
           /* item1 */ T1, 
           /* item2 */ T2, 

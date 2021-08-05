@@ -28,31 +28,23 @@ trait UpdateFindingsFeedbackRequest extends StObject {
 }
 object UpdateFindingsFeedbackRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId, Feedback: Feedback, FindingIds: FindingIds): UpdateFindingsFeedbackRequest = {
+  inline def apply(DetectorId: DetectorId, Feedback: Feedback, FindingIds: FindingIds): UpdateFindingsFeedbackRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], Feedback = Feedback.asInstanceOf[js.Any], FindingIds = FindingIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFindingsFeedbackRequest]
   }
   
-  @scala.inline
-  implicit class UpdateFindingsFeedbackRequestMutableBuilder[Self <: UpdateFindingsFeedbackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFindingsFeedbackRequest](x: Self) {
     
-    @scala.inline
-    def setComments(value: String): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: String): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "Comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "Comments", js.undefined)
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedback(value: Feedback): Self = StObject.set(x, "Feedback", value.asInstanceOf[js.Any])
+    inline def setFeedback(value: Feedback): Self = StObject.set(x, "Feedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingIds(value: FindingIds): Self = StObject.set(x, "FindingIds", value.asInstanceOf[js.Any])
+    inline def setFindingIds(value: FindingIds): Self = StObject.set(x, "FindingIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingIdsVarargs(value: FindingId*): Self = StObject.set(x, "FindingIds", js.Array(value :_*))
+    inline def setFindingIdsVarargs(value: FindingId*): Self = StObject.set(x, "FindingIds", js.Array(value :_*))
   }
 }

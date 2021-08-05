@@ -13,19 +13,15 @@ trait DescribeBuildOutput extends StObject {
 }
 object DescribeBuildOutput {
   
-  @scala.inline
-  def apply(): DescribeBuildOutput = {
+  inline def apply(): DescribeBuildOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBuildOutput]
   }
   
-  @scala.inline
-  implicit class DescribeBuildOutputMutableBuilder[Self <: DescribeBuildOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBuildOutput](x: Self) {
     
-    @scala.inline
-    def setBuild(value: Build): Self = StObject.set(x, "Build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: Build): Self = StObject.set(x, "Build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUndefined: Self = StObject.set(x, "Build", js.undefined)
+    inline def setBuildUndefined: Self = StObject.set(x, "Build", js.undefined)
   }
 }

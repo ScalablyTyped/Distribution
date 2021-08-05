@@ -75,7 +75,7 @@ trait CommandBarComboBox extends StObject {
   
   var OLEUsage: MsoControlOLEUsage = js.native
   
-  @JSName("Office.CommandBarComboBox_typekey")
+  /* private */ @JSName("Office.CommandBarComboBox_typekey")
   var OfficeDotCommandBarComboBox_typekey: CommandBarComboBox = js.native
   
   var OnAction: String = js.native

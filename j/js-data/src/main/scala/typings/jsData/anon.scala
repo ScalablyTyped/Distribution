@@ -58,8 +58,7 @@ object anon {
   }
   object AllOf {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allOf: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError],
       anyOf: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError],
       dependencies: (js.Any, js.Any, js.Any) => Unit,
@@ -88,71 +87,49 @@ object anon {
       __obj.asInstanceOf[AllOf]
     }
     
-    @scala.inline
-    implicit class AllOfMutableBuilder[Self <: AllOf] (val x: Self) extends AnyVal {
+    extension [Self <: AllOf](x: Self) {
       
-      @scala.inline
-      def setAllOf(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "allOf", js.Any.fromFunction3(value))
+      inline def setAllOf(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "allOf", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAnyOf(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "anyOf", js.Any.fromFunction3(value))
+      inline def setAnyOf(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "anyOf", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDependencies(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "dependencies", js.Any.fromFunction3(value))
+      inline def setDependencies(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "dependencies", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setEnum(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "enum", js.Any.fromFunction3(value))
+      inline def setEnum(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "enum", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setItems(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "items", js.Any.fromFunction3(value))
+      inline def setItems(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "items", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMaxItems(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "maxItems", js.Any.fromFunction3(value))
+      inline def setMaxItems(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "maxItems", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMaxLength(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "maxLength", js.Any.fromFunction3(value))
+      inline def setMaxLength(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "maxLength", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMaxProperties(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "maxProperties", js.Any.fromFunction3(value))
+      inline def setMaxProperties(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "maxProperties", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMaximum(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "maximum", js.Any.fromFunction3(value))
+      inline def setMaximum(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "maximum", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMinItems(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "minItems", js.Any.fromFunction3(value))
+      inline def setMinItems(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "minItems", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMinLength(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "minLength", js.Any.fromFunction3(value))
+      inline def setMinLength(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "minLength", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMinProperties(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "minProperties", js.Any.fromFunction3(value))
+      inline def setMinProperties(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "minProperties", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMinimum(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "minimum", js.Any.fromFunction3(value))
+      inline def setMinimum(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "minimum", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMultipleOf(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "multipleOf", js.Any.fromFunction3(value))
+      inline def setMultipleOf(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "multipleOf", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setNot(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "not", js.Any.fromFunction3(value))
+      inline def setNot(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "not", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOneOf(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "oneOf", js.Any.fromFunction3(value))
+      inline def setOneOf(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "oneOf", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPattern(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "pattern", js.Any.fromFunction3(value))
+      inline def setPattern(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "pattern", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setProperties(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "properties", js.Any.fromFunction3(value))
+      inline def setProperties(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "properties", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRequired(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "required", js.Any.fromFunction3(value))
+      inline def setRequired(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "required", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setType(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "type", js.Any.fromFunction3(value))
+      inline def setType(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "type", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUniqueItems(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "uniqueItems", js.Any.fromFunction3(value))
+      inline def setUniqueItems(value: (js.Any, js.Any, js.Any) => SchemaValidationError): Self = StObject.set(x, "uniqueItems", js.Any.fromFunction3(value))
     }
   }
   
@@ -174,8 +151,7 @@ object anon {
   }
   object Array {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       array: js.Any => Boolean,
       boolean: js.Any => Boolean,
       integer: js.Any => Boolean,
@@ -190,29 +166,21 @@ object anon {
       __obj.asInstanceOf[Array]
     }
     
-    @scala.inline
-    implicit class ArrayMutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
+    extension [Self <: Array](x: Self) {
       
-      @scala.inline
-      def setArray(value: js.Any => Boolean): Self = StObject.set(x, "array", js.Any.fromFunction1(value))
+      inline def setArray(value: js.Any => Boolean): Self = StObject.set(x, "array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBoolean(value: js.Any => Boolean): Self = StObject.set(x, "boolean", js.Any.fromFunction1(value))
+      inline def setBoolean(value: js.Any => Boolean): Self = StObject.set(x, "boolean", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInteger(value: js.Any => Boolean): Self = StObject.set(x, "integer", js.Any.fromFunction1(value))
+      inline def setInteger(value: js.Any => Boolean): Self = StObject.set(x, "integer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNull(value: js.Any => Boolean): Self = StObject.set(x, "null", js.Any.fromFunction1(value))
+      inline def setNull(value: js.Any => Boolean): Self = StObject.set(x, "null", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNumber(value: js.Any => Boolean): Self = StObject.set(x, "number", js.Any.fromFunction1(value))
+      inline def setNumber(value: js.Any => Boolean): Self = StObject.set(x, "number", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setObject(value: js.Any => Boolean): Self = StObject.set(x, "object", js.Any.fromFunction1(value))
+      inline def setObject(value: js.Any => Boolean): Self = StObject.set(x, "object", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setString(value: js.Any => Boolean): Self = StObject.set(x, "string", js.Any.fromFunction1(value))
+      inline def setString(value: js.Any => Boolean): Self = StObject.set(x, "string", js.Any.fromFunction1(value))
     }
   }
   
@@ -232,8 +200,7 @@ object anon {
   }
   object Integer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       array: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError],
       integer: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError],
       number: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError],
@@ -246,26 +213,19 @@ object anon {
       __obj.asInstanceOf[Integer]
     }
     
-    @scala.inline
-    implicit class IntegerMutableBuilder[Self <: Integer] (val x: Self) extends AnyVal {
+    extension [Self <: Integer](x: Self) {
       
-      @scala.inline
-      def setArray(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "array", js.Any.fromFunction3(value))
+      inline def setArray(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "array", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setInteger(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "integer", js.Any.fromFunction3(value))
+      inline def setInteger(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "integer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setNumber(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "number", js.Any.fromFunction3(value))
+      inline def setNumber(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "number", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setNumeric(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "numeric", js.Any.fromFunction3(value))
+      inline def setNumeric(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "numeric", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setObject(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "object", js.Any.fromFunction3(value))
+      inline def setObject(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "object", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setString(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "string", js.Any.fromFunction3(value))
+      inline def setString(value: (js.Any, js.Any, js.Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "string", js.Any.fromFunction3(value))
     }
   }
   
@@ -319,8 +279,7 @@ object anon {
   }
   object _empty {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       EqualssignEqualssign: (js.Any, js.Any) => Boolean,
       EqualssignEqualssignEqualssign: (js.Any, js.Any) => Boolean,
       ExclamationmarkEqualssign: (js.Any, js.Any) => Boolean,
@@ -348,50 +307,35 @@ object anon {
       __obj.asInstanceOf[_empty]
     }
     
-    @scala.inline
-    implicit class _emptyMutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
+    extension [Self <: _empty](x: Self) {
       
-      @scala.inline
-      def setContains(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
+      inline def setContains(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEqualssignEqualssign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "==", js.Any.fromFunction2(value))
+      inline def setEqualssignEqualssign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "==", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEqualssignEqualssignEqualssign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "===", js.Any.fromFunction2(value))
+      inline def setEqualssignEqualssignEqualssign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "===", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExclamationmarkEqualssign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "!=", js.Any.fromFunction2(value))
+      inline def setExclamationmarkEqualssign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "!=", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExclamationmarkEqualssignEqualssign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "!==", js.Any.fromFunction2(value))
+      inline def setExclamationmarkEqualssignEqualssign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "!==", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGreaterthansign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, ">", js.Any.fromFunction2(value))
+      inline def setGreaterthansign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, ">", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGreaterthansignEqualssign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, ">=", js.Any.fromFunction2(value))
+      inline def setGreaterthansignEqualssign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, ">=", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIn(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "in", js.Any.fromFunction2(value))
+      inline def setIn(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "in", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsectEmpty(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "isectEmpty", js.Any.fromFunction2(value))
+      inline def setIsectEmpty(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "isectEmpty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsectNotEmpty(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "isectNotEmpty", js.Any.fromFunction2(value))
+      inline def setIsectNotEmpty(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "isectNotEmpty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLessthansign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "<", js.Any.fromFunction2(value))
+      inline def setLessthansign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "<", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLessthansignEqualssign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "<=", js.Any.fromFunction2(value))
+      inline def setLessthansignEqualssign(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "<=", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNotContains(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "notContains", js.Any.fromFunction2(value))
+      inline def setNotContains(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "notContains", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNotIn(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "notIn", js.Any.fromFunction2(value))
+      inline def setNotIn(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "notIn", js.Any.fromFunction2(value))
     }
   }
 }

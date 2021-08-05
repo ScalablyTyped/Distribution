@@ -26,8 +26,7 @@ trait XViewsSupplier
 }
 object XViewsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Views: XNameAccess,
     acquire: () => Unit,
     getViews: () => XNameAccess,
@@ -38,13 +37,10 @@ object XViewsSupplier {
     __obj.asInstanceOf[XViewsSupplier]
   }
   
-  @scala.inline
-  implicit class XViewsSupplierMutableBuilder[Self <: XViewsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XViewsSupplier](x: Self) {
     
-    @scala.inline
-    def setGetViews(value: () => XNameAccess): Self = StObject.set(x, "getViews", js.Any.fromFunction0(value))
+    inline def setGetViews(value: () => XNameAccess): Self = StObject.set(x, "getViews", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setViews(value: XNameAccess): Self = StObject.set(x, "Views", value.asInstanceOf[js.Any])
+    inline def setViews(value: XNameAccess): Self = StObject.set(x, "Views", value.asInstanceOf[js.Any])
   }
 }

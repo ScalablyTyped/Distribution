@@ -43,52 +43,37 @@ trait UpdateProvisioningTemplateRequest extends StObject {
 }
 object UpdateProvisioningTemplateRequest {
   
-  @scala.inline
-  def apply(templateName: TemplateName): UpdateProvisioningTemplateRequest = {
+  inline def apply(templateName: TemplateName): UpdateProvisioningTemplateRequest = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProvisioningTemplateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateProvisioningTemplateRequestMutableBuilder[Self <: UpdateProvisioningTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateProvisioningTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setDefaultVersionId(value: TemplateVersionId): Self = StObject.set(x, "defaultVersionId", value.asInstanceOf[js.Any])
+    inline def setDefaultVersionId(value: TemplateVersionId): Self = StObject.set(x, "defaultVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVersionIdUndefined: Self = StObject.set(x, "defaultVersionId", js.undefined)
+    inline def setDefaultVersionIdUndefined: Self = StObject.set(x, "defaultVersionId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: TemplateDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: TemplateDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Enabled): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Enabled): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setPreProvisioningHook(value: ProvisioningHook): Self = StObject.set(x, "preProvisioningHook", value.asInstanceOf[js.Any])
+    inline def setPreProvisioningHook(value: ProvisioningHook): Self = StObject.set(x, "preProvisioningHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreProvisioningHookUndefined: Self = StObject.set(x, "preProvisioningHook", js.undefined)
+    inline def setPreProvisioningHookUndefined: Self = StObject.set(x, "preProvisioningHook", js.undefined)
     
-    @scala.inline
-    def setProvisioningRoleArn(value: RoleArn): Self = StObject.set(x, "provisioningRoleArn", value.asInstanceOf[js.Any])
+    inline def setProvisioningRoleArn(value: RoleArn): Self = StObject.set(x, "provisioningRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningRoleArnUndefined: Self = StObject.set(x, "provisioningRoleArn", js.undefined)
+    inline def setProvisioningRoleArnUndefined: Self = StObject.set(x, "provisioningRoleArn", js.undefined)
     
-    @scala.inline
-    def setRemovePreProvisioningHook(value: RemoveHook): Self = StObject.set(x, "removePreProvisioningHook", value.asInstanceOf[js.Any])
+    inline def setRemovePreProvisioningHook(value: RemoveHook): Self = StObject.set(x, "removePreProvisioningHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovePreProvisioningHookUndefined: Self = StObject.set(x, "removePreProvisioningHook", js.undefined)
+    inline def setRemovePreProvisioningHookUndefined: Self = StObject.set(x, "removePreProvisioningHook", js.undefined)
     
-    @scala.inline
-    def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
   }
 }

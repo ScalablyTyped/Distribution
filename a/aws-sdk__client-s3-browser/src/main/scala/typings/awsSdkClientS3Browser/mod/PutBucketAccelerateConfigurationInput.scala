@@ -10,8 +10,7 @@ trait PutBucketAccelerateConfigurationInput
      with typings.awsSdkClientS3Browser.typesPutBucketAccelerateConfigurationInputMod.PutBucketAccelerateConfigurationInput
 object PutBucketAccelerateConfigurationInput {
   
-  @scala.inline
-  def apply(AccelerateConfiguration: AccelerateConfiguration, Bucket: String): PutBucketAccelerateConfigurationInput = {
+  inline def apply(AccelerateConfiguration: AccelerateConfiguration, Bucket: String): PutBucketAccelerateConfigurationInput = {
     val __obj = js.Dynamic.literal(AccelerateConfiguration = AccelerateConfiguration.asInstanceOf[js.Any], Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketAccelerateConfigurationInput]
   }

@@ -69,8 +69,7 @@ object mod {
   }
   object CatboxMemcached {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       drop: CacheKey => js.Promise[Unit],
       generateKey: CacheKey => String,
       get: CacheKey => js.Promise[Null | CachedObject[T]],
@@ -84,11 +83,9 @@ object mod {
       __obj.asInstanceOf[CatboxMemcached[T]]
     }
     
-    @scala.inline
-    implicit class CatboxMemcachedMutableBuilder[Self <: CatboxMemcached[?], T] (val x: Self & CatboxMemcached[T]) extends AnyVal {
+    extension [Self <: CatboxMemcached[?], T](x: Self & CatboxMemcached[T]) {
       
-      @scala.inline
-      def setGenerateKey(value: CacheKey => String): Self = StObject.set(x, "generateKey", js.Any.fromFunction1(value))
+      inline def setGenerateKey(value: CacheKey => String): Self = StObject.set(x, "generateKey", js.Any.fromFunction1(value))
     }
   }
   
@@ -108,44 +105,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+      inline def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
+      inline def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

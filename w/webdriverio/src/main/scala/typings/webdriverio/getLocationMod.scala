@@ -10,6 +10,5 @@ object getLocationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(prop: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def default(prop: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

@@ -24,8 +24,7 @@ trait EventUriEndpointStateChan extends StObject {
 }
 object EventUriEndpointStateChan {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     source: String,
     state: UriEndpointState,
     tags: js.Array[Tag],
@@ -37,28 +36,20 @@ object EventUriEndpointStateChan {
     __obj.asInstanceOf[EventUriEndpointStateChan]
   }
   
-  @scala.inline
-  implicit class EventUriEndpointStateChanMutableBuilder[Self <: EventUriEndpointStateChan] (val x: Self) extends AnyVal {
+  extension [Self <: EventUriEndpointStateChan](x: Self) {
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: UriEndpointState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: UriEndpointState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
+    inline def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: UriEndpointStateChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UriEndpointStateChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

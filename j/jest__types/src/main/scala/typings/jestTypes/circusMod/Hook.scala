@@ -22,8 +22,7 @@ trait Hook extends StObject {
 }
 object Hook {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asyncError: Error,
     fn: /* done */ js.UndefOr[typings.jestTypes.globalMod.DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit],
     parent: DescribeBlock,
@@ -34,30 +33,22 @@ object Hook {
     __obj.asInstanceOf[Hook]
   }
   
-  @scala.inline
-  implicit class HookMutableBuilder[Self <: Hook] (val x: Self) extends AnyVal {
+  extension [Self <: Hook](x: Self) {
     
-    @scala.inline
-    def setAsyncError(value: Error): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
+    inline def setAsyncError(value: Error): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFn(
+    inline def setFn(
       value: /* done */ js.UndefOr[typings.jestTypes.globalMod.DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit]
     ): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: DescribeBlock): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: DescribeBlock): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutNull: Self = StObject.set(x, "timeout", null)
+    inline def setTimeoutNull: Self = StObject.set(x, "timeout", null)
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setType(value: HookType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: HookType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

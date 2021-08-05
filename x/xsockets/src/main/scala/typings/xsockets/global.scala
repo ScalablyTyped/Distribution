@@ -23,33 +23,28 @@ object global {
         @JSGlobal("XSockets.Events.bindings.completed")
         @js.native
         def completed: String = js.native
-        @scala.inline
-        def completed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completed")(x.asInstanceOf[js.Any])
+        inline def completed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completed")(x.asInstanceOf[js.Any])
       }
       
       @JSGlobal("XSockets.Events.close")
       @js.native
       def close: String = js.native
-      @scala.inline
-      def close_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("close")(x.asInstanceOf[js.Any])
+      inline def close_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("close")(x.asInstanceOf[js.Any])
       
       @JSGlobal("XSockets.Events.onBlob")
       @js.native
       def onBlob: String = js.native
-      @scala.inline
-      def onBlob_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onBlob")(x.asInstanceOf[js.Any])
+      inline def onBlob_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onBlob")(x.asInstanceOf[js.Any])
       
       @JSGlobal("XSockets.Events.onError")
       @js.native
       def onError: String = js.native
-      @scala.inline
-      def onError_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onError")(x.asInstanceOf[js.Any])
+      inline def onError_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onError")(x.asInstanceOf[js.Any])
       
       @JSGlobal("XSockets.Events.open")
       @js.native
       def open: String = js.native
-      @scala.inline
-      def open_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("open")(x.asInstanceOf[js.Any])
+      inline def open_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("open")(x.asInstanceOf[js.Any])
       
       object pubSub {
         
@@ -60,14 +55,12 @@ object global {
         @JSGlobal("XSockets.Events.pubSub.subscribe")
         @js.native
         def subscribe: String = js.native
-        @scala.inline
-        def subscribe_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscribe")(x.asInstanceOf[js.Any])
+        inline def subscribe_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscribe")(x.asInstanceOf[js.Any])
         
         @JSGlobal("XSockets.Events.pubSub.unsubscribe")
         @js.native
         def unsubscribe: String = js.native
-        @scala.inline
-        def unsubscribe_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unsubscribe")(x.asInstanceOf[js.Any])
+        inline def unsubscribe_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unsubscribe")(x.asInstanceOf[js.Any])
       }
       
       object storage {
@@ -83,23 +76,19 @@ object global {
         @JSGlobal("XSockets.Events.storage.getAll")
         @js.native
         def getAll: String = js.native
-        @scala.inline
-        def getAll_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAll")(x.asInstanceOf[js.Any])
+        inline def getAll_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAll")(x.asInstanceOf[js.Any])
         
-        @scala.inline
-        def get_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
+        inline def get_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
         
         @JSGlobal("XSockets.Events.storage.remove")
         @js.native
         def remove: String = js.native
-        @scala.inline
-        def remove_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
+        inline def remove_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
         
         @JSGlobal("XSockets.Events.storage.set")
         @js.native
         def set: String = js.native
-        @scala.inline
-        def set_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("set")(x.asInstanceOf[js.Any])
+        inline def set_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("set")(x.asInstanceOf[js.Any])
       }
     }
     

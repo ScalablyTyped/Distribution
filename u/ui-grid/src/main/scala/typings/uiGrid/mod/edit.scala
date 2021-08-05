@@ -108,88 +108,62 @@ object edit {
   }
   object IColumnDef {
     
-    @scala.inline
-    def apply[TEntity](): typings.uiGrid.mod.edit.IColumnDef[TEntity] = {
+    inline def apply[TEntity](): typings.uiGrid.mod.edit.IColumnDef[TEntity] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.edit.IColumnDef[TEntity]]
     }
     
-    @scala.inline
-    implicit class IColumnDefMutableBuilder[Self <: typings.uiGrid.mod.edit.IColumnDef[?], TEntity] (val x: Self & typings.uiGrid.mod.edit.IColumnDef[TEntity]) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.edit.IColumnDef[?], TEntity](x: Self & typings.uiGrid.mod.edit.IColumnDef[TEntity]) {
       
-      @scala.inline
-      def setCellEditableCondition(value: js.Any | (js.Function1[/* $scope */ IScope, Boolean])): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
+      inline def setCellEditableCondition(value: js.Any | (js.Function1[/* $scope */ IScope, Boolean])): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellEditableConditionFunction1(value: /* $scope */ IScope => Boolean): Self = StObject.set(x, "cellEditableCondition", js.Any.fromFunction1(value))
+      inline def setCellEditableConditionFunction1(value: /* $scope */ IScope => Boolean): Self = StObject.set(x, "cellEditableCondition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCellEditableConditionUndefined: Self = StObject.set(x, "cellEditableCondition", js.undefined)
+      inline def setCellEditableConditionUndefined: Self = StObject.set(x, "cellEditableCondition", js.undefined)
       
-      @scala.inline
-      def setEditDropdownFilter(value: String): Self = StObject.set(x, "editDropdownFilter", value.asInstanceOf[js.Any])
+      inline def setEditDropdownFilter(value: String): Self = StObject.set(x, "editDropdownFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditDropdownFilterUndefined: Self = StObject.set(x, "editDropdownFilter", js.undefined)
+      inline def setEditDropdownFilterUndefined: Self = StObject.set(x, "editDropdownFilter", js.undefined)
       
-      @scala.inline
-      def setEditDropdownIdLabel(value: String): Self = StObject.set(x, "editDropdownIdLabel", value.asInstanceOf[js.Any])
+      inline def setEditDropdownIdLabel(value: String): Self = StObject.set(x, "editDropdownIdLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditDropdownIdLabelUndefined: Self = StObject.set(x, "editDropdownIdLabel", js.undefined)
+      inline def setEditDropdownIdLabelUndefined: Self = StObject.set(x, "editDropdownIdLabel", js.undefined)
       
-      @scala.inline
-      def setEditDropdownOptionsArray(value: js.Array[IEditDropdown]): Self = StObject.set(x, "editDropdownOptionsArray", value.asInstanceOf[js.Any])
+      inline def setEditDropdownOptionsArray(value: js.Array[IEditDropdown]): Self = StObject.set(x, "editDropdownOptionsArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditDropdownOptionsArrayUndefined: Self = StObject.set(x, "editDropdownOptionsArray", js.undefined)
+      inline def setEditDropdownOptionsArrayUndefined: Self = StObject.set(x, "editDropdownOptionsArray", js.undefined)
       
-      @scala.inline
-      def setEditDropdownOptionsArrayVarargs(value: IEditDropdown*): Self = StObject.set(x, "editDropdownOptionsArray", js.Array(value :_*))
+      inline def setEditDropdownOptionsArrayVarargs(value: IEditDropdown*): Self = StObject.set(x, "editDropdownOptionsArray", js.Array(value :_*))
       
-      @scala.inline
-      def setEditDropdownRowEntityOptionsArrayPath(value: String): Self = StObject.set(x, "editDropdownRowEntityOptionsArrayPath", value.asInstanceOf[js.Any])
+      inline def setEditDropdownRowEntityOptionsArrayPath(value: String): Self = StObject.set(x, "editDropdownRowEntityOptionsArrayPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditDropdownRowEntityOptionsArrayPathUndefined: Self = StObject.set(x, "editDropdownRowEntityOptionsArrayPath", js.undefined)
+      inline def setEditDropdownRowEntityOptionsArrayPathUndefined: Self = StObject.set(x, "editDropdownRowEntityOptionsArrayPath", js.undefined)
       
-      @scala.inline
-      def setEditDropdownValueLabel(value: String): Self = StObject.set(x, "editDropdownValueLabel", value.asInstanceOf[js.Any])
+      inline def setEditDropdownValueLabel(value: String): Self = StObject.set(x, "editDropdownValueLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditDropdownValueLabelUndefined: Self = StObject.set(x, "editDropdownValueLabel", js.undefined)
+      inline def setEditDropdownValueLabelUndefined: Self = StObject.set(x, "editDropdownValueLabel", js.undefined)
       
-      @scala.inline
-      def setEditFileChooserCallback(
+      inline def setEditFileChooserCallback(
         value: (/* gridRow */ IGridRowOf[TEntity], /* gridCol */ IGridColumnOf[TEntity], /* files */ FileList) => Unit
       ): Self = StObject.set(x, "editFileChooserCallback", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setEditFileChooserCallbackUndefined: Self = StObject.set(x, "editFileChooserCallback", js.undefined)
+      inline def setEditFileChooserCallbackUndefined: Self = StObject.set(x, "editFileChooserCallback", js.undefined)
       
-      @scala.inline
-      def setEditModelField(value: String): Self = StObject.set(x, "editModelField", value.asInstanceOf[js.Any])
+      inline def setEditModelField(value: String): Self = StObject.set(x, "editModelField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditModelFieldUndefined: Self = StObject.set(x, "editModelField", js.undefined)
+      inline def setEditModelFieldUndefined: Self = StObject.set(x, "editModelField", js.undefined)
       
-      @scala.inline
-      def setEditableCellTemplate(value: String): Self = StObject.set(x, "editableCellTemplate", value.asInstanceOf[js.Any])
+      inline def setEditableCellTemplate(value: String): Self = StObject.set(x, "editableCellTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditableCellTemplateUndefined: Self = StObject.set(x, "editableCellTemplate", js.undefined)
+      inline def setEditableCellTemplateUndefined: Self = StObject.set(x, "editableCellTemplate", js.undefined)
       
-      @scala.inline
-      def setEnableCellEdit(value: Boolean): Self = StObject.set(x, "enableCellEdit", value.asInstanceOf[js.Any])
+      inline def setEnableCellEdit(value: Boolean): Self = StObject.set(x, "enableCellEdit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableCellEditOnFocus(value: Boolean): Self = StObject.set(x, "enableCellEditOnFocus", value.asInstanceOf[js.Any])
+      inline def setEnableCellEditOnFocus(value: Boolean): Self = StObject.set(x, "enableCellEditOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableCellEditOnFocusUndefined: Self = StObject.set(x, "enableCellEditOnFocus", js.undefined)
+      inline def setEnableCellEditOnFocusUndefined: Self = StObject.set(x, "enableCellEditOnFocus", js.undefined)
       
-      @scala.inline
-      def setEnableCellEditUndefined: Self = StObject.set(x, "enableCellEdit", js.undefined)
+      inline def setEnableCellEditUndefined: Self = StObject.set(x, "enableCellEdit", js.undefined)
     }
   }
   
@@ -201,20 +175,16 @@ object edit {
   }
   object IEditDropdown {
     
-    @scala.inline
-    def apply(id: Double | String, value: js.Any): IEditDropdown = {
+    inline def apply(id: Double | String, value: js.Any): IEditDropdown = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEditDropdown]
     }
     
-    @scala.inline
-    implicit class IEditDropdownMutableBuilder[Self <: IEditDropdown] (val x: Self) extends AnyVal {
+    extension [Self <: IEditDropdown](x: Self) {
       
-      @scala.inline
-      def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -224,17 +194,14 @@ object edit {
   }
   object IGridEditApi {
     
-    @scala.inline
-    def apply[TEntity](on: AfterCellEdit[TEntity]): IGridEditApi[TEntity] = {
+    inline def apply[TEntity](on: AfterCellEdit[TEntity]): IGridEditApi[TEntity] = {
       val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGridEditApi[TEntity]]
     }
     
-    @scala.inline
-    implicit class IGridEditApiMutableBuilder[Self <: IGridEditApi[?], TEntity] (val x: Self & IGridEditApi[TEntity]) extends AnyVal {
+    extension [Self <: IGridEditApi[?], TEntity](x: Self & IGridEditApi[TEntity]) {
       
-      @scala.inline
-      def setOn(value: AfterCellEdit[TEntity]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: AfterCellEdit[TEntity]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     }
   }
   
@@ -271,41 +238,30 @@ object edit {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.edit.IGridOptions = {
+    inline def apply(): typings.uiGrid.mod.edit.IGridOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.edit.IGridOptions]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.edit.IGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.edit.IGridOptions](x: Self) {
       
-      @scala.inline
-      def setCellEditableCondition(value: js.Any | (js.Function1[/* $scope */ IScope, Boolean])): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
+      inline def setCellEditableCondition(value: js.Any | (js.Function1[/* $scope */ IScope, Boolean])): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellEditableConditionFunction1(value: /* $scope */ IScope => Boolean): Self = StObject.set(x, "cellEditableCondition", js.Any.fromFunction1(value))
+      inline def setCellEditableConditionFunction1(value: /* $scope */ IScope => Boolean): Self = StObject.set(x, "cellEditableCondition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCellEditableConditionUndefined: Self = StObject.set(x, "cellEditableCondition", js.undefined)
+      inline def setCellEditableConditionUndefined: Self = StObject.set(x, "cellEditableCondition", js.undefined)
       
-      @scala.inline
-      def setEditableCellTemplate(value: String): Self = StObject.set(x, "editableCellTemplate", value.asInstanceOf[js.Any])
+      inline def setEditableCellTemplate(value: String): Self = StObject.set(x, "editableCellTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditableCellTemplateUndefined: Self = StObject.set(x, "editableCellTemplate", js.undefined)
+      inline def setEditableCellTemplateUndefined: Self = StObject.set(x, "editableCellTemplate", js.undefined)
       
-      @scala.inline
-      def setEnableCellEdit(value: Boolean): Self = StObject.set(x, "enableCellEdit", value.asInstanceOf[js.Any])
+      inline def setEnableCellEdit(value: Boolean): Self = StObject.set(x, "enableCellEdit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableCellEditOnFocus(value: Boolean): Self = StObject.set(x, "enableCellEditOnFocus", value.asInstanceOf[js.Any])
+      inline def setEnableCellEditOnFocus(value: Boolean): Self = StObject.set(x, "enableCellEditOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableCellEditOnFocusUndefined: Self = StObject.set(x, "enableCellEditOnFocus", js.undefined)
+      inline def setEnableCellEditOnFocusUndefined: Self = StObject.set(x, "enableCellEditOnFocus", js.undefined)
       
-      @scala.inline
-      def setEnableCellEditUndefined: Self = StObject.set(x, "enableCellEdit", js.undefined)
+      inline def setEnableCellEditUndefined: Self = StObject.set(x, "enableCellEdit", js.undefined)
     }
   }
   
@@ -316,20 +272,16 @@ object edit {
   }
   object IGridRow {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.edit.IGridRow = {
+    inline def apply(): typings.uiGrid.mod.edit.IGridRow = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.edit.IGridRow]
     }
     
-    @scala.inline
-    implicit class IGridRowMutableBuilder[Self <: typings.uiGrid.mod.edit.IGridRow] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.edit.IGridRow](x: Self) {
       
-      @scala.inline
-      def setEnableCellEdit(value: Boolean): Self = StObject.set(x, "enableCellEdit", value.asInstanceOf[js.Any])
+      inline def setEnableCellEdit(value: Boolean): Self = StObject.set(x, "enableCellEdit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableCellEditUndefined: Self = StObject.set(x, "enableCellEdit", js.undefined)
+      inline def setEnableCellEditUndefined: Self = StObject.set(x, "enableCellEdit", js.undefined)
     }
   }
   
@@ -343,23 +295,18 @@ object edit {
   }
   object IUiGridEditConstants {
     
-    @scala.inline
-    def apply(EDITABLE_CELL_DIRECTIVE: String, EDITABLE_CELL_TEMPLATE: String, events: BEGINCELLEDIT): IUiGridEditConstants = {
+    inline def apply(EDITABLE_CELL_DIRECTIVE: String, EDITABLE_CELL_TEMPLATE: String, events: BEGINCELLEDIT): IUiGridEditConstants = {
       val __obj = js.Dynamic.literal(EDITABLE_CELL_DIRECTIVE = EDITABLE_CELL_DIRECTIVE.asInstanceOf[js.Any], EDITABLE_CELL_TEMPLATE = EDITABLE_CELL_TEMPLATE.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any])
       __obj.asInstanceOf[IUiGridEditConstants]
     }
     
-    @scala.inline
-    implicit class IUiGridEditConstantsMutableBuilder[Self <: IUiGridEditConstants] (val x: Self) extends AnyVal {
+    extension [Self <: IUiGridEditConstants](x: Self) {
       
-      @scala.inline
-      def setEDITABLE_CELL_DIRECTIVE(value: String): Self = StObject.set(x, "EDITABLE_CELL_DIRECTIVE", value.asInstanceOf[js.Any])
+      inline def setEDITABLE_CELL_DIRECTIVE(value: String): Self = StObject.set(x, "EDITABLE_CELL_DIRECTIVE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEDITABLE_CELL_TEMPLATE(value: String): Self = StObject.set(x, "EDITABLE_CELL_TEMPLATE", value.asInstanceOf[js.Any])
+      inline def setEDITABLE_CELL_TEMPLATE(value: String): Self = StObject.set(x, "EDITABLE_CELL_TEMPLATE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(value: BEGINCELLEDIT): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: BEGINCELLEDIT): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     }
   }
   

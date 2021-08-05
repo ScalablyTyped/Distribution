@@ -21,8 +21,7 @@ trait Invoker_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] ex
 }
 object Invoker_ {
   
-  @scala.inline
-  def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
+  inline def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
     invoke: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], TArgs) => ImplOrAny[TImpl],
     invokeWithDynamicDependencies: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
@@ -34,14 +33,11 @@ object Invoker_ {
     __obj.asInstanceOf[Invoker_[TBase, TImpl, TArgs]]
   }
   
-  @scala.inline
-  implicit class Invoker_MutableBuilder[Self <: Invoker_[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] (val x: Self & (Invoker_[TBase, TImpl, TArgs])) extends AnyVal {
+  extension [Self <: Invoker_[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](x: Self & (Invoker_[TBase, TImpl, TArgs])) {
     
-    @scala.inline
-    def setInvoke(value: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], TArgs) => ImplOrAny[TImpl]): Self = StObject.set(x, "invoke", js.Any.fromFunction3(value))
+    inline def setInvoke(value: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], TArgs) => ImplOrAny[TImpl]): Self = StObject.set(x, "invoke", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInvokeWithDynamicDependencies(
+    inline def setInvokeWithDynamicDependencies(
       value: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
         ], js.Array[

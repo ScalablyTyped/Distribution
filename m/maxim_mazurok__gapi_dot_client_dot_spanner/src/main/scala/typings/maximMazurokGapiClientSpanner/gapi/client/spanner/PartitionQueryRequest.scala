@@ -45,51 +45,39 @@ trait PartitionQueryRequest extends StObject {
 }
 object PartitionQueryRequest {
   
-  @scala.inline
-  def apply(): PartitionQueryRequest = {
+  inline def apply(): PartitionQueryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartitionQueryRequest]
   }
   
-  @scala.inline
-  implicit class PartitionQueryRequestMutableBuilder[Self <: PartitionQueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionQueryRequest](x: Self) {
     
-    @scala.inline
-    def setParamTypes(
+    inline def setParamTypes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
       */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamTypesUndefined: Self = StObject.set(x, "paramTypes", js.undefined)
+    inline def setParamTypesUndefined: Self = StObject.set(x, "paramTypes", js.undefined)
     
-    @scala.inline
-    def setParams(
+    inline def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setPartitionOptions(value: PartitionOptions): Self = StObject.set(x, "partitionOptions", value.asInstanceOf[js.Any])
+    inline def setPartitionOptions(value: PartitionOptions): Self = StObject.set(x, "partitionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionOptionsUndefined: Self = StObject.set(x, "partitionOptions", js.undefined)
+    inline def setPartitionOptionsUndefined: Self = StObject.set(x, "partitionOptions", js.undefined)
     
-    @scala.inline
-    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
+    inline def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: TransactionSelector): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: TransactionSelector): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

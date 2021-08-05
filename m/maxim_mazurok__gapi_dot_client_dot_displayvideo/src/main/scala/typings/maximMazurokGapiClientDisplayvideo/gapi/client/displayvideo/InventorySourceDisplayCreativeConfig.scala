@@ -11,19 +11,15 @@ trait InventorySourceDisplayCreativeConfig extends StObject {
 }
 object InventorySourceDisplayCreativeConfig {
   
-  @scala.inline
-  def apply(): InventorySourceDisplayCreativeConfig = {
+  inline def apply(): InventorySourceDisplayCreativeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InventorySourceDisplayCreativeConfig]
   }
   
-  @scala.inline
-  implicit class InventorySourceDisplayCreativeConfigMutableBuilder[Self <: InventorySourceDisplayCreativeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InventorySourceDisplayCreativeConfig](x: Self) {
     
-    @scala.inline
-    def setCreativeSize(value: Dimensions): Self = StObject.set(x, "creativeSize", value.asInstanceOf[js.Any])
+    inline def setCreativeSize(value: Dimensions): Self = StObject.set(x, "creativeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeSizeUndefined: Self = StObject.set(x, "creativeSize", js.undefined)
+    inline def setCreativeSizeUndefined: Self = StObject.set(x, "creativeSize", js.undefined)
   }
 }

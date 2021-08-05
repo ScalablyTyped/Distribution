@@ -10,6 +10,5 @@ object poissonDistributionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(lambda: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(lambda.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def default(lambda: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(lambda.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
 }

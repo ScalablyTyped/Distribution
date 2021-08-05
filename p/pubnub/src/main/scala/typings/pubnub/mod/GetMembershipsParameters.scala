@@ -13,16 +13,13 @@ trait GetMembershipsParameters
 }
 object GetMembershipsParameters {
   
-  @scala.inline
-  def apply(userId: String): GetMembershipsParameters = {
+  inline def apply(userId: String): GetMembershipsParameters = {
     val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMembershipsParameters]
   }
   
-  @scala.inline
-  implicit class GetMembershipsParametersMutableBuilder[Self <: GetMembershipsParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GetMembershipsParameters](x: Self) {
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

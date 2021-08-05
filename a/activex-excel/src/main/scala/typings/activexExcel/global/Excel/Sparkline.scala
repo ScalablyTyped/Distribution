@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Sparkline")
 @js.native
-class Sparkline protected ()
+/* private */ class Sparkline ()
   extends StObject
      with typings.activexExcel.Excel.Sparkline {
   
@@ -18,7 +18,7 @@ class Sparkline protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Sparkline_typekey")
   var ExcelDotSparkline_typekey: typings.activexExcel.Excel.Sparkline = js.native
   

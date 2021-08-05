@@ -16,31 +16,31 @@ object progressPartMod {
   class ProgressPart protected () extends StObject {
     def this(_client: ProgressContext, _token: ProgressToken) = this()
     
-    var _cancellationToken: js.Any = js.native
+    /* private */ var _cancellationToken: js.Any = js.native
     
-    var _client: js.Any = js.native
+    /* private */ var _client: js.Any = js.native
     
-    var _disposable: js.Any = js.native
+    /* private */ var _disposable: js.Any = js.native
     
-    var _infinite: js.Any = js.native
+    /* private */ var _infinite: js.Any = js.native
     
-    var _progress: js.Any = js.native
+    /* private */ var _progress: js.Any = js.native
     
-    var _reject: js.Any = js.native
+    /* private */ var _reject: js.Any = js.native
     
-    var _reported: js.Any = js.native
+    /* private */ var _reported: js.Any = js.native
     
-    var _resolve: js.Any = js.native
+    /* private */ var _resolve: js.Any = js.native
     
-    var _token: js.Any = js.native
+    /* private */ var _token: js.Any = js.native
     
-    var begin: js.Any = js.native
+    /* private */ var begin: js.Any = js.native
     
     def cancel(): Unit = js.native
     
     def done(): Unit = js.native
     
-    var report: js.Any = js.native
+    /* private */ var report: js.Any = js.native
   }
   
   @js.native

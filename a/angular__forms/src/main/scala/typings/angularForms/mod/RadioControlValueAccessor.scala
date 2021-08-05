@@ -23,15 +23,15 @@ class RadioControlValueAccessor protected ()
     _injector: Injector
   ) = this()
   
-  var _checkName: js.Any = js.native
+  /* private */ var _checkName: js.Any = js.native
   
-  var _elementRef: js.Any = js.native
+  /* private */ var _elementRef: js.Any = js.native
   
-  var _injector: js.Any = js.native
+  /* private */ var _injector: js.Any = js.native
   
-  var _registry: js.Any = js.native
+  /* private */ var _registry: js.Any = js.native
   
-  var _renderer: js.Any = js.native
+  /* private */ var _renderer: js.Any = js.native
   
   /**
     * Sets the "value" on the radio input element and unchecks it.

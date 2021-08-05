@@ -45,6 +45,5 @@ object xmlMod {
     var value: String = js.native
   }
   
-  @scala.inline
-  def parseXml(data: String): XElement = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(data.asInstanceOf[js.Any]).asInstanceOf[XElement]
+  inline def parseXml(data: String): XElement = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(data.asInstanceOf[js.Any]).asInstanceOf[XElement]
 }

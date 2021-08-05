@@ -11,11 +11,9 @@ object cryptoCryptoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createCrypto(): Crypto = ^.asInstanceOf[js.Dynamic].applyDynamic("createCrypto")().asInstanceOf[Crypto]
+  inline def createCrypto(): Crypto = ^.asInstanceOf[js.Dynamic].applyDynamic("createCrypto")().asInstanceOf[Crypto]
   
-  @scala.inline
-  def hasBrowserCrypto(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBrowserCrypto")().asInstanceOf[Boolean]
+  inline def hasBrowserCrypto(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBrowserCrypto")().asInstanceOf[Boolean]
   
   @js.native
   trait Crypto extends StObject {
@@ -47,20 +45,16 @@ object cryptoCryptoMod {
   }
   object CryptoSigner {
     
-    @scala.inline
-    def apply(sign: (String, String) => String, update: String => Unit): CryptoSigner = {
+    inline def apply(sign: (String, String) => String, update: String => Unit): CryptoSigner = {
       val __obj = js.Dynamic.literal(sign = js.Any.fromFunction2(sign), update = js.Any.fromFunction1(update))
       __obj.asInstanceOf[CryptoSigner]
     }
     
-    @scala.inline
-    implicit class CryptoSignerMutableBuilder[Self <: CryptoSigner] (val x: Self) extends AnyVal {
+    extension [Self <: CryptoSigner](x: Self) {
       
-      @scala.inline
-      def setSign(value: (String, String) => String): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
+      inline def setSign(value: (String, String) => String): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdate(value: String => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: String => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -80,35 +74,26 @@ object cryptoCryptoMod {
   }
   object JwkCertificate {
     
-    @scala.inline
-    def apply(alg: String, e: String, kid: String, kty: String, n: String): JwkCertificate = {
+    inline def apply(alg: String, e: String, kid: String, kty: String, n: String): JwkCertificate = {
       val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], kid = kid.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
       __obj.asInstanceOf[JwkCertificate]
     }
     
-    @scala.inline
-    implicit class JwkCertificateMutableBuilder[Self <: JwkCertificate] (val x: Self) extends AnyVal {
+    extension [Self <: JwkCertificate](x: Self) {
       
-      @scala.inline
-      def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+      inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
+      inline def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
+      inline def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse(value: String): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: String): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+      inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     }
   }
 }

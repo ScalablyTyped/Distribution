@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object common {
   
-  @scala.inline
-  def apply(name: String, json: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(name: String, json: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("google-gax", "fallback.protobufMinimal.common")
   @js.native
@@ -30,6 +29,5 @@ object common {
     * @param file Proto file name
     * @returns Root definition or `null` if not defined
     */
-  @scala.inline
-  def get(file: String): INamespace | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(file.asInstanceOf[js.Any]).asInstanceOf[INamespace | Null]
+  inline def get(file: String): INamespace | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(file.asInstanceOf[js.Any]).asInstanceOf[INamespace | Null]
 }

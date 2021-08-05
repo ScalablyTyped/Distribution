@@ -12,19 +12,15 @@ trait ExportParameters extends StObject {
 }
 object ExportParameters {
   
-  @scala.inline
-  def apply(fileId: String, mimeType: String): ExportParameters = {
+  inline def apply(fileId: String, mimeType: String): ExportParameters = {
     val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportParameters]
   }
   
-  @scala.inline
-  implicit class ExportParametersMutableBuilder[Self <: ExportParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ExportParameters](x: Self) {
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
   }
 }

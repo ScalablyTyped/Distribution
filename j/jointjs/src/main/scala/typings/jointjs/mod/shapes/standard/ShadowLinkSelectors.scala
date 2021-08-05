@@ -16,31 +16,23 @@ trait ShadowLinkSelectors extends StObject {
 }
 object ShadowLinkSelectors {
   
-  @scala.inline
-  def apply(): ShadowLinkSelectors = {
+  inline def apply(): ShadowLinkSelectors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShadowLinkSelectors]
   }
   
-  @scala.inline
-  implicit class ShadowLinkSelectorsMutableBuilder[Self <: ShadowLinkSelectors] (val x: Self) extends AnyVal {
+  extension [Self <: ShadowLinkSelectors](x: Self) {
     
-    @scala.inline
-    def setLine(value: SVGPathAttributes): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: SVGPathAttributes): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setShadow(value: SVGPathAttributes): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: SVGPathAttributes): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
   }
 }

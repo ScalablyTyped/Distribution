@@ -17,34 +17,25 @@ trait GeneralCallbackResultPart extends StObject {
 }
 object GeneralCallbackResultPart {
   
-  @scala.inline
-  def apply(errMsg: String & js.UndefOr[String]): GeneralCallbackResultPart = {
+  inline def apply(errMsg: String & js.UndefOr[String]): GeneralCallbackResultPart = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralCallbackResultPart]
   }
   
-  @scala.inline
-  implicit class GeneralCallbackResultPartMutableBuilder[Self <: GeneralCallbackResultPart] (val x: Self) extends AnyVal {
+  extension [Self <: GeneralCallbackResultPart](x: Self) {
     
-    @scala.inline
-    def setCloudID(value: String): Self = StObject.set(x, "cloudID", value.asInstanceOf[js.Any])
+    inline def setCloudID(value: String): Self = StObject.set(x, "cloudID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudIDUndefined: Self = StObject.set(x, "cloudID", js.undefined)
+    inline def setCloudIDUndefined: Self = StObject.set(x, "cloudID", js.undefined)
     
-    @scala.inline
-    def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
+    inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedDataUndefined: Self = StObject.set(x, "encryptedData", js.undefined)
+    inline def setEncryptedDataUndefined: Self = StObject.set(x, "encryptedData", js.undefined)
     
-    @scala.inline
-    def setErrMsg(value: String & js.UndefOr[String]): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String & js.UndefOr[String]): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+    inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
   }
 }

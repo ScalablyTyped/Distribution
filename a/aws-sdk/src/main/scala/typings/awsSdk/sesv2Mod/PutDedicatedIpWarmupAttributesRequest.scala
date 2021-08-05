@@ -18,19 +18,15 @@ trait PutDedicatedIpWarmupAttributesRequest extends StObject {
 }
 object PutDedicatedIpWarmupAttributesRequest {
   
-  @scala.inline
-  def apply(Ip: Ip, WarmupPercentage: Percentage100Wrapper): PutDedicatedIpWarmupAttributesRequest = {
+  inline def apply(Ip: Ip, WarmupPercentage: Percentage100Wrapper): PutDedicatedIpWarmupAttributesRequest = {
     val __obj = js.Dynamic.literal(Ip = Ip.asInstanceOf[js.Any], WarmupPercentage = WarmupPercentage.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutDedicatedIpWarmupAttributesRequest]
   }
   
-  @scala.inline
-  implicit class PutDedicatedIpWarmupAttributesRequestMutableBuilder[Self <: PutDedicatedIpWarmupAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutDedicatedIpWarmupAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarmupPercentage(value: Percentage100Wrapper): Self = StObject.set(x, "WarmupPercentage", value.asInstanceOf[js.Any])
+    inline def setWarmupPercentage(value: Percentage100Wrapper): Self = StObject.set(x, "WarmupPercentage", value.asInstanceOf[js.Any])
   }
 }

@@ -15,31 +15,23 @@ trait StandaloneFormatSpec extends StObject {
 }
 object StandaloneFormatSpec {
   
-  @scala.inline
-  def apply(format: js.Array[String], standalone: js.Array[String]): StandaloneFormatSpec = {
+  inline def apply(format: js.Array[String], standalone: js.Array[String]): StandaloneFormatSpec = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], standalone = standalone.asInstanceOf[js.Any])
     __obj.asInstanceOf[StandaloneFormatSpec]
   }
   
-  @scala.inline
-  implicit class StandaloneFormatSpecMutableBuilder[Self <: StandaloneFormatSpec] (val x: Self) extends AnyVal {
+  extension [Self <: StandaloneFormatSpec](x: Self) {
     
-    @scala.inline
-    def setFormat(value: js.Array[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: js.Array[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatVarargs(value: String*): Self = StObject.set(x, "format", js.Array(value :_*))
+    inline def setFormatVarargs(value: String*): Self = StObject.set(x, "format", js.Array(value :_*))
     
-    @scala.inline
-    def setIsFormat(value: RegExp): Self = StObject.set(x, "isFormat", value.asInstanceOf[js.Any])
+    inline def setIsFormat(value: RegExp): Self = StObject.set(x, "isFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFormatUndefined: Self = StObject.set(x, "isFormat", js.undefined)
+    inline def setIsFormatUndefined: Self = StObject.set(x, "isFormat", js.undefined)
     
-    @scala.inline
-    def setStandalone(value: js.Array[String]): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+    inline def setStandalone(value: js.Array[String]): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandaloneVarargs(value: String*): Self = StObject.set(x, "standalone", js.Array(value :_*))
+    inline def setStandaloneVarargs(value: String*): Self = StObject.set(x, "standalone", js.Array(value :_*))
   }
 }

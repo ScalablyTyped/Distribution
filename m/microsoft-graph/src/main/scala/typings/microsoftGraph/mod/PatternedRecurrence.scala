@@ -14,31 +14,23 @@ trait PatternedRecurrence extends StObject {
 }
 object PatternedRecurrence {
   
-  @scala.inline
-  def apply(): PatternedRecurrence = {
+  inline def apply(): PatternedRecurrence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatternedRecurrence]
   }
   
-  @scala.inline
-  implicit class PatternedRecurrenceMutableBuilder[Self <: PatternedRecurrence] (val x: Self) extends AnyVal {
+  extension [Self <: PatternedRecurrence](x: Self) {
     
-    @scala.inline
-    def setPattern(value: NullableOption[RecurrencePattern]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: NullableOption[RecurrencePattern]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternNull: Self = StObject.set(x, "pattern", null)
+    inline def setPatternNull: Self = StObject.set(x, "pattern", null)
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setRange(value: NullableOption[RecurrenceRange]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: NullableOption[RecurrenceRange]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeNull: Self = StObject.set(x, "range", null)
+    inline def setRangeNull: Self = StObject.set(x, "range", null)
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

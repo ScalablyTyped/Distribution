@@ -23,22 +23,22 @@ object importRewriteVisitorMod {
       * Gets the resolved exports of a given source file. Exports are cached
       * for subsequent calls.
       */
-    var _getSourceFileExports: js.Any = js.native
+    /* private */ var _getSourceFileExports: js.Any = js.native
     
-    var _recordIdentifierReference: js.Any = js.native
+    /* private */ var _recordIdentifierReference: js.Any = js.native
     
     /** Rewrites a module import to be relative to the target file location. */
-    var _rewriteModuleImport: js.Any = js.native
+    /* private */ var _rewriteModuleImport: js.Any = js.native
     
-    var compilerHost: js.Any = js.native
+    /* private */ var compilerHost: js.Any = js.native
     
     def create[T /* <: Node */](ctx: TransformationContext, newSourceFile: SourceFile): Transformer[T] = js.native
     
-    var importManager: js.Any = js.native
+    /* private */ var importManager: js.Any = js.native
     
-    var sourceFileExports: js.Any = js.native
+    /* private */ var sourceFileExports: js.Any = js.native
     
-    var typeChecker: js.Any = js.native
+    /* private */ var typeChecker: js.Any = js.native
   }
   
   @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/decorator_rewrite/import_rewrite_visitor", "UnresolvedIdentifierError")

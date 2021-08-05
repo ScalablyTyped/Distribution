@@ -12,8 +12,7 @@ object httpProxyClientMod {
   /**
     * Establishes proxied connection to destinationPort
     */
-  @scala.inline
-  def apply(
+  inline def apply(
     proxyUrl: String,
     destinationPort: Double,
     destinationHost: String,

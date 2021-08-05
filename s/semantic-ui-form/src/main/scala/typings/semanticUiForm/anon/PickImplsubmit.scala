@@ -11,16 +11,13 @@ trait PickImplsubmit extends StObject {
 }
 object PickImplsubmit {
   
-  @scala.inline
-  def apply(submit: String): PickImplsubmit = {
+  inline def apply(submit: String): PickImplsubmit = {
     val __obj = js.Dynamic.literal(submit = submit.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsubmit]
   }
   
-  @scala.inline
-  implicit class PickImplsubmitMutableBuilder[Self <: PickImplsubmit] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplsubmit](x: Self) {
     
-    @scala.inline
-    def setSubmit(value: String): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
+    inline def setSubmit(value: String): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
   }
 }

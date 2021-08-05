@@ -50,55 +50,39 @@ trait SchemaLivenessCheck extends StObject {
 }
 object SchemaLivenessCheck {
   
-  @scala.inline
-  def apply(): SchemaLivenessCheck = {
+  inline def apply(): SchemaLivenessCheck = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLivenessCheck]
   }
   
-  @scala.inline
-  implicit class SchemaLivenessCheckMutableBuilder[Self <: SchemaLivenessCheck] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLivenessCheck](x: Self) {
     
-    @scala.inline
-    def setCheckInterval(value: String): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
+    inline def setCheckInterval(value: String): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
+    inline def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
     
-    @scala.inline
-    def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
+    inline def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
+    inline def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setInitialDelay(value: String): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
+    inline def setInitialDelay(value: String): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialDelayUndefined: Self = StObject.set(x, "initialDelay", js.undefined)
+    inline def setInitialDelayUndefined: Self = StObject.set(x, "initialDelay", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setSuccessThreshold(value: Double): Self = StObject.set(x, "successThreshold", value.asInstanceOf[js.Any])
+    inline def setSuccessThreshold(value: Double): Self = StObject.set(x, "successThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessThresholdUndefined: Self = StObject.set(x, "successThreshold", js.undefined)
+    inline def setSuccessThresholdUndefined: Self = StObject.set(x, "successThreshold", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

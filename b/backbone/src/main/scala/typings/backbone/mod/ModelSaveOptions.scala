@@ -16,19 +16,15 @@ trait ModelSaveOptions
 }
 object ModelSaveOptions {
   
-  @scala.inline
-  def apply(): ModelSaveOptions = {
+  inline def apply(): ModelSaveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelSaveOptions]
   }
   
-  @scala.inline
-  implicit class ModelSaveOptionsMutableBuilder[Self <: ModelSaveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ModelSaveOptions](x: Self) {
     
-    @scala.inline
-    def setPatch(value: Boolean): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Boolean): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+    inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
   }
 }

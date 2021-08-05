@@ -34,23 +34,18 @@ object printerMod {
   }
   object PrintResultType {
     
-    @scala.inline
-    def apply(code: String): PrintResultType = {
+    inline def apply(code: String): PrintResultType = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrintResultType]
     }
     
-    @scala.inline
-    implicit class PrintResultTypeMutableBuilder[Self <: PrintResultType] (val x: Self) extends AnyVal {
+    extension [Self <: PrintResultType](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     }
   }
   
@@ -68,20 +63,16 @@ object printerMod {
   }
   object PrinterType {
     
-    @scala.inline
-    def apply(print: js.Any => PrintResultType, printGenerically: js.Any => PrintResultType): PrinterType = {
+    inline def apply(print: js.Any => PrintResultType, printGenerically: js.Any => PrintResultType): PrinterType = {
       val __obj = js.Dynamic.literal(print = js.Any.fromFunction1(print), printGenerically = js.Any.fromFunction1(printGenerically))
       __obj.asInstanceOf[PrinterType]
     }
     
-    @scala.inline
-    implicit class PrinterTypeMutableBuilder[Self <: PrinterType] (val x: Self) extends AnyVal {
+    extension [Self <: PrinterType](x: Self) {
       
-      @scala.inline
-      def setPrint(value: js.Any => PrintResultType): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
+      inline def setPrint(value: js.Any => PrintResultType): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrintGenerically(value: js.Any => PrintResultType): Self = StObject.set(x, "printGenerically", js.Any.fromFunction1(value))
+      inline def setPrintGenerically(value: js.Any => PrintResultType): Self = StObject.set(x, "printGenerically", js.Any.fromFunction1(value))
     }
   }
 }

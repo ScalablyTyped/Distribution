@@ -18,25 +18,19 @@ trait LaunchConfigurationsType extends StObject {
 }
 object LaunchConfigurationsType {
   
-  @scala.inline
-  def apply(LaunchConfigurations: LaunchConfigurations): LaunchConfigurationsType = {
+  inline def apply(LaunchConfigurations: LaunchConfigurations): LaunchConfigurationsType = {
     val __obj = js.Dynamic.literal(LaunchConfigurations = LaunchConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchConfigurationsType]
   }
   
-  @scala.inline
-  implicit class LaunchConfigurationsTypeMutableBuilder[Self <: LaunchConfigurationsType] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchConfigurationsType](x: Self) {
     
-    @scala.inline
-    def setLaunchConfigurations(value: LaunchConfigurations): Self = StObject.set(x, "LaunchConfigurations", value.asInstanceOf[js.Any])
+    inline def setLaunchConfigurations(value: LaunchConfigurations): Self = StObject.set(x, "LaunchConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchConfigurationsVarargs(value: LaunchConfiguration*): Self = StObject.set(x, "LaunchConfigurations", js.Array(value :_*))
+    inline def setLaunchConfigurationsVarargs(value: LaunchConfiguration*): Self = StObject.set(x, "LaunchConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

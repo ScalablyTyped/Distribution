@@ -30,55 +30,39 @@ trait TableHeaders extends StObject {
 }
 object TableHeaders {
   
-  @scala.inline
-  def apply(): TableHeaders = {
+  inline def apply(): TableHeaders = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableHeaders]
   }
   
-  @scala.inline
-  implicit class TableHeadersMutableBuilder[Self <: TableHeaders] (val x: Self) extends AnyVal {
+  extension [Self <: TableHeaders](x: Self) {
     
-    @scala.inline
-    def setCell_id(value: String): Self = StObject.set(x, "cell_id", value.asInstanceOf[js.Any])
+    inline def setCell_id(value: String): Self = StObject.set(x, "cell_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCell_idUndefined: Self = StObject.set(x, "cell_id", js.undefined)
+    inline def setCell_idUndefined: Self = StObject.set(x, "cell_id", js.undefined)
     
-    @scala.inline
-    def setColumn_index_begin(value: Double): Self = StObject.set(x, "column_index_begin", value.asInstanceOf[js.Any])
+    inline def setColumn_index_begin(value: Double): Self = StObject.set(x, "column_index_begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn_index_beginUndefined: Self = StObject.set(x, "column_index_begin", js.undefined)
+    inline def setColumn_index_beginUndefined: Self = StObject.set(x, "column_index_begin", js.undefined)
     
-    @scala.inline
-    def setColumn_index_end(value: Double): Self = StObject.set(x, "column_index_end", value.asInstanceOf[js.Any])
+    inline def setColumn_index_end(value: Double): Self = StObject.set(x, "column_index_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn_index_endUndefined: Self = StObject.set(x, "column_index_end", js.undefined)
+    inline def setColumn_index_endUndefined: Self = StObject.set(x, "column_index_end", js.undefined)
     
-    @scala.inline
-    def setLocation(value: js.Object): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: js.Object): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setRow_index_begin(value: Double): Self = StObject.set(x, "row_index_begin", value.asInstanceOf[js.Any])
+    inline def setRow_index_begin(value: Double): Self = StObject.set(x, "row_index_begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow_index_beginUndefined: Self = StObject.set(x, "row_index_begin", js.undefined)
+    inline def setRow_index_beginUndefined: Self = StObject.set(x, "row_index_begin", js.undefined)
     
-    @scala.inline
-    def setRow_index_end(value: Double): Self = StObject.set(x, "row_index_end", value.asInstanceOf[js.Any])
+    inline def setRow_index_end(value: Double): Self = StObject.set(x, "row_index_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow_index_endUndefined: Self = StObject.set(x, "row_index_end", js.undefined)
+    inline def setRow_index_endUndefined: Self = StObject.set(x, "row_index_end", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

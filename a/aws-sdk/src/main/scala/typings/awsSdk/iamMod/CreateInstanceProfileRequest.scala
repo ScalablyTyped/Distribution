@@ -18,22 +18,17 @@ trait CreateInstanceProfileRequest extends StObject {
 }
 object CreateInstanceProfileRequest {
   
-  @scala.inline
-  def apply(InstanceProfileName: instanceProfileNameType): CreateInstanceProfileRequest = {
+  inline def apply(InstanceProfileName: instanceProfileNameType): CreateInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(InstanceProfileName = InstanceProfileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInstanceProfileRequest]
   }
   
-  @scala.inline
-  implicit class CreateInstanceProfileRequestMutableBuilder[Self <: CreateInstanceProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInstanceProfileRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceProfileName(value: instanceProfileNameType): Self = StObject.set(x, "InstanceProfileName", value.asInstanceOf[js.Any])
+    inline def setInstanceProfileName(value: instanceProfileNameType): Self = StObject.set(x, "InstanceProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
   }
 }

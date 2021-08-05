@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Macintosh only */
 @JSGlobal("Excel.Mailer")
 @js.native
-class Mailer protected ()
+/* private */ class Mailer ()
   extends StObject
      with typings.activexExcel.Excel.Mailer {
   
@@ -28,7 +28,7 @@ class Mailer protected ()
   /* CompleteClass */
   var Enclosures: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Mailer_typekey")
   var ExcelDotMailer_typekey: typings.activexExcel.Excel.Mailer = js.native
   

@@ -11,8 +11,7 @@ object walkerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(db: Buffer, recordSize: Double): Walker = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(db.asInstanceOf[js.Any], recordSize.asInstanceOf[js.Any])).asInstanceOf[Walker]
+  inline def default(db: Buffer, recordSize: Double): Walker = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(db.asInstanceOf[js.Any], recordSize.asInstanceOf[js.Any])).asInstanceOf[Walker]
   
   type NodeReader = js.Function1[/* offset */ Double, Double]
   
@@ -28,20 +27,16 @@ object walkerMod {
   }
   object Walker {
     
-    @scala.inline
-    def apply(left: /* offset */ Double => Double, right: /* offset */ Double => Double): Walker = {
+    inline def apply(left: /* offset */ Double => Double, right: /* offset */ Double => Double): Walker = {
       val __obj = js.Dynamic.literal(left = js.Any.fromFunction1(left), right = js.Any.fromFunction1(right))
       __obj.asInstanceOf[Walker]
     }
     
-    @scala.inline
-    implicit class WalkerMutableBuilder[Self <: Walker] (val x: Self) extends AnyVal {
+    extension [Self <: Walker](x: Self) {
       
-      @scala.inline
-      def setLeft(value: /* offset */ Double => Double): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
+      inline def setLeft(value: /* offset */ Double => Double): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRight(value: /* offset */ Double => Double): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
+      inline def setRight(value: /* offset */ Double => Double): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
     }
   }
 }

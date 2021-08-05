@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlXLMMacroType extends StObject
 object XlXLMMacroType {
   
-  @scala.inline
-  def xlCommand: `2` = 2.asInstanceOf[`2`]
+  inline def xlCommand: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlFunction: `1` = 1.asInstanceOf[`1`]
+  inline def xlFunction: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlNotXLM: `3` = 3.asInstanceOf[`3`]
+  inline def xlNotXLM: `3` = 3.asInstanceOf[`3`]
 }

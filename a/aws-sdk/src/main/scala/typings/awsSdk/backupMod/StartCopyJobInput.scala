@@ -35,8 +35,7 @@ trait StartCopyJobInput extends StObject {
 }
 object StartCopyJobInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DestinationBackupVaultArn: ARN,
     IamRoleArn: IAMRoleArn,
     RecoveryPointArn: ARN,
@@ -46,31 +45,22 @@ object StartCopyJobInput {
     __obj.asInstanceOf[StartCopyJobInput]
   }
   
-  @scala.inline
-  implicit class StartCopyJobInputMutableBuilder[Self <: StartCopyJobInput] (val x: Self) extends AnyVal {
+  extension [Self <: StartCopyJobInput](x: Self) {
     
-    @scala.inline
-    def setDestinationBackupVaultArn(value: ARN): Self = StObject.set(x, "DestinationBackupVaultArn", value.asInstanceOf[js.Any])
+    inline def setDestinationBackupVaultArn(value: ARN): Self = StObject.set(x, "DestinationBackupVaultArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleArn(value: IAMRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
+    inline def setIamRoleArn(value: IAMRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotencyToken(value: String): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
+    inline def setIdempotencyToken(value: String): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotencyTokenUndefined: Self = StObject.set(x, "IdempotencyToken", js.undefined)
+    inline def setIdempotencyTokenUndefined: Self = StObject.set(x, "IdempotencyToken", js.undefined)
     
-    @scala.inline
-    def setLifecycle(value: Lifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
+    inline def setLifecycle(value: Lifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
+    inline def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
     
-    @scala.inline
-    def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
+    inline def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "SourceBackupVaultName", value.asInstanceOf[js.Any])
+    inline def setSourceBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "SourceBackupVaultName", value.asInstanceOf[js.Any])
   }
 }

@@ -44,53 +44,38 @@ object pickerItemTypesMod {
   }
   object IPickerItemProps {
     
-    @scala.inline
-    def apply[T](index: Double, item: T): IPickerItemProps[T] = {
+    inline def apply[T](index: Double, item: T): IPickerItemProps[T] = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPickerItemProps[T]]
     }
     
-    @scala.inline
-    implicit class IPickerItemPropsMutableBuilder[Self <: IPickerItemProps[?], T] (val x: Self & IPickerItemProps[T]) extends AnyVal {
+    extension [Self <: IPickerItemProps[?], T](x: Self & IPickerItemProps[T]) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IPickerItem]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IPickerItem]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IPickerItem | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IPickerItem | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setOnItemChange(value: (/* item */ T, /* index */ Double) => Unit): Self = StObject.set(x, "onItemChange", js.Any.fromFunction2(value))
+      inline def setOnItemChange(value: (/* item */ T, /* index */ Double) => Unit): Self = StObject.set(x, "onItemChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnItemChangeUndefined: Self = StObject.set(x, "onItemChange", js.undefined)
+      inline def setOnItemChangeUndefined: Self = StObject.set(x, "onItemChange", js.undefined)
       
-      @scala.inline
-      def setOnRemoveItem(value: () => Unit): Self = StObject.set(x, "onRemoveItem", js.Any.fromFunction0(value))
+      inline def setOnRemoveItem(value: () => Unit): Self = StObject.set(x, "onRemoveItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRemoveItemUndefined: Self = StObject.set(x, "onRemoveItem", js.undefined)
+      inline def setOnRemoveItemUndefined: Self = StObject.set(x, "onRemoveItem", js.undefined)
       
-      @scala.inline
-      def setRemoveButtonAriaLabel(value: String): Self = StObject.set(x, "removeButtonAriaLabel", value.asInstanceOf[js.Any])
+      inline def setRemoveButtonAriaLabel(value: String): Self = StObject.set(x, "removeButtonAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveButtonAriaLabelUndefined: Self = StObject.set(x, "removeButtonAriaLabel", js.undefined)
+      inline def setRemoveButtonAriaLabelUndefined: Self = StObject.set(x, "removeButtonAriaLabel", js.undefined)
     }
   }
 }

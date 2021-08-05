@@ -83,7 +83,7 @@ object auroraDataApiAuroraDataApiDriverMod {
     /**
       * Attaches all required base handlers to a database connection, such as the unhandled error handler.
       */
-    var prepareDbConnection: js.Any = js.native
+    /* private */ var prepareDbConnection: js.Any = js.native
     
     /**
       * Gets list of column data types that supports UNSIGNED and ZEROFILL attributes.

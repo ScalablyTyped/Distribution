@@ -11,19 +11,15 @@ trait GoogleAudienceTargetingSetting extends StObject {
 }
 object GoogleAudienceTargetingSetting {
   
-  @scala.inline
-  def apply(): GoogleAudienceTargetingSetting = {
+  inline def apply(): GoogleAudienceTargetingSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAudienceTargetingSetting]
   }
   
-  @scala.inline
-  implicit class GoogleAudienceTargetingSettingMutableBuilder[Self <: GoogleAudienceTargetingSetting] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAudienceTargetingSetting](x: Self) {
     
-    @scala.inline
-    def setGoogleAudienceId(value: String): Self = StObject.set(x, "googleAudienceId", value.asInstanceOf[js.Any])
+    inline def setGoogleAudienceId(value: String): Self = StObject.set(x, "googleAudienceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleAudienceIdUndefined: Self = StObject.set(x, "googleAudienceId", js.undefined)
+    inline def setGoogleAudienceIdUndefined: Self = StObject.set(x, "googleAudienceId", js.undefined)
   }
 }

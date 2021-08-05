@@ -77,8 +77,7 @@ trait XBlob
 }
 object XBlob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BinaryStream: XInputStream,
     acquire: () => Unit,
     getBinaryStream: () => XInputStream,
@@ -93,25 +92,18 @@ object XBlob {
     __obj.asInstanceOf[XBlob]
   }
   
-  @scala.inline
-  implicit class XBlobMutableBuilder[Self <: XBlob] (val x: Self) extends AnyVal {
+  extension [Self <: XBlob](x: Self) {
     
-    @scala.inline
-    def setBinaryStream(value: XInputStream): Self = StObject.set(x, "BinaryStream", value.asInstanceOf[js.Any])
+    inline def setBinaryStream(value: XInputStream): Self = StObject.set(x, "BinaryStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBinaryStream(value: () => XInputStream): Self = StObject.set(x, "getBinaryStream", js.Any.fromFunction0(value))
+    inline def setGetBinaryStream(value: () => XInputStream): Self = StObject.set(x, "getBinaryStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBytes(value: (Double, Double) => SafeArray[Double]): Self = StObject.set(x, "getBytes", js.Any.fromFunction2(value))
+    inline def setGetBytes(value: (Double, Double) => SafeArray[Double]): Self = StObject.set(x, "getBytes", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+    inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPosition(value: (SeqEquiv[Double], Double) => Double): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
+    inline def setPosition(value: (SeqEquiv[Double], Double) => Double): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPositionOfBlob(value: (XBlob, Double) => Double): Self = StObject.set(x, "positionOfBlob", js.Any.fromFunction2(value))
+    inline def setPositionOfBlob(value: (XBlob, Double) => Double): Self = StObject.set(x, "positionOfBlob", js.Any.fromFunction2(value))
   }
 }

@@ -24,31 +24,23 @@ trait H extends StObject {
 }
 object H {
   
-  @scala.inline
-  def apply(): H = {
+  inline def apply(): H = {
     val __obj = js.Dynamic.literal(G = "GO", H = "OH", K = "KO", L = "LO", U = "UO", Z = "ZO")
     __obj.asInstanceOf[H]
   }
   
-  @scala.inline
-  implicit class HMutableBuilder[Self <: H] (val x: Self) extends AnyVal {
+  extension [Self <: H](x: Self) {
     
-    @scala.inline
-    def setG(value: typings.screeps.screepsStrings.GO): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
+    inline def setG(value: typings.screeps.screepsStrings.GO): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH(value: typings.screeps.screepsStrings.OH): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
+    inline def setH(value: typings.screeps.screepsStrings.OH): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setK(value: KO): Self = StObject.set(x, "K", value.asInstanceOf[js.Any])
+    inline def setK(value: KO): Self = StObject.set(x, "K", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: LO): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
+    inline def setL(value: LO): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setU(value: UO): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
+    inline def setU(value: UO): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: ZO): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
+    inline def setZ(value: ZO): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
   }
 }

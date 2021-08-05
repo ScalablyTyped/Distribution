@@ -23,25 +23,19 @@ trait CreateGatewayRequest extends StObject {
 }
 object CreateGatewayRequest {
   
-  @scala.inline
-  def apply(gatewayName: Name, gatewayPlatform: GatewayPlatform): CreateGatewayRequest = {
+  inline def apply(gatewayName: Name, gatewayPlatform: GatewayPlatform): CreateGatewayRequest = {
     val __obj = js.Dynamic.literal(gatewayName = gatewayName.asInstanceOf[js.Any], gatewayPlatform = gatewayPlatform.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGatewayRequest]
   }
   
-  @scala.inline
-  implicit class CreateGatewayRequestMutableBuilder[Self <: CreateGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setGatewayName(value: Name): Self = StObject.set(x, "gatewayName", value.asInstanceOf[js.Any])
+    inline def setGatewayName(value: Name): Self = StObject.set(x, "gatewayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayPlatform(value: GatewayPlatform): Self = StObject.set(x, "gatewayPlatform", value.asInstanceOf[js.Any])
+    inline def setGatewayPlatform(value: GatewayPlatform): Self = StObject.set(x, "gatewayPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

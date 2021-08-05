@@ -12,8 +12,7 @@ trait SubConversation
 }
 object SubConversation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     conversationNodes: js.Array[ConversationNode],
@@ -29,13 +28,10 @@ object SubConversation {
     __obj.asInstanceOf[SubConversation]
   }
   
-  @scala.inline
-  implicit class SubConversationMutableBuilder[Self <: SubConversation] (val x: Self) extends AnyVal {
+  extension [Self <: SubConversation](x: Self) {
     
-    @scala.inline
-    def setConversationNodes(value: js.Array[ConversationNode]): Self = StObject.set(x, "conversationNodes", value.asInstanceOf[js.Any])
+    inline def setConversationNodes(value: js.Array[ConversationNode]): Self = StObject.set(x, "conversationNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationNodesVarargs(value: ConversationNode*): Self = StObject.set(x, "conversationNodes", js.Array(value :_*))
+    inline def setConversationNodesVarargs(value: ConversationNode*): Self = StObject.set(x, "conversationNodes", js.Array(value :_*))
   }
 }

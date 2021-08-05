@@ -14,25 +14,19 @@ trait IosAppConfig extends StObject {
 }
 object IosAppConfig {
   
-  @scala.inline
-  def apply(): IosAppConfig = {
+  inline def apply(): IosAppConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosAppConfig]
   }
   
-  @scala.inline
-  implicit class IosAppConfigMutableBuilder[Self <: IosAppConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IosAppConfig](x: Self) {
     
-    @scala.inline
-    def setConfigFileContents(value: String): Self = StObject.set(x, "configFileContents", value.asInstanceOf[js.Any])
+    inline def setConfigFileContents(value: String): Self = StObject.set(x, "configFileContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigFileContentsUndefined: Self = StObject.set(x, "configFileContents", js.undefined)
+    inline def setConfigFileContentsUndefined: Self = StObject.set(x, "configFileContents", js.undefined)
     
-    @scala.inline
-    def setConfigFilename(value: String): Self = StObject.set(x, "configFilename", value.asInstanceOf[js.Any])
+    inline def setConfigFilename(value: String): Self = StObject.set(x, "configFilename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigFilenameUndefined: Self = StObject.set(x, "configFilename", js.undefined)
+    inline def setConfigFilenameUndefined: Self = StObject.set(x, "configFilename", js.undefined)
   }
 }

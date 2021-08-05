@@ -10,19 +10,15 @@ trait RevokeCacheSecurityGroupIngressResult extends StObject {
 }
 object RevokeCacheSecurityGroupIngressResult {
   
-  @scala.inline
-  def apply(): RevokeCacheSecurityGroupIngressResult = {
+  inline def apply(): RevokeCacheSecurityGroupIngressResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevokeCacheSecurityGroupIngressResult]
   }
   
-  @scala.inline
-  implicit class RevokeCacheSecurityGroupIngressResultMutableBuilder[Self <: RevokeCacheSecurityGroupIngressResult] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeCacheSecurityGroupIngressResult](x: Self) {
     
-    @scala.inline
-    def setCacheSecurityGroup(value: CacheSecurityGroup): Self = StObject.set(x, "CacheSecurityGroup", value.asInstanceOf[js.Any])
+    inline def setCacheSecurityGroup(value: CacheSecurityGroup): Self = StObject.set(x, "CacheSecurityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheSecurityGroupUndefined: Self = StObject.set(x, "CacheSecurityGroup", js.undefined)
+    inline def setCacheSecurityGroupUndefined: Self = StObject.set(x, "CacheSecurityGroup", js.undefined)
   }
 }

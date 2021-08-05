@@ -13,19 +13,15 @@ trait GetFacetResponse extends StObject {
 }
 object GetFacetResponse {
   
-  @scala.inline
-  def apply(): GetFacetResponse = {
+  inline def apply(): GetFacetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFacetResponse]
   }
   
-  @scala.inline
-  implicit class GetFacetResponseMutableBuilder[Self <: GetFacetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFacetResponse](x: Self) {
     
-    @scala.inline
-    def setFacet(value: Facet): Self = StObject.set(x, "Facet", value.asInstanceOf[js.Any])
+    inline def setFacet(value: Facet): Self = StObject.set(x, "Facet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetUndefined: Self = StObject.set(x, "Facet", js.undefined)
+    inline def setFacetUndefined: Self = StObject.set(x, "Facet", js.undefined)
   }
 }

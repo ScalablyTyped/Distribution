@@ -15,22 +15,17 @@ trait VirtualElement extends StObject {
 }
 object VirtualElement {
   
-  @scala.inline
-  def apply(getBoundingClientRect: () => ClientRect | DOMRect): VirtualElement = {
+  inline def apply(getBoundingClientRect: () => ClientRect | DOMRect): VirtualElement = {
     val __obj = js.Dynamic.literal(getBoundingClientRect = js.Any.fromFunction0(getBoundingClientRect))
     __obj.asInstanceOf[VirtualElement]
   }
   
-  @scala.inline
-  implicit class VirtualElementMutableBuilder[Self <: VirtualElement] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualElement](x: Self) {
     
-    @scala.inline
-    def setContextElement(value: Element): Self = StObject.set(x, "contextElement", value.asInstanceOf[js.Any])
+    inline def setContextElement(value: Element): Self = StObject.set(x, "contextElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextElementUndefined: Self = StObject.set(x, "contextElement", js.undefined)
+    inline def setContextElementUndefined: Self = StObject.set(x, "contextElement", js.undefined)
     
-    @scala.inline
-    def setGetBoundingClientRect(value: () => ClientRect | DOMRect): Self = StObject.set(x, "getBoundingClientRect", js.Any.fromFunction0(value))
+    inline def setGetBoundingClientRect(value: () => ClientRect | DOMRect): Self = StObject.set(x, "getBoundingClientRect", js.Any.fromFunction0(value))
   }
 }

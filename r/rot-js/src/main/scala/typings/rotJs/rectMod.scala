@@ -22,8 +22,7 @@ object rectMod {
     @JSImport("rot-js/lib/display/rect", "default.cache")
     @js.native
     def cache: Boolean = js.native
-    @scala.inline
-    def cache_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cache")(x.asInstanceOf[js.Any])
+    inline def cache_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cache")(x.asInstanceOf[js.Any])
   }
   
   @js.native

@@ -15,19 +15,15 @@ trait TypeofPanelBar extends StObject {
 }
 object TypeofPanelBar {
   
-  @scala.inline
-  def apply(extend: js.Object => PanelBar, fn: PanelBar): TypeofPanelBar = {
+  inline def apply(extend: js.Object => PanelBar, fn: PanelBar): TypeofPanelBar = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPanelBar]
   }
   
-  @scala.inline
-  implicit class TypeofPanelBarMutableBuilder[Self <: TypeofPanelBar] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPanelBar](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => PanelBar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => PanelBar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: PanelBar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: PanelBar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

@@ -108,7 +108,7 @@ trait PivotField extends StObject {
   
   var EnableMultiplePageItems: Boolean = js.native
   
-  @JSName("Excel.PivotField_typekey")
+  /* private */ @JSName("Excel.PivotField_typekey")
   var ExcelDotPivotField_typekey: PivotField = js.native
   
   var Formula: String = js.native

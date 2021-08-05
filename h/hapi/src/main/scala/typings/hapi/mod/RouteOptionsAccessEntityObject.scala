@@ -12,16 +12,13 @@ trait RouteOptionsAccessEntityObject
 }
 object RouteOptionsAccessEntityObject {
   
-  @scala.inline
-  def apply(entity: RouteOptionsAccessEntity): RouteOptionsAccessEntityObject = {
+  inline def apply(entity: RouteOptionsAccessEntity): RouteOptionsAccessEntityObject = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptionsAccessEntityObject]
   }
   
-  @scala.inline
-  implicit class RouteOptionsAccessEntityObjectMutableBuilder[Self <: RouteOptionsAccessEntityObject] (val x: Self) extends AnyVal {
+  extension [Self <: RouteOptionsAccessEntityObject](x: Self) {
     
-    @scala.inline
-    def setEntity(value: RouteOptionsAccessEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: RouteOptionsAccessEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
   }
 }

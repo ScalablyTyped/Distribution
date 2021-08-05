@@ -75,82 +75,57 @@ trait DocumentHtmlDefinition extends StObject {
 }
 object DocumentHtmlDefinition {
   
-  @scala.inline
-  def apply(): DocumentHtmlDefinition = {
+  inline def apply(): DocumentHtmlDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentHtmlDefinition]
   }
   
-  @scala.inline
-  implicit class DocumentHtmlDefinitionMutableBuilder[Self <: DocumentHtmlDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentHtmlDefinition](x: Self) {
     
-    @scala.inline
-    def setDisplayAnchorPrefix(value: String): Self = StObject.set(x, "displayAnchorPrefix", value.asInstanceOf[js.Any])
+    inline def setDisplayAnchorPrefix(value: String): Self = StObject.set(x, "displayAnchorPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayAnchorPrefixUndefined: Self = StObject.set(x, "displayAnchorPrefix", js.undefined)
+    inline def setDisplayAnchorPrefixUndefined: Self = StObject.set(x, "displayAnchorPrefix", js.undefined)
     
-    @scala.inline
-    def setDisplayAnchors(value: js.Array[DocumentHtmlDisplayAnchor]): Self = StObject.set(x, "displayAnchors", value.asInstanceOf[js.Any])
+    inline def setDisplayAnchors(value: js.Array[DocumentHtmlDisplayAnchor]): Self = StObject.set(x, "displayAnchors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayAnchorsUndefined: Self = StObject.set(x, "displayAnchors", js.undefined)
+    inline def setDisplayAnchorsUndefined: Self = StObject.set(x, "displayAnchors", js.undefined)
     
-    @scala.inline
-    def setDisplayAnchorsVarargs(value: DocumentHtmlDisplayAnchor*): Self = StObject.set(x, "displayAnchors", js.Array(value :_*))
+    inline def setDisplayAnchorsVarargs(value: DocumentHtmlDisplayAnchor*): Self = StObject.set(x, "displayAnchors", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayOrder(value: String): Self = StObject.set(x, "displayOrder", value.asInstanceOf[js.Any])
+    inline def setDisplayOrder(value: String): Self = StObject.set(x, "displayOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayOrderUndefined: Self = StObject.set(x, "displayOrder", js.undefined)
+    inline def setDisplayOrderUndefined: Self = StObject.set(x, "displayOrder", js.undefined)
     
-    @scala.inline
-    def setDisplayPageNumber(value: String): Self = StObject.set(x, "displayPageNumber", value.asInstanceOf[js.Any])
+    inline def setDisplayPageNumber(value: String): Self = StObject.set(x, "displayPageNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayPageNumberUndefined: Self = StObject.set(x, "displayPageNumber", js.undefined)
+    inline def setDisplayPageNumberUndefined: Self = StObject.set(x, "displayPageNumber", js.undefined)
     
-    @scala.inline
-    def setDocumentGuid(value: String): Self = StObject.set(x, "documentGuid", value.asInstanceOf[js.Any])
+    inline def setDocumentGuid(value: String): Self = StObject.set(x, "documentGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentGuidUndefined: Self = StObject.set(x, "documentGuid", js.undefined)
+    inline def setDocumentGuidUndefined: Self = StObject.set(x, "documentGuid", js.undefined)
     
-    @scala.inline
-    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+    inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
-    @scala.inline
-    def setHeaderLabel(value: String): Self = StObject.set(x, "headerLabel", value.asInstanceOf[js.Any])
+    inline def setHeaderLabel(value: String): Self = StObject.set(x, "headerLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderLabelUndefined: Self = StObject.set(x, "headerLabel", js.undefined)
+    inline def setHeaderLabelUndefined: Self = StObject.set(x, "headerLabel", js.undefined)
     
-    @scala.inline
-    def setMaxScreenWidth(value: String): Self = StObject.set(x, "maxScreenWidth", value.asInstanceOf[js.Any])
+    inline def setMaxScreenWidth(value: String): Self = StObject.set(x, "maxScreenWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScreenWidthUndefined: Self = StObject.set(x, "maxScreenWidth", js.undefined)
+    inline def setMaxScreenWidthUndefined: Self = StObject.set(x, "maxScreenWidth", js.undefined)
     
-    @scala.inline
-    def setRemoveEmptyTags(value: String): Self = StObject.set(x, "removeEmptyTags", value.asInstanceOf[js.Any])
+    inline def setRemoveEmptyTags(value: String): Self = StObject.set(x, "removeEmptyTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEmptyTagsUndefined: Self = StObject.set(x, "removeEmptyTags", js.undefined)
+    inline def setRemoveEmptyTagsUndefined: Self = StObject.set(x, "removeEmptyTags", js.undefined)
     
-    @scala.inline
-    def setShowMobileOptimizedToggle(value: String): Self = StObject.set(x, "showMobileOptimizedToggle", value.asInstanceOf[js.Any])
+    inline def setShowMobileOptimizedToggle(value: String): Self = StObject.set(x, "showMobileOptimizedToggle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMobileOptimizedToggleUndefined: Self = StObject.set(x, "showMobileOptimizedToggle", js.undefined)
+    inline def setShowMobileOptimizedToggleUndefined: Self = StObject.set(x, "showMobileOptimizedToggle", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

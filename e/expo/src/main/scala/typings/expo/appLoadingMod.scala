@@ -16,8 +16,7 @@ object appLoadingMod {
   @js.native
   class default () extends AppLoading
   
-  @scala.inline
-  def getAppLoadingLifecycleEmitter(): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppLoadingLifecycleEmitter")().asInstanceOf[EventEmitter]
+  inline def getAppLoadingLifecycleEmitter(): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppLoadingLifecycleEmitter")().asInstanceOf[EventEmitter]
   
   @js.native
   trait AppLoading
@@ -41,14 +40,12 @@ object appLoadingMod {
   trait Props extends StObject
   object Props {
     
-    @scala.inline
-    def AutoHideSplash(): typings.expo.anon.AutoHideSplash = {
+    inline def AutoHideSplash(): typings.expo.anon.AutoHideSplash = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.expo.anon.AutoHideSplash]
     }
     
-    @scala.inline
-    def OnError(onError: Null, onFinish: Null, startAsync: Null): typings.expo.anon.OnError = {
+    inline def OnError(onError: Null, onFinish: Null, startAsync: Null): typings.expo.anon.OnError = {
       val __obj = js.Dynamic.literal(onError = onError.asInstanceOf[js.Any], onFinish = onFinish.asInstanceOf[js.Any], startAsync = startAsync.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.expo.anon.OnError]
     }

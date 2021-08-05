@@ -12,7 +12,7 @@ object engineShaderMod {
   @js.native
   abstract class EngineShader () extends Shader {
     
-    @JSName("sourceBuilder")
+    /* protected */ @JSName("sourceBuilder")
     var sourceBuilder_EngineShader: EngineShaderSourceBuilder = js.native
   }
 }

@@ -13,8 +13,7 @@ trait CustomViewEvent
 }
 object CustomViewEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCustomViewAsync: () => js.Promise[CustomView],
     getEventName: () => TableauEventName,
     getViz: () => Viz
@@ -23,10 +22,8 @@ object CustomViewEvent {
     __obj.asInstanceOf[CustomViewEvent]
   }
   
-  @scala.inline
-  implicit class CustomViewEventMutableBuilder[Self <: CustomViewEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CustomViewEvent](x: Self) {
     
-    @scala.inline
-    def setGetCustomViewAsync(value: () => js.Promise[CustomView]): Self = StObject.set(x, "getCustomViewAsync", js.Any.fromFunction0(value))
+    inline def setGetCustomViewAsync(value: () => js.Promise[CustomView]): Self = StObject.set(x, "getCustomViewAsync", js.Any.fromFunction0(value))
   }
 }

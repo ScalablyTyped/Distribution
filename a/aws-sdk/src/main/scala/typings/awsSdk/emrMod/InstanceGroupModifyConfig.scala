@@ -33,46 +33,33 @@ trait InstanceGroupModifyConfig extends StObject {
 }
 object InstanceGroupModifyConfig {
   
-  @scala.inline
-  def apply(InstanceGroupId: XmlStringMaxLen256): InstanceGroupModifyConfig = {
+  inline def apply(InstanceGroupId: XmlStringMaxLen256): InstanceGroupModifyConfig = {
     val __obj = js.Dynamic.literal(InstanceGroupId = InstanceGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroupModifyConfig]
   }
   
-  @scala.inline
-  implicit class InstanceGroupModifyConfigMutableBuilder[Self <: InstanceGroupModifyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupModifyConfig](x: Self) {
     
-    @scala.inline
-    def setConfigurations(value: ConfigurationList): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
+    inline def setConfigurations(value: ConfigurationList): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
+    inline def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
-    @scala.inline
-    def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
     
-    @scala.inline
-    def setEC2InstanceIdsToTerminate(value: EC2InstanceIdsToTerminateList): Self = StObject.set(x, "EC2InstanceIdsToTerminate", value.asInstanceOf[js.Any])
+    inline def setEC2InstanceIdsToTerminate(value: EC2InstanceIdsToTerminateList): Self = StObject.set(x, "EC2InstanceIdsToTerminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2InstanceIdsToTerminateUndefined: Self = StObject.set(x, "EC2InstanceIdsToTerminate", js.undefined)
+    inline def setEC2InstanceIdsToTerminateUndefined: Self = StObject.set(x, "EC2InstanceIdsToTerminate", js.undefined)
     
-    @scala.inline
-    def setEC2InstanceIdsToTerminateVarargs(value: InstanceId*): Self = StObject.set(x, "EC2InstanceIdsToTerminate", js.Array(value :_*))
+    inline def setEC2InstanceIdsToTerminateVarargs(value: InstanceId*): Self = StObject.set(x, "EC2InstanceIdsToTerminate", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
+    inline def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
     
-    @scala.inline
-    def setInstanceGroupId(value: XmlStringMaxLen256): Self = StObject.set(x, "InstanceGroupId", value.asInstanceOf[js.Any])
+    inline def setInstanceGroupId(value: XmlStringMaxLen256): Self = StObject.set(x, "InstanceGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrinkPolicy(value: ShrinkPolicy): Self = StObject.set(x, "ShrinkPolicy", value.asInstanceOf[js.Any])
+    inline def setShrinkPolicy(value: ShrinkPolicy): Self = StObject.set(x, "ShrinkPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrinkPolicyUndefined: Self = StObject.set(x, "ShrinkPolicy", js.undefined)
+    inline def setShrinkPolicyUndefined: Self = StObject.set(x, "ShrinkPolicy", js.undefined)
   }
 }

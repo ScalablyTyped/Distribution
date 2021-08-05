@@ -14,8 +14,7 @@ trait ContainerModule extends StObject {
 }
 object ContainerModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: Double,
     registry: (/* bind */ Bind, /* unbind */ Unbind, /* isBound */ IsBound, /* rebind */ Rebind) => Unit
   ): ContainerModule = {
@@ -23,13 +22,10 @@ object ContainerModule {
     __obj.asInstanceOf[ContainerModule]
   }
   
-  @scala.inline
-  implicit class ContainerModuleMutableBuilder[Self <: ContainerModule] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerModule](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistry(value: (/* bind */ Bind, /* unbind */ Unbind, /* isBound */ IsBound, /* rebind */ Rebind) => Unit): Self = StObject.set(x, "registry", js.Any.fromFunction4(value))
+    inline def setRegistry(value: (/* bind */ Bind, /* unbind */ Unbind, /* isBound */ IsBound, /* rebind */ Rebind) => Unit): Self = StObject.set(x, "registry", js.Any.fromFunction4(value))
   }
 }

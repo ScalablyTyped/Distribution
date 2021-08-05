@@ -16,19 +16,15 @@ trait IPointMatchOptions extends StObject {
 }
 object IPointMatchOptions {
   
-  @scala.inline
-  def apply(): IPointMatchOptions = {
+  inline def apply(): IPointMatchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPointMatchOptions]
   }
   
-  @scala.inline
-  implicit class IPointMatchOptionsMutableBuilder[Self <: IPointMatchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPointMatchOptions](x: Self) {
     
-    @scala.inline
-    def setPointMatchingDistance(value: Double): Self = StObject.set(x, "pointMatchingDistance", value.asInstanceOf[js.Any])
+    inline def setPointMatchingDistance(value: Double): Self = StObject.set(x, "pointMatchingDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointMatchingDistanceUndefined: Self = StObject.set(x, "pointMatchingDistance", js.undefined)
+    inline def setPointMatchingDistanceUndefined: Self = StObject.set(x, "pointMatchingDistance", js.undefined)
   }
 }

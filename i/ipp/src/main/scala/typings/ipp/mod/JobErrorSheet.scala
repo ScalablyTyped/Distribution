@@ -20,37 +20,27 @@ trait JobErrorSheet extends StObject {
 }
 object JobErrorSheet {
   
-  @scala.inline
-  def apply(): JobErrorSheet = {
+  inline def apply(): JobErrorSheet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobErrorSheet]
   }
   
-  @scala.inline
-  implicit class JobErrorSheetMutableBuilder[Self <: JobErrorSheet] (val x: Self) extends AnyVal {
+  extension [Self <: JobErrorSheet](x: Self) {
     
-    @scala.inline
-    def `setJob-error-sheet-type`(value: none | standard): Self = StObject.set(x, "job-error-sheet-type", value.asInstanceOf[js.Any])
+    inline def `setJob-error-sheet-type`(value: none | standard): Self = StObject.set(x, "job-error-sheet-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJob-error-sheet-typeUndefined`: Self = StObject.set(x, "job-error-sheet-type", js.undefined)
+    inline def `setJob-error-sheet-typeUndefined`: Self = StObject.set(x, "job-error-sheet-type", js.undefined)
     
-    @scala.inline
-    def `setJob-error-sheet-when`(value: always | `on-error`): Self = StObject.set(x, "job-error-sheet-when", value.asInstanceOf[js.Any])
+    inline def `setJob-error-sheet-when`(value: always | `on-error`): Self = StObject.set(x, "job-error-sheet-when", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJob-error-sheet-whenUndefined`: Self = StObject.set(x, "job-error-sheet-when", js.undefined)
+    inline def `setJob-error-sheet-whenUndefined`: Self = StObject.set(x, "job-error-sheet-when", js.undefined)
     
-    @scala.inline
-    def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMedia-col`(value: MediaInterface): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
+    inline def `setMedia-col`(value: MediaInterface): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
+    inline def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait GoogleInnerError extends StObject {
 }
 object GoogleInnerError {
   
-  @scala.inline
-  def apply(): GoogleInnerError = {
+  inline def apply(): GoogleInnerError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleInnerError]
   }
   
-  @scala.inline
-  implicit class GoogleInnerErrorMutableBuilder[Self <: GoogleInnerError] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleInnerError](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

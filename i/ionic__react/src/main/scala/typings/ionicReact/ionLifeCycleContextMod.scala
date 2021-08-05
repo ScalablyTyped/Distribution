@@ -82,8 +82,7 @@ object ionLifeCycleContextMod {
   }
   object IonLifeCycleContextInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ionViewDidEnter: () => Unit,
       ionViewDidLeave: () => Unit,
       ionViewWillEnter: () => Unit,
@@ -97,32 +96,23 @@ object ionLifeCycleContextMod {
       __obj.asInstanceOf[IonLifeCycleContextInterface]
     }
     
-    @scala.inline
-    implicit class IonLifeCycleContextInterfaceMutableBuilder[Self <: IonLifeCycleContextInterface] (val x: Self) extends AnyVal {
+    extension [Self <: IonLifeCycleContextInterface](x: Self) {
       
-      @scala.inline
-      def setIonViewDidEnter(value: () => Unit): Self = StObject.set(x, "ionViewDidEnter", js.Any.fromFunction0(value))
+      inline def setIonViewDidEnter(value: () => Unit): Self = StObject.set(x, "ionViewDidEnter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIonViewDidLeave(value: () => Unit): Self = StObject.set(x, "ionViewDidLeave", js.Any.fromFunction0(value))
+      inline def setIonViewDidLeave(value: () => Unit): Self = StObject.set(x, "ionViewDidLeave", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIonViewWillEnter(value: () => Unit): Self = StObject.set(x, "ionViewWillEnter", js.Any.fromFunction0(value))
+      inline def setIonViewWillEnter(value: () => Unit): Self = StObject.set(x, "ionViewWillEnter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIonViewWillLeave(value: () => Unit): Self = StObject.set(x, "ionViewWillLeave", js.Any.fromFunction0(value))
+      inline def setIonViewWillLeave(value: () => Unit): Self = StObject.set(x, "ionViewWillLeave", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnIonViewDidEnter(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onIonViewDidEnter", js.Any.fromFunction1(value))
+      inline def setOnIonViewDidEnter(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onIonViewDidEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnIonViewDidLeave(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onIonViewDidLeave", js.Any.fromFunction1(value))
+      inline def setOnIonViewDidLeave(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onIonViewDidLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnIonViewWillEnter(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onIonViewWillEnter", js.Any.fromFunction1(value))
+      inline def setOnIonViewWillEnter(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onIonViewWillEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnIonViewWillLeave(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onIonViewWillLeave", js.Any.fromFunction1(value))
+      inline def setOnIonViewWillLeave(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onIonViewWillLeave", js.Any.fromFunction1(value))
     }
   }
   

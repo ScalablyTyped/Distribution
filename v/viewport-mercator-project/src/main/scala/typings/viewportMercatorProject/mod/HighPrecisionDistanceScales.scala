@@ -14,8 +14,7 @@ trait HighPrecisionDistanceScales
 }
 object HighPrecisionDistanceScales {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     degreesPerPixel: js.Tuple3[Double, Double, Double],
     metersPerPixel: js.Tuple3[Double, Double, Double],
     pixelsPerDegree: js.Tuple3[Double, Double, Double],
@@ -27,13 +26,10 @@ object HighPrecisionDistanceScales {
     __obj.asInstanceOf[HighPrecisionDistanceScales]
   }
   
-  @scala.inline
-  implicit class HighPrecisionDistanceScalesMutableBuilder[Self <: HighPrecisionDistanceScales] (val x: Self) extends AnyVal {
+  extension [Self <: HighPrecisionDistanceScales](x: Self) {
     
-    @scala.inline
-    def setPixelsPerDegree2(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "pixelsPerDegree2", value.asInstanceOf[js.Any])
+    inline def setPixelsPerDegree2(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "pixelsPerDegree2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelsPerMeter2(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "pixelsPerMeter2", value.asInstanceOf[js.Any])
+    inline def setPixelsPerMeter2(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "pixelsPerMeter2", value.asInstanceOf[js.Any])
   }
 }

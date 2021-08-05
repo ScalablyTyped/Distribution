@@ -10,8 +10,7 @@ trait DescribeTimeToLiveOutput
      with typings.awsSdkClientDynamodbNode.typesDescribeTimeToLiveOutputMod.DescribeTimeToLiveOutput
 object DescribeTimeToLiveOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): DescribeTimeToLiveOutput = {
+  inline def apply($metadata: ResponseMetadata): DescribeTimeToLiveOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTimeToLiveOutput]
   }

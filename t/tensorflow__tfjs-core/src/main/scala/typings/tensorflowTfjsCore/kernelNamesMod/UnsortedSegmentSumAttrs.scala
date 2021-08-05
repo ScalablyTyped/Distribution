@@ -10,16 +10,13 @@ trait UnsortedSegmentSumAttrs extends StObject {
 }
 object UnsortedSegmentSumAttrs {
   
-  @scala.inline
-  def apply(numSegments: Double): UnsortedSegmentSumAttrs = {
+  inline def apply(numSegments: Double): UnsortedSegmentSumAttrs = {
     val __obj = js.Dynamic.literal(numSegments = numSegments.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsortedSegmentSumAttrs]
   }
   
-  @scala.inline
-  implicit class UnsortedSegmentSumAttrsMutableBuilder[Self <: UnsortedSegmentSumAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: UnsortedSegmentSumAttrs](x: Self) {
     
-    @scala.inline
-    def setNumSegments(value: Double): Self = StObject.set(x, "numSegments", value.asInstanceOf[js.Any])
+    inline def setNumSegments(value: Double): Self = StObject.set(x, "numSegments", value.asInstanceOf[js.Any])
   }
 }

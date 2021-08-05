@@ -24,31 +24,23 @@ trait SchemaSkippedDetail extends StObject {
 }
 object SchemaSkippedDetail {
   
-  @scala.inline
-  def apply(): SchemaSkippedDetail = {
+  inline def apply(): SchemaSkippedDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSkippedDetail]
   }
   
-  @scala.inline
-  implicit class SchemaSkippedDetailMutableBuilder[Self <: SchemaSkippedDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSkippedDetail](x: Self) {
     
-    @scala.inline
-    def setIncompatibleAppVersion(value: Boolean): Self = StObject.set(x, "incompatibleAppVersion", value.asInstanceOf[js.Any])
+    inline def setIncompatibleAppVersion(value: Boolean): Self = StObject.set(x, "incompatibleAppVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncompatibleAppVersionUndefined: Self = StObject.set(x, "incompatibleAppVersion", js.undefined)
+    inline def setIncompatibleAppVersionUndefined: Self = StObject.set(x, "incompatibleAppVersion", js.undefined)
     
-    @scala.inline
-    def setIncompatibleArchitecture(value: Boolean): Self = StObject.set(x, "incompatibleArchitecture", value.asInstanceOf[js.Any])
+    inline def setIncompatibleArchitecture(value: Boolean): Self = StObject.set(x, "incompatibleArchitecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncompatibleArchitectureUndefined: Self = StObject.set(x, "incompatibleArchitecture", js.undefined)
+    inline def setIncompatibleArchitectureUndefined: Self = StObject.set(x, "incompatibleArchitecture", js.undefined)
     
-    @scala.inline
-    def setIncompatibleDevice(value: Boolean): Self = StObject.set(x, "incompatibleDevice", value.asInstanceOf[js.Any])
+    inline def setIncompatibleDevice(value: Boolean): Self = StObject.set(x, "incompatibleDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncompatibleDeviceUndefined: Self = StObject.set(x, "incompatibleDevice", js.undefined)
+    inline def setIncompatibleDeviceUndefined: Self = StObject.set(x, "incompatibleDevice", js.undefined)
   }
 }

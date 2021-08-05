@@ -33,43 +33,31 @@ trait DescribeModelVersionsRequest extends StObject {
 }
 object DescribeModelVersionsRequest {
   
-  @scala.inline
-  def apply(): DescribeModelVersionsRequest = {
+  inline def apply(): DescribeModelVersionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeModelVersionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeModelVersionsRequestMutableBuilder[Self <: DescribeModelVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeModelVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: modelsMaxPageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: modelsMaxPageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setModelId(value: modelIdentifier): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
+    inline def setModelId(value: modelIdentifier): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelIdUndefined: Self = StObject.set(x, "modelId", js.undefined)
+    inline def setModelIdUndefined: Self = StObject.set(x, "modelId", js.undefined)
     
-    @scala.inline
-    def setModelType(value: ModelTypeEnum): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
+    inline def setModelType(value: ModelTypeEnum): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelTypeUndefined: Self = StObject.set(x, "modelType", js.undefined)
+    inline def setModelTypeUndefined: Self = StObject.set(x, "modelType", js.undefined)
     
-    @scala.inline
-    def setModelVersionNumber(value: floatVersionString): Self = StObject.set(x, "modelVersionNumber", value.asInstanceOf[js.Any])
+    inline def setModelVersionNumber(value: floatVersionString): Self = StObject.set(x, "modelVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelVersionNumberUndefined: Self = StObject.set(x, "modelVersionNumber", js.undefined)
+    inline def setModelVersionNumberUndefined: Self = StObject.set(x, "modelVersionNumber", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

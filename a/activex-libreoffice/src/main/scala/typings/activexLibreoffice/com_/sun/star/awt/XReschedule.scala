@@ -20,16 +20,13 @@ trait XReschedule
 }
 object XReschedule {
   
-  @scala.inline
-  def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit, reschedule: () => Unit): XReschedule = {
+  inline def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit, reschedule: () => Unit): XReschedule = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reschedule = js.Any.fromFunction0(reschedule))
     __obj.asInstanceOf[XReschedule]
   }
   
-  @scala.inline
-  implicit class XRescheduleMutableBuilder[Self <: XReschedule] (val x: Self) extends AnyVal {
+  extension [Self <: XReschedule](x: Self) {
     
-    @scala.inline
-    def setReschedule(value: () => Unit): Self = StObject.set(x, "reschedule", js.Any.fromFunction0(value))
+    inline def setReschedule(value: () => Unit): Self = StObject.set(x, "reschedule", js.Any.fromFunction0(value))
   }
 }

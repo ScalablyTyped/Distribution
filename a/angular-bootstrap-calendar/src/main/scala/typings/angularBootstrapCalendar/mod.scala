@@ -38,8 +38,7 @@ object mod {
       }
       object ICalendarCell {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           badgeTotal: Double,
           date: Moment,
           events: js.Array[IEvent],
@@ -54,38 +53,27 @@ object mod {
           __obj.asInstanceOf[ICalendarCell]
         }
         
-        @scala.inline
-        implicit class ICalendarCellMutableBuilder[Self <: ICalendarCell] (val x: Self) extends AnyVal {
+        extension [Self <: ICalendarCell](x: Self) {
           
-          @scala.inline
-          def setBadgeTotal(value: Double): Self = StObject.set(x, "badgeTotal", value.asInstanceOf[js.Any])
+          inline def setBadgeTotal(value: Double): Self = StObject.set(x, "badgeTotal", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDate(value: Moment): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+          inline def setDate(value: Moment): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEvents(value: js.Array[IEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+          inline def setEvents(value: js.Array[IEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEventsVarargs(value: IEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+          inline def setEventsVarargs(value: IEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
           
-          @scala.inline
-          def setInMonth(value: Boolean): Self = StObject.set(x, "inMonth", value.asInstanceOf[js.Any])
+          inline def setInMonth(value: Boolean): Self = StObject.set(x, "inMonth", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIsFuture(value: Boolean): Self = StObject.set(x, "isFuture", value.asInstanceOf[js.Any])
+          inline def setIsFuture(value: Boolean): Self = StObject.set(x, "isFuture", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIsPast(value: Boolean): Self = StObject.set(x, "isPast", value.asInstanceOf[js.Any])
+          inline def setIsPast(value: Boolean): Self = StObject.set(x, "isPast", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIsToday(value: Boolean): Self = StObject.set(x, "isToday", value.asInstanceOf[js.Any])
+          inline def setIsToday(value: Boolean): Self = StObject.set(x, "isToday", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIsWeekend(value: Boolean): Self = StObject.set(x, "isWeekend", value.asInstanceOf[js.Any])
+          inline def setIsWeekend(value: Boolean): Self = StObject.set(x, "isWeekend", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabel(value: Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+          inline def setLabel(value: Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         }
       }
       
@@ -111,8 +99,7 @@ object mod {
       }
       object ICalendarConfig {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           allDateFormats: Angular,
           dateFormats: IDateFormats,
           dateFormatter: String,
@@ -127,35 +114,25 @@ object mod {
           __obj.asInstanceOf[ICalendarConfig]
         }
         
-        @scala.inline
-        implicit class ICalendarConfigMutableBuilder[Self <: ICalendarConfig] (val x: Self) extends AnyVal {
+        extension [Self <: ICalendarConfig](x: Self) {
           
-          @scala.inline
-          def setAllDateFormats(value: Angular): Self = StObject.set(x, "allDateFormats", value.asInstanceOf[js.Any])
+          inline def setAllDateFormats(value: Angular): Self = StObject.set(x, "allDateFormats", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDateFormats(value: IDateFormats): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
+          inline def setDateFormats(value: IDateFormats): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDateFormatter(value: String): Self = StObject.set(x, "dateFormatter", value.asInstanceOf[js.Any])
+          inline def setDateFormatter(value: String): Self = StObject.set(x, "dateFormatter", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisplayAllMonthEvents(value: Boolean): Self = StObject.set(x, "displayAllMonthEvents", value.asInstanceOf[js.Any])
+          inline def setDisplayAllMonthEvents(value: Boolean): Self = StObject.set(x, "displayAllMonthEvents", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisplayEventEndTimes(value: Boolean): Self = StObject.set(x, "displayEventEndTimes", value.asInstanceOf[js.Any])
+          inline def setDisplayEventEndTimes(value: Boolean): Self = StObject.set(x, "displayEventEndTimes", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setI18nStrings(value: WeekNumber): Self = StObject.set(x, "i18nStrings", value.asInstanceOf[js.Any])
+          inline def setI18nStrings(value: WeekNumber): Self = StObject.set(x, "i18nStrings", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setShowTimesOnWeekView(value: Boolean): Self = StObject.set(x, "showTimesOnWeekView", value.asInstanceOf[js.Any])
+          inline def setShowTimesOnWeekView(value: Boolean): Self = StObject.set(x, "showTimesOnWeekView", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTemplates(value: CalendarDayView): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+          inline def setTemplates(value: CalendarDayView): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleFormats(value: ITitleFormats): Self = StObject.set(x, "titleFormats", value.asInstanceOf[js.Any])
+          inline def setTitleFormats(value: ITitleFormats): Self = StObject.set(x, "titleFormats", value.asInstanceOf[js.Any])
         }
       }
       
@@ -175,32 +152,24 @@ object mod {
       }
       object IDateFormats {
         
-        @scala.inline
-        def apply(datetime: String, day: String, hour: String, month: String, time: String, weekDay: String): IDateFormats = {
+        inline def apply(datetime: String, day: String, hour: String, month: String, time: String, weekDay: String): IDateFormats = {
           val __obj = js.Dynamic.literal(datetime = datetime.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], weekDay = weekDay.asInstanceOf[js.Any])
           __obj.asInstanceOf[IDateFormats]
         }
         
-        @scala.inline
-        implicit class IDateFormatsMutableBuilder[Self <: IDateFormats] (val x: Self) extends AnyVal {
+        extension [Self <: IDateFormats](x: Self) {
           
-          @scala.inline
-          def setDatetime(value: String): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+          inline def setDatetime(value: String): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+          inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+          inline def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+          inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+          inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWeekDay(value: String): Self = StObject.set(x, "weekDay", value.asInstanceOf[js.Any])
+          inline def setWeekDay(value: String): Self = StObject.set(x, "weekDay", value.asInstanceOf[js.Any])
         }
       }
       
@@ -278,95 +247,66 @@ object mod {
       }
       object IEvent {
         
-        @scala.inline
-        def apply(startsAt: Date, title: String): IEvent = {
+        inline def apply(startsAt: Date, title: String): IEvent = {
           val __obj = js.Dynamic.literal(startsAt = startsAt.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
           __obj.asInstanceOf[IEvent]
         }
         
-        @scala.inline
-        implicit class IEventMutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
+        extension [Self <: IEvent](x: Self) {
           
-          @scala.inline
-          def setActions(value: js.Array[IEventAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+          inline def setActions(value: js.Array[IEventAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+          inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
           
-          @scala.inline
-          def setActionsVarargs(value: IEventAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+          inline def setActionsVarargs(value: IEventAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
           
-          @scala.inline
-          def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
+          inline def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAllDayUndefined: Self = StObject.set(x, "allDay", js.undefined)
+          inline def setAllDayUndefined: Self = StObject.set(x, "allDay", js.undefined)
           
-          @scala.inline
-          def setColor(value: IEventColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+          inline def setColor(value: IEventColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+          inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
           
-          @scala.inline
-          def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+          inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+          inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
           
-          @scala.inline
-          def setDeletable(value: Boolean): Self = StObject.set(x, "deletable", value.asInstanceOf[js.Any])
+          inline def setDeletable(value: Boolean): Self = StObject.set(x, "deletable", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDeletableUndefined: Self = StObject.set(x, "deletable", js.undefined)
+          inline def setDeletableUndefined: Self = StObject.set(x, "deletable", js.undefined)
           
-          @scala.inline
-          def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+          inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+          inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
           
-          @scala.inline
-          def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+          inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+          inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
           
-          @scala.inline
-          def setEndsAt(value: Date): Self = StObject.set(x, "endsAt", value.asInstanceOf[js.Any])
+          inline def setEndsAt(value: Date): Self = StObject.set(x, "endsAt", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEndsAtUndefined: Self = StObject.set(x, "endsAt", js.undefined)
+          inline def setEndsAtUndefined: Self = StObject.set(x, "endsAt", js.undefined)
           
-          @scala.inline
-          def setIncrementsBadgeTotal(value: Boolean): Self = StObject.set(x, "incrementsBadgeTotal", value.asInstanceOf[js.Any])
+          inline def setIncrementsBadgeTotal(value: Boolean): Self = StObject.set(x, "incrementsBadgeTotal", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIncrementsBadgeTotalUndefined: Self = StObject.set(x, "incrementsBadgeTotal", js.undefined)
+          inline def setIncrementsBadgeTotalUndefined: Self = StObject.set(x, "incrementsBadgeTotal", js.undefined)
           
-          @scala.inline
-          def setRecursOn(value: String): Self = StObject.set(x, "recursOn", value.asInstanceOf[js.Any])
+          inline def setRecursOn(value: String): Self = StObject.set(x, "recursOn", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRecursOnUndefined: Self = StObject.set(x, "recursOn", js.undefined)
+          inline def setRecursOnUndefined: Self = StObject.set(x, "recursOn", js.undefined)
           
-          @scala.inline
-          def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+          inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+          inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
           
-          @scala.inline
-          def setStartsAt(value: Date): Self = StObject.set(x, "startsAt", value.asInstanceOf[js.Any])
+          inline def setStartsAt(value: Date): Self = StObject.set(x, "startsAt", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+          inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         }
       }
       
@@ -390,26 +330,20 @@ object mod {
       }
       object IEventAction {
         
-        @scala.inline
-        def apply(label: String, onClick: js.Any => Unit): IEventAction = {
+        inline def apply(label: String, onClick: js.Any => Unit): IEventAction = {
           val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
           __obj.asInstanceOf[IEventAction]
         }
         
-        @scala.inline
-        implicit class IEventActionMutableBuilder[Self <: IEventAction] (val x: Self) extends AnyVal {
+        extension [Self <: IEventAction](x: Self) {
           
-          @scala.inline
-          def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+          inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+          inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
           
-          @scala.inline
-          def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+          inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+          inline def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
         }
       }
       
@@ -427,20 +361,16 @@ object mod {
       }
       object IEventColor {
         
-        @scala.inline
-        def apply(primary: String, secondary: String): IEventColor = {
+        inline def apply(primary: String, secondary: String): IEventColor = {
           val __obj = js.Dynamic.literal(primary = primary.asInstanceOf[js.Any], secondary = secondary.asInstanceOf[js.Any])
           __obj.asInstanceOf[IEventColor]
         }
         
-        @scala.inline
-        implicit class IEventColorMutableBuilder[Self <: IEventColor] (val x: Self) extends AnyVal {
+        extension [Self <: IEventColor](x: Self) {
           
-          @scala.inline
-          def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+          inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+          inline def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
         }
       }
       
@@ -452,20 +382,16 @@ object mod {
       }
       object IFormats {
         
-        @scala.inline
-        def apply(date: IDateFormats, title: ITitleFormats): IFormats = {
+        inline def apply(date: IDateFormats, title: ITitleFormats): IFormats = {
           val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
           __obj.asInstanceOf[IFormats]
         }
         
-        @scala.inline
-        implicit class IFormatsMutableBuilder[Self <: IFormats] (val x: Self) extends AnyVal {
+        extension [Self <: IFormats](x: Self) {
           
-          @scala.inline
-          def setDate(value: IDateFormats): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+          inline def setDate(value: IDateFormats): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitle(value: ITitleFormats): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: ITitleFormats): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         }
       }
       
@@ -481,26 +407,20 @@ object mod {
       }
       object ITitleFormats {
         
-        @scala.inline
-        def apply(day: String, month: String, week: String, year: String): ITitleFormats = {
+        inline def apply(day: String, month: String, week: String, year: String): ITitleFormats = {
           val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], week = week.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
           __obj.asInstanceOf[ITitleFormats]
         }
         
-        @scala.inline
-        implicit class ITitleFormatsMutableBuilder[Self <: ITitleFormats] (val x: Self) extends AnyVal {
+        extension [Self <: ITitleFormats](x: Self) {
           
-          @scala.inline
-          def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+          inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+          inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWeek(value: String): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+          inline def setWeek(value: String): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+          inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
         }
       }
       

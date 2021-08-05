@@ -19,43 +19,31 @@ trait ControllerConstructorOptions extends StObject {
 }
 object ControllerConstructorOptions {
   
-  @scala.inline
-  def apply(): ControllerConstructorOptions = {
+  inline def apply(): ControllerConstructorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ControllerConstructorOptions]
   }
   
-  @scala.inline
-  implicit class ControllerConstructorOptionsMutableBuilder[Self <: ControllerConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ControllerConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setContainer(value: String | Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String | Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setGlobalSceneOptions(value: SceneConstructorOptions): Self = StObject.set(x, "globalSceneOptions", value.asInstanceOf[js.Any])
+    inline def setGlobalSceneOptions(value: SceneConstructorOptions): Self = StObject.set(x, "globalSceneOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalSceneOptionsUndefined: Self = StObject.set(x, "globalSceneOptions", js.undefined)
+    inline def setGlobalSceneOptionsUndefined: Self = StObject.set(x, "globalSceneOptions", js.undefined)
     
-    @scala.inline
-    def setLoglevel(value: Double): Self = StObject.set(x, "loglevel", value.asInstanceOf[js.Any])
+    inline def setLoglevel(value: Double): Self = StObject.set(x, "loglevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoglevelUndefined: Self = StObject.set(x, "loglevel", js.undefined)
+    inline def setLoglevelUndefined: Self = StObject.set(x, "loglevel", js.undefined)
     
-    @scala.inline
-    def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
+    inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
+    inline def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
     
-    @scala.inline
-    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

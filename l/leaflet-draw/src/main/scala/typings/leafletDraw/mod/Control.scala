@@ -54,32 +54,24 @@ object Control {
   }
   object DrawConstructorOptions {
     
-    @scala.inline
-    def apply(): DrawConstructorOptions = {
+    inline def apply(): DrawConstructorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DrawConstructorOptions]
     }
     
-    @scala.inline
-    implicit class DrawConstructorOptionsMutableBuilder[Self <: DrawConstructorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DrawConstructorOptions](x: Self) {
       
-      @scala.inline
-      def setDraw(value: typings.leafletDraw.mod.Control.DrawOptions): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
+      inline def setDraw(value: typings.leafletDraw.mod.Control.DrawOptions): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawUndefined: Self = StObject.set(x, "draw", js.undefined)
+      inline def setDrawUndefined: Self = StObject.set(x, "draw", js.undefined)
       
-      @scala.inline
-      def setEdit(value: typings.leafletDraw.mod.Control.EditOptions): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+      inline def setEdit(value: typings.leafletDraw.mod.Control.EditOptions): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+      inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
       
-      @scala.inline
-      def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
   
@@ -129,50 +121,36 @@ object Control {
   }
   object DrawOptions {
     
-    @scala.inline
-    def apply(): typings.leafletDraw.mod.Control.DrawOptions = {
+    inline def apply(): typings.leafletDraw.mod.Control.DrawOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.leafletDraw.mod.Control.DrawOptions]
     }
     
-    @scala.inline
-    implicit class DrawOptionsMutableBuilder[Self <: typings.leafletDraw.mod.Control.DrawOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.leafletDraw.mod.Control.DrawOptions](x: Self) {
       
-      @scala.inline
-      def setCircle(value: CircleOptions | `false`): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+      inline def setCircle(value: CircleOptions | `false`): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+      inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
       
-      @scala.inline
-      def setCirclemarker(value: CircleMarkerOptions | `false`): Self = StObject.set(x, "circlemarker", value.asInstanceOf[js.Any])
+      inline def setCirclemarker(value: CircleMarkerOptions | `false`): Self = StObject.set(x, "circlemarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCirclemarkerUndefined: Self = StObject.set(x, "circlemarker", js.undefined)
+      inline def setCirclemarkerUndefined: Self = StObject.set(x, "circlemarker", js.undefined)
       
-      @scala.inline
-      def setMarker(value: MarkerOptions | `false`): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: MarkerOptions | `false`): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+      inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
       
-      @scala.inline
-      def setPolygon(value: PolygonOptions | `false`): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
+      inline def setPolygon(value: PolygonOptions | `false`): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygonUndefined: Self = StObject.set(x, "polygon", js.undefined)
+      inline def setPolygonUndefined: Self = StObject.set(x, "polygon", js.undefined)
       
-      @scala.inline
-      def setPolyline(value: PolylineOptions | `false`): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
+      inline def setPolyline(value: PolylineOptions | `false`): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
+      inline def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
       
-      @scala.inline
-      def setRectangle(value: RectangleOptions | `false`): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
+      inline def setRectangle(value: RectangleOptions | `false`): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
+      inline def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
     }
   }
   
@@ -202,32 +180,24 @@ object Control {
   }
   object EditOptions {
     
-    @scala.inline
-    def apply(featureGroup: FeatureGroup_[js.Any]): typings.leafletDraw.mod.Control.EditOptions = {
+    inline def apply(featureGroup: FeatureGroup_[js.Any]): typings.leafletDraw.mod.Control.EditOptions = {
       val __obj = js.Dynamic.literal(featureGroup = featureGroup.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.leafletDraw.mod.Control.EditOptions]
     }
     
-    @scala.inline
-    implicit class EditOptionsMutableBuilder[Self <: typings.leafletDraw.mod.Control.EditOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.leafletDraw.mod.Control.EditOptions](x: Self) {
       
-      @scala.inline
-      def setEdit(value: EditHandlerOptions | `false`): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+      inline def setEdit(value: EditHandlerOptions | `false`): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+      inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
       
-      @scala.inline
-      def setFeatureGroup(value: FeatureGroup_[js.Any]): Self = StObject.set(x, "featureGroup", value.asInstanceOf[js.Any])
+      inline def setFeatureGroup(value: FeatureGroup_[js.Any]): Self = StObject.set(x, "featureGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: `false`): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: `false`): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveNull: Self = StObject.set(x, "remove", null)
+      inline def setRemoveNull: Self = StObject.set(x, "remove", null)
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     }
   }
 }

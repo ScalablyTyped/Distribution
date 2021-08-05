@@ -16,32 +16,24 @@ object anon {
   }
   object Compound {
     
-    @scala.inline
-    def apply(): Compound = {
+    inline def apply(): Compound = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Compound]
     }
     
-    @scala.inline
-    implicit class CompoundMutableBuilder[Self <: Compound] (val x: Self) extends AnyVal {
+    extension [Self <: Compound](x: Self) {
       
-      @scala.inline
-      def setCompound(value: Boolean): Self = StObject.set(x, "compound", value.asInstanceOf[js.Any])
+      inline def setCompound(value: Boolean): Self = StObject.set(x, "compound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompoundUndefined: Self = StObject.set(x, "compound", js.undefined)
+      inline def setCompoundUndefined: Self = StObject.set(x, "compound", js.undefined)
       
-      @scala.inline
-      def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+      inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
+      inline def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
       
-      @scala.inline
-      def setMultigraph(value: Boolean): Self = StObject.set(x, "multigraph", value.asInstanceOf[js.Any])
+      inline def setMultigraph(value: Boolean): Self = StObject.set(x, "multigraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultigraphUndefined: Self = StObject.set(x, "multigraph", js.undefined)
+      inline def setMultigraphUndefined: Self = StObject.set(x, "multigraph", js.undefined)
     }
   }
   
@@ -55,26 +47,20 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(v: String, w: String): Name = {
+    inline def apply(v: String, w: String): Name = {
       val __obj = js.Dynamic.literal(v = v.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     }
   }
 }

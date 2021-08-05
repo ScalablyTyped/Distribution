@@ -8,11 +8,9 @@ object diffStrings {
   
   @js.native
   sealed trait `-_` extends StObject
-  @scala.inline
-  def `-_`: `-_` = "-".asInstanceOf[`-_`]
+  inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
   sealed trait Space extends StObject
-  @scala.inline
-  def Space: Space = (" ").asInstanceOf[Space]
+  inline def Space: Space = (" ").asInstanceOf[Space]
 }

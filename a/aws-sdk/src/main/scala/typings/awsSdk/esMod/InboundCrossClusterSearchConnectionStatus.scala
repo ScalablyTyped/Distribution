@@ -18,25 +18,19 @@ trait InboundCrossClusterSearchConnectionStatus extends StObject {
 }
 object InboundCrossClusterSearchConnectionStatus {
   
-  @scala.inline
-  def apply(): InboundCrossClusterSearchConnectionStatus = {
+  inline def apply(): InboundCrossClusterSearchConnectionStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InboundCrossClusterSearchConnectionStatus]
   }
   
-  @scala.inline
-  implicit class InboundCrossClusterSearchConnectionStatusMutableBuilder[Self <: InboundCrossClusterSearchConnectionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: InboundCrossClusterSearchConnectionStatus](x: Self) {
     
-    @scala.inline
-    def setMessage(value: CrossClusterSearchConnectionStatusMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: CrossClusterSearchConnectionStatusMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: InboundCrossClusterSearchConnectionStatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: InboundCrossClusterSearchConnectionStatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
   }
 }

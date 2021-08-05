@@ -16,37 +16,27 @@ trait Start[TEvent /* <: js.Object */] extends StObject {
 }
 object Start {
   
-  @scala.inline
-  def apply[TEvent /* <: js.Object */](): Start[TEvent] = {
+  inline def apply[TEvent /* <: js.Object */](): Start[TEvent] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Start[TEvent]]
   }
   
-  @scala.inline
-  implicit class StartMutableBuilder[Self <: Start[?], TEvent /* <: js.Object */] (val x: Self & Start[TEvent]) extends AnyVal {
+  extension [Self <: Start[?], TEvent /* <: js.Object */](x: Self & Start[TEvent]) {
     
-    @scala.inline
-    def setEnd(value: /* event */ TEvent => typings.std.Date): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+    inline def setEnd(value: /* event */ TEvent => typings.std.Date): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: /* event */ TEvent => typings.std.Date): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* event */ TEvent => typings.std.Date): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setTitle(value: /* event */ TEvent => String): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
+    inline def setTitle(value: /* event */ TEvent => String): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: /* event */ TEvent => String): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
+    inline def setTooltip(value: /* event */ TEvent => String): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait UpdateExpirationForHITRequest extends StObject {
 }
 object UpdateExpirationForHITRequest {
   
-  @scala.inline
-  def apply(ExpireAt: Timestamp, HITId: EntityId): UpdateExpirationForHITRequest = {
+  inline def apply(ExpireAt: Timestamp, HITId: EntityId): UpdateExpirationForHITRequest = {
     val __obj = js.Dynamic.literal(ExpireAt = ExpireAt.asInstanceOf[js.Any], HITId = HITId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateExpirationForHITRequest]
   }
   
-  @scala.inline
-  implicit class UpdateExpirationForHITRequestMutableBuilder[Self <: UpdateExpirationForHITRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateExpirationForHITRequest](x: Self) {
     
-    @scala.inline
-    def setExpireAt(value: Timestamp): Self = StObject.set(x, "ExpireAt", value.asInstanceOf[js.Any])
+    inline def setExpireAt(value: Timestamp): Self = StObject.set(x, "ExpireAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
+    inline def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
   }
 }

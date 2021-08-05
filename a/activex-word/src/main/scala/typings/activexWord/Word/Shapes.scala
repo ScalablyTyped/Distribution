@@ -175,6 +175,6 @@ trait Shapes extends StObject {
   
   def SelectAll(): Unit = js.native
   
-  @JSName("Word.Shapes_typekey")
+  /* private */ @JSName("Word.Shapes_typekey")
   var WordDotShapes_typekey: Shapes = js.native
 }

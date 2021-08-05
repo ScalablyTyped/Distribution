@@ -51,8 +51,7 @@ object mod {
   @js.native
   val Text: String | Double = js.native
   
-  @scala.inline
-  def isTag(elem: Type): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTag")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTag(elem: Type): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTag")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.domelementtype.domelementtypeStrings.text
@@ -68,35 +67,27 @@ object mod {
   object ElementType {
     
     /** Type for <![CDATA[ ... ]]> */
-    @scala.inline
-    def CDATA: cdata = "cdata".asInstanceOf[cdata]
+    inline def CDATA: cdata = "cdata".asInstanceOf[cdata]
     
     /** Type for <!-- ... --> */
-    @scala.inline
-    def Comment: comment = "comment".asInstanceOf[comment]
+    inline def Comment: comment = "comment".asInstanceOf[comment]
     
     /** Type for <? ... ?> */
-    @scala.inline
-    def Directive: directive = "directive".asInstanceOf[directive]
+    inline def Directive: directive = "directive".asInstanceOf[directive]
     
     /** Type for <!doctype ...> */
-    @scala.inline
-    def Doctype: doctype = "doctype".asInstanceOf[doctype]
+    inline def Doctype: doctype = "doctype".asInstanceOf[doctype]
     
     /** Type for <script> tags */
-    @scala.inline
-    def Script: script = "script".asInstanceOf[script]
+    inline def Script: script = "script".asInstanceOf[script]
     
     /** Type for <style> tags */
-    @scala.inline
-    def Style: style = "style".asInstanceOf[style]
+    inline def Style: style = "style".asInstanceOf[style]
     
     /** Type for Any tag */
-    @scala.inline
-    def Tag: tag = "tag".asInstanceOf[tag]
+    inline def Tag: tag = "tag".asInstanceOf[tag]
     
     /** Type for Text */
-    @scala.inline
-    def Text: text = "text".asInstanceOf[text]
+    inline def Text: text = "text".asInstanceOf[text]
   }
 }

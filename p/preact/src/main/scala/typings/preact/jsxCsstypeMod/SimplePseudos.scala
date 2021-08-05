@@ -102,282 +102,189 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SimplePseudos extends StObject
 object SimplePseudos {
   
-  @scala.inline
-  def `Colon-khtml-any-link`: typings.preact.preactStrings.`Colon-khtml-any-link` = ":-khtml-any-link".asInstanceOf[typings.preact.preactStrings.`Colon-khtml-any-link`]
+  inline def `Colon-khtml-any-link`: typings.preact.preactStrings.`Colon-khtml-any-link` = ":-khtml-any-link".asInstanceOf[typings.preact.preactStrings.`Colon-khtml-any-link`]
   
-  @scala.inline
-  def `Colon-moz-any-link`: typings.preact.preactStrings.`Colon-moz-any-link` = ":-moz-any-link".asInstanceOf[typings.preact.preactStrings.`Colon-moz-any-link`]
+  inline def `Colon-moz-any-link`: typings.preact.preactStrings.`Colon-moz-any-link` = ":-moz-any-link".asInstanceOf[typings.preact.preactStrings.`Colon-moz-any-link`]
   
-  @scala.inline
-  def `Colon-moz-focusring`: typings.preact.preactStrings.`Colon-moz-focusring` = ":-moz-focusring".asInstanceOf[typings.preact.preactStrings.`Colon-moz-focusring`]
+  inline def `Colon-moz-focusring`: typings.preact.preactStrings.`Colon-moz-focusring` = ":-moz-focusring".asInstanceOf[typings.preact.preactStrings.`Colon-moz-focusring`]
   
-  @scala.inline
-  def `Colon-moz-full-screen`: typings.preact.preactStrings.`Colon-moz-full-screen` = ":-moz-full-screen".asInstanceOf[typings.preact.preactStrings.`Colon-moz-full-screen`]
+  inline def `Colon-moz-full-screen`: typings.preact.preactStrings.`Colon-moz-full-screen` = ":-moz-full-screen".asInstanceOf[typings.preact.preactStrings.`Colon-moz-full-screen`]
   
-  @scala.inline
-  def `Colon-moz-placeholder`: typings.preact.preactStrings.`Colon-moz-placeholder` = ":-moz-placeholder".asInstanceOf[typings.preact.preactStrings.`Colon-moz-placeholder`]
+  inline def `Colon-moz-placeholder`: typings.preact.preactStrings.`Colon-moz-placeholder` = ":-moz-placeholder".asInstanceOf[typings.preact.preactStrings.`Colon-moz-placeholder`]
   
-  @scala.inline
-  def `Colon-moz-read-only`: typings.preact.preactStrings.`Colon-moz-read-only` = ":-moz-read-only".asInstanceOf[typings.preact.preactStrings.`Colon-moz-read-only`]
+  inline def `Colon-moz-read-only`: typings.preact.preactStrings.`Colon-moz-read-only` = ":-moz-read-only".asInstanceOf[typings.preact.preactStrings.`Colon-moz-read-only`]
   
-  @scala.inline
-  def `Colon-moz-read-write`: typings.preact.preactStrings.`Colon-moz-read-write` = ":-moz-read-write".asInstanceOf[typings.preact.preactStrings.`Colon-moz-read-write`]
+  inline def `Colon-moz-read-write`: typings.preact.preactStrings.`Colon-moz-read-write` = ":-moz-read-write".asInstanceOf[typings.preact.preactStrings.`Colon-moz-read-write`]
   
-  @scala.inline
-  def `Colon-ms-fullscreen`: typings.preact.preactStrings.`Colon-ms-fullscreen` = ":-ms-fullscreen".asInstanceOf[typings.preact.preactStrings.`Colon-ms-fullscreen`]
+  inline def `Colon-ms-fullscreen`: typings.preact.preactStrings.`Colon-ms-fullscreen` = ":-ms-fullscreen".asInstanceOf[typings.preact.preactStrings.`Colon-ms-fullscreen`]
   
-  @scala.inline
-  def `Colon-ms-input-placeholder`: typings.preact.preactStrings.`Colon-ms-input-placeholder` = ":-ms-input-placeholder".asInstanceOf[typings.preact.preactStrings.`Colon-ms-input-placeholder`]
+  inline def `Colon-ms-input-placeholder`: typings.preact.preactStrings.`Colon-ms-input-placeholder` = ":-ms-input-placeholder".asInstanceOf[typings.preact.preactStrings.`Colon-ms-input-placeholder`]
   
-  @scala.inline
-  def `Colon-webkit-any-link`: typings.preact.preactStrings.`Colon-webkit-any-link` = ":-webkit-any-link".asInstanceOf[typings.preact.preactStrings.`Colon-webkit-any-link`]
+  inline def `Colon-webkit-any-link`: typings.preact.preactStrings.`Colon-webkit-any-link` = ":-webkit-any-link".asInstanceOf[typings.preact.preactStrings.`Colon-webkit-any-link`]
   
-  @scala.inline
-  def `Colon-webkit-full-screen`: typings.preact.preactStrings.`Colon-webkit-full-screen` = ":-webkit-full-screen".asInstanceOf[typings.preact.preactStrings.`Colon-webkit-full-screen`]
+  inline def `Colon-webkit-full-screen`: typings.preact.preactStrings.`Colon-webkit-full-screen` = ":-webkit-full-screen".asInstanceOf[typings.preact.preactStrings.`Colon-webkit-full-screen`]
   
-  @scala.inline
-  def `ColonColon-moz-placeholder`: typings.preact.preactStrings.`ColonColon-moz-placeholder` = "::-moz-placeholder".asInstanceOf[typings.preact.preactStrings.`ColonColon-moz-placeholder`]
+  inline def `ColonColon-moz-placeholder`: typings.preact.preactStrings.`ColonColon-moz-placeholder` = "::-moz-placeholder".asInstanceOf[typings.preact.preactStrings.`ColonColon-moz-placeholder`]
   
-  @scala.inline
-  def `ColonColon-moz-progress-bar`: typings.preact.preactStrings.`ColonColon-moz-progress-bar` = "::-moz-progress-bar".asInstanceOf[typings.preact.preactStrings.`ColonColon-moz-progress-bar`]
+  inline def `ColonColon-moz-progress-bar`: typings.preact.preactStrings.`ColonColon-moz-progress-bar` = "::-moz-progress-bar".asInstanceOf[typings.preact.preactStrings.`ColonColon-moz-progress-bar`]
   
-  @scala.inline
-  def `ColonColon-moz-range-progress`: typings.preact.preactStrings.`ColonColon-moz-range-progress` = "::-moz-range-progress".asInstanceOf[typings.preact.preactStrings.`ColonColon-moz-range-progress`]
+  inline def `ColonColon-moz-range-progress`: typings.preact.preactStrings.`ColonColon-moz-range-progress` = "::-moz-range-progress".asInstanceOf[typings.preact.preactStrings.`ColonColon-moz-range-progress`]
   
-  @scala.inline
-  def `ColonColon-moz-range-thumb`: typings.preact.preactStrings.`ColonColon-moz-range-thumb` = "::-moz-range-thumb".asInstanceOf[typings.preact.preactStrings.`ColonColon-moz-range-thumb`]
+  inline def `ColonColon-moz-range-thumb`: typings.preact.preactStrings.`ColonColon-moz-range-thumb` = "::-moz-range-thumb".asInstanceOf[typings.preact.preactStrings.`ColonColon-moz-range-thumb`]
   
-  @scala.inline
-  def `ColonColon-moz-range-track`: typings.preact.preactStrings.`ColonColon-moz-range-track` = "::-moz-range-track".asInstanceOf[typings.preact.preactStrings.`ColonColon-moz-range-track`]
+  inline def `ColonColon-moz-range-track`: typings.preact.preactStrings.`ColonColon-moz-range-track` = "::-moz-range-track".asInstanceOf[typings.preact.preactStrings.`ColonColon-moz-range-track`]
   
-  @scala.inline
-  def `ColonColon-moz-selection`: typings.preact.preactStrings.`ColonColon-moz-selection` = "::-moz-selection".asInstanceOf[typings.preact.preactStrings.`ColonColon-moz-selection`]
+  inline def `ColonColon-moz-selection`: typings.preact.preactStrings.`ColonColon-moz-selection` = "::-moz-selection".asInstanceOf[typings.preact.preactStrings.`ColonColon-moz-selection`]
   
-  @scala.inline
-  def `ColonColon-ms-backdrop`: typings.preact.preactStrings.`ColonColon-ms-backdrop` = "::-ms-backdrop".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-backdrop`]
+  inline def `ColonColon-ms-backdrop`: typings.preact.preactStrings.`ColonColon-ms-backdrop` = "::-ms-backdrop".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-backdrop`]
   
-  @scala.inline
-  def `ColonColon-ms-browse`: typings.preact.preactStrings.`ColonColon-ms-browse` = "::-ms-browse".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-browse`]
+  inline def `ColonColon-ms-browse`: typings.preact.preactStrings.`ColonColon-ms-browse` = "::-ms-browse".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-browse`]
   
-  @scala.inline
-  def `ColonColon-ms-check`: typings.preact.preactStrings.`ColonColon-ms-check` = "::-ms-check".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-check`]
+  inline def `ColonColon-ms-check`: typings.preact.preactStrings.`ColonColon-ms-check` = "::-ms-check".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-check`]
   
-  @scala.inline
-  def `ColonColon-ms-clear`: typings.preact.preactStrings.`ColonColon-ms-clear` = "::-ms-clear".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-clear`]
+  inline def `ColonColon-ms-clear`: typings.preact.preactStrings.`ColonColon-ms-clear` = "::-ms-clear".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-clear`]
   
-  @scala.inline
-  def `ColonColon-ms-fill`: typings.preact.preactStrings.`ColonColon-ms-fill` = "::-ms-fill".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-fill`]
+  inline def `ColonColon-ms-fill`: typings.preact.preactStrings.`ColonColon-ms-fill` = "::-ms-fill".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-fill`]
   
-  @scala.inline
-  def `ColonColon-ms-fill-lower`: typings.preact.preactStrings.`ColonColon-ms-fill-lower` = "::-ms-fill-lower".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-fill-lower`]
+  inline def `ColonColon-ms-fill-lower`: typings.preact.preactStrings.`ColonColon-ms-fill-lower` = "::-ms-fill-lower".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-fill-lower`]
   
-  @scala.inline
-  def `ColonColon-ms-fill-upper`: typings.preact.preactStrings.`ColonColon-ms-fill-upper` = "::-ms-fill-upper".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-fill-upper`]
+  inline def `ColonColon-ms-fill-upper`: typings.preact.preactStrings.`ColonColon-ms-fill-upper` = "::-ms-fill-upper".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-fill-upper`]
   
-  @scala.inline
-  def `ColonColon-ms-input-placeholder`: typings.preact.preactStrings.`ColonColon-ms-input-placeholder` = "::-ms-input-placeholder".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-input-placeholder`]
+  inline def `ColonColon-ms-input-placeholder`: typings.preact.preactStrings.`ColonColon-ms-input-placeholder` = "::-ms-input-placeholder".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-input-placeholder`]
   
-  @scala.inline
-  def `ColonColon-ms-reveal`: typings.preact.preactStrings.`ColonColon-ms-reveal` = "::-ms-reveal".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-reveal`]
+  inline def `ColonColon-ms-reveal`: typings.preact.preactStrings.`ColonColon-ms-reveal` = "::-ms-reveal".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-reveal`]
   
-  @scala.inline
-  def `ColonColon-ms-thumb`: typings.preact.preactStrings.`ColonColon-ms-thumb` = "::-ms-thumb".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-thumb`]
+  inline def `ColonColon-ms-thumb`: typings.preact.preactStrings.`ColonColon-ms-thumb` = "::-ms-thumb".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-thumb`]
   
-  @scala.inline
-  def `ColonColon-ms-ticks-after`: typings.preact.preactStrings.`ColonColon-ms-ticks-after` = "::-ms-ticks-after".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-ticks-after`]
+  inline def `ColonColon-ms-ticks-after`: typings.preact.preactStrings.`ColonColon-ms-ticks-after` = "::-ms-ticks-after".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-ticks-after`]
   
-  @scala.inline
-  def `ColonColon-ms-ticks-before`: typings.preact.preactStrings.`ColonColon-ms-ticks-before` = "::-ms-ticks-before".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-ticks-before`]
+  inline def `ColonColon-ms-ticks-before`: typings.preact.preactStrings.`ColonColon-ms-ticks-before` = "::-ms-ticks-before".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-ticks-before`]
   
-  @scala.inline
-  def `ColonColon-ms-tooltip`: typings.preact.preactStrings.`ColonColon-ms-tooltip` = "::-ms-tooltip".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-tooltip`]
+  inline def `ColonColon-ms-tooltip`: typings.preact.preactStrings.`ColonColon-ms-tooltip` = "::-ms-tooltip".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-tooltip`]
   
-  @scala.inline
-  def `ColonColon-ms-track`: typings.preact.preactStrings.`ColonColon-ms-track` = "::-ms-track".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-track`]
+  inline def `ColonColon-ms-track`: typings.preact.preactStrings.`ColonColon-ms-track` = "::-ms-track".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-track`]
   
-  @scala.inline
-  def `ColonColon-ms-value`: typings.preact.preactStrings.`ColonColon-ms-value` = "::-ms-value".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-value`]
+  inline def `ColonColon-ms-value`: typings.preact.preactStrings.`ColonColon-ms-value` = "::-ms-value".asInstanceOf[typings.preact.preactStrings.`ColonColon-ms-value`]
   
-  @scala.inline
-  def `ColonColon-webkit-backdrop`: typings.preact.preactStrings.`ColonColon-webkit-backdrop` = "::-webkit-backdrop".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-backdrop`]
+  inline def `ColonColon-webkit-backdrop`: typings.preact.preactStrings.`ColonColon-webkit-backdrop` = "::-webkit-backdrop".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-backdrop`]
   
-  @scala.inline
-  def `ColonColon-webkit-input-placeholder`: typings.preact.preactStrings.`ColonColon-webkit-input-placeholder` = "::-webkit-input-placeholder".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-input-placeholder`]
+  inline def `ColonColon-webkit-input-placeholder`: typings.preact.preactStrings.`ColonColon-webkit-input-placeholder` = "::-webkit-input-placeholder".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-input-placeholder`]
   
-  @scala.inline
-  def `ColonColon-webkit-progress-bar`: typings.preact.preactStrings.`ColonColon-webkit-progress-bar` = "::-webkit-progress-bar".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-progress-bar`]
+  inline def `ColonColon-webkit-progress-bar`: typings.preact.preactStrings.`ColonColon-webkit-progress-bar` = "::-webkit-progress-bar".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-progress-bar`]
   
-  @scala.inline
-  def `ColonColon-webkit-progress-inner-value`: typings.preact.preactStrings.`ColonColon-webkit-progress-inner-value` = "::-webkit-progress-inner-value".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-progress-inner-value`]
+  inline def `ColonColon-webkit-progress-inner-value`: typings.preact.preactStrings.`ColonColon-webkit-progress-inner-value` = "::-webkit-progress-inner-value".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-progress-inner-value`]
   
-  @scala.inline
-  def `ColonColon-webkit-progress-value`: typings.preact.preactStrings.`ColonColon-webkit-progress-value` = "::-webkit-progress-value".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-progress-value`]
+  inline def `ColonColon-webkit-progress-value`: typings.preact.preactStrings.`ColonColon-webkit-progress-value` = "::-webkit-progress-value".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-progress-value`]
   
-  @scala.inline
-  def `ColonColon-webkit-slider-runnable-track`: typings.preact.preactStrings.`ColonColon-webkit-slider-runnable-track` = "::-webkit-slider-runnable-track".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-slider-runnable-track`]
+  inline def `ColonColon-webkit-slider-runnable-track`: typings.preact.preactStrings.`ColonColon-webkit-slider-runnable-track` = "::-webkit-slider-runnable-track".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-slider-runnable-track`]
   
-  @scala.inline
-  def `ColonColon-webkit-slider-thumb`: typings.preact.preactStrings.`ColonColon-webkit-slider-thumb` = "::-webkit-slider-thumb".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-slider-thumb`]
+  inline def `ColonColon-webkit-slider-thumb`: typings.preact.preactStrings.`ColonColon-webkit-slider-thumb` = "::-webkit-slider-thumb".asInstanceOf[typings.preact.preactStrings.`ColonColon-webkit-slider-thumb`]
   
-  @scala.inline
-  def ColonColonafter: typings.preact.preactStrings.ColonColonafter = "::after".asInstanceOf[typings.preact.preactStrings.ColonColonafter]
+  inline def ColonColonafter: typings.preact.preactStrings.ColonColonafter = "::after".asInstanceOf[typings.preact.preactStrings.ColonColonafter]
   
-  @scala.inline
-  def ColonColonbackdrop: typings.preact.preactStrings.ColonColonbackdrop = "::backdrop".asInstanceOf[typings.preact.preactStrings.ColonColonbackdrop]
+  inline def ColonColonbackdrop: typings.preact.preactStrings.ColonColonbackdrop = "::backdrop".asInstanceOf[typings.preact.preactStrings.ColonColonbackdrop]
   
-  @scala.inline
-  def ColonColonbefore: typings.preact.preactStrings.ColonColonbefore = "::before".asInstanceOf[typings.preact.preactStrings.ColonColonbefore]
+  inline def ColonColonbefore: typings.preact.preactStrings.ColonColonbefore = "::before".asInstanceOf[typings.preact.preactStrings.ColonColonbefore]
   
-  @scala.inline
-  def ColonColoncue: typings.preact.preactStrings.ColonColoncue = "::cue".asInstanceOf[typings.preact.preactStrings.ColonColoncue]
+  inline def ColonColoncue: typings.preact.preactStrings.ColonColoncue = "::cue".asInstanceOf[typings.preact.preactStrings.ColonColoncue]
   
-  @scala.inline
-  def `ColonColoncue-region`: typings.preact.preactStrings.`ColonColoncue-region` = "::cue-region".asInstanceOf[typings.preact.preactStrings.`ColonColoncue-region`]
+  inline def `ColonColoncue-region`: typings.preact.preactStrings.`ColonColoncue-region` = "::cue-region".asInstanceOf[typings.preact.preactStrings.`ColonColoncue-region`]
   
-  @scala.inline
-  def `ColonColonfirst-letter`: typings.preact.preactStrings.`ColonColonfirst-letter` = "::first-letter".asInstanceOf[typings.preact.preactStrings.`ColonColonfirst-letter`]
+  inline def `ColonColonfirst-letter`: typings.preact.preactStrings.`ColonColonfirst-letter` = "::first-letter".asInstanceOf[typings.preact.preactStrings.`ColonColonfirst-letter`]
   
-  @scala.inline
-  def `ColonColonfirst-line`: typings.preact.preactStrings.`ColonColonfirst-line` = "::first-line".asInstanceOf[typings.preact.preactStrings.`ColonColonfirst-line`]
+  inline def `ColonColonfirst-line`: typings.preact.preactStrings.`ColonColonfirst-line` = "::first-line".asInstanceOf[typings.preact.preactStrings.`ColonColonfirst-line`]
   
-  @scala.inline
-  def `ColonColongrammar-error`: typings.preact.preactStrings.`ColonColongrammar-error` = "::grammar-error".asInstanceOf[typings.preact.preactStrings.`ColonColongrammar-error`]
+  inline def `ColonColongrammar-error`: typings.preact.preactStrings.`ColonColongrammar-error` = "::grammar-error".asInstanceOf[typings.preact.preactStrings.`ColonColongrammar-error`]
   
-  @scala.inline
-  def ColonColonmarker: typings.preact.preactStrings.ColonColonmarker = "::marker".asInstanceOf[typings.preact.preactStrings.ColonColonmarker]
+  inline def ColonColonmarker: typings.preact.preactStrings.ColonColonmarker = "::marker".asInstanceOf[typings.preact.preactStrings.ColonColonmarker]
   
-  @scala.inline
-  def ColonColonplaceholder: typings.preact.preactStrings.ColonColonplaceholder = "::placeholder".asInstanceOf[typings.preact.preactStrings.ColonColonplaceholder]
+  inline def ColonColonplaceholder: typings.preact.preactStrings.ColonColonplaceholder = "::placeholder".asInstanceOf[typings.preact.preactStrings.ColonColonplaceholder]
   
-  @scala.inline
-  def ColonColonselection: typings.preact.preactStrings.ColonColonselection = "::selection".asInstanceOf[typings.preact.preactStrings.ColonColonselection]
+  inline def ColonColonselection: typings.preact.preactStrings.ColonColonselection = "::selection".asInstanceOf[typings.preact.preactStrings.ColonColonselection]
   
-  @scala.inline
-  def `ColonColonspelling-error`: typings.preact.preactStrings.`ColonColonspelling-error` = "::spelling-error".asInstanceOf[typings.preact.preactStrings.`ColonColonspelling-error`]
+  inline def `ColonColonspelling-error`: typings.preact.preactStrings.`ColonColonspelling-error` = "::spelling-error".asInstanceOf[typings.preact.preactStrings.`ColonColonspelling-error`]
   
-  @scala.inline
-  def Colonactive: typings.preact.preactStrings.Colonactive = ":active".asInstanceOf[typings.preact.preactStrings.Colonactive]
+  inline def Colonactive: typings.preact.preactStrings.Colonactive = ":active".asInstanceOf[typings.preact.preactStrings.Colonactive]
   
-  @scala.inline
-  def Colonafter: typings.preact.preactStrings.Colonafter = ":after".asInstanceOf[typings.preact.preactStrings.Colonafter]
+  inline def Colonafter: typings.preact.preactStrings.Colonafter = ":after".asInstanceOf[typings.preact.preactStrings.Colonafter]
   
-  @scala.inline
-  def `Colonany-link`: typings.preact.preactStrings.`Colonany-link` = ":any-link".asInstanceOf[typings.preact.preactStrings.`Colonany-link`]
+  inline def `Colonany-link`: typings.preact.preactStrings.`Colonany-link` = ":any-link".asInstanceOf[typings.preact.preactStrings.`Colonany-link`]
   
-  @scala.inline
-  def Colonbefore: typings.preact.preactStrings.Colonbefore = ":before".asInstanceOf[typings.preact.preactStrings.Colonbefore]
+  inline def Colonbefore: typings.preact.preactStrings.Colonbefore = ":before".asInstanceOf[typings.preact.preactStrings.Colonbefore]
   
-  @scala.inline
-  def Colonblank: typings.preact.preactStrings.Colonblank = ":blank".asInstanceOf[typings.preact.preactStrings.Colonblank]
+  inline def Colonblank: typings.preact.preactStrings.Colonblank = ":blank".asInstanceOf[typings.preact.preactStrings.Colonblank]
   
-  @scala.inline
-  def Colonchecked: typings.preact.preactStrings.Colonchecked = ":checked".asInstanceOf[typings.preact.preactStrings.Colonchecked]
+  inline def Colonchecked: typings.preact.preactStrings.Colonchecked = ":checked".asInstanceOf[typings.preact.preactStrings.Colonchecked]
   
-  @scala.inline
-  def Colondefault: typings.preact.preactStrings.Colondefault = ":default".asInstanceOf[typings.preact.preactStrings.Colondefault]
+  inline def Colondefault: typings.preact.preactStrings.Colondefault = ":default".asInstanceOf[typings.preact.preactStrings.Colondefault]
   
-  @scala.inline
-  def Colondefined: typings.preact.preactStrings.Colondefined = ":defined".asInstanceOf[typings.preact.preactStrings.Colondefined]
+  inline def Colondefined: typings.preact.preactStrings.Colondefined = ":defined".asInstanceOf[typings.preact.preactStrings.Colondefined]
   
-  @scala.inline
-  def Colondisabled: typings.preact.preactStrings.Colondisabled = ":disabled".asInstanceOf[typings.preact.preactStrings.Colondisabled]
+  inline def Colondisabled: typings.preact.preactStrings.Colondisabled = ":disabled".asInstanceOf[typings.preact.preactStrings.Colondisabled]
   
-  @scala.inline
-  def Colonempty: typings.preact.preactStrings.Colonempty = ":empty".asInstanceOf[typings.preact.preactStrings.Colonempty]
+  inline def Colonempty: typings.preact.preactStrings.Colonempty = ":empty".asInstanceOf[typings.preact.preactStrings.Colonempty]
   
-  @scala.inline
-  def Colonenabled: typings.preact.preactStrings.Colonenabled = ":enabled".asInstanceOf[typings.preact.preactStrings.Colonenabled]
+  inline def Colonenabled: typings.preact.preactStrings.Colonenabled = ":enabled".asInstanceOf[typings.preact.preactStrings.Colonenabled]
   
-  @scala.inline
-  def Colonfirst: typings.preact.preactStrings.Colonfirst = ":first".asInstanceOf[typings.preact.preactStrings.Colonfirst]
+  inline def Colonfirst: typings.preact.preactStrings.Colonfirst = ":first".asInstanceOf[typings.preact.preactStrings.Colonfirst]
   
-  @scala.inline
-  def `Colonfirst-child`: typings.preact.preactStrings.`Colonfirst-child` = ":first-child".asInstanceOf[typings.preact.preactStrings.`Colonfirst-child`]
+  inline def `Colonfirst-child`: typings.preact.preactStrings.`Colonfirst-child` = ":first-child".asInstanceOf[typings.preact.preactStrings.`Colonfirst-child`]
   
-  @scala.inline
-  def `Colonfirst-letter`: typings.preact.preactStrings.`Colonfirst-letter` = ":first-letter".asInstanceOf[typings.preact.preactStrings.`Colonfirst-letter`]
+  inline def `Colonfirst-letter`: typings.preact.preactStrings.`Colonfirst-letter` = ":first-letter".asInstanceOf[typings.preact.preactStrings.`Colonfirst-letter`]
   
-  @scala.inline
-  def `Colonfirst-line`: typings.preact.preactStrings.`Colonfirst-line` = ":first-line".asInstanceOf[typings.preact.preactStrings.`Colonfirst-line`]
+  inline def `Colonfirst-line`: typings.preact.preactStrings.`Colonfirst-line` = ":first-line".asInstanceOf[typings.preact.preactStrings.`Colonfirst-line`]
   
-  @scala.inline
-  def `Colonfirst-of-type`: typings.preact.preactStrings.`Colonfirst-of-type` = ":first-of-type".asInstanceOf[typings.preact.preactStrings.`Colonfirst-of-type`]
+  inline def `Colonfirst-of-type`: typings.preact.preactStrings.`Colonfirst-of-type` = ":first-of-type".asInstanceOf[typings.preact.preactStrings.`Colonfirst-of-type`]
   
-  @scala.inline
-  def Colonfocus: typings.preact.preactStrings.Colonfocus = ":focus".asInstanceOf[typings.preact.preactStrings.Colonfocus]
+  inline def Colonfocus: typings.preact.preactStrings.Colonfocus = ":focus".asInstanceOf[typings.preact.preactStrings.Colonfocus]
   
-  @scala.inline
-  def `Colonfocus-visible`: typings.preact.preactStrings.`Colonfocus-visible` = ":focus-visible".asInstanceOf[typings.preact.preactStrings.`Colonfocus-visible`]
+  inline def `Colonfocus-visible`: typings.preact.preactStrings.`Colonfocus-visible` = ":focus-visible".asInstanceOf[typings.preact.preactStrings.`Colonfocus-visible`]
   
-  @scala.inline
-  def `Colonfocus-within`: typings.preact.preactStrings.`Colonfocus-within` = ":focus-within".asInstanceOf[typings.preact.preactStrings.`Colonfocus-within`]
+  inline def `Colonfocus-within`: typings.preact.preactStrings.`Colonfocus-within` = ":focus-within".asInstanceOf[typings.preact.preactStrings.`Colonfocus-within`]
   
-  @scala.inline
-  def Colonfullscreen: typings.preact.preactStrings.Colonfullscreen = ":fullscreen".asInstanceOf[typings.preact.preactStrings.Colonfullscreen]
+  inline def Colonfullscreen: typings.preact.preactStrings.Colonfullscreen = ":fullscreen".asInstanceOf[typings.preact.preactStrings.Colonfullscreen]
   
-  @scala.inline
-  def Colonhover: typings.preact.preactStrings.Colonhover = ":hover".asInstanceOf[typings.preact.preactStrings.Colonhover]
+  inline def Colonhover: typings.preact.preactStrings.Colonhover = ":hover".asInstanceOf[typings.preact.preactStrings.Colonhover]
   
-  @scala.inline
-  def `Colonin-range`: typings.preact.preactStrings.`Colonin-range` = ":in-range".asInstanceOf[typings.preact.preactStrings.`Colonin-range`]
+  inline def `Colonin-range`: typings.preact.preactStrings.`Colonin-range` = ":in-range".asInstanceOf[typings.preact.preactStrings.`Colonin-range`]
   
-  @scala.inline
-  def Colonindeterminate: typings.preact.preactStrings.Colonindeterminate = ":indeterminate".asInstanceOf[typings.preact.preactStrings.Colonindeterminate]
+  inline def Colonindeterminate: typings.preact.preactStrings.Colonindeterminate = ":indeterminate".asInstanceOf[typings.preact.preactStrings.Colonindeterminate]
   
-  @scala.inline
-  def Coloninvalid: typings.preact.preactStrings.Coloninvalid = ":invalid".asInstanceOf[typings.preact.preactStrings.Coloninvalid]
+  inline def Coloninvalid: typings.preact.preactStrings.Coloninvalid = ":invalid".asInstanceOf[typings.preact.preactStrings.Coloninvalid]
   
-  @scala.inline
-  def `Colonlast-child`: typings.preact.preactStrings.`Colonlast-child` = ":last-child".asInstanceOf[typings.preact.preactStrings.`Colonlast-child`]
+  inline def `Colonlast-child`: typings.preact.preactStrings.`Colonlast-child` = ":last-child".asInstanceOf[typings.preact.preactStrings.`Colonlast-child`]
   
-  @scala.inline
-  def `Colonlast-of-type`: typings.preact.preactStrings.`Colonlast-of-type` = ":last-of-type".asInstanceOf[typings.preact.preactStrings.`Colonlast-of-type`]
+  inline def `Colonlast-of-type`: typings.preact.preactStrings.`Colonlast-of-type` = ":last-of-type".asInstanceOf[typings.preact.preactStrings.`Colonlast-of-type`]
   
-  @scala.inline
-  def Colonleft: typings.preact.preactStrings.Colonleft = ":left".asInstanceOf[typings.preact.preactStrings.Colonleft]
+  inline def Colonleft: typings.preact.preactStrings.Colonleft = ":left".asInstanceOf[typings.preact.preactStrings.Colonleft]
   
-  @scala.inline
-  def Colonlink: typings.preact.preactStrings.Colonlink = ":link".asInstanceOf[typings.preact.preactStrings.Colonlink]
+  inline def Colonlink: typings.preact.preactStrings.Colonlink = ":link".asInstanceOf[typings.preact.preactStrings.Colonlink]
   
-  @scala.inline
-  def `Colononly-child`: typings.preact.preactStrings.`Colononly-child` = ":only-child".asInstanceOf[typings.preact.preactStrings.`Colononly-child`]
+  inline def `Colononly-child`: typings.preact.preactStrings.`Colononly-child` = ":only-child".asInstanceOf[typings.preact.preactStrings.`Colononly-child`]
   
-  @scala.inline
-  def `Colononly-of-type`: typings.preact.preactStrings.`Colononly-of-type` = ":only-of-type".asInstanceOf[typings.preact.preactStrings.`Colononly-of-type`]
+  inline def `Colononly-of-type`: typings.preact.preactStrings.`Colononly-of-type` = ":only-of-type".asInstanceOf[typings.preact.preactStrings.`Colononly-of-type`]
   
-  @scala.inline
-  def Colonoptional: typings.preact.preactStrings.Colonoptional = ":optional".asInstanceOf[typings.preact.preactStrings.Colonoptional]
+  inline def Colonoptional: typings.preact.preactStrings.Colonoptional = ":optional".asInstanceOf[typings.preact.preactStrings.Colonoptional]
   
-  @scala.inline
-  def `Colonout-of-range`: typings.preact.preactStrings.`Colonout-of-range` = ":out-of-range".asInstanceOf[typings.preact.preactStrings.`Colonout-of-range`]
+  inline def `Colonout-of-range`: typings.preact.preactStrings.`Colonout-of-range` = ":out-of-range".asInstanceOf[typings.preact.preactStrings.`Colonout-of-range`]
   
-  @scala.inline
-  def `Colonplaceholder-shown`: typings.preact.preactStrings.`Colonplaceholder-shown` = ":placeholder-shown".asInstanceOf[typings.preact.preactStrings.`Colonplaceholder-shown`]
+  inline def `Colonplaceholder-shown`: typings.preact.preactStrings.`Colonplaceholder-shown` = ":placeholder-shown".asInstanceOf[typings.preact.preactStrings.`Colonplaceholder-shown`]
   
-  @scala.inline
-  def `Colonread-only`: typings.preact.preactStrings.`Colonread-only` = ":read-only".asInstanceOf[typings.preact.preactStrings.`Colonread-only`]
+  inline def `Colonread-only`: typings.preact.preactStrings.`Colonread-only` = ":read-only".asInstanceOf[typings.preact.preactStrings.`Colonread-only`]
   
-  @scala.inline
-  def `Colonread-write`: typings.preact.preactStrings.`Colonread-write` = ":read-write".asInstanceOf[typings.preact.preactStrings.`Colonread-write`]
+  inline def `Colonread-write`: typings.preact.preactStrings.`Colonread-write` = ":read-write".asInstanceOf[typings.preact.preactStrings.`Colonread-write`]
   
-  @scala.inline
-  def Colonrequired: typings.preact.preactStrings.Colonrequired = ":required".asInstanceOf[typings.preact.preactStrings.Colonrequired]
+  inline def Colonrequired: typings.preact.preactStrings.Colonrequired = ":required".asInstanceOf[typings.preact.preactStrings.Colonrequired]
   
-  @scala.inline
-  def Colonright: typings.preact.preactStrings.Colonright = ":right".asInstanceOf[typings.preact.preactStrings.Colonright]
+  inline def Colonright: typings.preact.preactStrings.Colonright = ":right".asInstanceOf[typings.preact.preactStrings.Colonright]
   
-  @scala.inline
-  def Colonroot: typings.preact.preactStrings.Colonroot = ":root".asInstanceOf[typings.preact.preactStrings.Colonroot]
+  inline def Colonroot: typings.preact.preactStrings.Colonroot = ":root".asInstanceOf[typings.preact.preactStrings.Colonroot]
   
-  @scala.inline
-  def Colonscope: typings.preact.preactStrings.Colonscope = ":scope".asInstanceOf[typings.preact.preactStrings.Colonscope]
+  inline def Colonscope: typings.preact.preactStrings.Colonscope = ":scope".asInstanceOf[typings.preact.preactStrings.Colonscope]
   
-  @scala.inline
-  def Colontarget: typings.preact.preactStrings.Colontarget = ":target".asInstanceOf[typings.preact.preactStrings.Colontarget]
+  inline def Colontarget: typings.preact.preactStrings.Colontarget = ":target".asInstanceOf[typings.preact.preactStrings.Colontarget]
   
-  @scala.inline
-  def Colonvalid: typings.preact.preactStrings.Colonvalid = ":valid".asInstanceOf[typings.preact.preactStrings.Colonvalid]
+  inline def Colonvalid: typings.preact.preactStrings.Colonvalid = ":valid".asInstanceOf[typings.preact.preactStrings.Colonvalid]
   
-  @scala.inline
-  def Colonvisited: typings.preact.preactStrings.Colonvisited = ":visited".asInstanceOf[typings.preact.preactStrings.Colonvisited]
+  inline def Colonvisited: typings.preact.preactStrings.Colonvisited = ":visited".asInstanceOf[typings.preact.preactStrings.Colonvisited]
 }

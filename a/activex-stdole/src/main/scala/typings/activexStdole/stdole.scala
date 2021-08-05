@@ -23,26 +23,20 @@ object stdole {
   }
   object DISPPARAMS {
     
-    @scala.inline
-    def apply(cArgs: Double, cNamedArgs: Double, rgdispidNamedArgs: Double, rgvarg: js.Any): DISPPARAMS = {
+    inline def apply(cArgs: Double, cNamedArgs: Double, rgdispidNamedArgs: Double, rgvarg: js.Any): DISPPARAMS = {
       val __obj = js.Dynamic.literal(cArgs = cArgs.asInstanceOf[js.Any], cNamedArgs = cNamedArgs.asInstanceOf[js.Any], rgdispidNamedArgs = rgdispidNamedArgs.asInstanceOf[js.Any], rgvarg = rgvarg.asInstanceOf[js.Any])
       __obj.asInstanceOf[DISPPARAMS]
     }
     
-    @scala.inline
-    implicit class DISPPARAMSMutableBuilder[Self <: DISPPARAMS] (val x: Self) extends AnyVal {
+    extension [Self <: DISPPARAMS](x: Self) {
       
-      @scala.inline
-      def setCArgs(value: Double): Self = StObject.set(x, "cArgs", value.asInstanceOf[js.Any])
+      inline def setCArgs(value: Double): Self = StObject.set(x, "cArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCNamedArgs(value: Double): Self = StObject.set(x, "cNamedArgs", value.asInstanceOf[js.Any])
+      inline def setCNamedArgs(value: Double): Self = StObject.set(x, "cNamedArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRgdispidNamedArgs(value: Double): Self = StObject.set(x, "rgdispidNamedArgs", value.asInstanceOf[js.Any])
+      inline def setRgdispidNamedArgs(value: Double): Self = StObject.set(x, "rgdispidNamedArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRgvarg(value: js.Any): Self = StObject.set(x, "rgvarg", value.asInstanceOf[js.Any])
+      inline def setRgvarg(value: js.Any): Self = StObject.set(x, "rgvarg", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,8 +62,7 @@ object stdole {
   }
   object EXCEPINFO {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bstrDescription: String,
       bstrHelpFile: String,
       bstrSource: String,
@@ -84,35 +77,25 @@ object stdole {
       __obj.asInstanceOf[EXCEPINFO]
     }
     
-    @scala.inline
-    implicit class EXCEPINFOMutableBuilder[Self <: EXCEPINFO] (val x: Self) extends AnyVal {
+    extension [Self <: EXCEPINFO](x: Self) {
       
-      @scala.inline
-      def setBstrDescription(value: String): Self = StObject.set(x, "bstrDescription", value.asInstanceOf[js.Any])
+      inline def setBstrDescription(value: String): Self = StObject.set(x, "bstrDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBstrHelpFile(value: String): Self = StObject.set(x, "bstrHelpFile", value.asInstanceOf[js.Any])
+      inline def setBstrHelpFile(value: String): Self = StObject.set(x, "bstrHelpFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBstrSource(value: String): Self = StObject.set(x, "bstrSource", value.asInstanceOf[js.Any])
+      inline def setBstrSource(value: String): Self = StObject.set(x, "bstrSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDwHelpContext(value: Double): Self = StObject.set(x, "dwHelpContext", value.asInstanceOf[js.Any])
+      inline def setDwHelpContext(value: Double): Self = StObject.set(x, "dwHelpContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPfnDeferredFillIn(value: Unit): Self = StObject.set(x, "pfnDeferredFillIn", value.asInstanceOf[js.Any])
+      inline def setPfnDeferredFillIn(value: Unit): Self = StObject.set(x, "pfnDeferredFillIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvReserved(value: Unit): Self = StObject.set(x, "pvReserved", value.asInstanceOf[js.Any])
+      inline def setPvReserved(value: Unit): Self = StObject.set(x, "pvReserved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScode(value: js.Any): Self = StObject.set(x, "scode", value.asInstanceOf[js.Any])
+      inline def setScode(value: js.Any): Self = StObject.set(x, "scode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWCode(value: Double): Self = StObject.set(x, "wCode", value.asInstanceOf[js.Any])
+      inline def setWCode(value: Double): Self = StObject.set(x, "wCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWReserved(value: Double): Self = StObject.set(x, "wReserved", value.asInstanceOf[js.Any])
+      inline def setWReserved(value: Double): Self = StObject.set(x, "wReserved", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,26 +111,20 @@ object stdole {
   }
   object GUID {
     
-    @scala.inline
-    def apply(Data1: Double, Data2: Double, Data3: Double, Data4: SafeArray[Double]): GUID = {
+    inline def apply(Data1: Double, Data2: Double, Data3: Double, Data4: SafeArray[Double]): GUID = {
       val __obj = js.Dynamic.literal(Data1 = Data1.asInstanceOf[js.Any], Data2 = Data2.asInstanceOf[js.Any], Data3 = Data3.asInstanceOf[js.Any], Data4 = Data4.asInstanceOf[js.Any])
       __obj.asInstanceOf[GUID]
     }
     
-    @scala.inline
-    implicit class GUIDMutableBuilder[Self <: GUID] (val x: Self) extends AnyVal {
+    extension [Self <: GUID](x: Self) {
       
-      @scala.inline
-      def setData1(value: Double): Self = StObject.set(x, "Data1", value.asInstanceOf[js.Any])
+      inline def setData1(value: Double): Self = StObject.set(x, "Data1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData2(value: Double): Self = StObject.set(x, "Data2", value.asInstanceOf[js.Any])
+      inline def setData2(value: Double): Self = StObject.set(x, "Data2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData3(value: Double): Self = StObject.set(x, "Data3", value.asInstanceOf[js.Any])
+      inline def setData3(value: Double): Self = StObject.set(x, "Data3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData4(value: SafeArray[Double]): Self = StObject.set(x, "Data4", value.asInstanceOf[js.Any])
+      inline def setData4(value: SafeArray[Double]): Self = StObject.set(x, "Data4", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,17 +141,13 @@ object stdole {
   trait LoadPictureConstants extends StObject
   object LoadPictureConstants {
     
-    @scala.inline
-    def Color: `4` = 4.asInstanceOf[`4`]
+    inline def Color: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def Default: `0` = 0.asInstanceOf[`0`]
+    inline def Default: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def Monochrome: `1` = 1.asInstanceOf[`1`]
+    inline def Monochrome: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def VgaColor: `2` = 2.asInstanceOf[`2`]
+    inline def VgaColor: `2` = 2.asInstanceOf[`2`]
   }
   
   type OLE_COLOR = Double
@@ -187,14 +160,11 @@ object stdole {
   trait OLE_TRISTATE extends StObject
   object OLE_TRISTATE {
     
-    @scala.inline
-    def Checked: `1` = 1.asInstanceOf[`1`]
+    inline def Checked: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def Gray: `2` = 2.asInstanceOf[`2`]
+    inline def Gray: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def Unchecked: `0` = 0.asInstanceOf[`0`]
+    inline def Unchecked: `0` = 0.asInstanceOf[`0`]
   }
   
   type OLE_XPOS_CONTAINER = Double
@@ -223,13 +193,12 @@ object stdole {
     
     val Weight: Double
     
-    @JSName("stdole.StdFont_typekey")
+    /* private */ @JSName("stdole.StdFont_typekey")
     var stdoleDotStdFont_typekey: StdFont
   }
   object StdFont {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Bold: Boolean,
       Charset: Double,
       Italic: Boolean,
@@ -245,35 +214,25 @@ object stdole {
       __obj.asInstanceOf[StdFont]
     }
     
-    @scala.inline
-    implicit class StdFontMutableBuilder[Self <: StdFont] (val x: Self) extends AnyVal {
+    extension [Self <: StdFont](x: Self) {
       
-      @scala.inline
-      def setBold(value: Boolean): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: Boolean): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharset(value: Double): Self = StObject.set(x, "Charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: Double): Self = StObject.set(x, "Charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItalic(value: Boolean): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
+      inline def setItalic(value: Boolean): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoleDotStdFont_typekey(value: StdFont): Self = StObject.set(x, "stdole.StdFont_typekey", value.asInstanceOf[js.Any])
+      inline def setStdoleDotStdFont_typekey(value: StdFont): Self = StObject.set(x, "stdole.StdFont_typekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrikethrough(value: Boolean): Self = StObject.set(x, "Strikethrough", value.asInstanceOf[js.Any])
+      inline def setStrikethrough(value: Boolean): Self = StObject.set(x, "Strikethrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderline(value: Boolean): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
+      inline def setUnderline(value: Boolean): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
     }
   }
   
@@ -302,13 +261,12 @@ object stdole {
     
     val hPal: Double
     
-    @JSName("stdole.StdPicture_typekey")
+    /* private */ @JSName("stdole.StdPicture_typekey")
     var stdoleDotStdPicture_typekey: StdPicture
   }
   object StdPicture {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Handle: Double,
       Height: Double,
       Render: (Double, Double, Double, Double, Double, Double, Double, Double, Double, Unit) => Unit,
@@ -322,29 +280,21 @@ object stdole {
       __obj.asInstanceOf[StdPicture]
     }
     
-    @scala.inline
-    implicit class StdPictureMutableBuilder[Self <: StdPicture] (val x: Self) extends AnyVal {
+    extension [Self <: StdPicture](x: Self) {
       
-      @scala.inline
-      def setHPal(value: Double): Self = StObject.set(x, "hPal", value.asInstanceOf[js.Any])
+      inline def setHPal(value: Double): Self = StObject.set(x, "hPal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender(value: (Double, Double, Double, Double, Double, Double, Double, Double, Double, Unit) => Unit): Self = StObject.set(x, "Render", js.Any.fromFunction10(value))
+      inline def setRender(value: (Double, Double, Double, Double, Double, Double, Double, Double, Double, Unit) => Unit): Self = StObject.set(x, "Render", js.Any.fromFunction10(value))
       
-      @scala.inline
-      def setStdoleDotStdPicture_typekey(value: StdPicture): Self = StObject.set(x, "stdole.StdPicture_typekey", value.asInstanceOf[js.Any])
+      inline def setStdoleDotStdPicture_typekey(value: StdPicture): Self = StObject.set(x, "stdole.StdPicture_typekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     }
   }
 }

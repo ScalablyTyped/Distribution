@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class BootstrapGridViewBatchEditApi protected ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapGridViewBatchEditApi {
-  protected def this(instance: js.Any) = this()
+  /* protected */ def this(instance: js.Any) = this()
 }

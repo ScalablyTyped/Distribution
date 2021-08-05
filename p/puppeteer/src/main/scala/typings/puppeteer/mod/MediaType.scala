@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaType extends StObject
 object MediaType {
   
-  @scala.inline
-  def print: typings.puppeteer.puppeteerStrings.print = "print".asInstanceOf[typings.puppeteer.puppeteerStrings.print]
+  inline def print: typings.puppeteer.puppeteerStrings.print = "print".asInstanceOf[typings.puppeteer.puppeteerStrings.print]
   
-  @scala.inline
-  def screen: typings.puppeteer.puppeteerStrings.screen = "screen".asInstanceOf[typings.puppeteer.puppeteerStrings.screen]
+  inline def screen: typings.puppeteer.puppeteerStrings.screen = "screen".asInstanceOf[typings.puppeteer.puppeteerStrings.screen]
 }

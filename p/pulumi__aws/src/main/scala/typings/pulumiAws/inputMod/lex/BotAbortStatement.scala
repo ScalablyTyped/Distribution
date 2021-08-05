@@ -23,25 +23,19 @@ trait BotAbortStatement extends StObject {
 }
 object BotAbortStatement {
   
-  @scala.inline
-  def apply(messages: Input[js.Array[Input[BotAbortStatementMessage]]]): BotAbortStatement = {
+  inline def apply(messages: Input[js.Array[Input[BotAbortStatementMessage]]]): BotAbortStatement = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[BotAbortStatement]
   }
   
-  @scala.inline
-  implicit class BotAbortStatementMutableBuilder[Self <: BotAbortStatement] (val x: Self) extends AnyVal {
+  extension [Self <: BotAbortStatement](x: Self) {
     
-    @scala.inline
-    def setMessages(value: Input[js.Array[Input[BotAbortStatementMessage]]]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: Input[js.Array[Input[BotAbortStatementMessage]]]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: Input[BotAbortStatementMessage]*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Input[BotAbortStatementMessage]*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setResponseCard(value: Input[String]): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
+    inline def setResponseCard(value: Input[String]): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
+    inline def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
   }
 }

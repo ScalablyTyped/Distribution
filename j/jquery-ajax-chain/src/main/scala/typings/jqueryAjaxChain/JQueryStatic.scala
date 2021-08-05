@@ -14,16 +14,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(AjaxChain: JQueryAjaxChainStatic): JQueryStatic = {
+  inline def apply(AjaxChain: JQueryAjaxChainStatic): JQueryStatic = {
     val __obj = js.Dynamic.literal(AjaxChain = AjaxChain.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setAjaxChain(value: JQueryAjaxChainStatic): Self = StObject.set(x, "AjaxChain", value.asInstanceOf[js.Any])
+    inline def setAjaxChain(value: JQueryAjaxChainStatic): Self = StObject.set(x, "AjaxChain", value.asInstanceOf[js.Any])
   }
 }

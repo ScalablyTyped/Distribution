@@ -22,8 +22,7 @@ trait IfStatement_
 }
 object IfStatement_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternate: Statement,
     consequent: Statement,
     end: Double,
@@ -36,19 +35,14 @@ object IfStatement_ {
     __obj.asInstanceOf[IfStatement_]
   }
   
-  @scala.inline
-  implicit class IfStatement_MutableBuilder[Self <: IfStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: IfStatement_](x: Self) {
     
-    @scala.inline
-    def setAlternate(value: Statement): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
+    inline def setAlternate(value: Statement): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsequent(value: Statement): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
+    inline def setConsequent(value: Statement): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: IfStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IfStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

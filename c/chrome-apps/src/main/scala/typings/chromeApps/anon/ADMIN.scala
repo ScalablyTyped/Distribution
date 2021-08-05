@@ -23,28 +23,21 @@ trait ADMIN extends StObject {
 }
 object ADMIN {
   
-  @scala.inline
-  def apply(): ADMIN = {
+  inline def apply(): ADMIN = {
     val __obj = js.Dynamic.literal(ADMIN = "admin", DEVELOPMENT = "development", NORMAL = "normal", OTHER = "other", SIDELOAD = "sideload")
     __obj.asInstanceOf[ADMIN]
   }
   
-  @scala.inline
-  implicit class ADMINMutableBuilder[Self <: ADMIN] (val x: Self) extends AnyVal {
+  extension [Self <: ADMIN](x: Self) {
     
-    @scala.inline
-    def setADMIN(value: admin_): Self = StObject.set(x, "ADMIN", value.asInstanceOf[js.Any])
+    inline def setADMIN(value: admin_): Self = StObject.set(x, "ADMIN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDEVELOPMENT(value: development_): Self = StObject.set(x, "DEVELOPMENT", value.asInstanceOf[js.Any])
+    inline def setDEVELOPMENT(value: development_): Self = StObject.set(x, "DEVELOPMENT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNORMAL(value: normal_): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
+    inline def setNORMAL(value: normal_): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOTHER(value: other_): Self = StObject.set(x, "OTHER", value.asInstanceOf[js.Any])
+    inline def setOTHER(value: other_): Self = StObject.set(x, "OTHER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSIDELOAD(value: sideload_): Self = StObject.set(x, "SIDELOAD", value.asInstanceOf[js.Any])
+    inline def setSIDELOAD(value: sideload_): Self = StObject.set(x, "SIDELOAD", value.asInstanceOf[js.Any])
   }
 }

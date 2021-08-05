@@ -54,8 +54,7 @@ object loginItemMod {
   }
   object LoginItemProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       form: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WrappedFormUtils */ js.Any,
       `type`: String,
       updateActive: js.Any => Unit
@@ -65,100 +64,69 @@ object loginItemMod {
       __obj.asInstanceOf[LoginItemProps]
     }
     
-    @scala.inline
-    implicit class LoginItemPropsMutableBuilder[Self <: LoginItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: LoginItemProps](x: Self) {
       
-      @scala.inline
-      def setButtonText(value: ReactNode): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+      inline def setButtonText(value: ReactNode): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
+      inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
       
-      @scala.inline
-      def setCountDown(value: Double): Self = StObject.set(x, "countDown", value.asInstanceOf[js.Any])
+      inline def setCountDown(value: Double): Self = StObject.set(x, "countDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountDownUndefined: Self = StObject.set(x, "countDown", js.undefined)
+      inline def setCountDownUndefined: Self = StObject.set(x, "countDown", js.undefined)
       
-      @scala.inline
-      def setCustomprops(value: js.Any): Self = StObject.set(x, "customprops", value.asInstanceOf[js.Any])
+      inline def setCustomprops(value: js.Any): Self = StObject.set(x, "customprops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustompropsUndefined: Self = StObject.set(x, "customprops", js.undefined)
+      inline def setCustompropsUndefined: Self = StObject.set(x, "customprops", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setForm(
+      inline def setForm(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WrappedFormUtils */ js.Any
       ): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCaptchaButtonText(value: String): Self = StObject.set(x, "getCaptchaButtonText", value.asInstanceOf[js.Any])
+      inline def setGetCaptchaButtonText(value: String): Self = StObject.set(x, "getCaptchaButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCaptchaButtonTextUndefined: Self = StObject.set(x, "getCaptchaButtonText", js.undefined)
+      inline def setGetCaptchaButtonTextUndefined: Self = StObject.set(x, "getCaptchaButtonText", js.undefined)
       
-      @scala.inline
-      def setGetCaptchaSecondText(value: String): Self = StObject.set(x, "getCaptchaSecondText", value.asInstanceOf[js.Any])
+      inline def setGetCaptchaSecondText(value: String): Self = StObject.set(x, "getCaptchaSecondText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCaptchaSecondTextUndefined: Self = StObject.set(x, "getCaptchaSecondText", js.undefined)
+      inline def setGetCaptchaSecondTextUndefined: Self = StObject.set(x, "getCaptchaSecondText", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnGetCaptcha(value: /* event */ js.UndefOr[MouseEvent] => Unit): Self = StObject.set(x, "onGetCaptcha", js.Any.fromFunction1(value))
+      inline def setOnGetCaptcha(value: /* event */ js.UndefOr[MouseEvent] => Unit): Self = StObject.set(x, "onGetCaptcha", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGetCaptchaUndefined: Self = StObject.set(x, "onGetCaptcha", js.undefined)
+      inline def setOnGetCaptchaUndefined: Self = StObject.set(x, "onGetCaptcha", js.undefined)
       
-      @scala.inline
-      def setOnPressEnter(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onPressEnter", js.Any.fromFunction1(value))
+      inline def setOnPressEnter(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onPressEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressEnterUndefined: Self = StObject.set(x, "onPressEnter", js.undefined)
+      inline def setOnPressEnterUndefined: Self = StObject.set(x, "onPressEnter", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setRules(value: js.Array[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: js.Any*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: js.Any*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateActive(value: js.Any => Unit): Self = StObject.set(x, "updateActive", js.Any.fromFunction1(value))
+      inline def setUpdateActive(value: js.Any => Unit): Self = StObject.set(x, "updateActive", js.Any.fromFunction1(value))
     }
   }
   
@@ -197,95 +165,66 @@ object loginItemMod {
   }
   object WrappedLoginItemProps {
     
-    @scala.inline
-    def apply(): WrappedLoginItemProps = {
+    inline def apply(): WrappedLoginItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WrappedLoginItemProps]
     }
     
-    @scala.inline
-    implicit class WrappedLoginItemPropsMutableBuilder[Self <: WrappedLoginItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: WrappedLoginItemProps](x: Self) {
       
-      @scala.inline
-      def setButtonText(value: ReactNode): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+      inline def setButtonText(value: ReactNode): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
+      inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
       
-      @scala.inline
-      def setCountDown(value: Double): Self = StObject.set(x, "countDown", value.asInstanceOf[js.Any])
+      inline def setCountDown(value: Double): Self = StObject.set(x, "countDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountDownUndefined: Self = StObject.set(x, "countDown", js.undefined)
+      inline def setCountDownUndefined: Self = StObject.set(x, "countDown", js.undefined)
       
-      @scala.inline
-      def setCustomprops(value: js.Any): Self = StObject.set(x, "customprops", value.asInstanceOf[js.Any])
+      inline def setCustomprops(value: js.Any): Self = StObject.set(x, "customprops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustompropsUndefined: Self = StObject.set(x, "customprops", js.undefined)
+      inline def setCustompropsUndefined: Self = StObject.set(x, "customprops", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setGetCaptchaButtonText(value: String): Self = StObject.set(x, "getCaptchaButtonText", value.asInstanceOf[js.Any])
+      inline def setGetCaptchaButtonText(value: String): Self = StObject.set(x, "getCaptchaButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCaptchaButtonTextUndefined: Self = StObject.set(x, "getCaptchaButtonText", js.undefined)
+      inline def setGetCaptchaButtonTextUndefined: Self = StObject.set(x, "getCaptchaButtonText", js.undefined)
       
-      @scala.inline
-      def setGetCaptchaSecondText(value: String): Self = StObject.set(x, "getCaptchaSecondText", value.asInstanceOf[js.Any])
+      inline def setGetCaptchaSecondText(value: String): Self = StObject.set(x, "getCaptchaSecondText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCaptchaSecondTextUndefined: Self = StObject.set(x, "getCaptchaSecondText", js.undefined)
+      inline def setGetCaptchaSecondTextUndefined: Self = StObject.set(x, "getCaptchaSecondText", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnGetCaptcha(value: /* event */ js.UndefOr[MouseEvent] => Unit): Self = StObject.set(x, "onGetCaptcha", js.Any.fromFunction1(value))
+      inline def setOnGetCaptcha(value: /* event */ js.UndefOr[MouseEvent] => Unit): Self = StObject.set(x, "onGetCaptcha", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGetCaptchaUndefined: Self = StObject.set(x, "onGetCaptcha", js.undefined)
+      inline def setOnGetCaptchaUndefined: Self = StObject.set(x, "onGetCaptcha", js.undefined)
       
-      @scala.inline
-      def setOnPressEnter(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onPressEnter", js.Any.fromFunction1(value))
+      inline def setOnPressEnter(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onPressEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressEnterUndefined: Self = StObject.set(x, "onPressEnter", js.undefined)
+      inline def setOnPressEnterUndefined: Self = StObject.set(x, "onPressEnter", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setRules(value: js.Array[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: js.Any*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: js.Any*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

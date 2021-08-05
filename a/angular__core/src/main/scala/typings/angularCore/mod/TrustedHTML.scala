@@ -27,16 +27,13 @@ trait TrustedHTML extends StObject {
 }
 object TrustedHTML {
   
-  @scala.inline
-  def apply(): TrustedHTML = {
+  inline def apply(): TrustedHTML = {
     val __obj = js.Dynamic.literal(__brand__ = "TrustedHTML")
     __obj.asInstanceOf[TrustedHTML]
   }
   
-  @scala.inline
-  implicit class TrustedHTMLMutableBuilder[Self <: TrustedHTML] (val x: Self) extends AnyVal {
+  extension [Self <: TrustedHTML](x: Self) {
     
-    @scala.inline
-    def set__brand__(value: typings.angularCore.angularCoreStrings.TrustedHTML): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
+    inline def set__brand__(value: typings.angularCore.angularCoreStrings.TrustedHTML): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }
 }

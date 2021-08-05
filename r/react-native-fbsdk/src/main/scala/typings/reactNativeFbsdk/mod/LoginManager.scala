@@ -13,36 +13,30 @@ object LoginManager {
   /**
     * Getter for the default audience.
     */
-  @scala.inline
-  def getDefaultAudience(): js.Promise[DefaultAudience] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAudience")().asInstanceOf[js.Promise[DefaultAudience]]
+  inline def getDefaultAudience(): js.Promise[DefaultAudience] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAudience")().asInstanceOf[js.Promise[DefaultAudience]]
   
   /**
     * Getter for the login behavior.
     */
-  @scala.inline
-  def getLoginBehavior(): js.Promise[LoginBehavior] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoginBehavior")().asInstanceOf[js.Promise[LoginBehavior]]
+  inline def getLoginBehavior(): js.Promise[LoginBehavior] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoginBehavior")().asInstanceOf[js.Promise[LoginBehavior]]
   
   /**
     * Logs the user in with the requested permissions.
     */
-  @scala.inline
-  def logInWithPermissions(permissions: js.Array[Permissions]): js.Promise[LoginResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("logInWithPermissions")(permissions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LoginResult]]
+  inline def logInWithPermissions(permissions: js.Array[Permissions]): js.Promise[LoginResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("logInWithPermissions")(permissions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LoginResult]]
   
   /**
     * Logs out the user.
     */
-  @scala.inline
-  def logOut(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logOut")().asInstanceOf[Unit]
+  inline def logOut(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logOut")().asInstanceOf[Unit]
   
   /**
     * Setter for the default audience.
     */
-  @scala.inline
-  def setDefaultAudience(defaultAudience: DefaultAudience): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultAudience")(defaultAudience.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDefaultAudience(defaultAudience: DefaultAudience): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultAudience")(defaultAudience.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Setter for the login behavior.
     */
-  @scala.inline
-  def setLoginBehavior(loginBehavior: LoginBehavior): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoginBehavior")(loginBehavior.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLoginBehavior(loginBehavior: LoginBehavior): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoginBehavior")(loginBehavior.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

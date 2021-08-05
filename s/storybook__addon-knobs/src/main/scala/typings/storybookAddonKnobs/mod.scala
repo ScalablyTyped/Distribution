@@ -55,74 +55,47 @@ object mod {
   @js.native
   val SET_OPTIONS: String = js.native
   
-  @scala.inline
-  def array(name: String, value: ArrayTypeKnobValue): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def array(name: String, value: ArrayTypeKnobValue, separator: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def array(name: String, value: ArrayTypeKnobValue, separator: String, groupId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def array(name: String, value: ArrayTypeKnobValue, separator: Unit, groupId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def array(name: String, value: ArrayTypeKnobValue): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def array(name: String, value: ArrayTypeKnobValue, separator: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def array(name: String, value: ArrayTypeKnobValue, separator: String, groupId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def array(name: String, value: ArrayTypeKnobValue, separator: Unit, groupId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def boolean(name: String, value: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def boolean(name: String, value: Boolean, groupId: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def boolean(name: String, value: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def boolean(name: String, value: Boolean, groupId: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def button(name: String, callback: ButtonTypeOnClickProp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("button")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def button(name: String, callback: ButtonTypeOnClickProp, groupId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("button")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def button(name: String, callback: ButtonTypeOnClickProp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("button")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def button(name: String, callback: ButtonTypeOnClickProp, groupId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("button")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def color(name: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def color(name: String, value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def color(name: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def color(name: String, value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def date(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def date(name: String, value: Unit, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def date(name: String, value: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def date(name: String, value: Date, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def date(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def date(name: String, value: Unit, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def date(name: String, value: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def date(name: String, value: Date, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def files(name: String, accept: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def files(name: String, accept: String, value: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def files(name: String, accept: String, value: js.Array[String], groupId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def files(name: String, accept: String, value: Unit, groupId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def files(name: String, accept: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def files(name: String, accept: String, value: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def files(name: String, accept: String, value: js.Array[String], groupId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def files(name: String, accept: String, value: Unit, groupId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def knob[T /* <: KnobType */, V](name: String, options: Knob[T]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("knob")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[V]
+  inline def knob[T /* <: KnobType */, V](name: String, options: Knob[T]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("knob")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[V]
   
-  @scala.inline
-  def number(name: String, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def number(name: String, value: Double, options: Unit, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def number(name: String, value: Double, options: NumberTypeKnobOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def number(name: String, value: Double, options: NumberTypeKnobOptions, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def number(name: String, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def number(name: String, value: Double, options: Unit, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def number(name: String, value: Double, options: NumberTypeKnobOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def number(name: String, value: Double, options: NumberTypeKnobOptions, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def `object`[T](name: String, value: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def `object`[T](name: String, value: T, groupId: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def `object`[T](name: String, value: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def `object`[T](name: String, value: T, groupId: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def optionsKnob[T /* <: OptionsTypeKnobSingleValue */](
+  inline def optionsKnob[T /* <: OptionsTypeKnobSingleValue */](
     name: String,
     valuesObj: OptionsTypeOptionsProp[T],
     value: OptionsTypeKnobValue[T],
     optionsObj: OptionsKnobOptions
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsKnob")(name.asInstanceOf[js.Any], valuesObj.asInstanceOf[js.Any], value.asInstanceOf[js.Any], optionsObj.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def optionsKnob[T /* <: OptionsTypeKnobSingleValue */](
+  inline def optionsKnob[T /* <: OptionsTypeKnobSingleValue */](
     name: String,
     valuesObj: OptionsTypeOptionsProp[T],
     value: OptionsTypeKnobValue[T],
@@ -130,62 +103,39 @@ object mod {
     groupId: String
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsKnob")(name.asInstanceOf[js.Any], valuesObj.asInstanceOf[js.Any], value.asInstanceOf[js.Any], optionsObj.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def radios(name: String, options: RadiosTypeOptionsProp[Null]): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null]
-  @scala.inline
-  def radios(name: String, options: RadiosTypeOptionsProp[String], value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def radios(name: String, options: RadiosTypeOptionsProp[String], value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def radios(name: String, options: RadiosTypeOptionsProp[Double], value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def radios(name: String, options: RadiosTypeOptionsProp[Double], value: Double, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def radios(name: String, options: RadiosTypeOptionsProp[Null], value: Null, groupId: String): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Null]
-  @scala.inline
-  def radios(name: String, options: RadiosTypeOptionsProp[Unit], value: Unit, groupId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def radios(name: String, options: RadiosTypeOptionsProp[Null]): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null]
+  inline def radios(name: String, options: RadiosTypeOptionsProp[String], value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def radios(name: String, options: RadiosTypeOptionsProp[String], value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def radios(name: String, options: RadiosTypeOptionsProp[Double], value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def radios(name: String, options: RadiosTypeOptionsProp[Double], value: Double, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def radios(name: String, options: RadiosTypeOptionsProp[Null], value: Null, groupId: String): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Null]
+  inline def radios(name: String, options: RadiosTypeOptionsProp[Unit], value: Unit, groupId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def radios_Unit(name: String, options: RadiosTypeOptionsProp[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def radios_Unit(name: String, options: RadiosTypeOptionsProp[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def select(name: String, options: SelectTypeOptionsProp[Null]): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null]
-  @scala.inline
-  def select(name: String, options: SelectTypeOptionsProp[String], value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def select(name: String, options: SelectTypeOptionsProp[String], value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def select(name: String, options: SelectTypeOptionsProp[js.Array[PropertyKey]], value: js.Array[PropertyKey]): js.Array[PropertyKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[PropertyKey]]
-  @scala.inline
-  def select(
+  inline def select(name: String, options: SelectTypeOptionsProp[Null]): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null]
+  inline def select(name: String, options: SelectTypeOptionsProp[String], value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def select(name: String, options: SelectTypeOptionsProp[String], value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def select(name: String, options: SelectTypeOptionsProp[js.Array[PropertyKey]], value: js.Array[PropertyKey]): js.Array[PropertyKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[PropertyKey]]
+  inline def select(
     name: String,
     options: SelectTypeOptionsProp[js.Array[PropertyKey]],
     value: js.Array[PropertyKey],
     groupId: String
   ): js.Array[PropertyKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[PropertyKey]]
-  @scala.inline
-  def select(name: String, options: SelectTypeOptionsProp[Boolean], value: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def select(name: String, options: SelectTypeOptionsProp[Boolean], value: Boolean, groupId: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def select(name: String, options: SelectTypeOptionsProp[Double], value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def select(name: String, options: SelectTypeOptionsProp[Double], value: Double, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def select(name: String, options: SelectTypeOptionsProp[Null], value: Null, groupId: String): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Null]
-  @scala.inline
-  def select(name: String, options: SelectTypeOptionsProp[Unit], value: Unit, groupId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def select(name: String, options: SelectTypeOptionsProp[Boolean], value: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def select(name: String, options: SelectTypeOptionsProp[Boolean], value: Boolean, groupId: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def select(name: String, options: SelectTypeOptionsProp[Double], value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def select(name: String, options: SelectTypeOptionsProp[Double], value: Double, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def select(name: String, options: SelectTypeOptionsProp[Null], value: Null, groupId: String): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Null]
+  inline def select(name: String, options: SelectTypeOptionsProp[Unit], value: Unit, groupId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def select_Unit(name: String, options: SelectTypeOptionsProp[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def select_Unit(name: String, options: SelectTypeOptionsProp[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def text(name: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def text(name: String, value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def text(name: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def text(name: String, value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def withKnobs(
+  inline def withKnobs(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withKnobs")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

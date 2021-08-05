@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.NavigationButton")
 @js.native
-class NavigationButton protected ()
+/* private */ class NavigationButton ()
   extends StObject
      with typings.activexAccess.Access.NavigationButton

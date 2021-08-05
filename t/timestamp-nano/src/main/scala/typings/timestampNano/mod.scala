@@ -27,22 +27,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromDate(date: Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  inline def fromDate(date: Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
   /**
     * Creates a Timestamp instance from Date instance or milliseconds since epoch.
     *
     * @param date - Milliseconds since epoch
     */
   /* static member */
-  @scala.inline
-  def fromDate(date: Date): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  inline def fromDate(date: Date): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
   
   /* static member */
-  @scala.inline
-  def fromInt64BE(time: js.Array[Double]): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64BE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
-  @scala.inline
-  def fromInt64BE(time: js.Array[Double], offset: Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64BE")(time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
+  inline def fromInt64BE(time: js.Array[Double]): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64BE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  inline def fromInt64BE(time: js.Array[Double], offset: Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64BE")(time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
   /**
     * Creates a Timestamp instance from big endian 64bit time_t of 8 bytes sequence.
     *
@@ -50,16 +46,12 @@ object mod {
     * @param offset
     */
   /* static member */
-  @scala.inline
-  def fromInt64BE(time: Uint8Array): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64BE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
-  @scala.inline
-  def fromInt64BE(time: Uint8Array, offset: Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64BE")(time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
+  inline def fromInt64BE(time: Uint8Array): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64BE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  inline def fromInt64BE(time: Uint8Array, offset: Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64BE")(time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
   
   /* static member */
-  @scala.inline
-  def fromInt64LE(time: js.Array[Double]): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64LE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
-  @scala.inline
-  def fromInt64LE(time: js.Array[Double], offset: Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64LE")(time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
+  inline def fromInt64LE(time: js.Array[Double]): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64LE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  inline def fromInt64LE(time: js.Array[Double], offset: Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64LE")(time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
   /**
     * Creates a Timestamp instance from little endian 64bit time_t of 8 bytes sequence.
     *
@@ -67,10 +59,8 @@ object mod {
     * @param offset
     */
   /* static member */
-  @scala.inline
-  def fromInt64LE(time: Uint8Array): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64LE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
-  @scala.inline
-  def fromInt64LE(time: Uint8Array, offset: Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64LE")(time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
+  inline def fromInt64LE(time: Uint8Array): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64LE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  inline def fromInt64LE(time: Uint8Array, offset: Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64LE")(time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
   
   /**
     * Creates a Timestamp instance from string like: "2017-11-26T11:27:58.737Z"
@@ -79,8 +69,7 @@ object mod {
     * @param string - W3C Date and Time Formats
     */
   /* static member */
-  @scala.inline
-  def fromString(string: String): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  inline def fromString(string: String): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
   
   /**
     * Creates a Timestamp instance from seconds since epoch aka time_t.
@@ -88,8 +77,7 @@ object mod {
     * @param time - Seconds since epoch
     */
   /* static member */
-  @scala.inline
-  def fromTimeT(time: Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTimeT")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  inline def fromTimeT(time: Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTimeT")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
   
   @js.native
   trait Timestamp extends StObject {

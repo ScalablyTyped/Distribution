@@ -13,19 +13,15 @@ trait PutConformancePackResponse extends StObject {
 }
 object PutConformancePackResponse {
   
-  @scala.inline
-  def apply(): PutConformancePackResponse = {
+  inline def apply(): PutConformancePackResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutConformancePackResponse]
   }
   
-  @scala.inline
-  implicit class PutConformancePackResponseMutableBuilder[Self <: PutConformancePackResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutConformancePackResponse](x: Self) {
     
-    @scala.inline
-    def setConformancePackArn(value: ConformancePackArn): Self = StObject.set(x, "ConformancePackArn", value.asInstanceOf[js.Any])
+    inline def setConformancePackArn(value: ConformancePackArn): Self = StObject.set(x, "ConformancePackArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackArnUndefined: Self = StObject.set(x, "ConformancePackArn", js.undefined)
+    inline def setConformancePackArnUndefined: Self = StObject.set(x, "ConformancePackArn", js.undefined)
   }
 }

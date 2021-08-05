@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdFontBias extends StObject
 object WdFontBias {
   
-  @scala.inline
-  def wdFontBiasDefault: `0` = 0.asInstanceOf[`0`]
+  inline def wdFontBiasDefault: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdFontBiasDontCare: `255` = 255.asInstanceOf[`255`]
+  inline def wdFontBiasDontCare: `255` = 255.asInstanceOf[`255`]
   
-  @scala.inline
-  def wdFontBiasFareast: `1` = 1.asInstanceOf[`1`]
+  inline def wdFontBiasFareast: `1` = 1.asInstanceOf[`1`]
 }

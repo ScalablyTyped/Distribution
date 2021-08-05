@@ -47,8 +47,7 @@ trait XSheetCellRangeContainer
 }
 object XSheetCellRangeContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Cells: XEnumerationAccess,
     Count: Double,
     ElementType: `type`,
@@ -73,19 +72,14 @@ object XSheetCellRangeContainer {
     __obj.asInstanceOf[XSheetCellRangeContainer]
   }
   
-  @scala.inline
-  implicit class XSheetCellRangeContainerMutableBuilder[Self <: XSheetCellRangeContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetCellRangeContainer](x: Self) {
     
-    @scala.inline
-    def setAddRangeAddress(value: (CellRangeAddress, Boolean) => Unit): Self = StObject.set(x, "addRangeAddress", js.Any.fromFunction2(value))
+    inline def setAddRangeAddress(value: (CellRangeAddress, Boolean) => Unit): Self = StObject.set(x, "addRangeAddress", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddRangeAddresses(value: (SeqEquiv[CellRangeAddress], Boolean) => Unit): Self = StObject.set(x, "addRangeAddresses", js.Any.fromFunction2(value))
+    inline def setAddRangeAddresses(value: (SeqEquiv[CellRangeAddress], Boolean) => Unit): Self = StObject.set(x, "addRangeAddresses", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveRangeAddress(value: CellRangeAddress => Unit): Self = StObject.set(x, "removeRangeAddress", js.Any.fromFunction1(value))
+    inline def setRemoveRangeAddress(value: CellRangeAddress => Unit): Self = StObject.set(x, "removeRangeAddress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveRangeAddresses(value: SeqEquiv[CellRangeAddress] => Unit): Self = StObject.set(x, "removeRangeAddresses", js.Any.fromFunction1(value))
+    inline def setRemoveRangeAddresses(value: SeqEquiv[CellRangeAddress] => Unit): Self = StObject.set(x, "removeRangeAddresses", js.Any.fromFunction1(value))
   }
 }

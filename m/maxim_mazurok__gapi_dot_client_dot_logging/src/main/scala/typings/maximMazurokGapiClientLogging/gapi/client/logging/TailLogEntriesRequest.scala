@@ -29,34 +29,25 @@ trait TailLogEntriesRequest extends StObject {
 }
 object TailLogEntriesRequest {
   
-  @scala.inline
-  def apply(): TailLogEntriesRequest = {
+  inline def apply(): TailLogEntriesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TailLogEntriesRequest]
   }
   
-  @scala.inline
-  implicit class TailLogEntriesRequestMutableBuilder[Self <: TailLogEntriesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TailLogEntriesRequest](x: Self) {
     
-    @scala.inline
-    def setBufferWindow(value: String): Self = StObject.set(x, "bufferWindow", value.asInstanceOf[js.Any])
+    inline def setBufferWindow(value: String): Self = StObject.set(x, "bufferWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferWindowUndefined: Self = StObject.set(x, "bufferWindow", js.undefined)
+    inline def setBufferWindowUndefined: Self = StObject.set(x, "bufferWindow", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
+    inline def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
+    inline def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
     
-    @scala.inline
-    def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
+    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
   }
 }

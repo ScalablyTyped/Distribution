@@ -21,6 +21,5 @@ object ComboBox {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "ComboBox.defaultProps")
   @js.native
   def defaultProps: IComboBoxProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IComboBoxProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IComboBoxProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

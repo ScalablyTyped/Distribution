@@ -22,8 +22,7 @@ trait Thesaurus
      with XServiceDisplayName
 object Thesaurus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Locales: SafeArray[Locale],
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,

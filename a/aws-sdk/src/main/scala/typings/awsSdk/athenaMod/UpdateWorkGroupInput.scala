@@ -28,34 +28,25 @@ trait UpdateWorkGroupInput extends StObject {
 }
 object UpdateWorkGroupInput {
   
-  @scala.inline
-  def apply(WorkGroup: WorkGroupName): UpdateWorkGroupInput = {
+  inline def apply(WorkGroup: WorkGroupName): UpdateWorkGroupInput = {
     val __obj = js.Dynamic.literal(WorkGroup = WorkGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWorkGroupInput]
   }
   
-  @scala.inline
-  implicit class UpdateWorkGroupInputMutableBuilder[Self <: UpdateWorkGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateWorkGroupInput](x: Self) {
     
-    @scala.inline
-    def setConfigurationUpdates(value: WorkGroupConfigurationUpdates): Self = StObject.set(x, "ConfigurationUpdates", value.asInstanceOf[js.Any])
+    inline def setConfigurationUpdates(value: WorkGroupConfigurationUpdates): Self = StObject.set(x, "ConfigurationUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUpdatesUndefined: Self = StObject.set(x, "ConfigurationUpdates", js.undefined)
+    inline def setConfigurationUpdatesUndefined: Self = StObject.set(x, "ConfigurationUpdates", js.undefined)
     
-    @scala.inline
-    def setDescription(value: WorkGroupDescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: WorkGroupDescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setState(value: WorkGroupState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: WorkGroupState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setWorkGroup(value: WorkGroupName): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
+    inline def setWorkGroup(value: WorkGroupName): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ object videoUniDotDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def videoDriverFactory(base: UniDriver[js.Any]): IVideoDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("videoDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[IVideoDriver]
+  inline def videoDriverFactory(base: UniDriver[js.Any]): IVideoDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("videoDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[IVideoDriver]
   
   trait IVideoDriver
     extends StObject
@@ -24,8 +23,7 @@ object videoUniDotDriverMod {
   }
   object IVideoDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -35,11 +33,9 @@ object videoUniDotDriverMod {
       __obj.asInstanceOf[IVideoDriver]
     }
     
-    @scala.inline
-    implicit class IVideoDriverMutableBuilder[Self <: IVideoDriver] (val x: Self) extends AnyVal {
+    extension [Self <: IVideoDriver](x: Self) {
       
-      @scala.inline
-      def setGetPlayerName(value: () => js.Promise[String]): Self = StObject.set(x, "getPlayerName", js.Any.fromFunction0(value))
+      inline def setGetPlayerName(value: () => js.Promise[String]): Self = StObject.set(x, "getPlayerName", js.Any.fromFunction0(value))
     }
   }
 }

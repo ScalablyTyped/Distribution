@@ -11,16 +11,13 @@ trait Fill extends StObject {
 }
 object Fill {
   
-  @scala.inline
-  def apply(fill: IThemeConfig => String): Fill = {
+  inline def apply(fill: IThemeConfig => String): Fill = {
     val __obj = js.Dynamic.literal(fill = js.Any.fromFunction1(fill))
     __obj.asInstanceOf[Fill]
   }
   
-  @scala.inline
-  implicit class FillMutableBuilder[Self <: Fill] (val x: Self) extends AnyVal {
+  extension [Self <: Fill](x: Self) {
     
-    @scala.inline
-    def setFill(value: IThemeConfig => String): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+    inline def setFill(value: IThemeConfig => String): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
   }
 }

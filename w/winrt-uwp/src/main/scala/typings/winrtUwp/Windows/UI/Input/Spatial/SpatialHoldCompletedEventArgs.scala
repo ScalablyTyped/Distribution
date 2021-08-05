@@ -10,16 +10,13 @@ trait SpatialHoldCompletedEventArgs extends StObject {
 }
 object SpatialHoldCompletedEventArgs {
   
-  @scala.inline
-  def apply(interactionSourceKind: js.Any): SpatialHoldCompletedEventArgs = {
+  inline def apply(interactionSourceKind: js.Any): SpatialHoldCompletedEventArgs = {
     val __obj = js.Dynamic.literal(interactionSourceKind = interactionSourceKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialHoldCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class SpatialHoldCompletedEventArgsMutableBuilder[Self <: SpatialHoldCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialHoldCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
+    inline def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
   }
 }

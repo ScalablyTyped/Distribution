@@ -73,119 +73,104 @@ object Popup {
     @JSGlobal("sap.ui.core.Popup.Dock.BeginBottom")
     @js.native
     def BeginBottom: js.Any = js.native
-    @scala.inline
-    def BeginBottom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BeginBottom")(x.asInstanceOf[js.Any])
+    inline def BeginBottom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BeginBottom")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.BeginCenter")
     @js.native
     def BeginCenter: js.Any = js.native
-    @scala.inline
-    def BeginCenter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BeginCenter")(x.asInstanceOf[js.Any])
+    inline def BeginCenter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BeginCenter")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.BeginTop")
     @js.native
     def BeginTop: js.Any = js.native
-    @scala.inline
-    def BeginTop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BeginTop")(x.asInstanceOf[js.Any])
+    inline def BeginTop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BeginTop")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.CenterBottom")
     @js.native
     def CenterBottom: js.Any = js.native
-    @scala.inline
-    def CenterBottom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CenterBottom")(x.asInstanceOf[js.Any])
+    inline def CenterBottom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CenterBottom")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.CenterCenter")
     @js.native
     def CenterCenter: js.Any = js.native
-    @scala.inline
-    def CenterCenter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CenterCenter")(x.asInstanceOf[js.Any])
+    inline def CenterCenter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CenterCenter")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.CenterTop")
     @js.native
     def CenterTop: js.Any = js.native
-    @scala.inline
-    def CenterTop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CenterTop")(x.asInstanceOf[js.Any])
+    inline def CenterTop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CenterTop")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.EndBottom")
     @js.native
     def EndBottom: js.Any = js.native
-    @scala.inline
-    def EndBottom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EndBottom")(x.asInstanceOf[js.Any])
+    inline def EndBottom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EndBottom")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.EndCenter")
     @js.native
     def EndCenter: js.Any = js.native
-    @scala.inline
-    def EndCenter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EndCenter")(x.asInstanceOf[js.Any])
+    inline def EndCenter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EndCenter")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.EndTop")
     @js.native
     def EndTop: js.Any = js.native
-    @scala.inline
-    def EndTop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EndTop")(x.asInstanceOf[js.Any])
+    inline def EndTop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EndTop")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.LeftBottom")
     @js.native
     def LeftBottom: js.Any = js.native
-    @scala.inline
-    def LeftBottom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftBottom")(x.asInstanceOf[js.Any])
+    inline def LeftBottom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftBottom")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.LeftCenter")
     @js.native
     def LeftCenter: js.Any = js.native
-    @scala.inline
-    def LeftCenter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftCenter")(x.asInstanceOf[js.Any])
+    inline def LeftCenter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftCenter")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.LeftTop")
     @js.native
     def LeftTop: js.Any = js.native
-    @scala.inline
-    def LeftTop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftTop")(x.asInstanceOf[js.Any])
+    inline def LeftTop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftTop")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.RightBottom")
     @js.native
     def RightBottom: js.Any = js.native
-    @scala.inline
-    def RightBottom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RightBottom")(x.asInstanceOf[js.Any])
+    inline def RightBottom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RightBottom")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.RightCenter")
     @js.native
     def RightCenter: js.Any = js.native
-    @scala.inline
-    def RightCenter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RightCenter")(x.asInstanceOf[js.Any])
+    inline def RightCenter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RightCenter")(x.asInstanceOf[js.Any])
     
     /**
       */
     @JSGlobal("sap.ui.core.Popup.Dock.RightTop")
     @js.native
     def RightTop: js.Any = js.native
-    @scala.inline
-    def RightTop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RightTop")(x.asInstanceOf[js.Any])
+    inline def RightTop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RightTop")(x.asInstanceOf[js.Any])
   }
 }

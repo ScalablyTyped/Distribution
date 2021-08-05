@@ -13,16 +13,13 @@ trait GetVPCEConfigurationRequest extends StObject {
 }
 object GetVPCEConfigurationRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): GetVPCEConfigurationRequest = {
+  inline def apply(arn: AmazonResourceName): GetVPCEConfigurationRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVPCEConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetVPCEConfigurationRequestMutableBuilder[Self <: GetVPCEConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetVPCEConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

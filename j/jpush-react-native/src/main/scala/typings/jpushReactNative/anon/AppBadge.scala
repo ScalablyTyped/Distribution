@@ -18,19 +18,15 @@ trait AppBadge extends StObject {
 }
 object AppBadge {
   
-  @scala.inline
-  def apply(appBadge: Double, badge: Double): AppBadge = {
+  inline def apply(appBadge: Double, badge: Double): AppBadge = {
     val __obj = js.Dynamic.literal(appBadge = appBadge.asInstanceOf[js.Any], badge = badge.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppBadge]
   }
   
-  @scala.inline
-  implicit class AppBadgeMutableBuilder[Self <: AppBadge] (val x: Self) extends AnyVal {
+  extension [Self <: AppBadge](x: Self) {
     
-    @scala.inline
-    def setAppBadge(value: Double): Self = StObject.set(x, "appBadge", value.asInstanceOf[js.Any])
+    inline def setAppBadge(value: Double): Self = StObject.set(x, "appBadge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    inline def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
   }
 }

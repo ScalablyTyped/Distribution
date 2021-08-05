@@ -47,67 +47,47 @@ trait IToolbar
 }
 object IToolbar {
   
-  @scala.inline
-  def apply(): IToolbar = {
+  inline def apply(): IToolbar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IToolbar]
   }
   
-  @scala.inline
-  implicit class IToolbarMutableBuilder[Self <: IToolbar] (val x: Self) extends AnyVal {
+  extension [Self <: IToolbar](x: Self) {
     
-    @scala.inline
-    def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
+    inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
     
-    @scala.inline
-    def setGetTitle(value: () => ITitle): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+    inline def setGetTitle(value: () => ITitle): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
+    inline def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
     
-    @scala.inline
-    def setHideTitle(value: () => Unit): Self = StObject.set(x, "hideTitle", js.Any.fromFunction0(value))
+    inline def setHideTitle(value: () => Unit): Self = StObject.set(x, "hideTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideTitleUndefined: Self = StObject.set(x, "hideTitle", js.undefined)
+    inline def setHideTitleUndefined: Self = StObject.set(x, "hideTitle", js.undefined)
     
-    @scala.inline
-    def setMinHeight(value: java.lang.String): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    inline def setMinHeight(value: java.lang.String): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
-    @scala.inline
-    def setSetMinHeight(value: /* minHeight */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
+    inline def setSetMinHeight(value: /* minHeight */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinHeightUndefined: Self = StObject.set(x, "setMinHeight", js.undefined)
+    inline def setSetMinHeightUndefined: Self = StObject.set(x, "setMinHeight", js.undefined)
     
-    @scala.inline
-    def setSetTitle(value: /* title */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: /* title */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
+    inline def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     
-    @scala.inline
-    def setShowTitle(value: () => Unit): Self = StObject.set(x, "showTitle", js.Any.fromFunction0(value))
+    inline def setShowTitle(value: () => Unit): Self = StObject.set(x, "showTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
+    inline def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleCls(value: Boolean): Self = StObject.set(x, "titleCls", value.asInstanceOf[js.Any])
+    inline def setTitleCls(value: Boolean): Self = StObject.set(x, "titleCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleClsUndefined: Self = StObject.set(x, "titleCls", js.undefined)
+    inline def setTitleClsUndefined: Self = StObject.set(x, "titleCls", js.undefined)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

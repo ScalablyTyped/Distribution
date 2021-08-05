@@ -19,34 +19,25 @@ trait BlockIconNormalized extends StObject {
 }
 object BlockIconNormalized {
   
-  @scala.inline
-  def apply(src: Icon | ReactElement | ComponentType[js.Object]): BlockIconNormalized = {
+  inline def apply(src: Icon | ReactElement | ComponentType[js.Object]): BlockIconNormalized = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockIconNormalized]
   }
   
-  @scala.inline
-  implicit class BlockIconNormalizedMutableBuilder[Self <: BlockIconNormalized] (val x: Self) extends AnyVal {
+  extension [Self <: BlockIconNormalized](x: Self) {
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setForeground(value: String): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
+    inline def setForeground(value: String): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundUndefined: Self = StObject.set(x, "foreground", js.undefined)
+    inline def setForegroundUndefined: Self = StObject.set(x, "foreground", js.undefined)
     
-    @scala.inline
-    def setShadowColor(value: String): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: String): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
+    inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
-    @scala.inline
-    def setSrc(value: Icon | ReactElement | ComponentType[js.Object]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: Icon | ReactElement | ComponentType[js.Object]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

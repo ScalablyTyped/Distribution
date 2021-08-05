@@ -11,19 +11,15 @@ trait TrackingIssue extends StObject {
 }
 object TrackingIssue {
   
-  @scala.inline
-  def apply(): TrackingIssue = {
+  inline def apply(): TrackingIssue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrackingIssue]
   }
   
-  @scala.inline
-  implicit class TrackingIssueMutableBuilder[Self <: TrackingIssue] (val x: Self) extends AnyVal {
+  extension [Self <: TrackingIssue](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

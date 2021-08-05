@@ -12,8 +12,7 @@ object paginationDotUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def paginationDriverFactory(base: UniDriver[js.Any]): PaginationDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("paginationDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[PaginationDriver]
+  inline def paginationDriverFactory(base: UniDriver[js.Any]): PaginationDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("paginationDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[PaginationDriver]
   
   trait PaginationDriver
     extends StObject
@@ -33,8 +32,7 @@ object paginationDotUniDriverMod {
   }
   object PaginationDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickNextButton: () => js.Promise[Unit],
       clickOnPage: Double => js.Promise[Unit],
@@ -49,26 +47,19 @@ object paginationDotUniDriverMod {
       __obj.asInstanceOf[PaginationDriver]
     }
     
-    @scala.inline
-    implicit class PaginationDriverMutableBuilder[Self <: PaginationDriver] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationDriver](x: Self) {
       
-      @scala.inline
-      def setClickNextButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickNextButton", js.Any.fromFunction0(value))
+      inline def setClickNextButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickNextButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnPage(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickOnPage", js.Any.fromFunction1(value))
+      inline def setClickOnPage(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickOnPage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickPreviousButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickPreviousButton", js.Any.fromFunction0(value))
+      inline def setClickPreviousButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickPreviousButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrentPage(value: () => js.Promise[Double]): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
+      inline def setGetCurrentPage(value: () => js.Promise[Double]): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTotalPages(value: () => js.Promise[Double]): Self = StObject.set(x, "getTotalPages", js.Any.fromFunction0(value))
+      inline def setGetTotalPages(value: () => js.Promise[Double]): Self = StObject.set(x, "getTotalPages", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsVisible(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+      inline def setIsVisible(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     }
   }
 }

@@ -18,25 +18,19 @@ trait DescribeJobResponse extends StObject {
 }
 object DescribeJobResponse {
   
-  @scala.inline
-  def apply(): DescribeJobResponse = {
+  inline def apply(): DescribeJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeJobResponse]
   }
   
-  @scala.inline
-  implicit class DescribeJobResponseMutableBuilder[Self <: DescribeJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeJobResponse](x: Self) {
     
-    @scala.inline
-    def setDocumentSource(value: JobDocumentSource): Self = StObject.set(x, "documentSource", value.asInstanceOf[js.Any])
+    inline def setDocumentSource(value: JobDocumentSource): Self = StObject.set(x, "documentSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentSourceUndefined: Self = StObject.set(x, "documentSource", js.undefined)
+    inline def setDocumentSourceUndefined: Self = StObject.set(x, "documentSource", js.undefined)
     
-    @scala.inline
-    def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
+    inline def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
   }
 }

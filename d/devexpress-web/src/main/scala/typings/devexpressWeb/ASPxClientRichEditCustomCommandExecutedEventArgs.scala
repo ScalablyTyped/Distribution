@@ -23,19 +23,15 @@ trait ASPxClientRichEditCustomCommandExecutedEventArgs
 }
 object ASPxClientRichEditCustomCommandExecutedEventArgs {
   
-  @scala.inline
-  def apply(commandName: String, parameter: js.Any): ASPxClientRichEditCustomCommandExecutedEventArgs = {
+  inline def apply(commandName: String, parameter: js.Any): ASPxClientRichEditCustomCommandExecutedEventArgs = {
     val __obj = js.Dynamic.literal(commandName = commandName.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRichEditCustomCommandExecutedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRichEditCustomCommandExecutedEventArgsMutableBuilder[Self <: ASPxClientRichEditCustomCommandExecutedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRichEditCustomCommandExecutedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
+    inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameter(value: js.Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: js.Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }
 }

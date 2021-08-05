@@ -30,68 +30,48 @@ object anon {
   }
   object Aftercopy {
     
-    @scala.inline
-    def apply(): Aftercopy = {
+    inline def apply(): Aftercopy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Aftercopy]
     }
     
-    @scala.inline
-    implicit class AftercopyMutableBuilder[Self <: Aftercopy] (val x: Self) extends AnyVal {
+    extension [Self <: Aftercopy](x: Self) {
       
-      @scala.inline
-      def setAftercopy(value: EventListenerOrEventListenerObject[ZeroClipboardAfterCopyEvent]): Self = StObject.set(x, "aftercopy", value.asInstanceOf[js.Any])
+      inline def setAftercopy(value: EventListenerOrEventListenerObject[ZeroClipboardAfterCopyEvent]): Self = StObject.set(x, "aftercopy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAftercopyFunction1(value: ZeroClipboardAfterCopyEvent => Unit): Self = StObject.set(x, "aftercopy", js.Any.fromFunction1(value))
+      inline def setAftercopyFunction1(value: ZeroClipboardAfterCopyEvent => Unit): Self = StObject.set(x, "aftercopy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAftercopyUndefined: Self = StObject.set(x, "aftercopy", js.undefined)
+      inline def setAftercopyUndefined: Self = StObject.set(x, "aftercopy", js.undefined)
       
-      @scala.inline
-      def setBeforecopy(value: EventListenerOrEventListenerObject[ZeroClipboardBeforeCopyEvent]): Self = StObject.set(x, "beforecopy", value.asInstanceOf[js.Any])
+      inline def setBeforecopy(value: EventListenerOrEventListenerObject[ZeroClipboardBeforeCopyEvent]): Self = StObject.set(x, "beforecopy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforecopyFunction1(value: ZeroClipboardBeforeCopyEvent => Unit): Self = StObject.set(x, "beforecopy", js.Any.fromFunction1(value))
+      inline def setBeforecopyFunction1(value: ZeroClipboardBeforeCopyEvent => Unit): Self = StObject.set(x, "beforecopy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforecopyUndefined: Self = StObject.set(x, "beforecopy", js.undefined)
+      inline def setBeforecopyUndefined: Self = StObject.set(x, "beforecopy", js.undefined)
       
-      @scala.inline
-      def setCopy(value: EventListenerOrEventListenerObject[ZeroClipboardCopyEvent]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: EventListenerOrEventListenerObject[ZeroClipboardCopyEvent]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyFunction1(value: ZeroClipboardCopyEvent => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
+      inline def setCopyFunction1(value: ZeroClipboardCopyEvent => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+      inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: EventListenerOrEventListenerObject[ZeroClipboardDestroyEvent]): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+      inline def setDestroy(value: EventListenerOrEventListenerObject[ZeroClipboardDestroyEvent]): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyFunction1(value: ZeroClipboardDestroyEvent => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroyFunction1(value: ZeroClipboardDestroyEvent => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setError(value: EventListenerOrEventListenerObject[ZeroClipboardErrorEvent]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: EventListenerOrEventListenerObject[ZeroClipboardErrorEvent]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorFunction1(value: ZeroClipboardErrorEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setErrorFunction1(value: ZeroClipboardErrorEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setReady(value: EventListenerOrEventListenerObject[ZeroClipboardReadyEvent]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+      inline def setReady(value: EventListenerOrEventListenerObject[ZeroClipboardReadyEvent]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadyFunction1(value: ZeroClipboardReadyEvent => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+      inline def setReadyFunction1(value: ZeroClipboardReadyEvent => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+      inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     }
   }
   
@@ -111,68 +91,48 @@ object anon {
   }
   object Beforecopy {
     
-    @scala.inline
-    def apply(): Beforecopy = {
+    inline def apply(): Beforecopy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Beforecopy]
     }
     
-    @scala.inline
-    implicit class BeforecopyMutableBuilder[Self <: Beforecopy] (val x: Self) extends AnyVal {
+    extension [Self <: Beforecopy](x: Self) {
       
-      @scala.inline
-      def setAftercopy(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardAfterCopyEvent]]): Self = StObject.set(x, "aftercopy", value.asInstanceOf[js.Any])
+      inline def setAftercopy(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardAfterCopyEvent]]): Self = StObject.set(x, "aftercopy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAftercopyUndefined: Self = StObject.set(x, "aftercopy", js.undefined)
+      inline def setAftercopyUndefined: Self = StObject.set(x, "aftercopy", js.undefined)
       
-      @scala.inline
-      def setAftercopyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardAfterCopyEvent]*): Self = StObject.set(x, "aftercopy", js.Array(value :_*))
+      inline def setAftercopyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardAfterCopyEvent]*): Self = StObject.set(x, "aftercopy", js.Array(value :_*))
       
-      @scala.inline
-      def setBeforecopy(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardBeforeCopyEvent]]): Self = StObject.set(x, "beforecopy", value.asInstanceOf[js.Any])
+      inline def setBeforecopy(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardBeforeCopyEvent]]): Self = StObject.set(x, "beforecopy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforecopyUndefined: Self = StObject.set(x, "beforecopy", js.undefined)
+      inline def setBeforecopyUndefined: Self = StObject.set(x, "beforecopy", js.undefined)
       
-      @scala.inline
-      def setBeforecopyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardBeforeCopyEvent]*): Self = StObject.set(x, "beforecopy", js.Array(value :_*))
+      inline def setBeforecopyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardBeforeCopyEvent]*): Self = StObject.set(x, "beforecopy", js.Array(value :_*))
       
-      @scala.inline
-      def setCopy(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardCopyEvent]]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardCopyEvent]]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+      inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      @scala.inline
-      def setCopyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardCopyEvent]*): Self = StObject.set(x, "copy", js.Array(value :_*))
+      inline def setCopyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardCopyEvent]*): Self = StObject.set(x, "copy", js.Array(value :_*))
       
-      @scala.inline
-      def setDestroy(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardDestroyEvent]]): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+      inline def setDestroy(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardDestroyEvent]]): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setDestroyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardDestroyEvent]*): Self = StObject.set(x, "destroy", js.Array(value :_*))
+      inline def setDestroyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardDestroyEvent]*): Self = StObject.set(x, "destroy", js.Array(value :_*))
       
-      @scala.inline
-      def setError(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardErrorEvent]]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardErrorEvent]]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setErrorVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardErrorEvent]*): Self = StObject.set(x, "error", js.Array(value :_*))
+      inline def setErrorVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardErrorEvent]*): Self = StObject.set(x, "error", js.Array(value :_*))
       
-      @scala.inline
-      def setReady(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardReadyEvent]]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+      inline def setReady(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardReadyEvent]]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+      inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
       
-      @scala.inline
-      def setReadyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardReadyEvent]*): Self = StObject.set(x, "ready", js.Array(value :_*))
+      inline def setReadyVarargs(value: EventListenerOrEventListenerObject[ZeroClipboardReadyEvent]*): Self = StObject.set(x, "ready", js.Array(value :_*))
     }
   }
   
@@ -194,21 +154,17 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, `type`: String): Name = {
+    inline def apply(name: String, `type`: String): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

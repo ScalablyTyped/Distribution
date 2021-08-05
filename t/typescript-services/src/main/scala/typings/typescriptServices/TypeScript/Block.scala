@@ -18,8 +18,7 @@ trait Block
 }
 object Block {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -48,22 +47,16 @@ object Block {
     __obj.asInstanceOf[Block]
   }
   
-  @scala.inline
-  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+  extension [Self <: Block](x: Self) {
     
-    @scala.inline
-    def setCloseBraceLeadingComments(value: js.Array[Comment]): Self = StObject.set(x, "closeBraceLeadingComments", value.asInstanceOf[js.Any])
+    inline def setCloseBraceLeadingComments(value: js.Array[Comment]): Self = StObject.set(x, "closeBraceLeadingComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseBraceLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "closeBraceLeadingComments", js.Array(value :_*))
+    inline def setCloseBraceLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "closeBraceLeadingComments", js.Array(value :_*))
     
-    @scala.inline
-    def setCloseBraceToken(value: IASTSpan): Self = StObject.set(x, "closeBraceToken", value.asInstanceOf[js.Any])
+    inline def setCloseBraceToken(value: IASTSpan): Self = StObject.set(x, "closeBraceToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatements(value: ISyntaxList2): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: ISyntaxList2): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (Block, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (Block, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

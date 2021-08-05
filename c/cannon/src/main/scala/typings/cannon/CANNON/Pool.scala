@@ -18,8 +18,7 @@ trait Pool extends StObject {
 }
 object Pool {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructObject: () => js.Any,
     get: () => js.Any,
     objects: js.Array[js.Any],
@@ -31,28 +30,20 @@ object Pool {
     __obj.asInstanceOf[Pool]
   }
   
-  @scala.inline
-  implicit class PoolMutableBuilder[Self <: Pool] (val x: Self) extends AnyVal {
+  extension [Self <: Pool](x: Self) {
     
-    @scala.inline
-    def setConstructObject(value: () => js.Any): Self = StObject.set(x, "constructObject", js.Any.fromFunction0(value))
+    inline def setConstructObject(value: () => js.Any): Self = StObject.set(x, "constructObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+    inline def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
+    inline def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
     
-    @scala.inline
-    def setRelease(value: () => js.Any): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+    inline def setRelease(value: () => js.Any): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: js.Array[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Array[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: js.Any*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: js.Any*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

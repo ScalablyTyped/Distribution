@@ -13,8 +13,6 @@ object getWindowScrollMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: Window): ScrollTop = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[ScrollTop]
-  @scala.inline
-  def default(node: Node): ScrollTop = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[ScrollTop]
+  inline def default(node: Window): ScrollTop = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[ScrollTop]
+  inline def default(node: Node): ScrollTop = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[ScrollTop]
 }

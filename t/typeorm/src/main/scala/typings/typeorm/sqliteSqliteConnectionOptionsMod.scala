@@ -52,39 +52,29 @@ object sqliteSqliteConnectionOptionsMod {
   }
   object SqliteConnectionOptions {
     
-    @scala.inline
-    def apply(database: String): SqliteConnectionOptions = {
+    inline def apply(database: String): SqliteConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("sqlite")
       __obj.asInstanceOf[SqliteConnectionOptions]
     }
     
-    @scala.inline
-    implicit class SqliteConnectionOptionsMutableBuilder[Self <: SqliteConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SqliteConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setBusyErrorRetry(value: Double): Self = StObject.set(x, "busyErrorRetry", value.asInstanceOf[js.Any])
+      inline def setBusyErrorRetry(value: Double): Self = StObject.set(x, "busyErrorRetry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBusyErrorRetryUndefined: Self = StObject.set(x, "busyErrorRetry", js.undefined)
+      inline def setBusyErrorRetryUndefined: Self = StObject.set(x, "busyErrorRetry", js.undefined)
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableWAL(value: Boolean): Self = StObject.set(x, "enableWAL", value.asInstanceOf[js.Any])
+      inline def setEnableWAL(value: Boolean): Self = StObject.set(x, "enableWAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableWALUndefined: Self = StObject.set(x, "enableWAL", js.undefined)
+      inline def setEnableWALUndefined: Self = StObject.set(x, "enableWAL", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setType(value: sqlite): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: sqlite): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

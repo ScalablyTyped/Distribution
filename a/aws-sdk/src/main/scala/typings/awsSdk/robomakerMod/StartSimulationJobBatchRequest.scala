@@ -28,37 +28,27 @@ trait StartSimulationJobBatchRequest extends StObject {
 }
 object StartSimulationJobBatchRequest {
   
-  @scala.inline
-  def apply(createSimulationJobRequests: CreateSimulationJobRequests): StartSimulationJobBatchRequest = {
+  inline def apply(createSimulationJobRequests: CreateSimulationJobRequests): StartSimulationJobBatchRequest = {
     val __obj = js.Dynamic.literal(createSimulationJobRequests = createSimulationJobRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSimulationJobBatchRequest]
   }
   
-  @scala.inline
-  implicit class StartSimulationJobBatchRequestMutableBuilder[Self <: StartSimulationJobBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartSimulationJobBatchRequest](x: Self) {
     
-    @scala.inline
-    def setBatchPolicy(value: BatchPolicy): Self = StObject.set(x, "batchPolicy", value.asInstanceOf[js.Any])
+    inline def setBatchPolicy(value: BatchPolicy): Self = StObject.set(x, "batchPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchPolicyUndefined: Self = StObject.set(x, "batchPolicy", js.undefined)
+    inline def setBatchPolicyUndefined: Self = StObject.set(x, "batchPolicy", js.undefined)
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    @scala.inline
-    def setCreateSimulationJobRequests(value: CreateSimulationJobRequests): Self = StObject.set(x, "createSimulationJobRequests", value.asInstanceOf[js.Any])
+    inline def setCreateSimulationJobRequests(value: CreateSimulationJobRequests): Self = StObject.set(x, "createSimulationJobRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateSimulationJobRequestsVarargs(value: SimulationJobRequest*): Self = StObject.set(x, "createSimulationJobRequests", js.Array(value :_*))
+    inline def setCreateSimulationJobRequestsVarargs(value: SimulationJobRequest*): Self = StObject.set(x, "createSimulationJobRequests", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

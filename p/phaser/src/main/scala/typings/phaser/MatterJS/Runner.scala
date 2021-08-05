@@ -51,22 +51,17 @@ trait Runner extends StObject {
 }
 object Runner {
   
-  @scala.inline
-  def apply(delta: Double, enabled: Boolean, isFixed: Boolean): Runner = {
+  inline def apply(delta: Double, enabled: Boolean, isFixed: Boolean): Runner = {
     val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], isFixed = isFixed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Runner]
   }
   
-  @scala.inline
-  implicit class RunnerMutableBuilder[Self <: Runner] (val x: Self) extends AnyVal {
+  extension [Self <: Runner](x: Self) {
     
-    @scala.inline
-    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
+    inline def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
   }
 }

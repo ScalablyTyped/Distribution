@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-accordion"
-version := "2.2-dt-20200515Z-3fa17b"
+version := "2.2-dt-20200515Z-53c78a"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

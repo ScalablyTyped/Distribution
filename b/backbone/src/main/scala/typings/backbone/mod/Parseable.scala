@@ -10,19 +10,15 @@ trait Parseable extends StObject {
 }
 object Parseable {
   
-  @scala.inline
-  def apply(): Parseable = {
+  inline def apply(): Parseable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Parseable]
   }
   
-  @scala.inline
-  implicit class ParseableMutableBuilder[Self <: Parseable] (val x: Self) extends AnyVal {
+  extension [Self <: Parseable](x: Self) {
     
-    @scala.inline
-    def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    inline def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
   }
 }

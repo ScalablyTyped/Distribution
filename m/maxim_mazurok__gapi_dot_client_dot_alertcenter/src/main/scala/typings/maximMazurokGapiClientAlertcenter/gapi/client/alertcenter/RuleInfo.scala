@@ -14,25 +14,19 @@ trait RuleInfo extends StObject {
 }
 object RuleInfo {
   
-  @scala.inline
-  def apply(): RuleInfo = {
+  inline def apply(): RuleInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleInfo]
   }
   
-  @scala.inline
-  implicit class RuleInfoMutableBuilder[Self <: RuleInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RuleInfo](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

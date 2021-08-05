@@ -12,17 +12,14 @@ object anon {
   }
   object Device {
     
-    @scala.inline
-    def apply(device: String): Device = {
+    inline def apply(device: String): Device = {
       val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
       __obj.asInstanceOf[Device]
     }
     
-    @scala.inline
-    implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
+    extension [Self <: Device](x: Self) {
       
-      @scala.inline
-      def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,20 +29,16 @@ object anon {
   }
   object Timeout {
     
-    @scala.inline
-    def apply(): Timeout = {
+    inline def apply(): Timeout = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Timeout]
     }
     
-    @scala.inline
-    implicit class TimeoutMutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
+    extension [Self <: Timeout](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

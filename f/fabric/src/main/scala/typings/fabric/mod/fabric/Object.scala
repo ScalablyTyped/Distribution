@@ -24,8 +24,7 @@ object Object {
   @JSImport("fabric", "fabric.Object.NUM_FRACTION_DIGITS")
   @js.native
   def NUM_FRACTION_DIGITS: js.UndefOr[Double] = js.native
-  @scala.inline
-  def NUM_FRACTION_DIGITS_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUM_FRACTION_DIGITS")(x.asInstanceOf[js.Any])
+  inline def NUM_FRACTION_DIGITS_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUM_FRACTION_DIGITS")(x.asInstanceOf[js.Any])
   
   /**
     * Creates fabric Object instance
@@ -36,19 +35,15 @@ object Object {
     * @private
     * @return {fabric.Object}
     */
-  @scala.inline
-  def _fromObject(className: String, `object`: typings.fabric.fabricImplMod.Object): typings.fabric.fabricImplMod.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Object]
-  @scala.inline
-  def _fromObject(className: String, `object`: typings.fabric.fabricImplMod.Object, callback: js.Function): typings.fabric.fabricImplMod.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Object]
-  @scala.inline
-  def _fromObject(
+  inline def _fromObject(className: String, `object`: typings.fabric.fabricImplMod.Object): typings.fabric.fabricImplMod.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Object]
+  inline def _fromObject(className: String, `object`: typings.fabric.fabricImplMod.Object, callback: js.Function): typings.fabric.fabricImplMod.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Object]
+  inline def _fromObject(
     className: String,
     `object`: typings.fabric.fabricImplMod.Object,
     callback: js.Function,
     extraParam: js.Any
   ): typings.fabric.fabricImplMod.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Object]
-  @scala.inline
-  def _fromObject(
+  inline def _fromObject(
     className: String,
     `object`: typings.fabric.fabricImplMod.Object,
     callback: Unit,

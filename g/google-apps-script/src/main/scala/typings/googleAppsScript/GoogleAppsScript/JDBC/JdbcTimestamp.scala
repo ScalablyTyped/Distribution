@@ -49,8 +49,7 @@ trait JdbcTimestamp extends StObject {
 }
 object JdbcTimestamp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     after: JdbcTimestamp => Boolean,
     before: JdbcTimestamp => Boolean,
     getDate: () => Integer,
@@ -74,61 +73,42 @@ object JdbcTimestamp {
     __obj.asInstanceOf[JdbcTimestamp]
   }
   
-  @scala.inline
-  implicit class JdbcTimestampMutableBuilder[Self <: JdbcTimestamp] (val x: Self) extends AnyVal {
+  extension [Self <: JdbcTimestamp](x: Self) {
     
-    @scala.inline
-    def setAfter(value: JdbcTimestamp => Boolean): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+    inline def setAfter(value: JdbcTimestamp => Boolean): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBefore(value: JdbcTimestamp => Boolean): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+    inline def setBefore(value: JdbcTimestamp => Boolean): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDate(value: () => Integer): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
+    inline def setGetDate(value: () => Integer): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHours(value: () => Integer): Self = StObject.set(x, "getHours", js.Any.fromFunction0(value))
+    inline def setGetHours(value: () => Integer): Self = StObject.set(x, "getHours", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinutes(value: () => Integer): Self = StObject.set(x, "getMinutes", js.Any.fromFunction0(value))
+    inline def setGetMinutes(value: () => Integer): Self = StObject.set(x, "getMinutes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMonth(value: () => Integer): Self = StObject.set(x, "getMonth", js.Any.fromFunction0(value))
+    inline def setGetMonth(value: () => Integer): Self = StObject.set(x, "getMonth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNanos(value: () => Integer): Self = StObject.set(x, "getNanos", js.Any.fromFunction0(value))
+    inline def setGetNanos(value: () => Integer): Self = StObject.set(x, "getNanos", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSeconds(value: () => Integer): Self = StObject.set(x, "getSeconds", js.Any.fromFunction0(value))
+    inline def setGetSeconds(value: () => Integer): Self = StObject.set(x, "getSeconds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTime(value: () => Integer): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
+    inline def setGetTime(value: () => Integer): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetYear(value: () => Integer): Self = StObject.set(x, "getYear", js.Any.fromFunction0(value))
+    inline def setGetYear(value: () => Integer): Self = StObject.set(x, "getYear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDate(value: Integer => Unit): Self = StObject.set(x, "setDate", js.Any.fromFunction1(value))
+    inline def setSetDate(value: Integer => Unit): Self = StObject.set(x, "setDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHours(value: Integer => Unit): Self = StObject.set(x, "setHours", js.Any.fromFunction1(value))
+    inline def setSetHours(value: Integer => Unit): Self = StObject.set(x, "setHours", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinutes(value: Integer => Unit): Self = StObject.set(x, "setMinutes", js.Any.fromFunction1(value))
+    inline def setSetMinutes(value: Integer => Unit): Self = StObject.set(x, "setMinutes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMonth(value: Integer => Unit): Self = StObject.set(x, "setMonth", js.Any.fromFunction1(value))
+    inline def setSetMonth(value: Integer => Unit): Self = StObject.set(x, "setMonth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNanos(value: Integer => Unit): Self = StObject.set(x, "setNanos", js.Any.fromFunction1(value))
+    inline def setSetNanos(value: Integer => Unit): Self = StObject.set(x, "setNanos", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSeconds(value: Integer => Unit): Self = StObject.set(x, "setSeconds", js.Any.fromFunction1(value))
+    inline def setSetSeconds(value: Integer => Unit): Self = StObject.set(x, "setSeconds", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTime(value: Integer => Unit): Self = StObject.set(x, "setTime", js.Any.fromFunction1(value))
+    inline def setSetTime(value: Integer => Unit): Self = StObject.set(x, "setTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetYear(value: Integer => Unit): Self = StObject.set(x, "setYear", js.Any.fromFunction1(value))
+    inline def setSetYear(value: Integer => Unit): Self = StObject.set(x, "setYear", js.Any.fromFunction1(value))
   }
 }

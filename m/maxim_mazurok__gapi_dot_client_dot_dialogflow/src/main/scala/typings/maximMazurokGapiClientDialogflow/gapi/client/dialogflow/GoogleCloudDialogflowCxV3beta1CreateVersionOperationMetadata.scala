@@ -11,19 +11,15 @@ trait GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadata extends StObj
 }
 object GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadata = {
+  inline def apply(): GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadataMutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

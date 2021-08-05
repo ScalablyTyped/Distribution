@@ -20,34 +20,25 @@ trait ListUptimeCheckConfigsResponse extends StObject {
 }
 object ListUptimeCheckConfigsResponse {
   
-  @scala.inline
-  def apply(): ListUptimeCheckConfigsResponse = {
+  inline def apply(): ListUptimeCheckConfigsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUptimeCheckConfigsResponse]
   }
   
-  @scala.inline
-  implicit class ListUptimeCheckConfigsResponseMutableBuilder[Self <: ListUptimeCheckConfigsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUptimeCheckConfigsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
     
-    @scala.inline
-    def setUptimeCheckConfigs(value: js.Array[UptimeCheckConfig]): Self = StObject.set(x, "uptimeCheckConfigs", value.asInstanceOf[js.Any])
+    inline def setUptimeCheckConfigs(value: js.Array[UptimeCheckConfig]): Self = StObject.set(x, "uptimeCheckConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUptimeCheckConfigsUndefined: Self = StObject.set(x, "uptimeCheckConfigs", js.undefined)
+    inline def setUptimeCheckConfigsUndefined: Self = StObject.set(x, "uptimeCheckConfigs", js.undefined)
     
-    @scala.inline
-    def setUptimeCheckConfigsVarargs(value: UptimeCheckConfig*): Self = StObject.set(x, "uptimeCheckConfigs", js.Array(value :_*))
+    inline def setUptimeCheckConfigsVarargs(value: UptimeCheckConfig*): Self = StObject.set(x, "uptimeCheckConfigs", js.Array(value :_*))
   }
 }

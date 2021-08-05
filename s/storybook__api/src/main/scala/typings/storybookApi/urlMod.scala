@@ -28,8 +28,7 @@ object urlMod {
   }
   object SubAPI {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getQueryParam: String => js.UndefOr[String],
       getUrlState: () => Path,
       navigateUrl: (String, NavigateOptions[js.Object]) => Unit,
@@ -39,20 +38,15 @@ object urlMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    @scala.inline
-    implicit class SubAPIMutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
+    extension [Self <: SubAPI](x: Self) {
       
-      @scala.inline
-      def setGetQueryParam(value: String => js.UndefOr[String]): Self = StObject.set(x, "getQueryParam", js.Any.fromFunction1(value))
+      inline def setGetQueryParam(value: String => js.UndefOr[String]): Self = StObject.set(x, "getQueryParam", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUrlState(value: () => Path): Self = StObject.set(x, "getUrlState", js.Any.fromFunction0(value))
+      inline def setGetUrlState(value: () => Path): Self = StObject.set(x, "getUrlState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNavigateUrl(value: (String, NavigateOptions[js.Object]) => Unit): Self = StObject.set(x, "navigateUrl", js.Any.fromFunction2(value))
+      inline def setNavigateUrl(value: (String, NavigateOptions[js.Object]) => Unit): Self = StObject.set(x, "navigateUrl", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetQueryParams(value: QueryParams => Unit): Self = StObject.set(x, "setQueryParams", js.Any.fromFunction1(value))
+      inline def setSetQueryParams(value: QueryParams => Unit): Self = StObject.set(x, "setQueryParams", js.Any.fromFunction1(value))
     }
   }
   
@@ -62,17 +56,14 @@ object urlMod {
   }
   object SubState {
     
-    @scala.inline
-    def apply(customQueryParams: QueryParams): SubState = {
+    inline def apply(customQueryParams: QueryParams): SubState = {
       val __obj = js.Dynamic.literal(customQueryParams = customQueryParams.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubState]
     }
     
-    @scala.inline
-    implicit class SubStateMutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
+    extension [Self <: SubState](x: Self) {
       
-      @scala.inline
-      def setCustomQueryParams(value: QueryParams): Self = StObject.set(x, "customQueryParams", value.asInstanceOf[js.Any])
+      inline def setCustomQueryParams(value: QueryParams): Self = StObject.set(x, "customQueryParams", value.asInstanceOf[js.Any])
     }
   }
 }

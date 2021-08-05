@@ -16,8 +16,7 @@ trait DependsObject extends StObject {
 }
 object DependsObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dependsPropertyName: String,
     propertyName: String,
     propertyValueMapping: Record[String, Model[js.Any]]
@@ -26,16 +25,12 @@ object DependsObject {
     __obj.asInstanceOf[DependsObject]
   }
   
-  @scala.inline
-  implicit class DependsObjectMutableBuilder[Self <: DependsObject] (val x: Self) extends AnyVal {
+  extension [Self <: DependsObject](x: Self) {
     
-    @scala.inline
-    def setDependsPropertyName(value: String): Self = StObject.set(x, "dependsPropertyName", value.asInstanceOf[js.Any])
+    inline def setDependsPropertyName(value: String): Self = StObject.set(x, "dependsPropertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyValueMapping(value: Record[String, Model[js.Any]]): Self = StObject.set(x, "propertyValueMapping", value.asInstanceOf[js.Any])
+    inline def setPropertyValueMapping(value: Record[String, Model[js.Any]]): Self = StObject.set(x, "propertyValueMapping", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait GetExclusionsPreviewResponse extends StObject {
 }
 object GetExclusionsPreviewResponse {
   
-  @scala.inline
-  def apply(previewStatus: PreviewStatus): GetExclusionsPreviewResponse = {
+  inline def apply(previewStatus: PreviewStatus): GetExclusionsPreviewResponse = {
     val __obj = js.Dynamic.literal(previewStatus = previewStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExclusionsPreviewResponse]
   }
   
-  @scala.inline
-  implicit class GetExclusionsPreviewResponseMutableBuilder[Self <: GetExclusionsPreviewResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetExclusionsPreviewResponse](x: Self) {
     
-    @scala.inline
-    def setExclusionPreviews(value: ExclusionPreviewList): Self = StObject.set(x, "exclusionPreviews", value.asInstanceOf[js.Any])
+    inline def setExclusionPreviews(value: ExclusionPreviewList): Self = StObject.set(x, "exclusionPreviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusionPreviewsUndefined: Self = StObject.set(x, "exclusionPreviews", js.undefined)
+    inline def setExclusionPreviewsUndefined: Self = StObject.set(x, "exclusionPreviews", js.undefined)
     
-    @scala.inline
-    def setExclusionPreviewsVarargs(value: ExclusionPreview*): Self = StObject.set(x, "exclusionPreviews", js.Array(value :_*))
+    inline def setExclusionPreviewsVarargs(value: ExclusionPreview*): Self = StObject.set(x, "exclusionPreviews", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPreviewStatus(value: PreviewStatus): Self = StObject.set(x, "previewStatus", value.asInstanceOf[js.Any])
+    inline def setPreviewStatus(value: PreviewStatus): Self = StObject.set(x, "previewStatus", value.asInstanceOf[js.Any])
   }
 }

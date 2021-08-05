@@ -16,43 +16,31 @@ trait ItemAnalytics
 }
 object ItemAnalytics {
   
-  @scala.inline
-  def apply(): ItemAnalytics = {
+  inline def apply(): ItemAnalytics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItemAnalytics]
   }
   
-  @scala.inline
-  implicit class ItemAnalyticsMutableBuilder[Self <: ItemAnalytics] (val x: Self) extends AnyVal {
+  extension [Self <: ItemAnalytics](x: Self) {
     
-    @scala.inline
-    def setAllTime(value: NullableOption[ItemActivityStat]): Self = StObject.set(x, "allTime", value.asInstanceOf[js.Any])
+    inline def setAllTime(value: NullableOption[ItemActivityStat]): Self = StObject.set(x, "allTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllTimeNull: Self = StObject.set(x, "allTime", null)
+    inline def setAllTimeNull: Self = StObject.set(x, "allTime", null)
     
-    @scala.inline
-    def setAllTimeUndefined: Self = StObject.set(x, "allTime", js.undefined)
+    inline def setAllTimeUndefined: Self = StObject.set(x, "allTime", js.undefined)
     
-    @scala.inline
-    def setItemActivityStats(value: NullableOption[js.Array[ItemActivityStat]]): Self = StObject.set(x, "itemActivityStats", value.asInstanceOf[js.Any])
+    inline def setItemActivityStats(value: NullableOption[js.Array[ItemActivityStat]]): Self = StObject.set(x, "itemActivityStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemActivityStatsNull: Self = StObject.set(x, "itemActivityStats", null)
+    inline def setItemActivityStatsNull: Self = StObject.set(x, "itemActivityStats", null)
     
-    @scala.inline
-    def setItemActivityStatsUndefined: Self = StObject.set(x, "itemActivityStats", js.undefined)
+    inline def setItemActivityStatsUndefined: Self = StObject.set(x, "itemActivityStats", js.undefined)
     
-    @scala.inline
-    def setItemActivityStatsVarargs(value: ItemActivityStat*): Self = StObject.set(x, "itemActivityStats", js.Array(value :_*))
+    inline def setItemActivityStatsVarargs(value: ItemActivityStat*): Self = StObject.set(x, "itemActivityStats", js.Array(value :_*))
     
-    @scala.inline
-    def setLastSevenDays(value: NullableOption[ItemActivityStat]): Self = StObject.set(x, "lastSevenDays", value.asInstanceOf[js.Any])
+    inline def setLastSevenDays(value: NullableOption[ItemActivityStat]): Self = StObject.set(x, "lastSevenDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSevenDaysNull: Self = StObject.set(x, "lastSevenDays", null)
+    inline def setLastSevenDaysNull: Self = StObject.set(x, "lastSevenDays", null)
     
-    @scala.inline
-    def setLastSevenDaysUndefined: Self = StObject.set(x, "lastSevenDays", js.undefined)
+    inline def setLastSevenDaysUndefined: Self = StObject.set(x, "lastSevenDays", js.undefined)
   }
 }

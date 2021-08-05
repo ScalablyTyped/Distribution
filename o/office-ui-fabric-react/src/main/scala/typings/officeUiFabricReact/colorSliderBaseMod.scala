@@ -19,23 +19,23 @@ object colorSliderBaseMod {
        with IColorSlider {
     def this(props: IColorSliderProps) = this()
     
-    var _disposables: js.Any = js.native
+    /* private */ var _disposables: js.Any = js.native
     
-    var _disposeListeners: js.Any = js.native
+    /* private */ var _disposeListeners: js.Any = js.native
     
-    val _maxValue: js.Any = js.native
+    /* private */ val _maxValue: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _onMouseDown: js.Any = js.native
+    /* private */ var _onMouseDown: js.Any = js.native
     
-    var _onMouseMove: js.Any = js.native
+    /* private */ var _onMouseMove: js.Any = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
-    val _type: js.Any = js.native
+    /* private */ val _type: js.Any = js.native
     
-    var _updateValue: js.Any = js.native
+    /* private */ var _updateValue: js.Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MColorSliderBase(prevProps: ReadonlyIColorSliderProps, prevState: ReadonlyIColorSliderState): Unit = js.native
@@ -57,8 +57,7 @@ object colorSliderBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorSlider/ColorSlider.base", "ColorSliderBase.defaultProps")
     @js.native
     def defaultProps: PartialIColorSliderProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIColorSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIColorSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IColorSliderState extends StObject {
@@ -67,17 +66,14 @@ object colorSliderBaseMod {
   }
   object IColorSliderState {
     
-    @scala.inline
-    def apply(currentValue: Double): IColorSliderState = {
+    inline def apply(currentValue: Double): IColorSliderState = {
       val __obj = js.Dynamic.literal(currentValue = currentValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[IColorSliderState]
     }
     
-    @scala.inline
-    implicit class IColorSliderStateMutableBuilder[Self <: IColorSliderState] (val x: Self) extends AnyVal {
+    extension [Self <: IColorSliderState](x: Self) {
       
-      @scala.inline
-      def setCurrentValue(value: Double): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
+      inline def setCurrentValue(value: Double): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     }
   }
 }

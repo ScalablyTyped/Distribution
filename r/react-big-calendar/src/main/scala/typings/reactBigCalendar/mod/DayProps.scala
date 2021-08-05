@@ -11,16 +11,13 @@ trait DayProps extends StObject {
 }
 object DayProps {
   
-  @scala.inline
-  def apply(date: Date): DayProps = {
+  inline def apply(date: Date): DayProps = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[DayProps]
   }
   
-  @scala.inline
-  implicit class DayPropsMutableBuilder[Self <: DayProps] (val x: Self) extends AnyVal {
+  extension [Self <: DayProps](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

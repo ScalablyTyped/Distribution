@@ -12,28 +12,21 @@ trait JobSaveDisposition extends StObject {
 }
 object JobSaveDisposition {
   
-  @scala.inline
-  def apply(): JobSaveDisposition = {
+  inline def apply(): JobSaveDisposition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobSaveDisposition]
   }
   
-  @scala.inline
-  implicit class JobSaveDispositionMutableBuilder[Self <: JobSaveDisposition] (val x: Self) extends AnyVal {
+  extension [Self <: JobSaveDisposition](x: Self) {
     
-    @scala.inline
-    def `setSave-disposition`(value: SaveDisposition): Self = StObject.set(x, "save-disposition", value.asInstanceOf[js.Any])
+    inline def `setSave-disposition`(value: SaveDisposition): Self = StObject.set(x, "save-disposition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSave-dispositionUndefined`: Self = StObject.set(x, "save-disposition", js.undefined)
+    inline def `setSave-dispositionUndefined`: Self = StObject.set(x, "save-disposition", js.undefined)
     
-    @scala.inline
-    def `setSave-info`(value: js.Array[SaveInfo]): Self = StObject.set(x, "save-info", value.asInstanceOf[js.Any])
+    inline def `setSave-info`(value: js.Array[SaveInfo]): Self = StObject.set(x, "save-info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSave-infoUndefined`: Self = StObject.set(x, "save-info", js.undefined)
+    inline def `setSave-infoUndefined`: Self = StObject.set(x, "save-info", js.undefined)
     
-    @scala.inline
-    def `setSave-infoVarargs`(value: SaveInfo*): Self = StObject.set(x, "save-info", js.Array(value :_*))
+    inline def `setSave-infoVarargs`(value: SaveInfo*): Self = StObject.set(x, "save-info", js.Array(value :_*))
   }
 }

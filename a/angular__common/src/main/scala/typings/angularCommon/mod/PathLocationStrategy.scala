@@ -10,7 +10,7 @@ class PathLocationStrategy protected () extends LocationStrategy {
   def this(_platformLocation: PlatformLocation) = this()
   def this(_platformLocation: PlatformLocation, href: String) = this()
   
-  var _baseHref: js.Any = js.native
+  /* private */ var _baseHref: js.Any = js.native
   
-  var _platformLocation: js.Any = js.native
+  /* private */ var _platformLocation: js.Any = js.native
 }

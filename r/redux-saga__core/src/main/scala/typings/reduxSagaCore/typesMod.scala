@@ -21,10 +21,8 @@ object typesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[C /* <: js.Object */](): SagaMiddleware[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[SagaMiddleware[C]]
-  @scala.inline
-  def default[C /* <: js.Object */](options: SagaMiddlewareOptions[C]): SagaMiddleware[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[SagaMiddleware[C]]
+  inline def default[C /* <: js.Object */](): SagaMiddleware[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[SagaMiddleware[C]]
+  inline def default[C /* <: js.Object */](options: SagaMiddlewareOptions[C]): SagaMiddleware[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[SagaMiddleware[C]]
   
   @JSImport("@redux-saga/core/types", "CANCEL")
   @js.native
@@ -44,69 +42,52 @@ object typesMod {
     /**
       * Same as `fixed` but Overflow will silently drop the messages.
       */
-    @scala.inline
-    def dropping[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("dropping")().asInstanceOf[Buffer]
-    @scala.inline
-    def dropping[T](limit: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("dropping")(limit.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def dropping[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("dropping")().asInstanceOf[Buffer]
+    inline def dropping[T](limit: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("dropping")(limit.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Like `fixed` but Overflow will cause the buffer to expand dynamically.
       */
-    @scala.inline
-    def expanding[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("expanding")().asInstanceOf[Buffer]
-    @scala.inline
-    def expanding[T](limit: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("expanding")(limit.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def expanding[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("expanding")().asInstanceOf[Buffer]
+    inline def expanding[T](limit: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("expanding")(limit.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * New messages will be buffered up to `limit`. Overflow will raise an Error.
       * Omitting a `limit` value will result in a limit of 10.
       */
-    @scala.inline
-    def fixed[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fixed")().asInstanceOf[Buffer]
-    @scala.inline
-    def fixed[T](limit: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fixed")(limit.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def fixed[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fixed")().asInstanceOf[Buffer]
+    inline def fixed[T](limit: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fixed")(limit.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * No buffering, new messages will be lost if there are no pending takers
       */
-    @scala.inline
-    def none[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("none")().asInstanceOf[Buffer]
+    inline def none[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("none")().asInstanceOf[Buffer]
     
     /**
       * Same as `fixed` but Overflow will insert the new message at the end and
       * drop the oldest message in the buffer.
       */
-    @scala.inline
-    def sliding[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sliding")().asInstanceOf[Buffer]
-    @scala.inline
-    def sliding[T](limit: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sliding")(limit.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def sliding[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sliding")().asInstanceOf[Buffer]
+    inline def sliding[T](limit: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sliding")(limit.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   }
   
-  @scala.inline
-  def channel[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")().asInstanceOf[js.Any]
-  @scala.inline
-  def channel[T](buffer: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def channel[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")().asInstanceOf[js.Any]
+  inline def channel[T](buffer: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def detach(forkEffect: ForkEffect): ForkEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(forkEffect.asInstanceOf[js.Any]).asInstanceOf[ForkEffect]
+  inline def detach(forkEffect: ForkEffect): ForkEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(forkEffect.asInstanceOf[js.Any]).asInstanceOf[ForkEffect]
   
-  @scala.inline
-  def eventChannel[T](subscribe: Subscribe[T]): EventChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventChannel")(subscribe.asInstanceOf[js.Any]).asInstanceOf[EventChannel_[T]]
-  @scala.inline
-  def eventChannel[T](subscribe: Subscribe[T], buffer: Buffer): EventChannel_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventChannel")(subscribe.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[EventChannel_[T]]
+  inline def eventChannel[T](subscribe: Subscribe[T]): EventChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventChannel")(subscribe.asInstanceOf[js.Any]).asInstanceOf[EventChannel_[T]]
+  inline def eventChannel[T](subscribe: Subscribe[T], buffer: Buffer): EventChannel_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventChannel")(subscribe.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[EventChannel_[T]]
   
-  @scala.inline
-  def multicastChannel[T](): MulticastChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("multicastChannel")().asInstanceOf[MulticastChannel_[T]]
+  inline def multicastChannel[T](): MulticastChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("multicastChannel")().asInstanceOf[MulticastChannel_[T]]
   
-  @scala.inline
-  def runSaga[Action, State, S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ js.Any */](
+  inline def runSaga[Action, State, S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ js.Any */](
     options: RunSagaOptions[Action, State],
     saga: S,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<S> is not an array type */ args: Parameters[S]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runSaga")(options.asInstanceOf[js.Any], saga.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def stdChannel[T](): MulticastChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("stdChannel")().asInstanceOf[MulticastChannel_[T]]
+  inline def stdChannel[T](): MulticastChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("stdChannel")().asInstanceOf[MulticastChannel_[T]]
   
   type EffectMiddleware = js.Function1[
     /* next */ js.Function1[/* effect */ js.Any, Unit], 
@@ -119,17 +100,14 @@ object typesMod {
   }
   object ErrorInfo {
     
-    @scala.inline
-    def apply(sagaStack: String): ErrorInfo = {
+    inline def apply(sagaStack: String): ErrorInfo = {
       val __obj = js.Dynamic.literal(sagaStack = sagaStack.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorInfo]
     }
     
-    @scala.inline
-    implicit class ErrorInfoMutableBuilder[Self <: ErrorInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorInfo](x: Self) {
       
-      @scala.inline
-      def setSagaStack(value: String): Self = StObject.set(x, "sagaStack", value.asInstanceOf[js.Any])
+      inline def setSagaStack(value: String): Self = StObject.set(x, "sagaStack", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,8 +121,7 @@ object typesMod {
   }
   object EventChannel_ {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       close: () => Unit,
       flush: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit] => Unit,
       take: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit] => Unit
@@ -153,17 +130,13 @@ object typesMod {
       __obj.asInstanceOf[EventChannel_[T]]
     }
     
-    @scala.inline
-    implicit class EventChannel_MutableBuilder[Self <: EventChannel_[?], T] (val x: Self & EventChannel_[T]) extends AnyVal {
+    extension [Self <: EventChannel_[?], T](x: Self & EventChannel_[T]) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFlush(value: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit] => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
+      inline def setFlush(value: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit] => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTake(value: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit] => Unit): Self = StObject.set(x, "take", js.Any.fromFunction1(value))
+      inline def setTake(value: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit] => Unit): Self = StObject.set(x, "take", js.Any.fromFunction1(value))
     }
   }
   
@@ -173,17 +146,14 @@ object typesMod {
   }
   object FlushableChannel {
     
-    @scala.inline
-    def apply[T](flush: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit] => Unit): FlushableChannel[T] = {
+    inline def apply[T](flush: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit] => Unit): FlushableChannel[T] = {
       val __obj = js.Dynamic.literal(flush = js.Any.fromFunction1(flush))
       __obj.asInstanceOf[FlushableChannel[T]]
     }
     
-    @scala.inline
-    implicit class FlushableChannelMutableBuilder[Self <: FlushableChannel[?], T] (val x: Self & FlushableChannel[T]) extends AnyVal {
+    extension [Self <: FlushableChannel[?], T](x: Self & FlushableChannel[T]) {
       
-      @scala.inline
-      def setFlush(value: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit] => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
+      inline def setFlush(value: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit] => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
     }
   }
   
@@ -260,59 +230,42 @@ object typesMod {
   }
   object RunSagaOptions {
     
-    @scala.inline
-    def apply[A, S](): RunSagaOptions[A, S] = {
+    inline def apply[A, S](): RunSagaOptions[A, S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RunSagaOptions[A, S]]
     }
     
-    @scala.inline
-    implicit class RunSagaOptionsMutableBuilder[Self <: RunSagaOptions[?, ?], A, S] (val x: Self & (RunSagaOptions[A, S])) extends AnyVal {
+    extension [Self <: RunSagaOptions[?, ?], A, S](x: Self & (RunSagaOptions[A, S])) {
       
-      @scala.inline
-      def setChannel(value: PredicateTakeableChannel[A]): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: PredicateTakeableChannel[A]): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDispatch(value: /* output */ A => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: /* output */ A => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
+      inline def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
       
-      @scala.inline
-      def setEffectMiddlewares(value: js.Array[EffectMiddleware]): Self = StObject.set(x, "effectMiddlewares", value.asInstanceOf[js.Any])
+      inline def setEffectMiddlewares(value: js.Array[EffectMiddleware]): Self = StObject.set(x, "effectMiddlewares", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectMiddlewaresUndefined: Self = StObject.set(x, "effectMiddlewares", js.undefined)
+      inline def setEffectMiddlewaresUndefined: Self = StObject.set(x, "effectMiddlewares", js.undefined)
       
-      @scala.inline
-      def setEffectMiddlewaresVarargs(value: EffectMiddleware*): Self = StObject.set(x, "effectMiddlewares", js.Array(value :_*))
+      inline def setEffectMiddlewaresVarargs(value: EffectMiddleware*): Self = StObject.set(x, "effectMiddlewares", js.Array(value :_*))
       
-      @scala.inline
-      def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
+      inline def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
       
-      @scala.inline
-      def setOnError(value: (/* error */ Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
+      inline def setOnError(value: (/* error */ Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setSagaMonitor(value: SagaMonitor): Self = StObject.set(x, "sagaMonitor", value.asInstanceOf[js.Any])
+      inline def setSagaMonitor(value: SagaMonitor): Self = StObject.set(x, "sagaMonitor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSagaMonitorUndefined: Self = StObject.set(x, "sagaMonitor", js.undefined)
+      inline def setSagaMonitorUndefined: Self = StObject.set(x, "sagaMonitor", js.undefined)
     }
   }
   
@@ -394,41 +347,30 @@ object typesMod {
   }
   object SagaMiddlewareOptions {
     
-    @scala.inline
-    def apply[C /* <: js.Object */](): SagaMiddlewareOptions[C] = {
+    inline def apply[C /* <: js.Object */](): SagaMiddlewareOptions[C] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SagaMiddlewareOptions[C]]
     }
     
-    @scala.inline
-    implicit class SagaMiddlewareOptionsMutableBuilder[Self <: SagaMiddlewareOptions[?], C /* <: js.Object */] (val x: Self & SagaMiddlewareOptions[C]) extends AnyVal {
+    extension [Self <: SagaMiddlewareOptions[?], C /* <: js.Object */](x: Self & SagaMiddlewareOptions[C]) {
       
-      @scala.inline
-      def setContext(value: C): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: C): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setEffectMiddlewares(value: js.Array[EffectMiddleware]): Self = StObject.set(x, "effectMiddlewares", value.asInstanceOf[js.Any])
+      inline def setEffectMiddlewares(value: js.Array[EffectMiddleware]): Self = StObject.set(x, "effectMiddlewares", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectMiddlewaresUndefined: Self = StObject.set(x, "effectMiddlewares", js.undefined)
+      inline def setEffectMiddlewaresUndefined: Self = StObject.set(x, "effectMiddlewares", js.undefined)
       
-      @scala.inline
-      def setEffectMiddlewaresVarargs(value: EffectMiddleware*): Self = StObject.set(x, "effectMiddlewares", js.Array(value :_*))
+      inline def setEffectMiddlewaresVarargs(value: EffectMiddleware*): Self = StObject.set(x, "effectMiddlewares", js.Array(value :_*))
       
-      @scala.inline
-      def setOnError(value: (/* error */ Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
+      inline def setOnError(value: (/* error */ Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setSagaMonitor(value: SagaMonitor): Self = StObject.set(x, "sagaMonitor", value.asInstanceOf[js.Any])
+      inline def setSagaMonitor(value: SagaMonitor): Self = StObject.set(x, "sagaMonitor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSagaMonitorUndefined: Self = StObject.set(x, "sagaMonitor", js.undefined)
+      inline def setSagaMonitorUndefined: Self = StObject.set(x, "sagaMonitor", js.undefined)
     }
   }
   
@@ -481,50 +423,36 @@ object typesMod {
   }
   object SagaMonitor {
     
-    @scala.inline
-    def apply(): SagaMonitor = {
+    inline def apply(): SagaMonitor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SagaMonitor]
     }
     
-    @scala.inline
-    implicit class SagaMonitorMutableBuilder[Self <: SagaMonitor] (val x: Self) extends AnyVal {
+    extension [Self <: SagaMonitor](x: Self) {
       
-      @scala.inline
-      def setActionDispatched(value: /* action */ Action[js.Any] => Unit): Self = StObject.set(x, "actionDispatched", js.Any.fromFunction1(value))
+      inline def setActionDispatched(value: /* action */ Action[js.Any] => Unit): Self = StObject.set(x, "actionDispatched", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActionDispatchedUndefined: Self = StObject.set(x, "actionDispatched", js.undefined)
+      inline def setActionDispatchedUndefined: Self = StObject.set(x, "actionDispatched", js.undefined)
       
-      @scala.inline
-      def setEffectCancelled(value: /* effectId */ Double => Unit): Self = StObject.set(x, "effectCancelled", js.Any.fromFunction1(value))
+      inline def setEffectCancelled(value: /* effectId */ Double => Unit): Self = StObject.set(x, "effectCancelled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEffectCancelledUndefined: Self = StObject.set(x, "effectCancelled", js.undefined)
+      inline def setEffectCancelledUndefined: Self = StObject.set(x, "effectCancelled", js.undefined)
       
-      @scala.inline
-      def setEffectRejected(value: (/* effectId */ Double, /* error */ js.Any) => Unit): Self = StObject.set(x, "effectRejected", js.Any.fromFunction2(value))
+      inline def setEffectRejected(value: (/* effectId */ Double, /* error */ js.Any) => Unit): Self = StObject.set(x, "effectRejected", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEffectRejectedUndefined: Self = StObject.set(x, "effectRejected", js.undefined)
+      inline def setEffectRejectedUndefined: Self = StObject.set(x, "effectRejected", js.undefined)
       
-      @scala.inline
-      def setEffectResolved(value: (/* effectId */ Double, /* result */ js.Any) => Unit): Self = StObject.set(x, "effectResolved", js.Any.fromFunction2(value))
+      inline def setEffectResolved(value: (/* effectId */ Double, /* result */ js.Any) => Unit): Self = StObject.set(x, "effectResolved", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEffectResolvedUndefined: Self = StObject.set(x, "effectResolved", js.undefined)
+      inline def setEffectResolvedUndefined: Self = StObject.set(x, "effectResolved", js.undefined)
       
-      @scala.inline
-      def setEffectTriggered(value: /* options */ Effect => Unit): Self = StObject.set(x, "effectTriggered", js.Any.fromFunction1(value))
+      inline def setEffectTriggered(value: /* options */ Effect => Unit): Self = StObject.set(x, "effectTriggered", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEffectTriggeredUndefined: Self = StObject.set(x, "effectTriggered", js.undefined)
+      inline def setEffectTriggeredUndefined: Self = StObject.set(x, "effectTriggered", js.undefined)
       
-      @scala.inline
-      def setRootSagaStarted(value: /* options */ Args => Unit): Self = StObject.set(x, "rootSagaStarted", js.Any.fromFunction1(value))
+      inline def setRootSagaStarted(value: /* options */ Args => Unit): Self = StObject.set(x, "rootSagaStarted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRootSagaStartedUndefined: Self = StObject.set(x, "rootSagaStarted", js.undefined)
+      inline def setRootSagaStartedUndefined: Self = StObject.set(x, "rootSagaStarted", js.undefined)
     }
   }
   
@@ -539,17 +467,14 @@ object typesMod {
   }
   object TakeableChannel {
     
-    @scala.inline
-    def apply[T](take: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit] => Unit): TakeableChannel[T] = {
+    inline def apply[T](take: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit] => Unit): TakeableChannel[T] = {
       val __obj = js.Dynamic.literal(take = js.Any.fromFunction1(take))
       __obj.asInstanceOf[TakeableChannel[T]]
     }
     
-    @scala.inline
-    implicit class TakeableChannelMutableBuilder[Self <: TakeableChannel[?], T] (val x: Self & TakeableChannel[T]) extends AnyVal {
+    extension [Self <: TakeableChannel[?], T](x: Self & TakeableChannel[T]) {
       
-      @scala.inline
-      def setTake(value: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit] => Unit): Self = StObject.set(x, "take", js.Any.fromFunction1(value))
+      inline def setTake(value: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit] => Unit): Self = StObject.set(x, "take", js.Any.fromFunction1(value))
     }
   }
   

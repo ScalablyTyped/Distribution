@@ -27,34 +27,25 @@ trait SchemaListVendorCustomersResponse extends StObject {
 }
 object SchemaListVendorCustomersResponse {
   
-  @scala.inline
-  def apply(): SchemaListVendorCustomersResponse = {
+  inline def apply(): SchemaListVendorCustomersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListVendorCustomersResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListVendorCustomersResponseMutableBuilder[Self <: SchemaListVendorCustomersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListVendorCustomersResponse](x: Self) {
     
-    @scala.inline
-    def setCustomers(value: js.Array[SchemaCompany]): Self = StObject.set(x, "customers", value.asInstanceOf[js.Any])
+    inline def setCustomers(value: js.Array[SchemaCompany]): Self = StObject.set(x, "customers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomersUndefined: Self = StObject.set(x, "customers", js.undefined)
+    inline def setCustomersUndefined: Self = StObject.set(x, "customers", js.undefined)
     
-    @scala.inline
-    def setCustomersVarargs(value: SchemaCompany*): Self = StObject.set(x, "customers", js.Array(value :_*))
+    inline def setCustomersVarargs(value: SchemaCompany*): Self = StObject.set(x, "customers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

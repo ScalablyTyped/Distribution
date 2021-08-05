@@ -46,8 +46,7 @@ object anon {
   }
   object Email {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Email: Instantiable0[EmailMatcher],
       Hashtag: Instantiable1[/* cfg */ HashtagMatcherConfig, HashtagMatcher],
       Matcher: Instantiable1[/* cfg */ MatcherConfig, Matcher],
@@ -59,26 +58,19 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    @scala.inline
-    implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+    extension [Self <: Email](x: Self) {
       
-      @scala.inline
-      def setEmail(value: Instantiable0[EmailMatcher]): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: Instantiable0[EmailMatcher]): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashtag(value: Instantiable1[/* cfg */ HashtagMatcherConfig, HashtagMatcher]): Self = StObject.set(x, "Hashtag", value.asInstanceOf[js.Any])
+      inline def setHashtag(value: Instantiable1[/* cfg */ HashtagMatcherConfig, HashtagMatcher]): Self = StObject.set(x, "Hashtag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatcher(value: Instantiable1[/* cfg */ MatcherConfig, Matcher]): Self = StObject.set(x, "Matcher", value.asInstanceOf[js.Any])
+      inline def setMatcher(value: Instantiable1[/* cfg */ MatcherConfig, Matcher]): Self = StObject.set(x, "Matcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMention(value: Instantiable1[/* cfg */ MentionMatcherConfig, MentionMatcher]): Self = StObject.set(x, "Mention", value.asInstanceOf[js.Any])
+      inline def setMention(value: Instantiable1[/* cfg */ MentionMatcherConfig, MentionMatcher]): Self = StObject.set(x, "Mention", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: Instantiable0[PhoneMatcher]): Self = StObject.set(x, "Phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: Instantiable0[PhoneMatcher]): Self = StObject.set(x, "Phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: Instantiable1[/* cfg */ UrlMatcherConfig, UrlMatcher]): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Instantiable1[/* cfg */ UrlMatcherConfig, UrlMatcher]): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,8 +90,7 @@ object anon {
   }
   object Hashtag {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Email: Instantiable1[/* cfg */ EmailMatchConfig, EmailMatch],
       Hashtag: Instantiable1[/* cfg */ HashtagMatchConfig, HashtagMatch],
       Match: Instantiable1[/* cfg */ MatchConfig, Match],
@@ -111,26 +102,19 @@ object anon {
       __obj.asInstanceOf[Hashtag]
     }
     
-    @scala.inline
-    implicit class HashtagMutableBuilder[Self <: Hashtag] (val x: Self) extends AnyVal {
+    extension [Self <: Hashtag](x: Self) {
       
-      @scala.inline
-      def setEmail(value: Instantiable1[/* cfg */ EmailMatchConfig, EmailMatch]): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: Instantiable1[/* cfg */ EmailMatchConfig, EmailMatch]): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashtag(value: Instantiable1[/* cfg */ HashtagMatchConfig, HashtagMatch]): Self = StObject.set(x, "Hashtag", value.asInstanceOf[js.Any])
+      inline def setHashtag(value: Instantiable1[/* cfg */ HashtagMatchConfig, HashtagMatch]): Self = StObject.set(x, "Hashtag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch(value: Instantiable1[/* cfg */ MatchConfig, Match]): Self = StObject.set(x, "Match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: Instantiable1[/* cfg */ MatchConfig, Match]): Self = StObject.set(x, "Match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMention(value: Instantiable1[/* cfg */ MentionMatchConfig, MentionMatch]): Self = StObject.set(x, "Mention", value.asInstanceOf[js.Any])
+      inline def setMention(value: Instantiable1[/* cfg */ MentionMatchConfig, MentionMatch]): Self = StObject.set(x, "Mention", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: Instantiable1[/* cfg */ PhoneMatchConfig, PhoneMatch]): Self = StObject.set(x, "Phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: Instantiable1[/* cfg */ PhoneMatchConfig, PhoneMatch]): Self = StObject.set(x, "Phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: Instantiable1[/* cfg */ UrlMatchConfig, UrlMatch]): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Instantiable1[/* cfg */ UrlMatchConfig, UrlMatch]): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,8 +132,7 @@ object anon {
   }
   object OnCloseTag {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onCloseTag: (String, Double) => Unit,
       onComment: Double => Unit,
       onDoctype: Double => Unit,
@@ -160,23 +143,17 @@ object anon {
       __obj.asInstanceOf[OnCloseTag]
     }
     
-    @scala.inline
-    implicit class OnCloseTagMutableBuilder[Self <: OnCloseTag] (val x: Self) extends AnyVal {
+    extension [Self <: OnCloseTag](x: Self) {
       
-      @scala.inline
-      def setOnCloseTag(value: (String, Double) => Unit): Self = StObject.set(x, "onCloseTag", js.Any.fromFunction2(value))
+      inline def setOnCloseTag(value: (String, Double) => Unit): Self = StObject.set(x, "onCloseTag", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnComment(value: Double => Unit): Self = StObject.set(x, "onComment", js.Any.fromFunction1(value))
+      inline def setOnComment(value: Double => Unit): Self = StObject.set(x, "onComment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDoctype(value: Double => Unit): Self = StObject.set(x, "onDoctype", js.Any.fromFunction1(value))
+      inline def setOnDoctype(value: Double => Unit): Self = StObject.set(x, "onDoctype", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOpenTag(value: (String, Double) => Unit): Self = StObject.set(x, "onOpenTag", js.Any.fromFunction2(value))
+      inline def setOnOpenTag(value: (String, Double) => Unit): Self = StObject.set(x, "onOpenTag", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnText(value: (String, Double) => Unit): Self = StObject.set(x, "onText", js.Any.fromFunction2(value))
+      inline def setOnText(value: (String, Double) => Unit): Self = StObject.set(x, "onText", js.Any.fromFunction2(value))
     }
   }
   
@@ -189,20 +166,16 @@ object anon {
   }
   object RequiredStripPrefixConfig {
     
-    @scala.inline
-    def apply(scheme: Boolean, www: Boolean): RequiredStripPrefixConfig = {
+    inline def apply(scheme: Boolean, www: Boolean): RequiredStripPrefixConfig = {
       val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any], www = www.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredStripPrefixConfig]
     }
     
-    @scala.inline
-    implicit class RequiredStripPrefixConfigMutableBuilder[Self <: RequiredStripPrefixConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredStripPrefixConfig](x: Self) {
       
-      @scala.inline
-      def setScheme(value: Boolean): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: Boolean): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWww(value: Boolean): Self = StObject.set(x, "www", value.asInstanceOf[js.Any])
+      inline def setWww(value: Boolean): Self = StObject.set(x, "www", value.asInstanceOf[js.Any])
     }
   }
 }

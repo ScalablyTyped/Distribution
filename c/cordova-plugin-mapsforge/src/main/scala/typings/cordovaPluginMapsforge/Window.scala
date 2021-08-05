@@ -10,16 +10,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(mapsforge: MapsforgePlugin): Window = {
+  inline def apply(mapsforge: MapsforgePlugin): Window = {
     val __obj = js.Dynamic.literal(mapsforge = mapsforge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setMapsforge(value: MapsforgePlugin): Self = StObject.set(x, "mapsforge", value.asInstanceOf[js.Any])
+    inline def setMapsforge(value: MapsforgePlugin): Self = StObject.set(x, "mapsforge", value.asInstanceOf[js.Any])
   }
 }

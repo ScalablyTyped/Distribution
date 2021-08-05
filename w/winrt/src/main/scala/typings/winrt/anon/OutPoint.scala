@@ -13,19 +13,15 @@ trait OutPoint extends StObject {
 }
 object OutPoint {
   
-  @scala.inline
-  def apply(outPoint: Point, returnValue: Boolean): OutPoint = {
+  inline def apply(outPoint: Point, returnValue: Boolean): OutPoint = {
     val __obj = js.Dynamic.literal(outPoint = outPoint.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutPoint]
   }
   
-  @scala.inline
-  implicit class OutPointMutableBuilder[Self <: OutPoint] (val x: Self) extends AnyVal {
+  extension [Self <: OutPoint](x: Self) {
     
-    @scala.inline
-    def setOutPoint(value: Point): Self = StObject.set(x, "outPoint", value.asInstanceOf[js.Any])
+    inline def setOutPoint(value: Point): Self = StObject.set(x, "outPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

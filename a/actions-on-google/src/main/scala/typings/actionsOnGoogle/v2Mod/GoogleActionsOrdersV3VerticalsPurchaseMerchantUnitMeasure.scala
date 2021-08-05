@@ -18,25 +18,19 @@ trait GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure extends StObject
 }
 object GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure = {
+  inline def apply(): GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasureMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure](x: Self) {
     
-    @scala.inline
-    def setMeasure(value: Double): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
+    inline def setMeasure(value: Double): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
+    inline def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
     
-    @scala.inline
-    def setUnit(value: GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasureUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasureUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

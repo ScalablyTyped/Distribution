@@ -12,19 +12,15 @@ object fromEventMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromEvent[T](target: FromEventTarget[T], eventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
-  @scala.inline
-  def fromEvent[T](target: FromEventTarget[T], eventName: String, options: EventListenerOptions): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
-  @scala.inline
-  def fromEvent[T](
+  inline def fromEvent[T](target: FromEventTarget[T], eventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def fromEvent[T](target: FromEventTarget[T], eventName: String, options: EventListenerOptions): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def fromEvent[T](
     target: FromEventTarget[T],
     eventName: String,
     options: EventListenerOptions,
     resultSelector: js.Function1[/* repeated */ js.Any, T]
   ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
-  @scala.inline
-  def fromEvent[T](
+  inline def fromEvent[T](
     target: FromEventTarget[T],
     eventName: String,
     resultSelector: js.Function1[/* repeated */ js.Any, T]
@@ -35,8 +31,7 @@ object fromEventMod {
        with EventListenerOptions
   object AddEventListenerOptions {
     
-    @scala.inline
-    def apply(): AddEventListenerOptions = {
+    inline def apply(): AddEventListenerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AddEventListenerOptions]
     }
@@ -52,32 +47,24 @@ object fromEventMod {
   }
   object EventListenerOptions {
     
-    @scala.inline
-    def apply(): EventListenerOptions = {
+    inline def apply(): EventListenerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventListenerOptions]
     }
     
-    @scala.inline
-    implicit class EventListenerOptionsMutableBuilder[Self <: EventListenerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EventListenerOptions](x: Self) {
       
-      @scala.inline
-      def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      @scala.inline
-      def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+      inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
       
-      @scala.inline
-      def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+      inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
+      inline def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
     }
   }
   
@@ -123,20 +110,16 @@ object fromEventMod {
   }
   object JQueryStyleEventEmitter {
     
-    @scala.inline
-    def apply(off: (String, js.Function) => Unit, on: (String, js.Function) => Unit): JQueryStyleEventEmitter = {
+    inline def apply(off: (String, js.Function) => Unit, on: (String, js.Function) => Unit): JQueryStyleEventEmitter = {
       val __obj = js.Dynamic.literal(off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on))
       __obj.asInstanceOf[JQueryStyleEventEmitter]
     }
     
-    @scala.inline
-    implicit class JQueryStyleEventEmitterMutableBuilder[Self <: JQueryStyleEventEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: JQueryStyleEventEmitter](x: Self) {
       
-      @scala.inline
-      def setOff(value: (String, js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (String, js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (String, js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
   }
   
@@ -150,8 +133,7 @@ object fromEventMod {
   }
   object NodeCompatibleEventEmitter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addListener: (String, NodeEventHandler) => Unit | js.Object,
       removeListener: (String, NodeEventHandler) => Unit | js.Object
     ): NodeCompatibleEventEmitter = {
@@ -159,14 +141,11 @@ object fromEventMod {
       __obj.asInstanceOf[NodeCompatibleEventEmitter]
     }
     
-    @scala.inline
-    implicit class NodeCompatibleEventEmitterMutableBuilder[Self <: NodeCompatibleEventEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: NodeCompatibleEventEmitter](x: Self) {
       
-      @scala.inline
-      def setAddListener(value: (String, NodeEventHandler) => Unit | js.Object): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (String, NodeEventHandler) => Unit | js.Object): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveListener(value: (String, NodeEventHandler) => Unit | js.Object): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      inline def setRemoveListener(value: (String, NodeEventHandler) => Unit | js.Object): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
     }
   }
   

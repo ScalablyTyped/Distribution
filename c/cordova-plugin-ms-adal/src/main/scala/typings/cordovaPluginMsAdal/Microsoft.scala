@@ -93,8 +93,7 @@ object Microsoft {
     }
     object AuthenticationResult {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accessToken: String,
         accessTokenType: String,
         createAuthorizationHeader: () => String,
@@ -110,38 +109,27 @@ object Microsoft {
         __obj.asInstanceOf[AuthenticationResult]
       }
       
-      @scala.inline
-      implicit class AuthenticationResultMutableBuilder[Self <: AuthenticationResult] (val x: Self) extends AnyVal {
+      extension [Self <: AuthenticationResult](x: Self) {
         
-        @scala.inline
-        def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+        inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccessTokenType(value: String): Self = StObject.set(x, "accessTokenType", value.asInstanceOf[js.Any])
+        inline def setAccessTokenType(value: String): Self = StObject.set(x, "accessTokenType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateAuthorizationHeader(value: () => String): Self = StObject.set(x, "createAuthorizationHeader", js.Any.fromFunction0(value))
+        inline def setCreateAuthorizationHeader(value: () => String): Self = StObject.set(x, "createAuthorizationHeader", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setExpiresOn(value: Date): Self = StObject.set(x, "expiresOn", value.asInstanceOf[js.Any])
+        inline def setExpiresOn(value: Date): Self = StObject.set(x, "expiresOn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+        inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsMultipleResourceRefreshToken(value: Boolean): Self = StObject.set(x, "isMultipleResourceRefreshToken", value.asInstanceOf[js.Any])
+        inline def setIsMultipleResourceRefreshToken(value: Boolean): Self = StObject.set(x, "isMultipleResourceRefreshToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+        inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+        inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+        inline def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
       }
     }
     
@@ -211,8 +199,7 @@ object Microsoft {
     }
     object TokenCache {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         clear: () => Promise,
         contextAuthority: String,
         deleteItem: TokenCacheItem => Promise,
@@ -222,20 +209,15 @@ object Microsoft {
         __obj.asInstanceOf[TokenCache]
       }
       
-      @scala.inline
-      implicit class TokenCacheMutableBuilder[Self <: TokenCache] (val x: Self) extends AnyVal {
+      extension [Self <: TokenCache](x: Self) {
         
-        @scala.inline
-        def setClear(value: () => Promise): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+        inline def setClear(value: () => Promise): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setContextAuthority(value: String): Self = StObject.set(x, "contextAuthority", value.asInstanceOf[js.Any])
+        inline def setContextAuthority(value: String): Self = StObject.set(x, "contextAuthority", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteItem(value: TokenCacheItem => Promise): Self = StObject.set(x, "deleteItem", js.Any.fromFunction1(value))
+        inline def setDeleteItem(value: TokenCacheItem => Promise): Self = StObject.set(x, "deleteItem", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setReadItems(value: () => PromiseTokenCacheItems): Self = StObject.set(x, "readItems", js.Any.fromFunction0(value))
+        inline def setReadItems(value: () => PromiseTokenCacheItems): Self = StObject.set(x, "readItems", js.Any.fromFunction0(value))
       }
     }
     
@@ -261,8 +243,7 @@ object Microsoft {
     }
     object TokenCacheItem {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accessToken: String,
         authority: String,
         clientId: String,
@@ -277,35 +258,25 @@ object Microsoft {
         __obj.asInstanceOf[TokenCacheItem]
       }
       
-      @scala.inline
-      implicit class TokenCacheItemMutableBuilder[Self <: TokenCacheItem] (val x: Self) extends AnyVal {
+      extension [Self <: TokenCacheItem](x: Self) {
         
-        @scala.inline
-        def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+        inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
+        inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+        inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayableId(value: String): Self = StObject.set(x, "displayableId", value.asInstanceOf[js.Any])
+        inline def setDisplayableId(value: String): Self = StObject.set(x, "displayableId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpiresOn(value: Date): Self = StObject.set(x, "expiresOn", value.asInstanceOf[js.Any])
+        inline def setExpiresOn(value: Date): Self = StObject.set(x, "expiresOn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsMultipleResourceRefreshToken(value: Boolean): Self = StObject.set(x, "isMultipleResourceRefreshToken", value.asInstanceOf[js.Any])
+        inline def setIsMultipleResourceRefreshToken(value: Boolean): Self = StObject.set(x, "isMultipleResourceRefreshToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+        inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+        inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+        inline def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
       }
     }
     
@@ -329,8 +300,7 @@ object Microsoft {
     }
     object UserInfo {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         displayableId: String,
         familyName: String,
         givenName: String,
@@ -344,32 +314,23 @@ object Microsoft {
         __obj.asInstanceOf[UserInfo]
       }
       
-      @scala.inline
-      implicit class UserInfoMutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
+      extension [Self <: UserInfo](x: Self) {
         
-        @scala.inline
-        def setDisplayableId(value: String): Self = StObject.set(x, "displayableId", value.asInstanceOf[js.Any])
+        inline def setDisplayableId(value: String): Self = StObject.set(x, "displayableId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+        inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+        inline def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdentityProvider(value: String): Self = StObject.set(x, "identityProvider", value.asInstanceOf[js.Any])
+        inline def setIdentityProvider(value: String): Self = StObject.set(x, "identityProvider", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPasswordChangeUrl(value: String): Self = StObject.set(x, "passwordChangeUrl", value.asInstanceOf[js.Any])
+        inline def setPasswordChangeUrl(value: String): Self = StObject.set(x, "passwordChangeUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPasswordExpiresOn(value: Date): Self = StObject.set(x, "passwordExpiresOn", value.asInstanceOf[js.Any])
+        inline def setPasswordExpiresOn(value: Date): Self = StObject.set(x, "passwordExpiresOn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
+        inline def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -10,19 +10,15 @@ trait ReleaseDefinitionGate extends StObject {
 }
 object ReleaseDefinitionGate {
   
-  @scala.inline
-  def apply(tasks: js.Array[WorkflowTask]): ReleaseDefinitionGate = {
+  inline def apply(tasks: js.Array[WorkflowTask]): ReleaseDefinitionGate = {
     val __obj = js.Dynamic.literal(tasks = tasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseDefinitionGate]
   }
   
-  @scala.inline
-  implicit class ReleaseDefinitionGateMutableBuilder[Self <: ReleaseDefinitionGate] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseDefinitionGate](x: Self) {
     
-    @scala.inline
-    def setTasks(value: js.Array[WorkflowTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: js.Array[WorkflowTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksVarargs(value: WorkflowTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: WorkflowTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

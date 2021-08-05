@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PreprocessLang extends StObject
 object PreprocessLang {
   
-  @scala.inline
-  def less: typings.vueCompilerSfc.vueCompilerSfcStrings.less = "less".asInstanceOf[typings.vueCompilerSfc.vueCompilerSfcStrings.less]
+  inline def less: typings.vueCompilerSfc.vueCompilerSfcStrings.less = "less".asInstanceOf[typings.vueCompilerSfc.vueCompilerSfcStrings.less]
   
-  @scala.inline
-  def sass: typings.vueCompilerSfc.vueCompilerSfcStrings.sass = "sass".asInstanceOf[typings.vueCompilerSfc.vueCompilerSfcStrings.sass]
+  inline def sass: typings.vueCompilerSfc.vueCompilerSfcStrings.sass = "sass".asInstanceOf[typings.vueCompilerSfc.vueCompilerSfcStrings.sass]
   
-  @scala.inline
-  def scss: typings.vueCompilerSfc.vueCompilerSfcStrings.scss = "scss".asInstanceOf[typings.vueCompilerSfc.vueCompilerSfcStrings.scss]
+  inline def scss: typings.vueCompilerSfc.vueCompilerSfcStrings.scss = "scss".asInstanceOf[typings.vueCompilerSfc.vueCompilerSfcStrings.scss]
   
-  @scala.inline
-  def styl: typings.vueCompilerSfc.vueCompilerSfcStrings.styl = "styl".asInstanceOf[typings.vueCompilerSfc.vueCompilerSfcStrings.styl]
+  inline def styl: typings.vueCompilerSfc.vueCompilerSfcStrings.styl = "styl".asInstanceOf[typings.vueCompilerSfc.vueCompilerSfcStrings.styl]
   
-  @scala.inline
-  def stylus: typings.vueCompilerSfc.vueCompilerSfcStrings.stylus = "stylus".asInstanceOf[typings.vueCompilerSfc.vueCompilerSfcStrings.stylus]
+  inline def stylus: typings.vueCompilerSfc.vueCompilerSfcStrings.stylus = "stylus".asInstanceOf[typings.vueCompilerSfc.vueCompilerSfcStrings.stylus]
 }

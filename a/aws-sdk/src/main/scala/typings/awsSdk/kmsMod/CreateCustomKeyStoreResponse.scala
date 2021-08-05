@@ -13,19 +13,15 @@ trait CreateCustomKeyStoreResponse extends StObject {
 }
 object CreateCustomKeyStoreResponse {
   
-  @scala.inline
-  def apply(): CreateCustomKeyStoreResponse = {
+  inline def apply(): CreateCustomKeyStoreResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCustomKeyStoreResponse]
   }
   
-  @scala.inline
-  implicit class CreateCustomKeyStoreResponseMutableBuilder[Self <: CreateCustomKeyStoreResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCustomKeyStoreResponse](x: Self) {
     
-    @scala.inline
-    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
+    inline def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomKeyStoreIdUndefined: Self = StObject.set(x, "CustomKeyStoreId", js.undefined)
+    inline def setCustomKeyStoreIdUndefined: Self = StObject.set(x, "CustomKeyStoreId", js.undefined)
   }
 }

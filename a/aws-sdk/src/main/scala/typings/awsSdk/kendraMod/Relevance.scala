@@ -33,43 +33,31 @@ trait Relevance extends StObject {
 }
 object Relevance {
   
-  @scala.inline
-  def apply(): Relevance = {
+  inline def apply(): Relevance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Relevance]
   }
   
-  @scala.inline
-  implicit class RelevanceMutableBuilder[Self <: Relevance] (val x: Self) extends AnyVal {
+  extension [Self <: Relevance](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Duration): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Duration): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    @scala.inline
-    def setFreshness(value: DocumentMetadataBoolean): Self = StObject.set(x, "Freshness", value.asInstanceOf[js.Any])
+    inline def setFreshness(value: DocumentMetadataBoolean): Self = StObject.set(x, "Freshness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreshnessUndefined: Self = StObject.set(x, "Freshness", js.undefined)
+    inline def setFreshnessUndefined: Self = StObject.set(x, "Freshness", js.undefined)
     
-    @scala.inline
-    def setImportance(value: Importance): Self = StObject.set(x, "Importance", value.asInstanceOf[js.Any])
+    inline def setImportance(value: Importance): Self = StObject.set(x, "Importance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportanceUndefined: Self = StObject.set(x, "Importance", js.undefined)
+    inline def setImportanceUndefined: Self = StObject.set(x, "Importance", js.undefined)
     
-    @scala.inline
-    def setRankOrder(value: Order): Self = StObject.set(x, "RankOrder", value.asInstanceOf[js.Any])
+    inline def setRankOrder(value: Order): Self = StObject.set(x, "RankOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankOrderUndefined: Self = StObject.set(x, "RankOrder", js.undefined)
+    inline def setRankOrderUndefined: Self = StObject.set(x, "RankOrder", js.undefined)
     
-    @scala.inline
-    def setValueImportanceMap(value: ValueImportanceMap): Self = StObject.set(x, "ValueImportanceMap", value.asInstanceOf[js.Any])
+    inline def setValueImportanceMap(value: ValueImportanceMap): Self = StObject.set(x, "ValueImportanceMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueImportanceMapUndefined: Self = StObject.set(x, "ValueImportanceMap", js.undefined)
+    inline def setValueImportanceMapUndefined: Self = StObject.set(x, "ValueImportanceMap", js.undefined)
   }
 }

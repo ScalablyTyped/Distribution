@@ -20,28 +20,21 @@ trait DocumentationFormat extends StObject {
 }
 object DocumentationFormat {
   
-  @scala.inline
-  def apply(): DocumentationFormat = {
+  inline def apply(): DocumentationFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentationFormat]
   }
   
-  @scala.inline
-  implicit class DocumentationFormatMutableBuilder[Self <: DocumentationFormat] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentationFormat](x: Self) {
     
-    @scala.inline
-    def setDocumentationFormat(value: js.Array[MarkupKind]): Self = StObject.set(x, "documentationFormat", value.asInstanceOf[js.Any])
+    inline def setDocumentationFormat(value: js.Array[MarkupKind]): Self = StObject.set(x, "documentationFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationFormatUndefined: Self = StObject.set(x, "documentationFormat", js.undefined)
+    inline def setDocumentationFormatUndefined: Self = StObject.set(x, "documentationFormat", js.undefined)
     
-    @scala.inline
-    def setDocumentationFormatVarargs(value: MarkupKind*): Self = StObject.set(x, "documentationFormat", js.Array(value :_*))
+    inline def setDocumentationFormatVarargs(value: MarkupKind*): Self = StObject.set(x, "documentationFormat", js.Array(value :_*))
     
-    @scala.inline
-    def setParameterInformation(value: LabelOffsetSupport): Self = StObject.set(x, "parameterInformation", value.asInstanceOf[js.Any])
+    inline def setParameterInformation(value: LabelOffsetSupport): Self = StObject.set(x, "parameterInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterInformationUndefined: Self = StObject.set(x, "parameterInformation", js.undefined)
+    inline def setParameterInformationUndefined: Self = StObject.set(x, "parameterInformation", js.undefined)
   }
 }

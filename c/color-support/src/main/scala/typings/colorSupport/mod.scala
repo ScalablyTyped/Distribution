@@ -29,17 +29,13 @@ object mod extends Shortcut {
   trait ColorSupportLevel extends StObject
   object ColorSupportLevel {
     
-    @scala.inline
-    def `0`: typings.colorSupport.colorSupportNumbers.`0` = 0.asInstanceOf[typings.colorSupport.colorSupportNumbers.`0`]
+    inline def `0`: typings.colorSupport.colorSupportNumbers.`0` = 0.asInstanceOf[typings.colorSupport.colorSupportNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.colorSupport.colorSupportNumbers.`1` = 1.asInstanceOf[typings.colorSupport.colorSupportNumbers.`1`]
+    inline def `1`: typings.colorSupport.colorSupportNumbers.`1` = 1.asInstanceOf[typings.colorSupport.colorSupportNumbers.`1`]
     
-    @scala.inline
-    def `2`: typings.colorSupport.colorSupportNumbers.`2` = 2.asInstanceOf[typings.colorSupport.colorSupportNumbers.`2`]
+    inline def `2`: typings.colorSupport.colorSupportNumbers.`2` = 2.asInstanceOf[typings.colorSupport.colorSupportNumbers.`2`]
     
-    @scala.inline
-    def `3`: typings.colorSupport.colorSupportNumbers.`3` = 3.asInstanceOf[typings.colorSupport.colorSupportNumbers.`3`]
+    inline def `3`: typings.colorSupport.colorSupportNumbers.`3` = 3.asInstanceOf[typings.colorSupport.colorSupportNumbers.`3`]
   }
   
   trait ColorSupportOptions extends StObject {
@@ -62,62 +58,44 @@ object mod extends Shortcut {
   }
   object ColorSupportOptions {
     
-    @scala.inline
-    def apply(): ColorSupportOptions = {
+    inline def apply(): ColorSupportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColorSupportOptions]
     }
     
-    @scala.inline
-    implicit class ColorSupportOptionsMutableBuilder[Self <: ColorSupportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ColorSupportOptions](x: Self) {
       
-      @scala.inline
-      def setAlwaysReturn(value: Boolean): Self = StObject.set(x, "alwaysReturn", value.asInstanceOf[js.Any])
+      inline def setAlwaysReturn(value: Boolean): Self = StObject.set(x, "alwaysReturn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysReturnUndefined: Self = StObject.set(x, "alwaysReturn", js.undefined)
+      inline def setAlwaysReturnUndefined: Self = StObject.set(x, "alwaysReturn", js.undefined)
       
-      @scala.inline
-      def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setIgnoreCI(value: Boolean): Self = StObject.set(x, "ignoreCI", value.asInstanceOf[js.Any])
+      inline def setIgnoreCI(value: Boolean): Self = StObject.set(x, "ignoreCI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCIUndefined: Self = StObject.set(x, "ignoreCI", js.undefined)
+      inline def setIgnoreCIUndefined: Self = StObject.set(x, "ignoreCI", js.undefined)
       
-      @scala.inline
-      def setIgnoreDumb(value: Boolean): Self = StObject.set(x, "ignoreDumb", value.asInstanceOf[js.Any])
+      inline def setIgnoreDumb(value: Boolean): Self = StObject.set(x, "ignoreDumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDumbUndefined: Self = StObject.set(x, "ignoreDumb", js.undefined)
+      inline def setIgnoreDumbUndefined: Self = StObject.set(x, "ignoreDumb", js.undefined)
       
-      @scala.inline
-      def setIgnoreTTY(value: Boolean): Self = StObject.set(x, "ignoreTTY", value.asInstanceOf[js.Any])
+      inline def setIgnoreTTY(value: Boolean): Self = StObject.set(x, "ignoreTTY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreTTYUndefined: Self = StObject.set(x, "ignoreTTY", js.undefined)
+      inline def setIgnoreTTYUndefined: Self = StObject.set(x, "ignoreTTY", js.undefined)
       
-      @scala.inline
-      def setLevel(value: ColorSupportLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: ColorSupportLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setStream(value: WriteStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WriteStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+      inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
+      inline def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
     }
   }
   
@@ -133,26 +111,20 @@ object mod extends Shortcut {
   }
   object ColorSupportResult {
     
-    @scala.inline
-    def apply(has16m: Boolean, has256: Boolean, hasBasic: Boolean, level: ColorSupportLevel): ColorSupportResult = {
+    inline def apply(has16m: Boolean, has256: Boolean, hasBasic: Boolean, level: ColorSupportLevel): ColorSupportResult = {
       val __obj = js.Dynamic.literal(has16m = has16m.asInstanceOf[js.Any], has256 = has256.asInstanceOf[js.Any], hasBasic = hasBasic.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorSupportResult]
     }
     
-    @scala.inline
-    implicit class ColorSupportResultMutableBuilder[Self <: ColorSupportResult] (val x: Self) extends AnyVal {
+    extension [Self <: ColorSupportResult](x: Self) {
       
-      @scala.inline
-      def setHas16m(value: Boolean): Self = StObject.set(x, "has16m", value.asInstanceOf[js.Any])
+      inline def setHas16m(value: Boolean): Self = StObject.set(x, "has16m", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas256(value: Boolean): Self = StObject.set(x, "has256", value.asInstanceOf[js.Any])
+      inline def setHas256(value: Boolean): Self = StObject.set(x, "has256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasBasic(value: Boolean): Self = StObject.set(x, "hasBasic", value.asInstanceOf[js.Any])
+      inline def setHasBasic(value: Boolean): Self = StObject.set(x, "hasBasic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: ColorSupportLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: ColorSupportLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }
   }
   

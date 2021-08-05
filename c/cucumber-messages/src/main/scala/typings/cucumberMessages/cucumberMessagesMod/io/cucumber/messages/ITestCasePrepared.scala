@@ -15,34 +15,25 @@ trait ITestCasePrepared extends StObject {
 }
 object ITestCasePrepared {
   
-  @scala.inline
-  def apply(): ITestCasePrepared = {
+  inline def apply(): ITestCasePrepared = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITestCasePrepared]
   }
   
-  @scala.inline
-  implicit class ITestCasePreparedMutableBuilder[Self <: ITestCasePrepared] (val x: Self) extends AnyVal {
+  extension [Self <: ITestCasePrepared](x: Self) {
     
-    @scala.inline
-    def setPickleId(value: String): Self = StObject.set(x, "pickleId", value.asInstanceOf[js.Any])
+    inline def setPickleId(value: String): Self = StObject.set(x, "pickleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickleIdNull: Self = StObject.set(x, "pickleId", null)
+    inline def setPickleIdNull: Self = StObject.set(x, "pickleId", null)
     
-    @scala.inline
-    def setPickleIdUndefined: Self = StObject.set(x, "pickleId", js.undefined)
+    inline def setPickleIdUndefined: Self = StObject.set(x, "pickleId", js.undefined)
     
-    @scala.inline
-    def setSteps(value: js.Array[ITestCasePreparedStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[ITestCasePreparedStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsNull: Self = StObject.set(x, "steps", null)
+    inline def setStepsNull: Self = StObject.set(x, "steps", null)
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    @scala.inline
-    def setStepsVarargs(value: ITestCasePreparedStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: ITestCasePreparedStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

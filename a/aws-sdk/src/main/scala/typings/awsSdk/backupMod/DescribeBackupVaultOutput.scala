@@ -38,49 +38,35 @@ trait DescribeBackupVaultOutput extends StObject {
 }
 object DescribeBackupVaultOutput {
   
-  @scala.inline
-  def apply(): DescribeBackupVaultOutput = {
+  inline def apply(): DescribeBackupVaultOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBackupVaultOutput]
   }
   
-  @scala.inline
-  implicit class DescribeBackupVaultOutputMutableBuilder[Self <: DescribeBackupVaultOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBackupVaultOutput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
+    inline def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupVaultArnUndefined: Self = StObject.set(x, "BackupVaultArn", js.undefined)
+    inline def setBackupVaultArnUndefined: Self = StObject.set(x, "BackupVaultArn", js.undefined)
     
-    @scala.inline
-    def setBackupVaultName(value: String): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
+    inline def setBackupVaultName(value: String): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupVaultNameUndefined: Self = StObject.set(x, "BackupVaultName", js.undefined)
+    inline def setBackupVaultNameUndefined: Self = StObject.set(x, "BackupVaultName", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setCreatorRequestId(value: String): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
+    inline def setCreatorRequestId(value: String): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
+    inline def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
     
-    @scala.inline
-    def setEncryptionKeyArn(value: ARN): Self = StObject.set(x, "EncryptionKeyArn", value.asInstanceOf[js.Any])
+    inline def setEncryptionKeyArn(value: ARN): Self = StObject.set(x, "EncryptionKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionKeyArnUndefined: Self = StObject.set(x, "EncryptionKeyArn", js.undefined)
+    inline def setEncryptionKeyArnUndefined: Self = StObject.set(x, "EncryptionKeyArn", js.undefined)
     
-    @scala.inline
-    def setNumberOfRecoveryPoints(value: long): Self = StObject.set(x, "NumberOfRecoveryPoints", value.asInstanceOf[js.Any])
+    inline def setNumberOfRecoveryPoints(value: long): Self = StObject.set(x, "NumberOfRecoveryPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfRecoveryPointsUndefined: Self = StObject.set(x, "NumberOfRecoveryPoints", js.undefined)
+    inline def setNumberOfRecoveryPointsUndefined: Self = StObject.set(x, "NumberOfRecoveryPoints", js.undefined)
   }
 }

@@ -15,25 +15,19 @@ trait PartialFilesTypeProps extends StObject {
 }
 object PartialFilesTypeProps {
   
-  @scala.inline
-  def apply(): PartialFilesTypeProps = {
+  inline def apply(): PartialFilesTypeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialFilesTypeProps]
   }
   
-  @scala.inline
-  implicit class PartialFilesTypePropsMutableBuilder[Self <: PartialFilesTypeProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialFilesTypeProps](x: Self) {
     
-    @scala.inline
-    def setKnob(value: FileTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: FileTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
+    inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: /* value */ DateTypeKnobValue => DateTypeKnobValue): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* value */ DateTypeKnobValue => DateTypeKnobValue): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }
 }

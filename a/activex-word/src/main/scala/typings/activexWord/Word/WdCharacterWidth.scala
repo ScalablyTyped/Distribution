@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdCharacterWidth extends StObject
 object WdCharacterWidth {
   
-  @scala.inline
-  def wdWidthFullWidth: `7` = 7.asInstanceOf[`7`]
+  inline def wdWidthFullWidth: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def wdWidthHalfWidth: `6` = 6.asInstanceOf[`6`]
+  inline def wdWidthHalfWidth: `6` = 6.asInstanceOf[`6`]
 }

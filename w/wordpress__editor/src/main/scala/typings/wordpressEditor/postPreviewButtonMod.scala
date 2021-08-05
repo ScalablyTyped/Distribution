@@ -33,26 +33,20 @@ object postPreviewButtonMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setForceIsAutosaveable(value: Boolean): Self = StObject.set(x, "forceIsAutosaveable", value.asInstanceOf[js.Any])
+        inline def setForceIsAutosaveable(value: Boolean): Self = StObject.set(x, "forceIsAutosaveable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceIsAutosaveableUndefined: Self = StObject.set(x, "forceIsAutosaveable", js.undefined)
+        inline def setForceIsAutosaveableUndefined: Self = StObject.set(x, "forceIsAutosaveable", js.undefined)
         
-        @scala.inline
-        def setForcePreviewLink(value: String): Self = StObject.set(x, "forcePreviewLink", value.asInstanceOf[js.Any])
+        inline def setForcePreviewLink(value: String): Self = StObject.set(x, "forcePreviewLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForcePreviewLinkUndefined: Self = StObject.set(x, "forcePreviewLink", js.undefined)
+        inline def setForcePreviewLinkUndefined: Self = StObject.set(x, "forcePreviewLink", js.undefined)
       }
     }
   }

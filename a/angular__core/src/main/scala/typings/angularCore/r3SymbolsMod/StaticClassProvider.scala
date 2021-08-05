@@ -40,22 +40,17 @@ trait StaticClassProvider
 }
 object StaticClassProvider {
   
-  @scala.inline
-  def apply(deps: js.Array[js.Any], provide: js.Any, useClass: Type[js.Any]): StaticClassProvider = {
+  inline def apply(deps: js.Array[js.Any], provide: js.Any, useClass: Type[js.Any]): StaticClassProvider = {
     val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], provide = provide.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticClassProvider]
   }
   
-  @scala.inline
-  implicit class StaticClassProviderMutableBuilder[Self <: StaticClassProvider] (val x: Self) extends AnyVal {
+  extension [Self <: StaticClassProvider](x: Self) {
     
-    @scala.inline
-    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+    inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+    inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
-    @scala.inline
-    def setProvide(value: js.Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+    inline def setProvide(value: js.Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
   }
 }

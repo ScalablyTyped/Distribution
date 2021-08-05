@@ -12,19 +12,15 @@ trait IViews extends StObject {
 }
 object IViews {
   
-  @scala.inline
-  def apply(Count: Double, Item: Double => IView): IViews = {
+  inline def apply(Count: Double, Item: Double => IView): IViews = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[IViews]
   }
   
-  @scala.inline
-  implicit class IViewsMutableBuilder[Self <: IViews] (val x: Self) extends AnyVal {
+  extension [Self <: IViews](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IView): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IView): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

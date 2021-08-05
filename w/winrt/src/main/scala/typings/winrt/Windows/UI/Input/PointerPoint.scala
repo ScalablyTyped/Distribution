@@ -11,8 +11,7 @@ trait PointerPoint
      with IPointerPoint
 object PointerPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     frameId: Double,
     isInContact: Boolean,
     pointerDevice: PointerDevice,

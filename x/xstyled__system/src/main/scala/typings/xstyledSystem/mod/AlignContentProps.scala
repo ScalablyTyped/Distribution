@@ -14,27 +14,22 @@ trait AlignContentProps extends StObject {
 }
 object AlignContentProps {
   
-  @scala.inline
-  def apply(): AlignContentProps = {
+  inline def apply(): AlignContentProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AlignContentProps]
   }
   
-  @scala.inline
-  implicit class AlignContentPropsMutableBuilder[Self <: AlignContentProps] (val x: Self) extends AnyVal {
+  extension [Self <: AlignContentProps](x: Self) {
     
-    @scala.inline
-    def setAlignContent(
+    inline def setAlignContent(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ js.Any
         ]
     ): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
+    inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
     
-    @scala.inline
-    def setAlignContentVarargs(
+    inline def setAlignContentVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ js.Any)*
     ): Self = StObject.set(x, "alignContent", js.Array(value :_*))
   }

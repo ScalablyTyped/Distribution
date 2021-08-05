@@ -12,19 +12,15 @@ trait Ecprvhex extends StObject {
 }
 object Ecprvhex {
   
-  @scala.inline
-  def apply(ecprvhex: String, ecpubhex: String): Ecprvhex = {
+  inline def apply(ecprvhex: String, ecpubhex: String): Ecprvhex = {
     val __obj = js.Dynamic.literal(ecprvhex = ecprvhex.asInstanceOf[js.Any], ecpubhex = ecpubhex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ecprvhex]
   }
   
-  @scala.inline
-  implicit class EcprvhexMutableBuilder[Self <: Ecprvhex] (val x: Self) extends AnyVal {
+  extension [Self <: Ecprvhex](x: Self) {
     
-    @scala.inline
-    def setEcprvhex(value: String): Self = StObject.set(x, "ecprvhex", value.asInstanceOf[js.Any])
+    inline def setEcprvhex(value: String): Self = StObject.set(x, "ecprvhex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcpubhex(value: String): Self = StObject.set(x, "ecpubhex", value.asInstanceOf[js.Any])
+    inline def setEcpubhex(value: String): Self = StObject.set(x, "ecpubhex", value.asInstanceOf[js.Any])
   }
 }

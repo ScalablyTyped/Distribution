@@ -40,8 +40,7 @@ object binaryauthorizationMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Binaryauthorization
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object binaryauthorizationMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object binaryauthorizationMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def binaryauthorization(options: Options): Binaryauthorization = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryauthorization")(options.asInstanceOf[js.Any]).asInstanceOf[Binaryauthorization]
+  inline def binaryauthorization(options: Options): Binaryauthorization = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryauthorization")(options.asInstanceOf[js.Any]).asInstanceOf[Binaryauthorization]
   
-  @scala.inline
-  def binaryauthorization_v1beta1(version: v1beta1): Binaryauthorization = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryauthorization")(version.asInstanceOf[js.Any]).asInstanceOf[Binaryauthorization]
+  inline def binaryauthorization_v1beta1(version: v1beta1): Binaryauthorization = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryauthorization")(version.asInstanceOf[js.Any]).asInstanceOf[Binaryauthorization]
 }

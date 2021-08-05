@@ -18,25 +18,19 @@ trait GetDatabasesResponse extends StObject {
 }
 object GetDatabasesResponse {
   
-  @scala.inline
-  def apply(DatabaseList: DatabaseList): GetDatabasesResponse = {
+  inline def apply(DatabaseList: DatabaseList): GetDatabasesResponse = {
     val __obj = js.Dynamic.literal(DatabaseList = DatabaseList.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDatabasesResponse]
   }
   
-  @scala.inline
-  implicit class GetDatabasesResponseMutableBuilder[Self <: GetDatabasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDatabasesResponse](x: Self) {
     
-    @scala.inline
-    def setDatabaseList(value: DatabaseList): Self = StObject.set(x, "DatabaseList", value.asInstanceOf[js.Any])
+    inline def setDatabaseList(value: DatabaseList): Self = StObject.set(x, "DatabaseList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseListVarargs(value: Database*): Self = StObject.set(x, "DatabaseList", js.Array(value :_*))
+    inline def setDatabaseListVarargs(value: Database*): Self = StObject.set(x, "DatabaseList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

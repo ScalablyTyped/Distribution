@@ -22,14 +22,12 @@ object mod {
     @JSImport("@semantic-ui-react/event-stack", "default.defaultProps")
     @js.native
     def defaultProps: Pool = js.native
-    @scala.inline
-    def defaultProps_=(x: Pool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Pool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@semantic-ui-react/event-stack", "default.propTypes")
     @js.native
     def propTypes: Name = js.native
-    @scala.inline
-    def propTypes_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@semantic-ui-react/event-stack", "instance")

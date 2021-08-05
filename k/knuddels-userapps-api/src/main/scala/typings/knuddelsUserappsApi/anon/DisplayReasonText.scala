@@ -17,37 +17,27 @@ trait DisplayReasonText extends StObject {
 }
 object DisplayReasonText {
   
-  @scala.inline
-  def apply(): DisplayReasonText = {
+  inline def apply(): DisplayReasonText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisplayReasonText]
   }
   
-  @scala.inline
-  implicit class DisplayReasonTextMutableBuilder[Self <: DisplayReasonText] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayReasonText](x: Self) {
     
-    @scala.inline
-    def setDisplayReasonText(value: String): Self = StObject.set(x, "displayReasonText", value.asInstanceOf[js.Any])
+    inline def setDisplayReasonText(value: String): Self = StObject.set(x, "displayReasonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayReasonTextUndefined: Self = StObject.set(x, "displayReasonText", js.undefined)
+    inline def setDisplayReasonTextUndefined: Self = StObject.set(x, "displayReasonText", js.undefined)
     
-    @scala.inline
-    def setOnError(value: /* message */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* message */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
+    inline def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
     
-    @scala.inline
-    def setTransferDisplayType(value: KnuddelTransferDisplayType): Self = StObject.set(x, "transferDisplayType", value.asInstanceOf[js.Any])
+    inline def setTransferDisplayType(value: KnuddelTransferDisplayType): Self = StObject.set(x, "transferDisplayType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferDisplayTypeUndefined: Self = StObject.set(x, "transferDisplayType", js.undefined)
+    inline def setTransferDisplayTypeUndefined: Self = StObject.set(x, "transferDisplayType", js.undefined)
   }
 }

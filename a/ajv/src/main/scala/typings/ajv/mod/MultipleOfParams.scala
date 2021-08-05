@@ -12,16 +12,13 @@ trait MultipleOfParams
 }
 object MultipleOfParams {
   
-  @scala.inline
-  def apply(multipleOf: Double): MultipleOfParams = {
+  inline def apply(multipleOf: Double): MultipleOfParams = {
     val __obj = js.Dynamic.literal(multipleOf = multipleOf.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleOfParams]
   }
   
-  @scala.inline
-  implicit class MultipleOfParamsMutableBuilder[Self <: MultipleOfParams] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleOfParams](x: Self) {
     
-    @scala.inline
-    def setMultipleOf(value: Double): Self = StObject.set(x, "multipleOf", value.asInstanceOf[js.Any])
+    inline def setMultipleOf(value: Double): Self = StObject.set(x, "multipleOf", value.asInstanceOf[js.Any])
   }
 }

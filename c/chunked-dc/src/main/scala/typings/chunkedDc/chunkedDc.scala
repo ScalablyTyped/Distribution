@@ -35,17 +35,14 @@ object chunkedDc {
   }
   object CommonStatic {
     
-    @scala.inline
-    def apply(HEADER_LENGTH: Double): CommonStatic = {
+    inline def apply(HEADER_LENGTH: Double): CommonStatic = {
       val __obj = js.Dynamic.literal(HEADER_LENGTH = HEADER_LENGTH.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommonStatic]
     }
     
-    @scala.inline
-    implicit class CommonStaticMutableBuilder[Self <: CommonStatic] (val x: Self) extends AnyVal {
+    extension [Self <: CommonStatic](x: Self) {
       
-      @scala.inline
-      def setHEADER_LENGTH(value: Double): Self = StObject.set(x, "HEADER_LENGTH", value.asInstanceOf[js.Any])
+      inline def setHEADER_LENGTH(value: Double): Self = StObject.set(x, "HEADER_LENGTH", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,20 +58,16 @@ object chunkedDc {
   }
   object Standalone {
     
-    @scala.inline
-    def apply(Chunker: ChunkerStatic, Unchunker: UnchunkerStatic): Standalone = {
+    inline def apply(Chunker: ChunkerStatic, Unchunker: UnchunkerStatic): Standalone = {
       val __obj = js.Dynamic.literal(Chunker = Chunker.asInstanceOf[js.Any], Unchunker = Unchunker.asInstanceOf[js.Any])
       __obj.asInstanceOf[Standalone]
     }
     
-    @scala.inline
-    implicit class StandaloneMutableBuilder[Self <: Standalone] (val x: Self) extends AnyVal {
+    extension [Self <: Standalone](x: Self) {
       
-      @scala.inline
-      def setChunker(value: ChunkerStatic): Self = StObject.set(x, "Chunker", value.asInstanceOf[js.Any])
+      inline def setChunker(value: ChunkerStatic): Self = StObject.set(x, "Chunker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnchunker(value: UnchunkerStatic): Self = StObject.set(x, "Unchunker", value.asInstanceOf[js.Any])
+      inline def setUnchunker(value: UnchunkerStatic): Self = StObject.set(x, "Unchunker", value.asInstanceOf[js.Any])
     }
   }
   

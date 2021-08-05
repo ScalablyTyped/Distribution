@@ -73,103 +73,71 @@ trait Stack extends StObject {
 }
 object Stack {
   
-  @scala.inline
-  def apply(Name: String): Stack = {
+  inline def apply(Name: String): Stack = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stack]
   }
   
-  @scala.inline
-  implicit class StackMutableBuilder[Self <: Stack] (val x: Self) extends AnyVal {
+  extension [Self <: Stack](x: Self) {
     
-    @scala.inline
-    def setAccessEndpoints(value: AccessEndpointList): Self = StObject.set(x, "AccessEndpoints", value.asInstanceOf[js.Any])
+    inline def setAccessEndpoints(value: AccessEndpointList): Self = StObject.set(x, "AccessEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessEndpointsUndefined: Self = StObject.set(x, "AccessEndpoints", js.undefined)
+    inline def setAccessEndpointsUndefined: Self = StObject.set(x, "AccessEndpoints", js.undefined)
     
-    @scala.inline
-    def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = StObject.set(x, "AccessEndpoints", js.Array(value :_*))
+    inline def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = StObject.set(x, "AccessEndpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setApplicationSettings(value: ApplicationSettingsResponse): Self = StObject.set(x, "ApplicationSettings", value.asInstanceOf[js.Any])
+    inline def setApplicationSettings(value: ApplicationSettingsResponse): Self = StObject.set(x, "ApplicationSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationSettingsUndefined: Self = StObject.set(x, "ApplicationSettings", js.undefined)
+    inline def setApplicationSettingsUndefined: Self = StObject.set(x, "ApplicationSettings", js.undefined)
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    @scala.inline
-    def setEmbedHostDomains(value: EmbedHostDomains): Self = StObject.set(x, "EmbedHostDomains", value.asInstanceOf[js.Any])
+    inline def setEmbedHostDomains(value: EmbedHostDomains): Self = StObject.set(x, "EmbedHostDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedHostDomainsUndefined: Self = StObject.set(x, "EmbedHostDomains", js.undefined)
+    inline def setEmbedHostDomainsUndefined: Self = StObject.set(x, "EmbedHostDomains", js.undefined)
     
-    @scala.inline
-    def setEmbedHostDomainsVarargs(value: EmbedHostDomain*): Self = StObject.set(x, "EmbedHostDomains", js.Array(value :_*))
+    inline def setEmbedHostDomainsVarargs(value: EmbedHostDomain*): Self = StObject.set(x, "EmbedHostDomains", js.Array(value :_*))
     
-    @scala.inline
-    def setFeedbackURL(value: FeedbackURL): Self = StObject.set(x, "FeedbackURL", value.asInstanceOf[js.Any])
+    inline def setFeedbackURL(value: FeedbackURL): Self = StObject.set(x, "FeedbackURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackURLUndefined: Self = StObject.set(x, "FeedbackURL", js.undefined)
+    inline def setFeedbackURLUndefined: Self = StObject.set(x, "FeedbackURL", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectURL(value: RedirectURL): Self = StObject.set(x, "RedirectURL", value.asInstanceOf[js.Any])
+    inline def setRedirectURL(value: RedirectURL): Self = StObject.set(x, "RedirectURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectURLUndefined: Self = StObject.set(x, "RedirectURL", js.undefined)
+    inline def setRedirectURLUndefined: Self = StObject.set(x, "RedirectURL", js.undefined)
     
-    @scala.inline
-    def setStackErrors(value: StackErrors): Self = StObject.set(x, "StackErrors", value.asInstanceOf[js.Any])
+    inline def setStackErrors(value: StackErrors): Self = StObject.set(x, "StackErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackErrorsUndefined: Self = StObject.set(x, "StackErrors", js.undefined)
+    inline def setStackErrorsUndefined: Self = StObject.set(x, "StackErrors", js.undefined)
     
-    @scala.inline
-    def setStackErrorsVarargs(value: StackError*): Self = StObject.set(x, "StackErrors", js.Array(value :_*))
+    inline def setStackErrorsVarargs(value: StackError*): Self = StObject.set(x, "StackErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setStorageConnectors(value: StorageConnectorList): Self = StObject.set(x, "StorageConnectors", value.asInstanceOf[js.Any])
+    inline def setStorageConnectors(value: StorageConnectorList): Self = StObject.set(x, "StorageConnectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageConnectorsUndefined: Self = StObject.set(x, "StorageConnectors", js.undefined)
+    inline def setStorageConnectorsUndefined: Self = StObject.set(x, "StorageConnectors", js.undefined)
     
-    @scala.inline
-    def setStorageConnectorsVarargs(value: StorageConnector*): Self = StObject.set(x, "StorageConnectors", js.Array(value :_*))
+    inline def setStorageConnectorsVarargs(value: StorageConnector*): Self = StObject.set(x, "StorageConnectors", js.Array(value :_*))
     
-    @scala.inline
-    def setUserSettings(value: UserSettingList): Self = StObject.set(x, "UserSettings", value.asInstanceOf[js.Any])
+    inline def setUserSettings(value: UserSettingList): Self = StObject.set(x, "UserSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSettingsUndefined: Self = StObject.set(x, "UserSettings", js.undefined)
+    inline def setUserSettingsUndefined: Self = StObject.set(x, "UserSettings", js.undefined)
     
-    @scala.inline
-    def setUserSettingsVarargs(value: UserSetting*): Self = StObject.set(x, "UserSettings", js.Array(value :_*))
+    inline def setUserSettingsVarargs(value: UserSetting*): Self = StObject.set(x, "UserSettings", js.Array(value :_*))
   }
 }

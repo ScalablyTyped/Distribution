@@ -13,16 +13,13 @@ trait DynatraceConnectorProfileProperties extends StObject {
 }
 object DynatraceConnectorProfileProperties {
   
-  @scala.inline
-  def apply(instanceUrl: InstanceUrl): DynatraceConnectorProfileProperties = {
+  inline def apply(instanceUrl: InstanceUrl): DynatraceConnectorProfileProperties = {
     val __obj = js.Dynamic.literal(instanceUrl = instanceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynatraceConnectorProfileProperties]
   }
   
-  @scala.inline
-  implicit class DynatraceConnectorProfilePropertiesMutableBuilder[Self <: DynatraceConnectorProfileProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DynatraceConnectorProfileProperties](x: Self) {
     
-    @scala.inline
-    def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
+    inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }
 }

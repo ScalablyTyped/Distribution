@@ -40,8 +40,7 @@ trait XColumnRowRange
 }
 object XColumnRowRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Columns: XTableColumns,
     Rows: XTableRows,
     acquire: () => Unit,
@@ -54,19 +53,14 @@ object XColumnRowRange {
     __obj.asInstanceOf[XColumnRowRange]
   }
   
-  @scala.inline
-  implicit class XColumnRowRangeMutableBuilder[Self <: XColumnRowRange] (val x: Self) extends AnyVal {
+  extension [Self <: XColumnRowRange](x: Self) {
     
-    @scala.inline
-    def setColumns(value: XTableColumns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: XTableColumns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetColumns(value: () => XTableColumns): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
+    inline def setGetColumns(value: () => XTableColumns): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRows(value: () => XTableRows): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
+    inline def setGetRows(value: () => XTableRows): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRows(value: XTableRows): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: XTableRows): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
   }
 }

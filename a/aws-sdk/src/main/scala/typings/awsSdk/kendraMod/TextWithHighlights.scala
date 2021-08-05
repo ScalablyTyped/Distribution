@@ -18,28 +18,21 @@ trait TextWithHighlights extends StObject {
 }
 object TextWithHighlights {
   
-  @scala.inline
-  def apply(): TextWithHighlights = {
+  inline def apply(): TextWithHighlights = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextWithHighlights]
   }
   
-  @scala.inline
-  implicit class TextWithHighlightsMutableBuilder[Self <: TextWithHighlights] (val x: Self) extends AnyVal {
+  extension [Self <: TextWithHighlights](x: Self) {
     
-    @scala.inline
-    def setHighlights(value: HighlightList): Self = StObject.set(x, "Highlights", value.asInstanceOf[js.Any])
+    inline def setHighlights(value: HighlightList): Self = StObject.set(x, "Highlights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightsUndefined: Self = StObject.set(x, "Highlights", js.undefined)
+    inline def setHighlightsUndefined: Self = StObject.set(x, "Highlights", js.undefined)
     
-    @scala.inline
-    def setHighlightsVarargs(value: Highlight*): Self = StObject.set(x, "Highlights", js.Array(value :_*))
+    inline def setHighlightsVarargs(value: Highlight*): Self = StObject.set(x, "Highlights", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
   }
 }

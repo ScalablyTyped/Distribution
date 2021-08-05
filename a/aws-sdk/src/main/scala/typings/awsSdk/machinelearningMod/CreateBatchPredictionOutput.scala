@@ -13,19 +13,15 @@ trait CreateBatchPredictionOutput extends StObject {
 }
 object CreateBatchPredictionOutput {
   
-  @scala.inline
-  def apply(): CreateBatchPredictionOutput = {
+  inline def apply(): CreateBatchPredictionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateBatchPredictionOutput]
   }
   
-  @scala.inline
-  implicit class CreateBatchPredictionOutputMutableBuilder[Self <: CreateBatchPredictionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBatchPredictionOutput](x: Self) {
     
-    @scala.inline
-    def setBatchPredictionId(value: EntityId): Self = StObject.set(x, "BatchPredictionId", value.asInstanceOf[js.Any])
+    inline def setBatchPredictionId(value: EntityId): Self = StObject.set(x, "BatchPredictionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchPredictionIdUndefined: Self = StObject.set(x, "BatchPredictionId", js.undefined)
+    inline def setBatchPredictionIdUndefined: Self = StObject.set(x, "BatchPredictionId", js.undefined)
   }
 }

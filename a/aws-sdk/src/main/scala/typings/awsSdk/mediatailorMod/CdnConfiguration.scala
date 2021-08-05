@@ -18,25 +18,19 @@ trait CdnConfiguration extends StObject {
 }
 object CdnConfiguration {
   
-  @scala.inline
-  def apply(): CdnConfiguration = {
+  inline def apply(): CdnConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CdnConfiguration]
   }
   
-  @scala.inline
-  implicit class CdnConfigurationMutableBuilder[Self <: CdnConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CdnConfiguration](x: Self) {
     
-    @scala.inline
-    def setAdSegmentUrlPrefix(value: string): Self = StObject.set(x, "AdSegmentUrlPrefix", value.asInstanceOf[js.Any])
+    inline def setAdSegmentUrlPrefix(value: string): Self = StObject.set(x, "AdSegmentUrlPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdSegmentUrlPrefixUndefined: Self = StObject.set(x, "AdSegmentUrlPrefix", js.undefined)
+    inline def setAdSegmentUrlPrefixUndefined: Self = StObject.set(x, "AdSegmentUrlPrefix", js.undefined)
     
-    @scala.inline
-    def setContentSegmentUrlPrefix(value: string): Self = StObject.set(x, "ContentSegmentUrlPrefix", value.asInstanceOf[js.Any])
+    inline def setContentSegmentUrlPrefix(value: string): Self = StObject.set(x, "ContentSegmentUrlPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentSegmentUrlPrefixUndefined: Self = StObject.set(x, "ContentSegmentUrlPrefix", js.undefined)
+    inline def setContentSegmentUrlPrefixUndefined: Self = StObject.set(x, "ContentSegmentUrlPrefix", js.undefined)
   }
 }

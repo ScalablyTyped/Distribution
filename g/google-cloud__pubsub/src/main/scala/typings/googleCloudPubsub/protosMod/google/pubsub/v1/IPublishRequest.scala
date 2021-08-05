@@ -15,34 +15,25 @@ trait IPublishRequest extends StObject {
 }
 object IPublishRequest {
   
-  @scala.inline
-  def apply(): IPublishRequest = {
+  inline def apply(): IPublishRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPublishRequest]
   }
   
-  @scala.inline
-  implicit class IPublishRequestMutableBuilder[Self <: IPublishRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IPublishRequest](x: Self) {
     
-    @scala.inline
-    def setMessages(value: js.Array[IPubsubMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[IPubsubMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesNull: Self = StObject.set(x, "messages", null)
+    inline def setMessagesNull: Self = StObject.set(x, "messages", null)
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: IPubsubMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: IPubsubMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNull: Self = StObject.set(x, "topic", null)
+    inline def setTopicNull: Self = StObject.set(x, "topic", null)
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

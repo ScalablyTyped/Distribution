@@ -15,31 +15,23 @@ trait FromIndexItemData extends StObject {
 }
 object FromIndexItemData {
   
-  @scala.inline
-  def apply(): FromIndexItemData = {
+  inline def apply(): FromIndexItemData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FromIndexItemData]
   }
   
-  @scala.inline
-  implicit class FromIndexItemDataMutableBuilder[Self <: FromIndexItemData] (val x: Self) extends AnyVal {
+  extension [Self <: FromIndexItemData](x: Self) {
     
-    @scala.inline
-    def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
+    inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromIndexUndefined: Self = StObject.set(x, "fromIndex", js.undefined)
+    inline def setFromIndexUndefined: Self = StObject.set(x, "fromIndex", js.undefined)
     
-    @scala.inline
-    def setItemData(value: js.Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+    inline def setItemData(value: js.Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
+    inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
     
-    @scala.inline
-    def setItemElement(value: dxElement): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
+    inline def setItemElement(value: dxElement): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemElementUndefined: Self = StObject.set(x, "itemElement", js.undefined)
+    inline def setItemElementUndefined: Self = StObject.set(x, "itemElement", js.undefined)
   }
 }

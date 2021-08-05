@@ -8,26 +8,21 @@ object kefirStrings {
   
   @js.native
   sealed trait FnCallObssObssPCombinator extends StObject
-  @scala.inline
-  def FnCallObssObssPCombinator: FnCallObssObssPCombinator = "FnCallObssObssPCombinator".asInstanceOf[FnCallObssObssPCombinator]
+  inline def FnCallObssObssPCombinator: FnCallObssObssPCombinator = "FnCallObssObssPCombinator".asInstanceOf[FnCallObssObssPCombinator]
   
   @js.native
   sealed trait combine extends StObject
-  @scala.inline
-  def combine: combine = "combine".asInstanceOf[combine]
+  inline def combine: combine = "combine".asInstanceOf[combine]
   
   @js.native
   sealed trait end extends StObject
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait value extends StObject
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
+  inline def value: value = "value".asInstanceOf[value]
 }

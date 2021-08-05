@@ -79,86 +79,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object DeviceMetric {
   
-  @scala.inline
-  def apply(category: code, identifier: Identifier, `type`: CodeableConcept): DeviceMetric = {
+  inline def apply(category: code, identifier: Identifier, `type`: CodeableConcept): DeviceMetric = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceMetric]
   }
   
-  @scala.inline
-  implicit class DeviceMetricMutableBuilder[Self <: DeviceMetric] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceMetric](x: Self) {
     
-    @scala.inline
-    def setCalibration(value: js.Array[DeviceMetricCalibration]): Self = StObject.set(x, "calibration", value.asInstanceOf[js.Any])
+    inline def setCalibration(value: js.Array[DeviceMetricCalibration]): Self = StObject.set(x, "calibration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalibrationUndefined: Self = StObject.set(x, "calibration", js.undefined)
+    inline def setCalibrationUndefined: Self = StObject.set(x, "calibration", js.undefined)
     
-    @scala.inline
-    def setCalibrationVarargs(value: DeviceMetricCalibration*): Self = StObject.set(x, "calibration", js.Array(value :_*))
+    inline def setCalibrationVarargs(value: DeviceMetricCalibration*): Self = StObject.set(x, "calibration", js.Array(value :_*))
     
-    @scala.inline
-    def setCategory(value: code): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: code): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: code): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: code): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurementPeriod(value: Timing): Self = StObject.set(x, "measurementPeriod", value.asInstanceOf[js.Any])
+    inline def setMeasurementPeriod(value: Timing): Self = StObject.set(x, "measurementPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurementPeriodUndefined: Self = StObject.set(x, "measurementPeriod", js.undefined)
+    inline def setMeasurementPeriodUndefined: Self = StObject.set(x, "measurementPeriod", js.undefined)
     
-    @scala.inline
-    def setOperationalStatus(value: code): Self = StObject.set(x, "operationalStatus", value.asInstanceOf[js.Any])
+    inline def setOperationalStatus(value: code): Self = StObject.set(x, "operationalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationalStatusUndefined: Self = StObject.set(x, "operationalStatus", js.undefined)
+    inline def setOperationalStatusUndefined: Self = StObject.set(x, "operationalStatus", js.undefined)
     
-    @scala.inline
-    def setParent(value: Reference): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Reference): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setSource(value: Reference): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Reference): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: CodeableConcept): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: CodeableConcept): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def set_category(value: Element): Self = StObject.set(x, "_category", value.asInstanceOf[js.Any])
+    inline def set_category(value: Element): Self = StObject.set(x, "_category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_categoryUndefined: Self = StObject.set(x, "_category", js.undefined)
+    inline def set_categoryUndefined: Self = StObject.set(x, "_category", js.undefined)
     
-    @scala.inline
-    def set_color(value: Element): Self = StObject.set(x, "_color", value.asInstanceOf[js.Any])
+    inline def set_color(value: Element): Self = StObject.set(x, "_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_colorUndefined: Self = StObject.set(x, "_color", js.undefined)
+    inline def set_colorUndefined: Self = StObject.set(x, "_color", js.undefined)
     
-    @scala.inline
-    def set_operationalStatus(value: Element): Self = StObject.set(x, "_operationalStatus", value.asInstanceOf[js.Any])
+    inline def set_operationalStatus(value: Element): Self = StObject.set(x, "_operationalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_operationalStatusUndefined: Self = StObject.set(x, "_operationalStatus", js.undefined)
+    inline def set_operationalStatusUndefined: Self = StObject.set(x, "_operationalStatus", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ trait PromiseTypeDescription
 }
 object PromiseTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
@@ -27,10 +26,8 @@ object PromiseTypeDescription {
     __obj.asInstanceOf[PromiseTypeDescription]
   }
   
-  @scala.inline
-  implicit class PromiseTypeDescriptionMutableBuilder[Self <: PromiseTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: PromiseTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGeneric(value: Promise): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
+    inline def setGeneric(value: Promise): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
   }
 }

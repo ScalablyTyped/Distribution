@@ -24,32 +24,24 @@ object anon {
   }
   object Destroy {
     
-    @scala.inline
-    def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](): Destroy[S] = {
+    inline def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](): Destroy[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Destroy[S]]
     }
     
-    @scala.inline
-    implicit class DestroyMutableBuilder[Self <: Destroy[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */] (val x: Self & Destroy[S]) extends AnyVal {
+    extension [Self <: Destroy[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](x: Self & Destroy[S]) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyNull: Self = StObject.set(x, "destroy", null)
+      inline def setDestroyNull: Self = StObject.set(x, "destroy", null)
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: (/* view */ EditorView[S], /* prevState */ EditorState[S]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (/* view */ EditorView[S], /* prevState */ EditorState[S]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateNull: Self = StObject.set(x, "update", null)
+      inline def setUpdateNull: Self = StObject.set(x, "update", null)
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
@@ -67,65 +59,46 @@ object anon {
   }
   object Doc {
     
-    @scala.inline
-    def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](): Doc[S] = {
+    inline def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](): Doc[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Doc[S]]
     }
     
-    @scala.inline
-    implicit class DocMutableBuilder[Self <: Doc[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */] (val x: Self & Doc[S]) extends AnyVal {
+    extension [Self <: Doc[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](x: Self & Doc[S]) {
       
-      @scala.inline
-      def setDoc(value: Node[S]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      inline def setDoc(value: Node[S]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocNull: Self = StObject.set(x, "doc", null)
+      inline def setDocNull: Self = StObject.set(x, "doc", null)
       
-      @scala.inline
-      def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
+      inline def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Array[Plugin[js.Any, S]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Plugin[js.Any, S]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsNull: Self = StObject.set(x, "plugins", null)
+      inline def setPluginsNull: Self = StObject.set(x, "plugins", null)
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: (Plugin[js.Any, S])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: (Plugin[js.Any, S])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaNull: Self = StObject.set(x, "schema", null)
+      inline def setSchemaNull: Self = StObject.set(x, "schema", null)
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setSelection(value: Selection[S]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: Selection[S]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionNull: Self = StObject.set(x, "selection", null)
+      inline def setSelectionNull: Self = StObject.set(x, "selection", null)
       
-      @scala.inline
-      def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
-      @scala.inline
-      def setStoredMarks(value: js.Array[Mark[js.Any]]): Self = StObject.set(x, "storedMarks", value.asInstanceOf[js.Any])
+      inline def setStoredMarks(value: js.Array[Mark[js.Any]]): Self = StObject.set(x, "storedMarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoredMarksNull: Self = StObject.set(x, "storedMarks", null)
+      inline def setStoredMarksNull: Self = StObject.set(x, "storedMarks", null)
       
-      @scala.inline
-      def setStoredMarksUndefined: Self = StObject.set(x, "storedMarks", js.undefined)
+      inline def setStoredMarksUndefined: Self = StObject.set(x, "storedMarks", js.undefined)
       
-      @scala.inline
-      def setStoredMarksVarargs(value: Mark[js.Any]*): Self = StObject.set(x, "storedMarks", js.Array(value :_*))
+      inline def setStoredMarksVarargs(value: Mark[js.Any]*): Self = StObject.set(x, "storedMarks", js.Array(value :_*))
     }
   }
   
@@ -142,35 +115,26 @@ object anon {
   }
   object Plugins {
     
-    @scala.inline
-    def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](): Plugins[S] = {
+    inline def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](): Plugins[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Plugins[S]]
     }
     
-    @scala.inline
-    implicit class PluginsMutableBuilder[Self <: Plugins[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */] (val x: Self & Plugins[S]) extends AnyVal {
+    extension [Self <: Plugins[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](x: Self & Plugins[S]) {
       
-      @scala.inline
-      def setPlugins(value: js.Array[Plugin[js.Any, S]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Plugin[js.Any, S]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsNull: Self = StObject.set(x, "plugins", null)
+      inline def setPluginsNull: Self = StObject.set(x, "plugins", null)
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: (Plugin[js.Any, S])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: (Plugin[js.Any, S])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaNull: Self = StObject.set(x, "schema", null)
+      inline def setSchemaNull: Self = StObject.set(x, "schema", null)
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     }
   }
   
@@ -182,29 +146,22 @@ object anon {
   }
   object Schema {
     
-    @scala.inline
-    def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](schema: S): Schema[S] = {
+    inline def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](schema: S): Schema[S] = {
       val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
       __obj.asInstanceOf[Schema[S]]
     }
     
-    @scala.inline
-    implicit class SchemaMutableBuilder[Self <: Schema[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */] (val x: Self & Schema[S]) extends AnyVal {
+    extension [Self <: Schema[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](x: Self & Schema[S]) {
       
-      @scala.inline
-      def setPlugins(value: js.Array[Plugin[js.Any, S]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Plugin[js.Any, S]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsNull: Self = StObject.set(x, "plugins", null)
+      inline def setPluginsNull: Self = StObject.set(x, "plugins", null)
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: (Plugin[js.Any, S])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: (Plugin[js.Any, S])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,23 +173,18 @@ object anon {
   }
   object State {
     
-    @scala.inline
-    def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](state: EditorState[S], transactions: js.Array[Transaction[S]]): State[S] = {
+    inline def apply[S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](state: EditorState[S], transactions: js.Array[Transaction[S]]): State[S] = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any])
       __obj.asInstanceOf[State[S]]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */] (val x: Self & State[S]) extends AnyVal {
+    extension [Self <: State[?], S /* <: typings.prosemirrorModel.mod.Schema[js.Any, js.Any] */](x: Self & State[S]) {
       
-      @scala.inline
-      def setState(value: EditorState[S]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: EditorState[S]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactions(value: js.Array[Transaction[S]]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
+      inline def setTransactions(value: js.Array[Transaction[S]]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionsVarargs(value: Transaction[S]*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+      inline def setTransactionsVarargs(value: Transaction[S]*): Self = StObject.set(x, "transactions", js.Array(value :_*))
     }
   }
 }

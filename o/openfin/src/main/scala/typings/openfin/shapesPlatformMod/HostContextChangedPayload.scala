@@ -12,19 +12,15 @@ trait HostContextChangedPayload extends StObject {
 }
 object HostContextChangedPayload {
   
-  @scala.inline
-  def apply(context: js.Any, reason: HostContextChangedReasons): HostContextChangedPayload = {
+  inline def apply(context: js.Any, reason: HostContextChangedReasons): HostContextChangedPayload = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostContextChangedPayload]
   }
   
-  @scala.inline
-  implicit class HostContextChangedPayloadMutableBuilder[Self <: HostContextChangedPayload] (val x: Self) extends AnyVal {
+  extension [Self <: HostContextChangedPayload](x: Self) {
     
-    @scala.inline
-    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: HostContextChangedReasons): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: HostContextChangedReasons): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

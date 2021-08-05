@@ -18,8 +18,7 @@ object anon {
   }
   object After {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       after: js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.Normalized<@aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.RelativeMiddlewareEntry<Input, Output>, Input, Output> */ js.Object
         ],
@@ -31,30 +30,25 @@ object anon {
       __obj.asInstanceOf[After]
     }
     
-    @scala.inline
-    implicit class AfterMutableBuilder[Self <: After] (val x: Self) extends AnyVal {
+    extension [Self <: After](x: Self) {
       
-      @scala.inline
-      def setAfter(
+      inline def setAfter(
         value: js.Array[
               /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.Normalized<@aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.RelativeMiddlewareEntry<Input, Output>, Input, Output> */ js.Object
             ]
       ): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterVarargs(
+      inline def setAfterVarargs(
         value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.Normalized<@aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.RelativeMiddlewareEntry<Input, Output>, Input, Output> */ js.Object)*
       ): Self = StObject.set(x, "after", js.Array(value :_*))
       
-      @scala.inline
-      def setBefore(
+      inline def setBefore(
         value: js.Array[
               /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.Normalized<@aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.RelativeMiddlewareEntry<Input, Output>, Input, Output> */ js.Object
             ]
       ): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeVarargs(
+      inline def setBeforeVarargs(
         value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.Normalized<@aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.RelativeMiddlewareEntry<Input, Output>, Input, Output> */ js.Object)*
       ): Self = StObject.set(x, "before", js.Array(value :_*))
     }

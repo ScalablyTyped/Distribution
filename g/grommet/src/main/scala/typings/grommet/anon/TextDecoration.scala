@@ -34,17 +34,14 @@ trait TextDecoration extends StObject {
 }
 object TextDecoration {
   
-  @scala.inline
-  def apply(): TextDecoration = {
+  inline def apply(): TextDecoration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextDecoration]
   }
   
-  @scala.inline
-  implicit class TextDecorationMutableBuilder[Self <: TextDecoration] (val x: Self) extends AnyVal {
+  extension [Self <: TextDecoration](x: Self) {
     
-    @scala.inline
-    def setExtend(
+    inline def setExtend(
       value: ExtendType[
           PropsOf[
             FC[
@@ -57,8 +54,7 @@ object TextDecoration {
         ]
     ): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendFunction1(
+    inline def setExtendFunction1(
       value: /* props */ ExtendProps[
           PropsOf[
             FC[
@@ -80,13 +76,10 @@ object TextDecoration {
         ]
     ): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    @scala.inline
-    def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+    inline def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
+    inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
   }
 }

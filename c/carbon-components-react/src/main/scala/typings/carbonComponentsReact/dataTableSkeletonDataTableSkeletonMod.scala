@@ -33,50 +33,36 @@ object dataTableSkeletonDataTableSkeletonMod extends Shortcut {
   }
   object DataTableSkeletonProps {
     
-    @scala.inline
-    def apply(): DataTableSkeletonProps = {
+    inline def apply(): DataTableSkeletonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataTableSkeletonProps]
     }
     
-    @scala.inline
-    implicit class DataTableSkeletonPropsMutableBuilder[Self <: DataTableSkeletonProps] (val x: Self) extends AnyVal {
+    extension [Self <: DataTableSkeletonProps](x: Self) {
       
-      @scala.inline
-      def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+      inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
+      inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+      inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+      inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
       
-      @scala.inline
-      def setShowHeader(value: Boolean): Self = StObject.set(x, "showHeader", value.asInstanceOf[js.Any])
+      inline def setShowHeader(value: Boolean): Self = StObject.set(x, "showHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowHeaderUndefined: Self = StObject.set(x, "showHeader", js.undefined)
+      inline def setShowHeaderUndefined: Self = StObject.set(x, "showHeader", js.undefined)
       
-      @scala.inline
-      def setShowToolbar(value: Boolean): Self = StObject.set(x, "showToolbar", value.asInstanceOf[js.Any])
+      inline def setShowToolbar(value: Boolean): Self = StObject.set(x, "showToolbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowToolbarUndefined: Self = StObject.set(x, "showToolbar", js.undefined)
+      inline def setShowToolbarUndefined: Self = StObject.set(x, "showToolbar", js.undefined)
       
-      @scala.inline
-      def setZebra(value: Boolean): Self = StObject.set(x, "zebra", value.asInstanceOf[js.Any])
+      inline def setZebra(value: Boolean): Self = StObject.set(x, "zebra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZebraUndefined: Self = StObject.set(x, "zebra", js.undefined)
+      inline def setZebraUndefined: Self = StObject.set(x, "zebra", js.undefined)
     }
   }
   

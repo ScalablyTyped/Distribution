@@ -10,16 +10,13 @@ trait KeyboardHandler extends StObject {
 }
 object KeyboardHandler {
   
-  @scala.inline
-  def apply(handleKeyboard: js.Function): KeyboardHandler = {
+  inline def apply(handleKeyboard: js.Function): KeyboardHandler = {
     val __obj = js.Dynamic.literal(handleKeyboard = handleKeyboard.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardHandler]
   }
   
-  @scala.inline
-  implicit class KeyboardHandlerMutableBuilder[Self <: KeyboardHandler] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardHandler](x: Self) {
     
-    @scala.inline
-    def setHandleKeyboard(value: js.Function): Self = StObject.set(x, "handleKeyboard", value.asInstanceOf[js.Any])
+    inline def setHandleKeyboard(value: js.Function): Self = StObject.set(x, "handleKeyboard", value.asInstanceOf[js.Any])
   }
 }

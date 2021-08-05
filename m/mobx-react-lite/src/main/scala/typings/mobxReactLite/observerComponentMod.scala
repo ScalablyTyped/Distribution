@@ -11,8 +11,7 @@ object observerComponentMod {
   
   object Observer {
     
-    @scala.inline
-    def apply(hasChildrenRender: IObserverProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasChildrenRender.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(hasChildrenRender: IObserverProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasChildrenRender.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     
     @JSImport("mobx-react-lite/dist/ObserverComponent", "Observer")
     @js.native
@@ -21,8 +20,7 @@ object observerComponentMod {
     @JSImport("mobx-react-lite/dist/ObserverComponent", "Observer.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     object propTypes {
       
@@ -40,8 +38,7 @@ object observerComponentMod {
             /* propFullName */ String, 
             Error | Null
           ] = js.native
-      @scala.inline
-      def children_=(
+      inline def children_=(
         x: js.Function5[
               /* props */ StringDictionary[js.Any], 
               /* key */ String, 
@@ -62,8 +59,7 @@ object observerComponentMod {
             /* propFullName */ String, 
             Error | Null
           ] = js.native
-      @scala.inline
-      def render_=(
+      inline def render_=(
         x: js.Function5[
               /* props */ StringDictionary[js.Any], 
               /* key */ String, 
@@ -84,26 +80,20 @@ object observerComponentMod {
   }
   object IObserverProps {
     
-    @scala.inline
-    def apply(): IObserverProps = {
+    inline def apply(): IObserverProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IObserverProps]
     }
     
-    @scala.inline
-    implicit class IObserverPropsMutableBuilder[Self <: IObserverProps] (val x: Self) extends AnyVal {
+    extension [Self <: IObserverProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: () => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
+      inline def setChildren(value: () => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setRender(value: () => ReactElement | Null): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+      inline def setRender(value: () => ReactElement | Null): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
 }

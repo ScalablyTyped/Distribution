@@ -17,7 +17,6 @@ object basicStateMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): BasicState = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BasicState]
+    inline def create(): BasicState = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BasicState]
   }
 }

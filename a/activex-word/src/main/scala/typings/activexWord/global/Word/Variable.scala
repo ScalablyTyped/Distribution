@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Variable")
 @js.native
-class Variable protected ()
+/* private */ class Variable ()
   extends StObject
      with typings.activexWord.Word.Variable {
   
@@ -31,7 +31,7 @@ class Variable protected ()
   /* CompleteClass */
   var Value: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Variable_typekey")
   var WordDotVariable_typekey: typings.activexWord.Word.Variable = js.native
 }

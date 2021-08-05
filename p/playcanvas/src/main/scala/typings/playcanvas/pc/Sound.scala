@@ -33,22 +33,17 @@ trait Sound extends StObject {
 }
 object Sound {
   
-  @scala.inline
-  def apply(audio: HTMLAudioElement, buffer: AudioBuffer, duration: Double): Sound = {
+  inline def apply(audio: HTMLAudioElement, buffer: AudioBuffer, duration: Double): Sound = {
     val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], buffer = buffer.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sound]
   }
   
-  @scala.inline
-  implicit class SoundMutableBuilder[Self <: Sound] (val x: Self) extends AnyVal {
+  extension [Self <: Sound](x: Self) {
     
-    @scala.inline
-    def setAudio(value: HTMLAudioElement): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: HTMLAudioElement): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuffer(value: AudioBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: AudioBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
   }
 }

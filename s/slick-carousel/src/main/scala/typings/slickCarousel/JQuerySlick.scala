@@ -153,8 +153,7 @@ trait JQuerySlick
 }
 object JQuerySlick {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $list: Null,
     $slider: JQuery,
     animProp: Null,
@@ -191,109 +190,74 @@ object JQuerySlick {
     __obj.asInstanceOf[JQuerySlick]
   }
   
-  @scala.inline
-  implicit class JQuerySlickMutableBuilder[Self <: JQuerySlick] (val x: Self) extends AnyVal {
+  extension [Self <: JQuerySlick](x: Self) {
     
-    @scala.inline
-    def set$slider(value: JQuery): Self = StObject.set(x, "$slider", value.asInstanceOf[js.Any])
+    inline def set$slider(value: JQuery): Self = StObject.set(x, "$slider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$slidesCache(value: JQuery): Self = StObject.set(x, "$slidesCache", value.asInstanceOf[js.Any])
+    inline def set$slidesCache(value: JQuery): Self = StObject.set(x, "$slidesCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$slidesCacheNull: Self = StObject.set(x, "$slidesCache", null)
+    inline def set$slidesCacheNull: Self = StObject.set(x, "$slidesCache", null)
     
-    @scala.inline
-    def setActiveBreakpoint(value: Double): Self = StObject.set(x, "activeBreakpoint", value.asInstanceOf[js.Any])
+    inline def setActiveBreakpoint(value: Double): Self = StObject.set(x, "activeBreakpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveBreakpointNull: Self = StObject.set(x, "activeBreakpoint", null)
+    inline def setActiveBreakpointNull: Self = StObject.set(x, "activeBreakpoint", null)
     
-    @scala.inline
-    def setAnimProp(value: Null): Self = StObject.set(x, "animProp", value.asInstanceOf[js.Any])
+    inline def setAnimProp(value: Null): Self = StObject.set(x, "animProp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimType(value: OTransform | MozTransform | webkitTransform | msTransform | transform | `false`): Self = StObject.set(x, "animType", value.asInstanceOf[js.Any])
+    inline def setAnimType(value: OTransform | MozTransform | webkitTransform | msTransform | transform | `false`): Self = StObject.set(x, "animType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimTypeNull: Self = StObject.set(x, "animType", null)
+    inline def setAnimTypeNull: Self = StObject.set(x, "animType", null)
     
-    @scala.inline
-    def setBreakpointSettings(value: NumberDictionary[JQuerySlickOptions]): Self = StObject.set(x, "breakpointSettings", value.asInstanceOf[js.Any])
+    inline def setBreakpointSettings(value: NumberDictionary[JQuerySlickOptions]): Self = StObject.set(x, "breakpointSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpoints(value: js.Array[Double]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setBreakpoints(value: js.Array[Double]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpointsVarargs(value: Double*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+    inline def setBreakpointsVarargs(value: Double*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setCssTransitions(value: Boolean): Self = StObject.set(x, "cssTransitions", value.asInstanceOf[js.Any])
+    inline def setCssTransitions(value: Boolean): Self = StObject.set(x, "cssTransitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaults(value: JQuerySlickOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: JQuerySlickOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocussed(value: Boolean): Self = StObject.set(x, "focussed", value.asInstanceOf[js.Any])
+    inline def setFocussed(value: Boolean): Self = StObject.set(x, "focussed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidden(value: mozHidden | webkitHidden | hidden): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: mozHidden | webkitHidden | hidden): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitials(value: JQuerySlickInitials): Self = StObject.set(x, "initials", value.asInstanceOf[js.Any])
+    inline def setInitials(value: JQuerySlickInitials): Self = StObject.set(x, "initials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterrupted(value: Boolean): Self = StObject.set(x, "interrupted", value.asInstanceOf[js.Any])
+    inline def setInterrupted(value: Boolean): Self = StObject.set(x, "interrupted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: JQuerySlickOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: JQuerySlickOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalSettings(value: JQuerySlickOptions): Self = StObject.set(x, "originalSettings", value.asInstanceOf[js.Any])
+    inline def setOriginalSettings(value: JQuerySlickOptions): Self = StObject.set(x, "originalSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+    inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionProp(value: top | left): Self = StObject.set(x, "positionProp", value.asInstanceOf[js.Any])
+    inline def setPositionProp(value: top | left): Self = StObject.set(x, "positionProp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionPropNull: Self = StObject.set(x, "positionProp", null)
+    inline def setPositionPropNull: Self = StObject.set(x, "positionProp", null)
     
-    @scala.inline
-    def setRespondTo(value: window | slider | min): Self = StObject.set(x, "respondTo", value.asInstanceOf[js.Any])
+    inline def setRespondTo(value: window | slider | min): Self = StObject.set(x, "respondTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRespondToNull: Self = StObject.set(x, "respondTo", null)
+    inline def setRespondToNull: Self = StObject.set(x, "respondTo", null)
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldClick(value: Boolean): Self = StObject.set(x, "shouldClick", value.asInstanceOf[js.Any])
+    inline def setShouldClick(value: Boolean): Self = StObject.set(x, "shouldClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformType(value: `-o-transform` | `-moz-transform` | `-webkit-transform` | `-ms-transform` | transition): Self = StObject.set(x, "transformType", value.asInstanceOf[js.Any])
+    inline def setTransformType(value: `-o-transform` | `-moz-transform` | `-webkit-transform` | `-ms-transform` | transition): Self = StObject.set(x, "transformType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformTypeNull: Self = StObject.set(x, "transformType", null)
+    inline def setTransformTypeNull: Self = StObject.set(x, "transformType", null)
     
-    @scala.inline
-    def setTransitionType(value: OTransition | MozTransition | webkitTransition | msTransition | transition): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
+    inline def setTransitionType(value: OTransition | MozTransition | webkitTransition | msTransition | transition): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionTypeNull: Self = StObject.set(x, "transitionType", null)
+    inline def setTransitionTypeNull: Self = StObject.set(x, "transitionType", null)
     
-    @scala.inline
-    def setVisibilityChange(value: visibilitychange | mozvisibilitychange | webkitvisibilitychange): Self = StObject.set(x, "visibilityChange", value.asInstanceOf[js.Any])
+    inline def setVisibilityChange(value: visibilitychange | mozvisibilitychange | webkitvisibilitychange): Self = StObject.set(x, "visibilityChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowTimer(value: Double): Self = StObject.set(x, "windowTimer", value.asInstanceOf[js.Any])
+    inline def setWindowTimer(value: Double): Self = StObject.set(x, "windowTimer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowTimerNull: Self = StObject.set(x, "windowTimer", null)
+    inline def setWindowTimerNull: Self = StObject.set(x, "windowTimer", null)
     
-    @scala.inline
-    def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
+    inline def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
   }
 }

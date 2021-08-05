@@ -32,31 +32,23 @@ trait SchemaOrganizationSettings extends StObject {
 }
 object SchemaOrganizationSettings {
   
-  @scala.inline
-  def apply(): SchemaOrganizationSettings = {
+  inline def apply(): SchemaOrganizationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrganizationSettings]
   }
   
-  @scala.inline
-  implicit class SchemaOrganizationSettingsMutableBuilder[Self <: SchemaOrganizationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrganizationSettings](x: Self) {
     
-    @scala.inline
-    def setAssetDiscoveryConfig(value: SchemaAssetDiscoveryConfig): Self = StObject.set(x, "assetDiscoveryConfig", value.asInstanceOf[js.Any])
+    inline def setAssetDiscoveryConfig(value: SchemaAssetDiscoveryConfig): Self = StObject.set(x, "assetDiscoveryConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetDiscoveryConfigUndefined: Self = StObject.set(x, "assetDiscoveryConfig", js.undefined)
+    inline def setAssetDiscoveryConfigUndefined: Self = StObject.set(x, "assetDiscoveryConfig", js.undefined)
     
-    @scala.inline
-    def setEnableAssetDiscovery(value: Boolean): Self = StObject.set(x, "enableAssetDiscovery", value.asInstanceOf[js.Any])
+    inline def setEnableAssetDiscovery(value: Boolean): Self = StObject.set(x, "enableAssetDiscovery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAssetDiscoveryUndefined: Self = StObject.set(x, "enableAssetDiscovery", js.undefined)
+    inline def setEnableAssetDiscoveryUndefined: Self = StObject.set(x, "enableAssetDiscovery", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

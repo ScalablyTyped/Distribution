@@ -67,52 +67,37 @@ trait BoostOptions extends StObject {
 }
 object BoostOptions {
   
-  @scala.inline
-  def apply(): BoostOptions = {
+  inline def apply(): BoostOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BoostOptions]
   }
   
-  @scala.inline
-  implicit class BoostOptionsMutableBuilder[Self <: BoostOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BoostOptions](x: Self) {
     
-    @scala.inline
-    def setAllowForce(value: Boolean): Self = StObject.set(x, "allowForce", value.asInstanceOf[js.Any])
+    inline def setAllowForce(value: Boolean): Self = StObject.set(x, "allowForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowForceUndefined: Self = StObject.set(x, "allowForce", js.undefined)
+    inline def setAllowForceUndefined: Self = StObject.set(x, "allowForce", js.undefined)
     
-    @scala.inline
-    def setDebug(value: BoostDebugOptions): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: BoostDebugOptions): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setSeriesThreshold(value: Double): Self = StObject.set(x, "seriesThreshold", value.asInstanceOf[js.Any])
+    inline def setSeriesThreshold(value: Double): Self = StObject.set(x, "seriesThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesThresholdNull: Self = StObject.set(x, "seriesThreshold", null)
+    inline def setSeriesThresholdNull: Self = StObject.set(x, "seriesThreshold", null)
     
-    @scala.inline
-    def setSeriesThresholdUndefined: Self = StObject.set(x, "seriesThreshold", js.undefined)
+    inline def setSeriesThresholdUndefined: Self = StObject.set(x, "seriesThreshold", js.undefined)
     
-    @scala.inline
-    def setUseGPUTranslations(value: Boolean): Self = StObject.set(x, "useGPUTranslations", value.asInstanceOf[js.Any])
+    inline def setUseGPUTranslations(value: Boolean): Self = StObject.set(x, "useGPUTranslations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseGPUTranslationsUndefined: Self = StObject.set(x, "useGPUTranslations", js.undefined)
+    inline def setUseGPUTranslationsUndefined: Self = StObject.set(x, "useGPUTranslations", js.undefined)
     
-    @scala.inline
-    def setUsePreallocated(value: Boolean): Self = StObject.set(x, "usePreallocated", value.asInstanceOf[js.Any])
+    inline def setUsePreallocated(value: Boolean): Self = StObject.set(x, "usePreallocated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePreallocatedUndefined: Self = StObject.set(x, "usePreallocated", js.undefined)
+    inline def setUsePreallocatedUndefined: Self = StObject.set(x, "usePreallocated", js.undefined)
   }
 }

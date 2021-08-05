@@ -12,11 +12,9 @@ object logsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def disposeTensorsInLogs(logs: UnresolvedLogs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disposeTensorsInLogs")(logs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disposeTensorsInLogs(logs: UnresolvedLogs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disposeTensorsInLogs")(logs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def resolveScalarsInLogs(logs: UnresolvedLogs): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveScalarsInLogs")(logs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def resolveScalarsInLogs(logs: UnresolvedLogs): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveScalarsInLogs")(logs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   type Logs = StringDictionary[Double]
   

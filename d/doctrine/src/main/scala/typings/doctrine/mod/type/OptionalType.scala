@@ -15,20 +15,16 @@ trait OptionalType
 }
 object OptionalType {
   
-  @scala.inline
-  def apply(expression: Type_): OptionalType = {
+  inline def apply(expression: Type_): OptionalType = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("OptionalType")
     __obj.asInstanceOf[OptionalType]
   }
   
-  @scala.inline
-  implicit class OptionalTypeMutableBuilder[Self <: OptionalType] (val x: Self) extends AnyVal {
+  extension [Self <: OptionalType](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.doctrine.doctrineStrings.OptionalType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.doctrine.doctrineStrings.OptionalType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

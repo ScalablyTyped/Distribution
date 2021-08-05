@@ -59,68 +59,48 @@ object clientInterfaceMod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(): ClientOptions = {
+    inline def apply(): ClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
+      inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
+      inline def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
       
-      @scala.inline
-      def setClientConfig(value: ClientConfig): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
+      inline def setClientConfig(value: ClientConfig): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientConfigUndefined: Self = StObject.set(x, "clientConfig", js.undefined)
+      inline def setClientConfigUndefined: Self = StObject.set(x, "clientConfig", js.undefined)
       
-      @scala.inline
-      def setFallback(value: Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setLibName(value: String): Self = StObject.set(x, "libName", value.asInstanceOf[js.Any])
+      inline def setLibName(value: String): Self = StObject.set(x, "libName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLibNameUndefined: Self = StObject.set(x, "libName", js.undefined)
+      inline def setLibNameUndefined: Self = StObject.set(x, "libName", js.undefined)
       
-      @scala.inline
-      def setLibVersion(value: String): Self = StObject.set(x, "libVersion", value.asInstanceOf[js.Any])
+      inline def setLibVersion(value: String): Self = StObject.set(x, "libVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLibVersionUndefined: Self = StObject.set(x, "libVersion", js.undefined)
+      inline def setLibVersionUndefined: Self = StObject.set(x, "libVersion", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
+      inline def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
+      inline def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
       
-      @scala.inline
-      def setSslCreds(value: ChannelCredentials): Self = StObject.set(x, "sslCreds", value.asInstanceOf[js.Any])
+      inline def setSslCreds(value: ChannelCredentials): Self = StObject.set(x, "sslCreds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslCredsUndefined: Self = StObject.set(x, "sslCreds", js.undefined)
+      inline def setSslCredsUndefined: Self = StObject.set(x, "sslCreds", js.undefined)
     }
   }
   
@@ -136,8 +116,7 @@ object clientInterfaceMod {
   }
   object Descriptors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       longrunning: StringDictionary[LongrunningDescriptor],
       page: StringDictionary[PageDescriptor],
       stream: StringDictionary[StreamDescriptor]
@@ -146,23 +125,17 @@ object clientInterfaceMod {
       __obj.asInstanceOf[Descriptors]
     }
     
-    @scala.inline
-    implicit class DescriptorsMutableBuilder[Self <: Descriptors] (val x: Self) extends AnyVal {
+    extension [Self <: Descriptors](x: Self) {
       
-      @scala.inline
-      def setBatching(value: StringDictionary[BundleDescriptor]): Self = StObject.set(x, "batching", value.asInstanceOf[js.Any])
+      inline def setBatching(value: StringDictionary[BundleDescriptor]): Self = StObject.set(x, "batching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchingUndefined: Self = StObject.set(x, "batching", js.undefined)
+      inline def setBatchingUndefined: Self = StObject.set(x, "batching", js.undefined)
       
-      @scala.inline
-      def setLongrunning(value: StringDictionary[LongrunningDescriptor]): Self = StObject.set(x, "longrunning", value.asInstanceOf[js.Any])
+      inline def setLongrunning(value: StringDictionary[LongrunningDescriptor]): Self = StObject.set(x, "longrunning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: StringDictionary[PageDescriptor]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: StringDictionary[PageDescriptor]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream(value: StringDictionary[StreamDescriptor]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: StringDictionary[StreamDescriptor]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   
@@ -187,35 +160,26 @@ object clientInterfaceMod {
   }
   object PaginationResponse {
     
-    @scala.inline
-    def apply[RequestObject, ResponseObject, ResponseType](): PaginationResponse[RequestObject, ResponseObject, ResponseType] = {
+    inline def apply[RequestObject, ResponseObject, ResponseType](): PaginationResponse[RequestObject, ResponseObject, ResponseType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaginationResponse[RequestObject, ResponseObject, ResponseType]]
     }
     
-    @scala.inline
-    implicit class PaginationResponseMutableBuilder[Self <: PaginationResponse[?, ?, ?], RequestObject, ResponseObject, ResponseType] (val x: Self & (PaginationResponse[RequestObject, ResponseObject, ResponseType])) extends AnyVal {
+    extension [Self <: PaginationResponse[?, ?, ?], RequestObject, ResponseObject, ResponseType](x: Self & (PaginationResponse[RequestObject, ResponseObject, ResponseType])) {
       
-      @scala.inline
-      def setNextPageRequest(value: RequestObject): Self = StObject.set(x, "nextPageRequest", value.asInstanceOf[js.Any])
+      inline def setNextPageRequest(value: RequestObject): Self = StObject.set(x, "nextPageRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextPageRequestUndefined: Self = StObject.set(x, "nextPageRequest", js.undefined)
+      inline def setNextPageRequestUndefined: Self = StObject.set(x, "nextPageRequest", js.undefined)
       
-      @scala.inline
-      def setRawResponse(value: ResponseObject): Self = StObject.set(x, "rawResponse", value.asInstanceOf[js.Any])
+      inline def setRawResponse(value: ResponseObject): Self = StObject.set(x, "rawResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawResponseUndefined: Self = StObject.set(x, "rawResponse", js.undefined)
+      inline def setRawResponseUndefined: Self = StObject.set(x, "rawResponse", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Array[ResponseType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[ResponseType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      @scala.inline
-      def setValuesVarargs(value: ResponseType*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: ResponseType*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
 }

@@ -17,19 +17,15 @@ trait TestTestEntry
 }
 object TestTestEntry {
   
-  @scala.inline
-  def apply(test: TestEntry): TestTestEntry = {
+  inline def apply(test: TestEntry): TestTestEntry = {
     val __obj = js.Dynamic.literal(name = "test_fn_success", test = test.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestTestEntry]
   }
   
-  @scala.inline
-  implicit class TestTestEntryMutableBuilder[Self <: TestTestEntry] (val x: Self) extends AnyVal {
+  extension [Self <: TestTestEntry](x: Self) {
     
-    @scala.inline
-    def setName(value: test_fn_success): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: test_fn_success): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: TestEntry): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: TestEntry): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
   }
 }

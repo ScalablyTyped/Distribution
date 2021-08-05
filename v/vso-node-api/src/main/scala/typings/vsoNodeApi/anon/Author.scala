@@ -34,8 +34,7 @@ trait Author extends StObject {
 }
 object Author {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: scala.Double,
     averageRating: scala.Double,
     installCount: scala.Double,
@@ -54,46 +53,32 @@ object Author {
     __obj.asInstanceOf[Author]
   }
   
-  @scala.inline
-  implicit class AuthorMutableBuilder[Self <: Author] (val x: Self) extends AnyVal {
+  extension [Self <: Author](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: scala.Double): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: scala.Double): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageRating(value: scala.Double): Self = StObject.set(x, "averageRating", value.asInstanceOf[js.Any])
+    inline def setAverageRating(value: scala.Double): Self = StObject.set(x, "averageRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallCount(value: scala.Double): Self = StObject.set(x, "installCount", value.asInstanceOf[js.Any])
+    inline def setInstallCount(value: scala.Double): Self = StObject.set(x, "installCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedDate(value: scala.Double): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: scala.Double): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedDate(value: scala.Double): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
+    inline def setPublishedDate(value: scala.Double): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisher(value: scala.Double): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    inline def setPublisher(value: scala.Double): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDate(value: scala.Double): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
+    inline def setReleaseDate(value: scala.Double): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevance(value: scala.Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
+    inline def setRelevance(value: scala.Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: scala.Double): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: scala.Double): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrendingDaily(value: scala.Double): Self = StObject.set(x, "trendingDaily", value.asInstanceOf[js.Any])
+    inline def setTrendingDaily(value: scala.Double): Self = StObject.set(x, "trendingDaily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrendingMonthly(value: scala.Double): Self = StObject.set(x, "trendingMonthly", value.asInstanceOf[js.Any])
+    inline def setTrendingMonthly(value: scala.Double): Self = StObject.set(x, "trendingMonthly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrendingWeekly(value: scala.Double): Self = StObject.set(x, "trendingWeekly", value.asInstanceOf[js.Any])
+    inline def setTrendingWeekly(value: scala.Double): Self = StObject.set(x, "trendingWeekly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedRating(value: scala.Double): Self = StObject.set(x, "weightedRating", value.asInstanceOf[js.Any])
+    inline def setWeightedRating(value: scala.Double): Self = StObject.set(x, "weightedRating", value.asInstanceOf[js.Any])
   }
 }

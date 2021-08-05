@@ -14,22 +14,17 @@ trait DataSourceRequestStartEvent
 }
 object DataSourceRequestStartEvent {
   
-  @scala.inline
-  def apply(preventDefault: () => Unit): DataSourceRequestStartEvent = {
+  inline def apply(preventDefault: () => Unit): DataSourceRequestStartEvent = {
     val __obj = js.Dynamic.literal(preventDefault = js.Any.fromFunction0(preventDefault))
     __obj.asInstanceOf[DataSourceRequestStartEvent]
   }
   
-  @scala.inline
-  implicit class DataSourceRequestStartEventMutableBuilder[Self <: DataSourceRequestStartEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceRequestStartEvent](x: Self) {
     
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ object imagePickerIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/image-picker/index.native", "default.defaultProps")
     @js.native
     def defaultProps: Files = js.native
-    @scala.inline
-    def defaultProps_=(x: Files): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Files): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -61,20 +60,16 @@ object imagePickerIndexNativeMod {
   }
   object ImagePickerNativeProps {
     
-    @scala.inline
-    def apply(): ImagePickerNativeProps = {
+    inline def apply(): ImagePickerNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImagePickerNativeProps]
     }
     
-    @scala.inline
-    implicit class ImagePickerNativePropsMutableBuilder[Self <: ImagePickerNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: ImagePickerNativeProps](x: Self) {
       
-      @scala.inline
-      def setStyles(value: IImagePickerStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IImagePickerStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
 }

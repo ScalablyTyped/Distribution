@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlHorizontalLayout extends StObject
 object OlHorizontalLayout {
   
-  @scala.inline
-  def olHorizontalLayoutAlignCenter: `1` = 1.asInstanceOf[`1`]
+  inline def olHorizontalLayoutAlignCenter: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olHorizontalLayoutAlignLeft: `0` = 0.asInstanceOf[`0`]
+  inline def olHorizontalLayoutAlignLeft: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olHorizontalLayoutAlignRight: `2` = 2.asInstanceOf[`2`]
+  inline def olHorizontalLayoutAlignRight: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olHorizontalLayoutGrow: `3` = 3.asInstanceOf[`3`]
+  inline def olHorizontalLayoutGrow: `3` = 3.asInstanceOf[`3`]
 }

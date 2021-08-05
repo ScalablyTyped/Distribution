@@ -51,8 +51,7 @@ trait MeshVertexAttributesProperties
 }
 object MeshVertexAttributesProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -61,52 +60,36 @@ object MeshVertexAttributesProperties {
     __obj.asInstanceOf[MeshVertexAttributesProperties]
   }
   
-  @scala.inline
-  implicit class MeshVertexAttributesPropertiesMutableBuilder[Self <: MeshVertexAttributesProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MeshVertexAttributesProperties](x: Self) {
     
-    @scala.inline
-    def setColor(value: Uint8Array | js.Array[Double] | Uint8ClampedArray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Uint8Array | js.Array[Double] | Uint8ClampedArray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setNormal(value: Float32Array | js.Array[Double] | Float64Array): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Float32Array | js.Array[Double] | Float64Array): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
+    inline def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
     
-    @scala.inline
-    def setNormalVarargs(value: Double*): Self = StObject.set(x, "normal", js.Array(value :_*))
+    inline def setNormalVarargs(value: Double*): Self = StObject.set(x, "normal", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: Float64Array | js.Array[Double] | Float32Array): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Float64Array | js.Array[Double] | Float32Array): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value :_*))
+    inline def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value :_*))
     
-    @scala.inline
-    def setTangent(value: Float32Array | js.Array[Double] | Float64Array): Self = StObject.set(x, "tangent", value.asInstanceOf[js.Any])
+    inline def setTangent(value: Float32Array | js.Array[Double] | Float64Array): Self = StObject.set(x, "tangent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTangentUndefined: Self = StObject.set(x, "tangent", js.undefined)
+    inline def setTangentUndefined: Self = StObject.set(x, "tangent", js.undefined)
     
-    @scala.inline
-    def setTangentVarargs(value: Double*): Self = StObject.set(x, "tangent", js.Array(value :_*))
+    inline def setTangentVarargs(value: Double*): Self = StObject.set(x, "tangent", js.Array(value :_*))
     
-    @scala.inline
-    def setUv(value: Float32Array | js.Array[Double] | Float64Array): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
+    inline def setUv(value: Float32Array | js.Array[Double] | Float64Array): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
+    inline def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
     
-    @scala.inline
-    def setUvVarargs(value: Double*): Self = StObject.set(x, "uv", js.Array(value :_*))
+    inline def setUvVarargs(value: Double*): Self = StObject.set(x, "uv", js.Array(value :_*))
   }
 }

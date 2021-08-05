@@ -60,43 +60,31 @@ trait SchemaAuthProvider extends StObject {
 }
 object SchemaAuthProvider {
   
-  @scala.inline
-  def apply(): SchemaAuthProvider = {
+  inline def apply(): SchemaAuthProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuthProvider]
   }
   
-  @scala.inline
-  implicit class SchemaAuthProviderMutableBuilder[Self <: SchemaAuthProvider] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAuthProvider](x: Self) {
     
-    @scala.inline
-    def setAudiences(value: String): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
+    inline def setAudiences(value: String): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
+    inline def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
     
-    @scala.inline
-    def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
+    inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationUrlUndefined: Self = StObject.set(x, "authorizationUrl", js.undefined)
+    inline def setAuthorizationUrlUndefined: Self = StObject.set(x, "authorizationUrl", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
-    @scala.inline
-    def setJwksUri(value: String): Self = StObject.set(x, "jwksUri", value.asInstanceOf[js.Any])
+    inline def setJwksUri(value: String): Self = StObject.set(x, "jwksUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwksUriUndefined: Self = StObject.set(x, "jwksUri", js.undefined)
+    inline def setJwksUriUndefined: Self = StObject.set(x, "jwksUri", js.undefined)
   }
 }

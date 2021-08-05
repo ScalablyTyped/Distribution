@@ -30,31 +30,23 @@ trait IFit
 }
 object IFit {
   
-  @scala.inline
-  def apply(): IFit = {
+  inline def apply(): IFit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFit]
   }
   
-  @scala.inline
-  implicit class IFitMutableBuilder[Self <: IFit] (val x: Self) extends AnyVal {
+  extension [Self <: IFit](x: Self) {
     
-    @scala.inline
-    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
+    inline def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
+    inline def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
-    @scala.inline
-    def setDefaultMargins(value: js.Any): Self = StObject.set(x, "defaultMargins", value.asInstanceOf[js.Any])
+    inline def setDefaultMargins(value: js.Any): Self = StObject.set(x, "defaultMargins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultMarginsUndefined: Self = StObject.set(x, "defaultMargins", js.undefined)
+    inline def setDefaultMarginsUndefined: Self = StObject.set(x, "defaultMargins", js.undefined)
     
-    @scala.inline
-    def setGetItemSizePolicy(value: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction2(value))
+    inline def setGetItemSizePolicy(value: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
+    inline def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
   }
 }

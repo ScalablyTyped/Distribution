@@ -23,22 +23,17 @@ trait ObjectMetricSource extends StObject {
 }
 object ObjectMetricSource {
   
-  @scala.inline
-  def apply(describedObject: CrossVersionObjectReference, metric: MetricIdentifier, target: MetricTarget): ObjectMetricSource = {
+  inline def apply(describedObject: CrossVersionObjectReference, metric: MetricIdentifier, target: MetricTarget): ObjectMetricSource = {
     val __obj = js.Dynamic.literal(describedObject = describedObject.asInstanceOf[js.Any], metric = metric.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectMetricSource]
   }
   
-  @scala.inline
-  implicit class ObjectMetricSourceMutableBuilder[Self <: ObjectMetricSource] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectMetricSource](x: Self) {
     
-    @scala.inline
-    def setDescribedObject(value: CrossVersionObjectReference): Self = StObject.set(x, "describedObject", value.asInstanceOf[js.Any])
+    inline def setDescribedObject(value: CrossVersionObjectReference): Self = StObject.set(x, "describedObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetric(value: MetricIdentifier): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: MetricIdentifier): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: MetricTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: MetricTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait RemoveIpRoutesRequest extends StObject {
 }
 object RemoveIpRoutesRequest {
   
-  @scala.inline
-  def apply(CidrIps: CidrIps, DirectoryId: DirectoryId): RemoveIpRoutesRequest = {
+  inline def apply(CidrIps: CidrIps, DirectoryId: DirectoryId): RemoveIpRoutesRequest = {
     val __obj = js.Dynamic.literal(CidrIps = CidrIps.asInstanceOf[js.Any], DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveIpRoutesRequest]
   }
   
-  @scala.inline
-  implicit class RemoveIpRoutesRequestMutableBuilder[Self <: RemoveIpRoutesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveIpRoutesRequest](x: Self) {
     
-    @scala.inline
-    def setCidrIps(value: CidrIps): Self = StObject.set(x, "CidrIps", value.asInstanceOf[js.Any])
+    inline def setCidrIps(value: CidrIps): Self = StObject.set(x, "CidrIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrIpsVarargs(value: CidrIp*): Self = StObject.set(x, "CidrIps", js.Array(value :_*))
+    inline def setCidrIpsVarargs(value: CidrIp*): Self = StObject.set(x, "CidrIps", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
   }
 }

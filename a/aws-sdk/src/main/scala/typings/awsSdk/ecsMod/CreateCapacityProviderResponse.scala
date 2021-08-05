@@ -13,19 +13,15 @@ trait CreateCapacityProviderResponse extends StObject {
 }
 object CreateCapacityProviderResponse {
   
-  @scala.inline
-  def apply(): CreateCapacityProviderResponse = {
+  inline def apply(): CreateCapacityProviderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCapacityProviderResponse]
   }
   
-  @scala.inline
-  implicit class CreateCapacityProviderResponseMutableBuilder[Self <: CreateCapacityProviderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCapacityProviderResponse](x: Self) {
     
-    @scala.inline
-    def setCapacityProvider(value: CapacityProvider): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
+    inline def setCapacityProvider(value: CapacityProvider): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityProviderUndefined: Self = StObject.set(x, "capacityProvider", js.undefined)
+    inline def setCapacityProviderUndefined: Self = StObject.set(x, "capacityProvider", js.undefined)
   }
 }

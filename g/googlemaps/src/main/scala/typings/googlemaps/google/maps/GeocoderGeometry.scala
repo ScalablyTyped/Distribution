@@ -16,8 +16,7 @@ trait GeocoderGeometry extends StObject {
 }
 object GeocoderGeometry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bounds: LatLngBounds,
     location: LatLng,
     location_type: GeocoderLocationType,
@@ -27,19 +26,14 @@ object GeocoderGeometry {
     __obj.asInstanceOf[GeocoderGeometry]
   }
   
-  @scala.inline
-  implicit class GeocoderGeometryMutableBuilder[Self <: GeocoderGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: GeocoderGeometry](x: Self) {
     
-    @scala.inline
-    def setBounds(value: LatLngBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: LatLngBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation_type(value: GeocoderLocationType): Self = StObject.set(x, "location_type", value.asInstanceOf[js.Any])
+    inline def setLocation_type(value: GeocoderLocationType): Self = StObject.set(x, "location_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewport(value: LatLngBounds): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: LatLngBounds): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

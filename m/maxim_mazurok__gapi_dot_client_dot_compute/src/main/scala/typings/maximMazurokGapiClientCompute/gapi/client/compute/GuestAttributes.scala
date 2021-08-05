@@ -26,49 +26,35 @@ trait GuestAttributes extends StObject {
 }
 object GuestAttributes {
   
-  @scala.inline
-  def apply(): GuestAttributes = {
+  inline def apply(): GuestAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GuestAttributes]
   }
   
-  @scala.inline
-  implicit class GuestAttributesMutableBuilder[Self <: GuestAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: GuestAttributes](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setQueryPath(value: String): Self = StObject.set(x, "queryPath", value.asInstanceOf[js.Any])
+    inline def setQueryPath(value: String): Self = StObject.set(x, "queryPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryPathUndefined: Self = StObject.set(x, "queryPath", js.undefined)
+    inline def setQueryPathUndefined: Self = StObject.set(x, "queryPath", js.undefined)
     
-    @scala.inline
-    def setQueryValue(value: GuestAttributesValue): Self = StObject.set(x, "queryValue", value.asInstanceOf[js.Any])
+    inline def setQueryValue(value: GuestAttributesValue): Self = StObject.set(x, "queryValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryValueUndefined: Self = StObject.set(x, "queryValue", js.undefined)
+    inline def setQueryValueUndefined: Self = StObject.set(x, "queryValue", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setVariableKey(value: String): Self = StObject.set(x, "variableKey", value.asInstanceOf[js.Any])
+    inline def setVariableKey(value: String): Self = StObject.set(x, "variableKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableKeyUndefined: Self = StObject.set(x, "variableKey", js.undefined)
+    inline def setVariableKeyUndefined: Self = StObject.set(x, "variableKey", js.undefined)
     
-    @scala.inline
-    def setVariableValue(value: String): Self = StObject.set(x, "variableValue", value.asInstanceOf[js.Any])
+    inline def setVariableValue(value: String): Self = StObject.set(x, "variableValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableValueUndefined: Self = StObject.set(x, "variableValue", js.undefined)
+    inline def setVariableValueUndefined: Self = StObject.set(x, "variableValue", js.undefined)
   }
 }

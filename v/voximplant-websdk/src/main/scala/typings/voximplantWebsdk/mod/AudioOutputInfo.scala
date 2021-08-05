@@ -21,19 +21,15 @@ trait AudioOutputInfo extends StObject {
 }
 object AudioOutputInfo {
   
-  @scala.inline
-  def apply(id: Double | String, name: String): AudioOutputInfo = {
+  inline def apply(id: Double | String, name: String): AudioOutputInfo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioOutputInfo]
   }
   
-  @scala.inline
-  implicit class AudioOutputInfoMutableBuilder[Self <: AudioOutputInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AudioOutputInfo](x: Self) {
     
-    @scala.inline
-    def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

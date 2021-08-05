@@ -13,12 +13,10 @@ object Color {
   /**
     * Creates a new Color literal.
     */
-  @scala.inline
-  def create(red: Double, green: Double, blue: Double, alpha: Double): typings.vscodeLanguageserverTypes.mod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.Color]
+  inline def create(red: Double, green: Double, blue: Double, alpha: Double): typings.vscodeLanguageserverTypes.mod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.Color]
   
   /**
     * Checks whether the given literal conforms to the [Color](#Color) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Color */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Color */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Color */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Color */ Boolean]
 }

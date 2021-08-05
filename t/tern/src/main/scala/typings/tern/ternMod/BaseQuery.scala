@@ -15,29 +15,22 @@ trait BaseQuery extends StObject {
 }
 object BaseQuery {
   
-  @scala.inline
-  def apply(`type`: String): BaseQuery = {
+  inline def apply(`type`: String): BaseQuery = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseQuery]
   }
   
-  @scala.inline
-  implicit class BaseQueryMutableBuilder[Self <: BaseQuery] (val x: Self) extends AnyVal {
+  extension [Self <: BaseQuery](x: Self) {
     
-    @scala.inline
-    def setDocFormat(value: full): Self = StObject.set(x, "docFormat", value.asInstanceOf[js.Any])
+    inline def setDocFormat(value: full): Self = StObject.set(x, "docFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocFormatUndefined: Self = StObject.set(x, "docFormat", js.undefined)
+    inline def setDocFormatUndefined: Self = StObject.set(x, "docFormat", js.undefined)
     
-    @scala.inline
-    def setLineCharPositions(value: Boolean): Self = StObject.set(x, "lineCharPositions", value.asInstanceOf[js.Any])
+    inline def setLineCharPositions(value: Boolean): Self = StObject.set(x, "lineCharPositions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCharPositionsUndefined: Self = StObject.set(x, "lineCharPositions", js.undefined)
+    inline def setLineCharPositionsUndefined: Self = StObject.set(x, "lineCharPositions", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

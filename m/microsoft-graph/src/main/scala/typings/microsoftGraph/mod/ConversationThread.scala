@@ -40,82 +40,57 @@ trait ConversationThread
 }
 object ConversationThread {
   
-  @scala.inline
-  def apply(): ConversationThread = {
+  inline def apply(): ConversationThread = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConversationThread]
   }
   
-  @scala.inline
-  implicit class ConversationThreadMutableBuilder[Self <: ConversationThread] (val x: Self) extends AnyVal {
+  extension [Self <: ConversationThread](x: Self) {
     
-    @scala.inline
-    def setCcRecipients(value: js.Array[Recipient]): Self = StObject.set(x, "ccRecipients", value.asInstanceOf[js.Any])
+    inline def setCcRecipients(value: js.Array[Recipient]): Self = StObject.set(x, "ccRecipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcRecipientsUndefined: Self = StObject.set(x, "ccRecipients", js.undefined)
+    inline def setCcRecipientsUndefined: Self = StObject.set(x, "ccRecipients", js.undefined)
     
-    @scala.inline
-    def setCcRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "ccRecipients", js.Array(value :_*))
+    inline def setCcRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "ccRecipients", js.Array(value :_*))
     
-    @scala.inline
-    def setHasAttachments(value: Boolean): Self = StObject.set(x, "hasAttachments", value.asInstanceOf[js.Any])
+    inline def setHasAttachments(value: Boolean): Self = StObject.set(x, "hasAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAttachmentsUndefined: Self = StObject.set(x, "hasAttachments", js.undefined)
+    inline def setHasAttachmentsUndefined: Self = StObject.set(x, "hasAttachments", js.undefined)
     
-    @scala.inline
-    def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
+    inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
+    inline def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
     
-    @scala.inline
-    def setLastDeliveredDateTime(value: String): Self = StObject.set(x, "lastDeliveredDateTime", value.asInstanceOf[js.Any])
+    inline def setLastDeliveredDateTime(value: String): Self = StObject.set(x, "lastDeliveredDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDeliveredDateTimeUndefined: Self = StObject.set(x, "lastDeliveredDateTime", js.undefined)
+    inline def setLastDeliveredDateTimeUndefined: Self = StObject.set(x, "lastDeliveredDateTime", js.undefined)
     
-    @scala.inline
-    def setPosts(value: NullableOption[js.Array[Post]]): Self = StObject.set(x, "posts", value.asInstanceOf[js.Any])
+    inline def setPosts(value: NullableOption[js.Array[Post]]): Self = StObject.set(x, "posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostsNull: Self = StObject.set(x, "posts", null)
+    inline def setPostsNull: Self = StObject.set(x, "posts", null)
     
-    @scala.inline
-    def setPostsUndefined: Self = StObject.set(x, "posts", js.undefined)
+    inline def setPostsUndefined: Self = StObject.set(x, "posts", js.undefined)
     
-    @scala.inline
-    def setPostsVarargs(value: Post*): Self = StObject.set(x, "posts", js.Array(value :_*))
+    inline def setPostsVarargs(value: Post*): Self = StObject.set(x, "posts", js.Array(value :_*))
     
-    @scala.inline
-    def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+    inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
-    @scala.inline
-    def setToRecipients(value: js.Array[Recipient]): Self = StObject.set(x, "toRecipients", value.asInstanceOf[js.Any])
+    inline def setToRecipients(value: js.Array[Recipient]): Self = StObject.set(x, "toRecipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToRecipientsUndefined: Self = StObject.set(x, "toRecipients", js.undefined)
+    inline def setToRecipientsUndefined: Self = StObject.set(x, "toRecipients", js.undefined)
     
-    @scala.inline
-    def setToRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "toRecipients", js.Array(value :_*))
+    inline def setToRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "toRecipients", js.Array(value :_*))
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
-    @scala.inline
-    def setUniqueSenders(value: js.Array[String]): Self = StObject.set(x, "uniqueSenders", value.asInstanceOf[js.Any])
+    inline def setUniqueSenders(value: js.Array[String]): Self = StObject.set(x, "uniqueSenders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueSendersUndefined: Self = StObject.set(x, "uniqueSenders", js.undefined)
+    inline def setUniqueSendersUndefined: Self = StObject.set(x, "uniqueSenders", js.undefined)
     
-    @scala.inline
-    def setUniqueSendersVarargs(value: String*): Self = StObject.set(x, "uniqueSenders", js.Array(value :_*))
+    inline def setUniqueSendersVarargs(value: String*): Self = StObject.set(x, "uniqueSenders", js.Array(value :_*))
   }
 }

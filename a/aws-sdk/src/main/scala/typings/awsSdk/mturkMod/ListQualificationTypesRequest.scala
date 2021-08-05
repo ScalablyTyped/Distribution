@@ -30,40 +30,29 @@ trait ListQualificationTypesRequest extends StObject {
 }
 object ListQualificationTypesRequest {
   
-  @scala.inline
-  def apply(MustBeRequestable: Boolean): ListQualificationTypesRequest = {
+  inline def apply(MustBeRequestable: Boolean): ListQualificationTypesRequest = {
     val __obj = js.Dynamic.literal(MustBeRequestable = MustBeRequestable.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQualificationTypesRequest]
   }
   
-  @scala.inline
-  implicit class ListQualificationTypesRequestMutableBuilder[Self <: ListQualificationTypesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListQualificationTypesRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMustBeOwnedByCaller(value: Boolean): Self = StObject.set(x, "MustBeOwnedByCaller", value.asInstanceOf[js.Any])
+    inline def setMustBeOwnedByCaller(value: Boolean): Self = StObject.set(x, "MustBeOwnedByCaller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMustBeOwnedByCallerUndefined: Self = StObject.set(x, "MustBeOwnedByCaller", js.undefined)
+    inline def setMustBeOwnedByCallerUndefined: Self = StObject.set(x, "MustBeOwnedByCaller", js.undefined)
     
-    @scala.inline
-    def setMustBeRequestable(value: Boolean): Self = StObject.set(x, "MustBeRequestable", value.asInstanceOf[js.Any])
+    inline def setMustBeRequestable(value: Boolean): Self = StObject.set(x, "MustBeRequestable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "Query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "Query", js.undefined)
   }
 }

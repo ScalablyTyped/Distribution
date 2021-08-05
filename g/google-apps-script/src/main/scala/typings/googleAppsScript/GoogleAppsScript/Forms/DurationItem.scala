@@ -48,8 +48,7 @@ trait DurationItem extends StObject {
 }
 object DurationItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createResponse: (Integer, Integer, Integer) => ItemResponse,
     duplicate: () => DurationItem,
     getGeneralFeedback: () => QuizFeedback,
@@ -70,52 +69,36 @@ object DurationItem {
     __obj.asInstanceOf[DurationItem]
   }
   
-  @scala.inline
-  implicit class DurationItemMutableBuilder[Self <: DurationItem] (val x: Self) extends AnyVal {
+  extension [Self <: DurationItem](x: Self) {
     
-    @scala.inline
-    def setCreateResponse(value: (Integer, Integer, Integer) => ItemResponse): Self = StObject.set(x, "createResponse", js.Any.fromFunction3(value))
+    inline def setCreateResponse(value: (Integer, Integer, Integer) => ItemResponse): Self = StObject.set(x, "createResponse", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDuplicate(value: () => DurationItem): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
+    inline def setDuplicate(value: () => DurationItem): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGeneralFeedback(value: () => QuizFeedback): Self = StObject.set(x, "getGeneralFeedback", js.Any.fromFunction0(value))
+    inline def setGetGeneralFeedback(value: () => QuizFeedback): Self = StObject.set(x, "getGeneralFeedback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
+    inline def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+    inline def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPoints(value: () => Integer): Self = StObject.set(x, "getPoints", js.Any.fromFunction0(value))
+    inline def setGetPoints(value: () => Integer): Self = StObject.set(x, "getPoints", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+    inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => ItemType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => ItemType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsRequired(value: () => Boolean): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
+    inline def setIsRequired(value: () => Boolean): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetGeneralFeedback(value: QuizFeedback => DurationItem): Self = StObject.set(x, "setGeneralFeedback", js.Any.fromFunction1(value))
+    inline def setSetGeneralFeedback(value: QuizFeedback => DurationItem): Self = StObject.set(x, "setGeneralFeedback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHelpText(value: String => DurationItem): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
+    inline def setSetHelpText(value: String => DurationItem): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPoints(value: Integer => DurationItem): Self = StObject.set(x, "setPoints", js.Any.fromFunction1(value))
+    inline def setSetPoints(value: Integer => DurationItem): Self = StObject.set(x, "setPoints", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRequired(value: Boolean => DurationItem): Self = StObject.set(x, "setRequired", js.Any.fromFunction1(value))
+    inline def setSetRequired(value: Boolean => DurationItem): Self = StObject.set(x, "setRequired", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitle(value: String => DurationItem): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: String => DurationItem): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
   }
 }

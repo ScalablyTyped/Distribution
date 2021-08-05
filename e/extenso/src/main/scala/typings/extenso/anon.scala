@@ -20,26 +20,20 @@ object anon {
   }
   object Decimal {
     
-    @scala.inline
-    def apply(): Decimal = {
+    inline def apply(): Decimal = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Decimal]
     }
     
-    @scala.inline
-    implicit class DecimalMutableBuilder[Self <: Decimal] (val x: Self) extends AnyVal {
+    extension [Self <: Decimal](x: Self) {
       
-      @scala.inline
-      def setDecimal(value: formal | informal): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+      inline def setDecimal(value: formal | informal): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
+      inline def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
       
-      @scala.inline
-      def setGender(value: m | f): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+      inline def setGender(value: m | f): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
+      inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     }
   }
   
@@ -49,20 +43,16 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(): Type = {
+    inline def apply(): Type = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: BRL | EUR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: BRL | EUR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

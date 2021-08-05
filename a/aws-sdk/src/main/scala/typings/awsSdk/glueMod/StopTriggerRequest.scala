@@ -13,16 +13,13 @@ trait StopTriggerRequest extends StObject {
 }
 object StopTriggerRequest {
   
-  @scala.inline
-  def apply(Name: NameString): StopTriggerRequest = {
+  inline def apply(Name: NameString): StopTriggerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopTriggerRequest]
   }
   
-  @scala.inline
-  implicit class StopTriggerRequestMutableBuilder[Self <: StopTriggerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopTriggerRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

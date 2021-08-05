@@ -22,11 +22,9 @@ object platformUtilsWebMod {
   @js.native
   val IS_MANAGED_ENV: /* false */ Boolean = js.native
   
-  @scala.inline
-  def downloadAsync(uri: js.Any, hash: js.Any, `type`: js.Any, name: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadAsync")(uri.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def downloadAsync(uri: js.Any, hash: js.Any, `type`: js.Any, name: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadAsync")(uri.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getManifest(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest")().asInstanceOf[js.Object]
+  inline def getManifest(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest")().asInstanceOf[js.Object]
   
   @JSImport("expo-asset/build/PlatformUtils.web", "manifestBaseUrl")
   @js.native

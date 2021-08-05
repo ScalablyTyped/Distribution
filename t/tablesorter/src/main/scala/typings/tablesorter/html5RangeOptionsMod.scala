@@ -26,8 +26,7 @@ object html5RangeOptionsMod {
        with TestableOptions
   object Html5RangeOptions {
     
-    @scala.inline
-    def apply(): Html5RangeOptions = {
+    inline def apply(): Html5RangeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Html5RangeOptions]
     }

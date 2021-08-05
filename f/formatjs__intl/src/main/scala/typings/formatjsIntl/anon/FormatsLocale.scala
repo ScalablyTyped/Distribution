@@ -29,8 +29,7 @@ trait FormatsLocale extends StObject {
 }
 object FormatsLocale {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     formats: CustomFormats,
     locale: String,
     onError: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
@@ -39,17 +38,13 @@ object FormatsLocale {
     __obj.asInstanceOf[FormatsLocale]
   }
   
-  @scala.inline
-  implicit class FormatsLocaleMutableBuilder[Self <: FormatsLocale] (val x: Self) extends AnyVal {
+  extension [Self <: FormatsLocale](x: Self) {
     
-    @scala.inline
-    def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    inline def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnError(
+    inline def setOnError(
       value: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
     ): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
   }

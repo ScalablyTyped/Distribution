@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(center: Position, radius: Double): Polygon = (^.asInstanceOf[js.Dynamic].apply(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Polygon]
-  @scala.inline
-  def apply(center: Position, radius: Double, numberOfSegments: Double): Polygon = (^.asInstanceOf[js.Dynamic].apply(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], numberOfSegments.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  inline def apply(center: Position, radius: Double): Polygon = (^.asInstanceOf[js.Dynamic].apply(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  inline def apply(center: Position, radius: Double, numberOfSegments: Double): Polygon = (^.asInstanceOf[js.Dynamic].apply(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], numberOfSegments.asInstanceOf[js.Any])).asInstanceOf[Polygon]
   
   @JSImport("circle-to-polygon", JSImport.Namespace)
   @js.native

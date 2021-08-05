@@ -19,31 +19,23 @@ trait InferenceClassificationOverride
 }
 object InferenceClassificationOverride {
   
-  @scala.inline
-  def apply(): InferenceClassificationOverride = {
+  inline def apply(): InferenceClassificationOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InferenceClassificationOverride]
   }
   
-  @scala.inline
-  implicit class InferenceClassificationOverrideMutableBuilder[Self <: InferenceClassificationOverride] (val x: Self) extends AnyVal {
+  extension [Self <: InferenceClassificationOverride](x: Self) {
     
-    @scala.inline
-    def setClassifyAs(value: NullableOption[InferenceClassificationType]): Self = StObject.set(x, "classifyAs", value.asInstanceOf[js.Any])
+    inline def setClassifyAs(value: NullableOption[InferenceClassificationType]): Self = StObject.set(x, "classifyAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassifyAsNull: Self = StObject.set(x, "classifyAs", null)
+    inline def setClassifyAsNull: Self = StObject.set(x, "classifyAs", null)
     
-    @scala.inline
-    def setClassifyAsUndefined: Self = StObject.set(x, "classifyAs", js.undefined)
+    inline def setClassifyAsUndefined: Self = StObject.set(x, "classifyAs", js.undefined)
     
-    @scala.inline
-    def setSenderEmailAddress(value: NullableOption[EmailAddress]): Self = StObject.set(x, "senderEmailAddress", value.asInstanceOf[js.Any])
+    inline def setSenderEmailAddress(value: NullableOption[EmailAddress]): Self = StObject.set(x, "senderEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderEmailAddressNull: Self = StObject.set(x, "senderEmailAddress", null)
+    inline def setSenderEmailAddressNull: Self = StObject.set(x, "senderEmailAddress", null)
     
-    @scala.inline
-    def setSenderEmailAddressUndefined: Self = StObject.set(x, "senderEmailAddress", js.undefined)
+    inline def setSenderEmailAddressUndefined: Self = StObject.set(x, "senderEmailAddress", js.undefined)
   }
 }

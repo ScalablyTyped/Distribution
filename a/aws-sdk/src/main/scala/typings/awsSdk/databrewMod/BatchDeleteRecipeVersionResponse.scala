@@ -18,25 +18,19 @@ trait BatchDeleteRecipeVersionResponse extends StObject {
 }
 object BatchDeleteRecipeVersionResponse {
   
-  @scala.inline
-  def apply(Name: RecipeName): BatchDeleteRecipeVersionResponse = {
+  inline def apply(Name: RecipeName): BatchDeleteRecipeVersionResponse = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteRecipeVersionResponse]
   }
   
-  @scala.inline
-  implicit class BatchDeleteRecipeVersionResponseMutableBuilder[Self <: BatchDeleteRecipeVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteRecipeVersionResponse](x: Self) {
     
-    @scala.inline
-    def setErrors(value: RecipeErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: RecipeErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: RecipeVersionErrorDetail*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: RecipeVersionErrorDetail*): Self = StObject.set(x, "Errors", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

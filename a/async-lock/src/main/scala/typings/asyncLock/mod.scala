@@ -73,44 +73,32 @@ object mod {
   }
   object AsyncLockOptions {
     
-    @scala.inline
-    def apply(): AsyncLockOptions = {
+    inline def apply(): AsyncLockOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsyncLockOptions]
     }
     
-    @scala.inline
-    implicit class AsyncLockOptionsMutableBuilder[Self <: AsyncLockOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncLockOptions](x: Self) {
       
-      @scala.inline
-      def setDomainReentrant(value: Boolean): Self = StObject.set(x, "domainReentrant", value.asInstanceOf[js.Any])
+      inline def setDomainReentrant(value: Boolean): Self = StObject.set(x, "domainReentrant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainReentrantUndefined: Self = StObject.set(x, "domainReentrant", js.undefined)
+      inline def setDomainReentrantUndefined: Self = StObject.set(x, "domainReentrant", js.undefined)
       
-      @scala.inline
-      def setMaxPending(value: Double): Self = StObject.set(x, "maxPending", value.asInstanceOf[js.Any])
+      inline def setMaxPending(value: Double): Self = StObject.set(x, "maxPending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPendingUndefined: Self = StObject.set(x, "maxPending", js.undefined)
+      inline def setMaxPendingUndefined: Self = StObject.set(x, "maxPending", js.undefined)
       
-      @scala.inline
-      def setPromise(value: js.Any): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Any): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
       
-      @scala.inline
-      def setSkipQueue(value: Boolean): Self = StObject.set(x, "skipQueue", value.asInstanceOf[js.Any])
+      inline def setSkipQueue(value: Boolean): Self = StObject.set(x, "skipQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipQueueUndefined: Self = StObject.set(x, "skipQueue", js.undefined)
+      inline def setSkipQueueUndefined: Self = StObject.set(x, "skipQueue", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

@@ -18,22 +18,17 @@ trait DataLocationResource extends StObject {
 }
 object DataLocationResource {
   
-  @scala.inline
-  def apply(ResourceArn: ResourceArnString): DataLocationResource = {
+  inline def apply(ResourceArn: ResourceArnString): DataLocationResource = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataLocationResource]
   }
   
-  @scala.inline
-  implicit class DataLocationResourceMutableBuilder[Self <: DataLocationResource] (val x: Self) extends AnyVal {
+  extension [Self <: DataLocationResource](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

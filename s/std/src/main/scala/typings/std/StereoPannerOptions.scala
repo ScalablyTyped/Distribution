@@ -12,19 +12,15 @@ trait StereoPannerOptions
 }
 object StereoPannerOptions {
   
-  @scala.inline
-  def apply(): StereoPannerOptions = {
+  inline def apply(): StereoPannerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StereoPannerOptions]
   }
   
-  @scala.inline
-  implicit class StereoPannerOptionsMutableBuilder[Self <: StereoPannerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StereoPannerOptions](x: Self) {
     
-    @scala.inline
-    def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+    inline def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
+    inline def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait PrintManager
      with IPrintManager
 object PrintManager {
   
-  @scala.inline
-  def apply(onprinttaskrequested: js.Any): PrintManager = {
+  inline def apply(onprinttaskrequested: js.Any): PrintManager = {
     val __obj = js.Dynamic.literal(onprinttaskrequested = onprinttaskrequested.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintManager]
   }

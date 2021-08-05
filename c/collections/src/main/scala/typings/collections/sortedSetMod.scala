@@ -331,8 +331,7 @@ object sortedSetMod {
     }
     object AbstractSet {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addBeforeOwnPropertyChangeListener: /* repeated */ js.Any => js.Any,
         addBeforeRangeChangeListener: /* repeated */ js.Any => js.Any,
         addEach: /* repeated */ js.Any => js.Any,
@@ -391,161 +390,109 @@ object sortedSetMod {
         __obj.asInstanceOf[AbstractSet]
       }
       
-      @scala.inline
-      implicit class AbstractSetMutableBuilder[Self <: AbstractSet] (val x: Self) extends AnyVal {
+      extension [Self <: AbstractSet](x: Self) {
         
-        @scala.inline
-        def setAddBeforeOwnPropertyChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "addBeforeOwnPropertyChangeListener", js.Any.fromFunction1(value))
+        inline def setAddBeforeOwnPropertyChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "addBeforeOwnPropertyChangeListener", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAddBeforeRangeChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "addBeforeRangeChangeListener", js.Any.fromFunction1(value))
+        inline def setAddBeforeRangeChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "addBeforeRangeChangeListener", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAddEach(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "addEach", js.Any.fromFunction1(value))
+        inline def setAddEach(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "addEach", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAddOwnPropertyChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "addOwnPropertyChangeListener", js.Any.fromFunction1(value))
+        inline def setAddOwnPropertyChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "addOwnPropertyChangeListener", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAddRangeChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "addRangeChangeListener", js.Any.fromFunction1(value))
+        inline def setAddRangeChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "addRangeChangeListener", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAll(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
+        inline def setAll(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAny(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
+        inline def setAny(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAverage(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "average", js.Any.fromFunction1(value))
+        inline def setAverage(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "average", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setClone_(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
+        inline def setClone_(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setConcat(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
+        inline def setConcat(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setContains(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+        inline def setContains(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setContentCompare(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "contentCompare", js.Any.fromFunction1(value))
+        inline def setContentCompare(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "contentCompare", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setContentEquals(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "contentEquals", js.Any.fromFunction1(value))
+        inline def setContentEquals(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "contentEquals", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDeleteAll(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "deleteAll", js.Any.fromFunction1(value))
+        inline def setDeleteAll(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "deleteAll", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDeleteEach(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "deleteEach", js.Any.fromFunction1(value))
+        inline def setDeleteEach(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "deleteEach", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDifference(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "difference", js.Any.fromFunction1(value))
+        inline def setDifference(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "difference", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDispatchBeforeOwnPropertyChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dispatchBeforeOwnPropertyChange", js.Any.fromFunction1(value))
+        inline def setDispatchBeforeOwnPropertyChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dispatchBeforeOwnPropertyChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDispatchBeforeRangeChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dispatchBeforeRangeChange", js.Any.fromFunction1(value))
+        inline def setDispatchBeforeRangeChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dispatchBeforeRangeChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDispatchOwnPropertyChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dispatchOwnPropertyChange", js.Any.fromFunction1(value))
+        inline def setDispatchOwnPropertyChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dispatchOwnPropertyChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDispatchRangeChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dispatchRangeChange", js.Any.fromFunction1(value))
+        inline def setDispatchRangeChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dispatchRangeChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setEnumerate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "enumerate", js.Any.fromFunction1(value))
+        inline def setEnumerate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "enumerate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setEquals_(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+        inline def setEquals_(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setEvery(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "every", js.Any.fromFunction1(value))
+        inline def setEvery(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "every", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFilter(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+        inline def setFilter(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFindValue(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "findValue", js.Any.fromFunction1(value))
+        inline def setFindValue(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "findValue", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFlatten(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "flatten", js.Any.fromFunction1(value))
+        inline def setFlatten(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "flatten", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setForEach(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+        inline def setForEach(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGroup(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
+        inline def setGroup(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIntersection(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
+        inline def setIntersection(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIterator(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "iterator", js.Any.fromFunction1(value))
+        inline def setIterator(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "iterator", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setJoin(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
+        inline def setJoin(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setMakePropertyObservable(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "makePropertyObservable", js.Any.fromFunction1(value))
+        inline def setMakePropertyObservable(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "makePropertyObservable", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setMap(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+        inline def setMap(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnly(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "only", js.Any.fromFunction1(value))
+        inline def setOnly(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "only", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRemove(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+        inline def setRemove(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRemoveBeforeOwnPropertyChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "removeBeforeOwnPropertyChangeListener", js.Any.fromFunction1(value))
+        inline def setRemoveBeforeOwnPropertyChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "removeBeforeOwnPropertyChangeListener", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRemoveBeforeRangeChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "removeBeforeRangeChangeListener", js.Any.fromFunction1(value))
+        inline def setRemoveBeforeRangeChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "removeBeforeRangeChangeListener", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRemoveOwnPropertyChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "removeOwnPropertyChangeListener", js.Any.fromFunction1(value))
+        inline def setRemoveOwnPropertyChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "removeOwnPropertyChangeListener", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRemoveRangeChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "removeRangeChangeListener", js.Any.fromFunction1(value))
+        inline def setRemoveRangeChangeListener(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "removeRangeChangeListener", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setReversed(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "reversed", js.Any.fromFunction1(value))
+        inline def setReversed(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "reversed", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSome(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
+        inline def setSome(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSorted(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "sorted", js.Any.fromFunction1(value))
+        inline def setSorted(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "sorted", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSortedSetLog(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "sortedSetLog", js.Any.fromFunction1(value))
+        inline def setSortedSetLog(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "sortedSetLog", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSum(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
+        inline def setSum(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSymmetricDifference(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "symmetricDifference", js.Any.fromFunction1(value))
+        inline def setSymmetricDifference(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "symmetricDifference", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setToArray(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "toArray", js.Any.fromFunction1(value))
+        inline def setToArray(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "toArray", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setToJSON(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+        inline def setToJSON(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setToObject(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "toObject", js.Any.fromFunction1(value))
+        inline def setToObject(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "toObject", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setToggle(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+        inline def setToggle(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setUnion(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
+        inline def setUnion(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setZip(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "zip", js.Any.fromFunction1(value))
+        inline def setZip(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "zip", js.Any.fromFunction1(value))
       }
     }
     
@@ -555,17 +502,14 @@ object sortedSetMod {
     }
     object Iterator {
       
-      @scala.inline
-      def apply[T](next: () => Done[T]): Iterator[T] = {
+      inline def apply[T](next: () => Done[T]): Iterator[T] = {
         val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
         __obj.asInstanceOf[Iterator[T]]
       }
       
-      @scala.inline
-      implicit class IteratorMutableBuilder[Self <: Iterator[?], T] (val x: Self & Iterator[T]) extends AnyVal {
+      extension [Self <: Iterator[?], T](x: Self & Iterator[T]) {
         
-        @scala.inline
-        def setNext(value: () => Done[T]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+        inline def setNext(value: () => Done[T]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       }
     }
     
@@ -600,8 +544,7 @@ object sortedSetMod {
     }
     object Node {
       
-      @scala.inline
-      def apply[T](
+      inline def apply[T](
         checkIntegrity: /* repeated */ js.Any => Double,
         getNext: /* repeated */ js.Any => js.UndefOr[Node[T]],
         getPrevious: /* repeated */ js.Any => js.UndefOr[Node[T]],
@@ -620,23 +563,17 @@ object sortedSetMod {
         __obj.asInstanceOf[Node[T]]
       }
       
-      @scala.inline
-      implicit class NodeMutableBuilder[Self <: Node[?], T] (val x: Self & Node[T]) extends AnyVal {
+      extension [Self <: Node[?], T](x: Self & Node[T]) {
         
-        @scala.inline
-        def setCheckIntegrity(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "checkIntegrity", js.Any.fromFunction1(value))
+        inline def setCheckIntegrity(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "checkIntegrity", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetNext(value: /* repeated */ js.Any => js.UndefOr[Node[T]]): Self = StObject.set(x, "getNext", js.Any.fromFunction1(value))
+        inline def setGetNext(value: /* repeated */ js.Any => js.UndefOr[Node[T]]): Self = StObject.set(x, "getNext", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetPrevious(value: /* repeated */ js.Any => js.UndefOr[Node[T]]): Self = StObject.set(x, "getPrevious", js.Any.fromFunction1(value))
+        inline def setGetPrevious(value: /* repeated */ js.Any => js.UndefOr[Node[T]]): Self = StObject.set(x, "getPrevious", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setLog(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "log", js.Any.fromFunction4(value))
+        inline def setLog(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "log", js.Any.fromFunction4(value))
         
-        @scala.inline
-        def setReduce(
+        inline def setReduce(
           value: (js.Function4[
                   /* result */ js.UndefOr[js.Any], 
                   /* val */ js.UndefOr[js.Any], 
@@ -646,11 +583,9 @@ object sortedSetMod {
                 ], js.Any, Double, js.Any, js.Any, Double) => js.Any
         ): Self = StObject.set(x, "reduce", js.Any.fromFunction6(value))
         
-        @scala.inline
-        def setSummary(value: /* repeated */ js.Any => String): Self = StObject.set(x, "summary", js.Any.fromFunction1(value))
+        inline def setSummary(value: /* repeated */ js.Any => String): Self = StObject.set(x, "summary", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTouch(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "touch", js.Any.fromFunction1(value))
+        inline def setTouch(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "touch", js.Any.fromFunction1(value))
       }
     }
     

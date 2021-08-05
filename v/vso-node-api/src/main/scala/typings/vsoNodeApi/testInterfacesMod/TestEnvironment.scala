@@ -12,19 +12,15 @@ trait TestEnvironment extends StObject {
 }
 object TestEnvironment {
   
-  @scala.inline
-  def apply(environmentId: String, environmentName: String): TestEnvironment = {
+  inline def apply(environmentId: String, environmentName: String): TestEnvironment = {
     val __obj = js.Dynamic.literal(environmentId = environmentId.asInstanceOf[js.Any], environmentName = environmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestEnvironment]
   }
   
-  @scala.inline
-  implicit class TestEnvironmentMutableBuilder[Self <: TestEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: TestEnvironment](x: Self) {
     
-    @scala.inline
-    def setEnvironmentId(value: String): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: String): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentName(value: String): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: String): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
   }
 }

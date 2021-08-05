@@ -9,6 +9,5 @@ object global {
   @JSGlobal("IBAN")
   @js.native
   def IBAN: IBANStatic = js.native
-  @scala.inline
-  def IBAN_=(x: IBANStatic): Unit = js.Dynamic.global.updateDynamic("IBAN")(x.asInstanceOf[js.Any])
+  inline def IBAN_=(x: IBANStatic): Unit = js.Dynamic.global.updateDynamic("IBAN")(x.asInstanceOf[js.Any])
 }

@@ -10,19 +10,15 @@ trait or extends StObject {
 }
 object or {
   
-  @scala.inline
-  def apply(args: js.Array[js.Any]): or = {
+  inline def apply(args: js.Array[js.Any]): or = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     __obj.asInstanceOf[or]
   }
   
-  @scala.inline
-  implicit class orMutableBuilder[Self <: or] (val x: Self) extends AnyVal {
+  extension [Self <: or](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
   }
 }

@@ -52,17 +52,14 @@ object mod {
   }
   object FindAllResult {
     
-    @scala.inline
-    def apply(index: String, length: Double, line: String, offset: Double): FindAllResult = {
+    inline def apply(index: String, length: Double, line: String, offset: Double): FindAllResult = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[FindAllResult]
     }
     
-    @scala.inline
-    implicit class FindAllResultMutableBuilder[Self <: FindAllResult] (val x: Self) extends AnyVal {
+    extension [Self <: FindAllResult](x: Self) {
       
-      @scala.inline
-      def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,23 +80,18 @@ object mod {
   }
   object FindMatch {
     
-    @scala.inline
-    def apply(length: Double, line: String, offset: Double): FindMatch = {
+    inline def apply(length: Double, line: String, offset: Double): FindMatch = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[FindMatch]
     }
     
-    @scala.inline
-    implicit class FindMatchMutableBuilder[Self <: FindMatch] (val x: Self) extends AnyVal {
+    extension [Self <: FindMatch](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,8 +107,7 @@ object mod {
   }
   object LineNavigator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       find: (RegExp, Double, FindCallback) => Unit,
       findAll: (RegExp, Double, Double, FindAllCallback) => Unit,
       readLines: (Double, Double, ReadLinesCallback) => Unit,
@@ -126,20 +117,15 @@ object mod {
       __obj.asInstanceOf[LineNavigator]
     }
     
-    @scala.inline
-    implicit class LineNavigatorMutableBuilder[Self <: LineNavigator] (val x: Self) extends AnyVal {
+    extension [Self <: LineNavigator](x: Self) {
       
-      @scala.inline
-      def setFind(value: (RegExp, Double, FindCallback) => Unit): Self = StObject.set(x, "find", js.Any.fromFunction3(value))
+      inline def setFind(value: (RegExp, Double, FindCallback) => Unit): Self = StObject.set(x, "find", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFindAll(value: (RegExp, Double, Double, FindAllCallback) => Unit): Self = StObject.set(x, "findAll", js.Any.fromFunction4(value))
+      inline def setFindAll(value: (RegExp, Double, Double, FindAllCallback) => Unit): Self = StObject.set(x, "findAll", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setReadLines(value: (Double, Double, ReadLinesCallback) => Unit): Self = StObject.set(x, "readLines", js.Any.fromFunction3(value))
+      inline def setReadLines(value: (Double, Double, ReadLinesCallback) => Unit): Self = StObject.set(x, "readLines", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReadSomeLines(value: (Double, ReadLinesCallback) => Unit): Self = StObject.set(x, "readSomeLines", js.Any.fromFunction2(value))
+      inline def setReadSomeLines(value: (Double, ReadLinesCallback) => Unit): Self = StObject.set(x, "readSomeLines", js.Any.fromFunction2(value))
     }
   }
   
@@ -165,32 +151,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setThrowOnLongLines(value: Boolean): Self = StObject.set(x, "throwOnLongLines", value.asInstanceOf[js.Any])
+      inline def setThrowOnLongLines(value: Boolean): Self = StObject.set(x, "throwOnLongLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowOnLongLinesUndefined: Self = StObject.set(x, "throwOnLongLines", js.undefined)
+      inline def setThrowOnLongLinesUndefined: Self = StObject.set(x, "throwOnLongLines", js.undefined)
     }
   }
   

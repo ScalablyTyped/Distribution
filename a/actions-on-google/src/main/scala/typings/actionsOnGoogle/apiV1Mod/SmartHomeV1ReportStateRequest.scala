@@ -15,22 +15,17 @@ trait SmartHomeV1ReportStateRequest extends StObject {
 }
 object SmartHomeV1ReportStateRequest {
   
-  @scala.inline
-  def apply(agentUserId: String, payload: Devices, requestId: String): SmartHomeV1ReportStateRequest = {
+  inline def apply(agentUserId: String, payload: Devices, requestId: String): SmartHomeV1ReportStateRequest = {
     val __obj = js.Dynamic.literal(agentUserId = agentUserId.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1ReportStateRequest]
   }
   
-  @scala.inline
-  implicit class SmartHomeV1ReportStateRequestMutableBuilder[Self <: SmartHomeV1ReportStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SmartHomeV1ReportStateRequest](x: Self) {
     
-    @scala.inline
-    def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
+    inline def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: Devices): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Devices): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

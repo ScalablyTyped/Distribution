@@ -32,7 +32,7 @@ object bundleExecutorMod {
       * @param {String} id - The id for the event in the task.
       * @private
       */
-    var _cancel: js.Any = js.native
+    /* private */ var _cancel: js.Any = js.native
     
     var _descriptor: BundleDescriptor = js.native
     
@@ -47,7 +47,7 @@ object bundleExecutorMod {
       *   cleared.
       * @private
       */
-    var _maybeClearTimeout: js.Any = js.native
+    /* private */ var _maybeClearTimeout: js.Any = js.native
     
     var _options: BundleOptions = js.native
     
@@ -97,44 +97,32 @@ object bundleExecutorMod {
   }
   object BundleOptions {
     
-    @scala.inline
-    def apply(): BundleOptions = {
+    inline def apply(): BundleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BundleOptions]
     }
     
-    @scala.inline
-    implicit class BundleOptionsMutableBuilder[Self <: BundleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BundleOptions](x: Self) {
       
-      @scala.inline
-      def setDelayThreshold(value: Double): Self = StObject.set(x, "delayThreshold", value.asInstanceOf[js.Any])
+      inline def setDelayThreshold(value: Double): Self = StObject.set(x, "delayThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayThresholdUndefined: Self = StObject.set(x, "delayThreshold", js.undefined)
+      inline def setDelayThresholdUndefined: Self = StObject.set(x, "delayThreshold", js.undefined)
       
-      @scala.inline
-      def setElementCountLimit(value: Double): Self = StObject.set(x, "elementCountLimit", value.asInstanceOf[js.Any])
+      inline def setElementCountLimit(value: Double): Self = StObject.set(x, "elementCountLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementCountLimitUndefined: Self = StObject.set(x, "elementCountLimit", js.undefined)
+      inline def setElementCountLimitUndefined: Self = StObject.set(x, "elementCountLimit", js.undefined)
       
-      @scala.inline
-      def setElementCountThreshold(value: Double): Self = StObject.set(x, "elementCountThreshold", value.asInstanceOf[js.Any])
+      inline def setElementCountThreshold(value: Double): Self = StObject.set(x, "elementCountThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementCountThresholdUndefined: Self = StObject.set(x, "elementCountThreshold", js.undefined)
+      inline def setElementCountThresholdUndefined: Self = StObject.set(x, "elementCountThreshold", js.undefined)
       
-      @scala.inline
-      def setRequestByteLimit(value: Double): Self = StObject.set(x, "requestByteLimit", value.asInstanceOf[js.Any])
+      inline def setRequestByteLimit(value: Double): Self = StObject.set(x, "requestByteLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestByteLimitUndefined: Self = StObject.set(x, "requestByteLimit", js.undefined)
+      inline def setRequestByteLimitUndefined: Self = StObject.set(x, "requestByteLimit", js.undefined)
       
-      @scala.inline
-      def setRequestByteThreshold(value: Double): Self = StObject.set(x, "requestByteThreshold", value.asInstanceOf[js.Any])
+      inline def setRequestByteThreshold(value: Double): Self = StObject.set(x, "requestByteThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestByteThresholdUndefined: Self = StObject.set(x, "requestByteThreshold", js.undefined)
+      inline def setRequestByteThresholdUndefined: Self = StObject.set(x, "requestByteThreshold", js.undefined)
     }
   }
 }

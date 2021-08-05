@@ -63,8 +63,7 @@ trait XrJoint extends StObject {
 }
 object XrJoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getPosition: () => Vec3,
     getRotation: () => Quat,
     hand: XrHand,
@@ -77,34 +76,24 @@ object XrJoint {
     __obj.asInstanceOf[XrJoint]
   }
   
-  @scala.inline
-  implicit class XrJointMutableBuilder[Self <: XrJoint] (val x: Self) extends AnyVal {
+  extension [Self <: XrJoint](x: Self) {
     
-    @scala.inline
-    def setFinger(value: XrFinger): Self = StObject.set(x, "finger", value.asInstanceOf[js.Any])
+    inline def setFinger(value: XrFinger): Self = StObject.set(x, "finger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerNull: Self = StObject.set(x, "finger", null)
+    inline def setFingerNull: Self = StObject.set(x, "finger", null)
     
-    @scala.inline
-    def setGetPosition(value: () => Vec3): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Vec3): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRotation(value: () => Quat): Self = StObject.set(x, "getRotation", js.Any.fromFunction0(value))
+    inline def setGetRotation(value: () => Quat): Self = StObject.set(x, "getRotation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHand(value: XrHand): Self = StObject.set(x, "hand", value.asInstanceOf[js.Any])
+    inline def setHand(value: XrHand): Self = StObject.set(x, "hand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTip(value: Boolean): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
+    inline def setTip(value: Boolean): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrist(value: Boolean): Self = StObject.set(x, "wrist", value.asInstanceOf[js.Any])
+    inline def setWrist(value: Boolean): Self = StObject.set(x, "wrist", value.asInstanceOf[js.Any])
   }
 }

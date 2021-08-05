@@ -13,19 +13,15 @@ trait Role extends StObject {
 }
 object Role {
   
-  @scala.inline
-  def apply(instances: StringDictionary[RoleInstance], name: String): Role = {
+  inline def apply(instances: StringDictionary[RoleInstance], name: String): Role = {
     val __obj = js.Dynamic.literal(instances = instances.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Role]
   }
   
-  @scala.inline
-  implicit class RoleMutableBuilder[Self <: Role] (val x: Self) extends AnyVal {
+  extension [Self <: Role](x: Self) {
     
-    @scala.inline
-    def setInstances(value: StringDictionary[RoleInstance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: StringDictionary[RoleInstance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

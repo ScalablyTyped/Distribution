@@ -25,49 +25,35 @@ trait MicrosoftStoreForBusinessApp
 }
 object MicrosoftStoreForBusinessApp {
   
-  @scala.inline
-  def apply(): MicrosoftStoreForBusinessApp = {
+  inline def apply(): MicrosoftStoreForBusinessApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MicrosoftStoreForBusinessApp]
   }
   
-  @scala.inline
-  implicit class MicrosoftStoreForBusinessAppMutableBuilder[Self <: MicrosoftStoreForBusinessApp] (val x: Self) extends AnyVal {
+  extension [Self <: MicrosoftStoreForBusinessApp](x: Self) {
     
-    @scala.inline
-    def setLicenseType(value: MicrosoftStoreForBusinessLicenseType): Self = StObject.set(x, "licenseType", value.asInstanceOf[js.Any])
+    inline def setLicenseType(value: MicrosoftStoreForBusinessLicenseType): Self = StObject.set(x, "licenseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseTypeUndefined: Self = StObject.set(x, "licenseType", js.undefined)
+    inline def setLicenseTypeUndefined: Self = StObject.set(x, "licenseType", js.undefined)
     
-    @scala.inline
-    def setPackageIdentityName(value: NullableOption[String]): Self = StObject.set(x, "packageIdentityName", value.asInstanceOf[js.Any])
+    inline def setPackageIdentityName(value: NullableOption[String]): Self = StObject.set(x, "packageIdentityName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageIdentityNameNull: Self = StObject.set(x, "packageIdentityName", null)
+    inline def setPackageIdentityNameNull: Self = StObject.set(x, "packageIdentityName", null)
     
-    @scala.inline
-    def setPackageIdentityNameUndefined: Self = StObject.set(x, "packageIdentityName", js.undefined)
+    inline def setPackageIdentityNameUndefined: Self = StObject.set(x, "packageIdentityName", js.undefined)
     
-    @scala.inline
-    def setProductKey(value: NullableOption[String]): Self = StObject.set(x, "productKey", value.asInstanceOf[js.Any])
+    inline def setProductKey(value: NullableOption[String]): Self = StObject.set(x, "productKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductKeyNull: Self = StObject.set(x, "productKey", null)
+    inline def setProductKeyNull: Self = StObject.set(x, "productKey", null)
     
-    @scala.inline
-    def setProductKeyUndefined: Self = StObject.set(x, "productKey", js.undefined)
+    inline def setProductKeyUndefined: Self = StObject.set(x, "productKey", js.undefined)
     
-    @scala.inline
-    def setTotalLicenseCount(value: Double): Self = StObject.set(x, "totalLicenseCount", value.asInstanceOf[js.Any])
+    inline def setTotalLicenseCount(value: Double): Self = StObject.set(x, "totalLicenseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalLicenseCountUndefined: Self = StObject.set(x, "totalLicenseCount", js.undefined)
+    inline def setTotalLicenseCountUndefined: Self = StObject.set(x, "totalLicenseCount", js.undefined)
     
-    @scala.inline
-    def setUsedLicenseCount(value: Double): Self = StObject.set(x, "usedLicenseCount", value.asInstanceOf[js.Any])
+    inline def setUsedLicenseCount(value: Double): Self = StObject.set(x, "usedLicenseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedLicenseCountUndefined: Self = StObject.set(x, "usedLicenseCount", js.undefined)
+    inline def setUsedLicenseCountUndefined: Self = StObject.set(x, "usedLicenseCount", js.undefined)
   }
 }

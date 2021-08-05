@@ -17,19 +17,15 @@ trait PageUpdateData extends StObject {
 }
 object PageUpdateData {
   
-  @scala.inline
-  def apply(): PageUpdateData = {
+  inline def apply(): PageUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageUpdateData]
   }
   
-  @scala.inline
-  implicit class PageUpdateDataMutableBuilder[Self <: PageUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: PageUpdateData](x: Self) {
     
-    @scala.inline
-    def setView(value: PageViewUpdateData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: PageViewUpdateData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait DescribeRemediationConfigurationsRequest extends StObject {
 }
 object DescribeRemediationConfigurationsRequest {
   
-  @scala.inline
-  def apply(ConfigRuleNames: ConfigRuleNames): DescribeRemediationConfigurationsRequest = {
+  inline def apply(ConfigRuleNames: ConfigRuleNames): DescribeRemediationConfigurationsRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleNames = ConfigRuleNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRemediationConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRemediationConfigurationsRequestMutableBuilder[Self <: DescribeRemediationConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRemediationConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigRuleNames(value: ConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
+    inline def setConfigRuleNames(value: ConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
+    inline def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
   }
 }

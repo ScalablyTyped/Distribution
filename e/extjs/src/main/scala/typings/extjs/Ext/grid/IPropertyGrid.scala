@@ -69,93 +69,65 @@ trait IPropertyGrid
 }
 object IPropertyGrid {
   
-  @scala.inline
-  def apply(): IPropertyGrid = {
+  inline def apply(): IPropertyGrid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPropertyGrid]
   }
   
-  @scala.inline
-  implicit class IPropertyGridMutableBuilder[Self <: IPropertyGrid] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyGrid](x: Self) {
     
-    @scala.inline
-    def setCustomEditors(value: js.Any): Self = StObject.set(x, "customEditors", value.asInstanceOf[js.Any])
+    inline def setCustomEditors(value: js.Any): Self = StObject.set(x, "customEditors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomEditorsUndefined: Self = StObject.set(x, "customEditors", js.undefined)
+    inline def setCustomEditorsUndefined: Self = StObject.set(x, "customEditors", js.undefined)
     
-    @scala.inline
-    def setCustomRenderers(value: js.Any): Self = StObject.set(x, "customRenderers", value.asInstanceOf[js.Any])
+    inline def setCustomRenderers(value: js.Any): Self = StObject.set(x, "customRenderers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomRenderersUndefined: Self = StObject.set(x, "customRenderers", js.undefined)
+    inline def setCustomRenderersUndefined: Self = StObject.set(x, "customRenderers", js.undefined)
     
-    @scala.inline
-    def setGetSource(value: () => js.Any): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
+    inline def setGetSource(value: () => js.Any): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSourceUndefined: Self = StObject.set(x, "getSource", js.undefined)
+    inline def setGetSourceUndefined: Self = StObject.set(x, "getSource", js.undefined)
     
-    @scala.inline
-    def setInferTypes(value: Boolean): Self = StObject.set(x, "inferTypes", value.asInstanceOf[js.Any])
+    inline def setInferTypes(value: Boolean): Self = StObject.set(x, "inferTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInferTypesUndefined: Self = StObject.set(x, "inferTypes", js.undefined)
+    inline def setInferTypesUndefined: Self = StObject.set(x, "inferTypes", js.undefined)
     
-    @scala.inline
-    def setNameColumnWidth(value: js.Any): Self = StObject.set(x, "nameColumnWidth", value.asInstanceOf[js.Any])
+    inline def setNameColumnWidth(value: js.Any): Self = StObject.set(x, "nameColumnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameColumnWidthUndefined: Self = StObject.set(x, "nameColumnWidth", js.undefined)
+    inline def setNameColumnWidthUndefined: Self = StObject.set(x, "nameColumnWidth", js.undefined)
     
-    @scala.inline
-    def setNameField(value: String): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
+    inline def setNameField(value: String): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameFieldUndefined: Self = StObject.set(x, "nameField", js.undefined)
+    inline def setNameFieldUndefined: Self = StObject.set(x, "nameField", js.undefined)
     
-    @scala.inline
-    def setPropertyNames(value: js.Any): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
+    inline def setPropertyNames(value: js.Any): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyNamesUndefined: Self = StObject.set(x, "propertyNames", js.undefined)
+    inline def setPropertyNamesUndefined: Self = StObject.set(x, "propertyNames", js.undefined)
     
-    @scala.inline
-    def setRemoveProperty(value: /* prop */ js.UndefOr[String] => Unit): Self = StObject.set(x, "removeProperty", js.Any.fromFunction1(value))
+    inline def setRemoveProperty(value: /* prop */ js.UndefOr[String] => Unit): Self = StObject.set(x, "removeProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemovePropertyUndefined: Self = StObject.set(x, "removeProperty", js.undefined)
+    inline def setRemovePropertyUndefined: Self = StObject.set(x, "removeProperty", js.undefined)
     
-    @scala.inline
-    def setSetProperty(
+    inline def setSetProperty(
       value: (/* prop */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* create */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "setProperty", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetPropertyUndefined: Self = StObject.set(x, "setProperty", js.undefined)
+    inline def setSetPropertyUndefined: Self = StObject.set(x, "setProperty", js.undefined)
     
-    @scala.inline
-    def setSetSource(value: (/* source */ js.UndefOr[js.Any], /* sourceConfig */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction2(value))
+    inline def setSetSource(value: (/* source */ js.UndefOr[js.Any], /* sourceConfig */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSourceUndefined: Self = StObject.set(x, "setSource", js.undefined)
+    inline def setSetSourceUndefined: Self = StObject.set(x, "setSource", js.undefined)
     
-    @scala.inline
-    def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceConfig(value: js.Any): Self = StObject.set(x, "sourceConfig", value.asInstanceOf[js.Any])
+    inline def setSourceConfig(value: js.Any): Self = StObject.set(x, "sourceConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceConfigUndefined: Self = StObject.set(x, "sourceConfig", js.undefined)
+    inline def setSourceConfigUndefined: Self = StObject.set(x, "sourceConfig", js.undefined)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
+    inline def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
+    inline def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
   }
 }

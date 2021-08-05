@@ -13,17 +13,11 @@ object matchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findMatches(node: Node, selector: TSQuerySelectorNode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatches")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def findMatches(node: Node, selector: TSQuerySelectorNode, ancestry: js.Array[Node]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatches")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], ancestry.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def findMatches(node: Node, selector: TSQuerySelectorNode, ancestry: js.Array[Node], options: TSQueryOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatches")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], ancestry.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def findMatches(node: Node, selector: TSQuerySelectorNode, ancestry: Unit, options: TSQueryOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatches")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], ancestry.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def findMatches(node: Node, selector: TSQuerySelectorNode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatches")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def findMatches(node: Node, selector: TSQuerySelectorNode, ancestry: js.Array[Node]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatches")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], ancestry.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def findMatches(node: Node, selector: TSQuerySelectorNode, ancestry: js.Array[Node], options: TSQueryOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatches")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], ancestry.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def findMatches(node: Node, selector: TSQuerySelectorNode, ancestry: Unit, options: TSQueryOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatches")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], ancestry.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def `match`[T /* <: Node */](node: Node, selector: TSQuerySelectorNode): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def `match`[T /* <: Node */](node: Node, selector: TSQuerySelectorNode, options: TSQueryOptions): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def `match`[T /* <: Node */](node: Node, selector: TSQuerySelectorNode): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def `match`[T /* <: Node */](node: Node, selector: TSQuerySelectorNode, options: TSQueryOptions): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

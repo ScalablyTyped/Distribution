@@ -19,6 +19,5 @@ object MarkedLinksPlugin {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def splitLinkText(text: String): Caption = ^.asInstanceOf[js.Dynamic].applyDynamic("splitLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[Caption]
+  inline def splitLinkText(text: String): Caption = ^.asInstanceOf[js.Dynamic].applyDynamic("splitLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[Caption]
 }

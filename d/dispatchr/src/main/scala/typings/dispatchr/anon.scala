@@ -19,29 +19,22 @@ object anon {
   }
   object ActionName {
     
-    @scala.inline
-    def apply(error: Error): ActionName = {
+    inline def apply(error: Error): ActionName = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionName]
     }
     
-    @scala.inline
-    implicit class ActionNameMutableBuilder[Self <: ActionName] (val x: Self) extends AnyVal {
+    extension [Self <: ActionName](x: Self) {
       
-      @scala.inline
-      def setActionName(value: String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+      inline def setActionName(value: String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
+      inline def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }
   }
   

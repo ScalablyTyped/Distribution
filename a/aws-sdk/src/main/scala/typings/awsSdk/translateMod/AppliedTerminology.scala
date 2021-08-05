@@ -18,28 +18,21 @@ trait AppliedTerminology extends StObject {
 }
 object AppliedTerminology {
   
-  @scala.inline
-  def apply(): AppliedTerminology = {
+  inline def apply(): AppliedTerminology = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppliedTerminology]
   }
   
-  @scala.inline
-  implicit class AppliedTerminologyMutableBuilder[Self <: AppliedTerminology] (val x: Self) extends AnyVal {
+  extension [Self <: AppliedTerminology](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setTerms(value: TermList): Self = StObject.set(x, "Terms", value.asInstanceOf[js.Any])
+    inline def setTerms(value: TermList): Self = StObject.set(x, "Terms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsUndefined: Self = StObject.set(x, "Terms", js.undefined)
+    inline def setTermsUndefined: Self = StObject.set(x, "Terms", js.undefined)
     
-    @scala.inline
-    def setTermsVarargs(value: Term*): Self = StObject.set(x, "Terms", js.Array(value :_*))
+    inline def setTermsVarargs(value: Term*): Self = StObject.set(x, "Terms", js.Array(value :_*))
   }
 }

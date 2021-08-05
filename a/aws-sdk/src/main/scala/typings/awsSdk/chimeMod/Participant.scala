@@ -18,25 +18,19 @@ trait Participant extends StObject {
 }
 object Participant {
   
-  @scala.inline
-  def apply(): Participant = {
+  inline def apply(): Participant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Participant]
   }
   
-  @scala.inline
-  implicit class ParticipantMutableBuilder[Self <: Participant] (val x: Self) extends AnyVal {
+  extension [Self <: Participant](x: Self) {
     
-    @scala.inline
-    def setPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
     
-    @scala.inline
-    def setProxyPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "ProxyPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setProxyPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "ProxyPhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyPhoneNumberUndefined: Self = StObject.set(x, "ProxyPhoneNumber", js.undefined)
+    inline def setProxyPhoneNumberUndefined: Self = StObject.set(x, "ProxyPhoneNumber", js.undefined)
   }
 }

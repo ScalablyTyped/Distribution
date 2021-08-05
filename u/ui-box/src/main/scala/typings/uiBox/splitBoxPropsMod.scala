@@ -13,8 +13,7 @@ object splitBoxPropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[P /* <: EnhancerProps */](props: P): SplitBoxProps[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[SplitBoxProps[P]]
+  inline def default[P /* <: EnhancerProps */](props: P): SplitBoxProps[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[SplitBoxProps[P]]
   
   trait SplitBoxProps[P /* <: EnhancerProps */] extends StObject {
     
@@ -33,8 +32,7 @@ object splitBoxPropsMod {
   }
   object SplitBoxProps {
     
-    @scala.inline
-    def apply[P /* <: EnhancerProps */](
+    inline def apply[P /* <: EnhancerProps */](
       matchedProps: Pick[
           P, 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ js.Any
@@ -51,19 +49,16 @@ object splitBoxPropsMod {
       __obj.asInstanceOf[SplitBoxProps[P]]
     }
     
-    @scala.inline
-    implicit class SplitBoxPropsMutableBuilder[Self <: SplitBoxProps[?], P /* <: EnhancerProps */] (val x: Self & SplitBoxProps[P]) extends AnyVal {
+    extension [Self <: SplitBoxProps[?], P /* <: EnhancerProps */](x: Self & SplitBoxProps[P]) {
       
-      @scala.inline
-      def setMatchedProps(
+      inline def setMatchedProps(
         value: Pick[
               P, 
               /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ js.Any
             ]
       ): Self = StObject.set(x, "matchedProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemainingProps(
+      inline def setRemainingProps(
         value: Pick[
               P, 
               Exclude[

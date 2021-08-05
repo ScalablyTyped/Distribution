@@ -5,65 +5,47 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def Array_ : typings.ioTs.mod.UnknownArrayC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Array").asInstanceOf[typings.ioTs.mod.UnknownArrayC]
+inline def Array_ : typings.ioTs.mod.UnknownArrayC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Array").asInstanceOf[typings.ioTs.mod.UnknownArrayC]
 
-@scala.inline
-def Dictionary_ : typings.ioTs.mod.UnknownRecordC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Dictionary").asInstanceOf[typings.ioTs.mod.UnknownRecordC]
+inline def Dictionary_ : typings.ioTs.mod.UnknownRecordC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Dictionary").asInstanceOf[typings.ioTs.mod.UnknownRecordC]
 
-@scala.inline
-def Function: typings.ioTs.mod.FunctionC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Function").asInstanceOf[typings.ioTs.mod.FunctionC]
+inline def Function: typings.ioTs.mod.FunctionC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Function").asInstanceOf[typings.ioTs.mod.FunctionC]
 
-@scala.inline
-def Int: typings.ioTs.mod.BrandC[typings.ioTs.mod.NumberC, typings.ioTs.mod.IntBrand] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Int").asInstanceOf[typings.ioTs.mod.BrandC[typings.ioTs.mod.NumberC, typings.ioTs.mod.IntBrand]]
+inline def Int: typings.ioTs.mod.BrandC[typings.ioTs.mod.NumberC, typings.ioTs.mod.IntBrand] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Int").asInstanceOf[typings.ioTs.mod.BrandC[typings.ioTs.mod.NumberC, typings.ioTs.mod.IntBrand]]
 type Int = typings.ioTs.mod.Branded[scala.Double, typings.ioTs.mod.IntBrand]
 
-@scala.inline
-def Integer: typings.ioTs.mod.RefinementC[typings.ioTs.mod.NumberC] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Integer").asInstanceOf[typings.ioTs.mod.RefinementC[typings.ioTs.mod.NumberC]]
+inline def Integer: typings.ioTs.mod.RefinementC[typings.ioTs.mod.NumberC] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Integer").asInstanceOf[typings.ioTs.mod.RefinementC[typings.ioTs.mod.NumberC]]
 
-@scala.inline
-def UnknownArray: typings.ioTs.mod.UnknownArrayC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UnknownArray").asInstanceOf[typings.ioTs.mod.UnknownArrayC]
+inline def UnknownArray: typings.ioTs.mod.UnknownArrayC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UnknownArray").asInstanceOf[typings.ioTs.mod.UnknownArrayC]
 
-@scala.inline
-def UnknownRecord: typings.ioTs.mod.UnknownRecordC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UnknownRecord").asInstanceOf[typings.ioTs.mod.UnknownRecordC]
+inline def UnknownRecord: typings.ioTs.mod.UnknownRecordC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UnknownRecord").asInstanceOf[typings.ioTs.mod.UnknownRecordC]
 
-@scala.inline
-def alias[A, O, P, I](codec: typings.ioTs.mod.InterfaceType[P, A, O, I]): js.Function0[typings.ioTs.mod.InterfaceType[P, js.Any, O, I]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("alias")(codec.asInstanceOf[js.Any]).asInstanceOf[js.Function0[typings.ioTs.mod.InterfaceType[P, js.Any, O, I]]]
-@scala.inline
-def alias[A, O, P, I](codec: typings.ioTs.mod.PartialType[P, A, O, I]): js.Function0[typings.ioTs.mod.PartialType[P, js.Any, O, I]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("alias")(codec.asInstanceOf[js.Any]).asInstanceOf[js.Function0[typings.ioTs.mod.PartialType[P, js.Any, O, I]]]
-@scala.inline
-def alias[A, O, P, I](codec: typings.ioTs.mod.StrictType[P, A, O, I]): js.Function0[typings.ioTs.mod.StrictType[P, js.Any, O, I]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("alias")(codec.asInstanceOf[js.Any]).asInstanceOf[js.Function0[typings.ioTs.mod.StrictType[P, js.Any, O, I]]]
+inline def alias[A, O, P, I](codec: typings.ioTs.mod.InterfaceType[P, A, O, I]): js.Function0[typings.ioTs.mod.InterfaceType[P, js.Any, O, I]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("alias")(codec.asInstanceOf[js.Any]).asInstanceOf[js.Function0[typings.ioTs.mod.InterfaceType[P, js.Any, O, I]]]
+inline def alias[A, O, P, I](codec: typings.ioTs.mod.PartialType[P, A, O, I]): js.Function0[typings.ioTs.mod.PartialType[P, js.Any, O, I]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("alias")(codec.asInstanceOf[js.Any]).asInstanceOf[js.Function0[typings.ioTs.mod.PartialType[P, js.Any, O, I]]]
+inline def alias[A, O, P, I](codec: typings.ioTs.mod.StrictType[P, A, O, I]): js.Function0[typings.ioTs.mod.StrictType[P, js.Any, O, I]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("alias")(codec.asInstanceOf[js.Any]).asInstanceOf[js.Function0[typings.ioTs.mod.StrictType[P, js.Any, O, I]]]
 
-@scala.inline
-def any: typings.ioTs.mod.AnyC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("any").asInstanceOf[typings.ioTs.mod.AnyC]
+inline def any: typings.ioTs.mod.AnyC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("any").asInstanceOf[typings.ioTs.mod.AnyC]
 
-@scala.inline
-def appendContext(
+inline def appendContext(
   c: typings.ioTs.mod.Context,
   key: java.lang.String,
   decoder: typings.ioTs.mod.Decoder[js.Any, js.Any]
 ): typings.ioTs.mod.Context = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendContext")(c.asInstanceOf[js.Any], key.asInstanceOf[js.Any], decoder.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.Context]
-@scala.inline
-def appendContext(
+inline def appendContext(
   c: typings.ioTs.mod.Context,
   key: java.lang.String,
   decoder: typings.ioTs.mod.Decoder[js.Any, js.Any],
   actual: js.Any
 ): typings.ioTs.mod.Context = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendContext")(c.asInstanceOf[js.Any], key.asInstanceOf[js.Any], decoder.asInstanceOf[js.Any], actual.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.Context]
 
-@scala.inline
-def array[C /* <: typings.ioTs.mod.Mixed_ */](item: C): typings.ioTs.mod.ArrayC[C] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("array")(item.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.ArrayC[C]]
-@scala.inline
-def array[C /* <: typings.ioTs.mod.Mixed_ */](item: C, name: java.lang.String): typings.ioTs.mod.ArrayC[C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("array")(item.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ArrayC[C]]
+inline def array[C /* <: typings.ioTs.mod.Mixed_ */](item: C): typings.ioTs.mod.ArrayC[C] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("array")(item.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.ArrayC[C]]
+inline def array[C /* <: typings.ioTs.mod.Mixed_ */](item: C, name: java.lang.String): typings.ioTs.mod.ArrayC[C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("array")(item.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ArrayC[C]]
 
-@scala.inline
-def bigint: typings.ioTs.mod.BigIntC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("bigint").asInstanceOf[typings.ioTs.mod.BigIntC]
+inline def bigint: typings.ioTs.mod.BigIntC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("bigint").asInstanceOf[typings.ioTs.mod.BigIntC]
 
-@scala.inline
-def boolean: typings.ioTs.mod.BooleanC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("boolean").asInstanceOf[typings.ioTs.mod.BooleanC]
+inline def boolean: typings.ioTs.mod.BooleanC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("boolean").asInstanceOf[typings.ioTs.mod.BooleanC]
 
-@scala.inline
-def brand[C /* <: typings.ioTs.mod.Any_ */, N /* <: java.lang.String */, B /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+inline def brand[C /* <: typings.ioTs.mod.Any_ */, N /* <: java.lang.String */, B /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {readonly [ K in N ]: symbol}
   */ typings.ioTs.ioTsStrings.brand & org.scalablytyped.runtime.TopLevel[js.Any] */](
   codec: C,
@@ -74,187 +56,116 @@ def brand[C /* <: typings.ioTs.mod.Any_ */, N /* <: java.lang.String */, B /* <:
   name: N
 ): typings.ioTs.mod.BrandC[C, B] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("brand")(codec.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.BrandC[C, B]]
 
-@scala.inline
-def clean[A, O, I](codec: typings.ioTs.mod.Type_[A, O, I]): typings.ioTs.mod.Type_[A, O, I] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clean")(codec.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.Type_[A, O, I]]
+inline def clean[A, O, I](codec: typings.ioTs.mod.Type_[A, O, I]): typings.ioTs.mod.Type_[A, O, I] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clean")(codec.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.Type_[A, O, I]]
 
-@scala.inline
-def dictionary[D /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](domain: D, codomain: C): typings.ioTs.mod.RecordC[D, C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("dictionary")(domain.asInstanceOf[js.Any], codomain.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.RecordC[D, C]]
-@scala.inline
-def dictionary[D /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](domain: D, codomain: C, name: java.lang.String): typings.ioTs.mod.RecordC[D, C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("dictionary")(domain.asInstanceOf[js.Any], codomain.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.RecordC[D, C]]
+inline def dictionary[D /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](domain: D, codomain: C): typings.ioTs.mod.RecordC[D, C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("dictionary")(domain.asInstanceOf[js.Any], codomain.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.RecordC[D, C]]
+inline def dictionary[D /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](domain: D, codomain: C, name: java.lang.String): typings.ioTs.mod.RecordC[D, C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("dictionary")(domain.asInstanceOf[js.Any], codomain.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.RecordC[D, C]]
 
-@scala.inline
-def exact[C /* <: typings.ioTs.mod.HasProps */](codec: C): typings.ioTs.mod.ExactC[C] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exact")(codec.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.ExactC[C]]
-@scala.inline
-def exact[C /* <: typings.ioTs.mod.HasProps */](codec: C, name: java.lang.String): typings.ioTs.mod.ExactC[C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exact")(codec.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ExactC[C]]
+inline def exact[C /* <: typings.ioTs.mod.HasProps */](codec: C): typings.ioTs.mod.ExactC[C] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exact")(codec.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.ExactC[C]]
+inline def exact[C /* <: typings.ioTs.mod.HasProps */](codec: C, name: java.lang.String): typings.ioTs.mod.ExactC[C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exact")(codec.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ExactC[C]]
 
-@scala.inline
-def failure[T](value: js.Any, context: typings.ioTs.mod.Context): typings.fpTs.eitherMod.Either_[typings.ioTs.mod.Errors, T] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("failure")(value.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.fpTs.eitherMod.Either_[typings.ioTs.mod.Errors, T]]
-@scala.inline
-def failure[T](value: js.Any, context: typings.ioTs.mod.Context, message: java.lang.String): typings.fpTs.eitherMod.Either_[typings.ioTs.mod.Errors, T] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("failure")(value.asInstanceOf[js.Any], context.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[typings.fpTs.eitherMod.Either_[typings.ioTs.mod.Errors, T]]
+inline def failure[T](value: js.Any, context: typings.ioTs.mod.Context): typings.fpTs.eitherMod.Either_[typings.ioTs.mod.Errors, T] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("failure")(value.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.fpTs.eitherMod.Either_[typings.ioTs.mod.Errors, T]]
+inline def failure[T](value: js.Any, context: typings.ioTs.mod.Context, message: java.lang.String): typings.fpTs.eitherMod.Either_[typings.ioTs.mod.Errors, T] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("failure")(value.asInstanceOf[js.Any], context.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[typings.fpTs.eitherMod.Either_[typings.ioTs.mod.Errors, T]]
 
-@scala.inline
-def failures[T](errors: typings.ioTs.mod.Errors): typings.ioTs.mod.Validation[T] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("failures")(errors.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.Validation[T]]
+inline def failures[T](errors: typings.ioTs.mod.Errors): typings.ioTs.mod.Validation[T] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("failures")(errors.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.Validation[T]]
 
-@scala.inline
-def getContextEntry(key: java.lang.String, decoder: typings.ioTs.mod.Decoder[js.Any, js.Any]): typings.ioTs.mod.ContextEntry = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getContextEntry")(key.asInstanceOf[js.Any], decoder.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ContextEntry]
+inline def getContextEntry(key: java.lang.String, decoder: typings.ioTs.mod.Decoder[js.Any, js.Any]): typings.ioTs.mod.ContextEntry = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getContextEntry")(key.asInstanceOf[js.Any], decoder.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ContextEntry]
 
-@scala.inline
-def getDefaultContext(decoder: typings.ioTs.mod.Decoder[js.Any, js.Any]): typings.ioTs.mod.Context = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultContext")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.Context]
+inline def getDefaultContext(decoder: typings.ioTs.mod.Decoder[js.Any, js.Any]): typings.ioTs.mod.Context = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultContext")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.Context]
 
-@scala.inline
-def getFunctionName(f: js.Function): java.lang.String = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionName")(f.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def getFunctionName(f: js.Function): java.lang.String = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionName")(f.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
-@scala.inline
-def getValidationError(value: js.Any, context: typings.ioTs.mod.Context): typings.ioTs.mod.ValidationError = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(value.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ValidationError]
+inline def getValidationError(value: js.Any, context: typings.ioTs.mod.Context): typings.ioTs.mod.ValidationError = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(value.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ValidationError]
 
-@scala.inline
-def identity[A](a: A): A = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("identity")(a.asInstanceOf[js.Any]).asInstanceOf[A]
+inline def identity[A](a: A): A = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("identity")(a.asInstanceOf[js.Any]).asInstanceOf[A]
 
-@scala.inline
-def interface[P /* <: typings.ioTs.mod.Props */](props: P): typings.ioTs.mod.TypeC[P] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("interface")(props.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TypeC[P]]
-@scala.inline
-def interface[P /* <: typings.ioTs.mod.Props */](props: P, name: java.lang.String): typings.ioTs.mod.TypeC[P] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("interface")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TypeC[P]]
+inline def interface[P /* <: typings.ioTs.mod.Props */](props: P): typings.ioTs.mod.TypeC[P] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("interface")(props.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TypeC[P]]
+inline def interface[P /* <: typings.ioTs.mod.Props */](props: P, name: java.lang.String): typings.ioTs.mod.TypeC[P] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("interface")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TypeC[P]]
 
-@scala.inline
-def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple2[A, B]): typings.ioTs.mod.IntersectionC[js.Tuple2[A, B]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple2[A, B]]]
-@scala.inline
-def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple2[A, B], name: java.lang.String): typings.ioTs.mod.IntersectionC[js.Tuple2[A, B]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple2[A, B]]]
-@scala.inline
-def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple3[A, B, C]): typings.ioTs.mod.IntersectionC[js.Tuple3[A, B, C]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple3[A, B, C]]]
-@scala.inline
-def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple3[A, B, C], name: java.lang.String): typings.ioTs.mod.IntersectionC[js.Tuple3[A, B, C]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple3[A, B, C]]]
-@scala.inline
-def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple4[A, B, C, D]): typings.ioTs.mod.IntersectionC[js.Tuple4[A, B, C, D]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple4[A, B, C, D]]]
-@scala.inline
-def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple4[A, B, C, D], name: java.lang.String): typings.ioTs.mod.IntersectionC[js.Tuple4[A, B, C, D]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple4[A, B, C, D]]]
-@scala.inline
-def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */, E /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple5[A, B, C, D, E]): typings.ioTs.mod.IntersectionC[js.Tuple5[A, B, C, D, E]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple5[A, B, C, D, E]]]
-@scala.inline
-def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */, E /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple5[A, B, C, D, E], name: java.lang.String): typings.ioTs.mod.IntersectionC[js.Tuple5[A, B, C, D, E]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple5[A, B, C, D, E]]]
+inline def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple2[A, B]): typings.ioTs.mod.IntersectionC[js.Tuple2[A, B]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple2[A, B]]]
+inline def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple2[A, B], name: java.lang.String): typings.ioTs.mod.IntersectionC[js.Tuple2[A, B]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple2[A, B]]]
+inline def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple3[A, B, C]): typings.ioTs.mod.IntersectionC[js.Tuple3[A, B, C]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple3[A, B, C]]]
+inline def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple3[A, B, C], name: java.lang.String): typings.ioTs.mod.IntersectionC[js.Tuple3[A, B, C]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple3[A, B, C]]]
+inline def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple4[A, B, C, D]): typings.ioTs.mod.IntersectionC[js.Tuple4[A, B, C, D]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple4[A, B, C, D]]]
+inline def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple4[A, B, C, D], name: java.lang.String): typings.ioTs.mod.IntersectionC[js.Tuple4[A, B, C, D]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple4[A, B, C, D]]]
+inline def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */, E /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple5[A, B, C, D, E]): typings.ioTs.mod.IntersectionC[js.Tuple5[A, B, C, D, E]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple5[A, B, C, D, E]]]
+inline def intersection[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */, E /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple5[A, B, C, D, E], name: java.lang.String): typings.ioTs.mod.IntersectionC[js.Tuple5[A, B, C, D, E]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.IntersectionC[js.Tuple5[A, B, C, D, E]]]
 
-@scala.inline
-def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D): typings.ioTs.mod.KeyofC[D] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("keyof")(keys.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.KeyofC[D]]
-@scala.inline
-def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D, name: java.lang.String): typings.ioTs.mod.KeyofC[D] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("keyof")(keys.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.KeyofC[D]]
+inline def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D): typings.ioTs.mod.KeyofC[D] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("keyof")(keys.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.KeyofC[D]]
+inline def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D, name: java.lang.String): typings.ioTs.mod.KeyofC[D] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("keyof")(keys.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.KeyofC[D]]
 
-@scala.inline
-def literal(value: java.lang.String): typings.ioTs.mod.LiteralC[java.lang.String] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.LiteralC[java.lang.String]]
-@scala.inline
-def literal(value: java.lang.String, name: java.lang.String): typings.ioTs.mod.LiteralC[java.lang.String] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.LiteralC[java.lang.String]]
-@scala.inline
-def literal(value: scala.Boolean): typings.ioTs.mod.LiteralC[scala.Boolean] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.LiteralC[scala.Boolean]]
-@scala.inline
-def literal(value: scala.Boolean, name: java.lang.String): typings.ioTs.mod.LiteralC[scala.Boolean] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.LiteralC[scala.Boolean]]
-@scala.inline
-def literal(value: scala.Double): typings.ioTs.mod.LiteralC[scala.Double] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.LiteralC[scala.Double]]
-@scala.inline
-def literal(value: scala.Double, name: java.lang.String): typings.ioTs.mod.LiteralC[scala.Double] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.LiteralC[scala.Double]]
+inline def literal(value: java.lang.String): typings.ioTs.mod.LiteralC[java.lang.String] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.LiteralC[java.lang.String]]
+inline def literal(value: java.lang.String, name: java.lang.String): typings.ioTs.mod.LiteralC[java.lang.String] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.LiteralC[java.lang.String]]
+inline def literal(value: scala.Boolean): typings.ioTs.mod.LiteralC[scala.Boolean] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.LiteralC[scala.Boolean]]
+inline def literal(value: scala.Boolean, name: java.lang.String): typings.ioTs.mod.LiteralC[scala.Boolean] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.LiteralC[scala.Boolean]]
+inline def literal(value: scala.Double): typings.ioTs.mod.LiteralC[scala.Double] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.LiteralC[scala.Double]]
+inline def literal(value: scala.Double, name: java.lang.String): typings.ioTs.mod.LiteralC[scala.Double] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.LiteralC[scala.Double]]
 
-@scala.inline
-def never: typings.ioTs.mod.NeverC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("never").asInstanceOf[typings.ioTs.mod.NeverC]
+inline def never: typings.ioTs.mod.NeverC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("never").asInstanceOf[typings.ioTs.mod.NeverC]
 
-@scala.inline
-def `null`: typings.ioTs.mod.NullC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("null").asInstanceOf[typings.ioTs.mod.NullC]
+inline def `null`: typings.ioTs.mod.NullC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("null").asInstanceOf[typings.ioTs.mod.NullC]
 
-@scala.inline
-def nullType: typings.ioTs.mod.NullC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("nullType").asInstanceOf[typings.ioTs.mod.NullC]
+inline def nullType: typings.ioTs.mod.NullC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("nullType").asInstanceOf[typings.ioTs.mod.NullC]
 
-@scala.inline
-def number: typings.ioTs.mod.NumberC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("number").asInstanceOf[typings.ioTs.mod.NumberC]
+inline def number: typings.ioTs.mod.NumberC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("number").asInstanceOf[typings.ioTs.mod.NumberC]
 
-@scala.inline
-def `object`: typings.ioTs.mod.ObjectC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("object").asInstanceOf[typings.ioTs.mod.ObjectC]
+inline def `object`: typings.ioTs.mod.ObjectC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("object").asInstanceOf[typings.ioTs.mod.ObjectC]
 
-@scala.inline
-def partial[P /* <: typings.ioTs.mod.Props */](props: P): typings.ioTs.mod.PartialC[P] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("partial")(props.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.PartialC[P]]
-@scala.inline
-def partial[P /* <: typings.ioTs.mod.Props */](props: P, name: java.lang.String): typings.ioTs.mod.PartialC[P] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("partial")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.PartialC[P]]
+inline def partial[P /* <: typings.ioTs.mod.Props */](props: P): typings.ioTs.mod.PartialC[P] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("partial")(props.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.PartialC[P]]
+inline def partial[P /* <: typings.ioTs.mod.Props */](props: P, name: java.lang.String): typings.ioTs.mod.PartialC[P] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("partial")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.PartialC[P]]
 
-@scala.inline
-def readonly[C /* <: typings.ioTs.mod.Mixed_ */](codec: C): typings.ioTs.mod.ReadonlyC[C] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readonly")(codec.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.ReadonlyC[C]]
-@scala.inline
-def readonly[C /* <: typings.ioTs.mod.Mixed_ */](codec: C, name: java.lang.String): typings.ioTs.mod.ReadonlyC[C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readonly")(codec.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ReadonlyC[C]]
+inline def readonly[C /* <: typings.ioTs.mod.Mixed_ */](codec: C): typings.ioTs.mod.ReadonlyC[C] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readonly")(codec.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.ReadonlyC[C]]
+inline def readonly[C /* <: typings.ioTs.mod.Mixed_ */](codec: C, name: java.lang.String): typings.ioTs.mod.ReadonlyC[C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readonly")(codec.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ReadonlyC[C]]
 
-@scala.inline
-def readonlyArray[C /* <: typings.ioTs.mod.Mixed_ */](item: C): typings.ioTs.mod.ReadonlyArrayC[C] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readonlyArray")(item.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.ReadonlyArrayC[C]]
-@scala.inline
-def readonlyArray[C /* <: typings.ioTs.mod.Mixed_ */](item: C, name: java.lang.String): typings.ioTs.mod.ReadonlyArrayC[C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readonlyArray")(item.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ReadonlyArrayC[C]]
+inline def readonlyArray[C /* <: typings.ioTs.mod.Mixed_ */](item: C): typings.ioTs.mod.ReadonlyArrayC[C] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readonlyArray")(item.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.ReadonlyArrayC[C]]
+inline def readonlyArray[C /* <: typings.ioTs.mod.Mixed_ */](item: C, name: java.lang.String): typings.ioTs.mod.ReadonlyArrayC[C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readonlyArray")(item.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ReadonlyArrayC[C]]
 
-@scala.inline
-def record[D /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](domain: D, codomain: C): typings.ioTs.mod.RecordC[D, C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("record")(domain.asInstanceOf[js.Any], codomain.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.RecordC[D, C]]
-@scala.inline
-def record[D /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](domain: D, codomain: C, name: java.lang.String): typings.ioTs.mod.RecordC[D, C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("record")(domain.asInstanceOf[js.Any], codomain.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.RecordC[D, C]]
+inline def record[D /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](domain: D, codomain: C): typings.ioTs.mod.RecordC[D, C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("record")(domain.asInstanceOf[js.Any], codomain.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.RecordC[D, C]]
+inline def record[D /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](domain: D, codomain: C, name: java.lang.String): typings.ioTs.mod.RecordC[D, C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("record")(domain.asInstanceOf[js.Any], codomain.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.RecordC[D, C]]
 
-@scala.inline
-def recursion[A, O, I, C /* <: typings.ioTs.mod.Type_[A, O, I] */](name: java.lang.String, definition: js.Function1[/* self */ C, C]): typings.ioTs.mod.RecursiveType[C, A, O, I] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("recursion")(name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.RecursiveType[C, A, O, I]]
+inline def recursion[A, O, I, C /* <: typings.ioTs.mod.Type_[A, O, I] */](name: java.lang.String, definition: js.Function1[/* self */ C, C]): typings.ioTs.mod.RecursiveType[C, A, O, I] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("recursion")(name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.RecursiveType[C, A, O, I]]
 
-@scala.inline
-def refinement[C /* <: typings.ioTs.mod.Any_ */](codec: C, predicate: typings.fpTs.functionMod.Predicate[typings.ioTs.mod.TypeOf[C]]): typings.ioTs.mod.RefinementC[C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(codec.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.RefinementC[C]]
-@scala.inline
-def refinement[C /* <: typings.ioTs.mod.Any_ */](
+inline def refinement[C /* <: typings.ioTs.mod.Any_ */](codec: C, predicate: typings.fpTs.functionMod.Predicate[typings.ioTs.mod.TypeOf[C]]): typings.ioTs.mod.RefinementC[C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(codec.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.RefinementC[C]]
+inline def refinement[C /* <: typings.ioTs.mod.Any_ */](
   codec: C,
   predicate: typings.fpTs.functionMod.Predicate[typings.ioTs.mod.TypeOf[C]],
   name: java.lang.String
 ): typings.ioTs.mod.RefinementC[C] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(codec.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.RefinementC[C]]
 
-@scala.inline
-def strict[P /* <: typings.ioTs.mod.Props */](props: P): typings.ioTs.mod.ExactC[typings.ioTs.mod.TypeC[P]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("strict")(props.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.ExactC[typings.ioTs.mod.TypeC[P]]]
-@scala.inline
-def strict[P /* <: typings.ioTs.mod.Props */](props: P, name: java.lang.String): typings.ioTs.mod.ExactC[typings.ioTs.mod.TypeC[P]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("strict")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ExactC[typings.ioTs.mod.TypeC[P]]]
+inline def strict[P /* <: typings.ioTs.mod.Props */](props: P): typings.ioTs.mod.ExactC[typings.ioTs.mod.TypeC[P]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("strict")(props.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.ExactC[typings.ioTs.mod.TypeC[P]]]
+inline def strict[P /* <: typings.ioTs.mod.Props */](props: P, name: java.lang.String): typings.ioTs.mod.ExactC[typings.ioTs.mod.TypeC[P]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("strict")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.ExactC[typings.ioTs.mod.TypeC[P]]]
 
-@scala.inline
-def string: typings.ioTs.mod.StringC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("string").asInstanceOf[typings.ioTs.mod.StringC]
+inline def string: typings.ioTs.mod.StringC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("string").asInstanceOf[typings.ioTs.mod.StringC]
 
-@scala.inline
-def success[T](value: T): typings.ioTs.mod.Validation[T] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("success")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.Validation[T]]
+inline def success[T](value: T): typings.ioTs.mod.Validation[T] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("success")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.Validation[T]]
 
-@scala.inline
-def taggedUnion[Tag /* <: java.lang.String */, CS /* <: Array[typings.ioTs.mod.Mixed_] */](tag: Tag, codecs: CS): typings.ioTs.mod.TaggedUnionC[Tag, CS] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("taggedUnion")(tag.asInstanceOf[js.Any], codecs.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TaggedUnionC[Tag, CS]]
-@scala.inline
-def taggedUnion[Tag /* <: java.lang.String */, CS /* <: Array[typings.ioTs.mod.Mixed_] */](tag: Tag, codecs: CS, name: java.lang.String): typings.ioTs.mod.TaggedUnionC[Tag, CS] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("taggedUnion")(tag.asInstanceOf[js.Any], codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TaggedUnionC[Tag, CS]]
+inline def taggedUnion[Tag /* <: java.lang.String */, CS /* <: Array[typings.ioTs.mod.Mixed_] */](tag: Tag, codecs: CS): typings.ioTs.mod.TaggedUnionC[Tag, CS] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("taggedUnion")(tag.asInstanceOf[js.Any], codecs.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TaggedUnionC[Tag, CS]]
+inline def taggedUnion[Tag /* <: java.lang.String */, CS /* <: Array[typings.ioTs.mod.Mixed_] */](tag: Tag, codecs: CS, name: java.lang.String): typings.ioTs.mod.TaggedUnionC[Tag, CS] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("taggedUnion")(tag.asInstanceOf[js.Any], codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TaggedUnionC[Tag, CS]]
 
-@scala.inline
-def tuple[A /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Array[A]): typings.ioTs.mod.TupleC[js.Array[A]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TupleC[js.Array[A]]]
-@scala.inline
-def tuple[A /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Array[A], name: java.lang.String): typings.ioTs.mod.TupleC[js.Array[A]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TupleC[js.Array[A]]]
-@scala.inline
-def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple2[A, B]): typings.ioTs.mod.TupleC[js.Tuple2[A, B]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple2[A, B]]]
-@scala.inline
-def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple2[A, B], name: java.lang.String): typings.ioTs.mod.TupleC[js.Tuple2[A, B]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple2[A, B]]]
-@scala.inline
-def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple3[A, B, C]): typings.ioTs.mod.TupleC[js.Tuple3[A, B, C]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple3[A, B, C]]]
-@scala.inline
-def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple3[A, B, C], name: java.lang.String): typings.ioTs.mod.TupleC[js.Tuple3[A, B, C]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple3[A, B, C]]]
-@scala.inline
-def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple4[A, B, C, D]): typings.ioTs.mod.TupleC[js.Tuple4[A, B, C, D]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple4[A, B, C, D]]]
-@scala.inline
-def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple4[A, B, C, D], name: java.lang.String): typings.ioTs.mod.TupleC[js.Tuple4[A, B, C, D]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple4[A, B, C, D]]]
-@scala.inline
-def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */, E /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple5[A, B, C, D, E]): typings.ioTs.mod.TupleC[js.Tuple5[A, B, C, D, E]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple5[A, B, C, D, E]]]
-@scala.inline
-def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */, E /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple5[A, B, C, D, E], name: java.lang.String): typings.ioTs.mod.TupleC[js.Tuple5[A, B, C, D, E]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple5[A, B, C, D, E]]]
+inline def tuple[A /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Array[A]): typings.ioTs.mod.TupleC[js.Array[A]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TupleC[js.Array[A]]]
+inline def tuple[A /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Array[A], name: java.lang.String): typings.ioTs.mod.TupleC[js.Array[A]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TupleC[js.Array[A]]]
+inline def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple2[A, B]): typings.ioTs.mod.TupleC[js.Tuple2[A, B]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple2[A, B]]]
+inline def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple2[A, B], name: java.lang.String): typings.ioTs.mod.TupleC[js.Tuple2[A, B]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple2[A, B]]]
+inline def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple3[A, B, C]): typings.ioTs.mod.TupleC[js.Tuple3[A, B, C]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple3[A, B, C]]]
+inline def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple3[A, B, C], name: java.lang.String): typings.ioTs.mod.TupleC[js.Tuple3[A, B, C]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple3[A, B, C]]]
+inline def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple4[A, B, C, D]): typings.ioTs.mod.TupleC[js.Tuple4[A, B, C, D]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple4[A, B, C, D]]]
+inline def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple4[A, B, C, D], name: java.lang.String): typings.ioTs.mod.TupleC[js.Tuple4[A, B, C, D]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple4[A, B, C, D]]]
+inline def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */, E /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple5[A, B, C, D, E]): typings.ioTs.mod.TupleC[js.Tuple5[A, B, C, D, E]] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple5[A, B, C, D, E]]]
+inline def tuple[A /* <: typings.ioTs.mod.Mixed_ */, B /* <: typings.ioTs.mod.Mixed_ */, C /* <: typings.ioTs.mod.Mixed_ */, D /* <: typings.ioTs.mod.Mixed_ */, E /* <: typings.ioTs.mod.Mixed_ */](codecs: js.Tuple5[A, B, C, D, E], name: java.lang.String): typings.ioTs.mod.TupleC[js.Tuple5[A, B, C, D, E]] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TupleC[js.Tuple5[A, B, C, D, E]]]
 
-@scala.inline
-def `type`[P /* <: typings.ioTs.mod.Props */](props: P): typings.ioTs.mod.TypeC[P] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("type")(props.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TypeC[P]]
-@scala.inline
-def `type`[P /* <: typings.ioTs.mod.Props */](props: P, name: java.lang.String): typings.ioTs.mod.TypeC[P] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("type")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TypeC[P]]
+inline def `type`[P /* <: typings.ioTs.mod.Props */](props: P): typings.ioTs.mod.TypeC[P] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("type")(props.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.TypeC[P]]
+inline def `type`[P /* <: typings.ioTs.mod.Props */](props: P, name: java.lang.String): typings.ioTs.mod.TypeC[P] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("type")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.TypeC[P]]
 
-@scala.inline
-def undefined: typings.ioTs.mod.UndefinedC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("undefined").asInstanceOf[typings.ioTs.mod.UndefinedC]
+inline def undefined: typings.ioTs.mod.UndefinedC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("undefined").asInstanceOf[typings.ioTs.mod.UndefinedC]
 
-@scala.inline
-def union[CS /* <: Array[typings.ioTs.mod.Mixed_] */](codecs: CS): typings.ioTs.mod.UnionC[CS] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("union")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.UnionC[CS]]
-@scala.inline
-def union[CS /* <: Array[typings.ioTs.mod.Mixed_] */](codecs: CS, name: java.lang.String): typings.ioTs.mod.UnionC[CS] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("union")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.UnionC[CS]]
+inline def union[CS /* <: Array[typings.ioTs.mod.Mixed_] */](codecs: CS): typings.ioTs.mod.UnionC[CS] = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("union")(codecs.asInstanceOf[js.Any]).asInstanceOf[typings.ioTs.mod.UnionC[CS]]
+inline def union[CS /* <: Array[typings.ioTs.mod.Mixed_] */](codecs: CS, name: java.lang.String): typings.ioTs.mod.UnionC[CS] = (typings.ioTs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("union")(codecs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.ioTs.mod.UnionC[CS]]
 
-@scala.inline
-def unknown: typings.ioTs.mod.UnknownC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("unknown").asInstanceOf[typings.ioTs.mod.UnknownC]
+inline def unknown: typings.ioTs.mod.UnknownC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("unknown").asInstanceOf[typings.ioTs.mod.UnknownC]
 
-@scala.inline
-def void: typings.ioTs.mod.VoidC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("void").asInstanceOf[typings.ioTs.mod.VoidC]
+inline def void: typings.ioTs.mod.VoidC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("void").asInstanceOf[typings.ioTs.mod.VoidC]
 
-@scala.inline
-def voidType: typings.ioTs.mod.VoidC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("voidType").asInstanceOf[typings.ioTs.mod.VoidC]
+inline def voidType: typings.ioTs.mod.VoidC = typings.ioTs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("voidType").asInstanceOf[typings.ioTs.mod.VoidC]
 
 type AnyC = typings.ioTs.mod.AnyType
 

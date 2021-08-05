@@ -26,17 +26,14 @@ object typesPathRequiredExceptionMod {
   }
   object PathRequiredException {
     
-    @scala.inline
-    def apply(): PathRequiredException = {
+    inline def apply(): PathRequiredException = {
       val __obj = js.Dynamic.literal(name = "PathRequiredException")
       __obj.asInstanceOf[PathRequiredException]
     }
     
-    @scala.inline
-    implicit class PathRequiredExceptionMutableBuilder[Self <: PathRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: PathRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PathRequiredException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PathRequiredException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

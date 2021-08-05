@@ -34,8 +34,7 @@ trait DockerContainerStatsData extends StObject {
 }
 object DockerContainerStatsData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blockIO: R,
     cpu_percent: Double,
     cpu_stats: js.Any,
@@ -53,43 +52,30 @@ object DockerContainerStatsData {
     __obj.asInstanceOf[DockerContainerStatsData]
   }
   
-  @scala.inline
-  implicit class DockerContainerStatsDataMutableBuilder[Self <: DockerContainerStatsData] (val x: Self) extends AnyVal {
+  extension [Self <: DockerContainerStatsData](x: Self) {
     
-    @scala.inline
-    def setBlockIO(value: R): Self = StObject.set(x, "blockIO", value.asInstanceOf[js.Any])
+    inline def setBlockIO(value: R): Self = StObject.set(x, "blockIO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpu_percent(value: Double): Self = StObject.set(x, "cpu_percent", value.asInstanceOf[js.Any])
+    inline def setCpu_percent(value: Double): Self = StObject.set(x, "cpu_percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpu_stats(value: js.Any): Self = StObject.set(x, "cpu_stats", value.asInstanceOf[js.Any])
+    inline def setCpu_stats(value: js.Any): Self = StObject.set(x, "cpu_stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMem_limit(value: Double): Self = StObject.set(x, "mem_limit", value.asInstanceOf[js.Any])
+    inline def setMem_limit(value: Double): Self = StObject.set(x, "mem_limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMem_percent(value: Double): Self = StObject.set(x, "mem_percent", value.asInstanceOf[js.Any])
+    inline def setMem_percent(value: Double): Self = StObject.set(x, "mem_percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMem_usage(value: Double): Self = StObject.set(x, "mem_usage", value.asInstanceOf[js.Any])
+    inline def setMem_usage(value: Double): Self = StObject.set(x, "mem_usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemory_stats(value: js.Any): Self = StObject.set(x, "memory_stats", value.asInstanceOf[js.Any])
+    inline def setMemory_stats(value: js.Any): Self = StObject.set(x, "memory_stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetIO(value: Rx): Self = StObject.set(x, "netIO", value.asInstanceOf[js.Any])
+    inline def setNetIO(value: Rx): Self = StObject.set(x, "netIO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworks(value: js.Any): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
+    inline def setNetworks(value: js.Any): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecpu_stats(value: js.Any): Self = StObject.set(x, "precpu_stats", value.asInstanceOf[js.Any])
+    inline def setPrecpu_stats(value: js.Any): Self = StObject.set(x, "precpu_stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartCount(value: Double): Self = StObject.set(x, "restartCount", value.asInstanceOf[js.Any])
+    inline def setRestartCount(value: Double): Self = StObject.set(x, "restartCount", value.asInstanceOf[js.Any])
   }
 }

@@ -11,6 +11,5 @@ object asyncCsvBooleans {
   sealed trait `false`
     extends StObject
        with _ColumnOption
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

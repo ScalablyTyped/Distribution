@@ -14,20 +14,16 @@ trait NullableBooleanSchema
 }
 object NullableBooleanSchema {
   
-  @scala.inline
-  def apply(`type`: js.Array[boolean | `null`]): NullableBooleanSchema = {
+  inline def apply(`type`: js.Array[boolean | `null`]): NullableBooleanSchema = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NullableBooleanSchema]
   }
   
-  @scala.inline
-  implicit class NullableBooleanSchemaMutableBuilder[Self <: NullableBooleanSchema] (val x: Self) extends AnyVal {
+  extension [Self <: NullableBooleanSchema](x: Self) {
     
-    @scala.inline
-    def setType(value: js.Array[boolean | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Array[boolean | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: (boolean | `null`)*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: (boolean | `null`)*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

@@ -21,28 +21,21 @@ trait IncludeThroughOptions extends StObject {
 }
 object IncludeThroughOptions {
   
-  @scala.inline
-  def apply(): IncludeThroughOptions = {
+  inline def apply(): IncludeThroughOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncludeThroughOptions]
   }
   
-  @scala.inline
-  implicit class IncludeThroughOptionsMutableBuilder[Self <: IncludeThroughOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeThroughOptions](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setWhere(value: AnyWhereOptions): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: AnyWhereOptions): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

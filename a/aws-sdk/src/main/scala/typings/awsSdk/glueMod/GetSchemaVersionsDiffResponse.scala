@@ -13,19 +13,15 @@ trait GetSchemaVersionsDiffResponse extends StObject {
 }
 object GetSchemaVersionsDiffResponse {
   
-  @scala.inline
-  def apply(): GetSchemaVersionsDiffResponse = {
+  inline def apply(): GetSchemaVersionsDiffResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSchemaVersionsDiffResponse]
   }
   
-  @scala.inline
-  implicit class GetSchemaVersionsDiffResponseMutableBuilder[Self <: GetSchemaVersionsDiffResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSchemaVersionsDiffResponse](x: Self) {
     
-    @scala.inline
-    def setDiff(value: SchemaDefinitionDiff): Self = StObject.set(x, "Diff", value.asInstanceOf[js.Any])
+    inline def setDiff(value: SchemaDefinitionDiff): Self = StObject.set(x, "Diff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiffUndefined: Self = StObject.set(x, "Diff", js.undefined)
+    inline def setDiffUndefined: Self = StObject.set(x, "Diff", js.undefined)
   }
 }

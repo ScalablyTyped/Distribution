@@ -14,31 +14,23 @@ trait KeyValue extends StObject {
 }
 object KeyValue {
   
-  @scala.inline
-  def apply(): KeyValue = {
+  inline def apply(): KeyValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyValue]
   }
   
-  @scala.inline
-  implicit class KeyValueMutableBuilder[Self <: KeyValue] (val x: Self) extends AnyVal {
+  extension [Self <: KeyValue](x: Self) {
     
-    @scala.inline
-    def setKey(value: NullableOption[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: NullableOption[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNull: Self = StObject.set(x, "key", null)
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

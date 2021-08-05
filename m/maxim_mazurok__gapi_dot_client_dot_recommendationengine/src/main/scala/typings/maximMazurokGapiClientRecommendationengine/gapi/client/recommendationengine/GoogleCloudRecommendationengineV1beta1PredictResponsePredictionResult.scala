@@ -22,29 +22,23 @@ trait GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult exte
 }
 object GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResultMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setItemMetadata(
+    inline def setItemMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "itemMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemMetadataUndefined: Self = StObject.set(x, "itemMetadata", js.undefined)
+    inline def setItemMetadataUndefined: Self = StObject.set(x, "itemMetadata", js.undefined)
   }
 }

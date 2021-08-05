@@ -10,19 +10,15 @@ trait PutClusterCapacityProvidersResponse extends StObject {
 }
 object PutClusterCapacityProvidersResponse {
   
-  @scala.inline
-  def apply(): PutClusterCapacityProvidersResponse = {
+  inline def apply(): PutClusterCapacityProvidersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutClusterCapacityProvidersResponse]
   }
   
-  @scala.inline
-  implicit class PutClusterCapacityProvidersResponseMutableBuilder[Self <: PutClusterCapacityProvidersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutClusterCapacityProvidersResponse](x: Self) {
     
-    @scala.inline
-    def setCluster(value: Cluster): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: Cluster): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
   }
 }

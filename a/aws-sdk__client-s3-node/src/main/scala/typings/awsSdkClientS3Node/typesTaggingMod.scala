@@ -18,20 +18,16 @@ object typesTaggingMod {
   }
   object Tagging {
     
-    @scala.inline
-    def apply(TagSet: js.Array[Tag] | Iterable[Tag]): Tagging = {
+    inline def apply(TagSet: js.Array[Tag] | Iterable[Tag]): Tagging = {
       val __obj = js.Dynamic.literal(TagSet = TagSet.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tagging]
     }
     
-    @scala.inline
-    implicit class TaggingMutableBuilder[Self <: Tagging] (val x: Self) extends AnyVal {
+    extension [Self <: Tagging](x: Self) {
       
-      @scala.inline
-      def setTagSet(value: js.Array[Tag] | Iterable[Tag]): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
+      inline def setTagSet(value: js.Array[Tag] | Iterable[Tag]): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagSetVarargs(value: Tag*): Self = StObject.set(x, "TagSet", js.Array(value :_*))
+      inline def setTagSetVarargs(value: Tag*): Self = StObject.set(x, "TagSet", js.Array(value :_*))
     }
   }
   
@@ -47,20 +43,16 @@ object typesTaggingMod {
   }
   object UnmarshalledTagging {
     
-    @scala.inline
-    def apply(TagSet: js.Array[UnmarshalledTag]): UnmarshalledTagging = {
+    inline def apply(TagSet: js.Array[UnmarshalledTag]): UnmarshalledTagging = {
       val __obj = js.Dynamic.literal(TagSet = TagSet.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledTagging]
     }
     
-    @scala.inline
-    implicit class UnmarshalledTaggingMutableBuilder[Self <: UnmarshalledTagging] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledTagging](x: Self) {
       
-      @scala.inline
-      def setTagSet(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
+      inline def setTagSet(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagSetVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "TagSet", js.Array(value :_*))
+      inline def setTagSetVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "TagSet", js.Array(value :_*))
     }
   }
 }

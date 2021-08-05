@@ -10,19 +10,15 @@ trait PlotVennAnimationOptions extends StObject {
 }
 object PlotVennAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotVennAnimationOptions = {
+  inline def apply(): PlotVennAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotVennAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotVennAnimationOptionsMutableBuilder[Self <: PlotVennAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotVennAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

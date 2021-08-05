@@ -21,22 +21,17 @@ trait Pastdue extends StObject {
 }
 object Pastdue {
   
-  @scala.inline
-  def apply(disabled_reason: listed | rejectedDotlisted | under_review, past_due: js.Array[String]): Pastdue = {
+  inline def apply(disabled_reason: listed | rejectedDotlisted | under_review, past_due: js.Array[String]): Pastdue = {
     val __obj = js.Dynamic.literal(disabled_reason = disabled_reason.asInstanceOf[js.Any], past_due = past_due.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pastdue]
   }
   
-  @scala.inline
-  implicit class PastdueMutableBuilder[Self <: Pastdue] (val x: Self) extends AnyVal {
+  extension [Self <: Pastdue](x: Self) {
     
-    @scala.inline
-    def setDisabled_reason(value: listed | rejectedDotlisted | under_review): Self = StObject.set(x, "disabled_reason", value.asInstanceOf[js.Any])
+    inline def setDisabled_reason(value: listed | rejectedDotlisted | under_review): Self = StObject.set(x, "disabled_reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPast_due(value: js.Array[String]): Self = StObject.set(x, "past_due", value.asInstanceOf[js.Any])
+    inline def setPast_due(value: js.Array[String]): Self = StObject.set(x, "past_due", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPast_dueVarargs(value: String*): Self = StObject.set(x, "past_due", js.Array(value :_*))
+    inline def setPast_dueVarargs(value: String*): Self = StObject.set(x, "past_due", js.Array(value :_*))
   }
 }

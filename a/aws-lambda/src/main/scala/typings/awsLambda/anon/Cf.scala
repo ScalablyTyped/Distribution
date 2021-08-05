@@ -10,16 +10,13 @@ trait Cf extends StObject {
 }
 object Cf {
   
-  @scala.inline
-  def apply(cf: CloudFrontEventrequestClo): Cf = {
+  inline def apply(cf: CloudFrontEventrequestClo): Cf = {
     val __obj = js.Dynamic.literal(cf = cf.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cf]
   }
   
-  @scala.inline
-  implicit class CfMutableBuilder[Self <: Cf] (val x: Self) extends AnyVal {
+  extension [Self <: Cf](x: Self) {
     
-    @scala.inline
-    def setCf(value: CloudFrontEventrequestClo): Self = StObject.set(x, "cf", value.asInstanceOf[js.Any])
+    inline def setCf(value: CloudFrontEventrequestClo): Self = StObject.set(x, "cf", value.asInstanceOf[js.Any])
   }
 }

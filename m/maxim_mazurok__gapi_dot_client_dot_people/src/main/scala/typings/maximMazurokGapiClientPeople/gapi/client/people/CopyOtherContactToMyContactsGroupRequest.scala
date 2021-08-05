@@ -22,34 +22,25 @@ trait CopyOtherContactToMyContactsGroupRequest extends StObject {
 }
 object CopyOtherContactToMyContactsGroupRequest {
   
-  @scala.inline
-  def apply(): CopyOtherContactToMyContactsGroupRequest = {
+  inline def apply(): CopyOtherContactToMyContactsGroupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyOtherContactToMyContactsGroupRequest]
   }
   
-  @scala.inline
-  implicit class CopyOtherContactToMyContactsGroupRequestMutableBuilder[Self <: CopyOtherContactToMyContactsGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CopyOtherContactToMyContactsGroupRequest](x: Self) {
     
-    @scala.inline
-    def setCopyMask(value: String): Self = StObject.set(x, "copyMask", value.asInstanceOf[js.Any])
+    inline def setCopyMask(value: String): Self = StObject.set(x, "copyMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyMaskUndefined: Self = StObject.set(x, "copyMask", js.undefined)
+    inline def setCopyMaskUndefined: Self = StObject.set(x, "copyMask", js.undefined)
     
-    @scala.inline
-    def setReadMask(value: String): Self = StObject.set(x, "readMask", value.asInstanceOf[js.Any])
+    inline def setReadMask(value: String): Self = StObject.set(x, "readMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadMaskUndefined: Self = StObject.set(x, "readMask", js.undefined)
+    inline def setReadMaskUndefined: Self = StObject.set(x, "readMask", js.undefined)
     
-    @scala.inline
-    def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

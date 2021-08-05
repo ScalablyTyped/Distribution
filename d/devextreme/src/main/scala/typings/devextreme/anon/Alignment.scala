@@ -38,76 +38,53 @@ trait Alignment extends StObject {
 }
 object Alignment {
   
-  @scala.inline
-  def apply(): Alignment = {
+  inline def apply(): Alignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Alignment]
   }
   
-  @scala.inline
-  implicit class AlignmentMutableBuilder[Self <: Alignment] (val x: Self) extends AnyVal {
+  extension [Self <: Alignment](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: center | left | right): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: center | left | right): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    @scala.inline
-    def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
-    @scala.inline
-    def setCustomizeText(value: /* itemInfo */ Value => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
+    inline def setCustomizeText(value: /* itemInfo */ Value => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
+    inline def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
     
-    @scala.inline
-    def setDisplayFormat(value: String): Self = StObject.set(x, "displayFormat", value.asInstanceOf[js.Any])
+    inline def setDisplayFormat(value: String): Self = StObject.set(x, "displayFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFormatUndefined: Self = StObject.set(x, "displayFormat", js.undefined)
+    inline def setDisplayFormatUndefined: Self = StObject.set(x, "displayFormat", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setShowInColumn(value: String): Self = StObject.set(x, "showInColumn", value.asInstanceOf[js.Any])
+    inline def setShowInColumn(value: String): Self = StObject.set(x, "showInColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowInColumnUndefined: Self = StObject.set(x, "showInColumn", js.undefined)
+    inline def setShowInColumnUndefined: Self = StObject.set(x, "showInColumn", js.undefined)
     
-    @scala.inline
-    def setSkipEmptyValues(value: Boolean): Self = StObject.set(x, "skipEmptyValues", value.asInstanceOf[js.Any])
+    inline def setSkipEmptyValues(value: Boolean): Self = StObject.set(x, "skipEmptyValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipEmptyValuesUndefined: Self = StObject.set(x, "skipEmptyValues", js.undefined)
+    inline def setSkipEmptyValuesUndefined: Self = StObject.set(x, "skipEmptyValues", js.undefined)
     
-    @scala.inline
-    def setSummaryType(value: avg | count | custom | max | min | sum | String): Self = StObject.set(x, "summaryType", value.asInstanceOf[js.Any])
+    inline def setSummaryType(value: avg | count | custom | max | min | sum | String): Self = StObject.set(x, "summaryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryTypeUndefined: Self = StObject.set(x, "summaryType", js.undefined)
+    inline def setSummaryTypeUndefined: Self = StObject.set(x, "summaryType", js.undefined)
     
-    @scala.inline
-    def setValueFormat(value: format): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
+    inline def setValueFormat(value: format): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction1(value))
+    inline def setValueFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
+    inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
   }
 }

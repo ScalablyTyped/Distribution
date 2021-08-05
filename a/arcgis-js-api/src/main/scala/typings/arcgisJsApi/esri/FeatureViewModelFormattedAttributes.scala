@@ -26,8 +26,7 @@ trait FeatureViewModelFormattedAttributes
 }
 object FeatureViewModelFormattedAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object FeatureViewModelFormattedAttributes {
     __obj.asInstanceOf[FeatureViewModelFormattedAttributes]
   }
   
-  @scala.inline
-  implicit class FeatureViewModelFormattedAttributesMutableBuilder[Self <: FeatureViewModelFormattedAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureViewModelFormattedAttributes](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setGlobal(value: js.Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: js.Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+    inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
   }
 }

@@ -42,8 +42,7 @@ object mod {
   }
   object CLSContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getContext: () => js.Any,
       letContext: (TraceId, js.Function0[js.Any]) => js.Any,
       scoped: js.Function0[js.Any] => js.Any,
@@ -53,14 +52,11 @@ object mod {
       __obj.asInstanceOf[CLSContext]
     }
     
-    @scala.inline
-    implicit class CLSContextMutableBuilder[Self <: CLSContext] (val x: Self) extends AnyVal {
+    extension [Self <: CLSContext](x: Self) {
       
-      @scala.inline
-      def setLetContext(value: (TraceId, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "letContext", js.Any.fromFunction2(value))
+      inline def setLetContext(value: (TraceId, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "letContext", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetContext(value: TraceId => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+      inline def setSetContext(value: TraceId => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     }
   }
 }

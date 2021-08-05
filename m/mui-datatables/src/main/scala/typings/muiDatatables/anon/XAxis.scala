@@ -14,19 +14,15 @@ trait XAxis extends StObject {
 }
 object XAxis {
   
-  @scala.inline
-  def apply(xAxis: Boolean, yAxis: Boolean): XAxis = {
+  inline def apply(xAxis: Boolean, yAxis: Boolean): XAxis = {
     val __obj = js.Dynamic.literal(xAxis = xAxis.asInstanceOf[js.Any], yAxis = yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[XAxis]
   }
   
-  @scala.inline
-  implicit class XAxisMutableBuilder[Self <: XAxis] (val x: Self) extends AnyVal {
+  extension [Self <: XAxis](x: Self) {
     
-    @scala.inline
-    def setXAxis(value: Boolean): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: Boolean): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxis(value: Boolean): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: Boolean): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
   }
 }

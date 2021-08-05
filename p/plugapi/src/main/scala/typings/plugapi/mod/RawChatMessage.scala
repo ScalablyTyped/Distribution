@@ -18,28 +18,21 @@ trait RawChatMessage extends StObject {
 }
 object RawChatMessage {
   
-  @scala.inline
-  def apply(cid: String, message: String, sub: Double, uid: Double, un: String): RawChatMessage = {
+  inline def apply(cid: String, message: String, sub: Double, uid: Double, un: String): RawChatMessage = {
     val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], un = un.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawChatMessage]
   }
   
-  @scala.inline
-  implicit class RawChatMessageMutableBuilder[Self <: RawChatMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RawChatMessage](x: Self) {
     
-    @scala.inline
-    def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+    inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSub(value: Double): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+    inline def setSub(value: Double): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUn(value: String): Self = StObject.set(x, "un", value.asInstanceOf[js.Any])
+    inline def setUn(value: String): Self = StObject.set(x, "un", value.asInstanceOf[js.Any])
   }
 }

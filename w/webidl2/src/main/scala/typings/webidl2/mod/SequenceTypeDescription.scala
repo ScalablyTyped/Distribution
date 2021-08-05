@@ -15,8 +15,7 @@ trait SequenceTypeDescription
 }
 object SequenceTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
@@ -27,10 +26,8 @@ object SequenceTypeDescription {
     __obj.asInstanceOf[SequenceTypeDescription]
   }
   
-  @scala.inline
-  implicit class SequenceTypeDescriptionMutableBuilder[Self <: SequenceTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: SequenceTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGeneric(value: sequence): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
+    inline def setGeneric(value: sequence): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
   }
 }

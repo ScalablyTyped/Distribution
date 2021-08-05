@@ -26,67 +26,47 @@ trait Metadata extends StObject {
 }
 object Metadata {
   
-  @scala.inline
-  def apply(): Metadata = {
+  inline def apply(): Metadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Metadata]
   }
   
-  @scala.inline
-  implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+  extension [Self <: Metadata](x: Self) {
     
-    @scala.inline
-    def setCompleted_in(value: Double): Self = StObject.set(x, "completed_in", value.asInstanceOf[js.Any])
+    inline def setCompleted_in(value: Double): Self = StObject.set(x, "completed_in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleted_inUndefined: Self = StObject.set(x, "completed_in", js.undefined)
+    inline def setCompleted_inUndefined: Self = StObject.set(x, "completed_in", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setMax_id(value: Double): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
+    inline def setMax_id(value: Double): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_idUndefined: Self = StObject.set(x, "max_id", js.undefined)
+    inline def setMax_idUndefined: Self = StObject.set(x, "max_id", js.undefined)
     
-    @scala.inline
-    def setMax_id_str(value: String): Self = StObject.set(x, "max_id_str", value.asInstanceOf[js.Any])
+    inline def setMax_id_str(value: String): Self = StObject.set(x, "max_id_str", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_id_strUndefined: Self = StObject.set(x, "max_id_str", js.undefined)
+    inline def setMax_id_strUndefined: Self = StObject.set(x, "max_id_str", js.undefined)
     
-    @scala.inline
-    def setNext_results(value: String): Self = StObject.set(x, "next_results", value.asInstanceOf[js.Any])
+    inline def setNext_results(value: String): Self = StObject.set(x, "next_results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_resultsUndefined: Self = StObject.set(x, "next_results", js.undefined)
+    inline def setNext_resultsUndefined: Self = StObject.set(x, "next_results", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setRefresh_url(value: String): Self = StObject.set(x, "refresh_url", value.asInstanceOf[js.Any])
+    inline def setRefresh_url(value: String): Self = StObject.set(x, "refresh_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh_urlUndefined: Self = StObject.set(x, "refresh_url", js.undefined)
+    inline def setRefresh_urlUndefined: Self = StObject.set(x, "refresh_url", js.undefined)
     
-    @scala.inline
-    def setSince_id(value: Double): Self = StObject.set(x, "since_id", value.asInstanceOf[js.Any])
+    inline def setSince_id(value: Double): Self = StObject.set(x, "since_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSince_idUndefined: Self = StObject.set(x, "since_id", js.undefined)
+    inline def setSince_idUndefined: Self = StObject.set(x, "since_id", js.undefined)
     
-    @scala.inline
-    def setSince_id_str(value: String): Self = StObject.set(x, "since_id_str", value.asInstanceOf[js.Any])
+    inline def setSince_id_str(value: String): Self = StObject.set(x, "since_id_str", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSince_id_strUndefined: Self = StObject.set(x, "since_id_str", js.undefined)
+    inline def setSince_id_strUndefined: Self = StObject.set(x, "since_id_str", js.undefined)
   }
 }

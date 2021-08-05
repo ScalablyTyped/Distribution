@@ -33,8 +33,7 @@ trait VssNotificationEvent extends StObject {
 }
 object VssNotificationEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actors: js.Array[EventActor],
     artifactUris: js.Array[String],
     data: js.Any,
@@ -45,31 +44,22 @@ object VssNotificationEvent {
     __obj.asInstanceOf[VssNotificationEvent]
   }
   
-  @scala.inline
-  implicit class VssNotificationEventMutableBuilder[Self <: VssNotificationEvent] (val x: Self) extends AnyVal {
+  extension [Self <: VssNotificationEvent](x: Self) {
     
-    @scala.inline
-    def setActors(value: js.Array[EventActor]): Self = StObject.set(x, "actors", value.asInstanceOf[js.Any])
+    inline def setActors(value: js.Array[EventActor]): Self = StObject.set(x, "actors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActorsVarargs(value: EventActor*): Self = StObject.set(x, "actors", js.Array(value :_*))
+    inline def setActorsVarargs(value: EventActor*): Self = StObject.set(x, "actors", js.Array(value :_*))
     
-    @scala.inline
-    def setArtifactUris(value: js.Array[String]): Self = StObject.set(x, "artifactUris", value.asInstanceOf[js.Any])
+    inline def setArtifactUris(value: js.Array[String]): Self = StObject.set(x, "artifactUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactUrisVarargs(value: String*): Self = StObject.set(x, "artifactUris", js.Array(value :_*))
+    inline def setArtifactUrisVarargs(value: String*): Self = StObject.set(x, "artifactUris", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopes(value: js.Array[EventScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[EventScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesVarargs(value: EventScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: EventScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
   }
 }

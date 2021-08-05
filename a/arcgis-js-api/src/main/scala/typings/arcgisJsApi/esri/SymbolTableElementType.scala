@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SymbolTableElementType extends StObject
 object SymbolTableElementType {
   
-  @scala.inline
-  def ImageSymbolTableElementInfo(
+  inline def ImageSymbolTableElementInfo(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     opacity: Double,
@@ -24,8 +23,7 @@ object SymbolTableElementType {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.ImageSymbolTableElementInfo]
   }
   
-  @scala.inline
-  def SymbolTableElementInfo(
+  inline def SymbolTableElementInfo(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     label: String | RampTitle,

@@ -33,49 +33,35 @@ trait GetSessionResponse extends StObject {
 }
 object GetSessionResponse {
   
-  @scala.inline
-  def apply(): GetSessionResponse = {
+  inline def apply(): GetSessionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSessionResponse]
   }
   
-  @scala.inline
-  implicit class GetSessionResponseMutableBuilder[Self <: GetSessionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSessionResponse](x: Self) {
     
-    @scala.inline
-    def setActiveContexts(value: ActiveContextsList): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
+    inline def setActiveContexts(value: ActiveContextsList): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
+    inline def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
     
-    @scala.inline
-    def setActiveContextsVarargs(value: ActiveContext*): Self = StObject.set(x, "activeContexts", js.Array(value :_*))
+    inline def setActiveContextsVarargs(value: ActiveContext*): Self = StObject.set(x, "activeContexts", js.Array(value :_*))
     
-    @scala.inline
-    def setDialogAction(value: DialogAction): Self = StObject.set(x, "dialogAction", value.asInstanceOf[js.Any])
+    inline def setDialogAction(value: DialogAction): Self = StObject.set(x, "dialogAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogActionUndefined: Self = StObject.set(x, "dialogAction", js.undefined)
+    inline def setDialogActionUndefined: Self = StObject.set(x, "dialogAction", js.undefined)
     
-    @scala.inline
-    def setRecentIntentSummaryView(value: IntentSummaryList): Self = StObject.set(x, "recentIntentSummaryView", value.asInstanceOf[js.Any])
+    inline def setRecentIntentSummaryView(value: IntentSummaryList): Self = StObject.set(x, "recentIntentSummaryView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecentIntentSummaryViewUndefined: Self = StObject.set(x, "recentIntentSummaryView", js.undefined)
+    inline def setRecentIntentSummaryViewUndefined: Self = StObject.set(x, "recentIntentSummaryView", js.undefined)
     
-    @scala.inline
-    def setRecentIntentSummaryViewVarargs(value: IntentSummary*): Self = StObject.set(x, "recentIntentSummaryView", js.Array(value :_*))
+    inline def setRecentIntentSummaryViewVarargs(value: IntentSummary*): Self = StObject.set(x, "recentIntentSummaryView", js.Array(value :_*))
     
-    @scala.inline
-    def setSessionAttributes(value: StringMap): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
+    inline def setSessionAttributes(value: StringMap): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
+    inline def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
+    inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
   }
 }

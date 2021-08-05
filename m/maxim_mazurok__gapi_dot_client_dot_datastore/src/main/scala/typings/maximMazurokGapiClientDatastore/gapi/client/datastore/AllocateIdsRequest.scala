@@ -11,22 +11,17 @@ trait AllocateIdsRequest extends StObject {
 }
 object AllocateIdsRequest {
   
-  @scala.inline
-  def apply(): AllocateIdsRequest = {
+  inline def apply(): AllocateIdsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllocateIdsRequest]
   }
   
-  @scala.inline
-  implicit class AllocateIdsRequestMutableBuilder[Self <: AllocateIdsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AllocateIdsRequest](x: Self) {
     
-    @scala.inline
-    def setKeys(value: js.Array[Key]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[Key]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: Key*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

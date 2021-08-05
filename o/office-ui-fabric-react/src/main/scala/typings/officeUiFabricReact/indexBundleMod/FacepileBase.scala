@@ -21,6 +21,5 @@ object FacepileBase {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "FacepileBase.defaultProps")
   @js.native
   def defaultProps: IFacepileProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IFacepileProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IFacepileProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

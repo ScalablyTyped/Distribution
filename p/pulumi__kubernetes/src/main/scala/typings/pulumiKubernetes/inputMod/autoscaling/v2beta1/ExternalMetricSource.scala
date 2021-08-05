@@ -33,34 +33,25 @@ trait ExternalMetricSource extends StObject {
 }
 object ExternalMetricSource {
   
-  @scala.inline
-  def apply(metricName: Input[String]): ExternalMetricSource = {
+  inline def apply(metricName: Input[String]): ExternalMetricSource = {
     val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalMetricSource]
   }
   
-  @scala.inline
-  implicit class ExternalMetricSourceMutableBuilder[Self <: ExternalMetricSource] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalMetricSource](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricSelector(value: Input[LabelSelector]): Self = StObject.set(x, "metricSelector", value.asInstanceOf[js.Any])
+    inline def setMetricSelector(value: Input[LabelSelector]): Self = StObject.set(x, "metricSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricSelectorUndefined: Self = StObject.set(x, "metricSelector", js.undefined)
+    inline def setMetricSelectorUndefined: Self = StObject.set(x, "metricSelector", js.undefined)
     
-    @scala.inline
-    def setTargetAverageValue(value: Input[String]): Self = StObject.set(x, "targetAverageValue", value.asInstanceOf[js.Any])
+    inline def setTargetAverageValue(value: Input[String]): Self = StObject.set(x, "targetAverageValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAverageValueUndefined: Self = StObject.set(x, "targetAverageValue", js.undefined)
+    inline def setTargetAverageValueUndefined: Self = StObject.set(x, "targetAverageValue", js.undefined)
     
-    @scala.inline
-    def setTargetValue(value: Input[String]): Self = StObject.set(x, "targetValue", value.asInstanceOf[js.Any])
+    inline def setTargetValue(value: Input[String]): Self = StObject.set(x, "targetValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetValueUndefined: Self = StObject.set(x, "targetValue", js.undefined)
+    inline def setTargetValueUndefined: Self = StObject.set(x, "targetValue", js.undefined)
   }
 }

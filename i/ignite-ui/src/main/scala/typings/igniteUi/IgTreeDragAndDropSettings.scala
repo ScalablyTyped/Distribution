@@ -161,142 +161,97 @@ trait IgTreeDragAndDropSettings
 }
 object IgTreeDragAndDropSettings {
   
-  @scala.inline
-  def apply(): IgTreeDragAndDropSettings = {
+  inline def apply(): IgTreeDragAndDropSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTreeDragAndDropSettings]
   }
   
-  @scala.inline
-  implicit class IgTreeDragAndDropSettingsMutableBuilder[Self <: IgTreeDragAndDropSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IgTreeDragAndDropSettings](x: Self) {
     
-    @scala.inline
-    def setAllowDrop(value: Boolean): Self = StObject.set(x, "allowDrop", value.asInstanceOf[js.Any])
+    inline def setAllowDrop(value: Boolean): Self = StObject.set(x, "allowDrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDropUndefined: Self = StObject.set(x, "allowDrop", js.undefined)
+    inline def setAllowDropUndefined: Self = StObject.set(x, "allowDrop", js.undefined)
     
-    @scala.inline
-    def setContainment(value: Boolean | String | js.Object | js.Array[js.Any]): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    inline def setContainment(value: Boolean | String | js.Object | js.Array[js.Any]): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
+    inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
-    @scala.inline
-    def setContainmentVarargs(value: js.Any*): Self = StObject.set(x, "containment", js.Array(value :_*))
+    inline def setContainmentVarargs(value: js.Any*): Self = StObject.set(x, "containment", js.Array(value :_*))
     
-    @scala.inline
-    def setCopyAfterMarkup(value: String): Self = StObject.set(x, "copyAfterMarkup", value.asInstanceOf[js.Any])
+    inline def setCopyAfterMarkup(value: String): Self = StObject.set(x, "copyAfterMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyAfterMarkupUndefined: Self = StObject.set(x, "copyAfterMarkup", js.undefined)
+    inline def setCopyAfterMarkupUndefined: Self = StObject.set(x, "copyAfterMarkup", js.undefined)
     
-    @scala.inline
-    def setCopyBeforeMarkup(value: String): Self = StObject.set(x, "copyBeforeMarkup", value.asInstanceOf[js.Any])
+    inline def setCopyBeforeMarkup(value: String): Self = StObject.set(x, "copyBeforeMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyBeforeMarkupUndefined: Self = StObject.set(x, "copyBeforeMarkup", js.undefined)
+    inline def setCopyBeforeMarkupUndefined: Self = StObject.set(x, "copyBeforeMarkup", js.undefined)
     
-    @scala.inline
-    def setCopyBetweenMarkup(value: String): Self = StObject.set(x, "copyBetweenMarkup", value.asInstanceOf[js.Any])
+    inline def setCopyBetweenMarkup(value: String): Self = StObject.set(x, "copyBetweenMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyBetweenMarkupUndefined: Self = StObject.set(x, "copyBetweenMarkup", js.undefined)
+    inline def setCopyBetweenMarkupUndefined: Self = StObject.set(x, "copyBetweenMarkup", js.undefined)
     
-    @scala.inline
-    def setCopyToMarkup(value: String): Self = StObject.set(x, "copyToMarkup", value.asInstanceOf[js.Any])
+    inline def setCopyToMarkup(value: String): Self = StObject.set(x, "copyToMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyToMarkupUndefined: Self = StObject.set(x, "copyToMarkup", js.undefined)
+    inline def setCopyToMarkupUndefined: Self = StObject.set(x, "copyToMarkup", js.undefined)
     
-    @scala.inline
-    def setCustomDropValidation(value: js.Function): Self = StObject.set(x, "customDropValidation", value.asInstanceOf[js.Any])
+    inline def setCustomDropValidation(value: js.Function): Self = StObject.set(x, "customDropValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDropValidationUndefined: Self = StObject.set(x, "customDropValidation", js.undefined)
+    inline def setCustomDropValidationUndefined: Self = StObject.set(x, "customDropValidation", js.undefined)
     
-    @scala.inline
-    def setDragAndDropMode(value: String): Self = StObject.set(x, "dragAndDropMode", value.asInstanceOf[js.Any])
+    inline def setDragAndDropMode(value: String): Self = StObject.set(x, "dragAndDropMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragAndDropModeUndefined: Self = StObject.set(x, "dragAndDropMode", js.undefined)
+    inline def setDragAndDropModeUndefined: Self = StObject.set(x, "dragAndDropMode", js.undefined)
     
-    @scala.inline
-    def setDragOpacity(value: Double): Self = StObject.set(x, "dragOpacity", value.asInstanceOf[js.Any])
+    inline def setDragOpacity(value: Double): Self = StObject.set(x, "dragOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragOpacityUndefined: Self = StObject.set(x, "dragOpacity", js.undefined)
+    inline def setDragOpacityUndefined: Self = StObject.set(x, "dragOpacity", js.undefined)
     
-    @scala.inline
-    def setDragStartDelay(value: Double): Self = StObject.set(x, "dragStartDelay", value.asInstanceOf[js.Any])
+    inline def setDragStartDelay(value: Double): Self = StObject.set(x, "dragStartDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragStartDelayUndefined: Self = StObject.set(x, "dragStartDelay", js.undefined)
+    inline def setDragStartDelayUndefined: Self = StObject.set(x, "dragStartDelay", js.undefined)
     
-    @scala.inline
-    def setExpandDelay(value: Double): Self = StObject.set(x, "expandDelay", value.asInstanceOf[js.Any])
+    inline def setExpandDelay(value: Double): Self = StObject.set(x, "expandDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandDelayUndefined: Self = StObject.set(x, "expandDelay", js.undefined)
+    inline def setExpandDelayUndefined: Self = StObject.set(x, "expandDelay", js.undefined)
     
-    @scala.inline
-    def setExpandOnDragOver(value: Boolean): Self = StObject.set(x, "expandOnDragOver", value.asInstanceOf[js.Any])
+    inline def setExpandOnDragOver(value: Boolean): Self = StObject.set(x, "expandOnDragOver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandOnDragOverUndefined: Self = StObject.set(x, "expandOnDragOver", js.undefined)
+    inline def setExpandOnDragOverUndefined: Self = StObject.set(x, "expandOnDragOver", js.undefined)
     
-    @scala.inline
-    def setHelper(value: js.Function | String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: js.Function | String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
+    inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
     
-    @scala.inline
-    def setInvalidMoveToMarkup(value: String): Self = StObject.set(x, "invalidMoveToMarkup", value.asInstanceOf[js.Any])
+    inline def setInvalidMoveToMarkup(value: String): Self = StObject.set(x, "invalidMoveToMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidMoveToMarkupUndefined: Self = StObject.set(x, "invalidMoveToMarkup", js.undefined)
+    inline def setInvalidMoveToMarkupUndefined: Self = StObject.set(x, "invalidMoveToMarkup", js.undefined)
     
-    @scala.inline
-    def setMoveAfterMarkup(value: String): Self = StObject.set(x, "moveAfterMarkup", value.asInstanceOf[js.Any])
+    inline def setMoveAfterMarkup(value: String): Self = StObject.set(x, "moveAfterMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveAfterMarkupUndefined: Self = StObject.set(x, "moveAfterMarkup", js.undefined)
+    inline def setMoveAfterMarkupUndefined: Self = StObject.set(x, "moveAfterMarkup", js.undefined)
     
-    @scala.inline
-    def setMoveBeforeMarkup(value: String): Self = StObject.set(x, "moveBeforeMarkup", value.asInstanceOf[js.Any])
+    inline def setMoveBeforeMarkup(value: String): Self = StObject.set(x, "moveBeforeMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveBeforeMarkupUndefined: Self = StObject.set(x, "moveBeforeMarkup", js.undefined)
+    inline def setMoveBeforeMarkupUndefined: Self = StObject.set(x, "moveBeforeMarkup", js.undefined)
     
-    @scala.inline
-    def setMoveBetweenMarkup(value: String): Self = StObject.set(x, "moveBetweenMarkup", value.asInstanceOf[js.Any])
+    inline def setMoveBetweenMarkup(value: String): Self = StObject.set(x, "moveBetweenMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveBetweenMarkupUndefined: Self = StObject.set(x, "moveBetweenMarkup", js.undefined)
+    inline def setMoveBetweenMarkupUndefined: Self = StObject.set(x, "moveBetweenMarkup", js.undefined)
     
-    @scala.inline
-    def setMoveToMarkup(value: String): Self = StObject.set(x, "moveToMarkup", value.asInstanceOf[js.Any])
+    inline def setMoveToMarkup(value: String): Self = StObject.set(x, "moveToMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveToMarkupUndefined: Self = StObject.set(x, "moveToMarkup", js.undefined)
+    inline def setMoveToMarkupUndefined: Self = StObject.set(x, "moveToMarkup", js.undefined)
     
-    @scala.inline
-    def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
+    inline def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevertDuration(value: Double): Self = StObject.set(x, "revertDuration", value.asInstanceOf[js.Any])
+    inline def setRevertDuration(value: Double): Self = StObject.set(x, "revertDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevertDurationUndefined: Self = StObject.set(x, "revertDuration", js.undefined)
+    inline def setRevertDurationUndefined: Self = StObject.set(x, "revertDuration", js.undefined)
     
-    @scala.inline
-    def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
+    inline def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

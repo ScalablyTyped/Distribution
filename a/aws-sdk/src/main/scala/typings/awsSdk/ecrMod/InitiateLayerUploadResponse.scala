@@ -18,25 +18,19 @@ trait InitiateLayerUploadResponse extends StObject {
 }
 object InitiateLayerUploadResponse {
   
-  @scala.inline
-  def apply(): InitiateLayerUploadResponse = {
+  inline def apply(): InitiateLayerUploadResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitiateLayerUploadResponse]
   }
   
-  @scala.inline
-  implicit class InitiateLayerUploadResponseMutableBuilder[Self <: InitiateLayerUploadResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InitiateLayerUploadResponse](x: Self) {
     
-    @scala.inline
-    def setPartSize(value: PartSize): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
+    inline def setPartSize(value: PartSize): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
+    inline def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
     
-    @scala.inline
-    def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
+    inline def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
   }
 }

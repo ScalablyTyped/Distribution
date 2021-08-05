@@ -28,37 +28,27 @@ trait Invitation extends StObject {
 }
 object Invitation {
   
-  @scala.inline
-  def apply(): Invitation = {
+  inline def apply(): Invitation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Invitation]
   }
   
-  @scala.inline
-  implicit class InvitationMutableBuilder[Self <: Invitation] (val x: Self) extends AnyVal {
+  extension [Self <: Invitation](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setInvitationId(value: string): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
+    inline def setInvitationId(value: string): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
+    inline def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
     
-    @scala.inline
-    def setInvitedAt(value: timestampIso8601): Self = StObject.set(x, "invitedAt", value.asInstanceOf[js.Any])
+    inline def setInvitedAt(value: timestampIso8601): Self = StObject.set(x, "invitedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedAtUndefined: Self = StObject.set(x, "invitedAt", js.undefined)
+    inline def setInvitedAtUndefined: Self = StObject.set(x, "invitedAt", js.undefined)
     
-    @scala.inline
-    def setRelationshipStatus(value: RelationshipStatus): Self = StObject.set(x, "relationshipStatus", value.asInstanceOf[js.Any])
+    inline def setRelationshipStatus(value: RelationshipStatus): Self = StObject.set(x, "relationshipStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipStatusUndefined: Self = StObject.set(x, "relationshipStatus", js.undefined)
+    inline def setRelationshipStatusUndefined: Self = StObject.set(x, "relationshipStatus", js.undefined)
   }
 }

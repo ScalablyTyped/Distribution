@@ -68,8 +68,7 @@ trait XTextConversion
 }
 object XTextConversion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getConversion: (String, Double, Double, Locale, Double, Double) => String,
     getConversions: (String, Double, Double, Locale, Double, Double) => TextConversionResult,
@@ -81,16 +80,12 @@ object XTextConversion {
     __obj.asInstanceOf[XTextConversion]
   }
   
-  @scala.inline
-  implicit class XTextConversionMutableBuilder[Self <: XTextConversion] (val x: Self) extends AnyVal {
+  extension [Self <: XTextConversion](x: Self) {
     
-    @scala.inline
-    def setGetConversion(value: (String, Double, Double, Locale, Double, Double) => String): Self = StObject.set(x, "getConversion", js.Any.fromFunction6(value))
+    inline def setGetConversion(value: (String, Double, Double, Locale, Double, Double) => String): Self = StObject.set(x, "getConversion", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setGetConversions(value: (String, Double, Double, Locale, Double, Double) => TextConversionResult): Self = StObject.set(x, "getConversions", js.Any.fromFunction6(value))
+    inline def setGetConversions(value: (String, Double, Double, Locale, Double, Double) => TextConversionResult): Self = StObject.set(x, "getConversions", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setInteractiveConversion(value: (Locale, Double, Double) => Boolean): Self = StObject.set(x, "interactiveConversion", js.Any.fromFunction3(value))
+    inline def setInteractiveConversion(value: (Locale, Double, Double) => Boolean): Self = StObject.set(x, "interactiveConversion", js.Any.fromFunction3(value))
   }
 }

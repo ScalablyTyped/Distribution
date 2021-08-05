@@ -11,20 +11,17 @@ object badginStrings {
   sealed trait Badging
     extends StObject
        with Method
-  @scala.inline
-  def Badging: Badging = "Badging".asInstanceOf[Badging]
+  inline def Badging: Badging = "Badging".asInstanceOf[Badging]
   
   @js.native
   sealed trait Favicon
     extends StObject
        with Method
-  @scala.inline
-  def Favicon: Favicon = "Favicon".asInstanceOf[Favicon]
+  inline def Favicon: Favicon = "Favicon".asInstanceOf[Favicon]
   
   @js.native
   sealed trait Title
     extends StObject
        with Method
-  @scala.inline
-  def Title: Title = "Title".asInstanceOf[Title]
+  inline def Title: Title = "Title".asInstanceOf[Title]
 }

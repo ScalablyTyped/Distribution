@@ -23,22 +23,17 @@ trait InitializeClusterRequest extends StObject {
 }
 object InitializeClusterRequest {
   
-  @scala.inline
-  def apply(ClusterId: ClusterId, SignedCert: Cert, TrustAnchor: Cert): InitializeClusterRequest = {
+  inline def apply(ClusterId: ClusterId, SignedCert: Cert, TrustAnchor: Cert): InitializeClusterRequest = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], SignedCert = SignedCert.asInstanceOf[js.Any], TrustAnchor = TrustAnchor.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializeClusterRequest]
   }
   
-  @scala.inline
-  implicit class InitializeClusterRequestMutableBuilder[Self <: InitializeClusterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InitializeClusterRequest](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedCert(value: Cert): Self = StObject.set(x, "SignedCert", value.asInstanceOf[js.Any])
+    inline def setSignedCert(value: Cert): Self = StObject.set(x, "SignedCert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustAnchor(value: Cert): Self = StObject.set(x, "TrustAnchor", value.asInstanceOf[js.Any])
+    inline def setTrustAnchor(value: Cert): Self = StObject.set(x, "TrustAnchor", value.asInstanceOf[js.Any])
   }
 }

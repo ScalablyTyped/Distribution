@@ -12,14 +12,10 @@ object getPolicyDocumentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPolicyDocument(): js.Promise[GetPolicyDocumentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolicyDocument")().asInstanceOf[js.Promise[GetPolicyDocumentResult]]
-  @scala.inline
-  def getPolicyDocument(args: Unit, opts: InvokeOptions): js.Promise[GetPolicyDocumentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolicyDocument")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPolicyDocumentResult]]
-  @scala.inline
-  def getPolicyDocument(args: GetPolicyDocumentArgs): js.Promise[GetPolicyDocumentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolicyDocument")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPolicyDocumentResult]]
-  @scala.inline
-  def getPolicyDocument(args: GetPolicyDocumentArgs, opts: InvokeOptions): js.Promise[GetPolicyDocumentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolicyDocument")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPolicyDocumentResult]]
+  inline def getPolicyDocument(): js.Promise[GetPolicyDocumentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolicyDocument")().asInstanceOf[js.Promise[GetPolicyDocumentResult]]
+  inline def getPolicyDocument(args: Unit, opts: InvokeOptions): js.Promise[GetPolicyDocumentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolicyDocument")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPolicyDocumentResult]]
+  inline def getPolicyDocument(args: GetPolicyDocumentArgs): js.Promise[GetPolicyDocumentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolicyDocument")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPolicyDocumentResult]]
+  inline def getPolicyDocument(args: GetPolicyDocumentArgs, opts: InvokeOptions): js.Promise[GetPolicyDocumentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolicyDocument")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPolicyDocumentResult]]
   
   trait GetPolicyDocumentArgs extends StObject {
     
@@ -57,47 +53,34 @@ object getPolicyDocumentMod {
   }
   object GetPolicyDocumentArgs {
     
-    @scala.inline
-    def apply(): GetPolicyDocumentArgs = {
+    inline def apply(): GetPolicyDocumentArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetPolicyDocumentArgs]
     }
     
-    @scala.inline
-    implicit class GetPolicyDocumentArgsMutableBuilder[Self <: GetPolicyDocumentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetPolicyDocumentArgs](x: Self) {
       
-      @scala.inline
-      def setOverrideJson(value: String): Self = StObject.set(x, "overrideJson", value.asInstanceOf[js.Any])
+      inline def setOverrideJson(value: String): Self = StObject.set(x, "overrideJson", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideJsonUndefined: Self = StObject.set(x, "overrideJson", js.undefined)
+      inline def setOverrideJsonUndefined: Self = StObject.set(x, "overrideJson", js.undefined)
       
-      @scala.inline
-      def setPolicyId(value: String): Self = StObject.set(x, "policyId", value.asInstanceOf[js.Any])
+      inline def setPolicyId(value: String): Self = StObject.set(x, "policyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyIdUndefined: Self = StObject.set(x, "policyId", js.undefined)
+      inline def setPolicyIdUndefined: Self = StObject.set(x, "policyId", js.undefined)
       
-      @scala.inline
-      def setSourceJson(value: String): Self = StObject.set(x, "sourceJson", value.asInstanceOf[js.Any])
+      inline def setSourceJson(value: String): Self = StObject.set(x, "sourceJson", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceJsonUndefined: Self = StObject.set(x, "sourceJson", js.undefined)
+      inline def setSourceJsonUndefined: Self = StObject.set(x, "sourceJson", js.undefined)
       
-      @scala.inline
-      def setStatements(value: js.Array[GetPolicyDocumentStatement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+      inline def setStatements(value: js.Array[GetPolicyDocumentStatement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
+      inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
       
-      @scala.inline
-      def setStatementsVarargs(value: GetPolicyDocumentStatement*): Self = StObject.set(x, "statements", js.Array(value :_*))
+      inline def setStatementsVarargs(value: GetPolicyDocumentStatement*): Self = StObject.set(x, "statements", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -125,53 +108,38 @@ object getPolicyDocumentMod {
   }
   object GetPolicyDocumentResult {
     
-    @scala.inline
-    def apply(id: String, json: String): GetPolicyDocumentResult = {
+    inline def apply(id: String, json: String): GetPolicyDocumentResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPolicyDocumentResult]
     }
     
-    @scala.inline
-    implicit class GetPolicyDocumentResultMutableBuilder[Self <: GetPolicyDocumentResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetPolicyDocumentResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: String): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: String): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideJson(value: String): Self = StObject.set(x, "overrideJson", value.asInstanceOf[js.Any])
+      inline def setOverrideJson(value: String): Self = StObject.set(x, "overrideJson", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideJsonUndefined: Self = StObject.set(x, "overrideJson", js.undefined)
+      inline def setOverrideJsonUndefined: Self = StObject.set(x, "overrideJson", js.undefined)
       
-      @scala.inline
-      def setPolicyId(value: String): Self = StObject.set(x, "policyId", value.asInstanceOf[js.Any])
+      inline def setPolicyId(value: String): Self = StObject.set(x, "policyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyIdUndefined: Self = StObject.set(x, "policyId", js.undefined)
+      inline def setPolicyIdUndefined: Self = StObject.set(x, "policyId", js.undefined)
       
-      @scala.inline
-      def setSourceJson(value: String): Self = StObject.set(x, "sourceJson", value.asInstanceOf[js.Any])
+      inline def setSourceJson(value: String): Self = StObject.set(x, "sourceJson", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceJsonUndefined: Self = StObject.set(x, "sourceJson", js.undefined)
+      inline def setSourceJsonUndefined: Self = StObject.set(x, "sourceJson", js.undefined)
       
-      @scala.inline
-      def setStatements(value: js.Array[typings.pulumiAws.outputMod.iam.GetPolicyDocumentStatement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+      inline def setStatements(value: js.Array[typings.pulumiAws.outputMod.iam.GetPolicyDocumentStatement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
+      inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
       
-      @scala.inline
-      def setStatementsVarargs(value: typings.pulumiAws.outputMod.iam.GetPolicyDocumentStatement*): Self = StObject.set(x, "statements", js.Array(value :_*))
+      inline def setStatementsVarargs(value: typings.pulumiAws.outputMod.iam.GetPolicyDocumentStatement*): Self = StObject.set(x, "statements", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

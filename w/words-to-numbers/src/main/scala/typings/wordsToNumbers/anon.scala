@@ -12,17 +12,14 @@ object anon {
   }
   object Fuzzy {
     
-    @scala.inline
-    def apply(fuzzy: Boolean): Fuzzy = {
+    inline def apply(fuzzy: Boolean): Fuzzy = {
       val __obj = js.Dynamic.literal(fuzzy = fuzzy.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fuzzy]
     }
     
-    @scala.inline
-    implicit class FuzzyMutableBuilder[Self <: Fuzzy] (val x: Self) extends AnyVal {
+    extension [Self <: Fuzzy](x: Self) {
       
-      @scala.inline
-      def setFuzzy(value: Boolean): Self = StObject.set(x, "fuzzy", value.asInstanceOf[js.Any])
+      inline def setFuzzy(value: Boolean): Self = StObject.set(x, "fuzzy", value.asInstanceOf[js.Any])
     }
   }
 }

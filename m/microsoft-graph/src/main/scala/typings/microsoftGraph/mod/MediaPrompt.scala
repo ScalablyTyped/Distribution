@@ -13,19 +13,15 @@ trait MediaPrompt
 }
 object MediaPrompt {
   
-  @scala.inline
-  def apply(): MediaPrompt = {
+  inline def apply(): MediaPrompt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaPrompt]
   }
   
-  @scala.inline
-  implicit class MediaPromptMutableBuilder[Self <: MediaPrompt] (val x: Self) extends AnyVal {
+  extension [Self <: MediaPrompt](x: Self) {
     
-    @scala.inline
-    def setMediaInfo(value: MediaInfo): Self = StObject.set(x, "mediaInfo", value.asInstanceOf[js.Any])
+    inline def setMediaInfo(value: MediaInfo): Self = StObject.set(x, "mediaInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaInfoUndefined: Self = StObject.set(x, "mediaInfo", js.undefined)
+    inline def setMediaInfoUndefined: Self = StObject.set(x, "mediaInfo", js.undefined)
   }
 }

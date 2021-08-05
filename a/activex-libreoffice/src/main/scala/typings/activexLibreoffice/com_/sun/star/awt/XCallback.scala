@@ -15,17 +15,14 @@ trait XCallback extends StObject {
 }
 object XCallback {
   
-  @scala.inline
-  def apply(notify_ : js.Any => Unit): XCallback = {
+  inline def apply(notify_ : js.Any => Unit): XCallback = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("notify")(js.Any.fromFunction1(notify_))
     __obj.asInstanceOf[XCallback]
   }
   
-  @scala.inline
-  implicit class XCallbackMutableBuilder[Self <: XCallback] (val x: Self) extends AnyVal {
+  extension [Self <: XCallback](x: Self) {
     
-    @scala.inline
-    def setNotify_(value: js.Any => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction1(value))
+    inline def setNotify_(value: js.Any => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction1(value))
   }
 }

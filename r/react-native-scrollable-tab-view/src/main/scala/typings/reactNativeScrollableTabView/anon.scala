@@ -27,47 +27,34 @@ object anon {
   }
   object ActiveTab {
     
-    @scala.inline
-    def apply(): ActiveTab = {
+    inline def apply(): ActiveTab = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActiveTab]
     }
     
-    @scala.inline
-    implicit class ActiveTabMutableBuilder[Self <: ActiveTab] (val x: Self) extends AnyVal {
+    extension [Self <: ActiveTab](x: Self) {
       
-      @scala.inline
-      def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+      inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
+      inline def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
       
-      @scala.inline
-      def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
+      inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
+      inline def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
       
-      @scala.inline
-      def setGoToPage(value: /* pageNumber */ Double => Unit): Self = StObject.set(x, "goToPage", js.Any.fromFunction1(value))
+      inline def setGoToPage(value: /* pageNumber */ Double => Unit): Self = StObject.set(x, "goToPage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGoToPageUndefined: Self = StObject.set(x, "goToPage", js.undefined)
+      inline def setGoToPageUndefined: Self = StObject.set(x, "goToPage", js.undefined)
       
-      @scala.inline
-      def setScrollValue(value: Value): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
+      inline def setScrollValue(value: Value): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollValueUndefined: Self = StObject.set(x, "scrollValue", js.undefined)
+      inline def setScrollValueUndefined: Self = StObject.set(x, "scrollValue", js.undefined)
       
-      @scala.inline
-      def setTabs(value: js.Array[Element]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[Element]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
+      inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      @scala.inline
-      def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     }
   }
   
@@ -86,47 +73,34 @@ object anon {
   }
   object TabBarProps {
     
-    @scala.inline
-    def apply(): TabBarProps = {
+    inline def apply(): TabBarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabBarProps]
     }
     
-    @scala.inline
-    implicit class TabBarPropsMutableBuilder[Self <: TabBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabBarProps](x: Self) {
       
-      @scala.inline
-      def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+      inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
+      inline def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
       
-      @scala.inline
-      def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
+      inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
+      inline def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
       
-      @scala.inline
-      def setGoToPage(value: /* pageNumber */ Double => Unit): Self = StObject.set(x, "goToPage", js.Any.fromFunction1(value))
+      inline def setGoToPage(value: /* pageNumber */ Double => Unit): Self = StObject.set(x, "goToPage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGoToPageUndefined: Self = StObject.set(x, "goToPage", js.undefined)
+      inline def setGoToPageUndefined: Self = StObject.set(x, "goToPage", js.undefined)
       
-      @scala.inline
-      def setScrollValue(value: Value): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
+      inline def setScrollValue(value: Value): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollValueUndefined: Self = StObject.set(x, "scrollValue", js.undefined)
+      inline def setScrollValueUndefined: Self = StObject.set(x, "scrollValue", js.undefined)
       
-      @scala.inline
-      def setTabs(value: js.Array[Element]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[Element]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
+      inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      @scala.inline
-      def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     }
   }
   
@@ -161,97 +135,68 @@ object anon {
   }
   object TabBarPropsDefaultTabBarP {
     
-    @scala.inline
-    def apply(): TabBarPropsDefaultTabBarP = {
+    inline def apply(): TabBarPropsDefaultTabBarP = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabBarPropsDefaultTabBarP]
     }
     
-    @scala.inline
-    implicit class TabBarPropsDefaultTabBarPMutableBuilder[Self <: TabBarPropsDefaultTabBarP] (val x: Self) extends AnyVal {
+    extension [Self <: TabBarPropsDefaultTabBarP](x: Self) {
       
-      @scala.inline
-      def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+      inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
+      inline def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
       
-      @scala.inline
-      def setActiveTextColor(value: String): Self = StObject.set(x, "activeTextColor", value.asInstanceOf[js.Any])
+      inline def setActiveTextColor(value: String): Self = StObject.set(x, "activeTextColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTextColorUndefined: Self = StObject.set(x, "activeTextColor", js.undefined)
+      inline def setActiveTextColorUndefined: Self = StObject.set(x, "activeTextColor", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
+      inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
+      inline def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
       
-      @scala.inline
-      def setGoToPage(value: /* pageNumber */ Double => Unit): Self = StObject.set(x, "goToPage", js.Any.fromFunction1(value))
+      inline def setGoToPage(value: /* pageNumber */ Double => Unit): Self = StObject.set(x, "goToPage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGoToPageUndefined: Self = StObject.set(x, "goToPage", js.undefined)
+      inline def setGoToPageUndefined: Self = StObject.set(x, "goToPage", js.undefined)
       
-      @scala.inline
-      def setInactiveTextColor(value: String): Self = StObject.set(x, "inactiveTextColor", value.asInstanceOf[js.Any])
+      inline def setInactiveTextColor(value: String): Self = StObject.set(x, "inactiveTextColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactiveTextColorUndefined: Self = StObject.set(x, "inactiveTextColor", js.undefined)
+      inline def setInactiveTextColorUndefined: Self = StObject.set(x, "inactiveTextColor", js.undefined)
       
-      @scala.inline
-      def setRenderTab(
+      inline def setRenderTab(
         value: (/* name */ String, /* pageIndex */ Double, /* isTabActive */ Boolean, /* onPressHandler */ js.Function1[/* pageNumber */ Double, Unit], /* onLayoutHandler */ js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]) => Element
       ): Self = StObject.set(x, "renderTab", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setRenderTabUndefined: Self = StObject.set(x, "renderTab", js.undefined)
+      inline def setRenderTabUndefined: Self = StObject.set(x, "renderTab", js.undefined)
       
-      @scala.inline
-      def setScrollValue(value: Value): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
+      inline def setScrollValue(value: Value): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollValueUndefined: Self = StObject.set(x, "scrollValue", js.undefined)
+      inline def setScrollValueUndefined: Self = StObject.set(x, "scrollValue", js.undefined)
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTabStyle(value: ViewStyle): Self = StObject.set(x, "tabStyle", value.asInstanceOf[js.Any])
+      inline def setTabStyle(value: ViewStyle): Self = StObject.set(x, "tabStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabStyleUndefined: Self = StObject.set(x, "tabStyle", js.undefined)
+      inline def setTabStyleUndefined: Self = StObject.set(x, "tabStyle", js.undefined)
       
-      @scala.inline
-      def setTabs(value: js.Array[Element]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[Element]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
+      inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      @scala.inline
-      def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value :_*))
       
-      @scala.inline
-      def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
-      @scala.inline
-      def setUnderlineStyle(value: ViewStyle): Self = StObject.set(x, "underlineStyle", value.asInstanceOf[js.Any])
+      inline def setUnderlineStyle(value: ViewStyle): Self = StObject.set(x, "underlineStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
+      inline def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
     }
   }
   
@@ -290,109 +235,76 @@ object anon {
   }
   object TabBarPropsScrollableTabB {
     
-    @scala.inline
-    def apply(): TabBarPropsScrollableTabB = {
+    inline def apply(): TabBarPropsScrollableTabB = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabBarPropsScrollableTabB]
     }
     
-    @scala.inline
-    implicit class TabBarPropsScrollableTabBMutableBuilder[Self <: TabBarPropsScrollableTabB] (val x: Self) extends AnyVal {
+    extension [Self <: TabBarPropsScrollableTabB](x: Self) {
       
-      @scala.inline
-      def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+      inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
+      inline def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
       
-      @scala.inline
-      def setActiveTextColor(value: String): Self = StObject.set(x, "activeTextColor", value.asInstanceOf[js.Any])
+      inline def setActiveTextColor(value: String): Self = StObject.set(x, "activeTextColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTextColorUndefined: Self = StObject.set(x, "activeTextColor", js.undefined)
+      inline def setActiveTextColorUndefined: Self = StObject.set(x, "activeTextColor", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
+      inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
+      inline def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
       
-      @scala.inline
-      def setGoToPage(value: /* pageNumber */ Double => Unit): Self = StObject.set(x, "goToPage", js.Any.fromFunction1(value))
+      inline def setGoToPage(value: /* pageNumber */ Double => Unit): Self = StObject.set(x, "goToPage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGoToPageUndefined: Self = StObject.set(x, "goToPage", js.undefined)
+      inline def setGoToPageUndefined: Self = StObject.set(x, "goToPage", js.undefined)
       
-      @scala.inline
-      def setInactiveTextColor(value: String): Self = StObject.set(x, "inactiveTextColor", value.asInstanceOf[js.Any])
+      inline def setInactiveTextColor(value: String): Self = StObject.set(x, "inactiveTextColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactiveTextColorUndefined: Self = StObject.set(x, "inactiveTextColor", js.undefined)
+      inline def setInactiveTextColorUndefined: Self = StObject.set(x, "inactiveTextColor", js.undefined)
       
-      @scala.inline
-      def setRenderTab(
+      inline def setRenderTab(
         value: (/* name */ String, /* pageIndex */ Double, /* isTabActive */ Boolean, /* onPressHandler */ js.Function1[/* pageNumber */ Double, Unit], /* onLayoutHandler */ js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]) => Element
       ): Self = StObject.set(x, "renderTab", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setRenderTabUndefined: Self = StObject.set(x, "renderTab", js.undefined)
+      inline def setRenderTabUndefined: Self = StObject.set(x, "renderTab", js.undefined)
       
-      @scala.inline
-      def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
+      inline def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
+      inline def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
       
-      @scala.inline
-      def setScrollValue(value: Value): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
+      inline def setScrollValue(value: Value): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollValueUndefined: Self = StObject.set(x, "scrollValue", js.undefined)
+      inline def setScrollValueUndefined: Self = StObject.set(x, "scrollValue", js.undefined)
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTabStyle(value: ViewStyle): Self = StObject.set(x, "tabStyle", value.asInstanceOf[js.Any])
+      inline def setTabStyle(value: ViewStyle): Self = StObject.set(x, "tabStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabStyleUndefined: Self = StObject.set(x, "tabStyle", js.undefined)
+      inline def setTabStyleUndefined: Self = StObject.set(x, "tabStyle", js.undefined)
       
-      @scala.inline
-      def setTabs(value: js.Array[Element]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[Element]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsContainerStyle(value: ViewStyle): Self = StObject.set(x, "tabsContainerStyle", value.asInstanceOf[js.Any])
+      inline def setTabsContainerStyle(value: ViewStyle): Self = StObject.set(x, "tabsContainerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsContainerStyleUndefined: Self = StObject.set(x, "tabsContainerStyle", js.undefined)
+      inline def setTabsContainerStyleUndefined: Self = StObject.set(x, "tabsContainerStyle", js.undefined)
       
-      @scala.inline
-      def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
+      inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      @scala.inline
-      def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value :_*))
       
-      @scala.inline
-      def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
-      @scala.inline
-      def setUnderlineStyle(value: ViewStyle): Self = StObject.set(x, "underlineStyle", value.asInstanceOf[js.Any])
+      inline def setUnderlineStyle(value: ViewStyle): Self = StObject.set(x, "underlineStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
+      inline def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
     }
   }
   
@@ -402,17 +314,14 @@ object anon {
   }
   object TabLabel {
     
-    @scala.inline
-    def apply(tabLabel: ReactChild): TabLabel = {
+    inline def apply(tabLabel: ReactChild): TabLabel = {
       val __obj = js.Dynamic.literal(tabLabel = tabLabel.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabLabel]
     }
     
-    @scala.inline
-    implicit class TabLabelMutableBuilder[Self <: TabLabel] (val x: Self) extends AnyVal {
+    extension [Self <: TabLabel](x: Self) {
       
-      @scala.inline
-      def setTabLabel(value: ReactChild): Self = StObject.set(x, "tabLabel", value.asInstanceOf[js.Any])
+      inline def setTabLabel(value: ReactChild): Self = StObject.set(x, "tabLabel", value.asInstanceOf[js.Any])
     }
   }
 }

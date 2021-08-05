@@ -15,31 +15,23 @@ trait Labels extends StObject {
 }
 object Labels {
   
-  @scala.inline
-  def apply(): Labels = {
+  inline def apply(): Labels = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Labels]
   }
   
-  @scala.inline
-  implicit class LabelsMutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
+  extension [Self <: Labels](x: Self) {
     
-    @scala.inline
-    def setData(value: CSSPropertiestypeScatterS): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: CSSPropertiestypeScatterS): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setLabels(value: CSSProperties): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: CSSProperties): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setTitle(value: CSSProperties): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: CSSProperties): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

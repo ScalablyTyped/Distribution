@@ -24,20 +24,16 @@ object topSites {
   }
   object MostVisitedURL {
     
-    @scala.inline
-    def apply(title: String, url: String): MostVisitedURL = {
+    inline def apply(title: String, url: String): MostVisitedURL = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[MostVisitedURL]
     }
     
-    @scala.inline
-    implicit class MostVisitedURLMutableBuilder[Self <: MostVisitedURL] (val x: Self) extends AnyVal {
+    extension [Self <: MostVisitedURL](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

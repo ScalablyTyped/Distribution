@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContextObjectType extends StObject
 object ContextObjectType {
   
-  @scala.inline
-  def album: typings.spotifyWebApiJs.spotifyWebApiJsStrings.album = "album".asInstanceOf[typings.spotifyWebApiJs.spotifyWebApiJsStrings.album]
+  inline def album: typings.spotifyWebApiJs.spotifyWebApiJsStrings.album = "album".asInstanceOf[typings.spotifyWebApiJs.spotifyWebApiJsStrings.album]
   
-  @scala.inline
-  def artist: typings.spotifyWebApiJs.spotifyWebApiJsStrings.artist = "artist".asInstanceOf[typings.spotifyWebApiJs.spotifyWebApiJsStrings.artist]
+  inline def artist: typings.spotifyWebApiJs.spotifyWebApiJsStrings.artist = "artist".asInstanceOf[typings.spotifyWebApiJs.spotifyWebApiJsStrings.artist]
   
-  @scala.inline
-  def playlist: typings.spotifyWebApiJs.spotifyWebApiJsStrings.playlist = "playlist".asInstanceOf[typings.spotifyWebApiJs.spotifyWebApiJsStrings.playlist]
+  inline def playlist: typings.spotifyWebApiJs.spotifyWebApiJsStrings.playlist = "playlist".asInstanceOf[typings.spotifyWebApiJs.spotifyWebApiJsStrings.playlist]
 }

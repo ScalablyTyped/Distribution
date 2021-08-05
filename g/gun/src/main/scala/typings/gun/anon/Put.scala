@@ -12,16 +12,13 @@ trait Put[DataType] extends StObject {
 }
 object Put {
   
-  @scala.inline
-  def apply[DataType](put: DisallowArray[Saveable[DataType]] => Unit): Put[DataType] = {
+  inline def apply[DataType](put: DisallowArray[Saveable[DataType]] => Unit): Put[DataType] = {
     val __obj = js.Dynamic.literal(put = js.Any.fromFunction1(put))
     __obj.asInstanceOf[Put[DataType]]
   }
   
-  @scala.inline
-  implicit class PutMutableBuilder[Self <: Put[?], DataType] (val x: Self & Put[DataType]) extends AnyVal {
+  extension [Self <: Put[?], DataType](x: Self & Put[DataType]) {
     
-    @scala.inline
-    def setPut(value: DisallowArray[Saveable[DataType]] => Unit): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
+    inline def setPut(value: DisallowArray[Saveable[DataType]] => Unit): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
   }
 }

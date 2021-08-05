@@ -23,31 +23,23 @@ trait CancelReplayResponse extends StObject {
 }
 object CancelReplayResponse {
   
-  @scala.inline
-  def apply(): CancelReplayResponse = {
+  inline def apply(): CancelReplayResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelReplayResponse]
   }
   
-  @scala.inline
-  implicit class CancelReplayResponseMutableBuilder[Self <: CancelReplayResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CancelReplayResponse](x: Self) {
     
-    @scala.inline
-    def setReplayArn(value: ReplayArn): Self = StObject.set(x, "ReplayArn", value.asInstanceOf[js.Any])
+    inline def setReplayArn(value: ReplayArn): Self = StObject.set(x, "ReplayArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplayArnUndefined: Self = StObject.set(x, "ReplayArn", js.undefined)
+    inline def setReplayArnUndefined: Self = StObject.set(x, "ReplayArn", js.undefined)
     
-    @scala.inline
-    def setState(value: ReplayState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ReplayState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReason(value: ReplayStateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
+    inline def setStateReason(value: ReplayStateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
+    inline def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

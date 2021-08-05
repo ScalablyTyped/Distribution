@@ -39,23 +39,18 @@ object mod {
   }
   object LineByLine {
     
-    @scala.inline
-    def apply(close: () => Unit, next: () => Buffer | `false`, reset: () => Unit): LineByLine = {
+    inline def apply(close: () => Unit, next: () => Buffer | `false`, reset: () => Unit): LineByLine = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), next = js.Any.fromFunction0(next), reset = js.Any.fromFunction0(reset))
       __obj.asInstanceOf[LineByLine]
     }
     
-    @scala.inline
-    implicit class LineByLineMutableBuilder[Self <: LineByLine] (val x: Self) extends AnyVal {
+    extension [Self <: LineByLine](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNext(value: () => Buffer | `false`): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Buffer | `false`): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
   
@@ -67,26 +62,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setNewLineCharacter(value: String): Self = StObject.set(x, "newLineCharacter", value.asInstanceOf[js.Any])
+      inline def setNewLineCharacter(value: String): Self = StObject.set(x, "newLineCharacter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewLineCharacterUndefined: Self = StObject.set(x, "newLineCharacter", js.undefined)
+      inline def setNewLineCharacterUndefined: Self = StObject.set(x, "newLineCharacter", js.undefined)
       
-      @scala.inline
-      def setReadChunk(value: Double): Self = StObject.set(x, "readChunk", value.asInstanceOf[js.Any])
+      inline def setReadChunk(value: Double): Self = StObject.set(x, "readChunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadChunkUndefined: Self = StObject.set(x, "readChunk", js.undefined)
+      inline def setReadChunkUndefined: Self = StObject.set(x, "readChunk", js.undefined)
     }
   }
 }

@@ -14,25 +14,19 @@ trait LocalizedText extends StObject {
 }
 object LocalizedText {
   
-  @scala.inline
-  def apply(): LocalizedText = {
+  inline def apply(): LocalizedText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalizedText]
   }
   
-  @scala.inline
-  implicit class LocalizedTextMutableBuilder[Self <: LocalizedText] (val x: Self) extends AnyVal {
+  extension [Self <: LocalizedText](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

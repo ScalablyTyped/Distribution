@@ -33,37 +33,27 @@ trait CopyWorkspaceImageRequest extends StObject {
 }
 object CopyWorkspaceImageRequest {
   
-  @scala.inline
-  def apply(Name: WorkspaceImageName, SourceImageId: WorkspaceImageId, SourceRegion: Region): CopyWorkspaceImageRequest = {
+  inline def apply(Name: WorkspaceImageName, SourceImageId: WorkspaceImageId, SourceRegion: Region): CopyWorkspaceImageRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SourceImageId = SourceImageId.asInstanceOf[js.Any], SourceRegion = SourceRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyWorkspaceImageRequest]
   }
   
-  @scala.inline
-  implicit class CopyWorkspaceImageRequestMutableBuilder[Self <: CopyWorkspaceImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CopyWorkspaceImageRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: WorkspaceImageDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: WorkspaceImageDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: WorkspaceImageName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: WorkspaceImageName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImageId(value: WorkspaceImageId): Self = StObject.set(x, "SourceImageId", value.asInstanceOf[js.Any])
+    inline def setSourceImageId(value: WorkspaceImageId): Self = StObject.set(x, "SourceImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRegion(value: Region): Self = StObject.set(x, "SourceRegion", value.asInstanceOf[js.Any])
+    inline def setSourceRegion(value: Region): Self = StObject.set(x, "SourceRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

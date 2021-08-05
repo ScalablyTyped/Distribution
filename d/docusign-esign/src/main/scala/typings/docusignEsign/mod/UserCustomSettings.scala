@@ -17,27 +17,22 @@ trait UserCustomSettings extends StObject {
 }
 object UserCustomSettings {
   
-  @scala.inline
-  def apply(): UserCustomSettings = {
+  inline def apply(): UserCustomSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserCustomSettings]
   }
   
-  @scala.inline
-  implicit class UserCustomSettingsMutableBuilder[Self <: UserCustomSettings] (val x: Self) extends AnyVal {
+  extension [Self <: UserCustomSettings](x: Self) {
     
-    @scala.inline
-    def setCustomSettings(
+    inline def setCustomSettings(
       value: js.Array[
           /* A name-value pair that describes an item and provides a value for the item. */ NameValue
         ]
     ): Self = StObject.set(x, "customSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSettingsUndefined: Self = StObject.set(x, "customSettings", js.undefined)
+    inline def setCustomSettingsUndefined: Self = StObject.set(x, "customSettings", js.undefined)
     
-    @scala.inline
-    def setCustomSettingsVarargs(
+    inline def setCustomSettingsVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
     ): Self = StObject.set(x, "customSettings", js.Array(value :_*))
   }

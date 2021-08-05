@@ -14,19 +14,15 @@ trait HORIZONTAL_ extends StObject {
 }
 object HORIZONTAL_ {
   
-  @scala.inline
-  def apply(): HORIZONTAL_ = {
+  inline def apply(): HORIZONTAL_ = {
     val __obj = js.Dynamic.literal(HORIZONTAL = "horizontal", VERTICAL = "vertical")
     __obj.asInstanceOf[HORIZONTAL_]
   }
   
-  @scala.inline
-  implicit class HORIZONTAL_MutableBuilder[Self <: HORIZONTAL_] (val x: Self) extends AnyVal {
+  extension [Self <: HORIZONTAL_](x: Self) {
     
-    @scala.inline
-    def setHORIZONTAL(value: horizontal): Self = StObject.set(x, "HORIZONTAL", value.asInstanceOf[js.Any])
+    inline def setHORIZONTAL(value: horizontal): Self = StObject.set(x, "HORIZONTAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVERTICAL(value: vertical): Self = StObject.set(x, "VERTICAL", value.asInstanceOf[js.Any])
+    inline def setVERTICAL(value: vertical): Self = StObject.set(x, "VERTICAL", value.asInstanceOf[js.Any])
   }
 }

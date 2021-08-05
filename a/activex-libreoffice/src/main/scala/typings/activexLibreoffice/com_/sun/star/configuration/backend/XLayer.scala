@@ -25,8 +25,7 @@ trait XLayer
 }
 object XLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     readData: XLayerHandler => Unit,
@@ -36,10 +35,8 @@ object XLayer {
     __obj.asInstanceOf[XLayer]
   }
   
-  @scala.inline
-  implicit class XLayerMutableBuilder[Self <: XLayer] (val x: Self) extends AnyVal {
+  extension [Self <: XLayer](x: Self) {
     
-    @scala.inline
-    def setReadData(value: XLayerHandler => Unit): Self = StObject.set(x, "readData", js.Any.fromFunction1(value))
+    inline def setReadData(value: XLayerHandler => Unit): Self = StObject.set(x, "readData", js.Any.fromFunction1(value))
   }
 }

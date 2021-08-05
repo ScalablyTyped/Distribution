@@ -42,100 +42,69 @@ trait IFieldOptions extends StObject {
 }
 object IFieldOptions {
   
-  @scala.inline
-  def apply(): IFieldOptions = {
+  inline def apply(): IFieldOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFieldOptions]
   }
   
-  @scala.inline
-  implicit class IFieldOptionsMutableBuilder[Self <: IFieldOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFieldOptions](x: Self) {
     
-    @scala.inline
-    def setCtype(value: CType): Self = StObject.set(x, "ctype", value.asInstanceOf[js.Any])
+    inline def setCtype(value: CType): Self = StObject.set(x, "ctype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtypeNull: Self = StObject.set(x, "ctype", null)
+    inline def setCtypeNull: Self = StObject.set(x, "ctype", null)
     
-    @scala.inline
-    def setCtypeUndefined: Self = StObject.set(x, "ctype", js.undefined)
+    inline def setCtypeUndefined: Self = StObject.set(x, "ctype", js.undefined)
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedNull: Self = StObject.set(x, "deprecated", null)
+    inline def setDeprecatedNull: Self = StObject.set(x, "deprecated", null)
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    @scala.inline
-    def setDotgoogleDotapiDotfieldBehavior(value: js.Array[FieldBehavior]): Self = StObject.set(x, ".google.api.fieldBehavior", value.asInstanceOf[js.Any])
+    inline def setDotgoogleDotapiDotfieldBehavior(value: js.Array[FieldBehavior]): Self = StObject.set(x, ".google.api.fieldBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotgoogleDotapiDotfieldBehaviorNull: Self = StObject.set(x, ".google.api.fieldBehavior", null)
+    inline def setDotgoogleDotapiDotfieldBehaviorNull: Self = StObject.set(x, ".google.api.fieldBehavior", null)
     
-    @scala.inline
-    def setDotgoogleDotapiDotfieldBehaviorUndefined: Self = StObject.set(x, ".google.api.fieldBehavior", js.undefined)
+    inline def setDotgoogleDotapiDotfieldBehaviorUndefined: Self = StObject.set(x, ".google.api.fieldBehavior", js.undefined)
     
-    @scala.inline
-    def setDotgoogleDotapiDotfieldBehaviorVarargs(value: FieldBehavior*): Self = StObject.set(x, ".google.api.fieldBehavior", js.Array(value :_*))
+    inline def setDotgoogleDotapiDotfieldBehaviorVarargs(value: FieldBehavior*): Self = StObject.set(x, ".google.api.fieldBehavior", js.Array(value :_*))
     
-    @scala.inline
-    def setDotgoogleDotapiDotresourceReference(value: IResourceReference): Self = StObject.set(x, ".google.api.resourceReference", value.asInstanceOf[js.Any])
+    inline def setDotgoogleDotapiDotresourceReference(value: IResourceReference): Self = StObject.set(x, ".google.api.resourceReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotgoogleDotapiDotresourceReferenceNull: Self = StObject.set(x, ".google.api.resourceReference", null)
+    inline def setDotgoogleDotapiDotresourceReferenceNull: Self = StObject.set(x, ".google.api.resourceReference", null)
     
-    @scala.inline
-    def setDotgoogleDotapiDotresourceReferenceUndefined: Self = StObject.set(x, ".google.api.resourceReference", js.undefined)
+    inline def setDotgoogleDotapiDotresourceReferenceUndefined: Self = StObject.set(x, ".google.api.resourceReference", js.undefined)
     
-    @scala.inline
-    def setJstype(value: JSType): Self = StObject.set(x, "jstype", value.asInstanceOf[js.Any])
+    inline def setJstype(value: JSType): Self = StObject.set(x, "jstype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJstypeNull: Self = StObject.set(x, "jstype", null)
+    inline def setJstypeNull: Self = StObject.set(x, "jstype", null)
     
-    @scala.inline
-    def setJstypeUndefined: Self = StObject.set(x, "jstype", js.undefined)
+    inline def setJstypeUndefined: Self = StObject.set(x, "jstype", js.undefined)
     
-    @scala.inline
-    def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+    inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLazyNull: Self = StObject.set(x, "lazy", null)
+    inline def setLazyNull: Self = StObject.set(x, "lazy", null)
     
-    @scala.inline
-    def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+    inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
     
-    @scala.inline
-    def setPacked(value: Boolean): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
+    inline def setPacked(value: Boolean): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackedNull: Self = StObject.set(x, "packed", null)
+    inline def setPackedNull: Self = StObject.set(x, "packed", null)
     
-    @scala.inline
-    def setPackedUndefined: Self = StObject.set(x, "packed", js.undefined)
+    inline def setPackedUndefined: Self = StObject.set(x, "packed", js.undefined)
     
-    @scala.inline
-    def setUninterpretedOption(value: js.Array[IUninterpretedOption]): Self = StObject.set(x, "uninterpretedOption", value.asInstanceOf[js.Any])
+    inline def setUninterpretedOption(value: js.Array[IUninterpretedOption]): Self = StObject.set(x, "uninterpretedOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUninterpretedOptionNull: Self = StObject.set(x, "uninterpretedOption", null)
+    inline def setUninterpretedOptionNull: Self = StObject.set(x, "uninterpretedOption", null)
     
-    @scala.inline
-    def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
+    inline def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
     
-    @scala.inline
-    def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
+    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
     
-    @scala.inline
-    def setWeak(value: Boolean): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
+    inline def setWeak(value: Boolean): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeakNull: Self = StObject.set(x, "weak", null)
+    inline def setWeakNull: Self = StObject.set(x, "weak", null)
     
-    @scala.inline
-    def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
+    inline def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
   }
 }

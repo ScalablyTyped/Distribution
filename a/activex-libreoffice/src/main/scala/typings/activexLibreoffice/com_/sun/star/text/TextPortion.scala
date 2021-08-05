@@ -120,8 +120,7 @@ trait TextPortion
 }
 object TextPortion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableServiceNames: SafeArray[String],
     Bookmark: XTextContent,
     BorderDistance: Double,
@@ -310,37 +309,26 @@ object TextPortion {
     __obj.asInstanceOf[TextPortion]
   }
   
-  @scala.inline
-  implicit class TextPortionMutableBuilder[Self <: TextPortion] (val x: Self) extends AnyVal {
+  extension [Self <: TextPortion](x: Self) {
     
-    @scala.inline
-    def setBookmark(value: XTextContent): Self = StObject.set(x, "Bookmark", value.asInstanceOf[js.Any])
+    inline def setBookmark(value: XTextContent): Self = StObject.set(x, "Bookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlCharacter(value: Double): Self = StObject.set(x, "ControlCharacter", value.asInstanceOf[js.Any])
+    inline def setControlCharacter(value: Double): Self = StObject.set(x, "ControlCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIndexMark(value: XTextContent): Self = StObject.set(x, "DocumentIndexMark", value.asInstanceOf[js.Any])
+    inline def setDocumentIndexMark(value: XTextContent): Self = StObject.set(x, "DocumentIndexMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnote(value: XFootnote): Self = StObject.set(x, "Footnote", value.asInstanceOf[js.Any])
+    inline def setFootnote(value: XFootnote): Self = StObject.set(x, "Footnote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInContentMetadata(value: XTextContent): Self = StObject.set(x, "InContentMetadata", value.asInstanceOf[js.Any])
+    inline def setInContentMetadata(value: XTextContent): Self = StObject.set(x, "InContentMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCollapsed(value: Boolean): Self = StObject.set(x, "IsCollapsed", value.asInstanceOf[js.Any])
+    inline def setIsCollapsed(value: Boolean): Self = StObject.set(x, "IsCollapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStart(value: Boolean): Self = StObject.set(x, "IsStart", value.asInstanceOf[js.Any])
+    inline def setIsStart(value: Boolean): Self = StObject.set(x, "IsStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceMark(value: XTextContent): Self = StObject.set(x, "ReferenceMark", value.asInstanceOf[js.Any])
+    inline def setReferenceMark(value: XTextContent): Self = StObject.set(x, "ReferenceMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextField(value: XTextField): Self = StObject.set(x, "TextField", value.asInstanceOf[js.Any])
+    inline def setTextField(value: XTextField): Self = StObject.set(x, "TextField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPortionType(value: String): Self = StObject.set(x, "TextPortionType", value.asInstanceOf[js.Any])
+    inline def setTextPortionType(value: String): Self = StObject.set(x, "TextPortionType", value.asInstanceOf[js.Any])
   }
 }

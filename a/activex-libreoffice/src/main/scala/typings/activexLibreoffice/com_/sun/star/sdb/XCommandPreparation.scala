@@ -30,8 +30,7 @@ trait XCommandPreparation
 }
 object XCommandPreparation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     prepareCommand: (String, Double) => XPreparedStatement,
     queryInterface: `type` => js.Any,
@@ -41,10 +40,8 @@ object XCommandPreparation {
     __obj.asInstanceOf[XCommandPreparation]
   }
   
-  @scala.inline
-  implicit class XCommandPreparationMutableBuilder[Self <: XCommandPreparation] (val x: Self) extends AnyVal {
+  extension [Self <: XCommandPreparation](x: Self) {
     
-    @scala.inline
-    def setPrepareCommand(value: (String, Double) => XPreparedStatement): Self = StObject.set(x, "prepareCommand", js.Any.fromFunction2(value))
+    inline def setPrepareCommand(value: (String, Double) => XPreparedStatement): Self = StObject.set(x, "prepareCommand", js.Any.fromFunction2(value))
   }
 }

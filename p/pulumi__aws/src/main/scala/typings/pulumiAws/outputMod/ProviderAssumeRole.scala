@@ -25,67 +25,47 @@ trait ProviderAssumeRole extends StObject {
 }
 object ProviderAssumeRole {
   
-  @scala.inline
-  def apply(): ProviderAssumeRole = {
+  inline def apply(): ProviderAssumeRole = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProviderAssumeRole]
   }
   
-  @scala.inline
-  implicit class ProviderAssumeRoleMutableBuilder[Self <: ProviderAssumeRole] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderAssumeRole](x: Self) {
     
-    @scala.inline
-    def setDurationSeconds(value: Double): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationSeconds(value: Double): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
+    inline def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
     
-    @scala.inline
-    def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArns(value: js.Array[String]): Self = StObject.set(x, "policyArns", value.asInstanceOf[js.Any])
+    inline def setPolicyArns(value: js.Array[String]): Self = StObject.set(x, "policyArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArnsUndefined: Self = StObject.set(x, "policyArns", js.undefined)
+    inline def setPolicyArnsUndefined: Self = StObject.set(x, "policyArns", js.undefined)
     
-    @scala.inline
-    def setPolicyArnsVarargs(value: String*): Self = StObject.set(x, "policyArns", js.Array(value :_*))
+    inline def setPolicyArnsVarargs(value: String*): Self = StObject.set(x, "policyArns", js.Array(value :_*))
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
-    @scala.inline
-    def setSessionName(value: String): Self = StObject.set(x, "sessionName", value.asInstanceOf[js.Any])
+    inline def setSessionName(value: String): Self = StObject.set(x, "sessionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionNameUndefined: Self = StObject.set(x, "sessionName", js.undefined)
+    inline def setSessionNameUndefined: Self = StObject.set(x, "sessionName", js.undefined)
     
-    @scala.inline
-    def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTransitiveTagKeys(value: js.Array[String]): Self = StObject.set(x, "transitiveTagKeys", value.asInstanceOf[js.Any])
+    inline def setTransitiveTagKeys(value: js.Array[String]): Self = StObject.set(x, "transitiveTagKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitiveTagKeysUndefined: Self = StObject.set(x, "transitiveTagKeys", js.undefined)
+    inline def setTransitiveTagKeysUndefined: Self = StObject.set(x, "transitiveTagKeys", js.undefined)
     
-    @scala.inline
-    def setTransitiveTagKeysVarargs(value: String*): Self = StObject.set(x, "transitiveTagKeys", js.Array(value :_*))
+    inline def setTransitiveTagKeysVarargs(value: String*): Self = StObject.set(x, "transitiveTagKeys", js.Array(value :_*))
   }
 }

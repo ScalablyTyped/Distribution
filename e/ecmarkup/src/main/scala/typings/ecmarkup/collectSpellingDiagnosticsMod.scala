@@ -11,8 +11,7 @@ object collectSpellingDiagnosticsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def collectSpellingDiagnostics(
+  inline def collectSpellingDiagnostics(
     report: js.Function1[/* e */ Warning, Unit],
     mainSource: String,
     imports: js.Array[

@@ -13,8 +13,7 @@ trait TextDocumentIdentifier extends StObject {
 }
 object TextDocumentIdentifier {
   
-  @scala.inline
-  def apply(uri: DocumentUri): TextDocumentIdentifier = {
+  inline def apply(uri: DocumentUri): TextDocumentIdentifier = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDocumentIdentifier]
   }
@@ -27,19 +26,15 @@ object TextDocumentIdentifier {
     * Creates a new TextDocumentIdentifier literal.
     * @param uri The document's uri.
     */
-  @scala.inline
-  def create(uri: DocumentUri): TextDocumentIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any]).asInstanceOf[TextDocumentIdentifier]
+  inline def create(uri: DocumentUri): TextDocumentIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any]).asInstanceOf[TextDocumentIdentifier]
   
   /**
     * Checks whether the given literal conforms to the [TextDocumentIdentifier](#TextDocumentIdentifier) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentIdentifier */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentIdentifier */ Boolean]
   
-  @scala.inline
-  implicit class TextDocumentIdentifierMutableBuilder[Self <: TextDocumentIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: TextDocumentIdentifier](x: Self) {
     
-    @scala.inline
-    def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

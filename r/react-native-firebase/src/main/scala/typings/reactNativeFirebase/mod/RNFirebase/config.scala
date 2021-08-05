@@ -71,21 +71,17 @@ object config {
   }
   object ConfigSnapshot {
     
-    @scala.inline
-    def apply(source: String, `val`: () => js.Any): ConfigSnapshot = {
+    inline def apply(source: String, `val`: () => js.Any): ConfigSnapshot = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("val")(js.Any.fromFunction0(`val`))
       __obj.asInstanceOf[ConfigSnapshot]
     }
     
-    @scala.inline
-    implicit class ConfigSnapshotMutableBuilder[Self <: ConfigSnapshot] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigSnapshot](x: Self) {
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVal(value: () => js.Any): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
+      inline def setVal(value: () => js.Any): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
     }
   }
   

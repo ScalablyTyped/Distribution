@@ -13,19 +13,15 @@ trait GetRemoteAccessSessionResult extends StObject {
 }
 object GetRemoteAccessSessionResult {
   
-  @scala.inline
-  def apply(): GetRemoteAccessSessionResult = {
+  inline def apply(): GetRemoteAccessSessionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRemoteAccessSessionResult]
   }
   
-  @scala.inline
-  implicit class GetRemoteAccessSessionResultMutableBuilder[Self <: GetRemoteAccessSessionResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetRemoteAccessSessionResult](x: Self) {
     
-    @scala.inline
-    def setRemoteAccessSession(value: RemoteAccessSession): Self = StObject.set(x, "remoteAccessSession", value.asInstanceOf[js.Any])
+    inline def setRemoteAccessSession(value: RemoteAccessSession): Self = StObject.set(x, "remoteAccessSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteAccessSessionUndefined: Self = StObject.set(x, "remoteAccessSession", js.undefined)
+    inline def setRemoteAccessSessionUndefined: Self = StObject.set(x, "remoteAccessSession", js.undefined)
   }
 }

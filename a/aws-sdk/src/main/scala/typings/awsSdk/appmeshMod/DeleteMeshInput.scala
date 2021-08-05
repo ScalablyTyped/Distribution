@@ -13,16 +13,13 @@ trait DeleteMeshInput extends StObject {
 }
 object DeleteMeshInput {
   
-  @scala.inline
-  def apply(meshName: ResourceName): DeleteMeshInput = {
+  inline def apply(meshName: ResourceName): DeleteMeshInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMeshInput]
   }
   
-  @scala.inline
-  implicit class DeleteMeshInputMutableBuilder[Self <: DeleteMeshInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMeshInput](x: Self) {
     
-    @scala.inline
-    def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+    inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
   }
 }

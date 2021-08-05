@@ -76,69 +76,49 @@ trait IDD
 }
 object IDD {
   
-  @scala.inline
-  def apply(): IDD = {
+  inline def apply(): IDD = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDD]
   }
   
-  @scala.inline
-  implicit class IDDMutableBuilder[Self <: IDD] (val x: Self) extends AnyVal {
+  extension [Self <: IDD](x: Self) {
     
-    @scala.inline
-    def setAlignElWithMouse(
+    inline def setAlignElWithMouse(
       value: (/* el */ js.UndefOr[HTMLElement], /* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "alignElWithMouse", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAlignElWithMouseUndefined: Self = StObject.set(x, "alignElWithMouse", js.undefined)
+    inline def setAlignElWithMouseUndefined: Self = StObject.set(x, "alignElWithMouse", js.undefined)
     
-    @scala.inline
-    def setAutoOffset(value: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "autoOffset", js.Any.fromFunction2(value))
+    inline def setAutoOffset(value: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "autoOffset", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAutoOffsetUndefined: Self = StObject.set(x, "autoOffset", js.undefined)
+    inline def setAutoOffsetUndefined: Self = StObject.set(x, "autoOffset", js.undefined)
     
-    @scala.inline
-    def setB4Drag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "b4Drag", js.Any.fromFunction1(value))
+    inline def setB4Drag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "b4Drag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setB4DragUndefined: Self = StObject.set(x, "b4Drag", js.undefined)
+    inline def setB4DragUndefined: Self = StObject.set(x, "b4Drag", js.undefined)
     
-    @scala.inline
-    def setB4MouseDown(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "b4MouseDown", js.Any.fromFunction1(value))
+    inline def setB4MouseDown(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "b4MouseDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setB4MouseDownUndefined: Self = StObject.set(x, "b4MouseDown", js.undefined)
+    inline def setB4MouseDownUndefined: Self = StObject.set(x, "b4MouseDown", js.undefined)
     
-    @scala.inline
-    def setCachePosition(value: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "cachePosition", js.Any.fromFunction2(value))
+    inline def setCachePosition(value: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "cachePosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCachePositionUndefined: Self = StObject.set(x, "cachePosition", js.undefined)
+    inline def setCachePositionUndefined: Self = StObject.set(x, "cachePosition", js.undefined)
     
-    @scala.inline
-    def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+    inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     
-    @scala.inline
-    def setSetDelta(value: (/* iDeltaX */ js.UndefOr[Double], /* iDeltaY */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "setDelta", js.Any.fromFunction2(value))
+    inline def setSetDelta(value: (/* iDeltaX */ js.UndefOr[Double], /* iDeltaY */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "setDelta", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetDeltaUndefined: Self = StObject.set(x, "setDelta", js.undefined)
+    inline def setSetDeltaUndefined: Self = StObject.set(x, "setDelta", js.undefined)
     
-    @scala.inline
-    def setSetDragElPos(value: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "setDragElPos", js.Any.fromFunction2(value))
+    inline def setSetDragElPos(value: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "setDragElPos", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetDragElPosUndefined: Self = StObject.set(x, "setDragElPos", js.undefined)
+    inline def setSetDragElPosUndefined: Self = StObject.set(x, "setDragElPos", js.undefined)
     
-    @scala.inline
-    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+    inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
+    inline def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
   }
 }

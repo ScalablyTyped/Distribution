@@ -18,40 +18,29 @@ trait NavigationReplaceActionPayload extends StObject {
 }
 object NavigationReplaceActionPayload {
   
-  @scala.inline
-  def apply(routeName: String): NavigationReplaceActionPayload = {
+  inline def apply(routeName: String): NavigationReplaceActionPayload = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationReplaceActionPayload]
   }
   
-  @scala.inline
-  implicit class NavigationReplaceActionPayloadMutableBuilder[Self <: NavigationReplaceActionPayload] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationReplaceActionPayload](x: Self) {
     
-    @scala.inline
-    def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setNewKey(value: String): Self = StObject.set(x, "newKey", value.asInstanceOf[js.Any])
+    inline def setNewKey(value: String): Self = StObject.set(x, "newKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewKeyUndefined: Self = StObject.set(x, "newKey", js.undefined)
+    inline def setNewKeyUndefined: Self = StObject.set(x, "newKey", js.undefined)
     
-    @scala.inline
-    def setParams(value: NavigationParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: NavigationParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
+    inline def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
   }
 }

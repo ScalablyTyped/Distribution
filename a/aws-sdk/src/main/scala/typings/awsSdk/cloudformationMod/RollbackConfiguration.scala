@@ -18,28 +18,21 @@ trait RollbackConfiguration extends StObject {
 }
 object RollbackConfiguration {
   
-  @scala.inline
-  def apply(): RollbackConfiguration = {
+  inline def apply(): RollbackConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RollbackConfiguration]
   }
   
-  @scala.inline
-  implicit class RollbackConfigurationMutableBuilder[Self <: RollbackConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: RollbackConfiguration](x: Self) {
     
-    @scala.inline
-    def setMonitoringTimeInMinutes(value: MonitoringTimeInMinutes): Self = StObject.set(x, "MonitoringTimeInMinutes", value.asInstanceOf[js.Any])
+    inline def setMonitoringTimeInMinutes(value: MonitoringTimeInMinutes): Self = StObject.set(x, "MonitoringTimeInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringTimeInMinutesUndefined: Self = StObject.set(x, "MonitoringTimeInMinutes", js.undefined)
+    inline def setMonitoringTimeInMinutesUndefined: Self = StObject.set(x, "MonitoringTimeInMinutes", js.undefined)
     
-    @scala.inline
-    def setRollbackTriggers(value: RollbackTriggers): Self = StObject.set(x, "RollbackTriggers", value.asInstanceOf[js.Any])
+    inline def setRollbackTriggers(value: RollbackTriggers): Self = StObject.set(x, "RollbackTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollbackTriggersUndefined: Self = StObject.set(x, "RollbackTriggers", js.undefined)
+    inline def setRollbackTriggersUndefined: Self = StObject.set(x, "RollbackTriggers", js.undefined)
     
-    @scala.inline
-    def setRollbackTriggersVarargs(value: RollbackTrigger*): Self = StObject.set(x, "RollbackTriggers", js.Array(value :_*))
+    inline def setRollbackTriggersVarargs(value: RollbackTrigger*): Self = StObject.set(x, "RollbackTriggers", js.Array(value :_*))
   }
 }

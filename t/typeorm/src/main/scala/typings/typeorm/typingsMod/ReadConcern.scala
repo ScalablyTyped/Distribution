@@ -10,19 +10,15 @@ trait ReadConcern extends StObject {
 }
 object ReadConcern {
   
-  @scala.inline
-  def apply(): ReadConcern = {
+  inline def apply(): ReadConcern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadConcern]
   }
   
-  @scala.inline
-  implicit class ReadConcernMutableBuilder[Self <: ReadConcern] (val x: Self) extends AnyVal {
+  extension [Self <: ReadConcern](x: Self) {
     
-    @scala.inline
-    def setLevel(value: ReadConcernLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: ReadConcernLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

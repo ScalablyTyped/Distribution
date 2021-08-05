@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionType extends StObject
 object DirectionType {
   
-  @scala.inline
-  def bottom: typings.dplayer.dplayerStrings.bottom = "bottom".asInstanceOf[typings.dplayer.dplayerStrings.bottom]
+  inline def bottom: typings.dplayer.dplayerStrings.bottom = "bottom".asInstanceOf[typings.dplayer.dplayerStrings.bottom]
   
-  @scala.inline
-  def right: typings.dplayer.dplayerStrings.right = "right".asInstanceOf[typings.dplayer.dplayerStrings.right]
+  inline def right: typings.dplayer.dplayerStrings.right = "right".asInstanceOf[typings.dplayer.dplayerStrings.right]
   
-  @scala.inline
-  def top: typings.dplayer.dplayerStrings.top = "top".asInstanceOf[typings.dplayer.dplayerStrings.top]
+  inline def top: typings.dplayer.dplayerStrings.top = "top".asInstanceOf[typings.dplayer.dplayerStrings.top]
 }

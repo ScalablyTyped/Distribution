@@ -27,52 +27,37 @@ trait StyleFunction extends StObject {
 }
 object StyleFunction {
   
-  @scala.inline
-  def apply(): StyleFunction = {
+  inline def apply(): StyleFunction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StyleFunction]
   }
   
-  @scala.inline
-  implicit class StyleFunctionMutableBuilder[Self <: StyleFunction] (val x: Self) extends AnyVal {
+  extension [Self <: StyleFunction](x: Self) {
     
-    @scala.inline
-    def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
-    @scala.inline
-    def setColorSpace(value: rgb | lab | hcl): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: rgb | lab | hcl): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
+    inline def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
     
-    @scala.inline
-    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    @scala.inline
-    def setStops(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "stops", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: identity | exponential | interval | categorical): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: identity | exponential | interval | categorical): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -12,14 +12,10 @@ object getSpotPriceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSpotPrice(): js.Promise[GetSpotPriceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpotPrice")().asInstanceOf[js.Promise[GetSpotPriceResult]]
-  @scala.inline
-  def getSpotPrice(args: Unit, opts: InvokeOptions): js.Promise[GetSpotPriceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpotPrice")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSpotPriceResult]]
-  @scala.inline
-  def getSpotPrice(args: GetSpotPriceArgs): js.Promise[GetSpotPriceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpotPrice")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSpotPriceResult]]
-  @scala.inline
-  def getSpotPrice(args: GetSpotPriceArgs, opts: InvokeOptions): js.Promise[GetSpotPriceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpotPrice")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSpotPriceResult]]
+  inline def getSpotPrice(): js.Promise[GetSpotPriceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpotPrice")().asInstanceOf[js.Promise[GetSpotPriceResult]]
+  inline def getSpotPrice(args: Unit, opts: InvokeOptions): js.Promise[GetSpotPriceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpotPrice")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSpotPriceResult]]
+  inline def getSpotPrice(args: GetSpotPriceArgs): js.Promise[GetSpotPriceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpotPrice")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSpotPriceResult]]
+  inline def getSpotPrice(args: GetSpotPriceArgs, opts: InvokeOptions): js.Promise[GetSpotPriceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpotPrice")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSpotPriceResult]]
   
   trait GetSpotPriceArgs extends StObject {
     
@@ -40,35 +36,26 @@ object getSpotPriceMod {
   }
   object GetSpotPriceArgs {
     
-    @scala.inline
-    def apply(): GetSpotPriceArgs = {
+    inline def apply(): GetSpotPriceArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetSpotPriceArgs]
     }
     
-    @scala.inline
-    implicit class GetSpotPriceArgsMutableBuilder[Self <: GetSpotPriceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetSpotPriceArgs](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+      inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
       
-      @scala.inline
-      def setFilters(value: js.Array[GetSpotPriceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetSpotPriceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetSpotPriceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetSpotPriceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+      inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     }
   }
   
@@ -97,44 +84,32 @@ object getSpotPriceMod {
   }
   object GetSpotPriceResult {
     
-    @scala.inline
-    def apply(id: String, spotPrice: String, spotPriceTimestamp: String): GetSpotPriceResult = {
+    inline def apply(id: String, spotPrice: String, spotPriceTimestamp: String): GetSpotPriceResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], spotPrice = spotPrice.asInstanceOf[js.Any], spotPriceTimestamp = spotPriceTimestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSpotPriceResult]
     }
     
-    @scala.inline
-    implicit class GetSpotPriceResultMutableBuilder[Self <: GetSpotPriceResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetSpotPriceResult](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+      inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetSpotPriceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetSpotPriceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetSpotPriceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetSpotPriceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+      inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
       
-      @scala.inline
-      def setSpotPrice(value: String): Self = StObject.set(x, "spotPrice", value.asInstanceOf[js.Any])
+      inline def setSpotPrice(value: String): Self = StObject.set(x, "spotPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpotPriceTimestamp(value: String): Self = StObject.set(x, "spotPriceTimestamp", value.asInstanceOf[js.Any])
+      inline def setSpotPriceTimestamp(value: String): Self = StObject.set(x, "spotPriceTimestamp", value.asInstanceOf[js.Any])
     }
   }
 }

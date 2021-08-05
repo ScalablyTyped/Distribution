@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlViewSaveOption extends StObject
 object OlViewSaveOption {
   
-  @scala.inline
-  def olViewSaveOptionAllFoldersOfType: `2` = 2.asInstanceOf[`2`]
+  inline def olViewSaveOptionAllFoldersOfType: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olViewSaveOptionThisFolderEveryone: `0` = 0.asInstanceOf[`0`]
+  inline def olViewSaveOptionThisFolderEveryone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olViewSaveOptionThisFolderOnlyMe: `1` = 1.asInstanceOf[`1`]
+  inline def olViewSaveOptionThisFolderOnlyMe: `1` = 1.asInstanceOf[`1`]
 }

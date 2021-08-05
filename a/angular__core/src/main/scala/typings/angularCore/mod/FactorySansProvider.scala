@@ -22,25 +22,19 @@ trait FactorySansProvider
 }
 object FactorySansProvider {
   
-  @scala.inline
-  def apply(useFactory: js.Function): FactorySansProvider = {
+  inline def apply(useFactory: js.Function): FactorySansProvider = {
     val __obj = js.Dynamic.literal(useFactory = useFactory.asInstanceOf[js.Any])
     __obj.asInstanceOf[FactorySansProvider]
   }
   
-  @scala.inline
-  implicit class FactorySansProviderMutableBuilder[Self <: FactorySansProvider] (val x: Self) extends AnyVal {
+  extension [Self <: FactorySansProvider](x: Self) {
     
-    @scala.inline
-    def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
+    inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
-    @scala.inline
-    def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
-    @scala.inline
-    def setUseFactory(value: js.Function): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
+    inline def setUseFactory(value: js.Function): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
   }
 }

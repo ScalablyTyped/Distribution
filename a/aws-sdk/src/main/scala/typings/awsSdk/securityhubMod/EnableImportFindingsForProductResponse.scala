@@ -13,19 +13,15 @@ trait EnableImportFindingsForProductResponse extends StObject {
 }
 object EnableImportFindingsForProductResponse {
   
-  @scala.inline
-  def apply(): EnableImportFindingsForProductResponse = {
+  inline def apply(): EnableImportFindingsForProductResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableImportFindingsForProductResponse]
   }
   
-  @scala.inline
-  implicit class EnableImportFindingsForProductResponseMutableBuilder[Self <: EnableImportFindingsForProductResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EnableImportFindingsForProductResponse](x: Self) {
     
-    @scala.inline
-    def setProductSubscriptionArn(value: NonEmptyString): Self = StObject.set(x, "ProductSubscriptionArn", value.asInstanceOf[js.Any])
+    inline def setProductSubscriptionArn(value: NonEmptyString): Self = StObject.set(x, "ProductSubscriptionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductSubscriptionArnUndefined: Self = StObject.set(x, "ProductSubscriptionArn", js.undefined)
+    inline def setProductSubscriptionArnUndefined: Self = StObject.set(x, "ProductSubscriptionArn", js.undefined)
   }
 }

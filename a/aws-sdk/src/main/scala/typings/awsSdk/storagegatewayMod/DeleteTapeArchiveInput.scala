@@ -18,22 +18,17 @@ trait DeleteTapeArchiveInput extends StObject {
 }
 object DeleteTapeArchiveInput {
   
-  @scala.inline
-  def apply(TapeARN: TapeARN): DeleteTapeArchiveInput = {
+  inline def apply(TapeARN: TapeARN): DeleteTapeArchiveInput = {
     val __obj = js.Dynamic.literal(TapeARN = TapeARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTapeArchiveInput]
   }
   
-  @scala.inline
-  implicit class DeleteTapeArchiveInputMutableBuilder[Self <: DeleteTapeArchiveInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTapeArchiveInput](x: Self) {
     
-    @scala.inline
-    def setBypassGovernanceRetention(value: scala.Boolean): Self = StObject.set(x, "BypassGovernanceRetention", value.asInstanceOf[js.Any])
+    inline def setBypassGovernanceRetention(value: scala.Boolean): Self = StObject.set(x, "BypassGovernanceRetention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBypassGovernanceRetentionUndefined: Self = StObject.set(x, "BypassGovernanceRetention", js.undefined)
+    inline def setBypassGovernanceRetentionUndefined: Self = StObject.set(x, "BypassGovernanceRetention", js.undefined)
     
-    @scala.inline
-    def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
+    inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
   }
 }

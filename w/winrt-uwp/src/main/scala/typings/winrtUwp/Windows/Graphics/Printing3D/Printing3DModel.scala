@@ -45,8 +45,7 @@ trait Printing3DModel extends StObject {
 }
 object Printing3DModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: Printing3DComponent,
     components: IVector[Printing3DComponent],
     material: Printing3DMaterial,
@@ -62,37 +61,26 @@ object Printing3DModel {
     __obj.asInstanceOf[Printing3DModel]
   }
   
-  @scala.inline
-  implicit class Printing3DModelMutableBuilder[Self <: Printing3DModel] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DModel](x: Self) {
     
-    @scala.inline
-    def setBuild(value: Printing3DComponent): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: Printing3DComponent): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponents(value: IVector[Printing3DComponent]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: IVector[Printing3DComponent]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterial(value: Printing3DMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: Printing3DMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshes(value: IVector[Printing3DMesh]): Self = StObject.set(x, "meshes", value.asInstanceOf[js.Any])
+    inline def setMeshes(value: IVector[Printing3DMesh]): Self = StObject.set(x, "meshes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: IMap[String, String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: IMap[String, String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepairAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "repairAsync", js.Any.fromFunction0(value))
+    inline def setRepairAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "repairAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequiredExtensions(value: IVector[String]): Self = StObject.set(x, "requiredExtensions", value.asInstanceOf[js.Any])
+    inline def setRequiredExtensions(value: IVector[String]): Self = StObject.set(x, "requiredExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextures(value: IVector[Printing3DModelTexture]): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
+    inline def setTextures(value: IVector[Printing3DModelTexture]): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: Printing3DModelUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: Printing3DModelUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

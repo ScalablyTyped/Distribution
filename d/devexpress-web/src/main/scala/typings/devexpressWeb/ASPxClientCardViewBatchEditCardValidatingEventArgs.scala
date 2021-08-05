@@ -23,19 +23,15 @@ trait ASPxClientCardViewBatchEditCardValidatingEventArgs
 }
 object ASPxClientCardViewBatchEditCardValidatingEventArgs {
   
-  @scala.inline
-  def apply(validationInfo: js.Any, visibleIndex: Double): ASPxClientCardViewBatchEditCardValidatingEventArgs = {
+  inline def apply(validationInfo: js.Any, visibleIndex: Double): ASPxClientCardViewBatchEditCardValidatingEventArgs = {
     val __obj = js.Dynamic.literal(validationInfo = validationInfo.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCardViewBatchEditCardValidatingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCardViewBatchEditCardValidatingEventArgsMutableBuilder[Self <: ASPxClientCardViewBatchEditCardValidatingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCardViewBatchEditCardValidatingEventArgs](x: Self) {
     
-    @scala.inline
-    def setValidationInfo(value: js.Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
+    inline def setValidationInfo(value: js.Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

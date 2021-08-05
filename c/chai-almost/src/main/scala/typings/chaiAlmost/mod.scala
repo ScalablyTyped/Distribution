@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ChaiPlugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ChaiPlugin]
-  @scala.inline
-  def apply(tolerance: Double): ChaiPlugin = ^.asInstanceOf[js.Dynamic].apply(tolerance.asInstanceOf[js.Any]).asInstanceOf[ChaiPlugin]
+  inline def apply(): ChaiPlugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ChaiPlugin]
+  inline def apply(tolerance: Double): ChaiPlugin = ^.asInstanceOf[js.Dynamic].apply(tolerance.asInstanceOf[js.Any]).asInstanceOf[ChaiPlugin]
   
   @JSImport("chai-almost", JSImport.Namespace)
   @js.native
@@ -32,17 +30,14 @@ object mod {
       }
       object Assertion {
         
-        @scala.inline
-        def apply(almost: Almost): Assertion = {
+        inline def apply(almost: Almost): Assertion = {
           val __obj = js.Dynamic.literal(almost = almost.asInstanceOf[js.Any])
           __obj.asInstanceOf[Assertion]
         }
         
-        @scala.inline
-        implicit class AssertionMutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
+        extension [Self <: Assertion](x: Self) {
           
-          @scala.inline
-          def setAlmost(value: Almost): Self = StObject.set(x, "almost", value.asInstanceOf[js.Any])
+          inline def setAlmost(value: Almost): Self = StObject.set(x, "almost", value.asInstanceOf[js.Any])
         }
       }
       
@@ -96,17 +91,14 @@ object mod {
       }
       object Deep {
         
-        @scala.inline
-        def apply(almost: DeepAlmost): Deep = {
+        inline def apply(almost: DeepAlmost): Deep = {
           val __obj = js.Dynamic.literal(almost = almost.asInstanceOf[js.Any])
           __obj.asInstanceOf[Deep]
         }
         
-        @scala.inline
-        implicit class DeepMutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
+        extension [Self <: Deep](x: Self) {
           
-          @scala.inline
-          def setAlmost(value: DeepAlmost): Self = StObject.set(x, "almost", value.asInstanceOf[js.Any])
+          inline def setAlmost(value: DeepAlmost): Self = StObject.set(x, "almost", value.asInstanceOf[js.Any])
         }
       }
     }

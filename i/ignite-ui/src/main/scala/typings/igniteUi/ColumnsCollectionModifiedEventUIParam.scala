@@ -13,19 +13,15 @@ trait ColumnsCollectionModifiedEventUIParam extends StObject {
 }
 object ColumnsCollectionModifiedEventUIParam {
   
-  @scala.inline
-  def apply(): ColumnsCollectionModifiedEventUIParam = {
+  inline def apply(): ColumnsCollectionModifiedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnsCollectionModifiedEventUIParam]
   }
   
-  @scala.inline
-  implicit class ColumnsCollectionModifiedEventUIParamMutableBuilder[Self <: ColumnsCollectionModifiedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnsCollectionModifiedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

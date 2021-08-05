@@ -74,8 +74,7 @@ object mod {
   }
   object ExpoMixpanelAnalytics {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       identify: String => Unit,
       people_append: Props[js.Any] => Unit,
       people_delete_user: () => Unit,
@@ -92,41 +91,29 @@ object mod {
       __obj.asInstanceOf[ExpoMixpanelAnalytics]
     }
     
-    @scala.inline
-    implicit class ExpoMixpanelAnalyticsMutableBuilder[Self <: ExpoMixpanelAnalytics] (val x: Self) extends AnyVal {
+    extension [Self <: ExpoMixpanelAnalytics](x: Self) {
       
-      @scala.inline
-      def setIdentify(value: String => Unit): Self = StObject.set(x, "identify", js.Any.fromFunction1(value))
+      inline def setIdentify(value: String => Unit): Self = StObject.set(x, "identify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPeople_append(value: Props[js.Any] => Unit): Self = StObject.set(x, "people_append", js.Any.fromFunction1(value))
+      inline def setPeople_append(value: Props[js.Any] => Unit): Self = StObject.set(x, "people_append", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPeople_delete_user(value: () => Unit): Self = StObject.set(x, "people_delete_user", js.Any.fromFunction0(value))
+      inline def setPeople_delete_user(value: () => Unit): Self = StObject.set(x, "people_delete_user", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPeople_increment(value: Props[Double] => Unit): Self = StObject.set(x, "people_increment", js.Any.fromFunction1(value))
+      inline def setPeople_increment(value: Props[Double] => Unit): Self = StObject.set(x, "people_increment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPeople_set(value: Props[js.Any] => Unit): Self = StObject.set(x, "people_set", js.Any.fromFunction1(value))
+      inline def setPeople_set(value: Props[js.Any] => Unit): Self = StObject.set(x, "people_set", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPeople_set_once(value: Props[js.Any] => Unit): Self = StObject.set(x, "people_set_once", js.Any.fromFunction1(value))
+      inline def setPeople_set_once(value: Props[js.Any] => Unit): Self = StObject.set(x, "people_set_once", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPeople_union(value: Props[js.Array[String]] => Unit): Self = StObject.set(x, "people_union", js.Any.fromFunction1(value))
+      inline def setPeople_union(value: Props[js.Array[String]] => Unit): Self = StObject.set(x, "people_union", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPeople_unset(value: js.Array[String] => Unit): Self = StObject.set(x, "people_unset", js.Any.fromFunction1(value))
+      inline def setPeople_unset(value: js.Array[String] => Unit): Self = StObject.set(x, "people_unset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack(value: (String, Props[js.Any]) => Unit): Self = StObject.set(x, "track", js.Any.fromFunction2(value))
+      inline def setTrack(value: (String, Props[js.Any]) => Unit): Self = StObject.set(x, "track", js.Any.fromFunction2(value))
     }
   }
   

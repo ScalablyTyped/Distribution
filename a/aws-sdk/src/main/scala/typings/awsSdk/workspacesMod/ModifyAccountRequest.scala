@@ -18,25 +18,19 @@ trait ModifyAccountRequest extends StObject {
 }
 object ModifyAccountRequest {
   
-  @scala.inline
-  def apply(): ModifyAccountRequest = {
+  inline def apply(): ModifyAccountRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyAccountRequest]
   }
   
-  @scala.inline
-  implicit class ModifyAccountRequestMutableBuilder[Self <: ModifyAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyAccountRequest](x: Self) {
     
-    @scala.inline
-    def setDedicatedTenancyManagementCidrRange(value: DedicatedTenancyManagementCidrRange): Self = StObject.set(x, "DedicatedTenancyManagementCidrRange", value.asInstanceOf[js.Any])
+    inline def setDedicatedTenancyManagementCidrRange(value: DedicatedTenancyManagementCidrRange): Self = StObject.set(x, "DedicatedTenancyManagementCidrRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDedicatedTenancyManagementCidrRangeUndefined: Self = StObject.set(x, "DedicatedTenancyManagementCidrRange", js.undefined)
+    inline def setDedicatedTenancyManagementCidrRangeUndefined: Self = StObject.set(x, "DedicatedTenancyManagementCidrRange", js.undefined)
     
-    @scala.inline
-    def setDedicatedTenancySupport(value: DedicatedTenancySupportEnum): Self = StObject.set(x, "DedicatedTenancySupport", value.asInstanceOf[js.Any])
+    inline def setDedicatedTenancySupport(value: DedicatedTenancySupportEnum): Self = StObject.set(x, "DedicatedTenancySupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDedicatedTenancySupportUndefined: Self = StObject.set(x, "DedicatedTenancySupport", js.undefined)
+    inline def setDedicatedTenancySupportUndefined: Self = StObject.set(x, "DedicatedTenancySupport", js.undefined)
   }
 }

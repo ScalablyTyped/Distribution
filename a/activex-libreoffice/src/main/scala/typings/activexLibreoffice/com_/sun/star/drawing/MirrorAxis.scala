@@ -15,10 +15,8 @@ trait MirrorAxis extends StObject
 object MirrorAxis {
   
   /** mirror to the horizontal axis */
-  @scala.inline
-  def HORIZONTAL: `1` = 1.asInstanceOf[`1`]
+  inline def HORIZONTAL: `1` = 1.asInstanceOf[`1`]
   
   /** mirror to the vertical axis */
-  @scala.inline
-  def VERTICAL: `0` = 0.asInstanceOf[`0`]
+  inline def VERTICAL: `0` = 0.asInstanceOf[`0`]
 }

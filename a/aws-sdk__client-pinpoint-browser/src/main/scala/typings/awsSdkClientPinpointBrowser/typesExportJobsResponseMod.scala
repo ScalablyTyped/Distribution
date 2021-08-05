@@ -23,29 +23,22 @@ object typesExportJobsResponseMod {
   }
   object ExportJobsResponse {
     
-    @scala.inline
-    def apply(): ExportJobsResponse = {
+    inline def apply(): ExportJobsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExportJobsResponse]
     }
     
-    @scala.inline
-    implicit class ExportJobsResponseMutableBuilder[Self <: ExportJobsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ExportJobsResponse](x: Self) {
       
-      @scala.inline
-      def setItem(value: js.Array[ExportJobResponse] | Iterable[ExportJobResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[ExportJobResponse] | Iterable[ExportJobResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setItemVarargs(value: ExportJobResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: ExportJobResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     }
   }
   
@@ -61,23 +54,18 @@ object typesExportJobsResponseMod {
   }
   object UnmarshalledExportJobsResponse {
     
-    @scala.inline
-    def apply(): UnmarshalledExportJobsResponse = {
+    inline def apply(): UnmarshalledExportJobsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledExportJobsResponse]
     }
     
-    @scala.inline
-    implicit class UnmarshalledExportJobsResponseMutableBuilder[Self <: UnmarshalledExportJobsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledExportJobsResponse](x: Self) {
       
-      @scala.inline
-      def setItem(value: js.Array[UnmarshalledExportJobResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[UnmarshalledExportJobResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setItemVarargs(value: UnmarshalledExportJobResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: UnmarshalledExportJobResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
     }
   }
 }

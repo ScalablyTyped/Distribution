@@ -10,19 +10,15 @@ trait JQuerySupport extends StObject {
 }
 object JQuerySupport {
   
-  @scala.inline
-  def apply(): JQuerySupport = {
+  inline def apply(): JQuerySupport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQuerySupport]
   }
   
-  @scala.inline
-  implicit class JQuerySupportMutableBuilder[Self <: JQuerySupport] (val x: Self) extends AnyVal {
+  extension [Self <: JQuerySupport](x: Self) {
     
-    @scala.inline
-    def setFileInput(value: Boolean): Self = StObject.set(x, "fileInput", value.asInstanceOf[js.Any])
+    inline def setFileInput(value: Boolean): Self = StObject.set(x, "fileInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileInputUndefined: Self = StObject.set(x, "fileInput", js.undefined)
+    inline def setFileInputUndefined: Self = StObject.set(x, "fileInput", js.undefined)
   }
 }

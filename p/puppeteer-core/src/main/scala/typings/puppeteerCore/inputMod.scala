@@ -19,18 +19,18 @@ object inputMod {
     /** @internal */
     def this(client: CDPSession) = this()
     
-    var _client: js.Any = js.native
+    /* private */ var _client: js.Any = js.native
     
-    var _keyDescriptionForString: js.Any = js.native
+    /* private */ var _keyDescriptionForString: js.Any = js.native
     
-    var _modifierBit: js.Any = js.native
+    /* private */ var _modifierBit: js.Any = js.native
     
     /** @internal */
     var _modifiers: Double = js.native
     
-    var _pressedKeys: js.Any = js.native
+    /* private */ var _pressedKeys: js.Any = js.native
     
-    var charIsKey: js.Any = js.native
+    /* private */ var charIsKey: js.Any = js.native
     
     /**
       * Dispatches a `keydown` event.
@@ -143,15 +143,15 @@ object inputMod {
       */
     def this(client: CDPSession, keyboard: Keyboard) = this()
     
-    var _button: js.Any = js.native
+    /* private */ var _button: js.Any = js.native
     
-    var _client: js.Any = js.native
+    /* private */ var _client: js.Any = js.native
     
-    var _keyboard: js.Any = js.native
+    /* private */ var _keyboard: js.Any = js.native
     
-    var _x: js.Any = js.native
+    /* private */ var _x: js.Any = js.native
     
-    var _y: js.Any = js.native
+    /* private */ var _y: js.Any = js.native
     
     /**
       * Shortcut for `mouse.move`, `mouse.down` and `mouse.up`.
@@ -217,9 +217,9 @@ object inputMod {
       */
     def this(client: CDPSession, keyboard: Keyboard) = this()
     
-    var _client: js.Any = js.native
+    /* private */ var _client: js.Any = js.native
     
-    var _keyboard: js.Any = js.native
+    /* private */ var _keyboard: js.Any = js.native
     
     /**
       * Dispatches a `touchstart` and `touchend` event.
@@ -237,14 +237,11 @@ object inputMod {
   trait MouseButton extends StObject
   object MouseButton {
     
-    @scala.inline
-    def left: typings.puppeteerCore.puppeteerCoreStrings.left = "left".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.left]
+    inline def left: typings.puppeteerCore.puppeteerCoreStrings.left = "left".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.left]
     
-    @scala.inline
-    def middle: typings.puppeteerCore.puppeteerCoreStrings.middle = "middle".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.middle]
+    inline def middle: typings.puppeteerCore.puppeteerCoreStrings.middle = "middle".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.middle]
     
-    @scala.inline
-    def right: typings.puppeteerCore.puppeteerCoreStrings.right = "right".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.right]
+    inline def right: typings.puppeteerCore.puppeteerCoreStrings.right = "right".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.right]
   }
   
   trait MouseOptions extends StObject {
@@ -255,26 +252,20 @@ object inputMod {
   }
   object MouseOptions {
     
-    @scala.inline
-    def apply(): MouseOptions = {
+    inline def apply(): MouseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MouseOptions]
     }
     
-    @scala.inline
-    implicit class MouseOptionsMutableBuilder[Self <: MouseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MouseOptions](x: Self) {
       
-      @scala.inline
-      def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
       
-      @scala.inline
-      def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
+      inline def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
+      inline def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
     }
   }
   
@@ -286,26 +277,20 @@ object inputMod {
   }
   object MouseWheelOptions {
     
-    @scala.inline
-    def apply(): MouseWheelOptions = {
+    inline def apply(): MouseWheelOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MouseWheelOptions]
     }
     
-    @scala.inline
-    implicit class MouseWheelOptionsMutableBuilder[Self <: MouseWheelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MouseWheelOptions](x: Self) {
       
-      @scala.inline
-      def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
+      inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaXUndefined: Self = StObject.set(x, "deltaX", js.undefined)
+      inline def setDeltaXUndefined: Self = StObject.set(x, "deltaX", js.undefined)
       
-      @scala.inline
-      def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
+      inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
+      inline def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
     }
   }
 }

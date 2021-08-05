@@ -23,31 +23,23 @@ trait SourceDetail extends StObject {
 }
 object SourceDetail {
   
-  @scala.inline
-  def apply(): SourceDetail = {
+  inline def apply(): SourceDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceDetail]
   }
   
-  @scala.inline
-  implicit class SourceDetailMutableBuilder[Self <: SourceDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SourceDetail](x: Self) {
     
-    @scala.inline
-    def setEventSource(value: EventSource): Self = StObject.set(x, "EventSource", value.asInstanceOf[js.Any])
+    inline def setEventSource(value: EventSource): Self = StObject.set(x, "EventSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceUndefined: Self = StObject.set(x, "EventSource", js.undefined)
+    inline def setEventSourceUndefined: Self = StObject.set(x, "EventSource", js.undefined)
     
-    @scala.inline
-    def setMaximumExecutionFrequency(value: MaximumExecutionFrequency): Self = StObject.set(x, "MaximumExecutionFrequency", value.asInstanceOf[js.Any])
+    inline def setMaximumExecutionFrequency(value: MaximumExecutionFrequency): Self = StObject.set(x, "MaximumExecutionFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumExecutionFrequencyUndefined: Self = StObject.set(x, "MaximumExecutionFrequency", js.undefined)
+    inline def setMaximumExecutionFrequencyUndefined: Self = StObject.set(x, "MaximumExecutionFrequency", js.undefined)
     
-    @scala.inline
-    def setMessageType(value: MessageType): Self = StObject.set(x, "MessageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: MessageType): Self = StObject.set(x, "MessageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTypeUndefined: Self = StObject.set(x, "MessageType", js.undefined)
+    inline def setMessageTypeUndefined: Self = StObject.set(x, "MessageType", js.undefined)
   }
 }

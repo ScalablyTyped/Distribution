@@ -28,8 +28,7 @@ object messageBarMod {
     @JSImport("office-ui-fabric-react/lib/components/MessageBar", "MessageBarBase.defaultProps")
     @js.native
     def defaultProps: IMessageBarProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IMessageBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IMessageBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/components/MessageBar", "MessageBarType")

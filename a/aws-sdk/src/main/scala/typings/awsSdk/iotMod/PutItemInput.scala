@@ -13,16 +13,13 @@ trait PutItemInput extends StObject {
 }
 object PutItemInput {
   
-  @scala.inline
-  def apply(tableName: TableName): PutItemInput = {
+  inline def apply(tableName: TableName): PutItemInput = {
     val __obj = js.Dynamic.literal(tableName = tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutItemInput]
   }
   
-  @scala.inline
-  implicit class PutItemInputMutableBuilder[Self <: PutItemInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutItemInput](x: Self) {
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
   }
 }

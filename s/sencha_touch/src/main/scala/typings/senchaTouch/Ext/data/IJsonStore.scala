@@ -9,8 +9,7 @@ trait IJsonStore
      with IStore
 object IJsonStore {
   
-  @scala.inline
-  def apply(): IJsonStore = {
+  inline def apply(): IJsonStore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IJsonStore]
   }

@@ -11,20 +11,17 @@ object styleSearchStrings {
   sealed trait check
     extends StObject
        with SyntaxFeatureOption
-  @scala.inline
-  def check: check = "check".asInstanceOf[check]
+  inline def check: check = "check".asInstanceOf[check]
   
   @js.native
   sealed trait only
     extends StObject
        with SyntaxFeatureOption
-  @scala.inline
-  def only: only = "only".asInstanceOf[only]
+  inline def only: only = "only".asInstanceOf[only]
   
   @js.native
   sealed trait skip
     extends StObject
        with SyntaxFeatureOption
-  @scala.inline
-  def skip: skip = "skip".asInstanceOf[skip]
+  inline def skip: skip = "skip".asInstanceOf[skip]
 }

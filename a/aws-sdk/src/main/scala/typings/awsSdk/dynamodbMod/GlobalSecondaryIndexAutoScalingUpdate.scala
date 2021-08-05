@@ -15,25 +15,19 @@ trait GlobalSecondaryIndexAutoScalingUpdate extends StObject {
 }
 object GlobalSecondaryIndexAutoScalingUpdate {
   
-  @scala.inline
-  def apply(): GlobalSecondaryIndexAutoScalingUpdate = {
+  inline def apply(): GlobalSecondaryIndexAutoScalingUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalSecondaryIndexAutoScalingUpdate]
   }
   
-  @scala.inline
-  implicit class GlobalSecondaryIndexAutoScalingUpdateMutableBuilder[Self <: GlobalSecondaryIndexAutoScalingUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalSecondaryIndexAutoScalingUpdate](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
-    @scala.inline
-    def setProvisionedWriteCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
+    inline def setProvisionedWriteCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedWriteCapacityAutoScalingUpdateUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingUpdate", js.undefined)
+    inline def setProvisionedWriteCapacityAutoScalingUpdateUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingUpdate", js.undefined)
   }
 }

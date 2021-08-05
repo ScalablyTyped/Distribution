@@ -28,6 +28,5 @@ object PullTypeReferenceSymbol {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def createTypeReference(`type`: typings.typescriptServices.TypeScript.PullTypeSymbol): typings.typescriptServices.TypeScript.PullTypeReferenceSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeReference")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.PullTypeReferenceSymbol]
+  inline def createTypeReference(`type`: typings.typescriptServices.TypeScript.PullTypeSymbol): typings.typescriptServices.TypeScript.PullTypeReferenceSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeReference")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.PullTypeReferenceSymbol]
 }

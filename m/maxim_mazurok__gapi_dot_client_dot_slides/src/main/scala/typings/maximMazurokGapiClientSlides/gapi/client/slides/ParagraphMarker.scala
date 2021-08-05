@@ -14,25 +14,19 @@ trait ParagraphMarker extends StObject {
 }
 object ParagraphMarker {
   
-  @scala.inline
-  def apply(): ParagraphMarker = {
+  inline def apply(): ParagraphMarker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParagraphMarker]
   }
   
-  @scala.inline
-  implicit class ParagraphMarkerMutableBuilder[Self <: ParagraphMarker] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphMarker](x: Self) {
     
-    @scala.inline
-    def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+    inline def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
+    inline def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ParagraphStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ParagraphStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

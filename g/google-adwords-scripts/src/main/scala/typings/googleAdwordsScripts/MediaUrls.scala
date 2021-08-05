@@ -16,8 +16,7 @@ trait MediaUrls extends StObject {
 }
 object MediaUrls {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFullMediaUrl: () => String,
     getPreviewMediaUrl: () => String,
     getShrunkenMediaUrl: () => String,
@@ -27,19 +26,14 @@ object MediaUrls {
     __obj.asInstanceOf[MediaUrls]
   }
   
-  @scala.inline
-  implicit class MediaUrlsMutableBuilder[Self <: MediaUrls] (val x: Self) extends AnyVal {
+  extension [Self <: MediaUrls](x: Self) {
     
-    @scala.inline
-    def setGetFullMediaUrl(value: () => String): Self = StObject.set(x, "getFullMediaUrl", js.Any.fromFunction0(value))
+    inline def setGetFullMediaUrl(value: () => String): Self = StObject.set(x, "getFullMediaUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPreviewMediaUrl(value: () => String): Self = StObject.set(x, "getPreviewMediaUrl", js.Any.fromFunction0(value))
+    inline def setGetPreviewMediaUrl(value: () => String): Self = StObject.set(x, "getPreviewMediaUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetShrunkenMediaUrl(value: () => String): Self = StObject.set(x, "getShrunkenMediaUrl", js.Any.fromFunction0(value))
+    inline def setGetShrunkenMediaUrl(value: () => String): Self = StObject.set(x, "getShrunkenMediaUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVideoThumbnailMediaUrl(value: () => String): Self = StObject.set(x, "getVideoThumbnailMediaUrl", js.Any.fromFunction0(value))
+    inline def setGetVideoThumbnailMediaUrl(value: () => String): Self = StObject.set(x, "getVideoThumbnailMediaUrl", js.Any.fromFunction0(value))
   }
 }

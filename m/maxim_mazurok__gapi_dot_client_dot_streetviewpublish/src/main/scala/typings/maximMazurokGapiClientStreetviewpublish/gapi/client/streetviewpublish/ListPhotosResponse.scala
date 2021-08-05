@@ -14,28 +14,21 @@ trait ListPhotosResponse extends StObject {
 }
 object ListPhotosResponse {
   
-  @scala.inline
-  def apply(): ListPhotosResponse = {
+  inline def apply(): ListPhotosResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPhotosResponse]
   }
   
-  @scala.inline
-  implicit class ListPhotosResponseMutableBuilder[Self <: ListPhotosResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPhotosResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPhotos(value: js.Array[Photo]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+    inline def setPhotos(value: js.Array[Photo]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
+    inline def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
     
-    @scala.inline
-    def setPhotosVarargs(value: Photo*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: Photo*): Self = StObject.set(x, "photos", js.Array(value :_*))
   }
 }

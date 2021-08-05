@@ -11,16 +11,13 @@ trait PickImplperformance extends StObject {
 }
 object PickImplperformance {
   
-  @scala.inline
-  def apply(performance: Boolean): PickImplperformance = {
+  inline def apply(performance: Boolean): PickImplperformance = {
     val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplperformance]
   }
   
-  @scala.inline
-  implicit class PickImplperformanceMutableBuilder[Self <: PickImplperformance] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplperformance](x: Self) {
     
-    @scala.inline
-    def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+    inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
   }
 }

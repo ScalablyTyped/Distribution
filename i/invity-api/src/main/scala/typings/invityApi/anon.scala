@@ -20,23 +20,18 @@ object anon {
   }
   object Fields {
     
-    @scala.inline
-    def apply(fields: StringMap, formAction: String, formMethod: GET | POST | IFRAME): Fields = {
+    inline def apply(fields: StringMap, formAction: String, formMethod: GET | POST | IFRAME): Fields = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], formAction = formAction.asInstanceOf[js.Any], formMethod = formMethod.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fields]
     }
     
-    @scala.inline
-    implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+    extension [Self <: Fields](x: Self) {
       
-      @scala.inline
-      def setFields(value: StringMap): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: StringMap): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormMethod(value: GET | POST | IFRAME): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
+      inline def setFormMethod(value: GET | POST | IFRAME): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
     }
   }
 }

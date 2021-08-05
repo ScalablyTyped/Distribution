@@ -13,19 +13,15 @@ trait TriggerActionNotificationProperty extends StObject {
 }
 object TriggerActionNotificationProperty {
   
-  @scala.inline
-  def apply(): TriggerActionNotificationProperty = {
+  inline def apply(): TriggerActionNotificationProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TriggerActionNotificationProperty]
   }
   
-  @scala.inline
-  implicit class TriggerActionNotificationPropertyMutableBuilder[Self <: TriggerActionNotificationProperty] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerActionNotificationProperty](x: Self) {
     
-    @scala.inline
-    def setNotifyDelayAfter(value: Double): Self = StObject.set(x, "notifyDelayAfter", value.asInstanceOf[js.Any])
+    inline def setNotifyDelayAfter(value: Double): Self = StObject.set(x, "notifyDelayAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyDelayAfterUndefined: Self = StObject.set(x, "notifyDelayAfter", js.undefined)
+    inline def setNotifyDelayAfterUndefined: Self = StObject.set(x, "notifyDelayAfter", js.undefined)
   }
 }

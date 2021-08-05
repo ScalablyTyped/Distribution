@@ -138,142 +138,97 @@ trait IgGridColumnFixing
 }
 object IgGridColumnFixing {
   
-  @scala.inline
-  def apply(): IgGridColumnFixing = {
+  inline def apply(): IgGridColumnFixing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridColumnFixing]
   }
   
-  @scala.inline
-  implicit class IgGridColumnFixingMutableBuilder[Self <: IgGridColumnFixing] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridColumnFixing](x: Self) {
     
-    @scala.inline
-    def setColumnFixed(value: (/* event */ Event, /* ui */ ColumnFixedEventUIParam) => Unit): Self = StObject.set(x, "columnFixed", js.Any.fromFunction2(value))
+    inline def setColumnFixed(value: (/* event */ Event, /* ui */ ColumnFixedEventUIParam) => Unit): Self = StObject.set(x, "columnFixed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnFixedUndefined: Self = StObject.set(x, "columnFixed", js.undefined)
+    inline def setColumnFixedUndefined: Self = StObject.set(x, "columnFixed", js.undefined)
     
-    @scala.inline
-    def setColumnFixing(value: (/* event */ Event, /* ui */ ColumnFixingEventUIParam) => Unit): Self = StObject.set(x, "columnFixing", js.Any.fromFunction2(value))
+    inline def setColumnFixing(value: (/* event */ Event, /* ui */ ColumnFixingEventUIParam) => Unit): Self = StObject.set(x, "columnFixing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnFixingRefused(value: (/* event */ Event, /* ui */ ColumnFixingRefusedEventUIParam) => Unit): Self = StObject.set(x, "columnFixingRefused", js.Any.fromFunction2(value))
+    inline def setColumnFixingRefused(value: (/* event */ Event, /* ui */ ColumnFixingRefusedEventUIParam) => Unit): Self = StObject.set(x, "columnFixingRefused", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnFixingRefusedUndefined: Self = StObject.set(x, "columnFixingRefused", js.undefined)
+    inline def setColumnFixingRefusedUndefined: Self = StObject.set(x, "columnFixingRefused", js.undefined)
     
-    @scala.inline
-    def setColumnFixingUndefined: Self = StObject.set(x, "columnFixing", js.undefined)
+    inline def setColumnFixingUndefined: Self = StObject.set(x, "columnFixing", js.undefined)
     
-    @scala.inline
-    def setColumnSettings(value: js.Array[IgGridColumnFixingColumnSetting]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
+    inline def setColumnSettings(value: js.Array[IgGridColumnFixingColumnSetting]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
+    inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    @scala.inline
-    def setColumnSettingsVarargs(value: IgGridColumnFixingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridColumnFixingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
     
-    @scala.inline
-    def setColumnUnfixed(value: (/* event */ Event, /* ui */ ColumnUnfixedEventUIParam) => Unit): Self = StObject.set(x, "columnUnfixed", js.Any.fromFunction2(value))
+    inline def setColumnUnfixed(value: (/* event */ Event, /* ui */ ColumnUnfixedEventUIParam) => Unit): Self = StObject.set(x, "columnUnfixed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnUnfixedUndefined: Self = StObject.set(x, "columnUnfixed", js.undefined)
+    inline def setColumnUnfixedUndefined: Self = StObject.set(x, "columnUnfixed", js.undefined)
     
-    @scala.inline
-    def setColumnUnfixing(value: (/* event */ Event, /* ui */ ColumnUnfixingEventUIParam) => Unit): Self = StObject.set(x, "columnUnfixing", js.Any.fromFunction2(value))
+    inline def setColumnUnfixing(value: (/* event */ Event, /* ui */ ColumnUnfixingEventUIParam) => Unit): Self = StObject.set(x, "columnUnfixing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnUnfixingRefused(value: (/* event */ Event, /* ui */ ColumnUnfixingRefusedEventUIParam) => Unit): Self = StObject.set(x, "columnUnfixingRefused", js.Any.fromFunction2(value))
+    inline def setColumnUnfixingRefused(value: (/* event */ Event, /* ui */ ColumnUnfixingRefusedEventUIParam) => Unit): Self = StObject.set(x, "columnUnfixingRefused", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnUnfixingRefusedUndefined: Self = StObject.set(x, "columnUnfixingRefused", js.undefined)
+    inline def setColumnUnfixingRefusedUndefined: Self = StObject.set(x, "columnUnfixingRefused", js.undefined)
     
-    @scala.inline
-    def setColumnUnfixingUndefined: Self = StObject.set(x, "columnUnfixing", js.undefined)
+    inline def setColumnUnfixingUndefined: Self = StObject.set(x, "columnUnfixing", js.undefined)
     
-    @scala.inline
-    def setFeatureChooserTextFixedColumn(value: String): Self = StObject.set(x, "featureChooserTextFixedColumn", value.asInstanceOf[js.Any])
+    inline def setFeatureChooserTextFixedColumn(value: String): Self = StObject.set(x, "featureChooserTextFixedColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureChooserTextFixedColumnUndefined: Self = StObject.set(x, "featureChooserTextFixedColumn", js.undefined)
+    inline def setFeatureChooserTextFixedColumnUndefined: Self = StObject.set(x, "featureChooserTextFixedColumn", js.undefined)
     
-    @scala.inline
-    def setFeatureChooserTextUnfixedColumn(value: String): Self = StObject.set(x, "featureChooserTextUnfixedColumn", value.asInstanceOf[js.Any])
+    inline def setFeatureChooserTextUnfixedColumn(value: String): Self = StObject.set(x, "featureChooserTextUnfixedColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureChooserTextUnfixedColumnUndefined: Self = StObject.set(x, "featureChooserTextUnfixedColumn", js.undefined)
+    inline def setFeatureChooserTextUnfixedColumnUndefined: Self = StObject.set(x, "featureChooserTextUnfixedColumn", js.undefined)
     
-    @scala.inline
-    def setFixNondataColumns(value: Boolean): Self = StObject.set(x, "fixNondataColumns", value.asInstanceOf[js.Any])
+    inline def setFixNondataColumns(value: Boolean): Self = StObject.set(x, "fixNondataColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixNondataColumnsUndefined: Self = StObject.set(x, "fixNondataColumns", js.undefined)
+    inline def setFixNondataColumnsUndefined: Self = StObject.set(x, "fixNondataColumns", js.undefined)
     
-    @scala.inline
-    def setFixingDirection(value: String): Self = StObject.set(x, "fixingDirection", value.asInstanceOf[js.Any])
+    inline def setFixingDirection(value: String): Self = StObject.set(x, "fixingDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixingDirectionUndefined: Self = StObject.set(x, "fixingDirection", js.undefined)
+    inline def setFixingDirectionUndefined: Self = StObject.set(x, "fixingDirection", js.undefined)
     
-    @scala.inline
-    def setHeaderFixButtonText(value: String): Self = StObject.set(x, "headerFixButtonText", value.asInstanceOf[js.Any])
+    inline def setHeaderFixButtonText(value: String): Self = StObject.set(x, "headerFixButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderFixButtonTextUndefined: Self = StObject.set(x, "headerFixButtonText", js.undefined)
+    inline def setHeaderFixButtonTextUndefined: Self = StObject.set(x, "headerFixButtonText", js.undefined)
     
-    @scala.inline
-    def setHeaderUnfixButtonText(value: String): Self = StObject.set(x, "headerUnfixButtonText", value.asInstanceOf[js.Any])
+    inline def setHeaderUnfixButtonText(value: String): Self = StObject.set(x, "headerUnfixButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUnfixButtonTextUndefined: Self = StObject.set(x, "headerUnfixButtonText", js.undefined)
+    inline def setHeaderUnfixButtonTextUndefined: Self = StObject.set(x, "headerUnfixButtonText", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLocale(value: IgGridColumnFixingLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: IgGridColumnFixingLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMinimalVisibleAreaWidth(value: String | Double): Self = StObject.set(x, "minimalVisibleAreaWidth", value.asInstanceOf[js.Any])
+    inline def setMinimalVisibleAreaWidth(value: String | Double): Self = StObject.set(x, "minimalVisibleAreaWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimalVisibleAreaWidthUndefined: Self = StObject.set(x, "minimalVisibleAreaWidth", js.undefined)
+    inline def setMinimalVisibleAreaWidthUndefined: Self = StObject.set(x, "minimalVisibleAreaWidth", js.undefined)
     
-    @scala.inline
-    def setPopulateDataRowsAttributes(value: Boolean): Self = StObject.set(x, "populateDataRowsAttributes", value.asInstanceOf[js.Any])
+    inline def setPopulateDataRowsAttributes(value: Boolean): Self = StObject.set(x, "populateDataRowsAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopulateDataRowsAttributesUndefined: Self = StObject.set(x, "populateDataRowsAttributes", js.undefined)
+    inline def setPopulateDataRowsAttributesUndefined: Self = StObject.set(x, "populateDataRowsAttributes", js.undefined)
     
-    @scala.inline
-    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
-    @scala.inline
-    def setScrollDelta(value: Double): Self = StObject.set(x, "scrollDelta", value.asInstanceOf[js.Any])
+    inline def setScrollDelta(value: Double): Self = StObject.set(x, "scrollDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollDeltaUndefined: Self = StObject.set(x, "scrollDelta", js.undefined)
+    inline def setScrollDeltaUndefined: Self = StObject.set(x, "scrollDelta", js.undefined)
     
-    @scala.inline
-    def setShowFixButtons(value: Boolean): Self = StObject.set(x, "showFixButtons", value.asInstanceOf[js.Any])
+    inline def setShowFixButtons(value: Boolean): Self = StObject.set(x, "showFixButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFixButtonsUndefined: Self = StObject.set(x, "showFixButtons", js.undefined)
+    inline def setShowFixButtonsUndefined: Self = StObject.set(x, "showFixButtons", js.undefined)
     
-    @scala.inline
-    def setSyncRowHeights(value: Boolean): Self = StObject.set(x, "syncRowHeights", value.asInstanceOf[js.Any])
+    inline def setSyncRowHeights(value: Boolean): Self = StObject.set(x, "syncRowHeights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncRowHeightsUndefined: Self = StObject.set(x, "syncRowHeights", js.undefined)
+    inline def setSyncRowHeightsUndefined: Self = StObject.set(x, "syncRowHeights", js.undefined)
   }
 }

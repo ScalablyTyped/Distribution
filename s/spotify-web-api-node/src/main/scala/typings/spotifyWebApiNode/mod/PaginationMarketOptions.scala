@@ -10,8 +10,7 @@ trait PaginationMarketOptions
      with MarketOptions
 object PaginationMarketOptions {
   
-  @scala.inline
-  def apply(): PaginationMarketOptions = {
+  inline def apply(): PaginationMarketOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaginationMarketOptions]
   }

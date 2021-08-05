@@ -14,28 +14,21 @@ trait XpackInfo
 }
 object XpackInfo {
   
-  @scala.inline
-  def apply(): XpackInfo = {
+  inline def apply(): XpackInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XpackInfo]
   }
   
-  @scala.inline
-  implicit class XpackInfoMutableBuilder[Self <: XpackInfo] (val x: Self) extends AnyVal {
+  extension [Self <: XpackInfo](x: Self) {
     
-    @scala.inline
-    def setAccept_enterprise(value: Boolean): Self = StObject.set(x, "accept_enterprise", value.asInstanceOf[js.Any])
+    inline def setAccept_enterprise(value: Boolean): Self = StObject.set(x, "accept_enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccept_enterpriseUndefined: Self = StObject.set(x, "accept_enterprise", js.undefined)
+    inline def setAccept_enterpriseUndefined: Self = StObject.set(x, "accept_enterprise", js.undefined)
     
-    @scala.inline
-    def setCategories(value: String | js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: String | js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
   }
 }

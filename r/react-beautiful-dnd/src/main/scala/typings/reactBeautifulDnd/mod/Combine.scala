@@ -12,19 +12,15 @@ trait Combine extends StObject {
 }
 object Combine {
   
-  @scala.inline
-  def apply(draggableId: DraggableId, droppableId: DroppableId): Combine = {
+  inline def apply(draggableId: DraggableId, droppableId: DroppableId): Combine = {
     val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], droppableId = droppableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Combine]
   }
   
-  @scala.inline
-  implicit class CombineMutableBuilder[Self <: Combine] (val x: Self) extends AnyVal {
+  extension [Self <: Combine](x: Self) {
     
-    @scala.inline
-    def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
+    inline def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDroppableId(value: DroppableId): Self = StObject.set(x, "droppableId", value.asInstanceOf[js.Any])
+    inline def setDroppableId(value: DroppableId): Self = StObject.set(x, "droppableId", value.asInstanceOf[js.Any])
   }
 }

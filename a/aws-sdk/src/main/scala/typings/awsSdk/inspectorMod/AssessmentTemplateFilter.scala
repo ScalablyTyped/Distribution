@@ -23,34 +23,25 @@ trait AssessmentTemplateFilter extends StObject {
 }
 object AssessmentTemplateFilter {
   
-  @scala.inline
-  def apply(): AssessmentTemplateFilter = {
+  inline def apply(): AssessmentTemplateFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssessmentTemplateFilter]
   }
   
-  @scala.inline
-  implicit class AssessmentTemplateFilterMutableBuilder[Self <: AssessmentTemplateFilter] (val x: Self) extends AnyVal {
+  extension [Self <: AssessmentTemplateFilter](x: Self) {
     
-    @scala.inline
-    def setDurationRange(value: DurationRange): Self = StObject.set(x, "durationRange", value.asInstanceOf[js.Any])
+    inline def setDurationRange(value: DurationRange): Self = StObject.set(x, "durationRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationRangeUndefined: Self = StObject.set(x, "durationRange", js.undefined)
+    inline def setDurationRangeUndefined: Self = StObject.set(x, "durationRange", js.undefined)
     
-    @scala.inline
-    def setNamePattern(value: NamePattern): Self = StObject.set(x, "namePattern", value.asInstanceOf[js.Any])
+    inline def setNamePattern(value: NamePattern): Self = StObject.set(x, "namePattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamePatternUndefined: Self = StObject.set(x, "namePattern", js.undefined)
+    inline def setNamePatternUndefined: Self = StObject.set(x, "namePattern", js.undefined)
     
-    @scala.inline
-    def setRulesPackageArns(value: FilterRulesPackageArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
+    inline def setRulesPackageArns(value: FilterRulesPackageArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesPackageArnsUndefined: Self = StObject.set(x, "rulesPackageArns", js.undefined)
+    inline def setRulesPackageArnsUndefined: Self = StObject.set(x, "rulesPackageArns", js.undefined)
     
-    @scala.inline
-    def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
+    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
   }
 }

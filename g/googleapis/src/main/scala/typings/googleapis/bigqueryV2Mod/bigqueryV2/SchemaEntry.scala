@@ -22,25 +22,19 @@ trait SchemaEntry extends StObject {
 }
 object SchemaEntry {
   
-  @scala.inline
-  def apply(): SchemaEntry = {
+  inline def apply(): SchemaEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEntry]
   }
   
-  @scala.inline
-  implicit class SchemaEntryMutableBuilder[Self <: SchemaEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEntry](x: Self) {
     
-    @scala.inline
-    def setItemCount(value: String): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: String): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
+    inline def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
     
-    @scala.inline
-    def setPredictedLabel(value: String): Self = StObject.set(x, "predictedLabel", value.asInstanceOf[js.Any])
+    inline def setPredictedLabel(value: String): Self = StObject.set(x, "predictedLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictedLabelUndefined: Self = StObject.set(x, "predictedLabel", js.undefined)
+    inline def setPredictedLabelUndefined: Self = StObject.set(x, "predictedLabel", js.undefined)
   }
 }

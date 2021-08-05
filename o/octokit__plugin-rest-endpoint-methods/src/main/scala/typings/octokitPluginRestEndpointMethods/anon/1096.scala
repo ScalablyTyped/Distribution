@@ -23,8 +23,7 @@ trait `1096` extends StObject {
 }
 object `1096` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[
       UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint, 
       baseUrl | headers | mediaType
@@ -35,18 +34,15 @@ object `1096` {
     __obj.asInstanceOf[`1096`]
   }
   
-  @scala.inline
-  implicit class `1096MutableBuilder`[Self <: `1096`] (val x: Self) extends AnyVal {
+  extension [Self <: `1096`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[
           UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint, 
           baseUrl | headers | mediaType
         ])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[UsersSetPrimaryEmailVisibilityForAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[UsersSetPrimaryEmailVisibilityForAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

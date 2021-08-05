@@ -18,25 +18,19 @@ trait ListPlacementsResponse extends StObject {
 }
 object ListPlacementsResponse {
   
-  @scala.inline
-  def apply(placements: PlacementSummaryList): ListPlacementsResponse = {
+  inline def apply(placements: PlacementSummaryList): ListPlacementsResponse = {
     val __obj = js.Dynamic.literal(placements = placements.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPlacementsResponse]
   }
   
-  @scala.inline
-  implicit class ListPlacementsResponseMutableBuilder[Self <: ListPlacementsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPlacementsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPlacements(value: PlacementSummaryList): Self = StObject.set(x, "placements", value.asInstanceOf[js.Any])
+    inline def setPlacements(value: PlacementSummaryList): Self = StObject.set(x, "placements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementsVarargs(value: PlacementSummary*): Self = StObject.set(x, "placements", js.Array(value :_*))
+    inline def setPlacementsVarargs(value: PlacementSummary*): Self = StObject.set(x, "placements", js.Array(value :_*))
   }
 }

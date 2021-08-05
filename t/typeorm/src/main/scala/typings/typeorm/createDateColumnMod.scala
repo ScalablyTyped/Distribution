@@ -12,8 +12,6 @@ object createDateColumnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def CreateDateColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDateColumn")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def CreateDateColumn(options: ColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDateColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def CreateDateColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDateColumn")().asInstanceOf[PropertyDecorator]
+  inline def CreateDateColumn(options: ColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDateColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
 }

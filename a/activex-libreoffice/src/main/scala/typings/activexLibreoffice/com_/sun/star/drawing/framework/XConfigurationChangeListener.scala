@@ -20,8 +20,7 @@ trait XConfigurationChangeListener
 }
 object XConfigurationChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     notifyConfigurationChange: ConfigurationChangeEvent => Unit,
@@ -32,10 +31,8 @@ object XConfigurationChangeListener {
     __obj.asInstanceOf[XConfigurationChangeListener]
   }
   
-  @scala.inline
-  implicit class XConfigurationChangeListenerMutableBuilder[Self <: XConfigurationChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XConfigurationChangeListener](x: Self) {
     
-    @scala.inline
-    def setNotifyConfigurationChange(value: ConfigurationChangeEvent => Unit): Self = StObject.set(x, "notifyConfigurationChange", js.Any.fromFunction1(value))
+    inline def setNotifyConfigurationChange(value: ConfigurationChangeEvent => Unit): Self = StObject.set(x, "notifyConfigurationChange", js.Any.fromFunction1(value))
   }
 }

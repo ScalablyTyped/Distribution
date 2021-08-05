@@ -12,19 +12,15 @@ trait Coll extends StObject {
 }
 object Coll {
   
-  @scala.inline
-  def apply(coll: String, db: String): Coll = {
+  inline def apply(coll: String, db: String): Coll = {
     val __obj = js.Dynamic.literal(coll = coll.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coll]
   }
   
-  @scala.inline
-  implicit class CollMutableBuilder[Self <: Coll] (val x: Self) extends AnyVal {
+  extension [Self <: Coll](x: Self) {
     
-    @scala.inline
-    def setColl(value: String): Self = StObject.set(x, "coll", value.asInstanceOf[js.Any])
+    inline def setColl(value: String): Self = StObject.set(x, "coll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
   }
 }

@@ -34,26 +34,21 @@ object Linear {
   @JSGlobal("gsap.Linear.easeInOut")
   @js.native
   def easeInOut: typings.gsap.gsap.Linear = js.native
-  @scala.inline
-  def easeInOut_=(x: typings.gsap.gsap.Linear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeInOut")(x.asInstanceOf[js.Any])
+  inline def easeInOut_=(x: typings.gsap.gsap.Linear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeInOut")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def easeIn_=(x: typings.gsap.gsap.Linear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeIn")(x.asInstanceOf[js.Any])
+  inline def easeIn_=(x: typings.gsap.gsap.Linear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeIn")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("gsap.Linear.easeNone")
   @js.native
   def easeNone: typings.gsap.gsap.Linear = js.native
-  @scala.inline
-  def easeNone_=(x: typings.gsap.gsap.Linear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeNone")(x.asInstanceOf[js.Any])
+  inline def easeNone_=(x: typings.gsap.gsap.Linear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeNone")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("gsap.Linear.easeOut")
   @js.native
   def easeOut: typings.gsap.gsap.Linear = js.native
-  @scala.inline
-  def easeOut_=(x: typings.gsap.gsap.Linear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeOut")(x.asInstanceOf[js.Any])
+  inline def easeOut_=(x: typings.gsap.gsap.Linear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeOut")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def ease_=(x: typings.gsap.gsap.Linear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ease")(x.asInstanceOf[js.Any])
+  inline def ease_=(x: typings.gsap.gsap.Linear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ease")(x.asInstanceOf[js.Any])
 }

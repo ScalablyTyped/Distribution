@@ -11,11 +11,9 @@ object fontUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFontDefinitionFromManifest(url: String, manifest: FontManifest): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontDefinitionFromManifest")(url.asInstanceOf[js.Any], manifest.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getFontDefinitionFromManifest(url: String, manifest: FontManifest): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontDefinitionFromManifest")(url.asInstanceOf[js.Any], manifest.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getFontDefinitionFromNetwork(url: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontDefinitionFromNetwork")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getFontDefinitionFromNetwork(url: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontDefinitionFromNetwork")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   type FontManifest = js.Array[Content]
 }

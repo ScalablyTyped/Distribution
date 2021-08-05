@@ -18,25 +18,25 @@ object anomalyBloodhoundMod {
        with AnomalyBloodhound {
     def this(hasEngineEventEmitter: Engine) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _callback: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _engine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _eventEmitter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _processStateChange: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _timeoutMap: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _unbindEvents: js.Any = js.native
     
     /* CompleteClass */
@@ -70,14 +70,12 @@ object anomalyBloodhoundMod {
     @JSImport("playable/dist/src/modules/anomaly-bloodhound/anomaly-bloodhound", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/anomaly-bloodhound/anomaly-bloodhound", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("playable/dist/src/modules/anomaly-bloodhound/anomaly-bloodhound", "DELAYED_REPORT_TYPES")
@@ -90,19 +88,19 @@ object anomalyBloodhoundMod {
   
   trait AnomalyBloodhound extends StObject {
     
-    var _bindEvents: js.Any
+    /* private */ var _bindEvents: js.Any
     
-    var _callback: js.Any
+    /* private */ var _callback: js.Any
     
-    var _engine: js.Any
+    /* private */ var _engine: js.Any
     
-    var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: js.Any
     
-    var _processStateChange: js.Any
+    /* private */ var _processStateChange: js.Any
     
-    var _timeoutMap: js.Any
+    /* private */ var _timeoutMap: js.Any
     
-    var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: js.Any
     
     def destroy(): Unit
     
@@ -120,8 +118,7 @@ object anomalyBloodhoundMod {
   }
   object AnomalyBloodhound {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _bindEvents: js.Any,
       _callback: js.Any,
       _engine: js.Any,
@@ -141,50 +138,35 @@ object anomalyBloodhoundMod {
       __obj.asInstanceOf[AnomalyBloodhound]
     }
     
-    @scala.inline
-    implicit class AnomalyBloodhoundMutableBuilder[Self <: AnomalyBloodhound] (val x: Self) extends AnyVal {
+    extension [Self <: AnomalyBloodhound](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDelayedReportExist(value: IReportType => Boolean): Self = StObject.set(x, "isDelayedReportExist", js.Any.fromFunction1(value))
+      inline def setIsDelayedReportExist(value: IReportType => Boolean): Self = StObject.set(x, "isDelayedReportExist", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReportDebugInfo(value: EndTS => Unit): Self = StObject.set(x, "reportDebugInfo", js.Any.fromFunction1(value))
+      inline def setReportDebugInfo(value: EndTS => Unit): Self = StObject.set(x, "reportDebugInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAnomalyCallback(value: js.Function1[/* anomalyData */ js.Any, Unit] => Unit): Self = StObject.set(x, "setAnomalyCallback", js.Any.fromFunction1(value))
+      inline def setSetAnomalyCallback(value: js.Function1[/* anomalyData */ js.Any, Unit] => Unit): Self = StObject.set(x, "setAnomalyCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartDelayedReport(value: (IReportType, String) => Unit): Self = StObject.set(x, "startDelayedReport", js.Any.fromFunction2(value))
+      inline def setStartDelayedReport(value: (IReportType, String) => Unit): Self = StObject.set(x, "startDelayedReport", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStopAllDelayedReports(value: () => Unit): Self = StObject.set(x, "stopAllDelayedReports", js.Any.fromFunction0(value))
+      inline def setStopAllDelayedReports(value: () => Unit): Self = StObject.set(x, "stopAllDelayedReports", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopDelayedReport(value: IReportType => Unit): Self = StObject.set(x, "stopDelayedReport", js.Any.fromFunction1(value))
+      inline def setStopDelayedReport(value: IReportType => Unit): Self = StObject.set(x, "stopDelayedReport", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_callback(value: js.Any): Self = StObject.set(x, "_callback", value.asInstanceOf[js.Any])
+      inline def set_callback(value: js.Any): Self = StObject.set(x, "_callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_processStateChange(value: js.Any): Self = StObject.set(x, "_processStateChange", value.asInstanceOf[js.Any])
+      inline def set_processStateChange(value: js.Any): Self = StObject.set(x, "_processStateChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_timeoutMap(value: js.Any): Self = StObject.set(x, "_timeoutMap", value.asInstanceOf[js.Any])
+      inline def set_timeoutMap(value: js.Any): Self = StObject.set(x, "_timeoutMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,19 +13,15 @@ trait GetMappingResponse extends StObject {
 }
 object GetMappingResponse {
   
-  @scala.inline
-  def apply(Mapping: MappingList): GetMappingResponse = {
+  inline def apply(Mapping: MappingList): GetMappingResponse = {
     val __obj = js.Dynamic.literal(Mapping = Mapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMappingResponse]
   }
   
-  @scala.inline
-  implicit class GetMappingResponseMutableBuilder[Self <: GetMappingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetMappingResponse](x: Self) {
     
-    @scala.inline
-    def setMapping(value: MappingList): Self = StObject.set(x, "Mapping", value.asInstanceOf[js.Any])
+    inline def setMapping(value: MappingList): Self = StObject.set(x, "Mapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingVarargs(value: MappingEntry*): Self = StObject.set(x, "Mapping", js.Array(value :_*))
+    inline def setMappingVarargs(value: MappingEntry*): Self = StObject.set(x, "Mapping", js.Array(value :_*))
   }
 }

@@ -23,28 +23,21 @@ trait ListSkillsStoreSkillsByCategoryRequest extends StObject {
 }
 object ListSkillsStoreSkillsByCategoryRequest {
   
-  @scala.inline
-  def apply(CategoryId: CategoryId): ListSkillsStoreSkillsByCategoryRequest = {
+  inline def apply(CategoryId: CategoryId): ListSkillsStoreSkillsByCategoryRequest = {
     val __obj = js.Dynamic.literal(CategoryId = CategoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSkillsStoreSkillsByCategoryRequest]
   }
   
-  @scala.inline
-  implicit class ListSkillsStoreSkillsByCategoryRequestMutableBuilder[Self <: ListSkillsStoreSkillsByCategoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListSkillsStoreSkillsByCategoryRequest](x: Self) {
     
-    @scala.inline
-    def setCategoryId(value: CategoryId): Self = StObject.set(x, "CategoryId", value.asInstanceOf[js.Any])
+    inline def setCategoryId(value: CategoryId): Self = StObject.set(x, "CategoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: SkillListMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: SkillListMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

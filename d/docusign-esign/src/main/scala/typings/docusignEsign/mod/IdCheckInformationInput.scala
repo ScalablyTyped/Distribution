@@ -28,37 +28,27 @@ trait IdCheckInformationInput extends StObject {
 }
 object IdCheckInformationInput {
   
-  @scala.inline
-  def apply(): IdCheckInformationInput = {
+  inline def apply(): IdCheckInformationInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdCheckInformationInput]
   }
   
-  @scala.inline
-  implicit class IdCheckInformationInputMutableBuilder[Self <: IdCheckInformationInput] (val x: Self) extends AnyVal {
+  extension [Self <: IdCheckInformationInput](x: Self) {
     
-    @scala.inline
-    def setAddressInformationInput(value: AddressInformationInput): Self = StObject.set(x, "addressInformationInput", value.asInstanceOf[js.Any])
+    inline def setAddressInformationInput(value: AddressInformationInput): Self = StObject.set(x, "addressInformationInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressInformationInputUndefined: Self = StObject.set(x, "addressInformationInput", js.undefined)
+    inline def setAddressInformationInputUndefined: Self = StObject.set(x, "addressInformationInput", js.undefined)
     
-    @scala.inline
-    def setDobInformationInput(value: DobInformationInput): Self = StObject.set(x, "dobInformationInput", value.asInstanceOf[js.Any])
+    inline def setDobInformationInput(value: DobInformationInput): Self = StObject.set(x, "dobInformationInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDobInformationInputUndefined: Self = StObject.set(x, "dobInformationInput", js.undefined)
+    inline def setDobInformationInputUndefined: Self = StObject.set(x, "dobInformationInput", js.undefined)
     
-    @scala.inline
-    def setSsn4InformationInput(value: Ssn4InformationInput): Self = StObject.set(x, "ssn4InformationInput", value.asInstanceOf[js.Any])
+    inline def setSsn4InformationInput(value: Ssn4InformationInput): Self = StObject.set(x, "ssn4InformationInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsn4InformationInputUndefined: Self = StObject.set(x, "ssn4InformationInput", js.undefined)
+    inline def setSsn4InformationInputUndefined: Self = StObject.set(x, "ssn4InformationInput", js.undefined)
     
-    @scala.inline
-    def setSsn9InformationInput(value: Ssn9InformationInput): Self = StObject.set(x, "ssn9InformationInput", value.asInstanceOf[js.Any])
+    inline def setSsn9InformationInput(value: Ssn9InformationInput): Self = StObject.set(x, "ssn9InformationInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsn9InformationInputUndefined: Self = StObject.set(x, "ssn9InformationInput", js.undefined)
+    inline def setSsn9InformationInputUndefined: Self = StObject.set(x, "ssn9InformationInput", js.undefined)
   }
 }

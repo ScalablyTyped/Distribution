@@ -23,8 +23,7 @@ object pulsingBeaconAnimationStylesMod {
         /* borderWidth */ String, 
         String
       ] = js.native
-    @scala.inline
-    def continuousPulseAnimationDouble_=(
+    inline def continuousPulseAnimationDouble_=(
       x: js.Function5[
           /* beaconColorOne */ String, 
           /* beaconColorTwo */ String, 
@@ -45,8 +44,7 @@ object pulsingBeaconAnimationStylesMod {
         /* borderWidth */ String, 
         String
       ] = js.native
-    @scala.inline
-    def continuousPulseAnimationSingle_=(
+    inline def continuousPulseAnimationSingle_=(
       x: js.Function5[
           /* beaconColorOne */ String, 
           /* beaconColorTwo */ String, 
@@ -60,7 +58,6 @@ object pulsingBeaconAnimationStylesMod {
     @JSImport("@uifabric/styling/lib/styles/PulsingBeaconAnimationStyles", "PulsingBeaconAnimationStyles.createDefaultAnimation")
     @js.native
     def createDefaultAnimation: js.Function2[/* animationName */ String, /* delayLength */ js.UndefOr[String], IRawStyle] = js.native
-    @scala.inline
-    def createDefaultAnimation_=(x: js.Function2[/* animationName */ String, /* delayLength */ js.UndefOr[String], IRawStyle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createDefaultAnimation")(x.asInstanceOf[js.Any])
+    inline def createDefaultAnimation_=(x: js.Function2[/* animationName */ String, /* delayLength */ js.UndefOr[String], IRawStyle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createDefaultAnimation")(x.asInstanceOf[js.Any])
   }
 }

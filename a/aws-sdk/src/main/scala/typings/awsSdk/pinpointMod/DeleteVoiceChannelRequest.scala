@@ -13,16 +13,13 @@ trait DeleteVoiceChannelRequest extends StObject {
 }
 object DeleteVoiceChannelRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string): DeleteVoiceChannelRequest = {
+  inline def apply(ApplicationId: string): DeleteVoiceChannelRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVoiceChannelRequest]
   }
   
-  @scala.inline
-  implicit class DeleteVoiceChannelRequestMutableBuilder[Self <: DeleteVoiceChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVoiceChannelRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }
 }

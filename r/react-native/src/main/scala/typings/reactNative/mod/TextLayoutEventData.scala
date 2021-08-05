@@ -12,19 +12,15 @@ trait TextLayoutEventData
 }
 object TextLayoutEventData {
   
-  @scala.inline
-  def apply(lines: js.Array[TextLayoutLine], target: Double): TextLayoutEventData = {
+  inline def apply(lines: js.Array[TextLayoutLine], target: Double): TextLayoutEventData = {
     val __obj = js.Dynamic.literal(lines = lines.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextLayoutEventData]
   }
   
-  @scala.inline
-  implicit class TextLayoutEventDataMutableBuilder[Self <: TextLayoutEventData] (val x: Self) extends AnyVal {
+  extension [Self <: TextLayoutEventData](x: Self) {
     
-    @scala.inline
-    def setLines(value: js.Array[TextLayoutLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[TextLayoutLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesVarargs(value: TextLayoutLine*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: TextLayoutLine*): Self = StObject.set(x, "lines", js.Array(value :_*))
   }
 }

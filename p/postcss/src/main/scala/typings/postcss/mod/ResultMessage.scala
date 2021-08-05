@@ -15,20 +15,16 @@ trait ResultMessage
 }
 object ResultMessage {
   
-  @scala.inline
-  def apply(plugin: String, `type`: String): ResultMessage = {
+  inline def apply(plugin: String, `type`: String): ResultMessage = {
     val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultMessage]
   }
   
-  @scala.inline
-  implicit class ResultMessageMutableBuilder[Self <: ResultMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ResultMessage](x: Self) {
     
-    @scala.inline
-    def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

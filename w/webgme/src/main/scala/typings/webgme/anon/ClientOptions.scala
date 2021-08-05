@@ -20,19 +20,15 @@ trait ClientOptions extends StObject {
 }
 object ClientOptions {
   
-  @scala.inline
-  def apply(clientOptions: js.Any, serverOptions: js.Any): ClientOptions = {
+  inline def apply(clientOptions: js.Any, serverOptions: js.Any): ClientOptions = {
     val __obj = js.Dynamic.literal(clientOptions = clientOptions.asInstanceOf[js.Any], serverOptions = serverOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
   
-  @scala.inline
-  implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientOptions](x: Self) {
     
-    @scala.inline
-    def setClientOptions(value: js.Any): Self = StObject.set(x, "clientOptions", value.asInstanceOf[js.Any])
+    inline def setClientOptions(value: js.Any): Self = StObject.set(x, "clientOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerOptions(value: js.Any): Self = StObject.set(x, "serverOptions", value.asInstanceOf[js.Any])
+    inline def setServerOptions(value: js.Any): Self = StObject.set(x, "serverOptions", value.asInstanceOf[js.Any])
   }
 }

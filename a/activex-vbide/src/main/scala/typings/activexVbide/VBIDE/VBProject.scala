@@ -48,13 +48,12 @@ trait VBProject extends StObject {
   
   val VBE: typings.activexVbide.VBIDE.VBE
   
-  @JSName("VBIDE.VBProject_typekey")
+  /* private */ @JSName("VBIDE.VBProject_typekey")
   var VBIDEDotVBProject_typekey: VBProject
 }
 object VBProject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     BuildFileName: String,
     Collection: VBProjects,
@@ -80,64 +79,44 @@ object VBProject {
     __obj.asInstanceOf[VBProject]
   }
   
-  @scala.inline
-  implicit class VBProjectMutableBuilder[Self <: VBProject] (val x: Self) extends AnyVal {
+  extension [Self <: VBProject](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildFileName(value: String): Self = StObject.set(x, "BuildFileName", value.asInstanceOf[js.Any])
+    inline def setBuildFileName(value: String): Self = StObject.set(x, "BuildFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection(value: VBProjects): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: VBProjects): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpContextID(value: Double): Self = StObject.set(x, "HelpContextID", value.asInstanceOf[js.Any])
+    inline def setHelpContextID(value: Double): Self = StObject.set(x, "HelpContextID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpFile(value: String): Self = StObject.set(x, "HelpFile", value.asInstanceOf[js.Any])
+    inline def setHelpFile(value: String): Self = StObject.set(x, "HelpFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMakeCompiledFile(value: () => Unit): Self = StObject.set(x, "MakeCompiledFile", js.Any.fromFunction0(value))
+    inline def setMakeCompiledFile(value: () => Unit): Self = StObject.set(x, "MakeCompiledFile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMode(value: vbextVBAMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: vbextVBAMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Application): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Application): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtection(value: vbextProjectProtection): Self = StObject.set(x, "Protection", value.asInstanceOf[js.Any])
+    inline def setProtection(value: vbextProjectProtection): Self = StObject.set(x, "Protection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferences(value: References): Self = StObject.set(x, "References", value.asInstanceOf[js.Any])
+    inline def setReferences(value: References): Self = StObject.set(x, "References", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveAs(value: String => Unit): Self = StObject.set(x, "SaveAs", js.Any.fromFunction1(value))
+    inline def setSaveAs(value: String => Unit): Self = StObject.set(x, "SaveAs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaved(value: Boolean): Self = StObject.set(x, "Saved", value.asInstanceOf[js.Any])
+    inline def setSaved(value: Boolean): Self = StObject.set(x, "Saved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: vbextProjectType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: vbextProjectType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBComponents(value: VBComponents): Self = StObject.set(x, "VBComponents", value.asInstanceOf[js.Any])
+    inline def setVBComponents(value: VBComponents): Self = StObject.set(x, "VBComponents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBE(value: VBE): Self = StObject.set(x, "VBE", value.asInstanceOf[js.Any])
+    inline def setVBE(value: VBE): Self = StObject.set(x, "VBE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBIDEDotVBProject_typekey(value: VBProject): Self = StObject.set(x, "VBIDE.VBProject_typekey", value.asInstanceOf[js.Any])
+    inline def setVBIDEDotVBProject_typekey(value: VBProject): Self = StObject.set(x, "VBIDE.VBProject_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,7 @@ trait Glyph extends StObject {
 }
 object Glyph {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getContext: () => IRenderContext,
     getMetrics: () => Xmax,
     render: (IRenderContext, Double, Double) => Unit,
@@ -51,40 +50,28 @@ object Glyph {
     __obj.asInstanceOf[Glyph]
   }
   
-  @scala.inline
-  implicit class GlyphMutableBuilder[Self <: Glyph] (val x: Self) extends AnyVal {
+  extension [Self <: Glyph](x: Self) {
     
-    @scala.inline
-    def setGetContext(value: () => IRenderContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
+    inline def setGetContext(value: () => IRenderContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMetrics(value: () => Xmax): Self = StObject.set(x, "getMetrics", js.Any.fromFunction0(value))
+    inline def setGetMetrics(value: () => Xmax): Self = StObject.set(x, "getMetrics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRender(value: (IRenderContext, Double, Double) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+    inline def setRender(value: (IRenderContext, Double, Double) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRenderToStave(value: Double => Unit): Self = StObject.set(x, "renderToStave", js.Any.fromFunction1(value))
+    inline def setRenderToStave(value: Double => Unit): Self = StObject.set(x, "renderToStave", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetContext(value: IRenderContext => Glyph): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+    inline def setSetContext(value: IRenderContext => Glyph): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOptions(value: Cache => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: Cache => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStave(value: Stave => Glyph): Self = StObject.set(x, "setStave", js.Any.fromFunction1(value))
+    inline def setSetStave(value: Stave => Glyph): Self = StObject.set(x, "setStave", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWidth(value: Double => Glyph): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+    inline def setSetWidth(value: Double => Glyph): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetXShift(value: Double => Glyph): Self = StObject.set(x, "setXShift", js.Any.fromFunction1(value))
+    inline def setSetXShift(value: Double => Glyph): Self = StObject.set(x, "setXShift", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetYShift(value: Double => Glyph): Self = StObject.set(x, "setYShift", js.Any.fromFunction1(value))
+    inline def setSetYShift(value: Double => Glyph): Self = StObject.set(x, "setYShift", js.Any.fromFunction1(value))
   }
 }

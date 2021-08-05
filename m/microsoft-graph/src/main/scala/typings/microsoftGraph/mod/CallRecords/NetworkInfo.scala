@@ -102,220 +102,149 @@ trait NetworkInfo extends StObject {
 }
 object NetworkInfo {
   
-  @scala.inline
-  def apply(): NetworkInfo = {
+  inline def apply(): NetworkInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkInfo]
   }
   
-  @scala.inline
-  implicit class NetworkInfoMutableBuilder[Self <: NetworkInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkInfo](x: Self) {
     
-    @scala.inline
-    def setBandwidthLowEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "bandwidthLowEventRatio", value.asInstanceOf[js.Any])
+    inline def setBandwidthLowEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "bandwidthLowEventRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandwidthLowEventRatioNull: Self = StObject.set(x, "bandwidthLowEventRatio", null)
+    inline def setBandwidthLowEventRatioNull: Self = StObject.set(x, "bandwidthLowEventRatio", null)
     
-    @scala.inline
-    def setBandwidthLowEventRatioUndefined: Self = StObject.set(x, "bandwidthLowEventRatio", js.undefined)
+    inline def setBandwidthLowEventRatioUndefined: Self = StObject.set(x, "bandwidthLowEventRatio", js.undefined)
     
-    @scala.inline
-    def setBasicServiceSetIdentifier(value: NullableOption[String]): Self = StObject.set(x, "basicServiceSetIdentifier", value.asInstanceOf[js.Any])
+    inline def setBasicServiceSetIdentifier(value: NullableOption[String]): Self = StObject.set(x, "basicServiceSetIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicServiceSetIdentifierNull: Self = StObject.set(x, "basicServiceSetIdentifier", null)
+    inline def setBasicServiceSetIdentifierNull: Self = StObject.set(x, "basicServiceSetIdentifier", null)
     
-    @scala.inline
-    def setBasicServiceSetIdentifierUndefined: Self = StObject.set(x, "basicServiceSetIdentifier", js.undefined)
+    inline def setBasicServiceSetIdentifierUndefined: Self = StObject.set(x, "basicServiceSetIdentifier", js.undefined)
     
-    @scala.inline
-    def setConnectionType(value: NetworkConnectionType): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
+    inline def setConnectionType(value: NetworkConnectionType): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionTypeUndefined: Self = StObject.set(x, "connectionType", js.undefined)
+    inline def setConnectionTypeUndefined: Self = StObject.set(x, "connectionType", js.undefined)
     
-    @scala.inline
-    def setDelayEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "delayEventRatio", value.asInstanceOf[js.Any])
+    inline def setDelayEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "delayEventRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayEventRatioNull: Self = StObject.set(x, "delayEventRatio", null)
+    inline def setDelayEventRatioNull: Self = StObject.set(x, "delayEventRatio", null)
     
-    @scala.inline
-    def setDelayEventRatioUndefined: Self = StObject.set(x, "delayEventRatio", js.undefined)
+    inline def setDelayEventRatioUndefined: Self = StObject.set(x, "delayEventRatio", js.undefined)
     
-    @scala.inline
-    def setDnsSuffix(value: NullableOption[String]): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
+    inline def setDnsSuffix(value: NullableOption[String]): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsSuffixNull: Self = StObject.set(x, "dnsSuffix", null)
+    inline def setDnsSuffixNull: Self = StObject.set(x, "dnsSuffix", null)
     
-    @scala.inline
-    def setDnsSuffixUndefined: Self = StObject.set(x, "dnsSuffix", js.undefined)
+    inline def setDnsSuffixUndefined: Self = StObject.set(x, "dnsSuffix", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: NullableOption[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: NullableOption[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressNull: Self = StObject.set(x, "ipAddress", null)
+    inline def setIpAddressNull: Self = StObject.set(x, "ipAddress", null)
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setLinkSpeed(value: NullableOption[Double]): Self = StObject.set(x, "linkSpeed", value.asInstanceOf[js.Any])
+    inline def setLinkSpeed(value: NullableOption[Double]): Self = StObject.set(x, "linkSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkSpeedNull: Self = StObject.set(x, "linkSpeed", null)
+    inline def setLinkSpeedNull: Self = StObject.set(x, "linkSpeed", null)
     
-    @scala.inline
-    def setLinkSpeedUndefined: Self = StObject.set(x, "linkSpeed", js.undefined)
+    inline def setLinkSpeedUndefined: Self = StObject.set(x, "linkSpeed", js.undefined)
     
-    @scala.inline
-    def setMacAddress(value: NullableOption[String]): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
+    inline def setMacAddress(value: NullableOption[String]): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacAddressNull: Self = StObject.set(x, "macAddress", null)
+    inline def setMacAddressNull: Self = StObject.set(x, "macAddress", null)
     
-    @scala.inline
-    def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
+    inline def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
     
-    @scala.inline
-    def setPort(value: NullableOption[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: NullableOption[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortNull: Self = StObject.set(x, "port", null)
+    inline def setPortNull: Self = StObject.set(x, "port", null)
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setReceivedQualityEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "receivedQualityEventRatio", value.asInstanceOf[js.Any])
+    inline def setReceivedQualityEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "receivedQualityEventRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedQualityEventRatioNull: Self = StObject.set(x, "receivedQualityEventRatio", null)
+    inline def setReceivedQualityEventRatioNull: Self = StObject.set(x, "receivedQualityEventRatio", null)
     
-    @scala.inline
-    def setReceivedQualityEventRatioUndefined: Self = StObject.set(x, "receivedQualityEventRatio", js.undefined)
+    inline def setReceivedQualityEventRatioUndefined: Self = StObject.set(x, "receivedQualityEventRatio", js.undefined)
     
-    @scala.inline
-    def setReflexiveIPAddress(value: NullableOption[String]): Self = StObject.set(x, "reflexiveIPAddress", value.asInstanceOf[js.Any])
+    inline def setReflexiveIPAddress(value: NullableOption[String]): Self = StObject.set(x, "reflexiveIPAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReflexiveIPAddressNull: Self = StObject.set(x, "reflexiveIPAddress", null)
+    inline def setReflexiveIPAddressNull: Self = StObject.set(x, "reflexiveIPAddress", null)
     
-    @scala.inline
-    def setReflexiveIPAddressUndefined: Self = StObject.set(x, "reflexiveIPAddress", js.undefined)
+    inline def setReflexiveIPAddressUndefined: Self = StObject.set(x, "reflexiveIPAddress", js.undefined)
     
-    @scala.inline
-    def setRelayIPAddress(value: NullableOption[String]): Self = StObject.set(x, "relayIPAddress", value.asInstanceOf[js.Any])
+    inline def setRelayIPAddress(value: NullableOption[String]): Self = StObject.set(x, "relayIPAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelayIPAddressNull: Self = StObject.set(x, "relayIPAddress", null)
+    inline def setRelayIPAddressNull: Self = StObject.set(x, "relayIPAddress", null)
     
-    @scala.inline
-    def setRelayIPAddressUndefined: Self = StObject.set(x, "relayIPAddress", js.undefined)
+    inline def setRelayIPAddressUndefined: Self = StObject.set(x, "relayIPAddress", js.undefined)
     
-    @scala.inline
-    def setRelayPort(value: NullableOption[Double]): Self = StObject.set(x, "relayPort", value.asInstanceOf[js.Any])
+    inline def setRelayPort(value: NullableOption[Double]): Self = StObject.set(x, "relayPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelayPortNull: Self = StObject.set(x, "relayPort", null)
+    inline def setRelayPortNull: Self = StObject.set(x, "relayPort", null)
     
-    @scala.inline
-    def setRelayPortUndefined: Self = StObject.set(x, "relayPort", js.undefined)
+    inline def setRelayPortUndefined: Self = StObject.set(x, "relayPort", js.undefined)
     
-    @scala.inline
-    def setSentQualityEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "sentQualityEventRatio", value.asInstanceOf[js.Any])
+    inline def setSentQualityEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "sentQualityEventRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentQualityEventRatioNull: Self = StObject.set(x, "sentQualityEventRatio", null)
+    inline def setSentQualityEventRatioNull: Self = StObject.set(x, "sentQualityEventRatio", null)
     
-    @scala.inline
-    def setSentQualityEventRatioUndefined: Self = StObject.set(x, "sentQualityEventRatio", js.undefined)
+    inline def setSentQualityEventRatioUndefined: Self = StObject.set(x, "sentQualityEventRatio", js.undefined)
     
-    @scala.inline
-    def setSubnet(value: NullableOption[String]): Self = StObject.set(x, "subnet", value.asInstanceOf[js.Any])
+    inline def setSubnet(value: NullableOption[String]): Self = StObject.set(x, "subnet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetNull: Self = StObject.set(x, "subnet", null)
+    inline def setSubnetNull: Self = StObject.set(x, "subnet", null)
     
-    @scala.inline
-    def setSubnetUndefined: Self = StObject.set(x, "subnet", js.undefined)
+    inline def setSubnetUndefined: Self = StObject.set(x, "subnet", js.undefined)
     
-    @scala.inline
-    def setWifiBand(value: WifiBand): Self = StObject.set(x, "wifiBand", value.asInstanceOf[js.Any])
+    inline def setWifiBand(value: WifiBand): Self = StObject.set(x, "wifiBand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiBandUndefined: Self = StObject.set(x, "wifiBand", js.undefined)
+    inline def setWifiBandUndefined: Self = StObject.set(x, "wifiBand", js.undefined)
     
-    @scala.inline
-    def setWifiBatteryCharge(value: NullableOption[Double]): Self = StObject.set(x, "wifiBatteryCharge", value.asInstanceOf[js.Any])
+    inline def setWifiBatteryCharge(value: NullableOption[Double]): Self = StObject.set(x, "wifiBatteryCharge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiBatteryChargeNull: Self = StObject.set(x, "wifiBatteryCharge", null)
+    inline def setWifiBatteryChargeNull: Self = StObject.set(x, "wifiBatteryCharge", null)
     
-    @scala.inline
-    def setWifiBatteryChargeUndefined: Self = StObject.set(x, "wifiBatteryCharge", js.undefined)
+    inline def setWifiBatteryChargeUndefined: Self = StObject.set(x, "wifiBatteryCharge", js.undefined)
     
-    @scala.inline
-    def setWifiChannel(value: NullableOption[Double]): Self = StObject.set(x, "wifiChannel", value.asInstanceOf[js.Any])
+    inline def setWifiChannel(value: NullableOption[Double]): Self = StObject.set(x, "wifiChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiChannelNull: Self = StObject.set(x, "wifiChannel", null)
+    inline def setWifiChannelNull: Self = StObject.set(x, "wifiChannel", null)
     
-    @scala.inline
-    def setWifiChannelUndefined: Self = StObject.set(x, "wifiChannel", js.undefined)
+    inline def setWifiChannelUndefined: Self = StObject.set(x, "wifiChannel", js.undefined)
     
-    @scala.inline
-    def setWifiMicrosoftDriver(value: NullableOption[String]): Self = StObject.set(x, "wifiMicrosoftDriver", value.asInstanceOf[js.Any])
+    inline def setWifiMicrosoftDriver(value: NullableOption[String]): Self = StObject.set(x, "wifiMicrosoftDriver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiMicrosoftDriverNull: Self = StObject.set(x, "wifiMicrosoftDriver", null)
+    inline def setWifiMicrosoftDriverNull: Self = StObject.set(x, "wifiMicrosoftDriver", null)
     
-    @scala.inline
-    def setWifiMicrosoftDriverUndefined: Self = StObject.set(x, "wifiMicrosoftDriver", js.undefined)
+    inline def setWifiMicrosoftDriverUndefined: Self = StObject.set(x, "wifiMicrosoftDriver", js.undefined)
     
-    @scala.inline
-    def setWifiMicrosoftDriverVersion(value: NullableOption[String]): Self = StObject.set(x, "wifiMicrosoftDriverVersion", value.asInstanceOf[js.Any])
+    inline def setWifiMicrosoftDriverVersion(value: NullableOption[String]): Self = StObject.set(x, "wifiMicrosoftDriverVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiMicrosoftDriverVersionNull: Self = StObject.set(x, "wifiMicrosoftDriverVersion", null)
+    inline def setWifiMicrosoftDriverVersionNull: Self = StObject.set(x, "wifiMicrosoftDriverVersion", null)
     
-    @scala.inline
-    def setWifiMicrosoftDriverVersionUndefined: Self = StObject.set(x, "wifiMicrosoftDriverVersion", js.undefined)
+    inline def setWifiMicrosoftDriverVersionUndefined: Self = StObject.set(x, "wifiMicrosoftDriverVersion", js.undefined)
     
-    @scala.inline
-    def setWifiRadioType(value: WifiRadioType): Self = StObject.set(x, "wifiRadioType", value.asInstanceOf[js.Any])
+    inline def setWifiRadioType(value: WifiRadioType): Self = StObject.set(x, "wifiRadioType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiRadioTypeUndefined: Self = StObject.set(x, "wifiRadioType", js.undefined)
+    inline def setWifiRadioTypeUndefined: Self = StObject.set(x, "wifiRadioType", js.undefined)
     
-    @scala.inline
-    def setWifiSignalStrength(value: NullableOption[Double]): Self = StObject.set(x, "wifiSignalStrength", value.asInstanceOf[js.Any])
+    inline def setWifiSignalStrength(value: NullableOption[Double]): Self = StObject.set(x, "wifiSignalStrength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiSignalStrengthNull: Self = StObject.set(x, "wifiSignalStrength", null)
+    inline def setWifiSignalStrengthNull: Self = StObject.set(x, "wifiSignalStrength", null)
     
-    @scala.inline
-    def setWifiSignalStrengthUndefined: Self = StObject.set(x, "wifiSignalStrength", js.undefined)
+    inline def setWifiSignalStrengthUndefined: Self = StObject.set(x, "wifiSignalStrength", js.undefined)
     
-    @scala.inline
-    def setWifiVendorDriver(value: NullableOption[String]): Self = StObject.set(x, "wifiVendorDriver", value.asInstanceOf[js.Any])
+    inline def setWifiVendorDriver(value: NullableOption[String]): Self = StObject.set(x, "wifiVendorDriver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiVendorDriverNull: Self = StObject.set(x, "wifiVendorDriver", null)
+    inline def setWifiVendorDriverNull: Self = StObject.set(x, "wifiVendorDriver", null)
     
-    @scala.inline
-    def setWifiVendorDriverUndefined: Self = StObject.set(x, "wifiVendorDriver", js.undefined)
+    inline def setWifiVendorDriverUndefined: Self = StObject.set(x, "wifiVendorDriver", js.undefined)
     
-    @scala.inline
-    def setWifiVendorDriverVersion(value: NullableOption[String]): Self = StObject.set(x, "wifiVendorDriverVersion", value.asInstanceOf[js.Any])
+    inline def setWifiVendorDriverVersion(value: NullableOption[String]): Self = StObject.set(x, "wifiVendorDriverVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiVendorDriverVersionNull: Self = StObject.set(x, "wifiVendorDriverVersion", null)
+    inline def setWifiVendorDriverVersionNull: Self = StObject.set(x, "wifiVendorDriverVersion", null)
     
-    @scala.inline
-    def setWifiVendorDriverVersionUndefined: Self = StObject.set(x, "wifiVendorDriverVersion", js.undefined)
+    inline def setWifiVendorDriverVersionUndefined: Self = StObject.set(x, "wifiVendorDriverVersion", js.undefined)
   }
 }

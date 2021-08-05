@@ -18,22 +18,17 @@ trait PageShareAppMessageOptions extends StObject {
 }
 object PageShareAppMessageOptions {
   
-  @scala.inline
-  def apply(from: button | menu): PageShareAppMessageOptions = {
+  inline def apply(from: button | menu): PageShareAppMessageOptions = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageShareAppMessageOptions]
   }
   
-  @scala.inline
-  implicit class PageShareAppMessageOptionsMutableBuilder[Self <: PageShareAppMessageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageShareAppMessageOptions](x: Self) {
     
-    @scala.inline
-    def setFrom(value: button | menu): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: button | menu): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

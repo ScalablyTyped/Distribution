@@ -20,8 +20,7 @@ object xtrasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def toFailures(result: StructResult, context: StructContext): Iterable[StructFailure] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFailures")(result.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Iterable[StructFailure]]
+  inline def toFailures(result: StructResult, context: StructContext): Iterable[StructFailure] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFailures")(result.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Iterable[StructFailure]]
   
   type Assign[T, U] = Simplify[U & (Omit[T, /* keyof U */ String])]
   

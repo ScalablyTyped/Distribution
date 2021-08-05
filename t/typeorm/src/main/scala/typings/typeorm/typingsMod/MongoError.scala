@@ -25,6 +25,5 @@ object MongoError {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(options: js.Object): MongoError = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[MongoError]
+  inline def create(options: js.Object): MongoError = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[MongoError]
 }

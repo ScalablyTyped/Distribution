@@ -217,289 +217,195 @@ trait IGauge
 }
 object IGauge {
   
-  @scala.inline
-  def apply(): IGauge = {
+  inline def apply(): IGauge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGauge]
   }
   
-  @scala.inline
-  implicit class IGaugeMutableBuilder[Self <: IGauge] (val x: Self) extends AnyVal {
+  extension [Self <: IGauge](x: Self) {
     
-    @scala.inline
-    def setAngleField(value: String): Self = StObject.set(x, "angleField", value.asInstanceOf[js.Any])
+    inline def setAngleField(value: String): Self = StObject.set(x, "angleField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleFieldUndefined: Self = StObject.set(x, "angleField", js.undefined)
+    inline def setAngleFieldUndefined: Self = StObject.set(x, "angleField", js.undefined)
     
-    @scala.inline
-    def setDonut(value: Double): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
+    inline def setDonut(value: Double): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
+    inline def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setGetAngleField(value: () => String): Self = StObject.set(x, "getAngleField", js.Any.fromFunction0(value))
+    inline def setGetAngleField(value: () => String): Self = StObject.set(x, "getAngleField", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAngleFieldUndefined: Self = StObject.set(x, "getAngleField", js.undefined)
+    inline def setGetAngleFieldUndefined: Self = StObject.set(x, "getAngleField", js.undefined)
     
-    @scala.inline
-    def setGetCenter(value: () => Array): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
+    inline def setGetCenter(value: () => Array): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCenterUndefined: Self = StObject.set(x, "getCenter", js.undefined)
+    inline def setGetCenterUndefined: Self = StObject.set(x, "getCenter", js.undefined)
     
-    @scala.inline
-    def setGetDonut(value: () => Double): Self = StObject.set(x, "getDonut", js.Any.fromFunction0(value))
+    inline def setGetDonut(value: () => Double): Self = StObject.set(x, "getDonut", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDonutUndefined: Self = StObject.set(x, "getDonut", js.undefined)
+    inline def setGetDonutUndefined: Self = StObject.set(x, "getDonut", js.undefined)
     
-    @scala.inline
-    def setGetField(value: () => String): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
+    inline def setGetField(value: () => String): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFieldUndefined: Self = StObject.set(x, "getField", js.undefined)
+    inline def setGetFieldUndefined: Self = StObject.set(x, "getField", js.undefined)
     
-    @scala.inline
-    def setGetMaximum(value: () => Double): Self = StObject.set(x, "getMaximum", js.Any.fromFunction0(value))
+    inline def setGetMaximum(value: () => Double): Self = StObject.set(x, "getMaximum", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaximumUndefined: Self = StObject.set(x, "getMaximum", js.undefined)
+    inline def setGetMaximumUndefined: Self = StObject.set(x, "getMaximum", js.undefined)
     
-    @scala.inline
-    def setGetMinimum(value: () => Double): Self = StObject.set(x, "getMinimum", js.Any.fromFunction0(value))
+    inline def setGetMinimum(value: () => Double): Self = StObject.set(x, "getMinimum", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinimumUndefined: Self = StObject.set(x, "getMinimum", js.undefined)
+    inline def setGetMinimumUndefined: Self = StObject.set(x, "getMinimum", js.undefined)
     
-    @scala.inline
-    def setGetNeedle(value: () => Boolean): Self = StObject.set(x, "getNeedle", js.Any.fromFunction0(value))
+    inline def setGetNeedle(value: () => Boolean): Self = StObject.set(x, "getNeedle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNeedleLength(value: () => Double): Self = StObject.set(x, "getNeedleLength", js.Any.fromFunction0(value))
+    inline def setGetNeedleLength(value: () => Double): Self = StObject.set(x, "getNeedleLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNeedleLengthRatio(value: () => Double): Self = StObject.set(x, "getNeedleLengthRatio", js.Any.fromFunction0(value))
+    inline def setGetNeedleLengthRatio(value: () => Double): Self = StObject.set(x, "getNeedleLengthRatio", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNeedleLengthRatioUndefined: Self = StObject.set(x, "getNeedleLengthRatio", js.undefined)
+    inline def setGetNeedleLengthRatioUndefined: Self = StObject.set(x, "getNeedleLengthRatio", js.undefined)
     
-    @scala.inline
-    def setGetNeedleLengthUndefined: Self = StObject.set(x, "getNeedleLength", js.undefined)
+    inline def setGetNeedleLengthUndefined: Self = StObject.set(x, "getNeedleLength", js.undefined)
     
-    @scala.inline
-    def setGetNeedleUndefined: Self = StObject.set(x, "getNeedle", js.undefined)
+    inline def setGetNeedleUndefined: Self = StObject.set(x, "getNeedle", js.undefined)
     
-    @scala.inline
-    def setGetNeedleWidth(value: () => Double): Self = StObject.set(x, "getNeedleWidth", js.Any.fromFunction0(value))
+    inline def setGetNeedleWidth(value: () => Double): Self = StObject.set(x, "getNeedleWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNeedleWidthUndefined: Self = StObject.set(x, "getNeedleWidth", js.undefined)
+    inline def setGetNeedleWidthUndefined: Self = StObject.set(x, "getNeedleWidth", js.undefined)
     
-    @scala.inline
-    def setGetRadius(value: () => Double): Self = StObject.set(x, "getRadius", js.Any.fromFunction0(value))
+    inline def setGetRadius(value: () => Double): Self = StObject.set(x, "getRadius", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRadiusUndefined: Self = StObject.set(x, "getRadius", js.undefined)
+    inline def setGetRadiusUndefined: Self = StObject.set(x, "getRadius", js.undefined)
     
-    @scala.inline
-    def setGetRegion(value: () => Array): Self = StObject.set(x, "getRegion", js.Any.fromFunction0(value))
+    inline def setGetRegion(value: () => Array): Self = StObject.set(x, "getRegion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRegionUndefined: Self = StObject.set(x, "getRegion", js.undefined)
+    inline def setGetRegionUndefined: Self = StObject.set(x, "getRegion", js.undefined)
     
-    @scala.inline
-    def setGetRotation(value: () => Double): Self = StObject.set(x, "getRotation", js.Any.fromFunction0(value))
+    inline def setGetRotation(value: () => Double): Self = StObject.set(x, "getRotation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRotationUndefined: Self = StObject.set(x, "getRotation", js.undefined)
+    inline def setGetRotationUndefined: Self = StObject.set(x, "getRotation", js.undefined)
     
-    @scala.inline
-    def setGetSectors(value: () => Array): Self = StObject.set(x, "getSectors", js.Any.fromFunction0(value))
+    inline def setGetSectors(value: () => Array): Self = StObject.set(x, "getSectors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSectorsUndefined: Self = StObject.set(x, "getSectors", js.undefined)
+    inline def setGetSectorsUndefined: Self = StObject.set(x, "getSectors", js.undefined)
     
-    @scala.inline
-    def setGetTotalAngle(value: () => js.Any): Self = StObject.set(x, "getTotalAngle", js.Any.fromFunction0(value))
+    inline def setGetTotalAngle(value: () => js.Any): Self = StObject.set(x, "getTotalAngle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTotalAngleUndefined: Self = StObject.set(x, "getTotalAngle", js.undefined)
+    inline def setGetTotalAngleUndefined: Self = StObject.set(x, "getTotalAngle", js.undefined)
     
-    @scala.inline
-    def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
+    inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
-    @scala.inline
-    def setGetWholeDisk(value: () => Boolean): Self = StObject.set(x, "getWholeDisk", js.Any.fromFunction0(value))
+    inline def setGetWholeDisk(value: () => Boolean): Self = StObject.set(x, "getWholeDisk", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWholeDiskUndefined: Self = StObject.set(x, "getWholeDisk", js.undefined)
+    inline def setGetWholeDiskUndefined: Self = StObject.set(x, "getWholeDisk", js.undefined)
     
-    @scala.inline
-    def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
-    @scala.inline
-    def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
-    @scala.inline
-    def setNeedle(value: Boolean): Self = StObject.set(x, "needle", value.asInstanceOf[js.Any])
+    inline def setNeedle(value: Boolean): Self = StObject.set(x, "needle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedleLength(value: Double): Self = StObject.set(x, "needleLength", value.asInstanceOf[js.Any])
+    inline def setNeedleLength(value: Double): Self = StObject.set(x, "needleLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedleLengthRatio(value: Double): Self = StObject.set(x, "needleLengthRatio", value.asInstanceOf[js.Any])
+    inline def setNeedleLengthRatio(value: Double): Self = StObject.set(x, "needleLengthRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedleLengthRatioUndefined: Self = StObject.set(x, "needleLengthRatio", js.undefined)
+    inline def setNeedleLengthRatioUndefined: Self = StObject.set(x, "needleLengthRatio", js.undefined)
     
-    @scala.inline
-    def setNeedleLengthUndefined: Self = StObject.set(x, "needleLength", js.undefined)
+    inline def setNeedleLengthUndefined: Self = StObject.set(x, "needleLength", js.undefined)
     
-    @scala.inline
-    def setNeedleUndefined: Self = StObject.set(x, "needle", js.undefined)
+    inline def setNeedleUndefined: Self = StObject.set(x, "needle", js.undefined)
     
-    @scala.inline
-    def setNeedleWidth(value: Double): Self = StObject.set(x, "needleWidth", value.asInstanceOf[js.Any])
+    inline def setNeedleWidth(value: Double): Self = StObject.set(x, "needleWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedleWidthUndefined: Self = StObject.set(x, "needleWidth", js.undefined)
+    inline def setNeedleWidthUndefined: Self = StObject.set(x, "needleWidth", js.undefined)
     
-    @scala.inline
-    def setSectors(value: Array): Self = StObject.set(x, "sectors", value.asInstanceOf[js.Any])
+    inline def setSectors(value: Array): Self = StObject.set(x, "sectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectorsUndefined: Self = StObject.set(x, "sectors", js.undefined)
+    inline def setSectorsUndefined: Self = StObject.set(x, "sectors", js.undefined)
     
-    @scala.inline
-    def setSetAngleField(value: /* angleField */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setAngleField", js.Any.fromFunction1(value))
+    inline def setSetAngleField(value: /* angleField */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setAngleField", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAngleFieldUndefined: Self = StObject.set(x, "setAngleField", js.undefined)
+    inline def setSetAngleFieldUndefined: Self = StObject.set(x, "setAngleField", js.undefined)
     
-    @scala.inline
-    def setSetCenter(value: /* center */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setCenter", js.Any.fromFunction1(value))
+    inline def setSetCenter(value: /* center */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setCenter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCenterUndefined: Self = StObject.set(x, "setCenter", js.undefined)
+    inline def setSetCenterUndefined: Self = StObject.set(x, "setCenter", js.undefined)
     
-    @scala.inline
-    def setSetDonut(value: /* donut */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDonut", js.Any.fromFunction1(value))
+    inline def setSetDonut(value: /* donut */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDonut", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDonutUndefined: Self = StObject.set(x, "setDonut", js.undefined)
+    inline def setSetDonutUndefined: Self = StObject.set(x, "setDonut", js.undefined)
     
-    @scala.inline
-    def setSetField(value: /* field */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
+    inline def setSetField(value: /* field */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFieldUndefined: Self = StObject.set(x, "setField", js.undefined)
+    inline def setSetFieldUndefined: Self = StObject.set(x, "setField", js.undefined)
     
-    @scala.inline
-    def setSetMaximum(value: /* maximum */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaximum", js.Any.fromFunction1(value))
+    inline def setSetMaximum(value: /* maximum */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaximum", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaximumUndefined: Self = StObject.set(x, "setMaximum", js.undefined)
+    inline def setSetMaximumUndefined: Self = StObject.set(x, "setMaximum", js.undefined)
     
-    @scala.inline
-    def setSetMinimum(value: /* minimum */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinimum", js.Any.fromFunction1(value))
+    inline def setSetMinimum(value: /* minimum */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinimum", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinimumUndefined: Self = StObject.set(x, "setMinimum", js.undefined)
+    inline def setSetMinimumUndefined: Self = StObject.set(x, "setMinimum", js.undefined)
     
-    @scala.inline
-    def setSetNeedle(value: /* needle */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setNeedle", js.Any.fromFunction1(value))
+    inline def setSetNeedle(value: /* needle */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setNeedle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNeedleLength(value: /* needleLength */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setNeedleLength", js.Any.fromFunction1(value))
+    inline def setSetNeedleLength(value: /* needleLength */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setNeedleLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNeedleLengthRatio(value: /* needleLengthRatio */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setNeedleLengthRatio", js.Any.fromFunction1(value))
+    inline def setSetNeedleLengthRatio(value: /* needleLengthRatio */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setNeedleLengthRatio", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNeedleLengthRatioUndefined: Self = StObject.set(x, "setNeedleLengthRatio", js.undefined)
+    inline def setSetNeedleLengthRatioUndefined: Self = StObject.set(x, "setNeedleLengthRatio", js.undefined)
     
-    @scala.inline
-    def setSetNeedleLengthUndefined: Self = StObject.set(x, "setNeedleLength", js.undefined)
+    inline def setSetNeedleLengthUndefined: Self = StObject.set(x, "setNeedleLength", js.undefined)
     
-    @scala.inline
-    def setSetNeedleUndefined: Self = StObject.set(x, "setNeedle", js.undefined)
+    inline def setSetNeedleUndefined: Self = StObject.set(x, "setNeedle", js.undefined)
     
-    @scala.inline
-    def setSetNeedleWidth(value: /* needleWidth */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setNeedleWidth", js.Any.fromFunction1(value))
+    inline def setSetNeedleWidth(value: /* needleWidth */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setNeedleWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNeedleWidthUndefined: Self = StObject.set(x, "setNeedleWidth", js.undefined)
+    inline def setSetNeedleWidthUndefined: Self = StObject.set(x, "setNeedleWidth", js.undefined)
     
-    @scala.inline
-    def setSetRadius(value: /* radius */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setRadius", js.Any.fromFunction1(value))
+    inline def setSetRadius(value: /* radius */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setRadius", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRadiusUndefined: Self = StObject.set(x, "setRadius", js.undefined)
+    inline def setSetRadiusUndefined: Self = StObject.set(x, "setRadius", js.undefined)
     
-    @scala.inline
-    def setSetRegion(value: /* region */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setRegion", js.Any.fromFunction1(value))
+    inline def setSetRegion(value: /* region */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setRegion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRegionUndefined: Self = StObject.set(x, "setRegion", js.undefined)
+    inline def setSetRegionUndefined: Self = StObject.set(x, "setRegion", js.undefined)
     
-    @scala.inline
-    def setSetRotation(value: /* rotation */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setRotation", js.Any.fromFunction1(value))
+    inline def setSetRotation(value: /* rotation */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setRotation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRotationUndefined: Self = StObject.set(x, "setRotation", js.undefined)
+    inline def setSetRotationUndefined: Self = StObject.set(x, "setRotation", js.undefined)
     
-    @scala.inline
-    def setSetSectors(value: /* sectors */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setSectors", js.Any.fromFunction1(value))
+    inline def setSetSectors(value: /* sectors */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setSectors", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSectorsUndefined: Self = StObject.set(x, "setSectors", js.undefined)
+    inline def setSetSectorsUndefined: Self = StObject.set(x, "setSectors", js.undefined)
     
-    @scala.inline
-    def setSetTotalAngle(value: /* totalAngle */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTotalAngle", js.Any.fromFunction1(value))
+    inline def setSetTotalAngle(value: /* totalAngle */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTotalAngle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTotalAngleUndefined: Self = StObject.set(x, "setTotalAngle", js.undefined)
+    inline def setSetTotalAngleUndefined: Self = StObject.set(x, "setTotalAngle", js.undefined)
     
-    @scala.inline
-    def setSetValue(value: /* value */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
-    @scala.inline
-    def setSetWholeDisk(value: /* wholeDisk */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setWholeDisk", js.Any.fromFunction1(value))
+    inline def setSetWholeDisk(value: /* wholeDisk */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setWholeDisk", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWholeDiskUndefined: Self = StObject.set(x, "setWholeDisk", js.undefined)
+    inline def setSetWholeDiskUndefined: Self = StObject.set(x, "setWholeDisk", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setWholeDisk(value: Boolean): Self = StObject.set(x, "wholeDisk", value.asInstanceOf[js.Any])
+    inline def setWholeDisk(value: Boolean): Self = StObject.set(x, "wholeDisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWholeDiskUndefined: Self = StObject.set(x, "wholeDisk", js.undefined)
+    inline def setWholeDiskUndefined: Self = StObject.set(x, "wholeDisk", js.undefined)
   }
 }

@@ -79,8 +79,7 @@ object ParenthesisExpression {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def create(model: IModel): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -91,8 +90,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -103,8 +101,7 @@ object ParenthesisExpression {
     *  7.21.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -115,8 +112,7 @@ object ParenthesisExpression {
     *  7.9.0 to 7.20.0
     */
   /* static member */
-  @scala.inline
-  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -127,8 +123,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBinaryExpressionUnderLeft(container: BinaryExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInBinaryExpressionUnderLeft(container: BinaryExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -139,8 +134,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBinaryExpressionUnderRight(container: BinaryExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInBinaryExpressionUnderRight(container: BinaryExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -151,8 +145,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -163,8 +156,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInChangeListActionUnderValueModel(container: ChangeListAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInChangeListActionUnderValueModel(container: ChangeListAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -175,8 +167,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -187,8 +178,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -199,8 +189,7 @@ object ParenthesisExpression {
     *  8.5.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -211,8 +200,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -223,8 +211,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -235,8 +222,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -247,8 +233,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -259,8 +244,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInEndEventUnderReturnValueModel(container: EndEvent): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInEndEventUnderReturnValueModel(container: EndEvent): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -271,8 +255,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -283,8 +266,7 @@ object ParenthesisExpression {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInFormDataPartUnderValueModel(container: FormDataPart): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInFormDataPartUnderValueModel(container: FormDataPart): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -295,8 +277,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -307,8 +288,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -319,8 +299,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -331,8 +310,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -343,8 +321,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -355,8 +332,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -367,8 +343,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInHttpConfigurationUnderPassword(container: HttpConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -379,8 +354,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInHttpConfigurationUnderUsername(container: HttpConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -391,8 +365,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -403,8 +376,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInIfExpressionUnderCondition(container: IfExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInIfExpressionUnderCondition(container: IfExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -415,8 +387,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInIfExpressionUnderIfFalse(container: IfExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInIfExpressionUnderIfFalse(container: IfExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -427,8 +398,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInIfExpressionUnderIfTrue(container: IfExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInIfExpressionUnderIfTrue(container: IfExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -439,8 +409,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -451,8 +420,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInLogMessageActionUnderNodeModel(container: LogMessageAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -463,8 +431,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMemberChangeUnderValueModel(container: MemberChange): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInMemberChangeUnderValueModel(container: MemberChange): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -475,8 +442,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -487,8 +453,7 @@ object ParenthesisExpression {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -499,8 +464,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -511,8 +475,7 @@ object ParenthesisExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -523,8 +486,7 @@ object ParenthesisExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -535,8 +497,7 @@ object ParenthesisExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -547,8 +508,7 @@ object ParenthesisExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -559,8 +519,7 @@ object ParenthesisExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -571,8 +530,7 @@ object ParenthesisExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInRestCallActionUnderTimeOutModel(container: RestCallAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -583,8 +541,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -595,8 +552,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -607,8 +563,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInUnaryExpressionUnderExpression(container: UnaryExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInUnaryExpressionUnderExpression(container: UnaryExpression): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -619,8 +574,7 @@ object ParenthesisExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -631,8 +585,7 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
@@ -643,20 +596,17 @@ object ParenthesisExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
+  inline def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): ParenthesisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[ParenthesisExpression]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

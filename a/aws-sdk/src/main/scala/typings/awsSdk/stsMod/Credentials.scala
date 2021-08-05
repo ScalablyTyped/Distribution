@@ -28,8 +28,7 @@ trait Credentials extends StObject {
 }
 object Credentials {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessKeyId: accessKeyIdType,
     Expiration: dateType,
     SecretAccessKey: accessKeySecretType,
@@ -39,19 +38,14 @@ object Credentials {
     __obj.asInstanceOf[Credentials]
   }
   
-  @scala.inline
-  implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+  extension [Self <: Credentials](x: Self) {
     
-    @scala.inline
-    def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
+    inline def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiration(value: dateType): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: dateType): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretAccessKey(value: accessKeySecretType): Self = StObject.set(x, "SecretAccessKey", value.asInstanceOf[js.Any])
+    inline def setSecretAccessKey(value: accessKeySecretType): Self = StObject.set(x, "SecretAccessKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionToken(value: tokenType): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
+    inline def setSessionToken(value: tokenType): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
   }
 }

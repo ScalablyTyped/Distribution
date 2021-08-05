@@ -23,19 +23,15 @@ trait ASPxClientRichEditPointerUpEventArgs
 }
 object ASPxClientRichEditPointerUpEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean, htmlEvent: js.Any): ASPxClientRichEditPointerUpEventArgs = {
+  inline def apply(handled: Boolean, htmlEvent: js.Any): ASPxClientRichEditPointerUpEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRichEditPointerUpEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRichEditPointerUpEventArgsMutableBuilder[Self <: ASPxClientRichEditPointerUpEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRichEditPointerUpEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

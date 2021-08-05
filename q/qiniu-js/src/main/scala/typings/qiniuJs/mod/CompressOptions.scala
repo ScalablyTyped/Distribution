@@ -19,25 +19,19 @@ trait CompressOptions extends StObject {
 }
 object CompressOptions {
   
-  @scala.inline
-  def apply(maxHeight: Double, maxWidh: Double, noCompressIfLarger: Boolean, quality: Double): CompressOptions = {
+  inline def apply(maxHeight: Double, maxWidh: Double, noCompressIfLarger: Boolean, quality: Double): CompressOptions = {
     val __obj = js.Dynamic.literal(maxHeight = maxHeight.asInstanceOf[js.Any], maxWidh = maxWidh.asInstanceOf[js.Any], noCompressIfLarger = noCompressIfLarger.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompressOptions]
   }
   
-  @scala.inline
-  implicit class CompressOptionsMutableBuilder[Self <: CompressOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CompressOptions](x: Self) {
     
-    @scala.inline
-    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidh(value: Double): Self = StObject.set(x, "maxWidh", value.asInstanceOf[js.Any])
+    inline def setMaxWidh(value: Double): Self = StObject.set(x, "maxWidh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoCompressIfLarger(value: Boolean): Self = StObject.set(x, "noCompressIfLarger", value.asInstanceOf[js.Any])
+    inline def setNoCompressIfLarger(value: Boolean): Self = StObject.set(x, "noCompressIfLarger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
   }
 }

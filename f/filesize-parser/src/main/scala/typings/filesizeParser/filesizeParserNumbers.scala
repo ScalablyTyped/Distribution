@@ -8,11 +8,9 @@ object filesizeParserNumbers {
   
   @js.native
   sealed trait `10` extends StObject
-  @scala.inline
-  def `10`: `10` = 10.asInstanceOf[`10`]
+  inline def `10`: `10` = 10.asInstanceOf[`10`]
   
   @js.native
   sealed trait `2` extends StObject
-  @scala.inline
-  def `2`: `2` = 2.asInstanceOf[`2`]
+  inline def `2`: `2` = 2.asInstanceOf[`2`]
 }

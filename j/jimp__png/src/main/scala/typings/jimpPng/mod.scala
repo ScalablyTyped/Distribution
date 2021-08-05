@@ -16,8 +16,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): PNG = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PNG]
+  inline def default(): PNG = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PNG]
   
   trait PNG extends StObject {
     
@@ -35,8 +34,7 @@ object mod {
   }
   object PNG {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `class`: PNGClass,
       constants: MIMEPNG,
       decoders: ImagepngDecoderFn,
@@ -49,26 +47,19 @@ object mod {
       __obj.asInstanceOf[PNG]
     }
     
-    @scala.inline
-    implicit class PNGMutableBuilder[Self <: PNG] (val x: Self) extends AnyVal {
+    extension [Self <: PNG](x: Self) {
       
-      @scala.inline
-      def setClass(value: PNGClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: PNGClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstants(value: MIMEPNG): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+      inline def setConstants(value: MIMEPNG): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecoders(value: ImagepngDecoderFn): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
+      inline def setDecoders(value: ImagepngDecoderFn): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoders(value: ImagepngEncoderFn): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
+      inline def setEncoders(value: ImagepngEncoderFn): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasAlpha(value: `0`): Self = StObject.set(x, "hasAlpha", value.asInstanceOf[js.Any])
+      inline def setHasAlpha(value: `0`): Self = StObject.set(x, "hasAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMime(value: Imagepng): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: Imagepng): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     }
   }
   

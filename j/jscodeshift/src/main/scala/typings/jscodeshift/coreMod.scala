@@ -40,8 +40,7 @@ object coreMod extends Shortcut {
   }
   object API {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       j: JSCodeshift,
       jscodeshift: JSCodeshift,
       report: String => Unit,
@@ -51,20 +50,15 @@ object coreMod extends Shortcut {
       __obj.asInstanceOf[API]
     }
     
-    @scala.inline
-    implicit class APIMutableBuilder[Self <: API] (val x: Self) extends AnyVal {
+    extension [Self <: API](x: Self) {
       
-      @scala.inline
-      def setJ(value: JSCodeshift): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
+      inline def setJ(value: JSCodeshift): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJscodeshift(value: JSCodeshift): Self = StObject.set(x, "jscodeshift", value.asInstanceOf[js.Any])
+      inline def setJscodeshift(value: JSCodeshift): Self = StObject.set(x, "jscodeshift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReport(value: String => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
+      inline def setReport(value: String => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStats(value: (/* name */ String, /* quantity */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "stats", js.Any.fromFunction2(value))
+      inline def setStats(value: (/* name */ String, /* quantity */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "stats", js.Any.fromFunction2(value))
     }
   }
   
@@ -271,20 +265,16 @@ object coreMod extends Shortcut {
   }
   object FileInfo {
     
-    @scala.inline
-    def apply(path: String, source: String): FileInfo = {
+    inline def apply(path: String, source: String): FileInfo = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileInfo]
     }
     
-    @scala.inline
-    implicit class FileInfoMutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FileInfo](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -296,8 +286,7 @@ object coreMod extends Shortcut {
   }
   object Filters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       JSXElement: FilterMethods,
       VariableDeclarator: typings.jscodeshift.variableDeclaratorMod.FilterMethods
     ): Filters = {
@@ -305,14 +294,11 @@ object coreMod extends Shortcut {
       __obj.asInstanceOf[Filters]
     }
     
-    @scala.inline
-    implicit class FiltersMutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
+    extension [Self <: Filters](x: Self) {
       
-      @scala.inline
-      def setJSXElement(value: FilterMethods): Self = StObject.set(x, "JSXElement", value.asInstanceOf[js.Any])
+      inline def setJSXElement(value: FilterMethods): Self = StObject.set(x, "JSXElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableDeclarator(value: typings.jscodeshift.variableDeclaratorMod.FilterMethods): Self = StObject.set(x, "VariableDeclarator", value.asInstanceOf[js.Any])
+      inline def setVariableDeclarator(value: typings.jscodeshift.variableDeclaratorMod.FilterMethods): Self = StObject.set(x, "VariableDeclarator", value.asInstanceOf[js.Any])
     }
   }
   
@@ -421,17 +407,14 @@ object coreMod extends Shortcut {
   }
   object Mappings {
     
-    @scala.inline
-    def apply(JSXElement: MappingMethods): Mappings = {
+    inline def apply(JSXElement: MappingMethods): Mappings = {
       val __obj = js.Dynamic.literal(JSXElement = JSXElement.asInstanceOf[js.Any])
       __obj.asInstanceOf[Mappings]
     }
     
-    @scala.inline
-    implicit class MappingsMutableBuilder[Self <: Mappings] (val x: Self) extends AnyVal {
+    extension [Self <: Mappings](x: Self) {
       
-      @scala.inline
-      def setJSXElement(value: MappingMethods): Self = StObject.set(x, "JSXElement", value.asInstanceOf[js.Any])
+      inline def setJSXElement(value: MappingMethods): Self = StObject.set(x, "JSXElement", value.asInstanceOf[js.Any])
     }
   }
   

@@ -22,19 +22,15 @@ trait IDataTable extends StObject {
 }
 object IDataTable {
   
-  @scala.inline
-  def apply(qName: String, qType: String): IDataTable = {
+  inline def apply(qName: String, qType: String): IDataTable = {
     val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataTable]
   }
   
-  @scala.inline
-  implicit class IDataTableMutableBuilder[Self <: IDataTable] (val x: Self) extends AnyVal {
+  extension [Self <: IDataTable](x: Self) {
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

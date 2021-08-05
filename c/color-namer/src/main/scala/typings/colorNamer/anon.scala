@@ -13,20 +13,16 @@ object anon {
   }
   object Omit {
     
-    @scala.inline
-    def apply[T /* <: Palette */](omit: js.Array[T]): Omit[T] = {
+    inline def apply[T /* <: Palette */](omit: js.Array[T]): Omit[T] = {
       val __obj = js.Dynamic.literal(omit = omit.asInstanceOf[js.Any])
       __obj.asInstanceOf[Omit[T]]
     }
     
-    @scala.inline
-    implicit class OmitMutableBuilder[Self <: Omit[?], T /* <: Palette */] (val x: Self & Omit[T]) extends AnyVal {
+    extension [Self <: Omit[?], T /* <: Palette */](x: Self & Omit[T]) {
       
-      @scala.inline
-      def setOmit(value: js.Array[T]): Self = StObject.set(x, "omit", value.asInstanceOf[js.Any])
+      inline def setOmit(value: js.Array[T]): Self = StObject.set(x, "omit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOmitVarargs(value: T*): Self = StObject.set(x, "omit", js.Array(value :_*))
+      inline def setOmitVarargs(value: T*): Self = StObject.set(x, "omit", js.Array(value :_*))
     }
   }
   
@@ -36,20 +32,16 @@ object anon {
   }
   object Pick {
     
-    @scala.inline
-    def apply[T /* <: Palette */](pick: js.Array[T]): Pick[T] = {
+    inline def apply[T /* <: Palette */](pick: js.Array[T]): Pick[T] = {
       val __obj = js.Dynamic.literal(pick = pick.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pick[T]]
     }
     
-    @scala.inline
-    implicit class PickMutableBuilder[Self <: Pick[?], T /* <: Palette */] (val x: Self & Pick[T]) extends AnyVal {
+    extension [Self <: Pick[?], T /* <: Palette */](x: Self & Pick[T]) {
       
-      @scala.inline
-      def setPick(value: js.Array[T]): Self = StObject.set(x, "pick", value.asInstanceOf[js.Any])
+      inline def setPick(value: js.Array[T]): Self = StObject.set(x, "pick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickVarargs(value: T*): Self = StObject.set(x, "pick", js.Array(value :_*))
+      inline def setPickVarargs(value: T*): Self = StObject.set(x, "pick", js.Array(value :_*))
     }
   }
 }

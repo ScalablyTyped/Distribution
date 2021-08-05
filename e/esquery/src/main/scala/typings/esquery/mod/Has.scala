@@ -16,17 +16,14 @@ trait Has
 }
 object Has {
   
-  @scala.inline
-  def apply(selectors: js.Array[SubjectSelector]): Has = {
+  inline def apply(selectors: js.Array[SubjectSelector]): Has = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("has")
     __obj.asInstanceOf[Has]
   }
   
-  @scala.inline
-  implicit class HasMutableBuilder[Self <: Has] (val x: Self) extends AnyVal {
+  extension [Self <: Has](x: Self) {
     
-    @scala.inline
-    def setType(value: has): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: has): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

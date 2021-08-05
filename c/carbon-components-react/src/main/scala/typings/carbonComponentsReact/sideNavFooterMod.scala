@@ -31,32 +31,24 @@ object sideNavFooterMod extends Shortcut {
   }
   object SideNavFooterProps {
     
-    @scala.inline
-    def apply(expanded: Boolean, onToggle: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): SideNavFooterProps = {
+    inline def apply(expanded: Boolean, onToggle: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): SideNavFooterProps = {
       val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], onToggle = js.Any.fromFunction1(onToggle))
       __obj.asInstanceOf[SideNavFooterProps]
     }
     
-    @scala.inline
-    implicit class SideNavFooterPropsMutableBuilder[Self <: SideNavFooterProps] (val x: Self) extends AnyVal {
+    extension [Self <: SideNavFooterProps](x: Self) {
       
-      @scala.inline
-      def setAssistiveText(value: String): Self = StObject.set(x, "assistiveText", value.asInstanceOf[js.Any])
+      inline def setAssistiveText(value: String): Self = StObject.set(x, "assistiveText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssistiveTextUndefined: Self = StObject.set(x, "assistiveText", js.undefined)
+      inline def setAssistiveTextUndefined: Self = StObject.set(x, "assistiveText", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnToggle(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
+      inline def setOnToggle(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
     }
   }
   

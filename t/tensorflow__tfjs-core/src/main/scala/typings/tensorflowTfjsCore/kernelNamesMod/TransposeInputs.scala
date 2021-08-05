@@ -11,19 +11,15 @@ trait TransposeInputs extends StObject {
 }
 object TransposeInputs {
   
-  @scala.inline
-  def apply(): TransposeInputs = {
+  inline def apply(): TransposeInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransposeInputs]
   }
   
-  @scala.inline
-  implicit class TransposeInputsMutableBuilder[Self <: TransposeInputs] (val x: Self) extends AnyVal {
+  extension [Self <: TransposeInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

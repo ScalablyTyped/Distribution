@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("express-boom", JSImport.Namespace)
   @js.native
@@ -449,8 +448,7 @@ object mod {
       }
       object BoomError {
         
-        @scala.inline
-        def apply[Data](
+        inline def apply[Data](
           data: Data,
           isBoom: Boolean,
           isServer: Boolean,
@@ -462,26 +460,19 @@ object mod {
           __obj.asInstanceOf[BoomError[Data]]
         }
         
-        @scala.inline
-        implicit class BoomErrorMutableBuilder[Self <: BoomError[?], Data] (val x: Self & BoomError[Data]) extends AnyVal {
+        extension [Self <: BoomError[?], Data](x: Self & BoomError[Data]) {
           
-          @scala.inline
-          def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+          inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIsBoom(value: Boolean): Self = StObject.set(x, "isBoom", value.asInstanceOf[js.Any])
+          inline def setIsBoom(value: Boolean): Self = StObject.set(x, "isBoom", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIsServer(value: Boolean): Self = StObject.set(x, "isServer", value.asInstanceOf[js.Any])
+          inline def setIsServer(value: Boolean): Self = StObject.set(x, "isServer", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+          inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+          inline def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReformat(value: () => Unit): Self = StObject.set(x, "reformat", js.Any.fromFunction0(value))
+          inline def setReformat(value: () => Unit): Self = StObject.set(x, "reformat", js.Any.fromFunction0(value))
         }
       }
       
@@ -506,23 +497,18 @@ object mod {
       }
       object Output {
         
-        @scala.inline
-        def apply(headers: StringDictionary[String], payload: Payload, statusCode: Double): Output = {
+        inline def apply(headers: StringDictionary[String], payload: Payload, statusCode: Double): Output = {
           val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
           __obj.asInstanceOf[Output]
         }
         
-        @scala.inline
-        implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+        extension [Self <: Output](x: Self) {
           
-          @scala.inline
-          def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+          inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+          inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+          inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
         }
       }
       
@@ -545,29 +531,22 @@ object mod {
       }
       object Payload {
         
-        @scala.inline
-        def apply(error: String, message: String, statusCode: Double): Payload = {
+        inline def apply(error: String, message: String, statusCode: Double): Payload = {
           val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
           __obj.asInstanceOf[Payload]
         }
         
-        @scala.inline
-        implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+        extension [Self <: Payload](x: Self) {
           
-          @scala.inline
-          def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+          inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+          inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
           
-          @scala.inline
-          def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+          inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+          inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+          inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
         }
       }
       
@@ -577,17 +556,14 @@ object mod {
       }
       object Response {
         
-        @scala.inline
-        def apply(boom: Boom): Response = {
+        inline def apply(boom: Boom): Response = {
           val __obj = js.Dynamic.literal(boom = boom.asInstanceOf[js.Any])
           __obj.asInstanceOf[Response]
         }
         
-        @scala.inline
-        implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+        extension [Self <: Response](x: Self) {
           
-          @scala.inline
-          def setBoom(value: Boom): Self = StObject.set(x, "boom", value.asInstanceOf[js.Any])
+          inline def setBoom(value: Boom): Self = StObject.set(x, "boom", value.asInstanceOf[js.Any])
         }
       }
     }

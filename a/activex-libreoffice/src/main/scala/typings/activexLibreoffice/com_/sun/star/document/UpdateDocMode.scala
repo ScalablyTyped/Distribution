@@ -19,16 +19,12 @@ object UpdateDocMode {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ACCORDING_TO_CONFIG: `2` = 2.asInstanceOf[`2`]
+    inline def ACCORDING_TO_CONFIG: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def FULL_UPDATE: `3` = 3.asInstanceOf[`3`]
+    inline def FULL_UPDATE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def NO_UPDATE: `0` = 0.asInstanceOf[`0`]
+    inline def NO_UPDATE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def QUIET_UPDATE: `1` = 1.asInstanceOf[`1`]
+    inline def QUIET_UPDATE: `1` = 1.asInstanceOf[`1`]
   }
 }

@@ -23,31 +23,23 @@ trait ReprocessingSummary extends StObject {
 }
 object ReprocessingSummary {
   
-  @scala.inline
-  def apply(): ReprocessingSummary = {
+  inline def apply(): ReprocessingSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReprocessingSummary]
   }
   
-  @scala.inline
-  implicit class ReprocessingSummaryMutableBuilder[Self <: ReprocessingSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ReprocessingSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setId(value: ReprocessingId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ReprocessingId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ReprocessingStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ReprocessingStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

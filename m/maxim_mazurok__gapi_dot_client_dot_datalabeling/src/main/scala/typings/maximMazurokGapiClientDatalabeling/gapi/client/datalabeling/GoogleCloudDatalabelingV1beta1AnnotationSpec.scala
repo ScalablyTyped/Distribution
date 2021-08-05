@@ -21,31 +21,23 @@ trait GoogleCloudDatalabelingV1beta1AnnotationSpec extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1AnnotationSpec {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1AnnotationSpec = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1AnnotationSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1AnnotationSpec]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1AnnotationSpecMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1AnnotationSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1AnnotationSpec](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

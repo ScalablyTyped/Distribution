@@ -76,64 +76,45 @@ trait RouteOptionsAccess extends StObject {
 }
 object RouteOptionsAccess {
   
-  @scala.inline
-  def apply(): RouteOptionsAccess = {
+  inline def apply(): RouteOptionsAccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteOptionsAccess]
   }
   
-  @scala.inline
-  implicit class RouteOptionsAccessMutableBuilder[Self <: RouteOptionsAccess] (val x: Self) extends AnyVal {
+  extension [Self <: RouteOptionsAccess](x: Self) {
     
-    @scala.inline
-    def setAccess(value: RouteOptionsAccessObject | js.Array[RouteOptionsAccessObject]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: RouteOptionsAccessObject | js.Array[RouteOptionsAccessObject]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+    inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
-    @scala.inline
-    def setAccessVarargs(value: RouteOptionsAccessObject*): Self = StObject.set(x, "access", js.Array(value :_*))
+    inline def setAccessVarargs(value: RouteOptionsAccessObject*): Self = StObject.set(x, "access", js.Array(value :_*))
     
-    @scala.inline
-    def setEntity(value: RouteOptionsAccessEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: RouteOptionsAccessEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
-    @scala.inline
-    def setMode(value: required | optional | `try`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: required | optional | `try`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setPayload(value: `false` | required | optional): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: `false` | required | optional): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setScope(value: RouteOptionsAccessScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: RouteOptionsAccessScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
     
-    @scala.inline
-    def setStrategies(value: js.Array[String]): Self = StObject.set(x, "strategies", value.asInstanceOf[js.Any])
+    inline def setStrategies(value: js.Array[String]): Self = StObject.set(x, "strategies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrategiesUndefined: Self = StObject.set(x, "strategies", js.undefined)
+    inline def setStrategiesUndefined: Self = StObject.set(x, "strategies", js.undefined)
     
-    @scala.inline
-    def setStrategiesVarargs(value: String*): Self = StObject.set(x, "strategies", js.Array(value :_*))
+    inline def setStrategiesVarargs(value: String*): Self = StObject.set(x, "strategies", js.Array(value :_*))
     
-    @scala.inline
-    def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+    inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
   }
 }

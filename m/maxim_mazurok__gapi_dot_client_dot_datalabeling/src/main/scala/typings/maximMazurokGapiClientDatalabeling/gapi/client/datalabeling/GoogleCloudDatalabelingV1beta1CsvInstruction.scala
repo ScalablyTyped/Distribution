@@ -11,19 +11,15 @@ trait GoogleCloudDatalabelingV1beta1CsvInstruction extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1CsvInstruction {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1CsvInstruction = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1CsvInstruction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1CsvInstruction]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1CsvInstructionMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1CsvInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1CsvInstruction](x: Self) {
     
-    @scala.inline
-    def setGcsFileUri(value: String): Self = StObject.set(x, "gcsFileUri", value.asInstanceOf[js.Any])
+    inline def setGcsFileUri(value: String): Self = StObject.set(x, "gcsFileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsFileUriUndefined: Self = StObject.set(x, "gcsFileUri", js.undefined)
+    inline def setGcsFileUriUndefined: Self = StObject.set(x, "gcsFileUri", js.undefined)
   }
 }

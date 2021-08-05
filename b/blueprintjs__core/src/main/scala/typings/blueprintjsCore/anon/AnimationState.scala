@@ -13,19 +13,15 @@ trait AnimationState extends StObject {
 }
 object AnimationState {
   
-  @scala.inline
-  def apply(animationState: AnimationStates, height: Unit): AnimationState = {
+  inline def apply(animationState: AnimationStates, height: Unit): AnimationState = {
     val __obj = js.Dynamic.literal(animationState = animationState.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationState]
   }
   
-  @scala.inline
-  implicit class AnimationStateMutableBuilder[Self <: AnimationState] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationState](x: Self) {
     
-    @scala.inline
-    def setAnimationState(value: AnimationStates): Self = StObject.set(x, "animationState", value.asInstanceOf[js.Any])
+    inline def setAnimationState(value: AnimationStates): Self = StObject.set(x, "animationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Unit): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Unit): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
   }
 }

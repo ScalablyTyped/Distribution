@@ -18,25 +18,19 @@ trait ListProjectsResponse extends StObject {
 }
 object ListProjectsResponse {
   
-  @scala.inline
-  def apply(projectSummaries: ProjectSummaries): ListProjectsResponse = {
+  inline def apply(projectSummaries: ProjectSummaries): ListProjectsResponse = {
     val __obj = js.Dynamic.literal(projectSummaries = projectSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProjectsResponse]
   }
   
-  @scala.inline
-  implicit class ListProjectsResponseMutableBuilder[Self <: ListProjectsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListProjectsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setProjectSummaries(value: ProjectSummaries): Self = StObject.set(x, "projectSummaries", value.asInstanceOf[js.Any])
+    inline def setProjectSummaries(value: ProjectSummaries): Self = StObject.set(x, "projectSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectSummariesVarargs(value: ProjectSummary*): Self = StObject.set(x, "projectSummaries", js.Array(value :_*))
+    inline def setProjectSummariesVarargs(value: ProjectSummary*): Self = StObject.set(x, "projectSummaries", js.Array(value :_*))
   }
 }

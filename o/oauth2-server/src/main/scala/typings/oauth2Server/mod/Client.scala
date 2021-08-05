@@ -24,43 +24,31 @@ trait Client
 }
 object Client {
   
-  @scala.inline
-  def apply(grants: String | js.Array[String], id: String): Client = {
+  inline def apply(grants: String | js.Array[String], id: String): Client = {
     val __obj = js.Dynamic.literal(grants = grants.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Client]
   }
   
-  @scala.inline
-  implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+  extension [Self <: Client](x: Self) {
     
-    @scala.inline
-    def setAccessTokenLifetime(value: Double): Self = StObject.set(x, "accessTokenLifetime", value.asInstanceOf[js.Any])
+    inline def setAccessTokenLifetime(value: Double): Self = StObject.set(x, "accessTokenLifetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenLifetimeUndefined: Self = StObject.set(x, "accessTokenLifetime", js.undefined)
+    inline def setAccessTokenLifetimeUndefined: Self = StObject.set(x, "accessTokenLifetime", js.undefined)
     
-    @scala.inline
-    def setGrants(value: String | js.Array[String]): Self = StObject.set(x, "grants", value.asInstanceOf[js.Any])
+    inline def setGrants(value: String | js.Array[String]): Self = StObject.set(x, "grants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantsVarargs(value: String*): Self = StObject.set(x, "grants", js.Array(value :_*))
+    inline def setGrantsVarargs(value: String*): Self = StObject.set(x, "grants", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUris(value: String | js.Array[String]): Self = StObject.set(x, "redirectUris", value.asInstanceOf[js.Any])
+    inline def setRedirectUris(value: String | js.Array[String]): Self = StObject.set(x, "redirectUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUrisUndefined: Self = StObject.set(x, "redirectUris", js.undefined)
+    inline def setRedirectUrisUndefined: Self = StObject.set(x, "redirectUris", js.undefined)
     
-    @scala.inline
-    def setRedirectUrisVarargs(value: String*): Self = StObject.set(x, "redirectUris", js.Array(value :_*))
+    inline def setRedirectUrisVarargs(value: String*): Self = StObject.set(x, "redirectUris", js.Array(value :_*))
     
-    @scala.inline
-    def setRefreshTokenLifetime(value: Double): Self = StObject.set(x, "refreshTokenLifetime", value.asInstanceOf[js.Any])
+    inline def setRefreshTokenLifetime(value: Double): Self = StObject.set(x, "refreshTokenLifetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshTokenLifetimeUndefined: Self = StObject.set(x, "refreshTokenLifetime", js.undefined)
+    inline def setRefreshTokenLifetimeUndefined: Self = StObject.set(x, "refreshTokenLifetime", js.undefined)
   }
 }

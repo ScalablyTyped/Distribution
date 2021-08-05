@@ -14,25 +14,19 @@ trait RawHashes extends StObject {
 }
 object RawHashes {
   
-  @scala.inline
-  def apply(): RawHashes = {
+  inline def apply(): RawHashes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RawHashes]
   }
   
-  @scala.inline
-  implicit class RawHashesMutableBuilder[Self <: RawHashes] (val x: Self) extends AnyVal {
+  extension [Self <: RawHashes](x: Self) {
     
-    @scala.inline
-    def setPrefixSize(value: Double): Self = StObject.set(x, "prefixSize", value.asInstanceOf[js.Any])
+    inline def setPrefixSize(value: Double): Self = StObject.set(x, "prefixSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixSizeUndefined: Self = StObject.set(x, "prefixSize", js.undefined)
+    inline def setPrefixSizeUndefined: Self = StObject.set(x, "prefixSize", js.undefined)
     
-    @scala.inline
-    def setRawHashes(value: String): Self = StObject.set(x, "rawHashes", value.asInstanceOf[js.Any])
+    inline def setRawHashes(value: String): Self = StObject.set(x, "rawHashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawHashesUndefined: Self = StObject.set(x, "rawHashes", js.undefined)
+    inline def setRawHashesUndefined: Self = StObject.set(x, "rawHashes", js.undefined)
   }
 }

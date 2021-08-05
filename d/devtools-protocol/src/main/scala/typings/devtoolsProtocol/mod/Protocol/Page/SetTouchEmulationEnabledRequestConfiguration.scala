@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetTouchEmulationEnabledRequestConfiguration extends StObject
 object SetTouchEmulationEnabledRequestConfiguration {
   
-  @scala.inline
-  def Desktop: desktop = "desktop".asInstanceOf[desktop]
+  inline def Desktop: desktop = "desktop".asInstanceOf[desktop]
   
-  @scala.inline
-  def Mobile: mobile = "mobile".asInstanceOf[mobile]
+  inline def Mobile: mobile = "mobile".asInstanceOf[mobile]
 }

@@ -22,17 +22,14 @@ object noiseNoiseMod {
   }
   object Noise {
     
-    @scala.inline
-    def apply(get: (Double, Double) => Double): Noise = {
+    inline def apply(get: (Double, Double) => Double): Noise = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
       __obj.asInstanceOf[Noise]
     }
     
-    @scala.inline
-    implicit class NoiseMutableBuilder[Self <: Noise] (val x: Self) extends AnyVal {
+    extension [Self <: Noise](x: Self) {
       
-      @scala.inline
-      def setGet(value: (Double, Double) => Double): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (Double, Double) => Double): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
   }
 }

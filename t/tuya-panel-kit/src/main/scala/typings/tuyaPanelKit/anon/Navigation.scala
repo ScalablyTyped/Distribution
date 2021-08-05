@@ -14,19 +14,15 @@ trait Navigation[ParamList /* <: ParamListBase */] extends StObject {
 }
 object Navigation {
   
-  @scala.inline
-  def apply[ParamList /* <: ParamListBase */](navigation: js.Any, route: RouteProp[ParamList, /* keyof ParamList */ String]): Navigation[ParamList] = {
+  inline def apply[ParamList /* <: ParamListBase */](navigation: js.Any, route: RouteProp[ParamList, /* keyof ParamList */ String]): Navigation[ParamList] = {
     val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigation[ParamList]]
   }
   
-  @scala.inline
-  implicit class NavigationMutableBuilder[Self <: Navigation[?], ParamList /* <: ParamListBase */] (val x: Self & Navigation[ParamList]) extends AnyVal {
+  extension [Self <: Navigation[?], ParamList /* <: ParamListBase */](x: Self & Navigation[ParamList]) {
     
-    @scala.inline
-    def setNavigation(value: js.Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: js.Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoute(value: RouteProp[ParamList, /* keyof ParamList */ String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: RouteProp[ParamList, /* keyof ParamList */ String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

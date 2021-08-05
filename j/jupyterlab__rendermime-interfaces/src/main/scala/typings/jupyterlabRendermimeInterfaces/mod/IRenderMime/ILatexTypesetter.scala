@@ -26,16 +26,13 @@ trait ILatexTypesetter extends StObject {
 }
 object ILatexTypesetter {
   
-  @scala.inline
-  def apply(typeset: HTMLElement => Unit): ILatexTypesetter = {
+  inline def apply(typeset: HTMLElement => Unit): ILatexTypesetter = {
     val __obj = js.Dynamic.literal(typeset = js.Any.fromFunction1(typeset))
     __obj.asInstanceOf[ILatexTypesetter]
   }
   
-  @scala.inline
-  implicit class ILatexTypesetterMutableBuilder[Self <: ILatexTypesetter] (val x: Self) extends AnyVal {
+  extension [Self <: ILatexTypesetter](x: Self) {
     
-    @scala.inline
-    def setTypeset(value: HTMLElement => Unit): Self = StObject.set(x, "typeset", js.Any.fromFunction1(value))
+    inline def setTypeset(value: HTMLElement => Unit): Self = StObject.set(x, "typeset", js.Any.fromFunction1(value))
   }
 }

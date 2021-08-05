@@ -14,25 +14,19 @@ trait SDPSctpDescription extends StObject {
 }
 object SDPSctpDescription {
   
-  @scala.inline
-  def apply(port: Double, protocol: String): SDPSctpDescription = {
+  inline def apply(port: Double, protocol: String): SDPSctpDescription = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDPSctpDescription]
   }
   
-  @scala.inline
-  implicit class SDPSctpDescriptionMutableBuilder[Self <: SDPSctpDescription] (val x: Self) extends AnyVal {
+  extension [Self <: SDPSctpDescription](x: Self) {
     
-    @scala.inline
-    def setMaxMessageSize(value: Double): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
+    inline def setMaxMessageSize(value: Double): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMessageSizeUndefined: Self = StObject.set(x, "maxMessageSize", js.undefined)
+    inline def setMaxMessageSizeUndefined: Self = StObject.set(x, "maxMessageSize", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

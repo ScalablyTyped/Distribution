@@ -20,6 +20,5 @@ object global {
   @JSGlobal("less")
   @js.native
   def less: LessStatic = js.native
-  @scala.inline
-  def less_=(x: LessStatic): Unit = js.Dynamic.global.updateDynamic("less")(x.asInstanceOf[js.Any])
+  inline def less_=(x: LessStatic): Unit = js.Dynamic.global.updateDynamic("less")(x.asInstanceOf[js.Any])
 }

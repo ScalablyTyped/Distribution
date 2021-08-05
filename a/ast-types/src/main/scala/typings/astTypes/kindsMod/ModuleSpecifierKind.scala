@@ -13,29 +13,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModuleSpecifierKind extends StObject
 object ModuleSpecifierKind {
   
-  @scala.inline
-  def ExportSpecifier(exported: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.ExportSpecifier = {
+  inline def ExportSpecifier(exported: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.ExportSpecifier = {
     val __obj = js.Dynamic.literal(exported = exported.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExportSpecifier")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ExportSpecifier]
   }
   
-  @scala.inline
-  def ImportDefaultSpecifier(): typings.astTypes.namedTypesMod.namedTypes.ImportDefaultSpecifier = {
+  inline def ImportDefaultSpecifier(): typings.astTypes.namedTypesMod.namedTypes.ImportDefaultSpecifier = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("ImportDefaultSpecifier")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ImportDefaultSpecifier]
   }
   
-  @scala.inline
-  def ImportNamespaceSpecifier(): typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier = {
+  inline def ImportNamespaceSpecifier(): typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("ImportNamespaceSpecifier")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ImportNamespaceSpecifier]
   }
   
-  @scala.inline
-  def ImportSpecifier(imported: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.ImportSpecifier = {
+  inline def ImportSpecifier(imported: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.ImportSpecifier = {
     val __obj = js.Dynamic.literal(imported = imported.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ImportSpecifier")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ImportSpecifier]

@@ -15,16 +15,13 @@ trait WiFiDirectServiceSessionRequestedEventArgs extends StObject {
 }
 object WiFiDirectServiceSessionRequestedEventArgs {
   
-  @scala.inline
-  def apply(getSessionRequest: () => WiFiDirectServiceSessionRequest): WiFiDirectServiceSessionRequestedEventArgs = {
+  inline def apply(getSessionRequest: () => WiFiDirectServiceSessionRequest): WiFiDirectServiceSessionRequestedEventArgs = {
     val __obj = js.Dynamic.literal(getSessionRequest = js.Any.fromFunction0(getSessionRequest))
     __obj.asInstanceOf[WiFiDirectServiceSessionRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class WiFiDirectServiceSessionRequestedEventArgsMutableBuilder[Self <: WiFiDirectServiceSessionRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WiFiDirectServiceSessionRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetSessionRequest(value: () => WiFiDirectServiceSessionRequest): Self = StObject.set(x, "getSessionRequest", js.Any.fromFunction0(value))
+    inline def setGetSessionRequest(value: () => WiFiDirectServiceSessionRequest): Self = StObject.set(x, "getSessionRequest", js.Any.fromFunction0(value))
   }
 }

@@ -13,16 +13,13 @@ trait ApplicationTriggerDetails extends StObject {
 }
 object ApplicationTriggerDetails {
   
-  @scala.inline
-  def apply(arguments: ValueSet): ApplicationTriggerDetails = {
+  inline def apply(arguments: ValueSet): ApplicationTriggerDetails = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationTriggerDetails]
   }
   
-  @scala.inline
-  implicit class ApplicationTriggerDetailsMutableBuilder[Self <: ApplicationTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setArguments(value: ValueSet): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: ValueSet): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Report extends StObject {
   
-  @JSName("Access.Report_typekey")
+  /* private */ @JSName("Access.Report_typekey")
   var AccessDotReport_typekey: typings.activexAccess.Access.Report = js.native
   
   val ActiveControl: Control = js.native

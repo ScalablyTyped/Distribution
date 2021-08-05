@@ -14,25 +14,19 @@ trait AssetAssociation extends StObject {
 }
 object AssetAssociation {
   
-  @scala.inline
-  def apply(): AssetAssociation = {
+  inline def apply(): AssetAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssetAssociation]
   }
   
-  @scala.inline
-  implicit class AssetAssociationMutableBuilder[Self <: AssetAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: AssetAssociation](x: Self) {
     
-    @scala.inline
-    def setAsset(value: Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
+    inline def setAsset(value: Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
+    inline def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

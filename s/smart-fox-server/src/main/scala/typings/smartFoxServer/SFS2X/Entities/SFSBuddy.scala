@@ -77,8 +77,7 @@ trait SFSBuddy extends StObject {
 }
 object SFSBuddy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containsVariable: String => Boolean,
     getNickName: () => String,
     getOfflineVariables: () => js.Array[SFSBuddyVariable],
@@ -96,43 +95,30 @@ object SFSBuddy {
     __obj.asInstanceOf[SFSBuddy]
   }
   
-  @scala.inline
-  implicit class SFSBuddyMutableBuilder[Self <: SFSBuddy] (val x: Self) extends AnyVal {
+  extension [Self <: SFSBuddy](x: Self) {
     
-    @scala.inline
-    def setContainsVariable(value: String => Boolean): Self = StObject.set(x, "containsVariable", js.Any.fromFunction1(value))
+    inline def setContainsVariable(value: String => Boolean): Self = StObject.set(x, "containsVariable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNickName(value: () => String): Self = StObject.set(x, "getNickName", js.Any.fromFunction0(value))
+    inline def setGetNickName(value: () => String): Self = StObject.set(x, "getNickName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOfflineVariables(value: () => js.Array[SFSBuddyVariable]): Self = StObject.set(x, "getOfflineVariables", js.Any.fromFunction0(value))
+    inline def setGetOfflineVariables(value: () => js.Array[SFSBuddyVariable]): Self = StObject.set(x, "getOfflineVariables", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOnlineVariables(value: () => js.Array[SFSBuddyVariable]): Self = StObject.set(x, "getOnlineVariables", js.Any.fromFunction0(value))
+    inline def setGetOnlineVariables(value: () => js.Array[SFSBuddyVariable]): Self = StObject.set(x, "getOnlineVariables", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetState(value: () => String): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => String): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVariable(value: String => SFSBuddyVariable): Self = StObject.set(x, "getVariable", js.Any.fromFunction1(value))
+    inline def setGetVariable(value: String => SFSBuddyVariable): Self = StObject.set(x, "getVariable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVariables(value: () => js.Array[SFSBuddyVariable]): Self = StObject.set(x, "getVariables", js.Any.fromFunction0(value))
+    inline def setGetVariables(value: () => js.Array[SFSBuddyVariable]): Self = StObject.set(x, "getVariables", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBlocked(value: () => Boolean): Self = StObject.set(x, "isBlocked", js.Any.fromFunction0(value))
+    inline def setIsBlocked(value: () => Boolean): Self = StObject.set(x, "isBlocked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOnline(value: () => Boolean): Self = StObject.set(x, "isOnline", js.Any.fromFunction0(value))
+    inline def setIsOnline(value: () => Boolean): Self = StObject.set(x, "isOnline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsTemp(value: () => Boolean): Self = StObject.set(x, "isTemp", js.Any.fromFunction0(value))
+    inline def setIsTemp(value: () => Boolean): Self = StObject.set(x, "isTemp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

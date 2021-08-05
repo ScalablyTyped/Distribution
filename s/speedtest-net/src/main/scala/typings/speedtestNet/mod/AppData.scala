@@ -21,8 +21,7 @@ trait AppData extends StObject {
 }
 object AppData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ispName: String,
     license: Message,
     licenseKey: String,
@@ -34,25 +33,18 @@ object AppData {
     __obj.asInstanceOf[AppData]
   }
   
-  @scala.inline
-  implicit class AppDataMutableBuilder[Self <: AppData] (val x: Self) extends AnyVal {
+  extension [Self <: AppData](x: Self) {
     
-    @scala.inline
-    def setIspName(value: String): Self = StObject.set(x, "ispName", value.asInstanceOf[js.Any])
+    inline def setIspName(value: String): Self = StObject.set(x, "ispName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicense(value: Message): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    inline def setLicense(value: Message): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseKey(value: String): Self = StObject.set(x, "licenseKey", value.asInstanceOf[js.Any])
+    inline def setLicenseKey(value: String): Self = StObject.set(x, "licenseKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultFormat(value: String): Self = StObject.set(x, "resultFormat", value.asInstanceOf[js.Any])
+    inline def setResultFormat(value: String): Self = StObject.set(x, "resultFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveTestResultUrl(value: String): Self = StObject.set(x, "saveTestResultUrl", value.asInstanceOf[js.Any])
+    inline def setSaveTestResultUrl(value: String): Self = StObject.set(x, "saveTestResultUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceLevel(value: Double): Self = StObject.set(x, "traceLevel", value.asInstanceOf[js.Any])
+    inline def setTraceLevel(value: Double): Self = StObject.set(x, "traceLevel", value.asInstanceOf[js.Any])
   }
 }

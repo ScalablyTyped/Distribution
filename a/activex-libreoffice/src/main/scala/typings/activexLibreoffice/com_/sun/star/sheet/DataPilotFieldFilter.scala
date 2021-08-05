@@ -25,22 +25,17 @@ trait DataPilotFieldFilter extends StObject {
 }
 object DataPilotFieldFilter {
   
-  @scala.inline
-  def apply(FieldName: String, MatchValue: String, MatchValueName: String): DataPilotFieldFilter = {
+  inline def apply(FieldName: String, MatchValue: String, MatchValueName: String): DataPilotFieldFilter = {
     val __obj = js.Dynamic.literal(FieldName = FieldName.asInstanceOf[js.Any], MatchValue = MatchValue.asInstanceOf[js.Any], MatchValueName = MatchValueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPilotFieldFilter]
   }
   
-  @scala.inline
-  implicit class DataPilotFieldFilterMutableBuilder[Self <: DataPilotFieldFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotFieldFilter](x: Self) {
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "FieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "FieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchValue(value: String): Self = StObject.set(x, "MatchValue", value.asInstanceOf[js.Any])
+    inline def setMatchValue(value: String): Self = StObject.set(x, "MatchValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchValueName(value: String): Self = StObject.set(x, "MatchValueName", value.asInstanceOf[js.Any])
+    inline def setMatchValueName(value: String): Self = StObject.set(x, "MatchValueName", value.asInstanceOf[js.Any])
   }
 }

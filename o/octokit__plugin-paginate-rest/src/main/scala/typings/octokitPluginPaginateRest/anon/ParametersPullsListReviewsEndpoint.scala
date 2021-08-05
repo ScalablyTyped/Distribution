@@ -15,19 +15,15 @@ trait ParametersPullsListReviewsEndpoint extends StObject {
 }
 object ParametersPullsListReviewsEndpoint {
   
-  @scala.inline
-  def apply(parameters: PullsListReviewsEndpoint, response: OctokitResponse[PullsListReviewsResponseData]): ParametersPullsListReviewsEndpoint = {
+  inline def apply(parameters: PullsListReviewsEndpoint, response: OctokitResponse[PullsListReviewsResponseData]): ParametersPullsListReviewsEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPullsListReviewsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersPullsListReviewsEndpointMutableBuilder[Self <: ParametersPullsListReviewsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersPullsListReviewsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: PullsListReviewsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PullsListReviewsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[PullsListReviewsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[PullsListReviewsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

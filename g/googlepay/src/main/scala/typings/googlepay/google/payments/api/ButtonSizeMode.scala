@@ -22,9 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ButtonSizeMode extends StObject
 object ButtonSizeMode {
   
-  @scala.inline
-  def fill: typings.googlepay.googlepayStrings.fill = "fill".asInstanceOf[typings.googlepay.googlepayStrings.fill]
+  inline def fill: typings.googlepay.googlepayStrings.fill = "fill".asInstanceOf[typings.googlepay.googlepayStrings.fill]
   
-  @scala.inline
-  def static: typings.googlepay.googlepayStrings.static = "static".asInstanceOf[typings.googlepay.googlepayStrings.static]
+  inline def static: typings.googlepay.googlepayStrings.static = "static".asInstanceOf[typings.googlepay.googlepayStrings.static]
 }

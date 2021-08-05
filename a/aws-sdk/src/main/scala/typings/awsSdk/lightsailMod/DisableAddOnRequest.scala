@@ -18,19 +18,15 @@ trait DisableAddOnRequest extends StObject {
 }
 object DisableAddOnRequest {
   
-  @scala.inline
-  def apply(addOnType: AddOnType, resourceName: ResourceName): DisableAddOnRequest = {
+  inline def apply(addOnType: AddOnType, resourceName: ResourceName): DisableAddOnRequest = {
     val __obj = js.Dynamic.literal(addOnType = addOnType.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableAddOnRequest]
   }
   
-  @scala.inline
-  implicit class DisableAddOnRequestMutableBuilder[Self <: DisableAddOnRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisableAddOnRequest](x: Self) {
     
-    @scala.inline
-    def setAddOnType(value: AddOnType): Self = StObject.set(x, "addOnType", value.asInstanceOf[js.Any])
+    inline def setAddOnType(value: AddOnType): Self = StObject.set(x, "addOnType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
   }
 }

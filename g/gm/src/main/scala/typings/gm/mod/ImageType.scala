@@ -19,30 +19,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageType extends StObject
 object ImageType {
   
-  @scala.inline
-  def Bilevel: typings.gm.gmStrings.Bilevel = "Bilevel".asInstanceOf[typings.gm.gmStrings.Bilevel]
+  inline def Bilevel: typings.gm.gmStrings.Bilevel = "Bilevel".asInstanceOf[typings.gm.gmStrings.Bilevel]
   
-  @scala.inline
-  def ColorSeparation: typings.gm.gmStrings.ColorSeparation = "ColorSeparation".asInstanceOf[typings.gm.gmStrings.ColorSeparation]
+  inline def ColorSeparation: typings.gm.gmStrings.ColorSeparation = "ColorSeparation".asInstanceOf[typings.gm.gmStrings.ColorSeparation]
   
-  @scala.inline
-  def ColorSeparationMatte: typings.gm.gmStrings.ColorSeparationMatte = "ColorSeparationMatte".asInstanceOf[typings.gm.gmStrings.ColorSeparationMatte]
+  inline def ColorSeparationMatte: typings.gm.gmStrings.ColorSeparationMatte = "ColorSeparationMatte".asInstanceOf[typings.gm.gmStrings.ColorSeparationMatte]
   
-  @scala.inline
-  def Grayscale: Grayscale_ = "Grayscale".asInstanceOf[Grayscale_]
+  inline def Grayscale: Grayscale_ = "Grayscale".asInstanceOf[Grayscale_]
   
-  @scala.inline
-  def Optimize: typings.gm.gmStrings.Optimize = "Optimize".asInstanceOf[typings.gm.gmStrings.Optimize]
+  inline def Optimize: typings.gm.gmStrings.Optimize = "Optimize".asInstanceOf[typings.gm.gmStrings.Optimize]
   
-  @scala.inline
-  def Palette: typings.gm.gmStrings.Palette = "Palette".asInstanceOf[typings.gm.gmStrings.Palette]
+  inline def Palette: typings.gm.gmStrings.Palette = "Palette".asInstanceOf[typings.gm.gmStrings.Palette]
   
-  @scala.inline
-  def PaletteMatte: typings.gm.gmStrings.PaletteMatte = "PaletteMatte".asInstanceOf[typings.gm.gmStrings.PaletteMatte]
+  inline def PaletteMatte: typings.gm.gmStrings.PaletteMatte = "PaletteMatte".asInstanceOf[typings.gm.gmStrings.PaletteMatte]
   
-  @scala.inline
-  def TrueColor: typings.gm.gmStrings.TrueColor = "TrueColor".asInstanceOf[typings.gm.gmStrings.TrueColor]
+  inline def TrueColor: typings.gm.gmStrings.TrueColor = "TrueColor".asInstanceOf[typings.gm.gmStrings.TrueColor]
   
-  @scala.inline
-  def TrueColorMatte: typings.gm.gmStrings.TrueColorMatte = "TrueColorMatte".asInstanceOf[typings.gm.gmStrings.TrueColorMatte]
+  inline def TrueColorMatte: typings.gm.gmStrings.TrueColorMatte = "TrueColorMatte".asInstanceOf[typings.gm.gmStrings.TrueColorMatte]
 }

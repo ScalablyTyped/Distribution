@@ -33,23 +33,18 @@ object addonOCRProMod {
   }
   object Error {
     
-    @scala.inline
-    def apply(GetInput: () => Double | String, GetMessage: () => String, GetPage: () => Double): Error = {
+    inline def apply(GetInput: () => Double | String, GetMessage: () => String, GetPage: () => Double): Error = {
       val __obj = js.Dynamic.literal(GetInput = js.Any.fromFunction0(GetInput), GetMessage = js.Any.fromFunction0(GetMessage), GetPage = js.Any.fromFunction0(GetPage))
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setGetInput(value: () => Double | String): Self = StObject.set(x, "GetInput", js.Any.fromFunction0(value))
+      inline def setGetInput(value: () => Double | String): Self = StObject.set(x, "GetInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMessage(value: () => String): Self = StObject.set(x, "GetMessage", js.Any.fromFunction0(value))
+      inline def setGetMessage(value: () => String): Self = StObject.set(x, "GetMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPage(value: () => Double): Self = StObject.set(x, "GetPage", js.Any.fromFunction0(value))
+      inline def setGetPage(value: () => Double): Self = StObject.set(x, "GetPage", js.Any.fromFunction0(value))
     }
   }
   
@@ -67,20 +62,16 @@ object addonOCRProMod {
   }
   object Letter {
     
-    @scala.inline
-    def apply(GetLetterRect: () => String, GetText: () => Double): Letter = {
+    inline def apply(GetLetterRect: () => String, GetText: () => Double): Letter = {
       val __obj = js.Dynamic.literal(GetLetterRect = js.Any.fromFunction0(GetLetterRect), GetText = js.Any.fromFunction0(GetText))
       __obj.asInstanceOf[Letter]
     }
     
-    @scala.inline
-    implicit class LetterMutableBuilder[Self <: Letter] (val x: Self) extends AnyVal {
+    extension [Self <: Letter](x: Self) {
       
-      @scala.inline
-      def setGetLetterRect(value: () => String): Self = StObject.set(x, "GetLetterRect", js.Any.fromFunction0(value))
+      inline def setGetLetterRect(value: () => String): Self = StObject.set(x, "GetLetterRect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => Double): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => Double): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     }
   }
   
@@ -176,8 +167,7 @@ object addonOCRProMod {
   }
   object OCRPro {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Download: (String, js.Function0[Unit], js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]) => Unit,
       IsModuleInstalled: () => Boolean,
       Recognize: (Double, js.Function2[/* imageId */ Double, /* result */ OCRProResult, Unit], js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]) => Unit,
@@ -189,42 +179,33 @@ object addonOCRProMod {
       __obj.asInstanceOf[OCRPro]
     }
     
-    @scala.inline
-    implicit class OCRProMutableBuilder[Self <: OCRPro] (val x: Self) extends AnyVal {
+    extension [Self <: OCRPro](x: Self) {
       
-      @scala.inline
-      def setDownload(
+      inline def setDownload(
         value: (String, js.Function0[Unit], js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]) => Unit
       ): Self = StObject.set(x, "Download", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIsModuleInstalled(value: () => Boolean): Self = StObject.set(x, "IsModuleInstalled", js.Any.fromFunction0(value))
+      inline def setIsModuleInstalled(value: () => Boolean): Self = StObject.set(x, "IsModuleInstalled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRecognize(
+      inline def setRecognize(
         value: (Double, js.Function2[/* imageId */ Double, /* result */ OCRProResult, Unit], js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]) => Unit
       ): Self = StObject.set(x, "Recognize", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRecognizeFile(
+      inline def setRecognizeFile(
         value: (String, js.Function2[/* path */ String, /* result */ OCRProResult, Unit], js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]) => Unit
       ): Self = StObject.set(x, "RecognizeFile", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRecognizeRect(
+      inline def setRecognizeRect(
         value: (Double, js.Array[Rect], js.Function3[/* imageId */ Double, /* aryRects */ js.Array[Rect], /* result */ OCRProResult, Unit], js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]) => Unit
       ): Self = StObject.set(x, "RecognizeRect", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setRecognizeSelectedImages(
+      inline def setRecognizeSelectedImages(
         value: (js.Function1[/* result */ OCRProResult, Unit], js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]) => Unit
       ): Self = StObject.set(x, "RecognizeSelectedImages", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSettings(value: Settings | Boolean): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Settings | Boolean): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsNull: Self = StObject.set(x, "Settings", null)
+      inline def setSettingsNull: Self = StObject.set(x, "Settings", null)
     }
   }
   
@@ -284,8 +265,7 @@ object addonOCRProMod {
   }
   object OCRProResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Get: () => String,
       GetAlreadyOCRCount: () => String,
       GetErrorCode: () => Double,
@@ -301,38 +281,27 @@ object addonOCRProMod {
       __obj.asInstanceOf[OCRProResult]
     }
     
-    @scala.inline
-    implicit class OCRProResultMutableBuilder[Self <: OCRProResult] (val x: Self) extends AnyVal {
+    extension [Self <: OCRProResult](x: Self) {
       
-      @scala.inline
-      def setGet(value: () => String): Self = StObject.set(x, "Get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => String): Self = StObject.set(x, "Get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAlreadyOCRCount(value: () => String): Self = StObject.set(x, "GetAlreadyOCRCount", js.Any.fromFunction0(value))
+      inline def setGetAlreadyOCRCount(value: () => String): Self = StObject.set(x, "GetAlreadyOCRCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetErrorCode(value: () => Double): Self = StObject.set(x, "GetErrorCode", js.Any.fromFunction0(value))
+      inline def setGetErrorCode(value: () => Double): Self = StObject.set(x, "GetErrorCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetErrorDetailList(value: () => js.Array[Error]): Self = StObject.set(x, "GetErrorDetailList", js.Any.fromFunction0(value))
+      inline def setGetErrorDetailList(value: () => js.Array[Error]): Self = StObject.set(x, "GetErrorDetailList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetErrorString(value: () => String): Self = StObject.set(x, "GetErrorString", js.Any.fromFunction0(value))
+      inline def setGetErrorString(value: () => String): Self = StObject.set(x, "GetErrorString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInput(value: () => Double | String): Self = StObject.set(x, "GetInput", js.Any.fromFunction0(value))
+      inline def setGetInput(value: () => Double | String): Self = StObject.set(x, "GetInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOCRTotalCount(value: () => String): Self = StObject.set(x, "GetOCRTotalCount", js.Any.fromFunction0(value))
+      inline def setGetOCRTotalCount(value: () => String): Self = StObject.set(x, "GetOCRTotalCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPageContent(value: Double => Page): Self = StObject.set(x, "GetPageContent", js.Any.fromFunction1(value))
+      inline def setGetPageContent(value: Double => Page): Self = StObject.set(x, "GetPageContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPageCount(value: () => String): Self = StObject.set(x, "GetPageCount", js.Any.fromFunction0(value))
+      inline def setGetPageCount(value: () => String): Self = StObject.set(x, "GetPageCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSave(value: String => Boolean): Self = StObject.set(x, "Save", js.Any.fromFunction1(value))
+      inline def setSave(value: String => Boolean): Self = StObject.set(x, "Save", js.Any.fromFunction1(value))
     }
   }
   
@@ -362,8 +331,7 @@ object addonOCRProMod {
   }
   object Page {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       GetLetterContent: Double => Letter,
       GetLetterCount: () => Double,
       GetZoneContent: Double => String,
@@ -373,20 +341,15 @@ object addonOCRProMod {
       __obj.asInstanceOf[Page]
     }
     
-    @scala.inline
-    implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+    extension [Self <: Page](x: Self) {
       
-      @scala.inline
-      def setGetLetterContent(value: Double => Letter): Self = StObject.set(x, "GetLetterContent", js.Any.fromFunction1(value))
+      inline def setGetLetterContent(value: Double => Letter): Self = StObject.set(x, "GetLetterContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLetterCount(value: () => Double): Self = StObject.set(x, "GetLetterCount", js.Any.fromFunction0(value))
+      inline def setGetLetterCount(value: () => Double): Self = StObject.set(x, "GetLetterCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetZoneContent(value: Double => String): Self = StObject.set(x, "GetZoneContent", js.Any.fromFunction1(value))
+      inline def setGetZoneContent(value: Double => String): Self = StObject.set(x, "GetZoneContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetZoneCount(value: () => Double): Self = StObject.set(x, "GetZoneCount", js.Any.fromFunction0(value))
+      inline def setGetZoneCount(value: () => Double): Self = StObject.set(x, "GetZoneCount", js.Any.fromFunction0(value))
     }
   }
   
@@ -402,26 +365,20 @@ object addonOCRProMod {
   }
   object Rect {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double): Rect = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Rect = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rect]
     }
     
-    @scala.inline
-    implicit class RectMutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
+    extension [Self <: Rect](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -444,8 +401,7 @@ object addonOCRProMod {
   }
   object Redaction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       FindText: String,
       FindTextAction: EnumDWTOCRFindTextAction | Double,
       FindTextFlags: EnumDWTOCRFindTextFlags | Double
@@ -454,17 +410,13 @@ object addonOCRProMod {
       __obj.asInstanceOf[Redaction]
     }
     
-    @scala.inline
-    implicit class RedactionMutableBuilder[Self <: Redaction] (val x: Self) extends AnyVal {
+    extension [Self <: Redaction](x: Self) {
       
-      @scala.inline
-      def setFindText(value: String): Self = StObject.set(x, "FindText", value.asInstanceOf[js.Any])
+      inline def setFindText(value: String): Self = StObject.set(x, "FindText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindTextAction(value: EnumDWTOCRFindTextAction | Double): Self = StObject.set(x, "FindTextAction", value.asInstanceOf[js.Any])
+      inline def setFindTextAction(value: EnumDWTOCRFindTextAction | Double): Self = StObject.set(x, "FindTextAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindTextFlags(value: EnumDWTOCRFindTextFlags | Double): Self = StObject.set(x, "FindTextFlags", value.asInstanceOf[js.Any])
+      inline def setFindTextFlags(value: EnumDWTOCRFindTextFlags | Double): Self = StObject.set(x, "FindTextFlags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -507,8 +459,7 @@ object addonOCRProMod {
   }
   object Settings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Languages: String,
       LicenseChecker: String,
       OutputFormat: EnumDWTOCRProOutputFormat | String,
@@ -521,29 +472,21 @@ object addonOCRProMod {
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setLanguages(value: String): Self = StObject.set(x, "Languages", value.asInstanceOf[js.Any])
+      inline def setLanguages(value: String): Self = StObject.set(x, "Languages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseChecker(value: String): Self = StObject.set(x, "LicenseChecker", value.asInstanceOf[js.Any])
+      inline def setLicenseChecker(value: String): Self = StObject.set(x, "LicenseChecker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFormat(value: EnumDWTOCRProOutputFormat | String): Self = StObject.set(x, "OutputFormat", value.asInstanceOf[js.Any])
+      inline def setOutputFormat(value: EnumDWTOCRProOutputFormat | String): Self = StObject.set(x, "OutputFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPDFAVersion(value: EnumDWTOCRProPDFAVersion | String): Self = StObject.set(x, "PDFAVersion", value.asInstanceOf[js.Any])
+      inline def setPDFAVersion(value: EnumDWTOCRProPDFAVersion | String): Self = StObject.set(x, "PDFAVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPDFVersion(value: EnumDWTOCRProPDFVersion | String): Self = StObject.set(x, "PDFVersion", value.asInstanceOf[js.Any])
+      inline def setPDFVersion(value: EnumDWTOCRProPDFVersion | String): Self = StObject.set(x, "PDFVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecognitionModule(value: EnumDWTOCRProRecognitionModule | String): Self = StObject.set(x, "RecognitionModule", value.asInstanceOf[js.Any])
+      inline def setRecognitionModule(value: EnumDWTOCRProRecognitionModule | String): Self = StObject.set(x, "RecognitionModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedaction(value: Redaction): Self = StObject.set(x, "Redaction", value.asInstanceOf[js.Any])
+      inline def setRedaction(value: Redaction): Self = StObject.set(x, "Redaction", value.asInstanceOf[js.Any])
     }
   }
 }

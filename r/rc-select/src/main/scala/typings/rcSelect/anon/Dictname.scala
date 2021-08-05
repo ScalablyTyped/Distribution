@@ -17,8 +17,7 @@ trait Dictname[OptionsType /* <: js.Array[js.Object] */]
 }
 object Dictname {
   
-  @scala.inline
-  def apply[OptionsType /* <: js.Array[js.Object] */](
+  inline def apply[OptionsType /* <: js.Array[js.Object] */](
     data: /* import warning: importer.ImportType#apply Failed type conversion: OptionsType[number] */ js.Any,
     key: Key
   ): Dictname[OptionsType] = {
@@ -26,15 +25,12 @@ object Dictname {
     __obj.asInstanceOf[Dictname[OptionsType]]
   }
   
-  @scala.inline
-  implicit class DictnameMutableBuilder[Self <: Dictname[?], OptionsType /* <: js.Array[js.Object] */] (val x: Self & Dictname[OptionsType]) extends AnyVal {
+  extension [Self <: Dictname[?], OptionsType /* <: js.Array[js.Object] */](x: Self & Dictname[OptionsType]) {
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: OptionsType[number] */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

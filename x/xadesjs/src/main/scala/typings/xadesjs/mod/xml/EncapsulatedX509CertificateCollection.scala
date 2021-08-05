@@ -13,6 +13,5 @@ class EncapsulatedX509CertificateCollection ()
   extends typings.xadesjs.xmlMod.EncapsulatedX509CertificateCollection
 object EncapsulatedX509CertificateCollection {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.EncapsulatedX509CertificateCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("EncapsulatedX509CertificateCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.EncapsulatedX509CertificateCollection]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.EncapsulatedX509CertificateCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("EncapsulatedX509CertificateCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.EncapsulatedX509CertificateCollection]]
 }

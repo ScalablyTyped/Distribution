@@ -37,23 +37,18 @@ object expansionListMod {
   }
   object ExpansionListProps {
     
-    @scala.inline
-    def apply(onKeyDown: KeyboardEvent[HTMLDivElement] => Unit): ExpansionListProps = {
+    inline def apply(onKeyDown: KeyboardEvent[HTMLDivElement] => Unit): ExpansionListProps = {
       val __obj = js.Dynamic.literal(onKeyDown = js.Any.fromFunction1(onKeyDown))
       __obj.asInstanceOf[ExpansionListProps]
     }
     
-    @scala.inline
-    implicit class ExpansionListPropsMutableBuilder[Self <: ExpansionListProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExpansionListProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     }
   }
 }

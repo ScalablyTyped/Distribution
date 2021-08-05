@@ -103,8 +103,7 @@ object topups {
   }
   object ITopup {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amount: Double,
       created: Double,
       currency: String,
@@ -121,68 +120,47 @@ object topups {
       __obj.asInstanceOf[ITopup]
     }
     
-    @scala.inline
-    implicit class ITopupMutableBuilder[Self <: ITopup] (val x: Self) extends AnyVal {
+    extension [Self <: ITopup](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalance_transaction(value: String): Self = StObject.set(x, "balance_transaction", value.asInstanceOf[js.Any])
+      inline def setBalance_transaction(value: String): Self = StObject.set(x, "balance_transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalance_transactionNull: Self = StObject.set(x, "balance_transaction", null)
+      inline def setBalance_transactionNull: Self = StObject.set(x, "balance_transaction", null)
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpected_availability_date(value: Double): Self = StObject.set(x, "expected_availability_date", value.asInstanceOf[js.Any])
+      inline def setExpected_availability_date(value: Double): Self = StObject.set(x, "expected_availability_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailure_code(value: String): Self = StObject.set(x, "failure_code", value.asInstanceOf[js.Any])
+      inline def setFailure_code(value: String): Self = StObject.set(x, "failure_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailure_codeNull: Self = StObject.set(x, "failure_code", null)
+      inline def setFailure_codeNull: Self = StObject.set(x, "failure_code", null)
       
-      @scala.inline
-      def setFailure_message(value: String): Self = StObject.set(x, "failure_message", value.asInstanceOf[js.Any])
+      inline def setFailure_message(value: String): Self = StObject.set(x, "failure_message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailure_messageNull: Self = StObject.set(x, "failure_message", null)
+      inline def setFailure_messageNull: Self = StObject.set(x, "failure_message", null)
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaData(value: IMetadata): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+      inline def setMetaData(value: IMetadata): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: topup): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: topup): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: ISource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: ISource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
+      inline def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatement_descriptorNull: Self = StObject.set(x, "statement_descriptor", null)
+      inline def setStatement_descriptorNull: Self = StObject.set(x, "statement_descriptor", null)
       
-      @scala.inline
-      def setStatus(value: canceled | failed | pending | reversed | succeeded): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: canceled | failed | pending | reversed | succeeded): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransfer_group(value: String): Self = StObject.set(x, "transfer_group", value.asInstanceOf[js.Any])
+      inline def setTransfer_group(value: String): Self = StObject.set(x, "transfer_group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransfer_groupNull: Self = StObject.set(x, "transfer_group", null)
+      inline def setTransfer_groupNull: Self = StObject.set(x, "transfer_group", null)
     }
   }
   
@@ -224,44 +202,32 @@ object topups {
   }
   object ITopupCreationOptions {
     
-    @scala.inline
-    def apply(amount: Double, currency: String): ITopupCreationOptions = {
+    inline def apply(amount: Double, currency: String): ITopupCreationOptions = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITopupCreationOptions]
     }
     
-    @scala.inline
-    implicit class ITopupCreationOptionsMutableBuilder[Self <: ITopupCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITopupCreationOptions](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
+      inline def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
+      inline def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
       
-      @scala.inline
-      def setTransfer_group(value: String): Self = StObject.set(x, "transfer_group", value.asInstanceOf[js.Any])
+      inline def setTransfer_group(value: String): Self = StObject.set(x, "transfer_group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransfer_groupUndefined: Self = StObject.set(x, "transfer_group", js.undefined)
+      inline def setTransfer_groupUndefined: Self = StObject.set(x, "transfer_group", js.undefined)
     }
   }
   
@@ -276,20 +242,16 @@ object topups {
   }
   object ITopupUpdateOptions {
     
-    @scala.inline
-    def apply(): ITopupUpdateOptions = {
+    inline def apply(): ITopupUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITopupUpdateOptions]
     }
     
-    @scala.inline
-    implicit class ITopupUpdateOptionsMutableBuilder[Self <: ITopupUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITopupUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     }
   }
   
@@ -310,26 +272,20 @@ object topups {
   }
   object ITopupsListOptions {
     
-    @scala.inline
-    def apply(): ITopupsListOptions = {
+    inline def apply(): ITopupsListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITopupsListOptions]
     }
     
-    @scala.inline
-    implicit class ITopupsListOptionsMutableBuilder[Self <: ITopupsListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITopupsListOptions](x: Self) {
       
-      @scala.inline
-      def setAmount(value: IAmountFilter): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: IAmountFilter): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+      inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
       
-      @scala.inline
-      def setStatus(value: canceled | failed | pending | succeeded): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: canceled | failed | pending | succeeded): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
 }

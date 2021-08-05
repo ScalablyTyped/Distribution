@@ -18,31 +18,23 @@ trait WiMAXProperties[M /* <: ManagedObject */, B] extends StObject {
 }
 object WiMAXProperties {
   
-  @scala.inline
-  def apply[M /* <: ManagedObject */, B](): WiMAXProperties[M, B] = {
+  inline def apply[M /* <: ManagedObject */, B](): WiMAXProperties[M, B] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WiMAXProperties[M, B]]
   }
   
-  @scala.inline
-  implicit class WiMAXPropertiesMutableBuilder[Self <: WiMAXProperties[?, ?], M /* <: ManagedObject */, B] (val x: Self & (WiMAXProperties[M, B])) extends AnyVal {
+  extension [Self <: WiMAXProperties[?, ?], M /* <: ManagedObject */, B](x: Self & (WiMAXProperties[M, B])) {
     
-    @scala.inline
-    def setAutoConnect(value: B): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
+    inline def setAutoConnect(value: B): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
+    inline def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
     
-    @scala.inline
-    def setEAP(value: EAPProperties): Self = StObject.set(x, "EAP", value.asInstanceOf[js.Any])
+    inline def setEAP(value: EAPProperties): Self = StObject.set(x, "EAP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEAPUndefined: Self = StObject.set(x, "EAP", js.undefined)
+    inline def setEAPUndefined: Self = StObject.set(x, "EAP", js.undefined)
     
-    @scala.inline
-    def setSignalStrength(value: integer): Self = StObject.set(x, "SignalStrength", value.asInstanceOf[js.Any])
+    inline def setSignalStrength(value: integer): Self = StObject.set(x, "SignalStrength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalStrengthUndefined: Self = StObject.set(x, "SignalStrength", js.undefined)
+    inline def setSignalStrengthUndefined: Self = StObject.set(x, "SignalStrength", js.undefined)
   }
 }

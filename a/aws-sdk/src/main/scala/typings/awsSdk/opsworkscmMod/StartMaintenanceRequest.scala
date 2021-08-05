@@ -18,25 +18,19 @@ trait StartMaintenanceRequest extends StObject {
 }
 object StartMaintenanceRequest {
   
-  @scala.inline
-  def apply(ServerName: ServerName): StartMaintenanceRequest = {
+  inline def apply(ServerName: ServerName): StartMaintenanceRequest = {
     val __obj = js.Dynamic.literal(ServerName = ServerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartMaintenanceRequest]
   }
   
-  @scala.inline
-  implicit class StartMaintenanceRequestMutableBuilder[Self <: StartMaintenanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartMaintenanceRequest](x: Self) {
     
-    @scala.inline
-    def setEngineAttributes(value: EngineAttributes): Self = StObject.set(x, "EngineAttributes", value.asInstanceOf[js.Any])
+    inline def setEngineAttributes(value: EngineAttributes): Self = StObject.set(x, "EngineAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineAttributesUndefined: Self = StObject.set(x, "EngineAttributes", js.undefined)
+    inline def setEngineAttributesUndefined: Self = StObject.set(x, "EngineAttributes", js.undefined)
     
-    @scala.inline
-    def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value :_*))
+    inline def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
   }
 }

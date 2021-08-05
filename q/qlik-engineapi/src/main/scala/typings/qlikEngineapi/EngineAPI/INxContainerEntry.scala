@@ -26,22 +26,17 @@ trait INxContainerEntry[T] extends StObject {
 }
 object INxContainerEntry {
   
-  @scala.inline
-  def apply[T](qData: T, qInfo: INxInfo, qMeta: INxMeta): INxContainerEntry[T] = {
+  inline def apply[T](qData: T, qInfo: INxInfo, qMeta: INxMeta): INxContainerEntry[T] = {
     val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxContainerEntry[T]]
   }
   
-  @scala.inline
-  implicit class INxContainerEntryMutableBuilder[Self <: INxContainerEntry[?], T] (val x: Self & INxContainerEntry[T]) extends AnyVal {
+  extension [Self <: INxContainerEntry[?], T](x: Self & INxContainerEntry[T]) {
     
-    @scala.inline
-    def setQData(value: T): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
+    inline def setQData(value: T): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQInfo(value: INxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
+    inline def setQInfo(value: INxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
+    inline def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
   }
 }

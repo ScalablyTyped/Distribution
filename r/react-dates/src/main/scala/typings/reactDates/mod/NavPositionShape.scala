@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NavPositionShape extends StObject
 object NavPositionShape {
   
-  @scala.inline
-  def navPositionBottom: typings.reactDates.reactDatesStrings.navPositionBottom = "navPositionBottom".asInstanceOf[typings.reactDates.reactDatesStrings.navPositionBottom]
+  inline def navPositionBottom: typings.reactDates.reactDatesStrings.navPositionBottom = "navPositionBottom".asInstanceOf[typings.reactDates.reactDatesStrings.navPositionBottom]
   
-  @scala.inline
-  def navPositionTop: typings.reactDates.reactDatesStrings.navPositionTop = "navPositionTop".asInstanceOf[typings.reactDates.reactDatesStrings.navPositionTop]
+  inline def navPositionTop: typings.reactDates.reactDatesStrings.navPositionTop = "navPositionTop".asInstanceOf[typings.reactDates.reactDatesStrings.navPositionTop]
 }

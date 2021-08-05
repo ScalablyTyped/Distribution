@@ -47,8 +47,7 @@ trait MouseManager
 }
 object MouseManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: String,
     btnLeft: Boolean,
     btnMiddle: Boolean,
@@ -70,46 +69,32 @@ object MouseManager {
     __obj.asInstanceOf[MouseManager]
   }
   
-  @scala.inline
-  implicit class MouseManagerMutableBuilder[Self <: MouseManager] (val x: Self) extends AnyVal {
+  extension [Self <: MouseManager](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBtnLeft(value: Boolean): Self = StObject.set(x, "btnLeft", value.asInstanceOf[js.Any])
+    inline def setBtnLeft(value: Boolean): Self = StObject.set(x, "btnLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBtnMiddle(value: Boolean): Self = StObject.set(x, "btnMiddle", value.asInstanceOf[js.Any])
+    inline def setBtnMiddle(value: Boolean): Self = StObject.set(x, "btnMiddle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBtnRight(value: Boolean): Self = StObject.set(x, "btnRight", value.asInstanceOf[js.Any])
+    inline def setBtnRight(value: Boolean): Self = StObject.set(x, "btnRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
+    inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
+    inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+    inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+    inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

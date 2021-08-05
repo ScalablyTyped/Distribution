@@ -20,31 +20,23 @@ trait AttachTenantProjectRequest extends StObject {
 }
 object AttachTenantProjectRequest {
   
-  @scala.inline
-  def apply(): AttachTenantProjectRequest = {
+  inline def apply(): AttachTenantProjectRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachTenantProjectRequest]
   }
   
-  @scala.inline
-  implicit class AttachTenantProjectRequestMutableBuilder[Self <: AttachTenantProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AttachTenantProjectRequest](x: Self) {
     
-    @scala.inline
-    def setExternalResource(value: String): Self = StObject.set(x, "externalResource", value.asInstanceOf[js.Any])
+    inline def setExternalResource(value: String): Self = StObject.set(x, "externalResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalResourceUndefined: Self = StObject.set(x, "externalResource", js.undefined)
+    inline def setExternalResourceUndefined: Self = StObject.set(x, "externalResource", js.undefined)
     
-    @scala.inline
-    def setReservedResource(value: String): Self = StObject.set(x, "reservedResource", value.asInstanceOf[js.Any])
+    inline def setReservedResource(value: String): Self = StObject.set(x, "reservedResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedResourceUndefined: Self = StObject.set(x, "reservedResource", js.undefined)
+    inline def setReservedResourceUndefined: Self = StObject.set(x, "reservedResource", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

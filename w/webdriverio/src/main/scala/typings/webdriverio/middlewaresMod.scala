@@ -10,8 +10,7 @@ object middlewaresMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def elementErrorHandler(fn: js.Function): js.Function2[
+  inline def elementErrorHandler(fn: js.Function): js.Function2[
     /* commandName */ js.Any, 
     /* commandFn */ js.Any, 
     js.Function1[/* repeated */ js.Any, js.Any]
@@ -21,6 +20,5 @@ object middlewaresMod {
     js.Function1[/* repeated */ js.Any, js.Any]
   ]]
   
-  @scala.inline
-  def multiremoteHandler(wrapCommand: js.Any): js.Function1[/* commandName */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiremoteHandler")(wrapCommand.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* commandName */ js.Any, js.Any]]
+  inline def multiremoteHandler(wrapCommand: js.Any): js.Function1[/* commandName */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiremoteHandler")(wrapCommand.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* commandName */ js.Any, js.Any]]
 }

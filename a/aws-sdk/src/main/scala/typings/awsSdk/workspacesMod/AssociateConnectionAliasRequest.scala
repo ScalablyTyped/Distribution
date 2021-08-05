@@ -18,19 +18,15 @@ trait AssociateConnectionAliasRequest extends StObject {
 }
 object AssociateConnectionAliasRequest {
   
-  @scala.inline
-  def apply(AliasId: ConnectionAliasId, ResourceId: NonEmptyString): AssociateConnectionAliasRequest = {
+  inline def apply(AliasId: ConnectionAliasId, ResourceId: NonEmptyString): AssociateConnectionAliasRequest = {
     val __obj = js.Dynamic.literal(AliasId = AliasId.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateConnectionAliasRequest]
   }
   
-  @scala.inline
-  implicit class AssociateConnectionAliasRequestMutableBuilder[Self <: AssociateConnectionAliasRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateConnectionAliasRequest](x: Self) {
     
-    @scala.inline
-    def setAliasId(value: ConnectionAliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
+    inline def setAliasId(value: ConnectionAliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: NonEmptyString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: NonEmptyString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

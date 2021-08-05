@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppGroupPrivacy extends StObject
 object AppGroupPrivacy {
   
-  @scala.inline
-  def Closed: typings.reactNativeFbsdk.reactNativeFbsdkStrings.Closed = "Closed".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.Closed]
+  inline def Closed: typings.reactNativeFbsdk.reactNativeFbsdkStrings.Closed = "Closed".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.Closed]
   
-  @scala.inline
-  def Open: typings.reactNativeFbsdk.reactNativeFbsdkStrings.Open = "Open".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.Open]
+  inline def Open: typings.reactNativeFbsdk.reactNativeFbsdkStrings.Open = "Open".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.Open]
 }

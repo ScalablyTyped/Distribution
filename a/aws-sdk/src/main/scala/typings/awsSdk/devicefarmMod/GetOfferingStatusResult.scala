@@ -23,31 +23,23 @@ trait GetOfferingStatusResult extends StObject {
 }
 object GetOfferingStatusResult {
   
-  @scala.inline
-  def apply(): GetOfferingStatusResult = {
+  inline def apply(): GetOfferingStatusResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOfferingStatusResult]
   }
   
-  @scala.inline
-  implicit class GetOfferingStatusResultMutableBuilder[Self <: GetOfferingStatusResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetOfferingStatusResult](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: OfferingStatusMap): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: OfferingStatusMap): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+    inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     
-    @scala.inline
-    def setNextPeriod(value: OfferingStatusMap): Self = StObject.set(x, "nextPeriod", value.asInstanceOf[js.Any])
+    inline def setNextPeriod(value: OfferingStatusMap): Self = StObject.set(x, "nextPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPeriodUndefined: Self = StObject.set(x, "nextPeriod", js.undefined)
+    inline def setNextPeriodUndefined: Self = StObject.set(x, "nextPeriod", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

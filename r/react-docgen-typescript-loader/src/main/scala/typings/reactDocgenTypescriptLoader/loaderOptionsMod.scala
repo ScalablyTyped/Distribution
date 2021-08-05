@@ -90,86 +90,60 @@ object loaderOptionsMod {
   }
   object LoaderOptions {
     
-    @scala.inline
-    def apply(): LoaderOptions = {
+    inline def apply(): LoaderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoaderOptions]
     }
     
-    @scala.inline
-    implicit class LoaderOptionsMutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderOptions](x: Self) {
       
-      @scala.inline
-      def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
+      inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerOptionsUndefined: Self = StObject.set(x, "compilerOptions", js.undefined)
+      inline def setCompilerOptionsUndefined: Self = StObject.set(x, "compilerOptions", js.undefined)
       
-      @scala.inline
-      def setComponentNameResolver(value: (/* exp */ Symbol, /* source */ SourceFile) => js.UndefOr[String | Null | `false`]): Self = StObject.set(x, "componentNameResolver", js.Any.fromFunction2(value))
+      inline def setComponentNameResolver(value: (/* exp */ Symbol, /* source */ SourceFile) => js.UndefOr[String | Null | `false`]): Self = StObject.set(x, "componentNameResolver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setComponentNameResolverUndefined: Self = StObject.set(x, "componentNameResolver", js.undefined)
+      inline def setComponentNameResolverUndefined: Self = StObject.set(x, "componentNameResolver", js.undefined)
       
-      @scala.inline
-      def setDocgenCollectionName(value: String): Self = StObject.set(x, "docgenCollectionName", value.asInstanceOf[js.Any])
+      inline def setDocgenCollectionName(value: String): Self = StObject.set(x, "docgenCollectionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocgenCollectionNameNull: Self = StObject.set(x, "docgenCollectionName", null)
+      inline def setDocgenCollectionNameNull: Self = StObject.set(x, "docgenCollectionName", null)
       
-      @scala.inline
-      def setDocgenCollectionNameUndefined: Self = StObject.set(x, "docgenCollectionName", js.undefined)
+      inline def setDocgenCollectionNameUndefined: Self = StObject.set(x, "docgenCollectionName", js.undefined)
       
-      @scala.inline
-      def setPropFilter(value: (/* props */ PropItem, /* component */ Component) => Boolean): Self = StObject.set(x, "propFilter", js.Any.fromFunction2(value))
+      inline def setPropFilter(value: (/* props */ PropItem, /* component */ Component) => Boolean): Self = StObject.set(x, "propFilter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPropFilterUndefined: Self = StObject.set(x, "propFilter", js.undefined)
+      inline def setPropFilterUndefined: Self = StObject.set(x, "propFilter", js.undefined)
       
-      @scala.inline
-      def setSavePropValueAsString(value: Boolean): Self = StObject.set(x, "savePropValueAsString", value.asInstanceOf[js.Any])
+      inline def setSavePropValueAsString(value: Boolean): Self = StObject.set(x, "savePropValueAsString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavePropValueAsStringUndefined: Self = StObject.set(x, "savePropValueAsString", js.undefined)
+      inline def setSavePropValueAsStringUndefined: Self = StObject.set(x, "savePropValueAsString", js.undefined)
       
-      @scala.inline
-      def setSetDisplayName(value: Boolean): Self = StObject.set(x, "setDisplayName", value.asInstanceOf[js.Any])
+      inline def setSetDisplayName(value: Boolean): Self = StObject.set(x, "setDisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDisplayNameUndefined: Self = StObject.set(x, "setDisplayName", js.undefined)
+      inline def setSetDisplayNameUndefined: Self = StObject.set(x, "setDisplayName", js.undefined)
       
-      @scala.inline
-      def setShouldExtractLiteralValuesFromEnum(value: Boolean): Self = StObject.set(x, "shouldExtractLiteralValuesFromEnum", value.asInstanceOf[js.Any])
+      inline def setShouldExtractLiteralValuesFromEnum(value: Boolean): Self = StObject.set(x, "shouldExtractLiteralValuesFromEnum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldExtractLiteralValuesFromEnumUndefined: Self = StObject.set(x, "shouldExtractLiteralValuesFromEnum", js.undefined)
+      inline def setShouldExtractLiteralValuesFromEnumUndefined: Self = StObject.set(x, "shouldExtractLiteralValuesFromEnum", js.undefined)
       
-      @scala.inline
-      def setSkipPropsWithName(value: js.Array[String] | String): Self = StObject.set(x, "skipPropsWithName", value.asInstanceOf[js.Any])
+      inline def setSkipPropsWithName(value: js.Array[String] | String): Self = StObject.set(x, "skipPropsWithName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipPropsWithNameUndefined: Self = StObject.set(x, "skipPropsWithName", js.undefined)
+      inline def setSkipPropsWithNameUndefined: Self = StObject.set(x, "skipPropsWithName", js.undefined)
       
-      @scala.inline
-      def setSkipPropsWithNameVarargs(value: String*): Self = StObject.set(x, "skipPropsWithName", js.Array(value :_*))
+      inline def setSkipPropsWithNameVarargs(value: String*): Self = StObject.set(x, "skipPropsWithName", js.Array(value :_*))
       
-      @scala.inline
-      def setSkipPropsWithoutDoc(value: Boolean): Self = StObject.set(x, "skipPropsWithoutDoc", value.asInstanceOf[js.Any])
+      inline def setSkipPropsWithoutDoc(value: Boolean): Self = StObject.set(x, "skipPropsWithoutDoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipPropsWithoutDocUndefined: Self = StObject.set(x, "skipPropsWithoutDoc", js.undefined)
+      inline def setSkipPropsWithoutDocUndefined: Self = StObject.set(x, "skipPropsWithoutDoc", js.undefined)
       
-      @scala.inline
-      def setTsconfigPath(value: String): Self = StObject.set(x, "tsconfigPath", value.asInstanceOf[js.Any])
+      inline def setTsconfigPath(value: String): Self = StObject.set(x, "tsconfigPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTsconfigPathUndefined: Self = StObject.set(x, "tsconfigPath", js.undefined)
+      inline def setTsconfigPathUndefined: Self = StObject.set(x, "tsconfigPath", js.undefined)
       
-      @scala.inline
-      def setTypePropName(value: String): Self = StObject.set(x, "typePropName", value.asInstanceOf[js.Any])
+      inline def setTypePropName(value: String): Self = StObject.set(x, "typePropName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypePropNameUndefined: Self = StObject.set(x, "typePropName", js.undefined)
+      inline def setTypePropNameUndefined: Self = StObject.set(x, "typePropName", js.undefined)
     }
   }
 }

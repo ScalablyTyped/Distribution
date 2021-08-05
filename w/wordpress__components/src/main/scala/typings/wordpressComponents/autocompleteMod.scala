@@ -15,8 +15,7 @@ object autocompleteMod {
   object default {
     
     // tslint:disable-next-line:no-unnecessary-generics
-    @scala.inline
-    def apply[T](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply[T](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/components/autocomplete", JSImport.Default)
     @js.native
@@ -38,11 +37,9 @@ object autocompleteMod {
     trait Action extends StObject
     object Action {
       
-      @scala.inline
-      def `insert-at-caret`: typings.wordpressComponents.wordpressComponentsStrings.`insert-at-caret` = "insert-at-caret".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`insert-at-caret`]
+      inline def `insert-at-caret`: typings.wordpressComponents.wordpressComponentsStrings.`insert-at-caret` = "insert-at-caret".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`insert-at-caret`]
       
-      @scala.inline
-      def replace: typings.wordpressComponents.wordpressComponentsStrings.replace = "replace".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.replace]
+      inline def replace: typings.wordpressComponents.wordpressComponentsStrings.replace = "replace".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.replace]
     }
     
     trait Completer[T] extends StObject {
@@ -134,8 +131,7 @@ object autocompleteMod {
     }
     object Completer {
       
-      @scala.inline
-      def apply[T](
+      inline def apply[T](
         getOptionCompletion: (js.Any, String) => OptionCompletion,
         getOptionLabel: T => ReactNode,
         name: String,
@@ -146,59 +142,41 @@ object autocompleteMod {
         __obj.asInstanceOf[Completer[T]]
       }
       
-      @scala.inline
-      implicit class CompleterMutableBuilder[Self <: Completer[?], T] (val x: Self & Completer[T]) extends AnyVal {
+      extension [Self <: Completer[?], T](x: Self & Completer[T]) {
         
-        @scala.inline
-        def setAllowContext(value: (/* before */ String, /* after */ String) => Boolean): Self = StObject.set(x, "allowContext", js.Any.fromFunction2(value))
+        inline def setAllowContext(value: (/* before */ String, /* after */ String) => Boolean): Self = StObject.set(x, "allowContext", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setAllowContextUndefined: Self = StObject.set(x, "allowContext", js.undefined)
+        inline def setAllowContextUndefined: Self = StObject.set(x, "allowContext", js.undefined)
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setGetOptionCompletion(value: (js.Any, String) => OptionCompletion): Self = StObject.set(x, "getOptionCompletion", js.Any.fromFunction2(value))
+        inline def setGetOptionCompletion(value: (js.Any, String) => OptionCompletion): Self = StObject.set(x, "getOptionCompletion", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setGetOptionKeywords(value: /* option */ T => js.Array[String]): Self = StObject.set(x, "getOptionKeywords", js.Any.fromFunction1(value))
+        inline def setGetOptionKeywords(value: /* option */ T => js.Array[String]): Self = StObject.set(x, "getOptionKeywords", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetOptionKeywordsUndefined: Self = StObject.set(x, "getOptionKeywords", js.undefined)
+        inline def setGetOptionKeywordsUndefined: Self = StObject.set(x, "getOptionKeywords", js.undefined)
         
-        @scala.inline
-        def setGetOptionLabel(value: T => ReactNode): Self = StObject.set(x, "getOptionLabel", js.Any.fromFunction1(value))
+        inline def setGetOptionLabel(value: T => ReactNode): Self = StObject.set(x, "getOptionLabel", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIsDebounced(value: Boolean): Self = StObject.set(x, "isDebounced", value.asInstanceOf[js.Any])
+        inline def setIsDebounced(value: Boolean): Self = StObject.set(x, "isDebounced", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDebouncedUndefined: Self = StObject.set(x, "isDebounced", js.undefined)
+        inline def setIsDebouncedUndefined: Self = StObject.set(x, "isDebounced", js.undefined)
         
-        @scala.inline
-        def setIsOptionDisabled(value: /* option */ T => Boolean): Self = StObject.set(x, "isOptionDisabled", js.Any.fromFunction1(value))
+        inline def setIsOptionDisabled(value: /* option */ T => Boolean): Self = StObject.set(x, "isOptionDisabled", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIsOptionDisabledUndefined: Self = StObject.set(x, "isOptionDisabled", js.undefined)
+        inline def setIsOptionDisabledUndefined: Self = StObject.set(x, "isOptionDisabled", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptions(value: (js.Function1[/* query */ String, js.Thenable[js.Array[T]] | js.Array[T]]) | js.Array[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: (js.Function1[/* query */ String, js.Thenable[js.Array[T]] | js.Array[T]]) | js.Array[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsFunction1(value: /* query */ String => js.Thenable[js.Array[T]] | js.Array[T]): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+        inline def setOptionsFunction1(value: /* query */ String => js.Thenable[js.Array[T]] | js.Array[T]): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOptionsVarargs(value: T*): Self = StObject.set(x, "options", js.Array(value :_*))
+        inline def setOptionsVarargs(value: T*): Self = StObject.set(x, "options", js.Array(value :_*))
         
-        @scala.inline
-        def setTriggerPrefix(value: String): Self = StObject.set(x, "triggerPrefix", value.asInstanceOf[js.Any])
+        inline def setTriggerPrefix(value: String): Self = StObject.set(x, "triggerPrefix", value.asInstanceOf[js.Any])
       }
     }
     
@@ -225,47 +203,34 @@ object autocompleteMod {
     }
     object Props {
       
-      @scala.inline
-      def apply[T](children: RenderProps => Element | Null, completers: js.Array[Completer[T]]): Props[T] = {
+      inline def apply[T](children: RenderProps => Element | Null, completers: js.Array[Completer[T]]): Props[T] = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), completers = completers.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props[T]]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props[?], T] (val x: Self & Props[T]) extends AnyVal {
+      extension [Self <: Props[?], T](x: Self & Props[T]) {
         
-        @scala.inline
-        def setChildren(value: RenderProps => Element | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+        inline def setChildren(value: RenderProps => Element | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCompleters(value: js.Array[Completer[T]]): Self = StObject.set(x, "completers", value.asInstanceOf[js.Any])
+        inline def setCompleters(value: js.Array[Completer[T]]): Self = StObject.set(x, "completers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompletersVarargs(value: Completer[T]*): Self = StObject.set(x, "completers", js.Array(value :_*))
+        inline def setCompletersVarargs(value: Completer[T]*): Self = StObject.set(x, "completers", js.Array(value :_*))
         
-        @scala.inline
-        def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+        inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+        inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
         
-        @scala.inline
-        def setOnChange(value: /* value */ Value => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+        inline def setOnChange(value: /* value */ Value => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+        inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
         
-        @scala.inline
-        def setOnReplace(value: /* value */ Value => Unit): Self = StObject.set(x, "onReplace", js.Any.fromFunction1(value))
+        inline def setOnReplace(value: /* value */ Value => Unit): Self = StObject.set(x, "onReplace", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnReplaceUndefined: Self = StObject.set(x, "onReplace", js.undefined)
+        inline def setOnReplaceUndefined: Self = StObject.set(x, "onReplace", js.undefined)
         
-        @scala.inline
-        def setRecord(value: Value): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
+        inline def setRecord(value: Value): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
+        inline def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
       }
     }
     
@@ -281,8 +246,7 @@ object autocompleteMod {
     }
     object RenderProps {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         activeId: String,
         isExpanded: Boolean,
         listBoxId: String,
@@ -292,34 +256,27 @@ object autocompleteMod {
         __obj.asInstanceOf[RenderProps]
       }
       
-      @scala.inline
-      implicit class RenderPropsMutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
+      extension [Self <: RenderProps](x: Self) {
         
-        @scala.inline
-        def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
+        inline def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+        inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListBoxId(value: String): Self = StObject.set(x, "listBoxId", value.asInstanceOf[js.Any])
+        inline def setListBoxId(value: String): Self = StObject.set(x, "listBoxId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnKeyDown(value: KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+        inline def setOnKeyDown(value: KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       }
     }
     
     trait _OptionCompletion extends StObject
     object _OptionCompletion {
       
-      @scala.inline
-      def Action(): typings.wordpressComponents.anon.Action = {
+      inline def Action(): typings.wordpressComponents.anon.Action = {
         val __obj = js.Dynamic.literal(action = "insert-at-caret")
         __obj.asInstanceOf[typings.wordpressComponents.anon.Action]
       }
       
-      @scala.inline
-      def Value(value: typings.wordpressRichText.mod.Value): typings.wordpressComponents.anon.Value = {
+      inline def Value(value: typings.wordpressRichText.mod.Value): typings.wordpressComponents.anon.Value = {
         val __obj = js.Dynamic.literal(action = "replace", value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.wordpressComponents.anon.Value]
       }

@@ -52,8 +52,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[ValueType](promise: js.Thenable[ValueType]): js.Promise[PromiseResult[ValueType]] = ^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromiseResult[ValueType]]]
+  inline def apply[ValueType](promise: js.Thenable[ValueType]): js.Promise[PromiseResult[ValueType]] = ^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromiseResult[ValueType]]]
   
   @JSImport("p-reflect", JSImport.Namespace)
   @js.native
@@ -67,8 +66,7 @@ object mod {
   @JSImport("p-reflect", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReflect */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReflect */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReflect */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   trait PromiseFulfilledResult[ValueType]
     extends StObject
@@ -82,23 +80,18 @@ object mod {
   }
   object PromiseFulfilledResult {
     
-    @scala.inline
-    def apply[ValueType](value: ValueType): PromiseFulfilledResult[ValueType] = {
+    inline def apply[ValueType](value: ValueType): PromiseFulfilledResult[ValueType] = {
       val __obj = js.Dynamic.literal(isFulfilled = true, isRejected = false, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromiseFulfilledResult[ValueType]]
     }
     
-    @scala.inline
-    implicit class PromiseFulfilledResultMutableBuilder[Self <: PromiseFulfilledResult[?], ValueType] (val x: Self & PromiseFulfilledResult[ValueType]) extends AnyVal {
+    extension [Self <: PromiseFulfilledResult[?], ValueType](x: Self & PromiseFulfilledResult[ValueType]) {
       
-      @scala.inline
-      def setIsFulfilled(value: `true`): Self = StObject.set(x, "isFulfilled", value.asInstanceOf[js.Any])
+      inline def setIsFulfilled(value: `true`): Self = StObject.set(x, "isFulfilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRejected(value: `false`): Self = StObject.set(x, "isRejected", value.asInstanceOf[js.Any])
+      inline def setIsRejected(value: `false`): Self = StObject.set(x, "isRejected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: ValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,23 +107,18 @@ object mod {
   }
   object PromiseRejectedResult {
     
-    @scala.inline
-    def apply(reason: js.Any): PromiseRejectedResult = {
+    inline def apply(reason: js.Any): PromiseRejectedResult = {
       val __obj = js.Dynamic.literal(isFulfilled = false, isRejected = true, reason = reason.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromiseRejectedResult]
     }
     
-    @scala.inline
-    implicit class PromiseRejectedResultMutableBuilder[Self <: PromiseRejectedResult] (val x: Self) extends AnyVal {
+    extension [Self <: PromiseRejectedResult](x: Self) {
       
-      @scala.inline
-      def setIsFulfilled(value: `false`): Self = StObject.set(x, "isFulfilled", value.asInstanceOf[js.Any])
+      inline def setIsFulfilled(value: `false`): Self = StObject.set(x, "isFulfilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRejected(value: `true`): Self = StObject.set(x, "isRejected", value.asInstanceOf[js.Any])
+      inline def setIsRejected(value: `true`): Self = StObject.set(x, "isRejected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,14 +129,12 @@ object mod {
   trait PromiseResult[ValueType] extends StObject
   object PromiseResult {
     
-    @scala.inline
-    def PromiseFulfilledResult[ValueType](value: ValueType): typings.pReflect.mod.PromiseFulfilledResult[ValueType] = {
+    inline def PromiseFulfilledResult[ValueType](value: ValueType): typings.pReflect.mod.PromiseFulfilledResult[ValueType] = {
       val __obj = js.Dynamic.literal(isFulfilled = true, isRejected = false, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.pReflect.mod.PromiseFulfilledResult[ValueType]]
     }
     
-    @scala.inline
-    def PromiseRejectedResult(reason: js.Any): typings.pReflect.mod.PromiseRejectedResult = {
+    inline def PromiseRejectedResult(reason: js.Any): typings.pReflect.mod.PromiseRejectedResult = {
       val __obj = js.Dynamic.literal(isFulfilled = false, isRejected = true, reason = reason.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.pReflect.mod.PromiseRejectedResult]
     }

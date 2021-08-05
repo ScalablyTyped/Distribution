@@ -11,22 +11,17 @@ trait FirstAndThirdPartyAudienceGroup extends StObject {
 }
 object FirstAndThirdPartyAudienceGroup {
   
-  @scala.inline
-  def apply(): FirstAndThirdPartyAudienceGroup = {
+  inline def apply(): FirstAndThirdPartyAudienceGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirstAndThirdPartyAudienceGroup]
   }
   
-  @scala.inline
-  implicit class FirstAndThirdPartyAudienceGroupMutableBuilder[Self <: FirstAndThirdPartyAudienceGroup] (val x: Self) extends AnyVal {
+  extension [Self <: FirstAndThirdPartyAudienceGroup](x: Self) {
     
-    @scala.inline
-    def setSettings(value: js.Array[FirstAndThirdPartyAudienceTargetingSetting]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: js.Array[FirstAndThirdPartyAudienceTargetingSetting]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    @scala.inline
-    def setSettingsVarargs(value: FirstAndThirdPartyAudienceTargetingSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: FirstAndThirdPartyAudienceTargetingSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
   }
 }

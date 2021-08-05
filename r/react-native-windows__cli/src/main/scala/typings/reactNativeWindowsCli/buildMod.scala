@@ -16,8 +16,7 @@ object buildMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildSolution(
+  inline def buildSolution(
     buildTools: default,
     slnFile: String,
     buildType: BuildConfig,
@@ -25,8 +24,7 @@ object buildMod {
     msBuildProps: Record[String, String],
     verbose: Boolean
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSolution")(buildTools.asInstanceOf[js.Any], slnFile.asInstanceOf[js.Any], buildType.asInstanceOf[js.Any], buildArch.asInstanceOf[js.Any], msBuildProps.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def buildSolution(
+  inline def buildSolution(
     buildTools: default,
     slnFile: String,
     buildType: BuildConfig,
@@ -35,8 +33,7 @@ object buildMod {
     verbose: Boolean,
     target: String
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSolution")(buildTools.asInstanceOf[js.Any], slnFile.asInstanceOf[js.Any], buildType.asInstanceOf[js.Any], buildArch.asInstanceOf[js.Any], msBuildProps.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def buildSolution(
+  inline def buildSolution(
     buildTools: default,
     slnFile: String,
     buildType: BuildConfig,
@@ -46,8 +43,7 @@ object buildMod {
     target: String,
     buildLogDirectory: String
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSolution")(buildTools.asInstanceOf[js.Any], slnFile.asInstanceOf[js.Any], buildType.asInstanceOf[js.Any], buildArch.asInstanceOf[js.Any], msBuildProps.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], target.asInstanceOf[js.Any], buildLogDirectory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def buildSolution(
+  inline def buildSolution(
     buildTools: default,
     slnFile: String,
     buildType: BuildConfig,
@@ -58,15 +54,11 @@ object buildMod {
     buildLogDirectory: String
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSolution")(buildTools.asInstanceOf[js.Any], slnFile.asInstanceOf[js.Any], buildType.asInstanceOf[js.Any], buildArch.asInstanceOf[js.Any], msBuildProps.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], target.asInstanceOf[js.Any], buildLogDirectory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def getAppProjectFile(options: RunWindowsOptions_, config: Config): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppProjectFile")(options.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def getAppProjectFile(options: RunWindowsOptions_, config: Config): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppProjectFile")(options.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @scala.inline
-  def getAppSolutionFile(options: RunWindowsOptions_, config: Config): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppSolutionFile")(options.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def getAppSolutionFile(options: RunWindowsOptions_, config: Config): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppSolutionFile")(options.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @scala.inline
-  def parseMsBuildProps(options: RunWindowsOptions_): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMsBuildProps")(options.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
+  inline def parseMsBuildProps(options: RunWindowsOptions_): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMsBuildProps")(options.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
   
-  @scala.inline
-  def restoreNuGetPackages(slnFile: String, buildTools: default, verbose: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("restoreNuGetPackages")(slnFile.asInstanceOf[js.Any], buildTools.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def restoreNuGetPackages(slnFile: String, buildTools: default, verbose: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("restoreNuGetPackages")(slnFile.asInstanceOf[js.Any], buildTools.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

@@ -60,7 +60,7 @@ object rendererLayerMod {
       */
     def handleFontsChanged(): Unit = js.native
     
-    var layer_ : LayerType = js.native
+    /* protected */ var layer_ : LayerType = js.native
     
     /**
       * Load the image if not already loaded, and register the image change

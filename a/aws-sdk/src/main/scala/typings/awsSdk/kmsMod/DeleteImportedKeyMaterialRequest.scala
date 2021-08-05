@@ -13,16 +13,13 @@ trait DeleteImportedKeyMaterialRequest extends StObject {
 }
 object DeleteImportedKeyMaterialRequest {
   
-  @scala.inline
-  def apply(KeyId: KeyIdType): DeleteImportedKeyMaterialRequest = {
+  inline def apply(KeyId: KeyIdType): DeleteImportedKeyMaterialRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteImportedKeyMaterialRequest]
   }
   
-  @scala.inline
-  implicit class DeleteImportedKeyMaterialRequestMutableBuilder[Self <: DeleteImportedKeyMaterialRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteImportedKeyMaterialRequest](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
   }
 }

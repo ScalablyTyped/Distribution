@@ -18,25 +18,19 @@ trait GetVpcLinksRequest extends StObject {
 }
 object GetVpcLinksRequest {
   
-  @scala.inline
-  def apply(): GetVpcLinksRequest = {
+  inline def apply(): GetVpcLinksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetVpcLinksRequest]
   }
   
-  @scala.inline
-  implicit class GetVpcLinksRequestMutableBuilder[Self <: GetVpcLinksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetVpcLinksRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

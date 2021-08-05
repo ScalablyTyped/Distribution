@@ -14,25 +14,19 @@ trait SearchDefinition extends StObject {
 }
 object SearchDefinition {
   
-  @scala.inline
-  def apply(fields: js.Array[String], term: String, where: AnyObject[js.Any]): SearchDefinition = {
+  inline def apply(fields: js.Array[String], term: String, where: AnyObject[js.Any]): SearchDefinition = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchDefinition]
   }
   
-  @scala.inline
-  implicit class SearchDefinitionMutableBuilder[Self <: SearchDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDefinition](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhere(value: AnyObject[js.Any]): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: AnyObject[js.Any]): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
   }
 }

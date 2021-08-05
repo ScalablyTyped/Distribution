@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** For Macintosh only */
 @JSGlobal("Office.IFind")
 @js.native
-class IFind protected ()
+/* private */ class IFind ()
   extends StObject
      with typings.activexOffice.Office.IFind {
   
@@ -55,7 +55,7 @@ class IFind protected ()
   /* CompleteClass */
   var Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.IFind_typekey")
   var OfficeDotIFind_typekey: typings.activexOffice.Office.IFind = js.native
   

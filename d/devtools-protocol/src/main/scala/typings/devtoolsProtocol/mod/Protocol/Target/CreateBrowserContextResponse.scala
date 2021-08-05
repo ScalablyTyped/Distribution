@@ -14,16 +14,13 @@ trait CreateBrowserContextResponse extends StObject {
 }
 object CreateBrowserContextResponse {
   
-  @scala.inline
-  def apply(browserContextId: BrowserContextID): CreateBrowserContextResponse = {
+  inline def apply(browserContextId: BrowserContextID): CreateBrowserContextResponse = {
     val __obj = js.Dynamic.literal(browserContextId = browserContextId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBrowserContextResponse]
   }
   
-  @scala.inline
-  implicit class CreateBrowserContextResponseMutableBuilder[Self <: CreateBrowserContextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBrowserContextResponse](x: Self) {
     
-    @scala.inline
-    def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
+    inline def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
   }
 }

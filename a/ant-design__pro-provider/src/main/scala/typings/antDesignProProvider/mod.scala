@@ -41,8 +41,7 @@ object mod {
     * @param locale
     * @param localeMap
     */
-  @scala.inline
-  def createIntl(locale: String, localeMap: StringDictionary[js.Any]): IntlType = (^.asInstanceOf[js.Dynamic].applyDynamic("createIntl")(locale.asInstanceOf[js.Any], localeMap.asInstanceOf[js.Any])).asInstanceOf[IntlType]
+  inline def createIntl(locale: String, localeMap: StringDictionary[js.Any]): IntlType = (^.asInstanceOf[js.Dynamic].applyDynamic("createIntl")(locale.asInstanceOf[js.Any], localeMap.asInstanceOf[js.Any])).asInstanceOf[IntlType]
   
   @JSImport("@ant-design/pro-provider", "enUSIntl")
   @js.native
@@ -66,92 +65,79 @@ object mod {
     @js.native
     def arEG: IntlType = js.native
     
-    @scala.inline
-    def arEG_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ar-EG")(x.asInstanceOf[js.Any])
+    inline def arEG_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ar-EG")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-provider", "intlMap.en-US")
     @js.native
     def enUS: IntlType = js.native
     
-    @scala.inline
-    def enUS_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("en-US")(x.asInstanceOf[js.Any])
+    inline def enUS_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("en-US")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-provider", "intlMap.es-ES")
     @js.native
     def esES: IntlType = js.native
     
-    @scala.inline
-    def esES_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("es-ES")(x.asInstanceOf[js.Any])
+    inline def esES_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("es-ES")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-provider", "intlMap.fr-FR")
     @js.native
     def frFR: IntlType = js.native
     
-    @scala.inline
-    def frFR_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fr-FR")(x.asInstanceOf[js.Any])
+    inline def frFR_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fr-FR")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-provider", "intlMap.it-IT")
     @js.native
     def itIT: IntlType = js.native
     
-    @scala.inline
-    def itIT_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("it-IT")(x.asInstanceOf[js.Any])
+    inline def itIT_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("it-IT")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-provider", "intlMap.js-JP")
     @js.native
     def jsJP: IntlType = js.native
     
-    @scala.inline
-    def jsJP_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("js-JP")(x.asInstanceOf[js.Any])
+    inline def jsJP_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("js-JP")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-provider", "intlMap.ko-KR")
     @js.native
     def koKR: IntlType = js.native
     
-    @scala.inline
-    def koKR_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ko-KR")(x.asInstanceOf[js.Any])
+    inline def koKR_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ko-KR")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-provider", "intlMap.ms-MY")
     @js.native
     def msMY: IntlType = js.native
     
-    @scala.inline
-    def msMY_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ms-MY")(x.asInstanceOf[js.Any])
+    inline def msMY_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ms-MY")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-provider", "intlMap.pt-BR")
     @js.native
     def ptBR: IntlType = js.native
     
-    @scala.inline
-    def ptBR_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pt-BR")(x.asInstanceOf[js.Any])
+    inline def ptBR_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pt-BR")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-provider", "intlMap.ru-RU")
     @js.native
     def ruRU: IntlType = js.native
     
-    @scala.inline
-    def ruRU_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ru-RU")(x.asInstanceOf[js.Any])
+    inline def ruRU_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ru-RU")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-provider", "intlMap.vi-VN")
     @js.native
     def viVN: IntlType = js.native
     
-    @scala.inline
-    def viVN_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vi-VN")(x.asInstanceOf[js.Any])
+    inline def viVN_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vi-VN")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-provider", "intlMap.zh-CN")
     @js.native
     def zhCN: IntlType = js.native
     
-    @scala.inline
-    def zhCN_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zh-CN")(x.asInstanceOf[js.Any])
+    inline def zhCN_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zh-CN")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-provider", "intlMap.zh-TW")
     @js.native
     def zhTW: IntlType = js.native
     
-    @scala.inline
-    def zhTW_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zh-TW")(x.asInstanceOf[js.Any])
+    inline def zhTW_=(x: IntlType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zh-TW")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@ant-design/pro-provider", "intlMapKeys")
@@ -182,8 +168,7 @@ object mod {
   @js.native
   val ruRUIntl: IntlType = js.native
   
-  @scala.inline
-  def useIntl(): IntlType = ^.asInstanceOf[js.Dynamic].applyDynamic("useIntl")().asInstanceOf[IntlType]
+  inline def useIntl(): IntlType = ^.asInstanceOf[js.Dynamic].applyDynamic("useIntl")().asInstanceOf[IntlType]
   
   @JSImport("@ant-design/pro-provider", "viVNIntl")
   @js.native
@@ -205,20 +190,16 @@ object mod {
   }
   object IntlType {
     
-    @scala.inline
-    def apply(getMessage: (String, String) => String, locale: String): IntlType = {
+    inline def apply(getMessage: (String, String) => String, locale: String): IntlType = {
       val __obj = js.Dynamic.literal(getMessage = js.Any.fromFunction2(getMessage), locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntlType]
     }
     
-    @scala.inline
-    implicit class IntlTypeMutableBuilder[Self <: IntlType] (val x: Self) extends AnyVal {
+    extension [Self <: IntlType](x: Self) {
       
-      @scala.inline
-      def setGetMessage(value: (String, String) => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction2(value))
+      inline def setGetMessage(value: (String, String) => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }
   }
   

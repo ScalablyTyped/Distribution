@@ -11,19 +11,15 @@ trait NativeCrash extends StObject {
 }
 object NativeCrash {
   
-  @scala.inline
-  def apply(): NativeCrash = {
+  inline def apply(): NativeCrash = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NativeCrash]
   }
   
-  @scala.inline
-  implicit class NativeCrashMutableBuilder[Self <: NativeCrash] (val x: Self) extends AnyVal {
+  extension [Self <: NativeCrash](x: Self) {
     
-    @scala.inline
-    def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
+    inline def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
+    inline def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
   }
 }

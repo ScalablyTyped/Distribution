@@ -13,19 +13,15 @@ trait UpdateAssociationResult extends StObject {
 }
 object UpdateAssociationResult {
   
-  @scala.inline
-  def apply(): UpdateAssociationResult = {
+  inline def apply(): UpdateAssociationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateAssociationResult]
   }
   
-  @scala.inline
-  implicit class UpdateAssociationResultMutableBuilder[Self <: UpdateAssociationResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAssociationResult](x: Self) {
     
-    @scala.inline
-    def setAssociationDescription(value: AssociationDescription): Self = StObject.set(x, "AssociationDescription", value.asInstanceOf[js.Any])
+    inline def setAssociationDescription(value: AssociationDescription): Self = StObject.set(x, "AssociationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationDescriptionUndefined: Self = StObject.set(x, "AssociationDescription", js.undefined)
+    inline def setAssociationDescriptionUndefined: Self = StObject.set(x, "AssociationDescription", js.undefined)
   }
 }

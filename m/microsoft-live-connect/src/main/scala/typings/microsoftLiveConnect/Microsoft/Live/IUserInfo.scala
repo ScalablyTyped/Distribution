@@ -22,19 +22,15 @@ trait IUserInfo extends StObject {
 }
 object IUserInfo {
   
-  @scala.inline
-  def apply(id: String, name: String): IUserInfo = {
+  inline def apply(id: String, name: String): IUserInfo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUserInfo]
   }
   
-  @scala.inline
-  implicit class IUserInfoMutableBuilder[Self <: IUserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IUserInfo](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

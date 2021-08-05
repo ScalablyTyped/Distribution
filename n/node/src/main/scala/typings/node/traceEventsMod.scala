@@ -13,8 +13,7 @@ object traceEventsMod {
   /**
     * Creates and returns a Tracing object for the given set of categories.
     */
-  @scala.inline
-  def createTracing(options: CreateTracingOptions): Tracing = ^.asInstanceOf[js.Dynamic].applyDynamic("createTracing")(options.asInstanceOf[js.Any]).asInstanceOf[Tracing]
+  inline def createTracing(options: CreateTracingOptions): Tracing = ^.asInstanceOf[js.Dynamic].applyDynamic("createTracing")(options.asInstanceOf[js.Any]).asInstanceOf[Tracing]
   
   /**
     * Returns a comma-separated list of all currently-enabled trace event
@@ -22,8 +21,7 @@ object traceEventsMod {
     * determined by the union of all currently-enabled `Tracing` objects and
     * any categories enabled using the `--trace-event-categories` flag.
     */
-  @scala.inline
-  def getEnabledCategories(): js.UndefOr[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnabledCategories")().asInstanceOf[js.UndefOr[java.lang.String]]
+  inline def getEnabledCategories(): js.UndefOr[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnabledCategories")().asInstanceOf[js.UndefOr[java.lang.String]]
   
   trait CreateTracingOptions extends StObject {
     
@@ -36,20 +34,16 @@ object traceEventsMod {
   }
   object CreateTracingOptions {
     
-    @scala.inline
-    def apply(categories: js.Array[java.lang.String]): CreateTracingOptions = {
+    inline def apply(categories: js.Array[java.lang.String]): CreateTracingOptions = {
       val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateTracingOptions]
     }
     
-    @scala.inline
-    implicit class CreateTracingOptionsMutableBuilder[Self <: CreateTracingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateTracingOptions](x: Self) {
       
-      @scala.inline
-      def setCategories(value: js.Array[java.lang.String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: js.Array[java.lang.String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoriesVarargs(value: java.lang.String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: java.lang.String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     }
   }
   
@@ -93,26 +87,20 @@ object traceEventsMod {
   }
   object Tracing {
     
-    @scala.inline
-    def apply(categories: java.lang.String, disable: () => Unit, enable: () => Unit, enabled: Boolean): Tracing = {
+    inline def apply(categories: java.lang.String, disable: () => Unit, enable: () => Unit, enabled: Boolean): Tracing = {
       val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tracing]
     }
     
-    @scala.inline
-    implicit class TracingMutableBuilder[Self <: Tracing] (val x: Self) extends AnyVal {
+    extension [Self <: Tracing](x: Self) {
       
-      @scala.inline
-      def setCategories(value: java.lang.String): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: java.lang.String): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
   }
 }

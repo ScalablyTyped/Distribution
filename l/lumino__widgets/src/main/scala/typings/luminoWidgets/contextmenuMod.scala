@@ -23,9 +23,9 @@ object contextmenuMod {
       */
     def this(options: IOptions) = this()
     
-    var _idTick: js.Any = js.native
+    /* private */ var _idTick: js.Any = js.native
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
     
     /**
       * Add an item to the context menu.
@@ -93,23 +93,18 @@ object contextmenuMod {
     }
     object IItemOptions {
       
-      @scala.inline
-      def apply(selector: String): IItemOptions = {
+      inline def apply(selector: String): IItemOptions = {
         val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
         __obj.asInstanceOf[IItemOptions]
       }
       
-      @scala.inline
-      implicit class IItemOptionsMutableBuilder[Self <: IItemOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IItemOptions](x: Self) {
         
-        @scala.inline
-        def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+        inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+        inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
         
-        @scala.inline
-        def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       }
     }
     
@@ -130,23 +125,18 @@ object contextmenuMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(commands: CommandRegistry): IOptions = {
+      inline def apply(commands: CommandRegistry): IOptions = {
         val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+        inline def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       }
     }
   }

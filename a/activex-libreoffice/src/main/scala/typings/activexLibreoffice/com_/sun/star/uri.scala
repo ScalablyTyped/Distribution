@@ -32,16 +32,13 @@ object uri {
   object RelativeUriExcessParentSegments {
     
     /** causes excess special parent segments to be treated as an error. */
-    @scala.inline
-    def ERROR: `0` = 0.asInstanceOf[`0`]
+    inline def ERROR: `0` = 0.asInstanceOf[`0`]
     
     /** causes excess special parent segments to be removed. */
-    @scala.inline
-    def REMOVE: `2` = 2.asInstanceOf[`2`]
+    inline def REMOVE: `2` = 2.asInstanceOf[`2`]
     
     /** causes excess special parent segments to be retained, treating them like ordinary segments. */
-    @scala.inline
-    def RETAIN: `1` = 1.asInstanceOf[`1`]
+    inline def RETAIN: `1` = 1.asInstanceOf[`1`]
   }
   
   /**
@@ -128,20 +125,16 @@ object uri {
   }
   object XExternalUriReferenceTranslator {
     
-    @scala.inline
-    def apply(translateToExternal: String => String, translateToInternal: String => String): XExternalUriReferenceTranslator = {
+    inline def apply(translateToExternal: String => String, translateToInternal: String => String): XExternalUriReferenceTranslator = {
       val __obj = js.Dynamic.literal(translateToExternal = js.Any.fromFunction1(translateToExternal), translateToInternal = js.Any.fromFunction1(translateToInternal))
       __obj.asInstanceOf[XExternalUriReferenceTranslator]
     }
     
-    @scala.inline
-    implicit class XExternalUriReferenceTranslatorMutableBuilder[Self <: XExternalUriReferenceTranslator] (val x: Self) extends AnyVal {
+    extension [Self <: XExternalUriReferenceTranslator](x: Self) {
       
-      @scala.inline
-      def setTranslateToExternal(value: String => String): Self = StObject.set(x, "translateToExternal", js.Any.fromFunction1(value))
+      inline def setTranslateToExternal(value: String => String): Self = StObject.set(x, "translateToExternal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTranslateToInternal(value: String => String): Self = StObject.set(x, "translateToInternal", js.Any.fromFunction1(value))
+      inline def setTranslateToInternal(value: String => String): Self = StObject.set(x, "translateToInternal", js.Any.fromFunction1(value))
     }
   }
   
@@ -325,8 +318,7 @@ object uri {
   }
   object XUriReference {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Authority: String,
       Fragment: String,
       Path: String,
@@ -360,83 +352,57 @@ object uri {
       __obj.asInstanceOf[XUriReference]
     }
     
-    @scala.inline
-    implicit class XUriReferenceMutableBuilder[Self <: XUriReference] (val x: Self) extends AnyVal {
+    extension [Self <: XUriReference](x: Self) {
       
-      @scala.inline
-      def setAuthority(value: String): Self = StObject.set(x, "Authority", value.asInstanceOf[js.Any])
+      inline def setAuthority(value: String): Self = StObject.set(x, "Authority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearFragment(value: () => Unit): Self = StObject.set(x, "clearFragment", js.Any.fromFunction0(value))
+      inline def setClearFragment(value: () => Unit): Self = StObject.set(x, "clearFragment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFragment(value: String): Self = StObject.set(x, "Fragment", value.asInstanceOf[js.Any])
+      inline def setFragment(value: String): Self = StObject.set(x, "Fragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAuthority(value: () => String): Self = StObject.set(x, "getAuthority", js.Any.fromFunction0(value))
+      inline def setGetAuthority(value: () => String): Self = StObject.set(x, "getAuthority", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFragment(value: () => String): Self = StObject.set(x, "getFragment", js.Any.fromFunction0(value))
+      inline def setGetFragment(value: () => String): Self = StObject.set(x, "getFragment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPath(value: () => String): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
+      inline def setGetPath(value: () => String): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPathSegment(value: Double => String): Self = StObject.set(x, "getPathSegment", js.Any.fromFunction1(value))
+      inline def setGetPathSegment(value: Double => String): Self = StObject.set(x, "getPathSegment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPathSegmentCount(value: () => Double): Self = StObject.set(x, "getPathSegmentCount", js.Any.fromFunction0(value))
+      inline def setGetPathSegmentCount(value: () => Double): Self = StObject.set(x, "getPathSegmentCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetQuery(value: () => String): Self = StObject.set(x, "getQuery", js.Any.fromFunction0(value))
+      inline def setGetQuery(value: () => String): Self = StObject.set(x, "getQuery", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScheme(value: () => String): Self = StObject.set(x, "getScheme", js.Any.fromFunction0(value))
+      inline def setGetScheme(value: () => String): Self = StObject.set(x, "getScheme", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSchemeSpecificPart(value: () => String): Self = StObject.set(x, "getSchemeSpecificPart", js.Any.fromFunction0(value))
+      inline def setGetSchemeSpecificPart(value: () => String): Self = StObject.set(x, "getSchemeSpecificPart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUriReference(value: () => String): Self = StObject.set(x, "getUriReference", js.Any.fromFunction0(value))
+      inline def setGetUriReference(value: () => String): Self = StObject.set(x, "getUriReference", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasAuthority(value: () => Boolean): Self = StObject.set(x, "hasAuthority", js.Any.fromFunction0(value))
+      inline def setHasAuthority(value: () => Boolean): Self = StObject.set(x, "hasAuthority", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasFragment(value: () => Boolean): Self = StObject.set(x, "hasFragment", js.Any.fromFunction0(value))
+      inline def setHasFragment(value: () => Boolean): Self = StObject.set(x, "hasFragment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasQuery(value: () => Boolean): Self = StObject.set(x, "hasQuery", js.Any.fromFunction0(value))
+      inline def setHasQuery(value: () => Boolean): Self = StObject.set(x, "hasQuery", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasRelativePath(value: () => Boolean): Self = StObject.set(x, "hasRelativePath", js.Any.fromFunction0(value))
+      inline def setHasRelativePath(value: () => Boolean): Self = StObject.set(x, "hasRelativePath", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsAbsolute(value: () => Boolean): Self = StObject.set(x, "isAbsolute", js.Any.fromFunction0(value))
+      inline def setIsAbsolute(value: () => Boolean): Self = StObject.set(x, "isAbsolute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsHierarchical(value: () => Boolean): Self = StObject.set(x, "isHierarchical", js.Any.fromFunction0(value))
+      inline def setIsHierarchical(value: () => Boolean): Self = StObject.set(x, "isHierarchical", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathSegmentCount(value: Double): Self = StObject.set(x, "PathSegmentCount", value.asInstanceOf[js.Any])
+      inline def setPathSegmentCount(value: Double): Self = StObject.set(x, "PathSegmentCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "Scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "Scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemeSpecificPart(value: String): Self = StObject.set(x, "SchemeSpecificPart", value.asInstanceOf[js.Any])
+      inline def setSchemeSpecificPart(value: String): Self = StObject.set(x, "SchemeSpecificPart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetFragment(value: String => Unit): Self = StObject.set(x, "setFragment", js.Any.fromFunction1(value))
+      inline def setSetFragment(value: String => Unit): Self = StObject.set(x, "setFragment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUriReference(value: String): Self = StObject.set(x, "UriReference", value.asInstanceOf[js.Any])
+      inline def setUriReference(value: String): Self = StObject.set(x, "UriReference", value.asInstanceOf[js.Any])
     }
   }
   
@@ -491,8 +457,7 @@ object uri {
   }
   object XUriReferenceFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       makeAbsolute: (XUriReference, XUriReference, Boolean, RelativeUriExcessParentSegments) => XUriReference,
       makeRelative: (XUriReference, XUriReference, Boolean, Boolean, Boolean) => XUriReference,
@@ -504,17 +469,13 @@ object uri {
       __obj.asInstanceOf[XUriReferenceFactory]
     }
     
-    @scala.inline
-    implicit class XUriReferenceFactoryMutableBuilder[Self <: XUriReferenceFactory] (val x: Self) extends AnyVal {
+    extension [Self <: XUriReferenceFactory](x: Self) {
       
-      @scala.inline
-      def setMakeAbsolute(value: (XUriReference, XUriReference, Boolean, RelativeUriExcessParentSegments) => XUriReference): Self = StObject.set(x, "makeAbsolute", js.Any.fromFunction4(value))
+      inline def setMakeAbsolute(value: (XUriReference, XUriReference, Boolean, RelativeUriExcessParentSegments) => XUriReference): Self = StObject.set(x, "makeAbsolute", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setMakeRelative(value: (XUriReference, XUriReference, Boolean, Boolean, Boolean) => XUriReference): Self = StObject.set(x, "makeRelative", js.Any.fromFunction5(value))
+      inline def setMakeRelative(value: (XUriReference, XUriReference, Boolean, Boolean, Boolean) => XUriReference): Self = StObject.set(x, "makeRelative", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setParse(value: String => XUriReference): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: String => XUriReference): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }
   }
   
@@ -543,8 +504,7 @@ object uri {
   }
   object XUriSchemeParser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       parse: (String, String) => XUriReference,
       queryInterface: `type` => js.Any,
@@ -554,11 +514,9 @@ object uri {
       __obj.asInstanceOf[XUriSchemeParser]
     }
     
-    @scala.inline
-    implicit class XUriSchemeParserMutableBuilder[Self <: XUriSchemeParser] (val x: Self) extends AnyVal {
+    extension [Self <: XUriSchemeParser](x: Self) {
       
-      @scala.inline
-      def setParse(value: (String, String) => XUriReference): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+      inline def setParse(value: (String, String) => XUriReference): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
     }
   }
   
@@ -583,17 +541,14 @@ object uri {
   }
   object XVndSunStarExpandUrl {
     
-    @scala.inline
-    def apply(expand: XMacroExpander => String): XVndSunStarExpandUrl = {
+    inline def apply(expand: XMacroExpander => String): XVndSunStarExpandUrl = {
       val __obj = js.Dynamic.literal(expand = js.Any.fromFunction1(expand))
       __obj.asInstanceOf[XVndSunStarExpandUrl]
     }
     
-    @scala.inline
-    implicit class XVndSunStarExpandUrlMutableBuilder[Self <: XVndSunStarExpandUrl] (val x: Self) extends AnyVal {
+    extension [Self <: XVndSunStarExpandUrl](x: Self) {
       
-      @scala.inline
-      def setExpand(value: XMacroExpander => String): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+      inline def setExpand(value: XMacroExpander => String): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     }
   }
   
@@ -607,8 +562,7 @@ object uri {
        with XVndSunStarExpandUrl
   object XVndSunStarExpandUrlReference {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Authority: String,
       Fragment: String,
       Path: String,
@@ -661,17 +615,14 @@ object uri {
   }
   object XVndSunStarPkgUrlReferenceFactory {
     
-    @scala.inline
-    def apply(createVndSunStarPkgUrlReference: XUriReference => XUriReference): XVndSunStarPkgUrlReferenceFactory = {
+    inline def apply(createVndSunStarPkgUrlReference: XUriReference => XUriReference): XVndSunStarPkgUrlReferenceFactory = {
       val __obj = js.Dynamic.literal(createVndSunStarPkgUrlReference = js.Any.fromFunction1(createVndSunStarPkgUrlReference))
       __obj.asInstanceOf[XVndSunStarPkgUrlReferenceFactory]
     }
     
-    @scala.inline
-    implicit class XVndSunStarPkgUrlReferenceFactoryMutableBuilder[Self <: XVndSunStarPkgUrlReferenceFactory] (val x: Self) extends AnyVal {
+    extension [Self <: XVndSunStarPkgUrlReferenceFactory](x: Self) {
       
-      @scala.inline
-      def setCreateVndSunStarPkgUrlReference(value: XUriReference => XUriReference): Self = StObject.set(x, "createVndSunStarPkgUrlReference", js.Any.fromFunction1(value))
+      inline def setCreateVndSunStarPkgUrlReference(value: XUriReference => XUriReference): Self = StObject.set(x, "createVndSunStarPkgUrlReference", js.Any.fromFunction1(value))
     }
   }
   
@@ -738,8 +689,7 @@ object uri {
   }
   object XVndSunStarScriptUrl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Name: String,
       acquire: () => Unit,
       getName: () => String,
@@ -754,26 +704,19 @@ object uri {
       __obj.asInstanceOf[XVndSunStarScriptUrl]
     }
     
-    @scala.inline
-    implicit class XVndSunStarScriptUrlMutableBuilder[Self <: XVndSunStarScriptUrl] (val x: Self) extends AnyVal {
+    extension [Self <: XVndSunStarScriptUrl](x: Self) {
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParameter(value: String => String): Self = StObject.set(x, "getParameter", js.Any.fromFunction1(value))
+      inline def setGetParameter(value: String => String): Self = StObject.set(x, "getParameter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasParameter(value: String => Boolean): Self = StObject.set(x, "hasParameter", js.Any.fromFunction1(value))
+      inline def setHasParameter(value: String => Boolean): Self = StObject.set(x, "hasParameter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+      inline def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetParameter(value: (String, String) => Unit): Self = StObject.set(x, "setParameter", js.Any.fromFunction2(value))
+      inline def setSetParameter(value: (String, String) => Unit): Self = StObject.set(x, "setParameter", js.Any.fromFunction2(value))
     }
   }
   
@@ -784,8 +727,7 @@ object uri {
        with XVndSunStarScriptUrl
   object XVndSunStarScriptUrlReference {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Authority: String,
       Fragment: String,
       Name: String,

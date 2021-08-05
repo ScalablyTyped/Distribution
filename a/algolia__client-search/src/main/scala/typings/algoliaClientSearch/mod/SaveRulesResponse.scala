@@ -18,19 +18,15 @@ trait SaveRulesResponse extends StObject {
 }
 object SaveRulesResponse {
   
-  @scala.inline
-  def apply(taskID: Double, updatedAt: Double): SaveRulesResponse = {
+  inline def apply(taskID: Double, updatedAt: Double): SaveRulesResponse = {
     val __obj = js.Dynamic.literal(taskID = taskID.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveRulesResponse]
   }
   
-  @scala.inline
-  implicit class SaveRulesResponseMutableBuilder[Self <: SaveRulesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SaveRulesResponse](x: Self) {
     
-    @scala.inline
-    def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
+    inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAt(value: Double): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: Double): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

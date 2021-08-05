@@ -16,37 +16,27 @@ trait FileManagerMessages extends StObject {
 }
 object FileManagerMessages {
   
-  @scala.inline
-  def apply(): FileManagerMessages = {
+  inline def apply(): FileManagerMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileManagerMessages]
   }
   
-  @scala.inline
-  implicit class FileManagerMessagesMutableBuilder[Self <: FileManagerMessages] (val x: Self) extends AnyVal {
+  extension [Self <: FileManagerMessages](x: Self) {
     
-    @scala.inline
-    def setDialogs(value: FileManagerMessagesDialogs): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
+    inline def setDialogs(value: FileManagerMessagesDialogs): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogsUndefined: Self = StObject.set(x, "dialogs", js.undefined)
+    inline def setDialogsUndefined: Self = StObject.set(x, "dialogs", js.undefined)
     
-    @scala.inline
-    def setPreviewPane(value: FileManagerMessagesPreviewPane): Self = StObject.set(x, "previewPane", value.asInstanceOf[js.Any])
+    inline def setPreviewPane(value: FileManagerMessagesPreviewPane): Self = StObject.set(x, "previewPane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewPaneUndefined: Self = StObject.set(x, "previewPane", js.undefined)
+    inline def setPreviewPaneUndefined: Self = StObject.set(x, "previewPane", js.undefined)
     
-    @scala.inline
-    def setToolbar(value: FileManagerMessagesToolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: FileManagerMessagesToolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+    inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    @scala.inline
-    def setViews(value: FileManagerMessagesViews): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    inline def setViews(value: FileManagerMessagesViews): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+    inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
   }
 }

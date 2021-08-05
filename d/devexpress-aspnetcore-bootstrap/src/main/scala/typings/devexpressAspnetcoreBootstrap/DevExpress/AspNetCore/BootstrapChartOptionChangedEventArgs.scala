@@ -18,8 +18,7 @@ trait BootstrapChartOptionChangedEventArgs
 }
 object BootstrapChartOptionChangedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     component: js.Any,
     element: js.Any,
     fullName: String,
@@ -32,19 +31,14 @@ object BootstrapChartOptionChangedEventArgs {
     __obj.asInstanceOf[BootstrapChartOptionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class BootstrapChartOptionChangedEventArgsMutableBuilder[Self <: BootstrapChartOptionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapChartOptionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousValue(value: js.Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+    inline def setPreviousValue(value: js.Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

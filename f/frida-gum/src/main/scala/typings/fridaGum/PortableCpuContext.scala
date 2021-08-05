@@ -14,19 +14,15 @@ trait PortableCpuContext
 }
 object PortableCpuContext {
   
-  @scala.inline
-  def apply(pc: NativePointer, sp: NativePointer): PortableCpuContext = {
+  inline def apply(pc: NativePointer, sp: NativePointer): PortableCpuContext = {
     val __obj = js.Dynamic.literal(pc = pc.asInstanceOf[js.Any], sp = sp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortableCpuContext]
   }
   
-  @scala.inline
-  implicit class PortableCpuContextMutableBuilder[Self <: PortableCpuContext] (val x: Self) extends AnyVal {
+  extension [Self <: PortableCpuContext](x: Self) {
     
-    @scala.inline
-    def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
+    inline def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSp(value: NativePointer): Self = StObject.set(x, "sp", value.asInstanceOf[js.Any])
+    inline def setSp(value: NativePointer): Self = StObject.set(x, "sp", value.asInstanceOf[js.Any])
   }
 }

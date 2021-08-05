@@ -10,16 +10,13 @@ trait SingOutOptions extends StObject {
 }
 object SingOutOptions {
   
-  @scala.inline
-  def apply(mustInvalidate: Boolean): SingOutOptions = {
+  inline def apply(mustInvalidate: Boolean): SingOutOptions = {
     val __obj = js.Dynamic.literal(mustInvalidate = mustInvalidate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingOutOptions]
   }
   
-  @scala.inline
-  implicit class SingOutOptionsMutableBuilder[Self <: SingOutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SingOutOptions](x: Self) {
     
-    @scala.inline
-    def setMustInvalidate(value: Boolean): Self = StObject.set(x, "mustInvalidate", value.asInstanceOf[js.Any])
+    inline def setMustInvalidate(value: Boolean): Self = StObject.set(x, "mustInvalidate", value.asInstanceOf[js.Any])
   }
 }

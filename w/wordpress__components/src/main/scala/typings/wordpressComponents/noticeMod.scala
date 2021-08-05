@@ -36,14 +36,12 @@ object noticeMod {
     trait Action extends StObject
     object Action {
       
-      @scala.inline
-      def ButtonAction(label: String, onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): typings.wordpressComponents.noticeMod.Notice.ButtonAction = {
+      inline def ButtonAction(label: String, onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): typings.wordpressComponents.noticeMod.Notice.ButtonAction = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
         __obj.asInstanceOf[typings.wordpressComponents.noticeMod.Notice.ButtonAction]
       }
       
-      @scala.inline
-      def URLAction(label: String, url: String): typings.wordpressComponents.noticeMod.Notice.URLAction = {
+      inline def URLAction(label: String, url: String): typings.wordpressComponents.noticeMod.Notice.URLAction = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.wordpressComponents.noticeMod.Notice.URLAction]
       }
@@ -62,29 +60,22 @@ object noticeMod {
     }
     object BaseAction {
       
-      @scala.inline
-      def apply(label: String): BaseAction = {
+      inline def apply(label: String): BaseAction = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
         __obj.asInstanceOf[BaseAction]
       }
       
-      @scala.inline
-      implicit class BaseActionMutableBuilder[Self <: BaseAction] (val x: Self) extends AnyVal {
+      extension [Self <: BaseAction](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoDefaultClasses(value: Boolean): Self = StObject.set(x, "noDefaultClasses", value.asInstanceOf[js.Any])
+        inline def setNoDefaultClasses(value: Boolean): Self = StObject.set(x, "noDefaultClasses", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoDefaultClassesUndefined: Self = StObject.set(x, "noDefaultClasses", js.undefined)
+        inline def setNoDefaultClassesUndefined: Self = StObject.set(x, "noDefaultClasses", js.undefined)
       }
     }
     
@@ -97,17 +88,14 @@ object noticeMod {
     }
     object ButtonAction {
       
-      @scala.inline
-      def apply(label: String, onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): ButtonAction = {
+      inline def apply(label: String, onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): ButtonAction = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
         __obj.asInstanceOf[ButtonAction]
       }
       
-      @scala.inline
-      implicit class ButtonActionMutableBuilder[Self <: ButtonAction] (val x: Self) extends AnyVal {
+      extension [Self <: ButtonAction](x: Self) {
         
-        @scala.inline
-        def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+        inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       }
     }
     
@@ -140,53 +128,38 @@ object noticeMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+        inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+        inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
         
-        @scala.inline
-        def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+        inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setIsDismissible(value: Boolean): Self = StObject.set(x, "isDismissible", value.asInstanceOf[js.Any])
+        inline def setIsDismissible(value: Boolean): Self = StObject.set(x, "isDismissible", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDismissibleUndefined: Self = StObject.set(x, "isDismissible", js.undefined)
+        inline def setIsDismissibleUndefined: Self = StObject.set(x, "isDismissible", js.undefined)
         
-        @scala.inline
-        def setOnRemove(value: () => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction0(value))
+        inline def setOnRemove(value: () => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
+        inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
         
-        @scala.inline
-        def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       }
     }
     
@@ -199,17 +172,14 @@ object noticeMod {
     }
     object URLAction {
       
-      @scala.inline
-      def apply(label: String, url: String): URLAction = {
+      inline def apply(label: String, url: String): URLAction = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[URLAction]
       }
       
-      @scala.inline
-      implicit class URLActionMutableBuilder[Self <: URLAction] (val x: Self) extends AnyVal {
+      extension [Self <: URLAction](x: Self) {
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
     }
   }

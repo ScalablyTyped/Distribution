@@ -16,31 +16,23 @@ trait SDPMLine extends StObject {
 }
 object SDPMLine {
   
-  @scala.inline
-  def apply(kind: String, protocol: String): SDPMLine = {
+  inline def apply(kind: String, protocol: String): SDPMLine = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDPMLine]
   }
   
-  @scala.inline
-  implicit class SDPMLineMutableBuilder[Self <: SDPMLine] (val x: Self) extends AnyVal {
+  extension [Self <: SDPMLine](x: Self) {
     
-    @scala.inline
-    def setFmt(value: String): Self = StObject.set(x, "fmt", value.asInstanceOf[js.Any])
+    inline def setFmt(value: String): Self = StObject.set(x, "fmt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFmtUndefined: Self = StObject.set(x, "fmt", js.undefined)
+    inline def setFmtUndefined: Self = StObject.set(x, "fmt", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

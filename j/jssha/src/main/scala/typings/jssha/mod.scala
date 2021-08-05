@@ -39,20 +39,16 @@ object mod extends Shortcut {
   }
   object EncodingOptions {
     
-    @scala.inline
-    def apply(): EncodingOptions = {
+    inline def apply(): EncodingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncodingOptions]
     }
     
-    @scala.inline
-    implicit class EncodingOptionsMutableBuilder[Self <: EncodingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EncodingOptions](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     }
   }
   
@@ -115,20 +111,16 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setNumRounds(value: Double): Self = StObject.set(x, "numRounds", value.asInstanceOf[js.Any])
+      inline def setNumRounds(value: Double): Self = StObject.set(x, "numRounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumRoundsUndefined: Self = StObject.set(x, "numRounds", js.undefined)
+      inline def setNumRoundsUndefined: Self = StObject.set(x, "numRounds", js.undefined)
     }
   }
   
@@ -142,32 +134,24 @@ object mod extends Shortcut {
   }
   object OutputFormatOptions {
     
-    @scala.inline
-    def apply(): OutputFormatOptions = {
+    inline def apply(): OutputFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OutputFormatOptions]
     }
     
-    @scala.inline
-    implicit class OutputFormatOptionsMutableBuilder[Self <: OutputFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OutputFormatOptions](x: Self) {
       
-      @scala.inline
-      def setB64Pad(value: String): Self = StObject.set(x, "b64Pad", value.asInstanceOf[js.Any])
+      inline def setB64Pad(value: String): Self = StObject.set(x, "b64Pad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB64PadUndefined: Self = StObject.set(x, "b64Pad", js.undefined)
+      inline def setB64PadUndefined: Self = StObject.set(x, "b64Pad", js.undefined)
       
-      @scala.inline
-      def setOutputUpper(value: Boolean): Self = StObject.set(x, "outputUpper", value.asInstanceOf[js.Any])
+      inline def setOutputUpper(value: Boolean): Self = StObject.set(x, "outputUpper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUpperUndefined: Self = StObject.set(x, "outputUpper", js.undefined)
+      inline def setOutputUpperUndefined: Self = StObject.set(x, "outputUpper", js.undefined)
       
-      @scala.inline
-      def setShakeLen(value: Double): Self = StObject.set(x, "shakeLen", value.asInstanceOf[js.Any])
+      inline def setShakeLen(value: Double): Self = StObject.set(x, "shakeLen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShakeLenUndefined: Self = StObject.set(x, "shakeLen", js.undefined)
+      inline def setShakeLenUndefined: Self = StObject.set(x, "shakeLen", js.undefined)
     }
   }
   
@@ -180,17 +164,13 @@ object mod extends Shortcut {
   trait StringDataFormat extends StObject
   object StringDataFormat {
     
-    @scala.inline
-    def B64: typings.jssha.jsshaStrings.B64 = "B64".asInstanceOf[typings.jssha.jsshaStrings.B64]
+    inline def B64: typings.jssha.jsshaStrings.B64 = "B64".asInstanceOf[typings.jssha.jsshaStrings.B64]
     
-    @scala.inline
-    def BYTES: typings.jssha.jsshaStrings.BYTES = "BYTES".asInstanceOf[typings.jssha.jsshaStrings.BYTES]
+    inline def BYTES: typings.jssha.jsshaStrings.BYTES = "BYTES".asInstanceOf[typings.jssha.jsshaStrings.BYTES]
     
-    @scala.inline
-    def HEX: typings.jssha.jsshaStrings.HEX = "HEX".asInstanceOf[typings.jssha.jsshaStrings.HEX]
+    inline def HEX: typings.jssha.jsshaStrings.HEX = "HEX".asInstanceOf[typings.jssha.jsshaStrings.HEX]
     
-    @scala.inline
-    def TEXT: typings.jssha.jsshaStrings.TEXT = "TEXT".asInstanceOf[typings.jssha.jsshaStrings.TEXT]
+    inline def TEXT: typings.jssha.jsshaStrings.TEXT = "TEXT".asInstanceOf[typings.jssha.jsshaStrings.TEXT]
   }
   
   type _To = js.Object & jsSHA

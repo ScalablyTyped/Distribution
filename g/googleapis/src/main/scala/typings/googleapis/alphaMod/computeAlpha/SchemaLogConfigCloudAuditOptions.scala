@@ -21,25 +21,19 @@ trait SchemaLogConfigCloudAuditOptions extends StObject {
 }
 object SchemaLogConfigCloudAuditOptions {
   
-  @scala.inline
-  def apply(): SchemaLogConfigCloudAuditOptions = {
+  inline def apply(): SchemaLogConfigCloudAuditOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLogConfigCloudAuditOptions]
   }
   
-  @scala.inline
-  implicit class SchemaLogConfigCloudAuditOptionsMutableBuilder[Self <: SchemaLogConfigCloudAuditOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLogConfigCloudAuditOptions](x: Self) {
     
-    @scala.inline
-    def setAuthorizationLoggingOptions(value: SchemaAuthorizationLoggingOptions): Self = StObject.set(x, "authorizationLoggingOptions", value.asInstanceOf[js.Any])
+    inline def setAuthorizationLoggingOptions(value: SchemaAuthorizationLoggingOptions): Self = StObject.set(x, "authorizationLoggingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationLoggingOptionsUndefined: Self = StObject.set(x, "authorizationLoggingOptions", js.undefined)
+    inline def setAuthorizationLoggingOptionsUndefined: Self = StObject.set(x, "authorizationLoggingOptions", js.undefined)
     
-    @scala.inline
-    def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
+    inline def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
+    inline def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
   }
 }

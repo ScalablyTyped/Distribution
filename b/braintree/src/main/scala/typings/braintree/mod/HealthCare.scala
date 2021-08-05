@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HealthCare extends StObject
 object HealthCare {
   
-  @scala.inline
-  def No: typings.braintree.braintreeStrings.No = "No".asInstanceOf[typings.braintree.braintreeStrings.No]
+  inline def No: typings.braintree.braintreeStrings.No = "No".asInstanceOf[typings.braintree.braintreeStrings.No]
   
-  @scala.inline
-  def Unknown: typings.braintree.braintreeStrings.Unknown = "Unknown".asInstanceOf[typings.braintree.braintreeStrings.Unknown]
+  inline def Unknown: typings.braintree.braintreeStrings.Unknown = "Unknown".asInstanceOf[typings.braintree.braintreeStrings.Unknown]
   
-  @scala.inline
-  def Yes: typings.braintree.braintreeStrings.Yes = "Yes".asInstanceOf[typings.braintree.braintreeStrings.Yes]
+  inline def Yes: typings.braintree.braintreeStrings.Yes = "Yes".asInstanceOf[typings.braintree.braintreeStrings.Yes]
 }

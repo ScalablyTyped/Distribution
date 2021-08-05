@@ -48,8 +48,7 @@ trait GetScalingPlanResourceForecastDataRequest extends StObject {
 }
 object GetScalingPlanResourceForecastDataRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndTime: TimestampType,
     ForecastDataType: ForecastDataType,
     ResourceId: XmlString,
@@ -63,31 +62,22 @@ object GetScalingPlanResourceForecastDataRequest {
     __obj.asInstanceOf[GetScalingPlanResourceForecastDataRequest]
   }
   
-  @scala.inline
-  implicit class GetScalingPlanResourceForecastDataRequestMutableBuilder[Self <: GetScalingPlanResourceForecastDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetScalingPlanResourceForecastDataRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastDataType(value: ForecastDataType): Self = StObject.set(x, "ForecastDataType", value.asInstanceOf[js.Any])
+    inline def setForecastDataType(value: ForecastDataType): Self = StObject.set(x, "ForecastDataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: XmlString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: XmlString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
+    inline def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
+    inline def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
+    inline def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

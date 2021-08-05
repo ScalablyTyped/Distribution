@@ -12,23 +12,18 @@ trait ListMetadataQuery extends StObject {
 }
 object ListMetadataQuery {
   
-  @scala.inline
-  def apply(`type`: String): ListMetadataQuery = {
+  inline def apply(`type`: String): ListMetadataQuery = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMetadataQuery]
   }
   
-  @scala.inline
-  implicit class ListMetadataQueryMutableBuilder[Self <: ListMetadataQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ListMetadataQuery](x: Self) {
     
-    @scala.inline
-    def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+    inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

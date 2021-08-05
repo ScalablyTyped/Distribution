@@ -26,34 +26,25 @@ trait LegendMarkerCfg extends StObject {
 }
 object LegendMarkerCfg {
   
-  @scala.inline
-  def apply(): LegendMarkerCfg = {
+  inline def apply(): LegendMarkerCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendMarkerCfg]
   }
   
-  @scala.inline
-  implicit class LegendMarkerCfgMutableBuilder[Self <: LegendMarkerCfg] (val x: Self) extends AnyVal {
+  extension [Self <: LegendMarkerCfg](x: Self) {
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: String | (js.Function3[/* x */ Double, /* y */ Double, /* r */ Double, js.Any])): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String | (js.Function3[/* x */ Double, /* y */ Double, /* r */ Double, js.Any])): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolFunction3(value: (/* x */ Double, /* y */ Double, /* r */ Double) => js.Any): Self = StObject.set(x, "symbol", js.Any.fromFunction3(value))
+    inline def setSymbolFunction3(value: (/* x */ Double, /* y */ Double, /* r */ Double) => js.Any): Self = StObject.set(x, "symbol", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

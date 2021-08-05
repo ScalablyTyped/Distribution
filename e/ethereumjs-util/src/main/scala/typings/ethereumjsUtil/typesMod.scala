@@ -13,11 +13,9 @@ object typesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bnToHex(value: typings.bnJs.mod.^): PrefixedHexString = ^.asInstanceOf[js.Dynamic].applyDynamic("bnToHex")(value.asInstanceOf[js.Any]).asInstanceOf[PrefixedHexString]
+  inline def bnToHex(value: typings.bnJs.mod.^): PrefixedHexString = ^.asInstanceOf[js.Dynamic].applyDynamic("bnToHex")(value.asInstanceOf[js.Any]).asInstanceOf[PrefixedHexString]
   
-  @scala.inline
-  def bnToRlp(value: typings.bnJs.mod.^): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bnToRlp")(value.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def bnToRlp(value: typings.bnJs.mod.^): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bnToRlp")(value.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   type AddressLike = Address | Buffer | String
   
@@ -35,23 +33,18 @@ object typesMod {
   }
   object TransformableToArray {
     
-    @scala.inline
-    def apply(toArray: () => Uint8Array): TransformableToArray = {
+    inline def apply(toArray: () => Uint8Array): TransformableToArray = {
       val __obj = js.Dynamic.literal(toArray = js.Any.fromFunction0(toArray))
       __obj.asInstanceOf[TransformableToArray]
     }
     
-    @scala.inline
-    implicit class TransformableToArrayMutableBuilder[Self <: TransformableToArray] (val x: Self) extends AnyVal {
+    extension [Self <: TransformableToArray](x: Self) {
       
-      @scala.inline
-      def setToArray(value: () => Uint8Array): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => Uint8Array): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
+      inline def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBufferUndefined: Self = StObject.set(x, "toBuffer", js.undefined)
+      inline def setToBufferUndefined: Self = StObject.set(x, "toBuffer", js.undefined)
     }
   }
   
@@ -63,23 +56,18 @@ object typesMod {
   }
   object TransformableToBuffer {
     
-    @scala.inline
-    def apply(toBuffer: () => Buffer): TransformableToBuffer = {
+    inline def apply(toBuffer: () => Buffer): TransformableToBuffer = {
       val __obj = js.Dynamic.literal(toBuffer = js.Any.fromFunction0(toBuffer))
       __obj.asInstanceOf[TransformableToBuffer]
     }
     
-    @scala.inline
-    implicit class TransformableToBufferMutableBuilder[Self <: TransformableToBuffer] (val x: Self) extends AnyVal {
+    extension [Self <: TransformableToBuffer](x: Self) {
       
-      @scala.inline
-      def setToArray(value: () => Uint8Array): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => Uint8Array): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToArrayUndefined: Self = StObject.set(x, "toArray", js.undefined)
+      inline def setToArrayUndefined: Self = StObject.set(x, "toArray", js.undefined)
       
-      @scala.inline
-      def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
+      inline def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
     }
   }
 }

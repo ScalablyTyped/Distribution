@@ -11,8 +11,7 @@ object getTimeoutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTimeout(timeout: TransitionTimeout, appear: Boolean): DefinedTimeout = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeout")(timeout.asInstanceOf[js.Any], appear.asInstanceOf[js.Any])).asInstanceOf[DefinedTimeout]
+  inline def getTimeout(timeout: TransitionTimeout, appear: Boolean): DefinedTimeout = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeout")(timeout.asInstanceOf[js.Any], appear.asInstanceOf[js.Any])).asInstanceOf[DefinedTimeout]
   
   trait DefinedTimeout extends StObject {
     
@@ -24,23 +23,18 @@ object getTimeoutMod {
   }
   object DefinedTimeout {
     
-    @scala.inline
-    def apply(appear: Double, enter: Double, exit: Double): DefinedTimeout = {
+    inline def apply(appear: Double, enter: Double, exit: Double): DefinedTimeout = {
       val __obj = js.Dynamic.literal(appear = appear.asInstanceOf[js.Any], enter = enter.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefinedTimeout]
     }
     
-    @scala.inline
-    implicit class DefinedTimeoutMutableBuilder[Self <: DefinedTimeout] (val x: Self) extends AnyVal {
+    extension [Self <: DefinedTimeout](x: Self) {
       
-      @scala.inline
-      def setAppear(value: Double): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
+      inline def setAppear(value: Double): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnter(value: Double): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: Double): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExit(value: Double): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: Double): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     }
   }
 }

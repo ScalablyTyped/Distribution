@@ -21,41 +21,30 @@ object anon {
   }
   object Description {
     
-    @scala.inline
-    def apply(groupName: String, routes: js.Array[Spec]): Description = {
+    inline def apply(groupName: String, routes: js.Array[Spec]): Description = {
       val __obj = js.Dynamic.literal(groupName = groupName.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Description]
     }
     
-    @scala.inline
-    implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+    extension [Self <: Description](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExtendedDescription(value: String): Self = StObject.set(x, "extendedDescription", value.asInstanceOf[js.Any])
+      inline def setExtendedDescription(value: String): Self = StObject.set(x, "extendedDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedDescriptionUndefined: Self = StObject.set(x, "extendedDescription", js.undefined)
+      inline def setExtendedDescriptionUndefined: Self = StObject.set(x, "extendedDescription", js.undefined)
       
-      @scala.inline
-      def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+      inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setRoutes(value: js.Array[Spec]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[Spec]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesVarargs(value: Spec*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: Spec*): Self = StObject.set(x, "routes", js.Array(value :_*))
     }
   }
 }

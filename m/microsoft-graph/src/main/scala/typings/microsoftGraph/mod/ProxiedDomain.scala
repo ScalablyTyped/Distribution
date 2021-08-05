@@ -14,28 +14,21 @@ trait ProxiedDomain extends StObject {
 }
 object ProxiedDomain {
   
-  @scala.inline
-  def apply(): ProxiedDomain = {
+  inline def apply(): ProxiedDomain = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProxiedDomain]
   }
   
-  @scala.inline
-  implicit class ProxiedDomainMutableBuilder[Self <: ProxiedDomain] (val x: Self) extends AnyVal {
+  extension [Self <: ProxiedDomain](x: Self) {
     
-    @scala.inline
-    def setIpAddressOrFQDN(value: String): Self = StObject.set(x, "ipAddressOrFQDN", value.asInstanceOf[js.Any])
+    inline def setIpAddressOrFQDN(value: String): Self = StObject.set(x, "ipAddressOrFQDN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressOrFQDNUndefined: Self = StObject.set(x, "ipAddressOrFQDN", js.undefined)
+    inline def setIpAddressOrFQDNUndefined: Self = StObject.set(x, "ipAddressOrFQDN", js.undefined)
     
-    @scala.inline
-    def setProxy(value: NullableOption[String]): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: NullableOption[String]): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyNull: Self = StObject.set(x, "proxy", null)
+    inline def setProxyNull: Self = StObject.set(x, "proxy", null)
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
   }
 }

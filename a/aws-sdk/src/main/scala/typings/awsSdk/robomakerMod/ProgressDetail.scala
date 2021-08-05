@@ -28,37 +28,27 @@ trait ProgressDetail extends StObject {
 }
 object ProgressDetail {
   
-  @scala.inline
-  def apply(): ProgressDetail = {
+  inline def apply(): ProgressDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProgressDetail]
   }
   
-  @scala.inline
-  implicit class ProgressDetailMutableBuilder[Self <: ProgressDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressDetail](x: Self) {
     
-    @scala.inline
-    def setCurrentProgress(value: RobotDeploymentStep): Self = StObject.set(x, "currentProgress", value.asInstanceOf[js.Any])
+    inline def setCurrentProgress(value: RobotDeploymentStep): Self = StObject.set(x, "currentProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentProgressUndefined: Self = StObject.set(x, "currentProgress", js.undefined)
+    inline def setCurrentProgressUndefined: Self = StObject.set(x, "currentProgress", js.undefined)
     
-    @scala.inline
-    def setEstimatedTimeRemainingSeconds(value: GenericInteger): Self = StObject.set(x, "estimatedTimeRemainingSeconds", value.asInstanceOf[js.Any])
+    inline def setEstimatedTimeRemainingSeconds(value: GenericInteger): Self = StObject.set(x, "estimatedTimeRemainingSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedTimeRemainingSecondsUndefined: Self = StObject.set(x, "estimatedTimeRemainingSeconds", js.undefined)
+    inline def setEstimatedTimeRemainingSecondsUndefined: Self = StObject.set(x, "estimatedTimeRemainingSeconds", js.undefined)
     
-    @scala.inline
-    def setPercentDone(value: PercentDone): Self = StObject.set(x, "percentDone", value.asInstanceOf[js.Any])
+    inline def setPercentDone(value: PercentDone): Self = StObject.set(x, "percentDone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentDoneUndefined: Self = StObject.set(x, "percentDone", js.undefined)
+    inline def setPercentDoneUndefined: Self = StObject.set(x, "percentDone", js.undefined)
     
-    @scala.inline
-    def setTargetResource(value: GenericString): Self = StObject.set(x, "targetResource", value.asInstanceOf[js.Any])
+    inline def setTargetResource(value: GenericString): Self = StObject.set(x, "targetResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetResourceUndefined: Self = StObject.set(x, "targetResource", js.undefined)
+    inline def setTargetResourceUndefined: Self = StObject.set(x, "targetResource", js.undefined)
   }
 }

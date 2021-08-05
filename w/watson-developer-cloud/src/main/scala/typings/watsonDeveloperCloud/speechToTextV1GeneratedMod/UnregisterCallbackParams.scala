@@ -16,28 +16,21 @@ trait UnregisterCallbackParams extends StObject {
 }
 object UnregisterCallbackParams {
   
-  @scala.inline
-  def apply(callback_url: String): UnregisterCallbackParams = {
+  inline def apply(callback_url: String): UnregisterCallbackParams = {
     val __obj = js.Dynamic.literal(callback_url = callback_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnregisterCallbackParams]
   }
   
-  @scala.inline
-  implicit class UnregisterCallbackParamsMutableBuilder[Self <: UnregisterCallbackParams] (val x: Self) extends AnyVal {
+  extension [Self <: UnregisterCallbackParams](x: Self) {
     
-    @scala.inline
-    def setCallback_url(value: String): Self = StObject.set(x, "callback_url", value.asInstanceOf[js.Any])
+    inline def setCallback_url(value: String): Self = StObject.set(x, "callback_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

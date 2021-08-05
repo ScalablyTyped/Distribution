@@ -28,37 +28,27 @@ trait GroupSummary extends StObject {
 }
 object GroupSummary {
   
-  @scala.inline
-  def apply(): GroupSummary = {
+  inline def apply(): GroupSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupSummary]
   }
   
-  @scala.inline
-  implicit class GroupSummaryMutableBuilder[Self <: GroupSummary] (val x: Self) extends AnyVal {
+  extension [Self <: GroupSummary](x: Self) {
     
-    @scala.inline
-    def setFilterExpression(value: String): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
+    inline def setFilterExpression(value: String): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterExpressionUndefined: Self = StObject.set(x, "FilterExpression", js.undefined)
+    inline def setFilterExpressionUndefined: Self = StObject.set(x, "FilterExpression", js.undefined)
     
-    @scala.inline
-    def setGroupARN(value: String): Self = StObject.set(x, "GroupARN", value.asInstanceOf[js.Any])
+    inline def setGroupARN(value: String): Self = StObject.set(x, "GroupARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupARNUndefined: Self = StObject.set(x, "GroupARN", js.undefined)
+    inline def setGroupARNUndefined: Self = StObject.set(x, "GroupARN", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setInsightsConfiguration(value: InsightsConfiguration): Self = StObject.set(x, "InsightsConfiguration", value.asInstanceOf[js.Any])
+    inline def setInsightsConfiguration(value: InsightsConfiguration): Self = StObject.set(x, "InsightsConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsightsConfigurationUndefined: Self = StObject.set(x, "InsightsConfiguration", js.undefined)
+    inline def setInsightsConfigurationUndefined: Self = StObject.set(x, "InsightsConfiguration", js.undefined)
   }
 }

@@ -27,6 +27,6 @@ object popoverDemoBasicMod {
     
     def onSelect(value: js.Any): Unit = js.native
     
-    var renderList: js.Any = js.native
+    /* private */ var renderList: js.Any = js.native
   }
 }

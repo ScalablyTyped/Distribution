@@ -19,7 +19,7 @@ object toolbarMod {
     
     def childrenStyle(ev: CustomEvent[StyleEventDetail]): Unit = js.native
     
-    var childrenStyles: js.Any = js.native
+    /* private */ var childrenStyles: js.Any = js.native
     
     /**
       * The color to use from your application's color palette.

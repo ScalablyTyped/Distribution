@@ -13,19 +13,15 @@ trait SignalParameters extends StObject {
 }
 object SignalParameters {
   
-  @scala.inline
-  def apply(channel: String, message: js.Any): SignalParameters = {
+  inline def apply(channel: String, message: js.Any): SignalParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignalParameters]
   }
   
-  @scala.inline
-  implicit class SignalParametersMutableBuilder[Self <: SignalParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SignalParameters](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

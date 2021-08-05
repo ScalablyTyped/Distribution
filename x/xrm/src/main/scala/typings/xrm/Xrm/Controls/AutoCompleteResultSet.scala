@@ -21,25 +21,19 @@ trait AutoCompleteResultSet extends StObject {
 }
 object AutoCompleteResultSet {
   
-  @scala.inline
-  def apply(results: js.Array[AutoCompleteResult]): AutoCompleteResultSet = {
+  inline def apply(results: js.Array[AutoCompleteResult]): AutoCompleteResultSet = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCompleteResultSet]
   }
   
-  @scala.inline
-  implicit class AutoCompleteResultSetMutableBuilder[Self <: AutoCompleteResultSet] (val x: Self) extends AnyVal {
+  extension [Self <: AutoCompleteResultSet](x: Self) {
     
-    @scala.inline
-    def setCommands(value: AutoCompleteCommand): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: AutoCompleteCommand): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
+    inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[AutoCompleteResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[AutoCompleteResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: AutoCompleteResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: AutoCompleteResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

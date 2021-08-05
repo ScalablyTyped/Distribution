@@ -13,16 +13,12 @@ object descriptionFileUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cdUp(directory: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cdUp")(directory.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def cdUp(directory: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cdUp")(directory.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def getField(content: Null, field: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getField")(content.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def getField(content: Dictionary[js.Any], field: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getField")(content.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getField(content: Null, field: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getField")(content.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getField(content: Dictionary[js.Any], field: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getField")(content.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def loadDescriptionFile(
+  inline def loadDescriptionFile(
     resolver: typings.enhancedResolve.resolverMod.^,
     directory: String,
     filenames: js.Array[String],
@@ -41,26 +37,20 @@ object descriptionFileUtilsMod {
   }
   object DescriptionFileData {
     
-    @scala.inline
-    def apply(): DescriptionFileData = {
+    inline def apply(): DescriptionFileData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescriptionFileData]
     }
     
-    @scala.inline
-    implicit class DescriptionFileDataMutableBuilder[Self <: DescriptionFileData] (val x: Self) extends AnyVal {
+    extension [Self <: DescriptionFileData](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: Dictionary[String | Boolean]): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: Dictionary[String | Boolean]): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+      inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
       
-      @scala.inline
-      def setConcord(value: Concord): Self = StObject.set(x, "concord", value.asInstanceOf[js.Any])
+      inline def setConcord(value: Concord): Self = StObject.set(x, "concord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcordUndefined: Self = StObject.set(x, "concord", js.undefined)
+      inline def setConcordUndefined: Self = StObject.set(x, "concord", js.undefined)
     }
   }
   
@@ -74,23 +64,18 @@ object descriptionFileUtilsMod {
   }
   object LoadDescriptionFileResult {
     
-    @scala.inline
-    def apply(content: DescriptionFileData, directory: String, path: String): LoadDescriptionFileResult = {
+    inline def apply(content: DescriptionFileData, directory: String, path: String): LoadDescriptionFileResult = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], directory = directory.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadDescriptionFileResult]
     }
     
-    @scala.inline
-    implicit class LoadDescriptionFileResultMutableBuilder[Self <: LoadDescriptionFileResult] (val x: Self) extends AnyVal {
+    extension [Self <: LoadDescriptionFileResult](x: Self) {
       
-      @scala.inline
-      def setContent(value: DescriptionFileData): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: DescriptionFileData): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

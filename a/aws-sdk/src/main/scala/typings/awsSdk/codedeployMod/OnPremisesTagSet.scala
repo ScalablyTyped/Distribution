@@ -13,22 +13,17 @@ trait OnPremisesTagSet extends StObject {
 }
 object OnPremisesTagSet {
   
-  @scala.inline
-  def apply(): OnPremisesTagSet = {
+  inline def apply(): OnPremisesTagSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnPremisesTagSet]
   }
   
-  @scala.inline
-  implicit class OnPremisesTagSetMutableBuilder[Self <: OnPremisesTagSet] (val x: Self) extends AnyVal {
+  extension [Self <: OnPremisesTagSet](x: Self) {
     
-    @scala.inline
-    def setOnPremisesTagSetList(value: OnPremisesTagSetList): Self = StObject.set(x, "onPremisesTagSetList", value.asInstanceOf[js.Any])
+    inline def setOnPremisesTagSetList(value: OnPremisesTagSetList): Self = StObject.set(x, "onPremisesTagSetList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPremisesTagSetListUndefined: Self = StObject.set(x, "onPremisesTagSetList", js.undefined)
+    inline def setOnPremisesTagSetListUndefined: Self = StObject.set(x, "onPremisesTagSetList", js.undefined)
     
-    @scala.inline
-    def setOnPremisesTagSetListVarargs(value: TagFilterList*): Self = StObject.set(x, "onPremisesTagSetList", js.Array(value :_*))
+    inline def setOnPremisesTagSetListVarargs(value: TagFilterList*): Self = StObject.set(x, "onPremisesTagSetList", js.Array(value :_*))
   }
 }

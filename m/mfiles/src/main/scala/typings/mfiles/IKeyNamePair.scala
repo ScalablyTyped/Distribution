@@ -14,22 +14,17 @@ trait IKeyNamePair extends StObject {
 }
 object IKeyNamePair {
   
-  @scala.inline
-  def apply(Clone: () => IKeyNamePair, Key: Double, Name: String): IKeyNamePair = {
+  inline def apply(Clone: () => IKeyNamePair, Key: Double, Name: String): IKeyNamePair = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Key = Key.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeyNamePair]
   }
   
-  @scala.inline
-  implicit class IKeyNamePairMutableBuilder[Self <: IKeyNamePair] (val x: Self) extends AnyVal {
+  extension [Self <: IKeyNamePair](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IKeyNamePair): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IKeyNamePair): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKey(value: Double): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Double): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

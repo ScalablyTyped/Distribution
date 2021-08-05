@@ -70,8 +70,7 @@ object mod {
   }
   object Expander {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       collapse: () => Unit,
       collapseOnClickOut: Boolean,
       collapseOnFocusOut: Boolean,
@@ -87,38 +86,27 @@ object mod {
       __obj.asInstanceOf[Expander]
     }
     
-    @scala.inline
-    implicit class ExpanderMutableBuilder[Self <: Expander] (val x: Self) extends AnyVal {
+    extension [Self <: Expander](x: Self) {
       
-      @scala.inline
-      def setCollapse(value: () => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
+      inline def setCollapse(value: () => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCollapseOnClickOut(value: Boolean): Self = StObject.set(x, "collapseOnClickOut", value.asInstanceOf[js.Any])
+      inline def setCollapseOnClickOut(value: Boolean): Self = StObject.set(x, "collapseOnClickOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseOnFocusOut(value: Boolean): Self = StObject.set(x, "collapseOnFocusOut", value.asInstanceOf[js.Any])
+      inline def setCollapseOnFocusOut(value: Boolean): Self = StObject.set(x, "collapseOnFocusOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseOnMouseOut(value: Boolean): Self = StObject.set(x, "collapseOnMouseOut", value.asInstanceOf[js.Any])
+      inline def setCollapseOnMouseOut(value: Boolean): Self = StObject.set(x, "collapseOnMouseOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpand(value: Boolean => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+      inline def setExpand(value: Boolean => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExpandOnClick(value: Boolean): Self = StObject.set(x, "expandOnClick", value.asInstanceOf[js.Any])
+      inline def setExpandOnClick(value: Boolean): Self = StObject.set(x, "expandOnClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandOnFocus(value: Boolean): Self = StObject.set(x, "expandOnFocus", value.asInstanceOf[js.Any])
+      inline def setExpandOnFocus(value: Boolean): Self = StObject.set(x, "expandOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandOnHover(value: Boolean): Self = StObject.set(x, "expandOnHover", value.asInstanceOf[js.Any])
+      inline def setExpandOnHover(value: Boolean): Self = StObject.set(x, "expandOnHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpanded(value: () => Boolean): Self = StObject.set(x, "isExpanded", js.Any.fromFunction0(value))
+      inline def setIsExpanded(value: () => Boolean): Self = StObject.set(x, "isExpanded", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     }
   }
   
@@ -150,89 +138,62 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAutoCollapse(value: Boolean): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
+      inline def setAutoCollapse(value: Boolean): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCollapseUndefined: Self = StObject.set(x, "autoCollapse", js.undefined)
+      inline def setAutoCollapseUndefined: Self = StObject.set(x, "autoCollapse", js.undefined)
       
-      @scala.inline
-      def setCollapseOnClickOut(value: Boolean): Self = StObject.set(x, "collapseOnClickOut", value.asInstanceOf[js.Any])
+      inline def setCollapseOnClickOut(value: Boolean): Self = StObject.set(x, "collapseOnClickOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseOnClickOutUndefined: Self = StObject.set(x, "collapseOnClickOut", js.undefined)
+      inline def setCollapseOnClickOutUndefined: Self = StObject.set(x, "collapseOnClickOut", js.undefined)
       
-      @scala.inline
-      def setCollapseOnFocusOut(value: Boolean): Self = StObject.set(x, "collapseOnFocusOut", value.asInstanceOf[js.Any])
+      inline def setCollapseOnFocusOut(value: Boolean): Self = StObject.set(x, "collapseOnFocusOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseOnFocusOutUndefined: Self = StObject.set(x, "collapseOnFocusOut", js.undefined)
+      inline def setCollapseOnFocusOutUndefined: Self = StObject.set(x, "collapseOnFocusOut", js.undefined)
       
-      @scala.inline
-      def setCollapseOnMouseOut(value: Boolean): Self = StObject.set(x, "collapseOnMouseOut", value.asInstanceOf[js.Any])
+      inline def setCollapseOnMouseOut(value: Boolean): Self = StObject.set(x, "collapseOnMouseOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseOnMouseOutUndefined: Self = StObject.set(x, "collapseOnMouseOut", js.undefined)
+      inline def setCollapseOnMouseOutUndefined: Self = StObject.set(x, "collapseOnMouseOut", js.undefined)
       
-      @scala.inline
-      def setContentSelector(value: String): Self = StObject.set(x, "contentSelector", value.asInstanceOf[js.Any])
+      inline def setContentSelector(value: String): Self = StObject.set(x, "contentSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentSelectorUndefined: Self = StObject.set(x, "contentSelector", js.undefined)
+      inline def setContentSelectorUndefined: Self = StObject.set(x, "contentSelector", js.undefined)
       
-      @scala.inline
-      def setExpandOnClick(value: Boolean): Self = StObject.set(x, "expandOnClick", value.asInstanceOf[js.Any])
+      inline def setExpandOnClick(value: Boolean): Self = StObject.set(x, "expandOnClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandOnClickUndefined: Self = StObject.set(x, "expandOnClick", js.undefined)
+      inline def setExpandOnClickUndefined: Self = StObject.set(x, "expandOnClick", js.undefined)
       
-      @scala.inline
-      def setExpandOnFocus(value: Boolean): Self = StObject.set(x, "expandOnFocus", value.asInstanceOf[js.Any])
+      inline def setExpandOnFocus(value: Boolean): Self = StObject.set(x, "expandOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandOnFocusUndefined: Self = StObject.set(x, "expandOnFocus", js.undefined)
+      inline def setExpandOnFocusUndefined: Self = StObject.set(x, "expandOnFocus", js.undefined)
       
-      @scala.inline
-      def setExpandOnHover(value: Boolean): Self = StObject.set(x, "expandOnHover", value.asInstanceOf[js.Any])
+      inline def setExpandOnHover(value: Boolean): Self = StObject.set(x, "expandOnHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandOnHoverUndefined: Self = StObject.set(x, "expandOnHover", js.undefined)
+      inline def setExpandOnHoverUndefined: Self = StObject.set(x, "expandOnHover", js.undefined)
       
-      @scala.inline
-      def setExpandedClass(value: String): Self = StObject.set(x, "expandedClass", value.asInstanceOf[js.Any])
+      inline def setExpandedClass(value: String): Self = StObject.set(x, "expandedClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedClassUndefined: Self = StObject.set(x, "expandedClass", js.undefined)
+      inline def setExpandedClassUndefined: Self = StObject.set(x, "expandedClass", js.undefined)
       
-      @scala.inline
-      def setFocusManagement(value: String): Self = StObject.set(x, "focusManagement", value.asInstanceOf[js.Any])
+      inline def setFocusManagement(value: String): Self = StObject.set(x, "focusManagement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusManagementNull: Self = StObject.set(x, "focusManagement", null)
+      inline def setFocusManagementNull: Self = StObject.set(x, "focusManagement", null)
       
-      @scala.inline
-      def setFocusManagementUndefined: Self = StObject.set(x, "focusManagement", js.undefined)
+      inline def setFocusManagementUndefined: Self = StObject.set(x, "focusManagement", js.undefined)
       
-      @scala.inline
-      def setHostSelector(value: String): Self = StObject.set(x, "hostSelector", value.asInstanceOf[js.Any])
+      inline def setHostSelector(value: String): Self = StObject.set(x, "hostSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostSelectorUndefined: Self = StObject.set(x, "hostSelector", js.undefined)
+      inline def setHostSelectorUndefined: Self = StObject.set(x, "hostSelector", js.undefined)
       
-      @scala.inline
-      def setSimulateSpacebarClick(value: Boolean): Self = StObject.set(x, "simulateSpacebarClick", value.asInstanceOf[js.Any])
+      inline def setSimulateSpacebarClick(value: Boolean): Self = StObject.set(x, "simulateSpacebarClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimulateSpacebarClickUndefined: Self = StObject.set(x, "simulateSpacebarClick", js.undefined)
+      inline def setSimulateSpacebarClickUndefined: Self = StObject.set(x, "simulateSpacebarClick", js.undefined)
     }
   }
 }

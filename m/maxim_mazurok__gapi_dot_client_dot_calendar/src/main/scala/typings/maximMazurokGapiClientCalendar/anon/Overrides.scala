@@ -18,28 +18,21 @@ trait Overrides extends StObject {
 }
 object Overrides {
   
-  @scala.inline
-  def apply(): Overrides = {
+  inline def apply(): Overrides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Overrides]
   }
   
-  @scala.inline
-  implicit class OverridesMutableBuilder[Self <: Overrides] (val x: Self) extends AnyVal {
+  extension [Self <: Overrides](x: Self) {
     
-    @scala.inline
-    def setOverrides(value: js.Array[EventReminder]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: js.Array[EventReminder]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    @scala.inline
-    def setOverridesVarargs(value: EventReminder*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: EventReminder*): Self = StObject.set(x, "overrides", js.Array(value :_*))
     
-    @scala.inline
-    def setUseDefault(value: Boolean): Self = StObject.set(x, "useDefault", value.asInstanceOf[js.Any])
+    inline def setUseDefault(value: Boolean): Self = StObject.set(x, "useDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDefaultUndefined: Self = StObject.set(x, "useDefault", js.undefined)
+    inline def setUseDefaultUndefined: Self = StObject.set(x, "useDefault", js.undefined)
   }
 }

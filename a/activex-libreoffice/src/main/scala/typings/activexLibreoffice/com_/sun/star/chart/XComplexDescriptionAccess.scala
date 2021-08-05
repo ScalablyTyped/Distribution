@@ -55,8 +55,7 @@ trait XComplexDescriptionAccess
 }
 object XComplexDescriptionAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnDescriptions: SafeArray[String],
     ComplexColumnDescriptions: SafeArray[SafeArray[String]],
     ComplexRowDescriptions: SafeArray[SafeArray[String]],
@@ -85,25 +84,18 @@ object XComplexDescriptionAccess {
     __obj.asInstanceOf[XComplexDescriptionAccess]
   }
   
-  @scala.inline
-  implicit class XComplexDescriptionAccessMutableBuilder[Self <: XComplexDescriptionAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XComplexDescriptionAccess](x: Self) {
     
-    @scala.inline
-    def setComplexColumnDescriptions(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "ComplexColumnDescriptions", value.asInstanceOf[js.Any])
+    inline def setComplexColumnDescriptions(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "ComplexColumnDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplexRowDescriptions(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "ComplexRowDescriptions", value.asInstanceOf[js.Any])
+    inline def setComplexRowDescriptions(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "ComplexRowDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetComplexColumnDescriptions(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getComplexColumnDescriptions", js.Any.fromFunction0(value))
+    inline def setGetComplexColumnDescriptions(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getComplexColumnDescriptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetComplexRowDescriptions(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getComplexRowDescriptions", js.Any.fromFunction0(value))
+    inline def setGetComplexRowDescriptions(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getComplexRowDescriptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetComplexColumnDescriptions(value: SeqEquiv[SeqEquiv[String]] => Unit): Self = StObject.set(x, "setComplexColumnDescriptions", js.Any.fromFunction1(value))
+    inline def setSetComplexColumnDescriptions(value: SeqEquiv[SeqEquiv[String]] => Unit): Self = StObject.set(x, "setComplexColumnDescriptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetComplexRowDescriptions(value: SeqEquiv[SeqEquiv[String]] => Unit): Self = StObject.set(x, "setComplexRowDescriptions", js.Any.fromFunction1(value))
+    inline def setSetComplexRowDescriptions(value: SeqEquiv[SeqEquiv[String]] => Unit): Self = StObject.set(x, "setComplexRowDescriptions", js.Any.fromFunction1(value))
   }
 }

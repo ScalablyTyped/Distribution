@@ -29,8 +29,7 @@ trait XContentEnumerationAccess
 }
 object XContentEnumerationAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableServiceNames: SafeArray[String],
     acquire: () => Unit,
     createContentEnumeration: String => XEnumeration,
@@ -42,16 +41,12 @@ object XContentEnumerationAccess {
     __obj.asInstanceOf[XContentEnumerationAccess]
   }
   
-  @scala.inline
-  implicit class XContentEnumerationAccessMutableBuilder[Self <: XContentEnumerationAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XContentEnumerationAccess](x: Self) {
     
-    @scala.inline
-    def setAvailableServiceNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableServiceNames", value.asInstanceOf[js.Any])
+    inline def setAvailableServiceNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableServiceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateContentEnumeration(value: String => XEnumeration): Self = StObject.set(x, "createContentEnumeration", js.Any.fromFunction1(value))
+    inline def setCreateContentEnumeration(value: String => XEnumeration): Self = StObject.set(x, "createContentEnumeration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAvailableServiceNames(value: () => SafeArray[String]): Self = StObject.set(x, "getAvailableServiceNames", js.Any.fromFunction0(value))
+    inline def setGetAvailableServiceNames(value: () => SafeArray[String]): Self = StObject.set(x, "getAvailableServiceNames", js.Any.fromFunction0(value))
   }
 }

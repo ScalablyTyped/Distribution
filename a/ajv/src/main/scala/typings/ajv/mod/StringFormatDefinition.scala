@@ -19,37 +19,27 @@ trait StringFormatDefinition
 }
 object StringFormatDefinition {
   
-  @scala.inline
-  def apply(validate: FormatValidator): StringFormatDefinition = {
+  inline def apply(validate: FormatValidator): StringFormatDefinition = {
     val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringFormatDefinition]
   }
   
-  @scala.inline
-  implicit class StringFormatDefinitionMutableBuilder[Self <: StringFormatDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: StringFormatDefinition](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    @scala.inline
-    def setCompare(value: (/* data1 */ String, /* data2 */ String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+    inline def setCompare(value: (/* data1 */ String, /* data2 */ String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
+    inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
-    @scala.inline
-    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValidate(value: FormatValidator): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: FormatValidator): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateFunction1(value: /* data */ String => Boolean | js.Thenable[js.Any]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidateFunction1(value: /* data */ String => Boolean | js.Thenable[js.Any]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
   }
 }

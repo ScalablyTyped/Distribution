@@ -12,19 +12,15 @@ trait ScrollTop extends StObject {
 }
 object ScrollTop {
   
-  @scala.inline
-  def apply(duration: Double, scrollTop: Double): ScrollTop = {
+  inline def apply(duration: Double, scrollTop: Double): ScrollTop = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollTop]
   }
   
-  @scala.inline
-  implicit class ScrollTopMutableBuilder[Self <: ScrollTop] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollTop](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
   }
 }

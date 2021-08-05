@@ -16,8 +16,7 @@ trait ValidationErrorsCollection extends StObject {
 }
 object ValidationErrorsCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deepErrors: () => js.Array[ValidationError],
     `for`: String => ValidationErrorsCollection,
     forIndex: Double => ValidationErrorsCollection,
@@ -28,19 +27,14 @@ object ValidationErrorsCollection {
     __obj.asInstanceOf[ValidationErrorsCollection]
   }
   
-  @scala.inline
-  implicit class ValidationErrorsCollectionMutableBuilder[Self <: ValidationErrorsCollection] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationErrorsCollection](x: Self) {
     
-    @scala.inline
-    def setDeepErrors(value: () => js.Array[ValidationError]): Self = StObject.set(x, "deepErrors", js.Any.fromFunction0(value))
+    inline def setDeepErrors(value: () => js.Array[ValidationError]): Self = StObject.set(x, "deepErrors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFor(value: String => ValidationErrorsCollection): Self = StObject.set(x, "for", js.Any.fromFunction1(value))
+    inline def setFor(value: String => ValidationErrorsCollection): Self = StObject.set(x, "for", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForIndex(value: Double => ValidationErrorsCollection): Self = StObject.set(x, "forIndex", js.Any.fromFunction1(value))
+    inline def setForIndex(value: Double => ValidationErrorsCollection): Self = StObject.set(x, "forIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOn(value: String => ValidationError): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
+    inline def setOn(value: String => ValidationError): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
   }
 }

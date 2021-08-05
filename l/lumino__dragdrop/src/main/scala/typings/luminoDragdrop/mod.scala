@@ -27,82 +27,82 @@ object mod {
     /**
       * Add the document event listeners for the drag object.
       */
-    var _addListeners: js.Any = js.native
+    /* private */ var _addListeners: js.Any = js.native
     
     /**
       * Attach the drag image element at the specified location.
       *
       * This is a no-op if there is no drag image element.
       */
-    var _attachDragImage: js.Any = js.native
+    /* private */ var _attachDragImage: js.Any = js.native
     
-    var _currentElement: js.Any = js.native
+    /* private */ var _currentElement: js.Any = js.native
     
-    var _currentTarget: js.Any = js.native
+    /* private */ var _currentTarget: js.Any = js.native
     
     /**
       * Detach the drag image element from the DOM.
       *
       * This is a no-op if there is no drag image element.
       */
-    var _detachDragImage: js.Any = js.native
+    /* private */ var _detachDragImage: js.Any = js.native
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
-    var _dropAction: js.Any = js.native
+    /* private */ var _dropAction: js.Any = js.native
     
     /**
       * Handle the `'keydown'` event for the drag object.
       */
-    var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: js.Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the drag object.
       */
-    var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: js.Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the drag object.
       */
-    var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: js.Any = js.native
     
     /**
       * Finalize the drag operation and resolve the drag promise.
       */
-    var _finalize: js.Any = js.native
+    /* private */ var _finalize: js.Any = js.native
     
     /**
       * The scroll loop handler function.
       */
-    var _onScrollFrame: js.Any = js.native
+    /* private */ var _onScrollFrame: js.Any = js.native
     
-    var _override: js.Any = js.native
+    /* private */ var _override: js.Any = js.native
     
-    var _promise: js.Any = js.native
+    /* private */ var _promise: js.Any = js.native
     
     /**
       * Remove the document event listeners for the drag object.
       */
-    var _removeListeners: js.Any = js.native
+    /* private */ var _removeListeners: js.Any = js.native
     
-    var _resolve: js.Any = js.native
+    /* private */ var _resolve: js.Any = js.native
     
-    var _scrollTarget: js.Any = js.native
+    /* private */ var _scrollTarget: js.Any = js.native
     
     /**
       * Set the internal drop action state and update the drag cursor.
       */
-    var _setDropAction: js.Any = js.native
+    /* private */ var _setDropAction: js.Any = js.native
     
     /**
       * Update the current target node using the given mouse event.
       */
-    var _updateCurrentTarget: js.Any = js.native
+    /* private */ var _updateCurrentTarget: js.Any = js.native
     
     /**
       * Update the drag scroll element under the mouse.
       */
-    var _updateDragScroll: js.Any = js.native
+    /* private */ var _updateDragScroll: js.Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -226,8 +226,7 @@ object mod {
       * override.dispose();
       * ```
       */
-    @scala.inline
-    def overrideCursor(cursor: String): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideCursor")(cursor.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+    inline def overrideCursor(cursor: String): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideCursor")(cursor.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
     
     /**
       * An options object for initializing a `Drag` object.
@@ -296,41 +295,30 @@ object mod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(mimeData: MimeData): IOptions = {
+      inline def apply(mimeData: MimeData): IOptions = {
         val __obj = js.Dynamic.literal(mimeData = mimeData.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setDragImage(value: HTMLElement): Self = StObject.set(x, "dragImage", value.asInstanceOf[js.Any])
+        inline def setDragImage(value: HTMLElement): Self = StObject.set(x, "dragImage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDragImageUndefined: Self = StObject.set(x, "dragImage", js.undefined)
+        inline def setDragImageUndefined: Self = StObject.set(x, "dragImage", js.undefined)
         
-        @scala.inline
-        def setMimeData(value: MimeData): Self = StObject.set(x, "mimeData", value.asInstanceOf[js.Any])
+        inline def setMimeData(value: MimeData): Self = StObject.set(x, "mimeData", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProposedAction(value: DropAction): Self = StObject.set(x, "proposedAction", value.asInstanceOf[js.Any])
+        inline def setProposedAction(value: DropAction): Self = StObject.set(x, "proposedAction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProposedActionUndefined: Self = StObject.set(x, "proposedAction", js.undefined)
+        inline def setProposedActionUndefined: Self = StObject.set(x, "proposedAction", js.undefined)
         
-        @scala.inline
-        def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+        inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
         
-        @scala.inline
-        def setSupportedActions(value: SupportedActions): Self = StObject.set(x, "supportedActions", value.asInstanceOf[js.Any])
+        inline def setSupportedActions(value: SupportedActions): Self = StObject.set(x, "supportedActions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSupportedActionsUndefined: Self = StObject.set(x, "supportedActions", js.undefined)
+        inline def setSupportedActionsUndefined: Self = StObject.set(x, "supportedActions", js.undefined)
       }
     }
   }
@@ -344,17 +332,13 @@ object mod {
   trait DropAction extends StObject
   object DropAction {
     
-    @scala.inline
-    def copy: typings.luminoDragdrop.luminoDragdropStrings.copy = "copy".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.copy]
+    inline def copy: typings.luminoDragdrop.luminoDragdropStrings.copy = "copy".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.copy]
     
-    @scala.inline
-    def link: typings.luminoDragdrop.luminoDragdropStrings.link = "link".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.link]
+    inline def link: typings.luminoDragdrop.luminoDragdropStrings.link = "link".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.link]
     
-    @scala.inline
-    def move: typings.luminoDragdrop.luminoDragdropStrings.move = "move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.move]
+    inline def move: typings.luminoDragdrop.luminoDragdropStrings.move = "move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.move]
     
-    @scala.inline
-    def none: typings.luminoDragdrop.luminoDragdropStrings.none = "none".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.none]
+    inline def none: typings.luminoDragdrop.luminoDragdropStrings.none = "none".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.none]
   }
   
   @js.native
@@ -428,28 +412,20 @@ object mod {
   trait SupportedActions extends StObject
   object SupportedActions {
     
-    @scala.inline
-    def all: typings.luminoDragdrop.luminoDragdropStrings.all = "all".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.all]
+    inline def all: typings.luminoDragdrop.luminoDragdropStrings.all = "all".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.all]
     
-    @scala.inline
-    def copy: typings.luminoDragdrop.luminoDragdropStrings.copy = "copy".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.copy]
+    inline def copy: typings.luminoDragdrop.luminoDragdropStrings.copy = "copy".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.copy]
     
-    @scala.inline
-    def `copy-link`: typings.luminoDragdrop.luminoDragdropStrings.`copy-link` = "copy-link".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.`copy-link`]
+    inline def `copy-link`: typings.luminoDragdrop.luminoDragdropStrings.`copy-link` = "copy-link".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.`copy-link`]
     
-    @scala.inline
-    def `copy-move`: typings.luminoDragdrop.luminoDragdropStrings.`copy-move` = "copy-move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.`copy-move`]
+    inline def `copy-move`: typings.luminoDragdrop.luminoDragdropStrings.`copy-move` = "copy-move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.`copy-move`]
     
-    @scala.inline
-    def link: typings.luminoDragdrop.luminoDragdropStrings.link = "link".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.link]
+    inline def link: typings.luminoDragdrop.luminoDragdropStrings.link = "link".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.link]
     
-    @scala.inline
-    def `link-move`: typings.luminoDragdrop.luminoDragdropStrings.`link-move` = "link-move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.`link-move`]
+    inline def `link-move`: typings.luminoDragdrop.luminoDragdropStrings.`link-move` = "link-move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.`link-move`]
     
-    @scala.inline
-    def move: typings.luminoDragdrop.luminoDragdropStrings.move = "move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.move]
+    inline def move: typings.luminoDragdrop.luminoDragdropStrings.move = "move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.move]
     
-    @scala.inline
-    def none: typings.luminoDragdrop.luminoDragdropStrings.none = "none".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.none]
+    inline def none: typings.luminoDragdrop.luminoDragdropStrings.none = "none".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.none]
   }
 }

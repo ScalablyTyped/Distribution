@@ -13,16 +13,13 @@ trait FixedModeScheduleActionStartSettings extends StObject {
 }
 object FixedModeScheduleActionStartSettings {
   
-  @scala.inline
-  def apply(Time: string): FixedModeScheduleActionStartSettings = {
+  inline def apply(Time: string): FixedModeScheduleActionStartSettings = {
     val __obj = js.Dynamic.literal(Time = Time.asInstanceOf[js.Any])
     __obj.asInstanceOf[FixedModeScheduleActionStartSettings]
   }
   
-  @scala.inline
-  implicit class FixedModeScheduleActionStartSettingsMutableBuilder[Self <: FixedModeScheduleActionStartSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FixedModeScheduleActionStartSettings](x: Self) {
     
-    @scala.inline
-    def setTime(value: string): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+    inline def setTime(value: string): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
   }
 }

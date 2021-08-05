@@ -19,8 +19,7 @@ trait TabItem
 }
 object TabItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     child: Widget,
@@ -54,13 +53,10 @@ object TabItem {
     __obj.asInstanceOf[TabItem]
   }
   
-  @scala.inline
-  implicit class TabItemMutableBuilder[Self <: TabItem] (val x: Self) extends AnyVal {
+  extension [Self <: TabItem](x: Self) {
     
-    @scala.inline
-    def setTabHtml(value: HTMLElement): Self = StObject.set(x, "tabHtml", value.asInstanceOf[js.Any])
+    inline def setTabHtml(value: HTMLElement): Self = StObject.set(x, "tabHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

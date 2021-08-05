@@ -58,18 +58,15 @@ object mod extends Shortcut {
   }
   object Either {
     
-    @scala.inline
-    def apply[A, B](): Either[A, B] = {
+    inline def apply[A, B](): Either[A, B] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("@@type")("sanctuary/Either")
       __obj.asInstanceOf[Either[A, B]]
     }
     
-    @scala.inline
-    implicit class EitherMutableBuilder[Self <: Either[?, ?], A, B] (val x: Self & (Either[A, B])) extends AnyVal {
+    extension [Self <: Either[?, ?], A, B](x: Self & (Either[A, B])) {
       
-      @scala.inline
-      def `set@@type`(value: sanctuarySlashEither): Self = StObject.set(x, "@@type", value.asInstanceOf[js.Any])
+      inline def `set@@type`(value: sanctuarySlashEither): Self = StObject.set(x, "@@type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,24 +122,19 @@ object mod extends Shortcut {
   }
   object MatchObj {
     
-    @scala.inline
-    def apply(groups: js.Array[Maybe[String]], `match`: String): MatchObj = {
+    inline def apply(groups: js.Array[Maybe[String]], `match`: String): MatchObj = {
       val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchObj]
     }
     
-    @scala.inline
-    implicit class MatchObjMutableBuilder[Self <: MatchObj] (val x: Self) extends AnyVal {
+    extension [Self <: MatchObj](x: Self) {
       
-      @scala.inline
-      def setGroups(value: js.Array[Maybe[String]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[Maybe[String]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsVarargs(value: Maybe[String]*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: Maybe[String]*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,18 +144,15 @@ object mod extends Shortcut {
   }
   object Maybe {
     
-    @scala.inline
-    def apply[A](): Maybe[A] = {
+    inline def apply[A](): Maybe[A] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("@@type")("sanctuary/Maybe")
       __obj.asInstanceOf[Maybe[A]]
     }
     
-    @scala.inline
-    implicit class MaybeMutableBuilder[Self <: Maybe[?], A] (val x: Self & Maybe[A]) extends AnyVal {
+    extension [Self <: Maybe[?], A](x: Self & Maybe[A]) {
       
-      @scala.inline
-      def `set@@type`(value: sanctuarySlashMaybe): Self = StObject.set(x, "@@type", value.asInstanceOf[js.Any])
+      inline def `set@@type`(value: sanctuarySlashMaybe): Self = StObject.set(x, "@@type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -187,18 +176,15 @@ object mod extends Shortcut {
   }
   object Pair {
     
-    @scala.inline
-    def apply[A, B](): Pair[A, B] = {
+    inline def apply[A, B](): Pair[A, B] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("@@type")("sanctuary/Pair")
       __obj.asInstanceOf[Pair[A, B]]
     }
     
-    @scala.inline
-    implicit class PairMutableBuilder[Self <: Pair[?, ?], A, B] (val x: Self & (Pair[A, B])) extends AnyVal {
+    extension [Self <: Pair[?, ?], A, B](x: Self & (Pair[A, B])) {
       
-      @scala.inline
-      def `set@@type`(value: sanctuarySlashPair): Self = StObject.set(x, "@@type", value.asInstanceOf[js.Any])
+      inline def `set@@type`(value: sanctuarySlashPair): Self = StObject.set(x, "@@type", value.asInstanceOf[js.Any])
     }
   }
   

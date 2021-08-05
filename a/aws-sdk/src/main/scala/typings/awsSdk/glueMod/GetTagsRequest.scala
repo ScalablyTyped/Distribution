@@ -13,16 +13,13 @@ trait GetTagsRequest extends StObject {
 }
 object GetTagsRequest {
   
-  @scala.inline
-  def apply(ResourceArn: GlueResourceArn): GetTagsRequest = {
+  inline def apply(ResourceArn: GlueResourceArn): GetTagsRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTagsRequest]
   }
   
-  @scala.inline
-  implicit class GetTagsRequestMutableBuilder[Self <: GetTagsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetTagsRequest](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: GlueResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: GlueResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGPathSegLinetoVerticalRel extends StObject {
   
-  @JSName("MSHTML.SVGPathSegLinetoVerticalRel_typekey")
+  /* private */ @JSName("MSHTML.SVGPathSegLinetoVerticalRel_typekey")
   var MSHTMLDotSVGPathSegLinetoVerticalRel_typekey: SVGPathSegLinetoVerticalRel
   
   var pathSegType: Double
@@ -17,8 +17,7 @@ trait SVGPathSegLinetoVerticalRel extends StObject {
 }
 object SVGPathSegLinetoVerticalRel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGPathSegLinetoVerticalRel_typekey: SVGPathSegLinetoVerticalRel,
     pathSegType: Double,
     pathSegTypeAsLetter: String,
@@ -29,19 +28,14 @@ object SVGPathSegLinetoVerticalRel {
     __obj.asInstanceOf[SVGPathSegLinetoVerticalRel]
   }
   
-  @scala.inline
-  implicit class SVGPathSegLinetoVerticalRelMutableBuilder[Self <: SVGPathSegLinetoVerticalRel] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPathSegLinetoVerticalRel](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotSVGPathSegLinetoVerticalRel_typekey(value: SVGPathSegLinetoVerticalRel): Self = StObject.set(x, "MSHTML.SVGPathSegLinetoVerticalRel_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGPathSegLinetoVerticalRel_typekey(value: SVGPathSegLinetoVerticalRel): Self = StObject.set(x, "MSHTML.SVGPathSegLinetoVerticalRel_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathSegType(value: Double): Self = StObject.set(x, "pathSegType", value.asInstanceOf[js.Any])
+    inline def setPathSegType(value: Double): Self = StObject.set(x, "pathSegType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathSegTypeAsLetter(value: String): Self = StObject.set(x, "pathSegTypeAsLetter", value.asInstanceOf[js.Any])
+    inline def setPathSegTypeAsLetter(value: String): Self = StObject.set(x, "pathSegTypeAsLetter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

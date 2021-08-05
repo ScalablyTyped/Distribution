@@ -17,34 +17,25 @@ trait CustomAttribute extends StObject {
 }
 object CustomAttribute {
   
-  @scala.inline
-  def apply(): CustomAttribute = {
+  inline def apply(): CustomAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomAttribute]
   }
   
-  @scala.inline
-  implicit class CustomAttributeMutableBuilder[Self <: CustomAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: CustomAttribute](x: Self) {
     
-    @scala.inline
-    def setGroupValues(value: js.Array[CustomAttribute]): Self = StObject.set(x, "groupValues", value.asInstanceOf[js.Any])
+    inline def setGroupValues(value: js.Array[CustomAttribute]): Self = StObject.set(x, "groupValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupValuesUndefined: Self = StObject.set(x, "groupValues", js.undefined)
+    inline def setGroupValuesUndefined: Self = StObject.set(x, "groupValues", js.undefined)
     
-    @scala.inline
-    def setGroupValuesVarargs(value: CustomAttribute*): Self = StObject.set(x, "groupValues", js.Array(value :_*))
+    inline def setGroupValuesVarargs(value: CustomAttribute*): Self = StObject.set(x, "groupValues", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

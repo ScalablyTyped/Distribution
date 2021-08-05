@@ -29,22 +29,17 @@ trait ElementMixin extends StObject {
 }
 object ElementMixin {
   
-  @scala.inline
-  def apply(description: String, label: String, visibilityExpression: String): ElementMixin = {
+  inline def apply(description: String, label: String, visibilityExpression: String): ElementMixin = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], visibilityExpression = visibilityExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementMixin]
   }
   
-  @scala.inline
-  implicit class ElementMixinMutableBuilder[Self <: ElementMixin] (val x: Self) extends AnyVal {
+  extension [Self <: ElementMixin](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityExpression(value: String): Self = StObject.set(x, "visibilityExpression", value.asInstanceOf[js.Any])
+    inline def setVisibilityExpression(value: String): Self = StObject.set(x, "visibilityExpression", value.asInstanceOf[js.Any])
   }
 }

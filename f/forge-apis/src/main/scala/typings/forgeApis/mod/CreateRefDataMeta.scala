@@ -10,17 +10,14 @@ trait CreateRefDataMeta extends StObject {
 }
 object CreateRefDataMeta {
   
-  @scala.inline
-  def apply(`extension`: BaseAttributesExtensionObject): CreateRefDataMeta = {
+  inline def apply(`extension`: BaseAttributesExtensionObject): CreateRefDataMeta = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRefDataMeta]
   }
   
-  @scala.inline
-  implicit class CreateRefDataMetaMutableBuilder[Self <: CreateRefDataMeta] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRefDataMeta](x: Self) {
     
-    @scala.inline
-    def setExtension(value: BaseAttributesExtensionObject): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: BaseAttributesExtensionObject): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
   }
 }

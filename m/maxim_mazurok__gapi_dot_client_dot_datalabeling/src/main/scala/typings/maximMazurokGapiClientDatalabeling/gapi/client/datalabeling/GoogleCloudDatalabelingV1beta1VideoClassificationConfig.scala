@@ -17,28 +17,21 @@ trait GoogleCloudDatalabelingV1beta1VideoClassificationConfig extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1VideoClassificationConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1VideoClassificationConfig = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1VideoClassificationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1VideoClassificationConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1VideoClassificationConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1VideoClassificationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1VideoClassificationConfig](x: Self) {
     
-    @scala.inline
-    def setAnnotationSpecSetConfigs(value: js.Array[GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig]): Self = StObject.set(x, "annotationSpecSetConfigs", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpecSetConfigs(value: js.Array[GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig]): Self = StObject.set(x, "annotationSpecSetConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecSetConfigsUndefined: Self = StObject.set(x, "annotationSpecSetConfigs", js.undefined)
+    inline def setAnnotationSpecSetConfigsUndefined: Self = StObject.set(x, "annotationSpecSetConfigs", js.undefined)
     
-    @scala.inline
-    def setAnnotationSpecSetConfigsVarargs(value: GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig*): Self = StObject.set(x, "annotationSpecSetConfigs", js.Array(value :_*))
+    inline def setAnnotationSpecSetConfigsVarargs(value: GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig*): Self = StObject.set(x, "annotationSpecSetConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setApplyShotDetection(value: Boolean): Self = StObject.set(x, "applyShotDetection", value.asInstanceOf[js.Any])
+    inline def setApplyShotDetection(value: Boolean): Self = StObject.set(x, "applyShotDetection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyShotDetectionUndefined: Self = StObject.set(x, "applyShotDetection", js.undefined)
+    inline def setApplyShotDetectionUndefined: Self = StObject.set(x, "applyShotDetection", js.undefined)
   }
 }

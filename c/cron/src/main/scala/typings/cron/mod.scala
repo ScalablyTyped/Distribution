@@ -145,8 +145,7 @@ object mod {
     def sendAt_Moment(): Moment = js.native
   }
   
-  @scala.inline
-  def job(
+  inline def job(
     cronTime: String | Date | Moment,
     onTick: js.Function0[Unit],
     onComplete: js.UndefOr[CronCommand | Null],
@@ -157,35 +156,22 @@ object mod {
     utcOffset: js.UndefOr[String | Double],
     unrefTimeout: js.UndefOr[Boolean]
   ): CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("job")(cronTime.asInstanceOf[js.Any], onTick.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], start.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], context.asInstanceOf[js.Any], runOnInit.asInstanceOf[js.Any], utcOffset.asInstanceOf[js.Any], unrefTimeout.asInstanceOf[js.Any])).asInstanceOf[CronJob]
-  @scala.inline
-  def job(options: CronJobParameters): CronJob = ^.asInstanceOf[js.Dynamic].applyDynamic("job")(options.asInstanceOf[js.Any]).asInstanceOf[CronJob]
+  inline def job(options: CronJobParameters): CronJob = ^.asInstanceOf[js.Dynamic].applyDynamic("job")(options.asInstanceOf[js.Any]).asInstanceOf[CronJob]
   
-  @scala.inline
-  def sendAt(cronTime: String): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("sendAt")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Moment]
-  @scala.inline
-  def sendAt(cronTime: Moment): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("sendAt")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Moment]
-  @scala.inline
-  def sendAt(cronTime: Date): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("sendAt")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  inline def sendAt(cronTime: String): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("sendAt")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  inline def sendAt(cronTime: Moment): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("sendAt")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  inline def sendAt(cronTime: Date): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("sendAt")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Moment]
   
-  @scala.inline
-  def time(source: String): CronTime = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any]).asInstanceOf[CronTime]
-  @scala.inline
-  def time(source: String, zone: String): CronTime = (^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[CronTime]
-  @scala.inline
-  def time(source: Moment): CronTime = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any]).asInstanceOf[CronTime]
-  @scala.inline
-  def time(source: Moment, zone: String): CronTime = (^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[CronTime]
-  @scala.inline
-  def time(source: Date): CronTime = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any]).asInstanceOf[CronTime]
-  @scala.inline
-  def time(source: Date, zone: String): CronTime = (^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[CronTime]
+  inline def time(source: String): CronTime = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any]).asInstanceOf[CronTime]
+  inline def time(source: String, zone: String): CronTime = (^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[CronTime]
+  inline def time(source: Moment): CronTime = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any]).asInstanceOf[CronTime]
+  inline def time(source: Moment, zone: String): CronTime = (^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[CronTime]
+  inline def time(source: Date): CronTime = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any]).asInstanceOf[CronTime]
+  inline def time(source: Date, zone: String): CronTime = (^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[CronTime]
   
-  @scala.inline
-  def timeout(cronTime: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def timeout(cronTime: Moment): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def timeout(cronTime: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def timeout(cronTime: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def timeout(cronTime: Moment): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def timeout(cronTime: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   type CronCommand = js.Function0[Unit] | String | Args
   
@@ -238,71 +224,50 @@ object mod {
   }
   object CronJobParameters {
     
-    @scala.inline
-    def apply(cronTime: String | Date | Moment, onTick: CronCommand): CronJobParameters = {
+    inline def apply(cronTime: String | Date | Moment, onTick: CronCommand): CronJobParameters = {
       val __obj = js.Dynamic.literal(cronTime = cronTime.asInstanceOf[js.Any], onTick = onTick.asInstanceOf[js.Any])
       __obj.asInstanceOf[CronJobParameters]
     }
     
-    @scala.inline
-    implicit class CronJobParametersMutableBuilder[Self <: CronJobParameters] (val x: Self) extends AnyVal {
+    extension [Self <: CronJobParameters](x: Self) {
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setCronTime(value: String | Date | Moment): Self = StObject.set(x, "cronTime", value.asInstanceOf[js.Any])
+      inline def setCronTime(value: String | Date | Moment): Self = StObject.set(x, "cronTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnComplete(value: CronCommand): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
+      inline def setOnComplete(value: CronCommand): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCompleteFunction0(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
+      inline def setOnCompleteFunction0(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCompleteNull: Self = StObject.set(x, "onComplete", null)
+      inline def setOnCompleteNull: Self = StObject.set(x, "onComplete", null)
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setOnTick(value: CronCommand): Self = StObject.set(x, "onTick", value.asInstanceOf[js.Any])
+      inline def setOnTick(value: CronCommand): Self = StObject.set(x, "onTick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnTickFunction0(value: () => Unit): Self = StObject.set(x, "onTick", js.Any.fromFunction0(value))
+      inline def setOnTickFunction0(value: () => Unit): Self = StObject.set(x, "onTick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRunOnInit(value: Boolean): Self = StObject.set(x, "runOnInit", value.asInstanceOf[js.Any])
+      inline def setRunOnInit(value: Boolean): Self = StObject.set(x, "runOnInit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunOnInitUndefined: Self = StObject.set(x, "runOnInit", js.undefined)
+      inline def setRunOnInitUndefined: Self = StObject.set(x, "runOnInit", js.undefined)
       
-      @scala.inline
-      def setStart(value: Boolean): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Boolean): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+      inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+      inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
       
-      @scala.inline
-      def setUnrefTimeout(value: Boolean): Self = StObject.set(x, "unrefTimeout", value.asInstanceOf[js.Any])
+      inline def setUnrefTimeout(value: Boolean): Self = StObject.set(x, "unrefTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnrefTimeoutUndefined: Self = StObject.set(x, "unrefTimeout", js.undefined)
+      inline def setUnrefTimeoutUndefined: Self = StObject.set(x, "unrefTimeout", js.undefined)
       
-      @scala.inline
-      def setUtcOffset(value: String | Double): Self = StObject.set(x, "utcOffset", value.asInstanceOf[js.Any])
+      inline def setUtcOffset(value: String | Double): Self = StObject.set(x, "utcOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcOffsetUndefined: Self = StObject.set(x, "utcOffset", js.undefined)
+      inline def setUtcOffsetUndefined: Self = StObject.set(x, "utcOffset", js.undefined)
     }
   }
 }

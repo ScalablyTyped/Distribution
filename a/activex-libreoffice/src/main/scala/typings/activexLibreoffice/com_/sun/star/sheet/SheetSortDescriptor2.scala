@@ -49,8 +49,7 @@ trait SheetSortDescriptor2
 }
 object SheetSortDescriptor2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BindFormatsToContent: Boolean,
     ContainsHeader: Boolean,
     CopyOutputData: Boolean,
@@ -65,25 +64,18 @@ object SheetSortDescriptor2 {
     __obj.asInstanceOf[SheetSortDescriptor2]
   }
   
-  @scala.inline
-  implicit class SheetSortDescriptor2MutableBuilder[Self <: SheetSortDescriptor2] (val x: Self) extends AnyVal {
+  extension [Self <: SheetSortDescriptor2](x: Self) {
     
-    @scala.inline
-    def setBindFormatsToContent(value: Boolean): Self = StObject.set(x, "BindFormatsToContent", value.asInstanceOf[js.Any])
+    inline def setBindFormatsToContent(value: Boolean): Self = StObject.set(x, "BindFormatsToContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
+    inline def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyOutputData(value: Boolean): Self = StObject.set(x, "CopyOutputData", value.asInstanceOf[js.Any])
+    inline def setCopyOutputData(value: Boolean): Self = StObject.set(x, "CopyOutputData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUserListEnabled(value: Boolean): Self = StObject.set(x, "IsUserListEnabled", value.asInstanceOf[js.Any])
+    inline def setIsUserListEnabled(value: Boolean): Self = StObject.set(x, "IsUserListEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputPosition(value: CellAddress): Self = StObject.set(x, "OutputPosition", value.asInstanceOf[js.Any])
+    inline def setOutputPosition(value: CellAddress): Self = StObject.set(x, "OutputPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserListIndex(value: Double): Self = StObject.set(x, "UserListIndex", value.asInstanceOf[js.Any])
+    inline def setUserListIndex(value: Double): Self = StObject.set(x, "UserListIndex", value.asInstanceOf[js.Any])
   }
 }

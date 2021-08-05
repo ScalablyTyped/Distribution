@@ -18,22 +18,17 @@ trait UpdateOrganizationalUnitRequest extends StObject {
 }
 object UpdateOrganizationalUnitRequest {
   
-  @scala.inline
-  def apply(OrganizationalUnitId: OrganizationalUnitId): UpdateOrganizationalUnitRequest = {
+  inline def apply(OrganizationalUnitId: OrganizationalUnitId): UpdateOrganizationalUnitRequest = {
     val __obj = js.Dynamic.literal(OrganizationalUnitId = OrganizationalUnitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOrganizationalUnitRequest]
   }
   
-  @scala.inline
-  implicit class UpdateOrganizationalUnitRequestMutableBuilder[Self <: UpdateOrganizationalUnitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateOrganizationalUnitRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: OrganizationalUnitName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: OrganizationalUnitName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOrganizationalUnitId(value: OrganizationalUnitId): Self = StObject.set(x, "OrganizationalUnitId", value.asInstanceOf[js.Any])
+    inline def setOrganizationalUnitId(value: OrganizationalUnitId): Self = StObject.set(x, "OrganizationalUnitId", value.asInstanceOf[js.Any])
   }
 }

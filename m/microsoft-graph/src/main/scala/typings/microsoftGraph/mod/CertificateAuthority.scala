@@ -32,55 +32,39 @@ trait CertificateAuthority extends StObject {
 }
 object CertificateAuthority {
   
-  @scala.inline
-  def apply(): CertificateAuthority = {
+  inline def apply(): CertificateAuthority = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertificateAuthority]
   }
   
-  @scala.inline
-  implicit class CertificateAuthorityMutableBuilder[Self <: CertificateAuthority] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateAuthority](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: Double): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: Double): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateRevocationListUrl(value: NullableOption[String]): Self = StObject.set(x, "certificateRevocationListUrl", value.asInstanceOf[js.Any])
+    inline def setCertificateRevocationListUrl(value: NullableOption[String]): Self = StObject.set(x, "certificateRevocationListUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateRevocationListUrlNull: Self = StObject.set(x, "certificateRevocationListUrl", null)
+    inline def setCertificateRevocationListUrlNull: Self = StObject.set(x, "certificateRevocationListUrl", null)
     
-    @scala.inline
-    def setCertificateRevocationListUrlUndefined: Self = StObject.set(x, "certificateRevocationListUrl", js.undefined)
+    inline def setCertificateRevocationListUrlUndefined: Self = StObject.set(x, "certificateRevocationListUrl", js.undefined)
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
-    @scala.inline
-    def setDeltaCertificateRevocationListUrl(value: NullableOption[String]): Self = StObject.set(x, "deltaCertificateRevocationListUrl", value.asInstanceOf[js.Any])
+    inline def setDeltaCertificateRevocationListUrl(value: NullableOption[String]): Self = StObject.set(x, "deltaCertificateRevocationListUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaCertificateRevocationListUrlNull: Self = StObject.set(x, "deltaCertificateRevocationListUrl", null)
+    inline def setDeltaCertificateRevocationListUrlNull: Self = StObject.set(x, "deltaCertificateRevocationListUrl", null)
     
-    @scala.inline
-    def setDeltaCertificateRevocationListUrlUndefined: Self = StObject.set(x, "deltaCertificateRevocationListUrl", js.undefined)
+    inline def setDeltaCertificateRevocationListUrlUndefined: Self = StObject.set(x, "deltaCertificateRevocationListUrl", js.undefined)
     
-    @scala.inline
-    def setIsRootAuthority(value: Boolean): Self = StObject.set(x, "isRootAuthority", value.asInstanceOf[js.Any])
+    inline def setIsRootAuthority(value: Boolean): Self = StObject.set(x, "isRootAuthority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRootAuthorityUndefined: Self = StObject.set(x, "isRootAuthority", js.undefined)
+    inline def setIsRootAuthorityUndefined: Self = StObject.set(x, "isRootAuthority", js.undefined)
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerSki(value: String): Self = StObject.set(x, "issuerSki", value.asInstanceOf[js.Any])
+    inline def setIssuerSki(value: String): Self = StObject.set(x, "issuerSki", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerSkiUndefined: Self = StObject.set(x, "issuerSki", js.undefined)
+    inline def setIssuerSkiUndefined: Self = StObject.set(x, "issuerSki", js.undefined)
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
   }
 }

@@ -7,17 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object weightedMod {
   
-  @scala.inline
-  def apply(obj: StringDictionary[Double]): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(obj: StringDictionary[Double], rand: RandomFunc): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], rand.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(obj: StringDictionary[Double]): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(obj: StringDictionary[Double], rand: RandomFunc): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], rand.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * Weighted returns a Function additionally available as `weighted.select`
     */
-  @scala.inline
-  def apply[T](set: js.Array[T], weights: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].apply(set.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def apply[T](set: js.Array[T], weights: js.Array[Double], rand: RandomFunc): T = (^.asInstanceOf[js.Dynamic].apply(set.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], rand.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T](set: js.Array[T], weights: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].apply(set.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T](set: js.Array[T], weights: js.Array[Double], rand: RandomFunc): T = (^.asInstanceOf[js.Dynamic].apply(set.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], rand.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("weighted/lib/weighted", JSImport.Namespace)
   @js.native

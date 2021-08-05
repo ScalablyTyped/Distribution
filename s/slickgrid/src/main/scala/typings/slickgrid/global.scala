@@ -633,8 +633,7 @@ object global {
       @JSGlobal("Slick.Formatters.Checkmark")
       @js.native
       def Checkmark: Formatter[SlickData] = js.native
-      @scala.inline
-      def Checkmark_=(x: Formatter[SlickData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Checkmark")(x.asInstanceOf[js.Any])
+      inline def Checkmark_=(x: Formatter[SlickData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Checkmark")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Slick.Formatters.PercentComplete")
       @js.native
@@ -643,24 +642,20 @@ object global {
       @JSGlobal("Slick.Formatters.PercentCompleteBar")
       @js.native
       def PercentCompleteBar: Formatter[SlickData] = js.native
-      @scala.inline
-      def PercentCompleteBar_=(x: Formatter[SlickData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PercentCompleteBar")(x.asInstanceOf[js.Any])
+      inline def PercentCompleteBar_=(x: Formatter[SlickData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PercentCompleteBar")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def PercentComplete_=(x: Formatter[SlickData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PercentComplete")(x.asInstanceOf[js.Any])
+      inline def PercentComplete_=(x: Formatter[SlickData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PercentComplete")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Slick.Formatters.YesNo")
       @js.native
       def YesNo: Formatter[SlickData] = js.native
-      @scala.inline
-      def YesNo_=(x: Formatter[SlickData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesNo")(x.asInstanceOf[js.Any])
+      inline def YesNo_=(x: Formatter[SlickData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesNo")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("Slick.GlobalEditorLock")
     @js.native
     def GlobalEditorLock: typings.slickgrid.Slick.EditorLock[SlickData] = js.native
-    @scala.inline
-    def GlobalEditorLock_=(x: typings.slickgrid.Slick.EditorLock[SlickData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlobalEditorLock")(x.asInstanceOf[js.Any])
+    inline def GlobalEditorLock_=(x: typings.slickgrid.Slick.EditorLock[SlickData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlobalEditorLock")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Slick.Grid")
     @js.native

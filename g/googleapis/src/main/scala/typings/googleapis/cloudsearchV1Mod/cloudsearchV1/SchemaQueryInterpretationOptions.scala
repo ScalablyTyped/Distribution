@@ -18,19 +18,15 @@ trait SchemaQueryInterpretationOptions extends StObject {
 }
 object SchemaQueryInterpretationOptions {
   
-  @scala.inline
-  def apply(): SchemaQueryInterpretationOptions = {
+  inline def apply(): SchemaQueryInterpretationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryInterpretationOptions]
   }
   
-  @scala.inline
-  implicit class SchemaQueryInterpretationOptionsMutableBuilder[Self <: SchemaQueryInterpretationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryInterpretationOptions](x: Self) {
     
-    @scala.inline
-    def setDisableNlInterpretation(value: Boolean): Self = StObject.set(x, "disableNlInterpretation", value.asInstanceOf[js.Any])
+    inline def setDisableNlInterpretation(value: Boolean): Self = StObject.set(x, "disableNlInterpretation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableNlInterpretationUndefined: Self = StObject.set(x, "disableNlInterpretation", js.undefined)
+    inline def setDisableNlInterpretationUndefined: Self = StObject.set(x, "disableNlInterpretation", js.undefined)
   }
 }

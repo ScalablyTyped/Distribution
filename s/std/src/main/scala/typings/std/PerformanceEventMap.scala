@@ -10,16 +10,13 @@ trait PerformanceEventMap extends StObject {
 }
 object PerformanceEventMap {
   
-  @scala.inline
-  def apply(resourcetimingbufferfull: Event): PerformanceEventMap = {
+  inline def apply(resourcetimingbufferfull: Event): PerformanceEventMap = {
     val __obj = js.Dynamic.literal(resourcetimingbufferfull = resourcetimingbufferfull.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformanceEventMap]
   }
   
-  @scala.inline
-  implicit class PerformanceEventMapMutableBuilder[Self <: PerformanceEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceEventMap](x: Self) {
     
-    @scala.inline
-    def setResourcetimingbufferfull(value: Event): Self = StObject.set(x, "resourcetimingbufferfull", value.asInstanceOf[js.Any])
+    inline def setResourcetimingbufferfull(value: Event): Self = StObject.set(x, "resourcetimingbufferfull", value.asInstanceOf[js.Any])
   }
 }

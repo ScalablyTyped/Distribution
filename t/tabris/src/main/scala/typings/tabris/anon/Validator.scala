@@ -16,23 +16,18 @@ trait Validator[ResourceType]
 }
 object Validator {
   
-  @scala.inline
-  def apply[ResourceType](`type`: Constructor[ResourceType]): Validator[ResourceType] = {
+  inline def apply[ResourceType](`type`: Constructor[ResourceType]): Validator[ResourceType] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Validator[ResourceType]]
   }
   
-  @scala.inline
-  implicit class ValidatorMutableBuilder[Self <: Validator[?], ResourceType] (val x: Self & Validator[ResourceType]) extends AnyVal {
+  extension [Self <: Validator[?], ResourceType](x: Self & Validator[ResourceType]) {
     
-    @scala.inline
-    def setType(value: Constructor[ResourceType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Constructor[ResourceType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidator(value: /* value */ js.Any => /* is ResourceType */ Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
+    inline def setValidator(value: /* value */ js.Any => /* is ResourceType */ Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+    inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
   }
 }

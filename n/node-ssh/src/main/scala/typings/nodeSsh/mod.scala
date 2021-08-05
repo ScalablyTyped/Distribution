@@ -38,44 +38,32 @@ object mod {
   }
   object ConfigGiven {
     
-    @scala.inline
-    def apply(host: String, username: String): ConfigGiven = {
+    inline def apply(host: String, username: String): ConfigGiven = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigGiven]
     }
     
-    @scala.inline
-    implicit class ConfigGivenMutableBuilder[Self <: ConfigGiven] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigGiven](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnKeyboardInteractive(value: () => Unit | Boolean): Self = StObject.set(x, "onKeyboardInteractive", js.Any.fromFunction0(value))
+      inline def setOnKeyboardInteractive(value: () => Unit | Boolean): Self = StObject.set(x, "onKeyboardInteractive", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnKeyboardInteractiveUndefined: Self = StObject.set(x, "onKeyboardInteractive", js.undefined)
+      inline def setOnKeyboardInteractiveUndefined: Self = StObject.set(x, "onKeyboardInteractive", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
+      inline def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,44 +81,32 @@ object mod {
   }
   object ExecOptions {
     
-    @scala.inline
-    def apply(): ExecOptions = {
+    inline def apply(): ExecOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExecOptions]
     }
     
-    @scala.inline
-    implicit class ExecOptionsMutableBuilder[Self <: ExecOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExecOptions](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setOnStderr(value: /* chunk */ Buffer => Unit): Self = StObject.set(x, "onStderr", js.Any.fromFunction1(value))
+      inline def setOnStderr(value: /* chunk */ Buffer => Unit): Self = StObject.set(x, "onStderr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStderrUndefined: Self = StObject.set(x, "onStderr", js.undefined)
+      inline def setOnStderrUndefined: Self = StObject.set(x, "onStderr", js.undefined)
       
-      @scala.inline
-      def setOnStdout(value: /* chunk */ Buffer => Unit): Self = StObject.set(x, "onStdout", js.Any.fromFunction1(value))
+      inline def setOnStdout(value: /* chunk */ Buffer => Unit): Self = StObject.set(x, "onStdout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStdoutUndefined: Self = StObject.set(x, "onStdout", js.undefined)
+      inline def setOnStdoutUndefined: Self = StObject.set(x, "onStdout", js.undefined)
       
-      @scala.inline
-      def setOptions(value: typings.ssh2.mod.ExecOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.ssh2.mod.ExecOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setStdin(value: String): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: String): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
     }
   }
   
@@ -146,29 +122,22 @@ object mod {
   }
   object ExecResult {
     
-    @scala.inline
-    def apply(code: Double, stderr: String, stdout: String): ExecResult = {
+    inline def apply(code: Double, stderr: String, stdout: String): ExecResult = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExecResult]
     }
     
-    @scala.inline
-    implicit class ExecResultMutableBuilder[Self <: ExecResult] (val x: Self) extends AnyVal {
+    extension [Self <: ExecResult](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
-      @scala.inline
-      def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,52 +164,38 @@ object mod {
   }
   object PutDirectoryOptions {
     
-    @scala.inline
-    def apply(): PutDirectoryOptions = {
+    inline def apply(): PutDirectoryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PutDirectoryOptions]
     }
     
-    @scala.inline
-    implicit class PutDirectoryOptionsMutableBuilder[Self <: PutDirectoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PutDirectoryOptions](x: Self) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+      inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+      inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
       
-      @scala.inline
-      def setSftp(value: SFTP): Self = StObject.set(x, "sftp", value.asInstanceOf[js.Any])
+      inline def setSftp(value: SFTP): Self = StObject.set(x, "sftp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSftpOptions(value: TransferOptions): Self = StObject.set(x, "sftpOptions", value.asInstanceOf[js.Any])
+      inline def setSftpOptions(value: TransferOptions): Self = StObject.set(x, "sftpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSftpOptionsUndefined: Self = StObject.set(x, "sftpOptions", js.undefined)
+      inline def setSftpOptionsUndefined: Self = StObject.set(x, "sftpOptions", js.undefined)
       
-      @scala.inline
-      def setSftpUndefined: Self = StObject.set(x, "sftp", js.undefined)
+      inline def setSftpUndefined: Self = StObject.set(x, "sftp", js.undefined)
       
-      @scala.inline
-      def setTick(
+      inline def setTick(
         value: (/* localPath */ String, /* remotePath */ String, /* error */ js.UndefOr[Error | Null]) => Unit
       ): Self = StObject.set(x, "tick", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
+      inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
       
-      @scala.inline
-      def setValidate(value: /* localPath */ String => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: /* localPath */ String => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
@@ -254,32 +209,24 @@ object mod {
   }
   object PutFilesOptions {
     
-    @scala.inline
-    def apply(): PutFilesOptions = {
+    inline def apply(): PutFilesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PutFilesOptions]
     }
     
-    @scala.inline
-    implicit class PutFilesOptionsMutableBuilder[Self <: PutFilesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PutFilesOptions](x: Self) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setSftp(value: SFTP): Self = StObject.set(x, "sftp", value.asInstanceOf[js.Any])
+      inline def setSftp(value: SFTP): Self = StObject.set(x, "sftp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSftpOptions(value: TransferOptions): Self = StObject.set(x, "sftpOptions", value.asInstanceOf[js.Any])
+      inline def setSftpOptions(value: TransferOptions): Self = StObject.set(x, "sftpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSftpOptionsUndefined: Self = StObject.set(x, "sftpOptions", js.undefined)
+      inline def setSftpOptionsUndefined: Self = StObject.set(x, "sftpOptions", js.undefined)
       
-      @scala.inline
-      def setSftpUndefined: Self = StObject.set(x, "sftp", js.undefined)
+      inline def setSftpUndefined: Self = StObject.set(x, "sftp", js.undefined)
     }
   }
   

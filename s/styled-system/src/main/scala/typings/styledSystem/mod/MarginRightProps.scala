@@ -23,47 +23,37 @@ trait MarginRightProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends St
 }
 object MarginRightProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): MarginRightProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): MarginRightProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarginRightProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class MarginRightPropsMutableBuilder[Self <: MarginRightProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & MarginRightProps[ThemeType]) extends AnyVal {
+  extension [Self <: MarginRightProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & MarginRightProps[ThemeType]) {
     
-    @scala.inline
-    def setMarginRight(
+    inline def setMarginRight(
       value: ResponsiveValue[
           ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
+    inline def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
     
-    @scala.inline
-    def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+    inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
-    @scala.inline
-    def setMarginRightVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
+    inline def setMarginRightVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
     
-    @scala.inline
-    def setMr(
+    inline def setMr(
       value: ResponsiveValue[
           ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMrNull: Self = StObject.set(x, "mr", null)
+    inline def setMrNull: Self = StObject.set(x, "mr", null)
     
-    @scala.inline
-    def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
+    inline def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
     
-    @scala.inline
-    def setMrVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
+    inline def setMrVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
   }
 }

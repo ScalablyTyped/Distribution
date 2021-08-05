@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Filter")
 @js.native
-class Filter protected ()
+/* private */ class Filter ()
   extends StObject
      with typings.activexExcel.Excel.Filter {
   
@@ -27,7 +27,7 @@ class Filter protected ()
   /* CompleteClass */
   override val Criteria2: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Filter_typekey")
   var ExcelDotFilter_typekey: typings.activexExcel.Excel.Filter = js.native
   

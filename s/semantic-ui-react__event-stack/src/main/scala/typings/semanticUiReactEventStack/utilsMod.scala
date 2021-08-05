@@ -15,15 +15,11 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cloneMap[T](map: GenericMap[T]): GenericMap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneMap")(map.asInstanceOf[js.Any]).asInstanceOf[GenericMap[T]]
+  inline def cloneMap[T](map: GenericMap[T]): GenericMap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneMap")(map.asInstanceOf[js.Any]).asInstanceOf[GenericMap[T]]
   
-  @scala.inline
-  def isRefObject[T](ref: js.Any): /* is react.react.RefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")(ref.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.RefObject<T> */ Boolean]
+  inline def isRefObject[T](ref: js.Any): /* is react.react.RefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")(ref.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.RefObject<T> */ Boolean]
   
-  @scala.inline
-  def normalizeHandlers(handlers: InputEventListener): EventListeners = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeHandlers")(handlers.asInstanceOf[js.Any]).asInstanceOf[EventListeners]
+  inline def normalizeHandlers(handlers: InputEventListener): EventListeners = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeHandlers")(handlers.asInstanceOf[js.Any]).asInstanceOf[EventListeners]
   
-  @scala.inline
-  def normalizeTarget(target: InputTargetElement): TargetElement = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")(target.asInstanceOf[js.Any]).asInstanceOf[TargetElement]
+  inline def normalizeTarget(target: InputTargetElement): TargetElement = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")(target.asInstanceOf[js.Any]).asInstanceOf[TargetElement]
 }

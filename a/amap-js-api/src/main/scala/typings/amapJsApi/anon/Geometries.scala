@@ -17,8 +17,7 @@ trait Geometries
 }
 object Geometries {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     geometries: js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.Geometry */ js.Object
     ]
@@ -28,22 +27,18 @@ object Geometries {
     __obj.asInstanceOf[Geometries]
   }
   
-  @scala.inline
-  implicit class GeometriesMutableBuilder[Self <: Geometries] (val x: Self) extends AnyVal {
+  extension [Self <: Geometries](x: Self) {
     
-    @scala.inline
-    def setGeometries(
+    inline def setGeometries(
       value: js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.Geometry */ js.Object
         ]
     ): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometriesVarargs(
+    inline def setGeometriesVarargs(
       value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.Geometry */ js.Object)*
     ): Self = StObject.set(x, "geometries", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: GeometryCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GeometryCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

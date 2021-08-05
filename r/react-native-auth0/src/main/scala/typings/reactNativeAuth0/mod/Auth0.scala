@@ -14,22 +14,17 @@ trait Auth0 extends StObject {
 }
 object Auth0 {
   
-  @scala.inline
-  def apply(auth: Auth, users: String => Users_, webAuth: WebAuth): Auth0 = {
+  inline def apply(auth: Auth, users: String => Users_, webAuth: WebAuth): Auth0 = {
     val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], users = js.Any.fromFunction1(users), webAuth = webAuth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0]
   }
   
-  @scala.inline
-  implicit class Auth0MutableBuilder[Self <: Auth0] (val x: Self) extends AnyVal {
+  extension [Self <: Auth0](x: Self) {
     
-    @scala.inline
-    def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsers(value: String => Users_): Self = StObject.set(x, "users", js.Any.fromFunction1(value))
+    inline def setUsers(value: String => Users_): Self = StObject.set(x, "users", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWebAuth(value: WebAuth): Self = StObject.set(x, "webAuth", value.asInstanceOf[js.Any])
+    inline def setWebAuth(value: WebAuth): Self = StObject.set(x, "webAuth", value.asInstanceOf[js.Any])
   }
 }

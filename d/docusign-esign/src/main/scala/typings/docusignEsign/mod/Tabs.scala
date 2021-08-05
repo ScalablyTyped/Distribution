@@ -366,298 +366,203 @@ trait Tabs extends StObject {
 }
 object Tabs {
   
-  @scala.inline
-  def apply(): Tabs = {
+  inline def apply(): Tabs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Tabs]
   }
   
-  @scala.inline
-  implicit class TabsMutableBuilder[Self <: Tabs] (val x: Self) extends AnyVal {
+  extension [Self <: Tabs](x: Self) {
     
-    @scala.inline
-    def setApproveTabs(value: js.Array[Approve]): Self = StObject.set(x, "approveTabs", value.asInstanceOf[js.Any])
+    inline def setApproveTabs(value: js.Array[Approve]): Self = StObject.set(x, "approveTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproveTabsUndefined: Self = StObject.set(x, "approveTabs", js.undefined)
+    inline def setApproveTabsUndefined: Self = StObject.set(x, "approveTabs", js.undefined)
     
-    @scala.inline
-    def setApproveTabsVarargs(value: Approve*): Self = StObject.set(x, "approveTabs", js.Array(value :_*))
+    inline def setApproveTabsVarargs(value: Approve*): Self = StObject.set(x, "approveTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setCheckboxTabs(value: js.Array[Checkbox]): Self = StObject.set(x, "checkboxTabs", value.asInstanceOf[js.Any])
+    inline def setCheckboxTabs(value: js.Array[Checkbox]): Self = StObject.set(x, "checkboxTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckboxTabsUndefined: Self = StObject.set(x, "checkboxTabs", js.undefined)
+    inline def setCheckboxTabsUndefined: Self = StObject.set(x, "checkboxTabs", js.undefined)
     
-    @scala.inline
-    def setCheckboxTabsVarargs(value: Checkbox*): Self = StObject.set(x, "checkboxTabs", js.Array(value :_*))
+    inline def setCheckboxTabsVarargs(value: Checkbox*): Self = StObject.set(x, "checkboxTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setCommentThreadTabs(value: js.Array[CommentThread]): Self = StObject.set(x, "commentThreadTabs", value.asInstanceOf[js.Any])
+    inline def setCommentThreadTabs(value: js.Array[CommentThread]): Self = StObject.set(x, "commentThreadTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentThreadTabsUndefined: Self = StObject.set(x, "commentThreadTabs", js.undefined)
+    inline def setCommentThreadTabsUndefined: Self = StObject.set(x, "commentThreadTabs", js.undefined)
     
-    @scala.inline
-    def setCommentThreadTabsVarargs(value: CommentThread*): Self = StObject.set(x, "commentThreadTabs", js.Array(value :_*))
+    inline def setCommentThreadTabsVarargs(value: CommentThread*): Self = StObject.set(x, "commentThreadTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setCompanyTabs(value: js.Array[Company]): Self = StObject.set(x, "companyTabs", value.asInstanceOf[js.Any])
+    inline def setCompanyTabs(value: js.Array[Company]): Self = StObject.set(x, "companyTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyTabsUndefined: Self = StObject.set(x, "companyTabs", js.undefined)
+    inline def setCompanyTabsUndefined: Self = StObject.set(x, "companyTabs", js.undefined)
     
-    @scala.inline
-    def setCompanyTabsVarargs(value: Company*): Self = StObject.set(x, "companyTabs", js.Array(value :_*))
+    inline def setCompanyTabsVarargs(value: Company*): Self = StObject.set(x, "companyTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setDateSignedTabs(value: js.Array[DateSigned]): Self = StObject.set(x, "dateSignedTabs", value.asInstanceOf[js.Any])
+    inline def setDateSignedTabs(value: js.Array[DateSigned]): Self = StObject.set(x, "dateSignedTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateSignedTabsUndefined: Self = StObject.set(x, "dateSignedTabs", js.undefined)
+    inline def setDateSignedTabsUndefined: Self = StObject.set(x, "dateSignedTabs", js.undefined)
     
-    @scala.inline
-    def setDateSignedTabsVarargs(value: DateSigned*): Self = StObject.set(x, "dateSignedTabs", js.Array(value :_*))
+    inline def setDateSignedTabsVarargs(value: DateSigned*): Self = StObject.set(x, "dateSignedTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setDateTabs(value: js.Array[Date]): Self = StObject.set(x, "dateTabs", value.asInstanceOf[js.Any])
+    inline def setDateTabs(value: js.Array[Date]): Self = StObject.set(x, "dateTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTabsUndefined: Self = StObject.set(x, "dateTabs", js.undefined)
+    inline def setDateTabsUndefined: Self = StObject.set(x, "dateTabs", js.undefined)
     
-    @scala.inline
-    def setDateTabsVarargs(value: Date*): Self = StObject.set(x, "dateTabs", js.Array(value :_*))
+    inline def setDateTabsVarargs(value: Date*): Self = StObject.set(x, "dateTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setDeclineTabs(value: js.Array[Decline]): Self = StObject.set(x, "declineTabs", value.asInstanceOf[js.Any])
+    inline def setDeclineTabs(value: js.Array[Decline]): Self = StObject.set(x, "declineTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclineTabsUndefined: Self = StObject.set(x, "declineTabs", js.undefined)
+    inline def setDeclineTabsUndefined: Self = StObject.set(x, "declineTabs", js.undefined)
     
-    @scala.inline
-    def setDeclineTabsVarargs(value: Decline*): Self = StObject.set(x, "declineTabs", js.Array(value :_*))
+    inline def setDeclineTabsVarargs(value: Decline*): Self = StObject.set(x, "declineTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setDrawTabs(value: js.Array[Draw]): Self = StObject.set(x, "drawTabs", value.asInstanceOf[js.Any])
+    inline def setDrawTabs(value: js.Array[Draw]): Self = StObject.set(x, "drawTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawTabsUndefined: Self = StObject.set(x, "drawTabs", js.undefined)
+    inline def setDrawTabsUndefined: Self = StObject.set(x, "drawTabs", js.undefined)
     
-    @scala.inline
-    def setDrawTabsVarargs(value: Draw*): Self = StObject.set(x, "drawTabs", js.Array(value :_*))
+    inline def setDrawTabsVarargs(value: Draw*): Self = StObject.set(x, "drawTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setEmailAddressTabs(value: js.Array[EmailAddress]): Self = StObject.set(x, "emailAddressTabs", value.asInstanceOf[js.Any])
+    inline def setEmailAddressTabs(value: js.Array[EmailAddress]): Self = StObject.set(x, "emailAddressTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressTabsUndefined: Self = StObject.set(x, "emailAddressTabs", js.undefined)
+    inline def setEmailAddressTabsUndefined: Self = StObject.set(x, "emailAddressTabs", js.undefined)
     
-    @scala.inline
-    def setEmailAddressTabsVarargs(value: EmailAddress*): Self = StObject.set(x, "emailAddressTabs", js.Array(value :_*))
+    inline def setEmailAddressTabsVarargs(value: EmailAddress*): Self = StObject.set(x, "emailAddressTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setEmailTabs(value: js.Array[Email]): Self = StObject.set(x, "emailTabs", value.asInstanceOf[js.Any])
+    inline def setEmailTabs(value: js.Array[Email]): Self = StObject.set(x, "emailTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailTabsUndefined: Self = StObject.set(x, "emailTabs", js.undefined)
+    inline def setEmailTabsUndefined: Self = StObject.set(x, "emailTabs", js.undefined)
     
-    @scala.inline
-    def setEmailTabsVarargs(value: Email*): Self = StObject.set(x, "emailTabs", js.Array(value :_*))
+    inline def setEmailTabsVarargs(value: Email*): Self = StObject.set(x, "emailTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvelopeIdTabs(value: js.Array[EnvelopeId]): Self = StObject.set(x, "envelopeIdTabs", value.asInstanceOf[js.Any])
+    inline def setEnvelopeIdTabs(value: js.Array[EnvelopeId]): Self = StObject.set(x, "envelopeIdTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeIdTabsUndefined: Self = StObject.set(x, "envelopeIdTabs", js.undefined)
+    inline def setEnvelopeIdTabsUndefined: Self = StObject.set(x, "envelopeIdTabs", js.undefined)
     
-    @scala.inline
-    def setEnvelopeIdTabsVarargs(value: EnvelopeId*): Self = StObject.set(x, "envelopeIdTabs", js.Array(value :_*))
+    inline def setEnvelopeIdTabsVarargs(value: EnvelopeId*): Self = StObject.set(x, "envelopeIdTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setFirstNameTabs(value: js.Array[FirstName]): Self = StObject.set(x, "firstNameTabs", value.asInstanceOf[js.Any])
+    inline def setFirstNameTabs(value: js.Array[FirstName]): Self = StObject.set(x, "firstNameTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstNameTabsUndefined: Self = StObject.set(x, "firstNameTabs", js.undefined)
+    inline def setFirstNameTabsUndefined: Self = StObject.set(x, "firstNameTabs", js.undefined)
     
-    @scala.inline
-    def setFirstNameTabsVarargs(value: FirstName*): Self = StObject.set(x, "firstNameTabs", js.Array(value :_*))
+    inline def setFirstNameTabsVarargs(value: FirstName*): Self = StObject.set(x, "firstNameTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setFormulaTabs(value: js.Array[FormulaTab]): Self = StObject.set(x, "formulaTabs", value.asInstanceOf[js.Any])
+    inline def setFormulaTabs(value: js.Array[FormulaTab]): Self = StObject.set(x, "formulaTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaTabsUndefined: Self = StObject.set(x, "formulaTabs", js.undefined)
+    inline def setFormulaTabsUndefined: Self = StObject.set(x, "formulaTabs", js.undefined)
     
-    @scala.inline
-    def setFormulaTabsVarargs(value: FormulaTab*): Self = StObject.set(x, "formulaTabs", js.Array(value :_*))
+    inline def setFormulaTabsVarargs(value: FormulaTab*): Self = StObject.set(x, "formulaTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setFullNameTabs(value: js.Array[FullName]): Self = StObject.set(x, "fullNameTabs", value.asInstanceOf[js.Any])
+    inline def setFullNameTabs(value: js.Array[FullName]): Self = StObject.set(x, "fullNameTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullNameTabsUndefined: Self = StObject.set(x, "fullNameTabs", js.undefined)
+    inline def setFullNameTabsUndefined: Self = StObject.set(x, "fullNameTabs", js.undefined)
     
-    @scala.inline
-    def setFullNameTabsVarargs(value: FullName*): Self = StObject.set(x, "fullNameTabs", js.Array(value :_*))
+    inline def setFullNameTabsVarargs(value: FullName*): Self = StObject.set(x, "fullNameTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setInitialHereTabs(value: js.Array[InitialHere]): Self = StObject.set(x, "initialHereTabs", value.asInstanceOf[js.Any])
+    inline def setInitialHereTabs(value: js.Array[InitialHere]): Self = StObject.set(x, "initialHereTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialHereTabsUndefined: Self = StObject.set(x, "initialHereTabs", js.undefined)
+    inline def setInitialHereTabsUndefined: Self = StObject.set(x, "initialHereTabs", js.undefined)
     
-    @scala.inline
-    def setInitialHereTabsVarargs(value: InitialHere*): Self = StObject.set(x, "initialHereTabs", js.Array(value :_*))
+    inline def setInitialHereTabsVarargs(value: InitialHere*): Self = StObject.set(x, "initialHereTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setLastNameTabs(value: js.Array[LastName]): Self = StObject.set(x, "lastNameTabs", value.asInstanceOf[js.Any])
+    inline def setLastNameTabs(value: js.Array[LastName]): Self = StObject.set(x, "lastNameTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastNameTabsUndefined: Self = StObject.set(x, "lastNameTabs", js.undefined)
+    inline def setLastNameTabsUndefined: Self = StObject.set(x, "lastNameTabs", js.undefined)
     
-    @scala.inline
-    def setLastNameTabsVarargs(value: LastName*): Self = StObject.set(x, "lastNameTabs", js.Array(value :_*))
+    inline def setLastNameTabsVarargs(value: LastName*): Self = StObject.set(x, "lastNameTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setListTabs(value: js.Array[List]): Self = StObject.set(x, "listTabs", value.asInstanceOf[js.Any])
+    inline def setListTabs(value: js.Array[List]): Self = StObject.set(x, "listTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListTabsUndefined: Self = StObject.set(x, "listTabs", js.undefined)
+    inline def setListTabsUndefined: Self = StObject.set(x, "listTabs", js.undefined)
     
-    @scala.inline
-    def setListTabsVarargs(value: List*): Self = StObject.set(x, "listTabs", js.Array(value :_*))
+    inline def setListTabsVarargs(value: List*): Self = StObject.set(x, "listTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setNotarizeTabs(value: js.Array[Notarize]): Self = StObject.set(x, "notarizeTabs", value.asInstanceOf[js.Any])
+    inline def setNotarizeTabs(value: js.Array[Notarize]): Self = StObject.set(x, "notarizeTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotarizeTabsUndefined: Self = StObject.set(x, "notarizeTabs", js.undefined)
+    inline def setNotarizeTabsUndefined: Self = StObject.set(x, "notarizeTabs", js.undefined)
     
-    @scala.inline
-    def setNotarizeTabsVarargs(value: Notarize*): Self = StObject.set(x, "notarizeTabs", js.Array(value :_*))
+    inline def setNotarizeTabsVarargs(value: Notarize*): Self = StObject.set(x, "notarizeTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setNoteTabs(value: js.Array[Note]): Self = StObject.set(x, "noteTabs", value.asInstanceOf[js.Any])
+    inline def setNoteTabs(value: js.Array[Note]): Self = StObject.set(x, "noteTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteTabsUndefined: Self = StObject.set(x, "noteTabs", js.undefined)
+    inline def setNoteTabsUndefined: Self = StObject.set(x, "noteTabs", js.undefined)
     
-    @scala.inline
-    def setNoteTabsVarargs(value: Note*): Self = StObject.set(x, "noteTabs", js.Array(value :_*))
+    inline def setNoteTabsVarargs(value: Note*): Self = StObject.set(x, "noteTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setNumberTabs(value: js.Array[// tslint:disable-next-line: ban-types
+    inline def setNumberTabs(value: js.Array[// tslint:disable-next-line: ban-types
     Number]): Self = StObject.set(x, "numberTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberTabsUndefined: Self = StObject.set(x, "numberTabs", js.undefined)
+    inline def setNumberTabsUndefined: Self = StObject.set(x, "numberTabs", js.undefined)
     
-    @scala.inline
-    def setNumberTabsVarargs(value: (// tslint:disable-next-line: ban-types
+    inline def setNumberTabsVarargs(value: (// tslint:disable-next-line: ban-types
     Number)*): Self = StObject.set(x, "numberTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setPolyLineOverlayTabs(value: js.Array[PolyLineOverlay]): Self = StObject.set(x, "polyLineOverlayTabs", value.asInstanceOf[js.Any])
+    inline def setPolyLineOverlayTabs(value: js.Array[PolyLineOverlay]): Self = StObject.set(x, "polyLineOverlayTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolyLineOverlayTabsUndefined: Self = StObject.set(x, "polyLineOverlayTabs", js.undefined)
+    inline def setPolyLineOverlayTabsUndefined: Self = StObject.set(x, "polyLineOverlayTabs", js.undefined)
     
-    @scala.inline
-    def setPolyLineOverlayTabsVarargs(value: PolyLineOverlay*): Self = StObject.set(x, "polyLineOverlayTabs", js.Array(value :_*))
+    inline def setPolyLineOverlayTabsVarargs(value: PolyLineOverlay*): Self = StObject.set(x, "polyLineOverlayTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setRadioGroupTabs(value: js.Array[RadioGroup]): Self = StObject.set(x, "radioGroupTabs", value.asInstanceOf[js.Any])
+    inline def setRadioGroupTabs(value: js.Array[RadioGroup]): Self = StObject.set(x, "radioGroupTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioGroupTabsUndefined: Self = StObject.set(x, "radioGroupTabs", js.undefined)
+    inline def setRadioGroupTabsUndefined: Self = StObject.set(x, "radioGroupTabs", js.undefined)
     
-    @scala.inline
-    def setRadioGroupTabsVarargs(value: RadioGroup*): Self = StObject.set(x, "radioGroupTabs", js.Array(value :_*))
+    inline def setRadioGroupTabsVarargs(value: RadioGroup*): Self = StObject.set(x, "radioGroupTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setSignHereTabs(value: js.Array[SignHere]): Self = StObject.set(x, "signHereTabs", value.asInstanceOf[js.Any])
+    inline def setSignHereTabs(value: js.Array[SignHere]): Self = StObject.set(x, "signHereTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignHereTabsUndefined: Self = StObject.set(x, "signHereTabs", js.undefined)
+    inline def setSignHereTabsUndefined: Self = StObject.set(x, "signHereTabs", js.undefined)
     
-    @scala.inline
-    def setSignHereTabsVarargs(value: SignHere*): Self = StObject.set(x, "signHereTabs", js.Array(value :_*))
+    inline def setSignHereTabsVarargs(value: SignHere*): Self = StObject.set(x, "signHereTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setSignerAttachmentTabs(value: js.Array[SignerAttachment]): Self = StObject.set(x, "signerAttachmentTabs", value.asInstanceOf[js.Any])
+    inline def setSignerAttachmentTabs(value: js.Array[SignerAttachment]): Self = StObject.set(x, "signerAttachmentTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerAttachmentTabsUndefined: Self = StObject.set(x, "signerAttachmentTabs", js.undefined)
+    inline def setSignerAttachmentTabsUndefined: Self = StObject.set(x, "signerAttachmentTabs", js.undefined)
     
-    @scala.inline
-    def setSignerAttachmentTabsVarargs(value: SignerAttachment*): Self = StObject.set(x, "signerAttachmentTabs", js.Array(value :_*))
+    inline def setSignerAttachmentTabsVarargs(value: SignerAttachment*): Self = StObject.set(x, "signerAttachmentTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setSmartSectionTabs(value: js.Array[SmartSection]): Self = StObject.set(x, "smartSectionTabs", value.asInstanceOf[js.Any])
+    inline def setSmartSectionTabs(value: js.Array[SmartSection]): Self = StObject.set(x, "smartSectionTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmartSectionTabsUndefined: Self = StObject.set(x, "smartSectionTabs", js.undefined)
+    inline def setSmartSectionTabsUndefined: Self = StObject.set(x, "smartSectionTabs", js.undefined)
     
-    @scala.inline
-    def setSmartSectionTabsVarargs(value: SmartSection*): Self = StObject.set(x, "smartSectionTabs", js.Array(value :_*))
+    inline def setSmartSectionTabsVarargs(value: SmartSection*): Self = StObject.set(x, "smartSectionTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setSsnTabs(value: js.Array[Ssn]): Self = StObject.set(x, "ssnTabs", value.asInstanceOf[js.Any])
+    inline def setSsnTabs(value: js.Array[Ssn]): Self = StObject.set(x, "ssnTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsnTabsUndefined: Self = StObject.set(x, "ssnTabs", js.undefined)
+    inline def setSsnTabsUndefined: Self = StObject.set(x, "ssnTabs", js.undefined)
     
-    @scala.inline
-    def setSsnTabsVarargs(value: Ssn*): Self = StObject.set(x, "ssnTabs", js.Array(value :_*))
+    inline def setSsnTabsVarargs(value: Ssn*): Self = StObject.set(x, "ssnTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setTabGroups(value: js.Array[TabGroup]): Self = StObject.set(x, "tabGroups", value.asInstanceOf[js.Any])
+    inline def setTabGroups(value: js.Array[TabGroup]): Self = StObject.set(x, "tabGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabGroupsUndefined: Self = StObject.set(x, "tabGroups", js.undefined)
+    inline def setTabGroupsUndefined: Self = StObject.set(x, "tabGroups", js.undefined)
     
-    @scala.inline
-    def setTabGroupsVarargs(value: TabGroup*): Self = StObject.set(x, "tabGroups", js.Array(value :_*))
+    inline def setTabGroupsVarargs(value: TabGroup*): Self = StObject.set(x, "tabGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setTextTabs(value: js.Array[Text]): Self = StObject.set(x, "textTabs", value.asInstanceOf[js.Any])
+    inline def setTextTabs(value: js.Array[Text]): Self = StObject.set(x, "textTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTabsUndefined: Self = StObject.set(x, "textTabs", js.undefined)
+    inline def setTextTabsUndefined: Self = StObject.set(x, "textTabs", js.undefined)
     
-    @scala.inline
-    def setTextTabsVarargs(value: Text*): Self = StObject.set(x, "textTabs", js.Array(value :_*))
+    inline def setTextTabsVarargs(value: Text*): Self = StObject.set(x, "textTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setTitleTabs(value: js.Array[Title]): Self = StObject.set(x, "titleTabs", value.asInstanceOf[js.Any])
+    inline def setTitleTabs(value: js.Array[Title]): Self = StObject.set(x, "titleTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleTabsUndefined: Self = StObject.set(x, "titleTabs", js.undefined)
+    inline def setTitleTabsUndefined: Self = StObject.set(x, "titleTabs", js.undefined)
     
-    @scala.inline
-    def setTitleTabsVarargs(value: Title*): Self = StObject.set(x, "titleTabs", js.Array(value :_*))
+    inline def setTitleTabsVarargs(value: Title*): Self = StObject.set(x, "titleTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setViewTabs(
+    inline def setViewTabs(
       value: js.Array[
           /* This tab is used with the Approve tab to handle supplemental documents. */ View
         ]
     ): Self = StObject.set(x, "viewTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewTabsUndefined: Self = StObject.set(x, "viewTabs", js.undefined)
+    inline def setViewTabsUndefined: Self = StObject.set(x, "viewTabs", js.undefined)
     
-    @scala.inline
-    def setViewTabsVarargs(value: (/* This tab is used with the Approve tab to handle supplemental documents. */ View)*): Self = StObject.set(x, "viewTabs", js.Array(value :_*))
+    inline def setViewTabsVarargs(value: (/* This tab is used with the Approve tab to handle supplemental documents. */ View)*): Self = StObject.set(x, "viewTabs", js.Array(value :_*))
     
-    @scala.inline
-    def setZipTabs(value: js.Array[Zip]): Self = StObject.set(x, "zipTabs", value.asInstanceOf[js.Any])
+    inline def setZipTabs(value: js.Array[Zip]): Self = StObject.set(x, "zipTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipTabsUndefined: Self = StObject.set(x, "zipTabs", js.undefined)
+    inline def setZipTabsUndefined: Self = StObject.set(x, "zipTabs", js.undefined)
     
-    @scala.inline
-    def setZipTabsVarargs(value: Zip*): Self = StObject.set(x, "zipTabs", js.Array(value :_*))
+    inline def setZipTabsVarargs(value: Zip*): Self = StObject.set(x, "zipTabs", js.Array(value :_*))
   }
 }

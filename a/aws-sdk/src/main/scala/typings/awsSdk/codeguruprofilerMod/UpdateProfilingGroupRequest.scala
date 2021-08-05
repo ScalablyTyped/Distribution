@@ -18,19 +18,15 @@ trait UpdateProfilingGroupRequest extends StObject {
 }
 object UpdateProfilingGroupRequest {
   
-  @scala.inline
-  def apply(agentOrchestrationConfig: AgentOrchestrationConfig, profilingGroupName: ProfilingGroupName): UpdateProfilingGroupRequest = {
+  inline def apply(agentOrchestrationConfig: AgentOrchestrationConfig, profilingGroupName: ProfilingGroupName): UpdateProfilingGroupRequest = {
     val __obj = js.Dynamic.literal(agentOrchestrationConfig = agentOrchestrationConfig.asInstanceOf[js.Any], profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProfilingGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdateProfilingGroupRequestMutableBuilder[Self <: UpdateProfilingGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateProfilingGroupRequest](x: Self) {
     
-    @scala.inline
-    def setAgentOrchestrationConfig(value: AgentOrchestrationConfig): Self = StObject.set(x, "agentOrchestrationConfig", value.asInstanceOf[js.Any])
+    inline def setAgentOrchestrationConfig(value: AgentOrchestrationConfig): Self = StObject.set(x, "agentOrchestrationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
+    inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
   }
 }

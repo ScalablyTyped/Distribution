@@ -23,31 +23,23 @@ trait RoutingStrategy extends StObject {
 }
 object RoutingStrategy {
   
-  @scala.inline
-  def apply(): RoutingStrategy = {
+  inline def apply(): RoutingStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoutingStrategy]
   }
   
-  @scala.inline
-  implicit class RoutingStrategyMutableBuilder[Self <: RoutingStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: RoutingStrategy](x: Self) {
     
-    @scala.inline
-    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
-    @scala.inline
-    def setMessage(value: FreeText): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: FreeText): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setType(value: RoutingStrategyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RoutingStrategyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

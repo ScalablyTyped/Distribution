@@ -40,14 +40,10 @@ object ClassService {
     * 
     */
   /* static member */
-  @scala.inline
-  def install(name: String, cmd: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(name.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def install(name: String, cmd: String, displayName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(name.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def install(name: String, cmd: String, displayName: String, description: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(name.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def install(name: String, cmd: String, displayName: Unit, description: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(name.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def install(name: String, cmd: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(name.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def install(name: String, cmd: String, displayName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(name.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def install(name: String, cmd: String, displayName: String, description: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(name.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def install(name: String, cmd: String, displayName: Unit, description: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(name.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * 
@@ -59,8 +55,7 @@ object ClassService {
     * 
     */
   /* static member */
-  @scala.inline
-  def isInstalled(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstalled")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInstalled(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstalled")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * 
@@ -72,8 +67,7 @@ object ClassService {
     * 
     */
   /* static member */
-  @scala.inline
-  def isRunning(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRunning")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRunning(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRunning")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * 
@@ -84,8 +78,7 @@ object ClassService {
     * 
     */
   /* static member */
-  @scala.inline
-  def remove(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def remove(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 
@@ -96,8 +89,7 @@ object ClassService {
     * 
     */
   /* static member */
-  @scala.inline
-  def restart(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restart")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def restart(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restart")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 
@@ -108,8 +100,7 @@ object ClassService {
     * 
     */
   /* static member */
-  @scala.inline
-  def start(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def start(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 
@@ -120,6 +111,5 @@ object ClassService {
     * 
     */
   /* static member */
-  @scala.inline
-  def stop(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def stop(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

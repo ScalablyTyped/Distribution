@@ -18,19 +18,15 @@ trait GetTerminologyRequest extends StObject {
 }
 object GetTerminologyRequest {
   
-  @scala.inline
-  def apply(Name: ResourceName, TerminologyDataFormat: TerminologyDataFormat): GetTerminologyRequest = {
+  inline def apply(Name: ResourceName, TerminologyDataFormat: TerminologyDataFormat): GetTerminologyRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], TerminologyDataFormat = TerminologyDataFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTerminologyRequest]
   }
   
-  @scala.inline
-  implicit class GetTerminologyRequestMutableBuilder[Self <: GetTerminologyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetTerminologyRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminologyDataFormat(value: TerminologyDataFormat): Self = StObject.set(x, "TerminologyDataFormat", value.asInstanceOf[js.Any])
+    inline def setTerminologyDataFormat(value: TerminologyDataFormat): Self = StObject.set(x, "TerminologyDataFormat", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait ListVirtualMFADevicesRequest extends StObject {
 }
 object ListVirtualMFADevicesRequest {
   
-  @scala.inline
-  def apply(): ListVirtualMFADevicesRequest = {
+  inline def apply(): ListVirtualMFADevicesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListVirtualMFADevicesRequest]
   }
   
-  @scala.inline
-  implicit class ListVirtualMFADevicesRequestMutableBuilder[Self <: ListVirtualMFADevicesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListVirtualMFADevicesRequest](x: Self) {
     
-    @scala.inline
-    def setAssignmentStatus(value: assignmentStatusType): Self = StObject.set(x, "AssignmentStatus", value.asInstanceOf[js.Any])
+    inline def setAssignmentStatus(value: assignmentStatusType): Self = StObject.set(x, "AssignmentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentStatusUndefined: Self = StObject.set(x, "AssignmentStatus", js.undefined)
+    inline def setAssignmentStatusUndefined: Self = StObject.set(x, "AssignmentStatus", js.undefined)
     
-    @scala.inline
-    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

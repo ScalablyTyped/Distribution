@@ -20,49 +20,35 @@ trait IgnoreRoot extends StObject {
 }
 object IgnoreRoot {
   
-  @scala.inline
-  def apply(): IgnoreRoot = {
+  inline def apply(): IgnoreRoot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgnoreRoot]
   }
   
-  @scala.inline
-  implicit class IgnoreRootMutableBuilder[Self <: IgnoreRoot] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreRoot](x: Self) {
     
-    @scala.inline
-    def setIgnoreRoot(value: Boolean): Self = StObject.set(x, "ignoreRoot", value.asInstanceOf[js.Any])
+    inline def setIgnoreRoot(value: Boolean): Self = StObject.set(x, "ignoreRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreRootUndefined: Self = StObject.set(x, "ignoreRoot", js.undefined)
+    inline def setIgnoreRootUndefined: Self = StObject.set(x, "ignoreRoot", js.undefined)
     
-    @scala.inline
-    def setRenderUIElements(value: Boolean): Self = StObject.set(x, "renderUIElements", value.asInstanceOf[js.Any])
+    inline def setRenderUIElements(value: Boolean): Self = StObject.set(x, "renderUIElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderUIElementsUndefined: Self = StObject.set(x, "renderUIElements", js.undefined)
+    inline def setRenderUIElementsUndefined: Self = StObject.set(x, "renderUIElements", js.undefined)
     
-    @scala.inline
-    def setSameSelectionCharacters(value: Boolean): Self = StObject.set(x, "sameSelectionCharacters", value.asInstanceOf[js.Any])
+    inline def setSameSelectionCharacters(value: Boolean): Self = StObject.set(x, "sameSelectionCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSameSelectionCharactersUndefined: Self = StObject.set(x, "sameSelectionCharacters", js.undefined)
+    inline def setSameSelectionCharactersUndefined: Self = StObject.set(x, "sameSelectionCharacters", js.undefined)
     
-    @scala.inline
-    def setShowAttributeElementId(value: Boolean): Self = StObject.set(x, "showAttributeElementId", value.asInstanceOf[js.Any])
+    inline def setShowAttributeElementId(value: Boolean): Self = StObject.set(x, "showAttributeElementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAttributeElementIdUndefined: Self = StObject.set(x, "showAttributeElementId", js.undefined)
+    inline def setShowAttributeElementIdUndefined: Self = StObject.set(x, "showAttributeElementId", js.undefined)
     
-    @scala.inline
-    def setShowPriority(value: Boolean): Self = StObject.set(x, "showPriority", value.asInstanceOf[js.Any])
+    inline def setShowPriority(value: Boolean): Self = StObject.set(x, "showPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPriorityUndefined: Self = StObject.set(x, "showPriority", js.undefined)
+    inline def setShowPriorityUndefined: Self = StObject.set(x, "showPriority", js.undefined)
     
-    @scala.inline
-    def setShowType(value: Boolean): Self = StObject.set(x, "showType", value.asInstanceOf[js.Any])
+    inline def setShowType(value: Boolean): Self = StObject.set(x, "showType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTypeUndefined: Self = StObject.set(x, "showType", js.undefined)
+    inline def setShowTypeUndefined: Self = StObject.set(x, "showType", js.undefined)
   }
 }

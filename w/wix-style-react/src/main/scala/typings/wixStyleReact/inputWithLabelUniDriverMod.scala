@@ -31,8 +31,7 @@ object inputWithLabelUniDriverMod {
   }
   object InputWithLabelUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickInput: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -50,35 +49,25 @@ object inputWithLabelUniDriverMod {
       __obj.asInstanceOf[InputWithLabelUniDriver]
     }
     
-    @scala.inline
-    implicit class InputWithLabelUniDriverMutableBuilder[Self <: InputWithLabelUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: InputWithLabelUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickInput(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickInput", js.Any.fromFunction0(value))
+      inline def setClickInput(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
+      inline def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetErrorMessage(value: () => js.Promise[String]): Self = StObject.set(x, "getErrorMessage", js.Any.fromFunction0(value))
+      inline def setGetErrorMessage(value: () => js.Promise[String]): Self = StObject.set(x, "getErrorMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelText(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
+      inline def setGetLabelText(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSuffixesCount(value: () => js.Promise[Double]): Self = StObject.set(x, "getSuffixesCount", js.Any.fromFunction0(value))
+      inline def setGetSuffixesCount(value: () => js.Promise[Double]): Self = StObject.set(x, "getSuffixesCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasErrorMessage(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasErrorMessage", js.Any.fromFunction0(value))
+      inline def setHasErrorMessage(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasErrorMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCustomInput(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCustomInput", js.Any.fromFunction0(value))
+      inline def setIsCustomInput(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCustomInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFocusedStyle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFocusedStyle", js.Any.fromFunction0(value))
+      inline def setIsFocusedStyle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFocusedStyle", js.Any.fromFunction0(value))
     }
   }
 }

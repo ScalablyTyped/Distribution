@@ -14,25 +14,19 @@ trait OpenSelectDialogOptions extends StObject {
 }
 object OpenSelectDialogOptions {
   
-  @scala.inline
-  def apply(): OpenSelectDialogOptions = {
+  inline def apply(): OpenSelectDialogOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenSelectDialogOptions]
   }
   
-  @scala.inline
-  implicit class OpenSelectDialogOptionsMutableBuilder[Self <: OpenSelectDialogOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenSelectDialogOptions](x: Self) {
     
-    @scala.inline
-    def setShowImages(value: Boolean): Self = StObject.set(x, "showImages", value.asInstanceOf[js.Any])
+    inline def setShowImages(value: Boolean): Self = StObject.set(x, "showImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowImagesUndefined: Self = StObject.set(x, "showImages", js.undefined)
+    inline def setShowImagesUndefined: Self = StObject.set(x, "showImages", js.undefined)
     
-    @scala.inline
-    def setShowVideos(value: Boolean): Self = StObject.set(x, "showVideos", value.asInstanceOf[js.Any])
+    inline def setShowVideos(value: Boolean): Self = StObject.set(x, "showVideos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowVideosUndefined: Self = StObject.set(x, "showVideos", js.undefined)
+    inline def setShowVideosUndefined: Self = StObject.set(x, "showVideos", js.undefined)
   }
 }

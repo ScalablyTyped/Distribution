@@ -25,31 +25,23 @@ trait DefineBusinessRuleOptions extends StObject {
 }
 object DefineBusinessRuleOptions {
   
-  @scala.inline
-  def apply(): DefineBusinessRuleOptions = {
+  inline def apply(): DefineBusinessRuleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefineBusinessRuleOptions]
   }
   
-  @scala.inline
-  implicit class DefineBusinessRuleOptionsMutableBuilder[Self <: DefineBusinessRuleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DefineBusinessRuleOptions](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }
 }

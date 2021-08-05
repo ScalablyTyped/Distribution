@@ -21,19 +21,15 @@ trait ExternalMetricSource extends StObject {
 }
 object ExternalMetricSource {
   
-  @scala.inline
-  def apply(metric: MetricIdentifier, target: MetricTarget): ExternalMetricSource = {
+  inline def apply(metric: MetricIdentifier, target: MetricTarget): ExternalMetricSource = {
     val __obj = js.Dynamic.literal(metric = metric.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalMetricSource]
   }
   
-  @scala.inline
-  implicit class ExternalMetricSourceMutableBuilder[Self <: ExternalMetricSource] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalMetricSource](x: Self) {
     
-    @scala.inline
-    def setMetric(value: MetricIdentifier): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: MetricIdentifier): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: MetricTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: MetricTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

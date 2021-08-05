@@ -11,7 +11,7 @@ class ReflectionFlags ()
   extends StObject
      with Array[String] {
   
-  var flags: js.Any = js.native
+  /* private */ var flags: js.Any = js.native
   
   def hasExportAssignment: Boolean = js.native
   
@@ -45,5 +45,5 @@ class ReflectionFlags ()
   
   def setFlag(flag: ReflectionFlag, set: Boolean): Unit = js.native
   
-  var setSingleFlag: js.Any = js.native
+  /* private */ var setSingleFlag: js.Any = js.native
 }

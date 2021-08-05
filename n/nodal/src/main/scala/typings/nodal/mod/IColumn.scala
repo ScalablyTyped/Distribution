@@ -14,23 +14,18 @@ trait IColumn extends StObject {
 }
 object IColumn {
   
-  @scala.inline
-  def apply(name: String, properties: IColumnProperties, `type`: DataType): IColumn = {
+  inline def apply(name: String, properties: IColumnProperties, `type`: DataType): IColumn = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumn]
   }
   
-  @scala.inline
-  implicit class IColumnMutableBuilder[Self <: IColumn] (val x: Self) extends AnyVal {
+  extension [Self <: IColumn](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IColumnProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IColumnProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

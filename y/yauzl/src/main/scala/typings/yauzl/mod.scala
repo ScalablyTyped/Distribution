@@ -137,73 +137,57 @@ object mod {
     var validateEntrySizes: Boolean = js.native
   }
   
-  @scala.inline
-  def dosDateTimeToDate(date: Double, time: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("dosDateTimeToDate")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def dosDateTimeToDate(date: Double, time: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("dosDateTimeToDate")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @scala.inline
-  def fromBuffer(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def fromBuffer(
+  inline def fromBuffer(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def fromBuffer(
     buffer: Buffer,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fromBuffer(buffer: Buffer, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fromBuffer(
+  inline def fromBuffer(buffer: Buffer, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromBuffer(
     buffer: Buffer,
     options: Options,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fromFd(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def fromFd(
+  inline def fromFd(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def fromFd(
     fd: Double,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fromFd(fd: Double, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fromFd(
+  inline def fromFd(fd: Double, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromFd(
     fd: Double,
     options: Options,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fromRandomAccessReader(
+  inline def fromRandomAccessReader(
     reader: RandomAccessReader,
     totalSize: Double,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandomAccessReader")(reader.asInstanceOf[js.Any], totalSize.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fromRandomAccessReader(
+  inline def fromRandomAccessReader(
     reader: RandomAccessReader,
     totalSize: Double,
     options: Options,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandomAccessReader")(reader.asInstanceOf[js.Any], totalSize.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def open(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def open(
+  inline def open(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def open(
     path: String,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def open(path: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def open(
+  inline def open(path: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def open(
     path: String,
     options: Options,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def validateFileName(fileName: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validateFileName")(fileName.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def validateFileName(fileName: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validateFileName")(fileName.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   trait Options extends StObject {
     
@@ -219,44 +203,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+      inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
+      inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
       
-      @scala.inline
-      def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
+      inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
+      inline def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
       
-      @scala.inline
-      def setLazyEntries(value: Boolean): Self = StObject.set(x, "lazyEntries", value.asInstanceOf[js.Any])
+      inline def setLazyEntries(value: Boolean): Self = StObject.set(x, "lazyEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyEntriesUndefined: Self = StObject.set(x, "lazyEntries", js.undefined)
+      inline def setLazyEntriesUndefined: Self = StObject.set(x, "lazyEntries", js.undefined)
       
-      @scala.inline
-      def setStrictFileNames(value: Boolean): Self = StObject.set(x, "strictFileNames", value.asInstanceOf[js.Any])
+      inline def setStrictFileNames(value: Boolean): Self = StObject.set(x, "strictFileNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictFileNamesUndefined: Self = StObject.set(x, "strictFileNames", js.undefined)
+      inline def setStrictFileNamesUndefined: Self = StObject.set(x, "strictFileNames", js.undefined)
       
-      @scala.inline
-      def setValidateEntrySizes(value: Boolean): Self = StObject.set(x, "validateEntrySizes", value.asInstanceOf[js.Any])
+      inline def setValidateEntrySizes(value: Boolean): Self = StObject.set(x, "validateEntrySizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateEntrySizesUndefined: Self = StObject.set(x, "validateEntrySizes", js.undefined)
+      inline def setValidateEntrySizesUndefined: Self = StObject.set(x, "validateEntrySizes", js.undefined)
     }
   }
   
@@ -272,38 +244,28 @@ object mod {
   }
   object ZipFileOptions {
     
-    @scala.inline
-    def apply(): ZipFileOptions = {
+    inline def apply(): ZipFileOptions = {
       val __obj = js.Dynamic.literal(decompress = null, decrypt = null, end = null, start = null)
       __obj.asInstanceOf[ZipFileOptions]
     }
     
-    @scala.inline
-    implicit class ZipFileOptionsMutableBuilder[Self <: ZipFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ZipFileOptions](x: Self) {
       
-      @scala.inline
-      def setDecompress(value: Boolean): Self = StObject.set(x, "decompress", value.asInstanceOf[js.Any])
+      inline def setDecompress(value: Boolean): Self = StObject.set(x, "decompress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecompressNull: Self = StObject.set(x, "decompress", null)
+      inline def setDecompressNull: Self = StObject.set(x, "decompress", null)
       
-      @scala.inline
-      def setDecrypt(value: Boolean): Self = StObject.set(x, "decrypt", value.asInstanceOf[js.Any])
+      inline def setDecrypt(value: Boolean): Self = StObject.set(x, "decrypt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecryptNull: Self = StObject.set(x, "decrypt", null)
+      inline def setDecryptNull: Self = StObject.set(x, "decrypt", null)
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndNull: Self = StObject.set(x, "end", null)
+      inline def setEndNull: Self = StObject.set(x, "end", null)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartNull: Self = StObject.set(x, "start", null)
+      inline def setStartNull: Self = StObject.set(x, "start", null)
     }
   }
 }

@@ -17,7 +17,7 @@ object xmlMod {
     /**
       * @hidden
       */
-    var _Copy_constructor: js.Any = js.native
+    /* private */ var _Copy_constructor: js.Any = js.native
     
     /* protected */ def _Handle_insert(
       first: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<string, XMLList> */ js.Any,
@@ -27,32 +27,32 @@ object xmlMod {
     /**
       * @hidden
       */
-    var _Parse: js.Any = js.native
+    /* private */ var _Parse: js.Any = js.native
     
     /**
       * @hidden
       */
-    var _Parse_children: js.Any = js.native
+    /* private */ var _Parse_children: js.Any = js.native
     
     /**
       * @hidden
       */
-    var _Parse_properties: js.Any = js.native
+    /* private */ var _Parse_properties: js.Any = js.native
     
     /**
       * @hidden
       */
-    var _Parse_tag: js.Any = js.native
+    /* private */ var _Parse_tag: js.Any = js.native
     
     /**
       * @hidden
       */
-    var _Parse_value: js.Any = js.native
+    /* private */ var _Parse_value: js.Any = js.native
     
     /**
       * @hidden
       */
-    var _Parser_constructor: js.Any = js.native
+    /* private */ var _Parser_constructor: js.Any = js.native
     
     def eraseProperty(key: String): Unit = js.native
     
@@ -73,7 +73,7 @@ object xmlMod {
     /**
       * @hidden
       */
-    var property_map_ : js.Any = js.native
+    /* private */ var property_map_ : js.Any = js.native
     
     def push(
       args: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPair<string, XMLList> */ js.Any) | XML | XMLList)*
@@ -88,14 +88,14 @@ object xmlMod {
     /**
       * @hidden
       */
-    var tag_ : js.Any = js.native
+    /* private */ var tag_ : js.Any = js.native
     
     def toString(tab: Double): String = js.native
     
     /**
       * @hidden
       */
-    var value_ : js.Any = js.native
+    /* private */ var value_ : js.Any = js.native
   }
   /* static members */
   object XML {
@@ -110,8 +110,7 @@ object xmlMod {
     @JSImport("sxml/lib/module/XML", "XML._Compute_min_index")
     @js.native
     def _Compute_min_index: js.Any = js.native
-    @scala.inline
-    def _Compute_min_index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Compute_min_index")(x.asInstanceOf[js.Any])
+    inline def _Compute_min_index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Compute_min_index")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
@@ -119,25 +118,18 @@ object xmlMod {
     @JSImport("sxml/lib/module/XML", "XML._Repeat")
     @js.native
     def _Repeat: js.Any = js.native
-    @scala.inline
-    def _Repeat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
+    inline def _Repeat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def decodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def decodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def decodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def decodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def encodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def encodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def encodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def encodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def head(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")().asInstanceOf[String]
-    @scala.inline
-    def head(encoding: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(encoding.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def head(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")().asInstanceOf[String]
+    inline def head(encoding: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(encoding.asInstanceOf[js.Any]).asInstanceOf[String]
     
     type Iterator_ = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<string, XMLList> */ js.Any
     

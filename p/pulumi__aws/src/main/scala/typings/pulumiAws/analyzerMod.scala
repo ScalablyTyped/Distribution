@@ -58,21 +58,16 @@ object analyzerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Analyzer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Analyzer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Analyzer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Analyzer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AnalyzerState): Analyzer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Analyzer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AnalyzerState, opts: CustomResourceOptions): Analyzer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Analyzer]
+    inline def get(name: String, id: Input[ID]): Analyzer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Analyzer]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Analyzer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Analyzer]
+    inline def get(name: String, id: Input[ID], state: AnalyzerState): Analyzer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Analyzer]
+    inline def get(name: String, id: Input[ID], state: AnalyzerState, opts: CustomResourceOptions): Analyzer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Analyzer]
     
     /**
       * Returns true if the given object is an instance of Analyzer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/accessanalyzer/analyzer.Analyzer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/accessanalyzer/analyzer.Analyzer */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/accessanalyzer/analyzer.Analyzer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/accessanalyzer/analyzer.Analyzer */ Boolean]
   }
   
   trait AnalyzerArgs extends StObject {
@@ -94,29 +89,22 @@ object analyzerMod {
   }
   object AnalyzerArgs {
     
-    @scala.inline
-    def apply(analyzerName: Input[String]): AnalyzerArgs = {
+    inline def apply(analyzerName: Input[String]): AnalyzerArgs = {
       val __obj = js.Dynamic.literal(analyzerName = analyzerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnalyzerArgs]
     }
     
-    @scala.inline
-    implicit class AnalyzerArgsMutableBuilder[Self <: AnalyzerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AnalyzerArgs](x: Self) {
       
-      @scala.inline
-      def setAnalyzerName(value: Input[String]): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
+      inline def setAnalyzerName(value: Input[String]): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -141,38 +129,28 @@ object analyzerMod {
   }
   object AnalyzerState {
     
-    @scala.inline
-    def apply(): AnalyzerState = {
+    inline def apply(): AnalyzerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnalyzerState]
     }
     
-    @scala.inline
-    implicit class AnalyzerStateMutableBuilder[Self <: AnalyzerState] (val x: Self) extends AnyVal {
+    extension [Self <: AnalyzerState](x: Self) {
       
-      @scala.inline
-      def setAnalyzerName(value: Input[String]): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
+      inline def setAnalyzerName(value: Input[String]): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnalyzerNameUndefined: Self = StObject.set(x, "analyzerName", js.undefined)
+      inline def setAnalyzerNameUndefined: Self = StObject.set(x, "analyzerName", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

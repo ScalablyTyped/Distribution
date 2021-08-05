@@ -23,28 +23,21 @@ trait MultipleQueriesQuery extends StObject {
 }
 object MultipleQueriesQuery {
   
-  @scala.inline
-  def apply(indexName: String): MultipleQueriesQuery = {
+  inline def apply(indexName: String): MultipleQueriesQuery = {
     val __obj = js.Dynamic.literal(indexName = indexName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleQueriesQuery]
   }
   
-  @scala.inline
-  implicit class MultipleQueriesQueryMutableBuilder[Self <: MultipleQueriesQuery] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleQueriesQuery](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: SearchOptions): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: SearchOptions): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

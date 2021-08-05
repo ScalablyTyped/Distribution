@@ -36,8 +36,7 @@ trait LevelPeriod extends StObject {
 }
 object LevelPeriod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     effect: js.Tuple5[
       typings.screeps.screepsNumbers.`2`, 
       typings.screeps.screepsNumbers.`4`, 
@@ -57,20 +56,15 @@ object LevelPeriod {
     __obj.asInstanceOf[LevelPeriod]
   }
   
-  @scala.inline
-  implicit class LevelPeriodMutableBuilder[Self <: LevelPeriod] (val x: Self) extends AnyVal {
+  extension [Self <: LevelPeriod](x: Self) {
     
-    @scala.inline
-    def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCooldown(value: `100`): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
+    inline def setCooldown(value: `100`): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: `100`): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: `100`): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffect(
+    inline def setEffect(
       value: js.Tuple5[
           typings.screeps.screepsNumbers.`2`, 
           typings.screeps.screepsNumbers.`4`, 
@@ -80,8 +74,7 @@ object LevelPeriod {
         ]
     ): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(
+    inline def setLevel(
       value: js.Tuple5[
           typings.screeps.screepsNumbers.`10`, 
           typings.screeps.screepsNumbers.`11`, 
@@ -91,10 +84,8 @@ object LevelPeriod {
         ]
     ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: typings.screeps.screepsNumbers.`10`): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: typings.screeps.screepsNumbers.`10`): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

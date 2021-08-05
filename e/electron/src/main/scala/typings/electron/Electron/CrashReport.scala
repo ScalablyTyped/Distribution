@@ -14,19 +14,15 @@ trait CrashReport extends StObject {
 }
 object CrashReport {
   
-  @scala.inline
-  def apply(date: Date, id: String): CrashReport = {
+  inline def apply(date: Date, id: String): CrashReport = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrashReport]
   }
   
-  @scala.inline
-  implicit class CrashReportMutableBuilder[Self <: CrashReport] (val x: Self) extends AnyVal {
+  extension [Self <: CrashReport](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

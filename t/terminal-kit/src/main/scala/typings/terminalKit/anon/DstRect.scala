@@ -21,31 +21,23 @@ trait DstRect extends StObject {
 }
 object DstRect {
   
-  @scala.inline
-  def apply(dstRect: Rect, offsetX: Double, offsetY: Double, srcRect: Rect): DstRect = {
+  inline def apply(dstRect: Rect, offsetX: Double, offsetY: Double, srcRect: Rect): DstRect = {
     val __obj = js.Dynamic.literal(dstRect = dstRect.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], srcRect = srcRect.asInstanceOf[js.Any])
     __obj.asInstanceOf[DstRect]
   }
   
-  @scala.inline
-  implicit class DstRectMutableBuilder[Self <: DstRect] (val x: Self) extends AnyVal {
+  extension [Self <: DstRect](x: Self) {
     
-    @scala.inline
-    def setDstRect(value: Rect): Self = StObject.set(x, "dstRect", value.asInstanceOf[js.Any])
+    inline def setDstRect(value: Rect): Self = StObject.set(x, "dstRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcRect(value: Rect): Self = StObject.set(x, "srcRect", value.asInstanceOf[js.Any])
+    inline def setSrcRect(value: Rect): Self = StObject.set(x, "srcRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapOnly(value: typings.terminalKit.terminalKitStrings.x | y): Self = StObject.set(x, "wrapOnly", value.asInstanceOf[js.Any])
+    inline def setWrapOnly(value: typings.terminalKit.terminalKitStrings.x | y): Self = StObject.set(x, "wrapOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapOnlyUndefined: Self = StObject.set(x, "wrapOnly", js.undefined)
+    inline def setWrapOnlyUndefined: Self = StObject.set(x, "wrapOnly", js.undefined)
   }
 }

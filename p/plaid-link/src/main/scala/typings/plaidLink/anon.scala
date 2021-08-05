@@ -16,20 +16,16 @@ object anon {
   }
   object Create {
     
-    @scala.inline
-    def apply(create: CreateConfig => LinkHandler, version: String): Create = {
+    inline def apply(create: CreateConfig => LinkHandler, version: String): Create = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Create]
     }
     
-    @scala.inline
-    implicit class CreateMutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
+    extension [Self <: Create](x: Self) {
       
-      @scala.inline
-      def setCreate(value: CreateConfig => LinkHandler): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: CreateConfig => LinkHandler): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,20 +37,16 @@ object anon {
   }
   object Institutionid {
     
-    @scala.inline
-    def apply(institution_id: String, name: String): Institutionid = {
+    inline def apply(institution_id: String, name: String): Institutionid = {
       val __obj = js.Dynamic.literal(institution_id = institution_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Institutionid]
     }
     
-    @scala.inline
-    implicit class InstitutionidMutableBuilder[Self <: Institutionid] (val x: Self) extends AnyVal {
+    extension [Self <: Institutionid](x: Self) {
       
-      @scala.inline
-      def setInstitution_id(value: String): Self = StObject.set(x, "institution_id", value.asInstanceOf[js.Any])
+      inline def setInstitution_id(value: String): Self = StObject.set(x, "institution_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

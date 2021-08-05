@@ -13,16 +13,13 @@ trait DeregisterWorkspaceDirectoryRequest extends StObject {
 }
 object DeregisterWorkspaceDirectoryRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId): DeregisterWorkspaceDirectoryRequest = {
+  inline def apply(DirectoryId: DirectoryId): DeregisterWorkspaceDirectoryRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterWorkspaceDirectoryRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterWorkspaceDirectoryRequestMutableBuilder[Self <: DeregisterWorkspaceDirectoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterWorkspaceDirectoryRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
   }
 }

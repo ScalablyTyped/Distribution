@@ -31,8 +31,7 @@ trait Switch extends StObject {
 }
 object Switch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setControlType: SwitchControlType => Switch,
     setFieldName: String => Switch,
     setOnChangeAction: Action => Switch,
@@ -43,22 +42,16 @@ object Switch {
     __obj.asInstanceOf[Switch]
   }
   
-  @scala.inline
-  implicit class SwitchMutableBuilder[Self <: Switch] (val x: Self) extends AnyVal {
+  extension [Self <: Switch](x: Self) {
     
-    @scala.inline
-    def setSetControlType(value: SwitchControlType => Switch): Self = StObject.set(x, "setControlType", js.Any.fromFunction1(value))
+    inline def setSetControlType(value: SwitchControlType => Switch): Self = StObject.set(x, "setControlType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFieldName(value: String => Switch): Self = StObject.set(x, "setFieldName", js.Any.fromFunction1(value))
+    inline def setSetFieldName(value: String => Switch): Self = StObject.set(x, "setFieldName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOnChangeAction(value: Action => Switch): Self = StObject.set(x, "setOnChangeAction", js.Any.fromFunction1(value))
+    inline def setSetOnChangeAction(value: Action => Switch): Self = StObject.set(x, "setOnChangeAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSelected(value: Boolean => Switch): Self = StObject.set(x, "setSelected", js.Any.fromFunction1(value))
+    inline def setSetSelected(value: Boolean => Switch): Self = StObject.set(x, "setSelected", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: String => Switch): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: String => Switch): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

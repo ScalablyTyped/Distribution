@@ -67,55 +67,39 @@ trait SchemaServiceAccountKey extends StObject {
 }
 object SchemaServiceAccountKey {
   
-  @scala.inline
-  def apply(): SchemaServiceAccountKey = {
+  inline def apply(): SchemaServiceAccountKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaServiceAccountKey]
   }
   
-  @scala.inline
-  implicit class SchemaServiceAccountKeyMutableBuilder[Self <: SchemaServiceAccountKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaServiceAccountKey](x: Self) {
     
-    @scala.inline
-    def setKeyAlgorithm(value: String): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
+    inline def setKeyAlgorithm(value: String): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyAlgorithmUndefined: Self = StObject.set(x, "keyAlgorithm", js.undefined)
+    inline def setKeyAlgorithmUndefined: Self = StObject.set(x, "keyAlgorithm", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPrivateKeyData(value: String): Self = StObject.set(x, "privateKeyData", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyData(value: String): Self = StObject.set(x, "privateKeyData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyDataUndefined: Self = StObject.set(x, "privateKeyData", js.undefined)
+    inline def setPrivateKeyDataUndefined: Self = StObject.set(x, "privateKeyData", js.undefined)
     
-    @scala.inline
-    def setPrivateKeyType(value: String): Self = StObject.set(x, "privateKeyType", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyType(value: String): Self = StObject.set(x, "privateKeyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyTypeUndefined: Self = StObject.set(x, "privateKeyType", js.undefined)
+    inline def setPrivateKeyTypeUndefined: Self = StObject.set(x, "privateKeyType", js.undefined)
     
-    @scala.inline
-    def setPublicKeyData(value: String): Self = StObject.set(x, "publicKeyData", value.asInstanceOf[js.Any])
+    inline def setPublicKeyData(value: String): Self = StObject.set(x, "publicKeyData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyDataUndefined: Self = StObject.set(x, "publicKeyData", js.undefined)
+    inline def setPublicKeyDataUndefined: Self = StObject.set(x, "publicKeyData", js.undefined)
     
-    @scala.inline
-    def setValidAfterTime(value: String): Self = StObject.set(x, "validAfterTime", value.asInstanceOf[js.Any])
+    inline def setValidAfterTime(value: String): Self = StObject.set(x, "validAfterTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidAfterTimeUndefined: Self = StObject.set(x, "validAfterTime", js.undefined)
+    inline def setValidAfterTimeUndefined: Self = StObject.set(x, "validAfterTime", js.undefined)
     
-    @scala.inline
-    def setValidBeforeTime(value: String): Self = StObject.set(x, "validBeforeTime", value.asInstanceOf[js.Any])
+    inline def setValidBeforeTime(value: String): Self = StObject.set(x, "validBeforeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidBeforeTimeUndefined: Self = StObject.set(x, "validBeforeTime", js.undefined)
+    inline def setValidBeforeTimeUndefined: Self = StObject.set(x, "validBeforeTime", js.undefined)
   }
 }

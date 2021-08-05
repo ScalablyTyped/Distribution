@@ -49,44 +49,32 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setLeadingSlash(value: Boolean): Self = StObject.set(x, "leadingSlash", value.asInstanceOf[js.Any])
+      inline def setLeadingSlash(value: Boolean): Self = StObject.set(x, "leadingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingSlashUndefined: Self = StObject.set(x, "leadingSlash", js.undefined)
+      inline def setLeadingSlashUndefined: Self = StObject.set(x, "leadingSlash", js.undefined)
       
-      @scala.inline
-      def setProtocolRelative(value: Boolean): Self = StObject.set(x, "protocolRelative", value.asInstanceOf[js.Any])
+      inline def setProtocolRelative(value: Boolean): Self = StObject.set(x, "protocolRelative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolRelativeUndefined: Self = StObject.set(x, "protocolRelative", js.undefined)
+      inline def setProtocolRelativeUndefined: Self = StObject.set(x, "protocolRelative", js.undefined)
       
-      @scala.inline
-      def setQuery(value: StringDictionary[String | Double | (js.Array[String | Double])]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: StringDictionary[String | Double | (js.Array[String | Double])]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryOptions(value: StringifyOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
+      inline def setQueryOptions(value: StringifyOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryOptionsUndefined: Self = StObject.set(x, "queryOptions", js.undefined)
+      inline def setQueryOptionsUndefined: Self = StObject.set(x, "queryOptions", js.undefined)
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setTrailingSlash(value: Boolean): Self = StObject.set(x, "trailingSlash", value.asInstanceOf[js.Any])
+      inline def setTrailingSlash(value: Boolean): Self = StObject.set(x, "trailingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingSlashUndefined: Self = StObject.set(x, "trailingSlash", js.undefined)
+      inline def setTrailingSlashUndefined: Self = StObject.set(x, "trailingSlash", js.undefined)
     }
   }
   

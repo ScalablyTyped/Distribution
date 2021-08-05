@@ -15,19 +15,15 @@ trait PutEventsRequest extends StObject {
 }
 object PutEventsRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, EventsRequest: EventsRequest): PutEventsRequest = {
+  inline def apply(ApplicationId: string, EventsRequest: EventsRequest): PutEventsRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EventsRequest = EventsRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventsRequest]
   }
   
-  @scala.inline
-  implicit class PutEventsRequestMutableBuilder[Self <: PutEventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutEventsRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsRequest(value: EventsRequest): Self = StObject.set(x, "EventsRequest", value.asInstanceOf[js.Any])
+    inline def setEventsRequest(value: EventsRequest): Self = StObject.set(x, "EventsRequest", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ trait PickListModel
 }
 object PickListModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: String,
     isSuggested: Boolean,
     items: js.Array[PickListItemModel],
@@ -29,13 +28,10 @@ object PickListModel {
     __obj.asInstanceOf[PickListModel]
   }
   
-  @scala.inline
-  implicit class PickListModelMutableBuilder[Self <: PickListModel] (val x: Self) extends AnyVal {
+  extension [Self <: PickListModel](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[PickListItemModel]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[PickListItemModel]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: PickListItemModel*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PickListItemModel*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

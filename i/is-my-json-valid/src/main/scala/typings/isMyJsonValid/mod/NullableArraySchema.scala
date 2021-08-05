@@ -14,23 +14,18 @@ trait NullableArraySchema[ItemSchema /* <: AnySchema */] extends StObject {
 }
 object NullableArraySchema {
   
-  @scala.inline
-  def apply[ItemSchema /* <: AnySchema */](items: ItemSchema, `type`: js.Array[array | `null`]): NullableArraySchema[ItemSchema] = {
+  inline def apply[ItemSchema /* <: AnySchema */](items: ItemSchema, `type`: js.Array[array | `null`]): NullableArraySchema[ItemSchema] = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NullableArraySchema[ItemSchema]]
   }
   
-  @scala.inline
-  implicit class NullableArraySchemaMutableBuilder[Self <: NullableArraySchema[?], ItemSchema /* <: AnySchema */] (val x: Self & NullableArraySchema[ItemSchema]) extends AnyVal {
+  extension [Self <: NullableArraySchema[?], ItemSchema /* <: AnySchema */](x: Self & NullableArraySchema[ItemSchema]) {
     
-    @scala.inline
-    def setItems(value: ItemSchema): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ItemSchema): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: js.Array[array | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Array[array | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: (array | `null`)*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: (array | `null`)*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

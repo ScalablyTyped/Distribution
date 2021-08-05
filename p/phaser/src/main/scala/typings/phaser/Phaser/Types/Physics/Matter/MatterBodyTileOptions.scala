@@ -18,25 +18,19 @@ trait MatterBodyTileOptions extends StObject {
 }
 object MatterBodyTileOptions {
   
-  @scala.inline
-  def apply(): MatterBodyTileOptions = {
+  inline def apply(): MatterBodyTileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatterBodyTileOptions]
   }
   
-  @scala.inline
-  implicit class MatterBodyTileOptionsMutableBuilder[Self <: MatterBodyTileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MatterBodyTileOptions](x: Self) {
     
-    @scala.inline
-    def setAddToWorld(value: Boolean): Self = StObject.set(x, "addToWorld", value.asInstanceOf[js.Any])
+    inline def setAddToWorld(value: Boolean): Self = StObject.set(x, "addToWorld", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddToWorldUndefined: Self = StObject.set(x, "addToWorld", js.undefined)
+    inline def setAddToWorldUndefined: Self = StObject.set(x, "addToWorld", js.undefined)
     
-    @scala.inline
-    def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
+    inline def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStaticUndefined: Self = StObject.set(x, "isStatic", js.undefined)
+    inline def setIsStaticUndefined: Self = StObject.set(x, "isStatic", js.undefined)
   }
 }

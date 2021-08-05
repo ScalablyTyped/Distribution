@@ -12,19 +12,15 @@ trait ProvideResolveFeature[T1 /* <: js.Function */, T2 /* <: js.Function */] ex
 }
 object ProvideResolveFeature {
   
-  @scala.inline
-  def apply[T1 /* <: js.Function */, T2 /* <: js.Function */](provide: T1, resolve: T2): ProvideResolveFeature[T1, T2] = {
+  inline def apply[T1 /* <: js.Function */, T2 /* <: js.Function */](provide: T1, resolve: T2): ProvideResolveFeature[T1, T2] = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], resolve = resolve.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvideResolveFeature[T1, T2]]
   }
   
-  @scala.inline
-  implicit class ProvideResolveFeatureMutableBuilder[Self <: ProvideResolveFeature[?, ?], T1 /* <: js.Function */, T2 /* <: js.Function */] (val x: Self & (ProvideResolveFeature[T1, T2])) extends AnyVal {
+  extension [Self <: ProvideResolveFeature[?, ?], T1 /* <: js.Function */, T2 /* <: js.Function */](x: Self & (ProvideResolveFeature[T1, T2])) {
     
-    @scala.inline
-    def setProvide(value: T1): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+    inline def setProvide(value: T1): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolve(value: T2): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+    inline def setResolve(value: T2): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
   }
 }

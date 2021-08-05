@@ -38,8 +38,7 @@ trait IKeyDerivationAlgorithmNamesStatics extends StObject {
 }
 object IKeyDerivationAlgorithmNamesStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     pbkdf2Md5: String,
     pbkdf2Sha1: String,
     pbkdf2Sha256: String,
@@ -60,52 +59,36 @@ object IKeyDerivationAlgorithmNamesStatics {
     __obj.asInstanceOf[IKeyDerivationAlgorithmNamesStatics]
   }
   
-  @scala.inline
-  implicit class IKeyDerivationAlgorithmNamesStaticsMutableBuilder[Self <: IKeyDerivationAlgorithmNamesStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IKeyDerivationAlgorithmNamesStatics](x: Self) {
     
-    @scala.inline
-    def setPbkdf2Md5(value: String): Self = StObject.set(x, "pbkdf2Md5", value.asInstanceOf[js.Any])
+    inline def setPbkdf2Md5(value: String): Self = StObject.set(x, "pbkdf2Md5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPbkdf2Sha1(value: String): Self = StObject.set(x, "pbkdf2Sha1", value.asInstanceOf[js.Any])
+    inline def setPbkdf2Sha1(value: String): Self = StObject.set(x, "pbkdf2Sha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPbkdf2Sha256(value: String): Self = StObject.set(x, "pbkdf2Sha256", value.asInstanceOf[js.Any])
+    inline def setPbkdf2Sha256(value: String): Self = StObject.set(x, "pbkdf2Sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPbkdf2Sha384(value: String): Self = StObject.set(x, "pbkdf2Sha384", value.asInstanceOf[js.Any])
+    inline def setPbkdf2Sha384(value: String): Self = StObject.set(x, "pbkdf2Sha384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPbkdf2Sha512(value: String): Self = StObject.set(x, "pbkdf2Sha512", value.asInstanceOf[js.Any])
+    inline def setPbkdf2Sha512(value: String): Self = StObject.set(x, "pbkdf2Sha512", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSp800108CtrHmacMd5(value: String): Self = StObject.set(x, "sp800108CtrHmacMd5", value.asInstanceOf[js.Any])
+    inline def setSp800108CtrHmacMd5(value: String): Self = StObject.set(x, "sp800108CtrHmacMd5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSp800108CtrHmacSha1(value: String): Self = StObject.set(x, "sp800108CtrHmacSha1", value.asInstanceOf[js.Any])
+    inline def setSp800108CtrHmacSha1(value: String): Self = StObject.set(x, "sp800108CtrHmacSha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSp800108CtrHmacSha256(value: String): Self = StObject.set(x, "sp800108CtrHmacSha256", value.asInstanceOf[js.Any])
+    inline def setSp800108CtrHmacSha256(value: String): Self = StObject.set(x, "sp800108CtrHmacSha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSp800108CtrHmacSha384(value: String): Self = StObject.set(x, "sp800108CtrHmacSha384", value.asInstanceOf[js.Any])
+    inline def setSp800108CtrHmacSha384(value: String): Self = StObject.set(x, "sp800108CtrHmacSha384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSp800108CtrHmacSha512(value: String): Self = StObject.set(x, "sp800108CtrHmacSha512", value.asInstanceOf[js.Any])
+    inline def setSp800108CtrHmacSha512(value: String): Self = StObject.set(x, "sp800108CtrHmacSha512", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSp80056aConcatMd5(value: String): Self = StObject.set(x, "sp80056aConcatMd5", value.asInstanceOf[js.Any])
+    inline def setSp80056aConcatMd5(value: String): Self = StObject.set(x, "sp80056aConcatMd5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSp80056aConcatSha1(value: String): Self = StObject.set(x, "sp80056aConcatSha1", value.asInstanceOf[js.Any])
+    inline def setSp80056aConcatSha1(value: String): Self = StObject.set(x, "sp80056aConcatSha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSp80056aConcatSha256(value: String): Self = StObject.set(x, "sp80056aConcatSha256", value.asInstanceOf[js.Any])
+    inline def setSp80056aConcatSha256(value: String): Self = StObject.set(x, "sp80056aConcatSha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSp80056aConcatSha384(value: String): Self = StObject.set(x, "sp80056aConcatSha384", value.asInstanceOf[js.Any])
+    inline def setSp80056aConcatSha384(value: String): Self = StObject.set(x, "sp80056aConcatSha384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSp80056aConcatSha512(value: String): Self = StObject.set(x, "sp80056aConcatSha512", value.asInstanceOf[js.Any])
+    inline def setSp80056aConcatSha512(value: String): Self = StObject.set(x, "sp80056aConcatSha512", value.asInstanceOf[js.Any])
   }
 }

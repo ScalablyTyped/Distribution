@@ -19,16 +19,12 @@ object LinkUpdateModes {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AUTO: `2` = 2.asInstanceOf[`2`]
+    inline def AUTO: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def GLOBAL_SETTING: `3` = 3.asInstanceOf[`3`]
+    inline def GLOBAL_SETTING: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def MANUAL: `1` = 1.asInstanceOf[`1`]
+    inline def MANUAL: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def NEVER: `0` = 0.asInstanceOf[`0`]
+    inline def NEVER: `0` = 0.asInstanceOf[`0`]
   }
 }

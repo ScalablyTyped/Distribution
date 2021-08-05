@@ -25,31 +25,23 @@ trait SynchronizeOptions extends StObject {
 }
 object SynchronizeOptions {
   
-  @scala.inline
-  def apply(): SynchronizeOptions = {
+  inline def apply(): SynchronizeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SynchronizeOptions]
   }
   
-  @scala.inline
-  implicit class SynchronizeOptionsMutableBuilder[Self <: SynchronizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SynchronizeOptions](x: Self) {
     
-    @scala.inline
-    def setConfigurationSection(value: String | js.Array[String]): Self = StObject.set(x, "configurationSection", value.asInstanceOf[js.Any])
+    inline def setConfigurationSection(value: String | js.Array[String]): Self = StObject.set(x, "configurationSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationSectionUndefined: Self = StObject.set(x, "configurationSection", js.undefined)
+    inline def setConfigurationSectionUndefined: Self = StObject.set(x, "configurationSection", js.undefined)
     
-    @scala.inline
-    def setConfigurationSectionVarargs(value: String*): Self = StObject.set(x, "configurationSection", js.Array(value :_*))
+    inline def setConfigurationSectionVarargs(value: String*): Self = StObject.set(x, "configurationSection", js.Array(value :_*))
     
-    @scala.inline
-    def setFileEvents(value: FileSystemWatcher | js.Array[FileSystemWatcher]): Self = StObject.set(x, "fileEvents", value.asInstanceOf[js.Any])
+    inline def setFileEvents(value: FileSystemWatcher | js.Array[FileSystemWatcher]): Self = StObject.set(x, "fileEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileEventsUndefined: Self = StObject.set(x, "fileEvents", js.undefined)
+    inline def setFileEventsUndefined: Self = StObject.set(x, "fileEvents", js.undefined)
     
-    @scala.inline
-    def setFileEventsVarargs(value: FileSystemWatcher*): Self = StObject.set(x, "fileEvents", js.Array(value :_*))
+    inline def setFileEventsVarargs(value: FileSystemWatcher*): Self = StObject.set(x, "fileEvents", js.Array(value :_*))
   }
 }

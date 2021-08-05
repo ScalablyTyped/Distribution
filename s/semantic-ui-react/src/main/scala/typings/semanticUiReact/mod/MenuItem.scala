@@ -19,6 +19,5 @@ class MenuItem protected ()
 }
 object MenuItem {
   
-  @scala.inline
-  def apply: ComponentClass[MenuItemProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("MenuItem").asInstanceOf[ComponentClass[MenuItemProps, ComponentState]]
+  inline def apply: ComponentClass[MenuItemProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("MenuItem").asInstanceOf[ComponentClass[MenuItemProps, ComponentState]]
 }

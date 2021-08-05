@@ -16,8 +16,7 @@ trait FunctorWithIndex[F, I]
 }
 object FunctorWithIndex {
   
-  @scala.inline
-  def apply[F, I](
+  inline def apply[F, I](
     URI: F,
     map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
     mapWithIndex: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function2[/* i */ I, js.Any, js.Any]) => js.Any
@@ -26,11 +25,9 @@ object FunctorWithIndex {
     __obj.asInstanceOf[FunctorWithIndex[F, I]]
   }
   
-  @scala.inline
-  implicit class FunctorWithIndexMutableBuilder[Self <: FunctorWithIndex[?, ?], F, I] (val x: Self & (FunctorWithIndex[F, I])) extends AnyVal {
+  extension [Self <: FunctorWithIndex[?, ?], F, I](x: Self & (FunctorWithIndex[F, I])) {
     
-    @scala.inline
-    def setMapWithIndex(
+    inline def setMapWithIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function2[/* i */ I, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "mapWithIndex", js.Any.fromFunction2(value))
   }

@@ -10,19 +10,15 @@ trait RestoreTableFromClusterSnapshotResult extends StObject {
 }
 object RestoreTableFromClusterSnapshotResult {
   
-  @scala.inline
-  def apply(): RestoreTableFromClusterSnapshotResult = {
+  inline def apply(): RestoreTableFromClusterSnapshotResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreTableFromClusterSnapshotResult]
   }
   
-  @scala.inline
-  implicit class RestoreTableFromClusterSnapshotResultMutableBuilder[Self <: RestoreTableFromClusterSnapshotResult] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreTableFromClusterSnapshotResult](x: Self) {
     
-    @scala.inline
-    def setTableRestoreStatus(value: TableRestoreStatus): Self = StObject.set(x, "TableRestoreStatus", value.asInstanceOf[js.Any])
+    inline def setTableRestoreStatus(value: TableRestoreStatus): Self = StObject.set(x, "TableRestoreStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRestoreStatusUndefined: Self = StObject.set(x, "TableRestoreStatus", js.undefined)
+    inline def setTableRestoreStatusUndefined: Self = StObject.set(x, "TableRestoreStatus", js.undefined)
   }
 }

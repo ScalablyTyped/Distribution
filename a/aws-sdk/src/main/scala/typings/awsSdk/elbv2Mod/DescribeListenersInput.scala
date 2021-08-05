@@ -28,40 +28,29 @@ trait DescribeListenersInput extends StObject {
 }
 object DescribeListenersInput {
   
-  @scala.inline
-  def apply(): DescribeListenersInput = {
+  inline def apply(): DescribeListenersInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeListenersInput]
   }
   
-  @scala.inline
-  implicit class DescribeListenersInputMutableBuilder[Self <: DescribeListenersInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeListenersInput](x: Self) {
     
-    @scala.inline
-    def setListenerArns(value: ListenerArns): Self = StObject.set(x, "ListenerArns", value.asInstanceOf[js.Any])
+    inline def setListenerArns(value: ListenerArns): Self = StObject.set(x, "ListenerArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerArnsUndefined: Self = StObject.set(x, "ListenerArns", js.undefined)
+    inline def setListenerArnsUndefined: Self = StObject.set(x, "ListenerArns", js.undefined)
     
-    @scala.inline
-    def setListenerArnsVarargs(value: ListenerArn*): Self = StObject.set(x, "ListenerArns", js.Array(value :_*))
+    inline def setListenerArnsVarargs(value: ListenerArn*): Self = StObject.set(x, "ListenerArns", js.Array(value :_*))
     
-    @scala.inline
-    def setLoadBalancerArn(value: LoadBalancerArn): Self = StObject.set(x, "LoadBalancerArn", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerArn(value: LoadBalancerArn): Self = StObject.set(x, "LoadBalancerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerArnUndefined: Self = StObject.set(x, "LoadBalancerArn", js.undefined)
+    inline def setLoadBalancerArnUndefined: Self = StObject.set(x, "LoadBalancerArn", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
   }
 }

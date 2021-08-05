@@ -13,25 +13,19 @@ trait ContainsSlides extends StObject {
 }
 object ContainsSlides {
   
-  @scala.inline
-  def apply(): ContainsSlides = {
+  inline def apply(): ContainsSlides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainsSlides]
   }
   
-  @scala.inline
-  implicit class ContainsSlidesMutableBuilder[Self <: ContainsSlides] (val x: Self) extends AnyVal {
+  extension [Self <: ContainsSlides](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setContainsSlides(value: Boolean): Self = StObject.set(x, "containsSlides", value.asInstanceOf[js.Any])
+    inline def setContainsSlides(value: Boolean): Self = StObject.set(x, "containsSlides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsSlidesUndefined: Self = StObject.set(x, "containsSlides", js.undefined)
+    inline def setContainsSlidesUndefined: Self = StObject.set(x, "containsSlides", js.undefined)
   }
 }

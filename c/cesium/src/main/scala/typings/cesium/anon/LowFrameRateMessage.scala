@@ -15,25 +15,19 @@ trait LowFrameRateMessage extends StObject {
 }
 object LowFrameRateMessage {
   
-  @scala.inline
-  def apply(container: Element | String, scene: typings.cesium.mod.Scene): LowFrameRateMessage = {
+  inline def apply(container: Element | String, scene: typings.cesium.mod.Scene): LowFrameRateMessage = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
     __obj.asInstanceOf[LowFrameRateMessage]
   }
   
-  @scala.inline
-  implicit class LowFrameRateMessageMutableBuilder[Self <: LowFrameRateMessage] (val x: Self) extends AnyVal {
+  extension [Self <: LowFrameRateMessage](x: Self) {
     
-    @scala.inline
-    def setContainer(value: Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowFrameRateMessage(value: String): Self = StObject.set(x, "lowFrameRateMessage", value.asInstanceOf[js.Any])
+    inline def setLowFrameRateMessage(value: String): Self = StObject.set(x, "lowFrameRateMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowFrameRateMessageUndefined: Self = StObject.set(x, "lowFrameRateMessage", js.undefined)
+    inline def setLowFrameRateMessageUndefined: Self = StObject.set(x, "lowFrameRateMessage", js.undefined)
     
-    @scala.inline
-    def setScene(value: typings.cesium.mod.Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: typings.cesium.mod.Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
   }
 }

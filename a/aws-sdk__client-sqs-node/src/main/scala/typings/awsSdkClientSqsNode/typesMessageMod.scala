@@ -70,17 +70,14 @@ object typesMessageMod {
   }
   object Message {
     
-    @scala.inline
-    def apply(): Message = {
+    inline def apply(): Message = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setAttributes(
+      inline def setAttributes(
         value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
         */ _Message & TopLevel[js.Any]) | (Iterable[
@@ -91,46 +88,33 @@ object typesMessageMod {
             ])
       ): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
       
-      @scala.inline
-      def setMD5OfBody(value: String): Self = StObject.set(x, "MD5OfBody", value.asInstanceOf[js.Any])
+      inline def setMD5OfBody(value: String): Self = StObject.set(x, "MD5OfBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMD5OfBodyUndefined: Self = StObject.set(x, "MD5OfBody", js.undefined)
+      inline def setMD5OfBodyUndefined: Self = StObject.set(x, "MD5OfBody", js.undefined)
       
-      @scala.inline
-      def setMD5OfMessageAttributes(value: String): Self = StObject.set(x, "MD5OfMessageAttributes", value.asInstanceOf[js.Any])
+      inline def setMD5OfMessageAttributes(value: String): Self = StObject.set(x, "MD5OfMessageAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMD5OfMessageAttributesUndefined: Self = StObject.set(x, "MD5OfMessageAttributes", js.undefined)
+      inline def setMD5OfMessageAttributesUndefined: Self = StObject.set(x, "MD5OfMessageAttributes", js.undefined)
       
-      @scala.inline
-      def setMessageAttributes(
+      inline def setMessageAttributes(
         value: StringDictionary[MessageAttributeValue] | (Iterable[js.Tuple2[String, MessageAttributeValue]])
       ): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)
+      inline def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
+      inline def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
       
-      @scala.inline
-      def setReceiptHandle(value: String): Self = StObject.set(x, "ReceiptHandle", value.asInstanceOf[js.Any])
+      inline def setReceiptHandle(value: String): Self = StObject.set(x, "ReceiptHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiptHandleUndefined: Self = StObject.set(x, "ReceiptHandle", js.undefined)
+      inline def setReceiptHandleUndefined: Self = StObject.set(x, "ReceiptHandle", js.undefined)
     }
   }
   
@@ -156,30 +140,24 @@ object typesMessageMod {
   }
   object UnmarshalledMessage {
     
-    @scala.inline
-    def apply(): UnmarshalledMessage = {
+    inline def apply(): UnmarshalledMessage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledMessage]
     }
     
-    @scala.inline
-    implicit class UnmarshalledMessageMutableBuilder[Self <: UnmarshalledMessage] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledMessage](x: Self) {
       
-      @scala.inline
-      def setAttributes(
+      inline def setAttributes(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
         */ _UnmarshalledMessage & TopLevel[js.Any]
       ): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      @scala.inline
-      def setMessageAttributes(value: StringDictionary[UnmarshalledMessageAttributeValue]): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
+      inline def setMessageAttributes(value: StringDictionary[UnmarshalledMessageAttributeValue]): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)
+      inline def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)
     }
   }
 }

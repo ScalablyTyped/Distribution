@@ -13,19 +13,15 @@ trait WindowDragEndedEventUIParam extends StObject {
 }
 object WindowDragEndedEventUIParam {
   
-  @scala.inline
-  def apply(): WindowDragEndedEventUIParam = {
+  inline def apply(): WindowDragEndedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowDragEndedEventUIParam]
   }
   
-  @scala.inline
-  implicit class WindowDragEndedEventUIParamMutableBuilder[Self <: WindowDragEndedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: WindowDragEndedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

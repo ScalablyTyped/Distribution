@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLElement2")
 @js.native
-class IHTMLElement2 protected ()
+/* private */ class IHTMLElement2 ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLElement2

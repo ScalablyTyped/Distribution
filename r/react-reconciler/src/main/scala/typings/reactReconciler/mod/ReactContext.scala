@@ -30,8 +30,7 @@ trait ReactContext[T] extends StObject {
 }
 object ReactContext {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     Consumer: ReactContext[T],
     DollarDollartypeof: js.Symbol | Double,
     Provider: ReactProviderType[T],
@@ -45,52 +44,36 @@ object ReactContext {
     __obj.asInstanceOf[ReactContext[T]]
   }
   
-  @scala.inline
-  implicit class ReactContextMutableBuilder[Self <: ReactContext[?], T] (val x: Self & ReactContext[T]) extends AnyVal {
+  extension [Self <: ReactContext[?], T](x: Self & ReactContext[T]) {
     
-    @scala.inline
-    def setConsumer(value: ReactContext[T]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
+    inline def setConsumer(value: ReactContext[T]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDollarDollartypeof(value: js.Symbol | Double): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
+    inline def setDollarDollartypeof(value: js.Symbol | Double): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvider(value: ReactProviderType[T]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: ReactProviderType[T]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnstable_read(value: () => T): Self = StObject.set(x, "unstable_read", js.Any.fromFunction0(value))
+    inline def setUnstable_read(value: () => T): Self = StObject.set(x, "unstable_read", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_calculateChangedBits(value: (/* a */ T, /* b */ T) => Double): Self = StObject.set(x, "_calculateChangedBits", js.Any.fromFunction2(value))
+    inline def set_calculateChangedBits(value: (/* a */ T, /* b */ T) => Double): Self = StObject.set(x, "_calculateChangedBits", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_calculateChangedBitsNull: Self = StObject.set(x, "_calculateChangedBits", null)
+    inline def set_calculateChangedBitsNull: Self = StObject.set(x, "_calculateChangedBits", null)
     
-    @scala.inline
-    def set_currentRenderer(value: js.Object): Self = StObject.set(x, "_currentRenderer", value.asInstanceOf[js.Any])
+    inline def set_currentRenderer(value: js.Object): Self = StObject.set(x, "_currentRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_currentRenderer2(value: js.Object): Self = StObject.set(x, "_currentRenderer2", value.asInstanceOf[js.Any])
+    inline def set_currentRenderer2(value: js.Object): Self = StObject.set(x, "_currentRenderer2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_currentRenderer2Null: Self = StObject.set(x, "_currentRenderer2", null)
+    inline def set_currentRenderer2Null: Self = StObject.set(x, "_currentRenderer2", null)
     
-    @scala.inline
-    def set_currentRenderer2Undefined: Self = StObject.set(x, "_currentRenderer2", js.undefined)
+    inline def set_currentRenderer2Undefined: Self = StObject.set(x, "_currentRenderer2", js.undefined)
     
-    @scala.inline
-    def set_currentRendererNull: Self = StObject.set(x, "_currentRenderer", null)
+    inline def set_currentRendererNull: Self = StObject.set(x, "_currentRenderer", null)
     
-    @scala.inline
-    def set_currentRendererUndefined: Self = StObject.set(x, "_currentRenderer", js.undefined)
+    inline def set_currentRendererUndefined: Self = StObject.set(x, "_currentRenderer", js.undefined)
     
-    @scala.inline
-    def set_currentValue(value: T): Self = StObject.set(x, "_currentValue", value.asInstanceOf[js.Any])
+    inline def set_currentValue(value: T): Self = StObject.set(x, "_currentValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_currentValue2(value: T): Self = StObject.set(x, "_currentValue2", value.asInstanceOf[js.Any])
+    inline def set_currentValue2(value: T): Self = StObject.set(x, "_currentValue2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_threadCount(value: Double): Self = StObject.set(x, "_threadCount", value.asInstanceOf[js.Any])
+    inline def set_threadCount(value: Double): Self = StObject.set(x, "_threadCount", value.asInstanceOf[js.Any])
   }
 }

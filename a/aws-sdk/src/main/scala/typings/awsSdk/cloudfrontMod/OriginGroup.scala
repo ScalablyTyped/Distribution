@@ -23,22 +23,17 @@ trait OriginGroup extends StObject {
 }
 object OriginGroup {
   
-  @scala.inline
-  def apply(FailoverCriteria: OriginGroupFailoverCriteria, Id: String, Members: OriginGroupMembers): OriginGroup = {
+  inline def apply(FailoverCriteria: OriginGroupFailoverCriteria, Id: String, Members: OriginGroupMembers): OriginGroup = {
     val __obj = js.Dynamic.literal(FailoverCriteria = FailoverCriteria.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Members = Members.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginGroup]
   }
   
-  @scala.inline
-  implicit class OriginGroupMutableBuilder[Self <: OriginGroup] (val x: Self) extends AnyVal {
+  extension [Self <: OriginGroup](x: Self) {
     
-    @scala.inline
-    def setFailoverCriteria(value: OriginGroupFailoverCriteria): Self = StObject.set(x, "FailoverCriteria", value.asInstanceOf[js.Any])
+    inline def setFailoverCriteria(value: OriginGroupFailoverCriteria): Self = StObject.set(x, "FailoverCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: OriginGroupMembers): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: OriginGroupMembers): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
   }
 }

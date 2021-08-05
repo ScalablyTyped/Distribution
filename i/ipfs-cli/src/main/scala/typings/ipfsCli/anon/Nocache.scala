@@ -20,31 +20,23 @@ trait Nocache extends StObject {
 }
 object Nocache {
   
-  @scala.inline
-  def apply(ctx: Print, name: js.Any, nocache: js.Any, recursive: js.Any, stream: js.Any, timeout: js.Any): Nocache = {
+  inline def apply(ctx: Print, name: js.Any, nocache: js.Any, recursive: js.Any, stream: js.Any, timeout: js.Any): Nocache = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nocache = nocache.asInstanceOf[js.Any], recursive = recursive.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nocache]
   }
   
-  @scala.inline
-  implicit class NocacheMutableBuilder[Self <: Nocache] (val x: Self) extends AnyVal {
+  extension [Self <: Nocache](x: Self) {
     
-    @scala.inline
-    def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNocache(value: js.Any): Self = StObject.set(x, "nocache", value.asInstanceOf[js.Any])
+    inline def setNocache(value: js.Any): Self = StObject.set(x, "nocache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursive(value: js.Any): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: js.Any): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

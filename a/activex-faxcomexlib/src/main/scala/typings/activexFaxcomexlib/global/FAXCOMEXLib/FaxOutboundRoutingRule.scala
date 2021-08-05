@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxOutboundRoutingRule Class */
 @JSGlobal("FAXCOMEXLib.FaxOutboundRoutingRule")
 @js.native
-class FaxOutboundRoutingRule protected ()
+/* private */ class FaxOutboundRoutingRule ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxOutboundRoutingRule {
   
@@ -24,7 +24,7 @@ class FaxOutboundRoutingRule protected ()
   /* CompleteClass */
   var DeviceId: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxOutboundRoutingRule_typekey")
   var FAXCOMEXLibDotFaxOutboundRoutingRule_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.FaxOutboundRoutingRule = js.native
   

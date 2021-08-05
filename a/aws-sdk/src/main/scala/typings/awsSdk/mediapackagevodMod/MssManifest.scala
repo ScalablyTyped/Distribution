@@ -15,25 +15,19 @@ trait MssManifest extends StObject {
 }
 object MssManifest {
   
-  @scala.inline
-  def apply(): MssManifest = {
+  inline def apply(): MssManifest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MssManifest]
   }
   
-  @scala.inline
-  implicit class MssManifestMutableBuilder[Self <: MssManifest] (val x: Self) extends AnyVal {
+  extension [Self <: MssManifest](x: Self) {
     
-    @scala.inline
-    def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
+    inline def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestNameUndefined: Self = StObject.set(x, "ManifestName", js.undefined)
+    inline def setManifestNameUndefined: Self = StObject.set(x, "ManifestName", js.undefined)
     
-    @scala.inline
-    def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
+    inline def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
+    inline def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
   }
 }

@@ -22,23 +22,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TypeCastExpression_ {
   
-  @scala.inline
-  def apply(expression: Expression, typeAnnotation: TypeAnnotation_): TypeCastExpression_ = {
+  inline def apply(expression: Expression, typeAnnotation: TypeAnnotation_): TypeCastExpression_ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TypeCastExpression")
     __obj.asInstanceOf[TypeCastExpression_]
   }
   
-  @scala.inline
-  implicit class TypeCastExpression_MutableBuilder[Self <: TypeCastExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: TypeCastExpression_](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TypeCastExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TypeCastExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

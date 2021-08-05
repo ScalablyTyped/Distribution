@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsonschema-protobuf"
-version := "1.0-dt-20200710Z-3a8a6b"
+version := "1.0-dt-20200710Z-b9f2a4"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

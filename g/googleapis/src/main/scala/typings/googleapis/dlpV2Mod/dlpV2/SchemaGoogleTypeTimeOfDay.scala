@@ -36,37 +36,27 @@ trait SchemaGoogleTypeTimeOfDay extends StObject {
 }
 object SchemaGoogleTypeTimeOfDay {
   
-  @scala.inline
-  def apply(): SchemaGoogleTypeTimeOfDay = {
+  inline def apply(): SchemaGoogleTypeTimeOfDay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleTypeTimeOfDay]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleTypeTimeOfDayMutableBuilder[Self <: SchemaGoogleTypeTimeOfDay] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleTypeTimeOfDay](x: Self) {
     
-    @scala.inline
-    def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+    inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
+    inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
     
-    @scala.inline
-    def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
+    inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
     
-    @scala.inline
-    def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+    inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
+    inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
-    @scala.inline
-    def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+    inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ object validateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isValid(elm: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(elm.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValid(elm: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(elm.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def validateContent(svgContent: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("validateContent")(svgContent.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def validateContent(svgContent: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("validateContent")(svgContent.asInstanceOf[js.Any]).asInstanceOf[String]
 }

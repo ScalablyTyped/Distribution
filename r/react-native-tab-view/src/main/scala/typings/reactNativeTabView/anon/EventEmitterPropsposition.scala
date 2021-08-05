@@ -25,8 +25,7 @@ trait EventEmitterPropsposition extends StObject {
 }
 object EventEmitterPropsposition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addListener: (enter, Listener) => Unit,
     jumpTo: String => Unit,
     position: Node,
@@ -37,22 +36,16 @@ object EventEmitterPropsposition {
     __obj.asInstanceOf[EventEmitterPropsposition]
   }
   
-  @scala.inline
-  implicit class EventEmitterPropspositionMutableBuilder[Self <: EventEmitterPropsposition] (val x: Self) extends AnyVal {
+  extension [Self <: EventEmitterPropsposition](x: Self) {
     
-    @scala.inline
-    def setAddListener(value: (enter, Listener) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+    inline def setAddListener(value: (enter, Listener) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setJumpTo(value: String => Unit): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
+    inline def setJumpTo(value: String => Unit): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPosition(value: Node): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Node): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveListener(value: (enter, Listener) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+    inline def setRemoveListener(value: (enter, Listener) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRender(value: ReactNode => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: ReactNode => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
   }
 }

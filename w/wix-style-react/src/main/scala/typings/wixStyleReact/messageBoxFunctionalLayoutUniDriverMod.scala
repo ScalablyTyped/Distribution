@@ -53,8 +53,7 @@ object messageBoxFunctionalLayoutUniDriverMod {
   }
   object MessageBoxFunctionalLayoutUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickOnCancellationButton: () => js.Promise[Unit],
       clickOnConfirmationButton: () => js.Promise[Unit],
@@ -82,65 +81,45 @@ object messageBoxFunctionalLayoutUniDriverMod {
       __obj.asInstanceOf[MessageBoxFunctionalLayoutUniDriver]
     }
     
-    @scala.inline
-    implicit class MessageBoxFunctionalLayoutUniDriverMutableBuilder[Self <: MessageBoxFunctionalLayoutUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: MessageBoxFunctionalLayoutUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickOnCancellationButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnCancellationButton", js.Any.fromFunction0(value))
+      inline def setClickOnCancellationButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnCancellationButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnConfirmationButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnConfirmationButton", js.Any.fromFunction0(value))
+      inline def setClickOnConfirmationButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnConfirmationButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnHeaderCloseButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnHeaderCloseButton", js.Any.fromFunction0(value))
+      inline def setClickOnHeaderCloseButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnHeaderCloseButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCancellationButton(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getCancellationButton", js.Any.fromFunction0(value))
+      inline def setGetCancellationButton(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getCancellationButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCancellationButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getCancellationButtonText", js.Any.fromFunction0(value))
+      inline def setGetCancellationButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getCancellationButtonText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetChildBySelector(value: String => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getChildBySelector", js.Any.fromFunction1(value))
+      inline def setGetChildBySelector(value: String => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getChildBySelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetConfirmationButton(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getConfirmationButton", js.Any.fromFunction0(value))
+      inline def setGetConfirmationButton(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getConfirmationButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetConfirmationButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getConfirmationButtonText", js.Any.fromFunction0(value))
+      inline def setGetConfirmationButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getConfirmationButtonText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFooter(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getFooter", js.Any.fromFunction0(value))
+      inline def setGetFooter(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getFooter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHeaderCloseButton(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getHeaderCloseButton", js.Any.fromFunction0(value))
+      inline def setGetHeaderCloseButton(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getHeaderCloseButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCancelEnable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCancelEnable", js.Any.fromFunction0(value))
+      inline def setIsCancelEnable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCancelEnable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCancellationButtonPrefixIconExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCancellationButtonPrefixIconExists", js.Any.fromFunction0(value))
+      inline def setIsCancellationButtonPrefixIconExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCancellationButtonPrefixIconExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCancellationButtonSuffixIconExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCancellationButtonSuffixIconExists", js.Any.fromFunction0(value))
+      inline def setIsCancellationButtonSuffixIconExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCancellationButtonSuffixIconExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsConfirmationButtonPrefixIconExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isConfirmationButtonPrefixIconExists", js.Any.fromFunction0(value))
+      inline def setIsConfirmationButtonPrefixIconExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isConfirmationButtonPrefixIconExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsConfirmationButtonSuffixIconExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isConfirmationButtonSuffixIconExists", js.Any.fromFunction0(value))
+      inline def setIsConfirmationButtonSuffixIconExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isConfirmationButtonSuffixIconExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsConfirmationEnable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isConfirmationEnable", js.Any.fromFunction0(value))
+      inline def setIsConfirmationEnable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isConfirmationEnable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsThemeExist(value: MessageBoxFunctionalLayoutTheme => js.Promise[Boolean]): Self = StObject.set(x, "isThemeExist", js.Any.fromFunction1(value))
+      inline def setIsThemeExist(value: MessageBoxFunctionalLayoutTheme => js.Promise[Boolean]): Self = StObject.set(x, "isThemeExist", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToHaveBodyPadding(value: () => js.Promise[Boolean]): Self = StObject.set(x, "toHaveBodyPadding", js.Any.fromFunction0(value))
+      inline def setToHaveBodyPadding(value: () => js.Promise[Boolean]): Self = StObject.set(x, "toHaveBodyPadding", js.Any.fromFunction0(value))
     }
   }
 }

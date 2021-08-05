@@ -13,17 +13,14 @@ trait IExecuteReplyMsg
 }
 object IExecuteReplyMsg {
   
-  @scala.inline
-  def apply(content: IExecuteReply, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): IExecuteReplyMsg = {
+  inline def apply(content: IExecuteReply, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): IExecuteReplyMsg = {
     val __obj = js.Dynamic.literal(channel = "shell", content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExecuteReplyMsg]
   }
   
-  @scala.inline
-  implicit class IExecuteReplyMsgMutableBuilder[Self <: IExecuteReplyMsg] (val x: Self) extends AnyVal {
+  extension [Self <: IExecuteReplyMsg](x: Self) {
     
-    @scala.inline
-    def setContent(value: IExecuteReply): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: IExecuteReply): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

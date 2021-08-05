@@ -223,131 +223,97 @@ trait HookFunctions
 }
 object HookFunctions {
   
-  @scala.inline
-  def apply(): HookFunctions = {
+  inline def apply(): HookFunctions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HookFunctions]
   }
   
-  @scala.inline
-  implicit class HookFunctionsMutableBuilder[Self <: HookFunctions] (val x: Self) extends AnyVal {
+  extension [Self <: HookFunctions](x: Self) {
     
-    @scala.inline
-    def setAfter(
+    inline def setAfter(
       value: (/* result */ Double, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, /* specs */ js.Array[String]) => Unit
     ): Self = StObject.set(x, "after", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterCommand(
+    inline def setAfterCommand(
       value: (/* commandName */ String, /* args */ js.Array[js.Any], /* result */ js.Any, /* error */ js.UndefOr[Error]) => Unit
     ): Self = StObject.set(x, "afterCommand", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAfterCommandUndefined: Self = StObject.set(x, "afterCommand", js.undefined)
+    inline def setAfterCommandUndefined: Self = StObject.set(x, "afterCommand", js.undefined)
     
-    @scala.inline
-    def setAfterHook(
+    inline def setAfterHook(
       value: (/* test */ js.Any, /* context */ js.Any, /* result */ TestResult, /* stepData */ js.UndefOr[js.Any], /* world */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "afterHook", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setAfterHookUndefined: Self = StObject.set(x, "afterHook", js.undefined)
+    inline def setAfterHookUndefined: Self = StObject.set(x, "afterHook", js.undefined)
     
-    @scala.inline
-    def setAfterSession(
+    inline def setAfterSession(
       value: (/* config */ Config, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, /* specs */ js.Array[String]) => Unit
     ): Self = StObject.set(x, "afterSession", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterSessionUndefined: Self = StObject.set(x, "afterSession", js.undefined)
+    inline def setAfterSessionUndefined: Self = StObject.set(x, "afterSession", js.undefined)
     
-    @scala.inline
-    def setAfterSuite(value: /* suite */ Suite => Unit): Self = StObject.set(x, "afterSuite", js.Any.fromFunction1(value))
+    inline def setAfterSuite(value: /* suite */ Suite => Unit): Self = StObject.set(x, "afterSuite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterSuiteUndefined: Self = StObject.set(x, "afterSuite", js.undefined)
+    inline def setAfterSuiteUndefined: Self = StObject.set(x, "afterSuite", js.undefined)
     
-    @scala.inline
-    def setAfterTest(value: (/* test */ Test, /* context */ js.Any, /* result */ TestResult) => Unit): Self = StObject.set(x, "afterTest", js.Any.fromFunction3(value))
+    inline def setAfterTest(value: (/* test */ Test, /* context */ js.Any, /* result */ TestResult) => Unit): Self = StObject.set(x, "afterTest", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterTestUndefined: Self = StObject.set(x, "afterTest", js.undefined)
+    inline def setAfterTestUndefined: Self = StObject.set(x, "afterTest", js.undefined)
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setBefore(
+    inline def setBefore(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, /* specs */ js.Array[String]) => Unit
     ): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeCommand(value: (/* commandName */ String, /* args */ js.Array[js.Any]) => Unit): Self = StObject.set(x, "beforeCommand", js.Any.fromFunction2(value))
+    inline def setBeforeCommand(value: (/* commandName */ String, /* args */ js.Array[js.Any]) => Unit): Self = StObject.set(x, "beforeCommand", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeCommandUndefined: Self = StObject.set(x, "beforeCommand", js.undefined)
+    inline def setBeforeCommandUndefined: Self = StObject.set(x, "beforeCommand", js.undefined)
     
-    @scala.inline
-    def setBeforeHook(
+    inline def setBeforeHook(
       value: (/* test */ js.Any, /* context */ js.Any, /* stepData */ js.UndefOr[js.Any], /* world */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "beforeHook", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setBeforeHookUndefined: Self = StObject.set(x, "beforeHook", js.undefined)
+    inline def setBeforeHookUndefined: Self = StObject.set(x, "beforeHook", js.undefined)
     
-    @scala.inline
-    def setBeforeSession(
+    inline def setBeforeSession(
       value: (/* config */ Config, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, /* specs */ js.Array[String]) => Unit
     ): Self = StObject.set(x, "beforeSession", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeSessionUndefined: Self = StObject.set(x, "beforeSession", js.undefined)
+    inline def setBeforeSessionUndefined: Self = StObject.set(x, "beforeSession", js.undefined)
     
-    @scala.inline
-    def setBeforeSuite(value: /* suite */ Suite => Unit): Self = StObject.set(x, "beforeSuite", js.Any.fromFunction1(value))
+    inline def setBeforeSuite(value: /* suite */ Suite => Unit): Self = StObject.set(x, "beforeSuite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeSuiteUndefined: Self = StObject.set(x, "beforeSuite", js.undefined)
+    inline def setBeforeSuiteUndefined: Self = StObject.set(x, "beforeSuite", js.undefined)
     
-    @scala.inline
-    def setBeforeTest(value: (/* test */ Test, /* context */ js.Any) => Unit): Self = StObject.set(x, "beforeTest", js.Any.fromFunction2(value))
+    inline def setBeforeTest(value: (/* test */ Test, /* context */ js.Any) => Unit): Self = StObject.set(x, "beforeTest", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeTestUndefined: Self = StObject.set(x, "beforeTest", js.undefined)
+    inline def setBeforeTestUndefined: Self = StObject.set(x, "beforeTest", js.undefined)
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setOnComplete(
+    inline def setOnComplete(
       value: (/* exitCode */ Double, /* config */ Config, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, /* results */ Results) => Unit
     ): Self = StObject.set(x, "onComplete", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+    inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
-    @scala.inline
-    def setOnPrepare(
+    inline def setOnPrepare(
       value: (/* config */ Config, /* capabilities */ js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ js.Any
         ]) => Unit
     ): Self = StObject.set(x, "onPrepare", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnPrepareUndefined: Self = StObject.set(x, "onPrepare", js.undefined)
+    inline def setOnPrepareUndefined: Self = StObject.set(x, "onPrepare", js.undefined)
     
-    @scala.inline
-    def setOnReload(value: (/* oldSessionId */ String, /* newSessionId */ String) => Unit): Self = StObject.set(x, "onReload", js.Any.fromFunction2(value))
+    inline def setOnReload(value: (/* oldSessionId */ String, /* newSessionId */ String) => Unit): Self = StObject.set(x, "onReload", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnReloadUndefined: Self = StObject.set(x, "onReload", js.undefined)
+    inline def setOnReloadUndefined: Self = StObject.set(x, "onReload", js.undefined)
     
-    @scala.inline
-    def setOnWorkerStart(
+    inline def setOnWorkerStart(
       value: (/* cid */ String, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* caps */ js.Any, /* specs */ js.Array[String], /* args */ Config, /* execArgv */ js.Array[String]) => Unit
     ): Self = StObject.set(x, "onWorkerStart", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setOnWorkerStartUndefined: Self = StObject.set(x, "onWorkerStart", js.undefined)
+    inline def setOnWorkerStartUndefined: Self = StObject.set(x, "onWorkerStart", js.undefined)
   }
 }

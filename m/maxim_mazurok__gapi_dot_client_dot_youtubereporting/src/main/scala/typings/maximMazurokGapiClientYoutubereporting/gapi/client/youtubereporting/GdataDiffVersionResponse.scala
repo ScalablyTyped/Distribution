@@ -14,25 +14,19 @@ trait GdataDiffVersionResponse extends StObject {
 }
 object GdataDiffVersionResponse {
   
-  @scala.inline
-  def apply(): GdataDiffVersionResponse = {
+  inline def apply(): GdataDiffVersionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GdataDiffVersionResponse]
   }
   
-  @scala.inline
-  implicit class GdataDiffVersionResponseMutableBuilder[Self <: GdataDiffVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GdataDiffVersionResponse](x: Self) {
     
-    @scala.inline
-    def setObjectSizeBytes(value: String): Self = StObject.set(x, "objectSizeBytes", value.asInstanceOf[js.Any])
+    inline def setObjectSizeBytes(value: String): Self = StObject.set(x, "objectSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectSizeBytesUndefined: Self = StObject.set(x, "objectSizeBytes", js.undefined)
+    inline def setObjectSizeBytesUndefined: Self = StObject.set(x, "objectSizeBytes", js.undefined)
     
-    @scala.inline
-    def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
+    inline def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
+    inline def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
   }
 }

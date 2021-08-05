@@ -88,106 +88,73 @@ trait PutBotRequest extends StObject {
 }
 object PutBotRequest {
   
-  @scala.inline
-  def apply(childDirected: Boolean, locale: Locale, name: BotName): PutBotRequest = {
+  inline def apply(childDirected: Boolean, locale: Locale, name: BotName): PutBotRequest = {
     val __obj = js.Dynamic.literal(childDirected = childDirected.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBotRequest]
   }
   
-  @scala.inline
-  implicit class PutBotRequestMutableBuilder[Self <: PutBotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutBotRequest](x: Self) {
     
-    @scala.inline
-    def setAbortStatement(value: Statement): Self = StObject.set(x, "abortStatement", value.asInstanceOf[js.Any])
+    inline def setAbortStatement(value: Statement): Self = StObject.set(x, "abortStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbortStatementUndefined: Self = StObject.set(x, "abortStatement", js.undefined)
+    inline def setAbortStatementUndefined: Self = StObject.set(x, "abortStatement", js.undefined)
     
-    @scala.inline
-    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
-    @scala.inline
-    def setChildDirected(value: Boolean): Self = StObject.set(x, "childDirected", value.asInstanceOf[js.Any])
+    inline def setChildDirected(value: Boolean): Self = StObject.set(x, "childDirected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClarificationPrompt(value: Prompt): Self = StObject.set(x, "clarificationPrompt", value.asInstanceOf[js.Any])
+    inline def setClarificationPrompt(value: Prompt): Self = StObject.set(x, "clarificationPrompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClarificationPromptUndefined: Self = StObject.set(x, "clarificationPrompt", js.undefined)
+    inline def setClarificationPromptUndefined: Self = StObject.set(x, "clarificationPrompt", js.undefined)
     
-    @scala.inline
-    def setCreateVersion(value: Boolean): Self = StObject.set(x, "createVersion", value.asInstanceOf[js.Any])
+    inline def setCreateVersion(value: Boolean): Self = StObject.set(x, "createVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
+    inline def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDetectSentiment(value: Boolean): Self = StObject.set(x, "detectSentiment", value.asInstanceOf[js.Any])
+    inline def setDetectSentiment(value: Boolean): Self = StObject.set(x, "detectSentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectSentimentUndefined: Self = StObject.set(x, "detectSentiment", js.undefined)
+    inline def setDetectSentimentUndefined: Self = StObject.set(x, "detectSentiment", js.undefined)
     
-    @scala.inline
-    def setEnableModelImprovements(value: Boolean): Self = StObject.set(x, "enableModelImprovements", value.asInstanceOf[js.Any])
+    inline def setEnableModelImprovements(value: Boolean): Self = StObject.set(x, "enableModelImprovements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableModelImprovementsUndefined: Self = StObject.set(x, "enableModelImprovements", js.undefined)
+    inline def setEnableModelImprovementsUndefined: Self = StObject.set(x, "enableModelImprovements", js.undefined)
     
-    @scala.inline
-    def setIdleSessionTTLInSeconds(value: SessionTTL): Self = StObject.set(x, "idleSessionTTLInSeconds", value.asInstanceOf[js.Any])
+    inline def setIdleSessionTTLInSeconds(value: SessionTTL): Self = StObject.set(x, "idleSessionTTLInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleSessionTTLInSecondsUndefined: Self = StObject.set(x, "idleSessionTTLInSeconds", js.undefined)
+    inline def setIdleSessionTTLInSecondsUndefined: Self = StObject.set(x, "idleSessionTTLInSeconds", js.undefined)
     
-    @scala.inline
-    def setIntents(value: IntentList): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+    inline def setIntents(value: IntentList): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
+    inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
-    @scala.inline
-    def setIntentsVarargs(value: Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: BotName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: BotName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNluIntentConfidenceThreshold(value: ConfidenceThreshold): Self = StObject.set(x, "nluIntentConfidenceThreshold", value.asInstanceOf[js.Any])
+    inline def setNluIntentConfidenceThreshold(value: ConfidenceThreshold): Self = StObject.set(x, "nluIntentConfidenceThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNluIntentConfidenceThresholdUndefined: Self = StObject.set(x, "nluIntentConfidenceThreshold", js.undefined)
+    inline def setNluIntentConfidenceThresholdUndefined: Self = StObject.set(x, "nluIntentConfidenceThreshold", js.undefined)
     
-    @scala.inline
-    def setProcessBehavior(value: ProcessBehavior): Self = StObject.set(x, "processBehavior", value.asInstanceOf[js.Any])
+    inline def setProcessBehavior(value: ProcessBehavior): Self = StObject.set(x, "processBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessBehaviorUndefined: Self = StObject.set(x, "processBehavior", js.undefined)
+    inline def setProcessBehaviorUndefined: Self = StObject.set(x, "processBehavior", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVoiceId(value: String): Self = StObject.set(x, "voiceId", value.asInstanceOf[js.Any])
+    inline def setVoiceId(value: String): Self = StObject.set(x, "voiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceIdUndefined: Self = StObject.set(x, "voiceId", js.undefined)
+    inline def setVoiceIdUndefined: Self = StObject.set(x, "voiceId", js.undefined)
   }
 }

@@ -28,23 +28,18 @@ object mod {
   }
   object DoneButtonProps {
     
-    @scala.inline
-    def apply(allowFontScaling: Boolean, isLight: Boolean, onPress: () => js.Any): DoneButtonProps = {
+    inline def apply(allowFontScaling: Boolean, isLight: Boolean, onPress: () => js.Any): DoneButtonProps = {
       val __obj = js.Dynamic.literal(allowFontScaling = allowFontScaling.asInstanceOf[js.Any], isLight = isLight.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress))
       __obj.asInstanceOf[DoneButtonProps]
     }
     
-    @scala.inline
-    implicit class DoneButtonPropsMutableBuilder[Self <: DoneButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: DoneButtonProps](x: Self) {
       
-      @scala.inline
-      def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
+      inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLight(value: Boolean): Self = StObject.set(x, "isLight", value.asInstanceOf[js.Any])
+      inline def setIsLight(value: Boolean): Self = StObject.set(x, "isLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnPress(value: () => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     }
   }
   
@@ -56,20 +51,16 @@ object mod {
   }
   object DotProps {
     
-    @scala.inline
-    def apply(isLight: Boolean, selected: Boolean): DotProps = {
+    inline def apply(isLight: Boolean, selected: Boolean): DotProps = {
       val __obj = js.Dynamic.literal(isLight = isLight.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[DotProps]
     }
     
-    @scala.inline
-    implicit class DotPropsMutableBuilder[Self <: DotProps] (val x: Self) extends AnyVal {
+    extension [Self <: DotProps](x: Self) {
       
-      @scala.inline
-      def setIsLight(value: Boolean): Self = StObject.set(x, "isLight", value.asInstanceOf[js.Any])
+      inline def setIsLight(value: Boolean): Self = StObject.set(x, "isLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,26 +76,20 @@ object mod {
   }
   object NextButtonProps {
     
-    @scala.inline
-    def apply(allowFontScaling: Boolean, isLight: Boolean, nextLabel: String | Element, onPress: () => js.Any): NextButtonProps = {
+    inline def apply(allowFontScaling: Boolean, isLight: Boolean, nextLabel: String | Element, onPress: () => js.Any): NextButtonProps = {
       val __obj = js.Dynamic.literal(allowFontScaling = allowFontScaling.asInstanceOf[js.Any], isLight = isLight.asInstanceOf[js.Any], nextLabel = nextLabel.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress))
       __obj.asInstanceOf[NextButtonProps]
     }
     
-    @scala.inline
-    implicit class NextButtonPropsMutableBuilder[Self <: NextButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: NextButtonProps](x: Self) {
       
-      @scala.inline
-      def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
+      inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLight(value: Boolean): Self = StObject.set(x, "isLight", value.asInstanceOf[js.Any])
+      inline def setIsLight(value: Boolean): Self = StObject.set(x, "isLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextLabel(value: String | Element): Self = StObject.set(x, "nextLabel", value.asInstanceOf[js.Any])
+      inline def setNextLabel(value: String | Element): Self = StObject.set(x, "nextLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnPress(value: () => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     }
   }
   
@@ -145,44 +130,32 @@ object mod {
   }
   object Page {
     
-    @scala.inline
-    def apply(backgroundColor: String, image: Element, subtitle: String | Element, title: String | Element): Page = {
+    inline def apply(backgroundColor: String, image: Element, subtitle: String | Element, title: String | Element): Page = {
       val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[Page]
     }
     
-    @scala.inline
-    implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+    extension [Self <: Page](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: Element): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: Element): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubTitleStyles(value: StyleProp[TextStyle]): Self = StObject.set(x, "subTitleStyles", value.asInstanceOf[js.Any])
+      inline def setSubTitleStyles(value: StyleProp[TextStyle]): Self = StObject.set(x, "subTitleStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubTitleStylesNull: Self = StObject.set(x, "subTitleStyles", null)
+      inline def setSubTitleStylesNull: Self = StObject.set(x, "subTitleStyles", null)
       
-      @scala.inline
-      def setSubTitleStylesUndefined: Self = StObject.set(x, "subTitleStyles", js.undefined)
+      inline def setSubTitleStylesUndefined: Self = StObject.set(x, "subTitleStyles", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: String | Element): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String | Element): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String | Element): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | Element): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleStyles(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyles", value.asInstanceOf[js.Any])
+      inline def setTitleStyles(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleStylesNull: Self = StObject.set(x, "titleStyles", null)
+      inline def setTitleStylesNull: Self = StObject.set(x, "titleStyles", null)
       
-      @scala.inline
-      def setTitleStylesUndefined: Self = StObject.set(x, "titleStyles", js.undefined)
+      inline def setTitleStylesUndefined: Self = StObject.set(x, "titleStyles", js.undefined)
     }
   }
   
@@ -336,182 +309,124 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(pages: js.Array[Page]): Props = {
+    inline def apply(pages: js.Array[Page]): Props = {
       val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
+      inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
+      inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
       
-      @scala.inline
-      def setBottomBarColor(value: String): Self = StObject.set(x, "bottomBarColor", value.asInstanceOf[js.Any])
+      inline def setBottomBarColor(value: String): Self = StObject.set(x, "bottomBarColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomBarColorUndefined: Self = StObject.set(x, "bottomBarColor", js.undefined)
+      inline def setBottomBarColorUndefined: Self = StObject.set(x, "bottomBarColor", js.undefined)
       
-      @scala.inline
-      def setBottomBarHeight(value: Double): Self = StObject.set(x, "bottomBarHeight", value.asInstanceOf[js.Any])
+      inline def setBottomBarHeight(value: Double): Self = StObject.set(x, "bottomBarHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomBarHeightUndefined: Self = StObject.set(x, "bottomBarHeight", js.undefined)
+      inline def setBottomBarHeightUndefined: Self = StObject.set(x, "bottomBarHeight", js.undefined)
       
-      @scala.inline
-      def setBottomBarHighlight(value: Boolean): Self = StObject.set(x, "bottomBarHighlight", value.asInstanceOf[js.Any])
+      inline def setBottomBarHighlight(value: Boolean): Self = StObject.set(x, "bottomBarHighlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomBarHighlightUndefined: Self = StObject.set(x, "bottomBarHighlight", js.undefined)
+      inline def setBottomBarHighlightUndefined: Self = StObject.set(x, "bottomBarHighlight", js.undefined)
       
-      @scala.inline
-      def setContainerStyles(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyles", value.asInstanceOf[js.Any])
+      inline def setContainerStyles(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStylesNull: Self = StObject.set(x, "containerStyles", null)
+      inline def setContainerStylesNull: Self = StObject.set(x, "containerStyles", null)
       
-      @scala.inline
-      def setContainerStylesUndefined: Self = StObject.set(x, "containerStyles", js.undefined)
+      inline def setContainerStylesUndefined: Self = StObject.set(x, "containerStyles", js.undefined)
       
-      @scala.inline
-      def setControlStatusBar(value: Boolean): Self = StObject.set(x, "controlStatusBar", value.asInstanceOf[js.Any])
+      inline def setControlStatusBar(value: Boolean): Self = StObject.set(x, "controlStatusBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlStatusBarUndefined: Self = StObject.set(x, "controlStatusBar", js.undefined)
+      inline def setControlStatusBarUndefined: Self = StObject.set(x, "controlStatusBar", js.undefined)
       
-      @scala.inline
-      def setDoneButtonComponent(value: FC[DoneButtonProps]): Self = StObject.set(x, "DoneButtonComponent", value.asInstanceOf[js.Any])
+      inline def setDoneButtonComponent(value: FC[DoneButtonProps]): Self = StObject.set(x, "DoneButtonComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoneButtonComponentUndefined: Self = StObject.set(x, "DoneButtonComponent", js.undefined)
+      inline def setDoneButtonComponentUndefined: Self = StObject.set(x, "DoneButtonComponent", js.undefined)
       
-      @scala.inline
-      def setDotComponent(value: FC[DotProps]): Self = StObject.set(x, "DotComponent", value.asInstanceOf[js.Any])
+      inline def setDotComponent(value: FC[DotProps]): Self = StObject.set(x, "DotComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotComponentUndefined: Self = StObject.set(x, "DotComponent", js.undefined)
+      inline def setDotComponentUndefined: Self = StObject.set(x, "DotComponent", js.undefined)
       
-      @scala.inline
-      def setFlatlistProps(value: FlatListProps[Page]): Self = StObject.set(x, "flatlistProps", value.asInstanceOf[js.Any])
+      inline def setFlatlistProps(value: FlatListProps[Page]): Self = StObject.set(x, "flatlistProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatlistPropsUndefined: Self = StObject.set(x, "flatlistProps", js.undefined)
+      inline def setFlatlistPropsUndefined: Self = StObject.set(x, "flatlistProps", js.undefined)
       
-      @scala.inline
-      def setImageContainerStyles(value: StyleProp[ViewStyle]): Self = StObject.set(x, "imageContainerStyles", value.asInstanceOf[js.Any])
+      inline def setImageContainerStyles(value: StyleProp[ViewStyle]): Self = StObject.set(x, "imageContainerStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageContainerStylesNull: Self = StObject.set(x, "imageContainerStyles", null)
+      inline def setImageContainerStylesNull: Self = StObject.set(x, "imageContainerStyles", null)
       
-      @scala.inline
-      def setImageContainerStylesUndefined: Self = StObject.set(x, "imageContainerStyles", js.undefined)
+      inline def setImageContainerStylesUndefined: Self = StObject.set(x, "imageContainerStyles", js.undefined)
       
-      @scala.inline
-      def setNextButtonComponent(value: FC[NextButtonProps]): Self = StObject.set(x, "NextButtonComponent", value.asInstanceOf[js.Any])
+      inline def setNextButtonComponent(value: FC[NextButtonProps]): Self = StObject.set(x, "NextButtonComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextButtonComponentUndefined: Self = StObject.set(x, "NextButtonComponent", js.undefined)
+      inline def setNextButtonComponentUndefined: Self = StObject.set(x, "NextButtonComponent", js.undefined)
       
-      @scala.inline
-      def setNextLabel(value: String | Element): Self = StObject.set(x, "nextLabel", value.asInstanceOf[js.Any])
+      inline def setNextLabel(value: String | Element): Self = StObject.set(x, "nextLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextLabelUndefined: Self = StObject.set(x, "nextLabel", js.undefined)
+      inline def setNextLabelUndefined: Self = StObject.set(x, "nextLabel", js.undefined)
       
-      @scala.inline
-      def setOnDone(value: () => js.Any): Self = StObject.set(x, "onDone", js.Any.fromFunction0(value))
+      inline def setOnDone(value: () => js.Any): Self = StObject.set(x, "onDone", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDoneUndefined: Self = StObject.set(x, "onDone", js.undefined)
+      inline def setOnDoneUndefined: Self = StObject.set(x, "onDone", js.undefined)
       
-      @scala.inline
-      def setOnSkip(value: () => js.Any): Self = StObject.set(x, "onSkip", js.Any.fromFunction0(value))
+      inline def setOnSkip(value: () => js.Any): Self = StObject.set(x, "onSkip", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSkipUndefined: Self = StObject.set(x, "onSkip", js.undefined)
+      inline def setOnSkipUndefined: Self = StObject.set(x, "onSkip", js.undefined)
       
-      @scala.inline
-      def setPageIndexCallback(value: /* pageIndex */ Double => js.Any): Self = StObject.set(x, "pageIndexCallback", js.Any.fromFunction1(value))
+      inline def setPageIndexCallback(value: /* pageIndex */ Double => js.Any): Self = StObject.set(x, "pageIndexCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPageIndexCallbackUndefined: Self = StObject.set(x, "pageIndexCallback", js.undefined)
+      inline def setPageIndexCallbackUndefined: Self = StObject.set(x, "pageIndexCallback", js.undefined)
       
-      @scala.inline
-      def setPages(value: js.Array[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: js.Array[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
       
-      @scala.inline
-      def setShowDone(value: Boolean): Self = StObject.set(x, "showDone", value.asInstanceOf[js.Any])
+      inline def setShowDone(value: Boolean): Self = StObject.set(x, "showDone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDoneUndefined: Self = StObject.set(x, "showDone", js.undefined)
+      inline def setShowDoneUndefined: Self = StObject.set(x, "showDone", js.undefined)
       
-      @scala.inline
-      def setShowNext(value: Boolean): Self = StObject.set(x, "showNext", value.asInstanceOf[js.Any])
+      inline def setShowNext(value: Boolean): Self = StObject.set(x, "showNext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNextUndefined: Self = StObject.set(x, "showNext", js.undefined)
+      inline def setShowNextUndefined: Self = StObject.set(x, "showNext", js.undefined)
       
-      @scala.inline
-      def setShowPagination(value: Boolean): Self = StObject.set(x, "showPagination", value.asInstanceOf[js.Any])
+      inline def setShowPagination(value: Boolean): Self = StObject.set(x, "showPagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPaginationUndefined: Self = StObject.set(x, "showPagination", js.undefined)
+      inline def setShowPaginationUndefined: Self = StObject.set(x, "showPagination", js.undefined)
       
-      @scala.inline
-      def setShowSkip(value: Boolean): Self = StObject.set(x, "showSkip", value.asInstanceOf[js.Any])
+      inline def setShowSkip(value: Boolean): Self = StObject.set(x, "showSkip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowSkipUndefined: Self = StObject.set(x, "showSkip", js.undefined)
+      inline def setShowSkipUndefined: Self = StObject.set(x, "showSkip", js.undefined)
       
-      @scala.inline
-      def setSkipButtonComponent(value: FC[SkipButtonProps]): Self = StObject.set(x, "SkipButtonComponent", value.asInstanceOf[js.Any])
+      inline def setSkipButtonComponent(value: FC[SkipButtonProps]): Self = StObject.set(x, "SkipButtonComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipButtonComponentUndefined: Self = StObject.set(x, "SkipButtonComponent", js.undefined)
+      inline def setSkipButtonComponentUndefined: Self = StObject.set(x, "SkipButtonComponent", js.undefined)
       
-      @scala.inline
-      def setSkipLabel(value: String | Element): Self = StObject.set(x, "skipLabel", value.asInstanceOf[js.Any])
+      inline def setSkipLabel(value: String | Element): Self = StObject.set(x, "skipLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipLabelUndefined: Self = StObject.set(x, "skipLabel", js.undefined)
+      inline def setSkipLabelUndefined: Self = StObject.set(x, "skipLabel", js.undefined)
       
-      @scala.inline
-      def setSkipToPage(value: Double): Self = StObject.set(x, "skipToPage", value.asInstanceOf[js.Any])
+      inline def setSkipToPage(value: Double): Self = StObject.set(x, "skipToPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipToPageUndefined: Self = StObject.set(x, "skipToPage", js.undefined)
+      inline def setSkipToPageUndefined: Self = StObject.set(x, "skipToPage", js.undefined)
       
-      @scala.inline
-      def setSubTitleStyles(value: StyleProp[TextStyle]): Self = StObject.set(x, "subTitleStyles", value.asInstanceOf[js.Any])
+      inline def setSubTitleStyles(value: StyleProp[TextStyle]): Self = StObject.set(x, "subTitleStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubTitleStylesNull: Self = StObject.set(x, "subTitleStyles", null)
+      inline def setSubTitleStylesNull: Self = StObject.set(x, "subTitleStyles", null)
       
-      @scala.inline
-      def setSubTitleStylesUndefined: Self = StObject.set(x, "subTitleStyles", js.undefined)
+      inline def setSubTitleStylesUndefined: Self = StObject.set(x, "subTitleStyles", js.undefined)
       
-      @scala.inline
-      def setTitleStyles(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyles", value.asInstanceOf[js.Any])
+      inline def setTitleStyles(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleStylesNull: Self = StObject.set(x, "titleStyles", null)
+      inline def setTitleStylesNull: Self = StObject.set(x, "titleStyles", null)
       
-      @scala.inline
-      def setTitleStylesUndefined: Self = StObject.set(x, "titleStyles", js.undefined)
+      inline def setTitleStylesUndefined: Self = StObject.set(x, "titleStyles", js.undefined)
       
-      @scala.inline
-      def setTransitionAnimationDuration(value: Double): Self = StObject.set(x, "transitionAnimationDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionAnimationDuration(value: Double): Self = StObject.set(x, "transitionAnimationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionAnimationDurationUndefined: Self = StObject.set(x, "transitionAnimationDuration", js.undefined)
+      inline def setTransitionAnimationDurationUndefined: Self = StObject.set(x, "transitionAnimationDuration", js.undefined)
     }
   }
   
@@ -527,26 +442,20 @@ object mod {
   }
   object SkipButtonProps {
     
-    @scala.inline
-    def apply(allowFontScaling: Boolean, isLight: Boolean, onPress: () => js.Any, skipLabel: String | Element): SkipButtonProps = {
+    inline def apply(allowFontScaling: Boolean, isLight: Boolean, onPress: () => js.Any, skipLabel: String | Element): SkipButtonProps = {
       val __obj = js.Dynamic.literal(allowFontScaling = allowFontScaling.asInstanceOf[js.Any], isLight = isLight.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress), skipLabel = skipLabel.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkipButtonProps]
     }
     
-    @scala.inline
-    implicit class SkipButtonPropsMutableBuilder[Self <: SkipButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: SkipButtonProps](x: Self) {
       
-      @scala.inline
-      def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
+      inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLight(value: Boolean): Self = StObject.set(x, "isLight", value.asInstanceOf[js.Any])
+      inline def setIsLight(value: Boolean): Self = StObject.set(x, "isLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnPress(value: () => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSkipLabel(value: String | Element): Self = StObject.set(x, "skipLabel", value.asInstanceOf[js.Any])
+      inline def setSkipLabel(value: String | Element): Self = StObject.set(x, "skipLabel", value.asInstanceOf[js.Any])
     }
   }
 }

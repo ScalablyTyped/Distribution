@@ -23,16 +23,13 @@ trait DictTEMPLATEID
 }
 object DictTEMPLATEID {
   
-  @scala.inline
-  def apply(errMsg: String): DictTEMPLATEID = {
+  inline def apply(errMsg: String): DictTEMPLATEID = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictTEMPLATEID]
   }
   
-  @scala.inline
-  implicit class DictTEMPLATEIDMutableBuilder[Self <: DictTEMPLATEID] (val x: Self) extends AnyVal {
+  extension [Self <: DictTEMPLATEID](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

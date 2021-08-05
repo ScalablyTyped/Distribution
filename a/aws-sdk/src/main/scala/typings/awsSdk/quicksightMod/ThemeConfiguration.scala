@@ -23,31 +23,23 @@ trait ThemeConfiguration extends StObject {
 }
 object ThemeConfiguration {
   
-  @scala.inline
-  def apply(): ThemeConfiguration = {
+  inline def apply(): ThemeConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThemeConfiguration]
   }
   
-  @scala.inline
-  implicit class ThemeConfigurationMutableBuilder[Self <: ThemeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeConfiguration](x: Self) {
     
-    @scala.inline
-    def setDataColorPalette(value: DataColorPalette): Self = StObject.set(x, "DataColorPalette", value.asInstanceOf[js.Any])
+    inline def setDataColorPalette(value: DataColorPalette): Self = StObject.set(x, "DataColorPalette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataColorPaletteUndefined: Self = StObject.set(x, "DataColorPalette", js.undefined)
+    inline def setDataColorPaletteUndefined: Self = StObject.set(x, "DataColorPalette", js.undefined)
     
-    @scala.inline
-    def setSheet(value: SheetStyle): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
+    inline def setSheet(value: SheetStyle): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetUndefined: Self = StObject.set(x, "Sheet", js.undefined)
+    inline def setSheetUndefined: Self = StObject.set(x, "Sheet", js.undefined)
     
-    @scala.inline
-    def setUIColorPalette(value: UIColorPalette): Self = StObject.set(x, "UIColorPalette", value.asInstanceOf[js.Any])
+    inline def setUIColorPalette(value: UIColorPalette): Self = StObject.set(x, "UIColorPalette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUIColorPaletteUndefined: Self = StObject.set(x, "UIColorPalette", js.undefined)
+    inline def setUIColorPaletteUndefined: Self = StObject.set(x, "UIColorPalette", js.undefined)
   }
 }

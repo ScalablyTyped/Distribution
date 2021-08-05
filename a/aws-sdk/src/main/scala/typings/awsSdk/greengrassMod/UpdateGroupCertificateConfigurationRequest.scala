@@ -18,22 +18,17 @@ trait UpdateGroupCertificateConfigurationRequest extends StObject {
 }
 object UpdateGroupCertificateConfigurationRequest {
   
-  @scala.inline
-  def apply(GroupId: string): UpdateGroupCertificateConfigurationRequest = {
+  inline def apply(GroupId: string): UpdateGroupCertificateConfigurationRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGroupCertificateConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateGroupCertificateConfigurationRequestMutableBuilder[Self <: UpdateGroupCertificateConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGroupCertificateConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateExpiryInMilliseconds(value: string): Self = StObject.set(x, "CertificateExpiryInMilliseconds", value.asInstanceOf[js.Any])
+    inline def setCertificateExpiryInMilliseconds(value: string): Self = StObject.set(x, "CertificateExpiryInMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateExpiryInMillisecondsUndefined: Self = StObject.set(x, "CertificateExpiryInMilliseconds", js.undefined)
+    inline def setCertificateExpiryInMillisecondsUndefined: Self = StObject.set(x, "CertificateExpiryInMilliseconds", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
   }
 }

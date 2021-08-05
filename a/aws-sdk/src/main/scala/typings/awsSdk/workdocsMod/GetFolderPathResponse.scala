@@ -13,19 +13,15 @@ trait GetFolderPathResponse extends StObject {
 }
 object GetFolderPathResponse {
   
-  @scala.inline
-  def apply(): GetFolderPathResponse = {
+  inline def apply(): GetFolderPathResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFolderPathResponse]
   }
   
-  @scala.inline
-  implicit class GetFolderPathResponseMutableBuilder[Self <: GetFolderPathResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFolderPathResponse](x: Self) {
     
-    @scala.inline
-    def setPath(value: ResourcePath): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: ResourcePath): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
   }
 }

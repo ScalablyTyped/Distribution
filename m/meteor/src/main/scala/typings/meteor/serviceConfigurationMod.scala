@@ -16,8 +16,7 @@ object serviceConfigurationMod {
     @JSImport("meteor/service-configuration", "ServiceConfiguration.configurations")
     @js.native
     def configurations: Collection[Configuration, Configuration] = js.native
-    @scala.inline
-    def configurations_=(x: Collection[Configuration, Configuration]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configurations")(x.asInstanceOf[js.Any])
+    inline def configurations_=(x: Collection[Configuration, Configuration]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configurations")(x.asInstanceOf[js.Any])
   }
   
   trait Configuration extends StObject {
@@ -28,20 +27,16 @@ object serviceConfigurationMod {
   }
   object Configuration {
     
-    @scala.inline
-    def apply(appId: String, secret: String): Configuration = {
+    inline def apply(appId: String, secret: String): Configuration = {
       val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[Configuration]
     }
     
-    @scala.inline
-    implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+    extension [Self <: Configuration](x: Self) {
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     }
   }
 }

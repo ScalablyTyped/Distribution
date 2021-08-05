@@ -13,25 +13,19 @@ trait PartialClassNameMapTimeliAlignRight extends StObject {
 }
 object PartialClassNameMapTimeliAlignRight {
   
-  @scala.inline
-  def apply(): PartialClassNameMapTimeliAlignRight = {
+  inline def apply(): PartialClassNameMapTimeliAlignRight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapTimeliAlignRight]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapTimeliAlignRightMutableBuilder[Self <: PartialClassNameMapTimeliAlignRight] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapTimeliAlignRight](x: Self) {
     
-    @scala.inline
-    def setAlignRight(value: String): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
+    inline def setAlignRight(value: String): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignRightUndefined: Self = StObject.set(x, "alignRight", js.undefined)
+    inline def setAlignRightUndefined: Self = StObject.set(x, "alignRight", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

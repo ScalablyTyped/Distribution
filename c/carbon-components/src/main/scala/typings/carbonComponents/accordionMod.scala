@@ -33,8 +33,7 @@ object accordionMod {
     @JSImport("carbon-components/components/accordion/accordion", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -48,23 +47,18 @@ object accordionMod {
   }
   object Accordion {
     
-    @scala.inline
-    def apply(_checkIfButton: () => Boolean, _handleKeypress: js.Any => Unit, _toggle: js.Any => Unit): Accordion = {
+    inline def apply(_checkIfButton: () => Boolean, _handleKeypress: js.Any => Unit, _toggle: js.Any => Unit): Accordion = {
       val __obj = js.Dynamic.literal(_checkIfButton = js.Any.fromFunction0(_checkIfButton), _handleKeypress = js.Any.fromFunction1(_handleKeypress), _toggle = js.Any.fromFunction1(_toggle))
       __obj.asInstanceOf[Accordion]
     }
     
-    @scala.inline
-    implicit class AccordionMutableBuilder[Self <: Accordion] (val x: Self) extends AnyVal {
+    extension [Self <: Accordion](x: Self) {
       
-      @scala.inline
-      def set_checkIfButton(value: () => Boolean): Self = StObject.set(x, "_checkIfButton", js.Any.fromFunction0(value))
+      inline def set_checkIfButton(value: () => Boolean): Self = StObject.set(x, "_checkIfButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_handleKeypress(value: js.Any => Unit): Self = StObject.set(x, "_handleKeypress", js.Any.fromFunction1(value))
+      inline def set_handleKeypress(value: js.Any => Unit): Self = StObject.set(x, "_handleKeypress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_toggle(value: js.Any => Unit): Self = StObject.set(x, "_toggle", js.Any.fromFunction1(value))
+      inline def set_toggle(value: js.Any => Unit): Self = StObject.set(x, "_toggle", js.Any.fromFunction1(value))
     }
   }
 }

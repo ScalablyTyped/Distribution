@@ -14,22 +14,17 @@ trait DiagnosticInfo extends StObject {
 }
 object DiagnosticInfo {
   
-  @scala.inline
-  def apply(category: DiagnosticCategory, code: Double, message: String): DiagnosticInfo = {
+  inline def apply(category: DiagnosticCategory, code: Double, message: String): DiagnosticInfo = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticInfo]
   }
   
-  @scala.inline
-  implicit class DiagnosticInfoMutableBuilder[Self <: DiagnosticInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DiagnosticInfo](x: Self) {
     
-    @scala.inline
-    def setCategory(value: DiagnosticCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: DiagnosticCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

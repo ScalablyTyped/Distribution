@@ -23,31 +23,23 @@ trait WavSettings extends StObject {
 }
 object WavSettings {
   
-  @scala.inline
-  def apply(): WavSettings = {
+  inline def apply(): WavSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WavSettings]
   }
   
-  @scala.inline
-  implicit class WavSettingsMutableBuilder[Self <: WavSettings] (val x: Self) extends AnyVal {
+  extension [Self <: WavSettings](x: Self) {
     
-    @scala.inline
-    def setBitDepth(value: double): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
+    inline def setBitDepth(value: double): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitDepthUndefined: Self = StObject.set(x, "BitDepth", js.undefined)
+    inline def setBitDepthUndefined: Self = StObject.set(x, "BitDepth", js.undefined)
     
-    @scala.inline
-    def setCodingMode(value: WavCodingMode): Self = StObject.set(x, "CodingMode", value.asInstanceOf[js.Any])
+    inline def setCodingMode(value: WavCodingMode): Self = StObject.set(x, "CodingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodingModeUndefined: Self = StObject.set(x, "CodingMode", js.undefined)
+    inline def setCodingModeUndefined: Self = StObject.set(x, "CodingMode", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: double): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: double): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait MarkableInputStream
      with XConnectable
 object MarkableInputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InputStream: XInputStream,
     Predecessor: XConnectable,
     Successor: XConnectable,

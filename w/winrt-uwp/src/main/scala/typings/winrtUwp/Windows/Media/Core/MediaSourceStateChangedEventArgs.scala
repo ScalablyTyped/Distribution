@@ -14,19 +14,15 @@ trait MediaSourceStateChangedEventArgs extends StObject {
 }
 object MediaSourceStateChangedEventArgs {
   
-  @scala.inline
-  def apply(newState: MediaSourceState, oldState: MediaSourceState): MediaSourceStateChangedEventArgs = {
+  inline def apply(newState: MediaSourceState, oldState: MediaSourceState): MediaSourceStateChangedEventArgs = {
     val __obj = js.Dynamic.literal(newState = newState.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaSourceStateChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class MediaSourceStateChangedEventArgsMutableBuilder[Self <: MediaSourceStateChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MediaSourceStateChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setNewState(value: MediaSourceState): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
+    inline def setNewState(value: MediaSourceState): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldState(value: MediaSourceState): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
+    inline def setOldState(value: MediaSourceState): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
   }
 }

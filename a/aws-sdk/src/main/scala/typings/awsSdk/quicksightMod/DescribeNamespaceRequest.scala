@@ -18,19 +18,15 @@ trait DescribeNamespaceRequest extends StObject {
 }
 object DescribeNamespaceRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId, Namespace: Namespace): DescribeNamespaceRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, Namespace: Namespace): DescribeNamespaceRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNamespaceRequest]
   }
   
-  @scala.inline
-  implicit class DescribeNamespaceRequestMutableBuilder[Self <: DescribeNamespaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNamespaceRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
   }
 }

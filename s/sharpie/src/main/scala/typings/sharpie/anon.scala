@@ -16,26 +16,20 @@ object anon {
   }
   object Assignment {
     
-    @scala.inline
-    def apply(): Assignment = {
+    inline def apply(): Assignment = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Assignment]
     }
     
-    @scala.inline
-    implicit class AssignmentMutableBuilder[Self <: Assignment] (val x: Self) extends AnyVal {
+    extension [Self <: Assignment](x: Self) {
       
-      @scala.inline
-      def setAssignment(value: String): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
+      inline def setAssignment(value: String): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignmentUndefined: Self = StObject.set(x, "assignment", js.undefined)
+      inline def setAssignmentUndefined: Self = StObject.set(x, "assignment", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
 }

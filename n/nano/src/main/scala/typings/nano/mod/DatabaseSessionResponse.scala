@@ -18,22 +18,17 @@ trait DatabaseSessionResponse extends StObject {
 }
 object DatabaseSessionResponse {
   
-  @scala.inline
-  def apply(info: js.Any, ok: Boolean, userCtx: js.Any): DatabaseSessionResponse = {
+  inline def apply(info: js.Any, ok: Boolean, userCtx: js.Any): DatabaseSessionResponse = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], userCtx = userCtx.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseSessionResponse]
   }
   
-  @scala.inline
-  implicit class DatabaseSessionResponseMutableBuilder[Self <: DatabaseSessionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseSessionResponse](x: Self) {
     
-    @scala.inline
-    def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserCtx(value: js.Any): Self = StObject.set(x, "userCtx", value.asInstanceOf[js.Any])
+    inline def setUserCtx(value: js.Any): Self = StObject.set(x, "userCtx", value.asInstanceOf[js.Any])
   }
 }

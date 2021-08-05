@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ThreatAssessmentRequestSource extends StObject
 object ThreatAssessmentRequestSource {
   
-  @scala.inline
-  def administrator: typings.microsoftGraph.microsoftGraphStrings.administrator = "administrator".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.administrator]
+  inline def administrator: typings.microsoftGraph.microsoftGraphStrings.administrator = "administrator".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.administrator]
   
-  @scala.inline
-  def undefined: typings.microsoftGraph.microsoftGraphStrings.undefined = "undefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.undefined]
+  inline def undefined: typings.microsoftGraph.microsoftGraphStrings.undefined = "undefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.undefined]
   
-  @scala.inline
-  def user: typings.microsoftGraph.microsoftGraphStrings.user = "user".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.user]
+  inline def user: typings.microsoftGraph.microsoftGraphStrings.user = "user".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.user]
 }

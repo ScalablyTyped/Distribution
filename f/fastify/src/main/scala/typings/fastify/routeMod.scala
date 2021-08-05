@@ -47,8 +47,7 @@ object routeMod {
        with ReplyGenericInterface
   object RouteGenericInterface {
     
-    @scala.inline
-    def apply(): RouteGenericInterface = {
+    inline def apply(): RouteGenericInterface = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouteGenericInterface]
     }
@@ -91,8 +90,7 @@ object routeMod {
   }
   object RouteOptions {
     
-    @scala.inline
-    def apply[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig](
+    inline def apply[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig](
       handler: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig],
       method: HTTPMethods | js.Array[HTTPMethods],
       url: String
@@ -101,20 +99,15 @@ object routeMod {
       __obj.asInstanceOf[RouteOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]]
     }
     
-    @scala.inline
-    implicit class RouteOptionsMutableBuilder[Self <: RouteOptions[?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] (val x: Self & (RouteOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])) extends AnyVal {
+    extension [Self <: RouteOptions[?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig](x: Self & (RouteOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])) {
       
-      @scala.inline
-      def setHandler(value: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: HTTPMethods | js.Array[HTTPMethods]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: HTTPMethods | js.Array[HTTPMethods]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodVarargs(value: HTTPMethods*): Self = StObject.set(x, "method", js.Array(value :_*))
+      inline def setMethodVarargs(value: HTTPMethods*): Self = StObject.set(x, "method", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -243,35 +236,26 @@ object routeMod {
   }
   object RouteShorthandOptions {
     
-    @scala.inline
-    def apply[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig](): RouteShorthandOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig] = {
+    inline def apply[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig](): RouteShorthandOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouteShorthandOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]]
     }
     
-    @scala.inline
-    implicit class RouteShorthandOptionsMutableBuilder[Self <: RouteShorthandOptions[?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] (val x: Self & (RouteShorthandOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])) extends AnyVal {
+    extension [Self <: RouteShorthandOptions[?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig](x: Self & (RouteShorthandOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])) {
       
-      @scala.inline
-      def setAttachValidation(value: Boolean): Self = StObject.set(x, "attachValidation", value.asInstanceOf[js.Any])
+      inline def setAttachValidation(value: Boolean): Self = StObject.set(x, "attachValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachValidationUndefined: Self = StObject.set(x, "attachValidation", js.undefined)
+      inline def setAttachValidationUndefined: Self = StObject.set(x, "attachValidation", js.undefined)
       
-      @scala.inline
-      def setBodyLimit(value: Double): Self = StObject.set(x, "bodyLimit", value.asInstanceOf[js.Any])
+      inline def setBodyLimit(value: Double): Self = StObject.set(x, "bodyLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyLimitUndefined: Self = StObject.set(x, "bodyLimit", js.undefined)
+      inline def setBodyLimitUndefined: Self = StObject.set(x, "bodyLimit", js.undefined)
       
-      @scala.inline
-      def setConfig(value: ContextConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: ContextConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setErrorHandler(
+      inline def setErrorHandler(
         value: js.ThisFunction3[
               /* this */ FastifyInstance[
                 RawServerDefault, 
@@ -296,134 +280,105 @@ object routeMod {
             ]
       ): Self = StObject.set(x, "errorHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+      inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setOnError(
+      inline def setOnError(
         value: (onErrorHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, FastifyError]) | (js.Array[
               onErrorHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, FastifyError]
             ])
       ): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnErrorFunction4(
+      inline def setOnErrorFunction4(
         value: (/* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], FastifyError, /* done */ js.Function0[Unit]) => Unit
       ): Self = StObject.set(x, "onError", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnErrorVarargs(
+      inline def setOnErrorVarargs(
         value: (onErrorHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, FastifyError])*
       ): Self = StObject.set(x, "onError", js.Array(value :_*))
       
-      @scala.inline
-      def setOnRequest(
+      inline def setOnRequest(
         value: (onRequestHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
               onRequestHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
             ])
       ): Self = StObject.set(x, "onRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRequestFunction3(
+      inline def setOnRequestFunction3(
         value: (/* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], /* done */ HookHandlerDoneFunction) => Unit
       ): Self = StObject.set(x, "onRequest", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnRequestUndefined: Self = StObject.set(x, "onRequest", js.undefined)
+      inline def setOnRequestUndefined: Self = StObject.set(x, "onRequest", js.undefined)
       
-      @scala.inline
-      def setOnRequestVarargs(value: (onRequestHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "onRequest", js.Array(value :_*))
+      inline def setOnRequestVarargs(value: (onRequestHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "onRequest", js.Array(value :_*))
       
-      @scala.inline
-      def setOnResponse(
+      inline def setOnResponse(
         value: (onResponseHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
               onResponseHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
             ])
       ): Self = StObject.set(x, "onResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnResponseFunction3(
+      inline def setOnResponseFunction3(
         value: (/* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], /* done */ HookHandlerDoneFunction) => Unit
       ): Self = StObject.set(x, "onResponse", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnResponseUndefined: Self = StObject.set(x, "onResponse", js.undefined)
+      inline def setOnResponseUndefined: Self = StObject.set(x, "onResponse", js.undefined)
       
-      @scala.inline
-      def setOnResponseVarargs(value: (onResponseHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "onResponse", js.Array(value :_*))
+      inline def setOnResponseVarargs(value: (onResponseHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "onResponse", js.Array(value :_*))
       
-      @scala.inline
-      def setOnSend(
+      inline def setOnSend(
         value: (onSendHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
               onSendHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
             ])
       ): Self = StObject.set(x, "onSend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSendFunction4(
+      inline def setOnSendFunction4(
         value: (/* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], js.Any, /* done */ DoneFuncWithErrOrRes) => Unit
       ): Self = StObject.set(x, "onSend", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnSendUndefined: Self = StObject.set(x, "onSend", js.undefined)
+      inline def setOnSendUndefined: Self = StObject.set(x, "onSend", js.undefined)
       
-      @scala.inline
-      def setOnSendVarargs(value: (onSendHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "onSend", js.Array(value :_*))
+      inline def setOnSendVarargs(value: (onSendHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "onSend", js.Array(value :_*))
       
-      @scala.inline
-      def setOnTimeout(
+      inline def setOnTimeout(
         value: (onTimeoutHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
               onTimeoutHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
             ])
       ): Self = StObject.set(x, "onTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnTimeoutFunction3(
+      inline def setOnTimeoutFunction3(
         value: (/* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], /* done */ HookHandlerDoneFunction) => Unit
       ): Self = StObject.set(x, "onTimeout", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnTimeoutUndefined: Self = StObject.set(x, "onTimeout", js.undefined)
+      inline def setOnTimeoutUndefined: Self = StObject.set(x, "onTimeout", js.undefined)
       
-      @scala.inline
-      def setOnTimeoutVarargs(value: (onTimeoutHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "onTimeout", js.Array(value :_*))
+      inline def setOnTimeoutVarargs(value: (onTimeoutHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "onTimeout", js.Array(value :_*))
       
-      @scala.inline
-      def setPreHandler(
+      inline def setPreHandler(
         value: (preHandlerHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
               preHandlerHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
             ])
       ): Self = StObject.set(x, "preHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreHandlerFunction3(
+      inline def setPreHandlerFunction3(
         value: (/* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], /* done */ HookHandlerDoneFunction) => Unit
       ): Self = StObject.set(x, "preHandler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPreHandlerUndefined: Self = StObject.set(x, "preHandler", js.undefined)
+      inline def setPreHandlerUndefined: Self = StObject.set(x, "preHandler", js.undefined)
       
-      @scala.inline
-      def setPreHandlerVarargs(value: (preHandlerHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "preHandler", js.Array(value :_*))
+      inline def setPreHandlerVarargs(value: (preHandlerHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "preHandler", js.Array(value :_*))
       
-      @scala.inline
-      def setPreParsing(
+      inline def setPreParsing(
         value: (preParsingHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
               preParsingHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
             ])
       ): Self = StObject.set(x, "preParsing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreParsingFunction4(
+      inline def setPreParsingFunction4(
         value: (/* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], /* payload */ RequestPayload, /* done */ js.Function2[
               /* err */ js.UndefOr[FastifyError | Null], 
               /* res */ js.UndefOr[RequestPayload], 
@@ -431,85 +386,63 @@ object routeMod {
             ]) => Unit
       ): Self = StObject.set(x, "preParsing", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPreParsingUndefined: Self = StObject.set(x, "preParsing", js.undefined)
+      inline def setPreParsingUndefined: Self = StObject.set(x, "preParsing", js.undefined)
       
-      @scala.inline
-      def setPreParsingVarargs(value: (preParsingHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "preParsing", js.Array(value :_*))
+      inline def setPreParsingVarargs(value: (preParsingHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "preParsing", js.Array(value :_*))
       
-      @scala.inline
-      def setPreSerialization(
+      inline def setPreSerialization(
         value: (preSerializationHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
               preSerializationHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
             ])
       ): Self = StObject.set(x, "preSerialization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreSerializationFunction4(
+      inline def setPreSerializationFunction4(
         value: (/* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], js.Any, /* done */ DoneFuncWithErrOrRes) => Unit
       ): Self = StObject.set(x, "preSerialization", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPreSerializationUndefined: Self = StObject.set(x, "preSerialization", js.undefined)
+      inline def setPreSerializationUndefined: Self = StObject.set(x, "preSerialization", js.undefined)
       
-      @scala.inline
-      def setPreSerializationVarargs(
+      inline def setPreSerializationVarargs(
         value: (preSerializationHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*
       ): Self = StObject.set(x, "preSerialization", js.Array(value :_*))
       
-      @scala.inline
-      def setPreValidation(
+      inline def setPreValidation(
         value: (preValidationHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
               preValidationHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
             ])
       ): Self = StObject.set(x, "preValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreValidationFunction3(
+      inline def setPreValidationFunction3(
         value: (/* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], /* done */ HookHandlerDoneFunction) => Unit
       ): Self = StObject.set(x, "preValidation", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPreValidationUndefined: Self = StObject.set(x, "preValidation", js.undefined)
+      inline def setPreValidationUndefined: Self = StObject.set(x, "preValidation", js.undefined)
       
-      @scala.inline
-      def setPreValidationVarargs(value: (preValidationHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "preValidation", js.Array(value :_*))
+      inline def setPreValidationVarargs(value: (preValidationHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])*): Self = StObject.set(x, "preValidation", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefixTrailingSlash(value: slash | `no-slash` | both): Self = StObject.set(x, "prefixTrailingSlash", value.asInstanceOf[js.Any])
+      inline def setPrefixTrailingSlash(value: slash | `no-slash` | both): Self = StObject.set(x, "prefixTrailingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixTrailingSlashUndefined: Self = StObject.set(x, "prefixTrailingSlash", js.undefined)
+      inline def setPrefixTrailingSlashUndefined: Self = StObject.set(x, "prefixTrailingSlash", js.undefined)
       
-      @scala.inline
-      def setSchema(value: FastifySchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: FastifySchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaErrorFormatter(value: (/* errors */ js.Array[FastifySchemaValidationError], /* dataVar */ String) => Error): Self = StObject.set(x, "schemaErrorFormatter", js.Any.fromFunction2(value))
+      inline def setSchemaErrorFormatter(value: (/* errors */ js.Array[FastifySchemaValidationError], /* dataVar */ String) => Error): Self = StObject.set(x, "schemaErrorFormatter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSchemaErrorFormatterUndefined: Self = StObject.set(x, "schemaErrorFormatter", js.undefined)
+      inline def setSchemaErrorFormatterUndefined: Self = StObject.set(x, "schemaErrorFormatter", js.undefined)
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setSerializerCompiler(value: /* routeSchema */ FastifyRouteSchemaDef => FastifyValidationResult): Self = StObject.set(x, "serializerCompiler", js.Any.fromFunction1(value))
+      inline def setSerializerCompiler(value: /* routeSchema */ FastifyRouteSchemaDef => FastifyValidationResult): Self = StObject.set(x, "serializerCompiler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerializerCompilerUndefined: Self = StObject.set(x, "serializerCompiler", js.undefined)
+      inline def setSerializerCompilerUndefined: Self = StObject.set(x, "serializerCompiler", js.undefined)
       
-      @scala.inline
-      def setValidatorCompiler(value: /* routeSchema */ FastifyRouteSchemaDef => FastifyValidationResult): Self = StObject.set(x, "validatorCompiler", js.Any.fromFunction1(value))
+      inline def setValidatorCompiler(value: /* routeSchema */ FastifyRouteSchemaDef => FastifyValidationResult): Self = StObject.set(x, "validatorCompiler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidatorCompilerUndefined: Self = StObject.set(x, "validatorCompiler", js.undefined)
+      inline def setValidatorCompilerUndefined: Self = StObject.set(x, "validatorCompiler", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -528,17 +461,14 @@ object routeMod {
   }
   object RouteShorthandOptionsWithHandler {
     
-    @scala.inline
-    def apply[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig](handler: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]): RouteShorthandOptionsWithHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig] = {
+    inline def apply[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig](handler: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]): RouteShorthandOptionsWithHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig] = {
       val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteShorthandOptionsWithHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]]
     }
     
-    @scala.inline
-    implicit class RouteShorthandOptionsWithHandlerMutableBuilder[Self <: RouteShorthandOptionsWithHandler[?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] (val x: Self & (RouteShorthandOptionsWithHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])) extends AnyVal {
+    extension [Self <: RouteShorthandOptionsWithHandler[?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig](x: Self & (RouteShorthandOptionsWithHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])) {
       
-      @scala.inline
-      def setHandler(value: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     }
   }
 }

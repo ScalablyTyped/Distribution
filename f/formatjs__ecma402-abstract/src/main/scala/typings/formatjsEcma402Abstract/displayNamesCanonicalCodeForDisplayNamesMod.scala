@@ -14,15 +14,11 @@ object displayNamesCanonicalCodeForDisplayNamesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def CanonicalCodeForDisplayNames_currency(`type`: currency, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def CanonicalCodeForDisplayNames_currency(`type`: currency, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def CanonicalCodeForDisplayNames_language(`type`: language, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def CanonicalCodeForDisplayNames_language(`type`: language, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def CanonicalCodeForDisplayNames_region(`type`: region, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def CanonicalCodeForDisplayNames_region(`type`: region, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def CanonicalCodeForDisplayNames_script(`type`: script, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def CanonicalCodeForDisplayNames_script(`type`: script, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
 }

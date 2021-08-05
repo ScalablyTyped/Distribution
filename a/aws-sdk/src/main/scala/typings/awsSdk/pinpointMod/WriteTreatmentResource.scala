@@ -43,52 +43,37 @@ trait WriteTreatmentResource extends StObject {
 }
 object WriteTreatmentResource {
   
-  @scala.inline
-  def apply(SizePercent: integer): WriteTreatmentResource = {
+  inline def apply(SizePercent: integer): WriteTreatmentResource = {
     val __obj = js.Dynamic.literal(SizePercent = SizePercent.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteTreatmentResource]
   }
   
-  @scala.inline
-  implicit class WriteTreatmentResourceMutableBuilder[Self <: WriteTreatmentResource] (val x: Self) extends AnyVal {
+  extension [Self <: WriteTreatmentResource](x: Self) {
     
-    @scala.inline
-    def setCustomDeliveryConfiguration(value: CustomDeliveryConfiguration): Self = StObject.set(x, "CustomDeliveryConfiguration", value.asInstanceOf[js.Any])
+    inline def setCustomDeliveryConfiguration(value: CustomDeliveryConfiguration): Self = StObject.set(x, "CustomDeliveryConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDeliveryConfigurationUndefined: Self = StObject.set(x, "CustomDeliveryConfiguration", js.undefined)
+    inline def setCustomDeliveryConfigurationUndefined: Self = StObject.set(x, "CustomDeliveryConfiguration", js.undefined)
     
-    @scala.inline
-    def setMessageConfiguration(value: MessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
+    inline def setMessageConfiguration(value: MessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
+    inline def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: Schedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: Schedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
-    @scala.inline
-    def setSizePercent(value: integer): Self = StObject.set(x, "SizePercent", value.asInstanceOf[js.Any])
+    inline def setSizePercent(value: integer): Self = StObject.set(x, "SizePercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateConfiguration(value: TemplateConfiguration): Self = StObject.set(x, "TemplateConfiguration", value.asInstanceOf[js.Any])
+    inline def setTemplateConfiguration(value: TemplateConfiguration): Self = StObject.set(x, "TemplateConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateConfigurationUndefined: Self = StObject.set(x, "TemplateConfiguration", js.undefined)
+    inline def setTemplateConfigurationUndefined: Self = StObject.set(x, "TemplateConfiguration", js.undefined)
     
-    @scala.inline
-    def setTreatmentDescription(value: string): Self = StObject.set(x, "TreatmentDescription", value.asInstanceOf[js.Any])
+    inline def setTreatmentDescription(value: string): Self = StObject.set(x, "TreatmentDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreatmentDescriptionUndefined: Self = StObject.set(x, "TreatmentDescription", js.undefined)
+    inline def setTreatmentDescriptionUndefined: Self = StObject.set(x, "TreatmentDescription", js.undefined)
     
-    @scala.inline
-    def setTreatmentName(value: string): Self = StObject.set(x, "TreatmentName", value.asInstanceOf[js.Any])
+    inline def setTreatmentName(value: string): Self = StObject.set(x, "TreatmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreatmentNameUndefined: Self = StObject.set(x, "TreatmentName", js.undefined)
+    inline def setTreatmentNameUndefined: Self = StObject.set(x, "TreatmentName", js.undefined)
   }
 }

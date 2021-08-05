@@ -27,24 +27,21 @@ object mod {
     def this(props: ProviderProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def connect[TStateProps, TOwnProps, State](): js.Function1[
+  inline def connect[TStateProps, TOwnProps, State](): js.Function1[
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[js.Function1[
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
   ]]
-  @scala.inline
-  def connect[TStateProps, TOwnProps, State](mapStateToProps: js.Function2[/* state */ State, /* ownProps */ TOwnProps, TStateProps]): js.Function1[
+  inline def connect[TStateProps, TOwnProps, State](mapStateToProps: js.Function2[/* state */ State, /* ownProps */ TOwnProps, TStateProps]): js.Function1[
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
   ]]
-  @scala.inline
-  def connect[TStateProps, TOwnProps, State](
+  inline def connect[TStateProps, TOwnProps, State](
     mapStateToProps: js.Function2[/* state */ State, /* ownProps */ TOwnProps, TStateProps],
     options: ConnectOptions
   ): js.Function1[
@@ -54,8 +51,7 @@ object mod {
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
   ]]
-  @scala.inline
-  def connect[TStateProps, TOwnProps, State](mapStateToProps: Unit, options: ConnectOptions): js.Function1[
+  inline def connect[TStateProps, TOwnProps, State](mapStateToProps: Unit, options: ConnectOptions): js.Function1[
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
@@ -63,6 +59,5 @@ object mod {
     ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
   ]]
   
-  @scala.inline
-  def create[S](initialState: S): Store[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(initialState.asInstanceOf[js.Any]).asInstanceOf[Store[S]]
+  inline def create[S](initialState: S): Store[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(initialState.asInstanceOf[js.Any]).asInstanceOf[Store[S]]
 }

@@ -29,28 +29,21 @@ trait PatternObject
 }
 object PatternObject {
   
-  @scala.inline
-  def apply(pattern: PatternOptionsObject): PatternObject = {
+  inline def apply(pattern: PatternOptionsObject): PatternObject = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatternObject]
   }
   
-  @scala.inline
-  implicit class PatternObjectMutableBuilder[Self <: PatternObject] (val x: Self) extends AnyVal {
+  extension [Self <: PatternObject](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setPattern(value: PatternOptionsObject): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: PatternOptionsObject): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternIndex(value: Double): Self = StObject.set(x, "patternIndex", value.asInstanceOf[js.Any])
+    inline def setPatternIndex(value: Double): Self = StObject.set(x, "patternIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternIndexUndefined: Self = StObject.set(x, "patternIndex", js.undefined)
+    inline def setPatternIndexUndefined: Self = StObject.set(x, "patternIndex", js.undefined)
   }
 }

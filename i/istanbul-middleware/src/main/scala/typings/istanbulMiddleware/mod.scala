@@ -14,24 +14,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createClientHandler(root: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientHandler")(root.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def createClientHandler(root: String, opts: typings.istanbulMiddleware.anon.Matcher): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientHandler")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createClientHandler(root: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientHandler")(root.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createClientHandler(root: String, opts: typings.istanbulMiddleware.anon.Matcher): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientHandler")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def createHandler(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createHandler")().asInstanceOf[js.Any]
-  @scala.inline
-  def createHandler(opts: ResetOnGet): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createHandler")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createHandler(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createHandler")().asInstanceOf[js.Any]
+  inline def createHandler(opts: ResetOnGet): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createHandler")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def hookLoader(matcherOrRoot: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hookLoader")(matcherOrRoot.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def hookLoader(matcherOrRoot: String, opts: typings.istanbulMiddleware.anon.PostLoadHook): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hookLoader")(matcherOrRoot.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hookLoader(matcherOrRoot: Matcher): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hookLoader")(matcherOrRoot.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def hookLoader(matcherOrRoot: Matcher, opts: typings.istanbulMiddleware.anon.PostLoadHook): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hookLoader")(matcherOrRoot.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hookLoader(matcherOrRoot: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hookLoader")(matcherOrRoot.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def hookLoader(matcherOrRoot: String, opts: typings.istanbulMiddleware.anon.PostLoadHook): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hookLoader")(matcherOrRoot.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hookLoader(matcherOrRoot: Matcher): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hookLoader")(matcherOrRoot.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def hookLoader(matcherOrRoot: Matcher, opts: typings.istanbulMiddleware.anon.PostLoadHook): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hookLoader")(matcherOrRoot.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type ClientMatcher = js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], Boolean]
   

@@ -17,40 +17,29 @@ trait IGossipBatchByBatchIdRequest extends StObject {
 }
 object IGossipBatchByBatchIdRequest {
   
-  @scala.inline
-  def apply(): IGossipBatchByBatchIdRequest = {
+  inline def apply(): IGossipBatchByBatchIdRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGossipBatchByBatchIdRequest]
   }
   
-  @scala.inline
-  implicit class IGossipBatchByBatchIdRequestMutableBuilder[Self <: IGossipBatchByBatchIdRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IGossipBatchByBatchIdRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceNull: Self = StObject.set(x, "nonce", null)
+    inline def setNonceNull: Self = StObject.set(x, "nonce", null)
     
-    @scala.inline
-    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
-    @scala.inline
-    def setTimeToLive(value: Double): Self = StObject.set(x, "timeToLive", value.asInstanceOf[js.Any])
+    inline def setTimeToLive(value: Double): Self = StObject.set(x, "timeToLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToLiveNull: Self = StObject.set(x, "timeToLive", null)
+    inline def setTimeToLiveNull: Self = StObject.set(x, "timeToLive", null)
     
-    @scala.inline
-    def setTimeToLiveUndefined: Self = StObject.set(x, "timeToLive", js.undefined)
+    inline def setTimeToLiveUndefined: Self = StObject.set(x, "timeToLive", js.undefined)
   }
 }

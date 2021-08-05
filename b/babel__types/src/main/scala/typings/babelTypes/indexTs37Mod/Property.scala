@@ -14,15 +14,13 @@ trait Property
      with _Node
 object Property {
   
-  @scala.inline
-  def ClassPrivateProperty_(key: PrivateName_, static: js.Any): typings.babelTypes.indexTs37Mod.ClassPrivateProperty_ = {
+  inline def ClassPrivateProperty_(key: PrivateName_, static: js.Any): typings.babelTypes.indexTs37Mod.ClassPrivateProperty_ = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, value = null)
     __obj.updateDynamic("type")("ClassPrivateProperty")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ClassPrivateProperty_]
   }
   
-  @scala.inline
-  def ClassProperty_(
+  inline def ClassProperty_(
     computed: Boolean,
     key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression,
     static: Boolean
@@ -33,8 +31,7 @@ object Property {
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ClassProperty_]
   }
   
-  @scala.inline
-  def ObjectProperty_(
+  inline def ObjectProperty_(
     computed: Boolean,
     key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
     shorthand: Boolean,

@@ -16,8 +16,7 @@ trait OfficeDocumentView
      with XControlAccess
 object OfficeDocumentView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Selection: js.Any,
     ViewSettings: XPropertySet,
     acquire: () => Unit,

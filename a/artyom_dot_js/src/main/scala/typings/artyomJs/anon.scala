@@ -18,38 +18,28 @@ object anon {
   }
   object FatalityPromiseCallback {
     
-    @scala.inline
-    def apply(): FatalityPromiseCallback = {
+    inline def apply(): FatalityPromiseCallback = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FatalityPromiseCallback]
     }
     
-    @scala.inline
-    implicit class FatalityPromiseCallbackMutableBuilder[Self <: FatalityPromiseCallback] (val x: Self) extends AnyVal {
+    extension [Self <: FatalityPromiseCallback](x: Self) {
       
-      @scala.inline
-      def setFatalityPromiseCallback(value: js.Any): Self = StObject.set(x, "fatalityPromiseCallback", value.asInstanceOf[js.Any])
+      inline def setFatalityPromiseCallback(value: js.Any): Self = StObject.set(x, "fatalityPromiseCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFatalityPromiseCallbackUndefined: Self = StObject.set(x, "fatalityPromiseCallback", js.undefined)
+      inline def setFatalityPromiseCallbackUndefined: Self = StObject.set(x, "fatalityPromiseCallback", js.undefined)
       
-      @scala.inline
-      def setLastSay(value: js.Any): Self = StObject.set(x, "lastSay", value.asInstanceOf[js.Any])
+      inline def setLastSay(value: js.Any): Self = StObject.set(x, "lastSay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastSayUndefined: Self = StObject.set(x, "lastSay", js.undefined)
+      inline def setLastSayUndefined: Self = StObject.set(x, "lastSay", js.undefined)
       
-      @scala.inline
-      def setRedirectRecognizedTextOutput(value: js.Any): Self = StObject.set(x, "redirectRecognizedTextOutput", value.asInstanceOf[js.Any])
+      inline def setRedirectRecognizedTextOutput(value: js.Any): Self = StObject.set(x, "redirectRecognizedTextOutput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectRecognizedTextOutputUndefined: Self = StObject.set(x, "redirectRecognizedTextOutput", js.undefined)
+      inline def setRedirectRecognizedTextOutputUndefined: Self = StObject.set(x, "redirectRecognizedTextOutput", js.undefined)
       
-      @scala.inline
-      def setRemoteProcessorHandler(value: js.Any): Self = StObject.set(x, "remoteProcessorHandler", value.asInstanceOf[js.Any])
+      inline def setRemoteProcessorHandler(value: js.Any): Self = StObject.set(x, "remoteProcessorHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteProcessorHandlerUndefined: Self = StObject.set(x, "remoteProcessorHandler", js.undefined)
+      inline def setRemoteProcessorHandlerUndefined: Self = StObject.set(x, "remoteProcessorHandler", js.undefined)
     }
   }
 }

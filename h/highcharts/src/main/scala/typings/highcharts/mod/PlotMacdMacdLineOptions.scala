@@ -22,28 +22,21 @@ trait PlotMacdMacdLineOptions extends StObject {
 }
 object PlotMacdMacdLineOptions {
   
-  @scala.inline
-  def apply(): PlotMacdMacdLineOptions = {
+  inline def apply(): PlotMacdMacdLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotMacdMacdLineOptions]
   }
   
-  @scala.inline
-  implicit class PlotMacdMacdLineOptionsMutableBuilder[Self <: PlotMacdMacdLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotMacdMacdLineOptions](x: Self) {
     
-    @scala.inline
-    def setStyles(value: PlotMacdMacdLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlotMacdMacdLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setZones(value: js.Array[SeriesZonesOptionsObject]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+    inline def setZones(value: js.Array[SeriesZonesOptionsObject]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
+    inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    @scala.inline
-    def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = StObject.set(x, "zones", js.Array(value :_*))
   }
 }

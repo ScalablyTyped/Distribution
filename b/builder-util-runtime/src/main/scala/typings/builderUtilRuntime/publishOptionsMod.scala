@@ -29,13 +29,10 @@ object publishOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getS3LikeProviderBaseUrl(configuration: PublishConfiguration): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getS3LikeProviderBaseUrl")(configuration.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getS3LikeProviderBaseUrl(configuration: PublishConfiguration): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getS3LikeProviderBaseUrl")(configuration.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def githubUrl(options: GithubOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("githubUrl")(options.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def githubUrl(options: GithubOptions, defaultHost: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("githubUrl")(options.asInstanceOf[js.Any], defaultHost.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def githubUrl(options: GithubOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("githubUrl")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def githubUrl(options: GithubOptions, defaultHost: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("githubUrl")(options.asInstanceOf[js.Any], defaultHost.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
@@ -73,41 +70,30 @@ object publishOptionsMod {
   }
   object BaseS3Options {
     
-    @scala.inline
-    def apply(provider: PublishProvider): BaseS3Options = {
+    inline def apply(provider: PublishProvider): BaseS3Options = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseS3Options]
     }
     
-    @scala.inline
-    implicit class BaseS3OptionsMutableBuilder[Self <: BaseS3Options] (val x: Self) extends AnyVal {
+    extension [Self <: BaseS3Options](x: Self) {
       
-      @scala.inline
-      def setAcl(value: `private` | `public-read`): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+      inline def setAcl(value: `private` | `public-read`): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAclNull: Self = StObject.set(x, "acl", null)
+      inline def setAclNull: Self = StObject.set(x, "acl", null)
       
-      @scala.inline
-      def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
+      inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelNull: Self = StObject.set(x, "channel", null)
+      inline def setChannelNull: Self = StObject.set(x, "channel", null)
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathNull: Self = StObject.set(x, "path", null)
+      inline def setPathNull: Self = StObject.set(x, "path", null)
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -159,80 +145,56 @@ object publishOptionsMod {
   }
   object BintrayOptions {
     
-    @scala.inline
-    def apply(): BintrayOptions = {
+    inline def apply(): BintrayOptions = {
       val __obj = js.Dynamic.literal(provider = "bintray")
       __obj.asInstanceOf[BintrayOptions]
     }
     
-    @scala.inline
-    implicit class BintrayOptionsMutableBuilder[Self <: BintrayOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BintrayOptions](x: Self) {
       
-      @scala.inline
-      def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentNull: Self = StObject.set(x, "component", null)
+      inline def setComponentNull: Self = StObject.set(x, "component", null)
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setDistribution(value: String): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
+      inline def setDistribution(value: String): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistributionNull: Self = StObject.set(x, "distribution", null)
+      inline def setDistributionNull: Self = StObject.set(x, "distribution", null)
       
-      @scala.inline
-      def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+      inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerNull: Self = StObject.set(x, "owner", null)
+      inline def setOwnerNull: Self = StObject.set(x, "owner", null)
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
       
-      @scala.inline
-      def setProvider(value: bintray): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: bintray): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+      inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepoNull: Self = StObject.set(x, "repo", null)
+      inline def setRepoNull: Self = StObject.set(x, "repo", null)
       
-      @scala.inline
-      def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
+      inline def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenNull: Self = StObject.set(x, "token", null)
+      inline def setTokenNull: Self = StObject.set(x, "token", null)
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserNull: Self = StObject.set(x, "user", null)
+      inline def setUserNull: Self = StObject.set(x, "user", null)
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
       
-      @scala.inline
-      def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_packageNull: Self = StObject.set(x, "package", null)
+      inline def set_packageNull: Self = StObject.set(x, "package", null)
       
-      @scala.inline
-      def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+      inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
     }
   }
   
@@ -243,8 +205,7 @@ object publishOptionsMod {
        with _AllPublishOptions
   object CustomPublishOptions {
     
-    @scala.inline
-    def apply(provider: PublishProvider): CustomPublishOptions = {
+    inline def apply(provider: PublishProvider): CustomPublishOptions = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomPublishOptions]
     }
@@ -279,35 +240,26 @@ object publishOptionsMod {
   }
   object GenericServerOptions {
     
-    @scala.inline
-    def apply(url: String): GenericServerOptions = {
+    inline def apply(url: String): GenericServerOptions = {
       val __obj = js.Dynamic.literal(provider = "generic", url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericServerOptions]
     }
     
-    @scala.inline
-    implicit class GenericServerOptionsMutableBuilder[Self <: GenericServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GenericServerOptions](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelNull: Self = StObject.set(x, "channel", null)
+      inline def setChannelNull: Self = StObject.set(x, "channel", null)
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setProvider(value: generic): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: generic): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseMultipleRangeRequest(value: Boolean): Self = StObject.set(x, "useMultipleRangeRequest", value.asInstanceOf[js.Any])
+      inline def setUseMultipleRangeRequest(value: Boolean): Self = StObject.set(x, "useMultipleRangeRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseMultipleRangeRequestUndefined: Self = StObject.set(x, "useMultipleRangeRequest", js.undefined)
+      inline def setUseMultipleRangeRequestUndefined: Self = StObject.set(x, "useMultipleRangeRequest", js.undefined)
     }
   }
   
@@ -370,86 +322,60 @@ object publishOptionsMod {
   }
   object GithubOptions {
     
-    @scala.inline
-    def apply(): GithubOptions = {
+    inline def apply(): GithubOptions = {
       val __obj = js.Dynamic.literal(provider = "github")
       __obj.asInstanceOf[GithubOptions]
     }
     
-    @scala.inline
-    implicit class GithubOptionsMutableBuilder[Self <: GithubOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GithubOptions](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostNull: Self = StObject.set(x, "host", null)
+      inline def setHostNull: Self = StObject.set(x, "host", null)
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerNull: Self = StObject.set(x, "owner", null)
+      inline def setOwnerNull: Self = StObject.set(x, "owner", null)
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
       
-      @scala.inline
-      def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateNull: Self = StObject.set(x, "private", null)
+      inline def setPrivateNull: Self = StObject.set(x, "private", null)
       
-      @scala.inline
-      def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+      inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: https | http): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: https | http): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolNull: Self = StObject.set(x, "protocol", null)
+      inline def setProtocolNull: Self = StObject.set(x, "protocol", null)
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setProvider(value: github): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: github): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseType(value: draft | prerelease | release): Self = StObject.set(x, "releaseType", value.asInstanceOf[js.Any])
+      inline def setReleaseType(value: draft | prerelease | release): Self = StObject.set(x, "releaseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseTypeNull: Self = StObject.set(x, "releaseType", null)
+      inline def setReleaseTypeNull: Self = StObject.set(x, "releaseType", null)
       
-      @scala.inline
-      def setReleaseTypeUndefined: Self = StObject.set(x, "releaseType", js.undefined)
+      inline def setReleaseTypeUndefined: Self = StObject.set(x, "releaseType", js.undefined)
       
-      @scala.inline
-      def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+      inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepoNull: Self = StObject.set(x, "repo", null)
+      inline def setRepoNull: Self = StObject.set(x, "repo", null)
       
-      @scala.inline
-      def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
+      inline def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenNull: Self = StObject.set(x, "token", null)
+      inline def setTokenNull: Self = StObject.set(x, "token", null)
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setVPrefixedTagName(value: Boolean): Self = StObject.set(x, "vPrefixedTagName", value.asInstanceOf[js.Any])
+      inline def setVPrefixedTagName(value: Boolean): Self = StObject.set(x, "vPrefixedTagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVPrefixedTagNameUndefined: Self = StObject.set(x, "vPrefixedTagName", js.undefined)
+      inline def setVPrefixedTagNameUndefined: Self = StObject.set(x, "vPrefixedTagName", js.undefined)
     }
   }
   
@@ -489,50 +415,36 @@ object publishOptionsMod {
   }
   object PublishConfiguration {
     
-    @scala.inline
-    def apply(provider: PublishProvider): PublishConfiguration = {
+    inline def apply(provider: PublishProvider): PublishConfiguration = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublishConfiguration]
     }
     
-    @scala.inline
-    implicit class PublishConfigurationMutableBuilder[Self <: PublishConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: PublishConfiguration](x: Self) {
       
-      @scala.inline
-      def setProvider(value: PublishProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: PublishProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishAutoUpdate(value: Boolean): Self = StObject.set(x, "publishAutoUpdate", value.asInstanceOf[js.Any])
+      inline def setPublishAutoUpdate(value: Boolean): Self = StObject.set(x, "publishAutoUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishAutoUpdateUndefined: Self = StObject.set(x, "publishAutoUpdate", js.undefined)
+      inline def setPublishAutoUpdateUndefined: Self = StObject.set(x, "publishAutoUpdate", js.undefined)
       
-      @scala.inline
-      def setPublisherName(value: js.Array[String]): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+      inline def setPublisherName(value: js.Array[String]): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublisherNameNull: Self = StObject.set(x, "publisherName", null)
+      inline def setPublisherNameNull: Self = StObject.set(x, "publisherName", null)
       
-      @scala.inline
-      def setPublisherNameUndefined: Self = StObject.set(x, "publisherName", js.undefined)
+      inline def setPublisherNameUndefined: Self = StObject.set(x, "publisherName", js.undefined)
       
-      @scala.inline
-      def setPublisherNameVarargs(value: String*): Self = StObject.set(x, "publisherName", js.Array(value :_*))
+      inline def setPublisherNameVarargs(value: String*): Self = StObject.set(x, "publisherName", js.Array(value :_*))
       
-      @scala.inline
-      def setRequestHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+      inline def setRequestHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+      inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
       
-      @scala.inline
-      def setUpdaterCacheDirName(value: String): Self = StObject.set(x, "updaterCacheDirName", value.asInstanceOf[js.Any])
+      inline def setUpdaterCacheDirName(value: String): Self = StObject.set(x, "updaterCacheDirName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdaterCacheDirNameNull: Self = StObject.set(x, "updaterCacheDirName", null)
+      inline def setUpdaterCacheDirNameNull: Self = StObject.set(x, "updaterCacheDirName", null)
       
-      @scala.inline
-      def setUpdaterCacheDirNameUndefined: Self = StObject.set(x, "updaterCacheDirName", js.undefined)
+      inline def setUpdaterCacheDirNameUndefined: Self = StObject.set(x, "updaterCacheDirName", js.undefined)
     }
   }
   
@@ -548,26 +460,19 @@ object publishOptionsMod {
   trait PublishProvider extends StObject
   object PublishProvider {
     
-    @scala.inline
-    def bintray: typings.builderUtilRuntime.builderUtilRuntimeStrings.bintray = "bintray".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.bintray]
+    inline def bintray: typings.builderUtilRuntime.builderUtilRuntimeStrings.bintray = "bintray".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.bintray]
     
-    @scala.inline
-    def custom: typings.builderUtilRuntime.builderUtilRuntimeStrings.custom = "custom".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.custom]
+    inline def custom: typings.builderUtilRuntime.builderUtilRuntimeStrings.custom = "custom".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.custom]
     
-    @scala.inline
-    def generic: typings.builderUtilRuntime.builderUtilRuntimeStrings.generic = "generic".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.generic]
+    inline def generic: typings.builderUtilRuntime.builderUtilRuntimeStrings.generic = "generic".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.generic]
     
-    @scala.inline
-    def github: typings.builderUtilRuntime.builderUtilRuntimeStrings.github = "github".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.github]
+    inline def github: typings.builderUtilRuntime.builderUtilRuntimeStrings.github = "github".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.github]
     
-    @scala.inline
-    def s3: typings.builderUtilRuntime.builderUtilRuntimeStrings.s3 = "s3".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.s3]
+    inline def s3: typings.builderUtilRuntime.builderUtilRuntimeStrings.s3 = "s3".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.s3]
     
-    @scala.inline
-    def snapStore: typings.builderUtilRuntime.builderUtilRuntimeStrings.snapStore = "snapStore".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.snapStore]
+    inline def snapStore: typings.builderUtilRuntime.builderUtilRuntimeStrings.snapStore = "snapStore".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.snapStore]
     
-    @scala.inline
-    def spaces: typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces = "spaces".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces]
+    inline def spaces: typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces = "spaces".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces]
   }
   
   trait S3Options
@@ -610,56 +515,40 @@ object publishOptionsMod {
   }
   object S3Options {
     
-    @scala.inline
-    def apply(bucket: String): S3Options = {
+    inline def apply(bucket: String): S3Options = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], provider = "s3")
       __obj.asInstanceOf[S3Options]
     }
     
-    @scala.inline
-    implicit class S3OptionsMutableBuilder[Self <: S3Options] (val x: Self) extends AnyVal {
+    extension [Self <: S3Options](x: Self) {
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryption(value: AES256 | awsColonkms): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
+      inline def setEncryption(value: AES256 | awsColonkms): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionNull: Self = StObject.set(x, "encryption", null)
+      inline def setEncryptionNull: Self = StObject.set(x, "encryption", null)
       
-      @scala.inline
-      def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
+      inline def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointNull: Self = StObject.set(x, "endpoint", null)
+      inline def setEndpointNull: Self = StObject.set(x, "endpoint", null)
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setProvider(value: s3): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: s3): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionNull: Self = StObject.set(x, "region", null)
+      inline def setRegionNull: Self = StObject.set(x, "region", null)
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setStorageClass(value: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+      inline def setStorageClass(value: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageClassNull: Self = StObject.set(x, "storageClass", null)
+      inline def setStorageClassNull: Self = StObject.set(x, "storageClass", null)
       
-      @scala.inline
-      def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
+      inline def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
     }
   }
   
@@ -686,61 +575,50 @@ object publishOptionsMod {
   }
   object SpacesOptions {
     
-    @scala.inline
-    def apply(name: String, region: String): SpacesOptions = {
+    inline def apply(name: String, region: String): SpacesOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], provider = "spaces", region = region.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpacesOptions]
     }
     
-    @scala.inline
-    implicit class SpacesOptionsMutableBuilder[Self <: SpacesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SpacesOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvider(value: spaces): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: spaces): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     }
   }
   
   trait _AllPublishOptions extends StObject
   object _AllPublishOptions {
     
-    @scala.inline
-    def BintrayOptions(): typings.builderUtilRuntime.publishOptionsMod.BintrayOptions = {
+    inline def BintrayOptions(): typings.builderUtilRuntime.publishOptionsMod.BintrayOptions = {
       val __obj = js.Dynamic.literal(provider = "bintray")
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.BintrayOptions]
     }
     
-    @scala.inline
-    def CustomPublishOptions(provider: PublishProvider): typings.builderUtilRuntime.publishOptionsMod.CustomPublishOptions = {
+    inline def CustomPublishOptions(provider: PublishProvider): typings.builderUtilRuntime.publishOptionsMod.CustomPublishOptions = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.CustomPublishOptions]
     }
     
-    @scala.inline
-    def GenericServerOptions(url: String): typings.builderUtilRuntime.publishOptionsMod.GenericServerOptions = {
+    inline def GenericServerOptions(url: String): typings.builderUtilRuntime.publishOptionsMod.GenericServerOptions = {
       val __obj = js.Dynamic.literal(provider = "generic", url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.GenericServerOptions]
     }
     
-    @scala.inline
-    def GithubOptions(): typings.builderUtilRuntime.publishOptionsMod.GithubOptions = {
+    inline def GithubOptions(): typings.builderUtilRuntime.publishOptionsMod.GithubOptions = {
       val __obj = js.Dynamic.literal(provider = "github")
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.GithubOptions]
     }
     
-    @scala.inline
-    def S3Options(bucket: String): typings.builderUtilRuntime.publishOptionsMod.S3Options = {
+    inline def S3Options(bucket: String): typings.builderUtilRuntime.publishOptionsMod.S3Options = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], provider = "s3")
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.S3Options]
     }
     
-    @scala.inline
-    def SpacesOptions(name: String, region: String): typings.builderUtilRuntime.publishOptionsMod.SpacesOptions = {
+    inline def SpacesOptions(name: String, region: String): typings.builderUtilRuntime.publishOptionsMod.SpacesOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], provider = "spaces", region = region.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.SpacesOptions]
     }

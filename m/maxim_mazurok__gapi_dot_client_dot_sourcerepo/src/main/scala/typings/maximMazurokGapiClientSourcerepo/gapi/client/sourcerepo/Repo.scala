@@ -28,47 +28,35 @@ trait Repo extends StObject {
 }
 object Repo {
   
-  @scala.inline
-  def apply(): Repo = {
+  inline def apply(): Repo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Repo]
   }
   
-  @scala.inline
-  implicit class RepoMutableBuilder[Self <: Repo] (val x: Self) extends AnyVal {
+  extension [Self <: Repo](x: Self) {
     
-    @scala.inline
-    def setMirrorConfig(value: MirrorConfig): Self = StObject.set(x, "mirrorConfig", value.asInstanceOf[js.Any])
+    inline def setMirrorConfig(value: MirrorConfig): Self = StObject.set(x, "mirrorConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMirrorConfigUndefined: Self = StObject.set(x, "mirrorConfig", js.undefined)
+    inline def setMirrorConfigUndefined: Self = StObject.set(x, "mirrorConfig", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPubsubConfigs(
+    inline def setPubsubConfigs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.sourcerepo.gapi.client.sourcerepo.PubsubConfig}
       */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.Repo & TopLevel[js.Any]
     ): Self = StObject.set(x, "pubsubConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsubConfigsUndefined: Self = StObject.set(x, "pubsubConfigs", js.undefined)
+    inline def setPubsubConfigsUndefined: Self = StObject.set(x, "pubsubConfigs", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

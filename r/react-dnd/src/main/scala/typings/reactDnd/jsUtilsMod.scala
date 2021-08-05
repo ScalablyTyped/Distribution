@@ -10,12 +10,9 @@ object jsUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isFunction(input: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFunction(input: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isPlainObject(input: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPlainObject(input: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
+  inline def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
 }

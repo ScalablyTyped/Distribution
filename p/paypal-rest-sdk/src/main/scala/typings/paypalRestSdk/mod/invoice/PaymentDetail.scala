@@ -15,8 +15,7 @@ trait PaymentDetail
 }
 object PaymentDetail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     amount: Currency,
     date: String,
     method: String,
@@ -29,13 +28,10 @@ object PaymentDetail {
     __obj.asInstanceOf[PaymentDetail]
   }
   
-  @scala.inline
-  implicit class PaymentDetailMutableBuilder[Self <: PaymentDetail] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentDetail](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransaction_type(value: String): Self = StObject.set(x, "transaction_type", value.asInstanceOf[js.Any])
+    inline def setTransaction_type(value: String): Self = StObject.set(x, "transaction_type", value.asInstanceOf[js.Any])
   }
 }

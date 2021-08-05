@@ -33,31 +33,23 @@ trait NamedItemUpdateData extends StObject {
 }
 object NamedItemUpdateData {
   
-  @scala.inline
-  def apply(): NamedItemUpdateData = {
+  inline def apply(): NamedItemUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamedItemUpdateData]
   }
   
-  @scala.inline
-  implicit class NamedItemUpdateDataMutableBuilder[Self <: NamedItemUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: NamedItemUpdateData](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setFormula(value: js.Any): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: js.Any): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

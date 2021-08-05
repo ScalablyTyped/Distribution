@@ -49,8 +49,7 @@ object kineticMod {
   }
   object Kinetic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       begin: () => Unit,
       end: () => Boolean,
       getAngle: () => Double,
@@ -61,23 +60,17 @@ object kineticMod {
       __obj.asInstanceOf[Kinetic]
     }
     
-    @scala.inline
-    implicit class KineticMutableBuilder[Self <: Kinetic] (val x: Self) extends AnyVal {
+    extension [Self <: Kinetic](x: Self) {
       
-      @scala.inline
-      def setBegin(value: () => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction0(value))
+      inline def setBegin(value: () => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnd(value: () => Boolean): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Boolean): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAngle(value: () => Double): Self = StObject.set(x, "getAngle", js.Any.fromFunction0(value))
+      inline def setGetAngle(value: () => Double): Self = StObject.set(x, "getAngle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDistance(value: () => Double): Self = StObject.set(x, "getDistance", js.Any.fromFunction0(value))
+      inline def setGetDistance(value: () => Double): Self = StObject.set(x, "getDistance", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: (Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     }
   }
 }

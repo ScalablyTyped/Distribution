@@ -18,19 +18,15 @@ trait Order extends StObject {
 }
 object Order {
   
-  @scala.inline
-  def apply(Column: NameString, SortOrder: IntegerFlag): Order = {
+  inline def apply(Column: NameString, SortOrder: IntegerFlag): Order = {
     val __obj = js.Dynamic.literal(Column = Column.asInstanceOf[js.Any], SortOrder = SortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Order]
   }
   
-  @scala.inline
-  implicit class OrderMutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
+  extension [Self <: Order](x: Self) {
     
-    @scala.inline
-    def setColumn(value: NameString): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: NameString): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrder(value: IntegerFlag): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: IntegerFlag): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
   }
 }

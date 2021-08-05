@@ -30,8 +30,7 @@ trait ForNode
 }
 object ForNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[TemplateChildNode],
     loc: SourceLocation,
     parseResult: ForParseResult,
@@ -42,46 +41,32 @@ object ForNode {
     __obj.asInstanceOf[ForNode]
   }
   
-  @scala.inline
-  implicit class ForNodeMutableBuilder[Self <: ForNode] (val x: Self) extends AnyVal {
+  extension [Self <: ForNode](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setCodegenNode(value: ForCodegenNode): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
+    inline def setCodegenNode(value: ForCodegenNode): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
+    inline def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
     
-    @scala.inline
-    def setKeyAlias(value: ExpressionNode): Self = StObject.set(x, "keyAlias", value.asInstanceOf[js.Any])
+    inline def setKeyAlias(value: ExpressionNode): Self = StObject.set(x, "keyAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyAliasUndefined: Self = StObject.set(x, "keyAlias", js.undefined)
+    inline def setKeyAliasUndefined: Self = StObject.set(x, "keyAlias", js.undefined)
     
-    @scala.inline
-    def setObjectIndexAlias(value: ExpressionNode): Self = StObject.set(x, "objectIndexAlias", value.asInstanceOf[js.Any])
+    inline def setObjectIndexAlias(value: ExpressionNode): Self = StObject.set(x, "objectIndexAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIndexAliasUndefined: Self = StObject.set(x, "objectIndexAlias", js.undefined)
+    inline def setObjectIndexAliasUndefined: Self = StObject.set(x, "objectIndexAlias", js.undefined)
     
-    @scala.inline
-    def setParseResult(value: ForParseResult): Self = StObject.set(x, "parseResult", value.asInstanceOf[js.Any])
+    inline def setParseResult(value: ForParseResult): Self = StObject.set(x, "parseResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: ExpressionNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: ExpressionNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `11`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `11`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueAlias(value: ExpressionNode): Self = StObject.set(x, "valueAlias", value.asInstanceOf[js.Any])
+    inline def setValueAlias(value: ExpressionNode): Self = StObject.set(x, "valueAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueAliasUndefined: Self = StObject.set(x, "valueAlias", js.undefined)
+    inline def setValueAliasUndefined: Self = StObject.set(x, "valueAlias", js.undefined)
   }
 }

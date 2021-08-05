@@ -36,8 +36,7 @@ object mod extends Shortcut {
   }
   object VueTelInputComputed {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       filteredCountries: () => js.Array[String],
       formattedResult: () => String,
       mode: () => String,
@@ -49,26 +48,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputComputed]
     }
     
-    @scala.inline
-    implicit class VueTelInputComputedMutableBuilder[Self <: VueTelInputComputed] (val x: Self) extends AnyVal {
+    extension [Self <: VueTelInputComputed](x: Self) {
       
-      @scala.inline
-      def setFilteredCountries(value: () => js.Array[String]): Self = StObject.set(x, "filteredCountries", js.Any.fromFunction0(value))
+      inline def setFilteredCountries(value: () => js.Array[String]): Self = StObject.set(x, "filteredCountries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFormattedResult(value: () => String): Self = StObject.set(x, "formattedResult", js.Any.fromFunction0(value))
+      inline def setFormattedResult(value: () => String): Self = StObject.set(x, "formattedResult", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMode(value: () => String): Self = StObject.set(x, "mode", js.Any.fromFunction0(value))
+      inline def setMode(value: () => String): Self = StObject.set(x, "mode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResponse(value: () => VueTelInputResponse): Self = StObject.set(x, "response", js.Any.fromFunction0(value))
+      inline def setResponse(value: () => VueTelInputResponse): Self = StObject.set(x, "response", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSortedCountries(value: () => js.Array[String]): Self = StObject.set(x, "sortedCountries", js.Any.fromFunction0(value))
+      inline def setSortedCountries(value: () => js.Array[String]): Self = StObject.set(x, "sortedCountries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setState(value: () => Boolean): Self = StObject.set(x, "state", js.Any.fromFunction0(value))
+      inline def setState(value: () => Boolean): Self = StObject.set(x, "state", js.Any.fromFunction0(value))
     }
   }
   
@@ -101,17 +93,14 @@ object mod extends Shortcut {
   }
   object VueTelInputCountryOption {
     
-    @scala.inline
-    def apply(iso2: String): VueTelInputCountryOption = {
+    inline def apply(iso2: String): VueTelInputCountryOption = {
       val __obj = js.Dynamic.literal(iso2 = iso2.asInstanceOf[js.Any])
       __obj.asInstanceOf[VueTelInputCountryOption]
     }
     
-    @scala.inline
-    implicit class VueTelInputCountryOptionMutableBuilder[Self <: VueTelInputCountryOption] (val x: Self) extends AnyVal {
+    extension [Self <: VueTelInputCountryOption](x: Self) {
       
-      @scala.inline
-      def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
+      inline def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,8 +120,7 @@ object mod extends Shortcut {
   }
   object VueTelInputData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activeCountry: VueTelInputCountryOption,
       open: Boolean,
       phone: String,
@@ -144,26 +132,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputData]
     }
     
-    @scala.inline
-    implicit class VueTelInputDataMutableBuilder[Self <: VueTelInputData] (val x: Self) extends AnyVal {
+    extension [Self <: VueTelInputData](x: Self) {
       
-      @scala.inline
-      def setActiveCountry(value: VueTelInputCountryOption): Self = StObject.set(x, "activeCountry", value.asInstanceOf[js.Any])
+      inline def setActiveCountry(value: VueTelInputCountryOption): Self = StObject.set(x, "activeCountry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIndex(value: js.Any): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedIndex(value: js.Any): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeToFindInput(value: String): Self = StObject.set(x, "typeToFindInput", value.asInstanceOf[js.Any])
+      inline def setTypeToFindInput(value: String): Self = StObject.set(x, "typeToFindInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeToFindTimer(value: js.Any): Self = StObject.set(x, "typeToFindTimer", value.asInstanceOf[js.Any])
+      inline def setTypeToFindTimer(value: js.Any): Self = StObject.set(x, "typeToFindTimer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -173,18 +154,15 @@ object mod extends Shortcut {
   }
   object VueTelInputDirective {
     
-    @scala.inline
-    def apply(`click-outside`: DirectiveOptions): VueTelInputDirective = {
+    inline def apply(`click-outside`: DirectiveOptions): VueTelInputDirective = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("click-outside")(`click-outside`.asInstanceOf[js.Any])
       __obj.asInstanceOf[VueTelInputDirective]
     }
     
-    @scala.inline
-    implicit class VueTelInputDirectiveMutableBuilder[Self <: VueTelInputDirective] (val x: Self) extends AnyVal {
+    extension [Self <: VueTelInputDirective](x: Self) {
       
-      @scala.inline
-      def `setClick-outside`(value: DirectiveOptions): Self = StObject.set(x, "click-outside", value.asInstanceOf[js.Any])
+      inline def `setClick-outside`(value: DirectiveOptions): Self = StObject.set(x, "click-outside", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,17 +172,14 @@ object mod extends Shortcut {
   }
   object VueTelInputDowndownOption {
     
-    @scala.inline
-    def apply(disabledDialCode: Boolean): VueTelInputDowndownOption = {
+    inline def apply(disabledDialCode: Boolean): VueTelInputDowndownOption = {
       val __obj = js.Dynamic.literal(disabledDialCode = disabledDialCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[VueTelInputDowndownOption]
     }
     
-    @scala.inline
-    implicit class VueTelInputDowndownOptionMutableBuilder[Self <: VueTelInputDowndownOption] (val x: Self) extends AnyVal {
+    extension [Self <: VueTelInputDowndownOption](x: Self) {
       
-      @scala.inline
-      def setDisabledDialCode(value: Boolean): Self = StObject.set(x, "disabledDialCode", value.asInstanceOf[js.Any])
+      inline def setDisabledDialCode(value: Boolean): Self = StObject.set(x, "disabledDialCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -214,17 +189,14 @@ object mod extends Shortcut {
   }
   object VueTelInputInputOption {
     
-    @scala.inline
-    def apply(showDialCode: Boolean): VueTelInputInputOption = {
+    inline def apply(showDialCode: Boolean): VueTelInputInputOption = {
       val __obj = js.Dynamic.literal(showDialCode = showDialCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[VueTelInputInputOption]
     }
     
-    @scala.inline
-    implicit class VueTelInputInputOptionMutableBuilder[Self <: VueTelInputInputOption] (val x: Self) extends AnyVal {
+    extension [Self <: VueTelInputInputOption](x: Self) {
       
-      @scala.inline
-      def setShowDialCode(value: Boolean): Self = StObject.set(x, "showDialCode", value.asInstanceOf[js.Any])
+      inline def setShowDialCode(value: Boolean): Self = StObject.set(x, "showDialCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -254,8 +226,7 @@ object mod extends Shortcut {
   }
   object VueTelInputMethods {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       choose: js.Any => Unit,
       clickedOutside: () => Unit,
       findCountry: String => js.Array[js.Any],
@@ -272,41 +243,29 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputMethods]
     }
     
-    @scala.inline
-    implicit class VueTelInputMethodsMutableBuilder[Self <: VueTelInputMethods] (val x: Self) extends AnyVal {
+    extension [Self <: VueTelInputMethods](x: Self) {
       
-      @scala.inline
-      def setChoose(value: js.Any => Unit): Self = StObject.set(x, "choose", js.Any.fromFunction1(value))
+      inline def setChoose(value: js.Any => Unit): Self = StObject.set(x, "choose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickedOutside(value: () => Unit): Self = StObject.set(x, "clickedOutside", js.Any.fromFunction0(value))
+      inline def setClickedOutside(value: () => Unit): Self = StObject.set(x, "clickedOutside", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFindCountry(value: String => js.Array[js.Any]): Self = StObject.set(x, "findCountry", js.Any.fromFunction1(value))
+      inline def setFindCountry(value: String => js.Array[js.Any]): Self = StObject.set(x, "findCountry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCountries(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "getCountries", js.Any.fromFunction1(value))
+      inline def setGetCountries(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "getCountries", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetItemClass(value: (Double, String) => js.Any): Self = StObject.set(x, "getItemClass", js.Any.fromFunction2(value))
+      inline def setGetItemClass(value: (Double, String) => js.Any): Self = StObject.set(x, "getItemClass", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInitializeCountry(value: () => Unit): Self = StObject.set(x, "initializeCountry", js.Any.fromFunction0(value))
+      inline def setInitializeCountry(value: () => Unit): Self = StObject.set(x, "initializeCountry", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKeyboardNav(value: Event => Unit): Self = StObject.set(x, "keyboardNav", js.Any.fromFunction1(value))
+      inline def setKeyboardNav(value: Event => Unit): Self = StObject.set(x, "keyboardNav", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
+      inline def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnInput(value: () => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction0(value))
+      inline def setOnInput(value: () => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggleDropdown(value: () => Unit): Self = StObject.set(x, "toggleDropdown", js.Any.fromFunction0(value))
+      inline def setToggleDropdown(value: () => Unit): Self = StObject.set(x, "toggleDropdown", js.Any.fromFunction0(value))
     }
   }
   
@@ -354,8 +313,7 @@ object mod extends Shortcut {
   }
   object VueTelInputProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autocomplete: String,
       defaultCountry: String,
       disabled: Boolean,
@@ -381,74 +339,51 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputProps]
     }
     
-    @scala.inline
-    implicit class VueTelInputPropsMutableBuilder[Self <: VueTelInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: VueTelInputProps](x: Self) {
       
-      @scala.inline
-      def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
+      inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCountry(value: String): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
+      inline def setDefaultCountry(value: String): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledFetchingCountry(value: Boolean): Self = StObject.set(x, "disabledFetchingCountry", value.asInstanceOf[js.Any])
+      inline def setDisabledFetchingCountry(value: Boolean): Self = StObject.set(x, "disabledFetchingCountry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledFormatting(value: Boolean): Self = StObject.set(x, "disabledFormatting", value.asInstanceOf[js.Any])
+      inline def setDisabledFormatting(value: Boolean): Self = StObject.set(x, "disabledFormatting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownOptions(value: VueTelInputDowndownOption): Self = StObject.set(x, "dropdownOptions", value.asInstanceOf[js.Any])
+      inline def setDropdownOptions(value: VueTelInputDowndownOption): Self = StObject.set(x, "dropdownOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledCountryCode(value: Boolean): Self = StObject.set(x, "enabledCountryCode", value.asInstanceOf[js.Any])
+      inline def setEnabledCountryCode(value: Boolean): Self = StObject.set(x, "enabledCountryCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledFlags(value: Boolean): Self = StObject.set(x, "enabledFlags", value.asInstanceOf[js.Any])
+      inline def setEnabledFlags(value: Boolean): Self = StObject.set(x, "enabledFlags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredCountries(value: js.Array[js.Any]): Self = StObject.set(x, "ignoredCountries", value.asInstanceOf[js.Any])
+      inline def setIgnoredCountries(value: js.Array[js.Any]): Self = StObject.set(x, "ignoredCountries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredCountriesVarargs(value: js.Any*): Self = StObject.set(x, "ignoredCountries", js.Array(value :_*))
+      inline def setIgnoredCountriesVarargs(value: js.Any*): Self = StObject.set(x, "ignoredCountries", js.Array(value :_*))
       
-      @scala.inline
-      def setInputClasses(value: String): Self = StObject.set(x, "inputClasses", value.asInstanceOf[js.Any])
+      inline def setInputClasses(value: String): Self = StObject.set(x, "inputClasses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputOptions(value: VueTelInputInputOption): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
+      inline def setInputOptions(value: VueTelInputInputOption): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidMsg(value: String): Self = StObject.set(x, "invalidMsg", value.asInstanceOf[js.Any])
+      inline def setInvalidMsg(value: String): Self = StObject.set(x, "invalidMsg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLen(value: Double): Self = StObject.set(x, "maxLen", value.asInstanceOf[js.Any])
+      inline def setMaxLen(value: Double): Self = StObject.set(x, "maxLen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyCountries(value: js.Array[js.Any]): Self = StObject.set(x, "onlyCountries", value.asInstanceOf[js.Any])
+      inline def setOnlyCountries(value: js.Array[js.Any]): Self = StObject.set(x, "onlyCountries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyCountriesVarargs(value: js.Any*): Self = StObject.set(x, "onlyCountries", js.Array(value :_*))
+      inline def setOnlyCountriesVarargs(value: js.Any*): Self = StObject.set(x, "onlyCountries", js.Array(value :_*))
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredCountries(value: Boolean): Self = StObject.set(x, "preferredCountries", value.asInstanceOf[js.Any])
+      inline def setPreferredCountries(value: Boolean): Self = StObject.set(x, "preferredCountries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperClasses(value: String): Self = StObject.set(x, "wrapperClasses", value.asInstanceOf[js.Any])
+      inline def setWrapperClasses(value: String): Self = StObject.set(x, "wrapperClasses", value.asInstanceOf[js.Any])
     }
   }
   
@@ -462,23 +397,18 @@ object mod extends Shortcut {
   }
   object VueTelInputResponse {
     
-    @scala.inline
-    def apply(country: VueTelInputCountryOption, isValid: Boolean, number: String): VueTelInputResponse = {
+    inline def apply(country: VueTelInputCountryOption, isValid: Boolean, number: String): VueTelInputResponse = {
       val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
       __obj.asInstanceOf[VueTelInputResponse]
     }
     
-    @scala.inline
-    implicit class VueTelInputResponseMutableBuilder[Self <: VueTelInputResponse] (val x: Self) extends AnyVal {
+    extension [Self <: VueTelInputResponse](x: Self) {
       
-      @scala.inline
-      def setCountry(value: VueTelInputCountryOption): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: VueTelInputCountryOption): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     }
   }
   
@@ -490,20 +420,16 @@ object mod extends Shortcut {
   }
   object VueTelInputWatch {
     
-    @scala.inline
-    def apply(state: js.Any => Unit, value: () => Unit): VueTelInputWatch = {
+    inline def apply(state: js.Any => Unit, value: () => Unit): VueTelInputWatch = {
       val __obj = js.Dynamic.literal(state = js.Any.fromFunction1(state), value = js.Any.fromFunction0(value))
       __obj.asInstanceOf[VueTelInputWatch]
     }
     
-    @scala.inline
-    implicit class VueTelInputWatchMutableBuilder[Self <: VueTelInputWatch] (val x: Self) extends AnyVal {
+    extension [Self <: VueTelInputWatch](x: Self) {
       
-      @scala.inline
-      def setState(value: js.Any => Unit): Self = StObject.set(x, "state", js.Any.fromFunction1(value))
+      inline def setState(value: js.Any => Unit): Self = StObject.set(x, "state", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValue(value: () => Unit): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+      inline def setValue(value: () => Unit): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
     }
   }
   

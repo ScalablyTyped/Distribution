@@ -17,16 +17,13 @@ trait SBScalarType
 }
 object SBScalarType {
   
-  @scala.inline
-  def apply(name: boolean | string | number | function): SBScalarType = {
+  inline def apply(name: boolean | string | number | function): SBScalarType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SBScalarType]
   }
   
-  @scala.inline
-  implicit class SBScalarTypeMutableBuilder[Self <: SBScalarType] (val x: Self) extends AnyVal {
+  extension [Self <: SBScalarType](x: Self) {
     
-    @scala.inline
-    def setName(value: boolean | string | number | function): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: boolean | string | number | function): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

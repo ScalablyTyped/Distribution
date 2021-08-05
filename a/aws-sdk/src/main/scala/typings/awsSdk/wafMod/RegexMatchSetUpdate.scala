@@ -18,19 +18,15 @@ trait RegexMatchSetUpdate extends StObject {
 }
 object RegexMatchSetUpdate {
   
-  @scala.inline
-  def apply(Action: ChangeAction, RegexMatchTuple: RegexMatchTuple): RegexMatchSetUpdate = {
+  inline def apply(Action: ChangeAction, RegexMatchTuple: RegexMatchTuple): RegexMatchSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], RegexMatchTuple = RegexMatchTuple.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexMatchSetUpdate]
   }
   
-  @scala.inline
-  implicit class RegexMatchSetUpdateMutableBuilder[Self <: RegexMatchSetUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: RegexMatchSetUpdate](x: Self) {
     
-    @scala.inline
-    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexMatchTuple(value: RegexMatchTuple): Self = StObject.set(x, "RegexMatchTuple", value.asInstanceOf[js.Any])
+    inline def setRegexMatchTuple(value: RegexMatchTuple): Self = StObject.set(x, "RegexMatchTuple", value.asInstanceOf[js.Any])
   }
 }

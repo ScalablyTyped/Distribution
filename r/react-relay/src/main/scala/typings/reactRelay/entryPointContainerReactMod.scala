@@ -13,8 +13,7 @@ object entryPointContainerReactMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def EntryPointContainer[TPreloadedEntryPoint /* <: PreloadedEntryPoint[js.Any] */](hasEntryPointReferenceProps: EntryPointReference[TPreloadedEntryPoint]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("EntryPointContainer")(hasEntryPointReferenceProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def EntryPointContainer[TPreloadedEntryPoint /* <: PreloadedEntryPoint[js.Any] */](hasEntryPointReferenceProps: EntryPointReference[TPreloadedEntryPoint]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("EntryPointContainer")(hasEntryPointReferenceProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   type GetComponentFromPreloadedEntryPoint[T] = js.Any
   

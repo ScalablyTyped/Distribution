@@ -18,16 +18,13 @@ trait MergeFieldDialogCommand
 }
 object MergeFieldDialogCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): MergeFieldDialogCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): MergeFieldDialogCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[MergeFieldDialogCommand]
   }
   
-  @scala.inline
-  implicit class MergeFieldDialogCommandMutableBuilder[Self <: MergeFieldDialogCommand] (val x: Self) extends AnyVal {
+  extension [Self <: MergeFieldDialogCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

@@ -47,8 +47,7 @@ object submission {
   }
   object XSubmission {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       addSubmissionVetoListener: XSubmissionVetoListener => Unit,
       queryInterface: `type` => js.Any,
@@ -61,20 +60,15 @@ object submission {
       __obj.asInstanceOf[XSubmission]
     }
     
-    @scala.inline
-    implicit class XSubmissionMutableBuilder[Self <: XSubmission] (val x: Self) extends AnyVal {
+    extension [Self <: XSubmission](x: Self) {
       
-      @scala.inline
-      def setAddSubmissionVetoListener(value: XSubmissionVetoListener => Unit): Self = StObject.set(x, "addSubmissionVetoListener", js.Any.fromFunction1(value))
+      inline def setAddSubmissionVetoListener(value: XSubmissionVetoListener => Unit): Self = StObject.set(x, "addSubmissionVetoListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveSubmissionVetoListener(value: XSubmissionVetoListener => Unit): Self = StObject.set(x, "removeSubmissionVetoListener", js.Any.fromFunction1(value))
+      inline def setRemoveSubmissionVetoListener(value: XSubmissionVetoListener => Unit): Self = StObject.set(x, "removeSubmissionVetoListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubmit(value: () => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
+      inline def setSubmit(value: () => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubmitWithInteraction(value: XInteractionHandler => Unit): Self = StObject.set(x, "submitWithInteraction", js.Any.fromFunction1(value))
+      inline def setSubmitWithInteraction(value: XInteractionHandler => Unit): Self = StObject.set(x, "submitWithInteraction", js.Any.fromFunction1(value))
     }
   }
   
@@ -91,8 +85,7 @@ object submission {
   }
   object XSubmissionSupplier {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Submission: XSubmission,
       acquire: () => Unit,
       queryInterface: `type` => js.Any,
@@ -102,11 +95,9 @@ object submission {
       __obj.asInstanceOf[XSubmissionSupplier]
     }
     
-    @scala.inline
-    implicit class XSubmissionSupplierMutableBuilder[Self <: XSubmissionSupplier] (val x: Self) extends AnyVal {
+    extension [Self <: XSubmissionSupplier](x: Self) {
       
-      @scala.inline
-      def setSubmission(value: XSubmission): Self = StObject.set(x, "Submission", value.asInstanceOf[js.Any])
+      inline def setSubmission(value: XSubmission): Self = StObject.set(x, "Submission", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,8 +118,7 @@ object submission {
   }
   object XSubmissionVetoListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       disposing: EventObject => Unit,
       queryInterface: `type` => js.Any,
@@ -139,11 +129,9 @@ object submission {
       __obj.asInstanceOf[XSubmissionVetoListener]
     }
     
-    @scala.inline
-    implicit class XSubmissionVetoListenerMutableBuilder[Self <: XSubmissionVetoListener] (val x: Self) extends AnyVal {
+    extension [Self <: XSubmissionVetoListener](x: Self) {
       
-      @scala.inline
-      def setSubmitting(value: EventObject => Unit): Self = StObject.set(x, "submitting", js.Any.fromFunction1(value))
+      inline def setSubmitting(value: EventObject => Unit): Self = StObject.set(x, "submitting", js.Any.fromFunction1(value))
     }
   }
 }

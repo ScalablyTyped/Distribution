@@ -23,31 +23,23 @@ trait ListPublicKeysRequest extends StObject {
 }
 object ListPublicKeysRequest {
   
-  @scala.inline
-  def apply(): ListPublicKeysRequest = {
+  inline def apply(): ListPublicKeysRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPublicKeysRequest]
   }
   
-  @scala.inline
-  implicit class ListPublicKeysRequestMutableBuilder[Self <: ListPublicKeysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListPublicKeysRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

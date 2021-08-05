@@ -13,16 +13,13 @@ trait DeleteTopicInput extends StObject {
 }
 object DeleteTopicInput {
   
-  @scala.inline
-  def apply(TopicArn: topicARN): DeleteTopicInput = {
+  inline def apply(TopicArn: topicARN): DeleteTopicInput = {
     val __obj = js.Dynamic.literal(TopicArn = TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTopicInput]
   }
   
-  @scala.inline
-  implicit class DeleteTopicInputMutableBuilder[Self <: DeleteTopicInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTopicInput](x: Self) {
     
-    @scala.inline
-    def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }
 }

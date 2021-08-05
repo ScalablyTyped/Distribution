@@ -43,58 +43,41 @@ trait GetInsightImpactGraphResult extends StObject {
 }
 object GetInsightImpactGraphResult {
   
-  @scala.inline
-  def apply(): GetInsightImpactGraphResult = {
+  inline def apply(): GetInsightImpactGraphResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInsightImpactGraphResult]
   }
   
-  @scala.inline
-  implicit class GetInsightImpactGraphResultMutableBuilder[Self <: GetInsightImpactGraphResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetInsightImpactGraphResult](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setInsightId(value: InsightId): Self = StObject.set(x, "InsightId", value.asInstanceOf[js.Any])
+    inline def setInsightId(value: InsightId): Self = StObject.set(x, "InsightId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsightIdUndefined: Self = StObject.set(x, "InsightId", js.undefined)
+    inline def setInsightIdUndefined: Self = StObject.set(x, "InsightId", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setServiceGraphEndTime(value: Timestamp): Self = StObject.set(x, "ServiceGraphEndTime", value.asInstanceOf[js.Any])
+    inline def setServiceGraphEndTime(value: Timestamp): Self = StObject.set(x, "ServiceGraphEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceGraphEndTimeUndefined: Self = StObject.set(x, "ServiceGraphEndTime", js.undefined)
+    inline def setServiceGraphEndTimeUndefined: Self = StObject.set(x, "ServiceGraphEndTime", js.undefined)
     
-    @scala.inline
-    def setServiceGraphStartTime(value: Timestamp): Self = StObject.set(x, "ServiceGraphStartTime", value.asInstanceOf[js.Any])
+    inline def setServiceGraphStartTime(value: Timestamp): Self = StObject.set(x, "ServiceGraphStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceGraphStartTimeUndefined: Self = StObject.set(x, "ServiceGraphStartTime", js.undefined)
+    inline def setServiceGraphStartTimeUndefined: Self = StObject.set(x, "ServiceGraphStartTime", js.undefined)
     
-    @scala.inline
-    def setServices(value: InsightImpactGraphServiceList): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
+    inline def setServices(value: InsightImpactGraphServiceList): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: InsightImpactGraphService*): Self = StObject.set(x, "Services", js.Array(value :_*))
+    inline def setServicesVarargs(value: InsightImpactGraphService*): Self = StObject.set(x, "Services", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

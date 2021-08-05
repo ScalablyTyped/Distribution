@@ -13,19 +13,15 @@ trait AwsService extends StObject {
 }
 object AwsService {
   
-  @scala.inline
-  def apply(): AwsService = {
+  inline def apply(): AwsService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsService]
   }
   
-  @scala.inline
-  implicit class AwsServiceMutableBuilder[Self <: AwsService] (val x: Self) extends AnyVal {
+  extension [Self <: AwsService](x: Self) {
     
-    @scala.inline
-    def setInvokedBy(value: string): Self = StObject.set(x, "invokedBy", value.asInstanceOf[js.Any])
+    inline def setInvokedBy(value: string): Self = StObject.set(x, "invokedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvokedByUndefined: Self = StObject.set(x, "invokedBy", js.undefined)
+    inline def setInvokedByUndefined: Self = StObject.set(x, "invokedBy", js.undefined)
   }
 }

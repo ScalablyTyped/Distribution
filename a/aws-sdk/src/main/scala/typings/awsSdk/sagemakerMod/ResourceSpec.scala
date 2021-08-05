@@ -23,31 +23,23 @@ trait ResourceSpec extends StObject {
 }
 object ResourceSpec {
   
-  @scala.inline
-  def apply(): ResourceSpec = {
+  inline def apply(): ResourceSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceSpec]
   }
   
-  @scala.inline
-  implicit class ResourceSpecMutableBuilder[Self <: ResourceSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceSpec](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: AppInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: AppInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setSageMakerImageArn(value: ImageArn): Self = StObject.set(x, "SageMakerImageArn", value.asInstanceOf[js.Any])
+    inline def setSageMakerImageArn(value: ImageArn): Self = StObject.set(x, "SageMakerImageArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSageMakerImageArnUndefined: Self = StObject.set(x, "SageMakerImageArn", js.undefined)
+    inline def setSageMakerImageArnUndefined: Self = StObject.set(x, "SageMakerImageArn", js.undefined)
     
-    @scala.inline
-    def setSageMakerImageVersionArn(value: ImageVersionArn): Self = StObject.set(x, "SageMakerImageVersionArn", value.asInstanceOf[js.Any])
+    inline def setSageMakerImageVersionArn(value: ImageVersionArn): Self = StObject.set(x, "SageMakerImageVersionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSageMakerImageVersionArnUndefined: Self = StObject.set(x, "SageMakerImageVersionArn", js.undefined)
+    inline def setSageMakerImageVersionArnUndefined: Self = StObject.set(x, "SageMakerImageVersionArn", js.undefined)
   }
 }

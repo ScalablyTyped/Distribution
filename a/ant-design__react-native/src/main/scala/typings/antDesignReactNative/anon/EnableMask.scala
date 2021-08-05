@@ -12,25 +12,19 @@ trait EnableMask extends StObject {
 }
 object EnableMask {
   
-  @scala.inline
-  def apply(): EnableMask = {
+  inline def apply(): EnableMask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableMask]
   }
   
-  @scala.inline
-  implicit class EnableMaskMutableBuilder[Self <: EnableMask] (val x: Self) extends AnyVal {
+  extension [Self <: EnableMask](x: Self) {
     
-    @scala.inline
-    def setEnableMask(value: Boolean): Self = StObject.set(x, "enableMask", value.asInstanceOf[js.Any])
+    inline def setEnableMask(value: Boolean): Self = StObject.set(x, "enableMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableMaskUndefined: Self = StObject.set(x, "enableMask", js.undefined)
+    inline def setEnableMaskUndefined: Self = StObject.set(x, "enableMask", js.undefined)
     
-    @scala.inline
-    def setEnableStack(value: Boolean): Self = StObject.set(x, "enableStack", value.asInstanceOf[js.Any])
+    inline def setEnableStack(value: Boolean): Self = StObject.set(x, "enableStack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableStackUndefined: Self = StObject.set(x, "enableStack", js.undefined)
+    inline def setEnableStackUndefined: Self = StObject.set(x, "enableStack", js.undefined)
   }
 }

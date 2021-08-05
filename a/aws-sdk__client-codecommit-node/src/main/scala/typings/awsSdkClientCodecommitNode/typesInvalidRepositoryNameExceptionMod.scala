@@ -72,17 +72,14 @@ object typesInvalidRepositoryNameExceptionMod {
   }
   object InvalidRepositoryNameException {
     
-    @scala.inline
-    def apply(): InvalidRepositoryNameException = {
+    inline def apply(): InvalidRepositoryNameException = {
       val __obj = js.Dynamic.literal(name = "InvalidRepositoryNameException")
       __obj.asInstanceOf[InvalidRepositoryNameException]
     }
     
-    @scala.inline
-    implicit class InvalidRepositoryNameExceptionMutableBuilder[Self <: InvalidRepositoryNameException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidRepositoryNameException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

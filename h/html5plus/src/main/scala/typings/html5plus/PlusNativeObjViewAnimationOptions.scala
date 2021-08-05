@@ -53,37 +53,27 @@ trait PlusNativeObjViewAnimationOptions extends StObject {
 }
 object PlusNativeObjViewAnimationOptions {
   
-  @scala.inline
-  def apply(): PlusNativeObjViewAnimationOptions = {
+  inline def apply(): PlusNativeObjViewAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeObjViewAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlusNativeObjViewAnimationOptionsMutableBuilder[Self <: PlusNativeObjViewAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeObjViewAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setFrames(value: Double): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: Double): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+    inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    @scala.inline
-    def setRegion(value: PlusNativeObjRect): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: PlusNativeObjRect): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setType(value: shrink): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: shrink): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

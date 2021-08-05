@@ -38,58 +38,41 @@ trait textToAudioOptions
 }
 object textToAudioOptions {
   
-  @scala.inline
-  def apply(tex: String): textToAudioOptions = {
+  inline def apply(tex: String): textToAudioOptions = {
     val __obj = js.Dynamic.literal(tex = tex.asInstanceOf[js.Any])
     __obj.asInstanceOf[textToAudioOptions]
   }
   
-  @scala.inline
-  implicit class textToAudioOptionsMutableBuilder[Self <: textToAudioOptions] (val x: Self) extends AnyVal {
+  extension [Self <: textToAudioOptions](x: Self) {
     
-    @scala.inline
-    def setCtp(value: String | Double): Self = StObject.set(x, "ctp", value.asInstanceOf[js.Any])
+    inline def setCtp(value: String | Double): Self = StObject.set(x, "ctp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtpUndefined: Self = StObject.set(x, "ctp", js.undefined)
+    inline def setCtpUndefined: Self = StObject.set(x, "ctp", js.undefined)
     
-    @scala.inline
-    def setLan(value: String): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
+    inline def setLan(value: String): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanUndefined: Self = StObject.set(x, "lan", js.undefined)
+    inline def setLanUndefined: Self = StObject.set(x, "lan", js.undefined)
     
-    @scala.inline
-    def setPer(value: String): Self = StObject.set(x, "per", value.asInstanceOf[js.Any])
+    inline def setPer(value: String): Self = StObject.set(x, "per", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerUndefined: Self = StObject.set(x, "per", js.undefined)
+    inline def setPerUndefined: Self = StObject.set(x, "per", js.undefined)
     
-    @scala.inline
-    def setPit(value: String): Self = StObject.set(x, "pit", value.asInstanceOf[js.Any])
+    inline def setPit(value: String): Self = StObject.set(x, "pit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitUndefined: Self = StObject.set(x, "pit", js.undefined)
+    inline def setPitUndefined: Self = StObject.set(x, "pit", js.undefined)
     
-    @scala.inline
-    def setSpd(value: String): Self = StObject.set(x, "spd", value.asInstanceOf[js.Any])
+    inline def setSpd(value: String): Self = StObject.set(x, "spd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpdUndefined: Self = StObject.set(x, "spd", js.undefined)
+    inline def setSpdUndefined: Self = StObject.set(x, "spd", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* res */ textToAudioResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ textToAudioResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTex(value: String): Self = StObject.set(x, "tex", value.asInstanceOf[js.Any])
+    inline def setTex(value: String): Self = StObject.set(x, "tex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVol(value: String): Self = StObject.set(x, "vol", value.asInstanceOf[js.Any])
+    inline def setVol(value: String): Self = StObject.set(x, "vol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolUndefined: Self = StObject.set(x, "vol", js.undefined)
+    inline def setVolUndefined: Self = StObject.set(x, "vol", js.undefined)
   }
 }

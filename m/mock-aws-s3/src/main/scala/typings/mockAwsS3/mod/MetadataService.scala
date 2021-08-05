@@ -27,6 +27,5 @@ object MetadataService {
   @JSImport("mock-aws-s3", "MetadataService.host")
   @js.native
   def host: String = js.native
-  @scala.inline
-  def host_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("host")(x.asInstanceOf[js.Any])
+  inline def host_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("host")(x.asInstanceOf[js.Any])
 }

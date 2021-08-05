@@ -21,8 +21,7 @@ trait XboxLiveQualityOfServiceMetricResult extends StObject {
 }
 object XboxLiveQualityOfServiceMetricResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceAddress: XboxLiveDeviceAddress,
     metric: XboxLiveQualityOfServiceMetric,
     status: XboxLiveQualityOfServiceMeasurementStatus,
@@ -32,19 +31,14 @@ object XboxLiveQualityOfServiceMetricResult {
     __obj.asInstanceOf[XboxLiveQualityOfServiceMetricResult]
   }
   
-  @scala.inline
-  implicit class XboxLiveQualityOfServiceMetricResultMutableBuilder[Self <: XboxLiveQualityOfServiceMetricResult] (val x: Self) extends AnyVal {
+  extension [Self <: XboxLiveQualityOfServiceMetricResult](x: Self) {
     
-    @scala.inline
-    def setDeviceAddress(value: XboxLiveDeviceAddress): Self = StObject.set(x, "deviceAddress", value.asInstanceOf[js.Any])
+    inline def setDeviceAddress(value: XboxLiveDeviceAddress): Self = StObject.set(x, "deviceAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetric(value: XboxLiveQualityOfServiceMetric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: XboxLiveQualityOfServiceMetric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: XboxLiveQualityOfServiceMeasurementStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: XboxLiveQualityOfServiceMeasurementStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

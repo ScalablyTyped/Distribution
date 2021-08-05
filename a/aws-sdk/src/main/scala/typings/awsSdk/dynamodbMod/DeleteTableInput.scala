@@ -13,16 +13,13 @@ trait DeleteTableInput extends StObject {
 }
 object DeleteTableInput {
   
-  @scala.inline
-  def apply(TableName: TableName): DeleteTableInput = {
+  inline def apply(TableName: TableName): DeleteTableInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTableInput]
   }
   
-  @scala.inline
-  implicit class DeleteTableInputMutableBuilder[Self <: DeleteTableInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTableInput](x: Self) {
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

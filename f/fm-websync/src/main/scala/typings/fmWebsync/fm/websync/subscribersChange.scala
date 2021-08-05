@@ -18,23 +18,18 @@ trait subscribersChange extends StObject {
 }
 object subscribersChange {
   
-  @scala.inline
-  def apply(clients: js.Array[subscribedClient], `type`: String): subscribersChange = {
+  inline def apply(clients: js.Array[subscribedClient], `type`: String): subscribersChange = {
     val __obj = js.Dynamic.literal(clients = clients.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[subscribersChange]
   }
   
-  @scala.inline
-  implicit class subscribersChangeMutableBuilder[Self <: subscribersChange] (val x: Self) extends AnyVal {
+  extension [Self <: subscribersChange](x: Self) {
     
-    @scala.inline
-    def setClients(value: js.Array[subscribedClient]): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
+    inline def setClients(value: js.Array[subscribedClient]): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientsVarargs(value: subscribedClient*): Self = StObject.set(x, "clients", js.Array(value :_*))
+    inline def setClientsVarargs(value: subscribedClient*): Self = StObject.set(x, "clients", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

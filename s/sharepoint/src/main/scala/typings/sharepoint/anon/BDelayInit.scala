@@ -14,22 +14,17 @@ trait BDelayInit extends StObject {
 }
 object BDelayInit {
   
-  @scala.inline
-  def apply(bDelayInit: Boolean, separatorChar: String, singleValuePropTypeID: String): BDelayInit = {
+  inline def apply(bDelayInit: Boolean, separatorChar: String, singleValuePropTypeID: String): BDelayInit = {
     val __obj = js.Dynamic.literal(bDelayInit = bDelayInit.asInstanceOf[js.Any], separatorChar = separatorChar.asInstanceOf[js.Any], singleValuePropTypeID = singleValuePropTypeID.asInstanceOf[js.Any])
     __obj.asInstanceOf[BDelayInit]
   }
   
-  @scala.inline
-  implicit class BDelayInitMutableBuilder[Self <: BDelayInit] (val x: Self) extends AnyVal {
+  extension [Self <: BDelayInit](x: Self) {
     
-    @scala.inline
-    def setBDelayInit(value: Boolean): Self = StObject.set(x, "bDelayInit", value.asInstanceOf[js.Any])
+    inline def setBDelayInit(value: Boolean): Self = StObject.set(x, "bDelayInit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorChar(value: String): Self = StObject.set(x, "separatorChar", value.asInstanceOf[js.Any])
+    inline def setSeparatorChar(value: String): Self = StObject.set(x, "separatorChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleValuePropTypeID(value: String): Self = StObject.set(x, "singleValuePropTypeID", value.asInstanceOf[js.Any])
+    inline def setSingleValuePropTypeID(value: String): Self = StObject.set(x, "singleValuePropTypeID", value.asInstanceOf[js.Any])
   }
 }

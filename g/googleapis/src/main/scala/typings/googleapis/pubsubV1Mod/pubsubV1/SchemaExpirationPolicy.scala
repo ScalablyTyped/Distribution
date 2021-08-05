@@ -22,19 +22,15 @@ trait SchemaExpirationPolicy extends StObject {
 }
 object SchemaExpirationPolicy {
   
-  @scala.inline
-  def apply(): SchemaExpirationPolicy = {
+  inline def apply(): SchemaExpirationPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExpirationPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaExpirationPolicyMutableBuilder[Self <: SchemaExpirationPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExpirationPolicy](x: Self) {
     
-    @scala.inline
-    def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

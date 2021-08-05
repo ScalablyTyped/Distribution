@@ -18,19 +18,15 @@ trait RenderingError extends StObject {
 }
 object RenderingError {
   
-  @scala.inline
-  def apply(Code: String, Message: String): RenderingError = {
+  inline def apply(Code: String, Message: String): RenderingError = {
     val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderingError]
   }
   
-  @scala.inline
-  implicit class RenderingErrorMutableBuilder[Self <: RenderingError] (val x: Self) extends AnyVal {
+  extension [Self <: RenderingError](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
   }
 }

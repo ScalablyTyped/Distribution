@@ -17,20 +17,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setNyanReporter(value: NyanCatOptions): Self = StObject.set(x, "nyanReporter", value.asInstanceOf[js.Any])
+      inline def setNyanReporter(value: NyanCatOptions): Self = StObject.set(x, "nyanReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNyanReporterUndefined: Self = StObject.set(x, "nyanReporter", js.undefined)
+      inline def setNyanReporterUndefined: Self = StObject.set(x, "nyanReporter", js.undefined)
     }
   }
   
@@ -65,38 +61,28 @@ object mod {
   }
   object NyanCatOptions {
     
-    @scala.inline
-    def apply(): NyanCatOptions = {
+    inline def apply(): NyanCatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NyanCatOptions]
     }
     
-    @scala.inline
-    implicit class NyanCatOptionsMutableBuilder[Self <: NyanCatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NyanCatOptions](x: Self) {
       
-      @scala.inline
-      def setNumberOfRainbowLines(value: Double): Self = StObject.set(x, "numberOfRainbowLines", value.asInstanceOf[js.Any])
+      inline def setNumberOfRainbowLines(value: Double): Self = StObject.set(x, "numberOfRainbowLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfRainbowLinesUndefined: Self = StObject.set(x, "numberOfRainbowLines", js.undefined)
+      inline def setNumberOfRainbowLinesUndefined: Self = StObject.set(x, "numberOfRainbowLines", js.undefined)
       
-      @scala.inline
-      def setRenderOnRunCompleteOnly(value: Boolean): Self = StObject.set(x, "renderOnRunCompleteOnly", value.asInstanceOf[js.Any])
+      inline def setRenderOnRunCompleteOnly(value: Boolean): Self = StObject.set(x, "renderOnRunCompleteOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderOnRunCompleteOnlyUndefined: Self = StObject.set(x, "renderOnRunCompleteOnly", js.undefined)
+      inline def setRenderOnRunCompleteOnlyUndefined: Self = StObject.set(x, "renderOnRunCompleteOnly", js.undefined)
       
-      @scala.inline
-      def setSuppressErrorHighlighting(value: Boolean): Self = StObject.set(x, "suppressErrorHighlighting", value.asInstanceOf[js.Any])
+      inline def setSuppressErrorHighlighting(value: Boolean): Self = StObject.set(x, "suppressErrorHighlighting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressErrorHighlightingUndefined: Self = StObject.set(x, "suppressErrorHighlighting", js.undefined)
+      inline def setSuppressErrorHighlightingUndefined: Self = StObject.set(x, "suppressErrorHighlighting", js.undefined)
       
-      @scala.inline
-      def setSuppressErrorReport(value: Boolean): Self = StObject.set(x, "suppressErrorReport", value.asInstanceOf[js.Any])
+      inline def setSuppressErrorReport(value: Boolean): Self = StObject.set(x, "suppressErrorReport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressErrorReportUndefined: Self = StObject.set(x, "suppressErrorReport", js.undefined)
+      inline def setSuppressErrorReportUndefined: Self = StObject.set(x, "suppressErrorReport", js.undefined)
     }
   }
 }

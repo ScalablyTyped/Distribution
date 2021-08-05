@@ -15,15 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with Expression
 object Literal {
   
-  @scala.inline
-  def RegExpLiteral(regex: Flags): typings.estree.mod.RegExpLiteral = {
+  inline def RegExpLiteral(regex: Flags): typings.estree.mod.RegExpLiteral = {
     val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Literal")
     __obj.asInstanceOf[typings.estree.mod.RegExpLiteral]
   }
   
-  @scala.inline
-  def SimpleLiteral(): typings.estree.mod.SimpleLiteral = {
+  inline def SimpleLiteral(): typings.estree.mod.SimpleLiteral = {
     val __obj = js.Dynamic.literal(value = null)
     __obj.updateDynamic("type")("Literal")
     __obj.asInstanceOf[typings.estree.mod.SimpleLiteral]

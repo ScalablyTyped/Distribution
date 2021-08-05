@@ -23,31 +23,23 @@ trait RetainRule extends StObject {
 }
 object RetainRule {
   
-  @scala.inline
-  def apply(): RetainRule = {
+  inline def apply(): RetainRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetainRule]
   }
   
-  @scala.inline
-  implicit class RetainRuleMutableBuilder[Self <: RetainRule] (val x: Self) extends AnyVal {
+  extension [Self <: RetainRule](x: Self) {
     
-    @scala.inline
-    def setCount(value: Count): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Count): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Interval): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Interval): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
     
-    @scala.inline
-    def setIntervalUnit(value: RetentionIntervalUnitValues): Self = StObject.set(x, "IntervalUnit", value.asInstanceOf[js.Any])
+    inline def setIntervalUnit(value: RetentionIntervalUnitValues): Self = StObject.set(x, "IntervalUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUnitUndefined: Self = StObject.set(x, "IntervalUnit", js.undefined)
+    inline def setIntervalUnitUndefined: Self = StObject.set(x, "IntervalUnit", js.undefined)
   }
 }

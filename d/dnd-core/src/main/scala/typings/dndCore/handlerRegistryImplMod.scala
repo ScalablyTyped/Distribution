@@ -20,11 +20,11 @@ object handlerRegistryImplMod {
        with HandlerRegistry {
     def this(store: Store[State, AnyAction]) = this()
     
-    var addHandler: js.Any = js.native
+    /* private */ var addHandler: js.Any = js.native
     
-    var dragSources: js.Any = js.native
+    /* private */ var dragSources: js.Any = js.native
     
-    var dropTargets: js.Any = js.native
+    /* private */ var dropTargets: js.Any = js.native
     
     def getSource(sourceId: String): DragSource = js.native
     def getSource(sourceId: String, includePinned: Boolean): DragSource = js.native
@@ -41,16 +41,16 @@ object handlerRegistryImplMod {
     
     def pinSource(sourceId: String): Unit = js.native
     
-    var pinnedSource: js.Any = js.native
+    /* private */ var pinnedSource: js.Any = js.native
     
-    var pinnedSourceId: js.Any = js.native
+    /* private */ var pinnedSourceId: js.Any = js.native
     
     def removeSource(sourceId: String): Unit = js.native
     
     def removeTarget(targetId: String): Unit = js.native
     
-    var store: js.Any = js.native
+    /* private */ var store: js.Any = js.native
     
-    var types: js.Any = js.native
+    /* private */ var types: js.Any = js.native
   }
 }

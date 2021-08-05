@@ -13,19 +13,15 @@ trait AutoSnapshotAddOnRequest extends StObject {
 }
 object AutoSnapshotAddOnRequest {
   
-  @scala.inline
-  def apply(): AutoSnapshotAddOnRequest = {
+  inline def apply(): AutoSnapshotAddOnRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoSnapshotAddOnRequest]
   }
   
-  @scala.inline
-  implicit class AutoSnapshotAddOnRequestMutableBuilder[Self <: AutoSnapshotAddOnRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AutoSnapshotAddOnRequest](x: Self) {
     
-    @scala.inline
-    def setSnapshotTimeOfDay(value: TimeOfDay): Self = StObject.set(x, "snapshotTimeOfDay", value.asInstanceOf[js.Any])
+    inline def setSnapshotTimeOfDay(value: TimeOfDay): Self = StObject.set(x, "snapshotTimeOfDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotTimeOfDayUndefined: Self = StObject.set(x, "snapshotTimeOfDay", js.undefined)
+    inline def setSnapshotTimeOfDayUndefined: Self = StObject.set(x, "snapshotTimeOfDay", js.undefined)
   }
 }

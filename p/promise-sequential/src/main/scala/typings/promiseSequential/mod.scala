@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(promises: js.Array[PromiseFunction]): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(promises.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def apply(promises: js.Array[PromiseFunction]): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(promises.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
   
   @JSImport("promise-sequential", JSImport.Namespace)
   @js.native

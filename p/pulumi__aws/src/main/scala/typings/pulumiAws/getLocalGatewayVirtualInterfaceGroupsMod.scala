@@ -13,14 +13,10 @@ object getLocalGatewayVirtualInterfaceGroupsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLocalGatewayVirtualInterfaceGroups(): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterfaceGroups")().asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult]]
-  @scala.inline
-  def getLocalGatewayVirtualInterfaceGroups(args: Unit, opts: InvokeOptions): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterfaceGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult]]
-  @scala.inline
-  def getLocalGatewayVirtualInterfaceGroups(args: GetLocalGatewayVirtualInterfaceGroupsArgs): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterfaceGroups")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult]]
-  @scala.inline
-  def getLocalGatewayVirtualInterfaceGroups(args: GetLocalGatewayVirtualInterfaceGroupsArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterfaceGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult]]
+  inline def getLocalGatewayVirtualInterfaceGroups(): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterfaceGroups")().asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult]]
+  inline def getLocalGatewayVirtualInterfaceGroups(args: Unit, opts: InvokeOptions): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterfaceGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult]]
+  inline def getLocalGatewayVirtualInterfaceGroups(args: GetLocalGatewayVirtualInterfaceGroupsArgs): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterfaceGroups")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult]]
+  inline def getLocalGatewayVirtualInterfaceGroups(args: GetLocalGatewayVirtualInterfaceGroupsArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterfaceGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceGroupsResult]]
   
   trait GetLocalGatewayVirtualInterfaceGroupsArgs extends StObject {
     
@@ -36,29 +32,22 @@ object getLocalGatewayVirtualInterfaceGroupsMod {
   }
   object GetLocalGatewayVirtualInterfaceGroupsArgs {
     
-    @scala.inline
-    def apply(): GetLocalGatewayVirtualInterfaceGroupsArgs = {
+    inline def apply(): GetLocalGatewayVirtualInterfaceGroupsArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetLocalGatewayVirtualInterfaceGroupsArgs]
     }
     
-    @scala.inline
-    implicit class GetLocalGatewayVirtualInterfaceGroupsArgsMutableBuilder[Self <: GetLocalGatewayVirtualInterfaceGroupsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetLocalGatewayVirtualInterfaceGroupsArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetLocalGatewayVirtualInterfaceGroupsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetLocalGatewayVirtualInterfaceGroupsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetLocalGatewayVirtualInterfaceGroupsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetLocalGatewayVirtualInterfaceGroupsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -87,8 +76,7 @@ object getLocalGatewayVirtualInterfaceGroupsMod {
   }
   object GetLocalGatewayVirtualInterfaceGroupsResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       ids: js.Array[String],
       localGatewayVirtualInterfaceIds: js.Array[String],
@@ -98,35 +86,25 @@ object getLocalGatewayVirtualInterfaceGroupsMod {
       __obj.asInstanceOf[GetLocalGatewayVirtualInterfaceGroupsResult]
     }
     
-    @scala.inline
-    implicit class GetLocalGatewayVirtualInterfaceGroupsResultMutableBuilder[Self <: GetLocalGatewayVirtualInterfaceGroupsResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetLocalGatewayVirtualInterfaceGroupsResult](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayVirtualInterfaceGroupsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayVirtualInterfaceGroupsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetLocalGatewayVirtualInterfaceGroupsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetLocalGatewayVirtualInterfaceGroupsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setLocalGatewayVirtualInterfaceIds(value: js.Array[String]): Self = StObject.set(x, "localGatewayVirtualInterfaceIds", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayVirtualInterfaceIds(value: js.Array[String]): Self = StObject.set(x, "localGatewayVirtualInterfaceIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayVirtualInterfaceIdsVarargs(value: String*): Self = StObject.set(x, "localGatewayVirtualInterfaceIds", js.Array(value :_*))
+      inline def setLocalGatewayVirtualInterfaceIdsVarargs(value: String*): Self = StObject.set(x, "localGatewayVirtualInterfaceIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

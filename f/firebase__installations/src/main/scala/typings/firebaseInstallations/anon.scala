@@ -17,23 +17,18 @@ object anon {
   }
   object Code {
     
-    @scala.inline
-    def apply(code: Double, message: String, status: String): Code = {
+    inline def apply(code: Double, message: String, status: String): Code = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
-    @scala.inline
-    implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+    extension [Self <: Code](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,38 +45,28 @@ object anon {
   }
   object PartialAppConfig {
     
-    @scala.inline
-    def apply(): PartialAppConfig = {
+    inline def apply(): PartialAppConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialAppConfig]
     }
     
-    @scala.inline
-    implicit class PartialAppConfigMutableBuilder[Self <: PartialAppConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PartialAppConfig](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+      inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+      inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
       
-      @scala.inline
-      def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+      inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     }
   }
   
@@ -91,17 +76,14 @@ object anon {
   }
   object ValueName {
     
-    @scala.inline
-    def apply(valueName: String): ValueName = {
+    inline def apply(valueName: String): ValueName = {
       val __obj = js.Dynamic.literal(valueName = valueName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValueName]
     }
     
-    @scala.inline
-    implicit class ValueNameMutableBuilder[Self <: ValueName] (val x: Self) extends AnyVal {
+    extension [Self <: ValueName](x: Self) {
       
-      @scala.inline
-      def setValueName(value: String): Self = StObject.set(x, "valueName", value.asInstanceOf[js.Any])
+      inline def setValueName(value: String): Self = StObject.set(x, "valueName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,26 +102,20 @@ object anon {
   }
   object requestNamestringindexstr {
     
-    @scala.inline
-    def apply(requestName: String, serverCode: Double, serverMessage: String, serverStatus: String): requestNamestringindexstr = {
+    inline def apply(requestName: String, serverCode: Double, serverMessage: String, serverStatus: String): requestNamestringindexstr = {
       val __obj = js.Dynamic.literal(requestName = requestName.asInstanceOf[js.Any], serverCode = serverCode.asInstanceOf[js.Any], serverMessage = serverMessage.asInstanceOf[js.Any], serverStatus = serverStatus.asInstanceOf[js.Any])
       __obj.asInstanceOf[requestNamestringindexstr]
     }
     
-    @scala.inline
-    implicit class requestNamestringindexstrMutableBuilder[Self <: requestNamestringindexstr] (val x: Self) extends AnyVal {
+    extension [Self <: requestNamestringindexstr](x: Self) {
       
-      @scala.inline
-      def setRequestName(value: String): Self = StObject.set(x, "requestName", value.asInstanceOf[js.Any])
+      inline def setRequestName(value: String): Self = StObject.set(x, "requestName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerCode(value: Double): Self = StObject.set(x, "serverCode", value.asInstanceOf[js.Any])
+      inline def setServerCode(value: Double): Self = StObject.set(x, "serverCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerMessage(value: String): Self = StObject.set(x, "serverMessage", value.asInstanceOf[js.Any])
+      inline def setServerMessage(value: String): Self = StObject.set(x, "serverMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerStatus(value: String): Self = StObject.set(x, "serverStatus", value.asInstanceOf[js.Any])
+      inline def setServerStatus(value: String): Self = StObject.set(x, "serverStatus", value.asInstanceOf[js.Any])
     }
   }
 }

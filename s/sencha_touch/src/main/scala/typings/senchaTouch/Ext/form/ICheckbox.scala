@@ -83,103 +83,71 @@ trait ICheckbox
 }
 object ICheckbox {
   
-  @scala.inline
-  def apply(): ICheckbox = {
+  inline def apply(): ICheckbox = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICheckbox]
   }
   
-  @scala.inline
-  implicit class ICheckboxMutableBuilder[Self <: ICheckbox] (val x: Self) extends AnyVal {
+  extension [Self <: ICheckbox](x: Self) {
     
-    @scala.inline
-    def setCheck(value: () => ICheckbox): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
+    inline def setCheck(value: () => ICheckbox): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+    inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
-    @scala.inline
-    def setDoChecked(value: () => Unit): Self = StObject.set(x, "doChecked", js.Any.fromFunction0(value))
+    inline def setDoChecked(value: () => Unit): Self = StObject.set(x, "doChecked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDoCheckedUndefined: Self = StObject.set(x, "doChecked", js.undefined)
+    inline def setDoCheckedUndefined: Self = StObject.set(x, "doChecked", js.undefined)
     
-    @scala.inline
-    def setDoUnChecked(value: () => Unit): Self = StObject.set(x, "doUnChecked", js.Any.fromFunction0(value))
+    inline def setDoUnChecked(value: () => Unit): Self = StObject.set(x, "doUnChecked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDoUnCheckedUndefined: Self = StObject.set(x, "doUnChecked", js.undefined)
+    inline def setDoUnCheckedUndefined: Self = StObject.set(x, "doUnChecked", js.undefined)
     
-    @scala.inline
-    def setGetChecked(value: () => js.Any): Self = StObject.set(x, "getChecked", js.Any.fromFunction0(value))
+    inline def setGetChecked(value: () => js.Any): Self = StObject.set(x, "getChecked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCheckedUndefined: Self = StObject.set(x, "getChecked", js.undefined)
+    inline def setGetCheckedUndefined: Self = StObject.set(x, "getChecked", js.undefined)
     
-    @scala.inline
-    def setGetGroupValues(value: () => Array): Self = StObject.set(x, "getGroupValues", js.Any.fromFunction0(value))
+    inline def setGetGroupValues(value: () => Array): Self = StObject.set(x, "getGroupValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroupValuesUndefined: Self = StObject.set(x, "getGroupValues", js.undefined)
+    inline def setGetGroupValuesUndefined: Self = StObject.set(x, "getGroupValues", js.undefined)
     
-    @scala.inline
-    def setGetSubmitValue(value: () => js.Any): Self = StObject.set(x, "getSubmitValue", js.Any.fromFunction0(value))
+    inline def setGetSubmitValue(value: () => js.Any): Self = StObject.set(x, "getSubmitValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubmitValueUndefined: Self = StObject.set(x, "getSubmitValue", js.undefined)
+    inline def setGetSubmitValueUndefined: Self = StObject.set(x, "getSubmitValue", js.undefined)
     
-    @scala.inline
-    def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
+    inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
-    @scala.inline
-    def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+    inline def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCheckedUndefined: Self = StObject.set(x, "isChecked", js.undefined)
+    inline def setIsCheckedUndefined: Self = StObject.set(x, "isChecked", js.undefined)
     
-    @scala.inline
-    def setReset(value: () => typings.senchaTouch.Ext.field.IField): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => typings.senchaTouch.Ext.field.IField): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetGroupValues(value: () => ICheckbox): Self = StObject.set(x, "resetGroupValues", js.Any.fromFunction0(value))
+    inline def setResetGroupValues(value: () => ICheckbox): Self = StObject.set(x, "resetGroupValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetGroupValuesUndefined: Self = StObject.set(x, "resetGroupValues", js.undefined)
+    inline def setResetGroupValuesUndefined: Self = StObject.set(x, "resetGroupValues", js.undefined)
     
-    @scala.inline
-    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
-    @scala.inline
-    def setSetGroupValues(value: /* values */ js.UndefOr[Array] => ICheckbox): Self = StObject.set(x, "setGroupValues", js.Any.fromFunction1(value))
+    inline def setSetGroupValues(value: /* values */ js.UndefOr[Array] => ICheckbox): Self = StObject.set(x, "setGroupValues", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGroupValuesUndefined: Self = StObject.set(x, "setGroupValues", js.undefined)
+    inline def setSetGroupValuesUndefined: Self = StObject.set(x, "setGroupValues", js.undefined)
     
-    @scala.inline
-    def setSetValue(value: /* value */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
-    @scala.inline
-    def setUncheck(value: () => ICheckbox): Self = StObject.set(x, "uncheck", js.Any.fromFunction0(value))
+    inline def setUncheck(value: () => ICheckbox): Self = StObject.set(x, "uncheck", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUncheckUndefined: Self = StObject.set(x, "uncheck", js.undefined)
+    inline def setUncheckUndefined: Self = StObject.set(x, "uncheck", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object randomMod {
   
   /* was `typeof core.Number.random` */
-  @scala.inline
-  def apply(): Double = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Double]
-  @scala.inline
-  def apply(lim: Double): Double = ^.asInstanceOf[js.Dynamic].apply(lim.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(): Double = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Double]
+  inline def apply(lim: Double): Double = ^.asInstanceOf[js.Dynamic].apply(lim.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("core-js/fn/number/random", JSImport.Namespace)
   @js.native

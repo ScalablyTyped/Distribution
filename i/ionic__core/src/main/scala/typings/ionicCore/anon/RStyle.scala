@@ -12,19 +12,15 @@ trait RStyle extends StObject {
 }
 object RStyle {
   
-  @scala.inline
-  def apply(r: Double, style: Left): RStyle = {
+  inline def apply(r: Double, style: Left): RStyle = {
     val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[RStyle]
   }
   
-  @scala.inline
-  implicit class RStyleMutableBuilder[Self <: RStyle] (val x: Self) extends AnyVal {
+  extension [Self <: RStyle](x: Self) {
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: Left): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Left): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

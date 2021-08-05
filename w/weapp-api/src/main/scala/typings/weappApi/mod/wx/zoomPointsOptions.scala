@@ -16,28 +16,21 @@ trait zoomPointsOptions
 }
 object zoomPointsOptions {
   
-  @scala.inline
-  def apply(points: js.Array[LocationBaseOptions]): zoomPointsOptions = {
+  inline def apply(points: js.Array[LocationBaseOptions]): zoomPointsOptions = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     __obj.asInstanceOf[zoomPointsOptions]
   }
   
-  @scala.inline
-  implicit class zoomPointsOptionsMutableBuilder[Self <: zoomPointsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: zoomPointsOptions](x: Self) {
     
-    @scala.inline
-    def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
-    @scala.inline
-    def setPoints(value: js.Array[LocationBaseOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[LocationBaseOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: LocationBaseOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: LocationBaseOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

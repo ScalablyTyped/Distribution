@@ -11,8 +11,7 @@ trait DeleteApnsVoipSandboxChannelOutput
      with typings.awsSdkClientPinpointBrowser.typesDeleteApnsVoipSandboxChannelOutputMod.DeleteApnsVoipSandboxChannelOutput
 object DeleteApnsVoipSandboxChannelOutput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $metadata: ResponseMetadata,
     APNSVoipSandboxChannelResponse: UnmarshalledAPNSVoipSandboxChannelResponse
   ): DeleteApnsVoipSandboxChannelOutput = {

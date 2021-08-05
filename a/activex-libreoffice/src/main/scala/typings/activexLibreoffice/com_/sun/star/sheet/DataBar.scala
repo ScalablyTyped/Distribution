@@ -44,8 +44,7 @@ trait DataBar
 }
 object DataBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AxisColor: Color,
     AxisPosition: Double,
     Color: Color,
@@ -66,37 +65,26 @@ object DataBar {
     __obj.asInstanceOf[DataBar]
   }
   
-  @scala.inline
-  implicit class DataBarMutableBuilder[Self <: DataBar] (val x: Self) extends AnyVal {
+  extension [Self <: DataBar](x: Self) {
     
-    @scala.inline
-    def setAxisColor(value: Color): Self = StObject.set(x, "AxisColor", value.asInstanceOf[js.Any])
+    inline def setAxisColor(value: Color): Self = StObject.set(x, "AxisColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisPosition(value: Double): Self = StObject.set(x, "AxisPosition", value.asInstanceOf[js.Any])
+    inline def setAxisPosition(value: Double): Self = StObject.set(x, "AxisPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataBarEntries(value: SafeArray[XDataBarEntry]): Self = StObject.set(x, "DataBarEntries", value.asInstanceOf[js.Any])
+    inline def setDataBarEntries(value: SafeArray[XDataBarEntry]): Self = StObject.set(x, "DataBarEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumLength(value: Double): Self = StObject.set(x, "MaximumLength", value.asInstanceOf[js.Any])
+    inline def setMaximumLength(value: Double): Self = StObject.set(x, "MaximumLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumLength(value: Double): Self = StObject.set(x, "MinimumLength", value.asInstanceOf[js.Any])
+    inline def setMinimumLength(value: Double): Self = StObject.set(x, "MinimumLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeColor(value: Color): Self = StObject.set(x, "NegativeColor", value.asInstanceOf[js.Any])
+    inline def setNegativeColor(value: Color): Self = StObject.set(x, "NegativeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowValue(value: Boolean): Self = StObject.set(x, "ShowValue", value.asInstanceOf[js.Any])
+    inline def setShowValue(value: Boolean): Self = StObject.set(x, "ShowValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseGradient(value: Boolean): Self = StObject.set(x, "UseGradient", value.asInstanceOf[js.Any])
+    inline def setUseGradient(value: Boolean): Self = StObject.set(x, "UseGradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseNegativeColor(value: Boolean): Self = StObject.set(x, "UseNegativeColor", value.asInstanceOf[js.Any])
+    inline def setUseNegativeColor(value: Boolean): Self = StObject.set(x, "UseNegativeColor", value.asInstanceOf[js.Any])
   }
 }

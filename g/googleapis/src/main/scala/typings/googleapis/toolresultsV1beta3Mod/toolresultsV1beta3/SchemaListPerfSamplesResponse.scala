@@ -17,28 +17,21 @@ trait SchemaListPerfSamplesResponse extends StObject {
 }
 object SchemaListPerfSamplesResponse {
   
-  @scala.inline
-  def apply(): SchemaListPerfSamplesResponse = {
+  inline def apply(): SchemaListPerfSamplesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListPerfSamplesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListPerfSamplesResponseMutableBuilder[Self <: SchemaListPerfSamplesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListPerfSamplesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPerfSamples(value: js.Array[SchemaPerfSample]): Self = StObject.set(x, "perfSamples", value.asInstanceOf[js.Any])
+    inline def setPerfSamples(value: js.Array[SchemaPerfSample]): Self = StObject.set(x, "perfSamples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerfSamplesUndefined: Self = StObject.set(x, "perfSamples", js.undefined)
+    inline def setPerfSamplesUndefined: Self = StObject.set(x, "perfSamples", js.undefined)
     
-    @scala.inline
-    def setPerfSamplesVarargs(value: SchemaPerfSample*): Self = StObject.set(x, "perfSamples", js.Array(value :_*))
+    inline def setPerfSamplesVarargs(value: SchemaPerfSample*): Self = StObject.set(x, "perfSamples", js.Array(value :_*))
   }
 }

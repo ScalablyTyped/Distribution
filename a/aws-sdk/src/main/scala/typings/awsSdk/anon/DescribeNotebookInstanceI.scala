@@ -19,22 +19,17 @@ trait DescribeNotebookInstanceI extends StObject {
 }
 object DescribeNotebookInstanceI {
   
-  @scala.inline
-  def apply(NotebookInstanceName: NotebookInstanceName): DescribeNotebookInstanceI = {
+  inline def apply(NotebookInstanceName: NotebookInstanceName): DescribeNotebookInstanceI = {
     val __obj = js.Dynamic.literal(NotebookInstanceName = NotebookInstanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNotebookInstanceI]
   }
   
-  @scala.inline
-  implicit class DescribeNotebookInstanceIMutableBuilder[Self <: DescribeNotebookInstanceI] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNotebookInstanceI](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setNotebookInstanceName(value: NotebookInstanceName): Self = StObject.set(x, "NotebookInstanceName", value.asInstanceOf[js.Any])
+    inline def setNotebookInstanceName(value: NotebookInstanceName): Self = StObject.set(x, "NotebookInstanceName", value.asInstanceOf[js.Any])
   }
 }

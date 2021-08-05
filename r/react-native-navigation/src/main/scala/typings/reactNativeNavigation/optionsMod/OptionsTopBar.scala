@@ -167,199 +167,135 @@ trait OptionsTopBar extends StObject {
 }
 object OptionsTopBar {
   
-  @scala.inline
-  def apply(): OptionsTopBar = {
+  inline def apply(): OptionsTopBar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionsTopBar]
   }
   
-  @scala.inline
-  implicit class OptionsTopBarMutableBuilder[Self <: OptionsTopBar] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsTopBar](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    @scala.inline
-    def setBackButton(value: OptionsTopBarBackButton): Self = StObject.set(x, "backButton", value.asInstanceOf[js.Any])
+    inline def setBackButton(value: OptionsTopBarBackButton): Self = StObject.set(x, "backButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackButtonUndefined: Self = StObject.set(x, "backButton", js.undefined)
+    inline def setBackButtonUndefined: Self = StObject.set(x, "backButton", js.undefined)
     
-    @scala.inline
-    def setBackground(value: OptionsTopBarBackground): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: OptionsTopBarBackground): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setBarStyle(value: default | black): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+    inline def setBarStyle(value: default | black): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
+    inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     
-    @scala.inline
-    def setBorderColor(value: Color): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: Color): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    @scala.inline
-    def setBorderHeight(value: AndroidDensityNumber): Self = StObject.set(x, "borderHeight", value.asInstanceOf[js.Any])
+    inline def setBorderHeight(value: AndroidDensityNumber): Self = StObject.set(x, "borderHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderHeightUndefined: Self = StObject.set(x, "borderHeight", js.undefined)
+    inline def setBorderHeightUndefined: Self = StObject.set(x, "borderHeight", js.undefined)
     
-    @scala.inline
-    def setDrawBehind(value: Boolean): Self = StObject.set(x, "drawBehind", value.asInstanceOf[js.Any])
+    inline def setDrawBehind(value: Boolean): Self = StObject.set(x, "drawBehind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawBehindUndefined: Self = StObject.set(x, "drawBehind", js.undefined)
+    inline def setDrawBehindUndefined: Self = StObject.set(x, "drawBehind", js.undefined)
     
-    @scala.inline
-    def setElevation(value: AndroidDensityNumber): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+    inline def setElevation(value: AndroidDensityNumber): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
+    inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
     
-    @scala.inline
-    def setHeight(value: AndroidDensityNumber): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: AndroidDensityNumber): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHideNavBarOnFocusSearchBar(value: Boolean): Self = StObject.set(x, "hideNavBarOnFocusSearchBar", value.asInstanceOf[js.Any])
+    inline def setHideNavBarOnFocusSearchBar(value: Boolean): Self = StObject.set(x, "hideNavBarOnFocusSearchBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideNavBarOnFocusSearchBarUndefined: Self = StObject.set(x, "hideNavBarOnFocusSearchBar", js.undefined)
+    inline def setHideNavBarOnFocusSearchBarUndefined: Self = StObject.set(x, "hideNavBarOnFocusSearchBar", js.undefined)
     
-    @scala.inline
-    def setHideOnScroll(value: Boolean): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
+    inline def setHideOnScroll(value: Boolean): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideOnScrollUndefined: Self = StObject.set(x, "hideOnScroll", js.undefined)
+    inline def setHideOnScrollUndefined: Self = StObject.set(x, "hideOnScroll", js.undefined)
     
-    @scala.inline
-    def setLargeTitle(value: OptionsTopBarLargeTitle): Self = StObject.set(x, "largeTitle", value.asInstanceOf[js.Any])
+    inline def setLargeTitle(value: OptionsTopBarLargeTitle): Self = StObject.set(x, "largeTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeTitleUndefined: Self = StObject.set(x, "largeTitle", js.undefined)
+    inline def setLargeTitleUndefined: Self = StObject.set(x, "largeTitle", js.undefined)
     
-    @scala.inline
-    def setLeftButtonColor(value: Color): Self = StObject.set(x, "leftButtonColor", value.asInstanceOf[js.Any])
+    inline def setLeftButtonColor(value: Color): Self = StObject.set(x, "leftButtonColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftButtonColorUndefined: Self = StObject.set(x, "leftButtonColor", js.undefined)
+    inline def setLeftButtonColorUndefined: Self = StObject.set(x, "leftButtonColor", js.undefined)
     
-    @scala.inline
-    def setLeftButtonDisabledColor(value: Color): Self = StObject.set(x, "leftButtonDisabledColor", value.asInstanceOf[js.Any])
+    inline def setLeftButtonDisabledColor(value: Color): Self = StObject.set(x, "leftButtonDisabledColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftButtonDisabledColorUndefined: Self = StObject.set(x, "leftButtonDisabledColor", js.undefined)
+    inline def setLeftButtonDisabledColorUndefined: Self = StObject.set(x, "leftButtonDisabledColor", js.undefined)
     
-    @scala.inline
-    def setLeftButtons(value: js.Array[OptionsTopBarButton]): Self = StObject.set(x, "leftButtons", value.asInstanceOf[js.Any])
+    inline def setLeftButtons(value: js.Array[OptionsTopBarButton]): Self = StObject.set(x, "leftButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftButtonsUndefined: Self = StObject.set(x, "leftButtons", js.undefined)
+    inline def setLeftButtonsUndefined: Self = StObject.set(x, "leftButtons", js.undefined)
     
-    @scala.inline
-    def setLeftButtonsVarargs(value: OptionsTopBarButton*): Self = StObject.set(x, "leftButtons", js.Array(value :_*))
+    inline def setLeftButtonsVarargs(value: OptionsTopBarButton*): Self = StObject.set(x, "leftButtons", js.Array(value :_*))
     
-    @scala.inline
-    def setNoBorder(value: Boolean): Self = StObject.set(x, "noBorder", value.asInstanceOf[js.Any])
+    inline def setNoBorder(value: Boolean): Self = StObject.set(x, "noBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoBorderUndefined: Self = StObject.set(x, "noBorder", js.undefined)
+    inline def setNoBorderUndefined: Self = StObject.set(x, "noBorder", js.undefined)
     
-    @scala.inline
-    def setRightButtonColor(value: Color): Self = StObject.set(x, "rightButtonColor", value.asInstanceOf[js.Any])
+    inline def setRightButtonColor(value: Color): Self = StObject.set(x, "rightButtonColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightButtonColorUndefined: Self = StObject.set(x, "rightButtonColor", js.undefined)
+    inline def setRightButtonColorUndefined: Self = StObject.set(x, "rightButtonColor", js.undefined)
     
-    @scala.inline
-    def setRightButtonDisabledColor(value: Color): Self = StObject.set(x, "rightButtonDisabledColor", value.asInstanceOf[js.Any])
+    inline def setRightButtonDisabledColor(value: Color): Self = StObject.set(x, "rightButtonDisabledColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightButtonDisabledColorUndefined: Self = StObject.set(x, "rightButtonDisabledColor", js.undefined)
+    inline def setRightButtonDisabledColorUndefined: Self = StObject.set(x, "rightButtonDisabledColor", js.undefined)
     
-    @scala.inline
-    def setRightButtons(value: js.Array[OptionsTopBarButton]): Self = StObject.set(x, "rightButtons", value.asInstanceOf[js.Any])
+    inline def setRightButtons(value: js.Array[OptionsTopBarButton]): Self = StObject.set(x, "rightButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightButtonsUndefined: Self = StObject.set(x, "rightButtons", js.undefined)
+    inline def setRightButtonsUndefined: Self = StObject.set(x, "rightButtons", js.undefined)
     
-    @scala.inline
-    def setRightButtonsVarargs(value: OptionsTopBarButton*): Self = StObject.set(x, "rightButtons", js.Array(value :_*))
+    inline def setRightButtonsVarargs(value: OptionsTopBarButton*): Self = StObject.set(x, "rightButtons", js.Array(value :_*))
     
-    @scala.inline
-    def setScrollEdgeAppearance(value: OptionsTopBarScrollEdgeAppearance): Self = StObject.set(x, "scrollEdgeAppearance", value.asInstanceOf[js.Any])
+    inline def setScrollEdgeAppearance(value: OptionsTopBarScrollEdgeAppearance): Self = StObject.set(x, "scrollEdgeAppearance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollEdgeAppearanceUndefined: Self = StObject.set(x, "scrollEdgeAppearance", js.undefined)
+    inline def setScrollEdgeAppearanceUndefined: Self = StObject.set(x, "scrollEdgeAppearance", js.undefined)
     
-    @scala.inline
-    def setSearchBar(value: OptionsSearchBar): Self = StObject.set(x, "searchBar", value.asInstanceOf[js.Any])
+    inline def setSearchBar(value: OptionsSearchBar): Self = StObject.set(x, "searchBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchBarBackgroundColor(value: String): Self = StObject.set(x, "searchBarBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setSearchBarBackgroundColor(value: String): Self = StObject.set(x, "searchBarBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchBarBackgroundColorUndefined: Self = StObject.set(x, "searchBarBackgroundColor", js.undefined)
+    inline def setSearchBarBackgroundColorUndefined: Self = StObject.set(x, "searchBarBackgroundColor", js.undefined)
     
-    @scala.inline
-    def setSearchBarHiddenWhenScrolling(value: Boolean): Self = StObject.set(x, "searchBarHiddenWhenScrolling", value.asInstanceOf[js.Any])
+    inline def setSearchBarHiddenWhenScrolling(value: Boolean): Self = StObject.set(x, "searchBarHiddenWhenScrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchBarHiddenWhenScrollingUndefined: Self = StObject.set(x, "searchBarHiddenWhenScrolling", js.undefined)
+    inline def setSearchBarHiddenWhenScrollingUndefined: Self = StObject.set(x, "searchBarHiddenWhenScrolling", js.undefined)
     
-    @scala.inline
-    def setSearchBarPlaceholder(value: String): Self = StObject.set(x, "searchBarPlaceholder", value.asInstanceOf[js.Any])
+    inline def setSearchBarPlaceholder(value: String): Self = StObject.set(x, "searchBarPlaceholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchBarPlaceholderUndefined: Self = StObject.set(x, "searchBarPlaceholder", js.undefined)
+    inline def setSearchBarPlaceholderUndefined: Self = StObject.set(x, "searchBarPlaceholder", js.undefined)
     
-    @scala.inline
-    def setSearchBarTintColor(value: String): Self = StObject.set(x, "searchBarTintColor", value.asInstanceOf[js.Any])
+    inline def setSearchBarTintColor(value: String): Self = StObject.set(x, "searchBarTintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchBarTintColorUndefined: Self = StObject.set(x, "searchBarTintColor", js.undefined)
+    inline def setSearchBarTintColorUndefined: Self = StObject.set(x, "searchBarTintColor", js.undefined)
     
-    @scala.inline
-    def setSearchBarUndefined: Self = StObject.set(x, "searchBar", js.undefined)
+    inline def setSearchBarUndefined: Self = StObject.set(x, "searchBar", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: OptionsTopBarSubtitle): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: OptionsTopBarSubtitle): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    @scala.inline
-    def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
+    inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+    inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    @scala.inline
-    def setTitle(value: OptionsTopBarTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: OptionsTopBarTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTopMargin(value: Double): Self = StObject.set(x, "topMargin", value.asInstanceOf[js.Any])
+    inline def setTopMargin(value: Double): Self = StObject.set(x, "topMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopMarginUndefined: Self = StObject.set(x, "topMargin", js.undefined)
+    inline def setTopMarginUndefined: Self = StObject.set(x, "topMargin", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

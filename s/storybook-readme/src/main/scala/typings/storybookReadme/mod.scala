@@ -17,43 +17,33 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addFooter(md: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFooter")(md.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addFooter(md: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFooter")(md.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def addHeader(md: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addHeader")(md.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addHeader(md: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addHeader")(md.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("storybook-readme", "addReadme")
   @js.native
   val addReadme: MakeDecoratorResult = js.native
   
-  @scala.inline
-  def configureReadme(config: ConfigureReadmeConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureReadme")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configureReadme(config: ConfigureReadmeConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureReadme")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def doc(readme: String): RenderFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("doc")(readme.asInstanceOf[js.Any]).asInstanceOf[RenderFunction]
+  inline def doc(readme: String): RenderFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("doc")(readme.asInstanceOf[js.Any]).asInstanceOf[RenderFunction]
   
   object withDocs {
     
-    @scala.inline
-    def apply(custom: CustomComponents): js.Function1[/* readme */ Readme, HOCPattern] = ^.asInstanceOf[js.Dynamic].apply(custom.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* readme */ Readme, HOCPattern]]
-    @scala.inline
-    def apply(readme: Readme): DecoratorPattern = ^.asInstanceOf[js.Dynamic].apply(readme.asInstanceOf[js.Any]).asInstanceOf[DecoratorPattern]
-    @scala.inline
-    def apply(readme: Readme, story: RenderFunction): RenderFunction = (^.asInstanceOf[js.Dynamic].apply(readme.asInstanceOf[js.Any], story.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
+    inline def apply(custom: CustomComponents): js.Function1[/* readme */ Readme, HOCPattern] = ^.asInstanceOf[js.Dynamic].apply(custom.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* readme */ Readme, HOCPattern]]
+    inline def apply(readme: Readme): DecoratorPattern = ^.asInstanceOf[js.Dynamic].apply(readme.asInstanceOf[js.Any]).asInstanceOf[DecoratorPattern]
+    inline def apply(readme: Readme, story: RenderFunction): RenderFunction = (^.asInstanceOf[js.Dynamic].apply(readme.asInstanceOf[js.Any], story.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
     
     @JSImport("storybook-readme", "withDocs")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def addFooterDocs(footerDoc: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFooterDocs")(footerDoc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addFooterDocs(footerDoc: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFooterDocs")(footerDoc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def withReadme(readme: Readme): DecoratorPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("withReadme")(readme.asInstanceOf[js.Any]).asInstanceOf[DecoratorPattern]
-  @scala.inline
-  def withReadme(readme: Readme, story: RenderFunction): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("withReadme")(readme.asInstanceOf[js.Any], story.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
+  inline def withReadme(readme: Readme): DecoratorPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("withReadme")(readme.asInstanceOf[js.Any]).asInstanceOf[DecoratorPattern]
+  inline def withReadme(readme: Readme, story: RenderFunction): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("withReadme")(readme.asInstanceOf[js.Any], story.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
   
   trait ConfigureReadmeConfig extends StObject {
     
@@ -71,50 +61,36 @@ object mod {
   }
   object ConfigureReadmeConfig {
     
-    @scala.inline
-    def apply(): ConfigureReadmeConfig = {
+    inline def apply(): ConfigureReadmeConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigureReadmeConfig]
     }
     
-    @scala.inline
-    implicit class ConfigureReadmeConfigMutableBuilder[Self <: ConfigureReadmeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigureReadmeConfig](x: Self) {
       
-      @scala.inline
-      def setDocPreview(value: /* props */ Children => ReactNode): Self = StObject.set(x, "DocPreview", js.Any.fromFunction1(value))
+      inline def setDocPreview(value: /* props */ Children => ReactNode): Self = StObject.set(x, "DocPreview", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDocPreviewUndefined: Self = StObject.set(x, "DocPreview", js.undefined)
+      inline def setDocPreviewUndefined: Self = StObject.set(x, "DocPreview", js.undefined)
       
-      @scala.inline
-      def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterPreview(value: /* props */ Children => ReactNode): Self = StObject.set(x, "FooterPreview", js.Any.fromFunction1(value))
+      inline def setFooterPreview(value: /* props */ Children => ReactNode): Self = StObject.set(x, "FooterPreview", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFooterPreviewUndefined: Self = StObject.set(x, "FooterPreview", js.undefined)
+      inline def setFooterPreviewUndefined: Self = StObject.set(x, "FooterPreview", js.undefined)
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderPreview(value: /* props */ Children => ReactNode): Self = StObject.set(x, "HeaderPreview", js.Any.fromFunction1(value))
+      inline def setHeaderPreview(value: /* props */ Children => ReactNode): Self = StObject.set(x, "HeaderPreview", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeaderPreviewUndefined: Self = StObject.set(x, "HeaderPreview", js.undefined)
+      inline def setHeaderPreviewUndefined: Self = StObject.set(x, "HeaderPreview", js.undefined)
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setStoryPreview(value: /* props */ Children => ReactNode): Self = StObject.set(x, "StoryPreview", js.Any.fromFunction1(value))
+      inline def setStoryPreview(value: /* props */ Children => ReactNode): Self = StObject.set(x, "StoryPreview", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStoryPreviewUndefined: Self = StObject.set(x, "StoryPreview", js.undefined)
+      inline def setStoryPreviewUndefined: Self = StObject.set(x, "StoryPreview", js.undefined)
     }
   }
   
@@ -126,26 +102,20 @@ object mod {
   }
   object CustomComponents {
     
-    @scala.inline
-    def apply(): CustomComponents = {
+    inline def apply(): CustomComponents = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomComponents]
     }
     
-    @scala.inline
-    implicit class CustomComponentsMutableBuilder[Self <: CustomComponents] (val x: Self) extends AnyVal {
+    extension [Self <: CustomComponents](x: Self) {
       
-      @scala.inline
-      def setFooterComponent(value: /* props */ ChildrenElement => Element): Self = StObject.set(x, "FooterComponent", js.Any.fromFunction1(value))
+      inline def setFooterComponent(value: /* props */ ChildrenElement => Element): Self = StObject.set(x, "FooterComponent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFooterComponentUndefined: Self = StObject.set(x, "FooterComponent", js.undefined)
+      inline def setFooterComponentUndefined: Self = StObject.set(x, "FooterComponent", js.undefined)
       
-      @scala.inline
-      def setPreviewComponent(value: /* props */ ChildrenElement => Element): Self = StObject.set(x, "PreviewComponent", js.Any.fromFunction1(value))
+      inline def setPreviewComponent(value: /* props */ ChildrenElement => Element): Self = StObject.set(x, "PreviewComponent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreviewComponentUndefined: Self = StObject.set(x, "PreviewComponent", js.undefined)
+      inline def setPreviewComponentUndefined: Self = StObject.set(x, "PreviewComponent", js.undefined)
     }
   }
   

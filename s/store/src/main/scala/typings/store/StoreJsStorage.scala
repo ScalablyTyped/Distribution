@@ -20,8 +20,7 @@ trait StoreJsStorage extends StObject {
 }
 object StoreJsStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearAll: () => Unit,
     each: js.Function2[/* val */ String, /* key */ String, js.Any] => Unit,
     name: String,
@@ -33,25 +32,18 @@ object StoreJsStorage {
     __obj.asInstanceOf[StoreJsStorage]
   }
   
-  @scala.inline
-  implicit class StoreJsStorageMutableBuilder[Self <: StoreJsStorage] (val x: Self) extends AnyVal {
+  extension [Self <: StoreJsStorage](x: Self) {
     
-    @scala.inline
-    def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
+    inline def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEach(value: js.Function2[/* val */ String, /* key */ String, js.Any] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
+    inline def setEach(value: js.Function2[/* val */ String, /* key */ String, js.Any] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: String => String | Null): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: String => String | Null): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrite(value: (String, String) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
+    inline def setWrite(value: (String, String) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
   }
 }

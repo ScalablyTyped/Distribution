@@ -18,22 +18,17 @@ trait UnfulfilledConsumable extends StObject {
 }
 object UnfulfilledConsumable {
   
-  @scala.inline
-  def apply(offerId: String, productId: String, transactionId: String): UnfulfilledConsumable = {
+  inline def apply(offerId: String, productId: String, transactionId: String): UnfulfilledConsumable = {
     val __obj = js.Dynamic.literal(offerId = offerId.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], transactionId = transactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnfulfilledConsumable]
   }
   
-  @scala.inline
-  implicit class UnfulfilledConsumableMutableBuilder[Self <: UnfulfilledConsumable] (val x: Self) extends AnyVal {
+  extension [Self <: UnfulfilledConsumable](x: Self) {
     
-    @scala.inline
-    def setOfferId(value: String): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
+    inline def setOfferId(value: String): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
   }
 }

@@ -13,76 +13,65 @@ object eurekaJsClientStrings {
   sealed trait ADDED
     extends StObject
        with ActionType
-  @scala.inline
-  def ADDED: ADDED = "ADDED".asInstanceOf[ADDED]
+  inline def ADDED: ADDED = "ADDED".asInstanceOf[ADDED]
   
   @js.native
   sealed trait Amazon
     extends StObject
        with DataCenterName
-  @scala.inline
-  def Amazon: Amazon = "Amazon".asInstanceOf[Amazon]
+  inline def Amazon: Amazon = "Amazon".asInstanceOf[Amazon]
   
   @js.native
   sealed trait DELETED
     extends StObject
        with ActionType
-  @scala.inline
-  def DELETED: DELETED = "DELETED".asInstanceOf[DELETED]
+  inline def DELETED: DELETED = "DELETED".asInstanceOf[DELETED]
   
   @js.native
   sealed trait DOWN
     extends StObject
        with InstanceStatus
-  @scala.inline
-  def DOWN: DOWN = "DOWN".asInstanceOf[DOWN]
+  inline def DOWN: DOWN = "DOWN".asInstanceOf[DOWN]
   
   @js.native
   sealed trait MODIFIED
     extends StObject
        with ActionType
-  @scala.inline
-  def MODIFIED: MODIFIED = "MODIFIED".asInstanceOf[MODIFIED]
+  inline def MODIFIED: MODIFIED = "MODIFIED".asInstanceOf[MODIFIED]
   
   @js.native
   sealed trait MyOwn
     extends StObject
        with DataCenterName
-  @scala.inline
-  def MyOwn: MyOwn = "MyOwn".asInstanceOf[MyOwn]
+  inline def MyOwn: MyOwn = "MyOwn".asInstanceOf[MyOwn]
   
   @js.native
   sealed trait Netflix
     extends StObject
        with DataCenterName
-  @scala.inline
-  def Netflix: Netflix = "Netflix".asInstanceOf[Netflix]
+  inline def Netflix: Netflix = "Netflix".asInstanceOf[Netflix]
   
   @js.native
   sealed trait OUT_OF_SERVICE
     extends StObject
        with InstanceStatus
-  @scala.inline
-  def OUT_OF_SERVICE: OUT_OF_SERVICE = "OUT_OF_SERVICE".asInstanceOf[OUT_OF_SERVICE]
+  inline def OUT_OF_SERVICE: OUT_OF_SERVICE = "OUT_OF_SERVICE".asInstanceOf[OUT_OF_SERVICE]
   
   @js.native
   sealed trait STARTING
     extends StObject
        with InstanceStatus
-  @scala.inline
-  def STARTING: STARTING = "STARTING".asInstanceOf[STARTING]
+  inline def STARTING: STARTING = "STARTING".asInstanceOf[STARTING]
   
   @js.native
   sealed trait UNKNOWN
     extends StObject
        with InstanceStatus
-  @scala.inline
-  def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
+  inline def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
   @js.native
   sealed trait UP
     extends StObject
        with InstanceStatus
-  @scala.inline
-  def UP: UP = "UP".asInstanceOf[UP]
+  inline def UP: UP = "UP".asInstanceOf[UP]
 }

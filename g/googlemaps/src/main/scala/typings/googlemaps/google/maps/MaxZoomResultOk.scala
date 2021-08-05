@@ -28,19 +28,15 @@ trait MaxZoomResultOk
 }
 object MaxZoomResultOk {
   
-  @scala.inline
-  def apply(status: OK, zoom: Double): MaxZoomResultOk = {
+  inline def apply(status: OK, zoom: Double): MaxZoomResultOk = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxZoomResultOk]
   }
   
-  @scala.inline
-  implicit class MaxZoomResultOkMutableBuilder[Self <: MaxZoomResultOk] (val x: Self) extends AnyVal {
+  extension [Self <: MaxZoomResultOk](x: Self) {
     
-    @scala.inline
-    def setStatus(value: OK): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OK): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

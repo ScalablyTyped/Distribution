@@ -14,16 +14,13 @@ trait ITheme
 }
 object ITheme {
   
-  @scala.inline
-  def apply(): ITheme = {
+  inline def apply(): ITheme = {
     val __obj = js.Dynamic.literal(last = 0)
     __obj.asInstanceOf[ITheme]
   }
   
-  @scala.inline
-  implicit class IThemeMutableBuilder[Self <: ITheme] (val x: Self) extends AnyVal {
+  extension [Self <: ITheme](x: Self) {
     
-    @scala.inline
-    def setLast(value: `0`): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: `0`): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
   }
 }

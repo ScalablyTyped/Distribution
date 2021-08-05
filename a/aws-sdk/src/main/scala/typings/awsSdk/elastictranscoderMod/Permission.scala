@@ -23,34 +23,25 @@ trait Permission extends StObject {
 }
 object Permission {
   
-  @scala.inline
-  def apply(): Permission = {
+  inline def apply(): Permission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Permission]
   }
   
-  @scala.inline
-  implicit class PermissionMutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
+  extension [Self <: Permission](x: Self) {
     
-    @scala.inline
-    def setAccess(value: AccessControls): Self = StObject.set(x, "Access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: AccessControls): Self = StObject.set(x, "Access", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessUndefined: Self = StObject.set(x, "Access", js.undefined)
+    inline def setAccessUndefined: Self = StObject.set(x, "Access", js.undefined)
     
-    @scala.inline
-    def setAccessVarargs(value: AccessControl*): Self = StObject.set(x, "Access", js.Array(value :_*))
+    inline def setAccessVarargs(value: AccessControl*): Self = StObject.set(x, "Access", js.Array(value :_*))
     
-    @scala.inline
-    def setGrantee(value: Grantee): Self = StObject.set(x, "Grantee", value.asInstanceOf[js.Any])
+    inline def setGrantee(value: Grantee): Self = StObject.set(x, "Grantee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranteeType(value: GranteeType): Self = StObject.set(x, "GranteeType", value.asInstanceOf[js.Any])
+    inline def setGranteeType(value: GranteeType): Self = StObject.set(x, "GranteeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranteeTypeUndefined: Self = StObject.set(x, "GranteeType", js.undefined)
+    inline def setGranteeTypeUndefined: Self = StObject.set(x, "GranteeType", js.undefined)
     
-    @scala.inline
-    def setGranteeUndefined: Self = StObject.set(x, "Grantee", js.undefined)
+    inline def setGranteeUndefined: Self = StObject.set(x, "Grantee", js.undefined)
   }
 }

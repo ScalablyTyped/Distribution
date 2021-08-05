@@ -23,56 +23,40 @@ object anon {
   }
   object CacheMaxAge {
     
-    @scala.inline
-    def apply(): CacheMaxAge = {
+    inline def apply(): CacheMaxAge = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CacheMaxAge]
     }
     
-    @scala.inline
-    implicit class CacheMaxAgeMutableBuilder[Self <: CacheMaxAge] (val x: Self) extends AnyVal {
+    extension [Self <: CacheMaxAge](x: Self) {
       
-      @scala.inline
-      def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
+      inline def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheMaxAgeUndefined: Self = StObject.set(x, "cacheMaxAge", js.undefined)
+      inline def setCacheMaxAgeUndefined: Self = StObject.set(x, "cacheMaxAge", js.undefined)
       
-      @scala.inline
-      def setRequestHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+      inline def setRequestHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+      inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
       
-      @scala.inline
-      def setResponseHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+      inline def setResponseHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
+      inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
       
-      @scala.inline
-      def setSupportsCredentials(value: Boolean): Self = StObject.set(x, "supportsCredentials", value.asInstanceOf[js.Any])
+      inline def setSupportsCredentials(value: Boolean): Self = StObject.set(x, "supportsCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsCredentialsUndefined: Self = StObject.set(x, "supportsCredentials", js.undefined)
+      inline def setSupportsCredentialsUndefined: Self = StObject.set(x, "supportsCredentials", js.undefined)
       
-      @scala.inline
-      def setValidMethods(value: js.Array[String]): Self = StObject.set(x, "validMethods", value.asInstanceOf[js.Any])
+      inline def setValidMethods(value: js.Array[String]): Self = StObject.set(x, "validMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidMethodsUndefined: Self = StObject.set(x, "validMethods", js.undefined)
+      inline def setValidMethodsUndefined: Self = StObject.set(x, "validMethods", js.undefined)
       
-      @scala.inline
-      def setValidMethodsVarargs(value: String*): Self = StObject.set(x, "validMethods", js.Array(value :_*))
+      inline def setValidMethodsVarargs(value: String*): Self = StObject.set(x, "validMethods", js.Array(value :_*))
       
-      @scala.inline
-      def setValidOrigins(value: js.Array[String]): Self = StObject.set(x, "validOrigins", value.asInstanceOf[js.Any])
+      inline def setValidOrigins(value: js.Array[String]): Self = StObject.set(x, "validOrigins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidOriginsUndefined: Self = StObject.set(x, "validOrigins", js.undefined)
+      inline def setValidOriginsUndefined: Self = StObject.set(x, "validOrigins", js.undefined)
       
-      @scala.inline
-      def setValidOriginsVarargs(value: String*): Self = StObject.set(x, "validOrigins", js.Array(value :_*))
+      inline def setValidOriginsVarargs(value: String*): Self = StObject.set(x, "validOrigins", js.Array(value :_*))
     }
   }
 }

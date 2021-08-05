@@ -14,19 +14,15 @@ trait CustomSVGSeriesPoint
 }
 object CustomSVGSeriesPoint {
   
-  @scala.inline
-  def apply(x: Double, y: Double): CustomSVGSeriesPoint = {
+  inline def apply(x: Double, y: Double): CustomSVGSeriesPoint = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomSVGSeriesPoint]
   }
   
-  @scala.inline
-  implicit class CustomSVGSeriesPointMutableBuilder[Self <: CustomSVGSeriesPoint] (val x: Self) extends AnyVal {
+  extension [Self <: CustomSVGSeriesPoint](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

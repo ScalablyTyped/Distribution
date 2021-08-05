@@ -72,8 +72,7 @@ trait MemoryInfo extends StObject {
 }
 object MemoryInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active_defrag_running: Flag,
     allocator_active: String,
     allocator_allocated: String,
@@ -111,103 +110,70 @@ object MemoryInfo {
     __obj.asInstanceOf[MemoryInfo]
   }
   
-  @scala.inline
-  implicit class MemoryInfoMutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryInfo](x: Self) {
     
-    @scala.inline
-    def setActive_defrag_running(value: Flag): Self = StObject.set(x, "active_defrag_running", value.asInstanceOf[js.Any])
+    inline def setActive_defrag_running(value: Flag): Self = StObject.set(x, "active_defrag_running", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocator_active(value: String): Self = StObject.set(x, "allocator_active", value.asInstanceOf[js.Any])
+    inline def setAllocator_active(value: String): Self = StObject.set(x, "allocator_active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocator_allocated(value: String): Self = StObject.set(x, "allocator_allocated", value.asInstanceOf[js.Any])
+    inline def setAllocator_allocated(value: String): Self = StObject.set(x, "allocator_allocated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocator_frag_bytes(value: String): Self = StObject.set(x, "allocator_frag_bytes", value.asInstanceOf[js.Any])
+    inline def setAllocator_frag_bytes(value: String): Self = StObject.set(x, "allocator_frag_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocator_frag_ratio(value: String): Self = StObject.set(x, "allocator_frag_ratio", value.asInstanceOf[js.Any])
+    inline def setAllocator_frag_ratio(value: String): Self = StObject.set(x, "allocator_frag_ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocator_resident(value: String): Self = StObject.set(x, "allocator_resident", value.asInstanceOf[js.Any])
+    inline def setAllocator_resident(value: String): Self = StObject.set(x, "allocator_resident", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocator_rss_bytes(value: String): Self = StObject.set(x, "allocator_rss_bytes", value.asInstanceOf[js.Any])
+    inline def setAllocator_rss_bytes(value: String): Self = StObject.set(x, "allocator_rss_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocator_rss_ratio(value: String): Self = StObject.set(x, "allocator_rss_ratio", value.asInstanceOf[js.Any])
+    inline def setAllocator_rss_ratio(value: String): Self = StObject.set(x, "allocator_rss_ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLazyfree_pending_objects(value: String): Self = StObject.set(x, "lazyfree_pending_objects", value.asInstanceOf[js.Any])
+    inline def setLazyfree_pending_objects(value: String): Self = StObject.set(x, "lazyfree_pending_objects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxmemory(value: String): Self = StObject.set(x, "maxmemory", value.asInstanceOf[js.Any])
+    inline def setMaxmemory(value: String): Self = StObject.set(x, "maxmemory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxmemory_human(value: String): Self = StObject.set(x, "maxmemory_human", value.asInstanceOf[js.Any])
+    inline def setMaxmemory_human(value: String): Self = StObject.set(x, "maxmemory_human", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxmemory_policy(value: String): Self = StObject.set(x, "maxmemory_policy", value.asInstanceOf[js.Any])
+    inline def setMaxmemory_policy(value: String): Self = StObject.set(x, "maxmemory_policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMem_allocator(value: String): Self = StObject.set(x, "mem_allocator", value.asInstanceOf[js.Any])
+    inline def setMem_allocator(value: String): Self = StObject.set(x, "mem_allocator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMem_fragmentation_bytes(value: String): Self = StObject.set(x, "mem_fragmentation_bytes", value.asInstanceOf[js.Any])
+    inline def setMem_fragmentation_bytes(value: String): Self = StObject.set(x, "mem_fragmentation_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMem_fragmentation_ratio(value: String): Self = StObject.set(x, "mem_fragmentation_ratio", value.asInstanceOf[js.Any])
+    inline def setMem_fragmentation_ratio(value: String): Self = StObject.set(x, "mem_fragmentation_ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRss_overhead_bytes(value: String): Self = StObject.set(x, "rss_overhead_bytes", value.asInstanceOf[js.Any])
+    inline def setRss_overhead_bytes(value: String): Self = StObject.set(x, "rss_overhead_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRss_overhead_ratio(value: String): Self = StObject.set(x, "rss_overhead_ratio", value.asInstanceOf[js.Any])
+    inline def setRss_overhead_ratio(value: String): Self = StObject.set(x, "rss_overhead_ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_system_memory(value: String): Self = StObject.set(x, "total_system_memory", value.asInstanceOf[js.Any])
+    inline def setTotal_system_memory(value: String): Self = StObject.set(x, "total_system_memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_system_memory_human(value: String): Self = StObject.set(x, "total_system_memory_human", value.asInstanceOf[js.Any])
+    inline def setTotal_system_memory_human(value: String): Self = StObject.set(x, "total_system_memory_human", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_memory(value: String): Self = StObject.set(x, "used_memory", value.asInstanceOf[js.Any])
+    inline def setUsed_memory(value: String): Self = StObject.set(x, "used_memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_memory_dataset(value: String): Self = StObject.set(x, "used_memory_dataset", value.asInstanceOf[js.Any])
+    inline def setUsed_memory_dataset(value: String): Self = StObject.set(x, "used_memory_dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_memory_dataset_perc(value: String): Self = StObject.set(x, "used_memory_dataset_perc", value.asInstanceOf[js.Any])
+    inline def setUsed_memory_dataset_perc(value: String): Self = StObject.set(x, "used_memory_dataset_perc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_memory_human(value: String): Self = StObject.set(x, "used_memory_human", value.asInstanceOf[js.Any])
+    inline def setUsed_memory_human(value: String): Self = StObject.set(x, "used_memory_human", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_memory_lua(value: String): Self = StObject.set(x, "used_memory_lua", value.asInstanceOf[js.Any])
+    inline def setUsed_memory_lua(value: String): Self = StObject.set(x, "used_memory_lua", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_memory_lua_human(value: String): Self = StObject.set(x, "used_memory_lua_human", value.asInstanceOf[js.Any])
+    inline def setUsed_memory_lua_human(value: String): Self = StObject.set(x, "used_memory_lua_human", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_memory_overhead(value: String): Self = StObject.set(x, "used_memory_overhead", value.asInstanceOf[js.Any])
+    inline def setUsed_memory_overhead(value: String): Self = StObject.set(x, "used_memory_overhead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_memory_peak(value: String): Self = StObject.set(x, "used_memory_peak", value.asInstanceOf[js.Any])
+    inline def setUsed_memory_peak(value: String): Self = StObject.set(x, "used_memory_peak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_memory_peak_human(value: String): Self = StObject.set(x, "used_memory_peak_human", value.asInstanceOf[js.Any])
+    inline def setUsed_memory_peak_human(value: String): Self = StObject.set(x, "used_memory_peak_human", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_memory_peak_perc(value: String): Self = StObject.set(x, "used_memory_peak_perc", value.asInstanceOf[js.Any])
+    inline def setUsed_memory_peak_perc(value: String): Self = StObject.set(x, "used_memory_peak_perc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_memory_rss(value: String): Self = StObject.set(x, "used_memory_rss", value.asInstanceOf[js.Any])
+    inline def setUsed_memory_rss(value: String): Self = StObject.set(x, "used_memory_rss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_memory_rss_human(value: String): Self = StObject.set(x, "used_memory_rss_human", value.asInstanceOf[js.Any])
+    inline def setUsed_memory_rss_human(value: String): Self = StObject.set(x, "used_memory_rss_human", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_memory_startup(value: String): Self = StObject.set(x, "used_memory_startup", value.asInstanceOf[js.Any])
+    inline def setUsed_memory_startup(value: String): Self = StObject.set(x, "used_memory_startup", value.asInstanceOf[js.Any])
   }
 }

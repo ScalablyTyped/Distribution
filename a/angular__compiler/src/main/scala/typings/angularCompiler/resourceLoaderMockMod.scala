@@ -11,13 +11,13 @@ object resourceLoaderMockMod {
   @js.native
   class MockResourceLoader () extends ResourceLoader {
     
-    var _definitions: js.Any = js.native
+    /* private */ var _definitions: js.Any = js.native
     
-    var _expectations: js.Any = js.native
+    /* private */ var _expectations: js.Any = js.native
     
-    var _processRequest: js.Any = js.native
+    /* private */ var _processRequest: js.Any = js.native
     
-    var _requests: js.Any = js.native
+    /* private */ var _requests: js.Any = js.native
     
     /**
       * Add an expectation for the given URL. Incoming requests will be checked against

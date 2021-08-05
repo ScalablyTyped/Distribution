@@ -10,16 +10,13 @@ trait Start extends StObject {
 }
 object Start {
   
-  @scala.inline
-  def apply(start: String): Start = {
+  inline def apply(start: String): Start = {
     val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Start]
   }
   
-  @scala.inline
-  implicit class StartMutableBuilder[Self <: Start] (val x: Self) extends AnyVal {
+  extension [Self <: Start](x: Self) {
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

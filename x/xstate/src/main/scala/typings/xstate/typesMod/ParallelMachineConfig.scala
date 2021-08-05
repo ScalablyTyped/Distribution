@@ -17,22 +17,17 @@ trait ParallelMachineConfig[TContext, TStateSchema /* <: StateSchema[js.Any] */,
 }
 object ParallelMachineConfig {
   
-  @scala.inline
-  def apply[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](initial: Unit): ParallelMachineConfig[TContext, TStateSchema, TEvent] = {
+  inline def apply[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](initial: Unit): ParallelMachineConfig[TContext, TStateSchema, TEvent] = {
     val __obj = js.Dynamic.literal(initial = initial.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallelMachineConfig[TContext, TStateSchema, TEvent]]
   }
   
-  @scala.inline
-  implicit class ParallelMachineConfigMutableBuilder[Self <: ParallelMachineConfig[?, ?, ?], TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */] (val x: Self & (ParallelMachineConfig[TContext, TStateSchema, TEvent])) extends AnyVal {
+  extension [Self <: ParallelMachineConfig[?, ?, ?], TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](x: Self & (ParallelMachineConfig[TContext, TStateSchema, TEvent])) {
     
-    @scala.inline
-    def setInitial(value: Unit): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+    inline def setInitial(value: Unit): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: parallel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: parallel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

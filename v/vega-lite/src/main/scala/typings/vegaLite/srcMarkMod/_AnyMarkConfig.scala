@@ -9,32 +9,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _AnyMarkConfig[ES /* <: ExprRef | SignalRef */] extends StObject
 object _AnyMarkConfig {
   
-  @scala.inline
-  def AreaConfig[ES /* <: ExprRef | SignalRef */](): typings.vegaLite.srcMarkMod.AreaConfig[ES] = {
+  inline def AreaConfig[ES /* <: ExprRef | SignalRef */](): typings.vegaLite.srcMarkMod.AreaConfig[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.vegaLite.srcMarkMod.AreaConfig[ES]]
   }
   
-  @scala.inline
-  def BarConfig[ES /* <: ExprRef | SignalRef */](): typings.vegaLite.srcMarkMod.BarConfig[ES] = {
+  inline def BarConfig[ES /* <: ExprRef | SignalRef */](): typings.vegaLite.srcMarkMod.BarConfig[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.vegaLite.srcMarkMod.BarConfig[ES]]
   }
   
-  @scala.inline
-  def LineConfig[ES /* <: ExprRef | SignalRef */](): typings.vegaLite.srcMarkMod.LineConfig[ES] = {
+  inline def LineConfig[ES /* <: ExprRef | SignalRef */](): typings.vegaLite.srcMarkMod.LineConfig[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.vegaLite.srcMarkMod.LineConfig[ES]]
   }
   
-  @scala.inline
-  def RectConfig[ES /* <: ExprRef | SignalRef */](): typings.vegaLite.srcMarkMod.RectConfig[ES] = {
+  inline def RectConfig[ES /* <: ExprRef | SignalRef */](): typings.vegaLite.srcMarkMod.RectConfig[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.vegaLite.srcMarkMod.RectConfig[ES]]
   }
   
-  @scala.inline
-  def TickConfig[ES /* <: ExprRef | SignalRef */](): typings.vegaLite.srcMarkMod.TickConfig[ES] = {
+  inline def TickConfig[ES /* <: ExprRef | SignalRef */](): typings.vegaLite.srcMarkMod.TickConfig[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.vegaLite.srcMarkMod.TickConfig[ES]]
   }

@@ -31,8 +31,7 @@ trait INxLibraryDimensionDef extends StObject {
 }
 object INxLibraryDimensionDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qFieldDefs: js.Array[String],
     qFieldLabels: js.Array[String],
     qGrouping: NxGrpType,
@@ -42,25 +41,18 @@ object INxLibraryDimensionDef {
     __obj.asInstanceOf[INxLibraryDimensionDef]
   }
   
-  @scala.inline
-  implicit class INxLibraryDimensionDefMutableBuilder[Self <: INxLibraryDimensionDef] (val x: Self) extends AnyVal {
+  extension [Self <: INxLibraryDimensionDef](x: Self) {
     
-    @scala.inline
-    def setQFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qFieldDefs", value.asInstanceOf[js.Any])
+    inline def setQFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qFieldDefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldDefsVarargs(value: String*): Self = StObject.set(x, "qFieldDefs", js.Array(value :_*))
+    inline def setQFieldDefsVarargs(value: String*): Self = StObject.set(x, "qFieldDefs", js.Array(value :_*))
     
-    @scala.inline
-    def setQFieldLabels(value: js.Array[String]): Self = StObject.set(x, "qFieldLabels", value.asInstanceOf[js.Any])
+    inline def setQFieldLabels(value: js.Array[String]): Self = StObject.set(x, "qFieldLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldLabelsVarargs(value: String*): Self = StObject.set(x, "qFieldLabels", js.Array(value :_*))
+    inline def setQFieldLabelsVarargs(value: String*): Self = StObject.set(x, "qFieldLabels", js.Array(value :_*))
     
-    @scala.inline
-    def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
+    inline def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLabelExpression(value: String): Self = StObject.set(x, "qLabelExpression", value.asInstanceOf[js.Any])
+    inline def setQLabelExpression(value: String): Self = StObject.set(x, "qLabelExpression", value.asInstanceOf[js.Any])
   }
 }

@@ -29,49 +29,35 @@ trait CarrierRate extends StObject {
 }
 object CarrierRate {
   
-  @scala.inline
-  def apply(): CarrierRate = {
+  inline def apply(): CarrierRate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CarrierRate]
   }
   
-  @scala.inline
-  implicit class CarrierRateMutableBuilder[Self <: CarrierRate] (val x: Self) extends AnyVal {
+  extension [Self <: CarrierRate](x: Self) {
     
-    @scala.inline
-    def setCarrierName(value: String): Self = StObject.set(x, "carrierName", value.asInstanceOf[js.Any])
+    inline def setCarrierName(value: String): Self = StObject.set(x, "carrierName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierNameUndefined: Self = StObject.set(x, "carrierName", js.undefined)
+    inline def setCarrierNameUndefined: Self = StObject.set(x, "carrierName", js.undefined)
     
-    @scala.inline
-    def setCarrierService(value: String): Self = StObject.set(x, "carrierService", value.asInstanceOf[js.Any])
+    inline def setCarrierService(value: String): Self = StObject.set(x, "carrierService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierServiceUndefined: Self = StObject.set(x, "carrierService", js.undefined)
+    inline def setCarrierServiceUndefined: Self = StObject.set(x, "carrierService", js.undefined)
     
-    @scala.inline
-    def setFlatAdjustment(value: Price): Self = StObject.set(x, "flatAdjustment", value.asInstanceOf[js.Any])
+    inline def setFlatAdjustment(value: Price): Self = StObject.set(x, "flatAdjustment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatAdjustmentUndefined: Self = StObject.set(x, "flatAdjustment", js.undefined)
+    inline def setFlatAdjustmentUndefined: Self = StObject.set(x, "flatAdjustment", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOriginPostalCode(value: String): Self = StObject.set(x, "originPostalCode", value.asInstanceOf[js.Any])
+    inline def setOriginPostalCode(value: String): Self = StObject.set(x, "originPostalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginPostalCodeUndefined: Self = StObject.set(x, "originPostalCode", js.undefined)
+    inline def setOriginPostalCodeUndefined: Self = StObject.set(x, "originPostalCode", js.undefined)
     
-    @scala.inline
-    def setPercentageAdjustment(value: String): Self = StObject.set(x, "percentageAdjustment", value.asInstanceOf[js.Any])
+    inline def setPercentageAdjustment(value: String): Self = StObject.set(x, "percentageAdjustment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageAdjustmentUndefined: Self = StObject.set(x, "percentageAdjustment", js.undefined)
+    inline def setPercentageAdjustmentUndefined: Self = StObject.set(x, "percentageAdjustment", js.undefined)
   }
 }

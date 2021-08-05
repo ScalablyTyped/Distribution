@@ -15,11 +15,11 @@ object observerMergeObserverMod {
   class MergeObserver protected () extends Observer {
     def this(currentObserver: IObserver, maxConcurrent: Double, groupDisposable: GroupDisposable) = this()
     
-    var _groupDisposable: js.Any = js.native
+    /* private */ var _groupDisposable: js.Any = js.native
     
     /* private */ def _isNotReachMaxConcurrent(): js.Any = js.native
     
-    var _maxConcurrent: js.Any = js.native
+    /* private */ var _maxConcurrent: js.Any = js.native
     
     var activeCount: Double = js.native
     
@@ -38,7 +38,6 @@ object observerMergeObserverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(currentObserver: IObserver, maxConcurrent: Double, groupDisposable: GroupDisposable): MergeObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], maxConcurrent.asInstanceOf[js.Any], groupDisposable.asInstanceOf[js.Any])).asInstanceOf[MergeObserver]
+    inline def create(currentObserver: IObserver, maxConcurrent: Double, groupDisposable: GroupDisposable): MergeObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], maxConcurrent.asInstanceOf[js.Any], groupDisposable.asInstanceOf[js.Any])).asInstanceOf[MergeObserver]
   }
 }

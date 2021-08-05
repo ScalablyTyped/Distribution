@@ -23,37 +23,27 @@ trait DescribeVpcEndpointServicesResult extends StObject {
 }
 object DescribeVpcEndpointServicesResult {
   
-  @scala.inline
-  def apply(): DescribeVpcEndpointServicesResult = {
+  inline def apply(): DescribeVpcEndpointServicesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVpcEndpointServicesResult]
   }
   
-  @scala.inline
-  implicit class DescribeVpcEndpointServicesResultMutableBuilder[Self <: DescribeVpcEndpointServicesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVpcEndpointServicesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setServiceDetails(value: ServiceDetailSet): Self = StObject.set(x, "ServiceDetails", value.asInstanceOf[js.Any])
+    inline def setServiceDetails(value: ServiceDetailSet): Self = StObject.set(x, "ServiceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceDetailsUndefined: Self = StObject.set(x, "ServiceDetails", js.undefined)
+    inline def setServiceDetailsUndefined: Self = StObject.set(x, "ServiceDetails", js.undefined)
     
-    @scala.inline
-    def setServiceDetailsVarargs(value: ServiceDetail*): Self = StObject.set(x, "ServiceDetails", js.Array(value :_*))
+    inline def setServiceDetailsVarargs(value: ServiceDetail*): Self = StObject.set(x, "ServiceDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceNames(value: ValueStringList): Self = StObject.set(x, "ServiceNames", value.asInstanceOf[js.Any])
+    inline def setServiceNames(value: ValueStringList): Self = StObject.set(x, "ServiceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamesUndefined: Self = StObject.set(x, "ServiceNames", js.undefined)
+    inline def setServiceNamesUndefined: Self = StObject.set(x, "ServiceNames", js.undefined)
     
-    @scala.inline
-    def setServiceNamesVarargs(value: String*): Self = StObject.set(x, "ServiceNames", js.Array(value :_*))
+    inline def setServiceNamesVarargs(value: String*): Self = StObject.set(x, "ServiceNames", js.Array(value :_*))
   }
 }

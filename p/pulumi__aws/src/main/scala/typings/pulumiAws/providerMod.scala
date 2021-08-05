@@ -39,8 +39,7 @@ object providerMod {
       * Returns true if the given object is an instance of Provider.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/provider.Provider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/provider.Provider */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/provider.Provider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/provider.Provider */ Boolean]
   }
   
   trait ProviderArgs extends StObject {
@@ -131,137 +130,94 @@ object providerMod {
   }
   object ProviderArgs {
     
-    @scala.inline
-    def apply(): ProviderArgs = {
+    inline def apply(): ProviderArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProviderArgs]
     }
     
-    @scala.inline
-    implicit class ProviderArgsMutableBuilder[Self <: ProviderArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderArgs](x: Self) {
       
-      @scala.inline
-      def setAccessKey(value: Input[String]): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      inline def setAccessKey(value: Input[String]): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+      inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      @scala.inline
-      def setAllowedAccountIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedAccountIds", value.asInstanceOf[js.Any])
+      inline def setAllowedAccountIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedAccountIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedAccountIdsUndefined: Self = StObject.set(x, "allowedAccountIds", js.undefined)
+      inline def setAllowedAccountIdsUndefined: Self = StObject.set(x, "allowedAccountIds", js.undefined)
       
-      @scala.inline
-      def setAllowedAccountIdsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedAccountIds", js.Array(value :_*))
+      inline def setAllowedAccountIdsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedAccountIds", js.Array(value :_*))
       
-      @scala.inline
-      def setAssumeRole(value: Input[ProviderAssumeRole]): Self = StObject.set(x, "assumeRole", value.asInstanceOf[js.Any])
+      inline def setAssumeRole(value: Input[ProviderAssumeRole]): Self = StObject.set(x, "assumeRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssumeRoleUndefined: Self = StObject.set(x, "assumeRole", js.undefined)
+      inline def setAssumeRoleUndefined: Self = StObject.set(x, "assumeRole", js.undefined)
       
-      @scala.inline
-      def setEndpoints(value: Input[js.Array[Input[ProviderEndpoint]]]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+      inline def setEndpoints(value: Input[js.Array[Input[ProviderEndpoint]]]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
+      inline def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
       
-      @scala.inline
-      def setEndpointsVarargs(value: Input[ProviderEndpoint]*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: Input[ProviderEndpoint]*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setForbiddenAccountIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "forbiddenAccountIds", value.asInstanceOf[js.Any])
+      inline def setForbiddenAccountIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "forbiddenAccountIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForbiddenAccountIdsUndefined: Self = StObject.set(x, "forbiddenAccountIds", js.undefined)
+      inline def setForbiddenAccountIdsUndefined: Self = StObject.set(x, "forbiddenAccountIds", js.undefined)
       
-      @scala.inline
-      def setForbiddenAccountIdsVarargs(value: Input[String]*): Self = StObject.set(x, "forbiddenAccountIds", js.Array(value :_*))
+      inline def setForbiddenAccountIdsVarargs(value: Input[String]*): Self = StObject.set(x, "forbiddenAccountIds", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreTags(value: Input[ProviderIgnoreTags]): Self = StObject.set(x, "ignoreTags", value.asInstanceOf[js.Any])
+      inline def setIgnoreTags(value: Input[ProviderIgnoreTags]): Self = StObject.set(x, "ignoreTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreTagsUndefined: Self = StObject.set(x, "ignoreTags", js.undefined)
+      inline def setIgnoreTagsUndefined: Self = StObject.set(x, "ignoreTags", js.undefined)
       
-      @scala.inline
-      def setInsecure(value: Input[Boolean]): Self = StObject.set(x, "insecure", value.asInstanceOf[js.Any])
+      inline def setInsecure(value: Input[Boolean]): Self = StObject.set(x, "insecure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsecureUndefined: Self = StObject.set(x, "insecure", js.undefined)
+      inline def setInsecureUndefined: Self = StObject.set(x, "insecure", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Input[Double]): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Input[Double]): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setProfile(value: Input[String]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: Input[String]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setRegion(value: Input[Region]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: Input[Region]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setS3ForcePathStyle(value: Input[Boolean]): Self = StObject.set(x, "s3ForcePathStyle", value.asInstanceOf[js.Any])
+      inline def setS3ForcePathStyle(value: Input[Boolean]): Self = StObject.set(x, "s3ForcePathStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3ForcePathStyleUndefined: Self = StObject.set(x, "s3ForcePathStyle", js.undefined)
+      inline def setS3ForcePathStyleUndefined: Self = StObject.set(x, "s3ForcePathStyle", js.undefined)
       
-      @scala.inline
-      def setSecretKey(value: Input[String]): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: Input[String]): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
+      inline def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
       
-      @scala.inline
-      def setSharedCredentialsFile(value: Input[String]): Self = StObject.set(x, "sharedCredentialsFile", value.asInstanceOf[js.Any])
+      inline def setSharedCredentialsFile(value: Input[String]): Self = StObject.set(x, "sharedCredentialsFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedCredentialsFileUndefined: Self = StObject.set(x, "sharedCredentialsFile", js.undefined)
+      inline def setSharedCredentialsFileUndefined: Self = StObject.set(x, "sharedCredentialsFile", js.undefined)
       
-      @scala.inline
-      def setSkipCredentialsValidation(value: Input[Boolean]): Self = StObject.set(x, "skipCredentialsValidation", value.asInstanceOf[js.Any])
+      inline def setSkipCredentialsValidation(value: Input[Boolean]): Self = StObject.set(x, "skipCredentialsValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipCredentialsValidationUndefined: Self = StObject.set(x, "skipCredentialsValidation", js.undefined)
+      inline def setSkipCredentialsValidationUndefined: Self = StObject.set(x, "skipCredentialsValidation", js.undefined)
       
-      @scala.inline
-      def setSkipGetEc2Platforms(value: Input[Boolean]): Self = StObject.set(x, "skipGetEc2Platforms", value.asInstanceOf[js.Any])
+      inline def setSkipGetEc2Platforms(value: Input[Boolean]): Self = StObject.set(x, "skipGetEc2Platforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipGetEc2PlatformsUndefined: Self = StObject.set(x, "skipGetEc2Platforms", js.undefined)
+      inline def setSkipGetEc2PlatformsUndefined: Self = StObject.set(x, "skipGetEc2Platforms", js.undefined)
       
-      @scala.inline
-      def setSkipMetadataApiCheck(value: Input[Boolean]): Self = StObject.set(x, "skipMetadataApiCheck", value.asInstanceOf[js.Any])
+      inline def setSkipMetadataApiCheck(value: Input[Boolean]): Self = StObject.set(x, "skipMetadataApiCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipMetadataApiCheckUndefined: Self = StObject.set(x, "skipMetadataApiCheck", js.undefined)
+      inline def setSkipMetadataApiCheckUndefined: Self = StObject.set(x, "skipMetadataApiCheck", js.undefined)
       
-      @scala.inline
-      def setSkipRegionValidation(value: Input[Boolean]): Self = StObject.set(x, "skipRegionValidation", value.asInstanceOf[js.Any])
+      inline def setSkipRegionValidation(value: Input[Boolean]): Self = StObject.set(x, "skipRegionValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipRegionValidationUndefined: Self = StObject.set(x, "skipRegionValidation", js.undefined)
+      inline def setSkipRegionValidationUndefined: Self = StObject.set(x, "skipRegionValidation", js.undefined)
       
-      @scala.inline
-      def setSkipRequestingAccountId(value: Input[Boolean]): Self = StObject.set(x, "skipRequestingAccountId", value.asInstanceOf[js.Any])
+      inline def setSkipRequestingAccountId(value: Input[Boolean]): Self = StObject.set(x, "skipRequestingAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipRequestingAccountIdUndefined: Self = StObject.set(x, "skipRequestingAccountId", js.undefined)
+      inline def setSkipRequestingAccountIdUndefined: Self = StObject.set(x, "skipRequestingAccountId", js.undefined)
       
-      @scala.inline
-      def setToken(value: Input[String]): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: Input[String]): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     }
   }
 }

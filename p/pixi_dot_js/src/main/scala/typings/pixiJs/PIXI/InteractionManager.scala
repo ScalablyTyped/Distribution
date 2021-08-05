@@ -72,7 +72,7 @@ trait InteractionManager
     * @protected
     * @member {boolean} PIXI.InteractionManager#eventsAdded
     */
-  var eventsAdded: Boolean = js.native
+  /* protected */ var eventsAdded: Boolean = js.native
   
   /**
     * Hit tests a point against the display tree, returning the first interactive object that is hit.
@@ -91,7 +91,7 @@ trait InteractionManager
     * @protected
     * @member {HTMLElement} PIXI.InteractionManager#interactionDOMElement
     */
-  var interactionDOMElement: HTMLElement = js.native
+  /* protected */ var interactionDOMElement: HTMLElement = js.native
   
   /**
     * Maximum requency in milliseconds at which pointer over/out states will be checked by {@link tickerUpdate}.
@@ -107,7 +107,7 @@ trait InteractionManager
     * @protected
     * @member {PIXI.DisplayObject}
     */
-  val lastObjectRendered: DisplayObject = js.native
+  /* protected */ val lastObjectRendered: DisplayObject = js.native
   
   /**
     * Maps x and y coords from a DOM object and maps them correctly to the PixiJS view. The
@@ -133,7 +133,7 @@ trait InteractionManager
     * @protected
     * @member {boolean} PIXI.InteractionManager#mouseOverRenderer
     */
-  var mouseOverRenderer: Boolean = js.native
+  /* protected */ var mouseOverRenderer: Boolean = js.native
   
   /**
     * This property determines if mousemove and touchmove events are fired only when the cursor
@@ -260,7 +260,7 @@ trait InteractionManager
     * @protected
     * @member {boolean} PIXI.InteractionManager#tickerAdded
     */
-  var tickerAdded: Boolean = js.native
+  /* protected */ var tickerAdded: Boolean = js.native
   
   /**
     * Updates the state of interactive objects if at least {@link interactionFrequency}

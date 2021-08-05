@@ -75,130 +75,89 @@ trait TaskRunnerSettings extends StObject {
 }
 object TaskRunnerSettings {
   
-  @scala.inline
-  def apply(): TaskRunnerSettings = {
+  inline def apply(): TaskRunnerSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskRunnerSettings]
   }
   
-  @scala.inline
-  implicit class TaskRunnerSettingsMutableBuilder[Self <: TaskRunnerSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TaskRunnerSettings](x: Self) {
     
-    @scala.inline
-    def setAlsologtostderr(value: Boolean): Self = StObject.set(x, "alsologtostderr", value.asInstanceOf[js.Any])
+    inline def setAlsologtostderr(value: Boolean): Self = StObject.set(x, "alsologtostderr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlsologtostderrUndefined: Self = StObject.set(x, "alsologtostderr", js.undefined)
+    inline def setAlsologtostderrUndefined: Self = StObject.set(x, "alsologtostderr", js.undefined)
     
-    @scala.inline
-    def setBaseTaskDir(value: String): Self = StObject.set(x, "baseTaskDir", value.asInstanceOf[js.Any])
+    inline def setBaseTaskDir(value: String): Self = StObject.set(x, "baseTaskDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseTaskDirUndefined: Self = StObject.set(x, "baseTaskDir", js.undefined)
+    inline def setBaseTaskDirUndefined: Self = StObject.set(x, "baseTaskDir", js.undefined)
     
-    @scala.inline
-    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+    inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
-    @scala.inline
-    def setCommandlinesFileName(value: String): Self = StObject.set(x, "commandlinesFileName", value.asInstanceOf[js.Any])
+    inline def setCommandlinesFileName(value: String): Self = StObject.set(x, "commandlinesFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandlinesFileNameUndefined: Self = StObject.set(x, "commandlinesFileName", js.undefined)
+    inline def setCommandlinesFileNameUndefined: Self = StObject.set(x, "commandlinesFileName", js.undefined)
     
-    @scala.inline
-    def setContinueOnException(value: Boolean): Self = StObject.set(x, "continueOnException", value.asInstanceOf[js.Any])
+    inline def setContinueOnException(value: Boolean): Self = StObject.set(x, "continueOnException", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueOnExceptionUndefined: Self = StObject.set(x, "continueOnException", js.undefined)
+    inline def setContinueOnExceptionUndefined: Self = StObject.set(x, "continueOnException", js.undefined)
     
-    @scala.inline
-    def setDataflowApiVersion(value: String): Self = StObject.set(x, "dataflowApiVersion", value.asInstanceOf[js.Any])
+    inline def setDataflowApiVersion(value: String): Self = StObject.set(x, "dataflowApiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataflowApiVersionUndefined: Self = StObject.set(x, "dataflowApiVersion", js.undefined)
+    inline def setDataflowApiVersionUndefined: Self = StObject.set(x, "dataflowApiVersion", js.undefined)
     
-    @scala.inline
-    def setHarnessCommand(value: String): Self = StObject.set(x, "harnessCommand", value.asInstanceOf[js.Any])
+    inline def setHarnessCommand(value: String): Self = StObject.set(x, "harnessCommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHarnessCommandUndefined: Self = StObject.set(x, "harnessCommand", js.undefined)
+    inline def setHarnessCommandUndefined: Self = StObject.set(x, "harnessCommand", js.undefined)
     
-    @scala.inline
-    def setLanguageHint(value: String): Self = StObject.set(x, "languageHint", value.asInstanceOf[js.Any])
+    inline def setLanguageHint(value: String): Self = StObject.set(x, "languageHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageHintUndefined: Self = StObject.set(x, "languageHint", js.undefined)
+    inline def setLanguageHintUndefined: Self = StObject.set(x, "languageHint", js.undefined)
     
-    @scala.inline
-    def setLogDir(value: String): Self = StObject.set(x, "logDir", value.asInstanceOf[js.Any])
+    inline def setLogDir(value: String): Self = StObject.set(x, "logDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogDirUndefined: Self = StObject.set(x, "logDir", js.undefined)
+    inline def setLogDirUndefined: Self = StObject.set(x, "logDir", js.undefined)
     
-    @scala.inline
-    def setLogToSerialconsole(value: Boolean): Self = StObject.set(x, "logToSerialconsole", value.asInstanceOf[js.Any])
+    inline def setLogToSerialconsole(value: Boolean): Self = StObject.set(x, "logToSerialconsole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogToSerialconsoleUndefined: Self = StObject.set(x, "logToSerialconsole", js.undefined)
+    inline def setLogToSerialconsoleUndefined: Self = StObject.set(x, "logToSerialconsole", js.undefined)
     
-    @scala.inline
-    def setLogUploadLocation(value: String): Self = StObject.set(x, "logUploadLocation", value.asInstanceOf[js.Any])
+    inline def setLogUploadLocation(value: String): Self = StObject.set(x, "logUploadLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUploadLocationUndefined: Self = StObject.set(x, "logUploadLocation", js.undefined)
+    inline def setLogUploadLocationUndefined: Self = StObject.set(x, "logUploadLocation", js.undefined)
     
-    @scala.inline
-    def setOauthScopes(value: js.Array[String]): Self = StObject.set(x, "oauthScopes", value.asInstanceOf[js.Any])
+    inline def setOauthScopes(value: js.Array[String]): Self = StObject.set(x, "oauthScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauthScopesUndefined: Self = StObject.set(x, "oauthScopes", js.undefined)
+    inline def setOauthScopesUndefined: Self = StObject.set(x, "oauthScopes", js.undefined)
     
-    @scala.inline
-    def setOauthScopesVarargs(value: String*): Self = StObject.set(x, "oauthScopes", js.Array(value :_*))
+    inline def setOauthScopesVarargs(value: String*): Self = StObject.set(x, "oauthScopes", js.Array(value :_*))
     
-    @scala.inline
-    def setParallelWorkerSettings(value: WorkerSettings): Self = StObject.set(x, "parallelWorkerSettings", value.asInstanceOf[js.Any])
+    inline def setParallelWorkerSettings(value: WorkerSettings): Self = StObject.set(x, "parallelWorkerSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelWorkerSettingsUndefined: Self = StObject.set(x, "parallelWorkerSettings", js.undefined)
+    inline def setParallelWorkerSettingsUndefined: Self = StObject.set(x, "parallelWorkerSettings", js.undefined)
     
-    @scala.inline
-    def setStreamingWorkerMainClass(value: String): Self = StObject.set(x, "streamingWorkerMainClass", value.asInstanceOf[js.Any])
+    inline def setStreamingWorkerMainClass(value: String): Self = StObject.set(x, "streamingWorkerMainClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingWorkerMainClassUndefined: Self = StObject.set(x, "streamingWorkerMainClass", js.undefined)
+    inline def setStreamingWorkerMainClassUndefined: Self = StObject.set(x, "streamingWorkerMainClass", js.undefined)
     
-    @scala.inline
-    def setTaskGroup(value: String): Self = StObject.set(x, "taskGroup", value.asInstanceOf[js.Any])
+    inline def setTaskGroup(value: String): Self = StObject.set(x, "taskGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskGroupUndefined: Self = StObject.set(x, "taskGroup", js.undefined)
+    inline def setTaskGroupUndefined: Self = StObject.set(x, "taskGroup", js.undefined)
     
-    @scala.inline
-    def setTaskUser(value: String): Self = StObject.set(x, "taskUser", value.asInstanceOf[js.Any])
+    inline def setTaskUser(value: String): Self = StObject.set(x, "taskUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskUserUndefined: Self = StObject.set(x, "taskUser", js.undefined)
+    inline def setTaskUserUndefined: Self = StObject.set(x, "taskUser", js.undefined)
     
-    @scala.inline
-    def setTempStoragePrefix(value: String): Self = StObject.set(x, "tempStoragePrefix", value.asInstanceOf[js.Any])
+    inline def setTempStoragePrefix(value: String): Self = StObject.set(x, "tempStoragePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempStoragePrefixUndefined: Self = StObject.set(x, "tempStoragePrefix", js.undefined)
+    inline def setTempStoragePrefixUndefined: Self = StObject.set(x, "tempStoragePrefix", js.undefined)
     
-    @scala.inline
-    def setVmId(value: String): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
+    inline def setVmId(value: String): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmIdUndefined: Self = StObject.set(x, "vmId", js.undefined)
+    inline def setVmIdUndefined: Self = StObject.set(x, "vmId", js.undefined)
     
-    @scala.inline
-    def setWorkflowFileName(value: String): Self = StObject.set(x, "workflowFileName", value.asInstanceOf[js.Any])
+    inline def setWorkflowFileName(value: String): Self = StObject.set(x, "workflowFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowFileNameUndefined: Self = StObject.set(x, "workflowFileName", js.undefined)
+    inline def setWorkflowFileNameUndefined: Self = StObject.set(x, "workflowFileName", js.undefined)
   }
 }

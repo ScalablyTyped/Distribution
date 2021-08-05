@@ -28,37 +28,27 @@ trait InstanceBlockDeviceMapping extends StObject {
 }
 object InstanceBlockDeviceMapping {
   
-  @scala.inline
-  def apply(): InstanceBlockDeviceMapping = {
+  inline def apply(): InstanceBlockDeviceMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceBlockDeviceMapping]
   }
   
-  @scala.inline
-  implicit class InstanceBlockDeviceMappingMutableBuilder[Self <: InstanceBlockDeviceMapping] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceBlockDeviceMapping](x: Self) {
     
-    @scala.inline
-    def setDeviceName(value: NonEmptyString): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: NonEmptyString): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
-    @scala.inline
-    def setEbs(value: EbsInstanceBlockDeviceSpecification): Self = StObject.set(x, "ebs", value.asInstanceOf[js.Any])
+    inline def setEbs(value: EbsInstanceBlockDeviceSpecification): Self = StObject.set(x, "ebs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsUndefined: Self = StObject.set(x, "ebs", js.undefined)
+    inline def setEbsUndefined: Self = StObject.set(x, "ebs", js.undefined)
     
-    @scala.inline
-    def setNoDevice(value: EmptyString): Self = StObject.set(x, "noDevice", value.asInstanceOf[js.Any])
+    inline def setNoDevice(value: EmptyString): Self = StObject.set(x, "noDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDeviceUndefined: Self = StObject.set(x, "noDevice", js.undefined)
+    inline def setNoDeviceUndefined: Self = StObject.set(x, "noDevice", js.undefined)
     
-    @scala.inline
-    def setVirtualName(value: NonEmptyString): Self = StObject.set(x, "virtualName", value.asInstanceOf[js.Any])
+    inline def setVirtualName(value: NonEmptyString): Self = StObject.set(x, "virtualName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualNameUndefined: Self = StObject.set(x, "virtualName", js.undefined)
+    inline def setVirtualNameUndefined: Self = StObject.set(x, "virtualName", js.undefined)
   }
 }

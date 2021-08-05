@@ -26,8 +26,7 @@ trait AnisotropicFiltering extends StObject {
 }
 object AnisotropicFiltering {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     anisotropicFiltering: EXTTextureFilterAnisotropic,
     depthTexture: WEBGLDepthTexture,
     drawBuffers: WEBGLDrawBuffers,
@@ -39,25 +38,18 @@ object AnisotropicFiltering {
     __obj.asInstanceOf[AnisotropicFiltering]
   }
   
-  @scala.inline
-  implicit class AnisotropicFilteringMutableBuilder[Self <: AnisotropicFiltering] (val x: Self) extends AnyVal {
+  extension [Self <: AnisotropicFiltering](x: Self) {
     
-    @scala.inline
-    def setAnisotropicFiltering(value: EXTTextureFilterAnisotropic): Self = StObject.set(x, "anisotropicFiltering", value.asInstanceOf[js.Any])
+    inline def setAnisotropicFiltering(value: EXTTextureFilterAnisotropic): Self = StObject.set(x, "anisotropicFiltering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthTexture(value: WEBGLDepthTexture): Self = StObject.set(x, "depthTexture", value.asInstanceOf[js.Any])
+    inline def setDepthTexture(value: WEBGLDepthTexture): Self = StObject.set(x, "depthTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawBuffers(value: WEBGLDrawBuffers): Self = StObject.set(x, "drawBuffers", value.asInstanceOf[js.Any])
+    inline def setDrawBuffers(value: WEBGLDrawBuffers): Self = StObject.set(x, "drawBuffers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatTexture(value: OESTextureFloat): Self = StObject.set(x, "floatTexture", value.asInstanceOf[js.Any])
+    inline def setFloatTexture(value: OESTextureFloat): Self = StObject.set(x, "floatTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoseContext(value: WEBGLLoseContext): Self = StObject.set(x, "loseContext", value.asInstanceOf[js.Any])
+    inline def setLoseContext(value: WEBGLLoseContext): Self = StObject.set(x, "loseContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexArrayObject(value: OESVertexArrayObject): Self = StObject.set(x, "vertexArrayObject", value.asInstanceOf[js.Any])
+    inline def setVertexArrayObject(value: OESVertexArrayObject): Self = StObject.set(x, "vertexArrayObject", value.asInstanceOf[js.Any])
   }
 }

@@ -11,22 +11,17 @@ trait IClientTransactionGetRequest extends StObject {
 }
 object IClientTransactionGetRequest {
   
-  @scala.inline
-  def apply(): IClientTransactionGetRequest = {
+  inline def apply(): IClientTransactionGetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientTransactionGetRequest]
   }
   
-  @scala.inline
-  implicit class IClientTransactionGetRequestMutableBuilder[Self <: IClientTransactionGetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IClientTransactionGetRequest](x: Self) {
     
-    @scala.inline
-    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdNull: Self = StObject.set(x, "transactionId", null)
+    inline def setTransactionIdNull: Self = StObject.set(x, "transactionId", null)
     
-    @scala.inline
-    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
   }
 }

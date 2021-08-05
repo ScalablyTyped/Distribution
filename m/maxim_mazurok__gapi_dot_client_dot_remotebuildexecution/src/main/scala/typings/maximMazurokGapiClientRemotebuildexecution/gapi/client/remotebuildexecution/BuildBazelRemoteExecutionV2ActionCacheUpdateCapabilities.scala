@@ -10,19 +10,15 @@ trait BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities extends StObject 
 }
 object BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities = {
+  inline def apply(): BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilitiesMutableBuilder[Self <: BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities](x: Self) {
     
-    @scala.inline
-    def setUpdateEnabled(value: Boolean): Self = StObject.set(x, "updateEnabled", value.asInstanceOf[js.Any])
+    inline def setUpdateEnabled(value: Boolean): Self = StObject.set(x, "updateEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateEnabledUndefined: Self = StObject.set(x, "updateEnabled", js.undefined)
+    inline def setUpdateEnabledUndefined: Self = StObject.set(x, "updateEnabled", js.undefined)
   }
 }

@@ -26,25 +26,19 @@ trait SchemaBuildBazelRemoteExecutionV2OutputDirectory extends StObject {
 }
 object SchemaBuildBazelRemoteExecutionV2OutputDirectory {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2OutputDirectory = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2OutputDirectory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2OutputDirectory]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2OutputDirectoryMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2OutputDirectory] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2OutputDirectory](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setTreeDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "treeDigest", value.asInstanceOf[js.Any])
+    inline def setTreeDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "treeDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeDigestUndefined: Self = StObject.set(x, "treeDigest", js.undefined)
+    inline def setTreeDigestUndefined: Self = StObject.set(x, "treeDigest", js.undefined)
   }
 }

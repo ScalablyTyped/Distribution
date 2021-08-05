@@ -127,8 +127,7 @@ object apiMod {
     def this(apiName: String) = this()
   }
   
-  @scala.inline
-  def API_=(x: APIConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("API")(x.asInstanceOf[js.Any])
+  inline def API_=(x: APIConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("API")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/cloud/api", "HttpEndpoint")
   @js.native
@@ -144,8 +143,7 @@ object apiMod {
     def this(apiName: String) = this()
   }
   
-  @scala.inline
-  def HttpEndpoint_=(x: APIConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpEndpoint")(x.asInstanceOf[js.Any])
+  inline def HttpEndpoint_=(x: APIConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpEndpoint")(x.asInstanceOf[js.Any])
   
   @js.native
   trait APIConstructor
@@ -177,8 +175,7 @@ object apiMod {
   }
   object Domain {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       certificateBody: String,
       certificateChain: String,
       certificatePrivateKey: String,
@@ -188,20 +185,15 @@ object apiMod {
       __obj.asInstanceOf[Domain]
     }
     
-    @scala.inline
-    implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+    extension [Self <: Domain](x: Self) {
       
-      @scala.inline
-      def setCertificateBody(value: String): Self = StObject.set(x, "certificateBody", value.asInstanceOf[js.Any])
+      inline def setCertificateBody(value: String): Self = StObject.set(x, "certificateBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateChain(value: String): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
+      inline def setCertificateChain(value: String): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificatePrivateKey(value: String): Self = StObject.set(x, "certificatePrivateKey", value.asInstanceOf[js.Any])
+      inline def setCertificatePrivateKey(value: String): Self = StObject.set(x, "certificatePrivateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,23 +213,18 @@ object apiMod {
   }
   object HttpDeployment {
     
-    @scala.inline
-    def apply(customDomainNames: js.Array[Output_[String]], url: Output_[String]): HttpDeployment = {
+    inline def apply(customDomainNames: js.Array[Output_[String]], url: Output_[String]): HttpDeployment = {
       val __obj = js.Dynamic.literal(customDomainNames = customDomainNames.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpDeployment]
     }
     
-    @scala.inline
-    implicit class HttpDeploymentMutableBuilder[Self <: HttpDeployment] (val x: Self) extends AnyVal {
+    extension [Self <: HttpDeployment](x: Self) {
       
-      @scala.inline
-      def setCustomDomainNames(value: js.Array[Output_[String]]): Self = StObject.set(x, "customDomainNames", value.asInstanceOf[js.Any])
+      inline def setCustomDomainNames(value: js.Array[Output_[String]]): Self = StObject.set(x, "customDomainNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomDomainNamesVarargs(value: Output_[String]*): Self = StObject.set(x, "customDomainNames", js.Array(value :_*))
+      inline def setCustomDomainNamesVarargs(value: Output_[String]*): Self = StObject.set(x, "customDomainNames", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: Output_[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Output_[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -296,8 +283,7 @@ object apiMod {
   }
   object Request {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseUrl: String,
       body: Buffer,
       headers: StringDictionary[String | js.Array[String]],
@@ -313,41 +299,29 @@ object apiMod {
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawHeaders(value: js.Array[String]): Self = StObject.set(x, "rawHeaders", value.asInstanceOf[js.Any])
+      inline def setRawHeaders(value: js.Array[String]): Self = StObject.set(x, "rawHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawHeadersVarargs(value: String*): Self = StObject.set(x, "rawHeaders", js.Array(value :_*))
+      inline def setRawHeadersVarargs(value: String*): Self = StObject.set(x, "rawHeaders", js.Array(value :_*))
     }
   }
   
@@ -429,26 +403,20 @@ object apiMod {
   }
   object ServeStaticOptions {
     
-    @scala.inline
-    def apply(): ServeStaticOptions = {
+    inline def apply(): ServeStaticOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServeStaticOptions]
     }
     
-    @scala.inline
-    implicit class ServeStaticOptionsMutableBuilder[Self <: ServeStaticOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServeStaticOptions](x: Self) {
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Boolean | String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Boolean | String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     }
   }
 }

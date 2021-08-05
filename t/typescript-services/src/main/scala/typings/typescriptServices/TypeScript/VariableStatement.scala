@@ -16,8 +16,7 @@ trait VariableStatement
 }
 object VariableStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -45,19 +44,14 @@ object VariableStatement {
     __obj.asInstanceOf[VariableStatement]
   }
   
-  @scala.inline
-  implicit class VariableStatementMutableBuilder[Self <: VariableStatement] (val x: Self) extends AnyVal {
+  extension [Self <: VariableStatement](x: Self) {
     
-    @scala.inline
-    def setDeclaration(value: VariableDeclaration): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+    inline def setDeclaration(value: VariableDeclaration): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setStructuralEquals(value: (VariableStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (VariableStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

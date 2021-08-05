@@ -11,16 +11,13 @@ trait ClearCompositionParameters extends StObject {
 }
 object ClearCompositionParameters {
   
-  @scala.inline
-  def apply(contextID: Double): ClearCompositionParameters = {
+  inline def apply(contextID: Double): ClearCompositionParameters = {
     val __obj = js.Dynamic.literal(contextID = contextID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearCompositionParameters]
   }
   
-  @scala.inline
-  implicit class ClearCompositionParametersMutableBuilder[Self <: ClearCompositionParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ClearCompositionParameters](x: Self) {
     
-    @scala.inline
-    def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
+    inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
   }
 }

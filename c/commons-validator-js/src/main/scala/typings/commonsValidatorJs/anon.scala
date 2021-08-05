@@ -14,20 +14,16 @@ object anon {
   }
   object AllowLocal {
     
-    @scala.inline
-    def apply(allowLocal: Boolean, allowTld: Boolean): AllowLocal = {
+    inline def apply(allowLocal: Boolean, allowTld: Boolean): AllowLocal = {
       val __obj = js.Dynamic.literal(allowLocal = allowLocal.asInstanceOf[js.Any], allowTld = allowTld.asInstanceOf[js.Any])
       __obj.asInstanceOf[AllowLocal]
     }
     
-    @scala.inline
-    implicit class AllowLocalMutableBuilder[Self <: AllowLocal] (val x: Self) extends AnyVal {
+    extension [Self <: AllowLocal](x: Self) {
       
-      @scala.inline
-      def setAllowLocal(value: Boolean): Self = StObject.set(x, "allowLocal", value.asInstanceOf[js.Any])
+      inline def setAllowLocal(value: Boolean): Self = StObject.set(x, "allowLocal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowTld(value: Boolean): Self = StObject.set(x, "allowTld", value.asInstanceOf[js.Any])
+      inline def setAllowTld(value: Boolean): Self = StObject.set(x, "allowTld", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +33,14 @@ object anon {
   }
   object AllowLocalBoolean {
     
-    @scala.inline
-    def apply(allowLocal: Boolean): AllowLocalBoolean = {
+    inline def apply(allowLocal: Boolean): AllowLocalBoolean = {
       val __obj = js.Dynamic.literal(allowLocal = allowLocal.asInstanceOf[js.Any])
       __obj.asInstanceOf[AllowLocalBoolean]
     }
     
-    @scala.inline
-    implicit class AllowLocalBooleanMutableBuilder[Self <: AllowLocalBoolean] (val x: Self) extends AnyVal {
+    extension [Self <: AllowLocalBoolean](x: Self) {
       
-      @scala.inline
-      def setAllowLocal(value: Boolean): Self = StObject.set(x, "allowLocal", value.asInstanceOf[js.Any])
+      inline def setAllowLocal(value: Boolean): Self = StObject.set(x, "allowLocal", value.asInstanceOf[js.Any])
     }
   }
 }

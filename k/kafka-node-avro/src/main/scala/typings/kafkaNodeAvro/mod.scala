@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def init(settings: Settings): js.Promise[Kafka] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Kafka]]
+  inline def init(settings: Settings): js.Promise[Kafka] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Kafka]]
   
   trait Kafka extends StObject {
     
@@ -20,17 +19,14 @@ object mod {
   }
   object Kafka {
     
-    @scala.inline
-    def apply(send: SendOptions => js.Promise[js.Object]): Kafka = {
+    inline def apply(send: SendOptions => js.Promise[js.Object]): Kafka = {
       val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send))
       __obj.asInstanceOf[Kafka]
     }
     
-    @scala.inline
-    implicit class KafkaMutableBuilder[Self <: Kafka] (val x: Self) extends AnyVal {
+    extension [Self <: Kafka](x: Self) {
       
-      @scala.inline
-      def setSend(value: SendOptions => js.Promise[js.Object]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: SendOptions => js.Promise[js.Object]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
   }
   
@@ -41,17 +37,14 @@ object mod {
   }
   object KafkaSettings {
     
-    @scala.inline
-    def apply(kafkaHost: String): KafkaSettings = {
+    inline def apply(kafkaHost: String): KafkaSettings = {
       val __obj = js.Dynamic.literal(kafkaHost = kafkaHost.asInstanceOf[js.Any])
       __obj.asInstanceOf[KafkaSettings]
     }
     
-    @scala.inline
-    implicit class KafkaSettingsMutableBuilder[Self <: KafkaSettings] (val x: Self) extends AnyVal {
+    extension [Self <: KafkaSettings](x: Self) {
       
-      @scala.inline
-      def setKafkaHost(value: String): Self = StObject.set(x, "kafkaHost", value.asInstanceOf[js.Any])
+      inline def setKafkaHost(value: String): Self = StObject.set(x, "kafkaHost", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,17 +55,14 @@ object mod {
   }
   object SchemaSettings {
     
-    @scala.inline
-    def apply(registry: String): SchemaSettings = {
+    inline def apply(registry: String): SchemaSettings = {
       val __obj = js.Dynamic.literal(registry = registry.asInstanceOf[js.Any])
       __obj.asInstanceOf[SchemaSettings]
     }
     
-    @scala.inline
-    implicit class SchemaSettingsMutableBuilder[Self <: SchemaSettings] (val x: Self) extends AnyVal {
+    extension [Self <: SchemaSettings](x: Self) {
       
-      @scala.inline
-      def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+      inline def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,23 +82,18 @@ object mod {
   }
   object SendOptions {
     
-    @scala.inline
-    def apply(key: String, messages: js.Object, topic: String): SendOptions = {
+    inline def apply(key: String, messages: js.Object, topic: String): SendOptions = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendOptions]
     }
     
-    @scala.inline
-    implicit class SendOptionsMutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SendOptions](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessages(value: js.Object): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: js.Object): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,20 +107,16 @@ object mod {
   }
   object Settings {
     
-    @scala.inline
-    def apply(kafka: KafkaSettings, schema: SchemaSettings): Settings = {
+    inline def apply(kafka: KafkaSettings, schema: SchemaSettings): Settings = {
       val __obj = js.Dynamic.literal(kafka = kafka.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setKafka(value: KafkaSettings): Self = StObject.set(x, "kafka", value.asInstanceOf[js.Any])
+      inline def setKafka(value: KafkaSettings): Self = StObject.set(x, "kafka", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchema(value: SchemaSettings): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: SchemaSettings): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }
   }
 }

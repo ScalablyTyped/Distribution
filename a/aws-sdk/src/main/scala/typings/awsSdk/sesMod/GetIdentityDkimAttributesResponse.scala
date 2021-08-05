@@ -13,16 +13,13 @@ trait GetIdentityDkimAttributesResponse extends StObject {
 }
 object GetIdentityDkimAttributesResponse {
   
-  @scala.inline
-  def apply(DkimAttributes: DkimAttributes): GetIdentityDkimAttributesResponse = {
+  inline def apply(DkimAttributes: DkimAttributes): GetIdentityDkimAttributesResponse = {
     val __obj = js.Dynamic.literal(DkimAttributes = DkimAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIdentityDkimAttributesResponse]
   }
   
-  @scala.inline
-  implicit class GetIdentityDkimAttributesResponseMutableBuilder[Self <: GetIdentityDkimAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetIdentityDkimAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setDkimAttributes(value: DkimAttributes): Self = StObject.set(x, "DkimAttributes", value.asInstanceOf[js.Any])
+    inline def setDkimAttributes(value: DkimAttributes): Self = StObject.set(x, "DkimAttributes", value.asInstanceOf[js.Any])
   }
 }

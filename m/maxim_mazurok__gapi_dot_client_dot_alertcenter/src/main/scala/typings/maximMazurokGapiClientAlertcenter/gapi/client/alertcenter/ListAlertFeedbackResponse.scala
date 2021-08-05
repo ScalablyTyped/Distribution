@@ -11,22 +11,17 @@ trait ListAlertFeedbackResponse extends StObject {
 }
 object ListAlertFeedbackResponse {
   
-  @scala.inline
-  def apply(): ListAlertFeedbackResponse = {
+  inline def apply(): ListAlertFeedbackResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAlertFeedbackResponse]
   }
   
-  @scala.inline
-  implicit class ListAlertFeedbackResponseMutableBuilder[Self <: ListAlertFeedbackResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAlertFeedbackResponse](x: Self) {
     
-    @scala.inline
-    def setFeedback(value: js.Array[AlertFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
+    inline def setFeedback(value: js.Array[AlertFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
+    inline def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
     
-    @scala.inline
-    def setFeedbackVarargs(value: AlertFeedback*): Self = StObject.set(x, "feedback", js.Array(value :_*))
+    inline def setFeedbackVarargs(value: AlertFeedback*): Self = StObject.set(x, "feedback", js.Array(value :_*))
   }
 }

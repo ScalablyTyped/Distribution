@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ListFormat")
 @js.native
-class ListFormat protected ()
+/* private */ class ListFormat ()
   extends StObject
      with typings.activexWord.Word.ListFormat

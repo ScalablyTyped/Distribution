@@ -11,22 +11,17 @@ trait BatchAnnotateFilesResponse extends StObject {
 }
 object BatchAnnotateFilesResponse {
   
-  @scala.inline
-  def apply(): BatchAnnotateFilesResponse = {
+  inline def apply(): BatchAnnotateFilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchAnnotateFilesResponse]
   }
   
-  @scala.inline
-  implicit class BatchAnnotateFilesResponseMutableBuilder[Self <: BatchAnnotateFilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchAnnotateFilesResponse](x: Self) {
     
-    @scala.inline
-    def setResponses(value: js.Array[AnnotateFileResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[AnnotateFileResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: AnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: AnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
   }
 }

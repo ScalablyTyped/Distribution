@@ -23,31 +23,23 @@ trait CodeContent extends StObject {
 }
 object CodeContent {
   
-  @scala.inline
-  def apply(): CodeContent = {
+  inline def apply(): CodeContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeContent]
   }
   
-  @scala.inline
-  implicit class CodeContentMutableBuilder[Self <: CodeContent] (val x: Self) extends AnyVal {
+  extension [Self <: CodeContent](x: Self) {
     
-    @scala.inline
-    def setS3ContentLocation(value: S3ContentLocation): Self = StObject.set(x, "S3ContentLocation", value.asInstanceOf[js.Any])
+    inline def setS3ContentLocation(value: S3ContentLocation): Self = StObject.set(x, "S3ContentLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ContentLocationUndefined: Self = StObject.set(x, "S3ContentLocation", js.undefined)
+    inline def setS3ContentLocationUndefined: Self = StObject.set(x, "S3ContentLocation", js.undefined)
     
-    @scala.inline
-    def setTextContent(value: TextContent): Self = StObject.set(x, "TextContent", value.asInstanceOf[js.Any])
+    inline def setTextContent(value: TextContent): Self = StObject.set(x, "TextContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextContentUndefined: Self = StObject.set(x, "TextContent", js.undefined)
+    inline def setTextContentUndefined: Self = StObject.set(x, "TextContent", js.undefined)
     
-    @scala.inline
-    def setZipFileContent(value: ZipFileContent): Self = StObject.set(x, "ZipFileContent", value.asInstanceOf[js.Any])
+    inline def setZipFileContent(value: ZipFileContent): Self = StObject.set(x, "ZipFileContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipFileContentUndefined: Self = StObject.set(x, "ZipFileContent", js.undefined)
+    inline def setZipFileContentUndefined: Self = StObject.set(x, "ZipFileContent", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with Label
 object ThemeUICSSObject {
   
-  @scala.inline
-  def apply(): ThemeUICSSObject = {
+  inline def apply(): ThemeUICSSObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThemeUICSSObject]
   }

@@ -20,20 +20,16 @@ trait MultipleAgentExecutionOptions
 }
 object MultipleAgentExecutionOptions {
   
-  @scala.inline
-  def apply(continueOnError: Boolean, maxConcurrency: Double, `type`: Double): MultipleAgentExecutionOptions = {
+  inline def apply(continueOnError: Boolean, maxConcurrency: Double, `type`: Double): MultipleAgentExecutionOptions = {
     val __obj = js.Dynamic.literal(continueOnError = continueOnError.asInstanceOf[js.Any], maxConcurrency = maxConcurrency.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleAgentExecutionOptions]
   }
   
-  @scala.inline
-  implicit class MultipleAgentExecutionOptionsMutableBuilder[Self <: MultipleAgentExecutionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleAgentExecutionOptions](x: Self) {
     
-    @scala.inline
-    def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
+    inline def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrency(value: Double): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrency(value: Double): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
   }
 }

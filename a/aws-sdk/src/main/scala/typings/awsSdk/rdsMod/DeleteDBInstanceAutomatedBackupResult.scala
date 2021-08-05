@@ -10,19 +10,15 @@ trait DeleteDBInstanceAutomatedBackupResult extends StObject {
 }
 object DeleteDBInstanceAutomatedBackupResult {
   
-  @scala.inline
-  def apply(): DeleteDBInstanceAutomatedBackupResult = {
+  inline def apply(): DeleteDBInstanceAutomatedBackupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDBInstanceAutomatedBackupResult]
   }
   
-  @scala.inline
-  implicit class DeleteDBInstanceAutomatedBackupResultMutableBuilder[Self <: DeleteDBInstanceAutomatedBackupResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDBInstanceAutomatedBackupResult](x: Self) {
     
-    @scala.inline
-    def setDBInstanceAutomatedBackup(value: DBInstanceAutomatedBackup): Self = StObject.set(x, "DBInstanceAutomatedBackup", value.asInstanceOf[js.Any])
+    inline def setDBInstanceAutomatedBackup(value: DBInstanceAutomatedBackup): Self = StObject.set(x, "DBInstanceAutomatedBackup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBInstanceAutomatedBackupUndefined: Self = StObject.set(x, "DBInstanceAutomatedBackup", js.undefined)
+    inline def setDBInstanceAutomatedBackupUndefined: Self = StObject.set(x, "DBInstanceAutomatedBackup", js.undefined)
   }
 }

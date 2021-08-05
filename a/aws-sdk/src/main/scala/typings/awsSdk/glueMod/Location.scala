@@ -23,40 +23,29 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(): Location = {
+  inline def apply(): Location = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setDynamoDB(value: CodeGenNodeArgs): Self = StObject.set(x, "DynamoDB", value.asInstanceOf[js.Any])
+    inline def setDynamoDB(value: CodeGenNodeArgs): Self = StObject.set(x, "DynamoDB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamoDBUndefined: Self = StObject.set(x, "DynamoDB", js.undefined)
+    inline def setDynamoDBUndefined: Self = StObject.set(x, "DynamoDB", js.undefined)
     
-    @scala.inline
-    def setDynamoDBVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "DynamoDB", js.Array(value :_*))
+    inline def setDynamoDBVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "DynamoDB", js.Array(value :_*))
     
-    @scala.inline
-    def setJdbc(value: CodeGenNodeArgs): Self = StObject.set(x, "Jdbc", value.asInstanceOf[js.Any])
+    inline def setJdbc(value: CodeGenNodeArgs): Self = StObject.set(x, "Jdbc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJdbcUndefined: Self = StObject.set(x, "Jdbc", js.undefined)
+    inline def setJdbcUndefined: Self = StObject.set(x, "Jdbc", js.undefined)
     
-    @scala.inline
-    def setJdbcVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "Jdbc", js.Array(value :_*))
+    inline def setJdbcVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "Jdbc", js.Array(value :_*))
     
-    @scala.inline
-    def setS3(value: CodeGenNodeArgs): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
+    inline def setS3(value: CodeGenNodeArgs): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
+    inline def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
     
-    @scala.inline
-    def setS3Varargs(value: CodeGenNodeArg*): Self = StObject.set(x, "S3", js.Array(value :_*))
+    inline def setS3Varargs(value: CodeGenNodeArg*): Self = StObject.set(x, "S3", js.Array(value :_*))
   }
 }

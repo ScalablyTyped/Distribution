@@ -26,8 +26,7 @@ trait DirectionsLastRouteMessages
 }
 object DirectionsLastRouteMessages {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     description: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -39,13 +38,10 @@ object DirectionsLastRouteMessages {
     __obj.asInstanceOf[DirectionsLastRouteMessages]
   }
   
-  @scala.inline
-  implicit class DirectionsLastRouteMessagesMutableBuilder[Self <: DirectionsLastRouteMessages] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsLastRouteMessages](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

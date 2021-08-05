@@ -35,43 +35,31 @@ trait Profile extends StObject {
 }
 object Profile {
   
-  @scala.inline
-  def apply(endTime: Double, nodes: js.Array[ProfileNode], startTime: Double): Profile = {
+  inline def apply(endTime: Double, nodes: js.Array[ProfileNode], startTime: Double): Profile = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
   
-  @scala.inline
-  implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
+  extension [Self <: Profile](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: js.Array[ProfileNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[ProfileNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: ProfileNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: ProfileNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setSamples(value: js.Array[integer]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
+    inline def setSamples(value: js.Array[integer]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
+    inline def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
     
-    @scala.inline
-    def setSamplesVarargs(value: integer*): Self = StObject.set(x, "samples", js.Array(value :_*))
+    inline def setSamplesVarargs(value: integer*): Self = StObject.set(x, "samples", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeDeltas(value: js.Array[integer]): Self = StObject.set(x, "timeDeltas", value.asInstanceOf[js.Any])
+    inline def setTimeDeltas(value: js.Array[integer]): Self = StObject.set(x, "timeDeltas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeDeltasUndefined: Self = StObject.set(x, "timeDeltas", js.undefined)
+    inline def setTimeDeltasUndefined: Self = StObject.set(x, "timeDeltas", js.undefined)
     
-    @scala.inline
-    def setTimeDeltasVarargs(value: integer*): Self = StObject.set(x, "timeDeltas", js.Array(value :_*))
+    inline def setTimeDeltasVarargs(value: integer*): Self = StObject.set(x, "timeDeltas", js.Array(value :_*))
   }
 }

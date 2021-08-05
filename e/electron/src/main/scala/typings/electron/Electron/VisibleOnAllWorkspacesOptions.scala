@@ -15,19 +15,15 @@ trait VisibleOnAllWorkspacesOptions extends StObject {
 }
 object VisibleOnAllWorkspacesOptions {
   
-  @scala.inline
-  def apply(): VisibleOnAllWorkspacesOptions = {
+  inline def apply(): VisibleOnAllWorkspacesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VisibleOnAllWorkspacesOptions]
   }
   
-  @scala.inline
-  implicit class VisibleOnAllWorkspacesOptionsMutableBuilder[Self <: VisibleOnAllWorkspacesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VisibleOnAllWorkspacesOptions](x: Self) {
     
-    @scala.inline
-    def setVisibleOnFullScreen(value: Boolean): Self = StObject.set(x, "visibleOnFullScreen", value.asInstanceOf[js.Any])
+    inline def setVisibleOnFullScreen(value: Boolean): Self = StObject.set(x, "visibleOnFullScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleOnFullScreenUndefined: Self = StObject.set(x, "visibleOnFullScreen", js.undefined)
+    inline def setVisibleOnFullScreenUndefined: Self = StObject.set(x, "visibleOnFullScreen", js.undefined)
   }
 }

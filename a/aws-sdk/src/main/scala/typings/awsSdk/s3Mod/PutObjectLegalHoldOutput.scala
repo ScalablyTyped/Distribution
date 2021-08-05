@@ -10,19 +10,15 @@ trait PutObjectLegalHoldOutput extends StObject {
 }
 object PutObjectLegalHoldOutput {
   
-  @scala.inline
-  def apply(): PutObjectLegalHoldOutput = {
+  inline def apply(): PutObjectLegalHoldOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutObjectLegalHoldOutput]
   }
   
-  @scala.inline
-  implicit class PutObjectLegalHoldOutputMutableBuilder[Self <: PutObjectLegalHoldOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutObjectLegalHoldOutput](x: Self) {
     
-    @scala.inline
-    def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+    inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+    inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
   }
 }

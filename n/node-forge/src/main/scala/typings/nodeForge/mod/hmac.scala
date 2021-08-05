@@ -12,8 +12,7 @@ object hmac {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): HMAC = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[HMAC]
+  inline def create(): HMAC = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[HMAC]
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeForge.nodeForgeStrings.sha1
@@ -23,14 +22,11 @@ object hmac {
   trait Algorithm extends StObject
   object Algorithm {
     
-    @scala.inline
-    def md5: typings.nodeForge.nodeForgeStrings.md5 = "md5".asInstanceOf[typings.nodeForge.nodeForgeStrings.md5]
+    inline def md5: typings.nodeForge.nodeForgeStrings.md5 = "md5".asInstanceOf[typings.nodeForge.nodeForgeStrings.md5]
     
-    @scala.inline
-    def sha1: typings.nodeForge.nodeForgeStrings.sha1 = "sha1".asInstanceOf[typings.nodeForge.nodeForgeStrings.sha1]
+    inline def sha1: typings.nodeForge.nodeForgeStrings.sha1 = "sha1".asInstanceOf[typings.nodeForge.nodeForgeStrings.sha1]
     
-    @scala.inline
-    def sha256: typings.nodeForge.nodeForgeStrings.sha256 = "sha256".asInstanceOf[typings.nodeForge.nodeForgeStrings.sha256]
+    inline def sha256: typings.nodeForge.nodeForgeStrings.sha256 = "sha256".asInstanceOf[typings.nodeForge.nodeForgeStrings.sha256]
   }
   
   @js.native

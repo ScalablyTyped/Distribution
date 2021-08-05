@@ -15,20 +15,16 @@ object typesDeadLetterConfigMod {
   }
   object DeadLetterConfig {
     
-    @scala.inline
-    def apply(): DeadLetterConfig = {
+    inline def apply(): DeadLetterConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeadLetterConfig]
     }
     
-    @scala.inline
-    implicit class DeadLetterConfigMutableBuilder[Self <: DeadLetterConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DeadLetterConfig](x: Self) {
       
-      @scala.inline
-      def setTargetArn(value: String): Self = StObject.set(x, "TargetArn", value.asInstanceOf[js.Any])
+      inline def setTargetArn(value: String): Self = StObject.set(x, "TargetArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetArnUndefined: Self = StObject.set(x, "TargetArn", js.undefined)
+      inline def setTargetArnUndefined: Self = StObject.set(x, "TargetArn", js.undefined)
     }
   }
   

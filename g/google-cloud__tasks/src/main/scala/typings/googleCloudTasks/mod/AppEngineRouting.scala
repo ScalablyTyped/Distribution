@@ -16,25 +16,19 @@ trait AppEngineRouting extends StObject {
 }
 object AppEngineRouting {
   
-  @scala.inline
-  def apply(host: String, instance: String, service: String, version: String): AppEngineRouting = {
+  inline def apply(host: String, instance: String, service: String, version: String): AppEngineRouting = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppEngineRouting]
   }
   
-  @scala.inline
-  implicit class AppEngineRoutingMutableBuilder[Self <: AppEngineRouting] (val x: Self) extends AnyVal {
+  extension [Self <: AppEngineRouting](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

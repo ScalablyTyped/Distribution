@@ -28,37 +28,27 @@ trait AwsRdsDbDomainMembership extends StObject {
 }
 object AwsRdsDbDomainMembership {
   
-  @scala.inline
-  def apply(): AwsRdsDbDomainMembership = {
+  inline def apply(): AwsRdsDbDomainMembership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRdsDbDomainMembership]
   }
   
-  @scala.inline
-  implicit class AwsRdsDbDomainMembershipMutableBuilder[Self <: AwsRdsDbDomainMembership] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRdsDbDomainMembership](x: Self) {
     
-    @scala.inline
-    def setDomain(value: NonEmptyString): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: NonEmptyString): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
-    @scala.inline
-    def setFqdn(value: NonEmptyString): Self = StObject.set(x, "Fqdn", value.asInstanceOf[js.Any])
+    inline def setFqdn(value: NonEmptyString): Self = StObject.set(x, "Fqdn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFqdnUndefined: Self = StObject.set(x, "Fqdn", js.undefined)
+    inline def setFqdnUndefined: Self = StObject.set(x, "Fqdn", js.undefined)
     
-    @scala.inline
-    def setIamRoleName(value: NonEmptyString): Self = StObject.set(x, "IamRoleName", value.asInstanceOf[js.Any])
+    inline def setIamRoleName(value: NonEmptyString): Self = StObject.set(x, "IamRoleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleNameUndefined: Self = StObject.set(x, "IamRoleName", js.undefined)
+    inline def setIamRoleNameUndefined: Self = StObject.set(x, "IamRoleName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

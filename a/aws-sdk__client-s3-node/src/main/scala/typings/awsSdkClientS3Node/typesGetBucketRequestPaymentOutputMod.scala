@@ -23,20 +23,16 @@ object typesGetBucketRequestPaymentOutputMod {
   }
   object GetBucketRequestPaymentOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketRequestPaymentOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketRequestPaymentOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketRequestPaymentOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketRequestPaymentOutputMutableBuilder[Self <: GetBucketRequestPaymentOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketRequestPaymentOutput](x: Self) {
       
-      @scala.inline
-      def setPayer(value: Requester | BucketOwner | String): Self = StObject.set(x, "Payer", value.asInstanceOf[js.Any])
+      inline def setPayer(value: Requester | BucketOwner | String): Self = StObject.set(x, "Payer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayerUndefined: Self = StObject.set(x, "Payer", js.undefined)
+      inline def setPayerUndefined: Self = StObject.set(x, "Payer", js.undefined)
     }
   }
 }

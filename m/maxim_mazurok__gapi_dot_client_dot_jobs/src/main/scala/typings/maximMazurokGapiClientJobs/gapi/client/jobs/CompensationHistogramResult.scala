@@ -14,25 +14,19 @@ trait CompensationHistogramResult extends StObject {
 }
 object CompensationHistogramResult {
   
-  @scala.inline
-  def apply(): CompensationHistogramResult = {
+  inline def apply(): CompensationHistogramResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompensationHistogramResult]
   }
   
-  @scala.inline
-  implicit class CompensationHistogramResultMutableBuilder[Self <: CompensationHistogramResult] (val x: Self) extends AnyVal {
+  extension [Self <: CompensationHistogramResult](x: Self) {
     
-    @scala.inline
-    def setResult(value: NumericBucketingResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: NumericBucketingResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

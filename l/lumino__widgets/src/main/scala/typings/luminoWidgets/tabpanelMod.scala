@@ -24,34 +24,34 @@ object tabpanelMod {
   class TabPanel () extends Widget {
     def this(options: IOptions) = this()
     
-    var _currentChanged: js.Any = js.native
+    /* private */ var _currentChanged: js.Any = js.native
     
     /**
       * Handle the `currentChanged` signal from the tab bar.
       */
-    var _onCurrentChanged: js.Any = js.native
+    /* private */ var _onCurrentChanged: js.Any = js.native
     
     /**
       * Handle the `tabActivateRequested` signal from the tab bar.
       */
-    var _onTabActivateRequested: js.Any = js.native
+    /* private */ var _onTabActivateRequested: js.Any = js.native
     
     /**
       * Handle the `tabCloseRequested` signal from the tab bar.
       */
-    var _onTabCloseRequested: js.Any = js.native
+    /* private */ var _onTabCloseRequested: js.Any = js.native
     
     /**
       * Handle the `tabMoved` signal from the tab bar.
       */
-    var _onTabMoved: js.Any = js.native
+    /* private */ var _onTabMoved: js.Any = js.native
     
     /**
       * Handle the `widgetRemoved` signal from the stacked panel.
       */
-    var _onWidgetRemoved: js.Any = js.native
+    /* private */ var _onWidgetRemoved: js.Any = js.native
     
-    var _tabPlacement: js.Any = js.native
+    /* private */ var _tabPlacement: js.Any = js.native
     
     /**
       * Add a widget to the end of the tab panel.
@@ -198,32 +198,24 @@ object tabpanelMod {
     }
     object ICurrentChangedArgs {
       
-      @scala.inline
-      def apply(currentIndex: Double, previousIndex: Double): ICurrentChangedArgs = {
+      inline def apply(currentIndex: Double, previousIndex: Double): ICurrentChangedArgs = {
         val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], previousIndex = previousIndex.asInstanceOf[js.Any], currentWidget = null, previousWidget = null)
         __obj.asInstanceOf[ICurrentChangedArgs]
       }
       
-      @scala.inline
-      implicit class ICurrentChangedArgsMutableBuilder[Self <: ICurrentChangedArgs] (val x: Self) extends AnyVal {
+      extension [Self <: ICurrentChangedArgs](x: Self) {
         
-        @scala.inline
-        def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+        inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrentWidget(value: Widget): Self = StObject.set(x, "currentWidget", value.asInstanceOf[js.Any])
+        inline def setCurrentWidget(value: Widget): Self = StObject.set(x, "currentWidget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrentWidgetNull: Self = StObject.set(x, "currentWidget", null)
+        inline def setCurrentWidgetNull: Self = StObject.set(x, "currentWidget", null)
         
-        @scala.inline
-        def setPreviousIndex(value: Double): Self = StObject.set(x, "previousIndex", value.asInstanceOf[js.Any])
+        inline def setPreviousIndex(value: Double): Self = StObject.set(x, "previousIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPreviousWidget(value: Widget): Self = StObject.set(x, "previousWidget", value.asInstanceOf[js.Any])
+        inline def setPreviousWidget(value: Widget): Self = StObject.set(x, "previousWidget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPreviousWidgetNull: Self = StObject.set(x, "previousWidget", null)
+        inline def setPreviousWidgetNull: Self = StObject.set(x, "previousWidget", null)
       }
     }
     
@@ -255,32 +247,24 @@ object tabpanelMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setRenderer(value: IRenderer[Widget]): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer[Widget]): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
         
-        @scala.inline
-        def setTabPlacement(value: TabPlacement): Self = StObject.set(x, "tabPlacement", value.asInstanceOf[js.Any])
+        inline def setTabPlacement(value: TabPlacement): Self = StObject.set(x, "tabPlacement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTabPlacementUndefined: Self = StObject.set(x, "tabPlacement", js.undefined)
+        inline def setTabPlacementUndefined: Self = StObject.set(x, "tabPlacement", js.undefined)
         
-        @scala.inline
-        def setTabsMovable(value: Boolean): Self = StObject.set(x, "tabsMovable", value.asInstanceOf[js.Any])
+        inline def setTabsMovable(value: Boolean): Self = StObject.set(x, "tabsMovable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTabsMovableUndefined: Self = StObject.set(x, "tabsMovable", js.undefined)
+        inline def setTabsMovableUndefined: Self = StObject.set(x, "tabsMovable", js.undefined)
       }
     }
     
@@ -296,17 +280,13 @@ object tabpanelMod {
     trait TabPlacement extends StObject
     object TabPlacement {
       
-      @scala.inline
-      def bottom: typings.luminoWidgets.luminoWidgetsStrings.bottom = "bottom".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.bottom]
+      inline def bottom: typings.luminoWidgets.luminoWidgetsStrings.bottom = "bottom".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.bottom]
       
-      @scala.inline
-      def left: typings.luminoWidgets.luminoWidgetsStrings.left = "left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.left]
+      inline def left: typings.luminoWidgets.luminoWidgetsStrings.left = "left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.left]
       
-      @scala.inline
-      def right: typings.luminoWidgets.luminoWidgetsStrings.right = "right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.right]
+      inline def right: typings.luminoWidgets.luminoWidgetsStrings.right = "right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.right]
       
-      @scala.inline
-      def top: typings.luminoWidgets.luminoWidgetsStrings.top = "top".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.top]
+      inline def top: typings.luminoWidgets.luminoWidgetsStrings.top = "top".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.top]
     }
   }
 }

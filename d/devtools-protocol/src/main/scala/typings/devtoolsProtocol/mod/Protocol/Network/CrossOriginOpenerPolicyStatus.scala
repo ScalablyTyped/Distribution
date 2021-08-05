@@ -16,31 +16,23 @@ trait CrossOriginOpenerPolicyStatus extends StObject {
 }
 object CrossOriginOpenerPolicyStatus {
   
-  @scala.inline
-  def apply(reportOnlyValue: CrossOriginOpenerPolicyValue, value: CrossOriginOpenerPolicyValue): CrossOriginOpenerPolicyStatus = {
+  inline def apply(reportOnlyValue: CrossOriginOpenerPolicyValue, value: CrossOriginOpenerPolicyValue): CrossOriginOpenerPolicyStatus = {
     val __obj = js.Dynamic.literal(reportOnlyValue = reportOnlyValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrossOriginOpenerPolicyStatus]
   }
   
-  @scala.inline
-  implicit class CrossOriginOpenerPolicyStatusMutableBuilder[Self <: CrossOriginOpenerPolicyStatus] (val x: Self) extends AnyVal {
+  extension [Self <: CrossOriginOpenerPolicyStatus](x: Self) {
     
-    @scala.inline
-    def setReportOnlyReportingEndpoint(value: String): Self = StObject.set(x, "reportOnlyReportingEndpoint", value.asInstanceOf[js.Any])
+    inline def setReportOnlyReportingEndpoint(value: String): Self = StObject.set(x, "reportOnlyReportingEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportOnlyReportingEndpointUndefined: Self = StObject.set(x, "reportOnlyReportingEndpoint", js.undefined)
+    inline def setReportOnlyReportingEndpointUndefined: Self = StObject.set(x, "reportOnlyReportingEndpoint", js.undefined)
     
-    @scala.inline
-    def setReportOnlyValue(value: CrossOriginOpenerPolicyValue): Self = StObject.set(x, "reportOnlyValue", value.asInstanceOf[js.Any])
+    inline def setReportOnlyValue(value: CrossOriginOpenerPolicyValue): Self = StObject.set(x, "reportOnlyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportingEndpoint(value: String): Self = StObject.set(x, "reportingEndpoint", value.asInstanceOf[js.Any])
+    inline def setReportingEndpoint(value: String): Self = StObject.set(x, "reportingEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportingEndpointUndefined: Self = StObject.set(x, "reportingEndpoint", js.undefined)
+    inline def setReportingEndpointUndefined: Self = StObject.set(x, "reportingEndpoint", js.undefined)
     
-    @scala.inline
-    def setValue(value: CrossOriginOpenerPolicyValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: CrossOriginOpenerPolicyValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -11,6 +11,5 @@ object offsetParentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def default(node: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
 }

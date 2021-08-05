@@ -19,8 +19,7 @@ trait PayloadType extends StObject {
 }
 object PayloadType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     payload: (Record[String, DpValue]) | (DevInfo[Record[String, DpType]]) | Boolean,
     `type`: dpData | devInfo_ | deviceOnline
   ): PayloadType = {
@@ -29,13 +28,10 @@ object PayloadType {
     __obj.asInstanceOf[PayloadType]
   }
   
-  @scala.inline
-  implicit class PayloadTypeMutableBuilder[Self <: PayloadType] (val x: Self) extends AnyVal {
+  extension [Self <: PayloadType](x: Self) {
     
-    @scala.inline
-    def setPayload(value: (Record[String, DpValue]) | (DevInfo[Record[String, DpType]]) | Boolean): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: (Record[String, DpValue]) | (DevInfo[Record[String, DpType]]) | Boolean): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: dpData | devInfo_ | deviceOnline): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: dpData | devInfo_ | deviceOnline): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

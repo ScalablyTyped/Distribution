@@ -10,16 +10,13 @@ trait As[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type
 }
 object As {
   
-  @scala.inline
-  def apply[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](as: K): As[K] = {
+  inline def apply[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](as: K): As[K] = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any])
     __obj.asInstanceOf[As[K]]
   }
   
-  @scala.inline
-  implicit class AsMutableBuilder[Self <: As[?], K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] (val x: Self & As[K]) extends AnyVal {
+  extension [Self <: As[?], K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](x: Self & As[K]) {
     
-    @scala.inline
-    def setAs(value: K): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: K): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
   }
 }

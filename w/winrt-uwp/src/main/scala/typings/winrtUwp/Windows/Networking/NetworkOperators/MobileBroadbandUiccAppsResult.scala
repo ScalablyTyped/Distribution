@@ -16,19 +16,15 @@ trait MobileBroadbandUiccAppsResult extends StObject {
 }
 object MobileBroadbandUiccAppsResult {
   
-  @scala.inline
-  def apply(status: MobileBroadbandUiccAppOperationStatus, uiccApps: IVectorView[MobileBroadbandUiccApp]): MobileBroadbandUiccAppsResult = {
+  inline def apply(status: MobileBroadbandUiccAppOperationStatus, uiccApps: IVectorView[MobileBroadbandUiccApp]): MobileBroadbandUiccAppsResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], uiccApps = uiccApps.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandUiccAppsResult]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandUiccAppsResultMutableBuilder[Self <: MobileBroadbandUiccAppsResult] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandUiccAppsResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: MobileBroadbandUiccAppOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MobileBroadbandUiccAppOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiccApps(value: IVectorView[MobileBroadbandUiccApp]): Self = StObject.set(x, "uiccApps", value.asInstanceOf[js.Any])
+    inline def setUiccApps(value: IVectorView[MobileBroadbandUiccApp]): Self = StObject.set(x, "uiccApps", value.asInstanceOf[js.Any])
   }
 }

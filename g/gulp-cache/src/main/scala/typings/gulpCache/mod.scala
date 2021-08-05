@@ -34,17 +34,14 @@ object mod extends Shortcut {
     }
     object ICacheOptions {
       
-      @scala.inline
-      def apply(cacheDirName: String): ICacheOptions = {
+      inline def apply(cacheDirName: String): ICacheOptions = {
         val __obj = js.Dynamic.literal(cacheDirName = cacheDirName.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICacheOptions]
       }
       
-      @scala.inline
-      implicit class ICacheOptionsMutableBuilder[Self <: ICacheOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ICacheOptions](x: Self) {
         
-        @scala.inline
-        def setCacheDirName(value: String): Self = StObject.set(x, "cacheDirName", value.asInstanceOf[js.Any])
+        inline def setCacheDirName(value: String): Self = StObject.set(x, "cacheDirName", value.asInstanceOf[js.Any])
       }
     }
     
@@ -92,49 +89,36 @@ object mod extends Shortcut {
     }
     object IGulpCacheOptions {
       
-      @scala.inline
-      def apply(): IGulpCacheOptions = {
+      inline def apply(): IGulpCacheOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IGulpCacheOptions]
       }
       
-      @scala.inline
-      implicit class IGulpCacheOptionsMutableBuilder[Self <: IGulpCacheOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IGulpCacheOptions](x: Self) {
         
-        @scala.inline
-        def setFileCache(value: IGulpCache): Self = StObject.set(x, "fileCache", value.asInstanceOf[js.Any])
+        inline def setFileCache(value: IGulpCache): Self = StObject.set(x, "fileCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFileCacheUndefined: Self = StObject.set(x, "fileCache", js.undefined)
+        inline def setFileCacheUndefined: Self = StObject.set(x, "fileCache", js.undefined)
         
-        @scala.inline
-        def setKey(
+        inline def setKey(
           value: (/* file */ File, /* callback */ js.UndefOr[js.Function2[/* err */ js.Any, /* result */ String, Unit]]) => String | js.Promise[String]
         ): Self = StObject.set(x, "key", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setSuccess(value: Boolean | Predicate[js.Any]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+        inline def setSuccess(value: Boolean | Predicate[js.Any]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuccessFunction1(value: js.Any => Boolean): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+        inline def setSuccessFunction1(value: js.Any => Boolean): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+        inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
         
-        @scala.inline
-        def setValue(value: /* result */ js.Any => js.Object | js.Promise[js.Object] | String): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+        inline def setValue(value: /* result */ js.Any => js.Object | js.Promise[js.Object] | String): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     

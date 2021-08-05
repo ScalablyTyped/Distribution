@@ -16,8 +16,7 @@ object useExpandedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useExpanded(
+  inline def useExpanded(
     hasContainerRefIsBrowsingRefIdDataRootIdsHighlightedRefSetHighlightedItemIdSelectedStoryIdOnSelectStoryId: ExpandedProps
   ): js.Tuple2[Record[String, Boolean], Dispatch[ExpandAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useExpanded")(hasContainerRefIsBrowsingRefIdDataRootIdsHighlightedRefSetHighlightedItemIdSelectedStoryIdOnSelectStoryId.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Record[String, Boolean], Dispatch[ExpandAction]]]
   
@@ -29,23 +28,18 @@ object useExpandedMod {
   }
   object ExpandAction {
     
-    @scala.inline
-    def apply(ids: js.Array[String], value: Boolean): ExpandAction = {
+    inline def apply(ids: js.Array[String], value: Boolean): ExpandAction = {
       val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpandAction]
     }
     
-    @scala.inline
-    implicit class ExpandActionMutableBuilder[Self <: ExpandAction] (val x: Self) extends AnyVal {
+    extension [Self <: ExpandAction](x: Self) {
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,8 +65,7 @@ object useExpandedMod {
   }
   object ExpandedProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containerRef: MutableRefObject[HTMLElement],
       data: StoriesHash,
       highlightedRef: MutableRefObject[Highlight],
@@ -86,41 +79,29 @@ object useExpandedMod {
       __obj.asInstanceOf[ExpandedProps]
     }
     
-    @scala.inline
-    implicit class ExpandedPropsMutableBuilder[Self <: ExpandedProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExpandedProps](x: Self) {
       
-      @scala.inline
-      def setContainerRef(value: MutableRefObject[HTMLElement]): Self = StObject.set(x, "containerRef", value.asInstanceOf[js.Any])
+      inline def setContainerRef(value: MutableRefObject[HTMLElement]): Self = StObject.set(x, "containerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: StoriesHash): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StoriesHash): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightedRef(value: MutableRefObject[Highlight]): Self = StObject.set(x, "highlightedRef", value.asInstanceOf[js.Any])
+      inline def setHighlightedRef(value: MutableRefObject[Highlight]): Self = StObject.set(x, "highlightedRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBrowsing(value: Boolean): Self = StObject.set(x, "isBrowsing", value.asInstanceOf[js.Any])
+      inline def setIsBrowsing(value: Boolean): Self = StObject.set(x, "isBrowsing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSelectStoryId(value: String => Unit): Self = StObject.set(x, "onSelectStoryId", js.Any.fromFunction1(value))
+      inline def setOnSelectStoryId(value: String => Unit): Self = StObject.set(x, "onSelectStoryId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+      inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootIds(value: js.Array[String]): Self = StObject.set(x, "rootIds", value.asInstanceOf[js.Any])
+      inline def setRootIds(value: js.Array[String]): Self = StObject.set(x, "rootIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootIdsVarargs(value: String*): Self = StObject.set(x, "rootIds", js.Array(value :_*))
+      inline def setRootIdsVarargs(value: String*): Self = StObject.set(x, "rootIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectedStoryId(value: String): Self = StObject.set(x, "selectedStoryId", value.asInstanceOf[js.Any])
+      inline def setSelectedStoryId(value: String): Self = StObject.set(x, "selectedStoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedStoryIdNull: Self = StObject.set(x, "selectedStoryId", null)
+      inline def setSelectedStoryIdNull: Self = StObject.set(x, "selectedStoryId", null)
       
-      @scala.inline
-      def setSetHighlightedItemId(value: String => Unit): Self = StObject.set(x, "setHighlightedItemId", js.Any.fromFunction1(value))
+      inline def setSetHighlightedItemId(value: String => Unit): Self = StObject.set(x, "setHighlightedItemId", js.Any.fromFunction1(value))
     }
   }
   

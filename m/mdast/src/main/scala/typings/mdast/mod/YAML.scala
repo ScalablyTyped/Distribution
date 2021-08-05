@@ -14,17 +14,14 @@ trait YAML
 }
 object YAML {
   
-  @scala.inline
-  def apply(value: js.Any): YAML = {
+  inline def apply(value: js.Any): YAML = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("yaml")
     __obj.asInstanceOf[YAML]
   }
   
-  @scala.inline
-  implicit class YAMLMutableBuilder[Self <: YAML] (val x: Self) extends AnyVal {
+  extension [Self <: YAML](x: Self) {
     
-    @scala.inline
-    def setType(value: yaml): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: yaml): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

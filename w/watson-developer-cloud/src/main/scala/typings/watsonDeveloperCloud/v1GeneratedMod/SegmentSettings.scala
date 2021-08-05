@@ -15,28 +15,21 @@ trait SegmentSettings extends StObject {
 }
 object SegmentSettings {
   
-  @scala.inline
-  def apply(): SegmentSettings = {
+  inline def apply(): SegmentSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentSettings]
   }
   
-  @scala.inline
-  implicit class SegmentSettingsMutableBuilder[Self <: SegmentSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentSettings](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setSelector_tags(value: js.Array[String]): Self = StObject.set(x, "selector_tags", value.asInstanceOf[js.Any])
+    inline def setSelector_tags(value: js.Array[String]): Self = StObject.set(x, "selector_tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector_tagsUndefined: Self = StObject.set(x, "selector_tags", js.undefined)
+    inline def setSelector_tagsUndefined: Self = StObject.set(x, "selector_tags", js.undefined)
     
-    @scala.inline
-    def setSelector_tagsVarargs(value: String*): Self = StObject.set(x, "selector_tags", js.Array(value :_*))
+    inline def setSelector_tagsVarargs(value: String*): Self = StObject.set(x, "selector_tags", js.Array(value :_*))
   }
 }

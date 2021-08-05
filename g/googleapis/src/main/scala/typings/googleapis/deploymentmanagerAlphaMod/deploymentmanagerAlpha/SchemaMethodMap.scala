@@ -41,43 +41,31 @@ trait SchemaMethodMap extends StObject {
 }
 object SchemaMethodMap {
   
-  @scala.inline
-  def apply(): SchemaMethodMap = {
+  inline def apply(): SchemaMethodMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMethodMap]
   }
   
-  @scala.inline
-  implicit class SchemaMethodMapMutableBuilder[Self <: SchemaMethodMap] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMethodMap](x: Self) {
     
-    @scala.inline
-    def setCreate(value: String): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: String): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
-    @scala.inline
-    def setGet(value: String): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: String): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setSetIamPolicy(value: String): Self = StObject.set(x, "setIamPolicy", value.asInstanceOf[js.Any])
+    inline def setSetIamPolicy(value: String): Self = StObject.set(x, "setIamPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetIamPolicyUndefined: Self = StObject.set(x, "setIamPolicy", js.undefined)
+    inline def setSetIamPolicyUndefined: Self = StObject.set(x, "setIamPolicy", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

@@ -21,20 +21,16 @@ object modalHeadingMod extends Shortcut {
   }
   object ModalHeadingProps {
     
-    @scala.inline
-    def apply(): ModalHeadingProps = {
+    inline def apply(): ModalHeadingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModalHeadingProps]
     }
     
-    @scala.inline
-    implicit class ModalHeadingPropsMutableBuilder[Self <: ModalHeadingProps] (val x: Self) extends AnyVal {
+    extension [Self <: ModalHeadingProps](x: Self) {
       
-      @scala.inline
-      def setHeadingAppearance(value: headingAppearance): Self = StObject.set(x, "headingAppearance", value.asInstanceOf[js.Any])
+      inline def setHeadingAppearance(value: headingAppearance): Self = StObject.set(x, "headingAppearance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadingAppearanceUndefined: Self = StObject.set(x, "headingAppearance", js.undefined)
+      inline def setHeadingAppearanceUndefined: Self = StObject.set(x, "headingAppearance", js.undefined)
     }
   }
   
@@ -50,10 +46,8 @@ object modalHeadingMod extends Shortcut {
   trait headingAppearance extends StObject
   object headingAppearance {
     
-    @scala.inline
-    def H2: typings.wixStyleReact.wixStyleReactStrings.H2 = "H2".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H2]
+    inline def H2: typings.wixStyleReact.wixStyleReactStrings.H2 = "H2".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H2]
     
-    @scala.inline
-    def custom: typings.wixStyleReact.wixStyleReactStrings.custom = "custom".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.custom]
+    inline def custom: typings.wixStyleReact.wixStyleReactStrings.custom = "custom".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.custom]
   }
 }

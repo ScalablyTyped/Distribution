@@ -16,25 +16,19 @@ trait LoopAnimationConfig extends StObject {
 }
 object LoopAnimationConfig {
   
-  @scala.inline
-  def apply(): LoopAnimationConfig = {
+  inline def apply(): LoopAnimationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoopAnimationConfig]
   }
   
-  @scala.inline
-  implicit class LoopAnimationConfigMutableBuilder[Self <: LoopAnimationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LoopAnimationConfig](x: Self) {
     
-    @scala.inline
-    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+    inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
-    @scala.inline
-    def setResetBeforeIteration(value: Boolean): Self = StObject.set(x, "resetBeforeIteration", value.asInstanceOf[js.Any])
+    inline def setResetBeforeIteration(value: Boolean): Self = StObject.set(x, "resetBeforeIteration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetBeforeIterationUndefined: Self = StObject.set(x, "resetBeforeIteration", js.undefined)
+    inline def setResetBeforeIterationUndefined: Self = StObject.set(x, "resetBeforeIteration", js.undefined)
   }
 }

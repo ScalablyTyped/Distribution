@@ -30,34 +30,25 @@ trait IgPivotGridDragAndDropSettings
 }
 object IgPivotGridDragAndDropSettings {
   
-  @scala.inline
-  def apply(): IgPivotGridDragAndDropSettings = {
+  inline def apply(): IgPivotGridDragAndDropSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotGridDragAndDropSettings]
   }
   
-  @scala.inline
-  implicit class IgPivotGridDragAndDropSettingsMutableBuilder[Self <: IgPivotGridDragAndDropSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotGridDragAndDropSettings](x: Self) {
     
-    @scala.inline
-    def setAppendTo(value: js.Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: js.Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+    inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
-    @scala.inline
-    def setContainment(value: Boolean | String | js.Array[js.Any]): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    inline def setContainment(value: Boolean | String | js.Array[js.Any]): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
+    inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
-    @scala.inline
-    def setContainmentVarargs(value: js.Any*): Self = StObject.set(x, "containment", js.Array(value :_*))
+    inline def setContainmentVarargs(value: js.Any*): Self = StObject.set(x, "containment", js.Array(value :_*))
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

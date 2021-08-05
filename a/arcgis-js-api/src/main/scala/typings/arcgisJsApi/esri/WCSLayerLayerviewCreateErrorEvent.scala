@@ -12,19 +12,15 @@ trait WCSLayerLayerviewCreateErrorEvent extends StObject {
 }
 object WCSLayerLayerviewCreateErrorEvent {
   
-  @scala.inline
-  def apply(error: Error, view: View): WCSLayerLayerviewCreateErrorEvent = {
+  inline def apply(error: Error, view: View): WCSLayerLayerviewCreateErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[WCSLayerLayerviewCreateErrorEvent]
   }
   
-  @scala.inline
-  implicit class WCSLayerLayerviewCreateErrorEventMutableBuilder[Self <: WCSLayerLayerviewCreateErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WCSLayerLayerviewCreateErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

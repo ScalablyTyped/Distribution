@@ -20,20 +20,16 @@ trait OtherPermission
 }
 object OtherPermission {
   
-  @scala.inline
-  def apply(operation: execute | http | sendto): OtherPermission = {
+  inline def apply(operation: execute | http | sendto): OtherPermission = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("other")
     __obj.asInstanceOf[OtherPermission]
   }
   
-  @scala.inline
-  implicit class OtherPermissionMutableBuilder[Self <: OtherPermission] (val x: Self) extends AnyVal {
+  extension [Self <: OtherPermission](x: Self) {
     
-    @scala.inline
-    def setOperation(value: execute | http | sendto): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: execute | http | sendto): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: other): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: other): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

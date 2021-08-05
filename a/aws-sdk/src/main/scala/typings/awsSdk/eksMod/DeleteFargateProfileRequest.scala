@@ -18,19 +18,15 @@ trait DeleteFargateProfileRequest extends StObject {
 }
 object DeleteFargateProfileRequest {
   
-  @scala.inline
-  def apply(clusterName: String, fargateProfileName: String): DeleteFargateProfileRequest = {
+  inline def apply(clusterName: String, fargateProfileName: String): DeleteFargateProfileRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], fargateProfileName = fargateProfileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFargateProfileRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFargateProfileRequestMutableBuilder[Self <: DeleteFargateProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFargateProfileRequest](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFargateProfileName(value: String): Self = StObject.set(x, "fargateProfileName", value.asInstanceOf[js.Any])
+    inline def setFargateProfileName(value: String): Self = StObject.set(x, "fargateProfileName", value.asInstanceOf[js.Any])
   }
 }

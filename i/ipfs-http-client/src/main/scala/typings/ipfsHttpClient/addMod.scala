@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object addMod {
   
-  @scala.inline
-  def apply(options: ClientOptions): js.Function2[
+  inline def apply(options: ClientOptions): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_add.Source */ /* input */ js.Any, 
     /* options */ js.UndefOr[
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_add.AddOptions */ js.Any) & HttpOptions

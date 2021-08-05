@@ -14,19 +14,15 @@ trait ClipOpEnumValues
 }
 object ClipOpEnumValues {
   
-  @scala.inline
-  def apply(Difference: ClipOp, Intersect: ClipOp, values: js.Array[Double]): ClipOpEnumValues = {
+  inline def apply(Difference: ClipOp, Intersect: ClipOp, values: js.Array[Double]): ClipOpEnumValues = {
     val __obj = js.Dynamic.literal(Difference = Difference.asInstanceOf[js.Any], Intersect = Intersect.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClipOpEnumValues]
   }
   
-  @scala.inline
-  implicit class ClipOpEnumValuesMutableBuilder[Self <: ClipOpEnumValues] (val x: Self) extends AnyVal {
+  extension [Self <: ClipOpEnumValues](x: Self) {
     
-    @scala.inline
-    def setDifference(value: ClipOp): Self = StObject.set(x, "Difference", value.asInstanceOf[js.Any])
+    inline def setDifference(value: ClipOp): Self = StObject.set(x, "Difference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersect(value: ClipOp): Self = StObject.set(x, "Intersect", value.asInstanceOf[js.Any])
+    inline def setIntersect(value: ClipOp): Self = StObject.set(x, "Intersect", value.asInstanceOf[js.Any])
   }
 }

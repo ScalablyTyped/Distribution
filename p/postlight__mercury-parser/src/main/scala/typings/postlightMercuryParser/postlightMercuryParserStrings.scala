@@ -8,26 +8,21 @@ object postlightMercuryParserStrings {
   
   @js.native
   sealed trait html extends StObject
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
   sealed trait ltr extends StObject
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait markdown extends StObject
-  @scala.inline
-  def markdown: markdown = "markdown".asInstanceOf[markdown]
+  inline def markdown: markdown = "markdown".asInstanceOf[markdown]
   
   @js.native
   sealed trait rtl extends StObject
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
   sealed trait text extends StObject
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
 }

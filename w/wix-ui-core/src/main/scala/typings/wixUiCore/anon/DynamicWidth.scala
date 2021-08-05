@@ -28,8 +28,7 @@ trait DynamicWidth extends StObject {
 }
 object DynamicWidth {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendTo: js.Any,
     dynamicWidth: js.Any,
     fixed: js.Any,
@@ -45,37 +44,26 @@ object DynamicWidth {
     __obj.asInstanceOf[DynamicWidth]
   }
   
-  @scala.inline
-  implicit class DynamicWidthMutableBuilder[Self <: DynamicWidth] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicWidth](x: Self) {
     
-    @scala.inline
-    def setAppendTo(value: js.Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: js.Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicWidth(value: js.Any): Self = StObject.set(x, "dynamicWidth", value.asInstanceOf[js.Any])
+    inline def setDynamicWidth(value: js.Any): Self = StObject.set(x, "dynamicWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixed(value: js.Any): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: js.Any): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlip(value: js.Any): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+    inline def setFlip(value: js.Any): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTestEnv(value: js.Any): Self = StObject.set(x, "isTestEnv", value.asInstanceOf[js.Any])
+    inline def setIsTestEnv(value: js.Any): Self = StObject.set(x, "isTestEnv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidth(value: js.Any): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: js.Any): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveBy(value: js.Any): Self = StObject.set(x, "moveBy", value.asInstanceOf[js.Any])
+    inline def setMoveBy(value: js.Any): Self = StObject.set(x, "moveBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacement(value: js.Any): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: js.Any): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldAnimate(value: js.Any): Self = StObject.set(x, "shouldAnimate", value.asInstanceOf[js.Any])
+    inline def setShouldAnimate(value: js.Any): Self = StObject.set(x, "shouldAnimate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

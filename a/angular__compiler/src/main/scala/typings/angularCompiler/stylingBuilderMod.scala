@@ -27,54 +27,54 @@ object stylingBuilderMod {
   class StylingBuilder () extends StObject {
     def this(_directiveExpr: Expression) = this()
     
-    var _buildClassInputs: js.Any = js.native
+    /* private */ var _buildClassInputs: js.Any = js.native
     
-    var _buildMapBasedInstruction: js.Any = js.native
+    /* private */ var _buildMapBasedInstruction: js.Any = js.native
     
-    var _buildSingleInputs: js.Any = js.native
+    /* private */ var _buildSingleInputs: js.Any = js.native
     
-    var _buildStyleInputs: js.Any = js.native
+    /* private */ var _buildStyleInputs: js.Any = js.native
     
-    var _checkForPipes: js.Any = js.native
+    /* private */ var _checkForPipes: js.Any = js.native
     
     /** the input for [class] (if it exists) */
-    var _classMapInput: js.Any = js.native
+    /* private */ var _classMapInput: js.Any = js.native
     
     /**
       * Represents the location of each class binding in the template
       * (e.g. `<div [class.big]="b" [class.hidden]="h">` implies
       * that `big=0` and `hidden=1`)
       */
-    var _classesIndex: js.Any = js.native
+    /* private */ var _classesIndex: js.Any = js.native
     
-    var _directiveExpr: js.Any = js.native
+    /* private */ var _directiveExpr: js.Any = js.native
     
-    var _firstStylingInput: js.Any = js.native
+    /* private */ var _firstStylingInput: js.Any = js.native
     
     /** Whether or not there are any static styling values present */
-    var _hasInitialValues: js.Any = js.native
+    /* private */ var _hasInitialValues: js.Any = js.native
     
-    var _initialClassValues: js.Any = js.native
+    /* private */ var _initialClassValues: js.Any = js.native
     
-    var _initialStyleValues: js.Any = js.native
+    /* private */ var _initialStyleValues: js.Any = js.native
     
-    var _lastStylingInput: js.Any = js.native
+    /* private */ var _lastStylingInput: js.Any = js.native
     
     /** an array of each [class.name] input */
-    var _singleClassInputs: js.Any = js.native
+    /* private */ var _singleClassInputs: js.Any = js.native
     
     /** an array of each [style.prop] input */
-    var _singleStyleInputs: js.Any = js.native
+    /* private */ var _singleStyleInputs: js.Any = js.native
     
     /** the input for [style] (if it exists) */
-    var _styleMapInput: js.Any = js.native
+    /* private */ var _styleMapInput: js.Any = js.native
     
     /**
       * Represents the location of each style binding in the template
       * (e.g. `<div [style.width]="w" [style.height]="h">` implies
       * that `width=0` and `height=1`)
       */
-    var _stylesIndex: js.Any = js.native
+    /* private */ var _stylesIndex: js.Any = js.native
     
     /**
       * Builds an instruction with all the expressions and parameters for `elementHostAttrs`.
@@ -153,8 +153,7 @@ object stylingBuilderMod {
     def registerStyleInput(name: String, isMapBased: Boolean, value: AST, sourceSpan: ParseSourceSpan, suffix: String): BoundStylingEntry | Null = js.native
   }
   
-  @scala.inline
-  def parseProperty(name: String): HasOverrideFlag = ^.asInstanceOf[js.Dynamic].applyDynamic("parseProperty")(name.asInstanceOf[js.Any]).asInstanceOf[HasOverrideFlag]
+  inline def parseProperty(name: String): HasOverrideFlag = ^.asInstanceOf[js.Dynamic].applyDynamic("parseProperty")(name.asInstanceOf[js.Any]).asInstanceOf[HasOverrideFlag]
   
   /**
     * An internal record of the input data for a styling binding
@@ -173,35 +172,26 @@ object stylingBuilderMod {
   }
   object BoundStylingEntry {
     
-    @scala.inline
-    def apply(hasOverrideFlag: Boolean, sourceSpan: ParseSourceSpan, value: AST): BoundStylingEntry = {
+    inline def apply(hasOverrideFlag: Boolean, sourceSpan: ParseSourceSpan, value: AST): BoundStylingEntry = {
       val __obj = js.Dynamic.literal(hasOverrideFlag = hasOverrideFlag.asInstanceOf[js.Any], sourceSpan = sourceSpan.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], name = null, suffix = null)
       __obj.asInstanceOf[BoundStylingEntry]
     }
     
-    @scala.inline
-    implicit class BoundStylingEntryMutableBuilder[Self <: BoundStylingEntry] (val x: Self) extends AnyVal {
+    extension [Self <: BoundStylingEntry](x: Self) {
       
-      @scala.inline
-      def setHasOverrideFlag(value: Boolean): Self = StObject.set(x, "hasOverrideFlag", value.asInstanceOf[js.Any])
+      inline def setHasOverrideFlag(value: Boolean): Self = StObject.set(x, "hasOverrideFlag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
+      inline def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixNull: Self = StObject.set(x, "suffix", null)
+      inline def setSuffixNull: Self = StObject.set(x, "suffix", null)
       
-      @scala.inline
-      def setValue(value: AST): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: AST): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -214,23 +204,18 @@ object stylingBuilderMod {
   }
   object StylingInstruction {
     
-    @scala.inline
-    def apply(calls: js.Array[StylingInstructionCall], reference: ExternalReference): StylingInstruction = {
+    inline def apply(calls: js.Array[StylingInstructionCall], reference: ExternalReference): StylingInstruction = {
       val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
       __obj.asInstanceOf[StylingInstruction]
     }
     
-    @scala.inline
-    implicit class StylingInstructionMutableBuilder[Self <: StylingInstruction] (val x: Self) extends AnyVal {
+    extension [Self <: StylingInstruction](x: Self) {
       
-      @scala.inline
-      def setCalls(value: js.Array[StylingInstructionCall]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+      inline def setCalls(value: js.Array[StylingInstructionCall]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallsVarargs(value: StylingInstructionCall*): Self = StObject.set(x, "calls", js.Array(value :_*))
+      inline def setCallsVarargs(value: StylingInstructionCall*): Self = StObject.set(x, "calls", js.Array(value :_*))
       
-      @scala.inline
-      def setReference(value: ExternalReference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      inline def setReference(value: ExternalReference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     }
   }
   
@@ -246,8 +231,7 @@ object stylingBuilderMod {
   }
   object StylingInstructionCall {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allocateBindingSlots: Double,
       params: js.Function1[/* value */ js.Any, Expression | js.Array[Expression]] => js.Array[Expression],
       supportsInterpolation: Boolean
@@ -256,23 +240,17 @@ object stylingBuilderMod {
       __obj.asInstanceOf[StylingInstructionCall]
     }
     
-    @scala.inline
-    implicit class StylingInstructionCallMutableBuilder[Self <: StylingInstructionCall] (val x: Self) extends AnyVal {
+    extension [Self <: StylingInstructionCall](x: Self) {
       
-      @scala.inline
-      def setAllocateBindingSlots(value: Double): Self = StObject.set(x, "allocateBindingSlots", value.asInstanceOf[js.Any])
+      inline def setAllocateBindingSlots(value: Double): Self = StObject.set(x, "allocateBindingSlots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Function1[/* value */ js.Any, Expression | js.Array[Expression]] => js.Array[Expression]): Self = StObject.set(x, "params", js.Any.fromFunction1(value))
+      inline def setParams(value: js.Function1[/* value */ js.Any, Expression | js.Array[Expression]] => js.Array[Expression]): Self = StObject.set(x, "params", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
+      inline def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceSpanNull: Self = StObject.set(x, "sourceSpan", null)
+      inline def setSourceSpanNull: Self = StObject.set(x, "sourceSpan", null)
       
-      @scala.inline
-      def setSupportsInterpolation(value: Boolean): Self = StObject.set(x, "supportsInterpolation", value.asInstanceOf[js.Any])
+      inline def setSupportsInterpolation(value: Boolean): Self = StObject.set(x, "supportsInterpolation", value.asInstanceOf[js.Any])
     }
   }
 }

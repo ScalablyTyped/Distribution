@@ -14,13 +14,12 @@ trait Email extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.Email_typekey")
+  /* private */ @JSName("Word.Email_typekey")
   var WordDotEmail_typekey: Email
 }
 object Email {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     CurrentEmailAuthor: EmailAuthor,
@@ -32,22 +31,16 @@ object Email {
     __obj.asInstanceOf[Email]
   }
   
-  @scala.inline
-  implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+  extension [Self <: Email](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentEmailAuthor(value: EmailAuthor): Self = StObject.set(x, "CurrentEmailAuthor", value.asInstanceOf[js.Any])
+    inline def setCurrentEmailAuthor(value: EmailAuthor): Self = StObject.set(x, "CurrentEmailAuthor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotEmail_typekey(value: Email): Self = StObject.set(x, "Word.Email_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotEmail_typekey(value: Email): Self = StObject.set(x, "Word.Email_typekey", value.asInstanceOf[js.Any])
   }
 }

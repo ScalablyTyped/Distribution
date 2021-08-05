@@ -11,19 +11,15 @@ trait `3` extends StObject {
 }
 object `3` {
   
-  @scala.inline
-  def apply(data: js.Array[Allowmergecommit]): `3` = {
+  inline def apply(data: js.Array[Allowmergecommit]): `3` = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[`3`]
   }
   
-  @scala.inline
-  implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
+  extension [Self <: `3`](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[Allowmergecommit]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Allowmergecommit]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Allowmergecommit*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Allowmergecommit*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

@@ -18,20 +18,16 @@ object rangeOptionsMod {
   }
   object RangeOptions {
     
-    @scala.inline
-    def apply(): RangeOptions = {
+    inline def apply(): RangeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RangeOptions]
     }
     
-    @scala.inline
-    implicit class RangeOptionsMutableBuilder[Self <: RangeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RangeOptions](x: Self) {
       
-      @scala.inline
-      def setAllText(value: String): Self = StObject.set(x, "allText", value.asInstanceOf[js.Any])
+      inline def setAllText(value: String): Self = StObject.set(x, "allText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllTextUndefined: Self = StObject.set(x, "allText", js.undefined)
+      inline def setAllTextUndefined: Self = StObject.set(x, "allText", js.undefined)
     }
   }
 }

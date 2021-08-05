@@ -21,22 +21,17 @@ trait CheckIsSupportSoterAuthenticationSuccessCallbackResult extends StObject {
 }
 object CheckIsSupportSoterAuthenticationSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, supportMode: js.Array[fingerPrint | facial | speech]): CheckIsSupportSoterAuthenticationSuccessCallbackResult = {
+  inline def apply(errMsg: String, supportMode: js.Array[fingerPrint | facial | speech]): CheckIsSupportSoterAuthenticationSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], supportMode = supportMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckIsSupportSoterAuthenticationSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class CheckIsSupportSoterAuthenticationSuccessCallbackResultMutableBuilder[Self <: CheckIsSupportSoterAuthenticationSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: CheckIsSupportSoterAuthenticationSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportMode(value: js.Array[fingerPrint | facial | speech]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
+    inline def setSupportMode(value: js.Array[fingerPrint | facial | speech]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportModeVarargs(value: (fingerPrint | facial | speech)*): Self = StObject.set(x, "supportMode", js.Array(value :_*))
+    inline def setSupportModeVarargs(value: (fingerPrint | facial | speech)*): Self = StObject.set(x, "supportMode", js.Array(value :_*))
   }
 }

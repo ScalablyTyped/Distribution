@@ -17,8 +17,7 @@ trait ParametersEnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint exte
 }
 object ParametersEnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint,
     request: EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersEnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint {
     __obj.asInstanceOf[ParametersEnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpointMutableBuilder[Self <: ParametersEnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait Subscriber extends StObject {
 }
 object Subscriber {
   
-  @scala.inline
-  def apply(Address: SubscriberAddress, SubscriptionType: SubscriptionType): Subscriber = {
+  inline def apply(Address: SubscriberAddress, SubscriptionType: SubscriptionType): Subscriber = {
     val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], SubscriptionType = SubscriptionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subscriber]
   }
   
-  @scala.inline
-  implicit class SubscriberMutableBuilder[Self <: Subscriber] (val x: Self) extends AnyVal {
+  extension [Self <: Subscriber](x: Self) {
     
-    @scala.inline
-    def setAddress(value: SubscriberAddress): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: SubscriberAddress): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionType(value: SubscriptionType): Self = StObject.set(x, "SubscriptionType", value.asInstanceOf[js.Any])
+    inline def setSubscriptionType(value: SubscriptionType): Self = StObject.set(x, "SubscriptionType", value.asInstanceOf[js.Any])
   }
 }

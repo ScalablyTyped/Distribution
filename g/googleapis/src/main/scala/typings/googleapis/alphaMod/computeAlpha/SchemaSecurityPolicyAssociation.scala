@@ -23,31 +23,23 @@ trait SchemaSecurityPolicyAssociation extends StObject {
 }
 object SchemaSecurityPolicyAssociation {
   
-  @scala.inline
-  def apply(): SchemaSecurityPolicyAssociation = {
+  inline def apply(): SchemaSecurityPolicyAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityPolicyAssociation]
   }
   
-  @scala.inline
-  implicit class SchemaSecurityPolicyAssociationMutableBuilder[Self <: SchemaSecurityPolicyAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecurityPolicyAssociation](x: Self) {
     
-    @scala.inline
-    def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
+    inline def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
+    inline def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSecurityPolicyId(value: String): Self = StObject.set(x, "securityPolicyId", value.asInstanceOf[js.Any])
+    inline def setSecurityPolicyId(value: String): Self = StObject.set(x, "securityPolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityPolicyIdUndefined: Self = StObject.set(x, "securityPolicyId", js.undefined)
+    inline def setSecurityPolicyIdUndefined: Self = StObject.set(x, "securityPolicyId", js.undefined)
   }
 }

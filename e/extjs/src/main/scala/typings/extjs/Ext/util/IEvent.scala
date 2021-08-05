@@ -14,19 +14,15 @@ trait IEvent
 }
 object IEvent {
   
-  @scala.inline
-  def apply(): IEvent = {
+  inline def apply(): IEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEvent]
   }
   
-  @scala.inline
-  implicit class IEventMutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IEvent](x: Self) {
     
-    @scala.inline
-    def setIsEvent(value: Boolean): Self = StObject.set(x, "isEvent", value.asInstanceOf[js.Any])
+    inline def setIsEvent(value: Boolean): Self = StObject.set(x, "isEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEventUndefined: Self = StObject.set(x, "isEvent", js.undefined)
+    inline def setIsEventUndefined: Self = StObject.set(x, "isEvent", js.undefined)
   }
 }

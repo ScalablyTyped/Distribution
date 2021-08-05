@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.TaskPaneObject")
 @js.native
-class TaskPaneObject protected ()
+/* private */ class TaskPaneObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.TaskPaneObject {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.TaskPaneObject_typekey")
   var InfoPathDotTaskPaneObject_typekey: typings.activexInfopath.InfoPath.TaskPaneObject = js.native
   

@@ -15,19 +15,15 @@ trait TypeofWaitingPopup extends StObject {
 }
 object TypeofWaitingPopup {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: WaitingPopup): TypeofWaitingPopup = {
+  inline def apply(Locale: js.Any, fn: WaitingPopup): TypeofWaitingPopup = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofWaitingPopup]
   }
   
-  @scala.inline
-  implicit class TypeofWaitingPopupMutableBuilder[Self <: TypeofWaitingPopup] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofWaitingPopup](x: Self) {
     
-    @scala.inline
-    def setFn(value: WaitingPopup): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: WaitingPopup): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

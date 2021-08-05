@@ -66,8 +66,7 @@ trait XObjectInspector
 }
 object XObjectInspector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Frame: XFrame,
     InspectorModel: XObjectInspectorModel,
     InspectorUI: XObjectInspectorUI,
@@ -94,16 +93,12 @@ object XObjectInspector {
     __obj.asInstanceOf[XObjectInspector]
   }
   
-  @scala.inline
-  implicit class XObjectInspectorMutableBuilder[Self <: XObjectInspector] (val x: Self) extends AnyVal {
+  extension [Self <: XObjectInspector](x: Self) {
     
-    @scala.inline
-    def setInspect(value: SeqEquiv[XInterface] => Unit): Self = StObject.set(x, "inspect", js.Any.fromFunction1(value))
+    inline def setInspect(value: SeqEquiv[XInterface] => Unit): Self = StObject.set(x, "inspect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInspectorModel(value: XObjectInspectorModel): Self = StObject.set(x, "InspectorModel", value.asInstanceOf[js.Any])
+    inline def setInspectorModel(value: XObjectInspectorModel): Self = StObject.set(x, "InspectorModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectorUI(value: XObjectInspectorUI): Self = StObject.set(x, "InspectorUI", value.asInstanceOf[js.Any])
+    inline def setInspectorUI(value: XObjectInspectorUI): Self = StObject.set(x, "InspectorUI", value.asInstanceOf[js.Any])
   }
 }

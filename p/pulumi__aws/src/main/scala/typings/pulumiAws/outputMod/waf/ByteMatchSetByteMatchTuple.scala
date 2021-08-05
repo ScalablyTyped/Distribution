@@ -38,8 +38,7 @@ trait ByteMatchSetByteMatchTuple extends StObject {
 }
 object ByteMatchSetByteMatchTuple {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fieldToMatch: ByteMatchSetByteMatchTupleFieldToMatch,
     positionalConstraint: String,
     textTransformation: String
@@ -48,22 +47,16 @@ object ByteMatchSetByteMatchTuple {
     __obj.asInstanceOf[ByteMatchSetByteMatchTuple]
   }
   
-  @scala.inline
-  implicit class ByteMatchSetByteMatchTupleMutableBuilder[Self <: ByteMatchSetByteMatchTuple] (val x: Self) extends AnyVal {
+  extension [Self <: ByteMatchSetByteMatchTuple](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(value: ByteMatchSetByteMatchTupleFieldToMatch): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: ByteMatchSetByteMatchTupleFieldToMatch): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionalConstraint(value: String): Self = StObject.set(x, "positionalConstraint", value.asInstanceOf[js.Any])
+    inline def setPositionalConstraint(value: String): Self = StObject.set(x, "positionalConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetString(value: String): Self = StObject.set(x, "targetString", value.asInstanceOf[js.Any])
+    inline def setTargetString(value: String): Self = StObject.set(x, "targetString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetStringUndefined: Self = StObject.set(x, "targetString", js.undefined)
+    inline def setTargetStringUndefined: Self = StObject.set(x, "targetString", js.undefined)
     
-    @scala.inline
-    def setTextTransformation(value: String): Self = StObject.set(x, "textTransformation", value.asInstanceOf[js.Any])
+    inline def setTextTransformation(value: String): Self = StObject.set(x, "textTransformation", value.asInstanceOf[js.Any])
   }
 }

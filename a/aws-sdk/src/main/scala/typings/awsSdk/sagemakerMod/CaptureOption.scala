@@ -13,16 +13,13 @@ trait CaptureOption extends StObject {
 }
 object CaptureOption {
   
-  @scala.inline
-  def apply(CaptureMode: CaptureMode): CaptureOption = {
+  inline def apply(CaptureMode: CaptureMode): CaptureOption = {
     val __obj = js.Dynamic.literal(CaptureMode = CaptureMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureOption]
   }
   
-  @scala.inline
-  implicit class CaptureOptionMutableBuilder[Self <: CaptureOption] (val x: Self) extends AnyVal {
+  extension [Self <: CaptureOption](x: Self) {
     
-    @scala.inline
-    def setCaptureMode(value: CaptureMode): Self = StObject.set(x, "CaptureMode", value.asInstanceOf[js.Any])
+    inline def setCaptureMode(value: CaptureMode): Self = StObject.set(x, "CaptureMode", value.asInstanceOf[js.Any])
   }
 }

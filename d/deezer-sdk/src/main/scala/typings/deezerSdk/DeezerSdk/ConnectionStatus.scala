@@ -16,15 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConnectionStatus extends StObject
 object ConnectionStatus {
   
-  @scala.inline
-  def connected: typings.deezerSdk.deezerSdkStrings.connected = "connected".asInstanceOf[typings.deezerSdk.deezerSdkStrings.connected]
+  inline def connected: typings.deezerSdk.deezerSdkStrings.connected = "connected".asInstanceOf[typings.deezerSdk.deezerSdkStrings.connected]
   
-  @scala.inline
-  def notConnected: typings.deezerSdk.deezerSdkStrings.notConnected = "notConnected".asInstanceOf[typings.deezerSdk.deezerSdkStrings.notConnected]
+  inline def notConnected: typings.deezerSdk.deezerSdkStrings.notConnected = "notConnected".asInstanceOf[typings.deezerSdk.deezerSdkStrings.notConnected]
   
-  @scala.inline
-  def not_authorized: typings.deezerSdk.deezerSdkStrings.not_authorized = "not_authorized".asInstanceOf[typings.deezerSdk.deezerSdkStrings.not_authorized]
+  inline def not_authorized: typings.deezerSdk.deezerSdkStrings.not_authorized = "not_authorized".asInstanceOf[typings.deezerSdk.deezerSdkStrings.not_authorized]
   
-  @scala.inline
-  def unknown: typings.deezerSdk.deezerSdkStrings.unknown = "unknown".asInstanceOf[typings.deezerSdk.deezerSdkStrings.unknown]
+  inline def unknown: typings.deezerSdk.deezerSdkStrings.unknown = "unknown".asInstanceOf[typings.deezerSdk.deezerSdkStrings.unknown]
 }

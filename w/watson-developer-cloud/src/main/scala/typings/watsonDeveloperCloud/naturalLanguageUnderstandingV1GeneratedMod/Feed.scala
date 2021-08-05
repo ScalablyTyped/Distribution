@@ -12,19 +12,15 @@ trait Feed extends StObject {
 }
 object Feed {
   
-  @scala.inline
-  def apply(): Feed = {
+  inline def apply(): Feed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Feed]
   }
   
-  @scala.inline
-  implicit class FeedMutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
+  extension [Self <: Feed](x: Self) {
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
   }
 }

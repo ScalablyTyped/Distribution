@@ -32,8 +32,7 @@ object Query {
     * @return {body[]} The bodies matching the query
     */
   /* static member */
-  @scala.inline
-  def point(bodies: js.Array[BodyType], point: typings.phaser.MatterJS.Vector): js.Array[BodyType] = (^.asInstanceOf[js.Dynamic].applyDynamic("point")(bodies.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[js.Array[BodyType]]
+  inline def point(bodies: js.Array[BodyType], point: typings.phaser.MatterJS.Vector): js.Array[BodyType] = (^.asInstanceOf[js.Dynamic].applyDynamic("point")(bodies.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[js.Array[BodyType]]
   
   /**
     * Casts a ray segment against a set of bodies and returns all collisions, ray width is optional. Intersection points are not provided.
@@ -45,14 +44,12 @@ object Query {
     * @return {object[]} Collisions
     */
   /* static member */
-  @scala.inline
-  def ray(
+  inline def ray(
     bodies: js.Array[BodyType],
     startPoint: typings.phaser.MatterJS.Vector,
     endPoint: typings.phaser.MatterJS.Vector
   ): js.Array[ICollisionData] = (^.asInstanceOf[js.Dynamic].applyDynamic("ray")(bodies.asInstanceOf[js.Any], startPoint.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any])).asInstanceOf[js.Array[ICollisionData]]
-  @scala.inline
-  def ray(
+  inline def ray(
     bodies: js.Array[BodyType],
     startPoint: typings.phaser.MatterJS.Vector,
     endPoint: typings.phaser.MatterJS.Vector,
@@ -68,8 +65,6 @@ object Query {
     * @return {body[]} The bodies matching the query
     */
   /* static member */
-  @scala.inline
-  def region(bodies: js.Array[BodyType], bounds: typings.phaser.MatterJS.Bounds): js.Array[BodyType] = (^.asInstanceOf[js.Dynamic].applyDynamic("region")(bodies.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[js.Array[BodyType]]
-  @scala.inline
-  def region(bodies: js.Array[BodyType], bounds: typings.phaser.MatterJS.Bounds, outside: Boolean): js.Array[BodyType] = (^.asInstanceOf[js.Dynamic].applyDynamic("region")(bodies.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], outside.asInstanceOf[js.Any])).asInstanceOf[js.Array[BodyType]]
+  inline def region(bodies: js.Array[BodyType], bounds: typings.phaser.MatterJS.Bounds): js.Array[BodyType] = (^.asInstanceOf[js.Dynamic].applyDynamic("region")(bodies.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[js.Array[BodyType]]
+  inline def region(bodies: js.Array[BodyType], bounds: typings.phaser.MatterJS.Bounds, outside: Boolean): js.Array[BodyType] = (^.asInstanceOf[js.Dynamic].applyDynamic("region")(bodies.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], outside.asInstanceOf[js.Any])).asInstanceOf[js.Array[BodyType]]
 }

@@ -18,28 +18,21 @@ trait GetTemplateOutput extends StObject {
 }
 object GetTemplateOutput {
   
-  @scala.inline
-  def apply(): GetTemplateOutput = {
+  inline def apply(): GetTemplateOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTemplateOutput]
   }
   
-  @scala.inline
-  implicit class GetTemplateOutputMutableBuilder[Self <: GetTemplateOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetTemplateOutput](x: Self) {
     
-    @scala.inline
-    def setStagesAvailable(value: StageList): Self = StObject.set(x, "StagesAvailable", value.asInstanceOf[js.Any])
+    inline def setStagesAvailable(value: StageList): Self = StObject.set(x, "StagesAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStagesAvailableUndefined: Self = StObject.set(x, "StagesAvailable", js.undefined)
+    inline def setStagesAvailableUndefined: Self = StObject.set(x, "StagesAvailable", js.undefined)
     
-    @scala.inline
-    def setStagesAvailableVarargs(value: TemplateStage*): Self = StObject.set(x, "StagesAvailable", js.Array(value :_*))
+    inline def setStagesAvailableVarargs(value: TemplateStage*): Self = StObject.set(x, "StagesAvailable", js.Array(value :_*))
     
-    @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "TemplateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "TemplateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateBodyUndefined: Self = StObject.set(x, "TemplateBody", js.undefined)
+    inline def setTemplateBodyUndefined: Self = StObject.set(x, "TemplateBody", js.undefined)
   }
 }

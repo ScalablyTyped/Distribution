@@ -182,6 +182,5 @@ object URI {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(uri: String): URI = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(uri.asInstanceOf[js.Any]).asInstanceOf[URI]
+  inline def parse(uri: String): URI = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(uri.asInstanceOf[js.Any]).asInstanceOf[URI]
 }

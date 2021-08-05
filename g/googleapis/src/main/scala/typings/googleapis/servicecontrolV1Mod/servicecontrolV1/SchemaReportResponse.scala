@@ -41,37 +41,27 @@ trait SchemaReportResponse extends StObject {
 }
 object SchemaReportResponse {
   
-  @scala.inline
-  def apply(): SchemaReportResponse = {
+  inline def apply(): SchemaReportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReportResponse]
   }
   
-  @scala.inline
-  implicit class SchemaReportResponseMutableBuilder[Self <: SchemaReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReportResponse](x: Self) {
     
-    @scala.inline
-    def setReportErrors(value: js.Array[SchemaReportError]): Self = StObject.set(x, "reportErrors", value.asInstanceOf[js.Any])
+    inline def setReportErrors(value: js.Array[SchemaReportError]): Self = StObject.set(x, "reportErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportErrorsUndefined: Self = StObject.set(x, "reportErrors", js.undefined)
+    inline def setReportErrorsUndefined: Self = StObject.set(x, "reportErrors", js.undefined)
     
-    @scala.inline
-    def setReportErrorsVarargs(value: SchemaReportError*): Self = StObject.set(x, "reportErrors", js.Array(value :_*))
+    inline def setReportErrorsVarargs(value: SchemaReportError*): Self = StObject.set(x, "reportErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setReportInfos(value: js.Array[SchemaReportInfo]): Self = StObject.set(x, "reportInfos", value.asInstanceOf[js.Any])
+    inline def setReportInfos(value: js.Array[SchemaReportInfo]): Self = StObject.set(x, "reportInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportInfosUndefined: Self = StObject.set(x, "reportInfos", js.undefined)
+    inline def setReportInfosUndefined: Self = StObject.set(x, "reportInfos", js.undefined)
     
-    @scala.inline
-    def setReportInfosVarargs(value: SchemaReportInfo*): Self = StObject.set(x, "reportInfos", js.Array(value :_*))
+    inline def setReportInfosVarargs(value: SchemaReportInfo*): Self = StObject.set(x, "reportInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
+    inline def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
+    inline def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
   }
 }

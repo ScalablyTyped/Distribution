@@ -15,16 +15,13 @@ trait CSSPerspective
 }
 object CSSPerspective {
   
-  @scala.inline
-  def apply(is2D: Boolean, length: CSSNumericValue, toMatrix: () => DOMMatrix): CSSPerspective = {
+  inline def apply(is2D: Boolean, length: CSSNumericValue, toMatrix: () => DOMMatrix): CSSPerspective = {
     val __obj = js.Dynamic.literal(is2D = is2D.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], toMatrix = js.Any.fromFunction0(toMatrix))
     __obj.asInstanceOf[CSSPerspective]
   }
   
-  @scala.inline
-  implicit class CSSPerspectiveMutableBuilder[Self <: CSSPerspective] (val x: Self) extends AnyVal {
+  extension [Self <: CSSPerspective](x: Self) {
     
-    @scala.inline
-    def setLength(value: CSSNumericValue): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: CSSNumericValue): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

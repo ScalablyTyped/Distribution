@@ -10,16 +10,13 @@ trait OperationString extends StObject {
 }
 object OperationString {
   
-  @scala.inline
-  def apply(operation: String): OperationString = {
+  inline def apply(operation: String): OperationString = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationString]
   }
   
-  @scala.inline
-  implicit class OperationStringMutableBuilder[Self <: OperationString] (val x: Self) extends AnyVal {
+  extension [Self <: OperationString](x: Self) {
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

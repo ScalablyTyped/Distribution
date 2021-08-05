@@ -21,13 +21,10 @@ object progressMod {
   @js.native
   val ProgressFeature: Feature[_RemoteWindow, WindowProgress] = js.native
   
-  @scala.inline
-  def attachPartialResult[R](connection: ProgressContext, params: PartialResultParams): js.UndefOr[ResultProgress[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachPartialResult")(connection.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultProgress[R]]]
+  inline def attachPartialResult[R](connection: ProgressContext, params: PartialResultParams): js.UndefOr[ResultProgress[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachPartialResult")(connection.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultProgress[R]]]
   
-  @scala.inline
-  def attachWorkDone(connection: ProgressContext): WorkDoneProgress = ^.asInstanceOf[js.Dynamic].applyDynamic("attachWorkDone")(connection.asInstanceOf[js.Any]).asInstanceOf[WorkDoneProgress]
-  @scala.inline
-  def attachWorkDone(connection: ProgressContext, params: WorkDoneProgressParams): WorkDoneProgress = (^.asInstanceOf[js.Dynamic].applyDynamic("attachWorkDone")(connection.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[WorkDoneProgress]
+  inline def attachWorkDone(connection: ProgressContext): WorkDoneProgress = ^.asInstanceOf[js.Dynamic].applyDynamic("attachWorkDone")(connection.asInstanceOf[js.Any]).asInstanceOf[WorkDoneProgress]
+  inline def attachWorkDone(connection: ProgressContext, params: WorkDoneProgressParams): WorkDoneProgress = (^.asInstanceOf[js.Dynamic].applyDynamic("attachWorkDone")(connection.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[WorkDoneProgress]
   
   trait ProgressContext extends StObject {
     
@@ -35,17 +32,14 @@ object progressMod {
   }
   object ProgressContext {
     
-    @scala.inline
-    def apply(sendProgress: (ProgressType[js.Any], ProgressToken, js.Any) => Unit): ProgressContext = {
+    inline def apply(sendProgress: (ProgressType[js.Any], ProgressToken, js.Any) => Unit): ProgressContext = {
       val __obj = js.Dynamic.literal(sendProgress = js.Any.fromFunction3(sendProgress))
       __obj.asInstanceOf[ProgressContext]
     }
     
-    @scala.inline
-    implicit class ProgressContextMutableBuilder[Self <: ProgressContext] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressContext](x: Self) {
       
-      @scala.inline
-      def setSendProgress(value: (ProgressType[js.Any], ProgressToken, js.Any) => Unit): Self = StObject.set(x, "sendProgress", js.Any.fromFunction3(value))
+      inline def setSendProgress(value: (ProgressType[js.Any], ProgressToken, js.Any) => Unit): Self = StObject.set(x, "sendProgress", js.Any.fromFunction3(value))
     }
   }
   
@@ -55,17 +49,14 @@ object progressMod {
   }
   object ResultProgress {
     
-    @scala.inline
-    def apply[R](report: R => Unit): ResultProgress[R] = {
+    inline def apply[R](report: R => Unit): ResultProgress[R] = {
       val __obj = js.Dynamic.literal(report = js.Any.fromFunction1(report))
       __obj.asInstanceOf[ResultProgress[R]]
     }
     
-    @scala.inline
-    implicit class ResultProgressMutableBuilder[Self <: ResultProgress[?], R] (val x: Self & ResultProgress[R]) extends AnyVal {
+    extension [Self <: ResultProgress[?], R](x: Self & ResultProgress[R]) {
       
-      @scala.inline
-      def setReport(value: R => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
+      inline def setReport(value: R => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
     }
   }
   

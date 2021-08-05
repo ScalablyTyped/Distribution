@@ -13,19 +13,15 @@ trait ExportDataEventObject extends StObject {
 }
 object ExportDataEventObject {
   
-  @scala.inline
-  def apply(dataRows: js.Array[js.Array[String]]): ExportDataEventObject = {
+  inline def apply(dataRows: js.Array[js.Array[String]]): ExportDataEventObject = {
     val __obj = js.Dynamic.literal(dataRows = dataRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportDataEventObject]
   }
   
-  @scala.inline
-  implicit class ExportDataEventObjectMutableBuilder[Self <: ExportDataEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: ExportDataEventObject](x: Self) {
     
-    @scala.inline
-    def setDataRows(value: js.Array[js.Array[String]]): Self = StObject.set(x, "dataRows", value.asInstanceOf[js.Any])
+    inline def setDataRows(value: js.Array[js.Array[String]]): Self = StObject.set(x, "dataRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "dataRows", js.Array(value :_*))
+    inline def setDataRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "dataRows", js.Array(value :_*))
   }
 }

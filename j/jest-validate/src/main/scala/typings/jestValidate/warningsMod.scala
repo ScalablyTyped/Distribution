@@ -12,15 +12,13 @@ object warningsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def unknownOptionWarning(
+  inline def unknownOptionWarning(
     config: Record[String, js.Any],
     exampleConfig: Record[String, js.Any],
     option: String,
     options: ValidationOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unknownOptionWarning")(config.asInstanceOf[js.Any], exampleConfig.asInstanceOf[js.Any], option.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unknownOptionWarning(
+  inline def unknownOptionWarning(
     config: Record[String, js.Any],
     exampleConfig: Record[String, js.Any],
     option: String,

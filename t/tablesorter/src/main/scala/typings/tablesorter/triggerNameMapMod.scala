@@ -130,8 +130,7 @@ object triggerNameMapMod {
   }
   object TriggerNameMap {
     
-    @scala.inline
-    def apply[TElement](
+    inline def apply[TElement](
       addRows: js.Tuple3[JQuery[HTMLElement] | String, Boolean, js.UndefOr[TriggerCallbackHandler[TElement]]],
       applyWidgetId: String,
       applyWidgets: TElement => Unit,
@@ -166,80 +165,59 @@ object triggerNameMapMod {
       __obj.asInstanceOf[TriggerNameMap[TElement]]
     }
     
-    @scala.inline
-    implicit class TriggerNameMapMutableBuilder[Self <: TriggerNameMap[?], TElement] (val x: Self & TriggerNameMap[TElement]) extends AnyVal {
+    extension [Self <: TriggerNameMap[?], TElement](x: Self & TriggerNameMap[TElement]) {
       
-      @scala.inline
-      def setAddRows(
+      inline def setAddRows(
         value: js.Tuple3[JQuery[HTMLElement] | String, Boolean, js.UndefOr[TriggerCallbackHandler[TElement]]]
       ): Self = StObject.set(x, "addRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyWidgetId(value: String): Self = StObject.set(x, "applyWidgetId", value.asInstanceOf[js.Any])
+      inline def setApplyWidgetId(value: String): Self = StObject.set(x, "applyWidgetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyWidgets(value: TElement => Unit): Self = StObject.set(x, "applyWidgets", js.Any.fromFunction1(value))
+      inline def setApplyWidgets(value: TElement => Unit): Self = StObject.set(x, "applyWidgets", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: js.Tuple2[Boolean, js.UndefOr[TriggerCallbackHandler[TElement]]]): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+      inline def setDestroy(value: js.Tuple2[Boolean, js.UndefOr[TriggerCallbackHandler[TElement]]]): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageAndSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "pageAndSize", value.asInstanceOf[js.Any])
+      inline def setPageAndSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "pageAndSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSet(value: Double): Self = StObject.set(x, "pageSet", value.asInstanceOf[js.Any])
+      inline def setPageSet(value: Double): Self = StObject.set(x, "pageSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagerUpdate(value: Double): Self = StObject.set(x, "pagerUpdate", value.asInstanceOf[js.Any])
+      inline def setPagerUpdate(value: Double): Self = StObject.set(x, "pagerUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshWidgets(value: js.Tuple2[js.UndefOr[Boolean], js.UndefOr[Boolean]]): Self = StObject.set(x, "refreshWidgets", value.asInstanceOf[js.Any])
+      inline def setRefreshWidgets(value: js.Tuple2[js.UndefOr[Boolean], js.UndefOr[Boolean]]): Self = StObject.set(x, "refreshWidgets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveWidget(value: String | js.Array[String] | Boolean): Self = StObject.set(x, "removeWidget", value.asInstanceOf[js.Any])
+      inline def setRemoveWidget(value: String | js.Array[String] | Boolean): Self = StObject.set(x, "removeWidget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveWidgetVarargs(value: String*): Self = StObject.set(x, "removeWidget", js.Array(value :_*))
+      inline def setRemoveWidgetVarargs(value: String*): Self = StObject.set(x, "removeWidget", js.Array(value :_*))
       
-      @scala.inline
-      def setSearch(value: js.Array[js.UndefOr[js.Array[String]]] | Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: js.Array[js.UndefOr[js.Array[String]]] | Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchVarargs(value: js.UndefOr[js.Array[String]]*): Self = StObject.set(x, "search", js.Array(value :_*))
+      inline def setSearchVarargs(value: js.UndefOr[js.Array[String]]*): Self = StObject.set(x, "search", js.Array(value :_*))
       
-      @scala.inline
-      def setSortReset(value: js.Array[js.UndefOr[TriggerCallbackHandler[TElement]]]): Self = StObject.set(x, "sortReset", value.asInstanceOf[js.Any])
+      inline def setSortReset(value: js.Array[js.UndefOr[TriggerCallbackHandler[TElement]]]): Self = StObject.set(x, "sortReset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortResetVarargs(value: js.UndefOr[TriggerCallbackHandler[TElement]]*): Self = StObject.set(x, "sortReset", js.Array(value :_*))
+      inline def setSortResetVarargs(value: js.UndefOr[TriggerCallbackHandler[TElement]]*): Self = StObject.set(x, "sortReset", js.Array(value :_*))
       
-      @scala.inline
-      def setSorton(
+      inline def setSorton(
         value: js.Tuple2[
               js.Array[SortDefinition | RelativeSortDefinition], 
               js.UndefOr[TriggerCallbackHandler[TElement]]
             ]
       ): Self = StObject.set(x, "sorton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: js.Tuple2[Boolean | js.Array[SortDefinition], js.UndefOr[TriggerCallbackHandler[TElement]]]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: js.Tuple2[Boolean | js.Array[SortDefinition], js.UndefOr[TriggerCallbackHandler[TElement]]]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateAll(
+      inline def setUpdateAll(
         value: js.Tuple2[
               js.UndefOr[Boolean | js.Array[SortDefinition]], 
               js.UndefOr[TriggerCallbackHandler[TElement]]
             ]
       ): Self = StObject.set(x, "updateAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateCache(value: js.Tuple2[js.UndefOr[TriggerCallbackHandler[TElement]], js.UndefOr[JQuery[HTMLElement]]]): Self = StObject.set(x, "updateCache", value.asInstanceOf[js.Any])
+      inline def setUpdateCache(value: js.Tuple2[js.UndefOr[TriggerCallbackHandler[TElement]], js.UndefOr[JQuery[HTMLElement]]]): Self = StObject.set(x, "updateCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateCell(
+      inline def setUpdateCell(
         value: js.Tuple3[
               JQuery[HTMLElement], 
               js.UndefOr[Boolean | js.Array[SortDefinition]], 
@@ -247,11 +225,9 @@ object triggerNameMapMod {
             ]
       ): Self = StObject.set(x, "updateCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateHeaders(value: TElement => Unit): Self = StObject.set(x, "updateHeaders", js.Any.fromFunction1(value))
+      inline def setUpdateHeaders(value: TElement => Unit): Self = StObject.set(x, "updateHeaders", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateRows(value: js.Tuple2[Boolean | js.Array[SortDefinition], js.UndefOr[TriggerCallbackHandler[TElement]]]): Self = StObject.set(x, "updateRows", value.asInstanceOf[js.Any])
+      inline def setUpdateRows(value: js.Tuple2[Boolean | js.Array[SortDefinition], js.UndefOr[TriggerCallbackHandler[TElement]]]): Self = StObject.set(x, "updateRows", value.asInstanceOf[js.Any])
     }
   }
 }

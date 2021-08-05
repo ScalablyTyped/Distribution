@@ -50,26 +50,20 @@ object JSSpec {
   }
   object ContextOptions {
     
-    @scala.inline
-    def apply(): ContextOptions = {
+    inline def apply(): ContextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContextOptions]
     }
     
-    @scala.inline
-    implicit class ContextOptionsMutableBuilder[Self <: ContextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ContextOptions](x: Self) {
       
-      @scala.inline
-      def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
+      inline def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
+      inline def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -102,20 +96,16 @@ object JSSpec {
   }
   object ExampleOptions {
     
-    @scala.inline
-    def apply(): ExampleOptions = {
+    inline def apply(): ExampleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExampleOptions]
     }
     
-    @scala.inline
-    implicit class ExampleOptionsMutableBuilder[Self <: ExampleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExampleOptions](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   

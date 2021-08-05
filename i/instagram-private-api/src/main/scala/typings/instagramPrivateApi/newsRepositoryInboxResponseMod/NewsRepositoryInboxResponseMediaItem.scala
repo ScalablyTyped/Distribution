@@ -14,25 +14,19 @@ trait NewsRepositoryInboxResponseMediaItem extends StObject {
 }
 object NewsRepositoryInboxResponseMediaItem {
   
-  @scala.inline
-  def apply(id: String, image: String): NewsRepositoryInboxResponseMediaItem = {
+  inline def apply(id: String, image: String): NewsRepositoryInboxResponseMediaItem = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsRepositoryInboxResponseMediaItem]
   }
   
-  @scala.inline
-  implicit class NewsRepositoryInboxResponseMediaItemMutableBuilder[Self <: NewsRepositoryInboxResponseMediaItem] (val x: Self) extends AnyVal {
+  extension [Self <: NewsRepositoryInboxResponseMediaItem](x: Self) {
     
-    @scala.inline
-    def setComment_threading_enabled(value: Boolean): Self = StObject.set(x, "comment_threading_enabled", value.asInstanceOf[js.Any])
+    inline def setComment_threading_enabled(value: Boolean): Self = StObject.set(x, "comment_threading_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment_threading_enabledUndefined: Self = StObject.set(x, "comment_threading_enabled", js.undefined)
+    inline def setComment_threading_enabledUndefined: Self = StObject.set(x, "comment_threading_enabled", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
   }
 }

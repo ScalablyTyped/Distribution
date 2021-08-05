@@ -15,19 +15,15 @@ trait DidChangeWatchedFilesClientCapabilities extends StObject {
 }
 object DidChangeWatchedFilesClientCapabilities {
   
-  @scala.inline
-  def apply(): DidChangeWatchedFilesClientCapabilities = {
+  inline def apply(): DidChangeWatchedFilesClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DidChangeWatchedFilesClientCapabilities]
   }
   
-  @scala.inline
-  implicit class DidChangeWatchedFilesClientCapabilitiesMutableBuilder[Self <: DidChangeWatchedFilesClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: DidChangeWatchedFilesClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
   }
 }

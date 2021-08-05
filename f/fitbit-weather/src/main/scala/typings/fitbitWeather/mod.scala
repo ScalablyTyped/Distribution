@@ -17,9 +17,7 @@ object mod {
   @js.native
   val Providers: ProvidersCodes = js.native
   
-  @scala.inline
-  def fetch(age: Double): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(age.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  inline def fetch(age: Double): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(age.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  @scala.inline
-  def setup(configuration: Configuration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(configuration.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setup(configuration: Configuration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(configuration.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

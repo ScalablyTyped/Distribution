@@ -20,8 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object DataObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -36,16 +35,12 @@ object DataObject {
     __obj.asInstanceOf[DataObject]
   }
   
-  @scala.inline
-  implicit class DataObjectMutableBuilder[Self <: DataObject] (val x: Self) extends AnyVal {
+  extension [Self <: DataObject](x: Self) {
     
-    @scala.inline
-    def setDataState(value: DataState): Self = StObject.set(x, "dataState", value.asInstanceOf[js.Any])
+    inline def setDataState(value: DataState): Self = StObject.set(x, "dataState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCollection(value: Boolean): Self = StObject.set(x, "isCollection", value.asInstanceOf[js.Any])
+    inline def setIsCollection(value: Boolean): Self = StObject.set(x, "isCollection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemSubjectRef(value: ItemDefinition): Self = StObject.set(x, "itemSubjectRef", value.asInstanceOf[js.Any])
+    inline def setItemSubjectRef(value: ItemDefinition): Self = StObject.set(x, "itemSubjectRef", value.asInstanceOf[js.Any])
   }
 }

@@ -12,7 +12,7 @@ trait LinkFormat extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.LinkFormat_typekey")
+  /* private */ @JSName("Excel.LinkFormat_typekey")
   var ExcelDotLinkFormat_typekey: LinkFormat
   
   var Locked: Boolean
@@ -23,8 +23,7 @@ trait LinkFormat extends StObject {
 }
 object LinkFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     AutoUpdate: Boolean,
     Creator: XlCreator,
@@ -38,28 +37,20 @@ object LinkFormat {
     __obj.asInstanceOf[LinkFormat]
   }
   
-  @scala.inline
-  implicit class LinkFormatMutableBuilder[Self <: LinkFormat] (val x: Self) extends AnyVal {
+  extension [Self <: LinkFormat](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUpdate(value: Boolean): Self = StObject.set(x, "AutoUpdate", value.asInstanceOf[js.Any])
+    inline def setAutoUpdate(value: Boolean): Self = StObject.set(x, "AutoUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotLinkFormat_typekey(value: LinkFormat): Self = StObject.set(x, "Excel.LinkFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotLinkFormat_typekey(value: LinkFormat): Self = StObject.set(x, "Excel.LinkFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
   }
 }

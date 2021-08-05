@@ -29,25 +29,19 @@ trait GoogleApiYouTubeVideoCategoryResource extends StObject {
 }
 object GoogleApiYouTubeVideoCategoryResource {
   
-  @scala.inline
-  def apply(etag: String, id: String, kind: String, snippet: Title): GoogleApiYouTubeVideoCategoryResource = {
+  inline def apply(etag: String, id: String, kind: String, snippet: Title): GoogleApiYouTubeVideoCategoryResource = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiYouTubeVideoCategoryResource]
   }
   
-  @scala.inline
-  implicit class GoogleApiYouTubeVideoCategoryResourceMutableBuilder[Self <: GoogleApiYouTubeVideoCategoryResource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiYouTubeVideoCategoryResource](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippet(value: Title): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: Title): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
   }
 }

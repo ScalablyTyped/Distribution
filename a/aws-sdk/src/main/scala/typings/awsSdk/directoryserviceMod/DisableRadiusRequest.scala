@@ -13,16 +13,13 @@ trait DisableRadiusRequest extends StObject {
 }
 object DisableRadiusRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId): DisableRadiusRequest = {
+  inline def apply(DirectoryId: DirectoryId): DisableRadiusRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableRadiusRequest]
   }
   
-  @scala.inline
-  implicit class DisableRadiusRequestMutableBuilder[Self <: DisableRadiusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisableRadiusRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
   }
 }

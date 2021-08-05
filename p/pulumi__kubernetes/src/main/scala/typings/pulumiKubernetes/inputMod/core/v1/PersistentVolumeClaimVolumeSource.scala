@@ -22,22 +22,17 @@ trait PersistentVolumeClaimVolumeSource extends StObject {
 }
 object PersistentVolumeClaimVolumeSource {
   
-  @scala.inline
-  def apply(claimName: Input[String]): PersistentVolumeClaimVolumeSource = {
+  inline def apply(claimName: Input[String]): PersistentVolumeClaimVolumeSource = {
     val __obj = js.Dynamic.literal(claimName = claimName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistentVolumeClaimVolumeSource]
   }
   
-  @scala.inline
-  implicit class PersistentVolumeClaimVolumeSourceMutableBuilder[Self <: PersistentVolumeClaimVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentVolumeClaimVolumeSource](x: Self) {
     
-    @scala.inline
-    def setClaimName(value: Input[String]): Self = StObject.set(x, "claimName", value.asInstanceOf[js.Any])
+    inline def setClaimName(value: Input[String]): Self = StObject.set(x, "claimName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

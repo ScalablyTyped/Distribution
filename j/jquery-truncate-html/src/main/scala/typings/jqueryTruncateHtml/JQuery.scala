@@ -10,16 +10,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(truncate: TruncateOptions => JQuery): JQuery = {
+  inline def apply(truncate: TruncateOptions => JQuery): JQuery = {
     val __obj = js.Dynamic.literal(truncate = js.Any.fromFunction1(truncate))
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setTruncate(value: TruncateOptions => JQuery): Self = StObject.set(x, "truncate", js.Any.fromFunction1(value))
+    inline def setTruncate(value: TruncateOptions => JQuery): Self = StObject.set(x, "truncate", js.Any.fromFunction1(value))
   }
 }

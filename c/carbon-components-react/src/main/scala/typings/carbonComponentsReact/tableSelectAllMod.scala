@@ -44,8 +44,7 @@ object tableSelectAllMod extends Shortcut {
   }
   object TableSelectAllProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: NonNullable[
           NonNullable[
             /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/typings/shared.ReactAttr<std.HTMLElement>['id'] */ js.Any
@@ -56,37 +55,27 @@ object tableSelectAllMod extends Shortcut {
       __obj.asInstanceOf[TableSelectAllProps]
     }
     
-    @scala.inline
-    implicit class TableSelectAllPropsMutableBuilder[Self <: TableSelectAllProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableSelectAllProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(
+      inline def setAriaLabel(
         value: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/typings/shared.ReactInputAttr<std.HTMLInputElement>['aria-label'] */ js.Any
       ): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setChecked(value: NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setId(
+      inline def setId(
         value: NonNullable[
               NonNullable[
                 /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/typings/shared.ReactAttr<std.HTMLElement>['id'] */ js.Any
@@ -94,23 +83,17 @@ object tableSelectAllMod extends Shortcut {
             ]
       ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
+      inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
+      inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
       
-      @scala.inline
-      def setName(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     }
   }
   

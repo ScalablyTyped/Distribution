@@ -85,44 +85,32 @@ object mod {
   }
   object IdenticonOptions {
     
-    @scala.inline
-    def apply(): IdenticonOptions = {
+    inline def apply(): IdenticonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IdenticonOptions]
     }
     
-    @scala.inline
-    implicit class IdenticonOptionsMutableBuilder[Self <: IdenticonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IdenticonOptions](x: Self) {
       
-      @scala.inline
-      def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setForeground(value: Color): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
+      inline def setForeground(value: Color): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForegroundUndefined: Self = StObject.set(x, "foreground", js.undefined)
+      inline def setForegroundUndefined: Self = StObject.set(x, "foreground", js.undefined)
       
-      @scala.inline
-      def setFormat(value: svg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: svg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -153,8 +141,7 @@ object mod {
   }
   object PNGlib {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       depth: Double,
       getBase64: () => String,
       getDump: () => String,
@@ -166,26 +153,19 @@ object mod {
       __obj.asInstanceOf[PNGlib]
     }
     
-    @scala.inline
-    implicit class PNGlibMutableBuilder[Self <: PNGlib] (val x: Self) extends AnyVal {
+    extension [Self <: PNGlib](x: Self) {
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetBase64(value: () => String): Self = StObject.set(x, "getBase64", js.Any.fromFunction0(value))
+      inline def setGetBase64(value: () => String): Self = StObject.set(x, "getBase64", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDump(value: () => String): Self = StObject.set(x, "getDump", js.Any.fromFunction0(value))
+      inline def setGetDump(value: () => String): Self = StObject.set(x, "getDump", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: (Double, Double) => Double): Self = StObject.set(x, "index", js.Any.fromFunction2(value))
+      inline def setIndex(value: (Double, Double) => Double): Self = StObject.set(x, "index", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -220,8 +200,7 @@ object mod {
   }
   object Svg {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       background: Color,
       color: (Double, Double, Double, Double) => String,
       foreground: Color,
@@ -234,32 +213,23 @@ object mod {
       __obj.asInstanceOf[Svg]
     }
     
-    @scala.inline
-    implicit class SvgMutableBuilder[Self <: Svg] (val x: Self) extends AnyVal {
+    extension [Self <: Svg](x: Self) {
       
-      @scala.inline
-      def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: (Double, Double, Double, Double) => String): Self = StObject.set(x, "color", js.Any.fromFunction4(value))
+      inline def setColor(value: (Double, Double, Double, Double) => String): Self = StObject.set(x, "color", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setForeground(value: Color): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
+      inline def setForeground(value: Color): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetBase64(value: () => String): Self = StObject.set(x, "getBase64", js.Any.fromFunction0(value))
+      inline def setGetBase64(value: () => String): Self = StObject.set(x, "getBase64", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDump(value: () => String): Self = StObject.set(x, "getDump", js.Any.fromFunction0(value))
+      inline def setGetDump(value: () => String): Self = StObject.set(x, "getDump", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRectangles(value: js.Array[typings.identiconJs.anon.Color]): Self = StObject.set(x, "rectangles", value.asInstanceOf[js.Any])
+      inline def setRectangles(value: js.Array[typings.identiconJs.anon.Color]): Self = StObject.set(x, "rectangles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRectanglesVarargs(value: typings.identiconJs.anon.Color*): Self = StObject.set(x, "rectangles", js.Array(value :_*))
+      inline def setRectanglesVarargs(value: typings.identiconJs.anon.Color*): Self = StObject.set(x, "rectangles", js.Array(value :_*))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

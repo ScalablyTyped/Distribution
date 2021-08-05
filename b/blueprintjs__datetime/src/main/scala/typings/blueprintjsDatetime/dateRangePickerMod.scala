@@ -24,69 +24,69 @@ object dateRangePickerMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDateRangePicker(prevProps: IDateRangePickerProps, prevState: IDateRangePickerState): Unit = js.native
     
-    var disabledDays: js.Any = js.native
+    /* private */ var disabledDays: js.Any = js.native
     
-    var getDateRangePickerModifiers: js.Any = js.native
+    /* private */ var getDateRangePickerModifiers: js.Any = js.native
     
-    var getDisabledDaysModifier: js.Any = js.native
+    /* private */ var getDisabledDaysModifier: js.Any = js.native
     
-    var handleDayClick: js.Any = js.native
+    /* private */ var handleDayClick: js.Any = js.native
     
-    var handleDayMouseEnter: js.Any = js.native
+    /* private */ var handleDayMouseEnter: js.Any = js.native
     
-    var handleDayMouseLeave: js.Any = js.native
+    /* private */ var handleDayMouseLeave: js.Any = js.native
     
-    var handleLeftMonthChange: js.Any = js.native
+    /* private */ var handleLeftMonthChange: js.Any = js.native
     
-    var handleLeftMonthSelectChange: js.Any = js.native
+    /* private */ var handleLeftMonthSelectChange: js.Any = js.native
     
-    var handleLeftYearSelectChange: js.Any = js.native
+    /* private */ var handleLeftYearSelectChange: js.Any = js.native
     
-    var handleNextState: js.Any = js.native
+    /* private */ var handleNextState: js.Any = js.native
     
-    var handleRightMonthChange: js.Any = js.native
+    /* private */ var handleRightMonthChange: js.Any = js.native
     
-    var handleRightMonthSelectChange: js.Any = js.native
+    /* private */ var handleRightMonthSelectChange: js.Any = js.native
     
-    var handleRightYearSelectChange: js.Any = js.native
+    /* private */ var handleRightYearSelectChange: js.Any = js.native
     
-    var handleShortcutClick: js.Any = js.native
+    /* private */ var handleShortcutClick: js.Any = js.native
     
-    var handleTimeChange: js.Any = js.native
+    /* private */ var handleTimeChange: js.Any = js.native
     
-    var handleTimeChangeLeftCalendar: js.Any = js.native
+    /* private */ var handleTimeChangeLeftCalendar: js.Any = js.native
     
-    var handleTimeChangeRightCalendar: js.Any = js.native
+    /* private */ var handleTimeChangeRightCalendar: js.Any = js.native
     
-    var maybeRenderShortcuts: js.Any = js.native
+    /* private */ var maybeRenderShortcuts: js.Any = js.native
     
-    var maybeRenderTimePickers: js.Any = js.native
+    /* private */ var maybeRenderTimePickers: js.Any = js.native
     
-    var modifiers: js.Any = js.native
+    /* private */ var modifiers: js.Any = js.native
     
-    var renderCalendars: js.Any = js.native
+    /* private */ var renderCalendars: js.Any = js.native
     
-    var renderDay: js.Any = js.native
+    /* private */ var renderDay: js.Any = js.native
     
-    var renderLeftCaption: js.Any = js.native
+    /* private */ var renderLeftCaption: js.Any = js.native
     
-    var renderLeftNavbar: js.Any = js.native
+    /* private */ var renderLeftNavbar: js.Any = js.native
     
-    var renderRightCaption: js.Any = js.native
+    /* private */ var renderRightCaption: js.Any = js.native
     
-    var renderRightNavbar: js.Any = js.native
+    /* private */ var renderRightNavbar: js.Any = js.native
     
-    var renderSingleCaption: js.Any = js.native
+    /* private */ var renderSingleCaption: js.Any = js.native
     
-    var renderSingleNavbar: js.Any = js.native
+    /* private */ var renderSingleNavbar: js.Any = js.native
     
-    var setViews: js.Any = js.native
+    /* private */ var setViews: js.Any = js.native
     
-    var shouldHighlightCurrentDay: js.Any = js.native
+    /* private */ var shouldHighlightCurrentDay: js.Any = js.native
     
-    var updateLeftView: js.Any = js.native
+    /* private */ var updateLeftView: js.Any = js.native
     
-    var updateRightView: js.Any = js.native
+    /* private */ var updateRightView: js.Any = js.native
   }
   /* static members */
   object DateRangePicker {
@@ -98,14 +98,12 @@ object dateRangePickerMod {
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangePicker", "DateRangePicker.defaultProps")
     @js.native
     def defaultProps: IDateRangePickerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IDateRangePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IDateRangePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangePicker", "DateRangePicker.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IDateRangePickerProps
@@ -198,85 +196,60 @@ object dateRangePickerMod {
   }
   object IDateRangePickerProps {
     
-    @scala.inline
-    def apply(): IDateRangePickerProps = {
+    inline def apply(): IDateRangePickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDateRangePickerProps]
     }
     
-    @scala.inline
-    implicit class IDateRangePickerPropsMutableBuilder[Self <: IDateRangePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDateRangePickerProps](x: Self) {
       
-      @scala.inline
-      def setAllowSingleDayRange(value: Boolean): Self = StObject.set(x, "allowSingleDayRange", value.asInstanceOf[js.Any])
+      inline def setAllowSingleDayRange(value: Boolean): Self = StObject.set(x, "allowSingleDayRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSingleDayRangeUndefined: Self = StObject.set(x, "allowSingleDayRange", js.undefined)
+      inline def setAllowSingleDayRangeUndefined: Self = StObject.set(x, "allowSingleDayRange", js.undefined)
       
-      @scala.inline
-      def setBoundaryToModify(value: Boundary): Self = StObject.set(x, "boundaryToModify", value.asInstanceOf[js.Any])
+      inline def setBoundaryToModify(value: Boundary): Self = StObject.set(x, "boundaryToModify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundaryToModifyUndefined: Self = StObject.set(x, "boundaryToModify", js.undefined)
+      inline def setBoundaryToModifyUndefined: Self = StObject.set(x, "boundaryToModify", js.undefined)
       
-      @scala.inline
-      def setContiguousCalendarMonths(value: Boolean): Self = StObject.set(x, "contiguousCalendarMonths", value.asInstanceOf[js.Any])
+      inline def setContiguousCalendarMonths(value: Boolean): Self = StObject.set(x, "contiguousCalendarMonths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContiguousCalendarMonthsUndefined: Self = StObject.set(x, "contiguousCalendarMonths", js.undefined)
+      inline def setContiguousCalendarMonthsUndefined: Self = StObject.set(x, "contiguousCalendarMonths", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: DateRange): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: DateRange): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* selectedDates */ DateRange => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* selectedDates */ DateRange => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnHoverChange(
+      inline def setOnHoverChange(
         value: (/* hoveredDates */ DateRange, /* hoveredDay */ Date, /* hoveredBoundary */ Boundary) => Unit
       ): Self = StObject.set(x, "onHoverChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnHoverChangeUndefined: Self = StObject.set(x, "onHoverChange", js.undefined)
+      inline def setOnHoverChangeUndefined: Self = StObject.set(x, "onHoverChange", js.undefined)
       
-      @scala.inline
-      def setOnShortcutChange(value: (/* shortcut */ IDateRangeShortcut, /* index */ Double) => Unit): Self = StObject.set(x, "onShortcutChange", js.Any.fromFunction2(value))
+      inline def setOnShortcutChange(value: (/* shortcut */ IDateRangeShortcut, /* index */ Double) => Unit): Self = StObject.set(x, "onShortcutChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnShortcutChangeUndefined: Self = StObject.set(x, "onShortcutChange", js.undefined)
+      inline def setOnShortcutChangeUndefined: Self = StObject.set(x, "onShortcutChange", js.undefined)
       
-      @scala.inline
-      def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
+      inline def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
       
-      @scala.inline
-      def setShortcuts(value: Boolean | js.Array[IDateRangeShortcut]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+      inline def setShortcuts(value: Boolean | js.Array[IDateRangeShortcut]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortcutsUndefined: Self = StObject.set(x, "shortcuts", js.undefined)
+      inline def setShortcutsUndefined: Self = StObject.set(x, "shortcuts", js.undefined)
       
-      @scala.inline
-      def setShortcutsVarargs(value: IDateRangeShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value :_*))
+      inline def setShortcutsVarargs(value: IDateRangeShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value :_*))
       
-      @scala.inline
-      def setSingleMonthOnly(value: Boolean): Self = StObject.set(x, "singleMonthOnly", value.asInstanceOf[js.Any])
+      inline def setSingleMonthOnly(value: Boolean): Self = StObject.set(x, "singleMonthOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleMonthOnlyUndefined: Self = StObject.set(x, "singleMonthOnly", js.undefined)
+      inline def setSingleMonthOnlyUndefined: Self = StObject.set(x, "singleMonthOnly", js.undefined)
       
-      @scala.inline
-      def setValue(value: DateRange): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: DateRange): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -296,50 +269,36 @@ object dateRangePickerMod {
   }
   object IDateRangePickerState {
     
-    @scala.inline
-    def apply(): IDateRangePickerState = {
+    inline def apply(): IDateRangePickerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDateRangePickerState]
     }
     
-    @scala.inline
-    implicit class IDateRangePickerStateMutableBuilder[Self <: IDateRangePickerState] (val x: Self) extends AnyVal {
+    extension [Self <: IDateRangePickerState](x: Self) {
       
-      @scala.inline
-      def setHoverValue(value: DateRange): Self = StObject.set(x, "hoverValue", value.asInstanceOf[js.Any])
+      inline def setHoverValue(value: DateRange): Self = StObject.set(x, "hoverValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverValueUndefined: Self = StObject.set(x, "hoverValue", js.undefined)
+      inline def setHoverValueUndefined: Self = StObject.set(x, "hoverValue", js.undefined)
       
-      @scala.inline
-      def setLeftView(value: MonthAndYear): Self = StObject.set(x, "leftView", value.asInstanceOf[js.Any])
+      inline def setLeftView(value: MonthAndYear): Self = StObject.set(x, "leftView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftViewUndefined: Self = StObject.set(x, "leftView", js.undefined)
+      inline def setLeftViewUndefined: Self = StObject.set(x, "leftView", js.undefined)
       
-      @scala.inline
-      def setRightView(value: MonthAndYear): Self = StObject.set(x, "rightView", value.asInstanceOf[js.Any])
+      inline def setRightView(value: MonthAndYear): Self = StObject.set(x, "rightView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightViewUndefined: Self = StObject.set(x, "rightView", js.undefined)
+      inline def setRightViewUndefined: Self = StObject.set(x, "rightView", js.undefined)
       
-      @scala.inline
-      def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
+      inline def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
       
-      @scala.inline
-      def setTime(value: DateRange): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: DateRange): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
       
-      @scala.inline
-      def setValue(value: DateRange): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: DateRange): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

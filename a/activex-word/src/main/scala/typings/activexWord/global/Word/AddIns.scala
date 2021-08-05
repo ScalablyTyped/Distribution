@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.AddIns")
 @js.native
-class AddIns protected ()
+/* private */ class AddIns ()
   extends StObject
      with typings.activexWord.Word.AddIns

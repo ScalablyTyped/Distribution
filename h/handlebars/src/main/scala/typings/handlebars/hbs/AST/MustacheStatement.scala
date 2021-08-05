@@ -23,8 +23,7 @@ trait MustacheStatement
 }
 object MustacheStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     escaped: Boolean,
     hash: Hash,
     loc: SourceLocation,
@@ -37,28 +36,20 @@ object MustacheStatement {
     __obj.asInstanceOf[MustacheStatement]
   }
   
-  @scala.inline
-  implicit class MustacheStatementMutableBuilder[Self <: MustacheStatement] (val x: Self) extends AnyVal {
+  extension [Self <: MustacheStatement](x: Self) {
     
-    @scala.inline
-    def setEscaped(value: Boolean): Self = StObject.set(x, "escaped", value.asInstanceOf[js.Any])
+    inline def setEscaped(value: Boolean): Self = StObject.set(x, "escaped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Array[Expression]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[Expression]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsVarargs(value: Expression*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: Expression*): Self = StObject.set(x, "params", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: PathExpression | Literal): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: PathExpression | Literal): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrip(value: StripFlags): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
+    inline def setStrip(value: StripFlags): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.handlebars.handlebarsStrings.MustacheStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.handlebars.handlebarsStrings.MustacheStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -68,80 +68,56 @@ object stickyHeaderOptionsMod {
   }
   object StickyHeaderOptions {
     
-    @scala.inline
-    def apply(): StickyHeaderOptions = {
+    inline def apply(): StickyHeaderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StickyHeaderOptions]
     }
     
-    @scala.inline
-    implicit class StickyHeaderOptionsMutableBuilder[Self <: StickyHeaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StickyHeaderOptions](x: Self) {
       
-      @scala.inline
-      def setStickyHeaders(value: String): Self = StObject.set(x, "stickyHeaders", value.asInstanceOf[js.Any])
+      inline def setStickyHeaders(value: String): Self = StObject.set(x, "stickyHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyHeadersUndefined: Self = StObject.set(x, "stickyHeaders", js.undefined)
+      inline def setStickyHeadersUndefined: Self = StObject.set(x, "stickyHeaders", js.undefined)
       
-      @scala.inline
-      def setStickyHeaders_addResizeEvent(value: Boolean): Self = StObject.set(x, "stickyHeaders_addResizeEvent", value.asInstanceOf[js.Any])
+      inline def setStickyHeaders_addResizeEvent(value: Boolean): Self = StObject.set(x, "stickyHeaders_addResizeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyHeaders_addResizeEventUndefined: Self = StObject.set(x, "stickyHeaders_addResizeEvent", js.undefined)
+      inline def setStickyHeaders_addResizeEventUndefined: Self = StObject.set(x, "stickyHeaders_addResizeEvent", js.undefined)
       
-      @scala.inline
-      def setStickyHeaders_appendTo(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "stickyHeaders_appendTo", value.asInstanceOf[js.Any])
+      inline def setStickyHeaders_appendTo(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "stickyHeaders_appendTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyHeaders_appendToUndefined: Self = StObject.set(x, "stickyHeaders_appendTo", js.undefined)
+      inline def setStickyHeaders_appendToUndefined: Self = StObject.set(x, "stickyHeaders_appendTo", js.undefined)
       
-      @scala.inline
-      def setStickyHeaders_attachTo(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "stickyHeaders_attachTo", value.asInstanceOf[js.Any])
+      inline def setStickyHeaders_attachTo(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "stickyHeaders_attachTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyHeaders_attachToUndefined: Self = StObject.set(x, "stickyHeaders_attachTo", js.undefined)
+      inline def setStickyHeaders_attachToUndefined: Self = StObject.set(x, "stickyHeaders_attachTo", js.undefined)
       
-      @scala.inline
-      def setStickyHeaders_cloneId(value: String): Self = StObject.set(x, "stickyHeaders_cloneId", value.asInstanceOf[js.Any])
+      inline def setStickyHeaders_cloneId(value: String): Self = StObject.set(x, "stickyHeaders_cloneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyHeaders_cloneIdUndefined: Self = StObject.set(x, "stickyHeaders_cloneId", js.undefined)
+      inline def setStickyHeaders_cloneIdUndefined: Self = StObject.set(x, "stickyHeaders_cloneId", js.undefined)
       
-      @scala.inline
-      def setStickyHeaders_filteredToTop(value: Boolean): Self = StObject.set(x, "stickyHeaders_filteredToTop", value.asInstanceOf[js.Any])
+      inline def setStickyHeaders_filteredToTop(value: Boolean): Self = StObject.set(x, "stickyHeaders_filteredToTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyHeaders_filteredToTopUndefined: Self = StObject.set(x, "stickyHeaders_filteredToTop", js.undefined)
+      inline def setStickyHeaders_filteredToTopUndefined: Self = StObject.set(x, "stickyHeaders_filteredToTop", js.undefined)
       
-      @scala.inline
-      def setStickyHeaders_includeCaption(value: Boolean): Self = StObject.set(x, "stickyHeaders_includeCaption", value.asInstanceOf[js.Any])
+      inline def setStickyHeaders_includeCaption(value: Boolean): Self = StObject.set(x, "stickyHeaders_includeCaption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyHeaders_includeCaptionUndefined: Self = StObject.set(x, "stickyHeaders_includeCaption", js.undefined)
+      inline def setStickyHeaders_includeCaptionUndefined: Self = StObject.set(x, "stickyHeaders_includeCaption", js.undefined)
       
-      @scala.inline
-      def setStickyHeaders_offset(value: Double | Selector | JQuery[HTMLElement]): Self = StObject.set(x, "stickyHeaders_offset", value.asInstanceOf[js.Any])
+      inline def setStickyHeaders_offset(value: Double | Selector | JQuery[HTMLElement]): Self = StObject.set(x, "stickyHeaders_offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyHeaders_offsetUndefined: Self = StObject.set(x, "stickyHeaders_offset", js.undefined)
+      inline def setStickyHeaders_offsetUndefined: Self = StObject.set(x, "stickyHeaders_offset", js.undefined)
       
-      @scala.inline
-      def setStickyHeaders_xScroll(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "stickyHeaders_xScroll", value.asInstanceOf[js.Any])
+      inline def setStickyHeaders_xScroll(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "stickyHeaders_xScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyHeaders_xScrollUndefined: Self = StObject.set(x, "stickyHeaders_xScroll", js.undefined)
+      inline def setStickyHeaders_xScrollUndefined: Self = StObject.set(x, "stickyHeaders_xScroll", js.undefined)
       
-      @scala.inline
-      def setStickyHeaders_yScroll(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "stickyHeaders_yScroll", value.asInstanceOf[js.Any])
+      inline def setStickyHeaders_yScroll(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "stickyHeaders_yScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyHeaders_yScrollUndefined: Self = StObject.set(x, "stickyHeaders_yScroll", js.undefined)
+      inline def setStickyHeaders_yScrollUndefined: Self = StObject.set(x, "stickyHeaders_yScroll", js.undefined)
       
-      @scala.inline
-      def setStickyHeaders_zindex(value: Double): Self = StObject.set(x, "stickyHeaders_zindex", value.asInstanceOf[js.Any])
+      inline def setStickyHeaders_zindex(value: Double): Self = StObject.set(x, "stickyHeaders_zindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyHeaders_zindexUndefined: Self = StObject.set(x, "stickyHeaders_zindex", js.undefined)
+      inline def setStickyHeaders_zindexUndefined: Self = StObject.set(x, "stickyHeaders_zindex", js.undefined)
     }
   }
 }

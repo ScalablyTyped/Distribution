@@ -23,25 +23,19 @@ trait SchemaDistribution extends StObject {
 }
 object SchemaDistribution {
   
-  @scala.inline
-  def apply(): SchemaDistribution = {
+  inline def apply(): SchemaDistribution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDistribution]
   }
   
-  @scala.inline
-  implicit class SchemaDistributionMutableBuilder[Self <: SchemaDistribution] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDistribution](x: Self) {
     
-    @scala.inline
-    def setMarketShare(value: Double): Self = StObject.set(x, "marketShare", value.asInstanceOf[js.Any])
+    inline def setMarketShare(value: Double): Self = StObject.set(x, "marketShare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketShareUndefined: Self = StObject.set(x, "marketShare", js.undefined)
+    inline def setMarketShareUndefined: Self = StObject.set(x, "marketShare", js.undefined)
     
-    @scala.inline
-    def setMeasurementTime(value: String): Self = StObject.set(x, "measurementTime", value.asInstanceOf[js.Any])
+    inline def setMeasurementTime(value: String): Self = StObject.set(x, "measurementTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurementTimeUndefined: Self = StObject.set(x, "measurementTime", js.undefined)
+    inline def setMeasurementTimeUndefined: Self = StObject.set(x, "measurementTime", js.undefined)
   }
 }

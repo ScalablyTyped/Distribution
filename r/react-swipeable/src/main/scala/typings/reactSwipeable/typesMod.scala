@@ -44,8 +44,7 @@ object typesMod {
   }
   object ConfigurationOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delta: Double,
       preventDefaultTouchmoveEvent: Boolean,
       rotationAngle: Double,
@@ -56,23 +55,17 @@ object typesMod {
       __obj.asInstanceOf[ConfigurationOptions]
     }
     
-    @scala.inline
-    implicit class ConfigurationOptionsMutableBuilder[Self <: ConfigurationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationOptions](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefaultTouchmoveEvent(value: Boolean): Self = StObject.set(x, "preventDefaultTouchmoveEvent", value.asInstanceOf[js.Any])
+      inline def setPreventDefaultTouchmoveEvent(value: Boolean): Self = StObject.set(x, "preventDefaultTouchmoveEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
+      inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackMouse(value: Boolean): Self = StObject.set(x, "trackMouse", value.asInstanceOf[js.Any])
+      inline def setTrackMouse(value: Boolean): Self = StObject.set(x, "trackMouse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackTouch(value: Boolean): Self = StObject.set(x, "trackTouch", value.asInstanceOf[js.Any])
+      inline def setTrackTouch(value: Boolean): Self = StObject.set(x, "trackTouch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,8 +107,7 @@ object typesMod {
   }
   object SwipeEventData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       absX: Double,
       absY: Double,
       deltaX: Double,
@@ -131,38 +123,27 @@ object typesMod {
       __obj.asInstanceOf[SwipeEventData]
     }
     
-    @scala.inline
-    implicit class SwipeEventDataMutableBuilder[Self <: SwipeEventData] (val x: Self) extends AnyVal {
+    extension [Self <: SwipeEventData](x: Self) {
       
-      @scala.inline
-      def setAbsX(value: Double): Self = StObject.set(x, "absX", value.asInstanceOf[js.Any])
+      inline def setAbsX(value: Double): Self = StObject.set(x, "absX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsY(value: Double): Self = StObject.set(x, "absY", value.asInstanceOf[js.Any])
+      inline def setAbsY(value: Double): Self = StObject.set(x, "absY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
+      inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
+      inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDir(value: SwipeDirections): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: SwipeDirections): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: HandledEvents): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: HandledEvents): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitial(value: Vector2): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: Vector2): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+      inline def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVxvy(value: Vector2): Self = StObject.set(x, "vxvy", value.asInstanceOf[js.Any])
+      inline def setVxvy(value: Vector2): Self = StObject.set(x, "vxvy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,8 +165,7 @@ object typesMod {
   }
   object SwipeableCallbacks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onSwiped: /* eventData */ SwipeEventData => Unit,
       onSwipedDown: /* eventData */ SwipeEventData => Unit,
       onSwipedLeft: /* eventData */ SwipeEventData => Unit,
@@ -198,29 +178,21 @@ object typesMod {
       __obj.asInstanceOf[SwipeableCallbacks]
     }
     
-    @scala.inline
-    implicit class SwipeableCallbacksMutableBuilder[Self <: SwipeableCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: SwipeableCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnSwiped(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiped", js.Any.fromFunction1(value))
+      inline def setOnSwiped(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiped", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedDown(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedDown", js.Any.fromFunction1(value))
+      inline def setOnSwipedDown(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedLeft(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedLeft", js.Any.fromFunction1(value))
+      inline def setOnSwipedLeft(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedRight(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedRight", js.Any.fromFunction1(value))
+      inline def setOnSwipedRight(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedUp(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedUp", js.Any.fromFunction1(value))
+      inline def setOnSwipedUp(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwiping(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiping", js.Any.fromFunction1(value))
+      inline def setOnSwiping(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiping", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTap(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
+      inline def setOnTap(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
     }
   }
   
@@ -262,86 +234,60 @@ object typesMod {
   }
   object SwipeableProps {
     
-    @scala.inline
-    def apply(): SwipeableProps = {
+    inline def apply(): SwipeableProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwipeableProps]
     }
     
-    @scala.inline
-    implicit class SwipeablePropsMutableBuilder[Self <: SwipeableProps] (val x: Self) extends AnyVal {
+    extension [Self <: SwipeableProps](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+      inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
       
-      @scala.inline
-      def setOnSwiped(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiped", js.Any.fromFunction1(value))
+      inline def setOnSwiped(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiped", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedDown(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedDown", js.Any.fromFunction1(value))
+      inline def setOnSwipedDown(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedDownUndefined: Self = StObject.set(x, "onSwipedDown", js.undefined)
+      inline def setOnSwipedDownUndefined: Self = StObject.set(x, "onSwipedDown", js.undefined)
       
-      @scala.inline
-      def setOnSwipedLeft(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedLeft", js.Any.fromFunction1(value))
+      inline def setOnSwipedLeft(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedLeftUndefined: Self = StObject.set(x, "onSwipedLeft", js.undefined)
+      inline def setOnSwipedLeftUndefined: Self = StObject.set(x, "onSwipedLeft", js.undefined)
       
-      @scala.inline
-      def setOnSwipedRight(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedRight", js.Any.fromFunction1(value))
+      inline def setOnSwipedRight(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedRightUndefined: Self = StObject.set(x, "onSwipedRight", js.undefined)
+      inline def setOnSwipedRightUndefined: Self = StObject.set(x, "onSwipedRight", js.undefined)
       
-      @scala.inline
-      def setOnSwipedUndefined: Self = StObject.set(x, "onSwiped", js.undefined)
+      inline def setOnSwipedUndefined: Self = StObject.set(x, "onSwiped", js.undefined)
       
-      @scala.inline
-      def setOnSwipedUp(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedUp", js.Any.fromFunction1(value))
+      inline def setOnSwipedUp(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedUpUndefined: Self = StObject.set(x, "onSwipedUp", js.undefined)
+      inline def setOnSwipedUpUndefined: Self = StObject.set(x, "onSwipedUp", js.undefined)
       
-      @scala.inline
-      def setOnSwiping(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiping", js.Any.fromFunction1(value))
+      inline def setOnSwiping(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiping", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipingUndefined: Self = StObject.set(x, "onSwiping", js.undefined)
+      inline def setOnSwipingUndefined: Self = StObject.set(x, "onSwiping", js.undefined)
       
-      @scala.inline
-      def setOnTap(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
+      inline def setOnTap(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
+      inline def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
       
-      @scala.inline
-      def setPreventDefaultTouchmoveEvent(value: Boolean): Self = StObject.set(x, "preventDefaultTouchmoveEvent", value.asInstanceOf[js.Any])
+      inline def setPreventDefaultTouchmoveEvent(value: Boolean): Self = StObject.set(x, "preventDefaultTouchmoveEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefaultTouchmoveEventUndefined: Self = StObject.set(x, "preventDefaultTouchmoveEvent", js.undefined)
+      inline def setPreventDefaultTouchmoveEventUndefined: Self = StObject.set(x, "preventDefaultTouchmoveEvent", js.undefined)
       
-      @scala.inline
-      def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
+      inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationAngleUndefined: Self = StObject.set(x, "rotationAngle", js.undefined)
+      inline def setRotationAngleUndefined: Self = StObject.set(x, "rotationAngle", js.undefined)
       
-      @scala.inline
-      def setTrackMouse(value: Boolean): Self = StObject.set(x, "trackMouse", value.asInstanceOf[js.Any])
+      inline def setTrackMouse(value: Boolean): Self = StObject.set(x, "trackMouse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackMouseUndefined: Self = StObject.set(x, "trackMouse", js.undefined)
+      inline def setTrackMouseUndefined: Self = StObject.set(x, "trackMouse", js.undefined)
       
-      @scala.inline
-      def setTrackTouch(value: Boolean): Self = StObject.set(x, "trackTouch", value.asInstanceOf[js.Any])
+      inline def setTrackTouch(value: Boolean): Self = StObject.set(x, "trackTouch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackTouchUndefined: Self = StObject.set(x, "trackTouch", js.undefined)
+      inline def setTrackTouchUndefined: Self = StObject.set(x, "trackTouch", js.undefined)
     }
   }
   
@@ -374,8 +320,7 @@ object typesMod {
   }
   object SwipeablePropsWithDefaultOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delta: Double,
       preventDefaultTouchmoveEvent: Boolean,
       rotationAngle: Double,
@@ -386,65 +331,45 @@ object typesMod {
       __obj.asInstanceOf[SwipeablePropsWithDefaultOptions]
     }
     
-    @scala.inline
-    implicit class SwipeablePropsWithDefaultOptionsMutableBuilder[Self <: SwipeablePropsWithDefaultOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SwipeablePropsWithDefaultOptions](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSwiped(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiped", js.Any.fromFunction1(value))
+      inline def setOnSwiped(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiped", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedDown(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedDown", js.Any.fromFunction1(value))
+      inline def setOnSwipedDown(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedDownUndefined: Self = StObject.set(x, "onSwipedDown", js.undefined)
+      inline def setOnSwipedDownUndefined: Self = StObject.set(x, "onSwipedDown", js.undefined)
       
-      @scala.inline
-      def setOnSwipedLeft(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedLeft", js.Any.fromFunction1(value))
+      inline def setOnSwipedLeft(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedLeftUndefined: Self = StObject.set(x, "onSwipedLeft", js.undefined)
+      inline def setOnSwipedLeftUndefined: Self = StObject.set(x, "onSwipedLeft", js.undefined)
       
-      @scala.inline
-      def setOnSwipedRight(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedRight", js.Any.fromFunction1(value))
+      inline def setOnSwipedRight(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedRightUndefined: Self = StObject.set(x, "onSwipedRight", js.undefined)
+      inline def setOnSwipedRightUndefined: Self = StObject.set(x, "onSwipedRight", js.undefined)
       
-      @scala.inline
-      def setOnSwipedUndefined: Self = StObject.set(x, "onSwiped", js.undefined)
+      inline def setOnSwipedUndefined: Self = StObject.set(x, "onSwiped", js.undefined)
       
-      @scala.inline
-      def setOnSwipedUp(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedUp", js.Any.fromFunction1(value))
+      inline def setOnSwipedUp(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipedUpUndefined: Self = StObject.set(x, "onSwipedUp", js.undefined)
+      inline def setOnSwipedUpUndefined: Self = StObject.set(x, "onSwipedUp", js.undefined)
       
-      @scala.inline
-      def setOnSwiping(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiping", js.Any.fromFunction1(value))
+      inline def setOnSwiping(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiping", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipingUndefined: Self = StObject.set(x, "onSwiping", js.undefined)
+      inline def setOnSwipingUndefined: Self = StObject.set(x, "onSwiping", js.undefined)
       
-      @scala.inline
-      def setOnTap(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
+      inline def setOnTap(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
+      inline def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
       
-      @scala.inline
-      def setPreventDefaultTouchmoveEvent(value: Boolean): Self = StObject.set(x, "preventDefaultTouchmoveEvent", value.asInstanceOf[js.Any])
+      inline def setPreventDefaultTouchmoveEvent(value: Boolean): Self = StObject.set(x, "preventDefaultTouchmoveEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
+      inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackMouse(value: Boolean): Self = StObject.set(x, "trackMouse", value.asInstanceOf[js.Any])
+      inline def setTrackMouse(value: Boolean): Self = StObject.set(x, "trackMouse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackTouch(value: Boolean): Self = StObject.set(x, "trackTouch", value.asInstanceOf[js.Any])
+      inline def setTrackTouch(value: Boolean): Self = StObject.set(x, "trackTouch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -468,47 +393,34 @@ object typesMod {
   }
   object SwipeableState {
     
-    @scala.inline
-    def apply(first: Boolean, initial: Vector2, start: Double, swiping: Boolean, xy: Vector2): SwipeableState = {
+    inline def apply(first: Boolean, initial: Vector2, start: Double, swiping: Boolean, xy: Vector2): SwipeableState = {
       val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], swiping = swiping.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwipeableState]
     }
     
-    @scala.inline
-    implicit class SwipeableStateMutableBuilder[Self <: SwipeableState] (val x: Self) extends AnyVal {
+    extension [Self <: SwipeableState](x: Self) {
       
-      @scala.inline
-      def setCleanUpTouch(value: () => Unit): Self = StObject.set(x, "cleanUpTouch", js.Any.fromFunction0(value))
+      inline def setCleanUpTouch(value: () => Unit): Self = StObject.set(x, "cleanUpTouch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCleanUpTouchUndefined: Self = StObject.set(x, "cleanUpTouch", js.undefined)
+      inline def setCleanUpTouchUndefined: Self = StObject.set(x, "cleanUpTouch", js.undefined)
       
-      @scala.inline
-      def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElUndefined: Self = StObject.set(x, "el", js.undefined)
+      inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
       
-      @scala.inline
-      def setEventData(value: SwipeEventData): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
+      inline def setEventData(value: SwipeEventData): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
+      inline def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
       
-      @scala.inline
-      def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitial(value: Vector2): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: Vector2): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwiping(value: Boolean): Self = StObject.set(x, "swiping", value.asInstanceOf[js.Any])
+      inline def setSwiping(value: Boolean): Self = StObject.set(x, "swiping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXy(value: Vector2): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
+      inline def setXy(value: Vector2): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
     }
   }
   

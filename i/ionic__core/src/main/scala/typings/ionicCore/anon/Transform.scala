@@ -12,20 +12,16 @@ trait Transform extends StObject {
 }
 object Transform {
   
-  @scala.inline
-  def apply(`animation-delay`: String, transform: String): Transform = {
+  inline def apply(`animation-delay`: String, transform: String): Transform = {
     val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any])
     __obj.updateDynamic("animation-delay")(`animation-delay`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transform]
   }
   
-  @scala.inline
-  implicit class TransformMutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
+  extension [Self <: Transform](x: Self) {
     
-    @scala.inline
-    def `setAnimation-delay`(value: String): Self = StObject.set(x, "animation-delay", value.asInstanceOf[js.Any])
+    inline def `setAnimation-delay`(value: String): Self = StObject.set(x, "animation-delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
   }
 }

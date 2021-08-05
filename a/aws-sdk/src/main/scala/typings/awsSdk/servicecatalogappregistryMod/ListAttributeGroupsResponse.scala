@@ -18,28 +18,21 @@ trait ListAttributeGroupsResponse extends StObject {
 }
 object ListAttributeGroupsResponse {
   
-  @scala.inline
-  def apply(): ListAttributeGroupsResponse = {
+  inline def apply(): ListAttributeGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAttributeGroupsResponse]
   }
   
-  @scala.inline
-  implicit class ListAttributeGroupsResponseMutableBuilder[Self <: ListAttributeGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAttributeGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setAttributeGroups(value: AttributeGroupSummaries): Self = StObject.set(x, "attributeGroups", value.asInstanceOf[js.Any])
+    inline def setAttributeGroups(value: AttributeGroupSummaries): Self = StObject.set(x, "attributeGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeGroupsUndefined: Self = StObject.set(x, "attributeGroups", js.undefined)
+    inline def setAttributeGroupsUndefined: Self = StObject.set(x, "attributeGroups", js.undefined)
     
-    @scala.inline
-    def setAttributeGroupsVarargs(value: AttributeGroupSummary*): Self = StObject.set(x, "attributeGroups", js.Array(value :_*))
+    inline def setAttributeGroupsVarargs(value: AttributeGroupSummary*): Self = StObject.set(x, "attributeGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

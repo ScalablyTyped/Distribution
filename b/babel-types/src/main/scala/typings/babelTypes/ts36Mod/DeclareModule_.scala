@@ -22,8 +22,7 @@ trait DeclareModule_
 }
 object DeclareModule_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: BlockStatement_,
     end: Double,
     id: StringLiteral_ | Identifier_,
@@ -35,16 +34,12 @@ object DeclareModule_ {
     __obj.asInstanceOf[DeclareModule_]
   }
   
-  @scala.inline
-  implicit class DeclareModule_MutableBuilder[Self <: DeclareModule_] (val x: Self) extends AnyVal {
+  extension [Self <: DeclareModule_](x: Self) {
     
-    @scala.inline
-    def setBody(value: BlockStatement_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BlockStatement_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: StringLiteral_ | Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: StringLiteral_ | Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DeclareModule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DeclareModule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

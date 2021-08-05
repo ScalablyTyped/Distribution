@@ -13,19 +13,15 @@ trait GetDataflowGraphRequest extends StObject {
 }
 object GetDataflowGraphRequest {
   
-  @scala.inline
-  def apply(): GetDataflowGraphRequest = {
+  inline def apply(): GetDataflowGraphRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDataflowGraphRequest]
   }
   
-  @scala.inline
-  implicit class GetDataflowGraphRequestMutableBuilder[Self <: GetDataflowGraphRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataflowGraphRequest](x: Self) {
     
-    @scala.inline
-    def setPythonScript(value: PythonScript): Self = StObject.set(x, "PythonScript", value.asInstanceOf[js.Any])
+    inline def setPythonScript(value: PythonScript): Self = StObject.set(x, "PythonScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPythonScriptUndefined: Self = StObject.set(x, "PythonScript", js.undefined)
+    inline def setPythonScriptUndefined: Self = StObject.set(x, "PythonScript", js.undefined)
   }
 }

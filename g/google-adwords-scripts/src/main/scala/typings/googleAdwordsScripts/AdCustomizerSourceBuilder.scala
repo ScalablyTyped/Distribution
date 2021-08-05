@@ -16,8 +16,7 @@ trait AdCustomizerSourceBuilder[AdCustomizerSource]
 }
 object AdCustomizerSourceBuilder {
   
-  @scala.inline
-  def apply[AdCustomizerSource](
+  inline def apply[AdCustomizerSource](
     addAttribute: (String, String) => AdCustomizerSourceBuilder[AdCustomizerSource],
     addAttributes: js.Object => AdCustomizerSourceBuilder[AdCustomizerSource],
     build: () => AdWordsOperation[AdCustomizerSource],
@@ -27,16 +26,12 @@ object AdCustomizerSourceBuilder {
     __obj.asInstanceOf[AdCustomizerSourceBuilder[AdCustomizerSource]]
   }
   
-  @scala.inline
-  implicit class AdCustomizerSourceBuilderMutableBuilder[Self <: AdCustomizerSourceBuilder[?], AdCustomizerSource] (val x: Self & AdCustomizerSourceBuilder[AdCustomizerSource]) extends AnyVal {
+  extension [Self <: AdCustomizerSourceBuilder[?], AdCustomizerSource](x: Self & AdCustomizerSourceBuilder[AdCustomizerSource]) {
     
-    @scala.inline
-    def setAddAttribute(value: (String, String) => AdCustomizerSourceBuilder[AdCustomizerSource]): Self = StObject.set(x, "addAttribute", js.Any.fromFunction2(value))
+    inline def setAddAttribute(value: (String, String) => AdCustomizerSourceBuilder[AdCustomizerSource]): Self = StObject.set(x, "addAttribute", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddAttributes(value: js.Object => AdCustomizerSourceBuilder[AdCustomizerSource]): Self = StObject.set(x, "addAttributes", js.Any.fromFunction1(value))
+    inline def setAddAttributes(value: js.Object => AdCustomizerSourceBuilder[AdCustomizerSource]): Self = StObject.set(x, "addAttributes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithName(value: String => AdCustomizerSourceBuilder[AdCustomizerSource]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
+    inline def setWithName(value: String => AdCustomizerSourceBuilder[AdCustomizerSource]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
   }
 }

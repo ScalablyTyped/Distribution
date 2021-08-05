@@ -28,37 +28,27 @@ trait IotAnalyticsAction extends StObject {
 }
 object IotAnalyticsAction {
   
-  @scala.inline
-  def apply(): IotAnalyticsAction = {
+  inline def apply(): IotAnalyticsAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IotAnalyticsAction]
   }
   
-  @scala.inline
-  implicit class IotAnalyticsActionMutableBuilder[Self <: IotAnalyticsAction] (val x: Self) extends AnyVal {
+  extension [Self <: IotAnalyticsAction](x: Self) {
     
-    @scala.inline
-    def setBatchMode(value: BatchMode): Self = StObject.set(x, "batchMode", value.asInstanceOf[js.Any])
+    inline def setBatchMode(value: BatchMode): Self = StObject.set(x, "batchMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchModeUndefined: Self = StObject.set(x, "batchMode", js.undefined)
+    inline def setBatchModeUndefined: Self = StObject.set(x, "batchMode", js.undefined)
     
-    @scala.inline
-    def setChannelArn(value: AwsArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: AwsArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelArnUndefined: Self = StObject.set(x, "channelArn", js.undefined)
+    inline def setChannelArnUndefined: Self = StObject.set(x, "channelArn", js.undefined)
     
-    @scala.inline
-    def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
+    inline def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

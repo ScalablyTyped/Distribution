@@ -13,20 +13,16 @@ trait DirectiveArguments
 }
 object DirectiveArguments {
   
-  @scala.inline
-  def apply(elements: js.Array[DirectiveArgumentNode], loc: SourceLocation): DirectiveArguments = {
+  inline def apply(elements: js.Array[DirectiveArgumentNode], loc: SourceLocation): DirectiveArguments = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(17)
     __obj.asInstanceOf[DirectiveArguments]
   }
   
-  @scala.inline
-  implicit class DirectiveArgumentsMutableBuilder[Self <: DirectiveArguments] (val x: Self) extends AnyVal {
+  extension [Self <: DirectiveArguments](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[DirectiveArgumentNode]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[DirectiveArgumentNode]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: DirectiveArgumentNode*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: DirectiveArgumentNode*): Self = StObject.set(x, "elements", js.Array(value :_*))
   }
 }

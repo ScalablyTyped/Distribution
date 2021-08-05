@@ -12,25 +12,19 @@ trait ViewMode extends StObject {
 }
 object ViewMode {
   
-  @scala.inline
-  def apply(): ViewMode = {
+  inline def apply(): ViewMode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewMode]
   }
   
-  @scala.inline
-  implicit class ViewModeMutableBuilder[Self <: ViewMode] (val x: Self) extends AnyVal {
+  extension [Self <: ViewMode](x: Self) {
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    @scala.inline
-    def setViewMode(value: typings.storybookApi.modulesStoriesMod.ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: typings.storybookApi.modulesStoriesMod.ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
+    inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait StreamSocketListenerInformation
      with IStreamSocketListenerInformation
 object StreamSocketListenerInformation {
   
-  @scala.inline
-  def apply(localPort: String): StreamSocketListenerInformation = {
+  inline def apply(localPort: String): StreamSocketListenerInformation = {
     val __obj = js.Dynamic.literal(localPort = localPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamSocketListenerInformation]
   }

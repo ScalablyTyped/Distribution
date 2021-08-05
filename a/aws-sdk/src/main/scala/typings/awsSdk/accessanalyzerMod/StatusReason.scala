@@ -13,16 +13,13 @@ trait StatusReason extends StObject {
 }
 object StatusReason {
   
-  @scala.inline
-  def apply(code: ReasonCode): StatusReason = {
+  inline def apply(code: ReasonCode): StatusReason = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusReason]
   }
   
-  @scala.inline
-  implicit class StatusReasonMutableBuilder[Self <: StatusReason] (val x: Self) extends AnyVal {
+  extension [Self <: StatusReason](x: Self) {
     
-    @scala.inline
-    def setCode(value: ReasonCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: ReasonCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }
 }

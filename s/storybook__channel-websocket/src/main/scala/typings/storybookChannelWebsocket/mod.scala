@@ -13,33 +13,32 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasUrlAsyncOnError: CreateChannelArgs): Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUrlAsyncOnError.asInstanceOf[js.Any]).asInstanceOf[Channel]
+  inline def default(hasUrlAsyncOnError: CreateChannelArgs): Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUrlAsyncOnError.asInstanceOf[js.Any]).asInstanceOf[Channel]
   
   @JSImport("@storybook/channel-websocket", "WebsocketTransport")
   @js.native
   class WebsocketTransport protected () extends StObject {
     def this(hasUrlOnError: WebsocketTransportArgs) = this()
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
-    var connect: js.Any = js.native
+    /* private */ var connect: js.Any = js.native
     
-    var flush: js.Any = js.native
+    /* private */ var flush: js.Any = js.native
     
-    var handler: js.Any = js.native
+    /* private */ var handler: js.Any = js.native
     
-    var isReady: js.Any = js.native
+    /* private */ var isReady: js.Any = js.native
     
     def send(event: js.Any): Unit = js.native
     
-    var sendLater: js.Any = js.native
+    /* private */ var sendLater: js.Any = js.native
     
-    var sendNow: js.Any = js.native
+    /* private */ var sendNow: js.Any = js.native
     
     def setHandler(handler: ChannelHandler): Unit = js.native
     
-    var socket: js.Any = js.native
+    /* private */ var socket: js.Any = js.native
   }
   
   trait CreateChannelArgs extends StObject {
@@ -54,23 +53,18 @@ object mod {
   }
   object CreateChannelArgs {
     
-    @scala.inline
-    def apply(async: Boolean, onError: /* message */ Event => Unit, url: String): CreateChannelArgs = {
+    inline def apply(async: Boolean, onError: /* message */ Event => Unit, url: String): CreateChannelArgs = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError), url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateChannelArgs]
     }
     
-    @scala.inline
-    implicit class CreateChannelArgsMutableBuilder[Self <: CreateChannelArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CreateChannelArgs](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnError(value: /* message */ Event => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* message */ Event => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,20 +80,16 @@ object mod {
   }
   object WebsocketTransportArgs {
     
-    @scala.inline
-    def apply(onError: /* message */ Event => Unit, url: String): WebsocketTransportArgs = {
+    inline def apply(onError: /* message */ Event => Unit, url: String): WebsocketTransportArgs = {
       val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError), url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebsocketTransportArgs]
     }
     
-    @scala.inline
-    implicit class WebsocketTransportArgsMutableBuilder[Self <: WebsocketTransportArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WebsocketTransportArgs](x: Self) {
       
-      @scala.inline
-      def setOnError(value: /* message */ Event => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* message */ Event => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

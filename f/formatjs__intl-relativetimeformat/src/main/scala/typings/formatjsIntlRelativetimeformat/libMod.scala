@@ -41,53 +41,42 @@ object libMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def __addLocaleData(data: RelativeTimeLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def __addLocaleData(data: RelativeTimeLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@formatjs/intl-relativetimeformat/lib", "default.__defaultLocale")
     @js.native
     def __defaultLocale: js.Any = js.native
-    @scala.inline
-    def __defaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__defaultLocale")(x.asInstanceOf[js.Any])
+    inline def __defaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__defaultLocale")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-relativetimeformat/lib", "default.availableLocales")
     @js.native
     def availableLocales: js.Any = js.native
-    @scala.inline
-    def availableLocales_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableLocales")(x.asInstanceOf[js.Any])
+    inline def availableLocales_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableLocales")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-relativetimeformat/lib", "default.getDefaultLocale")
     @js.native
     def getDefaultLocale: js.Any = js.native
-    @scala.inline
-    def getDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultLocale")(x.asInstanceOf[js.Any])
+    inline def getDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultLocale")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-relativetimeformat/lib", "default.localeData")
     @js.native
     def localeData: Record[String, LocaleFieldsData] = js.native
-    @scala.inline
-    def localeData_=(x: Record[String, LocaleFieldsData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localeData")(x.asInstanceOf[js.Any])
+    inline def localeData_=(x: Record[String, LocaleFieldsData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localeData")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-relativetimeformat/lib", "default.polyfilled")
     @js.native
     def polyfilled: Boolean = js.native
-    @scala.inline
-    def polyfilled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("polyfilled")(x.asInstanceOf[js.Any])
+    inline def polyfilled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("polyfilled")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-relativetimeformat/lib", "default.relevantExtensionKeys")
     @js.native
     def relevantExtensionKeys: js.Any = js.native
-    @scala.inline
-    def relevantExtensionKeys_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relevantExtensionKeys")(x.asInstanceOf[js.Any])
+    inline def relevantExtensionKeys_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relevantExtensionKeys")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def supportedLocalesOf(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def supportedLocalesOf(locales: String, options: PickIntlRelativeTimeForma): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def supportedLocalesOf(locales: js.Array[String], options: PickIntlRelativeTimeForma): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(locales: String, options: PickIntlRelativeTimeForma): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(locales: js.Array[String], options: PickIntlRelativeTimeForma): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
   
   trait RelativeTimeFormat extends StObject {
@@ -100,8 +89,7 @@ object libMod {
   }
   object RelativeTimeFormat {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       format: (Double, RelativeTimeFormattableUnit) => String,
       formatToParts: (Double, RelativeTimeFormattableUnit) => js.Array[RelativeTimePart],
       resolvedOptions: () => ResolvedIntlRelativeTimeFormatOptions
@@ -110,17 +98,13 @@ object libMod {
       __obj.asInstanceOf[RelativeTimeFormat]
     }
     
-    @scala.inline
-    implicit class RelativeTimeFormatMutableBuilder[Self <: RelativeTimeFormat] (val x: Self) extends AnyVal {
+    extension [Self <: RelativeTimeFormat](x: Self) {
       
-      @scala.inline
-      def setFormat(value: (Double, RelativeTimeFormattableUnit) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (Double, RelativeTimeFormattableUnit) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatToParts(value: (Double, RelativeTimeFormattableUnit) => js.Array[RelativeTimePart]): Self = StObject.set(x, "formatToParts", js.Any.fromFunction2(value))
+      inline def setFormatToParts(value: (Double, RelativeTimeFormattableUnit) => js.Array[RelativeTimePart]): Self = StObject.set(x, "formatToParts", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResolvedOptions(value: () => ResolvedIntlRelativeTimeFormatOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
+      inline def setResolvedOptions(value: () => ResolvedIntlRelativeTimeFormatOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
     }
   }
 }

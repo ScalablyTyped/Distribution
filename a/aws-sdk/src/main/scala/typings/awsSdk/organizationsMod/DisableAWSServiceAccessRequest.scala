@@ -13,16 +13,13 @@ trait DisableAWSServiceAccessRequest extends StObject {
 }
 object DisableAWSServiceAccessRequest {
   
-  @scala.inline
-  def apply(ServicePrincipal: ServicePrincipal): DisableAWSServiceAccessRequest = {
+  inline def apply(ServicePrincipal: ServicePrincipal): DisableAWSServiceAccessRequest = {
     val __obj = js.Dynamic.literal(ServicePrincipal = ServicePrincipal.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableAWSServiceAccessRequest]
   }
   
-  @scala.inline
-  implicit class DisableAWSServiceAccessRequestMutableBuilder[Self <: DisableAWSServiceAccessRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisableAWSServiceAccessRequest](x: Self) {
     
-    @scala.inline
-    def setServicePrincipal(value: ServicePrincipal): Self = StObject.set(x, "ServicePrincipal", value.asInstanceOf[js.Any])
+    inline def setServicePrincipal(value: ServicePrincipal): Self = StObject.set(x, "ServicePrincipal", value.asInstanceOf[js.Any])
   }
 }

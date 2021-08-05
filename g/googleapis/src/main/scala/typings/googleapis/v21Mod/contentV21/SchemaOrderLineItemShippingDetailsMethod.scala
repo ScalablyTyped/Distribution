@@ -29,37 +29,27 @@ trait SchemaOrderLineItemShippingDetailsMethod extends StObject {
 }
 object SchemaOrderLineItemShippingDetailsMethod {
   
-  @scala.inline
-  def apply(): SchemaOrderLineItemShippingDetailsMethod = {
+  inline def apply(): SchemaOrderLineItemShippingDetailsMethod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderLineItemShippingDetailsMethod]
   }
   
-  @scala.inline
-  implicit class SchemaOrderLineItemShippingDetailsMethodMutableBuilder[Self <: SchemaOrderLineItemShippingDetailsMethod] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderLineItemShippingDetailsMethod](x: Self) {
     
-    @scala.inline
-    def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
+    inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
+    inline def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
     
-    @scala.inline
-    def setMaxDaysInTransit(value: Double): Self = StObject.set(x, "maxDaysInTransit", value.asInstanceOf[js.Any])
+    inline def setMaxDaysInTransit(value: Double): Self = StObject.set(x, "maxDaysInTransit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDaysInTransitUndefined: Self = StObject.set(x, "maxDaysInTransit", js.undefined)
+    inline def setMaxDaysInTransitUndefined: Self = StObject.set(x, "maxDaysInTransit", js.undefined)
     
-    @scala.inline
-    def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+    inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
+    inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
     
-    @scala.inline
-    def setMinDaysInTransit(value: Double): Self = StObject.set(x, "minDaysInTransit", value.asInstanceOf[js.Any])
+    inline def setMinDaysInTransit(value: Double): Self = StObject.set(x, "minDaysInTransit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDaysInTransitUndefined: Self = StObject.set(x, "minDaysInTransit", js.undefined)
+    inline def setMinDaysInTransitUndefined: Self = StObject.set(x, "minDaysInTransit", js.undefined)
   }
 }

@@ -200,8 +200,7 @@ object topicMod {
       *
       * @return {string}
       */
-    @scala.inline
-    def formatName_(projectId: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatName_")(projectId.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def formatName_(projectId: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatName_")(projectId.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   type CreateTopicCallback = TopicCallback
@@ -222,20 +221,16 @@ object topicMod {
   }
   object GetTopicOptions {
     
-    @scala.inline
-    def apply(): GetTopicOptions = {
+    inline def apply(): GetTopicOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetTopicOptions]
     }
     
-    @scala.inline
-    implicit class GetTopicOptionsMutableBuilder[Self <: GetTopicOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetTopicOptions](x: Self) {
       
-      @scala.inline
-      def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
+      inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCreateUndefined: Self = StObject.set(x, "autoCreate", js.undefined)
+      inline def setAutoCreateUndefined: Self = StObject.set(x, "autoCreate", js.undefined)
     }
   }
   
@@ -253,20 +248,16 @@ object topicMod {
   }
   object MessageOptions {
     
-    @scala.inline
-    def apply(): MessageOptions = {
+    inline def apply(): MessageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MessageOptions]
     }
     
-    @scala.inline
-    implicit class MessageOptionsMutableBuilder[Self <: MessageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MessageOptions](x: Self) {
       
-      @scala.inline
-      def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     }
   }
   

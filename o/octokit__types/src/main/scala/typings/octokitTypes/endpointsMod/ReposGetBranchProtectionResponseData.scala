@@ -29,8 +29,7 @@ trait ReposGetBranchProtectionResponseData extends StObject {
 }
 object ReposGetBranchProtectionResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allow_deletions: EnabledBoolean,
     allow_force_pushes: EnabledBoolean,
     enforce_admins: EnabledUrl,
@@ -44,31 +43,22 @@ object ReposGetBranchProtectionResponseData {
     __obj.asInstanceOf[ReposGetBranchProtectionResponseData]
   }
   
-  @scala.inline
-  implicit class ReposGetBranchProtectionResponseDataMutableBuilder[Self <: ReposGetBranchProtectionResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetBranchProtectionResponseData](x: Self) {
     
-    @scala.inline
-    def setAllow_deletions(value: EnabledBoolean): Self = StObject.set(x, "allow_deletions", value.asInstanceOf[js.Any])
+    inline def setAllow_deletions(value: EnabledBoolean): Self = StObject.set(x, "allow_deletions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_force_pushes(value: EnabledBoolean): Self = StObject.set(x, "allow_force_pushes", value.asInstanceOf[js.Any])
+    inline def setAllow_force_pushes(value: EnabledBoolean): Self = StObject.set(x, "allow_force_pushes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforce_admins(value: EnabledUrl): Self = StObject.set(x, "enforce_admins", value.asInstanceOf[js.Any])
+    inline def setEnforce_admins(value: EnabledUrl): Self = StObject.set(x, "enforce_admins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired_linear_history(value: EnabledBoolean): Self = StObject.set(x, "required_linear_history", value.asInstanceOf[js.Any])
+    inline def setRequired_linear_history(value: EnabledBoolean): Self = StObject.set(x, "required_linear_history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired_pull_request_reviews(value: Dismissalrestrictions): Self = StObject.set(x, "required_pull_request_reviews", value.asInstanceOf[js.Any])
+    inline def setRequired_pull_request_reviews(value: Dismissalrestrictions): Self = StObject.set(x, "required_pull_request_reviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired_status_checks(value: Contextsurl): Self = StObject.set(x, "required_status_checks", value.asInstanceOf[js.Any])
+    inline def setRequired_status_checks(value: Contextsurl): Self = StObject.set(x, "required_status_checks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictions(value: Apps): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+    inline def setRestrictions(value: Apps): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

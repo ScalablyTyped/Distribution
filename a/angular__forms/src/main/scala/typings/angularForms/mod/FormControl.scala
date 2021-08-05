@@ -66,7 +66,7 @@ class FormControl () extends AbstractControl {
   def this(formState: Unit, validatorOrOpts: ValidatorFn, asyncValidator: js.Array[AsyncValidatorFn]) = this()
   def this(formState: Unit, validatorOrOpts: ValidatorFn, asyncValidator: AsyncValidatorFn) = this()
   
-  var _applyFormState: js.Any = js.native
+  /* private */ var _applyFormState: js.Any = js.native
   
   def patchValue(value: js.Any, options: EmitModelToViewChange): Unit = js.native
   

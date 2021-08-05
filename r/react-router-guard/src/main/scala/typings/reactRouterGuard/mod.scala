@@ -45,13 +45,11 @@ object mod {
     def this(props: BrowserRouterProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def Link[S](
+  inline def Link[S](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type Parameters<Link<S>> is not an array type */ params: Parameters[typings.reactRouterDom.mod.Link[S]]
   ): ReturnType[typings.reactRouterDom.mod.Link[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(params.asInstanceOf[js.Any]).asInstanceOf[ReturnType[typings.reactRouterDom.mod.Link[S]]]
   
-  @scala.inline
-  def NavLink[S](
+  inline def NavLink[S](
     // TODO: Define this as ...params: Parameters<NavLink<S>> when only TypeScript >= 3.1 support is needed.
   props: PropsWithoutRef[NavLinkProps[S]] & RefAttributes[HTMLAnchorElement]
   ): ReturnType[typings.reactRouterDom.mod.NavLink[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("NavLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReturnType[typings.reactRouterDom.mod.NavLink[S]]]
@@ -123,8 +121,7 @@ object mod {
   @js.native
   val history: History[LocationState] = js.native
   
-  @scala.inline
-  def `lazy`[T /* <: ComponentType[js.Any] */](factory: js.Function0[js.Promise[Default[T]]]): LazyExoticComponent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(factory.asInstanceOf[js.Any]).asInstanceOf[LazyExoticComponent[T]]
+  inline def `lazy`[T /* <: ComponentType[js.Any] */](factory: js.Function0[js.Promise[Default[T]]]): LazyExoticComponent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(factory.asInstanceOf[js.Any]).asInstanceOf[LazyExoticComponent[T]]
   
   trait RouterGuardConfigProps extends StObject {
     
@@ -142,50 +139,36 @@ object mod {
   }
   object RouterGuardConfigProps {
     
-    @scala.inline
-    def apply(component: LazyExoticComponent[js.Any], path: String): RouterGuardConfigProps = {
+    inline def apply(component: LazyExoticComponent[js.Any], path: String): RouterGuardConfigProps = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouterGuardConfigProps]
     }
     
-    @scala.inline
-    implicit class RouterGuardConfigPropsMutableBuilder[Self <: RouterGuardConfigProps] (val x: Self) extends AnyVal {
+    extension [Self <: RouterGuardConfigProps](x: Self) {
       
-      @scala.inline
-      def setCanActivate(value: js.Array[js.Function0[js.Promise[js.Any]]]): Self = StObject.set(x, "canActivate", value.asInstanceOf[js.Any])
+      inline def setCanActivate(value: js.Array[js.Function0[js.Promise[js.Any]]]): Self = StObject.set(x, "canActivate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanActivateUndefined: Self = StObject.set(x, "canActivate", js.undefined)
+      inline def setCanActivateUndefined: Self = StObject.set(x, "canActivate", js.undefined)
       
-      @scala.inline
-      def setCanActivateVarargs(value: js.Function0[js.Promise[js.Any]]*): Self = StObject.set(x, "canActivate", js.Array(value :_*))
+      inline def setCanActivateVarargs(value: js.Function0[js.Promise[js.Any]]*): Self = StObject.set(x, "canActivate", js.Array(value :_*))
       
-      @scala.inline
-      def setComponent(value: LazyExoticComponent[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: LazyExoticComponent[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+      inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
       
-      @scala.inline
-      def setRoutes(value: js.Array[RouterGuardConfigProps]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[RouterGuardConfigProps]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+      inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
-      @scala.inline
-      def setRoutesVarargs(value: RouterGuardConfigProps*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: RouterGuardConfigProps*): Self = StObject.set(x, "routes", js.Array(value :_*))
     }
   }
   
@@ -199,32 +182,24 @@ object mod {
   }
   object RouterGuardProps {
     
-    @scala.inline
-    def apply(config: js.Array[RouterGuardConfigProps]): RouterGuardProps = {
+    inline def apply(config: js.Array[RouterGuardConfigProps]): RouterGuardProps = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouterGuardProps]
     }
     
-    @scala.inline
-    implicit class RouterGuardPropsMutableBuilder[Self <: RouterGuardProps] (val x: Self) extends AnyVal {
+    extension [Self <: RouterGuardProps](x: Self) {
       
-      @scala.inline
-      def setConfig(value: js.Array[RouterGuardConfigProps]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Array[RouterGuardConfigProps]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigVarargs(value: RouterGuardConfigProps*): Self = StObject.set(x, "config", js.Array(value :_*))
+      inline def setConfigVarargs(value: RouterGuardConfigProps*): Self = StObject.set(x, "config", js.Array(value :_*))
       
-      @scala.inline
-      def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setLoading(value: Boolean | ReactElement): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean | ReactElement): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     }
   }
 }

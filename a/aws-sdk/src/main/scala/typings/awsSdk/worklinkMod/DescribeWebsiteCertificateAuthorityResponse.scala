@@ -23,31 +23,23 @@ trait DescribeWebsiteCertificateAuthorityResponse extends StObject {
 }
 object DescribeWebsiteCertificateAuthorityResponse {
   
-  @scala.inline
-  def apply(): DescribeWebsiteCertificateAuthorityResponse = {
+  inline def apply(): DescribeWebsiteCertificateAuthorityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeWebsiteCertificateAuthorityResponse]
   }
   
-  @scala.inline
-  implicit class DescribeWebsiteCertificateAuthorityResponseMutableBuilder[Self <: DescribeWebsiteCertificateAuthorityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWebsiteCertificateAuthorityResponse](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
   }
 }

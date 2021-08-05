@@ -23,19 +23,15 @@ trait ChartExportOptions extends StObject {
 }
 object ChartExportOptions {
   
-  @scala.inline
-  def apply(AutomaticPageLayout: Boolean, SizeMode: String): ChartExportOptions = {
+  inline def apply(AutomaticPageLayout: Boolean, SizeMode: String): ChartExportOptions = {
     val __obj = js.Dynamic.literal(AutomaticPageLayout = AutomaticPageLayout.asInstanceOf[js.Any], SizeMode = SizeMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartExportOptions]
   }
   
-  @scala.inline
-  implicit class ChartExportOptionsMutableBuilder[Self <: ChartExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartExportOptions](x: Self) {
     
-    @scala.inline
-    def setAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "AutomaticPageLayout", value.asInstanceOf[js.Any])
+    inline def setAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "AutomaticPageLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeMode(value: String): Self = StObject.set(x, "SizeMode", value.asInstanceOf[js.Any])
+    inline def setSizeMode(value: String): Self = StObject.set(x, "SizeMode", value.asInstanceOf[js.Any])
   }
 }

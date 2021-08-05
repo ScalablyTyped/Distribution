@@ -16,16 +16,13 @@ trait NullLayoutOptions
 }
 object NullLayoutOptions {
   
-  @scala.inline
-  def apply(): NullLayoutOptions = {
+  inline def apply(): NullLayoutOptions = {
     val __obj = js.Dynamic.literal(name = "null")
     __obj.asInstanceOf[NullLayoutOptions]
   }
   
-  @scala.inline
-  implicit class NullLayoutOptionsMutableBuilder[Self <: NullLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NullLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: `null`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: `null`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

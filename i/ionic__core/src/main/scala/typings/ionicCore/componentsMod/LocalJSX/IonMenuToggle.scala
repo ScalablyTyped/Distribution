@@ -18,25 +18,19 @@ trait IonMenuToggle extends StObject {
 }
 object IonMenuToggle {
   
-  @scala.inline
-  def apply(): IonMenuToggle = {
+  inline def apply(): IonMenuToggle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonMenuToggle]
   }
   
-  @scala.inline
-  implicit class IonMenuToggleMutableBuilder[Self <: IonMenuToggle] (val x: Self) extends AnyVal {
+  extension [Self <: IonMenuToggle](x: Self) {
     
-    @scala.inline
-    def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
+    inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
+    inline def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
     
-    @scala.inline
-    def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
   }
 }

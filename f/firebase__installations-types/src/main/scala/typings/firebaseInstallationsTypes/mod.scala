@@ -48,17 +48,14 @@ object mod {
     }
     object NameServiceMapping {
       
-      @scala.inline
-      def apply(installations: FirebaseInstallations): NameServiceMapping = {
+      inline def apply(installations: FirebaseInstallations): NameServiceMapping = {
         val __obj = js.Dynamic.literal(installations = installations.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      @scala.inline
-      implicit class NameServiceMappingMutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
+      extension [Self <: NameServiceMapping](x: Self) {
         
-        @scala.inline
-        def setInstallations(value: FirebaseInstallations): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
+        inline def setInstallations(value: FirebaseInstallations): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -28,31 +28,23 @@ trait SchemaTestCaseReference extends StObject {
 }
 object SchemaTestCaseReference {
   
-  @scala.inline
-  def apply(): SchemaTestCaseReference = {
+  inline def apply(): SchemaTestCaseReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestCaseReference]
   }
   
-  @scala.inline
-  implicit class SchemaTestCaseReferenceMutableBuilder[Self <: SchemaTestCaseReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestCaseReference](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTestSuiteName(value: String): Self = StObject.set(x, "testSuiteName", value.asInstanceOf[js.Any])
+    inline def setTestSuiteName(value: String): Self = StObject.set(x, "testSuiteName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSuiteNameUndefined: Self = StObject.set(x, "testSuiteName", js.undefined)
+    inline def setTestSuiteNameUndefined: Self = StObject.set(x, "testSuiteName", js.undefined)
   }
 }

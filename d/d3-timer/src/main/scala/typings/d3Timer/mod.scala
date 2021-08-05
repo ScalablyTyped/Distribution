@@ -10,38 +10,24 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def interval(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any]).asInstanceOf[Timer_]
-  @scala.inline
-  def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Timer_]
-  @scala.inline
-  def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
-  @scala.inline
-  def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Unit, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  inline def interval(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any]).asInstanceOf[Timer_]
+  inline def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  inline def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  inline def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Unit, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
   
-  @scala.inline
-  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
+  inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   
-  @scala.inline
-  def timeout(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any]).asInstanceOf[Timer_]
-  @scala.inline
-  def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Timer_]
-  @scala.inline
-  def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
-  @scala.inline
-  def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Unit, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  inline def timeout(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any]).asInstanceOf[Timer_]
+  inline def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  inline def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  inline def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Unit, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
   
-  @scala.inline
-  def timer(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timer")(callback.asInstanceOf[js.Any]).asInstanceOf[Timer_]
-  @scala.inline
-  def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Timer_]
-  @scala.inline
-  def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
-  @scala.inline
-  def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Unit, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  inline def timer(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timer")(callback.asInstanceOf[js.Any]).asInstanceOf[Timer_]
+  inline def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  inline def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  inline def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Unit, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
   
-  @scala.inline
-  def timerFlush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("timerFlush")().asInstanceOf[Unit]
+  inline def timerFlush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("timerFlush")().asInstanceOf[Unit]
   
   @js.native
   trait Timer_ extends StObject {

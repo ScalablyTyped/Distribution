@@ -23,22 +23,17 @@ trait ZeptoEffectsSpeeds extends StObject {
 }
 object ZeptoEffectsSpeeds {
   
-  @scala.inline
-  def apply(_default: Double, fast: Double, slow: Double): ZeptoEffectsSpeeds = {
+  inline def apply(_default: Double, fast: Double, slow: Double): ZeptoEffectsSpeeds = {
     val __obj = js.Dynamic.literal(_default = _default.asInstanceOf[js.Any], fast = fast.asInstanceOf[js.Any], slow = slow.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZeptoEffectsSpeeds]
   }
   
-  @scala.inline
-  implicit class ZeptoEffectsSpeedsMutableBuilder[Self <: ZeptoEffectsSpeeds] (val x: Self) extends AnyVal {
+  extension [Self <: ZeptoEffectsSpeeds](x: Self) {
     
-    @scala.inline
-    def setFast(value: Double): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
+    inline def setFast(value: Double): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlow(value: Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
+    inline def setSlow(value: Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_default(value: Double): Self = StObject.set(x, "_default", value.asInstanceOf[js.Any])
+    inline def set_default(value: Double): Self = StObject.set(x, "_default", value.asInstanceOf[js.Any])
   }
 }

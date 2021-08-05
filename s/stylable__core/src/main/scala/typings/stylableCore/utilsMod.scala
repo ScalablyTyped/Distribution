@@ -10,15 +10,11 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deprecated(staticMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(staticMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deprecated(staticMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(staticMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def filename2varname(filename: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("filename2varname")(filename.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def filename2varname(filename: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("filename2varname")(filename.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def string2varname(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string2varname")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def string2varname(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string2varname")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def stripQuotation(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripQuotation")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stripQuotation(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripQuotation")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -14,28 +14,21 @@ trait Footer extends StObject {
 }
 object Footer {
   
-  @scala.inline
-  def apply(): Footer = {
+  inline def apply(): Footer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Footer]
   }
   
-  @scala.inline
-  implicit class FooterMutableBuilder[Self <: Footer] (val x: Self) extends AnyVal {
+  extension [Self <: Footer](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
     
-    @scala.inline
-    def setFooterId(value: String): Self = StObject.set(x, "footerId", value.asInstanceOf[js.Any])
+    inline def setFooterId(value: String): Self = StObject.set(x, "footerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterIdUndefined: Self = StObject.set(x, "footerId", js.undefined)
+    inline def setFooterIdUndefined: Self = StObject.set(x, "footerId", js.undefined)
   }
 }

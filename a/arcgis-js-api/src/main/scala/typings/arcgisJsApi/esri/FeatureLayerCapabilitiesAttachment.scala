@@ -47,8 +47,7 @@ trait FeatureLayerCapabilitiesAttachment
 }
 object FeatureLayerCapabilitiesAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -62,22 +61,16 @@ object FeatureLayerCapabilitiesAttachment {
     __obj.asInstanceOf[FeatureLayerCapabilitiesAttachment]
   }
   
-  @scala.inline
-  implicit class FeatureLayerCapabilitiesAttachmentMutableBuilder[Self <: FeatureLayerCapabilitiesAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureLayerCapabilitiesAttachment](x: Self) {
     
-    @scala.inline
-    def setSupportsContentType(value: Boolean): Self = StObject.set(x, "supportsContentType", value.asInstanceOf[js.Any])
+    inline def setSupportsContentType(value: Boolean): Self = StObject.set(x, "supportsContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsExifInfo(value: Boolean): Self = StObject.set(x, "supportsExifInfo", value.asInstanceOf[js.Any])
+    inline def setSupportsExifInfo(value: Boolean): Self = StObject.set(x, "supportsExifInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsKeywords(value: Boolean): Self = StObject.set(x, "supportsKeywords", value.asInstanceOf[js.Any])
+    inline def setSupportsKeywords(value: Boolean): Self = StObject.set(x, "supportsKeywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsName(value: Boolean): Self = StObject.set(x, "supportsName", value.asInstanceOf[js.Any])
+    inline def setSupportsName(value: Boolean): Self = StObject.set(x, "supportsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsSize(value: Boolean): Self = StObject.set(x, "supportsSize", value.asInstanceOf[js.Any])
+    inline def setSupportsSize(value: Boolean): Self = StObject.set(x, "supportsSize", value.asInstanceOf[js.Any])
   }
 }

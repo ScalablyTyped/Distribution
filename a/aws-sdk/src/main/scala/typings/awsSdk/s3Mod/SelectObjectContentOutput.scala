@@ -14,22 +14,17 @@ trait SelectObjectContentOutput extends StObject {
 }
 object SelectObjectContentOutput {
   
-  @scala.inline
-  def apply(): SelectObjectContentOutput = {
+  inline def apply(): SelectObjectContentOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectObjectContentOutput]
   }
   
-  @scala.inline
-  implicit class SelectObjectContentOutputMutableBuilder[Self <: SelectObjectContentOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SelectObjectContentOutput](x: Self) {
     
-    @scala.inline
-    def setPayload(value: SelectObjectContentEventStream): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: SelectObjectContentEventStream): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     
-    @scala.inline
-    def setPayloadVarargs(value: Cont*): Self = StObject.set(x, "Payload", js.Array(value :_*))
+    inline def setPayloadVarargs(value: Cont*): Self = StObject.set(x, "Payload", js.Array(value :_*))
   }
 }

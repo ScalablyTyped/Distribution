@@ -20,25 +20,21 @@ object mod {
   @js.native
   val SUCCESS: typings.cfnResponse.cfnResponseStrings.SUCCESS = js.native
   
-  @scala.inline
-  def send(event: CloudFormationCustomResourceEvent, context: Context, responseStatus: ResponseStatus): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def send(
+  inline def send(event: CloudFormationCustomResourceEvent, context: Context, responseStatus: ResponseStatus): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def send(
     event: CloudFormationCustomResourceEvent,
     context: Context,
     responseStatus: ResponseStatus,
     responseData: js.Object
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any], responseData.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def send(
+  inline def send(
     event: CloudFormationCustomResourceEvent,
     context: Context,
     responseStatus: ResponseStatus,
     responseData: js.Object,
     physicalResourceId: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any], responseData.asInstanceOf[js.Any], physicalResourceId.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def send(
+  inline def send(
     event: CloudFormationCustomResourceEvent,
     context: Context,
     responseStatus: ResponseStatus,
@@ -46,8 +42,7 @@ object mod {
     physicalResourceId: String,
     noEcho: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any], responseData.asInstanceOf[js.Any], physicalResourceId.asInstanceOf[js.Any], noEcho.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def send(
+  inline def send(
     event: CloudFormationCustomResourceEvent,
     context: Context,
     responseStatus: ResponseStatus,
@@ -55,16 +50,14 @@ object mod {
     physicalResourceId: Unit,
     noEcho: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any], responseData.asInstanceOf[js.Any], physicalResourceId.asInstanceOf[js.Any], noEcho.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def send(
+  inline def send(
     event: CloudFormationCustomResourceEvent,
     context: Context,
     responseStatus: ResponseStatus,
     responseData: Unit,
     physicalResourceId: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any], responseData.asInstanceOf[js.Any], physicalResourceId.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def send(
+  inline def send(
     event: CloudFormationCustomResourceEvent,
     context: Context,
     responseStatus: ResponseStatus,
@@ -72,8 +65,7 @@ object mod {
     physicalResourceId: String,
     noEcho: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any], responseData.asInstanceOf[js.Any], physicalResourceId.asInstanceOf[js.Any], noEcho.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def send(
+  inline def send(
     event: CloudFormationCustomResourceEvent,
     context: Context,
     responseStatus: ResponseStatus,
@@ -89,10 +81,8 @@ object mod {
   trait ResponseStatus extends StObject
   object ResponseStatus {
     
-    @scala.inline
-    def FAILED: typings.cfnResponse.cfnResponseStrings.FAILED = "FAILED".asInstanceOf[typings.cfnResponse.cfnResponseStrings.FAILED]
+    inline def FAILED: typings.cfnResponse.cfnResponseStrings.FAILED = "FAILED".asInstanceOf[typings.cfnResponse.cfnResponseStrings.FAILED]
     
-    @scala.inline
-    def SUCCESS: typings.cfnResponse.cfnResponseStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.cfnResponse.cfnResponseStrings.SUCCESS]
+    inline def SUCCESS: typings.cfnResponse.cfnResponseStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.cfnResponse.cfnResponseStrings.SUCCESS]
   }
 }

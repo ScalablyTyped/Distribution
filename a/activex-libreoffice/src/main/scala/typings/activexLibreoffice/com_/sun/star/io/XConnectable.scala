@@ -39,8 +39,7 @@ trait XConnectable
 }
 object XConnectable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Predecessor: XConnectable,
     Successor: XConnectable,
     acquire: () => Unit,
@@ -55,25 +54,18 @@ object XConnectable {
     __obj.asInstanceOf[XConnectable]
   }
   
-  @scala.inline
-  implicit class XConnectableMutableBuilder[Self <: XConnectable] (val x: Self) extends AnyVal {
+  extension [Self <: XConnectable](x: Self) {
     
-    @scala.inline
-    def setGetPredecessor(value: () => XConnectable): Self = StObject.set(x, "getPredecessor", js.Any.fromFunction0(value))
+    inline def setGetPredecessor(value: () => XConnectable): Self = StObject.set(x, "getPredecessor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSuccessor(value: () => XConnectable): Self = StObject.set(x, "getSuccessor", js.Any.fromFunction0(value))
+    inline def setGetSuccessor(value: () => XConnectable): Self = StObject.set(x, "getSuccessor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPredecessor(value: XConnectable): Self = StObject.set(x, "Predecessor", value.asInstanceOf[js.Any])
+    inline def setPredecessor(value: XConnectable): Self = StObject.set(x, "Predecessor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPredecessor(value: XConnectable => Unit): Self = StObject.set(x, "setPredecessor", js.Any.fromFunction1(value))
+    inline def setSetPredecessor(value: XConnectable => Unit): Self = StObject.set(x, "setPredecessor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSuccessor(value: XConnectable => Unit): Self = StObject.set(x, "setSuccessor", js.Any.fromFunction1(value))
+    inline def setSetSuccessor(value: XConnectable => Unit): Self = StObject.set(x, "setSuccessor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessor(value: XConnectable): Self = StObject.set(x, "Successor", value.asInstanceOf[js.Any])
+    inline def setSuccessor(value: XConnectable): Self = StObject.set(x, "Successor", value.asInstanceOf[js.Any])
   }
 }

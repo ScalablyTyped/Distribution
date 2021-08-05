@@ -39,34 +39,25 @@ trait USDetails
 }
 object USDetails {
   
-  @scala.inline
-  def apply(ABA: String, AccountNumber: String, OwnerAddress: AddressType, OwnerName: String): USDetails = {
+  inline def apply(ABA: String, AccountNumber: String, OwnerAddress: AddressType, OwnerName: String): USDetails = {
     val __obj = js.Dynamic.literal(ABA = ABA.asInstanceOf[js.Any], AccountNumber = AccountNumber.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], Type = "US")
     __obj.asInstanceOf[USDetails]
   }
   
-  @scala.inline
-  implicit class USDetailsMutableBuilder[Self <: USDetails] (val x: Self) extends AnyVal {
+  extension [Self <: USDetails](x: Self) {
     
-    @scala.inline
-    def setABA(value: String): Self = StObject.set(x, "ABA", value.asInstanceOf[js.Any])
+    inline def setABA(value: String): Self = StObject.set(x, "ABA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
+    inline def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepositAccountType(value: DepositAccountType): Self = StObject.set(x, "DepositAccountType", value.asInstanceOf[js.Any])
+    inline def setDepositAccountType(value: DepositAccountType): Self = StObject.set(x, "DepositAccountType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepositAccountTypeUndefined: Self = StObject.set(x, "DepositAccountType", js.undefined)
+    inline def setDepositAccountTypeUndefined: Self = StObject.set(x, "DepositAccountType", js.undefined)
     
-    @scala.inline
-    def setOwnerAddress(value: AddressType): Self = StObject.set(x, "OwnerAddress", value.asInstanceOf[js.Any])
+    inline def setOwnerAddress(value: AddressType): Self = StObject.set(x, "OwnerAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
+    inline def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: US): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: US): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

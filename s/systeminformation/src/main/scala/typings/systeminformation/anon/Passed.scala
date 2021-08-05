@@ -10,16 +10,13 @@ trait Passed extends StObject {
 }
 object Passed {
   
-  @scala.inline
-  def apply(passed: Boolean): Passed = {
+  inline def apply(passed: Boolean): Passed = {
     val __obj = js.Dynamic.literal(passed = passed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Passed]
   }
   
-  @scala.inline
-  implicit class PassedMutableBuilder[Self <: Passed] (val x: Self) extends AnyVal {
+  extension [Self <: Passed](x: Self) {
     
-    @scala.inline
-    def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+    inline def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
   }
 }

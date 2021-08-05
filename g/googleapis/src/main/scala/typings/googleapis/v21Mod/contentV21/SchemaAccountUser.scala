@@ -33,43 +33,31 @@ trait SchemaAccountUser extends StObject {
 }
 object SchemaAccountUser {
   
-  @scala.inline
-  def apply(): SchemaAccountUser = {
+  inline def apply(): SchemaAccountUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccountUser]
   }
   
-  @scala.inline
-  implicit class SchemaAccountUserMutableBuilder[Self <: SchemaAccountUser] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccountUser](x: Self) {
     
-    @scala.inline
-    def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+    inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
+    inline def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setOrderManager(value: Boolean): Self = StObject.set(x, "orderManager", value.asInstanceOf[js.Any])
+    inline def setOrderManager(value: Boolean): Self = StObject.set(x, "orderManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderManagerUndefined: Self = StObject.set(x, "orderManager", js.undefined)
+    inline def setOrderManagerUndefined: Self = StObject.set(x, "orderManager", js.undefined)
     
-    @scala.inline
-    def setPaymentsAnalyst(value: Boolean): Self = StObject.set(x, "paymentsAnalyst", value.asInstanceOf[js.Any])
+    inline def setPaymentsAnalyst(value: Boolean): Self = StObject.set(x, "paymentsAnalyst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentsAnalystUndefined: Self = StObject.set(x, "paymentsAnalyst", js.undefined)
+    inline def setPaymentsAnalystUndefined: Self = StObject.set(x, "paymentsAnalyst", js.undefined)
     
-    @scala.inline
-    def setPaymentsManager(value: Boolean): Self = StObject.set(x, "paymentsManager", value.asInstanceOf[js.Any])
+    inline def setPaymentsManager(value: Boolean): Self = StObject.set(x, "paymentsManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentsManagerUndefined: Self = StObject.set(x, "paymentsManager", js.undefined)
+    inline def setPaymentsManagerUndefined: Self = StObject.set(x, "paymentsManager", js.undefined)
   }
 }

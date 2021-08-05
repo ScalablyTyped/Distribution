@@ -23,25 +23,19 @@ trait GetRepositoryPermissionsPolicyRequest extends StObject {
 }
 object GetRepositoryPermissionsPolicyRequest {
   
-  @scala.inline
-  def apply(domain: DomainName, repository: RepositoryName): GetRepositoryPermissionsPolicyRequest = {
+  inline def apply(domain: DomainName, repository: RepositoryName): GetRepositoryPermissionsPolicyRequest = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRepositoryPermissionsPolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetRepositoryPermissionsPolicyRequestMutableBuilder[Self <: GetRepositoryPermissionsPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRepositoryPermissionsPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
+    inline def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
+    inline def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
-    @scala.inline
-    def setRepository(value: RepositoryName): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: RepositoryName): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }
 }

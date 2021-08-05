@@ -29,32 +29,24 @@ object Comments {
     }
     object ResponseModel {
       
-      @scala.inline
-      def apply(agent: Boolean, id: ZendeskID, name: String): typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel = {
+      inline def apply(agent: Boolean, id: ZendeskID, name: String): typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel = {
         val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], organization_id = null, photo = null)
         __obj.asInstanceOf[typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel]
       }
       
-      @scala.inline
-      implicit class ResponseModelMutableBuilder[Self <: typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel] (val x: Self) extends AnyVal {
+      extension [Self <: typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel](x: Self) {
         
-        @scala.inline
-        def setAgent(value: Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+        inline def setAgent(value: Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrganization_id(value: Double): Self = StObject.set(x, "organization_id", value.asInstanceOf[js.Any])
+        inline def setOrganization_id(value: Double): Self = StObject.set(x, "organization_id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrganization_idNull: Self = StObject.set(x, "organization_id", null)
+        inline def setOrganization_idNull: Self = StObject.set(x, "organization_id", null)
         
-        @scala.inline
-        def setPhoto(value: Model): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
+        inline def setPhoto(value: Model): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPhotoNull: Self = StObject.set(x, "photo", null)
+        inline def setPhotoNull: Self = StObject.set(x, "photo", null)
       }
     }
   }
@@ -77,59 +69,42 @@ object Comments {
   }
   object CreateModel {
     
-    @scala.inline
-    def apply(): typings.nodeZendesk.mod.Requests.Comments.CreateModel = {
+    inline def apply(): typings.nodeZendesk.mod.Requests.Comments.CreateModel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.nodeZendesk.mod.Requests.Comments.CreateModel]
     }
     
-    @scala.inline
-    implicit class CreateModelMutableBuilder[Self <: typings.nodeZendesk.mod.Requests.Comments.CreateModel] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Requests.Comments.CreateModel](x: Self) {
       
-      @scala.inline
-      def setAuthor_id(value: ZendeskID): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
+      inline def setAuthor_id(value: ZendeskID): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthor_idUndefined: Self = StObject.set(x, "author_id", js.undefined)
+      inline def setAuthor_idUndefined: Self = StObject.set(x, "author_id", js.undefined)
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHtml_body(value: String): Self = StObject.set(x, "html_body", value.asInstanceOf[js.Any])
+      inline def setHtml_body(value: String): Self = StObject.set(x, "html_body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml_bodyUndefined: Self = StObject.set(x, "html_body", js.undefined)
+      inline def setHtml_bodyUndefined: Self = StObject.set(x, "html_body", js.undefined)
       
-      @scala.inline
-      def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
       
-      @scala.inline
-      def setRequest_id(value: Double): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
+      inline def setRequest_id(value: Double): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest_idUndefined: Self = StObject.set(x, "request_id", js.undefined)
+      inline def setRequest_idUndefined: Self = StObject.set(x, "request_id", js.undefined)
       
-      @scala.inline
-      def setUploads(value: js.Array[String]): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
+      inline def setUploads(value: js.Array[String]): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadsUndefined: Self = StObject.set(x, "uploads", js.undefined)
+      inline def setUploadsUndefined: Self = StObject.set(x, "uploads", js.undefined)
       
-      @scala.inline
-      def setUploadsVarargs(value: String*): Self = StObject.set(x, "uploads", js.Array(value :_*))
+      inline def setUploadsVarargs(value: String*): Self = StObject.set(x, "uploads", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -145,8 +120,7 @@ object Comments {
   }
   object ListPayload {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       comments: js.Array[typings.nodeZendesk.mod.Requests.Comments.ResponseModel],
       count: Double,
       organizations: js.Array[typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel],
@@ -156,26 +130,19 @@ object Comments {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Requests.Comments.ListPayload]
     }
     
-    @scala.inline
-    implicit class ListPayloadMutableBuilder[Self <: typings.nodeZendesk.mod.Requests.Comments.ListPayload] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Requests.Comments.ListPayload](x: Self) {
       
-      @scala.inline
-      def setComments(value: js.Array[typings.nodeZendesk.mod.Requests.Comments.ResponseModel]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: js.Array[typings.nodeZendesk.mod.Requests.Comments.ResponseModel]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsVarargs(value: typings.nodeZendesk.mod.Requests.Comments.ResponseModel*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: typings.nodeZendesk.mod.Requests.Comments.ResponseModel*): Self = StObject.set(x, "comments", js.Array(value :_*))
       
-      @scala.inline
-      def setOrganizations(value: js.Array[typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
+      inline def setOrganizations(value: js.Array[typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganizationsVarargs(value: typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel*): Self = StObject.set(x, "organizations", js.Array(value :_*))
+      inline def setOrganizationsVarargs(value: typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel*): Self = StObject.set(x, "organizations", js.Array(value :_*))
       
-      @scala.inline
-      def setUsers(value: js.Array[typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
   
@@ -186,11 +153,9 @@ object Comments {
   trait RequestType extends StObject
   object RequestType {
     
-    @scala.inline
-    def Comment: typings.nodeZendesk.nodeZendeskStrings.Comment = "Comment".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.Comment]
+    inline def Comment: typings.nodeZendesk.nodeZendeskStrings.Comment = "Comment".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.Comment]
     
-    @scala.inline
-    def VoiceComment: typings.nodeZendesk.nodeZendeskStrings.VoiceComment = "VoiceComment".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.VoiceComment]
+    inline def VoiceComment: typings.nodeZendesk.nodeZendeskStrings.VoiceComment = "VoiceComment".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.VoiceComment]
   }
   
   trait ResponseModel
@@ -221,8 +186,7 @@ object Comments {
   }
   object ResponseModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attachments: js.Array[Model],
       author_id: ZendeskID,
       body: String,
@@ -240,50 +204,35 @@ object Comments {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Requests.Comments.ResponseModel]
     }
     
-    @scala.inline
-    implicit class ResponseModelMutableBuilder[Self <: typings.nodeZendesk.mod.Requests.Comments.ResponseModel] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Requests.Comments.ResponseModel](x: Self) {
       
-      @scala.inline
-      def setAttachments(value: js.Array[Model]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[Model]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentsVarargs(value: Model*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: Model*): Self = StObject.set(x, "attachments", js.Array(value :_*))
       
-      @scala.inline
-      def setAuthor_id(value: ZendeskID): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
+      inline def setAuthor_id(value: ZendeskID): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml_body(value: String): Self = StObject.set(x, "html_body", value.asInstanceOf[js.Any])
+      inline def setHtml_body(value: String): Self = StObject.set(x, "html_body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setPlain_body(value: String): Self = StObject.set(x, "plain_body", value.asInstanceOf[js.Any])
+      inline def setPlain_body(value: String): Self = StObject.set(x, "plain_body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest_id(value: Double): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
+      inline def setRequest_id(value: Double): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: RequestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: RequestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVia(value: Via): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
+      inline def setVia(value: Via): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViaUndefined: Self = StObject.set(x, "via", js.undefined)
+      inline def setViaUndefined: Self = StObject.set(x, "via", js.undefined)
     }
   }
   
@@ -293,17 +242,14 @@ object Comments {
   }
   object ResponsePayload {
     
-    @scala.inline
-    def apply(comment: typings.nodeZendesk.mod.Requests.Comments.ResponseModel): typings.nodeZendesk.mod.Requests.Comments.ResponsePayload = {
+    inline def apply(comment: typings.nodeZendesk.mod.Requests.Comments.ResponseModel): typings.nodeZendesk.mod.Requests.Comments.ResponsePayload = {
       val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodeZendesk.mod.Requests.Comments.ResponsePayload]
     }
     
-    @scala.inline
-    implicit class ResponsePayloadMutableBuilder[Self <: typings.nodeZendesk.mod.Requests.Comments.ResponsePayload] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Requests.Comments.ResponsePayload](x: Self) {
       
-      @scala.inline
-      def setComment(value: typings.nodeZendesk.mod.Requests.Comments.ResponseModel): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: typings.nodeZendesk.mod.Requests.Comments.ResponseModel): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     }
   }
 }

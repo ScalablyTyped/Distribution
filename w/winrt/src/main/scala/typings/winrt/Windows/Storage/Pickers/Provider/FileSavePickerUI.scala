@@ -10,8 +10,7 @@ trait FileSavePickerUI
      with IFileSavePickerUI
 object FileSavePickerUI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowedFileTypes: IVectorView[String],
     fileName: String,
     onfilenamechanged: js.Any,

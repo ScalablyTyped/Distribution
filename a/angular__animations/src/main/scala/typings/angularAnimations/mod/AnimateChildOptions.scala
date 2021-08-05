@@ -12,19 +12,15 @@ trait AnimateChildOptions
 }
 object AnimateChildOptions {
   
-  @scala.inline
-  def apply(): AnimateChildOptions = {
+  inline def apply(): AnimateChildOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimateChildOptions]
   }
   
-  @scala.inline
-  implicit class AnimateChildOptionsMutableBuilder[Self <: AnimateChildOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnimateChildOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double | String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double | String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

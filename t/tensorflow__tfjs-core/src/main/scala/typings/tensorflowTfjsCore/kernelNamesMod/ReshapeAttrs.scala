@@ -10,19 +10,15 @@ trait ReshapeAttrs extends StObject {
 }
 object ReshapeAttrs {
   
-  @scala.inline
-  def apply(shape: js.Array[Double]): ReshapeAttrs = {
+  inline def apply(shape: js.Array[Double]): ReshapeAttrs = {
     val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReshapeAttrs]
   }
   
-  @scala.inline
-  implicit class ReshapeAttrsMutableBuilder[Self <: ReshapeAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: ReshapeAttrs](x: Self) {
     
-    @scala.inline
-    def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
   }
 }

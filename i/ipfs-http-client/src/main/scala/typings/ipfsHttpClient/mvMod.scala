@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mvMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function1[
+  inline def apply(clientOptions: ClientOptions): js.Function1[
     /* args */ (js.Tuple3[
       /* a1 */ String, 
       /* a2 */ String, 

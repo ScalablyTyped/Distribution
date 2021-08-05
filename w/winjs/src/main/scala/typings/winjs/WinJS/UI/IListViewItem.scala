@@ -36,43 +36,31 @@ trait IListViewItem extends StObject {
 }
 object IListViewItem {
   
-  @scala.inline
-  def apply(): IListViewItem = {
+  inline def apply(): IListViewItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListViewItem]
   }
   
-  @scala.inline
-  implicit class IListViewItemMutableBuilder[Self <: IListViewItem] (val x: Self) extends AnyVal {
+  extension [Self <: IListViewItem](x: Self) {
     
-    @scala.inline
-    def setHasFocus(value: Boolean): Self = StObject.set(x, "hasFocus", value.asInstanceOf[js.Any])
+    inline def setHasFocus(value: Boolean): Self = StObject.set(x, "hasFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasFocusUndefined: Self = StObject.set(x, "hasFocus", js.undefined)
+    inline def setHasFocusUndefined: Self = StObject.set(x, "hasFocus", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setShowFocus(value: Boolean): Self = StObject.set(x, "showFocus", value.asInstanceOf[js.Any])
+    inline def setShowFocus(value: Boolean): Self = StObject.set(x, "showFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFocusUndefined: Self = StObject.set(x, "showFocus", js.undefined)
+    inline def setShowFocusUndefined: Self = StObject.set(x, "showFocus", js.undefined)
     
-    @scala.inline
-    def setType(value: ObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -16,25 +16,19 @@ trait Response extends StObject {
 }
 object Response {
   
-  @scala.inline
-  def apply(): Response = {
+  inline def apply(): Response = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Response]
   }
   
-  @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+  extension [Self <: Response](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setRedirectURL(value: String): Self = StObject.set(x, "redirectURL", value.asInstanceOf[js.Any])
+    inline def setRedirectURL(value: String): Self = StObject.set(x, "redirectURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectURLUndefined: Self = StObject.set(x, "redirectURL", js.undefined)
+    inline def setRedirectURLUndefined: Self = StObject.set(x, "redirectURL", js.undefined)
   }
 }

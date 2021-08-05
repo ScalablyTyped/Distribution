@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TaskRouterCapability protected () extends StObject {
   def this(accountSid: String, authToken: String, workspaceSid: String, channelId: String) = this()
   
-  var _baseUrl: String = js.native
+  /* private */ var _baseUrl: String = js.native
   
   /* private */ def _generate(ttl: Double, extraAttributes: js.Any): String = js.native
   
-  var _resourceUrl: String = js.native
+  /* private */ var _resourceUrl: String = js.native
   
   /* protected */ def _setupResource(): Unit = js.native
   

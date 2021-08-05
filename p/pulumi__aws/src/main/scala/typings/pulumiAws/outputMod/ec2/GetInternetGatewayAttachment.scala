@@ -18,19 +18,15 @@ trait GetInternetGatewayAttachment extends StObject {
 }
 object GetInternetGatewayAttachment {
   
-  @scala.inline
-  def apply(state: String, vpcId: String): GetInternetGatewayAttachment = {
+  inline def apply(state: String, vpcId: String): GetInternetGatewayAttachment = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInternetGatewayAttachment]
   }
   
-  @scala.inline
-  implicit class GetInternetGatewayAttachmentMutableBuilder[Self <: GetInternetGatewayAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: GetInternetGatewayAttachment](x: Self) {
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
   }
 }

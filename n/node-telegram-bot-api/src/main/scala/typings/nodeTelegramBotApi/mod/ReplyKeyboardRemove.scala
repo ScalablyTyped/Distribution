@@ -12,22 +12,17 @@ trait ReplyKeyboardRemove extends StObject {
 }
 object ReplyKeyboardRemove {
   
-  @scala.inline
-  def apply(remove_keyboard: Boolean): ReplyKeyboardRemove = {
+  inline def apply(remove_keyboard: Boolean): ReplyKeyboardRemove = {
     val __obj = js.Dynamic.literal(remove_keyboard = remove_keyboard.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplyKeyboardRemove]
   }
   
-  @scala.inline
-  implicit class ReplyKeyboardRemoveMutableBuilder[Self <: ReplyKeyboardRemove] (val x: Self) extends AnyVal {
+  extension [Self <: ReplyKeyboardRemove](x: Self) {
     
-    @scala.inline
-    def setRemove_keyboard(value: Boolean): Self = StObject.set(x, "remove_keyboard", value.asInstanceOf[js.Any])
+    inline def setRemove_keyboard(value: Boolean): Self = StObject.set(x, "remove_keyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelective(value: Boolean): Self = StObject.set(x, "selective", value.asInstanceOf[js.Any])
+    inline def setSelective(value: Boolean): Self = StObject.set(x, "selective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectiveUndefined: Self = StObject.set(x, "selective", js.undefined)
+    inline def setSelectiveUndefined: Self = StObject.set(x, "selective", js.undefined)
   }
 }

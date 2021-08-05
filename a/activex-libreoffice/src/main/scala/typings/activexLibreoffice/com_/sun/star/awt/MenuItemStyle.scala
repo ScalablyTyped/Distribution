@@ -17,13 +17,10 @@ object MenuItemStyle {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AUTOCHECK: `4` = 4.asInstanceOf[`4`]
+    inline def AUTOCHECK: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def CHECKABLE: `1` = 1.asInstanceOf[`1`]
+    inline def CHECKABLE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def RADIOCHECK: `2` = 2.asInstanceOf[`2`]
+    inline def RADIOCHECK: `2` = 2.asInstanceOf[`2`]
   }
 }

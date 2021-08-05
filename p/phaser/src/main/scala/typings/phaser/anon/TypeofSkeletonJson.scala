@@ -28,8 +28,7 @@ trait TypeofSkeletonJson extends StObject {
 }
 object TypeofSkeletonJson {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blendModeFromString: String => BlendMode,
     positionModeFromString: String => PositionMode,
     rotateModeFromString: String => RotateMode,
@@ -40,22 +39,16 @@ object TypeofSkeletonJson {
     __obj.asInstanceOf[TypeofSkeletonJson]
   }
   
-  @scala.inline
-  implicit class TypeofSkeletonJsonMutableBuilder[Self <: TypeofSkeletonJson] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSkeletonJson](x: Self) {
     
-    @scala.inline
-    def setBlendModeFromString(value: String => BlendMode): Self = StObject.set(x, "blendModeFromString", js.Any.fromFunction1(value))
+    inline def setBlendModeFromString(value: String => BlendMode): Self = StObject.set(x, "blendModeFromString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPositionModeFromString(value: String => PositionMode): Self = StObject.set(x, "positionModeFromString", js.Any.fromFunction1(value))
+    inline def setPositionModeFromString(value: String => PositionMode): Self = StObject.set(x, "positionModeFromString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRotateModeFromString(value: String => RotateMode): Self = StObject.set(x, "rotateModeFromString", js.Any.fromFunction1(value))
+    inline def setRotateModeFromString(value: String => RotateMode): Self = StObject.set(x, "rotateModeFromString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSpacingModeFromString(value: String => SpacingMode): Self = StObject.set(x, "spacingModeFromString", js.Any.fromFunction1(value))
+    inline def setSpacingModeFromString(value: String => SpacingMode): Self = StObject.set(x, "spacingModeFromString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformModeFromString(value: String => TransformMode): Self = StObject.set(x, "transformModeFromString", js.Any.fromFunction1(value))
+    inline def setTransformModeFromString(value: String => TransformMode): Self = StObject.set(x, "transformModeFromString", js.Any.fromFunction1(value))
   }
 }

@@ -26,8 +26,7 @@ trait UnityAtlasFile
 }
 object UnityAtlasFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     addToMultiFile: File => MultiFile,
     baseURL: String,
@@ -50,10 +49,8 @@ object UnityAtlasFile {
     __obj.asInstanceOf[UnityAtlasFile]
   }
   
-  @scala.inline
-  implicit class UnityAtlasFileMutableBuilder[Self <: UnityAtlasFile] (val x: Self) extends AnyVal {
+  extension [Self <: UnityAtlasFile](x: Self) {
     
-    @scala.inline
-    def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
+    inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }
 }

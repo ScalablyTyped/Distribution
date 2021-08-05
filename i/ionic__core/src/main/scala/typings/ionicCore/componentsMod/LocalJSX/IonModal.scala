@@ -97,112 +97,77 @@ trait IonModal extends StObject {
 }
 object IonModal {
   
-  @scala.inline
-  def apply(): IonModal = {
+  inline def apply(): IonModal = {
     val __obj = js.Dynamic.literal(component = null)
     __obj.asInstanceOf[IonModal]
   }
   
-  @scala.inline
-  implicit class IonModalMutableBuilder[Self <: IonModal] (val x: Self) extends AnyVal {
+  extension [Self <: IonModal](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    @scala.inline
-    def setBackdropDismiss(value: Boolean): Self = StObject.set(x, "backdropDismiss", value.asInstanceOf[js.Any])
+    inline def setBackdropDismiss(value: Boolean): Self = StObject.set(x, "backdropDismiss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackdropDismissUndefined: Self = StObject.set(x, "backdropDismiss", js.undefined)
+    inline def setBackdropDismissUndefined: Self = StObject.set(x, "backdropDismiss", js.undefined)
     
-    @scala.inline
-    def setComponent(value: ComponentRef): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentRef): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentNull: Self = StObject.set(x, "component", null)
+    inline def setComponentNull: Self = StObject.set(x, "component", null)
     
-    @scala.inline
-    def setComponentProps(value: ComponentProps[Null]): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
+    inline def setComponentProps(value: ComponentProps[Null]): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentPropsUndefined: Self = StObject.set(x, "componentProps", js.undefined)
+    inline def setComponentPropsUndefined: Self = StObject.set(x, "componentProps", js.undefined)
     
-    @scala.inline
-    def setCssClass(value: String | js.Array[String]): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: String | js.Array[String]): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
-    @scala.inline
-    def setCssClassVarargs(value: String*): Self = StObject.set(x, "cssClass", js.Array(value :_*))
+    inline def setCssClassVarargs(value: String*): Self = StObject.set(x, "cssClass", js.Array(value :_*))
     
-    @scala.inline
-    def setEnterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "enterAnimation", js.Any.fromFunction2(value))
+    inline def setEnterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "enterAnimation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEnterAnimationUndefined: Self = StObject.set(x, "enterAnimation", js.undefined)
+    inline def setEnterAnimationUndefined: Self = StObject.set(x, "enterAnimation", js.undefined)
     
-    @scala.inline
-    def setKeyboardClose(value: Boolean): Self = StObject.set(x, "keyboardClose", value.asInstanceOf[js.Any])
+    inline def setKeyboardClose(value: Boolean): Self = StObject.set(x, "keyboardClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardCloseUndefined: Self = StObject.set(x, "keyboardClose", js.undefined)
+    inline def setKeyboardCloseUndefined: Self = StObject.set(x, "keyboardClose", js.undefined)
     
-    @scala.inline
-    def setLeaveAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "leaveAnimation", js.Any.fromFunction2(value))
+    inline def setLeaveAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "leaveAnimation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLeaveAnimationUndefined: Self = StObject.set(x, "leaveAnimation", js.undefined)
+    inline def setLeaveAnimationUndefined: Self = StObject.set(x, "leaveAnimation", js.undefined)
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setOnIonModalDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonModalDidDismiss", js.Any.fromFunction1(value))
+    inline def setOnIonModalDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonModalDidDismiss", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonModalDidDismissUndefined: Self = StObject.set(x, "onIonModalDidDismiss", js.undefined)
+    inline def setOnIonModalDidDismissUndefined: Self = StObject.set(x, "onIonModalDidDismiss", js.undefined)
     
-    @scala.inline
-    def setOnIonModalDidPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonModalDidPresent", js.Any.fromFunction1(value))
+    inline def setOnIonModalDidPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonModalDidPresent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonModalDidPresentUndefined: Self = StObject.set(x, "onIonModalDidPresent", js.undefined)
+    inline def setOnIonModalDidPresentUndefined: Self = StObject.set(x, "onIonModalDidPresent", js.undefined)
     
-    @scala.inline
-    def setOnIonModalWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonModalWillDismiss", js.Any.fromFunction1(value))
+    inline def setOnIonModalWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonModalWillDismiss", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonModalWillDismissUndefined: Self = StObject.set(x, "onIonModalWillDismiss", js.undefined)
+    inline def setOnIonModalWillDismissUndefined: Self = StObject.set(x, "onIonModalWillDismiss", js.undefined)
     
-    @scala.inline
-    def setOnIonModalWillPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonModalWillPresent", js.Any.fromFunction1(value))
+    inline def setOnIonModalWillPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonModalWillPresent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonModalWillPresentUndefined: Self = StObject.set(x, "onIonModalWillPresent", js.undefined)
+    inline def setOnIonModalWillPresentUndefined: Self = StObject.set(x, "onIonModalWillPresent", js.undefined)
     
-    @scala.inline
-    def setPresentingElement(value: HTMLElement): Self = StObject.set(x, "presentingElement", value.asInstanceOf[js.Any])
+    inline def setPresentingElement(value: HTMLElement): Self = StObject.set(x, "presentingElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentingElementUndefined: Self = StObject.set(x, "presentingElement", js.undefined)
+    inline def setPresentingElementUndefined: Self = StObject.set(x, "presentingElement", js.undefined)
     
-    @scala.inline
-    def setShowBackdrop(value: Boolean): Self = StObject.set(x, "showBackdrop", value.asInstanceOf[js.Any])
+    inline def setShowBackdrop(value: Boolean): Self = StObject.set(x, "showBackdrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowBackdropUndefined: Self = StObject.set(x, "showBackdrop", js.undefined)
+    inline def setShowBackdropUndefined: Self = StObject.set(x, "showBackdrop", js.undefined)
     
-    @scala.inline
-    def setSwipeToClose(value: Boolean): Self = StObject.set(x, "swipeToClose", value.asInstanceOf[js.Any])
+    inline def setSwipeToClose(value: Boolean): Self = StObject.set(x, "swipeToClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeToCloseUndefined: Self = StObject.set(x, "swipeToClose", js.undefined)
+    inline def setSwipeToCloseUndefined: Self = StObject.set(x, "swipeToClose", js.undefined)
   }
 }

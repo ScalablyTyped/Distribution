@@ -20,36 +20,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XREventType extends StObject
 object XREventType {
   
-  @scala.inline
-  def devicechange: typings.webxr.webxrStrings.devicechange = "devicechange".asInstanceOf[typings.webxr.webxrStrings.devicechange]
+  inline def devicechange: typings.webxr.webxrStrings.devicechange = "devicechange".asInstanceOf[typings.webxr.webxrStrings.devicechange]
   
-  @scala.inline
-  def end: typings.webxr.webxrStrings.end = "end".asInstanceOf[typings.webxr.webxrStrings.end]
+  inline def end: typings.webxr.webxrStrings.end = "end".asInstanceOf[typings.webxr.webxrStrings.end]
   
-  @scala.inline
-  def inputsourceschange: typings.webxr.webxrStrings.inputsourceschange = "inputsourceschange".asInstanceOf[typings.webxr.webxrStrings.inputsourceschange]
+  inline def inputsourceschange: typings.webxr.webxrStrings.inputsourceschange = "inputsourceschange".asInstanceOf[typings.webxr.webxrStrings.inputsourceschange]
   
-  @scala.inline
-  def reset: typings.webxr.webxrStrings.reset = "reset".asInstanceOf[typings.webxr.webxrStrings.reset]
+  inline def reset: typings.webxr.webxrStrings.reset = "reset".asInstanceOf[typings.webxr.webxrStrings.reset]
   
-  @scala.inline
-  def select: typings.webxr.webxrStrings.select = "select".asInstanceOf[typings.webxr.webxrStrings.select]
+  inline def select: typings.webxr.webxrStrings.select = "select".asInstanceOf[typings.webxr.webxrStrings.select]
   
-  @scala.inline
-  def selectend: typings.webxr.webxrStrings.selectend = "selectend".asInstanceOf[typings.webxr.webxrStrings.selectend]
+  inline def selectend: typings.webxr.webxrStrings.selectend = "selectend".asInstanceOf[typings.webxr.webxrStrings.selectend]
   
-  @scala.inline
-  def selectstart: typings.webxr.webxrStrings.selectstart = "selectstart".asInstanceOf[typings.webxr.webxrStrings.selectstart]
+  inline def selectstart: typings.webxr.webxrStrings.selectstart = "selectstart".asInstanceOf[typings.webxr.webxrStrings.selectstart]
   
-  @scala.inline
-  def squeeze: typings.webxr.webxrStrings.squeeze = "squeeze".asInstanceOf[typings.webxr.webxrStrings.squeeze]
+  inline def squeeze: typings.webxr.webxrStrings.squeeze = "squeeze".asInstanceOf[typings.webxr.webxrStrings.squeeze]
   
-  @scala.inline
-  def squeezeend: typings.webxr.webxrStrings.squeezeend = "squeezeend".asInstanceOf[typings.webxr.webxrStrings.squeezeend]
+  inline def squeezeend: typings.webxr.webxrStrings.squeezeend = "squeezeend".asInstanceOf[typings.webxr.webxrStrings.squeezeend]
   
-  @scala.inline
-  def squeezestart: typings.webxr.webxrStrings.squeezestart = "squeezestart".asInstanceOf[typings.webxr.webxrStrings.squeezestart]
+  inline def squeezestart: typings.webxr.webxrStrings.squeezestart = "squeezestart".asInstanceOf[typings.webxr.webxrStrings.squeezestart]
   
-  @scala.inline
-  def visibilitychange: typings.webxr.webxrStrings.visibilitychange = "visibilitychange".asInstanceOf[typings.webxr.webxrStrings.visibilitychange]
+  inline def visibilitychange: typings.webxr.webxrStrings.visibilitychange = "visibilitychange".asInstanceOf[typings.webxr.webxrStrings.visibilitychange]
 }

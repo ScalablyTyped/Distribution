@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdRevisionsBalloonPrintOrientation extends StObject
 object WdRevisionsBalloonPrintOrientation {
   
-  @scala.inline
-  def wdBalloonPrintOrientationAuto: `0` = 0.asInstanceOf[`0`]
+  inline def wdBalloonPrintOrientationAuto: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdBalloonPrintOrientationForceLandscape: `2` = 2.asInstanceOf[`2`]
+  inline def wdBalloonPrintOrientationForceLandscape: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdBalloonPrintOrientationPreserve: `1` = 1.asInstanceOf[`1`]
+  inline def wdBalloonPrintOrientationPreserve: `1` = 1.asInstanceOf[`1`]
 }

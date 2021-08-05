@@ -14,31 +14,23 @@ trait SizeRange extends StObject {
 }
 object SizeRange {
   
-  @scala.inline
-  def apply(): SizeRange = {
+  inline def apply(): SizeRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SizeRange]
   }
   
-  @scala.inline
-  implicit class SizeRangeMutableBuilder[Self <: SizeRange] (val x: Self) extends AnyVal {
+  extension [Self <: SizeRange](x: Self) {
     
-    @scala.inline
-    def setMaximumSize(value: NullableOption[Double]): Self = StObject.set(x, "maximumSize", value.asInstanceOf[js.Any])
+    inline def setMaximumSize(value: NullableOption[Double]): Self = StObject.set(x, "maximumSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumSizeNull: Self = StObject.set(x, "maximumSize", null)
+    inline def setMaximumSizeNull: Self = StObject.set(x, "maximumSize", null)
     
-    @scala.inline
-    def setMaximumSizeUndefined: Self = StObject.set(x, "maximumSize", js.undefined)
+    inline def setMaximumSizeUndefined: Self = StObject.set(x, "maximumSize", js.undefined)
     
-    @scala.inline
-    def setMinimumSize(value: NullableOption[Double]): Self = StObject.set(x, "minimumSize", value.asInstanceOf[js.Any])
+    inline def setMinimumSize(value: NullableOption[Double]): Self = StObject.set(x, "minimumSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumSizeNull: Self = StObject.set(x, "minimumSize", null)
+    inline def setMinimumSizeNull: Self = StObject.set(x, "minimumSize", null)
     
-    @scala.inline
-    def setMinimumSizeUndefined: Self = StObject.set(x, "minimumSize", js.undefined)
+    inline def setMinimumSizeUndefined: Self = StObject.set(x, "minimumSize", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait JsonApiLink extends StObject {
 }
 object JsonApiLink {
   
-  @scala.inline
-  def apply(href: String): JsonApiLink = {
+  inline def apply(href: String): JsonApiLink = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonApiLink]
   }
   
-  @scala.inline
-  implicit class JsonApiLinkMutableBuilder[Self <: JsonApiLink] (val x: Self) extends AnyVal {
+  extension [Self <: JsonApiLink](x: Self) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
   }
 }

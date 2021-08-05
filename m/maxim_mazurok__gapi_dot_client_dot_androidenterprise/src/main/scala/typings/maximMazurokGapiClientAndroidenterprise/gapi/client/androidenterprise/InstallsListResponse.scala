@@ -11,22 +11,17 @@ trait InstallsListResponse extends StObject {
 }
 object InstallsListResponse {
   
-  @scala.inline
-  def apply(): InstallsListResponse = {
+  inline def apply(): InstallsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstallsListResponse]
   }
   
-  @scala.inline
-  implicit class InstallsListResponseMutableBuilder[Self <: InstallsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InstallsListResponse](x: Self) {
     
-    @scala.inline
-    def setInstall(value: js.Array[Install]): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
+    inline def setInstall(value: js.Array[Install]): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallUndefined: Self = StObject.set(x, "install", js.undefined)
+    inline def setInstallUndefined: Self = StObject.set(x, "install", js.undefined)
     
-    @scala.inline
-    def setInstallVarargs(value: Install*): Self = StObject.set(x, "install", js.Array(value :_*))
+    inline def setInstallVarargs(value: Install*): Self = StObject.set(x, "install", js.Array(value :_*))
   }
 }

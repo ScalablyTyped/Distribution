@@ -18,8 +18,7 @@ trait RegionsResource extends StObject {
 }
 object RegionsResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoscalingPolicies: AutoscalingPoliciesResource,
     clusters: ClustersResource,
     jobs: JobsResource,
@@ -30,22 +29,16 @@ object RegionsResource {
     __obj.asInstanceOf[RegionsResource]
   }
   
-  @scala.inline
-  implicit class RegionsResourceMutableBuilder[Self <: RegionsResource] (val x: Self) extends AnyVal {
+  extension [Self <: RegionsResource](x: Self) {
     
-    @scala.inline
-    def setAutoscalingPolicies(value: AutoscalingPoliciesResource): Self = StObject.set(x, "autoscalingPolicies", value.asInstanceOf[js.Any])
+    inline def setAutoscalingPolicies(value: AutoscalingPoliciesResource): Self = StObject.set(x, "autoscalingPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusters(value: ClustersResource): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: ClustersResource): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobs(value: JobsResource): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+    inline def setJobs(value: JobsResource): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowTemplates(value: WorkflowTemplatesResource): Self = StObject.set(x, "workflowTemplates", value.asInstanceOf[js.Any])
+    inline def setWorkflowTemplates(value: WorkflowTemplatesResource): Self = StObject.set(x, "workflowTemplates", value.asInstanceOf[js.Any])
   }
 }

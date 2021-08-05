@@ -13,28 +13,21 @@ trait ReturnpolicyListResponse extends StObject {
 }
 object ReturnpolicyListResponse {
   
-  @scala.inline
-  def apply(): ReturnpolicyListResponse = {
+  inline def apply(): ReturnpolicyListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReturnpolicyListResponse]
   }
   
-  @scala.inline
-  implicit class ReturnpolicyListResponseMutableBuilder[Self <: ReturnpolicyListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnpolicyListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setResources(value: js.Array[ReturnPolicy]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[ReturnPolicy]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: ReturnPolicy*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: ReturnPolicy*): Self = StObject.set(x, "resources", js.Array(value :_*))
   }
 }

@@ -16,8 +16,7 @@ trait OnTouchCancel extends StObject {
 }
 object OnTouchCancel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onTouchCancel: js.Any => Unit,
     onTouchEnd: js.Any => Unit,
     onTouchMove: js.Any => Unit,
@@ -27,19 +26,14 @@ object OnTouchCancel {
     __obj.asInstanceOf[OnTouchCancel]
   }
   
-  @scala.inline
-  implicit class OnTouchCancelMutableBuilder[Self <: OnTouchCancel] (val x: Self) extends AnyVal {
+  extension [Self <: OnTouchCancel](x: Self) {
     
-    @scala.inline
-    def setOnTouchCancel(value: js.Any => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
+    inline def setOnTouchCancel(value: js.Any => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTouchEnd(value: js.Any => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+    inline def setOnTouchEnd(value: js.Any => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTouchMove(value: js.Any => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+    inline def setOnTouchMove(value: js.Any => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTouchStart(value: js.Any => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+    inline def setOnTouchStart(value: js.Any => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
   }
 }

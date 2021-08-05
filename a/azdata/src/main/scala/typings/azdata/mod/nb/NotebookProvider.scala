@@ -22,8 +22,7 @@ trait NotebookProvider extends StObject {
 }
 object NotebookProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getNotebookManager: Uri => Thenable[NotebookManager],
     handleNotebookClosed: Uri => Unit,
     providerId: String,
@@ -33,22 +32,16 @@ object NotebookProvider {
     __obj.asInstanceOf[NotebookProvider]
   }
   
-  @scala.inline
-  implicit class NotebookProviderMutableBuilder[Self <: NotebookProvider] (val x: Self) extends AnyVal {
+  extension [Self <: NotebookProvider](x: Self) {
     
-    @scala.inline
-    def setGetNotebookManager(value: Uri => Thenable[NotebookManager]): Self = StObject.set(x, "getNotebookManager", js.Any.fromFunction1(value))
+    inline def setGetNotebookManager(value: Uri => Thenable[NotebookManager]): Self = StObject.set(x, "getNotebookManager", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleNotebookClosed(value: Uri => Unit): Self = StObject.set(x, "handleNotebookClosed", js.Any.fromFunction1(value))
+    inline def setHandleNotebookClosed(value: Uri => Unit): Self = StObject.set(x, "handleNotebookClosed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardKernels(value: js.Array[IStandardKernel]): Self = StObject.set(x, "standardKernels", value.asInstanceOf[js.Any])
+    inline def setStandardKernels(value: js.Array[IStandardKernel]): Self = StObject.set(x, "standardKernels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardKernelsVarargs(value: IStandardKernel*): Self = StObject.set(x, "standardKernels", js.Array(value :_*))
+    inline def setStandardKernelsVarargs(value: IStandardKernel*): Self = StObject.set(x, "standardKernels", js.Array(value :_*))
   }
 }

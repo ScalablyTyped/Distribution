@@ -13,19 +13,15 @@ trait BatchGetOnPremisesInstancesInput extends StObject {
 }
 object BatchGetOnPremisesInstancesInput {
   
-  @scala.inline
-  def apply(instanceNames: InstanceNameList): BatchGetOnPremisesInstancesInput = {
+  inline def apply(instanceNames: InstanceNameList): BatchGetOnPremisesInstancesInput = {
     val __obj = js.Dynamic.literal(instanceNames = instanceNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetOnPremisesInstancesInput]
   }
   
-  @scala.inline
-  implicit class BatchGetOnPremisesInstancesInputMutableBuilder[Self <: BatchGetOnPremisesInstancesInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetOnPremisesInstancesInput](x: Self) {
     
-    @scala.inline
-    def setInstanceNames(value: InstanceNameList): Self = StObject.set(x, "instanceNames", value.asInstanceOf[js.Any])
+    inline def setInstanceNames(value: InstanceNameList): Self = StObject.set(x, "instanceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceNamesVarargs(value: InstanceName*): Self = StObject.set(x, "instanceNames", js.Array(value :_*))
+    inline def setInstanceNamesVarargs(value: InstanceName*): Self = StObject.set(x, "instanceNames", js.Array(value :_*))
   }
 }

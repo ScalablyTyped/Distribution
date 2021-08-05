@@ -22,11 +22,9 @@ object Url {
   trait CmdBarDisplay extends StObject
   object CmdBarDisplay {
     
-    @scala.inline
-    def `false`: typings.xrm.xrmStrings.`false` = "false".asInstanceOf[typings.xrm.xrmStrings.`false`]
+    inline def `false`: typings.xrm.xrmStrings.`false` = "false".asInstanceOf[typings.xrm.xrmStrings.`false`]
     
-    @scala.inline
-    def `true`: typings.xrm.xrmStrings.`true` = "true".asInstanceOf[typings.xrm.xrmStrings.`true`]
+    inline def `true`: typings.xrm.xrmStrings.`true` = "true".asInstanceOf[typings.xrm.xrmStrings.`true`]
   }
   
   /**
@@ -55,23 +53,18 @@ object Url {
   }
   object DialogOpenParameters {
     
-    @scala.inline
-    def apply(DialogId: String, EntityName: String, ObjectId: String): DialogOpenParameters = {
+    inline def apply(DialogId: String, EntityName: String, ObjectId: String): DialogOpenParameters = {
       val __obj = js.Dynamic.literal(DialogId = DialogId.asInstanceOf[js.Any], EntityName = EntityName.asInstanceOf[js.Any], ObjectId = ObjectId.asInstanceOf[js.Any])
       __obj.asInstanceOf[DialogOpenParameters]
     }
     
-    @scala.inline
-    implicit class DialogOpenParametersMutableBuilder[Self <: DialogOpenParameters] (val x: Self) extends AnyVal {
+    extension [Self <: DialogOpenParameters](x: Self) {
       
-      @scala.inline
-      def setDialogId(value: String): Self = StObject.set(x, "DialogId", value.asInstanceOf[js.Any])
+      inline def setDialogId(value: String): Self = StObject.set(x, "DialogId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityName(value: String): Self = StObject.set(x, "EntityName", value.asInstanceOf[js.Any])
+      inline def setEntityName(value: String): Self = StObject.set(x, "EntityName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectId(value: String): Self = StObject.set(x, "ObjectId", value.asInstanceOf[js.Any])
+      inline def setObjectId(value: String): Self = StObject.set(x, "ObjectId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,35 +110,26 @@ object Url {
   }
   object FormOpenParameters {
     
-    @scala.inline
-    def apply(etn: String): FormOpenParameters = {
+    inline def apply(etn: String): FormOpenParameters = {
       val __obj = js.Dynamic.literal(etn = etn.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormOpenParameters]
     }
     
-    @scala.inline
-    implicit class FormOpenParametersMutableBuilder[Self <: FormOpenParameters] (val x: Self) extends AnyVal {
+    extension [Self <: FormOpenParameters](x: Self) {
       
-      @scala.inline
-      def setCmdbar(value: CmdBarDisplay): Self = StObject.set(x, "cmdbar", value.asInstanceOf[js.Any])
+      inline def setCmdbar(value: CmdBarDisplay): Self = StObject.set(x, "cmdbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCmdbarUndefined: Self = StObject.set(x, "cmdbar", js.undefined)
+      inline def setCmdbarUndefined: Self = StObject.set(x, "cmdbar", js.undefined)
       
-      @scala.inline
-      def setEtn(value: String): Self = StObject.set(x, "etn", value.asInstanceOf[js.Any])
+      inline def setEtn(value: String): Self = StObject.set(x, "etn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraqs(value: String): Self = StObject.set(x, "extraqs", value.asInstanceOf[js.Any])
+      inline def setExtraqs(value: String): Self = StObject.set(x, "extraqs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraqsUndefined: Self = StObject.set(x, "extraqs", js.undefined)
+      inline def setExtraqsUndefined: Self = StObject.set(x, "extraqs", js.undefined)
       
-      @scala.inline
-      def setNavbar(value: NavBarDisplay): Self = StObject.set(x, "navbar", value.asInstanceOf[js.Any])
+      inline def setNavbar(value: NavBarDisplay): Self = StObject.set(x, "navbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavbarUndefined: Self = StObject.set(x, "navbar", js.undefined)
+      inline def setNavbarUndefined: Self = StObject.set(x, "navbar", js.undefined)
     }
   }
   
@@ -161,14 +145,11 @@ object Url {
   trait NavBarDisplay extends StObject
   object NavBarDisplay {
     
-    @scala.inline
-    def entity: typings.xrm.xrmStrings.entity = "entity".asInstanceOf[typings.xrm.xrmStrings.entity]
+    inline def entity: typings.xrm.xrmStrings.entity = "entity".asInstanceOf[typings.xrm.xrmStrings.entity]
     
-    @scala.inline
-    def off: typings.xrm.xrmStrings.off = "off".asInstanceOf[typings.xrm.xrmStrings.off]
+    inline def off: typings.xrm.xrmStrings.off = "off".asInstanceOf[typings.xrm.xrmStrings.off]
     
-    @scala.inline
-    def on: typings.xrm.xrmStrings.on = "on".asInstanceOf[typings.xrm.xrmStrings.on]
+    inline def on: typings.xrm.xrmStrings.on = "on".asInstanceOf[typings.xrm.xrmStrings.on]
   }
   
   /**
@@ -182,11 +163,9 @@ object Url {
   trait ReportAction extends StObject
   object ReportAction {
     
-    @scala.inline
-    def filter: typings.xrm.xrmStrings.filter = "filter".asInstanceOf[typings.xrm.xrmStrings.filter]
+    inline def filter: typings.xrm.xrmStrings.filter = "filter".asInstanceOf[typings.xrm.xrmStrings.filter]
     
-    @scala.inline
-    def run: typings.xrm.xrmStrings.run = "run".asInstanceOf[typings.xrm.xrmStrings.run]
+    inline def run: typings.xrm.xrmStrings.run = "run".asInstanceOf[typings.xrm.xrmStrings.run]
   }
   
   /**
@@ -219,26 +198,20 @@ object Url {
   }
   object ReportOpenParameters {
     
-    @scala.inline
-    def apply(action: ReportAction, id: String): ReportOpenParameters = {
+    inline def apply(action: ReportAction, id: String): ReportOpenParameters = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReportOpenParameters]
     }
     
-    @scala.inline
-    implicit class ReportOpenParametersMutableBuilder[Self <: ReportOpenParameters] (val x: Self) extends AnyVal {
+    extension [Self <: ReportOpenParameters](x: Self) {
       
-      @scala.inline
-      def setAction(value: ReportAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: ReportAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpID(value: String): Self = StObject.set(x, "helpID", value.asInstanceOf[js.Any])
+      inline def setHelpID(value: String): Self = StObject.set(x, "helpID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpIDUndefined: Self = StObject.set(x, "helpID", js.undefined)
+      inline def setHelpIDUndefined: Self = StObject.set(x, "helpID", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -290,35 +263,26 @@ object Url {
   }
   object ViewOpenParameters {
     
-    @scala.inline
-    def apply(etn: String, viewid: String, viewtype: ViewType): ViewOpenParameters = {
+    inline def apply(etn: String, viewid: String, viewtype: ViewType): ViewOpenParameters = {
       val __obj = js.Dynamic.literal(etn = etn.asInstanceOf[js.Any], viewid = viewid.asInstanceOf[js.Any], viewtype = viewtype.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewOpenParameters]
     }
     
-    @scala.inline
-    implicit class ViewOpenParametersMutableBuilder[Self <: ViewOpenParameters] (val x: Self) extends AnyVal {
+    extension [Self <: ViewOpenParameters](x: Self) {
       
-      @scala.inline
-      def setCmdbar(value: CmdBarDisplay): Self = StObject.set(x, "cmdbar", value.asInstanceOf[js.Any])
+      inline def setCmdbar(value: CmdBarDisplay): Self = StObject.set(x, "cmdbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCmdbarUndefined: Self = StObject.set(x, "cmdbar", js.undefined)
+      inline def setCmdbarUndefined: Self = StObject.set(x, "cmdbar", js.undefined)
       
-      @scala.inline
-      def setEtn(value: String): Self = StObject.set(x, "etn", value.asInstanceOf[js.Any])
+      inline def setEtn(value: String): Self = StObject.set(x, "etn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavbar(value: NavBarDisplay): Self = StObject.set(x, "navbar", value.asInstanceOf[js.Any])
+      inline def setNavbar(value: NavBarDisplay): Self = StObject.set(x, "navbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavbarUndefined: Self = StObject.set(x, "navbar", js.undefined)
+      inline def setNavbarUndefined: Self = StObject.set(x, "navbar", js.undefined)
       
-      @scala.inline
-      def setViewid(value: String): Self = StObject.set(x, "viewid", value.asInstanceOf[js.Any])
+      inline def setViewid(value: String): Self = StObject.set(x, "viewid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewtype(value: ViewType): Self = StObject.set(x, "viewtype", value.asInstanceOf[js.Any])
+      inline def setViewtype(value: ViewType): Self = StObject.set(x, "viewtype", value.asInstanceOf[js.Any])
     }
   }
 }

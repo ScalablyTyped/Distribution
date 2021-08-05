@@ -28,37 +28,27 @@ trait DeviceConfig extends StObject {
 }
 object DeviceConfig {
   
-  @scala.inline
-  def apply(): DeviceConfig = {
+  inline def apply(): DeviceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceConfig]
   }
   
-  @scala.inline
-  implicit class DeviceConfigMutableBuilder[Self <: DeviceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceConfig](x: Self) {
     
-    @scala.inline
-    def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
+    inline def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryDataUndefined: Self = StObject.set(x, "binaryData", js.undefined)
+    inline def setBinaryDataUndefined: Self = StObject.set(x, "binaryData", js.undefined)
     
-    @scala.inline
-    def setCloudUpdateTime(value: String): Self = StObject.set(x, "cloudUpdateTime", value.asInstanceOf[js.Any])
+    inline def setCloudUpdateTime(value: String): Self = StObject.set(x, "cloudUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudUpdateTimeUndefined: Self = StObject.set(x, "cloudUpdateTime", js.undefined)
+    inline def setCloudUpdateTimeUndefined: Self = StObject.set(x, "cloudUpdateTime", js.undefined)
     
-    @scala.inline
-    def setDeviceAckTime(value: String): Self = StObject.set(x, "deviceAckTime", value.asInstanceOf[js.Any])
+    inline def setDeviceAckTime(value: String): Self = StObject.set(x, "deviceAckTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceAckTimeUndefined: Self = StObject.set(x, "deviceAckTime", js.undefined)
+    inline def setDeviceAckTimeUndefined: Self = StObject.set(x, "deviceAckTime", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

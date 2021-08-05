@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SortDirectionType extends StObject
 object SortDirectionType {
   
-  @scala.inline
-  def ASC: typings.reactVirtualized.reactVirtualizedStrings.ASC = "ASC".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.ASC]
+  inline def ASC: typings.reactVirtualized.reactVirtualizedStrings.ASC = "ASC".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.ASC]
   
-  @scala.inline
-  def DESC: typings.reactVirtualized.reactVirtualizedStrings.DESC = "DESC".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.DESC]
+  inline def DESC: typings.reactVirtualized.reactVirtualizedStrings.DESC = "DESC".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.DESC]
 }

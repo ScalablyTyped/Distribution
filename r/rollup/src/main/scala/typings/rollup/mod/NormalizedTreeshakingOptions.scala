@@ -20,8 +20,7 @@ trait NormalizedTreeshakingOptions extends StObject {
 }
 object NormalizedTreeshakingOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotations: Boolean,
     moduleSideEffects: (/* id */ String, /* external */ Boolean) => Boolean,
     propertyReadSideEffects: Boolean,
@@ -32,22 +31,16 @@ object NormalizedTreeshakingOptions {
     __obj.asInstanceOf[NormalizedTreeshakingOptions]
   }
   
-  @scala.inline
-  implicit class NormalizedTreeshakingOptionsMutableBuilder[Self <: NormalizedTreeshakingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NormalizedTreeshakingOptions](x: Self) {
     
-    @scala.inline
-    def setAnnotations(value: Boolean): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: Boolean): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleSideEffects(value: (/* id */ String, /* external */ Boolean) => Boolean): Self = StObject.set(x, "moduleSideEffects", js.Any.fromFunction2(value))
+    inline def setModuleSideEffects(value: (/* id */ String, /* external */ Boolean) => Boolean): Self = StObject.set(x, "moduleSideEffects", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPropertyReadSideEffects(value: Boolean): Self = StObject.set(x, "propertyReadSideEffects", value.asInstanceOf[js.Any])
+    inline def setPropertyReadSideEffects(value: Boolean): Self = StObject.set(x, "propertyReadSideEffects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryCatchDeoptimization(value: Boolean): Self = StObject.set(x, "tryCatchDeoptimization", value.asInstanceOf[js.Any])
+    inline def setTryCatchDeoptimization(value: Boolean): Self = StObject.set(x, "tryCatchDeoptimization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownGlobalSideEffects(value: Boolean): Self = StObject.set(x, "unknownGlobalSideEffects", value.asInstanceOf[js.Any])
+    inline def setUnknownGlobalSideEffects(value: Boolean): Self = StObject.set(x, "unknownGlobalSideEffects", value.asInstanceOf[js.Any])
   }
 }

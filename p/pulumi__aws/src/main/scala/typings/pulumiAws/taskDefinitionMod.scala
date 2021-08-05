@@ -136,21 +136,16 @@ object taskDefinitionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TaskDefinition]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TaskDefinition]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TaskDefinitionState): TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TaskDefinition]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TaskDefinitionState, opts: CustomResourceOptions): TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TaskDefinition]
+    inline def get(name: String, id: Input[ID]): TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TaskDefinition]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TaskDefinition]
+    inline def get(name: String, id: Input[ID], state: TaskDefinitionState): TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TaskDefinition]
+    inline def get(name: String, id: Input[ID], state: TaskDefinitionState, opts: CustomResourceOptions): TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TaskDefinition]
     
     /**
       * Returns true if the given object is an instance of TaskDefinition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/taskDefinition.TaskDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecs/taskDefinition.TaskDefinition */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/taskDefinition.TaskDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecs/taskDefinition.TaskDefinition */ Boolean]
   }
   
   trait TaskDefinitionArgs extends StObject {
@@ -246,118 +241,84 @@ object taskDefinitionMod {
   }
   object TaskDefinitionArgs {
     
-    @scala.inline
-    def apply(containerDefinitions: Input[String], family: Input[String]): TaskDefinitionArgs = {
+    inline def apply(containerDefinitions: Input[String], family: Input[String]): TaskDefinitionArgs = {
       val __obj = js.Dynamic.literal(containerDefinitions = containerDefinitions.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any])
       __obj.asInstanceOf[TaskDefinitionArgs]
     }
     
-    @scala.inline
-    implicit class TaskDefinitionArgsMutableBuilder[Self <: TaskDefinitionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TaskDefinitionArgs](x: Self) {
       
-      @scala.inline
-      def setContainerDefinitions(value: Input[String]): Self = StObject.set(x, "containerDefinitions", value.asInstanceOf[js.Any])
+      inline def setContainerDefinitions(value: Input[String]): Self = StObject.set(x, "containerDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpu(value: Input[String]): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+      inline def setCpu(value: Input[String]): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
+      inline def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
       
-      @scala.inline
-      def setExecutionRoleArn(value: Input[String]): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
+      inline def setExecutionRoleArn(value: Input[String]): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionRoleArnUndefined: Self = StObject.set(x, "executionRoleArn", js.undefined)
+      inline def setExecutionRoleArnUndefined: Self = StObject.set(x, "executionRoleArn", js.undefined)
       
-      @scala.inline
-      def setFamily(value: Input[String]): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: Input[String]): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInferenceAccelerators(
+      inline def setInferenceAccelerators(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionInferenceAccelerator]]
             ]
       ): Self = StObject.set(x, "inferenceAccelerators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInferenceAcceleratorsUndefined: Self = StObject.set(x, "inferenceAccelerators", js.undefined)
+      inline def setInferenceAcceleratorsUndefined: Self = StObject.set(x, "inferenceAccelerators", js.undefined)
       
-      @scala.inline
-      def setInferenceAcceleratorsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionInferenceAccelerator]*): Self = StObject.set(x, "inferenceAccelerators", js.Array(value :_*))
+      inline def setInferenceAcceleratorsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionInferenceAccelerator]*): Self = StObject.set(x, "inferenceAccelerators", js.Array(value :_*))
       
-      @scala.inline
-      def setIpcMode(value: Input[String]): Self = StObject.set(x, "ipcMode", value.asInstanceOf[js.Any])
+      inline def setIpcMode(value: Input[String]): Self = StObject.set(x, "ipcMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpcModeUndefined: Self = StObject.set(x, "ipcMode", js.undefined)
+      inline def setIpcModeUndefined: Self = StObject.set(x, "ipcMode", js.undefined)
       
-      @scala.inline
-      def setMemory(value: Input[String]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Input[String]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+      inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
       
-      @scala.inline
-      def setNetworkMode(value: Input[String]): Self = StObject.set(x, "networkMode", value.asInstanceOf[js.Any])
+      inline def setNetworkMode(value: Input[String]): Self = StObject.set(x, "networkMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkModeUndefined: Self = StObject.set(x, "networkMode", js.undefined)
+      inline def setNetworkModeUndefined: Self = StObject.set(x, "networkMode", js.undefined)
       
-      @scala.inline
-      def setPidMode(value: Input[String]): Self = StObject.set(x, "pidMode", value.asInstanceOf[js.Any])
+      inline def setPidMode(value: Input[String]): Self = StObject.set(x, "pidMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPidModeUndefined: Self = StObject.set(x, "pidMode", js.undefined)
+      inline def setPidModeUndefined: Self = StObject.set(x, "pidMode", js.undefined)
       
-      @scala.inline
-      def setPlacementConstraints(
+      inline def setPlacementConstraints(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionPlacementConstraint]]
             ]
       ): Self = StObject.set(x, "placementConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementConstraintsUndefined: Self = StObject.set(x, "placementConstraints", js.undefined)
+      inline def setPlacementConstraintsUndefined: Self = StObject.set(x, "placementConstraints", js.undefined)
       
-      @scala.inline
-      def setPlacementConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionPlacementConstraint]*): Self = StObject.set(x, "placementConstraints", js.Array(value :_*))
+      inline def setPlacementConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionPlacementConstraint]*): Self = StObject.set(x, "placementConstraints", js.Array(value :_*))
       
-      @scala.inline
-      def setProxyConfiguration(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionProxyConfiguration]): Self = StObject.set(x, "proxyConfiguration", value.asInstanceOf[js.Any])
+      inline def setProxyConfiguration(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionProxyConfiguration]): Self = StObject.set(x, "proxyConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyConfigurationUndefined: Self = StObject.set(x, "proxyConfiguration", js.undefined)
+      inline def setProxyConfigurationUndefined: Self = StObject.set(x, "proxyConfiguration", js.undefined)
       
-      @scala.inline
-      def setRequiresCompatibilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "requiresCompatibilities", value.asInstanceOf[js.Any])
+      inline def setRequiresCompatibilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "requiresCompatibilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresCompatibilitiesUndefined: Self = StObject.set(x, "requiresCompatibilities", js.undefined)
+      inline def setRequiresCompatibilitiesUndefined: Self = StObject.set(x, "requiresCompatibilities", js.undefined)
       
-      @scala.inline
-      def setRequiresCompatibilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "requiresCompatibilities", js.Array(value :_*))
+      inline def setRequiresCompatibilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "requiresCompatibilities", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTaskRoleArn(value: Input[String]): Self = StObject.set(x, "taskRoleArn", value.asInstanceOf[js.Any])
+      inline def setTaskRoleArn(value: Input[String]): Self = StObject.set(x, "taskRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskRoleArnUndefined: Self = StObject.set(x, "taskRoleArn", js.undefined)
+      inline def setTaskRoleArnUndefined: Self = StObject.set(x, "taskRoleArn", js.undefined)
       
-      @scala.inline
-      def setVolumes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionVolume]]]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
+      inline def setVolumes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionVolume]]]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
+      inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
       
-      @scala.inline
-      def setVolumesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionVolume]*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+      inline def setVolumesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionVolume]*): Self = StObject.set(x, "volumes", js.Array(value :_*))
     }
   }
   
@@ -464,136 +425,96 @@ object taskDefinitionMod {
   }
   object TaskDefinitionState {
     
-    @scala.inline
-    def apply(): TaskDefinitionState = {
+    inline def apply(): TaskDefinitionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TaskDefinitionState]
     }
     
-    @scala.inline
-    implicit class TaskDefinitionStateMutableBuilder[Self <: TaskDefinitionState] (val x: Self) extends AnyVal {
+    extension [Self <: TaskDefinitionState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setContainerDefinitions(value: Input[String]): Self = StObject.set(x, "containerDefinitions", value.asInstanceOf[js.Any])
+      inline def setContainerDefinitions(value: Input[String]): Self = StObject.set(x, "containerDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerDefinitionsUndefined: Self = StObject.set(x, "containerDefinitions", js.undefined)
+      inline def setContainerDefinitionsUndefined: Self = StObject.set(x, "containerDefinitions", js.undefined)
       
-      @scala.inline
-      def setCpu(value: Input[String]): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+      inline def setCpu(value: Input[String]): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
+      inline def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
       
-      @scala.inline
-      def setExecutionRoleArn(value: Input[String]): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
+      inline def setExecutionRoleArn(value: Input[String]): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionRoleArnUndefined: Self = StObject.set(x, "executionRoleArn", js.undefined)
+      inline def setExecutionRoleArnUndefined: Self = StObject.set(x, "executionRoleArn", js.undefined)
       
-      @scala.inline
-      def setFamily(value: Input[String]): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: Input[String]): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+      inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
       
-      @scala.inline
-      def setInferenceAccelerators(
+      inline def setInferenceAccelerators(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionInferenceAccelerator]]
             ]
       ): Self = StObject.set(x, "inferenceAccelerators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInferenceAcceleratorsUndefined: Self = StObject.set(x, "inferenceAccelerators", js.undefined)
+      inline def setInferenceAcceleratorsUndefined: Self = StObject.set(x, "inferenceAccelerators", js.undefined)
       
-      @scala.inline
-      def setInferenceAcceleratorsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionInferenceAccelerator]*): Self = StObject.set(x, "inferenceAccelerators", js.Array(value :_*))
+      inline def setInferenceAcceleratorsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionInferenceAccelerator]*): Self = StObject.set(x, "inferenceAccelerators", js.Array(value :_*))
       
-      @scala.inline
-      def setIpcMode(value: Input[String]): Self = StObject.set(x, "ipcMode", value.asInstanceOf[js.Any])
+      inline def setIpcMode(value: Input[String]): Self = StObject.set(x, "ipcMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpcModeUndefined: Self = StObject.set(x, "ipcMode", js.undefined)
+      inline def setIpcModeUndefined: Self = StObject.set(x, "ipcMode", js.undefined)
       
-      @scala.inline
-      def setMemory(value: Input[String]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Input[String]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+      inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
       
-      @scala.inline
-      def setNetworkMode(value: Input[String]): Self = StObject.set(x, "networkMode", value.asInstanceOf[js.Any])
+      inline def setNetworkMode(value: Input[String]): Self = StObject.set(x, "networkMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkModeUndefined: Self = StObject.set(x, "networkMode", js.undefined)
+      inline def setNetworkModeUndefined: Self = StObject.set(x, "networkMode", js.undefined)
       
-      @scala.inline
-      def setPidMode(value: Input[String]): Self = StObject.set(x, "pidMode", value.asInstanceOf[js.Any])
+      inline def setPidMode(value: Input[String]): Self = StObject.set(x, "pidMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPidModeUndefined: Self = StObject.set(x, "pidMode", js.undefined)
+      inline def setPidModeUndefined: Self = StObject.set(x, "pidMode", js.undefined)
       
-      @scala.inline
-      def setPlacementConstraints(
+      inline def setPlacementConstraints(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionPlacementConstraint]]
             ]
       ): Self = StObject.set(x, "placementConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementConstraintsUndefined: Self = StObject.set(x, "placementConstraints", js.undefined)
+      inline def setPlacementConstraintsUndefined: Self = StObject.set(x, "placementConstraints", js.undefined)
       
-      @scala.inline
-      def setPlacementConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionPlacementConstraint]*): Self = StObject.set(x, "placementConstraints", js.Array(value :_*))
+      inline def setPlacementConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionPlacementConstraint]*): Self = StObject.set(x, "placementConstraints", js.Array(value :_*))
       
-      @scala.inline
-      def setProxyConfiguration(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionProxyConfiguration]): Self = StObject.set(x, "proxyConfiguration", value.asInstanceOf[js.Any])
+      inline def setProxyConfiguration(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionProxyConfiguration]): Self = StObject.set(x, "proxyConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyConfigurationUndefined: Self = StObject.set(x, "proxyConfiguration", js.undefined)
+      inline def setProxyConfigurationUndefined: Self = StObject.set(x, "proxyConfiguration", js.undefined)
       
-      @scala.inline
-      def setRequiresCompatibilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "requiresCompatibilities", value.asInstanceOf[js.Any])
+      inline def setRequiresCompatibilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "requiresCompatibilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresCompatibilitiesUndefined: Self = StObject.set(x, "requiresCompatibilities", js.undefined)
+      inline def setRequiresCompatibilitiesUndefined: Self = StObject.set(x, "requiresCompatibilities", js.undefined)
       
-      @scala.inline
-      def setRequiresCompatibilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "requiresCompatibilities", js.Array(value :_*))
+      inline def setRequiresCompatibilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "requiresCompatibilities", js.Array(value :_*))
       
-      @scala.inline
-      def setRevision(value: Input[Double]): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: Input[Double]): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+      inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTaskRoleArn(value: Input[String]): Self = StObject.set(x, "taskRoleArn", value.asInstanceOf[js.Any])
+      inline def setTaskRoleArn(value: Input[String]): Self = StObject.set(x, "taskRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskRoleArnUndefined: Self = StObject.set(x, "taskRoleArn", js.undefined)
+      inline def setTaskRoleArnUndefined: Self = StObject.set(x, "taskRoleArn", js.undefined)
       
-      @scala.inline
-      def setVolumes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionVolume]]]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
+      inline def setVolumes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionVolume]]]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
+      inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
       
-      @scala.inline
-      def setVolumesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionVolume]*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+      inline def setVolumesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionVolume]*): Self = StObject.set(x, "volumes", js.Array(value :_*))
     }
   }
 }

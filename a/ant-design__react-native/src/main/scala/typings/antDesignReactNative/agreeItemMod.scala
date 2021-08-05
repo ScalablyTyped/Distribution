@@ -37,32 +37,24 @@ object agreeItemMod {
   }
   object AgreeItemProps {
     
-    @scala.inline
-    def apply(): AgreeItemProps = {
+    inline def apply(): AgreeItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AgreeItemProps]
     }
     
-    @scala.inline
-    implicit class AgreeItemPropsMutableBuilder[Self <: AgreeItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: AgreeItemProps](x: Self) {
       
-      @scala.inline
-      def setCheckboxStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "checkboxStyle", value.asInstanceOf[js.Any])
+      inline def setCheckboxStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "checkboxStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckboxStyleNull: Self = StObject.set(x, "checkboxStyle", null)
+      inline def setCheckboxStyleNull: Self = StObject.set(x, "checkboxStyle", null)
       
-      @scala.inline
-      def setCheckboxStyleUndefined: Self = StObject.set(x, "checkboxStyle", js.undefined)
+      inline def setCheckboxStyleUndefined: Self = StObject.set(x, "checkboxStyle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

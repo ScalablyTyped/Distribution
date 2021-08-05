@@ -11,7 +11,7 @@ trait SignatureObject extends StObject {
   
   val Comment: String
   
-  @JSName("InfoPath.SignatureObject_typekey")
+  /* private */ @JSName("InfoPath.SignatureObject_typekey")
   var InfoPathDotSignatureObject_typekey: SignatureObject
   
   def Sign(): Unit
@@ -22,8 +22,7 @@ trait SignatureObject extends StObject {
 }
 object SignatureObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Certificate: CertificateObject,
     Comment: String,
     InfoPathDotSignatureObject_typekey: SignatureObject,
@@ -36,25 +35,18 @@ object SignatureObject {
     __obj.asInstanceOf[SignatureObject]
   }
   
-  @scala.inline
-  implicit class SignatureObjectMutableBuilder[Self <: SignatureObject] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureObject](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: CertificateObject): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: CertificateObject): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotSignatureObject_typekey(value: SignatureObject): Self = StObject.set(x, "InfoPath.SignatureObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotSignatureObject_typekey(value: SignatureObject): Self = StObject.set(x, "InfoPath.SignatureObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSign(value: () => Unit): Self = StObject.set(x, "Sign", js.Any.fromFunction0(value))
+    inline def setSign(value: () => Unit): Self = StObject.set(x, "Sign", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSignatureBlockXmlNode(value: IXMLDOMNode): Self = StObject.set(x, "SignatureBlockXmlNode", value.asInstanceOf[js.Any])
+    inline def setSignatureBlockXmlNode(value: IXMLDOMNode): Self = StObject.set(x, "SignatureBlockXmlNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: XdSignatureStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: XdSignatureStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

@@ -12,28 +12,21 @@ trait TableDataInsertAllResponseInsertErrors extends StObject {
 }
 object TableDataInsertAllResponseInsertErrors {
   
-  @scala.inline
-  def apply(): TableDataInsertAllResponseInsertErrors = {
+  inline def apply(): TableDataInsertAllResponseInsertErrors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableDataInsertAllResponseInsertErrors]
   }
   
-  @scala.inline
-  implicit class TableDataInsertAllResponseInsertErrorsMutableBuilder[Self <: TableDataInsertAllResponseInsertErrors] (val x: Self) extends AnyVal {
+  extension [Self <: TableDataInsertAllResponseInsertErrors](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[ErrorProto]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[ErrorProto]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: ErrorProto*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ErrorProto*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

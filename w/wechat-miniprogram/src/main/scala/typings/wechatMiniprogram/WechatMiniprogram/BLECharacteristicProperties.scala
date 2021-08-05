@@ -22,26 +22,20 @@ trait BLECharacteristicProperties extends StObject {
 }
 object BLECharacteristicProperties {
   
-  @scala.inline
-  def apply(indicate: Boolean, notify_ : Boolean, read: Boolean, write: Boolean): BLECharacteristicProperties = {
+  inline def apply(indicate: Boolean, notify_ : Boolean, read: Boolean, write: Boolean): BLECharacteristicProperties = {
     val __obj = js.Dynamic.literal(indicate = indicate.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
     __obj.updateDynamic("notify")(notify_.asInstanceOf[js.Any])
     __obj.asInstanceOf[BLECharacteristicProperties]
   }
   
-  @scala.inline
-  implicit class BLECharacteristicPropertiesMutableBuilder[Self <: BLECharacteristicProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BLECharacteristicProperties](x: Self) {
     
-    @scala.inline
-    def setIndicate(value: Boolean): Self = StObject.set(x, "indicate", value.asInstanceOf[js.Any])
+    inline def setIndicate(value: Boolean): Self = StObject.set(x, "indicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+    inline def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
   }
 }

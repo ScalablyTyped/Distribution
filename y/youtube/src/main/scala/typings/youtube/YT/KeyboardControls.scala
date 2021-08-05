@@ -16,12 +16,10 @@ object KeyboardControls {
   /**
     * Keyboard controls are disabled.
     */
-  @scala.inline
-  def Disable: `1` = 1.asInstanceOf[`1`]
+  inline def Disable: `1` = 1.asInstanceOf[`1`]
   
   /**
     * Keyboard controls are enabled.
     */
-  @scala.inline
-  def Enable: `0` = 0.asInstanceOf[`0`]
+  inline def Enable: `0` = 0.asInstanceOf[`0`]
 }

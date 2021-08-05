@@ -12,8 +12,7 @@ trait InclusiveGateway
 }
 object InclusiveGateway {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -30,10 +29,8 @@ object InclusiveGateway {
     __obj.asInstanceOf[InclusiveGateway]
   }
   
-  @scala.inline
-  implicit class InclusiveGatewayMutableBuilder[Self <: InclusiveGateway] (val x: Self) extends AnyVal {
+  extension [Self <: InclusiveGateway](x: Self) {
     
-    @scala.inline
-    def setDefault(value: SequenceFlow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: SequenceFlow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }
 }

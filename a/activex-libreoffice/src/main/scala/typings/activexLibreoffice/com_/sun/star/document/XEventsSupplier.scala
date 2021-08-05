@@ -26,8 +26,7 @@ trait XEventsSupplier
 }
 object XEventsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Events: XNameReplace,
     acquire: () => Unit,
     getEvents: () => XNameReplace,
@@ -38,13 +37,10 @@ object XEventsSupplier {
     __obj.asInstanceOf[XEventsSupplier]
   }
   
-  @scala.inline
-  implicit class XEventsSupplierMutableBuilder[Self <: XEventsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XEventsSupplier](x: Self) {
     
-    @scala.inline
-    def setEvents(value: XNameReplace): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: XNameReplace): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEvents(value: () => XNameReplace): Self = StObject.set(x, "getEvents", js.Any.fromFunction0(value))
+    inline def setGetEvents(value: () => XNameReplace): Self = StObject.set(x, "getEvents", js.Any.fromFunction0(value))
   }
 }

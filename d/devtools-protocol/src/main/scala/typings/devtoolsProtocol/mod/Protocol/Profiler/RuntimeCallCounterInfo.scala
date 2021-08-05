@@ -23,22 +23,17 @@ trait RuntimeCallCounterInfo extends StObject {
 }
 object RuntimeCallCounterInfo {
   
-  @scala.inline
-  def apply(name: String, time: Double, value: Double): RuntimeCallCounterInfo = {
+  inline def apply(name: String, time: Double, value: Double): RuntimeCallCounterInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeCallCounterInfo]
   }
   
-  @scala.inline
-  implicit class RuntimeCallCounterInfoMutableBuilder[Self <: RuntimeCallCounterInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RuntimeCallCounterInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

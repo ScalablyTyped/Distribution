@@ -18,28 +18,21 @@ trait Predicate extends StObject {
 }
 object Predicate {
   
-  @scala.inline
-  def apply(): Predicate = {
+  inline def apply(): Predicate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Predicate]
   }
   
-  @scala.inline
-  implicit class PredicateMutableBuilder[Self <: Predicate] (val x: Self) extends AnyVal {
+  extension [Self <: Predicate](x: Self) {
     
-    @scala.inline
-    def setConditions(value: ConditionList): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: ConditionList): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setLogical(value: Logical): Self = StObject.set(x, "Logical", value.asInstanceOf[js.Any])
+    inline def setLogical(value: Logical): Self = StObject.set(x, "Logical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalUndefined: Self = StObject.set(x, "Logical", js.undefined)
+    inline def setLogicalUndefined: Self = StObject.set(x, "Logical", js.undefined)
   }
 }

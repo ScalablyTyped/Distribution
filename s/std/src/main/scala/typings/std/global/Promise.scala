@@ -25,6 +25,5 @@ class Promise[T] protected ()
 }
 object Promise {
   
-  @scala.inline
-  def apply: PromiseConstructor = js.Dynamic.global.selectDynamic("Promise").asInstanceOf[PromiseConstructor]
+  inline def apply: PromiseConstructor = js.Dynamic.global.selectDynamic("Promise").asInstanceOf[PromiseConstructor]
 }

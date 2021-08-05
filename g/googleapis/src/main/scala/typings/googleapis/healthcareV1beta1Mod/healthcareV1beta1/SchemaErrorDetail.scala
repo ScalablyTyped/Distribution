@@ -23,25 +23,19 @@ trait SchemaErrorDetail extends StObject {
 }
 object SchemaErrorDetail {
   
-  @scala.inline
-  def apply(): SchemaErrorDetail = {
+  inline def apply(): SchemaErrorDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaErrorDetail]
   }
   
-  @scala.inline
-  implicit class SchemaErrorDetailMutableBuilder[Self <: SchemaErrorDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaErrorDetail](x: Self) {
     
-    @scala.inline
-    def setError(value: SchemaStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: SchemaStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

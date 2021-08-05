@@ -48,8 +48,7 @@ trait DebugNode2 extends StObject {
 }
 object DebugNode2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[DebugNode2],
     factories: js.Array[Type[js.Any]],
     injector: NodeInjectorDebug,
@@ -62,40 +61,28 @@ object DebugNode2 {
     __obj.asInstanceOf[DebugNode2]
   }
   
-  @scala.inline
-  implicit class DebugNode2MutableBuilder[Self <: DebugNode2] (val x: Self) extends AnyVal {
+  extension [Self <: DebugNode2](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[DebugNode2]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[DebugNode2]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: DebugNode2*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: DebugNode2*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setFactories(value: js.Array[Type[js.Any]]): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
+    inline def setFactories(value: js.Array[Type[js.Any]]): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactoriesVarargs(value: Type[js.Any]*): Self = StObject.set(x, "factories", js.Array(value :_*))
+    inline def setFactoriesVarargs(value: Type[js.Any]*): Self = StObject.set(x, "factories", js.Array(value :_*))
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlNull: Self = StObject.set(x, "html", null)
+    inline def setHtmlNull: Self = StObject.set(x, "html", null)
     
-    @scala.inline
-    def setInjector(value: NodeInjectorDebug): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
+    inline def setInjector(value: NodeInjectorDebug): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstances(value: js.Array[js.Any]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[js.Any]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesVarargs(value: js.Any*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: js.Any*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
-    @scala.inline
-    def setNative(value: Node): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Node): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

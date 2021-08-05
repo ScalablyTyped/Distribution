@@ -12,19 +12,15 @@ trait StreamLayerViewUpdateRateEvent extends StObject {
 }
 object StreamLayerViewUpdateRateEvent {
   
-  @scala.inline
-  def apply(client: Double, websocket: Double): StreamLayerViewUpdateRateEvent = {
+  inline def apply(client: Double, websocket: Double): StreamLayerViewUpdateRateEvent = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], websocket = websocket.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamLayerViewUpdateRateEvent]
   }
   
-  @scala.inline
-  implicit class StreamLayerViewUpdateRateEventMutableBuilder[Self <: StreamLayerViewUpdateRateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StreamLayerViewUpdateRateEvent](x: Self) {
     
-    @scala.inline
-    def setClient(value: Double): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: Double): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsocket(value: Double): Self = StObject.set(x, "websocket", value.asInstanceOf[js.Any])
+    inline def setWebsocket(value: Double): Self = StObject.set(x, "websocket", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  inline def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
   
   @JSImport("jsreport-pdf-utils", JSImport.Namespace)
   @js.native
@@ -45,50 +44,36 @@ object mod {
     }
     object PdfMeta {
       
-      @scala.inline
-      def apply(): PdfMeta = {
+      inline def apply(): PdfMeta = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PdfMeta]
       }
       
-      @scala.inline
-      implicit class PdfMetaMutableBuilder[Self <: PdfMeta] (val x: Self) extends AnyVal {
+      extension [Self <: PdfMeta](x: Self) {
         
-        @scala.inline
-        def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+        inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+        inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
         
-        @scala.inline
-        def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+        inline def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
+        inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
         
-        @scala.inline
-        def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+        inline def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+        inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
         
-        @scala.inline
-        def setProducer(value: String): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
+        inline def setProducer(value: String): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProducerUndefined: Self = StObject.set(x, "producer", js.undefined)
+        inline def setProducerUndefined: Self = StObject.set(x, "producer", js.undefined)
         
-        @scala.inline
-        def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+        inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+        inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -106,42 +91,31 @@ object mod {
     }
     object PdfOperation {
       
-      @scala.inline
-      def apply(`type`: merge | append | prepend): PdfOperation = {
+      inline def apply(`type`: merge | append | prepend): PdfOperation = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[PdfOperation]
       }
       
-      @scala.inline
-      implicit class PdfOperationMutableBuilder[Self <: PdfOperation] (val x: Self) extends AnyVal {
+      extension [Self <: PdfOperation](x: Self) {
         
-        @scala.inline
-        def setMergeWholeDocument(value: Boolean): Self = StObject.set(x, "mergeWholeDocument", value.asInstanceOf[js.Any])
+        inline def setMergeWholeDocument(value: Boolean): Self = StObject.set(x, "mergeWholeDocument", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMergeWholeDocumentUndefined: Self = StObject.set(x, "mergeWholeDocument", js.undefined)
+        inline def setMergeWholeDocumentUndefined: Self = StObject.set(x, "mergeWholeDocument", js.undefined)
         
-        @scala.inline
-        def setRenderForEveryPage(value: Boolean): Self = StObject.set(x, "renderForEveryPage", value.asInstanceOf[js.Any])
+        inline def setRenderForEveryPage(value: Boolean): Self = StObject.set(x, "renderForEveryPage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderForEveryPageUndefined: Self = StObject.set(x, "renderForEveryPage", js.undefined)
+        inline def setRenderForEveryPageUndefined: Self = StObject.set(x, "renderForEveryPage", js.undefined)
         
-        @scala.inline
-        def setTemplate(value: Template): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+        inline def setTemplate(value: Template): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplateShortid(value: String): Self = StObject.set(x, "templateShortid", value.asInstanceOf[js.Any])
+        inline def setTemplateShortid(value: String): Self = StObject.set(x, "templateShortid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplateShortidUndefined: Self = StObject.set(x, "templateShortid", js.undefined)
+        inline def setTemplateShortidUndefined: Self = StObject.set(x, "templateShortid", js.undefined)
         
-        @scala.inline
-        def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+        inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
         
-        @scala.inline
-        def setType(value: merge | append | prepend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: merge | append | prepend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -165,8 +139,7 @@ object mod {
     }
     object PdfPassword {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         contentAccessibility: Boolean,
         copying: Boolean,
         fillingForms: Boolean,
@@ -179,32 +152,23 @@ object mod {
         __obj.asInstanceOf[PdfPassword]
       }
       
-      @scala.inline
-      implicit class PdfPasswordMutableBuilder[Self <: PdfPassword] (val x: Self) extends AnyVal {
+      extension [Self <: PdfPassword](x: Self) {
         
-        @scala.inline
-        def setContentAccessibility(value: Boolean): Self = StObject.set(x, "contentAccessibility", value.asInstanceOf[js.Any])
+        inline def setContentAccessibility(value: Boolean): Self = StObject.set(x, "contentAccessibility", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCopying(value: Boolean): Self = StObject.set(x, "copying", value.asInstanceOf[js.Any])
+        inline def setCopying(value: Boolean): Self = StObject.set(x, "copying", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDocumentAssembly(value: `true`): Self = StObject.set(x, "documentAssembly", value.asInstanceOf[js.Any])
+        inline def setDocumentAssembly(value: `true`): Self = StObject.set(x, "documentAssembly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFillingForms(value: Boolean): Self = StObject.set(x, "fillingForms", value.asInstanceOf[js.Any])
+        inline def setFillingForms(value: Boolean): Self = StObject.set(x, "fillingForms", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModifying(value: Boolean): Self = StObject.set(x, "modifying", value.asInstanceOf[js.Any])
+        inline def setModifying(value: Boolean): Self = StObject.set(x, "modifying", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
+        inline def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+        inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrinting(value: HighResolution | NotAllowed | LowResolution): Self = StObject.set(x, "printing", value.asInstanceOf[js.Any])
+        inline def setPrinting(value: HighResolution | NotAllowed | LowResolution): Self = StObject.set(x, "printing", value.asInstanceOf[js.Any])
       }
     }
     
@@ -216,20 +180,16 @@ object mod {
     }
     object PdfSign {
       
-      @scala.inline
-      def apply(certificateAsset: Contrent, reason: String): PdfSign = {
+      inline def apply(certificateAsset: Contrent, reason: String): PdfSign = {
         val __obj = js.Dynamic.literal(certificateAsset = certificateAsset.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
         __obj.asInstanceOf[PdfSign]
       }
       
-      @scala.inline
-      implicit class PdfSignMutableBuilder[Self <: PdfSign] (val x: Self) extends AnyVal {
+      extension [Self <: PdfSign](x: Self) {
         
-        @scala.inline
-        def setCertificateAsset(value: Contrent): Self = StObject.set(x, "certificateAsset", value.asInstanceOf[js.Any])
+        inline def setCertificateAsset(value: Contrent): Self = StObject.set(x, "certificateAsset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -249,41 +209,30 @@ object mod {
     }
     object Template {
       
-      @scala.inline
-      def apply(): typings.jsreportPdfUtils.mod.jsreportCoreAugmentingMod.Template = {
+      inline def apply(): typings.jsreportPdfUtils.mod.jsreportCoreAugmentingMod.Template = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.jsreportPdfUtils.mod.jsreportCoreAugmentingMod.Template]
       }
       
-      @scala.inline
-      implicit class TemplateMutableBuilder[Self <: typings.jsreportPdfUtils.mod.jsreportCoreAugmentingMod.Template] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jsreportPdfUtils.mod.jsreportCoreAugmentingMod.Template](x: Self) {
         
-        @scala.inline
-        def setPdfMeta(value: PdfMeta): Self = StObject.set(x, "pdfMeta", value.asInstanceOf[js.Any])
+        inline def setPdfMeta(value: PdfMeta): Self = StObject.set(x, "pdfMeta", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPdfMetaUndefined: Self = StObject.set(x, "pdfMeta", js.undefined)
+        inline def setPdfMetaUndefined: Self = StObject.set(x, "pdfMeta", js.undefined)
         
-        @scala.inline
-        def setPdfOperations(value: js.Array[PdfOperation]): Self = StObject.set(x, "pdfOperations", value.asInstanceOf[js.Any])
+        inline def setPdfOperations(value: js.Array[PdfOperation]): Self = StObject.set(x, "pdfOperations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPdfOperationsUndefined: Self = StObject.set(x, "pdfOperations", js.undefined)
+        inline def setPdfOperationsUndefined: Self = StObject.set(x, "pdfOperations", js.undefined)
         
-        @scala.inline
-        def setPdfOperationsVarargs(value: PdfOperation*): Self = StObject.set(x, "pdfOperations", js.Array(value :_*))
+        inline def setPdfOperationsVarargs(value: PdfOperation*): Self = StObject.set(x, "pdfOperations", js.Array(value :_*))
         
-        @scala.inline
-        def setPdfPassword(value: PdfPassword): Self = StObject.set(x, "pdfPassword", value.asInstanceOf[js.Any])
+        inline def setPdfPassword(value: PdfPassword): Self = StObject.set(x, "pdfPassword", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPdfPasswordUndefined: Self = StObject.set(x, "pdfPassword", js.undefined)
+        inline def setPdfPasswordUndefined: Self = StObject.set(x, "pdfPassword", js.undefined)
         
-        @scala.inline
-        def setPdfSign(value: PdfSign): Self = StObject.set(x, "pdfSign", value.asInstanceOf[js.Any])
+        inline def setPdfSign(value: PdfSign): Self = StObject.set(x, "pdfSign", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPdfSignUndefined: Self = StObject.set(x, "pdfSign", js.undefined)
+        inline def setPdfSignUndefined: Self = StObject.set(x, "pdfSign", js.undefined)
       }
     }
   }

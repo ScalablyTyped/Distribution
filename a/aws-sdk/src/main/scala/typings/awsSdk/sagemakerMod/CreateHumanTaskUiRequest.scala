@@ -20,28 +20,21 @@ trait CreateHumanTaskUiRequest extends StObject {
 }
 object CreateHumanTaskUiRequest {
   
-  @scala.inline
-  def apply(HumanTaskUiName: HumanTaskUiName, UiTemplate: UiTemplate): CreateHumanTaskUiRequest = {
+  inline def apply(HumanTaskUiName: HumanTaskUiName, UiTemplate: UiTemplate): CreateHumanTaskUiRequest = {
     val __obj = js.Dynamic.literal(HumanTaskUiName = HumanTaskUiName.asInstanceOf[js.Any], UiTemplate = UiTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHumanTaskUiRequest]
   }
   
-  @scala.inline
-  implicit class CreateHumanTaskUiRequestMutableBuilder[Self <: CreateHumanTaskUiRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHumanTaskUiRequest](x: Self) {
     
-    @scala.inline
-    def setHumanTaskUiName(value: HumanTaskUiName): Self = StObject.set(x, "HumanTaskUiName", value.asInstanceOf[js.Any])
+    inline def setHumanTaskUiName(value: HumanTaskUiName): Self = StObject.set(x, "HumanTaskUiName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setUiTemplate(value: UiTemplate): Self = StObject.set(x, "UiTemplate", value.asInstanceOf[js.Any])
+    inline def setUiTemplate(value: UiTemplate): Self = StObject.set(x, "UiTemplate", value.asInstanceOf[js.Any])
   }
 }

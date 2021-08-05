@@ -18,25 +18,19 @@ trait Graph extends StObject {
 }
 object Graph {
   
-  @scala.inline
-  def apply(): Graph = {
+  inline def apply(): Graph = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Graph]
   }
   
-  @scala.inline
-  implicit class GraphMutableBuilder[Self <: Graph] (val x: Self) extends AnyVal {
+  extension [Self <: Graph](x: Self) {
     
-    @scala.inline
-    def setArn(value: GraphArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: GraphArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
   }
 }

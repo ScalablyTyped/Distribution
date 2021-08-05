@@ -14,19 +14,15 @@ trait AudioSources extends StObject {
 }
 object AudioSources {
   
-  @scala.inline
-  def apply(audioSources: js.Array[AudioSourceType]): AudioSources = {
+  inline def apply(audioSources: js.Array[AudioSourceType]): AudioSources = {
     val __obj = js.Dynamic.literal(audioSources = audioSources.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioSources]
   }
   
-  @scala.inline
-  implicit class AudioSourcesMutableBuilder[Self <: AudioSources] (val x: Self) extends AnyVal {
+  extension [Self <: AudioSources](x: Self) {
     
-    @scala.inline
-    def setAudioSources(value: js.Array[AudioSourceType]): Self = StObject.set(x, "audioSources", value.asInstanceOf[js.Any])
+    inline def setAudioSources(value: js.Array[AudioSourceType]): Self = StObject.set(x, "audioSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSourcesVarargs(value: AudioSourceType*): Self = StObject.set(x, "audioSources", js.Array(value :_*))
+    inline def setAudioSourcesVarargs(value: AudioSourceType*): Self = StObject.set(x, "audioSources", js.Array(value :_*))
   }
 }

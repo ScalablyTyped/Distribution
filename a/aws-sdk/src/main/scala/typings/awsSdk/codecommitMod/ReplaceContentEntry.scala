@@ -28,31 +28,23 @@ trait ReplaceContentEntry extends StObject {
 }
 object ReplaceContentEntry {
   
-  @scala.inline
-  def apply(filePath: Path, replacementType: ReplacementTypeEnum): ReplaceContentEntry = {
+  inline def apply(filePath: Path, replacementType: ReplacementTypeEnum): ReplaceContentEntry = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], replacementType = replacementType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceContentEntry]
   }
   
-  @scala.inline
-  implicit class ReplaceContentEntryMutableBuilder[Self <: ReplaceContentEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceContentEntry](x: Self) {
     
-    @scala.inline
-    def setContent(value: FileContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: FileContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
+    inline def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
+    inline def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementType(value: ReplacementTypeEnum): Self = StObject.set(x, "replacementType", value.asInstanceOf[js.Any])
+    inline def setReplacementType(value: ReplacementTypeEnum): Self = StObject.set(x, "replacementType", value.asInstanceOf[js.Any])
   }
 }

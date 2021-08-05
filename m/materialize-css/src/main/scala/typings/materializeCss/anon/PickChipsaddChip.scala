@@ -11,19 +11,15 @@ trait PickChipsaddChip extends StObject {
 }
 object PickChipsaddChip {
   
-  @scala.inline
-  def apply(): PickChipsaddChip = {
+  inline def apply(): PickChipsaddChip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickChipsaddChip]
   }
   
-  @scala.inline
-  implicit class PickChipsaddChipMutableBuilder[Self <: PickChipsaddChip] (val x: Self) extends AnyVal {
+  extension [Self <: PickChipsaddChip](x: Self) {
     
-    @scala.inline
-    def setAddChip(value: js.Any): Self = StObject.set(x, "addChip", value.asInstanceOf[js.Any])
+    inline def setAddChip(value: js.Any): Self = StObject.set(x, "addChip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddChipUndefined: Self = StObject.set(x, "addChip", js.undefined)
+    inline def setAddChipUndefined: Self = StObject.set(x, "addChip", js.undefined)
   }
 }

@@ -28,10 +28,8 @@ object mod {
     * It is a factory function, which accepts the same arguments as the constructor, and returns a fully constructed Fork object.
     */
   /* static member */
-  @scala.inline
-  def fork(outputs: js.Array[Writable]): Fork_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(outputs.asInstanceOf[js.Any]).asInstanceOf[Fork_]
-  @scala.inline
-  def fork(outputs: js.Array[Writable], options: ForkOptions): Fork_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(outputs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Fork_]
+  inline def fork(outputs: js.Array[Writable]): Fork_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(outputs.asInstanceOf[js.Any]).asInstanceOf[Fork_]
+  inline def fork(outputs: js.Array[Writable], options: ForkOptions): Fork_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(outputs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Fork_]
   
   trait ForkOptions
     extends StObject
@@ -45,20 +43,16 @@ object mod {
   }
   object ForkOptions {
     
-    @scala.inline
-    def apply(): ForkOptions = {
+    inline def apply(): ForkOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ForkOptions]
     }
     
-    @scala.inline
-    implicit class ForkOptionsMutableBuilder[Self <: ForkOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ForkOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+      inline def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
+      inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
     }
   }
   

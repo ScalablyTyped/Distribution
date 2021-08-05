@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoTextCharWrap extends StObject
 object MsoTextCharWrap {
   
-  @scala.inline
-  def msoCharWrapMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoCharWrapMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoCustomCharWrap: `3` = 3.asInstanceOf[`3`]
+  inline def msoCustomCharWrap: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoNoCharWrap: `0` = 0.asInstanceOf[`0`]
+  inline def msoNoCharWrap: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoStandardCharWrap: `1` = 1.asInstanceOf[`1`]
+  inline def msoStandardCharWrap: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoStrictCharWrap: `2` = 2.asInstanceOf[`2`]
+  inline def msoStrictCharWrap: `2` = 2.asInstanceOf[`2`]
 }

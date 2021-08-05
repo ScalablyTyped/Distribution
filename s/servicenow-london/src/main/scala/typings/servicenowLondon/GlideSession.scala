@@ -30,8 +30,7 @@ trait GlideSession extends StObject {
 }
 object GlideSession {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getClientData: String => String,
     getClientIP: () => String,
     getCurrentApplicationId: () => String,
@@ -48,40 +47,28 @@ object GlideSession {
     __obj.asInstanceOf[GlideSession]
   }
   
-  @scala.inline
-  implicit class GlideSessionMutableBuilder[Self <: GlideSession] (val x: Self) extends AnyVal {
+  extension [Self <: GlideSession](x: Self) {
     
-    @scala.inline
-    def setGetClientData(value: String => String): Self = StObject.set(x, "getClientData", js.Any.fromFunction1(value))
+    inline def setGetClientData(value: String => String): Self = StObject.set(x, "getClientData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetClientIP(value: () => String): Self = StObject.set(x, "getClientIP", js.Any.fromFunction0(value))
+    inline def setGetClientIP(value: () => String): Self = StObject.set(x, "getClientIP", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentApplicationId(value: () => String): Self = StObject.set(x, "getCurrentApplicationId", js.Any.fromFunction0(value))
+    inline def setGetCurrentApplicationId(value: () => String): Self = StObject.set(x, "getCurrentApplicationId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLanguage(value: () => String): Self = StObject.set(x, "getLanguage", js.Any.fromFunction0(value))
+    inline def setGetLanguage(value: () => String): Self = StObject.set(x, "getLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSessionToken(value: () => String): Self = StObject.set(x, "getSessionToken", js.Any.fromFunction0(value))
+    inline def setGetSessionToken(value: () => String): Self = StObject.set(x, "getSessionToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTimeZoneName(value: () => String): Self = StObject.set(x, "getTimeZoneName", js.Any.fromFunction0(value))
+    inline def setGetTimeZoneName(value: () => String): Self = StObject.set(x, "getTimeZoneName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUrlOnStack(value: () => String): Self = StObject.set(x, "getUrlOnStack", js.Any.fromFunction0(value))
+    inline def setGetUrlOnStack(value: () => String): Self = StObject.set(x, "getUrlOnStack", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsImpersonating(value: () => Boolean): Self = StObject.set(x, "isImpersonating", js.Any.fromFunction0(value))
+    inline def setIsImpersonating(value: () => Boolean): Self = StObject.set(x, "isImpersonating", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsInteractive(value: () => Boolean): Self = StObject.set(x, "isInteractive", js.Any.fromFunction0(value))
+    inline def setIsInteractive(value: () => Boolean): Self = StObject.set(x, "isInteractive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLoggedIn(value: () => Boolean): Self = StObject.set(x, "isLoggedIn", js.Any.fromFunction0(value))
+    inline def setIsLoggedIn(value: () => Boolean): Self = StObject.set(x, "isLoggedIn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPutClientData(value: (String, String) => Unit): Self = StObject.set(x, "putClientData", js.Any.fromFunction2(value))
+    inline def setPutClientData(value: (String, String) => Unit): Self = StObject.set(x, "putClientData", js.Any.fromFunction2(value))
   }
 }

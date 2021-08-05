@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "has-own-prop"
-version := "2.0.0-c80096"
+version := "2.0.0-4dec1d"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

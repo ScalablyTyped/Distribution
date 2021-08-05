@@ -23,28 +23,21 @@ trait CapacityProviderStrategyItem extends StObject {
 }
 object CapacityProviderStrategyItem {
   
-  @scala.inline
-  def apply(capacityProvider: String): CapacityProviderStrategyItem = {
+  inline def apply(capacityProvider: String): CapacityProviderStrategyItem = {
     val __obj = js.Dynamic.literal(capacityProvider = capacityProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapacityProviderStrategyItem]
   }
   
-  @scala.inline
-  implicit class CapacityProviderStrategyItemMutableBuilder[Self <: CapacityProviderStrategyItem] (val x: Self) extends AnyVal {
+  extension [Self <: CapacityProviderStrategyItem](x: Self) {
     
-    @scala.inline
-    def setBase(value: CapacityProviderStrategyItemBase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: CapacityProviderStrategyItemBase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
-    @scala.inline
-    def setCapacityProvider(value: String): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
+    inline def setCapacityProvider(value: String): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: CapacityProviderStrategyItemWeight): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: CapacityProviderStrategyItemWeight): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

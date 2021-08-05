@@ -30,8 +30,7 @@ trait DesignPackageInfo
 }
 object DesignPackageInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -50,31 +49,22 @@ object DesignPackageInfo {
     __obj.asInstanceOf[DesignPackageInfo]
   }
   
-  @scala.inline
-  implicit class DesignPackageInfoMutableBuilder[Self <: DesignPackageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DesignPackageInfo](x: Self) {
     
-    @scala.inline
-    def setGet_majorVersion(value: () => Double): Self = StObject.set(x, "get_majorVersion", js.Any.fromFunction0(value))
+    inline def setGet_majorVersion(value: () => Double): Self = StObject.set(x, "get_majorVersion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_minorVersion(value: () => Double): Self = StObject.set(x, "get_minorVersion", js.Any.fromFunction0(value))
+    inline def setGet_minorVersion(value: () => Double): Self = StObject.set(x, "get_minorVersion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_packageGuid(value: () => Guid): Self = StObject.set(x, "get_packageGuid", js.Any.fromFunction0(value))
+    inline def setGet_packageGuid(value: () => Guid): Self = StObject.set(x, "get_packageGuid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_packageName(value: () => String): Self = StObject.set(x, "get_packageName", js.Any.fromFunction0(value))
+    inline def setGet_packageName(value: () => String): Self = StObject.set(x, "get_packageName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_majorVersion(value: Double => Double): Self = StObject.set(x, "set_majorVersion", js.Any.fromFunction1(value))
+    inline def setSet_majorVersion(value: Double => Double): Self = StObject.set(x, "set_majorVersion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_minorVersion(value: Double => Double): Self = StObject.set(x, "set_minorVersion", js.Any.fromFunction1(value))
+    inline def setSet_minorVersion(value: Double => Double): Self = StObject.set(x, "set_minorVersion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_packageGuid(value: Guid => Guid): Self = StObject.set(x, "set_packageGuid", js.Any.fromFunction1(value))
+    inline def setSet_packageGuid(value: Guid => Guid): Self = StObject.set(x, "set_packageGuid", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_packageName(value: String => String): Self = StObject.set(x, "set_packageName", js.Any.fromFunction1(value))
+    inline def setSet_packageName(value: String => String): Self = StObject.set(x, "set_packageName", js.Any.fromFunction1(value))
   }
 }

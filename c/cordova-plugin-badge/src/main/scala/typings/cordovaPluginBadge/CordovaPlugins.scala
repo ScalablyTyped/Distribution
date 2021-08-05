@@ -11,16 +11,13 @@ trait CordovaPlugins extends StObject {
 }
 object CordovaPlugins {
   
-  @scala.inline
-  def apply(notification: Badge): CordovaPlugins = {
+  inline def apply(notification: Badge): CordovaPlugins = {
     val __obj = js.Dynamic.literal(notification = notification.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPlugins]
   }
   
-  @scala.inline
-  implicit class CordovaPluginsMutableBuilder[Self <: CordovaPlugins] (val x: Self) extends AnyVal {
+  extension [Self <: CordovaPlugins](x: Self) {
     
-    @scala.inline
-    def setNotification(value: Badge): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: Badge): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
   }
 }

@@ -12,6 +12,5 @@ object esLintReporterRpcClientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createEsLintReporterRpcClient(configuration: EsLintReporterConfiguration): ReporterRpcClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createEsLintReporterRpcClient")(configuration.asInstanceOf[js.Any]).asInstanceOf[ReporterRpcClient]
+  inline def createEsLintReporterRpcClient(configuration: EsLintReporterConfiguration): ReporterRpcClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createEsLintReporterRpcClient")(configuration.asInstanceOf[js.Any]).asInstanceOf[ReporterRpcClient]
 }

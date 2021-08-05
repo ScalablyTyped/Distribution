@@ -23,19 +23,15 @@ trait StatefulHost
 }
 object StatefulHost {
   
-  @scala.inline
-  def apply(accept: CallType, lastUpdate: Double, protocol: String, status: HostStatusType, url: String): StatefulHost = {
+  inline def apply(accept: CallType, lastUpdate: Double, protocol: String, status: HostStatusType, url: String): StatefulHost = {
     val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], lastUpdate = lastUpdate.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatefulHost]
   }
   
-  @scala.inline
-  implicit class StatefulHostMutableBuilder[Self <: StatefulHost] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulHost](x: Self) {
     
-    @scala.inline
-    def setLastUpdate(value: Double): Self = StObject.set(x, "lastUpdate", value.asInstanceOf[js.Any])
+    inline def setLastUpdate(value: Double): Self = StObject.set(x, "lastUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: HostStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: HostStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

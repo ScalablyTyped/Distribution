@@ -18,19 +18,15 @@ trait DetectKeyPhrasesRequest extends StObject {
 }
 object DetectKeyPhrasesRequest {
   
-  @scala.inline
-  def apply(LanguageCode: LanguageCode, Text: CustomerInputString): DetectKeyPhrasesRequest = {
+  inline def apply(LanguageCode: LanguageCode, Text: CustomerInputString): DetectKeyPhrasesRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectKeyPhrasesRequest]
   }
   
-  @scala.inline
-  implicit class DetectKeyPhrasesRequestMutableBuilder[Self <: DetectKeyPhrasesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectKeyPhrasesRequest](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

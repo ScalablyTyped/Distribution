@@ -18,25 +18,19 @@ trait UsageResourceResult extends StObject {
 }
 object UsageResourceResult {
   
-  @scala.inline
-  def apply(): UsageResourceResult = {
+  inline def apply(): UsageResourceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageResourceResult]
   }
   
-  @scala.inline
-  implicit class UsageResourceResultMutableBuilder[Self <: UsageResourceResult] (val x: Self) extends AnyVal {
+  extension [Self <: UsageResourceResult](x: Self) {
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "Resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "Resource", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Total): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Total): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
   }
 }

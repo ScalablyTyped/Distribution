@@ -12,19 +12,15 @@ trait XpackUsage
 }
 object XpackUsage {
   
-  @scala.inline
-  def apply(): XpackUsage = {
+  inline def apply(): XpackUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XpackUsage]
   }
   
-  @scala.inline
-  implicit class XpackUsageMutableBuilder[Self <: XpackUsage] (val x: Self) extends AnyVal {
+  extension [Self <: XpackUsage](x: Self) {
     
-    @scala.inline
-    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
+    inline def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
+    inline def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
   }
 }

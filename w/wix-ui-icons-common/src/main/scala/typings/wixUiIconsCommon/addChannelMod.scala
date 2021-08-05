@@ -22,20 +22,16 @@ object addChannelMod extends Shortcut {
   }
   object AddChannelProps {
     
-    @scala.inline
-    def apply(): AddChannelProps = {
+    inline def apply(): AddChannelProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AddChannelProps]
     }
     
-    @scala.inline
-    implicit class AddChannelPropsMutableBuilder[Self <: AddChannelProps] (val x: Self) extends AnyVal {
+    extension [Self <: AddChannelProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

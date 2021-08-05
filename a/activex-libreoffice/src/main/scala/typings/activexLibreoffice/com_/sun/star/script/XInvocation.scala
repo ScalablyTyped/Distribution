@@ -76,8 +76,7 @@ trait XInvocation
 }
 object XInvocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Introspection: XIntrospectionAccess,
     acquire: () => Unit,
     getIntrospection: () => XIntrospectionAccess,
@@ -93,30 +92,22 @@ object XInvocation {
     __obj.asInstanceOf[XInvocation]
   }
   
-  @scala.inline
-  implicit class XInvocationMutableBuilder[Self <: XInvocation] (val x: Self) extends AnyVal {
+  extension [Self <: XInvocation](x: Self) {
     
-    @scala.inline
-    def setGetIntrospection(value: () => XIntrospectionAccess): Self = StObject.set(x, "getIntrospection", js.Any.fromFunction0(value))
+    inline def setGetIntrospection(value: () => XIntrospectionAccess): Self = StObject.set(x, "getIntrospection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: String => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    inline def setGetValue(value: String => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasMethod(value: String => Boolean): Self = StObject.set(x, "hasMethod", js.Any.fromFunction1(value))
+    inline def setHasMethod(value: String => Boolean): Self = StObject.set(x, "hasMethod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasProperty(value: String => Boolean): Self = StObject.set(x, "hasProperty", js.Any.fromFunction1(value))
+    inline def setHasProperty(value: String => Boolean): Self = StObject.set(x, "hasProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIntrospection(value: XIntrospectionAccess): Self = StObject.set(x, "Introspection", value.asInstanceOf[js.Any])
+    inline def setIntrospection(value: XIntrospectionAccess): Self = StObject.set(x, "Introspection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoke(
+    inline def setInvoke(
       value: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any
     ): Self = StObject.set(x, "invoke", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSetValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+    inline def setSetValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
   }
 }

@@ -23,37 +23,27 @@ trait TagValues extends StObject {
 }
 object TagValues {
   
-  @scala.inline
-  def apply(): TagValues = {
+  inline def apply(): TagValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TagValues]
   }
   
-  @scala.inline
-  implicit class TagValuesMutableBuilder[Self <: TagValues] (val x: Self) extends AnyVal {
+  extension [Self <: TagValues](x: Self) {
     
-    @scala.inline
-    def setKey(value: TagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: TagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setMatchOptions(value: MatchOptions): Self = StObject.set(x, "MatchOptions", value.asInstanceOf[js.Any])
+    inline def setMatchOptions(value: MatchOptions): Self = StObject.set(x, "MatchOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchOptionsUndefined: Self = StObject.set(x, "MatchOptions", js.undefined)
+    inline def setMatchOptionsUndefined: Self = StObject.set(x, "MatchOptions", js.undefined)
     
-    @scala.inline
-    def setMatchOptionsVarargs(value: MatchOption*): Self = StObject.set(x, "MatchOptions", js.Array(value :_*))
+    inline def setMatchOptionsVarargs(value: MatchOption*): Self = StObject.set(x, "MatchOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setValues(value: Values): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Values): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: Value*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

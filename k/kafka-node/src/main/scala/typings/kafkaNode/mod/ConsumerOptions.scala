@@ -28,67 +28,47 @@ trait ConsumerOptions extends StObject {
 }
 object ConsumerOptions {
   
-  @scala.inline
-  def apply(): ConsumerOptions = {
+  inline def apply(): ConsumerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConsumerOptions]
   }
   
-  @scala.inline
-  implicit class ConsumerOptionsMutableBuilder[Self <: ConsumerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConsumerOptions](x: Self) {
     
-    @scala.inline
-    def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
+    inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCommitIntervalMs(value: Double): Self = StObject.set(x, "autoCommitIntervalMs", value.asInstanceOf[js.Any])
+    inline def setAutoCommitIntervalMs(value: Double): Self = StObject.set(x, "autoCommitIntervalMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCommitIntervalMsUndefined: Self = StObject.set(x, "autoCommitIntervalMs", js.undefined)
+    inline def setAutoCommitIntervalMsUndefined: Self = StObject.set(x, "autoCommitIntervalMs", js.undefined)
     
-    @scala.inline
-    def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
+    inline def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: buffer | utf8): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: buffer | utf8): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setFetchMaxBytes(value: Double): Self = StObject.set(x, "fetchMaxBytes", value.asInstanceOf[js.Any])
+    inline def setFetchMaxBytes(value: Double): Self = StObject.set(x, "fetchMaxBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchMaxBytesUndefined: Self = StObject.set(x, "fetchMaxBytes", js.undefined)
+    inline def setFetchMaxBytesUndefined: Self = StObject.set(x, "fetchMaxBytes", js.undefined)
     
-    @scala.inline
-    def setFetchMaxWaitMs(value: Double): Self = StObject.set(x, "fetchMaxWaitMs", value.asInstanceOf[js.Any])
+    inline def setFetchMaxWaitMs(value: Double): Self = StObject.set(x, "fetchMaxWaitMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchMaxWaitMsUndefined: Self = StObject.set(x, "fetchMaxWaitMs", js.undefined)
+    inline def setFetchMaxWaitMsUndefined: Self = StObject.set(x, "fetchMaxWaitMs", js.undefined)
     
-    @scala.inline
-    def setFetchMinBytes(value: Double): Self = StObject.set(x, "fetchMinBytes", value.asInstanceOf[js.Any])
+    inline def setFetchMinBytes(value: Double): Self = StObject.set(x, "fetchMinBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchMinBytesUndefined: Self = StObject.set(x, "fetchMinBytes", js.undefined)
+    inline def setFetchMinBytesUndefined: Self = StObject.set(x, "fetchMinBytes", js.undefined)
     
-    @scala.inline
-    def setFromOffset(value: Boolean): Self = StObject.set(x, "fromOffset", value.asInstanceOf[js.Any])
+    inline def setFromOffset(value: Boolean): Self = StObject.set(x, "fromOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromOffsetUndefined: Self = StObject.set(x, "fromOffset", js.undefined)
+    inline def setFromOffsetUndefined: Self = StObject.set(x, "fromOffset", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    @scala.inline
-    def setKeyEncoding(value: buffer | utf8): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
+    inline def setKeyEncoding(value: buffer | utf8): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyEncodingUndefined: Self = StObject.set(x, "keyEncoding", js.undefined)
+    inline def setKeyEncodingUndefined: Self = StObject.set(x, "keyEncoding", js.undefined)
   }
 }

@@ -22,32 +22,24 @@ object anon {
   }
   object Color {
     
-    @scala.inline
-    def apply(): Color = {
+    inline def apply(): Color = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
       
-      @scala.inline
-      def setGrayscale(value: js.Array[Double]): Self = StObject.set(x, "grayscale", value.asInstanceOf[js.Any])
+      inline def setGrayscale(value: js.Array[Double]): Self = StObject.set(x, "grayscale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrayscaleUndefined: Self = StObject.set(x, "grayscale", js.undefined)
+      inline def setGrayscaleUndefined: Self = StObject.set(x, "grayscale", js.undefined)
       
-      @scala.inline
-      def setGrayscaleVarargs(value: Double*): Self = StObject.set(x, "grayscale", js.Array(value :_*))
+      inline def setGrayscaleVarargs(value: Double*): Self = StObject.set(x, "grayscale", js.Array(value :_*))
     }
   }
   
@@ -67,26 +59,20 @@ object anon {
   }
   object Grayscale {
     
-    @scala.inline
-    def apply(): Grayscale = {
+    inline def apply(): Grayscale = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Grayscale]
     }
     
-    @scala.inline
-    implicit class GrayscaleMutableBuilder[Self <: Grayscale] (val x: Self) extends AnyVal {
+    extension [Self <: Grayscale](x: Self) {
       
-      @scala.inline
-      def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setGrayscale(value: Double): Self = StObject.set(x, "grayscale", value.asInstanceOf[js.Any])
+      inline def setGrayscale(value: Double): Self = StObject.set(x, "grayscale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrayscaleUndefined: Self = StObject.set(x, "grayscale", js.undefined)
+      inline def setGrayscaleUndefined: Self = StObject.set(x, "grayscale", js.undefined)
     }
   }
 }

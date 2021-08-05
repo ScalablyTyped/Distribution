@@ -90,8 +90,7 @@ trait CollStats extends StObject {
 }
 object CollStats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     avgObjSize: scala.Double,
     capped: Boolean,
     count: scala.Double,
@@ -112,70 +111,48 @@ object CollStats {
     __obj.asInstanceOf[CollStats]
   }
   
-  @scala.inline
-  implicit class CollStatsMutableBuilder[Self <: CollStats] (val x: Self) extends AnyVal {
+  extension [Self <: CollStats](x: Self) {
     
-    @scala.inline
-    def setAvgObjSize(value: scala.Double): Self = StObject.set(x, "avgObjSize", value.asInstanceOf[js.Any])
+    inline def setAvgObjSize(value: scala.Double): Self = StObject.set(x, "avgObjSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapped(value: Boolean): Self = StObject.set(x, "capped", value.asInstanceOf[js.Any])
+    inline def setCapped(value: Boolean): Self = StObject.set(x, "capped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: scala.Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: scala.Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexDetails(value: js.Any): Self = StObject.set(x, "indexDetails", value.asInstanceOf[js.Any])
+    inline def setIndexDetails(value: js.Any): Self = StObject.set(x, "indexDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexDetailsUndefined: Self = StObject.set(x, "indexDetails", js.undefined)
+    inline def setIndexDetailsUndefined: Self = StObject.set(x, "indexDetails", js.undefined)
     
-    @scala.inline
-    def setIndexSizes(value: Dictindex): Self = StObject.set(x, "indexSizes", value.asInstanceOf[js.Any])
+    inline def setIndexSizes(value: Dictindex): Self = StObject.set(x, "indexSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastExtentSize(value: scala.Double): Self = StObject.set(x, "lastExtentSize", value.asInstanceOf[js.Any])
+    inline def setLastExtentSize(value: scala.Double): Self = StObject.set(x, "lastExtentSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSize(value: scala.Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: scala.Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNindexes(value: scala.Double): Self = StObject.set(x, "nindexes", value.asInstanceOf[js.Any])
+    inline def setNindexes(value: scala.Double): Self = StObject.set(x, "nindexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+    inline def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumExtents(value: scala.Double): Self = StObject.set(x, "numExtents", value.asInstanceOf[js.Any])
+    inline def setNumExtents(value: scala.Double): Self = StObject.set(x, "numExtents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOk(value: scala.Double): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: scala.Double): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingFactor(value: scala.Double): Self = StObject.set(x, "paddingFactor", value.asInstanceOf[js.Any])
+    inline def setPaddingFactor(value: scala.Double): Self = StObject.set(x, "paddingFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: scala.Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: scala.Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageSize(value: scala.Double): Self = StObject.set(x, "storageSize", value.asInstanceOf[js.Any])
+    inline def setStorageSize(value: scala.Double): Self = StObject.set(x, "storageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalIndexSize(value: scala.Double): Self = StObject.set(x, "totalIndexSize", value.asInstanceOf[js.Any])
+    inline def setTotalIndexSize(value: scala.Double): Self = StObject.set(x, "totalIndexSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserFlags(value: scala.Double): Self = StObject.set(x, "userFlags", value.asInstanceOf[js.Any])
+    inline def setUserFlags(value: scala.Double): Self = StObject.set(x, "userFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserFlagsUndefined: Self = StObject.set(x, "userFlags", js.undefined)
+    inline def setUserFlagsUndefined: Self = StObject.set(x, "userFlags", js.undefined)
     
-    @scala.inline
-    def setWiredTiger(value: WiredTigerData): Self = StObject.set(x, "wiredTiger", value.asInstanceOf[js.Any])
+    inline def setWiredTiger(value: WiredTigerData): Self = StObject.set(x, "wiredTiger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWiredTigerUndefined: Self = StObject.set(x, "wiredTiger", js.undefined)
+    inline def setWiredTigerUndefined: Self = StObject.set(x, "wiredTiger", js.undefined)
   }
 }

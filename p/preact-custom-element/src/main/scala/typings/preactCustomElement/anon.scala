@@ -12,17 +12,14 @@ object anon {
   }
   object Shadow {
     
-    @scala.inline
-    def apply(shadow: Boolean): Shadow = {
+    inline def apply(shadow: Boolean): Shadow = {
       val __obj = js.Dynamic.literal(shadow = shadow.asInstanceOf[js.Any])
       __obj.asInstanceOf[Shadow]
     }
     
-    @scala.inline
-    implicit class ShadowMutableBuilder[Self <: Shadow] (val x: Self) extends AnyVal {
+    extension [Self <: Shadow](x: Self) {
       
-      @scala.inline
-      def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+      inline def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     }
   }
 }

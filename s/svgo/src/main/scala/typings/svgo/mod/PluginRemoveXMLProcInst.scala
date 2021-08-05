@@ -12,16 +12,13 @@ trait PluginRemoveXMLProcInst
 }
 object PluginRemoveXMLProcInst {
   
-  @scala.inline
-  def apply(removeXMLProcInst: Boolean | js.Object): PluginRemoveXMLProcInst = {
+  inline def apply(removeXMLProcInst: Boolean | js.Object): PluginRemoveXMLProcInst = {
     val __obj = js.Dynamic.literal(removeXMLProcInst = removeXMLProcInst.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveXMLProcInst]
   }
   
-  @scala.inline
-  implicit class PluginRemoveXMLProcInstMutableBuilder[Self <: PluginRemoveXMLProcInst] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveXMLProcInst](x: Self) {
     
-    @scala.inline
-    def setRemoveXMLProcInst(value: Boolean | js.Object): Self = StObject.set(x, "removeXMLProcInst", value.asInstanceOf[js.Any])
+    inline def setRemoveXMLProcInst(value: Boolean | js.Object): Self = StObject.set(x, "removeXMLProcInst", value.asInstanceOf[js.Any])
   }
 }

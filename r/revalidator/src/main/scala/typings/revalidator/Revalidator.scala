@@ -25,38 +25,27 @@ object Revalidator {
   trait Formats extends StObject
   object Formats {
     
-    @scala.inline
-    def color: typings.revalidator.revalidatorStrings.color = "color".asInstanceOf[typings.revalidator.revalidatorStrings.color]
+    inline def color: typings.revalidator.revalidatorStrings.color = "color".asInstanceOf[typings.revalidator.revalidatorStrings.color]
     
-    @scala.inline
-    def date: typings.revalidator.revalidatorStrings.date = "date".asInstanceOf[typings.revalidator.revalidatorStrings.date]
+    inline def date: typings.revalidator.revalidatorStrings.date = "date".asInstanceOf[typings.revalidator.revalidatorStrings.date]
     
-    @scala.inline
-    def `date-time`: typings.revalidator.revalidatorStrings.`date-time` = "date-time".asInstanceOf[typings.revalidator.revalidatorStrings.`date-time`]
+    inline def `date-time`: typings.revalidator.revalidatorStrings.`date-time` = "date-time".asInstanceOf[typings.revalidator.revalidatorStrings.`date-time`]
     
-    @scala.inline
-    def email: typings.revalidator.revalidatorStrings.email = "email".asInstanceOf[typings.revalidator.revalidatorStrings.email]
+    inline def email: typings.revalidator.revalidatorStrings.email = "email".asInstanceOf[typings.revalidator.revalidatorStrings.email]
     
-    @scala.inline
-    def `host-name`: typings.revalidator.revalidatorStrings.`host-name` = "host-name".asInstanceOf[typings.revalidator.revalidatorStrings.`host-name`]
+    inline def `host-name`: typings.revalidator.revalidatorStrings.`host-name` = "host-name".asInstanceOf[typings.revalidator.revalidatorStrings.`host-name`]
     
-    @scala.inline
-    def `ip-address`: typings.revalidator.revalidatorStrings.`ip-address` = "ip-address".asInstanceOf[typings.revalidator.revalidatorStrings.`ip-address`]
+    inline def `ip-address`: typings.revalidator.revalidatorStrings.`ip-address` = "ip-address".asInstanceOf[typings.revalidator.revalidatorStrings.`ip-address`]
     
-    @scala.inline
-    def ipv6: typings.revalidator.revalidatorStrings.ipv6 = "ipv6".asInstanceOf[typings.revalidator.revalidatorStrings.ipv6]
+    inline def ipv6: typings.revalidator.revalidatorStrings.ipv6 = "ipv6".asInstanceOf[typings.revalidator.revalidatorStrings.ipv6]
     
-    @scala.inline
-    def regex: typings.revalidator.revalidatorStrings.regex = "regex".asInstanceOf[typings.revalidator.revalidatorStrings.regex]
+    inline def regex: typings.revalidator.revalidatorStrings.regex = "regex".asInstanceOf[typings.revalidator.revalidatorStrings.regex]
     
-    @scala.inline
-    def time: typings.revalidator.revalidatorStrings.time = "time".asInstanceOf[typings.revalidator.revalidatorStrings.time]
+    inline def time: typings.revalidator.revalidatorStrings.time = "time".asInstanceOf[typings.revalidator.revalidatorStrings.time]
     
-    @scala.inline
-    def url: typings.revalidator.revalidatorStrings.url = "url".asInstanceOf[typings.revalidator.revalidatorStrings.url]
+    inline def url: typings.revalidator.revalidatorStrings.url = "url".asInstanceOf[typings.revalidator.revalidatorStrings.url]
     
-    @scala.inline
-    def `utc-millisec`: typings.revalidator.revalidatorStrings.`utc-millisec` = "utc-millisec".asInstanceOf[typings.revalidator.revalidatorStrings.`utc-millisec`]
+    inline def `utc-millisec`: typings.revalidator.revalidatorStrings.`utc-millisec` = "utc-millisec".asInstanceOf[typings.revalidator.revalidatorStrings.`utc-millisec`]
   }
   
   trait IErrrorProperty extends StObject {
@@ -67,20 +56,16 @@ object Revalidator {
   }
   object IErrrorProperty {
     
-    @scala.inline
-    def apply(message: String, property: String): IErrrorProperty = {
+    inline def apply(message: String, property: String): IErrrorProperty = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
       __obj.asInstanceOf[IErrrorProperty]
     }
     
-    @scala.inline
-    implicit class IErrrorPropertyMutableBuilder[Self <: IErrrorProperty] (val x: Self) extends AnyVal {
+    extension [Self <: IErrrorProperty](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,44 +88,32 @@ object Revalidator {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(): IOptions = {
+    inline def apply(): IOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+      inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
+      inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
       
-      @scala.inline
-      def setCast(value: Boolean): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
+      inline def setCast(value: Boolean): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
+      inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
       
-      @scala.inline
-      def setValidateFormatExtensions(value: Boolean): Self = StObject.set(x, "validateFormatExtensions", value.asInstanceOf[js.Any])
+      inline def setValidateFormatExtensions(value: Boolean): Self = StObject.set(x, "validateFormatExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateFormatExtensionsUndefined: Self = StObject.set(x, "validateFormatExtensions", js.undefined)
+      inline def setValidateFormatExtensionsUndefined: Self = StObject.set(x, "validateFormatExtensions", js.undefined)
       
-      @scala.inline
-      def setValidateFormats(value: Boolean): Self = StObject.set(x, "validateFormats", value.asInstanceOf[js.Any])
+      inline def setValidateFormats(value: Boolean): Self = StObject.set(x, "validateFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateFormatsStrict(value: Boolean): Self = StObject.set(x, "validateFormatsStrict", value.asInstanceOf[js.Any])
+      inline def setValidateFormatsStrict(value: Boolean): Self = StObject.set(x, "validateFormatsStrict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateFormatsStrictUndefined: Self = StObject.set(x, "validateFormatsStrict", js.undefined)
+      inline def setValidateFormatsStrictUndefined: Self = StObject.set(x, "validateFormatsStrict", js.undefined)
       
-      @scala.inline
-      def setValidateFormatsUndefined: Self = StObject.set(x, "validateFormats", js.undefined)
+      inline def setValidateFormatsUndefined: Self = StObject.set(x, "validateFormats", js.undefined)
     }
   }
   
@@ -152,23 +125,18 @@ object Revalidator {
   }
   object IReturnMessage {
     
-    @scala.inline
-    def apply(errors: js.Array[IErrrorProperty], valid: Boolean): IReturnMessage = {
+    inline def apply(errors: js.Array[IErrrorProperty], valid: Boolean): IReturnMessage = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[IReturnMessage]
     }
     
-    @scala.inline
-    implicit class IReturnMessageMutableBuilder[Self <: IReturnMessage] (val x: Self) extends AnyVal {
+    extension [Self <: IReturnMessage](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[IErrrorProperty]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[IErrrorProperty]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: IErrrorProperty*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: IErrrorProperty*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,156 +213,107 @@ object Revalidator {
   }
   object ISchema {
     
-    @scala.inline
-    def apply[T](`type`: Types | js.Array[Types]): ISchema[T] = {
+    inline def apply[T](`type`: Types | js.Array[Types]): ISchema[T] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISchema[T]]
     }
     
-    @scala.inline
-    implicit class ISchemaMutableBuilder[Self <: ISchema[?], T] (val x: Self & ISchema[T]) extends AnyVal {
+    extension [Self <: ISchema[?], T](x: Self & ISchema[T]) {
       
-      @scala.inline
-      def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
+      inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
+      inline def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
       
-      @scala.inline
-      def setConform(value: (/* value */ js.Any, /* data */ js.UndefOr[T]) => Boolean): Self = StObject.set(x, "conform", js.Any.fromFunction2(value))
+      inline def setConform(value: (/* value */ js.Any, /* data */ js.UndefOr[T]) => Boolean): Self = StObject.set(x, "conform", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setConformUndefined: Self = StObject.set(x, "conform", js.undefined)
+      inline def setConformUndefined: Self = StObject.set(x, "conform", js.undefined)
       
-      @scala.inline
-      def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDependencies(value: String): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: String): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+      inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDivisibleBy(value: Double): Self = StObject.set(x, "divisibleBy", value.asInstanceOf[js.Any])
+      inline def setDivisibleBy(value: Double): Self = StObject.set(x, "divisibleBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDivisibleByUndefined: Self = StObject.set(x, "divisibleBy", js.undefined)
+      inline def setDivisibleByUndefined: Self = StObject.set(x, "divisibleBy", js.undefined)
       
-      @scala.inline
-      def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      inline def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+      inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      @scala.inline
-      def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
       
-      @scala.inline
-      def setExclusiveMaximum(value: Double): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
+      inline def setExclusiveMaximum(value: Double): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveMaximumUndefined: Self = StObject.set(x, "exclusiveMaximum", js.undefined)
+      inline def setExclusiveMaximumUndefined: Self = StObject.set(x, "exclusiveMaximum", js.undefined)
       
-      @scala.inline
-      def setExclusiveMinimum(value: Double): Self = StObject.set(x, "exclusiveMinimum", value.asInstanceOf[js.Any])
+      inline def setExclusiveMinimum(value: Double): Self = StObject.set(x, "exclusiveMinimum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveMinimumUndefined: Self = StObject.set(x, "exclusiveMinimum", js.undefined)
+      inline def setExclusiveMinimumUndefined: Self = StObject.set(x, "exclusiveMinimum", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Formats): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Formats): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setItems(value: ISchema[T] | JSONSchema[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: ISchema[T] | JSONSchema[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
+      inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxItemsUndefined: Self = StObject.set(x, "maxItems", js.undefined)
+      inline def setMaxItemsUndefined: Self = StObject.set(x, "maxItems", js.undefined)
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+      inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+      inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setMessages(value: StringDictionary[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: StringDictionary[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setMinItems(value: Double): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
+      inline def setMinItems(value: Double): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinItemsUndefined: Self = StObject.set(x, "minItems", js.undefined)
+      inline def setMinItemsUndefined: Self = StObject.set(x, "minItems", js.undefined)
       
-      @scala.inline
-      def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+      inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+      inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
       
-      @scala.inline
-      def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+      inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+      inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
       
-      @scala.inline
-      def setPattern(value: RegExp | String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: RegExp | String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setType(value: Types | js.Array[Types]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Types | js.Array[Types]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeVarargs(value: Types*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: Types*): Self = StObject.set(x, "type", js.Array(value :_*))
       
-      @scala.inline
-      def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
+      inline def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueItemsUndefined: Self = StObject.set(x, "uniqueItems", js.undefined)
+      inline def setUniqueItemsUndefined: Self = StObject.set(x, "uniqueItems", js.undefined)
     }
   }
   
@@ -410,32 +329,24 @@ object Revalidator {
   }
   object JSONSchema {
     
-    @scala.inline
-    def apply[T](): JSONSchema[T] = {
+    inline def apply[T](): JSONSchema[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JSONSchema[T]]
     }
     
-    @scala.inline
-    implicit class JSONSchemaMutableBuilder[Self <: JSONSchema[?], T] (val x: Self & JSONSchema[T]) extends AnyVal {
+    extension [Self <: JSONSchema[?], T](x: Self & JSONSchema[T]) {
       
-      @scala.inline
-      def setPatternProperties(value: ISchemas[T]): Self = StObject.set(x, "patternProperties", value.asInstanceOf[js.Any])
+      inline def setPatternProperties(value: ISchemas[T]): Self = StObject.set(x, "patternProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternPropertiesUndefined: Self = StObject.set(x, "patternProperties", js.undefined)
+      inline def setPatternPropertiesUndefined: Self = StObject.set(x, "patternProperties", js.undefined)
       
-      @scala.inline
-      def setProperties(value: ISchemas[T]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: ISchemas[T]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -459,28 +370,20 @@ object Revalidator {
   trait Types extends StObject
   object Types {
     
-    @scala.inline
-    def any: typings.revalidator.revalidatorStrings.any = "any".asInstanceOf[typings.revalidator.revalidatorStrings.any]
+    inline def any: typings.revalidator.revalidatorStrings.any = "any".asInstanceOf[typings.revalidator.revalidatorStrings.any]
     
-    @scala.inline
-    def array: typings.revalidator.revalidatorStrings.array = "array".asInstanceOf[typings.revalidator.revalidatorStrings.array]
+    inline def array: typings.revalidator.revalidatorStrings.array = "array".asInstanceOf[typings.revalidator.revalidatorStrings.array]
     
-    @scala.inline
-    def boolean: typings.revalidator.revalidatorStrings.boolean = "boolean".asInstanceOf[typings.revalidator.revalidatorStrings.boolean]
+    inline def boolean: typings.revalidator.revalidatorStrings.boolean = "boolean".asInstanceOf[typings.revalidator.revalidatorStrings.boolean]
     
-    @scala.inline
-    def integer: typings.revalidator.revalidatorStrings.integer = "integer".asInstanceOf[typings.revalidator.revalidatorStrings.integer]
+    inline def integer: typings.revalidator.revalidatorStrings.integer = "integer".asInstanceOf[typings.revalidator.revalidatorStrings.integer]
     
-    @scala.inline
-    def `null`: typings.revalidator.revalidatorStrings.`null` = "null".asInstanceOf[typings.revalidator.revalidatorStrings.`null`]
+    inline def `null`: typings.revalidator.revalidatorStrings.`null` = "null".asInstanceOf[typings.revalidator.revalidatorStrings.`null`]
     
-    @scala.inline
-    def number: typings.revalidator.revalidatorStrings.number = "number".asInstanceOf[typings.revalidator.revalidatorStrings.number]
+    inline def number: typings.revalidator.revalidatorStrings.number = "number".asInstanceOf[typings.revalidator.revalidatorStrings.number]
     
-    @scala.inline
-    def `object`: typings.revalidator.revalidatorStrings.`object` = "object".asInstanceOf[typings.revalidator.revalidatorStrings.`object`]
+    inline def `object`: typings.revalidator.revalidatorStrings.`object` = "object".asInstanceOf[typings.revalidator.revalidatorStrings.`object`]
     
-    @scala.inline
-    def string: typings.revalidator.revalidatorStrings.string = "string".asInstanceOf[typings.revalidator.revalidatorStrings.string]
+    inline def string: typings.revalidator.revalidatorStrings.string = "string".asInstanceOf[typings.revalidator.revalidatorStrings.string]
   }
 }

@@ -53,8 +53,7 @@ trait RenderOptions extends StObject {
 }
 object RenderOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsFirstPage: Boolean,
     IsLastPage: Boolean,
     IsSkipEmptyPages: Boolean,
@@ -65,22 +64,16 @@ object RenderOptions {
     __obj.asInstanceOf[RenderOptions]
   }
   
-  @scala.inline
-  implicit class RenderOptionsMutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RenderOptions](x: Self) {
     
-    @scala.inline
-    def setIsFirstPage(value: Boolean): Self = StObject.set(x, "IsFirstPage", value.asInstanceOf[js.Any])
+    inline def setIsFirstPage(value: Boolean): Self = StObject.set(x, "IsFirstPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLastPage(value: Boolean): Self = StObject.set(x, "IsLastPage", value.asInstanceOf[js.Any])
+    inline def setIsLastPage(value: Boolean): Self = StObject.set(x, "IsLastPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSkipEmptyPages(value: Boolean): Self = StObject.set(x, "IsSkipEmptyPages", value.asInstanceOf[js.Any])
+    inline def setIsSkipEmptyPages(value: Boolean): Self = StObject.set(x, "IsSkipEmptyPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageRange(value: String): Self = StObject.set(x, "PageRange", value.asInstanceOf[js.Any])
+    inline def setPageRange(value: String): Self = StObject.set(x, "PageRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderDevice(value: XDevice): Self = StObject.set(x, "RenderDevice", value.asInstanceOf[js.Any])
+    inline def setRenderDevice(value: XDevice): Self = StObject.set(x, "RenderDevice", value.asInstanceOf[js.Any])
   }
 }

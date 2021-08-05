@@ -33,8 +33,7 @@ trait AssignmentExpression_
 }
 object AssignmentExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     left: LVal,
     loc: SourceLocation,
@@ -47,21 +46,16 @@ object AssignmentExpression_ {
     __obj.asInstanceOf[AssignmentExpression_]
   }
   
-  @scala.inline
-  implicit class AssignmentExpression_MutableBuilder[Self <: AssignmentExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: AssignmentExpression_](x: Self) {
     
-    @scala.inline
-    def setLeft(value: LVal): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: LVal): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(
+    inline def setOperator(
       value: Equalssign | PlussignEqualssign | `-Equalssign` | AsteriskEqualssign | SlashEqualssign | PercentsignEqualssign | LessthansignLessthansignEqualssign | GreaterthansignGreaterthansignEqualssign | GreaterthansignGreaterthansignGreaterthansignEqualssign | VerticallineEqualssign | `^Equalssign` | AmpersandEqualssign
     ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: AssignmentExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AssignmentExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

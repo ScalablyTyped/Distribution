@@ -12,25 +12,19 @@ trait `3D` extends StObject {
 }
 object `3D` {
   
-  @scala.inline
-  def apply(): `3D` = {
+  inline def apply(): `3D` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`3D`]
   }
   
-  @scala.inline
-  implicit class `3DMutableBuilder`[Self <: `3D`] (val x: Self) extends AnyVal {
+  extension [Self <: `3D`](x: Self) {
     
-    @scala.inline
-    def set3D(value: Features): Self = StObject.set(x, "3D", value.asInstanceOf[js.Any])
+    inline def set3D(value: Features): Self = StObject.set(x, "3D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set3DUndefined: Self = StObject.set(x, "3D", js.undefined)
+    inline def set3DUndefined: Self = StObject.set(x, "3D", js.undefined)
     
-    @scala.inline
-    def setPlugins(value: Npapi): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: Npapi): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
   }
 }

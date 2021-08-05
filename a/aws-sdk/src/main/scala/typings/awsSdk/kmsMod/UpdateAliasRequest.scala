@@ -18,19 +18,15 @@ trait UpdateAliasRequest extends StObject {
 }
 object UpdateAliasRequest {
   
-  @scala.inline
-  def apply(AliasName: AliasNameType, TargetKeyId: KeyIdType): UpdateAliasRequest = {
+  inline def apply(AliasName: AliasNameType, TargetKeyId: KeyIdType): UpdateAliasRequest = {
     val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any], TargetKeyId = TargetKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAliasRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAliasRequestMutableBuilder[Self <: UpdateAliasRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAliasRequest](x: Self) {
     
-    @scala.inline
-    def setAliasName(value: AliasNameType): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
+    inline def setAliasName(value: AliasNameType): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetKeyId(value: KeyIdType): Self = StObject.set(x, "TargetKeyId", value.asInstanceOf[js.Any])
+    inline def setTargetKeyId(value: KeyIdType): Self = StObject.set(x, "TargetKeyId", value.asInstanceOf[js.Any])
   }
 }

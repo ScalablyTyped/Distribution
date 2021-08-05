@@ -11,22 +11,17 @@ trait AuctionContext extends StObject {
 }
 object AuctionContext {
   
-  @scala.inline
-  def apply(): AuctionContext = {
+  inline def apply(): AuctionContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuctionContext]
   }
   
-  @scala.inline
-  implicit class AuctionContextMutableBuilder[Self <: AuctionContext] (val x: Self) extends AnyVal {
+  extension [Self <: AuctionContext](x: Self) {
     
-    @scala.inline
-    def setAuctionTypes(value: js.Array[String]): Self = StObject.set(x, "auctionTypes", value.asInstanceOf[js.Any])
+    inline def setAuctionTypes(value: js.Array[String]): Self = StObject.set(x, "auctionTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuctionTypesUndefined: Self = StObject.set(x, "auctionTypes", js.undefined)
+    inline def setAuctionTypesUndefined: Self = StObject.set(x, "auctionTypes", js.undefined)
     
-    @scala.inline
-    def setAuctionTypesVarargs(value: String*): Self = StObject.set(x, "auctionTypes", js.Array(value :_*))
+    inline def setAuctionTypesVarargs(value: String*): Self = StObject.set(x, "auctionTypes", js.Array(value :_*))
   }
 }

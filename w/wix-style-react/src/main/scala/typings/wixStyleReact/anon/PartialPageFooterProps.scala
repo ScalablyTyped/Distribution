@@ -15,31 +15,23 @@ trait PartialPageFooterProps extends StObject {
 }
 object PartialPageFooterProps {
   
-  @scala.inline
-  def apply(): PartialPageFooterProps = {
+  inline def apply(): PartialPageFooterProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPageFooterProps]
   }
   
-  @scala.inline
-  implicit class PartialPageFooterPropsMutableBuilder[Self <: PartialPageFooterProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPageFooterProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+    inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+    inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
     
-    @scala.inline
-    def setDivider(value: Boolean): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+    inline def setDivider(value: Boolean): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
+    inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
   }
 }

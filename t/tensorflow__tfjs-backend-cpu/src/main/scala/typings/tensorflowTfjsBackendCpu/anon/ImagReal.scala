@@ -13,19 +13,15 @@ trait ImagReal extends StObject {
 }
 object ImagReal {
   
-  @scala.inline
-  def apply(imag: Float32Array, real: Float32Array): ImagReal = {
+  inline def apply(imag: Float32Array, real: Float32Array): ImagReal = {
     val __obj = js.Dynamic.literal(imag = imag.asInstanceOf[js.Any], real = real.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagReal]
   }
   
-  @scala.inline
-  implicit class ImagRealMutableBuilder[Self <: ImagReal] (val x: Self) extends AnyVal {
+  extension [Self <: ImagReal](x: Self) {
     
-    @scala.inline
-    def setImag(value: Float32Array): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
+    inline def setImag(value: Float32Array): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReal(value: Float32Array): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
+    inline def setReal(value: Float32Array): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
   }
 }

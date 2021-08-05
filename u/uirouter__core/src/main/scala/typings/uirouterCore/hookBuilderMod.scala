@@ -43,6 +43,6 @@ object hookBuilderMod {
       */
     def getMatchingHooks(hookType: TransitionEventType, treeChanges: TreeChanges, transition: Transition): js.Array[RegisteredHook] = js.native
     
-    var transition: js.Any = js.native
+    /* private */ var transition: js.Any = js.native
   }
 }

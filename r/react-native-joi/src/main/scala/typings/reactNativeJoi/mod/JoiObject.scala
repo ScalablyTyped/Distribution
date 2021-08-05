@@ -10,16 +10,13 @@ trait JoiObject extends StObject {
 }
 object JoiObject {
   
-  @scala.inline
-  def apply(isJoi: Boolean): JoiObject = {
+  inline def apply(isJoi: Boolean): JoiObject = {
     val __obj = js.Dynamic.literal(isJoi = isJoi.asInstanceOf[js.Any])
     __obj.asInstanceOf[JoiObject]
   }
   
-  @scala.inline
-  implicit class JoiObjectMutableBuilder[Self <: JoiObject] (val x: Self) extends AnyVal {
+  extension [Self <: JoiObject](x: Self) {
     
-    @scala.inline
-    def setIsJoi(value: Boolean): Self = StObject.set(x, "isJoi", value.asInstanceOf[js.Any])
+    inline def setIsJoi(value: Boolean): Self = StObject.set(x, "isJoi", value.asInstanceOf[js.Any])
   }
 }

@@ -31,8 +31,7 @@ trait ReactionsCreateForIssueCommentEndpoint
 }
 object ReactionsCreateForIssueCommentEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     comment_id: Double,
     content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes,
     mediaType: `0`[`squirrel-girl`],
@@ -43,19 +42,14 @@ object ReactionsCreateForIssueCommentEndpoint {
     __obj.asInstanceOf[ReactionsCreateForIssueCommentEndpoint]
   }
   
-  @scala.inline
-  implicit class ReactionsCreateForIssueCommentEndpointMutableBuilder[Self <: ReactionsCreateForIssueCommentEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReactionsCreateForIssueCommentEndpoint](x: Self) {
     
-    @scala.inline
-    def setComment_id(value: Double): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
+    inline def setComment_id(value: Double): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

@@ -17,15 +17,15 @@ object rowNodeCacheMod {
   @JSImport("ag-grid/dist/lib/rowModels/cache/rowNodeCache", "RowNodeCache")
   @js.native
   abstract class RowNodeCache[T /* <: RowNodeBlock */, P /* <: RowNodeCacheParams */] protected () extends BeanStub {
-    protected def this(cacheParams: P) = this()
+    /* protected */ def this(cacheParams: P) = this()
     
-    var active: js.Any = js.native
+    /* private */ var active: js.Any = js.native
     
-    var blockCount: js.Any = js.native
+    /* private */ var blockCount: js.Any = js.native
     
     var blocks: StringDictionary[T] = js.native
     
-    var cacheParams: P = js.native
+    /* protected */ var cacheParams: P = js.native
     
     /* protected */ def checkBlockToLoad(): Unit = js.native
     
@@ -60,9 +60,9 @@ object rowNodeCacheMod {
     
     def isMaxRowFound(): Boolean = js.native
     
-    var logger: Logger = js.native
+    /* protected */ var logger: Logger = js.native
     
-    var maxRowFound: js.Any = js.native
+    /* private */ var maxRowFound: js.Any = js.native
     
     /* protected */ def onCacheUpdated(): Unit = js.native
     
@@ -81,7 +81,7 @@ object rowNodeCacheMod {
     def setVirtualRowCount(rowCount: Double): Unit = js.native
     def setVirtualRowCount(rowCount: Double, maxRowFound: Boolean): Unit = js.native
     
-    var virtualRowCount: js.Any = js.native
+    /* private */ var virtualRowCount: js.Any = js.native
   }
   /* static members */
   object RowNodeCache {
@@ -93,8 +93,7 @@ object rowNodeCacheMod {
     @JSImport("ag-grid/dist/lib/rowModels/cache/rowNodeCache", "RowNodeCache.EVENT_CACHE_UPDATED")
     @js.native
     def EVENT_CACHE_UPDATED: String = js.native
-    @scala.inline
-    def EVENT_CACHE_UPDATED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CACHE_UPDATED")(x.asInstanceOf[js.Any])
+    inline def EVENT_CACHE_UPDATED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CACHE_UPDATED")(x.asInstanceOf[js.Any])
   }
   
   type CacheUpdatedEvent = AgEvent
@@ -125,8 +124,7 @@ object rowNodeCacheMod {
   }
   object RowNodeCacheParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blockSize: Double,
       dynamicRowHeight: Boolean,
       filterModel: js.Any,
@@ -143,41 +141,29 @@ object rowNodeCacheMod {
       __obj.asInstanceOf[RowNodeCacheParams]
     }
     
-    @scala.inline
-    implicit class RowNodeCacheParamsMutableBuilder[Self <: RowNodeCacheParams] (val x: Self) extends AnyVal {
+    extension [Self <: RowNodeCacheParams](x: Self) {
       
-      @scala.inline
-      def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
+      inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicRowHeight(value: Boolean): Self = StObject.set(x, "dynamicRowHeight", value.asInstanceOf[js.Any])
+      inline def setDynamicRowHeight(value: Boolean): Self = StObject.set(x, "dynamicRowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterModel(value: js.Any): Self = StObject.set(x, "filterModel", value.asInstanceOf[js.Any])
+      inline def setFilterModel(value: js.Any): Self = StObject.set(x, "filterModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialRowCount(value: Double): Self = StObject.set(x, "initialRowCount", value.asInstanceOf[js.Any])
+      inline def setInitialRowCount(value: Double): Self = StObject.set(x, "initialRowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastAccessedSequence(value: NumberSequence): Self = StObject.set(x, "lastAccessedSequence", value.asInstanceOf[js.Any])
+      inline def setLastAccessedSequence(value: NumberSequence): Self = StObject.set(x, "lastAccessedSequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBlocksInCache(value: Double): Self = StObject.set(x, "maxBlocksInCache", value.asInstanceOf[js.Any])
+      inline def setMaxBlocksInCache(value: Double): Self = StObject.set(x, "maxBlocksInCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrentRequests(value: Double): Self = StObject.set(x, "maxConcurrentRequests", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrentRequests(value: Double): Self = StObject.set(x, "maxConcurrentRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowSize(value: Double): Self = StObject.set(x, "overflowSize", value.asInstanceOf[js.Any])
+      inline def setOverflowSize(value: Double): Self = StObject.set(x, "overflowSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+      inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowNodeBlockLoader(value: RowNodeBlockLoader): Self = StObject.set(x, "rowNodeBlockLoader", value.asInstanceOf[js.Any])
+      inline def setRowNodeBlockLoader(value: RowNodeBlockLoader): Self = StObject.set(x, "rowNodeBlockLoader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortModel(value: js.Any): Self = StObject.set(x, "sortModel", value.asInstanceOf[js.Any])
+      inline def setSortModel(value: js.Any): Self = StObject.set(x, "sortModel", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -20,8 +20,7 @@ trait IMacAlgorithmNamesStatics extends StObject {
 }
 object IMacAlgorithmNamesStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aesCmac: String,
     hmacMd5: String,
     hmacSha1: String,
@@ -33,25 +32,18 @@ object IMacAlgorithmNamesStatics {
     __obj.asInstanceOf[IMacAlgorithmNamesStatics]
   }
   
-  @scala.inline
-  implicit class IMacAlgorithmNamesStaticsMutableBuilder[Self <: IMacAlgorithmNamesStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IMacAlgorithmNamesStatics](x: Self) {
     
-    @scala.inline
-    def setAesCmac(value: String): Self = StObject.set(x, "aesCmac", value.asInstanceOf[js.Any])
+    inline def setAesCmac(value: String): Self = StObject.set(x, "aesCmac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacMd5(value: String): Self = StObject.set(x, "hmacMd5", value.asInstanceOf[js.Any])
+    inline def setHmacMd5(value: String): Self = StObject.set(x, "hmacMd5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacSha1(value: String): Self = StObject.set(x, "hmacSha1", value.asInstanceOf[js.Any])
+    inline def setHmacSha1(value: String): Self = StObject.set(x, "hmacSha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacSha256(value: String): Self = StObject.set(x, "hmacSha256", value.asInstanceOf[js.Any])
+    inline def setHmacSha256(value: String): Self = StObject.set(x, "hmacSha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacSha384(value: String): Self = StObject.set(x, "hmacSha384", value.asInstanceOf[js.Any])
+    inline def setHmacSha384(value: String): Self = StObject.set(x, "hmacSha384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacSha512(value: String): Self = StObject.set(x, "hmacSha512", value.asInstanceOf[js.Any])
+    inline def setHmacSha512(value: String): Self = StObject.set(x, "hmacSha512", value.asInstanceOf[js.Any])
   }
 }

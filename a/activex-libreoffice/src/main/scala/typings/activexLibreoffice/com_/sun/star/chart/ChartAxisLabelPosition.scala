@@ -24,24 +24,20 @@ object ChartAxisLabelPosition {
     * labels are placed adjacent to the axis on that side that belongs to the lower values on the crossing axis. E.g. when the ChartAxisLabelPosition is set
     * to NEAR_AXIS for an y axis the labels are placed adjacent to the y axis on that side that belongs to the lower x values.
     */
-  @scala.inline
-  def NEAR_AXIS: `0` = 0.asInstanceOf[`0`]
+  inline def NEAR_AXIS: `0` = 0.asInstanceOf[`0`]
   
   /** The labels are placed adjacent to the axis on the opposite side as for NEAR_AXIS. */
-  @scala.inline
-  def NEAR_AXIS_OTHER_SIDE: `1` = 1.asInstanceOf[`1`]
+  inline def NEAR_AXIS_OTHER_SIDE: `1` = 1.asInstanceOf[`1`]
   
   /**
     * The labels are placed outside the coordinate region on that side where the crossing axis has its maximum value. E.g. when this is set for an y axis
     * the labels are placed outside the diagram on that side where to the x axis has its maximum value.
     */
-  @scala.inline
-  def OUTSIDE_END: `3` = 3.asInstanceOf[`3`]
+  inline def OUTSIDE_END: `3` = 3.asInstanceOf[`3`]
   
   /**
     * The labels are placed outside the coordinate region on that side where the crossing axis has its minimum value. E.g. when this is set for an y axis
     * the labels are placed outside the diagram on that side where to the x axis has its minimum value.
     */
-  @scala.inline
-  def OUTSIDE_START: `2` = 2.asInstanceOf[`2`]
+  inline def OUTSIDE_START: `2` = 2.asInstanceOf[`2`]
 }

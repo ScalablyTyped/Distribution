@@ -23,37 +23,27 @@ trait DescribeBundleTasksRequest extends StObject {
 }
 object DescribeBundleTasksRequest {
   
-  @scala.inline
-  def apply(): DescribeBundleTasksRequest = {
+  inline def apply(): DescribeBundleTasksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBundleTasksRequest]
   }
   
-  @scala.inline
-  implicit class DescribeBundleTasksRequestMutableBuilder[Self <: DescribeBundleTasksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBundleTasksRequest](x: Self) {
     
-    @scala.inline
-    def setBundleIds(value: BundleIdStringList): Self = StObject.set(x, "BundleIds", value.asInstanceOf[js.Any])
+    inline def setBundleIds(value: BundleIdStringList): Self = StObject.set(x, "BundleIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdsUndefined: Self = StObject.set(x, "BundleIds", js.undefined)
+    inline def setBundleIdsUndefined: Self = StObject.set(x, "BundleIds", js.undefined)
     
-    @scala.inline
-    def setBundleIdsVarargs(value: BundleId*): Self = StObject.set(x, "BundleIds", js.Array(value :_*))
+    inline def setBundleIdsVarargs(value: BundleId*): Self = StObject.set(x, "BundleIds", js.Array(value :_*))
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
   }
 }

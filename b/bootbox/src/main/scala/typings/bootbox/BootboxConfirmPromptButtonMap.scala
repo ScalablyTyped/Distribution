@@ -15,19 +15,15 @@ trait BootboxConfirmPromptButtonMap
 }
 object BootboxConfirmPromptButtonMap {
   
-  @scala.inline
-  def apply(cancel: BootboxButton | js.Function, confirm: BootboxButton | js.Function): BootboxConfirmPromptButtonMap = {
+  inline def apply(cancel: BootboxButton | js.Function, confirm: BootboxButton | js.Function): BootboxConfirmPromptButtonMap = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], confirm = confirm.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxConfirmPromptButtonMap]
   }
   
-  @scala.inline
-  implicit class BootboxConfirmPromptButtonMapMutableBuilder[Self <: BootboxConfirmPromptButtonMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootboxConfirmPromptButtonMap](x: Self) {
     
-    @scala.inline
-    def setCancel(value: BootboxButton | js.Function): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: BootboxButton | js.Function): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirm(value: BootboxButton | js.Function): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
+    inline def setConfirm(value: BootboxButton | js.Function): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
   }
 }

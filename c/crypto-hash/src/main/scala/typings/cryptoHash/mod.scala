@@ -14,81 +14,45 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sha1(input: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha1(input: String, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
-  @scala.inline
-  def sha1(input: String, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha1(input: ArrayBuffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha1(input: ArrayBufferView): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha1(input: ArrayBufferView, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
-  @scala.inline
-  def sha1(input: ArrayBufferView, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha1(input: ArrayBuffer, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
-  @scala.inline
-  def sha1(input: ArrayBuffer, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def sha1(input: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def sha1(input: String, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def sha1(input: String, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def sha1(input: ArrayBuffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def sha1(input: ArrayBufferView): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def sha1(input: ArrayBufferView, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def sha1(input: ArrayBufferView, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def sha1(input: ArrayBuffer, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def sha1(input: ArrayBuffer, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def sha256(input: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha256(input: String, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
-  @scala.inline
-  def sha256(input: String, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha256(input: ArrayBuffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha256(input: ArrayBufferView): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha256(input: ArrayBufferView, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
-  @scala.inline
-  def sha256(input: ArrayBufferView, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha256(input: ArrayBuffer, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
-  @scala.inline
-  def sha256(input: ArrayBuffer, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def sha256(input: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def sha256(input: String, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def sha256(input: String, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def sha256(input: ArrayBuffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def sha256(input: ArrayBufferView): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def sha256(input: ArrayBufferView, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def sha256(input: ArrayBufferView, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def sha256(input: ArrayBuffer, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def sha256(input: ArrayBuffer, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def sha384(input: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha384(input: String, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
-  @scala.inline
-  def sha384(input: String, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha384(input: ArrayBuffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha384(input: ArrayBufferView): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha384(input: ArrayBufferView, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
-  @scala.inline
-  def sha384(input: ArrayBufferView, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha384(input: ArrayBuffer, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
-  @scala.inline
-  def sha384(input: ArrayBuffer, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def sha384(input: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def sha384(input: String, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def sha384(input: String, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def sha384(input: ArrayBuffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def sha384(input: ArrayBufferView): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def sha384(input: ArrayBufferView, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def sha384(input: ArrayBufferView, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def sha384(input: ArrayBuffer, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def sha384(input: ArrayBuffer, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def sha512(input: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha512(input: String, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
-  @scala.inline
-  def sha512(input: String, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha512(input: ArrayBuffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha512(input: ArrayBufferView): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha512(input: ArrayBufferView, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
-  @scala.inline
-  def sha512(input: ArrayBufferView, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def sha512(input: ArrayBuffer, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
-  @scala.inline
-  def sha512(input: ArrayBuffer, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def sha512(input: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def sha512(input: String, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def sha512(input: String, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def sha512(input: ArrayBuffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def sha512(input: ArrayBufferView): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def sha512(input: ArrayBufferView, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def sha512(input: ArrayBufferView, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def sha512(input: ArrayBuffer, options: OptionBufferOutput): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def sha512(input: ArrayBuffer, options: OptionsHexOutput): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   trait OptionBufferOutput extends StObject {
     
@@ -96,17 +60,14 @@ object mod {
   }
   object OptionBufferOutput {
     
-    @scala.inline
-    def apply(): OptionBufferOutput = {
+    inline def apply(): OptionBufferOutput = {
       val __obj = js.Dynamic.literal(outputFormat = "buffer")
       __obj.asInstanceOf[OptionBufferOutput]
     }
     
-    @scala.inline
-    implicit class OptionBufferOutputMutableBuilder[Self <: OptionBufferOutput] (val x: Self) extends AnyVal {
+    extension [Self <: OptionBufferOutput](x: Self) {
       
-      @scala.inline
-      def setOutputFormat(value: buffer): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+      inline def setOutputFormat(value: buffer): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,20 +77,16 @@ object mod {
   }
   object OptionsHexOutput {
     
-    @scala.inline
-    def apply(): OptionsHexOutput = {
+    inline def apply(): OptionsHexOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsHexOutput]
     }
     
-    @scala.inline
-    implicit class OptionsHexOutputMutableBuilder[Self <: OptionsHexOutput] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsHexOutput](x: Self) {
       
-      @scala.inline
-      def setOutputFormat(value: hex): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+      inline def setOutputFormat(value: hex): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
+      inline def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
     }
   }
 }

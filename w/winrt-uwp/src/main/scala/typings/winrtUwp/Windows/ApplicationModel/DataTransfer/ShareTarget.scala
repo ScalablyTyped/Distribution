@@ -29,8 +29,7 @@ object ShareTarget {
   }
   object QuickLink {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       supportedDataFormats: IVector[String],
       supportedFileTypes: IVector[String],
@@ -41,23 +40,17 @@ object ShareTarget {
       __obj.asInstanceOf[QuickLink]
     }
     
-    @scala.inline
-    implicit class QuickLinkMutableBuilder[Self <: QuickLink] (val x: Self) extends AnyVal {
+    extension [Self <: QuickLink](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedDataFormats(value: IVector[String]): Self = StObject.set(x, "supportedDataFormats", value.asInstanceOf[js.Any])
+      inline def setSupportedDataFormats(value: IVector[String]): Self = StObject.set(x, "supportedDataFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedFileTypes(value: IVector[String]): Self = StObject.set(x, "supportedFileTypes", value.asInstanceOf[js.Any])
+      inline def setSupportedFileTypes(value: IVector[String]): Self = StObject.set(x, "supportedFileTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail(value: RandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: RandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   

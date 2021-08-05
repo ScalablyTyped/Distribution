@@ -13,16 +13,13 @@ trait DescribeUserHierarchyStructureRequest extends StObject {
 }
 object DescribeUserHierarchyStructureRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId): DescribeUserHierarchyStructureRequest = {
+  inline def apply(InstanceId: InstanceId): DescribeUserHierarchyStructureRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUserHierarchyStructureRequest]
   }
   
-  @scala.inline
-  implicit class DescribeUserHierarchyStructureRequestMutableBuilder[Self <: DescribeUserHierarchyStructureRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeUserHierarchyStructureRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

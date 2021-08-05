@@ -11,16 +11,13 @@ trait SQL extends StObject {
 }
 object SQL {
   
-  @scala.inline
-  def apply(functions: LOWER): SQL = {
+  inline def apply(functions: LOWER): SQL = {
     val __obj = js.Dynamic.literal(functions = functions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SQL]
   }
   
-  @scala.inline
-  implicit class SQLMutableBuilder[Self <: SQL] (val x: Self) extends AnyVal {
+  extension [Self <: SQL](x: Self) {
     
-    @scala.inline
-    def setFunctions(value: LOWER): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: LOWER): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
   }
 }

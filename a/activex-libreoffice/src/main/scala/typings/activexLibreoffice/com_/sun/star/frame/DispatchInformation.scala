@@ -23,19 +23,15 @@ trait DispatchInformation extends StObject {
 }
 object DispatchInformation {
   
-  @scala.inline
-  def apply(Command: String, GroupId: Double): DispatchInformation = {
+  inline def apply(Command: String, GroupId: Double): DispatchInformation = {
     val __obj = js.Dynamic.literal(Command = Command.asInstanceOf[js.Any], GroupId = GroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DispatchInformation]
   }
   
-  @scala.inline
-  implicit class DispatchInformationMutableBuilder[Self <: DispatchInformation] (val x: Self) extends AnyVal {
+  extension [Self <: DispatchInformation](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupId(value: Double): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: Double): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
   }
 }

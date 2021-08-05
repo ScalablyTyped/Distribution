@@ -11,19 +11,15 @@ trait JQueryFileUploadFilesObject extends StObject {
 }
 object JQueryFileUploadFilesObject {
   
-  @scala.inline
-  def apply(files: js.Array[File]): JQueryFileUploadFilesObject = {
+  inline def apply(files: js.Array[File]): JQueryFileUploadFilesObject = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryFileUploadFilesObject]
   }
   
-  @scala.inline
-  implicit class JQueryFileUploadFilesObjectMutableBuilder[Self <: JQueryFileUploadFilesObject] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryFileUploadFilesObject](x: Self) {
     
-    @scala.inline
-    def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
   }
 }

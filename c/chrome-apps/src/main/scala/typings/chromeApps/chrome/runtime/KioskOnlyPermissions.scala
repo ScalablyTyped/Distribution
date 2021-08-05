@@ -16,15 +16,11 @@ trait KioskOnlyPermissions
      with Permission
 object KioskOnlyPermissions {
   
-  @scala.inline
-  def audio: audio_ = "audio".asInstanceOf[audio_]
+  inline def audio: audio_ = "audio".asInstanceOf[audio_]
   
-  @scala.inline
-  def networkingDotonc: typings.chromeApps.chromeAppsStrings.networkingDotonc = "networking.onc".asInstanceOf[typings.chromeApps.chromeAppsStrings.networkingDotonc]
+  inline def networkingDotonc: typings.chromeApps.chromeAppsStrings.networkingDotonc = "networking.onc".asInstanceOf[typings.chromeApps.chromeAppsStrings.networkingDotonc]
   
-  @scala.inline
-  def systemDotpowerSource: typings.chromeApps.chromeAppsStrings.systemDotpowerSource = "system.powerSource".asInstanceOf[typings.chromeApps.chromeAppsStrings.systemDotpowerSource]
+  inline def systemDotpowerSource: typings.chromeApps.chromeAppsStrings.systemDotpowerSource = "system.powerSource".asInstanceOf[typings.chromeApps.chromeAppsStrings.systemDotpowerSource]
   
-  @scala.inline
-  def virtualKeyboard: typings.chromeApps.chromeAppsStrings.virtualKeyboard = "virtualKeyboard".asInstanceOf[typings.chromeApps.chromeAppsStrings.virtualKeyboard]
+  inline def virtualKeyboard: typings.chromeApps.chromeAppsStrings.virtualKeyboard = "virtualKeyboard".asInstanceOf[typings.chromeApps.chromeAppsStrings.virtualKeyboard]
 }

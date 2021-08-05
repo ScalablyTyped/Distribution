@@ -106,38 +106,28 @@ object publisherMod {
   }
   object PublishOptions {
     
-    @scala.inline
-    def apply(): PublishOptions = {
+    inline def apply(): PublishOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PublishOptions]
     }
     
-    @scala.inline
-    implicit class PublishOptionsMutableBuilder[Self <: PublishOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PublishOptions](x: Self) {
       
-      @scala.inline
-      def setBatching(value: BatchPublishOptions): Self = StObject.set(x, "batching", value.asInstanceOf[js.Any])
+      inline def setBatching(value: BatchPublishOptions): Self = StObject.set(x, "batching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchingUndefined: Self = StObject.set(x, "batching", js.undefined)
+      inline def setBatchingUndefined: Self = StObject.set(x, "batching", js.undefined)
       
-      @scala.inline
-      def setEnableOpenTelemetryTracing(value: Boolean): Self = StObject.set(x, "enableOpenTelemetryTracing", value.asInstanceOf[js.Any])
+      inline def setEnableOpenTelemetryTracing(value: Boolean): Self = StObject.set(x, "enableOpenTelemetryTracing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableOpenTelemetryTracingUndefined: Self = StObject.set(x, "enableOpenTelemetryTracing", js.undefined)
+      inline def setEnableOpenTelemetryTracingUndefined: Self = StObject.set(x, "enableOpenTelemetryTracing", js.undefined)
       
-      @scala.inline
-      def setGaxOpts(value: CallOptions): Self = StObject.set(x, "gaxOpts", value.asInstanceOf[js.Any])
+      inline def setGaxOpts(value: CallOptions): Self = StObject.set(x, "gaxOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGaxOptsUndefined: Self = StObject.set(x, "gaxOpts", js.undefined)
+      inline def setGaxOptsUndefined: Self = StObject.set(x, "gaxOpts", js.undefined)
       
-      @scala.inline
-      def setMessageOrdering(value: Boolean): Self = StObject.set(x, "messageOrdering", value.asInstanceOf[js.Any])
+      inline def setMessageOrdering(value: Boolean): Self = StObject.set(x, "messageOrdering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageOrderingUndefined: Self = StObject.set(x, "messageOrdering", js.undefined)
+      inline def setMessageOrderingUndefined: Self = StObject.set(x, "messageOrdering", js.undefined)
     }
   }
   

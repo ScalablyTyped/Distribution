@@ -27,17 +27,14 @@ trait FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration extend
 }
 object FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration {
   
-  @scala.inline
-  def apply(): FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration = {
+  inline def apply(): FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationMutableBuilder[Self <: FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration](x: Self) {
     
-    @scala.inline
-    def setCommonAttributes(
+    inline def setCommonAttributes(
       value: Input[
           js.Array[
             Input[
@@ -47,20 +44,16 @@ object FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration {
         ]
     ): Self = StObject.set(x, "commonAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonAttributesUndefined: Self = StObject.set(x, "commonAttributes", js.undefined)
+    inline def setCommonAttributesUndefined: Self = StObject.set(x, "commonAttributes", js.undefined)
     
-    @scala.inline
-    def setCommonAttributesVarargs(
+    inline def setCommonAttributesVarargs(
       value: (Input[
           FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttribute
         ])*
     ): Self = StObject.set(x, "commonAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setContentEncoding(value: Input[String]): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
+    inline def setContentEncoding(value: Input[String]): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
+    inline def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
   }
 }

@@ -46,6 +46,5 @@ object constsMod {
   @js.native
   val LIMIT_FILES_DESCRIPTORS: /* 10000 */ Double = js.native
   
-  @scala.inline
-  def NOOP(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("NOOP")().asInstanceOf[Unit]
+  inline def NOOP(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("NOOP")().asInstanceOf[Unit]
 }

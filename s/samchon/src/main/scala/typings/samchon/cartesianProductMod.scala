@@ -36,12 +36,12 @@ object cartesianProductMod {
     /**
       * @hidden
       */
-    var digits_ : js.Any = js.native
+    /* private */ var digits_ : js.Any = js.native
     
     /**
       * @hidden
       */
-    var dividers_ : js.Any = js.native
+    /* private */ var dividers_ : js.Any = js.native
     
     /**
       * Get size of all cases.
@@ -54,6 +54,6 @@ object cartesianProductMod {
     /**
       * @hidden
       */
-    var size_ : js.Any = js.native
+    /* private */ var size_ : js.Any = js.native
   }
 }

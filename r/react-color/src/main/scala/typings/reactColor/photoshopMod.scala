@@ -38,38 +38,28 @@ object photoshopMod {
   }
   object PhotoshopPickerProps {
     
-    @scala.inline
-    def apply(): PhotoshopPickerProps = {
+    inline def apply(): PhotoshopPickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PhotoshopPickerProps]
     }
     
-    @scala.inline
-    implicit class PhotoshopPickerPropsMutableBuilder[Self <: PhotoshopPickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: PhotoshopPickerProps](x: Self) {
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setOnAccept(value: (/* color */ ColorResult, /* event */ ChangeEvent[HTMLInputElement]) => Unit): Self = StObject.set(x, "onAccept", js.Any.fromFunction2(value))
+      inline def setOnAccept(value: (/* color */ ColorResult, /* event */ ChangeEvent[HTMLInputElement]) => Unit): Self = StObject.set(x, "onAccept", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnAcceptUndefined: Self = StObject.set(x, "onAccept", js.undefined)
+      inline def setOnAcceptUndefined: Self = StObject.set(x, "onAccept", js.undefined)
       
-      @scala.inline
-      def setOnCancel(value: (/* color */ ColorResult, /* event */ ChangeEvent[HTMLInputElement]) => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
+      inline def setOnCancel(value: (/* color */ ColorResult, /* event */ ChangeEvent[HTMLInputElement]) => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setStyles(value: PartialClassesPhotoshopPi): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: PartialClassesPhotoshopPi): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   
@@ -95,8 +85,7 @@ object photoshopMod {
   }
   object PhotoshopPickerStylesProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actions: CSSProperties,
       body: CSSProperties,
       controls: CSSProperties,
@@ -111,35 +100,25 @@ object photoshopMod {
       __obj.asInstanceOf[PhotoshopPickerStylesProps]
     }
     
-    @scala.inline
-    implicit class PhotoshopPickerStylesPropsMutableBuilder[Self <: PhotoshopPickerStylesProps] (val x: Self) extends AnyVal {
+    extension [Self <: PhotoshopPickerStylesProps](x: Self) {
       
-      @scala.inline
-      def setActions(value: CSSProperties): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: CSSProperties): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody(value: CSSProperties): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: CSSProperties): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControls(value: CSSProperties): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: CSSProperties): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead(value: CSSProperties): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: CSSProperties): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHue(value: CSSProperties): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+      inline def setHue(value: CSSProperties): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviews(value: CSSProperties): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
+      inline def setPreviews(value: CSSProperties): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaturation(value: CSSProperties): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+      inline def setSaturation(value: CSSProperties): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: CSSProperties): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: CSSProperties): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
 }

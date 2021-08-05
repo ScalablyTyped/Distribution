@@ -18,19 +18,15 @@ trait VariableDefinition extends StObject {
 }
 object VariableDefinition {
   
-  @scala.inline
-  def apply(name: VariableName, value: VariableValue): VariableDefinition = {
+  inline def apply(name: VariableName, value: VariableValue): VariableDefinition = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableDefinition]
   }
   
-  @scala.inline
-  implicit class VariableDefinitionMutableBuilder[Self <: VariableDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: VariableDefinition](x: Self) {
     
-    @scala.inline
-    def setName(value: VariableName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: VariableName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: VariableValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: VariableValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

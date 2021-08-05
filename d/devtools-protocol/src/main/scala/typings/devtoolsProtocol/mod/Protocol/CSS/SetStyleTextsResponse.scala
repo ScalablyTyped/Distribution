@@ -13,19 +13,15 @@ trait SetStyleTextsResponse extends StObject {
 }
 object SetStyleTextsResponse {
   
-  @scala.inline
-  def apply(styles: js.Array[CSSStyle]): SetStyleTextsResponse = {
+  inline def apply(styles: js.Array[CSSStyle]): SetStyleTextsResponse = {
     val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetStyleTextsResponse]
   }
   
-  @scala.inline
-  implicit class SetStyleTextsResponseMutableBuilder[Self <: SetStyleTextsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SetStyleTextsResponse](x: Self) {
     
-    @scala.inline
-    def setStyles(value: js.Array[CSSStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[CSSStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesVarargs(value: CSSStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: CSSStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

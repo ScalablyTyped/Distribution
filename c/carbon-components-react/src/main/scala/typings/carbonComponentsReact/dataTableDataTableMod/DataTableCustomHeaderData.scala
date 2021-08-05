@@ -17,28 +17,21 @@ trait DataTableCustomHeaderData[H /* <: DataTableHeader[String] */] extends StOb
 }
 object DataTableCustomHeaderData {
   
-  @scala.inline
-  def apply[H /* <: DataTableHeader[String] */](header: H): DataTableCustomHeaderData[H] = {
+  inline def apply[H /* <: DataTableHeader[String] */](header: H): DataTableCustomHeaderData[H] = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTableCustomHeaderData[H]]
   }
   
-  @scala.inline
-  implicit class DataTableCustomHeaderDataMutableBuilder[Self <: DataTableCustomHeaderData[?], H /* <: DataTableHeader[String] */] (val x: Self & DataTableCustomHeaderData[H]) extends AnyVal {
+  extension [Self <: DataTableCustomHeaderData[?], H /* <: DataTableHeader[String] */](x: Self & DataTableCustomHeaderData[H]) {
     
-    @scala.inline
-    def setHeader(value: H): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: H): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
+    inline def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
+    inline def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }
 }

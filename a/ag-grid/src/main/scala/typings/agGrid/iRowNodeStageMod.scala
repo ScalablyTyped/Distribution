@@ -16,17 +16,14 @@ object iRowNodeStageMod {
   }
   object IRowNodeStage {
     
-    @scala.inline
-    def apply(execute: StageExecuteParams => js.Any): IRowNodeStage = {
+    inline def apply(execute: StageExecuteParams => js.Any): IRowNodeStage = {
       val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
       __obj.asInstanceOf[IRowNodeStage]
     }
     
-    @scala.inline
-    implicit class IRowNodeStageMutableBuilder[Self <: IRowNodeStage] (val x: Self) extends AnyVal {
+    extension [Self <: IRowNodeStage](x: Self) {
       
-      @scala.inline
-      def setExecute(value: StageExecuteParams => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecute(value: StageExecuteParams => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     }
   }
   
@@ -42,35 +39,26 @@ object iRowNodeStageMod {
   }
   object StageExecuteParams {
     
-    @scala.inline
-    def apply(rowNode: RowNode): StageExecuteParams = {
+    inline def apply(rowNode: RowNode): StageExecuteParams = {
       val __obj = js.Dynamic.literal(rowNode = rowNode.asInstanceOf[js.Any])
       __obj.asInstanceOf[StageExecuteParams]
     }
     
-    @scala.inline
-    implicit class StageExecuteParamsMutableBuilder[Self <: StageExecuteParams] (val x: Self) extends AnyVal {
+    extension [Self <: StageExecuteParams](x: Self) {
       
-      @scala.inline
-      def setChangedPath(value: ChangedPath): Self = StObject.set(x, "changedPath", value.asInstanceOf[js.Any])
+      inline def setChangedPath(value: ChangedPath): Self = StObject.set(x, "changedPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedPathUndefined: Self = StObject.set(x, "changedPath", js.undefined)
+      inline def setChangedPathUndefined: Self = StObject.set(x, "changedPath", js.undefined)
       
-      @scala.inline
-      def setRowNode(value: RowNode): Self = StObject.set(x, "rowNode", value.asInstanceOf[js.Any])
+      inline def setRowNode(value: RowNode): Self = StObject.set(x, "rowNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowNodeOrder(value: StringDictionary[Double]): Self = StObject.set(x, "rowNodeOrder", value.asInstanceOf[js.Any])
+      inline def setRowNodeOrder(value: StringDictionary[Double]): Self = StObject.set(x, "rowNodeOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowNodeOrderUndefined: Self = StObject.set(x, "rowNodeOrder", js.undefined)
+      inline def setRowNodeOrderUndefined: Self = StObject.set(x, "rowNodeOrder", js.undefined)
       
-      @scala.inline
-      def setRowNodeTransaction(value: RowNodeTransaction): Self = StObject.set(x, "rowNodeTransaction", value.asInstanceOf[js.Any])
+      inline def setRowNodeTransaction(value: RowNodeTransaction): Self = StObject.set(x, "rowNodeTransaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowNodeTransactionUndefined: Self = StObject.set(x, "rowNodeTransaction", js.undefined)
+      inline def setRowNodeTransactionUndefined: Self = StObject.set(x, "rowNodeTransaction", js.undefined)
     }
   }
 }

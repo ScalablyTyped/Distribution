@@ -33,43 +33,31 @@ trait HierarchyGroup extends StObject {
 }
 object HierarchyGroup {
   
-  @scala.inline
-  def apply(): HierarchyGroup = {
+  inline def apply(): HierarchyGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HierarchyGroup]
   }
   
-  @scala.inline
-  implicit class HierarchyGroupMutableBuilder[Self <: HierarchyGroup] (val x: Self) extends AnyVal {
+  extension [Self <: HierarchyGroup](x: Self) {
     
-    @scala.inline
-    def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setHierarchyPath(value: HierarchyPath): Self = StObject.set(x, "HierarchyPath", value.asInstanceOf[js.Any])
+    inline def setHierarchyPath(value: HierarchyPath): Self = StObject.set(x, "HierarchyPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchyPathUndefined: Self = StObject.set(x, "HierarchyPath", js.undefined)
+    inline def setHierarchyPathUndefined: Self = StObject.set(x, "HierarchyPath", js.undefined)
     
-    @scala.inline
-    def setId(value: HierarchyGroupId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: HierarchyGroupId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setLevelId(value: HierarchyLevelId): Self = StObject.set(x, "LevelId", value.asInstanceOf[js.Any])
+    inline def setLevelId(value: HierarchyLevelId): Self = StObject.set(x, "LevelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelIdUndefined: Self = StObject.set(x, "LevelId", js.undefined)
+    inline def setLevelIdUndefined: Self = StObject.set(x, "LevelId", js.undefined)
     
-    @scala.inline
-    def setName(value: HierarchyGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: HierarchyGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

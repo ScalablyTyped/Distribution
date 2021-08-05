@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrinterServiceType extends StObject
 object PrinterServiceType {
   
-  @scala.inline
-  def copy: typings.ipp.ippStrings.copy = "copy".asInstanceOf[typings.ipp.ippStrings.copy]
+  inline def copy: typings.ipp.ippStrings.copy = "copy".asInstanceOf[typings.ipp.ippStrings.copy]
   
-  @scala.inline
-  def faxin: typings.ipp.ippStrings.faxin = "faxin".asInstanceOf[typings.ipp.ippStrings.faxin]
+  inline def faxin: typings.ipp.ippStrings.faxin = "faxin".asInstanceOf[typings.ipp.ippStrings.faxin]
   
-  @scala.inline
-  def faxout: typings.ipp.ippStrings.faxout = "faxout".asInstanceOf[typings.ipp.ippStrings.faxout]
+  inline def faxout: typings.ipp.ippStrings.faxout = "faxout".asInstanceOf[typings.ipp.ippStrings.faxout]
   
-  @scala.inline
-  def print: typings.ipp.ippStrings.print = "print".asInstanceOf[typings.ipp.ippStrings.print]
+  inline def print: typings.ipp.ippStrings.print = "print".asInstanceOf[typings.ipp.ippStrings.print]
   
-  @scala.inline
-  def print3d: typings.ipp.ippStrings.print3d = "print3d".asInstanceOf[typings.ipp.ippStrings.print3d]
+  inline def print3d: typings.ipp.ippStrings.print3d = "print3d".asInstanceOf[typings.ipp.ippStrings.print3d]
   
-  @scala.inline
-  def scan: typings.ipp.ippStrings.scan = "scan".asInstanceOf[typings.ipp.ippStrings.scan]
+  inline def scan: typings.ipp.ippStrings.scan = "scan".asInstanceOf[typings.ipp.ippStrings.scan]
   
-  @scala.inline
-  def transform: typings.ipp.ippStrings.transform = "transform".asInstanceOf[typings.ipp.ippStrings.transform]
+  inline def transform: typings.ipp.ippStrings.transform = "transform".asInstanceOf[typings.ipp.ippStrings.transform]
 }

@@ -40,8 +40,7 @@ object youtubereportingMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Youtubereporting
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object youtubereportingMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object youtubereportingMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def youtubereporting(options: Options): Youtubereporting = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubereporting")(options.asInstanceOf[js.Any]).asInstanceOf[Youtubereporting]
+  inline def youtubereporting(options: Options): Youtubereporting = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubereporting")(options.asInstanceOf[js.Any]).asInstanceOf[Youtubereporting]
   
-  @scala.inline
-  def youtubereporting_v1(version: v1): Youtubereporting = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubereporting")(version.asInstanceOf[js.Any]).asInstanceOf[Youtubereporting]
+  inline def youtubereporting_v1(version: v1): Youtubereporting = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubereporting")(version.asInstanceOf[js.Any]).asInstanceOf[Youtubereporting]
 }

@@ -18,28 +18,21 @@ trait PolicyARNType extends StObject {
 }
 object PolicyARNType {
   
-  @scala.inline
-  def apply(): PolicyARNType = {
+  inline def apply(): PolicyARNType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyARNType]
   }
   
-  @scala.inline
-  implicit class PolicyARNTypeMutableBuilder[Self <: PolicyARNType] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyARNType](x: Self) {
     
-    @scala.inline
-    def setAlarms(value: Alarms): Self = StObject.set(x, "Alarms", value.asInstanceOf[js.Any])
+    inline def setAlarms(value: Alarms): Self = StObject.set(x, "Alarms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmsUndefined: Self = StObject.set(x, "Alarms", js.undefined)
+    inline def setAlarmsUndefined: Self = StObject.set(x, "Alarms", js.undefined)
     
-    @scala.inline
-    def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "Alarms", js.Array(value :_*))
+    inline def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "Alarms", js.Array(value :_*))
     
-    @scala.inline
-    def setPolicyARN(value: ResourceName): Self = StObject.set(x, "PolicyARN", value.asInstanceOf[js.Any])
+    inline def setPolicyARN(value: ResourceName): Self = StObject.set(x, "PolicyARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyARNUndefined: Self = StObject.set(x, "PolicyARN", js.undefined)
+    inline def setPolicyARNUndefined: Self = StObject.set(x, "PolicyARN", js.undefined)
   }
 }

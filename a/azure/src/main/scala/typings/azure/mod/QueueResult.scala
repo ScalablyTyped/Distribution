@@ -25,6 +25,5 @@ object QueueResult {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(messageXml: js.Any): QueueResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(messageXml.asInstanceOf[js.Any]).asInstanceOf[QueueResult]
+  inline def parse(messageXml: js.Any): QueueResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(messageXml.asInstanceOf[js.Any]).asInstanceOf[QueueResult]
 }

@@ -106,20 +106,16 @@ object clientMod {
   }
   object SmithyConfiguration {
     
-    @scala.inline
-    def apply[HandlerOptions](apiVersion: String, requestHandler: RequestHandler[js.Any, js.Any, HandlerOptions]): SmithyConfiguration[HandlerOptions] = {
+    inline def apply[HandlerOptions](apiVersion: String, requestHandler: RequestHandler[js.Any, js.Any, HandlerOptions]): SmithyConfiguration[HandlerOptions] = {
       val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], requestHandler = requestHandler.asInstanceOf[js.Any])
       __obj.asInstanceOf[SmithyConfiguration[HandlerOptions]]
     }
     
-    @scala.inline
-    implicit class SmithyConfigurationMutableBuilder[Self <: SmithyConfiguration[?], HandlerOptions] (val x: Self & SmithyConfiguration[HandlerOptions]) extends AnyVal {
+    extension [Self <: SmithyConfiguration[?], HandlerOptions](x: Self & SmithyConfiguration[HandlerOptions]) {
       
-      @scala.inline
-      def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestHandler(value: RequestHandler[js.Any, js.Any, HandlerOptions]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
+      inline def setRequestHandler(value: RequestHandler[js.Any, js.Any, HandlerOptions]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
     }
   }
   

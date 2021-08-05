@@ -24,8 +24,7 @@ trait MaxX extends StObject {
 }
 object MaxX {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: Double,
     maxX: Double,
     maxY: Double,
@@ -39,31 +38,22 @@ object MaxX {
     __obj.asInstanceOf[MaxX]
   }
   
-  @scala.inline
-  implicit class MaxXMutableBuilder[Self <: MaxX] (val x: Self) extends AnyVal {
+  extension [Self <: MaxX](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
+    inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
+    inline def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
+    inline def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
+    inline def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

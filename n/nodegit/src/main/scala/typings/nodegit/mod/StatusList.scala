@@ -16,8 +16,6 @@ object StatusList {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(repo: typings.nodegit.repositoryMod.Repository): js.Promise[typings.nodegit.statusListMod.StatusList] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodegit.statusListMod.StatusList]]
-  @scala.inline
-  def create(repo: typings.nodegit.repositoryMod.Repository, opts: StatusOptions): js.Promise[typings.nodegit.statusListMod.StatusList] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.statusListMod.StatusList]]
+  inline def create(repo: typings.nodegit.repositoryMod.Repository): js.Promise[typings.nodegit.statusListMod.StatusList] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodegit.statusListMod.StatusList]]
+  inline def create(repo: typings.nodegit.repositoryMod.Repository, opts: StatusOptions): js.Promise[typings.nodegit.statusListMod.StatusList] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.statusListMod.StatusList]]
 }

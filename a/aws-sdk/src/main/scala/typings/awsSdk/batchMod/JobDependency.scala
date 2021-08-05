@@ -18,25 +18,19 @@ trait JobDependency extends StObject {
 }
 object JobDependency {
   
-  @scala.inline
-  def apply(): JobDependency = {
+  inline def apply(): JobDependency = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobDependency]
   }
   
-  @scala.inline
-  implicit class JobDependencyMutableBuilder[Self <: JobDependency] (val x: Self) extends AnyVal {
+  extension [Self <: JobDependency](x: Self) {
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setType(value: ArrayJobDependency): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ArrayJobDependency): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

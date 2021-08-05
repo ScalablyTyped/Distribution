@@ -19,19 +19,15 @@ trait IChargeCaptureOptions
 }
 object IChargeCaptureOptions {
   
-  @scala.inline
-  def apply(): IChargeCaptureOptions = {
+  inline def apply(): IChargeCaptureOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IChargeCaptureOptions]
   }
   
-  @scala.inline
-  implicit class IChargeCaptureOptionsMutableBuilder[Self <: IChargeCaptureOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IChargeCaptureOptions](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
   }
 }

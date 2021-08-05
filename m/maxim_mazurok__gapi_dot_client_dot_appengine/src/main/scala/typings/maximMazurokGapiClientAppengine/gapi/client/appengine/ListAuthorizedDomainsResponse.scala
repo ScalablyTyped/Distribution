@@ -14,28 +14,21 @@ trait ListAuthorizedDomainsResponse extends StObject {
 }
 object ListAuthorizedDomainsResponse {
   
-  @scala.inline
-  def apply(): ListAuthorizedDomainsResponse = {
+  inline def apply(): ListAuthorizedDomainsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAuthorizedDomainsResponse]
   }
   
-  @scala.inline
-  implicit class ListAuthorizedDomainsResponseMutableBuilder[Self <: ListAuthorizedDomainsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAuthorizedDomainsResponse](x: Self) {
     
-    @scala.inline
-    def setDomains(value: js.Array[AuthorizedDomain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+    inline def setDomains(value: js.Array[AuthorizedDomain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+    inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    @scala.inline
-    def setDomainsVarargs(value: AuthorizedDomain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: AuthorizedDomain*): Self = StObject.set(x, "domains", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

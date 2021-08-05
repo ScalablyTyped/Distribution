@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createStream(options: StreamOptions): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream]
+  inline def createStream(options: StreamOptions): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream]
   
   trait StreamOptions extends StObject {
     
@@ -20,17 +19,14 @@ object mod {
   }
   object StreamOptions {
     
-    @scala.inline
-    def apply(token: String): StreamOptions = {
+    inline def apply(token: String): StreamOptions = {
       val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamOptions]
     }
     
-    @scala.inline
-    implicit class StreamOptionsMutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StreamOptions](x: Self) {
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
 }

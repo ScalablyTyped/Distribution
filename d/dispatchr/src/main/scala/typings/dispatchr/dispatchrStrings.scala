@@ -8,21 +8,17 @@ object dispatchrStrings {
   
   @js.native
   sealed trait handlers extends StObject
-  @scala.inline
-  def handlers: handlers = "handlers".asInstanceOf[handlers]
+  inline def handlers: handlers = "handlers".asInstanceOf[handlers]
   
   @js.native
   sealed trait mixins extends StObject
-  @scala.inline
-  def mixins: mixins = "mixins".asInstanceOf[mixins]
+  inline def mixins: mixins = "mixins".asInstanceOf[mixins]
   
   @js.native
   sealed trait statics extends StObject
-  @scala.inline
-  def statics: statics = "statics".asInstanceOf[statics]
+  inline def statics: statics = "statics".asInstanceOf[statics]
   
   @js.native
   sealed trait storeName extends StObject
-  @scala.inline
-  def storeName: storeName = "storeName".asInstanceOf[storeName]
+  inline def storeName: storeName = "storeName".asInstanceOf[storeName]
 }

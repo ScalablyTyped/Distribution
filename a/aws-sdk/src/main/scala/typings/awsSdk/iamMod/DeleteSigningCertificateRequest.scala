@@ -18,22 +18,17 @@ trait DeleteSigningCertificateRequest extends StObject {
 }
 object DeleteSigningCertificateRequest {
   
-  @scala.inline
-  def apply(CertificateId: certificateIdType): DeleteSigningCertificateRequest = {
+  inline def apply(CertificateId: certificateIdType): DeleteSigningCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateId = CertificateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSigningCertificateRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSigningCertificateRequestMutableBuilder[Self <: DeleteSigningCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSigningCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateId(value: certificateIdType): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: certificateIdType): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

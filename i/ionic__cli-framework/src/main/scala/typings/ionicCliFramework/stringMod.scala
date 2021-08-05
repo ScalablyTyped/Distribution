@@ -19,37 +19,24 @@ object stringMod {
   @js.native
   val URL_REGEX: RegExp = js.native
   
-  @scala.inline
-  def enforceLF(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceLF")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def enforceLF(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceLF")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isValidEmail(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidEmail")().asInstanceOf[Boolean]
-  @scala.inline
-  def isValidEmail(email: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidEmail(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidEmail")().asInstanceOf[Boolean]
+  inline def isValidEmail(email: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isValidURL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidURL")().asInstanceOf[Boolean]
-  @scala.inline
-  def isValidURL(url: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidURL")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidURL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidURL")().asInstanceOf[Boolean]
+  inline def isValidURL(url: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidURL")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def slugify(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slugify")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def slugify(input: String, hasSeparator: SlugifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slugify")(input.asInstanceOf[js.Any], hasSeparator.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def slugify(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slugify")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def slugify(input: String, hasSeparator: SlugifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slugify")(input.asInstanceOf[js.Any], hasSeparator.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def str2num(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("str2num")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def str2num(value: js.Any, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("str2num")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def str2num(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("str2num")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def str2num(value: js.Any, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("str2num")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def strcmp(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")().asInstanceOf[Double]
-  @scala.inline
-  def strcmp(a: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def strcmp(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def strcmp(a: Unit, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def strcmp(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")().asInstanceOf[Double]
+  inline def strcmp(a: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def strcmp(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def strcmp(a: Unit, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   trait SlugifyOptions extends StObject {
     
@@ -57,20 +44,16 @@ object stringMod {
   }
   object SlugifyOptions {
     
-    @scala.inline
-    def apply(): SlugifyOptions = {
+    inline def apply(): SlugifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SlugifyOptions]
     }
     
-    @scala.inline
-    implicit class SlugifyOptionsMutableBuilder[Self <: SlugifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SlugifyOptions](x: Self) {
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
 }

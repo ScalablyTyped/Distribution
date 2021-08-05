@@ -40,43 +40,31 @@ trait ParamsResourceCloudloadingAddbook
 }
 object ParamsResourceCloudloadingAddbook {
   
-  @scala.inline
-  def apply(): ParamsResourceCloudloadingAddbook = {
+  inline def apply(): ParamsResourceCloudloadingAddbook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCloudloadingAddbook]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCloudloadingAddbookMutableBuilder[Self <: ParamsResourceCloudloadingAddbook] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCloudloadingAddbook](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDrive_document_id(value: String): Self = StObject.set(x, "drive_document_id", value.asInstanceOf[js.Any])
+    inline def setDrive_document_id(value: String): Self = StObject.set(x, "drive_document_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrive_document_idUndefined: Self = StObject.set(x, "drive_document_id", js.undefined)
+    inline def setDrive_document_idUndefined: Self = StObject.set(x, "drive_document_id", js.undefined)
     
-    @scala.inline
-    def setMime_type(value: String): Self = StObject.set(x, "mime_type", value.asInstanceOf[js.Any])
+    inline def setMime_type(value: String): Self = StObject.set(x, "mime_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMime_typeUndefined: Self = StObject.set(x, "mime_type", js.undefined)
+    inline def setMime_typeUndefined: Self = StObject.set(x, "mime_type", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUpload_client_token(value: String): Self = StObject.set(x, "upload_client_token", value.asInstanceOf[js.Any])
+    inline def setUpload_client_token(value: String): Self = StObject.set(x, "upload_client_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpload_client_tokenUndefined: Self = StObject.set(x, "upload_client_token", js.undefined)
+    inline def setUpload_client_tokenUndefined: Self = StObject.set(x, "upload_client_token", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait AstProps
 }
 object AstProps {
   
-  @scala.inline
-  def apply(): AstProps = {
+  inline def apply(): AstProps = {
     val __obj = js.Dynamic.literal(ast = null)
     __obj.asInstanceOf[AstProps]
   }
   
-  @scala.inline
-  implicit class AstPropsMutableBuilder[Self <: AstProps] (val x: Self) extends AnyVal {
+  extension [Self <: AstProps](x: Self) {
     
-    @scala.inline
-    def setAst(value: JsxAST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
+    inline def setAst(value: JsxAST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAstNull: Self = StObject.set(x, "ast", null)
+    inline def setAstNull: Self = StObject.set(x, "ast", null)
     
-    @scala.inline
-    def setOverride(value: SvgProps): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    inline def setOverride(value: SvgProps): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
   }
 }

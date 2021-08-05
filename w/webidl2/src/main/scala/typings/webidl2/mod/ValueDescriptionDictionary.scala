@@ -15,17 +15,14 @@ trait ValueDescriptionDictionary
 }
 object ValueDescriptionDictionary {
   
-  @scala.inline
-  def apply(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): ValueDescriptionDictionary = {
+  inline def apply(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): ValueDescriptionDictionary = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("dictionary")
     __obj.asInstanceOf[ValueDescriptionDictionary]
   }
   
-  @scala.inline
-  implicit class ValueDescriptionDictionaryMutableBuilder[Self <: ValueDescriptionDictionary] (val x: Self) extends AnyVal {
+  extension [Self <: ValueDescriptionDictionary](x: Self) {
     
-    @scala.inline
-    def setType(value: dictionary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: dictionary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

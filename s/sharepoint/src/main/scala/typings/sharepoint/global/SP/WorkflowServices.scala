@@ -24,8 +24,7 @@ object WorkflowServices {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getCurrent(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.WorkflowServices.InteropService = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.WorkflowServices.InteropService]
+    inline def getCurrent(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.WorkflowServices.InteropService = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.WorkflowServices.InteropService]
   }
   
   /** Represents a workflow definition and associated properties. */
@@ -73,8 +72,7 @@ object WorkflowServices {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.WorkflowServices.WorkflowServicesManager = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.WorkflowServices.WorkflowServicesManager]
+    inline def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.WorkflowServices.WorkflowServicesManager = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.WorkflowServices.WorkflowServicesManager]
   }
   
   @JSGlobal("SP.WorkflowServices.WorkflowStatus")
@@ -127,7 +125,6 @@ object WorkflowServices {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getCurrent(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.WorkflowServices.WorkflowSubscriptionService = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.WorkflowServices.WorkflowSubscriptionService]
+    inline def getCurrent(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.WorkflowServices.WorkflowSubscriptionService = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.WorkflowServices.WorkflowSubscriptionService]
   }
 }

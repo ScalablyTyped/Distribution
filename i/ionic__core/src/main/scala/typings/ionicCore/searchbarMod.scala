@@ -100,7 +100,7 @@ object searchbarMod {
     
     var el: HTMLIonSearchbarElement = js.native
     
-    var emitStyle: js.Any = js.native
+    /* private */ var emitStyle: js.Any = js.native
     
     /**
       * A hint to the browser for which enter key to display.
@@ -116,9 +116,9 @@ object searchbarMod {
       */
     def getInputElement(): js.Promise[HTMLInputElement] = js.native
     
-    var getValue: js.Any = js.native
+    /* private */ var getValue: js.Any = js.native
     
-    var hasValue: js.Any = js.native
+    /* private */ var hasValue: js.Any = js.native
     
     /**
       * A hint to the browser for which keyboard to display.
@@ -163,9 +163,9 @@ object searchbarMod {
       */
     var ionStyle: EventEmitter[StyleEventDetail] = js.native
     
-    var isCancelVisible: js.Any = js.native
+    /* private */ var isCancelVisible: js.Any = js.native
     
-    var nativeInput: js.Any = js.native
+    /* private */ var nativeInput: js.Any = js.native
     
     var noAnimate: Boolean = js.native
     
@@ -173,29 +173,29 @@ object searchbarMod {
       * Sets the Searchbar to not focused and checks if it should align left
       * based on whether there is a value in the searchbar or not.
       */
-    var onBlur: js.Any = js.native
+    /* private */ var onBlur: js.Any = js.native
     
     /**
       * Clears the input field and tells the input to blur since
       * the clearInput function doesn't want the input to blur
       * then calls the custom cancel function if the user passed one in.
       */
-    var onCancelSearchbar: js.Any = js.native
+    /* private */ var onCancelSearchbar: js.Any = js.native
     
     /**
       * Clears the input field and triggers the control change.
       */
-    var onClearInput: js.Any = js.native
+    /* private */ var onClearInput: js.Any = js.native
     
     /**
       * Sets the Searchbar to focused and active on input focus.
       */
-    var onFocus: js.Any = js.native
+    /* private */ var onFocus: js.Any = js.native
     
     /**
       * Update the Searchbar input value when the input changes
       */
-    var onInput: js.Any = js.native
+    /* private */ var onInput: js.Any = js.native
     
     /**
       * Set the input's placeholder.
@@ -211,18 +211,18 @@ object searchbarMod {
     /**
       * Show the iOS Cancel button on focus, hide it offscreen otherwise
       */
-    var positionCancelButton: js.Any = js.native
+    /* private */ var positionCancelButton: js.Any = js.native
     
     /**
       * Positions the input search icon, placeholder, and the cancel button
       * based on the input value and if it is focused. (ios only)
       */
-    var positionElements: js.Any = js.native
+    /* private */ var positionElements: js.Any = js.native
     
     /**
       * Positions the input placeholder
       */
-    var positionPlaceholder: js.Any = js.native
+    /* private */ var positionPlaceholder: js.Any = js.native
     
     @JSName("render")
     def render_MSearchbar(): js.Any = js.native
@@ -239,7 +239,7 @@ object searchbarMod {
       */
     def setFocus(): js.Promise[Unit] = js.native
     
-    var shouldAlignLeft: js.Any = js.native
+    /* private */ var shouldAlignLeft: js.Any = js.native
     
     /**
       * Determines whether or not the cancel button should be visible onscreen.
@@ -247,7 +247,7 @@ object searchbarMod {
       * 1. `showCancelButton` is set to `always`.
       * 2. `showCancelButton` is set to `focus`, and the searchbar has been focused.
       */
-    var shouldShowCancelButton: js.Any = js.native
+    /* private */ var shouldShowCancelButton: js.Any = js.native
     
     /**
       * Sets the behavior for the cancel button. Defaults to `"never"`.

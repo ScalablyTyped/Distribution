@@ -22,25 +22,19 @@ trait SchemaResult extends StObject {
 }
 object SchemaResult {
   
-  @scala.inline
-  def apply(): SchemaResult = {
+  inline def apply(): SchemaResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResult]
   }
   
-  @scala.inline
-  implicit class SchemaResultMutableBuilder[Self <: SchemaResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResult](x: Self) {
     
-    @scala.inline
-    def setUndefined(value: SchemaEmpty): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+    inline def setUndefined(value: SchemaEmpty): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefinedUndefined: Self = StObject.set(x, "undefined", js.undefined)
+    inline def setUndefinedUndefined: Self = StObject.set(x, "undefined", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

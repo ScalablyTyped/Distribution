@@ -13,22 +13,17 @@ trait SchemaGuestAttributesValue extends StObject {
 }
 object SchemaGuestAttributesValue {
   
-  @scala.inline
-  def apply(): SchemaGuestAttributesValue = {
+  inline def apply(): SchemaGuestAttributesValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGuestAttributesValue]
   }
   
-  @scala.inline
-  implicit class SchemaGuestAttributesValueMutableBuilder[Self <: SchemaGuestAttributesValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGuestAttributesValue](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaGuestAttributesEntry]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaGuestAttributesEntry]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaGuestAttributesEntry*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaGuestAttributesEntry*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

@@ -12,19 +12,15 @@ trait KeyPair extends StObject {
 }
 object KeyPair {
   
-  @scala.inline
-  def apply(privateKey: String, publicKey: String): KeyPair = {
+  inline def apply(privateKey: String, publicKey: String): KeyPair = {
     val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyPair]
   }
   
-  @scala.inline
-  implicit class KeyPairMutableBuilder[Self <: KeyPair] (val x: Self) extends AnyVal {
+  extension [Self <: KeyPair](x: Self) {
     
-    @scala.inline
-    def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
   }
 }

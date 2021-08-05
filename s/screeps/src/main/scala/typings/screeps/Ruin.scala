@@ -42,8 +42,7 @@ trait Ruin
 }
 object Ruin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroyTime: Double,
     effects: js.Array[RoomObjectEffect],
     id: Id[Ruin],
@@ -56,22 +55,16 @@ object Ruin {
     __obj.asInstanceOf[Ruin]
   }
   
-  @scala.inline
-  implicit class RuinMutableBuilder[Self <: Ruin] (val x: Self) extends AnyVal {
+  extension [Self <: Ruin](x: Self) {
     
-    @scala.inline
-    def setDestroyTime(value: Double): Self = StObject.set(x, "destroyTime", value.asInstanceOf[js.Any])
+    inline def setDestroyTime(value: Double): Self = StObject.set(x, "destroyTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Id[Ruin]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id[Ruin]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStore(value: StoreDefinitionUnlimited): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: StoreDefinitionUnlimited): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructure(value: AnyStructure): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
+    inline def setStructure(value: AnyStructure): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
+    inline def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
   }
 }

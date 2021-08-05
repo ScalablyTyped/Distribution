@@ -56,8 +56,7 @@ trait Typeofgcm extends StObject {
 }
 object Typeofgcm {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MAX_MESSAGE_SIZE: integer,
     onMessage: Event[js.Function1[/* message */ IncomingMessage, Unit]],
     onMessagesDeleted: Event[js.Function0[Unit]],
@@ -70,28 +69,20 @@ object Typeofgcm {
     __obj.asInstanceOf[Typeofgcm]
   }
   
-  @scala.inline
-  implicit class TypeofgcmMutableBuilder[Self <: Typeofgcm] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofgcm](x: Self) {
     
-    @scala.inline
-    def setMAX_MESSAGE_SIZE(value: integer): Self = StObject.set(x, "MAX_MESSAGE_SIZE", value.asInstanceOf[js.Any])
+    inline def setMAX_MESSAGE_SIZE(value: integer): Self = StObject.set(x, "MAX_MESSAGE_SIZE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMessage(value: Event[js.Function1[/* message */ IncomingMessage, Unit]]): Self = StObject.set(x, "onMessage", value.asInstanceOf[js.Any])
+    inline def setOnMessage(value: Event[js.Function1[/* message */ IncomingMessage, Unit]]): Self = StObject.set(x, "onMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMessagesDeleted(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onMessagesDeleted", value.asInstanceOf[js.Any])
+    inline def setOnMessagesDeleted(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onMessagesDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSendError(value: Event[js.Function1[/* error */ GcmError, Unit]]): Self = StObject.set(x, "onSendError", value.asInstanceOf[js.Any])
+    inline def setOnSendError(value: Event[js.Function1[/* error */ GcmError, Unit]]): Self = StObject.set(x, "onSendError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegister(value: (js.Array[String], js.Function1[/* registrationId */ String, Unit]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+    inline def setRegister(value: (js.Array[String], js.Function1[/* registrationId */ String, Unit]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSend(value: (OutgoingMessage, js.Function1[/* messageId */ String, Unit]) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+    inline def setSend(value: (OutgoingMessage, js.Function1[/* messageId */ String, Unit]) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnregister(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
+    inline def setUnregister(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
   }
 }

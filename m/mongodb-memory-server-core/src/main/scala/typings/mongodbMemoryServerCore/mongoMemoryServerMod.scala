@@ -37,10 +37,8 @@ object mongoMemoryServerMod {
       * Create an Mongo-Memory-Sever Instance that can be awaited
       * @param opts Mongo-Memory-Sever Options
       */
-    @scala.inline
-    def create(): js.Promise[MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[MongoMemoryServer]]
-    @scala.inline
-    def create(opts: MongoMemoryServerOptsT): js.Promise[MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MongoMemoryServer]]
+    inline def create(): js.Promise[MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[MongoMemoryServer]]
+    inline def create(opts: MongoMemoryServerOptsT): js.Promise[MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MongoMemoryServer]]
   }
   
   trait MongoInstanceDataT
@@ -59,8 +57,7 @@ object mongoMemoryServerMod {
   }
   object MongoInstanceDataT {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dbName: String,
       dbPath: String,
       instance: typings.mongodbMemoryServerCore.mongoInstanceMod.default,
@@ -73,23 +70,17 @@ object mongoMemoryServerMod {
       __obj.asInstanceOf[MongoInstanceDataT]
     }
     
-    @scala.inline
-    implicit class MongoInstanceDataTMutableBuilder[Self <: MongoInstanceDataT] (val x: Self) extends AnyVal {
+    extension [Self <: MongoInstanceDataT](x: Self) {
       
-      @scala.inline
-      def setChildProcess(value: ChildProcess): Self = StObject.set(x, "childProcess", value.asInstanceOf[js.Any])
+      inline def setChildProcess(value: ChildProcess): Self = StObject.set(x, "childProcess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildProcessUndefined: Self = StObject.set(x, "childProcess", js.undefined)
+      inline def setChildProcessUndefined: Self = StObject.set(x, "childProcess", js.undefined)
       
-      @scala.inline
-      def setDbPath(value: String): Self = StObject.set(x, "dbPath", value.asInstanceOf[js.Any])
+      inline def setDbPath(value: String): Self = StObject.set(x, "dbPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstance(value: typings.mongodbMemoryServerCore.mongoInstanceMod.default): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: typings.mongodbMemoryServerCore.mongoInstanceMod.default): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,38 +169,28 @@ object mongoMemoryServerMod {
   }
   object MongoMemoryServerOptsT {
     
-    @scala.inline
-    def apply(): MongoMemoryServerOptsT = {
+    inline def apply(): MongoMemoryServerOptsT = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MongoMemoryServerOptsT]
     }
     
-    @scala.inline
-    implicit class MongoMemoryServerOptsTMutableBuilder[Self <: MongoMemoryServerOptsT] (val x: Self) extends AnyVal {
+    extension [Self <: MongoMemoryServerOptsT](x: Self) {
       
-      @scala.inline
-      def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+      inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+      inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
       
-      @scala.inline
-      def setBinary(value: MongoBinaryOpts): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: MongoBinaryOpts): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+      inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
       
-      @scala.inline
-      def setInstance(value: MongoMemoryInstancePropT): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: MongoMemoryInstancePropT): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+      inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
       
-      @scala.inline
-      def setSpawn(value: SpawnOptions): Self = StObject.set(x, "spawn", value.asInstanceOf[js.Any])
+      inline def setSpawn(value: SpawnOptions): Self = StObject.set(x, "spawn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpawnUndefined: Self = StObject.set(x, "spawn", js.undefined)
+      inline def setSpawnUndefined: Self = StObject.set(x, "spawn", js.undefined)
     }
   }
   
@@ -233,50 +214,36 @@ object mongoMemoryServerMod {
   }
   object StartupInstanceData {
     
-    @scala.inline
-    def apply(dbName: String, ip: String, port: Double, storageEngine: StorageEngineT): StartupInstanceData = {
+    inline def apply(dbName: String, ip: String, port: Double, storageEngine: StorageEngineT): StartupInstanceData = {
       val __obj = js.Dynamic.literal(dbName = dbName.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], storageEngine = storageEngine.asInstanceOf[js.Any])
       __obj.asInstanceOf[StartupInstanceData]
     }
     
-    @scala.inline
-    implicit class StartupInstanceDataMutableBuilder[Self <: StartupInstanceData] (val x: Self) extends AnyVal {
+    extension [Self <: StartupInstanceData](x: Self) {
       
-      @scala.inline
-      def setDbName(value: String): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
+      inline def setDbName(value: String): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbPath(value: String): Self = StObject.set(x, "dbPath", value.asInstanceOf[js.Any])
+      inline def setDbPath(value: String): Self = StObject.set(x, "dbPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbPathUndefined: Self = StObject.set(x, "dbPath", js.undefined)
+      inline def setDbPathUndefined: Self = StObject.set(x, "dbPath", js.undefined)
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplSet(value: String): Self = StObject.set(x, "replSet", value.asInstanceOf[js.Any])
+      inline def setReplSet(value: String): Self = StObject.set(x, "replSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplSetUndefined: Self = StObject.set(x, "replSet", js.undefined)
+      inline def setReplSetUndefined: Self = StObject.set(x, "replSet", js.undefined)
       
-      @scala.inline
-      def setStorageEngine(value: StorageEngineT): Self = StObject.set(x, "storageEngine", value.asInstanceOf[js.Any])
+      inline def setStorageEngine(value: StorageEngineT): Self = StObject.set(x, "storageEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTmpDir(value: DirResult): Self = StObject.set(x, "tmpDir", value.asInstanceOf[js.Any])
+      inline def setTmpDir(value: DirResult): Self = StObject.set(x, "tmpDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTmpDirUndefined: Self = StObject.set(x, "tmpDir", js.undefined)
+      inline def setTmpDirUndefined: Self = StObject.set(x, "tmpDir", js.undefined)
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     }
   }
 }

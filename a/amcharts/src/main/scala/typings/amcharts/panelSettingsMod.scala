@@ -366,8 +366,7 @@ object panelSettingsMod {
   }
   object PanelsSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       angle: Double,
       backgroundAlpha: Double,
       backgroundColor: String,
@@ -398,89 +397,61 @@ object panelSettingsMod {
       __obj.asInstanceOf[PanelsSettings]
     }
     
-    @scala.inline
-    implicit class PanelsSettingsMutableBuilder[Self <: PanelsSettings] (val x: Self) extends AnyVal {
+    extension [Self <: PanelsSettings](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundAlpha(value: Double): Self = StObject.set(x, "backgroundAlpha", value.asInstanceOf[js.Any])
+      inline def setBackgroundAlpha(value: Double): Self = StObject.set(x, "backgroundAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnSpacing(value: Double): Self = StObject.set(x, "columnSpacing", value.asInstanceOf[js.Any])
+      inline def setColumnSpacing(value: Double): Self = StObject.set(x, "columnSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+      inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepth3D(value: Double): Self = StObject.set(x, "depth3D", value.asInstanceOf[js.Any])
+      inline def setDepth3D(value: Double): Self = StObject.set(x, "depth3D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanEventsEnabled(value: Boolean): Self = StObject.set(x, "panEventsEnabled", value.asInstanceOf[js.Any])
+      inline def setPanEventsEnabled(value: Boolean): Self = StObject.set(x, "panEventsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelSpacing(value: Double): Self = StObject.set(x, "panelSpacing", value.asInstanceOf[js.Any])
+      inline def setPanelSpacing(value: Double): Self = StObject.set(x, "panelSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlotAreaBorderAlpha(value: Double): Self = StObject.set(x, "plotAreaBorderAlpha", value.asInstanceOf[js.Any])
+      inline def setPlotAreaBorderAlpha(value: Double): Self = StObject.set(x, "plotAreaBorderAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlotAreaBorderColor(value: String): Self = StObject.set(x, "plotAreaBorderColor", value.asInstanceOf[js.Any])
+      inline def setPlotAreaBorderColor(value: String): Self = StObject.set(x, "plotAreaBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlotAreaFillAlphas(value: Double): Self = StObject.set(x, "plotAreaFillAlphas", value.asInstanceOf[js.Any])
+      inline def setPlotAreaFillAlphas(value: Double): Self = StObject.set(x, "plotAreaFillAlphas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlotAreaFillColors(value: js.Any): Self = StObject.set(x, "plotAreaFillColors", value.asInstanceOf[js.Any])
+      inline def setPlotAreaFillColors(value: js.Any): Self = StObject.set(x, "plotAreaFillColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixesOfBigNumbers(value: js.Array[js.Any]): Self = StObject.set(x, "prefixesOfBigNumbers", value.asInstanceOf[js.Any])
+      inline def setPrefixesOfBigNumbers(value: js.Array[js.Any]): Self = StObject.set(x, "prefixesOfBigNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixesOfBigNumbersVarargs(value: js.Any*): Self = StObject.set(x, "prefixesOfBigNumbers", js.Array(value :_*))
+      inline def setPrefixesOfBigNumbersVarargs(value: js.Any*): Self = StObject.set(x, "prefixesOfBigNumbers", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefixesOfSmallNumbers(value: js.Array[js.Any]): Self = StObject.set(x, "prefixesOfSmallNumbers", value.asInstanceOf[js.Any])
+      inline def setPrefixesOfSmallNumbers(value: js.Array[js.Any]): Self = StObject.set(x, "prefixesOfSmallNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixesOfSmallNumbersVarargs(value: js.Any*): Self = StObject.set(x, "prefixesOfSmallNumbers", js.Array(value :_*))
+      inline def setPrefixesOfSmallNumbersVarargs(value: js.Any*): Self = StObject.set(x, "prefixesOfSmallNumbers", js.Array(value :_*))
       
-      @scala.inline
-      def setSequencedAnimation(value: Boolean): Self = StObject.set(x, "sequencedAnimation", value.asInstanceOf[js.Any])
+      inline def setSequencedAnimation(value: Boolean): Self = StObject.set(x, "sequencedAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAlpha(value: Double): Self = StObject.set(x, "startAlpha", value.asInstanceOf[js.Any])
+      inline def setStartAlpha(value: Double): Self = StObject.set(x, "startAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDuration(value: Double): Self = StObject.set(x, "startDuration", value.asInstanceOf[js.Any])
+      inline def setStartDuration(value: Double): Self = StObject.set(x, "startDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartEffect(value: String): Self = StObject.set(x, "startEffect", value.asInstanceOf[js.Any])
+      inline def setStartEffect(value: String): Self = StObject.set(x, "startEffect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePrefixes(value: Boolean): Self = StObject.set(x, "usePrefixes", value.asInstanceOf[js.Any])
+      inline def setUsePrefixes(value: Boolean): Self = StObject.set(x, "usePrefixes", value.asInstanceOf[js.Any])
     }
   }
 }

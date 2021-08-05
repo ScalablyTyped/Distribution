@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArangoSearchViewConsolidationType extends StObject
 object ArangoSearchViewConsolidationType {
   
-  @scala.inline
-  def bytes: typings.arangodb.arangodbStrings.bytes = "bytes".asInstanceOf[typings.arangodb.arangodbStrings.bytes]
+  inline def bytes: typings.arangodb.arangodbStrings.bytes = "bytes".asInstanceOf[typings.arangodb.arangodbStrings.bytes]
   
-  @scala.inline
-  def bytes_accum: typings.arangodb.arangodbStrings.bytes_accum = "bytes_accum".asInstanceOf[typings.arangodb.arangodbStrings.bytes_accum]
+  inline def bytes_accum: typings.arangodb.arangodbStrings.bytes_accum = "bytes_accum".asInstanceOf[typings.arangodb.arangodbStrings.bytes_accum]
   
-  @scala.inline
-  def count: typings.arangodb.arangodbStrings.count = "count".asInstanceOf[typings.arangodb.arangodbStrings.count]
+  inline def count: typings.arangodb.arangodbStrings.count = "count".asInstanceOf[typings.arangodb.arangodbStrings.count]
   
-  @scala.inline
-  def fill: typings.arangodb.arangodbStrings.fill = "fill".asInstanceOf[typings.arangodb.arangodbStrings.fill]
+  inline def fill: typings.arangodb.arangodbStrings.fill = "fill".asInstanceOf[typings.arangodb.arangodbStrings.fill]
 }

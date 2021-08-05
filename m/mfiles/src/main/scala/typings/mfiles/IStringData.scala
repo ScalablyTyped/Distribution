@@ -15,22 +15,17 @@ trait IStringData extends StObject {
 }
 object IStringData {
   
-  @scala.inline
-  def apply(AsString: String, Clone: () => IStringData, StringDataType: MFStringDataType): IStringData = {
+  inline def apply(AsString: String, Clone: () => IStringData, StringDataType: MFStringDataType): IStringData = {
     val __obj = js.Dynamic.literal(AsString = AsString.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), StringDataType = StringDataType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStringData]
   }
   
-  @scala.inline
-  implicit class IStringDataMutableBuilder[Self <: IStringData] (val x: Self) extends AnyVal {
+  extension [Self <: IStringData](x: Self) {
     
-    @scala.inline
-    def setAsString(value: String): Self = StObject.set(x, "AsString", value.asInstanceOf[js.Any])
+    inline def setAsString(value: String): Self = StObject.set(x, "AsString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IStringData): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IStringData): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStringDataType(value: MFStringDataType): Self = StObject.set(x, "StringDataType", value.asInstanceOf[js.Any])
+    inline def setStringDataType(value: MFStringDataType): Self = StObject.set(x, "StringDataType", value.asInstanceOf[js.Any])
   }
 }

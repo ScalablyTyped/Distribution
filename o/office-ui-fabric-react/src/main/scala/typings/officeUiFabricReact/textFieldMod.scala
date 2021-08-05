@@ -29,8 +29,7 @@ object textFieldMod {
     @JSImport("office-ui-fabric-react/lib/components/TextField", "MaskedTextField.defaultProps")
     @js.native
     def defaultProps: IMaskedTextFieldProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IMaskedTextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IMaskedTextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/components/TextField", "TextField")
@@ -53,8 +52,7 @@ object textFieldMod {
     @JSImport("office-ui-fabric-react/lib/components/TextField", "TextFieldBase.defaultProps")
     @js.native
     def defaultProps: ITextFieldProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ITextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ITextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait ITextField
@@ -62,8 +60,7 @@ object textFieldMod {
        with typings.officeUiFabricReact.textFieldTypesMod.ITextField
   object ITextField {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blur: () => Unit,
       focus: () => Unit,
       select: () => Unit,

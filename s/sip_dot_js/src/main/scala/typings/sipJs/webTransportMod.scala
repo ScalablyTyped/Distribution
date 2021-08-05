@@ -25,7 +25,6 @@ object webTransportMod {
     @JSImport("sip.js/lib/platform/web/transport", "Transport.defaultOptions")
     @js.native
     def defaultOptions: js.Any = js.native
-    @scala.inline
-    def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
   }
 }

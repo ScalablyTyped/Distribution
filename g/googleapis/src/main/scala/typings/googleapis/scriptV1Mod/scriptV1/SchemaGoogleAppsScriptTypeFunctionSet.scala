@@ -16,22 +16,17 @@ trait SchemaGoogleAppsScriptTypeFunctionSet extends StObject {
 }
 object SchemaGoogleAppsScriptTypeFunctionSet {
   
-  @scala.inline
-  def apply(): SchemaGoogleAppsScriptTypeFunctionSet = {
+  inline def apply(): SchemaGoogleAppsScriptTypeFunctionSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleAppsScriptTypeFunctionSet]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleAppsScriptTypeFunctionSetMutableBuilder[Self <: SchemaGoogleAppsScriptTypeFunctionSet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleAppsScriptTypeFunctionSet](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[SchemaGoogleAppsScriptTypeFunction]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[SchemaGoogleAppsScriptTypeFunction]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: SchemaGoogleAppsScriptTypeFunction*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SchemaGoogleAppsScriptTypeFunction*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

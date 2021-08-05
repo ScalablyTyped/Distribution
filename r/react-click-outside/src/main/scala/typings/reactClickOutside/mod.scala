@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[C /* <: ComponentClass[js.Any, ComponentState] */](wrappedComponent: C): C = ^.asInstanceOf[js.Dynamic].apply(wrappedComponent.asInstanceOf[js.Any]).asInstanceOf[C]
+  inline def apply[C /* <: ComponentClass[js.Any, ComponentState] */](wrappedComponent: C): C = ^.asInstanceOf[js.Dynamic].apply(wrappedComponent.asInstanceOf[js.Any]).asInstanceOf[C]
   
   @JSImport("react-click-outside", JSImport.Namespace)
   @js.native

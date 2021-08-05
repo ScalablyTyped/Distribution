@@ -16,37 +16,27 @@ trait And extends StObject {
 }
 object And {
   
-  @scala.inline
-  def apply(): And = {
+  inline def apply(): And = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[And]
   }
   
-  @scala.inline
-  implicit class AndMutableBuilder[Self <: And] (val x: Self) extends AnyVal {
+  extension [Self <: And](x: Self) {
     
-    @scala.inline
-    def setAnd(value: String): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+    inline def setAnd(value: String): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
+    inline def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
     
-    @scala.inline
-    def setNotAnd(value: String): Self = StObject.set(x, "notAnd", value.asInstanceOf[js.Any])
+    inline def setNotAnd(value: String): Self = StObject.set(x, "notAnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotAndUndefined: Self = StObject.set(x, "notAnd", js.undefined)
+    inline def setNotAndUndefined: Self = StObject.set(x, "notAnd", js.undefined)
     
-    @scala.inline
-    def setNotOr(value: String): Self = StObject.set(x, "notOr", value.asInstanceOf[js.Any])
+    inline def setNotOr(value: String): Self = StObject.set(x, "notOr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotOrUndefined: Self = StObject.set(x, "notOr", js.undefined)
+    inline def setNotOrUndefined: Self = StObject.set(x, "notOr", js.undefined)
     
-    @scala.inline
-    def setOr(value: String): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
+    inline def setOr(value: String): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrUndefined: Self = StObject.set(x, "or", js.undefined)
+    inline def setOrUndefined: Self = StObject.set(x, "or", js.undefined)
   }
 }

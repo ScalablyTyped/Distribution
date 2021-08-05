@@ -23,31 +23,23 @@ trait GroupCollapsingEventUIParam extends StObject {
 }
 object GroupCollapsingEventUIParam {
   
-  @scala.inline
-  def apply(): GroupCollapsingEventUIParam = {
+  inline def apply(): GroupCollapsingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupCollapsingEventUIParam]
   }
   
-  @scala.inline
-  implicit class GroupCollapsingEventUIParamMutableBuilder[Self <: GroupCollapsingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: GroupCollapsingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait SourceDir extends StObject {
 }
 object SourceDir {
   
-  @scala.inline
-  def apply(sourceDir: String): SourceDir = {
+  inline def apply(sourceDir: String): SourceDir = {
     val __obj = js.Dynamic.literal(sourceDir = sourceDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceDir]
   }
   
-  @scala.inline
-  implicit class SourceDirMutableBuilder[Self <: SourceDir] (val x: Self) extends AnyVal {
+  extension [Self <: SourceDir](x: Self) {
     
-    @scala.inline
-    def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
+    inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
   }
 }

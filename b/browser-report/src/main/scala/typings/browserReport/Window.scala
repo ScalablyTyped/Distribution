@@ -13,8 +13,7 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     browserReport: js.Function2[/* error */ ErrorEvent, /* report */ ReportResult, js.Any] => Unit,
     browserReportSync: () => ReportResult
   ): Window = {
@@ -22,13 +21,10 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setBrowserReport(value: js.Function2[/* error */ ErrorEvent, /* report */ ReportResult, js.Any] => Unit): Self = StObject.set(x, "browserReport", js.Any.fromFunction1(value))
+    inline def setBrowserReport(value: js.Function2[/* error */ ErrorEvent, /* report */ ReportResult, js.Any] => Unit): Self = StObject.set(x, "browserReport", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBrowserReportSync(value: () => ReportResult): Self = StObject.set(x, "browserReportSync", js.Any.fromFunction0(value))
+    inline def setBrowserReportSync(value: () => ReportResult): Self = StObject.set(x, "browserReportSync", js.Any.fromFunction0(value))
   }
 }

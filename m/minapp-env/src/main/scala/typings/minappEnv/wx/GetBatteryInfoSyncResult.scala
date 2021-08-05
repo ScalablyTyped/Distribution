@@ -14,19 +14,15 @@ trait GetBatteryInfoSyncResult extends StObject {
 }
 object GetBatteryInfoSyncResult {
   
-  @scala.inline
-  def apply(isCharging: Boolean, level: String): GetBatteryInfoSyncResult = {
+  inline def apply(isCharging: Boolean, level: String): GetBatteryInfoSyncResult = {
     val __obj = js.Dynamic.literal(isCharging = isCharging.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBatteryInfoSyncResult]
   }
   
-  @scala.inline
-  implicit class GetBatteryInfoSyncResultMutableBuilder[Self <: GetBatteryInfoSyncResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBatteryInfoSyncResult](x: Self) {
     
-    @scala.inline
-    def setIsCharging(value: Boolean): Self = StObject.set(x, "isCharging", value.asInstanceOf[js.Any])
+    inline def setIsCharging(value: Boolean): Self = StObject.set(x, "isCharging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

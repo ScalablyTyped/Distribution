@@ -28,34 +28,25 @@ trait ListDomainsInput extends StObject {
 }
 object ListDomainsInput {
   
-  @scala.inline
-  def apply(registrationStatus: RegistrationStatus): ListDomainsInput = {
+  inline def apply(registrationStatus: RegistrationStatus): ListDomainsInput = {
     val __obj = js.Dynamic.literal(registrationStatus = registrationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDomainsInput]
   }
   
-  @scala.inline
-  implicit class ListDomainsInputMutableBuilder[Self <: ListDomainsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListDomainsInput](x: Self) {
     
-    @scala.inline
-    def setMaximumPageSize(value: PageSize): Self = StObject.set(x, "maximumPageSize", value.asInstanceOf[js.Any])
+    inline def setMaximumPageSize(value: PageSize): Self = StObject.set(x, "maximumPageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumPageSizeUndefined: Self = StObject.set(x, "maximumPageSize", js.undefined)
+    inline def setMaximumPageSizeUndefined: Self = StObject.set(x, "maximumPageSize", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRegistrationStatus(value: RegistrationStatus): Self = StObject.set(x, "registrationStatus", value.asInstanceOf[js.Any])
+    inline def setRegistrationStatus(value: RegistrationStatus): Self = StObject.set(x, "registrationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseOrder(value: ReverseOrder): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
+    inline def setReverseOrder(value: ReverseOrder): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
+    inline def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
   }
 }

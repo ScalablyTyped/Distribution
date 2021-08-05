@@ -21,26 +21,20 @@ object MicrosoftJQueryUnobtrusiveValidation {
   }
   object Adapter {
     
-    @scala.inline
-    def apply(adapt: js.Function, name: String, params: js.Array[String]): Adapter = {
+    inline def apply(adapt: js.Function, name: String, params: js.Array[String]): Adapter = {
       val __obj = js.Dynamic.literal(adapt = adapt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[Adapter]
     }
     
-    @scala.inline
-    implicit class AdapterMutableBuilder[Self <: Adapter] (val x: Self) extends AnyVal {
+    extension [Self <: Adapter](x: Self) {
       
-      @scala.inline
-      def setAdapt(value: js.Function): Self = StObject.set(x, "adapt", value.asInstanceOf[js.Any])
+      inline def setAdapt(value: js.Function): Self = StObject.set(x, "adapt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
     }
   }
   

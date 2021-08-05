@@ -13,17 +13,14 @@ object anon {
   }
   object Attach {
     
-    @scala.inline
-    def apply(attach: Response_[js.Any] => Unit): Attach = {
+    inline def apply(attach: Response_[js.Any] => Unit): Attach = {
       val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach))
       __obj.asInstanceOf[Attach]
     }
     
-    @scala.inline
-    implicit class AttachMutableBuilder[Self <: Attach] (val x: Self) extends AnyVal {
+    extension [Self <: Attach](x: Self) {
       
-      @scala.inline
-      def setAttach(value: Response_[js.Any] => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
+      inline def setAttach(value: Response_[js.Any] => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     }
   }
 }

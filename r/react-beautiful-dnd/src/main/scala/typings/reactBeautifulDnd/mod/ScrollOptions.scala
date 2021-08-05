@@ -10,16 +10,13 @@ trait ScrollOptions extends StObject {
 }
 object ScrollOptions {
   
-  @scala.inline
-  def apply(shouldPublishImmediately: Boolean): ScrollOptions = {
+  inline def apply(shouldPublishImmediately: Boolean): ScrollOptions = {
     val __obj = js.Dynamic.literal(shouldPublishImmediately = shouldPublishImmediately.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollOptions]
   }
   
-  @scala.inline
-  implicit class ScrollOptionsMutableBuilder[Self <: ScrollOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollOptions](x: Self) {
     
-    @scala.inline
-    def setShouldPublishImmediately(value: Boolean): Self = StObject.set(x, "shouldPublishImmediately", value.asInstanceOf[js.Any])
+    inline def setShouldPublishImmediately(value: Boolean): Self = StObject.set(x, "shouldPublishImmediately", value.asInstanceOf[js.Any])
   }
 }

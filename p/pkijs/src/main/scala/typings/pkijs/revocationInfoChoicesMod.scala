@@ -35,13 +35,10 @@ object revocationInfoChoicesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait RevocationInfoChoices extends StObject {
@@ -58,8 +55,7 @@ object revocationInfoChoicesMod {
   }
   object RevocationInfoChoices {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       crls: js.Array[typings.pkijs.certificateRevocationListMod.default],
       fromSchema: js.Any => Unit,
       otherRevocationInfos: js.Array[typings.pkijs.otherRevocationInfoFormatMod.default],
@@ -70,29 +66,21 @@ object revocationInfoChoicesMod {
       __obj.asInstanceOf[RevocationInfoChoices]
     }
     
-    @scala.inline
-    implicit class RevocationInfoChoicesMutableBuilder[Self <: RevocationInfoChoices] (val x: Self) extends AnyVal {
+    extension [Self <: RevocationInfoChoices](x: Self) {
       
-      @scala.inline
-      def setCrls(value: js.Array[typings.pkijs.certificateRevocationListMod.default]): Self = StObject.set(x, "crls", value.asInstanceOf[js.Any])
+      inline def setCrls(value: js.Array[typings.pkijs.certificateRevocationListMod.default]): Self = StObject.set(x, "crls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrlsVarargs(value: typings.pkijs.certificateRevocationListMod.default*): Self = StObject.set(x, "crls", js.Array(value :_*))
+      inline def setCrlsVarargs(value: typings.pkijs.certificateRevocationListMod.default*): Self = StObject.set(x, "crls", js.Array(value :_*))
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOtherRevocationInfos(value: js.Array[typings.pkijs.otherRevocationInfoFormatMod.default]): Self = StObject.set(x, "otherRevocationInfos", value.asInstanceOf[js.Any])
+      inline def setOtherRevocationInfos(value: js.Array[typings.pkijs.otherRevocationInfoFormatMod.default]): Self = StObject.set(x, "otherRevocationInfos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherRevocationInfosVarargs(value: typings.pkijs.otherRevocationInfoFormatMod.default*): Self = StObject.set(x, "otherRevocationInfos", js.Array(value :_*))
+      inline def setOtherRevocationInfosVarargs(value: typings.pkijs.otherRevocationInfoFormatMod.default*): Self = StObject.set(x, "otherRevocationInfos", js.Array(value :_*))
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

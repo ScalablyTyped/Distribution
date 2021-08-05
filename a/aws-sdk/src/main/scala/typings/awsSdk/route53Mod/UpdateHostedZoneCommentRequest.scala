@@ -18,22 +18,17 @@ trait UpdateHostedZoneCommentRequest extends StObject {
 }
 object UpdateHostedZoneCommentRequest {
   
-  @scala.inline
-  def apply(Id: ResourceId): UpdateHostedZoneCommentRequest = {
+  inline def apply(Id: ResourceId): UpdateHostedZoneCommentRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateHostedZoneCommentRequest]
   }
   
-  @scala.inline
-  implicit class UpdateHostedZoneCommentRequestMutableBuilder[Self <: UpdateHostedZoneCommentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateHostedZoneCommentRequest](x: Self) {
     
-    @scala.inline
-    def setComment(value: ResourceDescription): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: ResourceDescription): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

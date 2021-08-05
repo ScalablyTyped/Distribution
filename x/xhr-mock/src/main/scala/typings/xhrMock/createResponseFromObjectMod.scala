@@ -12,6 +12,5 @@ object createResponseFromObjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createResponseFromObject(`object`: MockObject): default = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponseFromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[default]
+  inline def createResponseFromObject(`object`: MockObject): default = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponseFromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[default]
 }

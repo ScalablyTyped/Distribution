@@ -24,34 +24,25 @@ trait SchemaPostalCodeGroup extends StObject {
 }
 object SchemaPostalCodeGroup {
   
-  @scala.inline
-  def apply(): SchemaPostalCodeGroup = {
+  inline def apply(): SchemaPostalCodeGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPostalCodeGroup]
   }
   
-  @scala.inline
-  implicit class SchemaPostalCodeGroupMutableBuilder[Self <: SchemaPostalCodeGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPostalCodeGroup](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPostalCodeRanges(value: js.Array[SchemaPostalCodeRange]): Self = StObject.set(x, "postalCodeRanges", value.asInstanceOf[js.Any])
+    inline def setPostalCodeRanges(value: js.Array[SchemaPostalCodeRange]): Self = StObject.set(x, "postalCodeRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodeRangesUndefined: Self = StObject.set(x, "postalCodeRanges", js.undefined)
+    inline def setPostalCodeRangesUndefined: Self = StObject.set(x, "postalCodeRanges", js.undefined)
     
-    @scala.inline
-    def setPostalCodeRangesVarargs(value: SchemaPostalCodeRange*): Self = StObject.set(x, "postalCodeRanges", js.Array(value :_*))
+    inline def setPostalCodeRangesVarargs(value: SchemaPostalCodeRange*): Self = StObject.set(x, "postalCodeRanges", js.Array(value :_*))
   }
 }

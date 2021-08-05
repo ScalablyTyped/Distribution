@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(template: String): URITemplate = ^.asInstanceOf[js.Dynamic].apply(template.asInstanceOf[js.Any]).asInstanceOf[URITemplate]
+  inline def apply(template: String): URITemplate = ^.asInstanceOf[js.Dynamic].apply(template.asInstanceOf[js.Any]).asInstanceOf[URITemplate]
   
   @JSImport("uri-templates", JSImport.Namespace)
   @js.native

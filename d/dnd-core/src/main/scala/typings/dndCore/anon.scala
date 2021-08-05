@@ -14,23 +14,18 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setHandlerIds(value: js.Array[Identifier]): Self = StObject.set(x, "handlerIds", value.asInstanceOf[js.Any])
+      inline def setHandlerIds(value: js.Array[Identifier]): Self = StObject.set(x, "handlerIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerIdsUndefined: Self = StObject.set(x, "handlerIds", js.undefined)
+      inline def setHandlerIdsUndefined: Self = StObject.set(x, "handlerIds", js.undefined)
       
-      @scala.inline
-      def setHandlerIdsVarargs(value: Identifier*): Self = StObject.set(x, "handlerIds", js.Array(value :_*))
+      inline def setHandlerIdsVarargs(value: Identifier*): Self = StObject.set(x, "handlerIds", js.Array(value :_*))
     }
   }
   
@@ -40,20 +35,16 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(): `1` = {
+    inline def apply(): `1` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
+      inline def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
+      inline def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
     }
   }
   
@@ -65,20 +56,16 @@ object anon {
   }
   object ClientOffset {
     
-    @scala.inline
-    def apply(clientOffset: XYCoord, sourceClientOffset: XYCoord): ClientOffset = {
+    inline def apply(clientOffset: XYCoord, sourceClientOffset: XYCoord): ClientOffset = {
       val __obj = js.Dynamic.literal(clientOffset = clientOffset.asInstanceOf[js.Any], sourceClientOffset = sourceClientOffset.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientOffset]
     }
     
-    @scala.inline
-    implicit class ClientOffsetMutableBuilder[Self <: ClientOffset] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOffset](x: Self) {
       
-      @scala.inline
-      def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
+      inline def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceClientOffset(value: XYCoord): Self = StObject.set(x, "sourceClientOffset", value.asInstanceOf[js.Any])
+      inline def setSourceClientOffset(value: XYCoord): Self = StObject.set(x, "sourceClientOffset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,8 +87,7 @@ object anon {
   }
   object DropResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dropResult: js.Any,
       isSourcePublic: Boolean,
       item: js.Any,
@@ -114,35 +100,25 @@ object anon {
       __obj.asInstanceOf[DropResult]
     }
     
-    @scala.inline
-    implicit class DropResultMutableBuilder[Self <: DropResult] (val x: Self) extends AnyVal {
+    extension [Self <: DropResult](x: Self) {
       
-      @scala.inline
-      def setDropResult(value: js.Any): Self = StObject.set(x, "dropResult", value.asInstanceOf[js.Any])
+      inline def setDropResult(value: js.Any): Self = StObject.set(x, "dropResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSourcePublic(value: Boolean): Self = StObject.set(x, "isSourcePublic", value.asInstanceOf[js.Any])
+      inline def setIsSourcePublic(value: Boolean): Self = StObject.set(x, "isSourcePublic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemType(value: Identifier | js.Array[Identifier]): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+      inline def setItemType(value: Identifier | js.Array[Identifier]): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemTypeVarargs(value: Identifier*): Self = StObject.set(x, "itemType", js.Array(value :_*))
+      inline def setItemTypeVarargs(value: Identifier*): Self = StObject.set(x, "itemType", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+      inline def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+      inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIds(value: js.Array[String]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
+      inline def setTargetIds(value: js.Array[String]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIdsVarargs(value: String*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
+      inline def setTargetIdsVarargs(value: String*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
     }
   }
   
@@ -152,23 +128,18 @@ object anon {
   }
   object HandlerIds {
     
-    @scala.inline
-    def apply(): HandlerIds = {
+    inline def apply(): HandlerIds = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HandlerIds]
     }
     
-    @scala.inline
-    implicit class HandlerIdsMutableBuilder[Self <: HandlerIds] (val x: Self) extends AnyVal {
+    extension [Self <: HandlerIds](x: Self) {
       
-      @scala.inline
-      def setHandlerIds(value: js.Array[String]): Self = StObject.set(x, "handlerIds", value.asInstanceOf[js.Any])
+      inline def setHandlerIds(value: js.Array[String]): Self = StObject.set(x, "handlerIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerIdsUndefined: Self = StObject.set(x, "handlerIds", js.undefined)
+      inline def setHandlerIdsUndefined: Self = StObject.set(x, "handlerIds", js.undefined)
       
-      @scala.inline
-      def setHandlerIdsVarargs(value: String*): Self = StObject.set(x, "handlerIds", js.Array(value :_*))
+      inline def setHandlerIdsVarargs(value: String*): Self = StObject.set(x, "handlerIds", js.Array(value :_*))
     }
   }
   
@@ -178,17 +149,14 @@ object anon {
   }
   object Shallow {
     
-    @scala.inline
-    def apply(shallow: Boolean): Shallow = {
+    inline def apply(shallow: Boolean): Shallow = {
       val __obj = js.Dynamic.literal(shallow = shallow.asInstanceOf[js.Any])
       __obj.asInstanceOf[Shallow]
     }
     
-    @scala.inline
-    implicit class ShallowMutableBuilder[Self <: Shallow] (val x: Self) extends AnyVal {
+    extension [Self <: Shallow](x: Self) {
       
-      @scala.inline
-      def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
+      inline def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
     }
   }
 }

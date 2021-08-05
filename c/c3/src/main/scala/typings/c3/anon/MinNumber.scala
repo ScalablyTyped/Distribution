@@ -12,19 +12,15 @@ trait MinNumber extends StObject {
 }
 object MinNumber {
   
-  @scala.inline
-  def apply(max: Double, min: Double): MinNumber = {
+  inline def apply(max: Double, min: Double): MinNumber = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinNumber]
   }
   
-  @scala.inline
-  implicit class MinNumberMutableBuilder[Self <: MinNumber] (val x: Self) extends AnyVal {
+  extension [Self <: MinNumber](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait PlannerBucketTaskBoardTaskFormat
 }
 object PlannerBucketTaskBoardTaskFormat {
   
-  @scala.inline
-  def apply(): PlannerBucketTaskBoardTaskFormat = {
+  inline def apply(): PlannerBucketTaskBoardTaskFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlannerBucketTaskBoardTaskFormat]
   }
   
-  @scala.inline
-  implicit class PlannerBucketTaskBoardTaskFormatMutableBuilder[Self <: PlannerBucketTaskBoardTaskFormat] (val x: Self) extends AnyVal {
+  extension [Self <: PlannerBucketTaskBoardTaskFormat](x: Self) {
     
-    @scala.inline
-    def setOrderHint(value: NullableOption[String]): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
+    inline def setOrderHint(value: NullableOption[String]): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderHintNull: Self = StObject.set(x, "orderHint", null)
+    inline def setOrderHintNull: Self = StObject.set(x, "orderHint", null)
     
-    @scala.inline
-    def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
+    inline def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
   }
 }

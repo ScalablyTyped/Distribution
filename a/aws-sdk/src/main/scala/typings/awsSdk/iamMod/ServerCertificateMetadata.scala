@@ -38,8 +38,7 @@ trait ServerCertificateMetadata extends StObject {
 }
 object ServerCertificateMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Arn: arnType,
     Path: pathType,
     ServerCertificateId: idType,
@@ -49,31 +48,22 @@ object ServerCertificateMetadata {
     __obj.asInstanceOf[ServerCertificateMetadata]
   }
   
-  @scala.inline
-  implicit class ServerCertificateMetadataMutableBuilder[Self <: ServerCertificateMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ServerCertificateMetadata](x: Self) {
     
-    @scala.inline
-    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiration(value: dateType): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: dateType): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
+    inline def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
     
-    @scala.inline
-    def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCertificateId(value: idType): Self = StObject.set(x, "ServerCertificateId", value.asInstanceOf[js.Any])
+    inline def setServerCertificateId(value: idType): Self = StObject.set(x, "ServerCertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "ServerCertificateName", value.asInstanceOf[js.Any])
+    inline def setServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "ServerCertificateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadDate(value: dateType): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
+    inline def setUploadDate(value: dateType): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadDateUndefined: Self = StObject.set(x, "UploadDate", js.undefined)
+    inline def setUploadDateUndefined: Self = StObject.set(x, "UploadDate", js.undefined)
   }
 }

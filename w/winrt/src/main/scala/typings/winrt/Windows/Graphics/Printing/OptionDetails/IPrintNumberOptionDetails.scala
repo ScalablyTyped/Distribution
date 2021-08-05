@@ -14,8 +14,7 @@ trait IPrintNumberOptionDetails
 }
 object IPrintNumberOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorText: String,
     maxValue: Double,
     minValue: Double,
@@ -29,13 +28,10 @@ object IPrintNumberOptionDetails {
     __obj.asInstanceOf[IPrintNumberOptionDetails]
   }
   
-  @scala.inline
-  implicit class IPrintNumberOptionDetailsMutableBuilder[Self <: IPrintNumberOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintNumberOptionDetails](x: Self) {
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
   }
 }

@@ -21,25 +21,19 @@ trait SchemaParameterValidation extends StObject {
 }
 object SchemaParameterValidation {
   
-  @scala.inline
-  def apply(): SchemaParameterValidation = {
+  inline def apply(): SchemaParameterValidation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaParameterValidation]
   }
   
-  @scala.inline
-  implicit class SchemaParameterValidationMutableBuilder[Self <: SchemaParameterValidation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaParameterValidation](x: Self) {
     
-    @scala.inline
-    def setRegex(value: SchemaRegexValidation): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: SchemaRegexValidation): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+    inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
     
-    @scala.inline
-    def setValues(value: SchemaValueValidation): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: SchemaValueValidation): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

@@ -32,25 +32,19 @@ trait GoogleActionsV2OrdersOrderState extends StObject {
 }
 object GoogleActionsV2OrdersOrderState {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersOrderState = {
+  inline def apply(): GoogleActionsV2OrdersOrderState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderState]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersOrderStateMutableBuilder[Self <: GoogleActionsV2OrdersOrderState] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersOrderState](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

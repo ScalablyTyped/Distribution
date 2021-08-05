@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaSessionPlaybackState extends StObject
 object MediaSessionPlaybackState {
   
-  @scala.inline
-  def none: typings.wicgMediasession.wicgMediasessionStrings.none = "none".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.none]
+  inline def none: typings.wicgMediasession.wicgMediasessionStrings.none = "none".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.none]
   
-  @scala.inline
-  def paused: typings.wicgMediasession.wicgMediasessionStrings.paused = "paused".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.paused]
+  inline def paused: typings.wicgMediasession.wicgMediasessionStrings.paused = "paused".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.paused]
   
-  @scala.inline
-  def playing: typings.wicgMediasession.wicgMediasessionStrings.playing = "playing".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.playing]
+  inline def playing: typings.wicgMediasession.wicgMediasessionStrings.playing = "playing".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.playing]
 }

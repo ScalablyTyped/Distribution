@@ -29,8 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object IPanel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addElement: (IElement, Double) => js.Any,
     containsErrors: Boolean,
     delete: () => js.Any,
@@ -58,37 +57,26 @@ object IPanel {
     __obj.asInstanceOf[IPanel]
   }
   
-  @scala.inline
-  implicit class IPanelMutableBuilder[Self <: IPanel] (val x: Self) extends AnyVal {
+  extension [Self <: IPanel](x: Self) {
     
-    @scala.inline
-    def setAddElement(value: (IElement, Double) => js.Any): Self = StObject.set(x, "addElement", js.Any.fromFunction2(value))
+    inline def setAddElement(value: (IElement, Double) => js.Any): Self = StObject.set(x, "addElement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setElementWidthChanged(value: IElement => js.Any): Self = StObject.set(x, "elementWidthChanged", js.Any.fromFunction1(value))
+    inline def setElementWidthChanged(value: IElement => js.Any): Self = StObject.set(x, "elementWidthChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElements(value: js.Array[IElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[IElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: IElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: IElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setGetChildrenLayoutType(value: () => String): Self = StObject.set(x, "getChildrenLayoutType", js.Any.fromFunction0(value))
+    inline def setGetChildrenLayoutType(value: () => String): Self = StObject.set(x, "getChildrenLayoutType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetQuestionStartIndex(value: () => String): Self = StObject.set(x, "getQuestionStartIndex", js.Any.fromFunction0(value))
+    inline def setGetQuestionStartIndex(value: () => String): Self = StObject.set(x, "getQuestionStartIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetQuestionTitleLocation(value: () => String): Self = StObject.set(x, "getQuestionTitleLocation", js.Any.fromFunction0(value))
+    inline def setGetQuestionTitleLocation(value: () => String): Self = StObject.set(x, "getQuestionTitleLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndexOf(value: IElement => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+    inline def setIndexOf(value: IElement => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: IPanel): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: IPanel): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveElement(value: IElement => Boolean): Self = StObject.set(x, "removeElement", js.Any.fromFunction1(value))
+    inline def setRemoveElement(value: IElement => Boolean): Self = StObject.set(x, "removeElement", js.Any.fromFunction1(value))
   }
 }

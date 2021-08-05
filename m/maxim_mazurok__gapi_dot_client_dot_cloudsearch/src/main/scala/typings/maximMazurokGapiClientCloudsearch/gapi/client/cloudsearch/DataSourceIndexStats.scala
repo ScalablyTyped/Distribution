@@ -17,28 +17,21 @@ trait DataSourceIndexStats extends StObject {
 }
 object DataSourceIndexStats {
   
-  @scala.inline
-  def apply(): DataSourceIndexStats = {
+  inline def apply(): DataSourceIndexStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceIndexStats]
   }
   
-  @scala.inline
-  implicit class DataSourceIndexStatsMutableBuilder[Self <: DataSourceIndexStats] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceIndexStats](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setItemCountByStatus(value: js.Array[ItemCountByStatus]): Self = StObject.set(x, "itemCountByStatus", value.asInstanceOf[js.Any])
+    inline def setItemCountByStatus(value: js.Array[ItemCountByStatus]): Self = StObject.set(x, "itemCountByStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCountByStatusUndefined: Self = StObject.set(x, "itemCountByStatus", js.undefined)
+    inline def setItemCountByStatusUndefined: Self = StObject.set(x, "itemCountByStatus", js.undefined)
     
-    @scala.inline
-    def setItemCountByStatusVarargs(value: ItemCountByStatus*): Self = StObject.set(x, "itemCountByStatus", js.Array(value :_*))
+    inline def setItemCountByStatusVarargs(value: ItemCountByStatus*): Self = StObject.set(x, "itemCountByStatus", js.Array(value :_*))
   }
 }

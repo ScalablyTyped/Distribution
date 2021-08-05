@@ -12,19 +12,15 @@ trait Ip extends StObject {
 }
 object Ip {
   
-  @scala.inline
-  def apply(ip: String, version: Double): Ip = {
+  inline def apply(ip: String, version: Double): Ip = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ip]
   }
   
-  @scala.inline
-  implicit class IpMutableBuilder[Self <: Ip] (val x: Self) extends AnyVal {
+  extension [Self <: Ip](x: Self) {
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

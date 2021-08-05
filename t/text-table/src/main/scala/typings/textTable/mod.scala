@@ -10,13 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     /** An array of arrays containing strings, numbers, or other printable values. */
   rows: js.Array[js.Array[js.Object]]
   ): String = ^.asInstanceOf[js.Dynamic].apply(rows.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(
+  inline def apply(
     /** An array of arrays containing strings, numbers, or other printable values. */
   rows: js.Array[js.Array[js.Object]],
     /** A configuration object to customize table output. */
@@ -40,35 +38,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlign(value: js.Array[js.UndefOr[l | r | c | Dot | Null]]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: js.Array[js.UndefOr[l | r | c | Dot | Null]]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAlignVarargs(value: (js.UndefOr[l | r | c | Dot | Null])*): Self = StObject.set(x, "align", js.Array(value :_*))
+      inline def setAlignVarargs(value: (js.UndefOr[l | r | c | Dot | Null])*): Self = StObject.set(x, "align", js.Array(value :_*))
       
-      @scala.inline
-      def setHsep(value: String): Self = StObject.set(x, "hsep", value.asInstanceOf[js.Any])
+      inline def setHsep(value: String): Self = StObject.set(x, "hsep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsepUndefined: Self = StObject.set(x, "hsep", js.undefined)
+      inline def setHsepUndefined: Self = StObject.set(x, "hsep", js.undefined)
       
-      @scala.inline
-      def setStringLength(value: /* str */ String => Double): Self = StObject.set(x, "stringLength", js.Any.fromFunction1(value))
+      inline def setStringLength(value: /* str */ String => Double): Self = StObject.set(x, "stringLength", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStringLengthUndefined: Self = StObject.set(x, "stringLength", js.undefined)
+      inline def setStringLengthUndefined: Self = StObject.set(x, "stringLength", js.undefined)
     }
   }
 }

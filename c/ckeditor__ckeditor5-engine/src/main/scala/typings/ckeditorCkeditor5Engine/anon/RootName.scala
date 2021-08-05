@@ -10,19 +10,15 @@ trait RootName extends StObject {
 }
 object RootName {
   
-  @scala.inline
-  def apply(): RootName = {
+  inline def apply(): RootName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RootName]
   }
   
-  @scala.inline
-  implicit class RootNameMutableBuilder[Self <: RootName] (val x: Self) extends AnyVal {
+  extension [Self <: RootName](x: Self) {
     
-    @scala.inline
-    def setRootName(value: String): Self = StObject.set(x, "rootName", value.asInstanceOf[js.Any])
+    inline def setRootName(value: String): Self = StObject.set(x, "rootName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootNameUndefined: Self = StObject.set(x, "rootName", js.undefined)
+    inline def setRootNameUndefined: Self = StObject.set(x, "rootName", js.undefined)
   }
 }

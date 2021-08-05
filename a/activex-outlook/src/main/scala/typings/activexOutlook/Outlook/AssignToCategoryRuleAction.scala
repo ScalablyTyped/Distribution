@@ -16,7 +16,7 @@ trait AssignToCategoryRuleAction extends StObject {
   
   var Enabled: Boolean
   
-  @JSName("Outlook.AssignToCategoryRuleAction_typekey")
+  /* private */ @JSName("Outlook.AssignToCategoryRuleAction_typekey")
   var OutlookDotAssignToCategoryRuleAction_typekey: AssignToCategoryRuleAction
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait AssignToCategoryRuleAction extends StObject {
 }
 object AssignToCategoryRuleAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActionType: OlRuleActionType,
     Application: Application,
     Categories: js.Any,
@@ -41,31 +40,22 @@ object AssignToCategoryRuleAction {
     __obj.asInstanceOf[AssignToCategoryRuleAction]
   }
   
-  @scala.inline
-  implicit class AssignToCategoryRuleActionMutableBuilder[Self <: AssignToCategoryRuleAction] (val x: Self) extends AnyVal {
+  extension [Self <: AssignToCategoryRuleAction](x: Self) {
     
-    @scala.inline
-    def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategories(value: js.Any): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Any): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotAssignToCategoryRuleAction_typekey(value: AssignToCategoryRuleAction): Self = StObject.set(x, "Outlook.AssignToCategoryRuleAction_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotAssignToCategoryRuleAction_typekey(value: AssignToCategoryRuleAction): Self = StObject.set(x, "Outlook.AssignToCategoryRuleAction_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

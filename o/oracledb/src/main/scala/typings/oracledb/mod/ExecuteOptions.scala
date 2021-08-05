@@ -119,61 +119,43 @@ trait ExecuteOptions extends StObject {
 }
 object ExecuteOptions {
   
-  @scala.inline
-  def apply(): ExecuteOptions = {
+  inline def apply(): ExecuteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecuteOptions]
   }
   
-  @scala.inline
-  implicit class ExecuteOptionsMutableBuilder[Self <: ExecuteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteOptions](x: Self) {
     
-    @scala.inline
-    def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
+    inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
+    inline def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
     
-    @scala.inline
-    def setExtendedMetaData(value: Boolean): Self = StObject.set(x, "extendedMetaData", value.asInstanceOf[js.Any])
+    inline def setExtendedMetaData(value: Boolean): Self = StObject.set(x, "extendedMetaData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedMetaDataUndefined: Self = StObject.set(x, "extendedMetaData", js.undefined)
+    inline def setExtendedMetaDataUndefined: Self = StObject.set(x, "extendedMetaData", js.undefined)
     
-    @scala.inline
-    def setFetchArraySize(value: Double): Self = StObject.set(x, "fetchArraySize", value.asInstanceOf[js.Any])
+    inline def setFetchArraySize(value: Double): Self = StObject.set(x, "fetchArraySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchArraySizeUndefined: Self = StObject.set(x, "fetchArraySize", js.undefined)
+    inline def setFetchArraySizeUndefined: Self = StObject.set(x, "fetchArraySize", js.undefined)
     
-    @scala.inline
-    def setFetchInfo(value: Record[String, Type]): Self = StObject.set(x, "fetchInfo", value.asInstanceOf[js.Any])
+    inline def setFetchInfo(value: Record[String, Type]): Self = StObject.set(x, "fetchInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchInfoUndefined: Self = StObject.set(x, "fetchInfo", js.undefined)
+    inline def setFetchInfoUndefined: Self = StObject.set(x, "fetchInfo", js.undefined)
     
-    @scala.inline
-    def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
+    inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
+    inline def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
     
-    @scala.inline
-    def setOutFormat(value: Double): Self = StObject.set(x, "outFormat", value.asInstanceOf[js.Any])
+    inline def setOutFormat(value: Double): Self = StObject.set(x, "outFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutFormatUndefined: Self = StObject.set(x, "outFormat", js.undefined)
+    inline def setOutFormatUndefined: Self = StObject.set(x, "outFormat", js.undefined)
     
-    @scala.inline
-    def setPrefetchRows(value: Double): Self = StObject.set(x, "prefetchRows", value.asInstanceOf[js.Any])
+    inline def setPrefetchRows(value: Double): Self = StObject.set(x, "prefetchRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefetchRowsUndefined: Self = StObject.set(x, "prefetchRows", js.undefined)
+    inline def setPrefetchRowsUndefined: Self = StObject.set(x, "prefetchRows", js.undefined)
     
-    @scala.inline
-    def setResultSet(value: Boolean): Self = StObject.set(x, "resultSet", value.asInstanceOf[js.Any])
+    inline def setResultSet(value: Boolean): Self = StObject.set(x, "resultSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetUndefined: Self = StObject.set(x, "resultSet", js.undefined)
+    inline def setResultSetUndefined: Self = StObject.set(x, "resultSet", js.undefined)
   }
 }

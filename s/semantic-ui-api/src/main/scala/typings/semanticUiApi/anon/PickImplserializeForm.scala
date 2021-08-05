@@ -11,16 +11,13 @@ trait PickImplserializeForm extends StObject {
 }
 object PickImplserializeForm {
   
-  @scala.inline
-  def apply(serializeForm: Boolean): PickImplserializeForm = {
+  inline def apply(serializeForm: Boolean): PickImplserializeForm = {
     val __obj = js.Dynamic.literal(serializeForm = serializeForm.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplserializeForm]
   }
   
-  @scala.inline
-  implicit class PickImplserializeFormMutableBuilder[Self <: PickImplserializeForm] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplserializeForm](x: Self) {
     
-    @scala.inline
-    def setSerializeForm(value: Boolean): Self = StObject.set(x, "serializeForm", value.asInstanceOf[js.Any])
+    inline def setSerializeForm(value: Boolean): Self = StObject.set(x, "serializeForm", value.asInstanceOf[js.Any])
   }
 }

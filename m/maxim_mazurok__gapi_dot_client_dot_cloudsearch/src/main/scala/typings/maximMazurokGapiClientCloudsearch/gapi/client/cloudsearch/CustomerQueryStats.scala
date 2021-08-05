@@ -13,28 +13,21 @@ trait CustomerQueryStats extends StObject {
 }
 object CustomerQueryStats {
   
-  @scala.inline
-  def apply(): CustomerQueryStats = {
+  inline def apply(): CustomerQueryStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomerQueryStats]
   }
   
-  @scala.inline
-  implicit class CustomerQueryStatsMutableBuilder[Self <: CustomerQueryStats] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerQueryStats](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setQueryCountByStatus(value: js.Array[QueryCountByStatus]): Self = StObject.set(x, "queryCountByStatus", value.asInstanceOf[js.Any])
+    inline def setQueryCountByStatus(value: js.Array[QueryCountByStatus]): Self = StObject.set(x, "queryCountByStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryCountByStatusUndefined: Self = StObject.set(x, "queryCountByStatus", js.undefined)
+    inline def setQueryCountByStatusUndefined: Self = StObject.set(x, "queryCountByStatus", js.undefined)
     
-    @scala.inline
-    def setQueryCountByStatusVarargs(value: QueryCountByStatus*): Self = StObject.set(x, "queryCountByStatus", js.Array(value :_*))
+    inline def setQueryCountByStatusVarargs(value: QueryCountByStatus*): Self = StObject.set(x, "queryCountByStatus", js.Array(value :_*))
   }
 }

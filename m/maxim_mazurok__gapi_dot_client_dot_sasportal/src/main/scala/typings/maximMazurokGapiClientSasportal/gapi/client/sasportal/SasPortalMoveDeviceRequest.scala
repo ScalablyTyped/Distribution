@@ -11,19 +11,15 @@ trait SasPortalMoveDeviceRequest extends StObject {
 }
 object SasPortalMoveDeviceRequest {
   
-  @scala.inline
-  def apply(): SasPortalMoveDeviceRequest = {
+  inline def apply(): SasPortalMoveDeviceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalMoveDeviceRequest]
   }
   
-  @scala.inline
-  implicit class SasPortalMoveDeviceRequestMutableBuilder[Self <: SasPortalMoveDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalMoveDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
   }
 }

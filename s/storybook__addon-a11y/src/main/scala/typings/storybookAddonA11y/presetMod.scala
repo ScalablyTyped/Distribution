@@ -10,13 +10,9 @@ object presetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def config(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def config(entry: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def config(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[js.Array[js.Any]]
+  inline def config(entry: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def managerEntries(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("managerEntries")().asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def managerEntries(entry: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("managerEntries")(entry.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def managerEntries(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("managerEntries")().asInstanceOf[js.Array[js.Any]]
+  inline def managerEntries(entry: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("managerEntries")(entry.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
 }

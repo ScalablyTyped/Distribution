@@ -12,8 +12,7 @@ object tapDoneToAsyncGetIssuesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tapDoneToAsyncGetIssues(
+  inline def tapDoneToAsyncGetIssues(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     configuration: ForkTsCheckerWebpackPluginConfiguration,
     state: ForkTsCheckerWebpackPluginState

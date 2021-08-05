@@ -5,68 +5,47 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def GraphQLBoolean: typings.typedGraphql.mod.GraphQLScalarType = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLBoolean").asInstanceOf[typings.typedGraphql.mod.GraphQLScalarType]
-@scala.inline
-def GraphQLBoolean_=(x: typings.typedGraphql.mod.GraphQLScalarType): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLBoolean")(x.asInstanceOf[js.Any])
+inline def GraphQLBoolean: typings.typedGraphql.mod.GraphQLScalarType = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLBoolean").asInstanceOf[typings.typedGraphql.mod.GraphQLScalarType]
+inline def GraphQLBoolean_=(x: typings.typedGraphql.mod.GraphQLScalarType): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLBoolean")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def GraphQLFloat: typings.typedGraphql.mod.GraphQLScalarType = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLFloat").asInstanceOf[typings.typedGraphql.mod.GraphQLScalarType]
-@scala.inline
-def GraphQLFloat_=(x: typings.typedGraphql.mod.GraphQLScalarType): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLFloat")(x.asInstanceOf[js.Any])
+inline def GraphQLFloat: typings.typedGraphql.mod.GraphQLScalarType = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLFloat").asInstanceOf[typings.typedGraphql.mod.GraphQLScalarType]
+inline def GraphQLFloat_=(x: typings.typedGraphql.mod.GraphQLScalarType): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLFloat")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def GraphQLID: typings.typedGraphql.mod.GraphQLScalarType = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLID").asInstanceOf[typings.typedGraphql.mod.GraphQLScalarType]
-@scala.inline
-def GraphQLID_=(x: typings.typedGraphql.mod.GraphQLScalarType): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLID")(x.asInstanceOf[js.Any])
+inline def GraphQLID: typings.typedGraphql.mod.GraphQLScalarType = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLID").asInstanceOf[typings.typedGraphql.mod.GraphQLScalarType]
+inline def GraphQLID_=(x: typings.typedGraphql.mod.GraphQLScalarType): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLID")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def GraphQLIncludeDirective: typings.typedGraphql.mod.GraphQLDirective = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLIncludeDirective").asInstanceOf[typings.typedGraphql.mod.GraphQLDirective]
-@scala.inline
-def GraphQLIncludeDirective_=(x: typings.typedGraphql.mod.GraphQLDirective): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLIncludeDirective")(x.asInstanceOf[js.Any])
+inline def GraphQLIncludeDirective: typings.typedGraphql.mod.GraphQLDirective = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLIncludeDirective").asInstanceOf[typings.typedGraphql.mod.GraphQLDirective]
+inline def GraphQLIncludeDirective_=(x: typings.typedGraphql.mod.GraphQLDirective): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLIncludeDirective")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def GraphQLInt: typings.typedGraphql.mod.GraphQLScalarType = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLInt").asInstanceOf[typings.typedGraphql.mod.GraphQLScalarType]
-@scala.inline
-def GraphQLInt_=(x: typings.typedGraphql.mod.GraphQLScalarType): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLInt")(x.asInstanceOf[js.Any])
+inline def GraphQLInt: typings.typedGraphql.mod.GraphQLScalarType = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLInt").asInstanceOf[typings.typedGraphql.mod.GraphQLScalarType]
+inline def GraphQLInt_=(x: typings.typedGraphql.mod.GraphQLScalarType): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLInt")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def GraphQLSkipDirective: typings.typedGraphql.mod.GraphQLDirective = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLSkipDirective").asInstanceOf[typings.typedGraphql.mod.GraphQLDirective]
-@scala.inline
-def GraphQLSkipDirective_=(x: typings.typedGraphql.mod.GraphQLDirective): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLSkipDirective")(x.asInstanceOf[js.Any])
+inline def GraphQLSkipDirective: typings.typedGraphql.mod.GraphQLDirective = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLSkipDirective").asInstanceOf[typings.typedGraphql.mod.GraphQLDirective]
+inline def GraphQLSkipDirective_=(x: typings.typedGraphql.mod.GraphQLDirective): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLSkipDirective")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def GraphQLString: typings.typedGraphql.mod.GraphQLScalarType = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLString").asInstanceOf[typings.typedGraphql.mod.GraphQLScalarType]
-@scala.inline
-def GraphQLString_=(x: typings.typedGraphql.mod.GraphQLScalarType): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLString")(x.asInstanceOf[js.Any])
+inline def GraphQLString: typings.typedGraphql.mod.GraphQLScalarType = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GraphQLString").asInstanceOf[typings.typedGraphql.mod.GraphQLScalarType]
+inline def GraphQLString_=(x: typings.typedGraphql.mod.GraphQLScalarType): scala.Unit = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].updateDynamic("GraphQLString")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def buildClientSchema(introspection: typings.typedGraphql.mod.IntrospectionQuery_): typings.typedGraphql.mod.GraphQLSchema = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("buildClientSchema")(introspection.asInstanceOf[js.Any]).asInstanceOf[typings.typedGraphql.mod.GraphQLSchema]
+inline def buildClientSchema(introspection: typings.typedGraphql.mod.IntrospectionQuery_): typings.typedGraphql.mod.GraphQLSchema = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("buildClientSchema")(introspection.asInstanceOf[js.Any]).asInstanceOf[typings.typedGraphql.mod.GraphQLSchema]
 
-@scala.inline
-def formatError(error: typings.typedGraphql.mod.GraphQLError): typings.typedGraphql.mod.GraphQLFormattedError = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(error.asInstanceOf[js.Any]).asInstanceOf[typings.typedGraphql.mod.GraphQLFormattedError]
+inline def formatError(error: typings.typedGraphql.mod.GraphQLError): typings.typedGraphql.mod.GraphQLFormattedError = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(error.asInstanceOf[js.Any]).asInstanceOf[typings.typedGraphql.mod.GraphQLFormattedError]
 
-@scala.inline
-def graphql(schema: typings.typedGraphql.mod.GraphQLSchema, requestString: java.lang.String): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(schema: typings.typedGraphql.mod.GraphQLSchema, requestString: java.lang.String, rootValue: js.Any): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(schema: typings.typedGraphql.mod.GraphQLSchema, requestString: java.lang.String): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
+inline def graphql(schema: typings.typedGraphql.mod.GraphQLSchema, requestString: java.lang.String, rootValue: js.Any): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: js.Any,
   contextValue: js.Any
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: js.Any,
   contextValue: js.Any,
   variableValues: org.scalablytyped.runtime.StringDictionary[js.Any]
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any], variableValues.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: js.Any,
@@ -74,8 +53,7 @@ def graphql(
   variableValues: org.scalablytyped.runtime.StringDictionary[js.Any],
   operationName: java.lang.String
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any], variableValues.asInstanceOf[js.Any], operationName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: js.Any,
@@ -83,16 +61,14 @@ def graphql(
   variableValues: scala.Unit,
   operationName: java.lang.String
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any], variableValues.asInstanceOf[js.Any], operationName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: js.Any,
   contextValue: scala.Unit,
   variableValues: org.scalablytyped.runtime.StringDictionary[js.Any]
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any], variableValues.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: js.Any,
@@ -100,8 +76,7 @@ def graphql(
   variableValues: org.scalablytyped.runtime.StringDictionary[js.Any],
   operationName: java.lang.String
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any], variableValues.asInstanceOf[js.Any], operationName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: js.Any,
@@ -109,23 +84,20 @@ def graphql(
   variableValues: scala.Unit,
   operationName: java.lang.String
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any], variableValues.asInstanceOf[js.Any], operationName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: scala.Unit,
   contextValue: js.Any
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: scala.Unit,
   contextValue: js.Any,
   variableValues: org.scalablytyped.runtime.StringDictionary[js.Any]
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any], variableValues.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: scala.Unit,
@@ -133,8 +105,7 @@ def graphql(
   variableValues: org.scalablytyped.runtime.StringDictionary[js.Any],
   operationName: java.lang.String
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any], variableValues.asInstanceOf[js.Any], operationName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: scala.Unit,
@@ -142,16 +113,14 @@ def graphql(
   variableValues: scala.Unit,
   operationName: java.lang.String
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any], variableValues.asInstanceOf[js.Any], operationName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: scala.Unit,
   contextValue: scala.Unit,
   variableValues: org.scalablytyped.runtime.StringDictionary[js.Any]
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any], variableValues.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: scala.Unit,
@@ -159,8 +128,7 @@ def graphql(
   variableValues: org.scalablytyped.runtime.StringDictionary[js.Any],
   operationName: java.lang.String
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any], variableValues.asInstanceOf[js.Any], operationName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
-@scala.inline
-def graphql(
+inline def graphql(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   requestString: java.lang.String,
   rootValue: scala.Unit,
@@ -169,16 +137,12 @@ def graphql(
   operationName: java.lang.String
 ): js.Promise[typings.typedGraphql.mod.GraphQLResult] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(schema.asInstanceOf[js.Any], requestString.asInstanceOf[js.Any], rootValue.asInstanceOf[js.Any], contextValue.asInstanceOf[js.Any], variableValues.asInstanceOf[js.Any], operationName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typedGraphql.mod.GraphQLResult]]
 
-@scala.inline
-def introspectionQuery: java.lang.String = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("introspectionQuery").asInstanceOf[java.lang.String]
+inline def introspectionQuery: java.lang.String = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("introspectionQuery").asInstanceOf[java.lang.String]
 
-@scala.inline
-def specifiedRules: js.Array[typings.typedGraphql.mod.ValidationRule] = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("specifiedRules").asInstanceOf[js.Array[typings.typedGraphql.mod.ValidationRule]]
+inline def specifiedRules: js.Array[typings.typedGraphql.mod.ValidationRule] = typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].selectDynamic("specifiedRules").asInstanceOf[js.Array[typings.typedGraphql.mod.ValidationRule]]
 
-@scala.inline
-def validate(schema: typings.typedGraphql.mod.GraphQLSchema, ast: typings.typedGraphql.mod.Document): js.Array[typings.typedGraphql.mod.GraphQLError] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], ast.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.typedGraphql.mod.GraphQLError]]
-@scala.inline
-def validate(
+inline def validate(schema: typings.typedGraphql.mod.GraphQLSchema, ast: typings.typedGraphql.mod.Document): js.Array[typings.typedGraphql.mod.GraphQLError] = (typings.typedGraphql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], ast.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.typedGraphql.mod.GraphQLError]]
+inline def validate(
   schema: typings.typedGraphql.mod.GraphQLSchema,
   ast: typings.typedGraphql.mod.Document,
   rules: js.Array[js.Any]

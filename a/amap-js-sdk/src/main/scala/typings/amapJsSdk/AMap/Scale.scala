@@ -15,8 +15,7 @@ trait Scale
 }
 object Scale {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hide: () => Unit,
     off: (String, EventCallback) => Unit,
     offset: Pixel,
@@ -28,13 +27,10 @@ object Scale {
     __obj.asInstanceOf[Scale]
   }
   
-  @scala.inline
-  implicit class ScaleMutableBuilder[Self <: Scale] (val x: Self) extends AnyVal {
+  extension [Self <: Scale](x: Self) {
     
-    @scala.inline
-    def setOffset(value: Pixel): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Pixel): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

@@ -28,8 +28,7 @@ object anon {
   }
   object AfterInjection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       afterInjection: () => Unit,
       beforeInjection: () => Unit,
       evalScripts: String,
@@ -43,32 +42,23 @@ object anon {
       __obj.asInstanceOf[AfterInjection]
     }
     
-    @scala.inline
-    implicit class AfterInjectionMutableBuilder[Self <: AfterInjection] (val x: Self) extends AnyVal {
+    extension [Self <: AfterInjection](x: Self) {
       
-      @scala.inline
-      def setAfterInjection(value: () => Unit): Self = StObject.set(x, "afterInjection", js.Any.fromFunction0(value))
+      inline def setAfterInjection(value: () => Unit): Self = StObject.set(x, "afterInjection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeInjection(value: () => Unit): Self = StObject.set(x, "beforeInjection", js.Any.fromFunction0(value))
+      inline def setBeforeInjection(value: () => Unit): Self = StObject.set(x, "beforeInjection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEvalScripts(value: String): Self = StObject.set(x, "evalScripts", value.asInstanceOf[js.Any])
+      inline def setEvalScripts(value: String): Self = StObject.set(x, "evalScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallback(value: Null): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: Null): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: Null): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Null): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenumerateIRIElements(value: Boolean): Self = StObject.set(x, "renumerateIRIElements", value.asInstanceOf[js.Any])
+      inline def setRenumerateIRIElements(value: Boolean): Self = StObject.set(x, "renumerateIRIElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseRequestCache(value: Boolean): Self = StObject.set(x, "useRequestCache", value.asInstanceOf[js.Any])
+      inline def setUseRequestCache(value: Boolean): Self = StObject.set(x, "useRequestCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: String): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: String): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,8 +84,7 @@ object anon {
   }
   object BeforeInjection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       afterInjection: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
       beforeInjection: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
       evalScripts: Requireable[String],
@@ -110,35 +99,25 @@ object anon {
       __obj.asInstanceOf[BeforeInjection]
     }
     
-    @scala.inline
-    implicit class BeforeInjectionMutableBuilder[Self <: BeforeInjection] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeInjection](x: Self) {
       
-      @scala.inline
-      def setAfterInjection(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "afterInjection", value.asInstanceOf[js.Any])
+      inline def setAfterInjection(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "afterInjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeInjection(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "beforeInjection", value.asInstanceOf[js.Any])
+      inline def setBeforeInjection(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "beforeInjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvalScripts(value: Requireable[String]): Self = StObject.set(x, "evalScripts", value.asInstanceOf[js.Any])
+      inline def setEvalScripts(value: Requireable[String]): Self = StObject.set(x, "evalScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallback(value: Requireable[String | js.Object]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: Requireable[String | js.Object]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: Requireable[String | js.Object]): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Requireable[String | js.Object]): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenumerateIRIElements(value: Requireable[Boolean]): Self = StObject.set(x, "renumerateIRIElements", value.asInstanceOf[js.Any])
+      inline def setRenumerateIRIElements(value: Requireable[Boolean]): Self = StObject.set(x, "renumerateIRIElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrc(value: Validator[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: Validator[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseRequestCache(value: Requireable[Boolean]): Self = StObject.set(x, "useRequestCache", value.asInstanceOf[js.Any])
+      inline def setUseRequestCache(value: Requireable[Boolean]): Self = StObject.set(x, "useRequestCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: Requireable[String]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: Requireable[String]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,20 +129,16 @@ object anon {
   }
   object HasError {
     
-    @scala.inline
-    def apply(hasError: Boolean, isLoading: Boolean): HasError = {
+    inline def apply(hasError: Boolean, isLoading: Boolean): HasError = {
       val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any])
       __obj.asInstanceOf[HasError]
     }
     
-    @scala.inline
-    implicit class HasErrorMutableBuilder[Self <: HasError] (val x: Self) extends AnyVal {
+    extension [Self <: HasError](x: Self) {
       
-      @scala.inline
-      def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+      inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+      inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
     }
   }
 }

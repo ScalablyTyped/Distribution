@@ -10,16 +10,13 @@ trait GeoChartRegionClickEvent extends StObject {
 }
 object GeoChartRegionClickEvent {
   
-  @scala.inline
-  def apply(region: String): GeoChartRegionClickEvent = {
+  inline def apply(region: String): GeoChartRegionClickEvent = {
     val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoChartRegionClickEvent]
   }
   
-  @scala.inline
-  implicit class GeoChartRegionClickEventMutableBuilder[Self <: GeoChartRegionClickEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GeoChartRegionClickEvent](x: Self) {
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
   }
 }

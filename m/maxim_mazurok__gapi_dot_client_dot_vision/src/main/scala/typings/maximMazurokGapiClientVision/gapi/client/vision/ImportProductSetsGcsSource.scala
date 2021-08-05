@@ -26,19 +26,15 @@ trait ImportProductSetsGcsSource extends StObject {
 }
 object ImportProductSetsGcsSource {
   
-  @scala.inline
-  def apply(): ImportProductSetsGcsSource = {
+  inline def apply(): ImportProductSetsGcsSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportProductSetsGcsSource]
   }
   
-  @scala.inline
-  implicit class ImportProductSetsGcsSourceMutableBuilder[Self <: ImportProductSetsGcsSource] (val x: Self) extends AnyVal {
+  extension [Self <: ImportProductSetsGcsSource](x: Self) {
     
-    @scala.inline
-    def setCsvFileUri(value: String): Self = StObject.set(x, "csvFileUri", value.asInstanceOf[js.Any])
+    inline def setCsvFileUri(value: String): Self = StObject.set(x, "csvFileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvFileUriUndefined: Self = StObject.set(x, "csvFileUri", js.undefined)
+    inline def setCsvFileUriUndefined: Self = StObject.set(x, "csvFileUri", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait ReactTag extends StObject {
 }
 object ReactTag {
   
-  @scala.inline
-  def apply(): ReactTag = {
+  inline def apply(): ReactTag = {
     val __obj = js.Dynamic.literal(reactTag = null)
     __obj.asInstanceOf[ReactTag]
   }
   
-  @scala.inline
-  implicit class ReactTagMutableBuilder[Self <: ReactTag] (val x: Self) extends AnyVal {
+  extension [Self <: ReactTag](x: Self) {
     
-    @scala.inline
-    def setReactTag(value: Double): Self = StObject.set(x, "reactTag", value.asInstanceOf[js.Any])
+    inline def setReactTag(value: Double): Self = StObject.set(x, "reactTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactTagNull: Self = StObject.set(x, "reactTag", null)
+    inline def setReactTagNull: Self = StObject.set(x, "reactTag", null)
   }
 }

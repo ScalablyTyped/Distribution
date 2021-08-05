@@ -87,35 +87,26 @@ object rsocketwebsocketclientMod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(url: String): ClientOptions = {
+    inline def apply(url: String): ClientOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setLengthPrefixedFrames(value: Boolean): Self = StObject.set(x, "lengthPrefixedFrames", value.asInstanceOf[js.Any])
+      inline def setLengthPrefixedFrames(value: Boolean): Self = StObject.set(x, "lengthPrefixedFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthPrefixedFramesUndefined: Self = StObject.set(x, "lengthPrefixedFrames", js.undefined)
+      inline def setLengthPrefixedFramesUndefined: Self = StObject.set(x, "lengthPrefixedFrames", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWsCreator(value: /* url */ String => WebSocket): Self = StObject.set(x, "wsCreator", js.Any.fromFunction1(value))
+      inline def setWsCreator(value: /* url */ String => WebSocket): Self = StObject.set(x, "wsCreator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWsCreatorUndefined: Self = StObject.set(x, "wsCreator", js.undefined)
+      inline def setWsCreatorUndefined: Self = StObject.set(x, "wsCreator", js.undefined)
     }
   }
   
@@ -124,8 +115,7 @@ object rsocketwebsocketclientMod {
        with DuplexConnection
   object RSocketWebSocketClient {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       connect: () => Unit,
       connectionStatus: () => Flowable[ConnectionStatus],

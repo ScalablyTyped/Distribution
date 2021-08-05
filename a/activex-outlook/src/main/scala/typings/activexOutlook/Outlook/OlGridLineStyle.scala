@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlGridLineStyle extends StObject
 object OlGridLineStyle {
   
-  @scala.inline
-  def olGridLineDashes: `3` = 3.asInstanceOf[`3`]
+  inline def olGridLineDashes: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olGridLineLargeDots: `2` = 2.asInstanceOf[`2`]
+  inline def olGridLineLargeDots: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olGridLineNone: `0` = 0.asInstanceOf[`0`]
+  inline def olGridLineNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olGridLineSmallDots: `1` = 1.asInstanceOf[`1`]
+  inline def olGridLineSmallDots: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olGridLineSolid: `4` = 4.asInstanceOf[`4`]
+  inline def olGridLineSolid: `4` = 4.asInstanceOf[`4`]
 }

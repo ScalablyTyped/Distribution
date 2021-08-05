@@ -10,9 +10,7 @@ object aliasDb {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def lookup(stable: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(stable.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def lookup(stable: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(stable.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def lookupEx(stable: String, sflags: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup_ex")(stable.asInstanceOf[js.Any], sflags.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def lookupEx(stable: String, sflags: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup_ex")(stable.asInstanceOf[js.Any], sflags.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

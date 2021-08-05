@@ -13,19 +13,15 @@ trait UpdateRegexMatchSetResponse extends StObject {
 }
 object UpdateRegexMatchSetResponse {
   
-  @scala.inline
-  def apply(): UpdateRegexMatchSetResponse = {
+  inline def apply(): UpdateRegexMatchSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateRegexMatchSetResponse]
   }
   
-  @scala.inline
-  implicit class UpdateRegexMatchSetResponseMutableBuilder[Self <: UpdateRegexMatchSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRegexMatchSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

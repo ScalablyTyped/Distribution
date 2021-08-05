@@ -23,22 +23,17 @@ trait SchemaGooglePrivacyDlpV2BucketingConfig extends StObject {
 }
 object SchemaGooglePrivacyDlpV2BucketingConfig {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2BucketingConfig = {
+  inline def apply(): SchemaGooglePrivacyDlpV2BucketingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2BucketingConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2BucketingConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2BucketingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2BucketingConfig](x: Self) {
     
-    @scala.inline
-    def setBuckets(value: js.Array[SchemaGooglePrivacyDlpV2Bucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+    inline def setBuckets(value: js.Array[SchemaGooglePrivacyDlpV2Bucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
+    inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    @scala.inline
-    def setBucketsVarargs(value: SchemaGooglePrivacyDlpV2Bucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: SchemaGooglePrivacyDlpV2Bucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
   }
 }

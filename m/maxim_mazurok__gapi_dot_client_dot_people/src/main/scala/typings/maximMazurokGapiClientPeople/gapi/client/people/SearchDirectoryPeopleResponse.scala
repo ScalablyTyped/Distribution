@@ -17,34 +17,25 @@ trait SearchDirectoryPeopleResponse extends StObject {
 }
 object SearchDirectoryPeopleResponse {
   
-  @scala.inline
-  def apply(): SearchDirectoryPeopleResponse = {
+  inline def apply(): SearchDirectoryPeopleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchDirectoryPeopleResponse]
   }
   
-  @scala.inline
-  implicit class SearchDirectoryPeopleResponseMutableBuilder[Self <: SearchDirectoryPeopleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDirectoryPeopleResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPeople(value: js.Array[Person]): Self = StObject.set(x, "people", value.asInstanceOf[js.Any])
+    inline def setPeople(value: js.Array[Person]): Self = StObject.set(x, "people", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeopleUndefined: Self = StObject.set(x, "people", js.undefined)
+    inline def setPeopleUndefined: Self = StObject.set(x, "people", js.undefined)
     
-    @scala.inline
-    def setPeopleVarargs(value: Person*): Self = StObject.set(x, "people", js.Array(value :_*))
+    inline def setPeopleVarargs(value: Person*): Self = StObject.set(x, "people", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

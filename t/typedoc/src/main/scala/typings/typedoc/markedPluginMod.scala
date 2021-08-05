@@ -18,15 +18,15 @@ object markedPluginMod {
     def getHighlighted(text: String): String = js.native
     def getHighlighted(text: String, lang: String): String = js.native
     
-    var includePattern: js.Any = js.native
+    /* private */ var includePattern: js.Any = js.native
     
     var includeSource: String = js.native
     
-    var includes: js.Any = js.native
+    /* private */ var includes: js.Any = js.native
     
-    var mediaDirectory: js.Any = js.native
+    /* private */ var mediaDirectory: js.Any = js.native
     
-    var mediaPattern: js.Any = js.native
+    /* private */ var mediaPattern: js.Any = js.native
     
     var mediaSource: String = js.native
     

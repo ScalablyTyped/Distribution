@@ -13,19 +13,15 @@ trait ImageScanningConfiguration extends StObject {
 }
 object ImageScanningConfiguration {
   
-  @scala.inline
-  def apply(): ImageScanningConfiguration = {
+  inline def apply(): ImageScanningConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageScanningConfiguration]
   }
   
-  @scala.inline
-  implicit class ImageScanningConfigurationMutableBuilder[Self <: ImageScanningConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ImageScanningConfiguration](x: Self) {
     
-    @scala.inline
-    def setScanOnPush(value: ScanOnPushFlag): Self = StObject.set(x, "scanOnPush", value.asInstanceOf[js.Any])
+    inline def setScanOnPush(value: ScanOnPushFlag): Self = StObject.set(x, "scanOnPush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanOnPushUndefined: Self = StObject.set(x, "scanOnPush", js.undefined)
+    inline def setScanOnPushUndefined: Self = StObject.set(x, "scanOnPush", js.undefined)
   }
 }

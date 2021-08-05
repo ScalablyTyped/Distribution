@@ -10,16 +10,13 @@ trait Formatted extends StObject {
 }
 object Formatted {
   
-  @scala.inline
-  def apply(formatted: Boolean): Formatted = {
+  inline def apply(formatted: Boolean): Formatted = {
     val __obj = js.Dynamic.literal(formatted = formatted.asInstanceOf[js.Any])
     __obj.asInstanceOf[Formatted]
   }
   
-  @scala.inline
-  implicit class FormattedMutableBuilder[Self <: Formatted] (val x: Self) extends AnyVal {
+  extension [Self <: Formatted](x: Self) {
     
-    @scala.inline
-    def setFormatted(value: Boolean): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
+    inline def setFormatted(value: Boolean): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
   }
 }

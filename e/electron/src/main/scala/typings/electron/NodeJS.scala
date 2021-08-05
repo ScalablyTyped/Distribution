@@ -257,20 +257,16 @@ object NodeJS {
   }
   object ProcessVersions {
     
-    @scala.inline
-    def apply(chrome: String, electron: String): ProcessVersions = {
+    inline def apply(chrome: String, electron: String): ProcessVersions = {
       val __obj = js.Dynamic.literal(chrome = chrome.asInstanceOf[js.Any], electron = electron.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessVersions]
     }
     
-    @scala.inline
-    implicit class ProcessVersionsMutableBuilder[Self <: ProcessVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessVersions](x: Self) {
       
-      @scala.inline
-      def setChrome(value: String): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+      inline def setChrome(value: String): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElectron(value: String): Self = StObject.set(x, "electron", value.asInstanceOf[js.Any])
+      inline def setElectron(value: String): Self = StObject.set(x, "electron", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,16 +10,13 @@ trait FullPageJSGlobalOptions extends StObject {
 }
 object FullPageJSGlobalOptions {
   
-  @scala.inline
-  def apply(options: FullPageJsOptions): FullPageJSGlobalOptions = {
+  inline def apply(options: FullPageJsOptions): FullPageJSGlobalOptions = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullPageJSGlobalOptions]
   }
   
-  @scala.inline
-  implicit class FullPageJSGlobalOptionsMutableBuilder[Self <: FullPageJSGlobalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FullPageJSGlobalOptions](x: Self) {
     
-    @scala.inline
-    def setOptions(value: FullPageJsOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: FullPageJsOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

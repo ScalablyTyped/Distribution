@@ -24,21 +24,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DriveType extends StObject
 object DriveType {
   
-  @scala.inline
-  def CD_ROM: typings.qlikEngineapi.qlikEngineapiStrings.CD_ROM = "CD_ROM".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.CD_ROM]
+  inline def CD_ROM: typings.qlikEngineapi.qlikEngineapiStrings.CD_ROM = "CD_ROM".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.CD_ROM]
   
-  @scala.inline
-  def FIXED: typings.qlikEngineapi.qlikEngineapiStrings.FIXED = "FIXED".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.FIXED]
+  inline def FIXED: typings.qlikEngineapi.qlikEngineapiStrings.FIXED = "FIXED".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.FIXED]
   
-  @scala.inline
-  def NETWORK: typings.qlikEngineapi.qlikEngineapiStrings.NETWORK = "NETWORK".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NETWORK]
+  inline def NETWORK: typings.qlikEngineapi.qlikEngineapiStrings.NETWORK = "NETWORK".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NETWORK]
   
-  @scala.inline
-  def RAM: typings.qlikEngineapi.qlikEngineapiStrings.RAM = "RAM".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.RAM]
+  inline def RAM: typings.qlikEngineapi.qlikEngineapiStrings.RAM = "RAM".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.RAM]
   
-  @scala.inline
-  def REMOVABLE: typings.qlikEngineapi.qlikEngineapiStrings.REMOVABLE = "REMOVABLE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.REMOVABLE]
+  inline def REMOVABLE: typings.qlikEngineapi.qlikEngineapiStrings.REMOVABLE = "REMOVABLE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.REMOVABLE]
   
-  @scala.inline
-  def UNKNOWN_TYPE: typings.qlikEngineapi.qlikEngineapiStrings.UNKNOWN_TYPE = "UNKNOWN_TYPE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.UNKNOWN_TYPE]
+  inline def UNKNOWN_TYPE: typings.qlikEngineapi.qlikEngineapiStrings.UNKNOWN_TYPE = "UNKNOWN_TYPE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.UNKNOWN_TYPE]
 }

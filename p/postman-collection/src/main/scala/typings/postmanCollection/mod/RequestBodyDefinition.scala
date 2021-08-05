@@ -21,46 +21,33 @@ trait RequestBodyDefinition
 }
 object RequestBodyDefinition {
   
-  @scala.inline
-  def apply(mode: String): RequestBodyDefinition = {
+  inline def apply(mode: String): RequestBodyDefinition = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyDefinition]
   }
   
-  @scala.inline
-  implicit class RequestBodyDefinitionMutableBuilder[Self <: RequestBodyDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: RequestBodyDefinition](x: Self) {
     
-    @scala.inline
-    def setFile(value: String | SrcString): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String | SrcString): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setFormdata(value: js.Array[FormParamDefinition] | PropertyList[FormParam]): Self = StObject.set(x, "formdata", value.asInstanceOf[js.Any])
+    inline def setFormdata(value: js.Array[FormParamDefinition] | PropertyList[FormParam]): Self = StObject.set(x, "formdata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormdataUndefined: Self = StObject.set(x, "formdata", js.undefined)
+    inline def setFormdataUndefined: Self = StObject.set(x, "formdata", js.undefined)
     
-    @scala.inline
-    def setFormdataVarargs(value: FormParamDefinition*): Self = StObject.set(x, "formdata", js.Array(value :_*))
+    inline def setFormdataVarargs(value: FormParamDefinition*): Self = StObject.set(x, "formdata", js.Array(value :_*))
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setUrlencoded(value: js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String): Self = StObject.set(x, "urlencoded", value.asInstanceOf[js.Any])
+    inline def setUrlencoded(value: js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String): Self = StObject.set(x, "urlencoded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlencodedUndefined: Self = StObject.set(x, "urlencoded", js.undefined)
+    inline def setUrlencodedUndefined: Self = StObject.set(x, "urlencoded", js.undefined)
     
-    @scala.inline
-    def setUrlencodedVarargs(value: QueryParamDefinition*): Self = StObject.set(x, "urlencoded", js.Array(value :_*))
+    inline def setUrlencodedVarargs(value: QueryParamDefinition*): Self = StObject.set(x, "urlencoded", js.Array(value :_*))
   }
 }

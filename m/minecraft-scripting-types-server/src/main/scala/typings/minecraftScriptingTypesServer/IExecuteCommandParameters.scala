@@ -16,16 +16,13 @@ trait IExecuteCommandParameters extends StObject {
 }
 object IExecuteCommandParameters {
   
-  @scala.inline
-  def apply(command: String): IExecuteCommandParameters = {
+  inline def apply(command: String): IExecuteCommandParameters = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExecuteCommandParameters]
   }
   
-  @scala.inline
-  implicit class IExecuteCommandParametersMutableBuilder[Self <: IExecuteCommandParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IExecuteCommandParameters](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
   }
 }

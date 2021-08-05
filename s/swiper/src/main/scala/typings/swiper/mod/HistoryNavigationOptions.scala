@@ -23,25 +23,19 @@ trait HistoryNavigationOptions extends StObject {
 }
 object HistoryNavigationOptions {
   
-  @scala.inline
-  def apply(): HistoryNavigationOptions = {
+  inline def apply(): HistoryNavigationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistoryNavigationOptions]
   }
   
-  @scala.inline
-  implicit class HistoryNavigationOptionsMutableBuilder[Self <: HistoryNavigationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryNavigationOptions](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setReplaceState(value: Boolean): Self = StObject.set(x, "replaceState", value.asInstanceOf[js.Any])
+    inline def setReplaceState(value: Boolean): Self = StObject.set(x, "replaceState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceStateUndefined: Self = StObject.set(x, "replaceState", js.undefined)
+    inline def setReplaceStateUndefined: Self = StObject.set(x, "replaceState", js.undefined)
   }
 }

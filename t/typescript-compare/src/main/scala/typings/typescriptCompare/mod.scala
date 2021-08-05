@@ -36,8 +36,7 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(broaderLeft: js.Any, broaderRight: js.Any, equal: js.Any, mismatch: js.Any): Options = {
+      inline def apply(broaderLeft: js.Any, broaderRight: js.Any, equal: js.Any, mismatch: js.Any): Options = {
         val __obj = js.Dynamic.literal(broaderLeft = broaderLeft.asInstanceOf[js.Any], broaderRight = broaderRight.asInstanceOf[js.Any], equal = equal.asInstanceOf[js.Any], mismatch = mismatch.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
       }
@@ -60,43 +59,32 @@ object mod {
       }
       object Default {
         
-        @scala.inline
-        def apply(): Default = {
+        inline def apply(): Default = {
           val __obj = js.Dynamic.literal(broaderLeft = "broaderLeft", broaderRight = "broaderRight", equal = "equal", mismatch = "mismatch")
           __obj.asInstanceOf[Default]
         }
         
-        @scala.inline
-        implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
+        extension [Self <: Default](x: Self) {
           
-          @scala.inline
-          def setBroaderLeft(value: broaderLeft): Self = StObject.set(x, "broaderLeft", value.asInstanceOf[js.Any])
+          inline def setBroaderLeft(value: broaderLeft): Self = StObject.set(x, "broaderLeft", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBroaderRight(value: broaderRight): Self = StObject.set(x, "broaderRight", value.asInstanceOf[js.Any])
+          inline def setBroaderRight(value: broaderRight): Self = StObject.set(x, "broaderRight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEqual(value: equal): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
+          inline def setEqual(value: equal): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMismatch(value: mismatch): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
+          inline def setMismatch(value: mismatch): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
         }
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setBroaderLeft(value: js.Any): Self = StObject.set(x, "broaderLeft", value.asInstanceOf[js.Any])
+        inline def setBroaderLeft(value: js.Any): Self = StObject.set(x, "broaderLeft", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBroaderRight(value: js.Any): Self = StObject.set(x, "broaderRight", value.asInstanceOf[js.Any])
+        inline def setBroaderRight(value: js.Any): Self = StObject.set(x, "broaderRight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEqual(value: js.Any): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
+        inline def setEqual(value: js.Any): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMismatch(value: js.Any): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
+        inline def setMismatch(value: js.Any): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
       }
     }
     

@@ -18,25 +18,19 @@ trait WorkerBlock extends StObject {
 }
 object WorkerBlock {
   
-  @scala.inline
-  def apply(): WorkerBlock = {
+  inline def apply(): WorkerBlock = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkerBlock]
   }
   
-  @scala.inline
-  implicit class WorkerBlockMutableBuilder[Self <: WorkerBlock] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerBlock](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIdUndefined: Self = StObject.set(x, "WorkerId", js.undefined)
+    inline def setWorkerIdUndefined: Self = StObject.set(x, "WorkerId", js.undefined)
   }
 }

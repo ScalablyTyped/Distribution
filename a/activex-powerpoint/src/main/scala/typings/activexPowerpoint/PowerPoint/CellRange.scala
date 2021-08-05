@@ -16,13 +16,12 @@ trait CellRange extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.CellRange_typekey")
+  /* private */ @JSName("PowerPoint.CellRange_typekey")
   var PowerPointDotCellRange_typekey: CellRange
 }
 object CellRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Borders: Borders,
     Count: Double,
@@ -35,25 +34,18 @@ object CellRange {
     __obj.asInstanceOf[CellRange]
   }
   
-  @scala.inline
-  implicit class CellRangeMutableBuilder[Self <: CellRange] (val x: Self) extends AnyVal {
+  extension [Self <: CellRange](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
+    inline def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => Cell): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => Cell): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotCellRange_typekey(value: CellRange): Self = StObject.set(x, "PowerPoint.CellRange_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotCellRange_typekey(value: CellRange): Self = StObject.set(x, "PowerPoint.CellRange_typekey", value.asInstanceOf[js.Any])
   }
 }

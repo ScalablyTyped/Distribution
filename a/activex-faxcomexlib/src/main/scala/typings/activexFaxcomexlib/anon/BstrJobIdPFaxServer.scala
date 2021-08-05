@@ -13,19 +13,15 @@ trait BstrJobIdPFaxServer extends StObject {
 }
 object BstrJobIdPFaxServer {
   
-  @scala.inline
-  def apply(bstrJobId: String, pFaxServer: FaxServer): BstrJobIdPFaxServer = {
+  inline def apply(bstrJobId: String, pFaxServer: FaxServer): BstrJobIdPFaxServer = {
     val __obj = js.Dynamic.literal(bstrJobId = bstrJobId.asInstanceOf[js.Any], pFaxServer = pFaxServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[BstrJobIdPFaxServer]
   }
   
-  @scala.inline
-  implicit class BstrJobIdPFaxServerMutableBuilder[Self <: BstrJobIdPFaxServer] (val x: Self) extends AnyVal {
+  extension [Self <: BstrJobIdPFaxServer](x: Self) {
     
-    @scala.inline
-    def setBstrJobId(value: String): Self = StObject.set(x, "bstrJobId", value.asInstanceOf[js.Any])
+    inline def setBstrJobId(value: String): Self = StObject.set(x, "bstrJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
+    inline def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
   }
 }

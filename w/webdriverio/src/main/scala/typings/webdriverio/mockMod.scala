@@ -10,8 +10,7 @@ object mockMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     url: String,
     filterOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MockFilterOptions */ js.Any
   ): js.Promise[

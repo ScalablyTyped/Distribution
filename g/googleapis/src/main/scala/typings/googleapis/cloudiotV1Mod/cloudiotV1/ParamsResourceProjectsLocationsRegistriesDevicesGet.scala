@@ -33,31 +33,23 @@ trait ParamsResourceProjectsLocationsRegistriesDevicesGet
 }
 object ParamsResourceProjectsLocationsRegistriesDevicesGet {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsLocationsRegistriesDevicesGet = {
+  inline def apply(): ParamsResourceProjectsLocationsRegistriesDevicesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsLocationsRegistriesDevicesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsLocationsRegistriesDevicesGetMutableBuilder[Self <: ParamsResourceProjectsLocationsRegistriesDevicesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsLocationsRegistriesDevicesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFieldMask(value: String): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
+    inline def setFieldMask(value: String): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldMaskUndefined: Self = StObject.set(x, "fieldMask", js.undefined)
+    inline def setFieldMaskUndefined: Self = StObject.set(x, "fieldMask", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

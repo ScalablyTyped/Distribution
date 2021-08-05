@@ -10,19 +10,15 @@ trait IntegerParams extends StObject {
 }
 object IntegerParams {
   
-  @scala.inline
-  def apply(): IntegerParams = {
+  inline def apply(): IntegerParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntegerParams]
   }
   
-  @scala.inline
-  implicit class IntegerParamsMutableBuilder[Self <: IntegerParams] (val x: Self) extends AnyVal {
+  extension [Self <: IntegerParams](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

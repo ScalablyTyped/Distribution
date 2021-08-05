@@ -16,19 +16,15 @@ trait Event extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply(event: MouseEvent[HTMLButtonElement, NativeMouseEvent], row: RowT): Event = {
+  inline def apply(event: MouseEvent[HTMLButtonElement, NativeMouseEvent], row: RowT): Event = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+  extension [Self <: Event](x: Self) {
     
-    @scala.inline
-    def setEvent(value: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: RowT): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: RowT): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

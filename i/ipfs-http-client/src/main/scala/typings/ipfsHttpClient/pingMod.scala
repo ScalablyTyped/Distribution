@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pingMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function2[
+  inline def apply(clientOptions: ClientOptions): js.Function2[
     /* peerId */ js.Any, 
     /* options */ js.UndefOr[js.Object], 
     AsyncGenerator[js.Any, Unit, js.Any]

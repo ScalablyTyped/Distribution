@@ -189,8 +189,7 @@ object Browser {
   /**
     * 判断是否支持webgl
     */
-  @scala.inline
-  def isWebGL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGL")().asInstanceOf[Boolean]
+  inline def isWebGL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGL")().asInstanceOf[Boolean]
   
   /**
     * 是否支持WebSocket

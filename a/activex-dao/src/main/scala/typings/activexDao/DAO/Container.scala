@@ -8,7 +8,7 @@ trait Container extends StObject {
   
   val AllPermissions: Double
   
-  @JSName("DAO.Container_typekey")
+  /* private */ @JSName("DAO.Container_typekey")
   var DAODotContainer_typekey: Container
   
   def Documents(Item: String): Document
@@ -33,8 +33,7 @@ trait Container extends StObject {
 }
 object Container {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllPermissions: Double,
     DAODotContainer_typekey: Container,
     Documents: Documents,
@@ -50,34 +49,24 @@ object Container {
     __obj.asInstanceOf[Container]
   }
   
-  @scala.inline
-  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+  extension [Self <: Container](x: Self) {
     
-    @scala.inline
-    def setAllPermissions(value: Double): Self = StObject.set(x, "AllPermissions", value.asInstanceOf[js.Any])
+    inline def setAllPermissions(value: Double): Self = StObject.set(x, "AllPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDAODotContainer_typekey(value: Container): Self = StObject.set(x, "DAO.Container_typekey", value.asInstanceOf[js.Any])
+    inline def setDAODotContainer_typekey(value: Container): Self = StObject.set(x, "DAO.Container_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocuments(value: Documents): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: Documents): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInherit(value: Boolean): Self = StObject.set(x, "Inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "Inherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissions(value: Double): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Double): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

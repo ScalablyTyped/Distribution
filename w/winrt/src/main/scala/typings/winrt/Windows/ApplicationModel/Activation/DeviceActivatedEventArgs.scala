@@ -9,8 +9,7 @@ trait DeviceActivatedEventArgs
      with IDeviceActivatedEventArgs
 object DeviceActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceInformationId: String,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,

@@ -12,16 +12,13 @@ trait TypeofDebugUtils extends StObject {
 }
 object TypeofDebugUtils {
   
-  @scala.inline
-  def apply(logBones: Skeleton => Unit): TypeofDebugUtils = {
+  inline def apply(logBones: Skeleton => Unit): TypeofDebugUtils = {
     val __obj = js.Dynamic.literal(logBones = js.Any.fromFunction1(logBones))
     __obj.asInstanceOf[TypeofDebugUtils]
   }
   
-  @scala.inline
-  implicit class TypeofDebugUtilsMutableBuilder[Self <: TypeofDebugUtils] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDebugUtils](x: Self) {
     
-    @scala.inline
-    def setLogBones(value: Skeleton => Unit): Self = StObject.set(x, "logBones", js.Any.fromFunction1(value))
+    inline def setLogBones(value: Skeleton => Unit): Self = StObject.set(x, "logBones", js.Any.fromFunction1(value))
   }
 }

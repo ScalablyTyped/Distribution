@@ -13,16 +13,13 @@ trait CreateCompilationJobResponse extends StObject {
 }
 object CreateCompilationJobResponse {
   
-  @scala.inline
-  def apply(CompilationJobArn: CompilationJobArn): CreateCompilationJobResponse = {
+  inline def apply(CompilationJobArn: CompilationJobArn): CreateCompilationJobResponse = {
     val __obj = js.Dynamic.literal(CompilationJobArn = CompilationJobArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCompilationJobResponse]
   }
   
-  @scala.inline
-  implicit class CreateCompilationJobResponseMutableBuilder[Self <: CreateCompilationJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCompilationJobResponse](x: Self) {
     
-    @scala.inline
-    def setCompilationJobArn(value: CompilationJobArn): Self = StObject.set(x, "CompilationJobArn", value.asInstanceOf[js.Any])
+    inline def setCompilationJobArn(value: CompilationJobArn): Self = StObject.set(x, "CompilationJobArn", value.asInstanceOf[js.Any])
   }
 }

@@ -61,8 +61,7 @@ trait TileLayer
 }
 object TileLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getOpacity: () => Double,
     getTileSource: () => TileSource,
     getVisible: () => Boolean,
@@ -77,34 +76,24 @@ object TileLayer {
     __obj.asInstanceOf[TileLayer]
   }
   
-  @scala.inline
-  implicit class TileLayerMutableBuilder[Self <: TileLayer] (val x: Self) extends AnyVal {
+  extension [Self <: TileLayer](x: Self) {
     
-    @scala.inline
-    def setGetOpacity(value: () => Double): Self = StObject.set(x, "getOpacity", js.Any.fromFunction0(value))
+    inline def setGetOpacity(value: () => Double): Self = StObject.set(x, "getOpacity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTileSource(value: () => TileSource): Self = StObject.set(x, "getTileSource", js.Any.fromFunction0(value))
+    inline def setGetTileSource(value: () => TileSource): Self = StObject.set(x, "getTileSource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
+    inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetZIndex(value: () => Double): Self = StObject.set(x, "getZIndex", js.Any.fromFunction0(value))
+    inline def setGetZIndex(value: () => Double): Self = StObject.set(x, "getZIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
+    inline def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOptions(value: ITileLayerOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: ITileLayerOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetZIndex(value: Double => Unit): Self = StObject.set(x, "setZIndex", js.Any.fromFunction1(value))
+    inline def setSetZIndex(value: Double => Unit): Self = StObject.set(x, "setZIndex", js.Any.fromFunction1(value))
   }
 }

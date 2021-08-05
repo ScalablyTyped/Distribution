@@ -54,7 +54,7 @@ object googleapisMod {
   class GoogleApis () extends GeneratedAPIs {
     def this(options: GlobalOptions) = this()
     
-    var _discovery: js.Any = js.native
+    /* private */ var _discovery: js.Any = js.native
     
     var _options: GlobalOptions = js.native
     
@@ -67,7 +67,7 @@ object googleapisMod {
       * @param {Object} apis Apis to be added to this GoogleApis instance.
       * @private
       */
-    var addAPIs: js.Any = js.native
+    /* private */ var addAPIs: js.Any = js.native
     
     var auth: AuthPlus = js.native
     
@@ -103,7 +103,7 @@ object googleapisMod {
     def discoverAPI(apiPath: String): js.Promise[ReadonlyEndpoint] = js.native
     def discoverAPI(apiPath: String, options: js.Object): js.Promise[ReadonlyEndpoint] = js.native
     
-    var discoverAsync: js.Any = js.native
+    /* private */ var discoverAsync: js.Any = js.native
     
     /**
       * Obtain a Map of supported APIs, along with included API versions.

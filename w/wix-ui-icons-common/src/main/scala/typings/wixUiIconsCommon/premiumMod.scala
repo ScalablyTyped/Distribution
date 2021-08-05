@@ -22,20 +22,16 @@ object premiumMod extends Shortcut {
   }
   object PremiumProps {
     
-    @scala.inline
-    def apply(): PremiumProps = {
+    inline def apply(): PremiumProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PremiumProps]
     }
     
-    @scala.inline
-    implicit class PremiumPropsMutableBuilder[Self <: PremiumProps] (val x: Self) extends AnyVal {
+    extension [Self <: PremiumProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

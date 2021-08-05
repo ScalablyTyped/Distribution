@@ -14,8 +14,7 @@ trait CustomLogger extends StObject {
 }
 object CustomLogger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     error: /* repeated */ js.Any => js.Any,
     log: /* repeated */ js.Any => js.Any,
     warn: /* repeated */ js.Any => js.Any
@@ -24,16 +23,12 @@ object CustomLogger {
     __obj.asInstanceOf[CustomLogger]
   }
   
-  @scala.inline
-  implicit class CustomLoggerMutableBuilder[Self <: CustomLogger] (val x: Self) extends AnyVal {
+  extension [Self <: CustomLogger](x: Self) {
     
-    @scala.inline
-    def setError(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLog(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWarn(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

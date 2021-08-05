@@ -76,8 +76,7 @@ object VueRouter {
   def NavigationFailureType: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof NavigationFailureType * / any ]: vue-router.vue-router/types/router.NavigationFailureType}
     */ typings.vueRouter.vueRouterStrings.NavigationFailureType & TopLevel[js.Any] = js.native
-  @scala.inline
-  def NavigationFailureType_=(
+  inline def NavigationFailureType_=(
     x: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof NavigationFailureType * / any ]: vue-router.vue-router/types/router.NavigationFailureType}
     */ typings.vueRouter.vueRouterStrings.NavigationFailureType & TopLevel[js.Any]
@@ -86,21 +85,15 @@ object VueRouter {
   @JSImport("vue-router/types/router", "VueRouter.install")
   @js.native
   def install: PluginFunction[scala.Nothing] = js.native
-  @scala.inline
-  def install(Vue: VueConstructor[Vue]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(Vue.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def install(Vue: VueConstructor[Vue], options: scala.Nothing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(Vue.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def install_=(x: PluginFunction[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("install")(x.asInstanceOf[js.Any])
+  inline def install(Vue: VueConstructor[Vue]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(Vue.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def install(Vue: VueConstructor[Vue], options: scala.Nothing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(Vue.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def install_=(x: PluginFunction[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("install")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def isNavigationFailure(error: js.Any): /* is vue-router.vue-router/types/router.NavigationFailure */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNavigationFailure")(error.asInstanceOf[js.Any]).asInstanceOf[/* is vue-router.vue-router/types/router.NavigationFailure */ Boolean]
-  @scala.inline
-  def isNavigationFailure(error: js.Any, `type`: Double): /* is vue-router.vue-router/types/router.NavigationFailure */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNavigationFailure")(error.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is vue-router.vue-router/types/router.NavigationFailure */ Boolean]
+  inline def isNavigationFailure(error: js.Any): /* is vue-router.vue-router/types/router.NavigationFailure */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNavigationFailure")(error.asInstanceOf[js.Any]).asInstanceOf[/* is vue-router.vue-router/types/router.NavigationFailure */ Boolean]
+  inline def isNavigationFailure(error: js.Any, `type`: Double): /* is vue-router.vue-router/types/router.NavigationFailure */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNavigationFailure")(error.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is vue-router.vue-router/types/router.NavigationFailure */ Boolean]
   
   @JSImport("vue-router/types/router", "VueRouter.version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 }

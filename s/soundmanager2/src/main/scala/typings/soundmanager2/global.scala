@@ -11,8 +11,7 @@ object global {
   @js.native
   def soundManager_ : SoundManager = js.native
   
-  @scala.inline
-  def soundManager__=(x: SoundManager): Unit = js.Dynamic.global.updateDynamic("soundManager")(x.asInstanceOf[js.Any])
+  inline def soundManager__=(x: SoundManager): Unit = js.Dynamic.global.updateDynamic("soundManager")(x.asInstanceOf[js.Any])
   
   object soundmanager {
     

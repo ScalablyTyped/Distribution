@@ -38,49 +38,35 @@ trait FeatureTransformation extends StObject {
 }
 object FeatureTransformation {
   
-  @scala.inline
-  def apply(): FeatureTransformation = {
+  inline def apply(): FeatureTransformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureTransformation]
   }
   
-  @scala.inline
-  implicit class FeatureTransformationMutableBuilder[Self <: FeatureTransformation] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureTransformation](x: Self) {
     
-    @scala.inline
-    def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
+    inline def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
-    @scala.inline
-    def setDefaultParameters(value: FeaturizationParameters): Self = StObject.set(x, "defaultParameters", value.asInstanceOf[js.Any])
+    inline def setDefaultParameters(value: FeaturizationParameters): Self = StObject.set(x, "defaultParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultParametersUndefined: Self = StObject.set(x, "defaultParameters", js.undefined)
+    inline def setDefaultParametersUndefined: Self = StObject.set(x, "defaultParameters", js.undefined)
     
-    @scala.inline
-    def setFeatureTransformationArn(value: Arn): Self = StObject.set(x, "featureTransformationArn", value.asInstanceOf[js.Any])
+    inline def setFeatureTransformationArn(value: Arn): Self = StObject.set(x, "featureTransformationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureTransformationArnUndefined: Self = StObject.set(x, "featureTransformationArn", js.undefined)
+    inline def setFeatureTransformationArnUndefined: Self = StObject.set(x, "featureTransformationArn", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
+    inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

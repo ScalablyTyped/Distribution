@@ -16,20 +16,16 @@ trait PickMemberExpressionobjecObject extends StObject {
 }
 object PickMemberExpressionobjecObject {
   
-  @scala.inline
-  def apply(`object`: Expression, property: Expression | Identifier_ | PrivateName_): PickMemberExpressionobjecObject = {
+  inline def apply(`object`: Expression, property: Expression | Identifier_ | PrivateName_): PickMemberExpressionobjecObject = {
     val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickMemberExpressionobjecObject]
   }
   
-  @scala.inline
-  implicit class PickMemberExpressionobjecObjectMutableBuilder[Self <: PickMemberExpressionobjecObject] (val x: Self) extends AnyVal {
+  extension [Self <: PickMemberExpressionobjecObject](x: Self) {
     
-    @scala.inline
-    def setObject(value: Expression): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Expression): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: Expression | Identifier_ | PrivateName_): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: Expression | Identifier_ | PrivateName_): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }
 }

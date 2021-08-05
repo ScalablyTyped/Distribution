@@ -56,29 +56,22 @@ object helperMod {
   }
   object HelperStepsPropsT {
     
-    @scala.inline
-    def apply(index: Double, length: Double, onFinish: () => js.Any, onNext: () => js.Any, onPrev: () => js.Any): HelperStepsPropsT = {
+    inline def apply(index: Double, length: Double, onFinish: () => js.Any, onNext: () => js.Any, onPrev: () => js.Any): HelperStepsPropsT = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], onFinish = js.Any.fromFunction0(onFinish), onNext = js.Any.fromFunction0(onNext), onPrev = js.Any.fromFunction0(onPrev))
       __obj.asInstanceOf[HelperStepsPropsT]
     }
     
-    @scala.inline
-    implicit class HelperStepsPropsTMutableBuilder[Self <: HelperStepsPropsT] (val x: Self) extends AnyVal {
+    extension [Self <: HelperStepsPropsT](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnFinish(value: () => js.Any): Self = StObject.set(x, "onFinish", js.Any.fromFunction0(value))
+      inline def setOnFinish(value: () => js.Any): Self = StObject.set(x, "onFinish", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnNext(value: () => js.Any): Self = StObject.set(x, "onNext", js.Any.fromFunction0(value))
+      inline def setOnNext(value: () => js.Any): Self = StObject.set(x, "onNext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPrev(value: () => js.Any): Self = StObject.set(x, "onPrev", js.Any.fromFunction0(value))
+      inline def setOnPrev(value: () => js.Any): Self = StObject.set(x, "onPrev", js.Any.fromFunction0(value))
     }
   }
   

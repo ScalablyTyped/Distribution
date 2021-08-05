@@ -24,8 +24,7 @@ trait HeightSegments extends StObject {
 }
 object HeightSegments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: Double,
     heightSegments: Double,
     openEnded: Boolean,
@@ -39,31 +38,22 @@ object HeightSegments {
     __obj.asInstanceOf[HeightSegments]
   }
   
-  @scala.inline
-  implicit class HeightSegmentsMutableBuilder[Self <: HeightSegments] (val x: Self) extends AnyVal {
+  extension [Self <: HeightSegments](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightSegments(value: Double): Self = StObject.set(x, "heightSegments", value.asInstanceOf[js.Any])
+    inline def setHeightSegments(value: Double): Self = StObject.set(x, "heightSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenEnded(value: Boolean): Self = StObject.set(x, "openEnded", value.asInstanceOf[js.Any])
+    inline def setOpenEnded(value: Boolean): Self = StObject.set(x, "openEnded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadialSegments(value: Double): Self = StObject.set(x, "radialSegments", value.asInstanceOf[js.Any])
+    inline def setRadialSegments(value: Double): Self = StObject.set(x, "radialSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusBottom(value: Double): Self = StObject.set(x, "radiusBottom", value.asInstanceOf[js.Any])
+    inline def setRadiusBottom(value: Double): Self = StObject.set(x, "radiusBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusTop(value: Double): Self = StObject.set(x, "radiusTop", value.asInstanceOf[js.Any])
+    inline def setRadiusTop(value: Double): Self = StObject.set(x, "radiusTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThetaLength(value: Double): Self = StObject.set(x, "thetaLength", value.asInstanceOf[js.Any])
+    inline def setThetaLength(value: Double): Self = StObject.set(x, "thetaLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThetaStart(value: Double): Self = StObject.set(x, "thetaStart", value.asInstanceOf[js.Any])
+    inline def setThetaStart(value: Double): Self = StObject.set(x, "thetaStart", value.asInstanceOf[js.Any])
   }
 }

@@ -21,39 +21,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AtRules extends StObject
 object AtRules {
   
-  @scala.inline
-  def `@charset`: typings.preact.preactStrings.`@charset` = "@charset".asInstanceOf[typings.preact.preactStrings.`@charset`]
+  inline def `@charset`: typings.preact.preactStrings.`@charset` = "@charset".asInstanceOf[typings.preact.preactStrings.`@charset`]
   
-  @scala.inline
-  def `@counter-style`: typings.preact.preactStrings.`@counter-style` = "@counter-style".asInstanceOf[typings.preact.preactStrings.`@counter-style`]
+  inline def `@counter-style`: typings.preact.preactStrings.`@counter-style` = "@counter-style".asInstanceOf[typings.preact.preactStrings.`@counter-style`]
   
-  @scala.inline
-  def `@document`: typings.preact.preactStrings.`@document` = "@document".asInstanceOf[typings.preact.preactStrings.`@document`]
+  inline def `@document`: typings.preact.preactStrings.`@document` = "@document".asInstanceOf[typings.preact.preactStrings.`@document`]
   
-  @scala.inline
-  def `@font-face`: typings.preact.preactStrings.`@font-face` = "@font-face".asInstanceOf[typings.preact.preactStrings.`@font-face`]
+  inline def `@font-face`: typings.preact.preactStrings.`@font-face` = "@font-face".asInstanceOf[typings.preact.preactStrings.`@font-face`]
   
-  @scala.inline
-  def `@font-feature-values`: typings.preact.preactStrings.`@font-feature-values` = "@font-feature-values".asInstanceOf[typings.preact.preactStrings.`@font-feature-values`]
+  inline def `@font-feature-values`: typings.preact.preactStrings.`@font-feature-values` = "@font-feature-values".asInstanceOf[typings.preact.preactStrings.`@font-feature-values`]
   
-  @scala.inline
-  def `@import`: typings.preact.preactStrings.`@import` = "@import".asInstanceOf[typings.preact.preactStrings.`@import`]
+  inline def `@import`: typings.preact.preactStrings.`@import` = "@import".asInstanceOf[typings.preact.preactStrings.`@import`]
   
-  @scala.inline
-  def `@keyframes`: typings.preact.preactStrings.`@keyframes` = "@keyframes".asInstanceOf[typings.preact.preactStrings.`@keyframes`]
+  inline def `@keyframes`: typings.preact.preactStrings.`@keyframes` = "@keyframes".asInstanceOf[typings.preact.preactStrings.`@keyframes`]
   
-  @scala.inline
-  def `@media`: typings.preact.preactStrings.`@media` = "@media".asInstanceOf[typings.preact.preactStrings.`@media`]
+  inline def `@media`: typings.preact.preactStrings.`@media` = "@media".asInstanceOf[typings.preact.preactStrings.`@media`]
   
-  @scala.inline
-  def `@namespace`: typings.preact.preactStrings.`@namespace` = "@namespace".asInstanceOf[typings.preact.preactStrings.`@namespace`]
+  inline def `@namespace`: typings.preact.preactStrings.`@namespace` = "@namespace".asInstanceOf[typings.preact.preactStrings.`@namespace`]
   
-  @scala.inline
-  def `@page`: typings.preact.preactStrings.`@page` = "@page".asInstanceOf[typings.preact.preactStrings.`@page`]
+  inline def `@page`: typings.preact.preactStrings.`@page` = "@page".asInstanceOf[typings.preact.preactStrings.`@page`]
   
-  @scala.inline
-  def `@supports`: typings.preact.preactStrings.`@supports` = "@supports".asInstanceOf[typings.preact.preactStrings.`@supports`]
+  inline def `@supports`: typings.preact.preactStrings.`@supports` = "@supports".asInstanceOf[typings.preact.preactStrings.`@supports`]
   
-  @scala.inline
-  def `@viewport`: typings.preact.preactStrings.`@viewport` = "@viewport".asInstanceOf[typings.preact.preactStrings.`@viewport`]
+  inline def `@viewport`: typings.preact.preactStrings.`@viewport` = "@viewport".asInstanceOf[typings.preact.preactStrings.`@viewport`]
 }

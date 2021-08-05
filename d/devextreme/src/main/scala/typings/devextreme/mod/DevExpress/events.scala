@@ -63,8 +63,7 @@ object events {
   }
   object dxEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTarget: Element,
       data: js.Any,
       delegateTarget: Element,
@@ -80,38 +79,27 @@ object events {
       __obj.asInstanceOf[typings.devextreme.mod.DevExpress.events.dxEvent]
     }
     
-    @scala.inline
-    implicit class dxEventMutableBuilder[Self <: typings.devextreme.mod.DevExpress.events.dxEvent] (val x: Self) extends AnyVal {
+    extension [Self <: typings.devextreme.mod.DevExpress.events.dxEvent](x: Self) {
       
-      @scala.inline
-      def setCurrentTarget(value: Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateTarget(value: Element): Self = StObject.set(x, "delegateTarget", value.asInstanceOf[js.Any])
+      inline def setDelegateTarget(value: Element): Self = StObject.set(x, "delegateTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+      inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImmediatePropagationStopped(value: () => Boolean): Self = StObject.set(x, "isImmediatePropagationStopped", js.Any.fromFunction0(value))
+      inline def setIsImmediatePropagationStopped(value: () => Boolean): Self = StObject.set(x, "isImmediatePropagationStopped", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
+      inline def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
+      inline def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,14 +110,12 @@ object events {
   trait event extends StObject
   object event {
     
-    @scala.inline
-    def JQueryEventObject(): typings.devextreme.mod.global.JQueryEventObject = {
+    inline def JQueryEventObject(): typings.devextreme.mod.global.JQueryEventObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.devextreme.mod.global.JQueryEventObject]
     }
     
-    @scala.inline
-    def dxEvent(
+    inline def dxEvent(
       currentTarget: Element,
       data: js.Any,
       delegateTarget: Element,

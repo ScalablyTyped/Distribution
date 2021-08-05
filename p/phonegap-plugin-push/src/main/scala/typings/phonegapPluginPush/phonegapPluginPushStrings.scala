@@ -8,16 +8,13 @@ object phonegapPluginPushStrings {
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait notification extends StObject
-  @scala.inline
-  def notification: notification = "notification".asInstanceOf[notification]
+  inline def notification: notification = "notification".asInstanceOf[notification]
   
   @js.native
   sealed trait registration extends StObject
-  @scala.inline
-  def registration: registration = "registration".asInstanceOf[registration]
+  inline def registration: registration = "registration".asInstanceOf[registration]
 }

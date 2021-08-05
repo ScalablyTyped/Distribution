@@ -17,19 +17,15 @@ trait SchemaWafExpressionSetExpression extends StObject {
 }
 object SchemaWafExpressionSetExpression {
   
-  @scala.inline
-  def apply(): SchemaWafExpressionSetExpression = {
+  inline def apply(): SchemaWafExpressionSetExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWafExpressionSetExpression]
   }
   
-  @scala.inline
-  implicit class SchemaWafExpressionSetExpressionMutableBuilder[Self <: SchemaWafExpressionSetExpression] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWafExpressionSetExpression](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

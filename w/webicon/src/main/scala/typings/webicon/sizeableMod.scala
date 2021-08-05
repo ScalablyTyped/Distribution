@@ -15,20 +15,16 @@ object sizeableMod {
   }
   object Sizeable {
     
-    @scala.inline
-    def apply(): Sizeable = {
+    inline def apply(): Sizeable = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Sizeable]
     }
     
-    @scala.inline
-    implicit class SizeableMutableBuilder[Self <: Sizeable] (val x: Self) extends AnyVal {
+    extension [Self <: Sizeable](x: Self) {
       
-      @scala.inline
-      def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
+      inline def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
+      inline def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
     }
   }
 }

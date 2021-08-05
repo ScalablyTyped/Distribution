@@ -16,18 +16,15 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("bearer")
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setType(value: bearer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: bearer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,26 +36,20 @@ object anon {
   }
   object ContentType {
     
-    @scala.inline
-    def apply(): ContentType = {
+    inline def apply(): ContentType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContentType]
     }
     
-    @scala.inline
-    implicit class ContentTypeMutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
+    extension [Self <: ContentType](x: Self) {
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     }
   }
   
@@ -70,26 +61,20 @@ object anon {
   }
   object Deadline {
     
-    @scala.inline
-    def apply(): Deadline = {
+    inline def apply(): Deadline = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Deadline]
     }
     
-    @scala.inline
-    implicit class DeadlineMutableBuilder[Self <: Deadline] (val x: Self) extends AnyVal {
+    extension [Self <: Deadline](x: Self) {
       
-      @scala.inline
-      def setDeadline(value: Double): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+      inline def setDeadline(value: Double): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
+      inline def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
       
-      @scala.inline
-      def setResponse(value: Double): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Double): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
   
@@ -101,20 +86,16 @@ object anon {
   }
   object Passphrase {
     
-    @scala.inline
-    def apply(passphrase: String, pfx: String | Buffer): Passphrase = {
+    inline def apply(passphrase: String, pfx: String | Buffer): Passphrase = {
       val __obj = js.Dynamic.literal(passphrase = passphrase.asInstanceOf[js.Any], pfx = pfx.asInstanceOf[js.Any])
       __obj.asInstanceOf[Passphrase]
     }
     
-    @scala.inline
-    implicit class PassphraseMutableBuilder[Self <: Passphrase] (val x: Self) extends AnyVal {
+    extension [Self <: Passphrase](x: Self) {
       
-      @scala.inline
-      def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+      inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPfx(value: String | Buffer): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+      inline def setPfx(value: String | Buffer): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,18 +105,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(`type`: basic | auto): Type = {
+    inline def apply(`type`: basic | auto): Type = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: basic | auto): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: basic | auto): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -66,53 +66,39 @@ trait ViewEngineHooks_ extends StObject {
 }
 object ViewEngineHooks_ {
   
-  @scala.inline
-  def apply(): ViewEngineHooks_ = {
+  inline def apply(): ViewEngineHooks_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewEngineHooks_]
   }
   
-  @scala.inline
-  implicit class ViewEngineHooks_MutableBuilder[Self <: ViewEngineHooks_] (val x: Self) extends AnyVal {
+  extension [Self <: ViewEngineHooks_](x: Self) {
     
-    @scala.inline
-    def setAfterCompile(value: /* viewFactory */ ViewFactory => Unit): Self = StObject.set(x, "afterCompile", js.Any.fromFunction1(value))
+    inline def setAfterCompile(value: /* viewFactory */ ViewFactory => Unit): Self = StObject.set(x, "afterCompile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterCompileUndefined: Self = StObject.set(x, "afterCompile", js.undefined)
+    inline def setAfterCompileUndefined: Self = StObject.set(x, "afterCompile", js.undefined)
     
-    @scala.inline
-    def setAfterCreate(value: /* view */ View_ => Unit): Self = StObject.set(x, "afterCreate", js.Any.fromFunction1(value))
+    inline def setAfterCreate(value: /* view */ View_ => Unit): Self = StObject.set(x, "afterCreate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterCreateUndefined: Self = StObject.set(x, "afterCreate", js.undefined)
+    inline def setAfterCreateUndefined: Self = StObject.set(x, "afterCreate", js.undefined)
     
-    @scala.inline
-    def setBeforeBind(value: /* view */ View_ => Unit): Self = StObject.set(x, "beforeBind", js.Any.fromFunction1(value))
+    inline def setBeforeBind(value: /* view */ View_ => Unit): Self = StObject.set(x, "beforeBind", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeBindUndefined: Self = StObject.set(x, "beforeBind", js.undefined)
+    inline def setBeforeBindUndefined: Self = StObject.set(x, "beforeBind", js.undefined)
     
-    @scala.inline
-    def setBeforeCompile(
+    inline def setBeforeCompile(
       value: (/* content */ DocumentFragment, /* resources */ ViewResources_, /* instruction */ ViewCompileInstruction) => Unit
     ): Self = StObject.set(x, "beforeCompile", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeCompileUndefined: Self = StObject.set(x, "beforeCompile", js.undefined)
+    inline def setBeforeCompileUndefined: Self = StObject.set(x, "beforeCompile", js.undefined)
     
-    @scala.inline
-    def setBeforeCreate(
+    inline def setBeforeCreate(
       value: (/* viewFactory */ ViewFactory, /* container */ Container, /* content */ DocumentFragment, /* instruction */ ViewCreateInstruction) => Unit
     ): Self = StObject.set(x, "beforeCreate", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setBeforeCreateUndefined: Self = StObject.set(x, "beforeCreate", js.undefined)
+    inline def setBeforeCreateUndefined: Self = StObject.set(x, "beforeCreate", js.undefined)
     
-    @scala.inline
-    def setBeforeUnbind(value: /* view */ View_ => Unit): Self = StObject.set(x, "beforeUnbind", js.Any.fromFunction1(value))
+    inline def setBeforeUnbind(value: /* view */ View_ => Unit): Self = StObject.set(x, "beforeUnbind", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeUnbindUndefined: Self = StObject.set(x, "beforeUnbind", js.undefined)
+    inline def setBeforeUnbindUndefined: Self = StObject.set(x, "beforeUnbind", js.undefined)
   }
 }

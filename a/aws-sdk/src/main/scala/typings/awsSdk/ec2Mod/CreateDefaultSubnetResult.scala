@@ -13,19 +13,15 @@ trait CreateDefaultSubnetResult extends StObject {
 }
 object CreateDefaultSubnetResult {
   
-  @scala.inline
-  def apply(): CreateDefaultSubnetResult = {
+  inline def apply(): CreateDefaultSubnetResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDefaultSubnetResult]
   }
   
-  @scala.inline
-  implicit class CreateDefaultSubnetResultMutableBuilder[Self <: CreateDefaultSubnetResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDefaultSubnetResult](x: Self) {
     
-    @scala.inline
-    def setSubnet(value: Subnet): Self = StObject.set(x, "Subnet", value.asInstanceOf[js.Any])
+    inline def setSubnet(value: Subnet): Self = StObject.set(x, "Subnet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetUndefined: Self = StObject.set(x, "Subnet", js.undefined)
+    inline def setSubnetUndefined: Self = StObject.set(x, "Subnet", js.undefined)
   }
 }

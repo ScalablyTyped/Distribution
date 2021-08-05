@@ -18,25 +18,19 @@ trait ReplicaUpdate extends StObject {
 }
 object ReplicaUpdate {
   
-  @scala.inline
-  def apply(): ReplicaUpdate = {
+  inline def apply(): ReplicaUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicaUpdate]
   }
   
-  @scala.inline
-  implicit class ReplicaUpdateMutableBuilder[Self <: ReplicaUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicaUpdate](x: Self) {
     
-    @scala.inline
-    def setCreate(value: CreateReplicaAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: CreateReplicaAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
     
-    @scala.inline
-    def setDelete(value: DeleteReplicaAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: DeleteReplicaAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
+    inline def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
   }
 }

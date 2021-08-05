@@ -23,34 +23,25 @@ trait ConnectionPhysicalConnectionRequirements extends StObject {
 }
 object ConnectionPhysicalConnectionRequirements {
   
-  @scala.inline
-  def apply(): ConnectionPhysicalConnectionRequirements = {
+  inline def apply(): ConnectionPhysicalConnectionRequirements = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionPhysicalConnectionRequirements]
   }
   
-  @scala.inline
-  implicit class ConnectionPhysicalConnectionRequirementsMutableBuilder[Self <: ConnectionPhysicalConnectionRequirements] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionPhysicalConnectionRequirements](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupIdLists(value: js.Array[String]): Self = StObject.set(x, "securityGroupIdLists", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIdLists(value: js.Array[String]): Self = StObject.set(x, "securityGroupIdLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdListsUndefined: Self = StObject.set(x, "securityGroupIdLists", js.undefined)
+    inline def setSecurityGroupIdListsUndefined: Self = StObject.set(x, "securityGroupIdLists", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupIdListsVarargs(value: String*): Self = StObject.set(x, "securityGroupIdLists", js.Array(value :_*))
+    inline def setSecurityGroupIdListsVarargs(value: String*): Self = StObject.set(x, "securityGroupIdLists", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
   }
 }

@@ -82,137 +82,95 @@ trait Job extends StObject {
 }
 object Job {
   
-  @scala.inline
-  def apply(): Job = {
+  inline def apply(): Job = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Job]
   }
   
-  @scala.inline
-  implicit class JobMutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
+  extension [Self <: Job](x: Self) {
     
-    @scala.inline
-    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
-    @scala.inline
-    def setDriverControlFilesUri(value: String): Self = StObject.set(x, "driverControlFilesUri", value.asInstanceOf[js.Any])
+    inline def setDriverControlFilesUri(value: String): Self = StObject.set(x, "driverControlFilesUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriverControlFilesUriUndefined: Self = StObject.set(x, "driverControlFilesUri", js.undefined)
+    inline def setDriverControlFilesUriUndefined: Self = StObject.set(x, "driverControlFilesUri", js.undefined)
     
-    @scala.inline
-    def setDriverOutputResourceUri(value: String): Self = StObject.set(x, "driverOutputResourceUri", value.asInstanceOf[js.Any])
+    inline def setDriverOutputResourceUri(value: String): Self = StObject.set(x, "driverOutputResourceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriverOutputResourceUriUndefined: Self = StObject.set(x, "driverOutputResourceUri", js.undefined)
+    inline def setDriverOutputResourceUriUndefined: Self = StObject.set(x, "driverOutputResourceUri", js.undefined)
     
-    @scala.inline
-    def setHadoopJob(value: HadoopJob): Self = StObject.set(x, "hadoopJob", value.asInstanceOf[js.Any])
+    inline def setHadoopJob(value: HadoopJob): Self = StObject.set(x, "hadoopJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHadoopJobUndefined: Self = StObject.set(x, "hadoopJob", js.undefined)
+    inline def setHadoopJobUndefined: Self = StObject.set(x, "hadoopJob", js.undefined)
     
-    @scala.inline
-    def setHiveJob(value: HiveJob): Self = StObject.set(x, "hiveJob", value.asInstanceOf[js.Any])
+    inline def setHiveJob(value: HiveJob): Self = StObject.set(x, "hiveJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiveJobUndefined: Self = StObject.set(x, "hiveJob", js.undefined)
+    inline def setHiveJobUndefined: Self = StObject.set(x, "hiveJob", js.undefined)
     
-    @scala.inline
-    def setJobUuid(value: String): Self = StObject.set(x, "jobUuid", value.asInstanceOf[js.Any])
+    inline def setJobUuid(value: String): Self = StObject.set(x, "jobUuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobUuidUndefined: Self = StObject.set(x, "jobUuid", js.undefined)
+    inline def setJobUuidUndefined: Self = StObject.set(x, "jobUuid", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Job & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setPigJob(value: PigJob): Self = StObject.set(x, "pigJob", value.asInstanceOf[js.Any])
+    inline def setPigJob(value: PigJob): Self = StObject.set(x, "pigJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPigJobUndefined: Self = StObject.set(x, "pigJob", js.undefined)
+    inline def setPigJobUndefined: Self = StObject.set(x, "pigJob", js.undefined)
     
-    @scala.inline
-    def setPlacement(value: JobPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: JobPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
-    @scala.inline
-    def setPrestoJob(value: PrestoJob): Self = StObject.set(x, "prestoJob", value.asInstanceOf[js.Any])
+    inline def setPrestoJob(value: PrestoJob): Self = StObject.set(x, "prestoJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrestoJobUndefined: Self = StObject.set(x, "prestoJob", js.undefined)
+    inline def setPrestoJobUndefined: Self = StObject.set(x, "prestoJob", js.undefined)
     
-    @scala.inline
-    def setPysparkJob(value: PySparkJob): Self = StObject.set(x, "pysparkJob", value.asInstanceOf[js.Any])
+    inline def setPysparkJob(value: PySparkJob): Self = StObject.set(x, "pysparkJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPysparkJobUndefined: Self = StObject.set(x, "pysparkJob", js.undefined)
+    inline def setPysparkJobUndefined: Self = StObject.set(x, "pysparkJob", js.undefined)
     
-    @scala.inline
-    def setReference(value: JobReference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: JobReference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+    inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
-    @scala.inline
-    def setScheduling(value: JobScheduling): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
+    inline def setScheduling(value: JobScheduling): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
+    inline def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
     
-    @scala.inline
-    def setSparkJob(value: SparkJob): Self = StObject.set(x, "sparkJob", value.asInstanceOf[js.Any])
+    inline def setSparkJob(value: SparkJob): Self = StObject.set(x, "sparkJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSparkJobUndefined: Self = StObject.set(x, "sparkJob", js.undefined)
+    inline def setSparkJobUndefined: Self = StObject.set(x, "sparkJob", js.undefined)
     
-    @scala.inline
-    def setSparkRJob(value: SparkRJob): Self = StObject.set(x, "sparkRJob", value.asInstanceOf[js.Any])
+    inline def setSparkRJob(value: SparkRJob): Self = StObject.set(x, "sparkRJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSparkRJobUndefined: Self = StObject.set(x, "sparkRJob", js.undefined)
+    inline def setSparkRJobUndefined: Self = StObject.set(x, "sparkRJob", js.undefined)
     
-    @scala.inline
-    def setSparkSqlJob(value: SparkSqlJob): Self = StObject.set(x, "sparkSqlJob", value.asInstanceOf[js.Any])
+    inline def setSparkSqlJob(value: SparkSqlJob): Self = StObject.set(x, "sparkSqlJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSparkSqlJobUndefined: Self = StObject.set(x, "sparkSqlJob", js.undefined)
+    inline def setSparkSqlJobUndefined: Self = StObject.set(x, "sparkSqlJob", js.undefined)
     
-    @scala.inline
-    def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusHistory(value: js.Array[JobStatus]): Self = StObject.set(x, "statusHistory", value.asInstanceOf[js.Any])
+    inline def setStatusHistory(value: js.Array[JobStatus]): Self = StObject.set(x, "statusHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusHistoryUndefined: Self = StObject.set(x, "statusHistory", js.undefined)
+    inline def setStatusHistoryUndefined: Self = StObject.set(x, "statusHistory", js.undefined)
     
-    @scala.inline
-    def setStatusHistoryVarargs(value: JobStatus*): Self = StObject.set(x, "statusHistory", js.Array(value :_*))
+    inline def setStatusHistoryVarargs(value: JobStatus*): Self = StObject.set(x, "statusHistory", js.Array(value :_*))
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setYarnApplications(value: js.Array[YarnApplication]): Self = StObject.set(x, "yarnApplications", value.asInstanceOf[js.Any])
+    inline def setYarnApplications(value: js.Array[YarnApplication]): Self = StObject.set(x, "yarnApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYarnApplicationsUndefined: Self = StObject.set(x, "yarnApplications", js.undefined)
+    inline def setYarnApplicationsUndefined: Self = StObject.set(x, "yarnApplications", js.undefined)
     
-    @scala.inline
-    def setYarnApplicationsVarargs(value: YarnApplication*): Self = StObject.set(x, "yarnApplications", js.Array(value :_*))
+    inline def setYarnApplicationsVarargs(value: YarnApplication*): Self = StObject.set(x, "yarnApplications", js.Array(value :_*))
   }
 }

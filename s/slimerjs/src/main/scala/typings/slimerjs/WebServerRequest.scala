@@ -21,8 +21,7 @@ trait WebServerRequest extends StObject {
 }
 object WebServerRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headers: StringDictionary[String],
     httpVersion: Double,
     method: String,
@@ -34,25 +33,18 @@ object WebServerRequest {
     __obj.asInstanceOf[WebServerRequest]
   }
   
-  @scala.inline
-  implicit class WebServerRequestMutableBuilder[Self <: WebServerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: WebServerRequest](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpVersion(value: Double): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
+    inline def setHttpVersion(value: Double): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPost(value: String): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: String): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostRaw(value: String): Self = StObject.set(x, "postRaw", value.asInstanceOf[js.Any])
+    inline def setPostRaw(value: String): Self = StObject.set(x, "postRaw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -22,31 +22,23 @@ trait SchemaCriteriaTargeting extends StObject {
 }
 object SchemaCriteriaTargeting {
   
-  @scala.inline
-  def apply(): SchemaCriteriaTargeting = {
+  inline def apply(): SchemaCriteriaTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCriteriaTargeting]
   }
   
-  @scala.inline
-  implicit class SchemaCriteriaTargetingMutableBuilder[Self <: SchemaCriteriaTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCriteriaTargeting](x: Self) {
     
-    @scala.inline
-    def setExcludedCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "excludedCriteriaIds", value.asInstanceOf[js.Any])
+    inline def setExcludedCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "excludedCriteriaIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedCriteriaIdsUndefined: Self = StObject.set(x, "excludedCriteriaIds", js.undefined)
+    inline def setExcludedCriteriaIdsUndefined: Self = StObject.set(x, "excludedCriteriaIds", js.undefined)
     
-    @scala.inline
-    def setExcludedCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "excludedCriteriaIds", js.Array(value :_*))
+    inline def setExcludedCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "excludedCriteriaIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetedCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "targetedCriteriaIds", value.asInstanceOf[js.Any])
+    inline def setTargetedCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "targetedCriteriaIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetedCriteriaIdsUndefined: Self = StObject.set(x, "targetedCriteriaIds", js.undefined)
+    inline def setTargetedCriteriaIdsUndefined: Self = StObject.set(x, "targetedCriteriaIds", js.undefined)
     
-    @scala.inline
-    def setTargetedCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "targetedCriteriaIds", js.Array(value :_*))
+    inline def setTargetedCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "targetedCriteriaIds", js.Array(value :_*))
   }
 }

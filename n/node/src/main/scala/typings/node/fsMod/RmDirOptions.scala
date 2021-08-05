@@ -38,31 +38,23 @@ trait RmDirOptions extends StObject {
 }
 object RmDirOptions {
   
-  @scala.inline
-  def apply(): RmDirOptions = {
+  inline def apply(): RmDirOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RmDirOptions]
   }
   
-  @scala.inline
-  implicit class RmDirOptionsMutableBuilder[Self <: RmDirOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RmDirOptions](x: Self) {
     
-    @scala.inline
-    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
-    @scala.inline
-    def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
+    inline def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
+    inline def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
   }
 }

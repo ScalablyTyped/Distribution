@@ -12,19 +12,15 @@ trait ParticipantIdentity extends StObject {
 }
 object ParticipantIdentity {
   
-  @scala.inline
-  def apply(participantId: Double, player: Player): ParticipantIdentity = {
+  inline def apply(participantId: Double, player: Player): ParticipantIdentity = {
     val __obj = js.Dynamic.literal(participantId = participantId.asInstanceOf[js.Any], player = player.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticipantIdentity]
   }
   
-  @scala.inline
-  implicit class ParticipantIdentityMutableBuilder[Self <: ParticipantIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: ParticipantIdentity](x: Self) {
     
-    @scala.inline
-    def setParticipantId(value: Double): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
+    inline def setParticipantId(value: Double): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayer(value: Player): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: Player): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
   }
 }

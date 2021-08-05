@@ -22,28 +22,21 @@ trait SchemaStackFrames extends StObject {
 }
 object SchemaStackFrames {
   
-  @scala.inline
-  def apply(): SchemaStackFrames = {
+  inline def apply(): SchemaStackFrames = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStackFrames]
   }
   
-  @scala.inline
-  implicit class SchemaStackFramesMutableBuilder[Self <: SchemaStackFrames] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStackFrames](x: Self) {
     
-    @scala.inline
-    def setDroppedFramesCount(value: Double): Self = StObject.set(x, "droppedFramesCount", value.asInstanceOf[js.Any])
+    inline def setDroppedFramesCount(value: Double): Self = StObject.set(x, "droppedFramesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDroppedFramesCountUndefined: Self = StObject.set(x, "droppedFramesCount", js.undefined)
+    inline def setDroppedFramesCountUndefined: Self = StObject.set(x, "droppedFramesCount", js.undefined)
     
-    @scala.inline
-    def setFrame(value: js.Array[SchemaStackFrame]): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: js.Array[SchemaStackFrame]): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+    inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
-    @scala.inline
-    def setFrameVarargs(value: SchemaStackFrame*): Self = StObject.set(x, "frame", js.Array(value :_*))
+    inline def setFrameVarargs(value: SchemaStackFrame*): Self = StObject.set(x, "frame", js.Array(value :_*))
   }
 }

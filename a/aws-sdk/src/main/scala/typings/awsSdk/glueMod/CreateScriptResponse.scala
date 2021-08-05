@@ -18,25 +18,19 @@ trait CreateScriptResponse extends StObject {
 }
 object CreateScriptResponse {
   
-  @scala.inline
-  def apply(): CreateScriptResponse = {
+  inline def apply(): CreateScriptResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateScriptResponse]
   }
   
-  @scala.inline
-  implicit class CreateScriptResponseMutableBuilder[Self <: CreateScriptResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateScriptResponse](x: Self) {
     
-    @scala.inline
-    def setPythonScript(value: PythonScript): Self = StObject.set(x, "PythonScript", value.asInstanceOf[js.Any])
+    inline def setPythonScript(value: PythonScript): Self = StObject.set(x, "PythonScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPythonScriptUndefined: Self = StObject.set(x, "PythonScript", js.undefined)
+    inline def setPythonScriptUndefined: Self = StObject.set(x, "PythonScript", js.undefined)
     
-    @scala.inline
-    def setScalaCode(value: ScalaCode): Self = StObject.set(x, "ScalaCode", value.asInstanceOf[js.Any])
+    inline def setScalaCode(value: ScalaCode): Self = StObject.set(x, "ScalaCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalaCodeUndefined: Self = StObject.set(x, "ScalaCode", js.undefined)
+    inline def setScalaCodeUndefined: Self = StObject.set(x, "ScalaCode", js.undefined)
   }
 }

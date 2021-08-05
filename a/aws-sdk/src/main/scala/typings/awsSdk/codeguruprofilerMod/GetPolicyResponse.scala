@@ -18,19 +18,15 @@ trait GetPolicyResponse extends StObject {
 }
 object GetPolicyResponse {
   
-  @scala.inline
-  def apply(policy: String, revisionId: RevisionId): GetPolicyResponse = {
+  inline def apply(policy: String, revisionId: RevisionId): GetPolicyResponse = {
     val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], revisionId = revisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPolicyResponse]
   }
   
-  @scala.inline
-  implicit class GetPolicyResponseMutableBuilder[Self <: GetPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
   }
 }

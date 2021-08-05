@@ -17,8 +17,7 @@ object global {
   @JSGlobal("Map")
   @js.native
   def Map: MapConstructor = js.native
-  @scala.inline
-  def Map_=(x: MapConstructor): Unit = js.Dynamic.global.updateDynamic("Map")(x.asInstanceOf[js.Any])
+  inline def Map_=(x: MapConstructor): Unit = js.Dynamic.global.updateDynamic("Map")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Set")
@@ -31,8 +30,7 @@ object global {
   @JSGlobal("Set")
   @js.native
   def Set: SetConstructor = js.native
-  @scala.inline
-  def Set_=(x: SetConstructor): Unit = js.Dynamic.global.updateDynamic("Set")(x.asInstanceOf[js.Any])
+  inline def Set_=(x: SetConstructor): Unit = js.Dynamic.global.updateDynamic("Set")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WeakMap")
@@ -45,8 +43,7 @@ object global {
   @JSGlobal("WeakMap")
   @js.native
   def WeakMap: WeakMapConstructor = js.native
-  @scala.inline
-  def WeakMap_=(x: WeakMapConstructor): Unit = js.Dynamic.global.updateDynamic("WeakMap")(x.asInstanceOf[js.Any])
+  inline def WeakMap_=(x: WeakMapConstructor): Unit = js.Dynamic.global.updateDynamic("WeakMap")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WeakSet")
@@ -71,6 +68,5 @@ object global {
   @JSGlobal("WeakSet")
   @js.native
   def WeakSet: WeakSetConstructor = js.native
-  @scala.inline
-  def WeakSet_=(x: WeakSetConstructor): Unit = js.Dynamic.global.updateDynamic("WeakSet")(x.asInstanceOf[js.Any])
+  inline def WeakSet_=(x: WeakSetConstructor): Unit = js.Dynamic.global.updateDynamic("WeakSet")(x.asInstanceOf[js.Any])
 }

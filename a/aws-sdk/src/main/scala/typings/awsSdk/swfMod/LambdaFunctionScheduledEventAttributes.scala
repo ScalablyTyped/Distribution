@@ -38,40 +38,29 @@ trait LambdaFunctionScheduledEventAttributes extends StObject {
 }
 object LambdaFunctionScheduledEventAttributes {
   
-  @scala.inline
-  def apply(decisionTaskCompletedEventId: EventId, id: FunctionId, name: FunctionName): LambdaFunctionScheduledEventAttributes = {
+  inline def apply(decisionTaskCompletedEventId: EventId, id: FunctionId, name: FunctionName): LambdaFunctionScheduledEventAttributes = {
     val __obj = js.Dynamic.literal(decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaFunctionScheduledEventAttributes]
   }
   
-  @scala.inline
-  implicit class LambdaFunctionScheduledEventAttributesMutableBuilder[Self <: LambdaFunctionScheduledEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaFunctionScheduledEventAttributes](x: Self) {
     
-    @scala.inline
-    def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
+    inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: FunctionId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: FunctionId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: FunctionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: FunctionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setName(value: FunctionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: FunctionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "startToCloseTimeout", value.asInstanceOf[js.Any])
+    inline def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "startToCloseTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartToCloseTimeoutUndefined: Self = StObject.set(x, "startToCloseTimeout", js.undefined)
+    inline def setStartToCloseTimeoutUndefined: Self = StObject.set(x, "startToCloseTimeout", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait UpgradeInstanceRequest extends StObject {
 }
 object UpgradeInstanceRequest {
   
-  @scala.inline
-  def apply(): UpgradeInstanceRequest = {
+  inline def apply(): UpgradeInstanceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpgradeInstanceRequest]
   }
   
-  @scala.inline
-  implicit class UpgradeInstanceRequestMutableBuilder[Self <: UpgradeInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpgradeInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setRedisVersion(value: String): Self = StObject.set(x, "redisVersion", value.asInstanceOf[js.Any])
+    inline def setRedisVersion(value: String): Self = StObject.set(x, "redisVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedisVersionUndefined: Self = StObject.set(x, "redisVersion", js.undefined)
+    inline def setRedisVersionUndefined: Self = StObject.set(x, "redisVersion", js.undefined)
   }
 }

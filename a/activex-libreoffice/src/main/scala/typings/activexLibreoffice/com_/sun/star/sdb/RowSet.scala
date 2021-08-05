@@ -143,8 +143,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object RowSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveCommand: String,
     ActiveConnection: XConnection,
     ApplyFilter: Boolean,
@@ -312,64 +311,44 @@ object RowSet {
     __obj.asInstanceOf[RowSet]
   }
   
-  @scala.inline
-  implicit class RowSetMutableBuilder[Self <: RowSet] (val x: Self) extends AnyVal {
+  extension [Self <: RowSet](x: Self) {
     
-    @scala.inline
-    def setActiveCommand(value: String): Self = StObject.set(x, "ActiveCommand", value.asInstanceOf[js.Any])
+    inline def setActiveCommand(value: String): Self = StObject.set(x, "ActiveCommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
+    inline def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyFilter(value: Boolean): Self = StObject.set(x, "ApplyFilter", value.asInstanceOf[js.Any])
+    inline def setApplyFilter(value: Boolean): Self = StObject.set(x, "ApplyFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanUpdateInsertedRows(value: Boolean): Self = StObject.set(x, "CanUpdateInsertedRows", value.asInstanceOf[js.Any])
+    inline def setCanUpdateInsertedRows(value: Boolean): Self = StObject.set(x, "CanUpdateInsertedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandType(value: Double): Self = StObject.set(x, "CommandType", value.asInstanceOf[js.Any])
+    inline def setCommandType(value: Double): Self = StObject.set(x, "CommandType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupBy(value: String): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: String): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHavingClause(value: String): Self = StObject.set(x, "HavingClause", value.asInstanceOf[js.Any])
+    inline def setHavingClause(value: String): Self = StObject.set(x, "HavingClause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreResult(value: Boolean): Self = StObject.set(x, "IgnoreResult", value.asInstanceOf[js.Any])
+    inline def setIgnoreResult(value: Boolean): Self = StObject.set(x, "IgnoreResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBookmarkable(value: Boolean): Self = StObject.set(x, "IsBookmarkable", value.asInstanceOf[js.Any])
+    inline def setIsBookmarkable(value: Boolean): Self = StObject.set(x, "IsBookmarkable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsModified(value: Boolean): Self = StObject.set(x, "IsModified", value.asInstanceOf[js.Any])
+    inline def setIsModified(value: Boolean): Self = StObject.set(x, "IsModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNew(value: Boolean): Self = StObject.set(x, "IsNew", value.asInstanceOf[js.Any])
+    inline def setIsNew(value: Boolean): Self = StObject.set(x, "IsNew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRowCountFinal(value: Boolean): Self = StObject.set(x, "IsRowCountFinal", value.asInstanceOf[js.Any])
+    inline def setIsRowCountFinal(value: Boolean): Self = StObject.set(x, "IsRowCountFinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivileges(value: Double): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
+    inline def setPrivileges(value: Double): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateCatalogName(value: String): Self = StObject.set(x, "UpdateCatalogName", value.asInstanceOf[js.Any])
+    inline def setUpdateCatalogName(value: String): Self = StObject.set(x, "UpdateCatalogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateSchemaName(value: String): Self = StObject.set(x, "UpdateSchemaName", value.asInstanceOf[js.Any])
+    inline def setUpdateSchemaName(value: String): Self = StObject.set(x, "UpdateSchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTableName(value: String): Self = StObject.set(x, "UpdateTableName", value.asInstanceOf[js.Any])
+    inline def setUpdateTableName(value: String): Self = StObject.set(x, "UpdateTableName", value.asInstanceOf[js.Any])
   }
 }

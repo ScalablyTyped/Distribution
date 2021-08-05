@@ -10,19 +10,15 @@ trait RegisterContainerImageResult extends StObject {
 }
 object RegisterContainerImageResult {
   
-  @scala.inline
-  def apply(): RegisterContainerImageResult = {
+  inline def apply(): RegisterContainerImageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterContainerImageResult]
   }
   
-  @scala.inline
-  implicit class RegisterContainerImageResultMutableBuilder[Self <: RegisterContainerImageResult] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterContainerImageResult](x: Self) {
     
-    @scala.inline
-    def setContainerImage(value: ContainerImage): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
+    inline def setContainerImage(value: ContainerImage): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
+    inline def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
   }
 }

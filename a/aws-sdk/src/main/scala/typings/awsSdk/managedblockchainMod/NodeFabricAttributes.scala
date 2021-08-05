@@ -18,25 +18,19 @@ trait NodeFabricAttributes extends StObject {
 }
 object NodeFabricAttributes {
   
-  @scala.inline
-  def apply(): NodeFabricAttributes = {
+  inline def apply(): NodeFabricAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeFabricAttributes]
   }
   
-  @scala.inline
-  implicit class NodeFabricAttributesMutableBuilder[Self <: NodeFabricAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: NodeFabricAttributes](x: Self) {
     
-    @scala.inline
-    def setPeerEndpoint(value: String): Self = StObject.set(x, "PeerEndpoint", value.asInstanceOf[js.Any])
+    inline def setPeerEndpoint(value: String): Self = StObject.set(x, "PeerEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerEndpointUndefined: Self = StObject.set(x, "PeerEndpoint", js.undefined)
+    inline def setPeerEndpointUndefined: Self = StObject.set(x, "PeerEndpoint", js.undefined)
     
-    @scala.inline
-    def setPeerEventEndpoint(value: String): Self = StObject.set(x, "PeerEventEndpoint", value.asInstanceOf[js.Any])
+    inline def setPeerEventEndpoint(value: String): Self = StObject.set(x, "PeerEventEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerEventEndpointUndefined: Self = StObject.set(x, "PeerEventEndpoint", js.undefined)
+    inline def setPeerEventEndpointUndefined: Self = StObject.set(x, "PeerEventEndpoint", js.undefined)
   }
 }

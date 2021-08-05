@@ -17,16 +17,13 @@ trait GaugeExportOptions extends StObject {
 }
 object GaugeExportOptions {
   
-  @scala.inline
-  def apply(AutoArrangeContent: Boolean): GaugeExportOptions = {
+  inline def apply(AutoArrangeContent: Boolean): GaugeExportOptions = {
     val __obj = js.Dynamic.literal(AutoArrangeContent = AutoArrangeContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[GaugeExportOptions]
   }
   
-  @scala.inline
-  implicit class GaugeExportOptionsMutableBuilder[Self <: GaugeExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GaugeExportOptions](x: Self) {
     
-    @scala.inline
-    def setAutoArrangeContent(value: Boolean): Self = StObject.set(x, "AutoArrangeContent", value.asInstanceOf[js.Any])
+    inline def setAutoArrangeContent(value: Boolean): Self = StObject.set(x, "AutoArrangeContent", value.asInstanceOf[js.Any])
   }
 }

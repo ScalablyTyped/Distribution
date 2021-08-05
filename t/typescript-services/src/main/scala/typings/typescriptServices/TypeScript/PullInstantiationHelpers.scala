@@ -16,8 +16,7 @@ object PullInstantiationHelpers {
   }
   object MutableTypeArgumentMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createdDuplicateTypeArgumentMap: Boolean,
       ensureTypeArgumentCopy: () => Unit,
       typeParameterArgumentMap: TypeArgumentMap
@@ -26,17 +25,13 @@ object PullInstantiationHelpers {
       __obj.asInstanceOf[MutableTypeArgumentMap]
     }
     
-    @scala.inline
-    implicit class MutableTypeArgumentMapMutableBuilder[Self <: MutableTypeArgumentMap] (val x: Self) extends AnyVal {
+    extension [Self <: MutableTypeArgumentMap](x: Self) {
       
-      @scala.inline
-      def setCreatedDuplicateTypeArgumentMap(value: Boolean): Self = StObject.set(x, "createdDuplicateTypeArgumentMap", value.asInstanceOf[js.Any])
+      inline def setCreatedDuplicateTypeArgumentMap(value: Boolean): Self = StObject.set(x, "createdDuplicateTypeArgumentMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnsureTypeArgumentCopy(value: () => Unit): Self = StObject.set(x, "ensureTypeArgumentCopy", js.Any.fromFunction0(value))
+      inline def setEnsureTypeArgumentCopy(value: () => Unit): Self = StObject.set(x, "ensureTypeArgumentCopy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTypeParameterArgumentMap(value: TypeArgumentMap): Self = StObject.set(x, "typeParameterArgumentMap", value.asInstanceOf[js.Any])
+      inline def setTypeParameterArgumentMap(value: TypeArgumentMap): Self = StObject.set(x, "typeParameterArgumentMap", value.asInstanceOf[js.Any])
     }
   }
 }

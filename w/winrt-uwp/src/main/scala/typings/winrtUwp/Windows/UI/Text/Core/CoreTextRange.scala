@@ -15,19 +15,15 @@ trait CoreTextRange extends StObject {
 }
 object CoreTextRange {
   
-  @scala.inline
-  def apply(endCaretPosition: Double, startCaretPosition: Double): CoreTextRange = {
+  inline def apply(endCaretPosition: Double, startCaretPosition: Double): CoreTextRange = {
     val __obj = js.Dynamic.literal(endCaretPosition = endCaretPosition.asInstanceOf[js.Any], startCaretPosition = startCaretPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreTextRange]
   }
   
-  @scala.inline
-  implicit class CoreTextRangeMutableBuilder[Self <: CoreTextRange] (val x: Self) extends AnyVal {
+  extension [Self <: CoreTextRange](x: Self) {
     
-    @scala.inline
-    def setEndCaretPosition(value: Double): Self = StObject.set(x, "endCaretPosition", value.asInstanceOf[js.Any])
+    inline def setEndCaretPosition(value: Double): Self = StObject.set(x, "endCaretPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartCaretPosition(value: Double): Self = StObject.set(x, "startCaretPosition", value.asInstanceOf[js.Any])
+    inline def setStartCaretPosition(value: Double): Self = StObject.set(x, "startCaretPosition", value.asInstanceOf[js.Any])
   }
 }

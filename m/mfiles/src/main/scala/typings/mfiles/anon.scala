@@ -20,32 +20,24 @@ object anon {
   }
   object Finally {
     
-    @scala.inline
-    def apply(): Finally = {
+    inline def apply(): Finally = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Finally]
     }
     
-    @scala.inline
-    implicit class FinallyMutableBuilder[Self <: Finally] (val x: Self) extends AnyVal {
+    extension [Self <: Finally](x: Self) {
       
-      @scala.inline
-      def setFinally(value: () => Unit): Self = StObject.set(x, "Finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => Unit): Self = StObject.set(x, "Finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinallyUndefined: Self = StObject.set(x, "Finally", js.undefined)
+      inline def setFinallyUndefined: Self = StObject.set(x, "Finally", js.undefined)
       
-      @scala.inline
-      def setOnError(value: (/* errorCode */ Double, /* errorMessage */ String, /* errorStack */ String) => Unit): Self = StObject.set(x, "OnError", js.Any.fromFunction3(value))
+      inline def setOnError(value: (/* errorCode */ Double, /* errorMessage */ String, /* errorStack */ String) => Unit): Self = StObject.set(x, "OnError", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "OnError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "OnError", js.undefined)
       
-      @scala.inline
-      def setOnSuccess(value: (/* objectVersion */ IObjectVersion, /* objectFile */ IObjectFile) => Unit): Self = StObject.set(x, "OnSuccess", js.Any.fromFunction2(value))
+      inline def setOnSuccess(value: (/* objectVersion */ IObjectVersion, /* objectFile */ IObjectFile) => Unit): Self = StObject.set(x, "OnSuccess", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSuccessUndefined: Self = StObject.set(x, "OnSuccess", js.undefined)
+      inline def setOnSuccessUndefined: Self = StObject.set(x, "OnSuccess", js.undefined)
     }
   }
   
@@ -61,32 +53,24 @@ object anon {
   }
   object FinallyOnError {
     
-    @scala.inline
-    def apply(): FinallyOnError = {
+    inline def apply(): FinallyOnError = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FinallyOnError]
     }
     
-    @scala.inline
-    implicit class FinallyOnErrorMutableBuilder[Self <: FinallyOnError] (val x: Self) extends AnyVal {
+    extension [Self <: FinallyOnError](x: Self) {
       
-      @scala.inline
-      def setFinally(value: () => Unit): Self = StObject.set(x, "Finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => Unit): Self = StObject.set(x, "Finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinallyUndefined: Self = StObject.set(x, "Finally", js.undefined)
+      inline def setFinallyUndefined: Self = StObject.set(x, "Finally", js.undefined)
       
-      @scala.inline
-      def setOnError(value: (/* errorCode */ Double, /* errorMessage */ String, /* errorStack */ String) => Unit): Self = StObject.set(x, "OnError", js.Any.fromFunction3(value))
+      inline def setOnError(value: (/* errorCode */ Double, /* errorMessage */ String, /* errorStack */ String) => Unit): Self = StObject.set(x, "OnError", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "OnError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "OnError", js.undefined)
       
-      @scala.inline
-      def setOnSuccess(value: /* objectVersions */ IObjectVersions => Unit): Self = StObject.set(x, "OnSuccess", js.Any.fromFunction1(value))
+      inline def setOnSuccess(value: /* objectVersions */ IObjectVersions => Unit): Self = StObject.set(x, "OnSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSuccessUndefined: Self = StObject.set(x, "OnSuccess", js.undefined)
+      inline def setOnSuccessUndefined: Self = StObject.set(x, "OnSuccess", js.undefined)
     }
   }
   
@@ -102,32 +86,24 @@ object anon {
   }
   object OnError {
     
-    @scala.inline
-    def apply(): OnError = {
+    inline def apply(): OnError = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnError]
     }
     
-    @scala.inline
-    implicit class OnErrorMutableBuilder[Self <: OnError] (val x: Self) extends AnyVal {
+    extension [Self <: OnError](x: Self) {
       
-      @scala.inline
-      def setFinally(value: () => Unit): Self = StObject.set(x, "Finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => Unit): Self = StObject.set(x, "Finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinallyUndefined: Self = StObject.set(x, "Finally", js.undefined)
+      inline def setFinallyUndefined: Self = StObject.set(x, "Finally", js.undefined)
       
-      @scala.inline
-      def setOnError(value: (/* errorCode */ Double, /* errorMessage */ String, /* errorStack */ String) => Unit): Self = StObject.set(x, "OnError", js.Any.fromFunction3(value))
+      inline def setOnError(value: (/* errorCode */ Double, /* errorMessage */ String, /* errorStack */ String) => Unit): Self = StObject.set(x, "OnError", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "OnError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "OnError", js.undefined)
       
-      @scala.inline
-      def setOnSuccess(value: () => Unit): Self = StObject.set(x, "OnSuccess", js.Any.fromFunction0(value))
+      inline def setOnSuccess(value: () => Unit): Self = StObject.set(x, "OnSuccess", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSuccessUndefined: Self = StObject.set(x, "OnSuccess", js.undefined)
+      inline def setOnSuccessUndefined: Self = StObject.set(x, "OnSuccess", js.undefined)
     }
   }
   
@@ -143,32 +119,24 @@ object anon {
   }
   object OnSuccess {
     
-    @scala.inline
-    def apply(): OnSuccess = {
+    inline def apply(): OnSuccess = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnSuccess]
     }
     
-    @scala.inline
-    implicit class OnSuccessMutableBuilder[Self <: OnSuccess] (val x: Self) extends AnyVal {
+    extension [Self <: OnSuccess](x: Self) {
       
-      @scala.inline
-      def setFinally(value: () => Unit): Self = StObject.set(x, "Finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => Unit): Self = StObject.set(x, "Finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinallyUndefined: Self = StObject.set(x, "Finally", js.undefined)
+      inline def setFinallyUndefined: Self = StObject.set(x, "Finally", js.undefined)
       
-      @scala.inline
-      def setOnError(value: (/* errorCode */ Double, /* errorMessage */ String, /* errorStack */ String) => Unit): Self = StObject.set(x, "OnError", js.Any.fromFunction3(value))
+      inline def setOnError(value: (/* errorCode */ Double, /* errorMessage */ String, /* errorStack */ String) => Unit): Self = StObject.set(x, "OnError", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "OnError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "OnError", js.undefined)
       
-      @scala.inline
-      def setOnSuccess(value: /* objectVersion */ IObjectVersion => Unit): Self = StObject.set(x, "OnSuccess", js.Any.fromFunction1(value))
+      inline def setOnSuccess(value: /* objectVersion */ IObjectVersion => Unit): Self = StObject.set(x, "OnSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSuccessUndefined: Self = StObject.set(x, "OnSuccess", js.undefined)
+      inline def setOnSuccessUndefined: Self = StObject.set(x, "OnSuccess", js.undefined)
     }
   }
 }

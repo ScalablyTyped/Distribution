@@ -8,6 +8,5 @@ object strongholdPayJsStrings {
   
   @js.native
   sealed trait bank extends StObject
-  @scala.inline
-  def bank: bank = "bank".asInstanceOf[bank]
+  inline def bank: bank = "bank".asInstanceOf[bank]
 }

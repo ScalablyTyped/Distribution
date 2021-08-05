@@ -11,8 +11,7 @@ object reporterPhantomMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPhantomReporter(hasTextIdSpan: ICreatePhantomReporterArguments): IPhantomReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPhantomReporter")(hasTextIdSpan.asInstanceOf[js.Any]).asInstanceOf[IPhantomReporter]
+  inline def createPhantomReporter(hasTextIdSpan: ICreatePhantomReporterArguments): IPhantomReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPhantomReporter")(hasTextIdSpan.asInstanceOf[js.Any]).asInstanceOf[IPhantomReporter]
   
   trait ICreatePhantomReporterArguments extends StObject {
     
@@ -24,23 +23,18 @@ object reporterPhantomMod {
   }
   object ICreatePhantomReporterArguments {
     
-    @scala.inline
-    def apply(id: String, span: Span, text: String): ICreatePhantomReporterArguments = {
+    inline def apply(id: String, span: Span, text: String): ICreatePhantomReporterArguments = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICreatePhantomReporterArguments]
     }
     
-    @scala.inline
-    implicit class ICreatePhantomReporterArgumentsMutableBuilder[Self <: ICreatePhantomReporterArguments] (val x: Self) extends AnyVal {
+    extension [Self <: ICreatePhantomReporterArguments](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpan(value: Span): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: Span): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,23 +48,18 @@ object reporterPhantomMod {
   }
   object IPhantomReporter {
     
-    @scala.inline
-    def apply(end: () => Unit, span: Span, start: () => Unit): IPhantomReporter = {
+    inline def apply(end: () => Unit, span: Span, start: () => Unit): IPhantomReporter = {
       val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), span = span.asInstanceOf[js.Any], start = js.Any.fromFunction0(start))
       __obj.asInstanceOf[IPhantomReporter]
     }
     
-    @scala.inline
-    implicit class IPhantomReporterMutableBuilder[Self <: IPhantomReporter] (val x: Self) extends AnyVal {
+    extension [Self <: IPhantomReporter](x: Self) {
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSpan(value: Span): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: Span): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     }
   }
 }

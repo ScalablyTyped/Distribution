@@ -91,8 +91,7 @@ trait Canvas extends StObject {
 }
 object Canvas {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancelAnimationFrame: Double => Unit,
     createImage: () => Image,
     createImageData: () => ImageData,
@@ -107,34 +106,24 @@ object Canvas {
     __obj.asInstanceOf[Canvas]
   }
   
-  @scala.inline
-  implicit class CanvasMutableBuilder[Self <: Canvas] (val x: Self) extends AnyVal {
+  extension [Self <: Canvas](x: Self) {
     
-    @scala.inline
-    def setCancelAnimationFrame(value: Double => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
+    inline def setCancelAnimationFrame(value: Double => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateImage(value: () => Image): Self = StObject.set(x, "createImage", js.Any.fromFunction0(value))
+    inline def setCreateImage(value: () => Image): Self = StObject.set(x, "createImage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateImageData(value: () => ImageData): Self = StObject.set(x, "createImageData", js.Any.fromFunction0(value))
+    inline def setCreateImageData(value: () => ImageData): Self = StObject.set(x, "createImageData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreatePath2D(value: Path2D => Path2D): Self = StObject.set(x, "createPath2D", js.Any.fromFunction1(value))
+    inline def setCreatePath2D(value: Path2D => Path2D): Self = StObject.set(x, "createPath2D", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetContext(value: String => js.Any): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
+    inline def setGetContext(value: String => js.Any): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestAnimationFrame(value: js.Function1[/* repeated */ js.Any, js.Any] => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
+    inline def setRequestAnimationFrame(value: js.Function1[/* repeated */ js.Any, js.Any] => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToDataURL(value: (String, Double) => String): Self = StObject.set(x, "toDataURL", js.Any.fromFunction2(value))
+    inline def setToDataURL(value: (String, Double) => String): Self = StObject.set(x, "toDataURL", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

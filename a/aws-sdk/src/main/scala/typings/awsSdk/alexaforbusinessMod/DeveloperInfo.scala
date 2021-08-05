@@ -28,37 +28,27 @@ trait DeveloperInfo extends StObject {
 }
 object DeveloperInfo {
   
-  @scala.inline
-  def apply(): DeveloperInfo = {
+  inline def apply(): DeveloperInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeveloperInfo]
   }
   
-  @scala.inline
-  implicit class DeveloperInfoMutableBuilder[Self <: DeveloperInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DeveloperInfo](x: Self) {
     
-    @scala.inline
-    def setDeveloperName(value: DeveloperName): Self = StObject.set(x, "DeveloperName", value.asInstanceOf[js.Any])
+    inline def setDeveloperName(value: DeveloperName): Self = StObject.set(x, "DeveloperName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperNameUndefined: Self = StObject.set(x, "DeveloperName", js.undefined)
+    inline def setDeveloperNameUndefined: Self = StObject.set(x, "DeveloperName", js.undefined)
     
-    @scala.inline
-    def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
-    @scala.inline
-    def setPrivacyPolicy(value: PrivacyPolicy): Self = StObject.set(x, "PrivacyPolicy", value.asInstanceOf[js.Any])
+    inline def setPrivacyPolicy(value: PrivacyPolicy): Self = StObject.set(x, "PrivacyPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyPolicyUndefined: Self = StObject.set(x, "PrivacyPolicy", js.undefined)
+    inline def setPrivacyPolicyUndefined: Self = StObject.set(x, "PrivacyPolicy", js.undefined)
     
-    @scala.inline
-    def setUrl(value: Url): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Url): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

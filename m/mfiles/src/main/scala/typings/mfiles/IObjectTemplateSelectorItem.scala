@@ -28,8 +28,7 @@ trait IObjectTemplateSelectorItem extends StObject {
 }
 object IObjectTemplateSelectorItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetClassID: () => Double,
     GetClassName: () => String,
     GetGroupID: () => Double,
@@ -45,37 +44,26 @@ object IObjectTemplateSelectorItem {
     __obj.asInstanceOf[IObjectTemplateSelectorItem]
   }
   
-  @scala.inline
-  implicit class IObjectTemplateSelectorItemMutableBuilder[Self <: IObjectTemplateSelectorItem] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectTemplateSelectorItem](x: Self) {
     
-    @scala.inline
-    def setGetClassID(value: () => Double): Self = StObject.set(x, "GetClassID", js.Any.fromFunction0(value))
+    inline def setGetClassID(value: () => Double): Self = StObject.set(x, "GetClassID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClassName(value: () => String): Self = StObject.set(x, "GetClassName", js.Any.fromFunction0(value))
+    inline def setGetClassName(value: () => String): Self = StObject.set(x, "GetClassName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroupID(value: () => Double): Self = StObject.set(x, "GetGroupID", js.Any.fromFunction0(value))
+    inline def setGetGroupID(value: () => Double): Self = StObject.set(x, "GetGroupID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroupName(value: () => String): Self = StObject.set(x, "GetGroupName", js.Any.fromFunction0(value))
+    inline def setGetGroupName(value: () => String): Self = StObject.set(x, "GetGroupName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetID(value: () => String): Self = StObject.set(x, "GetID", js.Any.fromFunction0(value))
+    inline def setGetID(value: () => String): Self = StObject.set(x, "GetID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIconURL(value: () => String): Self = StObject.set(x, "GetIconURL", js.Any.fromFunction0(value))
+    inline def setGetIconURL(value: () => String): Self = StObject.set(x, "GetIconURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "GetName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "GetName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTemplateID(value: () => Double): Self = StObject.set(x, "GetTemplateID", js.Any.fromFunction0(value))
+    inline def setGetTemplateID(value: () => Double): Self = StObject.set(x, "GetTemplateID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsBlankItem(value: () => Boolean): Self = StObject.set(x, "IsBlankItem", js.Any.fromFunction0(value))
+    inline def setIsBlankItem(value: () => Boolean): Self = StObject.set(x, "IsBlankItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDefaultTemplateForClass(value: () => Boolean): Self = StObject.set(x, "IsDefaultTemplateForClass", js.Any.fromFunction0(value))
+    inline def setIsDefaultTemplateForClass(value: () => Boolean): Self = StObject.set(x, "IsDefaultTemplateForClass", js.Any.fromFunction0(value))
   }
 }

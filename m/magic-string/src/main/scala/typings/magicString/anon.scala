@@ -15,23 +15,18 @@ object anon {
   }
   object Content {
     
-    @scala.inline
-    def apply(content: MagicString): Content = {
+    inline def apply(content: MagicString): Content = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[Content]
     }
     
-    @scala.inline
-    implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+    extension [Self <: Content](x: Self) {
       
-      @scala.inline
-      def setContent(value: MagicString): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: MagicString): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     }
   }
   
@@ -48,38 +43,28 @@ object anon {
   }
   object PartialSourceMapOptions {
     
-    @scala.inline
-    def apply(): PartialSourceMapOptions = {
+    inline def apply(): PartialSourceMapOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSourceMapOptions]
     }
     
-    @scala.inline
-    implicit class PartialSourceMapOptionsMutableBuilder[Self <: PartialSourceMapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSourceMapOptions](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setHires(value: Boolean): Self = StObject.set(x, "hires", value.asInstanceOf[js.Any])
+      inline def setHires(value: Boolean): Self = StObject.set(x, "hires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiresUndefined: Self = StObject.set(x, "hires", js.undefined)
+      inline def setHiresUndefined: Self = StObject.set(x, "hires", js.undefined)
       
-      @scala.inline
-      def setIncludeContent(value: Boolean): Self = StObject.set(x, "includeContent", value.asInstanceOf[js.Any])
+      inline def setIncludeContent(value: Boolean): Self = StObject.set(x, "includeContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeContentUndefined: Self = StObject.set(x, "includeContent", js.undefined)
+      inline def setIncludeContentUndefined: Self = StObject.set(x, "includeContent", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
 }

@@ -77,8 +77,7 @@ trait IGenericMeasure
 }
 object IGenericMeasure {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyPatches: js.Array[INxPatch] => js.Promise[Unit],
     getInfo: () => js.Promise[INxInfo],
     getLayout: () => js.Promise[IGenericMeasureLayout],
@@ -93,34 +92,24 @@ object IGenericMeasure {
     __obj.asInstanceOf[IGenericMeasure]
   }
   
-  @scala.inline
-  implicit class IGenericMeasureMutableBuilder[Self <: IGenericMeasure] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericMeasure](x: Self) {
     
-    @scala.inline
-    def setApplyPatches(value: js.Array[INxPatch] => js.Promise[Unit]): Self = StObject.set(x, "applyPatches", js.Any.fromFunction1(value))
+    inline def setApplyPatches(value: js.Array[INxPatch] => js.Promise[Unit]): Self = StObject.set(x, "applyPatches", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetInfo(value: () => js.Promise[INxInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+    inline def setGetInfo(value: () => js.Promise[INxInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLayout(value: () => js.Promise[IGenericMeasureLayout]): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    inline def setGetLayout(value: () => js.Promise[IGenericMeasureLayout]): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLinkedObjects(value: () => js.Promise[INxLinkedObjectInfo]): Self = StObject.set(x, "getLinkedObjects", js.Any.fromFunction0(value))
+    inline def setGetLinkedObjects(value: () => js.Promise[INxLinkedObjectInfo]): Self = StObject.set(x, "getLinkedObjects", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMeasure(value: () => js.Promise[IGenericMeasureProperties]): Self = StObject.set(x, "getMeasure", js.Any.fromFunction0(value))
+    inline def setGetMeasure(value: () => js.Promise[IGenericMeasureProperties]): Self = StObject.set(x, "getMeasure", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProperties(value: () => js.Promise[IGenericMeasureProperties]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
+    inline def setGetProperties(value: () => js.Promise[IGenericMeasureProperties]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPublish(value: () => js.Promise[Unit]): Self = StObject.set(x, "publish", js.Any.fromFunction0(value))
+    inline def setPublish(value: () => js.Promise[Unit]): Self = StObject.set(x, "publish", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetProperties(value: IGenericMeasureProperties => js.Promise[Unit]): Self = StObject.set(x, "setProperties", js.Any.fromFunction1(value))
+    inline def setSetProperties(value: IGenericMeasureProperties => js.Promise[Unit]): Self = StObject.set(x, "setProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnPublish(value: () => js.Promise[Unit]): Self = StObject.set(x, "unPublish", js.Any.fromFunction0(value))
+    inline def setUnPublish(value: () => js.Promise[Unit]): Self = StObject.set(x, "unPublish", js.Any.fromFunction0(value))
   }
 }

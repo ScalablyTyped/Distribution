@@ -12,19 +12,15 @@ trait IReadFileOptions
 }
 object IReadFileOptions {
   
-  @scala.inline
-  def apply(): IReadFileOptions = {
+  inline def apply(): IReadFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IReadFileOptions]
   }
   
-  @scala.inline
-  implicit class IReadFileOptionsMutableBuilder[Self <: IReadFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IReadFileOptions](x: Self) {
     
-    @scala.inline
-    def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+    inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
   }
 }

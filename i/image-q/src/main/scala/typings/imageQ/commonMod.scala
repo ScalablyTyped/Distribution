@@ -14,17 +14,14 @@ object commonMod {
   }
   object IImageDitherer {
     
-    @scala.inline
-    def apply(quantize: (PointContainer, Palette) => PointContainer): IImageDitherer = {
+    inline def apply(quantize: (PointContainer, Palette) => PointContainer): IImageDitherer = {
       val __obj = js.Dynamic.literal(quantize = js.Any.fromFunction2(quantize))
       __obj.asInstanceOf[IImageDitherer]
     }
     
-    @scala.inline
-    implicit class IImageDithererMutableBuilder[Self <: IImageDitherer] (val x: Self) extends AnyVal {
+    extension [Self <: IImageDitherer](x: Self) {
       
-      @scala.inline
-      def setQuantize(value: (PointContainer, Palette) => PointContainer): Self = StObject.set(x, "quantize", js.Any.fromFunction2(value))
+      inline def setQuantize(value: (PointContainer, Palette) => PointContainer): Self = StObject.set(x, "quantize", js.Any.fromFunction2(value))
     }
   }
 }

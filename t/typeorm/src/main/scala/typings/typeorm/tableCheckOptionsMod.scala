@@ -25,35 +25,26 @@ object tableCheckOptionsMod {
   }
   object TableCheckOptions {
     
-    @scala.inline
-    def apply(): TableCheckOptions = {
+    inline def apply(): TableCheckOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableCheckOptions]
     }
     
-    @scala.inline
-    implicit class TableCheckOptionsMutableBuilder[Self <: TableCheckOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TableCheckOptions](x: Self) {
       
-      @scala.inline
-      def setColumnNames(value: js.Array[String]): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
+      inline def setColumnNames(value: js.Array[String]): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNamesUndefined: Self = StObject.set(x, "columnNames", js.undefined)
+      inline def setColumnNamesUndefined: Self = StObject.set(x, "columnNames", js.undefined)
       
-      @scala.inline
-      def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "columnNames", js.Array(value :_*))
+      inline def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "columnNames", js.Array(value :_*))
       
-      @scala.inline
-      def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+      inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

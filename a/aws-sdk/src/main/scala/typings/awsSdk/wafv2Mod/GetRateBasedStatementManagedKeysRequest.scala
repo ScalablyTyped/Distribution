@@ -28,25 +28,19 @@ trait GetRateBasedStatementManagedKeysRequest extends StObject {
 }
 object GetRateBasedStatementManagedKeysRequest {
   
-  @scala.inline
-  def apply(RuleName: EntityName, Scope: Scope, WebACLId: EntityId, WebACLName: EntityName): GetRateBasedStatementManagedKeysRequest = {
+  inline def apply(RuleName: EntityName, Scope: Scope, WebACLId: EntityId, WebACLName: EntityName): GetRateBasedStatementManagedKeysRequest = {
     val __obj = js.Dynamic.literal(RuleName = RuleName.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any], WebACLId = WebACLId.asInstanceOf[js.Any], WebACLName = WebACLName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRateBasedStatementManagedKeysRequest]
   }
   
-  @scala.inline
-  implicit class GetRateBasedStatementManagedKeysRequestMutableBuilder[Self <: GetRateBasedStatementManagedKeysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRateBasedStatementManagedKeysRequest](x: Self) {
     
-    @scala.inline
-    def setRuleName(value: EntityName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: EntityName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebACLId(value: EntityId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
+    inline def setWebACLId(value: EntityId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebACLName(value: EntityName): Self = StObject.set(x, "WebACLName", value.asInstanceOf[js.Any])
+    inline def setWebACLName(value: EntityName): Self = StObject.set(x, "WebACLName", value.asInstanceOf[js.Any])
   }
 }

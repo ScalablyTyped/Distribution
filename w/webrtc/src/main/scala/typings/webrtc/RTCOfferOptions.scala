@@ -13,19 +13,15 @@ trait RTCOfferOptions
 }
 object RTCOfferOptions {
   
-  @scala.inline
-  def apply(): RTCOfferOptions = {
+  inline def apply(): RTCOfferOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCOfferOptions]
   }
   
-  @scala.inline
-  implicit class RTCOfferOptionsMutableBuilder[Self <: RTCOfferOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RTCOfferOptions](x: Self) {
     
-    @scala.inline
-    def setIceRestart(value: Boolean): Self = StObject.set(x, "iceRestart", value.asInstanceOf[js.Any])
+    inline def setIceRestart(value: Boolean): Self = StObject.set(x, "iceRestart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIceRestartUndefined: Self = StObject.set(x, "iceRestart", js.undefined)
+    inline def setIceRestartUndefined: Self = StObject.set(x, "iceRestart", js.undefined)
   }
 }

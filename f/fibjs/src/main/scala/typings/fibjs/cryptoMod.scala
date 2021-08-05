@@ -129,47 +129,31 @@ object cryptoMod {
   @js.native
   val ZEROS_AND_LEN: /* 2 */ Double = js.native
   
-  @scala.inline
-  def createHash(algo: String): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algo.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  inline def createHash(algo: String): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algo.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @scala.inline
-  def createHmac(algo: String, key: ClassBuffer): ClassDigest = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ClassDigest]
+  inline def createHmac(algo: String, key: ClassBuffer): ClassDigest = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ClassDigest]
   
-  @scala.inline
-  def loadCert(filename: String): ClassX509Cert = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCert")(filename.asInstanceOf[js.Any]).asInstanceOf[ClassX509Cert]
+  inline def loadCert(filename: String): ClassX509Cert = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCert")(filename.asInstanceOf[js.Any]).asInstanceOf[ClassX509Cert]
   
-  @scala.inline
-  def loadCrl(filename: String): ClassX509Crl = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCrl")(filename.asInstanceOf[js.Any]).asInstanceOf[ClassX509Crl]
+  inline def loadCrl(filename: String): ClassX509Crl = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCrl")(filename.asInstanceOf[js.Any]).asInstanceOf[ClassX509Crl]
   
-  @scala.inline
-  def loadPKey(filename: String): ClassPKey = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPKey")(filename.asInstanceOf[js.Any]).asInstanceOf[ClassPKey]
-  @scala.inline
-  def loadPKey(filename: String, password: String): ClassPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("loadPKey")(filename.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ClassPKey]
+  inline def loadPKey(filename: String): ClassPKey = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPKey")(filename.asInstanceOf[js.Any]).asInstanceOf[ClassPKey]
+  inline def loadPKey(filename: String, password: String): ClassPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("loadPKey")(filename.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ClassPKey]
   
-  @scala.inline
-  def loadReq(filename: String): ClassX509Req = ^.asInstanceOf[js.Dynamic].applyDynamic("loadReq")(filename.asInstanceOf[js.Any]).asInstanceOf[ClassX509Req]
+  inline def loadReq(filename: String): ClassX509Req = ^.asInstanceOf[js.Dynamic].applyDynamic("loadReq")(filename.asInstanceOf[js.Any]).asInstanceOf[ClassX509Req]
   
-  @scala.inline
-  def pbkdf1(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algoName: String): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf1")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], size.asInstanceOf[js.Any], algoName.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
-  @scala.inline
-  def pbkdf1(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algo: Double): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf1")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], size.asInstanceOf[js.Any], algo.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
+  inline def pbkdf1(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algoName: String): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf1")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], size.asInstanceOf[js.Any], algoName.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
+  inline def pbkdf1(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algo: Double): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf1")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], size.asInstanceOf[js.Any], algo.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
   
-  @scala.inline
-  def pbkdf2(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algoName: String): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], size.asInstanceOf[js.Any], algoName.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
-  @scala.inline
-  def pbkdf2(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algo: Double): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], size.asInstanceOf[js.Any], algo.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
+  inline def pbkdf2(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algoName: String): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], size.asInstanceOf[js.Any], algoName.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
+  inline def pbkdf2(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algo: Double): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], size.asInstanceOf[js.Any], algo.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
   
-  @scala.inline
-  def pseudoRandomBytes(size: Double): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
+  inline def pseudoRandomBytes(size: Double): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
   
-  @scala.inline
-  def randomArt(data: ClassBuffer, title: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomArt")(data.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def randomArt(data: ClassBuffer, title: String, size: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomArt")(data.asInstanceOf[js.Any], title.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def randomArt(data: ClassBuffer, title: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomArt")(data.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def randomArt(data: ClassBuffer, title: String, size: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomArt")(data.asInstanceOf[js.Any], title.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def randomBytes(size: Double): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
+  inline def randomBytes(size: Double): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
   
-  @scala.inline
-  def simpleRandomBytes(size: Double): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleRandomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
+  inline def simpleRandomBytes(size: Double): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleRandomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
 }

@@ -18,19 +18,15 @@ trait CreateSchemaRequest extends StObject {
 }
 object CreateSchemaRequest {
   
-  @scala.inline
-  def apply(name: Name, schema: AvroSchema): CreateSchemaRequest = {
+  inline def apply(name: Name, schema: AvroSchema): CreateSchemaRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSchemaRequest]
   }
   
-  @scala.inline
-  implicit class CreateSchemaRequestMutableBuilder[Self <: CreateSchemaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSchemaRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: AvroSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: AvroSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

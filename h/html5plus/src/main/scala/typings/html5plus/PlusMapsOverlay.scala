@@ -42,22 +42,17 @@ trait PlusMapsOverlay extends StObject {
 }
 object PlusMapsOverlay {
   
-  @scala.inline
-  def apply(hide: () => Unit, isVisible: () => Boolean, show: () => Unit): PlusMapsOverlay = {
+  inline def apply(hide: () => Unit, isVisible: () => Boolean, show: () => Unit): PlusMapsOverlay = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), isVisible = js.Any.fromFunction0(isVisible), show = js.Any.fromFunction0(show))
     __obj.asInstanceOf[PlusMapsOverlay]
   }
   
-  @scala.inline
-  implicit class PlusMapsOverlayMutableBuilder[Self <: PlusMapsOverlay] (val x: Self) extends AnyVal {
+  extension [Self <: PlusMapsOverlay](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

@@ -18,8 +18,7 @@ trait ImgProps extends StObject {
 }
 object ImgProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     className: js.Array[Label],
     imgProps: js.Array[LabelValue],
     initialsLimit: js.Array[LabelNumber],
@@ -30,34 +29,24 @@ object ImgProps {
     __obj.asInstanceOf[ImgProps]
   }
   
-  @scala.inline
-  implicit class ImgPropsMutableBuilder[Self <: ImgProps] (val x: Self) extends AnyVal {
+  extension [Self <: ImgProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: js.Array[Label]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: js.Array[Label]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameVarargs(value: Label*): Self = StObject.set(x, "className", js.Array(value :_*))
+    inline def setClassNameVarargs(value: Label*): Self = StObject.set(x, "className", js.Array(value :_*))
     
-    @scala.inline
-    def setImgProps(value: js.Array[LabelValue]): Self = StObject.set(x, "imgProps", value.asInstanceOf[js.Any])
+    inline def setImgProps(value: js.Array[LabelValue]): Self = StObject.set(x, "imgProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgPropsVarargs(value: LabelValue*): Self = StObject.set(x, "imgProps", js.Array(value :_*))
+    inline def setImgPropsVarargs(value: LabelValue*): Self = StObject.set(x, "imgProps", js.Array(value :_*))
     
-    @scala.inline
-    def setInitialsLimit(value: js.Array[LabelNumber]): Self = StObject.set(x, "initialsLimit", value.asInstanceOf[js.Any])
+    inline def setInitialsLimit(value: js.Array[LabelNumber]): Self = StObject.set(x, "initialsLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialsLimitVarargs(value: LabelNumber*): Self = StObject.set(x, "initialsLimit", js.Array(value :_*))
+    inline def setInitialsLimitVarargs(value: LabelNumber*): Self = StObject.set(x, "initialsLimit", js.Array(value :_*))
     
-    @scala.inline
-    def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+    inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlaceholder(value: js.Array[Value]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: js.Array[Value]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderVarargs(value: Value*): Self = StObject.set(x, "placeholder", js.Array(value :_*))
+    inline def setPlaceholderVarargs(value: Value*): Self = StObject.set(x, "placeholder", js.Array(value :_*))
   }
 }

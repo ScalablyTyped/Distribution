@@ -18,22 +18,17 @@ trait ListOfFeaturedPlaylistsResponse extends StObject {
 }
 object ListOfFeaturedPlaylistsResponse {
   
-  @scala.inline
-  def apply(playlists: PagingObject[PlaylistObjectSimplified]): ListOfFeaturedPlaylistsResponse = {
+  inline def apply(playlists: PagingObject[PlaylistObjectSimplified]): ListOfFeaturedPlaylistsResponse = {
     val __obj = js.Dynamic.literal(playlists = playlists.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOfFeaturedPlaylistsResponse]
   }
   
-  @scala.inline
-  implicit class ListOfFeaturedPlaylistsResponseMutableBuilder[Self <: ListOfFeaturedPlaylistsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListOfFeaturedPlaylistsResponse](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
+    inline def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
   }
 }

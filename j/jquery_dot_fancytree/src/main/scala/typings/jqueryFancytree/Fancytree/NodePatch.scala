@@ -19,31 +19,23 @@ trait NodePatch extends StObject {
 }
 object NodePatch {
   
-  @scala.inline
-  def apply(): NodePatch = {
+  inline def apply(): NodePatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodePatch]
   }
   
-  @scala.inline
-  implicit class NodePatchMutableBuilder[Self <: NodePatch] (val x: Self) extends AnyVal {
+  extension [Self <: NodePatch](x: Self) {
     
-    @scala.inline
-    def setAppendChildren(value: NodeData): Self = StObject.set(x, "appendChildren", value.asInstanceOf[js.Any])
+    inline def setAppendChildren(value: NodeData): Self = StObject.set(x, "appendChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendChildrenUndefined: Self = StObject.set(x, "appendChildren", js.undefined)
+    inline def setAppendChildrenUndefined: Self = StObject.set(x, "appendChildren", js.undefined)
     
-    @scala.inline
-    def setInsertChildren(value: NodeData): Self = StObject.set(x, "insertChildren", value.asInstanceOf[js.Any])
+    inline def setInsertChildren(value: NodeData): Self = StObject.set(x, "insertChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertChildrenUndefined: Self = StObject.set(x, "insertChildren", js.undefined)
+    inline def setInsertChildrenUndefined: Self = StObject.set(x, "insertChildren", js.undefined)
     
-    @scala.inline
-    def setReplaceChildren(value: NodeData): Self = StObject.set(x, "replaceChildren", value.asInstanceOf[js.Any])
+    inline def setReplaceChildren(value: NodeData): Self = StObject.set(x, "replaceChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceChildrenUndefined: Self = StObject.set(x, "replaceChildren", js.undefined)
+    inline def setReplaceChildrenUndefined: Self = StObject.set(x, "replaceChildren", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait Geocode extends StObject {
 }
 object Geocode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adcode: String,
     addressComponent: AddressComponent,
     formattedAddress: String,
@@ -30,22 +29,16 @@ object Geocode {
     __obj.asInstanceOf[Geocode]
   }
   
-  @scala.inline
-  implicit class GeocodeMutableBuilder[Self <: Geocode] (val x: Self) extends AnyVal {
+  extension [Self <: Geocode](x: Self) {
     
-    @scala.inline
-    def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+    inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressComponent(value: AddressComponent): Self = StObject.set(x, "addressComponent", value.asInstanceOf[js.Any])
+    inline def setAddressComponent(value: AddressComponent): Self = StObject.set(x, "addressComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedAddress(value: String): Self = StObject.set(x, "formattedAddress", value.asInstanceOf[js.Any])
+    inline def setFormattedAddress(value: String): Self = StObject.set(x, "formattedAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

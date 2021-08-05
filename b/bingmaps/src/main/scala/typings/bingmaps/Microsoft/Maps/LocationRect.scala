@@ -84,8 +84,7 @@ trait LocationRect extends StObject {
 }
 object LocationRect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buffer: Double => Unit,
     center: Location,
     contains: Location => Boolean,
@@ -105,49 +104,34 @@ object LocationRect {
     __obj.asInstanceOf[LocationRect]
   }
   
-  @scala.inline
-  implicit class LocationRectMutableBuilder[Self <: LocationRect] (val x: Self) extends AnyVal {
+  extension [Self <: LocationRect](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: Double => Unit): Self = StObject.set(x, "buffer", js.Any.fromFunction1(value))
+    inline def setBuffer(value: Double => Unit): Self = StObject.set(x, "buffer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCenter(value: Location): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Location): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContains(value: Location => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: Location => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCrossesInternationalDateLine(value: () => Boolean): Self = StObject.set(x, "crossesInternationalDateLine", js.Any.fromFunction0(value))
+    inline def setCrossesInternationalDateLine(value: () => Boolean): Self = StObject.set(x, "crossesInternationalDateLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEast(value: () => Double): Self = StObject.set(x, "getEast", js.Any.fromFunction0(value))
+    inline def setGetEast(value: () => Double): Self = StObject.set(x, "getEast", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNorth(value: () => Double): Self = StObject.set(x, "getNorth", js.Any.fromFunction0(value))
+    inline def setGetNorth(value: () => Double): Self = StObject.set(x, "getNorth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNorthwest(value: () => Location): Self = StObject.set(x, "getNorthwest", js.Any.fromFunction0(value))
+    inline def setGetNorthwest(value: () => Location): Self = StObject.set(x, "getNorthwest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSouth(value: () => Double): Self = StObject.set(x, "getSouth", js.Any.fromFunction0(value))
+    inline def setGetSouth(value: () => Double): Self = StObject.set(x, "getSouth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSoutheast(value: () => Location): Self = StObject.set(x, "getSoutheast", js.Any.fromFunction0(value))
+    inline def setGetSoutheast(value: () => Location): Self = StObject.set(x, "getSoutheast", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWest(value: () => Double): Self = StObject.set(x, "getWest", js.Any.fromFunction0(value))
+    inline def setGetWest(value: () => Double): Self = StObject.set(x, "getWest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersects(value: LocationRect => Boolean): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
+    inline def setIntersects(value: LocationRect => Boolean): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSplitByInternationalDateLine(value: () => js.Array[LocationRect]): Self = StObject.set(x, "splitByInternationalDateLine", js.Any.fromFunction0(value))
+    inline def setSplitByInternationalDateLine(value: () => js.Array[LocationRect]): Self = StObject.set(x, "splitByInternationalDateLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

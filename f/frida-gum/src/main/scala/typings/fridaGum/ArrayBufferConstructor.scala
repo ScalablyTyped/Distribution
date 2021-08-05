@@ -20,16 +20,13 @@ trait ArrayBufferConstructor extends StObject {
 }
 object ArrayBufferConstructor {
   
-  @scala.inline
-  def apply(wrap: (NativePointerValue, Double) => ArrayBuffer): ArrayBufferConstructor = {
+  inline def apply(wrap: (NativePointerValue, Double) => ArrayBuffer): ArrayBufferConstructor = {
     val __obj = js.Dynamic.literal(wrap = js.Any.fromFunction2(wrap))
     __obj.asInstanceOf[ArrayBufferConstructor]
   }
   
-  @scala.inline
-  implicit class ArrayBufferConstructorMutableBuilder[Self <: ArrayBufferConstructor] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayBufferConstructor](x: Self) {
     
-    @scala.inline
-    def setWrap(value: (NativePointerValue, Double) => ArrayBuffer): Self = StObject.set(x, "wrap", js.Any.fromFunction2(value))
+    inline def setWrap(value: (NativePointerValue, Double) => ArrayBuffer): Self = StObject.set(x, "wrap", js.Any.fromFunction2(value))
   }
 }

@@ -20,37 +20,27 @@ trait InterpolationPoint extends StObject {
 }
 object InterpolationPoint {
   
-  @scala.inline
-  def apply(): InterpolationPoint = {
+  inline def apply(): InterpolationPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InterpolationPoint]
   }
   
-  @scala.inline
-  implicit class InterpolationPointMutableBuilder[Self <: InterpolationPoint] (val x: Self) extends AnyVal {
+  extension [Self <: InterpolationPoint](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorStyle(value: ColorStyle): Self = StObject.set(x, "colorStyle", value.asInstanceOf[js.Any])
+    inline def setColorStyle(value: ColorStyle): Self = StObject.set(x, "colorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorStyleUndefined: Self = StObject.set(x, "colorStyle", js.undefined)
+    inline def setColorStyleUndefined: Self = StObject.set(x, "colorStyle", js.undefined)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

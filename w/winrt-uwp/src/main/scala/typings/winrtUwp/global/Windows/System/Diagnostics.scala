@@ -86,16 +86,14 @@ object Diagnostics {
       * @return The ProcessDiagnosticInfo for the currently running process.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentProcess(): typings.winrtUwp.Windows.System.Diagnostics.ProcessDiagnosticInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentProcess")().asInstanceOf[typings.winrtUwp.Windows.System.Diagnostics.ProcessDiagnosticInfo]
+    inline def getForCurrentProcess(): typings.winrtUwp.Windows.System.Diagnostics.ProcessDiagnosticInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentProcess")().asInstanceOf[typings.winrtUwp.Windows.System.Diagnostics.ProcessDiagnosticInfo]
     
     /**
       * Gets a list of ProcessDiagnosticInfo objects for all running processes.
       * @return A list of ProcessDiagnosticInfo objects for all running processes.
       */
     /* static member */
-    @scala.inline
-    def getForProcesses(): IVectorView[typings.winrtUwp.Windows.System.Diagnostics.ProcessDiagnosticInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getForProcesses")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.System.Diagnostics.ProcessDiagnosticInfo]]
+    inline def getForProcesses(): IVectorView[typings.winrtUwp.Windows.System.Diagnostics.ProcessDiagnosticInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getForProcesses")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.System.Diagnostics.ProcessDiagnosticInfo]]
   }
   
   /** Provides access to data about the disk usage of a process. */

@@ -95,21 +95,16 @@ object reportDefinitionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReportDefinition]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReportDefinition]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ReportDefinitionState): ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReportDefinition]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ReportDefinitionState, opts: CustomResourceOptions): ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReportDefinition]
+    inline def get(name: String, id: Input[ID]): ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReportDefinition]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReportDefinition]
+    inline def get(name: String, id: Input[ID], state: ReportDefinitionState): ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReportDefinition]
+    inline def get(name: String, id: Input[ID], state: ReportDefinitionState, opts: CustomResourceOptions): ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReportDefinition]
     
     /**
       * Returns true if the given object is an instance of ReportDefinition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cur/reportDefinition.ReportDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cur/reportDefinition.ReportDefinition */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cur/reportDefinition.ReportDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cur/reportDefinition.ReportDefinition */ Boolean]
   }
   
   trait ReportDefinitionArgs extends StObject {
@@ -171,8 +166,7 @@ object reportDefinitionMod {
   }
   object ReportDefinitionArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       additionalSchemaElements: Input[js.Array[Input[String]]],
       compression: Input[String],
       format: Input[String],
@@ -185,59 +179,41 @@ object reportDefinitionMod {
       __obj.asInstanceOf[ReportDefinitionArgs]
     }
     
-    @scala.inline
-    implicit class ReportDefinitionArgsMutableBuilder[Self <: ReportDefinitionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ReportDefinitionArgs](x: Self) {
       
-      @scala.inline
-      def setAdditionalArtifacts(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "additionalArtifacts", value.asInstanceOf[js.Any])
+      inline def setAdditionalArtifacts(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "additionalArtifacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalArtifactsUndefined: Self = StObject.set(x, "additionalArtifacts", js.undefined)
+      inline def setAdditionalArtifactsUndefined: Self = StObject.set(x, "additionalArtifacts", js.undefined)
       
-      @scala.inline
-      def setAdditionalArtifactsVarargs(value: Input[String]*): Self = StObject.set(x, "additionalArtifacts", js.Array(value :_*))
+      inline def setAdditionalArtifactsVarargs(value: Input[String]*): Self = StObject.set(x, "additionalArtifacts", js.Array(value :_*))
       
-      @scala.inline
-      def setAdditionalSchemaElements(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "additionalSchemaElements", value.asInstanceOf[js.Any])
+      inline def setAdditionalSchemaElements(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "additionalSchemaElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalSchemaElementsVarargs(value: Input[String]*): Self = StObject.set(x, "additionalSchemaElements", js.Array(value :_*))
+      inline def setAdditionalSchemaElementsVarargs(value: Input[String]*): Self = StObject.set(x, "additionalSchemaElements", js.Array(value :_*))
       
-      @scala.inline
-      def setCompression(value: Input[String]): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Input[String]): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: Input[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Input[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshClosedReports(value: Input[Boolean]): Self = StObject.set(x, "refreshClosedReports", value.asInstanceOf[js.Any])
+      inline def setRefreshClosedReports(value: Input[Boolean]): Self = StObject.set(x, "refreshClosedReports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshClosedReportsUndefined: Self = StObject.set(x, "refreshClosedReports", js.undefined)
+      inline def setRefreshClosedReportsUndefined: Self = StObject.set(x, "refreshClosedReports", js.undefined)
       
-      @scala.inline
-      def setReportName(value: Input[String]): Self = StObject.set(x, "reportName", value.asInstanceOf[js.Any])
+      inline def setReportName(value: Input[String]): Self = StObject.set(x, "reportName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportVersioning(value: Input[String]): Self = StObject.set(x, "reportVersioning", value.asInstanceOf[js.Any])
+      inline def setReportVersioning(value: Input[String]): Self = StObject.set(x, "reportVersioning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportVersioningUndefined: Self = StObject.set(x, "reportVersioning", js.undefined)
+      inline def setReportVersioningUndefined: Self = StObject.set(x, "reportVersioning", js.undefined)
       
-      @scala.inline
-      def setS3Bucket(value: Input[String]): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
+      inline def setS3Bucket(value: Input[String]): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3Prefix(value: Input[String]): Self = StObject.set(x, "s3Prefix", value.asInstanceOf[js.Any])
+      inline def setS3Prefix(value: Input[String]): Self = StObject.set(x, "s3Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3PrefixUndefined: Self = StObject.set(x, "s3Prefix", js.undefined)
+      inline def setS3PrefixUndefined: Self = StObject.set(x, "s3Prefix", js.undefined)
       
-      @scala.inline
-      def setS3Region(value: Input[String]): Self = StObject.set(x, "s3Region", value.asInstanceOf[js.Any])
+      inline def setS3Region(value: Input[String]): Self = StObject.set(x, "s3Region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUnit(value: Input[String]): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+      inline def setTimeUnit(value: Input[String]): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -300,86 +276,60 @@ object reportDefinitionMod {
   }
   object ReportDefinitionState {
     
-    @scala.inline
-    def apply(): ReportDefinitionState = {
+    inline def apply(): ReportDefinitionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReportDefinitionState]
     }
     
-    @scala.inline
-    implicit class ReportDefinitionStateMutableBuilder[Self <: ReportDefinitionState] (val x: Self) extends AnyVal {
+    extension [Self <: ReportDefinitionState](x: Self) {
       
-      @scala.inline
-      def setAdditionalArtifacts(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "additionalArtifacts", value.asInstanceOf[js.Any])
+      inline def setAdditionalArtifacts(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "additionalArtifacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalArtifactsUndefined: Self = StObject.set(x, "additionalArtifacts", js.undefined)
+      inline def setAdditionalArtifactsUndefined: Self = StObject.set(x, "additionalArtifacts", js.undefined)
       
-      @scala.inline
-      def setAdditionalArtifactsVarargs(value: Input[String]*): Self = StObject.set(x, "additionalArtifacts", js.Array(value :_*))
+      inline def setAdditionalArtifactsVarargs(value: Input[String]*): Self = StObject.set(x, "additionalArtifacts", js.Array(value :_*))
       
-      @scala.inline
-      def setAdditionalSchemaElements(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "additionalSchemaElements", value.asInstanceOf[js.Any])
+      inline def setAdditionalSchemaElements(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "additionalSchemaElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalSchemaElementsUndefined: Self = StObject.set(x, "additionalSchemaElements", js.undefined)
+      inline def setAdditionalSchemaElementsUndefined: Self = StObject.set(x, "additionalSchemaElements", js.undefined)
       
-      @scala.inline
-      def setAdditionalSchemaElementsVarargs(value: Input[String]*): Self = StObject.set(x, "additionalSchemaElements", js.Array(value :_*))
+      inline def setAdditionalSchemaElementsVarargs(value: Input[String]*): Self = StObject.set(x, "additionalSchemaElements", js.Array(value :_*))
       
-      @scala.inline
-      def setCompression(value: Input[String]): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Input[String]): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Input[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Input[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setRefreshClosedReports(value: Input[Boolean]): Self = StObject.set(x, "refreshClosedReports", value.asInstanceOf[js.Any])
+      inline def setRefreshClosedReports(value: Input[Boolean]): Self = StObject.set(x, "refreshClosedReports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshClosedReportsUndefined: Self = StObject.set(x, "refreshClosedReports", js.undefined)
+      inline def setRefreshClosedReportsUndefined: Self = StObject.set(x, "refreshClosedReports", js.undefined)
       
-      @scala.inline
-      def setReportName(value: Input[String]): Self = StObject.set(x, "reportName", value.asInstanceOf[js.Any])
+      inline def setReportName(value: Input[String]): Self = StObject.set(x, "reportName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportNameUndefined: Self = StObject.set(x, "reportName", js.undefined)
+      inline def setReportNameUndefined: Self = StObject.set(x, "reportName", js.undefined)
       
-      @scala.inline
-      def setReportVersioning(value: Input[String]): Self = StObject.set(x, "reportVersioning", value.asInstanceOf[js.Any])
+      inline def setReportVersioning(value: Input[String]): Self = StObject.set(x, "reportVersioning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportVersioningUndefined: Self = StObject.set(x, "reportVersioning", js.undefined)
+      inline def setReportVersioningUndefined: Self = StObject.set(x, "reportVersioning", js.undefined)
       
-      @scala.inline
-      def setS3Bucket(value: Input[String]): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
+      inline def setS3Bucket(value: Input[String]): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
+      inline def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
       
-      @scala.inline
-      def setS3Prefix(value: Input[String]): Self = StObject.set(x, "s3Prefix", value.asInstanceOf[js.Any])
+      inline def setS3Prefix(value: Input[String]): Self = StObject.set(x, "s3Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3PrefixUndefined: Self = StObject.set(x, "s3Prefix", js.undefined)
+      inline def setS3PrefixUndefined: Self = StObject.set(x, "s3Prefix", js.undefined)
       
-      @scala.inline
-      def setS3Region(value: Input[String]): Self = StObject.set(x, "s3Region", value.asInstanceOf[js.Any])
+      inline def setS3Region(value: Input[String]): Self = StObject.set(x, "s3Region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3RegionUndefined: Self = StObject.set(x, "s3Region", js.undefined)
+      inline def setS3RegionUndefined: Self = StObject.set(x, "s3Region", js.undefined)
       
-      @scala.inline
-      def setTimeUnit(value: Input[String]): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+      inline def setTimeUnit(value: Input[String]): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
+      inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
     }
   }
 }

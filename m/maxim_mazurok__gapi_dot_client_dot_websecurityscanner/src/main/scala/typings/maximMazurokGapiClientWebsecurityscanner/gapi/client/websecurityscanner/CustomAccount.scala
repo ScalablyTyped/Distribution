@@ -17,31 +17,23 @@ trait CustomAccount extends StObject {
 }
 object CustomAccount {
   
-  @scala.inline
-  def apply(): CustomAccount = {
+  inline def apply(): CustomAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomAccount]
   }
   
-  @scala.inline
-  implicit class CustomAccountMutableBuilder[Self <: CustomAccount] (val x: Self) extends AnyVal {
+  extension [Self <: CustomAccount](x: Self) {
     
-    @scala.inline
-    def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
+    inline def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginUrlUndefined: Self = StObject.set(x, "loginUrl", js.undefined)
+    inline def setLoginUrlUndefined: Self = StObject.set(x, "loginUrl", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

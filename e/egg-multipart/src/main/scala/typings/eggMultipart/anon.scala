@@ -39,107 +39,74 @@ object anon {
   }
   object AutoFields {
     
-    @scala.inline
-    def apply(): AutoFields = {
+    inline def apply(): AutoFields = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoFields]
     }
     
-    @scala.inline
-    implicit class AutoFieldsMutableBuilder[Self <: AutoFields] (val x: Self) extends AnyVal {
+    extension [Self <: AutoFields](x: Self) {
       
-      @scala.inline
-      def setAutoFields(value: Boolean): Self = StObject.set(x, "autoFields", value.asInstanceOf[js.Any])
+      inline def setAutoFields(value: Boolean): Self = StObject.set(x, "autoFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFieldsUndefined: Self = StObject.set(x, "autoFields", js.undefined)
+      inline def setAutoFieldsUndefined: Self = StObject.set(x, "autoFields", js.undefined)
       
-      @scala.inline
-      def setCleanSchedule(value: ScheduleOptions): Self = StObject.set(x, "cleanSchedule", value.asInstanceOf[js.Any])
+      inline def setCleanSchedule(value: ScheduleOptions): Self = StObject.set(x, "cleanSchedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanScheduleUndefined: Self = StObject.set(x, "cleanSchedule", js.undefined)
+      inline def setCleanScheduleUndefined: Self = StObject.set(x, "cleanSchedule", js.undefined)
       
-      @scala.inline
-      def setDefaultCharset(value: String): Self = StObject.set(x, "defaultCharset", value.asInstanceOf[js.Any])
+      inline def setDefaultCharset(value: String): Self = StObject.set(x, "defaultCharset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCharsetUndefined: Self = StObject.set(x, "defaultCharset", js.undefined)
+      inline def setDefaultCharsetUndefined: Self = StObject.set(x, "defaultCharset", js.undefined)
       
-      @scala.inline
-      def setFieldNameSize(value: Double): Self = StObject.set(x, "fieldNameSize", value.asInstanceOf[js.Any])
+      inline def setFieldNameSize(value: Double): Self = StObject.set(x, "fieldNameSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldNameSizeUndefined: Self = StObject.set(x, "fieldNameSize", js.undefined)
+      inline def setFieldNameSizeUndefined: Self = StObject.set(x, "fieldNameSize", js.undefined)
       
-      @scala.inline
-      def setFieldSize(value: String | Double): Self = StObject.set(x, "fieldSize", value.asInstanceOf[js.Any])
+      inline def setFieldSize(value: String | Double): Self = StObject.set(x, "fieldSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldSizeUndefined: Self = StObject.set(x, "fieldSize", js.undefined)
+      inline def setFieldSizeUndefined: Self = StObject.set(x, "fieldSize", js.undefined)
       
-      @scala.inline
-      def setFields(value: Double): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Double): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFileExtensions(value: js.Array[String]): Self = StObject.set(x, "fileExtensions", value.asInstanceOf[js.Any])
+      inline def setFileExtensions(value: js.Array[String]): Self = StObject.set(x, "fileExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileExtensionsUndefined: Self = StObject.set(x, "fileExtensions", js.undefined)
+      inline def setFileExtensionsUndefined: Self = StObject.set(x, "fileExtensions", js.undefined)
       
-      @scala.inline
-      def setFileExtensionsVarargs(value: String*): Self = StObject.set(x, "fileExtensions", js.Array(value :_*))
+      inline def setFileExtensionsVarargs(value: String*): Self = StObject.set(x, "fileExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setFileModeMatch(value: MatchItem | js.Array[MatchItem]): Self = StObject.set(x, "fileModeMatch", value.asInstanceOf[js.Any])
+      inline def setFileModeMatch(value: MatchItem | js.Array[MatchItem]): Self = StObject.set(x, "fileModeMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileModeMatchFunction1(value: /* ctx */ Context => Boolean): Self = StObject.set(x, "fileModeMatch", js.Any.fromFunction1(value))
+      inline def setFileModeMatchFunction1(value: /* ctx */ Context => Boolean): Self = StObject.set(x, "fileModeMatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFileModeMatchUndefined: Self = StObject.set(x, "fileModeMatch", js.undefined)
+      inline def setFileModeMatchUndefined: Self = StObject.set(x, "fileModeMatch", js.undefined)
       
-      @scala.inline
-      def setFileModeMatchVarargs(value: MatchItem*): Self = StObject.set(x, "fileModeMatch", js.Array(value :_*))
+      inline def setFileModeMatchVarargs(value: MatchItem*): Self = StObject.set(x, "fileModeMatch", js.Array(value :_*))
       
-      @scala.inline
-      def setFileSize(value: String | Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: String | Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+      inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
       
-      @scala.inline
-      def setFiles(value: Double): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Double): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setTmpdir(value: String): Self = StObject.set(x, "tmpdir", value.asInstanceOf[js.Any])
+      inline def setTmpdir(value: String): Self = StObject.set(x, "tmpdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTmpdirUndefined: Self = StObject.set(x, "tmpdir", js.undefined)
+      inline def setTmpdirUndefined: Self = StObject.set(x, "tmpdir", js.undefined)
       
-      @scala.inline
-      def setWhitelist(value: (js.Function1[/* filename */ String, Boolean]) | js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+      inline def setWhitelist(value: (js.Function1[/* filename */ String, Boolean]) | js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "whitelist", js.Any.fromFunction1(value))
+      inline def setWhitelistFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "whitelist", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      @scala.inline
-      def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
     }
   }
   
@@ -157,44 +124,32 @@ object anon {
   }
   object CurrentDate {
     
-    @scala.inline
-    def apply(): CurrentDate = {
+    inline def apply(): CurrentDate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CurrentDate]
     }
     
-    @scala.inline
-    implicit class CurrentDateMutableBuilder[Self <: CurrentDate] (val x: Self) extends AnyVal {
+    extension [Self <: CurrentDate](x: Self) {
       
-      @scala.inline
-      def setCurrentDate(value: String | Double | Date): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
+      inline def setCurrentDate(value: String | Double | Date): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentDateUndefined: Self = StObject.set(x, "currentDate", js.undefined)
+      inline def setCurrentDateUndefined: Self = StObject.set(x, "currentDate", js.undefined)
       
-      @scala.inline
-      def setEndDate(value: String | Double | Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: String | Double | Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
-      @scala.inline
-      def setIterator(value: Boolean): Self = StObject.set(x, "iterator", value.asInstanceOf[js.Any])
+      inline def setIterator(value: Boolean): Self = StObject.set(x, "iterator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIteratorUndefined: Self = StObject.set(x, "iterator", js.undefined)
+      inline def setIteratorUndefined: Self = StObject.set(x, "iterator", js.undefined)
       
-      @scala.inline
-      def setTz(value: String): Self = StObject.set(x, "tz", value.asInstanceOf[js.Any])
+      inline def setTz(value: String): Self = StObject.set(x, "tz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTzUndefined: Self = StObject.set(x, "tz", js.undefined)
+      inline def setTzUndefined: Self = StObject.set(x, "tz", js.undefined)
       
-      @scala.inline
-      def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
+      inline def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
+      inline def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
     }
   }
   
@@ -216,56 +171,40 @@ object anon {
   }
   object FieldNameSize {
     
-    @scala.inline
-    def apply(): FieldNameSize = {
+    inline def apply(): FieldNameSize = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FieldNameSize]
     }
     
-    @scala.inline
-    implicit class FieldNameSizeMutableBuilder[Self <: FieldNameSize] (val x: Self) extends AnyVal {
+    extension [Self <: FieldNameSize](x: Self) {
       
-      @scala.inline
-      def setFieldNameSize(value: Double): Self = StObject.set(x, "fieldNameSize", value.asInstanceOf[js.Any])
+      inline def setFieldNameSize(value: Double): Self = StObject.set(x, "fieldNameSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldNameSizeUndefined: Self = StObject.set(x, "fieldNameSize", js.undefined)
+      inline def setFieldNameSizeUndefined: Self = StObject.set(x, "fieldNameSize", js.undefined)
       
-      @scala.inline
-      def setFieldSize(value: Double): Self = StObject.set(x, "fieldSize", value.asInstanceOf[js.Any])
+      inline def setFieldSize(value: Double): Self = StObject.set(x, "fieldSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldSizeUndefined: Self = StObject.set(x, "fieldSize", js.undefined)
+      inline def setFieldSizeUndefined: Self = StObject.set(x, "fieldSize", js.undefined)
       
-      @scala.inline
-      def setFields(value: Double): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Double): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+      inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
       
-      @scala.inline
-      def setFiles(value: Double): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Double): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setHeaderPairs(value: Double): Self = StObject.set(x, "headerPairs", value.asInstanceOf[js.Any])
+      inline def setHeaderPairs(value: Double): Self = StObject.set(x, "headerPairs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderPairsUndefined: Self = StObject.set(x, "headerPairs", js.undefined)
+      inline def setHeaderPairsUndefined: Self = StObject.set(x, "headerPairs", js.undefined)
       
-      @scala.inline
-      def setParts(value: Double): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: Double): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
+      inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     }
   }
 }

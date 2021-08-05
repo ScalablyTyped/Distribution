@@ -16,7 +16,6 @@ object metadataMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getMetadata(options: js.Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(options.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def getMetadata(options: js.Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(options.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   }
 }

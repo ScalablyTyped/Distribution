@@ -71,55 +71,39 @@ trait HeaderFooterLoadOptions extends StObject {
 }
 object HeaderFooterLoadOptions {
   
-  @scala.inline
-  def apply(): HeaderFooterLoadOptions = {
+  inline def apply(): HeaderFooterLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeaderFooterLoadOptions]
   }
   
-  @scala.inline
-  implicit class HeaderFooterLoadOptionsMutableBuilder[Self <: HeaderFooterLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderFooterLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setCenterFooter(value: Boolean): Self = StObject.set(x, "centerFooter", value.asInstanceOf[js.Any])
+    inline def setCenterFooter(value: Boolean): Self = StObject.set(x, "centerFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterFooterUndefined: Self = StObject.set(x, "centerFooter", js.undefined)
+    inline def setCenterFooterUndefined: Self = StObject.set(x, "centerFooter", js.undefined)
     
-    @scala.inline
-    def setCenterHeader(value: Boolean): Self = StObject.set(x, "centerHeader", value.asInstanceOf[js.Any])
+    inline def setCenterHeader(value: Boolean): Self = StObject.set(x, "centerHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterHeaderUndefined: Self = StObject.set(x, "centerHeader", js.undefined)
+    inline def setCenterHeaderUndefined: Self = StObject.set(x, "centerHeader", js.undefined)
     
-    @scala.inline
-    def setLeftFooter(value: Boolean): Self = StObject.set(x, "leftFooter", value.asInstanceOf[js.Any])
+    inline def setLeftFooter(value: Boolean): Self = StObject.set(x, "leftFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftFooterUndefined: Self = StObject.set(x, "leftFooter", js.undefined)
+    inline def setLeftFooterUndefined: Self = StObject.set(x, "leftFooter", js.undefined)
     
-    @scala.inline
-    def setLeftHeader(value: Boolean): Self = StObject.set(x, "leftHeader", value.asInstanceOf[js.Any])
+    inline def setLeftHeader(value: Boolean): Self = StObject.set(x, "leftHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftHeaderUndefined: Self = StObject.set(x, "leftHeader", js.undefined)
+    inline def setLeftHeaderUndefined: Self = StObject.set(x, "leftHeader", js.undefined)
     
-    @scala.inline
-    def setRightFooter(value: Boolean): Self = StObject.set(x, "rightFooter", value.asInstanceOf[js.Any])
+    inline def setRightFooter(value: Boolean): Self = StObject.set(x, "rightFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightFooterUndefined: Self = StObject.set(x, "rightFooter", js.undefined)
+    inline def setRightFooterUndefined: Self = StObject.set(x, "rightFooter", js.undefined)
     
-    @scala.inline
-    def setRightHeader(value: Boolean): Self = StObject.set(x, "rightHeader", value.asInstanceOf[js.Any])
+    inline def setRightHeader(value: Boolean): Self = StObject.set(x, "rightHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightHeaderUndefined: Self = StObject.set(x, "rightHeader", js.undefined)
+    inline def setRightHeaderUndefined: Self = StObject.set(x, "rightHeader", js.undefined)
   }
 }

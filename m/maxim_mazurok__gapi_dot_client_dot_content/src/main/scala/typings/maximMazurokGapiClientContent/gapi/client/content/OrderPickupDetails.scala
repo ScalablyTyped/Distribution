@@ -20,40 +20,29 @@ trait OrderPickupDetails extends StObject {
 }
 object OrderPickupDetails {
   
-  @scala.inline
-  def apply(): OrderPickupDetails = {
+  inline def apply(): OrderPickupDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderPickupDetails]
   }
   
-  @scala.inline
-  implicit class OrderPickupDetailsMutableBuilder[Self <: OrderPickupDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OrderPickupDetails](x: Self) {
     
-    @scala.inline
-    def setAddress(value: OrderAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: OrderAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setCollectors(value: js.Array[OrderPickupDetailsCollector]): Self = StObject.set(x, "collectors", value.asInstanceOf[js.Any])
+    inline def setCollectors(value: js.Array[OrderPickupDetailsCollector]): Self = StObject.set(x, "collectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectorsUndefined: Self = StObject.set(x, "collectors", js.undefined)
+    inline def setCollectorsUndefined: Self = StObject.set(x, "collectors", js.undefined)
     
-    @scala.inline
-    def setCollectorsVarargs(value: OrderPickupDetailsCollector*): Self = StObject.set(x, "collectors", js.Array(value :_*))
+    inline def setCollectorsVarargs(value: OrderPickupDetailsCollector*): Self = StObject.set(x, "collectors", js.Array(value :_*))
     
-    @scala.inline
-    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
-    @scala.inline
-    def setPickupType(value: String): Self = StObject.set(x, "pickupType", value.asInstanceOf[js.Any])
+    inline def setPickupType(value: String): Self = StObject.set(x, "pickupType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickupTypeUndefined: Self = StObject.set(x, "pickupType", js.undefined)
+    inline def setPickupTypeUndefined: Self = StObject.set(x, "pickupType", js.undefined)
   }
 }

@@ -34,25 +34,19 @@ trait PlusWebviewWebviewRenderedEventOptions extends StObject {
 }
 object PlusWebviewWebviewRenderedEventOptions {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewRenderedEventOptions = {
+  inline def apply(): PlusWebviewWebviewRenderedEventOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewRenderedEventOptions]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewRenderedEventOptionsMutableBuilder[Self <: PlusWebviewWebviewRenderedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewRenderedEventOptions](x: Self) {
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

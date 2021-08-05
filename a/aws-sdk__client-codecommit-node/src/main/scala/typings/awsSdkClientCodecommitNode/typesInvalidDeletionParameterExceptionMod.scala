@@ -16,17 +16,14 @@ object typesInvalidDeletionParameterExceptionMod {
   }
   object InvalidDeletionParameterException {
     
-    @scala.inline
-    def apply(): InvalidDeletionParameterException = {
+    inline def apply(): InvalidDeletionParameterException = {
       val __obj = js.Dynamic.literal(name = "InvalidDeletionParameterException")
       __obj.asInstanceOf[InvalidDeletionParameterException]
     }
     
-    @scala.inline
-    implicit class InvalidDeletionParameterExceptionMutableBuilder[Self <: InvalidDeletionParameterException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidDeletionParameterException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidDeletionParameterException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

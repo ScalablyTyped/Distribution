@@ -16,19 +16,15 @@ trait SchemaSourceGetMetadataResponse extends StObject {
 }
 object SchemaSourceGetMetadataResponse {
   
-  @scala.inline
-  def apply(): SchemaSourceGetMetadataResponse = {
+  inline def apply(): SchemaSourceGetMetadataResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceGetMetadataResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSourceGetMetadataResponseMutableBuilder[Self <: SchemaSourceGetMetadataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceGetMetadataResponse](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: SchemaSourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaSourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

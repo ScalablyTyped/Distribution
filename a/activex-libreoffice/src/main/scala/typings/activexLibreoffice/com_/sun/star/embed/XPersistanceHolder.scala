@@ -29,8 +29,7 @@ trait XPersistanceHolder
 }
 object XPersistanceHolder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     connectPersistance: XStream => Unit,
     disconnectPersistence: () => Unit,
@@ -41,13 +40,10 @@ object XPersistanceHolder {
     __obj.asInstanceOf[XPersistanceHolder]
   }
   
-  @scala.inline
-  implicit class XPersistanceHolderMutableBuilder[Self <: XPersistanceHolder] (val x: Self) extends AnyVal {
+  extension [Self <: XPersistanceHolder](x: Self) {
     
-    @scala.inline
-    def setConnectPersistance(value: XStream => Unit): Self = StObject.set(x, "connectPersistance", js.Any.fromFunction1(value))
+    inline def setConnectPersistance(value: XStream => Unit): Self = StObject.set(x, "connectPersistance", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisconnectPersistence(value: () => Unit): Self = StObject.set(x, "disconnectPersistence", js.Any.fromFunction0(value))
+    inline def setDisconnectPersistence(value: () => Unit): Self = StObject.set(x, "disconnectPersistence", js.Any.fromFunction0(value))
   }
 }

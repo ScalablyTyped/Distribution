@@ -21,34 +21,29 @@ object HttpMethod {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpMethod.Delete")
   @js.native
   def Delete: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod = js.native
-  @scala.inline
-  def Delete_=(x: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Delete")(x.asInstanceOf[js.Any])
+  inline def Delete_=(x: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Delete")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpMethod.Get")
   @js.native
   def Get: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod = js.native
-  @scala.inline
-  def Get_=(x: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Get")(x.asInstanceOf[js.Any])
+  inline def Get_=(x: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Get")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpMethod.Patch")
   @js.native
   def Patch: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod = js.native
-  @scala.inline
-  def Patch_=(x: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Patch")(x.asInstanceOf[js.Any])
+  inline def Patch_=(x: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Patch")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpMethod.Post")
   @js.native
   def Post: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod = js.native
-  @scala.inline
-  def Post_=(x: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Post")(x.asInstanceOf[js.Any])
+  inline def Post_=(x: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Post")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpMethod.Put")
   @js.native
   def Put: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod = js.native
-  @scala.inline
-  def Put_=(x: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Put")(x.asInstanceOf[js.Any])
+  inline def Put_=(x: typings.mendixmodelsdk.microflowsMod.microflows.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Put")(x.asInstanceOf[js.Any])
 }

@@ -61,21 +61,16 @@ object proxyDefaultTargetGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ProxyDefaultTargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProxyDefaultTargetGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProxyDefaultTargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyDefaultTargetGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProxyDefaultTargetGroupState): ProxyDefaultTargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProxyDefaultTargetGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProxyDefaultTargetGroupState, opts: CustomResourceOptions): ProxyDefaultTargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyDefaultTargetGroup]
+    inline def get(name: String, id: Input[ID]): ProxyDefaultTargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProxyDefaultTargetGroup]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProxyDefaultTargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyDefaultTargetGroup]
+    inline def get(name: String, id: Input[ID], state: ProxyDefaultTargetGroupState): ProxyDefaultTargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProxyDefaultTargetGroup]
+    inline def get(name: String, id: Input[ID], state: ProxyDefaultTargetGroupState, opts: CustomResourceOptions): ProxyDefaultTargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyDefaultTargetGroup]
     
     /**
       * Returns true if the given object is an instance of ProxyDefaultTargetGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/proxyDefaultTargetGroup.ProxyDefaultTargetGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/proxyDefaultTargetGroup.ProxyDefaultTargetGroup */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/proxyDefaultTargetGroup.ProxyDefaultTargetGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/proxyDefaultTargetGroup.ProxyDefaultTargetGroup */ Boolean]
   }
   
   trait ProxyDefaultTargetGroupArgs extends StObject {
@@ -92,8 +87,7 @@ object proxyDefaultTargetGroupMod {
   }
   object ProxyDefaultTargetGroupArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connectionPoolConfig: Input[typings.pulumiAws.inputMod.rds.ProxyDefaultTargetGroupConnectionPoolConfig],
       dbProxyName: Input[String]
     ): ProxyDefaultTargetGroupArgs = {
@@ -101,14 +95,11 @@ object proxyDefaultTargetGroupMod {
       __obj.asInstanceOf[ProxyDefaultTargetGroupArgs]
     }
     
-    @scala.inline
-    implicit class ProxyDefaultTargetGroupArgsMutableBuilder[Self <: ProxyDefaultTargetGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyDefaultTargetGroupArgs](x: Self) {
       
-      @scala.inline
-      def setConnectionPoolConfig(value: Input[typings.pulumiAws.inputMod.rds.ProxyDefaultTargetGroupConnectionPoolConfig]): Self = StObject.set(x, "connectionPoolConfig", value.asInstanceOf[js.Any])
+      inline def setConnectionPoolConfig(value: Input[typings.pulumiAws.inputMod.rds.ProxyDefaultTargetGroupConnectionPoolConfig]): Self = StObject.set(x, "connectionPoolConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbProxyName(value: Input[String]): Self = StObject.set(x, "dbProxyName", value.asInstanceOf[js.Any])
+      inline def setDbProxyName(value: Input[String]): Self = StObject.set(x, "dbProxyName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,38 +129,28 @@ object proxyDefaultTargetGroupMod {
   }
   object ProxyDefaultTargetGroupState {
     
-    @scala.inline
-    def apply(): ProxyDefaultTargetGroupState = {
+    inline def apply(): ProxyDefaultTargetGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProxyDefaultTargetGroupState]
     }
     
-    @scala.inline
-    implicit class ProxyDefaultTargetGroupStateMutableBuilder[Self <: ProxyDefaultTargetGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyDefaultTargetGroupState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setConnectionPoolConfig(value: Input[typings.pulumiAws.inputMod.rds.ProxyDefaultTargetGroupConnectionPoolConfig]): Self = StObject.set(x, "connectionPoolConfig", value.asInstanceOf[js.Any])
+      inline def setConnectionPoolConfig(value: Input[typings.pulumiAws.inputMod.rds.ProxyDefaultTargetGroupConnectionPoolConfig]): Self = StObject.set(x, "connectionPoolConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionPoolConfigUndefined: Self = StObject.set(x, "connectionPoolConfig", js.undefined)
+      inline def setConnectionPoolConfigUndefined: Self = StObject.set(x, "connectionPoolConfig", js.undefined)
       
-      @scala.inline
-      def setDbProxyName(value: Input[String]): Self = StObject.set(x, "dbProxyName", value.asInstanceOf[js.Any])
+      inline def setDbProxyName(value: Input[String]): Self = StObject.set(x, "dbProxyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbProxyNameUndefined: Self = StObject.set(x, "dbProxyName", js.undefined)
+      inline def setDbProxyNameUndefined: Self = StObject.set(x, "dbProxyName", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

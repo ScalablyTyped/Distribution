@@ -21,25 +21,19 @@ trait ApplePayPaymentMethodUpdate extends StObject {
 }
 object ApplePayPaymentMethodUpdate {
   
-  @scala.inline
-  def apply(newTotal: ApplePayLineItem): ApplePayPaymentMethodUpdate = {
+  inline def apply(newTotal: ApplePayLineItem): ApplePayPaymentMethodUpdate = {
     val __obj = js.Dynamic.literal(newTotal = newTotal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayPaymentMethodUpdate]
   }
   
-  @scala.inline
-  implicit class ApplePayPaymentMethodUpdateMutableBuilder[Self <: ApplePayPaymentMethodUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ApplePayPaymentMethodUpdate](x: Self) {
     
-    @scala.inline
-    def setNewLineItems(value: js.Array[ApplePayLineItem]): Self = StObject.set(x, "newLineItems", value.asInstanceOf[js.Any])
+    inline def setNewLineItems(value: js.Array[ApplePayLineItem]): Self = StObject.set(x, "newLineItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewLineItemsUndefined: Self = StObject.set(x, "newLineItems", js.undefined)
+    inline def setNewLineItemsUndefined: Self = StObject.set(x, "newLineItems", js.undefined)
     
-    @scala.inline
-    def setNewLineItemsVarargs(value: ApplePayLineItem*): Self = StObject.set(x, "newLineItems", js.Array(value :_*))
+    inline def setNewLineItemsVarargs(value: ApplePayLineItem*): Self = StObject.set(x, "newLineItems", js.Array(value :_*))
     
-    @scala.inline
-    def setNewTotal(value: ApplePayLineItem): Self = StObject.set(x, "newTotal", value.asInstanceOf[js.Any])
+    inline def setNewTotal(value: ApplePayLineItem): Self = StObject.set(x, "newTotal", value.asInstanceOf[js.Any])
   }
 }

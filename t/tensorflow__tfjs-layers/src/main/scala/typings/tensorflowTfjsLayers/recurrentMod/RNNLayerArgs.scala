@@ -13,19 +13,15 @@ trait RNNLayerArgs
 }
 object RNNLayerArgs {
   
-  @scala.inline
-  def apply(cell: RNNCell | js.Array[RNNCell]): RNNLayerArgs = {
+  inline def apply(cell: RNNCell | js.Array[RNNCell]): RNNLayerArgs = {
     val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any])
     __obj.asInstanceOf[RNNLayerArgs]
   }
   
-  @scala.inline
-  implicit class RNNLayerArgsMutableBuilder[Self <: RNNLayerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RNNLayerArgs](x: Self) {
     
-    @scala.inline
-    def setCell(value: RNNCell | js.Array[RNNCell]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: RNNCell | js.Array[RNNCell]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellVarargs(value: RNNCell*): Self = StObject.set(x, "cell", js.Array(value :_*))
+    inline def setCellVarargs(value: RNNCell*): Self = StObject.set(x, "cell", js.Array(value :_*))
   }
 }

@@ -55,21 +55,16 @@ object logStreamMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LogStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogStream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogStream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LogStreamState): LogStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogStream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LogStreamState, opts: CustomResourceOptions): LogStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogStream]
+    inline def get(name: String, id: Input[ID]): LogStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogStream]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogStream]
+    inline def get(name: String, id: Input[ID], state: LogStreamState): LogStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogStream]
+    inline def get(name: String, id: Input[ID], state: LogStreamState, opts: CustomResourceOptions): LogStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogStream]
     
     /**
       * Returns true if the given object is an instance of LogStream.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logStream.LogStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/logStream.LogStream */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logStream.LogStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/logStream.LogStream */ Boolean]
   }
   
   trait LogStreamArgs extends StObject {
@@ -86,23 +81,18 @@ object logStreamMod {
   }
   object LogStreamArgs {
     
-    @scala.inline
-    def apply(logGroupName: Input[String]): LogStreamArgs = {
+    inline def apply(logGroupName: Input[String]): LogStreamArgs = {
       val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogStreamArgs]
     }
     
-    @scala.inline
-    implicit class LogStreamArgsMutableBuilder[Self <: LogStreamArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LogStreamArgs](x: Self) {
       
-      @scala.inline
-      def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+      inline def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -125,32 +115,24 @@ object logStreamMod {
   }
   object LogStreamState {
     
-    @scala.inline
-    def apply(): LogStreamState = {
+    inline def apply(): LogStreamState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogStreamState]
     }
     
-    @scala.inline
-    implicit class LogStreamStateMutableBuilder[Self <: LogStreamState] (val x: Self) extends AnyVal {
+    extension [Self <: LogStreamState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+      inline def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
+      inline def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

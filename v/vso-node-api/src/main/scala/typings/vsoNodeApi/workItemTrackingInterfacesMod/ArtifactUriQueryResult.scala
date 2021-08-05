@@ -14,16 +14,13 @@ trait ArtifactUriQueryResult extends StObject {
 }
 object ArtifactUriQueryResult {
   
-  @scala.inline
-  def apply(artifactUrisQueryResult: StringDictionary[js.Array[WorkItemReference]]): ArtifactUriQueryResult = {
+  inline def apply(artifactUrisQueryResult: StringDictionary[js.Array[WorkItemReference]]): ArtifactUriQueryResult = {
     val __obj = js.Dynamic.literal(artifactUrisQueryResult = artifactUrisQueryResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactUriQueryResult]
   }
   
-  @scala.inline
-  implicit class ArtifactUriQueryResultMutableBuilder[Self <: ArtifactUriQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactUriQueryResult](x: Self) {
     
-    @scala.inline
-    def setArtifactUrisQueryResult(value: StringDictionary[js.Array[WorkItemReference]]): Self = StObject.set(x, "artifactUrisQueryResult", value.asInstanceOf[js.Any])
+    inline def setArtifactUrisQueryResult(value: StringDictionary[js.Array[WorkItemReference]]): Self = StObject.set(x, "artifactUrisQueryResult", value.asInstanceOf[js.Any])
   }
 }

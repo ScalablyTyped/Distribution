@@ -25,39 +25,29 @@ trait AngularBuildOptions
 }
 object AngularBuildOptions {
   
-  @scala.inline
-  def apply(`--`: js.Array[String], engine: String): AngularBuildOptions = {
+  inline def apply(`--`: js.Array[String], engine: String): AngularBuildOptions = {
     val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
     __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("angular")
     __obj.asInstanceOf[AngularBuildOptions]
   }
   
-  @scala.inline
-  implicit class AngularBuildOptionsMutableBuilder[Self <: AngularBuildOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AngularBuildOptions](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setCordovaAssets(value: Boolean): Self = StObject.set(x, "cordovaAssets", value.asInstanceOf[js.Any])
+    inline def setCordovaAssets(value: Boolean): Self = StObject.set(x, "cordovaAssets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCordovaAssetsUndefined: Self = StObject.set(x, "cordovaAssets", js.undefined)
+    inline def setCordovaAssetsUndefined: Self = StObject.set(x, "cordovaAssets", js.undefined)
     
-    @scala.inline
-    def setSourcemaps(value: Boolean): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
+    inline def setSourcemaps(value: Boolean): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
+    inline def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
     
-    @scala.inline
-    def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+    inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
   }
 }

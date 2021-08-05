@@ -29,20 +29,16 @@ object mediaLikeOptionsMod {
   }
   object BaseProfile {
     
-    @scala.inline
-    def apply(user_id: String | Double, username: String): BaseProfile = {
+    inline def apply(user_id: String | Double, username: String): BaseProfile = {
       val __obj = js.Dynamic.literal(user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseProfile]
     }
     
-    @scala.inline
-    implicit class BaseProfileMutableBuilder[Self <: BaseProfile] (val x: Self) extends AnyVal {
+    extension [Self <: BaseProfile](x: Self) {
       
-      @scala.inline
-      def setUser_id(value: String | Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+      inline def setUser_id(value: String | Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,20 +50,16 @@ object mediaLikeOptionsMod {
   }
   object FeedContextualHashtag {
     
-    @scala.inline
-    def apply(hashtag: String): FeedContextualHashtag = {
+    inline def apply(hashtag: String): FeedContextualHashtag = {
       val __obj = js.Dynamic.literal(hashtag = hashtag.asInstanceOf[js.Any], module_name = "feed_contextual_hashtag")
       __obj.asInstanceOf[FeedContextualHashtag]
     }
     
-    @scala.inline
-    implicit class FeedContextualHashtagMutableBuilder[Self <: FeedContextualHashtag] (val x: Self) extends AnyVal {
+    extension [Self <: FeedContextualHashtag](x: Self) {
       
-      @scala.inline
-      def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+      inline def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModule_name(value: feed_contextual_hashtag): Self = StObject.set(x, "module_name", value.asInstanceOf[js.Any])
+      inline def setModule_name(value: feed_contextual_hashtag): Self = StObject.set(x, "module_name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,20 +71,16 @@ object mediaLikeOptionsMod {
   }
   object FeedContextualLocation {
     
-    @scala.inline
-    def apply(location_id: String | Double): FeedContextualLocation = {
+    inline def apply(location_id: String | Double): FeedContextualLocation = {
       val __obj = js.Dynamic.literal(location_id = location_id.asInstanceOf[js.Any], module_name = "feed_contextual_location")
       __obj.asInstanceOf[FeedContextualLocation]
     }
     
-    @scala.inline
-    implicit class FeedContextualLocationMutableBuilder[Self <: FeedContextualLocation] (val x: Self) extends AnyVal {
+    extension [Self <: FeedContextualLocation](x: Self) {
       
-      @scala.inline
-      def setLocation_id(value: String | Double): Self = StObject.set(x, "location_id", value.asInstanceOf[js.Any])
+      inline def setLocation_id(value: String | Double): Self = StObject.set(x, "location_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModule_name(value: feed_contextual_location): Self = StObject.set(x, "module_name", value.asInstanceOf[js.Any])
+      inline def setModule_name(value: feed_contextual_location): Self = StObject.set(x, "module_name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,19 +90,16 @@ object mediaLikeOptionsMod {
   }
   object FeedTimeline {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       module_name: feed_timeline | feed_contextual_post | newsfeed | feed_contextual_newsfeed_multi_media_liked
     ): FeedTimeline = {
       val __obj = js.Dynamic.literal(module_name = module_name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeedTimeline]
     }
     
-    @scala.inline
-    implicit class FeedTimelineMutableBuilder[Self <: FeedTimeline] (val x: Self) extends AnyVal {
+    extension [Self <: FeedTimeline](x: Self) {
       
-      @scala.inline
-      def setModule_name(
+      inline def setModule_name(
         value: feed_timeline | feed_contextual_post | newsfeed | feed_contextual_newsfeed_multi_media_liked
       ): Self = StObject.set(x, "module_name", value.asInstanceOf[js.Any])
     }
@@ -130,20 +115,16 @@ object mediaLikeOptionsMod {
   }
   object LikeOrUnlikeBaseOptions {
     
-    @scala.inline
-    def apply(mediaId: String, moduleInfo: LikeModuleInfoOption): LikeOrUnlikeBaseOptions = {
+    inline def apply(mediaId: String, moduleInfo: LikeModuleInfoOption): LikeOrUnlikeBaseOptions = {
       val __obj = js.Dynamic.literal(mediaId = mediaId.asInstanceOf[js.Any], moduleInfo = moduleInfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[LikeOrUnlikeBaseOptions]
     }
     
-    @scala.inline
-    implicit class LikeOrUnlikeBaseOptionsMutableBuilder[Self <: LikeOrUnlikeBaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LikeOrUnlikeBaseOptions](x: Self) {
       
-      @scala.inline
-      def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
+      inline def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleInfo(value: LikeModuleInfoOption): Self = StObject.set(x, "moduleInfo", value.asInstanceOf[js.Any])
+      inline def setModuleInfo(value: LikeModuleInfoOption): Self = StObject.set(x, "moduleInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,17 +136,14 @@ object mediaLikeOptionsMod {
   }
   object LikeRequestOptions {
     
-    @scala.inline
-    def apply(d: `1` | `0`, mediaId: String, moduleInfo: LikeModuleInfoOption): LikeRequestOptions = {
+    inline def apply(d: `1` | `0`, mediaId: String, moduleInfo: LikeModuleInfoOption): LikeRequestOptions = {
       val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], mediaId = mediaId.asInstanceOf[js.Any], moduleInfo = moduleInfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[LikeRequestOptions]
     }
     
-    @scala.inline
-    implicit class LikeRequestOptionsMutableBuilder[Self <: LikeRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LikeRequestOptions](x: Self) {
       
-      @scala.inline
-      def setD(value: `1` | `0`): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+      inline def setD(value: `1` | `0`): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,23 +157,18 @@ object mediaLikeOptionsMod {
   }
   object MediaLikeOrUnlikeOptions {
     
-    @scala.inline
-    def apply(action: like | unlike, mediaId: String, moduleInfo: LikeModuleInfoOption): MediaLikeOrUnlikeOptions = {
+    inline def apply(action: like | unlike, mediaId: String, moduleInfo: LikeModuleInfoOption): MediaLikeOrUnlikeOptions = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], mediaId = mediaId.asInstanceOf[js.Any], moduleInfo = moduleInfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaLikeOrUnlikeOptions]
     }
     
-    @scala.inline
-    implicit class MediaLikeOrUnlikeOptionsMutableBuilder[Self <: MediaLikeOrUnlikeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MediaLikeOrUnlikeOptions](x: Self) {
       
-      @scala.inline
-      def setAction(value: like | unlike): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: like | unlike): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setD(value: `1` | `0`): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+      inline def setD(value: `1` | `0`): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+      inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     }
   }
   
@@ -207,17 +180,14 @@ object mediaLikeOptionsMod {
   }
   object MediaViewProfile {
     
-    @scala.inline
-    def apply(user_id: String | Double, username: String): MediaViewProfile = {
+    inline def apply(user_id: String | Double, username: String): MediaViewProfile = {
       val __obj = js.Dynamic.literal(module_name = "media_view_profile", user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaViewProfile]
     }
     
-    @scala.inline
-    implicit class MediaViewProfileMutableBuilder[Self <: MediaViewProfile] (val x: Self) extends AnyVal {
+    extension [Self <: MediaViewProfile](x: Self) {
       
-      @scala.inline
-      def setModule_name(value: media_view_profile): Self = StObject.set(x, "module_name", value.asInstanceOf[js.Any])
+      inline def setModule_name(value: media_view_profile): Self = StObject.set(x, "module_name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -229,17 +199,14 @@ object mediaLikeOptionsMod {
   }
   object PhotoViewProfile {
     
-    @scala.inline
-    def apply(user_id: String | Double, username: String): PhotoViewProfile = {
+    inline def apply(user_id: String | Double, username: String): PhotoViewProfile = {
       val __obj = js.Dynamic.literal(module_name = "photo_view_profile", user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhotoViewProfile]
     }
     
-    @scala.inline
-    implicit class PhotoViewProfileMutableBuilder[Self <: PhotoViewProfile] (val x: Self) extends AnyVal {
+    extension [Self <: PhotoViewProfile](x: Self) {
       
-      @scala.inline
-      def setModule_name(value: photo_view_profile): Self = StObject.set(x, "module_name", value.asInstanceOf[js.Any])
+      inline def setModule_name(value: photo_view_profile): Self = StObject.set(x, "module_name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -251,17 +218,14 @@ object mediaLikeOptionsMod {
   }
   object Profile {
     
-    @scala.inline
-    def apply(user_id: String | Double, username: String): Profile = {
+    inline def apply(user_id: String | Double, username: String): Profile = {
       val __obj = js.Dynamic.literal(module_name = "profile", user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Profile]
     }
     
-    @scala.inline
-    implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
+    extension [Self <: Profile](x: Self) {
       
-      @scala.inline
-      def setModule_name(value: profile): Self = StObject.set(x, "module_name", value.asInstanceOf[js.Any])
+      inline def setModule_name(value: profile): Self = StObject.set(x, "module_name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,20 +237,16 @@ object mediaLikeOptionsMod {
   }
   object UnlikeRequestOptions {
     
-    @scala.inline
-    def apply(mediaId: String, moduleInfo: LikeModuleInfoOption): UnlikeRequestOptions = {
+    inline def apply(mediaId: String, moduleInfo: LikeModuleInfoOption): UnlikeRequestOptions = {
       val __obj = js.Dynamic.literal(mediaId = mediaId.asInstanceOf[js.Any], moduleInfo = moduleInfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnlikeRequestOptions]
     }
     
-    @scala.inline
-    implicit class UnlikeRequestOptionsMutableBuilder[Self <: UnlikeRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UnlikeRequestOptions](x: Self) {
       
-      @scala.inline
-      def setD(value: `0`): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+      inline def setD(value: `0`): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+      inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     }
   }
   
@@ -298,17 +258,14 @@ object mediaLikeOptionsMod {
   }
   object VideoViewProfile {
     
-    @scala.inline
-    def apply(user_id: String | Double, username: String): VideoViewProfile = {
+    inline def apply(user_id: String | Double, username: String): VideoViewProfile = {
       val __obj = js.Dynamic.literal(module_name = "video_view_profile", user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[VideoViewProfile]
     }
     
-    @scala.inline
-    implicit class VideoViewProfileMutableBuilder[Self <: VideoViewProfile] (val x: Self) extends AnyVal {
+    extension [Self <: VideoViewProfile](x: Self) {
       
-      @scala.inline
-      def setModule_name(value: video_view_profile): Self = StObject.set(x, "module_name", value.asInstanceOf[js.Any])
+      inline def setModule_name(value: video_view_profile): Self = StObject.set(x, "module_name", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -27,27 +27,26 @@ object explorerBaseMod {
     
     def clearSearchCache(): Unit = js.native
     
-    val config: T = js.native
+    /* protected */ val config: T = js.native
     
     /* protected */ def getLoaderEntryForFile(filepath: String): Loader = js.native
     
-    val loadCache: js.UndefOr[Cache] = js.native
+    /* protected */ val loadCache: js.UndefOr[Cache] = js.native
     
-    var loadPackageProp: js.Any = js.native
+    /* private */ var loadPackageProp: js.Any = js.native
     
     /* protected */ def loadedContentToCosmiconfigResult(filepath: String, loadedContent: LoadedFileContent): CosmiconfigResult = js.native
     
     /* protected */ def nextDirectoryToSearch(currentDir: String, currentResult: CosmiconfigResult): String | Null = js.native
     
-    val searchCache: js.UndefOr[Cache] = js.native
+    /* protected */ val searchCache: js.UndefOr[Cache] = js.native
     
     /* protected */ def shouldSearchStopWithResult(result: CosmiconfigResult): Boolean = js.native
     
-    var validateConfig: js.Any = js.native
+    /* private */ var validateConfig: js.Any = js.native
     
     /* protected */ def validateFilePath(filepath: String): Unit = js.native
   }
   
-  @scala.inline
-  def getExtensionDescription(filepath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtensionDescription")(filepath.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getExtensionDescription(filepath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtensionDescription")(filepath.asInstanceOf[js.Any]).asInstanceOf[String]
 }

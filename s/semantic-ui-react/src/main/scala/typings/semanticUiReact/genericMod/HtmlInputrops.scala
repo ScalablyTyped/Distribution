@@ -11,8 +11,7 @@ trait HtmlInputrops
      with /* key */ StringDictionary[js.Any]
 object HtmlInputrops {
   
-  @scala.inline
-  def apply(): HtmlInputrops = {
+  inline def apply(): HtmlInputrops = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HtmlInputrops]
   }

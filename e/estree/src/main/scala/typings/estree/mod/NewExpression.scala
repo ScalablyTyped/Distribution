@@ -16,17 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object NewExpression {
   
-  @scala.inline
-  def apply(arguments: js.Array[Expression | SpreadElement], callee: Expression | Super): NewExpression = {
+  inline def apply(arguments: js.Array[Expression | SpreadElement], callee: Expression | Super): NewExpression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NewExpression")
     __obj.asInstanceOf[NewExpression]
   }
   
-  @scala.inline
-  implicit class NewExpressionMutableBuilder[Self <: NewExpression] (val x: Self) extends AnyVal {
+  extension [Self <: NewExpression](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.NewExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.NewExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

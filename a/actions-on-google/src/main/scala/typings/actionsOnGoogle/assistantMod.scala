@@ -21,10 +21,8 @@ object assistantMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attach[TService](service: TService): OmniHandler & BaseApp & TService = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(service.asInstanceOf[js.Any]).asInstanceOf[OmniHandler & BaseApp & TService]
-  @scala.inline
-  def attach[TService](service: TService, options: AppOptions): OmniHandler & BaseApp & TService = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(service.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[OmniHandler & BaseApp & TService]
+  inline def attach[TService](service: TService): OmniHandler & BaseApp & TService = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(service.asInstanceOf[js.Any]).asInstanceOf[OmniHandler & BaseApp & TService]
+  inline def attach[TService](service: TService, options: AppOptions): OmniHandler & BaseApp & TService = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(service.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[OmniHandler & BaseApp & TService]
   
   @js.native
   trait AppHandler
@@ -51,20 +49,16 @@ object assistantMod {
   }
   object AppOptions {
     
-    @scala.inline
-    def apply(): AppOptions = {
+    inline def apply(): AppOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppOptions]
     }
     
-    @scala.inline
-    implicit class AppOptionsMutableBuilder[Self <: AppOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AppOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     }
   }
   
@@ -83,8 +77,7 @@ object assistantMod {
   }
   object BaseApp {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: Boolean,
       frameworks: BuiltinFrameworks,
       handler: (/* body */ JsonObject, /* headers */ Headers, /* metadata */ js.UndefOr[BuiltinFrameworkMetadata]) => js.Promise[StandardResponse],
@@ -94,17 +87,13 @@ object assistantMod {
       __obj.asInstanceOf[BaseApp]
     }
     
-    @scala.inline
-    implicit class BaseAppMutableBuilder[Self <: BaseApp] (val x: Self) extends AnyVal {
+    extension [Self <: BaseApp](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameworks(value: BuiltinFrameworks): Self = StObject.set(x, "frameworks", value.asInstanceOf[js.Any])
+      inline def setFrameworks(value: BuiltinFrameworks): Self = StObject.set(x, "frameworks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse(value: Plugin[js.Any, js.Any] => BaseApp & js.Any): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
+      inline def setUse(value: Plugin[js.Any, js.Any] => BaseApp & js.Any): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
     }
   }
   
@@ -133,19 +122,16 @@ object assistantMod {
   }
   object ServiceBaseApp {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handler: (/* body */ JsonObject, /* headers */ Headers, /* metadata */ js.UndefOr[BuiltinFrameworkMetadata]) => js.Promise[StandardResponse]
     ): ServiceBaseApp = {
       val __obj = js.Dynamic.literal(handler = js.Any.fromFunction3(handler))
       __obj.asInstanceOf[ServiceBaseApp]
     }
     
-    @scala.inline
-    implicit class ServiceBaseAppMutableBuilder[Self <: ServiceBaseApp] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceBaseApp](x: Self) {
       
-      @scala.inline
-      def setHandler(
+      inline def setHandler(
         value: (/* body */ JsonObject, /* headers */ Headers, /* metadata */ js.UndefOr[BuiltinFrameworkMetadata]) => js.Promise[StandardResponse]
       ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
     }

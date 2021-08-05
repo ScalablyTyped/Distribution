@@ -15,19 +15,15 @@ trait NavigatorYAxisStackLabelsAnimationOptions extends StObject {
 }
 object NavigatorYAxisStackLabelsAnimationOptions {
   
-  @scala.inline
-  def apply(): NavigatorYAxisStackLabelsAnimationOptions = {
+  inline def apply(): NavigatorYAxisStackLabelsAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigatorYAxisStackLabelsAnimationOptions]
   }
   
-  @scala.inline
-  implicit class NavigatorYAxisStackLabelsAnimationOptionsMutableBuilder[Self <: NavigatorYAxisStackLabelsAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigatorYAxisStackLabelsAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

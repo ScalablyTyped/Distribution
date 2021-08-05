@@ -18,19 +18,15 @@ trait DescribeDataSourceRequest extends StObject {
 }
 object DescribeDataSourceRequest {
   
-  @scala.inline
-  def apply(Id: DataSourceId, IndexId: IndexId): DescribeDataSourceRequest = {
+  inline def apply(Id: DataSourceId, IndexId: IndexId): DescribeDataSourceRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], IndexId = IndexId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDataSourceRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDataSourceRequestMutableBuilder[Self <: DescribeDataSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDataSourceRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: DataSourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: DataSourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
+    inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
   }
 }

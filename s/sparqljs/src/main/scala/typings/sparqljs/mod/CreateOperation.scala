@@ -17,23 +17,18 @@ trait CreateOperation
 }
 object CreateOperation {
   
-  @scala.inline
-  def apply(graph: IriTerm, silent: Boolean): CreateOperation = {
+  inline def apply(graph: IriTerm, silent: Boolean): CreateOperation = {
     val __obj = js.Dynamic.literal(graph = graph.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("create")
     __obj.asInstanceOf[CreateOperation]
   }
   
-  @scala.inline
-  implicit class CreateOperationMutableBuilder[Self <: CreateOperation] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOperation](x: Self) {
     
-    @scala.inline
-    def setGraph(value: IriTerm): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+    inline def setGraph(value: IriTerm): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: create): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: create): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

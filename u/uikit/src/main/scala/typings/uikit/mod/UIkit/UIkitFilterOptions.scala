@@ -12,25 +12,19 @@ trait UIkitFilterOptions extends StObject {
 }
 object UIkitFilterOptions {
   
-  @scala.inline
-  def apply(): UIkitFilterOptions = {
+  inline def apply(): UIkitFilterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitFilterOptions]
   }
   
-  @scala.inline
-  implicit class UIkitFilterOptionsMutableBuilder[Self <: UIkitFilterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitFilterOptions](x: Self) {
     
-    @scala.inline
-    def setSelActive(value: String | Boolean): Self = StObject.set(x, "selActive", value.asInstanceOf[js.Any])
+    inline def setSelActive(value: String | Boolean): Self = StObject.set(x, "selActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelActiveUndefined: Self = StObject.set(x, "selActive", js.undefined)
+    inline def setSelActiveUndefined: Self = StObject.set(x, "selActive", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

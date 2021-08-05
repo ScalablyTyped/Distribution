@@ -21,19 +21,15 @@ trait DDEItemInfo extends StObject {
 }
 object DDEItemInfo {
   
-  @scala.inline
-  def apply(Item: String, Results: SafeArray[SafeArray[js.Any]]): DDEItemInfo = {
+  inline def apply(Item: String, Results: SafeArray[SafeArray[js.Any]]): DDEItemInfo = {
     val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any], Results = Results.asInstanceOf[js.Any])
     __obj.asInstanceOf[DDEItemInfo]
   }
   
-  @scala.inline
-  implicit class DDEItemInfoMutableBuilder[Self <: DDEItemInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DDEItemInfo](x: Self) {
     
-    @scala.inline
-    def setItem(value: String): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: String): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
+    inline def setResults(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
   }
 }

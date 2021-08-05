@@ -26,14 +26,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def error(error: Error): typings.rsocketFlowable.flowableMod.Flowable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any]).asInstanceOf[typings.rsocketFlowable.flowableMod.Flowable[scala.Nothing]]
+    inline def error(error: Error): typings.rsocketFlowable.flowableMod.Flowable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any]).asInstanceOf[typings.rsocketFlowable.flowableMod.Flowable[scala.Nothing]]
     
-    @scala.inline
-    def just[U](values: U*): typings.rsocketFlowable.flowableMod.Flowable[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("just")(values.asInstanceOf[js.Any]).asInstanceOf[typings.rsocketFlowable.flowableMod.Flowable[U]]
+    inline def just[U](values: U*): typings.rsocketFlowable.flowableMod.Flowable[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("just")(values.asInstanceOf[js.Any]).asInstanceOf[typings.rsocketFlowable.flowableMod.Flowable[U]]
     
-    @scala.inline
-    def never(): typings.rsocketFlowable.flowableMod.Flowable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[typings.rsocketFlowable.flowableMod.Flowable[scala.Nothing]]
+    inline def never(): typings.rsocketFlowable.flowableMod.Flowable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[typings.rsocketFlowable.flowableMod.Flowable[scala.Nothing]]
   }
   
   @JSImport("rsocket-flowable", "FlowableProcessor")
@@ -60,16 +57,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def error(error: Error): typings.rsocketFlowable.singleMod.Single[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any]).asInstanceOf[typings.rsocketFlowable.singleMod.Single[scala.Nothing]]
+    inline def error(error: Error): typings.rsocketFlowable.singleMod.Single[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any]).asInstanceOf[typings.rsocketFlowable.singleMod.Single[scala.Nothing]]
     
-    @scala.inline
-    def never(): typings.rsocketFlowable.singleMod.Single[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[typings.rsocketFlowable.singleMod.Single[scala.Nothing]]
+    inline def never(): typings.rsocketFlowable.singleMod.Single[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[typings.rsocketFlowable.singleMod.Single[scala.Nothing]]
     
-    @scala.inline
-    def of[U](value: U): typings.rsocketFlowable.singleMod.Single[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[typings.rsocketFlowable.singleMod.Single[U]]
+    inline def of[U](value: U): typings.rsocketFlowable.singleMod.Single[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[typings.rsocketFlowable.singleMod.Single[U]]
   }
   
-  @scala.inline
-  def every(ms: Double): default[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(ms.asInstanceOf[js.Any]).asInstanceOf[default[Double]]
+  inline def every(ms: Double): default[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(ms.asInstanceOf[js.Any]).asInstanceOf[default[Double]]
 }

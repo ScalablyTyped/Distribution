@@ -18,8 +18,7 @@ trait ParametersReposGetDeploymentStatusEndpoint extends StObject {
 }
 object ParametersReposGetDeploymentStatusEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetDeploymentStatusEndpoint,
     request: ReposGetDeploymentStatusRequestOptions,
     response: OctokitResponse[ReposGetDeploymentStatusResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetDeploymentStatusEndpoint {
     __obj.asInstanceOf[ParametersReposGetDeploymentStatusEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetDeploymentStatusEndpointMutableBuilder[Self <: ParametersReposGetDeploymentStatusEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetDeploymentStatusEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetDeploymentStatusEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetDeploymentStatusEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetDeploymentStatusRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetDeploymentStatusRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetDeploymentStatusResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetDeploymentStatusResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

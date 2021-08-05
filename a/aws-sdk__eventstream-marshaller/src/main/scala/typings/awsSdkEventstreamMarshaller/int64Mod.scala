@@ -24,7 +24,6 @@ object int64Mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromNumber(number: Double): Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[Int64]
+    inline def fromNumber(number: Double): Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[Int64]
   }
 }

@@ -5,11 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def generate(config: typings.c3.mod.ChartConfiguration): typings.c3.mod.ChartAPI = typings.c3.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generate")(config.asInstanceOf[js.Any]).asInstanceOf[typings.c3.mod.ChartAPI]
+inline def generate(config: typings.c3.mod.ChartConfiguration): typings.c3.mod.ChartAPI = typings.c3.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generate")(config.asInstanceOf[js.Any]).asInstanceOf[typings.c3.mod.ChartAPI]
 
-@scala.inline
-def version: java.lang.String = typings.c3.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version: java.lang.String = typings.c3.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
 
 type ArrayOrSingle[T /* <: js.Any */] = T | js.Array[T]
 

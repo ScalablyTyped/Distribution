@@ -20,16 +20,13 @@ trait SuggestionsResponse extends StObject {
 }
 object SuggestionsResponse {
   
-  @scala.inline
-  def apply(printJson: () => String): SuggestionsResponse = {
+  inline def apply(printJson: () => String): SuggestionsResponse = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
     __obj.asInstanceOf[SuggestionsResponse]
   }
   
-  @scala.inline
-  implicit class SuggestionsResponseMutableBuilder[Self <: SuggestionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestionsResponse](x: Self) {
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }
 }

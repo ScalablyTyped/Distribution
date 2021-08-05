@@ -44,8 +44,7 @@ trait KiiQuery extends StObject {
 }
 object KiiQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getLimit: () => Double,
     setLimit: Double => Unit,
     sortByAsc: String => Unit,
@@ -55,19 +54,14 @@ object KiiQuery {
     __obj.asInstanceOf[KiiQuery]
   }
   
-  @scala.inline
-  implicit class KiiQueryMutableBuilder[Self <: KiiQuery] (val x: Self) extends AnyVal {
+  extension [Self <: KiiQuery](x: Self) {
     
-    @scala.inline
-    def setGetLimit(value: () => Double): Self = StObject.set(x, "getLimit", js.Any.fromFunction0(value))
+    inline def setGetLimit(value: () => Double): Self = StObject.set(x, "getLimit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetLimit(value: Double => Unit): Self = StObject.set(x, "setLimit", js.Any.fromFunction1(value))
+    inline def setSetLimit(value: Double => Unit): Self = StObject.set(x, "setLimit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortByAsc(value: String => Unit): Self = StObject.set(x, "sortByAsc", js.Any.fromFunction1(value))
+    inline def setSortByAsc(value: String => Unit): Self = StObject.set(x, "sortByAsc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortByDesc(value: String => Unit): Self = StObject.set(x, "sortByDesc", js.Any.fromFunction1(value))
+    inline def setSortByDesc(value: String => Unit): Self = StObject.set(x, "sortByDesc", js.Any.fromFunction1(value))
   }
 }

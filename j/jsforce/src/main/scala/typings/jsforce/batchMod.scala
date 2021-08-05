@@ -69,8 +69,7 @@ object batchMod {
   }
   object BatchInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       jobId: String,
       numberRecordsFailed: String,
@@ -83,29 +82,21 @@ object batchMod {
       __obj.asInstanceOf[BatchInfo]
     }
     
-    @scala.inline
-    implicit class BatchInfoMutableBuilder[Self <: BatchInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BatchInfo](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+      inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberRecordsFailed(value: String): Self = StObject.set(x, "numberRecordsFailed", value.asInstanceOf[js.Any])
+      inline def setNumberRecordsFailed(value: String): Self = StObject.set(x, "numberRecordsFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberRecordsProcessed(value: String): Self = StObject.set(x, "numberRecordsProcessed", value.asInstanceOf[js.Any])
+      inline def setNumberRecordsProcessed(value: String): Self = StObject.set(x, "numberRecordsProcessed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateMessage(value: String): Self = StObject.set(x, "stateMessage", value.asInstanceOf[js.Any])
+      inline def setStateMessage(value: String): Self = StObject.set(x, "stateMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalProcessingTime(value: String): Self = StObject.set(x, "totalProcessingTime", value.asInstanceOf[js.Any])
+      inline def setTotalProcessingTime(value: String): Self = StObject.set(x, "totalProcessingTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,44 +114,32 @@ object batchMod {
   }
   object BatchResultInfo {
     
-    @scala.inline
-    def apply(id: String): BatchResultInfo = {
+    inline def apply(id: String): BatchResultInfo = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[BatchResultInfo]
     }
     
-    @scala.inline
-    implicit class BatchResultInfoMutableBuilder[Self <: BatchResultInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BatchResultInfo](x: Self) {
       
-      @scala.inline
-      def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+      inline def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+      inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
       
-      @scala.inline
-      def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+      inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+      inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
 }

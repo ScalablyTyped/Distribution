@@ -10,16 +10,13 @@ trait calendarsSettings extends StObject {
 }
 object calendarsSettings {
   
-  @scala.inline
-  def apply(standard: standardSettings): calendarsSettings = {
+  inline def apply(standard: standardSettings): calendarsSettings = {
     val __obj = js.Dynamic.literal(standard = standard.asInstanceOf[js.Any])
     __obj.asInstanceOf[calendarsSettings]
   }
   
-  @scala.inline
-  implicit class calendarsSettingsMutableBuilder[Self <: calendarsSettings] (val x: Self) extends AnyVal {
+  extension [Self <: calendarsSettings](x: Self) {
     
-    @scala.inline
-    def setStandard(value: standardSettings): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: standardSettings): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
   }
 }

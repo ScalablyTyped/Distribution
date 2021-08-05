@@ -16,37 +16,27 @@ trait DevMode extends StObject {
 }
 object DevMode {
   
-  @scala.inline
-  def apply(pathsToOpen: js.Array[String]): DevMode = {
+  inline def apply(pathsToOpen: js.Array[String]): DevMode = {
     val __obj = js.Dynamic.literal(pathsToOpen = pathsToOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevMode]
   }
   
-  @scala.inline
-  implicit class DevModeMutableBuilder[Self <: DevMode] (val x: Self) extends AnyVal {
+  extension [Self <: DevMode](x: Self) {
     
-    @scala.inline
-    def setDevMode(value: Boolean): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
+    inline def setDevMode(value: Boolean): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevModeUndefined: Self = StObject.set(x, "devMode", js.undefined)
+    inline def setDevModeUndefined: Self = StObject.set(x, "devMode", js.undefined)
     
-    @scala.inline
-    def setNewWindow(value: Boolean): Self = StObject.set(x, "newWindow", value.asInstanceOf[js.Any])
+    inline def setNewWindow(value: Boolean): Self = StObject.set(x, "newWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewWindowUndefined: Self = StObject.set(x, "newWindow", js.undefined)
+    inline def setNewWindowUndefined: Self = StObject.set(x, "newWindow", js.undefined)
     
-    @scala.inline
-    def setPathsToOpen(value: js.Array[String]): Self = StObject.set(x, "pathsToOpen", value.asInstanceOf[js.Any])
+    inline def setPathsToOpen(value: js.Array[String]): Self = StObject.set(x, "pathsToOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsToOpenVarargs(value: String*): Self = StObject.set(x, "pathsToOpen", js.Array(value :_*))
+    inline def setPathsToOpenVarargs(value: String*): Self = StObject.set(x, "pathsToOpen", js.Array(value :_*))
     
-    @scala.inline
-    def setSafeMode(value: Boolean): Self = StObject.set(x, "safeMode", value.asInstanceOf[js.Any])
+    inline def setSafeMode(value: Boolean): Self = StObject.set(x, "safeMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeModeUndefined: Self = StObject.set(x, "safeMode", js.undefined)
+    inline def setSafeModeUndefined: Self = StObject.set(x, "safeMode", js.undefined)
   }
 }

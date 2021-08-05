@@ -26,8 +26,7 @@ trait ReelsMediaFeedResponsePollSticker extends StObject {
 }
 object ReelsMediaFeedResponsePollSticker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     finished: Boolean,
     id: String,
     is_shared_result: Boolean,
@@ -41,40 +40,28 @@ object ReelsMediaFeedResponsePollSticker {
     __obj.asInstanceOf[ReelsMediaFeedResponsePollSticker]
   }
   
-  @scala.inline
-  implicit class ReelsMediaFeedResponsePollStickerMutableBuilder[Self <: ReelsMediaFeedResponsePollSticker] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsMediaFeedResponsePollSticker](x: Self) {
     
-    @scala.inline
-    def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+    inline def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_shared_result(value: Boolean): Self = StObject.set(x, "is_shared_result", value.asInstanceOf[js.Any])
+    inline def setIs_shared_result(value: Boolean): Self = StObject.set(x, "is_shared_result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoll_id(value: Double): Self = StObject.set(x, "poll_id", value.asInstanceOf[js.Any])
+    inline def setPoll_id(value: Double): Self = StObject.set(x, "poll_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotion_tallies(value: Null): Self = StObject.set(x, "promotion_tallies", value.asInstanceOf[js.Any])
+    inline def setPromotion_tallies(value: Null): Self = StObject.set(x, "promotion_tallies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+    inline def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTallies(value: js.Array[ReelsMediaFeedResponseTalliesItem]): Self = StObject.set(x, "tallies", value.asInstanceOf[js.Any])
+    inline def setTallies(value: js.Array[ReelsMediaFeedResponseTalliesItem]): Self = StObject.set(x, "tallies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTalliesVarargs(value: ReelsMediaFeedResponseTalliesItem*): Self = StObject.set(x, "tallies", js.Array(value :_*))
+    inline def setTalliesVarargs(value: ReelsMediaFeedResponseTalliesItem*): Self = StObject.set(x, "tallies", js.Array(value :_*))
     
-    @scala.inline
-    def setViewer_can_vote(value: Boolean): Self = StObject.set(x, "viewer_can_vote", value.asInstanceOf[js.Any])
+    inline def setViewer_can_vote(value: Boolean): Self = StObject.set(x, "viewer_can_vote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewer_vote(value: Double): Self = StObject.set(x, "viewer_vote", value.asInstanceOf[js.Any])
+    inline def setViewer_vote(value: Double): Self = StObject.set(x, "viewer_vote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewer_voteUndefined: Self = StObject.set(x, "viewer_vote", js.undefined)
+    inline def setViewer_voteUndefined: Self = StObject.set(x, "viewer_vote", js.undefined)
   }
 }

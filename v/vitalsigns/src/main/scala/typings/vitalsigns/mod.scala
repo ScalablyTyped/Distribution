@@ -151,32 +151,24 @@ object mod {
     }
     object Constraint {
       
-      @scala.inline
-      def apply(comparator: String, field: String, monitor: String, value: js.Any): Constraint = {
+      inline def apply(comparator: String, field: String, monitor: String, value: js.Any): Constraint = {
         val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], monitor = monitor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[Constraint]
       }
       
-      @scala.inline
-      implicit class ConstraintMutableBuilder[Self <: Constraint] (val x: Self) extends AnyVal {
+      extension [Self <: Constraint](x: Self) {
         
-        @scala.inline
-        def setComparator(value: String): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+        inline def setComparator(value: String): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+        inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMonitor(value: String): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
+        inline def setMonitor(value: String): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
+        inline def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNegateUndefined: Self = StObject.set(x, "negate", js.undefined)
+        inline def setNegateUndefined: Self = StObject.set(x, "negate", js.undefined)
         
-        @scala.inline
-        def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
@@ -193,38 +185,28 @@ object mod {
     }
     object ConstraintWrapper {
       
-      @scala.inline
-      def apply(): ConstraintWrapper = {
+      inline def apply(): ConstraintWrapper = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ConstraintWrapper]
       }
       
-      @scala.inline
-      implicit class ConstraintWrapperMutableBuilder[Self <: ConstraintWrapper] (val x: Self) extends AnyVal {
+      extension [Self <: ConstraintWrapper](x: Self) {
         
-        @scala.inline
-        def setEquals_(value: /* num */ Double => ConstraintWrapper): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+        inline def setEquals_(value: /* num */ Double => ConstraintWrapper): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+        inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
         
-        @scala.inline
-        def setGreaterThan(value: /* num */ Double => ConstraintWrapper): Self = StObject.set(x, "greaterThan", js.Any.fromFunction1(value))
+        inline def setGreaterThan(value: /* num */ Double => ConstraintWrapper): Self = StObject.set(x, "greaterThan", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGreaterThanUndefined: Self = StObject.set(x, "greaterThan", js.undefined)
+        inline def setGreaterThanUndefined: Self = StObject.set(x, "greaterThan", js.undefined)
         
-        @scala.inline
-        def setLessThan(value: /* num */ Double => ConstraintWrapper): Self = StObject.set(x, "lessThan", js.Any.fromFunction1(value))
+        inline def setLessThan(value: /* num */ Double => ConstraintWrapper): Self = StObject.set(x, "lessThan", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setLessThanUndefined: Self = StObject.set(x, "lessThan", js.undefined)
+        inline def setLessThanUndefined: Self = StObject.set(x, "lessThan", js.undefined)
         
-        @scala.inline
-        def setNot(value: ConstraintWrapper): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+        inline def setNot(value: ConstraintWrapper): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+        inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
       }
     }
     
@@ -238,17 +220,14 @@ object mod {
     }
     object Monitor {
       
-      @scala.inline
-      def apply(connections: js.Any): Monitor = {
+      inline def apply(connections: js.Any): Monitor = {
         val __obj = js.Dynamic.literal(connections = connections.asInstanceOf[js.Any])
         __obj.asInstanceOf[Monitor]
       }
       
-      @scala.inline
-      implicit class MonitorMutableBuilder[Self <: Monitor] (val x: Self) extends AnyVal {
+      extension [Self <: Monitor](x: Self) {
         
-        @scala.inline
-        def setConnections(value: js.Any): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+        inline def setConnections(value: js.Any): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       }
     }
     
@@ -268,26 +247,20 @@ object mod {
     }
     object MonitorField {
       
-      @scala.inline
-      def apply(): MonitorField = {
+      inline def apply(): MonitorField = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MonitorField]
       }
       
-      @scala.inline
-      implicit class MonitorFieldMutableBuilder[Self <: MonitorField] (val x: Self) extends AnyVal {
+      extension [Self <: MonitorField](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+        inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+        inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
       }
     }
     
@@ -313,32 +286,24 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setAutoCheck(value: Double | Boolean): Self = StObject.set(x, "autoCheck", value.asInstanceOf[js.Any])
+        inline def setAutoCheck(value: Double | Boolean): Self = StObject.set(x, "autoCheck", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoCheckUndefined: Self = StObject.set(x, "autoCheck", js.undefined)
+        inline def setAutoCheckUndefined: Self = StObject.set(x, "autoCheck", js.undefined)
         
-        @scala.inline
-        def setHttpHealthy(value: Double): Self = StObject.set(x, "httpHealthy", value.asInstanceOf[js.Any])
+        inline def setHttpHealthy(value: Double): Self = StObject.set(x, "httpHealthy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHttpHealthyUndefined: Self = StObject.set(x, "httpHealthy", js.undefined)
+        inline def setHttpHealthyUndefined: Self = StObject.set(x, "httpHealthy", js.undefined)
         
-        @scala.inline
-        def setHttpUnhealthy(value: Double): Self = StObject.set(x, "httpUnhealthy", value.asInstanceOf[js.Any])
+        inline def setHttpUnhealthy(value: Double): Self = StObject.set(x, "httpUnhealthy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHttpUnhealthyUndefined: Self = StObject.set(x, "httpUnhealthy", js.undefined)
+        inline def setHttpUnhealthyUndefined: Self = StObject.set(x, "httpUnhealthy", js.undefined)
       }
     }
     
@@ -362,26 +327,20 @@ object mod {
     }
     object ReportOptions {
       
-      @scala.inline
-      def apply(): ReportOptions = {
+      inline def apply(): ReportOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReportOptions]
       }
       
-      @scala.inline
-      implicit class ReportOptionsMutableBuilder[Self <: ReportOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ReportOptions](x: Self) {
         
-        @scala.inline
-        def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
+        inline def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
+        inline def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
         
-        @scala.inline
-        def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+        inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+        inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       }
     }
   }

@@ -11,22 +11,17 @@ trait IConsensusNotifyBlockNew extends StObject {
 }
 object IConsensusNotifyBlockNew {
   
-  @scala.inline
-  def apply(): IConsensusNotifyBlockNew = {
+  inline def apply(): IConsensusNotifyBlockNew = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusNotifyBlockNew]
   }
   
-  @scala.inline
-  implicit class IConsensusNotifyBlockNewMutableBuilder[Self <: IConsensusNotifyBlockNew] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusNotifyBlockNew](x: Self) {
     
-    @scala.inline
-    def setBlock(value: IConsensusBlock): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: IConsensusBlock): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockNull: Self = StObject.set(x, "block", null)
+    inline def setBlockNull: Self = StObject.set(x, "block", null)
     
-    @scala.inline
-    def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+    inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
   }
 }

@@ -29,57 +29,41 @@ trait FlowOption extends StObject {
 }
 object FlowOption {
   
-  @scala.inline
-  def apply(): FlowOption = {
+  inline def apply(): FlowOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlowOption]
   }
   
-  @scala.inline
-  implicit class FlowOptionMutableBuilder[Self <: FlowOption] (val x: Self) extends AnyVal {
+  extension [Self <: FlowOption](x: Self) {
     
-    @scala.inline
-    def setDone(
+    inline def setDone(
       value: (/* page */ Double, /* next */ js.Function2[/* html */ String, /* isMore */ Boolean, Unit]) => Unit
     ): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
-    @scala.inline
-    def setElem(value: String | HTMLElement): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
+    inline def setElem(value: String | HTMLElement): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElemUndefined: Self = StObject.set(x, "elem", js.undefined)
+    inline def setElemUndefined: Self = StObject.set(x, "elem", js.undefined)
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setIsAuto(value: Boolean): Self = StObject.set(x, "isAuto", value.asInstanceOf[js.Any])
+    inline def setIsAuto(value: Boolean): Self = StObject.set(x, "isAuto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutoUndefined: Self = StObject.set(x, "isAuto", js.undefined)
+    inline def setIsAutoUndefined: Self = StObject.set(x, "isAuto", js.undefined)
     
-    @scala.inline
-    def setIsLazyimg(value: Boolean): Self = StObject.set(x, "isLazyimg", value.asInstanceOf[js.Any])
+    inline def setIsLazyimg(value: Boolean): Self = StObject.set(x, "isLazyimg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLazyimgUndefined: Self = StObject.set(x, "isLazyimg", js.undefined)
+    inline def setIsLazyimgUndefined: Self = StObject.set(x, "isLazyimg", js.undefined)
     
-    @scala.inline
-    def setMb(value: Double): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+    inline def setMb(value: Double): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
+    inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
     
-    @scala.inline
-    def setScrollElem(value: String | HTMLElement): Self = StObject.set(x, "scrollElem", value.asInstanceOf[js.Any])
+    inline def setScrollElem(value: String | HTMLElement): Self = StObject.set(x, "scrollElem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollElemUndefined: Self = StObject.set(x, "scrollElem", js.undefined)
+    inline def setScrollElemUndefined: Self = StObject.set(x, "scrollElem", js.undefined)
   }
 }

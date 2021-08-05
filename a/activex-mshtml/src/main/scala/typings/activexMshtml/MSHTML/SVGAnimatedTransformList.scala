@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGAnimatedTransformList extends StObject {
   
-  @JSName("MSHTML.SVGAnimatedTransformList_typekey")
+  /* private */ @JSName("MSHTML.SVGAnimatedTransformList_typekey")
   var MSHTMLDotSVGAnimatedTransformList_typekey: SVGAnimatedTransformList
   
   var animVal: SVGTransformList
@@ -15,8 +15,7 @@ trait SVGAnimatedTransformList extends StObject {
 }
 object SVGAnimatedTransformList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGAnimatedTransformList_typekey: SVGAnimatedTransformList,
     animVal: SVGTransformList,
     baseVal: SVGTransformList
@@ -26,16 +25,12 @@ object SVGAnimatedTransformList {
     __obj.asInstanceOf[SVGAnimatedTransformList]
   }
   
-  @scala.inline
-  implicit class SVGAnimatedTransformListMutableBuilder[Self <: SVGAnimatedTransformList] (val x: Self) extends AnyVal {
+  extension [Self <: SVGAnimatedTransformList](x: Self) {
     
-    @scala.inline
-    def setAnimVal(value: SVGTransformList): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
+    inline def setAnimVal(value: SVGTransformList): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseVal(value: SVGTransformList): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
+    inline def setBaseVal(value: SVGTransformList): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGAnimatedTransformList_typekey(value: SVGAnimatedTransformList): Self = StObject.set(x, "MSHTML.SVGAnimatedTransformList_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGAnimatedTransformList_typekey(value: SVGAnimatedTransformList): Self = StObject.set(x, "MSHTML.SVGAnimatedTransformList_typekey", value.asInstanceOf[js.Any])
   }
 }

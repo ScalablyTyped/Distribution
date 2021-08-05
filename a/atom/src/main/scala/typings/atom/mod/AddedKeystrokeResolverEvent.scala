@@ -31,25 +31,19 @@ trait AddedKeystrokeResolverEvent extends StObject {
 }
 object AddedKeystrokeResolverEvent {
   
-  @scala.inline
-  def apply(event: KeyboardEvent, keymap: js.Object, keystroke: String, layoutName: String): AddedKeystrokeResolverEvent = {
+  inline def apply(event: KeyboardEvent, keymap: js.Object, keystroke: String, layoutName: String): AddedKeystrokeResolverEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], keymap = keymap.asInstanceOf[js.Any], keystroke = keystroke.asInstanceOf[js.Any], layoutName = layoutName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddedKeystrokeResolverEvent]
   }
   
-  @scala.inline
-  implicit class AddedKeystrokeResolverEventMutableBuilder[Self <: AddedKeystrokeResolverEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AddedKeystrokeResolverEvent](x: Self) {
     
-    @scala.inline
-    def setEvent(value: KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeymap(value: js.Object): Self = StObject.set(x, "keymap", value.asInstanceOf[js.Any])
+    inline def setKeymap(value: js.Object): Self = StObject.set(x, "keymap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeystroke(value: String): Self = StObject.set(x, "keystroke", value.asInstanceOf[js.Any])
+    inline def setKeystroke(value: String): Self = StObject.set(x, "keystroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutName(value: String): Self = StObject.set(x, "layoutName", value.asInstanceOf[js.Any])
+    inline def setLayoutName(value: String): Self = StObject.set(x, "layoutName", value.asInstanceOf[js.Any])
   }
 }

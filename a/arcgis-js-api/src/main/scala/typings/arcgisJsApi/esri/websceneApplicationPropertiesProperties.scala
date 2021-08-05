@@ -15,19 +15,15 @@ trait websceneApplicationPropertiesProperties extends StObject {
 }
 object websceneApplicationPropertiesProperties {
   
-  @scala.inline
-  def apply(): websceneApplicationPropertiesProperties = {
+  inline def apply(): websceneApplicationPropertiesProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[websceneApplicationPropertiesProperties]
   }
   
-  @scala.inline
-  implicit class websceneApplicationPropertiesPropertiesMutableBuilder[Self <: websceneApplicationPropertiesProperties] (val x: Self) extends AnyVal {
+  extension [Self <: websceneApplicationPropertiesProperties](x: Self) {
     
-    @scala.inline
-    def setViewing(value: ViewingProperties): Self = StObject.set(x, "viewing", value.asInstanceOf[js.Any])
+    inline def setViewing(value: ViewingProperties): Self = StObject.set(x, "viewing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewingUndefined: Self = StObject.set(x, "viewing", js.undefined)
+    inline def setViewingUndefined: Self = StObject.set(x, "viewing", js.undefined)
   }
 }

@@ -262,8 +262,7 @@ object ipaletteMod {
   }
   object IPalette {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accent: String,
       black: String,
       blackTranslucent40: String,
@@ -319,158 +318,107 @@ object ipaletteMod {
       __obj.asInstanceOf[IPalette]
     }
     
-    @scala.inline
-    implicit class IPaletteMutableBuilder[Self <: IPalette] (val x: Self) extends AnyVal {
+    extension [Self <: IPalette](x: Self) {
       
-      @scala.inline
-      def setAccent(value: String): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
+      inline def setAccent(value: String): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
+      inline def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackTranslucent40(value: String): Self = StObject.set(x, "blackTranslucent40", value.asInstanceOf[js.Any])
+      inline def setBlackTranslucent40(value: String): Self = StObject.set(x, "blackTranslucent40", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue(value: String): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+      inline def setBlue(value: String): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueDark(value: String): Self = StObject.set(x, "blueDark", value.asInstanceOf[js.Any])
+      inline def setBlueDark(value: String): Self = StObject.set(x, "blueDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueLight(value: String): Self = StObject.set(x, "blueLight", value.asInstanceOf[js.Any])
+      inline def setBlueLight(value: String): Self = StObject.set(x, "blueLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueMid(value: String): Self = StObject.set(x, "blueMid", value.asInstanceOf[js.Any])
+      inline def setBlueMid(value: String): Self = StObject.set(x, "blueMid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreen(value: String): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+      inline def setGreen(value: String): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenDark(value: String): Self = StObject.set(x, "greenDark", value.asInstanceOf[js.Any])
+      inline def setGreenDark(value: String): Self = StObject.set(x, "greenDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenLight(value: String): Self = StObject.set(x, "greenLight", value.asInstanceOf[js.Any])
+      inline def setGreenLight(value: String): Self = StObject.set(x, "greenLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagenta(value: String): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
+      inline def setMagenta(value: String): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaDark(value: String): Self = StObject.set(x, "magentaDark", value.asInstanceOf[js.Any])
+      inline def setMagentaDark(value: String): Self = StObject.set(x, "magentaDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaLight(value: String): Self = StObject.set(x, "magentaLight", value.asInstanceOf[js.Any])
+      inline def setMagentaLight(value: String): Self = StObject.set(x, "magentaLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralDark(value: String): Self = StObject.set(x, "neutralDark", value.asInstanceOf[js.Any])
+      inline def setNeutralDark(value: String): Self = StObject.set(x, "neutralDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLight(value: String): Self = StObject.set(x, "neutralLight", value.asInstanceOf[js.Any])
+      inline def setNeutralLight(value: String): Self = StObject.set(x, "neutralLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighter(value: String): Self = StObject.set(x, "neutralLighter", value.asInstanceOf[js.Any])
+      inline def setNeutralLighter(value: String): Self = StObject.set(x, "neutralLighter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighterAlt(value: String): Self = StObject.set(x, "neutralLighterAlt", value.asInstanceOf[js.Any])
+      inline def setNeutralLighterAlt(value: String): Self = StObject.set(x, "neutralLighterAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimary(value: String): Self = StObject.set(x, "neutralPrimary", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimary(value: String): Self = StObject.set(x, "neutralPrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimaryAlt(value: String): Self = StObject.set(x, "neutralPrimaryAlt", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimaryAlt(value: String): Self = StObject.set(x, "neutralPrimaryAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternary(value: String): Self = StObject.set(x, "neutralQuaternary", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternary(value: String): Self = StObject.set(x, "neutralQuaternary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternaryAlt(value: String): Self = StObject.set(x, "neutralQuaternaryAlt", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternaryAlt(value: String): Self = StObject.set(x, "neutralQuaternaryAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondary(value: String): Self = StObject.set(x, "neutralSecondary", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondary(value: String): Self = StObject.set(x, "neutralSecondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondaryAlt(value: String): Self = StObject.set(x, "neutralSecondaryAlt", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondaryAlt(value: String): Self = StObject.set(x, "neutralSecondaryAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiary(value: String): Self = StObject.set(x, "neutralTertiary", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiary(value: String): Self = StObject.set(x, "neutralTertiary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiaryAlt(value: String): Self = StObject.set(x, "neutralTertiaryAlt", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiaryAlt(value: String): Self = StObject.set(x, "neutralTertiaryAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrange(value: String): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
+      inline def setOrange(value: String): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLight(value: String): Self = StObject.set(x, "orangeLight", value.asInstanceOf[js.Any])
+      inline def setOrangeLight(value: String): Self = StObject.set(x, "orangeLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLighter(value: String): Self = StObject.set(x, "orangeLighter", value.asInstanceOf[js.Any])
+      inline def setOrangeLighter(value: String): Self = StObject.set(x, "orangeLighter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurple(value: String): Self = StObject.set(x, "purple", value.asInstanceOf[js.Any])
+      inline def setPurple(value: String): Self = StObject.set(x, "purple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleDark(value: String): Self = StObject.set(x, "purpleDark", value.asInstanceOf[js.Any])
+      inline def setPurpleDark(value: String): Self = StObject.set(x, "purpleDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleLight(value: String): Self = StObject.set(x, "purpleLight", value.asInstanceOf[js.Any])
+      inline def setPurpleLight(value: String): Self = StObject.set(x, "purpleLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed(value: String): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+      inline def setRed(value: String): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedDark(value: String): Self = StObject.set(x, "redDark", value.asInstanceOf[js.Any])
+      inline def setRedDark(value: String): Self = StObject.set(x, "redDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeal(value: String): Self = StObject.set(x, "teal", value.asInstanceOf[js.Any])
+      inline def setTeal(value: String): Self = StObject.set(x, "teal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealDark(value: String): Self = StObject.set(x, "tealDark", value.asInstanceOf[js.Any])
+      inline def setTealDark(value: String): Self = StObject.set(x, "tealDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealLight(value: String): Self = StObject.set(x, "tealLight", value.asInstanceOf[js.Any])
+      inline def setTealLight(value: String): Self = StObject.set(x, "tealLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDark(value: String): Self = StObject.set(x, "themeDark", value.asInstanceOf[js.Any])
+      inline def setThemeDark(value: String): Self = StObject.set(x, "themeDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkAlt(value: String): Self = StObject.set(x, "themeDarkAlt", value.asInstanceOf[js.Any])
+      inline def setThemeDarkAlt(value: String): Self = StObject.set(x, "themeDarkAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarker(value: String): Self = StObject.set(x, "themeDarker", value.asInstanceOf[js.Any])
+      inline def setThemeDarker(value: String): Self = StObject.set(x, "themeDarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLight(value: String): Self = StObject.set(x, "themeLight", value.asInstanceOf[js.Any])
+      inline def setThemeLight(value: String): Self = StObject.set(x, "themeLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighter(value: String): Self = StObject.set(x, "themeLighter", value.asInstanceOf[js.Any])
+      inline def setThemeLighter(value: String): Self = StObject.set(x, "themeLighter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighterAlt(value: String): Self = StObject.set(x, "themeLighterAlt", value.asInstanceOf[js.Any])
+      inline def setThemeLighterAlt(value: String): Self = StObject.set(x, "themeLighterAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemePrimary(value: String): Self = StObject.set(x, "themePrimary", value.asInstanceOf[js.Any])
+      inline def setThemePrimary(value: String): Self = StObject.set(x, "themePrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeSecondary(value: String): Self = StObject.set(x, "themeSecondary", value.asInstanceOf[js.Any])
+      inline def setThemeSecondary(value: String): Self = StObject.set(x, "themeSecondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeTertiary(value: String): Self = StObject.set(x, "themeTertiary", value.asInstanceOf[js.Any])
+      inline def setThemeTertiary(value: String): Self = StObject.set(x, "themeTertiary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+      inline def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteTranslucent40(value: String): Self = StObject.set(x, "whiteTranslucent40", value.asInstanceOf[js.Any])
+      inline def setWhiteTranslucent40(value: String): Self = StObject.set(x, "whiteTranslucent40", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellow(value: String): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+      inline def setYellow(value: String): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowDark(value: String): Self = StObject.set(x, "yellowDark", value.asInstanceOf[js.Any])
+      inline def setYellowDark(value: String): Self = StObject.set(x, "yellowDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowLight(value: String): Self = StObject.set(x, "yellowLight", value.asInstanceOf[js.Any])
+      inline def setYellowLight(value: String): Self = StObject.set(x, "yellowLight", value.asInstanceOf[js.Any])
     }
   }
 }

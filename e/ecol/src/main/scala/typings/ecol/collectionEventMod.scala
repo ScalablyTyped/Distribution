@@ -36,14 +36,11 @@ object collectionEventMod {
     trait Type extends StObject
     object Type {
       
-      @scala.inline
-      def erase: typings.ecol.ecolStrings.erase = "erase".asInstanceOf[typings.ecol.ecolStrings.erase]
+      inline def erase: typings.ecol.ecolStrings.erase = "erase".asInstanceOf[typings.ecol.ecolStrings.erase]
       
-      @scala.inline
-      def insert: typings.ecol.ecolStrings.insert = "insert".asInstanceOf[typings.ecol.ecolStrings.insert]
+      inline def insert: typings.ecol.ecolStrings.insert = "insert".asInstanceOf[typings.ecol.ecolStrings.insert]
       
-      @scala.inline
-      def refresh: typings.ecol.ecolStrings.refresh = "refresh".asInstanceOf[typings.ecol.ecolStrings.refresh]
+      inline def refresh: typings.ecol.ecolStrings.refresh = "refresh".asInstanceOf[typings.ecol.ecolStrings.refresh]
     }
   }
 }

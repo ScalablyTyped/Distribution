@@ -10,8 +10,7 @@ trait IButtonGridStyleProps
      with typings.officeUiFabricReact.buttonGridTypesMod.IButtonGridStyleProps
 object IButtonGridStyleProps {
   
-  @scala.inline
-  def apply(theme: ITheme): IButtonGridStyleProps = {
+  inline def apply(theme: ITheme): IButtonGridStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IButtonGridStyleProps]
   }

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Entity")
 @js.native
-class Entity protected ()
+/* private */ class Entity ()
   extends StObject
      with typings.activexAccess.Access.Entity {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.Entity_typekey")
   var AccessDotEntity_typekey: typings.activexAccess.Access.Entity = js.native
   

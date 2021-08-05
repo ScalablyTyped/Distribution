@@ -16,8 +16,7 @@ trait HTMLRedrawOptions extends StObject {
 }
 object HTMLRedrawOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: Double,
     project: js.Array[Double] => js.Array[Double],
     unproject: js.Array[Double] => js.Array[Double],
@@ -27,19 +26,14 @@ object HTMLRedrawOptions {
     __obj.asInstanceOf[HTMLRedrawOptions]
   }
   
-  @scala.inline
-  implicit class HTMLRedrawOptionsMutableBuilder[Self <: HTMLRedrawOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLRedrawOptions](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "project", js.Any.fromFunction1(value))
+    inline def setProject(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "project", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnproject(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "unproject", js.Any.fromFunction1(value))
+    inline def setUnproject(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "unproject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

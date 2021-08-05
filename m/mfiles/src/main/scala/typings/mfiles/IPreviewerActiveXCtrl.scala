@@ -23,8 +23,7 @@ trait IPreviewerActiveXCtrl extends StObject {
 }
 object IPreviewerActiveXCtrl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClearPreview: () => Double,
     ShowFilePreview: String => Double,
     ShowHitHighlightedFilePreview: (String, Double, Double, Double, Double, Double, js.Any, String) => Double
@@ -33,16 +32,12 @@ object IPreviewerActiveXCtrl {
     __obj.asInstanceOf[IPreviewerActiveXCtrl]
   }
   
-  @scala.inline
-  implicit class IPreviewerActiveXCtrlMutableBuilder[Self <: IPreviewerActiveXCtrl] (val x: Self) extends AnyVal {
+  extension [Self <: IPreviewerActiveXCtrl](x: Self) {
     
-    @scala.inline
-    def setClearPreview(value: () => Double): Self = StObject.set(x, "ClearPreview", js.Any.fromFunction0(value))
+    inline def setClearPreview(value: () => Double): Self = StObject.set(x, "ClearPreview", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowFilePreview(value: String => Double): Self = StObject.set(x, "ShowFilePreview", js.Any.fromFunction1(value))
+    inline def setShowFilePreview(value: String => Double): Self = StObject.set(x, "ShowFilePreview", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowHitHighlightedFilePreview(value: (String, Double, Double, Double, Double, Double, js.Any, String) => Double): Self = StObject.set(x, "ShowHitHighlightedFilePreview", js.Any.fromFunction8(value))
+    inline def setShowHitHighlightedFilePreview(value: (String, Double, Double, Double, Double, Double, js.Any, String) => Double): Self = StObject.set(x, "ShowHitHighlightedFilePreview", js.Any.fromFunction8(value))
   }
 }

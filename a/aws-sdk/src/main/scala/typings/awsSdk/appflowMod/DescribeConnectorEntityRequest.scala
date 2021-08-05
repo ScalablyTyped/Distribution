@@ -23,28 +23,21 @@ trait DescribeConnectorEntityRequest extends StObject {
 }
 object DescribeConnectorEntityRequest {
   
-  @scala.inline
-  def apply(connectorEntityName: Name): DescribeConnectorEntityRequest = {
+  inline def apply(connectorEntityName: Name): DescribeConnectorEntityRequest = {
     val __obj = js.Dynamic.literal(connectorEntityName = connectorEntityName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConnectorEntityRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConnectorEntityRequestMutableBuilder[Self <: DescribeConnectorEntityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConnectorEntityRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorEntityName(value: Name): Self = StObject.set(x, "connectorEntityName", value.asInstanceOf[js.Any])
+    inline def setConnectorEntityName(value: Name): Self = StObject.set(x, "connectorEntityName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileNameUndefined: Self = StObject.set(x, "connectorProfileName", js.undefined)
+    inline def setConnectorProfileNameUndefined: Self = StObject.set(x, "connectorProfileName", js.undefined)
     
-    @scala.inline
-    def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
+    inline def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
+    inline def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
   }
 }

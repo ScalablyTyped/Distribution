@@ -22,10 +22,8 @@ object Block {
   @js.native
   val ^ : Type[Block] = js.native
   
-  @scala.inline
-  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+  extension [Self <: Block](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.astTypes.astTypesStrings.Block): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.astTypes.astTypesStrings.Block): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

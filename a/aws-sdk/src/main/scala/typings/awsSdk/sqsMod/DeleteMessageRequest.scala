@@ -18,19 +18,15 @@ trait DeleteMessageRequest extends StObject {
 }
 object DeleteMessageRequest {
   
-  @scala.inline
-  def apply(QueueUrl: String, ReceiptHandle: String): DeleteMessageRequest = {
+  inline def apply(QueueUrl: String, ReceiptHandle: String): DeleteMessageRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], ReceiptHandle = ReceiptHandle.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMessageRequest]
   }
   
-  @scala.inline
-  implicit class DeleteMessageRequestMutableBuilder[Self <: DeleteMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMessageRequest](x: Self) {
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiptHandle(value: String): Self = StObject.set(x, "ReceiptHandle", value.asInstanceOf[js.Any])
+    inline def setReceiptHandle(value: String): Self = StObject.set(x, "ReceiptHandle", value.asInstanceOf[js.Any])
   }
 }

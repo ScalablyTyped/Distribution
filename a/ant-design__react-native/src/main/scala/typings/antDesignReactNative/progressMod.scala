@@ -30,8 +30,7 @@ object progressMod {
     @JSImport("@ant-design/react-native/lib/progress", "default.defaultProps")
     @js.native
     def defaultProps: AppearTransition = js.native
-    @scala.inline
-    def defaultProps_=(x: AppearTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: AppearTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -73,62 +72,44 @@ object progressMod {
   }
   object ProgressProps {
     
-    @scala.inline
-    def apply(): ProgressProps = {
+    inline def apply(): ProgressProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProgressProps]
     }
     
-    @scala.inline
-    implicit class ProgressPropsMutableBuilder[Self <: ProgressProps] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressProps](x: Self) {
       
-      @scala.inline
-      def setAppearTransition(value: Boolean): Self = StObject.set(x, "appearTransition", value.asInstanceOf[js.Any])
+      inline def setAppearTransition(value: Boolean): Self = StObject.set(x, "appearTransition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppearTransitionUndefined: Self = StObject.set(x, "appearTransition", js.undefined)
+      inline def setAppearTransitionUndefined: Self = StObject.set(x, "appearTransition", js.undefined)
       
-      @scala.inline
-      def setBarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+      inline def setBarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarStyleNull: Self = StObject.set(x, "barStyle", null)
+      inline def setBarStyleNull: Self = StObject.set(x, "barStyle", null)
       
-      @scala.inline
-      def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
+      inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
       
-      @scala.inline
-      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+      inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
       
-      @scala.inline
-      def setPosition(value: fixed | normal): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: fixed | normal): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setUnfilled(value: Boolean): Self = StObject.set(x, "unfilled", value.asInstanceOf[js.Any])
+      inline def setUnfilled(value: Boolean): Self = StObject.set(x, "unfilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnfilledUndefined: Self = StObject.set(x, "unfilled", js.undefined)
+      inline def setUnfilledUndefined: Self = StObject.set(x, "unfilled", js.undefined)
       
-      @scala.inline
-      def setWrapWidth(value: Double): Self = StObject.set(x, "wrapWidth", value.asInstanceOf[js.Any])
+      inline def setWrapWidth(value: Double): Self = StObject.set(x, "wrapWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapWidthUndefined: Self = StObject.set(x, "wrapWidth", js.undefined)
+      inline def setWrapWidthUndefined: Self = StObject.set(x, "wrapWidth", js.undefined)
     }
   }
 }

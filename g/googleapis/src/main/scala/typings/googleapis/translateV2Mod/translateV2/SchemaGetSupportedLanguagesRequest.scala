@@ -17,19 +17,15 @@ trait SchemaGetSupportedLanguagesRequest extends StObject {
 }
 object SchemaGetSupportedLanguagesRequest {
   
-  @scala.inline
-  def apply(): SchemaGetSupportedLanguagesRequest = {
+  inline def apply(): SchemaGetSupportedLanguagesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetSupportedLanguagesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGetSupportedLanguagesRequestMutableBuilder[Self <: SchemaGetSupportedLanguagesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetSupportedLanguagesRequest](x: Self) {
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdPortugueseReform extends StObject
 object WdPortugueseReform {
   
-  @scala.inline
-  def wdPortugueseBoth: `3` = 3.asInstanceOf[`3`]
+  inline def wdPortugueseBoth: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdPortuguesePostReform: `2` = 2.asInstanceOf[`2`]
+  inline def wdPortuguesePostReform: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdPortuguesePreReform: `1` = 1.asInstanceOf[`1`]
+  inline def wdPortuguesePreReform: `1` = 1.asInstanceOf[`1`]
 }

@@ -23,22 +23,17 @@ trait ClusterStep extends StObject {
 }
 object ClusterStep {
   
-  @scala.inline
-  def apply(actionOnFailure: String, hadoopJarStep: ClusterStepHadoopJarStep, name: String): ClusterStep = {
+  inline def apply(actionOnFailure: String, hadoopJarStep: ClusterStepHadoopJarStep, name: String): ClusterStep = {
     val __obj = js.Dynamic.literal(actionOnFailure = actionOnFailure.asInstanceOf[js.Any], hadoopJarStep = hadoopJarStep.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterStep]
   }
   
-  @scala.inline
-  implicit class ClusterStepMutableBuilder[Self <: ClusterStep] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterStep](x: Self) {
     
-    @scala.inline
-    def setActionOnFailure(value: String): Self = StObject.set(x, "actionOnFailure", value.asInstanceOf[js.Any])
+    inline def setActionOnFailure(value: String): Self = StObject.set(x, "actionOnFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHadoopJarStep(value: ClusterStepHadoopJarStep): Self = StObject.set(x, "hadoopJarStep", value.asInstanceOf[js.Any])
+    inline def setHadoopJarStep(value: ClusterStepHadoopJarStep): Self = StObject.set(x, "hadoopJarStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

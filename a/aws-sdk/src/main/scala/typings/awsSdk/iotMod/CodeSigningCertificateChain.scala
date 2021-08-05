@@ -18,25 +18,19 @@ trait CodeSigningCertificateChain extends StObject {
 }
 object CodeSigningCertificateChain {
   
-  @scala.inline
-  def apply(): CodeSigningCertificateChain = {
+  inline def apply(): CodeSigningCertificateChain = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeSigningCertificateChain]
   }
   
-  @scala.inline
-  implicit class CodeSigningCertificateChainMutableBuilder[Self <: CodeSigningCertificateChain] (val x: Self) extends AnyVal {
+  extension [Self <: CodeSigningCertificateChain](x: Self) {
     
-    @scala.inline
-    def setCertificateName(value: CertificateName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
+    inline def setCertificateName(value: CertificateName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateNameUndefined: Self = StObject.set(x, "certificateName", js.undefined)
+    inline def setCertificateNameUndefined: Self = StObject.set(x, "certificateName", js.undefined)
     
-    @scala.inline
-    def setInlineDocument(value: InlineDocument): Self = StObject.set(x, "inlineDocument", value.asInstanceOf[js.Any])
+    inline def setInlineDocument(value: InlineDocument): Self = StObject.set(x, "inlineDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineDocumentUndefined: Self = StObject.set(x, "inlineDocument", js.undefined)
+    inline def setInlineDocumentUndefined: Self = StObject.set(x, "inlineDocument", js.undefined)
   }
 }

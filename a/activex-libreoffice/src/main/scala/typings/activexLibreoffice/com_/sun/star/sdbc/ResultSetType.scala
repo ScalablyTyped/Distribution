@@ -17,13 +17,10 @@ object ResultSetType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def FORWARD_ONLY: `1003` = 1003.asInstanceOf[`1003`]
+    inline def FORWARD_ONLY: `1003` = 1003.asInstanceOf[`1003`]
     
-    @scala.inline
-    def SCROLL_INSENSITIVE: `1004` = 1004.asInstanceOf[`1004`]
+    inline def SCROLL_INSENSITIVE: `1004` = 1004.asInstanceOf[`1004`]
     
-    @scala.inline
-    def SCROLL_SENSITIVE: `1005` = 1005.asInstanceOf[`1005`]
+    inline def SCROLL_SENSITIVE: `1005` = 1005.asInstanceOf[`1005`]
   }
 }

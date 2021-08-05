@@ -13,16 +13,13 @@ trait BootboxAlertButtonMap
 }
 object BootboxAlertButtonMap {
   
-  @scala.inline
-  def apply(ok: BootboxButton | js.Function): BootboxAlertButtonMap = {
+  inline def apply(ok: BootboxButton | js.Function): BootboxAlertButtonMap = {
     val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxAlertButtonMap]
   }
   
-  @scala.inline
-  implicit class BootboxAlertButtonMapMutableBuilder[Self <: BootboxAlertButtonMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootboxAlertButtonMap](x: Self) {
     
-    @scala.inline
-    def setOk(value: BootboxButton | js.Function): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: BootboxButton | js.Function): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
   }
 }

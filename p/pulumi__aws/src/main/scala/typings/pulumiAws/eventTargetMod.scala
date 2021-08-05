@@ -111,21 +111,16 @@ object eventTargetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EventTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventTarget]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventTarget]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EventTargetState): EventTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventTarget]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EventTargetState, opts: CustomResourceOptions): EventTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventTarget]
+    inline def get(name: String, id: Input[ID]): EventTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventTarget]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventTarget]
+    inline def get(name: String, id: Input[ID], state: EventTargetState): EventTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventTarget]
+    inline def get(name: String, id: Input[ID], state: EventTargetState, opts: CustomResourceOptions): EventTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventTarget]
     
     /**
       * Returns true if the given object is an instance of EventTarget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventTarget.EventTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/eventTarget.EventTarget */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventTarget.EventTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/eventTarget.EventTarget */ Boolean]
   }
   
   trait EventTargetArgs extends StObject {
@@ -201,93 +196,66 @@ object eventTargetMod {
   }
   object EventTargetArgs {
     
-    @scala.inline
-    def apply(arn: Input[String], rule: Input[String]): EventTargetArgs = {
+    inline def apply(arn: Input[String], rule: Input[String]): EventTargetArgs = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventTargetArgs]
     }
     
-    @scala.inline
-    implicit class EventTargetArgsMutableBuilder[Self <: EventTargetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EventTargetArgs](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetBatchTarget]): Self = StObject.set(x, "batchTarget", value.asInstanceOf[js.Any])
+      inline def setBatchTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetBatchTarget]): Self = StObject.set(x, "batchTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchTargetUndefined: Self = StObject.set(x, "batchTarget", js.undefined)
+      inline def setBatchTargetUndefined: Self = StObject.set(x, "batchTarget", js.undefined)
       
-      @scala.inline
-      def setEcsTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetEcsTarget]): Self = StObject.set(x, "ecsTarget", value.asInstanceOf[js.Any])
+      inline def setEcsTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetEcsTarget]): Self = StObject.set(x, "ecsTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEcsTargetUndefined: Self = StObject.set(x, "ecsTarget", js.undefined)
+      inline def setEcsTargetUndefined: Self = StObject.set(x, "ecsTarget", js.undefined)
       
-      @scala.inline
-      def setEventBusName(value: Input[String]): Self = StObject.set(x, "eventBusName", value.asInstanceOf[js.Any])
+      inline def setEventBusName(value: Input[String]): Self = StObject.set(x, "eventBusName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventBusNameUndefined: Self = StObject.set(x, "eventBusName", js.undefined)
+      inline def setEventBusNameUndefined: Self = StObject.set(x, "eventBusName", js.undefined)
       
-      @scala.inline
-      def setInput(value: Input[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: Input[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPath(value: Input[String]): Self = StObject.set(x, "inputPath", value.asInstanceOf[js.Any])
+      inline def setInputPath(value: Input[String]): Self = StObject.set(x, "inputPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPathUndefined: Self = StObject.set(x, "inputPath", js.undefined)
+      inline def setInputPathUndefined: Self = StObject.set(x, "inputPath", js.undefined)
       
-      @scala.inline
-      def setInputTransformer(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetInputTransformer]): Self = StObject.set(x, "inputTransformer", value.asInstanceOf[js.Any])
+      inline def setInputTransformer(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetInputTransformer]): Self = StObject.set(x, "inputTransformer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputTransformerUndefined: Self = StObject.set(x, "inputTransformer", js.undefined)
+      inline def setInputTransformerUndefined: Self = StObject.set(x, "inputTransformer", js.undefined)
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setKinesisTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetKinesisTarget]): Self = StObject.set(x, "kinesisTarget", value.asInstanceOf[js.Any])
+      inline def setKinesisTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetKinesisTarget]): Self = StObject.set(x, "kinesisTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisTargetUndefined: Self = StObject.set(x, "kinesisTarget", js.undefined)
+      inline def setKinesisTargetUndefined: Self = StObject.set(x, "kinesisTarget", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
       
-      @scala.inline
-      def setRule(value: Input[String]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: Input[String]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunCommandTargets(
+      inline def setRunCommandTargets(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetRunCommandTarget]]
             ]
       ): Self = StObject.set(x, "runCommandTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunCommandTargetsUndefined: Self = StObject.set(x, "runCommandTargets", js.undefined)
+      inline def setRunCommandTargetsUndefined: Self = StObject.set(x, "runCommandTargets", js.undefined)
       
-      @scala.inline
-      def setRunCommandTargetsVarargs(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetRunCommandTarget]*): Self = StObject.set(x, "runCommandTargets", js.Array(value :_*))
+      inline def setRunCommandTargetsVarargs(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetRunCommandTarget]*): Self = StObject.set(x, "runCommandTargets", js.Array(value :_*))
       
-      @scala.inline
-      def setSqsTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetSqsTarget]): Self = StObject.set(x, "sqsTarget", value.asInstanceOf[js.Any])
+      inline def setSqsTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetSqsTarget]): Self = StObject.set(x, "sqsTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqsTargetUndefined: Self = StObject.set(x, "sqsTarget", js.undefined)
+      inline def setSqsTargetUndefined: Self = StObject.set(x, "sqsTarget", js.undefined)
       
-      @scala.inline
-      def setTargetId(value: Input[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+      inline def setTargetId(value: Input[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+      inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
     }
   }
   
@@ -364,99 +332,70 @@ object eventTargetMod {
   }
   object EventTargetState {
     
-    @scala.inline
-    def apply(): EventTargetState = {
+    inline def apply(): EventTargetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventTargetState]
     }
     
-    @scala.inline
-    implicit class EventTargetStateMutableBuilder[Self <: EventTargetState] (val x: Self) extends AnyVal {
+    extension [Self <: EventTargetState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setBatchTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetBatchTarget]): Self = StObject.set(x, "batchTarget", value.asInstanceOf[js.Any])
+      inline def setBatchTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetBatchTarget]): Self = StObject.set(x, "batchTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchTargetUndefined: Self = StObject.set(x, "batchTarget", js.undefined)
+      inline def setBatchTargetUndefined: Self = StObject.set(x, "batchTarget", js.undefined)
       
-      @scala.inline
-      def setEcsTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetEcsTarget]): Self = StObject.set(x, "ecsTarget", value.asInstanceOf[js.Any])
+      inline def setEcsTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetEcsTarget]): Self = StObject.set(x, "ecsTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEcsTargetUndefined: Self = StObject.set(x, "ecsTarget", js.undefined)
+      inline def setEcsTargetUndefined: Self = StObject.set(x, "ecsTarget", js.undefined)
       
-      @scala.inline
-      def setEventBusName(value: Input[String]): Self = StObject.set(x, "eventBusName", value.asInstanceOf[js.Any])
+      inline def setEventBusName(value: Input[String]): Self = StObject.set(x, "eventBusName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventBusNameUndefined: Self = StObject.set(x, "eventBusName", js.undefined)
+      inline def setEventBusNameUndefined: Self = StObject.set(x, "eventBusName", js.undefined)
       
-      @scala.inline
-      def setInput(value: Input[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: Input[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPath(value: Input[String]): Self = StObject.set(x, "inputPath", value.asInstanceOf[js.Any])
+      inline def setInputPath(value: Input[String]): Self = StObject.set(x, "inputPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPathUndefined: Self = StObject.set(x, "inputPath", js.undefined)
+      inline def setInputPathUndefined: Self = StObject.set(x, "inputPath", js.undefined)
       
-      @scala.inline
-      def setInputTransformer(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetInputTransformer]): Self = StObject.set(x, "inputTransformer", value.asInstanceOf[js.Any])
+      inline def setInputTransformer(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetInputTransformer]): Self = StObject.set(x, "inputTransformer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputTransformerUndefined: Self = StObject.set(x, "inputTransformer", js.undefined)
+      inline def setInputTransformerUndefined: Self = StObject.set(x, "inputTransformer", js.undefined)
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setKinesisTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetKinesisTarget]): Self = StObject.set(x, "kinesisTarget", value.asInstanceOf[js.Any])
+      inline def setKinesisTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetKinesisTarget]): Self = StObject.set(x, "kinesisTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisTargetUndefined: Self = StObject.set(x, "kinesisTarget", js.undefined)
+      inline def setKinesisTargetUndefined: Self = StObject.set(x, "kinesisTarget", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
       
-      @scala.inline
-      def setRule(value: Input[String]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: Input[String]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+      inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
       
-      @scala.inline
-      def setRunCommandTargets(
+      inline def setRunCommandTargets(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetRunCommandTarget]]
             ]
       ): Self = StObject.set(x, "runCommandTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunCommandTargetsUndefined: Self = StObject.set(x, "runCommandTargets", js.undefined)
+      inline def setRunCommandTargetsUndefined: Self = StObject.set(x, "runCommandTargets", js.undefined)
       
-      @scala.inline
-      def setRunCommandTargetsVarargs(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetRunCommandTarget]*): Self = StObject.set(x, "runCommandTargets", js.Array(value :_*))
+      inline def setRunCommandTargetsVarargs(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetRunCommandTarget]*): Self = StObject.set(x, "runCommandTargets", js.Array(value :_*))
       
-      @scala.inline
-      def setSqsTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetSqsTarget]): Self = StObject.set(x, "sqsTarget", value.asInstanceOf[js.Any])
+      inline def setSqsTarget(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetSqsTarget]): Self = StObject.set(x, "sqsTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqsTargetUndefined: Self = StObject.set(x, "sqsTarget", js.undefined)
+      inline def setSqsTargetUndefined: Self = StObject.set(x, "sqsTarget", js.undefined)
       
-      @scala.inline
-      def setTargetId(value: Input[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+      inline def setTargetId(value: Input[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+      inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
     }
   }
 }

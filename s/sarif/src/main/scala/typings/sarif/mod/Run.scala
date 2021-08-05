@@ -162,227 +162,154 @@ trait Run extends StObject {
 }
 object Run {
   
-  @scala.inline
-  def apply(tool: Tool): Run = {
+  inline def apply(tool: Tool): Run = {
     val __obj = js.Dynamic.literal(tool = tool.asInstanceOf[js.Any])
     __obj.asInstanceOf[Run]
   }
   
-  @scala.inline
-  implicit class RunMutableBuilder[Self <: Run] (val x: Self) extends AnyVal {
+  extension [Self <: Run](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: js.Array[Address]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: js.Array[Address]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
+    inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    @scala.inline
-    def setAddressesVarargs(value: Address*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: Address*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+    inline def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
+    inline def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     
-    @scala.inline
-    def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+    inline def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
     
-    @scala.inline
-    def setAutomationDetails(value: RunAutomationDetails): Self = StObject.set(x, "automationDetails", value.asInstanceOf[js.Any])
+    inline def setAutomationDetails(value: RunAutomationDetails): Self = StObject.set(x, "automationDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomationDetailsUndefined: Self = StObject.set(x, "automationDetails", js.undefined)
+    inline def setAutomationDetailsUndefined: Self = StObject.set(x, "automationDetails", js.undefined)
     
-    @scala.inline
-    def setBaselineGuid(value: String): Self = StObject.set(x, "baselineGuid", value.asInstanceOf[js.Any])
+    inline def setBaselineGuid(value: String): Self = StObject.set(x, "baselineGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineGuidUndefined: Self = StObject.set(x, "baselineGuid", js.undefined)
+    inline def setBaselineGuidUndefined: Self = StObject.set(x, "baselineGuid", js.undefined)
     
-    @scala.inline
-    def setColumnKind(value: columnKind): Self = StObject.set(x, "columnKind", value.asInstanceOf[js.Any])
+    inline def setColumnKind(value: columnKind): Self = StObject.set(x, "columnKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKindUndefined: Self = StObject.set(x, "columnKind", js.undefined)
+    inline def setColumnKindUndefined: Self = StObject.set(x, "columnKind", js.undefined)
     
-    @scala.inline
-    def setConversion(value: Conversion): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
+    inline def setConversion(value: Conversion): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionUndefined: Self = StObject.set(x, "conversion", js.undefined)
+    inline def setConversionUndefined: Self = StObject.set(x, "conversion", js.undefined)
     
-    @scala.inline
-    def setDefaultEncoding(value: String): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
+    inline def setDefaultEncoding(value: String): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
+    inline def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
     
-    @scala.inline
-    def setDefaultSourceLanguage(value: String): Self = StObject.set(x, "defaultSourceLanguage", value.asInstanceOf[js.Any])
+    inline def setDefaultSourceLanguage(value: String): Self = StObject.set(x, "defaultSourceLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSourceLanguageUndefined: Self = StObject.set(x, "defaultSourceLanguage", js.undefined)
+    inline def setDefaultSourceLanguageUndefined: Self = StObject.set(x, "defaultSourceLanguage", js.undefined)
     
-    @scala.inline
-    def setExternalPropertyFileReferences(value: ExternalPropertyFileReferences): Self = StObject.set(x, "externalPropertyFileReferences", value.asInstanceOf[js.Any])
+    inline def setExternalPropertyFileReferences(value: ExternalPropertyFileReferences): Self = StObject.set(x, "externalPropertyFileReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalPropertyFileReferencesUndefined: Self = StObject.set(x, "externalPropertyFileReferences", js.undefined)
+    inline def setExternalPropertyFileReferencesUndefined: Self = StObject.set(x, "externalPropertyFileReferences", js.undefined)
     
-    @scala.inline
-    def setGraphs(value: js.Array[Graph]): Self = StObject.set(x, "graphs", value.asInstanceOf[js.Any])
+    inline def setGraphs(value: js.Array[Graph]): Self = StObject.set(x, "graphs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphsUndefined: Self = StObject.set(x, "graphs", js.undefined)
+    inline def setGraphsUndefined: Self = StObject.set(x, "graphs", js.undefined)
     
-    @scala.inline
-    def setGraphsVarargs(value: Graph*): Self = StObject.set(x, "graphs", js.Array(value :_*))
+    inline def setGraphsVarargs(value: Graph*): Self = StObject.set(x, "graphs", js.Array(value :_*))
     
-    @scala.inline
-    def setInvocations(value: js.Array[Invocation]): Self = StObject.set(x, "invocations", value.asInstanceOf[js.Any])
+    inline def setInvocations(value: js.Array[Invocation]): Self = StObject.set(x, "invocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationsUndefined: Self = StObject.set(x, "invocations", js.undefined)
+    inline def setInvocationsUndefined: Self = StObject.set(x, "invocations", js.undefined)
     
-    @scala.inline
-    def setInvocationsVarargs(value: Invocation*): Self = StObject.set(x, "invocations", js.Array(value :_*))
+    inline def setInvocationsVarargs(value: Invocation*): Self = StObject.set(x, "invocations", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLogicalLocations(value: js.Array[LogicalLocation]): Self = StObject.set(x, "logicalLocations", value.asInstanceOf[js.Any])
+    inline def setLogicalLocations(value: js.Array[LogicalLocation]): Self = StObject.set(x, "logicalLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalLocationsUndefined: Self = StObject.set(x, "logicalLocations", js.undefined)
+    inline def setLogicalLocationsUndefined: Self = StObject.set(x, "logicalLocations", js.undefined)
     
-    @scala.inline
-    def setLogicalLocationsVarargs(value: LogicalLocation*): Self = StObject.set(x, "logicalLocations", js.Array(value :_*))
+    inline def setLogicalLocationsVarargs(value: LogicalLocation*): Self = StObject.set(x, "logicalLocations", js.Array(value :_*))
     
-    @scala.inline
-    def setNewlineSequences(value: js.Array[String]): Self = StObject.set(x, "newlineSequences", value.asInstanceOf[js.Any])
+    inline def setNewlineSequences(value: js.Array[String]): Self = StObject.set(x, "newlineSequences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewlineSequencesUndefined: Self = StObject.set(x, "newlineSequences", js.undefined)
+    inline def setNewlineSequencesUndefined: Self = StObject.set(x, "newlineSequences", js.undefined)
     
-    @scala.inline
-    def setNewlineSequencesVarargs(value: String*): Self = StObject.set(x, "newlineSequences", js.Array(value :_*))
+    inline def setNewlineSequencesVarargs(value: String*): Self = StObject.set(x, "newlineSequences", js.Array(value :_*))
     
-    @scala.inline
-    def setOriginalUriBaseIds(value: StringDictionary[ArtifactLocation]): Self = StObject.set(x, "originalUriBaseIds", value.asInstanceOf[js.Any])
+    inline def setOriginalUriBaseIds(value: StringDictionary[ArtifactLocation]): Self = StObject.set(x, "originalUriBaseIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalUriBaseIdsUndefined: Self = StObject.set(x, "originalUriBaseIds", js.undefined)
+    inline def setOriginalUriBaseIdsUndefined: Self = StObject.set(x, "originalUriBaseIds", js.undefined)
     
-    @scala.inline
-    def setPolicies(value: js.Array[ToolComponent]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
+    inline def setPolicies(value: js.Array[ToolComponent]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
+    inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    @scala.inline
-    def setPoliciesVarargs(value: ToolComponent*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: ToolComponent*): Self = StObject.set(x, "policies", js.Array(value :_*))
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setRedactionTokens(value: js.Array[String]): Self = StObject.set(x, "redactionTokens", value.asInstanceOf[js.Any])
+    inline def setRedactionTokens(value: js.Array[String]): Self = StObject.set(x, "redactionTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactionTokensUndefined: Self = StObject.set(x, "redactionTokens", js.undefined)
+    inline def setRedactionTokensUndefined: Self = StObject.set(x, "redactionTokens", js.undefined)
     
-    @scala.inline
-    def setRedactionTokensVarargs(value: String*): Self = StObject.set(x, "redactionTokens", js.Array(value :_*))
+    inline def setRedactionTokensVarargs(value: String*): Self = StObject.set(x, "redactionTokens", js.Array(value :_*))
     
-    @scala.inline
-    def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setRunAggregates(value: js.Array[RunAutomationDetails]): Self = StObject.set(x, "runAggregates", value.asInstanceOf[js.Any])
+    inline def setRunAggregates(value: js.Array[RunAutomationDetails]): Self = StObject.set(x, "runAggregates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAggregatesUndefined: Self = StObject.set(x, "runAggregates", js.undefined)
+    inline def setRunAggregatesUndefined: Self = StObject.set(x, "runAggregates", js.undefined)
     
-    @scala.inline
-    def setRunAggregatesVarargs(value: RunAutomationDetails*): Self = StObject.set(x, "runAggregates", js.Array(value :_*))
+    inline def setRunAggregatesVarargs(value: RunAutomationDetails*): Self = StObject.set(x, "runAggregates", js.Array(value :_*))
     
-    @scala.inline
-    def setSpecialLocations(value: SpecialLocations): Self = StObject.set(x, "specialLocations", value.asInstanceOf[js.Any])
+    inline def setSpecialLocations(value: SpecialLocations): Self = StObject.set(x, "specialLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecialLocationsUndefined: Self = StObject.set(x, "specialLocations", js.undefined)
+    inline def setSpecialLocationsUndefined: Self = StObject.set(x, "specialLocations", js.undefined)
     
-    @scala.inline
-    def setTaxonomies(value: js.Array[ToolComponent]): Self = StObject.set(x, "taxonomies", value.asInstanceOf[js.Any])
+    inline def setTaxonomies(value: js.Array[ToolComponent]): Self = StObject.set(x, "taxonomies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxonomiesUndefined: Self = StObject.set(x, "taxonomies", js.undefined)
+    inline def setTaxonomiesUndefined: Self = StObject.set(x, "taxonomies", js.undefined)
     
-    @scala.inline
-    def setTaxonomiesVarargs(value: ToolComponent*): Self = StObject.set(x, "taxonomies", js.Array(value :_*))
+    inline def setTaxonomiesVarargs(value: ToolComponent*): Self = StObject.set(x, "taxonomies", js.Array(value :_*))
     
-    @scala.inline
-    def setThreadFlowLocations(value: js.Array[ThreadFlowLocation]): Self = StObject.set(x, "threadFlowLocations", value.asInstanceOf[js.Any])
+    inline def setThreadFlowLocations(value: js.Array[ThreadFlowLocation]): Self = StObject.set(x, "threadFlowLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadFlowLocationsUndefined: Self = StObject.set(x, "threadFlowLocations", js.undefined)
+    inline def setThreadFlowLocationsUndefined: Self = StObject.set(x, "threadFlowLocations", js.undefined)
     
-    @scala.inline
-    def setThreadFlowLocationsVarargs(value: ThreadFlowLocation*): Self = StObject.set(x, "threadFlowLocations", js.Array(value :_*))
+    inline def setThreadFlowLocationsVarargs(value: ThreadFlowLocation*): Self = StObject.set(x, "threadFlowLocations", js.Array(value :_*))
     
-    @scala.inline
-    def setTool(value: Tool): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+    inline def setTool(value: Tool): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslations(value: js.Array[ToolComponent]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    inline def setTranslations(value: js.Array[ToolComponent]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
-    @scala.inline
-    def setTranslationsVarargs(value: ToolComponent*): Self = StObject.set(x, "translations", js.Array(value :_*))
+    inline def setTranslationsVarargs(value: ToolComponent*): Self = StObject.set(x, "translations", js.Array(value :_*))
     
-    @scala.inline
-    def setVersionControlProvenance(value: js.Array[VersionControlDetails]): Self = StObject.set(x, "versionControlProvenance", value.asInstanceOf[js.Any])
+    inline def setVersionControlProvenance(value: js.Array[VersionControlDetails]): Self = StObject.set(x, "versionControlProvenance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionControlProvenanceUndefined: Self = StObject.set(x, "versionControlProvenance", js.undefined)
+    inline def setVersionControlProvenanceUndefined: Self = StObject.set(x, "versionControlProvenance", js.undefined)
     
-    @scala.inline
-    def setVersionControlProvenanceVarargs(value: VersionControlDetails*): Self = StObject.set(x, "versionControlProvenance", js.Array(value :_*))
+    inline def setVersionControlProvenanceVarargs(value: VersionControlDetails*): Self = StObject.set(x, "versionControlProvenance", js.Array(value :_*))
     
-    @scala.inline
-    def setWebRequests(value: js.Array[WebRequest]): Self = StObject.set(x, "webRequests", value.asInstanceOf[js.Any])
+    inline def setWebRequests(value: js.Array[WebRequest]): Self = StObject.set(x, "webRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebRequestsUndefined: Self = StObject.set(x, "webRequests", js.undefined)
+    inline def setWebRequestsUndefined: Self = StObject.set(x, "webRequests", js.undefined)
     
-    @scala.inline
-    def setWebRequestsVarargs(value: WebRequest*): Self = StObject.set(x, "webRequests", js.Array(value :_*))
+    inline def setWebRequestsVarargs(value: WebRequest*): Self = StObject.set(x, "webRequests", js.Array(value :_*))
     
-    @scala.inline
-    def setWebResponses(value: js.Array[WebResponse]): Self = StObject.set(x, "webResponses", value.asInstanceOf[js.Any])
+    inline def setWebResponses(value: js.Array[WebResponse]): Self = StObject.set(x, "webResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebResponsesUndefined: Self = StObject.set(x, "webResponses", js.undefined)
+    inline def setWebResponsesUndefined: Self = StObject.set(x, "webResponses", js.undefined)
     
-    @scala.inline
-    def setWebResponsesVarargs(value: WebResponse*): Self = StObject.set(x, "webResponses", js.Array(value :_*))
+    inline def setWebResponsesVarargs(value: WebResponse*): Self = StObject.set(x, "webResponses", js.Array(value :_*))
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -392,10 +319,8 @@ object Run {
   trait columnKind extends StObject
   object columnKind {
     
-    @scala.inline
-    def unicodeCodePoints: typings.sarif.sarifStrings.unicodeCodePoints = "unicodeCodePoints".asInstanceOf[typings.sarif.sarifStrings.unicodeCodePoints]
+    inline def unicodeCodePoints: typings.sarif.sarifStrings.unicodeCodePoints = "unicodeCodePoints".asInstanceOf[typings.sarif.sarifStrings.unicodeCodePoints]
     
-    @scala.inline
-    def utf16CodeUnits: typings.sarif.sarifStrings.utf16CodeUnits = "utf16CodeUnits".asInstanceOf[typings.sarif.sarifStrings.utf16CodeUnits]
+    inline def utf16CodeUnits: typings.sarif.sarifStrings.utf16CodeUnits = "utf16CodeUnits".asInstanceOf[typings.sarif.sarifStrings.utf16CodeUnits]
   }
 }

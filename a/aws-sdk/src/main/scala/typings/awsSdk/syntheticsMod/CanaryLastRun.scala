@@ -18,25 +18,19 @@ trait CanaryLastRun extends StObject {
 }
 object CanaryLastRun {
   
-  @scala.inline
-  def apply(): CanaryLastRun = {
+  inline def apply(): CanaryLastRun = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanaryLastRun]
   }
   
-  @scala.inline
-  implicit class CanaryLastRunMutableBuilder[Self <: CanaryLastRun] (val x: Self) extends AnyVal {
+  extension [Self <: CanaryLastRun](x: Self) {
     
-    @scala.inline
-    def setCanaryName(value: CanaryName): Self = StObject.set(x, "CanaryName", value.asInstanceOf[js.Any])
+    inline def setCanaryName(value: CanaryName): Self = StObject.set(x, "CanaryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanaryNameUndefined: Self = StObject.set(x, "CanaryName", js.undefined)
+    inline def setCanaryNameUndefined: Self = StObject.set(x, "CanaryName", js.undefined)
     
-    @scala.inline
-    def setLastRun(value: CanaryRun): Self = StObject.set(x, "LastRun", value.asInstanceOf[js.Any])
+    inline def setLastRun(value: CanaryRun): Self = StObject.set(x, "LastRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRunUndefined: Self = StObject.set(x, "LastRun", js.undefined)
+    inline def setLastRunUndefined: Self = StObject.set(x, "LastRun", js.undefined)
   }
 }

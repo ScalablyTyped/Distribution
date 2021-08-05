@@ -16,15 +16,11 @@ object helpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def classNames(args: (js.UndefOr[Boolean | String | Double | Unit | Null])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def classNames(args: (js.UndefOr[Boolean | String | Double | Unit | Null])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def computeCroppedArea(crop: Point, mediaSize: MediaSize, cropSize: Size, aspect: Double, zoom: Double): CroppedAreaPercentages = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCroppedArea")(crop.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[CroppedAreaPercentages]
-  @scala.inline
-  def computeCroppedArea(crop: Point, mediaSize: MediaSize, cropSize: Size, aspect: Double, zoom: Double, rotation: Double): CroppedAreaPercentages = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCroppedArea")(crop.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[CroppedAreaPercentages]
-  @scala.inline
-  def computeCroppedArea(
+  inline def computeCroppedArea(crop: Point, mediaSize: MediaSize, cropSize: Size, aspect: Double, zoom: Double): CroppedAreaPercentages = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCroppedArea")(crop.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[CroppedAreaPercentages]
+  inline def computeCroppedArea(crop: Point, mediaSize: MediaSize, cropSize: Size, aspect: Double, zoom: Double, rotation: Double): CroppedAreaPercentages = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCroppedArea")(crop.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[CroppedAreaPercentages]
+  inline def computeCroppedArea(
     crop: Point,
     mediaSize: MediaSize,
     cropSize: Size,
@@ -33,8 +29,7 @@ object helpersMod {
     rotation: Double,
     restrictPosition: Boolean
   ): CroppedAreaPercentages = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCroppedArea")(crop.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], restrictPosition.asInstanceOf[js.Any])).asInstanceOf[CroppedAreaPercentages]
-  @scala.inline
-  def computeCroppedArea(
+  inline def computeCroppedArea(
     crop: Point,
     mediaSize: MediaSize,
     cropSize: Size,
@@ -44,19 +39,16 @@ object helpersMod {
     restrictPosition: Boolean
   ): CroppedAreaPercentages = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCroppedArea")(crop.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], restrictPosition.asInstanceOf[js.Any])).asInstanceOf[CroppedAreaPercentages]
   
-  @scala.inline
-  def getCenter(a: Point, b: Point): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("getCenter")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
+  inline def getCenter(a: Point, b: Point): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("getCenter")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @scala.inline
-  def getCropSize(
+  inline def getCropSize(
     mediaWidth: Double,
     mediaHeight: Double,
     containerWidth: Double,
     containerHeight: Double,
     aspect: Double
   ): Size = (^.asInstanceOf[js.Dynamic].applyDynamic("getCropSize")(mediaWidth.asInstanceOf[js.Any], mediaHeight.asInstanceOf[js.Any], containerWidth.asInstanceOf[js.Any], containerHeight.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any])).asInstanceOf[Size]
-  @scala.inline
-  def getCropSize(
+  inline def getCropSize(
     mediaWidth: Double,
     mediaHeight: Double,
     containerWidth: Double,
@@ -65,25 +57,17 @@ object helpersMod {
     rotation: Double
   ): Size = (^.asInstanceOf[js.Dynamic].applyDynamic("getCropSize")(mediaWidth.asInstanceOf[js.Any], mediaHeight.asInstanceOf[js.Any], containerWidth.asInstanceOf[js.Any], containerHeight.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Size]
   
-  @scala.inline
-  def getDistanceBetweenPoints(pointA: Point, pointB: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceBetweenPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDistanceBetweenPoints(pointA: Point, pointB: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceBetweenPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getInitialCropFromCroppedAreaPixels(croppedAreaPixels: Area, mediaSize: MediaSize): Crop = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitialCropFromCroppedAreaPixels")(croppedAreaPixels.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any])).asInstanceOf[Crop]
-  @scala.inline
-  def getInitialCropFromCroppedAreaPixels(croppedAreaPixels: Area, mediaSize: MediaSize, cropSize: Size): Crop = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitialCropFromCroppedAreaPixels")(croppedAreaPixels.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any])).asInstanceOf[Crop]
+  inline def getInitialCropFromCroppedAreaPixels(croppedAreaPixels: Area, mediaSize: MediaSize): Crop = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitialCropFromCroppedAreaPixels")(croppedAreaPixels.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any])).asInstanceOf[Crop]
+  inline def getInitialCropFromCroppedAreaPixels(croppedAreaPixels: Area, mediaSize: MediaSize, cropSize: Size): Crop = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitialCropFromCroppedAreaPixels")(croppedAreaPixels.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any])).asInstanceOf[Crop]
   
-  @scala.inline
-  def getRotationBetweenPoints(pointA: Point, pointB: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRotationBetweenPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getRotationBetweenPoints(pointA: Point, pointB: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRotationBetweenPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def restrictPosition(position: Point, mediaSize: Size, cropSize: Size, zoom: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("restrictPosition")(position.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[Point]
-  @scala.inline
-  def restrictPosition(position: Point, mediaSize: Size, cropSize: Size, zoom: Double, rotation: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("restrictPosition")(position.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Point]
+  inline def restrictPosition(position: Point, mediaSize: Size, cropSize: Size, zoom: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("restrictPosition")(position.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[Point]
+  inline def restrictPosition(position: Point, mediaSize: Size, cropSize: Size, zoom: Double, rotation: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("restrictPosition")(position.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @scala.inline
-  def rotateAroundMidPoint(x: Double, y: Double, xMid: Double, yMid: Double, degrees: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateAroundMidPoint")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], xMid.asInstanceOf[js.Any], yMid.asInstanceOf[js.Any], degrees.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def rotateAroundMidPoint(x: Double, y: Double, xMid: Double, yMid: Double, degrees: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateAroundMidPoint")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], xMid.asInstanceOf[js.Any], yMid.asInstanceOf[js.Any], degrees.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @scala.inline
-  def translateSize(width: Double, height: Double, rotation: Double): Size = (^.asInstanceOf[js.Dynamic].applyDynamic("translateSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Size]
+  inline def translateSize(width: Double, height: Double, rotation: Double): Size = (^.asInstanceOf[js.Dynamic].applyDynamic("translateSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Size]
 }

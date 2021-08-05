@@ -37,16 +37,13 @@ trait ActionResponse extends StObject {
 }
 object ActionResponse {
   
-  @scala.inline
-  def apply(printJson: () => String): ActionResponse = {
+  inline def apply(printJson: () => String): ActionResponse = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
     __obj.asInstanceOf[ActionResponse]
   }
   
-  @scala.inline
-  implicit class ActionResponseMutableBuilder[Self <: ActionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ActionResponse](x: Self) {
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }
 }

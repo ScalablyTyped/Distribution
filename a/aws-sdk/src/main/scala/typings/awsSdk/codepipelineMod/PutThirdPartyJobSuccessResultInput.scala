@@ -33,37 +33,27 @@ trait PutThirdPartyJobSuccessResultInput extends StObject {
 }
 object PutThirdPartyJobSuccessResultInput {
   
-  @scala.inline
-  def apply(clientToken: ClientToken, jobId: ThirdPartyJobId): PutThirdPartyJobSuccessResultInput = {
+  inline def apply(clientToken: ClientToken, jobId: ThirdPartyJobId): PutThirdPartyJobSuccessResultInput = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutThirdPartyJobSuccessResultInput]
   }
   
-  @scala.inline
-  implicit class PutThirdPartyJobSuccessResultInputMutableBuilder[Self <: PutThirdPartyJobSuccessResultInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutThirdPartyJobSuccessResultInput](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuationToken(value: ContinuationToken): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
+    inline def setContinuationToken(value: ContinuationToken): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuationTokenUndefined: Self = StObject.set(x, "continuationToken", js.undefined)
+    inline def setContinuationTokenUndefined: Self = StObject.set(x, "continuationToken", js.undefined)
     
-    @scala.inline
-    def setCurrentRevision(value: CurrentRevision): Self = StObject.set(x, "currentRevision", value.asInstanceOf[js.Any])
+    inline def setCurrentRevision(value: CurrentRevision): Self = StObject.set(x, "currentRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRevisionUndefined: Self = StObject.set(x, "currentRevision", js.undefined)
+    inline def setCurrentRevisionUndefined: Self = StObject.set(x, "currentRevision", js.undefined)
     
-    @scala.inline
-    def setExecutionDetails(value: ExecutionDetails): Self = StObject.set(x, "executionDetails", value.asInstanceOf[js.Any])
+    inline def setExecutionDetails(value: ExecutionDetails): Self = StObject.set(x, "executionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionDetailsUndefined: Self = StObject.set(x, "executionDetails", js.undefined)
+    inline def setExecutionDetailsUndefined: Self = StObject.set(x, "executionDetails", js.undefined)
     
-    @scala.inline
-    def setJobId(value: ThirdPartyJobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: ThirdPartyJobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
   }
 }

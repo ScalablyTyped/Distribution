@@ -82,8 +82,7 @@ trait KiiUserBuilder extends StObject {
 }
 object KiiUserBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: () => KiiUser,
     setEmailAddress: String => KiiUserBuilder,
     setGlobalPhoneNumber: String => KiiUserBuilder,
@@ -94,22 +93,16 @@ object KiiUserBuilder {
     __obj.asInstanceOf[KiiUserBuilder]
   }
   
-  @scala.inline
-  implicit class KiiUserBuilderMutableBuilder[Self <: KiiUserBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: KiiUserBuilder](x: Self) {
     
-    @scala.inline
-    def setBuild(value: () => KiiUser): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => KiiUser): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEmailAddress(value: String => KiiUserBuilder): Self = StObject.set(x, "setEmailAddress", js.Any.fromFunction1(value))
+    inline def setSetEmailAddress(value: String => KiiUserBuilder): Self = StObject.set(x, "setEmailAddress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGlobalPhoneNumber(value: String => KiiUserBuilder): Self = StObject.set(x, "setGlobalPhoneNumber", js.Any.fromFunction1(value))
+    inline def setSetGlobalPhoneNumber(value: String => KiiUserBuilder): Self = StObject.set(x, "setGlobalPhoneNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLocalPhoneNumber(value: (String, String) => KiiUserBuilder): Self = StObject.set(x, "setLocalPhoneNumber", js.Any.fromFunction2(value))
+    inline def setSetLocalPhoneNumber(value: (String, String) => KiiUserBuilder): Self = StObject.set(x, "setLocalPhoneNumber", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetUsername(value: String => KiiUserBuilder): Self = StObject.set(x, "setUsername", js.Any.fromFunction1(value))
+    inline def setSetUsername(value: String => KiiUserBuilder): Self = StObject.set(x, "setUsername", js.Any.fromFunction1(value))
   }
 }

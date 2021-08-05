@@ -10,19 +10,15 @@ trait ObjectExplorerFindNodesResponse extends StObject {
 }
 object ObjectExplorerFindNodesResponse {
   
-  @scala.inline
-  def apply(nodes: js.Array[NodeInfo]): ObjectExplorerFindNodesResponse = {
+  inline def apply(nodes: js.Array[NodeInfo]): ObjectExplorerFindNodesResponse = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectExplorerFindNodesResponse]
   }
   
-  @scala.inline
-  implicit class ObjectExplorerFindNodesResponseMutableBuilder[Self <: ObjectExplorerFindNodesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectExplorerFindNodesResponse](x: Self) {
     
-    @scala.inline
-    def setNodes(value: js.Array[NodeInfo]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[NodeInfo]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: NodeInfo*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: NodeInfo*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

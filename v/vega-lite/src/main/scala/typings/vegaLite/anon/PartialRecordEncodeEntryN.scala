@@ -24,55 +24,39 @@ trait PartialRecordEncodeEntryN extends StObject {
 }
 object PartialRecordEncodeEntryN {
   
-  @scala.inline
-  def apply(): PartialRecordEncodeEntryN = {
+  inline def apply(): PartialRecordEncodeEntryN = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialRecordEncodeEntryN]
   }
   
-  @scala.inline
-  implicit class PartialRecordEncodeEntryNMutableBuilder[Self <: PartialRecordEncodeEntryN] (val x: Self) extends AnyVal {
+  extension [Self <: PartialRecordEncodeEntryN](x: Self) {
     
-    @scala.inline
-    def setEnter(value: TextEncodeEntry): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+    inline def setEnter(value: TextEncodeEntry): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+    inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
-    @scala.inline
-    def setExit(value: TextEncodeEntry): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+    inline def setExit(value: TextEncodeEntry): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+    inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     
-    @scala.inline
-    def setHover(value: TextEncodeEntry): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: TextEncodeEntry): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    @scala.inline
-    def setLeave(value: TextEncodeEntry): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
+    inline def setLeave(value: TextEncodeEntry): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
+    inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
     
-    @scala.inline
-    def setRelease(value: TextEncodeEntry): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: TextEncodeEntry): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+    inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
     
-    @scala.inline
-    def setSelect(value: TextEncodeEntry): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: TextEncodeEntry): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: TextEncodeEntry): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: TextEncodeEntry): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

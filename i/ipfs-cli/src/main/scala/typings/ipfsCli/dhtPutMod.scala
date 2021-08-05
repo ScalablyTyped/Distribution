@@ -29,6 +29,5 @@ object dhtPutMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsKeyValueTimeout: Value): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsKeyValueTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsKeyValueTimeout: Value): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsKeyValueTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

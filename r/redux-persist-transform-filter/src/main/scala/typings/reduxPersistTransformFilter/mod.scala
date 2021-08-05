@@ -11,12 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[State, Raw](reducerName: String): Transform[State, Raw, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducerName.asInstanceOf[js.Any]).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
-  @scala.inline
-  def default[State, Raw](reducerName: String, inboundPaths: js.Array[String]): Transform[State, Raw, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducerName.asInstanceOf[js.Any], inboundPaths.asInstanceOf[js.Any])).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
-  @scala.inline
-  def default[State, Raw](reducerName: String, inboundPaths: js.Array[String], outboundPaths: js.Array[String]): Transform[State, Raw, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducerName.asInstanceOf[js.Any], inboundPaths.asInstanceOf[js.Any], outboundPaths.asInstanceOf[js.Any])).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
-  @scala.inline
-  def default[State, Raw](reducerName: String, inboundPaths: Unit, outboundPaths: js.Array[String]): Transform[State, Raw, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducerName.asInstanceOf[js.Any], inboundPaths.asInstanceOf[js.Any], outboundPaths.asInstanceOf[js.Any])).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
+  inline def default[State, Raw](reducerName: String): Transform[State, Raw, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducerName.asInstanceOf[js.Any]).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
+  inline def default[State, Raw](reducerName: String, inboundPaths: js.Array[String]): Transform[State, Raw, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducerName.asInstanceOf[js.Any], inboundPaths.asInstanceOf[js.Any])).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
+  inline def default[State, Raw](reducerName: String, inboundPaths: js.Array[String], outboundPaths: js.Array[String]): Transform[State, Raw, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducerName.asInstanceOf[js.Any], inboundPaths.asInstanceOf[js.Any], outboundPaths.asInstanceOf[js.Any])).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
+  inline def default[State, Raw](reducerName: String, inboundPaths: Unit, outboundPaths: js.Array[String]): Transform[State, Raw, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducerName.asInstanceOf[js.Any], inboundPaths.asInstanceOf[js.Any], outboundPaths.asInstanceOf[js.Any])).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
 }

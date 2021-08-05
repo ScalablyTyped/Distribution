@@ -15,19 +15,19 @@ object expandingCardBaseMod {
     extends Component[IExpandingCardProps, IExpandingCardState, js.Any] {
     def this(props: IExpandingCardProps) = this()
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _checkNeedsScroll: js.Any = js.native
+    /* private */ var _checkNeedsScroll: js.Any = js.native
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _expandedElem: js.Any = js.native
+    /* private */ var _expandedElem: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _onRenderCompactCard: js.Any = js.native
+    /* private */ var _onRenderCompactCard: js.Any = js.native
     
-    var _onRenderExpandedCard: js.Any = js.native
+    /* private */ var _onRenderExpandedCard: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MExpandingCardBase(): Unit = js.native
@@ -45,8 +45,7 @@ object expandingCardBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/HoverCard/ExpandingCard.base", "ExpandingCardBase.defaultProps")
     @js.native
     def defaultProps: CompactCardHeight = js.native
-    @scala.inline
-    def defaultProps_=(x: CompactCardHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CompactCardHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IExpandingCardState extends StObject {
@@ -57,20 +56,16 @@ object expandingCardBaseMod {
   }
   object IExpandingCardState {
     
-    @scala.inline
-    def apply(firstFrameRendered: Boolean, needsScroll: Boolean): IExpandingCardState = {
+    inline def apply(firstFrameRendered: Boolean, needsScroll: Boolean): IExpandingCardState = {
       val __obj = js.Dynamic.literal(firstFrameRendered = firstFrameRendered.asInstanceOf[js.Any], needsScroll = needsScroll.asInstanceOf[js.Any])
       __obj.asInstanceOf[IExpandingCardState]
     }
     
-    @scala.inline
-    implicit class IExpandingCardStateMutableBuilder[Self <: IExpandingCardState] (val x: Self) extends AnyVal {
+    extension [Self <: IExpandingCardState](x: Self) {
       
-      @scala.inline
-      def setFirstFrameRendered(value: Boolean): Self = StObject.set(x, "firstFrameRendered", value.asInstanceOf[js.Any])
+      inline def setFirstFrameRendered(value: Boolean): Self = StObject.set(x, "firstFrameRendered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedsScroll(value: Boolean): Self = StObject.set(x, "needsScroll", value.asInstanceOf[js.Any])
+      inline def setNeedsScroll(value: Boolean): Self = StObject.set(x, "needsScroll", value.asInstanceOf[js.Any])
     }
   }
 }

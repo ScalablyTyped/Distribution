@@ -15,19 +15,15 @@ trait TypeofRadialMenu extends StObject {
 }
 object TypeofRadialMenu {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: RadialMenu): TypeofRadialMenu = {
+  inline def apply(Locale: js.Any, fn: RadialMenu): TypeofRadialMenu = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofRadialMenu]
   }
   
-  @scala.inline
-  implicit class TypeofRadialMenuMutableBuilder[Self <: TypeofRadialMenu] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofRadialMenu](x: Self) {
     
-    @scala.inline
-    def setFn(value: RadialMenu): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: RadialMenu): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

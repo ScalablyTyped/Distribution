@@ -20,19 +20,15 @@ trait SchemaDoubleOperatorOptions extends StObject {
 }
 object SchemaDoubleOperatorOptions {
   
-  @scala.inline
-  def apply(): SchemaDoubleOperatorOptions = {
+  inline def apply(): SchemaDoubleOperatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDoubleOperatorOptions]
   }
   
-  @scala.inline
-  implicit class SchemaDoubleOperatorOptionsMutableBuilder[Self <: SchemaDoubleOperatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDoubleOperatorOptions](x: Self) {
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
   }
 }

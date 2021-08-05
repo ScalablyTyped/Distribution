@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Zooms")
 @js.native
-class Zooms protected ()
+/* private */ class Zooms ()
   extends StObject
      with typings.activexWord.Word.Zooms {
   
@@ -23,7 +23,7 @@ class Zooms protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Zooms_typekey")
   var WordDotZooms_typekey: typings.activexWord.Word.Zooms = js.native
 }

@@ -13,16 +13,13 @@ trait SuperAgentError
 }
 object SuperAgentError {
   
-  @scala.inline
-  def apply(message: String, name: String, response: typings.superagent.mod.Response): SuperAgentError = {
+  inline def apply(message: String, name: String, response: typings.superagent.mod.Response): SuperAgentError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuperAgentError]
   }
   
-  @scala.inline
-  implicit class SuperAgentErrorMutableBuilder[Self <: SuperAgentError] (val x: Self) extends AnyVal {
+  extension [Self <: SuperAgentError](x: Self) {
     
-    @scala.inline
-    def setResponse(value: typings.superagent.mod.Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: typings.superagent.mod.Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -78,8 +78,7 @@ trait NodeDef extends StObject {
 }
 object NodeDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindingFlags: ɵBindingFlags,
     bindingIndex: Double,
     bindings: js.Array[BindingDef],
@@ -100,106 +99,72 @@ object NodeDef {
     __obj.asInstanceOf[NodeDef]
   }
   
-  @scala.inline
-  implicit class NodeDefMutableBuilder[Self <: NodeDef] (val x: Self) extends AnyVal {
+  extension [Self <: NodeDef](x: Self) {
     
-    @scala.inline
-    def setBindingFlags(value: ɵBindingFlags): Self = StObject.set(x, "bindingFlags", value.asInstanceOf[js.Any])
+    inline def setBindingFlags(value: ɵBindingFlags): Self = StObject.set(x, "bindingFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingIndex(value: Double): Self = StObject.set(x, "bindingIndex", value.asInstanceOf[js.Any])
+    inline def setBindingIndex(value: Double): Self = StObject.set(x, "bindingIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindings(value: js.Array[BindingDef]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: js.Array[BindingDef]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingsVarargs(value: BindingDef*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+    inline def setBindingsVarargs(value: BindingDef*): Self = StObject.set(x, "bindings", js.Array(value :_*))
     
-    @scala.inline
-    def setCheckIndex(value: Double): Self = StObject.set(x, "checkIndex", value.asInstanceOf[js.Any])
+    inline def setCheckIndex(value: Double): Self = StObject.set(x, "checkIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildCount(value: Double): Self = StObject.set(x, "childCount", value.asInstanceOf[js.Any])
+    inline def setChildCount(value: Double): Self = StObject.set(x, "childCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildFlags(value: ɵNodeFlags): Self = StObject.set(x, "childFlags", value.asInstanceOf[js.Any])
+    inline def setChildFlags(value: ɵNodeFlags): Self = StObject.set(x, "childFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildMatchedQueries(value: Double): Self = StObject.set(x, "childMatchedQueries", value.asInstanceOf[js.Any])
+    inline def setChildMatchedQueries(value: Double): Self = StObject.set(x, "childMatchedQueries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectChildFlags(value: ɵNodeFlags): Self = StObject.set(x, "directChildFlags", value.asInstanceOf[js.Any])
+    inline def setDirectChildFlags(value: ɵNodeFlags): Self = StObject.set(x, "directChildFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: ElementDef): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: ElementDef): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementNull: Self = StObject.set(x, "element", null)
+    inline def setElementNull: Self = StObject.set(x, "element", null)
     
-    @scala.inline
-    def setFlags(value: ɵNodeFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: ɵNodeFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedQueries(value: NumberDictionary[ɵQueryValueType]): Self = StObject.set(x, "matchedQueries", value.asInstanceOf[js.Any])
+    inline def setMatchedQueries(value: NumberDictionary[ɵQueryValueType]): Self = StObject.set(x, "matchedQueries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedQueryIds(value: Double): Self = StObject.set(x, "matchedQueryIds", value.asInstanceOf[js.Any])
+    inline def setMatchedQueryIds(value: Double): Self = StObject.set(x, "matchedQueryIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNgContent(value: NgContentDef): Self = StObject.set(x, "ngContent", value.asInstanceOf[js.Any])
+    inline def setNgContent(value: NgContentDef): Self = StObject.set(x, "ngContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNgContentIndex(value: Double): Self = StObject.set(x, "ngContentIndex", value.asInstanceOf[js.Any])
+    inline def setNgContentIndex(value: Double): Self = StObject.set(x, "ngContentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNgContentIndexNull: Self = StObject.set(x, "ngContentIndex", null)
+    inline def setNgContentIndexNull: Self = StObject.set(x, "ngContentIndex", null)
     
-    @scala.inline
-    def setNgContentNull: Self = StObject.set(x, "ngContent", null)
+    inline def setNgContentNull: Self = StObject.set(x, "ngContent", null)
     
-    @scala.inline
-    def setNodeIndex(value: Double): Self = StObject.set(x, "nodeIndex", value.asInstanceOf[js.Any])
+    inline def setNodeIndex(value: Double): Self = StObject.set(x, "nodeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputIndex(value: Double): Self = StObject.set(x, "outputIndex", value.asInstanceOf[js.Any])
+    inline def setOutputIndex(value: Double): Self = StObject.set(x, "outputIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputs(value: js.Array[OutputDef]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: js.Array[OutputDef]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsVarargs(value: OutputDef*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: OutputDef*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: NodeDef): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: NodeDef): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setProvider(value: ProviderDef): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: ProviderDef): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderNull: Self = StObject.set(x, "provider", null)
+    inline def setProviderNull: Self = StObject.set(x, "provider", null)
     
-    @scala.inline
-    def setQuery(value: QueryDef): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: QueryDef): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryNull: Self = StObject.set(x, "query", null)
+    inline def setQueryNull: Self = StObject.set(x, "query", null)
     
-    @scala.inline
-    def setReferences(value: StringDictionary[ɵQueryValueType]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    inline def setReferences(value: StringDictionary[ɵQueryValueType]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderParent(value: NodeDef): Self = StObject.set(x, "renderParent", value.asInstanceOf[js.Any])
+    inline def setRenderParent(value: NodeDef): Self = StObject.set(x, "renderParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderParentNull: Self = StObject.set(x, "renderParent", null)
+    inline def setRenderParentNull: Self = StObject.set(x, "renderParent", null)
     
-    @scala.inline
-    def setText(value: TextDef): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: TextDef): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextNull: Self = StObject.set(x, "text", null)
+    inline def setTextNull: Self = StObject.set(x, "text", null)
   }
 }

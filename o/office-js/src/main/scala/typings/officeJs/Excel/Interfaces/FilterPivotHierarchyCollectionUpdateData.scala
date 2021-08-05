@@ -11,22 +11,17 @@ trait FilterPivotHierarchyCollectionUpdateData extends StObject {
 }
 object FilterPivotHierarchyCollectionUpdateData {
   
-  @scala.inline
-  def apply(): FilterPivotHierarchyCollectionUpdateData = {
+  inline def apply(): FilterPivotHierarchyCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterPivotHierarchyCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class FilterPivotHierarchyCollectionUpdateDataMutableBuilder[Self <: FilterPivotHierarchyCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: FilterPivotHierarchyCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[FilterPivotHierarchyData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[FilterPivotHierarchyData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: FilterPivotHierarchyData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: FilterPivotHierarchyData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

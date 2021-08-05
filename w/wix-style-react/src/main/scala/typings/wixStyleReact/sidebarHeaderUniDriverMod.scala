@@ -20,8 +20,7 @@ object sidebarHeaderUniDriverMod {
   }
   object SidebarHeaderUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -33,17 +32,13 @@ object sidebarHeaderUniDriverMod {
       __obj.asInstanceOf[SidebarHeaderUniDriver]
     }
     
-    @scala.inline
-    implicit class SidebarHeaderUniDriverMutableBuilder[Self <: SidebarHeaderUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarHeaderUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetChildren(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
+      inline def setGetChildren(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSubtitle(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitle", js.Any.fromFunction0(value))
+      inline def setGetSubtitle(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     }
   }
 }

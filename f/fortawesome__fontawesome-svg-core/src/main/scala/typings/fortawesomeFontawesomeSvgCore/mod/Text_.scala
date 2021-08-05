@@ -14,18 +14,15 @@ trait Text_
 }
 object Text_ {
   
-  @scala.inline
-  def apply(`abstract`: js.Array[AbstractElement], html: js.Array[String], node: HTMLCollection): Text_ = {
+  inline def apply(`abstract`: js.Array[AbstractElement], html: js.Array[String], node: HTMLCollection): Text_ = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("text")
     __obj.asInstanceOf[Text_]
   }
   
-  @scala.inline
-  implicit class Text_MutableBuilder[Self <: Text_] (val x: Self) extends AnyVal {
+  extension [Self <: Text_](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

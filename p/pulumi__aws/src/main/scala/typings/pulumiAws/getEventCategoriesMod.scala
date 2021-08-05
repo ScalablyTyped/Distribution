@@ -11,14 +11,10 @@ object getEventCategoriesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEventCategories(): js.Promise[GetEventCategoriesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventCategories")().asInstanceOf[js.Promise[GetEventCategoriesResult]]
-  @scala.inline
-  def getEventCategories(args: Unit, opts: InvokeOptions): js.Promise[GetEventCategoriesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventCategories")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEventCategoriesResult]]
-  @scala.inline
-  def getEventCategories(args: GetEventCategoriesArgs): js.Promise[GetEventCategoriesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventCategories")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEventCategoriesResult]]
-  @scala.inline
-  def getEventCategories(args: GetEventCategoriesArgs, opts: InvokeOptions): js.Promise[GetEventCategoriesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventCategories")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEventCategoriesResult]]
+  inline def getEventCategories(): js.Promise[GetEventCategoriesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventCategories")().asInstanceOf[js.Promise[GetEventCategoriesResult]]
+  inline def getEventCategories(args: Unit, opts: InvokeOptions): js.Promise[GetEventCategoriesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventCategories")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEventCategoriesResult]]
+  inline def getEventCategories(args: GetEventCategoriesArgs): js.Promise[GetEventCategoriesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventCategories")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEventCategoriesResult]]
+  inline def getEventCategories(args: GetEventCategoriesArgs, opts: InvokeOptions): js.Promise[GetEventCategoriesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventCategories")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEventCategoriesResult]]
   
   trait GetEventCategoriesArgs extends StObject {
     
@@ -29,20 +25,16 @@ object getEventCategoriesMod {
   }
   object GetEventCategoriesArgs {
     
-    @scala.inline
-    def apply(): GetEventCategoriesArgs = {
+    inline def apply(): GetEventCategoriesArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetEventCategoriesArgs]
     }
     
-    @scala.inline
-    implicit class GetEventCategoriesArgsMutableBuilder[Self <: GetEventCategoriesArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetEventCategoriesArgs](x: Self) {
       
-      @scala.inline
-      def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+      inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     }
   }
   
@@ -62,29 +54,22 @@ object getEventCategoriesMod {
   }
   object GetEventCategoriesResult {
     
-    @scala.inline
-    def apply(eventCategories: js.Array[String], id: String): GetEventCategoriesResult = {
+    inline def apply(eventCategories: js.Array[String], id: String): GetEventCategoriesResult = {
       val __obj = js.Dynamic.literal(eventCategories = eventCategories.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetEventCategoriesResult]
     }
     
-    @scala.inline
-    implicit class GetEventCategoriesResultMutableBuilder[Self <: GetEventCategoriesResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetEventCategoriesResult](x: Self) {
       
-      @scala.inline
-      def setEventCategories(value: js.Array[String]): Self = StObject.set(x, "eventCategories", value.asInstanceOf[js.Any])
+      inline def setEventCategories(value: js.Array[String]): Self = StObject.set(x, "eventCategories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "eventCategories", js.Array(value :_*))
+      inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "eventCategories", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+      inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     }
   }
 }

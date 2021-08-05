@@ -19,7 +19,7 @@ object segmentMod {
     extends StObject
        with ComponentInterface {
     
-    var activate: js.Any = js.native
+    /* private */ var activate: js.Any = js.native
     
     var activated: Boolean = js.native
     
@@ -28,11 +28,11 @@ object segmentMod {
       * function adds the ripple based on the checked segment
       * and where the cursor ended.
       */
-    var addRipple: js.Any = js.native
+    /* private */ var addRipple: js.Any = js.native
     
-    var checkButton: js.Any = js.native
+    /* private */ var checkButton: js.Any = js.native
     
-    var checked: js.Any = js.native
+    /* private */ var checked: js.Any = js.native
     
     /**
       * The color to use from your application's color palette.
@@ -55,7 +55,7 @@ object segmentMod {
     @JSName("connectedCallback")
     def connectedCallback_MSegment(): Unit = js.native
     
-    var didInit: js.Any = js.native
+    /* private */ var didInit: js.Any = js.native
     
     /**
       * If `true`, the user cannot interact with the segment.
@@ -66,15 +66,15 @@ object segmentMod {
     
     var el: HTMLIonSegmentElement = js.native
     
-    var emitStyle: js.Any = js.native
+    /* private */ var emitStyle: js.Any = js.native
     
-    var gesture: js.Any = js.native
+    /* private */ var gesture: js.Any = js.native
     
-    var gestureChanged: js.Any = js.native
+    /* private */ var gestureChanged: js.Any = js.native
     
-    var getButtons: js.Any = js.native
+    /* private */ var getButtons: js.Any = js.native
     
-    var getIndicator: js.Any = js.native
+    /* private */ var getIndicator: js.Any = js.native
     
     /**
       * Emitted when the value property has changed and any
@@ -94,7 +94,7 @@ object segmentMod {
       */
     var ionStyle: EventEmitter[StyleEventDetail] = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
     def onEnd(detail: GestureDetail): Unit = js.native
     
@@ -112,11 +112,11 @@ object segmentMod {
       */
     var scrollable: Boolean = js.native
     
-    var setActivated: js.Any = js.native
+    /* private */ var setActivated: js.Any = js.native
     
-    var setCheckedClasses: js.Any = js.native
+    /* private */ var setCheckedClasses: js.Any = js.native
     
-    var setNextIndex: js.Any = js.native
+    /* private */ var setNextIndex: js.Any = js.native
     
     /**
       * If `true`, users will be able to swipe between segment buttons to activate them.
@@ -130,7 +130,7 @@ object segmentMod {
       */
     var value: js.UndefOr[String | Null] = js.native
     
-    var valueAfterGesture: js.Any = js.native
+    /* private */ var valueAfterGesture: js.Any = js.native
     
     /* protected */ def valueChanged(): Unit = js.native
     /* protected */ def valueChanged(value: String): Unit = js.native

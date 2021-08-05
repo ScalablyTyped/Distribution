@@ -12,23 +12,18 @@ trait MessageEventPayload extends StObject {
 }
 object MessageEventPayload {
   
-  @scala.inline
-  def apply(`type`: Messages): MessageEventPayload = {
+  inline def apply(`type`: Messages): MessageEventPayload = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageEventPayload]
   }
   
-  @scala.inline
-  implicit class MessageEventPayloadMutableBuilder[Self <: MessageEventPayload] (val x: Self) extends AnyVal {
+  extension [Self <: MessageEventPayload](x: Self) {
     
-    @scala.inline
-    def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setType(value: Messages): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Messages): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -53,8 +53,7 @@ trait XTypeDescription
 }
 object XTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     TypeClass: TypeClass,
     acquire: () => Unit,
@@ -67,19 +66,14 @@ object XTypeDescription {
     __obj.asInstanceOf[XTypeDescription]
   }
   
-  @scala.inline
-  implicit class XTypeDescriptionMutableBuilder[Self <: XTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTypeClass(value: () => TypeClass): Self = StObject.set(x, "getTypeClass", js.Any.fromFunction0(value))
+    inline def setGetTypeClass(value: () => TypeClass): Self = StObject.set(x, "getTypeClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeClass(value: TypeClass): Self = StObject.set(x, "TypeClass", value.asInstanceOf[js.Any])
+    inline def setTypeClass(value: TypeClass): Self = StObject.set(x, "TypeClass", value.asInstanceOf[js.Any])
   }
 }

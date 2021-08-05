@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Resize = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Resize]
+  inline def default(): Resize = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Resize]
   
   trait Resize extends StObject {
     
@@ -23,21 +22,17 @@ object mod {
   }
   object Resize {
     
-    @scala.inline
-    def apply(`class`: ResizeClass, constants: RESIZEBEZIER): Resize = {
+    inline def apply(`class`: ResizeClass, constants: RESIZEBEZIER): Resize = {
       val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any])
       __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Resize]
     }
     
-    @scala.inline
-    implicit class ResizeMutableBuilder[Self <: Resize] (val x: Self) extends AnyVal {
+    extension [Self <: Resize](x: Self) {
       
-      @scala.inline
-      def setClass(value: ResizeClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: ResizeClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstants(value: RESIZEBEZIER): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+      inline def setConstants(value: RESIZEBEZIER): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
     }
   }
   

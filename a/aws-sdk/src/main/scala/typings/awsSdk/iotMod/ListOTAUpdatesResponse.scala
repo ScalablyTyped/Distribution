@@ -18,28 +18,21 @@ trait ListOTAUpdatesResponse extends StObject {
 }
 object ListOTAUpdatesResponse {
   
-  @scala.inline
-  def apply(): ListOTAUpdatesResponse = {
+  inline def apply(): ListOTAUpdatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOTAUpdatesResponse]
   }
   
-  @scala.inline
-  implicit class ListOTAUpdatesResponseMutableBuilder[Self <: ListOTAUpdatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListOTAUpdatesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setOtaUpdates(value: OTAUpdatesSummary): Self = StObject.set(x, "otaUpdates", value.asInstanceOf[js.Any])
+    inline def setOtaUpdates(value: OTAUpdatesSummary): Self = StObject.set(x, "otaUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtaUpdatesUndefined: Self = StObject.set(x, "otaUpdates", js.undefined)
+    inline def setOtaUpdatesUndefined: Self = StObject.set(x, "otaUpdates", js.undefined)
     
-    @scala.inline
-    def setOtaUpdatesVarargs(value: OTAUpdateSummary*): Self = StObject.set(x, "otaUpdates", js.Array(value :_*))
+    inline def setOtaUpdatesVarargs(value: OTAUpdateSummary*): Self = StObject.set(x, "otaUpdates", js.Array(value :_*))
   }
 }

@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Crop = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Crop]
+  inline def default(): Crop = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Crop]
   
   trait Crop extends StObject {
     
@@ -21,18 +20,15 @@ object mod {
   }
   object Crop {
     
-    @scala.inline
-    def apply(`class`: CropClass): Crop = {
+    inline def apply(`class`: CropClass): Crop = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Crop]
     }
     
-    @scala.inline
-    implicit class CropMutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
+    extension [Self <: Crop](x: Self) {
       
-      @scala.inline
-      def setClass(value: CropClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: CropClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     }
   }
   

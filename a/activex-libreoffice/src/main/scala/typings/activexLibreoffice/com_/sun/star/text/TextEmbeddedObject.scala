@@ -43,8 +43,7 @@ trait TextEmbeddedObject
 }
 object TextEmbeddedObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorFrame: XTextFrame,
     AnchorPageNo: Double,
@@ -144,16 +143,12 @@ object TextEmbeddedObject {
     __obj.asInstanceOf[TextEmbeddedObject]
   }
   
-  @scala.inline
-  implicit class TextEmbeddedObjectMutableBuilder[Self <: TextEmbeddedObject] (val x: Self) extends AnyVal {
+  extension [Self <: TextEmbeddedObject](x: Self) {
     
-    @scala.inline
-    def setCLSID(value: String): Self = StObject.set(x, "CLSID", value.asInstanceOf[js.Any])
+    inline def setCLSID(value: String): Self = StObject.set(x, "CLSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponent(value: XComponent): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: XComponent): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
   }
 }

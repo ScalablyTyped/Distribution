@@ -50,26 +50,20 @@ object PushNotifications {
   }
   object IPushNotificationChannel {
     
-    @scala.inline
-    def apply(close: () => Unit, expirationTime: Date, onpushnotificationreceived: js.Any, uri: String): IPushNotificationChannel = {
+    inline def apply(close: () => Unit, expirationTime: Date, onpushnotificationreceived: js.Any, uri: String): IPushNotificationChannel = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), expirationTime = expirationTime.asInstanceOf[js.Any], onpushnotificationreceived = onpushnotificationreceived.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPushNotificationChannel]
     }
     
-    @scala.inline
-    implicit class IPushNotificationChannelMutableBuilder[Self <: IPushNotificationChannel] (val x: Self) extends AnyVal {
+    extension [Self <: IPushNotificationChannel](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExpirationTime(value: Date): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+      inline def setExpirationTime(value: Date): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnpushnotificationreceived(value: js.Any): Self = StObject.set(x, "onpushnotificationreceived", value.asInstanceOf[js.Any])
+      inline def setOnpushnotificationreceived(value: js.Any): Self = StObject.set(x, "onpushnotificationreceived", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,8 +92,7 @@ object PushNotifications {
   }
   object IPushNotificationReceivedEventArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       badgeNotification: BadgeNotification,
       cancel: Boolean,
       notificationType: PushNotificationType,
@@ -111,26 +104,19 @@ object PushNotifications {
       __obj.asInstanceOf[IPushNotificationReceivedEventArgs]
     }
     
-    @scala.inline
-    implicit class IPushNotificationReceivedEventArgsMutableBuilder[Self <: IPushNotificationReceivedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IPushNotificationReceivedEventArgs](x: Self) {
       
-      @scala.inline
-      def setBadgeNotification(value: BadgeNotification): Self = StObject.set(x, "badgeNotification", value.asInstanceOf[js.Any])
+      inline def setBadgeNotification(value: BadgeNotification): Self = StObject.set(x, "badgeNotification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationType(value: PushNotificationType): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
+      inline def setNotificationType(value: PushNotificationType): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawNotification(value: RawNotification): Self = StObject.set(x, "rawNotification", value.asInstanceOf[js.Any])
+      inline def setRawNotification(value: RawNotification): Self = StObject.set(x, "rawNotification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileNotification(value: TileNotification): Self = StObject.set(x, "tileNotification", value.asInstanceOf[js.Any])
+      inline def setTileNotification(value: TileNotification): Self = StObject.set(x, "tileNotification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToastNotification(value: ToastNotification): Self = StObject.set(x, "toastNotification", value.asInstanceOf[js.Any])
+      inline def setToastNotification(value: ToastNotification): Self = StObject.set(x, "toastNotification", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,17 +126,14 @@ object PushNotifications {
   }
   object IRawNotification {
     
-    @scala.inline
-    def apply(content: String): IRawNotification = {
+    inline def apply(content: String): IRawNotification = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRawNotification]
     }
     
-    @scala.inline
-    implicit class IRawNotificationMutableBuilder[Self <: IRawNotification] (val x: Self) extends AnyVal {
+    extension [Self <: IRawNotification](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,8 +142,7 @@ object PushNotifications {
        with IPushNotificationChannel
   object PushNotificationChannel {
     
-    @scala.inline
-    def apply(close: () => Unit, expirationTime: Date, onpushnotificationreceived: js.Any, uri: String): PushNotificationChannel = {
+    inline def apply(close: () => Unit, expirationTime: Date, onpushnotificationreceived: js.Any, uri: String): PushNotificationChannel = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), expirationTime = expirationTime.asInstanceOf[js.Any], onpushnotificationreceived = onpushnotificationreceived.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[PushNotificationChannel]
     }
@@ -173,8 +155,7 @@ object PushNotifications {
        with IPushNotificationReceivedEventArgs
   object PushNotificationReceivedEventArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       badgeNotification: BadgeNotification,
       cancel: Boolean,
       notificationType: PushNotificationType,
@@ -192,8 +173,7 @@ object PushNotifications {
        with IRawNotification
   object RawNotification {
     
-    @scala.inline
-    def apply(content: String): RawNotification = {
+    inline def apply(content: String): RawNotification = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[RawNotification]
     }

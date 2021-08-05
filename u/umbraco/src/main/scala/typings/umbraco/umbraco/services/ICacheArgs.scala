@@ -17,28 +17,21 @@ trait ICacheArgs extends StObject {
 }
 object ICacheArgs {
   
-  @scala.inline
-  def apply(cacheKey: String): ICacheArgs = {
+  inline def apply(cacheKey: String): ICacheArgs = {
     val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICacheArgs]
   }
   
-  @scala.inline
-  implicit class ICacheArgsMutableBuilder[Self <: ICacheArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ICacheArgs](x: Self) {
     
-    @scala.inline
-    def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+    inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenOf(value: Double): Self = StObject.set(x, "childrenOf", value.asInstanceOf[js.Any])
+    inline def setChildrenOf(value: Double): Self = StObject.set(x, "childrenOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenOfUndefined: Self = StObject.set(x, "childrenOf", js.undefined)
+    inline def setChildrenOfUndefined: Self = StObject.set(x, "childrenOf", js.undefined)
     
-    @scala.inline
-    def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    inline def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
+    inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
   }
 }

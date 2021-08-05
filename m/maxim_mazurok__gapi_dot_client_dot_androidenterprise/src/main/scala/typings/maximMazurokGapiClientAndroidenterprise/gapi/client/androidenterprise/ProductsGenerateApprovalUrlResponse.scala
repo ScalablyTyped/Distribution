@@ -16,19 +16,15 @@ trait ProductsGenerateApprovalUrlResponse extends StObject {
 }
 object ProductsGenerateApprovalUrlResponse {
   
-  @scala.inline
-  def apply(): ProductsGenerateApprovalUrlResponse = {
+  inline def apply(): ProductsGenerateApprovalUrlResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductsGenerateApprovalUrlResponse]
   }
   
-  @scala.inline
-  implicit class ProductsGenerateApprovalUrlResponseMutableBuilder[Self <: ProductsGenerateApprovalUrlResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ProductsGenerateApprovalUrlResponse](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

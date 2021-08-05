@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MixedContentType extends StObject
 object MixedContentType {
   
-  @scala.inline
-  def blockable: typings.webdriverio.webdriverioStrings.blockable = "blockable".asInstanceOf[typings.webdriverio.webdriverioStrings.blockable]
+  inline def blockable: typings.webdriverio.webdriverioStrings.blockable = "blockable".asInstanceOf[typings.webdriverio.webdriverioStrings.blockable]
   
-  @scala.inline
-  def none: typings.webdriverio.webdriverioStrings.none = "none".asInstanceOf[typings.webdriverio.webdriverioStrings.none]
+  inline def none: typings.webdriverio.webdriverioStrings.none = "none".asInstanceOf[typings.webdriverio.webdriverioStrings.none]
   
-  @scala.inline
-  def `optionally-blockable`: typings.webdriverio.webdriverioStrings.`optionally-blockable` = "optionally-blockable".asInstanceOf[typings.webdriverio.webdriverioStrings.`optionally-blockable`]
+  inline def `optionally-blockable`: typings.webdriverio.webdriverioStrings.`optionally-blockable` = "optionally-blockable".asInstanceOf[typings.webdriverio.webdriverioStrings.`optionally-blockable`]
 }

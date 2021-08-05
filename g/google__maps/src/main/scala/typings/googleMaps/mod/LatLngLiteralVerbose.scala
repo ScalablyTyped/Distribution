@@ -14,19 +14,15 @@ trait LatLngLiteralVerbose
 }
 object LatLngLiteralVerbose {
   
-  @scala.inline
-  def apply(latitude: Double, longitude: Double): LatLngLiteralVerbose = {
+  inline def apply(latitude: Double, longitude: Double): LatLngLiteralVerbose = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[LatLngLiteralVerbose]
   }
   
-  @scala.inline
-  implicit class LatLngLiteralVerboseMutableBuilder[Self <: LatLngLiteralVerbose] (val x: Self) extends AnyVal {
+  extension [Self <: LatLngLiteralVerbose](x: Self) {
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
   }
 }

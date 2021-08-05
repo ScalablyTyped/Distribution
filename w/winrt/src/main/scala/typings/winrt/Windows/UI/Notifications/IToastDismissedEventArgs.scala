@@ -10,16 +10,13 @@ trait IToastDismissedEventArgs extends StObject {
 }
 object IToastDismissedEventArgs {
   
-  @scala.inline
-  def apply(reason: ToastDismissalReason): IToastDismissedEventArgs = {
+  inline def apply(reason: ToastDismissalReason): IToastDismissedEventArgs = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToastDismissedEventArgs]
   }
   
-  @scala.inline
-  implicit class IToastDismissedEventArgsMutableBuilder[Self <: IToastDismissedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IToastDismissedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReason(value: ToastDismissalReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: ToastDismissalReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

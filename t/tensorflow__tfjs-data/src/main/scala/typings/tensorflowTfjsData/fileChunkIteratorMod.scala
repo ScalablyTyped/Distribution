@@ -16,11 +16,11 @@ object fileChunkIteratorMod {
     
     var chunkSize: Double = js.native
     
-    var file: FileElement = js.native
+    /* protected */ var file: FileElement = js.native
     
     var offset: Double = js.native
     
-    var options: FileChunkIteratorOptions = js.native
+    /* protected */ var options: FileChunkIteratorOptions = js.native
   }
   
   trait FileChunkIteratorOptions extends StObject {
@@ -33,26 +33,20 @@ object fileChunkIteratorMod {
   }
   object FileChunkIteratorOptions {
     
-    @scala.inline
-    def apply(): FileChunkIteratorOptions = {
+    inline def apply(): FileChunkIteratorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileChunkIteratorOptions]
     }
     
-    @scala.inline
-    implicit class FileChunkIteratorOptionsMutableBuilder[Self <: FileChunkIteratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FileChunkIteratorOptions](x: Self) {
       
-      @scala.inline
-      def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
 }

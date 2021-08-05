@@ -11,6 +11,5 @@ object installMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(assert: Assert): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(assert.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(assert: Assert): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(assert.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

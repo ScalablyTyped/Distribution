@@ -158,13 +158,10 @@ object mod {
     /* 1 */ val Yield: typings.escodegen.mod.Precedence.Yield & Double = js.native
   }
   
-  @scala.inline
-  def attachComments(ast: js.Any, comments: js.Any, tokens: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComments")(ast.asInstanceOf[js.Any], comments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def attachComments(ast: js.Any, comments: js.Any, tokens: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComments")(ast.asInstanceOf[js.Any], comments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def generate(ast: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def generate(ast: js.Any, options: GenerateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generate(ast: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generate(ast: js.Any, options: GenerateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait FormatOptions extends StObject {
     
@@ -229,92 +226,64 @@ object mod {
   }
   object FormatOptions {
     
-    @scala.inline
-    def apply(): FormatOptions = {
+    inline def apply(): FormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormatOptions]
     }
     
-    @scala.inline
-    implicit class FormatOptionsMutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FormatOptions](x: Self) {
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setEscapeless(value: Boolean): Self = StObject.set(x, "escapeless", value.asInstanceOf[js.Any])
+      inline def setEscapeless(value: Boolean): Self = StObject.set(x, "escapeless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapelessUndefined: Self = StObject.set(x, "escapeless", js.undefined)
+      inline def setEscapelessUndefined: Self = StObject.set(x, "escapeless", js.undefined)
       
-      @scala.inline
-      def setHexadecimal(value: Boolean): Self = StObject.set(x, "hexadecimal", value.asInstanceOf[js.Any])
+      inline def setHexadecimal(value: Boolean): Self = StObject.set(x, "hexadecimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHexadecimalUndefined: Self = StObject.set(x, "hexadecimal", js.undefined)
+      inline def setHexadecimalUndefined: Self = StObject.set(x, "hexadecimal", js.undefined)
       
-      @scala.inline
-      def setIndent(value: IndentOptions): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: IndentOptions): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
+      inline def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewlineUndefined: Self = StObject.set(x, "newline", js.undefined)
+      inline def setNewlineUndefined: Self = StObject.set(x, "newline", js.undefined)
       
-      @scala.inline
-      def setParentheses(value: Boolean): Self = StObject.set(x, "parentheses", value.asInstanceOf[js.Any])
+      inline def setParentheses(value: Boolean): Self = StObject.set(x, "parentheses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParenthesesUndefined: Self = StObject.set(x, "parentheses", js.undefined)
+      inline def setParenthesesUndefined: Self = StObject.set(x, "parentheses", js.undefined)
       
-      @scala.inline
-      def setPreserveBlankLines(value: Boolean): Self = StObject.set(x, "preserveBlankLines", value.asInstanceOf[js.Any])
+      inline def setPreserveBlankLines(value: Boolean): Self = StObject.set(x, "preserveBlankLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveBlankLinesUndefined: Self = StObject.set(x, "preserveBlankLines", js.undefined)
+      inline def setPreserveBlankLinesUndefined: Self = StObject.set(x, "preserveBlankLines", js.undefined)
       
-      @scala.inline
-      def setQuotes(value: String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
+      inline def setQuotes(value: String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
+      inline def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
       
-      @scala.inline
-      def setRenumber(value: Boolean): Self = StObject.set(x, "renumber", value.asInstanceOf[js.Any])
+      inline def setRenumber(value: Boolean): Self = StObject.set(x, "renumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenumberUndefined: Self = StObject.set(x, "renumber", js.undefined)
+      inline def setRenumberUndefined: Self = StObject.set(x, "renumber", js.undefined)
       
-      @scala.inline
-      def setSafeConcatenation(value: Boolean): Self = StObject.set(x, "safeConcatenation", value.asInstanceOf[js.Any])
+      inline def setSafeConcatenation(value: Boolean): Self = StObject.set(x, "safeConcatenation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeConcatenationUndefined: Self = StObject.set(x, "safeConcatenation", js.undefined)
+      inline def setSafeConcatenationUndefined: Self = StObject.set(x, "safeConcatenation", js.undefined)
       
-      @scala.inline
-      def setSemicolons(value: Boolean): Self = StObject.set(x, "semicolons", value.asInstanceOf[js.Any])
+      inline def setSemicolons(value: Boolean): Self = StObject.set(x, "semicolons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSemicolonsUndefined: Self = StObject.set(x, "semicolons", js.undefined)
+      inline def setSemicolonsUndefined: Self = StObject.set(x, "semicolons", js.undefined)
       
-      @scala.inline
-      def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+      inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     }
   }
   
@@ -383,86 +352,60 @@ object mod {
   }
   object GenerateOptions {
     
-    @scala.inline
-    def apply(): GenerateOptions = {
+    inline def apply(): GenerateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateOptions]
     }
     
-    @scala.inline
-    implicit class GenerateOptionsMutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateOptions](x: Self) {
       
-      @scala.inline
-      def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setDirective(value: Boolean): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
+      inline def setDirective(value: Boolean): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectiveUndefined: Self = StObject.set(x, "directive", js.undefined)
+      inline def setDirectiveUndefined: Self = StObject.set(x, "directive", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setFormat(value: FormatOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: FormatOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setMoz(value: MozillaOptions): Self = StObject.set(x, "moz", value.asInstanceOf[js.Any])
+      inline def setMoz(value: MozillaOptions): Self = StObject.set(x, "moz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMozUndefined: Self = StObject.set(x, "moz", js.undefined)
+      inline def setMozUndefined: Self = StObject.set(x, "moz", js.undefined)
       
-      @scala.inline
-      def setParse(value: js.Function): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: js.Function): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
-      @scala.inline
-      def setSourceCode(value: String): Self = StObject.set(x, "sourceCode", value.asInstanceOf[js.Any])
+      inline def setSourceCode(value: String): Self = StObject.set(x, "sourceCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeUndefined: Self = StObject.set(x, "sourceCode", js.undefined)
+      inline def setSourceCodeUndefined: Self = StObject.set(x, "sourceCode", js.undefined)
       
-      @scala.inline
-      def setSourceContent(value: String): Self = StObject.set(x, "sourceContent", value.asInstanceOf[js.Any])
+      inline def setSourceContent(value: String): Self = StObject.set(x, "sourceContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceContentUndefined: Self = StObject.set(x, "sourceContent", js.undefined)
+      inline def setSourceContentUndefined: Self = StObject.set(x, "sourceContent", js.undefined)
       
-      @scala.inline
-      def setSourceMap(value: String): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: String): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapRoot(value: String): Self = StObject.set(x, "sourceMapRoot", value.asInstanceOf[js.Any])
+      inline def setSourceMapRoot(value: String): Self = StObject.set(x, "sourceMapRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapRootUndefined: Self = StObject.set(x, "sourceMapRoot", js.undefined)
+      inline def setSourceMapRootUndefined: Self = StObject.set(x, "sourceMapRoot", js.undefined)
       
-      @scala.inline
-      def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       
-      @scala.inline
-      def setSourceMapWithCode(value: Boolean): Self = StObject.set(x, "sourceMapWithCode", value.asInstanceOf[js.Any])
+      inline def setSourceMapWithCode(value: Boolean): Self = StObject.set(x, "sourceMapWithCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapWithCodeUndefined: Self = StObject.set(x, "sourceMapWithCode", js.undefined)
+      inline def setSourceMapWithCodeUndefined: Self = StObject.set(x, "sourceMapWithCode", js.undefined)
       
-      @scala.inline
-      def setVerbatim(value: String): Self = StObject.set(x, "verbatim", value.asInstanceOf[js.Any])
+      inline def setVerbatim(value: String): Self = StObject.set(x, "verbatim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbatimUndefined: Self = StObject.set(x, "verbatim", js.undefined)
+      inline def setVerbatimUndefined: Self = StObject.set(x, "verbatim", js.undefined)
     }
   }
   
@@ -485,32 +428,24 @@ object mod {
   }
   object IndentOptions {
     
-    @scala.inline
-    def apply(): IndentOptions = {
+    inline def apply(): IndentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IndentOptions]
     }
     
-    @scala.inline
-    implicit class IndentOptionsMutableBuilder[Self <: IndentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IndentOptions](x: Self) {
       
-      @scala.inline
-      def setAdjustMultilineComment(value: Boolean): Self = StObject.set(x, "adjustMultilineComment", value.asInstanceOf[js.Any])
+      inline def setAdjustMultilineComment(value: Boolean): Self = StObject.set(x, "adjustMultilineComment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjustMultilineCommentUndefined: Self = StObject.set(x, "adjustMultilineComment", js.undefined)
+      inline def setAdjustMultilineCommentUndefined: Self = StObject.set(x, "adjustMultilineComment", js.undefined)
       
-      @scala.inline
-      def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -533,32 +468,24 @@ object mod {
   }
   object MozillaOptions {
     
-    @scala.inline
-    def apply(): MozillaOptions = {
+    inline def apply(): MozillaOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MozillaOptions]
     }
     
-    @scala.inline
-    implicit class MozillaOptionsMutableBuilder[Self <: MozillaOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MozillaOptions](x: Self) {
       
-      @scala.inline
-      def setComprehensionExpressionStartsWithAssignment(value: Boolean): Self = StObject.set(x, "comprehensionExpressionStartsWithAssignment", value.asInstanceOf[js.Any])
+      inline def setComprehensionExpressionStartsWithAssignment(value: Boolean): Self = StObject.set(x, "comprehensionExpressionStartsWithAssignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComprehensionExpressionStartsWithAssignmentUndefined: Self = StObject.set(x, "comprehensionExpressionStartsWithAssignment", js.undefined)
+      inline def setComprehensionExpressionStartsWithAssignmentUndefined: Self = StObject.set(x, "comprehensionExpressionStartsWithAssignment", js.undefined)
       
-      @scala.inline
-      def setParenthesizedComprehensionBlock(value: Boolean): Self = StObject.set(x, "parenthesizedComprehensionBlock", value.asInstanceOf[js.Any])
+      inline def setParenthesizedComprehensionBlock(value: Boolean): Self = StObject.set(x, "parenthesizedComprehensionBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParenthesizedComprehensionBlockUndefined: Self = StObject.set(x, "parenthesizedComprehensionBlock", js.undefined)
+      inline def setParenthesizedComprehensionBlockUndefined: Self = StObject.set(x, "parenthesizedComprehensionBlock", js.undefined)
       
-      @scala.inline
-      def setStarlessGenerator(value: Boolean): Self = StObject.set(x, "starlessGenerator", value.asInstanceOf[js.Any])
+      inline def setStarlessGenerator(value: Boolean): Self = StObject.set(x, "starlessGenerator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarlessGeneratorUndefined: Self = StObject.set(x, "starlessGenerator", js.undefined)
+      inline def setStarlessGeneratorUndefined: Self = StObject.set(x, "starlessGenerator", js.undefined)
     }
   }
 }

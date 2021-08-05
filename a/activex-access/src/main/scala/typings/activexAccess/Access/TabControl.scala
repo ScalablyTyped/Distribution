@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TabControl extends StObject {
   
-  @JSName("Access.TabControl_typekey")
+  /* private */ @JSName("Access.TabControl_typekey")
   var AccessDotTabControl_typekey: TabControl = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native

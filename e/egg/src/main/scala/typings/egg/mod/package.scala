@@ -5,13 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def start(): js.Promise[typings.egg.mod.Application] = typings.egg.mod.^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Promise[typings.egg.mod.Application]]
-@scala.inline
-def start(options: typings.egg.mod.StartOptions): js.Promise[typings.egg.mod.Application] = typings.egg.mod.^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.egg.mod.Application]]
+inline def start(): js.Promise[typings.egg.mod.Application] = typings.egg.mod.^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Promise[typings.egg.mod.Application]]
+inline def start(options: typings.egg.mod.StartOptions): js.Promise[typings.egg.mod.Application] = typings.egg.mod.^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.egg.mod.Application]]
 
-@scala.inline
-def startCluster(options: typings.egg.mod.ClusterOptions, callback: js.Function1[/* repeated */ js.Any, js.Any]): scala.Unit = (typings.egg.mod.^.asInstanceOf[js.Dynamic].applyDynamic("startCluster")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def startCluster(options: typings.egg.mod.ClusterOptions, callback: js.Function1[/* repeated */ js.Any, js.Any]): scala.Unit = (typings.egg.mod.^.asInstanceOf[js.Dynamic].applyDynamic("startCluster")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
 type EggContextHttpClient = typings.urllib.mod.HttpClient[typings.urllib.mod.RequestOptions2]
 

@@ -14,25 +14,19 @@ trait IntegerMean extends StObject {
 }
 object IntegerMean {
   
-  @scala.inline
-  def apply(): IntegerMean = {
+  inline def apply(): IntegerMean = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntegerMean]
   }
   
-  @scala.inline
-  implicit class IntegerMeanMutableBuilder[Self <: IntegerMean] (val x: Self) extends AnyVal {
+  extension [Self <: IntegerMean](x: Self) {
     
-    @scala.inline
-    def setCount(value: SplitInt64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: SplitInt64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setSum(value: SplitInt64): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: SplitInt64): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
+    inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
   }
 }

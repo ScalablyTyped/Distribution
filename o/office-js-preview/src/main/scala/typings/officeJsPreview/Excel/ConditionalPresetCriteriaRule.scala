@@ -49,19 +49,16 @@ trait ConditionalPresetCriteriaRule extends StObject {
 }
 object ConditionalPresetCriteriaRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     criterion: ConditionalFormatPresetCriterion | Invalid | Blanks | NonBlanks | Errors | NonErrors | Yesterday | Today | Tomorrow | LastSevenDays | LastWeek | ThisWeek | NextWeek | LastMonth | ThisMonth | NextMonth | AboveAverage | BelowAverage | EqualOrAboveAverage | EqualOrBelowAverage | OneStdDevAboveAverage | OneStdDevBelowAverage | TwoStdDevAboveAverage | TwoStdDevBelowAverage | ThreeStdDevAboveAverage | ThreeStdDevBelowAverage | UniqueValues | DuplicateValues
   ): ConditionalPresetCriteriaRule = {
     val __obj = js.Dynamic.literal(criterion = criterion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalPresetCriteriaRule]
   }
   
-  @scala.inline
-  implicit class ConditionalPresetCriteriaRuleMutableBuilder[Self <: ConditionalPresetCriteriaRule] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalPresetCriteriaRule](x: Self) {
     
-    @scala.inline
-    def setCriterion(
+    inline def setCriterion(
       value: ConditionalFormatPresetCriterion | Invalid | Blanks | NonBlanks | Errors | NonErrors | Yesterday | Today | Tomorrow | LastSevenDays | LastWeek | ThisWeek | NextWeek | LastMonth | ThisMonth | NextMonth | AboveAverage | BelowAverage | EqualOrAboveAverage | EqualOrBelowAverage | OneStdDevAboveAverage | OneStdDevBelowAverage | TwoStdDevAboveAverage | TwoStdDevBelowAverage | ThreeStdDevAboveAverage | ThreeStdDevBelowAverage | UniqueValues | DuplicateValues
     ): Self = StObject.set(x, "criterion", value.asInstanceOf[js.Any])
   }

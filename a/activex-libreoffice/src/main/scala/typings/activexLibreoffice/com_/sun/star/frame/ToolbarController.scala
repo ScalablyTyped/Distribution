@@ -28,8 +28,7 @@ trait ToolbarController
      with XSubToolbarController
 object ToolbarController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SubToolbarName: String,
     acquire: () => Unit,
     click: () => Unit,

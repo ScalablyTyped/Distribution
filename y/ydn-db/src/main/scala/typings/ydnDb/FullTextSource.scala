@@ -14,25 +14,19 @@ trait FullTextSource extends StObject {
 }
 object FullTextSource {
   
-  @scala.inline
-  def apply(keyPath: String, storeName: String): FullTextSource = {
+  inline def apply(keyPath: String, storeName: String): FullTextSource = {
     val __obj = js.Dynamic.literal(keyPath = keyPath.asInstanceOf[js.Any], storeName = storeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullTextSource]
   }
   
-  @scala.inline
-  implicit class FullTextSourceMutableBuilder[Self <: FullTextSource] (val x: Self) extends AnyVal {
+  extension [Self <: FullTextSource](x: Self) {
     
-    @scala.inline
-    def setKeyPath(value: String): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
+    inline def setKeyPath(value: String): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
+    inline def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

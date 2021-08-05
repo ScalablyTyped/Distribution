@@ -28,37 +28,27 @@ trait AdvancedSecurityOptionsInput extends StObject {
 }
 object AdvancedSecurityOptionsInput {
   
-  @scala.inline
-  def apply(): AdvancedSecurityOptionsInput = {
+  inline def apply(): AdvancedSecurityOptionsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdvancedSecurityOptionsInput]
   }
   
-  @scala.inline
-  implicit class AdvancedSecurityOptionsInputMutableBuilder[Self <: AdvancedSecurityOptionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: AdvancedSecurityOptionsInput](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setInternalUserDatabaseEnabled(value: Boolean): Self = StObject.set(x, "InternalUserDatabaseEnabled", value.asInstanceOf[js.Any])
+    inline def setInternalUserDatabaseEnabled(value: Boolean): Self = StObject.set(x, "InternalUserDatabaseEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalUserDatabaseEnabledUndefined: Self = StObject.set(x, "InternalUserDatabaseEnabled", js.undefined)
+    inline def setInternalUserDatabaseEnabledUndefined: Self = StObject.set(x, "InternalUserDatabaseEnabled", js.undefined)
     
-    @scala.inline
-    def setMasterUserOptions(value: MasterUserOptions): Self = StObject.set(x, "MasterUserOptions", value.asInstanceOf[js.Any])
+    inline def setMasterUserOptions(value: MasterUserOptions): Self = StObject.set(x, "MasterUserOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUserOptionsUndefined: Self = StObject.set(x, "MasterUserOptions", js.undefined)
+    inline def setMasterUserOptionsUndefined: Self = StObject.set(x, "MasterUserOptions", js.undefined)
     
-    @scala.inline
-    def setSAMLOptions(value: SAMLOptionsInput): Self = StObject.set(x, "SAMLOptions", value.asInstanceOf[js.Any])
+    inline def setSAMLOptions(value: SAMLOptionsInput): Self = StObject.set(x, "SAMLOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSAMLOptionsUndefined: Self = StObject.set(x, "SAMLOptions", js.undefined)
+    inline def setSAMLOptionsUndefined: Self = StObject.set(x, "SAMLOptions", js.undefined)
   }
 }

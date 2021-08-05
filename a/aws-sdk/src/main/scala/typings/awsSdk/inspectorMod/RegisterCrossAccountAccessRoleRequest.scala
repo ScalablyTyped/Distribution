@@ -13,16 +13,13 @@ trait RegisterCrossAccountAccessRoleRequest extends StObject {
 }
 object RegisterCrossAccountAccessRoleRequest {
   
-  @scala.inline
-  def apply(roleArn: Arn): RegisterCrossAccountAccessRoleRequest = {
+  inline def apply(roleArn: Arn): RegisterCrossAccountAccessRoleRequest = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterCrossAccountAccessRoleRequest]
   }
   
-  @scala.inline
-  implicit class RegisterCrossAccountAccessRoleRequestMutableBuilder[Self <: RegisterCrossAccountAccessRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterCrossAccountAccessRoleRequest](x: Self) {
     
-    @scala.inline
-    def setRoleArn(value: Arn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Arn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

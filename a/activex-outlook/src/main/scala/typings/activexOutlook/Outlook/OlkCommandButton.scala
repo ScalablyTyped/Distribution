@@ -24,7 +24,7 @@ trait OlkCommandButton extends StObject {
   
   var MousePointer: OlMousePointer
   
-  @JSName("Outlook.OlkCommandButton_typekey")
+  /* private */ @JSName("Outlook.OlkCommandButton_typekey")
   var OutlookDotOlkCommandButton_typekey: OlkCommandButton
   
   var Picture: StdPicture
@@ -37,8 +37,7 @@ trait OlkCommandButton extends StObject {
 }
 object OlkCommandButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Accelerator: String,
     AutoSize: Boolean,
     Caption: String,
@@ -58,46 +57,32 @@ object OlkCommandButton {
     __obj.asInstanceOf[OlkCommandButton]
   }
   
-  @scala.inline
-  implicit class OlkCommandButtonMutableBuilder[Self <: OlkCommandButton] (val x: Self) extends AnyVal {
+  extension [Self <: OlkCommandButton](x: Self) {
     
-    @scala.inline
-    def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
+    inline def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
+    inline def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayDropArrow(value: Boolean): Self = StObject.set(x, "DisplayDropArrow", value.asInstanceOf[js.Any])
+    inline def setDisplayDropArrow(value: Boolean): Self = StObject.set(x, "DisplayDropArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: StdFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: StdFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
+    inline def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
+    inline def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotOlkCommandButton_typekey(value: OlkCommandButton): Self = StObject.set(x, "Outlook.OlkCommandButton_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotOlkCommandButton_typekey(value: OlkCommandButton): Self = StObject.set(x, "Outlook.OlkCommandButton_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicture(value: StdPicture): Self = StObject.set(x, "Picture", value.asInstanceOf[js.Any])
+    inline def setPicture(value: StdPicture): Self = StObject.set(x, "Picture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictureAlignment(value: OlPictureAlignment): Self = StObject.set(x, "PictureAlignment", value.asInstanceOf[js.Any])
+    inline def setPictureAlignment(value: OlPictureAlignment): Self = StObject.set(x, "PictureAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlign(value: OlTextAlign): Self = StObject.set(x, "TextAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: OlTextAlign): Self = StObject.set(x, "TextAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordWrap(value: Boolean): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
+    inline def setWordWrap(value: Boolean): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
   }
 }

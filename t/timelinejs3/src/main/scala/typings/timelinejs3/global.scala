@@ -29,7 +29,6 @@ object global {
     @JSGlobal("TL.Timeline")
     @js.native
     def Timeline: ITimeline = js.native
-    @scala.inline
-    def Timeline_=(x: ITimeline): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Timeline")(x.asInstanceOf[js.Any])
+    inline def Timeline_=(x: ITimeline): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Timeline")(x.asInstanceOf[js.Any])
   }
 }

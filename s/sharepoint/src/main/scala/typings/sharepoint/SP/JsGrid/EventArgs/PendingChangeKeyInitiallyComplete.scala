@@ -14,16 +14,13 @@ trait PendingChangeKeyInitiallyComplete
 }
 object PendingChangeKeyInitiallyComplete {
   
-  @scala.inline
-  def apply(changeKey: IChangeKey): PendingChangeKeyInitiallyComplete = {
+  inline def apply(changeKey: IChangeKey): PendingChangeKeyInitiallyComplete = {
     val __obj = js.Dynamic.literal(changeKey = changeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PendingChangeKeyInitiallyComplete]
   }
   
-  @scala.inline
-  implicit class PendingChangeKeyInitiallyCompleteMutableBuilder[Self <: PendingChangeKeyInitiallyComplete] (val x: Self) extends AnyVal {
+  extension [Self <: PendingChangeKeyInitiallyComplete](x: Self) {
     
-    @scala.inline
-    def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
+    inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
   }
 }

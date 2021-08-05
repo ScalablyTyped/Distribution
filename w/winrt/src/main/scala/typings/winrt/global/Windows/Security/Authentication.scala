@@ -158,20 +158,14 @@ object Authentication {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def authenticateAndContinue(requestUri: Uri): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAndContinue")(requestUri.asInstanceOf[js.Any]).asInstanceOf[Unit]
-      @scala.inline
-      def authenticateAndContinue(requestUri: Uri, callbackUri: Uri): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAndContinue")(requestUri.asInstanceOf[js.Any], callbackUri.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def authenticateAndContinue(requestUri: Uri, callbackUri: Uri, continuationData: ValueSet, options: WebAuthenticationOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAndContinue")(requestUri.asInstanceOf[js.Any], callbackUri.asInstanceOf[js.Any], continuationData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def authenticateAndContinue(requestUri: Uri): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAndContinue")(requestUri.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def authenticateAndContinue(requestUri: Uri, callbackUri: Uri): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAndContinue")(requestUri.asInstanceOf[js.Any], callbackUri.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def authenticateAndContinue(requestUri: Uri, callbackUri: Uri, continuationData: ValueSet, options: WebAuthenticationOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAndContinue")(requestUri.asInstanceOf[js.Any], callbackUri.asInstanceOf[js.Any], continuationData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @scala.inline
-      def authenticateAsync(options: WebAuthenticationOptions, requestUri: Uri): IAsyncOperation[typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsync")(options.asInstanceOf[js.Any], requestUri.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationResult]]
-      @scala.inline
-      def authenticateAsync(options: WebAuthenticationOptions, requestUri: Uri, callbackUri: Uri): IAsyncOperation[typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsync")(options.asInstanceOf[js.Any], requestUri.asInstanceOf[js.Any], callbackUri.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationResult]]
+      inline def authenticateAsync(options: WebAuthenticationOptions, requestUri: Uri): IAsyncOperation[typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsync")(options.asInstanceOf[js.Any], requestUri.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationResult]]
+      inline def authenticateAsync(options: WebAuthenticationOptions, requestUri: Uri, callbackUri: Uri): IAsyncOperation[typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsync")(options.asInstanceOf[js.Any], requestUri.asInstanceOf[js.Any], callbackUri.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationResult]]
       
-      @scala.inline
-      def getCurrentApplicationCallbackUri(): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentApplicationCallbackUri")().asInstanceOf[Uri]
+      inline def getCurrentApplicationCallbackUri(): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentApplicationCallbackUri")().asInstanceOf[Uri]
     }
     
     @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationOptions")

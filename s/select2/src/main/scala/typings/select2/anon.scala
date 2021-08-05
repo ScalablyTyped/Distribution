@@ -16,17 +16,14 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: IdTextPair): Data = {
+    inline def apply(data: IdTextPair): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: IdTextPair): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: IdTextPair): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,17 +33,14 @@ object anon {
   }
   object More {
     
-    @scala.inline
-    def apply(more: Boolean): More = {
+    inline def apply(more: Boolean): More = {
       val __obj = js.Dynamic.literal(more = more.asInstanceOf[js.Any])
       __obj.asInstanceOf[More]
     }
     
-    @scala.inline
-    implicit class MoreMutableBuilder[Self <: More] (val x: Self) extends AnyVal {
+    extension [Self <: More](x: Self) {
       
-      @scala.inline
-      def setMore(value: Boolean): Self = StObject.set(x, "more", value.asInstanceOf[js.Any])
+      inline def setMore(value: Boolean): Self = StObject.set(x, "more", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,17 +50,14 @@ object anon {
   }
   object Options {
     
-    @scala.inline
-    def apply(options: typings.select2.mod.Options[DataFormat | GroupedDataFormat, js.Any]): Options = {
+    inline def apply(options: typings.select2.mod.Options[DataFormat | GroupedDataFormat, js.Any]): Options = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOptions(value: typings.select2.mod.Options[DataFormat | GroupedDataFormat, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.select2.mod.Options[DataFormat | GroupedDataFormat, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,17 +76,14 @@ object anon {
   }
   object Require {
     
-    @scala.inline
-    def apply(require: Select2Require): Require = {
+    inline def apply(require: Select2Require): Require = {
       val __obj = js.Dynamic.literal(require = require.asInstanceOf[js.Any])
       __obj.asInstanceOf[Require]
     }
     
-    @scala.inline
-    implicit class RequireMutableBuilder[Self <: Require] (val x: Self) extends AnyVal {
+    extension [Self <: Require](x: Self) {
       
-      @scala.inline
-      def setRequire(value: Select2Require): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+      inline def setRequire(value: Select2Require): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,20 +95,16 @@ object anon {
   }
   object Reset {
     
-    @scala.inline
-    def apply(reset: () => Unit, set: (String, js.Any) => Unit): Reset = {
+    inline def apply(reset: () => Unit, set: (String, js.Any) => Unit): Reset = {
       val __obj = js.Dynamic.literal(reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Reset]
     }
     
-    @scala.inline
-    implicit class ResetMutableBuilder[Self <: Reset] (val x: Self) extends AnyVal {
+    extension [Self <: Reset](x: Self) {
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
 }

@@ -17,8 +17,7 @@ trait Altitude extends StObject {
 }
 object Altitude {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     altitude: js.Array[AltitudeKeys],
     latitude: js.Array[LatitudeKeys],
     longitude: js.Array[LongitudeKeys]
@@ -27,25 +26,18 @@ object Altitude {
     __obj.asInstanceOf[Altitude]
   }
   
-  @scala.inline
-  implicit class AltitudeMutableBuilder[Self <: Altitude] (val x: Self) extends AnyVal {
+  extension [Self <: Altitude](x: Self) {
     
-    @scala.inline
-    def setAltitude(value: js.Array[AltitudeKeys]): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: js.Array[AltitudeKeys]): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeVarargs(value: AltitudeKeys*): Self = StObject.set(x, "altitude", js.Array(value :_*))
+    inline def setAltitudeVarargs(value: AltitudeKeys*): Self = StObject.set(x, "altitude", js.Array(value :_*))
     
-    @scala.inline
-    def setLatitude(value: js.Array[LatitudeKeys]): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: js.Array[LatitudeKeys]): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitudeVarargs(value: LatitudeKeys*): Self = StObject.set(x, "latitude", js.Array(value :_*))
+    inline def setLatitudeVarargs(value: LatitudeKeys*): Self = StObject.set(x, "latitude", js.Array(value :_*))
     
-    @scala.inline
-    def setLongitude(value: js.Array[LongitudeKeys]): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: js.Array[LongitudeKeys]): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitudeVarargs(value: LongitudeKeys*): Self = StObject.set(x, "longitude", js.Array(value :_*))
+    inline def setLongitudeVarargs(value: LongitudeKeys*): Self = StObject.set(x, "longitude", js.Array(value :_*))
   }
 }

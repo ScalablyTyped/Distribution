@@ -13,22 +13,17 @@ trait Conflicts extends StObject {
 }
 object Conflicts {
   
-  @scala.inline
-  def apply(conflicts: js.Array[Conflict], params: js.Any): Conflicts = {
+  inline def apply(conflicts: js.Array[Conflict], params: js.Any): Conflicts = {
     val __obj = js.Dynamic.literal(conflicts = conflicts.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Conflicts]
   }
   
-  @scala.inline
-  implicit class ConflictsMutableBuilder[Self <: Conflicts] (val x: Self) extends AnyVal {
+  extension [Self <: Conflicts](x: Self) {
     
-    @scala.inline
-    def setConflicts(value: js.Array[Conflict]): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
+    inline def setConflicts(value: js.Array[Conflict]): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictsVarargs(value: Conflict*): Self = StObject.set(x, "conflicts", js.Array(value :_*))
+    inline def setConflictsVarargs(value: Conflict*): Self = StObject.set(x, "conflicts", js.Array(value :_*))
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

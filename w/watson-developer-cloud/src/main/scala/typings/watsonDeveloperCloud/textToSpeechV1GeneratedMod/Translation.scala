@@ -15,22 +15,17 @@ trait Translation extends StObject {
 }
 object Translation {
   
-  @scala.inline
-  def apply(translation: String): Translation = {
+  inline def apply(translation: String): Translation = {
     val __obj = js.Dynamic.literal(translation = translation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Translation]
   }
   
-  @scala.inline
-  implicit class TranslationMutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
+  extension [Self <: Translation](x: Self) {
     
-    @scala.inline
-    def setPart_of_speech(value: String): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
+    inline def setPart_of_speech(value: String): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPart_of_speechUndefined: Self = StObject.set(x, "part_of_speech", js.undefined)
+    inline def setPart_of_speechUndefined: Self = StObject.set(x, "part_of_speech", js.undefined)
     
-    @scala.inline
-    def setTranslation(value: String): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
+    inline def setTranslation(value: String): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
   }
 }

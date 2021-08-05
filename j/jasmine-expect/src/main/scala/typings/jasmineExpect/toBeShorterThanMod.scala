@@ -22,17 +22,14 @@ object toBeShorterThanMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](toBeShorterThan: (/* other */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
+        inline def apply[T](toBeShorterThan: (/* other */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
           val __obj = js.Dynamic.literal(toBeShorterThan = js.Any.fromFunction2(toBeShorterThan))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToBeShorterThan(value: (/* other */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toBeShorterThan", js.Any.fromFunction2(value))
+          inline def setToBeShorterThan(value: (/* other */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toBeShorterThan", js.Any.fromFunction2(value))
         }
       }
     }

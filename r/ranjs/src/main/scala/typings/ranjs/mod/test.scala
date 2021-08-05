@@ -12,9 +12,7 @@ object test {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bartlett(dataSets: js.Array[js.Array[Double]], alpha: Double): Chi2 = (^.asInstanceOf[js.Dynamic].applyDynamic("bartlett")(dataSets.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Chi2]
+  inline def bartlett(dataSets: js.Array[js.Array[Double]], alpha: Double): Chi2 = (^.asInstanceOf[js.Dynamic].applyDynamic("bartlett")(dataSets.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Chi2]
   
-  @scala.inline
-  def mannWhitney(dataSets: js.Array[js.Array[Double]], alpha: Double): Passed = (^.asInstanceOf[js.Dynamic].applyDynamic("mannWhitney")(dataSets.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Passed]
+  inline def mannWhitney(dataSets: js.Array[js.Array[Double]], alpha: Double): Passed = (^.asInstanceOf[js.Dynamic].applyDynamic("mannWhitney")(dataSets.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Passed]
 }

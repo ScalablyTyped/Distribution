@@ -20,25 +20,20 @@ object makeRequestCallbackMod {
   }
   object MakeRequestCallbackOptions {
     
-    @scala.inline
-    def apply(request: String | Request): MakeRequestCallbackOptions = {
+    inline def apply(request: String | Request): MakeRequestCallbackOptions = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[MakeRequestCallbackOptions]
     }
     
-    @scala.inline
-    implicit class MakeRequestCallbackOptionsMutableBuilder[Self <: MakeRequestCallbackOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MakeRequestCallbackOptions](x: Self) {
       
-      @scala.inline
-      def setEvent(
+      inline def setEvent(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
       ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      @scala.inline
-      def setRequest(value: String | Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: String | Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
 }

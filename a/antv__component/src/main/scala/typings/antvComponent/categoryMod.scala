@@ -81,31 +81,31 @@ object categoryMod {
     extends typings.antvComponent.legendBaseMod.default[CategoryLegendCfg]
        with IList {
     
-    var adjustNavigation: js.Any = js.native
+    /* private */ var adjustNavigation: js.Any = js.native
     
-    var applyItemStates: js.Any = js.native
+    /* private */ var applyItemStates: js.Any = js.native
     
-    var currentPageIndex: js.Any = js.native
+    /* private */ var currentPageIndex: js.Any = js.native
     
-    var drawArrow: js.Any = js.native
+    /* private */ var drawArrow: js.Any = js.native
     
-    var drawItem: js.Any = js.native
+    /* private */ var drawItem: js.Any = js.native
     
-    var drawItemText: js.Any = js.native
+    /* private */ var drawItemText: js.Any = js.native
     
-    var drawItems: js.Any = js.native
+    /* private */ var drawItems: js.Any = js.native
     
-    var drawMarker: js.Any = js.native
+    /* private */ var drawMarker: js.Any = js.native
     
-    var drawNavigation: js.Any = js.native
+    /* private */ var drawNavigation: js.Any = js.native
     
-    var getCurrentNavigationMatrix: js.Any = js.native
+    /* private */ var getCurrentNavigationMatrix: js.Any = js.native
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def getEvents(): (Record[String, js.Array[EventType]]) & js.Any = js.native
     
-    var getItemHeight: js.Any = js.native
+    /* private */ var getItemHeight: js.Any = js.native
     
     def getItemStates(item: ListItem): js.Array[String] = js.native
     
@@ -116,7 +116,7 @@ object categoryMod {
       */
     def getItemsByState(state: String): js.Array[ListItem] = js.native
     
-    var getLimitItemWidth: js.Any = js.native
+    /* private */ var getLimitItemWidth: js.Any = js.native
     
     /**
       * 取消监听一个事件，或者一个channel
@@ -143,22 +143,22 @@ object categoryMod {
     /* InferMemberOverrides */
     override def on(evt: String, callback: js.Function): this.type & js.Any = js.native
     
-    var onNavigationAfter: js.Any = js.native
+    /* private */ var onNavigationAfter: js.Any = js.native
     
-    var onNavigationBack: js.Any = js.native
+    /* private */ var onNavigationBack: js.Any = js.native
     
-    var pageHeight: js.Any = js.native
+    /* private */ var pageHeight: js.Any = js.native
     
-    var pageWidth: js.Any = js.native
+    /* private */ var pageWidth: js.Any = js.native
     
-    var processItems: js.Any = js.native
+    /* private */ var processItems: js.Any = js.native
     
-    var startX: js.Any = js.native
+    /* private */ var startX: js.Any = js.native
     
-    var startY: js.Any = js.native
+    /* private */ var startY: js.Any = js.native
     
-    var totalPagesCnt: js.Any = js.native
+    /* private */ var totalPagesCnt: js.Any = js.native
     
-    var updateNavigation: js.Any = js.native
+    /* private */ var updateNavigation: js.Any = js.native
   }
 }

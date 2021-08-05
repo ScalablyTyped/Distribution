@@ -19,23 +19,18 @@ trait ImportSpecifier_
 }
 object ImportSpecifier_ {
   
-  @scala.inline
-  def apply(end: Double, imported: Identifier_, loc: SourceLocation, local: Identifier_, start: Double): ImportSpecifier_ = {
+  inline def apply(end: Double, imported: Identifier_, loc: SourceLocation, local: Identifier_, start: Double): ImportSpecifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], imported = imported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ImportSpecifier")
     __obj.asInstanceOf[ImportSpecifier_]
   }
   
-  @scala.inline
-  implicit class ImportSpecifier_MutableBuilder[Self <: ImportSpecifier_] (val x: Self) extends AnyVal {
+  extension [Self <: ImportSpecifier_](x: Self) {
     
-    @scala.inline
-    def setImported(value: Identifier_): Self = StObject.set(x, "imported", value.asInstanceOf[js.Any])
+    inline def setImported(value: Identifier_): Self = StObject.set(x, "imported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocal(value: Identifier_): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Identifier_): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ImportSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ImportSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

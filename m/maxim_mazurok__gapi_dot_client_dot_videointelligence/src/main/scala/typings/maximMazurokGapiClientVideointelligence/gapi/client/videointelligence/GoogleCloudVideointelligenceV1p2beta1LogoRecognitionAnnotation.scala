@@ -17,37 +17,27 @@ trait GoogleCloudVideointelligenceV1p2beta1LogoRecognitionAnnotation extends StO
 }
 object GoogleCloudVideointelligenceV1p2beta1LogoRecognitionAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1p2beta1LogoRecognitionAnnotation = {
+  inline def apply(): GoogleCloudVideointelligenceV1p2beta1LogoRecognitionAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1p2beta1LogoRecognitionAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1p2beta1LogoRecognitionAnnotationMutableBuilder[Self <: GoogleCloudVideointelligenceV1p2beta1LogoRecognitionAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1p2beta1LogoRecognitionAnnotation](x: Self) {
     
-    @scala.inline
-    def setEntity(value: GoogleCloudVideointelligenceV1p2beta1Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: GoogleCloudVideointelligenceV1p2beta1Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
-    @scala.inline
-    def setSegments(value: js.Array[GoogleCloudVideointelligenceV1p2beta1VideoSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[GoogleCloudVideointelligenceV1p2beta1VideoSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    @scala.inline
-    def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1p2beta1VideoSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1p2beta1VideoSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
-    @scala.inline
-    def setTracks(value: js.Array[GoogleCloudVideointelligenceV1p2beta1Track]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: js.Array[GoogleCloudVideointelligenceV1p2beta1Track]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
+    inline def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
-    @scala.inline
-    def setTracksVarargs(value: GoogleCloudVideointelligenceV1p2beta1Track*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: GoogleCloudVideointelligenceV1p2beta1Track*): Self = StObject.set(x, "tracks", js.Array(value :_*))
   }
 }

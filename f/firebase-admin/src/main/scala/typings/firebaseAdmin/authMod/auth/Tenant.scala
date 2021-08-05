@@ -60,43 +60,31 @@ trait Tenant extends StObject {
 }
 object Tenant {
   
-  @scala.inline
-  def apply(tenantId: String, toJSON: () => js.Object): Tenant = {
+  inline def apply(tenantId: String, toJSON: () => js.Object): Tenant = {
     val __obj = js.Dynamic.literal(tenantId = tenantId.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[Tenant]
   }
   
-  @scala.inline
-  implicit class TenantMutableBuilder[Self <: Tenant] (val x: Self) extends AnyVal {
+  extension [Self <: Tenant](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEmailSignInConfig(value: Enabled): Self = StObject.set(x, "emailSignInConfig", value.asInstanceOf[js.Any])
+    inline def setEmailSignInConfig(value: Enabled): Self = StObject.set(x, "emailSignInConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailSignInConfigUndefined: Self = StObject.set(x, "emailSignInConfig", js.undefined)
+    inline def setEmailSignInConfigUndefined: Self = StObject.set(x, "emailSignInConfig", js.undefined)
     
-    @scala.inline
-    def setMultiFactorConfig(value: MultiFactorConfig): Self = StObject.set(x, "multiFactorConfig", value.asInstanceOf[js.Any])
+    inline def setMultiFactorConfig(value: MultiFactorConfig): Self = StObject.set(x, "multiFactorConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiFactorConfigUndefined: Self = StObject.set(x, "multiFactorConfig", js.undefined)
+    inline def setMultiFactorConfigUndefined: Self = StObject.set(x, "multiFactorConfig", js.undefined)
     
-    @scala.inline
-    def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+    inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPhoneNumbers(value: StringDictionary[String]): Self = StObject.set(x, "testPhoneNumbers", value.asInstanceOf[js.Any])
+    inline def setTestPhoneNumbers(value: StringDictionary[String]): Self = StObject.set(x, "testPhoneNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPhoneNumbersUndefined: Self = StObject.set(x, "testPhoneNumbers", js.undefined)
+    inline def setTestPhoneNumbersUndefined: Self = StObject.set(x, "testPhoneNumbers", js.undefined)
     
-    @scala.inline
-    def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

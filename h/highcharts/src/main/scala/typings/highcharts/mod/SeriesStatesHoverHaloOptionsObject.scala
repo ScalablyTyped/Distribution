@@ -31,37 +31,27 @@ trait SeriesStatesHoverHaloOptionsObject extends StObject {
 }
 object SeriesStatesHoverHaloOptionsObject {
   
-  @scala.inline
-  def apply(): SeriesStatesHoverHaloOptionsObject = {
+  inline def apply(): SeriesStatesHoverHaloOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesStatesHoverHaloOptionsObject]
   }
   
-  @scala.inline
-  implicit class SeriesStatesHoverHaloOptionsObjectMutableBuilder[Self <: SeriesStatesHoverHaloOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesStatesHoverHaloOptionsObject](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: PlotTilemapStatesHoverHaloAttributesOptions | SVGAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: PlotTilemapStatesHoverHaloAttributesOptions | SVGAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ trait Checkforupdate extends StObject {
 }
 object Checkforupdate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkforupdate: Boolean,
     devicetypes: Bridge,
     notify_ : Boolean,
@@ -35,25 +34,18 @@ object Checkforupdate {
     __obj.asInstanceOf[Checkforupdate]
   }
   
-  @scala.inline
-  implicit class CheckforupdateMutableBuilder[Self <: Checkforupdate] (val x: Self) extends AnyVal {
+  extension [Self <: Checkforupdate](x: Self) {
     
-    @scala.inline
-    def setCheckforupdate(value: Boolean): Self = StObject.set(x, "checkforupdate", value.asInstanceOf[js.Any])
+    inline def setCheckforupdate(value: Boolean): Self = StObject.set(x, "checkforupdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicetypes(value: Bridge): Self = StObject.set(x, "devicetypes", value.asInstanceOf[js.Any])
+    inline def setDevicetypes(value: Bridge): Self = StObject.set(x, "devicetypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+    inline def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatestate(value: Double): Self = StObject.set(x, "updatestate", value.asInstanceOf[js.Any])
+    inline def setUpdatestate(value: Double): Self = StObject.set(x, "updatestate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

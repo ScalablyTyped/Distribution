@@ -20,40 +20,29 @@ trait BuildBazelRemoteExecutionV2FileNode extends StObject {
 }
 object BuildBazelRemoteExecutionV2FileNode {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2FileNode = {
+  inline def apply(): BuildBazelRemoteExecutionV2FileNode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2FileNode]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2FileNodeMutableBuilder[Self <: BuildBazelRemoteExecutionV2FileNode] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2FileNode](x: Self) {
     
-    @scala.inline
-    def setDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setIsExecutable(value: Boolean): Self = StObject.set(x, "isExecutable", value.asInstanceOf[js.Any])
+    inline def setIsExecutable(value: Boolean): Self = StObject.set(x, "isExecutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExecutableUndefined: Self = StObject.set(x, "isExecutable", js.undefined)
+    inline def setIsExecutableUndefined: Self = StObject.set(x, "isExecutable", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNodeProperties(value: js.Array[BuildBazelRemoteExecutionV2NodeProperty]): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
+    inline def setNodeProperties(value: js.Array[BuildBazelRemoteExecutionV2NodeProperty]): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodePropertiesUndefined: Self = StObject.set(x, "nodeProperties", js.undefined)
+    inline def setNodePropertiesUndefined: Self = StObject.set(x, "nodeProperties", js.undefined)
     
-    @scala.inline
-    def setNodePropertiesVarargs(value: BuildBazelRemoteExecutionV2NodeProperty*): Self = StObject.set(x, "nodeProperties", js.Array(value :_*))
+    inline def setNodePropertiesVarargs(value: BuildBazelRemoteExecutionV2NodeProperty*): Self = StObject.set(x, "nodeProperties", js.Array(value :_*))
   }
 }

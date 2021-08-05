@@ -9,8 +9,7 @@ trait DisableKeyInput
      with typings.awsSdkClientKmsBrowser.typesDisableKeyInputMod.DisableKeyInput
 object DisableKeyInput {
   
-  @scala.inline
-  def apply(KeyId: String): DisableKeyInput = {
+  inline def apply(KeyId: String): DisableKeyInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableKeyInput]
   }

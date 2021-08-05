@@ -71,14 +71,11 @@ object mod {
   @js.native
   val USER_FACING_NOTIFICATIONS: /* "userFacingNotifications" */ String = js.native
   
-  @scala.inline
-  def askAsync(types: PermissionType*): js.Promise[PermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("askAsync")(types.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PermissionResponse]]
+  inline def askAsync(types: PermissionType*): js.Promise[PermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("askAsync")(types.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PermissionResponse]]
   
-  @scala.inline
-  def getAsync(types: PermissionType*): js.Promise[PermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsync")(types.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PermissionResponse]]
+  inline def getAsync(types: PermissionType*): js.Promise[PermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsync")(types.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PermissionResponse]]
   
-  @scala.inline
-  def usePermissions(`type`: js.Array[PermissionType]): js.Tuple3[
+  inline def usePermissions(`type`: js.Array[PermissionType]): js.Tuple3[
     js.UndefOr[PermissionResponse], 
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
@@ -87,8 +84,7 @@ object mod {
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
   ]]
-  @scala.inline
-  def usePermissions(`type`: js.Array[PermissionType], options: PermissionsOptions): js.Tuple3[
+  inline def usePermissions(`type`: js.Array[PermissionType], options: PermissionsOptions): js.Tuple3[
     js.UndefOr[PermissionResponse], 
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
@@ -97,8 +93,7 @@ object mod {
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
   ]]
-  @scala.inline
-  def usePermissions(`type`: PermissionType): js.Tuple3[
+  inline def usePermissions(`type`: PermissionType): js.Tuple3[
     js.UndefOr[PermissionResponse], 
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
@@ -107,8 +102,7 @@ object mod {
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]
   ]]
-  @scala.inline
-  def usePermissions(`type`: PermissionType, options: PermissionsOptions): js.Tuple3[
+  inline def usePermissions(`type`: PermissionType, options: PermissionsOptions): js.Tuple3[
     js.UndefOr[PermissionResponse], 
     js.Function0[js.Promise[Unit]], 
     js.Function0[js.Promise[Unit]]

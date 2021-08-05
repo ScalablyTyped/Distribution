@@ -30,32 +30,24 @@ object FontFaceObserver {
   }
   object FontVariant {
     
-    @scala.inline
-    def apply(): FontVariant = {
+    inline def apply(): FontVariant = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FontVariant]
     }
     
-    @scala.inline
-    implicit class FontVariantMutableBuilder[Self <: FontVariant] (val x: Self) extends AnyVal {
+    extension [Self <: FontVariant](x: Self) {
       
-      @scala.inline
-      def setStretch(value: String): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
+      inline def setStretch(value: String): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
+      inline def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setWeight(value: Double | String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double | String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+      inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     }
   }
 }

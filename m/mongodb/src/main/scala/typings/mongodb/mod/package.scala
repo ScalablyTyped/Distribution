@@ -5,17 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def connect(uri: java.lang.String): js.Promise[typings.mongodb.mod.MongoClient] = typings.mongodb.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodb.mod.MongoClient]]
-@scala.inline
-def connect(
+inline def connect(uri: java.lang.String): js.Promise[typings.mongodb.mod.MongoClient] = typings.mongodb.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodb.mod.MongoClient]]
+inline def connect(
   uri: java.lang.String,
   callback: typings.mongodb.mod.MongoCallback[typings.mongodb.mod.MongoClient]
 ): scala.Unit = (typings.mongodb.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def connect(uri: java.lang.String, options: typings.mongodb.mod.MongoClientOptions): js.Promise[typings.mongodb.mod.MongoClient] = (typings.mongodb.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mongodb.mod.MongoClient]]
-@scala.inline
-def connect(
+inline def connect(uri: java.lang.String, options: typings.mongodb.mod.MongoClientOptions): js.Promise[typings.mongodb.mod.MongoClient] = (typings.mongodb.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mongodb.mod.MongoClient]]
+inline def connect(
   uri: java.lang.String,
   options: typings.mongodb.mod.MongoClientOptions,
   callback: typings.mongodb.mod.MongoCallback[typings.mongodb.mod.MongoClient]

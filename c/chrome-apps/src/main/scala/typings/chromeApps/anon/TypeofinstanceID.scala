@@ -58,8 +58,7 @@ trait TypeofinstanceID extends StObject {
 }
 object TypeofinstanceID {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteID: js.Function0[Unit] => Unit,
     deleteToken: (DeleteTokenParams, js.Function0[Unit]) => Unit,
     getCreationTime: js.Function1[/* creationTime */ integer, Unit] => Unit,
@@ -71,25 +70,18 @@ object TypeofinstanceID {
     __obj.asInstanceOf[TypeofinstanceID]
   }
   
-  @scala.inline
-  implicit class TypeofinstanceIDMutableBuilder[Self <: TypeofinstanceID] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofinstanceID](x: Self) {
     
-    @scala.inline
-    def setDeleteID(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "deleteID", js.Any.fromFunction1(value))
+    inline def setDeleteID(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "deleteID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteToken(value: (DeleteTokenParams, js.Function0[Unit]) => Unit): Self = StObject.set(x, "deleteToken", js.Any.fromFunction2(value))
+    inline def setDeleteToken(value: (DeleteTokenParams, js.Function0[Unit]) => Unit): Self = StObject.set(x, "deleteToken", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCreationTime(value: js.Function1[/* creationTime */ integer, Unit] => Unit): Self = StObject.set(x, "getCreationTime", js.Any.fromFunction1(value))
+    inline def setGetCreationTime(value: js.Function1[/* creationTime */ integer, Unit] => Unit): Self = StObject.set(x, "getCreationTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetID(value: js.Function1[/* instanceId */ String, Unit] => Unit): Self = StObject.set(x, "getID", js.Any.fromFunction1(value))
+    inline def setGetID(value: js.Function1[/* instanceId */ String, Unit] => Unit): Self = StObject.set(x, "getID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetToken(value: (TokenParams, js.Function1[/* token */ String, Unit]) => Unit): Self = StObject.set(x, "getToken", js.Any.fromFunction2(value))
+    inline def setGetToken(value: (TokenParams, js.Function1[/* token */ String, Unit]) => Unit): Self = StObject.set(x, "getToken", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnTokenRefresh(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onTokenRefresh", value.asInstanceOf[js.Any])
+    inline def setOnTokenRefresh(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onTokenRefresh", value.asInstanceOf[js.Any])
   }
 }

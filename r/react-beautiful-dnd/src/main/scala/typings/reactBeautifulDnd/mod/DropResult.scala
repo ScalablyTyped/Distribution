@@ -12,8 +12,7 @@ trait DropResult
 }
 object DropResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     draggableId: DraggableId,
     mode: MovementMode,
     reason: DropReason,
@@ -25,10 +24,8 @@ object DropResult {
     __obj.asInstanceOf[DropResult]
   }
   
-  @scala.inline
-  implicit class DropResultMutableBuilder[Self <: DropResult] (val x: Self) extends AnyVal {
+  extension [Self <: DropResult](x: Self) {
     
-    @scala.inline
-    def setReason(value: DropReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: DropReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

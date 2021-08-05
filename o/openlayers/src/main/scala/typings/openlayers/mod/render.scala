@@ -342,10 +342,8 @@ object render {
     * @return Canvas Immediate.
     * @api
     */
-  @scala.inline
-  def toContext(context: CanvasRenderingContext2D): Immediate = ^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any]).asInstanceOf[Immediate]
-  @scala.inline
-  def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): Immediate = (^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Immediate]
+  inline def toContext(context: CanvasRenderingContext2D): Immediate = ^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any]).asInstanceOf[Immediate]
+  inline def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): Immediate = (^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Immediate]
   
   type EventType = String
 }

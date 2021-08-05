@@ -23,8 +23,7 @@ trait `608` extends StObject {
 }
 object `608` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[ActivityListReposStarredByUserEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[
       ActivityListReposStarredByUserResponseData | ActivityListReposStarredByUserResponse200Data
@@ -34,16 +33,13 @@ object `608` {
     __obj.asInstanceOf[`608`]
   }
   
-  @scala.inline
-  implicit class `608MutableBuilder`[Self <: `608`] (val x: Self) extends AnyVal {
+  extension [Self <: `608`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[ActivityListReposStarredByUserEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(
+    inline def setResponse(
       value: OctokitResponse[
           ActivityListReposStarredByUserResponseData | ActivityListReposStarredByUserResponse200Data
         ]

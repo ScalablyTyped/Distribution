@@ -23,8 +23,7 @@ trait PDFAnnotationData extends StObject {
 }
 object PDFAnnotationData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotationFlags: js.Any,
     borderWidth: Double,
     color: js.Array[Double],
@@ -36,31 +35,22 @@ object PDFAnnotationData {
     __obj.asInstanceOf[PDFAnnotationData]
   }
   
-  @scala.inline
-  implicit class PDFAnnotationDataMutableBuilder[Self <: PDFAnnotationData] (val x: Self) extends AnyVal {
+  extension [Self <: PDFAnnotationData](x: Self) {
     
-    @scala.inline
-    def setAnnotationFlags(value: js.Any): Self = StObject.set(x, "annotationFlags", value.asInstanceOf[js.Any])
+    inline def setAnnotationFlags(value: js.Any): Self = StObject.set(x, "annotationFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setHasAppearance(value: Boolean): Self = StObject.set(x, "hasAppearance", value.asInstanceOf[js.Any])
+    inline def setHasAppearance(value: Boolean): Self = StObject.set(x, "hasAppearance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRect(value: js.Array[Double]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: js.Array[Double]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectVarargs(value: Double*): Self = StObject.set(x, "rect", js.Array(value :_*))
+    inline def setRectVarargs(value: Double*): Self = StObject.set(x, "rect", js.Array(value :_*))
     
-    @scala.inline
-    def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+    inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
   }
 }

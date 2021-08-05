@@ -10,16 +10,13 @@ trait WebGLUniformLocation extends StObject {
 }
 object WebGLUniformLocation {
   
-  @scala.inline
-  def apply(__WebGLUniformLocation: Unit): WebGLUniformLocation = {
+  inline def apply(__WebGLUniformLocation: Unit): WebGLUniformLocation = {
     val __obj = js.Dynamic.literal(__WebGLUniformLocation = __WebGLUniformLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLUniformLocation]
   }
   
-  @scala.inline
-  implicit class WebGLUniformLocationMutableBuilder[Self <: WebGLUniformLocation] (val x: Self) extends AnyVal {
+  extension [Self <: WebGLUniformLocation](x: Self) {
     
-    @scala.inline
-    def set__WebGLUniformLocation(value: Unit): Self = StObject.set(x, "__WebGLUniformLocation", value.asInstanceOf[js.Any])
+    inline def set__WebGLUniformLocation(value: Unit): Self = StObject.set(x, "__WebGLUniformLocation", value.asInstanceOf[js.Any])
   }
 }

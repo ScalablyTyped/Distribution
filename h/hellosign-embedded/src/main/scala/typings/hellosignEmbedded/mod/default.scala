@@ -25,34 +25,29 @@ object default {
   @JSImport("hellosign-embedded", "default.classNames")
   @js.native
   def classNames: ClassNames = js.native
-  @scala.inline
-  def classNames_=(x: ClassNames): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classNames")(x.asInstanceOf[js.Any])
+  inline def classNames_=(x: ClassNames): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classNames")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("hellosign-embedded", "default.events")
   @js.native
   def events: Events = js.native
-  @scala.inline
-  def events_=(x: Events): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
+  inline def events_=(x: Events): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("hellosign-embedded", "default.locales")
   @js.native
   def locales: Locales = js.native
-  @scala.inline
-  def locales_=(x: Locales): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("locales")(x.asInstanceOf[js.Any])
+  inline def locales_=(x: Locales): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("locales")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("hellosign-embedded", "default.messages")
   @js.native
   def messages: Messages = js.native
-  @scala.inline
-  def messages_=(x: Messages): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("messages")(x.asInstanceOf[js.Any])
+  inline def messages_=(x: Messages): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("messages")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("hellosign-embedded", "default.version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 }

@@ -48,79 +48,55 @@ trait IPicker
 }
 object IPicker {
   
-  @scala.inline
-  def apply(): IPicker = {
+  inline def apply(): IPicker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPicker]
   }
   
-  @scala.inline
-  implicit class IPickerMutableBuilder[Self <: IPicker] (val x: Self) extends AnyVal {
+  extension [Self <: IPicker](x: Self) {
     
-    @scala.inline
-    def setAlignPicker(value: () => Unit): Self = StObject.set(x, "alignPicker", js.Any.fromFunction0(value))
+    inline def setAlignPicker(value: () => Unit): Self = StObject.set(x, "alignPicker", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAlignPickerUndefined: Self = StObject.set(x, "alignPicker", js.undefined)
+    inline def setAlignPickerUndefined: Self = StObject.set(x, "alignPicker", js.undefined)
     
-    @scala.inline
-    def setCollapse(value: () => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
+    inline def setCollapse(value: () => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
-    @scala.inline
-    def setCreatePicker(value: () => Unit): Self = StObject.set(x, "createPicker", js.Any.fromFunction0(value))
+    inline def setCreatePicker(value: () => Unit): Self = StObject.set(x, "createPicker", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreatePickerUndefined: Self = StObject.set(x, "createPicker", js.undefined)
+    inline def setCreatePickerUndefined: Self = StObject.set(x, "createPicker", js.undefined)
     
-    @scala.inline
-    def setExpand(value: () => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction0(value))
+    inline def setExpand(value: () => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setGetPicker(value: () => IComponent): Self = StObject.set(x, "getPicker", js.Any.fromFunction0(value))
+    inline def setGetPicker(value: () => IComponent): Self = StObject.set(x, "getPicker", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPickerUndefined: Self = StObject.set(x, "getPicker", js.undefined)
+    inline def setGetPickerUndefined: Self = StObject.set(x, "getPicker", js.undefined)
     
-    @scala.inline
-    def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+    inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+    inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
     
-    @scala.inline
-    def setMatchFieldWidth(value: Boolean): Self = StObject.set(x, "matchFieldWidth", value.asInstanceOf[js.Any])
+    inline def setMatchFieldWidth(value: Boolean): Self = StObject.set(x, "matchFieldWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchFieldWidthUndefined: Self = StObject.set(x, "matchFieldWidth", js.undefined)
+    inline def setMatchFieldWidthUndefined: Self = StObject.set(x, "matchFieldWidth", js.undefined)
     
-    @scala.inline
-    def setOnTriggerClick(value: () => Unit): Self = StObject.set(x, "onTriggerClick", js.Any.fromFunction0(value))
+    inline def setOnTriggerClick(value: () => Unit): Self = StObject.set(x, "onTriggerClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnTriggerClickUndefined: Self = StObject.set(x, "onTriggerClick", js.undefined)
+    inline def setOnTriggerClickUndefined: Self = StObject.set(x, "onTriggerClick", js.undefined)
     
-    @scala.inline
-    def setOpenCls(value: String): Self = StObject.set(x, "openCls", value.asInstanceOf[js.Any])
+    inline def setOpenCls(value: String): Self = StObject.set(x, "openCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenClsUndefined: Self = StObject.set(x, "openCls", js.undefined)
+    inline def setOpenClsUndefined: Self = StObject.set(x, "openCls", js.undefined)
     
-    @scala.inline
-    def setPickerAlign(value: String): Self = StObject.set(x, "pickerAlign", value.asInstanceOf[js.Any])
+    inline def setPickerAlign(value: String): Self = StObject.set(x, "pickerAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerAlignUndefined: Self = StObject.set(x, "pickerAlign", js.undefined)
+    inline def setPickerAlignUndefined: Self = StObject.set(x, "pickerAlign", js.undefined)
     
-    @scala.inline
-    def setPickerOffset(value: Array): Self = StObject.set(x, "pickerOffset", value.asInstanceOf[js.Any])
+    inline def setPickerOffset(value: Array): Self = StObject.set(x, "pickerOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerOffsetUndefined: Self = StObject.set(x, "pickerOffset", js.undefined)
+    inline def setPickerOffsetUndefined: Self = StObject.set(x, "pickerOffset", js.undefined)
   }
 }

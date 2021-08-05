@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QueueType extends StObject
 object QueueType {
   
-  @scala.inline
-  def dequeue: typings.wechatMiniprogram.wechatMiniprogramStrings.dequeue = "dequeue".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.dequeue]
+  inline def dequeue: typings.wechatMiniprogram.wechatMiniprogramStrings.dequeue = "dequeue".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.dequeue]
   
-  @scala.inline
-  def enqueue: typings.wechatMiniprogram.wechatMiniprogramStrings.enqueue = "enqueue".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.enqueue]
+  inline def enqueue: typings.wechatMiniprogram.wechatMiniprogramStrings.enqueue = "enqueue".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.enqueue]
   
-  @scala.inline
-  def init: typings.wechatMiniprogram.wechatMiniprogramStrings.init = "init".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.init]
+  inline def init: typings.wechatMiniprogram.wechatMiniprogramStrings.init = "init".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.init]
   
-  @scala.inline
-  def update: typings.wechatMiniprogram.wechatMiniprogramStrings.update = "update".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.update]
+  inline def update: typings.wechatMiniprogram.wechatMiniprogramStrings.update = "update".asInstanceOf[typings.wechatMiniprogram.wechatMiniprogramStrings.update]
 }

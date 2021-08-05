@@ -123,115 +123,79 @@ trait SchemaGoogleCloudDialogflowV2beta1QueryResult extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2beta1QueryResult {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1QueryResult = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1QueryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1QueryResult]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1QueryResultMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1QueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1QueryResult](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setAllRequiredParamsPresent(value: Boolean): Self = StObject.set(x, "allRequiredParamsPresent", value.asInstanceOf[js.Any])
+    inline def setAllRequiredParamsPresent(value: Boolean): Self = StObject.set(x, "allRequiredParamsPresent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllRequiredParamsPresentUndefined: Self = StObject.set(x, "allRequiredParamsPresent", js.undefined)
+    inline def setAllRequiredParamsPresentUndefined: Self = StObject.set(x, "allRequiredParamsPresent", js.undefined)
     
-    @scala.inline
-    def setDiagnosticInfo(value: StringDictionary[js.Any]): Self = StObject.set(x, "diagnosticInfo", value.asInstanceOf[js.Any])
+    inline def setDiagnosticInfo(value: StringDictionary[js.Any]): Self = StObject.set(x, "diagnosticInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticInfoUndefined: Self = StObject.set(x, "diagnosticInfo", js.undefined)
+    inline def setDiagnosticInfoUndefined: Self = StObject.set(x, "diagnosticInfo", js.undefined)
     
-    @scala.inline
-    def setFulfillmentMessages(value: js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessage]): Self = StObject.set(x, "fulfillmentMessages", value.asInstanceOf[js.Any])
+    inline def setFulfillmentMessages(value: js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessage]): Self = StObject.set(x, "fulfillmentMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfillmentMessagesUndefined: Self = StObject.set(x, "fulfillmentMessages", js.undefined)
+    inline def setFulfillmentMessagesUndefined: Self = StObject.set(x, "fulfillmentMessages", js.undefined)
     
-    @scala.inline
-    def setFulfillmentMessagesVarargs(value: SchemaGoogleCloudDialogflowV2beta1IntentMessage*): Self = StObject.set(x, "fulfillmentMessages", js.Array(value :_*))
+    inline def setFulfillmentMessagesVarargs(value: SchemaGoogleCloudDialogflowV2beta1IntentMessage*): Self = StObject.set(x, "fulfillmentMessages", js.Array(value :_*))
     
-    @scala.inline
-    def setFulfillmentText(value: String): Self = StObject.set(x, "fulfillmentText", value.asInstanceOf[js.Any])
+    inline def setFulfillmentText(value: String): Self = StObject.set(x, "fulfillmentText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfillmentTextUndefined: Self = StObject.set(x, "fulfillmentText", js.undefined)
+    inline def setFulfillmentTextUndefined: Self = StObject.set(x, "fulfillmentText", js.undefined)
     
-    @scala.inline
-    def setIntent(value: SchemaGoogleCloudDialogflowV2beta1Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: SchemaGoogleCloudDialogflowV2beta1Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentDetectionConfidence(value: Double): Self = StObject.set(x, "intentDetectionConfidence", value.asInstanceOf[js.Any])
+    inline def setIntentDetectionConfidence(value: Double): Self = StObject.set(x, "intentDetectionConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentDetectionConfidenceUndefined: Self = StObject.set(x, "intentDetectionConfidence", js.undefined)
+    inline def setIntentDetectionConfidenceUndefined: Self = StObject.set(x, "intentDetectionConfidence", js.undefined)
     
-    @scala.inline
-    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
+    inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     
-    @scala.inline
-    def setKnowledgeAnswers(value: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers): Self = StObject.set(x, "knowledgeAnswers", value.asInstanceOf[js.Any])
+    inline def setKnowledgeAnswers(value: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers): Self = StObject.set(x, "knowledgeAnswers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnowledgeAnswersUndefined: Self = StObject.set(x, "knowledgeAnswers", js.undefined)
+    inline def setKnowledgeAnswersUndefined: Self = StObject.set(x, "knowledgeAnswers", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setOutputContexts(value: js.Array[SchemaGoogleCloudDialogflowV2beta1Context]): Self = StObject.set(x, "outputContexts", value.asInstanceOf[js.Any])
+    inline def setOutputContexts(value: js.Array[SchemaGoogleCloudDialogflowV2beta1Context]): Self = StObject.set(x, "outputContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputContextsUndefined: Self = StObject.set(x, "outputContexts", js.undefined)
+    inline def setOutputContextsUndefined: Self = StObject.set(x, "outputContexts", js.undefined)
     
-    @scala.inline
-    def setOutputContextsVarargs(value: SchemaGoogleCloudDialogflowV2beta1Context*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
+    inline def setOutputContextsVarargs(value: SchemaGoogleCloudDialogflowV2beta1Context*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
     
-    @scala.inline
-    def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
+    inline def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryTextUndefined: Self = StObject.set(x, "queryText", js.undefined)
+    inline def setQueryTextUndefined: Self = StObject.set(x, "queryText", js.undefined)
     
-    @scala.inline
-    def setSentimentAnalysisResult(value: SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult): Self = StObject.set(x, "sentimentAnalysisResult", value.asInstanceOf[js.Any])
+    inline def setSentimentAnalysisResult(value: SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult): Self = StObject.set(x, "sentimentAnalysisResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentAnalysisResultUndefined: Self = StObject.set(x, "sentimentAnalysisResult", js.undefined)
+    inline def setSentimentAnalysisResultUndefined: Self = StObject.set(x, "sentimentAnalysisResult", js.undefined)
     
-    @scala.inline
-    def setSpeechRecognitionConfidence(value: Double): Self = StObject.set(x, "speechRecognitionConfidence", value.asInstanceOf[js.Any])
+    inline def setSpeechRecognitionConfidence(value: Double): Self = StObject.set(x, "speechRecognitionConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechRecognitionConfidenceUndefined: Self = StObject.set(x, "speechRecognitionConfidence", js.undefined)
+    inline def setSpeechRecognitionConfidenceUndefined: Self = StObject.set(x, "speechRecognitionConfidence", js.undefined)
     
-    @scala.inline
-    def setWebhookPayload(value: StringDictionary[js.Any]): Self = StObject.set(x, "webhookPayload", value.asInstanceOf[js.Any])
+    inline def setWebhookPayload(value: StringDictionary[js.Any]): Self = StObject.set(x, "webhookPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookPayloadUndefined: Self = StObject.set(x, "webhookPayload", js.undefined)
+    inline def setWebhookPayloadUndefined: Self = StObject.set(x, "webhookPayload", js.undefined)
     
-    @scala.inline
-    def setWebhookSource(value: String): Self = StObject.set(x, "webhookSource", value.asInstanceOf[js.Any])
+    inline def setWebhookSource(value: String): Self = StObject.set(x, "webhookSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookSourceUndefined: Self = StObject.set(x, "webhookSource", js.undefined)
+    inline def setWebhookSourceUndefined: Self = StObject.set(x, "webhookSource", js.undefined)
   }
 }

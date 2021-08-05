@@ -23,25 +23,19 @@ trait Items extends StObject {
 }
 object Items {
   
-  @scala.inline
-  def apply(items: js.Array[Type], position: CornerPosition, timing: OffsetMs): Items = {
+  inline def apply(items: js.Array[Type], position: CornerPosition, timing: OffsetMs): Items = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], timing = timing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Items]
   }
   
-  @scala.inline
-  implicit class ItemsMutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
+  extension [Self <: Items](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[Type]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Type]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: Type*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Type*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: CornerPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: CornerPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiming(value: OffsetMs): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
+    inline def setTiming(value: OffsetMs): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
   }
 }

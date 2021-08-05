@@ -21,8 +21,7 @@ trait StructureKeeperLair
 }
 object StructureKeeperLair {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
     hits: Double,
@@ -39,13 +38,10 @@ object StructureKeeperLair {
     __obj.asInstanceOf[StructureKeeperLair]
   }
   
-  @scala.inline
-  implicit class StructureKeeperLairMutableBuilder[Self <: StructureKeeperLair] (val x: Self) extends AnyVal {
+  extension [Self <: StructureKeeperLair](x: Self) {
     
-    @scala.inline
-    def setTicksToSpawn(value: Double): Self = StObject.set(x, "ticksToSpawn", value.asInstanceOf[js.Any])
+    inline def setTicksToSpawn(value: Double): Self = StObject.set(x, "ticksToSpawn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksToSpawnUndefined: Self = StObject.set(x, "ticksToSpawn", js.undefined)
+    inline def setTicksToSpawnUndefined: Self = StObject.set(x, "ticksToSpawn", js.undefined)
   }
 }

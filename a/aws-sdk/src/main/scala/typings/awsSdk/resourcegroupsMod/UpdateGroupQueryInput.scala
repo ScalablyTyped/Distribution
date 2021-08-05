@@ -23,28 +23,21 @@ trait UpdateGroupQueryInput extends StObject {
 }
 object UpdateGroupQueryInput {
   
-  @scala.inline
-  def apply(ResourceQuery: ResourceQuery): UpdateGroupQueryInput = {
+  inline def apply(ResourceQuery: ResourceQuery): UpdateGroupQueryInput = {
     val __obj = js.Dynamic.literal(ResourceQuery = ResourceQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGroupQueryInput]
   }
   
-  @scala.inline
-  implicit class UpdateGroupQueryInputMutableBuilder[Self <: UpdateGroupQueryInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGroupQueryInput](x: Self) {
     
-    @scala.inline
-    def setGroup(value: GroupString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: GroupString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
     
-    @scala.inline
-    def setResourceQuery(value: ResourceQuery): Self = StObject.set(x, "ResourceQuery", value.asInstanceOf[js.Any])
+    inline def setResourceQuery(value: ResourceQuery): Self = StObject.set(x, "ResourceQuery", value.asInstanceOf[js.Any])
   }
 }

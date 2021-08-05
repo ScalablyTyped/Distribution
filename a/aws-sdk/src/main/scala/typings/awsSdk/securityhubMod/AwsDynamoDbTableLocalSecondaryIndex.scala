@@ -28,40 +28,29 @@ trait AwsDynamoDbTableLocalSecondaryIndex extends StObject {
 }
 object AwsDynamoDbTableLocalSecondaryIndex {
   
-  @scala.inline
-  def apply(): AwsDynamoDbTableLocalSecondaryIndex = {
+  inline def apply(): AwsDynamoDbTableLocalSecondaryIndex = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsDynamoDbTableLocalSecondaryIndex]
   }
   
-  @scala.inline
-  implicit class AwsDynamoDbTableLocalSecondaryIndexMutableBuilder[Self <: AwsDynamoDbTableLocalSecondaryIndex] (val x: Self) extends AnyVal {
+  extension [Self <: AwsDynamoDbTableLocalSecondaryIndex](x: Self) {
     
-    @scala.inline
-    def setIndexArn(value: NonEmptyString): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
+    inline def setIndexArn(value: NonEmptyString): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexArnUndefined: Self = StObject.set(x, "IndexArn", js.undefined)
+    inline def setIndexArnUndefined: Self = StObject.set(x, "IndexArn", js.undefined)
     
-    @scala.inline
-    def setIndexName(value: NonEmptyString): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: NonEmptyString): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
-    @scala.inline
-    def setKeySchema(value: AwsDynamoDbTableKeySchemaList): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+    inline def setKeySchema(value: AwsDynamoDbTableKeySchemaList): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
+    inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
-    @scala.inline
-    def setKeySchemaVarargs(value: AwsDynamoDbTableKeySchema*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+    inline def setKeySchemaVarargs(value: AwsDynamoDbTableKeySchema*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
     
-    @scala.inline
-    def setProjection(value: AwsDynamoDbTableProjection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: AwsDynamoDbTableProjection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
   }
 }

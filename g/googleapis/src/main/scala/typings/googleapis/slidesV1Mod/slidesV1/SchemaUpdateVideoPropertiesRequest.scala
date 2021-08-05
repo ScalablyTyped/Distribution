@@ -32,31 +32,23 @@ trait SchemaUpdateVideoPropertiesRequest extends StObject {
 }
 object SchemaUpdateVideoPropertiesRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateVideoPropertiesRequest = {
+  inline def apply(): SchemaUpdateVideoPropertiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateVideoPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateVideoPropertiesRequestMutableBuilder[Self <: SchemaUpdateVideoPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateVideoPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setVideoProperties(value: SchemaVideoProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
+    inline def setVideoProperties(value: SchemaVideoProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoPropertiesUndefined: Self = StObject.set(x, "videoProperties", js.undefined)
+    inline def setVideoPropertiesUndefined: Self = StObject.set(x, "videoProperties", js.undefined)
   }
 }

@@ -12,8 +12,6 @@ object getNodeScrollMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def default(node: Node): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(node: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(node: Node): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

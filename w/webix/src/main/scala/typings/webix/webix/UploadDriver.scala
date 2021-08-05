@@ -10,16 +10,13 @@ trait UploadDriver extends StObject {
 }
 object UploadDriver {
   
-  @scala.inline
-  def apply(html5: js.Any): UploadDriver = {
+  inline def apply(html5: js.Any): UploadDriver = {
     val __obj = js.Dynamic.literal(html5 = html5.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadDriver]
   }
   
-  @scala.inline
-  implicit class UploadDriverMutableBuilder[Self <: UploadDriver] (val x: Self) extends AnyVal {
+  extension [Self <: UploadDriver](x: Self) {
     
-    @scala.inline
-    def setHtml5(value: js.Any): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
+    inline def setHtml5(value: js.Any): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
   }
 }

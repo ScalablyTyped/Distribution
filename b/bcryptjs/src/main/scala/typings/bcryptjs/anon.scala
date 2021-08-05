@@ -13,17 +13,14 @@ object anon {
   }
   object ReadonlyArrayLikenumber {
     
-    @scala.inline
-    def apply(length: Double): ReadonlyArrayLikenumber = {
+    inline def apply(length: Double): ReadonlyArrayLikenumber = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyArrayLikenumber]
     }
     
-    @scala.inline
-    implicit class ReadonlyArrayLikenumberMutableBuilder[Self <: ReadonlyArrayLikenumber] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyArrayLikenumber](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
 }

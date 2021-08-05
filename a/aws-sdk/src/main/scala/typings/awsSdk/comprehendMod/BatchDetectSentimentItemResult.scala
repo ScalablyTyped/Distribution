@@ -23,31 +23,23 @@ trait BatchDetectSentimentItemResult extends StObject {
 }
 object BatchDetectSentimentItemResult {
   
-  @scala.inline
-  def apply(): BatchDetectSentimentItemResult = {
+  inline def apply(): BatchDetectSentimentItemResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDetectSentimentItemResult]
   }
   
-  @scala.inline
-  implicit class BatchDetectSentimentItemResultMutableBuilder[Self <: BatchDetectSentimentItemResult] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDetectSentimentItemResult](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
     
-    @scala.inline
-    def setSentiment(value: SentimentType): Self = StObject.set(x, "Sentiment", value.asInstanceOf[js.Any])
+    inline def setSentiment(value: SentimentType): Self = StObject.set(x, "Sentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentScore(value: SentimentScore): Self = StObject.set(x, "SentimentScore", value.asInstanceOf[js.Any])
+    inline def setSentimentScore(value: SentimentScore): Self = StObject.set(x, "SentimentScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentScoreUndefined: Self = StObject.set(x, "SentimentScore", js.undefined)
+    inline def setSentimentScoreUndefined: Self = StObject.set(x, "SentimentScore", js.undefined)
     
-    @scala.inline
-    def setSentimentUndefined: Self = StObject.set(x, "Sentiment", js.undefined)
+    inline def setSentimentUndefined: Self = StObject.set(x, "Sentiment", js.undefined)
   }
 }

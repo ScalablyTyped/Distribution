@@ -23,8 +23,7 @@ trait DraggableDimension extends StObject {
 }
 object DraggableDimension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     client: BoxModel,
     descriptor: DraggableDescriptor,
     displaceBy: Position,
@@ -35,22 +34,16 @@ object DraggableDimension {
     __obj.asInstanceOf[DraggableDimension]
   }
   
-  @scala.inline
-  implicit class DraggableDimensionMutableBuilder[Self <: DraggableDimension] (val x: Self) extends AnyVal {
+  extension [Self <: DraggableDimension](x: Self) {
     
-    @scala.inline
-    def setClient(value: BoxModel): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: BoxModel): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptor(value: DraggableDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
+    inline def setDescriptor(value: DraggableDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplaceBy(value: Position): Self = StObject.set(x, "displaceBy", value.asInstanceOf[js.Any])
+    inline def setDisplaceBy(value: Position): Self = StObject.set(x, "displaceBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: BoxModel): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: BoxModel): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholder(value: Placeholder): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: Placeholder): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
   }
 }

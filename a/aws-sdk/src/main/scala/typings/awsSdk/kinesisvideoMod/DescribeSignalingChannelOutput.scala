@@ -13,19 +13,15 @@ trait DescribeSignalingChannelOutput extends StObject {
 }
 object DescribeSignalingChannelOutput {
   
-  @scala.inline
-  def apply(): DescribeSignalingChannelOutput = {
+  inline def apply(): DescribeSignalingChannelOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSignalingChannelOutput]
   }
   
-  @scala.inline
-  implicit class DescribeSignalingChannelOutputMutableBuilder[Self <: DescribeSignalingChannelOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSignalingChannelOutput](x: Self) {
     
-    @scala.inline
-    def setChannelInfo(value: ChannelInfo): Self = StObject.set(x, "ChannelInfo", value.asInstanceOf[js.Any])
+    inline def setChannelInfo(value: ChannelInfo): Self = StObject.set(x, "ChannelInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelInfoUndefined: Self = StObject.set(x, "ChannelInfo", js.undefined)
+    inline def setChannelInfoUndefined: Self = StObject.set(x, "ChannelInfo", js.undefined)
   }
 }

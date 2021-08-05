@@ -19,27 +19,21 @@ trait GetDataOptions extends StObject {
 }
 object GetDataOptions {
   
-  @scala.inline
-  def apply(forceClones: Boolean, removeMeta: Boolean): GetDataOptions = {
+  inline def apply(forceClones: Boolean, removeMeta: Boolean): GetDataOptions = {
     val __obj = js.Dynamic.literal(forceClones = forceClones.asInstanceOf[js.Any], removeMeta = removeMeta.asInstanceOf[js.Any], forceCloneMethod = null)
     __obj.asInstanceOf[GetDataOptions]
   }
   
-  @scala.inline
-  implicit class GetDataOptionsMutableBuilder[Self <: GetDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataOptions](x: Self) {
     
-    @scala.inline
-    def setForceCloneMethod(
+    inline def setForceCloneMethod(
       value: `parse-stringify` | `jquery-extend-deep` | shallow | `shallow-assign` | `shallow-recurse-objects`
     ): Self = StObject.set(x, "forceCloneMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceCloneMethodNull: Self = StObject.set(x, "forceCloneMethod", null)
+    inline def setForceCloneMethodNull: Self = StObject.set(x, "forceCloneMethod", null)
     
-    @scala.inline
-    def setForceClones(value: Boolean): Self = StObject.set(x, "forceClones", value.asInstanceOf[js.Any])
+    inline def setForceClones(value: Boolean): Self = StObject.set(x, "forceClones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveMeta(value: Boolean): Self = StObject.set(x, "removeMeta", value.asInstanceOf[js.Any])
+    inline def setRemoveMeta(value: Boolean): Self = StObject.set(x, "removeMeta", value.asInstanceOf[js.Any])
   }
 }

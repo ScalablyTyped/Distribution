@@ -26,8 +26,7 @@ object progressBarMod {
     @JSImport("@blueprintjs/core/lib/esm/components/progress-bar/progressBar", "ProgressBar.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IProgressBarProps
@@ -56,32 +55,24 @@ object progressBarMod {
   }
   object IProgressBarProps {
     
-    @scala.inline
-    def apply(): IProgressBarProps = {
+    inline def apply(): IProgressBarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IProgressBarProps]
     }
     
-    @scala.inline
-    implicit class IProgressBarPropsMutableBuilder[Self <: IProgressBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: IProgressBarProps](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setStripes(value: Boolean): Self = StObject.set(x, "stripes", value.asInstanceOf[js.Any])
+      inline def setStripes(value: Boolean): Self = StObject.set(x, "stripes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripesUndefined: Self = StObject.set(x, "stripes", js.undefined)
+      inline def setStripesUndefined: Self = StObject.set(x, "stripes", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

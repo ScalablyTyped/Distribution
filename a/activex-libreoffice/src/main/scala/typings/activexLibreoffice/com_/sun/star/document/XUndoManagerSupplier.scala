@@ -18,19 +18,15 @@ trait XUndoManagerSupplier extends StObject {
 }
 object XUndoManagerSupplier {
   
-  @scala.inline
-  def apply(UndoManager: XUndoManager, getUndoManager: () => XUndoManager): XUndoManagerSupplier = {
+  inline def apply(UndoManager: XUndoManager, getUndoManager: () => XUndoManager): XUndoManagerSupplier = {
     val __obj = js.Dynamic.literal(UndoManager = UndoManager.asInstanceOf[js.Any], getUndoManager = js.Any.fromFunction0(getUndoManager))
     __obj.asInstanceOf[XUndoManagerSupplier]
   }
   
-  @scala.inline
-  implicit class XUndoManagerSupplierMutableBuilder[Self <: XUndoManagerSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XUndoManagerSupplier](x: Self) {
     
-    @scala.inline
-    def setGetUndoManager(value: () => XUndoManager): Self = StObject.set(x, "getUndoManager", js.Any.fromFunction0(value))
+    inline def setGetUndoManager(value: () => XUndoManager): Self = StObject.set(x, "getUndoManager", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUndoManager(value: XUndoManager): Self = StObject.set(x, "UndoManager", value.asInstanceOf[js.Any])
+    inline def setUndoManager(value: XUndoManager): Self = StObject.set(x, "UndoManager", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait IUtil extends StObject {
 }
 object IUtil {
   
-  @scala.inline
-  def apply(assert: (Boolean, String) => Unit): IUtil = {
+  inline def apply(assert: (Boolean, String) => Unit): IUtil = {
     val __obj = js.Dynamic.literal(assert = js.Any.fromFunction2(assert))
     __obj.asInstanceOf[IUtil]
   }
   
-  @scala.inline
-  implicit class IUtilMutableBuilder[Self <: IUtil] (val x: Self) extends AnyVal {
+  extension [Self <: IUtil](x: Self) {
     
-    @scala.inline
-    def setAssert(value: (Boolean, String) => Unit): Self = StObject.set(x, "assert", js.Any.fromFunction2(value))
+    inline def setAssert(value: (Boolean, String) => Unit): Self = StObject.set(x, "assert", js.Any.fromFunction2(value))
   }
 }

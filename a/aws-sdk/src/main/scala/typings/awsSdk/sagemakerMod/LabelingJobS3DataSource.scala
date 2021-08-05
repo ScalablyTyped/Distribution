@@ -13,16 +13,13 @@ trait LabelingJobS3DataSource extends StObject {
 }
 object LabelingJobS3DataSource {
   
-  @scala.inline
-  def apply(ManifestS3Uri: S3Uri): LabelingJobS3DataSource = {
+  inline def apply(ManifestS3Uri: S3Uri): LabelingJobS3DataSource = {
     val __obj = js.Dynamic.literal(ManifestS3Uri = ManifestS3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelingJobS3DataSource]
   }
   
-  @scala.inline
-  implicit class LabelingJobS3DataSourceMutableBuilder[Self <: LabelingJobS3DataSource] (val x: Self) extends AnyVal {
+  extension [Self <: LabelingJobS3DataSource](x: Self) {
     
-    @scala.inline
-    def setManifestS3Uri(value: S3Uri): Self = StObject.set(x, "ManifestS3Uri", value.asInstanceOf[js.Any])
+    inline def setManifestS3Uri(value: S3Uri): Self = StObject.set(x, "ManifestS3Uri", value.asInstanceOf[js.Any])
   }
 }

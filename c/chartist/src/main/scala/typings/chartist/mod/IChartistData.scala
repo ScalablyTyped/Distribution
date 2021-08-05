@@ -18,8 +18,7 @@ trait IChartistData extends StObject {
 }
 object IChartistData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     series: js.Array[
       (js.Array[Double | IChartistData | IChartistSeriesData]) | Double | IChartistSeriesData
     ]
@@ -28,26 +27,20 @@ object IChartistData {
     __obj.asInstanceOf[IChartistData]
   }
   
-  @scala.inline
-  implicit class IChartistDataMutableBuilder[Self <: IChartistData] (val x: Self) extends AnyVal {
+  extension [Self <: IChartistData](x: Self) {
     
-    @scala.inline
-    def setLabels(value: js.Array[Date | Double | String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[Date | Double | String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: (Date | Double | String)*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: (Date | Double | String)*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setSeries(
+    inline def setSeries(
       value: js.Array[
           (js.Array[Double | IChartistData | IChartistSeriesData]) | Double | IChartistSeriesData
         ]
     ): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesVarargs(value: ((js.Array[Double | IChartistData | IChartistSeriesData]) | Double | IChartistSeriesData)*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: ((js.Array[Double | IChartistData | IChartistSeriesData]) | Double | IChartistSeriesData)*): Self = StObject.set(x, "series", js.Array(value :_*))
   }
 }

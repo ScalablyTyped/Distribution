@@ -12,19 +12,15 @@ trait WrapLabel extends StObject {
 }
 object WrapLabel {
   
-  @scala.inline
-  def apply(prefixCls: String, wrapLabel: Boolean): WrapLabel = {
+  inline def apply(prefixCls: String, wrapLabel: Boolean): WrapLabel = {
     val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any], wrapLabel = wrapLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrapLabel]
   }
   
-  @scala.inline
-  implicit class WrapLabelMutableBuilder[Self <: WrapLabel] (val x: Self) extends AnyVal {
+  extension [Self <: WrapLabel](x: Self) {
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapLabel(value: Boolean): Self = StObject.set(x, "wrapLabel", value.asInstanceOf[js.Any])
+    inline def setWrapLabel(value: Boolean): Self = StObject.set(x, "wrapLabel", value.asInstanceOf[js.Any])
   }
 }

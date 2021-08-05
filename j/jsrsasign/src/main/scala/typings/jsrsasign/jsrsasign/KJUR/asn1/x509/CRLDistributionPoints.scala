@@ -47,8 +47,7 @@ trait CRLDistributionPoints
 }
 object CRLDistributionPoints {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getExtnValueHex: () => String,
     getFreshValueHex: () => String,
@@ -66,16 +65,12 @@ object CRLDistributionPoints {
     __obj.asInstanceOf[CRLDistributionPoints]
   }
   
-  @scala.inline
-  implicit class CRLDistributionPointsMutableBuilder[Self <: CRLDistributionPoints] (val x: Self) extends AnyVal {
+  extension [Self <: CRLDistributionPoints](x: Self) {
     
-    @scala.inline
-    def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
+    inline def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetByDPArray(value: js.Array[ASN1Object] => Unit): Self = StObject.set(x, "setByDPArray", js.Any.fromFunction1(value))
+    inline def setSetByDPArray(value: js.Array[ASN1Object] => Unit): Self = StObject.set(x, "setByDPArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetByOneURI(value: String => Unit): Self = StObject.set(x, "setByOneURI", js.Any.fromFunction1(value))
+    inline def setSetByOneURI(value: String => Unit): Self = StObject.set(x, "setByOneURI", js.Any.fromFunction1(value))
   }
 }

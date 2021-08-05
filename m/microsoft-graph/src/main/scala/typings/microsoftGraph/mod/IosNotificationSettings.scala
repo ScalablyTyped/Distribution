@@ -35,88 +35,61 @@ trait IosNotificationSettings extends StObject {
 }
 object IosNotificationSettings {
   
-  @scala.inline
-  def apply(): IosNotificationSettings = {
+  inline def apply(): IosNotificationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosNotificationSettings]
   }
   
-  @scala.inline
-  implicit class IosNotificationSettingsMutableBuilder[Self <: IosNotificationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IosNotificationSettings](x: Self) {
     
-    @scala.inline
-    def setAlertType(value: IosNotificationAlertType): Self = StObject.set(x, "alertType", value.asInstanceOf[js.Any])
+    inline def setAlertType(value: IosNotificationAlertType): Self = StObject.set(x, "alertType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlertTypeUndefined: Self = StObject.set(x, "alertType", js.undefined)
+    inline def setAlertTypeUndefined: Self = StObject.set(x, "alertType", js.undefined)
     
-    @scala.inline
-    def setAppName(value: NullableOption[String]): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: NullableOption[String]): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppNameNull: Self = StObject.set(x, "appName", null)
+    inline def setAppNameNull: Self = StObject.set(x, "appName", null)
     
-    @scala.inline
-    def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+    inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
     
-    @scala.inline
-    def setBadgesEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "badgesEnabled", value.asInstanceOf[js.Any])
+    inline def setBadgesEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "badgesEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgesEnabledNull: Self = StObject.set(x, "badgesEnabled", null)
+    inline def setBadgesEnabledNull: Self = StObject.set(x, "badgesEnabled", null)
     
-    @scala.inline
-    def setBadgesEnabledUndefined: Self = StObject.set(x, "badgesEnabled", js.undefined)
+    inline def setBadgesEnabledUndefined: Self = StObject.set(x, "badgesEnabled", js.undefined)
     
-    @scala.inline
-    def setBundleID(value: String): Self = StObject.set(x, "bundleID", value.asInstanceOf[js.Any])
+    inline def setBundleID(value: String): Self = StObject.set(x, "bundleID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIDUndefined: Self = StObject.set(x, "bundleID", js.undefined)
+    inline def setBundleIDUndefined: Self = StObject.set(x, "bundleID", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledNull: Self = StObject.set(x, "enabled", null)
+    inline def setEnabledNull: Self = StObject.set(x, "enabled", null)
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setPublisher(value: NullableOption[String]): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    inline def setPublisher(value: NullableOption[String]): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherNull: Self = StObject.set(x, "publisher", null)
+    inline def setPublisherNull: Self = StObject.set(x, "publisher", null)
     
-    @scala.inline
-    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
+    inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
-    @scala.inline
-    def setShowInNotificationCenter(value: NullableOption[Boolean]): Self = StObject.set(x, "showInNotificationCenter", value.asInstanceOf[js.Any])
+    inline def setShowInNotificationCenter(value: NullableOption[Boolean]): Self = StObject.set(x, "showInNotificationCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowInNotificationCenterNull: Self = StObject.set(x, "showInNotificationCenter", null)
+    inline def setShowInNotificationCenterNull: Self = StObject.set(x, "showInNotificationCenter", null)
     
-    @scala.inline
-    def setShowInNotificationCenterUndefined: Self = StObject.set(x, "showInNotificationCenter", js.undefined)
+    inline def setShowInNotificationCenterUndefined: Self = StObject.set(x, "showInNotificationCenter", js.undefined)
     
-    @scala.inline
-    def setShowOnLockScreen(value: NullableOption[Boolean]): Self = StObject.set(x, "showOnLockScreen", value.asInstanceOf[js.Any])
+    inline def setShowOnLockScreen(value: NullableOption[Boolean]): Self = StObject.set(x, "showOnLockScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowOnLockScreenNull: Self = StObject.set(x, "showOnLockScreen", null)
+    inline def setShowOnLockScreenNull: Self = StObject.set(x, "showOnLockScreen", null)
     
-    @scala.inline
-    def setShowOnLockScreenUndefined: Self = StObject.set(x, "showOnLockScreen", js.undefined)
+    inline def setShowOnLockScreenUndefined: Self = StObject.set(x, "showOnLockScreen", js.undefined)
     
-    @scala.inline
-    def setSoundsEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "soundsEnabled", value.asInstanceOf[js.Any])
+    inline def setSoundsEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "soundsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundsEnabledNull: Self = StObject.set(x, "soundsEnabled", null)
+    inline def setSoundsEnabledNull: Self = StObject.set(x, "soundsEnabled", null)
     
-    @scala.inline
-    def setSoundsEnabledUndefined: Self = StObject.set(x, "soundsEnabled", js.undefined)
+    inline def setSoundsEnabledUndefined: Self = StObject.set(x, "soundsEnabled", js.undefined)
   }
 }

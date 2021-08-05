@@ -14,31 +14,23 @@ trait RTCPeerConnectionIceEventInit
 }
 object RTCPeerConnectionIceEventInit {
   
-  @scala.inline
-  def apply(): RTCPeerConnectionIceEventInit = {
+  inline def apply(): RTCPeerConnectionIceEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCPeerConnectionIceEventInit]
   }
   
-  @scala.inline
-  implicit class RTCPeerConnectionIceEventInitMutableBuilder[Self <: RTCPeerConnectionIceEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: RTCPeerConnectionIceEventInit](x: Self) {
     
-    @scala.inline
-    def setCandidate(value: RTCIceCandidate): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
+    inline def setCandidate(value: RTCIceCandidate): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidateNull: Self = StObject.set(x, "candidate", null)
+    inline def setCandidateNull: Self = StObject.set(x, "candidate", null)
     
-    @scala.inline
-    def setCandidateUndefined: Self = StObject.set(x, "candidate", js.undefined)
+    inline def setCandidateUndefined: Self = StObject.set(x, "candidate", js.undefined)
     
-    @scala.inline
-    def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlNull: Self = StObject.set(x, "url", null)
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

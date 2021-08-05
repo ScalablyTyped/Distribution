@@ -11,16 +11,13 @@ trait PickImplsearchFullText extends StObject {
 }
 object PickImplsearchFullText {
   
-  @scala.inline
-  def apply(searchFullText: Boolean): PickImplsearchFullText = {
+  inline def apply(searchFullText: Boolean): PickImplsearchFullText = {
     val __obj = js.Dynamic.literal(searchFullText = searchFullText.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsearchFullText]
   }
   
-  @scala.inline
-  implicit class PickImplsearchFullTextMutableBuilder[Self <: PickImplsearchFullText] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplsearchFullText](x: Self) {
     
-    @scala.inline
-    def setSearchFullText(value: Boolean): Self = StObject.set(x, "searchFullText", value.asInstanceOf[js.Any])
+    inline def setSearchFullText(value: Boolean): Self = StObject.set(x, "searchFullText", value.asInstanceOf[js.Any])
   }
 }

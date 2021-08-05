@@ -16,7 +16,7 @@ object configValidatorMod {
       */
     def this(schema: Schema) = this()
     
-    var schema: js.Any = js.native
+    /* private */ var schema: js.Any = js.native
     
     /**
       * Validate the input config.
@@ -38,14 +38,12 @@ object configValidatorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromSchemaFile(filename: String): ConfigValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchemaFile")(filename.asInstanceOf[js.Any]).asInstanceOf[ConfigValidator]
+    inline def fromSchemaFile(filename: String): ConfigValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchemaFile")(filename.asInstanceOf[js.Any]).asInstanceOf[ConfigValidator]
     
     @JSImport("matrix-appservice-bridge/lib/components/config-validator", "ConfigValidator.loadFromFile")
     @js.native
     def loadFromFile: js.Any = js.native
-    @scala.inline
-    def loadFromFile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadFromFile")(x.asInstanceOf[js.Any])
+    inline def loadFromFile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadFromFile")(x.asInstanceOf[js.Any])
   }
   
   type Schema = js.Any

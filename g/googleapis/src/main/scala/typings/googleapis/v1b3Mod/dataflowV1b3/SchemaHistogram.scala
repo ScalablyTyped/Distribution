@@ -31,28 +31,21 @@ trait SchemaHistogram extends StObject {
 }
 object SchemaHistogram {
   
-  @scala.inline
-  def apply(): SchemaHistogram = {
+  inline def apply(): SchemaHistogram = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHistogram]
   }
   
-  @scala.inline
-  implicit class SchemaHistogramMutableBuilder[Self <: SchemaHistogram] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHistogram](x: Self) {
     
-    @scala.inline
-    def setBucketCounts(value: js.Array[String]): Self = StObject.set(x, "bucketCounts", value.asInstanceOf[js.Any])
+    inline def setBucketCounts(value: js.Array[String]): Self = StObject.set(x, "bucketCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketCountsUndefined: Self = StObject.set(x, "bucketCounts", js.undefined)
+    inline def setBucketCountsUndefined: Self = StObject.set(x, "bucketCounts", js.undefined)
     
-    @scala.inline
-    def setBucketCountsVarargs(value: String*): Self = StObject.set(x, "bucketCounts", js.Array(value :_*))
+    inline def setBucketCountsVarargs(value: String*): Self = StObject.set(x, "bucketCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setFirstBucketOffset(value: Double): Self = StObject.set(x, "firstBucketOffset", value.asInstanceOf[js.Any])
+    inline def setFirstBucketOffset(value: Double): Self = StObject.set(x, "firstBucketOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstBucketOffsetUndefined: Self = StObject.set(x, "firstBucketOffset", js.undefined)
+    inline def setFirstBucketOffsetUndefined: Self = StObject.set(x, "firstBucketOffset", js.undefined)
   }
 }

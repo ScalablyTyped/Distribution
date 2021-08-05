@@ -158,6 +158,6 @@ trait FreeformBuilder extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.FreeformBuilder_typekey")
+  /* private */ @JSName("PowerPoint.FreeformBuilder_typekey")
   var PowerPointDotFreeformBuilder_typekey: FreeformBuilder = js.native
 }

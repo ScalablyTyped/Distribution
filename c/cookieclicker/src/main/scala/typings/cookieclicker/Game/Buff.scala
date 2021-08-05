@@ -50,73 +50,51 @@ trait Buff extends StObject {
 }
 object Buff {
   
-  @scala.inline
-  def apply(desc: String, icon: Icon, name: String, time: Double): Buff = {
+  inline def apply(desc: String, icon: Icon, name: String, time: Double): Buff = {
     val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buff]
   }
   
-  @scala.inline
-  implicit class BuffMutableBuilder[Self <: Buff] (val x: Self) extends AnyVal {
+  extension [Self <: Buff](x: Self) {
     
-    @scala.inline
-    def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setAura(value: `1` | `2`): Self = StObject.set(x, "aura", value.asInstanceOf[js.Any])
+    inline def setAura(value: `1` | `2`): Self = StObject.set(x, "aura", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuraUndefined: Self = StObject.set(x, "aura", js.undefined)
+    inline def setAuraUndefined: Self = StObject.set(x, "aura", js.undefined)
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Boolean): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Boolean): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMultClick(value: Double): Self = StObject.set(x, "multClick", value.asInstanceOf[js.Any])
+    inline def setMultClick(value: Double): Self = StObject.set(x, "multClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultClickUndefined: Self = StObject.set(x, "multClick", js.undefined)
+    inline def setMultClickUndefined: Self = StObject.set(x, "multClick", js.undefined)
     
-    @scala.inline
-    def setMultCpS(value: Double): Self = StObject.set(x, "multCpS", value.asInstanceOf[js.Any])
+    inline def setMultCpS(value: Double): Self = StObject.set(x, "multCpS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultCpSUndefined: Self = StObject.set(x, "multCpS", js.undefined)
+    inline def setMultCpSUndefined: Self = StObject.set(x, "multCpS", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDie(value: () => Unit): Self = StObject.set(x, "onDie", js.Any.fromFunction0(value))
+    inline def setOnDie(value: () => Unit): Self = StObject.set(x, "onDie", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDieUndefined: Self = StObject.set(x, "onDie", js.undefined)
+    inline def setOnDieUndefined: Self = StObject.set(x, "onDie", js.undefined)
     
-    @scala.inline
-    def setPow(value: Double): Self = StObject.set(x, "pow", value.asInstanceOf[js.Any])
+    inline def setPow(value: Double): Self = StObject.set(x, "pow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowUndefined: Self = StObject.set(x, "pow", js.undefined)
+    inline def setPowUndefined: Self = StObject.set(x, "pow", js.undefined)
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

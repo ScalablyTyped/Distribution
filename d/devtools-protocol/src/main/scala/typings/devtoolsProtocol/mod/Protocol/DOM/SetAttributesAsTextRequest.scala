@@ -24,25 +24,19 @@ trait SetAttributesAsTextRequest extends StObject {
 }
 object SetAttributesAsTextRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId, text: String): SetAttributesAsTextRequest = {
+  inline def apply(nodeId: NodeId, text: String): SetAttributesAsTextRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetAttributesAsTextRequest]
   }
   
-  @scala.inline
-  implicit class SetAttributesAsTextRequestMutableBuilder[Self <: SetAttributesAsTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetAttributesAsTextRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

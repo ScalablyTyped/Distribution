@@ -64,59 +64,42 @@ object ajaxChain {
   }
   object AjaxChainConfiguration {
     
-    @scala.inline
-    def apply(ajaxSettings: JQueryAjaxSettings): AjaxChainConfiguration = {
+    inline def apply(ajaxSettings: JQueryAjaxSettings): AjaxChainConfiguration = {
       val __obj = js.Dynamic.literal(ajaxSettings = ajaxSettings.asInstanceOf[js.Any])
       __obj.asInstanceOf[AjaxChainConfiguration]
     }
     
-    @scala.inline
-    implicit class AjaxChainConfigurationMutableBuilder[Self <: AjaxChainConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: AjaxChainConfiguration](x: Self) {
       
-      @scala.inline
-      def setAjaxSettings(value: JQueryAjaxSettings): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
+      inline def setAjaxSettings(value: JQueryAjaxSettings): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendToUrl(value: /* response */ js.Any => String): Self = StObject.set(x, "appendToUrl", js.Any.fromFunction1(value))
+      inline def setAppendToUrl(value: /* response */ js.Any => String): Self = StObject.set(x, "appendToUrl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAppendToUrlUndefined: Self = StObject.set(x, "appendToUrl", js.undefined)
+      inline def setAppendToUrlUndefined: Self = StObject.set(x, "appendToUrl", js.undefined)
       
-      @scala.inline
-      def setHasCache(value: /* response */ js.Any => js.Any): Self = StObject.set(x, "hasCache", js.Any.fromFunction1(value))
+      inline def setHasCache(value: /* response */ js.Any => js.Any): Self = StObject.set(x, "hasCache", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasCacheUndefined: Self = StObject.set(x, "hasCache", js.undefined)
+      inline def setHasCacheUndefined: Self = StObject.set(x, "hasCache", js.undefined)
       
-      @scala.inline
-      def setHasErrors(value: /* response */ js.Any => js.Any): Self = StObject.set(x, "hasErrors", js.Any.fromFunction1(value))
+      inline def setHasErrors(value: /* response */ js.Any => js.Any): Self = StObject.set(x, "hasErrors", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasErrorsUndefined: Self = StObject.set(x, "hasErrors", js.undefined)
+      inline def setHasErrorsUndefined: Self = StObject.set(x, "hasErrors", js.undefined)
       
-      @scala.inline
-      def setHasHaltingCapabilities(value: /* response */ js.Any => Boolean): Self = StObject.set(x, "hasHaltingCapabilities", js.Any.fromFunction1(value))
+      inline def setHasHaltingCapabilities(value: /* response */ js.Any => Boolean): Self = StObject.set(x, "hasHaltingCapabilities", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasHaltingCapabilitiesUndefined: Self = StObject.set(x, "hasHaltingCapabilities", js.undefined)
+      inline def setHasHaltingCapabilitiesUndefined: Self = StObject.set(x, "hasHaltingCapabilities", js.undefined)
       
-      @scala.inline
-      def setIsSkippable(value: /* response */ js.Any => Boolean): Self = StObject.set(x, "isSkippable", js.Any.fromFunction1(value))
+      inline def setIsSkippable(value: /* response */ js.Any => Boolean): Self = StObject.set(x, "isSkippable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsSkippableUndefined: Self = StObject.set(x, "isSkippable", js.undefined)
+      inline def setIsSkippableUndefined: Self = StObject.set(x, "isSkippable", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setTransform(value: /* response */ js.Any => String | js.Object | js.Array[js.Object]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* response */ js.Any => String | js.Object | js.Array[js.Object]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   

@@ -14,25 +14,19 @@ trait BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse extends StObje
 }
 object BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse = {
+  inline def apply(): BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponseMutableBuilder[Self <: BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse](x: Self) {
     
-    @scala.inline
-    def setDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

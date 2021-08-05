@@ -18,25 +18,19 @@ trait GetAnomalyMonitorsResponse extends StObject {
 }
 object GetAnomalyMonitorsResponse {
   
-  @scala.inline
-  def apply(AnomalyMonitors: AnomalyMonitors): GetAnomalyMonitorsResponse = {
+  inline def apply(AnomalyMonitors: AnomalyMonitors): GetAnomalyMonitorsResponse = {
     val __obj = js.Dynamic.literal(AnomalyMonitors = AnomalyMonitors.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAnomalyMonitorsResponse]
   }
   
-  @scala.inline
-  implicit class GetAnomalyMonitorsResponseMutableBuilder[Self <: GetAnomalyMonitorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAnomalyMonitorsResponse](x: Self) {
     
-    @scala.inline
-    def setAnomalyMonitors(value: AnomalyMonitors): Self = StObject.set(x, "AnomalyMonitors", value.asInstanceOf[js.Any])
+    inline def setAnomalyMonitors(value: AnomalyMonitors): Self = StObject.set(x, "AnomalyMonitors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnomalyMonitorsVarargs(value: AnomalyMonitor*): Self = StObject.set(x, "AnomalyMonitors", js.Array(value :_*))
+    inline def setAnomalyMonitorsVarargs(value: AnomalyMonitor*): Self = StObject.set(x, "AnomalyMonitors", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
   }
 }

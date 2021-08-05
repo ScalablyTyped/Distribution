@@ -23,8 +23,7 @@ trait ISession extends StObject {
 }
 object ISession {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getUser: () => IdNumber,
     getUserToken: () => String,
     isLoggedIn: () => Boolean,
@@ -37,28 +36,20 @@ object ISession {
     __obj.asInstanceOf[ISession]
   }
   
-  @scala.inline
-  implicit class ISessionMutableBuilder[Self <: ISession] (val x: Self) extends AnyVal {
+  extension [Self <: ISession](x: Self) {
     
-    @scala.inline
-    def setGetUser(value: () => IdNumber): Self = StObject.set(x, "getUser", js.Any.fromFunction0(value))
+    inline def setGetUser(value: () => IdNumber): Self = StObject.set(x, "getUser", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUserToken(value: () => String): Self = StObject.set(x, "getUserToken", js.Any.fromFunction0(value))
+    inline def setGetUserToken(value: () => String): Self = StObject.set(x, "getUserToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLoggedIn(value: () => Boolean): Self = StObject.set(x, "isLoggedIn", js.Any.fromFunction0(value))
+    inline def setIsLoggedIn(value: () => Boolean): Self = StObject.set(x, "isLoggedIn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLogin(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "login", js.Any.fromFunction2(value))
+    inline def setLogin(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "login", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLogout(value: () => js.Promise[Unit]): Self = StObject.set(x, "logout", js.Any.fromFunction0(value))
+    inline def setLogout(value: () => js.Promise[Unit]): Self = StObject.set(x, "logout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSsoLogin(value: String => js.Promise[Unit]): Self = StObject.set(x, "ssoLogin", js.Any.fromFunction1(value))
+    inline def setSsoLogin(value: String => js.Promise[Unit]): Self = StObject.set(x, "ssoLogin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTokenLogin(value: String => js.Promise[Unit]): Self = StObject.set(x, "tokenLogin", js.Any.fromFunction1(value))
+    inline def setTokenLogin(value: String => js.Promise[Unit]): Self = StObject.set(x, "tokenLogin", js.Any.fromFunction1(value))
   }
 }

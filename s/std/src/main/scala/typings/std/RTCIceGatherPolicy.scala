@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCIceGatherPolicy extends StObject
 object RTCIceGatherPolicy {
   
-  @scala.inline
-  def all: typings.std.stdStrings.all = "all".asInstanceOf[typings.std.stdStrings.all]
+  inline def all: typings.std.stdStrings.all = "all".asInstanceOf[typings.std.stdStrings.all]
   
-  @scala.inline
-  def nohost: typings.std.stdStrings.nohost = "nohost".asInstanceOf[typings.std.stdStrings.nohost]
+  inline def nohost: typings.std.stdStrings.nohost = "nohost".asInstanceOf[typings.std.stdStrings.nohost]
   
-  @scala.inline
-  def relay: typings.std.stdStrings.relay = "relay".asInstanceOf[typings.std.stdStrings.relay]
+  inline def relay: typings.std.stdStrings.relay = "relay".asInstanceOf[typings.std.stdStrings.relay]
 }

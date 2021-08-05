@@ -66,43 +66,31 @@ trait IController
 }
 object IController {
   
-  @scala.inline
-  def apply(): IController = {
+  inline def apply(): IController = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IController]
   }
   
-  @scala.inline
-  implicit class IControllerMutableBuilder[Self <: IController] (val x: Self) extends AnyVal {
+  extension [Self <: IController](x: Self) {
     
-    @scala.inline
-    def set$doCheck(value: () => Unit): Self = StObject.set(x, "$doCheck", js.Any.fromFunction0(value))
+    inline def set$doCheck(value: () => Unit): Self = StObject.set(x, "$doCheck", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set$doCheckUndefined: Self = StObject.set(x, "$doCheck", js.undefined)
+    inline def set$doCheckUndefined: Self = StObject.set(x, "$doCheck", js.undefined)
     
-    @scala.inline
-    def set$onChanges(value: /* onChangesObj */ IOnChangesObject => Unit): Self = StObject.set(x, "$onChanges", js.Any.fromFunction1(value))
+    inline def set$onChanges(value: /* onChangesObj */ IOnChangesObject => Unit): Self = StObject.set(x, "$onChanges", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set$onChangesUndefined: Self = StObject.set(x, "$onChanges", js.undefined)
+    inline def set$onChangesUndefined: Self = StObject.set(x, "$onChanges", js.undefined)
     
-    @scala.inline
-    def set$onDestroy(value: () => Unit): Self = StObject.set(x, "$onDestroy", js.Any.fromFunction0(value))
+    inline def set$onDestroy(value: () => Unit): Self = StObject.set(x, "$onDestroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set$onDestroyUndefined: Self = StObject.set(x, "$onDestroy", js.undefined)
+    inline def set$onDestroyUndefined: Self = StObject.set(x, "$onDestroy", js.undefined)
     
-    @scala.inline
-    def set$onInit(value: () => Unit): Self = StObject.set(x, "$onInit", js.Any.fromFunction0(value))
+    inline def set$onInit(value: () => Unit): Self = StObject.set(x, "$onInit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set$onInitUndefined: Self = StObject.set(x, "$onInit", js.undefined)
+    inline def set$onInitUndefined: Self = StObject.set(x, "$onInit", js.undefined)
     
-    @scala.inline
-    def set$postLink(value: () => Unit): Self = StObject.set(x, "$postLink", js.Any.fromFunction0(value))
+    inline def set$postLink(value: () => Unit): Self = StObject.set(x, "$postLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set$postLinkUndefined: Self = StObject.set(x, "$postLink", js.undefined)
+    inline def set$postLinkUndefined: Self = StObject.set(x, "$postLink", js.undefined)
   }
 }

@@ -28,8 +28,7 @@ trait Consumer extends StObject {
 }
 object Consumer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConsumerARN: ConsumerARN,
     ConsumerCreationTimestamp: Timestamp,
     ConsumerName: ConsumerName,
@@ -39,19 +38,14 @@ object Consumer {
     __obj.asInstanceOf[Consumer]
   }
   
-  @scala.inline
-  implicit class ConsumerMutableBuilder[Self <: Consumer] (val x: Self) extends AnyVal {
+  extension [Self <: Consumer](x: Self) {
     
-    @scala.inline
-    def setConsumerARN(value: ConsumerARN): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
+    inline def setConsumerARN(value: ConsumerARN): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerCreationTimestamp(value: Timestamp): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setConsumerCreationTimestamp(value: Timestamp): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerName(value: ConsumerName): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
+    inline def setConsumerName(value: ConsumerName): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerStatus(value: ConsumerStatus): Self = StObject.set(x, "ConsumerStatus", value.asInstanceOf[js.Any])
+    inline def setConsumerStatus(value: ConsumerStatus): Self = StObject.set(x, "ConsumerStatus", value.asInstanceOf[js.Any])
   }
 }

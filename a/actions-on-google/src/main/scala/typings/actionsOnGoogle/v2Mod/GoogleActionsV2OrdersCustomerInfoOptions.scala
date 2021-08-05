@@ -13,22 +13,17 @@ trait GoogleActionsV2OrdersCustomerInfoOptions extends StObject {
 }
 object GoogleActionsV2OrdersCustomerInfoOptions {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersCustomerInfoOptions = {
+  inline def apply(): GoogleActionsV2OrdersCustomerInfoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersCustomerInfoOptions]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersCustomerInfoOptionsMutableBuilder[Self <: GoogleActionsV2OrdersCustomerInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersCustomerInfoOptions](x: Self) {
     
-    @scala.inline
-    def setCustomerInfoProperties(value: js.Array[GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties]): Self = StObject.set(x, "customerInfoProperties", value.asInstanceOf[js.Any])
+    inline def setCustomerInfoProperties(value: js.Array[GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties]): Self = StObject.set(x, "customerInfoProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerInfoPropertiesUndefined: Self = StObject.set(x, "customerInfoProperties", js.undefined)
+    inline def setCustomerInfoPropertiesUndefined: Self = StObject.set(x, "customerInfoProperties", js.undefined)
     
-    @scala.inline
-    def setCustomerInfoPropertiesVarargs(value: GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties*): Self = StObject.set(x, "customerInfoProperties", js.Array(value :_*))
+    inline def setCustomerInfoPropertiesVarargs(value: GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties*): Self = StObject.set(x, "customerInfoProperties", js.Array(value :_*))
   }
 }

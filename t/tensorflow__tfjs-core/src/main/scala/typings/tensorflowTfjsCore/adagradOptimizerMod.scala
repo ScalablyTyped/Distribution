@@ -16,11 +16,11 @@ object adagradOptimizerMod {
     def this(learningRate: Double) = this()
     def this(learningRate: Double, initialAccumulatorValue: Double) = this()
     
-    var accumulatedGrads: js.Any = js.native
+    /* private */ var accumulatedGrads: js.Any = js.native
     
-    var initialAccumulatorValue: js.Any = js.native
+    /* private */ var initialAccumulatorValue: js.Any = js.native
     
-    var learningRate: Double = js.native
+    /* protected */ var learningRate: Double = js.native
   }
   /* static members */
   object AdagradOptimizer {
@@ -33,11 +33,9 @@ object adagradOptimizerMod {
     @JSImport("@tensorflow/tfjs-core/dist/optimizers/adagrad_optimizer", "AdagradOptimizer.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
 }

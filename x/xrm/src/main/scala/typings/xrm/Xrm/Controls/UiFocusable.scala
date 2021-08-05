@@ -16,16 +16,13 @@ trait UiFocusable extends StObject {
 }
 object UiFocusable {
   
-  @scala.inline
-  def apply(setFocus: () => Unit): UiFocusable = {
+  inline def apply(setFocus: () => Unit): UiFocusable = {
     val __obj = js.Dynamic.literal(setFocus = js.Any.fromFunction0(setFocus))
     __obj.asInstanceOf[UiFocusable]
   }
   
-  @scala.inline
-  implicit class UiFocusableMutableBuilder[Self <: UiFocusable] (val x: Self) extends AnyVal {
+  extension [Self <: UiFocusable](x: Self) {
     
-    @scala.inline
-    def setSetFocus(value: () => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
+    inline def setSetFocus(value: () => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
   }
 }

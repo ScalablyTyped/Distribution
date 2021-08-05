@@ -19,8 +19,7 @@ trait FilterRowsData[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[St
 }
 object FilterRowsData {
   
-  @scala.inline
-  def apply[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */](
+  inline def apply[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */](
     cellsById: StringDictionary[DataTableCell[js.Any, DataTableHeader[String]]],
     headers: js.Array[H],
     inputValue: String,
@@ -32,29 +31,22 @@ object FilterRowsData {
     __obj.asInstanceOf[FilterRowsData[R, H]]
   }
   
-  @scala.inline
-  implicit class FilterRowsDataMutableBuilder[Self <: FilterRowsData[?, ?], R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */] (val x: Self & (FilterRowsData[R, H])) extends AnyVal {
+  extension [Self <: FilterRowsData[?, ?], R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */](x: Self & (FilterRowsData[R, H])) {
     
-    @scala.inline
-    def setCellsById(value: StringDictionary[DataTableCell[js.Any, DataTableHeader[String]]]): Self = StObject.set(x, "cellsById", value.asInstanceOf[js.Any])
+    inline def setCellsById(value: StringDictionary[DataTableCell[js.Any, DataTableHeader[String]]]): Self = StObject.set(x, "cellsById", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Array[H]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[H]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersVarargs(value: H*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: H*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+    inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIds(
+    inline def setRowIds(
       value: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: R['id'] */ js.Any
         ]
     ): Self = StObject.set(x, "rowIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIdsVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: R['id'] */ js.Any)*): Self = StObject.set(x, "rowIds", js.Array(value :_*))
+    inline def setRowIdsVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: R['id'] */ js.Any)*): Self = StObject.set(x, "rowIds", js.Array(value :_*))
   }
 }

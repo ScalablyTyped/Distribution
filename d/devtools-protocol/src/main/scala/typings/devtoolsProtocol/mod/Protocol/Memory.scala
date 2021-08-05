@@ -12,17 +12,14 @@ object Memory {
   }
   object GetAllTimeSamplingProfileResponse {
     
-    @scala.inline
-    def apply(profile: SamplingProfile): GetAllTimeSamplingProfileResponse = {
+    inline def apply(profile: SamplingProfile): GetAllTimeSamplingProfileResponse = {
       val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAllTimeSamplingProfileResponse]
     }
     
-    @scala.inline
-    implicit class GetAllTimeSamplingProfileResponseMutableBuilder[Self <: GetAllTimeSamplingProfileResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetAllTimeSamplingProfileResponse](x: Self) {
       
-      @scala.inline
-      def setProfile(value: SamplingProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: SamplingProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,17 +29,14 @@ object Memory {
   }
   object GetBrowserSamplingProfileResponse {
     
-    @scala.inline
-    def apply(profile: SamplingProfile): GetBrowserSamplingProfileResponse = {
+    inline def apply(profile: SamplingProfile): GetBrowserSamplingProfileResponse = {
       val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBrowserSamplingProfileResponse]
     }
     
-    @scala.inline
-    implicit class GetBrowserSamplingProfileResponseMutableBuilder[Self <: GetBrowserSamplingProfileResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetBrowserSamplingProfileResponse](x: Self) {
       
-      @scala.inline
-      def setProfile(value: SamplingProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: SamplingProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,23 +50,18 @@ object Memory {
   }
   object GetDOMCountersResponse {
     
-    @scala.inline
-    def apply(documents: integer, jsEventListeners: integer, nodes: integer): GetDOMCountersResponse = {
+    inline def apply(documents: integer, jsEventListeners: integer, nodes: integer): GetDOMCountersResponse = {
       val __obj = js.Dynamic.literal(documents = documents.asInstanceOf[js.Any], jsEventListeners = jsEventListeners.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDOMCountersResponse]
     }
     
-    @scala.inline
-    implicit class GetDOMCountersResponseMutableBuilder[Self <: GetDOMCountersResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetDOMCountersResponse](x: Self) {
       
-      @scala.inline
-      def setDocuments(value: integer): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
+      inline def setDocuments(value: integer): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsEventListeners(value: integer): Self = StObject.set(x, "jsEventListeners", value.asInstanceOf[js.Any])
+      inline def setJsEventListeners(value: integer): Self = StObject.set(x, "jsEventListeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodes(value: integer): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: integer): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,17 +71,14 @@ object Memory {
   }
   object GetSamplingProfileResponse {
     
-    @scala.inline
-    def apply(profile: SamplingProfile): GetSamplingProfileResponse = {
+    inline def apply(profile: SamplingProfile): GetSamplingProfileResponse = {
       val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSamplingProfileResponse]
     }
     
-    @scala.inline
-    implicit class GetSamplingProfileResponseMutableBuilder[Self <: GetSamplingProfileResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetSamplingProfileResponse](x: Self) {
       
-      @scala.inline
-      def setProfile(value: SamplingProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: SamplingProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,26 +107,20 @@ object Memory {
   }
   object Module {
     
-    @scala.inline
-    def apply(baseAddress: String, name: String, size: Double, uuid: String): Module = {
+    inline def apply(baseAddress: String, name: String, size: Double, uuid: String): Module = {
       val __obj = js.Dynamic.literal(baseAddress = baseAddress.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Module]
     }
     
-    @scala.inline
-    implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+    extension [Self <: Module](x: Self) {
       
-      @scala.inline
-      def setBaseAddress(value: String): Self = StObject.set(x, "baseAddress", value.asInstanceOf[js.Any])
+      inline def setBaseAddress(value: String): Self = StObject.set(x, "baseAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,11 +131,9 @@ object Memory {
   trait PressureLevel extends StObject
   object PressureLevel {
     
-    @scala.inline
-    def critical: typings.devtoolsProtocol.devtoolsProtocolStrings.critical = "critical".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.critical]
+    inline def critical: typings.devtoolsProtocol.devtoolsProtocolStrings.critical = "critical".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.critical]
     
-    @scala.inline
-    def moderate: typings.devtoolsProtocol.devtoolsProtocolStrings.moderate = "moderate".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.moderate]
+    inline def moderate: typings.devtoolsProtocol.devtoolsProtocolStrings.moderate = "moderate".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.moderate]
   }
   
   trait SamplingProfile extends StObject {
@@ -166,26 +144,20 @@ object Memory {
   }
   object SamplingProfile {
     
-    @scala.inline
-    def apply(modules: js.Array[Module], samples: js.Array[SamplingProfileNode]): SamplingProfile = {
+    inline def apply(modules: js.Array[Module], samples: js.Array[SamplingProfileNode]): SamplingProfile = {
       val __obj = js.Dynamic.literal(modules = modules.asInstanceOf[js.Any], samples = samples.asInstanceOf[js.Any])
       __obj.asInstanceOf[SamplingProfile]
     }
     
-    @scala.inline
-    implicit class SamplingProfileMutableBuilder[Self <: SamplingProfile] (val x: Self) extends AnyVal {
+    extension [Self <: SamplingProfile](x: Self) {
       
-      @scala.inline
-      def setModules(value: js.Array[Module]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: js.Array[Module]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesVarargs(value: Module*): Self = StObject.set(x, "modules", js.Array(value :_*))
+      inline def setModulesVarargs(value: Module*): Self = StObject.set(x, "modules", js.Array(value :_*))
       
-      @scala.inline
-      def setSamples(value: js.Array[SamplingProfileNode]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
+      inline def setSamples(value: js.Array[SamplingProfileNode]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplesVarargs(value: SamplingProfileNode*): Self = StObject.set(x, "samples", js.Array(value :_*))
+      inline def setSamplesVarargs(value: SamplingProfileNode*): Self = StObject.set(x, "samples", js.Array(value :_*))
     }
   }
   
@@ -208,26 +180,20 @@ object Memory {
   }
   object SamplingProfileNode {
     
-    @scala.inline
-    def apply(size: Double, stack: js.Array[String], total: Double): SamplingProfileNode = {
+    inline def apply(size: Double, stack: js.Array[String], total: Double): SamplingProfileNode = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[SamplingProfileNode]
     }
     
-    @scala.inline
-    implicit class SamplingProfileNodeMutableBuilder[Self <: SamplingProfileNode] (val x: Self) extends AnyVal {
+    extension [Self <: SamplingProfileNode](x: Self) {
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -240,17 +206,14 @@ object Memory {
   }
   object SetPressureNotificationsSuppressedRequest {
     
-    @scala.inline
-    def apply(suppressed: Boolean): SetPressureNotificationsSuppressedRequest = {
+    inline def apply(suppressed: Boolean): SetPressureNotificationsSuppressedRequest = {
       val __obj = js.Dynamic.literal(suppressed = suppressed.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetPressureNotificationsSuppressedRequest]
     }
     
-    @scala.inline
-    implicit class SetPressureNotificationsSuppressedRequestMutableBuilder[Self <: SetPressureNotificationsSuppressedRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SetPressureNotificationsSuppressedRequest](x: Self) {
       
-      @scala.inline
-      def setSuppressed(value: Boolean): Self = StObject.set(x, "suppressed", value.asInstanceOf[js.Any])
+      inline def setSuppressed(value: Boolean): Self = StObject.set(x, "suppressed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -263,17 +226,14 @@ object Memory {
   }
   object SimulatePressureNotificationRequest {
     
-    @scala.inline
-    def apply(level: PressureLevel): SimulatePressureNotificationRequest = {
+    inline def apply(level: PressureLevel): SimulatePressureNotificationRequest = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
       __obj.asInstanceOf[SimulatePressureNotificationRequest]
     }
     
-    @scala.inline
-    implicit class SimulatePressureNotificationRequestMutableBuilder[Self <: SimulatePressureNotificationRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SimulatePressureNotificationRequest](x: Self) {
       
-      @scala.inline
-      def setLevel(value: PressureLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: PressureLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }
   }
   
@@ -291,26 +251,20 @@ object Memory {
   }
   object StartSamplingRequest {
     
-    @scala.inline
-    def apply(): StartSamplingRequest = {
+    inline def apply(): StartSamplingRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StartSamplingRequest]
     }
     
-    @scala.inline
-    implicit class StartSamplingRequestMutableBuilder[Self <: StartSamplingRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StartSamplingRequest](x: Self) {
       
-      @scala.inline
-      def setSamplingInterval(value: integer): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
+      inline def setSamplingInterval(value: integer): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplingIntervalUndefined: Self = StObject.set(x, "samplingInterval", js.undefined)
+      inline def setSamplingIntervalUndefined: Self = StObject.set(x, "samplingInterval", js.undefined)
       
-      @scala.inline
-      def setSuppressRandomness(value: Boolean): Self = StObject.set(x, "suppressRandomness", value.asInstanceOf[js.Any])
+      inline def setSuppressRandomness(value: Boolean): Self = StObject.set(x, "suppressRandomness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressRandomnessUndefined: Self = StObject.set(x, "suppressRandomness", js.undefined)
+      inline def setSuppressRandomnessUndefined: Self = StObject.set(x, "suppressRandomness", js.undefined)
     }
   }
 }

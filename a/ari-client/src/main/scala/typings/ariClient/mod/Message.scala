@@ -18,23 +18,18 @@ trait Message extends StObject {
 }
 object Message {
   
-  @scala.inline
-  def apply(`type`: String): Message = {
+  inline def apply(`type`: String): Message = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setAsterisk_id(value: String): Self = StObject.set(x, "asterisk_id", value.asInstanceOf[js.Any])
+    inline def setAsterisk_id(value: String): Self = StObject.set(x, "asterisk_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsterisk_idUndefined: Self = StObject.set(x, "asterisk_id", js.undefined)
+    inline def setAsterisk_idUndefined: Self = StObject.set(x, "asterisk_id", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

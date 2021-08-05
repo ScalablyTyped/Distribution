@@ -24,31 +24,23 @@ trait PivotGridHeadersRenderedEventUIParam extends StObject {
 }
 object PivotGridHeadersRenderedEventUIParam {
   
-  @scala.inline
-  def apply(): PivotGridHeadersRenderedEventUIParam = {
+  inline def apply(): PivotGridHeadersRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotGridHeadersRenderedEventUIParam]
   }
   
-  @scala.inline
-  implicit class PivotGridHeadersRenderedEventUIParamMutableBuilder[Self <: PivotGridHeadersRenderedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: PivotGridHeadersRenderedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setTable(value: Element): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: Element): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

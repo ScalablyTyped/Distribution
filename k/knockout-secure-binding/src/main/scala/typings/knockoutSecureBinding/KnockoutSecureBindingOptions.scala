@@ -18,39 +18,29 @@ trait KnockoutSecureBindingOptions extends StObject {
 }
 object KnockoutSecureBindingOptions {
   
-  @scala.inline
-  def apply(): KnockoutSecureBindingOptions = {
+  inline def apply(): KnockoutSecureBindingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KnockoutSecureBindingOptions]
   }
   
-  @scala.inline
-  implicit class KnockoutSecureBindingOptionsMutableBuilder[Self <: KnockoutSecureBindingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutSecureBindingOptions](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
-    @scala.inline
-    def setBindings(
+    inline def setBindings(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandlers */ js.Any
     ): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+    inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    @scala.inline
-    def setGlobals(value: js.Any): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+    inline def setGlobals(value: js.Any): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
+    inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
     
-    @scala.inline
-    def setNoVirtualElements(value: Boolean): Self = StObject.set(x, "noVirtualElements", value.asInstanceOf[js.Any])
+    inline def setNoVirtualElements(value: Boolean): Self = StObject.set(x, "noVirtualElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoVirtualElementsUndefined: Self = StObject.set(x, "noVirtualElements", js.undefined)
+    inline def setNoVirtualElementsUndefined: Self = StObject.set(x, "noVirtualElements", js.undefined)
   }
 }

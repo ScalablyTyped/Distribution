@@ -14,25 +14,19 @@ trait PivotGroupValueMetadata extends StObject {
 }
 object PivotGroupValueMetadata {
   
-  @scala.inline
-  def apply(): PivotGroupValueMetadata = {
+  inline def apply(): PivotGroupValueMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotGroupValueMetadata]
   }
   
-  @scala.inline
-  implicit class PivotGroupValueMetadataMutableBuilder[Self <: PivotGroupValueMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: PivotGroupValueMetadata](x: Self) {
     
-    @scala.inline
-    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
-    @scala.inline
-    def setValue(value: ExtendedValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ExtendedValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

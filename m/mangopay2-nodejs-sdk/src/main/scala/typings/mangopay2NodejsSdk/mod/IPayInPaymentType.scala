@@ -23,28 +23,21 @@ trait IPayInPaymentType extends StObject {
 }
 object IPayInPaymentType {
   
-  @scala.inline
-  def apply(): IPayInPaymentType = {
+  inline def apply(): IPayInPaymentType = {
     val __obj = js.Dynamic.literal(BankWire = "BANK_WIRE", Card = "CARD", DirectDebit = "DIRECT_DEBIT", PayPal = "PAYPAL", Preauthorized = "PREAUTHORIZED")
     __obj.asInstanceOf[IPayInPaymentType]
   }
   
-  @scala.inline
-  implicit class IPayInPaymentTypeMutableBuilder[Self <: IPayInPaymentType] (val x: Self) extends AnyVal {
+  extension [Self <: IPayInPaymentType](x: Self) {
     
-    @scala.inline
-    def setBankWire(value: BANK_WIRE): Self = StObject.set(x, "BankWire", value.asInstanceOf[js.Any])
+    inline def setBankWire(value: BANK_WIRE): Self = StObject.set(x, "BankWire", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCard(value: CARD): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
+    inline def setCard(value: CARD): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectDebit(value: DIRECT_DEBIT): Self = StObject.set(x, "DirectDebit", value.asInstanceOf[js.Any])
+    inline def setDirectDebit(value: DIRECT_DEBIT): Self = StObject.set(x, "DirectDebit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayPal(value: PAYPAL): Self = StObject.set(x, "PayPal", value.asInstanceOf[js.Any])
+    inline def setPayPal(value: PAYPAL): Self = StObject.set(x, "PayPal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreauthorized(value: PREAUTHORIZED): Self = StObject.set(x, "Preauthorized", value.asInstanceOf[js.Any])
+    inline def setPreauthorized(value: PREAUTHORIZED): Self = StObject.set(x, "Preauthorized", value.asInstanceOf[js.Any])
   }
 }

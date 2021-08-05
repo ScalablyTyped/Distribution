@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  @scala.inline
-  def apply(preloadEnv: String): Unit = ^.asInstanceOf[js.Dynamic].apply(preloadEnv.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(preloadEnv: String): Unit = ^.asInstanceOf[js.Dynamic].apply(preloadEnv.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("dotenv-load", JSImport.Namespace)
   @js.native

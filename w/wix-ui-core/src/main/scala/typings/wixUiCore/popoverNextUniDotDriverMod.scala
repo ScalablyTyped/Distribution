@@ -11,6 +11,5 @@ object popoverNextUniDotDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def popoverNextDriverFactory(base: js.Any, body: js.Any): GetArrowOffset = (^.asInstanceOf[js.Dynamic].applyDynamic("popoverNextDriverFactory")(base.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetArrowOffset]
+  inline def popoverNextDriverFactory(base: js.Any, body: js.Any): GetArrowOffset = (^.asInstanceOf[js.Dynamic].applyDynamic("popoverNextDriverFactory")(base.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetArrowOffset]
 }

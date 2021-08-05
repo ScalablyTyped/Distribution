@@ -14,8 +14,7 @@ trait ReturnTypePushNodesByBackendIdsToFrontendResponse extends StObject {
 }
 object ReturnTypePushNodesByBackendIdsToFrontendResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     paramsType: js.Array[PushNodesByBackendIdsToFrontendRequest],
     returnType: PushNodesByBackendIdsToFrontendResponse
   ): ReturnTypePushNodesByBackendIdsToFrontendResponse = {
@@ -23,16 +22,12 @@ object ReturnTypePushNodesByBackendIdsToFrontendResponse {
     __obj.asInstanceOf[ReturnTypePushNodesByBackendIdsToFrontendResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypePushNodesByBackendIdsToFrontendResponseMutableBuilder[Self <: ReturnTypePushNodesByBackendIdsToFrontendResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypePushNodesByBackendIdsToFrontendResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[PushNodesByBackendIdsToFrontendRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[PushNodesByBackendIdsToFrontendRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: PushNodesByBackendIdsToFrontendRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: PushNodesByBackendIdsToFrontendRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: PushNodesByBackendIdsToFrontendResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: PushNodesByBackendIdsToFrontendResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

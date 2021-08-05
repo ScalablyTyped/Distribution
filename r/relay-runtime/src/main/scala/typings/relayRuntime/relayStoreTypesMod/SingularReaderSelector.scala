@@ -25,8 +25,7 @@ trait SingularReaderSelector
 }
 object SingularReaderSelector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataID: DataID,
     isWithinUnmatchedTypeRefinement: Boolean,
     kind: String,
@@ -38,25 +37,18 @@ object SingularReaderSelector {
     __obj.asInstanceOf[SingularReaderSelector]
   }
   
-  @scala.inline
-  implicit class SingularReaderSelectorMutableBuilder[Self <: SingularReaderSelector] (val x: Self) extends AnyVal {
+  extension [Self <: SingularReaderSelector](x: Self) {
     
-    @scala.inline
-    def setDataID(value: DataID): Self = StObject.set(x, "dataID", value.asInstanceOf[js.Any])
+    inline def setDataID(value: DataID): Self = StObject.set(x, "dataID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWithinUnmatchedTypeRefinement(value: Boolean): Self = StObject.set(x, "isWithinUnmatchedTypeRefinement", value.asInstanceOf[js.Any])
+    inline def setIsWithinUnmatchedTypeRefinement(value: Boolean): Self = StObject.set(x, "isWithinUnmatchedTypeRefinement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: ReaderFragment): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: ReaderFragment): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: RequestDescriptor): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: RequestDescriptor): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

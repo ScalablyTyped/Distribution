@@ -20,7 +20,7 @@ object mapDataDebugMod {
     def create(id: String, bounds: LatLngBounds_): Unit = js.native
     
     //  = 1.0;
-    var debugTileLayer: LayerGroup_[js.Any] = js.native
+    /* private */ var debugTileLayer: LayerGroup_[js.Any] = js.native
     
     def reset(): Unit = js.native
     
@@ -35,7 +35,7 @@ object mapDataDebugMod {
       */
     def startTimer(waitTime: Double): Unit = js.native
     
-    var timer: js.UndefOr[Double] = js.native
+    /* private */ var timer: js.UndefOr[Double] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -53,34 +53,24 @@ object mapDataDebugMod {
   trait DebugTileState extends StObject
   object DebugTileState {
     
-    @scala.inline
-    def `cache-fresh`: typings.iitc.iitcStrings.`cache-fresh` = "cache-fresh".asInstanceOf[typings.iitc.iitcStrings.`cache-fresh`]
+    inline def `cache-fresh`: typings.iitc.iitcStrings.`cache-fresh` = "cache-fresh".asInstanceOf[typings.iitc.iitcStrings.`cache-fresh`]
     
-    @scala.inline
-    def `cache-stale`: typings.iitc.iitcStrings.`cache-stale` = "cache-stale".asInstanceOf[typings.iitc.iitcStrings.`cache-stale`]
+    inline def `cache-stale`: typings.iitc.iitcStrings.`cache-stale` = "cache-stale".asInstanceOf[typings.iitc.iitcStrings.`cache-stale`]
     
-    @scala.inline
-    def error: typings.iitc.iitcStrings.error = "error".asInstanceOf[typings.iitc.iitcStrings.error]
+    inline def error: typings.iitc.iitcStrings.error = "error".asInstanceOf[typings.iitc.iitcStrings.error]
     
-    @scala.inline
-    def ok: typings.iitc.iitcStrings.ok = "ok".asInstanceOf[typings.iitc.iitcStrings.ok]
+    inline def ok: typings.iitc.iitcStrings.ok = "ok".asInstanceOf[typings.iitc.iitcStrings.ok]
     
-    @scala.inline
-    def `render-queue`: typings.iitc.iitcStrings.`render-queue` = "render-queue".asInstanceOf[typings.iitc.iitcStrings.`render-queue`]
+    inline def `render-queue`: typings.iitc.iitcStrings.`render-queue` = "render-queue".asInstanceOf[typings.iitc.iitcStrings.`render-queue`]
     
-    @scala.inline
-    def `request-fail`: typings.iitc.iitcStrings.`request-fail` = "request-fail".asInstanceOf[typings.iitc.iitcStrings.`request-fail`]
+    inline def `request-fail`: typings.iitc.iitcStrings.`request-fail` = "request-fail".asInstanceOf[typings.iitc.iitcStrings.`request-fail`]
     
-    @scala.inline
-    def requested: typings.iitc.iitcStrings.requested = "requested".asInstanceOf[typings.iitc.iitcStrings.requested]
+    inline def requested: typings.iitc.iitcStrings.requested = "requested".asInstanceOf[typings.iitc.iitcStrings.requested]
     
-    @scala.inline
-    def retrying: typings.iitc.iitcStrings.retrying = "retrying".asInstanceOf[typings.iitc.iitcStrings.retrying]
+    inline def retrying: typings.iitc.iitcStrings.retrying = "retrying".asInstanceOf[typings.iitc.iitcStrings.retrying]
     
-    @scala.inline
-    def `tile-fail`: typings.iitc.iitcStrings.`tile-fail` = "tile-fail".asInstanceOf[typings.iitc.iitcStrings.`tile-fail`]
+    inline def `tile-fail`: typings.iitc.iitcStrings.`tile-fail` = "tile-fail".asInstanceOf[typings.iitc.iitcStrings.`tile-fail`]
     
-    @scala.inline
-    def `tile-timeout`: typings.iitc.iitcStrings.`tile-timeout` = "tile-timeout".asInstanceOf[typings.iitc.iitcStrings.`tile-timeout`]
+    inline def `tile-timeout`: typings.iitc.iitcStrings.`tile-timeout` = "tile-timeout".asInstanceOf[typings.iitc.iitcStrings.`tile-timeout`]
   }
 }

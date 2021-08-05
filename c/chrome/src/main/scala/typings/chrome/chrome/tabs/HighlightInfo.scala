@@ -14,25 +14,19 @@ trait HighlightInfo extends StObject {
 }
 object HighlightInfo {
   
-  @scala.inline
-  def apply(tabs: Double | js.Array[Double]): HighlightInfo = {
+  inline def apply(tabs: Double | js.Array[Double]): HighlightInfo = {
     val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightInfo]
   }
   
-  @scala.inline
-  implicit class HighlightInfoMutableBuilder[Self <: HighlightInfo] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightInfo](x: Self) {
     
-    @scala.inline
-    def setTabs(value: Double | js.Array[Double]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+    inline def setTabs(value: Double | js.Array[Double]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabsVarargs(value: Double*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: Double*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     
-    @scala.inline
-    def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+    inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+    inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
   }
 }

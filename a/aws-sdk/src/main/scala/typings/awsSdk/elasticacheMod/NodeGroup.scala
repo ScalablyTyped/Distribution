@@ -38,52 +38,37 @@ trait NodeGroup extends StObject {
 }
 object NodeGroup {
   
-  @scala.inline
-  def apply(): NodeGroup = {
+  inline def apply(): NodeGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeGroup]
   }
   
-  @scala.inline
-  implicit class NodeGroupMutableBuilder[Self <: NodeGroup] (val x: Self) extends AnyVal {
+  extension [Self <: NodeGroup](x: Self) {
     
-    @scala.inline
-    def setNodeGroupId(value: String): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
+    inline def setNodeGroupId(value: String): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeGroupIdUndefined: Self = StObject.set(x, "NodeGroupId", js.undefined)
+    inline def setNodeGroupIdUndefined: Self = StObject.set(x, "NodeGroupId", js.undefined)
     
-    @scala.inline
-    def setNodeGroupMembers(value: NodeGroupMemberList): Self = StObject.set(x, "NodeGroupMembers", value.asInstanceOf[js.Any])
+    inline def setNodeGroupMembers(value: NodeGroupMemberList): Self = StObject.set(x, "NodeGroupMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeGroupMembersUndefined: Self = StObject.set(x, "NodeGroupMembers", js.undefined)
+    inline def setNodeGroupMembersUndefined: Self = StObject.set(x, "NodeGroupMembers", js.undefined)
     
-    @scala.inline
-    def setNodeGroupMembersVarargs(value: NodeGroupMember*): Self = StObject.set(x, "NodeGroupMembers", js.Array(value :_*))
+    inline def setNodeGroupMembersVarargs(value: NodeGroupMember*): Self = StObject.set(x, "NodeGroupMembers", js.Array(value :_*))
     
-    @scala.inline
-    def setPrimaryEndpoint(value: Endpoint): Self = StObject.set(x, "PrimaryEndpoint", value.asInstanceOf[js.Any])
+    inline def setPrimaryEndpoint(value: Endpoint): Self = StObject.set(x, "PrimaryEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryEndpointUndefined: Self = StObject.set(x, "PrimaryEndpoint", js.undefined)
+    inline def setPrimaryEndpointUndefined: Self = StObject.set(x, "PrimaryEndpoint", js.undefined)
     
-    @scala.inline
-    def setReaderEndpoint(value: Endpoint): Self = StObject.set(x, "ReaderEndpoint", value.asInstanceOf[js.Any])
+    inline def setReaderEndpoint(value: Endpoint): Self = StObject.set(x, "ReaderEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReaderEndpointUndefined: Self = StObject.set(x, "ReaderEndpoint", js.undefined)
+    inline def setReaderEndpointUndefined: Self = StObject.set(x, "ReaderEndpoint", js.undefined)
     
-    @scala.inline
-    def setSlots(value: String): Self = StObject.set(x, "Slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: String): Self = StObject.set(x, "Slots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotsUndefined: Self = StObject.set(x, "Slots", js.undefined)
+    inline def setSlotsUndefined: Self = StObject.set(x, "Slots", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

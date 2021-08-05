@@ -23,31 +23,23 @@ trait OnProgressDownloadResult extends StObject {
 }
 object OnProgressDownloadResult {
   
-  @scala.inline
-  def apply(): OnProgressDownloadResult = {
+  inline def apply(): OnProgressDownloadResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnProgressDownloadResult]
   }
   
-  @scala.inline
-  implicit class OnProgressDownloadResultMutableBuilder[Self <: OnProgressDownloadResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnProgressDownloadResult](x: Self) {
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setTotalBytesExpectedToWrite(value: Double): Self = StObject.set(x, "totalBytesExpectedToWrite", value.asInstanceOf[js.Any])
+    inline def setTotalBytesExpectedToWrite(value: Double): Self = StObject.set(x, "totalBytesExpectedToWrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesExpectedToWriteUndefined: Self = StObject.set(x, "totalBytesExpectedToWrite", js.undefined)
+    inline def setTotalBytesExpectedToWriteUndefined: Self = StObject.set(x, "totalBytesExpectedToWrite", js.undefined)
     
-    @scala.inline
-    def setTotalBytesWritten(value: Double): Self = StObject.set(x, "totalBytesWritten", value.asInstanceOf[js.Any])
+    inline def setTotalBytesWritten(value: Double): Self = StObject.set(x, "totalBytesWritten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesWrittenUndefined: Self = StObject.set(x, "totalBytesWritten", js.undefined)
+    inline def setTotalBytesWrittenUndefined: Self = StObject.set(x, "totalBytesWritten", js.undefined)
   }
 }

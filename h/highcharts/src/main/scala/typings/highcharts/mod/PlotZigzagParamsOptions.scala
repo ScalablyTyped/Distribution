@@ -34,31 +34,23 @@ trait PlotZigzagParamsOptions extends StObject {
 }
 object PlotZigzagParamsOptions {
   
-  @scala.inline
-  def apply(): PlotZigzagParamsOptions = {
+  inline def apply(): PlotZigzagParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotZigzagParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotZigzagParamsOptionsMutableBuilder[Self <: PlotZigzagParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotZigzagParamsOptions](x: Self) {
     
-    @scala.inline
-    def setDeviation(value: Double): Self = StObject.set(x, "deviation", value.asInstanceOf[js.Any])
+    inline def setDeviation(value: Double): Self = StObject.set(x, "deviation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviationUndefined: Self = StObject.set(x, "deviation", js.undefined)
+    inline def setDeviationUndefined: Self = StObject.set(x, "deviation", js.undefined)
     
-    @scala.inline
-    def setHighIndex(value: Double): Self = StObject.set(x, "highIndex", value.asInstanceOf[js.Any])
+    inline def setHighIndex(value: Double): Self = StObject.set(x, "highIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighIndexUndefined: Self = StObject.set(x, "highIndex", js.undefined)
+    inline def setHighIndexUndefined: Self = StObject.set(x, "highIndex", js.undefined)
     
-    @scala.inline
-    def setLowIndex(value: Double): Self = StObject.set(x, "lowIndex", value.asInstanceOf[js.Any])
+    inline def setLowIndex(value: Double): Self = StObject.set(x, "lowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowIndexUndefined: Self = StObject.set(x, "lowIndex", js.undefined)
+    inline def setLowIndexUndefined: Self = StObject.set(x, "lowIndex", js.undefined)
   }
 }

@@ -17,31 +17,23 @@ trait HotpOptionsInterface
 }
 object HotpOptionsInterface {
   
-  @scala.inline
-  def apply(): HotpOptionsInterface = {
+  inline def apply(): HotpOptionsInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HotpOptionsInterface]
   }
   
-  @scala.inline
-  implicit class HotpOptionsInterfaceMutableBuilder[Self <: HotpOptionsInterface] (val x: Self) extends AnyVal {
+  extension [Self <: HotpOptionsInterface](x: Self) {
     
-    @scala.inline
-    def setCreateHmacSecret(value: (/* secret */ String, /* options */ HmacOptions) => Buffer): Self = StObject.set(x, "createHmacSecret", js.Any.fromFunction2(value))
+    inline def setCreateHmacSecret(value: (/* secret */ String, /* options */ HmacOptions) => Buffer): Self = StObject.set(x, "createHmacSecret", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateHmacSecretUndefined: Self = StObject.set(x, "createHmacSecret", js.undefined)
+    inline def setCreateHmacSecretUndefined: Self = StObject.set(x, "createHmacSecret", js.undefined)
     
-    @scala.inline
-    def setCrypto(value: js.Any): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
+    inline def setCrypto(value: js.Any): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCryptoUndefined: Self = StObject.set(x, "crypto", js.undefined)
+    inline def setCryptoUndefined: Self = StObject.set(x, "crypto", js.undefined)
     
-    @scala.inline
-    def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+    inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+    inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
   }
 }

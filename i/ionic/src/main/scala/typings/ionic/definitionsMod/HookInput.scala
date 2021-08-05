@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HookInput extends StObject
 object HookInput {
   
-  @scala.inline
-  def BuildHookInput(
+  inline def BuildHookInput(
     build: AngularBuildOptions | IonicAngularBuildOptions | Ionic1BuildOptions,
     name: buildColonbefore | buildColonafter
   ): typings.ionic.definitionsMod.BuildHookInput = {
@@ -23,14 +22,12 @@ object HookInput {
     __obj.asInstanceOf[typings.ionic.definitionsMod.BuildHookInput]
   }
   
-  @scala.inline
-  def ServeAfterHookInput(serve: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) & ServeDetails): typings.ionic.definitionsMod.ServeAfterHookInput = {
+  inline def ServeAfterHookInput(serve: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) & ServeDetails): typings.ionic.definitionsMod.ServeAfterHookInput = {
     val __obj = js.Dynamic.literal(name = "serve:after", serve = serve.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ionic.definitionsMod.ServeAfterHookInput]
   }
   
-  @scala.inline
-  def ServeBeforeHookInput(serve: AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions): typings.ionic.definitionsMod.ServeBeforeHookInput = {
+  inline def ServeBeforeHookInput(serve: AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions): typings.ionic.definitionsMod.ServeBeforeHookInput = {
     val __obj = js.Dynamic.literal(name = "serve:before", serve = serve.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ionic.definitionsMod.ServeBeforeHookInput]
   }

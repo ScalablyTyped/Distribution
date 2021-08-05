@@ -16,25 +16,19 @@ trait LeftProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StO
 }
 object LeftProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): LeftProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): LeftProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LeftProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class LeftPropsMutableBuilder[Self <: LeftProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (LeftProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: LeftProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (LeftProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setLeft(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftNull: Self = StObject.set(x, "left", null)
+    inline def setLeftNull: Self = StObject.set(x, "left", null)
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "left", js.Array(value :_*))
+    inline def setLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "left", js.Array(value :_*))
   }
 }

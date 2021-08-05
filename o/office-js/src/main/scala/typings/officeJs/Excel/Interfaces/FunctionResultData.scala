@@ -25,25 +25,19 @@ trait FunctionResultData[T] extends StObject {
 }
 object FunctionResultData {
   
-  @scala.inline
-  def apply[T](): FunctionResultData[T] = {
+  inline def apply[T](): FunctionResultData[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FunctionResultData[T]]
   }
   
-  @scala.inline
-  implicit class FunctionResultDataMutableBuilder[Self <: FunctionResultData[?], T] (val x: Self & FunctionResultData[T]) extends AnyVal {
+  extension [Self <: FunctionResultData[?], T](x: Self & FunctionResultData[T]) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

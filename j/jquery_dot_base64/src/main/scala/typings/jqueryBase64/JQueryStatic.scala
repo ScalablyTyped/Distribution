@@ -10,16 +10,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(base64: JQueryBase64Static): JQueryStatic = {
+  inline def apply(base64: JQueryBase64Static): JQueryStatic = {
     val __obj = js.Dynamic.literal(base64 = base64.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setBase64(value: JQueryBase64Static): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+    inline def setBase64(value: JQueryBase64Static): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
   }
 }

@@ -10,14 +10,14 @@ object mockableFunctionsFinderMod {
   @js.native
   class MockableFunctionsFinder () extends StObject {
     
-    var cleanFunctionNameRegex: js.Any = js.native
+    /* private */ var cleanFunctionNameRegex: js.Any = js.native
     
-    var excludedFunctionNames: js.Any = js.native
+    /* private */ var excludedFunctionNames: js.Any = js.native
     
     def find(code: String): js.Array[String] = js.native
     
-    var functionNameRegex: js.Any = js.native
+    /* private */ var functionNameRegex: js.Any = js.native
     
-    var isMockable: js.Any = js.native
+    /* private */ var isMockable: js.Any = js.native
   }
 }

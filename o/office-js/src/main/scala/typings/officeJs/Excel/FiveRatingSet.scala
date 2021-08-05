@@ -21,28 +21,21 @@ trait FiveRatingSet
 }
 object FiveRatingSet {
   
-  @scala.inline
-  def apply(fourBars: Icon, noBars: Icon, oneBar: Icon, threeBars: Icon, twoBars: Icon): FiveRatingSet = {
+  inline def apply(fourBars: Icon, noBars: Icon, oneBar: Icon, threeBars: Icon, twoBars: Icon): FiveRatingSet = {
     val __obj = js.Dynamic.literal(fourBars = fourBars.asInstanceOf[js.Any], noBars = noBars.asInstanceOf[js.Any], oneBar = oneBar.asInstanceOf[js.Any], threeBars = threeBars.asInstanceOf[js.Any], twoBars = twoBars.asInstanceOf[js.Any])
     __obj.asInstanceOf[FiveRatingSet]
   }
   
-  @scala.inline
-  implicit class FiveRatingSetMutableBuilder[Self <: FiveRatingSet] (val x: Self) extends AnyVal {
+  extension [Self <: FiveRatingSet](x: Self) {
     
-    @scala.inline
-    def setFourBars(value: Icon): Self = StObject.set(x, "fourBars", value.asInstanceOf[js.Any])
+    inline def setFourBars(value: Icon): Self = StObject.set(x, "fourBars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoBars(value: Icon): Self = StObject.set(x, "noBars", value.asInstanceOf[js.Any])
+    inline def setNoBars(value: Icon): Self = StObject.set(x, "noBars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneBar(value: Icon): Self = StObject.set(x, "oneBar", value.asInstanceOf[js.Any])
+    inline def setOneBar(value: Icon): Self = StObject.set(x, "oneBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreeBars(value: Icon): Self = StObject.set(x, "threeBars", value.asInstanceOf[js.Any])
+    inline def setThreeBars(value: Icon): Self = StObject.set(x, "threeBars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwoBars(value: Icon): Self = StObject.set(x, "twoBars", value.asInstanceOf[js.Any])
+    inline def setTwoBars(value: Icon): Self = StObject.set(x, "twoBars", value.asInstanceOf[js.Any])
   }
 }

@@ -17,8 +17,7 @@ object mod {
   @js.native
   val generateDifferences: GenerateDifferences_ = js.native
   
-  @scala.inline
-  def showInvisibles(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("showInvisibles")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def showInvisibles(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("showInvisibles")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait Difference extends StObject {
     
@@ -32,32 +31,24 @@ object mod {
   }
   object Difference {
     
-    @scala.inline
-    def apply(offset: Double, operation: insert | delete | replace): Difference = {
+    inline def apply(offset: Double, operation: insert | delete | replace): Difference = {
       val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
       __obj.asInstanceOf[Difference]
     }
     
-    @scala.inline
-    implicit class DifferenceMutableBuilder[Self <: Difference] (val x: Self) extends AnyVal {
+    extension [Self <: Difference](x: Self) {
       
-      @scala.inline
-      def setDeleteText(value: String): Self = StObject.set(x, "deleteText", value.asInstanceOf[js.Any])
+      inline def setDeleteText(value: String): Self = StObject.set(x, "deleteText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteTextUndefined: Self = StObject.set(x, "deleteText", js.undefined)
+      inline def setDeleteTextUndefined: Self = StObject.set(x, "deleteText", js.undefined)
       
-      @scala.inline
-      def setInsertText(value: String): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
+      inline def setInsertText(value: String): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
+      inline def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperation(value: insert | delete | replace): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: insert | delete | replace): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     }
   }
   

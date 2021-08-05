@@ -13,19 +13,15 @@ trait CylinderBodyAttributes
 }
 object CylinderBodyAttributes {
   
-  @scala.inline
-  def apply(): CylinderBodyAttributes = {
+  inline def apply(): CylinderBodyAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CylinderBodyAttributes]
   }
   
-  @scala.inline
-  implicit class CylinderBodyAttributesMutableBuilder[Self <: CylinderBodyAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: CylinderBodyAttributes](x: Self) {
     
-    @scala.inline
-    def setLateralArea(value: String | Double): Self = StObject.set(x, "lateralArea", value.asInstanceOf[js.Any])
+    inline def setLateralArea(value: String | Double): Self = StObject.set(x, "lateralArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLateralAreaUndefined: Self = StObject.set(x, "lateralArea", js.undefined)
+    inline def setLateralAreaUndefined: Self = StObject.set(x, "lateralArea", js.undefined)
   }
 }

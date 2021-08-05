@@ -10,15 +10,11 @@ object Shaders {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ambient(): Ambient = ^.asInstanceOf[js.Dynamic].applyDynamic("ambient")().asInstanceOf[Ambient]
+  inline def ambient(): Ambient = ^.asInstanceOf[js.Dynamic].applyDynamic("ambient")().asInstanceOf[Ambient]
   
-  @scala.inline
-  def diffuse(): DiffusePhong = ^.asInstanceOf[js.Dynamic].applyDynamic("diffuse")().asInstanceOf[DiffusePhong]
+  inline def diffuse(): DiffusePhong = ^.asInstanceOf[js.Dynamic].applyDynamic("diffuse")().asInstanceOf[DiffusePhong]
   
-  @scala.inline
-  def flat(): Flat = ^.asInstanceOf[js.Dynamic].applyDynamic("flat")().asInstanceOf[Flat]
+  inline def flat(): Flat = ^.asInstanceOf[js.Dynamic].applyDynamic("flat")().asInstanceOf[Flat]
   
-  @scala.inline
-  def phong(): Phong = ^.asInstanceOf[js.Dynamic].applyDynamic("phong")().asInstanceOf[Phong]
+  inline def phong(): Phong = ^.asInstanceOf[js.Dynamic].applyDynamic("phong")().asInstanceOf[Phong]
 }

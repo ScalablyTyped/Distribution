@@ -11,19 +11,15 @@ trait Workers extends StObject {
 }
 object Workers {
   
-  @scala.inline
-  def apply(workers: js.Array[OnfleetWorker]): Workers = {
+  inline def apply(workers: js.Array[OnfleetWorker]): Workers = {
     val __obj = js.Dynamic.literal(workers = workers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Workers]
   }
   
-  @scala.inline
-  implicit class WorkersMutableBuilder[Self <: Workers] (val x: Self) extends AnyVal {
+  extension [Self <: Workers](x: Self) {
     
-    @scala.inline
-    def setWorkers(value: js.Array[OnfleetWorker]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+    inline def setWorkers(value: js.Array[OnfleetWorker]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkersVarargs(value: OnfleetWorker*): Self = StObject.set(x, "workers", js.Array(value :_*))
+    inline def setWorkersVarargs(value: OnfleetWorker*): Self = StObject.set(x, "workers", js.Array(value :_*))
   }
 }

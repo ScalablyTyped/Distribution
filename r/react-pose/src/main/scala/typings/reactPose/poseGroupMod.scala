@@ -22,8 +22,7 @@ object poseGroupMod {
     @JSImport("react-pose/lib/components/Transition/PoseGroup", "default.defaultProps")
     @js.native
     def defaultProps: FlipMove = js.native
-    @scala.inline
-    def defaultProps_=(x: FlipMove): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: FlipMove): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

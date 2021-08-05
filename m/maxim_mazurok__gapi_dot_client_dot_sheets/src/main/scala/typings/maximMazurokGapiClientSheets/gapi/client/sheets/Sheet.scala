@@ -52,124 +52,85 @@ trait Sheet extends StObject {
 }
 object Sheet {
   
-  @scala.inline
-  def apply(): Sheet = {
+  inline def apply(): Sheet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sheet]
   }
   
-  @scala.inline
-  implicit class SheetMutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
+  extension [Self <: Sheet](x: Self) {
     
-    @scala.inline
-    def setBandedRanges(value: js.Array[BandedRange]): Self = StObject.set(x, "bandedRanges", value.asInstanceOf[js.Any])
+    inline def setBandedRanges(value: js.Array[BandedRange]): Self = StObject.set(x, "bandedRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandedRangesUndefined: Self = StObject.set(x, "bandedRanges", js.undefined)
+    inline def setBandedRangesUndefined: Self = StObject.set(x, "bandedRanges", js.undefined)
     
-    @scala.inline
-    def setBandedRangesVarargs(value: BandedRange*): Self = StObject.set(x, "bandedRanges", js.Array(value :_*))
+    inline def setBandedRangesVarargs(value: BandedRange*): Self = StObject.set(x, "bandedRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setBasicFilter(value: BasicFilter): Self = StObject.set(x, "basicFilter", value.asInstanceOf[js.Any])
+    inline def setBasicFilter(value: BasicFilter): Self = StObject.set(x, "basicFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicFilterUndefined: Self = StObject.set(x, "basicFilter", js.undefined)
+    inline def setBasicFilterUndefined: Self = StObject.set(x, "basicFilter", js.undefined)
     
-    @scala.inline
-    def setCharts(value: js.Array[EmbeddedChart]): Self = StObject.set(x, "charts", value.asInstanceOf[js.Any])
+    inline def setCharts(value: js.Array[EmbeddedChart]): Self = StObject.set(x, "charts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartsUndefined: Self = StObject.set(x, "charts", js.undefined)
+    inline def setChartsUndefined: Self = StObject.set(x, "charts", js.undefined)
     
-    @scala.inline
-    def setChartsVarargs(value: EmbeddedChart*): Self = StObject.set(x, "charts", js.Array(value :_*))
+    inline def setChartsVarargs(value: EmbeddedChart*): Self = StObject.set(x, "charts", js.Array(value :_*))
     
-    @scala.inline
-    def setColumnGroups(value: js.Array[DimensionGroup]): Self = StObject.set(x, "columnGroups", value.asInstanceOf[js.Any])
+    inline def setColumnGroups(value: js.Array[DimensionGroup]): Self = StObject.set(x, "columnGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnGroupsUndefined: Self = StObject.set(x, "columnGroups", js.undefined)
+    inline def setColumnGroupsUndefined: Self = StObject.set(x, "columnGroups", js.undefined)
     
-    @scala.inline
-    def setColumnGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "columnGroups", js.Array(value :_*))
+    inline def setColumnGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "columnGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setConditionalFormats(value: js.Array[ConditionalFormatRule]): Self = StObject.set(x, "conditionalFormats", value.asInstanceOf[js.Any])
+    inline def setConditionalFormats(value: js.Array[ConditionalFormatRule]): Self = StObject.set(x, "conditionalFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionalFormatsUndefined: Self = StObject.set(x, "conditionalFormats", js.undefined)
+    inline def setConditionalFormatsUndefined: Self = StObject.set(x, "conditionalFormats", js.undefined)
     
-    @scala.inline
-    def setConditionalFormatsVarargs(value: ConditionalFormatRule*): Self = StObject.set(x, "conditionalFormats", js.Array(value :_*))
+    inline def setConditionalFormatsVarargs(value: ConditionalFormatRule*): Self = StObject.set(x, "conditionalFormats", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: js.Array[GridData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[GridData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: GridData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: GridData*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
+    inline def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
+    inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
     
-    @scala.inline
-    def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
+    inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
     
-    @scala.inline
-    def setFilterViews(value: js.Array[FilterView]): Self = StObject.set(x, "filterViews", value.asInstanceOf[js.Any])
+    inline def setFilterViews(value: js.Array[FilterView]): Self = StObject.set(x, "filterViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterViewsUndefined: Self = StObject.set(x, "filterViews", js.undefined)
+    inline def setFilterViewsUndefined: Self = StObject.set(x, "filterViews", js.undefined)
     
-    @scala.inline
-    def setFilterViewsVarargs(value: FilterView*): Self = StObject.set(x, "filterViews", js.Array(value :_*))
+    inline def setFilterViewsVarargs(value: FilterView*): Self = StObject.set(x, "filterViews", js.Array(value :_*))
     
-    @scala.inline
-    def setMerges(value: js.Array[GridRange]): Self = StObject.set(x, "merges", value.asInstanceOf[js.Any])
+    inline def setMerges(value: js.Array[GridRange]): Self = StObject.set(x, "merges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergesUndefined: Self = StObject.set(x, "merges", js.undefined)
+    inline def setMergesUndefined: Self = StObject.set(x, "merges", js.undefined)
     
-    @scala.inline
-    def setMergesVarargs(value: GridRange*): Self = StObject.set(x, "merges", js.Array(value :_*))
+    inline def setMergesVarargs(value: GridRange*): Self = StObject.set(x, "merges", js.Array(value :_*))
     
-    @scala.inline
-    def setProperties(value: SheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setProtectedRanges(value: js.Array[ProtectedRange]): Self = StObject.set(x, "protectedRanges", value.asInstanceOf[js.Any])
+    inline def setProtectedRanges(value: js.Array[ProtectedRange]): Self = StObject.set(x, "protectedRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectedRangesUndefined: Self = StObject.set(x, "protectedRanges", js.undefined)
+    inline def setProtectedRangesUndefined: Self = StObject.set(x, "protectedRanges", js.undefined)
     
-    @scala.inline
-    def setProtectedRangesVarargs(value: ProtectedRange*): Self = StObject.set(x, "protectedRanges", js.Array(value :_*))
+    inline def setProtectedRangesVarargs(value: ProtectedRange*): Self = StObject.set(x, "protectedRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setRowGroups(value: js.Array[DimensionGroup]): Self = StObject.set(x, "rowGroups", value.asInstanceOf[js.Any])
+    inline def setRowGroups(value: js.Array[DimensionGroup]): Self = StObject.set(x, "rowGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowGroupsUndefined: Self = StObject.set(x, "rowGroups", js.undefined)
+    inline def setRowGroupsUndefined: Self = StObject.set(x, "rowGroups", js.undefined)
     
-    @scala.inline
-    def setRowGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "rowGroups", js.Array(value :_*))
+    inline def setRowGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "rowGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setSlicers(value: js.Array[Slicer]): Self = StObject.set(x, "slicers", value.asInstanceOf[js.Any])
+    inline def setSlicers(value: js.Array[Slicer]): Self = StObject.set(x, "slicers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlicersUndefined: Self = StObject.set(x, "slicers", js.undefined)
+    inline def setSlicersUndefined: Self = StObject.set(x, "slicers", js.undefined)
     
-    @scala.inline
-    def setSlicersVarargs(value: Slicer*): Self = StObject.set(x, "slicers", js.Array(value :_*))
+    inline def setSlicersVarargs(value: Slicer*): Self = StObject.set(x, "slicers", js.Array(value :_*))
   }
 }

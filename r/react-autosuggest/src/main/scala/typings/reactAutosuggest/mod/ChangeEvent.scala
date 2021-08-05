@@ -18,19 +18,15 @@ trait ChangeEvent extends StObject {
 }
 object ChangeEvent {
   
-  @scala.inline
-  def apply(method: down | up | escape | enter | click | `type`, newValue: String): ChangeEvent = {
+  inline def apply(method: down | up | escape | enter | click | `type`, newValue: String): ChangeEvent = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEvent]
   }
   
-  @scala.inline
-  implicit class ChangeEventMutableBuilder[Self <: ChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeEvent](x: Self) {
     
-    @scala.inline
-    def setMethod(value: down | up | escape | enter | click | `type`): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: down | up | escape | enter | click | `type`): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
   }
 }

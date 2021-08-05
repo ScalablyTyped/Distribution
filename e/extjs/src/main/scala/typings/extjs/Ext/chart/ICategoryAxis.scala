@@ -16,25 +16,19 @@ trait ICategoryAxis
 }
 object ICategoryAxis {
   
-  @scala.inline
-  def apply(): ICategoryAxis = {
+  inline def apply(): ICategoryAxis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICategoryAxis]
   }
   
-  @scala.inline
-  implicit class ICategoryAxisMutableBuilder[Self <: ICategoryAxis] (val x: Self) extends AnyVal {
+  extension [Self <: ICategoryAxis](x: Self) {
     
-    @scala.inline
-    def setCalculateCategoryCount(value: Boolean): Self = StObject.set(x, "calculateCategoryCount", value.asInstanceOf[js.Any])
+    inline def setCalculateCategoryCount(value: Boolean): Self = StObject.set(x, "calculateCategoryCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculateCategoryCountUndefined: Self = StObject.set(x, "calculateCategoryCount", js.undefined)
+    inline def setCalculateCategoryCountUndefined: Self = StObject.set(x, "calculateCategoryCount", js.undefined)
     
-    @scala.inline
-    def setCategoryNames(value: String): Self = StObject.set(x, "categoryNames", value.asInstanceOf[js.Any])
+    inline def setCategoryNames(value: String): Self = StObject.set(x, "categoryNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryNamesUndefined: Self = StObject.set(x, "categoryNames", js.undefined)
+    inline def setCategoryNamesUndefined: Self = StObject.set(x, "categoryNames", js.undefined)
   }
 }

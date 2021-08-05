@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Encoding extends StObject
 object Encoding {
   
-  @scala.inline
-  def ascii: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.ascii = "ascii".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.ascii]
+  inline def ascii: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.ascii = "ascii".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.ascii]
   
-  @scala.inline
-  def base64: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.base64 = "base64".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.base64]
+  inline def base64: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.base64 = "base64".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.base64]
   
-  @scala.inline
-  def utf8: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.utf8 = "utf8".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.utf8]
+  inline def utf8: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.utf8 = "utf8".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.utf8]
 }

@@ -10,16 +10,13 @@ trait Restorable extends StObject {
 }
 object Restorable {
   
-  @scala.inline
-  def apply(restore: () => Unit): Restorable = {
+  inline def apply(restore: () => Unit): Restorable = {
     val __obj = js.Dynamic.literal(restore = js.Any.fromFunction0(restore))
     __obj.asInstanceOf[Restorable]
   }
   
-  @scala.inline
-  implicit class RestorableMutableBuilder[Self <: Restorable] (val x: Self) extends AnyVal {
+  extension [Self <: Restorable](x: Self) {
     
-    @scala.inline
-    def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
+    inline def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
   }
 }

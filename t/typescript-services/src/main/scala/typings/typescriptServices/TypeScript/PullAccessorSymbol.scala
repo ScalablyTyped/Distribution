@@ -9,9 +9,9 @@ trait PullAccessorSymbol
   extends StObject
      with PullSymbol {
   
-  var _getterSymbol: js.Any = js.native
+  /* private */ var _getterSymbol: js.Any = js.native
   
-  var _setterSymbol: js.Any = js.native
+  /* private */ var _setterSymbol: js.Any = js.native
   
   def getGetter(): PullSymbol = js.native
   

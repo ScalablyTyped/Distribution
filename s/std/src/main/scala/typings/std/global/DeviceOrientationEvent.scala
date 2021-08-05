@@ -21,6 +21,5 @@ object DeviceOrientationEvent {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def requestPermission(): js.Promise[PermissionState] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")().asInstanceOf[js.Promise[PermissionState]]
+  inline def requestPermission(): js.Promise[PermissionState] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")().asInstanceOf[js.Promise[PermissionState]]
 }

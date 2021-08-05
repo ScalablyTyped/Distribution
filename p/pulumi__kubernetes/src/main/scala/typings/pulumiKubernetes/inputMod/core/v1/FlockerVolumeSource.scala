@@ -22,25 +22,19 @@ trait FlockerVolumeSource extends StObject {
 }
 object FlockerVolumeSource {
   
-  @scala.inline
-  def apply(): FlockerVolumeSource = {
+  inline def apply(): FlockerVolumeSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlockerVolumeSource]
   }
   
-  @scala.inline
-  implicit class FlockerVolumeSourceMutableBuilder[Self <: FlockerVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: FlockerVolumeSource](x: Self) {
     
-    @scala.inline
-    def setDatasetName(value: Input[String]): Self = StObject.set(x, "datasetName", value.asInstanceOf[js.Any])
+    inline def setDatasetName(value: Input[String]): Self = StObject.set(x, "datasetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetNameUndefined: Self = StObject.set(x, "datasetName", js.undefined)
+    inline def setDatasetNameUndefined: Self = StObject.set(x, "datasetName", js.undefined)
     
-    @scala.inline
-    def setDatasetUUID(value: Input[String]): Self = StObject.set(x, "datasetUUID", value.asInstanceOf[js.Any])
+    inline def setDatasetUUID(value: Input[String]): Self = StObject.set(x, "datasetUUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUUIDUndefined: Self = StObject.set(x, "datasetUUID", js.undefined)
+    inline def setDatasetUUIDUndefined: Self = StObject.set(x, "datasetUUID", js.undefined)
   }
 }

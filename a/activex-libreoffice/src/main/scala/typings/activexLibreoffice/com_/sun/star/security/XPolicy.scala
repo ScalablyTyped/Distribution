@@ -40,8 +40,7 @@ trait XPolicy
 }
 object XPolicy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultPermissions: SafeArray[js.Any],
     acquire: () => Unit,
     getDefaultPermissions: () => SafeArray[js.Any],
@@ -54,19 +53,14 @@ object XPolicy {
     __obj.asInstanceOf[XPolicy]
   }
   
-  @scala.inline
-  implicit class XPolicyMutableBuilder[Self <: XPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: XPolicy](x: Self) {
     
-    @scala.inline
-    def setDefaultPermissions(value: SafeArray[js.Any]): Self = StObject.set(x, "DefaultPermissions", value.asInstanceOf[js.Any])
+    inline def setDefaultPermissions(value: SafeArray[js.Any]): Self = StObject.set(x, "DefaultPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultPermissions(value: () => SafeArray[js.Any]): Self = StObject.set(x, "getDefaultPermissions", js.Any.fromFunction0(value))
+    inline def setGetDefaultPermissions(value: () => SafeArray[js.Any]): Self = StObject.set(x, "getDefaultPermissions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPermissions(value: String => SafeArray[js.Any]): Self = StObject.set(x, "getPermissions", js.Any.fromFunction1(value))
+    inline def setGetPermissions(value: String => SafeArray[js.Any]): Self = StObject.set(x, "getPermissions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
   }
 }

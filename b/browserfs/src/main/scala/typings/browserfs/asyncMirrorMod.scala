@@ -41,8 +41,7 @@ object asyncMirrorMod {
     /**
       * Constructs and initializes an AsyncMirror file system with the given options.
       */
-    @scala.inline
-    def Create(opts: AsyncMirrorOptions, cb: BFSCallback[AsyncMirror]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(opts: AsyncMirrorOptions, cb: BFSCallback[AsyncMirror]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/AsyncMirror", "default.Name")
     @js.native
@@ -52,8 +51,7 @@ object asyncMirrorMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -61,20 +59,20 @@ object asyncMirrorMod {
     extends SynchronousFileSystem
        with FileSystem {
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _initializeCallbacks: js.Any = js.native
+    /* private */ var _initializeCallbacks: js.Any = js.native
     
-    var _isInitialized: js.Any = js.native
+    /* private */ var _isInitialized: js.Any = js.native
     
     /**
       * Queue of pending asynchronous operations.
       */
-    var _queue: js.Any = js.native
+    /* private */ var _queue: js.Any = js.native
     
-    var _queueRunning: js.Any = js.native
+    /* private */ var _queueRunning: js.Any = js.native
     
-    var _sync: js.Any = js.native
+    /* private */ var _sync: js.Any = js.native
     
     def _syncSync(fd: typings.browserfs.preloadFileMod.default[js.Any]): Unit = js.native
     
@@ -221,20 +219,16 @@ object asyncMirrorMod {
   }
   object AsyncMirrorOptions {
     
-    @scala.inline
-    def apply(async: FileSystem, sync: FileSystem): AsyncMirrorOptions = {
+    inline def apply(async: FileSystem, sync: FileSystem): AsyncMirrorOptions = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsyncMirrorOptions]
     }
     
-    @scala.inline
-    implicit class AsyncMirrorOptionsMutableBuilder[Self <: AsyncMirrorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncMirrorOptions](x: Self) {
       
-      @scala.inline
-      def setAsync(value: FileSystem): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: FileSystem): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSync(value: FileSystem): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: FileSystem): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -26,8 +26,7 @@ trait ContentTypeCreationInformation
 }
 object ContentTypeCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -46,31 +45,22 @@ object ContentTypeCreationInformation {
     __obj.asInstanceOf[ContentTypeCreationInformation]
   }
   
-  @scala.inline
-  implicit class ContentTypeCreationInformationMutableBuilder[Self <: ContentTypeCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ContentTypeCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
+    inline def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_group(value: () => String): Self = StObject.set(x, "get_group", js.Any.fromFunction0(value))
+    inline def setGet_group(value: () => String): Self = StObject.set(x, "get_group", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
+    inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_parentContentType(value: () => ContentType): Self = StObject.set(x, "get_parentContentType", js.Any.fromFunction0(value))
+    inline def setGet_parentContentType(value: () => ContentType): Self = StObject.set(x, "get_parentContentType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
+    inline def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_group(value: String => Unit): Self = StObject.set(x, "set_group", js.Any.fromFunction1(value))
+    inline def setSet_group(value: String => Unit): Self = StObject.set(x, "set_group", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
+    inline def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_parentContentType(value: ContentType => Unit): Self = StObject.set(x, "set_parentContentType", js.Any.fromFunction1(value))
+    inline def setSet_parentContentType(value: ContentType => Unit): Self = StObject.set(x, "set_parentContentType", js.Any.fromFunction1(value))
   }
 }

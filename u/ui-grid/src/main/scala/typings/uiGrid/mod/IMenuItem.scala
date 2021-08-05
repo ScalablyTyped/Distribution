@@ -30,55 +30,39 @@ trait IMenuItem extends StObject {
 }
 object IMenuItem {
   
-  @scala.inline
-  def apply(): IMenuItem = {
+  inline def apply(): IMenuItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMenuItem]
   }
   
-  @scala.inline
-  implicit class IMenuItemMutableBuilder[Self <: IMenuItem] (val x: Self) extends AnyVal {
+  extension [Self <: IMenuItem](x: Self) {
     
-    @scala.inline
-    def setAction(value: /* $event */ IAngularEvent => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+    inline def setAction(value: /* $event */ IAngularEvent => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
+    inline def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setLeaveOpen(value: Boolean): Self = StObject.set(x, "leaveOpen", value.asInstanceOf[js.Any])
+    inline def setLeaveOpen(value: Boolean): Self = StObject.set(x, "leaveOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaveOpenUndefined: Self = StObject.set(x, "leaveOpen", js.undefined)
+    inline def setLeaveOpenUndefined: Self = StObject.set(x, "leaveOpen", js.undefined)
     
-    @scala.inline
-    def setShown(value: () => Boolean): Self = StObject.set(x, "shown", js.Any.fromFunction0(value))
+    inline def setShown(value: () => Boolean): Self = StObject.set(x, "shown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShownUndefined: Self = StObject.set(x, "shown", js.undefined)
+    inline def setShownUndefined: Self = StObject.set(x, "shown", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

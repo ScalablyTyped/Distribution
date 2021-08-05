@@ -12,19 +12,15 @@ trait FABButtonProps
 }
 object FABButtonProps {
   
-  @scala.inline
-  def apply(): FABButtonProps = {
+  inline def apply(): FABButtonProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FABButtonProps]
   }
   
-  @scala.inline
-  implicit class FABButtonPropsMutableBuilder[Self <: FABButtonProps] (val x: Self) extends AnyVal {
+  extension [Self <: FABButtonProps](x: Self) {
     
-    @scala.inline
-    def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
+    inline def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
+    inline def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
   }
 }

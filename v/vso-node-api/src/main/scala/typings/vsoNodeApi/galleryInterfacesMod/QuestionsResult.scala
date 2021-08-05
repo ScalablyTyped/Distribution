@@ -18,22 +18,17 @@ trait QuestionsResult extends StObject {
 }
 object QuestionsResult {
   
-  @scala.inline
-  def apply(hasMoreQuestions: Boolean, questions: js.Array[Question]): QuestionsResult = {
+  inline def apply(hasMoreQuestions: Boolean, questions: js.Array[Question]): QuestionsResult = {
     val __obj = js.Dynamic.literal(hasMoreQuestions = hasMoreQuestions.asInstanceOf[js.Any], questions = questions.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuestionsResult]
   }
   
-  @scala.inline
-  implicit class QuestionsResultMutableBuilder[Self <: QuestionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: QuestionsResult](x: Self) {
     
-    @scala.inline
-    def setHasMoreQuestions(value: Boolean): Self = StObject.set(x, "hasMoreQuestions", value.asInstanceOf[js.Any])
+    inline def setHasMoreQuestions(value: Boolean): Self = StObject.set(x, "hasMoreQuestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestions(value: js.Array[Question]): Self = StObject.set(x, "questions", value.asInstanceOf[js.Any])
+    inline def setQuestions(value: js.Array[Question]): Self = StObject.set(x, "questions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestionsVarargs(value: Question*): Self = StObject.set(x, "questions", js.Array(value :_*))
+    inline def setQuestionsVarargs(value: Question*): Self = StObject.set(x, "questions", js.Array(value :_*))
   }
 }

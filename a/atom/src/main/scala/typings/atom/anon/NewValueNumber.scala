@@ -12,22 +12,17 @@ trait NewValueNumber extends StObject {
 }
 object NewValueNumber {
   
-  @scala.inline
-  def apply(newValue: Double): NewValueNumber = {
+  inline def apply(newValue: Double): NewValueNumber = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewValueNumber]
   }
   
-  @scala.inline
-  implicit class NewValueNumberMutableBuilder[Self <: NewValueNumber] (val x: Self) extends AnyVal {
+  extension [Self <: NewValueNumber](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

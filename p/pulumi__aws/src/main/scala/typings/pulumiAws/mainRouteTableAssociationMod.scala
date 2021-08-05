@@ -56,21 +56,16 @@ object mainRouteTableAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): MainRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MainRouteTableAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MainRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MainRouteTableAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MainRouteTableAssociationState): MainRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MainRouteTableAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MainRouteTableAssociationState, opts: CustomResourceOptions): MainRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MainRouteTableAssociation]
+    inline def get(name: String, id: Input[ID]): MainRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MainRouteTableAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MainRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MainRouteTableAssociation]
+    inline def get(name: String, id: Input[ID], state: MainRouteTableAssociationState): MainRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MainRouteTableAssociation]
+    inline def get(name: String, id: Input[ID], state: MainRouteTableAssociationState, opts: CustomResourceOptions): MainRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MainRouteTableAssociation]
     
     /**
       * Returns true if the given object is an instance of MainRouteTableAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/mainRouteTableAssociation.MainRouteTableAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/mainRouteTableAssociation.MainRouteTableAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/mainRouteTableAssociation.MainRouteTableAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/mainRouteTableAssociation.MainRouteTableAssociation */ Boolean]
   }
   
   trait MainRouteTableAssociationArgs extends StObject {
@@ -88,20 +83,16 @@ object mainRouteTableAssociationMod {
   }
   object MainRouteTableAssociationArgs {
     
-    @scala.inline
-    def apply(routeTableId: Input[String], vpcId: Input[String]): MainRouteTableAssociationArgs = {
+    inline def apply(routeTableId: Input[String], vpcId: Input[String]): MainRouteTableAssociationArgs = {
       val __obj = js.Dynamic.literal(routeTableId = routeTableId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
       __obj.asInstanceOf[MainRouteTableAssociationArgs]
     }
     
-    @scala.inline
-    implicit class MainRouteTableAssociationArgsMutableBuilder[Self <: MainRouteTableAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MainRouteTableAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setRouteTableId(value: Input[String]): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
+      inline def setRouteTableId(value: Input[String]): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,32 +116,24 @@ object mainRouteTableAssociationMod {
   }
   object MainRouteTableAssociationState {
     
-    @scala.inline
-    def apply(): MainRouteTableAssociationState = {
+    inline def apply(): MainRouteTableAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MainRouteTableAssociationState]
     }
     
-    @scala.inline
-    implicit class MainRouteTableAssociationStateMutableBuilder[Self <: MainRouteTableAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: MainRouteTableAssociationState](x: Self) {
       
-      @scala.inline
-      def setOriginalRouteTableId(value: Input[String]): Self = StObject.set(x, "originalRouteTableId", value.asInstanceOf[js.Any])
+      inline def setOriginalRouteTableId(value: Input[String]): Self = StObject.set(x, "originalRouteTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalRouteTableIdUndefined: Self = StObject.set(x, "originalRouteTableId", js.undefined)
+      inline def setOriginalRouteTableIdUndefined: Self = StObject.set(x, "originalRouteTableId", js.undefined)
       
-      @scala.inline
-      def setRouteTableId(value: Input[String]): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
+      inline def setRouteTableId(value: Input[String]): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteTableIdUndefined: Self = StObject.set(x, "routeTableId", js.undefined)
+      inline def setRouteTableIdUndefined: Self = StObject.set(x, "routeTableId", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

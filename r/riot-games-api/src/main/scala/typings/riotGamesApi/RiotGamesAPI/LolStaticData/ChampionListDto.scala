@@ -19,8 +19,7 @@ trait ChampionListDto extends StObject {
 }
 object ChampionListDto {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: StringDictionary[ChampionDto],
     format: String,
     keys: StringDictionary[String],
@@ -32,22 +31,16 @@ object ChampionListDto {
     __obj.asInstanceOf[ChampionListDto]
   }
   
-  @scala.inline
-  implicit class ChampionListDtoMutableBuilder[Self <: ChampionListDto] (val x: Self) extends AnyVal {
+  extension [Self <: ChampionListDto](x: Self) {
     
-    @scala.inline
-    def setData(value: StringDictionary[ChampionDto]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[ChampionDto]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeys(value: StringDictionary[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: StringDictionary[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -25,56 +25,40 @@ object requestMod {
   }
   object Request {
     
-    @scala.inline
-    def apply(): Request = {
+    inline def apply(): Request = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setCookies(value: StringDictionary[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: StringDictionary[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+      inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setQuery_string(value: String): Self = StObject.set(x, "query_string", value.asInstanceOf[js.Any])
+      inline def setQuery_string(value: String): Self = StObject.set(x, "query_string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery_stringUndefined: Self = StObject.set(x, "query_string", js.undefined)
+      inline def setQuery_stringUndefined: Self = StObject.set(x, "query_string", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -88,24 +72,19 @@ object requestMod {
   }
   object SentryRequest {
     
-    @scala.inline
-    def apply(body: String, `type`: SentryRequestType, url: String): SentryRequest = {
+    inline def apply(body: String, `type`: SentryRequestType, url: String): SentryRequest = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SentryRequest]
     }
     
-    @scala.inline
-    implicit class SentryRequestMutableBuilder[Self <: SentryRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SentryRequest](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: SentryRequestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: SentryRequestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,13 +96,10 @@ object requestMod {
   trait SentryRequestType extends StObject
   object SentryRequestType {
     
-    @scala.inline
-    def event: typings.sentryTypes.sentryTypesStrings.event = "event".asInstanceOf[typings.sentryTypes.sentryTypesStrings.event]
+    inline def event: typings.sentryTypes.sentryTypesStrings.event = "event".asInstanceOf[typings.sentryTypes.sentryTypesStrings.event]
     
-    @scala.inline
-    def session: typings.sentryTypes.sentryTypesStrings.session = "session".asInstanceOf[typings.sentryTypes.sentryTypesStrings.session]
+    inline def session: typings.sentryTypes.sentryTypesStrings.session = "session".asInstanceOf[typings.sentryTypes.sentryTypesStrings.session]
     
-    @scala.inline
-    def transaction: typings.sentryTypes.sentryTypesStrings.transaction = "transaction".asInstanceOf[typings.sentryTypes.sentryTypesStrings.transaction]
+    inline def transaction: typings.sentryTypes.sentryTypesStrings.transaction = "transaction".asInstanceOf[typings.sentryTypes.sentryTypesStrings.transaction]
   }
 }

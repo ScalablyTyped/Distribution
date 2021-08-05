@@ -17,26 +17,20 @@ trait ECDH1
 }
 object ECDH1 {
   
-  @scala.inline
-  def apply(kdf: Double, publicData: Buffer, `type`: Double): ECDH1 = {
+  inline def apply(kdf: Double, publicData: Buffer, `type`: Double): ECDH1 = {
     val __obj = js.Dynamic.literal(kdf = kdf.asInstanceOf[js.Any], publicData = publicData.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ECDH1]
   }
   
-  @scala.inline
-  implicit class ECDH1MutableBuilder[Self <: ECDH1] (val x: Self) extends AnyVal {
+  extension [Self <: ECDH1](x: Self) {
     
-    @scala.inline
-    def setKdf(value: Double): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
+    inline def setKdf(value: Double): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicData(value: Buffer): Self = StObject.set(x, "publicData", value.asInstanceOf[js.Any])
+    inline def setPublicData(value: Buffer): Self = StObject.set(x, "publicData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedData(value: Buffer): Self = StObject.set(x, "sharedData", value.asInstanceOf[js.Any])
+    inline def setSharedData(value: Buffer): Self = StObject.set(x, "sharedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedDataUndefined: Self = StObject.set(x, "sharedData", js.undefined)
+    inline def setSharedDataUndefined: Self = StObject.set(x, "sharedData", js.undefined)
   }
 }

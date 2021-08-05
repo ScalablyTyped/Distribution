@@ -13,25 +13,19 @@ trait PartialOptionsAdaptive extends StObject {
 }
 object PartialOptionsAdaptive {
   
-  @scala.inline
-  def apply(): PartialOptionsAdaptive = {
+  inline def apply(): PartialOptionsAdaptive = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialOptionsAdaptive]
   }
   
-  @scala.inline
-  implicit class PartialOptionsAdaptiveMutableBuilder[Self <: PartialOptionsAdaptive] (val x: Self) extends AnyVal {
+  extension [Self <: PartialOptionsAdaptive](x: Self) {
     
-    @scala.inline
-    def setAdaptive(value: Boolean): Self = StObject.set(x, "adaptive", value.asInstanceOf[js.Any])
+    inline def setAdaptive(value: Boolean): Self = StObject.set(x, "adaptive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdaptiveUndefined: Self = StObject.set(x, "adaptive", js.undefined)
+    inline def setAdaptiveUndefined: Self = StObject.set(x, "adaptive", js.undefined)
     
-    @scala.inline
-    def setGpuAcceleration(value: Boolean): Self = StObject.set(x, "gpuAcceleration", value.asInstanceOf[js.Any])
+    inline def setGpuAcceleration(value: Boolean): Self = StObject.set(x, "gpuAcceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGpuAccelerationUndefined: Self = StObject.set(x, "gpuAcceleration", js.undefined)
+    inline def setGpuAccelerationUndefined: Self = StObject.set(x, "gpuAcceleration", js.undefined)
   }
 }

@@ -29,9 +29,9 @@ object storageMod {
     def this(appId: String, appName: String, namespace: String) = this()
     def this(appId: String, appName: String, namespace: String, openDbPromise: js.Promise[IDBDatabase]) = this()
     
-    val appId: js.Any = js.native
+    /* private */ val appId: js.Any = js.native
     
-    val appName: js.Any = js.native
+    /* private */ val appName: js.Any = js.native
     
     def createCompositeKey(key: ProjectNamespaceKeyFieldValue): String = js.native
     
@@ -53,9 +53,9 @@ object storageMod {
     
     def getThrottleMetadata(): js.Promise[js.UndefOr[ThrottleMetadata]] = js.native
     
-    val namespace: js.Any = js.native
+    /* private */ val namespace: js.Any = js.native
     
-    val openDbPromise: js.Any = js.native
+    /* private */ val openDbPromise: js.Any = js.native
     
     def set[T](key: ProjectNamespaceKeyFieldValue, value: T): js.Promise[Unit] = js.native
     
@@ -72,8 +72,7 @@ object storageMod {
     def setThrottleMetadata(metadata: ThrottleMetadata): js.Promise[Unit] = js.native
   }
   
-  @scala.inline
-  def openDatabase(): js.Promise[IDBDatabase] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")().asInstanceOf[js.Promise[IDBDatabase]]
+  inline def openDatabase(): js.Promise[IDBDatabase] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")().asInstanceOf[js.Promise[IDBDatabase]]
   
   /**
     * Provides type-safety for the "key" field used by {@link APP_NAMESPACE_STORE}.
@@ -92,26 +91,19 @@ object storageMod {
   trait ProjectNamespaceKeyFieldValue extends StObject
   object ProjectNamespaceKeyFieldValue {
     
-    @scala.inline
-    def active_config: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.active_config = "active_config".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.active_config]
+    inline def active_config: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.active_config = "active_config".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.active_config]
     
-    @scala.inline
-    def active_config_etag: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.active_config_etag = "active_config_etag".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.active_config_etag]
+    inline def active_config_etag: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.active_config_etag = "active_config_etag".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.active_config_etag]
     
-    @scala.inline
-    def last_fetch_status: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.last_fetch_status = "last_fetch_status".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.last_fetch_status]
+    inline def last_fetch_status: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.last_fetch_status = "last_fetch_status".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.last_fetch_status]
     
-    @scala.inline
-    def last_successful_fetch_response: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.last_successful_fetch_response = "last_successful_fetch_response".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.last_successful_fetch_response]
+    inline def last_successful_fetch_response: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.last_successful_fetch_response = "last_successful_fetch_response".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.last_successful_fetch_response]
     
-    @scala.inline
-    def last_successful_fetch_timestamp_millis: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.last_successful_fetch_timestamp_millis = "last_successful_fetch_timestamp_millis".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.last_successful_fetch_timestamp_millis]
+    inline def last_successful_fetch_timestamp_millis: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.last_successful_fetch_timestamp_millis = "last_successful_fetch_timestamp_millis".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.last_successful_fetch_timestamp_millis]
     
-    @scala.inline
-    def settings: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.settings = "settings".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.settings]
+    inline def settings: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.settings = "settings".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.settings]
     
-    @scala.inline
-    def throttle_metadata: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.throttle_metadata = "throttle_metadata".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.throttle_metadata]
+    inline def throttle_metadata: typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.throttle_metadata = "throttle_metadata".asInstanceOf[typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.throttle_metadata]
   }
   
   trait ThrottleMetadata extends StObject {
@@ -122,20 +114,16 @@ object storageMod {
   }
   object ThrottleMetadata {
     
-    @scala.inline
-    def apply(backoffCount: Double, throttleEndTimeMillis: Double): ThrottleMetadata = {
+    inline def apply(backoffCount: Double, throttleEndTimeMillis: Double): ThrottleMetadata = {
       val __obj = js.Dynamic.literal(backoffCount = backoffCount.asInstanceOf[js.Any], throttleEndTimeMillis = throttleEndTimeMillis.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThrottleMetadata]
     }
     
-    @scala.inline
-    implicit class ThrottleMetadataMutableBuilder[Self <: ThrottleMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: ThrottleMetadata](x: Self) {
       
-      @scala.inline
-      def setBackoffCount(value: Double): Self = StObject.set(x, "backoffCount", value.asInstanceOf[js.Any])
+      inline def setBackoffCount(value: Double): Self = StObject.set(x, "backoffCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottleEndTimeMillis(value: Double): Self = StObject.set(x, "throttleEndTimeMillis", value.asInstanceOf[js.Any])
+      inline def setThrottleEndTimeMillis(value: Double): Self = StObject.set(x, "throttleEndTimeMillis", value.asInstanceOf[js.Any])
     }
   }
 }

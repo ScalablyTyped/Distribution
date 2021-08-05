@@ -17,20 +17,16 @@ object typesStatsEventMod {
   }
   object StatsEvent {
     
-    @scala.inline
-    def apply(): StatsEvent = {
+    inline def apply(): StatsEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatsEvent]
     }
     
-    @scala.inline
-    implicit class StatsEventMutableBuilder[Self <: StatsEvent] (val x: Self) extends AnyVal {
+    extension [Self <: StatsEvent](x: Self) {
       
-      @scala.inline
-      def setDetails(value: Stats): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: Stats): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     }
   }
   
@@ -46,20 +42,16 @@ object typesStatsEventMod {
   }
   object UnmarshalledStatsEvent {
     
-    @scala.inline
-    def apply(): UnmarshalledStatsEvent = {
+    inline def apply(): UnmarshalledStatsEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledStatsEvent]
     }
     
-    @scala.inline
-    implicit class UnmarshalledStatsEventMutableBuilder[Self <: UnmarshalledStatsEvent] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledStatsEvent](x: Self) {
       
-      @scala.inline
-      def setDetails(value: UnmarshalledStats): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: UnmarshalledStats): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     }
   }
 }

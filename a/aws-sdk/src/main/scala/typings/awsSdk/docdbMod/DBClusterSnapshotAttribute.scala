@@ -18,28 +18,21 @@ trait DBClusterSnapshotAttribute extends StObject {
 }
 object DBClusterSnapshotAttribute {
   
-  @scala.inline
-  def apply(): DBClusterSnapshotAttribute = {
+  inline def apply(): DBClusterSnapshotAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBClusterSnapshotAttribute]
   }
   
-  @scala.inline
-  implicit class DBClusterSnapshotAttributeMutableBuilder[Self <: DBClusterSnapshotAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: DBClusterSnapshotAttribute](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
-    @scala.inline
-    def setAttributeValues(value: AttributeValueList): Self = StObject.set(x, "AttributeValues", value.asInstanceOf[js.Any])
+    inline def setAttributeValues(value: AttributeValueList): Self = StObject.set(x, "AttributeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValuesUndefined: Self = StObject.set(x, "AttributeValues", js.undefined)
+    inline def setAttributeValuesUndefined: Self = StObject.set(x, "AttributeValues", js.undefined)
     
-    @scala.inline
-    def setAttributeValuesVarargs(value: String*): Self = StObject.set(x, "AttributeValues", js.Array(value :_*))
+    inline def setAttributeValuesVarargs(value: String*): Self = StObject.set(x, "AttributeValues", js.Array(value :_*))
   }
 }

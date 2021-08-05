@@ -16,19 +16,15 @@ trait MultiDotMarkingProps
 }
 object MultiDotMarkingProps {
   
-  @scala.inline
-  def apply(markedDates: StringDictionary[MultiDotMarking]): MultiDotMarkingProps = {
+  inline def apply(markedDates: StringDictionary[MultiDotMarking]): MultiDotMarkingProps = {
     val __obj = js.Dynamic.literal(markedDates = markedDates.asInstanceOf[js.Any], markingType = "multi-dot")
     __obj.asInstanceOf[MultiDotMarkingProps]
   }
   
-  @scala.inline
-  implicit class MultiDotMarkingPropsMutableBuilder[Self <: MultiDotMarkingProps] (val x: Self) extends AnyVal {
+  extension [Self <: MultiDotMarkingProps](x: Self) {
     
-    @scala.inline
-    def setMarkedDates(value: StringDictionary[MultiDotMarking]): Self = StObject.set(x, "markedDates", value.asInstanceOf[js.Any])
+    inline def setMarkedDates(value: StringDictionary[MultiDotMarking]): Self = StObject.set(x, "markedDates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkingType(value: `multi-dot`): Self = StObject.set(x, "markingType", value.asInstanceOf[js.Any])
+    inline def setMarkingType(value: `multi-dot`): Self = StObject.set(x, "markingType", value.asInstanceOf[js.Any])
   }
 }

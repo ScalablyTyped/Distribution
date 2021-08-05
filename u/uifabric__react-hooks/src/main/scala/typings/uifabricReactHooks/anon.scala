@@ -19,26 +19,20 @@ object anon {
   }
   object Condition {
     
-    @scala.inline
-    def apply(condition: Boolean, conditionalPropName: String, requiredProps: js.Array[String]): Condition = {
+    inline def apply(condition: Boolean, conditionalPropName: String, requiredProps: js.Array[String]): Condition = {
       val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], conditionalPropName = conditionalPropName.asInstanceOf[js.Any], requiredProps = requiredProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[Condition]
     }
     
-    @scala.inline
-    implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+    extension [Self <: Condition](x: Self) {
       
-      @scala.inline
-      def setCondition(value: Boolean): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: Boolean): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionalPropName(value: String): Self = StObject.set(x, "conditionalPropName", value.asInstanceOf[js.Any])
+      inline def setConditionalPropName(value: String): Self = StObject.set(x, "conditionalPropName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredProps(value: js.Array[String]): Self = StObject.set(x, "requiredProps", value.asInstanceOf[js.Any])
+      inline def setRequiredProps(value: js.Array[String]): Self = StObject.set(x, "requiredProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredPropsVarargs(value: String*): Self = StObject.set(x, "requiredProps", js.Array(value :_*))
+      inline def setRequiredPropsVarargs(value: String*): Self = StObject.set(x, "requiredProps", js.Array(value :_*))
     }
   }
 }

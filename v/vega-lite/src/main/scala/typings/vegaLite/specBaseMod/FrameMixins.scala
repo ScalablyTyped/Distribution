@@ -19,19 +19,15 @@ trait FrameMixins[ES /* <: ExprRef | SignalRef */]
 }
 object FrameMixins {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): FrameMixins[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): FrameMixins[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FrameMixins[ES]]
   }
   
-  @scala.inline
-  implicit class FrameMixinsMutableBuilder[Self <: FrameMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & FrameMixins[ES]) extends AnyVal {
+  extension [Self <: FrameMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & FrameMixins[ES]) {
     
-    @scala.inline
-    def setView(value: ViewBackground[ES]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: ViewBackground[ES]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ trait XChartDataChangeEventListener
 }
 object XChartDataChangeEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     chartDataChanged: ChartDataChangeEvent => Unit,
     disposing: EventObject => Unit,
@@ -37,10 +36,8 @@ object XChartDataChangeEventListener {
     __obj.asInstanceOf[XChartDataChangeEventListener]
   }
   
-  @scala.inline
-  implicit class XChartDataChangeEventListenerMutableBuilder[Self <: XChartDataChangeEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: XChartDataChangeEventListener](x: Self) {
     
-    @scala.inline
-    def setChartDataChanged(value: ChartDataChangeEvent => Unit): Self = StObject.set(x, "chartDataChanged", js.Any.fromFunction1(value))
+    inline def setChartDataChanged(value: ChartDataChangeEvent => Unit): Self = StObject.set(x, "chartDataChanged", js.Any.fromFunction1(value))
   }
 }

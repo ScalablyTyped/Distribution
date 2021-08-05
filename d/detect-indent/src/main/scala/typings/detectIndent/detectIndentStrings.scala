@@ -8,11 +8,9 @@ object detectIndentStrings {
   
   @js.native
   sealed trait space extends StObject
-  @scala.inline
-  def space: space = "space".asInstanceOf[space]
+  inline def space: space = "space".asInstanceOf[space]
   
   @js.native
   sealed trait tab extends StObject
-  @scala.inline
-  def tab: tab = "tab".asInstanceOf[tab]
+  inline def tab: tab = "tab".asInstanceOf[tab]
 }

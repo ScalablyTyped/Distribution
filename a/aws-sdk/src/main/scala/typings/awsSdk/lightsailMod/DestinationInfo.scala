@@ -18,25 +18,19 @@ trait DestinationInfo extends StObject {
 }
 object DestinationInfo {
   
-  @scala.inline
-  def apply(): DestinationInfo = {
+  inline def apply(): DestinationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DestinationInfo]
   }
   
-  @scala.inline
-  implicit class DestinationInfoMutableBuilder[Self <: DestinationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationInfo](x: Self) {
     
-    @scala.inline
-    def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setService(value: NonEmptyString): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: NonEmptyString): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

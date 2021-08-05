@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.FootnoteOptions")
 @js.native
-class FootnoteOptions protected ()
+/* private */ class FootnoteOptions ()
   extends StObject
      with typings.activexWord.Word.FootnoteOptions {
   
@@ -34,7 +34,7 @@ class FootnoteOptions protected ()
   /* CompleteClass */
   var StartingNumber: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.FootnoteOptions_typekey")
   var WordDotFootnoteOptions_typekey: typings.activexWord.Word.FootnoteOptions = js.native
 }

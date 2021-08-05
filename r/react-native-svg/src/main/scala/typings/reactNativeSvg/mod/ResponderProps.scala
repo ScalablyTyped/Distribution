@@ -17,19 +17,15 @@ trait ResponderProps
 }
 object ResponderProps {
   
-  @scala.inline
-  def apply(): ResponderProps = {
+  inline def apply(): ResponderProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponderProps]
   }
   
-  @scala.inline
-  implicit class ResponderPropsMutableBuilder[Self <: ResponderProps] (val x: Self) extends AnyVal {
+  extension [Self <: ResponderProps](x: Self) {
     
-    @scala.inline
-    def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+    inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
   }
 }

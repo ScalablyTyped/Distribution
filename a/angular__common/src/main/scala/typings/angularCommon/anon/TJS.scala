@@ -12,25 +12,19 @@ trait TJS extends StObject {
 }
 object TJS {
   
-  @scala.inline
-  def apply(JPY: js.Array[String], TJS: js.Array[String]): TJS = {
+  inline def apply(JPY: js.Array[String], TJS: js.Array[String]): TJS = {
     val __obj = js.Dynamic.literal(JPY = JPY.asInstanceOf[js.Any], TJS = TJS.asInstanceOf[js.Any])
     __obj.asInstanceOf[TJS]
   }
   
-  @scala.inline
-  implicit class TJSMutableBuilder[Self <: TJS] (val x: Self) extends AnyVal {
+  extension [Self <: TJS](x: Self) {
     
-    @scala.inline
-    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
-    @scala.inline
-    def setTJS(value: js.Array[String]): Self = StObject.set(x, "TJS", value.asInstanceOf[js.Any])
+    inline def setTJS(value: js.Array[String]): Self = StObject.set(x, "TJS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTJSVarargs(value: String*): Self = StObject.set(x, "TJS", js.Array(value :_*))
+    inline def setTJSVarargs(value: String*): Self = StObject.set(x, "TJS", js.Array(value :_*))
   }
 }

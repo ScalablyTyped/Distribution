@@ -17,6 +17,5 @@ object scalesMod {
   @js.native
   val default: TransformCompiler = js.native
   
-  @scala.inline
-  def domain(model: UnitModel, channel: ScaleChannel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("domain")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def domain(model: UnitModel, channel: ScaleChannel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("domain")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
 }

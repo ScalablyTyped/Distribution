@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MenuItemContextKeys extends StObject
 object MenuItemContextKeys {
   
-  @scala.inline
-  def activeIndex: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.activeIndex = "activeIndex".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.activeIndex]
+  inline def activeIndex: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.activeIndex = "activeIndex".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.activeIndex]
   
-  @scala.inline
-  def isOnlyResult: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.isOnlyResult = "isOnlyResult".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.isOnlyResult]
+  inline def isOnlyResult: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.isOnlyResult = "isOnlyResult".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.isOnlyResult]
   
-  @scala.inline
-  def onActiveItemChange: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onActiveItemChange = "onActiveItemChange".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onActiveItemChange]
+  inline def onActiveItemChange: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onActiveItemChange = "onActiveItemChange".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onActiveItemChange]
   
-  @scala.inline
-  def onInitialItemChange: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onInitialItemChange = "onInitialItemChange".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onInitialItemChange]
+  inline def onInitialItemChange: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onInitialItemChange = "onInitialItemChange".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onInitialItemChange]
   
-  @scala.inline
-  def onMenuItemClick: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onMenuItemClick = "onMenuItemClick".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onMenuItemClick]
+  inline def onMenuItemClick: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onMenuItemClick = "onMenuItemClick".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onMenuItemClick]
 }

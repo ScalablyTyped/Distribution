@@ -32,8 +32,7 @@ trait INotificationItem extends StObject {
 }
 object INotificationItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actions: js.Array[IButtonAction],
     headline: String,
     message: String,
@@ -47,31 +46,22 @@ object INotificationItem {
     __obj.asInstanceOf[INotificationItem]
   }
   
-  @scala.inline
-  implicit class INotificationItemMutableBuilder[Self <: INotificationItem] (val x: Self) extends AnyVal {
+  extension [Self <: INotificationItem](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[IButtonAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[IButtonAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: IButtonAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: IButtonAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
+    inline def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+    inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: NotificationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NotificationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

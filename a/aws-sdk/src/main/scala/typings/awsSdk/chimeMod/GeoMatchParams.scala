@@ -18,19 +18,15 @@ trait GeoMatchParams extends StObject {
 }
 object GeoMatchParams {
   
-  @scala.inline
-  def apply(AreaCode: AreaCode, Country: Country): GeoMatchParams = {
+  inline def apply(AreaCode: AreaCode, Country: Country): GeoMatchParams = {
     val __obj = js.Dynamic.literal(AreaCode = AreaCode.asInstanceOf[js.Any], Country = Country.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoMatchParams]
   }
   
-  @scala.inline
-  implicit class GeoMatchParamsMutableBuilder[Self <: GeoMatchParams] (val x: Self) extends AnyVal {
+  extension [Self <: GeoMatchParams](x: Self) {
     
-    @scala.inline
-    def setAreaCode(value: AreaCode): Self = StObject.set(x, "AreaCode", value.asInstanceOf[js.Any])
+    inline def setAreaCode(value: AreaCode): Self = StObject.set(x, "AreaCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry(value: Country): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: Country): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
   }
 }

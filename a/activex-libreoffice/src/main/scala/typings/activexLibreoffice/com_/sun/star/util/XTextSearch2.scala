@@ -15,8 +15,7 @@ trait XTextSearch2
 }
 object XTextSearch2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -29,10 +28,8 @@ object XTextSearch2 {
     __obj.asInstanceOf[XTextSearch2]
   }
   
-  @scala.inline
-  implicit class XTextSearch2MutableBuilder[Self <: XTextSearch2] (val x: Self) extends AnyVal {
+  extension [Self <: XTextSearch2](x: Self) {
     
-    @scala.inline
-    def setSetOptions2(value: SearchOptions2 => Unit): Self = StObject.set(x, "setOptions2", js.Any.fromFunction1(value))
+    inline def setSetOptions2(value: SearchOptions2 => Unit): Self = StObject.set(x, "setOptions2", js.Any.fromFunction1(value))
   }
 }

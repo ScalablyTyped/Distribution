@@ -40,22 +40,17 @@ trait ContentEvent
 }
 object ContentEvent {
   
-  @scala.inline
-  def apply(Action: Double, Content: XContent, Id: XContentIdentifier, Source: XInterface): ContentEvent = {
+  inline def apply(Action: Double, Content: XContent, Id: XContentIdentifier, Source: XInterface): ContentEvent = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Content = Content.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentEvent]
   }
   
-  @scala.inline
-  implicit class ContentEventMutableBuilder[Self <: ContentEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ContentEvent](x: Self) {
     
-    @scala.inline
-    def setAction(value: Double): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Double): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: XContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: XContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: XContentIdentifier): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: XContentIdentifier): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

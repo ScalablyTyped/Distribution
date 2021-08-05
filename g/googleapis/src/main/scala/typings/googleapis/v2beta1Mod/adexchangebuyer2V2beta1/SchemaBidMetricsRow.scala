@@ -50,55 +50,39 @@ trait SchemaBidMetricsRow extends StObject {
 }
 object SchemaBidMetricsRow {
   
-  @scala.inline
-  def apply(): SchemaBidMetricsRow = {
+  inline def apply(): SchemaBidMetricsRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBidMetricsRow]
   }
   
-  @scala.inline
-  implicit class SchemaBidMetricsRowMutableBuilder[Self <: SchemaBidMetricsRow] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBidMetricsRow](x: Self) {
     
-    @scala.inline
-    def setBids(value: SchemaMetricValue): Self = StObject.set(x, "bids", value.asInstanceOf[js.Any])
+    inline def setBids(value: SchemaMetricValue): Self = StObject.set(x, "bids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidsInAuction(value: SchemaMetricValue): Self = StObject.set(x, "bidsInAuction", value.asInstanceOf[js.Any])
+    inline def setBidsInAuction(value: SchemaMetricValue): Self = StObject.set(x, "bidsInAuction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidsInAuctionUndefined: Self = StObject.set(x, "bidsInAuction", js.undefined)
+    inline def setBidsInAuctionUndefined: Self = StObject.set(x, "bidsInAuction", js.undefined)
     
-    @scala.inline
-    def setBidsUndefined: Self = StObject.set(x, "bids", js.undefined)
+    inline def setBidsUndefined: Self = StObject.set(x, "bids", js.undefined)
     
-    @scala.inline
-    def setBilledImpressions(value: SchemaMetricValue): Self = StObject.set(x, "billedImpressions", value.asInstanceOf[js.Any])
+    inline def setBilledImpressions(value: SchemaMetricValue): Self = StObject.set(x, "billedImpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBilledImpressionsUndefined: Self = StObject.set(x, "billedImpressions", js.undefined)
+    inline def setBilledImpressionsUndefined: Self = StObject.set(x, "billedImpressions", js.undefined)
     
-    @scala.inline
-    def setImpressionsWon(value: SchemaMetricValue): Self = StObject.set(x, "impressionsWon", value.asInstanceOf[js.Any])
+    inline def setImpressionsWon(value: SchemaMetricValue): Self = StObject.set(x, "impressionsWon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpressionsWonUndefined: Self = StObject.set(x, "impressionsWon", js.undefined)
+    inline def setImpressionsWonUndefined: Self = StObject.set(x, "impressionsWon", js.undefined)
     
-    @scala.inline
-    def setMeasurableImpressions(value: SchemaMetricValue): Self = StObject.set(x, "measurableImpressions", value.asInstanceOf[js.Any])
+    inline def setMeasurableImpressions(value: SchemaMetricValue): Self = StObject.set(x, "measurableImpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurableImpressionsUndefined: Self = StObject.set(x, "measurableImpressions", js.undefined)
+    inline def setMeasurableImpressionsUndefined: Self = StObject.set(x, "measurableImpressions", js.undefined)
     
-    @scala.inline
-    def setRowDimensions(value: SchemaRowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
+    inline def setRowDimensions(value: SchemaRowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
+    inline def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
     
-    @scala.inline
-    def setViewableImpressions(value: SchemaMetricValue): Self = StObject.set(x, "viewableImpressions", value.asInstanceOf[js.Any])
+    inline def setViewableImpressions(value: SchemaMetricValue): Self = StObject.set(x, "viewableImpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewableImpressionsUndefined: Self = StObject.set(x, "viewableImpressions", js.undefined)
+    inline def setViewableImpressionsUndefined: Self = StObject.set(x, "viewableImpressions", js.undefined)
   }
 }

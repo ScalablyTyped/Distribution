@@ -160,139 +160,95 @@ trait ChartLegendOptions extends StObject {
 }
 object ChartLegendOptions {
   
-  @scala.inline
-  def apply(): ChartLegendOptions = {
+  inline def apply(): ChartLegendOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartLegendOptions]
   }
   
-  @scala.inline
-  implicit class ChartLegendOptionsMutableBuilder[Self <: ChartLegendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartLegendOptions](x: Self) {
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setDockInsidePlotArea(value: Boolean): Self = StObject.set(x, "dockInsidePlotArea", value.asInstanceOf[js.Any])
+    inline def setDockInsidePlotArea(value: Boolean): Self = StObject.set(x, "dockInsidePlotArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockInsidePlotAreaUndefined: Self = StObject.set(x, "dockInsidePlotArea", js.undefined)
+    inline def setDockInsidePlotAreaUndefined: Self = StObject.set(x, "dockInsidePlotArea", js.undefined)
     
-    @scala.inline
-    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+    inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
+    inline def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
     
-    @scala.inline
-    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    @scala.inline
-    def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    @scala.inline
-    def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    @scala.inline
-    def setHorizontalAlign(value: String): Self = StObject.set(x, "horizontalAlign", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlign(value: String): Self = StObject.set(x, "horizontalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAlignUndefined: Self = StObject.set(x, "horizontalAlign", js.undefined)
+    inline def setHorizontalAlignUndefined: Self = StObject.set(x, "horizontalAlign", js.undefined)
     
-    @scala.inline
-    def setItemMaxWidth(value: Double): Self = StObject.set(x, "itemMaxWidth", value.asInstanceOf[js.Any])
+    inline def setItemMaxWidth(value: Double): Self = StObject.set(x, "itemMaxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemMaxWidthUndefined: Self = StObject.set(x, "itemMaxWidth", js.undefined)
+    inline def setItemMaxWidthUndefined: Self = StObject.set(x, "itemMaxWidth", js.undefined)
     
-    @scala.inline
-    def setItemTextFormatter(value: /* e */ js.UndefOr[typings.canvasjs.anon.Chart] => String): Self = StObject.set(x, "itemTextFormatter", js.Any.fromFunction1(value))
+    inline def setItemTextFormatter(value: /* e */ js.UndefOr[typings.canvasjs.anon.Chart] => String): Self = StObject.set(x, "itemTextFormatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemTextFormatterUndefined: Self = StObject.set(x, "itemTextFormatter", js.undefined)
+    inline def setItemTextFormatterUndefined: Self = StObject.set(x, "itemTextFormatter", js.undefined)
     
-    @scala.inline
-    def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
+    inline def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
+    inline def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
     
-    @scala.inline
-    def setItemWrap(value: Boolean): Self = StObject.set(x, "itemWrap", value.asInstanceOf[js.Any])
+    inline def setItemWrap(value: Boolean): Self = StObject.set(x, "itemWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemWrapUndefined: Self = StObject.set(x, "itemWrap", js.undefined)
+    inline def setItemWrapUndefined: Self = StObject.set(x, "itemWrap", js.undefined)
     
-    @scala.inline
-    def setItemclick(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "itemclick", js.Any.fromFunction1(value))
+    inline def setItemclick(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "itemclick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemclickUndefined: Self = StObject.set(x, "itemclick", js.undefined)
+    inline def setItemclickUndefined: Self = StObject.set(x, "itemclick", js.undefined)
     
-    @scala.inline
-    def setItemmousemove(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "itemmousemove", js.Any.fromFunction1(value))
+    inline def setItemmousemove(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "itemmousemove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemmousemoveUndefined: Self = StObject.set(x, "itemmousemove", js.undefined)
+    inline def setItemmousemoveUndefined: Self = StObject.set(x, "itemmousemove", js.undefined)
     
-    @scala.inline
-    def setItemmouseout(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "itemmouseout", js.Any.fromFunction1(value))
+    inline def setItemmouseout(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "itemmouseout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemmouseoutUndefined: Self = StObject.set(x, "itemmouseout", js.undefined)
+    inline def setItemmouseoutUndefined: Self = StObject.set(x, "itemmouseout", js.undefined)
     
-    @scala.inline
-    def setItemmouseover(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "itemmouseover", js.Any.fromFunction1(value))
+    inline def setItemmouseover(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "itemmouseover", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemmouseoverUndefined: Self = StObject.set(x, "itemmouseover", js.undefined)
+    inline def setItemmouseoverUndefined: Self = StObject.set(x, "itemmouseover", js.undefined)
     
-    @scala.inline
-    def setMarkerMargin(value: Double): Self = StObject.set(x, "markerMargin", value.asInstanceOf[js.Any])
+    inline def setMarkerMargin(value: Double): Self = StObject.set(x, "markerMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerMarginUndefined: Self = StObject.set(x, "markerMargin", js.undefined)
+    inline def setMarkerMarginUndefined: Self = StObject.set(x, "markerMargin", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+    inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
     
-    @scala.inline
-    def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
   }
 }

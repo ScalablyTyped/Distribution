@@ -23,28 +23,21 @@ trait CreateBudgetRequest extends StObject {
 }
 object CreateBudgetRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, Budget: Budget): CreateBudgetRequest = {
+  inline def apply(AccountId: AccountId, Budget: Budget): CreateBudgetRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Budget = Budget.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBudgetRequest]
   }
   
-  @scala.inline
-  implicit class CreateBudgetRequestMutableBuilder[Self <: CreateBudgetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBudgetRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudget(value: Budget): Self = StObject.set(x, "Budget", value.asInstanceOf[js.Any])
+    inline def setBudget(value: Budget): Self = StObject.set(x, "Budget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsWithSubscribers(value: NotificationWithSubscribersList): Self = StObject.set(x, "NotificationsWithSubscribers", value.asInstanceOf[js.Any])
+    inline def setNotificationsWithSubscribers(value: NotificationWithSubscribersList): Self = StObject.set(x, "NotificationsWithSubscribers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsWithSubscribersUndefined: Self = StObject.set(x, "NotificationsWithSubscribers", js.undefined)
+    inline def setNotificationsWithSubscribersUndefined: Self = StObject.set(x, "NotificationsWithSubscribers", js.undefined)
     
-    @scala.inline
-    def setNotificationsWithSubscribersVarargs(value: NotificationWithSubscribers*): Self = StObject.set(x, "NotificationsWithSubscribers", js.Array(value :_*))
+    inline def setNotificationsWithSubscribersVarargs(value: NotificationWithSubscribers*): Self = StObject.set(x, "NotificationsWithSubscribers", js.Array(value :_*))
   }
 }

@@ -38,55 +38,39 @@ trait AwsIamGroupDetails extends StObject {
 }
 object AwsIamGroupDetails {
   
-  @scala.inline
-  def apply(): AwsIamGroupDetails = {
+  inline def apply(): AwsIamGroupDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsIamGroupDetails]
   }
   
-  @scala.inline
-  implicit class AwsIamGroupDetailsMutableBuilder[Self <: AwsIamGroupDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsIamGroupDetails](x: Self) {
     
-    @scala.inline
-    def setAttachedManagedPolicies(value: AwsIamAttachedManagedPolicyList): Self = StObject.set(x, "AttachedManagedPolicies", value.asInstanceOf[js.Any])
+    inline def setAttachedManagedPolicies(value: AwsIamAttachedManagedPolicyList): Self = StObject.set(x, "AttachedManagedPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachedManagedPoliciesUndefined: Self = StObject.set(x, "AttachedManagedPolicies", js.undefined)
+    inline def setAttachedManagedPoliciesUndefined: Self = StObject.set(x, "AttachedManagedPolicies", js.undefined)
     
-    @scala.inline
-    def setAttachedManagedPoliciesVarargs(value: AwsIamAttachedManagedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value :_*))
+    inline def setAttachedManagedPoliciesVarargs(value: AwsIamAttachedManagedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setCreateDate(value: NonEmptyString): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: NonEmptyString): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
+    inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: NonEmptyString): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: NonEmptyString): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setGroupPolicyList(value: AwsIamGroupPolicyList): Self = StObject.set(x, "GroupPolicyList", value.asInstanceOf[js.Any])
+    inline def setGroupPolicyList(value: AwsIamGroupPolicyList): Self = StObject.set(x, "GroupPolicyList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupPolicyListUndefined: Self = StObject.set(x, "GroupPolicyList", js.undefined)
+    inline def setGroupPolicyListUndefined: Self = StObject.set(x, "GroupPolicyList", js.undefined)
     
-    @scala.inline
-    def setGroupPolicyListVarargs(value: AwsIamGroupPolicy*): Self = StObject.set(x, "GroupPolicyList", js.Array(value :_*))
+    inline def setGroupPolicyListVarargs(value: AwsIamGroupPolicy*): Self = StObject.set(x, "GroupPolicyList", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: NonEmptyString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: NonEmptyString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
   }
 }

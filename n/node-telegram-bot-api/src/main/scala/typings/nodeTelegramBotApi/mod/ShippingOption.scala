@@ -14,25 +14,19 @@ trait ShippingOption extends StObject {
 }
 object ShippingOption {
   
-  @scala.inline
-  def apply(id: String, prices: js.Array[LabeledPrice], title: String): ShippingOption = {
+  inline def apply(id: String, prices: js.Array[LabeledPrice], title: String): ShippingOption = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], prices = prices.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShippingOption]
   }
   
-  @scala.inline
-  implicit class ShippingOptionMutableBuilder[Self <: ShippingOption] (val x: Self) extends AnyVal {
+  extension [Self <: ShippingOption](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrices(value: js.Array[LabeledPrice]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
+    inline def setPrices(value: js.Array[LabeledPrice]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricesVarargs(value: LabeledPrice*): Self = StObject.set(x, "prices", js.Array(value :_*))
+    inline def setPricesVarargs(value: LabeledPrice*): Self = StObject.set(x, "prices", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

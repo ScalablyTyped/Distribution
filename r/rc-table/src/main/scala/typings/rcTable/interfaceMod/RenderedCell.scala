@@ -13,25 +13,19 @@ trait RenderedCell[RecordType] extends StObject {
 }
 object RenderedCell {
   
-  @scala.inline
-  def apply[RecordType](): RenderedCell[RecordType] = {
+  inline def apply[RecordType](): RenderedCell[RecordType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenderedCell[RecordType]]
   }
   
-  @scala.inline
-  implicit class RenderedCellMutableBuilder[Self <: RenderedCell[?], RecordType] (val x: Self & RenderedCell[RecordType]) extends AnyVal {
+  extension [Self <: RenderedCell[?], RecordType](x: Self & RenderedCell[RecordType]) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setProps(value: CellType[RecordType]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: CellType[RecordType]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+    inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
   }
 }

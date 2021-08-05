@@ -35,8 +35,7 @@ object typesSelectParametersMod {
   }
   object SelectParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Expression: String,
       ExpressionType: SQL | String,
       InputSerialization: InputSerialization,
@@ -46,20 +45,15 @@ object typesSelectParametersMod {
       __obj.asInstanceOf[SelectParameters]
     }
     
-    @scala.inline
-    implicit class SelectParametersMutableBuilder[Self <: SelectParameters] (val x: Self) extends AnyVal {
+    extension [Self <: SelectParameters](x: Self) {
       
-      @scala.inline
-      def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionType(value: SQL | String): Self = StObject.set(x, "ExpressionType", value.asInstanceOf[js.Any])
+      inline def setExpressionType(value: SQL | String): Self = StObject.set(x, "ExpressionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputSerialization(value: InputSerialization): Self = StObject.set(x, "InputSerialization", value.asInstanceOf[js.Any])
+      inline def setInputSerialization(value: InputSerialization): Self = StObject.set(x, "InputSerialization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputSerialization(value: OutputSerialization): Self = StObject.set(x, "OutputSerialization", value.asInstanceOf[js.Any])
+      inline def setOutputSerialization(value: OutputSerialization): Self = StObject.set(x, "OutputSerialization", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,8 +75,7 @@ object typesSelectParametersMod {
   }
   object UnmarshalledSelectParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Expression: String,
       ExpressionType: SQL | String,
       InputSerialization: UnmarshalledInputSerialization,
@@ -92,14 +85,11 @@ object typesSelectParametersMod {
       __obj.asInstanceOf[UnmarshalledSelectParameters]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSelectParametersMutableBuilder[Self <: UnmarshalledSelectParameters] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSelectParameters](x: Self) {
       
-      @scala.inline
-      def setInputSerialization(value: UnmarshalledInputSerialization): Self = StObject.set(x, "InputSerialization", value.asInstanceOf[js.Any])
+      inline def setInputSerialization(value: UnmarshalledInputSerialization): Self = StObject.set(x, "InputSerialization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputSerialization(value: UnmarshalledOutputSerialization): Self = StObject.set(x, "OutputSerialization", value.asInstanceOf[js.Any])
+      inline def setOutputSerialization(value: UnmarshalledOutputSerialization): Self = StObject.set(x, "OutputSerialization", value.asInstanceOf[js.Any])
     }
   }
 }

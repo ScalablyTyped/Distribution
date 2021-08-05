@@ -13,16 +13,13 @@ trait DeleteSipRuleRequest extends StObject {
 }
 object DeleteSipRuleRequest {
   
-  @scala.inline
-  def apply(SipRuleId: NonEmptyString): DeleteSipRuleRequest = {
+  inline def apply(SipRuleId: NonEmptyString): DeleteSipRuleRequest = {
     val __obj = js.Dynamic.literal(SipRuleId = SipRuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSipRuleRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSipRuleRequestMutableBuilder[Self <: DeleteSipRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSipRuleRequest](x: Self) {
     
-    @scala.inline
-    def setSipRuleId(value: NonEmptyString): Self = StObject.set(x, "SipRuleId", value.asInstanceOf[js.Any])
+    inline def setSipRuleId(value: NonEmptyString): Self = StObject.set(x, "SipRuleId", value.asInstanceOf[js.Any])
   }
 }

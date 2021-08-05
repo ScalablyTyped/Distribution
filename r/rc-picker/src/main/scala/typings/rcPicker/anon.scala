@@ -62,8 +62,7 @@ object anon {
   }
   object CellPrefixCls {
     
-    @scala.inline
-    def apply[DateType](
+    inline def apply[DateType](
       cellPrefixCls: String,
       generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
       isInView: DateType => Boolean,
@@ -74,59 +73,41 @@ object anon {
       __obj.asInstanceOf[CellPrefixCls[DateType]]
     }
     
-    @scala.inline
-    implicit class CellPrefixClsMutableBuilder[Self <: CellPrefixCls[?], DateType] (val x: Self & CellPrefixCls[DateType]) extends AnyVal {
+    extension [Self <: CellPrefixCls[?], DateType](x: Self & CellPrefixCls[DateType]) {
       
-      @scala.inline
-      def setCellPrefixCls(value: String): Self = StObject.set(x, "cellPrefixCls", value.asInstanceOf[js.Any])
+      inline def setCellPrefixCls(value: String): Self = StObject.set(x, "cellPrefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverRangedValue(value: RangeValue[DateType]): Self = StObject.set(x, "hoverRangedValue", value.asInstanceOf[js.Any])
+      inline def setHoverRangedValue(value: RangeValue[DateType]): Self = StObject.set(x, "hoverRangedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverRangedValueNull: Self = StObject.set(x, "hoverRangedValue", null)
+      inline def setHoverRangedValueNull: Self = StObject.set(x, "hoverRangedValue", null)
       
-      @scala.inline
-      def setHoverRangedValueUndefined: Self = StObject.set(x, "hoverRangedValue", js.undefined)
+      inline def setHoverRangedValueUndefined: Self = StObject.set(x, "hoverRangedValue", js.undefined)
       
-      @scala.inline
-      def setIsInView(value: DateType => Boolean): Self = StObject.set(x, "isInView", js.Any.fromFunction1(value))
+      inline def setIsInView(value: DateType => Boolean): Self = StObject.set(x, "isInView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsSameCell(value: (NullableDateType[DateType], NullableDateType[DateType]) => Boolean): Self = StObject.set(x, "isSameCell", js.Any.fromFunction2(value))
+      inline def setIsSameCell(value: (NullableDateType[DateType], NullableDateType[DateType]) => Boolean): Self = StObject.set(x, "isSameCell", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOffsetCell(value: (DateType, Double) => DateType): Self = StObject.set(x, "offsetCell", js.Any.fromFunction2(value))
+      inline def setOffsetCell(value: (DateType, Double) => DateType): Self = StObject.set(x, "offsetCell", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRangedValue(value: RangeValue[DateType]): Self = StObject.set(x, "rangedValue", value.asInstanceOf[js.Any])
+      inline def setRangedValue(value: RangeValue[DateType]): Self = StObject.set(x, "rangedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangedValueNull: Self = StObject.set(x, "rangedValue", null)
+      inline def setRangedValueNull: Self = StObject.set(x, "rangedValue", null)
       
-      @scala.inline
-      def setRangedValueUndefined: Self = StObject.set(x, "rangedValue", js.undefined)
+      inline def setRangedValueUndefined: Self = StObject.set(x, "rangedValue", js.undefined)
       
-      @scala.inline
-      def setToday(value: NullableDateType[DateType]): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+      inline def setToday(value: NullableDateType[DateType]): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTodayNull: Self = StObject.set(x, "today", null)
+      inline def setTodayNull: Self = StObject.set(x, "today", null)
       
-      @scala.inline
-      def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
+      inline def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
       
-      @scala.inline
-      def setValue(value: NullableDateType[DateType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: NullableDateType[DateType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -142,35 +123,26 @@ object anon {
   }
   object DefaultDates {
     
-    @scala.inline
-    def apply[DateType](generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType], picker: PickerMode): DefaultDates[DateType] = {
+    inline def apply[DateType](generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType], picker: PickerMode): DefaultDates[DateType] = {
       val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any], values = null)
       __obj.asInstanceOf[DefaultDates[DateType]]
     }
     
-    @scala.inline
-    implicit class DefaultDatesMutableBuilder[Self <: DefaultDates[?], DateType] (val x: Self & DefaultDates[DateType]) extends AnyVal {
+    extension [Self <: DefaultDates[?], DateType](x: Self & DefaultDates[DateType]) {
       
-      @scala.inline
-      def setDefaultDates(value: RangeValue[DateType]): Self = StObject.set(x, "defaultDates", value.asInstanceOf[js.Any])
+      inline def setDefaultDates(value: RangeValue[DateType]): Self = StObject.set(x, "defaultDates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultDatesNull: Self = StObject.set(x, "defaultDates", null)
+      inline def setDefaultDatesNull: Self = StObject.set(x, "defaultDates", null)
       
-      @scala.inline
-      def setDefaultDatesUndefined: Self = StObject.set(x, "defaultDates", js.undefined)
+      inline def setDefaultDatesUndefined: Self = StObject.set(x, "defaultDates", js.undefined)
       
-      @scala.inline
-      def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicker(value: PickerMode): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: PickerMode): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: RangeValue[DateType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: RangeValue[DateType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesNull: Self = StObject.set(x, "values", null)
+      inline def setValuesNull: Self = StObject.set(x, "values", null)
     }
   }
   
@@ -190,8 +162,7 @@ object anon {
   }
   object Disabled {
     
-    @scala.inline
-    def apply[DateType](
+    inline def apply[DateType](
       disabled: js.Tuple2[Boolean, Boolean],
       generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
       locale: Locale,
@@ -201,32 +172,23 @@ object anon {
       __obj.asInstanceOf[Disabled[DateType]]
     }
     
-    @scala.inline
-    implicit class DisabledMutableBuilder[Self <: Disabled[?], DateType] (val x: Self & Disabled[DateType]) extends AnyVal {
+    extension [Self <: Disabled[?], DateType](x: Self & Disabled[DateType]) {
       
-      @scala.inline
-      def setDisabled(value: js.Tuple2[Boolean, Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: js.Tuple2[Boolean, Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
+      inline def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
+      inline def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
       
-      @scala.inline
-      def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicker(value: PickerMode): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: PickerMode): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedValue(value: RangeValue[DateType]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+      inline def setSelectedValue(value: RangeValue[DateType]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedValueNull: Self = StObject.set(x, "selectedValue", null)
+      inline def setSelectedValueNull: Self = StObject.set(x, "selectedValue", null)
     }
   }
   
@@ -238,20 +200,16 @@ object anon {
   }
   object Focused {
     
-    @scala.inline
-    def apply(focused: Boolean, typing: Boolean): Focused = {
+    inline def apply(focused: Boolean, typing: Boolean): Focused = {
       val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any], typing = typing.asInstanceOf[js.Any])
       __obj.asInstanceOf[Focused]
     }
     
-    @scala.inline
-    implicit class FocusedMutableBuilder[Self <: Focused] (val x: Self) extends AnyVal {
+    extension [Self <: Focused](x: Self) {
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTyping(value: Boolean): Self = StObject.set(x, "typing", value.asInstanceOf[js.Any])
+      inline def setTyping(value: Boolean): Self = StObject.set(x, "typing", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,8 +232,7 @@ object anon {
   }
   object Format {
     
-    @scala.inline
-    def apply[DateType](
+    inline def apply[DateType](
       format: (String, DateType, String) => String,
       getWeek: (String, DateType) => Double,
       getWeekFirstDay: String => Double,
@@ -285,32 +242,23 @@ object anon {
       __obj.asInstanceOf[Format[DateType]]
     }
     
-    @scala.inline
-    implicit class FormatMutableBuilder[Self <: Format[?], DateType] (val x: Self & Format[DateType]) extends AnyVal {
+    extension [Self <: Format[?], DateType](x: Self & Format[DateType]) {
       
-      @scala.inline
-      def setFormat(value: (String, DateType, String) => String): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
+      inline def setFormat(value: (String, DateType, String) => String): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetShortMonths(value: /* locale */ String => js.Array[String]): Self = StObject.set(x, "getShortMonths", js.Any.fromFunction1(value))
+      inline def setGetShortMonths(value: /* locale */ String => js.Array[String]): Self = StObject.set(x, "getShortMonths", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetShortMonthsUndefined: Self = StObject.set(x, "getShortMonths", js.undefined)
+      inline def setGetShortMonthsUndefined: Self = StObject.set(x, "getShortMonths", js.undefined)
       
-      @scala.inline
-      def setGetShortWeekDays(value: /* locale */ String => js.Array[String]): Self = StObject.set(x, "getShortWeekDays", js.Any.fromFunction1(value))
+      inline def setGetShortWeekDays(value: /* locale */ String => js.Array[String]): Self = StObject.set(x, "getShortWeekDays", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetShortWeekDaysUndefined: Self = StObject.set(x, "getShortWeekDays", js.undefined)
+      inline def setGetShortWeekDaysUndefined: Self = StObject.set(x, "getShortWeekDays", js.undefined)
       
-      @scala.inline
-      def setGetWeek(value: (String, DateType) => Double): Self = StObject.set(x, "getWeek", js.Any.fromFunction2(value))
+      inline def setGetWeek(value: (String, DateType) => Double): Self = StObject.set(x, "getWeek", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetWeekFirstDay(value: String => Double): Self = StObject.set(x, "getWeekFirstDay", js.Any.fromFunction1(value))
+      inline def setGetWeekFirstDay(value: String => Double): Self = StObject.set(x, "getWeekFirstDay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParse(value: (String, String, js.Array[String]) => DateType | Null): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
+      inline def setParse(value: (String, String, js.Array[String]) => DateType | Null): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
     }
   }
   
@@ -324,8 +272,7 @@ object anon {
   }
   object FormatList {
     
-    @scala.inline
-    def apply[DateType](
+    inline def apply[DateType](
       formatList: js.Array[String | CustomFormat[DateType]],
       generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
       locale: Locale
@@ -334,20 +281,15 @@ object anon {
       __obj.asInstanceOf[FormatList[DateType]]
     }
     
-    @scala.inline
-    implicit class FormatListMutableBuilder[Self <: FormatList[?], DateType] (val x: Self & FormatList[DateType]) extends AnyVal {
+    extension [Self <: FormatList[?], DateType](x: Self & FormatList[DateType]) {
       
-      @scala.inline
-      def setFormatList(value: js.Array[String | CustomFormat[DateType]]): Self = StObject.set(x, "formatList", value.asInstanceOf[js.Any])
+      inline def setFormatList(value: js.Array[String | CustomFormat[DateType]]): Self = StObject.set(x, "formatList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatListVarargs(value: (String | CustomFormat[DateType])*): Self = StObject.set(x, "formatList", js.Array(value :_*))
+      inline def setFormatListVarargs(value: (String | CustomFormat[DateType])*): Self = StObject.set(x, "formatList", js.Array(value :_*))
       
-      @scala.inline
-      def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }
   }
   
@@ -361,8 +303,7 @@ object anon {
   }
   object GenerateConfig {
     
-    @scala.inline
-    def apply[DateType](
+    inline def apply[DateType](
       format: String | CustomFormat[DateType],
       generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
       locale: Locale
@@ -371,20 +312,15 @@ object anon {
       __obj.asInstanceOf[GenerateConfig[DateType]]
     }
     
-    @scala.inline
-    implicit class GenerateConfigMutableBuilder[Self <: GenerateConfig[?], DateType] (val x: Self & GenerateConfig[DateType]) extends AnyVal {
+    extension [Self <: GenerateConfig[?], DateType](x: Self & GenerateConfig[DateType]) {
       
-      @scala.inline
-      def setFormat(value: String | CustomFormat[DateType]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String | CustomFormat[DateType]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatFunction1(value: DateType => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormatFunction1(value: DateType => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }
   }
   
@@ -400,26 +336,20 @@ object anon {
   }
   object Label {
     
-    @scala.inline
-    def apply(label: String, onClick: () => Unit, onMouseEnter: () => Unit, onMouseLeave: () => Unit): Label = {
+    inline def apply(label: String, onClick: () => Unit, onMouseEnter: () => Unit, onMouseLeave: () => Unit): Label = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), onMouseEnter = js.Any.fromFunction0(onMouseEnter), onMouseLeave = js.Any.fromFunction0(onMouseLeave))
       __obj.asInstanceOf[Label]
     }
     
-    @scala.inline
-    implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+    extension [Self <: Label](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMouseEnter(value: () => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
+      inline def setOnMouseEnter(value: () => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMouseLeave(value: () => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction0(value))
+      inline def setOnMouseLeave(value: () => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction0(value))
     }
   }
   
@@ -432,23 +362,18 @@ object anon {
   }
   object OnTextChange {
     
-    @scala.inline
-    def apply(onTextChange: String => Unit, valueTexts: js.Array[String]): OnTextChange = {
+    inline def apply(onTextChange: String => Unit, valueTexts: js.Array[String]): OnTextChange = {
       val __obj = js.Dynamic.literal(onTextChange = js.Any.fromFunction1(onTextChange), valueTexts = valueTexts.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnTextChange]
     }
     
-    @scala.inline
-    implicit class OnTextChangeMutableBuilder[Self <: OnTextChange] (val x: Self) extends AnyVal {
+    extension [Self <: OnTextChange](x: Self) {
       
-      @scala.inline
-      def setOnTextChange(value: String => Unit): Self = StObject.set(x, "onTextChange", js.Any.fromFunction1(value))
+      inline def setOnTextChange(value: String => Unit): Self = StObject.set(x, "onTextChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValueTexts(value: js.Array[String]): Self = StObject.set(x, "valueTexts", value.asInstanceOf[js.Any])
+      inline def setValueTexts(value: js.Array[String]): Self = StObject.set(x, "valueTexts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueTextsVarargs(value: String*): Self = StObject.set(x, "valueTexts", js.Array(value :_*))
+      inline def setValueTextsVarargs(value: String*): Self = StObject.set(x, "valueTexts", js.Array(value :_*))
     }
   }
 }

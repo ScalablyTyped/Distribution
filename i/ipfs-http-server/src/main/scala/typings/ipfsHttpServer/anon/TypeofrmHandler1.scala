@@ -12,19 +12,15 @@ trait TypeofrmHandler1 extends StObject {
 }
 object TypeofrmHandler1 {
   
-  @scala.inline
-  def apply(handler_1: (js.Any, js.Any) => js.Promise[js.Any], options_2: Typeofoptions2): TypeofrmHandler1 = {
+  inline def apply(handler_1: (js.Any, js.Any) => js.Promise[js.Any], options_2: Typeofoptions2): TypeofrmHandler1 = {
     val __obj = js.Dynamic.literal(handler_1 = js.Any.fromFunction2(handler_1), options_2 = options_2.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofrmHandler1]
   }
   
-  @scala.inline
-  implicit class TypeofrmHandler1MutableBuilder[Self <: TypeofrmHandler1] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofrmHandler1](x: Self) {
     
-    @scala.inline
-    def setHandler_1(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler_1", js.Any.fromFunction2(value))
+    inline def setHandler_1(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler_1", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions_2(value: Typeofoptions2): Self = StObject.set(x, "options_2", value.asInstanceOf[js.Any])
+    inline def setOptions_2(value: Typeofoptions2): Self = StObject.set(x, "options_2", value.asInstanceOf[js.Any])
   }
 }

@@ -12,12 +12,9 @@ object projectionAssembleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assembleProjectionForModel(model: Model): js.Array[Projection] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleProjectionForModel")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[Projection]]
+  inline def assembleProjectionForModel(model: Model): js.Array[Projection] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleProjectionForModel")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[Projection]]
   
-  @scala.inline
-  def assembleProjections(model: Model): js.Array[Projection] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleProjections")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[Projection]]
+  inline def assembleProjections(model: Model): js.Array[Projection] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleProjections")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[Projection]]
   
-  @scala.inline
-  def assembleProjectionsForModelAndChildren(model: Model): js.Array[Projection] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleProjectionsForModelAndChildren")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[Projection]]
+  inline def assembleProjectionsForModelAndChildren(model: Model): js.Array[Projection] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleProjectionsForModelAndChildren")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[Projection]]
 }

@@ -10,6 +10,5 @@ object getSeriesValuesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(extent: js.Tuple2[Double, Double], bw: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(extent.asInstanceOf[js.Any], bw.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def default(extent: js.Tuple2[Double, Double], bw: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(extent.asInstanceOf[js.Any], bw.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

@@ -34,8 +34,7 @@ object subscriptionresultMod {
         }
         object SubscriptionProperties {
           
-          @scala.inline
-          def apply(
+          inline def apply(
             AutoDeleteOnIdle: Boolean,
             DeadLetteringOnFilterEvaluationExceptions: String,
             DeadLetteringOnMessageExpiration: String,
@@ -50,35 +49,25 @@ object subscriptionresultMod {
             __obj.asInstanceOf[SubscriptionProperties]
           }
           
-          @scala.inline
-          implicit class SubscriptionPropertiesMutableBuilder[Self <: SubscriptionProperties] (val x: Self) extends AnyVal {
+          extension [Self <: SubscriptionProperties](x: Self) {
             
-            @scala.inline
-            def setAutoDeleteOnIdle(value: Boolean): Self = StObject.set(x, "AutoDeleteOnIdle", value.asInstanceOf[js.Any])
+            inline def setAutoDeleteOnIdle(value: Boolean): Self = StObject.set(x, "AutoDeleteOnIdle", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setDeadLetteringOnFilterEvaluationExceptions(value: String): Self = StObject.set(x, "DeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
+            inline def setDeadLetteringOnFilterEvaluationExceptions(value: String): Self = StObject.set(x, "DeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setDeadLetteringOnMessageExpiration(value: String): Self = StObject.set(x, "DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
+            inline def setDeadLetteringOnMessageExpiration(value: String): Self = StObject.set(x, "DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+            inline def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setEnableBatchedOperations(value: Boolean): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
+            inline def setEnableBatchedOperations(value: Boolean): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
+            inline def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setMaxDeliveryCount(value: Double): Self = StObject.set(x, "MaxDeliveryCount", value.asInstanceOf[js.Any])
+            inline def setMaxDeliveryCount(value: Double): Self = StObject.set(x, "MaxDeliveryCount", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setMessageCount(value: Double): Self = StObject.set(x, "MessageCount", value.asInstanceOf[js.Any])
+            inline def setMessageCount(value: Double): Self = StObject.set(x, "MessageCount", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setRequiresSession(value: Boolean): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
+            inline def setRequiresSession(value: Boolean): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
           }
         }
         
@@ -90,20 +79,16 @@ object subscriptionresultMod {
         }
         object SubscriptionResult {
           
-          @scala.inline
-          def apply(parse: js.Object => js.Object | js.Array[js.Object], serialize: SubscriptionProperties => String): SubscriptionResult = {
+          inline def apply(parse: js.Object => js.Object | js.Array[js.Object], serialize: SubscriptionProperties => String): SubscriptionResult = {
             val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), serialize = js.Any.fromFunction1(serialize))
             __obj.asInstanceOf[SubscriptionResult]
           }
           
-          @scala.inline
-          implicit class SubscriptionResultMutableBuilder[Self <: SubscriptionResult] (val x: Self) extends AnyVal {
+          extension [Self <: SubscriptionResult](x: Self) {
             
-            @scala.inline
-            def setParse(value: js.Object => js.Object | js.Array[js.Object]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+            inline def setParse(value: js.Object => js.Object | js.Array[js.Object]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setSerialize(value: SubscriptionProperties => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+            inline def setSerialize(value: SubscriptionProperties => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
           }
         }
       }

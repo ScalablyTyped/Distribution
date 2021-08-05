@@ -45,16 +45,11 @@ object mod {
   	execa('echo', ['unicorns']).stdout.pipe(process.stdout);
   	```
   	*/
-  @scala.inline
-  def apply(file: String): ExecaChildProcess[String] = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[ExecaChildProcess[String]]
-  @scala.inline
-  def apply(file: String, arguments: js.Array[String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
-  @scala.inline
-  def apply(file: String, arguments: js.Array[String], options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
-  @scala.inline
-  def apply(file: String, arguments: Unit, options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
-  @scala.inline
-  def apply(file: String, options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  inline def apply(file: String): ExecaChildProcess[String] = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[ExecaChildProcess[String]]
+  inline def apply(file: String, arguments: js.Array[String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  inline def apply(file: String, arguments: js.Array[String], options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  inline def apply(file: String, arguments: Unit, options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  inline def apply(file: String, options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
   
   @JSImport("execa", JSImport.Namespace)
   @js.native
@@ -76,20 +71,16 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def command(command: String): ExecaChildProcess[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("command")(command.asInstanceOf[js.Any]).asInstanceOf[ExecaChildProcess[String]]
-  @scala.inline
-  def command(command: String, options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  inline def command(command: String): ExecaChildProcess[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("command")(command.asInstanceOf[js.Any]).asInstanceOf[ExecaChildProcess[String]]
+  inline def command(command: String, options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
   
   /**
   	Same as `execa.command()` but synchronous.
   	@param command - The program/script to execute and its arguments.
   	@returns A result `Object` with `stdout` and `stderr` properties.
   	*/
-  @scala.inline
-  def commandSync(command: String): ExecaSyncReturnValue[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("commandSync")(command.asInstanceOf[js.Any]).asInstanceOf[ExecaSyncReturnValue[String]]
-  @scala.inline
-  def commandSync(command: String, options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("commandSync")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
+  inline def commandSync(command: String): ExecaSyncReturnValue[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("commandSync")(command.asInstanceOf[js.Any]).asInstanceOf[ExecaSyncReturnValue[String]]
+  inline def commandSync(command: String, options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("commandSync")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
   
   /**
   	Execute a Node.js script as a child process.
@@ -101,20 +92,13 @@ object mod {
   	@param arguments - Arguments to pass to `scriptPath` on execution.
   	@returns A [`child_process` instance](https://nodejs.org/api/child_process.html#child_process_class_childprocess), which is enhanced to also be a `Promise` for a result `Object` with `stdout` and `stderr` properties.
   	*/
-  @scala.inline
-  def node(scriptPath: String): ExecaChildProcess[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any]).asInstanceOf[ExecaChildProcess[String]]
-  @scala.inline
-  def node(scriptPath: String, arguments: js.Array[String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
-  @scala.inline
-  def node(scriptPath: String, arguments: js.Array[String], options: NodeOptions[String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
-  @scala.inline
-  def node(scriptPath: String, arguments: js.Array[String], options: Options[Null]): ExecaChildProcess[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[Buffer]]
-  @scala.inline
-  def node(scriptPath: String, arguments: Unit, options: NodeOptions[String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
-  @scala.inline
-  def node(scriptPath: String, arguments: Unit, options: Options[Null]): ExecaChildProcess[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[Buffer]]
-  @scala.inline
-  def node(scriptPath: String, options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  inline def node(scriptPath: String): ExecaChildProcess[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any]).asInstanceOf[ExecaChildProcess[String]]
+  inline def node(scriptPath: String, arguments: js.Array[String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  inline def node(scriptPath: String, arguments: js.Array[String], options: NodeOptions[String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  inline def node(scriptPath: String, arguments: js.Array[String], options: Options[Null]): ExecaChildProcess[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[Buffer]]
+  inline def node(scriptPath: String, arguments: Unit, options: NodeOptions[String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  inline def node(scriptPath: String, arguments: Unit, options: Options[Null]): ExecaChildProcess[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[Buffer]]
+  inline def node(scriptPath: String, options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
   
   /**
   	Execute a file synchronously.
@@ -123,16 +107,11 @@ object mod {
   	@param arguments - Arguments to pass to `file` on execution.
   	@returns A result `Object` with `stdout` and `stderr` properties.
   	*/
-  @scala.inline
-  def sync(file: String): ExecaSyncReturnValue[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any]).asInstanceOf[ExecaSyncReturnValue[String]]
-  @scala.inline
-  def sync(file: String, arguments: js.Array[String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
-  @scala.inline
-  def sync(file: String, arguments: js.Array[String], options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
-  @scala.inline
-  def sync(file: String, arguments: Unit, options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
-  @scala.inline
-  def sync(file: String, options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
+  inline def sync(file: String): ExecaSyncReturnValue[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any]).asInstanceOf[ExecaSyncReturnValue[String]]
+  inline def sync(file: String, arguments: js.Array[String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
+  inline def sync(file: String, arguments: js.Array[String], options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
+  inline def sync(file: String, arguments: Unit, options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
+  inline def sync(file: String, options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
   
   trait CommonOptions[EncodingType] extends StObject {
     
@@ -312,179 +291,122 @@ object mod {
   }
   object CommonOptions {
     
-    @scala.inline
-    def apply[EncodingType](): CommonOptions[EncodingType] = {
+    inline def apply[EncodingType](): CommonOptions[EncodingType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonOptions[EncodingType]]
     }
     
-    @scala.inline
-    implicit class CommonOptionsMutableBuilder[Self <: CommonOptions[?], EncodingType] (val x: Self & CommonOptions[EncodingType]) extends AnyVal {
+    extension [Self <: CommonOptions[?], EncodingType](x: Self & CommonOptions[EncodingType]) {
       
-      @scala.inline
-      def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
-      @scala.inline
-      def setArgv0(value: String): Self = StObject.set(x, "argv0", value.asInstanceOf[js.Any])
+      inline def setArgv0(value: String): Self = StObject.set(x, "argv0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgv0Undefined: Self = StObject.set(x, "argv0", js.undefined)
+      inline def setArgv0Undefined: Self = StObject.set(x, "argv0", js.undefined)
       
-      @scala.inline
-      def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setCleanup(value: Boolean): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
+      inline def setCleanup(value: Boolean): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanupUndefined: Self = StObject.set(x, "cleanup", js.undefined)
+      inline def setCleanupUndefined: Self = StObject.set(x, "cleanup", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+      inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+      inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
+      inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
+      inline def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
       
-      @scala.inline
-      def setExtendEnv(value: Boolean): Self = StObject.set(x, "extendEnv", value.asInstanceOf[js.Any])
+      inline def setExtendEnv(value: Boolean): Self = StObject.set(x, "extendEnv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendEnvUndefined: Self = StObject.set(x, "extendEnv", js.undefined)
+      inline def setExtendEnvUndefined: Self = StObject.set(x, "extendEnv", js.undefined)
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
+      inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
       
-      @scala.inline
-      def setKillSignal(value: String | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
+      inline def setKillSignal(value: String | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
+      inline def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
       
-      @scala.inline
-      def setLocalDir(value: String): Self = StObject.set(x, "localDir", value.asInstanceOf[js.Any])
+      inline def setLocalDir(value: String): Self = StObject.set(x, "localDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalDirUndefined: Self = StObject.set(x, "localDir", js.undefined)
+      inline def setLocalDirUndefined: Self = StObject.set(x, "localDir", js.undefined)
       
-      @scala.inline
-      def setMaxBuffer(value: Double): Self = StObject.set(x, "maxBuffer", value.asInstanceOf[js.Any])
+      inline def setMaxBuffer(value: Double): Self = StObject.set(x, "maxBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBufferUndefined: Self = StObject.set(x, "maxBuffer", js.undefined)
+      inline def setMaxBufferUndefined: Self = StObject.set(x, "maxBuffer", js.undefined)
       
-      @scala.inline
-      def setPreferLocal(value: Boolean): Self = StObject.set(x, "preferLocal", value.asInstanceOf[js.Any])
+      inline def setPreferLocal(value: Boolean): Self = StObject.set(x, "preferLocal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferLocalUndefined: Self = StObject.set(x, "preferLocal", js.undefined)
+      inline def setPreferLocalUndefined: Self = StObject.set(x, "preferLocal", js.undefined)
       
-      @scala.inline
-      def setReject(value: Boolean): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
+      inline def setReject(value: Boolean): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
+      inline def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
       
-      @scala.inline
-      def setSerialization(value: json | advanced): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
+      inline def setSerialization(value: json | advanced): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
+      inline def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
       
-      @scala.inline
-      def setShell(value: Boolean | String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: Boolean | String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
+      inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
       
-      @scala.inline
-      def setStderr(value: StdioOption): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: StdioOption): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
-      @scala.inline
-      def setStdin(value: StdioOption): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: StdioOption): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
       
-      @scala.inline
-      def setStdio(value: pipe | ignore | inherit | js.Array[StdioOption]): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+      inline def setStdio(value: pipe | ignore | inherit | js.Array[StdioOption]): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
+      inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
       
-      @scala.inline
-      def setStdioVarargs(value: StdioOption*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+      inline def setStdioVarargs(value: StdioOption*): Self = StObject.set(x, "stdio", js.Array(value :_*))
       
-      @scala.inline
-      def setStdout(value: StdioOption): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: StdioOption): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
       
-      @scala.inline
-      def setStripFinalNewline(value: Boolean): Self = StObject.set(x, "stripFinalNewline", value.asInstanceOf[js.Any])
+      inline def setStripFinalNewline(value: Boolean): Self = StObject.set(x, "stripFinalNewline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripFinalNewlineUndefined: Self = StObject.set(x, "stripFinalNewline", js.undefined)
+      inline def setStripFinalNewlineUndefined: Self = StObject.set(x, "stripFinalNewline", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+      inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
       
-      @scala.inline
-      def setWindowsHide(value: Boolean): Self = StObject.set(x, "windowsHide", value.asInstanceOf[js.Any])
+      inline def setWindowsHide(value: Boolean): Self = StObject.set(x, "windowsHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowsHideUndefined: Self = StObject.set(x, "windowsHide", js.undefined)
+      inline def setWindowsHideUndefined: Self = StObject.set(x, "windowsHide", js.undefined)
       
-      @scala.inline
-      def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
+      inline def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowsVerbatimArgumentsUndefined: Self = StObject.set(x, "windowsVerbatimArguments", js.undefined)
+      inline def setWindowsVerbatimArgumentsUndefined: Self = StObject.set(x, "windowsVerbatimArguments", js.undefined)
     }
   }
   
@@ -573,8 +495,7 @@ object mod {
   }
   object ExecaError {
     
-    @scala.inline
-    def apply[StdoutErrorType](
+    inline def apply[StdoutErrorType](
       command: String,
       exitCode: Double,
       failed: Boolean,
@@ -591,17 +512,13 @@ object mod {
       __obj.asInstanceOf[ExecaError[StdoutErrorType]]
     }
     
-    @scala.inline
-    implicit class ExecaErrorMutableBuilder[Self <: ExecaError[?], StdoutErrorType] (val x: Self & ExecaError[StdoutErrorType]) extends AnyVal {
+    extension [Self <: ExecaError[?], StdoutErrorType](x: Self & ExecaError[StdoutErrorType]) {
       
-      @scala.inline
-      def setAll(value: StdoutErrorType): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: StdoutErrorType): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
-      @scala.inline
-      def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
+      inline def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -656,8 +573,7 @@ object mod {
   }
   object ExecaReturnBase {
     
-    @scala.inline
-    def apply[StdoutStderrType](
+    inline def apply[StdoutStderrType](
       command: String,
       exitCode: Double,
       failed: Boolean,
@@ -670,41 +586,29 @@ object mod {
       __obj.asInstanceOf[ExecaReturnBase[StdoutStderrType]]
     }
     
-    @scala.inline
-    implicit class ExecaReturnBaseMutableBuilder[Self <: ExecaReturnBase[?], StdoutStderrType] (val x: Self & ExecaReturnBase[StdoutStderrType]) extends AnyVal {
+    extension [Self <: ExecaReturnBase[?], StdoutStderrType](x: Self & ExecaReturnBase[StdoutStderrType]) {
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+      inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailed(value: Boolean): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+      inline def setFailed(value: Boolean): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKilled(value: Boolean): Self = StObject.set(x, "killed", value.asInstanceOf[js.Any])
+      inline def setKilled(value: Boolean): Self = StObject.set(x, "killed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalDescription(value: String): Self = StObject.set(x, "signalDescription", value.asInstanceOf[js.Any])
+      inline def setSignalDescription(value: String): Self = StObject.set(x, "signalDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalDescriptionUndefined: Self = StObject.set(x, "signalDescription", js.undefined)
+      inline def setSignalDescriptionUndefined: Self = StObject.set(x, "signalDescription", js.undefined)
       
-      @scala.inline
-      def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
-      @scala.inline
-      def setStderr(value: StdoutStderrType): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: StdoutStderrType): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdout(value: StdoutStderrType): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: StdoutStderrType): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimedOut(value: Boolean): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
+      inline def setTimedOut(value: Boolean): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
     }
   }
   
@@ -736,8 +640,7 @@ object mod {
   }
   object ExecaReturnValue {
     
-    @scala.inline
-    def apply[StdoutErrorType](
+    inline def apply[StdoutErrorType](
       command: String,
       exitCode: Double,
       failed: Boolean,
@@ -751,17 +654,13 @@ object mod {
       __obj.asInstanceOf[ExecaReturnValue[StdoutErrorType]]
     }
     
-    @scala.inline
-    implicit class ExecaReturnValueMutableBuilder[Self <: ExecaReturnValue[?], StdoutErrorType] (val x: Self & ExecaReturnValue[StdoutErrorType]) extends AnyVal {
+    extension [Self <: ExecaReturnValue[?], StdoutErrorType](x: Self & ExecaReturnValue[StdoutErrorType]) {
       
-      @scala.inline
-      def setAll(value: StdoutErrorType): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: StdoutErrorType): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
-      @scala.inline
-      def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
+      inline def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -783,8 +682,7 @@ object mod {
   }
   object ExecaSyncError {
     
-    @scala.inline
-    def apply[StdoutErrorType](
+    inline def apply[StdoutErrorType](
       command: String,
       exitCode: Double,
       failed: Boolean,
@@ -800,17 +698,13 @@ object mod {
       __obj.asInstanceOf[ExecaSyncError[StdoutErrorType]]
     }
     
-    @scala.inline
-    implicit class ExecaSyncErrorMutableBuilder[Self <: ExecaSyncError[?], StdoutErrorType] (val x: Self & ExecaSyncError[StdoutErrorType]) extends AnyVal {
+    extension [Self <: ExecaSyncError[?], StdoutErrorType](x: Self & ExecaSyncError[StdoutErrorType]) {
       
-      @scala.inline
-      def setOriginalMessage(value: String): Self = StObject.set(x, "originalMessage", value.asInstanceOf[js.Any])
+      inline def setOriginalMessage(value: String): Self = StObject.set(x, "originalMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalMessageUndefined: Self = StObject.set(x, "originalMessage", js.undefined)
+      inline def setOriginalMessageUndefined: Self = StObject.set(x, "originalMessage", js.undefined)
       
-      @scala.inline
-      def setShortMessage(value: String): Self = StObject.set(x, "shortMessage", value.asInstanceOf[js.Any])
+      inline def setShortMessage(value: String): Self = StObject.set(x, "shortMessage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -827,20 +721,16 @@ object mod {
   }
   object KillOptions {
     
-    @scala.inline
-    def apply(): KillOptions = {
+    inline def apply(): KillOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KillOptions]
     }
     
-    @scala.inline
-    implicit class KillOptionsMutableBuilder[Self <: KillOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KillOptions](x: Self) {
       
-      @scala.inline
-      def setForceKillAfterTimeout(value: Double | `false`): Self = StObject.set(x, "forceKillAfterTimeout", value.asInstanceOf[js.Any])
+      inline def setForceKillAfterTimeout(value: Double | `false`): Self = StObject.set(x, "forceKillAfterTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceKillAfterTimeoutUndefined: Self = StObject.set(x, "forceKillAfterTimeout", js.undefined)
+      inline def setForceKillAfterTimeoutUndefined: Self = StObject.set(x, "forceKillAfterTimeout", js.undefined)
     }
   }
   
@@ -862,29 +752,22 @@ object mod {
   }
   object NodeOptions {
     
-    @scala.inline
-    def apply[EncodingType](): NodeOptions[EncodingType] = {
+    inline def apply[EncodingType](): NodeOptions[EncodingType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeOptions[EncodingType]]
     }
     
-    @scala.inline
-    implicit class NodeOptionsMutableBuilder[Self <: NodeOptions[?], EncodingType] (val x: Self & NodeOptions[EncodingType]) extends AnyVal {
+    extension [Self <: NodeOptions[?], EncodingType](x: Self & NodeOptions[EncodingType]) {
       
-      @scala.inline
-      def setNodeOptions(value: js.Array[String]): Self = StObject.set(x, "nodeOptions", value.asInstanceOf[js.Any])
+      inline def setNodeOptions(value: js.Array[String]): Self = StObject.set(x, "nodeOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeOptionsUndefined: Self = StObject.set(x, "nodeOptions", js.undefined)
+      inline def setNodeOptionsUndefined: Self = StObject.set(x, "nodeOptions", js.undefined)
       
-      @scala.inline
-      def setNodeOptionsVarargs(value: String*): Self = StObject.set(x, "nodeOptions", js.Array(value :_*))
+      inline def setNodeOptionsVarargs(value: String*): Self = StObject.set(x, "nodeOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setNodePath(value: String): Self = StObject.set(x, "nodePath", value.asInstanceOf[js.Any])
+      inline def setNodePath(value: String): Self = StObject.set(x, "nodePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodePathUndefined: Self = StObject.set(x, "nodePath", js.undefined)
+      inline def setNodePathUndefined: Self = StObject.set(x, "nodePath", js.undefined)
     }
   }
   
@@ -899,20 +782,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[EncodingType](): Options[EncodingType] = {
+    inline def apply[EncodingType](): Options[EncodingType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[EncodingType]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], EncodingType] (val x: Self & Options[EncodingType]) extends AnyVal {
+    extension [Self <: Options[?], EncodingType](x: Self & Options[EncodingType]) {
       
-      @scala.inline
-      def setInput(value: String | Buffer | Readable): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String | Buffer | Readable): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     }
   }
   
@@ -938,20 +817,16 @@ object mod {
   }
   object SyncOptions {
     
-    @scala.inline
-    def apply[EncodingType](): SyncOptions[EncodingType] = {
+    inline def apply[EncodingType](): SyncOptions[EncodingType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SyncOptions[EncodingType]]
     }
     
-    @scala.inline
-    implicit class SyncOptionsMutableBuilder[Self <: SyncOptions[?], EncodingType] (val x: Self & SyncOptions[EncodingType]) extends AnyVal {
+    extension [Self <: SyncOptions[?], EncodingType](x: Self & SyncOptions[EncodingType]) {
       
-      @scala.inline
-      def setInput(value: String | Buffer): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String | Buffer): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     }
   }
   

@@ -12,25 +12,19 @@ trait ExtensionFlag extends StObject {
 }
 object ExtensionFlag {
   
-  @scala.inline
-  def apply(): ExtensionFlag = {
+  inline def apply(): ExtensionFlag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExtensionFlag]
   }
   
-  @scala.inline
-  implicit class ExtensionFlagMutableBuilder[Self <: ExtensionFlag] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionFlag](x: Self) {
     
-    @scala.inline
-    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setSetter(value: String): Self = StObject.set(x, "setter", value.asInstanceOf[js.Any])
+    inline def setSetter(value: String): Self = StObject.set(x, "setter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetterUndefined: Self = StObject.set(x, "setter", js.undefined)
+    inline def setSetterUndefined: Self = StObject.set(x, "setter", js.undefined)
   }
 }

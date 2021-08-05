@@ -18,25 +18,19 @@ trait UpdateApplicationInput extends StObject {
 }
 object UpdateApplicationInput {
   
-  @scala.inline
-  def apply(): UpdateApplicationInput = {
+  inline def apply(): UpdateApplicationInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateApplicationInput]
   }
   
-  @scala.inline
-  implicit class UpdateApplicationInputMutableBuilder[Self <: UpdateApplicationInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApplicationInput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
-    @scala.inline
-    def setNewApplicationName(value: ApplicationName): Self = StObject.set(x, "newApplicationName", value.asInstanceOf[js.Any])
+    inline def setNewApplicationName(value: ApplicationName): Self = StObject.set(x, "newApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewApplicationNameUndefined: Self = StObject.set(x, "newApplicationName", js.undefined)
+    inline def setNewApplicationNameUndefined: Self = StObject.set(x, "newApplicationName", js.undefined)
   }
 }

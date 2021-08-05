@@ -25,25 +25,19 @@ trait CustomXmlPartData extends StObject {
 }
 object CustomXmlPartData {
   
-  @scala.inline
-  def apply(): CustomXmlPartData = {
+  inline def apply(): CustomXmlPartData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomXmlPartData]
   }
   
-  @scala.inline
-  implicit class CustomXmlPartDataMutableBuilder[Self <: CustomXmlPartData] (val x: Self) extends AnyVal {
+  extension [Self <: CustomXmlPartData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setNamespaceUri(value: String): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
+    inline def setNamespaceUri(value: String): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUriUndefined: Self = StObject.set(x, "namespaceUri", js.undefined)
+    inline def setNamespaceUriUndefined: Self = StObject.set(x, "namespaceUri", js.undefined)
   }
 }

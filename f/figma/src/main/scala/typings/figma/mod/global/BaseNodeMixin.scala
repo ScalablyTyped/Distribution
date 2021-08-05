@@ -34,8 +34,7 @@ trait BaseNodeMixin extends StObject {
 }
 object BaseNodeMixin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getPluginData: String => String,
     getSharedPluginData: (String, String) => String,
     id: String,
@@ -50,40 +49,28 @@ object BaseNodeMixin {
     __obj.asInstanceOf[BaseNodeMixin]
   }
   
-  @scala.inline
-  implicit class BaseNodeMixinMutableBuilder[Self <: BaseNodeMixin] (val x: Self) extends AnyVal {
+  extension [Self <: BaseNodeMixin](x: Self) {
     
-    @scala.inline
-    def setGetPluginData(value: String => String): Self = StObject.set(x, "getPluginData", js.Any.fromFunction1(value))
+    inline def setGetPluginData(value: String => String): Self = StObject.set(x, "getPluginData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSharedPluginData(value: (String, String) => String): Self = StObject.set(x, "getSharedPluginData", js.Any.fromFunction2(value))
+    inline def setGetSharedPluginData(value: (String, String) => String): Self = StObject.set(x, "getSharedPluginData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: BaseNode & ChildrenMixin): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: BaseNode & ChildrenMixin): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPluginData(value: (String, String) => Unit): Self = StObject.set(x, "setPluginData", js.Any.fromFunction2(value))
+    inline def setSetPluginData(value: (String, String) => Unit): Self = StObject.set(x, "setPluginData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetRelaunchData(value: StringDictionary[/* description */ String] => Unit): Self = StObject.set(x, "setRelaunchData", js.Any.fromFunction1(value))
+    inline def setSetRelaunchData(value: StringDictionary[/* description */ String] => Unit): Self = StObject.set(x, "setRelaunchData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSharedPluginData(value: (String, String, String) => Unit): Self = StObject.set(x, "setSharedPluginData", js.Any.fromFunction3(value))
+    inline def setSetSharedPluginData(value: (String, String, String) => Unit): Self = StObject.set(x, "setSharedPluginData", js.Any.fromFunction3(value))
   }
 }

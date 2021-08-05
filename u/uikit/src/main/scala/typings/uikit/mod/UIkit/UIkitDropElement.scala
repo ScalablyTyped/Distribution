@@ -12,19 +12,15 @@ trait UIkitDropElement extends StObject {
 }
 object UIkitDropElement {
   
-  @scala.inline
-  def apply(hide: () => Unit, show: () => Unit): UIkitDropElement = {
+  inline def apply(hide: () => Unit, show: () => Unit): UIkitDropElement = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
     __obj.asInstanceOf[UIkitDropElement]
   }
   
-  @scala.inline
-  implicit class UIkitDropElementMutableBuilder[Self <: UIkitDropElement] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitDropElement](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

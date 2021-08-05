@@ -23,37 +23,27 @@ trait ProjectedMetric extends StObject {
 }
 object ProjectedMetric {
   
-  @scala.inline
-  def apply(): ProjectedMetric = {
+  inline def apply(): ProjectedMetric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectedMetric]
   }
   
-  @scala.inline
-  implicit class ProjectedMetricMutableBuilder[Self <: ProjectedMetric] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectedMetric](x: Self) {
     
-    @scala.inline
-    def setName(value: MetricName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: MetricName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTimestamps(value: Timestamps): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
+    inline def setTimestamps(value: Timestamps): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
+    inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
     
-    @scala.inline
-    def setTimestampsVarargs(value: Timestamp*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
+    inline def setTimestampsVarargs(value: Timestamp*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
     
-    @scala.inline
-    def setValues(value: MetricValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: MetricValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: MetricValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: MetricValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

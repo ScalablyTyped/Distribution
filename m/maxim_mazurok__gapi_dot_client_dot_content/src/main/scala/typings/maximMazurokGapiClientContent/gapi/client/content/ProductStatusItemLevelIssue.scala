@@ -35,70 +35,49 @@ trait ProductStatusItemLevelIssue extends StObject {
 }
 object ProductStatusItemLevelIssue {
   
-  @scala.inline
-  def apply(): ProductStatusItemLevelIssue = {
+  inline def apply(): ProductStatusItemLevelIssue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductStatusItemLevelIssue]
   }
   
-  @scala.inline
-  implicit class ProductStatusItemLevelIssueMutableBuilder[Self <: ProductStatusItemLevelIssue] (val x: Self) extends AnyVal {
+  extension [Self <: ProductStatusItemLevelIssue](x: Self) {
     
-    @scala.inline
-    def setApplicableCountries(value: js.Array[String]): Self = StObject.set(x, "applicableCountries", value.asInstanceOf[js.Any])
+    inline def setApplicableCountries(value: js.Array[String]): Self = StObject.set(x, "applicableCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicableCountriesUndefined: Self = StObject.set(x, "applicableCountries", js.undefined)
+    inline def setApplicableCountriesUndefined: Self = StObject.set(x, "applicableCountries", js.undefined)
     
-    @scala.inline
-    def setApplicableCountriesVarargs(value: String*): Self = StObject.set(x, "applicableCountries", js.Array(value :_*))
+    inline def setApplicableCountriesVarargs(value: String*): Self = StObject.set(x, "applicableCountries", js.Array(value :_*))
     
-    @scala.inline
-    def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
-    @scala.inline
-    def setServability(value: String): Self = StObject.set(x, "servability", value.asInstanceOf[js.Any])
+    inline def setServability(value: String): Self = StObject.set(x, "servability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServabilityUndefined: Self = StObject.set(x, "servability", js.undefined)
+    inline def setServabilityUndefined: Self = StObject.set(x, "servability", js.undefined)
   }
 }

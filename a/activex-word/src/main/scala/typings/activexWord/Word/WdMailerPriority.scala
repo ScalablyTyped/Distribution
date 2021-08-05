@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdMailerPriority extends StObject
 object WdMailerPriority {
   
-  @scala.inline
-  def wdPriorityHigh: `3` = 3.asInstanceOf[`3`]
+  inline def wdPriorityHigh: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdPriorityLow: `2` = 2.asInstanceOf[`2`]
+  inline def wdPriorityLow: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdPriorityNormal: `1` = 1.asInstanceOf[`1`]
+  inline def wdPriorityNormal: `1` = 1.asInstanceOf[`1`]
 }

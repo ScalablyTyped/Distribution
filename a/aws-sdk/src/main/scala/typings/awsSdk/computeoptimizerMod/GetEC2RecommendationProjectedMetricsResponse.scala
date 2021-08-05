@@ -13,22 +13,17 @@ trait GetEC2RecommendationProjectedMetricsResponse extends StObject {
 }
 object GetEC2RecommendationProjectedMetricsResponse {
   
-  @scala.inline
-  def apply(): GetEC2RecommendationProjectedMetricsResponse = {
+  inline def apply(): GetEC2RecommendationProjectedMetricsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEC2RecommendationProjectedMetricsResponse]
   }
   
-  @scala.inline
-  implicit class GetEC2RecommendationProjectedMetricsResponseMutableBuilder[Self <: GetEC2RecommendationProjectedMetricsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetEC2RecommendationProjectedMetricsResponse](x: Self) {
     
-    @scala.inline
-    def setRecommendedOptionProjectedMetrics(value: RecommendedOptionProjectedMetrics): Self = StObject.set(x, "recommendedOptionProjectedMetrics", value.asInstanceOf[js.Any])
+    inline def setRecommendedOptionProjectedMetrics(value: RecommendedOptionProjectedMetrics): Self = StObject.set(x, "recommendedOptionProjectedMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendedOptionProjectedMetricsUndefined: Self = StObject.set(x, "recommendedOptionProjectedMetrics", js.undefined)
+    inline def setRecommendedOptionProjectedMetricsUndefined: Self = StObject.set(x, "recommendedOptionProjectedMetrics", js.undefined)
     
-    @scala.inline
-    def setRecommendedOptionProjectedMetricsVarargs(value: RecommendedOptionProjectedMetric*): Self = StObject.set(x, "recommendedOptionProjectedMetrics", js.Array(value :_*))
+    inline def setRecommendedOptionProjectedMetricsVarargs(value: RecommendedOptionProjectedMetric*): Self = StObject.set(x, "recommendedOptionProjectedMetrics", js.Array(value :_*))
   }
 }

@@ -21,13 +21,11 @@ object TreeList {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.TreeList = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.TreeList]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.TreeList = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.TreeList]
   
   /* static member */
   @JSGlobal("kendo.ui.TreeList.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.TreeList = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.TreeList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.TreeList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

@@ -12,8 +12,7 @@ trait RouterRouteMissingEvent
 }
 object RouterRouteMissingEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isDefaultPrevented: () => Boolean,
     params: js.Any,
     preventDefault: js.Function,
@@ -24,10 +23,8 @@ object RouterRouteMissingEvent {
     __obj.asInstanceOf[RouterRouteMissingEvent]
   }
   
-  @scala.inline
-  implicit class RouterRouteMissingEventMutableBuilder[Self <: RouterRouteMissingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RouterRouteMissingEvent](x: Self) {
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

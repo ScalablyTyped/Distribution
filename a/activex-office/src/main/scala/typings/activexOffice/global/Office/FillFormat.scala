@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.FillFormat")
 @js.native
-class FillFormat protected ()
+/* private */ class FillFormat ()
   extends StObject
      with typings.activexOffice.Office.FillFormat {
   
@@ -57,7 +57,7 @@ class FillFormat protected ()
   /* CompleteClass */
   override val GradientVariant: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.FillFormat_typekey")
   var OfficeDotFillFormat_typekey: typings.activexOffice.Office.FillFormat = js.native
   

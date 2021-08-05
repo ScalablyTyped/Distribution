@@ -15,8 +15,7 @@ trait CheckBox
 }
 object CheckBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     contextMenu: PopupWindow,
@@ -43,10 +42,8 @@ object CheckBox {
     __obj.asInstanceOf[CheckBox]
   }
   
-  @scala.inline
-  implicit class CheckBoxMutableBuilder[Self <: CheckBox] (val x: Self) extends AnyVal {
+  extension [Self <: CheckBox](x: Self) {
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

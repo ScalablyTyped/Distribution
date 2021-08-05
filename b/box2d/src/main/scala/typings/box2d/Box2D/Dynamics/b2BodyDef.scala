@@ -82,8 +82,7 @@ trait b2BodyDef extends StObject {
 }
 object b2BodyDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     allowSleep: Boolean,
     angle: Double,
@@ -104,49 +103,34 @@ object b2BodyDef {
     __obj.asInstanceOf[b2BodyDef]
   }
   
-  @scala.inline
-  implicit class b2BodyDefMutableBuilder[Self <: b2BodyDef] (val x: Self) extends AnyVal {
+  extension [Self <: b2BodyDef](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSleep(value: Boolean): Self = StObject.set(x, "allowSleep", value.asInstanceOf[js.Any])
+    inline def setAllowSleep(value: Boolean): Self = StObject.set(x, "allowSleep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngularDamping(value: Double): Self = StObject.set(x, "angularDamping", value.asInstanceOf[js.Any])
+    inline def setAngularDamping(value: Double): Self = StObject.set(x, "angularDamping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngularVelocity(value: Double): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
+    inline def setAngularVelocity(value: Double): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwake(value: Boolean): Self = StObject.set(x, "awake", value.asInstanceOf[js.Any])
+    inline def setAwake(value: Boolean): Self = StObject.set(x, "awake", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBullet(value: Boolean): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+    inline def setBullet(value: Boolean): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedRotation(value: Boolean): Self = StObject.set(x, "fixedRotation", value.asInstanceOf[js.Any])
+    inline def setFixedRotation(value: Boolean): Self = StObject.set(x, "fixedRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInertiaScale(value: Double): Self = StObject.set(x, "inertiaScale", value.asInstanceOf[js.Any])
+    inline def setInertiaScale(value: Double): Self = StObject.set(x, "inertiaScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearDamping(value: Double): Self = StObject.set(x, "linearDamping", value.asInstanceOf[js.Any])
+    inline def setLinearDamping(value: Double): Self = StObject.set(x, "linearDamping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearVelocity(value: b2Vec2): Self = StObject.set(x, "linearVelocity", value.asInstanceOf[js.Any])
+    inline def setLinearVelocity(value: b2Vec2): Self = StObject.set(x, "linearVelocity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: b2Vec2): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: b2Vec2): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
   }
 }

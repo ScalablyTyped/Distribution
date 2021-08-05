@@ -31,8 +31,7 @@ trait DevicePickerAppearance extends StObject {
 }
 object DevicePickerAppearance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accentColor: Color,
     backgroundColor: Color,
     foregroundColor: Color,
@@ -45,28 +44,20 @@ object DevicePickerAppearance {
     __obj.asInstanceOf[DevicePickerAppearance]
   }
   
-  @scala.inline
-  implicit class DevicePickerAppearanceMutableBuilder[Self <: DevicePickerAppearance] (val x: Self) extends AnyVal {
+  extension [Self <: DevicePickerAppearance](x: Self) {
     
-    @scala.inline
-    def setAccentColor(value: Color): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+    inline def setAccentColor(value: Color): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundColor(value: Color): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+    inline def setForegroundColor(value: Color): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedAccentColor(value: Color): Self = StObject.set(x, "selectedAccentColor", value.asInstanceOf[js.Any])
+    inline def setSelectedAccentColor(value: Color): Self = StObject.set(x, "selectedAccentColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedBackgroundColor(value: Color): Self = StObject.set(x, "selectedBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setSelectedBackgroundColor(value: Color): Self = StObject.set(x, "selectedBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedForegroundColor(value: Color): Self = StObject.set(x, "selectedForegroundColor", value.asInstanceOf[js.Any])
+    inline def setSelectedForegroundColor(value: Color): Self = StObject.set(x, "selectedForegroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

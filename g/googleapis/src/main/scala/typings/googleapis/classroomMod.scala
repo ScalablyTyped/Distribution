@@ -36,8 +36,7 @@ object classroomMod {
     @JSImport("googleapis/build/src/apis/classroom", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Classroom] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Classroom]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
@@ -75,8 +74,7 @@ object classroomMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -120,9 +118,7 @@ object classroomMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def classroom(options: Options): Classroom = ^.asInstanceOf[js.Dynamic].applyDynamic("classroom")(options.asInstanceOf[js.Any]).asInstanceOf[Classroom]
+  inline def classroom(options: Options): Classroom = ^.asInstanceOf[js.Dynamic].applyDynamic("classroom")(options.asInstanceOf[js.Any]).asInstanceOf[Classroom]
   
-  @scala.inline
-  def classroom_v1(version: v1): Classroom = ^.asInstanceOf[js.Dynamic].applyDynamic("classroom")(version.asInstanceOf[js.Any]).asInstanceOf[Classroom]
+  inline def classroom_v1(version: v1): Classroom = ^.asInstanceOf[js.Dynamic].applyDynamic("classroom")(version.asInstanceOf[js.Any]).asInstanceOf[Classroom]
 }

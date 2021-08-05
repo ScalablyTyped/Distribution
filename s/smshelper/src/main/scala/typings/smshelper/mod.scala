@@ -13,12 +13,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def count(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def count(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def detectEncoding(text: String): GSM_7BIT | GSM_7BIT_EX | UTF16 = ^.asInstanceOf[js.Dynamic].applyDynamic("detectEncoding")(text.asInstanceOf[js.Any]).asInstanceOf[GSM_7BIT | GSM_7BIT_EX | UTF16]
+  inline def detectEncoding(text: String): GSM_7BIT | GSM_7BIT_EX | UTF16 = ^.asInstanceOf[js.Dynamic].applyDynamic("detectEncoding")(text.asInstanceOf[js.Any]).asInstanceOf[GSM_7BIT | GSM_7BIT_EX | UTF16]
   
-  @scala.inline
-  def parts(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parts")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def parts(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parts")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

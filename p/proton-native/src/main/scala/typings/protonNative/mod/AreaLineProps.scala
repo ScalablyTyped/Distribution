@@ -30,25 +30,19 @@ trait AreaLineProps
 }
 object AreaLineProps {
   
-  @scala.inline
-  def apply(x1: Double | String, x2: Double | String, y1: Double | String, y2: Double | String): AreaLineProps = {
+  inline def apply(x1: Double | String, x2: Double | String, y1: Double | String, y2: Double | String): AreaLineProps = {
     val __obj = js.Dynamic.literal(x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaLineProps]
   }
   
-  @scala.inline
-  implicit class AreaLinePropsMutableBuilder[Self <: AreaLineProps] (val x: Self) extends AnyVal {
+  extension [Self <: AreaLineProps](x: Self) {
     
-    @scala.inline
-    def setX1(value: Double | String): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+    inline def setX1(value: Double | String): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX2(value: Double | String): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+    inline def setX2(value: Double | String): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY1(value: Double | String): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    inline def setY1(value: Double | String): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2(value: Double | String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: Double | String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
   }
 }

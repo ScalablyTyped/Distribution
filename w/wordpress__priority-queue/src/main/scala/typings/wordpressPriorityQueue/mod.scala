@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createQueue(): WPPriorityQueue = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueue")().asInstanceOf[WPPriorityQueue]
+  inline def createQueue(): WPPriorityQueue = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueue")().asInstanceOf[WPPriorityQueue]
   
   trait WPPriorityQueue extends StObject {
     
@@ -32,23 +31,18 @@ object mod {
   }
   object WPPriorityQueue {
     
-    @scala.inline
-    def apply(add: (js.Object, js.Function0[Unit]) => Unit, flush: js.Object => Boolean, reset: () => Unit): WPPriorityQueue = {
+    inline def apply(add: (js.Object, js.Function0[Unit]) => Unit, flush: js.Object => Boolean, reset: () => Unit): WPPriorityQueue = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), flush = js.Any.fromFunction1(flush), reset = js.Any.fromFunction0(reset))
       __obj.asInstanceOf[WPPriorityQueue]
     }
     
-    @scala.inline
-    implicit class WPPriorityQueueMutableBuilder[Self <: WPPriorityQueue] (val x: Self) extends AnyVal {
+    extension [Self <: WPPriorityQueue](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (js.Object, js.Function0[Unit]) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (js.Object, js.Function0[Unit]) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFlush(value: js.Object => Boolean): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
+      inline def setFlush(value: js.Object => Boolean): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
   

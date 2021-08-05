@@ -17,31 +17,23 @@ trait NodeGroupAutoscalingPolicy extends StObject {
 }
 object NodeGroupAutoscalingPolicy {
   
-  @scala.inline
-  def apply(): NodeGroupAutoscalingPolicy = {
+  inline def apply(): NodeGroupAutoscalingPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeGroupAutoscalingPolicy]
   }
   
-  @scala.inline
-  implicit class NodeGroupAutoscalingPolicyMutableBuilder[Self <: NodeGroupAutoscalingPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: NodeGroupAutoscalingPolicy](x: Self) {
     
-    @scala.inline
-    def setMaxNodes(value: Double): Self = StObject.set(x, "maxNodes", value.asInstanceOf[js.Any])
+    inline def setMaxNodes(value: Double): Self = StObject.set(x, "maxNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNodesUndefined: Self = StObject.set(x, "maxNodes", js.undefined)
+    inline def setMaxNodesUndefined: Self = StObject.set(x, "maxNodes", js.undefined)
     
-    @scala.inline
-    def setMinNodes(value: Double): Self = StObject.set(x, "minNodes", value.asInstanceOf[js.Any])
+    inline def setMinNodes(value: Double): Self = StObject.set(x, "minNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinNodesUndefined: Self = StObject.set(x, "minNodes", js.undefined)
+    inline def setMinNodesUndefined: Self = StObject.set(x, "minNodes", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

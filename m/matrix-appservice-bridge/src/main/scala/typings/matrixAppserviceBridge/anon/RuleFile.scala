@@ -14,31 +14,23 @@ trait RuleFile extends StObject {
 }
 object RuleFile {
   
-  @scala.inline
-  def apply(): RuleFile = {
+  inline def apply(): RuleFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleFile]
   }
   
-  @scala.inline
-  implicit class RuleFileMutableBuilder[Self <: RuleFile] (val x: Self) extends AnyVal {
+  extension [Self <: RuleFile](x: Self) {
     
-    @scala.inline
-    def setRuleFile(value: String): Self = StObject.set(x, "ruleFile", value.asInstanceOf[js.Any])
+    inline def setRuleFile(value: String): Self = StObject.set(x, "ruleFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleFileUndefined: Self = StObject.set(x, "ruleFile", js.undefined)
+    inline def setRuleFileUndefined: Self = StObject.set(x, "ruleFile", js.undefined)
     
-    @scala.inline
-    def setRules(value: typings.matrixAppserviceBridge.roomLinkValidatorMod.Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: typings.matrixAppserviceBridge.roomLinkValidatorMod.Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setTriggerEndpoint(value: Boolean): Self = StObject.set(x, "triggerEndpoint", value.asInstanceOf[js.Any])
+    inline def setTriggerEndpoint(value: Boolean): Self = StObject.set(x, "triggerEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerEndpointUndefined: Self = StObject.set(x, "triggerEndpoint", js.undefined)
+    inline def setTriggerEndpointUndefined: Self = StObject.set(x, "triggerEndpoint", js.undefined)
   }
 }

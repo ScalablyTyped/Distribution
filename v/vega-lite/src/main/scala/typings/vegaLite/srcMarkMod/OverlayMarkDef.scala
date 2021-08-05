@@ -12,8 +12,7 @@ trait OverlayMarkDef[ES /* <: ExprRef | SignalRef */]
      with MarkDefMixins[ES]
 object OverlayMarkDef {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): OverlayMarkDef[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): OverlayMarkDef[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OverlayMarkDef[ES]]
   }

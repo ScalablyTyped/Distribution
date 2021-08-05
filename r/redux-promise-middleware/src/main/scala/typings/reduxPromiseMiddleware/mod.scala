@@ -50,10 +50,8 @@ object mod {
     /* "REJECTED" */ val Rejected: typings.reduxPromiseMiddleware.mod.ActionType.Rejected & String = js.native
   }
   
-  @scala.inline
-  def createPromise(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromise")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  @scala.inline
-  def createPromise(config: Config): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromise")(config.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def createPromise(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromise")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def createPromise(config: Config): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromise")(config.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
   
   trait AsyncAction
     extends StObject
@@ -64,24 +62,19 @@ object mod {
   }
   object AsyncAction {
     
-    @scala.inline
-    def apply(`type`: js.Any): AsyncAction = {
+    inline def apply(`type`: js.Any): AsyncAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsyncAction]
     }
     
-    @scala.inline
-    implicit class AsyncActionMutableBuilder[Self <: AsyncAction] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncAction](x: Self) {
       
-      @scala.inline
-      def setPayload(value: AsyncPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: AsyncPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadFunction0(value: () => js.Promise[js.Any]): Self = StObject.set(x, "payload", js.Any.fromFunction0(value))
+      inline def setPayloadFunction0(value: () => js.Promise[js.Any]): Self = StObject.set(x, "payload", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }
   }
   
@@ -98,26 +91,20 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setPromiseTypeDelimiter(value: String): Self = StObject.set(x, "promiseTypeDelimiter", value.asInstanceOf[js.Any])
+      inline def setPromiseTypeDelimiter(value: String): Self = StObject.set(x, "promiseTypeDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseTypeDelimiterUndefined: Self = StObject.set(x, "promiseTypeDelimiter", js.undefined)
+      inline def setPromiseTypeDelimiterUndefined: Self = StObject.set(x, "promiseTypeDelimiter", js.undefined)
       
-      @scala.inline
-      def setPromiseTypeSuffixes(value: js.Tuple3[PendingActionType, FulfilledActionType, RejectedActionType]): Self = StObject.set(x, "promiseTypeSuffixes", value.asInstanceOf[js.Any])
+      inline def setPromiseTypeSuffixes(value: js.Tuple3[PendingActionType, FulfilledActionType, RejectedActionType]): Self = StObject.set(x, "promiseTypeSuffixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseTypeSuffixesUndefined: Self = StObject.set(x, "promiseTypeSuffixes", js.undefined)
+      inline def setPromiseTypeSuffixesUndefined: Self = StObject.set(x, "promiseTypeSuffixes", js.undefined)
     }
   }
   
@@ -133,33 +120,25 @@ object mod {
   }
   object FluxStandardAction {
     
-    @scala.inline
-    def apply(`type`: js.Any): FluxStandardAction = {
+    inline def apply(`type`: js.Any): FluxStandardAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FluxStandardAction]
     }
     
-    @scala.inline
-    implicit class FluxStandardActionMutableBuilder[Self <: FluxStandardAction] (val x: Self) extends AnyVal {
+    extension [Self <: FluxStandardAction](x: Self) {
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }
   }
   

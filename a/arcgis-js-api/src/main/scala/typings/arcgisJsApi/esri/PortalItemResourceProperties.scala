@@ -22,25 +22,19 @@ trait PortalItemResourceProperties extends StObject {
 }
 object PortalItemResourceProperties {
   
-  @scala.inline
-  def apply(): PortalItemResourceProperties = {
+  inline def apply(): PortalItemResourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortalItemResourceProperties]
   }
   
-  @scala.inline
-  implicit class PortalItemResourcePropertiesMutableBuilder[Self <: PortalItemResourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PortalItemResourceProperties](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
+    inline def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
+    inline def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
   }
 }

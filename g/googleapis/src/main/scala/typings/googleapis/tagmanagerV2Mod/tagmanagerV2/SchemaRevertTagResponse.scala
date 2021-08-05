@@ -18,19 +18,15 @@ trait SchemaRevertTagResponse extends StObject {
 }
 object SchemaRevertTagResponse {
   
-  @scala.inline
-  def apply(): SchemaRevertTagResponse = {
+  inline def apply(): SchemaRevertTagResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRevertTagResponse]
   }
   
-  @scala.inline
-  implicit class SchemaRevertTagResponseMutableBuilder[Self <: SchemaRevertTagResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRevertTagResponse](x: Self) {
     
-    @scala.inline
-    def setTag(value: SchemaTag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: SchemaTag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

@@ -27,8 +27,7 @@ trait PublicKeyAsync
 }
 object PublicKeyAsync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Algorithm: (// tslint:disable-line ban-types
   js.Promise[Unpacked[OID]]) | PromisifiedFunction[OID],
     EncodedKey: (// tslint:disable-line ban-types
@@ -42,54 +41,45 @@ object PublicKeyAsync {
     __obj.asInstanceOf[PublicKeyAsync]
   }
   
-  @scala.inline
-  implicit class PublicKeyAsyncMutableBuilder[Self <: PublicKeyAsync] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKeyAsync](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: (// tslint:disable-line ban-types
+    inline def setAlgorithm(value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[OID]]) | PromisifiedFunction[OID]): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmFunction1(
+    inline def setAlgorithmFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Algorithm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncodedKey(
+    inline def setEncodedKey(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[EncodedData]]) | PromisifiedFunction[EncodedData]
     ): Self = StObject.set(x, "EncodedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodedKeyFunction1(
+    inline def setEncodedKeyFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "EncodedKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncodedParameters(
+    inline def setEncodedParameters(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[EncodedData]]) | PromisifiedFunction[EncodedData]
     ): Self = StObject.set(x, "EncodedParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodedParametersFunction1(
+    inline def setEncodedParametersFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "EncodedParameters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(
+    inline def setLength(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
     ): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthFunction1(
+    inline def setLengthFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]

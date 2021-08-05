@@ -13,19 +13,15 @@ trait ChannelEgressEndpoint extends StObject {
 }
 object ChannelEgressEndpoint {
   
-  @scala.inline
-  def apply(): ChannelEgressEndpoint = {
+  inline def apply(): ChannelEgressEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelEgressEndpoint]
   }
   
-  @scala.inline
-  implicit class ChannelEgressEndpointMutableBuilder[Self <: ChannelEgressEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelEgressEndpoint](x: Self) {
     
-    @scala.inline
-    def setSourceIp(value: string): Self = StObject.set(x, "SourceIp", value.asInstanceOf[js.Any])
+    inline def setSourceIp(value: string): Self = StObject.set(x, "SourceIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIpUndefined: Self = StObject.set(x, "SourceIp", js.undefined)
+    inline def setSourceIpUndefined: Self = StObject.set(x, "SourceIp", js.undefined)
   }
 }

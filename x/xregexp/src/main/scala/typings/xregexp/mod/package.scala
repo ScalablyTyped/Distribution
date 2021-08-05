@@ -41,16 +41,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * // have fresh `lastIndex` properties (set to zero).
   * XRegExp(/regex/);
   */
-@scala.inline
-def apply(pattern: java.lang.String): typings.std.RegExp = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[typings.std.RegExp]
-@scala.inline
-def apply(pattern: java.lang.String, flags: js.UndefOr[java.lang.String]): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
-@scala.inline
-def apply(pattern: java.lang.String, flags: java.lang.String): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
-@scala.inline
-def apply(pattern: typings.std.RegExp): typings.std.RegExp = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[typings.std.RegExp]
-@scala.inline
-def apply(pattern: typings.std.RegExp, flags: js.UndefOr[java.lang.String]): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
+inline def apply(pattern: java.lang.String): typings.std.RegExp = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[typings.std.RegExp]
+inline def apply(pattern: java.lang.String, flags: js.UndefOr[java.lang.String]): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
+inline def apply(pattern: java.lang.String, flags: java.lang.String): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
+inline def apply(pattern: typings.std.RegExp): typings.std.RegExp = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[typings.std.RegExp]
+inline def apply(pattern: typings.std.RegExp, flags: js.UndefOr[java.lang.String]): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
 
 //#endregion
 //#region methods
@@ -86,8 +81,7 @@ def apply(pattern: typings.std.RegExp, flags: js.UndefOr[java.lang.String]): typ
   * XRegExp('a+', 'U').exec('aaa')[0]; // -> 'a'
   * XRegExp('a+?', 'U').exec('aaa')[0]; // -> 'aaa'
   */
-@scala.inline
-def addToken(
+inline def addToken(
   regex: typings.std.RegExp,
   handler: js.Function3[
   /* match */ typings.xregexp.mod.MatchArray, 
@@ -96,8 +90,7 @@ def addToken(
   java.lang.String
 ]
 ): scala.Unit = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addToken")(regex.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def addToken(
+inline def addToken(
   regex: typings.std.RegExp,
   handler: js.Function3[
   /* match */ typings.xregexp.mod.MatchArray, 
@@ -135,8 +128,7 @@ def addToken(
   * }]);
   * XRegExp('\\p{XDigit}:\\p{Hexadecimal}+').test('0:3D'); // -> true
   */
-@scala.inline
-def addUnicodeData(data: js.Array[typings.xregexp.mod.UnicodeCharacterRange]): scala.Unit = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addUnicodeData")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def addUnicodeData(data: js.Array[typings.xregexp.mod.UnicodeCharacterRange]): scala.Unit = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addUnicodeData")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
 /**
   * Builds regexes using named subpatterns, for readability and pattern reuse. Backreferences in
@@ -162,10 +154,8 @@ def addUnicodeData(data: js.Array[typings.xregexp.mod.UnicodeCharacterRange]): s
   * time.test('10:59'); // -> true
   * XRegExp.exec('10:59', time).minutes; // -> '59'
   */
-@scala.inline
-def build(pattern: java.lang.String, subs: typings.std.Record[java.lang.String, typings.xregexp.mod.Pattern]): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("build")(pattern.asInstanceOf[js.Any], subs.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
-@scala.inline
-def build(
+inline def build(pattern: java.lang.String, subs: typings.std.Record[java.lang.String, typings.xregexp.mod.Pattern]): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("build")(pattern.asInstanceOf[js.Any], subs.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
+inline def build(
   pattern: java.lang.String,
   subs: typings.std.Record[java.lang.String, typings.xregexp.mod.Pattern],
   flags: java.lang.String
@@ -184,8 +174,7 @@ def build(
   *   // The regex is compiled once only
   * }
   */
-@scala.inline
-def cache(pattern: java.lang.String, flags: java.lang.String): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cache")(pattern.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
+inline def cache(pattern: java.lang.String, flags: java.lang.String): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cache")(pattern.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
 
 /**
   * Escapes any regular expression metacharacters, for use when matching literal strings. The result
@@ -198,8 +187,7 @@ def cache(pattern: java.lang.String, flags: java.lang.String): typings.std.RegEx
   * XRegExp.escape('Escaped? <.>');
   * // -> 'Escaped\?\ <\.>'
   */
-@scala.inline
-def escape(str: java.lang.String): java.lang.String = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def escape(str: java.lang.String): java.lang.String = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /**
   * Executes a regex search in a specified string. Returns a match array or `null`. If the provided
@@ -229,24 +217,18 @@ def escape(str: java.lang.String): java.lang.String = typings.xregexp.mod.^.asIn
   * }
   * // result -> ['2', '3', '4']
   */
-@scala.inline
-def exec(str: java.lang.String, regex: typings.std.RegExp): typings.xregexp.mod.ExecArray | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exec")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any])).asInstanceOf[typings.xregexp.mod.ExecArray | scala.Null]
-@scala.inline
-def exec(str: java.lang.String, regex: typings.std.RegExp, pos: scala.Double): typings.xregexp.mod.ExecArray | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exec")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.xregexp.mod.ExecArray | scala.Null]
-@scala.inline
-def exec(str: java.lang.String, regex: typings.std.RegExp, pos: scala.Double, sticky: scala.Boolean): typings.xregexp.mod.ExecArray | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exec")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], sticky.asInstanceOf[js.Any])).asInstanceOf[typings.xregexp.mod.ExecArray | scala.Null]
-@scala.inline
-def exec(str: java.lang.String, regex: typings.std.RegExp, pos: scala.Unit, sticky: scala.Boolean): typings.xregexp.mod.ExecArray | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exec")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], sticky.asInstanceOf[js.Any])).asInstanceOf[typings.xregexp.mod.ExecArray | scala.Null]
+inline def exec(str: java.lang.String, regex: typings.std.RegExp): typings.xregexp.mod.ExecArray | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exec")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any])).asInstanceOf[typings.xregexp.mod.ExecArray | scala.Null]
+inline def exec(str: java.lang.String, regex: typings.std.RegExp, pos: scala.Double): typings.xregexp.mod.ExecArray | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exec")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.xregexp.mod.ExecArray | scala.Null]
+inline def exec(str: java.lang.String, regex: typings.std.RegExp, pos: scala.Double, sticky: scala.Boolean): typings.xregexp.mod.ExecArray | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exec")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], sticky.asInstanceOf[js.Any])).asInstanceOf[typings.xregexp.mod.ExecArray | scala.Null]
+inline def exec(str: java.lang.String, regex: typings.std.RegExp, pos: scala.Unit, sticky: scala.Boolean): typings.xregexp.mod.ExecArray | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exec")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], sticky.asInstanceOf[js.Any])).asInstanceOf[typings.xregexp.mod.ExecArray | scala.Null]
 
-@scala.inline
-def exec_sticky(
+inline def exec_sticky(
   str: java.lang.String,
   regex: typings.std.RegExp,
   pos: scala.Double,
   sticky: typings.xregexp.xregexpStrings.sticky
 ): typings.xregexp.mod.ExecArray | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exec")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], sticky.asInstanceOf[js.Any])).asInstanceOf[typings.xregexp.mod.ExecArray | scala.Null]
-@scala.inline
-def exec_sticky(
+inline def exec_sticky(
   str: java.lang.String,
   regex: typings.std.RegExp,
   pos: scala.Unit,
@@ -274,8 +256,7 @@ def exec_sticky(
   * });
   * // evens -> [2, 4]
   */
-@scala.inline
-def forEach(
+inline def forEach(
   str: java.lang.String,
   regex: typings.std.RegExp,
   callback: js.Function4[
@@ -299,8 +280,7 @@ def forEach(
   * const globalCopy = XRegExp.globalize(/regex/);
   * globalCopy.global; // -> true
   */
-@scala.inline
-def globalize(regex: typings.std.RegExp): typings.std.RegExp = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("globalize")(regex.asInstanceOf[js.Any]).asInstanceOf[typings.std.RegExp]
+inline def globalize(regex: typings.std.RegExp): typings.std.RegExp = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("globalize")(regex.asInstanceOf[js.Any]).asInstanceOf[typings.std.RegExp]
 
 /**
   * Installs optional features according to the specified options. Can be undone using
@@ -321,8 +301,7 @@ def globalize(regex: typings.std.RegExp): typings.std.RegExp = typings.xregexp.m
   * // With an options string
   * XRegExp.install('astral namespacing');
   */
-@scala.inline
-def install(options: typings.xregexp.mod.FeatureOptions): scala.Unit = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("install")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def install(options: typings.xregexp.mod.FeatureOptions): scala.Unit = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("install")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
 /**
   * Checks whether an individual optional feature is installed.
@@ -335,8 +314,7 @@ def install(options: typings.xregexp.mod.FeatureOptions): scala.Unit = typings.x
   *
   * XRegExp.isInstalled('astral');
   */
-@scala.inline
-def isInstalled(feature: typings.xregexp.mod.Feature): scala.Boolean = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isInstalled")(feature.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isInstalled(feature: typings.xregexp.mod.Feature): scala.Boolean = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isInstalled")(feature.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
 /**
   * Returns `true` if an object is a regex; `false` if it isn't. This works correctly for regexes
@@ -351,15 +329,11 @@ def isInstalled(feature: typings.xregexp.mod.Feature): scala.Boolean = typings.x
   * XRegExp.isRegExp(RegExp('^', 'm')); // -> true
   * XRegExp.isRegExp(XRegExp('(?s).')); // -> true
   */
-@scala.inline
-def isRegExp(value: js.Any): /* is std.RegExp */ scala.Boolean = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isRegExp")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ scala.Boolean]
+inline def isRegExp(value: js.Any): /* is std.RegExp */ scala.Boolean = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isRegExp")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ scala.Boolean]
 
-@scala.inline
-def `match`(str: java.lang.String, regex: typings.std.RegExp): java.lang.String | js.Array[java.lang.String] | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | js.Array[java.lang.String] | scala.Null]
-@scala.inline
-def `match`(str: java.lang.String, regex: typings.std.RegExp, scope: typings.xregexp.mod.MatchScope): java.lang.String | js.Array[java.lang.String] | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | js.Array[java.lang.String] | scala.Null]
-@scala.inline
-def `match`(str: java.lang.String, regex: typings.std.RegExp, scope: typings.xregexp.mod.MatchScopeAll): js.Array[java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
+inline def `match`(str: java.lang.String, regex: typings.std.RegExp): java.lang.String | js.Array[java.lang.String] | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | js.Array[java.lang.String] | scala.Null]
+inline def `match`(str: java.lang.String, regex: typings.std.RegExp, scope: typings.xregexp.mod.MatchScope): java.lang.String | js.Array[java.lang.String] | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | js.Array[java.lang.String] | scala.Null]
+inline def `match`(str: java.lang.String, regex: typings.std.RegExp, scope: typings.xregexp.mod.MatchScopeAll): js.Array[java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
 /**
   * Returns the first matched string, or in global mode, an array containing all matched strings.
   * This is essentially a more convenient re-implementation of `String.prototype.match` that gives
@@ -386,8 +360,7 @@ def `match`(str: java.lang.String, regex: typings.std.RegExp, scope: typings.xre
   * XRegExp.match('abc', /\w/, 'all'); // -> ['a', 'b', 'c']
   * XRegExp.match('abc', /x/, 'all'); // -> []
   */
-@scala.inline
-def `match`(str: java.lang.String, regex: typings.std.RegExp, scope: typings.xregexp.mod.MatchScopeOne): java.lang.String | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | scala.Null]
+inline def `match`(str: java.lang.String, regex: typings.std.RegExp, scope: typings.xregexp.mod.MatchScopeOne): java.lang.String | scala.Null = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | scala.Null]
 
 /**
   * Retrieves the matches from searching a string using a chain of regexes that successively search
@@ -416,8 +389,7 @@ def `match`(str: java.lang.String, regex: typings.std.RegExp, scope: typings.xre
   * ]);
   * // -> ['xregexp.com', 'www.google.com']
   */
-@scala.inline
-def matchChain(str: java.lang.String, chain: typings.xregexp.mod.MatchChainArray): typings.xregexp.mod.MatchArray = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchChain")(str.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[typings.xregexp.mod.MatchArray]
+inline def matchChain(str: java.lang.String, chain: typings.xregexp.mod.MatchChainArray): typings.xregexp.mod.MatchArray = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchChain")(str.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[typings.xregexp.mod.MatchArray]
 
 /**
   * Returns an array of match strings between outermost left and right delimiters, or an array of
@@ -468,28 +440,23 @@ def matchChain(str: java.lang.String, chain: typings.xregexp.mod.MatchChainArray
   * XRegExp.matchRecursive(str, '<', '>', 'gy');
   * // -> ['1', '<<2>>', '3']
   */
-@scala.inline
-def matchRecursive(str: java.lang.String, left: java.lang.String, right: java.lang.String): js.Array[java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchRecursive")(str.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
-@scala.inline
-def matchRecursive(str: java.lang.String, left: java.lang.String, right: java.lang.String, flags: java.lang.String): js.Array[java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchRecursive")(str.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
-@scala.inline
-def matchRecursive[T /* <: js.UndefOr[typings.xregexp.mod.MatchRecursiveOptions | scala.Null] */](
+inline def matchRecursive(str: java.lang.String, left: java.lang.String, right: java.lang.String): js.Array[java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchRecursive")(str.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
+inline def matchRecursive(str: java.lang.String, left: java.lang.String, right: java.lang.String, flags: java.lang.String): js.Array[java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchRecursive")(str.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
+inline def matchRecursive[T /* <: js.UndefOr[typings.xregexp.mod.MatchRecursiveOptions | scala.Null] */](
   str: java.lang.String,
   left: java.lang.String,
   right: java.lang.String,
   flags: java.lang.String,
   options: T
 ): js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchRecursive")(str.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String]]
-@scala.inline
-def matchRecursive[T /* <: js.UndefOr[typings.xregexp.mod.MatchRecursiveOptions | scala.Null] */](
+inline def matchRecursive[T /* <: js.UndefOr[typings.xregexp.mod.MatchRecursiveOptions | scala.Null] */](
   str: java.lang.String,
   left: java.lang.String,
   right: java.lang.String,
   flags: scala.Null,
   options: T
 ): js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchRecursive")(str.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String]]
-@scala.inline
-def matchRecursive[T /* <: js.UndefOr[typings.xregexp.mod.MatchRecursiveOptions | scala.Null] */](
+inline def matchRecursive[T /* <: js.UndefOr[typings.xregexp.mod.MatchRecursiveOptions | scala.Null] */](
   str: java.lang.String,
   left: java.lang.String,
   right: java.lang.String,
@@ -497,10 +464,8 @@ def matchRecursive[T /* <: js.UndefOr[typings.xregexp.mod.MatchRecursiveOptions 
   options: T
 ): js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchRecursive")(str.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String]]
 
-@scala.inline
-def `matchRecursive_T_UnionMatchRecursiveOptionsNull<undefined>`[T /* <: js.UndefOr[typings.xregexp.mod.MatchRecursiveOptions | scala.Null] */](str: java.lang.String, left: java.lang.String, right: java.lang.String): js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchRecursive")(str.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String]]
-@scala.inline
-def `matchRecursive_T_UnionMatchRecursiveOptionsNull<undefined>`[T /* <: js.UndefOr[typings.xregexp.mod.MatchRecursiveOptions | scala.Null] */](str: java.lang.String, left: java.lang.String, right: java.lang.String, flags: java.lang.String): js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchRecursive")(str.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String]]
+inline def `matchRecursive_T_UnionMatchRecursiveOptionsNull<undefined>`[T /* <: js.UndefOr[typings.xregexp.mod.MatchRecursiveOptions | scala.Null] */](str: java.lang.String, left: java.lang.String, right: java.lang.String): js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchRecursive")(str.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String]]
+inline def `matchRecursive_T_UnionMatchRecursiveOptionsNull<undefined>`[T /* <: js.UndefOr[typings.xregexp.mod.MatchRecursiveOptions | scala.Null] */](str: java.lang.String, left: java.lang.String, right: java.lang.String, flags: java.lang.String): js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("matchRecursive")(str.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.xregexp.mod.MatchRecursiveValueNameMatch | java.lang.String]]
 
 /**
   * Returns a new string with one or all matches of a pattern replaced. The pattern can be a string
@@ -531,14 +496,12 @@ def `matchRecursive_T_UnionMatchRecursiveOptionsNull<undefined>`[T /* <: js.Unde
   * XRegExp.replace('RegExp builds RegExps', 'RegExp', 'XRegExp', 'all');
   * // -> 'XRegExp builds XRegExps'
   */
-@scala.inline
-def replace(
+inline def replace(
   str: java.lang.String,
   search: typings.xregexp.mod.Pattern,
   replacement: typings.xregexp.mod.ReplacementValue
 ): java.lang.String = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def replace(
+inline def replace(
   str: java.lang.String,
   search: typings.xregexp.mod.Pattern,
   replacement: typings.xregexp.mod.ReplacementValue,
@@ -567,8 +530,7 @@ def replace(
   *   [/f/g, ($0) => $0.toUpperCase()]
   * ]);
   */
-@scala.inline
-def replaceEach(str: java.lang.String, replacements: js.Array[typings.xregexp.mod.ReplacementDetail]): java.lang.String = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("replaceEach")(str.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def replaceEach(str: java.lang.String, replacements: js.Array[typings.xregexp.mod.ReplacementDetail]): java.lang.String = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("replaceEach")(str.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
 /**
   * Splits a string into an array of strings using a regex or string separator. Matches of the
@@ -595,10 +557,8 @@ def replaceEach(str: java.lang.String, replacements: js.Array[typings.xregexp.mo
   * XRegExp.split('..word1..', /([a-z]+)(\d+)/i);
   * // -> ['..', 'word', '1', '..']
   */
-@scala.inline
-def split(str: java.lang.String, separator: typings.xregexp.mod.Pattern): js.Array[java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("split")(str.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
-@scala.inline
-def split(str: java.lang.String, separator: typings.xregexp.mod.Pattern, limit: scala.Double): js.Array[java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("split")(str.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
+inline def split(str: java.lang.String, separator: typings.xregexp.mod.Pattern): js.Array[java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("split")(str.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
+inline def split(str: java.lang.String, separator: typings.xregexp.mod.Pattern, limit: scala.Double): js.Array[java.lang.String] = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("split")(str.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
 
 /**
   * Provides tagged template literals that create regexes with XRegExp syntax and flags. The
@@ -623,16 +583,14 @@ def split(str: java.lang.String, separator: typings.xregexp.mod.Pattern, limit: 
   * time.test('10:59'); // -> true
   * XRegExp.exec('10:59', time).minutes; // -> '59'
   */
-@scala.inline
-def tag(): js.Function2[
+inline def tag(): js.Function2[
 /* literals */ typings.std.TemplateStringsArray, 
 /* repeated */ js.Any, 
 typings.std.RegExp] = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tag")().asInstanceOf[js.Function2[
 /* literals */ typings.std.TemplateStringsArray, 
 /* repeated */ js.Any, 
 typings.std.RegExp]]
-@scala.inline
-def tag(flags: java.lang.String): js.Function2[
+inline def tag(flags: java.lang.String): js.Function2[
 /* literals */ typings.std.TemplateStringsArray, 
 /* repeated */ js.Any, 
 typings.std.RegExp] = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tag")(flags.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -662,29 +620,23 @@ typings.std.RegExp]]
   * XRegExp.test('abc', /c/, 0, 'sticky'); // -> false
   * XRegExp.test('abc', /c/, 2, 'sticky'); // -> true
   */
-@scala.inline
-def test(str: java.lang.String, regex: typings.xregexp.mod.Pattern): scala.Boolean = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-@scala.inline
-def test(str: java.lang.String, regex: typings.xregexp.mod.Pattern, pos: scala.Double): scala.Boolean = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-@scala.inline
-def test(
+inline def test(str: java.lang.String, regex: typings.xregexp.mod.Pattern): scala.Boolean = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def test(str: java.lang.String, regex: typings.xregexp.mod.Pattern, pos: scala.Double): scala.Boolean = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def test(
   str: java.lang.String,
   regex: typings.xregexp.mod.Pattern,
   pos: scala.Double,
   sticky: scala.Boolean
 ): scala.Boolean = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], sticky.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-@scala.inline
-def test(str: java.lang.String, regex: typings.xregexp.mod.Pattern, pos: scala.Unit, sticky: scala.Boolean): scala.Boolean = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], sticky.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def test(str: java.lang.String, regex: typings.xregexp.mod.Pattern, pos: scala.Unit, sticky: scala.Boolean): scala.Boolean = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], sticky.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def test_sticky(
+inline def test_sticky(
   str: java.lang.String,
   regex: typings.xregexp.mod.Pattern,
   pos: scala.Double,
   sticky: typings.xregexp.xregexpStrings.sticky
 ): scala.Boolean = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any], regex.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], sticky.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-@scala.inline
-def test_sticky(
+inline def test_sticky(
   str: java.lang.String,
   regex: typings.xregexp.mod.Pattern,
   pos: scala.Unit,
@@ -710,8 +662,7 @@ def test_sticky(
   * // With an options string
   * XRegExp.uninstall('astral namespacing');
   */
-@scala.inline
-def uninstall(options: typings.xregexp.mod.FeatureOptions): scala.Unit = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def uninstall(options: typings.xregexp.mod.FeatureOptions): scala.Unit = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
 /**
   * Returns an XRegExp object that is the union of the given patterns. Patterns can be provided as
@@ -732,24 +683,19 @@ def uninstall(options: typings.xregexp.mod.FeatureOptions): scala.Unit = typings
   * XRegExp.union([/man/, /bear/, /pig/], 'i', {conjunction: 'none'});
   * // -> /manbearpig/i
   */
-@scala.inline
-def union(patterns: js.Array[typings.xregexp.mod.Pattern]): typings.std.RegExp = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("union")(patterns.asInstanceOf[js.Any]).asInstanceOf[typings.std.RegExp]
-@scala.inline
-def union(patterns: js.Array[typings.xregexp.mod.Pattern], flags: java.lang.String): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("union")(patterns.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
-@scala.inline
-def union(
+inline def union(patterns: js.Array[typings.xregexp.mod.Pattern]): typings.std.RegExp = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("union")(patterns.asInstanceOf[js.Any]).asInstanceOf[typings.std.RegExp]
+inline def union(patterns: js.Array[typings.xregexp.mod.Pattern], flags: java.lang.String): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("union")(patterns.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
+inline def union(
   patterns: js.Array[typings.xregexp.mod.Pattern],
   flags: java.lang.String,
   options: typings.xregexp.mod.UnionOptions
 ): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("union")(patterns.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
-@scala.inline
-def union(
+inline def union(
   patterns: js.Array[typings.xregexp.mod.Pattern],
   flags: scala.Null,
   options: typings.xregexp.mod.UnionOptions
 ): typings.std.RegExp = (typings.xregexp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("union")(patterns.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.std.RegExp]
-@scala.inline
-def union(
+inline def union(
   patterns: js.Array[typings.xregexp.mod.Pattern],
   flags: scala.Unit,
   options: typings.xregexp.mod.UnionOptions
@@ -761,8 +707,7 @@ def union(
   * The XRegExp version number as a string containing three dot-separated parts. For example,
   * '2.0.0-beta-3'.
   */
-@scala.inline
-def version: java.lang.String = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version: java.lang.String = typings.xregexp.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
 
 /**
   * An array of valid items to use for chain matching.

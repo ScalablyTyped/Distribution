@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Explorer")
 @js.native
-class Explorer protected ()
+/* private */ class Explorer ()
   extends StObject
      with typings.activexOutlook.Outlook.Explorer {
   
@@ -80,7 +80,7 @@ class Explorer protected ()
   /* CompleteClass */
   override val NavigationPane: typings.activexOutlook.Outlook.NavigationPane = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Explorer_typekey")
   var OutlookDotExplorer_typekey: typings.activexOutlook.Outlook.Explorer = js.native
   

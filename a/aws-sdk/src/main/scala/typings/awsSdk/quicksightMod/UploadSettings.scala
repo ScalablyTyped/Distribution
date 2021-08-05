@@ -33,43 +33,31 @@ trait UploadSettings extends StObject {
 }
 object UploadSettings {
   
-  @scala.inline
-  def apply(): UploadSettings = {
+  inline def apply(): UploadSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadSettings]
   }
   
-  @scala.inline
-  implicit class UploadSettingsMutableBuilder[Self <: UploadSettings] (val x: Self) extends AnyVal {
+  extension [Self <: UploadSettings](x: Self) {
     
-    @scala.inline
-    def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
+    inline def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsHeaderUndefined: Self = StObject.set(x, "ContainsHeader", js.undefined)
+    inline def setContainsHeaderUndefined: Self = StObject.set(x, "ContainsHeader", js.undefined)
     
-    @scala.inline
-    def setDelimiter(value: Delimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: Delimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
     
-    @scala.inline
-    def setFormat(value: FileFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: FileFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setStartFromRow(value: PositiveInteger): Self = StObject.set(x, "StartFromRow", value.asInstanceOf[js.Any])
+    inline def setStartFromRow(value: PositiveInteger): Self = StObject.set(x, "StartFromRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartFromRowUndefined: Self = StObject.set(x, "StartFromRow", js.undefined)
+    inline def setStartFromRowUndefined: Self = StObject.set(x, "StartFromRow", js.undefined)
     
-    @scala.inline
-    def setTextQualifier(value: TextQualifier): Self = StObject.set(x, "TextQualifier", value.asInstanceOf[js.Any])
+    inline def setTextQualifier(value: TextQualifier): Self = StObject.set(x, "TextQualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextQualifierUndefined: Self = StObject.set(x, "TextQualifier", js.undefined)
+    inline def setTextQualifierUndefined: Self = StObject.set(x, "TextQualifier", js.undefined)
   }
 }

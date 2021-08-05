@@ -11,6 +11,5 @@ object renderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasStoryContextUnboundStoryFnShowMainShowExceptionForceRender: RenderContext): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStoryContextUnboundStoryFnShowMainShowExceptionForceRender.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(hasStoryContextUnboundStoryFnShowMainShowExceptionForceRender: RenderContext): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStoryContextUnboundStoryFnShowMainShowExceptionForceRender.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

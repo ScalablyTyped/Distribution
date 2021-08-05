@@ -28,37 +28,27 @@ trait DBClusterMember extends StObject {
 }
 object DBClusterMember {
   
-  @scala.inline
-  def apply(): DBClusterMember = {
+  inline def apply(): DBClusterMember = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBClusterMember]
   }
   
-  @scala.inline
-  implicit class DBClusterMemberMutableBuilder[Self <: DBClusterMember] (val x: Self) extends AnyVal {
+  extension [Self <: DBClusterMember](x: Self) {
     
-    @scala.inline
-    def setDBClusterParameterGroupStatus(value: String): Self = StObject.set(x, "DBClusterParameterGroupStatus", value.asInstanceOf[js.Any])
+    inline def setDBClusterParameterGroupStatus(value: String): Self = StObject.set(x, "DBClusterParameterGroupStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterParameterGroupStatusUndefined: Self = StObject.set(x, "DBClusterParameterGroupStatus", js.undefined)
+    inline def setDBClusterParameterGroupStatusUndefined: Self = StObject.set(x, "DBClusterParameterGroupStatus", js.undefined)
     
-    @scala.inline
-    def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBInstanceIdentifierUndefined: Self = StObject.set(x, "DBInstanceIdentifier", js.undefined)
+    inline def setDBInstanceIdentifierUndefined: Self = StObject.set(x, "DBInstanceIdentifier", js.undefined)
     
-    @scala.inline
-    def setIsClusterWriter(value: Boolean): Self = StObject.set(x, "IsClusterWriter", value.asInstanceOf[js.Any])
+    inline def setIsClusterWriter(value: Boolean): Self = StObject.set(x, "IsClusterWriter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsClusterWriterUndefined: Self = StObject.set(x, "IsClusterWriter", js.undefined)
+    inline def setIsClusterWriterUndefined: Self = StObject.set(x, "IsClusterWriter", js.undefined)
     
-    @scala.inline
-    def setPromotionTier(value: IntegerOptional): Self = StObject.set(x, "PromotionTier", value.asInstanceOf[js.Any])
+    inline def setPromotionTier(value: IntegerOptional): Self = StObject.set(x, "PromotionTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotionTierUndefined: Self = StObject.set(x, "PromotionTier", js.undefined)
+    inline def setPromotionTierUndefined: Self = StObject.set(x, "PromotionTier", js.undefined)
   }
 }

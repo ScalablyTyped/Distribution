@@ -13,16 +13,13 @@ trait TypeofeditorInterface extends StObject {
 }
 object TypeofeditorInterface {
   
-  @scala.inline
-  def apply(wrapEditorInterface: (AxiosInstance, EditorInterfaceProps) => EditorInterface): TypeofeditorInterface = {
+  inline def apply(wrapEditorInterface: (AxiosInstance, EditorInterfaceProps) => EditorInterface): TypeofeditorInterface = {
     val __obj = js.Dynamic.literal(wrapEditorInterface = js.Any.fromFunction2(wrapEditorInterface))
     __obj.asInstanceOf[TypeofeditorInterface]
   }
   
-  @scala.inline
-  implicit class TypeofeditorInterfaceMutableBuilder[Self <: TypeofeditorInterface] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofeditorInterface](x: Self) {
     
-    @scala.inline
-    def setWrapEditorInterface(value: (AxiosInstance, EditorInterfaceProps) => EditorInterface): Self = StObject.set(x, "wrapEditorInterface", js.Any.fromFunction2(value))
+    inline def setWrapEditorInterface(value: (AxiosInstance, EditorInterfaceProps) => EditorInterface): Self = StObject.set(x, "wrapEditorInterface", js.Any.fromFunction2(value))
   }
 }

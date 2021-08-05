@@ -139,8 +139,7 @@ object transfers {
   }
   object ITransfer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amount: Double,
       amount_reversed: Double,
       application_fee: String,
@@ -170,80 +169,55 @@ object transfers {
       __obj.asInstanceOf[ITransfer]
     }
     
-    @scala.inline
-    implicit class ITransferMutableBuilder[Self <: ITransfer] (val x: Self) extends AnyVal {
+    extension [Self <: ITransfer](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount_reversed(value: Double): Self = StObject.set(x, "amount_reversed", value.asInstanceOf[js.Any])
+      inline def setAmount_reversed(value: Double): Self = StObject.set(x, "amount_reversed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplication_fee(value: String): Self = StObject.set(x, "application_fee", value.asInstanceOf[js.Any])
+      inline def setApplication_fee(value: String): Self = StObject.set(x, "application_fee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalance_transaction(value: String | IBalanceTransaction): Self = StObject.set(x, "balance_transaction", value.asInstanceOf[js.Any])
+      inline def setBalance_transaction(value: String | IBalanceTransaction): Self = StObject.set(x, "balance_transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestination(value: String | typings.stripe.mod.bankAccounts.IBankAccount | ICardHash | IAccount): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: String | typings.stripe.mod.bankAccounts.IBankAccount | ICardHash | IAccount): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestination_payment(value: String): Self = StObject.set(x, "destination_payment", value.asInstanceOf[js.Any])
+      inline def setDestination_payment(value: String): Self = StObject.set(x, "destination_payment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailure_code(value: String): Self = StObject.set(x, "failure_code", value.asInstanceOf[js.Any])
+      inline def setFailure_code(value: String): Self = StObject.set(x, "failure_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailure_message(value: String): Self = StObject.set(x, "failure_message", value.asInstanceOf[js.Any])
+      inline def setFailure_message(value: String): Self = StObject.set(x, "failure_message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: transfer): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: transfer): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversals(value: ITransferReversals): Self = StObject.set(x, "reversals", value.asInstanceOf[js.Any])
+      inline def setReversals(value: ITransferReversals): Self = StObject.set(x, "reversals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+      inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource_transaction(value: String | ICharge): Self = StObject.set(x, "source_transaction", value.asInstanceOf[js.Any])
+      inline def setSource_transaction(value: String | ICharge): Self = StObject.set(x, "source_transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource_type(value: SourceTypes): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
+      inline def setSource_type(value: SourceTypes): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
+      inline def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Statuses): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Statuses): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransfer_group(value: String): Self = StObject.set(x, "transfer_group", value.asInstanceOf[js.Any])
+      inline def setTransfer_group(value: String): Self = StObject.set(x, "transfer_group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransfer_groupNull: Self = StObject.set(x, "transfer_group", null)
+      inline def setTransfer_groupNull: Self = StObject.set(x, "transfer_group", null)
       
-      @scala.inline
-      def setType(value: card | bank_account | stripe_account): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: card | bank_account | stripe_account): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -302,47 +276,34 @@ object transfers {
   }
   object ITransferCreationOptions {
     
-    @scala.inline
-    def apply(amount: Double, currency: String, destination: String): ITransferCreationOptions = {
+    inline def apply(amount: Double, currency: String, destination: String): ITransferCreationOptions = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITransferCreationOptions]
     }
     
-    @scala.inline
-    implicit class ITransferCreationOptionsMutableBuilder[Self <: ITransferCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITransferCreationOptions](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource_transaction(value: String): Self = StObject.set(x, "source_transaction", value.asInstanceOf[js.Any])
+      inline def setSource_transaction(value: String): Self = StObject.set(x, "source_transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource_transactionUndefined: Self = StObject.set(x, "source_transaction", js.undefined)
+      inline def setSource_transactionUndefined: Self = StObject.set(x, "source_transaction", js.undefined)
       
-      @scala.inline
-      def setSource_type(value: SourceTypes): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
+      inline def setSource_type(value: SourceTypes): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource_typeUndefined: Self = StObject.set(x, "source_type", js.undefined)
+      inline def setSource_typeUndefined: Self = StObject.set(x, "source_type", js.undefined)
       
-      @scala.inline
-      def setTransfer_group(value: String): Self = StObject.set(x, "transfer_group", value.asInstanceOf[js.Any])
+      inline def setTransfer_group(value: String): Self = StObject.set(x, "transfer_group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransfer_groupUndefined: Self = StObject.set(x, "transfer_group", js.undefined)
+      inline def setTransfer_groupUndefined: Self = StObject.set(x, "transfer_group", js.undefined)
     }
   }
   
@@ -365,35 +326,26 @@ object transfers {
   }
   object ITransferListOptions {
     
-    @scala.inline
-    def apply(): ITransferListOptions = {
+    inline def apply(): ITransferListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITransferListOptions]
     }
     
-    @scala.inline
-    implicit class ITransferListOptionsMutableBuilder[Self <: ITransferListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITransferListOptions](x: Self) {
       
-      @scala.inline
-      def setDate(value: IDateFilter): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: IDateFilter): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+      inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
       
-      @scala.inline
-      def setTransfer_group(value: String): Self = StObject.set(x, "transfer_group", value.asInstanceOf[js.Any])
+      inline def setTransfer_group(value: String): Self = StObject.set(x, "transfer_group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransfer_groupNull: Self = StObject.set(x, "transfer_group", null)
+      inline def setTransfer_groupNull: Self = StObject.set(x, "transfer_group", null)
       
-      @scala.inline
-      def setTransfer_groupUndefined: Self = StObject.set(x, "transfer_group", js.undefined)
+      inline def setTransfer_groupUndefined: Self = StObject.set(x, "transfer_group", js.undefined)
     }
   }
   
@@ -415,20 +367,16 @@ object transfers {
   }
   object ITransferUpdateOptions {
     
-    @scala.inline
-    def apply(): ITransferUpdateOptions = {
+    inline def apply(): ITransferUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITransferUpdateOptions]
     }
     
-    @scala.inline
-    implicit class ITransferUpdateOptionsMutableBuilder[Self <: ITransferUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITransferUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     }
   }
   
@@ -441,17 +389,13 @@ object transfers {
   trait SourceTypes extends StObject
   object SourceTypes {
     
-    @scala.inline
-    def alipay_account: typings.stripe.stripeStrings.alipay_account = "alipay_account".asInstanceOf[typings.stripe.stripeStrings.alipay_account]
+    inline def alipay_account: typings.stripe.stripeStrings.alipay_account = "alipay_account".asInstanceOf[typings.stripe.stripeStrings.alipay_account]
     
-    @scala.inline
-    def bank_account: typings.stripe.stripeStrings.bank_account = "bank_account".asInstanceOf[typings.stripe.stripeStrings.bank_account]
+    inline def bank_account: typings.stripe.stripeStrings.bank_account = "bank_account".asInstanceOf[typings.stripe.stripeStrings.bank_account]
     
-    @scala.inline
-    def bitcoin_receiver: typings.stripe.stripeStrings.bitcoin_receiver = "bitcoin_receiver".asInstanceOf[typings.stripe.stripeStrings.bitcoin_receiver]
+    inline def bitcoin_receiver: typings.stripe.stripeStrings.bitcoin_receiver = "bitcoin_receiver".asInstanceOf[typings.stripe.stripeStrings.bitcoin_receiver]
     
-    @scala.inline
-    def card: typings.stripe.stripeStrings.card = "card".asInstanceOf[typings.stripe.stripeStrings.card]
+    inline def card: typings.stripe.stripeStrings.card = "card".asInstanceOf[typings.stripe.stripeStrings.card]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -464,19 +408,14 @@ object transfers {
   trait Statuses extends StObject
   object Statuses {
     
-    @scala.inline
-    def canceled: typings.stripe.stripeStrings.canceled = "canceled".asInstanceOf[typings.stripe.stripeStrings.canceled]
+    inline def canceled: typings.stripe.stripeStrings.canceled = "canceled".asInstanceOf[typings.stripe.stripeStrings.canceled]
     
-    @scala.inline
-    def failed: typings.stripe.stripeStrings.failed = "failed".asInstanceOf[typings.stripe.stripeStrings.failed]
+    inline def failed: typings.stripe.stripeStrings.failed = "failed".asInstanceOf[typings.stripe.stripeStrings.failed]
     
-    @scala.inline
-    def in_transit: typings.stripe.stripeStrings.in_transit = "in_transit".asInstanceOf[typings.stripe.stripeStrings.in_transit]
+    inline def in_transit: typings.stripe.stripeStrings.in_transit = "in_transit".asInstanceOf[typings.stripe.stripeStrings.in_transit]
     
-    @scala.inline
-    def paid: typings.stripe.stripeStrings.paid = "paid".asInstanceOf[typings.stripe.stripeStrings.paid]
+    inline def paid: typings.stripe.stripeStrings.paid = "paid".asInstanceOf[typings.stripe.stripeStrings.paid]
     
-    @scala.inline
-    def pending: typings.stripe.stripeStrings.pending = "pending".asInstanceOf[typings.stripe.stripeStrings.pending]
+    inline def pending: typings.stripe.stripeStrings.pending = "pending".asInstanceOf[typings.stripe.stripeStrings.pending]
   }
 }

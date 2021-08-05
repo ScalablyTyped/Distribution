@@ -14,15 +14,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def CData(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CData")().asInstanceOf[Element]
-  @scala.inline
-  def CData(text: ElementText): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CData")(text.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CData(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CData")().asInstanceOf[Element]
+  inline def CData(text: ElementText): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CData")(text.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @scala.inline
-  def Comment(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Comment")().asInstanceOf[Element]
-  @scala.inline
-  def Comment(text: ElementText): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Comment")(text.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Comment(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Comment")().asInstanceOf[Element]
+  inline def Comment(text: ElementText): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Comment")(text.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @js.native
   trait Element extends StObject {
@@ -110,10 +106,8 @@ object mod {
     def write(options: ElementTreeWriteOptions): String = js.native
   }
   
-  @scala.inline
-  def ProcessingInstruction(target: ElementText): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProcessingInstruction")(target.asInstanceOf[js.Any]).asInstanceOf[Element]
-  @scala.inline
-  def ProcessingInstruction(target: ElementText, text: ElementText): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("ProcessingInstruction")(target.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def ProcessingInstruction(target: ElementText): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProcessingInstruction")(target.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ProcessingInstruction(target: ElementText, text: ElementText): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("ProcessingInstruction")(target.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
   
   @JSImport("elementtree", "QName")
   @js.native
@@ -124,22 +118,16 @@ object mod {
     var text: String = js.native
   }
   
-  @scala.inline
-  def SubElement(parent: Element, ElementTag: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SubElement")(parent.asInstanceOf[js.Any], ElementTag.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def SubElement(parent: Element, ElementTag: String, attrib: Attributes): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SubElement")(parent.asInstanceOf[js.Any], ElementTag.asInstanceOf[js.Any], attrib.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def SubElement(parent: Element, ElementTag: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SubElement")(parent.asInstanceOf[js.Any], ElementTag.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def SubElement(parent: Element, ElementTag: String, attrib: Attributes): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SubElement")(parent.asInstanceOf[js.Any], ElementTag.asInstanceOf[js.Any], attrib.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  @scala.inline
-  def XML(data: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("XML")(data.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def XML(data: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("XML")(data.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @scala.inline
-  def parse(source: String): ElementTree = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[ElementTree]
+  inline def parse(source: String): ElementTree = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[ElementTree]
   
-  @scala.inline
-  def registerNamespace(prefix: String, uri: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_namespace")(prefix.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerNamespace(prefix: String, uri: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_namespace")(prefix.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def tostring(element: Element, options: ElementTreeWriteOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tostring")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def tostring(element: Element, options: ElementTreeWriteOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tostring")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Attributes = StringDictionary[js.UndefOr[String]]
   
@@ -163,44 +151,32 @@ object mod {
   }
   object ElementTreeWriteOptions {
     
-    @scala.inline
-    def apply(): ElementTreeWriteOptions = {
+    inline def apply(): ElementTreeWriteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ElementTreeWriteOptions]
     }
     
-    @scala.inline
-    implicit class ElementTreeWriteOptionsMutableBuilder[Self <: ElementTreeWriteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ElementTreeWriteOptions](x: Self) {
       
-      @scala.inline
-      def setDefault_namespace(value: String): Self = StObject.set(x, "default_namespace", value.asInstanceOf[js.Any])
+      inline def setDefault_namespace(value: String): Self = StObject.set(x, "default_namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_namespaceUndefined: Self = StObject.set(x, "default_namespace", js.undefined)
+      inline def setDefault_namespaceUndefined: Self = StObject.set(x, "default_namespace", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setMethod(value: xml | text): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: xml | text): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setXml_declaration(value: Boolean): Self = StObject.set(x, "xml_declaration", value.asInstanceOf[js.Any])
+      inline def setXml_declaration(value: Boolean): Self = StObject.set(x, "xml_declaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXml_declarationUndefined: Self = StObject.set(x, "xml_declaration", js.undefined)
+      inline def setXml_declarationUndefined: Self = StObject.set(x, "xml_declaration", js.undefined)
     }
   }
 }

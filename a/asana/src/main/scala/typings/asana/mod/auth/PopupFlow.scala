@@ -22,13 +22,10 @@ object PopupFlow {
   @js.native
   val ^ : PopupFlowStatic = js.native
   
-  @scala.inline
-  implicit class PopupFlowMutableBuilder[Self <: PopupFlow] (val x: Self) extends AnyVal {
+  extension [Self <: PopupFlow](x: Self) {
     
-    @scala.inline
-    def setRunReceiver(value: () => Unit): Self = StObject.set(x, "runReceiver", js.Any.fromFunction0(value))
+    inline def setRunReceiver(value: () => Unit): Self = StObject.set(x, "runReceiver", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_popupParams(value: (Double, Double) => Unit): Self = StObject.set(x, "_popupParams", js.Any.fromFunction2(value))
+    inline def set_popupParams(value: (Double, Double) => Unit): Self = StObject.set(x, "_popupParams", js.Any.fromFunction2(value))
   }
 }

@@ -23,17 +23,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(length = 9)
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setLength(value: `9`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: `9`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,17 +40,14 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(): `1` = {
+    inline def apply(): `1` = {
       val __obj = js.Dynamic.literal(length = 8)
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def setLength(value: typings.rsvp.rsvpNumbers.`8`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpNumbers.`8`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,17 +57,14 @@ object anon {
   }
   object `2` {
     
-    @scala.inline
-    def apply(): `2` = {
+    inline def apply(): `2` = {
       val __obj = js.Dynamic.literal(length = 7)
       __obj.asInstanceOf[`2`]
     }
     
-    @scala.inline
-    implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+    extension [Self <: `2`](x: Self) {
       
-      @scala.inline
-      def setLength(value: typings.rsvp.rsvpNumbers.`7`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpNumbers.`7`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,17 +74,14 @@ object anon {
   }
   object `3` {
     
-    @scala.inline
-    def apply(): `3` = {
+    inline def apply(): `3` = {
       val __obj = js.Dynamic.literal(length = 6)
       __obj.asInstanceOf[`3`]
     }
     
-    @scala.inline
-    implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
+    extension [Self <: `3`](x: Self) {
       
-      @scala.inline
-      def setLength(value: typings.rsvp.rsvpNumbers.`6`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpNumbers.`6`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,17 +91,14 @@ object anon {
   }
   object `4` {
     
-    @scala.inline
-    def apply(): `4` = {
+    inline def apply(): `4` = {
       val __obj = js.Dynamic.literal(length = 5)
       __obj.asInstanceOf[`4`]
     }
     
-    @scala.inline
-    implicit class `4MutableBuilder`[Self <: `4`] (val x: Self) extends AnyVal {
+    extension [Self <: `4`](x: Self) {
       
-      @scala.inline
-      def setLength(value: typings.rsvp.rsvpNumbers.`5`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpNumbers.`5`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,17 +108,14 @@ object anon {
   }
   object `5` {
     
-    @scala.inline
-    def apply(): `5` = {
+    inline def apply(): `5` = {
       val __obj = js.Dynamic.literal(length = 4)
       __obj.asInstanceOf[`5`]
     }
     
-    @scala.inline
-    implicit class `5MutableBuilder`[Self <: `5`] (val x: Self) extends AnyVal {
+    extension [Self <: `5`](x: Self) {
       
-      @scala.inline
-      def setLength(value: typings.rsvp.rsvpNumbers.`4`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpNumbers.`4`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,17 +125,14 @@ object anon {
   }
   object `6` {
     
-    @scala.inline
-    def apply(): `6` = {
+    inline def apply(): `6` = {
       val __obj = js.Dynamic.literal(length = 3)
       __obj.asInstanceOf[`6`]
     }
     
-    @scala.inline
-    implicit class `6MutableBuilder`[Self <: `6`] (val x: Self) extends AnyVal {
+    extension [Self <: `6`](x: Self) {
       
-      @scala.inline
-      def setLength(value: typings.rsvp.rsvpNumbers.`3`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpNumbers.`3`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,17 +142,14 @@ object anon {
   }
   object `7` {
     
-    @scala.inline
-    def apply(): `7` = {
+    inline def apply(): `7` = {
       val __obj = js.Dynamic.literal(length = 2)
       __obj.asInstanceOf[`7`]
     }
     
-    @scala.inline
-    implicit class `7MutableBuilder`[Self <: `7`] (val x: Self) extends AnyVal {
+    extension [Self <: `7`](x: Self) {
       
-      @scala.inline
-      def setLength(value: typings.rsvp.rsvpNumbers.`2`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpNumbers.`2`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -183,17 +159,14 @@ object anon {
   }
   object `8` {
     
-    @scala.inline
-    def apply(): `8` = {
+    inline def apply(): `8` = {
       val __obj = js.Dynamic.literal(length = 1)
       __obj.asInstanceOf[`8`]
     }
     
-    @scala.inline
-    implicit class `8MutableBuilder`[Self <: `8`] (val x: Self) extends AnyVal {
+    extension [Self <: `8`](x: Self) {
       
-      @scala.inline
-      def setLength(value: typings.rsvp.rsvpNumbers.`1`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpNumbers.`1`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,17 +176,14 @@ object anon {
   }
   object Length {
     
-    @scala.inline
-    def apply(): Length = {
+    inline def apply(): Length = {
       val __obj = js.Dynamic.literal(length = 10)
       __obj.asInstanceOf[Length]
     }
     
-    @scala.inline
-    implicit class LengthMutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
+    extension [Self <: Length](x: Self) {
       
-      @scala.inline
-      def setLength(value: `10`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: `10`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   

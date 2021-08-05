@@ -15,8 +15,7 @@ trait KnockoutSlidingPageGenerator
 }
 object KnockoutSlidingPageGenerator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     generate: KnockoutPagedObservableArray[js.Any] => js.Array[Double],
     windowSize: KnockoutObservable[Double]
   ): KnockoutSlidingPageGenerator = {
@@ -24,10 +23,8 @@ object KnockoutSlidingPageGenerator {
     __obj.asInstanceOf[KnockoutSlidingPageGenerator]
   }
   
-  @scala.inline
-  implicit class KnockoutSlidingPageGeneratorMutableBuilder[Self <: KnockoutSlidingPageGenerator] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutSlidingPageGenerator](x: Self) {
     
-    @scala.inline
-    def setWindowSize(value: KnockoutObservable[Double]): Self = StObject.set(x, "windowSize", value.asInstanceOf[js.Any])
+    inline def setWindowSize(value: KnockoutObservable[Double]): Self = StObject.set(x, "windowSize", value.asInstanceOf[js.Any])
   }
 }

@@ -36,8 +36,7 @@ trait ViewerItem extends StObject {
 }
 object ViewerItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     guid: String,
     hasThumbnail: Boolean,
     name: String,
@@ -55,49 +54,34 @@ object ViewerItem {
     __obj.asInstanceOf[ViewerItem]
   }
   
-  @scala.inline
-  implicit class ViewerItemMutableBuilder[Self <: ViewerItem] (val x: Self) extends AnyVal {
+  extension [Self <: ViewerItem](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[ViewerItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[ViewerItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: ViewerItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ViewerItem*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasThumbnail(value: Boolean): Self = StObject.set(x, "hasThumbnail", value.asInstanceOf[js.Any])
+    inline def setHasThumbnail(value: Boolean): Self = StObject.set(x, "hasThumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: ViewerItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: ViewerItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: `3d` | `2d` | String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: `3d` | `2d` | String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: view | geometry | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: view | geometry | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewableID(value: String): Self = StObject.set(x, "viewableID", value.asInstanceOf[js.Any])
+    inline def setViewableID(value: String): Self = StObject.set(x, "viewableID", value.asInstanceOf[js.Any])
   }
 }

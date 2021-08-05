@@ -11,19 +11,15 @@ trait CandlestickSeries extends StObject {
 }
 object CandlestickSeries {
   
-  @scala.inline
-  def apply(): CandlestickSeries = {
+  inline def apply(): CandlestickSeries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CandlestickSeries]
   }
   
-  @scala.inline
-  implicit class CandlestickSeriesMutableBuilder[Self <: CandlestickSeries] (val x: Self) extends AnyVal {
+  extension [Self <: CandlestickSeries](x: Self) {
     
-    @scala.inline
-    def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

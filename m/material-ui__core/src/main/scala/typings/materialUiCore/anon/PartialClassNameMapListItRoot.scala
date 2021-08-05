@@ -11,19 +11,15 @@ trait PartialClassNameMapListItRoot extends StObject {
 }
 object PartialClassNameMapListItRoot {
   
-  @scala.inline
-  def apply(): PartialClassNameMapListItRoot = {
+  inline def apply(): PartialClassNameMapListItRoot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapListItRoot]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapListItRootMutableBuilder[Self <: PartialClassNameMapListItRoot] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapListItRoot](x: Self) {
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -17,19 +17,15 @@ trait SchemaActivityContentDetailsSubscription extends StObject {
 }
 object SchemaActivityContentDetailsSubscription {
   
-  @scala.inline
-  def apply(): SchemaActivityContentDetailsSubscription = {
+  inline def apply(): SchemaActivityContentDetailsSubscription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaActivityContentDetailsSubscription]
   }
   
-  @scala.inline
-  implicit class SchemaActivityContentDetailsSubscriptionMutableBuilder[Self <: SchemaActivityContentDetailsSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaActivityContentDetailsSubscription](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: SchemaResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: SchemaResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

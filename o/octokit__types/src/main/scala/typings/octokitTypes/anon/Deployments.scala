@@ -16,25 +16,19 @@ trait Deployments extends StObject {
 }
 object Deployments {
   
-  @scala.inline
-  def apply(deployments: String, metadata: String, pull_requests: String, statuses: String): Deployments = {
+  inline def apply(deployments: String, metadata: String, pull_requests: String, statuses: String): Deployments = {
     val __obj = js.Dynamic.literal(deployments = deployments.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], pull_requests = pull_requests.asInstanceOf[js.Any], statuses = statuses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deployments]
   }
   
-  @scala.inline
-  implicit class DeploymentsMutableBuilder[Self <: Deployments] (val x: Self) extends AnyVal {
+  extension [Self <: Deployments](x: Self) {
     
-    @scala.inline
-    def setDeployments(value: String): Self = StObject.set(x, "deployments", value.asInstanceOf[js.Any])
+    inline def setDeployments(value: String): Self = StObject.set(x, "deployments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPull_requests(value: String): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
+    inline def setPull_requests(value: String): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatuses(value: String): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
+    inline def setStatuses(value: String): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
   }
 }

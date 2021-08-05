@@ -11,19 +11,15 @@ trait GooglePrivacyDlpV2KindExpression extends StObject {
 }
 object GooglePrivacyDlpV2KindExpression {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2KindExpression = {
+  inline def apply(): GooglePrivacyDlpV2KindExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2KindExpression]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2KindExpressionMutableBuilder[Self <: GooglePrivacyDlpV2KindExpression] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2KindExpression](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait IWebSocketClosedEventArgs extends StObject {
 }
 object IWebSocketClosedEventArgs {
   
-  @scala.inline
-  def apply(code: Double, reason: String): IWebSocketClosedEventArgs = {
+  inline def apply(code: Double, reason: String): IWebSocketClosedEventArgs = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebSocketClosedEventArgs]
   }
   
-  @scala.inline
-  implicit class IWebSocketClosedEventArgsMutableBuilder[Self <: IWebSocketClosedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IWebSocketClosedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

@@ -14,111 +14,95 @@ object gapiPeopleStrings {
   sealed trait ACCOUNT
     extends StObject
        with SourceType
-  @scala.inline
-  def ACCOUNT: ACCOUNT = "ACCOUNT".asInstanceOf[ACCOUNT]
+  inline def ACCOUNT: ACCOUNT = "ACCOUNT".asInstanceOf[ACCOUNT]
   
   @js.native
   sealed trait CONTACT
     extends StObject
        with SourceType
-  @scala.inline
-  def CONTACT: CONTACT = "CONTACT".asInstanceOf[CONTACT]
+  inline def CONTACT: CONTACT = "CONTACT".asInstanceOf[CONTACT]
   
   @js.native
   sealed trait DEFAULT
     extends StObject
        with NicknameType
-  @scala.inline
-  def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
+  inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   
   @js.native
   sealed trait DOMAIN_PROFILE
     extends StObject
        with SourceType
-  @scala.inline
-  def DOMAIN_PROFILE: DOMAIN_PROFILE = "DOMAIN_PROFILE".asInstanceOf[DOMAIN_PROFILE]
+  inline def DOMAIN_PROFILE: DOMAIN_PROFILE = "DOMAIN_PROFILE".asInstanceOf[DOMAIN_PROFILE]
   
   @js.native
   sealed trait FIRST_NAME_ASCENDING
     extends StObject
        with SortOrder
-  @scala.inline
-  def FIRST_NAME_ASCENDING: FIRST_NAME_ASCENDING = "FIRST_NAME_ASCENDING".asInstanceOf[FIRST_NAME_ASCENDING]
+  inline def FIRST_NAME_ASCENDING: FIRST_NAME_ASCENDING = "FIRST_NAME_ASCENDING".asInstanceOf[FIRST_NAME_ASCENDING]
   
   @js.native
   sealed trait GPLUS
     extends StObject
        with NicknameType
-  @scala.inline
-  def GPLUS: GPLUS = "GPLUS".asInstanceOf[GPLUS]
+  inline def GPLUS: GPLUS = "GPLUS".asInstanceOf[GPLUS]
   
   @js.native
   sealed trait INITIALS
     extends StObject
        with NicknameType
-  @scala.inline
-  def INITIALS: INITIALS = "INITIALS".asInstanceOf[INITIALS]
+  inline def INITIALS: INITIALS = "INITIALS".asInstanceOf[INITIALS]
   
   @js.native
   sealed trait LAST_MODIFIED_ASCENDING
     extends StObject
        with SortOrder
-  @scala.inline
-  def LAST_MODIFIED_ASCENDING: LAST_MODIFIED_ASCENDING = "LAST_MODIFIED_ASCENDING".asInstanceOf[LAST_MODIFIED_ASCENDING]
+  inline def LAST_MODIFIED_ASCENDING: LAST_MODIFIED_ASCENDING = "LAST_MODIFIED_ASCENDING".asInstanceOf[LAST_MODIFIED_ASCENDING]
   
   @js.native
   sealed trait LAST_NAME_ASCENDING
     extends StObject
        with SortOrder
-  @scala.inline
-  def LAST_NAME_ASCENDING: LAST_NAME_ASCENDING = "LAST_NAME_ASCENDING".asInstanceOf[LAST_NAME_ASCENDING]
+  inline def LAST_NAME_ASCENDING: LAST_NAME_ASCENDING = "LAST_NAME_ASCENDING".asInstanceOf[LAST_NAME_ASCENDING]
   
   @js.native
   sealed trait MAIDEN_NAME
     extends StObject
        with NicknameType
-  @scala.inline
-  def MAIDEN_NAME: MAIDEN_NAME = "MAIDEN_NAME".asInstanceOf[MAIDEN_NAME]
+  inline def MAIDEN_NAME: MAIDEN_NAME = "MAIDEN_NAME".asInstanceOf[MAIDEN_NAME]
   
   @js.native
   sealed trait OBJECT_TYPE_UNSPECIFIED
     extends StObject
        with ObjectType
-  @scala.inline
-  def OBJECT_TYPE_UNSPECIFIED: OBJECT_TYPE_UNSPECIFIED = "OBJECT_TYPE_UNSPECIFIED".asInstanceOf[OBJECT_TYPE_UNSPECIFIED]
+  inline def OBJECT_TYPE_UNSPECIFIED: OBJECT_TYPE_UNSPECIFIED = "OBJECT_TYPE_UNSPECIFIED".asInstanceOf[OBJECT_TYPE_UNSPECIFIED]
   
   @js.native
   sealed trait OTHER_NAME
     extends StObject
        with NicknameType
-  @scala.inline
-  def OTHER_NAME: OTHER_NAME = "OTHER_NAME".asInstanceOf[OTHER_NAME]
+  inline def OTHER_NAME: OTHER_NAME = "OTHER_NAME".asInstanceOf[OTHER_NAME]
   
   @js.native
   sealed trait PAGE
     extends StObject
        with ObjectType
-  @scala.inline
-  def PAGE: PAGE = "PAGE".asInstanceOf[PAGE]
+  inline def PAGE: PAGE = "PAGE".asInstanceOf[PAGE]
   
   @js.native
   sealed trait PERSON
     extends StObject
        with ObjectType
-  @scala.inline
-  def PERSON: PERSON = "PERSON".asInstanceOf[PERSON]
+  inline def PERSON: PERSON = "PERSON".asInstanceOf[PERSON]
   
   @js.native
   sealed trait PROFILE
     extends StObject
        with SourceType
-  @scala.inline
-  def PROFILE: PROFILE = "PROFILE".asInstanceOf[PROFILE]
+  inline def PROFILE: PROFILE = "PROFILE".asInstanceOf[PROFILE]
   
   @js.native
   sealed trait SOURCE_TYPE_UNSPECIFIED
     extends StObject
        with SourceType
-  @scala.inline
-  def SOURCE_TYPE_UNSPECIFIED: SOURCE_TYPE_UNSPECIFIED = "SOURCE_TYPE_UNSPECIFIED".asInstanceOf[SOURCE_TYPE_UNSPECIFIED]
+  inline def SOURCE_TYPE_UNSPECIFIED: SOURCE_TYPE_UNSPECIFIED = "SOURCE_TYPE_UNSPECIFIED".asInstanceOf[SOURCE_TYPE_UNSPECIFIED]
 }

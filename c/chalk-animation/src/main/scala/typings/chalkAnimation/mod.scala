@@ -44,8 +44,7 @@ object mod {
   }
   object Animation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       frame: () => String,
       render: () => Unit,
       replace: String => Unit,
@@ -56,23 +55,17 @@ object mod {
       __obj.asInstanceOf[Animation]
     }
     
-    @scala.inline
-    implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
+    extension [Self <: Animation](x: Self) {
       
-      @scala.inline
-      def setFrame(value: () => String): Self = StObject.set(x, "frame", js.Any.fromFunction0(value))
+      inline def setFrame(value: () => String): Self = StObject.set(x, "frame", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+      inline def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReplace(value: String => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
+      inline def setReplace(value: String => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   

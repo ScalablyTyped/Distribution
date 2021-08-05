@@ -14,25 +14,19 @@ trait RegionalLocationListAssignedTargetingOptionDetails extends StObject {
 }
 object RegionalLocationListAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): RegionalLocationListAssignedTargetingOptionDetails = {
+  inline def apply(): RegionalLocationListAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionalLocationListAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class RegionalLocationListAssignedTargetingOptionDetailsMutableBuilder[Self <: RegionalLocationListAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: RegionalLocationListAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+    inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
+    inline def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
     
-    @scala.inline
-    def setRegionalLocationListId(value: String): Self = StObject.set(x, "regionalLocationListId", value.asInstanceOf[js.Any])
+    inline def setRegionalLocationListId(value: String): Self = StObject.set(x, "regionalLocationListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalLocationListIdUndefined: Self = StObject.set(x, "regionalLocationListId", js.undefined)
+    inline def setRegionalLocationListIdUndefined: Self = StObject.set(x, "regionalLocationListId", js.undefined)
   }
 }

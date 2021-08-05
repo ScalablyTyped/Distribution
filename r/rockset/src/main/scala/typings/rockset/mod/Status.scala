@@ -43,73 +43,51 @@ trait Status extends StObject {
 }
 object Status {
   
-  @scala.inline
-  def apply(): Status = {
+  inline def apply(): Status = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Status]
   }
   
-  @scala.inline
-  implicit class StatusMutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
+  extension [Self <: Status](x: Self) {
     
-    @scala.inline
-    def setLast_error_at(value: String): Self = StObject.set(x, "last_error_at", value.asInstanceOf[js.Any])
+    inline def setLast_error_at(value: String): Self = StObject.set(x, "last_error_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_error_atUndefined: Self = StObject.set(x, "last_error_at", js.undefined)
+    inline def setLast_error_atUndefined: Self = StObject.set(x, "last_error_at", js.undefined)
     
-    @scala.inline
-    def setLast_error_item(value: String): Self = StObject.set(x, "last_error_item", value.asInstanceOf[js.Any])
+    inline def setLast_error_item(value: String): Self = StObject.set(x, "last_error_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_error_itemUndefined: Self = StObject.set(x, "last_error_item", js.undefined)
+    inline def setLast_error_itemUndefined: Self = StObject.set(x, "last_error_item", js.undefined)
     
-    @scala.inline
-    def setLast_error_reason(value: String): Self = StObject.set(x, "last_error_reason", value.asInstanceOf[js.Any])
+    inline def setLast_error_reason(value: String): Self = StObject.set(x, "last_error_reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_error_reasonUndefined: Self = StObject.set(x, "last_error_reason", js.undefined)
+    inline def setLast_error_reasonUndefined: Self = StObject.set(x, "last_error_reason", js.undefined)
     
-    @scala.inline
-    def setLast_processed_at(value: String): Self = StObject.set(x, "last_processed_at", value.asInstanceOf[js.Any])
+    inline def setLast_processed_at(value: String): Self = StObject.set(x, "last_processed_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_processed_atUndefined: Self = StObject.set(x, "last_processed_at", js.undefined)
+    inline def setLast_processed_atUndefined: Self = StObject.set(x, "last_processed_at", js.undefined)
     
-    @scala.inline
-    def setLast_processed_item(value: String): Self = StObject.set(x, "last_processed_item", value.asInstanceOf[js.Any])
+    inline def setLast_processed_item(value: String): Self = StObject.set(x, "last_processed_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_processed_itemUndefined: Self = StObject.set(x, "last_processed_item", js.undefined)
+    inline def setLast_processed_itemUndefined: Self = StObject.set(x, "last_processed_item", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
-    @scala.inline
-    def setState(value: INITIALIZING | WATCHING | PROCESSING | COMPLETED | ERROR): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: INITIALIZING | WATCHING | PROCESSING | COMPLETED | ERROR): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTotal_error_items(value: Double): Self = StObject.set(x, "total_error_items", value.asInstanceOf[js.Any])
+    inline def setTotal_error_items(value: Double): Self = StObject.set(x, "total_error_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_error_itemsUndefined: Self = StObject.set(x, "total_error_items", js.undefined)
+    inline def setTotal_error_itemsUndefined: Self = StObject.set(x, "total_error_items", js.undefined)
     
-    @scala.inline
-    def setTotal_processed_items(value: Double): Self = StObject.set(x, "total_processed_items", value.asInstanceOf[js.Any])
+    inline def setTotal_processed_items(value: Double): Self = StObject.set(x, "total_processed_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_processed_itemsUndefined: Self = StObject.set(x, "total_processed_items", js.undefined)
+    inline def setTotal_processed_itemsUndefined: Self = StObject.set(x, "total_processed_items", js.undefined)
   }
 }

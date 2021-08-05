@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontStyle extends StObject
 object FontStyle {
   
-  @scala.inline
-  def italic: typings.reactNativeNavigation.reactNativeNavigationStrings.italic = "italic".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.italic]
+  inline def italic: typings.reactNativeNavigation.reactNativeNavigationStrings.italic = "italic".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.italic]
   
-  @scala.inline
-  def normal: typings.reactNativeNavigation.reactNativeNavigationStrings.normal = "normal".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.normal]
+  inline def normal: typings.reactNativeNavigation.reactNativeNavigationStrings.normal = "normal".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.normal]
 }

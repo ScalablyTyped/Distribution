@@ -13,22 +13,17 @@ trait ReturnTypeVoid extends StObject {
 }
 object ReturnTypeVoid {
   
-  @scala.inline
-  def apply(paramsType: js.Array[PauseOnAsyncCallRequest], returnType: Unit): ReturnTypeVoid = {
+  inline def apply(paramsType: js.Array[PauseOnAsyncCallRequest], returnType: Unit): ReturnTypeVoid = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeVoid]
   }
   
-  @scala.inline
-  implicit class ReturnTypeVoidMutableBuilder[Self <: ReturnTypeVoid] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeVoid](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[PauseOnAsyncCallRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[PauseOnAsyncCallRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: PauseOnAsyncCallRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: PauseOnAsyncCallRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

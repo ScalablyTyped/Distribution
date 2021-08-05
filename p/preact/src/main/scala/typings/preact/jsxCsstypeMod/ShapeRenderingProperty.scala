@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShapeRenderingProperty extends StObject
 object ShapeRenderingProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
   
-  @scala.inline
-  def auto: typings.preact.preactStrings.auto = "auto".asInstanceOf[typings.preact.preactStrings.auto]
+  inline def auto: typings.preact.preactStrings.auto = "auto".asInstanceOf[typings.preact.preactStrings.auto]
   
-  @scala.inline
-  def crispEdges: typings.preact.preactStrings.crispEdges = "crispEdges".asInstanceOf[typings.preact.preactStrings.crispEdges]
+  inline def crispEdges: typings.preact.preactStrings.crispEdges = "crispEdges".asInstanceOf[typings.preact.preactStrings.crispEdges]
   
-  @scala.inline
-  def geometricPrecision: typings.preact.preactStrings.geometricPrecision = "geometricPrecision".asInstanceOf[typings.preact.preactStrings.geometricPrecision]
+  inline def geometricPrecision: typings.preact.preactStrings.geometricPrecision = "geometricPrecision".asInstanceOf[typings.preact.preactStrings.geometricPrecision]
   
-  @scala.inline
-  def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
+  inline def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
   
-  @scala.inline
-  def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
+  inline def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
   
-  @scala.inline
-  def optimizeSpeed: typings.preact.preactStrings.optimizeSpeed = "optimizeSpeed".asInstanceOf[typings.preact.preactStrings.optimizeSpeed]
+  inline def optimizeSpeed: typings.preact.preactStrings.optimizeSpeed = "optimizeSpeed".asInstanceOf[typings.preact.preactStrings.optimizeSpeed]
   
-  @scala.inline
-  def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
+  inline def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
   
-  @scala.inline
-  def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
+  inline def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
 }

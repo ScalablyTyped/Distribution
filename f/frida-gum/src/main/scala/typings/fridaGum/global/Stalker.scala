@@ -32,10 +32,8 @@ object Stalker {
     *                 thread is about to call the function at `address`.
     * @param data User data to be passed to `StalkerNativeCallProbeCallback`.
     */
-  @scala.inline
-  def addCallProbe(address: NativePointerValue, callback: StalkerCallProbeCallback): StalkerCallProbeId = (^.asInstanceOf[js.Dynamic].applyDynamic("addCallProbe")(address.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StalkerCallProbeId]
-  @scala.inline
-  def addCallProbe(address: NativePointerValue, callback: StalkerCallProbeCallback, data: NativePointerValue): StalkerCallProbeId = (^.asInstanceOf[js.Dynamic].applyDynamic("addCallProbe")(address.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[StalkerCallProbeId]
+  inline def addCallProbe(address: NativePointerValue, callback: StalkerCallProbeCallback): StalkerCallProbeId = (^.asInstanceOf[js.Dynamic].applyDynamic("addCallProbe")(address.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StalkerCallProbeId]
+  inline def addCallProbe(address: NativePointerValue, callback: StalkerCallProbeCallback, data: NativePointerValue): StalkerCallProbeId = (^.asInstanceOf[js.Dynamic].applyDynamic("addCallProbe")(address.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[StalkerCallProbeId]
   
   /**
     * Marks a memory range as excluded. This means Stalker will not follow
@@ -48,15 +46,13 @@ object Stalker {
     *
     * @param range Range to exclude.
     */
-  @scala.inline
-  def exclude(range: MemoryRange): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(range.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def exclude(range: MemoryRange): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(range.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Flushes out any buffered events. Useful when you don't want to wait
     * until the next `queueDrainInterval` tick.
     */
-  @scala.inline
-  def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
+  inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
   
   /**
     * Starts following the execution of a given thread.
@@ -65,22 +61,17 @@ object Stalker {
     *                 current thread if omitted.
     * @param options Options to customize the instrumentation.
     */
-  @scala.inline
-  def follow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("follow")().asInstanceOf[Unit]
-  @scala.inline
-  def follow(threadId: Unit, options: StalkerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("follow")(threadId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def follow(threadId: ThreadId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("follow")(threadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def follow(threadId: ThreadId, options: StalkerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("follow")(threadId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def follow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("follow")().asInstanceOf[Unit]
+  inline def follow(threadId: Unit, options: StalkerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("follow")(threadId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def follow(threadId: ThreadId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("follow")(threadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def follow(threadId: ThreadId, options: StalkerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("follow")(threadId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Frees accumulated memory at a safe point after `unfollow()`. This is
     * needed to avoid race-conditions where the thread just unfollowed is
     * executing its last instructions.
     */
-  @scala.inline
-  def garbageCollect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("garbageCollect")().asInstanceOf[Unit]
+  inline def garbageCollect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("garbageCollect")().asInstanceOf[Unit]
   
   /**
     * Parses a binary blob comprised of `Gum.Event` values.
@@ -88,10 +79,8 @@ object Stalker {
     * @param events Binary blob containing zero or more `Gum.Event` values.
     * @param options Options for customizing the output.
     */
-  @scala.inline
-  def parse(events: ArrayBuffer): js.Array[StalkerEventBare | StalkerEventFull] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(events.asInstanceOf[js.Any]).asInstanceOf[js.Array[StalkerEventBare | StalkerEventFull]]
-  @scala.inline
-  def parse(events: ArrayBuffer, options: StalkerParseOptions): js.Array[StalkerEventBare | StalkerEventFull] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(events.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[StalkerEventBare | StalkerEventFull]]
+  inline def parse(events: ArrayBuffer): js.Array[StalkerEventBare | StalkerEventFull] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(events.asInstanceOf[js.Any]).asInstanceOf[js.Array[StalkerEventBare | StalkerEventFull]]
+  inline def parse(events: ArrayBuffer, options: StalkerParseOptions): js.Array[StalkerEventBare | StalkerEventFull] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(events.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[StalkerEventBare | StalkerEventFull]]
   
   /**
     * Capacity of the event queue in number of events.
@@ -101,8 +90,7 @@ object Stalker {
   @JSGlobal("Stalker.queueCapacity")
   @js.native
   def queueCapacity: Double = js.native
-  @scala.inline
-  def queueCapacity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueCapacity")(x.asInstanceOf[js.Any])
+  inline def queueCapacity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueCapacity")(x.asInstanceOf[js.Any])
   
   /**
     * Time in milliseconds between each time the event queue is drained.
@@ -115,16 +103,14 @@ object Stalker {
   @JSGlobal("Stalker.queueDrainInterval")
   @js.native
   def queueDrainInterval: Double = js.native
-  @scala.inline
-  def queueDrainInterval_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueDrainInterval")(x.asInstanceOf[js.Any])
+  inline def queueDrainInterval_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueDrainInterval")(x.asInstanceOf[js.Any])
   
   /**
     * Removes a call probe added by `addCallProbe()`.
     *
     * @param callbackId ID of probe to remove.
     */
-  @scala.inline
-  def removeCallProbe(callbackId: StalkerCallProbeId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCallProbe")(callbackId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeCallProbe(callbackId: StalkerCallProbeId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCallProbe")(callbackId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * How many times a piece of code needs to be executed before it is assumed
@@ -137,8 +123,7 @@ object Stalker {
   @JSGlobal("Stalker.trustThreshold")
   @js.native
   def trustThreshold: Double = js.native
-  @scala.inline
-  def trustThreshold_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trustThreshold")(x.asInstanceOf[js.Any])
+  inline def trustThreshold_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trustThreshold")(x.asInstanceOf[js.Any])
   
   /**
     * Stops following the execution of a given thread.
@@ -146,8 +131,6 @@ object Stalker {
     * @param threadId Thread ID to stop following the execution of, or the
     *                 current thread if omitted.
     */
-  @scala.inline
-  def unfollow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unfollow")().asInstanceOf[Unit]
-  @scala.inline
-  def unfollow(threadId: ThreadId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unfollow")(threadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unfollow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unfollow")().asInstanceOf[Unit]
+  inline def unfollow(threadId: ThreadId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unfollow")(threadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

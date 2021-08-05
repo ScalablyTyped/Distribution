@@ -20,37 +20,27 @@ trait ExchangeConfigEnabledExchange extends StObject {
 }
 object ExchangeConfigEnabledExchange {
   
-  @scala.inline
-  def apply(): ExchangeConfigEnabledExchange = {
+  inline def apply(): ExchangeConfigEnabledExchange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExchangeConfigEnabledExchange]
   }
   
-  @scala.inline
-  implicit class ExchangeConfigEnabledExchangeMutableBuilder[Self <: ExchangeConfigEnabledExchange] (val x: Self) extends AnyVal {
+  extension [Self <: ExchangeConfigEnabledExchange](x: Self) {
     
-    @scala.inline
-    def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
+    inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
+    inline def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
     
-    @scala.inline
-    def setGoogleAdManagerAgencyId(value: String): Self = StObject.set(x, "googleAdManagerAgencyId", value.asInstanceOf[js.Any])
+    inline def setGoogleAdManagerAgencyId(value: String): Self = StObject.set(x, "googleAdManagerAgencyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleAdManagerAgencyIdUndefined: Self = StObject.set(x, "googleAdManagerAgencyId", js.undefined)
+    inline def setGoogleAdManagerAgencyIdUndefined: Self = StObject.set(x, "googleAdManagerAgencyId", js.undefined)
     
-    @scala.inline
-    def setGoogleAdManagerBuyerNetworkId(value: String): Self = StObject.set(x, "googleAdManagerBuyerNetworkId", value.asInstanceOf[js.Any])
+    inline def setGoogleAdManagerBuyerNetworkId(value: String): Self = StObject.set(x, "googleAdManagerBuyerNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleAdManagerBuyerNetworkIdUndefined: Self = StObject.set(x, "googleAdManagerBuyerNetworkId", js.undefined)
+    inline def setGoogleAdManagerBuyerNetworkIdUndefined: Self = StObject.set(x, "googleAdManagerBuyerNetworkId", js.undefined)
     
-    @scala.inline
-    def setSeatId(value: String): Self = StObject.set(x, "seatId", value.asInstanceOf[js.Any])
+    inline def setSeatId(value: String): Self = StObject.set(x, "seatId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeatIdUndefined: Self = StObject.set(x, "seatId", js.undefined)
+    inline def setSeatIdUndefined: Self = StObject.set(x, "seatId", js.undefined)
   }
 }

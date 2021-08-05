@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TicketType extends StObject
 object TicketType {
   
-  @scala.inline
-  def incident: typings.nodeZendesk.nodeZendeskStrings.incident = "incident".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.incident]
+  inline def incident: typings.nodeZendesk.nodeZendeskStrings.incident = "incident".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.incident]
   
-  @scala.inline
-  def problem: typings.nodeZendesk.nodeZendeskStrings.problem = "problem".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.problem]
+  inline def problem: typings.nodeZendesk.nodeZendeskStrings.problem = "problem".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.problem]
   
-  @scala.inline
-  def question: typings.nodeZendesk.nodeZendeskStrings.question = "question".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.question]
+  inline def question: typings.nodeZendesk.nodeZendeskStrings.question = "question".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.question]
   
-  @scala.inline
-  def task: typings.nodeZendesk.nodeZendeskStrings.task = "task".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.task]
+  inline def task: typings.nodeZendesk.nodeZendeskStrings.task = "task".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.task]
 }

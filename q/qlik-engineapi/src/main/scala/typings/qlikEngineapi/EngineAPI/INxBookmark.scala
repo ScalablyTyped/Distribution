@@ -26,8 +26,7 @@ trait INxBookmark extends StObject {
 }
 object INxBookmark {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qStateData: js.Array[IAlternateStateData],
     qUtcModifyTime: Double,
     qVariableItems: js.Array[IBookmarkVariableItem]
@@ -36,22 +35,16 @@ object INxBookmark {
     __obj.asInstanceOf[INxBookmark]
   }
   
-  @scala.inline
-  implicit class INxBookmarkMutableBuilder[Self <: INxBookmark] (val x: Self) extends AnyVal {
+  extension [Self <: INxBookmark](x: Self) {
     
-    @scala.inline
-    def setQStateData(value: js.Array[IAlternateStateData]): Self = StObject.set(x, "qStateData", value.asInstanceOf[js.Any])
+    inline def setQStateData(value: js.Array[IAlternateStateData]): Self = StObject.set(x, "qStateData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQStateDataVarargs(value: IAlternateStateData*): Self = StObject.set(x, "qStateData", js.Array(value :_*))
+    inline def setQStateDataVarargs(value: IAlternateStateData*): Self = StObject.set(x, "qStateData", js.Array(value :_*))
     
-    @scala.inline
-    def setQUtcModifyTime(value: Double): Self = StObject.set(x, "qUtcModifyTime", value.asInstanceOf[js.Any])
+    inline def setQUtcModifyTime(value: Double): Self = StObject.set(x, "qUtcModifyTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQVariableItems(value: js.Array[IBookmarkVariableItem]): Self = StObject.set(x, "qVariableItems", value.asInstanceOf[js.Any])
+    inline def setQVariableItems(value: js.Array[IBookmarkVariableItem]): Self = StObject.set(x, "qVariableItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQVariableItemsVarargs(value: IBookmarkVariableItem*): Self = StObject.set(x, "qVariableItems", js.Array(value :_*))
+    inline def setQVariableItemsVarargs(value: IBookmarkVariableItem*): Self = StObject.set(x, "qVariableItems", js.Array(value :_*))
   }
 }

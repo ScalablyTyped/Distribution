@@ -40,37 +40,27 @@ trait GeoRSSLayerProperties
 }
 object GeoRSSLayerProperties {
   
-  @scala.inline
-  def apply(): GeoRSSLayerProperties = {
+  inline def apply(): GeoRSSLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoRSSLayerProperties]
   }
   
-  @scala.inline
-  implicit class GeoRSSLayerPropertiesMutableBuilder[Self <: GeoRSSLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GeoRSSLayerProperties](x: Self) {
     
-    @scala.inline
-    def setLineSymbol(value: SimpleLineSymbolProperties): Self = StObject.set(x, "lineSymbol", value.asInstanceOf[js.Any])
+    inline def setLineSymbol(value: SimpleLineSymbolProperties): Self = StObject.set(x, "lineSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineSymbolUndefined: Self = StObject.set(x, "lineSymbol", js.undefined)
+    inline def setLineSymbolUndefined: Self = StObject.set(x, "lineSymbol", js.undefined)
     
-    @scala.inline
-    def setPointSymbol(value: PictureMarkerSymbolProperties | SimpleMarkerSymbolProperties): Self = StObject.set(x, "pointSymbol", value.asInstanceOf[js.Any])
+    inline def setPointSymbol(value: PictureMarkerSymbolProperties | SimpleMarkerSymbolProperties): Self = StObject.set(x, "pointSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointSymbolUndefined: Self = StObject.set(x, "pointSymbol", js.undefined)
+    inline def setPointSymbolUndefined: Self = StObject.set(x, "pointSymbol", js.undefined)
     
-    @scala.inline
-    def setPolygonSymbol(value: SimpleFillSymbolProperties): Self = StObject.set(x, "polygonSymbol", value.asInstanceOf[js.Any])
+    inline def setPolygonSymbol(value: SimpleFillSymbolProperties): Self = StObject.set(x, "polygonSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonSymbolUndefined: Self = StObject.set(x, "polygonSymbol", js.undefined)
+    inline def setPolygonSymbolUndefined: Self = StObject.set(x, "polygonSymbol", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

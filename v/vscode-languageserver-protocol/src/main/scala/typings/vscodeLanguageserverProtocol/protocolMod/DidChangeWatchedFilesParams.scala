@@ -13,19 +13,15 @@ trait DidChangeWatchedFilesParams extends StObject {
 }
 object DidChangeWatchedFilesParams {
   
-  @scala.inline
-  def apply(changes: js.Array[FileEvent]): DidChangeWatchedFilesParams = {
+  inline def apply(changes: js.Array[FileEvent]): DidChangeWatchedFilesParams = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DidChangeWatchedFilesParams]
   }
   
-  @scala.inline
-  implicit class DidChangeWatchedFilesParamsMutableBuilder[Self <: DidChangeWatchedFilesParams] (val x: Self) extends AnyVal {
+  extension [Self <: DidChangeWatchedFilesParams](x: Self) {
     
-    @scala.inline
-    def setChanges(value: js.Array[FileEvent]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[FileEvent]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesVarargs(value: FileEvent*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: FileEvent*): Self = StObject.set(x, "changes", js.Array(value :_*))
   }
 }

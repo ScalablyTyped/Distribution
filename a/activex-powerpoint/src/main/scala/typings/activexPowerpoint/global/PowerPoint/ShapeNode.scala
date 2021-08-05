@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ShapeNode")
 @js.native
-class ShapeNode protected ()
+/* private */ class ShapeNode ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ShapeNode {
   
@@ -27,7 +27,7 @@ class ShapeNode protected ()
   /* CompleteClass */
   override val Points: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ShapeNode_typekey")
   var PowerPointDotShapeNode_typekey: typings.activexPowerpoint.PowerPoint.ShapeNode = js.native
   

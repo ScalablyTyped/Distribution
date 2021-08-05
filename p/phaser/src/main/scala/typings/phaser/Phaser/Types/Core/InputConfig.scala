@@ -44,55 +44,39 @@ trait InputConfig extends StObject {
 }
 object InputConfig {
   
-  @scala.inline
-  def apply(): InputConfig = {
+  inline def apply(): InputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputConfig]
   }
   
-  @scala.inline
-  implicit class InputConfigMutableBuilder[Self <: InputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InputConfig](x: Self) {
     
-    @scala.inline
-    def setActivePointers(value: integer): Self = StObject.set(x, "activePointers", value.asInstanceOf[js.Any])
+    inline def setActivePointers(value: integer): Self = StObject.set(x, "activePointers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivePointersUndefined: Self = StObject.set(x, "activePointers", js.undefined)
+    inline def setActivePointersUndefined: Self = StObject.set(x, "activePointers", js.undefined)
     
-    @scala.inline
-    def setGamepad(value: Boolean | GamepadInputConfig): Self = StObject.set(x, "gamepad", value.asInstanceOf[js.Any])
+    inline def setGamepad(value: Boolean | GamepadInputConfig): Self = StObject.set(x, "gamepad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGamepadUndefined: Self = StObject.set(x, "gamepad", js.undefined)
+    inline def setGamepadUndefined: Self = StObject.set(x, "gamepad", js.undefined)
     
-    @scala.inline
-    def setKeyboard(value: Boolean | KeyboardInputConfig): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    inline def setKeyboard(value: Boolean | KeyboardInputConfig): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
-    @scala.inline
-    def setMouse(value: Boolean | MouseInputConfig): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
+    inline def setMouse(value: Boolean | MouseInputConfig): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
+    inline def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
     
-    @scala.inline
-    def setSmoothFactor(value: Double): Self = StObject.set(x, "smoothFactor", value.asInstanceOf[js.Any])
+    inline def setSmoothFactor(value: Double): Self = StObject.set(x, "smoothFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothFactorUndefined: Self = StObject.set(x, "smoothFactor", js.undefined)
+    inline def setSmoothFactorUndefined: Self = StObject.set(x, "smoothFactor", js.undefined)
     
-    @scala.inline
-    def setTouch(value: Boolean | TouchInputConfig): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+    inline def setTouch(value: Boolean | TouchInputConfig): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
+    inline def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
     
-    @scala.inline
-    def setWindowEvents(value: Boolean): Self = StObject.set(x, "windowEvents", value.asInstanceOf[js.Any])
+    inline def setWindowEvents(value: Boolean): Self = StObject.set(x, "windowEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowEventsUndefined: Self = StObject.set(x, "windowEvents", js.undefined)
+    inline def setWindowEventsUndefined: Self = StObject.set(x, "windowEvents", js.undefined)
   }
 }

@@ -47,7 +47,7 @@ trait TypeofWebSocketConnection
     * @return {string} connection url
     * @private
     */
-  var connectionURL_ : js.Any = js.native
+  /* private */ var connectionURL_ : js.Any = js.native
   
   def forceDisallow(): Unit = js.native
   

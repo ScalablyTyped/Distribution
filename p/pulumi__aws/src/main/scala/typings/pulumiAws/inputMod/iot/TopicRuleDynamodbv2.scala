@@ -19,22 +19,17 @@ trait TopicRuleDynamodbv2 extends StObject {
 }
 object TopicRuleDynamodbv2 {
   
-  @scala.inline
-  def apply(roleArn: Input[String]): TopicRuleDynamodbv2 = {
+  inline def apply(roleArn: Input[String]): TopicRuleDynamodbv2 = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleDynamodbv2]
   }
   
-  @scala.inline
-  implicit class TopicRuleDynamodbv2MutableBuilder[Self <: TopicRuleDynamodbv2] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleDynamodbv2](x: Self) {
     
-    @scala.inline
-    def setPutItem(value: Input[TopicRuleDynamodbv2PutItem]): Self = StObject.set(x, "putItem", value.asInstanceOf[js.Any])
+    inline def setPutItem(value: Input[TopicRuleDynamodbv2PutItem]): Self = StObject.set(x, "putItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPutItemUndefined: Self = StObject.set(x, "putItem", js.undefined)
+    inline def setPutItemUndefined: Self = StObject.set(x, "putItem", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

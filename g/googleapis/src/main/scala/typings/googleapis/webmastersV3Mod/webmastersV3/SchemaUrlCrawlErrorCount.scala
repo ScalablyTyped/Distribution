@@ -21,25 +21,19 @@ trait SchemaUrlCrawlErrorCount extends StObject {
 }
 object SchemaUrlCrawlErrorCount {
   
-  @scala.inline
-  def apply(): SchemaUrlCrawlErrorCount = {
+  inline def apply(): SchemaUrlCrawlErrorCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUrlCrawlErrorCount]
   }
   
-  @scala.inline
-  implicit class SchemaUrlCrawlErrorCountMutableBuilder[Self <: SchemaUrlCrawlErrorCount] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUrlCrawlErrorCount](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

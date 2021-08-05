@@ -12,19 +12,15 @@ trait ReposGetCommitActivityStatsEndpoint extends StObject {
 }
 object ReposGetCommitActivityStatsEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): ReposGetCommitActivityStatsEndpoint = {
+  inline def apply(owner: String, repo: String): ReposGetCommitActivityStatsEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetCommitActivityStatsEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposGetCommitActivityStatsEndpointMutableBuilder[Self <: ReposGetCommitActivityStatsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetCommitActivityStatsEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

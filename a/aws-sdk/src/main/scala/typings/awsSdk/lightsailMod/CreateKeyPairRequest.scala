@@ -18,25 +18,19 @@ trait CreateKeyPairRequest extends StObject {
 }
 object CreateKeyPairRequest {
   
-  @scala.inline
-  def apply(keyPairName: ResourceName): CreateKeyPairRequest = {
+  inline def apply(keyPairName: ResourceName): CreateKeyPairRequest = {
     val __obj = js.Dynamic.literal(keyPairName = keyPairName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateKeyPairRequest]
   }
   
-  @scala.inline
-  implicit class CreateKeyPairRequestMutableBuilder[Self <: CreateKeyPairRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateKeyPairRequest](x: Self) {
     
-    @scala.inline
-    def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
+    inline def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

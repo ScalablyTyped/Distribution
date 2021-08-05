@@ -22,26 +22,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SwitchStatement_ {
   
-  @scala.inline
-  def apply(cases: js.Array[SwitchCase_], discriminant: Expression): SwitchStatement_ = {
+  inline def apply(cases: js.Array[SwitchCase_], discriminant: Expression): SwitchStatement_ = {
     val __obj = js.Dynamic.literal(cases = cases.asInstanceOf[js.Any], discriminant = discriminant.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("SwitchStatement")
     __obj.asInstanceOf[SwitchStatement_]
   }
   
-  @scala.inline
-  implicit class SwitchStatement_MutableBuilder[Self <: SwitchStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchStatement_](x: Self) {
     
-    @scala.inline
-    def setCases(value: js.Array[SwitchCase_]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
+    inline def setCases(value: js.Array[SwitchCase_]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCasesVarargs(value: SwitchCase_ *): Self = StObject.set(x, "cases", js.Array(value :_*))
+    inline def setCasesVarargs(value: SwitchCase_ *): Self = StObject.set(x, "cases", js.Array(value :_*))
     
-    @scala.inline
-    def setDiscriminant(value: Expression): Self = StObject.set(x, "discriminant", value.asInstanceOf[js.Any])
+    inline def setDiscriminant(value: Expression): Self = StObject.set(x, "discriminant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: SwitchStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SwitchStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

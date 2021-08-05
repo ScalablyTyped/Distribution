@@ -10,9 +10,7 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def promiseTry[R](fn: js.Function0[R]): js.Promise[js.Any | R] = ^.asInstanceOf[js.Dynamic].applyDynamic("promiseTry")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any | R]]
+  inline def promiseTry[R](fn: js.Function0[R]): js.Promise[js.Any | R] = ^.asInstanceOf[js.Dynamic].applyDynamic("promiseTry")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any | R]]
   
-  @scala.inline
-  def proxyGetters[T, U](target: T, obj: U, keys: js.Array[/* keyof U */ String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyGetters")(target.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def proxyGetters[T, U](target: T, obj: U, keys: js.Array[/* keyof U */ String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyGetters")(target.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

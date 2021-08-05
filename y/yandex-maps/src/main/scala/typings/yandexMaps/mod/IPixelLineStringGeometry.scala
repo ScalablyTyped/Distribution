@@ -16,8 +16,7 @@ trait IPixelLineStringGeometry
 }
 object IPixelLineStringGeometry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     equals_ : IPixelGeometry => Boolean,
     events: IEventManager[js.Object],
     getBounds: () => js.Array[js.Array[Double]] | Null,
@@ -34,16 +33,12 @@ object IPixelLineStringGeometry {
     __obj.asInstanceOf[IPixelLineStringGeometry]
   }
   
-  @scala.inline
-  implicit class IPixelLineStringGeometryMutableBuilder[Self <: IPixelLineStringGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: IPixelLineStringGeometry](x: Self) {
     
-    @scala.inline
-    def setGetClosest(value: js.Array[Double] => js.Object): Self = StObject.set(x, "getClosest", js.Any.fromFunction1(value))
+    inline def setGetClosest(value: js.Array[Double] => js.Object): Self = StObject.set(x, "getClosest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCoordinates(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
+    inline def setGetCoordinates(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
   }
 }

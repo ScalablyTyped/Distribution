@@ -12,17 +12,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def readSync(dir: String): DirJSON = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(dir.asInstanceOf[js.Any]).asInstanceOf[DirJSON]
-  @scala.inline
-  def readSync(dir: String, options: Unit, relativeRoot: String): DirJSON = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], relativeRoot.asInstanceOf[js.Any])).asInstanceOf[DirJSON]
-  @scala.inline
-  def readSync(dir: String, options: Options): DirJSON = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DirJSON]
-  @scala.inline
-  def readSync(dir: String, options: Options, relativeRoot: String): DirJSON = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], relativeRoot.asInstanceOf[js.Any])).asInstanceOf[DirJSON]
+  inline def readSync(dir: String): DirJSON = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(dir.asInstanceOf[js.Any]).asInstanceOf[DirJSON]
+  inline def readSync(dir: String, options: Unit, relativeRoot: String): DirJSON = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], relativeRoot.asInstanceOf[js.Any])).asInstanceOf[DirJSON]
+  inline def readSync(dir: String, options: Options): DirJSON = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DirJSON]
+  inline def readSync(dir: String, options: Options, relativeRoot: String): DirJSON = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], relativeRoot.asInstanceOf[js.Any])).asInstanceOf[DirJSON]
   
-  @scala.inline
-  def writeSync(dir: String, obj: DirJSON): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(dir.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeSync(dir: String, obj: DirJSON): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(dir.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     A recursive JSON representation of a directory. This representation includes
@@ -46,8 +41,7 @@ object mod {
        with /* filename */ StringDictionary[DirJSON | String | Null]
   object DirJSON {
     
-    @scala.inline
-    def apply(): DirJSON = {
+    inline def apply(): DirJSON = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DirJSON]
     }
@@ -63,38 +57,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExclude(value: js.Array[IMinimatch | String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[IMinimatch | String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: (IMinimatch | String)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (IMinimatch | String)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreEmptyDirs(value: Boolean): Self = StObject.set(x, "ignoreEmptyDirs", value.asInstanceOf[js.Any])
+      inline def setIgnoreEmptyDirs(value: Boolean): Self = StObject.set(x, "ignoreEmptyDirs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreEmptyDirsUndefined: Self = StObject.set(x, "ignoreEmptyDirs", js.undefined)
+      inline def setIgnoreEmptyDirsUndefined: Self = StObject.set(x, "ignoreEmptyDirs", js.undefined)
       
-      @scala.inline
-      def setInclude(value: js.Array[IMinimatch | String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[IMinimatch | String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: (IMinimatch | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (IMinimatch | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
     }
   }
 }

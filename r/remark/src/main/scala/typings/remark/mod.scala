@@ -30,8 +30,7 @@ object mod {
        with RemarkStringifyOptions
   object RemarkOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bullet: `-_` | Asterisk | Plussign,
       closeAtx: Boolean,
       commonmark: Boolean,

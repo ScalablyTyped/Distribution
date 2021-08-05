@@ -13,22 +13,17 @@ trait ValidationWarning extends StObject {
 }
 object ValidationWarning {
   
-  @scala.inline
-  def apply(): ValidationWarning = {
+  inline def apply(): ValidationWarning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidationWarning]
   }
   
-  @scala.inline
-  implicit class ValidationWarningMutableBuilder[Self <: ValidationWarning] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationWarning](x: Self) {
     
-    @scala.inline
-    def setErrors(value: ErrorSet): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: ErrorSet): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
   }
 }

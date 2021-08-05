@@ -10,8 +10,7 @@ object initMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def builder(yargs: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("builder")(yargs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def builder(yargs: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("builder")(yargs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("ipfs-cli/dist/src/commands/init", "command")
   @js.native
@@ -21,6 +20,5 @@ object initMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(argv: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(argv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(argv: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(argv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

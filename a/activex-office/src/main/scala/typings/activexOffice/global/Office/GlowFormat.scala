@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.GlowFormat")
 @js.native
-class GlowFormat protected ()
+/* private */ class GlowFormat ()
   extends StObject
      with typings.activexOffice.Office.GlowFormat {
   
@@ -19,7 +19,7 @@ class GlowFormat protected ()
   /* CompleteClass */
   override val Creator: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.GlowFormat_typekey")
   var OfficeDotGlowFormat_typekey: typings.activexOffice.Office.GlowFormat = js.native
   

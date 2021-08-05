@@ -56,8 +56,7 @@ object selectorListUniDriverMod {
   }
   object SelectorListUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickSearchInputClear: () => js.Promise[Unit],
       clickToggleAllCheckbox: () => js.Promise[Unit],
@@ -87,71 +86,49 @@ object selectorListUniDriverMod {
       __obj.asInstanceOf[SelectorListUniDriver]
     }
     
-    @scala.inline
-    implicit class SelectorListUniDriverMutableBuilder[Self <: SelectorListUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SelectorListUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickSearchInputClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickSearchInputClear", js.Any.fromFunction0(value))
+      inline def setClickSearchInputClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickSearchInputClear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickToggleAllCheckbox(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickToggleAllCheckbox", js.Any.fromFunction0(value))
+      inline def setClickToggleAllCheckbox(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickToggleAllCheckbox", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnterSearchValue(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterSearchValue", js.Any.fromFunction1(value))
+      inline def setEnterSearchValue(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterSearchValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocusSearchInput(value: () => js.Promise[Unit]): Self = StObject.set(x, "focusSearchInput", js.Any.fromFunction0(value))
+      inline def setFocusSearchInput(value: () => js.Promise[Unit]): Self = StObject.set(x, "focusSearchInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEmptyState(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getEmptyState", js.Any.fromFunction0(value))
+      inline def setGetEmptyState(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getEmptyState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNoResultsFoundState(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getNoResultsFoundState", js.Any.fromFunction0(value))
+      inline def setGetNoResultsFoundState(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getNoResultsFoundState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSearchValue(value: () => js.Promise[String]): Self = StObject.set(x, "getSearchValue", js.Any.fromFunction0(value))
+      inline def setGetSearchValue(value: () => js.Promise[String]): Self = StObject.set(x, "getSearchValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetToggleAllCheckboxLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getToggleAllCheckboxLabel", js.Any.fromFunction0(value))
+      inline def setGetToggleAllCheckboxLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getToggleAllCheckboxLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSelectorCheckedAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isSelectorCheckedAt", js.Any.fromFunction1(value))
+      inline def setIsSelectorCheckedAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isSelectorCheckedAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsSelectorDisabledAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isSelectorDisabledAt", js.Any.fromFunction1(value))
+      inline def setIsSelectorDisabledAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isSelectorDisabledAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsToggleAllCheckboxChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isToggleAllCheckboxChecked", js.Any.fromFunction0(value))
+      inline def setIsToggleAllCheckboxChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isToggleAllCheckboxChecked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "listExists", js.Any.fromFunction0(value))
+      inline def setListExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "listExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMainLoaderExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "mainLoaderExists", js.Any.fromFunction0(value))
+      inline def setMainLoaderExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "mainLoaderExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNextPageLoaderExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "nextPageLoaderExists", js.Any.fromFunction0(value))
+      inline def setNextPageLoaderExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "nextPageLoaderExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNumberOfItemsInList(value: () => js.Promise[Double]): Self = StObject.set(x, "numberOfItemsInList", js.Any.fromFunction0(value))
+      inline def setNumberOfItemsInList(value: () => js.Promise[Double]): Self = StObject.set(x, "numberOfItemsInList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScrollDown(value: () => js.Promise[Boolean]): Self = StObject.set(x, "scrollDown", js.Any.fromFunction0(value))
+      inline def setScrollDown(value: () => js.Promise[Boolean]): Self = StObject.set(x, "scrollDown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSearchInputExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "searchInputExists", js.Any.fromFunction0(value))
+      inline def setSearchInputExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "searchInputExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowsEmptyState(value: () => js.Promise[Boolean]): Self = StObject.set(x, "showsEmptyState", js.Any.fromFunction0(value))
+      inline def setShowsEmptyState(value: () => js.Promise[Boolean]): Self = StObject.set(x, "showsEmptyState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowsNoResultsFoundState(value: () => js.Promise[Boolean]): Self = StObject.set(x, "showsNoResultsFoundState", js.Any.fromFunction0(value))
+      inline def setShowsNoResultsFoundState(value: () => js.Promise[Boolean]): Self = StObject.set(x, "showsNoResultsFoundState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggleAllCheckboxExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "toggleAllCheckboxExists", js.Any.fromFunction0(value))
+      inline def setToggleAllCheckboxExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "toggleAllCheckboxExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggleSelectorAt(value: Double => js.Promise[Unit]): Self = StObject.set(x, "toggleSelectorAt", js.Any.fromFunction1(value))
+      inline def setToggleSelectorAt(value: Double => js.Promise[Unit]): Self = StObject.set(x, "toggleSelectorAt", js.Any.fromFunction1(value))
     }
   }
 }

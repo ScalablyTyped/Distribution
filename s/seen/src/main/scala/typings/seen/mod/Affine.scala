@@ -13,12 +13,9 @@ object Affine {
   @JSImport("seen", "Affine.INITIAL_STATE_MATRIX")
   @js.native
   def INITIAL_STATE_MATRIX: js.Array[js.Array[Double]] = js.native
-  @scala.inline
-  def INITIAL_STATE_MATRIX_=(x: js.Array[js.Array[Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INITIAL_STATE_MATRIX")(x.asInstanceOf[js.Any])
+  inline def INITIAL_STATE_MATRIX_=(x: js.Array[js.Array[Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INITIAL_STATE_MATRIX")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def ORTHONORMAL_BASIS(): js.Array[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("ORTHONORMAL_BASIS")().asInstanceOf[js.Array[Point]]
+  inline def ORTHONORMAL_BASIS(): js.Array[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("ORTHONORMAL_BASIS")().asInstanceOf[js.Array[Point]]
   
-  @scala.inline
-  def solveForAffineTransform(points: js.Array[Point]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("solveForAffineTransform")(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def solveForAffineTransform(points: js.Array[Point]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("solveForAffineTransform")(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
 }

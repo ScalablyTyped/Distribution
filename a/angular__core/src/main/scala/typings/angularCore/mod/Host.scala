@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Host extends StObject
 object Host {
   
-  @scala.inline
-  def apply: HostDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("Host").asInstanceOf[HostDecorator]
+  inline def apply: HostDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("Host").asInstanceOf[HostDecorator]
 }

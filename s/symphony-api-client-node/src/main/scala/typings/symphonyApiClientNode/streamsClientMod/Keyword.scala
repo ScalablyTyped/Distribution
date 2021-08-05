@@ -12,19 +12,15 @@ trait Keyword extends StObject {
 }
 object Keyword {
   
-  @scala.inline
-  def apply(key: String, value: String): Keyword = {
+  inline def apply(key: String, value: String): Keyword = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Keyword]
   }
   
-  @scala.inline
-  implicit class KeywordMutableBuilder[Self <: Keyword] (val x: Self) extends AnyVal {
+  extension [Self <: Keyword](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

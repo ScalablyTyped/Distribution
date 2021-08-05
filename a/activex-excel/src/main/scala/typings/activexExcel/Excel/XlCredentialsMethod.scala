@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCredentialsMethod extends StObject
 object XlCredentialsMethod {
   
-  @scala.inline
-  def xlCredentialsMethodIntegrated: `0` = 0.asInstanceOf[`0`]
+  inline def xlCredentialsMethodIntegrated: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlCredentialsMethodNone: `1` = 1.asInstanceOf[`1`]
+  inline def xlCredentialsMethodNone: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlCredentialsMethodStored: `2` = 2.asInstanceOf[`2`]
+  inline def xlCredentialsMethodStored: `2` = 2.asInstanceOf[`2`]
 }

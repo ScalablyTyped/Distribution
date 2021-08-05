@@ -32,31 +32,23 @@ trait ControllerOptions extends StObject {
 }
 object ControllerOptions {
   
-  @scala.inline
-  def apply(): ControllerOptions = {
+  inline def apply(): ControllerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ControllerOptions]
   }
   
-  @scala.inline
-  implicit class ControllerOptionsMutableBuilder[Self <: ControllerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ControllerOptions](x: Self) {
     
-    @scala.inline
-    def setBy(value: slide | container): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
+    inline def setBy(value: slide | container): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByUndefined: Self = StObject.set(x, "by", js.undefined)
+    inline def setByUndefined: Self = StObject.set(x, "by", js.undefined)
     
-    @scala.inline
-    def setControl(value: Swiper): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: Swiper): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
+    inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
-    @scala.inline
-    def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+    inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
+    inline def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
   }
 }

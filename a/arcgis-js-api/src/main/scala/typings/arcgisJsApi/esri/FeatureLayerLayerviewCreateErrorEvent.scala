@@ -12,19 +12,15 @@ trait FeatureLayerLayerviewCreateErrorEvent extends StObject {
 }
 object FeatureLayerLayerviewCreateErrorEvent {
   
-  @scala.inline
-  def apply(error: Error, view: View): FeatureLayerLayerviewCreateErrorEvent = {
+  inline def apply(error: Error, view: View): FeatureLayerLayerviewCreateErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerLayerviewCreateErrorEvent]
   }
   
-  @scala.inline
-  implicit class FeatureLayerLayerviewCreateErrorEventMutableBuilder[Self <: FeatureLayerLayerviewCreateErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureLayerLayerviewCreateErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

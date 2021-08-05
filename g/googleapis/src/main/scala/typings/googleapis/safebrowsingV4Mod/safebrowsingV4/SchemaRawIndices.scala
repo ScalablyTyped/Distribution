@@ -16,22 +16,17 @@ trait SchemaRawIndices extends StObject {
 }
 object SchemaRawIndices {
   
-  @scala.inline
-  def apply(): SchemaRawIndices = {
+  inline def apply(): SchemaRawIndices = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRawIndices]
   }
   
-  @scala.inline
-  implicit class SchemaRawIndicesMutableBuilder[Self <: SchemaRawIndices] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRawIndices](x: Self) {
     
-    @scala.inline
-    def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
+    inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
-    @scala.inline
-    def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+    inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
   }
 }

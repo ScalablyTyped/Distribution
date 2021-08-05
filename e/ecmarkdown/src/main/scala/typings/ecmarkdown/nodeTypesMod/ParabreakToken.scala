@@ -17,22 +17,17 @@ trait ParabreakToken
 }
 object ParabreakToken {
   
-  @scala.inline
-  def apply(contents: String, location: LocationRange): ParabreakToken = {
+  inline def apply(contents: String, location: LocationRange): ParabreakToken = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "parabreak")
     __obj.asInstanceOf[ParabreakToken]
   }
   
-  @scala.inline
-  implicit class ParabreakTokenMutableBuilder[Self <: ParabreakToken] (val x: Self) extends AnyVal {
+  extension [Self <: ParabreakToken](x: Self) {
     
-    @scala.inline
-    def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: parabreak): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: parabreak): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

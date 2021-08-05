@@ -18,8 +18,7 @@ trait TouchAction extends StObject {
 }
 object TouchAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     compute: () => String,
     preventDefaults: HammerInput => Unit,
     preventSrc: js.Any => Unit,
@@ -30,22 +29,16 @@ object TouchAction {
     __obj.asInstanceOf[TouchAction]
   }
   
-  @scala.inline
-  implicit class TouchActionMutableBuilder[Self <: TouchAction] (val x: Self) extends AnyVal {
+  extension [Self <: TouchAction](x: Self) {
     
-    @scala.inline
-    def setCompute(value: () => String): Self = StObject.set(x, "compute", js.Any.fromFunction0(value))
+    inline def setCompute(value: () => String): Self = StObject.set(x, "compute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefaults(value: HammerInput => Unit): Self = StObject.set(x, "preventDefaults", js.Any.fromFunction1(value))
+    inline def setPreventDefaults(value: HammerInput => Unit): Self = StObject.set(x, "preventDefaults", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreventSrc(value: js.Any => Unit): Self = StObject.set(x, "preventSrc", js.Any.fromFunction1(value))
+    inline def setPreventSrc(value: js.Any => Unit): Self = StObject.set(x, "preventSrc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet(value: String => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: String => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

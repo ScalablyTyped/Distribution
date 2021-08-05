@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaMode extends StObject
 object MediaMode {
   
-  @scala.inline
-  def relayed: typings.opentok.opentokStrings.relayed = "relayed".asInstanceOf[typings.opentok.opentokStrings.relayed]
+  inline def relayed: typings.opentok.opentokStrings.relayed = "relayed".asInstanceOf[typings.opentok.opentokStrings.relayed]
   
-  @scala.inline
-  def routed: typings.opentok.opentokStrings.routed = "routed".asInstanceOf[typings.opentok.opentokStrings.routed]
+  inline def routed: typings.opentok.opentokStrings.routed = "routed".asInstanceOf[typings.opentok.opentokStrings.routed]
 }

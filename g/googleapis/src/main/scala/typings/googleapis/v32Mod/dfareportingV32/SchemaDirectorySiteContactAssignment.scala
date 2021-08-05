@@ -24,25 +24,19 @@ trait SchemaDirectorySiteContactAssignment extends StObject {
 }
 object SchemaDirectorySiteContactAssignment {
   
-  @scala.inline
-  def apply(): SchemaDirectorySiteContactAssignment = {
+  inline def apply(): SchemaDirectorySiteContactAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDirectorySiteContactAssignment]
   }
   
-  @scala.inline
-  implicit class SchemaDirectorySiteContactAssignmentMutableBuilder[Self <: SchemaDirectorySiteContactAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDirectorySiteContactAssignment](x: Self) {
     
-    @scala.inline
-    def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
+    inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactIdUndefined: Self = StObject.set(x, "contactId", js.undefined)
+    inline def setContactIdUndefined: Self = StObject.set(x, "contactId", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

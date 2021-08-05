@@ -35,8 +35,7 @@ trait FileTransferEntry
 }
 object FileTransferEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     averageSpeed: Double,
     clid: String,
     clientftfid: Double,
@@ -54,43 +53,30 @@ object FileTransferEntry {
     __obj.asInstanceOf[FileTransferEntry]
   }
   
-  @scala.inline
-  implicit class FileTransferEntryMutableBuilder[Self <: FileTransferEntry] (val x: Self) extends AnyVal {
+  extension [Self <: FileTransferEntry](x: Self) {
     
-    @scala.inline
-    def setAverageSpeed(value: Double): Self = StObject.set(x, "averageSpeed", value.asInstanceOf[js.Any])
+    inline def setAverageSpeed(value: Double): Self = StObject.set(x, "averageSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClid(value: String): Self = StObject.set(x, "clid", value.asInstanceOf[js.Any])
+    inline def setClid(value: String): Self = StObject.set(x, "clid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientftfid(value: Double): Self = StObject.set(x, "clientftfid", value.asInstanceOf[js.Any])
+    inline def setClientftfid(value: Double): Self = StObject.set(x, "clientftfid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSpeed(value: Double): Self = StObject.set(x, "currentSpeed", value.asInstanceOf[js.Any])
+    inline def setCurrentSpeed(value: Double): Self = StObject.set(x, "currentSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+    inline def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: Double): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: Double): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerftfid(value: Double): Self = StObject.set(x, "serverftfid", value.asInstanceOf[js.Any])
+    inline def setServerftfid(value: Double): Self = StObject.set(x, "serverftfid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizedone(value: Double): Self = StObject.set(x, "sizedone", value.asInstanceOf[js.Any])
+    inline def setSizedone(value: Double): Self = StObject.set(x, "sizedone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

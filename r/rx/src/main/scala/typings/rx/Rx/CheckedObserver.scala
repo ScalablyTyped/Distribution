@@ -12,8 +12,7 @@ trait CheckedObserver[T]
 }
 object CheckedObserver {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     asObserver: () => Observer[T],
     checkAccess: () => Unit,
     checked: () => CheckedObserver[T],
@@ -28,10 +27,8 @@ object CheckedObserver {
     __obj.asInstanceOf[CheckedObserver[T]]
   }
   
-  @scala.inline
-  implicit class CheckedObserverMutableBuilder[Self <: CheckedObserver[?], T] (val x: Self & CheckedObserver[T]) extends AnyVal {
+  extension [Self <: CheckedObserver[?], T](x: Self & CheckedObserver[T]) {
     
-    @scala.inline
-    def setCheckAccess(value: () => Unit): Self = StObject.set(x, "checkAccess", js.Any.fromFunction0(value))
+    inline def setCheckAccess(value: () => Unit): Self = StObject.set(x, "checkAccess", js.Any.fromFunction0(value))
   }
 }

@@ -28,28 +28,21 @@ trait DiagnosticReportImage
 }
 object DiagnosticReportImage {
   
-  @scala.inline
-  def apply(link: Reference): DiagnosticReportImage = {
+  inline def apply(link: Reference): DiagnosticReportImage = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticReportImage]
   }
   
-  @scala.inline
-  implicit class DiagnosticReportImageMutableBuilder[Self <: DiagnosticReportImage] (val x: Self) extends AnyVal {
+  extension [Self <: DiagnosticReportImage](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setLink(value: Reference): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: Reference): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
+    inline def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
+    inline def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
   }
 }

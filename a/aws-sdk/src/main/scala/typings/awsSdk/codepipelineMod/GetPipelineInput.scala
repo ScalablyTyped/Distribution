@@ -18,22 +18,17 @@ trait GetPipelineInput extends StObject {
 }
 object GetPipelineInput {
   
-  @scala.inline
-  def apply(name: PipelineName): GetPipelineInput = {
+  inline def apply(name: PipelineName): GetPipelineInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPipelineInput]
   }
   
-  @scala.inline
-  implicit class GetPipelineInputMutableBuilder[Self <: GetPipelineInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetPipelineInput](x: Self) {
     
-    @scala.inline
-    def setName(value: PipelineName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: PipelineName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: PipelineVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: PipelineVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

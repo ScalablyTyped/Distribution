@@ -42,79 +42,55 @@ trait EnrollmentTroubleshootingEvent
 }
 object EnrollmentTroubleshootingEvent {
   
-  @scala.inline
-  def apply(): EnrollmentTroubleshootingEvent = {
+  inline def apply(): EnrollmentTroubleshootingEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnrollmentTroubleshootingEvent]
   }
   
-  @scala.inline
-  implicit class EnrollmentTroubleshootingEventMutableBuilder[Self <: EnrollmentTroubleshootingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EnrollmentTroubleshootingEvent](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: NullableOption[String]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: NullableOption[String]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
+    inline def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setEnrollmentType(value: DeviceEnrollmentType): Self = StObject.set(x, "enrollmentType", value.asInstanceOf[js.Any])
+    inline def setEnrollmentType(value: DeviceEnrollmentType): Self = StObject.set(x, "enrollmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnrollmentTypeUndefined: Self = StObject.set(x, "enrollmentType", js.undefined)
+    inline def setEnrollmentTypeUndefined: Self = StObject.set(x, "enrollmentType", js.undefined)
     
-    @scala.inline
-    def setFailureCategory(value: DeviceEnrollmentFailureReason): Self = StObject.set(x, "failureCategory", value.asInstanceOf[js.Any])
+    inline def setFailureCategory(value: DeviceEnrollmentFailureReason): Self = StObject.set(x, "failureCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCategoryUndefined: Self = StObject.set(x, "failureCategory", js.undefined)
+    inline def setFailureCategoryUndefined: Self = StObject.set(x, "failureCategory", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: NullableOption[String]): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: NullableOption[String]): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonNull: Self = StObject.set(x, "failureReason", null)
+    inline def setFailureReasonNull: Self = StObject.set(x, "failureReason", null)
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    @scala.inline
-    def setManagedDeviceIdentifier(value: NullableOption[String]): Self = StObject.set(x, "managedDeviceIdentifier", value.asInstanceOf[js.Any])
+    inline def setManagedDeviceIdentifier(value: NullableOption[String]): Self = StObject.set(x, "managedDeviceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedDeviceIdentifierNull: Self = StObject.set(x, "managedDeviceIdentifier", null)
+    inline def setManagedDeviceIdentifierNull: Self = StObject.set(x, "managedDeviceIdentifier", null)
     
-    @scala.inline
-    def setManagedDeviceIdentifierUndefined: Self = StObject.set(x, "managedDeviceIdentifier", js.undefined)
+    inline def setManagedDeviceIdentifierUndefined: Self = StObject.set(x, "managedDeviceIdentifier", js.undefined)
     
-    @scala.inline
-    def setOperatingSystem(value: NullableOption[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: NullableOption[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemNull: Self = StObject.set(x, "operatingSystem", null)
+    inline def setOperatingSystemNull: Self = StObject.set(x, "operatingSystem", null)
     
-    @scala.inline
-    def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
+    inline def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
     
-    @scala.inline
-    def setOsVersion(value: NullableOption[String]): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
+    inline def setOsVersion(value: NullableOption[String]): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsVersionNull: Self = StObject.set(x, "osVersion", null)
+    inline def setOsVersionNull: Self = StObject.set(x, "osVersion", null)
     
-    @scala.inline
-    def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
+    inline def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
     
-    @scala.inline
-    def setUserId(value: NullableOption[String]): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: NullableOption[String]): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdNull: Self = StObject.set(x, "userId", null)
+    inline def setUserIdNull: Self = StObject.set(x, "userId", null)
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

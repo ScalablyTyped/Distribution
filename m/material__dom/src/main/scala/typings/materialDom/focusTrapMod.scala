@@ -34,26 +34,20 @@ object focusTrapMod {
   }
   object FocusOptions {
     
-    @scala.inline
-    def apply(): FocusOptions = {
+    inline def apply(): FocusOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FocusOptions]
     }
     
-    @scala.inline
-    implicit class FocusOptionsMutableBuilder[Self <: FocusOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FocusOptions](x: Self) {
       
-      @scala.inline
-      def setInitialFocusEl(value: HTMLElement): Self = StObject.set(x, "initialFocusEl", value.asInstanceOf[js.Any])
+      inline def setInitialFocusEl(value: HTMLElement): Self = StObject.set(x, "initialFocusEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialFocusElUndefined: Self = StObject.set(x, "initialFocusEl", js.undefined)
+      inline def setInitialFocusElUndefined: Self = StObject.set(x, "initialFocusEl", js.undefined)
       
-      @scala.inline
-      def setSkipInitialFocus(value: Boolean): Self = StObject.set(x, "skipInitialFocus", value.asInstanceOf[js.Any])
+      inline def setSkipInitialFocus(value: Boolean): Self = StObject.set(x, "skipInitialFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipInitialFocusUndefined: Self = StObject.set(x, "skipInitialFocus", js.undefined)
+      inline def setSkipInitialFocusUndefined: Self = StObject.set(x, "skipInitialFocus", js.undefined)
     }
   }
 }

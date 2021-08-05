@@ -20,8 +20,7 @@ trait IAutomaticValue extends StObject {
 }
 object IAutomaticValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ANSIncrement: Double,
     ANVCode: String,
     CVSExpression: String,
@@ -33,25 +32,18 @@ object IAutomaticValue {
     __obj.asInstanceOf[IAutomaticValue]
   }
   
-  @scala.inline
-  implicit class IAutomaticValueMutableBuilder[Self <: IAutomaticValue] (val x: Self) extends AnyVal {
+  extension [Self <: IAutomaticValue](x: Self) {
     
-    @scala.inline
-    def setANSIncrement(value: Double): Self = StObject.set(x, "ANSIncrement", value.asInstanceOf[js.Any])
+    inline def setANSIncrement(value: Double): Self = StObject.set(x, "ANSIncrement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setANVCode(value: String): Self = StObject.set(x, "ANVCode", value.asInstanceOf[js.Any])
+    inline def setANVCode(value: String): Self = StObject.set(x, "ANVCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCVSExpression(value: String): Self = StObject.set(x, "CVSExpression", value.asInstanceOf[js.Any])
+    inline def setCVSExpression(value: String): Self = StObject.set(x, "CVSExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCVVCode(value: String): Self = StObject.set(x, "CVVCode", value.asInstanceOf[js.Any])
+    inline def setCVVCode(value: String): Self = StObject.set(x, "CVVCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculationOrderNumber(value: Double): Self = StObject.set(x, "CalculationOrderNumber", value.asInstanceOf[js.Any])
+    inline def setCalculationOrderNumber(value: Double): Self = StObject.set(x, "CalculationOrderNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IAutomaticValue): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IAutomaticValue): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
   }
 }

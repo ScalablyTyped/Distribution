@@ -33,17 +33,17 @@ object userAgentServerMod {
       delegate: IncomingRequestDelegate
     ) = this()
     
-    var _transaction: js.Any = js.native
+    /* private */ var _transaction: js.Any = js.native
     
     /* protected */ def acceptable: Boolean = js.native
     
-    var core: UserAgentCore = js.native
+    /* protected */ var core: UserAgentCore = js.native
     
     def dispose(): Unit = js.native
     
-    var init: js.Any = js.native
+    /* private */ var init: js.Any = js.native
     
-    var logger: Logger = js.native
+    /* protected */ var logger: Logger = js.native
     
     def loggerFactory: LoggerFactory = js.native
     
@@ -89,14 +89,14 @@ object userAgentServerMod {
       * @param statusCode - Status code to reply with.
       * @param options - Reply options bucket.
       */
-    var reply: js.Any = js.native
+    /* private */ var reply: js.Any = js.native
     
-    var toTag: String = js.native
+    /* protected */ var toTag: String = js.native
     
     /** The transaction associated with this request. */
     def transaction: ServerTransaction = js.native
     
-    var transactionConstructor: js.Any = js.native
+    /* private */ var transactionConstructor: js.Any = js.native
     
     /* protected */ def tryingable: Boolean = js.native
   }

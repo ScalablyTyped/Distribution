@@ -17,37 +17,27 @@ trait ThemeExperiment extends StObject {
 }
 object ThemeExperiment {
   
-  @scala.inline
-  def apply(): ThemeExperiment = {
+  inline def apply(): ThemeExperiment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThemeExperiment]
   }
   
-  @scala.inline
-  implicit class ThemeExperimentMutableBuilder[Self <: ThemeExperiment] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeExperiment](x: Self) {
     
-    @scala.inline
-    def setColors(value: StringDictionary[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: StringDictionary[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setImages(value: StringDictionary[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: StringDictionary[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setStylesheet(value: ExtensionURL): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
+    inline def setStylesheet(value: ExtensionURL): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
+    inline def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
   }
 }

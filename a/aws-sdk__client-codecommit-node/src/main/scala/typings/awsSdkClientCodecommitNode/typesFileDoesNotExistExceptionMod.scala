@@ -18,17 +18,14 @@ object typesFileDoesNotExistExceptionMod {
   }
   object FileDoesNotExistException {
     
-    @scala.inline
-    def apply(): FileDoesNotExistException = {
+    inline def apply(): FileDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "FileDoesNotExistException")
       __obj.asInstanceOf[FileDoesNotExistException]
     }
     
-    @scala.inline
-    implicit class FileDoesNotExistExceptionMutableBuilder[Self <: FileDoesNotExistException] (val x: Self) extends AnyVal {
+    extension [Self <: FileDoesNotExistException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileDoesNotExistException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

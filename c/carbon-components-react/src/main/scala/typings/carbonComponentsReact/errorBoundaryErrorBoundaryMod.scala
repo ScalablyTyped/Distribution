@@ -23,26 +23,20 @@ object errorBoundaryErrorBoundaryMod {
   }
   object ErrorBoundaryProps {
     
-    @scala.inline
-    def apply(): ErrorBoundaryProps = {
+    inline def apply(): ErrorBoundaryProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorBoundaryProps]
     }
     
-    @scala.inline
-    implicit class ErrorBoundaryPropsMutableBuilder[Self <: ErrorBoundaryProps] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorBoundaryProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setFallback(value: ReactNode): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: ReactNode): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     }
   }
 }

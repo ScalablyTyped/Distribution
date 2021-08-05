@@ -26,31 +26,23 @@ trait SchemaBullet extends StObject {
 }
 object SchemaBullet {
   
-  @scala.inline
-  def apply(): SchemaBullet = {
+  inline def apply(): SchemaBullet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBullet]
   }
   
-  @scala.inline
-  implicit class SchemaBulletMutableBuilder[Self <: SchemaBullet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBullet](x: Self) {
     
-    @scala.inline
-    def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+    inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
+    inline def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
-    @scala.inline
-    def setNestingLevel(value: Double): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
+    inline def setNestingLevel(value: Double): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
+    inline def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
     
-    @scala.inline
-    def setTextStyle(value: SchemaTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: SchemaTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

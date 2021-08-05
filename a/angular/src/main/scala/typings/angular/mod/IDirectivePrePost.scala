@@ -13,29 +13,23 @@ trait IDirectivePrePost[TScope /* <: IScope */, TElement /* <: JQLite */, TAttri
 }
 object IDirectivePrePost {
   
-  @scala.inline
-  def apply[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](): IDirectivePrePost[TScope, TElement, TAttributes, TController] = {
+  inline def apply[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](): IDirectivePrePost[TScope, TElement, TAttributes, TController] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDirectivePrePost[TScope, TElement, TAttributes, TController]]
   }
   
-  @scala.inline
-  implicit class IDirectivePrePostMutableBuilder[Self <: IDirectivePrePost[?, ?, ?, ?], TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] (val x: Self & (IDirectivePrePost[TScope, TElement, TAttributes, TController])) extends AnyVal {
+  extension [Self <: IDirectivePrePost[?, ?, ?, ?], TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](x: Self & (IDirectivePrePost[TScope, TElement, TAttributes, TController])) {
     
-    @scala.inline
-    def setPost(
+    inline def setPost(
       value: (TScope, TElement, TAttributes, /* controller */ js.UndefOr[TController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit
     ): Self = StObject.set(x, "post", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+    inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
-    @scala.inline
-    def setPre(
+    inline def setPre(
       value: (TScope, TElement, TAttributes, /* controller */ js.UndefOr[TController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit
     ): Self = StObject.set(x, "pre", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+    inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
   }
 }

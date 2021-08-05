@@ -36,8 +36,7 @@ object mod {
     *
     * @template TInjectedPropNames Names of props injected by `mapStateToProps`.
     */
-  @scala.inline
-  def connect[TInjectedPropNames /* <: String | Double | js.Symbol */](mapStateToProps: MapStateToProps[TInjectedPropNames]): ComponentConnector[TInjectedPropNames] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any]).asInstanceOf[ComponentConnector[TInjectedPropNames]]
+  inline def connect[TInjectedPropNames /* <: String | Double | js.Symbol */](mapStateToProps: MapStateToProps[TInjectedPropNames]): ComponentConnector[TInjectedPropNames] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any]).asInstanceOf[ComponentConnector[TInjectedPropNames]]
   
   /**
     * Provides dataBindings + reactor as props to wrapped component.

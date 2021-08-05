@@ -12,7 +12,7 @@ trait OutlookBarStorage extends StObject {
   
   val Groups: OutlookBarGroups
   
-  @JSName("Outlook.OutlookBarStorage_typekey")
+  /* private */ @JSName("Outlook.OutlookBarStorage_typekey")
   var OutlookDotOutlookBarStorage_typekey: OutlookBarStorage
   
   val Parent: js.Any
@@ -21,8 +21,7 @@ trait OutlookBarStorage extends StObject {
 }
 object OutlookBarStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     Groups: OutlookBarGroups,
@@ -35,25 +34,18 @@ object OutlookBarStorage {
     __obj.asInstanceOf[OutlookBarStorage]
   }
   
-  @scala.inline
-  implicit class OutlookBarStorageMutableBuilder[Self <: OutlookBarStorage] (val x: Self) extends AnyVal {
+  extension [Self <: OutlookBarStorage](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroups(value: OutlookBarGroups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: OutlookBarGroups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotOutlookBarStorage_typekey(value: OutlookBarStorage): Self = StObject.set(x, "Outlook.OutlookBarStorage_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotOutlookBarStorage_typekey(value: OutlookBarStorage): Self = StObject.set(x, "Outlook.OutlookBarStorage_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

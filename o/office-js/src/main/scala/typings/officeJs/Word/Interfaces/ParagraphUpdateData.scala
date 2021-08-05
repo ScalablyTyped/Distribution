@@ -138,103 +138,71 @@ trait ParagraphUpdateData extends StObject {
 }
 object ParagraphUpdateData {
   
-  @scala.inline
-  def apply(): ParagraphUpdateData = {
+  inline def apply(): ParagraphUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParagraphUpdateData]
   }
   
-  @scala.inline
-  implicit class ParagraphUpdateDataMutableBuilder[Self <: ParagraphUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphUpdateData](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    @scala.inline
-    def setFirstLineIndent(value: Double): Self = StObject.set(x, "firstLineIndent", value.asInstanceOf[js.Any])
+    inline def setFirstLineIndent(value: Double): Self = StObject.set(x, "firstLineIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstLineIndentUndefined: Self = StObject.set(x, "firstLineIndent", js.undefined)
+    inline def setFirstLineIndentUndefined: Self = StObject.set(x, "firstLineIndent", js.undefined)
     
-    @scala.inline
-    def setFont(value: FontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: FontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setLeftIndent(value: Double): Self = StObject.set(x, "leftIndent", value.asInstanceOf[js.Any])
+    inline def setLeftIndent(value: Double): Self = StObject.set(x, "leftIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftIndentUndefined: Self = StObject.set(x, "leftIndent", js.undefined)
+    inline def setLeftIndentUndefined: Self = StObject.set(x, "leftIndent", js.undefined)
     
-    @scala.inline
-    def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
+    inline def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
+    inline def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
     
-    @scala.inline
-    def setLineUnitAfter(value: Double): Self = StObject.set(x, "lineUnitAfter", value.asInstanceOf[js.Any])
+    inline def setLineUnitAfter(value: Double): Self = StObject.set(x, "lineUnitAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUnitAfterUndefined: Self = StObject.set(x, "lineUnitAfter", js.undefined)
+    inline def setLineUnitAfterUndefined: Self = StObject.set(x, "lineUnitAfter", js.undefined)
     
-    @scala.inline
-    def setLineUnitBefore(value: Double): Self = StObject.set(x, "lineUnitBefore", value.asInstanceOf[js.Any])
+    inline def setLineUnitBefore(value: Double): Self = StObject.set(x, "lineUnitBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUnitBeforeUndefined: Self = StObject.set(x, "lineUnitBefore", js.undefined)
+    inline def setLineUnitBeforeUndefined: Self = StObject.set(x, "lineUnitBefore", js.undefined)
     
-    @scala.inline
-    def setListItem(value: ListItemUpdateData): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+    inline def setListItem(value: ListItemUpdateData): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListItemOrNullObject(value: ListItemUpdateData): Self = StObject.set(x, "listItemOrNullObject", value.asInstanceOf[js.Any])
+    inline def setListItemOrNullObject(value: ListItemUpdateData): Self = StObject.set(x, "listItemOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListItemOrNullObjectUndefined: Self = StObject.set(x, "listItemOrNullObject", js.undefined)
+    inline def setListItemOrNullObjectUndefined: Self = StObject.set(x, "listItemOrNullObject", js.undefined)
     
-    @scala.inline
-    def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+    inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
     
-    @scala.inline
-    def setOutlineLevel(value: Double): Self = StObject.set(x, "outlineLevel", value.asInstanceOf[js.Any])
+    inline def setOutlineLevel(value: Double): Self = StObject.set(x, "outlineLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineLevelUndefined: Self = StObject.set(x, "outlineLevel", js.undefined)
+    inline def setOutlineLevelUndefined: Self = StObject.set(x, "outlineLevel", js.undefined)
     
-    @scala.inline
-    def setRightIndent(value: Double): Self = StObject.set(x, "rightIndent", value.asInstanceOf[js.Any])
+    inline def setRightIndent(value: Double): Self = StObject.set(x, "rightIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightIndentUndefined: Self = StObject.set(x, "rightIndent", js.undefined)
+    inline def setRightIndentUndefined: Self = StObject.set(x, "rightIndent", js.undefined)
     
-    @scala.inline
-    def setSpaceAfter(value: Double): Self = StObject.set(x, "spaceAfter", value.asInstanceOf[js.Any])
+    inline def setSpaceAfter(value: Double): Self = StObject.set(x, "spaceAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceAfterUndefined: Self = StObject.set(x, "spaceAfter", js.undefined)
+    inline def setSpaceAfterUndefined: Self = StObject.set(x, "spaceAfter", js.undefined)
     
-    @scala.inline
-    def setSpaceBefore(value: Double): Self = StObject.set(x, "spaceBefore", value.asInstanceOf[js.Any])
+    inline def setSpaceBefore(value: Double): Self = StObject.set(x, "spaceBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceBeforeUndefined: Self = StObject.set(x, "spaceBefore", js.undefined)
+    inline def setSpaceBeforeUndefined: Self = StObject.set(x, "spaceBefore", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleBuiltIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
+    inline def setStyleBuiltIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
+    inline def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

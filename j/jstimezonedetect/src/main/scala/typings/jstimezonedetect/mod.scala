@@ -11,8 +11,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def determine(): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("determine")().asInstanceOf[Name]
-  @scala.inline
-  def determine(usingIntl: Boolean): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("determine")(usingIntl.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def determine(): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("determine")().asInstanceOf[Name]
+  inline def determine(usingIntl: Boolean): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("determine")(usingIntl.asInstanceOf[js.Any]).asInstanceOf[Name]
 }

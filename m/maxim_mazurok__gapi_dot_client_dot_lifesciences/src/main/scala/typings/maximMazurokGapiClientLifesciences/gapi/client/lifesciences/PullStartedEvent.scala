@@ -11,19 +11,15 @@ trait PullStartedEvent extends StObject {
 }
 object PullStartedEvent {
   
-  @scala.inline
-  def apply(): PullStartedEvent = {
+  inline def apply(): PullStartedEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PullStartedEvent]
   }
   
-  @scala.inline
-  implicit class PullStartedEventMutableBuilder[Self <: PullStartedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PullStartedEvent](x: Self) {
     
-    @scala.inline
-    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+    inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+    inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
   }
 }

@@ -38,81 +38,57 @@ trait Background extends StObject {
 }
 object Background {
   
-  @scala.inline
-  def apply(): Background = {
+  inline def apply(): Background = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Background]
   }
   
-  @scala.inline
-  implicit class BackgroundMutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
+  extension [Self <: Background](x: Self) {
     
-    @scala.inline
-    def setBackground(value: typings.vegaTypings.colorMod.Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: typings.vegaTypings.colorMod.Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setBind(value: Element | String): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+    inline def setBind(value: Element | String): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
+    inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
     
-    @scala.inline
-    def setContainer(value: Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setExpr(value: js.Any): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: js.Any): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
+    inline def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
     
-    @scala.inline
-    def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    @scala.inline
-    def setLoader(value: Loader_): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+    inline def setLoader(value: Loader_): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
+    inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
     
-    @scala.inline
-    def setLocale(value: LocaleFormatters): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: LocaleFormatters): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setLogLevel(value: Double): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: Double): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
-    @scala.inline
-    def setLogger(value: LoggerInterface): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: LoggerInterface): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
-    @scala.inline
-    def setRenderer(value: Renderers): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: Renderers): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    @scala.inline
-    def setTooltip(
+    inline def setTooltip(
       value: (/* handler */ js.Any, /* event */ MouseEvent, /* item */ Item[js.Any], /* value */ js.Any) => Unit
     ): Self = StObject.set(x, "tooltip", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

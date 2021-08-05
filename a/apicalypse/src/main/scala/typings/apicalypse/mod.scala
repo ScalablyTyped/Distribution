@@ -12,14 +12,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Apicalypse]
-  @scala.inline
-  def default(options: ApicalypseConfig): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Apicalypse]
-  @scala.inline
-  def default(rawQueryString: String): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawQueryString.asInstanceOf[js.Any]).asInstanceOf[Apicalypse]
-  @scala.inline
-  def default(rawQueryString: String, options: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawQueryString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
+  inline def default(): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Apicalypse]
+  inline def default(options: ApicalypseConfig): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Apicalypse]
+  inline def default(rawQueryString: String): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawQueryString.asInstanceOf[js.Any]).asInstanceOf[Apicalypse]
+  inline def default(rawQueryString: String, options: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawQueryString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
   
   @js.native
   trait Apicalypse extends StObject {
@@ -57,20 +53,16 @@ object mod {
   }
   object ApicalypseConfig {
     
-    @scala.inline
-    def apply(): ApicalypseConfig = {
+    inline def apply(): ApicalypseConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApicalypseConfig]
     }
     
-    @scala.inline
-    implicit class ApicalypseConfigMutableBuilder[Self <: ApicalypseConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ApicalypseConfig](x: Self) {
       
-      @scala.inline
-      def setQueryMethod(value: QueryMethod): Self = StObject.set(x, "queryMethod", value.asInstanceOf[js.Any])
+      inline def setQueryMethod(value: QueryMethod): Self = StObject.set(x, "queryMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryMethodUndefined: Self = StObject.set(x, "queryMethod", js.undefined)
+      inline def setQueryMethodUndefined: Self = StObject.set(x, "queryMethod", js.undefined)
     }
   }
   
@@ -81,11 +73,9 @@ object mod {
   trait QueryMethod extends StObject
   object QueryMethod {
     
-    @scala.inline
-    def body: typings.apicalypse.apicalypseStrings.body = "body".asInstanceOf[typings.apicalypse.apicalypseStrings.body]
+    inline def body: typings.apicalypse.apicalypseStrings.body = "body".asInstanceOf[typings.apicalypse.apicalypseStrings.body]
     
-    @scala.inline
-    def url: typings.apicalypse.apicalypseStrings.url = "url".asInstanceOf[typings.apicalypse.apicalypseStrings.url]
+    inline def url: typings.apicalypse.apicalypseStrings.url = "url".asInstanceOf[typings.apicalypse.apicalypseStrings.url]
   }
   
   trait RequestAllConfig extends StObject {
@@ -96,26 +86,20 @@ object mod {
   }
   object RequestAllConfig {
     
-    @scala.inline
-    def apply(): RequestAllConfig = {
+    inline def apply(): RequestAllConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestAllConfig]
     }
     
-    @scala.inline
-    implicit class RequestAllConfigMutableBuilder[Self <: RequestAllConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RequestAllConfig](x: Self) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     }
   }
   
@@ -126,10 +110,8 @@ object mod {
   trait SortDirection extends StObject
   object SortDirection {
     
-    @scala.inline
-    def asc: typings.apicalypse.apicalypseStrings.asc = "asc".asInstanceOf[typings.apicalypse.apicalypseStrings.asc]
+    inline def asc: typings.apicalypse.apicalypseStrings.asc = "asc".asInstanceOf[typings.apicalypse.apicalypseStrings.asc]
     
-    @scala.inline
-    def desc: typings.apicalypse.apicalypseStrings.desc = "desc".asInstanceOf[typings.apicalypse.apicalypseStrings.desc]
+    inline def desc: typings.apicalypse.apicalypseStrings.desc = "desc".asInstanceOf[typings.apicalypse.apicalypseStrings.desc]
   }
 }

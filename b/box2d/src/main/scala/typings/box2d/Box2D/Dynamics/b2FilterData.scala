@@ -29,25 +29,19 @@ trait b2FilterData extends StObject {
 }
 object b2FilterData {
   
-  @scala.inline
-  def apply(Copy: () => b2FilterData, categoryBits: Double, groupIndex: Double, maskBits: Double): b2FilterData = {
+  inline def apply(Copy: () => b2FilterData, categoryBits: Double, groupIndex: Double, maskBits: Double): b2FilterData = {
     val __obj = js.Dynamic.literal(Copy = js.Any.fromFunction0(Copy), categoryBits = categoryBits.asInstanceOf[js.Any], groupIndex = groupIndex.asInstanceOf[js.Any], maskBits = maskBits.asInstanceOf[js.Any])
     __obj.asInstanceOf[b2FilterData]
   }
   
-  @scala.inline
-  implicit class b2FilterDataMutableBuilder[Self <: b2FilterData] (val x: Self) extends AnyVal {
+  extension [Self <: b2FilterData](x: Self) {
     
-    @scala.inline
-    def setCategoryBits(value: Double): Self = StObject.set(x, "categoryBits", value.asInstanceOf[js.Any])
+    inline def setCategoryBits(value: Double): Self = StObject.set(x, "categoryBits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: () => b2FilterData): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => b2FilterData): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
+    inline def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskBits(value: Double): Self = StObject.set(x, "maskBits", value.asInstanceOf[js.Any])
+    inline def setMaskBits(value: Double): Self = StObject.set(x, "maskBits", value.asInstanceOf[js.Any])
   }
 }

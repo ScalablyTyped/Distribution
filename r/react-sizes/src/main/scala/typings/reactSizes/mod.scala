@@ -11,11 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[SP /* <: js.Object */, P /* <: SP */](mapSizesToProps: js.Function1[/* sizes */ Sizes, SP]): js.Function1[/* component */ ComponentType[P], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(mapSizesToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], ComponentType[P]]]
+  inline def default[SP /* <: js.Object */, P /* <: SP */](mapSizesToProps: js.Function1[/* sizes */ Sizes, SP]): js.Function1[/* component */ ComponentType[P], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(mapSizesToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], ComponentType[P]]]
   
-  @scala.inline
-  def WithSizes[SP /* <: js.Object */, P /* <: SP */](mapSizesToProps: js.Function1[/* sizes */ Sizes, SP]): js.Function1[/* component */ ComponentType[P], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("WithSizes")(mapSizesToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], ComponentType[P]]]
+  inline def WithSizes[SP /* <: js.Object */, P /* <: SP */](mapSizesToProps: js.Function1[/* sizes */ Sizes, SP]): js.Function1[/* component */ ComponentType[P], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("WithSizes")(mapSizesToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], ComponentType[P]]]
   
   trait Sizes extends StObject {
     
@@ -25,20 +23,16 @@ object mod {
   }
   object Sizes {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Sizes = {
+    inline def apply(height: Double, width: Double): Sizes = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Sizes]
     }
     
-    @scala.inline
-    implicit class SizesMutableBuilder[Self <: Sizes] (val x: Self) extends AnyVal {
+    extension [Self <: Sizes](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

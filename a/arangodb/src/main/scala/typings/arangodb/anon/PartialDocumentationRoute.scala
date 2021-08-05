@@ -20,37 +20,27 @@ trait PartialDocumentationRoute extends StObject {
 }
 object PartialDocumentationRoute {
   
-  @scala.inline
-  def apply(): PartialDocumentationRoute = {
+  inline def apply(): PartialDocumentationRoute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialDocumentationRoute]
   }
   
-  @scala.inline
-  implicit class PartialDocumentationRouteMutableBuilder[Self <: PartialDocumentationRoute] (val x: Self) extends AnyVal {
+  extension [Self <: PartialDocumentationRoute](x: Self) {
     
-    @scala.inline
-    def setBefore(value: (/* req */ Request, /* res */ Response) => Unit | `false`): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+    inline def setBefore(value: (/* req */ Request, /* res */ Response) => Unit | `false`): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setIndexFile(value: String): Self = StObject.set(x, "indexFile", value.asInstanceOf[js.Any])
+    inline def setIndexFile(value: String): Self = StObject.set(x, "indexFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexFileUndefined: Self = StObject.set(x, "indexFile", js.undefined)
+    inline def setIndexFileUndefined: Self = StObject.set(x, "indexFile", js.undefined)
     
-    @scala.inline
-    def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+    inline def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
+    inline def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
     
-    @scala.inline
-    def setSwaggerRoot(value: String): Self = StObject.set(x, "swaggerRoot", value.asInstanceOf[js.Any])
+    inline def setSwaggerRoot(value: String): Self = StObject.set(x, "swaggerRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwaggerRootUndefined: Self = StObject.set(x, "swaggerRoot", js.undefined)
+    inline def setSwaggerRootUndefined: Self = StObject.set(x, "swaggerRoot", js.undefined)
   }
 }

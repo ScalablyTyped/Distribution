@@ -28,8 +28,7 @@ trait UpdateProvisionedProductPropertiesInput extends StObject {
 }
 object UpdateProvisionedProductPropertiesInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IdempotencyToken: IdempotencyToken,
     ProvisionedProductId: Id,
     ProvisionedProductProperties: ProvisionedProductProperties
@@ -38,22 +37,16 @@ object UpdateProvisionedProductPropertiesInput {
     __obj.asInstanceOf[UpdateProvisionedProductPropertiesInput]
   }
   
-  @scala.inline
-  implicit class UpdateProvisionedProductPropertiesInputMutableBuilder[Self <: UpdateProvisionedProductPropertiesInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateProvisionedProductPropertiesInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
+    inline def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductId(value: Id): Self = StObject.set(x, "ProvisionedProductId", value.asInstanceOf[js.Any])
+    inline def setProvisionedProductId(value: Id): Self = StObject.set(x, "ProvisionedProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductProperties(value: ProvisionedProductProperties): Self = StObject.set(x, "ProvisionedProductProperties", value.asInstanceOf[js.Any])
+    inline def setProvisionedProductProperties(value: ProvisionedProductProperties): Self = StObject.set(x, "ProvisionedProductProperties", value.asInstanceOf[js.Any])
   }
 }

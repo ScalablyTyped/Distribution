@@ -22,9 +22,9 @@ object mod {
   @js.native
   trait CassandraStore extends Store {
     
-    var _client: Client = js.native
+    /* private */ var _client: Client = js.native
     
-    var _clientOptions: ClientOptions = js.native
+    /* private */ var _clientOptions: ClientOptions = js.native
     
     @JSName("all")
     def all_MCassandraStore(
@@ -69,29 +69,22 @@ object mod {
   }
   object CassandraStoreOptions {
     
-    @scala.inline
-    def apply(clientOptions: ClientOptions, table: String): CassandraStoreOptions = {
+    inline def apply(clientOptions: ClientOptions, table: String): CassandraStoreOptions = {
       val __obj = js.Dynamic.literal(clientOptions = clientOptions.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
       __obj.asInstanceOf[CassandraStoreOptions]
     }
     
-    @scala.inline
-    implicit class CassandraStoreOptionsMutableBuilder[Self <: CassandraStoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CassandraStoreOptions](x: Self) {
       
-      @scala.inline
-      def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientNull: Self = StObject.set(x, "client", null)
+      inline def setClientNull: Self = StObject.set(x, "client", null)
       
-      @scala.inline
-      def setClientOptions(value: ClientOptions): Self = StObject.set(x, "clientOptions", value.asInstanceOf[js.Any])
+      inline def setClientOptions(value: ClientOptions): Self = StObject.set(x, "clientOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
   }
 }

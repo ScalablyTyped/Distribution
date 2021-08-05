@@ -24,22 +24,17 @@ trait TopicRuleSqs extends StObject {
 }
 object TopicRuleSqs {
   
-  @scala.inline
-  def apply(queueUrl: Input[String], roleArn: Input[String], useBase64: Input[Boolean]): TopicRuleSqs = {
+  inline def apply(queueUrl: Input[String], roleArn: Input[String], useBase64: Input[Boolean]): TopicRuleSqs = {
     val __obj = js.Dynamic.literal(queueUrl = queueUrl.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], useBase64 = useBase64.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleSqs]
   }
   
-  @scala.inline
-  implicit class TopicRuleSqsMutableBuilder[Self <: TopicRuleSqs] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleSqs](x: Self) {
     
-    @scala.inline
-    def setQueueUrl(value: Input[String]): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: Input[String]): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseBase64(value: Input[Boolean]): Self = StObject.set(x, "useBase64", value.asInstanceOf[js.Any])
+    inline def setUseBase64(value: Input[Boolean]): Self = StObject.set(x, "useBase64", value.asInstanceOf[js.Any])
   }
 }

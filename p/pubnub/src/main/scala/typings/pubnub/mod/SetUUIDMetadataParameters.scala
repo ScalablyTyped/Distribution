@@ -15,28 +15,21 @@ trait SetUUIDMetadataParameters[Custom /* <: ObjectCustom */] extends StObject {
 }
 object SetUUIDMetadataParameters {
   
-  @scala.inline
-  def apply[Custom /* <: ObjectCustom */](data: UUIDMetadata[Custom]): SetUUIDMetadataParameters[Custom] = {
+  inline def apply[Custom /* <: ObjectCustom */](data: UUIDMetadata[Custom]): SetUUIDMetadataParameters[Custom] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetUUIDMetadataParameters[Custom]]
   }
   
-  @scala.inline
-  implicit class SetUUIDMetadataParametersMutableBuilder[Self <: SetUUIDMetadataParameters[?], Custom /* <: ObjectCustom */] (val x: Self & SetUUIDMetadataParameters[Custom]) extends AnyVal {
+  extension [Self <: SetUUIDMetadataParameters[?], Custom /* <: ObjectCustom */](x: Self & SetUUIDMetadataParameters[Custom]) {
     
-    @scala.inline
-    def setData(value: UUIDMetadata[Custom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: UUIDMetadata[Custom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude(value: CustomFields): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: CustomFields): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

@@ -14,8 +14,7 @@ trait WebUILaunchActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUILaunchActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     arguments: String,
     kind: ActivationKind,

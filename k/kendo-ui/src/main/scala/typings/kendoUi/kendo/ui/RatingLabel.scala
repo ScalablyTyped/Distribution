@@ -10,16 +10,13 @@ trait RatingLabel extends StObject {
 }
 object RatingLabel {
   
-  @scala.inline
-  def apply(template: String | js.Function): RatingLabel = {
+  inline def apply(template: String | js.Function): RatingLabel = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[RatingLabel]
   }
   
-  @scala.inline
-  implicit class RatingLabelMutableBuilder[Self <: RatingLabel] (val x: Self) extends AnyVal {
+  extension [Self <: RatingLabel](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

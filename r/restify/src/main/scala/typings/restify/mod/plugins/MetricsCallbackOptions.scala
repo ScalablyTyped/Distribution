@@ -61,8 +61,7 @@ trait MetricsCallbackOptions extends StObject {
 }
 object MetricsCallbackOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inflightRequests: Double,
     latency: Double,
     method: String,
@@ -75,46 +74,32 @@ object MetricsCallbackOptions {
     __obj.asInstanceOf[MetricsCallbackOptions]
   }
   
-  @scala.inline
-  implicit class MetricsCallbackOptionsMutableBuilder[Self <: MetricsCallbackOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MetricsCallbackOptions](x: Self) {
     
-    @scala.inline
-    def setConnectionState(value: TMetricsCallback): Self = StObject.set(x, "connectionState", value.asInstanceOf[js.Any])
+    inline def setConnectionState(value: TMetricsCallback): Self = StObject.set(x, "connectionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStateUndefined: Self = StObject.set(x, "connectionState", js.undefined)
+    inline def setConnectionStateUndefined: Self = StObject.set(x, "connectionState", js.undefined)
     
-    @scala.inline
-    def setInflightRequests(value: Double): Self = StObject.set(x, "inflightRequests", value.asInstanceOf[js.Any])
+    inline def setInflightRequests(value: Double): Self = StObject.set(x, "inflightRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+    inline def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreLatency(value: Double): Self = StObject.set(x, "preLatency", value.asInstanceOf[js.Any])
+    inline def setPreLatency(value: Double): Self = StObject.set(x, "preLatency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreLatencyNull: Self = StObject.set(x, "preLatency", null)
+    inline def setPreLatencyNull: Self = StObject.set(x, "preLatency", null)
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalLatency(value: Double): Self = StObject.set(x, "totalLatency", value.asInstanceOf[js.Any])
+    inline def setTotalLatency(value: Double): Self = StObject.set(x, "totalLatency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnfinishedRequests(value: Double): Self = StObject.set(x, "unfinishedRequests", value.asInstanceOf[js.Any])
+    inline def setUnfinishedRequests(value: Double): Self = StObject.set(x, "unfinishedRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLatency(value: Double): Self = StObject.set(x, "useLatency", value.asInstanceOf[js.Any])
+    inline def setUseLatency(value: Double): Self = StObject.set(x, "useLatency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLatencyNull: Self = StObject.set(x, "useLatency", null)
+    inline def setUseLatencyNull: Self = StObject.set(x, "useLatency", null)
   }
 }

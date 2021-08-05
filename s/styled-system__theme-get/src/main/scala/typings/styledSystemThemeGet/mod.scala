@@ -10,12 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def themeGet(path: String): js.Function1[/* props */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeGet")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.Any, js.Any]]
-  @scala.inline
-  def themeGet(path: String, fallback: js.Any): js.Function1[/* props */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("themeGet")(path.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.Any, js.Any]]
-  @scala.inline
-  def themeGet(path: js.Array[String | Double]): js.Function1[/* props */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeGet")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.Any, js.Any]]
-  @scala.inline
-  def themeGet(path: js.Array[String | Double], fallback: js.Any): js.Function1[/* props */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("themeGet")(path.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.Any, js.Any]]
+  inline def themeGet(path: String): js.Function1[/* props */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeGet")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.Any, js.Any]]
+  inline def themeGet(path: String, fallback: js.Any): js.Function1[/* props */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("themeGet")(path.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.Any, js.Any]]
+  inline def themeGet(path: js.Array[String | Double]): js.Function1[/* props */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeGet")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.Any, js.Any]]
+  inline def themeGet(path: js.Array[String | Double], fallback: js.Any): js.Function1[/* props */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("themeGet")(path.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.Any, js.Any]]
 }

@@ -97,8 +97,7 @@ trait XModel2
 }
 object XModel2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Args: SafeArray[PropertyValue],
     AvailableViewControllerNames: SafeArray[String],
     Controllers: XEnumeration,
@@ -131,25 +130,18 @@ object XModel2 {
     __obj.asInstanceOf[XModel2]
   }
   
-  @scala.inline
-  implicit class XModel2MutableBuilder[Self <: XModel2] (val x: Self) extends AnyVal {
+  extension [Self <: XModel2](x: Self) {
     
-    @scala.inline
-    def setAvailableViewControllerNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableViewControllerNames", value.asInstanceOf[js.Any])
+    inline def setAvailableViewControllerNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableViewControllerNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllers(value: XEnumeration): Self = StObject.set(x, "Controllers", value.asInstanceOf[js.Any])
+    inline def setControllers(value: XEnumeration): Self = StObject.set(x, "Controllers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDefaultViewController(value: XFrame => XController2): Self = StObject.set(x, "createDefaultViewController", js.Any.fromFunction1(value))
+    inline def setCreateDefaultViewController(value: XFrame => XController2): Self = StObject.set(x, "createDefaultViewController", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateViewController(value: (String, SeqEquiv[PropertyValue], XFrame) => XController2): Self = StObject.set(x, "createViewController", js.Any.fromFunction3(value))
+    inline def setCreateViewController(value: (String, SeqEquiv[PropertyValue], XFrame) => XController2): Self = StObject.set(x, "createViewController", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetAvailableViewControllerNames(value: () => SafeArray[String]): Self = StObject.set(x, "getAvailableViewControllerNames", js.Any.fromFunction0(value))
+    inline def setGetAvailableViewControllerNames(value: () => SafeArray[String]): Self = StObject.set(x, "getAvailableViewControllerNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetControllers(value: () => XEnumeration): Self = StObject.set(x, "getControllers", js.Any.fromFunction0(value))
+    inline def setGetControllers(value: () => XEnumeration): Self = StObject.set(x, "getControllers", js.Any.fromFunction0(value))
   }
 }

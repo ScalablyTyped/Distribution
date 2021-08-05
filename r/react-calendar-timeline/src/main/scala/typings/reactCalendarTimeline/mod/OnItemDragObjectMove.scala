@@ -16,19 +16,15 @@ trait OnItemDragObjectMove
 }
 object OnItemDragObjectMove {
   
-  @scala.inline
-  def apply(itemId: Id, newGroupOrder: Double, time: Double): OnItemDragObjectMove = {
+  inline def apply(itemId: Id, newGroupOrder: Double, time: Double): OnItemDragObjectMove = {
     val __obj = js.Dynamic.literal(eventType = "move", itemId = itemId.asInstanceOf[js.Any], newGroupOrder = newGroupOrder.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnItemDragObjectMove]
   }
   
-  @scala.inline
-  implicit class OnItemDragObjectMoveMutableBuilder[Self <: OnItemDragObjectMove] (val x: Self) extends AnyVal {
+  extension [Self <: OnItemDragObjectMove](x: Self) {
     
-    @scala.inline
-    def setEventType(value: move): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: move): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewGroupOrder(value: Double): Self = StObject.set(x, "newGroupOrder", value.asInstanceOf[js.Any])
+    inline def setNewGroupOrder(value: Double): Self = StObject.set(x, "newGroupOrder", value.asInstanceOf[js.Any])
   }
 }

@@ -20,26 +20,20 @@ object typesApplicationResponseMod {
   }
   object ApplicationResponse {
     
-    @scala.inline
-    def apply(): ApplicationResponse = {
+    inline def apply(): ApplicationResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApplicationResponse]
     }
     
-    @scala.inline
-    implicit class ApplicationResponseMutableBuilder[Self <: ApplicationResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationResponse](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     }
   }
   

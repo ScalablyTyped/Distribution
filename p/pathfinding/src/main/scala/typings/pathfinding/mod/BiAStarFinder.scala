@@ -15,6 +15,5 @@ trait BiAStarFinder
      with Instantiable1[/* opt */ JumpPointFinderOptions, BiAStarFinder]
 object BiAStarFinder {
   
-  @scala.inline
-  def apply: BiAStarFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("BiAStarFinder").asInstanceOf[BiAStarFinder]
+  inline def apply: BiAStarFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("BiAStarFinder").asInstanceOf[BiAStarFinder]
 }

@@ -17,8 +17,7 @@ object mod {
   @js.native
   val default: Component[js.Any, js.Any, js.Any, CalendarProps] = js.native
   
-  @scala.inline
-  def install(Vue: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(Vue.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def install(Vue: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(Vue.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait FullCalendarComponent

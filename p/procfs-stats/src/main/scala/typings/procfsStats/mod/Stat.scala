@@ -96,8 +96,7 @@ trait Stat extends StObject {
 }
 object Stat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blocked: String,
     cguest_time: String,
     cmajflt: String,
@@ -147,139 +146,94 @@ object Stat {
     __obj.asInstanceOf[Stat]
   }
   
-  @scala.inline
-  implicit class StatMutableBuilder[Self <: Stat] (val x: Self) extends AnyVal {
+  extension [Self <: Stat](x: Self) {
     
-    @scala.inline
-    def setBlocked(value: String): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
+    inline def setBlocked(value: String): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCguest_time(value: String): Self = StObject.set(x, "cguest_time", value.asInstanceOf[js.Any])
+    inline def setCguest_time(value: String): Self = StObject.set(x, "cguest_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmajflt(value: String): Self = StObject.set(x, "cmajflt", value.asInstanceOf[js.Any])
+    inline def setCmajflt(value: String): Self = StObject.set(x, "cmajflt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCminflt(value: String): Self = StObject.set(x, "cminflt", value.asInstanceOf[js.Any])
+    inline def setCminflt(value: String): Self = StObject.set(x, "cminflt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCnswap(value: String): Self = StObject.set(x, "cnswap", value.asInstanceOf[js.Any])
+    inline def setCnswap(value: String): Self = StObject.set(x, "cnswap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComm(value: String): Self = StObject.set(x, "comm", value.asInstanceOf[js.Any])
+    inline def setComm(value: String): Self = StObject.set(x, "comm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCstime(value: String): Self = StObject.set(x, "cstime", value.asInstanceOf[js.Any])
+    inline def setCstime(value: String): Self = StObject.set(x, "cstime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCutime(value: String): Self = StObject.set(x, "cutime", value.asInstanceOf[js.Any])
+    inline def setCutime(value: String): Self = StObject.set(x, "cutime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayacct_blkio_ticks(value: String): Self = StObject.set(x, "delayacct_blkio_ticks", value.asInstanceOf[js.Any])
+    inline def setDelayacct_blkio_ticks(value: String): Self = StObject.set(x, "delayacct_blkio_ticks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndcode(value: String): Self = StObject.set(x, "endcode", value.asInstanceOf[js.Any])
+    inline def setEndcode(value: String): Self = StObject.set(x, "endcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExit_signal(value: String): Self = StObject.set(x, "exit_signal", value.asInstanceOf[js.Any])
+    inline def setExit_signal(value: String): Self = StObject.set(x, "exit_signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuest_time(value: String): Self = StObject.set(x, "guest_time", value.asInstanceOf[js.Any])
+    inline def setGuest_time(value: String): Self = StObject.set(x, "guest_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItrealvalue(value: String): Self = StObject.set(x, "itrealvalue", value.asInstanceOf[js.Any])
+    inline def setItrealvalue(value: String): Self = StObject.set(x, "itrealvalue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKstkeip(value: String): Self = StObject.set(x, "kstkeip", value.asInstanceOf[js.Any])
+    inline def setKstkeip(value: String): Self = StObject.set(x, "kstkeip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKstkesp(value: String): Self = StObject.set(x, "kstkesp", value.asInstanceOf[js.Any])
+    inline def setKstkesp(value: String): Self = StObject.set(x, "kstkesp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajflt(value: String): Self = StObject.set(x, "majflt", value.asInstanceOf[js.Any])
+    inline def setMajflt(value: String): Self = StObject.set(x, "majflt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinflt(value: String): Self = StObject.set(x, "minflt", value.asInstanceOf[js.Any])
+    inline def setMinflt(value: String): Self = StObject.set(x, "minflt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNice(value: String): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
+    inline def setNice(value: String): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNswap(value: String): Self = StObject.set(x, "nswap", value.asInstanceOf[js.Any])
+    inline def setNswap(value: String): Self = StObject.set(x, "nswap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum_threads(value: String): Self = StObject.set(x, "num_threads", value.asInstanceOf[js.Any])
+    inline def setNum_threads(value: String): Self = StObject.set(x, "num_threads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPgrp(value: String): Self = StObject.set(x, "pgrp", value.asInstanceOf[js.Any])
+    inline def setPgrp(value: String): Self = StObject.set(x, "pgrp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPid(value: String): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: String): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPpid(value: String): Self = StObject.set(x, "ppid", value.asInstanceOf[js.Any])
+    inline def setPpid(value: String): Self = StObject.set(x, "ppid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessor(value: String): Self = StObject.set(x, "processor", value.asInstanceOf[js.Any])
+    inline def setProcessor(value: String): Self = StObject.set(x, "processor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRss(value: String): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
+    inline def setRss(value: String): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsslim(value: String): Self = StObject.set(x, "rsslim", value.asInstanceOf[js.Any])
+    inline def setRsslim(value: String): Self = StObject.set(x, "rsslim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRt_priority(value: String): Self = StObject.set(x, "rt_priority", value.asInstanceOf[js.Any])
+    inline def setRt_priority(value: String): Self = StObject.set(x, "rt_priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigcatch(value: String): Self = StObject.set(x, "sigcatch", value.asInstanceOf[js.Any])
+    inline def setSigcatch(value: String): Self = StObject.set(x, "sigcatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigignore(value: String): Self = StObject.set(x, "sigignore", value.asInstanceOf[js.Any])
+    inline def setSigignore(value: String): Self = StObject.set(x, "sigignore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartcode(value: String): Self = StObject.set(x, "startcode", value.asInstanceOf[js.Any])
+    inline def setStartcode(value: String): Self = StObject.set(x, "startcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartstack(value: String): Self = StObject.set(x, "startstack", value.asInstanceOf[js.Any])
+    inline def setStartstack(value: String): Self = StObject.set(x, "startstack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarttime(value: String): Self = StObject.set(x, "starttime", value.asInstanceOf[js.Any])
+    inline def setStarttime(value: String): Self = StObject.set(x, "starttime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStime(value: String): Self = StObject.set(x, "stime", value.asInstanceOf[js.Any])
+    inline def setStime(value: String): Self = StObject.set(x, "stime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpgid(value: String): Self = StObject.set(x, "tpgid", value.asInstanceOf[js.Any])
+    inline def setTpgid(value: String): Self = StObject.set(x, "tpgid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTty_nr(value: String): Self = StObject.set(x, "tty_nr", value.asInstanceOf[js.Any])
+    inline def setTty_nr(value: String): Self = StObject.set(x, "tty_nr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtime(value: String): Self = StObject.set(x, "utime", value.asInstanceOf[js.Any])
+    inline def setUtime(value: String): Self = StObject.set(x, "utime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVsize(value: String): Self = StObject.set(x, "vsize", value.asInstanceOf[js.Any])
+    inline def setVsize(value: String): Self = StObject.set(x, "vsize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWchan(value: String): Self = StObject.set(x, "wchan", value.asInstanceOf[js.Any])
+    inline def setWchan(value: String): Self = StObject.set(x, "wchan", value.asInstanceOf[js.Any])
   }
 }

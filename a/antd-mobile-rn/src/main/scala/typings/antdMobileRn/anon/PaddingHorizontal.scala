@@ -12,19 +12,15 @@ trait PaddingHorizontal extends StObject {
 }
 object PaddingHorizontal {
   
-  @scala.inline
-  def apply(flexDirection: String, paddingHorizontal: Double): PaddingHorizontal = {
+  inline def apply(flexDirection: String, paddingHorizontal: Double): PaddingHorizontal = {
     val __obj = js.Dynamic.literal(flexDirection = flexDirection.asInstanceOf[js.Any], paddingHorizontal = paddingHorizontal.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingHorizontal]
   }
   
-  @scala.inline
-  implicit class PaddingHorizontalMutableBuilder[Self <: PaddingHorizontal] (val x: Self) extends AnyVal {
+  extension [Self <: PaddingHorizontal](x: Self) {
     
-    @scala.inline
-    def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingHorizontal(value: Double): Self = StObject.set(x, "paddingHorizontal", value.asInstanceOf[js.Any])
+    inline def setPaddingHorizontal(value: Double): Self = StObject.set(x, "paddingHorizontal", value.asInstanceOf[js.Any])
   }
 }

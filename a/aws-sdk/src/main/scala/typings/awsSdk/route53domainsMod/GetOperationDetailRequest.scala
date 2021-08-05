@@ -13,16 +13,13 @@ trait GetOperationDetailRequest extends StObject {
 }
 object GetOperationDetailRequest {
   
-  @scala.inline
-  def apply(OperationId: OperationId): GetOperationDetailRequest = {
+  inline def apply(OperationId: OperationId): GetOperationDetailRequest = {
     val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOperationDetailRequest]
   }
   
-  @scala.inline
-  implicit class GetOperationDetailRequestMutableBuilder[Self <: GetOperationDetailRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetOperationDetailRequest](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
   }
 }

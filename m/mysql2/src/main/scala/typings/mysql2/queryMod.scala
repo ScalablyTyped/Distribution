@@ -97,38 +97,28 @@ object queryMod {
   }
   object QueryError {
     
-    @scala.inline
-    def apply(code: String, fatal: Boolean, message: String, name: String): QueryError = {
+    inline def apply(code: String, fatal: Boolean, message: String, name: String): QueryError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryError]
     }
     
-    @scala.inline
-    implicit class QueryErrorMutableBuilder[Self <: QueryError] (val x: Self) extends AnyVal {
+    extension [Self <: QueryError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldCount(value: Double): Self = StObject.set(x, "fieldCount", value.asInstanceOf[js.Any])
+      inline def setFieldCount(value: Double): Self = StObject.set(x, "fieldCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldCountUndefined: Self = StObject.set(x, "fieldCount", js.undefined)
+      inline def setFieldCountUndefined: Self = StObject.set(x, "fieldCount", js.undefined)
       
-      @scala.inline
-      def setSqlState(value: String): Self = StObject.set(x, "sqlState", value.asInstanceOf[js.Any])
+      inline def setSqlState(value: String): Self = StObject.set(x, "sqlState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlStateMarker(value: String): Self = StObject.set(x, "sqlStateMarker", value.asInstanceOf[js.Any])
+      inline def setSqlStateMarker(value: String): Self = StObject.set(x, "sqlStateMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlStateMarkerUndefined: Self = StObject.set(x, "sqlStateMarker", js.undefined)
+      inline def setSqlStateMarkerUndefined: Self = StObject.set(x, "sqlStateMarker", js.undefined)
       
-      @scala.inline
-      def setSqlStateUndefined: Self = StObject.set(x, "sqlState", js.undefined)
+      inline def setSqlStateUndefined: Self = StObject.set(x, "sqlState", js.undefined)
     }
   }
   
@@ -182,44 +172,32 @@ object queryMod {
   }
   object QueryOptions {
     
-    @scala.inline
-    def apply(sql: String): QueryOptions = {
+    inline def apply(sql: String): QueryOptions = {
       val __obj = js.Dynamic.literal(sql = sql.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryOptions]
     }
     
-    @scala.inline
-    implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: QueryOptions](x: Self) {
       
-      @scala.inline
-      def setNestTables(value: js.Any): Self = StObject.set(x, "nestTables", value.asInstanceOf[js.Any])
+      inline def setNestTables(value: js.Any): Self = StObject.set(x, "nestTables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNestTablesUndefined: Self = StObject.set(x, "nestTables", js.undefined)
+      inline def setNestTablesUndefined: Self = StObject.set(x, "nestTables", js.undefined)
       
-      @scala.inline
-      def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+      inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTypeCast(value: js.Any): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
+      inline def setTypeCast(value: js.Any): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
+      inline def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Any | js.Array[js.Any] | StringDictionary[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Any | js.Array[js.Any] | StringDictionary[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      @scala.inline
-      def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -237,26 +215,20 @@ object queryMod {
   }
   object StreamOptions {
     
-    @scala.inline
-    def apply(): StreamOptions = {
+    inline def apply(): StreamOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StreamOptions]
     }
     
-    @scala.inline
-    implicit class StreamOptionsMutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StreamOptions](x: Self) {
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      @scala.inline
-      def setObjectMode(value: js.Any): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: js.Any): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
     }
   }
 }

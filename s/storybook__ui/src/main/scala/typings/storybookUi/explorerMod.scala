@@ -25,29 +25,22 @@ object explorerMod {
   }
   object ExplorerProps {
     
-    @scala.inline
-    def apply(dataset: CombinedDataset, isBrowsing: Boolean, isLoading: Boolean): ExplorerProps = {
+    inline def apply(dataset: CombinedDataset, isBrowsing: Boolean, isLoading: Boolean): ExplorerProps = {
       val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], isBrowsing = isBrowsing.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], selected = null)
       __obj.asInstanceOf[ExplorerProps]
     }
     
-    @scala.inline
-    implicit class ExplorerPropsMutableBuilder[Self <: ExplorerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExplorerProps](x: Self) {
       
-      @scala.inline
-      def setDataset(value: CombinedDataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+      inline def setDataset(value: CombinedDataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBrowsing(value: Boolean): Self = StObject.set(x, "isBrowsing", value.asInstanceOf[js.Any])
+      inline def setIsBrowsing(value: Boolean): Self = StObject.set(x, "isBrowsing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+      inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: Selection): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Selection): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedNull: Self = StObject.set(x, "selected", null)
+      inline def setSelectedNull: Self = StObject.set(x, "selected", null)
     }
   }
 }

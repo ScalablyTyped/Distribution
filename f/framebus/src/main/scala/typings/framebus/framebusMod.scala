@@ -17,7 +17,7 @@ object framebusMod {
     
     var channel: String = js.native
     
-    var checkOrigin: js.Any = js.native
+    /* private */ var checkOrigin: js.Any = js.native
     
     def emit(eventName: String): Boolean = js.native
     def emit(eventName: String, data: Unit, reply: FramebusReplyHandler): Boolean = js.native
@@ -28,11 +28,11 @@ object framebusMod {
     
     def include(childWindow: Window): Boolean = js.native
     
-    var isDestroyed: js.Any = js.native
+    /* private */ var isDestroyed: js.Any = js.native
     
-    var listeners: js.Any = js.native
+    /* private */ var listeners: js.Any = js.native
     
-    var namespaceEvent: js.Any = js.native
+    /* private */ var namespaceEvent: js.Any = js.native
     
     def off(eventName: String, originalHandler: FramebusOnHandler): Boolean = js.native
     
@@ -45,7 +45,7 @@ object framebusMod {
     
     def teardown(): Unit = js.native
     
-    var verifyDomain: js.Any = js.native
+    /* private */ var verifyDomain: js.Any = js.native
   }
   /* static members */
   object Framebus {
@@ -54,10 +54,8 @@ object framebusMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def target(): Framebus = ^.asInstanceOf[js.Dynamic].applyDynamic("target")().asInstanceOf[Framebus]
-    @scala.inline
-    def target(options: FramebusOptions): Framebus = ^.asInstanceOf[js.Dynamic].applyDynamic("target")(options.asInstanceOf[js.Any]).asInstanceOf[Framebus]
+    inline def target(): Framebus = ^.asInstanceOf[js.Dynamic].applyDynamic("target")().asInstanceOf[Framebus]
+    inline def target(options: FramebusOptions): Framebus = ^.asInstanceOf[js.Dynamic].applyDynamic("target")(options.asInstanceOf[js.Any]).asInstanceOf[Framebus]
   }
   
   trait FramebusOptions extends StObject {
@@ -70,32 +68,24 @@ object framebusMod {
   }
   object FramebusOptions {
     
-    @scala.inline
-    def apply(): FramebusOptions = {
+    inline def apply(): FramebusOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FramebusOptions]
     }
     
-    @scala.inline
-    implicit class FramebusOptionsMutableBuilder[Self <: FramebusOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FramebusOptions](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      @scala.inline
-      def setVerifyDomain(value: /* domain */ String => Boolean): Self = StObject.set(x, "verifyDomain", js.Any.fromFunction1(value))
+      inline def setVerifyDomain(value: /* domain */ String => Boolean): Self = StObject.set(x, "verifyDomain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerifyDomainUndefined: Self = StObject.set(x, "verifyDomain", js.undefined)
+      inline def setVerifyDomainUndefined: Self = StObject.set(x, "verifyDomain", js.undefined)
     }
   }
   

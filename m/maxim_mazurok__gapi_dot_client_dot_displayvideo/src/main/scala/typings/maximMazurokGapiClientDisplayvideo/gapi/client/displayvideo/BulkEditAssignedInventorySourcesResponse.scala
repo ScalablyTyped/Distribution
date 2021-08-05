@@ -11,22 +11,17 @@ trait BulkEditAssignedInventorySourcesResponse extends StObject {
 }
 object BulkEditAssignedInventorySourcesResponse {
   
-  @scala.inline
-  def apply(): BulkEditAssignedInventorySourcesResponse = {
+  inline def apply(): BulkEditAssignedInventorySourcesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkEditAssignedInventorySourcesResponse]
   }
   
-  @scala.inline
-  implicit class BulkEditAssignedInventorySourcesResponseMutableBuilder[Self <: BulkEditAssignedInventorySourcesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEditAssignedInventorySourcesResponse](x: Self) {
     
-    @scala.inline
-    def setAssignedInventorySources(value: js.Array[AssignedInventorySource]): Self = StObject.set(x, "assignedInventorySources", value.asInstanceOf[js.Any])
+    inline def setAssignedInventorySources(value: js.Array[AssignedInventorySource]): Self = StObject.set(x, "assignedInventorySources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedInventorySourcesUndefined: Self = StObject.set(x, "assignedInventorySources", js.undefined)
+    inline def setAssignedInventorySourcesUndefined: Self = StObject.set(x, "assignedInventorySources", js.undefined)
     
-    @scala.inline
-    def setAssignedInventorySourcesVarargs(value: AssignedInventorySource*): Self = StObject.set(x, "assignedInventorySources", js.Array(value :_*))
+    inline def setAssignedInventorySourcesVarargs(value: AssignedInventorySource*): Self = StObject.set(x, "assignedInventorySources", js.Array(value :_*))
   }
 }

@@ -11,6 +11,5 @@ object parseStackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseStack(stack: String): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStack")(stack.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
+  inline def parseStack(stack: String): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStack")(stack.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
 }

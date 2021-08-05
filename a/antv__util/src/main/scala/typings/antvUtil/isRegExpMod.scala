@@ -10,6 +10,5 @@ object isRegExpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(str: js.Any): /* is std.RegExp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ Boolean]
+  inline def default(str: js.Any): /* is std.RegExp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ Boolean]
 }

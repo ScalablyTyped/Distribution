@@ -14,8 +14,7 @@ trait OutputStreamOverStream
 }
 object OutputStreamOverStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     dispose: () => Unit,
     flushAsync: () => IAsyncOperation[Boolean],
@@ -25,10 +24,8 @@ object OutputStreamOverStream {
     __obj.asInstanceOf[OutputStreamOverStream]
   }
   
-  @scala.inline
-  implicit class OutputStreamOverStreamMutableBuilder[Self <: OutputStreamOverStream] (val x: Self) extends AnyVal {
+  extension [Self <: OutputStreamOverStream](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

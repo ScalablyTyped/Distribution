@@ -12,19 +12,15 @@ trait AgentJobSchedulesResult
 }
 object AgentJobSchedulesResult {
   
-  @scala.inline
-  def apply(errorMessage: String, schedules: js.Array[AgentJobScheduleInfo], success: Boolean): AgentJobSchedulesResult = {
+  inline def apply(errorMessage: String, schedules: js.Array[AgentJobScheduleInfo], success: Boolean): AgentJobSchedulesResult = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], schedules = schedules.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentJobSchedulesResult]
   }
   
-  @scala.inline
-  implicit class AgentJobSchedulesResultMutableBuilder[Self <: AgentJobSchedulesResult] (val x: Self) extends AnyVal {
+  extension [Self <: AgentJobSchedulesResult](x: Self) {
     
-    @scala.inline
-    def setSchedules(value: js.Array[AgentJobScheduleInfo]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
+    inline def setSchedules(value: js.Array[AgentJobScheduleInfo]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedulesVarargs(value: AgentJobScheduleInfo*): Self = StObject.set(x, "schedules", js.Array(value :_*))
+    inline def setSchedulesVarargs(value: AgentJobScheduleInfo*): Self = StObject.set(x, "schedules", js.Array(value :_*))
   }
 }

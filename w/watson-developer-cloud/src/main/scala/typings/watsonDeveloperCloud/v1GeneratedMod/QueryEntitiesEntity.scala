@@ -15,25 +15,19 @@ trait QueryEntitiesEntity extends StObject {
 }
 object QueryEntitiesEntity {
   
-  @scala.inline
-  def apply(): QueryEntitiesEntity = {
+  inline def apply(): QueryEntitiesEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryEntitiesEntity]
   }
   
-  @scala.inline
-  implicit class QueryEntitiesEntityMutableBuilder[Self <: QueryEntitiesEntity] (val x: Self) extends AnyVal {
+  extension [Self <: QueryEntitiesEntity](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

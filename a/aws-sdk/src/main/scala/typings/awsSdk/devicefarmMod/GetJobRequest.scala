@@ -13,16 +13,13 @@ trait GetJobRequest extends StObject {
 }
 object GetJobRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): GetJobRequest = {
+  inline def apply(arn: AmazonResourceName): GetJobRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJobRequest]
   }
   
-  @scala.inline
-  implicit class GetJobRequestMutableBuilder[Self <: GetJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetJobRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

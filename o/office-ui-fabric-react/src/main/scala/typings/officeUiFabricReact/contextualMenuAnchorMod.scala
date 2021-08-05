@@ -13,8 +13,8 @@ object contextualMenuAnchorMod {
   class ContextualMenuAnchor protected () extends ContextualMenuItemWrapper {
     def this(props: IContextualMenuItemWrapperProps) = this()
     
-    var _anchor: js.Any = js.native
+    /* private */ var _anchor: js.Any = js.native
     
-    var _getMemoizedMenuButtonKeytipProps: js.Any = js.native
+    /* private */ var _getMemoizedMenuButtonKeytipProps: js.Any = js.native
   }
 }

@@ -10,8 +10,7 @@ trait CreateTableOutput
      with typings.awsSdkClientDynamodbNode.typesCreateTableOutputMod.CreateTableOutput
 object CreateTableOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): CreateTableOutput = {
+  inline def apply($metadata: ResponseMetadata): CreateTableOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTableOutput]
   }

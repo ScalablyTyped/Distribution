@@ -14,17 +14,13 @@ object alertMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(title: ReactNode, content: ReactNode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def default(title: ReactNode, content: ReactNode, actions: js.Array[Action[TextStyle]]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def default(
+  inline def default(title: ReactNode, content: ReactNode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(title: ReactNode, content: ReactNode, actions: js.Array[Action[TextStyle]]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(
     title: ReactNode,
     content: ReactNode,
     actions: js.Array[Action[TextStyle]],
     onBackHandler: CallbackOnBackHandler
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def default(title: ReactNode, content: ReactNode, actions: Unit, onBackHandler: CallbackOnBackHandler): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(title: ReactNode, content: ReactNode, actions: Unit, onBackHandler: CallbackOnBackHandler): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

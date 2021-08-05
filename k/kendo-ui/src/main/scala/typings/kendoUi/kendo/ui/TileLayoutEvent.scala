@@ -14,22 +14,17 @@ trait TileLayoutEvent extends StObject {
 }
 object TileLayoutEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TileLayout): TileLayoutEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TileLayout): TileLayoutEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileLayoutEvent]
   }
   
-  @scala.inline
-  implicit class TileLayoutEventMutableBuilder[Self <: TileLayoutEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TileLayoutEvent](x: Self) {
     
-    @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+    inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: TileLayout): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: TileLayout): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

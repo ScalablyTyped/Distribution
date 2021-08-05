@@ -14,25 +14,19 @@ trait FleetConfig extends StObject {
 }
 object FleetConfig {
   
-  @scala.inline
-  def apply(): FleetConfig = {
+  inline def apply(): FleetConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FleetConfig]
   }
   
-  @scala.inline
-  implicit class FleetConfigMutableBuilder[Self <: FleetConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FleetConfig](x: Self) {
     
-    @scala.inline
-    def setFleetSpec(value: String): Self = StObject.set(x, "fleetSpec", value.asInstanceOf[js.Any])
+    inline def setFleetSpec(value: String): Self = StObject.set(x, "fleetSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetSpecUndefined: Self = StObject.set(x, "fleetSpec", js.undefined)
+    inline def setFleetSpecUndefined: Self = StObject.set(x, "fleetSpec", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

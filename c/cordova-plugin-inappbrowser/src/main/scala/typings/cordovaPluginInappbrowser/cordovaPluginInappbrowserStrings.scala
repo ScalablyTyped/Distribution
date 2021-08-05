@@ -10,41 +10,35 @@ object cordovaPluginInappbrowserStrings {
   sealed trait customscheme
     extends StObject
        with channel
-  @scala.inline
-  def customscheme: customscheme = "customscheme".asInstanceOf[customscheme]
+  inline def customscheme: customscheme = "customscheme".asInstanceOf[customscheme]
   
   @js.native
   sealed trait exit
     extends StObject
        with channel
-  @scala.inline
-  def exit: exit = "exit".asInstanceOf[exit]
+  inline def exit: exit = "exit".asInstanceOf[exit]
   
   @js.native
   sealed trait loaderror
     extends StObject
        with channel
-  @scala.inline
-  def loaderror: loaderror = "loaderror".asInstanceOf[loaderror]
+  inline def loaderror: loaderror = "loaderror".asInstanceOf[loaderror]
   
   @js.native
   sealed trait loadstart
     extends StObject
        with channel
-  @scala.inline
-  def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
+  inline def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   
   @js.native
   sealed trait loadstop
     extends StObject
        with channel
-  @scala.inline
-  def loadstop: loadstop = "loadstop".asInstanceOf[loadstop]
+  inline def loadstop: loadstop = "loadstop".asInstanceOf[loadstop]
   
   @js.native
   sealed trait message
     extends StObject
        with channel
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
+  inline def message: message = "message".asInstanceOf[message]
 }

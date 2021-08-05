@@ -23,40 +23,29 @@ trait CustomerArtifactPaths extends StObject {
 }
 object CustomerArtifactPaths {
   
-  @scala.inline
-  def apply(): CustomerArtifactPaths = {
+  inline def apply(): CustomerArtifactPaths = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomerArtifactPaths]
   }
   
-  @scala.inline
-  implicit class CustomerArtifactPathsMutableBuilder[Self <: CustomerArtifactPaths] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerArtifactPaths](x: Self) {
     
-    @scala.inline
-    def setAndroidPaths(value: AndroidPaths): Self = StObject.set(x, "androidPaths", value.asInstanceOf[js.Any])
+    inline def setAndroidPaths(value: AndroidPaths): Self = StObject.set(x, "androidPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidPathsUndefined: Self = StObject.set(x, "androidPaths", js.undefined)
+    inline def setAndroidPathsUndefined: Self = StObject.set(x, "androidPaths", js.undefined)
     
-    @scala.inline
-    def setAndroidPathsVarargs(value: String*): Self = StObject.set(x, "androidPaths", js.Array(value :_*))
+    inline def setAndroidPathsVarargs(value: String*): Self = StObject.set(x, "androidPaths", js.Array(value :_*))
     
-    @scala.inline
-    def setDeviceHostPaths(value: DeviceHostPaths): Self = StObject.set(x, "deviceHostPaths", value.asInstanceOf[js.Any])
+    inline def setDeviceHostPaths(value: DeviceHostPaths): Self = StObject.set(x, "deviceHostPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceHostPathsUndefined: Self = StObject.set(x, "deviceHostPaths", js.undefined)
+    inline def setDeviceHostPathsUndefined: Self = StObject.set(x, "deviceHostPaths", js.undefined)
     
-    @scala.inline
-    def setDeviceHostPathsVarargs(value: String*): Self = StObject.set(x, "deviceHostPaths", js.Array(value :_*))
+    inline def setDeviceHostPathsVarargs(value: String*): Self = StObject.set(x, "deviceHostPaths", js.Array(value :_*))
     
-    @scala.inline
-    def setIosPaths(value: IosPaths): Self = StObject.set(x, "iosPaths", value.asInstanceOf[js.Any])
+    inline def setIosPaths(value: IosPaths): Self = StObject.set(x, "iosPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosPathsUndefined: Self = StObject.set(x, "iosPaths", js.undefined)
+    inline def setIosPathsUndefined: Self = StObject.set(x, "iosPaths", js.undefined)
     
-    @scala.inline
-    def setIosPathsVarargs(value: String*): Self = StObject.set(x, "iosPaths", js.Array(value :_*))
+    inline def setIosPathsVarargs(value: String*): Self = StObject.set(x, "iosPaths", js.Array(value :_*))
   }
 }

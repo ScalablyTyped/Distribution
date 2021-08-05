@@ -14,25 +14,19 @@ trait AutoResizeDimensionsRequest extends StObject {
 }
 object AutoResizeDimensionsRequest {
   
-  @scala.inline
-  def apply(): AutoResizeDimensionsRequest = {
+  inline def apply(): AutoResizeDimensionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoResizeDimensionsRequest]
   }
   
-  @scala.inline
-  implicit class AutoResizeDimensionsRequestMutableBuilder[Self <: AutoResizeDimensionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AutoResizeDimensionsRequest](x: Self) {
     
-    @scala.inline
-    def setDataSourceSheetDimensions(value: DataSourceSheetDimensionRange): Self = StObject.set(x, "dataSourceSheetDimensions", value.asInstanceOf[js.Any])
+    inline def setDataSourceSheetDimensions(value: DataSourceSheetDimensionRange): Self = StObject.set(x, "dataSourceSheetDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceSheetDimensionsUndefined: Self = StObject.set(x, "dataSourceSheetDimensions", js.undefined)
+    inline def setDataSourceSheetDimensionsUndefined: Self = StObject.set(x, "dataSourceSheetDimensions", js.undefined)
     
-    @scala.inline
-    def setDimensions(value: DimensionRange): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: DimensionRange): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
   }
 }

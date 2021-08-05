@@ -17,26 +17,20 @@ trait Origin extends StObject {
 }
 object Origin {
   
-  @scala.inline
-  def apply(id: String, origin: String, value: Boolean): Origin = {
+  inline def apply(id: String, origin: String, value: Boolean): Origin = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SINGLE_TOGGLE")
     __obj.asInstanceOf[Origin]
   }
   
-  @scala.inline
-  implicit class OriginMutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
+  extension [Self <: Origin](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: SINGLE_TOGGLE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SINGLE_TOGGLE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

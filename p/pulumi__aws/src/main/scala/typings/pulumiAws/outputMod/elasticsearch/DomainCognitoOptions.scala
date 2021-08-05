@@ -28,28 +28,21 @@ trait DomainCognitoOptions extends StObject {
 }
 object DomainCognitoOptions {
   
-  @scala.inline
-  def apply(identityPoolId: String, roleArn: String, userPoolId: String): DomainCognitoOptions = {
+  inline def apply(identityPoolId: String, roleArn: String, userPoolId: String): DomainCognitoOptions = {
     val __obj = js.Dynamic.literal(identityPoolId = identityPoolId.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainCognitoOptions]
   }
   
-  @scala.inline
-  implicit class DomainCognitoOptionsMutableBuilder[Self <: DomainCognitoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DomainCognitoOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setIdentityPoolId(value: String): Self = StObject.set(x, "identityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: String): Self = StObject.set(x, "identityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolId(value: String): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: String): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
   }
 }

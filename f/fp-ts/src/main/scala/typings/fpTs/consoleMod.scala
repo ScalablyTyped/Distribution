@@ -11,15 +11,11 @@ object consoleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def error(s: js.Any): IO_[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(s.asInstanceOf[js.Any]).asInstanceOf[IO_[Unit]]
+  inline def error(s: js.Any): IO_[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(s.asInstanceOf[js.Any]).asInstanceOf[IO_[Unit]]
   
-  @scala.inline
-  def info(s: js.Any): IO_[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(s.asInstanceOf[js.Any]).asInstanceOf[IO_[Unit]]
+  inline def info(s: js.Any): IO_[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(s.asInstanceOf[js.Any]).asInstanceOf[IO_[Unit]]
   
-  @scala.inline
-  def log(s: js.Any): IO_[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(s.asInstanceOf[js.Any]).asInstanceOf[IO_[Unit]]
+  inline def log(s: js.Any): IO_[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(s.asInstanceOf[js.Any]).asInstanceOf[IO_[Unit]]
   
-  @scala.inline
-  def warn(s: js.Any): IO_[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(s.asInstanceOf[js.Any]).asInstanceOf[IO_[Unit]]
+  inline def warn(s: js.Any): IO_[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(s.asInstanceOf[js.Any]).asInstanceOf[IO_[Unit]]
 }

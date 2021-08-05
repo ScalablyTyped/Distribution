@@ -45,6 +45,5 @@ object mod {
   /*
     * Drawing Bezier curves and other complex shapes.
     */
-  @scala.inline
-  def curve(path: js.Array[js.Any], options: js.UndefOr[PathOptions]): Curve_ = (^.asInstanceOf[js.Dynamic].applyDynamic("curve")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Curve_]
+  inline def curve(path: js.Array[js.Any], options: js.UndefOr[PathOptions]): Curve_ = (^.asInstanceOf[js.Dynamic].applyDynamic("curve")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Curve_]
 }

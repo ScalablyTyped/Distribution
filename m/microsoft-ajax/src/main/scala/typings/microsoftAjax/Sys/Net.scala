@@ -159,8 +159,7 @@ object Net {
   }
   object IWebRequestManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add_completedRequest: js.Function2[/* sender */ WebRequestExecutor, /* eventArgs */ EventArgs, Unit] => Unit,
       add_invokingRequest: js.Function2[
           /* sender */ WebRequestExecutor, 
@@ -183,14 +182,11 @@ object Net {
       __obj.asInstanceOf[IWebRequestManager]
     }
     
-    @scala.inline
-    implicit class IWebRequestManagerMutableBuilder[Self <: IWebRequestManager] (val x: Self) extends AnyVal {
+    extension [Self <: IWebRequestManager](x: Self) {
       
-      @scala.inline
-      def setAdd_completedRequest(value: js.Function2[/* sender */ WebRequestExecutor, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "add_completedRequest", js.Any.fromFunction1(value))
+      inline def setAdd_completedRequest(value: js.Function2[/* sender */ WebRequestExecutor, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "add_completedRequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAdd_invokingRequest(
+      inline def setAdd_invokingRequest(
         value: js.Function2[
               /* sender */ WebRequestExecutor, 
               /* networkRequestEventArgs */ NetworkRequestEventArgs, 
@@ -198,20 +194,15 @@ object Net {
             ] => Unit
       ): Self = StObject.set(x, "add_invokingRequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecuteRequest(value: WebRequest => Unit): Self = StObject.set(x, "executeRequest", js.Any.fromFunction1(value))
+      inline def setExecuteRequest(value: WebRequest => Unit): Self = StObject.set(x, "executeRequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet_defaultExecutorType(value: () => WebRequestExecutor): Self = StObject.set(x, "get_defaultExecutorType", js.Any.fromFunction0(value))
+      inline def setGet_defaultExecutorType(value: () => WebRequestExecutor): Self = StObject.set(x, "get_defaultExecutorType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_defaultTimeout(value: () => Double): Self = StObject.set(x, "get_defaultTimeout", js.Any.fromFunction0(value))
+      inline def setGet_defaultTimeout(value: () => Double): Self = StObject.set(x, "get_defaultTimeout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove_completedRequest(value: js.Function2[/* sender */ WebRequestExecutor, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "remove_completedRequest", js.Any.fromFunction1(value))
+      inline def setRemove_completedRequest(value: js.Function2[/* sender */ WebRequestExecutor, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "remove_completedRequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove_invokingRequest(
+      inline def setRemove_invokingRequest(
         value: js.Function2[
               /* sender */ WebRequestExecutor, 
               /* networkRequestEventArgs */ NetworkRequestEventArgs, 
@@ -219,11 +210,9 @@ object Net {
             ] => Unit
       ): Self = StObject.set(x, "remove_invokingRequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_defaultExecutorType(value: WebRequestExecutor => Unit): Self = StObject.set(x, "set_defaultExecutorType", js.Any.fromFunction1(value))
+      inline def setSet_defaultExecutorType(value: WebRequestExecutor => Unit): Self = StObject.set(x, "set_defaultExecutorType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_defaultTimeout(value: Double => Unit): Self = StObject.set(x, "set_defaultTimeout", js.Any.fromFunction1(value))
+      inline def setSet_defaultTimeout(value: Double => Unit): Self = StObject.set(x, "set_defaultTimeout", js.Any.fromFunction1(value))
     }
   }
   
@@ -252,17 +241,14 @@ object Net {
   }
   object NetworkRequestEventArgs {
     
-    @scala.inline
-    def apply(get_webRequest: () => WebRequest): NetworkRequestEventArgs = {
+    inline def apply(get_webRequest: () => WebRequest): NetworkRequestEventArgs = {
       val __obj = js.Dynamic.literal(get_webRequest = js.Any.fromFunction0(get_webRequest))
       __obj.asInstanceOf[NetworkRequestEventArgs]
     }
     
-    @scala.inline
-    implicit class NetworkRequestEventArgsMutableBuilder[Self <: NetworkRequestEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkRequestEventArgs](x: Self) {
       
-      @scala.inline
-      def setGet_webRequest(value: () => WebRequest): Self = StObject.set(x, "get_webRequest", js.Any.fromFunction0(value))
+      inline def setGet_webRequest(value: () => WebRequest): Self = StObject.set(x, "get_webRequest", js.Any.fromFunction0(value))
     }
   }
   
@@ -332,8 +318,7 @@ object Net {
   }
   object WebRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add_completed: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit] => Unit,
       completed: EventArgs => Unit,
       getResolvedUrl: () => String,
@@ -357,62 +342,43 @@ object Net {
       __obj.asInstanceOf[WebRequest]
     }
     
-    @scala.inline
-    implicit class WebRequestMutableBuilder[Self <: WebRequest] (val x: Self) extends AnyVal {
+    extension [Self <: WebRequest](x: Self) {
       
-      @scala.inline
-      def setAdd_completed(value: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "add_completed", js.Any.fromFunction1(value))
+      inline def setAdd_completed(value: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "add_completed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompleted(value: EventArgs => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction1(value))
+      inline def setCompleted(value: EventArgs => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetResolvedUrl(value: () => String): Self = StObject.set(x, "getResolvedUrl", js.Any.fromFunction0(value))
+      inline def setGetResolvedUrl(value: () => String): Self = StObject.set(x, "getResolvedUrl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_body(value: () => String): Self = StObject.set(x, "get_body", js.Any.fromFunction0(value))
+      inline def setGet_body(value: () => String): Self = StObject.set(x, "get_body", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_executor(value: () => WebRequestExecutor): Self = StObject.set(x, "get_executor", js.Any.fromFunction0(value))
+      inline def setGet_executor(value: () => WebRequestExecutor): Self = StObject.set(x, "get_executor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_headers(value: () => StringDictionary[String]): Self = StObject.set(x, "get_headers", js.Any.fromFunction0(value))
+      inline def setGet_headers(value: () => StringDictionary[String]): Self = StObject.set(x, "get_headers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_httpVerb(value: () => String): Self = StObject.set(x, "get_httpVerb", js.Any.fromFunction0(value))
+      inline def setGet_httpVerb(value: () => String): Self = StObject.set(x, "get_httpVerb", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_timeout(value: () => Double): Self = StObject.set(x, "get_timeout", js.Any.fromFunction0(value))
+      inline def setGet_timeout(value: () => Double): Self = StObject.set(x, "get_timeout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
+      inline def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_userContext(value: () => js.Any): Self = StObject.set(x, "get_userContext", js.Any.fromFunction0(value))
+      inline def setGet_userContext(value: () => js.Any): Self = StObject.set(x, "get_userContext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInvoke(value: () => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction0(value))
+      inline def setInvoke(value: () => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove_completed(value: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "remove_completed", js.Any.fromFunction1(value))
+      inline def setRemove_completed(value: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "remove_completed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_body(value: String => Unit): Self = StObject.set(x, "set_body", js.Any.fromFunction1(value))
+      inline def setSet_body(value: String => Unit): Self = StObject.set(x, "set_body", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_executor(value: WebRequestExecutor => Unit): Self = StObject.set(x, "set_executor", js.Any.fromFunction1(value))
+      inline def setSet_executor(value: WebRequestExecutor => Unit): Self = StObject.set(x, "set_executor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_httpVerb(value: String => Unit): Self = StObject.set(x, "set_httpVerb", js.Any.fromFunction1(value))
+      inline def setSet_httpVerb(value: String => Unit): Self = StObject.set(x, "set_httpVerb", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_timeout(value: Double => Unit): Self = StObject.set(x, "set_timeout", js.Any.fromFunction1(value))
+      inline def setSet_timeout(value: Double => Unit): Self = StObject.set(x, "set_timeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
+      inline def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_userContext(value: js.Any => Unit): Self = StObject.set(x, "set_userContext", js.Any.fromFunction1(value))
+      inline def setSet_userContext(value: js.Any => Unit): Self = StObject.set(x, "set_userContext", js.Any.fromFunction1(value))
     }
   }
   
@@ -526,8 +492,7 @@ object Net {
   }
   object WebRequestExecutor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: () => Unit,
       executeRequest: () => Unit,
       getAllResponseHeaders: () => String,
@@ -548,50 +513,35 @@ object Net {
       __obj.asInstanceOf[WebRequestExecutor]
     }
     
-    @scala.inline
-    implicit class WebRequestExecutorMutableBuilder[Self <: WebRequestExecutor] (val x: Self) extends AnyVal {
+    extension [Self <: WebRequestExecutor](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExecuteRequest(value: () => Unit): Self = StObject.set(x, "executeRequest", js.Any.fromFunction0(value))
+      inline def setExecuteRequest(value: () => Unit): Self = StObject.set(x, "executeRequest", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAllResponseHeaders(value: () => String): Self = StObject.set(x, "getAllResponseHeaders", js.Any.fromFunction0(value))
+      inline def setGetAllResponseHeaders(value: () => String): Self = StObject.set(x, "getAllResponseHeaders", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetResponseHeader(value: String => String): Self = StObject.set(x, "getResponseHeader", js.Any.fromFunction1(value))
+      inline def setGetResponseHeader(value: String => String): Self = StObject.set(x, "getResponseHeader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet_aborted(value: () => Boolean): Self = StObject.set(x, "get_aborted", js.Any.fromFunction0(value))
+      inline def setGet_aborted(value: () => Boolean): Self = StObject.set(x, "get_aborted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_responseAvailable(value: () => Boolean): Self = StObject.set(x, "get_responseAvailable", js.Any.fromFunction0(value))
+      inline def setGet_responseAvailable(value: () => Boolean): Self = StObject.set(x, "get_responseAvailable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_responseData(value: () => String): Self = StObject.set(x, "get_responseData", js.Any.fromFunction0(value))
+      inline def setGet_responseData(value: () => String): Self = StObject.set(x, "get_responseData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_started(value: () => Boolean): Self = StObject.set(x, "get_started", js.Any.fromFunction0(value))
+      inline def setGet_started(value: () => Boolean): Self = StObject.set(x, "get_started", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_statusCode(value: () => Double): Self = StObject.set(x, "get_statusCode", js.Any.fromFunction0(value))
+      inline def setGet_statusCode(value: () => Double): Self = StObject.set(x, "get_statusCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_statusText(value: () => String): Self = StObject.set(x, "get_statusText", js.Any.fromFunction0(value))
+      inline def setGet_statusText(value: () => String): Self = StObject.set(x, "get_statusText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_timedOut(value: () => Boolean): Self = StObject.set(x, "get_timedOut", js.Any.fromFunction0(value))
+      inline def setGet_timedOut(value: () => Boolean): Self = StObject.set(x, "get_timedOut", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_webRequest(value: () => WebRequest): Self = StObject.set(x, "get_webRequest", js.Any.fromFunction0(value))
+      inline def setGet_webRequest(value: () => WebRequest): Self = StObject.set(x, "get_webRequest", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_xml(value: () => XMLDocument): Self = StObject.set(x, "get_xml", js.Any.fromFunction0(value))
+      inline def setGet_xml(value: () => XMLDocument): Self = StObject.set(x, "get_xml", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setObject(value: () => js.Any): Self = StObject.set(x, "object", js.Any.fromFunction0(value))
+      inline def setObject(value: () => js.Any): Self = StObject.set(x, "object", js.Any.fromFunction0(value))
     }
   }
   
@@ -611,8 +561,7 @@ object Net {
   }
   object WebServiceError {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       get_errorObject: () => js.Any,
       get_exceptionType: () => js.Any,
       get_message: () => String,
@@ -624,26 +573,19 @@ object Net {
       __obj.asInstanceOf[WebServiceError]
     }
     
-    @scala.inline
-    implicit class WebServiceErrorMutableBuilder[Self <: WebServiceError] (val x: Self) extends AnyVal {
+    extension [Self <: WebServiceError](x: Self) {
       
-      @scala.inline
-      def setGet_errorObject(value: () => js.Any): Self = StObject.set(x, "get_errorObject", js.Any.fromFunction0(value))
+      inline def setGet_errorObject(value: () => js.Any): Self = StObject.set(x, "get_errorObject", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_exceptionType(value: () => js.Any): Self = StObject.set(x, "get_exceptionType", js.Any.fromFunction0(value))
+      inline def setGet_exceptionType(value: () => js.Any): Self = StObject.set(x, "get_exceptionType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_message(value: () => String): Self = StObject.set(x, "get_message", js.Any.fromFunction0(value))
+      inline def setGet_message(value: () => String): Self = StObject.set(x, "get_message", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_stackTrace(value: () => String): Self = StObject.set(x, "get_stackTrace", js.Any.fromFunction0(value))
+      inline def setGet_stackTrace(value: () => String): Self = StObject.set(x, "get_stackTrace", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_statusCode(value: () => Double): Self = StObject.set(x, "get_statusCode", js.Any.fromFunction0(value))
+      inline def setGet_statusCode(value: () => Double): Self = StObject.set(x, "get_statusCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_timedOut(value: () => Boolean): Self = StObject.set(x, "get_timedOut", js.Any.fromFunction0(value))
+      inline def setGet_timedOut(value: () => Boolean): Self = StObject.set(x, "get_timedOut", js.Any.fromFunction0(value))
     }
   }
   

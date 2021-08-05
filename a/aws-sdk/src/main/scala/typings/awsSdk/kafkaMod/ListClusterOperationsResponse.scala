@@ -22,28 +22,21 @@ trait ListClusterOperationsResponse extends StObject {
 }
 object ListClusterOperationsResponse {
   
-  @scala.inline
-  def apply(): ListClusterOperationsResponse = {
+  inline def apply(): ListClusterOperationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListClusterOperationsResponse]
   }
   
-  @scala.inline
-  implicit class ListClusterOperationsResponseMutableBuilder[Self <: ListClusterOperationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListClusterOperationsResponse](x: Self) {
     
-    @scala.inline
-    def setClusterOperationInfoList(value: listOfClusterOperationInfo): Self = StObject.set(x, "ClusterOperationInfoList", value.asInstanceOf[js.Any])
+    inline def setClusterOperationInfoList(value: listOfClusterOperationInfo): Self = StObject.set(x, "ClusterOperationInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterOperationInfoListUndefined: Self = StObject.set(x, "ClusterOperationInfoList", js.undefined)
+    inline def setClusterOperationInfoListUndefined: Self = StObject.set(x, "ClusterOperationInfoList", js.undefined)
     
-    @scala.inline
-    def setClusterOperationInfoListVarargs(value: ClusterOperationInfo*): Self = StObject.set(x, "ClusterOperationInfoList", js.Array(value :_*))
+    inline def setClusterOperationInfoListVarargs(value: ClusterOperationInfo*): Self = StObject.set(x, "ClusterOperationInfoList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

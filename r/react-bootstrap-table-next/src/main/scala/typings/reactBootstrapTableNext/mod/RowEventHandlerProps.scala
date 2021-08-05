@@ -22,43 +22,31 @@ trait RowEventHandlerProps[T] extends StObject {
 }
 object RowEventHandlerProps {
   
-  @scala.inline
-  def apply[T](): RowEventHandlerProps[T] = {
+  inline def apply[T](): RowEventHandlerProps[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowEventHandlerProps[T]]
   }
   
-  @scala.inline
-  implicit class RowEventHandlerPropsMutableBuilder[Self <: RowEventHandlerProps[?], T] (val x: Self & RowEventHandlerProps[T]) extends AnyVal {
+  extension [Self <: RowEventHandlerProps[?], T](x: Self & RowEventHandlerProps[T]) {
     
-    @scala.inline
-    def setOnClick(value: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
+    inline def setOnClick(value: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setOnContextMenu(value: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction3(value))
+    inline def setOnContextMenu(value: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+    inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
     
-    @scala.inline
-    def setOnDoubleClick(value: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction3(value))
+    inline def setOnDoubleClick(value: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
+    inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
     
-    @scala.inline
-    def setOnMouseEnter(value: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction3(value))
+    inline def setOnMouseEnter(value: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+    inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
-    @scala.inline
-    def setOnMouseLeave(value: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction3(value))
+    inline def setOnMouseLeave(value: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+    inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
   }
 }

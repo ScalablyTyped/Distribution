@@ -66,100 +66,69 @@ trait Utcdayhours extends StObject {
 }
 object Utcdayhours {
   
-  @scala.inline
-  def apply(): Utcdayhours = {
+  inline def apply(): Utcdayhours = {
     val __obj = js.Dynamic.literal(utcdayhours = 1, utcdayhoursminutes = 1, utcdayhoursminutesseconds = 1, utchoursminutes = 1, utchoursminutesseconds = 1, utcminutesseconds = 1, utcmonthdate = 1, utcmonthdatehours = 1, utcmonthdatehoursminutes = 1, utcmonthdatehoursminutesseconds = 1, utcquartermonth = 1, utcsecondsmilliseconds = 1, utcweekday = 1, utcweekdayhoursminutes = 1, utcweekdayhoursminutesseconds = 1, utcweeksdayhours = 1, utcyeardayofyear = 1, utcyearmonth = 1, utcyearmonthdate = 1, utcyearmonthdatehours = 1, utcyearmonthdatehoursminutes = 1, utcyearmonthdatehoursminutesseconds = 1, utcyearquarter = 1, utcyearquartermonth = 1, utcyearweek = 1, utcyearweekday = 1, utcyearweekdayhours = 1, utcyearweekdayhoursminutes = 1, utcyearweekdayhoursminutesseconds = 1)
     __obj.asInstanceOf[Utcdayhours]
   }
   
-  @scala.inline
-  implicit class UtcdayhoursMutableBuilder[Self <: Utcdayhours] (val x: Self) extends AnyVal {
+  extension [Self <: Utcdayhours](x: Self) {
     
-    @scala.inline
-    def setUtcdayhours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcdayhours", value.asInstanceOf[js.Any])
+    inline def setUtcdayhours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcdayhours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcdayhoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcdayhoursminutes", value.asInstanceOf[js.Any])
+    inline def setUtcdayhoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcdayhoursminutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcdayhoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcdayhoursminutesseconds", value.asInstanceOf[js.Any])
+    inline def setUtcdayhoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcdayhoursminutesseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtchoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utchoursminutes", value.asInstanceOf[js.Any])
+    inline def setUtchoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utchoursminutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtchoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utchoursminutesseconds", value.asInstanceOf[js.Any])
+    inline def setUtchoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utchoursminutesseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcminutesseconds", value.asInstanceOf[js.Any])
+    inline def setUtcminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcminutesseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcmonthdate(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcmonthdate", value.asInstanceOf[js.Any])
+    inline def setUtcmonthdate(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcmonthdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcmonthdatehours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcmonthdatehours", value.asInstanceOf[js.Any])
+    inline def setUtcmonthdatehours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcmonthdatehours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcmonthdatehoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcmonthdatehoursminutes", value.asInstanceOf[js.Any])
+    inline def setUtcmonthdatehoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcmonthdatehoursminutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcmonthdatehoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcmonthdatehoursminutesseconds", value.asInstanceOf[js.Any])
+    inline def setUtcmonthdatehoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcmonthdatehoursminutesseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcquartermonth(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcquartermonth", value.asInstanceOf[js.Any])
+    inline def setUtcquartermonth(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcquartermonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcsecondsmilliseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcsecondsmilliseconds", value.asInstanceOf[js.Any])
+    inline def setUtcsecondsmilliseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcsecondsmilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcweekday(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcweekday", value.asInstanceOf[js.Any])
+    inline def setUtcweekday(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcweekday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcweekdayhoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcweekdayhoursminutes", value.asInstanceOf[js.Any])
+    inline def setUtcweekdayhoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcweekdayhoursminutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcweekdayhoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcweekdayhoursminutesseconds", value.asInstanceOf[js.Any])
+    inline def setUtcweekdayhoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcweekdayhoursminutesseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcweeksdayhours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcweeksdayhours", value.asInstanceOf[js.Any])
+    inline def setUtcweeksdayhours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcweeksdayhours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcyeardayofyear(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyeardayofyear", value.asInstanceOf[js.Any])
+    inline def setUtcyeardayofyear(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyeardayofyear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcyearmonth(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearmonth", value.asInstanceOf[js.Any])
+    inline def setUtcyearmonth(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearmonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcyearmonthdate(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearmonthdate", value.asInstanceOf[js.Any])
+    inline def setUtcyearmonthdate(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearmonthdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcyearmonthdatehours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearmonthdatehours", value.asInstanceOf[js.Any])
+    inline def setUtcyearmonthdatehours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearmonthdatehours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcyearmonthdatehoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearmonthdatehoursminutes", value.asInstanceOf[js.Any])
+    inline def setUtcyearmonthdatehoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearmonthdatehoursminutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcyearmonthdatehoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearmonthdatehoursminutesseconds", value.asInstanceOf[js.Any])
+    inline def setUtcyearmonthdatehoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearmonthdatehoursminutesseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcyearquarter(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearquarter", value.asInstanceOf[js.Any])
+    inline def setUtcyearquarter(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearquarter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcyearquartermonth(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearquartermonth", value.asInstanceOf[js.Any])
+    inline def setUtcyearquartermonth(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearquartermonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcyearweek(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearweek", value.asInstanceOf[js.Any])
+    inline def setUtcyearweek(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearweek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcyearweekday(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearweekday", value.asInstanceOf[js.Any])
+    inline def setUtcyearweekday(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearweekday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcyearweekdayhours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearweekdayhours", value.asInstanceOf[js.Any])
+    inline def setUtcyearweekdayhours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearweekdayhours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcyearweekdayhoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearweekdayhoursminutes", value.asInstanceOf[js.Any])
+    inline def setUtcyearweekdayhoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearweekdayhoursminutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcyearweekdayhoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearweekdayhoursminutesseconds", value.asInstanceOf[js.Any])
+    inline def setUtcyearweekdayhoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "utcyearweekdayhoursminutesseconds", value.asInstanceOf[js.Any])
   }
 }

@@ -39,8 +39,7 @@ trait ErrorBar
 }
 object ErrorBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataSequences: SafeArray[XLabeledDataSequence],
     ErrorBarStyle: Double,
     LineCap: LineCap,
@@ -74,25 +73,18 @@ object ErrorBar {
     __obj.asInstanceOf[ErrorBar]
   }
   
-  @scala.inline
-  implicit class ErrorBarMutableBuilder[Self <: ErrorBar] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorBar](x: Self) {
     
-    @scala.inline
-    def setErrorBarStyle(value: Double): Self = StObject.set(x, "ErrorBarStyle", value.asInstanceOf[js.Any])
+    inline def setErrorBarStyle(value: Double): Self = StObject.set(x, "ErrorBarStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeError(value: Double): Self = StObject.set(x, "NegativeError", value.asInstanceOf[js.Any])
+    inline def setNegativeError(value: Double): Self = StObject.set(x, "NegativeError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositiveError(value: Double): Self = StObject.set(x, "PositiveError", value.asInstanceOf[js.Any])
+    inline def setPositiveError(value: Double): Self = StObject.set(x, "PositiveError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNegativeError(value: Boolean): Self = StObject.set(x, "ShowNegativeError", value.asInstanceOf[js.Any])
+    inline def setShowNegativeError(value: Boolean): Self = StObject.set(x, "ShowNegativeError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPositiveError(value: Boolean): Self = StObject.set(x, "ShowPositiveError", value.asInstanceOf[js.Any])
+    inline def setShowPositiveError(value: Boolean): Self = StObject.set(x, "ShowPositiveError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait MangoExecutionStats extends StObject {
 }
 object MangoExecutionStats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     execution_time_ms: Double,
     results_returned: Double,
     total_docs_examined: Double,
@@ -37,22 +36,16 @@ object MangoExecutionStats {
     __obj.asInstanceOf[MangoExecutionStats]
   }
   
-  @scala.inline
-  implicit class MangoExecutionStatsMutableBuilder[Self <: MangoExecutionStats] (val x: Self) extends AnyVal {
+  extension [Self <: MangoExecutionStats](x: Self) {
     
-    @scala.inline
-    def setExecution_time_ms(value: Double): Self = StObject.set(x, "execution_time_ms", value.asInstanceOf[js.Any])
+    inline def setExecution_time_ms(value: Double): Self = StObject.set(x, "execution_time_ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults_returned(value: Double): Self = StObject.set(x, "results_returned", value.asInstanceOf[js.Any])
+    inline def setResults_returned(value: Double): Self = StObject.set(x, "results_returned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_docs_examined(value: Double): Self = StObject.set(x, "total_docs_examined", value.asInstanceOf[js.Any])
+    inline def setTotal_docs_examined(value: Double): Self = StObject.set(x, "total_docs_examined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_keys_examined(value: Double): Self = StObject.set(x, "total_keys_examined", value.asInstanceOf[js.Any])
+    inline def setTotal_keys_examined(value: Double): Self = StObject.set(x, "total_keys_examined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_quorum_docs_examined(value: Double): Self = StObject.set(x, "total_quorum_docs_examined", value.asInstanceOf[js.Any])
+    inline def setTotal_quorum_docs_examined(value: Double): Self = StObject.set(x, "total_quorum_docs_examined", value.asInstanceOf[js.Any])
   }
 }

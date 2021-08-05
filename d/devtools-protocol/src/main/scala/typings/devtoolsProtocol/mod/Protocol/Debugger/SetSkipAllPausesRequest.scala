@@ -13,16 +13,13 @@ trait SetSkipAllPausesRequest extends StObject {
 }
 object SetSkipAllPausesRequest {
   
-  @scala.inline
-  def apply(skip: Boolean): SetSkipAllPausesRequest = {
+  inline def apply(skip: Boolean): SetSkipAllPausesRequest = {
     val __obj = js.Dynamic.literal(skip = skip.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetSkipAllPausesRequest]
   }
   
-  @scala.inline
-  implicit class SetSkipAllPausesRequestMutableBuilder[Self <: SetSkipAllPausesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetSkipAllPausesRequest](x: Self) {
     
-    @scala.inline
-    def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
   }
 }

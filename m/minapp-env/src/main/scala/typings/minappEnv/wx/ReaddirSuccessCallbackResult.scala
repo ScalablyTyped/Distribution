@@ -12,16 +12,13 @@ trait ReaddirSuccessCallbackResult extends StObject {
 }
 object ReaddirSuccessCallbackResult {
   
-  @scala.inline
-  def apply(files: Array[String]): ReaddirSuccessCallbackResult = {
+  inline def apply(files: Array[String]): ReaddirSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaddirSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class ReaddirSuccessCallbackResultMutableBuilder[Self <: ReaddirSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReaddirSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setFiles(value: Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
   }
 }

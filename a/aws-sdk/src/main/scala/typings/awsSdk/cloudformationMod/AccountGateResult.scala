@@ -18,25 +18,19 @@ trait AccountGateResult extends StObject {
 }
 object AccountGateResult {
   
-  @scala.inline
-  def apply(): AccountGateResult = {
+  inline def apply(): AccountGateResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountGateResult]
   }
   
-  @scala.inline
-  implicit class AccountGateResultMutableBuilder[Self <: AccountGateResult] (val x: Self) extends AnyVal {
+  extension [Self <: AccountGateResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: AccountGateStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AccountGateStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReason(value: AccountGateStatusReason): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: AccountGateStatusReason): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonUndefined: Self = StObject.set(x, "StatusReason", js.undefined)
+    inline def setStatusReasonUndefined: Self = StObject.set(x, "StatusReason", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

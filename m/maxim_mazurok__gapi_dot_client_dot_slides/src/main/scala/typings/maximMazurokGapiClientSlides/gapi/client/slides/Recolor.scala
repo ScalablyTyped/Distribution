@@ -20,28 +20,21 @@ trait Recolor extends StObject {
 }
 object Recolor {
   
-  @scala.inline
-  def apply(): Recolor = {
+  inline def apply(): Recolor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Recolor]
   }
   
-  @scala.inline
-  implicit class RecolorMutableBuilder[Self <: Recolor] (val x: Self) extends AnyVal {
+  extension [Self <: Recolor](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRecolorStops(value: js.Array[ColorStop]): Self = StObject.set(x, "recolorStops", value.asInstanceOf[js.Any])
+    inline def setRecolorStops(value: js.Array[ColorStop]): Self = StObject.set(x, "recolorStops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecolorStopsUndefined: Self = StObject.set(x, "recolorStops", js.undefined)
+    inline def setRecolorStopsUndefined: Self = StObject.set(x, "recolorStops", js.undefined)
     
-    @scala.inline
-    def setRecolorStopsVarargs(value: ColorStop*): Self = StObject.set(x, "recolorStops", js.Array(value :_*))
+    inline def setRecolorStopsVarargs(value: ColorStop*): Self = StObject.set(x, "recolorStops", js.Array(value :_*))
   }
 }

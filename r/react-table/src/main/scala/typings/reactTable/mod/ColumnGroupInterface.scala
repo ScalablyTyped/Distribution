@@ -10,19 +10,15 @@ trait ColumnGroupInterface[D /* <: js.Object */] extends StObject {
 }
 object ColumnGroupInterface {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](columns: js.Array[Column[D]]): ColumnGroupInterface[D] = {
+  inline def apply[D /* <: js.Object */](columns: js.Array[Column[D]]): ColumnGroupInterface[D] = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnGroupInterface[D]]
   }
   
-  @scala.inline
-  implicit class ColumnGroupInterfaceMutableBuilder[Self <: ColumnGroupInterface[?], D /* <: js.Object */] (val x: Self & ColumnGroupInterface[D]) extends AnyVal {
+  extension [Self <: ColumnGroupInterface[?], D /* <: js.Object */](x: Self & ColumnGroupInterface[D]) {
     
-    @scala.inline
-    def setColumns(value: js.Array[Column[D]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[Column[D]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: Column[D]*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Column[D]*): Self = StObject.set(x, "columns", js.Array(value :_*))
   }
 }

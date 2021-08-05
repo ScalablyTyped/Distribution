@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Aggregator extends StObject
 object Aggregator {
   
-  @scala.inline
-  def average: typings.promClient.promClientStrings.average = "average".asInstanceOf[typings.promClient.promClientStrings.average]
+  inline def average: typings.promClient.promClientStrings.average = "average".asInstanceOf[typings.promClient.promClientStrings.average]
   
-  @scala.inline
-  def first: typings.promClient.promClientStrings.first = "first".asInstanceOf[typings.promClient.promClientStrings.first]
+  inline def first: typings.promClient.promClientStrings.first = "first".asInstanceOf[typings.promClient.promClientStrings.first]
   
-  @scala.inline
-  def max: typings.promClient.promClientStrings.max = "max".asInstanceOf[typings.promClient.promClientStrings.max]
+  inline def max: typings.promClient.promClientStrings.max = "max".asInstanceOf[typings.promClient.promClientStrings.max]
   
-  @scala.inline
-  def min: typings.promClient.promClientStrings.min = "min".asInstanceOf[typings.promClient.promClientStrings.min]
+  inline def min: typings.promClient.promClientStrings.min = "min".asInstanceOf[typings.promClient.promClientStrings.min]
   
-  @scala.inline
-  def omit: typings.promClient.promClientStrings.omit = "omit".asInstanceOf[typings.promClient.promClientStrings.omit]
+  inline def omit: typings.promClient.promClientStrings.omit = "omit".asInstanceOf[typings.promClient.promClientStrings.omit]
   
-  @scala.inline
-  def sum: typings.promClient.promClientStrings.sum = "sum".asInstanceOf[typings.promClient.promClientStrings.sum]
+  inline def sum: typings.promClient.promClientStrings.sum = "sum".asInstanceOf[typings.promClient.promClientStrings.sum]
 }

@@ -18,28 +18,21 @@ trait Token[T] extends StObject {
 }
 object Token {
   
-  @scala.inline
-  def apply[T](factory: () => T, token: js.Any): Token[T] = {
+  inline def apply[T](factory: () => T, token: js.Any): Token[T] = {
     val __obj = js.Dynamic.literal(factory = js.Any.fromFunction0(factory), token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token[T]]
   }
   
-  @scala.inline
-  implicit class TokenMutableBuilder[Self <: Token[?], T] (val x: Self & Token[T]) extends AnyVal {
+  extension [Self <: Token[?], T](x: Self & Token[T]) {
     
-    @scala.inline
-    def setFactory(value: () => T): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
+    inline def setFactory(value: () => T): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProvidedIn(value: Type[js.Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    inline def setProvidedIn(value: Type[js.Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
+    inline def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
     
-    @scala.inline
-    def setProvidedInUndefined: Self = StObject.set(x, "providedIn", js.undefined)
+    inline def setProvidedInUndefined: Self = StObject.set(x, "providedIn", js.undefined)
     
-    @scala.inline
-    def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

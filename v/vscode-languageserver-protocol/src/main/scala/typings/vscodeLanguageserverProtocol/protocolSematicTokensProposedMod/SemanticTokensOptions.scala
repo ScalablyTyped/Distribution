@@ -28,28 +28,21 @@ trait SemanticTokensOptions
 }
 object SemanticTokensOptions {
   
-  @scala.inline
-  def apply(legend: SemanticTokensLegend): SemanticTokensOptions = {
+  inline def apply(legend: SemanticTokensLegend): SemanticTokensOptions = {
     val __obj = js.Dynamic.literal(legend = legend.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticTokensOptions]
   }
   
-  @scala.inline
-  implicit class SemanticTokensOptionsMutableBuilder[Self <: SemanticTokensOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticTokensOptions](x: Self) {
     
-    @scala.inline
-    def setDocumentProvider(value: Boolean | Edits): Self = StObject.set(x, "documentProvider", value.asInstanceOf[js.Any])
+    inline def setDocumentProvider(value: Boolean | Edits): Self = StObject.set(x, "documentProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentProviderUndefined: Self = StObject.set(x, "documentProvider", js.undefined)
+    inline def setDocumentProviderUndefined: Self = StObject.set(x, "documentProvider", js.undefined)
     
-    @scala.inline
-    def setLegend(value: SemanticTokensLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: SemanticTokensLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeProvider(value: Boolean): Self = StObject.set(x, "rangeProvider", value.asInstanceOf[js.Any])
+    inline def setRangeProvider(value: Boolean): Self = StObject.set(x, "rangeProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeProviderUndefined: Self = StObject.set(x, "rangeProvider", js.undefined)
+    inline def setRangeProviderUndefined: Self = StObject.set(x, "rangeProvider", js.undefined)
   }
 }

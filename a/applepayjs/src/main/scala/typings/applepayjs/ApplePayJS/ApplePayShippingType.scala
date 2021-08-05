@@ -16,15 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplePayShippingType extends StObject
 object ApplePayShippingType {
   
-  @scala.inline
-  def delivery: typings.applepayjs.applepayjsStrings.delivery = "delivery".asInstanceOf[typings.applepayjs.applepayjsStrings.delivery]
+  inline def delivery: typings.applepayjs.applepayjsStrings.delivery = "delivery".asInstanceOf[typings.applepayjs.applepayjsStrings.delivery]
   
-  @scala.inline
-  def servicePickup: typings.applepayjs.applepayjsStrings.servicePickup = "servicePickup".asInstanceOf[typings.applepayjs.applepayjsStrings.servicePickup]
+  inline def servicePickup: typings.applepayjs.applepayjsStrings.servicePickup = "servicePickup".asInstanceOf[typings.applepayjs.applepayjsStrings.servicePickup]
   
-  @scala.inline
-  def shipping: typings.applepayjs.applepayjsStrings.shipping = "shipping".asInstanceOf[typings.applepayjs.applepayjsStrings.shipping]
+  inline def shipping: typings.applepayjs.applepayjsStrings.shipping = "shipping".asInstanceOf[typings.applepayjs.applepayjsStrings.shipping]
   
-  @scala.inline
-  def storePickup: typings.applepayjs.applepayjsStrings.storePickup = "storePickup".asInstanceOf[typings.applepayjs.applepayjsStrings.storePickup]
+  inline def storePickup: typings.applepayjs.applepayjsStrings.storePickup = "storePickup".asInstanceOf[typings.applepayjs.applepayjsStrings.storePickup]
 }

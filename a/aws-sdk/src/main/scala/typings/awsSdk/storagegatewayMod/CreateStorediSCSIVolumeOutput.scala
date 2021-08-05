@@ -23,31 +23,23 @@ trait CreateStorediSCSIVolumeOutput extends StObject {
 }
 object CreateStorediSCSIVolumeOutput {
   
-  @scala.inline
-  def apply(): CreateStorediSCSIVolumeOutput = {
+  inline def apply(): CreateStorediSCSIVolumeOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateStorediSCSIVolumeOutput]
   }
   
-  @scala.inline
-  implicit class CreateStorediSCSIVolumeOutputMutableBuilder[Self <: CreateStorediSCSIVolumeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStorediSCSIVolumeOutput](x: Self) {
     
-    @scala.inline
-    def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
+    inline def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetARNUndefined: Self = StObject.set(x, "TargetARN", js.undefined)
+    inline def setTargetARNUndefined: Self = StObject.set(x, "TargetARN", js.undefined)
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
+    inline def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
     
-    @scala.inline
-    def setVolumeSizeInBytes(value: long): Self = StObject.set(x, "VolumeSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setVolumeSizeInBytes(value: long): Self = StObject.set(x, "VolumeSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSizeInBytesUndefined: Self = StObject.set(x, "VolumeSizeInBytes", js.undefined)
+    inline def setVolumeSizeInBytesUndefined: Self = StObject.set(x, "VolumeSizeInBytes", js.undefined)
   }
 }

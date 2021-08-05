@@ -43,58 +43,41 @@ trait PolicyComplianceStatus extends StObject {
 }
 object PolicyComplianceStatus {
   
-  @scala.inline
-  def apply(): PolicyComplianceStatus = {
+  inline def apply(): PolicyComplianceStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyComplianceStatus]
   }
   
-  @scala.inline
-  implicit class PolicyComplianceStatusMutableBuilder[Self <: PolicyComplianceStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyComplianceStatus](x: Self) {
     
-    @scala.inline
-    def setEvaluationResults(value: EvaluationResults): Self = StObject.set(x, "EvaluationResults", value.asInstanceOf[js.Any])
+    inline def setEvaluationResults(value: EvaluationResults): Self = StObject.set(x, "EvaluationResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationResultsUndefined: Self = StObject.set(x, "EvaluationResults", js.undefined)
+    inline def setEvaluationResultsUndefined: Self = StObject.set(x, "EvaluationResults", js.undefined)
     
-    @scala.inline
-    def setEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "EvaluationResults", js.Array(value :_*))
+    inline def setEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "EvaluationResults", js.Array(value :_*))
     
-    @scala.inline
-    def setIssueInfoMap(value: IssueInfoMap): Self = StObject.set(x, "IssueInfoMap", value.asInstanceOf[js.Any])
+    inline def setIssueInfoMap(value: IssueInfoMap): Self = StObject.set(x, "IssueInfoMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssueInfoMapUndefined: Self = StObject.set(x, "IssueInfoMap", js.undefined)
+    inline def setIssueInfoMapUndefined: Self = StObject.set(x, "IssueInfoMap", js.undefined)
     
-    @scala.inline
-    def setLastUpdated(value: TimeStamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: TimeStamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
+    inline def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     
-    @scala.inline
-    def setMemberAccount(value: AWSAccountId): Self = StObject.set(x, "MemberAccount", value.asInstanceOf[js.Any])
+    inline def setMemberAccount(value: AWSAccountId): Self = StObject.set(x, "MemberAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberAccountUndefined: Self = StObject.set(x, "MemberAccount", js.undefined)
+    inline def setMemberAccountUndefined: Self = StObject.set(x, "MemberAccount", js.undefined)
     
-    @scala.inline
-    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
+    inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
+    inline def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
     
-    @scala.inline
-    def setPolicyName(value: ResourceName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: ResourceName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
+    inline def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
     
-    @scala.inline
-    def setPolicyOwner(value: AWSAccountId): Self = StObject.set(x, "PolicyOwner", value.asInstanceOf[js.Any])
+    inline def setPolicyOwner(value: AWSAccountId): Self = StObject.set(x, "PolicyOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyOwnerUndefined: Self = StObject.set(x, "PolicyOwner", js.undefined)
+    inline def setPolicyOwnerUndefined: Self = StObject.set(x, "PolicyOwner", js.undefined)
   }
 }

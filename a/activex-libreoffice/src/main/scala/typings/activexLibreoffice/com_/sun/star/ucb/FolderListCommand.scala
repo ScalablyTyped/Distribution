@@ -24,14 +24,11 @@ object FolderListCommand {
     *
     * HTTP request method as defined in [RFC 2616: Hypertext Transfer Protocol  -  HTTP/1.1]{@link url="http://tools.ietf.org/html/rfc2616#section-9.3"}
     */
-  @scala.inline
-  def GET: `0` = 0.asInstanceOf[`0`]
+  inline def GET: `0` = 0.asInstanceOf[`0`]
   
   /** Get a list of subscribed folders. */
-  @scala.inline
-  def GET_SUBSCRIBED: `1` = 1.asInstanceOf[`1`]
+  inline def GET_SUBSCRIBED: `1` = 1.asInstanceOf[`1`]
   
   /** Set a list of folders. */
-  @scala.inline
-  def SET: `2` = 2.asInstanceOf[`2`]
+  inline def SET: `2` = 2.asInstanceOf[`2`]
 }

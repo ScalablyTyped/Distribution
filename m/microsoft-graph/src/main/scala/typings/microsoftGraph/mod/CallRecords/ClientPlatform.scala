@@ -21,36 +21,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClientPlatform extends StObject
 object ClientPlatform {
   
-  @scala.inline
-  def android: typings.microsoftGraph.microsoftGraphStrings.android = "android".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.android]
+  inline def android: typings.microsoftGraph.microsoftGraphStrings.android = "android".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.android]
   
-  @scala.inline
-  def holoLens: typings.microsoftGraph.microsoftGraphStrings.holoLens = "holoLens".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.holoLens]
+  inline def holoLens: typings.microsoftGraph.microsoftGraphStrings.holoLens = "holoLens".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.holoLens]
   
-  @scala.inline
-  def iOS: typings.microsoftGraph.microsoftGraphStrings.iOS = "iOS".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.iOS]
+  inline def iOS: typings.microsoftGraph.microsoftGraphStrings.iOS = "iOS".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.iOS]
   
-  @scala.inline
-  def ipPhone: typings.microsoftGraph.microsoftGraphStrings.ipPhone = "ipPhone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ipPhone]
+  inline def ipPhone: typings.microsoftGraph.microsoftGraphStrings.ipPhone = "ipPhone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ipPhone]
   
-  @scala.inline
-  def macOS: typings.microsoftGraph.microsoftGraphStrings.macOS = "macOS".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.macOS]
+  inline def macOS: typings.microsoftGraph.microsoftGraphStrings.macOS = "macOS".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.macOS]
   
-  @scala.inline
-  def roomSystem: typings.microsoftGraph.microsoftGraphStrings.roomSystem = "roomSystem".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.roomSystem]
+  inline def roomSystem: typings.microsoftGraph.microsoftGraphStrings.roomSystem = "roomSystem".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.roomSystem]
   
-  @scala.inline
-  def surfaceHub: typings.microsoftGraph.microsoftGraphStrings.surfaceHub = "surfaceHub".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.surfaceHub]
+  inline def surfaceHub: typings.microsoftGraph.microsoftGraphStrings.surfaceHub = "surfaceHub".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.surfaceHub]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
   
-  @scala.inline
-  def web: typings.microsoftGraph.microsoftGraphStrings.web = "web".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.web]
+  inline def web: typings.microsoftGraph.microsoftGraphStrings.web = "web".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.web]
   
-  @scala.inline
-  def windows: typings.microsoftGraph.microsoftGraphStrings.windows = "windows".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windows]
+  inline def windows: typings.microsoftGraph.microsoftGraphStrings.windows = "windows".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windows]
 }

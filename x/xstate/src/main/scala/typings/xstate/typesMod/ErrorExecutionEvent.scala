@@ -18,23 +18,18 @@ trait ErrorExecutionEvent
 }
 object ErrorExecutionEvent {
   
-  @scala.inline
-  def apply(data: js.Any, src: String, `type`: ErrorExecution): ErrorExecutionEvent = {
+  inline def apply(data: js.Any, src: String, `type`: ErrorExecution): ErrorExecutionEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorExecutionEvent]
   }
   
-  @scala.inline
-  implicit class ErrorExecutionEventMutableBuilder[Self <: ErrorExecutionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorExecutionEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ErrorExecution): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ErrorExecution): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

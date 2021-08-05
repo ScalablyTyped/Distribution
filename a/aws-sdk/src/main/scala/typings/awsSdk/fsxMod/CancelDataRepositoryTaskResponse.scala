@@ -18,25 +18,19 @@ trait CancelDataRepositoryTaskResponse extends StObject {
 }
 object CancelDataRepositoryTaskResponse {
   
-  @scala.inline
-  def apply(): CancelDataRepositoryTaskResponse = {
+  inline def apply(): CancelDataRepositoryTaskResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelDataRepositoryTaskResponse]
   }
   
-  @scala.inline
-  implicit class CancelDataRepositoryTaskResponseMutableBuilder[Self <: CancelDataRepositoryTaskResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CancelDataRepositoryTaskResponse](x: Self) {
     
-    @scala.inline
-    def setLifecycle(value: DataRepositoryTaskLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
+    inline def setLifecycle(value: DataRepositoryTaskLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
+    inline def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
     
-    @scala.inline
-    def setTaskId(value: TaskId): Self = StObject.set(x, "TaskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: TaskId): Self = StObject.set(x, "TaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdUndefined: Self = StObject.set(x, "TaskId", js.undefined)
+    inline def setTaskIdUndefined: Self = StObject.set(x, "TaskId", js.undefined)
   }
 }

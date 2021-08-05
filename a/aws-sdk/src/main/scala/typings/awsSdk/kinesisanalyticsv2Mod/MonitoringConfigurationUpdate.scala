@@ -23,31 +23,23 @@ trait MonitoringConfigurationUpdate extends StObject {
 }
 object MonitoringConfigurationUpdate {
   
-  @scala.inline
-  def apply(): MonitoringConfigurationUpdate = {
+  inline def apply(): MonitoringConfigurationUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MonitoringConfigurationUpdate]
   }
   
-  @scala.inline
-  implicit class MonitoringConfigurationUpdateMutableBuilder[Self <: MonitoringConfigurationUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringConfigurationUpdate](x: Self) {
     
-    @scala.inline
-    def setConfigurationTypeUpdate(value: ConfigurationType): Self = StObject.set(x, "ConfigurationTypeUpdate", value.asInstanceOf[js.Any])
+    inline def setConfigurationTypeUpdate(value: ConfigurationType): Self = StObject.set(x, "ConfigurationTypeUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationTypeUpdateUndefined: Self = StObject.set(x, "ConfigurationTypeUpdate", js.undefined)
+    inline def setConfigurationTypeUpdateUndefined: Self = StObject.set(x, "ConfigurationTypeUpdate", js.undefined)
     
-    @scala.inline
-    def setLogLevelUpdate(value: LogLevel): Self = StObject.set(x, "LogLevelUpdate", value.asInstanceOf[js.Any])
+    inline def setLogLevelUpdate(value: LogLevel): Self = StObject.set(x, "LogLevelUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUpdateUndefined: Self = StObject.set(x, "LogLevelUpdate", js.undefined)
+    inline def setLogLevelUpdateUndefined: Self = StObject.set(x, "LogLevelUpdate", js.undefined)
     
-    @scala.inline
-    def setMetricsLevelUpdate(value: MetricsLevel): Self = StObject.set(x, "MetricsLevelUpdate", value.asInstanceOf[js.Any])
+    inline def setMetricsLevelUpdate(value: MetricsLevel): Self = StObject.set(x, "MetricsLevelUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsLevelUpdateUndefined: Self = StObject.set(x, "MetricsLevelUpdate", js.undefined)
+    inline def setMetricsLevelUpdateUndefined: Self = StObject.set(x, "MetricsLevelUpdate", js.undefined)
   }
 }

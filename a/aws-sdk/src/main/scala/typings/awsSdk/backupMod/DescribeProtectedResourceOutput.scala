@@ -23,31 +23,23 @@ trait DescribeProtectedResourceOutput extends StObject {
 }
 object DescribeProtectedResourceOutput {
   
-  @scala.inline
-  def apply(): DescribeProtectedResourceOutput = {
+  inline def apply(): DescribeProtectedResourceOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeProtectedResourceOutput]
   }
   
-  @scala.inline
-  implicit class DescribeProtectedResourceOutputMutableBuilder[Self <: DescribeProtectedResourceOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProtectedResourceOutput](x: Self) {
     
-    @scala.inline
-    def setLastBackupTime(value: timestamp): Self = StObject.set(x, "LastBackupTime", value.asInstanceOf[js.Any])
+    inline def setLastBackupTime(value: timestamp): Self = StObject.set(x, "LastBackupTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastBackupTimeUndefined: Self = StObject.set(x, "LastBackupTime", js.undefined)
+    inline def setLastBackupTimeUndefined: Self = StObject.set(x, "LastBackupTime", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: ARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

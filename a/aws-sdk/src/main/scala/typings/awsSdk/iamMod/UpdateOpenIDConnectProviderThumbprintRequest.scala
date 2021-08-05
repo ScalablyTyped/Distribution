@@ -18,22 +18,17 @@ trait UpdateOpenIDConnectProviderThumbprintRequest extends StObject {
 }
 object UpdateOpenIDConnectProviderThumbprintRequest {
   
-  @scala.inline
-  def apply(OpenIDConnectProviderArn: arnType, ThumbprintList: thumbprintListType): UpdateOpenIDConnectProviderThumbprintRequest = {
+  inline def apply(OpenIDConnectProviderArn: arnType, ThumbprintList: thumbprintListType): UpdateOpenIDConnectProviderThumbprintRequest = {
     val __obj = js.Dynamic.literal(OpenIDConnectProviderArn = OpenIDConnectProviderArn.asInstanceOf[js.Any], ThumbprintList = ThumbprintList.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOpenIDConnectProviderThumbprintRequest]
   }
   
-  @scala.inline
-  implicit class UpdateOpenIDConnectProviderThumbprintRequestMutableBuilder[Self <: UpdateOpenIDConnectProviderThumbprintRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateOpenIDConnectProviderThumbprintRequest](x: Self) {
     
-    @scala.inline
-    def setOpenIDConnectProviderArn(value: arnType): Self = StObject.set(x, "OpenIDConnectProviderArn", value.asInstanceOf[js.Any])
+    inline def setOpenIDConnectProviderArn(value: arnType): Self = StObject.set(x, "OpenIDConnectProviderArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbprintList(value: thumbprintListType): Self = StObject.set(x, "ThumbprintList", value.asInstanceOf[js.Any])
+    inline def setThumbprintList(value: thumbprintListType): Self = StObject.set(x, "ThumbprintList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbprintListVarargs(value: thumbprintType*): Self = StObject.set(x, "ThumbprintList", js.Array(value :_*))
+    inline def setThumbprintListVarargs(value: thumbprintType*): Self = StObject.set(x, "ThumbprintList", js.Array(value :_*))
   }
 }

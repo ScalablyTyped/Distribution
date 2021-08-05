@@ -28,8 +28,7 @@ trait ASPxClientAxis2D
 }
 object ASPxClientAxis2D {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisTitle: ASPxClientAxisTitle,
     chart: ASPxClientWebChart,
     constantLines: js.Array[ASPxClientConstantLine],
@@ -42,22 +41,16 @@ object ASPxClientAxis2D {
     __obj.asInstanceOf[ASPxClientAxis2D]
   }
   
-  @scala.inline
-  implicit class ASPxClientAxis2DMutableBuilder[Self <: ASPxClientAxis2D] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAxis2D](x: Self) {
     
-    @scala.inline
-    def setAxisTitle(value: ASPxClientAxisTitle): Self = StObject.set(x, "axisTitle", value.asInstanceOf[js.Any])
+    inline def setAxisTitle(value: ASPxClientAxisTitle): Self = StObject.set(x, "axisTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstantLines(value: js.Array[ASPxClientConstantLine]): Self = StObject.set(x, "constantLines", value.asInstanceOf[js.Any])
+    inline def setConstantLines(value: js.Array[ASPxClientConstantLine]): Self = StObject.set(x, "constantLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstantLinesVarargs(value: ASPxClientConstantLine*): Self = StObject.set(x, "constantLines", js.Array(value :_*))
+    inline def setConstantLinesVarargs(value: ASPxClientConstantLine*): Self = StObject.set(x, "constantLines", js.Array(value :_*))
     
-    @scala.inline
-    def setStrips(value: js.Array[ASPxClientStrip]): Self = StObject.set(x, "strips", value.asInstanceOf[js.Any])
+    inline def setStrips(value: js.Array[ASPxClientStrip]): Self = StObject.set(x, "strips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripsVarargs(value: ASPxClientStrip*): Self = StObject.set(x, "strips", js.Array(value :_*))
+    inline def setStripsVarargs(value: ASPxClientStrip*): Self = StObject.set(x, "strips", js.Array(value :_*))
   }
 }

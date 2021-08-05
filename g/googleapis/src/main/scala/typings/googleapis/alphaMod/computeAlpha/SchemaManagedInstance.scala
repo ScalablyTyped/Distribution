@@ -97,88 +97,61 @@ trait SchemaManagedInstance extends StObject {
 }
 object SchemaManagedInstance {
   
-  @scala.inline
-  def apply(): SchemaManagedInstance = {
+  inline def apply(): SchemaManagedInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedInstance]
   }
   
-  @scala.inline
-  implicit class SchemaManagedInstanceMutableBuilder[Self <: SchemaManagedInstance] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedInstance](x: Self) {
     
-    @scala.inline
-    def setCurrentAction(value: String): Self = StObject.set(x, "currentAction", value.asInstanceOf[js.Any])
+    inline def setCurrentAction(value: String): Self = StObject.set(x, "currentAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentActionUndefined: Self = StObject.set(x, "currentAction", js.undefined)
+    inline def setCurrentActionUndefined: Self = StObject.set(x, "currentAction", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceHealth(value: js.Array[SchemaManagedInstanceInstanceHealth]): Self = StObject.set(x, "instanceHealth", value.asInstanceOf[js.Any])
+    inline def setInstanceHealth(value: js.Array[SchemaManagedInstanceInstanceHealth]): Self = StObject.set(x, "instanceHealth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceHealthUndefined: Self = StObject.set(x, "instanceHealth", js.undefined)
+    inline def setInstanceHealthUndefined: Self = StObject.set(x, "instanceHealth", js.undefined)
     
-    @scala.inline
-    def setInstanceHealthVarargs(value: SchemaManagedInstanceInstanceHealth*): Self = StObject.set(x, "instanceHealth", js.Array(value :_*))
+    inline def setInstanceHealthVarargs(value: SchemaManagedInstanceInstanceHealth*): Self = StObject.set(x, "instanceHealth", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceStatus(value: String): Self = StObject.set(x, "instanceStatus", value.asInstanceOf[js.Any])
+    inline def setInstanceStatus(value: String): Self = StObject.set(x, "instanceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceStatusUndefined: Self = StObject.set(x, "instanceStatus", js.undefined)
+    inline def setInstanceStatusUndefined: Self = StObject.set(x, "instanceStatus", js.undefined)
     
-    @scala.inline
-    def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
+    inline def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
+    inline def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setLastAttempt(value: SchemaManagedInstanceLastAttempt): Self = StObject.set(x, "lastAttempt", value.asInstanceOf[js.Any])
+    inline def setLastAttempt(value: SchemaManagedInstanceLastAttempt): Self = StObject.set(x, "lastAttempt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAttemptUndefined: Self = StObject.set(x, "lastAttempt", js.undefined)
+    inline def setLastAttemptUndefined: Self = StObject.set(x, "lastAttempt", js.undefined)
     
-    @scala.inline
-    def setOverride(value: SchemaManagedInstanceOverride): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    inline def setOverride(value: SchemaManagedInstanceOverride): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
     
-    @scala.inline
-    def setPreservedStateFromConfig(value: SchemaPreservedState): Self = StObject.set(x, "preservedStateFromConfig", value.asInstanceOf[js.Any])
+    inline def setPreservedStateFromConfig(value: SchemaPreservedState): Self = StObject.set(x, "preservedStateFromConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreservedStateFromConfigUndefined: Self = StObject.set(x, "preservedStateFromConfig", js.undefined)
+    inline def setPreservedStateFromConfigUndefined: Self = StObject.set(x, "preservedStateFromConfig", js.undefined)
     
-    @scala.inline
-    def setPreservedStateFromPolicy(value: SchemaPreservedState): Self = StObject.set(x, "preservedStateFromPolicy", value.asInstanceOf[js.Any])
+    inline def setPreservedStateFromPolicy(value: SchemaPreservedState): Self = StObject.set(x, "preservedStateFromPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreservedStateFromPolicyUndefined: Self = StObject.set(x, "preservedStateFromPolicy", js.undefined)
+    inline def setPreservedStateFromPolicyUndefined: Self = StObject.set(x, "preservedStateFromPolicy", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    @scala.inline
-    def setVersion(value: SchemaManagedInstanceVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: SchemaManagedInstanceVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

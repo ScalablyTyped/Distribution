@@ -17,24 +17,20 @@ object PopoverInteractionKind {
   @JSImport("@blueprintjs/core/lib/esm/components", "PopoverInteractionKind.CLICK")
   @js.native
   def CLICK: click = js.native
-  @scala.inline
-  def CLICK_=(x: click): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK")(x.asInstanceOf[js.Any])
+  inline def CLICK_=(x: click): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core/lib/esm/components", "PopoverInteractionKind.CLICK_TARGET_ONLY")
   @js.native
   def CLICK_TARGET_ONLY: `click-target` = js.native
-  @scala.inline
-  def CLICK_TARGET_ONLY_=(x: `click-target`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK_TARGET_ONLY")(x.asInstanceOf[js.Any])
+  inline def CLICK_TARGET_ONLY_=(x: `click-target`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK_TARGET_ONLY")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core/lib/esm/components", "PopoverInteractionKind.HOVER")
   @js.native
   def HOVER: hover = js.native
-  @scala.inline
-  def HOVER_=(x: hover): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOVER")(x.asInstanceOf[js.Any])
+  inline def HOVER_=(x: hover): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOVER")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core/lib/esm/components", "PopoverInteractionKind.HOVER_TARGET_ONLY")
   @js.native
   def HOVER_TARGET_ONLY: `hover-target` = js.native
-  @scala.inline
-  def HOVER_TARGET_ONLY_=(x: `hover-target`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOVER_TARGET_ONLY")(x.asInstanceOf[js.Any])
+  inline def HOVER_TARGET_ONLY_=(x: `hover-target`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOVER_TARGET_ONLY")(x.asInstanceOf[js.Any])
 }

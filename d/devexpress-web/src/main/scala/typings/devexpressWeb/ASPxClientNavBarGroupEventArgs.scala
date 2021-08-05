@@ -18,16 +18,13 @@ trait ASPxClientNavBarGroupEventArgs
 }
 object ASPxClientNavBarGroupEventArgs {
   
-  @scala.inline
-  def apply(group: ASPxClientNavBarGroup): ASPxClientNavBarGroupEventArgs = {
+  inline def apply(group: ASPxClientNavBarGroup): ASPxClientNavBarGroupEventArgs = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientNavBarGroupEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientNavBarGroupEventArgsMutableBuilder[Self <: ASPxClientNavBarGroupEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientNavBarGroupEventArgs](x: Self) {
     
-    @scala.inline
-    def setGroup(value: ASPxClientNavBarGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: ASPxClientNavBarGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
   }
 }

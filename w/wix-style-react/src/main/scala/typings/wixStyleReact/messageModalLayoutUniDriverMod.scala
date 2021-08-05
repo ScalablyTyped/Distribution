@@ -12,8 +12,7 @@ object messageModalLayoutUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def messageModalLayoutDriverFactory(base: BaseUniDriver): MessageModalLayoutUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("messageModalLayoutDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[MessageModalLayoutUniDriver]
+  inline def messageModalLayoutDriverFactory(base: BaseUniDriver): MessageModalLayoutUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("messageModalLayoutDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[MessageModalLayoutUniDriver]
   
   type MessageModalLayoutUniDriver = BaseModalLayoutUniDriver
 }

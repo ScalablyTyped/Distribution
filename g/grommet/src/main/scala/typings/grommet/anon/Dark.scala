@@ -12,25 +12,19 @@ trait Dark extends StObject {
 }
 object Dark {
   
-  @scala.inline
-  def apply(): Dark = {
+  inline def apply(): Dark = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dark]
   }
   
-  @scala.inline
-  implicit class DarkMutableBuilder[Self <: Dark] (val x: Self) extends AnyVal {
+  extension [Self <: Dark](x: Self) {
     
-    @scala.inline
-    def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
+    inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
     
-    @scala.inline
-    def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
+    inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
   }
 }

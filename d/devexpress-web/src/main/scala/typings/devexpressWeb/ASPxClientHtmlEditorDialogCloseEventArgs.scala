@@ -28,22 +28,17 @@ trait ASPxClientHtmlEditorDialogCloseEventArgs
 }
 object ASPxClientHtmlEditorDialogCloseEventArgs {
   
-  @scala.inline
-  def apply(dialog: ASPxClientHtmlEditorDialogBase, dialogName: String, parameter: js.Any): ASPxClientHtmlEditorDialogCloseEventArgs = {
+  inline def apply(dialog: ASPxClientHtmlEditorDialogBase, dialogName: String, parameter: js.Any): ASPxClientHtmlEditorDialogCloseEventArgs = {
     val __obj = js.Dynamic.literal(dialog = dialog.asInstanceOf[js.Any], dialogName = dialogName.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorDialogCloseEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorDialogCloseEventArgsMutableBuilder[Self <: ASPxClientHtmlEditorDialogCloseEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorDialogCloseEventArgs](x: Self) {
     
-    @scala.inline
-    def setDialog(value: ASPxClientHtmlEditorDialogBase): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
+    inline def setDialog(value: ASPxClientHtmlEditorDialogBase): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogName(value: String): Self = StObject.set(x, "dialogName", value.asInstanceOf[js.Any])
+    inline def setDialogName(value: String): Self = StObject.set(x, "dialogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameter(value: js.Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: js.Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }
 }

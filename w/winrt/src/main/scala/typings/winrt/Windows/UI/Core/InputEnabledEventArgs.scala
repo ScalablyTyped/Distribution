@@ -9,8 +9,7 @@ trait InputEnabledEventArgs
      with IInputEnabledEventArgs
 object InputEnabledEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean, inputEnabled: Boolean): InputEnabledEventArgs = {
+  inline def apply(handled: Boolean, inputEnabled: Boolean): InputEnabledEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], inputEnabled = inputEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputEnabledEventArgs]
   }

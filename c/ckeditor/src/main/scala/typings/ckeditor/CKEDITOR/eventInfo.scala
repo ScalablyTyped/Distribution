@@ -25,8 +25,7 @@ trait eventInfo extends StObject {
 }
 object eventInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: () => Unit,
     data: js.Any,
     editor: editor,
@@ -40,31 +39,22 @@ object eventInfo {
     __obj.asInstanceOf[eventInfo]
   }
   
-  @scala.inline
-  implicit class eventInfoMutableBuilder[Self <: eventInfo] (val x: Self) extends AnyVal {
+  extension [Self <: eventInfo](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditor(value: editor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: editor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerData(value: js.Any): Self = StObject.set(x, "listenerData", value.asInstanceOf[js.Any])
+    inline def setListenerData(value: js.Any): Self = StObject.set(x, "listenerData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveListener(value: () => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction0(value))
+    inline def setRemoveListener(value: () => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSender(value: StringDictionary[js.Any]): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: StringDictionary[js.Any]): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

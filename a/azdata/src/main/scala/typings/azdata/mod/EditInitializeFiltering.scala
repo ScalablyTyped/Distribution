@@ -10,19 +10,15 @@ trait EditInitializeFiltering extends StObject {
 }
 object EditInitializeFiltering {
   
-  @scala.inline
-  def apply(): EditInitializeFiltering = {
+  inline def apply(): EditInitializeFiltering = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditInitializeFiltering]
   }
   
-  @scala.inline
-  implicit class EditInitializeFilteringMutableBuilder[Self <: EditInitializeFiltering] (val x: Self) extends AnyVal {
+  extension [Self <: EditInitializeFiltering](x: Self) {
     
-    @scala.inline
-    def setLimitResults(value: Double): Self = StObject.set(x, "LimitResults", value.asInstanceOf[js.Any])
+    inline def setLimitResults(value: Double): Self = StObject.set(x, "LimitResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitResultsUndefined: Self = StObject.set(x, "LimitResults", js.undefined)
+    inline def setLimitResultsUndefined: Self = StObject.set(x, "LimitResults", js.undefined)
   }
 }

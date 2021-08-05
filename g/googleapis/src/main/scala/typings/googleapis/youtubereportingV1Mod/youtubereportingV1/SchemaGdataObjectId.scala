@@ -26,31 +26,23 @@ trait SchemaGdataObjectId extends StObject {
 }
 object SchemaGdataObjectId {
   
-  @scala.inline
-  def apply(): SchemaGdataObjectId = {
+  inline def apply(): SchemaGdataObjectId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGdataObjectId]
   }
   
-  @scala.inline
-  implicit class SchemaGdataObjectIdMutableBuilder[Self <: SchemaGdataObjectId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGdataObjectId](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+    inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
     
-    @scala.inline
-    def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+    inline def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+    inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
-    @scala.inline
-    def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
+    inline def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectNameUndefined: Self = StObject.set(x, "objectName", js.undefined)
+    inline def setObjectNameUndefined: Self = StObject.set(x, "objectName", js.undefined)
   }
 }

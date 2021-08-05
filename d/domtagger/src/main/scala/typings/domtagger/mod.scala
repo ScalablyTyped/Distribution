@@ -14,10 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(opts: Options): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, HTMLElement] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, HTMLElement]]
-  @scala.inline
-  def apply(opts: SVGOptions): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, SVGElement] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, SVGElement]]
+  inline def apply(opts: Options): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, HTMLElement] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, HTMLElement]]
+  inline def apply(opts: SVGOptions): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, SVGElement] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, SVGElement]]
   
   @JSImport("domtagger", JSImport.Namespace)
   @js.native
@@ -96,8 +94,7 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       any: (Node, js.Array[ChildNode]) => js.Function1[/* markup */ js.Any, Unit],
       attribute: (Element, String, Attr) => js.Function1[/* value */ js.Any, Unit],
       text: Node => js.Function1[/* textContent */ js.Any, Unit]
@@ -106,35 +103,25 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAny(value: (Node, js.Array[ChildNode]) => js.Function1[/* markup */ js.Any, Unit]): Self = StObject.set(x, "any", js.Any.fromFunction2(value))
+      inline def setAny(value: (Node, js.Array[ChildNode]) => js.Function1[/* markup */ js.Any, Unit]): Self = StObject.set(x, "any", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAttribute(value: (Element, String, Attr) => js.Function1[/* value */ js.Any, Unit]): Self = StObject.set(x, "attribute", js.Any.fromFunction3(value))
+      inline def setAttribute(value: (Element, String, Attr) => js.Function1[/* value */ js.Any, Unit]): Self = StObject.set(x, "attribute", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setConvert(value: /* template */ TemplateStringsArray => String): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
+      inline def setConvert(value: /* template */ TemplateStringsArray => String): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
+      inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
       
-      @scala.inline
-      def setText(value: Node => js.Function1[/* textContent */ js.Any, Unit]): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+      inline def setText(value: Node => js.Function1[/* textContent */ js.Any, Unit]): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransform(value: /* markup */ String => String): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* markup */ String => String): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -147,8 +134,7 @@ object mod {
   }
   object SVGOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       any: (Node, js.Array[ChildNode]) => js.Function1[/* markup */ js.Any, Unit],
       attribute: (Element, String, Attr) => js.Function1[/* value */ js.Any, Unit],
       text: Node => js.Function1[/* textContent */ js.Any, Unit]
@@ -158,11 +144,9 @@ object mod {
       __obj.asInstanceOf[SVGOptions]
     }
     
-    @scala.inline
-    implicit class SVGOptionsMutableBuilder[Self <: SVGOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SVGOptions](x: Self) {
       
-      @scala.inline
-      def setType(value: svg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: svg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

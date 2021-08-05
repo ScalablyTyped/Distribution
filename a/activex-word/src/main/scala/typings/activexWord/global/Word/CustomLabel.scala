@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.CustomLabel")
 @js.native
-class CustomLabel protected ()
+/* private */ class CustomLabel ()
   extends StObject
      with typings.activexWord.Word.CustomLabel {
   
@@ -62,7 +62,7 @@ class CustomLabel protected ()
   /* CompleteClass */
   var Width: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.CustomLabel_typekey")
   var WordDotCustomLabel_typekey: typings.activexWord.Word.CustomLabel = js.native
 }

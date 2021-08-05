@@ -18,8 +18,8 @@ object agentMod {
   @js.native
   trait HttpsProxyAgent extends Agent {
     
-    var proxy: js.Any = js.native
+    /* private */ var proxy: js.Any = js.native
     
-    var secureProxy: js.Any = js.native
+    /* private */ var secureProxy: js.Any = js.native
   }
 }

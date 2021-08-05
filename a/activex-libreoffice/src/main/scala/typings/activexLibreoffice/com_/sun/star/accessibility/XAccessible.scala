@@ -49,8 +49,7 @@ trait XAccessible
 }
 object XAccessible {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     acquire: () => Unit,
     getAccessibleContext: () => XAccessibleContext,
@@ -61,13 +60,10 @@ object XAccessible {
     __obj.asInstanceOf[XAccessible]
   }
   
-  @scala.inline
-  implicit class XAccessibleMutableBuilder[Self <: XAccessible] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessible](x: Self) {
     
-    @scala.inline
-    def setAccessibleContext(value: XAccessibleContext): Self = StObject.set(x, "AccessibleContext", value.asInstanceOf[js.Any])
+    inline def setAccessibleContext(value: XAccessibleContext): Self = StObject.set(x, "AccessibleContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAccessibleContext(value: () => XAccessibleContext): Self = StObject.set(x, "getAccessibleContext", js.Any.fromFunction0(value))
+    inline def setGetAccessibleContext(value: () => XAccessibleContext): Self = StObject.set(x, "getAccessibleContext", js.Any.fromFunction0(value))
   }
 }

@@ -23,22 +23,17 @@ trait OracleParameters extends StObject {
 }
 object OracleParameters {
   
-  @scala.inline
-  def apply(Database: Database, Host: Host, Port: Port): OracleParameters = {
+  inline def apply(Database: Database, Host: Host, Port: Port): OracleParameters = {
     val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any], Host = Host.asInstanceOf[js.Any], Port = Port.asInstanceOf[js.Any])
     __obj.asInstanceOf[OracleParameters]
   }
   
-  @scala.inline
-  implicit class OracleParametersMutableBuilder[Self <: OracleParameters] (val x: Self) extends AnyVal {
+  extension [Self <: OracleParameters](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
   }
 }

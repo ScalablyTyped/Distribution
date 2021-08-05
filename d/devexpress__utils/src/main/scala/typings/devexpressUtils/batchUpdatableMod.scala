@@ -26,7 +26,7 @@ object batchUpdatableMod {
     /* CompleteClass */
     override def isUpdateLocked(): Boolean = js.native
     
-    var occurredEvents: js.Any = js.native
+    /* private */ var occurredEvents: js.Any = js.native
     
     /* CompleteClass */
     override def onUpdateLocked(): Unit = js.native
@@ -40,7 +40,7 @@ object batchUpdatableMod {
     /* CompleteClass */
     override def suspendUpdate(): Unit = js.native
     
-    var suspendUpdateCount: js.Any = js.native
+    /* private */ var suspendUpdateCount: js.Any = js.native
   }
   
   @JSImport("@devexpress/utils/lib/class/batch-updatable", "EmptyBatchUpdatableObject")
@@ -64,20 +64,16 @@ object batchUpdatableMod {
   }
   object IBatchUpdatableObject {
     
-    @scala.inline
-    def apply(beginUpdate: () => Unit, endUpdate: () => Unit): IBatchUpdatableObject = {
+    inline def apply(beginUpdate: () => Unit, endUpdate: () => Unit): IBatchUpdatableObject = {
       val __obj = js.Dynamic.literal(beginUpdate = js.Any.fromFunction0(beginUpdate), endUpdate = js.Any.fromFunction0(endUpdate))
       __obj.asInstanceOf[IBatchUpdatableObject]
     }
     
-    @scala.inline
-    implicit class IBatchUpdatableObjectMutableBuilder[Self <: IBatchUpdatableObject] (val x: Self) extends AnyVal {
+    extension [Self <: IBatchUpdatableObject](x: Self) {
       
-      @scala.inline
-      def setBeginUpdate(value: () => Unit): Self = StObject.set(x, "beginUpdate", js.Any.fromFunction0(value))
+      inline def setBeginUpdate(value: () => Unit): Self = StObject.set(x, "beginUpdate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEndUpdate(value: () => Unit): Self = StObject.set(x, "endUpdate", js.Any.fromFunction0(value))
+      inline def setEndUpdate(value: () => Unit): Self = StObject.set(x, "endUpdate", js.Any.fromFunction0(value))
     }
   }
   
@@ -95,8 +91,7 @@ object batchUpdatableMod {
   }
   object IBatchUpdatableObjectExtend {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       beginUpdate: () => Unit,
       continueUpdate: () => Unit,
       endUpdate: () => Unit,
@@ -108,20 +103,15 @@ object batchUpdatableMod {
       __obj.asInstanceOf[IBatchUpdatableObjectExtend]
     }
     
-    @scala.inline
-    implicit class IBatchUpdatableObjectExtendMutableBuilder[Self <: IBatchUpdatableObjectExtend] (val x: Self) extends AnyVal {
+    extension [Self <: IBatchUpdatableObjectExtend](x: Self) {
       
-      @scala.inline
-      def setContinueUpdate(value: () => Unit): Self = StObject.set(x, "continueUpdate", js.Any.fromFunction0(value))
+      inline def setContinueUpdate(value: () => Unit): Self = StObject.set(x, "continueUpdate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsUpdateLocked(value: () => Boolean): Self = StObject.set(x, "isUpdateLocked", js.Any.fromFunction0(value))
+      inline def setIsUpdateLocked(value: () => Boolean): Self = StObject.set(x, "isUpdateLocked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUpdateLocked(value: () => Unit): Self = StObject.set(x, "onUpdateLocked", js.Any.fromFunction0(value))
+      inline def setOnUpdateLocked(value: () => Unit): Self = StObject.set(x, "onUpdateLocked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSuspendUpdate(value: () => Unit): Self = StObject.set(x, "suspendUpdate", js.Any.fromFunction0(value))
+      inline def setSuspendUpdate(value: () => Unit): Self = StObject.set(x, "suspendUpdate", js.Any.fromFunction0(value))
     }
   }
 }

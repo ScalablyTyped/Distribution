@@ -22,37 +22,27 @@ trait DnsKeySpec extends StObject {
 }
 object DnsKeySpec {
   
-  @scala.inline
-  def apply(): DnsKeySpec = {
+  inline def apply(): DnsKeySpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DnsKeySpec]
   }
   
-  @scala.inline
-  implicit class DnsKeySpecMutableBuilder[Self <: DnsKeySpec] (val x: Self) extends AnyVal {
+  extension [Self <: DnsKeySpec](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
+    inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
+    inline def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
     
-    @scala.inline
-    def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
+    inline def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

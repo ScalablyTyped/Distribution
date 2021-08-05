@@ -25,8 +25,7 @@ trait XInteractionHandler2
 }
 object XInteractionHandler2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     handle: XInteractionRequest => Unit,
     handleInteractionRequest: XInteractionRequest => Boolean,
@@ -37,10 +36,8 @@ object XInteractionHandler2 {
     __obj.asInstanceOf[XInteractionHandler2]
   }
   
-  @scala.inline
-  implicit class XInteractionHandler2MutableBuilder[Self <: XInteractionHandler2] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionHandler2](x: Self) {
     
-    @scala.inline
-    def setHandleInteractionRequest(value: XInteractionRequest => Boolean): Self = StObject.set(x, "handleInteractionRequest", js.Any.fromFunction1(value))
+    inline def setHandleInteractionRequest(value: XInteractionRequest => Boolean): Self = StObject.set(x, "handleInteractionRequest", js.Any.fromFunction1(value))
   }
 }

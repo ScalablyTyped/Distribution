@@ -15,19 +15,15 @@ trait MoveToOptions
 }
 object MoveToOptions {
   
-  @scala.inline
-  def apply(): MoveToOptions = {
+  inline def apply(): MoveToOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveToOptions]
   }
   
-  @scala.inline
-  implicit class MoveToOptionsMutableBuilder[Self <: MoveToOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MoveToOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

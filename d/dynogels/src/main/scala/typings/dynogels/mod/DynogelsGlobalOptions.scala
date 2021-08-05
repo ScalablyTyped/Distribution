@@ -12,16 +12,13 @@ trait DynogelsGlobalOptions extends StObject {
 }
 object DynogelsGlobalOptions {
   
-  @scala.inline
-  def apply($dynogels: PollingInterval): DynogelsGlobalOptions = {
+  inline def apply($dynogels: PollingInterval): DynogelsGlobalOptions = {
     val __obj = js.Dynamic.literal($dynogels = $dynogels.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynogelsGlobalOptions]
   }
   
-  @scala.inline
-  implicit class DynogelsGlobalOptionsMutableBuilder[Self <: DynogelsGlobalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DynogelsGlobalOptions](x: Self) {
     
-    @scala.inline
-    def set$dynogels(value: PollingInterval): Self = StObject.set(x, "$dynogels", value.asInstanceOf[js.Any])
+    inline def set$dynogels(value: PollingInterval): Self = StObject.set(x, "$dynogels", value.asInstanceOf[js.Any])
   }
 }

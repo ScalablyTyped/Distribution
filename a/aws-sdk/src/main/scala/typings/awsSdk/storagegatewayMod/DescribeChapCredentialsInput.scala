@@ -13,16 +13,13 @@ trait DescribeChapCredentialsInput extends StObject {
 }
 object DescribeChapCredentialsInput {
   
-  @scala.inline
-  def apply(TargetARN: TargetARN): DescribeChapCredentialsInput = {
+  inline def apply(TargetARN: TargetARN): DescribeChapCredentialsInput = {
     val __obj = js.Dynamic.literal(TargetARN = TargetARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeChapCredentialsInput]
   }
   
-  @scala.inline
-  implicit class DescribeChapCredentialsInputMutableBuilder[Self <: DescribeChapCredentialsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChapCredentialsInput](x: Self) {
     
-    @scala.inline
-    def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
+    inline def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
   }
 }

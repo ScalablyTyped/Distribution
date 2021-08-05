@@ -41,8 +41,7 @@ trait Config extends StObject {
 }
 object Config {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: () => Config,
     newCheckbox: () => Checkbox,
     newInfo: () => Info,
@@ -59,40 +58,28 @@ object Config {
     __obj.asInstanceOf[Config]
   }
   
-  @scala.inline
-  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+  extension [Self <: Config](x: Self) {
     
-    @scala.inline
-    def setBuild(value: () => Config): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => Config): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCheckbox(value: () => Checkbox): Self = StObject.set(x, "newCheckbox", js.Any.fromFunction0(value))
+    inline def setNewCheckbox(value: () => Checkbox): Self = StObject.set(x, "newCheckbox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewInfo(value: () => Info): Self = StObject.set(x, "newInfo", js.Any.fromFunction0(value))
+    inline def setNewInfo(value: () => Info): Self = StObject.set(x, "newInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewOptionBuilder(value: () => OptionBuilder): Self = StObject.set(x, "newOptionBuilder", js.Any.fromFunction0(value))
+    inline def setNewOptionBuilder(value: () => OptionBuilder): Self = StObject.set(x, "newOptionBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSelectMultiple(value: () => SelectMultiple): Self = StObject.set(x, "newSelectMultiple", js.Any.fromFunction0(value))
+    inline def setNewSelectMultiple(value: () => SelectMultiple): Self = StObject.set(x, "newSelectMultiple", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSelectSingle(value: () => SelectSingle): Self = StObject.set(x, "newSelectSingle", js.Any.fromFunction0(value))
+    inline def setNewSelectSingle(value: () => SelectSingle): Self = StObject.set(x, "newSelectSingle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTextArea(value: () => TextArea): Self = StObject.set(x, "newTextArea", js.Any.fromFunction0(value))
+    inline def setNewTextArea(value: () => TextArea): Self = StObject.set(x, "newTextArea", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTextInput(value: () => TextInput): Self = StObject.set(x, "newTextInput", js.Any.fromFunction0(value))
+    inline def setNewTextInput(value: () => TextInput): Self = StObject.set(x, "newTextInput", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDateRangeRequired(value: Boolean => Config): Self = StObject.set(x, "setDateRangeRequired", js.Any.fromFunction1(value))
+    inline def setSetDateRangeRequired(value: Boolean => Config): Self = StObject.set(x, "setDateRangeRequired", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIsSteppedConfig(value: Boolean => Config): Self = StObject.set(x, "setIsSteppedConfig", js.Any.fromFunction1(value))
+    inline def setSetIsSteppedConfig(value: Boolean => Config): Self = StObject.set(x, "setIsSteppedConfig", js.Any.fromFunction1(value))
   }
 }

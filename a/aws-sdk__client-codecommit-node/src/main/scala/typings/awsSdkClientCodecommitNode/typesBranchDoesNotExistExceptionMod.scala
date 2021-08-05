@@ -22,17 +22,14 @@ object typesBranchDoesNotExistExceptionMod {
   }
   object BranchDoesNotExistException {
     
-    @scala.inline
-    def apply(): BranchDoesNotExistException = {
+    inline def apply(): BranchDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "BranchDoesNotExistException")
       __obj.asInstanceOf[BranchDoesNotExistException]
     }
     
-    @scala.inline
-    implicit class BranchDoesNotExistExceptionMutableBuilder[Self <: BranchDoesNotExistException] (val x: Self) extends AnyVal {
+    extension [Self <: BranchDoesNotExistException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BranchDoesNotExistException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

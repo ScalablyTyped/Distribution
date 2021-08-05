@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestStage extends StObject
 object RequestStage {
   
-  @scala.inline
-  def Request: typings.devtoolsProtocol.devtoolsProtocolStrings.Request = "Request".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Request]
+  inline def Request: typings.devtoolsProtocol.devtoolsProtocolStrings.Request = "Request".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Request]
   
-  @scala.inline
-  def Response: typings.devtoolsProtocol.devtoolsProtocolStrings.Response = "Response".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Response]
+  inline def Response: typings.devtoolsProtocol.devtoolsProtocolStrings.Response = "Response".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Response]
 }

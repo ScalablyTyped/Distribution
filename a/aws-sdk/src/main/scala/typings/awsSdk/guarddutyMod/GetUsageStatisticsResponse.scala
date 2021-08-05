@@ -18,25 +18,19 @@ trait GetUsageStatisticsResponse extends StObject {
 }
 object GetUsageStatisticsResponse {
   
-  @scala.inline
-  def apply(): GetUsageStatisticsResponse = {
+  inline def apply(): GetUsageStatisticsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUsageStatisticsResponse]
   }
   
-  @scala.inline
-  implicit class GetUsageStatisticsResponseMutableBuilder[Self <: GetUsageStatisticsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetUsageStatisticsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setUsageStatistics(value: UsageStatistics): Self = StObject.set(x, "UsageStatistics", value.asInstanceOf[js.Any])
+    inline def setUsageStatistics(value: UsageStatistics): Self = StObject.set(x, "UsageStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageStatisticsUndefined: Self = StObject.set(x, "UsageStatistics", js.undefined)
+    inline def setUsageStatisticsUndefined: Self = StObject.set(x, "UsageStatistics", js.undefined)
   }
 }

@@ -22,26 +22,20 @@ object typesFilterRuleMod {
   }
   object FilterRule {
     
-    @scala.inline
-    def apply(): FilterRule = {
+    inline def apply(): FilterRule = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FilterRule]
     }
     
-    @scala.inline
-    implicit class FilterRuleMutableBuilder[Self <: FilterRule] (val x: Self) extends AnyVal {
+    extension [Self <: FilterRule](x: Self) {
       
-      @scala.inline
-      def setName(value: prefix | suffix | String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: prefix | suffix | String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     }
   }
   

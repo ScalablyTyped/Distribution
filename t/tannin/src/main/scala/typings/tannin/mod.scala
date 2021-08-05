@@ -94,32 +94,24 @@ object mod {
   }
   object TanninDomainMetadata {
     
-    @scala.inline
-    def apply(): TanninDomainMetadata = {
+    inline def apply(): TanninDomainMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TanninDomainMetadata]
     }
     
-    @scala.inline
-    implicit class TanninDomainMetadataMutableBuilder[Self <: TanninDomainMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: TanninDomainMetadata](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setPlural_forms(value: TimerHandler): Self = StObject.set(x, "plural_forms", value.asInstanceOf[js.Any])
+      inline def setPlural_forms(value: TimerHandler): Self = StObject.set(x, "plural_forms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlural_formsUndefined: Self = StObject.set(x, "plural_forms", js.undefined)
+      inline def setPlural_formsUndefined: Self = StObject.set(x, "plural_forms", js.undefined)
     }
   }
   
@@ -134,18 +126,15 @@ object mod {
   }
   object TanninLocaleDomain {
     
-    @scala.inline
-    def apply(_empty: TanninDomainMetadata | (js.Tuple2[String, String])): TanninLocaleDomain = {
+    inline def apply(_empty: TanninDomainMetadata | (js.Tuple2[String, String])): TanninLocaleDomain = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("")(_empty.asInstanceOf[js.Any])
       __obj.asInstanceOf[TanninLocaleDomain]
     }
     
-    @scala.inline
-    implicit class TanninLocaleDomainMutableBuilder[Self <: TanninLocaleDomain] (val x: Self) extends AnyVal {
+    extension [Self <: TanninLocaleDomain](x: Self) {
       
-      @scala.inline
-      def set_empty(value: TanninDomainMetadata | (js.Tuple2[String, String])): Self = StObject.set(x, "", value.asInstanceOf[js.Any])
+      inline def set_empty(value: TanninDomainMetadata | (js.Tuple2[String, String])): Self = StObject.set(x, "", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,26 +152,20 @@ object mod {
   }
   object TanninOptions {
     
-    @scala.inline
-    def apply(): TanninOptions = {
+    inline def apply(): TanninOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TanninOptions]
     }
     
-    @scala.inline
-    implicit class TanninOptionsMutableBuilder[Self <: TanninOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TanninOptions](x: Self) {
       
-      @scala.inline
-      def setContextDelimiter(value: String): Self = StObject.set(x, "contextDelimiter", value.asInstanceOf[js.Any])
+      inline def setContextDelimiter(value: String): Self = StObject.set(x, "contextDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextDelimiterUndefined: Self = StObject.set(x, "contextDelimiter", js.undefined)
+      inline def setContextDelimiterUndefined: Self = StObject.set(x, "contextDelimiter", js.undefined)
       
-      @scala.inline
-      def setOnMissingKey(value: js.Function): Self = StObject.set(x, "onMissingKey", value.asInstanceOf[js.Any])
+      inline def setOnMissingKey(value: js.Function): Self = StObject.set(x, "onMissingKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnMissingKeyUndefined: Self = StObject.set(x, "onMissingKey", js.undefined)
+      inline def setOnMissingKeyUndefined: Self = StObject.set(x, "onMissingKey", js.undefined)
     }
   }
   

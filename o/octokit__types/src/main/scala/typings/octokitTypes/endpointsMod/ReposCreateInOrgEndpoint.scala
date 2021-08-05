@@ -103,116 +103,80 @@ trait ReposCreateInOrgEndpoint extends StObject {
 }
 object ReposCreateInOrgEndpoint {
   
-  @scala.inline
-  def apply(name: String, org_ : String): ReposCreateInOrgEndpoint = {
+  inline def apply(name: String, org_ : String): ReposCreateInOrgEndpoint = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposCreateInOrgEndpointMutableBuilder[Self <: ReposCreateInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCreateInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setAllow_merge_commit(value: Boolean): Self = StObject.set(x, "allow_merge_commit", value.asInstanceOf[js.Any])
+    inline def setAllow_merge_commit(value: Boolean): Self = StObject.set(x, "allow_merge_commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_merge_commitUndefined: Self = StObject.set(x, "allow_merge_commit", js.undefined)
+    inline def setAllow_merge_commitUndefined: Self = StObject.set(x, "allow_merge_commit", js.undefined)
     
-    @scala.inline
-    def setAllow_rebase_merge(value: Boolean): Self = StObject.set(x, "allow_rebase_merge", value.asInstanceOf[js.Any])
+    inline def setAllow_rebase_merge(value: Boolean): Self = StObject.set(x, "allow_rebase_merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_rebase_mergeUndefined: Self = StObject.set(x, "allow_rebase_merge", js.undefined)
+    inline def setAllow_rebase_mergeUndefined: Self = StObject.set(x, "allow_rebase_merge", js.undefined)
     
-    @scala.inline
-    def setAllow_squash_merge(value: Boolean): Self = StObject.set(x, "allow_squash_merge", value.asInstanceOf[js.Any])
+    inline def setAllow_squash_merge(value: Boolean): Self = StObject.set(x, "allow_squash_merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_squash_mergeUndefined: Self = StObject.set(x, "allow_squash_merge", js.undefined)
+    inline def setAllow_squash_mergeUndefined: Self = StObject.set(x, "allow_squash_merge", js.undefined)
     
-    @scala.inline
-    def setAuto_init(value: Boolean): Self = StObject.set(x, "auto_init", value.asInstanceOf[js.Any])
+    inline def setAuto_init(value: Boolean): Self = StObject.set(x, "auto_init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuto_initUndefined: Self = StObject.set(x, "auto_init", js.undefined)
+    inline def setAuto_initUndefined: Self = StObject.set(x, "auto_init", js.undefined)
     
-    @scala.inline
-    def setDelete_branch_on_merge(value: Boolean): Self = StObject.set(x, "delete_branch_on_merge", value.asInstanceOf[js.Any])
+    inline def setDelete_branch_on_merge(value: Boolean): Self = StObject.set(x, "delete_branch_on_merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete_branch_on_mergeUndefined: Self = StObject.set(x, "delete_branch_on_merge", js.undefined)
+    inline def setDelete_branch_on_mergeUndefined: Self = StObject.set(x, "delete_branch_on_merge", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setGitignore_template(value: String): Self = StObject.set(x, "gitignore_template", value.asInstanceOf[js.Any])
+    inline def setGitignore_template(value: String): Self = StObject.set(x, "gitignore_template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitignore_templateUndefined: Self = StObject.set(x, "gitignore_template", js.undefined)
+    inline def setGitignore_templateUndefined: Self = StObject.set(x, "gitignore_template", js.undefined)
     
-    @scala.inline
-    def setHas_issues(value: Boolean): Self = StObject.set(x, "has_issues", value.asInstanceOf[js.Any])
+    inline def setHas_issues(value: Boolean): Self = StObject.set(x, "has_issues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_issuesUndefined: Self = StObject.set(x, "has_issues", js.undefined)
+    inline def setHas_issuesUndefined: Self = StObject.set(x, "has_issues", js.undefined)
     
-    @scala.inline
-    def setHas_projects(value: Boolean): Self = StObject.set(x, "has_projects", value.asInstanceOf[js.Any])
+    inline def setHas_projects(value: Boolean): Self = StObject.set(x, "has_projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_projectsUndefined: Self = StObject.set(x, "has_projects", js.undefined)
+    inline def setHas_projectsUndefined: Self = StObject.set(x, "has_projects", js.undefined)
     
-    @scala.inline
-    def setHas_wiki(value: Boolean): Self = StObject.set(x, "has_wiki", value.asInstanceOf[js.Any])
+    inline def setHas_wiki(value: Boolean): Self = StObject.set(x, "has_wiki", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_wikiUndefined: Self = StObject.set(x, "has_wiki", js.undefined)
+    inline def setHas_wikiUndefined: Self = StObject.set(x, "has_wiki", js.undefined)
     
-    @scala.inline
-    def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
+    inline def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
+    inline def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
     
-    @scala.inline
-    def setIs_template(value: Boolean): Self = StObject.set(x, "is_template", value.asInstanceOf[js.Any])
+    inline def setIs_template(value: Boolean): Self = StObject.set(x, "is_template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_templateUndefined: Self = StObject.set(x, "is_template", js.undefined)
+    inline def setIs_templateUndefined: Self = StObject.set(x, "is_template", js.undefined)
     
-    @scala.inline
-    def setLicense_template(value: String): Self = StObject.set(x, "license_template", value.asInstanceOf[js.Any])
+    inline def setLicense_template(value: String): Self = StObject.set(x, "license_template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicense_templateUndefined: Self = StObject.set(x, "license_template", js.undefined)
+    inline def setLicense_templateUndefined: Self = StObject.set(x, "license_template", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+    inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_idUndefined: Self = StObject.set(x, "team_id", js.undefined)
+    inline def setTeam_idUndefined: Self = StObject.set(x, "team_id", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: public | `private` | visibility | internal): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: public | `private` | visibility | internal): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

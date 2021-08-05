@@ -24,9 +24,9 @@ object navControllerMod {
     def this(platform: Platform, location: Location, serializer: UrlSerializer) = this()
     def this(platform: Platform, location: Location, serializer: UrlSerializer, router: Router) = this()
     
-    var animated: js.Any = js.native
+    /* private */ var animated: js.Any = js.native
     
-    var animationBuilder: js.Any = js.native
+    /* private */ var animationBuilder: js.Any = js.native
     
     /**
       * Same as [Location](https://angular.io/api/common/Location)'s back() method.
@@ -41,17 +41,17 @@ object navControllerMod {
       */
     def consumeTransition(): Animation = js.native
     
-    var direction: js.Any = js.native
+    /* private */ var direction: js.Any = js.native
     
-    var guessAnimation: js.Any = js.native
+    /* private */ var guessAnimation: js.Any = js.native
     
-    var guessDirection: js.Any = js.native
+    /* private */ var guessDirection: js.Any = js.native
     
-    var lastNavId: js.Any = js.native
+    /* private */ var lastNavId: js.Any = js.native
     
-    var location: js.Any = js.native
+    /* private */ var location: js.Any = js.native
     
-    var navigate: js.Any = js.native
+    /* private */ var navigate: js.Any = js.native
     
     /**
       * This method uses Angular's [Router](https://angular.io/api/router/Router) under the hood,
@@ -131,9 +131,9 @@ object navControllerMod {
       */
     def pop(): js.Promise[Unit] = js.native
     
-    var router: js.Any = js.native
+    /* private */ var router: js.Any = js.native
     
-    var serializer: js.Any = js.native
+    /* private */ var serializer: js.Any = js.native
     
     /**
       * This methods specifies the direction of the next navigation performed by the Angular router.
@@ -198,7 +198,7 @@ object navControllerMod {
       */
     def setTopOutlet(outlet: IonRouterOutlet): Unit = js.native
     
-    var topOutlet: js.Any = js.native
+    /* private */ var topOutlet: js.Any = js.native
   }
   
   trait AnimationOptions extends StObject {
@@ -211,34 +211,26 @@ object navControllerMod {
   }
   object AnimationOptions {
     
-    @scala.inline
-    def apply(): AnimationOptions = {
+    inline def apply(): AnimationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnimationOptions]
     }
     
-    @scala.inline
-    implicit class AnimationOptionsMutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationOptions](x: Self) {
       
-      @scala.inline
-      def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+      inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+      inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
       
-      @scala.inline
-      def setAnimation(
+      inline def setAnimation(
         value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => typings.ionicCore.animationInterfaceMod.Animation
       ): Self = StObject.set(x, "animation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationDirection(value: forward | back): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
+      inline def setAnimationDirection(value: forward | back): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
+      inline def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     }
   }
   
@@ -248,8 +240,7 @@ object navControllerMod {
        with AnimationOptions
   object NavigationOptions {
     
-    @scala.inline
-    def apply(): NavigationOptions = {
+    inline def apply(): NavigationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavigationOptions]
     }

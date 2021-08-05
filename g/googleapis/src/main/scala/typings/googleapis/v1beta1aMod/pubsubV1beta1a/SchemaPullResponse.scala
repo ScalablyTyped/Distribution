@@ -22,25 +22,19 @@ trait SchemaPullResponse extends StObject {
 }
 object SchemaPullResponse {
   
-  @scala.inline
-  def apply(): SchemaPullResponse = {
+  inline def apply(): SchemaPullResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPullResponse]
   }
   
-  @scala.inline
-  implicit class SchemaPullResponseMutableBuilder[Self <: SchemaPullResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPullResponse](x: Self) {
     
-    @scala.inline
-    def setAckId(value: String): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
+    inline def setAckId(value: String): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAckIdUndefined: Self = StObject.set(x, "ackId", js.undefined)
+    inline def setAckIdUndefined: Self = StObject.set(x, "ackId", js.undefined)
     
-    @scala.inline
-    def setPubsubEvent(value: SchemaPubsubEvent): Self = StObject.set(x, "pubsubEvent", value.asInstanceOf[js.Any])
+    inline def setPubsubEvent(value: SchemaPubsubEvent): Self = StObject.set(x, "pubsubEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsubEventUndefined: Self = StObject.set(x, "pubsubEvent", js.undefined)
+    inline def setPubsubEventUndefined: Self = StObject.set(x, "pubsubEvent", js.undefined)
   }
 }

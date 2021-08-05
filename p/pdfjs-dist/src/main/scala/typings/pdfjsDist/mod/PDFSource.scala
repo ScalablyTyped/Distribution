@@ -179,163 +179,111 @@ trait PDFSource extends StObject {
 }
 object PDFSource {
   
-  @scala.inline
-  def apply(): PDFSource = {
+  inline def apply(): PDFSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PDFSource]
   }
   
-  @scala.inline
-  implicit class PDFSourceMutableBuilder[Self <: PDFSource] (val x: Self) extends AnyVal {
+  extension [Self <: PDFSource](x: Self) {
     
-    @scala.inline
-    def setCMapPacked(value: Boolean): Self = StObject.set(x, "cMapPacked", value.asInstanceOf[js.Any])
+    inline def setCMapPacked(value: Boolean): Self = StObject.set(x, "cMapPacked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCMapPackedUndefined: Self = StObject.set(x, "cMapPacked", js.undefined)
+    inline def setCMapPackedUndefined: Self = StObject.set(x, "cMapPacked", js.undefined)
     
-    @scala.inline
-    def setCMapReaderFactory(value: js.Any): Self = StObject.set(x, "CMapReaderFactory", value.asInstanceOf[js.Any])
+    inline def setCMapReaderFactory(value: js.Any): Self = StObject.set(x, "CMapReaderFactory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCMapReaderFactoryUndefined: Self = StObject.set(x, "CMapReaderFactory", js.undefined)
+    inline def setCMapReaderFactoryUndefined: Self = StObject.set(x, "CMapReaderFactory", js.undefined)
     
-    @scala.inline
-    def setCMapUrl(value: String): Self = StObject.set(x, "cMapUrl", value.asInstanceOf[js.Any])
+    inline def setCMapUrl(value: String): Self = StObject.set(x, "cMapUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCMapUrlUndefined: Self = StObject.set(x, "cMapUrl", js.undefined)
+    inline def setCMapUrlUndefined: Self = StObject.set(x, "cMapUrl", js.undefined)
     
-    @scala.inline
-    def setData(value: Uint8Array | BufferSource | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Uint8Array | BufferSource | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDisableAutoFetch(value: Boolean): Self = StObject.set(x, "disableAutoFetch", value.asInstanceOf[js.Any])
+    inline def setDisableAutoFetch(value: Boolean): Self = StObject.set(x, "disableAutoFetch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableAutoFetchUndefined: Self = StObject.set(x, "disableAutoFetch", js.undefined)
+    inline def setDisableAutoFetchUndefined: Self = StObject.set(x, "disableAutoFetch", js.undefined)
     
-    @scala.inline
-    def setDisableCreateObjectURL(value: Boolean): Self = StObject.set(x, "disableCreateObjectURL", value.asInstanceOf[js.Any])
+    inline def setDisableCreateObjectURL(value: Boolean): Self = StObject.set(x, "disableCreateObjectURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableCreateObjectURLUndefined: Self = StObject.set(x, "disableCreateObjectURL", js.undefined)
+    inline def setDisableCreateObjectURLUndefined: Self = StObject.set(x, "disableCreateObjectURL", js.undefined)
     
-    @scala.inline
-    def setDisableFontFace(value: Boolean): Self = StObject.set(x, "disableFontFace", value.asInstanceOf[js.Any])
+    inline def setDisableFontFace(value: Boolean): Self = StObject.set(x, "disableFontFace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableFontFaceUndefined: Self = StObject.set(x, "disableFontFace", js.undefined)
+    inline def setDisableFontFaceUndefined: Self = StObject.set(x, "disableFontFace", js.undefined)
     
-    @scala.inline
-    def setDisableRange(value: Boolean): Self = StObject.set(x, "disableRange", value.asInstanceOf[js.Any])
+    inline def setDisableRange(value: Boolean): Self = StObject.set(x, "disableRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableRangeUndefined: Self = StObject.set(x, "disableRange", js.undefined)
+    inline def setDisableRangeUndefined: Self = StObject.set(x, "disableRange", js.undefined)
     
-    @scala.inline
-    def setDisableStream(value: Boolean): Self = StObject.set(x, "disableStream", value.asInstanceOf[js.Any])
+    inline def setDisableStream(value: Boolean): Self = StObject.set(x, "disableStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableStreamUndefined: Self = StObject.set(x, "disableStream", js.undefined)
+    inline def setDisableStreamUndefined: Self = StObject.set(x, "disableStream", js.undefined)
     
-    @scala.inline
-    def setDocBaseUrl(value: String): Self = StObject.set(x, "docBaseUrl", value.asInstanceOf[js.Any])
+    inline def setDocBaseUrl(value: String): Self = StObject.set(x, "docBaseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocBaseUrlUndefined: Self = StObject.set(x, "docBaseUrl", js.undefined)
+    inline def setDocBaseUrlUndefined: Self = StObject.set(x, "docBaseUrl", js.undefined)
     
-    @scala.inline
-    def setHttpHeaders(value: StringDictionary[String]): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
+    inline def setHttpHeaders(value: StringDictionary[String]): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
+    inline def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
     
-    @scala.inline
-    def setInitialData(value: Uint8Array | BufferSource): Self = StObject.set(x, "initialData", value.asInstanceOf[js.Any])
+    inline def setInitialData(value: Uint8Array | BufferSource): Self = StObject.set(x, "initialData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialDataUndefined: Self = StObject.set(x, "initialData", js.undefined)
+    inline def setInitialDataUndefined: Self = StObject.set(x, "initialData", js.undefined)
     
-    @scala.inline
-    def setIsEvalSupported(value: Boolean): Self = StObject.set(x, "isEvalSupported", value.asInstanceOf[js.Any])
+    inline def setIsEvalSupported(value: Boolean): Self = StObject.set(x, "isEvalSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEvalSupportedUndefined: Self = StObject.set(x, "isEvalSupported", js.undefined)
+    inline def setIsEvalSupportedUndefined: Self = StObject.set(x, "isEvalSupported", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setMaxImageSize(value: Double): Self = StObject.set(x, "maxImageSize", value.asInstanceOf[js.Any])
+    inline def setMaxImageSize(value: Double): Self = StObject.set(x, "maxImageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxImageSizeUndefined: Self = StObject.set(x, "maxImageSize", js.undefined)
+    inline def setMaxImageSizeUndefined: Self = StObject.set(x, "maxImageSize", js.undefined)
     
-    @scala.inline
-    def setNativeImageDecoderSupport(value: decode | display | none): Self = StObject.set(x, "nativeImageDecoderSupport", value.asInstanceOf[js.Any])
+    inline def setNativeImageDecoderSupport(value: decode | display | none): Self = StObject.set(x, "nativeImageDecoderSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeImageDecoderSupportUndefined: Self = StObject.set(x, "nativeImageDecoderSupport", js.undefined)
+    inline def setNativeImageDecoderSupportUndefined: Self = StObject.set(x, "nativeImageDecoderSupport", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPdfBug(value: Boolean): Self = StObject.set(x, "pdfBug", value.asInstanceOf[js.Any])
+    inline def setPdfBug(value: Boolean): Self = StObject.set(x, "pdfBug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPdfBugUndefined: Self = StObject.set(x, "pdfBug", js.undefined)
+    inline def setPdfBugUndefined: Self = StObject.set(x, "pdfBug", js.undefined)
     
-    @scala.inline
-    def setRange(value: PDFDataRangeTransport): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: PDFDataRangeTransport): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeChunkSize(value: Double): Self = StObject.set(x, "rangeChunkSize", value.asInstanceOf[js.Any])
+    inline def setRangeChunkSize(value: Double): Self = StObject.set(x, "rangeChunkSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeChunkSizeUndefined: Self = StObject.set(x, "rangeChunkSize", js.undefined)
+    inline def setRangeChunkSizeUndefined: Self = StObject.set(x, "rangeChunkSize", js.undefined)
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setStopAtErrors(value: Boolean): Self = StObject.set(x, "stopAtErrors", value.asInstanceOf[js.Any])
+    inline def setStopAtErrors(value: Boolean): Self = StObject.set(x, "stopAtErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopAtErrorsUndefined: Self = StObject.set(x, "stopAtErrors", js.undefined)
+    inline def setStopAtErrorsUndefined: Self = StObject.set(x, "stopAtErrors", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setVerbosity(value: Double): Self = StObject.set(x, "verbosity", value.asInstanceOf[js.Any])
+    inline def setVerbosity(value: Double): Self = StObject.set(x, "verbosity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbosityUndefined: Self = StObject.set(x, "verbosity", js.undefined)
+    inline def setVerbosityUndefined: Self = StObject.set(x, "verbosity", js.undefined)
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     
-    @scala.inline
-    def setWorker(value: PDFWorker): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
+    inline def setWorker(value: PDFWorker): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
+    inline def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
   }
 }

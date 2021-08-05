@@ -24,19 +24,15 @@ trait ASPxClientDateNavigatorVisibleMonthChangedEventArgs
 }
 object ASPxClientDateNavigatorVisibleMonthChangedEventArgs {
   
-  @scala.inline
-  def apply(endDate: Date, startDate: Date): ASPxClientDateNavigatorVisibleMonthChangedEventArgs = {
+  inline def apply(endDate: Date, startDate: Date): ASPxClientDateNavigatorVisibleMonthChangedEventArgs = {
     val __obj = js.Dynamic.literal(endDate = endDate.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDateNavigatorVisibleMonthChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDateNavigatorVisibleMonthChangedEventArgsMutableBuilder[Self <: ASPxClientDateNavigatorVisibleMonthChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDateNavigatorVisibleMonthChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
   }
 }

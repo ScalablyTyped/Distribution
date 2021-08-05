@@ -13,8 +13,7 @@ object inputItemStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): InputItemStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[InputItemStyle]
+  inline def default(theme: Theme): InputItemStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[InputItemStyle]
   
   trait InputItemStyle extends StObject {
     
@@ -36,8 +35,7 @@ object inputItemStyleMod {
   }
   object InputItemStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: ViewStyle,
       container: ViewStyle,
       errorIcon: ViewStyle,
@@ -51,32 +49,23 @@ object inputItemStyleMod {
       __obj.asInstanceOf[InputItemStyle]
     }
     
-    @scala.inline
-    implicit class InputItemStyleMutableBuilder[Self <: InputItemStyle] (val x: Self) extends AnyVal {
+    extension [Self <: InputItemStyle](x: Self) {
       
-      @scala.inline
-      def setClear(value: ViewStyle): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: ViewStyle): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorIcon(value: ViewStyle): Self = StObject.set(x, "errorIcon", value.asInstanceOf[js.Any])
+      inline def setErrorIcon(value: ViewStyle): Self = StObject.set(x, "errorIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtra(value: TextStyle): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: TextStyle): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputDisabled(value: TextStyle): Self = StObject.set(x, "inputDisabled", value.asInstanceOf[js.Any])
+      inline def setInputDisabled(value: TextStyle): Self = StObject.set(x, "inputDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputErrorColor(value: TextStyle): Self = StObject.set(x, "inputErrorColor", value.asInstanceOf[js.Any])
+      inline def setInputErrorColor(value: TextStyle): Self = StObject.set(x, "inputErrorColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: TextStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: TextStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

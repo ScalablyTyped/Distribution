@@ -24,61 +24,43 @@ trait ChartTooltipItem extends StObject {
 }
 object ChartTooltipItem {
   
-  @scala.inline
-  def apply(): ChartTooltipItem = {
+  inline def apply(): ChartTooltipItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartTooltipItem]
   }
   
-  @scala.inline
-  implicit class ChartTooltipItemMutableBuilder[Self <: ChartTooltipItem] (val x: Self) extends AnyVal {
+  extension [Self <: ChartTooltipItem](x: Self) {
     
-    @scala.inline
-    def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
+    inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetIndexUndefined: Self = StObject.set(x, "datasetIndex", js.undefined)
+    inline def setDatasetIndexUndefined: Self = StObject.set(x, "datasetIndex", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXLabel(value: String | Double): Self = StObject.set(x, "xLabel", value.asInstanceOf[js.Any])
+    inline def setXLabel(value: String | Double): Self = StObject.set(x, "xLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXLabelUndefined: Self = StObject.set(x, "xLabel", js.undefined)
+    inline def setXLabelUndefined: Self = StObject.set(x, "xLabel", js.undefined)
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYLabel(value: String | Double): Self = StObject.set(x, "yLabel", value.asInstanceOf[js.Any])
+    inline def setYLabel(value: String | Double): Self = StObject.set(x, "yLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYLabelUndefined: Self = StObject.set(x, "yLabel", js.undefined)
+    inline def setYLabelUndefined: Self = StObject.set(x, "yLabel", js.undefined)
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

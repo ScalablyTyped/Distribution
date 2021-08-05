@@ -10,6 +10,5 @@ object iconMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

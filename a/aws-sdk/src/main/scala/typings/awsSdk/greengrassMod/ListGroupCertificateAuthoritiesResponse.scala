@@ -13,22 +13,17 @@ trait ListGroupCertificateAuthoritiesResponse extends StObject {
 }
 object ListGroupCertificateAuthoritiesResponse {
   
-  @scala.inline
-  def apply(): ListGroupCertificateAuthoritiesResponse = {
+  inline def apply(): ListGroupCertificateAuthoritiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGroupCertificateAuthoritiesResponse]
   }
   
-  @scala.inline
-  implicit class ListGroupCertificateAuthoritiesResponseMutableBuilder[Self <: ListGroupCertificateAuthoritiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListGroupCertificateAuthoritiesResponse](x: Self) {
     
-    @scala.inline
-    def setGroupCertificateAuthorities(value: listOfGroupCertificateAuthorityProperties): Self = StObject.set(x, "GroupCertificateAuthorities", value.asInstanceOf[js.Any])
+    inline def setGroupCertificateAuthorities(value: listOfGroupCertificateAuthorityProperties): Self = StObject.set(x, "GroupCertificateAuthorities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupCertificateAuthoritiesUndefined: Self = StObject.set(x, "GroupCertificateAuthorities", js.undefined)
+    inline def setGroupCertificateAuthoritiesUndefined: Self = StObject.set(x, "GroupCertificateAuthorities", js.undefined)
     
-    @scala.inline
-    def setGroupCertificateAuthoritiesVarargs(value: GroupCertificateAuthorityProperties*): Self = StObject.set(x, "GroupCertificateAuthorities", js.Array(value :_*))
+    inline def setGroupCertificateAuthoritiesVarargs(value: GroupCertificateAuthorityProperties*): Self = StObject.set(x, "GroupCertificateAuthorities", js.Array(value :_*))
   }
 }

@@ -75,70 +75,49 @@ trait DirectionsFeatureSetProperties
 }
 object DirectionsFeatureSetProperties {
   
-  @scala.inline
-  def apply(): DirectionsFeatureSetProperties = {
+  inline def apply(): DirectionsFeatureSetProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectionsFeatureSetProperties]
   }
   
-  @scala.inline
-  implicit class DirectionsFeatureSetPropertiesMutableBuilder[Self <: DirectionsFeatureSetProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsFeatureSetProperties](x: Self) {
     
-    @scala.inline
-    def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
-    @scala.inline
-    def setGeometryType(value: polyline): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    inline def setGeometryType(value: polyline): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
+    inline def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
     
-    @scala.inline
-    def setMergedGeometry(value: PolylineProperties): Self = StObject.set(x, "mergedGeometry", value.asInstanceOf[js.Any])
+    inline def setMergedGeometry(value: PolylineProperties): Self = StObject.set(x, "mergedGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergedGeometryUndefined: Self = StObject.set(x, "mergedGeometry", js.undefined)
+    inline def setMergedGeometryUndefined: Self = StObject.set(x, "mergedGeometry", js.undefined)
     
-    @scala.inline
-    def setRouteId(value: String): Self = StObject.set(x, "routeId", value.asInstanceOf[js.Any])
+    inline def setRouteId(value: String): Self = StObject.set(x, "routeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteIdUndefined: Self = StObject.set(x, "routeId", js.undefined)
+    inline def setRouteIdUndefined: Self = StObject.set(x, "routeId", js.undefined)
     
-    @scala.inline
-    def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
+    inline def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteNameUndefined: Self = StObject.set(x, "routeName", js.undefined)
+    inline def setRouteNameUndefined: Self = StObject.set(x, "routeName", js.undefined)
     
-    @scala.inline
-    def setStrings(value: js.Array[js.Any]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+    inline def setStrings(value: js.Array[js.Any]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
+    inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
     
-    @scala.inline
-    def setStringsVarargs(value: js.Any*): Self = StObject.set(x, "strings", js.Array(value :_*))
+    inline def setStringsVarargs(value: js.Any*): Self = StObject.set(x, "strings", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalDriveTime(value: Double): Self = StObject.set(x, "totalDriveTime", value.asInstanceOf[js.Any])
+    inline def setTotalDriveTime(value: Double): Self = StObject.set(x, "totalDriveTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalDriveTimeUndefined: Self = StObject.set(x, "totalDriveTime", js.undefined)
+    inline def setTotalDriveTimeUndefined: Self = StObject.set(x, "totalDriveTime", js.undefined)
     
-    @scala.inline
-    def setTotalLength(value: Double): Self = StObject.set(x, "totalLength", value.asInstanceOf[js.Any])
+    inline def setTotalLength(value: Double): Self = StObject.set(x, "totalLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalLengthUndefined: Self = StObject.set(x, "totalLength", js.undefined)
+    inline def setTotalLengthUndefined: Self = StObject.set(x, "totalLength", js.undefined)
     
-    @scala.inline
-    def setTotalTime(value: Double): Self = StObject.set(x, "totalTime", value.asInstanceOf[js.Any])
+    inline def setTotalTime(value: Double): Self = StObject.set(x, "totalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalTimeUndefined: Self = StObject.set(x, "totalTime", js.undefined)
+    inline def setTotalTimeUndefined: Self = StObject.set(x, "totalTime", js.undefined)
   }
 }

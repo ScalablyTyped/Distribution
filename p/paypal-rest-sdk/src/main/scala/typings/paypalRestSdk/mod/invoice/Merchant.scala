@@ -19,37 +19,27 @@ trait Merchant
 }
 object Merchant {
   
-  @scala.inline
-  def apply(): Merchant = {
+  inline def apply(): Merchant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Merchant]
   }
   
-  @scala.inline
-  implicit class MerchantMutableBuilder[Self <: Merchant] (val x: Self) extends AnyVal {
+  extension [Self <: Merchant](x: Self) {
     
-    @scala.inline
-    def setAdditional_info(value: String): Self = StObject.set(x, "additional_info", value.asInstanceOf[js.Any])
+    inline def setAdditional_info(value: String): Self = StObject.set(x, "additional_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditional_infoUndefined: Self = StObject.set(x, "additional_info", js.undefined)
+    inline def setAdditional_infoUndefined: Self = StObject.set(x, "additional_info", js.undefined)
     
-    @scala.inline
-    def setAdditional_info_label(value: String): Self = StObject.set(x, "additional_info_label", value.asInstanceOf[js.Any])
+    inline def setAdditional_info_label(value: String): Self = StObject.set(x, "additional_info_label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditional_info_labelUndefined: Self = StObject.set(x, "additional_info_label", js.undefined)
+    inline def setAdditional_info_labelUndefined: Self = StObject.set(x, "additional_info_label", js.undefined)
     
-    @scala.inline
-    def setFax(value: Phone): Self = StObject.set(x, "fax", value.asInstanceOf[js.Any])
+    inline def setFax(value: Phone): Self = StObject.set(x, "fax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaxUndefined: Self = StObject.set(x, "fax", js.undefined)
+    inline def setFaxUndefined: Self = StObject.set(x, "fax", js.undefined)
     
-    @scala.inline
-    def setTax_id(value: String): Self = StObject.set(x, "tax_id", value.asInstanceOf[js.Any])
+    inline def setTax_id(value: String): Self = StObject.set(x, "tax_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTax_idUndefined: Self = StObject.set(x, "tax_id", js.undefined)
+    inline def setTax_idUndefined: Self = StObject.set(x, "tax_id", js.undefined)
   }
 }

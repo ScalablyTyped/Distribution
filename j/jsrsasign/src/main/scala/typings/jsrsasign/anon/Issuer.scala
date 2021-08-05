@@ -17,19 +17,15 @@ trait Issuer extends StObject {
 }
 object Issuer {
   
-  @scala.inline
-  def apply(issuer: StringParam, serial: DERInteger | IntegerParam | BigIntegerParam | HexParam | Double): Issuer = {
+  inline def apply(issuer: StringParam, serial: DERInteger | IntegerParam | BigIntegerParam | HexParam | Double): Issuer = {
     val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any])
     __obj.asInstanceOf[Issuer]
   }
   
-  @scala.inline
-  implicit class IssuerMutableBuilder[Self <: Issuer] (val x: Self) extends AnyVal {
+  extension [Self <: Issuer](x: Self) {
     
-    @scala.inline
-    def setIssuer(value: StringParam): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: StringParam): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerial(value: DERInteger | IntegerParam | BigIntegerParam | HexParam | Double): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+    inline def setSerial(value: DERInteger | IntegerParam | BigIntegerParam | HexParam | Double): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
   }
 }

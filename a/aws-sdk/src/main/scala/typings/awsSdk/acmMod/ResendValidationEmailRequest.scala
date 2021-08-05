@@ -23,22 +23,17 @@ trait ResendValidationEmailRequest extends StObject {
 }
 object ResendValidationEmailRequest {
   
-  @scala.inline
-  def apply(CertificateArn: Arn, Domain: DomainNameString, ValidationDomain: DomainNameString): ResendValidationEmailRequest = {
+  inline def apply(CertificateArn: Arn, Domain: DomainNameString, ValidationDomain: DomainNameString): ResendValidationEmailRequest = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any], Domain = Domain.asInstanceOf[js.Any], ValidationDomain = ValidationDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResendValidationEmailRequest]
   }
   
-  @scala.inline
-  implicit class ResendValidationEmailRequestMutableBuilder[Self <: ResendValidationEmailRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResendValidationEmailRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomain(value: DomainNameString): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainNameString): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationDomain(value: DomainNameString): Self = StObject.set(x, "ValidationDomain", value.asInstanceOf[js.Any])
+    inline def setValidationDomain(value: DomainNameString): Self = StObject.set(x, "ValidationDomain", value.asInstanceOf[js.Any])
   }
 }

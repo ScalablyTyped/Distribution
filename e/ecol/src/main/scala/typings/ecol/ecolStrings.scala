@@ -11,20 +11,17 @@ object ecolStrings {
   sealed trait erase
     extends StObject
        with Type
-  @scala.inline
-  def erase: erase = "erase".asInstanceOf[erase]
+  inline def erase: erase = "erase".asInstanceOf[erase]
   
   @js.native
   sealed trait insert
     extends StObject
        with Type
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
+  inline def insert: insert = "insert".asInstanceOf[insert]
   
   @js.native
   sealed trait refresh
     extends StObject
        with Type
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
+  inline def refresh: refresh = "refresh".asInstanceOf[refresh]
 }

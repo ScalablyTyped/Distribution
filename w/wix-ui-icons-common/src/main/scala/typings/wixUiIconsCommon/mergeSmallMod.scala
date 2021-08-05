@@ -22,20 +22,16 @@ object mergeSmallMod extends Shortcut {
   }
   object MergeSmallProps {
     
-    @scala.inline
-    def apply(): MergeSmallProps = {
+    inline def apply(): MergeSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MergeSmallProps]
     }
     
-    @scala.inline
-    implicit class MergeSmallPropsMutableBuilder[Self <: MergeSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: MergeSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -23,25 +23,19 @@ trait InputDataConfig extends StObject {
 }
 object InputDataConfig {
   
-  @scala.inline
-  def apply(DataAccessRoleArn: DataAccessRoleArn, S3Uri: Uri): InputDataConfig = {
+  inline def apply(DataAccessRoleArn: DataAccessRoleArn, S3Uri: Uri): InputDataConfig = {
     val __obj = js.Dynamic.literal(DataAccessRoleArn = DataAccessRoleArn.asInstanceOf[js.Any], S3Uri = S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputDataConfig]
   }
   
-  @scala.inline
-  implicit class InputDataConfigMutableBuilder[Self <: InputDataConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InputDataConfig](x: Self) {
     
-    @scala.inline
-    def setDataAccessRoleArn(value: DataAccessRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
+    inline def setDataAccessRoleArn(value: DataAccessRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Uri(value: Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuningDataS3Uri(value: Uri): Self = StObject.set(x, "TuningDataS3Uri", value.asInstanceOf[js.Any])
+    inline def setTuningDataS3Uri(value: Uri): Self = StObject.set(x, "TuningDataS3Uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuningDataS3UriUndefined: Self = StObject.set(x, "TuningDataS3Uri", js.undefined)
+    inline def setTuningDataS3UriUndefined: Self = StObject.set(x, "TuningDataS3Uri", js.undefined)
   }
 }

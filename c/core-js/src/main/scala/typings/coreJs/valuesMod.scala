@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object valuesMod {
   
   /* was `typeof core.Array.values` */
-  @scala.inline
-  def apply[T](array: ArrayLike[T]): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[T]]
+  inline def apply[T](array: ArrayLike[T]): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[T]]
   
   @JSImport("core-js/fn/array/values", JSImport.Namespace)
   @js.native

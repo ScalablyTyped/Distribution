@@ -19,25 +19,19 @@ trait PointStatesInactiveOptionsObject extends StObject {
 }
 object PointStatesInactiveOptionsObject {
   
-  @scala.inline
-  def apply(): PointStatesInactiveOptionsObject = {
+  inline def apply(): PointStatesInactiveOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointStatesInactiveOptionsObject]
   }
   
-  @scala.inline
-  implicit class PointStatesInactiveOptionsObjectMutableBuilder[Self <: PointStatesInactiveOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: PointStatesInactiveOptionsObject](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

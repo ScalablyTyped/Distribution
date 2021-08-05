@@ -16,18 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaskStatus extends StObject
 object TaskStatus {
   
-  @scala.inline
-  def completed: completed_ = "completed".asInstanceOf[completed_]
+  inline def completed: completed_ = "completed".asInstanceOf[completed_]
   
-  @scala.inline
-  def deferred: typings.microsoftGraph.microsoftGraphStrings.deferred = "deferred".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deferred]
+  inline def deferred: typings.microsoftGraph.microsoftGraphStrings.deferred = "deferred".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deferred]
   
-  @scala.inline
-  def inProgress: typings.microsoftGraph.microsoftGraphStrings.inProgress = "inProgress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inProgress]
+  inline def inProgress: typings.microsoftGraph.microsoftGraphStrings.inProgress = "inProgress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inProgress]
   
-  @scala.inline
-  def notStarted: notStarted_ = "notStarted".asInstanceOf[notStarted_]
+  inline def notStarted: notStarted_ = "notStarted".asInstanceOf[notStarted_]
   
-  @scala.inline
-  def waitingOnOthers: typings.microsoftGraph.microsoftGraphStrings.waitingOnOthers = "waitingOnOthers".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.waitingOnOthers]
+  inline def waitingOnOthers: typings.microsoftGraph.microsoftGraphStrings.waitingOnOthers = "waitingOnOthers".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.waitingOnOthers]
 }

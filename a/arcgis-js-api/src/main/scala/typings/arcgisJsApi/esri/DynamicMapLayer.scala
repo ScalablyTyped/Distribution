@@ -34,8 +34,7 @@ trait DynamicMapLayer
 }
 object DynamicMapLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     gdbVersion: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -47,16 +46,12 @@ object DynamicMapLayer {
     __obj.asInstanceOf[DynamicMapLayer]
   }
   
-  @scala.inline
-  implicit class DynamicMapLayerMutableBuilder[Self <: DynamicMapLayer] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicMapLayer](x: Self) {
     
-    @scala.inline
-    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
+    inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapLayerId(value: Double): Self = StObject.set(x, "mapLayerId", value.asInstanceOf[js.Any])
+    inline def setMapLayerId(value: Double): Self = StObject.set(x, "mapLayerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `map-layer`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `map-layer`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

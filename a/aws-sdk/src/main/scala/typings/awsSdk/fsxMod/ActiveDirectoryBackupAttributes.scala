@@ -18,25 +18,19 @@ trait ActiveDirectoryBackupAttributes extends StObject {
 }
 object ActiveDirectoryBackupAttributes {
   
-  @scala.inline
-  def apply(): ActiveDirectoryBackupAttributes = {
+  inline def apply(): ActiveDirectoryBackupAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActiveDirectoryBackupAttributes]
   }
   
-  @scala.inline
-  implicit class ActiveDirectoryBackupAttributesMutableBuilder[Self <: ActiveDirectoryBackupAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveDirectoryBackupAttributes](x: Self) {
     
-    @scala.inline
-    def setActiveDirectoryId(value: DirectoryId): Self = StObject.set(x, "ActiveDirectoryId", value.asInstanceOf[js.Any])
+    inline def setActiveDirectoryId(value: DirectoryId): Self = StObject.set(x, "ActiveDirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveDirectoryIdUndefined: Self = StObject.set(x, "ActiveDirectoryId", js.undefined)
+    inline def setActiveDirectoryIdUndefined: Self = StObject.set(x, "ActiveDirectoryId", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: ActiveDirectoryFullyQualifiedName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: ActiveDirectoryFullyQualifiedName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
   }
 }

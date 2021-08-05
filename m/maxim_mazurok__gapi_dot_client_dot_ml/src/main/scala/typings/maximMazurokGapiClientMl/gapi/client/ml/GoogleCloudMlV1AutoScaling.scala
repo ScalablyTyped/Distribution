@@ -29,34 +29,25 @@ trait GoogleCloudMlV1AutoScaling extends StObject {
 }
 object GoogleCloudMlV1AutoScaling {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1AutoScaling = {
+  inline def apply(): GoogleCloudMlV1AutoScaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1AutoScaling]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1AutoScalingMutableBuilder[Self <: GoogleCloudMlV1AutoScaling] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1AutoScaling](x: Self) {
     
-    @scala.inline
-    def setMaxNodes(value: Double): Self = StObject.set(x, "maxNodes", value.asInstanceOf[js.Any])
+    inline def setMaxNodes(value: Double): Self = StObject.set(x, "maxNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNodesUndefined: Self = StObject.set(x, "maxNodes", js.undefined)
+    inline def setMaxNodesUndefined: Self = StObject.set(x, "maxNodes", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[GoogleCloudMlV1MetricSpec]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[GoogleCloudMlV1MetricSpec]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: GoogleCloudMlV1MetricSpec*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: GoogleCloudMlV1MetricSpec*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setMinNodes(value: Double): Self = StObject.set(x, "minNodes", value.asInstanceOf[js.Any])
+    inline def setMinNodes(value: Double): Self = StObject.set(x, "minNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinNodesUndefined: Self = StObject.set(x, "minNodes", js.undefined)
+    inline def setMinNodesUndefined: Self = StObject.set(x, "minNodes", js.undefined)
   }
 }

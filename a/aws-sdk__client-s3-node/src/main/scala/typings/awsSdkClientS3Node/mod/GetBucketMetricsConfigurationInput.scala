@@ -9,8 +9,7 @@ trait GetBucketMetricsConfigurationInput
      with typings.awsSdkClientS3Node.typesGetBucketMetricsConfigurationInputMod.GetBucketMetricsConfigurationInput
 object GetBucketMetricsConfigurationInput {
   
-  @scala.inline
-  def apply(Bucket: String, Id: String): GetBucketMetricsConfigurationInput = {
+  inline def apply(Bucket: String, Id: String): GetBucketMetricsConfigurationInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketMetricsConfigurationInput]
   }

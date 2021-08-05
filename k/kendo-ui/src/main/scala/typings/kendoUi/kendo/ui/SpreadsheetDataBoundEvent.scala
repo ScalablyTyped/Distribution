@@ -13,19 +13,15 @@ trait SpreadsheetDataBoundEvent
 }
 object SpreadsheetDataBoundEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Spreadsheet): SpreadsheetDataBoundEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Spreadsheet): SpreadsheetDataBoundEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetDataBoundEvent]
   }
   
-  @scala.inline
-  implicit class SpreadsheetDataBoundEventMutableBuilder[Self <: SpreadsheetDataBoundEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetDataBoundEvent](x: Self) {
     
-    @scala.inline
-    def setSheet(value: Sheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
+    inline def setSheet(value: Sheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
+    inline def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
   }
 }

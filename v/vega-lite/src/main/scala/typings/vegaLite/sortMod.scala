@@ -17,17 +17,13 @@ object sortMod {
   @js.native
   val DEFAULT_SORT_OP: /* "min" */ String = js.native
   
-  @scala.inline
-  def isSortArray[F](sort: Sort[F]): /* is vega-lite.vega-lite/build/src/sort.SortArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSortArray")(sort.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/sort.SortArray */ Boolean]
+  inline def isSortArray[F](sort: Sort[F]): /* is vega-lite.vega-lite/build/src/sort.SortArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSortArray")(sort.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/sort.SortArray */ Boolean]
   
-  @scala.inline
-  def isSortByChannel(c: String): /* is vega-lite.vega-lite/build/src/sort.SortByChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSortByChannel")(c.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/sort.SortByChannel */ Boolean]
+  inline def isSortByChannel(c: String): /* is vega-lite.vega-lite/build/src/sort.SortByChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSortByChannel")(c.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/sort.SortByChannel */ Boolean]
   
-  @scala.inline
-  def isSortByEncoding[F](sort: Sort[F]): /* is vega-lite.vega-lite/build/src/sort.SortByEncoding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSortByEncoding")(sort.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/sort.SortByEncoding */ Boolean]
+  inline def isSortByEncoding[F](sort: Sort[F]): /* is vega-lite.vega-lite/build/src/sort.SortByEncoding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSortByEncoding")(sort.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/sort.SortByEncoding */ Boolean]
   
-  @scala.inline
-  def isSortField[F](sort: Sort[F]): /* is vega-lite.vega-lite/build/src/sort.EncodingSortField<F> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSortField")(sort.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/sort.EncodingSortField<F> */ Boolean]
+  inline def isSortField[F](sort: Sort[F]): /* is vega-lite.vega-lite/build/src/sort.EncodingSortField<F> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSortField")(sort.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/sort.EncodingSortField<F> */ Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.sortMod.SortOrder
@@ -67,35 +63,26 @@ object sortMod {
   }
   object EncodingSortField {
     
-    @scala.inline
-    def apply[F](): EncodingSortField[F] = {
+    inline def apply[F](): EncodingSortField[F] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncodingSortField[F]]
     }
     
-    @scala.inline
-    implicit class EncodingSortFieldMutableBuilder[Self <: EncodingSortField[?], F] (val x: Self & EncodingSortField[F]) extends AnyVal {
+    extension [Self <: EncodingSortField[?], F](x: Self & EncodingSortField[F]) {
       
-      @scala.inline
-      def setField(value: F): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: F): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+      inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
-      @scala.inline
-      def setOp(value: NonArgAggregateOp): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: NonArgAggregateOp): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+      inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
       
-      @scala.inline
-      def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderNull: Self = StObject.set(x, "order", null)
+      inline def setOrderNull: Self = StObject.set(x, "order", null)
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -147,41 +134,29 @@ object sortMod {
        with AllSortString
   object SortByChannelDesc {
     
-    @scala.inline
-    def `-color`: typings.vegaLite.vegaLiteStrings.`-color` = "-color".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-color`]
+    inline def `-color`: typings.vegaLite.vegaLiteStrings.`-color` = "-color".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-color`]
     
-    @scala.inline
-    def `-fill`: typings.vegaLite.vegaLiteStrings.`-fill` = "-fill".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-fill`]
+    inline def `-fill`: typings.vegaLite.vegaLiteStrings.`-fill` = "-fill".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-fill`]
     
-    @scala.inline
-    def `-fillOpacity`: typings.vegaLite.vegaLiteStrings.`-fillOpacity` = "-fillOpacity".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-fillOpacity`]
+    inline def `-fillOpacity`: typings.vegaLite.vegaLiteStrings.`-fillOpacity` = "-fillOpacity".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-fillOpacity`]
     
-    @scala.inline
-    def `-opacity`: typings.vegaLite.vegaLiteStrings.`-opacity` = "-opacity".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-opacity`]
+    inline def `-opacity`: typings.vegaLite.vegaLiteStrings.`-opacity` = "-opacity".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-opacity`]
     
-    @scala.inline
-    def `-shape`: typings.vegaLite.vegaLiteStrings.`-shape` = "-shape".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-shape`]
+    inline def `-shape`: typings.vegaLite.vegaLiteStrings.`-shape` = "-shape".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-shape`]
     
-    @scala.inline
-    def `-size`: typings.vegaLite.vegaLiteStrings.`-size` = "-size".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-size`]
+    inline def `-size`: typings.vegaLite.vegaLiteStrings.`-size` = "-size".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-size`]
     
-    @scala.inline
-    def `-stroke`: typings.vegaLite.vegaLiteStrings.`-stroke` = "-stroke".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-stroke`]
+    inline def `-stroke`: typings.vegaLite.vegaLiteStrings.`-stroke` = "-stroke".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-stroke`]
     
-    @scala.inline
-    def `-strokeOpacity`: typings.vegaLite.vegaLiteStrings.`-strokeOpacity` = "-strokeOpacity".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-strokeOpacity`]
+    inline def `-strokeOpacity`: typings.vegaLite.vegaLiteStrings.`-strokeOpacity` = "-strokeOpacity".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-strokeOpacity`]
     
-    @scala.inline
-    def `-strokeWidth`: typings.vegaLite.vegaLiteStrings.`-strokeWidth` = "-strokeWidth".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-strokeWidth`]
+    inline def `-strokeWidth`: typings.vegaLite.vegaLiteStrings.`-strokeWidth` = "-strokeWidth".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-strokeWidth`]
     
-    @scala.inline
-    def `-text`: typings.vegaLite.vegaLiteStrings.`-text` = "-text".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-text`]
+    inline def `-text`: typings.vegaLite.vegaLiteStrings.`-text` = "-text".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-text`]
     
-    @scala.inline
-    def `-x`: typings.vegaLite.vegaLiteStrings.`-x` = "-x".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-x`]
+    inline def `-x`: typings.vegaLite.vegaLiteStrings.`-x` = "-x".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-x`]
     
-    @scala.inline
-    def `-y`: typings.vegaLite.vegaLiteStrings.`-y` = "-y".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-y`]
+    inline def `-y`: typings.vegaLite.vegaLiteStrings.`-y` = "-y".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-y`]
   }
   
   trait SortByEncoding
@@ -200,26 +175,20 @@ object sortMod {
   }
   object SortByEncoding {
     
-    @scala.inline
-    def apply(encoding: SortByChannel): SortByEncoding = {
+    inline def apply(encoding: SortByChannel): SortByEncoding = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[SortByEncoding]
     }
     
-    @scala.inline
-    implicit class SortByEncodingMutableBuilder[Self <: SortByEncoding] (val x: Self) extends AnyVal {
+    extension [Self <: SortByEncoding](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: SortByChannel): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: SortByChannel): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderNull: Self = StObject.set(x, "order", null)
+      inline def setOrderNull: Self = StObject.set(x, "order", null)
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -237,26 +206,20 @@ object sortMod {
   }
   object SortField {
     
-    @scala.inline
-    def apply(field: FieldName): SortField = {
+    inline def apply(field: FieldName): SortField = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
       __obj.asInstanceOf[SortField]
     }
     
-    @scala.inline
-    implicit class SortFieldMutableBuilder[Self <: SortField] (val x: Self) extends AnyVal {
+    extension [Self <: SortField](x: Self) {
       
-      @scala.inline
-      def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderNull: Self = StObject.set(x, "order", null)
+      inline def setOrderNull: Self = StObject.set(x, "order", null)
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -268,29 +231,22 @@ object sortMod {
   }
   object SortFields {
     
-    @scala.inline
-    def apply(field: js.Array[FieldName]): SortFields = {
+    inline def apply(field: js.Array[FieldName]): SortFields = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
       __obj.asInstanceOf[SortFields]
     }
     
-    @scala.inline
-    implicit class SortFieldsMutableBuilder[Self <: SortFields] (val x: Self) extends AnyVal {
+    extension [Self <: SortFields](x: Self) {
       
-      @scala.inline
-      def setField(value: js.Array[FieldName]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: js.Array[FieldName]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldVarargs(value: FieldName*): Self = StObject.set(x, "field", js.Array(value :_*))
+      inline def setFieldVarargs(value: FieldName*): Self = StObject.set(x, "field", js.Array(value :_*))
       
-      @scala.inline
-      def setOrder(value: js.Array[SortOrder]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: js.Array[SortOrder]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setOrderVarargs(value: SortOrder*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: SortOrder*): Self = StObject.set(x, "order", js.Array(value :_*))
     }
   }
   
@@ -303,11 +259,9 @@ object sortMod {
        with AllSortString
   object SortOrder {
     
-    @scala.inline
-    def ascending: typings.vegaLite.vegaLiteStrings.ascending = "ascending".asInstanceOf[typings.vegaLite.vegaLiteStrings.ascending]
+    inline def ascending: typings.vegaLite.vegaLiteStrings.ascending = "ascending".asInstanceOf[typings.vegaLite.vegaLiteStrings.ascending]
     
-    @scala.inline
-    def descending: typings.vegaLite.vegaLiteStrings.descending = "descending".asInstanceOf[typings.vegaLite.vegaLiteStrings.descending]
+    inline def descending: typings.vegaLite.vegaLiteStrings.descending = "descending".asInstanceOf[typings.vegaLite.vegaLiteStrings.descending]
   }
   
   trait _Sort[F] extends StObject

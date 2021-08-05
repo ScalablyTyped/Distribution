@@ -22,19 +22,15 @@ trait IJSError extends StObject {
 }
 object IJSError {
   
-  @scala.inline
-  def apply(error: String, error_description: String): IJSError = {
+  inline def apply(error: String, error_description: String): IJSError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], error_description = error_description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IJSError]
   }
   
-  @scala.inline
-  implicit class IJSErrorMutableBuilder[Self <: IJSError] (val x: Self) extends AnyVal {
+  extension [Self <: IJSError](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_description(value: String): Self = StObject.set(x, "error_description", value.asInstanceOf[js.Any])
+    inline def setError_description(value: String): Self = StObject.set(x, "error_description", value.asInstanceOf[js.Any])
   }
 }

@@ -119,21 +119,16 @@ object mltransformMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): MLTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MLTransform]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MLTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MLTransform]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MLTransformState): MLTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MLTransform]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MLTransformState, opts: CustomResourceOptions): MLTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MLTransform]
+    inline def get(name: String, id: Input[ID]): MLTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MLTransform]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MLTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MLTransform]
+    inline def get(name: String, id: Input[ID], state: MLTransformState): MLTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MLTransform]
+    inline def get(name: String, id: Input[ID], state: MLTransformState, opts: CustomResourceOptions): MLTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MLTransform]
     
     /**
       * Returns true if the given object is an instance of MLTransform.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/mltransform.MLTransform */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/mltransform.MLTransform */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/mltransform.MLTransform */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/mltransform.MLTransform */ Boolean]
   }
   
   trait MLTransformArgs extends StObject {
@@ -200,8 +195,7 @@ object mltransformMod {
   }
   object MLTransformArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       inputRecordTables: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.MLTransformInputRecordTable]]],
       parameters: Input[typings.pulumiAws.inputMod.glue.MLTransformParameters],
       roleArn: Input[String]
@@ -210,74 +204,51 @@ object mltransformMod {
       __obj.asInstanceOf[MLTransformArgs]
     }
     
-    @scala.inline
-    implicit class MLTransformArgsMutableBuilder[Self <: MLTransformArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MLTransformArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setGlueVersion(value: Input[String]): Self = StObject.set(x, "glueVersion", value.asInstanceOf[js.Any])
+      inline def setGlueVersion(value: Input[String]): Self = StObject.set(x, "glueVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlueVersionUndefined: Self = StObject.set(x, "glueVersion", js.undefined)
+      inline def setGlueVersionUndefined: Self = StObject.set(x, "glueVersion", js.undefined)
       
-      @scala.inline
-      def setInputRecordTables(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.MLTransformInputRecordTable]]]): Self = StObject.set(x, "inputRecordTables", value.asInstanceOf[js.Any])
+      inline def setInputRecordTables(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.MLTransformInputRecordTable]]]): Self = StObject.set(x, "inputRecordTables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRecordTablesVarargs(value: Input[typings.pulumiAws.inputMod.glue.MLTransformInputRecordTable]*): Self = StObject.set(x, "inputRecordTables", js.Array(value :_*))
+      inline def setInputRecordTablesVarargs(value: Input[typings.pulumiAws.inputMod.glue.MLTransformInputRecordTable]*): Self = StObject.set(x, "inputRecordTables", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxCapacity(value: Input[Double]): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
+      inline def setMaxCapacity(value: Input[Double]): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCapacityUndefined: Self = StObject.set(x, "maxCapacity", js.undefined)
+      inline def setMaxCapacityUndefined: Self = StObject.set(x, "maxCapacity", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Input[Double]): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Input[Double]): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNumberOfWorkers(value: Input[Double]): Self = StObject.set(x, "numberOfWorkers", value.asInstanceOf[js.Any])
+      inline def setNumberOfWorkers(value: Input[Double]): Self = StObject.set(x, "numberOfWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfWorkersUndefined: Self = StObject.set(x, "numberOfWorkers", js.undefined)
+      inline def setNumberOfWorkersUndefined: Self = StObject.set(x, "numberOfWorkers", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[typings.pulumiAws.inputMod.glue.MLTransformParameters]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[typings.pulumiAws.inputMod.glue.MLTransformParameters]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWorkerType(value: Input[String]): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
+      inline def setWorkerType(value: Input[String]): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
+      inline def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
     }
   }
   
@@ -362,110 +333,76 @@ object mltransformMod {
   }
   object MLTransformState {
     
-    @scala.inline
-    def apply(): MLTransformState = {
+    inline def apply(): MLTransformState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MLTransformState]
     }
     
-    @scala.inline
-    implicit class MLTransformStateMutableBuilder[Self <: MLTransformState] (val x: Self) extends AnyVal {
+    extension [Self <: MLTransformState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setGlueVersion(value: Input[String]): Self = StObject.set(x, "glueVersion", value.asInstanceOf[js.Any])
+      inline def setGlueVersion(value: Input[String]): Self = StObject.set(x, "glueVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlueVersionUndefined: Self = StObject.set(x, "glueVersion", js.undefined)
+      inline def setGlueVersionUndefined: Self = StObject.set(x, "glueVersion", js.undefined)
       
-      @scala.inline
-      def setInputRecordTables(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.MLTransformInputRecordTable]]]): Self = StObject.set(x, "inputRecordTables", value.asInstanceOf[js.Any])
+      inline def setInputRecordTables(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.MLTransformInputRecordTable]]]): Self = StObject.set(x, "inputRecordTables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRecordTablesUndefined: Self = StObject.set(x, "inputRecordTables", js.undefined)
+      inline def setInputRecordTablesUndefined: Self = StObject.set(x, "inputRecordTables", js.undefined)
       
-      @scala.inline
-      def setInputRecordTablesVarargs(value: Input[typings.pulumiAws.inputMod.glue.MLTransformInputRecordTable]*): Self = StObject.set(x, "inputRecordTables", js.Array(value :_*))
+      inline def setInputRecordTablesVarargs(value: Input[typings.pulumiAws.inputMod.glue.MLTransformInputRecordTable]*): Self = StObject.set(x, "inputRecordTables", js.Array(value :_*))
       
-      @scala.inline
-      def setLabelCount(value: Input[Double]): Self = StObject.set(x, "labelCount", value.asInstanceOf[js.Any])
+      inline def setLabelCount(value: Input[Double]): Self = StObject.set(x, "labelCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelCountUndefined: Self = StObject.set(x, "labelCount", js.undefined)
+      inline def setLabelCountUndefined: Self = StObject.set(x, "labelCount", js.undefined)
       
-      @scala.inline
-      def setMaxCapacity(value: Input[Double]): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
+      inline def setMaxCapacity(value: Input[Double]): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCapacityUndefined: Self = StObject.set(x, "maxCapacity", js.undefined)
+      inline def setMaxCapacityUndefined: Self = StObject.set(x, "maxCapacity", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Input[Double]): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Input[Double]): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNumberOfWorkers(value: Input[Double]): Self = StObject.set(x, "numberOfWorkers", value.asInstanceOf[js.Any])
+      inline def setNumberOfWorkers(value: Input[Double]): Self = StObject.set(x, "numberOfWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfWorkersUndefined: Self = StObject.set(x, "numberOfWorkers", js.undefined)
+      inline def setNumberOfWorkersUndefined: Self = StObject.set(x, "numberOfWorkers", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[typings.pulumiAws.inputMod.glue.MLTransformParameters]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[typings.pulumiAws.inputMod.glue.MLTransformParameters]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
       
-      @scala.inline
-      def setSchemas(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.MLTransformSchema]]]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+      inline def setSchemas(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.MLTransformSchema]]]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
+      inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
       
-      @scala.inline
-      def setSchemasVarargs(value: Input[typings.pulumiAws.inputMod.glue.MLTransformSchema]*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+      inline def setSchemasVarargs(value: Input[typings.pulumiAws.inputMod.glue.MLTransformSchema]*): Self = StObject.set(x, "schemas", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWorkerType(value: Input[String]): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
+      inline def setWorkerType(value: Input[String]): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
+      inline def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
     }
   }
 }

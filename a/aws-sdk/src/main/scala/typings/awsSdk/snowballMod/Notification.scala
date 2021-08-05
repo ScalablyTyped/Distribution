@@ -23,34 +23,25 @@ trait Notification extends StObject {
 }
 object Notification {
   
-  @scala.inline
-  def apply(): Notification = {
+  inline def apply(): Notification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Notification]
   }
   
-  @scala.inline
-  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
+  extension [Self <: Notification](x: Self) {
     
-    @scala.inline
-    def setJobStatesToNotify(value: JobStateList): Self = StObject.set(x, "JobStatesToNotify", value.asInstanceOf[js.Any])
+    inline def setJobStatesToNotify(value: JobStateList): Self = StObject.set(x, "JobStatesToNotify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStatesToNotifyUndefined: Self = StObject.set(x, "JobStatesToNotify", js.undefined)
+    inline def setJobStatesToNotifyUndefined: Self = StObject.set(x, "JobStatesToNotify", js.undefined)
     
-    @scala.inline
-    def setJobStatesToNotifyVarargs(value: JobState*): Self = StObject.set(x, "JobStatesToNotify", js.Array(value :_*))
+    inline def setJobStatesToNotifyVarargs(value: JobState*): Self = StObject.set(x, "JobStatesToNotify", js.Array(value :_*))
     
-    @scala.inline
-    def setNotifyAll(value: Boolean): Self = StObject.set(x, "NotifyAll", value.asInstanceOf[js.Any])
+    inline def setNotifyAll(value: Boolean): Self = StObject.set(x, "NotifyAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyAllUndefined: Self = StObject.set(x, "NotifyAll", js.undefined)
+    inline def setNotifyAllUndefined: Self = StObject.set(x, "NotifyAll", js.undefined)
     
-    @scala.inline
-    def setSnsTopicARN(value: SnsTopicARN): Self = StObject.set(x, "SnsTopicARN", value.asInstanceOf[js.Any])
+    inline def setSnsTopicARN(value: SnsTopicARN): Self = StObject.set(x, "SnsTopicARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsTopicARNUndefined: Self = StObject.set(x, "SnsTopicARN", js.undefined)
+    inline def setSnsTopicARNUndefined: Self = StObject.set(x, "SnsTopicARN", js.undefined)
   }
 }

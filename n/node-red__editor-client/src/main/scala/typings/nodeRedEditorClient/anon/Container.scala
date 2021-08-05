@@ -18,34 +18,25 @@ trait Container extends StObject {
 }
 object Container {
   
-  @scala.inline
-  def apply(container: JQuery[HTMLElement]): Container = {
+  inline def apply(container: JQuery[HTMLElement]): Container = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     __obj.asInstanceOf[Container]
   }
   
-  @scala.inline
-  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+  extension [Self <: Container](x: Self) {
     
-    @scala.inline
-    def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderTools(value: Boolean): Self = StObject.set(x, "folderTools", value.asInstanceOf[js.Any])
+    inline def setFolderTools(value: Boolean): Self = StObject.set(x, "folderTools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderToolsUndefined: Self = StObject.set(x, "folderTools", js.undefined)
+    inline def setFolderToolsUndefined: Self = StObject.set(x, "folderTools", js.undefined)
     
-    @scala.inline
-    def setOnconfirm(value: /* item */ js.Object => Unit): Self = StObject.set(x, "onconfirm", js.Any.fromFunction1(value))
+    inline def setOnconfirm(value: /* item */ js.Object => Unit): Self = StObject.set(x, "onconfirm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnconfirmUndefined: Self = StObject.set(x, "onconfirm", js.undefined)
+    inline def setOnconfirmUndefined: Self = StObject.set(x, "onconfirm", js.undefined)
     
-    @scala.inline
-    def setOnselect(value: /* item */ js.Object => Unit): Self = StObject.set(x, "onselect", js.Any.fromFunction1(value))
+    inline def setOnselect(value: /* item */ js.Object => Unit): Self = StObject.set(x, "onselect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnselectUndefined: Self = StObject.set(x, "onselect", js.undefined)
+    inline def setOnselectUndefined: Self = StObject.set(x, "onselect", js.undefined)
   }
 }

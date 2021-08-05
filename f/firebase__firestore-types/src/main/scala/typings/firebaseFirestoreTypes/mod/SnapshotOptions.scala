@@ -13,19 +13,15 @@ trait SnapshotOptions extends StObject {
 }
 object SnapshotOptions {
   
-  @scala.inline
-  def apply(): SnapshotOptions = {
+  inline def apply(): SnapshotOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotOptions]
   }
   
-  @scala.inline
-  implicit class SnapshotOptionsMutableBuilder[Self <: SnapshotOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotOptions](x: Self) {
     
-    @scala.inline
-    def setServerTimestamps(value: estimate | previous | none): Self = StObject.set(x, "serverTimestamps", value.asInstanceOf[js.Any])
+    inline def setServerTimestamps(value: estimate | previous | none): Self = StObject.set(x, "serverTimestamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerTimestampsUndefined: Self = StObject.set(x, "serverTimestamps", js.undefined)
+    inline def setServerTimestampsUndefined: Self = StObject.set(x, "serverTimestamps", js.undefined)
   }
 }

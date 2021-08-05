@@ -10,19 +10,15 @@ trait ChartLegendInactiveItems extends StObject {
 }
 object ChartLegendInactiveItems {
   
-  @scala.inline
-  def apply(): ChartLegendInactiveItems = {
+  inline def apply(): ChartLegendInactiveItems = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartLegendInactiveItems]
   }
   
-  @scala.inline
-  implicit class ChartLegendInactiveItemsMutableBuilder[Self <: ChartLegendInactiveItems] (val x: Self) extends AnyVal {
+  extension [Self <: ChartLegendInactiveItems](x: Self) {
     
-    @scala.inline
-    def setLabels(value: ChartLegendInactiveItemsLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: ChartLegendInactiveItemsLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }
 }

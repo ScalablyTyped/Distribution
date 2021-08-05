@@ -11,16 +11,13 @@ trait ValidatorsProviderProps[T /* <: js.Object */] extends StObject {
 }
 object ValidatorsProviderProps {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](validators: Record[String, CustomValidatorFunction[T]]): ValidatorsProviderProps[T] = {
+  inline def apply[T /* <: js.Object */](validators: Record[String, CustomValidatorFunction[T]]): ValidatorsProviderProps[T] = {
     val __obj = js.Dynamic.literal(validators = validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorsProviderProps[T]]
   }
   
-  @scala.inline
-  implicit class ValidatorsProviderPropsMutableBuilder[Self <: ValidatorsProviderProps[?], T /* <: js.Object */] (val x: Self & ValidatorsProviderProps[T]) extends AnyVal {
+  extension [Self <: ValidatorsProviderProps[?], T /* <: js.Object */](x: Self & ValidatorsProviderProps[T]) {
     
-    @scala.inline
-    def setValidators(value: Record[String, CustomValidatorFunction[T]]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: Record[String, CustomValidatorFunction[T]]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
   }
 }

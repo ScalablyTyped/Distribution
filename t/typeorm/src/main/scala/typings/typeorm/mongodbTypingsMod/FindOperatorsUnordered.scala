@@ -46,8 +46,7 @@ trait FindOperatorsUnordered extends StObject {
 }
 object FindOperatorsUnordered {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     length: scala.Double,
     remove: () => UnorderedBulkOperation,
     removeOne: () => UnorderedBulkOperation,
@@ -60,28 +59,20 @@ object FindOperatorsUnordered {
     __obj.asInstanceOf[FindOperatorsUnordered]
   }
   
-  @scala.inline
-  implicit class FindOperatorsUnorderedMutableBuilder[Self <: FindOperatorsUnordered] (val x: Self) extends AnyVal {
+  extension [Self <: FindOperatorsUnordered](x: Self) {
     
-    @scala.inline
-    def setLength(value: scala.Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: scala.Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: () => UnorderedBulkOperation): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => UnorderedBulkOperation): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveOne(value: () => UnorderedBulkOperation): Self = StObject.set(x, "removeOne", js.Any.fromFunction0(value))
+    inline def setRemoveOne(value: () => UnorderedBulkOperation): Self = StObject.set(x, "removeOne", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplaceOne(value: js.Object => UnorderedBulkOperation): Self = StObject.set(x, "replaceOne", js.Any.fromFunction1(value))
+    inline def setReplaceOne(value: js.Object => UnorderedBulkOperation): Self = StObject.set(x, "replaceOne", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: js.Object => UnorderedBulkOperation): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: js.Object => UnorderedBulkOperation): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateOne(value: js.Object => UnorderedBulkOperation): Self = StObject.set(x, "updateOne", js.Any.fromFunction1(value))
+    inline def setUpdateOne(value: js.Object => UnorderedBulkOperation): Self = StObject.set(x, "updateOne", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpsert(value: () => FindOperatorsUnordered): Self = StObject.set(x, "upsert", js.Any.fromFunction0(value))
+    inline def setUpsert(value: () => FindOperatorsUnordered): Self = StObject.set(x, "upsert", js.Any.fromFunction0(value))
   }
 }

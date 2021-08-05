@@ -34,8 +34,7 @@ trait XCompositeLayer
 }
 object XCompositeLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     listSubLayerIds: () => SafeArray[String],
     queryInterface: `type` => js.Any,
@@ -47,13 +46,10 @@ object XCompositeLayer {
     __obj.asInstanceOf[XCompositeLayer]
   }
   
-  @scala.inline
-  implicit class XCompositeLayerMutableBuilder[Self <: XCompositeLayer] (val x: Self) extends AnyVal {
+  extension [Self <: XCompositeLayer](x: Self) {
     
-    @scala.inline
-    def setListSubLayerIds(value: () => SafeArray[String]): Self = StObject.set(x, "listSubLayerIds", js.Any.fromFunction0(value))
+    inline def setListSubLayerIds(value: () => SafeArray[String]): Self = StObject.set(x, "listSubLayerIds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadSubLayerData(value: (XLayerHandler, String) => Unit): Self = StObject.set(x, "readSubLayerData", js.Any.fromFunction2(value))
+    inline def setReadSubLayerData(value: (XLayerHandler, String) => Unit): Self = StObject.set(x, "readSubLayerData", js.Any.fromFunction2(value))
   }
 }

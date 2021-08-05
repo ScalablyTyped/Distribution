@@ -18,25 +18,19 @@ trait ListIdentityProvidersResponse extends StObject {
 }
 object ListIdentityProvidersResponse {
   
-  @scala.inline
-  def apply(Providers: ProvidersListType): ListIdentityProvidersResponse = {
+  inline def apply(Providers: ProvidersListType): ListIdentityProvidersResponse = {
     val __obj = js.Dynamic.literal(Providers = Providers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIdentityProvidersResponse]
   }
   
-  @scala.inline
-  implicit class ListIdentityProvidersResponseMutableBuilder[Self <: ListIdentityProvidersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListIdentityProvidersResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationKeyType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationKeyType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setProviders(value: ProvidersListType): Self = StObject.set(x, "Providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: ProvidersListType): Self = StObject.set(x, "Providers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersVarargs(value: ProviderDescription*): Self = StObject.set(x, "Providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: ProviderDescription*): Self = StObject.set(x, "Providers", js.Array(value :_*))
   }
 }

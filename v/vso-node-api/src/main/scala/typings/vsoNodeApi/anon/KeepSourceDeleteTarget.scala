@@ -18,8 +18,7 @@ trait KeepSourceDeleteTarget extends StObject {
 }
 object KeepSourceDeleteTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     keepSourceDeleteTarget: scala.Double,
     keepSourceRenameTarget: scala.Double,
     keepTargetDeleteSource: scala.Double,
@@ -30,22 +29,16 @@ object KeepSourceDeleteTarget {
     __obj.asInstanceOf[KeepSourceDeleteTarget]
   }
   
-  @scala.inline
-  implicit class KeepSourceDeleteTargetMutableBuilder[Self <: KeepSourceDeleteTarget] (val x: Self) extends AnyVal {
+  extension [Self <: KeepSourceDeleteTarget](x: Self) {
     
-    @scala.inline
-    def setKeepSourceDeleteTarget(value: scala.Double): Self = StObject.set(x, "keepSourceDeleteTarget", value.asInstanceOf[js.Any])
+    inline def setKeepSourceDeleteTarget(value: scala.Double): Self = StObject.set(x, "keepSourceDeleteTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepSourceRenameTarget(value: scala.Double): Self = StObject.set(x, "keepSourceRenameTarget", value.asInstanceOf[js.Any])
+    inline def setKeepSourceRenameTarget(value: scala.Double): Self = StObject.set(x, "keepSourceRenameTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepTargetDeleteSource(value: scala.Double): Self = StObject.set(x, "keepTargetDeleteSource", value.asInstanceOf[js.Any])
+    inline def setKeepTargetDeleteSource(value: scala.Double): Self = StObject.set(x, "keepTargetDeleteSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepTargetRenameSource(value: scala.Double): Self = StObject.set(x, "keepTargetRenameSource", value.asInstanceOf[js.Any])
+    inline def setKeepTargetRenameSource(value: scala.Double): Self = StObject.set(x, "keepTargetRenameSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndecided(value: scala.Double): Self = StObject.set(x, "undecided", value.asInstanceOf[js.Any])
+    inline def setUndecided(value: scala.Double): Self = StObject.set(x, "undecided", value.asInstanceOf[js.Any])
   }
 }

@@ -16,37 +16,27 @@ trait BaseBindingData extends StObject {
 }
 object BaseBindingData {
   
-  @scala.inline
-  def apply(): BaseBindingData = {
+  inline def apply(): BaseBindingData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseBindingData]
   }
   
-  @scala.inline
-  implicit class BaseBindingDataMutableBuilder[Self <: BaseBindingData] (val x: Self) extends AnyVal {
+  extension [Self <: BaseBindingData](x: Self) {
     
-    @scala.inline
-    def setEvaluate(value: /* scope */ js.Any => js.Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
+    inline def setEvaluate(value: /* scope */ js.Any => js.Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEvaluateUndefined: Self = StObject.set(x, "evaluate", js.undefined)
+    inline def setEvaluateUndefined: Self = StObject.set(x, "evaluate", js.undefined)
     
-    @scala.inline
-    def setRedundantAttribute(value: String): Self = StObject.set(x, "redundantAttribute", value.asInstanceOf[js.Any])
+    inline def setRedundantAttribute(value: String): Self = StObject.set(x, "redundantAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedundantAttributeUndefined: Self = StObject.set(x, "redundantAttribute", js.undefined)
+    inline def setRedundantAttributeUndefined: Self = StObject.set(x, "redundantAttribute", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setType(value: BindingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BindingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

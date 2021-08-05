@@ -8,16 +8,13 @@ object reactRouterConfigStrings {
   
   @js.native
   sealed trait MatchedRoute extends StObject
-  @scala.inline
-  def MatchedRoute: MatchedRoute = "MatchedRoute".asInstanceOf[MatchedRoute]
+  inline def MatchedRoute: MatchedRoute = "MatchedRoute".asInstanceOf[MatchedRoute]
   
   @js.native
   sealed trait RouteConfigComponentProps extends StObject
-  @scala.inline
-  def RouteConfigComponentProps: RouteConfigComponentProps = "RouteConfigComponentProps".asInstanceOf[RouteConfigComponentProps]
+  inline def RouteConfigComponentProps: RouteConfigComponentProps = "RouteConfigComponentProps".asInstanceOf[RouteConfigComponentProps]
   
   @js.native
   sealed trait matchRoutes extends StObject
-  @scala.inline
-  def matchRoutes: matchRoutes = "matchRoutes".asInstanceOf[matchRoutes]
+  inline def matchRoutes: matchRoutes = "matchRoutes".asInstanceOf[matchRoutes]
 }

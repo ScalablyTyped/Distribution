@@ -23,28 +23,21 @@ trait ListNodegroupsRequest extends StObject {
 }
 object ListNodegroupsRequest {
   
-  @scala.inline
-  def apply(clusterName: String): ListNodegroupsRequest = {
+  inline def apply(clusterName: String): ListNodegroupsRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNodegroupsRequest]
   }
   
-  @scala.inline
-  implicit class ListNodegroupsRequestMutableBuilder[Self <: ListNodegroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListNodegroupsRequest](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: ListNodegroupsRequestMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListNodegroupsRequestMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

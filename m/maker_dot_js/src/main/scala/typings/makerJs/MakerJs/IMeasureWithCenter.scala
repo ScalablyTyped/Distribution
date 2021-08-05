@@ -18,16 +18,13 @@ trait IMeasureWithCenter
 }
 object IMeasureWithCenter {
   
-  @scala.inline
-  def apply(center: IPoint, high: IPoint, low: IPoint): IMeasureWithCenter = {
+  inline def apply(center: IPoint, high: IPoint, low: IPoint): IMeasureWithCenter = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], high = high.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMeasureWithCenter]
   }
   
-  @scala.inline
-  implicit class IMeasureWithCenterMutableBuilder[Self <: IMeasureWithCenter] (val x: Self) extends AnyVal {
+  extension [Self <: IMeasureWithCenter](x: Self) {
     
-    @scala.inline
-    def setCenter(value: IPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: IPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
   }
 }

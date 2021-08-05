@@ -14,17 +14,14 @@ object anon {
   }
   object File {
     
-    @scala.inline
-    def apply(file: js.Any): File = {
+    inline def apply(file: js.Any): File = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,20 +33,16 @@ object anon {
   }
   object Map {
     
-    @scala.inline
-    def apply(map: Mappings, source: String): Map = {
+    inline def apply(map: Mappings, source: String): Map = {
       val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[Map]
     }
     
-    @scala.inline
-    implicit class MapMutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
+    extension [Self <: Map](x: Self) {
       
-      @scala.inline
-      def setMap(value: Mappings): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Mappings): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,8 +60,7 @@ object anon {
   }
   object Mappings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       file: js.Any,
       mappings: String,
       sources: js.Array[String],
@@ -79,29 +71,21 @@ object anon {
       __obj.asInstanceOf[Mappings]
     }
     
-    @scala.inline
-    implicit class MappingsMutableBuilder[Self <: Mappings] (val x: Self) extends AnyVal {
+    extension [Self <: Mappings](x: Self) {
       
-      @scala.inline
-      def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+      inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesContent(value: js.Array[String]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
+      inline def setSourcesContent(value: js.Array[String]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value :_*))
+      inline def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value :_*))
       
-      @scala.inline
-      def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,8 +99,7 @@ object anon {
   }
   object Sources {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       mappings: String,
       sources: js.Array[String | SourceNode | CodeNode],
       sourcesContent: js.Array[String]
@@ -125,23 +108,17 @@ object anon {
       __obj.asInstanceOf[Sources]
     }
     
-    @scala.inline
-    implicit class SourcesMutableBuilder[Self <: Sources] (val x: Self) extends AnyVal {
+    extension [Self <: Sources](x: Self) {
       
-      @scala.inline
-      def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+      inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSources(value: js.Array[String | SourceNode | CodeNode]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: js.Array[String | SourceNode | CodeNode]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesContent(value: js.Array[String]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
+      inline def setSourcesContent(value: js.Array[String]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value :_*))
+      inline def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value :_*))
       
-      @scala.inline
-      def setSourcesVarargs(value: (String | SourceNode | CodeNode)*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: (String | SourceNode | CodeNode)*): Self = StObject.set(x, "sources", js.Array(value :_*))
     }
   }
 }

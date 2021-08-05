@@ -54,6 +54,5 @@ object provideMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsKeyRecursiveTimeout: Recursive): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsKeyRecursiveTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsKeyRecursiveTimeout: Recursive): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsKeyRecursiveTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

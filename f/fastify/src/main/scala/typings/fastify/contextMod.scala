@@ -12,17 +12,14 @@ object contextMod {
   }
   object FastifyContext {
     
-    @scala.inline
-    def apply[ContextConfig](config: ContextConfig): FastifyContext[ContextConfig] = {
+    inline def apply[ContextConfig](config: ContextConfig): FastifyContext[ContextConfig] = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[FastifyContext[ContextConfig]]
     }
     
-    @scala.inline
-    implicit class FastifyContextMutableBuilder[Self <: FastifyContext[?], ContextConfig] (val x: Self & FastifyContext[ContextConfig]) extends AnyVal {
+    extension [Self <: FastifyContext[?], ContextConfig](x: Self & FastifyContext[ContextConfig]) {
       
-      @scala.inline
-      def setConfig(value: ContextConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: ContextConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }
   }
 }

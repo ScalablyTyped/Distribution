@@ -23,43 +23,31 @@ trait Listing extends StObject {
 }
 object Listing {
   
-  @scala.inline
-  def apply(): Listing = {
+  inline def apply(): Listing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Listing]
   }
   
-  @scala.inline
-  implicit class ListingMutableBuilder[Self <: Listing] (val x: Self) extends AnyVal {
+  extension [Self <: Listing](x: Self) {
     
-    @scala.inline
-    def setFullDescription(value: String): Self = StObject.set(x, "fullDescription", value.asInstanceOf[js.Any])
+    inline def setFullDescription(value: String): Self = StObject.set(x, "fullDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullDescriptionUndefined: Self = StObject.set(x, "fullDescription", js.undefined)
+    inline def setFullDescriptionUndefined: Self = StObject.set(x, "fullDescription", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setShortDescription(value: String): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
+    inline def setShortDescription(value: String): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescriptionUndefined: Self = StObject.set(x, "shortDescription", js.undefined)
+    inline def setShortDescriptionUndefined: Self = StObject.set(x, "shortDescription", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
   }
 }

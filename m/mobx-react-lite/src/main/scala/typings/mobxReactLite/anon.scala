@@ -13,17 +13,14 @@ object anon {
   }
   object DisplayName {
     
-    @scala.inline
-    def apply(displayName: String): DisplayName = {
+    inline def apply(displayName: String): DisplayName = {
       val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayName]
     }
     
-    @scala.inline
-    implicit class DisplayNameMutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayName](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -33,17 +30,14 @@ object anon {
   }
   object ForwardRef {
     
-    @scala.inline
-    def apply(): ForwardRef = {
+    inline def apply(): ForwardRef = {
       val __obj = js.Dynamic.literal(forwardRef = true)
       __obj.asInstanceOf[ForwardRef]
     }
     
-    @scala.inline
-    implicit class ForwardRefMutableBuilder[Self <: ForwardRef] (val x: Self) extends AnyVal {
+    extension [Self <: ForwardRef](x: Self) {
       
-      @scala.inline
-      def setForwardRef(value: `true`): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
+      inline def setForwardRef(value: `true`): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,17 +48,14 @@ object anon {
   }
   object IObserverOptionsforwardRe {
     
-    @scala.inline
-    def apply(forwardRef: js.UndefOr[Boolean] & `true`): IObserverOptionsforwardRe = {
+    inline def apply(forwardRef: js.UndefOr[Boolean] & `true`): IObserverOptionsforwardRe = {
       val __obj = js.Dynamic.literal(forwardRef = forwardRef.asInstanceOf[js.Any])
       __obj.asInstanceOf[IObserverOptionsforwardRe]
     }
     
-    @scala.inline
-    implicit class IObserverOptionsforwardReMutableBuilder[Self <: IObserverOptionsforwardRe] (val x: Self) extends AnyVal {
+    extension [Self <: IObserverOptionsforwardRe](x: Self) {
       
-      @scala.inline
-      def setForwardRef(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
+      inline def setForwardRef(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
     }
   }
 }

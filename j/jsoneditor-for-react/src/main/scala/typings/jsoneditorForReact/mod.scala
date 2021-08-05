@@ -18,8 +18,8 @@ object mod {
   trait ReactJsoneditor
     extends Component[ReactJsonEditorProps, js.Object, js.Any] {
     
-    var editor: js.UndefOr[typings.jsoneditor.mod.default] = js.native
+    /* private */ var editor: js.UndefOr[typings.jsoneditor.mod.default] = js.native
     
-    var options: js.UndefOr[JSONEditorOptions] = js.native
+    /* private */ var options: js.UndefOr[JSONEditorOptions] = js.native
   }
 }

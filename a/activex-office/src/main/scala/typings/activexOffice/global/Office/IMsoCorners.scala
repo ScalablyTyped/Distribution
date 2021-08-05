@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoCorners")
 @js.native
-class IMsoCorners protected ()
+/* private */ class IMsoCorners ()
   extends StObject
      with typings.activexOffice.Office.IMsoCorners {
   
@@ -19,7 +19,7 @@ class IMsoCorners protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.IMsoCorners_typekey")
   var OfficeDotIMsoCorners_typekey: typings.activexOffice.Office.IMsoCorners = js.native
   

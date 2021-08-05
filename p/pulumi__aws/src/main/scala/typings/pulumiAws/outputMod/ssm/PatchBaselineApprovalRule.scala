@@ -28,34 +28,25 @@ trait PatchBaselineApprovalRule extends StObject {
 }
 object PatchBaselineApprovalRule {
   
-  @scala.inline
-  def apply(approveAfterDays: Double, patchFilters: js.Array[PatchBaselineApprovalRulePatchFilter]): PatchBaselineApprovalRule = {
+  inline def apply(approveAfterDays: Double, patchFilters: js.Array[PatchBaselineApprovalRulePatchFilter]): PatchBaselineApprovalRule = {
     val __obj = js.Dynamic.literal(approveAfterDays = approveAfterDays.asInstanceOf[js.Any], patchFilters = patchFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchBaselineApprovalRule]
   }
   
-  @scala.inline
-  implicit class PatchBaselineApprovalRuleMutableBuilder[Self <: PatchBaselineApprovalRule] (val x: Self) extends AnyVal {
+  extension [Self <: PatchBaselineApprovalRule](x: Self) {
     
-    @scala.inline
-    def setApproveAfterDays(value: Double): Self = StObject.set(x, "approveAfterDays", value.asInstanceOf[js.Any])
+    inline def setApproveAfterDays(value: Double): Self = StObject.set(x, "approveAfterDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceLevel(value: String): Self = StObject.set(x, "complianceLevel", value.asInstanceOf[js.Any])
+    inline def setComplianceLevel(value: String): Self = StObject.set(x, "complianceLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceLevelUndefined: Self = StObject.set(x, "complianceLevel", js.undefined)
+    inline def setComplianceLevelUndefined: Self = StObject.set(x, "complianceLevel", js.undefined)
     
-    @scala.inline
-    def setEnableNonSecurity(value: Boolean): Self = StObject.set(x, "enableNonSecurity", value.asInstanceOf[js.Any])
+    inline def setEnableNonSecurity(value: Boolean): Self = StObject.set(x, "enableNonSecurity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableNonSecurityUndefined: Self = StObject.set(x, "enableNonSecurity", js.undefined)
+    inline def setEnableNonSecurityUndefined: Self = StObject.set(x, "enableNonSecurity", js.undefined)
     
-    @scala.inline
-    def setPatchFilters(value: js.Array[PatchBaselineApprovalRulePatchFilter]): Self = StObject.set(x, "patchFilters", value.asInstanceOf[js.Any])
+    inline def setPatchFilters(value: js.Array[PatchBaselineApprovalRulePatchFilter]): Self = StObject.set(x, "patchFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchFiltersVarargs(value: PatchBaselineApprovalRulePatchFilter*): Self = StObject.set(x, "patchFilters", js.Array(value :_*))
+    inline def setPatchFiltersVarargs(value: PatchBaselineApprovalRulePatchFilter*): Self = StObject.set(x, "patchFilters", js.Array(value :_*))
   }
 }

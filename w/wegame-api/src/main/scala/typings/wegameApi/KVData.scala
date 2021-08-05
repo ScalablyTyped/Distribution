@@ -12,19 +12,15 @@ trait KVData extends StObject {
 }
 object KVData {
   
-  @scala.inline
-  def apply(key: String, value: String): KVData = {
+  inline def apply(key: String, value: String): KVData = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[KVData]
   }
   
-  @scala.inline
-  implicit class KVDataMutableBuilder[Self <: KVData] (val x: Self) extends AnyVal {
+  extension [Self <: KVData](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

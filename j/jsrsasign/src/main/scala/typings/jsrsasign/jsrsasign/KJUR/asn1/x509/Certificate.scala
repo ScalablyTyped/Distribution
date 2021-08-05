@@ -60,8 +60,7 @@ trait Certificate
 }
 object Certificate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getFreshValueHex: () => String,
     getLengthHexFromValue: () => String,
@@ -79,16 +78,12 @@ object Certificate {
     __obj.asInstanceOf[Certificate]
   }
   
-  @scala.inline
-  implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
+  extension [Self <: Certificate](x: Self) {
     
-    @scala.inline
-    def setGetPEMString(value: () => String): Self = StObject.set(x, "getPEMString", js.Any.fromFunction0(value))
+    inline def setGetPEMString(value: () => String): Self = StObject.set(x, "getPEMString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetSignatureHex(value: String => Unit): Self = StObject.set(x, "setSignatureHex", js.Any.fromFunction1(value))
+    inline def setSetSignatureHex(value: String => Unit): Self = StObject.set(x, "setSignatureHex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSign(value: () => Unit): Self = StObject.set(x, "sign", js.Any.fromFunction0(value))
+    inline def setSign(value: () => Unit): Self = StObject.set(x, "sign", js.Any.fromFunction0(value))
   }
 }

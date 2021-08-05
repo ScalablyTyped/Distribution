@@ -11,10 +11,7 @@ object positionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(firstValue: String, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
-  @scala.inline
-  def default(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
-  @scala.inline
-  def default(firstValue: Null, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def default(firstValue: String, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def default(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def default(firstValue: Null, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
 }

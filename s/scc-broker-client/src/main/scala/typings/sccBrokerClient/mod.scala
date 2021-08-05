@@ -19,8 +19,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attach(broker: Broker, options: SCCBrokerClientOptions): typings.sccBrokerClient.clusterBrokerClientMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(broker.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.sccBrokerClient.clusterBrokerClientMod.^]
+  inline def attach(broker: Broker, options: SCCBrokerClientOptions): typings.sccBrokerClient.clusterBrokerClientMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(broker.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.sccBrokerClient.clusterBrokerClientMod.^]
   
   @js.native
   trait Broker extends StObject {
@@ -47,23 +46,18 @@ object mod {
   }
   object MappingEngine {
     
-    @scala.inline
-    def apply(findSite: String => String, getSites: () => js.Array[String], setSites: js.Array[String] => Unit): MappingEngine = {
+    inline def apply(findSite: String => String, getSites: () => js.Array[String], setSites: js.Array[String] => Unit): MappingEngine = {
       val __obj = js.Dynamic.literal(findSite = js.Any.fromFunction1(findSite), getSites = js.Any.fromFunction0(getSites), setSites = js.Any.fromFunction1(setSites))
       __obj.asInstanceOf[MappingEngine]
     }
     
-    @scala.inline
-    implicit class MappingEngineMutableBuilder[Self <: MappingEngine] (val x: Self) extends AnyVal {
+    extension [Self <: MappingEngine](x: Self) {
       
-      @scala.inline
-      def setFindSite(value: String => String): Self = StObject.set(x, "findSite", js.Any.fromFunction1(value))
+      inline def setFindSite(value: String => String): Self = StObject.set(x, "findSite", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSites(value: () => js.Array[String]): Self = StObject.set(x, "getSites", js.Any.fromFunction0(value))
+      inline def setGetSites(value: () => js.Array[String]): Self = StObject.set(x, "getSites", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetSites(value: js.Array[String] => Unit): Self = StObject.set(x, "setSites", js.Any.fromFunction1(value))
+      inline def setSetSites(value: js.Array[String] => Unit): Self = StObject.set(x, "setSites", js.Any.fromFunction1(value))
     }
   }
   
@@ -101,101 +95,70 @@ object mod {
   }
   object SCCBrokerClientOptions {
     
-    @scala.inline
-    def apply(stateServerHost: String): SCCBrokerClientOptions = {
+    inline def apply(stateServerHost: String): SCCBrokerClientOptions = {
       val __obj = js.Dynamic.literal(stateServerHost = stateServerHost.asInstanceOf[js.Any])
       __obj.asInstanceOf[SCCBrokerClientOptions]
     }
     
-    @scala.inline
-    implicit class SCCBrokerClientOptionsMutableBuilder[Self <: SCCBrokerClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SCCBrokerClientOptions](x: Self) {
       
-      @scala.inline
-      def setAuthKey(value: Secret): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
+      inline def setAuthKey(value: Secret): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthKeyUndefined: Self = StObject.set(x, "authKey", js.undefined)
+      inline def setAuthKeyUndefined: Self = StObject.set(x, "authKey", js.undefined)
       
-      @scala.inline
-      def setBrokerRetryDelay(value: Double): Self = StObject.set(x, "brokerRetryDelay", value.asInstanceOf[js.Any])
+      inline def setBrokerRetryDelay(value: Double): Self = StObject.set(x, "brokerRetryDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrokerRetryDelayUndefined: Self = StObject.set(x, "brokerRetryDelay", js.undefined)
+      inline def setBrokerRetryDelayUndefined: Self = StObject.set(x, "brokerRetryDelay", js.undefined)
       
-      @scala.inline
-      def setClientPoolSize(value: Double): Self = StObject.set(x, "clientPoolSize", value.asInstanceOf[js.Any])
+      inline def setClientPoolSize(value: Double): Self = StObject.set(x, "clientPoolSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientPoolSizeUndefined: Self = StObject.set(x, "clientPoolSize", js.undefined)
+      inline def setClientPoolSizeUndefined: Self = StObject.set(x, "clientPoolSize", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setInstanceIp(value: String): Self = StObject.set(x, "instanceIp", value.asInstanceOf[js.Any])
+      inline def setInstanceIp(value: String): Self = StObject.set(x, "instanceIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIpFamily(value: String): Self = StObject.set(x, "instanceIpFamily", value.asInstanceOf[js.Any])
+      inline def setInstanceIpFamily(value: String): Self = StObject.set(x, "instanceIpFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIpFamilyUndefined: Self = StObject.set(x, "instanceIpFamily", js.undefined)
+      inline def setInstanceIpFamilyUndefined: Self = StObject.set(x, "instanceIpFamily", js.undefined)
       
-      @scala.inline
-      def setInstanceIpUndefined: Self = StObject.set(x, "instanceIp", js.undefined)
+      inline def setInstanceIpUndefined: Self = StObject.set(x, "instanceIp", js.undefined)
       
-      @scala.inline
-      def setInstancePort(value: Double): Self = StObject.set(x, "instancePort", value.asInstanceOf[js.Any])
+      inline def setInstancePort(value: Double): Self = StObject.set(x, "instancePort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstancePortUndefined: Self = StObject.set(x, "instancePort", js.undefined)
+      inline def setInstancePortUndefined: Self = StObject.set(x, "instancePort", js.undefined)
       
-      @scala.inline
-      def setMappingEngine(value: skeletonRendezvous | simple | MappingEngine): Self = StObject.set(x, "mappingEngine", value.asInstanceOf[js.Any])
+      inline def setMappingEngine(value: skeletonRendezvous | simple | MappingEngine): Self = StObject.set(x, "mappingEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMappingEngineUndefined: Self = StObject.set(x, "mappingEngine", js.undefined)
+      inline def setMappingEngineUndefined: Self = StObject.set(x, "mappingEngine", js.undefined)
       
-      @scala.inline
-      def setNoErrorLogging(value: Boolean): Self = StObject.set(x, "noErrorLogging", value.asInstanceOf[js.Any])
+      inline def setNoErrorLogging(value: Boolean): Self = StObject.set(x, "noErrorLogging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoErrorLoggingUndefined: Self = StObject.set(x, "noErrorLogging", js.undefined)
+      inline def setNoErrorLoggingUndefined: Self = StObject.set(x, "noErrorLogging", js.undefined)
       
-      @scala.inline
-      def setPubSubBatchDuration(value: Double): Self = StObject.set(x, "pubSubBatchDuration", value.asInstanceOf[js.Any])
+      inline def setPubSubBatchDuration(value: Double): Self = StObject.set(x, "pubSubBatchDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubSubBatchDurationUndefined: Self = StObject.set(x, "pubSubBatchDuration", js.undefined)
+      inline def setPubSubBatchDurationUndefined: Self = StObject.set(x, "pubSubBatchDuration", js.undefined)
       
-      @scala.inline
-      def setStateServerAckTimeout(value: Double): Self = StObject.set(x, "stateServerAckTimeout", value.asInstanceOf[js.Any])
+      inline def setStateServerAckTimeout(value: Double): Self = StObject.set(x, "stateServerAckTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateServerAckTimeoutUndefined: Self = StObject.set(x, "stateServerAckTimeout", js.undefined)
+      inline def setStateServerAckTimeoutUndefined: Self = StObject.set(x, "stateServerAckTimeout", js.undefined)
       
-      @scala.inline
-      def setStateServerConnectTimeout(value: Double): Self = StObject.set(x, "stateServerConnectTimeout", value.asInstanceOf[js.Any])
+      inline def setStateServerConnectTimeout(value: Double): Self = StObject.set(x, "stateServerConnectTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateServerConnectTimeoutUndefined: Self = StObject.set(x, "stateServerConnectTimeout", js.undefined)
+      inline def setStateServerConnectTimeoutUndefined: Self = StObject.set(x, "stateServerConnectTimeout", js.undefined)
       
-      @scala.inline
-      def setStateServerHost(value: String): Self = StObject.set(x, "stateServerHost", value.asInstanceOf[js.Any])
+      inline def setStateServerHost(value: String): Self = StObject.set(x, "stateServerHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateServerPort(value: Double): Self = StObject.set(x, "stateServerPort", value.asInstanceOf[js.Any])
+      inline def setStateServerPort(value: Double): Self = StObject.set(x, "stateServerPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateServerPortUndefined: Self = StObject.set(x, "stateServerPort", js.undefined)
+      inline def setStateServerPortUndefined: Self = StObject.set(x, "stateServerPort", js.undefined)
       
-      @scala.inline
-      def setStateServerReconnectRandomness(value: Double): Self = StObject.set(x, "stateServerReconnectRandomness", value.asInstanceOf[js.Any])
+      inline def setStateServerReconnectRandomness(value: Double): Self = StObject.set(x, "stateServerReconnectRandomness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateServerReconnectRandomnessUndefined: Self = StObject.set(x, "stateServerReconnectRandomness", js.undefined)
+      inline def setStateServerReconnectRandomnessUndefined: Self = StObject.set(x, "stateServerReconnectRandomness", js.undefined)
     }
   }
 }

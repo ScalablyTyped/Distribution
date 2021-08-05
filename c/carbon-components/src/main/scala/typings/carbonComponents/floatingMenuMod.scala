@@ -56,8 +56,7 @@ object floatingMenuMod {
     @JSImport("carbon-components/components/floating-menu/floating-menu", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
     
     /* static member */
     object options {
@@ -69,74 +68,62 @@ object floatingMenuMod {
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.attribAvoidFocusOnOpen")
       @js.native
       def attribAvoidFocusOnOpen: String = js.native
-      @scala.inline
-      def attribAvoidFocusOnOpen_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attribAvoidFocusOnOpen")(x.asInstanceOf[js.Any])
+      inline def attribAvoidFocusOnOpen_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attribAvoidFocusOnOpen")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.attribDirection")
       @js.native
       def attribDirection: String = js.native
-      @scala.inline
-      def attribDirection_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attribDirection")(x.asInstanceOf[js.Any])
+      inline def attribDirection_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attribDirection")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.classRefShown")
       @js.native
       def classRefShown: String = js.native
-      @scala.inline
-      def classRefShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classRefShown")(x.asInstanceOf[js.Any])
+      inline def classRefShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classRefShown")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.classShown")
       @js.native
       def classShown: String = js.native
-      @scala.inline
-      def classShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classShown")(x.asInstanceOf[js.Any])
+      inline def classShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classShown")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.eventAfterHidden")
       @js.native
       def eventAfterHidden: String = js.native
-      @scala.inline
-      def eventAfterHidden_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventAfterHidden")(x.asInstanceOf[js.Any])
+      inline def eventAfterHidden_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventAfterHidden")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.eventAfterShown")
       @js.native
       def eventAfterShown: String = js.native
-      @scala.inline
-      def eventAfterShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventAfterShown")(x.asInstanceOf[js.Any])
+      inline def eventAfterShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventAfterShown")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.eventBeforeHidden")
       @js.native
       def eventBeforeHidden: String = js.native
-      @scala.inline
-      def eventBeforeHidden_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventBeforeHidden")(x.asInstanceOf[js.Any])
+      inline def eventBeforeHidden_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventBeforeHidden")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.eventBeforeShown")
       @js.native
       def eventBeforeShown: String = js.native
-      @scala.inline
-      def eventBeforeShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventBeforeShown")(x.asInstanceOf[js.Any])
+      inline def eventBeforeShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventBeforeShown")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.offset")
       @js.native
       def offset: Left = js.native
-      @scala.inline
-      def offset_=(x: Left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("offset")(x.asInstanceOf[js.Any])
+      inline def offset_=(x: Left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("offset")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.refNode")
       @js.native
       def refNode: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
-      @scala.inline
-      def refNode_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refNode")(x.asInstanceOf[js.Any])
+      inline def refNode_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refNode")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.selectorContainer")
       @js.native
       def selectorContainer: String = js.native
-      @scala.inline
-      def selectorContainer_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectorContainer")(x.asInstanceOf[js.Any])
+      inline def selectorContainer_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectorContainer")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.selectorPrimaryFocus")
       @js.native
       def selectorPrimaryFocus: String = js.native
-      @scala.inline
-      def selectorPrimaryFocus_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectorPrimaryFocus")(x.asInstanceOf[js.Any])
+      inline def selectorPrimaryFocus_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectorPrimaryFocus")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -156,8 +143,7 @@ object floatingMenuMod {
   @js.native
   val DIRECTION_TOP: /* "top" */ String = js.native
   
-  @scala.inline
-  def getFloatingPosition(hasMenuSizeRefPositionOffsetDirectionScrollXScrollY: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloatingPosition")(hasMenuSizeRefPositionOffsetDirectionScrollXScrollY.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getFloatingPosition(hasMenuSizeRefPositionOffsetDirectionScrollXScrollY: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloatingPosition")(hasMenuSizeRefPositionOffsetDirectionScrollXScrollY.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped any */ trait FloatingMenu extends StObject {
@@ -182,8 +168,7 @@ object floatingMenuMod {
   }
   object FloatingMenu {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _changeState: (js.Any, js.Any, js.Any) => Unit,
       _getContainer: () => js.Any,
       _getPos: () => js.Any,
@@ -198,35 +183,25 @@ object floatingMenuMod {
       __obj.asInstanceOf[FloatingMenu]
     }
     
-    @scala.inline
-    implicit class FloatingMenuMutableBuilder[Self <: FloatingMenu] (val x: Self) extends AnyVal {
+    extension [Self <: FloatingMenu](x: Self) {
       
-      @scala.inline
-      def setHandleBlur(value: js.Any => Unit): Self = StObject.set(x, "handleBlur", js.Any.fromFunction1(value))
+      inline def setHandleBlur(value: js.Any => Unit): Self = StObject.set(x, "handleBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+      inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldStateBeChanged(value: js.Any => Boolean): Self = StObject.set(x, "shouldStateBeChanged", js.Any.fromFunction1(value))
+      inline def setShouldStateBeChanged(value: js.Any => Boolean): Self = StObject.set(x, "shouldStateBeChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_changeState(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction3(value))
+      inline def set_changeState(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def set_getContainer(value: () => js.Any): Self = StObject.set(x, "_getContainer", js.Any.fromFunction0(value))
+      inline def set_getContainer(value: () => js.Any): Self = StObject.set(x, "_getContainer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_getPos(value: () => js.Any): Self = StObject.set(x, "_getPos", js.Any.fromFunction0(value))
+      inline def set_getPos(value: () => js.Any): Self = StObject.set(x, "_getPos", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_handleKeydown(value: js.Any => Unit): Self = StObject.set(x, "_handleKeydown", js.Any.fromFunction1(value))
+      inline def set_handleKeydown(value: js.Any => Unit): Self = StObject.set(x, "_handleKeydown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_place(value: () => Unit): Self = StObject.set(x, "_place", js.Any.fromFunction0(value))
+      inline def set_place(value: () => Unit): Self = StObject.set(x, "_place", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_testStyles(value: () => Unit): Self = StObject.set(x, "_testStyles", js.Any.fromFunction0(value))
+      inline def set_testStyles(value: () => Unit): Self = StObject.set(x, "_testStyles", js.Any.fromFunction0(value))
     }
   }
 }

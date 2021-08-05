@@ -95,13 +95,11 @@ object MemberVariableDeclarationSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     variableDeclarator: typings.typescriptServices.TypeScript.VariableDeclaratorSyntax,
     semicolonToken: ISyntaxToken
   ): typings.typescriptServices.TypeScript.MemberVariableDeclarationSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(variableDeclarator.asInstanceOf[js.Any], semicolonToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MemberVariableDeclarationSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(variableDeclarator: typings.typescriptServices.TypeScript.VariableDeclaratorSyntax): typings.typescriptServices.TypeScript.MemberVariableDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(variableDeclarator.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.MemberVariableDeclarationSyntax]
+  inline def create1(variableDeclarator: typings.typescriptServices.TypeScript.VariableDeclaratorSyntax): typings.typescriptServices.TypeScript.MemberVariableDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(variableDeclarator.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.MemberVariableDeclarationSyntax]
 }

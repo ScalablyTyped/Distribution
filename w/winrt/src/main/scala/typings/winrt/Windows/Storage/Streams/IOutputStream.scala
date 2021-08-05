@@ -17,8 +17,7 @@ trait IOutputStream
 }
 object IOutputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     flushAsync: () => IAsyncOperation[Boolean],
     writeAsync: IBuffer => IAsyncOperationWithProgress[Double, Double]
@@ -27,13 +26,10 @@ object IOutputStream {
     __obj.asInstanceOf[IOutputStream]
   }
   
-  @scala.inline
-  implicit class IOutputStreamMutableBuilder[Self <: IOutputStream] (val x: Self) extends AnyVal {
+  extension [Self <: IOutputStream](x: Self) {
     
-    @scala.inline
-    def setFlushAsync(value: () => IAsyncOperation[Boolean]): Self = StObject.set(x, "flushAsync", js.Any.fromFunction0(value))
+    inline def setFlushAsync(value: () => IAsyncOperation[Boolean]): Self = StObject.set(x, "flushAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWriteAsync(value: IBuffer => IAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "writeAsync", js.Any.fromFunction1(value))
+    inline def setWriteAsync(value: IBuffer => IAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "writeAsync", js.Any.fromFunction1(value))
   }
 }

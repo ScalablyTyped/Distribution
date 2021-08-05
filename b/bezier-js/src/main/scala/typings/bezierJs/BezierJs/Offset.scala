@@ -14,19 +14,15 @@ trait Offset
 }
 object Offset {
   
-  @scala.inline
-  def apply(c: Point, n: Point, x: Double, y: Double): Offset = {
+  inline def apply(c: Point, n: Point, x: Double, y: Double): Offset = {
     val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Offset]
   }
   
-  @scala.inline
-  implicit class OffsetMutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
+  extension [Self <: Offset](x: Self) {
     
-    @scala.inline
-    def setC(value: Point): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: Point): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setN(value: Point): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: Point): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
   }
 }

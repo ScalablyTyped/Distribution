@@ -28,37 +28,27 @@ trait DescribeTypeRegistrationOutput extends StObject {
 }
 object DescribeTypeRegistrationOutput {
   
-  @scala.inline
-  def apply(): DescribeTypeRegistrationOutput = {
+  inline def apply(): DescribeTypeRegistrationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTypeRegistrationOutput]
   }
   
-  @scala.inline
-  implicit class DescribeTypeRegistrationOutputMutableBuilder[Self <: DescribeTypeRegistrationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTypeRegistrationOutput](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setProgressStatus(value: RegistrationStatus): Self = StObject.set(x, "ProgressStatus", value.asInstanceOf[js.Any])
+    inline def setProgressStatus(value: RegistrationStatus): Self = StObject.set(x, "ProgressStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressStatusUndefined: Self = StObject.set(x, "ProgressStatus", js.undefined)
+    inline def setProgressStatusUndefined: Self = StObject.set(x, "ProgressStatus", js.undefined)
     
-    @scala.inline
-    def setTypeArn(value: TypeArn): Self = StObject.set(x, "TypeArn", value.asInstanceOf[js.Any])
+    inline def setTypeArn(value: TypeArn): Self = StObject.set(x, "TypeArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeArnUndefined: Self = StObject.set(x, "TypeArn", js.undefined)
+    inline def setTypeArnUndefined: Self = StObject.set(x, "TypeArn", js.undefined)
     
-    @scala.inline
-    def setTypeVersionArn(value: TypeArn): Self = StObject.set(x, "TypeVersionArn", value.asInstanceOf[js.Any])
+    inline def setTypeVersionArn(value: TypeArn): Self = StObject.set(x, "TypeVersionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVersionArnUndefined: Self = StObject.set(x, "TypeVersionArn", js.undefined)
+    inline def setTypeVersionArnUndefined: Self = StObject.set(x, "TypeVersionArn", js.undefined)
   }
 }

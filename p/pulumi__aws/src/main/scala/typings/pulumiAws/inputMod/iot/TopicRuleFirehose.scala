@@ -24,25 +24,19 @@ trait TopicRuleFirehose extends StObject {
 }
 object TopicRuleFirehose {
   
-  @scala.inline
-  def apply(deliveryStreamName: Input[String], roleArn: Input[String]): TopicRuleFirehose = {
+  inline def apply(deliveryStreamName: Input[String], roleArn: Input[String]): TopicRuleFirehose = {
     val __obj = js.Dynamic.literal(deliveryStreamName = deliveryStreamName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleFirehose]
   }
   
-  @scala.inline
-  implicit class TopicRuleFirehoseMutableBuilder[Self <: TopicRuleFirehose] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleFirehose](x: Self) {
     
-    @scala.inline
-    def setDeliveryStreamName(value: Input[String]): Self = StObject.set(x, "deliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamName(value: Input[String]): Self = StObject.set(x, "deliveryStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparator(value: Input[String]): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: Input[String]): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }
 }

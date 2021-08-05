@@ -18,19 +18,15 @@ trait DeleteBotVersionRequest extends StObject {
 }
 object DeleteBotVersionRequest {
   
-  @scala.inline
-  def apply(name: BotName, version: NumericalVersion): DeleteBotVersionRequest = {
+  inline def apply(name: BotName, version: NumericalVersion): DeleteBotVersionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBotVersionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteBotVersionRequestMutableBuilder[Self <: DeleteBotVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBotVersionRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: BotName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: BotName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: NumericalVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: NumericalVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

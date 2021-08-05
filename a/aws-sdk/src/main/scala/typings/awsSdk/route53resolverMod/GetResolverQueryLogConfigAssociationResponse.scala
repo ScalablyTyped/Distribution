@@ -13,19 +13,15 @@ trait GetResolverQueryLogConfigAssociationResponse extends StObject {
 }
 object GetResolverQueryLogConfigAssociationResponse {
   
-  @scala.inline
-  def apply(): GetResolverQueryLogConfigAssociationResponse = {
+  inline def apply(): GetResolverQueryLogConfigAssociationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResolverQueryLogConfigAssociationResponse]
   }
   
-  @scala.inline
-  implicit class GetResolverQueryLogConfigAssociationResponseMutableBuilder[Self <: GetResolverQueryLogConfigAssociationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetResolverQueryLogConfigAssociationResponse](x: Self) {
     
-    @scala.inline
-    def setResolverQueryLogConfigAssociation(value: ResolverQueryLogConfigAssociation): Self = StObject.set(x, "ResolverQueryLogConfigAssociation", value.asInstanceOf[js.Any])
+    inline def setResolverQueryLogConfigAssociation(value: ResolverQueryLogConfigAssociation): Self = StObject.set(x, "ResolverQueryLogConfigAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverQueryLogConfigAssociationUndefined: Self = StObject.set(x, "ResolverQueryLogConfigAssociation", js.undefined)
+    inline def setResolverQueryLogConfigAssociationUndefined: Self = StObject.set(x, "ResolverQueryLogConfigAssociation", js.undefined)
   }
 }

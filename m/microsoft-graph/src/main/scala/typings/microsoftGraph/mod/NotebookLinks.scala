@@ -14,31 +14,23 @@ trait NotebookLinks extends StObject {
 }
 object NotebookLinks {
   
-  @scala.inline
-  def apply(): NotebookLinks = {
+  inline def apply(): NotebookLinks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotebookLinks]
   }
   
-  @scala.inline
-  implicit class NotebookLinksMutableBuilder[Self <: NotebookLinks] (val x: Self) extends AnyVal {
+  extension [Self <: NotebookLinks](x: Self) {
     
-    @scala.inline
-    def setOneNoteClientUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "oneNoteClientUrl", value.asInstanceOf[js.Any])
+    inline def setOneNoteClientUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "oneNoteClientUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneNoteClientUrlNull: Self = StObject.set(x, "oneNoteClientUrl", null)
+    inline def setOneNoteClientUrlNull: Self = StObject.set(x, "oneNoteClientUrl", null)
     
-    @scala.inline
-    def setOneNoteClientUrlUndefined: Self = StObject.set(x, "oneNoteClientUrl", js.undefined)
+    inline def setOneNoteClientUrlUndefined: Self = StObject.set(x, "oneNoteClientUrl", js.undefined)
     
-    @scala.inline
-    def setOneNoteWebUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "oneNoteWebUrl", value.asInstanceOf[js.Any])
+    inline def setOneNoteWebUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "oneNoteWebUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneNoteWebUrlNull: Self = StObject.set(x, "oneNoteWebUrl", null)
+    inline def setOneNoteWebUrlNull: Self = StObject.set(x, "oneNoteWebUrl", null)
     
-    @scala.inline
-    def setOneNoteWebUrlUndefined: Self = StObject.set(x, "oneNoteWebUrl", js.undefined)
+    inline def setOneNoteWebUrlUndefined: Self = StObject.set(x, "oneNoteWebUrl", js.undefined)
   }
 }

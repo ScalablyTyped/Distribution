@@ -14,17 +14,14 @@ trait CustomLayout
 }
 object CustomLayout {
   
-  @scala.inline
-  def apply(`type`: String): CustomLayout = {
+  inline def apply(`type`: String): CustomLayout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomLayout]
   }
   
-  @scala.inline
-  implicit class CustomLayoutMutableBuilder[Self <: CustomLayout] (val x: Self) extends AnyVal {
+  extension [Self <: CustomLayout](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

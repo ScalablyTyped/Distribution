@@ -66,86 +66,60 @@ object tts {
   }
   object SpeakOptions {
     
-    @scala.inline
-    def apply(): SpeakOptions = {
+    inline def apply(): SpeakOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpeakOptions]
     }
     
-    @scala.inline
-    implicit class SpeakOptionsMutableBuilder[Self <: SpeakOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SpeakOptions](x: Self) {
       
-      @scala.inline
-      def setDesiredEventTypes(value: js.Array[String]): Self = StObject.set(x, "desiredEventTypes", value.asInstanceOf[js.Any])
+      inline def setDesiredEventTypes(value: js.Array[String]): Self = StObject.set(x, "desiredEventTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesiredEventTypesUndefined: Self = StObject.set(x, "desiredEventTypes", js.undefined)
+      inline def setDesiredEventTypesUndefined: Self = StObject.set(x, "desiredEventTypes", js.undefined)
       
-      @scala.inline
-      def setDesiredEventTypesVarargs(value: String*): Self = StObject.set(x, "desiredEventTypes", js.Array(value :_*))
+      inline def setDesiredEventTypesVarargs(value: String*): Self = StObject.set(x, "desiredEventTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setEnqueue(value: Boolean): Self = StObject.set(x, "enqueue", value.asInstanceOf[js.Any])
+      inline def setEnqueue(value: Boolean): Self = StObject.set(x, "enqueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnqueueUndefined: Self = StObject.set(x, "enqueue", js.undefined)
+      inline def setEnqueueUndefined: Self = StObject.set(x, "enqueue", js.undefined)
       
-      @scala.inline
-      def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
+      inline def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
+      inline def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
       
-      @scala.inline
-      def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+      inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
+      inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setOnEvent(value: /* event */ TtsEvent => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
+      inline def setOnEvent(value: /* event */ TtsEvent => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
+      inline def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
       
-      @scala.inline
-      def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+      inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
+      inline def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+      inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
       
-      @scala.inline
-      def setRequiredEventTypes(value: js.Array[String]): Self = StObject.set(x, "requiredEventTypes", value.asInstanceOf[js.Any])
+      inline def setRequiredEventTypes(value: js.Array[String]): Self = StObject.set(x, "requiredEventTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredEventTypesUndefined: Self = StObject.set(x, "requiredEventTypes", js.undefined)
+      inline def setRequiredEventTypesUndefined: Self = StObject.set(x, "requiredEventTypes", js.undefined)
       
-      @scala.inline
-      def setRequiredEventTypesVarargs(value: String*): Self = StObject.set(x, "requiredEventTypes", js.Array(value :_*))
+      inline def setRequiredEventTypesVarargs(value: String*): Self = StObject.set(x, "requiredEventTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setVoiceName(value: String): Self = StObject.set(x, "voiceName", value.asInstanceOf[js.Any])
+      inline def setVoiceName(value: String): Self = StObject.set(x, "voiceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceNameUndefined: Self = StObject.set(x, "voiceName", js.undefined)
+      inline def setVoiceNameUndefined: Self = StObject.set(x, "voiceName", js.undefined)
       
-      @scala.inline
-      def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+      inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+      inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     }
   }
   
@@ -165,30 +139,23 @@ object tts {
   }
   object TtsEvent {
     
-    @scala.inline
-    def apply(`type`: String): TtsEvent = {
+    inline def apply(`type`: String): TtsEvent = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TtsEvent]
     }
     
-    @scala.inline
-    implicit class TtsEventMutableBuilder[Self <: TtsEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TtsEvent](x: Self) {
       
-      @scala.inline
-      def setCharIndex(value: Double): Self = StObject.set(x, "charIndex", value.asInstanceOf[js.Any])
+      inline def setCharIndex(value: Double): Self = StObject.set(x, "charIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharIndexUndefined: Self = StObject.set(x, "charIndex", js.undefined)
+      inline def setCharIndexUndefined: Self = StObject.set(x, "charIndex", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,53 +188,38 @@ object tts {
   }
   object TtsVoice {
     
-    @scala.inline
-    def apply(): TtsVoice = {
+    inline def apply(): TtsVoice = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TtsVoice]
     }
     
-    @scala.inline
-    implicit class TtsVoiceMutableBuilder[Self <: TtsVoice] (val x: Self) extends AnyVal {
+    extension [Self <: TtsVoice](x: Self) {
       
-      @scala.inline
-      def setEventTypes(value: js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
+      inline def setEventTypes(value: js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
+      inline def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
       
-      @scala.inline
-      def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
+      inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
+      inline def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
+      inline def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
       
-      @scala.inline
-      def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+      inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
+      inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setRemote(value: Boolean): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: Boolean): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+      inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
       
-      @scala.inline
-      def setVoiceName(value: String): Self = StObject.set(x, "voiceName", value.asInstanceOf[js.Any])
+      inline def setVoiceName(value: String): Self = StObject.set(x, "voiceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceNameUndefined: Self = StObject.set(x, "voiceName", js.undefined)
+      inline def setVoiceNameUndefined: Self = StObject.set(x, "voiceName", js.undefined)
     }
   }
 }

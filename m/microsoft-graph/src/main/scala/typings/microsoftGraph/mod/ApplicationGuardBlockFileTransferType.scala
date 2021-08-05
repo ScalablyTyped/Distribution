@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplicationGuardBlockFileTransferType extends StObject
 object ApplicationGuardBlockFileTransferType {
   
-  @scala.inline
-  def blockImageAndTextFile: typings.microsoftGraph.microsoftGraphStrings.blockImageAndTextFile = "blockImageAndTextFile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockImageAndTextFile]
+  inline def blockImageAndTextFile: typings.microsoftGraph.microsoftGraphStrings.blockImageAndTextFile = "blockImageAndTextFile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockImageAndTextFile]
   
-  @scala.inline
-  def blockImageFile: typings.microsoftGraph.microsoftGraphStrings.blockImageFile = "blockImageFile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockImageFile]
+  inline def blockImageFile: typings.microsoftGraph.microsoftGraphStrings.blockImageFile = "blockImageFile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockImageFile]
   
-  @scala.inline
-  def blockNone: typings.microsoftGraph.microsoftGraphStrings.blockNone = "blockNone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockNone]
+  inline def blockNone: typings.microsoftGraph.microsoftGraphStrings.blockNone = "blockNone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockNone]
   
-  @scala.inline
-  def blockTextFile: typings.microsoftGraph.microsoftGraphStrings.blockTextFile = "blockTextFile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockTextFile]
+  inline def blockTextFile: typings.microsoftGraph.microsoftGraphStrings.blockTextFile = "blockTextFile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockTextFile]
   
-  @scala.inline
-  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
+  inline def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
 }

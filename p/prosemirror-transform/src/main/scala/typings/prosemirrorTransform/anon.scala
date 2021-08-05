@@ -19,27 +19,21 @@ object anon {
   }
   object Attrs {
     
-    @scala.inline
-    def apply[S /* <: Schema[js.Any, js.Any] */](`type`: NodeType[S]): Attrs[S] = {
+    inline def apply[S /* <: Schema[js.Any, js.Any] */](`type`: NodeType[S]): Attrs[S] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attrs[S]]
     }
     
-    @scala.inline
-    implicit class AttrsMutableBuilder[Self <: Attrs[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & Attrs[S]) extends AnyVal {
+    extension [Self <: Attrs[?], S /* <: Schema[js.Any, js.Any] */](x: Self & Attrs[S]) {
       
-      @scala.inline
-      def setAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsNull: Self = StObject.set(x, "attrs", null)
+      inline def setAttrsNull: Self = StObject.set(x, "attrs", null)
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setType(value: NodeType[S]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: NodeType[S]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

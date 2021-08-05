@@ -8,6 +8,5 @@ object reactLifecyclesCompatStrings {
   
   @js.native
   sealed trait polyfill extends StObject
-  @scala.inline
-  def polyfill: polyfill = "polyfill".asInstanceOf[polyfill]
+  inline def polyfill: polyfill = "polyfill".asInstanceOf[polyfill]
 }

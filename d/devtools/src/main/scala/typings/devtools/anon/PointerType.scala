@@ -10,19 +10,15 @@ trait PointerType extends StObject {
 }
 object PointerType {
   
-  @scala.inline
-  def apply(): PointerType = {
+  inline def apply(): PointerType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointerType]
   }
   
-  @scala.inline
-  implicit class PointerTypeMutableBuilder[Self <: PointerType] (val x: Self) extends AnyVal {
+  extension [Self <: PointerType](x: Self) {
     
-    @scala.inline
-    def setPointerType(value: String): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+    inline def setPointerType(value: String): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerTypeUndefined: Self = StObject.set(x, "pointerType", js.undefined)
+    inline def setPointerTypeUndefined: Self = StObject.set(x, "pointerType", js.undefined)
   }
 }

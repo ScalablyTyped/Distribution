@@ -19,8 +19,7 @@ trait XWindowArranger
 }
 object XWindowArranger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     arrange: Double => Unit,
     hasArrangeCommand: Double => Boolean,
@@ -31,13 +30,10 @@ object XWindowArranger {
     __obj.asInstanceOf[XWindowArranger]
   }
   
-  @scala.inline
-  implicit class XWindowArrangerMutableBuilder[Self <: XWindowArranger] (val x: Self) extends AnyVal {
+  extension [Self <: XWindowArranger](x: Self) {
     
-    @scala.inline
-    def setArrange(value: Double => Unit): Self = StObject.set(x, "arrange", js.Any.fromFunction1(value))
+    inline def setArrange(value: Double => Unit): Self = StObject.set(x, "arrange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasArrangeCommand(value: Double => Boolean): Self = StObject.set(x, "hasArrangeCommand", js.Any.fromFunction1(value))
+    inline def setHasArrangeCommand(value: Double => Boolean): Self = StObject.set(x, "hasArrangeCommand", js.Any.fromFunction1(value))
   }
 }

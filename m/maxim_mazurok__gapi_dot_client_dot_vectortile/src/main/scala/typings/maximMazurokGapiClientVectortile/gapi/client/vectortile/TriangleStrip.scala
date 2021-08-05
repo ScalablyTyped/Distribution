@@ -11,22 +11,17 @@ trait TriangleStrip extends StObject {
 }
 object TriangleStrip {
   
-  @scala.inline
-  def apply(): TriangleStrip = {
+  inline def apply(): TriangleStrip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TriangleStrip]
   }
   
-  @scala.inline
-  implicit class TriangleStripMutableBuilder[Self <: TriangleStrip] (val x: Self) extends AnyVal {
+  extension [Self <: TriangleStrip](x: Self) {
     
-    @scala.inline
-    def setVertexIndices(value: js.Array[Double]): Self = StObject.set(x, "vertexIndices", value.asInstanceOf[js.Any])
+    inline def setVertexIndices(value: js.Array[Double]): Self = StObject.set(x, "vertexIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexIndicesUndefined: Self = StObject.set(x, "vertexIndices", js.undefined)
+    inline def setVertexIndicesUndefined: Self = StObject.set(x, "vertexIndices", js.undefined)
     
-    @scala.inline
-    def setVertexIndicesVarargs(value: Double*): Self = StObject.set(x, "vertexIndices", js.Array(value :_*))
+    inline def setVertexIndicesVarargs(value: Double*): Self = StObject.set(x, "vertexIndices", js.Array(value :_*))
   }
 }

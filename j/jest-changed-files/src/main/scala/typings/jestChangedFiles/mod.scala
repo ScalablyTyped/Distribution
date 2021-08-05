@@ -14,9 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findRepos(roots: js.Array[Path]): js.Promise[Repos] = ^.asInstanceOf[js.Dynamic].applyDynamic("findRepos")(roots.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repos]]
+  inline def findRepos(roots: js.Array[Path]): js.Promise[Repos] = ^.asInstanceOf[js.Dynamic].applyDynamic("findRepos")(roots.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repos]]
   
-  @scala.inline
-  def getChangedFilesForRoots(roots: js.Array[Path], options: Options): ChangedFilesPromise = (^.asInstanceOf[js.Dynamic].applyDynamic("getChangedFilesForRoots")(roots.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ChangedFilesPromise]
+  inline def getChangedFilesForRoots(roots: js.Array[Path], options: Options): ChangedFilesPromise = (^.asInstanceOf[js.Dynamic].applyDynamic("getChangedFilesForRoots")(roots.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ChangedFilesPromise]
 }

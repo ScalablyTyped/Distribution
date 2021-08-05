@@ -14,25 +14,19 @@ trait IFileOptions
 }
 object IFileOptions {
   
-  @scala.inline
-  def apply(): IFileOptions = {
+  inline def apply(): IFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFileOptions]
   }
   
-  @scala.inline
-  implicit class IFileOptionsMutableBuilder[Self <: IFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFileOptions](x: Self) {
     
-    @scala.inline
-    def setFlag(value: TFlags): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    inline def setFlag(value: TFlags): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+    inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
     
-    @scala.inline
-    def setMode(value: TMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: TMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

@@ -17,20 +17,16 @@ object firebaseDependenciesMod {
   }
   object FirebaseDependencies {
     
-    @scala.inline
-    def apply(appConfig: AppConfig, platformLoggerProvider: Provider[`platform-logger`]): FirebaseDependencies = {
+    inline def apply(appConfig: AppConfig, platformLoggerProvider: Provider[`platform-logger`]): FirebaseDependencies = {
       val __obj = js.Dynamic.literal(appConfig = appConfig.asInstanceOf[js.Any], platformLoggerProvider = platformLoggerProvider.asInstanceOf[js.Any])
       __obj.asInstanceOf[FirebaseDependencies]
     }
     
-    @scala.inline
-    implicit class FirebaseDependenciesMutableBuilder[Self <: FirebaseDependencies] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseDependencies](x: Self) {
       
-      @scala.inline
-      def setAppConfig(value: AppConfig): Self = StObject.set(x, "appConfig", value.asInstanceOf[js.Any])
+      inline def setAppConfig(value: AppConfig): Self = StObject.set(x, "appConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformLoggerProvider(value: Provider[`platform-logger`]): Self = StObject.set(x, "platformLoggerProvider", value.asInstanceOf[js.Any])
+      inline def setPlatformLoggerProvider(value: Provider[`platform-logger`]): Self = StObject.set(x, "platformLoggerProvider", value.asInstanceOf[js.Any])
     }
   }
 }

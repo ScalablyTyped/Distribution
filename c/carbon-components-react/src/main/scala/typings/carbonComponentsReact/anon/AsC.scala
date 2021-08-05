@@ -11,16 +11,13 @@ trait AsC[C /* <: JSXElementConstructor[js.Any] */] extends StObject {
 }
 object AsC {
   
-  @scala.inline
-  def apply[C /* <: JSXElementConstructor[js.Any] */](as: C): AsC[C] = {
+  inline def apply[C /* <: JSXElementConstructor[js.Any] */](as: C): AsC[C] = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsC[C]]
   }
   
-  @scala.inline
-  implicit class AsCMutableBuilder[Self <: AsC[?], C /* <: JSXElementConstructor[js.Any] */] (val x: Self & AsC[C]) extends AnyVal {
+  extension [Self <: AsC[?], C /* <: JSXElementConstructor[js.Any] */](x: Self & AsC[C]) {
     
-    @scala.inline
-    def setAs(value: C): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: C): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
   }
 }

@@ -17,31 +17,23 @@ trait TimeEvent extends StObject {
 }
 object TimeEvent {
   
-  @scala.inline
-  def apply(): TimeEvent = {
+  inline def apply(): TimeEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeEvent]
   }
   
-  @scala.inline
-  implicit class TimeEventMutableBuilder[Self <: TimeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TimeEvent](x: Self) {
     
-    @scala.inline
-    def setAnnotation(value: Annotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
+    inline def setAnnotation(value: Annotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
+    inline def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
     
-    @scala.inline
-    def setMessageEvent(value: MessageEvent): Self = StObject.set(x, "messageEvent", value.asInstanceOf[js.Any])
+    inline def setMessageEvent(value: MessageEvent): Self = StObject.set(x, "messageEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageEventUndefined: Self = StObject.set(x, "messageEvent", js.undefined)
+    inline def setMessageEventUndefined: Self = StObject.set(x, "messageEvent", js.undefined)
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

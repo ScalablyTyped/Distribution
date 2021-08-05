@@ -24,16 +24,13 @@ trait ActionEvent
 }
 object ActionEvent {
   
-  @scala.inline
-  def apply(ActionCommand: String, Source: XInterface): ActionEvent = {
+  inline def apply(ActionCommand: String, Source: XInterface): ActionEvent = {
     val __obj = js.Dynamic.literal(ActionCommand = ActionCommand.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionEvent]
   }
   
-  @scala.inline
-  implicit class ActionEventMutableBuilder[Self <: ActionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ActionEvent](x: Self) {
     
-    @scala.inline
-    def setActionCommand(value: String): Self = StObject.set(x, "ActionCommand", value.asInstanceOf[js.Any])
+    inline def setActionCommand(value: String): Self = StObject.set(x, "ActionCommand", value.asInstanceOf[js.Any])
   }
 }

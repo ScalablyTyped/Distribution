@@ -18,19 +18,15 @@ trait HostedZoneLimit extends StObject {
 }
 object HostedZoneLimit {
   
-  @scala.inline
-  def apply(Type: HostedZoneLimitType, Value: LimitValue): HostedZoneLimit = {
+  inline def apply(Type: HostedZoneLimitType, Value: LimitValue): HostedZoneLimit = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedZoneLimit]
   }
   
-  @scala.inline
-  implicit class HostedZoneLimitMutableBuilder[Self <: HostedZoneLimit] (val x: Self) extends AnyVal {
+  extension [Self <: HostedZoneLimit](x: Self) {
     
-    @scala.inline
-    def setType(value: HostedZoneLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: HostedZoneLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: LimitValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: LimitValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

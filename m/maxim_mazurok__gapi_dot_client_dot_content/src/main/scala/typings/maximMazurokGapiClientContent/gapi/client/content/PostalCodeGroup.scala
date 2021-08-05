@@ -17,34 +17,25 @@ trait PostalCodeGroup extends StObject {
 }
 object PostalCodeGroup {
   
-  @scala.inline
-  def apply(): PostalCodeGroup = {
+  inline def apply(): PostalCodeGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PostalCodeGroup]
   }
   
-  @scala.inline
-  implicit class PostalCodeGroupMutableBuilder[Self <: PostalCodeGroup] (val x: Self) extends AnyVal {
+  extension [Self <: PostalCodeGroup](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPostalCodeRanges(value: js.Array[PostalCodeRange]): Self = StObject.set(x, "postalCodeRanges", value.asInstanceOf[js.Any])
+    inline def setPostalCodeRanges(value: js.Array[PostalCodeRange]): Self = StObject.set(x, "postalCodeRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodeRangesUndefined: Self = StObject.set(x, "postalCodeRanges", js.undefined)
+    inline def setPostalCodeRangesUndefined: Self = StObject.set(x, "postalCodeRanges", js.undefined)
     
-    @scala.inline
-    def setPostalCodeRangesVarargs(value: PostalCodeRange*): Self = StObject.set(x, "postalCodeRanges", js.Array(value :_*))
+    inline def setPostalCodeRangesVarargs(value: PostalCodeRange*): Self = StObject.set(x, "postalCodeRanges", js.Array(value :_*))
   }
 }

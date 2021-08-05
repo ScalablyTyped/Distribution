@@ -28,37 +28,27 @@ trait RealtimeEndpointInfo extends StObject {
 }
 object RealtimeEndpointInfo {
   
-  @scala.inline
-  def apply(): RealtimeEndpointInfo = {
+  inline def apply(): RealtimeEndpointInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RealtimeEndpointInfo]
   }
   
-  @scala.inline
-  implicit class RealtimeEndpointInfoMutableBuilder[Self <: RealtimeEndpointInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RealtimeEndpointInfo](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    @scala.inline
-    def setEndpointStatus(value: RealtimeEndpointStatus): Self = StObject.set(x, "EndpointStatus", value.asInstanceOf[js.Any])
+    inline def setEndpointStatus(value: RealtimeEndpointStatus): Self = StObject.set(x, "EndpointStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointStatusUndefined: Self = StObject.set(x, "EndpointStatus", js.undefined)
+    inline def setEndpointStatusUndefined: Self = StObject.set(x, "EndpointStatus", js.undefined)
     
-    @scala.inline
-    def setEndpointUrl(value: VipURL): Self = StObject.set(x, "EndpointUrl", value.asInstanceOf[js.Any])
+    inline def setEndpointUrl(value: VipURL): Self = StObject.set(x, "EndpointUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUrlUndefined: Self = StObject.set(x, "EndpointUrl", js.undefined)
+    inline def setEndpointUrlUndefined: Self = StObject.set(x, "EndpointUrl", js.undefined)
     
-    @scala.inline
-    def setPeakRequestsPerSecond(value: IntegerType): Self = StObject.set(x, "PeakRequestsPerSecond", value.asInstanceOf[js.Any])
+    inline def setPeakRequestsPerSecond(value: IntegerType): Self = StObject.set(x, "PeakRequestsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeakRequestsPerSecondUndefined: Self = StObject.set(x, "PeakRequestsPerSecond", js.undefined)
+    inline def setPeakRequestsPerSecondUndefined: Self = StObject.set(x, "PeakRequestsPerSecond", js.undefined)
   }
 }

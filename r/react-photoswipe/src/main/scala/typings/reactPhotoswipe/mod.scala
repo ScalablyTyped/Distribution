@@ -45,17 +45,14 @@ object mod {
   }
   object PhotoSwipeGalleryItem {
     
-    @scala.inline
-    def apply(thumbnail: String): PhotoSwipeGalleryItem = {
+    inline def apply(thumbnail: String): PhotoSwipeGalleryItem = {
       val __obj = js.Dynamic.literal(thumbnail = thumbnail.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhotoSwipeGalleryItem]
     }
     
-    @scala.inline
-    implicit class PhotoSwipeGalleryItemMutableBuilder[Self <: PhotoSwipeGalleryItem] (val x: Self) extends AnyVal {
+    extension [Self <: PhotoSwipeGalleryItem](x: Self) {
       
-      @scala.inline
-      def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,157 +139,108 @@ object mod {
   }
   object PhotoSwipeGalleryProps {
     
-    @scala.inline
-    def apply(items: js.Array[PhotoSwipeGalleryItem], thumbnailContent: PhotoSwipeGalleryItem => ReactNode): PhotoSwipeGalleryProps = {
+    inline def apply(items: js.Array[PhotoSwipeGalleryItem], thumbnailContent: PhotoSwipeGalleryItem => ReactNode): PhotoSwipeGalleryProps = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], thumbnailContent = js.Any.fromFunction1(thumbnailContent))
       __obj.asInstanceOf[PhotoSwipeGalleryProps]
     }
     
-    @scala.inline
-    implicit class PhotoSwipeGalleryPropsMutableBuilder[Self <: PhotoSwipeGalleryProps] (val x: Self) extends AnyVal {
+    extension [Self <: PhotoSwipeGalleryProps](x: Self) {
       
-      @scala.inline
-      def setAfterChange(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction1(value))
+      inline def setAfterChange(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterChangeUndefined: Self = StObject.set(x, "afterChange", js.undefined)
+      inline def setAfterChangeUndefined: Self = StObject.set(x, "afterChange", js.undefined)
       
-      @scala.inline
-      def setBeforeChange(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "beforeChange", js.Any.fromFunction1(value))
+      inline def setBeforeChange(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "beforeChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeChangeUndefined: Self = StObject.set(x, "beforeChange", js.undefined)
+      inline def setBeforeChangeUndefined: Self = StObject.set(x, "beforeChange", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClose(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setGettingData(value: (/* instance */ PhotoSwipe, /* index */ Double, /* item */ Item) => Unit): Self = StObject.set(x, "gettingData", js.Any.fromFunction3(value))
+      inline def setGettingData(value: (/* instance */ PhotoSwipe, /* index */ Double, /* item */ Item) => Unit): Self = StObject.set(x, "gettingData", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGettingDataUndefined: Self = StObject.set(x, "gettingData", js.undefined)
+      inline def setGettingDataUndefined: Self = StObject.set(x, "gettingData", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setImageLoadComplete(value: (/* instance */ PhotoSwipe, /* index */ Double, /* item */ Item) => Unit): Self = StObject.set(x, "imageLoadComplete", js.Any.fromFunction3(value))
+      inline def setImageLoadComplete(value: (/* instance */ PhotoSwipe, /* index */ Double, /* item */ Item) => Unit): Self = StObject.set(x, "imageLoadComplete", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setImageLoadCompleteUndefined: Self = StObject.set(x, "imageLoadComplete", js.undefined)
+      inline def setImageLoadCompleteUndefined: Self = StObject.set(x, "imageLoadComplete", js.undefined)
       
-      @scala.inline
-      def setInitialZoomIn(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomIn", js.Any.fromFunction1(value))
+      inline def setInitialZoomIn(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitialZoomInEnd(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomInEnd", js.Any.fromFunction1(value))
+      inline def setInitialZoomInEnd(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomInEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitialZoomInEndUndefined: Self = StObject.set(x, "initialZoomInEnd", js.undefined)
+      inline def setInitialZoomInEndUndefined: Self = StObject.set(x, "initialZoomInEnd", js.undefined)
       
-      @scala.inline
-      def setInitialZoomInUndefined: Self = StObject.set(x, "initialZoomIn", js.undefined)
+      inline def setInitialZoomInUndefined: Self = StObject.set(x, "initialZoomIn", js.undefined)
       
-      @scala.inline
-      def setInitialZoomOut(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomOut", js.Any.fromFunction1(value))
+      inline def setInitialZoomOut(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitialZoomOutEnd(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomOutEnd", js.Any.fromFunction1(value))
+      inline def setInitialZoomOutEnd(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomOutEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitialZoomOutEndUndefined: Self = StObject.set(x, "initialZoomOutEnd", js.undefined)
+      inline def setInitialZoomOutEndUndefined: Self = StObject.set(x, "initialZoomOutEnd", js.undefined)
       
-      @scala.inline
-      def setInitialZoomOutUndefined: Self = StObject.set(x, "initialZoomOut", js.undefined)
+      inline def setInitialZoomOutUndefined: Self = StObject.set(x, "initialZoomOut", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[PhotoSwipeGalleryItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[PhotoSwipeGalleryItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: PhotoSwipeGalleryItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: PhotoSwipeGalleryItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMouseUsed(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "mouseUsed", js.Any.fromFunction1(value))
+      inline def setMouseUsed(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "mouseUsed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMouseUsedUndefined: Self = StObject.set(x, "mouseUsed", js.undefined)
+      inline def setMouseUsedUndefined: Self = StObject.set(x, "mouseUsed", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setParseVerticalMargin(value: (/* instance */ PhotoSwipe, /* item */ Item) => Unit): Self = StObject.set(x, "parseVerticalMargin", js.Any.fromFunction2(value))
+      inline def setParseVerticalMargin(value: (/* instance */ PhotoSwipe, /* item */ Item) => Unit): Self = StObject.set(x, "parseVerticalMargin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParseVerticalMarginUndefined: Self = StObject.set(x, "parseVerticalMargin", js.undefined)
+      inline def setParseVerticalMarginUndefined: Self = StObject.set(x, "parseVerticalMargin", js.undefined)
       
-      @scala.inline
-      def setPreventDragEvent(
+      inline def setPreventDragEvent(
         value: (/* instance */ PhotoSwipe, /* e */ MouseEvent, /* isDown */ Boolean, /* preventObj */ Prevent) => Unit
       ): Self = StObject.set(x, "preventDragEvent", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPreventDragEventUndefined: Self = StObject.set(x, "preventDragEvent", js.undefined)
+      inline def setPreventDragEventUndefined: Self = StObject.set(x, "preventDragEvent", js.undefined)
       
-      @scala.inline
-      def setResize(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
+      inline def setResize(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setShareLinkClick(value: (/* instance */ PhotoSwipe, /* e */ MouseEvent, /* item */ Item) => Unit): Self = StObject.set(x, "shareLinkClick", js.Any.fromFunction3(value))
+      inline def setShareLinkClick(value: (/* instance */ PhotoSwipe, /* e */ MouseEvent, /* item */ Item) => Unit): Self = StObject.set(x, "shareLinkClick", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setShareLinkClickUndefined: Self = StObject.set(x, "shareLinkClick", js.undefined)
+      inline def setShareLinkClickUndefined: Self = StObject.set(x, "shareLinkClick", js.undefined)
       
-      @scala.inline
-      def setThumbnailContent(value: PhotoSwipeGalleryItem => ReactNode): Self = StObject.set(x, "thumbnailContent", js.Any.fromFunction1(value))
+      inline def setThumbnailContent(value: PhotoSwipeGalleryItem => ReactNode): Self = StObject.set(x, "thumbnailContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnbindEvents(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "unbindEvents", js.Any.fromFunction1(value))
+      inline def setUnbindEvents(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "unbindEvents", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnbindEventsUndefined: Self = StObject.set(x, "unbindEvents", js.undefined)
+      inline def setUnbindEventsUndefined: Self = StObject.set(x, "unbindEvents", js.undefined)
       
-      @scala.inline
-      def setUpdateScrollOffset(value: (/* instance */ PhotoSwipe, /* _offset */ X) => Unit): Self = StObject.set(x, "updateScrollOffset", js.Any.fromFunction2(value))
+      inline def setUpdateScrollOffset(value: (/* instance */ PhotoSwipe, /* _offset */ X) => Unit): Self = StObject.set(x, "updateScrollOffset", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateScrollOffsetUndefined: Self = StObject.set(x, "updateScrollOffset", js.undefined)
+      inline def setUpdateScrollOffsetUndefined: Self = StObject.set(x, "updateScrollOffset", js.undefined)
     }
   }
   
@@ -482,151 +430,104 @@ object mod {
   }
   object PhotoSwipeProps {
     
-    @scala.inline
-    def apply(isOpen: Boolean, items: js.Array[Item]): PhotoSwipeProps = {
+    inline def apply(isOpen: Boolean, items: js.Array[Item]): PhotoSwipeProps = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhotoSwipeProps]
     }
     
-    @scala.inline
-    implicit class PhotoSwipePropsMutableBuilder[Self <: PhotoSwipeProps] (val x: Self) extends AnyVal {
+    extension [Self <: PhotoSwipeProps](x: Self) {
       
-      @scala.inline
-      def setAfterChange(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction1(value))
+      inline def setAfterChange(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterChangeUndefined: Self = StObject.set(x, "afterChange", js.undefined)
+      inline def setAfterChangeUndefined: Self = StObject.set(x, "afterChange", js.undefined)
       
-      @scala.inline
-      def setBeforeChange(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "beforeChange", js.Any.fromFunction1(value))
+      inline def setBeforeChange(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "beforeChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeChangeUndefined: Self = StObject.set(x, "beforeChange", js.undefined)
+      inline def setBeforeChangeUndefined: Self = StObject.set(x, "beforeChange", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClose(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setGettingData(value: (/* instance */ PhotoSwipe, /* index */ Double, /* item */ Item) => Unit): Self = StObject.set(x, "gettingData", js.Any.fromFunction3(value))
+      inline def setGettingData(value: (/* instance */ PhotoSwipe, /* index */ Double, /* item */ Item) => Unit): Self = StObject.set(x, "gettingData", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGettingDataUndefined: Self = StObject.set(x, "gettingData", js.undefined)
+      inline def setGettingDataUndefined: Self = StObject.set(x, "gettingData", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setImageLoadComplete(value: (/* instance */ PhotoSwipe, /* index */ Double, /* item */ Item) => Unit): Self = StObject.set(x, "imageLoadComplete", js.Any.fromFunction3(value))
+      inline def setImageLoadComplete(value: (/* instance */ PhotoSwipe, /* index */ Double, /* item */ Item) => Unit): Self = StObject.set(x, "imageLoadComplete", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setImageLoadCompleteUndefined: Self = StObject.set(x, "imageLoadComplete", js.undefined)
+      inline def setImageLoadCompleteUndefined: Self = StObject.set(x, "imageLoadComplete", js.undefined)
       
-      @scala.inline
-      def setInitialZoomIn(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomIn", js.Any.fromFunction1(value))
+      inline def setInitialZoomIn(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitialZoomInEnd(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomInEnd", js.Any.fromFunction1(value))
+      inline def setInitialZoomInEnd(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomInEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitialZoomInEndUndefined: Self = StObject.set(x, "initialZoomInEnd", js.undefined)
+      inline def setInitialZoomInEndUndefined: Self = StObject.set(x, "initialZoomInEnd", js.undefined)
       
-      @scala.inline
-      def setInitialZoomInUndefined: Self = StObject.set(x, "initialZoomIn", js.undefined)
+      inline def setInitialZoomInUndefined: Self = StObject.set(x, "initialZoomIn", js.undefined)
       
-      @scala.inline
-      def setInitialZoomOut(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomOut", js.Any.fromFunction1(value))
+      inline def setInitialZoomOut(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitialZoomOutEnd(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomOutEnd", js.Any.fromFunction1(value))
+      inline def setInitialZoomOutEnd(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "initialZoomOutEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitialZoomOutEndUndefined: Self = StObject.set(x, "initialZoomOutEnd", js.undefined)
+      inline def setInitialZoomOutEndUndefined: Self = StObject.set(x, "initialZoomOutEnd", js.undefined)
       
-      @scala.inline
-      def setInitialZoomOutUndefined: Self = StObject.set(x, "initialZoomOut", js.undefined)
+      inline def setInitialZoomOutUndefined: Self = StObject.set(x, "initialZoomOut", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMouseUsed(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "mouseUsed", js.Any.fromFunction1(value))
+      inline def setMouseUsed(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "mouseUsed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMouseUsedUndefined: Self = StObject.set(x, "mouseUsed", js.undefined)
+      inline def setMouseUsedUndefined: Self = StObject.set(x, "mouseUsed", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setParseVerticalMargin(value: (/* instance */ PhotoSwipe, /* item */ Item) => Unit): Self = StObject.set(x, "parseVerticalMargin", js.Any.fromFunction2(value))
+      inline def setParseVerticalMargin(value: (/* instance */ PhotoSwipe, /* item */ Item) => Unit): Self = StObject.set(x, "parseVerticalMargin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParseVerticalMarginUndefined: Self = StObject.set(x, "parseVerticalMargin", js.undefined)
+      inline def setParseVerticalMarginUndefined: Self = StObject.set(x, "parseVerticalMargin", js.undefined)
       
-      @scala.inline
-      def setPreventDragEvent(
+      inline def setPreventDragEvent(
         value: (/* instance */ PhotoSwipe, /* e */ MouseEvent, /* isDown */ Boolean, /* preventObj */ Prevent) => Unit
       ): Self = StObject.set(x, "preventDragEvent", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPreventDragEventUndefined: Self = StObject.set(x, "preventDragEvent", js.undefined)
+      inline def setPreventDragEventUndefined: Self = StObject.set(x, "preventDragEvent", js.undefined)
       
-      @scala.inline
-      def setResize(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
+      inline def setResize(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setShareLinkClick(value: (/* instance */ PhotoSwipe, /* e */ MouseEvent, /* item */ Item) => Unit): Self = StObject.set(x, "shareLinkClick", js.Any.fromFunction3(value))
+      inline def setShareLinkClick(value: (/* instance */ PhotoSwipe, /* e */ MouseEvent, /* item */ Item) => Unit): Self = StObject.set(x, "shareLinkClick", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setShareLinkClickUndefined: Self = StObject.set(x, "shareLinkClick", js.undefined)
+      inline def setShareLinkClickUndefined: Self = StObject.set(x, "shareLinkClick", js.undefined)
       
-      @scala.inline
-      def setUnbindEvents(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "unbindEvents", js.Any.fromFunction1(value))
+      inline def setUnbindEvents(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "unbindEvents", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnbindEventsUndefined: Self = StObject.set(x, "unbindEvents", js.undefined)
+      inline def setUnbindEventsUndefined: Self = StObject.set(x, "unbindEvents", js.undefined)
       
-      @scala.inline
-      def setUpdateScrollOffset(value: (/* instance */ PhotoSwipe, /* _offset */ X) => Unit): Self = StObject.set(x, "updateScrollOffset", js.Any.fromFunction2(value))
+      inline def setUpdateScrollOffset(value: (/* instance */ PhotoSwipe, /* _offset */ X) => Unit): Self = StObject.set(x, "updateScrollOffset", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateScrollOffsetUndefined: Self = StObject.set(x, "updateScrollOffset", js.undefined)
+      inline def setUpdateScrollOffsetUndefined: Self = StObject.set(x, "updateScrollOffset", js.undefined)
     }
   }
 }

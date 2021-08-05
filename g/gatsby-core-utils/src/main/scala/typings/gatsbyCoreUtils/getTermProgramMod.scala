@@ -10,6 +10,5 @@ object getTermProgramMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTermProgram(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTermProgram")().asInstanceOf[js.UndefOr[String]]
+  inline def getTermProgram(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTermProgram")().asInstanceOf[js.UndefOr[String]]
 }

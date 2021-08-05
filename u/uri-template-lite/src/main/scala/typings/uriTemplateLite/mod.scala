@@ -23,7 +23,6 @@ object mod {
       def `match`(template: String): StringDictionary[String] = js.native
     }
     
-    @scala.inline
-    def expand(template: String, data: StringDictionary[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def expand(template: String, data: StringDictionary[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

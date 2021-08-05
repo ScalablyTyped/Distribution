@@ -12,6 +12,5 @@ object ssimMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ssim(pixels1: Matrix, pixels2: Matrix, options: Options): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("ssim")(pixels1.asInstanceOf[js.Any], pixels2.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def ssim(pixels1: Matrix, pixels2: Matrix, options: Options): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("ssim")(pixels1.asInstanceOf[js.Any], pixels2.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Matrix]
 }

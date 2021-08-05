@@ -10,16 +10,13 @@ trait State extends StObject {
 }
 object State {
   
-  @scala.inline
-  def apply(state: Expanded): State = {
+  inline def apply(state: Expanded): State = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
   
-  @scala.inline
-  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+  extension [Self <: State](x: Self) {
     
-    @scala.inline
-    def setState(value: Expanded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Expanded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait ICommitToSVNTeamServerOptions
 }
 object ICommitToSVNTeamServerOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commitMessage: String,
     targetBranch: String,
     targetRevision: Double,
@@ -32,22 +31,16 @@ object ICommitToSVNTeamServerOptions {
     __obj.asInstanceOf[ICommitToSVNTeamServerOptions]
   }
   
-  @scala.inline
-  implicit class ICommitToSVNTeamServerOptionsMutableBuilder[Self <: ICommitToSVNTeamServerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ICommitToSVNTeamServerOptions](x: Self) {
     
-    @scala.inline
-    def setRepositoryType(value: svn): Self = StObject.set(x, "repositoryType", value.asInstanceOf[js.Any])
+    inline def setRepositoryType(value: svn): Self = StObject.set(x, "repositoryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryTypeUndefined: Self = StObject.set(x, "repositoryType", js.undefined)
+    inline def setRepositoryTypeUndefined: Self = StObject.set(x, "repositoryType", js.undefined)
     
-    @scala.inline
-    def setTargetRevision(value: Double): Self = StObject.set(x, "targetRevision", value.asInstanceOf[js.Any])
+    inline def setTargetRevision(value: Double): Self = StObject.set(x, "targetRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamServerPassword(value: String): Self = StObject.set(x, "teamServerPassword", value.asInstanceOf[js.Any])
+    inline def setTeamServerPassword(value: String): Self = StObject.set(x, "teamServerPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamServerUsername(value: String): Self = StObject.set(x, "teamServerUsername", value.asInstanceOf[js.Any])
+    inline def setTeamServerUsername(value: String): Self = StObject.set(x, "teamServerUsername", value.asInstanceOf[js.Any])
   }
 }

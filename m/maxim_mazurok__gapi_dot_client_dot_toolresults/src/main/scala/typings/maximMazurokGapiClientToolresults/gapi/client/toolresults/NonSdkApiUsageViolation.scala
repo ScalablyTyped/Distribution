@@ -14,28 +14,21 @@ trait NonSdkApiUsageViolation extends StObject {
 }
 object NonSdkApiUsageViolation {
   
-  @scala.inline
-  def apply(): NonSdkApiUsageViolation = {
+  inline def apply(): NonSdkApiUsageViolation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NonSdkApiUsageViolation]
   }
   
-  @scala.inline
-  implicit class NonSdkApiUsageViolationMutableBuilder[Self <: NonSdkApiUsageViolation] (val x: Self) extends AnyVal {
+  extension [Self <: NonSdkApiUsageViolation](x: Self) {
     
-    @scala.inline
-    def setApiSignatures(value: js.Array[String]): Self = StObject.set(x, "apiSignatures", value.asInstanceOf[js.Any])
+    inline def setApiSignatures(value: js.Array[String]): Self = StObject.set(x, "apiSignatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiSignaturesUndefined: Self = StObject.set(x, "apiSignatures", js.undefined)
+    inline def setApiSignaturesUndefined: Self = StObject.set(x, "apiSignatures", js.undefined)
     
-    @scala.inline
-    def setApiSignaturesVarargs(value: String*): Self = StObject.set(x, "apiSignatures", js.Array(value :_*))
+    inline def setApiSignaturesVarargs(value: String*): Self = StObject.set(x, "apiSignatures", js.Array(value :_*))
     
-    @scala.inline
-    def setUniqueApis(value: Double): Self = StObject.set(x, "uniqueApis", value.asInstanceOf[js.Any])
+    inline def setUniqueApis(value: Double): Self = StObject.set(x, "uniqueApis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueApisUndefined: Self = StObject.set(x, "uniqueApis", js.undefined)
+    inline def setUniqueApisUndefined: Self = StObject.set(x, "uniqueApis", js.undefined)
   }
 }

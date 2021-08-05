@@ -10,13 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(jsonString: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(jsonString.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  @scala.inline
-  def parse(jsonString: String, allowDuplicatedKeys: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(jsonString.asInstanceOf[js.Any], allowDuplicatedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def parse(jsonString: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(jsonString.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def parse(jsonString: String, allowDuplicatedKeys: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(jsonString.asInstanceOf[js.Any], allowDuplicatedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @scala.inline
-  def validate(jsonString: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(jsonString.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-  @scala.inline
-  def validate(jsonString: String, allowDuplicatedKeys: Boolean): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(jsonString.asInstanceOf[js.Any], allowDuplicatedKeys.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def validate(jsonString: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(jsonString.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def validate(jsonString: String, allowDuplicatedKeys: Boolean): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(jsonString.asInstanceOf[js.Any], allowDuplicatedKeys.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
 }

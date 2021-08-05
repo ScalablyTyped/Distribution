@@ -26,28 +26,21 @@ trait INxAxisTicks extends StObject {
 }
 object INxAxisTicks {
   
-  @scala.inline
-  def apply(qName: String, qTags: js.Array[String], qTicks: js.Array[INxTickCell]): INxAxisTicks = {
+  inline def apply(qName: String, qTags: js.Array[String], qTicks: js.Array[INxTickCell]): INxAxisTicks = {
     val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any], qTicks = qTicks.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxAxisTicks]
   }
   
-  @scala.inline
-  implicit class INxAxisTicksMutableBuilder[Self <: INxAxisTicks] (val x: Self) extends AnyVal {
+  extension [Self <: INxAxisTicks](x: Self) {
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
+    inline def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
     
-    @scala.inline
-    def setQTicks(value: js.Array[INxTickCell]): Self = StObject.set(x, "qTicks", value.asInstanceOf[js.Any])
+    inline def setQTicks(value: js.Array[INxTickCell]): Self = StObject.set(x, "qTicks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTicksVarargs(value: INxTickCell*): Self = StObject.set(x, "qTicks", js.Array(value :_*))
+    inline def setQTicksVarargs(value: INxTickCell*): Self = StObject.set(x, "qTicks", js.Array(value :_*))
   }
 }

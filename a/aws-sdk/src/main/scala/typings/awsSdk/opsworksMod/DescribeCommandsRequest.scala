@@ -23,34 +23,25 @@ trait DescribeCommandsRequest extends StObject {
 }
 object DescribeCommandsRequest {
   
-  @scala.inline
-  def apply(): DescribeCommandsRequest = {
+  inline def apply(): DescribeCommandsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCommandsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeCommandsRequestMutableBuilder[Self <: DescribeCommandsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCommandsRequest](x: Self) {
     
-    @scala.inline
-    def setCommandIds(value: Strings): Self = StObject.set(x, "CommandIds", value.asInstanceOf[js.Any])
+    inline def setCommandIds(value: Strings): Self = StObject.set(x, "CommandIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandIdsUndefined: Self = StObject.set(x, "CommandIds", js.undefined)
+    inline def setCommandIdsUndefined: Self = StObject.set(x, "CommandIds", js.undefined)
     
-    @scala.inline
-    def setCommandIdsVarargs(value: String*): Self = StObject.set(x, "CommandIds", js.Array(value :_*))
+    inline def setCommandIdsVarargs(value: String*): Self = StObject.set(x, "CommandIds", js.Array(value :_*))
     
-    @scala.inline
-    def setDeploymentId(value: String): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: String): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
   }
 }

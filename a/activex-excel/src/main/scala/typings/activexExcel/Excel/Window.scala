@@ -72,7 +72,7 @@ trait Window extends StObject {
   
   var EnableResize: Boolean = js.native
   
-  @JSName("Excel.Window_typekey")
+  /* private */ @JSName("Excel.Window_typekey")
   var ExcelDotWindow_typekey: Window = js.native
   
   var FreezePanes: Boolean = js.native

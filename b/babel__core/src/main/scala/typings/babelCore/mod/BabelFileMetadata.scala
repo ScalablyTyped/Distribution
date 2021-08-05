@@ -15,28 +15,21 @@ trait BabelFileMetadata extends StObject {
 }
 object BabelFileMetadata {
   
-  @scala.inline
-  def apply(marked: js.Array[Loc], modules: BabelFileModulesMetadata, usedHelpers: js.Array[String]): BabelFileMetadata = {
+  inline def apply(marked: js.Array[Loc], modules: BabelFileModulesMetadata, usedHelpers: js.Array[String]): BabelFileMetadata = {
     val __obj = js.Dynamic.literal(marked = marked.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], usedHelpers = usedHelpers.asInstanceOf[js.Any])
     __obj.asInstanceOf[BabelFileMetadata]
   }
   
-  @scala.inline
-  implicit class BabelFileMetadataMutableBuilder[Self <: BabelFileMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: BabelFileMetadata](x: Self) {
     
-    @scala.inline
-    def setMarked(value: js.Array[Loc]): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
+    inline def setMarked(value: js.Array[Loc]): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkedVarargs(value: Loc*): Self = StObject.set(x, "marked", js.Array(value :_*))
+    inline def setMarkedVarargs(value: Loc*): Self = StObject.set(x, "marked", js.Array(value :_*))
     
-    @scala.inline
-    def setModules(value: BabelFileModulesMetadata): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    inline def setModules(value: BabelFileModulesMetadata): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedHelpers(value: js.Array[String]): Self = StObject.set(x, "usedHelpers", value.asInstanceOf[js.Any])
+    inline def setUsedHelpers(value: js.Array[String]): Self = StObject.set(x, "usedHelpers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedHelpersVarargs(value: String*): Self = StObject.set(x, "usedHelpers", js.Array(value :_*))
+    inline def setUsedHelpersVarargs(value: String*): Self = StObject.set(x, "usedHelpers", js.Array(value :_*))
   }
 }

@@ -17,19 +17,16 @@ object simpleGeometryMod {
   @js.native
   abstract class default () extends SimpleGeometry
   
-  @scala.inline
-  def getStrideForLayout(layout: GeometryLayout): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrideForLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getStrideForLayout(layout: GeometryLayout): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrideForLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def transformGeom2D(simpleGeometry: SimpleGeometry, transform: Transform): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformGeom2D")(simpleGeometry.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def transformGeom2D(simpleGeometry: SimpleGeometry, transform: Transform, opt_dest: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformGeom2D")(simpleGeometry.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def transformGeom2D(simpleGeometry: SimpleGeometry, transform: Transform): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformGeom2D")(simpleGeometry.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def transformGeom2D(simpleGeometry: SimpleGeometry, transform: Transform, opt_dest: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformGeom2D")(simpleGeometry.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   @js.native
   trait SimpleGeometry
     extends typings.ol.geometryMod.default {
     
-    var flatCoordinates: js.Array[Double] = js.native
+    /* protected */ var flatCoordinates: js.Array[Double] = js.native
     
     def getCoordinates(): js.Array[js.Any] = js.native
     
@@ -54,7 +51,7 @@ object simpleGeometryMod {
     
     def getStride(): Double = js.native
     
-    var layout: GeometryLayout = js.native
+    /* protected */ var layout: GeometryLayout = js.native
     
     def setCoordinates(coordinates: js.Array[js.Any]): Unit = js.native
     def setCoordinates(coordinates: js.Array[js.Any], opt_layout: GeometryLayout): Unit = js.native
@@ -64,6 +61,6 @@ object simpleGeometryMod {
     /* protected */ def setLayout(layout: Unit, coordinates: js.Array[js.Any], nesting: Double): Unit = js.native
     /* protected */ def setLayout(layout: GeometryLayout, coordinates: js.Array[js.Any], nesting: Double): Unit = js.native
     
-    var stride: Double = js.native
+    /* protected */ var stride: Double = js.native
   }
 }

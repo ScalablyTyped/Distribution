@@ -14,8 +14,7 @@ object uploadMediaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def uploadMedia(options: UploadMediaOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadMedia")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def uploadMedia(options: UploadMediaOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadMedia")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in std.Exclude<keyof @wordpress/api-fetch.@wordpress/api-fetch.Schema.Media<'edit'>, 'alt_text' | 'caption' | 'source_url' | 'title'> ]: @wordpress/api-fetch.@wordpress/api-fetch.Schema.Media<'edit'>[P]} */ trait MediaItem extends StObject {
@@ -30,26 +29,20 @@ object uploadMediaMod {
   }
   object MediaItem {
     
-    @scala.inline
-    def apply(alt: String, caption: String, title: String, url: String): MediaItem = {
+    inline def apply(alt: String, caption: String, title: String, url: String): MediaItem = {
       val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaItem]
     }
     
-    @scala.inline
-    implicit class MediaItemMutableBuilder[Self <: MediaItem] (val x: Self) extends AnyVal {
+    extension [Self <: MediaItem](x: Self) {
       
-      @scala.inline
-      def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,20 +56,15 @@ object uploadMediaMod {
   trait UploadMediaErrorCode extends StObject
   object UploadMediaErrorCode {
     
-    @scala.inline
-    def EMPTY_FILE: typings.wordpressMediaUtils.wordpressMediaUtilsStrings.EMPTY_FILE = "EMPTY_FILE".asInstanceOf[typings.wordpressMediaUtils.wordpressMediaUtilsStrings.EMPTY_FILE]
+    inline def EMPTY_FILE: typings.wordpressMediaUtils.wordpressMediaUtilsStrings.EMPTY_FILE = "EMPTY_FILE".asInstanceOf[typings.wordpressMediaUtils.wordpressMediaUtilsStrings.EMPTY_FILE]
     
-    @scala.inline
-    def GENERAL: typings.wordpressMediaUtils.wordpressMediaUtilsStrings.GENERAL = "GENERAL".asInstanceOf[typings.wordpressMediaUtils.wordpressMediaUtilsStrings.GENERAL]
+    inline def GENERAL: typings.wordpressMediaUtils.wordpressMediaUtilsStrings.GENERAL = "GENERAL".asInstanceOf[typings.wordpressMediaUtils.wordpressMediaUtilsStrings.GENERAL]
     
-    @scala.inline
-    def MIME_TYPE_NOT_ALLOWED_FOR_USER: typings.wordpressMediaUtils.wordpressMediaUtilsStrings.MIME_TYPE_NOT_ALLOWED_FOR_USER = "MIME_TYPE_NOT_ALLOWED_FOR_USER".asInstanceOf[typings.wordpressMediaUtils.wordpressMediaUtilsStrings.MIME_TYPE_NOT_ALLOWED_FOR_USER]
+    inline def MIME_TYPE_NOT_ALLOWED_FOR_USER: typings.wordpressMediaUtils.wordpressMediaUtilsStrings.MIME_TYPE_NOT_ALLOWED_FOR_USER = "MIME_TYPE_NOT_ALLOWED_FOR_USER".asInstanceOf[typings.wordpressMediaUtils.wordpressMediaUtilsStrings.MIME_TYPE_NOT_ALLOWED_FOR_USER]
     
-    @scala.inline
-    def MIME_TYPE_NOT_SUPPORTED: typings.wordpressMediaUtils.wordpressMediaUtilsStrings.MIME_TYPE_NOT_SUPPORTED = "MIME_TYPE_NOT_SUPPORTED".asInstanceOf[typings.wordpressMediaUtils.wordpressMediaUtilsStrings.MIME_TYPE_NOT_SUPPORTED]
+    inline def MIME_TYPE_NOT_SUPPORTED: typings.wordpressMediaUtils.wordpressMediaUtilsStrings.MIME_TYPE_NOT_SUPPORTED = "MIME_TYPE_NOT_SUPPORTED".asInstanceOf[typings.wordpressMediaUtils.wordpressMediaUtilsStrings.MIME_TYPE_NOT_SUPPORTED]
     
-    @scala.inline
-    def SIZE_ABOVE_LIMIT: typings.wordpressMediaUtils.wordpressMediaUtilsStrings.SIZE_ABOVE_LIMIT = "SIZE_ABOVE_LIMIT".asInstanceOf[typings.wordpressMediaUtils.wordpressMediaUtilsStrings.SIZE_ABOVE_LIMIT]
+    inline def SIZE_ABOVE_LIMIT: typings.wordpressMediaUtils.wordpressMediaUtilsStrings.SIZE_ABOVE_LIMIT = "SIZE_ABOVE_LIMIT".asInstanceOf[typings.wordpressMediaUtils.wordpressMediaUtilsStrings.SIZE_ABOVE_LIMIT]
   }
   
   trait UploadMediaOptions extends StObject {
@@ -124,8 +112,7 @@ object uploadMediaMod {
   }
   object UploadMediaOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       filesList: ArrayLike[File],
       maxUploadFileSize: Double,
       onError: Code => Unit,
@@ -135,41 +122,29 @@ object uploadMediaMod {
       __obj.asInstanceOf[UploadMediaOptions]
     }
     
-    @scala.inline
-    implicit class UploadMediaOptionsMutableBuilder[Self <: UploadMediaOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UploadMediaOptions](x: Self) {
       
-      @scala.inline
-      def setAdditionalData(value: Record[String, js.Any]): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
+      inline def setAdditionalData(value: Record[String, js.Any]): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
+      inline def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
       
-      @scala.inline
-      def setAllowedTypes(value: js.Array[String]): Self = StObject.set(x, "allowedTypes", value.asInstanceOf[js.Any])
+      inline def setAllowedTypes(value: js.Array[String]): Self = StObject.set(x, "allowedTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedTypesUndefined: Self = StObject.set(x, "allowedTypes", js.undefined)
+      inline def setAllowedTypesUndefined: Self = StObject.set(x, "allowedTypes", js.undefined)
       
-      @scala.inline
-      def setAllowedTypesVarargs(value: String*): Self = StObject.set(x, "allowedTypes", js.Array(value :_*))
+      inline def setAllowedTypesVarargs(value: String*): Self = StObject.set(x, "allowedTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setFilesList(value: ArrayLike[File]): Self = StObject.set(x, "filesList", value.asInstanceOf[js.Any])
+      inline def setFilesList(value: ArrayLike[File]): Self = StObject.set(x, "filesList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUploadFileSize(value: Double): Self = StObject.set(x, "maxUploadFileSize", value.asInstanceOf[js.Any])
+      inline def setMaxUploadFileSize(value: Double): Self = StObject.set(x, "maxUploadFileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnError(value: Code => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: Code => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFileChange(value: js.Array[MediaItem] => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
+      inline def setOnFileChange(value: js.Array[MediaItem] => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWpAllowedMimeTypes(value: Record[String, String]): Self = StObject.set(x, "wpAllowedMimeTypes", value.asInstanceOf[js.Any])
+      inline def setWpAllowedMimeTypes(value: Record[String, String]): Self = StObject.set(x, "wpAllowedMimeTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWpAllowedMimeTypesUndefined: Self = StObject.set(x, "wpAllowedMimeTypes", js.undefined)
+      inline def setWpAllowedMimeTypesUndefined: Self = StObject.set(x, "wpAllowedMimeTypes", js.undefined)
     }
   }
 }

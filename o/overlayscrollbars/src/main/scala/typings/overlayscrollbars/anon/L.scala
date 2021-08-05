@@ -16,25 +16,19 @@ trait L
 }
 object L {
   
-  @scala.inline
-  def apply(): L = {
+  inline def apply(): L = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[L]
   }
   
-  @scala.inline
-  implicit class LMutableBuilder[Self <: L] (val x: Self) extends AnyVal {
+  extension [Self <: L](x: Self) {
     
-    @scala.inline
-    def setL(value: Position): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: Position): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLUndefined: Self = StObject.set(x, "l", js.undefined)
+    inline def setLUndefined: Self = StObject.set(x, "l", js.undefined)
     
-    @scala.inline
-    def setT(value: Position): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: Position): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTUndefined: Self = StObject.set(x, "t", js.undefined)
+    inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
   }
 }

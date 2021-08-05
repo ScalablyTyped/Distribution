@@ -11,19 +11,15 @@ trait DataSourceRefreshDailySchedule extends StObject {
 }
 object DataSourceRefreshDailySchedule {
   
-  @scala.inline
-  def apply(): DataSourceRefreshDailySchedule = {
+  inline def apply(): DataSourceRefreshDailySchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceRefreshDailySchedule]
   }
   
-  @scala.inline
-  implicit class DataSourceRefreshDailyScheduleMutableBuilder[Self <: DataSourceRefreshDailySchedule] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceRefreshDailySchedule](x: Self) {
     
-    @scala.inline
-    def setStartTime(value: TimeOfDay): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: TimeOfDay): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

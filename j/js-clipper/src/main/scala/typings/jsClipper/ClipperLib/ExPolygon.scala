@@ -13,19 +13,15 @@ trait ExPolygon extends StObject {
 }
 object ExPolygon {
   
-  @scala.inline
-  def apply(holes: ArrayLike[ArrayLike[IntPoint]], outer: ArrayLike[IntPoint]): ExPolygon = {
+  inline def apply(holes: ArrayLike[ArrayLike[IntPoint]], outer: ArrayLike[IntPoint]): ExPolygon = {
     val __obj = js.Dynamic.literal(holes = holes.asInstanceOf[js.Any], outer = outer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExPolygon]
   }
   
-  @scala.inline
-  implicit class ExPolygonMutableBuilder[Self <: ExPolygon] (val x: Self) extends AnyVal {
+  extension [Self <: ExPolygon](x: Self) {
     
-    @scala.inline
-    def setHoles(value: ArrayLike[ArrayLike[IntPoint]]): Self = StObject.set(x, "holes", value.asInstanceOf[js.Any])
+    inline def setHoles(value: ArrayLike[ArrayLike[IntPoint]]): Self = StObject.set(x, "holes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuter(value: ArrayLike[IntPoint]): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
+    inline def setOuter(value: ArrayLike[IntPoint]): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
   }
 }

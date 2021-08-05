@@ -17,19 +17,15 @@ trait ConferenceRequestStatus extends StObject {
 }
 object ConferenceRequestStatus {
   
-  @scala.inline
-  def apply(): ConferenceRequestStatus = {
+  inline def apply(): ConferenceRequestStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConferenceRequestStatus]
   }
   
-  @scala.inline
-  implicit class ConferenceRequestStatusMutableBuilder[Self <: ConferenceRequestStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ConferenceRequestStatus](x: Self) {
     
-    @scala.inline
-    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

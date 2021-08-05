@@ -16,8 +16,7 @@ trait PathItem[TContext, TEvent /* <: EventObject */] extends StObject {
 }
 object PathItem {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  inline def apply[TContext, TEvent /* <: EventObject */](
     path: js.Array[Segment[TContext, TEvent]],
     state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]
   ): PathItem[TContext, TEvent] = {
@@ -25,22 +24,16 @@ object PathItem {
     __obj.asInstanceOf[PathItem[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class PathItemMutableBuilder[Self <: PathItem[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (PathItem[TContext, TEvent])) extends AnyVal {
+  extension [Self <: PathItem[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (PathItem[TContext, TEvent])) {
     
-    @scala.inline
-    def setPath(value: js.Array[Segment[TContext, TEvent]]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[Segment[TContext, TEvent]]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: (Segment[TContext, TEvent])*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (Segment[TContext, TEvent])*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

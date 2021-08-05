@@ -34,31 +34,23 @@ trait SchemaSecurityPolicyRuleMatcher extends StObject {
 }
 object SchemaSecurityPolicyRuleMatcher {
   
-  @scala.inline
-  def apply(): SchemaSecurityPolicyRuleMatcher = {
+  inline def apply(): SchemaSecurityPolicyRuleMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityPolicyRuleMatcher]
   }
   
-  @scala.inline
-  implicit class SchemaSecurityPolicyRuleMatcherMutableBuilder[Self <: SchemaSecurityPolicyRuleMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecurityPolicyRuleMatcher](x: Self) {
     
-    @scala.inline
-    def setConfig(value: SchemaSecurityPolicyRuleMatcherConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: SchemaSecurityPolicyRuleMatcherConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setExpr(value: SchemaExpr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: SchemaExpr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
+    inline def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
     
-    @scala.inline
-    def setVersionedExpr(value: String): Self = StObject.set(x, "versionedExpr", value.asInstanceOf[js.Any])
+    inline def setVersionedExpr(value: String): Self = StObject.set(x, "versionedExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionedExprUndefined: Self = StObject.set(x, "versionedExpr", js.undefined)
+    inline def setVersionedExprUndefined: Self = StObject.set(x, "versionedExpr", js.undefined)
   }
 }

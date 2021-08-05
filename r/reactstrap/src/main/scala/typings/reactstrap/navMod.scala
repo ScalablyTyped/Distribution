@@ -46,74 +46,52 @@ object navMod {
   }
   object NavProps {
     
-    @scala.inline
-    def apply(): NavProps = {
+    inline def apply(): NavProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavProps]
     }
     
-    @scala.inline
-    implicit class NavPropsMutableBuilder[Self <: NavProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavProps](x: Self) {
       
-      @scala.inline
-      def setCard(value: Boolean): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: Boolean): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+      inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
-      @scala.inline
-      def setJustified(value: Boolean): Self = StObject.set(x, "justified", value.asInstanceOf[js.Any])
+      inline def setJustified(value: Boolean): Self = StObject.set(x, "justified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJustifiedUndefined: Self = StObject.set(x, "justified", js.undefined)
+      inline def setJustifiedUndefined: Self = StObject.set(x, "justified", js.undefined)
       
-      @scala.inline
-      def setNavbar(value: Boolean): Self = StObject.set(x, "navbar", value.asInstanceOf[js.Any])
+      inline def setNavbar(value: Boolean): Self = StObject.set(x, "navbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavbarUndefined: Self = StObject.set(x, "navbar", js.undefined)
+      inline def setNavbarUndefined: Self = StObject.set(x, "navbar", js.undefined)
       
-      @scala.inline
-      def setPills(value: Boolean): Self = StObject.set(x, "pills", value.asInstanceOf[js.Any])
+      inline def setPills(value: Boolean): Self = StObject.set(x, "pills", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPillsUndefined: Self = StObject.set(x, "pills", js.undefined)
+      inline def setPillsUndefined: Self = StObject.set(x, "pills", js.undefined)
       
-      @scala.inline
-      def setTabs(value: Boolean): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: Boolean): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
+      inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean | String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean | String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
 }

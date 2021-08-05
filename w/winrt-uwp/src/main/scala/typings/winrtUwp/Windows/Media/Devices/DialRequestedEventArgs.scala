@@ -15,19 +15,15 @@ trait DialRequestedEventArgs extends StObject {
 }
 object DialRequestedEventArgs {
   
-  @scala.inline
-  def apply(contact: js.Any, handled: () => Unit): DialRequestedEventArgs = {
+  inline def apply(contact: js.Any, handled: () => Unit): DialRequestedEventArgs = {
     val __obj = js.Dynamic.literal(contact = contact.asInstanceOf[js.Any], handled = js.Any.fromFunction0(handled))
     __obj.asInstanceOf[DialRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class DialRequestedEventArgsMutableBuilder[Self <: DialRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DialRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setContact(value: js.Any): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: js.Any): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandled(value: () => Unit): Self = StObject.set(x, "handled", js.Any.fromFunction0(value))
+    inline def setHandled(value: () => Unit): Self = StObject.set(x, "handled", js.Any.fromFunction0(value))
   }
 }

@@ -44,8 +44,7 @@ trait TypeofTileLayer extends StObject {
 }
 object TypeofTileLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Flexible: Instantiable1[/* options */ js.UndefOr[Options], Flexible],
     RoadNet: Instantiable0[RoadNet],
     Satellite: Instantiable0[Satellite],
@@ -60,30 +59,23 @@ object TypeofTileLayer {
     __obj.asInstanceOf[TypeofTileLayer]
   }
   
-  @scala.inline
-  implicit class TypeofTileLayerMutableBuilder[Self <: TypeofTileLayer] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTileLayer](x: Self) {
     
-    @scala.inline
-    def setFlexible(value: Instantiable1[/* options */ js.UndefOr[Options], Flexible]): Self = StObject.set(x, "Flexible", value.asInstanceOf[js.Any])
+    inline def setFlexible(value: Instantiable1[/* options */ js.UndefOr[Options], Flexible]): Self = StObject.set(x, "Flexible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoadNet(value: Instantiable0[RoadNet]): Self = StObject.set(x, "RoadNet", value.asInstanceOf[js.Any])
+    inline def setRoadNet(value: Instantiable0[RoadNet]): Self = StObject.set(x, "RoadNet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSatellite(value: Instantiable0[Satellite]): Self = StObject.set(x, "Satellite", value.asInstanceOf[js.Any])
+    inline def setSatellite(value: Instantiable0[Satellite]): Self = StObject.set(x, "Satellite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraffic(
+    inline def setTraffic(
       value: Instantiable1[
           /* options */ js.UndefOr[typings.amapJsApi.AMap.TileLayer.Traffic.Options], 
           Traffic
         ]
     ): Self = StObject.set(x, "Traffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWMS(value: Instantiable1[/* options */ typings.amapJsApi.AMap.TileLayer.WMS.Options, WMS]): Self = StObject.set(x, "WMS", value.asInstanceOf[js.Any])
+    inline def setWMS(value: Instantiable1[/* options */ typings.amapJsApi.AMap.TileLayer.WMS.Options, WMS]): Self = StObject.set(x, "WMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWMTS(value: Instantiable1[/* options */ typings.amapJsApi.AMap.TileLayer.WMTS.Options, WMTS]): Self = StObject.set(x, "WMTS", value.asInstanceOf[js.Any])
+    inline def setWMTS(value: Instantiable1[/* options */ typings.amapJsApi.AMap.TileLayer.WMTS.Options, WMTS]): Self = StObject.set(x, "WMTS", value.asInstanceOf[js.Any])
   }
 }

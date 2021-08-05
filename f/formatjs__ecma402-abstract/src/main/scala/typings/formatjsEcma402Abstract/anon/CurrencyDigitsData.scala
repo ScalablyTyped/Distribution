@@ -11,16 +11,13 @@ trait CurrencyDigitsData extends StObject {
 }
 object CurrencyDigitsData {
   
-  @scala.inline
-  def apply(currencyDigitsData: Record[String, Double]): CurrencyDigitsData = {
+  inline def apply(currencyDigitsData: Record[String, Double]): CurrencyDigitsData = {
     val __obj = js.Dynamic.literal(currencyDigitsData = currencyDigitsData.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrencyDigitsData]
   }
   
-  @scala.inline
-  implicit class CurrencyDigitsDataMutableBuilder[Self <: CurrencyDigitsData] (val x: Self) extends AnyVal {
+  extension [Self <: CurrencyDigitsData](x: Self) {
     
-    @scala.inline
-    def setCurrencyDigitsData(value: Record[String, Double]): Self = StObject.set(x, "currencyDigitsData", value.asInstanceOf[js.Any])
+    inline def setCurrencyDigitsData(value: Record[String, Double]): Self = StObject.set(x, "currencyDigitsData", value.asInstanceOf[js.Any])
   }
 }

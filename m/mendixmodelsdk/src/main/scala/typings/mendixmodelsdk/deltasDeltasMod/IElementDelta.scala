@@ -12,16 +12,13 @@ trait IElementDelta
 }
 object IElementDelta {
   
-  @scala.inline
-  def apply(elementId: String, unitId: String): IElementDelta = {
+  inline def apply(elementId: String, unitId: String): IElementDelta = {
     val __obj = js.Dynamic.literal(elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IElementDelta]
   }
   
-  @scala.inline
-  implicit class IElementDeltaMutableBuilder[Self <: IElementDelta] (val x: Self) extends AnyVal {
+  extension [Self <: IElementDelta](x: Self) {
     
-    @scala.inline
-    def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
+    inline def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
   }
 }

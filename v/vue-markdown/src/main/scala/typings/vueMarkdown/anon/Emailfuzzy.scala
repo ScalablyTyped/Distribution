@@ -79,8 +79,7 @@ trait Emailfuzzy extends StObject {
 }
 object Emailfuzzy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     email_fuzzy: RegExp,
     host_fuzzy_test: RegExp,
     link_fuzzy: RegExp,
@@ -121,112 +120,76 @@ object Emailfuzzy {
     __obj.asInstanceOf[Emailfuzzy]
   }
   
-  @scala.inline
-  implicit class EmailfuzzyMutableBuilder[Self <: Emailfuzzy] (val x: Self) extends AnyVal {
+  extension [Self <: Emailfuzzy](x: Self) {
     
-    @scala.inline
-    def setEmail_fuzzy(value: RegExp): Self = StObject.set(x, "email_fuzzy", value.asInstanceOf[js.Any])
+    inline def setEmail_fuzzy(value: RegExp): Self = StObject.set(x, "email_fuzzy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost_fuzzy_test(value: RegExp): Self = StObject.set(x, "host_fuzzy_test", value.asInstanceOf[js.Any])
+    inline def setHost_fuzzy_test(value: RegExp): Self = StObject.set(x, "host_fuzzy_test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink_fuzzy(value: RegExp): Self = StObject.set(x, "link_fuzzy", value.asInstanceOf[js.Any])
+    inline def setLink_fuzzy(value: RegExp): Self = StObject.set(x, "link_fuzzy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink_no_ip_fuzzy(value: RegExp): Self = StObject.set(x, "link_no_ip_fuzzy", value.asInstanceOf[js.Any])
+    inline def setLink_no_ip_fuzzy(value: RegExp): Self = StObject.set(x, "link_no_ip_fuzzy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPretest(value: RegExp): Self = StObject.set(x, "pretest", value.asInstanceOf[js.Any])
+    inline def setPretest(value: RegExp): Self = StObject.set(x, "pretest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema_search(value: RegExp): Self = StObject.set(x, "schema_search", value.asInstanceOf[js.Any])
+    inline def setSchema_search(value: RegExp): Self = StObject.set(x, "schema_search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema_test(value: RegExp): Self = StObject.set(x, "schema_test", value.asInstanceOf[js.Any])
+    inline def setSchema_test(value: RegExp): Self = StObject.set(x, "schema_test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_Any(value: String): Self = StObject.set(x, "src_Any", value.asInstanceOf[js.Any])
+    inline def setSrc_Any(value: String): Self = StObject.set(x, "src_Any", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_Cc(value: String): Self = StObject.set(x, "src_Cc", value.asInstanceOf[js.Any])
+    inline def setSrc_Cc(value: String): Self = StObject.set(x, "src_Cc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_P(value: String): Self = StObject.set(x, "src_P", value.asInstanceOf[js.Any])
+    inline def setSrc_P(value: String): Self = StObject.set(x, "src_P", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_Z(value: String): Self = StObject.set(x, "src_Z", value.asInstanceOf[js.Any])
+    inline def setSrc_Z(value: String): Self = StObject.set(x, "src_Z", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_ZCc(value: String): Self = StObject.set(x, "src_ZCc", value.asInstanceOf[js.Any])
+    inline def setSrc_ZCc(value: String): Self = StObject.set(x, "src_ZCc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_ZPCc(value: String): Self = StObject.set(x, "src_ZPCc", value.asInstanceOf[js.Any])
+    inline def setSrc_ZPCc(value: String): Self = StObject.set(x, "src_ZPCc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_auth(value: String): Self = StObject.set(x, "src_auth", value.asInstanceOf[js.Any])
+    inline def setSrc_auth(value: String): Self = StObject.set(x, "src_auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_domain(value: String): Self = StObject.set(x, "src_domain", value.asInstanceOf[js.Any])
+    inline def setSrc_domain(value: String): Self = StObject.set(x, "src_domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_domain_root(value: String): Self = StObject.set(x, "src_domain_root", value.asInstanceOf[js.Any])
+    inline def setSrc_domain_root(value: String): Self = StObject.set(x, "src_domain_root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_email_name(value: String): Self = StObject.set(x, "src_email_name", value.asInstanceOf[js.Any])
+    inline def setSrc_email_name(value: String): Self = StObject.set(x, "src_email_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_host(value: String): Self = StObject.set(x, "src_host", value.asInstanceOf[js.Any])
+    inline def setSrc_host(value: String): Self = StObject.set(x, "src_host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_host_port_strict(value: String): Self = StObject.set(x, "src_host_port_strict", value.asInstanceOf[js.Any])
+    inline def setSrc_host_port_strict(value: String): Self = StObject.set(x, "src_host_port_strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_host_strict(value: String): Self = StObject.set(x, "src_host_strict", value.asInstanceOf[js.Any])
+    inline def setSrc_host_strict(value: String): Self = StObject.set(x, "src_host_strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_host_terminator(value: String): Self = StObject.set(x, "src_host_terminator", value.asInstanceOf[js.Any])
+    inline def setSrc_host_terminator(value: String): Self = StObject.set(x, "src_host_terminator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_ip4(value: String): Self = StObject.set(x, "src_ip4", value.asInstanceOf[js.Any])
+    inline def setSrc_ip4(value: String): Self = StObject.set(x, "src_ip4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_path(value: String): Self = StObject.set(x, "src_path", value.asInstanceOf[js.Any])
+    inline def setSrc_path(value: String): Self = StObject.set(x, "src_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_port(value: String): Self = StObject.set(x, "src_port", value.asInstanceOf[js.Any])
+    inline def setSrc_port(value: String): Self = StObject.set(x, "src_port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_tlds(value: String): Self = StObject.set(x, "src_tlds", value.asInstanceOf[js.Any])
+    inline def setSrc_tlds(value: String): Self = StObject.set(x, "src_tlds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_xn(value: String): Self = StObject.set(x, "src_xn", value.asInstanceOf[js.Any])
+    inline def setSrc_xn(value: String): Self = StObject.set(x, "src_xn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpl_email_fuzzy(value: String): Self = StObject.set(x, "tpl_email_fuzzy", value.asInstanceOf[js.Any])
+    inline def setTpl_email_fuzzy(value: String): Self = StObject.set(x, "tpl_email_fuzzy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpl_host_fuzzy(value: String): Self = StObject.set(x, "tpl_host_fuzzy", value.asInstanceOf[js.Any])
+    inline def setTpl_host_fuzzy(value: String): Self = StObject.set(x, "tpl_host_fuzzy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpl_host_fuzzy_strict(value: String): Self = StObject.set(x, "tpl_host_fuzzy_strict", value.asInstanceOf[js.Any])
+    inline def setTpl_host_fuzzy_strict(value: String): Self = StObject.set(x, "tpl_host_fuzzy_strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpl_host_fuzzy_test(value: String): Self = StObject.set(x, "tpl_host_fuzzy_test", value.asInstanceOf[js.Any])
+    inline def setTpl_host_fuzzy_test(value: String): Self = StObject.set(x, "tpl_host_fuzzy_test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpl_host_no_ip_fuzzy(value: String): Self = StObject.set(x, "tpl_host_no_ip_fuzzy", value.asInstanceOf[js.Any])
+    inline def setTpl_host_no_ip_fuzzy(value: String): Self = StObject.set(x, "tpl_host_no_ip_fuzzy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpl_host_port_fuzzy_strict(value: String): Self = StObject.set(x, "tpl_host_port_fuzzy_strict", value.asInstanceOf[js.Any])
+    inline def setTpl_host_port_fuzzy_strict(value: String): Self = StObject.set(x, "tpl_host_port_fuzzy_strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpl_host_port_no_ip_fuzzy_strict(value: String): Self = StObject.set(x, "tpl_host_port_no_ip_fuzzy_strict", value.asInstanceOf[js.Any])
+    inline def setTpl_host_port_no_ip_fuzzy_strict(value: String): Self = StObject.set(x, "tpl_host_port_no_ip_fuzzy_strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpl_link_fuzzy(value: String): Self = StObject.set(x, "tpl_link_fuzzy", value.asInstanceOf[js.Any])
+    inline def setTpl_link_fuzzy(value: String): Self = StObject.set(x, "tpl_link_fuzzy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpl_link_no_ip_fuzzy(value: String): Self = StObject.set(x, "tpl_link_no_ip_fuzzy", value.asInstanceOf[js.Any])
+    inline def setTpl_link_no_ip_fuzzy(value: String): Self = StObject.set(x, "tpl_link_no_ip_fuzzy", value.asInstanceOf[js.Any])
   }
 }

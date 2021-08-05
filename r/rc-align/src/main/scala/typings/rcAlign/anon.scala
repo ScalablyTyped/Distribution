@@ -14,26 +14,20 @@ object anon {
   }
   object AdjustX {
     
-    @scala.inline
-    def apply(): AdjustX = {
+    inline def apply(): AdjustX = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdjustX]
     }
     
-    @scala.inline
-    implicit class AdjustXMutableBuilder[Self <: AdjustX] (val x: Self) extends AnyVal {
+    extension [Self <: AdjustX](x: Self) {
       
-      @scala.inline
-      def setAdjustX(value: Boolean | Double): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
+      inline def setAdjustX(value: Boolean | Double): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjustXUndefined: Self = StObject.set(x, "adjustX", js.undefined)
+      inline def setAdjustXUndefined: Self = StObject.set(x, "adjustX", js.undefined)
       
-      @scala.inline
-      def setAdjustY(value: Boolean | Double): Self = StObject.set(x, "adjustY", value.asInstanceOf[js.Any])
+      inline def setAdjustY(value: Boolean | Double): Self = StObject.set(x, "adjustY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjustYUndefined: Self = StObject.set(x, "adjustY", js.undefined)
+      inline def setAdjustYUndefined: Self = StObject.set(x, "adjustY", js.undefined)
     }
   }
   
@@ -45,20 +39,16 @@ object anon {
   }
   object AdjustY {
     
-    @scala.inline
-    def apply(adjustX: Boolean | Double, adjustY: Boolean | Double): AdjustY = {
+    inline def apply(adjustX: Boolean | Double, adjustY: Boolean | Double): AdjustY = {
       val __obj = js.Dynamic.literal(adjustX = adjustX.asInstanceOf[js.Any], adjustY = adjustY.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdjustY]
     }
     
-    @scala.inline
-    implicit class AdjustYMutableBuilder[Self <: AdjustY] (val x: Self) extends AnyVal {
+    extension [Self <: AdjustY](x: Self) {
       
-      @scala.inline
-      def setAdjustX(value: Boolean | Double): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
+      inline def setAdjustX(value: Boolean | Double): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjustY(value: Boolean | Double): Self = StObject.set(x, "adjustY", value.asInstanceOf[js.Any])
+      inline def setAdjustY(value: Boolean | Double): Self = StObject.set(x, "adjustY", value.asInstanceOf[js.Any])
     }
   }
 }

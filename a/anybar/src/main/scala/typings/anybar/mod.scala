@@ -17,10 +17,8 @@ object mod {
   // The Anybar.app menubar icon turned purple
   ```
   */
-  @scala.inline
-  def apply(status: AnybarStatus): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(status.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def apply(status: AnybarStatus, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(status.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def apply(status: AnybarStatus): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(status.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def apply(status: AnybarStatus, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(status.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("anybar", JSImport.Namespace)
   @js.native
@@ -43,41 +41,29 @@ object mod {
   trait AnybarStatus extends StObject
   object AnybarStatus {
     
-    @scala.inline
-    def black: typings.anybar.anybarStrings.black = "black".asInstanceOf[typings.anybar.anybarStrings.black]
+    inline def black: typings.anybar.anybarStrings.black = "black".asInstanceOf[typings.anybar.anybarStrings.black]
     
-    @scala.inline
-    def blue: typings.anybar.anybarStrings.blue = "blue".asInstanceOf[typings.anybar.anybarStrings.blue]
+    inline def blue: typings.anybar.anybarStrings.blue = "blue".asInstanceOf[typings.anybar.anybarStrings.blue]
     
-    @scala.inline
-    def cyan: typings.anybar.anybarStrings.cyan = "cyan".asInstanceOf[typings.anybar.anybarStrings.cyan]
+    inline def cyan: typings.anybar.anybarStrings.cyan = "cyan".asInstanceOf[typings.anybar.anybarStrings.cyan]
     
-    @scala.inline
-    def exclamation: typings.anybar.anybarStrings.exclamation = "exclamation".asInstanceOf[typings.anybar.anybarStrings.exclamation]
+    inline def exclamation: typings.anybar.anybarStrings.exclamation = "exclamation".asInstanceOf[typings.anybar.anybarStrings.exclamation]
     
-    @scala.inline
-    def green: typings.anybar.anybarStrings.green = "green".asInstanceOf[typings.anybar.anybarStrings.green]
+    inline def green: typings.anybar.anybarStrings.green = "green".asInstanceOf[typings.anybar.anybarStrings.green]
     
-    @scala.inline
-    def orange: typings.anybar.anybarStrings.orange = "orange".asInstanceOf[typings.anybar.anybarStrings.orange]
+    inline def orange: typings.anybar.anybarStrings.orange = "orange".asInstanceOf[typings.anybar.anybarStrings.orange]
     
-    @scala.inline
-    def purple: typings.anybar.anybarStrings.purple = "purple".asInstanceOf[typings.anybar.anybarStrings.purple]
+    inline def purple: typings.anybar.anybarStrings.purple = "purple".asInstanceOf[typings.anybar.anybarStrings.purple]
     
-    @scala.inline
-    def question: typings.anybar.anybarStrings.question = "question".asInstanceOf[typings.anybar.anybarStrings.question]
+    inline def question: typings.anybar.anybarStrings.question = "question".asInstanceOf[typings.anybar.anybarStrings.question]
     
-    @scala.inline
-    def quit: typings.anybar.anybarStrings.quit = "quit".asInstanceOf[typings.anybar.anybarStrings.quit]
+    inline def quit: typings.anybar.anybarStrings.quit = "quit".asInstanceOf[typings.anybar.anybarStrings.quit]
     
-    @scala.inline
-    def red: typings.anybar.anybarStrings.red = "red".asInstanceOf[typings.anybar.anybarStrings.red]
+    inline def red: typings.anybar.anybarStrings.red = "red".asInstanceOf[typings.anybar.anybarStrings.red]
     
-    @scala.inline
-    def white: typings.anybar.anybarStrings.white = "white".asInstanceOf[typings.anybar.anybarStrings.white]
+    inline def white: typings.anybar.anybarStrings.white = "white".asInstanceOf[typings.anybar.anybarStrings.white]
     
-    @scala.inline
-    def yellow: typings.anybar.anybarStrings.yellow = "yellow".asInstanceOf[typings.anybar.anybarStrings.yellow]
+    inline def yellow: typings.anybar.anybarStrings.yellow = "yellow".asInstanceOf[typings.anybar.anybarStrings.yellow]
   }
   
   trait Options extends StObject {
@@ -90,20 +76,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
 }

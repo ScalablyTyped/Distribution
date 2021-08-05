@@ -22,22 +22,17 @@ trait INxSimpleDimValue extends StObject {
 }
 object INxSimpleDimValue {
   
-  @scala.inline
-  def apply(qElemNo: Double): INxSimpleDimValue = {
+  inline def apply(qElemNo: Double): INxSimpleDimValue = {
     val __obj = js.Dynamic.literal(qElemNo = qElemNo.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxSimpleDimValue]
   }
   
-  @scala.inline
-  implicit class INxSimpleDimValueMutableBuilder[Self <: INxSimpleDimValue] (val x: Self) extends AnyVal {
+  extension [Self <: INxSimpleDimValue](x: Self) {
     
-    @scala.inline
-    def setQElemNo(value: Double): Self = StObject.set(x, "qElemNo", value.asInstanceOf[js.Any])
+    inline def setQElemNo(value: Double): Self = StObject.set(x, "qElemNo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTextUndefined: Self = StObject.set(x, "qText", js.undefined)
+    inline def setQTextUndefined: Self = StObject.set(x, "qText", js.undefined)
   }
 }

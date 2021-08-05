@@ -14,31 +14,23 @@ trait Move extends StObject {
 }
 object Move {
   
-  @scala.inline
-  def apply(): Move = {
+  inline def apply(): Move = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Move]
   }
   
-  @scala.inline
-  implicit class MoveMutableBuilder[Self <: Move] (val x: Self) extends AnyVal {
+  extension [Self <: Move](x: Self) {
     
-    @scala.inline
-    def setAddedParents(value: js.Array[TargetReference]): Self = StObject.set(x, "addedParents", value.asInstanceOf[js.Any])
+    inline def setAddedParents(value: js.Array[TargetReference]): Self = StObject.set(x, "addedParents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedParentsUndefined: Self = StObject.set(x, "addedParents", js.undefined)
+    inline def setAddedParentsUndefined: Self = StObject.set(x, "addedParents", js.undefined)
     
-    @scala.inline
-    def setAddedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "addedParents", js.Array(value :_*))
+    inline def setAddedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "addedParents", js.Array(value :_*))
     
-    @scala.inline
-    def setRemovedParents(value: js.Array[TargetReference]): Self = StObject.set(x, "removedParents", value.asInstanceOf[js.Any])
+    inline def setRemovedParents(value: js.Array[TargetReference]): Self = StObject.set(x, "removedParents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedParentsUndefined: Self = StObject.set(x, "removedParents", js.undefined)
+    inline def setRemovedParentsUndefined: Self = StObject.set(x, "removedParents", js.undefined)
     
-    @scala.inline
-    def setRemovedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "removedParents", js.Array(value :_*))
+    inline def setRemovedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "removedParents", js.Array(value :_*))
   }
 }

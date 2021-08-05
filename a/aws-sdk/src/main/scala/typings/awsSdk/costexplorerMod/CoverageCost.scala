@@ -13,19 +13,15 @@ trait CoverageCost extends StObject {
 }
 object CoverageCost {
   
-  @scala.inline
-  def apply(): CoverageCost = {
+  inline def apply(): CoverageCost = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoverageCost]
   }
   
-  @scala.inline
-  implicit class CoverageCostMutableBuilder[Self <: CoverageCost] (val x: Self) extends AnyVal {
+  extension [Self <: CoverageCost](x: Self) {
     
-    @scala.inline
-    def setOnDemandCost(value: OnDemandCost): Self = StObject.set(x, "OnDemandCost", value.asInstanceOf[js.Any])
+    inline def setOnDemandCost(value: OnDemandCost): Self = StObject.set(x, "OnDemandCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandCostUndefined: Self = StObject.set(x, "OnDemandCost", js.undefined)
+    inline def setOnDemandCostUndefined: Self = StObject.set(x, "OnDemandCost", js.undefined)
   }
 }

@@ -48,61 +48,43 @@ trait Vc3Settings extends StObject {
 }
 object Vc3Settings {
   
-  @scala.inline
-  def apply(): Vc3Settings = {
+  inline def apply(): Vc3Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Vc3Settings]
   }
   
-  @scala.inline
-  implicit class Vc3SettingsMutableBuilder[Self <: Vc3Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Vc3Settings](x: Self) {
     
-    @scala.inline
-    def setFramerateControl(value: Vc3FramerateControl): Self = StObject.set(x, "FramerateControl", value.asInstanceOf[js.Any])
+    inline def setFramerateControl(value: Vc3FramerateControl): Self = StObject.set(x, "FramerateControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateControlUndefined: Self = StObject.set(x, "FramerateControl", js.undefined)
+    inline def setFramerateControlUndefined: Self = StObject.set(x, "FramerateControl", js.undefined)
     
-    @scala.inline
-    def setFramerateConversionAlgorithm(value: Vc3FramerateConversionAlgorithm): Self = StObject.set(x, "FramerateConversionAlgorithm", value.asInstanceOf[js.Any])
+    inline def setFramerateConversionAlgorithm(value: Vc3FramerateConversionAlgorithm): Self = StObject.set(x, "FramerateConversionAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateConversionAlgorithmUndefined: Self = StObject.set(x, "FramerateConversionAlgorithm", js.undefined)
+    inline def setFramerateConversionAlgorithmUndefined: Self = StObject.set(x, "FramerateConversionAlgorithm", js.undefined)
     
-    @scala.inline
-    def setFramerateDenominator(value: integerMin1Max1001): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
+    inline def setFramerateDenominator(value: integerMin1Max1001): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateDenominatorUndefined: Self = StObject.set(x, "FramerateDenominator", js.undefined)
+    inline def setFramerateDenominatorUndefined: Self = StObject.set(x, "FramerateDenominator", js.undefined)
     
-    @scala.inline
-    def setFramerateNumerator(value: integerMin24Max60000): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
+    inline def setFramerateNumerator(value: integerMin24Max60000): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateNumeratorUndefined: Self = StObject.set(x, "FramerateNumerator", js.undefined)
+    inline def setFramerateNumeratorUndefined: Self = StObject.set(x, "FramerateNumerator", js.undefined)
     
-    @scala.inline
-    def setInterlaceMode(value: Vc3InterlaceMode): Self = StObject.set(x, "InterlaceMode", value.asInstanceOf[js.Any])
+    inline def setInterlaceMode(value: Vc3InterlaceMode): Self = StObject.set(x, "InterlaceMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterlaceModeUndefined: Self = StObject.set(x, "InterlaceMode", js.undefined)
+    inline def setInterlaceModeUndefined: Self = StObject.set(x, "InterlaceMode", js.undefined)
     
-    @scala.inline
-    def setSlowPal(value: Vc3SlowPal): Self = StObject.set(x, "SlowPal", value.asInstanceOf[js.Any])
+    inline def setSlowPal(value: Vc3SlowPal): Self = StObject.set(x, "SlowPal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlowPalUndefined: Self = StObject.set(x, "SlowPal", js.undefined)
+    inline def setSlowPalUndefined: Self = StObject.set(x, "SlowPal", js.undefined)
     
-    @scala.inline
-    def setTelecine(value: Vc3Telecine): Self = StObject.set(x, "Telecine", value.asInstanceOf[js.Any])
+    inline def setTelecine(value: Vc3Telecine): Self = StObject.set(x, "Telecine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelecineUndefined: Self = StObject.set(x, "Telecine", js.undefined)
+    inline def setTelecineUndefined: Self = StObject.set(x, "Telecine", js.undefined)
     
-    @scala.inline
-    def setVc3Class(value: Vc3Class): Self = StObject.set(x, "Vc3Class", value.asInstanceOf[js.Any])
+    inline def setVc3Class(value: Vc3Class): Self = StObject.set(x, "Vc3Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVc3ClassUndefined: Self = StObject.set(x, "Vc3Class", js.undefined)
+    inline def setVc3ClassUndefined: Self = StObject.set(x, "Vc3Class", js.undefined)
   }
 }

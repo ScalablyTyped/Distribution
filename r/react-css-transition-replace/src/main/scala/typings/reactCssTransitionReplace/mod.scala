@@ -34,26 +34,20 @@ object mod extends Shortcut {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChangeWidth(value: Boolean): Self = StObject.set(x, "changeWidth", value.asInstanceOf[js.Any])
+      inline def setChangeWidth(value: Boolean): Self = StObject.set(x, "changeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeWidthUndefined: Self = StObject.set(x, "changeWidth", js.undefined)
+      inline def setChangeWidthUndefined: Self = StObject.set(x, "changeWidth", js.undefined)
       
-      @scala.inline
-      def setOverflowHidden(value: Boolean): Self = StObject.set(x, "overflowHidden", value.asInstanceOf[js.Any])
+      inline def setOverflowHidden(value: Boolean): Self = StObject.set(x, "overflowHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowHiddenUndefined: Self = StObject.set(x, "overflowHidden", js.undefined)
+      inline def setOverflowHiddenUndefined: Self = StObject.set(x, "overflowHidden", js.undefined)
     }
   }
   

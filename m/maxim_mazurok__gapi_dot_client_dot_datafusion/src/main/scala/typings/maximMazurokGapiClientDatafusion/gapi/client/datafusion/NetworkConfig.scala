@@ -17,25 +17,19 @@ trait NetworkConfig extends StObject {
 }
 object NetworkConfig {
   
-  @scala.inline
-  def apply(): NetworkConfig = {
+  inline def apply(): NetworkConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkConfig]
   }
   
-  @scala.inline
-  implicit class NetworkConfigMutableBuilder[Self <: NetworkConfig] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkConfig](x: Self) {
     
-    @scala.inline
-    def setIpAllocation(value: String): Self = StObject.set(x, "ipAllocation", value.asInstanceOf[js.Any])
+    inline def setIpAllocation(value: String): Self = StObject.set(x, "ipAllocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAllocationUndefined: Self = StObject.set(x, "ipAllocation", js.undefined)
+    inline def setIpAllocationUndefined: Self = StObject.set(x, "ipAllocation", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
   }
 }

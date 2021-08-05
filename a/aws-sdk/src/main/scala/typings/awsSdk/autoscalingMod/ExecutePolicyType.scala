@@ -33,40 +33,29 @@ trait ExecutePolicyType extends StObject {
 }
 object ExecutePolicyType {
   
-  @scala.inline
-  def apply(PolicyName: ResourceName): ExecutePolicyType = {
+  inline def apply(PolicyName: ResourceName): ExecutePolicyType = {
     val __obj = js.Dynamic.literal(PolicyName = PolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutePolicyType]
   }
   
-  @scala.inline
-  implicit class ExecutePolicyTypeMutableBuilder[Self <: ExecutePolicyType] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutePolicyType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
+    inline def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
     
-    @scala.inline
-    def setBreachThreshold(value: MetricScale): Self = StObject.set(x, "BreachThreshold", value.asInstanceOf[js.Any])
+    inline def setBreachThreshold(value: MetricScale): Self = StObject.set(x, "BreachThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreachThresholdUndefined: Self = StObject.set(x, "BreachThreshold", js.undefined)
+    inline def setBreachThresholdUndefined: Self = StObject.set(x, "BreachThreshold", js.undefined)
     
-    @scala.inline
-    def setHonorCooldown(value: HonorCooldown): Self = StObject.set(x, "HonorCooldown", value.asInstanceOf[js.Any])
+    inline def setHonorCooldown(value: HonorCooldown): Self = StObject.set(x, "HonorCooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHonorCooldownUndefined: Self = StObject.set(x, "HonorCooldown", js.undefined)
+    inline def setHonorCooldownUndefined: Self = StObject.set(x, "HonorCooldown", js.undefined)
     
-    @scala.inline
-    def setMetricValue(value: MetricScale): Self = StObject.set(x, "MetricValue", value.asInstanceOf[js.Any])
+    inline def setMetricValue(value: MetricScale): Self = StObject.set(x, "MetricValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricValueUndefined: Self = StObject.set(x, "MetricValue", js.undefined)
+    inline def setMetricValueUndefined: Self = StObject.set(x, "MetricValue", js.undefined)
     
-    @scala.inline
-    def setPolicyName(value: ResourceName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: ResourceName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
   }
 }

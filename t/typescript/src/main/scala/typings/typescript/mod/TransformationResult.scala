@@ -43,8 +43,7 @@ trait TransformationResult[T /* <: Node */] extends StObject {
 }
 object TransformationResult {
   
-  @scala.inline
-  def apply[T /* <: Node */](
+  inline def apply[T /* <: Node */](
     dispose: () => Unit,
     emitNodeWithNotification: (EmitHint, Node, js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]) => Unit,
     substituteNode: (EmitHint, Node) => Node,
@@ -54,37 +53,26 @@ object TransformationResult {
     __obj.asInstanceOf[TransformationResult[T]]
   }
   
-  @scala.inline
-  implicit class TransformationResultMutableBuilder[Self <: TransformationResult[?], T /* <: Node */] (val x: Self & TransformationResult[T]) extends AnyVal {
+  extension [Self <: TransformationResult[?], T /* <: Node */](x: Self & TransformationResult[T]) {
     
-    @scala.inline
-    def setDiagnostics(value: js.Array[DiagnosticWithLocation]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: js.Array[DiagnosticWithLocation]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+    inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    @scala.inline
-    def setDiagnosticsVarargs(value: DiagnosticWithLocation*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: DiagnosticWithLocation*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEmitNodeWithNotification(value: (EmitHint, Node, js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]) => Unit): Self = StObject.set(x, "emitNodeWithNotification", js.Any.fromFunction3(value))
+    inline def setEmitNodeWithNotification(value: (EmitHint, Node, js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]) => Unit): Self = StObject.set(x, "emitNodeWithNotification", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setIsEmitNotificationEnabled(value: /* node */ Node => Boolean): Self = StObject.set(x, "isEmitNotificationEnabled", js.Any.fromFunction1(value))
+    inline def setIsEmitNotificationEnabled(value: /* node */ Node => Boolean): Self = StObject.set(x, "isEmitNotificationEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEmitNotificationEnabledUndefined: Self = StObject.set(x, "isEmitNotificationEnabled", js.undefined)
+    inline def setIsEmitNotificationEnabledUndefined: Self = StObject.set(x, "isEmitNotificationEnabled", js.undefined)
     
-    @scala.inline
-    def setSubstituteNode(value: (EmitHint, Node) => Node): Self = StObject.set(x, "substituteNode", js.Any.fromFunction2(value))
+    inline def setSubstituteNode(value: (EmitHint, Node) => Node): Self = StObject.set(x, "substituteNode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTransformed(value: js.Array[T]): Self = StObject.set(x, "transformed", value.asInstanceOf[js.Any])
+    inline def setTransformed(value: js.Array[T]): Self = StObject.set(x, "transformed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformedVarargs(value: T*): Self = StObject.set(x, "transformed", js.Array(value :_*))
+    inline def setTransformedVarargs(value: T*): Self = StObject.set(x, "transformed", js.Array(value :_*))
   }
 }

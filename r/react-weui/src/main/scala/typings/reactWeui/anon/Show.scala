@@ -12,19 +12,15 @@ trait Show extends StObject {
 }
 object Show {
   
-  @scala.inline
-  def apply(icon: String, show: Boolean): Show = {
+  inline def apply(icon: String, show: Boolean): Show = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Show]
   }
   
-  @scala.inline
-  implicit class ShowMutableBuilder[Self <: Show] (val x: Self) extends AnyVal {
+  extension [Self <: Show](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

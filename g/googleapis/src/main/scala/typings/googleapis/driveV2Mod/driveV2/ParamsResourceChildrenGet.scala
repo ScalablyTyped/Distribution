@@ -29,31 +29,23 @@ trait ParamsResourceChildrenGet
 }
 object ParamsResourceChildrenGet {
   
-  @scala.inline
-  def apply(): ParamsResourceChildrenGet = {
+  inline def apply(): ParamsResourceChildrenGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceChildrenGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceChildrenGetMutableBuilder[Self <: ParamsResourceChildrenGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceChildrenGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
+    inline def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildIdUndefined: Self = StObject.set(x, "childId", js.undefined)
+    inline def setChildIdUndefined: Self = StObject.set(x, "childId", js.undefined)
     
-    @scala.inline
-    def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
+    inline def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
+    inline def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
   }
 }

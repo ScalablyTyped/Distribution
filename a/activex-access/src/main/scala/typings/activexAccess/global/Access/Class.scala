@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Class")
 @js.native
-class Class protected ()
+/* private */ class Class ()
   extends StObject
      with typings.activexAccess.Access.Class {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.Class_typekey")
   var AccessDotClass_typekey: typings.activexAccess.Access.Class = js.native
 }

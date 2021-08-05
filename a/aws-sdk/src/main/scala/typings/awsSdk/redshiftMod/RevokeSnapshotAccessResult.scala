@@ -10,19 +10,15 @@ trait RevokeSnapshotAccessResult extends StObject {
 }
 object RevokeSnapshotAccessResult {
   
-  @scala.inline
-  def apply(): RevokeSnapshotAccessResult = {
+  inline def apply(): RevokeSnapshotAccessResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevokeSnapshotAccessResult]
   }
   
-  @scala.inline
-  implicit class RevokeSnapshotAccessResultMutableBuilder[Self <: RevokeSnapshotAccessResult] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeSnapshotAccessResult](x: Self) {
     
-    @scala.inline
-    def setSnapshot(value: Snapshot): Self = StObject.set(x, "Snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: Snapshot): Self = StObject.set(x, "Snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotUndefined: Self = StObject.set(x, "Snapshot", js.undefined)
+    inline def setSnapshotUndefined: Self = StObject.set(x, "Snapshot", js.undefined)
   }
 }

@@ -23,43 +23,31 @@ trait PreprocessingConfig extends StObject {
 }
 object PreprocessingConfig {
   
-  @scala.inline
-  def apply(): PreprocessingConfig = {
+  inline def apply(): PreprocessingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PreprocessingConfig]
   }
   
-  @scala.inline
-  implicit class PreprocessingConfigMutableBuilder[Self <: PreprocessingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PreprocessingConfig](x: Self) {
     
-    @scala.inline
-    def setAudio(value: Audio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: Audio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+    inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setCrop(value: Crop): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+    inline def setCrop(value: Crop): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+    inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
-    @scala.inline
-    def setDeblock(value: Deblock): Self = StObject.set(x, "deblock", value.asInstanceOf[js.Any])
+    inline def setDeblock(value: Deblock): Self = StObject.set(x, "deblock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeblockUndefined: Self = StObject.set(x, "deblock", js.undefined)
+    inline def setDeblockUndefined: Self = StObject.set(x, "deblock", js.undefined)
     
-    @scala.inline
-    def setDenoise(value: Denoise): Self = StObject.set(x, "denoise", value.asInstanceOf[js.Any])
+    inline def setDenoise(value: Denoise): Self = StObject.set(x, "denoise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenoiseUndefined: Self = StObject.set(x, "denoise", js.undefined)
+    inline def setDenoiseUndefined: Self = StObject.set(x, "denoise", js.undefined)
   }
 }

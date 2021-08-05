@@ -14,25 +14,19 @@ trait GooglePrivacyDlpV2HybridContentItem extends StObject {
 }
 object GooglePrivacyDlpV2HybridContentItem {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2HybridContentItem = {
+  inline def apply(): GooglePrivacyDlpV2HybridContentItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2HybridContentItem]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2HybridContentItemMutableBuilder[Self <: GooglePrivacyDlpV2HybridContentItem] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2HybridContentItem](x: Self) {
     
-    @scala.inline
-    def setFindingDetails(value: GooglePrivacyDlpV2HybridFindingDetails): Self = StObject.set(x, "findingDetails", value.asInstanceOf[js.Any])
+    inline def setFindingDetails(value: GooglePrivacyDlpV2HybridFindingDetails): Self = StObject.set(x, "findingDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingDetailsUndefined: Self = StObject.set(x, "findingDetails", js.undefined)
+    inline def setFindingDetailsUndefined: Self = StObject.set(x, "findingDetails", js.undefined)
     
-    @scala.inline
-    def setItem(value: GooglePrivacyDlpV2ContentItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: GooglePrivacyDlpV2ContentItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

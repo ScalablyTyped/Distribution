@@ -18,43 +18,31 @@ trait MockJaxStandardLogger extends StObject {
 }
 object MockJaxStandardLogger {
   
-  @scala.inline
-  def apply(): MockJaxStandardLogger = {
+  inline def apply(): MockJaxStandardLogger = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MockJaxStandardLogger]
   }
   
-  @scala.inline
-  implicit class MockJaxStandardLoggerMutableBuilder[Self <: MockJaxStandardLogger] (val x: Self) extends AnyVal {
+  extension [Self <: MockJaxStandardLogger](x: Self) {
     
-    @scala.inline
-    def setDebug(value: MockJaxLoggingFunction): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: MockJaxLoggingFunction): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setError(value: MockJaxLoggingFunction): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: MockJaxLoggingFunction): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setInfo(value: MockJaxLoggingFunction): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: MockJaxLoggingFunction): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
-    @scala.inline
-    def setLog(value: MockJaxLoggingFunction): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: MockJaxLoggingFunction): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
-    @scala.inline
-    def setWarn(value: MockJaxLoggingFunction): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+    inline def setWarn(value: MockJaxLoggingFunction): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+    inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
   }
 }

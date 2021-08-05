@@ -13,19 +13,15 @@ trait DeleteDashboardsInput extends StObject {
 }
 object DeleteDashboardsInput {
   
-  @scala.inline
-  def apply(DashboardNames: DashboardNames): DeleteDashboardsInput = {
+  inline def apply(DashboardNames: DashboardNames): DeleteDashboardsInput = {
     val __obj = js.Dynamic.literal(DashboardNames = DashboardNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDashboardsInput]
   }
   
-  @scala.inline
-  implicit class DeleteDashboardsInputMutableBuilder[Self <: DeleteDashboardsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDashboardsInput](x: Self) {
     
-    @scala.inline
-    def setDashboardNames(value: DashboardNames): Self = StObject.set(x, "DashboardNames", value.asInstanceOf[js.Any])
+    inline def setDashboardNames(value: DashboardNames): Self = StObject.set(x, "DashboardNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardNamesVarargs(value: DashboardName*): Self = StObject.set(x, "DashboardNames", js.Array(value :_*))
+    inline def setDashboardNamesVarargs(value: DashboardName*): Self = StObject.set(x, "DashboardNames", js.Array(value :_*))
   }
 }

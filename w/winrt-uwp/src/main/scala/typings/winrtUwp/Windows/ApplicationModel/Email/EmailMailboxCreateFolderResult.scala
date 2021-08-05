@@ -15,19 +15,15 @@ trait EmailMailboxCreateFolderResult extends StObject {
 }
 object EmailMailboxCreateFolderResult {
   
-  @scala.inline
-  def apply(folder: EmailFolder, status: EmailMailboxCreateFolderStatus): EmailMailboxCreateFolderResult = {
+  inline def apply(folder: EmailFolder, status: EmailMailboxCreateFolderStatus): EmailMailboxCreateFolderResult = {
     val __obj = js.Dynamic.literal(folder = folder.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailMailboxCreateFolderResult]
   }
   
-  @scala.inline
-  implicit class EmailMailboxCreateFolderResultMutableBuilder[Self <: EmailMailboxCreateFolderResult] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMailboxCreateFolderResult](x: Self) {
     
-    @scala.inline
-    def setFolder(value: EmailFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: EmailFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: EmailMailboxCreateFolderStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: EmailMailboxCreateFolderStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

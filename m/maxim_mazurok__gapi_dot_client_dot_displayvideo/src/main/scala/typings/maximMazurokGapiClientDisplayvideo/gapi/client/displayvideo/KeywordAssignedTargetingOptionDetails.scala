@@ -17,25 +17,19 @@ trait KeywordAssignedTargetingOptionDetails extends StObject {
 }
 object KeywordAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): KeywordAssignedTargetingOptionDetails = {
+  inline def apply(): KeywordAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeywordAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class KeywordAssignedTargetingOptionDetailsMutableBuilder[Self <: KeywordAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: KeywordAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+    inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
+    inline def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
     
-    @scala.inline
-    def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+    inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
+    inline def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
   }
 }

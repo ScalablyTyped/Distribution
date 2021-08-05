@@ -10,8 +10,7 @@ trait ISQLite
      with ISencha
 object ISQLite {
   
-  @scala.inline
-  def apply(): ISQLite = {
+  inline def apply(): ISQLite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISQLite]
   }

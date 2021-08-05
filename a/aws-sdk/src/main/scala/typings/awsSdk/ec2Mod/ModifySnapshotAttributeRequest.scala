@@ -43,58 +43,41 @@ trait ModifySnapshotAttributeRequest extends StObject {
 }
 object ModifySnapshotAttributeRequest {
   
-  @scala.inline
-  def apply(SnapshotId: SnapshotId): ModifySnapshotAttributeRequest = {
+  inline def apply(SnapshotId: SnapshotId): ModifySnapshotAttributeRequest = {
     val __obj = js.Dynamic.literal(SnapshotId = SnapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifySnapshotAttributeRequest]
   }
   
-  @scala.inline
-  implicit class ModifySnapshotAttributeRequestMutableBuilder[Self <: ModifySnapshotAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifySnapshotAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: SnapshotAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: SnapshotAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
     
-    @scala.inline
-    def setCreateVolumePermission(value: CreateVolumePermissionModifications): Self = StObject.set(x, "CreateVolumePermission", value.asInstanceOf[js.Any])
+    inline def setCreateVolumePermission(value: CreateVolumePermissionModifications): Self = StObject.set(x, "CreateVolumePermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateVolumePermissionUndefined: Self = StObject.set(x, "CreateVolumePermission", js.undefined)
+    inline def setCreateVolumePermissionUndefined: Self = StObject.set(x, "CreateVolumePermission", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setGroupNames(value: GroupNameStringList): Self = StObject.set(x, "GroupNames", value.asInstanceOf[js.Any])
+    inline def setGroupNames(value: GroupNameStringList): Self = StObject.set(x, "GroupNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNamesUndefined: Self = StObject.set(x, "GroupNames", js.undefined)
+    inline def setGroupNamesUndefined: Self = StObject.set(x, "GroupNames", js.undefined)
     
-    @scala.inline
-    def setGroupNamesVarargs(value: SecurityGroupName*): Self = StObject.set(x, "GroupNames", js.Array(value :_*))
+    inline def setGroupNamesVarargs(value: SecurityGroupName*): Self = StObject.set(x, "GroupNames", js.Array(value :_*))
     
-    @scala.inline
-    def setOperationType(value: OperationType): Self = StObject.set(x, "OperationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: OperationType): Self = StObject.set(x, "OperationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationTypeUndefined: Self = StObject.set(x, "OperationType", js.undefined)
+    inline def setOperationTypeUndefined: Self = StObject.set(x, "OperationType", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIds(value: UserIdStringList): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
+    inline def setUserIds(value: UserIdStringList): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
+    inline def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
-    @scala.inline
-    def setUserIdsVarargs(value: String*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
+    inline def setUserIdsVarargs(value: String*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
   }
 }

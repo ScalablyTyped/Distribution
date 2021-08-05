@@ -21,8 +21,7 @@ trait IDatagramSocketMessageReceivedEventArgs extends StObject {
 }
 object IDatagramSocketMessageReceivedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDataReader: () => DataReader,
     getDataStream: () => IInputStream,
     localAddress: HostName,
@@ -33,22 +32,16 @@ object IDatagramSocketMessageReceivedEventArgs {
     __obj.asInstanceOf[IDatagramSocketMessageReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class IDatagramSocketMessageReceivedEventArgsMutableBuilder[Self <: IDatagramSocketMessageReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IDatagramSocketMessageReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetDataReader(value: () => DataReader): Self = StObject.set(x, "getDataReader", js.Any.fromFunction0(value))
+    inline def setGetDataReader(value: () => DataReader): Self = StObject.set(x, "getDataReader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDataStream(value: () => IInputStream): Self = StObject.set(x, "getDataStream", js.Any.fromFunction0(value))
+    inline def setGetDataStream(value: () => IInputStream): Self = StObject.set(x, "getDataStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLocalAddress(value: HostName): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+    inline def setLocalAddress(value: HostName): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteAddress(value: HostName): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
+    inline def setRemoteAddress(value: HostName): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemotePort(value: String): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
+    inline def setRemotePort(value: String): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
   }
 }

@@ -30,8 +30,7 @@ trait GetAvailableAudioSourcesSuccessCallbackResult extends StObject {
 }
 object GetAvailableAudioSourcesSuccessCallbackResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audioSources: Array[
       auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition
     ]
@@ -40,11 +39,9 @@ object GetAvailableAudioSourcesSuccessCallbackResult {
     __obj.asInstanceOf[GetAvailableAudioSourcesSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetAvailableAudioSourcesSuccessCallbackResultMutableBuilder[Self <: GetAvailableAudioSourcesSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetAvailableAudioSourcesSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setAudioSources(
+    inline def setAudioSources(
       value: Array[
           auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition
         ]

@@ -14,28 +14,21 @@ trait SqlInstancesVerifyExternalSyncSettingsResponse extends StObject {
 }
 object SqlInstancesVerifyExternalSyncSettingsResponse {
   
-  @scala.inline
-  def apply(): SqlInstancesVerifyExternalSyncSettingsResponse = {
+  inline def apply(): SqlInstancesVerifyExternalSyncSettingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlInstancesVerifyExternalSyncSettingsResponse]
   }
   
-  @scala.inline
-  implicit class SqlInstancesVerifyExternalSyncSettingsResponseMutableBuilder[Self <: SqlInstancesVerifyExternalSyncSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SqlInstancesVerifyExternalSyncSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[SqlExternalSyncSettingError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[SqlExternalSyncSettingError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: SqlExternalSyncSettingError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SqlExternalSyncSettingError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

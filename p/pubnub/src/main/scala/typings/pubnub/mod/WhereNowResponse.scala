@@ -10,19 +10,15 @@ trait WhereNowResponse extends StObject {
 }
 object WhereNowResponse {
   
-  @scala.inline
-  def apply(channels: js.Array[String]): WhereNowResponse = {
+  inline def apply(channels: js.Array[String]): WhereNowResponse = {
     val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhereNowResponse]
   }
   
-  @scala.inline
-  implicit class WhereNowResponseMutableBuilder[Self <: WhereNowResponse] (val x: Self) extends AnyVal {
+  extension [Self <: WhereNowResponse](x: Self) {
     
-    @scala.inline
-    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
   }
 }

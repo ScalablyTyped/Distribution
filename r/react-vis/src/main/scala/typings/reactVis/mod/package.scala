@@ -5,47 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def ContinuousColorLegend: typings.react.mod.SFC[typings.reactVis.mod.ContinuousColorLegendProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ContinuousColorLegend").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.ContinuousColorLegendProps]]
+inline def ContinuousColorLegend: typings.react.mod.SFC[typings.reactVis.mod.ContinuousColorLegendProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ContinuousColorLegend").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.ContinuousColorLegendProps]]
 
-@scala.inline
-def ContinuousSizeLegend: typings.react.mod.SFC[typings.reactVis.mod.ContinuousSizeLegendProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ContinuousSizeLegend").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.ContinuousSizeLegendProps]]
+inline def ContinuousSizeLegend: typings.react.mod.SFC[typings.reactVis.mod.ContinuousSizeLegendProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ContinuousSizeLegend").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.ContinuousSizeLegendProps]]
 
-@scala.inline
-def DiscreteColorLegend: typings.react.mod.SFC[typings.reactVis.mod.DiscreteColorLegendProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DiscreteColorLegend").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.DiscreteColorLegendProps]]
+inline def DiscreteColorLegend: typings.react.mod.SFC[typings.reactVis.mod.DiscreteColorLegendProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DiscreteColorLegend").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.DiscreteColorLegendProps]]
 
-@scala.inline
-def HorizontalGridLines: typings.react.mod.SFC[typings.reactVis.mod.HorizontalGridLinesProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HorizontalGridLines").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.HorizontalGridLinesProps]]
+inline def HorizontalGridLines: typings.react.mod.SFC[typings.reactVis.mod.HorizontalGridLinesProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HorizontalGridLines").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.HorizontalGridLinesProps]]
 
-@scala.inline
-def SearchableDiscreteColorLegend: typings.react.mod.SFC[typings.reactVis.mod.SearchableDiscreteColorLegendProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SearchableDiscreteColorLegend").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.SearchableDiscreteColorLegendProps]]
+inline def SearchableDiscreteColorLegend: typings.react.mod.SFC[typings.reactVis.mod.SearchableDiscreteColorLegendProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SearchableDiscreteColorLegend").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.SearchableDiscreteColorLegendProps]]
 
-@scala.inline
-def VerticalGridLines: typings.react.mod.SFC[typings.reactVis.mod.VerticalGridLinesProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VerticalGridLines").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.VerticalGridLinesProps]]
+inline def VerticalGridLines: typings.react.mod.SFC[typings.reactVis.mod.VerticalGridLinesProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VerticalGridLines").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.VerticalGridLinesProps]]
 
-@scala.inline
-def Voronoi: typings.react.mod.SFC[typings.reactVis.mod.VoronoiProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Voronoi").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.VoronoiProps]]
+inline def Voronoi: typings.react.mod.SFC[typings.reactVis.mod.VoronoiProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Voronoi").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.VoronoiProps]]
 
-@scala.inline
-def XAxis: typings.react.mod.SFC[typings.reactVis.mod.XAxisProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XAxis").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.XAxisProps]]
+inline def XAxis: typings.react.mod.SFC[typings.reactVis.mod.XAxisProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XAxis").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.XAxisProps]]
 
-@scala.inline
-def YAxis: typings.react.mod.SFC[typings.reactVis.mod.YAxisProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("YAxis").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.YAxisProps]]
+inline def YAxis: typings.react.mod.SFC[typings.reactVis.mod.YAxisProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("YAxis").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.YAxisProps]]
 
-@scala.inline
-def makeHeightFlexible(): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeHeightFlexible")().asInstanceOf[js.Any]
-@scala.inline
-def makeHeightFlexible(component: js.Any): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeHeightFlexible")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def makeHeightFlexible(): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeHeightFlexible")().asInstanceOf[js.Any]
+inline def makeHeightFlexible(component: js.Any): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeHeightFlexible")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 
-@scala.inline
-def makeVisFlexible(): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeVisFlexible")().asInstanceOf[js.Any]
-@scala.inline
-def makeVisFlexible(component: js.Any): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeVisFlexible")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def makeVisFlexible(): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeVisFlexible")().asInstanceOf[js.Any]
+inline def makeVisFlexible(component: js.Any): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeVisFlexible")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 
-@scala.inline
-def makeWidthFlexible(): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeWidthFlexible")().asInstanceOf[js.Any]
-@scala.inline
-def makeWidthFlexible(component: js.Any): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeWidthFlexible")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def makeWidthFlexible(): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeWidthFlexible")().asInstanceOf[js.Any]
+inline def makeWidthFlexible(component: js.Any): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeWidthFlexible")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 
 type AbstractSeriesPoint = org.scalablytyped.runtime.StringDictionary[js.Any]
 

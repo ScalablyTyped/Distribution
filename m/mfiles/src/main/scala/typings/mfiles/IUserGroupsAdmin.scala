@@ -12,19 +12,15 @@ trait IUserGroupsAdmin extends StObject {
 }
 object IUserGroupsAdmin {
   
-  @scala.inline
-  def apply(Count: Double, Item: Double => IUserGroupAdmin): IUserGroupsAdmin = {
+  inline def apply(Count: Double, Item: Double => IUserGroupAdmin): IUserGroupsAdmin = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[IUserGroupsAdmin]
   }
   
-  @scala.inline
-  implicit class IUserGroupsAdminMutableBuilder[Self <: IUserGroupsAdmin] (val x: Self) extends AnyVal {
+  extension [Self <: IUserGroupsAdmin](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IUserGroupAdmin): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IUserGroupAdmin): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

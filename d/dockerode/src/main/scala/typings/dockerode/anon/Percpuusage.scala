@@ -16,8 +16,7 @@ trait Percpuusage extends StObject {
 }
 object Percpuusage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     percpu_usage: js.Array[Double],
     total_usage: Double,
     usage_in_kernelmode: Double,
@@ -27,22 +26,16 @@ object Percpuusage {
     __obj.asInstanceOf[Percpuusage]
   }
   
-  @scala.inline
-  implicit class PercpuusageMutableBuilder[Self <: Percpuusage] (val x: Self) extends AnyVal {
+  extension [Self <: Percpuusage](x: Self) {
     
-    @scala.inline
-    def setPercpu_usage(value: js.Array[Double]): Self = StObject.set(x, "percpu_usage", value.asInstanceOf[js.Any])
+    inline def setPercpu_usage(value: js.Array[Double]): Self = StObject.set(x, "percpu_usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercpu_usageVarargs(value: Double*): Self = StObject.set(x, "percpu_usage", js.Array(value :_*))
+    inline def setPercpu_usageVarargs(value: Double*): Self = StObject.set(x, "percpu_usage", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal_usage(value: Double): Self = StObject.set(x, "total_usage", value.asInstanceOf[js.Any])
+    inline def setTotal_usage(value: Double): Self = StObject.set(x, "total_usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsage_in_kernelmode(value: Double): Self = StObject.set(x, "usage_in_kernelmode", value.asInstanceOf[js.Any])
+    inline def setUsage_in_kernelmode(value: Double): Self = StObject.set(x, "usage_in_kernelmode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsage_in_usermode(value: Double): Self = StObject.set(x, "usage_in_usermode", value.asInstanceOf[js.Any])
+    inline def setUsage_in_usermode(value: Double): Self = StObject.set(x, "usage_in_usermode", value.asInstanceOf[js.Any])
   }
 }

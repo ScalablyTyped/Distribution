@@ -38,8 +38,7 @@ trait ASPxClientTreeListToolbarItemClickEventArgs
 }
 object ASPxClientTreeListToolbarItemClickEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     handled: Boolean,
     item: ASPxClientMenuItem,
     processOnServer: Boolean,
@@ -51,22 +50,16 @@ object ASPxClientTreeListToolbarItemClickEventArgs {
     __obj.asInstanceOf[ASPxClientTreeListToolbarItemClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListToolbarItemClickEventArgsMutableBuilder[Self <: ASPxClientTreeListToolbarItemClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListToolbarItemClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: ASPxClientMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ASPxClientMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarIndex(value: Double): Self = StObject.set(x, "toolbarIndex", value.asInstanceOf[js.Any])
+    inline def setToolbarIndex(value: Double): Self = StObject.set(x, "toolbarIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarName(value: String): Self = StObject.set(x, "toolbarName", value.asInstanceOf[js.Any])
+    inline def setToolbarName(value: String): Self = StObject.set(x, "toolbarName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePostBack(value: Boolean): Self = StObject.set(x, "usePostBack", value.asInstanceOf[js.Any])
+    inline def setUsePostBack(value: Boolean): Self = StObject.set(x, "usePostBack", value.asInstanceOf[js.Any])
   }
 }

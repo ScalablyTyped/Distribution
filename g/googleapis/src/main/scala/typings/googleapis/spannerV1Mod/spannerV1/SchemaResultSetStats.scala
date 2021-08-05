@@ -37,37 +37,27 @@ trait SchemaResultSetStats extends StObject {
 }
 object SchemaResultSetStats {
   
-  @scala.inline
-  def apply(): SchemaResultSetStats = {
+  inline def apply(): SchemaResultSetStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResultSetStats]
   }
   
-  @scala.inline
-  implicit class SchemaResultSetStatsMutableBuilder[Self <: SchemaResultSetStats] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResultSetStats](x: Self) {
     
-    @scala.inline
-    def setQueryPlan(value: SchemaQueryPlan): Self = StObject.set(x, "queryPlan", value.asInstanceOf[js.Any])
+    inline def setQueryPlan(value: SchemaQueryPlan): Self = StObject.set(x, "queryPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryPlanUndefined: Self = StObject.set(x, "queryPlan", js.undefined)
+    inline def setQueryPlanUndefined: Self = StObject.set(x, "queryPlan", js.undefined)
     
-    @scala.inline
-    def setQueryStats(value: StringDictionary[js.Any]): Self = StObject.set(x, "queryStats", value.asInstanceOf[js.Any])
+    inline def setQueryStats(value: StringDictionary[js.Any]): Self = StObject.set(x, "queryStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStatsUndefined: Self = StObject.set(x, "queryStats", js.undefined)
+    inline def setQueryStatsUndefined: Self = StObject.set(x, "queryStats", js.undefined)
     
-    @scala.inline
-    def setRowCountExact(value: String): Self = StObject.set(x, "rowCountExact", value.asInstanceOf[js.Any])
+    inline def setRowCountExact(value: String): Self = StObject.set(x, "rowCountExact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountExactUndefined: Self = StObject.set(x, "rowCountExact", js.undefined)
+    inline def setRowCountExactUndefined: Self = StObject.set(x, "rowCountExact", js.undefined)
     
-    @scala.inline
-    def setRowCountLowerBound(value: String): Self = StObject.set(x, "rowCountLowerBound", value.asInstanceOf[js.Any])
+    inline def setRowCountLowerBound(value: String): Self = StObject.set(x, "rowCountLowerBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountLowerBoundUndefined: Self = StObject.set(x, "rowCountLowerBound", js.undefined)
+    inline def setRowCountLowerBoundUndefined: Self = StObject.set(x, "rowCountLowerBound", js.undefined)
   }
 }

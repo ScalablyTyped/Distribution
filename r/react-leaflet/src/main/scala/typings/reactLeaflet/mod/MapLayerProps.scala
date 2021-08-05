@@ -15,28 +15,21 @@ trait MapLayerProps
 }
 object MapLayerProps {
   
-  @scala.inline
-  def apply(): MapLayerProps = {
+  inline def apply(): MapLayerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapLayerProps]
   }
   
-  @scala.inline
-  implicit class MapLayerPropsMutableBuilder[Self <: MapLayerProps] (val x: Self) extends AnyVal {
+  extension [Self <: MapLayerProps](x: Self) {
     
-    @scala.inline
-    def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+    inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+    inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
-    @scala.inline
-    def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
   }
 }

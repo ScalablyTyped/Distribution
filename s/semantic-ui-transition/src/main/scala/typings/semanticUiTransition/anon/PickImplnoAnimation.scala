@@ -11,16 +11,13 @@ trait PickImplnoAnimation extends StObject {
 }
 object PickImplnoAnimation {
   
-  @scala.inline
-  def apply(noAnimation: String): PickImplnoAnimation = {
+  inline def apply(noAnimation: String): PickImplnoAnimation = {
     val __obj = js.Dynamic.literal(noAnimation = noAnimation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnoAnimation]
   }
   
-  @scala.inline
-  implicit class PickImplnoAnimationMutableBuilder[Self <: PickImplnoAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplnoAnimation](x: Self) {
     
-    @scala.inline
-    def setNoAnimation(value: String): Self = StObject.set(x, "noAnimation", value.asInstanceOf[js.Any])
+    inline def setNoAnimation(value: String): Self = StObject.set(x, "noAnimation", value.asInstanceOf[js.Any])
   }
 }

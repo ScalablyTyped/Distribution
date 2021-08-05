@@ -23,67 +23,47 @@ trait CurrentDeselectedRowKeys[T] extends StObject {
 }
 object CurrentDeselectedRowKeys {
   
-  @scala.inline
-  def apply[T](): CurrentDeselectedRowKeys[T] = {
+  inline def apply[T](): CurrentDeselectedRowKeys[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CurrentDeselectedRowKeys[T]]
   }
   
-  @scala.inline
-  implicit class CurrentDeselectedRowKeysMutableBuilder[Self <: CurrentDeselectedRowKeys[?], T] (val x: Self & CurrentDeselectedRowKeys[T]) extends AnyVal {
+  extension [Self <: CurrentDeselectedRowKeys[?], T](x: Self & CurrentDeselectedRowKeys[T]) {
     
-    @scala.inline
-    def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setCurrentDeselectedRowKeys(value: js.Array[js.Any]): Self = StObject.set(x, "currentDeselectedRowKeys", value.asInstanceOf[js.Any])
+    inline def setCurrentDeselectedRowKeys(value: js.Array[js.Any]): Self = StObject.set(x, "currentDeselectedRowKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentDeselectedRowKeysUndefined: Self = StObject.set(x, "currentDeselectedRowKeys", js.undefined)
+    inline def setCurrentDeselectedRowKeysUndefined: Self = StObject.set(x, "currentDeselectedRowKeys", js.undefined)
     
-    @scala.inline
-    def setCurrentDeselectedRowKeysVarargs(value: js.Any*): Self = StObject.set(x, "currentDeselectedRowKeys", js.Array(value :_*))
+    inline def setCurrentDeselectedRowKeysVarargs(value: js.Any*): Self = StObject.set(x, "currentDeselectedRowKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setCurrentSelectedRowKeys(value: js.Array[js.Any]): Self = StObject.set(x, "currentSelectedRowKeys", value.asInstanceOf[js.Any])
+    inline def setCurrentSelectedRowKeys(value: js.Array[js.Any]): Self = StObject.set(x, "currentSelectedRowKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSelectedRowKeysUndefined: Self = StObject.set(x, "currentSelectedRowKeys", js.undefined)
+    inline def setCurrentSelectedRowKeysUndefined: Self = StObject.set(x, "currentSelectedRowKeys", js.undefined)
     
-    @scala.inline
-    def setCurrentSelectedRowKeysVarargs(value: js.Any*): Self = StObject.set(x, "currentSelectedRowKeys", js.Array(value :_*))
+    inline def setCurrentSelectedRowKeysVarargs(value: js.Any*): Self = StObject.set(x, "currentSelectedRowKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setSelectedRowKeys(value: js.Array[js.Any]): Self = StObject.set(x, "selectedRowKeys", value.asInstanceOf[js.Any])
+    inline def setSelectedRowKeys(value: js.Array[js.Any]): Self = StObject.set(x, "selectedRowKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedRowKeysUndefined: Self = StObject.set(x, "selectedRowKeys", js.undefined)
+    inline def setSelectedRowKeysUndefined: Self = StObject.set(x, "selectedRowKeys", js.undefined)
     
-    @scala.inline
-    def setSelectedRowKeysVarargs(value: js.Any*): Self = StObject.set(x, "selectedRowKeys", js.Array(value :_*))
+    inline def setSelectedRowKeysVarargs(value: js.Any*): Self = StObject.set(x, "selectedRowKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectedRowsData(value: js.Array[js.Any]): Self = StObject.set(x, "selectedRowsData", value.asInstanceOf[js.Any])
+    inline def setSelectedRowsData(value: js.Array[js.Any]): Self = StObject.set(x, "selectedRowsData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedRowsDataUndefined: Self = StObject.set(x, "selectedRowsData", js.undefined)
+    inline def setSelectedRowsDataUndefined: Self = StObject.set(x, "selectedRowsData", js.undefined)
     
-    @scala.inline
-    def setSelectedRowsDataVarargs(value: js.Any*): Self = StObject.set(x, "selectedRowsData", js.Array(value :_*))
+    inline def setSelectedRowsDataVarargs(value: js.Any*): Self = StObject.set(x, "selectedRowsData", js.Array(value :_*))
   }
 }

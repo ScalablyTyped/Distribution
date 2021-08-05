@@ -12,19 +12,15 @@ trait PreventDefault extends StObject {
 }
 object PreventDefault {
   
-  @scala.inline
-  def apply(preventDefault: Boolean, stopPropagation: Boolean): PreventDefault = {
+  inline def apply(preventDefault: Boolean, stopPropagation: Boolean): PreventDefault = {
     val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreventDefault]
   }
   
-  @scala.inline
-  implicit class PreventDefaultMutableBuilder[Self <: PreventDefault] (val x: Self) extends AnyVal {
+  extension [Self <: PreventDefault](x: Self) {
     
-    @scala.inline
-    def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+    inline def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
   }
 }

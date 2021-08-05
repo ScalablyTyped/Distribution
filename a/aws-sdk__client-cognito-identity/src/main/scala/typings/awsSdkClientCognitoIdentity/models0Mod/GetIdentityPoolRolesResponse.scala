@@ -28,8 +28,7 @@ trait GetIdentityPoolRolesResponse extends StObject {
 }
 object GetIdentityPoolRolesResponse {
   
-  @scala.inline
-  def apply(): GetIdentityPoolRolesResponse = {
+  inline def apply(): GetIdentityPoolRolesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetIdentityPoolRolesResponse]
   }
@@ -38,28 +37,20 @@ object GetIdentityPoolRolesResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: GetIdentityPoolRolesResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: GetIdentityPoolRolesResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class GetIdentityPoolRolesResponseMutableBuilder[Self <: GetIdentityPoolRolesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetIdentityPoolRolesResponse](x: Self) {
     
-    @scala.inline
-    def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+    inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
     
-    @scala.inline
-    def setRoleMappings(value: StringDictionary[RoleMapping]): Self = StObject.set(x, "RoleMappings", value.asInstanceOf[js.Any])
+    inline def setRoleMappings(value: StringDictionary[RoleMapping]): Self = StObject.set(x, "RoleMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleMappingsUndefined: Self = StObject.set(x, "RoleMappings", js.undefined)
+    inline def setRoleMappingsUndefined: Self = StObject.set(x, "RoleMappings", js.undefined)
     
-    @scala.inline
-    def setRoles(value: StringDictionary[String]): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: StringDictionary[String]): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesUndefined: Self = StObject.set(x, "Roles", js.undefined)
+    inline def setRolesUndefined: Self = StObject.set(x, "Roles", js.undefined)
   }
 }

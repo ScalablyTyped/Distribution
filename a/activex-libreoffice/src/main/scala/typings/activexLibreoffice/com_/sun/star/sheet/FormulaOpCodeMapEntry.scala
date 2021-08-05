@@ -15,19 +15,15 @@ trait FormulaOpCodeMapEntry extends StObject {
 }
 object FormulaOpCodeMapEntry {
   
-  @scala.inline
-  def apply(Name: String, Token: FormulaToken): FormulaOpCodeMapEntry = {
+  inline def apply(Name: String, Token: FormulaToken): FormulaOpCodeMapEntry = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Token = Token.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormulaOpCodeMapEntry]
   }
   
-  @scala.inline
-  implicit class FormulaOpCodeMapEntryMutableBuilder[Self <: FormulaOpCodeMapEntry] (val x: Self) extends AnyVal {
+  extension [Self <: FormulaOpCodeMapEntry](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: FormulaToken): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    inline def setToken(value: FormulaToken): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
   }
 }

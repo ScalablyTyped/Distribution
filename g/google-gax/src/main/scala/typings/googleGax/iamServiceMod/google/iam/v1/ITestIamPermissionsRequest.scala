@@ -15,34 +15,25 @@ trait ITestIamPermissionsRequest extends StObject {
 }
 object ITestIamPermissionsRequest {
   
-  @scala.inline
-  def apply(): ITestIamPermissionsRequest = {
+  inline def apply(): ITestIamPermissionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITestIamPermissionsRequest]
   }
   
-  @scala.inline
-  implicit class ITestIamPermissionsRequestMutableBuilder[Self <: ITestIamPermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ITestIamPermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsNull: Self = StObject.set(x, "permissions", null)
+    inline def setPermissionsNull: Self = StObject.set(x, "permissions", null)
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNull: Self = StObject.set(x, "resource", null)
+    inline def setResourceNull: Self = StObject.set(x, "resource", null)
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

@@ -28,12 +28,10 @@ object Column {
   @JSImport("react-virtualized/dist/es/Table", "Column.defaultProps")
   @js.native
   def defaultProps: CellRenderer = js.native
-  @scala.inline
-  def defaultProps_=(x: CellRenderer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: CellRenderer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("react-virtualized/dist/es/Table", "Column.propTypes")
   @js.native
   def propTypes: CellDataGetter = js.native
-  @scala.inline
-  def propTypes_=(x: CellDataGetter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  inline def propTypes_=(x: CellDataGetter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

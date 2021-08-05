@@ -13,16 +13,13 @@ trait DeleteSuggesterResponse extends StObject {
 }
 object DeleteSuggesterResponse {
   
-  @scala.inline
-  def apply(Suggester: SuggesterStatus): DeleteSuggesterResponse = {
+  inline def apply(Suggester: SuggesterStatus): DeleteSuggesterResponse = {
     val __obj = js.Dynamic.literal(Suggester = Suggester.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSuggesterResponse]
   }
   
-  @scala.inline
-  implicit class DeleteSuggesterResponseMutableBuilder[Self <: DeleteSuggesterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSuggesterResponse](x: Self) {
     
-    @scala.inline
-    def setSuggester(value: SuggesterStatus): Self = StObject.set(x, "Suggester", value.asInstanceOf[js.Any])
+    inline def setSuggester(value: SuggesterStatus): Self = StObject.set(x, "Suggester", value.asInstanceOf[js.Any])
   }
 }

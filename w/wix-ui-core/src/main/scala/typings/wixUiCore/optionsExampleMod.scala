@@ -12,8 +12,6 @@ object optionsExampleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateOptions(): js.Array[Option] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateOptions")().asInstanceOf[js.Array[Option]]
-  @scala.inline
-  def generateOptions(dividerFactory: js.Function1[/* hasClassNameValue */ js.UndefOr[PartialDividerArgs], Option]): js.Array[Option] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateOptions")(dividerFactory.asInstanceOf[js.Any]).asInstanceOf[js.Array[Option]]
+  inline def generateOptions(): js.Array[Option] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateOptions")().asInstanceOf[js.Array[Option]]
+  inline def generateOptions(dividerFactory: js.Function1[/* hasClassNameValue */ js.UndefOr[PartialDividerArgs], Option]): js.Array[Option] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateOptions")(dividerFactory.asInstanceOf[js.Any]).asInstanceOf[js.Array[Option]]
 }

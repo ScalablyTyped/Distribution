@@ -12,19 +12,15 @@ trait SwitchChangeEvent
 }
 object SwitchChangeEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Switch): SwitchChangeEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Switch): SwitchChangeEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchChangeEvent]
   }
   
-  @scala.inline
-  implicit class SwitchChangeEventMutableBuilder[Self <: SwitchChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchChangeEvent](x: Self) {
     
-    @scala.inline
-    def setChecked(value: js.Any): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: js.Any): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait SchemaTargetTcpProxiesSetProxyHeaderRequest extends StObject {
 }
 object SchemaTargetTcpProxiesSetProxyHeaderRequest {
   
-  @scala.inline
-  def apply(): SchemaTargetTcpProxiesSetProxyHeaderRequest = {
+  inline def apply(): SchemaTargetTcpProxiesSetProxyHeaderRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTargetTcpProxiesSetProxyHeaderRequest]
   }
   
-  @scala.inline
-  implicit class SchemaTargetTcpProxiesSetProxyHeaderRequestMutableBuilder[Self <: SchemaTargetTcpProxiesSetProxyHeaderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTargetTcpProxiesSetProxyHeaderRequest](x: Self) {
     
-    @scala.inline
-    def setProxyHeader(value: String): Self = StObject.set(x, "proxyHeader", value.asInstanceOf[js.Any])
+    inline def setProxyHeader(value: String): Self = StObject.set(x, "proxyHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyHeaderUndefined: Self = StObject.set(x, "proxyHeader", js.undefined)
+    inline def setProxyHeaderUndefined: Self = StObject.set(x, "proxyHeader", js.undefined)
   }
 }

@@ -16,38 +16,28 @@ object propsTypeMod {
   }
   object AccordionPropsTypes {
     
-    @scala.inline
-    def apply(): AccordionPropsTypes = {
+    inline def apply(): AccordionPropsTypes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccordionPropsTypes]
     }
     
-    @scala.inline
-    implicit class AccordionPropsTypesMutableBuilder[Self <: AccordionPropsTypes] (val x: Self) extends AnyVal {
+    extension [Self <: AccordionPropsTypes](x: Self) {
       
-      @scala.inline
-      def setActiveKey(value: String | js.Array[String]): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+      inline def setActiveKey(value: String | js.Array[String]): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
+      inline def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
       
-      @scala.inline
-      def setActiveKeyVarargs(value: String*): Self = StObject.set(x, "activeKey", js.Array(value :_*))
+      inline def setActiveKeyVarargs(value: String*): Self = StObject.set(x, "activeKey", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultActiveKey(value: String | js.Array[String]): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
+      inline def setDefaultActiveKey(value: String | js.Array[String]): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
+      inline def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
       
-      @scala.inline
-      def setDefaultActiveKeyVarargs(value: String*): Self = StObject.set(x, "defaultActiveKey", js.Array(value :_*))
+      inline def setDefaultActiveKeyVarargs(value: String*): Self = StObject.set(x, "defaultActiveKey", js.Array(value :_*))
       
-      @scala.inline
-      def setOnChange(value: /* x */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* x */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     }
   }
 }

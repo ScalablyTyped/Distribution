@@ -60,8 +60,7 @@ trait KmlStyleMap
 }
 object KmlStyleMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -92,37 +91,26 @@ object KmlStyleMap {
     __obj.asInstanceOf[KmlStyleMap]
   }
   
-  @scala.inline
-  implicit class KmlStyleMapMutableBuilder[Self <: KmlStyleMap] (val x: Self) extends AnyVal {
+  extension [Self <: KmlStyleMap](x: Self) {
     
-    @scala.inline
-    def setGetHighlightStyle(value: () => KmlStyle): Self = StObject.set(x, "getHighlightStyle", js.Any.fromFunction0(value))
+    inline def setGetHighlightStyle(value: () => KmlStyle): Self = StObject.set(x, "getHighlightStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHighlightStyleUrl(value: () => String): Self = StObject.set(x, "getHighlightStyleUrl", js.Any.fromFunction0(value))
+    inline def setGetHighlightStyleUrl(value: () => String): Self = StObject.set(x, "getHighlightStyleUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNormalStyle(value: () => KmlStyle): Self = StObject.set(x, "getNormalStyle", js.Any.fromFunction0(value))
+    inline def setGetNormalStyle(value: () => KmlStyle): Self = StObject.set(x, "getNormalStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNormalStyleUrl(value: () => String): Self = StObject.set(x, "getNormalStyleUrl", js.Any.fromFunction0(value))
+    inline def setGetNormalStyleUrl(value: () => String): Self = StObject.set(x, "getNormalStyleUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetHighlightStyle(value: KmlStyle => Unit): Self = StObject.set(x, "setHighlightStyle", js.Any.fromFunction1(value))
+    inline def setSetHighlightStyle(value: KmlStyle => Unit): Self = StObject.set(x, "setHighlightStyle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHighlightStyleUrl(value: String => Unit): Self = StObject.set(x, "setHighlightStyleUrl", js.Any.fromFunction1(value))
+    inline def setSetHighlightStyleUrl(value: String => Unit): Self = StObject.set(x, "setHighlightStyleUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNormalStyle(value: KmlStyle => Unit): Self = StObject.set(x, "setNormalStyle", js.Any.fromFunction1(value))
+    inline def setSetNormalStyle(value: KmlStyle => Unit): Self = StObject.set(x, "setNormalStyle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNormalStyleUrl(value: String => Unit): Self = StObject.set(x, "setNormalStyleUrl", js.Any.fromFunction1(value))
+    inline def setSetNormalStyleUrl(value: String => Unit): Self = StObject.set(x, "setNormalStyleUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStyle(value: (KmlStyle, KmlStyle) => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
+    inline def setSetStyle(value: (KmlStyle, KmlStyle) => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetUrl(value: (String, String) => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction2(value))
+    inline def setSetUrl(value: (String, String) => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction2(value))
   }
 }

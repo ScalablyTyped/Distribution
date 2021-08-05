@@ -14,19 +14,15 @@ trait ReadLinkResult extends StObject {
 }
 object ReadLinkResult {
   
-  @scala.inline
-  def apply(keypath: String, ractive: Ractive[Ractive[js.Any]]): ReadLinkResult = {
+  inline def apply(keypath: String, ractive: Ractive[Ractive[js.Any]]): ReadLinkResult = {
     val __obj = js.Dynamic.literal(keypath = keypath.asInstanceOf[js.Any], ractive = ractive.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadLinkResult]
   }
   
-  @scala.inline
-  implicit class ReadLinkResultMutableBuilder[Self <: ReadLinkResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReadLinkResult](x: Self) {
     
-    @scala.inline
-    def setKeypath(value: String): Self = StObject.set(x, "keypath", value.asInstanceOf[js.Any])
+    inline def setKeypath(value: String): Self = StObject.set(x, "keypath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRactive(value: Ractive[Ractive[js.Any]]): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
+    inline def setRactive(value: Ractive[Ractive[js.Any]]): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
   }
 }

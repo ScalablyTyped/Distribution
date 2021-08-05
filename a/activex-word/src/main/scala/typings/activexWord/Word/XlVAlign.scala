@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlVAlign extends StObject
 object XlVAlign {
   
-  @scala.inline
-  def xlVAlignBottom: `-4107` = -4107.asInstanceOf[`-4107`]
+  inline def xlVAlignBottom: `-4107` = -4107.asInstanceOf[`-4107`]
   
-  @scala.inline
-  def xlVAlignCenter: `-4108` = -4108.asInstanceOf[`-4108`]
+  inline def xlVAlignCenter: `-4108` = -4108.asInstanceOf[`-4108`]
   
-  @scala.inline
-  def xlVAlignDistributed: `-4117` = -4117.asInstanceOf[`-4117`]
+  inline def xlVAlignDistributed: `-4117` = -4117.asInstanceOf[`-4117`]
   
-  @scala.inline
-  def xlVAlignJustify: `-4130` = -4130.asInstanceOf[`-4130`]
+  inline def xlVAlignJustify: `-4130` = -4130.asInstanceOf[`-4130`]
   
-  @scala.inline
-  def xlVAlignTop: `-4160` = -4160.asInstanceOf[`-4160`]
+  inline def xlVAlignTop: `-4160` = -4160.asInstanceOf[`-4160`]
 }

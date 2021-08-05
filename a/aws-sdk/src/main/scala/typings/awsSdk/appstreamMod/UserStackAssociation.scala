@@ -28,28 +28,21 @@ trait UserStackAssociation extends StObject {
 }
 object UserStackAssociation {
   
-  @scala.inline
-  def apply(AuthenticationType: AuthenticationType, StackName: String, UserName: Username): UserStackAssociation = {
+  inline def apply(AuthenticationType: AuthenticationType, StackName: String, UserName: Username): UserStackAssociation = {
     val __obj = js.Dynamic.literal(AuthenticationType = AuthenticationType.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserStackAssociation]
   }
   
-  @scala.inline
-  implicit class UserStackAssociationMutableBuilder[Self <: UserStackAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: UserStackAssociation](x: Self) {
     
-    @scala.inline
-    def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
+    inline def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendEmailNotification(value: Boolean): Self = StObject.set(x, "SendEmailNotification", value.asInstanceOf[js.Any])
+    inline def setSendEmailNotification(value: Boolean): Self = StObject.set(x, "SendEmailNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendEmailNotificationUndefined: Self = StObject.set(x, "SendEmailNotification", js.undefined)
+    inline def setSendEmailNotificationUndefined: Self = StObject.set(x, "SendEmailNotification", js.undefined)
     
-    @scala.inline
-    def setStackName(value: String): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: String): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: Username): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: Username): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

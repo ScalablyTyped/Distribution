@@ -17,7 +17,7 @@ trait PublishObject extends StObject {
   
   val DivID: String = js.native
   
-  @JSName("Excel.PublishObject_typekey")
+  /* private */ @JSName("Excel.PublishObject_typekey")
   var ExcelDotPublishObject_typekey: PublishObject = js.native
   
   var Filename: String = js.native

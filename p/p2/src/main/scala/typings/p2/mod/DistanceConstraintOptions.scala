@@ -18,37 +18,27 @@ trait DistanceConstraintOptions
 }
 object DistanceConstraintOptions {
   
-  @scala.inline
-  def apply(): DistanceConstraintOptions = {
+  inline def apply(): DistanceConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DistanceConstraintOptions]
   }
   
-  @scala.inline
-  implicit class DistanceConstraintOptionsMutableBuilder[Self <: DistanceConstraintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DistanceConstraintOptions](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setLocalAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAnchorAUndefined: Self = StObject.set(x, "localAnchorA", js.undefined)
+    inline def setLocalAnchorAUndefined: Self = StObject.set(x, "localAnchorA", js.undefined)
     
-    @scala.inline
-    def setLocalAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAnchorBUndefined: Self = StObject.set(x, "localAnchorB", js.undefined)
+    inline def setLocalAnchorBUndefined: Self = StObject.set(x, "localAnchorB", js.undefined)
     
-    @scala.inline
-    def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
+    inline def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
+    inline def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
   }
 }

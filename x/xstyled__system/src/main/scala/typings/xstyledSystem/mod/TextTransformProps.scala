@@ -14,27 +14,22 @@ trait TextTransformProps extends StObject {
 }
 object TextTransformProps {
   
-  @scala.inline
-  def apply(): TextTransformProps = {
+  inline def apply(): TextTransformProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextTransformProps]
   }
   
-  @scala.inline
-  implicit class TextTransformPropsMutableBuilder[Self <: TextTransformProps] (val x: Self) extends AnyVal {
+  extension [Self <: TextTransformProps](x: Self) {
     
-    @scala.inline
-    def setTextTransform(
+    inline def setTextTransform(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ js.Any
         ]
     ): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
+    inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
     
-    @scala.inline
-    def setTextTransformVarargs(
+    inline def setTextTransformVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ js.Any)*
     ): Self = StObject.set(x, "textTransform", js.Array(value :_*))
   }

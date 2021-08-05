@@ -18,28 +18,21 @@ trait GetDiskSnapshotsResult extends StObject {
 }
 object GetDiskSnapshotsResult {
   
-  @scala.inline
-  def apply(): GetDiskSnapshotsResult = {
+  inline def apply(): GetDiskSnapshotsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDiskSnapshotsResult]
   }
   
-  @scala.inline
-  implicit class GetDiskSnapshotsResultMutableBuilder[Self <: GetDiskSnapshotsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetDiskSnapshotsResult](x: Self) {
     
-    @scala.inline
-    def setDiskSnapshots(value: DiskSnapshotList): Self = StObject.set(x, "diskSnapshots", value.asInstanceOf[js.Any])
+    inline def setDiskSnapshots(value: DiskSnapshotList): Self = StObject.set(x, "diskSnapshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSnapshotsUndefined: Self = StObject.set(x, "diskSnapshots", js.undefined)
+    inline def setDiskSnapshotsUndefined: Self = StObject.set(x, "diskSnapshots", js.undefined)
     
-    @scala.inline
-    def setDiskSnapshotsVarargs(value: DiskSnapshot*): Self = StObject.set(x, "diskSnapshots", js.Array(value :_*))
+    inline def setDiskSnapshotsVarargs(value: DiskSnapshot*): Self = StObject.set(x, "diskSnapshots", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

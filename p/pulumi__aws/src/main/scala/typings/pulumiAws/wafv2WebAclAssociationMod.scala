@@ -50,21 +50,16 @@ object wafv2WebAclAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): WebAclAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WebAclAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WebAclAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAclAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WebAclAssociationState): WebAclAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WebAclAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WebAclAssociationState, opts: CustomResourceOptions): WebAclAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAclAssociation]
+    inline def get(name: String, id: Input[ID]): WebAclAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WebAclAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WebAclAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAclAssociation]
+    inline def get(name: String, id: Input[ID], state: WebAclAssociationState): WebAclAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WebAclAssociation]
+    inline def get(name: String, id: Input[ID], state: WebAclAssociationState, opts: CustomResourceOptions): WebAclAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAclAssociation]
     
     /**
       * Returns true if the given object is an instance of WebAclAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/webAclAssociation.WebAclAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafv2/webAclAssociation.WebAclAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/webAclAssociation.WebAclAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafv2/webAclAssociation.WebAclAssociation */ Boolean]
   }
   
   trait WebAclAssociationArgs extends StObject {
@@ -81,20 +76,16 @@ object wafv2WebAclAssociationMod {
   }
   object WebAclAssociationArgs {
     
-    @scala.inline
-    def apply(resourceArn: Input[String], webAclArn: Input[String]): WebAclAssociationArgs = {
+    inline def apply(resourceArn: Input[String], webAclArn: Input[String]): WebAclAssociationArgs = {
       val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], webAclArn = webAclArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebAclAssociationArgs]
     }
     
-    @scala.inline
-    implicit class WebAclAssociationArgsMutableBuilder[Self <: WebAclAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WebAclAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebAclArn(value: Input[String]): Self = StObject.set(x, "webAclArn", value.asInstanceOf[js.Any])
+      inline def setWebAclArn(value: Input[String]): Self = StObject.set(x, "webAclArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object wafv2WebAclAssociationMod {
   }
   object WebAclAssociationState {
     
-    @scala.inline
-    def apply(): WebAclAssociationState = {
+    inline def apply(): WebAclAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebAclAssociationState]
     }
     
-    @scala.inline
-    implicit class WebAclAssociationStateMutableBuilder[Self <: WebAclAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: WebAclAssociationState](x: Self) {
       
-      @scala.inline
-      def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
+      inline def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
       
-      @scala.inline
-      def setWebAclArn(value: Input[String]): Self = StObject.set(x, "webAclArn", value.asInstanceOf[js.Any])
+      inline def setWebAclArn(value: Input[String]): Self = StObject.set(x, "webAclArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebAclArnUndefined: Self = StObject.set(x, "webAclArn", js.undefined)
+      inline def setWebAclArnUndefined: Self = StObject.set(x, "webAclArn", js.undefined)
     }
   }
 }

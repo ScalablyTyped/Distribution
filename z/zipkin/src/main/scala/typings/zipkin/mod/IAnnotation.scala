@@ -10,16 +10,13 @@ trait IAnnotation extends StObject {
 }
 object IAnnotation {
   
-  @scala.inline
-  def apply(annotationType: String): IAnnotation = {
+  inline def apply(annotationType: String): IAnnotation = {
     val __obj = js.Dynamic.literal(annotationType = annotationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnnotation]
   }
   
-  @scala.inline
-  implicit class IAnnotationMutableBuilder[Self <: IAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: IAnnotation](x: Self) {
     
-    @scala.inline
-    def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
+    inline def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
   }
 }

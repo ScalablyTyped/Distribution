@@ -23,40 +23,29 @@ trait GooglePrivacyDlpV2Location extends StObject {
 }
 object GooglePrivacyDlpV2Location {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2Location = {
+  inline def apply(): GooglePrivacyDlpV2Location = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2Location]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2LocationMutableBuilder[Self <: GooglePrivacyDlpV2Location] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2Location](x: Self) {
     
-    @scala.inline
-    def setByteRange(value: GooglePrivacyDlpV2Range): Self = StObject.set(x, "byteRange", value.asInstanceOf[js.Any])
+    inline def setByteRange(value: GooglePrivacyDlpV2Range): Self = StObject.set(x, "byteRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteRangeUndefined: Self = StObject.set(x, "byteRange", js.undefined)
+    inline def setByteRangeUndefined: Self = StObject.set(x, "byteRange", js.undefined)
     
-    @scala.inline
-    def setCodepointRange(value: GooglePrivacyDlpV2Range): Self = StObject.set(x, "codepointRange", value.asInstanceOf[js.Any])
+    inline def setCodepointRange(value: GooglePrivacyDlpV2Range): Self = StObject.set(x, "codepointRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodepointRangeUndefined: Self = StObject.set(x, "codepointRange", js.undefined)
+    inline def setCodepointRangeUndefined: Self = StObject.set(x, "codepointRange", js.undefined)
     
-    @scala.inline
-    def setContainer(value: GooglePrivacyDlpV2Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: GooglePrivacyDlpV2Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setContentLocations(value: js.Array[GooglePrivacyDlpV2ContentLocation]): Self = StObject.set(x, "contentLocations", value.asInstanceOf[js.Any])
+    inline def setContentLocations(value: js.Array[GooglePrivacyDlpV2ContentLocation]): Self = StObject.set(x, "contentLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentLocationsUndefined: Self = StObject.set(x, "contentLocations", js.undefined)
+    inline def setContentLocationsUndefined: Self = StObject.set(x, "contentLocations", js.undefined)
     
-    @scala.inline
-    def setContentLocationsVarargs(value: GooglePrivacyDlpV2ContentLocation*): Self = StObject.set(x, "contentLocations", js.Array(value :_*))
+    inline def setContentLocationsVarargs(value: GooglePrivacyDlpV2ContentLocation*): Self = StObject.set(x, "contentLocations", js.Array(value :_*))
   }
 }

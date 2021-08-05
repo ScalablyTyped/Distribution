@@ -41,11 +41,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def left[L, R](l: L): typings.tsmonad.eitherMod.Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(l.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
+    inline def left[L, R](l: L): typings.tsmonad.eitherMod.Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(l.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
     
-    @scala.inline
-    def right[L, R](r: R): typings.tsmonad.eitherMod.Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(r.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
+    inline def right[L, R](r: R): typings.tsmonad.eitherMod.Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(r.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
   }
   
   @JSImport("tsmonad", "MaybeType")
@@ -74,28 +72,20 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def all(t: StringDictionary[typings.tsmonad.maybeMod.Maybe_[js.Any]]): typings.tsmonad.maybeMod.Maybe_[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(t.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.maybeMod.Maybe_[StringDictionary[js.Any]]]
+    inline def all(t: StringDictionary[typings.tsmonad.maybeMod.Maybe_[js.Any]]): typings.tsmonad.maybeMod.Maybe_[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(t.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.maybeMod.Maybe_[StringDictionary[js.Any]]]
     
-    @scala.inline
-    def isJust[T](t: typings.tsmonad.maybeMod.Maybe_[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJust")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isJust[T](t: typings.tsmonad.maybeMod.Maybe_[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJust")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isNothing[T](t: typings.tsmonad.maybeMod.Maybe_[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNothing")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isNothing[T](t: typings.tsmonad.maybeMod.Maybe_[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNothing")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def just[T](t: T): typings.tsmonad.maybeMod.Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("just")(t.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.maybeMod.Maybe_[T]]
+    inline def just[T](t: T): typings.tsmonad.maybeMod.Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("just")(t.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.maybeMod.Maybe_[T]]
     
-    @scala.inline
-    def maybe[T](): typings.tsmonad.maybeMod.Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")().asInstanceOf[typings.tsmonad.maybeMod.Maybe_[T]]
-    @scala.inline
-    def maybe[T](t: T): typings.tsmonad.maybeMod.Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")(t.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.maybeMod.Maybe_[T]]
+    inline def maybe[T](): typings.tsmonad.maybeMod.Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")().asInstanceOf[typings.tsmonad.maybeMod.Maybe_[T]]
+    inline def maybe[T](t: T): typings.tsmonad.maybeMod.Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")(t.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.maybeMod.Maybe_[T]]
     
-    @scala.inline
-    def nothing[T](): typings.tsmonad.maybeMod.Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("nothing")().asInstanceOf[typings.tsmonad.maybeMod.Maybe_[T]]
+    inline def nothing[T](): typings.tsmonad.maybeMod.Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("nothing")().asInstanceOf[typings.tsmonad.maybeMod.Maybe_[T]]
     
-    @scala.inline
-    def sequence[T](t: StringDictionary[typings.tsmonad.maybeMod.Maybe_[T]]): typings.tsmonad.maybeMod.Maybe_[StringDictionary[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(t.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.maybeMod.Maybe_[StringDictionary[T]]]
+    inline def sequence[T](t: StringDictionary[typings.tsmonad.maybeMod.Maybe_[T]]): typings.tsmonad.maybeMod.Maybe_[StringDictionary[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(t.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.maybeMod.Maybe_[StringDictionary[T]]]
   }
   
   @JSImport("tsmonad", "Writer")
@@ -111,28 +101,19 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def tell[S](s: S): typings.tsmonad.writerMod.Writer_[S, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("tell")(s.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.writerMod.Writer_[S, Double]]
+    inline def tell[S](s: S): typings.tsmonad.writerMod.Writer_[S, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("tell")(s.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.writerMod.Writer_[S, Double]]
     
-    @scala.inline
-    def writer[S, T](story: js.Array[S], value: T): typings.tsmonad.writerMod.Writer_[S, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writer")(story.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.tsmonad.writerMod.Writer_[S, T]]
+    inline def writer[S, T](story: js.Array[S], value: T): typings.tsmonad.writerMod.Writer_[S, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writer")(story.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.tsmonad.writerMod.Writer_[S, T]]
   }
   
-  @scala.inline
-  def either[L, R](): typings.tsmonad.eitherMod.Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("either")().asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
-  @scala.inline
-  def either[L, R](l: L): typings.tsmonad.eitherMod.Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
-  @scala.inline
-  def either[L, R](l: L, r: R): typings.tsmonad.eitherMod.Either_[L, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
-  @scala.inline
-  def either[L, R](l: Unit, r: R): typings.tsmonad.eitherMod.Either_[L, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
+  inline def either[L, R](): typings.tsmonad.eitherMod.Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("either")().asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
+  inline def either[L, R](l: L): typings.tsmonad.eitherMod.Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
+  inline def either[L, R](l: L, r: R): typings.tsmonad.eitherMod.Either_[L, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
+  inline def either[L, R](l: Unit, r: R): typings.tsmonad.eitherMod.Either_[L, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
   
-  @scala.inline
-  def eq_(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def eq_(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def maybe[T](t: T): typings.tsmonad.maybeMod.Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")(t.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.maybeMod.Maybe_[T]]
+  inline def maybe[T](t: T): typings.tsmonad.maybeMod.Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")(t.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.maybeMod.Maybe_[T]]
   
-  @scala.inline
-  def writer[S, T](story: js.Array[S], value: T): typings.tsmonad.writerMod.Writer_[S, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writer")(story.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.tsmonad.writerMod.Writer_[S, T]]
+  inline def writer[S, T](story: js.Array[S], value: T): typings.tsmonad.writerMod.Writer_[S, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writer")(story.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.tsmonad.writerMod.Writer_[S, T]]
 }

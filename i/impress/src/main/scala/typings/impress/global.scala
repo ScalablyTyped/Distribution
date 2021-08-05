@@ -6,6 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  @scala.inline
-  def impress(): Impress = js.Dynamic.global.applyDynamic("impress")().asInstanceOf[Impress]
+  inline def impress(): Impress = js.Dynamic.global.applyDynamic("impress")().asInstanceOf[Impress]
 }

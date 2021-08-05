@@ -217,236 +217,160 @@ object Resumable {
   }
   object ConfigurationHash {
     
-    @scala.inline
-    def apply(): ConfigurationHash = {
+    inline def apply(): ConfigurationHash = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationHash]
     }
     
-    @scala.inline
-    implicit class ConfigurationHashMutableBuilder[Self <: ConfigurationHash] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationHash](x: Self) {
       
-      @scala.inline
-      def setChunkNumberParameterName(value: String): Self = StObject.set(x, "chunkNumberParameterName", value.asInstanceOf[js.Any])
+      inline def setChunkNumberParameterName(value: String): Self = StObject.set(x, "chunkNumberParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkNumberParameterNameUndefined: Self = StObject.set(x, "chunkNumberParameterName", js.undefined)
+      inline def setChunkNumberParameterNameUndefined: Self = StObject.set(x, "chunkNumberParameterName", js.undefined)
       
-      @scala.inline
-      def setChunkRetryInterval(value: Double): Self = StObject.set(x, "chunkRetryInterval", value.asInstanceOf[js.Any])
+      inline def setChunkRetryInterval(value: Double): Self = StObject.set(x, "chunkRetryInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkRetryIntervalUndefined: Self = StObject.set(x, "chunkRetryInterval", js.undefined)
+      inline def setChunkRetryIntervalUndefined: Self = StObject.set(x, "chunkRetryInterval", js.undefined)
       
-      @scala.inline
-      def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeParameterName(value: String): Self = StObject.set(x, "chunkSizeParameterName", value.asInstanceOf[js.Any])
+      inline def setChunkSizeParameterName(value: String): Self = StObject.set(x, "chunkSizeParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeParameterNameUndefined: Self = StObject.set(x, "chunkSizeParameterName", js.undefined)
+      inline def setChunkSizeParameterNameUndefined: Self = StObject.set(x, "chunkSizeParameterName", js.undefined)
       
-      @scala.inline
-      def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      @scala.inline
-      def setCurrentChunkSizeParameterName(value: String): Self = StObject.set(x, "currentChunkSizeParameterName", value.asInstanceOf[js.Any])
+      inline def setCurrentChunkSizeParameterName(value: String): Self = StObject.set(x, "currentChunkSizeParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentChunkSizeParameterNameUndefined: Self = StObject.set(x, "currentChunkSizeParameterName", js.undefined)
+      inline def setCurrentChunkSizeParameterNameUndefined: Self = StObject.set(x, "currentChunkSizeParameterName", js.undefined)
       
-      @scala.inline
-      def setFileNameParameterName(value: String): Self = StObject.set(x, "fileNameParameterName", value.asInstanceOf[js.Any])
+      inline def setFileNameParameterName(value: String): Self = StObject.set(x, "fileNameParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameParameterNameUndefined: Self = StObject.set(x, "fileNameParameterName", js.undefined)
+      inline def setFileNameParameterNameUndefined: Self = StObject.set(x, "fileNameParameterName", js.undefined)
       
-      @scala.inline
-      def setFileParameterName(value: String): Self = StObject.set(x, "fileParameterName", value.asInstanceOf[js.Any])
+      inline def setFileParameterName(value: String): Self = StObject.set(x, "fileParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileParameterNameUndefined: Self = StObject.set(x, "fileParameterName", js.undefined)
+      inline def setFileParameterNameUndefined: Self = StObject.set(x, "fileParameterName", js.undefined)
       
-      @scala.inline
-      def setFileType(value: js.Array[String]): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+      inline def setFileType(value: js.Array[String]): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileTypeErrorCallback(value: (/* file */ js.Any, /* errorCount */ js.Any) => Unit): Self = StObject.set(x, "fileTypeErrorCallback", js.Any.fromFunction2(value))
+      inline def setFileTypeErrorCallback(value: (/* file */ js.Any, /* errorCount */ js.Any) => Unit): Self = StObject.set(x, "fileTypeErrorCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFileTypeErrorCallbackUndefined: Self = StObject.set(x, "fileTypeErrorCallback", js.undefined)
+      inline def setFileTypeErrorCallbackUndefined: Self = StObject.set(x, "fileTypeErrorCallback", js.undefined)
       
-      @scala.inline
-      def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+      inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
       
-      @scala.inline
-      def setFileTypeVarargs(value: String*): Self = StObject.set(x, "fileType", js.Array(value :_*))
+      inline def setFileTypeVarargs(value: String*): Self = StObject.set(x, "fileType", js.Array(value :_*))
       
-      @scala.inline
-      def setForceChunkSize(value: Boolean): Self = StObject.set(x, "forceChunkSize", value.asInstanceOf[js.Any])
+      inline def setForceChunkSize(value: Boolean): Self = StObject.set(x, "forceChunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceChunkSizeUndefined: Self = StObject.set(x, "forceChunkSize", js.undefined)
+      inline def setForceChunkSizeUndefined: Self = StObject.set(x, "forceChunkSize", js.undefined)
       
-      @scala.inline
-      def setGenerateUniqueIdentifier(value: () => String): Self = StObject.set(x, "generateUniqueIdentifier", js.Any.fromFunction0(value))
+      inline def setGenerateUniqueIdentifier(value: () => String): Self = StObject.set(x, "generateUniqueIdentifier", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGenerateUniqueIdentifierUndefined: Self = StObject.set(x, "generateUniqueIdentifier", js.undefined)
+      inline def setGenerateUniqueIdentifierUndefined: Self = StObject.set(x, "generateUniqueIdentifier", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Object | (js.Function1[/* file */ js.Any, js.Object])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object | (js.Function1[/* file */ js.Any, js.Object])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersFunction1(value: /* file */ js.Any => js.Object): Self = StObject.set(x, "headers", js.Any.fromFunction1(value))
+      inline def setHeadersFunction1(value: /* file */ js.Any => js.Object): Self = StObject.set(x, "headers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setIdentifierParameterName(value: String): Self = StObject.set(x, "identifierParameterName", value.asInstanceOf[js.Any])
+      inline def setIdentifierParameterName(value: String): Self = StObject.set(x, "identifierParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifierParameterNameUndefined: Self = StObject.set(x, "identifierParameterName", js.undefined)
+      inline def setIdentifierParameterNameUndefined: Self = StObject.set(x, "identifierParameterName", js.undefined)
       
-      @scala.inline
-      def setMaxChunkRetries(value: Double): Self = StObject.set(x, "maxChunkRetries", value.asInstanceOf[js.Any])
+      inline def setMaxChunkRetries(value: Double): Self = StObject.set(x, "maxChunkRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxChunkRetriesUndefined: Self = StObject.set(x, "maxChunkRetries", js.undefined)
+      inline def setMaxChunkRetriesUndefined: Self = StObject.set(x, "maxChunkRetries", js.undefined)
       
-      @scala.inline
-      def setMaxFileSize(value: Boolean): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+      inline def setMaxFileSize(value: Boolean): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFileSizeErrorCallback(value: (/* file */ js.Any, /* errorCount */ js.Any) => Unit): Self = StObject.set(x, "maxFileSizeErrorCallback", js.Any.fromFunction2(value))
+      inline def setMaxFileSizeErrorCallback(value: (/* file */ js.Any, /* errorCount */ js.Any) => Unit): Self = StObject.set(x, "maxFileSizeErrorCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMaxFileSizeErrorCallbackUndefined: Self = StObject.set(x, "maxFileSizeErrorCallback", js.undefined)
+      inline def setMaxFileSizeErrorCallbackUndefined: Self = StObject.set(x, "maxFileSizeErrorCallback", js.undefined)
       
-      @scala.inline
-      def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
+      inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
       
-      @scala.inline
-      def setMaxFiles(value: Double): Self = StObject.set(x, "maxFiles", value.asInstanceOf[js.Any])
+      inline def setMaxFiles(value: Double): Self = StObject.set(x, "maxFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFilesErrorCallback(value: (/* files */ js.Any, /* errorCount */ js.Any) => Unit): Self = StObject.set(x, "maxFilesErrorCallback", js.Any.fromFunction2(value))
+      inline def setMaxFilesErrorCallback(value: (/* files */ js.Any, /* errorCount */ js.Any) => Unit): Self = StObject.set(x, "maxFilesErrorCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMaxFilesErrorCallbackUndefined: Self = StObject.set(x, "maxFilesErrorCallback", js.undefined)
+      inline def setMaxFilesErrorCallbackUndefined: Self = StObject.set(x, "maxFilesErrorCallback", js.undefined)
       
-      @scala.inline
-      def setMaxFilesUndefined: Self = StObject.set(x, "maxFiles", js.undefined)
+      inline def setMaxFilesUndefined: Self = StObject.set(x, "maxFiles", js.undefined)
       
-      @scala.inline
-      def setMethod(value: multipart | octet): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: multipart | octet): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setMinFileSize(value: Boolean): Self = StObject.set(x, "minFileSize", value.asInstanceOf[js.Any])
+      inline def setMinFileSize(value: Boolean): Self = StObject.set(x, "minFileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinFileSizeErrorCallback(value: (/* file */ js.Any, /* errorCount */ js.Any) => Unit): Self = StObject.set(x, "minFileSizeErrorCallback", js.Any.fromFunction2(value))
+      inline def setMinFileSizeErrorCallback(value: (/* file */ js.Any, /* errorCount */ js.Any) => Unit): Self = StObject.set(x, "minFileSizeErrorCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMinFileSizeErrorCallbackUndefined: Self = StObject.set(x, "minFileSizeErrorCallback", js.undefined)
+      inline def setMinFileSizeErrorCallbackUndefined: Self = StObject.set(x, "minFileSizeErrorCallback", js.undefined)
       
-      @scala.inline
-      def setMinFileSizeUndefined: Self = StObject.set(x, "minFileSize", js.undefined)
+      inline def setMinFileSizeUndefined: Self = StObject.set(x, "minFileSize", js.undefined)
       
-      @scala.inline
-      def setParameterNamespace(value: String): Self = StObject.set(x, "parameterNamespace", value.asInstanceOf[js.Any])
+      inline def setParameterNamespace(value: String): Self = StObject.set(x, "parameterNamespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterNamespaceUndefined: Self = StObject.set(x, "parameterNamespace", js.undefined)
+      inline def setParameterNamespaceUndefined: Self = StObject.set(x, "parameterNamespace", js.undefined)
       
-      @scala.inline
-      def setPreprocess(value: /* chunk */ ResumableChunk => ResumableChunk): Self = StObject.set(x, "preprocess", js.Any.fromFunction1(value))
+      inline def setPreprocess(value: /* chunk */ ResumableChunk => ResumableChunk): Self = StObject.set(x, "preprocess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
+      inline def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
       
-      @scala.inline
-      def setPrioritizeFirstAndLastChunk(value: Boolean): Self = StObject.set(x, "prioritizeFirstAndLastChunk", value.asInstanceOf[js.Any])
+      inline def setPrioritizeFirstAndLastChunk(value: Boolean): Self = StObject.set(x, "prioritizeFirstAndLastChunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrioritizeFirstAndLastChunkUndefined: Self = StObject.set(x, "prioritizeFirstAndLastChunk", js.undefined)
+      inline def setPrioritizeFirstAndLastChunkUndefined: Self = StObject.set(x, "prioritizeFirstAndLastChunk", js.undefined)
       
-      @scala.inline
-      def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setRelativePathParameterName(value: String): Self = StObject.set(x, "relativePathParameterName", value.asInstanceOf[js.Any])
+      inline def setRelativePathParameterName(value: String): Self = StObject.set(x, "relativePathParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativePathParameterNameUndefined: Self = StObject.set(x, "relativePathParameterName", js.undefined)
+      inline def setRelativePathParameterNameUndefined: Self = StObject.set(x, "relativePathParameterName", js.undefined)
       
-      @scala.inline
-      def setSetChunkTypeFromFile(value: Boolean): Self = StObject.set(x, "setChunkTypeFromFile", value.asInstanceOf[js.Any])
+      inline def setSetChunkTypeFromFile(value: Boolean): Self = StObject.set(x, "setChunkTypeFromFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetChunkTypeFromFileUndefined: Self = StObject.set(x, "setChunkTypeFromFile", js.undefined)
+      inline def setSetChunkTypeFromFileUndefined: Self = StObject.set(x, "setChunkTypeFromFile", js.undefined)
       
-      @scala.inline
-      def setSimultaneousUploads(value: Double): Self = StObject.set(x, "simultaneousUploads", value.asInstanceOf[js.Any])
+      inline def setSimultaneousUploads(value: Double): Self = StObject.set(x, "simultaneousUploads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimultaneousUploadsUndefined: Self = StObject.set(x, "simultaneousUploads", js.undefined)
+      inline def setSimultaneousUploadsUndefined: Self = StObject.set(x, "simultaneousUploads", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTestChunks(value: Boolean): Self = StObject.set(x, "testChunks", value.asInstanceOf[js.Any])
+      inline def setTestChunks(value: Boolean): Self = StObject.set(x, "testChunks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestChunksUndefined: Self = StObject.set(x, "testChunks", js.undefined)
+      inline def setTestChunksUndefined: Self = StObject.set(x, "testChunks", js.undefined)
       
-      @scala.inline
-      def setTestMethod(value: GET | POST | OPTIONS | PUT | DELETE): Self = StObject.set(x, "testMethod", value.asInstanceOf[js.Any])
+      inline def setTestMethod(value: GET | POST | OPTIONS | PUT | DELETE): Self = StObject.set(x, "testMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestMethodUndefined: Self = StObject.set(x, "testMethod", js.undefined)
+      inline def setTestMethodUndefined: Self = StObject.set(x, "testMethod", js.undefined)
       
-      @scala.inline
-      def setTotalChunksParameterName(value: String): Self = StObject.set(x, "totalChunksParameterName", value.asInstanceOf[js.Any])
+      inline def setTotalChunksParameterName(value: String): Self = StObject.set(x, "totalChunksParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalChunksParameterNameUndefined: Self = StObject.set(x, "totalChunksParameterName", js.undefined)
+      inline def setTotalChunksParameterNameUndefined: Self = StObject.set(x, "totalChunksParameterName", js.undefined)
       
-      @scala.inline
-      def setTotalSizeParameterName(value: String): Self = StObject.set(x, "totalSizeParameterName", value.asInstanceOf[js.Any])
+      inline def setTotalSizeParameterName(value: String): Self = StObject.set(x, "totalSizeParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalSizeParameterNameUndefined: Self = StObject.set(x, "totalSizeParameterName", js.undefined)
+      inline def setTotalSizeParameterNameUndefined: Self = StObject.set(x, "totalSizeParameterName", js.undefined)
       
-      @scala.inline
-      def setTypeParameterName(value: String): Self = StObject.set(x, "typeParameterName", value.asInstanceOf[js.Any])
+      inline def setTypeParameterName(value: String): Self = StObject.set(x, "typeParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeParameterNameUndefined: Self = StObject.set(x, "typeParameterName", js.undefined)
+      inline def setTypeParameterNameUndefined: Self = StObject.set(x, "typeParameterName", js.undefined)
       
-      @scala.inline
-      def setUploadMethod(value: GET | POST | OPTIONS | PUT | DELETE): Self = StObject.set(x, "uploadMethod", value.asInstanceOf[js.Any])
+      inline def setUploadMethod(value: GET | POST | OPTIONS | PUT | DELETE): Self = StObject.set(x, "uploadMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadMethodUndefined: Self = StObject.set(x, "uploadMethod", js.undefined)
+      inline def setUploadMethodUndefined: Self = StObject.set(x, "uploadMethod", js.undefined)
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+      inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     }
   }
   
@@ -716,8 +640,7 @@ object Resumable {
   }
   object ResumableFile {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: () => Unit,
       bootstrap: () => Unit,
       cancel: () => Unit,
@@ -737,53 +660,37 @@ object Resumable {
       __obj.asInstanceOf[ResumableFile]
     }
     
-    @scala.inline
-    implicit class ResumableFileMutableBuilder[Self <: ResumableFile] (val x: Self) extends AnyVal {
+    extension [Self <: ResumableFile](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBootstrap(value: () => Unit): Self = StObject.set(x, "bootstrap", js.Any.fromFunction0(value))
+      inline def setBootstrap(value: () => Unit): Self = StObject.set(x, "bootstrap", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setChunks(value: js.Array[ResumableChunk]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
+      inline def setChunks(value: js.Array[ResumableChunk]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunksVarargs(value: ResumableChunk*): Self = StObject.set(x, "chunks", js.Array(value :_*))
+      inline def setChunksVarargs(value: ResumableChunk*): Self = StObject.set(x, "chunks", js.Array(value :_*))
       
-      @scala.inline
-      def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsComplete(value: () => Boolean): Self = StObject.set(x, "isComplete", js.Any.fromFunction0(value))
+      inline def setIsComplete(value: () => Boolean): Self = StObject.set(x, "isComplete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsUploading(value: () => Boolean): Self = StObject.set(x, "isUploading", js.Any.fromFunction0(value))
+      inline def setIsUploading(value: () => Boolean): Self = StObject.set(x, "isUploading", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProgress(value: Boolean => Double): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
+      inline def setProgress(value: Boolean => Double): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+      inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResumableObj(value: typings.resumablejs.Resumable.Resumable): Self = StObject.set(x, "resumableObj", value.asInstanceOf[js.Any])
+      inline def setResumableObj(value: typings.resumablejs.Resumable.Resumable): Self = StObject.set(x, "resumableObj", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
+      inline def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueIdentifier(value: String): Self = StObject.set(x, "uniqueIdentifier", value.asInstanceOf[js.Any])
+      inline def setUniqueIdentifier(value: String): Self = StObject.set(x, "uniqueIdentifier", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -8,21 +8,17 @@ object typescriptCompareStrings {
   
   @js.native
   sealed trait broaderLeft extends StObject
-  @scala.inline
-  def broaderLeft: broaderLeft = "broaderLeft".asInstanceOf[broaderLeft]
+  inline def broaderLeft: broaderLeft = "broaderLeft".asInstanceOf[broaderLeft]
   
   @js.native
   sealed trait broaderRight extends StObject
-  @scala.inline
-  def broaderRight: broaderRight = "broaderRight".asInstanceOf[broaderRight]
+  inline def broaderRight: broaderRight = "broaderRight".asInstanceOf[broaderRight]
   
   @js.native
   sealed trait equal extends StObject
-  @scala.inline
-  def equal: equal = "equal".asInstanceOf[equal]
+  inline def equal: equal = "equal".asInstanceOf[equal]
   
   @js.native
   sealed trait mismatch extends StObject
-  @scala.inline
-  def mismatch: mismatch = "mismatch".asInstanceOf[mismatch]
+  inline def mismatch: mismatch = "mismatch".asInstanceOf[mismatch]
 }

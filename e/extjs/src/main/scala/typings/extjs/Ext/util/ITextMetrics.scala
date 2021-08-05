@@ -42,49 +42,35 @@ trait ITextMetrics
 }
 object ITextMetrics {
   
-  @scala.inline
-  def apply(): ITextMetrics = {
+  inline def apply(): ITextMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITextMetrics]
   }
   
-  @scala.inline
-  implicit class ITextMetricsMutableBuilder[Self <: ITextMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: ITextMetrics](x: Self) {
     
-    @scala.inline
-    def setBind(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
+    inline def setBind(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
+    inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setGetHeight(value: /* text */ js.UndefOr[String] => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction1(value))
+    inline def setGetHeight(value: /* text */ js.UndefOr[String] => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHeightUndefined: Self = StObject.set(x, "getHeight", js.undefined)
+    inline def setGetHeightUndefined: Self = StObject.set(x, "getHeight", js.undefined)
     
-    @scala.inline
-    def setGetSize(value: /* text */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
+    inline def setGetSize(value: /* text */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSizeUndefined: Self = StObject.set(x, "getSize", js.undefined)
+    inline def setGetSizeUndefined: Self = StObject.set(x, "getSize", js.undefined)
     
-    @scala.inline
-    def setGetWidth(value: /* text */ js.UndefOr[String] => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction1(value))
+    inline def setGetWidth(value: /* text */ js.UndefOr[String] => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWidthUndefined: Self = StObject.set(x, "getWidth", js.undefined)
+    inline def setGetWidthUndefined: Self = StObject.set(x, "getWidth", js.undefined)
     
-    @scala.inline
-    def setSetFixedWidth(value: /* width */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setFixedWidth", js.Any.fromFunction1(value))
+    inline def setSetFixedWidth(value: /* width */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setFixedWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFixedWidthUndefined: Self = StObject.set(x, "setFixedWidth", js.undefined)
+    inline def setSetFixedWidthUndefined: Self = StObject.set(x, "setFixedWidth", js.undefined)
   }
 }

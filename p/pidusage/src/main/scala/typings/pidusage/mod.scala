@@ -8,41 +8,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(pid: String): js.Promise[Stat] = ^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stat]]
-  @scala.inline
-  def apply(pid: String, callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(pid: String, options: StringDictionary[js.Any]): js.Promise[Stat] = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stat]]
-  @scala.inline
-  def apply(
+  inline def apply(pid: String): js.Promise[Stat] = ^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stat]]
+  inline def apply(pid: String, callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(pid: String, options: StringDictionary[js.Any]): js.Promise[Stat] = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stat]]
+  inline def apply(
     pid: String,
     options: StringDictionary[js.Any],
     callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(pid: Double): js.Promise[Stat] = ^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stat]]
-  @scala.inline
-  def apply(pid: Double, callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(pid: Double, options: StringDictionary[js.Any]): js.Promise[Stat] = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stat]]
-  @scala.inline
-  def apply(
+  inline def apply(pid: Double): js.Promise[Stat] = ^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stat]]
+  inline def apply(pid: Double, callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(pid: Double, options: StringDictionary[js.Any]): js.Promise[Stat] = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stat]]
+  inline def apply(
     pid: Double,
     options: StringDictionary[js.Any],
     callback: js.Function2[/* err */ Error | Null, /* stats */ Stat, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(pids: js.Array[Double | String]): js.Promise[StringDictionary[Stat]] = ^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StringDictionary[Stat]]]
-  @scala.inline
-  def apply(
+  inline def apply(pids: js.Array[Double | String]): js.Promise[StringDictionary[Stat]] = ^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StringDictionary[Stat]]]
+  inline def apply(
     pids: js.Array[Double | String],
     callback: js.Function2[/* err */ Error | Null, /* stats */ StringDictionary[Stat], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(pids: js.Array[Double | String], options: StringDictionary[js.Any]): js.Promise[StringDictionary[Stat]] = (^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StringDictionary[Stat]]]
-  @scala.inline
-  def apply(
+  inline def apply(pids: js.Array[Double | String], options: StringDictionary[js.Any]): js.Promise[StringDictionary[Stat]] = (^.asInstanceOf[js.Dynamic].apply(pids.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StringDictionary[Stat]]]
+  inline def apply(
     pids: js.Array[Double | String],
     options: StringDictionary[js.Any],
     callback: js.Function2[/* err */ Error | Null, /* stats */ StringDictionary[Stat], Unit]
@@ -57,8 +45,7 @@ object mod {
     * Indeed, we're registering an interval to free up the in-memory metrics.
     * By calling this, it will clear this interval and all delete all in-memory data
     */
-  @scala.inline
-  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+  inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
   trait Stat extends StObject {
     
@@ -99,8 +86,7 @@ object mod {
   }
   object Stat {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cpu: Double,
       ctime: Double,
       elapsed: Double,
@@ -113,29 +99,21 @@ object mod {
       __obj.asInstanceOf[Stat]
     }
     
-    @scala.inline
-    implicit class StatMutableBuilder[Self <: Stat] (val x: Self) extends AnyVal {
+    extension [Self <: Stat](x: Self) {
       
-      @scala.inline
-      def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+      inline def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
+      inline def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPpid(value: Double): Self = StObject.set(x, "ppid", value.asInstanceOf[js.Any])
+      inline def setPpid(value: Double): Self = StObject.set(x, "ppid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   

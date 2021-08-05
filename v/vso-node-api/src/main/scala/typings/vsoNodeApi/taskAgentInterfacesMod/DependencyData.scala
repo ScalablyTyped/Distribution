@@ -13,22 +13,17 @@ trait DependencyData extends StObject {
 }
 object DependencyData {
   
-  @scala.inline
-  def apply(input: String, map: js.Array[KeyString]): DependencyData = {
+  inline def apply(input: String, map: js.Array[KeyString]): DependencyData = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
     __obj.asInstanceOf[DependencyData]
   }
   
-  @scala.inline
-  implicit class DependencyDataMutableBuilder[Self <: DependencyData] (val x: Self) extends AnyVal {
+  extension [Self <: DependencyData](x: Self) {
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: js.Array[KeyString]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: js.Array[KeyString]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapVarargs(value: KeyString*): Self = StObject.set(x, "map", js.Array(value :_*))
+    inline def setMapVarargs(value: KeyString*): Self = StObject.set(x, "map", js.Array(value :_*))
   }
 }

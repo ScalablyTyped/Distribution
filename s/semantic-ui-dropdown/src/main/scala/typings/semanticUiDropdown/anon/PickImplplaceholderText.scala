@@ -11,16 +11,13 @@ trait PickImplplaceholderText extends StObject {
 }
 object PickImplplaceholderText {
   
-  @scala.inline
-  def apply(placeholderText: String): PickImplplaceholderText = {
+  inline def apply(placeholderText: String): PickImplplaceholderText = {
     val __obj = js.Dynamic.literal(placeholderText = placeholderText.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplplaceholderText]
   }
   
-  @scala.inline
-  implicit class PickImplplaceholderTextMutableBuilder[Self <: PickImplplaceholderText] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplplaceholderText](x: Self) {
     
-    @scala.inline
-    def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
+    inline def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
   }
 }

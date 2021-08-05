@@ -17,25 +17,19 @@ trait ChannelAssignedTargetingOptionDetails extends StObject {
 }
 object ChannelAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): ChannelAssignedTargetingOptionDetails = {
+  inline def apply(): ChannelAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class ChannelAssignedTargetingOptionDetailsMutableBuilder[Self <: ChannelAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+    inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
+    inline def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
   }
 }

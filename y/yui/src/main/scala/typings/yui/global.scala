@@ -22,6 +22,5 @@ object global {
   @JSGlobal("YUI")
   @js.native
   def YUI: typings.yui.YUI = js.native
-  @scala.inline
-  def YUI_=(x: YUI): Unit = js.Dynamic.global.updateDynamic("YUI")(x.asInstanceOf[js.Any])
+  inline def YUI_=(x: YUI): Unit = js.Dynamic.global.updateDynamic("YUI")(x.asInstanceOf[js.Any])
 }

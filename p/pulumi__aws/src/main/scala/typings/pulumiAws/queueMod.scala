@@ -79,21 +79,16 @@ object queueMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Queue]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: QueueState): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Queue]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: QueueState, opts: CustomResourceOptions): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue]
+    inline def get(name: String, id: Input[ID]): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Queue]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue]
+    inline def get(name: String, id: Input[ID], state: QueueState): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Queue]
+    inline def get(name: String, id: Input[ID], state: QueueState, opts: CustomResourceOptions): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue]
     
     /**
       * Returns true if the given object is an instance of Queue.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediaconvert/queue.Queue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mediaconvert/queue.Queue */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediaconvert/queue.Queue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mediaconvert/queue.Queue */ Boolean]
   }
   
   trait QueueArgs extends StObject {
@@ -130,50 +125,36 @@ object queueMod {
   }
   object QueueArgs {
     
-    @scala.inline
-    def apply(): QueueArgs = {
+    inline def apply(): QueueArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueueArgs]
     }
     
-    @scala.inline
-    implicit class QueueArgsMutableBuilder[Self <: QueueArgs] (val x: Self) extends AnyVal {
+    extension [Self <: QueueArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPricingPlan(value: Input[String]): Self = StObject.set(x, "pricingPlan", value.asInstanceOf[js.Any])
+      inline def setPricingPlan(value: Input[String]): Self = StObject.set(x, "pricingPlan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPricingPlanUndefined: Self = StObject.set(x, "pricingPlan", js.undefined)
+      inline def setPricingPlanUndefined: Self = StObject.set(x, "pricingPlan", js.undefined)
       
-      @scala.inline
-      def setReservationPlanSettings(value: Input[typings.pulumiAws.inputMod.mediaconvert.QueueReservationPlanSettings]): Self = StObject.set(x, "reservationPlanSettings", value.asInstanceOf[js.Any])
+      inline def setReservationPlanSettings(value: Input[typings.pulumiAws.inputMod.mediaconvert.QueueReservationPlanSettings]): Self = StObject.set(x, "reservationPlanSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservationPlanSettingsUndefined: Self = StObject.set(x, "reservationPlanSettings", js.undefined)
+      inline def setReservationPlanSettingsUndefined: Self = StObject.set(x, "reservationPlanSettings", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -216,56 +197,40 @@ object queueMod {
   }
   object QueueState {
     
-    @scala.inline
-    def apply(): QueueState = {
+    inline def apply(): QueueState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueueState]
     }
     
-    @scala.inline
-    implicit class QueueStateMutableBuilder[Self <: QueueState] (val x: Self) extends AnyVal {
+    extension [Self <: QueueState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPricingPlan(value: Input[String]): Self = StObject.set(x, "pricingPlan", value.asInstanceOf[js.Any])
+      inline def setPricingPlan(value: Input[String]): Self = StObject.set(x, "pricingPlan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPricingPlanUndefined: Self = StObject.set(x, "pricingPlan", js.undefined)
+      inline def setPricingPlanUndefined: Self = StObject.set(x, "pricingPlan", js.undefined)
       
-      @scala.inline
-      def setReservationPlanSettings(value: Input[typings.pulumiAws.inputMod.mediaconvert.QueueReservationPlanSettings]): Self = StObject.set(x, "reservationPlanSettings", value.asInstanceOf[js.Any])
+      inline def setReservationPlanSettings(value: Input[typings.pulumiAws.inputMod.mediaconvert.QueueReservationPlanSettings]): Self = StObject.set(x, "reservationPlanSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservationPlanSettingsUndefined: Self = StObject.set(x, "reservationPlanSettings", js.undefined)
+      inline def setReservationPlanSettingsUndefined: Self = StObject.set(x, "reservationPlanSettings", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

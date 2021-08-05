@@ -20,37 +20,27 @@ trait DeployedFleetStatus extends StObject {
 }
 object DeployedFleetStatus {
   
-  @scala.inline
-  def apply(): DeployedFleetStatus = {
+  inline def apply(): DeployedFleetStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeployedFleetStatus]
   }
   
-  @scala.inline
-  implicit class DeployedFleetStatusMutableBuilder[Self <: DeployedFleetStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DeployedFleetStatus](x: Self) {
     
-    @scala.inline
-    def setAllocatedReplicas(value: String): Self = StObject.set(x, "allocatedReplicas", value.asInstanceOf[js.Any])
+    inline def setAllocatedReplicas(value: String): Self = StObject.set(x, "allocatedReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocatedReplicasUndefined: Self = StObject.set(x, "allocatedReplicas", js.undefined)
+    inline def setAllocatedReplicasUndefined: Self = StObject.set(x, "allocatedReplicas", js.undefined)
     
-    @scala.inline
-    def setReadyReplicas(value: String): Self = StObject.set(x, "readyReplicas", value.asInstanceOf[js.Any])
+    inline def setReadyReplicas(value: String): Self = StObject.set(x, "readyReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyReplicasUndefined: Self = StObject.set(x, "readyReplicas", js.undefined)
+    inline def setReadyReplicasUndefined: Self = StObject.set(x, "readyReplicas", js.undefined)
     
-    @scala.inline
-    def setReplicas(value: String): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+    inline def setReplicas(value: String): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
+    inline def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
-    @scala.inline
-    def setReservedReplicas(value: String): Self = StObject.set(x, "reservedReplicas", value.asInstanceOf[js.Any])
+    inline def setReservedReplicas(value: String): Self = StObject.set(x, "reservedReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedReplicasUndefined: Self = StObject.set(x, "reservedReplicas", js.undefined)
+    inline def setReservedReplicasUndefined: Self = StObject.set(x, "reservedReplicas", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object shimmerLineStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IShimmerLineStyleProps): IShimmerLineStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IShimmerLineStyles]
+  inline def getStyles(props: IShimmerLineStyleProps): IShimmerLineStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IShimmerLineStyles]
 }

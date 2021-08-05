@@ -31,8 +31,7 @@ object GridLayout {
     *
     * @returns The cell config for the widget.
     */
-  @scala.inline
-  def getCellConfig(widget: typings.luminoWidgets.widgetMod.Widget): ICellConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellConfig")(widget.asInstanceOf[js.Any]).asInstanceOf[ICellConfig]
+  inline def getCellConfig(widget: typings.luminoWidgets.widgetMod.Widget): ICellConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellConfig")(widget.asInstanceOf[js.Any]).asInstanceOf[ICellConfig]
   
   /**
     * Set the cell config for the given widget.
@@ -41,6 +40,5 @@ object GridLayout {
     *
     * @param value - The value for the cell config.
     */
-  @scala.inline
-  def setCellConfig(widget: typings.luminoWidgets.widgetMod.Widget, value: PartialICellConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCellConfig")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setCellConfig(widget: typings.luminoWidgets.widgetMod.Widget, value: PartialICellConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCellConfig")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

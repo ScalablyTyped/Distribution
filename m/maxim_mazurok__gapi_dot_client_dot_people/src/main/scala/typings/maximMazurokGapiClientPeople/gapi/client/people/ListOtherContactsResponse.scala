@@ -20,34 +20,25 @@ trait ListOtherContactsResponse extends StObject {
 }
 object ListOtherContactsResponse {
   
-  @scala.inline
-  def apply(): ListOtherContactsResponse = {
+  inline def apply(): ListOtherContactsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOtherContactsResponse]
   }
   
-  @scala.inline
-  implicit class ListOtherContactsResponseMutableBuilder[Self <: ListOtherContactsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListOtherContactsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setNextSyncToken(value: String): Self = StObject.set(x, "nextSyncToken", value.asInstanceOf[js.Any])
+    inline def setNextSyncToken(value: String): Self = StObject.set(x, "nextSyncToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextSyncTokenUndefined: Self = StObject.set(x, "nextSyncToken", js.undefined)
+    inline def setNextSyncTokenUndefined: Self = StObject.set(x, "nextSyncToken", js.undefined)
     
-    @scala.inline
-    def setOtherContacts(value: js.Array[Person]): Self = StObject.set(x, "otherContacts", value.asInstanceOf[js.Any])
+    inline def setOtherContacts(value: js.Array[Person]): Self = StObject.set(x, "otherContacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherContactsUndefined: Self = StObject.set(x, "otherContacts", js.undefined)
+    inline def setOtherContactsUndefined: Self = StObject.set(x, "otherContacts", js.undefined)
     
-    @scala.inline
-    def setOtherContactsVarargs(value: Person*): Self = StObject.set(x, "otherContacts", js.Array(value :_*))
+    inline def setOtherContactsVarargs(value: Person*): Self = StObject.set(x, "otherContacts", js.Array(value :_*))
   }
 }

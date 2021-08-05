@@ -22,17 +22,14 @@ object Rx {
   }
   object IDisposable {
     
-    @scala.inline
-    def apply(dispose: () => Unit): IDisposable = {
+    inline def apply(dispose: () => Unit): IDisposable = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
       __obj.asInstanceOf[IDisposable]
     }
     
-    @scala.inline
-    implicit class IDisposableMutableBuilder[Self <: IDisposable] (val x: Self) extends AnyVal {
+    extension [Self <: IDisposable](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
   
@@ -59,8 +56,7 @@ object Rx {
   }
   object IScheduler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `catch`: js.Function1[/* exception */ js.Any, Boolean] => IScheduler,
       catchException: js.Function1[/* exception */ js.Any, Boolean] => IScheduler
     ): IScheduler = {
@@ -69,14 +65,11 @@ object Rx {
       __obj.asInstanceOf[IScheduler]
     }
     
-    @scala.inline
-    implicit class ISchedulerMutableBuilder[Self <: IScheduler] (val x: Self) extends AnyVal {
+    extension [Self <: IScheduler](x: Self) {
       
-      @scala.inline
-      def setCatch(value: js.Function1[/* exception */ js.Any, Boolean] => IScheduler): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
+      inline def setCatch(value: js.Function1[/* exception */ js.Any, Boolean] => IScheduler): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCatchException(value: js.Function1[/* exception */ js.Any, Boolean] => IScheduler): Self = StObject.set(x, "catchException", js.Any.fromFunction1(value))
+      inline def setCatchException(value: js.Function1[/* exception */ js.Any, Boolean] => IScheduler): Self = StObject.set(x, "catchException", js.Any.fromFunction1(value))
     }
   }
   
@@ -179,17 +172,14 @@ object Rx {
   }
   object Observer {
     
-    @scala.inline
-    def apply[T](checked: () => Observer[js.Any]): Observer[T] = {
+    inline def apply[T](checked: () => Observer[js.Any]): Observer[T] = {
       val __obj = js.Dynamic.literal(checked = js.Any.fromFunction0(checked))
       __obj.asInstanceOf[Observer[T]]
     }
     
-    @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
+    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
       
-      @scala.inline
-      def setChecked(value: () => Observer[js.Any]): Self = StObject.set(x, "checked", js.Any.fromFunction0(value))
+      inline def setChecked(value: () => Observer[js.Any]): Self = StObject.set(x, "checked", js.Any.fromFunction0(value))
     }
   }
   
@@ -204,17 +194,14 @@ object Rx {
   }
   object ObserverStatic {
     
-    @scala.inline
-    def apply(notifyOn: IScheduler => Observer[js.Any]): ObserverStatic = {
+    inline def apply(notifyOn: IScheduler => Observer[js.Any]): ObserverStatic = {
       val __obj = js.Dynamic.literal(notifyOn = js.Any.fromFunction1(notifyOn))
       __obj.asInstanceOf[ObserverStatic]
     }
     
-    @scala.inline
-    implicit class ObserverStaticMutableBuilder[Self <: ObserverStatic] (val x: Self) extends AnyVal {
+    extension [Self <: ObserverStatic](x: Self) {
       
-      @scala.inline
-      def setNotifyOn(value: IScheduler => Observer[js.Any]): Self = StObject.set(x, "notifyOn", js.Any.fromFunction1(value))
+      inline def setNotifyOn(value: IScheduler => Observer[js.Any]): Self = StObject.set(x, "notifyOn", js.Any.fromFunction1(value))
     }
   }
 }

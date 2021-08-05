@@ -9,8 +9,7 @@ trait CameraSettingsActivatedEventArgs
      with ICameraSettingsActivatedEventArgs
 object CameraSettingsActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen,

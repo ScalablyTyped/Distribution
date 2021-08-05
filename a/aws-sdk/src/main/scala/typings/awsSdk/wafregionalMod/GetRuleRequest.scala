@@ -13,16 +13,13 @@ trait GetRuleRequest extends StObject {
 }
 object GetRuleRequest {
   
-  @scala.inline
-  def apply(RuleId: ResourceId): GetRuleRequest = {
+  inline def apply(RuleId: ResourceId): GetRuleRequest = {
     val __obj = js.Dynamic.literal(RuleId = RuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRuleRequest]
   }
   
-  @scala.inline
-  implicit class GetRuleRequestMutableBuilder[Self <: GetRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRuleRequest](x: Self) {
     
-    @scala.inline
-    def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
   }
 }

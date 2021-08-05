@@ -32,18 +32,15 @@ object customers {
   }
   object IBankAccountSourceListOptions {
     
-    @scala.inline
-    def apply(): IBankAccountSourceListOptions = {
+    inline def apply(): IBankAccountSourceListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")("bank_account")
       __obj.asInstanceOf[IBankAccountSourceListOptions]
     }
     
-    @scala.inline
-    implicit class IBankAccountSourceListOptionsMutableBuilder[Self <: IBankAccountSourceListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IBankAccountSourceListOptions](x: Self) {
       
-      @scala.inline
-      def setObject(value: bank_account): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: bank_account): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,18 +52,15 @@ object customers {
   }
   object ICardSourceListOptions {
     
-    @scala.inline
-    def apply(): ICardSourceListOptions = {
+    inline def apply(): ICardSourceListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")("card")
       __obj.asInstanceOf[ICardSourceListOptions]
     }
     
-    @scala.inline
-    implicit class ICardSourceListOptionsMutableBuilder[Self <: ICardSourceListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICardSourceListOptions](x: Self) {
       
-      @scala.inline
-      def setObject(value: card): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: card): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,8 +191,7 @@ object customers {
   }
   object ICustomer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       created: Double,
       delinquent: Boolean,
       id: String,
@@ -211,155 +204,105 @@ object customers {
       __obj.asInstanceOf[ICustomer]
     }
     
-    @scala.inline
-    implicit class ICustomerMutableBuilder[Self <: ICustomer] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomer](x: Self) {
       
-      @scala.inline
-      def setAccount_balance(value: Double): Self = StObject.set(x, "account_balance", value.asInstanceOf[js.Any])
+      inline def setAccount_balance(value: Double): Self = StObject.set(x, "account_balance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccount_balanceUndefined: Self = StObject.set(x, "account_balance", js.undefined)
+      inline def setAccount_balanceUndefined: Self = StObject.set(x, "account_balance", js.undefined)
       
-      @scala.inline
-      def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressNull: Self = StObject.set(x, "address", null)
+      inline def setAddressNull: Self = StObject.set(x, "address", null)
       
-      @scala.inline
-      def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
+      inline def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalanceUndefined: Self = StObject.set(x, "balance", js.undefined)
+      inline def setBalanceUndefined: Self = StObject.set(x, "balance", js.undefined)
       
-      @scala.inline
-      def setCards(value: CustomerCards): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
+      inline def setCards(value: CustomerCards): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardsUndefined: Self = StObject.set(x, "cards", js.undefined)
+      inline def setCardsUndefined: Self = StObject.set(x, "cards", js.undefined)
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyNull: Self = StObject.set(x, "currency", null)
+      inline def setCurrencyNull: Self = StObject.set(x, "currency", null)
       
-      @scala.inline
-      def setDefault_source(value: String | IStripeSource): Self = StObject.set(x, "default_source", value.asInstanceOf[js.Any])
+      inline def setDefault_source(value: String | IStripeSource): Self = StObject.set(x, "default_source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_sourceNull: Self = StObject.set(x, "default_source", null)
+      inline def setDefault_sourceNull: Self = StObject.set(x, "default_source", null)
       
-      @scala.inline
-      def setDelinquent(value: Boolean): Self = StObject.set(x, "delinquent", value.asInstanceOf[js.Any])
+      inline def setDelinquent(value: Boolean): Self = StObject.set(x, "delinquent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDiscount(value: IDiscount): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
+      inline def setDiscount(value: IDiscount): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiscountUndefined: Self = StObject.set(x, "discount", js.undefined)
+      inline def setDiscountUndefined: Self = StObject.set(x, "discount", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setInvoice_prefix(value: String): Self = StObject.set(x, "invoice_prefix", value.asInstanceOf[js.Any])
+      inline def setInvoice_prefix(value: String): Self = StObject.set(x, "invoice_prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvoice_prefixUndefined: Self = StObject.set(x, "invoice_prefix", js.undefined)
+      inline def setInvoice_prefixUndefined: Self = StObject.set(x, "invoice_prefix", js.undefined)
       
-      @scala.inline
-      def setInvoice_settings(value: ICustomerInvoiceSettings): Self = StObject.set(x, "invoice_settings", value.asInstanceOf[js.Any])
+      inline def setInvoice_settings(value: ICustomerInvoiceSettings): Self = StObject.set(x, "invoice_settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvoice_settingsNull: Self = StObject.set(x, "invoice_settings", null)
+      inline def setInvoice_settingsNull: Self = StObject.set(x, "invoice_settings", null)
       
-      @scala.inline
-      def setInvoice_settingsUndefined: Self = StObject.set(x, "invoice_settings", js.undefined)
+      inline def setInvoice_settingsUndefined: Self = StObject.set(x, "invoice_settings", js.undefined)
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setObject(value: customer): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: customer): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+      inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
       
-      @scala.inline
-      def setPreferred_locales(value: js.Array[String]): Self = StObject.set(x, "preferred_locales", value.asInstanceOf[js.Any])
+      inline def setPreferred_locales(value: js.Array[String]): Self = StObject.set(x, "preferred_locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferred_localesUndefined: Self = StObject.set(x, "preferred_locales", js.undefined)
+      inline def setPreferred_localesUndefined: Self = StObject.set(x, "preferred_locales", js.undefined)
       
-      @scala.inline
-      def setPreferred_localesVarargs(value: String*): Self = StObject.set(x, "preferred_locales", js.Array(value :_*))
+      inline def setPreferred_localesVarargs(value: String*): Self = StObject.set(x, "preferred_locales", js.Array(value :_*))
       
-      @scala.inline
-      def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+      inline def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippingNull: Self = StObject.set(x, "shipping", null)
+      inline def setShippingNull: Self = StObject.set(x, "shipping", null)
       
-      @scala.inline
-      def setSources(value: IList[IStripeSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: IList[IStripeSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+      inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
       
-      @scala.inline
-      def setSubscriptions(value: ICustomerSubscriptions): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+      inline def setSubscriptions(value: ICustomerSubscriptions): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_exempt(value: none | exempt | reverse): Self = StObject.set(x, "tax_exempt", value.asInstanceOf[js.Any])
+      inline def setTax_exempt(value: none | exempt | reverse): Self = StObject.set(x, "tax_exempt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_exemptUndefined: Self = StObject.set(x, "tax_exempt", js.undefined)
+      inline def setTax_exemptUndefined: Self = StObject.set(x, "tax_exempt", js.undefined)
       
-      @scala.inline
-      def setTax_ids(value: IList[ITaxId]): Self = StObject.set(x, "tax_ids", value.asInstanceOf[js.Any])
+      inline def setTax_ids(value: IList[ITaxId]): Self = StObject.set(x, "tax_ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_idsUndefined: Self = StObject.set(x, "tax_ids", js.undefined)
+      inline def setTax_idsUndefined: Self = StObject.set(x, "tax_ids", js.undefined)
       
-      @scala.inline
-      def setTax_info(value: js.Any): Self = StObject.set(x, "tax_info", value.asInstanceOf[js.Any])
+      inline def setTax_info(value: js.Any): Self = StObject.set(x, "tax_info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_infoUndefined: Self = StObject.set(x, "tax_info", js.undefined)
+      inline def setTax_infoUndefined: Self = StObject.set(x, "tax_info", js.undefined)
       
-      @scala.inline
-      def setTax_info_verification(value: js.Any): Self = StObject.set(x, "tax_info_verification", value.asInstanceOf[js.Any])
+      inline def setTax_info_verification(value: js.Any): Self = StObject.set(x, "tax_info_verification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_info_verificationUndefined: Self = StObject.set(x, "tax_info_verification", js.undefined)
+      inline def setTax_info_verificationUndefined: Self = StObject.set(x, "tax_info_verification", js.undefined)
     }
   }
   
@@ -372,17 +315,14 @@ object customers {
   }
   object ICustomerBankAccountSourceCreationOptions {
     
-    @scala.inline
-    def apply(source: ISourceCreationOptions): ICustomerBankAccountSourceCreationOptions = {
+    inline def apply(source: ISourceCreationOptions): ICustomerBankAccountSourceCreationOptions = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICustomerBankAccountSourceCreationOptions]
     }
     
-    @scala.inline
-    implicit class ICustomerBankAccountSourceCreationOptionsMutableBuilder[Self <: ICustomerBankAccountSourceCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomerBankAccountSourceCreationOptions](x: Self) {
       
-      @scala.inline
-      def setSource(value: ISourceCreationOptions): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: ISourceCreationOptions): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -395,17 +335,14 @@ object customers {
   }
   object ICustomerCardSourceCreationOptions {
     
-    @scala.inline
-    def apply(source: ICardSourceCreationOptions): ICustomerCardSourceCreationOptions = {
+    inline def apply(source: ICardSourceCreationOptions): ICustomerCardSourceCreationOptions = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICustomerCardSourceCreationOptions]
     }
     
-    @scala.inline
-    implicit class ICustomerCardSourceCreationOptionsMutableBuilder[Self <: ICustomerCardSourceCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomerCardSourceCreationOptions](x: Self) {
       
-      @scala.inline
-      def setSource(value: ICardSourceCreationOptions): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: ICardSourceCreationOptions): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -531,149 +468,102 @@ object customers {
   }
   object ICustomerCreationOptions {
     
-    @scala.inline
-    def apply(): ICustomerCreationOptions = {
+    inline def apply(): ICustomerCreationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICustomerCreationOptions]
     }
     
-    @scala.inline
-    implicit class ICustomerCreationOptionsMutableBuilder[Self <: ICustomerCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomerCreationOptions](x: Self) {
       
-      @scala.inline
-      def setAccount_balance(value: Double): Self = StObject.set(x, "account_balance", value.asInstanceOf[js.Any])
+      inline def setAccount_balance(value: Double): Self = StObject.set(x, "account_balance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccount_balanceUndefined: Self = StObject.set(x, "account_balance", js.undefined)
+      inline def setAccount_balanceUndefined: Self = StObject.set(x, "account_balance", js.undefined)
       
-      @scala.inline
-      def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
+      inline def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalanceUndefined: Self = StObject.set(x, "balance", js.undefined)
+      inline def setBalanceUndefined: Self = StObject.set(x, "balance", js.undefined)
       
-      @scala.inline
-      def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
+      inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
+      inline def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setInvoice_prefix(value: String): Self = StObject.set(x, "invoice_prefix", value.asInstanceOf[js.Any])
+      inline def setInvoice_prefix(value: String): Self = StObject.set(x, "invoice_prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvoice_prefixUndefined: Self = StObject.set(x, "invoice_prefix", js.undefined)
+      inline def setInvoice_prefixUndefined: Self = StObject.set(x, "invoice_prefix", js.undefined)
       
-      @scala.inline
-      def setInvoice_settings(value: ICustomerInvoiceSettings): Self = StObject.set(x, "invoice_settings", value.asInstanceOf[js.Any])
+      inline def setInvoice_settings(value: ICustomerInvoiceSettings): Self = StObject.set(x, "invoice_settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvoice_settingsNull: Self = StObject.set(x, "invoice_settings", null)
+      inline def setInvoice_settingsNull: Self = StObject.set(x, "invoice_settings", null)
       
-      @scala.inline
-      def setInvoice_settingsUndefined: Self = StObject.set(x, "invoice_settings", js.undefined)
+      inline def setInvoice_settingsUndefined: Self = StObject.set(x, "invoice_settings", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+      inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+      inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+      inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
       
-      @scala.inline
-      def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
+      inline def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
       
-      @scala.inline
-      def setPreferred_locales(value: js.Array[String]): Self = StObject.set(x, "preferred_locales", value.asInstanceOf[js.Any])
+      inline def setPreferred_locales(value: js.Array[String]): Self = StObject.set(x, "preferred_locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferred_localesUndefined: Self = StObject.set(x, "preferred_locales", js.undefined)
+      inline def setPreferred_localesUndefined: Self = StObject.set(x, "preferred_locales", js.undefined)
       
-      @scala.inline
-      def setPreferred_localesVarargs(value: String*): Self = StObject.set(x, "preferred_locales", js.Array(value :_*))
+      inline def setPreferred_localesVarargs(value: String*): Self = StObject.set(x, "preferred_locales", js.Array(value :_*))
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+      inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
       
-      @scala.inline
-      def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+      inline def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
+      inline def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
       
-      @scala.inline
-      def setSource(value: String | ICardSourceCreationOptionsExtended): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String | ICardSourceCreationOptionsExtended): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setTax_exempt(value: none | exempt | reverse): Self = StObject.set(x, "tax_exempt", value.asInstanceOf[js.Any])
+      inline def setTax_exempt(value: none | exempt | reverse): Self = StObject.set(x, "tax_exempt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_exemptUndefined: Self = StObject.set(x, "tax_exempt", js.undefined)
+      inline def setTax_exemptUndefined: Self = StObject.set(x, "tax_exempt", js.undefined)
       
-      @scala.inline
-      def setTax_id_data(value: js.Array[Type]): Self = StObject.set(x, "tax_id_data", value.asInstanceOf[js.Any])
+      inline def setTax_id_data(value: js.Array[Type]): Self = StObject.set(x, "tax_id_data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_id_dataUndefined: Self = StObject.set(x, "tax_id_data", js.undefined)
+      inline def setTax_id_dataUndefined: Self = StObject.set(x, "tax_id_data", js.undefined)
       
-      @scala.inline
-      def setTax_id_dataVarargs(value: Type*): Self = StObject.set(x, "tax_id_data", js.Array(value :_*))
+      inline def setTax_id_dataVarargs(value: Type*): Self = StObject.set(x, "tax_id_data", js.Array(value :_*))
       
-      @scala.inline
-      def setTax_info(value: js.Any): Self = StObject.set(x, "tax_info", value.asInstanceOf[js.Any])
+      inline def setTax_info(value: js.Any): Self = StObject.set(x, "tax_info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_infoUndefined: Self = StObject.set(x, "tax_info", js.undefined)
+      inline def setTax_infoUndefined: Self = StObject.set(x, "tax_info", js.undefined)
       
-      @scala.inline
-      def setTax_percent(value: Double): Self = StObject.set(x, "tax_percent", value.asInstanceOf[js.Any])
+      inline def setTax_percent(value: Double): Self = StObject.set(x, "tax_percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_percentUndefined: Self = StObject.set(x, "tax_percent", js.undefined)
+      inline def setTax_percentUndefined: Self = StObject.set(x, "tax_percent", js.undefined)
       
-      @scala.inline
-      def setTrial_end(value: Double | now): Self = StObject.set(x, "trial_end", value.asInstanceOf[js.Any])
+      inline def setTrial_end(value: Double | now): Self = StObject.set(x, "trial_end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrial_endUndefined: Self = StObject.set(x, "trial_end", js.undefined)
+      inline def setTrial_endUndefined: Self = StObject.set(x, "trial_end", js.undefined)
     }
   }
   
@@ -697,35 +587,26 @@ object customers {
   }
   object ICustomerInvoiceSettings {
     
-    @scala.inline
-    def apply(): ICustomerInvoiceSettings = {
+    inline def apply(): ICustomerInvoiceSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICustomerInvoiceSettings]
     }
     
-    @scala.inline
-    implicit class ICustomerInvoiceSettingsMutableBuilder[Self <: ICustomerInvoiceSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomerInvoiceSettings](x: Self) {
       
-      @scala.inline
-      def setCustom_fields(value: js.Array[Name]): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
+      inline def setCustom_fields(value: js.Array[Name]): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustom_fieldsUndefined: Self = StObject.set(x, "custom_fields", js.undefined)
+      inline def setCustom_fieldsUndefined: Self = StObject.set(x, "custom_fields", js.undefined)
       
-      @scala.inline
-      def setCustom_fieldsVarargs(value: Name*): Self = StObject.set(x, "custom_fields", js.Array(value :_*))
+      inline def setCustom_fieldsVarargs(value: Name*): Self = StObject.set(x, "custom_fields", js.Array(value :_*))
       
-      @scala.inline
-      def setDefault_payment_method(value: String): Self = StObject.set(x, "default_payment_method", value.asInstanceOf[js.Any])
+      inline def setDefault_payment_method(value: String): Self = StObject.set(x, "default_payment_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_payment_methodUndefined: Self = StObject.set(x, "default_payment_method", js.undefined)
+      inline def setDefault_payment_methodUndefined: Self = StObject.set(x, "default_payment_method", js.undefined)
       
-      @scala.inline
-      def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     }
   }
   
@@ -740,20 +621,16 @@ object customers {
   }
   object ICustomerListOptions {
     
-    @scala.inline
-    def apply(): ICustomerListOptions = {
+    inline def apply(): ICustomerListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICustomerListOptions]
     }
     
-    @scala.inline
-    implicit class ICustomerListOptionsMutableBuilder[Self <: ICustomerListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomerListOptions](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     }
   }
   
@@ -772,17 +649,14 @@ object customers {
   }
   object ICustomerSourceCreationOptions {
     
-    @scala.inline
-    def apply(source: String | ICardSourceCreationOptions | ISourceCreationOptions): ICustomerSourceCreationOptions = {
+    inline def apply(source: String | ICardSourceCreationOptions | ISourceCreationOptions): ICustomerSourceCreationOptions = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICustomerSourceCreationOptions]
     }
     
-    @scala.inline
-    implicit class ICustomerSourceCreationOptionsMutableBuilder[Self <: ICustomerSourceCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomerSourceCreationOptions](x: Self) {
       
-      @scala.inline
-      def setSource(value: String | ICardSourceCreationOptions | ISourceCreationOptions): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String | ICardSourceCreationOptions | ISourceCreationOptions): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -884,119 +758,82 @@ object customers {
   }
   object ICustomerUpdateOptions {
     
-    @scala.inline
-    def apply(): ICustomerUpdateOptions = {
+    inline def apply(): ICustomerUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICustomerUpdateOptions]
     }
     
-    @scala.inline
-    implicit class ICustomerUpdateOptionsMutableBuilder[Self <: ICustomerUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomerUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setAccount_balance(value: Double): Self = StObject.set(x, "account_balance", value.asInstanceOf[js.Any])
+      inline def setAccount_balance(value: Double): Self = StObject.set(x, "account_balance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccount_balanceUndefined: Self = StObject.set(x, "account_balance", js.undefined)
+      inline def setAccount_balanceUndefined: Self = StObject.set(x, "account_balance", js.undefined)
       
-      @scala.inline
-      def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
+      inline def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalanceUndefined: Self = StObject.set(x, "balance", js.undefined)
+      inline def setBalanceUndefined: Self = StObject.set(x, "balance", js.undefined)
       
-      @scala.inline
-      def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
+      inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
+      inline def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
       
-      @scala.inline
-      def setDefault_source(value: String): Self = StObject.set(x, "default_source", value.asInstanceOf[js.Any])
+      inline def setDefault_source(value: String): Self = StObject.set(x, "default_source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_sourceUndefined: Self = StObject.set(x, "default_source", js.undefined)
+      inline def setDefault_sourceUndefined: Self = StObject.set(x, "default_source", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setInvoice_prefix(value: String): Self = StObject.set(x, "invoice_prefix", value.asInstanceOf[js.Any])
+      inline def setInvoice_prefix(value: String): Self = StObject.set(x, "invoice_prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvoice_prefixUndefined: Self = StObject.set(x, "invoice_prefix", js.undefined)
+      inline def setInvoice_prefixUndefined: Self = StObject.set(x, "invoice_prefix", js.undefined)
       
-      @scala.inline
-      def setInvoice_settings(value: ICustomerInvoiceSettings): Self = StObject.set(x, "invoice_settings", value.asInstanceOf[js.Any])
+      inline def setInvoice_settings(value: ICustomerInvoiceSettings): Self = StObject.set(x, "invoice_settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvoice_settingsNull: Self = StObject.set(x, "invoice_settings", null)
+      inline def setInvoice_settingsNull: Self = StObject.set(x, "invoice_settings", null)
       
-      @scala.inline
-      def setInvoice_settingsUndefined: Self = StObject.set(x, "invoice_settings", js.undefined)
+      inline def setInvoice_settingsUndefined: Self = StObject.set(x, "invoice_settings", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+      inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
       
-      @scala.inline
-      def setPreferred_locales(value: js.Array[String]): Self = StObject.set(x, "preferred_locales", value.asInstanceOf[js.Any])
+      inline def setPreferred_locales(value: js.Array[String]): Self = StObject.set(x, "preferred_locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferred_localesNull: Self = StObject.set(x, "preferred_locales", null)
+      inline def setPreferred_localesNull: Self = StObject.set(x, "preferred_locales", null)
       
-      @scala.inline
-      def setPreferred_localesUndefined: Self = StObject.set(x, "preferred_locales", js.undefined)
+      inline def setPreferred_localesUndefined: Self = StObject.set(x, "preferred_locales", js.undefined)
       
-      @scala.inline
-      def setPreferred_localesVarargs(value: String*): Self = StObject.set(x, "preferred_locales", js.Array(value :_*))
+      inline def setPreferred_localesVarargs(value: String*): Self = StObject.set(x, "preferred_locales", js.Array(value :_*))
       
-      @scala.inline
-      def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+      inline def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
+      inline def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
       
-      @scala.inline
-      def setSource(value: String | ICardSourceCreationOptionsExtended): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String | ICardSourceCreationOptionsExtended): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setTax_exempt(value: none | exempt | reverse): Self = StObject.set(x, "tax_exempt", value.asInstanceOf[js.Any])
+      inline def setTax_exempt(value: none | exempt | reverse): Self = StObject.set(x, "tax_exempt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_exemptUndefined: Self = StObject.set(x, "tax_exempt", js.undefined)
+      inline def setTax_exemptUndefined: Self = StObject.set(x, "tax_exempt", js.undefined)
       
-      @scala.inline
-      def setTax_info(value: js.Any): Self = StObject.set(x, "tax_info", value.asInstanceOf[js.Any])
+      inline def setTax_info(value: js.Any): Self = StObject.set(x, "tax_info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_infoUndefined: Self = StObject.set(x, "tax_info", js.undefined)
+      inline def setTax_infoUndefined: Self = StObject.set(x, "tax_info", js.undefined)
     }
   }
   
@@ -1008,18 +845,15 @@ object customers {
   }
   object ISourceListOptions {
     
-    @scala.inline
-    def apply(): ISourceListOptions = {
+    inline def apply(): ISourceListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")("source")
       __obj.asInstanceOf[ISourceListOptions]
     }
     
-    @scala.inline
-    implicit class ISourceListOptionsMutableBuilder[Self <: ISourceListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISourceListOptions](x: Self) {
       
-      @scala.inline
-      def setObject(value: source): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: source): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }
   }
 }

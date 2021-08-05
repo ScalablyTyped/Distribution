@@ -20,26 +20,20 @@ object anon {
   }
   object AvoidHeadRequests {
     
-    @scala.inline
-    def apply(avoidHeadRequests: Boolean, disallowedXhrHeaders: js.Array[String], timeoutInSec: Double): AvoidHeadRequests = {
+    inline def apply(avoidHeadRequests: Boolean, disallowedXhrHeaders: js.Array[String], timeoutInSec: Double): AvoidHeadRequests = {
       val __obj = js.Dynamic.literal(avoidHeadRequests = avoidHeadRequests.asInstanceOf[js.Any], disallowedXhrHeaders = disallowedXhrHeaders.asInstanceOf[js.Any], timeoutInSec = timeoutInSec.asInstanceOf[js.Any])
       __obj.asInstanceOf[AvoidHeadRequests]
     }
     
-    @scala.inline
-    implicit class AvoidHeadRequestsMutableBuilder[Self <: AvoidHeadRequests] (val x: Self) extends AnyVal {
+    extension [Self <: AvoidHeadRequests](x: Self) {
       
-      @scala.inline
-      def setAvoidHeadRequests(value: Boolean): Self = StObject.set(x, "avoidHeadRequests", value.asInstanceOf[js.Any])
+      inline def setAvoidHeadRequests(value: Boolean): Self = StObject.set(x, "avoidHeadRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallowedXhrHeaders(value: js.Array[String]): Self = StObject.set(x, "disallowedXhrHeaders", value.asInstanceOf[js.Any])
+      inline def setDisallowedXhrHeaders(value: js.Array[String]): Self = StObject.set(x, "disallowedXhrHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallowedXhrHeadersVarargs(value: String*): Self = StObject.set(x, "disallowedXhrHeaders", js.Array(value :_*))
+      inline def setDisallowedXhrHeadersVarargs(value: String*): Self = StObject.set(x, "disallowedXhrHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeoutInSec(value: Double): Self = StObject.set(x, "timeoutInSec", value.asInstanceOf[js.Any])
+      inline def setTimeoutInSec(value: Double): Self = StObject.set(x, "timeoutInSec", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,23 +47,18 @@ object anon {
   }
   object CRC {
     
-    @scala.inline
-    def apply(CRC: Double, RESTRICTIONS: Double, UPDATE: Double): CRC = {
+    inline def apply(CRC: Double, RESTRICTIONS: Double, UPDATE: Double): CRC = {
       val __obj = js.Dynamic.literal(CRC = CRC.asInstanceOf[js.Any], RESTRICTIONS = RESTRICTIONS.asInstanceOf[js.Any], UPDATE = UPDATE.asInstanceOf[js.Any])
       __obj.asInstanceOf[CRC]
     }
     
-    @scala.inline
-    implicit class CRCMutableBuilder[Self <: CRC] (val x: Self) extends AnyVal {
+    extension [Self <: CRC](x: Self) {
       
-      @scala.inline
-      def setCRC(value: Double): Self = StObject.set(x, "CRC", value.asInstanceOf[js.Any])
+      inline def setCRC(value: Double): Self = StObject.set(x, "CRC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESTRICTIONS(value: Double): Self = StObject.set(x, "RESTRICTIONS", value.asInstanceOf[js.Any])
+      inline def setRESTRICTIONS(value: Double): Self = StObject.set(x, "RESTRICTIONS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUPDATE(value: Double): Self = StObject.set(x, "UPDATE", value.asInstanceOf[js.Any])
+      inline def setUPDATE(value: Double): Self = StObject.set(x, "UPDATE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,8 +76,7 @@ object anon {
   }
   object Compression {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compression: Boolean,
       data_length_indicator: Boolean,
       encryption: Boolean,
@@ -99,23 +87,17 @@ object anon {
       __obj.asInstanceOf[Compression]
     }
     
-    @scala.inline
-    implicit class CompressionMutableBuilder[Self <: Compression] (val x: Self) extends AnyVal {
+    extension [Self <: Compression](x: Self) {
       
-      @scala.inline
-      def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData_length_indicator(value: Boolean): Self = StObject.set(x, "data_length_indicator", value.asInstanceOf[js.Any])
+      inline def setData_length_indicator(value: Boolean): Self = StObject.set(x, "data_length_indicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryption(value: Boolean): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
+      inline def setEncryption(value: Boolean): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrouping_identity(value: Boolean): Self = StObject.set(x, "grouping_identity", value.asInstanceOf[js.Any])
+      inline def setGrouping_identity(value: Boolean): Self = StObject.set(x, "grouping_identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsynchronisation(value: Boolean): Self = StObject.set(x, "unsynchronisation", value.asInstanceOf[js.Any])
+      inline def setUnsynchronisation(value: Boolean): Self = StObject.set(x, "unsynchronisation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,26 +111,20 @@ object anon {
   }
   object EndIx {
     
-    @scala.inline
-    def apply(endIx: Double, startIx: Double): EndIx = {
+    inline def apply(endIx: Double, startIx: Double): EndIx = {
       val __obj = js.Dynamic.literal(endIx = endIx.asInstanceOf[js.Any], startIx = startIx.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndIx]
     }
     
-    @scala.inline
-    implicit class EndIxMutableBuilder[Self <: EndIx] (val x: Self) extends AnyVal {
+    extension [Self <: EndIx](x: Self) {
       
-      @scala.inline
-      def setEndIx(value: Double): Self = StObject.set(x, "endIx", value.asInstanceOf[js.Any])
+      inline def setEndIx(value: Double): Self = StObject.set(x, "endIx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertIx(value: Double): Self = StObject.set(x, "insertIx", value.asInstanceOf[js.Any])
+      inline def setInsertIx(value: Double): Self = StObject.set(x, "insertIx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertIxUndefined: Self = StObject.set(x, "insertIx", js.undefined)
+      inline def setInsertIxUndefined: Self = StObject.set(x, "insertIx", js.undefined)
       
-      @scala.inline
-      def setStartIx(value: Double): Self = StObject.set(x, "startIx", value.asInstanceOf[js.Any])
+      inline def setStartIx(value: Double): Self = StObject.set(x, "startIx", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,23 +138,18 @@ object anon {
   }
   object Filealterpreservation {
     
-    @scala.inline
-    def apply(file_alter_preservation: Boolean, read_only: Boolean, tag_alter_preservation: Boolean): Filealterpreservation = {
+    inline def apply(file_alter_preservation: Boolean, read_only: Boolean, tag_alter_preservation: Boolean): Filealterpreservation = {
       val __obj = js.Dynamic.literal(file_alter_preservation = file_alter_preservation.asInstanceOf[js.Any], read_only = read_only.asInstanceOf[js.Any], tag_alter_preservation = tag_alter_preservation.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filealterpreservation]
     }
     
-    @scala.inline
-    implicit class FilealterpreservationMutableBuilder[Self <: Filealterpreservation] (val x: Self) extends AnyVal {
+    extension [Self <: Filealterpreservation](x: Self) {
       
-      @scala.inline
-      def setFile_alter_preservation(value: Boolean): Self = StObject.set(x, "file_alter_preservation", value.asInstanceOf[js.Any])
+      inline def setFile_alter_preservation(value: Boolean): Self = StObject.set(x, "file_alter_preservation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead_only(value: Boolean): Self = StObject.set(x, "read_only", value.asInstanceOf[js.Any])
+      inline def setRead_only(value: Boolean): Self = StObject.set(x, "read_only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag_alter_preservation(value: Boolean): Self = StObject.set(x, "tag_alter_preservation", value.asInstanceOf[js.Any])
+      inline def setTag_alter_preservation(value: Boolean): Self = StObject.set(x, "tag_alter_preservation", value.asInstanceOf[js.Any])
     }
   }
   

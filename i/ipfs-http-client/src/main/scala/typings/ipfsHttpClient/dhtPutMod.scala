@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dhtPutMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function3[
+  inline def apply(clientOptions: ClientOptions): js.Function3[
     /* key */ Uint8Array, 
     /* value */ Uint8Array, 
     /* options */ js.UndefOr[

@@ -23,8 +23,7 @@ trait Digalg extends StObject {
 }
 object Digalg {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     digalg: String,
     obj: SignerInfo,
     sattrs: String,
@@ -37,28 +36,20 @@ object Digalg {
     __obj.asInstanceOf[Digalg]
   }
   
-  @scala.inline
-  implicit class DigalgMutableBuilder[Self <: Digalg] (val x: Self) extends AnyVal {
+  extension [Self <: Digalg](x: Self) {
     
-    @scala.inline
-    def setDigalg(value: String): Self = StObject.set(x, "digalg", value.asInstanceOf[js.Any])
+    inline def setDigalg(value: String): Self = StObject.set(x, "digalg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObj(value: SignerInfo): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
+    inline def setObj(value: SignerInfo): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSattrs(value: String): Self = StObject.set(x, "sattrs", value.asInstanceOf[js.Any])
+    inline def setSattrs(value: String): Self = StObject.set(x, "sattrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSi(value: String): Self = StObject.set(x, "si", value.asInstanceOf[js.Any])
+    inline def setSi(value: String): Self = StObject.set(x, "si", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigalg(value: String): Self = StObject.set(x, "sigalg", value.asInstanceOf[js.Any])
+    inline def setSigalg(value: String): Self = StObject.set(x, "sigalg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigval(value: String): Self = StObject.set(x, "sigval", value.asInstanceOf[js.Any])
+    inline def setSigval(value: String): Self = StObject.set(x, "sigval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

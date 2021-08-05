@@ -32,20 +32,15 @@ object privacy {
     trait IPHandlingPolicy extends StObject
     object IPHandlingPolicy {
       
-      @scala.inline
-      def default: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default = "default".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default]
+      inline def default: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default = "default".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default]
       
-      @scala.inline
-      def default_public_and_private_interfaces: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_and_private_interfaces = "default_public_and_private_interfaces".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_and_private_interfaces]
+      inline def default_public_and_private_interfaces: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_and_private_interfaces = "default_public_and_private_interfaces".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_and_private_interfaces]
       
-      @scala.inline
-      def default_public_interface_only: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_interface_only = "default_public_interface_only".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_interface_only]
+      inline def default_public_interface_only: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_interface_only = "default_public_interface_only".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_interface_only]
       
-      @scala.inline
-      def disable_non_proxied_udp: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disable_non_proxied_udp = "disable_non_proxied_udp".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disable_non_proxied_udp]
+      inline def disable_non_proxied_udp: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disable_non_proxied_udp = "disable_non_proxied_udp".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disable_non_proxied_udp]
       
-      @scala.inline
-      def proxy_only: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.proxy_only = "proxy_only".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.proxy_only]
+      inline def proxy_only: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.proxy_only = "proxy_only".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.proxy_only]
     }
     
     /** The maximum TLS version supported. */
@@ -59,20 +54,15 @@ object privacy {
     trait TlsVersionRestrictionConfigMaximum extends StObject
     object TlsVersionRestrictionConfigMaximum {
       
-      @scala.inline
-      def TLSv1: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1 = "TLSv1".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1]
+      inline def TLSv1: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1 = "TLSv1".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1]
       
-      @scala.inline
-      def TLSv1Dot1: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot1 = "TLSv1.1".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot1]
+      inline def TLSv1Dot1: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot1 = "TLSv1.1".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot1]
       
-      @scala.inline
-      def TLSv1Dot2: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot2 = "TLSv1.2".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot2]
+      inline def TLSv1Dot2: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot2 = "TLSv1.2".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot2]
       
-      @scala.inline
-      def TLSv1Dot3: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot3 = "TLSv1.3".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot3]
+      inline def TLSv1Dot3: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot3 = "TLSv1.3".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot3]
       
-      @scala.inline
-      def unknown: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown = "unknown".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown]
+      inline def unknown: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown = "unknown".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown]
     }
     
     /** The minimum TLS version supported. */
@@ -86,20 +76,15 @@ object privacy {
     trait TlsVersionRestrictionConfigMinimum extends StObject
     object TlsVersionRestrictionConfigMinimum {
       
-      @scala.inline
-      def TLSv1: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1 = "TLSv1".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1]
+      inline def TLSv1: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1 = "TLSv1".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1]
       
-      @scala.inline
-      def TLSv1Dot1: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot1 = "TLSv1.1".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot1]
+      inline def TLSv1Dot1: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot1 = "TLSv1.1".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot1]
       
-      @scala.inline
-      def TLSv1Dot2: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot2 = "TLSv1.2".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot2]
+      inline def TLSv1Dot2: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot2 = "TLSv1.2".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot2]
       
-      @scala.inline
-      def TLSv1Dot3: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot3 = "TLSv1.3".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot3]
+      inline def TLSv1Dot3: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot3 = "TLSv1.3".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot3]
       
-      @scala.inline
-      def unknown: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown = "unknown".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown]
+      inline def unknown: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown = "unknown".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown]
     }
     
     /** An object which describes TLS minimum and maximum versions. */
@@ -113,26 +98,20 @@ object privacy {
     }
     object tlsVersionRestrictionConfig {
       
-      @scala.inline
-      def apply(): tlsVersionRestrictionConfig = {
+      inline def apply(): tlsVersionRestrictionConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[tlsVersionRestrictionConfig]
       }
       
-      @scala.inline
-      implicit class tlsVersionRestrictionConfigMutableBuilder[Self <: tlsVersionRestrictionConfig] (val x: Self) extends AnyVal {
+      extension [Self <: tlsVersionRestrictionConfig](x: Self) {
         
-        @scala.inline
-        def setMaximum(value: TlsVersionRestrictionConfigMaximum): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+        inline def setMaximum(value: TlsVersionRestrictionConfigMaximum): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+        inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
         
-        @scala.inline
-        def setMinimum(value: TlsVersionRestrictionConfigMinimum): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+        inline def setMinimum(value: TlsVersionRestrictionConfigMinimum): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+        inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
       }
     }
   }
@@ -166,26 +145,20 @@ object privacy {
     }
     object CookieConfig {
       
-      @scala.inline
-      def apply(): CookieConfig = {
+      inline def apply(): CookieConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CookieConfig]
       }
       
-      @scala.inline
-      implicit class CookieConfigMutableBuilder[Self <: CookieConfig] (val x: Self) extends AnyVal {
+      extension [Self <: CookieConfig](x: Self) {
         
-        @scala.inline
-        def setBehavior(value: CookieConfigBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+        inline def setBehavior(value: CookieConfigBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+        inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
         
-        @scala.inline
-        def setNonPersistentCookies(value: Boolean): Self = StObject.set(x, "nonPersistentCookies", value.asInstanceOf[js.Any])
+        inline def setNonPersistentCookies(value: Boolean): Self = StObject.set(x, "nonPersistentCookies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNonPersistentCookiesUndefined: Self = StObject.set(x, "nonPersistentCookies", js.undefined)
+        inline def setNonPersistentCookiesUndefined: Self = StObject.set(x, "nonPersistentCookies", js.undefined)
       }
     }
     
@@ -201,23 +174,17 @@ object privacy {
     trait CookieConfigBehavior extends StObject
     object CookieConfigBehavior {
       
-      @scala.inline
-      def allow_all: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_all = "allow_all".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_all]
+      inline def allow_all: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_all = "allow_all".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_all]
       
-      @scala.inline
-      def allow_visited: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_visited = "allow_visited".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_visited]
+      inline def allow_visited: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_visited = "allow_visited".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_visited]
       
-      @scala.inline
-      def reject_all: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_all = "reject_all".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_all]
+      inline def reject_all: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_all = "reject_all".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_all]
       
-      @scala.inline
-      def reject_third_party: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_third_party = "reject_third_party".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_third_party]
+      inline def reject_third_party: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_third_party = "reject_third_party".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_third_party]
       
-      @scala.inline
-      def reject_trackers: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_trackers = "reject_trackers".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_trackers]
+      inline def reject_trackers: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_trackers = "reject_trackers".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_trackers]
       
-      @scala.inline
-      def reject_trackers_and_partition_foreign: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_trackers_and_partition_foreign = "reject_trackers_and_partition_foreign".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_trackers_and_partition_foreign]
+      inline def reject_trackers_and_partition_foreign: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_trackers_and_partition_foreign = "reject_trackers_and_partition_foreign".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_trackers_and_partition_foreign]
     }
     
     /* privacy.websites types */
@@ -230,14 +197,11 @@ object privacy {
     trait TrackingProtectionModeOption extends StObject
     object TrackingProtectionModeOption {
       
-      @scala.inline
-      def always: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.always = "always".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.always]
+      inline def always: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.always = "always".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.always]
       
-      @scala.inline
-      def never: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.never = "never".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.never]
+      inline def never: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.never = "never".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.never]
       
-      @scala.inline
-      def private_browsing: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.private_browsing = "private_browsing".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.private_browsing]
+      inline def private_browsing: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.private_browsing = "private_browsing".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.private_browsing]
     }
   }
 }

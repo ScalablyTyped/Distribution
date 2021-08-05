@@ -36,37 +36,27 @@ trait ParamsResourceMembersUpdate
 }
 object ParamsResourceMembersUpdate {
   
-  @scala.inline
-  def apply(): ParamsResourceMembersUpdate = {
+  inline def apply(): ParamsResourceMembersUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceMembersUpdate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceMembersUpdateMutableBuilder[Self <: ParamsResourceMembersUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceMembersUpdate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
+    inline def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupKeyUndefined: Self = StObject.set(x, "groupKey", js.undefined)
+    inline def setGroupKeyUndefined: Self = StObject.set(x, "groupKey", js.undefined)
     
-    @scala.inline
-    def setMemberKey(value: String): Self = StObject.set(x, "memberKey", value.asInstanceOf[js.Any])
+    inline def setMemberKey(value: String): Self = StObject.set(x, "memberKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberKeyUndefined: Self = StObject.set(x, "memberKey", js.undefined)
+    inline def setMemberKeyUndefined: Self = StObject.set(x, "memberKey", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaMember): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaMember): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

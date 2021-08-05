@@ -22,11 +22,9 @@ object headerSegmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @scala.inline
-  def getDefaultHeaderHeight(layout: Layout, statusBarHeight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultHeaderHeight")(layout.asInstanceOf[js.Any], statusBarHeight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDefaultHeaderHeight(layout: Layout, statusBarHeight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultHeaderHeight")(layout.asInstanceOf[js.Any], statusBarHeight.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   trait Props
     extends StObject
@@ -51,8 +49,7 @@ object headerSegmentMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       headerTitle: StackHeaderTitleProps => ReactNode,
       insets: EdgeInsets,
       layout: Layout,
@@ -63,41 +60,29 @@ object headerSegmentMod {
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setHeaderTitle(value: StackHeaderTitleProps => ReactNode): Self = StObject.set(x, "headerTitle", js.Any.fromFunction1(value))
+      inline def setHeaderTitle(value: StackHeaderTitleProps => ReactNode): Self = StObject.set(x, "headerTitle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsets(value: EdgeInsets): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
+      inline def setInsets(value: EdgeInsets): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftLabel(value: String): Self = StObject.set(x, "leftLabel", value.asInstanceOf[js.Any])
+      inline def setLeftLabel(value: String): Self = StObject.set(x, "leftLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftLabelUndefined: Self = StObject.set(x, "leftLabel", js.undefined)
+      inline def setLeftLabelUndefined: Self = StObject.set(x, "leftLabel", js.undefined)
       
-      @scala.inline
-      def setOnGoBack(value: () => Unit): Self = StObject.set(x, "onGoBack", js.Any.fromFunction0(value))
+      inline def setOnGoBack(value: () => Unit): Self = StObject.set(x, "onGoBack", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnGoBackUndefined: Self = StObject.set(x, "onGoBack", js.undefined)
+      inline def setOnGoBackUndefined: Self = StObject.set(x, "onGoBack", js.undefined)
       
-      @scala.inline
-      def setScene(value: Scene[NavigationRoute[NavigationParams]]): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+      inline def setScene(value: Scene[NavigationRoute[NavigationParams]]): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleInterpolator(value: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle): Self = StObject.set(x, "styleInterpolator", js.Any.fromFunction1(value))
+      inline def setStyleInterpolator(value: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle): Self = StObject.set(x, "styleInterpolator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

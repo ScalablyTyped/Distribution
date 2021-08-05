@@ -16,6 +16,6 @@ object sequenceMod {
     
     def assemble(): SequenceTransform = js.native
     
-    var params: js.Any = js.native
+    /* private */ var params: js.Any = js.native
   }
 }

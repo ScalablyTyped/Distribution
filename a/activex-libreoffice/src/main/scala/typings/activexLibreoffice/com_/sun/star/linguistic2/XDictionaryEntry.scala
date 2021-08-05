@@ -50,8 +50,7 @@ trait XDictionaryEntry
 }
 object XDictionaryEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DictionaryWord: String,
     ReplacementText: String,
     acquire: () => Unit,
@@ -65,22 +64,16 @@ object XDictionaryEntry {
     __obj.asInstanceOf[XDictionaryEntry]
   }
   
-  @scala.inline
-  implicit class XDictionaryEntryMutableBuilder[Self <: XDictionaryEntry] (val x: Self) extends AnyVal {
+  extension [Self <: XDictionaryEntry](x: Self) {
     
-    @scala.inline
-    def setDictionaryWord(value: String): Self = StObject.set(x, "DictionaryWord", value.asInstanceOf[js.Any])
+    inline def setDictionaryWord(value: String): Self = StObject.set(x, "DictionaryWord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDictionaryWord(value: () => String): Self = StObject.set(x, "getDictionaryWord", js.Any.fromFunction0(value))
+    inline def setGetDictionaryWord(value: () => String): Self = StObject.set(x, "getDictionaryWord", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReplacementText(value: () => String): Self = StObject.set(x, "getReplacementText", js.Any.fromFunction0(value))
+    inline def setGetReplacementText(value: () => String): Self = StObject.set(x, "getReplacementText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsNegative(value: () => Boolean): Self = StObject.set(x, "isNegative", js.Any.fromFunction0(value))
+    inline def setIsNegative(value: () => Boolean): Self = StObject.set(x, "isNegative", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplacementText(value: String): Self = StObject.set(x, "ReplacementText", value.asInstanceOf[js.Any])
+    inline def setReplacementText(value: String): Self = StObject.set(x, "ReplacementText", value.asInstanceOf[js.Any])
   }
 }

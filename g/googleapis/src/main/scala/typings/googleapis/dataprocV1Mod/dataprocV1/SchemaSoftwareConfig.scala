@@ -37,34 +37,25 @@ trait SchemaSoftwareConfig extends StObject {
 }
 object SchemaSoftwareConfig {
   
-  @scala.inline
-  def apply(): SchemaSoftwareConfig = {
+  inline def apply(): SchemaSoftwareConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSoftwareConfig]
   }
   
-  @scala.inline
-  implicit class SchemaSoftwareConfigMutableBuilder[Self <: SchemaSoftwareConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSoftwareConfig](x: Self) {
     
-    @scala.inline
-    def setImageVersion(value: String): Self = StObject.set(x, "imageVersion", value.asInstanceOf[js.Any])
+    inline def setImageVersion(value: String): Self = StObject.set(x, "imageVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageVersionUndefined: Self = StObject.set(x, "imageVersion", js.undefined)
+    inline def setImageVersionUndefined: Self = StObject.set(x, "imageVersion", js.undefined)
     
-    @scala.inline
-    def setOptionalComponents(value: js.Array[String]): Self = StObject.set(x, "optionalComponents", value.asInstanceOf[js.Any])
+    inline def setOptionalComponents(value: js.Array[String]): Self = StObject.set(x, "optionalComponents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalComponentsUndefined: Self = StObject.set(x, "optionalComponents", js.undefined)
+    inline def setOptionalComponentsUndefined: Self = StObject.set(x, "optionalComponents", js.undefined)
     
-    @scala.inline
-    def setOptionalComponentsVarargs(value: String*): Self = StObject.set(x, "optionalComponents", js.Array(value :_*))
+    inline def setOptionalComponentsVarargs(value: String*): Self = StObject.set(x, "optionalComponents", js.Array(value :_*))
     
-    @scala.inline
-    def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

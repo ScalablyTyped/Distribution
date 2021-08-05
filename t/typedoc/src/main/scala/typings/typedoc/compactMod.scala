@@ -10,6 +10,5 @@ object compactMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compact(options: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def compact(options: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(options.asInstanceOf[js.Any]).asInstanceOf[String]
 }

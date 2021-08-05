@@ -10,16 +10,13 @@ trait EnumValuesIsOverlapping extends StObject {
 }
 object EnumValuesIsOverlapping {
   
-  @scala.inline
-  def apply(enumValues: IsOverlapping): EnumValuesIsOverlapping = {
+  inline def apply(enumValues: IsOverlapping): EnumValuesIsOverlapping = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesIsOverlapping]
   }
   
-  @scala.inline
-  implicit class EnumValuesIsOverlappingMutableBuilder[Self <: EnumValuesIsOverlapping] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesIsOverlapping](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: IsOverlapping): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: IsOverlapping): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait GetObjectOptions extends StObject {
 }
 object GetObjectOptions {
   
-  @scala.inline
-  def apply(): GetObjectOptions = {
+  inline def apply(): GetObjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetObjectOptions]
   }
   
-  @scala.inline
-  implicit class GetObjectOptionsMutableBuilder[Self <: GetObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectOptions](x: Self) {
     
-    @scala.inline
-    def setEnc(value: js.Any): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
+    inline def setEnc(value: js.Any): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncUndefined: Self = StObject.set(x, "enc", js.undefined)
+    inline def setEncUndefined: Self = StObject.set(x, "enc", js.undefined)
   }
 }

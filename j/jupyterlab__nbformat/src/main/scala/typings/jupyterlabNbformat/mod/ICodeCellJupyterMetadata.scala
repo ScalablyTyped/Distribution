@@ -15,16 +15,13 @@ trait ICodeCellJupyterMetadata
 }
 object ICodeCellJupyterMetadata {
   
-  @scala.inline
-  def apply(outputs_hidden: Boolean, source_hidden: Boolean): ICodeCellJupyterMetadata = {
+  inline def apply(outputs_hidden: Boolean, source_hidden: Boolean): ICodeCellJupyterMetadata = {
     val __obj = js.Dynamic.literal(outputs_hidden = outputs_hidden.asInstanceOf[js.Any], source_hidden = source_hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICodeCellJupyterMetadata]
   }
   
-  @scala.inline
-  implicit class ICodeCellJupyterMetadataMutableBuilder[Self <: ICodeCellJupyterMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ICodeCellJupyterMetadata](x: Self) {
     
-    @scala.inline
-    def setOutputs_hidden(value: Boolean): Self = StObject.set(x, "outputs_hidden", value.asInstanceOf[js.Any])
+    inline def setOutputs_hidden(value: Boolean): Self = StObject.set(x, "outputs_hidden", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait ScriptingProvider
 }
 object ScriptingProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     providerId: String,
     registerOnScriptingComplete: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, js.Any] => Unit,
     scriptAsOperation: (String, ScriptOperation, ObjectMetadata, ScriptingParamDetails) => Thenable[ScriptingResult]
@@ -30,14 +29,11 @@ object ScriptingProvider {
     __obj.asInstanceOf[ScriptingProvider]
   }
   
-  @scala.inline
-  implicit class ScriptingProviderMutableBuilder[Self <: ScriptingProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptingProvider](x: Self) {
     
-    @scala.inline
-    def setRegisterOnScriptingComplete(value: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, js.Any] => Unit): Self = StObject.set(x, "registerOnScriptingComplete", js.Any.fromFunction1(value))
+    inline def setRegisterOnScriptingComplete(value: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, js.Any] => Unit): Self = StObject.set(x, "registerOnScriptingComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScriptAsOperation(
+    inline def setScriptAsOperation(
       value: (String, ScriptOperation, ObjectMetadata, ScriptingParamDetails) => Thenable[ScriptingResult]
     ): Self = StObject.set(x, "scriptAsOperation", js.Any.fromFunction4(value))
   }

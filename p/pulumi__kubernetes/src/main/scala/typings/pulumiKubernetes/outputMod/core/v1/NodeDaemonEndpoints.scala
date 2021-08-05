@@ -16,16 +16,13 @@ trait NodeDaemonEndpoints extends StObject {
 }
 object NodeDaemonEndpoints {
   
-  @scala.inline
-  def apply(kubeletEndpoint: DaemonEndpoint): NodeDaemonEndpoints = {
+  inline def apply(kubeletEndpoint: DaemonEndpoint): NodeDaemonEndpoints = {
     val __obj = js.Dynamic.literal(kubeletEndpoint = kubeletEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDaemonEndpoints]
   }
   
-  @scala.inline
-  implicit class NodeDaemonEndpointsMutableBuilder[Self <: NodeDaemonEndpoints] (val x: Self) extends AnyVal {
+  extension [Self <: NodeDaemonEndpoints](x: Self) {
     
-    @scala.inline
-    def setKubeletEndpoint(value: DaemonEndpoint): Self = StObject.set(x, "kubeletEndpoint", value.asInstanceOf[js.Any])
+    inline def setKubeletEndpoint(value: DaemonEndpoint): Self = StObject.set(x, "kubeletEndpoint", value.asInstanceOf[js.Any])
   }
 }

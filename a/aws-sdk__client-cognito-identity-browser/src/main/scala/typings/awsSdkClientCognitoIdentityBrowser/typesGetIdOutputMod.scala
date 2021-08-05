@@ -25,23 +25,18 @@ object typesGetIdOutputMod {
   }
   object GetIdOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetIdOutput = {
+    inline def apply($metadata: ResponseMetadata): GetIdOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetIdOutput]
     }
     
-    @scala.inline
-    implicit class GetIdOutputMutableBuilder[Self <: GetIdOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetIdOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+      inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+      inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     }
   }
 }

@@ -19,8 +19,7 @@ trait DpId extends StObject {
 }
 object DpId {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dpId: String,
     dpName: String,
     rangeKeys: js.Array[DpValue],
@@ -31,28 +30,20 @@ object DpId {
     __obj.asInstanceOf[DpId]
   }
   
-  @scala.inline
-  implicit class DpIdMutableBuilder[Self <: DpId] (val x: Self) extends AnyVal {
+  extension [Self <: DpId](x: Self) {
     
-    @scala.inline
-    def setDpId(value: String): Self = StObject.set(x, "dpId", value.asInstanceOf[js.Any])
+    inline def setDpId(value: String): Self = StObject.set(x, "dpId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpName(value: String): Self = StObject.set(x, "dpName", value.asInstanceOf[js.Any])
+    inline def setDpName(value: String): Self = StObject.set(x, "dpName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeKeys(value: js.Array[DpValue]): Self = StObject.set(x, "rangeKeys", value.asInstanceOf[js.Any])
+    inline def setRangeKeys(value: js.Array[DpValue]): Self = StObject.set(x, "rangeKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeKeysVarargs(value: DpValue*): Self = StObject.set(x, "rangeKeys", js.Array(value :_*))
+    inline def setRangeKeysVarargs(value: DpValue*): Self = StObject.set(x, "rangeKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setRangeValues(value: js.Array[String]): Self = StObject.set(x, "rangeValues", value.asInstanceOf[js.Any])
+    inline def setRangeValues(value: js.Array[String]): Self = StObject.set(x, "rangeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeValuesVarargs(value: String*): Self = StObject.set(x, "rangeValues", js.Array(value :_*))
+    inline def setRangeValuesVarargs(value: String*): Self = StObject.set(x, "rangeValues", js.Array(value :_*))
     
-    @scala.inline
-    def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
   }
 }

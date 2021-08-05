@@ -13,19 +13,15 @@ trait UpdateGlobalTableOutput extends StObject {
 }
 object UpdateGlobalTableOutput {
   
-  @scala.inline
-  def apply(): UpdateGlobalTableOutput = {
+  inline def apply(): UpdateGlobalTableOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateGlobalTableOutput]
   }
   
-  @scala.inline
-  implicit class UpdateGlobalTableOutputMutableBuilder[Self <: UpdateGlobalTableOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGlobalTableOutput](x: Self) {
     
-    @scala.inline
-    def setGlobalTableDescription(value: GlobalTableDescription): Self = StObject.set(x, "GlobalTableDescription", value.asInstanceOf[js.Any])
+    inline def setGlobalTableDescription(value: GlobalTableDescription): Self = StObject.set(x, "GlobalTableDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalTableDescriptionUndefined: Self = StObject.set(x, "GlobalTableDescription", js.undefined)
+    inline def setGlobalTableDescriptionUndefined: Self = StObject.set(x, "GlobalTableDescription", js.undefined)
   }
 }

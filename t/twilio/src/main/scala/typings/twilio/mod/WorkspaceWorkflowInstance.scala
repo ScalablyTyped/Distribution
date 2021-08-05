@@ -12,8 +12,7 @@ trait WorkspaceWorkflowInstance
 }
 object WorkspaceWorkflowInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: RestMethod,
     get: RestMethod,
     post: RestMethod,
@@ -24,10 +23,8 @@ object WorkspaceWorkflowInstance {
     __obj.asInstanceOf[WorkspaceWorkflowInstance]
   }
   
-  @scala.inline
-  implicit class WorkspaceWorkflowInstanceMutableBuilder[Self <: WorkspaceWorkflowInstance] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceWorkflowInstance](x: Self) {
     
-    @scala.inline
-    def setStatistics(value: WorkspaceInstanceStatisticResource): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: WorkspaceInstanceStatisticResource): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
   }
 }

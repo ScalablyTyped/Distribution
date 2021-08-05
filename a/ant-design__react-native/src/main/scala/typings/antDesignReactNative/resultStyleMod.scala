@@ -14,8 +14,7 @@ object resultStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): ResultStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ResultStyle]
+  inline def default(theme: Theme): ResultStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ResultStyle]
   
   trait ResultStyle extends StObject {
     
@@ -39,8 +38,7 @@ object resultStyleMod {
   }
   object ResultStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       button: ViewStyle,
       buttonWrap: ViewStyle,
       img: ImageStyle,
@@ -55,35 +53,25 @@ object resultStyleMod {
       __obj.asInstanceOf[ResultStyle]
     }
     
-    @scala.inline
-    implicit class ResultStyleMutableBuilder[Self <: ResultStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ResultStyle](x: Self) {
       
-      @scala.inline
-      def setButton(value: ViewStyle): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: ViewStyle): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonWrap(value: ViewStyle): Self = StObject.set(x, "buttonWrap", value.asInstanceOf[js.Any])
+      inline def setButtonWrap(value: ViewStyle): Self = StObject.set(x, "buttonWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImg(value: ImageStyle): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+      inline def setImg(value: ImageStyle): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgWrap(value: ViewStyle): Self = StObject.set(x, "imgWrap", value.asInstanceOf[js.Any])
+      inline def setImgWrap(value: ViewStyle): Self = StObject.set(x, "imgWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: ViewStyle): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: ViewStyle): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageText(value: TextStyle): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
+      inline def setMessageText(value: TextStyle): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: ViewStyle): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: ViewStyle): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: ViewStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ViewStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleText(value: TextStyle): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
+      inline def setTitleText(value: TextStyle): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
     }
   }
 }

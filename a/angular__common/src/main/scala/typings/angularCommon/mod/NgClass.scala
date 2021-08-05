@@ -31,35 +31,35 @@ class NgClass protected ()
     * For argument of type Map CSS class name in the map's key is toggled based on the value (added
     * for truthy and removed for falsy).
     */
-  var _applyClasses: js.Any = js.native
+  /* private */ var _applyClasses: js.Any = js.native
   
-  var _applyIterableChanges: js.Any = js.native
+  /* private */ var _applyIterableChanges: js.Any = js.native
   
-  var _applyKeyValueChanges: js.Any = js.native
+  /* private */ var _applyKeyValueChanges: js.Any = js.native
   
-  var _initialClasses: js.Any = js.native
+  /* private */ var _initialClasses: js.Any = js.native
   
-  var _iterableDiffer: js.Any = js.native
+  /* private */ var _iterableDiffer: js.Any = js.native
   
-  var _iterableDiffers: js.Any = js.native
+  /* private */ var _iterableDiffers: js.Any = js.native
   
-  var _keyValueDiffer: js.Any = js.native
+  /* private */ var _keyValueDiffer: js.Any = js.native
   
-  var _keyValueDiffers: js.Any = js.native
+  /* private */ var _keyValueDiffers: js.Any = js.native
   
-  var _ngEl: js.Any = js.native
+  /* private */ var _ngEl: js.Any = js.native
   
-  var _rawClass: js.Any = js.native
+  /* private */ var _rawClass: js.Any = js.native
   
   /**
     * Removes a collection of CSS classes from the DOM element. This is mostly useful for cleanup
     * purposes.
     */
-  var _removeClasses: js.Any = js.native
+  /* private */ var _removeClasses: js.Any = js.native
   
-  var _renderer: js.Any = js.native
+  /* private */ var _renderer: js.Any = js.native
   
-  var _toggleClass: js.Any = js.native
+  /* private */ var _toggleClass: js.Any = js.native
   
   def klass_=(value: String): Unit = js.native
   

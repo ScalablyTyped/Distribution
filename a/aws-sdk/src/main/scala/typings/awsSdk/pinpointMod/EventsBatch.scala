@@ -18,19 +18,15 @@ trait EventsBatch extends StObject {
 }
 object EventsBatch {
   
-  @scala.inline
-  def apply(Endpoint: PublicEndpoint, Events: MapOfEvent): EventsBatch = {
+  inline def apply(Endpoint: PublicEndpoint, Events: MapOfEvent): EventsBatch = {
     val __obj = js.Dynamic.literal(Endpoint = Endpoint.asInstanceOf[js.Any], Events = Events.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventsBatch]
   }
   
-  @scala.inline
-  implicit class EventsBatchMutableBuilder[Self <: EventsBatch] (val x: Self) extends AnyVal {
+  extension [Self <: EventsBatch](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: PublicEndpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: PublicEndpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: MapOfEvent): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: MapOfEvent): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
   }
 }

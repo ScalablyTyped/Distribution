@@ -14,25 +14,19 @@ trait FullTreeexpandedbooleanun extends StObject {
 }
 object FullTreeexpandedbooleanun {
   
-  @scala.inline
-  def apply(treeData: js.Array[TreeItem]): FullTreeexpandedbooleanun = {
+  inline def apply(treeData: js.Array[TreeItem]): FullTreeexpandedbooleanun = {
     val __obj = js.Dynamic.literal(treeData = treeData.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullTreeexpandedbooleanun]
   }
   
-  @scala.inline
-  implicit class FullTreeexpandedbooleanunMutableBuilder[Self <: FullTreeexpandedbooleanun] (val x: Self) extends AnyVal {
+  extension [Self <: FullTreeexpandedbooleanun](x: Self) {
     
-    @scala.inline
-    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
-    @scala.inline
-    def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
+    inline def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
+    inline def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
   }
 }

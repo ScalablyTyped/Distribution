@@ -13,16 +13,13 @@ trait RebootRelationalDatabaseRequest extends StObject {
 }
 object RebootRelationalDatabaseRequest {
   
-  @scala.inline
-  def apply(relationalDatabaseName: ResourceName): RebootRelationalDatabaseRequest = {
+  inline def apply(relationalDatabaseName: ResourceName): RebootRelationalDatabaseRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RebootRelationalDatabaseRequest]
   }
   
-  @scala.inline
-  implicit class RebootRelationalDatabaseRequestMutableBuilder[Self <: RebootRelationalDatabaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RebootRelationalDatabaseRequest](x: Self) {
     
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
   }
 }

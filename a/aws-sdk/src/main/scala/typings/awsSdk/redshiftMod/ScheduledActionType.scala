@@ -23,31 +23,23 @@ trait ScheduledActionType extends StObject {
 }
 object ScheduledActionType {
   
-  @scala.inline
-  def apply(): ScheduledActionType = {
+  inline def apply(): ScheduledActionType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduledActionType]
   }
   
-  @scala.inline
-  implicit class ScheduledActionTypeMutableBuilder[Self <: ScheduledActionType] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduledActionType](x: Self) {
     
-    @scala.inline
-    def setPauseCluster(value: PauseClusterMessage): Self = StObject.set(x, "PauseCluster", value.asInstanceOf[js.Any])
+    inline def setPauseCluster(value: PauseClusterMessage): Self = StObject.set(x, "PauseCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPauseClusterUndefined: Self = StObject.set(x, "PauseCluster", js.undefined)
+    inline def setPauseClusterUndefined: Self = StObject.set(x, "PauseCluster", js.undefined)
     
-    @scala.inline
-    def setResizeCluster(value: ResizeClusterMessage): Self = StObject.set(x, "ResizeCluster", value.asInstanceOf[js.Any])
+    inline def setResizeCluster(value: ResizeClusterMessage): Self = StObject.set(x, "ResizeCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeClusterUndefined: Self = StObject.set(x, "ResizeCluster", js.undefined)
+    inline def setResizeClusterUndefined: Self = StObject.set(x, "ResizeCluster", js.undefined)
     
-    @scala.inline
-    def setResumeCluster(value: ResumeClusterMessage): Self = StObject.set(x, "ResumeCluster", value.asInstanceOf[js.Any])
+    inline def setResumeCluster(value: ResumeClusterMessage): Self = StObject.set(x, "ResumeCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeClusterUndefined: Self = StObject.set(x, "ResumeCluster", js.undefined)
+    inline def setResumeClusterUndefined: Self = StObject.set(x, "ResumeCluster", js.undefined)
   }
 }

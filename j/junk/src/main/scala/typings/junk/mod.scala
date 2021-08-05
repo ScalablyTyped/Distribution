@@ -16,14 +16,12 @@ object mod {
   @JSImport("junk", "default")
   @js.native
   def default: Default = js.native
-  @scala.inline
-  def default_=(x: Default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	Returns `true` if `filename` matches a junk file.
   	*/
-  @scala.inline
-  def is(filename: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def is(filename: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
   	Returns `true` if `filename` doesn't match a junk file.
@@ -42,8 +40,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def not(filename: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def not(filename: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
   	Regex used for matching junk files.

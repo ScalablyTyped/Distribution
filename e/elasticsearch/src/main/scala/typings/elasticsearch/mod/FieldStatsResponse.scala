@@ -15,25 +15,19 @@ trait FieldStatsResponse extends StObject {
 }
 object FieldStatsResponse {
   
-  @scala.inline
-  def apply(_shards: ShardsResponse, indices: StringDictionary[FieldStatsResponseIndex]): FieldStatsResponse = {
+  inline def apply(_shards: ShardsResponse, indices: StringDictionary[FieldStatsResponseIndex]): FieldStatsResponse = {
     val __obj = js.Dynamic.literal(_shards = _shards.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldStatsResponse]
   }
   
-  @scala.inline
-  implicit class FieldStatsResponseMutableBuilder[Self <: FieldStatsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: FieldStatsResponse](x: Self) {
     
-    @scala.inline
-    def setConflicts(value: StringDictionary[String]): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
+    inline def setConflicts(value: StringDictionary[String]): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictsUndefined: Self = StObject.set(x, "conflicts", js.undefined)
+    inline def setConflictsUndefined: Self = StObject.set(x, "conflicts", js.undefined)
     
-    @scala.inline
-    def setIndices(value: StringDictionary[FieldStatsResponseIndex]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: StringDictionary[FieldStatsResponseIndex]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_shards(value: ShardsResponse): Self = StObject.set(x, "_shards", value.asInstanceOf[js.Any])
+    inline def set_shards(value: ShardsResponse): Self = StObject.set(x, "_shards", value.asInstanceOf[js.Any])
   }
 }

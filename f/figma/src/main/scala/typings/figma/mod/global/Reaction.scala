@@ -12,19 +12,15 @@ trait Reaction extends StObject {
 }
 object Reaction {
   
-  @scala.inline
-  def apply(action: Action, trigger: Trigger): Reaction = {
+  inline def apply(action: Action, trigger: Trigger): Reaction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reaction]
   }
   
-  @scala.inline
-  implicit class ReactionMutableBuilder[Self <: Reaction] (val x: Self) extends AnyVal {
+  extension [Self <: Reaction](x: Self) {
     
-    @scala.inline
-    def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
   }
 }

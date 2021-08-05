@@ -20,18 +20,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceTypeBits extends StObject
 object DeviceTypeBits {
   
-  @scala.inline
-  def DEVICE_TYPE_ACCELERATOR: `0x8` = 0x8.asInstanceOf[`0x8`]
+  inline def DEVICE_TYPE_ACCELERATOR: `0x8` = 0x8.asInstanceOf[`0x8`]
   
-  @scala.inline
-  def DEVICE_TYPE_ALL: _0xFFFFFFFF = 4294967295.0.asInstanceOf[_0xFFFFFFFF]
+  inline def DEVICE_TYPE_ALL: _0xFFFFFFFF = 4294967295.0.asInstanceOf[_0xFFFFFFFF]
   
-  @scala.inline
-  def DEVICE_TYPE_CPU: `0x2` = 0x2.asInstanceOf[`0x2`]
+  inline def DEVICE_TYPE_CPU: `0x2` = 0x2.asInstanceOf[`0x2`]
   
-  @scala.inline
-  def DEVICE_TYPE_DEFAULT: `0x1` = 0x1.asInstanceOf[`0x1`]
+  inline def DEVICE_TYPE_DEFAULT: `0x1` = 0x1.asInstanceOf[`0x1`]
   
-  @scala.inline
-  def DEVICE_TYPE_GPU: `0x4` = 0x4.asInstanceOf[`0x4`]
+  inline def DEVICE_TYPE_GPU: `0x4` = 0x4.asInstanceOf[`0x4`]
 }

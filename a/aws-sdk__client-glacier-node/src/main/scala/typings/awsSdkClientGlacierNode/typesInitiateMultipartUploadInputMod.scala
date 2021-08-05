@@ -56,52 +56,38 @@ object typesInitiateMultipartUploadInputMod {
   }
   object InitiateMultipartUploadInput {
     
-    @scala.inline
-    def apply(accountId: String, vaultName: String): InitiateMultipartUploadInput = {
+    inline def apply(accountId: String, vaultName: String): InitiateMultipartUploadInput = {
       val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitiateMultipartUploadInput]
     }
     
-    @scala.inline
-    implicit class InitiateMultipartUploadInputMutableBuilder[Self <: InitiateMultipartUploadInput] (val x: Self) extends AnyVal {
+    extension [Self <: InitiateMultipartUploadInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchiveDescription(value: String): Self = StObject.set(x, "archiveDescription", value.asInstanceOf[js.Any])
+      inline def setArchiveDescription(value: String): Self = StObject.set(x, "archiveDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchiveDescriptionUndefined: Self = StObject.set(x, "archiveDescription", js.undefined)
+      inline def setArchiveDescriptionUndefined: Self = StObject.set(x, "archiveDescription", js.undefined)
       
-      @scala.inline
-      def setPartSize(value: String): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
+      inline def setPartSize(value: String): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
+      inline def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
       
-      @scala.inline
-      def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+      inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
     }
   }
 }

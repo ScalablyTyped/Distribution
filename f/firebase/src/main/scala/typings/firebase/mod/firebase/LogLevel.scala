@@ -22,21 +22,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogLevel extends StObject
 object LogLevel {
   
-  @scala.inline
-  def debug: typings.firebase.firebaseStrings.debug = "debug".asInstanceOf[typings.firebase.firebaseStrings.debug]
+  inline def debug: typings.firebase.firebaseStrings.debug = "debug".asInstanceOf[typings.firebase.firebaseStrings.debug]
   
-  @scala.inline
-  def error: typings.firebase.firebaseStrings.error = "error".asInstanceOf[typings.firebase.firebaseStrings.error]
+  inline def error: typings.firebase.firebaseStrings.error = "error".asInstanceOf[typings.firebase.firebaseStrings.error]
   
-  @scala.inline
-  def info: typings.firebase.firebaseStrings.info = "info".asInstanceOf[typings.firebase.firebaseStrings.info]
+  inline def info: typings.firebase.firebaseStrings.info = "info".asInstanceOf[typings.firebase.firebaseStrings.info]
   
-  @scala.inline
-  def silent: typings.firebase.firebaseStrings.silent = "silent".asInstanceOf[typings.firebase.firebaseStrings.silent]
+  inline def silent: typings.firebase.firebaseStrings.silent = "silent".asInstanceOf[typings.firebase.firebaseStrings.silent]
   
-  @scala.inline
-  def verbose: typings.firebase.firebaseStrings.verbose = "verbose".asInstanceOf[typings.firebase.firebaseStrings.verbose]
+  inline def verbose: typings.firebase.firebaseStrings.verbose = "verbose".asInstanceOf[typings.firebase.firebaseStrings.verbose]
   
-  @scala.inline
-  def warn: typings.firebase.firebaseStrings.warn = "warn".asInstanceOf[typings.firebase.firebaseStrings.warn]
+  inline def warn: typings.firebase.firebaseStrings.warn = "warn".asInstanceOf[typings.firebase.firebaseStrings.warn]
 }

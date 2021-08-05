@@ -14,28 +14,21 @@ trait GoogleCloudDialogflowV2IntentMessageMediaContent extends StObject {
 }
 object GoogleCloudDialogflowV2IntentMessageMediaContent {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2IntentMessageMediaContent = {
+  inline def apply(): GoogleCloudDialogflowV2IntentMessageMediaContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageMediaContent]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2IntentMessageMediaContentMutableBuilder[Self <: GoogleCloudDialogflowV2IntentMessageMediaContent] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2IntentMessageMediaContent](x: Self) {
     
-    @scala.inline
-    def setMediaObjects(value: js.Array[GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject]): Self = StObject.set(x, "mediaObjects", value.asInstanceOf[js.Any])
+    inline def setMediaObjects(value: js.Array[GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject]): Self = StObject.set(x, "mediaObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaObjectsUndefined: Self = StObject.set(x, "mediaObjects", js.undefined)
+    inline def setMediaObjectsUndefined: Self = StObject.set(x, "mediaObjects", js.undefined)
     
-    @scala.inline
-    def setMediaObjectsVarargs(value: GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value :_*))
+    inline def setMediaObjectsVarargs(value: GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value :_*))
     
-    @scala.inline
-    def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
   }
 }

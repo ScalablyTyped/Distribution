@@ -41,10 +41,8 @@ object distGrammarMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def buildMessage(expected: js.Array[Expectation]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildMessage")(expected.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def buildMessage(expected: js.Array[Expectation], found: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildMessage")(expected.asInstanceOf[js.Any], found.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def buildMessage(expected: js.Array[Expectation]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildMessage")(expected.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def buildMessage(expected: js.Array[Expectation], found: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildMessage")(expected.asInstanceOf[js.Any], found.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("sip.js/lib/grammar/pegjs/dist/grammar", "parse")
@@ -61,36 +59,31 @@ object distGrammarMod {
   trait Expectation extends StObject
   object Expectation {
     
-    @scala.inline
-    def IAnyExpectation(): typings.sipJs.distGrammarMod.IAnyExpectation = {
+    inline def IAnyExpectation(): typings.sipJs.distGrammarMod.IAnyExpectation = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("any")
       __obj.asInstanceOf[typings.sipJs.distGrammarMod.IAnyExpectation]
     }
     
-    @scala.inline
-    def IClassExpectation(ignoreCase: Boolean, inverted: Boolean, parts: IClassParts): typings.sipJs.distGrammarMod.IClassExpectation = {
+    inline def IClassExpectation(ignoreCase: Boolean, inverted: Boolean, parts: IClassParts): typings.sipJs.distGrammarMod.IClassExpectation = {
       val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any], inverted = inverted.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("class")
       __obj.asInstanceOf[typings.sipJs.distGrammarMod.IClassExpectation]
     }
     
-    @scala.inline
-    def IEndExpectation(): typings.sipJs.distGrammarMod.IEndExpectation = {
+    inline def IEndExpectation(): typings.sipJs.distGrammarMod.IEndExpectation = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("end")
       __obj.asInstanceOf[typings.sipJs.distGrammarMod.IEndExpectation]
     }
     
-    @scala.inline
-    def ILiteralExpectation(ignoreCase: Boolean, text: String): typings.sipJs.distGrammarMod.ILiteralExpectation = {
+    inline def ILiteralExpectation(ignoreCase: Boolean, text: String): typings.sipJs.distGrammarMod.ILiteralExpectation = {
       val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("literal")
       __obj.asInstanceOf[typings.sipJs.distGrammarMod.ILiteralExpectation]
     }
     
-    @scala.inline
-    def IOtherExpectation(description: String): typings.sipJs.distGrammarMod.IOtherExpectation = {
+    inline def IOtherExpectation(description: String): typings.sipJs.distGrammarMod.IOtherExpectation = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("other")
       __obj.asInstanceOf[typings.sipJs.distGrammarMod.IOtherExpectation]
@@ -105,18 +98,15 @@ object distGrammarMod {
   }
   object IAnyExpectation {
     
-    @scala.inline
-    def apply(): IAnyExpectation = {
+    inline def apply(): IAnyExpectation = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("any")
       __obj.asInstanceOf[IAnyExpectation]
     }
     
-    @scala.inline
-    implicit class IAnyExpectationMutableBuilder[Self <: IAnyExpectation] (val x: Self) extends AnyVal {
+    extension [Self <: IAnyExpectation](x: Self) {
       
-      @scala.inline
-      def setType(value: any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,27 +124,21 @@ object distGrammarMod {
   }
   object IClassExpectation {
     
-    @scala.inline
-    def apply(ignoreCase: Boolean, inverted: Boolean, parts: IClassParts): IClassExpectation = {
+    inline def apply(ignoreCase: Boolean, inverted: Boolean, parts: IClassParts): IClassExpectation = {
       val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any], inverted = inverted.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("class")
       __obj.asInstanceOf[IClassExpectation]
     }
     
-    @scala.inline
-    implicit class IClassExpectationMutableBuilder[Self <: IClassExpectation] (val x: Self) extends AnyVal {
+    extension [Self <: IClassExpectation](x: Self) {
       
-      @scala.inline
-      def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+      inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+      inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParts(value: IClassParts): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: IClassParts): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: `class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,18 +155,15 @@ object distGrammarMod {
   }
   object IEndExpectation {
     
-    @scala.inline
-    def apply(): IEndExpectation = {
+    inline def apply(): IEndExpectation = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("end")
       __obj.asInstanceOf[IEndExpectation]
     }
     
-    @scala.inline
-    implicit class IEndExpectationMutableBuilder[Self <: IEndExpectation] (val x: Self) extends AnyVal {
+    extension [Self <: IEndExpectation](x: Self) {
       
-      @scala.inline
-      def setType(value: end): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: end): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,23 +177,18 @@ object distGrammarMod {
   }
   object IFilePosition {
     
-    @scala.inline
-    def apply(column: Double, line: Double, offset: Double): IFilePosition = {
+    inline def apply(column: Double, line: Double, offset: Double): IFilePosition = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFilePosition]
     }
     
-    @scala.inline
-    implicit class IFilePositionMutableBuilder[Self <: IFilePosition] (val x: Self) extends AnyVal {
+    extension [Self <: IFilePosition](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -224,20 +200,16 @@ object distGrammarMod {
   }
   object IFileRange {
     
-    @scala.inline
-    def apply(end: IFilePosition, start: IFilePosition): IFileRange = {
+    inline def apply(end: IFilePosition, start: IFilePosition): IFileRange = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFileRange]
     }
     
-    @scala.inline
-    implicit class IFileRangeMutableBuilder[Self <: IFileRange] (val x: Self) extends AnyVal {
+    extension [Self <: IFileRange](x: Self) {
       
-      @scala.inline
-      def setEnd(value: IFilePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: IFilePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: IFilePosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: IFilePosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -253,24 +225,19 @@ object distGrammarMod {
   }
   object ILiteralExpectation {
     
-    @scala.inline
-    def apply(ignoreCase: Boolean, text: String): ILiteralExpectation = {
+    inline def apply(ignoreCase: Boolean, text: String): ILiteralExpectation = {
       val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("literal")
       __obj.asInstanceOf[ILiteralExpectation]
     }
     
-    @scala.inline
-    implicit class ILiteralExpectationMutableBuilder[Self <: ILiteralExpectation] (val x: Self) extends AnyVal {
+    extension [Self <: ILiteralExpectation](x: Self) {
       
-      @scala.inline
-      def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+      inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: literal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: literal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -284,21 +251,17 @@ object distGrammarMod {
   }
   object IOtherExpectation {
     
-    @scala.inline
-    def apply(description: String): IOtherExpectation = {
+    inline def apply(description: String): IOtherExpectation = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("other")
       __obj.asInstanceOf[IOtherExpectation]
     }
     
-    @scala.inline
-    implicit class IOtherExpectationMutableBuilder[Self <: IOtherExpectation] (val x: Self) extends AnyVal {
+    extension [Self <: IOtherExpectation](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: other): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: other): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -314,32 +277,24 @@ object distGrammarMod {
   }
   object IParseOptions {
     
-    @scala.inline
-    def apply(): IParseOptions = {
+    inline def apply(): IParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IParseOptions]
     }
     
-    @scala.inline
-    implicit class IParseOptionsMutableBuilder[Self <: IParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IParseOptions](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setStartRule(value: String): Self = StObject.set(x, "startRule", value.asInstanceOf[js.Any])
+      inline def setStartRule(value: String): Self = StObject.set(x, "startRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartRuleUndefined: Self = StObject.set(x, "startRule", js.undefined)
+      inline def setStartRuleUndefined: Self = StObject.set(x, "startRule", js.undefined)
       
-      @scala.inline
-      def setTracer(value: js.Any): Self = StObject.set(x, "tracer", value.asInstanceOf[js.Any])
+      inline def setTracer(value: js.Any): Self = StObject.set(x, "tracer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracerUndefined: Self = StObject.set(x, "tracer", js.undefined)
+      inline def setTracerUndefined: Self = StObject.set(x, "tracer", js.undefined)
     }
   }
   

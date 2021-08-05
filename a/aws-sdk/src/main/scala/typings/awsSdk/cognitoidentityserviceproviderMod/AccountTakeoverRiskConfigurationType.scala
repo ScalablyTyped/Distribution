@@ -18,22 +18,17 @@ trait AccountTakeoverRiskConfigurationType extends StObject {
 }
 object AccountTakeoverRiskConfigurationType {
   
-  @scala.inline
-  def apply(Actions: AccountTakeoverActionsType): AccountTakeoverRiskConfigurationType = {
+  inline def apply(Actions: AccountTakeoverActionsType): AccountTakeoverRiskConfigurationType = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountTakeoverRiskConfigurationType]
   }
   
-  @scala.inline
-  implicit class AccountTakeoverRiskConfigurationTypeMutableBuilder[Self <: AccountTakeoverRiskConfigurationType] (val x: Self) extends AnyVal {
+  extension [Self <: AccountTakeoverRiskConfigurationType](x: Self) {
     
-    @scala.inline
-    def setActions(value: AccountTakeoverActionsType): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: AccountTakeoverActionsType): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyConfiguration(value: NotifyConfigurationType): Self = StObject.set(x, "NotifyConfiguration", value.asInstanceOf[js.Any])
+    inline def setNotifyConfiguration(value: NotifyConfigurationType): Self = StObject.set(x, "NotifyConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyConfigurationUndefined: Self = StObject.set(x, "NotifyConfiguration", js.undefined)
+    inline def setNotifyConfigurationUndefined: Self = StObject.set(x, "NotifyConfiguration", js.undefined)
   }
 }

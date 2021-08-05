@@ -24,31 +24,23 @@ trait SchemaLiveChatUserBannedMessageDetails extends StObject {
 }
 object SchemaLiveChatUserBannedMessageDetails {
   
-  @scala.inline
-  def apply(): SchemaLiveChatUserBannedMessageDetails = {
+  inline def apply(): SchemaLiveChatUserBannedMessageDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiveChatUserBannedMessageDetails]
   }
   
-  @scala.inline
-  implicit class SchemaLiveChatUserBannedMessageDetailsMutableBuilder[Self <: SchemaLiveChatUserBannedMessageDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiveChatUserBannedMessageDetails](x: Self) {
     
-    @scala.inline
-    def setBanDurationSeconds(value: String): Self = StObject.set(x, "banDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setBanDurationSeconds(value: String): Self = StObject.set(x, "banDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBanDurationSecondsUndefined: Self = StObject.set(x, "banDurationSeconds", js.undefined)
+    inline def setBanDurationSecondsUndefined: Self = StObject.set(x, "banDurationSeconds", js.undefined)
     
-    @scala.inline
-    def setBanType(value: String): Self = StObject.set(x, "banType", value.asInstanceOf[js.Any])
+    inline def setBanType(value: String): Self = StObject.set(x, "banType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBanTypeUndefined: Self = StObject.set(x, "banType", js.undefined)
+    inline def setBanTypeUndefined: Self = StObject.set(x, "banType", js.undefined)
     
-    @scala.inline
-    def setBannedUserDetails(value: SchemaChannelProfileDetails): Self = StObject.set(x, "bannedUserDetails", value.asInstanceOf[js.Any])
+    inline def setBannedUserDetails(value: SchemaChannelProfileDetails): Self = StObject.set(x, "bannedUserDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannedUserDetailsUndefined: Self = StObject.set(x, "bannedUserDetails", js.undefined)
+    inline def setBannedUserDetailsUndefined: Self = StObject.set(x, "bannedUserDetails", js.undefined)
   }
 }

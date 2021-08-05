@@ -24,8 +24,7 @@ trait Request extends StObject {
 }
 object Request {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: () => js.Any,
     always: js.Function1[/* data */ js.Any, Unit] => js.Any,
     canAbort: () => Boolean,
@@ -38,25 +37,18 @@ object Request {
     __obj.asInstanceOf[Request]
   }
   
-  @scala.inline
-  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+  extension [Self <: Request](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => js.Any): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => js.Any): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAlways(value: js.Function1[/* data */ js.Any, Unit] => js.Any): Self = StObject.set(x, "always", js.Any.fromFunction1(value))
+    inline def setAlways(value: js.Function1[/* data */ js.Any, Unit] => js.Any): Self = StObject.set(x, "always", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCanAbort(value: () => Boolean): Self = StObject.set(x, "canAbort", js.Any.fromFunction0(value))
+    inline def setCanAbort(value: () => Boolean): Self = StObject.set(x, "canAbort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDone(value: js.Function1[/* data */ js.Any, Unit] => js.Any): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
+    inline def setDone(value: js.Function1[/* data */ js.Any, Unit] => js.Any): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFail(value: js.Function1[/* data */ js.Any, Unit] => js.Any): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: js.Function1[/* data */ js.Any, Unit] => js.Any): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThen(value: (js.Function1[/* data */ js.Any, js.Any], js.Function1[/* data */ Error, js.Any]) => js.Any): Self = StObject.set(x, "then", js.Any.fromFunction2(value))
+    inline def setThen(value: (js.Function1[/* data */ js.Any, js.Any], js.Function1[/* data */ Error, js.Any]) => js.Any): Self = StObject.set(x, "then", js.Any.fromFunction2(value))
   }
 }

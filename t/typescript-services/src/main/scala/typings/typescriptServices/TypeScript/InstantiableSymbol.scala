@@ -14,8 +14,7 @@ trait InstantiableSymbol extends StObject {
 }
 object InstantiableSymbol {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAllowedToReferenceTypeParameters: () => js.Array[PullTypeParameterSymbol],
     getIsSpecialized: () => Boolean,
     getTypeParameterArgumentMap: () => TypeArgumentMap
@@ -24,16 +23,12 @@ object InstantiableSymbol {
     __obj.asInstanceOf[InstantiableSymbol]
   }
   
-  @scala.inline
-  implicit class InstantiableSymbolMutableBuilder[Self <: InstantiableSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: InstantiableSymbol](x: Self) {
     
-    @scala.inline
-    def setGetAllowedToReferenceTypeParameters(value: () => js.Array[PullTypeParameterSymbol]): Self = StObject.set(x, "getAllowedToReferenceTypeParameters", js.Any.fromFunction0(value))
+    inline def setGetAllowedToReferenceTypeParameters(value: () => js.Array[PullTypeParameterSymbol]): Self = StObject.set(x, "getAllowedToReferenceTypeParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsSpecialized(value: () => Boolean): Self = StObject.set(x, "getIsSpecialized", js.Any.fromFunction0(value))
+    inline def setGetIsSpecialized(value: () => Boolean): Self = StObject.set(x, "getIsSpecialized", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTypeParameterArgumentMap(value: () => TypeArgumentMap): Self = StObject.set(x, "getTypeParameterArgumentMap", js.Any.fromFunction0(value))
+    inline def setGetTypeParameterArgumentMap(value: () => TypeArgumentMap): Self = StObject.set(x, "getTypeParameterArgumentMap", js.Any.fromFunction0(value))
   }
 }

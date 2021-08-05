@@ -21,49 +21,35 @@ trait ITpProcessRequest extends StObject {
 }
 object ITpProcessRequest {
   
-  @scala.inline
-  def apply(): ITpProcessRequest = {
+  inline def apply(): ITpProcessRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITpProcessRequest]
   }
   
-  @scala.inline
-  implicit class ITpProcessRequestMutableBuilder[Self <: ITpProcessRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ITpProcessRequest](x: Self) {
     
-    @scala.inline
-    def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
+    inline def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextIdNull: Self = StObject.set(x, "contextId", null)
+    inline def setContextIdNull: Self = StObject.set(x, "contextId", null)
     
-    @scala.inline
-    def setContextIdUndefined: Self = StObject.set(x, "contextId", js.undefined)
+    inline def setContextIdUndefined: Self = StObject.set(x, "contextId", js.undefined)
     
-    @scala.inline
-    def setHeader(value: ITransactionHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: ITransactionHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderNull: Self = StObject.set(x, "header", null)
+    inline def setHeaderNull: Self = StObject.set(x, "header", null)
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setPayload(value: Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadNull: Self = StObject.set(x, "payload", null)
+    inline def setPayloadNull: Self = StObject.set(x, "payload", null)
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureNull: Self = StObject.set(x, "signature", null)
+    inline def setSignatureNull: Self = StObject.set(x, "signature", null)
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

@@ -10,8 +10,7 @@ trait PutBucketVersioningOutput
      with typings.awsSdkClientS3Browser.typesPutBucketVersioningOutputMod.PutBucketVersioningOutput
 object PutBucketVersioningOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): PutBucketVersioningOutput = {
+  inline def apply($metadata: ResponseMetadata): PutBucketVersioningOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketVersioningOutput]
   }

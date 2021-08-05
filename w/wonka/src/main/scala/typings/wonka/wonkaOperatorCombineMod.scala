@@ -11,6 +11,5 @@ object wonkaOperatorCombineMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def combine[A, B](a: Source[A]): js.Function1[/* b */ Source[B], Source[js.Tuple2[A, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* b */ Source[B], Source[js.Tuple2[A, B]]]]
+  inline def combine[A, B](a: Source[A]): js.Function1[/* b */ Source[B], Source[js.Tuple2[A, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* b */ Source[B], Source[js.Tuple2[A, B]]]]
 }

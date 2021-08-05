@@ -13,8 +13,7 @@ object layoutsizeComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSizeTypeFromLayoutSizeType(layoutSizeType: LayoutSizeType): width | height = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeTypeFromLayoutSizeType")(layoutSizeType.asInstanceOf[js.Any]).asInstanceOf[width | height]
+  inline def getSizeTypeFromLayoutSizeType(layoutSizeType: LayoutSizeType): width | height = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeTypeFromLayoutSizeType")(layoutSizeType.asInstanceOf[js.Any]).asInstanceOf[width | height]
   
   /* Rewritten from type alias, can be one of: 
     - scala.Double
@@ -38,38 +37,28 @@ object layoutsizeComponentMod {
   }
   object LayoutSizeIndex {
     
-    @scala.inline
-    def apply(): LayoutSizeIndex = {
+    inline def apply(): LayoutSizeIndex = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutSizeIndex]
     }
     
-    @scala.inline
-    implicit class LayoutSizeIndexMutableBuilder[Self <: LayoutSizeIndex] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutSizeIndex](x: Self) {
       
-      @scala.inline
-      def setChildHeight(value: LayoutSize): Self = StObject.set(x, "childHeight", value.asInstanceOf[js.Any])
+      inline def setChildHeight(value: LayoutSize): Self = StObject.set(x, "childHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildHeightUndefined: Self = StObject.set(x, "childHeight", js.undefined)
+      inline def setChildHeightUndefined: Self = StObject.set(x, "childHeight", js.undefined)
       
-      @scala.inline
-      def setChildWidth(value: LayoutSize): Self = StObject.set(x, "childWidth", value.asInstanceOf[js.Any])
+      inline def setChildWidth(value: LayoutSize): Self = StObject.set(x, "childWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildWidthUndefined: Self = StObject.set(x, "childWidth", js.undefined)
+      inline def setChildWidthUndefined: Self = StObject.set(x, "childWidth", js.undefined)
       
-      @scala.inline
-      def setHeight(value: LayoutSize): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: LayoutSize): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: LayoutSize): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: LayoutSize): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

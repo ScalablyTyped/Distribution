@@ -21,19 +21,15 @@ trait ITableViewTableWinSaveInfo extends StObject {
 }
 object ITableViewTableWinSaveInfo {
   
-  @scala.inline
-  def apply(qCaption: String, qPos: IRect): ITableViewTableWinSaveInfo = {
+  inline def apply(qCaption: String, qPos: IRect): ITableViewTableWinSaveInfo = {
     val __obj = js.Dynamic.literal(qCaption = qCaption.asInstanceOf[js.Any], qPos = qPos.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITableViewTableWinSaveInfo]
   }
   
-  @scala.inline
-  implicit class ITableViewTableWinSaveInfoMutableBuilder[Self <: ITableViewTableWinSaveInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ITableViewTableWinSaveInfo](x: Self) {
     
-    @scala.inline
-    def setQCaption(value: String): Self = StObject.set(x, "qCaption", value.asInstanceOf[js.Any])
+    inline def setQCaption(value: String): Self = StObject.set(x, "qCaption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPos(value: IRect): Self = StObject.set(x, "qPos", value.asInstanceOf[js.Any])
+    inline def setQPos(value: IRect): Self = StObject.set(x, "qPos", value.asInstanceOf[js.Any])
   }
 }

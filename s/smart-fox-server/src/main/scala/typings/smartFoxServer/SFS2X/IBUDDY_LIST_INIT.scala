@@ -14,25 +14,19 @@ trait IBUDDY_LIST_INIT extends StObject {
 }
 object IBUDDY_LIST_INIT {
   
-  @scala.inline
-  def apply(buddyList: js.Array[SFSBuddy], myVariables: js.Array[SFSBuddyVariable]): IBUDDY_LIST_INIT = {
+  inline def apply(buddyList: js.Array[SFSBuddy], myVariables: js.Array[SFSBuddyVariable]): IBUDDY_LIST_INIT = {
     val __obj = js.Dynamic.literal(buddyList = buddyList.asInstanceOf[js.Any], myVariables = myVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBUDDY_LIST_INIT]
   }
   
-  @scala.inline
-  implicit class IBUDDY_LIST_INITMutableBuilder[Self <: IBUDDY_LIST_INIT] (val x: Self) extends AnyVal {
+  extension [Self <: IBUDDY_LIST_INIT](x: Self) {
     
-    @scala.inline
-    def setBuddyList(value: js.Array[SFSBuddy]): Self = StObject.set(x, "buddyList", value.asInstanceOf[js.Any])
+    inline def setBuddyList(value: js.Array[SFSBuddy]): Self = StObject.set(x, "buddyList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuddyListVarargs(value: SFSBuddy*): Self = StObject.set(x, "buddyList", js.Array(value :_*))
+    inline def setBuddyListVarargs(value: SFSBuddy*): Self = StObject.set(x, "buddyList", js.Array(value :_*))
     
-    @scala.inline
-    def setMyVariables(value: js.Array[SFSBuddyVariable]): Self = StObject.set(x, "myVariables", value.asInstanceOf[js.Any])
+    inline def setMyVariables(value: js.Array[SFSBuddyVariable]): Self = StObject.set(x, "myVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMyVariablesVarargs(value: SFSBuddyVariable*): Self = StObject.set(x, "myVariables", js.Array(value :_*))
+    inline def setMyVariablesVarargs(value: SFSBuddyVariable*): Self = StObject.set(x, "myVariables", js.Array(value :_*))
   }
 }

@@ -16,19 +16,15 @@ trait SchemaSdsConfig extends StObject {
 }
 object SchemaSdsConfig {
   
-  @scala.inline
-  def apply(): SchemaSdsConfig = {
+  inline def apply(): SchemaSdsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSdsConfig]
   }
   
-  @scala.inline
-  implicit class SchemaSdsConfigMutableBuilder[Self <: SchemaSdsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSdsConfig](x: Self) {
     
-    @scala.inline
-    def setGrpcServiceConfig(value: SchemaGrpcServiceConfig): Self = StObject.set(x, "grpcServiceConfig", value.asInstanceOf[js.Any])
+    inline def setGrpcServiceConfig(value: SchemaGrpcServiceConfig): Self = StObject.set(x, "grpcServiceConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrpcServiceConfigUndefined: Self = StObject.set(x, "grpcServiceConfig", js.undefined)
+    inline def setGrpcServiceConfigUndefined: Self = StObject.set(x, "grpcServiceConfig", js.undefined)
   }
 }

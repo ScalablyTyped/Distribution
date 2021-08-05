@@ -18,17 +18,14 @@ object Qio {
   }
   object ForEach {
     
-    @scala.inline
-    def apply(forEach: ForEachCallback => Promise[Unit]): ForEach = {
+    inline def apply(forEach: ForEachCallback => Promise[Unit]): ForEach = {
       val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction1(forEach))
       __obj.asInstanceOf[ForEach]
     }
     
-    @scala.inline
-    implicit class ForEachMutableBuilder[Self <: ForEach] (val x: Self) extends AnyVal {
+    extension [Self <: ForEach](x: Self) {
       
-      @scala.inline
-      def setForEach(value: ForEachCallback => Promise[Unit]): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: ForEachCallback => Promise[Unit]): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     }
   }
   

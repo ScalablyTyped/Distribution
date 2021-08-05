@@ -13,25 +13,19 @@ trait RegexTokenizerOptions extends StObject {
 }
 object RegexTokenizerOptions {
   
-  @scala.inline
-  def apply(): RegexTokenizerOptions = {
+  inline def apply(): RegexTokenizerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegexTokenizerOptions]
   }
   
-  @scala.inline
-  implicit class RegexTokenizerOptionsMutableBuilder[Self <: RegexTokenizerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RegexTokenizerOptions](x: Self) {
     
-    @scala.inline
-    def setDiscardEmpty(value: Boolean): Self = StObject.set(x, "discardEmpty", value.asInstanceOf[js.Any])
+    inline def setDiscardEmpty(value: Boolean): Self = StObject.set(x, "discardEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscardEmptyUndefined: Self = StObject.set(x, "discardEmpty", js.undefined)
+    inline def setDiscardEmptyUndefined: Self = StObject.set(x, "discardEmpty", js.undefined)
     
-    @scala.inline
-    def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
   }
 }

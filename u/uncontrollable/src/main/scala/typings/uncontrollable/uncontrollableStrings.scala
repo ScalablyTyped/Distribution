@@ -8,11 +8,9 @@ object uncontrollableStrings {
   
   @js.native
   sealed trait ConfigMap extends StObject
-  @scala.inline
-  def ConfigMap: ConfigMap = "ConfigMap".asInstanceOf[ConfigMap]
+  inline def ConfigMap: ConfigMap = "ConfigMap".asInstanceOf[ConfigMap]
   
   @js.native
   sealed trait FilterFlags extends StObject
-  @scala.inline
-  def FilterFlags: FilterFlags = "FilterFlags".asInstanceOf[FilterFlags]
+  inline def FilterFlags: FilterFlags = "FilterFlags".asInstanceOf[FilterFlags]
 }

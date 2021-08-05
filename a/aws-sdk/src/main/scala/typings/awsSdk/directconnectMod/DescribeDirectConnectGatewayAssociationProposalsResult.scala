@@ -18,28 +18,21 @@ trait DescribeDirectConnectGatewayAssociationProposalsResult extends StObject {
 }
 object DescribeDirectConnectGatewayAssociationProposalsResult {
   
-  @scala.inline
-  def apply(): DescribeDirectConnectGatewayAssociationProposalsResult = {
+  inline def apply(): DescribeDirectConnectGatewayAssociationProposalsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDirectConnectGatewayAssociationProposalsResult]
   }
   
-  @scala.inline
-  implicit class DescribeDirectConnectGatewayAssociationProposalsResultMutableBuilder[Self <: DescribeDirectConnectGatewayAssociationProposalsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDirectConnectGatewayAssociationProposalsResult](x: Self) {
     
-    @scala.inline
-    def setDirectConnectGatewayAssociationProposals(value: DirectConnectGatewayAssociationProposalList): Self = StObject.set(x, "directConnectGatewayAssociationProposals", value.asInstanceOf[js.Any])
+    inline def setDirectConnectGatewayAssociationProposals(value: DirectConnectGatewayAssociationProposalList): Self = StObject.set(x, "directConnectGatewayAssociationProposals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectConnectGatewayAssociationProposalsUndefined: Self = StObject.set(x, "directConnectGatewayAssociationProposals", js.undefined)
+    inline def setDirectConnectGatewayAssociationProposalsUndefined: Self = StObject.set(x, "directConnectGatewayAssociationProposals", js.undefined)
     
-    @scala.inline
-    def setDirectConnectGatewayAssociationProposalsVarargs(value: DirectConnectGatewayAssociationProposal*): Self = StObject.set(x, "directConnectGatewayAssociationProposals", js.Array(value :_*))
+    inline def setDirectConnectGatewayAssociationProposalsVarargs(value: DirectConnectGatewayAssociationProposal*): Self = StObject.set(x, "directConnectGatewayAssociationProposals", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

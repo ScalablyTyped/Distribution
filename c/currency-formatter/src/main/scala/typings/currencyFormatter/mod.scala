@@ -19,14 +19,11 @@ object mod {
   @js.native
   val defaultCurrency: Currency = js.native
   
-  @scala.inline
-  def findCurrency(currencyCode: String): Currency = ^.asInstanceOf[js.Dynamic].applyDynamic("findCurrency")(currencyCode.asInstanceOf[js.Any]).asInstanceOf[Currency]
+  inline def findCurrency(currencyCode: String): Currency = ^.asInstanceOf[js.Dynamic].applyDynamic("findCurrency")(currencyCode.asInstanceOf[js.Any]).asInstanceOf[Currency]
   
-  @scala.inline
-  def format(value: Double, options: Code): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(value: Double, options: Code): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def unformat(value: String, options: Code): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unformat")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def unformat(value: String, options: Code): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unformat")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   trait Currency extends StObject {
     
@@ -46,8 +43,7 @@ object mod {
   }
   object Currency {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       code: String,
       decimalDigits: Double,
       decimalSeparator: String,
@@ -60,29 +56,21 @@ object mod {
       __obj.asInstanceOf[Currency]
     }
     
-    @scala.inline
-    implicit class CurrencyMutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
+    extension [Self <: Currency](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalDigits(value: Double): Self = StObject.set(x, "decimalDigits", value.asInstanceOf[js.Any])
+      inline def setDecimalDigits(value: Double): Self = StObject.set(x, "decimalDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
+      inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceBetweenAmountAndSymbol(value: Boolean): Self = StObject.set(x, "spaceBetweenAmountAndSymbol", value.asInstanceOf[js.Any])
+      inline def setSpaceBetweenAmountAndSymbol(value: Boolean): Self = StObject.set(x, "spaceBetweenAmountAndSymbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolOnLeft(value: Boolean): Self = StObject.set(x, "symbolOnLeft", value.asInstanceOf[js.Any])
+      inline def setSymbolOnLeft(value: Boolean): Self = StObject.set(x, "symbolOnLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThousandsSeparator(value: String): Self = StObject.set(x, "thousandsSeparator", value.asInstanceOf[js.Any])
+      inline def setThousandsSeparator(value: String): Self = StObject.set(x, "thousandsSeparator", value.asInstanceOf[js.Any])
     }
   }
 }

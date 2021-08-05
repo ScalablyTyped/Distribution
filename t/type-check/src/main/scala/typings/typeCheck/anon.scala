@@ -14,20 +14,16 @@ object anon {
   }
   object TypeOf {
     
-    @scala.inline
-    def apply(typeOf: String, validate: js.Any => js.Any): TypeOf = {
+    inline def apply(typeOf: String, validate: js.Any => js.Any): TypeOf = {
       val __obj = js.Dynamic.literal(typeOf = typeOf.asInstanceOf[js.Any], validate = js.Any.fromFunction1(validate))
       __obj.asInstanceOf[TypeOf]
     }
     
-    @scala.inline
-    implicit class TypeOfMutableBuilder[Self <: TypeOf] (val x: Self) extends AnyVal {
+    extension [Self <: TypeOf](x: Self) {
       
-      @scala.inline
-      def setTypeOf(value: String): Self = StObject.set(x, "typeOf", value.asInstanceOf[js.Any])
+      inline def setTypeOf(value: String): Self = StObject.set(x, "typeOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidate(value: js.Any => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: js.Any => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }
   }
 }

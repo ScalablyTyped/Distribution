@@ -13,17 +13,14 @@ object observerResultMod {
   }
   object ObserverResult {
     
-    @scala.inline
-    def apply(observe: (Double, Labels) => Unit): ObserverResult = {
+    inline def apply(observe: (Double, Labels) => Unit): ObserverResult = {
       val __obj = js.Dynamic.literal(observe = js.Any.fromFunction2(observe))
       __obj.asInstanceOf[ObserverResult]
     }
     
-    @scala.inline
-    implicit class ObserverResultMutableBuilder[Self <: ObserverResult] (val x: Self) extends AnyVal {
+    extension [Self <: ObserverResult](x: Self) {
       
-      @scala.inline
-      def setObserve(value: (Double, Labels) => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction2(value))
+      inline def setObserve(value: (Double, Labels) => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction2(value))
     }
   }
 }

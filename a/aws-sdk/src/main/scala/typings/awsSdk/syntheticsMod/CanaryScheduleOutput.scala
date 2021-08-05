@@ -18,25 +18,19 @@ trait CanaryScheduleOutput extends StObject {
 }
 object CanaryScheduleOutput {
   
-  @scala.inline
-  def apply(): CanaryScheduleOutput = {
+  inline def apply(): CanaryScheduleOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanaryScheduleOutput]
   }
   
-  @scala.inline
-  implicit class CanaryScheduleOutputMutableBuilder[Self <: CanaryScheduleOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CanaryScheduleOutput](x: Self) {
     
-    @scala.inline
-    def setDurationInSeconds(value: MaxOneYearInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationInSeconds(value: MaxOneYearInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
+    inline def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
   }
 }

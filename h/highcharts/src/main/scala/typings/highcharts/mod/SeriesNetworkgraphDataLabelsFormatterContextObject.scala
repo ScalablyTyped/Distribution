@@ -22,8 +22,7 @@ trait SeriesNetworkgraphDataLabelsFormatterContextObject
 }
 object SeriesNetworkgraphDataLabelsFormatterContextObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: ColorString,
     colorIndex: Double,
     key: String,
@@ -35,13 +34,10 @@ object SeriesNetworkgraphDataLabelsFormatterContextObject {
     __obj.asInstanceOf[SeriesNetworkgraphDataLabelsFormatterContextObject]
   }
   
-  @scala.inline
-  implicit class SeriesNetworkgraphDataLabelsFormatterContextObjectMutableBuilder[Self <: SeriesNetworkgraphDataLabelsFormatterContextObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesNetworkgraphDataLabelsFormatterContextObject](x: Self) {
     
-    @scala.inline
-    def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

@@ -18,34 +18,25 @@ trait DisambiguationResult extends StObject {
 }
 object DisambiguationResult {
   
-  @scala.inline
-  def apply(): DisambiguationResult = {
+  inline def apply(): DisambiguationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisambiguationResult]
   }
   
-  @scala.inline
-  implicit class DisambiguationResultMutableBuilder[Self <: DisambiguationResult] (val x: Self) extends AnyVal {
+  extension [Self <: DisambiguationResult](x: Self) {
     
-    @scala.inline
-    def setDbpedia_resource(value: String): Self = StObject.set(x, "dbpedia_resource", value.asInstanceOf[js.Any])
+    inline def setDbpedia_resource(value: String): Self = StObject.set(x, "dbpedia_resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbpedia_resourceUndefined: Self = StObject.set(x, "dbpedia_resource", js.undefined)
+    inline def setDbpedia_resourceUndefined: Self = StObject.set(x, "dbpedia_resource", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSubtype(value: js.Array[String]): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+    inline def setSubtype(value: js.Array[String]): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
+    inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
     
-    @scala.inline
-    def setSubtypeVarargs(value: String*): Self = StObject.set(x, "subtype", js.Array(value :_*))
+    inline def setSubtypeVarargs(value: String*): Self = StObject.set(x, "subtype", js.Array(value :_*))
   }
 }

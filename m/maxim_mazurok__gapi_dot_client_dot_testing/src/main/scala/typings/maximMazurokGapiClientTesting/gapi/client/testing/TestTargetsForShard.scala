@@ -14,22 +14,17 @@ trait TestTargetsForShard extends StObject {
 }
 object TestTargetsForShard {
   
-  @scala.inline
-  def apply(): TestTargetsForShard = {
+  inline def apply(): TestTargetsForShard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestTargetsForShard]
   }
   
-  @scala.inline
-  implicit class TestTargetsForShardMutableBuilder[Self <: TestTargetsForShard] (val x: Self) extends AnyVal {
+  extension [Self <: TestTargetsForShard](x: Self) {
     
-    @scala.inline
-    def setTestTargets(value: js.Array[String]): Self = StObject.set(x, "testTargets", value.asInstanceOf[js.Any])
+    inline def setTestTargets(value: js.Array[String]): Self = StObject.set(x, "testTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestTargetsUndefined: Self = StObject.set(x, "testTargets", js.undefined)
+    inline def setTestTargetsUndefined: Self = StObject.set(x, "testTargets", js.undefined)
     
-    @scala.inline
-    def setTestTargetsVarargs(value: String*): Self = StObject.set(x, "testTargets", js.Array(value :_*))
+    inline def setTestTargetsVarargs(value: String*): Self = StObject.set(x, "testTargets", js.Array(value :_*))
   }
 }

@@ -204,8 +204,7 @@ object chartCursorSettingsMod {
   }
   object ChartCursorSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bulletSize: Double,
       bulletsEnabled: Boolean,
       categoryBalloonAlpha: Double,
@@ -224,50 +223,35 @@ object chartCursorSettingsMod {
       __obj.asInstanceOf[ChartCursorSettings]
     }
     
-    @scala.inline
-    implicit class ChartCursorSettingsMutableBuilder[Self <: ChartCursorSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ChartCursorSettings](x: Self) {
       
-      @scala.inline
-      def setBulletSize(value: Double): Self = StObject.set(x, "bulletSize", value.asInstanceOf[js.Any])
+      inline def setBulletSize(value: Double): Self = StObject.set(x, "bulletSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBulletsEnabled(value: Boolean): Self = StObject.set(x, "bulletsEnabled", value.asInstanceOf[js.Any])
+      inline def setBulletsEnabled(value: Boolean): Self = StObject.set(x, "bulletsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryBalloonAlpha(value: Double): Self = StObject.set(x, "categoryBalloonAlpha", value.asInstanceOf[js.Any])
+      inline def setCategoryBalloonAlpha(value: Double): Self = StObject.set(x, "categoryBalloonAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryBalloonColor(value: String): Self = StObject.set(x, "categoryBalloonColor", value.asInstanceOf[js.Any])
+      inline def setCategoryBalloonColor(value: String): Self = StObject.set(x, "categoryBalloonColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryBalloonDateFormats(value: js.Array[js.Any]): Self = StObject.set(x, "categoryBalloonDateFormats", value.asInstanceOf[js.Any])
+      inline def setCategoryBalloonDateFormats(value: js.Array[js.Any]): Self = StObject.set(x, "categoryBalloonDateFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryBalloonDateFormatsVarargs(value: js.Any*): Self = StObject.set(x, "categoryBalloonDateFormats", js.Array(value :_*))
+      inline def setCategoryBalloonDateFormatsVarargs(value: js.Any*): Self = StObject.set(x, "categoryBalloonDateFormats", js.Array(value :_*))
       
-      @scala.inline
-      def setCategoryBalloonEnabled(value: Boolean): Self = StObject.set(x, "categoryBalloonEnabled", value.asInstanceOf[js.Any])
+      inline def setCategoryBalloonEnabled(value: Boolean): Self = StObject.set(x, "categoryBalloonEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorAlpha(value: Double): Self = StObject.set(x, "cursorAlpha", value.asInstanceOf[js.Any])
+      inline def setCursorAlpha(value: Double): Self = StObject.set(x, "cursorAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorColor(value: String): Self = StObject.set(x, "cursorColor", value.asInstanceOf[js.Any])
+      inline def setCursorColor(value: String): Self = StObject.set(x, "cursorColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorPosition(value: String): Self = StObject.set(x, "cursorPosition", value.asInstanceOf[js.Any])
+      inline def setCursorPosition(value: String): Self = StObject.set(x, "cursorPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPan(value: Boolean): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+      inline def setPan(value: Boolean): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueBalloonsEnabled(value: Boolean): Self = StObject.set(x, "valueBalloonsEnabled", value.asInstanceOf[js.Any])
+      inline def setValueBalloonsEnabled(value: Boolean): Self = StObject.set(x, "valueBalloonsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomable(value: Boolean): Self = StObject.set(x, "zoomable", value.asInstanceOf[js.Any])
+      inline def setZoomable(value: Boolean): Self = StObject.set(x, "zoomable", value.asInstanceOf[js.Any])
     }
   }
 }

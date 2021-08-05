@@ -18,19 +18,15 @@ trait EnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpoint extend
 }
 object EnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpoint {
   
-  @scala.inline
-  def apply(enterprise: String, scim_group_id: String): EnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpoint = {
+  inline def apply(enterprise: String, scim_group_id: String): EnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpoint = {
     val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any], scim_group_id = scim_group_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpointMutableBuilder[Self <: EnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScim_group_id(value: String): Self = StObject.set(x, "scim_group_id", value.asInstanceOf[js.Any])
+    inline def setScim_group_id(value: String): Self = StObject.set(x, "scim_group_id", value.asInstanceOf[js.Any])
   }
 }

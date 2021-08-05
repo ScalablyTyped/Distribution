@@ -18,19 +18,15 @@ trait DisassociateTagOptionFromResourceInput extends StObject {
 }
 object DisassociateTagOptionFromResourceInput {
   
-  @scala.inline
-  def apply(ResourceId: ResourceId, TagOptionId: TagOptionId): DisassociateTagOptionFromResourceInput = {
+  inline def apply(ResourceId: ResourceId, TagOptionId: TagOptionId): DisassociateTagOptionFromResourceInput = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], TagOptionId = TagOptionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateTagOptionFromResourceInput]
   }
   
-  @scala.inline
-  implicit class DisassociateTagOptionFromResourceInputMutableBuilder[Self <: DisassociateTagOptionFromResourceInput] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateTagOptionFromResourceInput](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagOptionId(value: TagOptionId): Self = StObject.set(x, "TagOptionId", value.asInstanceOf[js.Any])
+    inline def setTagOptionId(value: TagOptionId): Self = StObject.set(x, "TagOptionId", value.asInstanceOf[js.Any])
   }
 }

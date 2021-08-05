@@ -32,26 +32,20 @@ object cardSubtitleMod {
   }
   object CardSubtitleProps {
     
-    @scala.inline
-    def apply(): CardSubtitleProps = {
+    inline def apply(): CardSubtitleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardSubtitleProps]
     }
     
-    @scala.inline
-    implicit class CardSubtitlePropsMutableBuilder[Self <: CardSubtitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardSubtitleProps](x: Self) {
       
-      @scala.inline
-      def setDisableSecondaryColor(value: Boolean): Self = StObject.set(x, "disableSecondaryColor", value.asInstanceOf[js.Any])
+      inline def setDisableSecondaryColor(value: Boolean): Self = StObject.set(x, "disableSecondaryColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableSecondaryColorUndefined: Self = StObject.set(x, "disableSecondaryColor", js.undefined)
+      inline def setDisableSecondaryColorUndefined: Self = StObject.set(x, "disableSecondaryColor", js.undefined)
       
-      @scala.inline
-      def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
+      inline def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
+      inline def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
     }
   }
 }

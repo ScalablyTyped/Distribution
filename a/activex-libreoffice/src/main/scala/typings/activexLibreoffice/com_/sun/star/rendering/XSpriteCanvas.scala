@@ -65,8 +65,7 @@ trait XSpriteCanvas
 }
 object XSpriteCanvas {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Device: XGraphicDevice,
     acquire: () => Unit,
     clear: () => Unit,
@@ -100,22 +99,16 @@ object XSpriteCanvas {
     __obj.asInstanceOf[XSpriteCanvas]
   }
   
-  @scala.inline
-  implicit class XSpriteCanvasMutableBuilder[Self <: XSpriteCanvas] (val x: Self) extends AnyVal {
+  extension [Self <: XSpriteCanvas](x: Self) {
     
-    @scala.inline
-    def setCreateClonedSprite(value: XSprite => XSprite): Self = StObject.set(x, "createClonedSprite", js.Any.fromFunction1(value))
+    inline def setCreateClonedSprite(value: XSprite => XSprite): Self = StObject.set(x, "createClonedSprite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateCustomSprite(value: RealSize2D => XCustomSprite): Self = StObject.set(x, "createCustomSprite", js.Any.fromFunction1(value))
+    inline def setCreateCustomSprite(value: RealSize2D => XCustomSprite): Self = StObject.set(x, "createCustomSprite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateSpriteFromAnimation(value: XAnimation => XAnimatedSprite): Self = StObject.set(x, "createSpriteFromAnimation", js.Any.fromFunction1(value))
+    inline def setCreateSpriteFromAnimation(value: XAnimation => XAnimatedSprite): Self = StObject.set(x, "createSpriteFromAnimation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateSpriteFromBitmaps(value: (SeqEquiv[XBitmap], Double) => XAnimatedSprite): Self = StObject.set(x, "createSpriteFromBitmaps", js.Any.fromFunction2(value))
+    inline def setCreateSpriteFromBitmaps(value: (SeqEquiv[XBitmap], Double) => XAnimatedSprite): Self = StObject.set(x, "createSpriteFromBitmaps", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdateScreen(value: Boolean => Boolean): Self = StObject.set(x, "updateScreen", js.Any.fromFunction1(value))
+    inline def setUpdateScreen(value: Boolean => Boolean): Self = StObject.set(x, "updateScreen", js.Any.fromFunction1(value))
   }
 }

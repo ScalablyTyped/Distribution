@@ -19,6 +19,5 @@ class TransitionGroup protected ()
 }
 object TransitionGroup {
   
-  @scala.inline
-  def apply: TransitionGroupComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TransitionGroup").asInstanceOf[TransitionGroupComponent]
+  inline def apply: TransitionGroupComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TransitionGroup").asInstanceOf[TransitionGroupComponent]
 }

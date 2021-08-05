@@ -16,8 +16,7 @@ trait XLabeledDataSequence2
      with XCloneable
 object XLabeledDataSequence2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Label: XDataSequence,
     Values: XDataSequence,
     acquire: () => Unit,

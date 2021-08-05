@@ -14,16 +14,13 @@ trait SchemaApi extends StObject {
 }
 object SchemaApi {
   
-  @scala.inline
-  def apply(getDomains: () => js.Promise[GetDomainsResponse]): SchemaApi = {
+  inline def apply(getDomains: () => js.Promise[GetDomainsResponse]): SchemaApi = {
     val __obj = js.Dynamic.literal(getDomains = js.Any.fromFunction0(getDomains))
     __obj.asInstanceOf[SchemaApi]
   }
   
-  @scala.inline
-  implicit class SchemaApiMutableBuilder[Self <: SchemaApi] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApi](x: Self) {
     
-    @scala.inline
-    def setGetDomains(value: () => js.Promise[GetDomainsResponse]): Self = StObject.set(x, "getDomains", js.Any.fromFunction0(value))
+    inline def setGetDomains(value: () => js.Promise[GetDomainsResponse]): Self = StObject.set(x, "getDomains", js.Any.fromFunction0(value))
   }
 }

@@ -28,7 +28,7 @@ object neuquantFloatMod {
       */
     /* private */ def _alterSingle(alpha: js.Any, i: js.Any, b: js.Any, g: js.Any, r: js.Any, a: js.Any): js.Any = js.native
     
-    var _bias: js.Any = js.native
+    /* private */ var _bias: js.Any = js.native
     
     /* private */ def _buildPalette(): js.Any = js.native
     
@@ -45,9 +45,9 @@ object neuquantFloatMod {
       */
     /* private */ def _contest(b: js.Any, g: js.Any, r: js.Any, al: js.Any): js.Any = js.native
     
-    val _distance: js.Any = js.native
+    /* private */ val _distance: js.Any = js.native
     
-    var _freq: js.Any = js.native
+    /* private */ var _freq: js.Any = js.native
     
     /* private */ def _init(): js.Any = js.native
     
@@ -56,16 +56,16 @@ object neuquantFloatMod {
       */
     /* private */ def _learn(): js.Any = js.native
     
-    var _network: js.Any = js.native
+    /* private */ var _network: js.Any = js.native
     
-    val _networkSize: js.Any = js.native
+    /* private */ val _networkSize: js.Any = js.native
     
-    var _pointArray: js.Any = js.native
+    /* private */ var _pointArray: js.Any = js.native
     
-    var _radPower: js.Any = js.native
+    /* private */ var _radPower: js.Any = js.native
     
     /** sampling factor 1..30 */
-    val _sampleFactor: js.Any = js.native
+    /* private */ val _sampleFactor: js.Any = js.native
     
     /* CompleteClass */
     override def quantize(): Palette = js.native

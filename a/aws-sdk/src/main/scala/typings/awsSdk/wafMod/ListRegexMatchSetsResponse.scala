@@ -18,28 +18,21 @@ trait ListRegexMatchSetsResponse extends StObject {
 }
 object ListRegexMatchSetsResponse {
   
-  @scala.inline
-  def apply(): ListRegexMatchSetsResponse = {
+  inline def apply(): ListRegexMatchSetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRegexMatchSetsResponse]
   }
   
-  @scala.inline
-  implicit class ListRegexMatchSetsResponseMutableBuilder[Self <: ListRegexMatchSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRegexMatchSetsResponse](x: Self) {
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setRegexMatchSets(value: RegexMatchSetSummaries): Self = StObject.set(x, "RegexMatchSets", value.asInstanceOf[js.Any])
+    inline def setRegexMatchSets(value: RegexMatchSetSummaries): Self = StObject.set(x, "RegexMatchSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexMatchSetsUndefined: Self = StObject.set(x, "RegexMatchSets", js.undefined)
+    inline def setRegexMatchSetsUndefined: Self = StObject.set(x, "RegexMatchSets", js.undefined)
     
-    @scala.inline
-    def setRegexMatchSetsVarargs(value: RegexMatchSetSummary*): Self = StObject.set(x, "RegexMatchSets", js.Array(value :_*))
+    inline def setRegexMatchSetsVarargs(value: RegexMatchSetSummary*): Self = StObject.set(x, "RegexMatchSets", js.Array(value :_*))
   }
 }

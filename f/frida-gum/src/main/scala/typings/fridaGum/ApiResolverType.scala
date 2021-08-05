@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApiResolverType extends StObject
 object ApiResolverType {
   
-  @scala.inline
-  def module: typings.fridaGum.fridaGumStrings.module = "module".asInstanceOf[typings.fridaGum.fridaGumStrings.module]
+  inline def module: typings.fridaGum.fridaGumStrings.module = "module".asInstanceOf[typings.fridaGum.fridaGumStrings.module]
   
-  @scala.inline
-  def objc: typings.fridaGum.fridaGumStrings.objc = "objc".asInstanceOf[typings.fridaGum.fridaGumStrings.objc]
+  inline def objc: typings.fridaGum.fridaGumStrings.objc = "objc".asInstanceOf[typings.fridaGum.fridaGumStrings.objc]
 }

@@ -54,21 +54,16 @@ object delegationSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DelegationSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DelegationSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DelegationSetState): DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DelegationSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DelegationSetState, opts: CustomResourceOptions): DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DelegationSet]
+    inline def get(name: String, id: Input[ID]): DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DelegationSet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DelegationSet]
+    inline def get(name: String, id: Input[ID], state: DelegationSetState): DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DelegationSet]
+    inline def get(name: String, id: Input[ID], state: DelegationSetState, opts: CustomResourceOptions): DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DelegationSet]
     
     /**
       * Returns true if the given object is an instance of DelegationSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ Boolean]
   }
   
   trait DelegationSetArgs extends StObject {
@@ -81,20 +76,16 @@ object delegationSetMod {
   }
   object DelegationSetArgs {
     
-    @scala.inline
-    def apply(): DelegationSetArgs = {
+    inline def apply(): DelegationSetArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DelegationSetArgs]
     }
     
-    @scala.inline
-    implicit class DelegationSetArgsMutableBuilder[Self <: DelegationSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DelegationSetArgs](x: Self) {
       
-      @scala.inline
-      def setReferenceName(value: Input[String]): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
+      inline def setReferenceName(value: Input[String]): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceNameUndefined: Self = StObject.set(x, "referenceName", js.undefined)
+      inline def setReferenceNameUndefined: Self = StObject.set(x, "referenceName", js.undefined)
     }
   }
   
@@ -114,29 +105,22 @@ object delegationSetMod {
   }
   object DelegationSetState {
     
-    @scala.inline
-    def apply(): DelegationSetState = {
+    inline def apply(): DelegationSetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DelegationSetState]
     }
     
-    @scala.inline
-    implicit class DelegationSetStateMutableBuilder[Self <: DelegationSetState] (val x: Self) extends AnyVal {
+    extension [Self <: DelegationSetState](x: Self) {
       
-      @scala.inline
-      def setNameServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
+      inline def setNameServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
+      inline def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
       
-      @scala.inline
-      def setNameServersVarargs(value: Input[String]*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
+      inline def setNameServersVarargs(value: Input[String]*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
       
-      @scala.inline
-      def setReferenceName(value: Input[String]): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
+      inline def setReferenceName(value: Input[String]): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceNameUndefined: Self = StObject.set(x, "referenceName", js.undefined)
+      inline def setReferenceNameUndefined: Self = StObject.set(x, "referenceName", js.undefined)
     }
   }
 }

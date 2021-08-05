@@ -36,43 +36,31 @@ trait LegendViewModelProperties extends StObject {
 }
 object LegendViewModelProperties {
   
-  @scala.inline
-  def apply(): LegendViewModelProperties = {
+  inline def apply(): LegendViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendViewModelProperties]
   }
   
-  @scala.inline
-  implicit class LegendViewModelPropertiesMutableBuilder[Self <: LegendViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LegendViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setActiveLayerInfos(value: CollectionProperties[ActiveLayerInfoProperties]): Self = StObject.set(x, "activeLayerInfos", value.asInstanceOf[js.Any])
+    inline def setActiveLayerInfos(value: CollectionProperties[ActiveLayerInfoProperties]): Self = StObject.set(x, "activeLayerInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveLayerInfosUndefined: Self = StObject.set(x, "activeLayerInfos", js.undefined)
+    inline def setActiveLayerInfosUndefined: Self = StObject.set(x, "activeLayerInfos", js.undefined)
     
-    @scala.inline
-    def setActiveLayerInfosVarargs(value: ActiveLayerInfoProperties*): Self = StObject.set(x, "activeLayerInfos", js.Array(value :_*))
+    inline def setActiveLayerInfosVarargs(value: ActiveLayerInfoProperties*): Self = StObject.set(x, "activeLayerInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setBasemapLegendVisible(value: Boolean): Self = StObject.set(x, "basemapLegendVisible", value.asInstanceOf[js.Any])
+    inline def setBasemapLegendVisible(value: Boolean): Self = StObject.set(x, "basemapLegendVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapLegendVisibleUndefined: Self = StObject.set(x, "basemapLegendVisible", js.undefined)
+    inline def setBasemapLegendVisibleUndefined: Self = StObject.set(x, "basemapLegendVisible", js.undefined)
     
-    @scala.inline
-    def setLayerInfos(value: js.Array[LegendViewModelLayerInfos]): Self = StObject.set(x, "layerInfos", value.asInstanceOf[js.Any])
+    inline def setLayerInfos(value: js.Array[LegendViewModelLayerInfos]): Self = StObject.set(x, "layerInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerInfosUndefined: Self = StObject.set(x, "layerInfos", js.undefined)
+    inline def setLayerInfosUndefined: Self = StObject.set(x, "layerInfos", js.undefined)
     
-    @scala.inline
-    def setLayerInfosVarargs(value: LegendViewModelLayerInfos*): Self = StObject.set(x, "layerInfos", js.Array(value :_*))
+    inline def setLayerInfosVarargs(value: LegendViewModelLayerInfos*): Self = StObject.set(x, "layerInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

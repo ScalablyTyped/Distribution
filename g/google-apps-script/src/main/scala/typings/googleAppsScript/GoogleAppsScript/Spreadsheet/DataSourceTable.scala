@@ -65,8 +65,7 @@ trait DataSourceTable extends StObject {
 }
 object DataSourceTable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     forceRefreshData: () => DataSourceTable,
     getDataSource: () => DataSource,
     getRange: () => Range,
@@ -78,25 +77,18 @@ object DataSourceTable {
     __obj.asInstanceOf[DataSourceTable]
   }
   
-  @scala.inline
-  implicit class DataSourceTableMutableBuilder[Self <: DataSourceTable] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceTable](x: Self) {
     
-    @scala.inline
-    def setForceRefreshData(value: () => DataSourceTable): Self = StObject.set(x, "forceRefreshData", js.Any.fromFunction0(value))
+    inline def setForceRefreshData(value: () => DataSourceTable): Self = StObject.set(x, "forceRefreshData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDataSource(value: () => DataSource): Self = StObject.set(x, "getDataSource", js.Any.fromFunction0(value))
+    inline def setGetDataSource(value: () => DataSource): Self = StObject.set(x, "getDataSource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRange(value: () => Range): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
+    inline def setGetRange(value: () => Range): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStatus(value: () => DataExecutionStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
+    inline def setGetStatus(value: () => DataExecutionStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefreshData(value: () => DataSourceTable): Self = StObject.set(x, "refreshData", js.Any.fromFunction0(value))
+    inline def setRefreshData(value: () => DataSourceTable): Self = StObject.set(x, "refreshData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWaitForCompletion(value: Integer => DataExecutionStatus): Self = StObject.set(x, "waitForCompletion", js.Any.fromFunction1(value))
+    inline def setWaitForCompletion(value: Integer => DataExecutionStatus): Self = StObject.set(x, "waitForCompletion", js.Any.fromFunction1(value))
   }
 }

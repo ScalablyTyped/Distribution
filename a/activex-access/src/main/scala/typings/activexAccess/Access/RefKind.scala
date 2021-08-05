@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RefKind extends StObject
 object RefKind {
   
-  @scala.inline
-  def Project: `1` = 1.asInstanceOf[`1`]
+  inline def Project: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def TypeLib: `0` = 0.asInstanceOf[`0`]
+  inline def TypeLib: `0` = 0.asInstanceOf[`0`]
 }

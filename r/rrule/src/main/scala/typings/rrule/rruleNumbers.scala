@@ -8,11 +8,9 @@ object rruleNumbers {
   
   @js.native
   sealed trait `365` extends StObject
-  @scala.inline
-  def `365`: `365` = 365.asInstanceOf[`365`]
+  inline def `365`: `365` = 365.asInstanceOf[`365`]
   
   @js.native
   sealed trait `366` extends StObject
-  @scala.inline
-  def `366`: `366` = 366.asInstanceOf[`366`]
+  inline def `366`: `366` = 366.asInstanceOf[`366`]
 }

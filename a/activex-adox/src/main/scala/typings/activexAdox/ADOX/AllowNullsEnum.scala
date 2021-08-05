@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AllowNullsEnum extends StObject
 object AllowNullsEnum {
   
-  @scala.inline
-  def adIndexNullsAllow: `0` = 0.asInstanceOf[`0`]
+  inline def adIndexNullsAllow: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adIndexNullsDisallow: `1` = 1.asInstanceOf[`1`]
+  inline def adIndexNullsDisallow: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adIndexNullsIgnore: `2` = 2.asInstanceOf[`2`]
+  inline def adIndexNullsIgnore: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adIndexNullsIgnoreAny: `4` = 4.asInstanceOf[`4`]
+  inline def adIndexNullsIgnoreAny: `4` = 4.asInstanceOf[`4`]
 }

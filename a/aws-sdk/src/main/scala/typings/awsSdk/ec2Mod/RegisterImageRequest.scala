@@ -73,94 +73,65 @@ trait RegisterImageRequest extends StObject {
 }
 object RegisterImageRequest {
   
-  @scala.inline
-  def apply(Name: String): RegisterImageRequest = {
+  inline def apply(Name: String): RegisterImageRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterImageRequest]
   }
   
-  @scala.inline
-  implicit class RegisterImageRequestMutableBuilder[Self <: RegisterImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterImageRequest](x: Self) {
     
-    @scala.inline
-    def setArchitecture(value: ArchitectureValues): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
+    inline def setArchitecture(value: ArchitectureValues): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchitectureUndefined: Self = StObject.set(x, "Architecture", js.undefined)
+    inline def setArchitectureUndefined: Self = StObject.set(x, "Architecture", js.undefined)
     
-    @scala.inline
-    def setBillingProducts(value: BillingProductList): Self = StObject.set(x, "BillingProducts", value.asInstanceOf[js.Any])
+    inline def setBillingProducts(value: BillingProductList): Self = StObject.set(x, "BillingProducts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingProductsUndefined: Self = StObject.set(x, "BillingProducts", js.undefined)
+    inline def setBillingProductsUndefined: Self = StObject.set(x, "BillingProducts", js.undefined)
     
-    @scala.inline
-    def setBillingProductsVarargs(value: String*): Self = StObject.set(x, "BillingProducts", js.Array(value :_*))
+    inline def setBillingProductsVarargs(value: String*): Self = StObject.set(x, "BillingProducts", js.Array(value :_*))
     
-    @scala.inline
-    def setBlockDeviceMappings(value: BlockDeviceMappingRequestList): Self = StObject.set(x, "BlockDeviceMappings", value.asInstanceOf[js.Any])
+    inline def setBlockDeviceMappings(value: BlockDeviceMappingRequestList): Self = StObject.set(x, "BlockDeviceMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
+    inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
-    @scala.inline
-    def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
+    inline def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setEnaSupport(value: Boolean): Self = StObject.set(x, "EnaSupport", value.asInstanceOf[js.Any])
+    inline def setEnaSupport(value: Boolean): Self = StObject.set(x, "EnaSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnaSupportUndefined: Self = StObject.set(x, "EnaSupport", js.undefined)
+    inline def setEnaSupportUndefined: Self = StObject.set(x, "EnaSupport", js.undefined)
     
-    @scala.inline
-    def setImageLocation(value: String): Self = StObject.set(x, "ImageLocation", value.asInstanceOf[js.Any])
+    inline def setImageLocation(value: String): Self = StObject.set(x, "ImageLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageLocationUndefined: Self = StObject.set(x, "ImageLocation", js.undefined)
+    inline def setImageLocationUndefined: Self = StObject.set(x, "ImageLocation", js.undefined)
     
-    @scala.inline
-    def setKernelId(value: KernelId): Self = StObject.set(x, "KernelId", value.asInstanceOf[js.Any])
+    inline def setKernelId(value: KernelId): Self = StObject.set(x, "KernelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelIdUndefined: Self = StObject.set(x, "KernelId", js.undefined)
+    inline def setKernelIdUndefined: Self = StObject.set(x, "KernelId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRamdiskId(value: RamdiskId): Self = StObject.set(x, "RamdiskId", value.asInstanceOf[js.Any])
+    inline def setRamdiskId(value: RamdiskId): Self = StObject.set(x, "RamdiskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRamdiskIdUndefined: Self = StObject.set(x, "RamdiskId", js.undefined)
+    inline def setRamdiskIdUndefined: Self = StObject.set(x, "RamdiskId", js.undefined)
     
-    @scala.inline
-    def setRootDeviceName(value: String): Self = StObject.set(x, "RootDeviceName", value.asInstanceOf[js.Any])
+    inline def setRootDeviceName(value: String): Self = StObject.set(x, "RootDeviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootDeviceNameUndefined: Self = StObject.set(x, "RootDeviceName", js.undefined)
+    inline def setRootDeviceNameUndefined: Self = StObject.set(x, "RootDeviceName", js.undefined)
     
-    @scala.inline
-    def setSriovNetSupport(value: String): Self = StObject.set(x, "SriovNetSupport", value.asInstanceOf[js.Any])
+    inline def setSriovNetSupport(value: String): Self = StObject.set(x, "SriovNetSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSriovNetSupportUndefined: Self = StObject.set(x, "SriovNetSupport", js.undefined)
+    inline def setSriovNetSupportUndefined: Self = StObject.set(x, "SriovNetSupport", js.undefined)
     
-    @scala.inline
-    def setVirtualizationType(value: String): Self = StObject.set(x, "VirtualizationType", value.asInstanceOf[js.Any])
+    inline def setVirtualizationType(value: String): Self = StObject.set(x, "VirtualizationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualizationTypeUndefined: Self = StObject.set(x, "VirtualizationType", js.undefined)
+    inline def setVirtualizationTypeUndefined: Self = StObject.set(x, "VirtualizationType", js.undefined)
   }
 }

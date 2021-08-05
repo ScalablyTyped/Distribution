@@ -12,6 +12,5 @@ object publishDragSourceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPublishDragSource(manager: DragDropManager): js.Function0[js.UndefOr[SentinelAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPublishDragSource")(manager.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.UndefOr[SentinelAction]]]
+  inline def createPublishDragSource(manager: DragDropManager): js.Function0[js.UndefOr[SentinelAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPublishDragSource")(manager.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.UndefOr[SentinelAction]]]
 }

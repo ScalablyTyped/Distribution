@@ -16,34 +16,25 @@ trait NodesReloadSecureSettings[T]
 }
 object NodesReloadSecureSettings {
   
-  @scala.inline
-  def apply[T](): NodesReloadSecureSettings[T] = {
+  inline def apply[T](): NodesReloadSecureSettings[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodesReloadSecureSettings[T]]
   }
   
-  @scala.inline
-  implicit class NodesReloadSecureSettingsMutableBuilder[Self <: NodesReloadSecureSettings[?], T] (val x: Self & NodesReloadSecureSettings[T]) extends AnyVal {
+  extension [Self <: NodesReloadSecureSettings[?], T](x: Self & NodesReloadSecureSettings[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setNode_id(value: String | js.Array[String]): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String | js.Array[String]): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_idUndefined: Self = StObject.set(x, "node_id", js.undefined)
+    inline def setNode_idUndefined: Self = StObject.set(x, "node_id", js.undefined)
     
-    @scala.inline
-    def setNode_idVarargs(value: String*): Self = StObject.set(x, "node_id", js.Array(value :_*))
+    inline def setNode_idVarargs(value: String*): Self = StObject.set(x, "node_id", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

@@ -19,19 +19,15 @@ trait SchemaJobScheduling extends StObject {
 }
 object SchemaJobScheduling {
   
-  @scala.inline
-  def apply(): SchemaJobScheduling = {
+  inline def apply(): SchemaJobScheduling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobScheduling]
   }
   
-  @scala.inline
-  implicit class SchemaJobSchedulingMutableBuilder[Self <: SchemaJobScheduling] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJobScheduling](x: Self) {
     
-    @scala.inline
-    def setMaxFailuresPerHour(value: Double): Self = StObject.set(x, "maxFailuresPerHour", value.asInstanceOf[js.Any])
+    inline def setMaxFailuresPerHour(value: Double): Self = StObject.set(x, "maxFailuresPerHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFailuresPerHourUndefined: Self = StObject.set(x, "maxFailuresPerHour", js.undefined)
+    inline def setMaxFailuresPerHourUndefined: Self = StObject.set(x, "maxFailuresPerHour", js.undefined)
   }
 }

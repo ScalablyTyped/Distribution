@@ -17,28 +17,21 @@ trait ApplyParametersRequest extends StObject {
 }
 object ApplyParametersRequest {
   
-  @scala.inline
-  def apply(): ApplyParametersRequest = {
+  inline def apply(): ApplyParametersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplyParametersRequest]
   }
   
-  @scala.inline
-  implicit class ApplyParametersRequestMutableBuilder[Self <: ApplyParametersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ApplyParametersRequest](x: Self) {
     
-    @scala.inline
-    def setApplyAll(value: Boolean): Self = StObject.set(x, "applyAll", value.asInstanceOf[js.Any])
+    inline def setApplyAll(value: Boolean): Self = StObject.set(x, "applyAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyAllUndefined: Self = StObject.set(x, "applyAll", js.undefined)
+    inline def setApplyAllUndefined: Self = StObject.set(x, "applyAll", js.undefined)
     
-    @scala.inline
-    def setNodeIds(value: js.Array[String]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
+    inline def setNodeIds(value: js.Array[String]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdsUndefined: Self = StObject.set(x, "nodeIds", js.undefined)
+    inline def setNodeIdsUndefined: Self = StObject.set(x, "nodeIds", js.undefined)
     
-    @scala.inline
-    def setNodeIdsVarargs(value: String*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
+    inline def setNodeIdsVarargs(value: String*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
   }
 }

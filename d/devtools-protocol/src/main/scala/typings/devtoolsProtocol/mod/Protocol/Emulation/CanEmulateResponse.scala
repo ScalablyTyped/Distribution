@@ -13,16 +13,13 @@ trait CanEmulateResponse extends StObject {
 }
 object CanEmulateResponse {
   
-  @scala.inline
-  def apply(result: Boolean): CanEmulateResponse = {
+  inline def apply(result: Boolean): CanEmulateResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanEmulateResponse]
   }
   
-  @scala.inline
-  implicit class CanEmulateResponseMutableBuilder[Self <: CanEmulateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CanEmulateResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

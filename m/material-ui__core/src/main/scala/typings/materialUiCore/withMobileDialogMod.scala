@@ -14,16 +14,14 @@ object withMobileDialogMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[P](): js.Function1[
+  inline def default[P](): js.Function1[
     /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
     ComponentType[P & PartialWithWidth]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[
     /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
     ComponentType[P & PartialWithWidth]
   ]]
-  @scala.inline
-  def default[P](options: WithMobileDialogOptions): js.Function1[
+  inline def default[P](options: WithMobileDialogOptions): js.Function1[
     /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
     ComponentType[P & PartialWithWidth]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[

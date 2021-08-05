@@ -32,8 +32,7 @@ object typesDeleteMessageBatchOutputMod {
   }
   object DeleteMessageBatchOutput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $metadata: ResponseMetadata,
       Failed: js.Array[UnmarshalledBatchResultErrorEntry],
       Successful: js.Array[UnmarshalledDeleteMessageBatchResultEntry]
@@ -42,23 +41,17 @@ object typesDeleteMessageBatchOutputMod {
       __obj.asInstanceOf[DeleteMessageBatchOutput]
     }
     
-    @scala.inline
-    implicit class DeleteMessageBatchOutputMutableBuilder[Self <: DeleteMessageBatchOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteMessageBatchOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailed(value: js.Array[UnmarshalledBatchResultErrorEntry]): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
+      inline def setFailed(value: js.Array[UnmarshalledBatchResultErrorEntry]): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedVarargs(value: UnmarshalledBatchResultErrorEntry*): Self = StObject.set(x, "Failed", js.Array(value :_*))
+      inline def setFailedVarargs(value: UnmarshalledBatchResultErrorEntry*): Self = StObject.set(x, "Failed", js.Array(value :_*))
       
-      @scala.inline
-      def setSuccessful(value: js.Array[UnmarshalledDeleteMessageBatchResultEntry]): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
+      inline def setSuccessful(value: js.Array[UnmarshalledDeleteMessageBatchResultEntry]): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessfulVarargs(value: UnmarshalledDeleteMessageBatchResultEntry*): Self = StObject.set(x, "Successful", js.Array(value :_*))
+      inline def setSuccessfulVarargs(value: UnmarshalledDeleteMessageBatchResultEntry*): Self = StObject.set(x, "Successful", js.Array(value :_*))
     }
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdWordDialogTabHID extends StObject
 object WdWordDialogTabHID {
   
-  @scala.inline
-  def wdDialogFilePageSetupTabPaperSize: `150001` = 150001.asInstanceOf[`150001`]
+  inline def wdDialogFilePageSetupTabPaperSize: `150001` = 150001.asInstanceOf[`150001`]
   
-  @scala.inline
-  def wdDialogFilePageSetupTabPaperSource: `150002` = 150002.asInstanceOf[`150002`]
+  inline def wdDialogFilePageSetupTabPaperSource: `150002` = 150002.asInstanceOf[`150002`]
 }

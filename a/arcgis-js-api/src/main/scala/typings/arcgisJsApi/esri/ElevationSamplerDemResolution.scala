@@ -26,8 +26,7 @@ trait ElevationSamplerDemResolution
 }
 object ElevationSamplerDemResolution {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     max: Double,
@@ -38,13 +37,10 @@ object ElevationSamplerDemResolution {
     __obj.asInstanceOf[ElevationSamplerDemResolution]
   }
   
-  @scala.inline
-  implicit class ElevationSamplerDemResolutionMutableBuilder[Self <: ElevationSamplerDemResolution] (val x: Self) extends AnyVal {
+  extension [Self <: ElevationSamplerDemResolution](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

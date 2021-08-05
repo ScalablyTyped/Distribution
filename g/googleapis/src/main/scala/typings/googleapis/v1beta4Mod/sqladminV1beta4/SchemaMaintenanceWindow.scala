@@ -33,37 +33,27 @@ trait SchemaMaintenanceWindow extends StObject {
 }
 object SchemaMaintenanceWindow {
   
-  @scala.inline
-  def apply(): SchemaMaintenanceWindow = {
+  inline def apply(): SchemaMaintenanceWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMaintenanceWindow]
   }
   
-  @scala.inline
-  implicit class SchemaMaintenanceWindowMutableBuilder[Self <: SchemaMaintenanceWindow] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMaintenanceWindow](x: Self) {
     
-    @scala.inline
-    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+    inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
-    @scala.inline
-    def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+    inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUpdateTrack(value: String): Self = StObject.set(x, "updateTrack", value.asInstanceOf[js.Any])
+    inline def setUpdateTrack(value: String): Self = StObject.set(x, "updateTrack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTrackUndefined: Self = StObject.set(x, "updateTrack", js.undefined)
+    inline def setUpdateTrackUndefined: Self = StObject.set(x, "updateTrack", js.undefined)
   }
 }

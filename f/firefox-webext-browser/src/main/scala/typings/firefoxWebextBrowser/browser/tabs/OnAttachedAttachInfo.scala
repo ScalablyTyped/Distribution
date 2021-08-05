@@ -12,19 +12,15 @@ trait OnAttachedAttachInfo extends StObject {
 }
 object OnAttachedAttachInfo {
   
-  @scala.inline
-  def apply(newPosition: Double, newWindowId: Double): OnAttachedAttachInfo = {
+  inline def apply(newPosition: Double, newWindowId: Double): OnAttachedAttachInfo = {
     val __obj = js.Dynamic.literal(newPosition = newPosition.asInstanceOf[js.Any], newWindowId = newWindowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnAttachedAttachInfo]
   }
   
-  @scala.inline
-  implicit class OnAttachedAttachInfoMutableBuilder[Self <: OnAttachedAttachInfo] (val x: Self) extends AnyVal {
+  extension [Self <: OnAttachedAttachInfo](x: Self) {
     
-    @scala.inline
-    def setNewPosition(value: Double): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
+    inline def setNewPosition(value: Double): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewWindowId(value: Double): Self = StObject.set(x, "newWindowId", value.asInstanceOf[js.Any])
+    inline def setNewWindowId(value: Double): Self = StObject.set(x, "newWindowId", value.asInstanceOf[js.Any])
   }
 }

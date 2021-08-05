@@ -18,25 +18,19 @@ trait BatchPolicy extends StObject {
 }
 object BatchPolicy {
   
-  @scala.inline
-  def apply(): BatchPolicy = {
+  inline def apply(): BatchPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchPolicy]
   }
   
-  @scala.inline
-  implicit class BatchPolicyMutableBuilder[Self <: BatchPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: BatchPolicy](x: Self) {
     
-    @scala.inline
-    def setMaxConcurrency(value: MaxConcurrency): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrency(value: MaxConcurrency): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
+    inline def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
     
-    @scala.inline
-    def setTimeoutInSeconds(value: BatchTimeoutInSeconds): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutInSeconds(value: BatchTimeoutInSeconds): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
+    inline def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
   }
 }

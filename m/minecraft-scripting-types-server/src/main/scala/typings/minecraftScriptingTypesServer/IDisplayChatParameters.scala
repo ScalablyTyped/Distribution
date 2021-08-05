@@ -16,16 +16,13 @@ trait IDisplayChatParameters extends StObject {
 }
 object IDisplayChatParameters {
   
-  @scala.inline
-  def apply(message: String): IDisplayChatParameters = {
+  inline def apply(message: String): IDisplayChatParameters = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDisplayChatParameters]
   }
   
-  @scala.inline
-  implicit class IDisplayChatParametersMutableBuilder[Self <: IDisplayChatParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IDisplayChatParameters](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

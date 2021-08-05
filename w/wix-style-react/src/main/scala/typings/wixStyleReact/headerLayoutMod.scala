@@ -29,38 +29,28 @@ object headerLayoutMod extends Shortcut {
   }
   object HeaderLayoutProps {
     
-    @scala.inline
-    def apply(): HeaderLayoutProps = {
+    inline def apply(): HeaderLayoutProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderLayoutProps]
     }
     
-    @scala.inline
-    implicit class HeaderLayoutPropsMutableBuilder[Self <: HeaderLayoutProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderLayoutProps](x: Self) {
       
-      @scala.inline
-      def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+      inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+      inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
       
-      @scala.inline
-      def setOnCancel(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+      inline def setOnCancel(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setTheme(value: HeaderLayoutTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: HeaderLayoutTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -72,14 +62,11 @@ object headerLayoutMod extends Shortcut {
   trait HeaderLayoutTheme extends StObject
   object HeaderLayoutTheme {
     
-    @scala.inline
-    def blue: typings.wixStyleReact.wixStyleReactStrings.blue = "blue".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.blue]
+    inline def blue: typings.wixStyleReact.wixStyleReactStrings.blue = "blue".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.blue]
     
-    @scala.inline
-    def purple: typings.wixStyleReact.wixStyleReactStrings.purple = "purple".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.purple]
+    inline def purple: typings.wixStyleReact.wixStyleReactStrings.purple = "purple".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.purple]
     
-    @scala.inline
-    def red: typings.wixStyleReact.wixStyleReactStrings.red = "red".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.red]
+    inline def red: typings.wixStyleReact.wixStyleReactStrings.red = "red".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.red]
   }
   
   type _To = SFC[HeaderLayoutProps]

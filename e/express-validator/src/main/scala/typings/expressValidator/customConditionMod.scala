@@ -17,7 +17,7 @@ object customConditionMod {
        with ContextItem {
     def this(condition: CustomValidator) = this()
     
-    val condition: js.Any = js.native
+    /* private */ val condition: js.Any = js.native
     
     /* CompleteClass */
     override def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit] = js.native

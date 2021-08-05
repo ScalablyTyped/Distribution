@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Method extends StObject
 object Method {
   
-  @scala.inline
-  def align: typings.reactSketchapp.reactSketchappStrings.align = "align".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.align]
+  inline def align: typings.reactSketchapp.reactSketchappStrings.align = "align".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.align]
   
-  @scala.inline
-  def stretch: typings.reactSketchapp.reactSketchappStrings.stretch = "stretch".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.stretch]
+  inline def stretch: typings.reactSketchapp.reactSketchappStrings.stretch = "stretch".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.stretch]
 }

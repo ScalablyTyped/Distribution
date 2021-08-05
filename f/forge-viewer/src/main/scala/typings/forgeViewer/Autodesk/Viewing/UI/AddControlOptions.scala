@@ -13,19 +13,15 @@ trait AddControlOptions
 }
 object AddControlOptions {
   
-  @scala.inline
-  def apply(): AddControlOptions = {
+  inline def apply(): AddControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddControlOptions]
   }
   
-  @scala.inline
-  implicit class AddControlOptionsMutableBuilder[Self <: AddControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddControlOptions](x: Self) {
     
-    @scala.inline
-    def setIndex(value: js.Object): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: js.Object): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

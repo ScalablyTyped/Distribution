@@ -20,40 +20,29 @@ trait DnsRecordSet extends StObject {
 }
 object DnsRecordSet {
   
-  @scala.inline
-  def apply(): DnsRecordSet = {
+  inline def apply(): DnsRecordSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DnsRecordSet]
   }
   
-  @scala.inline
-  implicit class DnsRecordSetMutableBuilder[Self <: DnsRecordSet] (val x: Self) extends AnyVal {
+  extension [Self <: DnsRecordSet](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: String*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: String*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

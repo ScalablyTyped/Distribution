@@ -16,10 +16,8 @@ object preactMatcherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): MatcherFn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[MatcherFn]
-  @scala.inline
-  def default(makeRegexpFn: js.Function2[/* pattern */ String, /* keys */ js.UndefOr[js.Array[Name]], RegExp]): MatcherFn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(makeRegexpFn.asInstanceOf[js.Any]).asInstanceOf[MatcherFn]
+  inline def default(): MatcherFn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[MatcherFn]
+  inline def default(makeRegexpFn: js.Function2[/* pattern */ String, /* keys */ js.UndefOr[js.Array[Name]], RegExp]): MatcherFn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(makeRegexpFn.asInstanceOf[js.Any]).asInstanceOf[MatcherFn]
   
   type DefaultParams = StringDictionary[String]
   

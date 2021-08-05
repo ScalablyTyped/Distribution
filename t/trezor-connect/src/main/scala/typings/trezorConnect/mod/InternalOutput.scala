@@ -16,28 +16,21 @@ trait InternalOutput
 }
 object InternalOutput {
   
-  @scala.inline
-  def apply(address_n: js.Array[Double], amount: String): InternalOutput = {
+  inline def apply(address_n: js.Array[Double], amount: String): InternalOutput = {
     val __obj = js.Dynamic.literal(address_n = address_n.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalOutput]
   }
   
-  @scala.inline
-  implicit class InternalOutputMutableBuilder[Self <: InternalOutput] (val x: Self) extends AnyVal {
+  extension [Self <: InternalOutput](x: Self) {
     
-    @scala.inline
-    def setAddress_n(value: js.Array[Double]): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
+    inline def setAddress_n(value: js.Array[Double]): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddress_nVarargs(value: Double*): Self = StObject.set(x, "address_n", js.Array(value :_*))
+    inline def setAddress_nVarargs(value: Double*): Self = StObject.set(x, "address_n", js.Array(value :_*))
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScript_type(value: String): Self = StObject.set(x, "script_type", value.asInstanceOf[js.Any])
+    inline def setScript_type(value: String): Self = StObject.set(x, "script_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScript_typeUndefined: Self = StObject.set(x, "script_type", js.undefined)
+    inline def setScript_typeUndefined: Self = StObject.set(x, "script_type", js.undefined)
   }
 }

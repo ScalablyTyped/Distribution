@@ -12,25 +12,19 @@ trait BounceEffect extends StObject {
 }
 object BounceEffect {
   
-  @scala.inline
-  def apply(): BounceEffect = {
+  inline def apply(): BounceEffect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BounceEffect]
   }
   
-  @scala.inline
-  implicit class BounceEffectMutableBuilder[Self <: BounceEffect] (val x: Self) extends AnyVal {
+  extension [Self <: BounceEffect](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
+    inline def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
+    inline def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
   }
 }

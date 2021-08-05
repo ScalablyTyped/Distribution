@@ -23,25 +23,19 @@ trait LinesOptions
 }
 object LinesOptions {
   
-  @scala.inline
-  def apply(): LinesOptions = {
+  inline def apply(): LinesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinesOptions]
   }
   
-  @scala.inline
-  implicit class LinesOptionsMutableBuilder[Self <: LinesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LinesOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreWhitespace(value: Boolean): Self = StObject.set(x, "ignoreWhitespace", value.asInstanceOf[js.Any])
+    inline def setIgnoreWhitespace(value: Boolean): Self = StObject.set(x, "ignoreWhitespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreWhitespaceUndefined: Self = StObject.set(x, "ignoreWhitespace", js.undefined)
+    inline def setIgnoreWhitespaceUndefined: Self = StObject.set(x, "ignoreWhitespace", js.undefined)
     
-    @scala.inline
-    def setNewlineIsToken(value: Boolean): Self = StObject.set(x, "newlineIsToken", value.asInstanceOf[js.Any])
+    inline def setNewlineIsToken(value: Boolean): Self = StObject.set(x, "newlineIsToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewlineIsTokenUndefined: Self = StObject.set(x, "newlineIsToken", js.undefined)
+    inline def setNewlineIsTokenUndefined: Self = StObject.set(x, "newlineIsToken", js.undefined)
   }
 }

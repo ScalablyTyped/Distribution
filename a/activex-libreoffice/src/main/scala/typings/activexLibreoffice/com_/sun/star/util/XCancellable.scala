@@ -20,16 +20,13 @@ trait XCancellable
 }
 object XCancellable {
   
-  @scala.inline
-  def apply(acquire: () => Unit, cancel: () => Unit, queryInterface: `type` => js.Any, release: () => Unit): XCancellable = {
+  inline def apply(acquire: () => Unit, cancel: () => Unit, queryInterface: `type` => js.Any, release: () => Unit): XCancellable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancel = js.Any.fromFunction0(cancel), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XCancellable]
   }
   
-  @scala.inline
-  implicit class XCancellableMutableBuilder[Self <: XCancellable] (val x: Self) extends AnyVal {
+  extension [Self <: XCancellable](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
   }
 }

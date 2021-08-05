@@ -12,19 +12,15 @@ trait FragmentName extends StObject {
 }
 object FragmentName {
   
-  @scala.inline
-  def apply(fragmentName: String, fragmentPropName: String): FragmentName = {
+  inline def apply(fragmentName: String, fragmentPropName: String): FragmentName = {
     val __obj = js.Dynamic.literal(fragmentName = fragmentName.asInstanceOf[js.Any], fragmentPropName = fragmentPropName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentName]
   }
   
-  @scala.inline
-  implicit class FragmentNameMutableBuilder[Self <: FragmentName] (val x: Self) extends AnyVal {
+  extension [Self <: FragmentName](x: Self) {
     
-    @scala.inline
-    def setFragmentName(value: String): Self = StObject.set(x, "fragmentName", value.asInstanceOf[js.Any])
+    inline def setFragmentName(value: String): Self = StObject.set(x, "fragmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentPropName(value: String): Self = StObject.set(x, "fragmentPropName", value.asInstanceOf[js.Any])
+    inline def setFragmentPropName(value: String): Self = StObject.set(x, "fragmentPropName", value.asInstanceOf[js.Any])
   }
 }

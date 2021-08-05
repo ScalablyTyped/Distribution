@@ -15,19 +15,15 @@ trait errMsgstringExtConfig extends StObject {
 }
 object errMsgstringExtConfig {
   
-  @scala.inline
-  def apply(errMsg: String, extConfig: js.Any): errMsgstringExtConfig = {
+  inline def apply(errMsg: String, extConfig: js.Any): errMsgstringExtConfig = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], extConfig = extConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[errMsgstringExtConfig]
   }
   
-  @scala.inline
-  implicit class errMsgstringExtConfigMutableBuilder[Self <: errMsgstringExtConfig] (val x: Self) extends AnyVal {
+  extension [Self <: errMsgstringExtConfig](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtConfig(value: js.Any): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
+    inline def setExtConfig(value: js.Any): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
   }
 }

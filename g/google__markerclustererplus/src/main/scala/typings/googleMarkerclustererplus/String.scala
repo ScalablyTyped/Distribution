@@ -10,16 +10,13 @@ trait String extends StObject {
 }
 object String {
   
-  @scala.inline
-  def apply(trim: () => java.lang.String): String = {
+  inline def apply(trim: () => java.lang.String): String = {
     val __obj = js.Dynamic.literal(trim = js.Any.fromFunction0(trim))
     __obj.asInstanceOf[String]
   }
   
-  @scala.inline
-  implicit class StringMutableBuilder[Self <: String] (val x: Self) extends AnyVal {
+  extension [Self <: String](x: Self) {
     
-    @scala.inline
-    def setTrim(value: () => java.lang.String): Self = StObject.set(x, "trim", js.Any.fromFunction0(value))
+    inline def setTrim(value: () => java.lang.String): Self = StObject.set(x, "trim", js.Any.fromFunction0(value))
   }
 }

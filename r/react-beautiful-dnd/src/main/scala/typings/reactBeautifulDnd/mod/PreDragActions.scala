@@ -22,8 +22,7 @@ trait PreDragActions extends StObject {
 }
 object PreDragActions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: () => Unit,
     fluidLift: Position => FluidDragActions,
     isActive: () => Boolean,
@@ -34,22 +33,16 @@ object PreDragActions {
     __obj.asInstanceOf[PreDragActions]
   }
   
-  @scala.inline
-  implicit class PreDragActionsMutableBuilder[Self <: PreDragActions] (val x: Self) extends AnyVal {
+  extension [Self <: PreDragActions](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFluidLift(value: Position => FluidDragActions): Self = StObject.set(x, "fluidLift", js.Any.fromFunction1(value))
+    inline def setFluidLift(value: Position => FluidDragActions): Self = StObject.set(x, "fluidLift", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+    inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShouldRespectForcePress(value: () => Boolean): Self = StObject.set(x, "shouldRespectForcePress", js.Any.fromFunction0(value))
+    inline def setShouldRespectForcePress(value: () => Boolean): Self = StObject.set(x, "shouldRespectForcePress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSnapLift(value: () => SnapDragActions): Self = StObject.set(x, "snapLift", js.Any.fromFunction0(value))
+    inline def setSnapLift(value: () => SnapDragActions): Self = StObject.set(x, "snapLift", js.Any.fromFunction0(value))
   }
 }

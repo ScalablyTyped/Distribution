@@ -18,28 +18,21 @@ trait ListTaskDefinitionFamiliesResponse extends StObject {
 }
 object ListTaskDefinitionFamiliesResponse {
   
-  @scala.inline
-  def apply(): ListTaskDefinitionFamiliesResponse = {
+  inline def apply(): ListTaskDefinitionFamiliesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTaskDefinitionFamiliesResponse]
   }
   
-  @scala.inline
-  implicit class ListTaskDefinitionFamiliesResponseMutableBuilder[Self <: ListTaskDefinitionFamiliesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTaskDefinitionFamiliesResponse](x: Self) {
     
-    @scala.inline
-    def setFamilies(value: StringList): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
+    inline def setFamilies(value: StringList): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamiliesUndefined: Self = StObject.set(x, "families", js.undefined)
+    inline def setFamiliesUndefined: Self = StObject.set(x, "families", js.undefined)
     
-    @scala.inline
-    def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value :_*))
+    inline def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

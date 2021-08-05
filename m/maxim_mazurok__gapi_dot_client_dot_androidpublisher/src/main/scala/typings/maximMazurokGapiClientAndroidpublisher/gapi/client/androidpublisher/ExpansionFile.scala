@@ -17,25 +17,19 @@ trait ExpansionFile extends StObject {
 }
 object ExpansionFile {
   
-  @scala.inline
-  def apply(): ExpansionFile = {
+  inline def apply(): ExpansionFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExpansionFile]
   }
   
-  @scala.inline
-  implicit class ExpansionFileMutableBuilder[Self <: ExpansionFile] (val x: Self) extends AnyVal {
+  extension [Self <: ExpansionFile](x: Self) {
     
-    @scala.inline
-    def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+    inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
     
-    @scala.inline
-    def setReferencesVersion(value: Double): Self = StObject.set(x, "referencesVersion", value.asInstanceOf[js.Any])
+    inline def setReferencesVersion(value: Double): Self = StObject.set(x, "referencesVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencesVersionUndefined: Self = StObject.set(x, "referencesVersion", js.undefined)
+    inline def setReferencesVersionUndefined: Self = StObject.set(x, "referencesVersion", js.undefined)
   }
 }

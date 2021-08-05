@@ -18,25 +18,19 @@ trait ConsumedLicenseSummary extends StObject {
 }
 object ConsumedLicenseSummary {
   
-  @scala.inline
-  def apply(): ConsumedLicenseSummary = {
+  inline def apply(): ConsumedLicenseSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConsumedLicenseSummary]
   }
   
-  @scala.inline
-  implicit class ConsumedLicenseSummaryMutableBuilder[Self <: ConsumedLicenseSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ConsumedLicenseSummary](x: Self) {
     
-    @scala.inline
-    def setConsumedLicenses(value: BoxLong): Self = StObject.set(x, "ConsumedLicenses", value.asInstanceOf[js.Any])
+    inline def setConsumedLicenses(value: BoxLong): Self = StObject.set(x, "ConsumedLicenses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumedLicensesUndefined: Self = StObject.set(x, "ConsumedLicenses", js.undefined)
+    inline def setConsumedLicensesUndefined: Self = StObject.set(x, "ConsumedLicenses", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait CheckDomainTransferabilityRequest extends StObject {
 }
 object CheckDomainTransferabilityRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): CheckDomainTransferabilityRequest = {
+  inline def apply(DomainName: DomainName): CheckDomainTransferabilityRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckDomainTransferabilityRequest]
   }
   
-  @scala.inline
-  implicit class CheckDomainTransferabilityRequestMutableBuilder[Self <: CheckDomainTransferabilityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CheckDomainTransferabilityRequest](x: Self) {
     
-    @scala.inline
-    def setAuthCode(value: DomainAuthCode): Self = StObject.set(x, "AuthCode", value.asInstanceOf[js.Any])
+    inline def setAuthCode(value: DomainAuthCode): Self = StObject.set(x, "AuthCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthCodeUndefined: Self = StObject.set(x, "AuthCode", js.undefined)
+    inline def setAuthCodeUndefined: Self = StObject.set(x, "AuthCode", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

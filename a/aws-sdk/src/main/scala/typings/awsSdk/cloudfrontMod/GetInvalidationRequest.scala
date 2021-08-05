@@ -18,19 +18,15 @@ trait GetInvalidationRequest extends StObject {
 }
 object GetInvalidationRequest {
   
-  @scala.inline
-  def apply(DistributionId: String, Id: String): GetInvalidationRequest = {
+  inline def apply(DistributionId: String, Id: String): GetInvalidationRequest = {
     val __obj = js.Dynamic.literal(DistributionId = DistributionId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInvalidationRequest]
   }
   
-  @scala.inline
-  implicit class GetInvalidationRequestMutableBuilder[Self <: GetInvalidationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInvalidationRequest](x: Self) {
     
-    @scala.inline
-    def setDistributionId(value: String): Self = StObject.set(x, "DistributionId", value.asInstanceOf[js.Any])
+    inline def setDistributionId(value: String): Self = StObject.set(x, "DistributionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

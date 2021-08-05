@@ -18,25 +18,19 @@ trait GetCalendarStateRequest extends StObject {
 }
 object GetCalendarStateRequest {
   
-  @scala.inline
-  def apply(CalendarNames: CalendarNameOrARNList): GetCalendarStateRequest = {
+  inline def apply(CalendarNames: CalendarNameOrARNList): GetCalendarStateRequest = {
     val __obj = js.Dynamic.literal(CalendarNames = CalendarNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCalendarStateRequest]
   }
   
-  @scala.inline
-  implicit class GetCalendarStateRequestMutableBuilder[Self <: GetCalendarStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCalendarStateRequest](x: Self) {
     
-    @scala.inline
-    def setAtTime(value: ISO8601String): Self = StObject.set(x, "AtTime", value.asInstanceOf[js.Any])
+    inline def setAtTime(value: ISO8601String): Self = StObject.set(x, "AtTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtTimeUndefined: Self = StObject.set(x, "AtTime", js.undefined)
+    inline def setAtTimeUndefined: Self = StObject.set(x, "AtTime", js.undefined)
     
-    @scala.inline
-    def setCalendarNames(value: CalendarNameOrARNList): Self = StObject.set(x, "CalendarNames", value.asInstanceOf[js.Any])
+    inline def setCalendarNames(value: CalendarNameOrARNList): Self = StObject.set(x, "CalendarNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarNamesVarargs(value: CalendarNameOrARN*): Self = StObject.set(x, "CalendarNames", js.Array(value :_*))
+    inline def setCalendarNamesVarargs(value: CalendarNameOrARN*): Self = StObject.set(x, "CalendarNames", js.Array(value :_*))
   }
 }

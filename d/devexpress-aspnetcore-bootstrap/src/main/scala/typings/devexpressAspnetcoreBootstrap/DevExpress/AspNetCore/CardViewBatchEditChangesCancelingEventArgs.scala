@@ -16,8 +16,7 @@ trait CardViewBatchEditChangesCancelingEventArgs
 }
 object CardViewBatchEditChangesCancelingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     deletedValues: js.Any,
     insertedValues: js.Any,
@@ -28,16 +27,12 @@ object CardViewBatchEditChangesCancelingEventArgs {
     __obj.asInstanceOf[CardViewBatchEditChangesCancelingEventArgs]
   }
   
-  @scala.inline
-  implicit class CardViewBatchEditChangesCancelingEventArgsMutableBuilder[Self <: CardViewBatchEditChangesCancelingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CardViewBatchEditChangesCancelingEventArgs](x: Self) {
     
-    @scala.inline
-    def setDeletedValues(value: js.Any): Self = StObject.set(x, "deletedValues", value.asInstanceOf[js.Any])
+    inline def setDeletedValues(value: js.Any): Self = StObject.set(x, "deletedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertedValues(value: js.Any): Self = StObject.set(x, "insertedValues", value.asInstanceOf[js.Any])
+    inline def setInsertedValues(value: js.Any): Self = StObject.set(x, "insertedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedValues(value: js.Any): Self = StObject.set(x, "updatedValues", value.asInstanceOf[js.Any])
+    inline def setUpdatedValues(value: js.Any): Self = StObject.set(x, "updatedValues", value.asInstanceOf[js.Any])
   }
 }

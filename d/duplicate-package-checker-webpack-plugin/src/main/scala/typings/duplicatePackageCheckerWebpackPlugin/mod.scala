@@ -43,44 +43,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEmitError(value: Boolean): Self = StObject.set(x, "emitError", value.asInstanceOf[js.Any])
+      inline def setEmitError(value: Boolean): Self = StObject.set(x, "emitError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitErrorUndefined: Self = StObject.set(x, "emitError", js.undefined)
+      inline def setEmitErrorUndefined: Self = StObject.set(x, "emitError", js.undefined)
       
-      @scala.inline
-      def setExclude(value: /* instance */ PackageInstanceProperties => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
+      inline def setExclude(value: /* instance */ PackageInstanceProperties => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setShowHelp(value: Boolean): Self = StObject.set(x, "showHelp", value.asInstanceOf[js.Any])
+      inline def setShowHelp(value: Boolean): Self = StObject.set(x, "showHelp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowHelpUndefined: Self = StObject.set(x, "showHelp", js.undefined)
+      inline def setShowHelpUndefined: Self = StObject.set(x, "showHelp", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -101,29 +89,22 @@ object mod {
   }
   object PackageInstanceProperties {
     
-    @scala.inline
-    def apply(name: String, path: String, version: String): PackageInstanceProperties = {
+    inline def apply(name: String, path: String, version: String): PackageInstanceProperties = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackageInstanceProperties]
     }
     
-    @scala.inline
-    implicit class PackageInstancePropertiesMutableBuilder[Self <: PackageInstanceProperties] (val x: Self) extends AnyVal {
+    extension [Self <: PackageInstanceProperties](x: Self) {
       
-      @scala.inline
-      def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+      inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

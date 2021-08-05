@@ -10,19 +10,15 @@ trait AppendOptions extends StObject {
 }
 object AppendOptions {
   
-  @scala.inline
-  def apply(): AppendOptions = {
+  inline def apply(): AppendOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppendOptions]
   }
   
-  @scala.inline
-  implicit class AppendOptionsMutableBuilder[Self <: AppendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AppendOptions](x: Self) {
     
-    @scala.inline
-    def setMode(value: String | Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String | Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

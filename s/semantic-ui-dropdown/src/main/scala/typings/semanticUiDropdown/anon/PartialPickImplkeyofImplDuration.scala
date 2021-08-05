@@ -16,31 +16,23 @@ trait PartialPickImplkeyofImplDuration extends StObject {
 }
 object PartialPickImplkeyofImplDuration {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplDuration = {
+  inline def apply(): PartialPickImplkeyofImplDuration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplDuration]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplDurationMutableBuilder[Self <: PartialPickImplkeyofImplDuration] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplDuration](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    @scala.inline
-    def setVariation(value: `false` | String): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
+    inline def setVariation(value: `false` | String): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariationUndefined: Self = StObject.set(x, "variation", js.undefined)
+    inline def setVariationUndefined: Self = StObject.set(x, "variation", js.undefined)
   }
 }

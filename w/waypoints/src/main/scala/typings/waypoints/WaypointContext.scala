@@ -22,8 +22,7 @@ trait WaypointContext extends StObject {
 }
 object WaypointContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adapter: WaypointAdapter,
     destroy: () => Waypoint,
     element: HTMLElement | Window,
@@ -34,22 +33,16 @@ object WaypointContext {
     __obj.asInstanceOf[WaypointContext]
   }
   
-  @scala.inline
-  implicit class WaypointContextMutableBuilder[Self <: WaypointContext] (val x: Self) extends AnyVal {
+  extension [Self <: WaypointContext](x: Self) {
     
-    @scala.inline
-    def setAdapter(value: WaypointAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+    inline def setAdapter(value: WaypointAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroy(value: () => Waypoint): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Waypoint): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setElement(value: HTMLElement | Window): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLElement | Window): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Waypoint): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Waypoint): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWaypoints(value: Horizontal): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
+    inline def setWaypoints(value: Horizontal): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
   }
 }

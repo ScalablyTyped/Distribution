@@ -14,17 +14,14 @@ object anon {
   }
   object WithExtraArgument {
     
-    @scala.inline
-    def apply(withExtraArgument: js.Any => ThunkMiddleware[js.Object, AnyAction, js.Any]): WithExtraArgument = {
+    inline def apply(withExtraArgument: js.Any => ThunkMiddleware[js.Object, AnyAction, js.Any]): WithExtraArgument = {
       val __obj = js.Dynamic.literal(withExtraArgument = js.Any.fromFunction1(withExtraArgument))
       __obj.asInstanceOf[WithExtraArgument]
     }
     
-    @scala.inline
-    implicit class WithExtraArgumentMutableBuilder[Self <: WithExtraArgument] (val x: Self) extends AnyVal {
+    extension [Self <: WithExtraArgument](x: Self) {
       
-      @scala.inline
-      def setWithExtraArgument(value: js.Any => ThunkMiddleware[js.Object, AnyAction, js.Any]): Self = StObject.set(x, "withExtraArgument", js.Any.fromFunction1(value))
+      inline def setWithExtraArgument(value: js.Any => ThunkMiddleware[js.Object, AnyAction, js.Any]): Self = StObject.set(x, "withExtraArgument", js.Any.fromFunction1(value))
     }
   }
 }

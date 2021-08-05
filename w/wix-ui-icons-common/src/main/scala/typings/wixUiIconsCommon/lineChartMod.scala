@@ -22,20 +22,16 @@ object lineChartMod extends Shortcut {
   }
   object LineChartProps {
     
-    @scala.inline
-    def apply(): LineChartProps = {
+    inline def apply(): LineChartProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LineChartProps]
     }
     
-    @scala.inline
-    implicit class LineChartPropsMutableBuilder[Self <: LineChartProps] (val x: Self) extends AnyVal {
+    extension [Self <: LineChartProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

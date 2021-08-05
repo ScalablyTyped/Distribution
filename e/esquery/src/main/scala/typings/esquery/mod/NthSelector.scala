@@ -13,15 +13,13 @@ trait NthSelector
      with SubjectSelector
 object NthSelector {
   
-  @scala.inline
-  def NthChild(index: NumericLiteral): typings.esquery.mod.NthChild = {
+  inline def NthChild(index: NumericLiteral): typings.esquery.mod.NthChild = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("nth-child")
     __obj.asInstanceOf[typings.esquery.mod.NthChild]
   }
   
-  @scala.inline
-  def NthLastChild(index: NumericLiteral): typings.esquery.mod.NthLastChild = {
+  inline def NthLastChild(index: NumericLiteral): typings.esquery.mod.NthLastChild = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("nth-last-child")
     __obj.asInstanceOf[typings.esquery.mod.NthLastChild]

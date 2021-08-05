@@ -37,8 +37,7 @@ trait VariableSizeGridProps
 }
 object VariableSizeGridProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: ComponentType[GridChildComponentProps],
     columnCount: Double,
     columnWidth: Double => Double,
@@ -51,25 +50,18 @@ object VariableSizeGridProps {
     __obj.asInstanceOf[VariableSizeGridProps]
   }
   
-  @scala.inline
-  implicit class VariableSizeGridPropsMutableBuilder[Self <: VariableSizeGridProps] (val x: Self) extends AnyVal {
+  extension [Self <: VariableSizeGridProps](x: Self) {
     
-    @scala.inline
-    def setColumnWidth(value: Double => Double): Self = StObject.set(x, "columnWidth", js.Any.fromFunction1(value))
+    inline def setColumnWidth(value: Double => Double): Self = StObject.set(x, "columnWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEstimatedColumnWidth(value: Double): Self = StObject.set(x, "estimatedColumnWidth", value.asInstanceOf[js.Any])
+    inline def setEstimatedColumnWidth(value: Double): Self = StObject.set(x, "estimatedColumnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedColumnWidthUndefined: Self = StObject.set(x, "estimatedColumnWidth", js.undefined)
+    inline def setEstimatedColumnWidthUndefined: Self = StObject.set(x, "estimatedColumnWidth", js.undefined)
     
-    @scala.inline
-    def setEstimatedRowHeight(value: Double): Self = StObject.set(x, "estimatedRowHeight", value.asInstanceOf[js.Any])
+    inline def setEstimatedRowHeight(value: Double): Self = StObject.set(x, "estimatedRowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedRowHeightUndefined: Self = StObject.set(x, "estimatedRowHeight", js.undefined)
+    inline def setEstimatedRowHeightUndefined: Self = StObject.set(x, "estimatedRowHeight", js.undefined)
     
-    @scala.inline
-    def setRowHeight(value: Double => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
+    inline def setRowHeight(value: Double => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
   }
 }

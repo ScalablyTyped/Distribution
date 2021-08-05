@@ -18,28 +18,21 @@ trait GoogleActionsV2OrdersGenericExtension extends StObject {
 }
 object GoogleActionsV2OrdersGenericExtension {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersGenericExtension = {
+  inline def apply(): GoogleActionsV2OrdersGenericExtension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersGenericExtension]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersGenericExtensionMutableBuilder[Self <: GoogleActionsV2OrdersGenericExtension] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersGenericExtension](x: Self) {
     
-    @scala.inline
-    def setLocations(value: js.Array[GoogleActionsV2OrdersOrderLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[GoogleActionsV2OrdersOrderLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: GoogleActionsV2OrdersOrderLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: GoogleActionsV2OrdersOrderLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
-    @scala.inline
-    def setTime(value: GoogleActionsV2OrdersTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: GoogleActionsV2OrdersTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

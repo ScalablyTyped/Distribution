@@ -13,16 +13,13 @@ trait DatadogConnectorProfileProperties extends StObject {
 }
 object DatadogConnectorProfileProperties {
   
-  @scala.inline
-  def apply(instanceUrl: InstanceUrl): DatadogConnectorProfileProperties = {
+  inline def apply(instanceUrl: InstanceUrl): DatadogConnectorProfileProperties = {
     val __obj = js.Dynamic.literal(instanceUrl = instanceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatadogConnectorProfileProperties]
   }
   
-  @scala.inline
-  implicit class DatadogConnectorProfilePropertiesMutableBuilder[Self <: DatadogConnectorProfileProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DatadogConnectorProfileProperties](x: Self) {
     
-    @scala.inline
-    def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
+    inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }
 }

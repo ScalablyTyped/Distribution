@@ -31,8 +31,7 @@ object privacy {
   }
   object Network {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       networkPredictionEnabled: ChromeSetting,
       webRTCIPHandlingPolicy: ChromeSetting,
       webRTCMultipleRoutesEnabled: ChromeSetting,
@@ -42,20 +41,15 @@ object privacy {
       __obj.asInstanceOf[Network]
     }
     
-    @scala.inline
-    implicit class NetworkMutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
+    extension [Self <: Network](x: Self) {
       
-      @scala.inline
-      def setNetworkPredictionEnabled(value: ChromeSetting): Self = StObject.set(x, "networkPredictionEnabled", value.asInstanceOf[js.Any])
+      inline def setNetworkPredictionEnabled(value: ChromeSetting): Self = StObject.set(x, "networkPredictionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebRTCIPHandlingPolicy(value: ChromeSetting): Self = StObject.set(x, "webRTCIPHandlingPolicy", value.asInstanceOf[js.Any])
+      inline def setWebRTCIPHandlingPolicy(value: ChromeSetting): Self = StObject.set(x, "webRTCIPHandlingPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebRTCMultipleRoutesEnabled(value: ChromeSetting): Self = StObject.set(x, "webRTCMultipleRoutesEnabled", value.asInstanceOf[js.Any])
+      inline def setWebRTCMultipleRoutesEnabled(value: ChromeSetting): Self = StObject.set(x, "webRTCMultipleRoutesEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebRTCNonProxiedUdpEnabled(value: ChromeSetting): Self = StObject.set(x, "webRTCNonProxiedUdpEnabled", value.asInstanceOf[js.Any])
+      inline def setWebRTCNonProxiedUdpEnabled(value: ChromeSetting): Self = StObject.set(x, "webRTCNonProxiedUdpEnabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,8 +88,7 @@ object privacy {
   }
   object Services {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alternateErrorPagesEnabled: ChromeSetting,
       autofillAddressEnabled: ChromeSetting,
       autofillCreditCardEnabled: ChromeSetting,
@@ -113,44 +106,31 @@ object privacy {
       __obj.asInstanceOf[Services]
     }
     
-    @scala.inline
-    implicit class ServicesMutableBuilder[Self <: Services] (val x: Self) extends AnyVal {
+    extension [Self <: Services](x: Self) {
       
-      @scala.inline
-      def setAlternateErrorPagesEnabled(value: ChromeSetting): Self = StObject.set(x, "alternateErrorPagesEnabled", value.asInstanceOf[js.Any])
+      inline def setAlternateErrorPagesEnabled(value: ChromeSetting): Self = StObject.set(x, "alternateErrorPagesEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutofillAddressEnabled(value: ChromeSetting): Self = StObject.set(x, "autofillAddressEnabled", value.asInstanceOf[js.Any])
+      inline def setAutofillAddressEnabled(value: ChromeSetting): Self = StObject.set(x, "autofillAddressEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutofillCreditCardEnabled(value: ChromeSetting): Self = StObject.set(x, "autofillCreditCardEnabled", value.asInstanceOf[js.Any])
+      inline def setAutofillCreditCardEnabled(value: ChromeSetting): Self = StObject.set(x, "autofillCreditCardEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutofillEnabled(value: ChromeSetting): Self = StObject.set(x, "autofillEnabled", value.asInstanceOf[js.Any])
+      inline def setAutofillEnabled(value: ChromeSetting): Self = StObject.set(x, "autofillEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHotwordSearchEnabled(value: ChromeSetting): Self = StObject.set(x, "hotwordSearchEnabled", value.asInstanceOf[js.Any])
+      inline def setHotwordSearchEnabled(value: ChromeSetting): Self = StObject.set(x, "hotwordSearchEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstantEnabled(value: ChromeSetting): Self = StObject.set(x, "instantEnabled", value.asInstanceOf[js.Any])
+      inline def setInstantEnabled(value: ChromeSetting): Self = StObject.set(x, "instantEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordSavingEnabled(value: ChromeSetting): Self = StObject.set(x, "passwordSavingEnabled", value.asInstanceOf[js.Any])
+      inline def setPasswordSavingEnabled(value: ChromeSetting): Self = StObject.set(x, "passwordSavingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeBrowsingEnabled(value: ChromeSetting): Self = StObject.set(x, "safeBrowsingEnabled", value.asInstanceOf[js.Any])
+      inline def setSafeBrowsingEnabled(value: ChromeSetting): Self = StObject.set(x, "safeBrowsingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeBrowsingExtendedReportingEnabled(value: ChromeSetting): Self = StObject.set(x, "safeBrowsingExtendedReportingEnabled", value.asInstanceOf[js.Any])
+      inline def setSafeBrowsingExtendedReportingEnabled(value: ChromeSetting): Self = StObject.set(x, "safeBrowsingExtendedReportingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchSuggestEnabled(value: ChromeSetting): Self = StObject.set(x, "searchSuggestEnabled", value.asInstanceOf[js.Any])
+      inline def setSearchSuggestEnabled(value: ChromeSetting): Self = StObject.set(x, "searchSuggestEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpellingServiceEnabled(value: ChromeSetting): Self = StObject.set(x, "spellingServiceEnabled", value.asInstanceOf[js.Any])
+      inline def setSpellingServiceEnabled(value: ChromeSetting): Self = StObject.set(x, "spellingServiceEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslationServiceEnabled(value: ChromeSetting): Self = StObject.set(x, "translationServiceEnabled", value.asInstanceOf[js.Any])
+      inline def setTranslationServiceEnabled(value: ChromeSetting): Self = StObject.set(x, "translationServiceEnabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,8 +150,7 @@ object privacy {
   }
   object Websites {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       doNotTrackEnabled: ChromeSetting,
       hyperlinkAuditingEnabled: ChromeSetting,
       protectedContentEnabled: ChromeSetting,
@@ -182,23 +161,17 @@ object privacy {
       __obj.asInstanceOf[Websites]
     }
     
-    @scala.inline
-    implicit class WebsitesMutableBuilder[Self <: Websites] (val x: Self) extends AnyVal {
+    extension [Self <: Websites](x: Self) {
       
-      @scala.inline
-      def setDoNotTrackEnabled(value: ChromeSetting): Self = StObject.set(x, "doNotTrackEnabled", value.asInstanceOf[js.Any])
+      inline def setDoNotTrackEnabled(value: ChromeSetting): Self = StObject.set(x, "doNotTrackEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyperlinkAuditingEnabled(value: ChromeSetting): Self = StObject.set(x, "hyperlinkAuditingEnabled", value.asInstanceOf[js.Any])
+      inline def setHyperlinkAuditingEnabled(value: ChromeSetting): Self = StObject.set(x, "hyperlinkAuditingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtectedContentEnabled(value: ChromeSetting): Self = StObject.set(x, "protectedContentEnabled", value.asInstanceOf[js.Any])
+      inline def setProtectedContentEnabled(value: ChromeSetting): Self = StObject.set(x, "protectedContentEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrersEnabled(value: ChromeSetting): Self = StObject.set(x, "referrersEnabled", value.asInstanceOf[js.Any])
+      inline def setReferrersEnabled(value: ChromeSetting): Self = StObject.set(x, "referrersEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThirdPartyCookiesAllowed(value: ChromeSetting): Self = StObject.set(x, "thirdPartyCookiesAllowed", value.asInstanceOf[js.Any])
+      inline def setThirdPartyCookiesAllowed(value: ChromeSetting): Self = StObject.set(x, "thirdPartyCookiesAllowed", value.asInstanceOf[js.Any])
     }
   }
 }

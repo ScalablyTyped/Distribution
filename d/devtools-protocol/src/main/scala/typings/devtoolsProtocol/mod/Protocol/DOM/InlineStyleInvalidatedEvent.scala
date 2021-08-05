@@ -13,19 +13,15 @@ trait InlineStyleInvalidatedEvent extends StObject {
 }
 object InlineStyleInvalidatedEvent {
   
-  @scala.inline
-  def apply(nodeIds: js.Array[NodeId]): InlineStyleInvalidatedEvent = {
+  inline def apply(nodeIds: js.Array[NodeId]): InlineStyleInvalidatedEvent = {
     val __obj = js.Dynamic.literal(nodeIds = nodeIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineStyleInvalidatedEvent]
   }
   
-  @scala.inline
-  implicit class InlineStyleInvalidatedEventMutableBuilder[Self <: InlineStyleInvalidatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: InlineStyleInvalidatedEvent](x: Self) {
     
-    @scala.inline
-    def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
+    inline def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdsVarargs(value: NodeId*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
+    inline def setNodeIdsVarargs(value: NodeId*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
   }
 }

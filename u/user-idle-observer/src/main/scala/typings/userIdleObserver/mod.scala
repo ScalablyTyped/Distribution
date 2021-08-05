@@ -9,10 +9,8 @@ object mod {
   /**
     * This lib allows you to track user inactivity time.
     */
-  @scala.inline
-  def apply(): UserIDLEObserver = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[UserIDLEObserver]
-  @scala.inline
-  def apply(opts: Options): UserIDLEObserver = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[UserIDLEObserver]
+  inline def apply(): UserIDLEObserver = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[UserIDLEObserver]
+  inline def apply(opts: Options): UserIDLEObserver = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[UserIDLEObserver]
   
   @JSImport("user-idle-observer", JSImport.Namespace)
   @js.native
@@ -48,39 +46,30 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCb(value: /* time */ Double => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction1(value))
+      inline def setCb(value: /* time */ Double => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
+      inline def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
       
-      @scala.inline
-      def setIdleTime(value: Double): Self = StObject.set(x, "idleTime", value.asInstanceOf[js.Any])
+      inline def setIdleTime(value: Double): Self = StObject.set(x, "idleTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleTimeUndefined: Self = StObject.set(x, "idleTime", js.undefined)
+      inline def setIdleTimeUndefined: Self = StObject.set(x, "idleTime", js.undefined)
       
-      @scala.inline
-      def setListeners(
+      inline def setListeners(
         value: js.Array[
               /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 97 */ js.Any
             ]
       ): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
+      inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
       
-      @scala.inline
-      def setListenersVarargs(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 97 */ js.Any)*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+      inline def setListenersVarargs(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 97 */ js.Any)*): Self = StObject.set(x, "listeners", js.Array(value :_*))
     }
   }
   
@@ -93,17 +82,14 @@ object mod {
   }
   object UserIDLEObserver {
     
-    @scala.inline
-    def apply(destroy: () => Unit): UserIDLEObserver = {
+    inline def apply(destroy: () => Unit): UserIDLEObserver = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
       __obj.asInstanceOf[UserIDLEObserver]
     }
     
-    @scala.inline
-    implicit class UserIDLEObserverMutableBuilder[Self <: UserIDLEObserver] (val x: Self) extends AnyVal {
+    extension [Self <: UserIDLEObserver](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }
   }
 }

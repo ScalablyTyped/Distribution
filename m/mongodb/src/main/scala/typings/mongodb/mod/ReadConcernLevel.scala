@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReadConcernLevel extends StObject
 object ReadConcernLevel {
   
-  @scala.inline
-  def available: typings.mongodb.mongodbStrings.available = "available".asInstanceOf[typings.mongodb.mongodbStrings.available]
+  inline def available: typings.mongodb.mongodbStrings.available = "available".asInstanceOf[typings.mongodb.mongodbStrings.available]
   
-  @scala.inline
-  def linearizable: typings.mongodb.mongodbStrings.linearizable = "linearizable".asInstanceOf[typings.mongodb.mongodbStrings.linearizable]
+  inline def linearizable: typings.mongodb.mongodbStrings.linearizable = "linearizable".asInstanceOf[typings.mongodb.mongodbStrings.linearizable]
   
-  @scala.inline
-  def local: typings.mongodb.mongodbStrings.local = "local".asInstanceOf[typings.mongodb.mongodbStrings.local]
+  inline def local: typings.mongodb.mongodbStrings.local = "local".asInstanceOf[typings.mongodb.mongodbStrings.local]
   
-  @scala.inline
-  def majority: typings.mongodb.mongodbStrings.majority = "majority".asInstanceOf[typings.mongodb.mongodbStrings.majority]
+  inline def majority: typings.mongodb.mongodbStrings.majority = "majority".asInstanceOf[typings.mongodb.mongodbStrings.majority]
   
-  @scala.inline
-  def snapshot: typings.mongodb.mongodbStrings.snapshot = "snapshot".asInstanceOf[typings.mongodb.mongodbStrings.snapshot]
+  inline def snapshot: typings.mongodb.mongodbStrings.snapshot = "snapshot".asInstanceOf[typings.mongodb.mongodbStrings.snapshot]
 }

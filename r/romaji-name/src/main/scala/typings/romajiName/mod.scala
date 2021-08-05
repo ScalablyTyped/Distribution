@@ -11,21 +11,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def init(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def parseName(name: String): ParseResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseName")(name.asInstanceOf[js.Any]).asInstanceOf[ParseResults]
-  @scala.inline
-  def parseName(name: String, options: ParseOptions): ParseResults = (^.asInstanceOf[js.Dynamic].applyDynamic("parseName")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseResults]
-  @scala.inline
-  def parseName(results: ParseResults): ParseResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseName")(results.asInstanceOf[js.Any]).asInstanceOf[ParseResults]
+  inline def parseName(name: String): ParseResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseName")(name.asInstanceOf[js.Any]).asInstanceOf[ParseResults]
+  inline def parseName(name: String, options: ParseOptions): ParseResults = (^.asInstanceOf[js.Dynamic].applyDynamic("parseName")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseResults]
+  inline def parseName(results: ParseResults): ParseResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseName")(results.asInstanceOf[js.Any]).asInstanceOf[ParseResults]
   
   @JSImport("romaji-name", "settingsFile")
   @js.native
   def settingsFile: String = js.native
-  @scala.inline
-  def settingsFile_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("settingsFile")(x.asInstanceOf[js.Any])
+  inline def settingsFile_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("settingsFile")(x.asInstanceOf[js.Any])
   
   /* Rewritten from type alias, can be one of: 
     - typings.romajiName.romajiNameStrings.ja
@@ -34,11 +29,9 @@ object mod {
   trait Locale extends StObject
   object Locale {
     
-    @scala.inline
-    def _empty: typings.romajiName.romajiNameStrings._empty = "".asInstanceOf[typings.romajiName.romajiNameStrings._empty]
+    inline def _empty: typings.romajiName.romajiNameStrings._empty = "".asInstanceOf[typings.romajiName.romajiNameStrings._empty]
     
-    @scala.inline
-    def ja: typings.romajiName.romajiNameStrings.ja = "ja".asInstanceOf[typings.romajiName.romajiNameStrings.ja]
+    inline def ja: typings.romajiName.romajiNameStrings.ja = "ja".asInstanceOf[typings.romajiName.romajiNameStrings.ja]
   }
   
   trait ParseOptions extends StObject {
@@ -61,32 +54,24 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setFlipNonJa(value: Boolean): Self = StObject.set(x, "flipNonJa", value.asInstanceOf[js.Any])
+      inline def setFlipNonJa(value: Boolean): Self = StObject.set(x, "flipNonJa", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipNonJaUndefined: Self = StObject.set(x, "flipNonJa", js.undefined)
+      inline def setFlipNonJaUndefined: Self = StObject.set(x, "flipNonJa", js.undefined)
       
-      @scala.inline
-      def setGivenFirst(value: Boolean): Self = StObject.set(x, "givenFirst", value.asInstanceOf[js.Any])
+      inline def setGivenFirst(value: Boolean): Self = StObject.set(x, "givenFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGivenFirstUndefined: Self = StObject.set(x, "givenFirst", js.undefined)
+      inline def setGivenFirstUndefined: Self = StObject.set(x, "givenFirst", js.undefined)
       
-      @scala.inline
-      def setStripParens(value: Boolean): Self = StObject.set(x, "stripParens", value.asInstanceOf[js.Any])
+      inline def setStripParens(value: Boolean): Self = StObject.set(x, "stripParens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripParensUndefined: Self = StObject.set(x, "stripParens", js.undefined)
+      inline def setStripParensUndefined: Self = StObject.set(x, "stripParens", js.undefined)
     }
   }
   
@@ -205,122 +190,84 @@ object mod {
   }
   object ParseResults {
     
-    @scala.inline
-    def apply(locale: Locale, name: String, original: String, plain: String): ParseResults = {
+    inline def apply(locale: Locale, name: String, original: String, plain: String): ParseResults = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], plain = plain.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseResults]
     }
     
-    @scala.inline
-    implicit class ParseResultsMutableBuilder[Self <: ParseResults] (val x: Self) extends AnyVal {
+    extension [Self <: ParseResults](x: Self) {
       
-      @scala.inline
-      def setAfter(value: Boolean): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: Boolean): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setAscii(value: String): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
+      inline def setAscii(value: String): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsciiUndefined: Self = StObject.set(x, "ascii", js.undefined)
+      inline def setAsciiUndefined: Self = StObject.set(x, "ascii", js.undefined)
       
-      @scala.inline
-      def setAttributed(value: Boolean): Self = StObject.set(x, "attributed", value.asInstanceOf[js.Any])
+      inline def setAttributed(value: Boolean): Self = StObject.set(x, "attributed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributedUndefined: Self = StObject.set(x, "attributed", js.undefined)
+      inline def setAttributedUndefined: Self = StObject.set(x, "attributed", js.undefined)
       
-      @scala.inline
-      def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+      inline def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+      inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
       
-      @scala.inline
-      def setGiven(value: String): Self = StObject.set(x, "given", value.asInstanceOf[js.Any])
+      inline def setGiven(value: String): Self = StObject.set(x, "given", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGivenUndefined: Self = StObject.set(x, "given", js.undefined)
+      inline def setGivenUndefined: Self = StObject.set(x, "given", js.undefined)
       
-      @scala.inline
-      def setGiven_kana(value: String): Self = StObject.set(x, "given_kana", value.asInstanceOf[js.Any])
+      inline def setGiven_kana(value: String): Self = StObject.set(x, "given_kana", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGiven_kanaUndefined: Self = StObject.set(x, "given_kana", js.undefined)
+      inline def setGiven_kanaUndefined: Self = StObject.set(x, "given_kana", js.undefined)
       
-      @scala.inline
-      def setGiven_kanji(value: String): Self = StObject.set(x, "given_kanji", value.asInstanceOf[js.Any])
+      inline def setGiven_kanji(value: String): Self = StObject.set(x, "given_kanji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGiven_kanjiUndefined: Self = StObject.set(x, "given_kanji", js.undefined)
+      inline def setGiven_kanjiUndefined: Self = StObject.set(x, "given_kanji", js.undefined)
       
-      @scala.inline
-      def setKana(value: String): Self = StObject.set(x, "kana", value.asInstanceOf[js.Any])
+      inline def setKana(value: String): Self = StObject.set(x, "kana", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKanaUndefined: Self = StObject.set(x, "kana", js.undefined)
+      inline def setKanaUndefined: Self = StObject.set(x, "kana", js.undefined)
       
-      @scala.inline
-      def setKanji(value: String): Self = StObject.set(x, "kanji", value.asInstanceOf[js.Any])
+      inline def setKanji(value: String): Self = StObject.set(x, "kanji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKanjiUndefined: Self = StObject.set(x, "kanji", js.undefined)
+      inline def setKanjiUndefined: Self = StObject.set(x, "kanji", js.undefined)
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddle(value: String): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
+      inline def setMiddle(value: String): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
+      inline def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+      inline def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlain(value: String): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+      inline def setPlain(value: String): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchool(value: Boolean): Self = StObject.set(x, "school", value.asInstanceOf[js.Any])
+      inline def setSchool(value: Boolean): Self = StObject.set(x, "school", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchoolUndefined: Self = StObject.set(x, "school", js.undefined)
+      inline def setSchoolUndefined: Self = StObject.set(x, "school", js.undefined)
       
-      @scala.inline
-      def setSettings(value: ParseOptions): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: ParseOptions): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
       
-      @scala.inline
-      def setSurname(value: String): Self = StObject.set(x, "surname", value.asInstanceOf[js.Any])
+      inline def setSurname(value: String): Self = StObject.set(x, "surname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSurnameUndefined: Self = StObject.set(x, "surname", js.undefined)
+      inline def setSurnameUndefined: Self = StObject.set(x, "surname", js.undefined)
       
-      @scala.inline
-      def setSurname_kana(value: String): Self = StObject.set(x, "surname_kana", value.asInstanceOf[js.Any])
+      inline def setSurname_kana(value: String): Self = StObject.set(x, "surname_kana", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSurname_kanaUndefined: Self = StObject.set(x, "surname_kana", js.undefined)
+      inline def setSurname_kanaUndefined: Self = StObject.set(x, "surname_kana", js.undefined)
       
-      @scala.inline
-      def setSurname_kanji(value: String): Self = StObject.set(x, "surname_kanji", value.asInstanceOf[js.Any])
+      inline def setSurname_kanji(value: String): Self = StObject.set(x, "surname_kanji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSurname_kanjiUndefined: Self = StObject.set(x, "surname_kanji", js.undefined)
+      inline def setSurname_kanjiUndefined: Self = StObject.set(x, "surname_kanji", js.undefined)
       
-      @scala.inline
-      def setUnknown(value: `true`): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+      inline def setUnknown(value: `true`): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnknownUndefined: Self = StObject.set(x, "unknown", js.undefined)
+      inline def setUnknownUndefined: Self = StObject.set(x, "unknown", js.undefined)
     }
   }
 }

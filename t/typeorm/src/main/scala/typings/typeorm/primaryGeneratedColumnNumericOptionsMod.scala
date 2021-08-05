@@ -37,44 +37,32 @@ object primaryGeneratedColumnNumericOptionsMod {
   }
   object PrimaryGeneratedColumnNumericOptions {
     
-    @scala.inline
-    def apply(): PrimaryGeneratedColumnNumericOptions = {
+    inline def apply(): PrimaryGeneratedColumnNumericOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrimaryGeneratedColumnNumericOptions]
     }
     
-    @scala.inline
-    implicit class PrimaryGeneratedColumnNumericOptionsMutableBuilder[Self <: PrimaryGeneratedColumnNumericOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrimaryGeneratedColumnNumericOptions](x: Self) {
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setType(value: PrimaryGeneratedColumnType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PrimaryGeneratedColumnType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUnsigned(value: Boolean): Self = StObject.set(x, "unsigned", value.asInstanceOf[js.Any])
+      inline def setUnsigned(value: Boolean): Self = StObject.set(x, "unsigned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsignedUndefined: Self = StObject.set(x, "unsigned", js.undefined)
+      inline def setUnsignedUndefined: Self = StObject.set(x, "unsigned", js.undefined)
       
-      @scala.inline
-      def setZerofill(value: Boolean): Self = StObject.set(x, "zerofill", value.asInstanceOf[js.Any])
+      inline def setZerofill(value: Boolean): Self = StObject.set(x, "zerofill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZerofillUndefined: Self = StObject.set(x, "zerofill", js.undefined)
+      inline def setZerofillUndefined: Self = StObject.set(x, "zerofill", js.undefined)
     }
   }
 }

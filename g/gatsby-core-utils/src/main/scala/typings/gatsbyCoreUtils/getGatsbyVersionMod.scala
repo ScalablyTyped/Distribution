@@ -10,6 +10,5 @@ object getGatsbyVersionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getGatsbyVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getGatsbyVersion")().asInstanceOf[String]
+  inline def getGatsbyVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getGatsbyVersion")().asInstanceOf[String]
 }

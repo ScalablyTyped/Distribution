@@ -10,19 +10,15 @@ trait ReactionMixin extends StObject {
 }
 object ReactionMixin {
   
-  @scala.inline
-  def apply(reactions: js.Array[Reaction]): ReactionMixin = {
+  inline def apply(reactions: js.Array[Reaction]): ReactionMixin = {
     val __obj = js.Dynamic.literal(reactions = reactions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactionMixin]
   }
   
-  @scala.inline
-  implicit class ReactionMixinMutableBuilder[Self <: ReactionMixin] (val x: Self) extends AnyVal {
+  extension [Self <: ReactionMixin](x: Self) {
     
-    @scala.inline
-    def setReactions(value: js.Array[Reaction]): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+    inline def setReactions(value: js.Array[Reaction]): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "reactions", js.Array(value :_*))
+    inline def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "reactions", js.Array(value :_*))
   }
 }

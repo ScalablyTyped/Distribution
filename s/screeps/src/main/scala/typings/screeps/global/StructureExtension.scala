@@ -108,6 +108,5 @@ class StructureExtension protected ()
 }
 object StructureExtension {
   
-  @scala.inline
-  def apply: StructureExtensionConstructor = js.Dynamic.global.selectDynamic("StructureExtension").asInstanceOf[StructureExtensionConstructor]
+  inline def apply: StructureExtensionConstructor = js.Dynamic.global.selectDynamic("StructureExtension").asInstanceOf[StructureExtensionConstructor]
 }

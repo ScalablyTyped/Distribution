@@ -14,28 +14,21 @@ trait KeyboardButton extends StObject {
 }
 object KeyboardButton {
   
-  @scala.inline
-  def apply(text: String): KeyboardButton = {
+  inline def apply(text: String): KeyboardButton = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardButton]
   }
   
-  @scala.inline
-  implicit class KeyboardButtonMutableBuilder[Self <: KeyboardButton] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardButton](x: Self) {
     
-    @scala.inline
-    def setRequest_contact(value: Boolean): Self = StObject.set(x, "request_contact", value.asInstanceOf[js.Any])
+    inline def setRequest_contact(value: Boolean): Self = StObject.set(x, "request_contact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest_contactUndefined: Self = StObject.set(x, "request_contact", js.undefined)
+    inline def setRequest_contactUndefined: Self = StObject.set(x, "request_contact", js.undefined)
     
-    @scala.inline
-    def setRequest_location(value: Boolean): Self = StObject.set(x, "request_location", value.asInstanceOf[js.Any])
+    inline def setRequest_location(value: Boolean): Self = StObject.set(x, "request_location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest_locationUndefined: Self = StObject.set(x, "request_location", js.undefined)
+    inline def setRequest_locationUndefined: Self = StObject.set(x, "request_location", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

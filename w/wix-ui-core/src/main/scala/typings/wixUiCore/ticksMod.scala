@@ -48,8 +48,7 @@ object ticksMod {
   }
   object TicksProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       max: Double,
       min: Double,
       onTickClick: js.Any => Unit,
@@ -63,38 +62,27 @@ object ticksMod {
       __obj.asInstanceOf[TicksProps]
     }
     
-    @scala.inline
-    implicit class TicksPropsMutableBuilder[Self <: TicksProps] (val x: Self) extends AnyVal {
+    extension [Self <: TicksProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnTickClick(value: js.Any => Unit): Self = StObject.set(x, "onTickClick", js.Any.fromFunction1(value))
+      inline def setOnTickClick(value: js.Any => Unit): Self = StObject.set(x, "onTickClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbSize(value: Double): Self = StObject.set(x, "thumbSize", value.asInstanceOf[js.Any])
+      inline def setThumbSize(value: Double): Self = StObject.set(x, "thumbSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickMarksShape(value: String): Self = StObject.set(x, "tickMarksShape", value.asInstanceOf[js.Any])
+      inline def setTickMarksShape(value: String): Self = StObject.set(x, "tickMarksShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackSize(value: Double): Self = StObject.set(x, "trackSize", value.asInstanceOf[js.Any])
+      inline def setTrackSize(value: Double): Self = StObject.set(x, "trackSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     }
   }
 }

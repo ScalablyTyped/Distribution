@@ -53,8 +53,7 @@ trait Mode extends StObject {
 }
 object Mode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allocatedHeight: Double,
     allocatedWidth: Double,
     isControlDisabled: Boolean,
@@ -68,31 +67,22 @@ object Mode {
     __obj.asInstanceOf[Mode]
   }
   
-  @scala.inline
-  implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+  extension [Self <: Mode](x: Self) {
     
-    @scala.inline
-    def setAllocatedHeight(value: Double): Self = StObject.set(x, "allocatedHeight", value.asInstanceOf[js.Any])
+    inline def setAllocatedHeight(value: Double): Self = StObject.set(x, "allocatedHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocatedWidth(value: Double): Self = StObject.set(x, "allocatedWidth", value.asInstanceOf[js.Any])
+    inline def setAllocatedWidth(value: Double): Self = StObject.set(x, "allocatedWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsControlDisabled(value: Boolean): Self = StObject.set(x, "isControlDisabled", value.asInstanceOf[js.Any])
+    inline def setIsControlDisabled(value: Boolean): Self = StObject.set(x, "isControlDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetControlState(value: Dictionary => Boolean): Self = StObject.set(x, "setControlState", js.Any.fromFunction1(value))
+    inline def setSetControlState(value: Dictionary => Boolean): Self = StObject.set(x, "setControlState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFullScreen(value: Boolean => Unit): Self = StObject.set(x, "setFullScreen", js.Any.fromFunction1(value))
+    inline def setSetFullScreen(value: Boolean => Unit): Self = StObject.set(x, "setFullScreen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrackContainerResize(value: Boolean => Unit): Self = StObject.set(x, "trackContainerResize", js.Any.fromFunction1(value))
+    inline def setTrackContainerResize(value: Boolean => Unit): Self = StObject.set(x, "trackContainerResize", js.Any.fromFunction1(value))
   }
 }

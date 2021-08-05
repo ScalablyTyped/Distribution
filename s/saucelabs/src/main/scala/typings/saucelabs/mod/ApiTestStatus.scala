@@ -13,19 +13,15 @@ trait ApiTestStatus
 }
 object ApiTestStatus {
   
-  @scala.inline
-  def apply(): ApiTestStatus = {
+  inline def apply(): ApiTestStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiTestStatus]
   }
   
-  @scala.inline
-  implicit class ApiTestStatusMutableBuilder[Self <: ApiTestStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ApiTestStatus](x: Self) {
     
-    @scala.inline
-    def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+    inline def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassedUndefined: Self = StObject.set(x, "passed", js.undefined)
+    inline def setPassedUndefined: Self = StObject.set(x, "passed", js.undefined)
   }
 }

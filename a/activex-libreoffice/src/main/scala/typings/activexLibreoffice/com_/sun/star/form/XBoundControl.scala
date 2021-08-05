@@ -31,8 +31,7 @@ trait XBoundControl
 }
 object XBoundControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Lock: Boolean,
     acquire: () => Unit,
     getLock: () => Boolean,
@@ -44,16 +43,12 @@ object XBoundControl {
     __obj.asInstanceOf[XBoundControl]
   }
   
-  @scala.inline
-  implicit class XBoundControlMutableBuilder[Self <: XBoundControl] (val x: Self) extends AnyVal {
+  extension [Self <: XBoundControl](x: Self) {
     
-    @scala.inline
-    def setGetLock(value: () => Boolean): Self = StObject.set(x, "getLock", js.Any.fromFunction0(value))
+    inline def setGetLock(value: () => Boolean): Self = StObject.set(x, "getLock", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLock(value: Boolean): Self = StObject.set(x, "Lock", value.asInstanceOf[js.Any])
+    inline def setLock(value: Boolean): Self = StObject.set(x, "Lock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetLock(value: Boolean => Unit): Self = StObject.set(x, "setLock", js.Any.fromFunction1(value))
+    inline def setSetLock(value: Boolean => Unit): Self = StObject.set(x, "setLock", js.Any.fromFunction1(value))
   }
 }

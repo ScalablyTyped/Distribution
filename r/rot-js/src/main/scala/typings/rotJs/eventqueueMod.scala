@@ -109,8 +109,7 @@ object eventqueueMod {
   }
   object EventQueue {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       _events: MinHeap[T],
       _time: Double,
       add: (T, Double) => Unit,
@@ -124,32 +123,23 @@ object eventqueueMod {
       __obj.asInstanceOf[EventQueue[T]]
     }
     
-    @scala.inline
-    implicit class EventQueueMutableBuilder[Self <: EventQueue[?], T] (val x: Self & EventQueue[T]) extends AnyVal {
+    extension [Self <: EventQueue[?], T](x: Self & EventQueue[T]) {
       
-      @scala.inline
-      def setAdd(value: (T, Double) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (T, Double) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClear(value: () => EventQueue[T]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => EventQueue[T]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: () => T | Null): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => T | Null): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEventTime(value: T => js.UndefOr[Double]): Self = StObject.set(x, "getEventTime", js.Any.fromFunction1(value))
+      inline def setGetEventTime(value: T => js.UndefOr[Double]): Self = StObject.set(x, "getEventTime", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTime(value: () => Double): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
+      inline def setGetTime(value: () => Double): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: T => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: T => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_events(value: MinHeap[T]): Self = StObject.set(x, "_events", value.asInstanceOf[js.Any])
+      inline def set_events(value: MinHeap[T]): Self = StObject.set(x, "_events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_time(value: Double): Self = StObject.set(x, "_time", value.asInstanceOf[js.Any])
+      inline def set_time(value: Double): Self = StObject.set(x, "_time", value.asInstanceOf[js.Any])
     }
   }
 }

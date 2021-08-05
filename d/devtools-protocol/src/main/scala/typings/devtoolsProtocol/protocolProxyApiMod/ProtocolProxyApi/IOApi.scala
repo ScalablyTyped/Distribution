@@ -28,8 +28,7 @@ trait IOApi extends StObject {
 }
 object IOApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: CloseRequest => js.Promise[Unit],
     read: ReadRequest => js.Promise[ReadResponse],
     resolveBlob: ResolveBlobRequest => js.Promise[ResolveBlobResponse]
@@ -38,16 +37,12 @@ object IOApi {
     __obj.asInstanceOf[IOApi]
   }
   
-  @scala.inline
-  implicit class IOApiMutableBuilder[Self <: IOApi] (val x: Self) extends AnyVal {
+  extension [Self <: IOApi](x: Self) {
     
-    @scala.inline
-    def setClose(value: CloseRequest => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    inline def setClose(value: CloseRequest => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRead(value: ReadRequest => js.Promise[ReadResponse]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: ReadRequest => js.Promise[ReadResponse]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolveBlob(value: ResolveBlobRequest => js.Promise[ResolveBlobResponse]): Self = StObject.set(x, "resolveBlob", js.Any.fromFunction1(value))
+    inline def setResolveBlob(value: ResolveBlobRequest => js.Promise[ResolveBlobResponse]): Self = StObject.set(x, "resolveBlob", js.Any.fromFunction1(value))
   }
 }

@@ -36,37 +36,27 @@ trait EnvironmentProperties extends StObject {
 }
 object EnvironmentProperties {
   
-  @scala.inline
-  def apply(): EnvironmentProperties = {
+  inline def apply(): EnvironmentProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentProperties]
   }
   
-  @scala.inline
-  implicit class EnvironmentPropertiesMutableBuilder[Self <: EnvironmentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentProperties](x: Self) {
     
-    @scala.inline
-    def setAtmosphereEnabled(value: Boolean): Self = StObject.set(x, "atmosphereEnabled", value.asInstanceOf[js.Any])
+    inline def setAtmosphereEnabled(value: Boolean): Self = StObject.set(x, "atmosphereEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtmosphereEnabledUndefined: Self = StObject.set(x, "atmosphereEnabled", js.undefined)
+    inline def setAtmosphereEnabledUndefined: Self = StObject.set(x, "atmosphereEnabled", js.undefined)
     
-    @scala.inline
-    def setBackground(value: BackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: BackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setLighting(value: LightingProperties): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
+    inline def setLighting(value: LightingProperties): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightingUndefined: Self = StObject.set(x, "lighting", js.undefined)
+    inline def setLightingUndefined: Self = StObject.set(x, "lighting", js.undefined)
     
-    @scala.inline
-    def setStarsEnabled(value: Boolean): Self = StObject.set(x, "starsEnabled", value.asInstanceOf[js.Any])
+    inline def setStarsEnabled(value: Boolean): Self = StObject.set(x, "starsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarsEnabledUndefined: Self = StObject.set(x, "starsEnabled", js.undefined)
+    inline def setStarsEnabledUndefined: Self = StObject.set(x, "starsEnabled", js.undefined)
   }
 }

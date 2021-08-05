@@ -13,19 +13,15 @@ trait IDataPlanUsage extends StObject {
 }
 object IDataPlanUsage {
   
-  @scala.inline
-  def apply(lastSyncTime: Date, megabytesUsed: Double): IDataPlanUsage = {
+  inline def apply(lastSyncTime: Date, megabytesUsed: Double): IDataPlanUsage = {
     val __obj = js.Dynamic.literal(lastSyncTime = lastSyncTime.asInstanceOf[js.Any], megabytesUsed = megabytesUsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataPlanUsage]
   }
   
-  @scala.inline
-  implicit class IDataPlanUsageMutableBuilder[Self <: IDataPlanUsage] (val x: Self) extends AnyVal {
+  extension [Self <: IDataPlanUsage](x: Self) {
     
-    @scala.inline
-    def setLastSyncTime(value: Date): Self = StObject.set(x, "lastSyncTime", value.asInstanceOf[js.Any])
+    inline def setLastSyncTime(value: Date): Self = StObject.set(x, "lastSyncTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMegabytesUsed(value: Double): Self = StObject.set(x, "megabytesUsed", value.asInstanceOf[js.Any])
+    inline def setMegabytesUsed(value: Double): Self = StObject.set(x, "megabytesUsed", value.asInstanceOf[js.Any])
   }
 }

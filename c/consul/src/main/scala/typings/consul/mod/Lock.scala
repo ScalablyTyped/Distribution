@@ -39,41 +39,30 @@ object Lock {
   }
   object Options {
     
-    @scala.inline
-    def apply(key: String): Options = {
+    inline def apply(key: String): Options = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockretrytime(value: String): Self = StObject.set(x, "lockretrytime", value.asInstanceOf[js.Any])
+      inline def setLockretrytime(value: String): Self = StObject.set(x, "lockretrytime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockretrytimeUndefined: Self = StObject.set(x, "lockretrytime", js.undefined)
+      inline def setLockretrytimeUndefined: Self = StObject.set(x, "lockretrytime", js.undefined)
       
-      @scala.inline
-      def setLockwaittime(value: String): Self = StObject.set(x, "lockwaittime", value.asInstanceOf[js.Any])
+      inline def setLockwaittime(value: String): Self = StObject.set(x, "lockwaittime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockwaittimeUndefined: Self = StObject.set(x, "lockwaittime", js.undefined)
+      inline def setLockwaittimeUndefined: Self = StObject.set(x, "lockwaittime", js.undefined)
       
-      @scala.inline
-      def setSession(value: js.Object | String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: js.Object | String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

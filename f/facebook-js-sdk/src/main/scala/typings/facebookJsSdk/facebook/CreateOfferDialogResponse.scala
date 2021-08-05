@@ -14,19 +14,15 @@ trait CreateOfferDialogResponse
 }
 object CreateOfferDialogResponse {
   
-  @scala.inline
-  def apply(id: String, success: Boolean): CreateOfferDialogResponse = {
+  inline def apply(id: String, success: Boolean): CreateOfferDialogResponse = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOfferDialogResponse]
   }
   
-  @scala.inline
-  implicit class CreateOfferDialogResponseMutableBuilder[Self <: CreateOfferDialogResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOfferDialogResponse](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

@@ -38,8 +38,7 @@ trait ServiceSpecificCredentialMetadata extends StObject {
 }
 object ServiceSpecificCredentialMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreateDate: dateType,
     ServiceName: serviceName,
     ServiceSpecificCredentialId: serviceSpecificCredentialId,
@@ -51,25 +50,18 @@ object ServiceSpecificCredentialMetadata {
     __obj.asInstanceOf[ServiceSpecificCredentialMetadata]
   }
   
-  @scala.inline
-  implicit class ServiceSpecificCredentialMetadataMutableBuilder[Self <: ServiceSpecificCredentialMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceSpecificCredentialMetadata](x: Self) {
     
-    @scala.inline
-    def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceName(value: serviceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: serviceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceSpecificCredentialId(value: serviceSpecificCredentialId): Self = StObject.set(x, "ServiceSpecificCredentialId", value.asInstanceOf[js.Any])
+    inline def setServiceSpecificCredentialId(value: serviceSpecificCredentialId): Self = StObject.set(x, "ServiceSpecificCredentialId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUserName(value: serviceUserName): Self = StObject.set(x, "ServiceUserName", value.asInstanceOf[js.Any])
+    inline def setServiceUserName(value: serviceUserName): Self = StObject.set(x, "ServiceUserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

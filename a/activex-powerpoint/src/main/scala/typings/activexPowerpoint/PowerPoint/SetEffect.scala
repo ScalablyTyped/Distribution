@@ -10,7 +10,7 @@ trait SetEffect extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.SetEffect_typekey")
+  /* private */ @JSName("PowerPoint.SetEffect_typekey")
   var PowerPointDotSetEffect_typekey: SetEffect
   
   var Property: MsoAnimProperty
@@ -19,8 +19,7 @@ trait SetEffect extends StObject {
 }
 object SetEffect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Parent: js.Any,
     PowerPointDotSetEffect_typekey: SetEffect,
@@ -32,22 +31,16 @@ object SetEffect {
     __obj.asInstanceOf[SetEffect]
   }
   
-  @scala.inline
-  implicit class SetEffectMutableBuilder[Self <: SetEffect] (val x: Self) extends AnyVal {
+  extension [Self <: SetEffect](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotSetEffect_typekey(value: SetEffect): Self = StObject.set(x, "PowerPoint.SetEffect_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotSetEffect_typekey(value: SetEffect): Self = StObject.set(x, "PowerPoint.SetEffect_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: MsoAnimProperty): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: MsoAnimProperty): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: js.Any): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: js.Any): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
   }
 }

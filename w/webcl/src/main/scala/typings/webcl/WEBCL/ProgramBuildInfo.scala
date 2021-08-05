@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProgramBuildInfo extends StObject
 object ProgramBuildInfo {
   
-  @scala.inline
-  def PROGRAM_BUILD_LOG: `0x1183` = 0x1183.asInstanceOf[`0x1183`]
+  inline def PROGRAM_BUILD_LOG: `0x1183` = 0x1183.asInstanceOf[`0x1183`]
   
-  @scala.inline
-  def PROGRAM_BUILD_OPTIONS: `0x1182` = 0x1182.asInstanceOf[`0x1182`]
+  inline def PROGRAM_BUILD_OPTIONS: `0x1182` = 0x1182.asInstanceOf[`0x1182`]
   
-  @scala.inline
-  def PROGRAM_BUILD_STATUS: `0x1181` = 0x1181.asInstanceOf[`0x1181`]
+  inline def PROGRAM_BUILD_STATUS: `0x1181` = 0x1181.asInstanceOf[`0x1181`]
 }

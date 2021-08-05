@@ -15,8 +15,7 @@ object flipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def flipPose(
+  inline def flipPose(
     props: PoserState[
       Value, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
@@ -35,8 +34,7 @@ object flipMod {
     TransitionDefinition
   ]]
   
-  @scala.inline
-  def isFlipPose(
+  inline def isFlipPose(
     flip: Boolean,
     key: String,
     state: PoserState[
@@ -47,8 +45,7 @@ object flipMod {
     ]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFlipPose")(flip.asInstanceOf[js.Any], key.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def setValue(
+  inline def setValue(
     hasValuesProps: PoserState[
       Value, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 

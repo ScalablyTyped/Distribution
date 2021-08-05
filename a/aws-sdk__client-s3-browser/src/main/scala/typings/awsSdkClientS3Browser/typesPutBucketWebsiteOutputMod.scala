@@ -15,8 +15,7 @@ object typesPutBucketWebsiteOutputMod {
        with _OutputTypesUnion
   object PutBucketWebsiteOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PutBucketWebsiteOutput = {
+    inline def apply($metadata: ResponseMetadata): PutBucketWebsiteOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutBucketWebsiteOutput]
     }

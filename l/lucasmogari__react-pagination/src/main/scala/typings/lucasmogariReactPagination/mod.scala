@@ -40,8 +40,7 @@ object mod {
     /* "next" */ val next: typings.lucasmogariReactPagination.mod.PageVariant.next & String = js.native
   }
   
-  @scala.inline
-  def useNavigation(parameters: UseNavigationParameters): UseNavigationPayload = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigation")(parameters.asInstanceOf[js.Any]).asInstanceOf[UseNavigationPayload]
+  inline def useNavigation(parameters: UseNavigationParameters): UseNavigationPayload = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigation")(parameters.asInstanceOf[js.Any]).asInstanceOf[UseNavigationPayload]
   
   type Page = PageVariant | Double
   
@@ -57,32 +56,24 @@ object mod {
   }
   object PageItem {
     
-    @scala.inline
-    def apply(page: PageVariant | Double, props: PageItemProps): PageItem = {
+    inline def apply(page: PageVariant | Double, props: PageItemProps): PageItem = {
       val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageItem]
     }
     
-    @scala.inline
-    implicit class PageItemMutableBuilder[Self <: PageItem] (val x: Self) extends AnyVal {
+    extension [Self <: PageItem](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setPage(value: PageVariant | Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: PageVariant | Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: PageItemProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: PageItemProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,29 +87,22 @@ object mod {
   }
   object PageItemProps {
     
-    @scala.inline
-    def apply(onClick: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): PageItemProps = {
+    inline def apply(onClick: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): PageItemProps = {
       val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick))
       __obj.asInstanceOf[PageItemProps]
     }
     
-    @scala.inline
-    implicit class PageItemPropsMutableBuilder[Self <: PageItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: PageItemProps](x: Self) {
       
-      @scala.inline
-      def `setAria-current`(value: Boolean): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
+      inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     }
   }
   
@@ -140,47 +124,34 @@ object mod {
   }
   object UseNavigationParameters {
     
-    @scala.inline
-    def apply(getPageItemProps: /* repeated */ js.Any => Unit, itemsPerPage: Double, totalItems: Double): UseNavigationParameters = {
+    inline def apply(getPageItemProps: /* repeated */ js.Any => Unit, itemsPerPage: Double, totalItems: Double): UseNavigationParameters = {
       val __obj = js.Dynamic.literal(getPageItemProps = js.Any.fromFunction1(getPageItemProps), itemsPerPage = itemsPerPage.asInstanceOf[js.Any], totalItems = totalItems.asInstanceOf[js.Any])
       __obj.asInstanceOf[UseNavigationParameters]
     }
     
-    @scala.inline
-    implicit class UseNavigationParametersMutableBuilder[Self <: UseNavigationParameters] (val x: Self) extends AnyVal {
+    extension [Self <: UseNavigationParameters](x: Self) {
       
-      @scala.inline
-      def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
+      inline def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
+      inline def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
       
-      @scala.inline
-      def setGetPageItemProps(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getPageItemProps", js.Any.fromFunction1(value))
+      inline def setGetPageItemProps(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getPageItemProps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
+      inline def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPageItems(value: Double): Self = StObject.set(x, "maxPageItems", value.asInstanceOf[js.Any])
+      inline def setMaxPageItems(value: Double): Self = StObject.set(x, "maxPageItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPageItemsUndefined: Self = StObject.set(x, "maxPageItems", js.undefined)
+      inline def setMaxPageItemsUndefined: Self = StObject.set(x, "maxPageItems", js.undefined)
       
-      @scala.inline
-      def setNumbers(value: Boolean): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
+      inline def setNumbers(value: Boolean): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumbersUndefined: Self = StObject.set(x, "numbers", js.undefined)
+      inline def setNumbersUndefined: Self = StObject.set(x, "numbers", js.undefined)
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
-      @scala.inline
-      def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+      inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     }
   }
   
@@ -220,8 +191,7 @@ object mod {
   }
   object UseNavigationPayload {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arrows: Boolean,
       fromItem: Double,
       getPageItem: Double => PageItem,
@@ -243,56 +213,39 @@ object mod {
       __obj.asInstanceOf[UseNavigationPayload]
     }
     
-    @scala.inline
-    implicit class UseNavigationPayloadMutableBuilder[Self <: UseNavigationPayload] (val x: Self) extends AnyVal {
+    extension [Self <: UseNavigationPayload](x: Self) {
       
-      @scala.inline
-      def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
+      inline def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromItem(value: Double): Self = StObject.set(x, "fromItem", value.asInstanceOf[js.Any])
+      inline def setFromItem(value: Double): Self = StObject.set(x, "fromItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetPageItem(value: Double => PageItem): Self = StObject.set(x, "getPageItem", js.Any.fromFunction1(value))
+      inline def setGetPageItem(value: Double => PageItem): Self = StObject.set(x, "getPageItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGoTo(value: Page => Unit): Self = StObject.set(x, "goTo", js.Any.fromFunction1(value))
+      inline def setGoTo(value: Page => Unit): Self = StObject.set(x, "goTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
+      inline def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPageItems(value: Double): Self = StObject.set(x, "maxPageItems", value.asInstanceOf[js.Any])
+      inline def setMaxPageItems(value: Double): Self = StObject.set(x, "maxPageItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNumbers(value: Boolean): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
+      inline def setNumbers(value: Boolean): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevious(value: () => Unit): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
+      inline def setPrevious(value: () => Unit): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetMaxPageItems(value: Double => Unit): Self = StObject.set(x, "setMaxPageItems", js.Any.fromFunction1(value))
+      inline def setSetMaxPageItems(value: Double => Unit): Self = StObject.set(x, "setMaxPageItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTotalItems(value: Double => Unit): Self = StObject.set(x, "setTotalItems", js.Any.fromFunction1(value))
+      inline def setSetTotalItems(value: Double => Unit): Self = StObject.set(x, "setTotalItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToItem(value: Double): Self = StObject.set(x, "toItem", value.asInstanceOf[js.Any])
+      inline def setToItem(value: Double): Self = StObject.set(x, "toItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+      inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+      inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
     }
   }
 }

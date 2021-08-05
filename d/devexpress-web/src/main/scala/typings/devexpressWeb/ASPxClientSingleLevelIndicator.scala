@@ -18,16 +18,13 @@ trait ASPxClientSingleLevelIndicator
 }
 object ASPxClientSingleLevelIndicator {
   
-  @scala.inline
-  def apply(chart: ASPxClientWebChart, name: String, series: ASPxClientSeries, valueLevel: String): ASPxClientSingleLevelIndicator = {
+  inline def apply(chart: ASPxClientWebChart, name: String, series: ASPxClientSeries, valueLevel: String): ASPxClientSingleLevelIndicator = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], valueLevel = valueLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSingleLevelIndicator]
   }
   
-  @scala.inline
-  implicit class ASPxClientSingleLevelIndicatorMutableBuilder[Self <: ASPxClientSingleLevelIndicator] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSingleLevelIndicator](x: Self) {
     
-    @scala.inline
-    def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
+    inline def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
   }
 }

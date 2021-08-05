@@ -39,43 +39,31 @@ trait SchemaListenResponse extends StObject {
 }
 object SchemaListenResponse {
   
-  @scala.inline
-  def apply(): SchemaListenResponse = {
+  inline def apply(): SchemaListenResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListenResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListenResponseMutableBuilder[Self <: SchemaListenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListenResponse](x: Self) {
     
-    @scala.inline
-    def setDocumentChange(value: SchemaDocumentChange): Self = StObject.set(x, "documentChange", value.asInstanceOf[js.Any])
+    inline def setDocumentChange(value: SchemaDocumentChange): Self = StObject.set(x, "documentChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentChangeUndefined: Self = StObject.set(x, "documentChange", js.undefined)
+    inline def setDocumentChangeUndefined: Self = StObject.set(x, "documentChange", js.undefined)
     
-    @scala.inline
-    def setDocumentDelete(value: SchemaDocumentDelete): Self = StObject.set(x, "documentDelete", value.asInstanceOf[js.Any])
+    inline def setDocumentDelete(value: SchemaDocumentDelete): Self = StObject.set(x, "documentDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentDeleteUndefined: Self = StObject.set(x, "documentDelete", js.undefined)
+    inline def setDocumentDeleteUndefined: Self = StObject.set(x, "documentDelete", js.undefined)
     
-    @scala.inline
-    def setDocumentRemove(value: SchemaDocumentRemove): Self = StObject.set(x, "documentRemove", value.asInstanceOf[js.Any])
+    inline def setDocumentRemove(value: SchemaDocumentRemove): Self = StObject.set(x, "documentRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentRemoveUndefined: Self = StObject.set(x, "documentRemove", js.undefined)
+    inline def setDocumentRemoveUndefined: Self = StObject.set(x, "documentRemove", js.undefined)
     
-    @scala.inline
-    def setFilter(value: SchemaExistenceFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: SchemaExistenceFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setTargetChange(value: SchemaTargetChange): Self = StObject.set(x, "targetChange", value.asInstanceOf[js.Any])
+    inline def setTargetChange(value: SchemaTargetChange): Self = StObject.set(x, "targetChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetChangeUndefined: Self = StObject.set(x, "targetChange", js.undefined)
+    inline def setTargetChangeUndefined: Self = StObject.set(x, "targetChange", js.undefined)
   }
 }

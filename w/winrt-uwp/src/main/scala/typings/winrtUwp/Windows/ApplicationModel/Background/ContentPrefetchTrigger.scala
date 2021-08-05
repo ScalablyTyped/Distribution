@@ -12,16 +12,13 @@ trait ContentPrefetchTrigger extends StObject {
 }
 object ContentPrefetchTrigger {
   
-  @scala.inline
-  def apply(waitInterval: Double): ContentPrefetchTrigger = {
+  inline def apply(waitInterval: Double): ContentPrefetchTrigger = {
     val __obj = js.Dynamic.literal(waitInterval = waitInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentPrefetchTrigger]
   }
   
-  @scala.inline
-  implicit class ContentPrefetchTriggerMutableBuilder[Self <: ContentPrefetchTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: ContentPrefetchTrigger](x: Self) {
     
-    @scala.inline
-    def setWaitInterval(value: Double): Self = StObject.set(x, "waitInterval", value.asInstanceOf[js.Any])
+    inline def setWaitInterval(value: Double): Self = StObject.set(x, "waitInterval", value.asInstanceOf[js.Any])
   }
 }

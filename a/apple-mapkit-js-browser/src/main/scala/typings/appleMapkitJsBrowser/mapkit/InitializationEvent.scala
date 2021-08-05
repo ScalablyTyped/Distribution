@@ -14,16 +14,13 @@ trait InitializationEvent extends StObject {
 }
 object InitializationEvent {
   
-  @scala.inline
-  def apply(status: Initialized | Refreshed | Unauthorized | (`Too Many Requests`)): InitializationEvent = {
+  inline def apply(status: Initialized | Refreshed | Unauthorized | (`Too Many Requests`)): InitializationEvent = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializationEvent]
   }
   
-  @scala.inline
-  implicit class InitializationEventMutableBuilder[Self <: InitializationEvent] (val x: Self) extends AnyVal {
+  extension [Self <: InitializationEvent](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Initialized | Refreshed | Unauthorized | (`Too Many Requests`)): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Initialized | Refreshed | Unauthorized | (`Too Many Requests`)): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

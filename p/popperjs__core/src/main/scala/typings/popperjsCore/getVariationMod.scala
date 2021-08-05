@@ -12,6 +12,5 @@ object getVariationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(placement: Placement): js.UndefOr[Variation | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(placement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Variation | Null]]
+  inline def default(placement: Placement): js.UndefOr[Variation | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(placement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Variation | Null]]
 }

@@ -20,34 +20,25 @@ trait DivisionSearchResult extends StObject {
 }
 object DivisionSearchResult {
   
-  @scala.inline
-  def apply(): DivisionSearchResult = {
+  inline def apply(): DivisionSearchResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DivisionSearchResult]
   }
   
-  @scala.inline
-  implicit class DivisionSearchResultMutableBuilder[Self <: DivisionSearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: DivisionSearchResult](x: Self) {
     
-    @scala.inline
-    def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    @scala.inline
-    def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOcdId(value: String): Self = StObject.set(x, "ocdId", value.asInstanceOf[js.Any])
+    inline def setOcdId(value: String): Self = StObject.set(x, "ocdId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcdIdUndefined: Self = StObject.set(x, "ocdId", js.undefined)
+    inline def setOcdIdUndefined: Self = StObject.set(x, "ocdId", js.undefined)
   }
 }

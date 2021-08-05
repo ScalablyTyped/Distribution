@@ -56,8 +56,7 @@ trait PhotoImportImportItemsResult extends StObject {
 }
 object PhotoImportImportItemsResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteImportedItemsFromSourceAsync: () => IPromiseWithIAsyncOperationWithProgress[PhotoImportDeleteImportedItemsFromSourceResult, Double],
     hasSucceeded: Boolean,
     importedItems: IVectorView[PhotoImportItem],
@@ -77,51 +76,36 @@ object PhotoImportImportItemsResult {
     __obj.asInstanceOf[PhotoImportImportItemsResult]
   }
   
-  @scala.inline
-  implicit class PhotoImportImportItemsResultMutableBuilder[Self <: PhotoImportImportItemsResult] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoImportImportItemsResult](x: Self) {
     
-    @scala.inline
-    def setDeleteImportedItemsFromSourceAsync(
+    inline def setDeleteImportedItemsFromSourceAsync(
       value: () => IPromiseWithIAsyncOperationWithProgress[PhotoImportDeleteImportedItemsFromSourceResult, Double]
     ): Self = StObject.set(x, "deleteImportedItemsFromSourceAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasSucceeded(value: Boolean): Self = StObject.set(x, "hasSucceeded", value.asInstanceOf[js.Any])
+    inline def setHasSucceeded(value: Boolean): Self = StObject.set(x, "hasSucceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportedItems(value: IVectorView[PhotoImportItem]): Self = StObject.set(x, "importedItems", value.asInstanceOf[js.Any])
+    inline def setImportedItems(value: IVectorView[PhotoImportItem]): Self = StObject.set(x, "importedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotosCount(value: Double): Self = StObject.set(x, "photosCount", value.asInstanceOf[js.Any])
+    inline def setPhotosCount(value: Double): Self = StObject.set(x, "photosCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotosSizeInBytes(value: Double): Self = StObject.set(x, "photosSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setPhotosSizeInBytes(value: Double): Self = StObject.set(x, "photosSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: PhotoImportSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: PhotoImportSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiblingsCount(value: Double): Self = StObject.set(x, "siblingsCount", value.asInstanceOf[js.Any])
+    inline def setSiblingsCount(value: Double): Self = StObject.set(x, "siblingsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiblingsSizeInBytes(value: Double): Self = StObject.set(x, "siblingsSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSiblingsSizeInBytes(value: Double): Self = StObject.set(x, "siblingsSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidecarsCount(value: Double): Self = StObject.set(x, "sidecarsCount", value.asInstanceOf[js.Any])
+    inline def setSidecarsCount(value: Double): Self = StObject.set(x, "sidecarsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidecarsSizeInBytes(value: Double): Self = StObject.set(x, "sidecarsSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSidecarsSizeInBytes(value: Double): Self = StObject.set(x, "sidecarsSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeInBytes(value: Double): Self = StObject.set(x, "totalSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setTotalSizeInBytes(value: Double): Self = StObject.set(x, "totalSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideosCount(value: Double): Self = StObject.set(x, "videosCount", value.asInstanceOf[js.Any])
+    inline def setVideosCount(value: Double): Self = StObject.set(x, "videosCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideosSizeInBytes(value: Double): Self = StObject.set(x, "videosSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setVideosSizeInBytes(value: Double): Self = StObject.set(x, "videosSizeInBytes", value.asInstanceOf[js.Any])
   }
 }

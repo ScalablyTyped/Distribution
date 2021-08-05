@@ -89,34 +89,34 @@ object formatterMod {
     /* CompleteClass */
     override def indentComment(comment: String): String = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var indentation: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var index: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var inlineBlock: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var params: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var previousNonWhiteSpace: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var previousReservedWord: js.Any = js.native
     
     /* CompleteClass */
     override def previousToken(): Token = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var tokenOverride: js.Any = js.native
     
     /* CompleteClass */
     var tokenizer: typings.sqltoolsFormatter.tokenizerMod.default = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var tokens: js.Any = js.native
   }
   
@@ -168,30 +168,29 @@ object formatterMod {
     
     def indentComment(comment: String): String
     
-    var indentation: js.Any
+    /* private */ var indentation: js.Any
     
-    var index: js.Any
+    /* private */ var index: js.Any
     
-    var inlineBlock: js.Any
+    /* private */ var inlineBlock: js.Any
     
-    var params: js.Any
+    /* private */ var params: js.Any
     
-    var previousNonWhiteSpace: js.Any
+    /* private */ var previousNonWhiteSpace: js.Any
     
-    var previousReservedWord: js.Any
+    /* private */ var previousReservedWord: js.Any
     
     def previousToken(): Token
     
-    var tokenOverride: js.Any
+    /* private */ var tokenOverride: js.Any
     
     var tokenizer: typings.sqltoolsFormatter.tokenizerMod.default
     
-    var tokens: js.Any
+    /* private */ var tokens: js.Any
   }
   object Formatter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addNewline: String => String,
       cfg: Config,
       equalizeWhitespace: String => String,
@@ -230,107 +229,73 @@ object formatterMod {
       __obj.asInstanceOf[Formatter]
     }
     
-    @scala.inline
-    implicit class FormatterMutableBuilder[Self <: Formatter] (val x: Self) extends AnyVal {
+    extension [Self <: Formatter](x: Self) {
       
-      @scala.inline
-      def setAddNewline(value: String => String): Self = StObject.set(x, "addNewline", js.Any.fromFunction1(value))
+      inline def setAddNewline(value: String => String): Self = StObject.set(x, "addNewline", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCfg(value: Config): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
+      inline def setCfg(value: Config): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEqualizeWhitespace(value: String => String): Self = StObject.set(x, "equalizeWhitespace", js.Any.fromFunction1(value))
+      inline def setEqualizeWhitespace(value: String => String): Self = StObject.set(x, "equalizeWhitespace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormat(value: String => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormat(value: String => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatBlockComment(value: (Token, String) => String): Self = StObject.set(x, "formatBlockComment", js.Any.fromFunction2(value))
+      inline def setFormatBlockComment(value: (Token, String) => String): Self = StObject.set(x, "formatBlockComment", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatCase(value: String => String): Self = StObject.set(x, "formatCase", js.Any.fromFunction1(value))
+      inline def setFormatCase(value: String => String): Self = StObject.set(x, "formatCase", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatClosingParentheses(value: (Token, String) => String): Self = StObject.set(x, "formatClosingParentheses", js.Any.fromFunction2(value))
+      inline def setFormatClosingParentheses(value: (Token, String) => String): Self = StObject.set(x, "formatClosingParentheses", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatComma(value: (Token, String) => String): Self = StObject.set(x, "formatComma", js.Any.fromFunction2(value))
+      inline def setFormatComma(value: (Token, String) => String): Self = StObject.set(x, "formatComma", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatLineComment(value: (Token, String) => String): Self = StObject.set(x, "formatLineComment", js.Any.fromFunction2(value))
+      inline def setFormatLineComment(value: (Token, String) => String): Self = StObject.set(x, "formatLineComment", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatNewlineReservedWord(value: (Token, String) => String): Self = StObject.set(x, "formatNewlineReservedWord", js.Any.fromFunction2(value))
+      inline def setFormatNewlineReservedWord(value: (Token, String) => String): Self = StObject.set(x, "formatNewlineReservedWord", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatOpeningParentheses(value: (Token, String) => String): Self = StObject.set(x, "formatOpeningParentheses", js.Any.fromFunction2(value))
+      inline def setFormatOpeningParentheses(value: (Token, String) => String): Self = StObject.set(x, "formatOpeningParentheses", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatPlaceholder(value: (Token, String) => String): Self = StObject.set(x, "formatPlaceholder", js.Any.fromFunction2(value))
+      inline def setFormatPlaceholder(value: (Token, String) => String): Self = StObject.set(x, "formatPlaceholder", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatQuerySeparator(value: (Token, String) => String): Self = StObject.set(x, "formatQuerySeparator", js.Any.fromFunction2(value))
+      inline def setFormatQuerySeparator(value: (Token, String) => String): Self = StObject.set(x, "formatQuerySeparator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatReserved(value: (Token, String) => String): Self = StObject.set(x, "formatReserved", js.Any.fromFunction2(value))
+      inline def setFormatReserved(value: (Token, String) => String): Self = StObject.set(x, "formatReserved", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatReservedWord(value: String => String): Self = StObject.set(x, "formatReservedWord", js.Any.fromFunction1(value))
+      inline def setFormatReservedWord(value: String => String): Self = StObject.set(x, "formatReservedWord", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatTopLevelReservedWord(value: (Token, String) => String): Self = StObject.set(x, "formatTopLevelReservedWord", js.Any.fromFunction2(value))
+      inline def setFormatTopLevelReservedWord(value: (Token, String) => String): Self = StObject.set(x, "formatTopLevelReservedWord", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatTopLevelReservedWordNoIndent(value: (Token, String) => String): Self = StObject.set(x, "formatTopLevelReservedWordNoIndent", js.Any.fromFunction2(value))
+      inline def setFormatTopLevelReservedWordNoIndent(value: (Token, String) => String): Self = StObject.set(x, "formatTopLevelReservedWordNoIndent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatWhitespace(value: (Token, String) => String): Self = StObject.set(x, "formatWhitespace", js.Any.fromFunction2(value))
+      inline def setFormatWhitespace(value: (Token, String) => String): Self = StObject.set(x, "formatWhitespace", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatWithSpaceAfter(value: (Token, String) => String): Self = StObject.set(x, "formatWithSpaceAfter", js.Any.fromFunction2(value))
+      inline def setFormatWithSpaceAfter(value: (Token, String) => String): Self = StObject.set(x, "formatWithSpaceAfter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatWithSpaces(value: (Token, String) => String): Self = StObject.set(x, "formatWithSpaces", js.Any.fromFunction2(value))
+      inline def setFormatWithSpaces(value: (Token, String) => String): Self = StObject.set(x, "formatWithSpaces", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatWithoutSpaces(value: (Token, String) => String): Self = StObject.set(x, "formatWithoutSpaces", js.Any.fromFunction2(value))
+      inline def setFormatWithoutSpaces(value: (Token, String) => String): Self = StObject.set(x, "formatWithoutSpaces", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetFormattedQueryFromTokens(value: () => String): Self = StObject.set(x, "getFormattedQueryFromTokens", js.Any.fromFunction0(value))
+      inline def setGetFormattedQueryFromTokens(value: () => String): Self = StObject.set(x, "getFormattedQueryFromTokens", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIndentComment(value: String => String): Self = StObject.set(x, "indentComment", js.Any.fromFunction1(value))
+      inline def setIndentComment(value: String => String): Self = StObject.set(x, "indentComment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndentation(value: js.Any): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
+      inline def setIndentation(value: js.Any): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: js.Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: js.Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineBlock(value: js.Any): Self = StObject.set(x, "inlineBlock", value.asInstanceOf[js.Any])
+      inline def setInlineBlock(value: js.Any): Self = StObject.set(x, "inlineBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousNonWhiteSpace(value: js.Any): Self = StObject.set(x, "previousNonWhiteSpace", value.asInstanceOf[js.Any])
+      inline def setPreviousNonWhiteSpace(value: js.Any): Self = StObject.set(x, "previousNonWhiteSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousReservedWord(value: js.Any): Self = StObject.set(x, "previousReservedWord", value.asInstanceOf[js.Any])
+      inline def setPreviousReservedWord(value: js.Any): Self = StObject.set(x, "previousReservedWord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousToken(value: () => Token): Self = StObject.set(x, "previousToken", js.Any.fromFunction0(value))
+      inline def setPreviousToken(value: () => Token): Self = StObject.set(x, "previousToken", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTokenOverride(value: js.Any): Self = StObject.set(x, "tokenOverride", value.asInstanceOf[js.Any])
+      inline def setTokenOverride(value: js.Any): Self = StObject.set(x, "tokenOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenizer(value: typings.sqltoolsFormatter.tokenizerMod.default): Self = StObject.set(x, "tokenizer", value.asInstanceOf[js.Any])
+      inline def setTokenizer(value: typings.sqltoolsFormatter.tokenizerMod.default): Self = StObject.set(x, "tokenizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokens(value: js.Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: js.Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,56 +10,47 @@ object reactImageMagnifiersStrings {
   
   @js.native
   sealed trait bottom extends StObject
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait click
     extends StObject
        with MouseActivation
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
   sealed trait doubleClick
     extends StObject
        with MouseActivation
-  @scala.inline
-  def doubleClick: doubleClick = "doubleClick".asInstanceOf[doubleClick]
+  inline def doubleClick: doubleClick = "doubleClick".asInstanceOf[doubleClick]
   
   @js.native
   sealed trait doubleTap
     extends StObject
        with TouchActivation
-  @scala.inline
-  def doubleTap: doubleTap = "doubleTap".asInstanceOf[doubleTap]
+  inline def doubleTap: doubleTap = "doubleTap".asInstanceOf[doubleTap]
   
   @js.native
   sealed trait left extends StObject
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait longTouch
     extends StObject
        with TouchActivation
-  @scala.inline
-  def longTouch: longTouch = "longTouch".asInstanceOf[longTouch]
+  inline def longTouch: longTouch = "longTouch".asInstanceOf[longTouch]
   
   @js.native
   sealed trait right extends StObject
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait tap
     extends StObject
        with TouchActivation
-  @scala.inline
-  def tap: tap = "tap".asInstanceOf[tap]
+  inline def tap: tap = "tap".asInstanceOf[tap]
   
   @js.native
   sealed trait top extends StObject
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
 }

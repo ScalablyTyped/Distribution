@@ -15,16 +15,13 @@ trait SetAsyncCallStackDepthRequest extends StObject {
 }
 object SetAsyncCallStackDepthRequest {
   
-  @scala.inline
-  def apply(maxDepth: integer): SetAsyncCallStackDepthRequest = {
+  inline def apply(maxDepth: integer): SetAsyncCallStackDepthRequest = {
     val __obj = js.Dynamic.literal(maxDepth = maxDepth.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetAsyncCallStackDepthRequest]
   }
   
-  @scala.inline
-  implicit class SetAsyncCallStackDepthRequestMutableBuilder[Self <: SetAsyncCallStackDepthRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetAsyncCallStackDepthRequest](x: Self) {
     
-    @scala.inline
-    def setMaxDepth(value: integer): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+    inline def setMaxDepth(value: integer): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
   }
 }

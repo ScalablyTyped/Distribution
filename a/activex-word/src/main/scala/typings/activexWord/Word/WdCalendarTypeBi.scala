@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdCalendarTypeBi extends StObject
 object WdCalendarTypeBi {
   
-  @scala.inline
-  def wdCalendarTypeBidi: `99` = 99.asInstanceOf[`99`]
+  inline def wdCalendarTypeBidi: `99` = 99.asInstanceOf[`99`]
   
-  @scala.inline
-  def wdCalendarTypeGregorian: `100` = 100.asInstanceOf[`100`]
+  inline def wdCalendarTypeGregorian: `100` = 100.asInstanceOf[`100`]
 }

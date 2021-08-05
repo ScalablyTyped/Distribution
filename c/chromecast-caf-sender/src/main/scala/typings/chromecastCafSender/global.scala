@@ -120,8 +120,7 @@ object global {
         val ^ : js.Any = js.native
         
         /* static member */
-        @scala.inline
-        def getInstance(): typings.chromecastCafSender.cast.framework.CastContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.chromecastCafSender.cast.framework.CastContext]
+        inline def getInstance(): typings.chromecastCafSender.cast.framework.CastContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.chromecastCafSender.cast.framework.CastContext]
       }
       
       @JSGlobal("cast.framework.CastContextEventType")
@@ -476,8 +475,7 @@ object global {
         var volume: Double = js.native
       }
       
-      @scala.inline
-      def setLoggerLevel(level: LoggerLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoggerLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setLoggerLevel(level: LoggerLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoggerLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
   }
 }

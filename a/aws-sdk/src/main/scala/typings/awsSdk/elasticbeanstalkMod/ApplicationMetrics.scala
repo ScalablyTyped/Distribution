@@ -28,37 +28,27 @@ trait ApplicationMetrics extends StObject {
 }
 object ApplicationMetrics {
   
-  @scala.inline
-  def apply(): ApplicationMetrics = {
+  inline def apply(): ApplicationMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationMetrics]
   }
   
-  @scala.inline
-  implicit class ApplicationMetricsMutableBuilder[Self <: ApplicationMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationMetrics](x: Self) {
     
-    @scala.inline
-    def setDuration(value: NullableInteger): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: NullableInteger): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    @scala.inline
-    def setLatency(value: Latency): Self = StObject.set(x, "Latency", value.asInstanceOf[js.Any])
+    inline def setLatency(value: Latency): Self = StObject.set(x, "Latency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatencyUndefined: Self = StObject.set(x, "Latency", js.undefined)
+    inline def setLatencyUndefined: Self = StObject.set(x, "Latency", js.undefined)
     
-    @scala.inline
-    def setRequestCount(value: RequestCount): Self = StObject.set(x, "RequestCount", value.asInstanceOf[js.Any])
+    inline def setRequestCount(value: RequestCount): Self = StObject.set(x, "RequestCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestCountUndefined: Self = StObject.set(x, "RequestCount", js.undefined)
+    inline def setRequestCountUndefined: Self = StObject.set(x, "RequestCount", js.undefined)
     
-    @scala.inline
-    def setStatusCodes(value: StatusCodes): Self = StObject.set(x, "StatusCodes", value.asInstanceOf[js.Any])
+    inline def setStatusCodes(value: StatusCodes): Self = StObject.set(x, "StatusCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodesUndefined: Self = StObject.set(x, "StatusCodes", js.undefined)
+    inline def setStatusCodesUndefined: Self = StObject.set(x, "StatusCodes", js.undefined)
   }
 }

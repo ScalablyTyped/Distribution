@@ -23,43 +23,31 @@ trait GoogleDatastoreAdminV1ImportEntitiesMetadata extends StObject {
 }
 object GoogleDatastoreAdminV1ImportEntitiesMetadata {
   
-  @scala.inline
-  def apply(): GoogleDatastoreAdminV1ImportEntitiesMetadata = {
+  inline def apply(): GoogleDatastoreAdminV1ImportEntitiesMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDatastoreAdminV1ImportEntitiesMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleDatastoreAdminV1ImportEntitiesMetadataMutableBuilder[Self <: GoogleDatastoreAdminV1ImportEntitiesMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDatastoreAdminV1ImportEntitiesMetadata](x: Self) {
     
-    @scala.inline
-    def setCommon(value: GoogleDatastoreAdminV1CommonMetadata): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: GoogleDatastoreAdminV1CommonMetadata): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
+    inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
-    @scala.inline
-    def setEntityFilter(value: GoogleDatastoreAdminV1EntityFilter): Self = StObject.set(x, "entityFilter", value.asInstanceOf[js.Any])
+    inline def setEntityFilter(value: GoogleDatastoreAdminV1EntityFilter): Self = StObject.set(x, "entityFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityFilterUndefined: Self = StObject.set(x, "entityFilter", js.undefined)
+    inline def setEntityFilterUndefined: Self = StObject.set(x, "entityFilter", js.undefined)
     
-    @scala.inline
-    def setInputUrl(value: String): Self = StObject.set(x, "inputUrl", value.asInstanceOf[js.Any])
+    inline def setInputUrl(value: String): Self = StObject.set(x, "inputUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUrlUndefined: Self = StObject.set(x, "inputUrl", js.undefined)
+    inline def setInputUrlUndefined: Self = StObject.set(x, "inputUrl", js.undefined)
     
-    @scala.inline
-    def setProgressBytes(value: GoogleDatastoreAdminV1Progress): Self = StObject.set(x, "progressBytes", value.asInstanceOf[js.Any])
+    inline def setProgressBytes(value: GoogleDatastoreAdminV1Progress): Self = StObject.set(x, "progressBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressBytesUndefined: Self = StObject.set(x, "progressBytes", js.undefined)
+    inline def setProgressBytesUndefined: Self = StObject.set(x, "progressBytes", js.undefined)
     
-    @scala.inline
-    def setProgressEntities(value: GoogleDatastoreAdminV1Progress): Self = StObject.set(x, "progressEntities", value.asInstanceOf[js.Any])
+    inline def setProgressEntities(value: GoogleDatastoreAdminV1Progress): Self = StObject.set(x, "progressEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressEntitiesUndefined: Self = StObject.set(x, "progressEntities", js.undefined)
+    inline def setProgressEntitiesUndefined: Self = StObject.set(x, "progressEntities", js.undefined)
   }
 }

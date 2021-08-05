@@ -622,8 +622,7 @@ object mod extends Shortcut {
   }
   object HttpStatus {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `100`: String,
       `100_CLASS`: String,
       `100_MESSAGE`: String,
@@ -1120,914 +1119,611 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatus]
     }
     
-    @scala.inline
-    implicit class HttpStatusMutableBuilder[Self <: HttpStatus] (val x: Self) extends AnyVal {
+    extension [Self <: HttpStatus](x: Self) {
       
-      @scala.inline
-      def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
+      inline def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set100_CLASS(value: String): Self = StObject.set(x, "100_CLASS", value.asInstanceOf[js.Any])
+      inline def set100_CLASS(value: String): Self = StObject.set(x, "100_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set100_MESSAGE(value: String): Self = StObject.set(x, "100_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set100_MESSAGE(value: String): Self = StObject.set(x, "100_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set100_NAME(value: String): Self = StObject.set(x, "100_NAME", value.asInstanceOf[js.Any])
+      inline def set100_NAME(value: String): Self = StObject.set(x, "100_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set101(value: String): Self = StObject.set(x, "101", value.asInstanceOf[js.Any])
+      inline def set101(value: String): Self = StObject.set(x, "101", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set101_CLASS(value: String): Self = StObject.set(x, "101_CLASS", value.asInstanceOf[js.Any])
+      inline def set101_CLASS(value: String): Self = StObject.set(x, "101_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set101_MESSAGE(value: String): Self = StObject.set(x, "101_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set101_MESSAGE(value: String): Self = StObject.set(x, "101_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set101_NAME(value: String): Self = StObject.set(x, "101_NAME", value.asInstanceOf[js.Any])
+      inline def set101_NAME(value: String): Self = StObject.set(x, "101_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set200(value: String): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+      inline def set200(value: String): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set200_CLASS(value: String): Self = StObject.set(x, "200_CLASS", value.asInstanceOf[js.Any])
+      inline def set200_CLASS(value: String): Self = StObject.set(x, "200_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set200_MESSAGE(value: String): Self = StObject.set(x, "200_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set200_MESSAGE(value: String): Self = StObject.set(x, "200_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set200_NAME(value: String): Self = StObject.set(x, "200_NAME", value.asInstanceOf[js.Any])
+      inline def set200_NAME(value: String): Self = StObject.set(x, "200_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set201(value: String): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
+      inline def set201(value: String): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set201_CLASS(value: String): Self = StObject.set(x, "201_CLASS", value.asInstanceOf[js.Any])
+      inline def set201_CLASS(value: String): Self = StObject.set(x, "201_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set201_MESSAGE(value: String): Self = StObject.set(x, "201_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set201_MESSAGE(value: String): Self = StObject.set(x, "201_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set201_NAME(value: String): Self = StObject.set(x, "201_NAME", value.asInstanceOf[js.Any])
+      inline def set201_NAME(value: String): Self = StObject.set(x, "201_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set202(value: String): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
+      inline def set202(value: String): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set202_CLASS(value: String): Self = StObject.set(x, "202_CLASS", value.asInstanceOf[js.Any])
+      inline def set202_CLASS(value: String): Self = StObject.set(x, "202_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set202_MESSAGE(value: String): Self = StObject.set(x, "202_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set202_MESSAGE(value: String): Self = StObject.set(x, "202_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set202_NAME(value: String): Self = StObject.set(x, "202_NAME", value.asInstanceOf[js.Any])
+      inline def set202_NAME(value: String): Self = StObject.set(x, "202_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set203(value: String): Self = StObject.set(x, "203", value.asInstanceOf[js.Any])
+      inline def set203(value: String): Self = StObject.set(x, "203", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set203_CLASS(value: String): Self = StObject.set(x, "203_CLASS", value.asInstanceOf[js.Any])
+      inline def set203_CLASS(value: String): Self = StObject.set(x, "203_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set203_MESSAGE(value: String): Self = StObject.set(x, "203_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set203_MESSAGE(value: String): Self = StObject.set(x, "203_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set203_NAME(value: String): Self = StObject.set(x, "203_NAME", value.asInstanceOf[js.Any])
+      inline def set203_NAME(value: String): Self = StObject.set(x, "203_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set204(value: String): Self = StObject.set(x, "204", value.asInstanceOf[js.Any])
+      inline def set204(value: String): Self = StObject.set(x, "204", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set204_CLASS(value: String): Self = StObject.set(x, "204_CLASS", value.asInstanceOf[js.Any])
+      inline def set204_CLASS(value: String): Self = StObject.set(x, "204_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set204_MESSAGE(value: String): Self = StObject.set(x, "204_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set204_MESSAGE(value: String): Self = StObject.set(x, "204_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set204_NAME(value: String): Self = StObject.set(x, "204_NAME", value.asInstanceOf[js.Any])
+      inline def set204_NAME(value: String): Self = StObject.set(x, "204_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set205(value: String): Self = StObject.set(x, "205", value.asInstanceOf[js.Any])
+      inline def set205(value: String): Self = StObject.set(x, "205", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set205_CLASS(value: String): Self = StObject.set(x, "205_CLASS", value.asInstanceOf[js.Any])
+      inline def set205_CLASS(value: String): Self = StObject.set(x, "205_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set205_MESSAGE(value: String): Self = StObject.set(x, "205_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set205_MESSAGE(value: String): Self = StObject.set(x, "205_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set205_NAME(value: String): Self = StObject.set(x, "205_NAME", value.asInstanceOf[js.Any])
+      inline def set205_NAME(value: String): Self = StObject.set(x, "205_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set206(value: String): Self = StObject.set(x, "206", value.asInstanceOf[js.Any])
+      inline def set206(value: String): Self = StObject.set(x, "206", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set206_CLASS(value: String): Self = StObject.set(x, "206_CLASS", value.asInstanceOf[js.Any])
+      inline def set206_CLASS(value: String): Self = StObject.set(x, "206_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set206_MESSAGE(value: String): Self = StObject.set(x, "206_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set206_MESSAGE(value: String): Self = StObject.set(x, "206_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set206_NAME(value: String): Self = StObject.set(x, "206_NAME", value.asInstanceOf[js.Any])
+      inline def set206_NAME(value: String): Self = StObject.set(x, "206_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set207(value: String): Self = StObject.set(x, "207", value.asInstanceOf[js.Any])
+      inline def set207(value: String): Self = StObject.set(x, "207", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set207_CLASS(value: String): Self = StObject.set(x, "207_CLASS", value.asInstanceOf[js.Any])
+      inline def set207_CLASS(value: String): Self = StObject.set(x, "207_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set207_MESSAGE(value: String): Self = StObject.set(x, "207_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set207_MESSAGE(value: String): Self = StObject.set(x, "207_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set207_NAME(value: String): Self = StObject.set(x, "207_NAME", value.asInstanceOf[js.Any])
+      inline def set207_NAME(value: String): Self = StObject.set(x, "207_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set208(value: String): Self = StObject.set(x, "208", value.asInstanceOf[js.Any])
+      inline def set208(value: String): Self = StObject.set(x, "208", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set208_CLASS(value: String): Self = StObject.set(x, "208_CLASS", value.asInstanceOf[js.Any])
+      inline def set208_CLASS(value: String): Self = StObject.set(x, "208_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set208_MESSAGE(value: String): Self = StObject.set(x, "208_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set208_MESSAGE(value: String): Self = StObject.set(x, "208_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set208_NAME(value: String): Self = StObject.set(x, "208_NAME", value.asInstanceOf[js.Any])
+      inline def set208_NAME(value: String): Self = StObject.set(x, "208_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set226(value: String): Self = StObject.set(x, "226", value.asInstanceOf[js.Any])
+      inline def set226(value: String): Self = StObject.set(x, "226", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set226_CLASS(value: String): Self = StObject.set(x, "226_CLASS", value.asInstanceOf[js.Any])
+      inline def set226_CLASS(value: String): Self = StObject.set(x, "226_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set226_MESSAGE(value: String): Self = StObject.set(x, "226_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set226_MESSAGE(value: String): Self = StObject.set(x, "226_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set226_NAME(value: String): Self = StObject.set(x, "226_NAME", value.asInstanceOf[js.Any])
+      inline def set226_NAME(value: String): Self = StObject.set(x, "226_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set300(value: String): Self = StObject.set(x, "300", value.asInstanceOf[js.Any])
+      inline def set300(value: String): Self = StObject.set(x, "300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set300_CLASS(value: String): Self = StObject.set(x, "300_CLASS", value.asInstanceOf[js.Any])
+      inline def set300_CLASS(value: String): Self = StObject.set(x, "300_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set300_MESSAGE(value: String): Self = StObject.set(x, "300_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set300_MESSAGE(value: String): Self = StObject.set(x, "300_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set300_NAME(value: String): Self = StObject.set(x, "300_NAME", value.asInstanceOf[js.Any])
+      inline def set300_NAME(value: String): Self = StObject.set(x, "300_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set301(value: String): Self = StObject.set(x, "301", value.asInstanceOf[js.Any])
+      inline def set301(value: String): Self = StObject.set(x, "301", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set301_CLASS(value: String): Self = StObject.set(x, "301_CLASS", value.asInstanceOf[js.Any])
+      inline def set301_CLASS(value: String): Self = StObject.set(x, "301_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set301_MESSAGE(value: String): Self = StObject.set(x, "301_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set301_MESSAGE(value: String): Self = StObject.set(x, "301_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set301_NAME(value: String): Self = StObject.set(x, "301_NAME", value.asInstanceOf[js.Any])
+      inline def set301_NAME(value: String): Self = StObject.set(x, "301_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set302(value: String): Self = StObject.set(x, "302", value.asInstanceOf[js.Any])
+      inline def set302(value: String): Self = StObject.set(x, "302", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set302_CLASS(value: String): Self = StObject.set(x, "302_CLASS", value.asInstanceOf[js.Any])
+      inline def set302_CLASS(value: String): Self = StObject.set(x, "302_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set302_MESSAGE(value: String): Self = StObject.set(x, "302_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set302_MESSAGE(value: String): Self = StObject.set(x, "302_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set302_NAME(value: String): Self = StObject.set(x, "302_NAME", value.asInstanceOf[js.Any])
+      inline def set302_NAME(value: String): Self = StObject.set(x, "302_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set303(value: String): Self = StObject.set(x, "303", value.asInstanceOf[js.Any])
+      inline def set303(value: String): Self = StObject.set(x, "303", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set303_CLASS(value: String): Self = StObject.set(x, "303_CLASS", value.asInstanceOf[js.Any])
+      inline def set303_CLASS(value: String): Self = StObject.set(x, "303_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set303_MESSAGE(value: String): Self = StObject.set(x, "303_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set303_MESSAGE(value: String): Self = StObject.set(x, "303_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set303_NAME(value: String): Self = StObject.set(x, "303_NAME", value.asInstanceOf[js.Any])
+      inline def set303_NAME(value: String): Self = StObject.set(x, "303_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set304(value: String): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
+      inline def set304(value: String): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set304_CLASS(value: String): Self = StObject.set(x, "304_CLASS", value.asInstanceOf[js.Any])
+      inline def set304_CLASS(value: String): Self = StObject.set(x, "304_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set304_MESSAGE(value: String): Self = StObject.set(x, "304_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set304_MESSAGE(value: String): Self = StObject.set(x, "304_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set304_NAME(value: String): Self = StObject.set(x, "304_NAME", value.asInstanceOf[js.Any])
+      inline def set304_NAME(value: String): Self = StObject.set(x, "304_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set305(value: String): Self = StObject.set(x, "305", value.asInstanceOf[js.Any])
+      inline def set305(value: String): Self = StObject.set(x, "305", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set305_CLASS(value: String): Self = StObject.set(x, "305_CLASS", value.asInstanceOf[js.Any])
+      inline def set305_CLASS(value: String): Self = StObject.set(x, "305_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set305_MESSAGE(value: String): Self = StObject.set(x, "305_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set305_MESSAGE(value: String): Self = StObject.set(x, "305_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set305_NAME(value: String): Self = StObject.set(x, "305_NAME", value.asInstanceOf[js.Any])
+      inline def set305_NAME(value: String): Self = StObject.set(x, "305_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set306(value: String): Self = StObject.set(x, "306", value.asInstanceOf[js.Any])
+      inline def set306(value: String): Self = StObject.set(x, "306", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set306_CLASS(value: String): Self = StObject.set(x, "306_CLASS", value.asInstanceOf[js.Any])
+      inline def set306_CLASS(value: String): Self = StObject.set(x, "306_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set306_MESSAGE(value: String): Self = StObject.set(x, "306_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set306_MESSAGE(value: String): Self = StObject.set(x, "306_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set306_NAME(value: String): Self = StObject.set(x, "306_NAME", value.asInstanceOf[js.Any])
+      inline def set306_NAME(value: String): Self = StObject.set(x, "306_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set307(value: String): Self = StObject.set(x, "307", value.asInstanceOf[js.Any])
+      inline def set307(value: String): Self = StObject.set(x, "307", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set307_CLASS(value: String): Self = StObject.set(x, "307_CLASS", value.asInstanceOf[js.Any])
+      inline def set307_CLASS(value: String): Self = StObject.set(x, "307_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set307_MESSAGE(value: String): Self = StObject.set(x, "307_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set307_MESSAGE(value: String): Self = StObject.set(x, "307_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set307_NAME(value: String): Self = StObject.set(x, "307_NAME", value.asInstanceOf[js.Any])
+      inline def set307_NAME(value: String): Self = StObject.set(x, "307_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set308(value: String): Self = StObject.set(x, "308", value.asInstanceOf[js.Any])
+      inline def set308(value: String): Self = StObject.set(x, "308", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set308_CLASS(value: String): Self = StObject.set(x, "308_CLASS", value.asInstanceOf[js.Any])
+      inline def set308_CLASS(value: String): Self = StObject.set(x, "308_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set308_MESSAGE(value: String): Self = StObject.set(x, "308_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set308_MESSAGE(value: String): Self = StObject.set(x, "308_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set308_NAME(value: String): Self = StObject.set(x, "308_NAME", value.asInstanceOf[js.Any])
+      inline def set308_NAME(value: String): Self = StObject.set(x, "308_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set400(value: String): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
+      inline def set400(value: String): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set400_CLASS(value: String): Self = StObject.set(x, "400_CLASS", value.asInstanceOf[js.Any])
+      inline def set400_CLASS(value: String): Self = StObject.set(x, "400_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set400_MESSAGE(value: String): Self = StObject.set(x, "400_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set400_MESSAGE(value: String): Self = StObject.set(x, "400_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set400_NAME(value: String): Self = StObject.set(x, "400_NAME", value.asInstanceOf[js.Any])
+      inline def set400_NAME(value: String): Self = StObject.set(x, "400_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set401(value: String): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
+      inline def set401(value: String): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set401_CLASS(value: String): Self = StObject.set(x, "401_CLASS", value.asInstanceOf[js.Any])
+      inline def set401_CLASS(value: String): Self = StObject.set(x, "401_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set401_MESSAGE(value: String): Self = StObject.set(x, "401_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set401_MESSAGE(value: String): Self = StObject.set(x, "401_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set401_NAME(value: String): Self = StObject.set(x, "401_NAME", value.asInstanceOf[js.Any])
+      inline def set401_NAME(value: String): Self = StObject.set(x, "401_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set402(value: String): Self = StObject.set(x, "402", value.asInstanceOf[js.Any])
+      inline def set402(value: String): Self = StObject.set(x, "402", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set402_CLASS(value: String): Self = StObject.set(x, "402_CLASS", value.asInstanceOf[js.Any])
+      inline def set402_CLASS(value: String): Self = StObject.set(x, "402_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set402_MESSAGE(value: String): Self = StObject.set(x, "402_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set402_MESSAGE(value: String): Self = StObject.set(x, "402_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set402_NAME(value: String): Self = StObject.set(x, "402_NAME", value.asInstanceOf[js.Any])
+      inline def set402_NAME(value: String): Self = StObject.set(x, "402_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set403(value: String): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+      inline def set403(value: String): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set403_CLASS(value: String): Self = StObject.set(x, "403_CLASS", value.asInstanceOf[js.Any])
+      inline def set403_CLASS(value: String): Self = StObject.set(x, "403_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set403_MESSAGE(value: String): Self = StObject.set(x, "403_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set403_MESSAGE(value: String): Self = StObject.set(x, "403_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set403_NAME(value: String): Self = StObject.set(x, "403_NAME", value.asInstanceOf[js.Any])
+      inline def set403_NAME(value: String): Self = StObject.set(x, "403_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set404(value: String): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+      inline def set404(value: String): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set404_CLASS(value: String): Self = StObject.set(x, "404_CLASS", value.asInstanceOf[js.Any])
+      inline def set404_CLASS(value: String): Self = StObject.set(x, "404_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set404_MESSAGE(value: String): Self = StObject.set(x, "404_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set404_MESSAGE(value: String): Self = StObject.set(x, "404_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set404_NAME(value: String): Self = StObject.set(x, "404_NAME", value.asInstanceOf[js.Any])
+      inline def set404_NAME(value: String): Self = StObject.set(x, "404_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set405(value: String): Self = StObject.set(x, "405", value.asInstanceOf[js.Any])
+      inline def set405(value: String): Self = StObject.set(x, "405", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set405_CLASS(value: String): Self = StObject.set(x, "405_CLASS", value.asInstanceOf[js.Any])
+      inline def set405_CLASS(value: String): Self = StObject.set(x, "405_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set405_MESSAGE(value: String): Self = StObject.set(x, "405_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set405_MESSAGE(value: String): Self = StObject.set(x, "405_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set405_NAME(value: String): Self = StObject.set(x, "405_NAME", value.asInstanceOf[js.Any])
+      inline def set405_NAME(value: String): Self = StObject.set(x, "405_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set406(value: String): Self = StObject.set(x, "406", value.asInstanceOf[js.Any])
+      inline def set406(value: String): Self = StObject.set(x, "406", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set406_CLASS(value: String): Self = StObject.set(x, "406_CLASS", value.asInstanceOf[js.Any])
+      inline def set406_CLASS(value: String): Self = StObject.set(x, "406_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set406_MESSAGE(value: String): Self = StObject.set(x, "406_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set406_MESSAGE(value: String): Self = StObject.set(x, "406_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set406_NAME(value: String): Self = StObject.set(x, "406_NAME", value.asInstanceOf[js.Any])
+      inline def set406_NAME(value: String): Self = StObject.set(x, "406_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set407(value: String): Self = StObject.set(x, "407", value.asInstanceOf[js.Any])
+      inline def set407(value: String): Self = StObject.set(x, "407", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set407_CLASS(value: String): Self = StObject.set(x, "407_CLASS", value.asInstanceOf[js.Any])
+      inline def set407_CLASS(value: String): Self = StObject.set(x, "407_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set407_MESSAGE(value: String): Self = StObject.set(x, "407_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set407_MESSAGE(value: String): Self = StObject.set(x, "407_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set407_NAME(value: String): Self = StObject.set(x, "407_NAME", value.asInstanceOf[js.Any])
+      inline def set407_NAME(value: String): Self = StObject.set(x, "407_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set408(value: String): Self = StObject.set(x, "408", value.asInstanceOf[js.Any])
+      inline def set408(value: String): Self = StObject.set(x, "408", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set408_CLASS(value: String): Self = StObject.set(x, "408_CLASS", value.asInstanceOf[js.Any])
+      inline def set408_CLASS(value: String): Self = StObject.set(x, "408_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set408_MESSAGE(value: String): Self = StObject.set(x, "408_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set408_MESSAGE(value: String): Self = StObject.set(x, "408_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set408_NAME(value: String): Self = StObject.set(x, "408_NAME", value.asInstanceOf[js.Any])
+      inline def set408_NAME(value: String): Self = StObject.set(x, "408_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set409(value: String): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
+      inline def set409(value: String): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set409_CLASS(value: String): Self = StObject.set(x, "409_CLASS", value.asInstanceOf[js.Any])
+      inline def set409_CLASS(value: String): Self = StObject.set(x, "409_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set409_MESSAGE(value: String): Self = StObject.set(x, "409_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set409_MESSAGE(value: String): Self = StObject.set(x, "409_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set409_NAME(value: String): Self = StObject.set(x, "409_NAME", value.asInstanceOf[js.Any])
+      inline def set409_NAME(value: String): Self = StObject.set(x, "409_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set410(value: String): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
+      inline def set410(value: String): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set410_CLASS(value: String): Self = StObject.set(x, "410_CLASS", value.asInstanceOf[js.Any])
+      inline def set410_CLASS(value: String): Self = StObject.set(x, "410_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set410_MESSAGE(value: String): Self = StObject.set(x, "410_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set410_MESSAGE(value: String): Self = StObject.set(x, "410_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set410_NAME(value: String): Self = StObject.set(x, "410_NAME", value.asInstanceOf[js.Any])
+      inline def set410_NAME(value: String): Self = StObject.set(x, "410_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set411(value: String): Self = StObject.set(x, "411", value.asInstanceOf[js.Any])
+      inline def set411(value: String): Self = StObject.set(x, "411", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set411_CLASS(value: String): Self = StObject.set(x, "411_CLASS", value.asInstanceOf[js.Any])
+      inline def set411_CLASS(value: String): Self = StObject.set(x, "411_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set411_MESSAGE(value: String): Self = StObject.set(x, "411_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set411_MESSAGE(value: String): Self = StObject.set(x, "411_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set411_NAME(value: String): Self = StObject.set(x, "411_NAME", value.asInstanceOf[js.Any])
+      inline def set411_NAME(value: String): Self = StObject.set(x, "411_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set412(value: String): Self = StObject.set(x, "412", value.asInstanceOf[js.Any])
+      inline def set412(value: String): Self = StObject.set(x, "412", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set412_CLASS(value: String): Self = StObject.set(x, "412_CLASS", value.asInstanceOf[js.Any])
+      inline def set412_CLASS(value: String): Self = StObject.set(x, "412_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set412_MESSAGE(value: String): Self = StObject.set(x, "412_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set412_MESSAGE(value: String): Self = StObject.set(x, "412_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set412_NAME(value: String): Self = StObject.set(x, "412_NAME", value.asInstanceOf[js.Any])
+      inline def set412_NAME(value: String): Self = StObject.set(x, "412_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set413(value: String): Self = StObject.set(x, "413", value.asInstanceOf[js.Any])
+      inline def set413(value: String): Self = StObject.set(x, "413", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set413_CLASS(value: String): Self = StObject.set(x, "413_CLASS", value.asInstanceOf[js.Any])
+      inline def set413_CLASS(value: String): Self = StObject.set(x, "413_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set413_MESSAGE(value: String): Self = StObject.set(x, "413_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set413_MESSAGE(value: String): Self = StObject.set(x, "413_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set413_NAME(value: String): Self = StObject.set(x, "413_NAME", value.asInstanceOf[js.Any])
+      inline def set413_NAME(value: String): Self = StObject.set(x, "413_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set414(value: String): Self = StObject.set(x, "414", value.asInstanceOf[js.Any])
+      inline def set414(value: String): Self = StObject.set(x, "414", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set414_CLASS(value: String): Self = StObject.set(x, "414_CLASS", value.asInstanceOf[js.Any])
+      inline def set414_CLASS(value: String): Self = StObject.set(x, "414_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set414_MESSAGE(value: String): Self = StObject.set(x, "414_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set414_MESSAGE(value: String): Self = StObject.set(x, "414_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set414_NAME(value: String): Self = StObject.set(x, "414_NAME", value.asInstanceOf[js.Any])
+      inline def set414_NAME(value: String): Self = StObject.set(x, "414_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set415(value: String): Self = StObject.set(x, "415", value.asInstanceOf[js.Any])
+      inline def set415(value: String): Self = StObject.set(x, "415", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set415_CLASS(value: String): Self = StObject.set(x, "415_CLASS", value.asInstanceOf[js.Any])
+      inline def set415_CLASS(value: String): Self = StObject.set(x, "415_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set415_MESSAGE(value: String): Self = StObject.set(x, "415_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set415_MESSAGE(value: String): Self = StObject.set(x, "415_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set415_NAME(value: String): Self = StObject.set(x, "415_NAME", value.asInstanceOf[js.Any])
+      inline def set415_NAME(value: String): Self = StObject.set(x, "415_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set416(value: String): Self = StObject.set(x, "416", value.asInstanceOf[js.Any])
+      inline def set416(value: String): Self = StObject.set(x, "416", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set416_CLASS(value: String): Self = StObject.set(x, "416_CLASS", value.asInstanceOf[js.Any])
+      inline def set416_CLASS(value: String): Self = StObject.set(x, "416_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set416_MESSAGE(value: String): Self = StObject.set(x, "416_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set416_MESSAGE(value: String): Self = StObject.set(x, "416_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set416_NAME(value: String): Self = StObject.set(x, "416_NAME", value.asInstanceOf[js.Any])
+      inline def set416_NAME(value: String): Self = StObject.set(x, "416_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set417(value: String): Self = StObject.set(x, "417", value.asInstanceOf[js.Any])
+      inline def set417(value: String): Self = StObject.set(x, "417", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set417_CLASS(value: String): Self = StObject.set(x, "417_CLASS", value.asInstanceOf[js.Any])
+      inline def set417_CLASS(value: String): Self = StObject.set(x, "417_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set417_MESSAGE(value: String): Self = StObject.set(x, "417_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set417_MESSAGE(value: String): Self = StObject.set(x, "417_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set417_NAME(value: String): Self = StObject.set(x, "417_NAME", value.asInstanceOf[js.Any])
+      inline def set417_NAME(value: String): Self = StObject.set(x, "417_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set418(value: String): Self = StObject.set(x, "418", value.asInstanceOf[js.Any])
+      inline def set418(value: String): Self = StObject.set(x, "418", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set418_CLASS(value: String): Self = StObject.set(x, "418_CLASS", value.asInstanceOf[js.Any])
+      inline def set418_CLASS(value: String): Self = StObject.set(x, "418_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set418_MESSAGE(value: String): Self = StObject.set(x, "418_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set418_MESSAGE(value: String): Self = StObject.set(x, "418_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set418_NAME(value: String): Self = StObject.set(x, "418_NAME", value.asInstanceOf[js.Any])
+      inline def set418_NAME(value: String): Self = StObject.set(x, "418_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set421(value: String): Self = StObject.set(x, "421", value.asInstanceOf[js.Any])
+      inline def set421(value: String): Self = StObject.set(x, "421", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set421_CLASS(value: String): Self = StObject.set(x, "421_CLASS", value.asInstanceOf[js.Any])
+      inline def set421_CLASS(value: String): Self = StObject.set(x, "421_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set421_MESSAGE(value: String): Self = StObject.set(x, "421_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set421_MESSAGE(value: String): Self = StObject.set(x, "421_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set421_NAME(value: String): Self = StObject.set(x, "421_NAME", value.asInstanceOf[js.Any])
+      inline def set421_NAME(value: String): Self = StObject.set(x, "421_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set422(value: String): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+      inline def set422(value: String): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set422_CLASS(value: String): Self = StObject.set(x, "422_CLASS", value.asInstanceOf[js.Any])
+      inline def set422_CLASS(value: String): Self = StObject.set(x, "422_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set422_MESSAGE(value: String): Self = StObject.set(x, "422_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set422_MESSAGE(value: String): Self = StObject.set(x, "422_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set422_NAME(value: String): Self = StObject.set(x, "422_NAME", value.asInstanceOf[js.Any])
+      inline def set422_NAME(value: String): Self = StObject.set(x, "422_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set423(value: String): Self = StObject.set(x, "423", value.asInstanceOf[js.Any])
+      inline def set423(value: String): Self = StObject.set(x, "423", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set423_CLASS(value: String): Self = StObject.set(x, "423_CLASS", value.asInstanceOf[js.Any])
+      inline def set423_CLASS(value: String): Self = StObject.set(x, "423_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set423_MESSAGE(value: String): Self = StObject.set(x, "423_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set423_MESSAGE(value: String): Self = StObject.set(x, "423_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set423_NAME(value: String): Self = StObject.set(x, "423_NAME", value.asInstanceOf[js.Any])
+      inline def set423_NAME(value: String): Self = StObject.set(x, "423_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set424(value: String): Self = StObject.set(x, "424", value.asInstanceOf[js.Any])
+      inline def set424(value: String): Self = StObject.set(x, "424", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set424_CLASS(value: String): Self = StObject.set(x, "424_CLASS", value.asInstanceOf[js.Any])
+      inline def set424_CLASS(value: String): Self = StObject.set(x, "424_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set424_MESSAGE(value: String): Self = StObject.set(x, "424_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set424_MESSAGE(value: String): Self = StObject.set(x, "424_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set424_NAME(value: String): Self = StObject.set(x, "424_NAME", value.asInstanceOf[js.Any])
+      inline def set424_NAME(value: String): Self = StObject.set(x, "424_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set426(value: String): Self = StObject.set(x, "426", value.asInstanceOf[js.Any])
+      inline def set426(value: String): Self = StObject.set(x, "426", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set426_CLASS(value: String): Self = StObject.set(x, "426_CLASS", value.asInstanceOf[js.Any])
+      inline def set426_CLASS(value: String): Self = StObject.set(x, "426_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set426_MESSAGE(value: String): Self = StObject.set(x, "426_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set426_MESSAGE(value: String): Self = StObject.set(x, "426_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set426_NAME(value: String): Self = StObject.set(x, "426_NAME", value.asInstanceOf[js.Any])
+      inline def set426_NAME(value: String): Self = StObject.set(x, "426_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set428(value: String): Self = StObject.set(x, "428", value.asInstanceOf[js.Any])
+      inline def set428(value: String): Self = StObject.set(x, "428", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set428_CLASS(value: String): Self = StObject.set(x, "428_CLASS", value.asInstanceOf[js.Any])
+      inline def set428_CLASS(value: String): Self = StObject.set(x, "428_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set428_MESSAGE(value: String): Self = StObject.set(x, "428_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set428_MESSAGE(value: String): Self = StObject.set(x, "428_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set428_NAME(value: String): Self = StObject.set(x, "428_NAME", value.asInstanceOf[js.Any])
+      inline def set428_NAME(value: String): Self = StObject.set(x, "428_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set429(value: String): Self = StObject.set(x, "429", value.asInstanceOf[js.Any])
+      inline def set429(value: String): Self = StObject.set(x, "429", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set429_CLASS(value: String): Self = StObject.set(x, "429_CLASS", value.asInstanceOf[js.Any])
+      inline def set429_CLASS(value: String): Self = StObject.set(x, "429_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set429_MESSAGE(value: String): Self = StObject.set(x, "429_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set429_MESSAGE(value: String): Self = StObject.set(x, "429_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set429_NAME(value: String): Self = StObject.set(x, "429_NAME", value.asInstanceOf[js.Any])
+      inline def set429_NAME(value: String): Self = StObject.set(x, "429_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set431(value: String): Self = StObject.set(x, "431", value.asInstanceOf[js.Any])
+      inline def set431(value: String): Self = StObject.set(x, "431", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set431_CLASS(value: String): Self = StObject.set(x, "431_CLASS", value.asInstanceOf[js.Any])
+      inline def set431_CLASS(value: String): Self = StObject.set(x, "431_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set431_MESSAGE(value: String): Self = StObject.set(x, "431_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set431_MESSAGE(value: String): Self = StObject.set(x, "431_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set431_NAME(value: String): Self = StObject.set(x, "431_NAME", value.asInstanceOf[js.Any])
+      inline def set431_NAME(value: String): Self = StObject.set(x, "431_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set451(value: String): Self = StObject.set(x, "451", value.asInstanceOf[js.Any])
+      inline def set451(value: String): Self = StObject.set(x, "451", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set451_CLASS(value: String): Self = StObject.set(x, "451_CLASS", value.asInstanceOf[js.Any])
+      inline def set451_CLASS(value: String): Self = StObject.set(x, "451_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set451_MESSAGE(value: String): Self = StObject.set(x, "451_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set451_MESSAGE(value: String): Self = StObject.set(x, "451_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set451_NAME(value: String): Self = StObject.set(x, "451_NAME", value.asInstanceOf[js.Any])
+      inline def set451_NAME(value: String): Self = StObject.set(x, "451_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set500(value: String): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
+      inline def set500(value: String): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set500_CLASS(value: String): Self = StObject.set(x, "500_CLASS", value.asInstanceOf[js.Any])
+      inline def set500_CLASS(value: String): Self = StObject.set(x, "500_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set500_MESSAGE(value: String): Self = StObject.set(x, "500_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set500_MESSAGE(value: String): Self = StObject.set(x, "500_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set500_NAME(value: String): Self = StObject.set(x, "500_NAME", value.asInstanceOf[js.Any])
+      inline def set500_NAME(value: String): Self = StObject.set(x, "500_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set501(value: String): Self = StObject.set(x, "501", value.asInstanceOf[js.Any])
+      inline def set501(value: String): Self = StObject.set(x, "501", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set501_CLASS(value: String): Self = StObject.set(x, "501_CLASS", value.asInstanceOf[js.Any])
+      inline def set501_CLASS(value: String): Self = StObject.set(x, "501_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set501_MESSAGE(value: String): Self = StObject.set(x, "501_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set501_MESSAGE(value: String): Self = StObject.set(x, "501_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set501_NAME(value: String): Self = StObject.set(x, "501_NAME", value.asInstanceOf[js.Any])
+      inline def set501_NAME(value: String): Self = StObject.set(x, "501_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set502(value: String): Self = StObject.set(x, "502", value.asInstanceOf[js.Any])
+      inline def set502(value: String): Self = StObject.set(x, "502", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set503(value: String): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
+      inline def set503(value: String): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set503_CLASS(value: String): Self = StObject.set(x, "503_CLASS", value.asInstanceOf[js.Any])
+      inline def set503_CLASS(value: String): Self = StObject.set(x, "503_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set503_MESSAGE(value: String): Self = StObject.set(x, "503_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set503_MESSAGE(value: String): Self = StObject.set(x, "503_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set503_NAME(value: String): Self = StObject.set(x, "503_NAME", value.asInstanceOf[js.Any])
+      inline def set503_NAME(value: String): Self = StObject.set(x, "503_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set504(value: String): Self = StObject.set(x, "504", value.asInstanceOf[js.Any])
+      inline def set504(value: String): Self = StObject.set(x, "504", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set504_CLASS(value: String): Self = StObject.set(x, "504_CLASS", value.asInstanceOf[js.Any])
+      inline def set504_CLASS(value: String): Self = StObject.set(x, "504_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set504_MESSAGE(value: String): Self = StObject.set(x, "504_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set504_MESSAGE(value: String): Self = StObject.set(x, "504_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set504_NAME(value: String): Self = StObject.set(x, "504_NAME", value.asInstanceOf[js.Any])
+      inline def set504_NAME(value: String): Self = StObject.set(x, "504_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set505(value: String): Self = StObject.set(x, "505", value.asInstanceOf[js.Any])
+      inline def set505(value: String): Self = StObject.set(x, "505", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set505_CLASS(value: String): Self = StObject.set(x, "505_CLASS", value.asInstanceOf[js.Any])
+      inline def set505_CLASS(value: String): Self = StObject.set(x, "505_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set505_MESSAGE(value: String): Self = StObject.set(x, "505_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set505_MESSAGE(value: String): Self = StObject.set(x, "505_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set505_NAME(value: String): Self = StObject.set(x, "505_NAME", value.asInstanceOf[js.Any])
+      inline def set505_NAME(value: String): Self = StObject.set(x, "505_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set506(value: String): Self = StObject.set(x, "506", value.asInstanceOf[js.Any])
+      inline def set506(value: String): Self = StObject.set(x, "506", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set506_CLASS(value: String): Self = StObject.set(x, "506_CLASS", value.asInstanceOf[js.Any])
+      inline def set506_CLASS(value: String): Self = StObject.set(x, "506_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set506_MESSAGE(value: String): Self = StObject.set(x, "506_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set506_MESSAGE(value: String): Self = StObject.set(x, "506_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set506_NAME(value: String): Self = StObject.set(x, "506_NAME", value.asInstanceOf[js.Any])
+      inline def set506_NAME(value: String): Self = StObject.set(x, "506_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set507(value: String): Self = StObject.set(x, "507", value.asInstanceOf[js.Any])
+      inline def set507(value: String): Self = StObject.set(x, "507", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set507_CLASS(value: String): Self = StObject.set(x, "507_CLASS", value.asInstanceOf[js.Any])
+      inline def set507_CLASS(value: String): Self = StObject.set(x, "507_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set507_MESSAGE(value: String): Self = StObject.set(x, "507_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set507_MESSAGE(value: String): Self = StObject.set(x, "507_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set507_NAME(value: String): Self = StObject.set(x, "507_NAME", value.asInstanceOf[js.Any])
+      inline def set507_NAME(value: String): Self = StObject.set(x, "507_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set508(value: String): Self = StObject.set(x, "508", value.asInstanceOf[js.Any])
+      inline def set508(value: String): Self = StObject.set(x, "508", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set508_CLASS(value: String): Self = StObject.set(x, "508_CLASS", value.asInstanceOf[js.Any])
+      inline def set508_CLASS(value: String): Self = StObject.set(x, "508_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set508_MESSAGE(value: String): Self = StObject.set(x, "508_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set508_MESSAGE(value: String): Self = StObject.set(x, "508_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set508_NAME(value: String): Self = StObject.set(x, "508_NAME", value.asInstanceOf[js.Any])
+      inline def set508_NAME(value: String): Self = StObject.set(x, "508_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set510(value: String): Self = StObject.set(x, "510", value.asInstanceOf[js.Any])
+      inline def set510(value: String): Self = StObject.set(x, "510", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set510_CLASS(value: String): Self = StObject.set(x, "510_CLASS", value.asInstanceOf[js.Any])
+      inline def set510_CLASS(value: String): Self = StObject.set(x, "510_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set510_MESSAGE(value: String): Self = StObject.set(x, "510_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set510_MESSAGE(value: String): Self = StObject.set(x, "510_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set510_NAME(value: String): Self = StObject.set(x, "510_NAME", value.asInstanceOf[js.Any])
+      inline def set510_NAME(value: String): Self = StObject.set(x, "510_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set511(value: String): Self = StObject.set(x, "511", value.asInstanceOf[js.Any])
+      inline def set511(value: String): Self = StObject.set(x, "511", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set511_CLASS(value: String): Self = StObject.set(x, "511_CLASS", value.asInstanceOf[js.Any])
+      inline def set511_CLASS(value: String): Self = StObject.set(x, "511_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set511_MESSAGE(value: String): Self = StObject.set(x, "511_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set511_MESSAGE(value: String): Self = StObject.set(x, "511_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set511_NAME(value: String): Self = StObject.set(x, "511_NAME", value.asInstanceOf[js.Any])
+      inline def set511_NAME(value: String): Self = StObject.set(x, "511_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setACCEPTED(value: Double): Self = StObject.set(x, "ACCEPTED", value.asInstanceOf[js.Any])
+      inline def setACCEPTED(value: Double): Self = StObject.set(x, "ACCEPTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setALREADY_REPORTED(value: Double): Self = StObject.set(x, "ALREADY_REPORTED", value.asInstanceOf[js.Any])
+      inline def setALREADY_REPORTED(value: Double): Self = StObject.set(x, "ALREADY_REPORTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBAD_GATEWAY(value: Double): Self = StObject.set(x, "BAD_GATEWAY", value.asInstanceOf[js.Any])
+      inline def setBAD_GATEWAY(value: Double): Self = StObject.set(x, "BAD_GATEWAY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBAD_REQUEST(value: Double): Self = StObject.set(x, "BAD_REQUEST", value.asInstanceOf[js.Any])
+      inline def setBAD_REQUEST(value: Double): Self = StObject.set(x, "BAD_REQUEST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONFLICT(value: Double): Self = StObject.set(x, "CONFLICT", value.asInstanceOf[js.Any])
+      inline def setCONFLICT(value: Double): Self = StObject.set(x, "CONFLICT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONTINUE(value: Double): Self = StObject.set(x, "CONTINUE", value.asInstanceOf[js.Any])
+      inline def setCONTINUE(value: Double): Self = StObject.set(x, "CONTINUE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCREATED(value: Double): Self = StObject.set(x, "CREATED", value.asInstanceOf[js.Any])
+      inline def setCREATED(value: Double): Self = StObject.set(x, "CREATED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClasses(value: HttpStatusClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: HttpStatusClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXPECTATION_FAILED(value: Double): Self = StObject.set(x, "EXPECTATION_FAILED", value.asInstanceOf[js.Any])
+      inline def setEXPECTATION_FAILED(value: Double): Self = StObject.set(x, "EXPECTATION_FAILED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtra(value: HttpStatusExtra): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: HttpStatusExtra): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFAILED_DEPENDENCY(value: Double): Self = StObject.set(x, "FAILED_DEPENDENCY", value.asInstanceOf[js.Any])
+      inline def setFAILED_DEPENDENCY(value: Double): Self = StObject.set(x, "FAILED_DEPENDENCY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFORBIDDEN(value: Double): Self = StObject.set(x, "FORBIDDEN", value.asInstanceOf[js.Any])
+      inline def setFORBIDDEN(value: Double): Self = StObject.set(x, "FORBIDDEN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFOUND(value: Double): Self = StObject.set(x, "FOUND", value.asInstanceOf[js.Any])
+      inline def setFOUND(value: Double): Self = StObject.set(x, "FOUND", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGATEWAY_TIMEOUT(value: Double): Self = StObject.set(x, "GATEWAY_TIMEOUT", value.asInstanceOf[js.Any])
+      inline def setGATEWAY_TIMEOUT(value: Double): Self = StObject.set(x, "GATEWAY_TIMEOUT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGONE(value: Double): Self = StObject.set(x, "GONE", value.asInstanceOf[js.Any])
+      inline def setGONE(value: Double): Self = StObject.set(x, "GONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHTTP_VERSION_NOT_SUPPORTED(value: Double): Self = StObject.set(x, "HTTP_VERSION_NOT_SUPPORTED", value.asInstanceOf[js.Any])
+      inline def setHTTP_VERSION_NOT_SUPPORTED(value: Double): Self = StObject.set(x, "HTTP_VERSION_NOT_SUPPORTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIM_A_TEAPOT(value: Double): Self = StObject.set(x, "IM_A_TEAPOT", value.asInstanceOf[js.Any])
+      inline def setIM_A_TEAPOT(value: Double): Self = StObject.set(x, "IM_A_TEAPOT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIM_USED(value: Double): Self = StObject.set(x, "IM_USED", value.asInstanceOf[js.Any])
+      inline def setIM_USED(value: Double): Self = StObject.set(x, "IM_USED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINSUFFICIENT_STORAGE(value: Double): Self = StObject.set(x, "INSUFFICIENT_STORAGE", value.asInstanceOf[js.Any])
+      inline def setINSUFFICIENT_STORAGE(value: Double): Self = StObject.set(x, "INSUFFICIENT_STORAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINTERNAL_SERVER_ERROR(value: Double): Self = StObject.set(x, "INTERNAL_SERVER_ERROR", value.asInstanceOf[js.Any])
+      inline def setINTERNAL_SERVER_ERROR(value: Double): Self = StObject.set(x, "INTERNAL_SERVER_ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLENGTH_REQUIRED(value: Double): Self = StObject.set(x, "LENGTH_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setLENGTH_REQUIRED(value: Double): Self = StObject.set(x, "LENGTH_REQUIRED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOCKED(value: Double): Self = StObject.set(x, "LOCKED", value.asInstanceOf[js.Any])
+      inline def setLOCKED(value: Double): Self = StObject.set(x, "LOCKED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOOP_DETECTED(value: Double): Self = StObject.set(x, "LOOP_DETECTED", value.asInstanceOf[js.Any])
+      inline def setLOOP_DETECTED(value: Double): Self = StObject.set(x, "LOOP_DETECTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMETHOD_NOT_ALLOWED(value: Double): Self = StObject.set(x, "METHOD_NOT_ALLOWED", value.asInstanceOf[js.Any])
+      inline def setMETHOD_NOT_ALLOWED(value: Double): Self = StObject.set(x, "METHOD_NOT_ALLOWED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMISDIRECTED_REQUEST(value: Double): Self = StObject.set(x, "MISDIRECTED_REQUEST", value.asInstanceOf[js.Any])
+      inline def setMISDIRECTED_REQUEST(value: Double): Self = StObject.set(x, "MISDIRECTED_REQUEST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMOVED_PERMANENTLY(value: Double): Self = StObject.set(x, "MOVED_PERMANENTLY", value.asInstanceOf[js.Any])
+      inline def setMOVED_PERMANENTLY(value: Double): Self = StObject.set(x, "MOVED_PERMANENTLY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMULTIPLE_CHOICES(value: Double): Self = StObject.set(x, "MULTIPLE_CHOICES", value.asInstanceOf[js.Any])
+      inline def setMULTIPLE_CHOICES(value: Double): Self = StObject.set(x, "MULTIPLE_CHOICES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMULTI_STATUS(value: Double): Self = StObject.set(x, "MULTI_STATUS", value.asInstanceOf[js.Any])
+      inline def setMULTI_STATUS(value: Double): Self = StObject.set(x, "MULTI_STATUS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNETWORK_AUTHENTICATION_REQUIRED(value: Double): Self = StObject.set(x, "NETWORK_AUTHENTICATION_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setNETWORK_AUTHENTICATION_REQUIRED(value: Double): Self = StObject.set(x, "NETWORK_AUTHENTICATION_REQUIRED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNON_AUTHORITATIVE_INFORMATION(value: Double): Self = StObject.set(x, "NON_AUTHORITATIVE_INFORMATION", value.asInstanceOf[js.Any])
+      inline def setNON_AUTHORITATIVE_INFORMATION(value: Double): Self = StObject.set(x, "NON_AUTHORITATIVE_INFORMATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_ACCEPTABLE(value: Double): Self = StObject.set(x, "NOT_ACCEPTABLE", value.asInstanceOf[js.Any])
+      inline def setNOT_ACCEPTABLE(value: Double): Self = StObject.set(x, "NOT_ACCEPTABLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_EXTENDED(value: Double): Self = StObject.set(x, "NOT_EXTENDED", value.asInstanceOf[js.Any])
+      inline def setNOT_EXTENDED(value: Double): Self = StObject.set(x, "NOT_EXTENDED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_FOUND(value: Double): Self = StObject.set(x, "NOT_FOUND", value.asInstanceOf[js.Any])
+      inline def setNOT_FOUND(value: Double): Self = StObject.set(x, "NOT_FOUND", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_IMPLEMENTED(value: Double): Self = StObject.set(x, "NOT_IMPLEMENTED", value.asInstanceOf[js.Any])
+      inline def setNOT_IMPLEMENTED(value: Double): Self = StObject.set(x, "NOT_IMPLEMENTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_MODIFIED(value: Double): Self = StObject.set(x, "NOT_MODIFIED", value.asInstanceOf[js.Any])
+      inline def setNOT_MODIFIED(value: Double): Self = StObject.set(x, "NOT_MODIFIED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNO_CONTENT(value: Double): Self = StObject.set(x, "NO_CONTENT", value.asInstanceOf[js.Any])
+      inline def setNO_CONTENT(value: Double): Self = StObject.set(x, "NO_CONTENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOK(value: Double): Self = StObject.set(x, "OK", value.asInstanceOf[js.Any])
+      inline def setOK(value: Double): Self = StObject.set(x, "OK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPARTIAL_CONTENT(value: Double): Self = StObject.set(x, "PARTIAL_CONTENT", value.asInstanceOf[js.Any])
+      inline def setPARTIAL_CONTENT(value: Double): Self = StObject.set(x, "PARTIAL_CONTENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPAYMENT_REQUIRED(value: Double): Self = StObject.set(x, "PAYMENT_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setPAYMENT_REQUIRED(value: Double): Self = StObject.set(x, "PAYMENT_REQUIRED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPERMANENT_REDIRECT(value: Double): Self = StObject.set(x, "PERMANENT_REDIRECT", value.asInstanceOf[js.Any])
+      inline def setPERMANENT_REDIRECT(value: Double): Self = StObject.set(x, "PERMANENT_REDIRECT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRECONDITION_FAILED(value: Double): Self = StObject.set(x, "PRECONDITION_FAILED", value.asInstanceOf[js.Any])
+      inline def setPRECONDITION_FAILED(value: Double): Self = StObject.set(x, "PRECONDITION_FAILED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRECONDITION_REQUIRED(value: Double): Self = StObject.set(x, "PRECONDITION_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setPRECONDITION_REQUIRED(value: Double): Self = StObject.set(x, "PRECONDITION_REQUIRED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPROXY_AUTHENTICATION_REQUIRED(value: Double): Self = StObject.set(x, "PROXY_AUTHENTICATION_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setPROXY_AUTHENTICATION_REQUIRED(value: Double): Self = StObject.set(x, "PROXY_AUTHENTICATION_REQUIRED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREQUESTED_RANGE_NOT_SATISFIABLE(value: Double): Self = StObject.set(x, "REQUESTED_RANGE_NOT_SATISFIABLE", value.asInstanceOf[js.Any])
+      inline def setREQUESTED_RANGE_NOT_SATISFIABLE(value: Double): Self = StObject.set(x, "REQUESTED_RANGE_NOT_SATISFIABLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREQUEST_ENTITY_TOO_LARGE(value: Double): Self = StObject.set(x, "REQUEST_ENTITY_TOO_LARGE", value.asInstanceOf[js.Any])
+      inline def setREQUEST_ENTITY_TOO_LARGE(value: Double): Self = StObject.set(x, "REQUEST_ENTITY_TOO_LARGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREQUEST_HEADER_FIELDS_TOO_LARGE(value: Double): Self = StObject.set(x, "REQUEST_HEADER_FIELDS_TOO_LARGE", value.asInstanceOf[js.Any])
+      inline def setREQUEST_HEADER_FIELDS_TOO_LARGE(value: Double): Self = StObject.set(x, "REQUEST_HEADER_FIELDS_TOO_LARGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREQUEST_TIMEOUT(value: Double): Self = StObject.set(x, "REQUEST_TIMEOUT", value.asInstanceOf[js.Any])
+      inline def setREQUEST_TIMEOUT(value: Double): Self = StObject.set(x, "REQUEST_TIMEOUT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREQUEST_URI_TOO_LONG(value: Double): Self = StObject.set(x, "REQUEST_URI_TOO_LONG", value.asInstanceOf[js.Any])
+      inline def setREQUEST_URI_TOO_LONG(value: Double): Self = StObject.set(x, "REQUEST_URI_TOO_LONG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESET_CONTENT(value: Double): Self = StObject.set(x, "RESET_CONTENT", value.asInstanceOf[js.Any])
+      inline def setRESET_CONTENT(value: Double): Self = StObject.set(x, "RESET_CONTENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSEE_OTHER(value: Double): Self = StObject.set(x, "SEE_OTHER", value.asInstanceOf[js.Any])
+      inline def setSEE_OTHER(value: Double): Self = StObject.set(x, "SEE_OTHER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSERVICE_UNAVAILABLE(value: Double): Self = StObject.set(x, "SERVICE_UNAVAILABLE", value.asInstanceOf[js.Any])
+      inline def setSERVICE_UNAVAILABLE(value: Double): Self = StObject.set(x, "SERVICE_UNAVAILABLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSWITCHING_PROTOCOLS(value: Double): Self = StObject.set(x, "SWITCHING_PROTOCOLS", value.asInstanceOf[js.Any])
+      inline def setSWITCHING_PROTOCOLS(value: Double): Self = StObject.set(x, "SWITCHING_PROTOCOLS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSWITCH_PROXY(value: Double): Self = StObject.set(x, "SWITCH_PROXY", value.asInstanceOf[js.Any])
+      inline def setSWITCH_PROXY(value: Double): Self = StObject.set(x, "SWITCH_PROXY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTEMPORARY_REDIRECT(value: Double): Self = StObject.set(x, "TEMPORARY_REDIRECT", value.asInstanceOf[js.Any])
+      inline def setTEMPORARY_REDIRECT(value: Double): Self = StObject.set(x, "TEMPORARY_REDIRECT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOO_MANY_REQUESTS(value: Double): Self = StObject.set(x, "TOO_MANY_REQUESTS", value.asInstanceOf[js.Any])
+      inline def setTOO_MANY_REQUESTS(value: Double): Self = StObject.set(x, "TOO_MANY_REQUESTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNAUTHORIZED(value: Double): Self = StObject.set(x, "UNAUTHORIZED", value.asInstanceOf[js.Any])
+      inline def setUNAUTHORIZED(value: Double): Self = StObject.set(x, "UNAUTHORIZED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNAVAILABLE_FOR_LEGAL_REASONS(value: Double): Self = StObject.set(x, "UNAVAILABLE_FOR_LEGAL_REASONS", value.asInstanceOf[js.Any])
+      inline def setUNAVAILABLE_FOR_LEGAL_REASONS(value: Double): Self = StObject.set(x, "UNAVAILABLE_FOR_LEGAL_REASONS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNPROCESSABLE_ENTITY(value: Double): Self = StObject.set(x, "UNPROCESSABLE_ENTITY", value.asInstanceOf[js.Any])
+      inline def setUNPROCESSABLE_ENTITY(value: Double): Self = StObject.set(x, "UNPROCESSABLE_ENTITY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNSUPPORTED_MEDIA_TYPE(value: Double): Self = StObject.set(x, "UNSUPPORTED_MEDIA_TYPE", value.asInstanceOf[js.Any])
+      inline def setUNSUPPORTED_MEDIA_TYPE(value: Double): Self = StObject.set(x, "UNSUPPORTED_MEDIA_TYPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUPGRADE_REQUIRED(value: Double): Self = StObject.set(x, "UPGRADE_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setUPGRADE_REQUIRED(value: Double): Self = StObject.set(x, "UPGRADE_REQUIRED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSE_PROXY(value: Double): Self = StObject.set(x, "USE_PROXY", value.asInstanceOf[js.Any])
+      inline def setUSE_PROXY(value: Double): Self = StObject.set(x, "USE_PROXY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVARIANT_ALSO_NEGOTIATES(value: Double): Self = StObject.set(x, "VARIANT_ALSO_NEGOTIATES", value.asInstanceOf[js.Any])
+      inline def setVARIANT_ALSO_NEGOTIATES(value: Double): Self = StObject.set(x, "VARIANT_ALSO_NEGOTIATES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_CLASS(value: String): Self = StObject.set(x, "_CLASS", value.asInstanceOf[js.Any])
+      inline def set_CLASS(value: String): Self = StObject.set(x, "_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_MESSAGE(value: String): Self = StObject.set(x, "_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set_MESSAGE(value: String): Self = StObject.set(x, "_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_NAME(value: String): Self = StObject.set(x, "_NAME", value.asInstanceOf[js.Any])
+      inline def set_NAME(value: String): Self = StObject.set(x, "_NAME", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2077,8 +1773,7 @@ object mod extends Shortcut {
   }
   object HttpStatusClasses {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `1xx`: String,
       `1xx_MESSAGE`: String,
       `1xx_NAME`: String,
@@ -2119,68 +1814,47 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatusClasses]
     }
     
-    @scala.inline
-    implicit class HttpStatusClassesMutableBuilder[Self <: HttpStatusClasses] (val x: Self) extends AnyVal {
+    extension [Self <: HttpStatusClasses](x: Self) {
       
-      @scala.inline
-      def set1xx(value: String): Self = StObject.set(x, "1xx", value.asInstanceOf[js.Any])
+      inline def set1xx(value: String): Self = StObject.set(x, "1xx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1xx_MESSAGE(value: String): Self = StObject.set(x, "1xx_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set1xx_MESSAGE(value: String): Self = StObject.set(x, "1xx_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1xx_NAME(value: String): Self = StObject.set(x, "1xx_NAME", value.asInstanceOf[js.Any])
+      inline def set1xx_NAME(value: String): Self = StObject.set(x, "1xx_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set2xx(value: String): Self = StObject.set(x, "2xx", value.asInstanceOf[js.Any])
+      inline def set2xx(value: String): Self = StObject.set(x, "2xx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set2xx_MESSAGE(value: String): Self = StObject.set(x, "2xx_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set2xx_MESSAGE(value: String): Self = StObject.set(x, "2xx_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set2xx_NAME(value: String): Self = StObject.set(x, "2xx_NAME", value.asInstanceOf[js.Any])
+      inline def set2xx_NAME(value: String): Self = StObject.set(x, "2xx_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set3xx(value: String): Self = StObject.set(x, "3xx", value.asInstanceOf[js.Any])
+      inline def set3xx(value: String): Self = StObject.set(x, "3xx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set3xx_MESSAGE(value: String): Self = StObject.set(x, "3xx_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set3xx_MESSAGE(value: String): Self = StObject.set(x, "3xx_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set3xx_NAME(value: String): Self = StObject.set(x, "3xx_NAME", value.asInstanceOf[js.Any])
+      inline def set3xx_NAME(value: String): Self = StObject.set(x, "3xx_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4xx(value: String): Self = StObject.set(x, "4xx", value.asInstanceOf[js.Any])
+      inline def set4xx(value: String): Self = StObject.set(x, "4xx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4xx_MESSAGE(value: String): Self = StObject.set(x, "4xx_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set4xx_MESSAGE(value: String): Self = StObject.set(x, "4xx_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4xx_NAME(value: String): Self = StObject.set(x, "4xx_NAME", value.asInstanceOf[js.Any])
+      inline def set4xx_NAME(value: String): Self = StObject.set(x, "4xx_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5xx(value: String): Self = StObject.set(x, "5xx", value.asInstanceOf[js.Any])
+      inline def set5xx(value: String): Self = StObject.set(x, "5xx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5xx_MESSAGE(value: String): Self = StObject.set(x, "5xx_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set5xx_MESSAGE(value: String): Self = StObject.set(x, "5xx_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5xx_NAME(value: String): Self = StObject.set(x, "5xx_NAME", value.asInstanceOf[js.Any])
+      inline def set5xx_NAME(value: String): Self = StObject.set(x, "5xx_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLIENT_ERROR(value: String): Self = StObject.set(x, "CLIENT_ERROR", value.asInstanceOf[js.Any])
+      inline def setCLIENT_ERROR(value: String): Self = StObject.set(x, "CLIENT_ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINFORMATIONAL(value: String): Self = StObject.set(x, "INFORMATIONAL", value.asInstanceOf[js.Any])
+      inline def setINFORMATIONAL(value: String): Self = StObject.set(x, "INFORMATIONAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREDIRECTION(value: String): Self = StObject.set(x, "REDIRECTION", value.asInstanceOf[js.Any])
+      inline def setREDIRECTION(value: String): Self = StObject.set(x, "REDIRECTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSERVER_ERROR(value: String): Self = StObject.set(x, "SERVER_ERROR", value.asInstanceOf[js.Any])
+      inline def setSERVER_ERROR(value: String): Self = StObject.set(x, "SERVER_ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUCCESSFUL(value: String): Self = StObject.set(x, "SUCCESSFUL", value.asInstanceOf[js.Any])
+      inline def setSUCCESSFUL(value: String): Self = StObject.set(x, "SUCCESSFUL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2268,8 +1942,7 @@ object mod extends Shortcut {
   }
   object HttpStatusCloudfare {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `520`: String,
       `520_CLASS`: String,
       `520_MESSAGE`: String,
@@ -2347,128 +2020,87 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatusCloudfare]
     }
     
-    @scala.inline
-    implicit class HttpStatusCloudfareMutableBuilder[Self <: HttpStatusCloudfare] (val x: Self) extends AnyVal {
+    extension [Self <: HttpStatusCloudfare](x: Self) {
       
-      @scala.inline
-      def set520(value: String): Self = StObject.set(x, "520", value.asInstanceOf[js.Any])
+      inline def set520(value: String): Self = StObject.set(x, "520", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set520_CLASS(value: String): Self = StObject.set(x, "520_CLASS", value.asInstanceOf[js.Any])
+      inline def set520_CLASS(value: String): Self = StObject.set(x, "520_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set520_MESSAGE(value: String): Self = StObject.set(x, "520_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set520_MESSAGE(value: String): Self = StObject.set(x, "520_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set520_NAME(value: String): Self = StObject.set(x, "520_NAME", value.asInstanceOf[js.Any])
+      inline def set520_NAME(value: String): Self = StObject.set(x, "520_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set521(value: String): Self = StObject.set(x, "521", value.asInstanceOf[js.Any])
+      inline def set521(value: String): Self = StObject.set(x, "521", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set521_CLASS(value: String): Self = StObject.set(x, "521_CLASS", value.asInstanceOf[js.Any])
+      inline def set521_CLASS(value: String): Self = StObject.set(x, "521_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set521_MESSAGE(value: String): Self = StObject.set(x, "521_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set521_MESSAGE(value: String): Self = StObject.set(x, "521_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set521_NAME(value: String): Self = StObject.set(x, "521_NAME", value.asInstanceOf[js.Any])
+      inline def set521_NAME(value: String): Self = StObject.set(x, "521_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set522(value: String): Self = StObject.set(x, "522", value.asInstanceOf[js.Any])
+      inline def set522(value: String): Self = StObject.set(x, "522", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set522_CLASS(value: String): Self = StObject.set(x, "522_CLASS", value.asInstanceOf[js.Any])
+      inline def set522_CLASS(value: String): Self = StObject.set(x, "522_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set522_MESSAGE(value: String): Self = StObject.set(x, "522_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set522_MESSAGE(value: String): Self = StObject.set(x, "522_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set522_NAME(value: String): Self = StObject.set(x, "522_NAME", value.asInstanceOf[js.Any])
+      inline def set522_NAME(value: String): Self = StObject.set(x, "522_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set523(value: String): Self = StObject.set(x, "523", value.asInstanceOf[js.Any])
+      inline def set523(value: String): Self = StObject.set(x, "523", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set523_CLASS(value: String): Self = StObject.set(x, "523_CLASS", value.asInstanceOf[js.Any])
+      inline def set523_CLASS(value: String): Self = StObject.set(x, "523_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set523_MESSAGE(value: String): Self = StObject.set(x, "523_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set523_MESSAGE(value: String): Self = StObject.set(x, "523_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set523_NAME(value: String): Self = StObject.set(x, "523_NAME", value.asInstanceOf[js.Any])
+      inline def set523_NAME(value: String): Self = StObject.set(x, "523_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set524(value: String): Self = StObject.set(x, "524", value.asInstanceOf[js.Any])
+      inline def set524(value: String): Self = StObject.set(x, "524", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set524_CLASS(value: String): Self = StObject.set(x, "524_CLASS", value.asInstanceOf[js.Any])
+      inline def set524_CLASS(value: String): Self = StObject.set(x, "524_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set524_MESSAGE(value: String): Self = StObject.set(x, "524_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set524_MESSAGE(value: String): Self = StObject.set(x, "524_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set524_NAME(value: String): Self = StObject.set(x, "524_NAME", value.asInstanceOf[js.Any])
+      inline def set524_NAME(value: String): Self = StObject.set(x, "524_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set525(value: String): Self = StObject.set(x, "525", value.asInstanceOf[js.Any])
+      inline def set525(value: String): Self = StObject.set(x, "525", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set525_CLASS(value: String): Self = StObject.set(x, "525_CLASS", value.asInstanceOf[js.Any])
+      inline def set525_CLASS(value: String): Self = StObject.set(x, "525_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set525_MESSAGE(value: String): Self = StObject.set(x, "525_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set525_MESSAGE(value: String): Self = StObject.set(x, "525_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set525_NAME(value: String): Self = StObject.set(x, "525_NAME", value.asInstanceOf[js.Any])
+      inline def set525_NAME(value: String): Self = StObject.set(x, "525_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set526(value: String): Self = StObject.set(x, "526", value.asInstanceOf[js.Any])
+      inline def set526(value: String): Self = StObject.set(x, "526", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set526_CLASS(value: String): Self = StObject.set(x, "526_CLASS", value.asInstanceOf[js.Any])
+      inline def set526_CLASS(value: String): Self = StObject.set(x, "526_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set526_MESSAGE(value: String): Self = StObject.set(x, "526_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set526_MESSAGE(value: String): Self = StObject.set(x, "526_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set526_NAME(value: String): Self = StObject.set(x, "526_NAME", value.asInstanceOf[js.Any])
+      inline def set526_NAME(value: String): Self = StObject.set(x, "526_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set527(value: String): Self = StObject.set(x, "527", value.asInstanceOf[js.Any])
+      inline def set527(value: String): Self = StObject.set(x, "527", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set527_CLASS(value: String): Self = StObject.set(x, "527_CLASS", value.asInstanceOf[js.Any])
+      inline def set527_CLASS(value: String): Self = StObject.set(x, "527_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set527_MESSAGE(value: String): Self = StObject.set(x, "527_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set527_MESSAGE(value: String): Self = StObject.set(x, "527_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set527_NAME(value: String): Self = StObject.set(x, "527_NAME", value.asInstanceOf[js.Any])
+      inline def set527_NAME(value: String): Self = StObject.set(x, "527_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA_TIMEOUT_OCCURRED(value: Double): Self = StObject.set(x, "A_TIMEOUT_OCCURRED", value.asInstanceOf[js.Any])
+      inline def setA_TIMEOUT_OCCURRED(value: Double): Self = StObject.set(x, "A_TIMEOUT_OCCURRED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONNECTION_TIMED_OUT(value: Double): Self = StObject.set(x, "CONNECTION_TIMED_OUT", value.asInstanceOf[js.Any])
+      inline def setCONNECTION_TIMED_OUT(value: Double): Self = StObject.set(x, "CONNECTION_TIMED_OUT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINVALID_SSL_CERTIFICATE(value: Double): Self = StObject.set(x, "INVALID_SSL_CERTIFICATE", value.asInstanceOf[js.Any])
+      inline def setINVALID_SSL_CERTIFICATE(value: Double): Self = StObject.set(x, "INVALID_SSL_CERTIFICATE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setORIGIN_IS_UNREACHABLE(value: Double): Self = StObject.set(x, "ORIGIN_IS_UNREACHABLE", value.asInstanceOf[js.Any])
+      inline def setORIGIN_IS_UNREACHABLE(value: Double): Self = StObject.set(x, "ORIGIN_IS_UNREACHABLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRAILGUN_ERROR(value: Double): Self = StObject.set(x, "RAILGUN_ERROR", value.asInstanceOf[js.Any])
+      inline def setRAILGUN_ERROR(value: Double): Self = StObject.set(x, "RAILGUN_ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSL_HANDSHAKE_FAILED(value: Double): Self = StObject.set(x, "SSL_HANDSHAKE_FAILED", value.asInstanceOf[js.Any])
+      inline def setSSL_HANDSHAKE_FAILED(value: Double): Self = StObject.set(x, "SSL_HANDSHAKE_FAILED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNKNOWN_ERROR(value: Double): Self = StObject.set(x, "UNKNOWN_ERROR", value.asInstanceOf[js.Any])
+      inline def setUNKNOWN_ERROR(value: Double): Self = StObject.set(x, "UNKNOWN_ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWEB_SERVER_IS_DOWN(value: Double): Self = StObject.set(x, "WEB_SERVER_IS_DOWN", value.asInstanceOf[js.Any])
+      inline def setWEB_SERVER_IS_DOWN(value: Double): Self = StObject.set(x, "WEB_SERVER_IS_DOWN", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2484,8 +2116,7 @@ object mod extends Shortcut {
   }
   object HttpStatusExtra {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cloudflare: HttpStatusCloudfare,
       iis: HttpStatusIis,
       nginx: HttpStatusNginx,
@@ -2495,20 +2126,15 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatusExtra]
     }
     
-    @scala.inline
-    implicit class HttpStatusExtraMutableBuilder[Self <: HttpStatusExtra] (val x: Self) extends AnyVal {
+    extension [Self <: HttpStatusExtra](x: Self) {
       
-      @scala.inline
-      def setCloudflare(value: HttpStatusCloudfare): Self = StObject.set(x, "cloudflare", value.asInstanceOf[js.Any])
+      inline def setCloudflare(value: HttpStatusCloudfare): Self = StObject.set(x, "cloudflare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIis(value: HttpStatusIis): Self = StObject.set(x, "iis", value.asInstanceOf[js.Any])
+      inline def setIis(value: HttpStatusIis): Self = StObject.set(x, "iis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNginx(value: HttpStatusNginx): Self = StObject.set(x, "nginx", value.asInstanceOf[js.Any])
+      inline def setNginx(value: HttpStatusNginx): Self = StObject.set(x, "nginx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnofficial(value: HttpStatusUnofficial): Self = StObject.set(x, "unofficial", value.asInstanceOf[js.Any])
+      inline def setUnofficial(value: HttpStatusUnofficial): Self = StObject.set(x, "unofficial", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2548,8 +2174,7 @@ object mod extends Shortcut {
   }
   object HttpStatusIis {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `440`: String,
       `440_CLASS`: String,
       `440_MESSAGE`: String,
@@ -2582,53 +2207,37 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatusIis]
     }
     
-    @scala.inline
-    implicit class HttpStatusIisMutableBuilder[Self <: HttpStatusIis] (val x: Self) extends AnyVal {
+    extension [Self <: HttpStatusIis](x: Self) {
       
-      @scala.inline
-      def set440(value: String): Self = StObject.set(x, "440", value.asInstanceOf[js.Any])
+      inline def set440(value: String): Self = StObject.set(x, "440", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set440_CLASS(value: String): Self = StObject.set(x, "440_CLASS", value.asInstanceOf[js.Any])
+      inline def set440_CLASS(value: String): Self = StObject.set(x, "440_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set440_MESSAGE(value: String): Self = StObject.set(x, "440_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set440_MESSAGE(value: String): Self = StObject.set(x, "440_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set440_NAME(value: String): Self = StObject.set(x, "440_NAME", value.asInstanceOf[js.Any])
+      inline def set440_NAME(value: String): Self = StObject.set(x, "440_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set449(value: String): Self = StObject.set(x, "449", value.asInstanceOf[js.Any])
+      inline def set449(value: String): Self = StObject.set(x, "449", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set449_CLASS(value: String): Self = StObject.set(x, "449_CLASS", value.asInstanceOf[js.Any])
+      inline def set449_CLASS(value: String): Self = StObject.set(x, "449_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set449_MESSAGE(value: String): Self = StObject.set(x, "449_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set449_MESSAGE(value: String): Self = StObject.set(x, "449_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set449_NAME(value: String): Self = StObject.set(x, "449_NAME", value.asInstanceOf[js.Any])
+      inline def set449_NAME(value: String): Self = StObject.set(x, "449_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set451(value: String): Self = StObject.set(x, "451", value.asInstanceOf[js.Any])
+      inline def set451(value: String): Self = StObject.set(x, "451", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set451_CLASS(value: String): Self = StObject.set(x, "451_CLASS", value.asInstanceOf[js.Any])
+      inline def set451_CLASS(value: String): Self = StObject.set(x, "451_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set451_MESSAGE(value: String): Self = StObject.set(x, "451_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set451_MESSAGE(value: String): Self = StObject.set(x, "451_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set451_NAME(value: String): Self = StObject.set(x, "451_NAME", value.asInstanceOf[js.Any])
+      inline def set451_NAME(value: String): Self = StObject.set(x, "451_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOGIN_TIME_OUT(value: Double): Self = StObject.set(x, "LOGIN_TIME_OUT", value.asInstanceOf[js.Any])
+      inline def setLOGIN_TIME_OUT(value: Double): Self = StObject.set(x, "LOGIN_TIME_OUT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREDIRECT(value: Double): Self = StObject.set(x, "REDIRECT", value.asInstanceOf[js.Any])
+      inline def setREDIRECT(value: Double): Self = StObject.set(x, "REDIRECT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRETRY_WITH(value: Double): Self = StObject.set(x, "RETRY_WITH", value.asInstanceOf[js.Any])
+      inline def setRETRY_WITH(value: Double): Self = StObject.set(x, "RETRY_WITH", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2698,8 +2307,7 @@ object mod extends Shortcut {
   }
   object HttpStatusNginx {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `444`: String,
       `444_CLASS`: String,
       `444_MESSAGE`: String,
@@ -2759,98 +2367,67 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatusNginx]
     }
     
-    @scala.inline
-    implicit class HttpStatusNginxMutableBuilder[Self <: HttpStatusNginx] (val x: Self) extends AnyVal {
+    extension [Self <: HttpStatusNginx](x: Self) {
       
-      @scala.inline
-      def set444(value: String): Self = StObject.set(x, "444", value.asInstanceOf[js.Any])
+      inline def set444(value: String): Self = StObject.set(x, "444", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set444_CLASS(value: String): Self = StObject.set(x, "444_CLASS", value.asInstanceOf[js.Any])
+      inline def set444_CLASS(value: String): Self = StObject.set(x, "444_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set444_MESSAGE(value: String): Self = StObject.set(x, "444_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set444_MESSAGE(value: String): Self = StObject.set(x, "444_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set444_NAME(value: String): Self = StObject.set(x, "444_NAME", value.asInstanceOf[js.Any])
+      inline def set444_NAME(value: String): Self = StObject.set(x, "444_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set494(value: String): Self = StObject.set(x, "494", value.asInstanceOf[js.Any])
+      inline def set494(value: String): Self = StObject.set(x, "494", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set494_CLASS(value: String): Self = StObject.set(x, "494_CLASS", value.asInstanceOf[js.Any])
+      inline def set494_CLASS(value: String): Self = StObject.set(x, "494_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set494_MESSAGE(value: String): Self = StObject.set(x, "494_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set494_MESSAGE(value: String): Self = StObject.set(x, "494_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set494_NAME(value: String): Self = StObject.set(x, "494_NAME", value.asInstanceOf[js.Any])
+      inline def set494_NAME(value: String): Self = StObject.set(x, "494_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set495(value: String): Self = StObject.set(x, "495", value.asInstanceOf[js.Any])
+      inline def set495(value: String): Self = StObject.set(x, "495", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set495_CLASS(value: String): Self = StObject.set(x, "495_CLASS", value.asInstanceOf[js.Any])
+      inline def set495_CLASS(value: String): Self = StObject.set(x, "495_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set495_MESSAGE(value: String): Self = StObject.set(x, "495_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set495_MESSAGE(value: String): Self = StObject.set(x, "495_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set495_NAME(value: String): Self = StObject.set(x, "495_NAME", value.asInstanceOf[js.Any])
+      inline def set495_NAME(value: String): Self = StObject.set(x, "495_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set496(value: String): Self = StObject.set(x, "496", value.asInstanceOf[js.Any])
+      inline def set496(value: String): Self = StObject.set(x, "496", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set496_CLASS(value: String): Self = StObject.set(x, "496_CLASS", value.asInstanceOf[js.Any])
+      inline def set496_CLASS(value: String): Self = StObject.set(x, "496_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set496_MESSAGE(value: String): Self = StObject.set(x, "496_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set496_MESSAGE(value: String): Self = StObject.set(x, "496_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set496_NAME(value: String): Self = StObject.set(x, "496_NAME", value.asInstanceOf[js.Any])
+      inline def set496_NAME(value: String): Self = StObject.set(x, "496_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set497(value: String): Self = StObject.set(x, "497", value.asInstanceOf[js.Any])
+      inline def set497(value: String): Self = StObject.set(x, "497", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set497_CLASS(value: String): Self = StObject.set(x, "497_CLASS", value.asInstanceOf[js.Any])
+      inline def set497_CLASS(value: String): Self = StObject.set(x, "497_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set497_MESSAGE(value: String): Self = StObject.set(x, "497_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set497_MESSAGE(value: String): Self = StObject.set(x, "497_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set497_NAME(value: String): Self = StObject.set(x, "497_NAME", value.asInstanceOf[js.Any])
+      inline def set497_NAME(value: String): Self = StObject.set(x, "497_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set499(value: String): Self = StObject.set(x, "499", value.asInstanceOf[js.Any])
+      inline def set499(value: String): Self = StObject.set(x, "499", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set499_CLASS(value: String): Self = StObject.set(x, "499_CLASS", value.asInstanceOf[js.Any])
+      inline def set499_CLASS(value: String): Self = StObject.set(x, "499_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set499_MESSAGE(value: String): Self = StObject.set(x, "499_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set499_MESSAGE(value: String): Self = StObject.set(x, "499_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set499_NAME(value: String): Self = StObject.set(x, "499_NAME", value.asInstanceOf[js.Any])
+      inline def set499_NAME(value: String): Self = StObject.set(x, "499_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLIENT_CLOSED_REQUEST(value: Double): Self = StObject.set(x, "CLIENT_CLOSED_REQUEST", value.asInstanceOf[js.Any])
+      inline def setCLIENT_CLOSED_REQUEST(value: Double): Self = StObject.set(x, "CLIENT_CLOSED_REQUEST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHTTP_REQUEST_SENT_TO_HTTPS_PORT(value: Double): Self = StObject.set(x, "HTTP_REQUEST_SENT_TO_HTTPS_PORT", value.asInstanceOf[js.Any])
+      inline def setHTTP_REQUEST_SENT_TO_HTTPS_PORT(value: Double): Self = StObject.set(x, "HTTP_REQUEST_SENT_TO_HTTPS_PORT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNO_RESPONSE(value: Double): Self = StObject.set(x, "NO_RESPONSE", value.asInstanceOf[js.Any])
+      inline def setNO_RESPONSE(value: Double): Self = StObject.set(x, "NO_RESPONSE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREQUEST_HEADER_TOO_LARGE(value: Double): Self = StObject.set(x, "REQUEST_HEADER_TOO_LARGE", value.asInstanceOf[js.Any])
+      inline def setREQUEST_HEADER_TOO_LARGE(value: Double): Self = StObject.set(x, "REQUEST_HEADER_TOO_LARGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSL_CERTIFICATE_ERROR(value: Double): Self = StObject.set(x, "SSL_CERTIFICATE_ERROR", value.asInstanceOf[js.Any])
+      inline def setSSL_CERTIFICATE_ERROR(value: Double): Self = StObject.set(x, "SSL_CERTIFICATE_ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSL_CERTIFICATE_REQUIRED(value: Double): Self = StObject.set(x, "SSL_CERTIFICATE_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setSSL_CERTIFICATE_REQUIRED(value: Double): Self = StObject.set(x, "SSL_CERTIFICATE_REQUIRED", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2940,8 +2517,7 @@ object mod extends Shortcut {
   }
   object HttpStatusUnofficial {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `103`: String,
       `103_CLASS`: String,
       `103_MESSAGE`: String,
@@ -3019,128 +2595,87 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HttpStatusUnofficial]
     }
     
-    @scala.inline
-    implicit class HttpStatusUnofficialMutableBuilder[Self <: HttpStatusUnofficial] (val x: Self) extends AnyVal {
+    extension [Self <: HttpStatusUnofficial](x: Self) {
       
-      @scala.inline
-      def set103(value: String): Self = StObject.set(x, "103", value.asInstanceOf[js.Any])
+      inline def set103(value: String): Self = StObject.set(x, "103", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set103_CLASS(value: String): Self = StObject.set(x, "103_CLASS", value.asInstanceOf[js.Any])
+      inline def set103_CLASS(value: String): Self = StObject.set(x, "103_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set103_MESSAGE(value: String): Self = StObject.set(x, "103_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set103_MESSAGE(value: String): Self = StObject.set(x, "103_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set103_NAME(value: String): Self = StObject.set(x, "103_NAME", value.asInstanceOf[js.Any])
+      inline def set103_NAME(value: String): Self = StObject.set(x, "103_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set420(value: String): Self = StObject.set(x, "420", value.asInstanceOf[js.Any])
+      inline def set420(value: String): Self = StObject.set(x, "420", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set420_CLASS(value: String): Self = StObject.set(x, "420_CLASS", value.asInstanceOf[js.Any])
+      inline def set420_CLASS(value: String): Self = StObject.set(x, "420_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set420_MESSAGE(value: String): Self = StObject.set(x, "420_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set420_MESSAGE(value: String): Self = StObject.set(x, "420_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set420_NAME(value: String): Self = StObject.set(x, "420_NAME", value.asInstanceOf[js.Any])
+      inline def set420_NAME(value: String): Self = StObject.set(x, "420_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set450(value: String): Self = StObject.set(x, "450", value.asInstanceOf[js.Any])
+      inline def set450(value: String): Self = StObject.set(x, "450", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set450_CLASS(value: String): Self = StObject.set(x, "450_CLASS", value.asInstanceOf[js.Any])
+      inline def set450_CLASS(value: String): Self = StObject.set(x, "450_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set450_MESSAGE(value: String): Self = StObject.set(x, "450_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set450_MESSAGE(value: String): Self = StObject.set(x, "450_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set450_NAME(value: String): Self = StObject.set(x, "450_NAME", value.asInstanceOf[js.Any])
+      inline def set450_NAME(value: String): Self = StObject.set(x, "450_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set498(value: String): Self = StObject.set(x, "498", value.asInstanceOf[js.Any])
+      inline def set498(value: String): Self = StObject.set(x, "498", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set498_CLASS(value: String): Self = StObject.set(x, "498_CLASS", value.asInstanceOf[js.Any])
+      inline def set498_CLASS(value: String): Self = StObject.set(x, "498_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set498_MESSAGE(value: String): Self = StObject.set(x, "498_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set498_MESSAGE(value: String): Self = StObject.set(x, "498_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set498_NAME(value: String): Self = StObject.set(x, "498_NAME", value.asInstanceOf[js.Any])
+      inline def set498_NAME(value: String): Self = StObject.set(x, "498_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set499(value: String): Self = StObject.set(x, "499", value.asInstanceOf[js.Any])
+      inline def set499(value: String): Self = StObject.set(x, "499", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set499_CLASS(value: String): Self = StObject.set(x, "499_CLASS", value.asInstanceOf[js.Any])
+      inline def set499_CLASS(value: String): Self = StObject.set(x, "499_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set499_MESSAGE(value: String): Self = StObject.set(x, "499_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set499_MESSAGE(value: String): Self = StObject.set(x, "499_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set499_NAME(value: String): Self = StObject.set(x, "499_NAME", value.asInstanceOf[js.Any])
+      inline def set499_NAME(value: String): Self = StObject.set(x, "499_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set509(value: String): Self = StObject.set(x, "509", value.asInstanceOf[js.Any])
+      inline def set509(value: String): Self = StObject.set(x, "509", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set509_CLASS(value: String): Self = StObject.set(x, "509_CLASS", value.asInstanceOf[js.Any])
+      inline def set509_CLASS(value: String): Self = StObject.set(x, "509_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set509_MESSAGE(value: String): Self = StObject.set(x, "509_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set509_MESSAGE(value: String): Self = StObject.set(x, "509_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set509_NAME(value: String): Self = StObject.set(x, "509_NAME", value.asInstanceOf[js.Any])
+      inline def set509_NAME(value: String): Self = StObject.set(x, "509_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set530(value: String): Self = StObject.set(x, "530", value.asInstanceOf[js.Any])
+      inline def set530(value: String): Self = StObject.set(x, "530", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set530_CLASS(value: String): Self = StObject.set(x, "530_CLASS", value.asInstanceOf[js.Any])
+      inline def set530_CLASS(value: String): Self = StObject.set(x, "530_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set530_MESSAGE(value: String): Self = StObject.set(x, "530_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set530_MESSAGE(value: String): Self = StObject.set(x, "530_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set530_NAME(value: String): Self = StObject.set(x, "530_NAME", value.asInstanceOf[js.Any])
+      inline def set530_NAME(value: String): Self = StObject.set(x, "530_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set598(value: String): Self = StObject.set(x, "598", value.asInstanceOf[js.Any])
+      inline def set598(value: String): Self = StObject.set(x, "598", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set598_CLASS(value: String): Self = StObject.set(x, "598_CLASS", value.asInstanceOf[js.Any])
+      inline def set598_CLASS(value: String): Self = StObject.set(x, "598_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set598_MESSAGE(value: String): Self = StObject.set(x, "598_MESSAGE", value.asInstanceOf[js.Any])
+      inline def set598_MESSAGE(value: String): Self = StObject.set(x, "598_MESSAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set598_NAME(value: String): Self = StObject.set(x, "598_NAME", value.asInstanceOf[js.Any])
+      inline def set598_NAME(value: String): Self = StObject.set(x, "598_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBANDWIDTH_LIMIT_EXCEEDED(value: Double): Self = StObject.set(x, "BANDWIDTH_LIMIT_EXCEEDED", value.asInstanceOf[js.Any])
+      inline def setBANDWIDTH_LIMIT_EXCEEDED(value: Double): Self = StObject.set(x, "BANDWIDTH_LIMIT_EXCEEDED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBLOCKED_BY_WINDOWS_PARENTAL_CONTROLS(value: Double): Self = StObject.set(x, "BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS", value.asInstanceOf[js.Any])
+      inline def setBLOCKED_BY_WINDOWS_PARENTAL_CONTROLS(value: Double): Self = StObject.set(x, "BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHECKPOINT(value: Double): Self = StObject.set(x, "CHECKPOINT", value.asInstanceOf[js.Any])
+      inline def setCHECKPOINT(value: Double): Self = StObject.set(x, "CHECKPOINT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setENHANCE_YOUR_CALM(value: Double): Self = StObject.set(x, "ENHANCE_YOUR_CALM", value.asInstanceOf[js.Any])
+      inline def setENHANCE_YOUR_CALM(value: Double): Self = StObject.set(x, "ENHANCE_YOUR_CALM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINVALID_TOKEN(value: Double): Self = StObject.set(x, "INVALID_TOKEN", value.asInstanceOf[js.Any])
+      inline def setINVALID_TOKEN(value: Double): Self = StObject.set(x, "INVALID_TOKEN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNETWORK_READ_TIMEOUT_ERROR(value: Double): Self = StObject.set(x, "NETWORK_READ_TIMEOUT_ERROR", value.asInstanceOf[js.Any])
+      inline def setNETWORK_READ_TIMEOUT_ERROR(value: Double): Self = StObject.set(x, "NETWORK_READ_TIMEOUT_ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSITE_IS_FROZEN(value: Double): Self = StObject.set(x, "SITE_IS_FROZEN", value.asInstanceOf[js.Any])
+      inline def setSITE_IS_FROZEN(value: Double): Self = StObject.set(x, "SITE_IS_FROZEN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOKEN_REQUIRED(value: Double): Self = StObject.set(x, "TOKEN_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setTOKEN_REQUIRED(value: Double): Self = StObject.set(x, "TOKEN_REQUIRED", value.asInstanceOf[js.Any])
     }
   }
   

@@ -15,28 +15,21 @@ trait MetricTokenAggregation extends StObject {
 }
 object MetricTokenAggregation {
   
-  @scala.inline
-  def apply(): MetricTokenAggregation = {
+  inline def apply(): MetricTokenAggregation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricTokenAggregation]
   }
   
-  @scala.inline
-  implicit class MetricTokenAggregationMutableBuilder[Self <: MetricTokenAggregation] (val x: Self) extends AnyVal {
+  extension [Self <: MetricTokenAggregation](x: Self) {
     
-    @scala.inline
-    def setEvent_type(value: String): Self = StObject.set(x, "event_type", value.asInstanceOf[js.Any])
+    inline def setEvent_type(value: String): Self = StObject.set(x, "event_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent_typeUndefined: Self = StObject.set(x, "event_type", js.undefined)
+    inline def setEvent_typeUndefined: Self = StObject.set(x, "event_type", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[MetricTokenAggregationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[MetricTokenAggregationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: MetricTokenAggregationResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: MetricTokenAggregationResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

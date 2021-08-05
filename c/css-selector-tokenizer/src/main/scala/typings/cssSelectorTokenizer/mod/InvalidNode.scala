@@ -17,20 +17,16 @@ trait InvalidNode
 }
 object InvalidNode {
   
-  @scala.inline
-  def apply(value: String): InvalidNode = {
+  inline def apply(value: String): InvalidNode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("invalid")
     __obj.asInstanceOf[InvalidNode]
   }
   
-  @scala.inline
-  implicit class InvalidNodeMutableBuilder[Self <: InvalidNode] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidNode](x: Self) {
     
-    @scala.inline
-    def setType(value: invalid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: invalid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

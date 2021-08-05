@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleGridColumnAlign extends StObject
 object styleGridColumnAlign {
   
-  @scala.inline
-  def styleGridColumnAlignCenter: `0` = 0.asInstanceOf[`0`]
+  inline def styleGridColumnAlignCenter: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleGridColumnAlignEnd: `1` = 1.asInstanceOf[`1`]
+  inline def styleGridColumnAlignEnd: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleGridColumnAlignNotSet: `4` = 4.asInstanceOf[`4`]
+  inline def styleGridColumnAlignNotSet: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def styleGridColumnAlignStart: `2` = 2.asInstanceOf[`2`]
+  inline def styleGridColumnAlignStart: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleGridColumnAlignStretch: `3` = 3.asInstanceOf[`3`]
+  inline def styleGridColumnAlignStretch: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleGridColumnAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleGridColumnAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

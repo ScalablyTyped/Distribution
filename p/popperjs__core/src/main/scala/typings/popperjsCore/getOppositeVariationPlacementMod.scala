@@ -11,6 +11,5 @@ object getOppositeVariationPlacementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(placement: Placement): Placement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(placement.asInstanceOf[js.Any]).asInstanceOf[Placement]
+  inline def default(placement: Placement): Placement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(placement.asInstanceOf[js.Any]).asInstanceOf[Placement]
 }

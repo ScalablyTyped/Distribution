@@ -247,44 +247,32 @@ object mod {
   }
   object HalogenCommonProps {
     
-    @scala.inline
-    def apply(): HalogenCommonProps = {
+    inline def apply(): HalogenCommonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HalogenCommonProps]
     }
     
-    @scala.inline
-    implicit class HalogenCommonPropsMutableBuilder[Self <: HalogenCommonProps] (val x: Self) extends AnyVal {
+    extension [Self <: HalogenCommonProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setVerticalAlign(value: VerticalAlign): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: VerticalAlign): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     }
   }
   
@@ -298,26 +286,20 @@ object mod {
   }
   object MarginLoaderProps {
     
-    @scala.inline
-    def apply[T](): MarginLoaderProps[T] = {
+    inline def apply[T](): MarginLoaderProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MarginLoaderProps[T]]
     }
     
-    @scala.inline
-    implicit class MarginLoaderPropsMutableBuilder[Self <: MarginLoaderProps[?], T] (val x: Self & MarginLoaderProps[T]) extends AnyVal {
+    extension [Self <: MarginLoaderProps[?], T](x: Self & MarginLoaderProps[T]) {
       
-      @scala.inline
-      def setMargin(value: T): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: T): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setSize(value: T): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: T): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -333,32 +315,24 @@ object mod {
   }
   object RadiusLoaderProps {
     
-    @scala.inline
-    def apply(): RadiusLoaderProps = {
+    inline def apply(): RadiusLoaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RadiusLoaderProps]
     }
     
-    @scala.inline
-    implicit class RadiusLoaderPropsMutableBuilder[Self <: RadiusLoaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: RadiusLoaderProps](x: Self) {
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -370,20 +344,16 @@ object mod {
   }
   object SizeLoaderProps {
     
-    @scala.inline
-    def apply(): SizeLoaderProps = {
+    inline def apply(): SizeLoaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SizeLoaderProps]
     }
     
-    @scala.inline
-    implicit class SizeLoaderPropsMutableBuilder[Self <: SizeLoaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: SizeLoaderProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -403,37 +373,26 @@ object mod {
   trait VerticalAlign extends StObject
   object VerticalAlign {
     
-    @scala.inline
-    def baseline: typings.halogen.halogenStrings.baseline = "baseline".asInstanceOf[typings.halogen.halogenStrings.baseline]
+    inline def baseline: typings.halogen.halogenStrings.baseline = "baseline".asInstanceOf[typings.halogen.halogenStrings.baseline]
     
-    @scala.inline
-    def bottom: typings.halogen.halogenStrings.bottom = "bottom".asInstanceOf[typings.halogen.halogenStrings.bottom]
+    inline def bottom: typings.halogen.halogenStrings.bottom = "bottom".asInstanceOf[typings.halogen.halogenStrings.bottom]
     
-    @scala.inline
-    def inherit: typings.halogen.halogenStrings.inherit = "inherit".asInstanceOf[typings.halogen.halogenStrings.inherit]
+    inline def inherit: typings.halogen.halogenStrings.inherit = "inherit".asInstanceOf[typings.halogen.halogenStrings.inherit]
     
-    @scala.inline
-    def initial: typings.halogen.halogenStrings.initial = "initial".asInstanceOf[typings.halogen.halogenStrings.initial]
+    inline def initial: typings.halogen.halogenStrings.initial = "initial".asInstanceOf[typings.halogen.halogenStrings.initial]
     
-    @scala.inline
-    def length: typings.halogen.halogenStrings.length = "length".asInstanceOf[typings.halogen.halogenStrings.length]
+    inline def length: typings.halogen.halogenStrings.length = "length".asInstanceOf[typings.halogen.halogenStrings.length]
     
-    @scala.inline
-    def middle: typings.halogen.halogenStrings.middle = "middle".asInstanceOf[typings.halogen.halogenStrings.middle]
+    inline def middle: typings.halogen.halogenStrings.middle = "middle".asInstanceOf[typings.halogen.halogenStrings.middle]
     
-    @scala.inline
-    def sub: typings.halogen.halogenStrings.sub = "sub".asInstanceOf[typings.halogen.halogenStrings.sub]
+    inline def sub: typings.halogen.halogenStrings.sub = "sub".asInstanceOf[typings.halogen.halogenStrings.sub]
     
-    @scala.inline
-    def `super`: typings.halogen.halogenStrings.`super` = "super".asInstanceOf[typings.halogen.halogenStrings.`super`]
+    inline def `super`: typings.halogen.halogenStrings.`super` = "super".asInstanceOf[typings.halogen.halogenStrings.`super`]
     
-    @scala.inline
-    def `text-bottom`: typings.halogen.halogenStrings.`text-bottom` = "text-bottom".asInstanceOf[typings.halogen.halogenStrings.`text-bottom`]
+    inline def `text-bottom`: typings.halogen.halogenStrings.`text-bottom` = "text-bottom".asInstanceOf[typings.halogen.halogenStrings.`text-bottom`]
     
-    @scala.inline
-    def `text-top`: typings.halogen.halogenStrings.`text-top` = "text-top".asInstanceOf[typings.halogen.halogenStrings.`text-top`]
+    inline def `text-top`: typings.halogen.halogenStrings.`text-top` = "text-top".asInstanceOf[typings.halogen.halogenStrings.`text-top`]
     
-    @scala.inline
-    def top: typings.halogen.halogenStrings.top = "top".asInstanceOf[typings.halogen.halogenStrings.top]
+    inline def top: typings.halogen.halogenStrings.top = "top".asInstanceOf[typings.halogen.halogenStrings.top]
   }
 }

@@ -18,17 +18,17 @@ object infiniteCacheMod {
   class InfiniteCache protected () extends RowNodeCache[InfiniteBlock, InfiniteCacheParams] {
     def this(params: InfiniteCacheParams) = this()
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def createBlock(blockNumber: js.Any): js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
     def getRow(rowIndex: Double, dontCreatePage: Boolean): RowNode = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
     /* private */ def insertItems(block: js.Any, indexToInsert: js.Any, items: js.Any): js.Any = js.native
     
@@ -49,8 +49,7 @@ object infiniteCacheMod {
   }
   object InfiniteCacheParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blockSize: Double,
       datasource: IDatasource,
       dynamicRowHeight: Boolean,
@@ -68,11 +67,9 @@ object infiniteCacheMod {
       __obj.asInstanceOf[InfiniteCacheParams]
     }
     
-    @scala.inline
-    implicit class InfiniteCacheParamsMutableBuilder[Self <: InfiniteCacheParams] (val x: Self) extends AnyVal {
+    extension [Self <: InfiniteCacheParams](x: Self) {
       
-      @scala.inline
-      def setDatasource(value: IDatasource): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
+      inline def setDatasource(value: IDatasource): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
     }
   }
 }

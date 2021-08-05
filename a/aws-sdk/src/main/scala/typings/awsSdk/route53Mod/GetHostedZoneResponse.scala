@@ -23,31 +23,23 @@ trait GetHostedZoneResponse extends StObject {
 }
 object GetHostedZoneResponse {
   
-  @scala.inline
-  def apply(HostedZone: HostedZone): GetHostedZoneResponse = {
+  inline def apply(HostedZone: HostedZone): GetHostedZoneResponse = {
     val __obj = js.Dynamic.literal(HostedZone = HostedZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHostedZoneResponse]
   }
   
-  @scala.inline
-  implicit class GetHostedZoneResponseMutableBuilder[Self <: GetHostedZoneResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetHostedZoneResponse](x: Self) {
     
-    @scala.inline
-    def setDelegationSet(value: DelegationSet): Self = StObject.set(x, "DelegationSet", value.asInstanceOf[js.Any])
+    inline def setDelegationSet(value: DelegationSet): Self = StObject.set(x, "DelegationSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegationSetUndefined: Self = StObject.set(x, "DelegationSet", js.undefined)
+    inline def setDelegationSetUndefined: Self = StObject.set(x, "DelegationSet", js.undefined)
     
-    @scala.inline
-    def setHostedZone(value: HostedZone): Self = StObject.set(x, "HostedZone", value.asInstanceOf[js.Any])
+    inline def setHostedZone(value: HostedZone): Self = StObject.set(x, "HostedZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCs(value: VPCs): Self = StObject.set(x, "VPCs", value.asInstanceOf[js.Any])
+    inline def setVPCs(value: VPCs): Self = StObject.set(x, "VPCs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCsUndefined: Self = StObject.set(x, "VPCs", js.undefined)
+    inline def setVPCsUndefined: Self = StObject.set(x, "VPCs", js.undefined)
     
-    @scala.inline
-    def setVPCsVarargs(value: VPC*): Self = StObject.set(x, "VPCs", js.Array(value :_*))
+    inline def setVPCsVarargs(value: VPC*): Self = StObject.set(x, "VPCs", js.Array(value :_*))
   }
 }

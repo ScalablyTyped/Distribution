@@ -13,19 +13,15 @@ trait ConfigSnapshotDeliveryProperties extends StObject {
 }
 object ConfigSnapshotDeliveryProperties {
   
-  @scala.inline
-  def apply(): ConfigSnapshotDeliveryProperties = {
+  inline def apply(): ConfigSnapshotDeliveryProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigSnapshotDeliveryProperties]
   }
   
-  @scala.inline
-  implicit class ConfigSnapshotDeliveryPropertiesMutableBuilder[Self <: ConfigSnapshotDeliveryProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigSnapshotDeliveryProperties](x: Self) {
     
-    @scala.inline
-    def setDeliveryFrequency(value: MaximumExecutionFrequency): Self = StObject.set(x, "deliveryFrequency", value.asInstanceOf[js.Any])
+    inline def setDeliveryFrequency(value: MaximumExecutionFrequency): Self = StObject.set(x, "deliveryFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryFrequencyUndefined: Self = StObject.set(x, "deliveryFrequency", js.undefined)
+    inline def setDeliveryFrequencyUndefined: Self = StObject.set(x, "deliveryFrequency", js.undefined)
   }
 }

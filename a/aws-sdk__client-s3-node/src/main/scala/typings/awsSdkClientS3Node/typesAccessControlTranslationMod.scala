@@ -16,17 +16,14 @@ object typesAccessControlTranslationMod {
   }
   object AccessControlTranslation {
     
-    @scala.inline
-    def apply(Owner: Destination | String): AccessControlTranslation = {
+    inline def apply(Owner: Destination | String): AccessControlTranslation = {
       val __obj = js.Dynamic.literal(Owner = Owner.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessControlTranslation]
     }
     
-    @scala.inline
-    implicit class AccessControlTranslationMutableBuilder[Self <: AccessControlTranslation] (val x: Self) extends AnyVal {
+    extension [Self <: AccessControlTranslation](x: Self) {
       
-      @scala.inline
-      def setOwner(value: Destination | String): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: Destination | String): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     }
   }
   

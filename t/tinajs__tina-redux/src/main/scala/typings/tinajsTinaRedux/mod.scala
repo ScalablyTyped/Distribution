@@ -28,23 +28,18 @@ object mod {
   }
   object HOC {
     
-    @scala.inline
-    def apply(methods: js.Object, onLoad: () => Unit, onUnload: () => Unit): HOC = {
+    inline def apply(methods: js.Object, onLoad: () => Unit, onUnload: () => Unit): HOC = {
       val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any], onLoad = js.Any.fromFunction0(onLoad), onUnload = js.Any.fromFunction0(onUnload))
       __obj.asInstanceOf[HOC]
     }
     
-    @scala.inline
-    implicit class HOCMutableBuilder[Self <: HOC] (val x: Self) extends AnyVal {
+    extension [Self <: HOC](x: Self) {
       
-      @scala.inline
-      def setMethods(value: js.Object): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Object): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUnload(value: () => Unit): Self = StObject.set(x, "onUnload", js.Any.fromFunction0(value))
+      inline def setOnUnload(value: () => Unit): Self = StObject.set(x, "onUnload", js.Any.fromFunction0(value))
     }
   }
   

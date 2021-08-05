@@ -13,19 +13,15 @@ trait GetOnPremisesInstanceOutput extends StObject {
 }
 object GetOnPremisesInstanceOutput {
   
-  @scala.inline
-  def apply(): GetOnPremisesInstanceOutput = {
+  inline def apply(): GetOnPremisesInstanceOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOnPremisesInstanceOutput]
   }
   
-  @scala.inline
-  implicit class GetOnPremisesInstanceOutputMutableBuilder[Self <: GetOnPremisesInstanceOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetOnPremisesInstanceOutput](x: Self) {
     
-    @scala.inline
-    def setInstanceInfo(value: InstanceInfo): Self = StObject.set(x, "instanceInfo", value.asInstanceOf[js.Any])
+    inline def setInstanceInfo(value: InstanceInfo): Self = StObject.set(x, "instanceInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceInfoUndefined: Self = StObject.set(x, "instanceInfo", js.undefined)
+    inline def setInstanceInfoUndefined: Self = StObject.set(x, "instanceInfo", js.undefined)
   }
 }

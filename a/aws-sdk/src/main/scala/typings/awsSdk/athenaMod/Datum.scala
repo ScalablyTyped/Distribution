@@ -13,19 +13,15 @@ trait Datum extends StObject {
 }
 object Datum {
   
-  @scala.inline
-  def apply(): Datum = {
+  inline def apply(): Datum = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Datum]
   }
   
-  @scala.inline
-  implicit class DatumMutableBuilder[Self <: Datum] (val x: Self) extends AnyVal {
+  extension [Self <: Datum](x: Self) {
     
-    @scala.inline
-    def setVarCharValue(value: datumString): Self = StObject.set(x, "VarCharValue", value.asInstanceOf[js.Any])
+    inline def setVarCharValue(value: datumString): Self = StObject.set(x, "VarCharValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVarCharValueUndefined: Self = StObject.set(x, "VarCharValue", js.undefined)
+    inline def setVarCharValueUndefined: Self = StObject.set(x, "VarCharValue", js.undefined)
   }
 }

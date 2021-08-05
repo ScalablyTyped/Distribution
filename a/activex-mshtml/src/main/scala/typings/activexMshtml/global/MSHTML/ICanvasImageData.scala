@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.ICanvasImageData")
 @js.native
-class ICanvasImageData protected ()
+/* private */ class ICanvasImageData ()
   extends StObject
      with typings.activexMshtml.MSHTML.ICanvasImageData {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.ICanvasImageData_typekey")
   var MSHTMLDotICanvasImageData_typekey: typings.activexMshtml.MSHTML.ICanvasImageData = js.native
   

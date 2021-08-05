@@ -16,16 +16,13 @@ trait IMouseEvent[T]
 }
 object IMouseEvent {
   
-  @scala.inline
-  def apply[T](name: mousedown | mousemove | mouseup, source: T): IMouseEvent[T] = {
+  inline def apply[T](name: mousedown | mousemove | mouseup, source: T): IMouseEvent[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMouseEvent[T]]
   }
   
-  @scala.inline
-  implicit class IMouseEventMutableBuilder[Self <: IMouseEvent[?], T] (val x: Self & IMouseEvent[T]) extends AnyVal {
+  extension [Self <: IMouseEvent[?], T](x: Self & IMouseEvent[T]) {
     
-    @scala.inline
-    def setName(value: mousedown | mousemove | mouseup): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: mousedown | mousemove | mouseup): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

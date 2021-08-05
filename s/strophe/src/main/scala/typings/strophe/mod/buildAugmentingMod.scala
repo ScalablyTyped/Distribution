@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object buildAugmentingMod {
   
-  @scala.inline
-  def apply(name: String): Builder = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Builder]
-  @scala.inline
-  def apply(name: String, attrs: js.Any): Builder = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Builder]
+  inline def apply(name: String): Builder = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Builder]
+  inline def apply(name: String, attrs: js.Any): Builder = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Builder]
   
   @JSImport("$build", JSImport.Namespace)
   @js.native

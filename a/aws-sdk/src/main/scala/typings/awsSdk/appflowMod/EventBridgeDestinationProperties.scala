@@ -15,23 +15,18 @@ trait EventBridgeDestinationProperties extends StObject {
 }
 object EventBridgeDestinationProperties {
   
-  @scala.inline
-  def apply(`object`: Object): EventBridgeDestinationProperties = {
+  inline def apply(`object`: Object): EventBridgeDestinationProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventBridgeDestinationProperties]
   }
   
-  @scala.inline
-  implicit class EventBridgeDestinationPropertiesMutableBuilder[Self <: EventBridgeDestinationProperties] (val x: Self) extends AnyVal {
+  extension [Self <: EventBridgeDestinationProperties](x: Self) {
     
-    @scala.inline
-    def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = StObject.set(x, "errorHandlingConfig", value.asInstanceOf[js.Any])
+    inline def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = StObject.set(x, "errorHandlingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorHandlingConfigUndefined: Self = StObject.set(x, "errorHandlingConfig", js.undefined)
+    inline def setErrorHandlingConfigUndefined: Self = StObject.set(x, "errorHandlingConfig", js.undefined)
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

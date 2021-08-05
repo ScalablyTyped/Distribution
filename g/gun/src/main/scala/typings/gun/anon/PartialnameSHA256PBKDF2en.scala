@@ -26,49 +26,35 @@ trait PartialnameSHA256PBKDF2en extends StObject {
 }
 object PartialnameSHA256PBKDF2en {
   
-  @scala.inline
-  def apply(): PartialnameSHA256PBKDF2en = {
+  inline def apply(): PartialnameSHA256PBKDF2en = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialnameSHA256PBKDF2en]
   }
   
-  @scala.inline
-  implicit class PartialnameSHA256PBKDF2enMutableBuilder[Self <: PartialnameSHA256PBKDF2en] (val x: Self) extends AnyVal {
+  extension [Self <: PartialnameSHA256PBKDF2en](x: Self) {
     
-    @scala.inline
-    def setEncode(value: base64 | base32 | base16): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+    inline def setEncode(value: base64 | base32 | base16): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+    inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+    inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
-    @scala.inline
-    def setLength(value: js.Any): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: js.Any): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setName(value: `SHA-256` | PBKDF2): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: `SHA-256` | PBKDF2): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSalt(value: js.Any): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+    inline def setSalt(value: js.Any): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
+    inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
   }
 }

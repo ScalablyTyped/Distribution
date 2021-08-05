@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.SlideShowTransition")
 @js.native
-class SlideShowTransition protected ()
+/* private */ class SlideShowTransition ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.SlideShowTransition {
   
@@ -40,7 +40,7 @@ class SlideShowTransition protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.SlideShowTransition_typekey")
   var PowerPointDotSlideShowTransition_typekey: typings.activexPowerpoint.PowerPoint.SlideShowTransition = js.native
   

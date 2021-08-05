@@ -13,16 +13,13 @@ trait ReferenceContext extends StObject {
 }
 object ReferenceContext {
   
-  @scala.inline
-  def apply(includeDeclaration: Boolean): ReferenceContext = {
+  inline def apply(includeDeclaration: Boolean): ReferenceContext = {
     val __obj = js.Dynamic.literal(includeDeclaration = includeDeclaration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceContext]
   }
   
-  @scala.inline
-  implicit class ReferenceContextMutableBuilder[Self <: ReferenceContext] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceContext](x: Self) {
     
-    @scala.inline
-    def setIncludeDeclaration(value: Boolean): Self = StObject.set(x, "includeDeclaration", value.asInstanceOf[js.Any])
+    inline def setIncludeDeclaration(value: Boolean): Self = StObject.set(x, "includeDeclaration", value.asInstanceOf[js.Any])
   }
 }

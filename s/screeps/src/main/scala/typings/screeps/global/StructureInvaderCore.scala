@@ -99,6 +99,5 @@ class StructureInvaderCore protected ()
 }
 object StructureInvaderCore {
   
-  @scala.inline
-  def apply: StructureInvaderCoreConstructor = js.Dynamic.global.selectDynamic("StructureInvaderCore").asInstanceOf[StructureInvaderCoreConstructor]
+  inline def apply: StructureInvaderCoreConstructor = js.Dynamic.global.selectDynamic("StructureInvaderCore").asInstanceOf[StructureInvaderCoreConstructor]
 }

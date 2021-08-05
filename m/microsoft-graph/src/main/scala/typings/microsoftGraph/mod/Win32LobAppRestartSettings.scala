@@ -17,34 +17,25 @@ trait Win32LobAppRestartSettings extends StObject {
 }
 object Win32LobAppRestartSettings {
   
-  @scala.inline
-  def apply(): Win32LobAppRestartSettings = {
+  inline def apply(): Win32LobAppRestartSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Win32LobAppRestartSettings]
   }
   
-  @scala.inline
-  implicit class Win32LobAppRestartSettingsMutableBuilder[Self <: Win32LobAppRestartSettings] (val x: Self) extends AnyVal {
+  extension [Self <: Win32LobAppRestartSettings](x: Self) {
     
-    @scala.inline
-    def setCountdownDisplayBeforeRestartInMinutes(value: Double): Self = StObject.set(x, "countdownDisplayBeforeRestartInMinutes", value.asInstanceOf[js.Any])
+    inline def setCountdownDisplayBeforeRestartInMinutes(value: Double): Self = StObject.set(x, "countdownDisplayBeforeRestartInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountdownDisplayBeforeRestartInMinutesUndefined: Self = StObject.set(x, "countdownDisplayBeforeRestartInMinutes", js.undefined)
+    inline def setCountdownDisplayBeforeRestartInMinutesUndefined: Self = StObject.set(x, "countdownDisplayBeforeRestartInMinutes", js.undefined)
     
-    @scala.inline
-    def setGracePeriodInMinutes(value: Double): Self = StObject.set(x, "gracePeriodInMinutes", value.asInstanceOf[js.Any])
+    inline def setGracePeriodInMinutes(value: Double): Self = StObject.set(x, "gracePeriodInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGracePeriodInMinutesUndefined: Self = StObject.set(x, "gracePeriodInMinutes", js.undefined)
+    inline def setGracePeriodInMinutesUndefined: Self = StObject.set(x, "gracePeriodInMinutes", js.undefined)
     
-    @scala.inline
-    def setRestartNotificationSnoozeDurationInMinutes(value: NullableOption[Double]): Self = StObject.set(x, "restartNotificationSnoozeDurationInMinutes", value.asInstanceOf[js.Any])
+    inline def setRestartNotificationSnoozeDurationInMinutes(value: NullableOption[Double]): Self = StObject.set(x, "restartNotificationSnoozeDurationInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartNotificationSnoozeDurationInMinutesNull: Self = StObject.set(x, "restartNotificationSnoozeDurationInMinutes", null)
+    inline def setRestartNotificationSnoozeDurationInMinutesNull: Self = StObject.set(x, "restartNotificationSnoozeDurationInMinutes", null)
     
-    @scala.inline
-    def setRestartNotificationSnoozeDurationInMinutesUndefined: Self = StObject.set(x, "restartNotificationSnoozeDurationInMinutes", js.undefined)
+    inline def setRestartNotificationSnoozeDurationInMinutesUndefined: Self = StObject.set(x, "restartNotificationSnoozeDurationInMinutes", js.undefined)
   }
 }

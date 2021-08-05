@@ -13,22 +13,17 @@ trait JobNodeDetails extends StObject {
 }
 object JobNodeDetails {
   
-  @scala.inline
-  def apply(): JobNodeDetails = {
+  inline def apply(): JobNodeDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobNodeDetails]
   }
   
-  @scala.inline
-  implicit class JobNodeDetailsMutableBuilder[Self <: JobNodeDetails] (val x: Self) extends AnyVal {
+  extension [Self <: JobNodeDetails](x: Self) {
     
-    @scala.inline
-    def setJobRuns(value: JobRunList): Self = StObject.set(x, "JobRuns", value.asInstanceOf[js.Any])
+    inline def setJobRuns(value: JobRunList): Self = StObject.set(x, "JobRuns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobRunsUndefined: Self = StObject.set(x, "JobRuns", js.undefined)
+    inline def setJobRunsUndefined: Self = StObject.set(x, "JobRuns", js.undefined)
     
-    @scala.inline
-    def setJobRunsVarargs(value: JobRun*): Self = StObject.set(x, "JobRuns", js.Array(value :_*))
+    inline def setJobRunsVarargs(value: JobRun*): Self = StObject.set(x, "JobRuns", js.Array(value :_*))
   }
 }

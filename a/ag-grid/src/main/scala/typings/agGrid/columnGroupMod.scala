@@ -28,13 +28,13 @@ object columnGroupMod {
     
     def checkLeft(): Unit = js.native
     
-    var children: js.Any = js.native
+    /* private */ var children: js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
     /* private */ def createAgEvent(`type`: js.Any): js.Any = js.native
     
-    var displayedChildren: js.Any = js.native
+    /* private */ var displayedChildren: js.Any = js.native
     
     def getChildren(): js.Array[ColumnGroupChild] = js.native
     
@@ -52,13 +52,13 @@ object columnGroupMod {
     
     def getOriginalColumnGroup(): OriginalColumnGroup = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
     var gridOptionsWrapper: GridOptionsWrapper = js.native
     
-    var groupId: js.Any = js.native
+    /* private */ var groupId: js.Any = js.native
     
-    var instanceId: js.Any = js.native
+    /* private */ var instanceId: js.Any = js.native
     
     def isChildInThisGroupDeepSearch(wantedChild: ColumnGroupChild): Boolean = js.native
     
@@ -68,15 +68,15 @@ object columnGroupMod {
     
     def isPadding(): Boolean = js.native
     
-    var left: js.Any = js.native
+    /* private */ var left: js.Any = js.native
     
-    var localEventService: js.Any = js.native
+    /* private */ var localEventService: js.Any = js.native
     
-    var oldLeft: js.Any = js.native
+    /* private */ var oldLeft: js.Any = js.native
     
-    var originalColumnGroup: js.Any = js.native
+    /* private */ var originalColumnGroup: js.Any = js.native
     
-    var parent: js.Any = js.native
+    /* private */ var parent: js.Any = js.native
     
     def reset(): Unit = js.native
     
@@ -94,28 +94,23 @@ object columnGroupMod {
     @JSImport("ag-grid/dist/lib/entities/columnGroup", "ColumnGroup.EVENT_DISPLAYED_CHILDREN_CHANGED")
     @js.native
     def EVENT_DISPLAYED_CHILDREN_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_DISPLAYED_CHILDREN_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_DISPLAYED_CHILDREN_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_DISPLAYED_CHILDREN_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_DISPLAYED_CHILDREN_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/columnGroup", "ColumnGroup.EVENT_LEFT_CHANGED")
     @js.native
     def EVENT_LEFT_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_LEFT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_LEFT_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_LEFT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_LEFT_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/columnGroup", "ColumnGroup.HEADER_GROUP_SHOW_CLOSED")
     @js.native
     def HEADER_GROUP_SHOW_CLOSED: String = js.native
-    @scala.inline
-    def HEADER_GROUP_SHOW_CLOSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEADER_GROUP_SHOW_CLOSED")(x.asInstanceOf[js.Any])
+    inline def HEADER_GROUP_SHOW_CLOSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEADER_GROUP_SHOW_CLOSED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/columnGroup", "ColumnGroup.HEADER_GROUP_SHOW_OPEN")
     @js.native
     def HEADER_GROUP_SHOW_OPEN: String = js.native
-    @scala.inline
-    def HEADER_GROUP_SHOW_OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEADER_GROUP_SHOW_OPEN")(x.asInstanceOf[js.Any])
+    inline def HEADER_GROUP_SHOW_OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEADER_GROUP_SHOW_OPEN")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def createUniqueId(groupId: String, instanceId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createUniqueId")(groupId.asInstanceOf[js.Any], instanceId.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def createUniqueId(groupId: String, instanceId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createUniqueId")(groupId.asInstanceOf[js.Any], instanceId.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

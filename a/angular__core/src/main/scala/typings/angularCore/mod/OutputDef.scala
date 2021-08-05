@@ -20,32 +20,24 @@ trait OutputDef extends StObject {
 }
 object OutputDef {
   
-  @scala.inline
-  def apply(eventName: String, `type`: OutputType): OutputDef = {
+  inline def apply(eventName: String, `type`: OutputType): OutputDef = {
     val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], propName = null, target = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputDef]
   }
   
-  @scala.inline
-  implicit class OutputDefMutableBuilder[Self <: OutputDef] (val x: Self) extends AnyVal {
+  extension [Self <: OutputDef](x: Self) {
     
-    @scala.inline
-    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropName(value: String): Self = StObject.set(x, "propName", value.asInstanceOf[js.Any])
+    inline def setPropName(value: String): Self = StObject.set(x, "propName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropNameNull: Self = StObject.set(x, "propName", null)
+    inline def setPropNameNull: Self = StObject.set(x, "propName", null)
     
-    @scala.inline
-    def setTarget(value: window | document | body | component): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: window | document | body | component): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNull: Self = StObject.set(x, "target", null)
+    inline def setTargetNull: Self = StObject.set(x, "target", null)
     
-    @scala.inline
-    def setType(value: OutputType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OutputType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

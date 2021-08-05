@@ -12,25 +12,19 @@ trait Dynamic extends StObject {
 }
 object Dynamic {
   
-  @scala.inline
-  def apply(): Dynamic = {
+  inline def apply(): Dynamic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dynamic]
   }
   
-  @scala.inline
-  implicit class DynamicMutableBuilder[Self <: Dynamic] (val x: Self) extends AnyVal {
+  extension [Self <: Dynamic](x: Self) {
     
-    @scala.inline
-    def setCallback(value: /* args */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: /* args */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
+    inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
+    inline def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait DescribeNotificationSubscriptionsResponse extends StObject {
 }
 object DescribeNotificationSubscriptionsResponse {
   
-  @scala.inline
-  def apply(): DescribeNotificationSubscriptionsResponse = {
+  inline def apply(): DescribeNotificationSubscriptionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeNotificationSubscriptionsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeNotificationSubscriptionsResponseMutableBuilder[Self <: DescribeNotificationSubscriptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNotificationSubscriptionsResponse](x: Self) {
     
-    @scala.inline
-    def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setSubscriptions(value: SubscriptionList): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
+    inline def setSubscriptions(value: SubscriptionList): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
+    inline def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
     
-    @scala.inline
-    def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "Subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "Subscriptions", js.Array(value :_*))
   }
 }

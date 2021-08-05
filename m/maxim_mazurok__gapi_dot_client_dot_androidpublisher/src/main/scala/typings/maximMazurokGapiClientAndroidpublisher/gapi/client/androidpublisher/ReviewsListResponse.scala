@@ -17,34 +17,25 @@ trait ReviewsListResponse extends StObject {
 }
 object ReviewsListResponse {
   
-  @scala.inline
-  def apply(): ReviewsListResponse = {
+  inline def apply(): ReviewsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReviewsListResponse]
   }
   
-  @scala.inline
-  implicit class ReviewsListResponseMutableBuilder[Self <: ReviewsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReviewsListResponse](x: Self) {
     
-    @scala.inline
-    def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
+    inline def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
+    inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
-    @scala.inline
-    def setReviews(value: js.Array[Review]): Self = StObject.set(x, "reviews", value.asInstanceOf[js.Any])
+    inline def setReviews(value: js.Array[Review]): Self = StObject.set(x, "reviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewsUndefined: Self = StObject.set(x, "reviews", js.undefined)
+    inline def setReviewsUndefined: Self = StObject.set(x, "reviews", js.undefined)
     
-    @scala.inline
-    def setReviewsVarargs(value: Review*): Self = StObject.set(x, "reviews", js.Array(value :_*))
+    inline def setReviewsVarargs(value: Review*): Self = StObject.set(x, "reviews", js.Array(value :_*))
     
-    @scala.inline
-    def setTokenPagination(value: TokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+    inline def setTokenPagination(value: TokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
+    inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
   }
 }

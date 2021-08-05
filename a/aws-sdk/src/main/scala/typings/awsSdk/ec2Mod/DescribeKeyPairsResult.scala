@@ -13,22 +13,17 @@ trait DescribeKeyPairsResult extends StObject {
 }
 object DescribeKeyPairsResult {
   
-  @scala.inline
-  def apply(): DescribeKeyPairsResult = {
+  inline def apply(): DescribeKeyPairsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeKeyPairsResult]
   }
   
-  @scala.inline
-  implicit class DescribeKeyPairsResultMutableBuilder[Self <: DescribeKeyPairsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeKeyPairsResult](x: Self) {
     
-    @scala.inline
-    def setKeyPairs(value: KeyPairList): Self = StObject.set(x, "KeyPairs", value.asInstanceOf[js.Any])
+    inline def setKeyPairs(value: KeyPairList): Self = StObject.set(x, "KeyPairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairsUndefined: Self = StObject.set(x, "KeyPairs", js.undefined)
+    inline def setKeyPairsUndefined: Self = StObject.set(x, "KeyPairs", js.undefined)
     
-    @scala.inline
-    def setKeyPairsVarargs(value: KeyPairInfo*): Self = StObject.set(x, "KeyPairs", js.Array(value :_*))
+    inline def setKeyPairsVarargs(value: KeyPairInfo*): Self = StObject.set(x, "KeyPairs", js.Array(value :_*))
   }
 }

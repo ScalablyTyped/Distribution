@@ -13,16 +13,13 @@ trait CreateVirtualMFADeviceResponse extends StObject {
 }
 object CreateVirtualMFADeviceResponse {
   
-  @scala.inline
-  def apply(VirtualMFADevice: VirtualMFADevice): CreateVirtualMFADeviceResponse = {
+  inline def apply(VirtualMFADevice: VirtualMFADevice): CreateVirtualMFADeviceResponse = {
     val __obj = js.Dynamic.literal(VirtualMFADevice = VirtualMFADevice.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVirtualMFADeviceResponse]
   }
   
-  @scala.inline
-  implicit class CreateVirtualMFADeviceResponseMutableBuilder[Self <: CreateVirtualMFADeviceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVirtualMFADeviceResponse](x: Self) {
     
-    @scala.inline
-    def setVirtualMFADevice(value: VirtualMFADevice): Self = StObject.set(x, "VirtualMFADevice", value.asInstanceOf[js.Any])
+    inline def setVirtualMFADevice(value: VirtualMFADevice): Self = StObject.set(x, "VirtualMFADevice", value.asInstanceOf[js.Any])
   }
 }

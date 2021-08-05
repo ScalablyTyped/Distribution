@@ -11,8 +11,7 @@ object ttyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isatty(fd: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isatty")(fd.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isatty(fd: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isatty")(fd.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @js.native
   trait ReadStream extends Socket {

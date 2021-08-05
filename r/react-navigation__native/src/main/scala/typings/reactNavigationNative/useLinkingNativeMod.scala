@@ -14,8 +14,7 @@ object useLinkingNativeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     ref: RefObject[NavigationContainerRef],
     hasEnabledPrefixesConfigGetInitialURLSubscribeGetStateFromPath: LinkingOptions
   ): `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], hasEnabledPrefixesConfigGetInitialURLSubscribeGetStateFromPath.asInstanceOf[js.Any])).asInstanceOf[`0`]

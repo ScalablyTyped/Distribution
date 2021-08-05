@@ -14,28 +14,21 @@ trait SendWorkerMessagesRequest extends StObject {
 }
 object SendWorkerMessagesRequest {
   
-  @scala.inline
-  def apply(): SendWorkerMessagesRequest = {
+  inline def apply(): SendWorkerMessagesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendWorkerMessagesRequest]
   }
   
-  @scala.inline
-  implicit class SendWorkerMessagesRequestMutableBuilder[Self <: SendWorkerMessagesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendWorkerMessagesRequest](x: Self) {
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setWorkerMessages(value: js.Array[WorkerMessage]): Self = StObject.set(x, "workerMessages", value.asInstanceOf[js.Any])
+    inline def setWorkerMessages(value: js.Array[WorkerMessage]): Self = StObject.set(x, "workerMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerMessagesUndefined: Self = StObject.set(x, "workerMessages", js.undefined)
+    inline def setWorkerMessagesUndefined: Self = StObject.set(x, "workerMessages", js.undefined)
     
-    @scala.inline
-    def setWorkerMessagesVarargs(value: WorkerMessage*): Self = StObject.set(x, "workerMessages", js.Array(value :_*))
+    inline def setWorkerMessagesVarargs(value: WorkerMessage*): Self = StObject.set(x, "workerMessages", js.Array(value :_*))
   }
 }

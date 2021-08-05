@@ -13,16 +13,13 @@ trait SendContactMethodVerificationRequest extends StObject {
 }
 object SendContactMethodVerificationRequest {
   
-  @scala.inline
-  def apply(protocol: ContactMethodVerificationProtocol): SendContactMethodVerificationRequest = {
+  inline def apply(protocol: ContactMethodVerificationProtocol): SendContactMethodVerificationRequest = {
     val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendContactMethodVerificationRequest]
   }
   
-  @scala.inline
-  implicit class SendContactMethodVerificationRequestMutableBuilder[Self <: SendContactMethodVerificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendContactMethodVerificationRequest](x: Self) {
     
-    @scala.inline
-    def setProtocol(value: ContactMethodVerificationProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: ContactMethodVerificationProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsV2UiElementsOpenUrlActionUrlTypeHint extends StObject
 object GoogleActionsV2UiElementsOpenUrlActionUrlTypeHint {
   
-  @scala.inline
-  def AMP_CONTENT: typings.actionsOnGoogle.actionsOnGoogleStrings.AMP_CONTENT = "AMP_CONTENT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.AMP_CONTENT]
+  inline def AMP_CONTENT: typings.actionsOnGoogle.actionsOnGoogleStrings.AMP_CONTENT = "AMP_CONTENT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.AMP_CONTENT]
   
-  @scala.inline
-  def URL_TYPE_HINT_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.URL_TYPE_HINT_UNSPECIFIED = "URL_TYPE_HINT_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.URL_TYPE_HINT_UNSPECIFIED]
+  inline def URL_TYPE_HINT_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.URL_TYPE_HINT_UNSPECIFIED = "URL_TYPE_HINT_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.URL_TYPE_HINT_UNSPECIFIED]
 }

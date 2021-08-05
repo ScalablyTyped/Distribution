@@ -44,11 +44,9 @@ object AddTransactionWithValidationRequest {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): AddTransactionWithValidationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AddTransactionWithValidationRequest]
+  inline def deserializeBinary(bytes: Uint8Array): AddTransactionWithValidationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AddTransactionWithValidationRequest]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: AddTransactionWithValidationRequest, reader: BinaryReader): AddTransactionWithValidationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AddTransactionWithValidationRequest]
+  inline def deserializeBinaryFromReader(message: AddTransactionWithValidationRequest, reader: BinaryReader): AddTransactionWithValidationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AddTransactionWithValidationRequest]
   
   @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationRequest.extensions")
   @js.native
@@ -57,17 +55,13 @@ object AddTransactionWithValidationRequest {
   @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationRequest.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: AddTransactionWithValidationRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: AddTransactionWithValidationRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: AddTransactionWithValidationRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: AddTransactionWithValidationRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -81,29 +75,22 @@ object AddTransactionWithValidationRequest {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(accountBalance: String, latestSequenceNumber: String, maxGasCost: String): AsObject = {
+    inline def apply(accountBalance: String, latestSequenceNumber: String, maxGasCost: String): AsObject = {
       val __obj = js.Dynamic.literal(accountBalance = accountBalance.asInstanceOf[js.Any], latestSequenceNumber = latestSequenceNumber.asInstanceOf[js.Any], maxGasCost = maxGasCost.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setAccountBalance(value: String): Self = StObject.set(x, "accountBalance", value.asInstanceOf[js.Any])
+      inline def setAccountBalance(value: String): Self = StObject.set(x, "accountBalance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestSequenceNumber(value: String): Self = StObject.set(x, "latestSequenceNumber", value.asInstanceOf[js.Any])
+      inline def setLatestSequenceNumber(value: String): Self = StObject.set(x, "latestSequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxGasCost(value: String): Self = StObject.set(x, "maxGasCost", value.asInstanceOf[js.Any])
+      inline def setMaxGasCost(value: String): Self = StObject.set(x, "maxGasCost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedTxn(value: typings.libraCore.transactionPbMod.SignedTransaction.AsObject): Self = StObject.set(x, "signedTxn", value.asInstanceOf[js.Any])
+      inline def setSignedTxn(value: typings.libraCore.transactionPbMod.SignedTransaction.AsObject): Self = StObject.set(x, "signedTxn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedTxnUndefined: Self = StObject.set(x, "signedTxn", js.undefined)
+      inline def setSignedTxnUndefined: Self = StObject.set(x, "signedTxn", js.undefined)
     }
   }
 }

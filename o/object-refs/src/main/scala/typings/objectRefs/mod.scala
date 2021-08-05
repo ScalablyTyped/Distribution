@@ -27,13 +27,10 @@ object mod {
     val ^ : js.Any = js.native
     
     /** Extends a collection with Refs aware methods */
-    @scala.inline
-    def extend(collection: js.Array[js.Any], refs: Refs, property: String, target: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(collection.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], property.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def extend(collection: js.Array[js.Any], refs: Refs, property: AttributeDescriptor, target: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(collection.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], property.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def extend(collection: js.Array[js.Any], refs: Refs, property: String, target: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(collection.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], property.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def extend(collection: js.Array[js.Any], refs: Refs, property: AttributeDescriptor, target: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(collection.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], property.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def isExtended(collection: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtended")(collection.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isExtended(collection: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtended")(collection.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   trait AttributeDescriptor extends StObject {
@@ -46,29 +43,22 @@ object mod {
   }
   object AttributeDescriptor {
     
-    @scala.inline
-    def apply(name: String): AttributeDescriptor = {
+    inline def apply(name: String): AttributeDescriptor = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeDescriptor]
     }
     
-    @scala.inline
-    implicit class AttributeDescriptorMutableBuilder[Self <: AttributeDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeDescriptor](x: Self) {
       
-      @scala.inline
-      def setCollection(value: Boolean): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: Boolean): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+      inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
       
-      @scala.inline
-      def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
+      inline def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumerableUndefined: Self = StObject.set(x, "enumerable", js.undefined)
+      inline def setEnumerableUndefined: Self = StObject.set(x, "enumerable", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

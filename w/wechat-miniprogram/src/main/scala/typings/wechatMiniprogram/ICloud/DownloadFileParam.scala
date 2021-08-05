@@ -14,22 +14,17 @@ trait DownloadFileParam
 }
 object DownloadFileParam {
   
-  @scala.inline
-  def apply(fileID: String): DownloadFileParam = {
+  inline def apply(fileID: String): DownloadFileParam = {
     val __obj = js.Dynamic.literal(fileID = fileID.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadFileParam]
   }
   
-  @scala.inline
-  implicit class DownloadFileParamMutableBuilder[Self <: DownloadFileParam] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadFileParam](x: Self) {
     
-    @scala.inline
-    def setCloudPath(value: String): Self = StObject.set(x, "cloudPath", value.asInstanceOf[js.Any])
+    inline def setCloudPath(value: String): Self = StObject.set(x, "cloudPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudPathUndefined: Self = StObject.set(x, "cloudPath", js.undefined)
+    inline def setCloudPathUndefined: Self = StObject.set(x, "cloudPath", js.undefined)
     
-    @scala.inline
-    def setFileID(value: String): Self = StObject.set(x, "fileID", value.asInstanceOf[js.Any])
+    inline def setFileID(value: String): Self = StObject.set(x, "fileID", value.asInstanceOf[js.Any])
   }
 }

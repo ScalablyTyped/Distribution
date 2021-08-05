@@ -119,9 +119,7 @@ object lexerMod {
     /* 3 */ val String: typings.angularCompiler.lexerMod.TokenType.String & Double = js.native
   }
   
-  @scala.inline
-  def isIdentifier(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifier")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIdentifier(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifier")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isQuote(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQuote")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isQuote(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQuote")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

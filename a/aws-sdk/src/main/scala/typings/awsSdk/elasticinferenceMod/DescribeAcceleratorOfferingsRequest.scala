@@ -18,25 +18,19 @@ trait DescribeAcceleratorOfferingsRequest extends StObject {
 }
 object DescribeAcceleratorOfferingsRequest {
   
-  @scala.inline
-  def apply(locationType: LocationType): DescribeAcceleratorOfferingsRequest = {
+  inline def apply(locationType: LocationType): DescribeAcceleratorOfferingsRequest = {
     val __obj = js.Dynamic.literal(locationType = locationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAcceleratorOfferingsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAcceleratorOfferingsRequestMutableBuilder[Self <: DescribeAcceleratorOfferingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAcceleratorOfferingsRequest](x: Self) {
     
-    @scala.inline
-    def setAcceleratorTypes(value: AcceleratorTypeNameList): Self = StObject.set(x, "acceleratorTypes", value.asInstanceOf[js.Any])
+    inline def setAcceleratorTypes(value: AcceleratorTypeNameList): Self = StObject.set(x, "acceleratorTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorTypesUndefined: Self = StObject.set(x, "acceleratorTypes", js.undefined)
+    inline def setAcceleratorTypesUndefined: Self = StObject.set(x, "acceleratorTypes", js.undefined)
     
-    @scala.inline
-    def setAcceleratorTypesVarargs(value: AcceleratorTypeName*): Self = StObject.set(x, "acceleratorTypes", js.Array(value :_*))
+    inline def setAcceleratorTypesVarargs(value: AcceleratorTypeName*): Self = StObject.set(x, "acceleratorTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setLocationType(value: LocationType): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+    inline def setLocationType(value: LocationType): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
   }
 }

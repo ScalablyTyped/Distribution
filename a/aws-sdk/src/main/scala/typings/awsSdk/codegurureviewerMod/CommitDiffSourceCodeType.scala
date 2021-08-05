@@ -18,25 +18,19 @@ trait CommitDiffSourceCodeType extends StObject {
 }
 object CommitDiffSourceCodeType {
   
-  @scala.inline
-  def apply(): CommitDiffSourceCodeType = {
+  inline def apply(): CommitDiffSourceCodeType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommitDiffSourceCodeType]
   }
   
-  @scala.inline
-  implicit class CommitDiffSourceCodeTypeMutableBuilder[Self <: CommitDiffSourceCodeType] (val x: Self) extends AnyVal {
+  extension [Self <: CommitDiffSourceCodeType](x: Self) {
     
-    @scala.inline
-    def setDestinationCommit(value: CommitId): Self = StObject.set(x, "DestinationCommit", value.asInstanceOf[js.Any])
+    inline def setDestinationCommit(value: CommitId): Self = StObject.set(x, "DestinationCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationCommitUndefined: Self = StObject.set(x, "DestinationCommit", js.undefined)
+    inline def setDestinationCommitUndefined: Self = StObject.set(x, "DestinationCommit", js.undefined)
     
-    @scala.inline
-    def setSourceCommit(value: CommitId): Self = StObject.set(x, "SourceCommit", value.asInstanceOf[js.Any])
+    inline def setSourceCommit(value: CommitId): Self = StObject.set(x, "SourceCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCommitUndefined: Self = StObject.set(x, "SourceCommit", js.undefined)
+    inline def setSourceCommitUndefined: Self = StObject.set(x, "SourceCommit", js.undefined)
   }
 }

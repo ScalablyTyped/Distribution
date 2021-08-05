@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdFarEastLineBreakLanguageID extends StObject
 object WdFarEastLineBreakLanguageID {
   
-  @scala.inline
-  def wdLineBreakJapanese: `1041` = 1041.asInstanceOf[`1041`]
+  inline def wdLineBreakJapanese: `1041` = 1041.asInstanceOf[`1041`]
   
-  @scala.inline
-  def wdLineBreakKorean: `1042` = 1042.asInstanceOf[`1042`]
+  inline def wdLineBreakKorean: `1042` = 1042.asInstanceOf[`1042`]
   
-  @scala.inline
-  def wdLineBreakSimplifiedChinese: `2052` = 2052.asInstanceOf[`2052`]
+  inline def wdLineBreakSimplifiedChinese: `2052` = 2052.asInstanceOf[`2052`]
   
-  @scala.inline
-  def wdLineBreakTraditionalChinese: `1028` = 1028.asInstanceOf[`1028`]
+  inline def wdLineBreakTraditionalChinese: `1028` = 1028.asInstanceOf[`1028`]
 }

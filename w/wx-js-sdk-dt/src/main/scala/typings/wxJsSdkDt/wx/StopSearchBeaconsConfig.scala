@@ -13,16 +13,13 @@ trait StopSearchBeaconsConfig
 }
 object StopSearchBeaconsConfig {
   
-  @scala.inline
-  def apply(complete: js.Any => Unit): StopSearchBeaconsConfig = {
+  inline def apply(complete: js.Any => Unit): StopSearchBeaconsConfig = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
     __obj.asInstanceOf[StopSearchBeaconsConfig]
   }
   
-  @scala.inline
-  implicit class StopSearchBeaconsConfigMutableBuilder[Self <: StopSearchBeaconsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: StopSearchBeaconsConfig](x: Self) {
     
-    @scala.inline
-    def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
   }
 }

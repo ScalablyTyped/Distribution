@@ -51,55 +51,39 @@ trait InjectDetails extends StObject {
 }
 object InjectDetails {
   
-  @scala.inline
-  def apply(): InjectDetails = {
+  inline def apply(): InjectDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InjectDetails]
   }
   
-  @scala.inline
-  implicit class InjectDetailsMutableBuilder[Self <: InjectDetails] (val x: Self) extends AnyVal {
+  extension [Self <: InjectDetails](x: Self) {
     
-    @scala.inline
-    def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
+    inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllFramesUndefined: Self = StObject.set(x, "allFrames", js.undefined)
+    inline def setAllFramesUndefined: Self = StObject.set(x, "allFrames", js.undefined)
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setCssOrigin(value: String): Self = StObject.set(x, "cssOrigin", value.asInstanceOf[js.Any])
+    inline def setCssOrigin(value: String): Self = StObject.set(x, "cssOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssOriginUndefined: Self = StObject.set(x, "cssOrigin", js.undefined)
+    inline def setCssOriginUndefined: Self = StObject.set(x, "cssOrigin", js.undefined)
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
+    inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
     
-    @scala.inline
-    def setMatchAboutBlank(value: Boolean): Self = StObject.set(x, "matchAboutBlank", value.asInstanceOf[js.Any])
+    inline def setMatchAboutBlank(value: Boolean): Self = StObject.set(x, "matchAboutBlank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchAboutBlankUndefined: Self = StObject.set(x, "matchAboutBlank", js.undefined)
+    inline def setMatchAboutBlankUndefined: Self = StObject.set(x, "matchAboutBlank", js.undefined)
     
-    @scala.inline
-    def setRunAt(value: String): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
+    inline def setRunAt(value: String): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAtUndefined: Self = StObject.set(x, "runAt", js.undefined)
+    inline def setRunAtUndefined: Self = StObject.set(x, "runAt", js.undefined)
   }
 }

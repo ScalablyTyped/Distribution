@@ -27,16 +27,13 @@ trait FILEConnectionProperties
 }
 object FILEConnectionProperties {
   
-  @scala.inline
-  def apply(CharSet: String, password: String, user: String): FILEConnectionProperties = {
+  inline def apply(CharSet: String, password: String, user: String): FILEConnectionProperties = {
     val __obj = js.Dynamic.literal(CharSet = CharSet.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[FILEConnectionProperties]
   }
   
-  @scala.inline
-  implicit class FILEConnectionPropertiesMutableBuilder[Self <: FILEConnectionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FILEConnectionProperties](x: Self) {
     
-    @scala.inline
-    def setCharSet(value: String): Self = StObject.set(x, "CharSet", value.asInstanceOf[js.Any])
+    inline def setCharSet(value: String): Self = StObject.set(x, "CharSet", value.asInstanceOf[js.Any])
   }
 }

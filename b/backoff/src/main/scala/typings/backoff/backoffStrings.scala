@@ -8,31 +8,25 @@ object backoffStrings {
   
   @js.native
   sealed trait abort extends StObject
-  @scala.inline
-  def abort: abort = "abort".asInstanceOf[abort]
+  inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
   sealed trait backoff extends StObject
-  @scala.inline
-  def backoff: backoff = "backoff".asInstanceOf[backoff]
+  inline def backoff: backoff = "backoff".asInstanceOf[backoff]
   
   @js.native
   sealed trait call extends StObject
-  @scala.inline
-  def call: call = "call".asInstanceOf[call]
+  inline def call: call = "call".asInstanceOf[call]
   
   @js.native
   sealed trait callback extends StObject
-  @scala.inline
-  def callback: callback = "callback".asInstanceOf[callback]
+  inline def callback: callback = "callback".asInstanceOf[callback]
   
   @js.native
   sealed trait fail extends StObject
-  @scala.inline
-  def fail: fail = "fail".asInstanceOf[fail]
+  inline def fail: fail = "fail".asInstanceOf[fail]
   
   @js.native
   sealed trait ready extends StObject
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
+  inline def ready: ready = "ready".asInstanceOf[ready]
 }

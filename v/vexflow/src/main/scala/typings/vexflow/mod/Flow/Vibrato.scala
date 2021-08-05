@@ -85,8 +85,7 @@ object Vibrato {
   val CATEGORY: String = js.native
   
   /* static member */
-  @scala.inline
-  def format(
+  inline def format(
     vibratos: js.Array[typings.vexflow.Vex.Flow.Vibrato],
     state: Leftshift,
     context: typings.vexflow.Vex.Flow.ModifierContext

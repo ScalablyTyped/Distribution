@@ -23,31 +23,23 @@ trait CanaryStatus extends StObject {
 }
 object CanaryStatus {
   
-  @scala.inline
-  def apply(): CanaryStatus = {
+  inline def apply(): CanaryStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanaryStatus]
   }
   
-  @scala.inline
-  implicit class CanaryStatusMutableBuilder[Self <: CanaryStatus] (val x: Self) extends AnyVal {
+  extension [Self <: CanaryStatus](x: Self) {
     
-    @scala.inline
-    def setState(value: CanaryState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: CanaryState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReason(value: String): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
+    inline def setStateReason(value: String): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReasonCode(value: CanaryStateReasonCode): Self = StObject.set(x, "StateReasonCode", value.asInstanceOf[js.Any])
+    inline def setStateReasonCode(value: CanaryStateReasonCode): Self = StObject.set(x, "StateReasonCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReasonCodeUndefined: Self = StObject.set(x, "StateReasonCode", js.undefined)
+    inline def setStateReasonCodeUndefined: Self = StObject.set(x, "StateReasonCode", js.undefined)
     
-    @scala.inline
-    def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
+    inline def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

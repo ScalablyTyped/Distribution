@@ -17,29 +17,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def applyMiddleware(): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")().asInstanceOf[StoreEnhancer[js.Object, js.Object]]
-  @scala.inline
-  def applyMiddleware[Ext1, S](middleware1: Middleware[Ext1, S, js.Any]): StoreEnhancer[typings.redux.anon.Dispatch[Ext1], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middleware1.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[typings.redux.anon.Dispatch[Ext1], js.Object]]
-  @scala.inline
-  def applyMiddleware[Ext, S](middlewares: (Middleware[js.Any, S, js.Any])*): StoreEnhancer[DispatchExt[Ext], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middlewares.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[DispatchExt[Ext], js.Object]]
-  @scala.inline
-  def applyMiddleware[Ext1, Ext2, S](middleware1: Middleware[Ext1, S, js.Any], middleware2: Middleware[Ext2, S, js.Any]): StoreEnhancer[`0`[Ext1, Ext2], js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any])).asInstanceOf[StoreEnhancer[`0`[Ext1, Ext2], js.Object]]
-  @scala.inline
-  def applyMiddleware[Ext1, Ext2, Ext3, S](
+  inline def applyMiddleware(): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")().asInstanceOf[StoreEnhancer[js.Object, js.Object]]
+  inline def applyMiddleware[Ext1, S](middleware1: Middleware[Ext1, S, js.Any]): StoreEnhancer[typings.redux.anon.Dispatch[Ext1], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middleware1.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[typings.redux.anon.Dispatch[Ext1], js.Object]]
+  inline def applyMiddleware[Ext, S](middlewares: (Middleware[js.Any, S, js.Any])*): StoreEnhancer[DispatchExt[Ext], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middlewares.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[DispatchExt[Ext], js.Object]]
+  inline def applyMiddleware[Ext1, Ext2, S](middleware1: Middleware[Ext1, S, js.Any], middleware2: Middleware[Ext2, S, js.Any]): StoreEnhancer[`0`[Ext1, Ext2], js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any])).asInstanceOf[StoreEnhancer[`0`[Ext1, Ext2], js.Object]]
+  inline def applyMiddleware[Ext1, Ext2, Ext3, S](
     middleware1: Middleware[Ext1, S, js.Any],
     middleware2: Middleware[Ext2, S, js.Any],
     middleware3: Middleware[Ext3, S, js.Any]
   ): StoreEnhancer[`1`[Ext1, Ext2, Ext3], js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any])).asInstanceOf[StoreEnhancer[`1`[Ext1, Ext2, Ext3], js.Object]]
-  @scala.inline
-  def applyMiddleware[Ext1, Ext2, Ext3, Ext4, S](
+  inline def applyMiddleware[Ext1, Ext2, Ext3, Ext4, S](
     middleware1: Middleware[Ext1, S, js.Any],
     middleware2: Middleware[Ext2, S, js.Any],
     middleware3: Middleware[Ext3, S, js.Any],
     middleware4: Middleware[Ext4, S, js.Any]
   ): StoreEnhancer[`2`[Ext1, Ext2, Ext3, Ext4], js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any])).asInstanceOf[StoreEnhancer[`2`[Ext1, Ext2, Ext3, Ext4], js.Object]]
-  @scala.inline
-  def applyMiddleware[Ext1, Ext2, Ext3, Ext4, Ext5, S](
+  inline def applyMiddleware[Ext1, Ext2, Ext3, Ext4, Ext5, S](
     middleware1: Middleware[Ext1, S, js.Any],
     middleware2: Middleware[Ext2, S, js.Any],
     middleware3: Middleware[Ext3, S, js.Any],
@@ -47,73 +40,50 @@ object mod {
     middleware5: Middleware[Ext5, S, js.Any]
   ): StoreEnhancer[`3`[Ext1, Ext2, Ext3, Ext4, Ext5], js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any])).asInstanceOf[StoreEnhancer[`3`[Ext1, Ext2, Ext3, Ext4, Ext5], js.Object]]
   
-  @scala.inline
-  def bindActionCreators[A, M /* <: ActionCreatorsMapObject[A] */](actionCreators: M, dispatch: Dispatch[AnyAction]): M = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionCreators")(actionCreators.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[M]
+  inline def bindActionCreators[A, M /* <: ActionCreatorsMapObject[A] */](actionCreators: M, dispatch: Dispatch[AnyAction]): M = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionCreators")(actionCreators.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[M]
   
-  @scala.inline
-  def bindActionCreators_AC_ActionCreatorA_C[A, C /* <: ActionCreator[A] */](actionCreator: C, dispatch: Dispatch[AnyAction]): C = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionCreators")(actionCreator.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[C]
+  inline def bindActionCreators_AC_ActionCreatorA_C[A, C /* <: ActionCreator[A] */](actionCreator: C, dispatch: Dispatch[AnyAction]): C = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionCreators")(actionCreator.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[C]
   
-  @scala.inline
-  def bindActionCreators_A_ActionCreatorAnyB_ActionCreatorAny_B[A /* <: ActionCreator[js.Any] */, B /* <: ActionCreator[js.Any] */](actionCreator: A, dispatch: Dispatch[AnyAction]): B = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionCreators")(actionCreator.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[B]
+  inline def bindActionCreators_A_ActionCreatorAnyB_ActionCreatorAny_B[A /* <: ActionCreator[js.Any] */, B /* <: ActionCreator[js.Any] */](actionCreator: A, dispatch: Dispatch[AnyAction]): B = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionCreators")(actionCreator.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[B]
   
-  @scala.inline
-  def bindActionCreators_M_ActionCreatorsMapObjectAnyN_ActionCreatorsMapObjectAny_N[M /* <: ActionCreatorsMapObject[js.Any] */, N /* <: ActionCreatorsMapObject[js.Any] */](actionCreators: M, dispatch: Dispatch[AnyAction]): N = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionCreators")(actionCreators.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[N]
+  inline def bindActionCreators_M_ActionCreatorsMapObjectAnyN_ActionCreatorsMapObjectAny_N[M /* <: ActionCreatorsMapObject[js.Any] */, N /* <: ActionCreatorsMapObject[js.Any] */](actionCreators: M, dispatch: Dispatch[AnyAction]): N = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionCreators")(actionCreators.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[N]
   
-  @scala.inline
-  def combineReducers[M /* <: ReducersMapObject[js.Any, js.Any] */](reducers: M): Reducer[CombinedState[StateFromReducersMapObject[M]], ActionFromReducersMapObject[M]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[CombinedState[StateFromReducersMapObject[M]], ActionFromReducersMapObject[M]]]
-  @scala.inline
-  def combineReducers[S](reducers: ReducersMapObject[S, js.Any]): Reducer[CombinedState[S], AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[CombinedState[S], AnyAction]]
+  inline def combineReducers[M /* <: ReducersMapObject[js.Any, js.Any] */](reducers: M): Reducer[CombinedState[StateFromReducersMapObject[M]], ActionFromReducersMapObject[M]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[CombinedState[StateFromReducersMapObject[M]], ActionFromReducersMapObject[M]]]
+  inline def combineReducers[S](reducers: ReducersMapObject[S, js.Any]): Reducer[CombinedState[S], AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[CombinedState[S], AnyAction]]
   
-  @scala.inline
-  def combineReducers_SA_ActionAny[S, A /* <: Action[js.Any] */](reducers: ReducersMapObject[S, A]): Reducer[CombinedState[S], A] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[CombinedState[S], A]]
+  inline def combineReducers_SA_ActionAny[S, A /* <: Action[js.Any] */](reducers: ReducersMapObject[S, A]): Reducer[CombinedState[S], A] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[CombinedState[S], A]]
   
-  @scala.inline
-  def compose(): js.Function1[/* a */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")().asInstanceOf[js.Function1[/* a */ js.Any, js.Any]]
-  @scala.inline
-  def compose[R](f1: js.Function1[/* b */ js.Any, R], funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], funcs.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, R]]
-  @scala.inline
-  def compose[F /* <: js.Function */](f: F): F = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f.asInstanceOf[js.Any]).asInstanceOf[F]
-  @scala.inline
-  def compose[R](funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(funcs.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, R]]
-  @scala.inline
-  def compose[A, R](f1: js.Function1[/* b */ A, R], f2: Func0[A]): Func0[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any])).asInstanceOf[Func0[R]]
-  @scala.inline
-  def compose[A, B, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func0[A]): Func0[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any])).asInstanceOf[Func0[R]]
-  @scala.inline
-  def compose[A, T1, R](f1: js.Function1[/* b */ A, R], f2: Func1[T1, A]): Func1[T1, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any])).asInstanceOf[Func1[T1, R]]
-  @scala.inline
-  def compose[A, B, C, R](
+  inline def compose(): js.Function1[/* a */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")().asInstanceOf[js.Function1[/* a */ js.Any, js.Any]]
+  inline def compose[R](f1: js.Function1[/* b */ js.Any, R], funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], funcs.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, R]]
+  inline def compose[F /* <: js.Function */](f: F): F = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f.asInstanceOf[js.Any]).asInstanceOf[F]
+  inline def compose[R](funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(funcs.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, R]]
+  inline def compose[A, R](f1: js.Function1[/* b */ A, R], f2: Func0[A]): Func0[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any])).asInstanceOf[Func0[R]]
+  inline def compose[A, B, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func0[A]): Func0[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any])).asInstanceOf[Func0[R]]
+  inline def compose[A, T1, R](f1: js.Function1[/* b */ A, R], f2: Func1[T1, A]): Func1[T1, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any])).asInstanceOf[Func1[T1, R]]
+  inline def compose[A, B, C, R](
     f1: js.Function1[/* b */ C, R],
     f2: js.Function1[/* a */ B, C],
     f3: js.Function1[/* a */ A, B],
     f4: Func0[A]
   ): Func0[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any], f4.asInstanceOf[js.Any])).asInstanceOf[Func0[R]]
-  @scala.inline
-  def compose[A, B, T1, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func1[T1, A]): Func1[T1, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any])).asInstanceOf[Func1[T1, R]]
-  @scala.inline
-  def compose[A, T1, T2, R](f1: js.Function1[/* b */ A, R], f2: Func2[T1, T2, A]): Func2[T1, T2, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any])).asInstanceOf[Func2[T1, T2, R]]
-  @scala.inline
-  def compose[A, B, C, T1, R](
+  inline def compose[A, B, T1, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func1[T1, A]): Func1[T1, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any])).asInstanceOf[Func1[T1, R]]
+  inline def compose[A, T1, T2, R](f1: js.Function1[/* b */ A, R], f2: Func2[T1, T2, A]): Func2[T1, T2, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any])).asInstanceOf[Func2[T1, T2, R]]
+  inline def compose[A, B, C, T1, R](
     f1: js.Function1[/* b */ C, R],
     f2: js.Function1[/* a */ B, C],
     f3: js.Function1[/* a */ A, B],
     f4: Func1[T1, A]
   ): Func1[T1, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any], f4.asInstanceOf[js.Any])).asInstanceOf[Func1[T1, R]]
-  @scala.inline
-  def compose[A, B, T1, T2, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func2[T1, T2, A]): Func2[T1, T2, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any])).asInstanceOf[Func2[T1, T2, R]]
-  @scala.inline
-  def compose[A, T1, T2, T3, R](f1: js.Function1[/* b */ A, R], f2: Func3[T1, T2, T3, A]): Func3[T1, T2, T3, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any])).asInstanceOf[Func3[T1, T2, T3, R]]
-  @scala.inline
-  def compose[A, B, C, T1, T2, R](
+  inline def compose[A, B, T1, T2, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func2[T1, T2, A]): Func2[T1, T2, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any])).asInstanceOf[Func2[T1, T2, R]]
+  inline def compose[A, T1, T2, T3, R](f1: js.Function1[/* b */ A, R], f2: Func3[T1, T2, T3, A]): Func3[T1, T2, T3, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any])).asInstanceOf[Func3[T1, T2, T3, R]]
+  inline def compose[A, B, C, T1, T2, R](
     f1: js.Function1[/* b */ C, R],
     f2: js.Function1[/* a */ B, C],
     f3: js.Function1[/* a */ A, B],
     f4: Func2[T1, T2, A]
   ): Func2[T1, T2, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any], f4.asInstanceOf[js.Any])).asInstanceOf[Func2[T1, T2, R]]
-  @scala.inline
-  def compose[A, B, T1, T2, T3, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func3[T1, T2, T3, A]): Func3[T1, T2, T3, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any])).asInstanceOf[Func3[T1, T2, T3, R]]
-  @scala.inline
-  def compose[A, B, C, T1, T2, T3, R](
+  inline def compose[A, B, T1, T2, T3, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: Func3[T1, T2, T3, A]): Func3[T1, T2, T3, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any], f3.asInstanceOf[js.Any])).asInstanceOf[Func3[T1, T2, T3, R]]
+  inline def compose[A, B, C, T1, T2, T3, R](
     f1: js.Function1[/* b */ C, R],
     f2: js.Function1[/* a */ B, C],
     f3: js.Function1[/* a */ A, B],
@@ -130,18 +100,15 @@ object mod {
   }
   object Action {
     
-    @scala.inline
-    def apply[T](`type`: T): Action[T] = {
+    inline def apply[T](`type`: T): Action[T] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action[T]]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
+    extension [Self <: Action[?], T](x: Self & Action[T]) {
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,8 +127,7 @@ object mod {
   /* extraProps */ StringDictionary[js.Any]
   object AnyAction {
     
-    @scala.inline
-    def apply(`type`: js.Any): AnyAction = {
+    inline def apply(`type`: js.Any): AnyAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnyAction]
@@ -202,20 +168,16 @@ object mod {
   }
   object MiddlewareAPI {
     
-    @scala.inline
-    def apply[D /* <: Dispatch[AnyAction] */, S](dispatch: D, getState: () => S): MiddlewareAPI[D, S] = {
+    inline def apply[D /* <: Dispatch[AnyAction] */, S](dispatch: D, getState: () => S): MiddlewareAPI[D, S] = {
       val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any], getState = js.Any.fromFunction0(getState))
       __obj.asInstanceOf[MiddlewareAPI[D, S]]
     }
     
-    @scala.inline
-    implicit class MiddlewareAPIMutableBuilder[Self <: MiddlewareAPI[?, ?], D /* <: Dispatch[AnyAction] */, S] (val x: Self & (MiddlewareAPI[D, S])) extends AnyVal {
+    extension [Self <: MiddlewareAPI[?, ?], D /* <: Dispatch[AnyAction] */, S](x: Self & (MiddlewareAPI[D, S])) {
       
-      @scala.inline
-      def setDispatch(value: D): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: D): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     }
   }
   
@@ -241,20 +203,16 @@ object mod {
   }
   object Observer {
     
-    @scala.inline
-    def apply[T](): Observer[T] = {
+    inline def apply[T](): Observer[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Observer[T]]
     }
     
-    @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
+    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
       
-      @scala.inline
-      def setNext(value: /* value */ T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: /* value */ T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     }
   }
   

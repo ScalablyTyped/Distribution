@@ -51,62 +51,44 @@ object typesEndpointDemographicMod {
   }
   object EndpointDemographic {
     
-    @scala.inline
-    def apply(): EndpointDemographic = {
+    inline def apply(): EndpointDemographic = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointDemographic]
     }
     
-    @scala.inline
-    implicit class EndpointDemographicMutableBuilder[Self <: EndpointDemographic] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointDemographic](x: Self) {
       
-      @scala.inline
-      def setAppVersion(value: String): Self = StObject.set(x, "AppVersion", value.asInstanceOf[js.Any])
+      inline def setAppVersion(value: String): Self = StObject.set(x, "AppVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppVersionUndefined: Self = StObject.set(x, "AppVersion", js.undefined)
+      inline def setAppVersionUndefined: Self = StObject.set(x, "AppVersion", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "Locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "Locale", js.undefined)
       
-      @scala.inline
-      def setMake(value: String): Self = StObject.set(x, "Make", value.asInstanceOf[js.Any])
+      inline def setMake(value: String): Self = StObject.set(x, "Make", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMakeUndefined: Self = StObject.set(x, "Make", js.undefined)
+      inline def setMakeUndefined: Self = StObject.set(x, "Make", js.undefined)
       
-      @scala.inline
-      def setModel(value: String): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+      inline def setModel(value: String): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
       
-      @scala.inline
-      def setModelVersion(value: String): Self = StObject.set(x, "ModelVersion", value.asInstanceOf[js.Any])
+      inline def setModelVersion(value: String): Self = StObject.set(x, "ModelVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelVersionUndefined: Self = StObject.set(x, "ModelVersion", js.undefined)
+      inline def setModelVersionUndefined: Self = StObject.set(x, "ModelVersion", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
       
-      @scala.inline
-      def setPlatformVersion(value: String): Self = StObject.set(x, "PlatformVersion", value.asInstanceOf[js.Any])
+      inline def setPlatformVersion(value: String): Self = StObject.set(x, "PlatformVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformVersionUndefined: Self = StObject.set(x, "PlatformVersion", js.undefined)
+      inline def setPlatformVersionUndefined: Self = StObject.set(x, "PlatformVersion", js.undefined)
       
-      @scala.inline
-      def setTimezone(value: String): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
+      inline def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
     }
   }
   

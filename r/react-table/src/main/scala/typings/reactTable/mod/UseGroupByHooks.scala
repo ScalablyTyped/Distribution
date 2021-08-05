@@ -10,19 +10,15 @@ trait UseGroupByHooks[D /* <: js.Object */] extends StObject {
 }
 object UseGroupByHooks {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](getGroupByToggleProps: js.Array[HeaderGroupPropGetter[D]]): UseGroupByHooks[D] = {
+  inline def apply[D /* <: js.Object */](getGroupByToggleProps: js.Array[HeaderGroupPropGetter[D]]): UseGroupByHooks[D] = {
     val __obj = js.Dynamic.literal(getGroupByToggleProps = getGroupByToggleProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseGroupByHooks[D]]
   }
   
-  @scala.inline
-  implicit class UseGroupByHooksMutableBuilder[Self <: UseGroupByHooks[?], D /* <: js.Object */] (val x: Self & UseGroupByHooks[D]) extends AnyVal {
+  extension [Self <: UseGroupByHooks[?], D /* <: js.Object */](x: Self & UseGroupByHooks[D]) {
     
-    @scala.inline
-    def setGetGroupByToggleProps(value: js.Array[HeaderGroupPropGetter[D]]): Self = StObject.set(x, "getGroupByToggleProps", value.asInstanceOf[js.Any])
+    inline def setGetGroupByToggleProps(value: js.Array[HeaderGroupPropGetter[D]]): Self = StObject.set(x, "getGroupByToggleProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetGroupByTogglePropsVarargs(value: HeaderGroupPropGetter[D]*): Self = StObject.set(x, "getGroupByToggleProps", js.Array(value :_*))
+    inline def setGetGroupByTogglePropsVarargs(value: HeaderGroupPropGetter[D]*): Self = StObject.set(x, "getGroupByToggleProps", js.Array(value :_*))
   }
 }

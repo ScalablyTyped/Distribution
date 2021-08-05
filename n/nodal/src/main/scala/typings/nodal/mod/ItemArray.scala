@@ -11,7 +11,7 @@ class ItemArray[T] ()
   extends StObject
      with Array[T] {
   
-  var _meta: js.Any = js.native
+  /* private */ var _meta: js.Any = js.native
   
   def setMeta(data: IArrayMetadata): IArrayMetadata = js.native
   
@@ -24,6 +24,5 @@ object ItemArray {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def from(arr: js.Array[js.Object]): ItemArray[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arr.asInstanceOf[js.Any]).asInstanceOf[ItemArray[js.Object]]
+  inline def from(arr: js.Array[js.Object]): ItemArray[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arr.asInstanceOf[js.Any]).asInstanceOf[ItemArray[js.Object]]
 }

@@ -27,8 +27,7 @@ trait Recordofftonexttheonasbac extends StObject {
 }
 object Recordofftonexttheonasbac {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     as: js.Any,
     back: js.Any,
     id: js.Any,
@@ -43,34 +42,24 @@ object Recordofftonexttheonasbac {
     __obj.asInstanceOf[Recordofftonexttheonasbac]
   }
   
-  @scala.inline
-  implicit class RecordofftonexttheonasbacMutableBuilder[Self <: Recordofftonexttheonasbac] (val x: Self) extends AnyVal {
+  extension [Self <: Recordofftonexttheonasbac](x: Self) {
     
-    @scala.inline
-    def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBack(value: js.Any): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+    inline def setBack(value: js.Any): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: js.Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: js.Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOff(value: js.Any): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
+    inline def setOff(value: js.Any): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn(value: js.Any): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: js.Any): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRid(value: js.Any): Self = StObject.set(x, "rid", value.asInstanceOf[js.Any])
+    inline def setRid(value: js.Any): Self = StObject.set(x, "rid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThe(value: js.Any): Self = StObject.set(x, "the", value.asInstanceOf[js.Any])
+    inline def setThe(value: js.Any): Self = StObject.set(x, "the", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

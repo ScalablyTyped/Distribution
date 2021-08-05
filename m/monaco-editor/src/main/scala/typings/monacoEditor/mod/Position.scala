@@ -68,44 +68,35 @@ object Position {
   /**
     * A function that compares positions, useful for sorting
     */
-  @scala.inline
-  def compare(a: IPosition, b: IPosition): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compare(a: IPosition, b: IPosition): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Test if position `a` equals position `b`
     */
-  @scala.inline
-  def equals(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")().asInstanceOf[Boolean]
-  @scala.inline
-  def equals(a: Null, b: IPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equals(a: IPosition): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def equals(a: IPosition, b: IPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")().asInstanceOf[Boolean]
+  inline def equals(a: Null, b: IPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals(a: IPosition): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def equals(a: IPosition, b: IPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Test if position `a` is before position `b`.
     * If the two positions are equal, the result will be false.
     */
-  @scala.inline
-  def isBefore(a: IPosition, b: IPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBefore")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isBefore(a: IPosition, b: IPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBefore")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Test if position `a` is before position `b`.
     * If the two positions are equal, the result will be true.
     */
-  @scala.inline
-  def isBeforeOrEqual(a: IPosition, b: IPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBeforeOrEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isBeforeOrEqual(a: IPosition, b: IPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBeforeOrEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Test if `obj` is an `IPosition`.
     */
-  @scala.inline
-  def isIPosition(obj: js.Any): /* is monaco-editor.monaco-editor.IPosition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPosition")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.IPosition */ Boolean]
+  inline def isIPosition(obj: js.Any): /* is monaco-editor.monaco-editor.IPosition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPosition")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.IPosition */ Boolean]
   
   /**
     * Create a `Position` from an `IPosition`.
     */
-  @scala.inline
-  def lift(pos: IPosition): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(pos.asInstanceOf[js.Any]).asInstanceOf[Position]
+  inline def lift(pos: IPosition): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(pos.asInstanceOf[js.Any]).asInstanceOf[Position]
 }

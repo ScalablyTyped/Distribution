@@ -22,25 +22,19 @@ trait SchemaHistogramSeries extends StObject {
 }
 object SchemaHistogramSeries {
   
-  @scala.inline
-  def apply(): SchemaHistogramSeries = {
+  inline def apply(): SchemaHistogramSeries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHistogramSeries]
   }
   
-  @scala.inline
-  implicit class SchemaHistogramSeriesMutableBuilder[Self <: SchemaHistogramSeries] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHistogramSeries](x: Self) {
     
-    @scala.inline
-    def setBarColor(value: SchemaColor): Self = StObject.set(x, "barColor", value.asInstanceOf[js.Any])
+    inline def setBarColor(value: SchemaColor): Self = StObject.set(x, "barColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarColorUndefined: Self = StObject.set(x, "barColor", js.undefined)
+    inline def setBarColorUndefined: Self = StObject.set(x, "barColor", js.undefined)
     
-    @scala.inline
-    def setData(value: SchemaChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: SchemaChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

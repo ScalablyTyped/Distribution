@@ -10,16 +10,13 @@ trait MultiOptions extends StObject {
 }
 object MultiOptions {
   
-  @scala.inline
-  def apply(pipeline: Boolean): MultiOptions = {
+  inline def apply(pipeline: Boolean): MultiOptions = {
     val __obj = js.Dynamic.literal(pipeline = pipeline.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiOptions]
   }
   
-  @scala.inline
-  implicit class MultiOptionsMutableBuilder[Self <: MultiOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MultiOptions](x: Self) {
     
-    @scala.inline
-    def setPipeline(value: Boolean): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+    inline def setPipeline(value: Boolean): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
   }
 }

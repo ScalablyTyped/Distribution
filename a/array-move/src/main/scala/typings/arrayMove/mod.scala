@@ -27,8 +27,7 @@ object mod {
   	//=> ['b', 'a', 'c']
   	```
   	*/
-  @scala.inline
-  def apply[ValueType](array: js.Array[ValueType], from: Double, to: Double): js.Array[ValueType] = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[ValueType]]
+  inline def apply[ValueType](array: js.Array[ValueType], from: Double, to: Double): js.Array[ValueType] = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[ValueType]]
   
   @JSImport("array-move", JSImport.Namespace)
   @js.native
@@ -40,6 +39,5 @@ object mod {
   	@param from - Index of item to move. If negative, it will begin that many elements from the end.
   	@param to - Index of where to move the item. If negative, it will begin that many elements from the end.
   	*/
-  @scala.inline
-  def mutate(array: js.Array[js.Any], from: Double, to: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mutate")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mutate(array: js.Array[js.Any], from: Double, to: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mutate")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -28,40 +28,29 @@ trait GetAnomalySubscriptionsRequest extends StObject {
 }
 object GetAnomalySubscriptionsRequest {
   
-  @scala.inline
-  def apply(): GetAnomalySubscriptionsRequest = {
+  inline def apply(): GetAnomalySubscriptionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAnomalySubscriptionsRequest]
   }
   
-  @scala.inline
-  implicit class GetAnomalySubscriptionsRequestMutableBuilder[Self <: GetAnomalySubscriptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAnomalySubscriptionsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
+    inline def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorArnUndefined: Self = StObject.set(x, "MonitorArn", js.undefined)
+    inline def setMonitorArnUndefined: Self = StObject.set(x, "MonitorArn", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setSubscriptionArnList(value: Values): Self = StObject.set(x, "SubscriptionArnList", value.asInstanceOf[js.Any])
+    inline def setSubscriptionArnList(value: Values): Self = StObject.set(x, "SubscriptionArnList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionArnListUndefined: Self = StObject.set(x, "SubscriptionArnList", js.undefined)
+    inline def setSubscriptionArnListUndefined: Self = StObject.set(x, "SubscriptionArnList", js.undefined)
     
-    @scala.inline
-    def setSubscriptionArnListVarargs(value: Value*): Self = StObject.set(x, "SubscriptionArnList", js.Array(value :_*))
+    inline def setSubscriptionArnListVarargs(value: Value*): Self = StObject.set(x, "SubscriptionArnList", js.Array(value :_*))
   }
 }

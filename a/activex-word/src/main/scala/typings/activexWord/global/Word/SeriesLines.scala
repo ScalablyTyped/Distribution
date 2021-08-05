@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.SeriesLines")
 @js.native
-class SeriesLines protected ()
+/* private */ class SeriesLines ()
   extends StObject
      with typings.activexWord.Word.SeriesLines {
   
@@ -34,7 +34,7 @@ class SeriesLines protected ()
   /* CompleteClass */
   override def Select(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.SeriesLines_typekey")
   var WordDotSeriesLines_typekey: typings.activexWord.Word.SeriesLines = js.native
 }

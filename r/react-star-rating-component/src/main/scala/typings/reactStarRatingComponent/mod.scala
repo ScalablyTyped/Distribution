@@ -59,74 +59,52 @@ object mod {
   }
   object StarRatingComponentProps {
     
-    @scala.inline
-    def apply(name: String, value: Double): StarRatingComponentProps = {
+    inline def apply(name: String, value: Double): StarRatingComponentProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[StarRatingComponentProps]
     }
     
-    @scala.inline
-    implicit class StarRatingComponentPropsMutableBuilder[Self <: StarRatingComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: StarRatingComponentProps](x: Self) {
       
-      @scala.inline
-      def setEditing(value: Boolean): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
+      inline def setEditing(value: Boolean): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
+      inline def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
       
-      @scala.inline
-      def setEmptyStarColor(value: String): Self = StObject.set(x, "emptyStarColor", value.asInstanceOf[js.Any])
+      inline def setEmptyStarColor(value: String): Self = StObject.set(x, "emptyStarColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyStarColorUndefined: Self = StObject.set(x, "emptyStarColor", js.undefined)
+      inline def setEmptyStarColorUndefined: Self = StObject.set(x, "emptyStarColor", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStarClick(value: (/* nextValue */ Double, /* prevValue */ Double, /* name */ String) => Unit): Self = StObject.set(x, "onStarClick", js.Any.fromFunction3(value))
+      inline def setOnStarClick(value: (/* nextValue */ Double, /* prevValue */ Double, /* name */ String) => Unit): Self = StObject.set(x, "onStarClick", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnStarClickUndefined: Self = StObject.set(x, "onStarClick", js.undefined)
+      inline def setOnStarClickUndefined: Self = StObject.set(x, "onStarClick", js.undefined)
       
-      @scala.inline
-      def setOnStarHover(value: (/* nextValue */ Double, /* prevValue */ Double, /* name */ String) => Unit): Self = StObject.set(x, "onStarHover", js.Any.fromFunction3(value))
+      inline def setOnStarHover(value: (/* nextValue */ Double, /* prevValue */ Double, /* name */ String) => Unit): Self = StObject.set(x, "onStarHover", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnStarHoverOut(value: (/* nextValue */ Double, /* prevValue */ Double, /* name */ String) => Unit): Self = StObject.set(x, "onStarHoverOut", js.Any.fromFunction3(value))
+      inline def setOnStarHoverOut(value: (/* nextValue */ Double, /* prevValue */ Double, /* name */ String) => Unit): Self = StObject.set(x, "onStarHoverOut", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnStarHoverOutUndefined: Self = StObject.set(x, "onStarHoverOut", js.undefined)
+      inline def setOnStarHoverOutUndefined: Self = StObject.set(x, "onStarHoverOut", js.undefined)
       
-      @scala.inline
-      def setOnStarHoverUndefined: Self = StObject.set(x, "onStarHover", js.undefined)
+      inline def setOnStarHoverUndefined: Self = StObject.set(x, "onStarHover", js.undefined)
       
-      @scala.inline
-      def setRenderStarIcon(value: (/* nextValue */ Double, /* prevValue */ Double, /* name */ String) => ReactNode | String): Self = StObject.set(x, "renderStarIcon", js.Any.fromFunction3(value))
+      inline def setRenderStarIcon(value: (/* nextValue */ Double, /* prevValue */ Double, /* name */ String) => ReactNode | String): Self = StObject.set(x, "renderStarIcon", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderStarIconHalf(value: (/* nextValue */ Double, /* prevValue */ Double, /* name */ String) => ReactNode | String): Self = StObject.set(x, "renderStarIconHalf", js.Any.fromFunction3(value))
+      inline def setRenderStarIconHalf(value: (/* nextValue */ Double, /* prevValue */ Double, /* name */ String) => ReactNode | String): Self = StObject.set(x, "renderStarIconHalf", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderStarIconHalfUndefined: Self = StObject.set(x, "renderStarIconHalf", js.undefined)
+      inline def setRenderStarIconHalfUndefined: Self = StObject.set(x, "renderStarIconHalf", js.undefined)
       
-      @scala.inline
-      def setRenderStarIconUndefined: Self = StObject.set(x, "renderStarIcon", js.undefined)
+      inline def setRenderStarIconUndefined: Self = StObject.set(x, "renderStarIcon", js.undefined)
       
-      @scala.inline
-      def setStarColor(value: String): Self = StObject.set(x, "starColor", value.asInstanceOf[js.Any])
+      inline def setStarColor(value: String): Self = StObject.set(x, "starColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarColorUndefined: Self = StObject.set(x, "starColor", js.undefined)
+      inline def setStarColorUndefined: Self = StObject.set(x, "starColor", js.undefined)
       
-      @scala.inline
-      def setStarCount(value: Double): Self = StObject.set(x, "starCount", value.asInstanceOf[js.Any])
+      inline def setStarCount(value: Double): Self = StObject.set(x, "starCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarCountUndefined: Self = StObject.set(x, "starCount", js.undefined)
+      inline def setStarCountUndefined: Self = StObject.set(x, "starCount", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

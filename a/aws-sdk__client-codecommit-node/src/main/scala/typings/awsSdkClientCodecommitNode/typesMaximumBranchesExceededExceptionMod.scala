@@ -18,17 +18,14 @@ object typesMaximumBranchesExceededExceptionMod {
   }
   object MaximumBranchesExceededException {
     
-    @scala.inline
-    def apply(): MaximumBranchesExceededException = {
+    inline def apply(): MaximumBranchesExceededException = {
       val __obj = js.Dynamic.literal(name = "MaximumBranchesExceededException")
       __obj.asInstanceOf[MaximumBranchesExceededException]
     }
     
-    @scala.inline
-    implicit class MaximumBranchesExceededExceptionMutableBuilder[Self <: MaximumBranchesExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: MaximumBranchesExceededException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumBranchesExceededException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

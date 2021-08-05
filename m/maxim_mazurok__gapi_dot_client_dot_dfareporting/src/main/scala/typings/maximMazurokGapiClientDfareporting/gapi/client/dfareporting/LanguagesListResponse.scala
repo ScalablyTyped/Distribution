@@ -14,28 +14,21 @@ trait LanguagesListResponse extends StObject {
 }
 object LanguagesListResponse {
   
-  @scala.inline
-  def apply(): LanguagesListResponse = {
+  inline def apply(): LanguagesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LanguagesListResponse]
   }
   
-  @scala.inline
-  implicit class LanguagesListResponseMutableBuilder[Self <: LanguagesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LanguagesListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLanguages(value: js.Array[Language]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: js.Array[Language]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+    inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    @scala.inline
-    def setLanguagesVarargs(value: Language*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: Language*): Self = StObject.set(x, "languages", js.Array(value :_*))
   }
 }

@@ -18,28 +18,21 @@ trait DescribeMaintenanceWindowExecutionTaskInvocationsResult extends StObject {
 }
 object DescribeMaintenanceWindowExecutionTaskInvocationsResult {
   
-  @scala.inline
-  def apply(): DescribeMaintenanceWindowExecutionTaskInvocationsResult = {
+  inline def apply(): DescribeMaintenanceWindowExecutionTaskInvocationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMaintenanceWindowExecutionTaskInvocationsResult]
   }
   
-  @scala.inline
-  implicit class DescribeMaintenanceWindowExecutionTaskInvocationsResultMutableBuilder[Self <: DescribeMaintenanceWindowExecutionTaskInvocationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMaintenanceWindowExecutionTaskInvocationsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setWindowExecutionTaskInvocationIdentities(value: MaintenanceWindowExecutionTaskInvocationIdentityList): Self = StObject.set(x, "WindowExecutionTaskInvocationIdentities", value.asInstanceOf[js.Any])
+    inline def setWindowExecutionTaskInvocationIdentities(value: MaintenanceWindowExecutionTaskInvocationIdentityList): Self = StObject.set(x, "WindowExecutionTaskInvocationIdentities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowExecutionTaskInvocationIdentitiesUndefined: Self = StObject.set(x, "WindowExecutionTaskInvocationIdentities", js.undefined)
+    inline def setWindowExecutionTaskInvocationIdentitiesUndefined: Self = StObject.set(x, "WindowExecutionTaskInvocationIdentities", js.undefined)
     
-    @scala.inline
-    def setWindowExecutionTaskInvocationIdentitiesVarargs(value: MaintenanceWindowExecutionTaskInvocationIdentity*): Self = StObject.set(x, "WindowExecutionTaskInvocationIdentities", js.Array(value :_*))
+    inline def setWindowExecutionTaskInvocationIdentitiesVarargs(value: MaintenanceWindowExecutionTaskInvocationIdentity*): Self = StObject.set(x, "WindowExecutionTaskInvocationIdentities", js.Array(value :_*))
   }
 }

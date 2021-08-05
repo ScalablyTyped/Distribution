@@ -15,7 +15,7 @@ object templatesMod {
   @js.native
   class PartialStack () extends TemplateStack {
     
-    var registeredNames: js.Any = js.native
+    /* private */ var registeredNames: js.Any = js.native
   }
   
   @JSImport("typedoc/dist/lib/output/utils/resources/templates", "Template")
@@ -28,7 +28,7 @@ object templatesMod {
     def render(context: js.Any): String = js.native
     def render(context: js.Any, options: RuntimeOptions): String = js.native
     
-    var template: js.Any = js.native
+    /* private */ var template: js.Any = js.native
   }
   
   @JSImport("typedoc/dist/lib/output/utils/resources/templates", "TemplateStack")

@@ -12,8 +12,7 @@ object labelUniDotDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def labelUniDriverFactory(base: UniDriver[js.Any]): LabelDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("labelUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[LabelDriver]
+  inline def labelUniDriverFactory(base: UniDriver[js.Any]): LabelDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("labelUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[LabelDriver]
   
   trait LabelDriver
     extends StObject
@@ -39,8 +38,7 @@ object labelUniDotDriverMod {
   }
   object LabelDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -55,26 +53,19 @@ object labelUniDotDriverMod {
       __obj.asInstanceOf[LabelDriver]
     }
     
-    @scala.inline
-    implicit class LabelDriverMutableBuilder[Self <: LabelDriver] (val x: Self) extends AnyVal {
+    extension [Self <: LabelDriver](x: Self) {
       
-      @scala.inline
-      def setGetForAttribute(value: () => js.Promise[String]): Self = StObject.set(x, "getForAttribute", js.Any.fromFunction0(value))
+      inline def setGetForAttribute(value: () => js.Promise[String]): Self = StObject.set(x, "getForAttribute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetId(value: () => js.Promise[String]): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => js.Promise[String]): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelText(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
+      inline def setGetLabelText(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasEllipsis(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasEllipsis", js.Any.fromFunction0(value))
+      inline def setHasEllipsis(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasEllipsis", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKeyDown(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
+      inline def setKeyDown(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
     }
   }
 }

@@ -13,16 +13,13 @@ trait Rfc822
 }
 object Rfc822 {
   
-  @scala.inline
-  def apply(rfc822: String): Rfc822 = {
+  inline def apply(rfc822: String): Rfc822 = {
     val __obj = js.Dynamic.literal(rfc822 = rfc822.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rfc822]
   }
   
-  @scala.inline
-  implicit class Rfc822MutableBuilder[Self <: Rfc822] (val x: Self) extends AnyVal {
+  extension [Self <: Rfc822](x: Self) {
     
-    @scala.inline
-    def setRfc822(value: String): Self = StObject.set(x, "rfc822", value.asInstanceOf[js.Any])
+    inline def setRfc822(value: String): Self = StObject.set(x, "rfc822", value.asInstanceOf[js.Any])
   }
 }

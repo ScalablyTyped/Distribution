@@ -16,19 +16,15 @@ trait PhoneCallHistoryEntryQueryOptions extends StObject {
 }
 object PhoneCallHistoryEntryQueryOptions {
   
-  @scala.inline
-  def apply(desiredMedia: PhoneCallHistoryEntryQueryDesiredMedia, sourceIds: IVector[String]): PhoneCallHistoryEntryQueryOptions = {
+  inline def apply(desiredMedia: PhoneCallHistoryEntryQueryDesiredMedia, sourceIds: IVector[String]): PhoneCallHistoryEntryQueryOptions = {
     val __obj = js.Dynamic.literal(desiredMedia = desiredMedia.asInstanceOf[js.Any], sourceIds = sourceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneCallHistoryEntryQueryOptions]
   }
   
-  @scala.inline
-  implicit class PhoneCallHistoryEntryQueryOptionsMutableBuilder[Self <: PhoneCallHistoryEntryQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneCallHistoryEntryQueryOptions](x: Self) {
     
-    @scala.inline
-    def setDesiredMedia(value: PhoneCallHistoryEntryQueryDesiredMedia): Self = StObject.set(x, "desiredMedia", value.asInstanceOf[js.Any])
+    inline def setDesiredMedia(value: PhoneCallHistoryEntryQueryDesiredMedia): Self = StObject.set(x, "desiredMedia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIds(value: IVector[String]): Self = StObject.set(x, "sourceIds", value.asInstanceOf[js.Any])
+    inline def setSourceIds(value: IVector[String]): Self = StObject.set(x, "sourceIds", value.asInstanceOf[js.Any])
   }
 }

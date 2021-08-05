@@ -8,16 +8,13 @@ object maximMazurokGapiClientOsloginStrings {
   
   @js.native
   sealed trait LoginProfile extends StObject
-  @scala.inline
-  def LoginProfile: LoginProfile = "LoginProfile".asInstanceOf[LoginProfile]
+  inline def LoginProfile: LoginProfile = "LoginProfile".asInstanceOf[LoginProfile]
   
   @js.native
   sealed trait oslogin extends StObject
-  @scala.inline
-  def oslogin: oslogin = "oslogin".asInstanceOf[oslogin]
+  inline def oslogin: oslogin = "oslogin".asInstanceOf[oslogin]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

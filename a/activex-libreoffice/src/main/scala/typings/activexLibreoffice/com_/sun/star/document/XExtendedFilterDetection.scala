@@ -34,8 +34,7 @@ trait XExtendedFilterDetection
 }
 object XExtendedFilterDetection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     detect: js.Array[SeqEquiv[PropertyValue]] => String,
     queryInterface: `type` => js.Any,
@@ -45,10 +44,8 @@ object XExtendedFilterDetection {
     __obj.asInstanceOf[XExtendedFilterDetection]
   }
   
-  @scala.inline
-  implicit class XExtendedFilterDetectionMutableBuilder[Self <: XExtendedFilterDetection] (val x: Self) extends AnyVal {
+  extension [Self <: XExtendedFilterDetection](x: Self) {
     
-    @scala.inline
-    def setDetect(value: js.Array[SeqEquiv[PropertyValue]] => String): Self = StObject.set(x, "detect", js.Any.fromFunction1(value))
+    inline def setDetect(value: js.Array[SeqEquiv[PropertyValue]] => String): Self = StObject.set(x, "detect", js.Any.fromFunction1(value))
   }
 }

@@ -10,16 +10,13 @@ trait ConnectionStringParseOptions extends StObject {
 }
 object ConnectionStringParseOptions {
   
-  @scala.inline
-  def apply(skipLowerCase: Boolean): ConnectionStringParseOptions = {
+  inline def apply(skipLowerCase: Boolean): ConnectionStringParseOptions = {
     val __obj = js.Dynamic.literal(skipLowerCase = skipLowerCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionStringParseOptions]
   }
   
-  @scala.inline
-  implicit class ConnectionStringParseOptionsMutableBuilder[Self <: ConnectionStringParseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionStringParseOptions](x: Self) {
     
-    @scala.inline
-    def setSkipLowerCase(value: Boolean): Self = StObject.set(x, "skipLowerCase", value.asInstanceOf[js.Any])
+    inline def setSkipLowerCase(value: Boolean): Self = StObject.set(x, "skipLowerCase", value.asInstanceOf[js.Any])
   }
 }

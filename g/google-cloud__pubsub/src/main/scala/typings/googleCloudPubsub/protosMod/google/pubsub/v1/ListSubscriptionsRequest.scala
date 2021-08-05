@@ -51,10 +51,8 @@ object ListSubscriptionsRequest {
     * @returns ListSubscriptionsRequest instance
     */
   /* static member */
-  @scala.inline
-  def create(): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListSubscriptionsRequest]
-  @scala.inline
-  def create(properties: IListSubscriptionsRequest): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsRequest]
+  inline def create(): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListSubscriptionsRequest]
+  inline def create(properties: IListSubscriptionsRequest): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsRequest]
   
   /**
     * Decodes a ListSubscriptionsRequest message from the specified reader or buffer.
@@ -65,14 +63,10 @@ object ListSubscriptionsRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsRequest]
-  @scala.inline
-  def decode(reader: Reader, length: Double): ListSubscriptionsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSubscriptionsRequest]
-  @scala.inline
-  def decode(reader: Uint8Array): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsRequest]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): ListSubscriptionsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSubscriptionsRequest]
+  inline def decode(reader: Reader): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsRequest]
+  inline def decode(reader: Reader, length: Double): ListSubscriptionsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSubscriptionsRequest]
+  inline def decode(reader: Uint8Array): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsRequest]
+  inline def decode(reader: Uint8Array, length: Double): ListSubscriptionsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSubscriptionsRequest]
   
   /**
     * Decodes a ListSubscriptionsRequest message from the specified reader or buffer, length delimited.
@@ -82,10 +76,8 @@ object ListSubscriptionsRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsRequest]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsRequest]
+  inline def decodeDelimited(reader: Reader): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsRequest]
+  inline def decodeDelimited(reader: Uint8Array): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsRequest]
   
   /**
     * Encodes the specified ListSubscriptionsRequest message. Does not implicitly {@link google.pubsub.v1.ListSubscriptionsRequest.verify|verify} messages.
@@ -94,10 +86,8 @@ object ListSubscriptionsRequest {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IListSubscriptionsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IListSubscriptionsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IListSubscriptionsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IListSubscriptionsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ListSubscriptionsRequest message, length delimited. Does not implicitly {@link google.pubsub.v1.ListSubscriptionsRequest.verify|verify} messages.
@@ -106,10 +96,8 @@ object ListSubscriptionsRequest {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IListSubscriptionsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IListSubscriptionsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IListSubscriptionsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IListSubscriptionsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ListSubscriptionsRequest message from a plain object. Also converts values to their respective internal types.
@@ -117,8 +105,7 @@ object ListSubscriptionsRequest {
     * @returns ListSubscriptionsRequest
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsRequest]
+  inline def fromObject(`object`: StringDictionary[js.Any]): ListSubscriptionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsRequest]
   
   /**
     * Creates a plain object from a ListSubscriptionsRequest message. Also converts values to other types if specified.
@@ -127,10 +114,8 @@ object ListSubscriptionsRequest {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: ListSubscriptionsRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: ListSubscriptionsRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ListSubscriptionsRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ListSubscriptionsRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ListSubscriptionsRequest message.
@@ -138,6 +123,5 @@ object ListSubscriptionsRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -18,25 +18,19 @@ trait RawString extends StObject {
 }
 object RawString {
   
-  @scala.inline
-  def apply(): RawString = {
+  inline def apply(): RawString = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RawString]
   }
   
-  @scala.inline
-  implicit class RawStringMutableBuilder[Self <: RawString] (val x: Self) extends AnyVal {
+  extension [Self <: RawString](x: Self) {
     
-    @scala.inline
-    def setContent(value: RawStringContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: RawStringContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setSha256(value: RawStringSha256): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+    inline def setSha256(value: RawStringSha256): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
+    inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
   }
 }

@@ -43,58 +43,42 @@ object rsaMod {
   }
   object key {
     
-    @scala.inline
-    def apply(`0`: Modulus, `1`: BigNumber): key = {
+    inline def apply(`0`: Modulus, `1`: BigNumber): key = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
       __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
       __obj.asInstanceOf[key]
     }
     
-    @scala.inline
-    implicit class keyMutableBuilder[Self <: key] (val x: Self) extends AnyVal {
+    extension [Self <: key](x: Self) {
       
-      @scala.inline
-      def set0(value: Modulus): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+      inline def set0(value: Modulus): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1(value: BigNumber): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+      inline def set1(value: BigNumber): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set2(value: BigNumber): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+      inline def set2(value: BigNumber): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set2Undefined: Self = StObject.set(x, "2", js.undefined)
+      inline def set2Undefined: Self = StObject.set(x, "2", js.undefined)
       
-      @scala.inline
-      def set3(value: Modulus): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+      inline def set3(value: Modulus): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set3Undefined: Self = StObject.set(x, "3", js.undefined)
+      inline def set3Undefined: Self = StObject.set(x, "3", js.undefined)
       
-      @scala.inline
-      def set4(value: Modulus): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+      inline def set4(value: Modulus): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4Undefined: Self = StObject.set(x, "4", js.undefined)
+      inline def set4Undefined: Self = StObject.set(x, "4", js.undefined)
       
-      @scala.inline
-      def set5(value: BigNumber): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+      inline def set5(value: BigNumber): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5Undefined: Self = StObject.set(x, "5", js.undefined)
+      inline def set5Undefined: Self = StObject.set(x, "5", js.undefined)
       
-      @scala.inline
-      def set6(value: BigNumber): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+      inline def set6(value: BigNumber): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set6Undefined: Self = StObject.set(x, "6", js.undefined)
+      inline def set6Undefined: Self = StObject.set(x, "6", js.undefined)
       
-      @scala.inline
-      def set7(value: BigNumber): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
+      inline def set7(value: BigNumber): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set7Undefined: Self = StObject.set(x, "7", js.undefined)
+      inline def set7Undefined: Self = StObject.set(x, "7", js.undefined)
     }
   }
 }

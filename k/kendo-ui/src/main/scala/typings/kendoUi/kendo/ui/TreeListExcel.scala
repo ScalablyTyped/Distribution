@@ -16,37 +16,27 @@ trait TreeListExcel extends StObject {
 }
 object TreeListExcel {
   
-  @scala.inline
-  def apply(): TreeListExcel = {
+  inline def apply(): TreeListExcel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TreeListExcel]
   }
   
-  @scala.inline
-  implicit class TreeListExcelMutableBuilder[Self <: TreeListExcel] (val x: Self) extends AnyVal {
+  extension [Self <: TreeListExcel](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+    inline def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
+    inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
     
-    @scala.inline
-    def setForceProxy(value: Boolean): Self = StObject.set(x, "forceProxy", value.asInstanceOf[js.Any])
+    inline def setForceProxy(value: Boolean): Self = StObject.set(x, "forceProxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceProxyUndefined: Self = StObject.set(x, "forceProxy", js.undefined)
+    inline def setForceProxyUndefined: Self = StObject.set(x, "forceProxy", js.undefined)
     
-    @scala.inline
-    def setProxyURL(value: String): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
+    inline def setProxyURL(value: String): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
+    inline def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
   }
 }

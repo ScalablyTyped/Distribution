@@ -68,8 +68,7 @@ object anon {
   }
   object AlignX {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alignX: Requireable[js.Any],
       alignY: Requireable[js.Any],
       breakpoint: Validator[js.Any],
@@ -103,92 +102,63 @@ object anon {
       __obj.asInstanceOf[AlignX]
     }
     
-    @scala.inline
-    implicit class AlignXMutableBuilder[Self <: AlignX] (val x: Self) extends AnyVal {
+    extension [Self <: AlignX](x: Self) {
       
-      @scala.inline
-      def setAlignX(value: Requireable[js.Any]): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
+      inline def setAlignX(value: Requireable[js.Any]): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignY(value: Requireable[js.Any]): Self = StObject.set(x, "alignY", value.asInstanceOf[js.Any])
+      inline def setAlignY(value: Requireable[js.Any]): Self = StObject.set(x, "alignY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakpoint(value: Validator[js.Any]): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      inline def setBreakpoint(value: Validator[js.Any]): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterAlign(value: Requireable[js.Any]): Self = StObject.set(x, "centerAlign", value.asInstanceOf[js.Any])
+      inline def setCenterAlign(value: Requireable[js.Any]): Self = StObject.set(x, "centerAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexChild(value: Requireable[js.Any]): Self = StObject.set(x, "flexChild", value.asInstanceOf[js.Any])
+      inline def setFlexChild(value: Requireable[js.Any]): Self = StObject.set(x, "flexChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexContainer(value: Requireable[js.Any]): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
+      inline def setFlexContainer(value: Requireable[js.Any]): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexDirCol(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirCol", value.asInstanceOf[js.Any])
+      inline def setFlexDirCol(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirCol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexDirColRev(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirColRev", value.asInstanceOf[js.Any])
+      inline def setFlexDirColRev(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirColRev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexDirRow(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirRow", value.asInstanceOf[js.Any])
+      inline def setFlexDirRow(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexDirRowRev(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirRowRev", value.asInstanceOf[js.Any])
+      inline def setFlexDirRowRev(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirRowRev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexOrder(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrder", value.asInstanceOf[js.Any])
+      inline def setFlexOrder(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexOrderLarge(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrderLarge", value.asInstanceOf[js.Any])
+      inline def setFlexOrderLarge(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrderLarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexOrderMedium(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrderMedium", value.asInstanceOf[js.Any])
+      inline def setFlexOrderMedium(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrderMedium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexOrderSmall(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrderSmall", value.asInstanceOf[js.Any])
+      inline def setFlexOrderSmall(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrderSmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloat(value: Requireable[js.Any]): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+      inline def setFloat(value: Requireable[js.Any]): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideFor(value: Requireable[js.Any]): Self = StObject.set(x, "hideFor", value.asInstanceOf[js.Any])
+      inline def setHideFor(value: Requireable[js.Any]): Self = StObject.set(x, "hideFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideOnlyFor(value: Requireable[js.Any]): Self = StObject.set(x, "hideOnlyFor", value.asInstanceOf[js.Any])
+      inline def setHideOnlyFor(value: Requireable[js.Any]): Self = StObject.set(x, "hideOnlyFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsClearfix(value: Requireable[js.Any]): Self = StObject.set(x, "isClearfix", value.asInstanceOf[js.Any])
+      inline def setIsClearfix(value: Requireable[js.Any]): Self = StObject.set(x, "isClearfix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHidden(value: Requireable[js.Any]): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Requireable[js.Any]): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInvisible(value: Requireable[js.Any]): Self = StObject.set(x, "isInvisible", value.asInstanceOf[js.Any])
+      inline def setIsInvisible(value: Requireable[js.Any]): Self = StObject.set(x, "isInvisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfAlignX(value: Requireable[js.Any]): Self = StObject.set(x, "selfAlignX", value.asInstanceOf[js.Any])
+      inline def setSelfAlignX(value: Requireable[js.Any]): Self = StObject.set(x, "selfAlignX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfAlignY(value: Requireable[js.Any]): Self = StObject.set(x, "selfAlignY", value.asInstanceOf[js.Any])
+      inline def setSelfAlignY(value: Requireable[js.Any]): Self = StObject.set(x, "selfAlignY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowFor(value: Requireable[js.Any]): Self = StObject.set(x, "showFor", value.asInstanceOf[js.Any])
+      inline def setShowFor(value: Requireable[js.Any]): Self = StObject.set(x, "showFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowForLandscape(value: Requireable[js.Any]): Self = StObject.set(x, "showForLandscape", value.asInstanceOf[js.Any])
+      inline def setShowForLandscape(value: Requireable[js.Any]): Self = StObject.set(x, "showForLandscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowForPortrait(value: Requireable[js.Any]): Self = StObject.set(x, "showForPortrait", value.asInstanceOf[js.Any])
+      inline def setShowForPortrait(value: Requireable[js.Any]): Self = StObject.set(x, "showForPortrait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowForSr(value: Requireable[js.Any]): Self = StObject.set(x, "showForSr", value.asInstanceOf[js.Any])
+      inline def setShowForSr(value: Requireable[js.Any]): Self = StObject.set(x, "showForSr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOnFocus(value: Requireable[js.Any]): Self = StObject.set(x, "showOnFocus", value.asInstanceOf[js.Any])
+      inline def setShowOnFocus(value: Requireable[js.Any]): Self = StObject.set(x, "showOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOnlyFor(value: Requireable[js.Any]): Self = StObject.set(x, "showOnlyFor", value.asInstanceOf[js.Any])
+      inline def setShowOnlyFor(value: Requireable[js.Any]): Self = StObject.set(x, "showOnlyFor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,17 +168,14 @@ object anon {
   }
   object Breakpoint {
     
-    @scala.inline
-    def apply(breakpoint: Double): Breakpoint = {
+    inline def apply(breakpoint: Double): Breakpoint = {
       val __obj = js.Dynamic.literal(breakpoint = breakpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[Breakpoint]
     }
     
-    @scala.inline
-    implicit class BreakpointMutableBuilder[Self <: Breakpoint] (val x: Self) extends AnyVal {
+    extension [Self <: Breakpoint](x: Self) {
       
-      @scala.inline
-      def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      inline def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,8 +223,7 @@ object anon {
   }
   object Clearfix {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `float-center`: Boolean,
       `float-left`: Boolean,
       `float-right`: Boolean,
@@ -289,89 +255,61 @@ object anon {
       __obj.asInstanceOf[Clearfix]
     }
     
-    @scala.inline
-    implicit class ClearfixMutableBuilder[Self <: Clearfix] (val x: Self) extends AnyVal {
+    extension [Self <: Clearfix](x: Self) {
       
-      @scala.inline
-      def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
+      inline def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearfixUndefined: Self = StObject.set(x, "clearfix", js.undefined)
+      inline def setClearfixUndefined: Self = StObject.set(x, "clearfix", js.undefined)
       
-      @scala.inline
-      def `setFloat-center`(value: Boolean): Self = StObject.set(x, "float-center", value.asInstanceOf[js.Any])
+      inline def `setFloat-center`(value: Boolean): Self = StObject.set(x, "float-center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFloat-left`(value: Boolean): Self = StObject.set(x, "float-left", value.asInstanceOf[js.Any])
+      inline def `setFloat-left`(value: Boolean): Self = StObject.set(x, "float-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFloat-right`(value: Boolean): Self = StObject.set(x, "float-right", value.asInstanceOf[js.Any])
+      inline def `setFloat-right`(value: Boolean): Self = StObject.set(x, "float-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHide-for-large`(value: Boolean): Self = StObject.set(x, "hide-for-large", value.asInstanceOf[js.Any])
+      inline def `setHide-for-large`(value: Boolean): Self = StObject.set(x, "hide-for-large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHide-for-large-only`(value: Boolean): Self = StObject.set(x, "hide-for-large-only", value.asInstanceOf[js.Any])
+      inline def `setHide-for-large-only`(value: Boolean): Self = StObject.set(x, "hide-for-large-only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHide-for-medium`(value: Boolean): Self = StObject.set(x, "hide-for-medium", value.asInstanceOf[js.Any])
+      inline def `setHide-for-medium`(value: Boolean): Self = StObject.set(x, "hide-for-medium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHide-for-medium-only`(value: Boolean): Self = StObject.set(x, "hide-for-medium-only", value.asInstanceOf[js.Any])
+      inline def `setHide-for-medium-only`(value: Boolean): Self = StObject.set(x, "hide-for-medium-only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHide-for-small-only`(value: Boolean): Self = StObject.set(x, "hide-for-small-only", value.asInstanceOf[js.Any])
+      inline def `setHide-for-small-only`(value: Boolean): Self = StObject.set(x, "hide-for-small-only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+      inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      @scala.inline
-      def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
+      inline def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
+      inline def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
       
-      @scala.inline
-      def `setShow-for-landscape`(value: Boolean): Self = StObject.set(x, "show-for-landscape", value.asInstanceOf[js.Any])
+      inline def `setShow-for-landscape`(value: Boolean): Self = StObject.set(x, "show-for-landscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShow-for-landscapeUndefined`: Self = StObject.set(x, "show-for-landscape", js.undefined)
+      inline def `setShow-for-landscapeUndefined`: Self = StObject.set(x, "show-for-landscape", js.undefined)
       
-      @scala.inline
-      def `setShow-for-large`(value: Boolean): Self = StObject.set(x, "show-for-large", value.asInstanceOf[js.Any])
+      inline def `setShow-for-large`(value: Boolean): Self = StObject.set(x, "show-for-large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShow-for-large-only`(value: Boolean): Self = StObject.set(x, "show-for-large-only", value.asInstanceOf[js.Any])
+      inline def `setShow-for-large-only`(value: Boolean): Self = StObject.set(x, "show-for-large-only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShow-for-medium`(value: Boolean): Self = StObject.set(x, "show-for-medium", value.asInstanceOf[js.Any])
+      inline def `setShow-for-medium`(value: Boolean): Self = StObject.set(x, "show-for-medium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShow-for-medium-only`(value: Boolean): Self = StObject.set(x, "show-for-medium-only", value.asInstanceOf[js.Any])
+      inline def `setShow-for-medium-only`(value: Boolean): Self = StObject.set(x, "show-for-medium-only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShow-for-portrait`(value: Boolean): Self = StObject.set(x, "show-for-portrait", value.asInstanceOf[js.Any])
+      inline def `setShow-for-portrait`(value: Boolean): Self = StObject.set(x, "show-for-portrait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShow-for-portraitUndefined`: Self = StObject.set(x, "show-for-portrait", js.undefined)
+      inline def `setShow-for-portraitUndefined`: Self = StObject.set(x, "show-for-portrait", js.undefined)
       
-      @scala.inline
-      def `setShow-for-small-only`(value: Boolean): Self = StObject.set(x, "show-for-small-only", value.asInstanceOf[js.Any])
+      inline def `setShow-for-small-only`(value: Boolean): Self = StObject.set(x, "show-for-small-only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShow-for-sr`(value: Boolean): Self = StObject.set(x, "show-for-sr", value.asInstanceOf[js.Any])
+      inline def `setShow-for-sr`(value: Boolean): Self = StObject.set(x, "show-for-sr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShow-for-srUndefined`: Self = StObject.set(x, "show-for-sr", js.undefined)
+      inline def `setShow-for-srUndefined`: Self = StObject.set(x, "show-for-sr", js.undefined)
       
-      @scala.inline
-      def `setShow-on-focus`(value: Boolean): Self = StObject.set(x, "show-on-focus", value.asInstanceOf[js.Any])
+      inline def `setShow-on-focus`(value: Boolean): Self = StObject.set(x, "show-on-focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShow-on-focusUndefined`: Self = StObject.set(x, "show-on-focus", js.undefined)
+      inline def `setShow-on-focusUndefined`: Self = StObject.set(x, "show-on-focus", js.undefined)
     }
   }
 }

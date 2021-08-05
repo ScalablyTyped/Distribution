@@ -16,22 +16,17 @@ trait CacheResult extends StObject {
 }
 object CacheResult {
   
-  @scala.inline
-  def apply(files: Max, items: Max, memory: Current): CacheResult = {
+  inline def apply(files: Max, items: Max, memory: Current): CacheResult = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheResult]
   }
   
-  @scala.inline
-  implicit class CacheResultMutableBuilder[Self <: CacheResult] (val x: Self) extends AnyVal {
+  extension [Self <: CacheResult](x: Self) {
     
-    @scala.inline
-    def setFiles(value: Max): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: Max): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: Max): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Max): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemory(value: Current): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: Current): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
   }
 }

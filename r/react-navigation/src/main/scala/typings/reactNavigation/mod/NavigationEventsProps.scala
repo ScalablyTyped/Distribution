@@ -19,37 +19,27 @@ trait NavigationEventsProps
 }
 object NavigationEventsProps {
   
-  @scala.inline
-  def apply(): NavigationEventsProps = {
+  inline def apply(): NavigationEventsProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationEventsProps]
   }
   
-  @scala.inline
-  implicit class NavigationEventsPropsMutableBuilder[Self <: NavigationEventsProps] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationEventsProps](x: Self) {
     
-    @scala.inline
-    def setOnDidBlur(value: /* payload */ NavigationEventPayload => Unit): Self = StObject.set(x, "onDidBlur", js.Any.fromFunction1(value))
+    inline def setOnDidBlur(value: /* payload */ NavigationEventPayload => Unit): Self = StObject.set(x, "onDidBlur", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidBlurUndefined: Self = StObject.set(x, "onDidBlur", js.undefined)
+    inline def setOnDidBlurUndefined: Self = StObject.set(x, "onDidBlur", js.undefined)
     
-    @scala.inline
-    def setOnDidFocus(value: /* payload */ NavigationEventPayload => Unit): Self = StObject.set(x, "onDidFocus", js.Any.fromFunction1(value))
+    inline def setOnDidFocus(value: /* payload */ NavigationEventPayload => Unit): Self = StObject.set(x, "onDidFocus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidFocusUndefined: Self = StObject.set(x, "onDidFocus", js.undefined)
+    inline def setOnDidFocusUndefined: Self = StObject.set(x, "onDidFocus", js.undefined)
     
-    @scala.inline
-    def setOnWillBlur(value: /* payload */ NavigationEventPayload => Unit): Self = StObject.set(x, "onWillBlur", js.Any.fromFunction1(value))
+    inline def setOnWillBlur(value: /* payload */ NavigationEventPayload => Unit): Self = StObject.set(x, "onWillBlur", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnWillBlurUndefined: Self = StObject.set(x, "onWillBlur", js.undefined)
+    inline def setOnWillBlurUndefined: Self = StObject.set(x, "onWillBlur", js.undefined)
     
-    @scala.inline
-    def setOnWillFocus(value: /* payload */ NavigationEventPayload => Unit): Self = StObject.set(x, "onWillFocus", js.Any.fromFunction1(value))
+    inline def setOnWillFocus(value: /* payload */ NavigationEventPayload => Unit): Self = StObject.set(x, "onWillFocus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnWillFocusUndefined: Self = StObject.set(x, "onWillFocus", js.undefined)
+    inline def setOnWillFocusUndefined: Self = StObject.set(x, "onWillFocus", js.undefined)
   }
 }

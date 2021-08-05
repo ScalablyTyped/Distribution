@@ -14,22 +14,17 @@ trait ReturnTypeResolveBlobResponse extends StObject {
 }
 object ReturnTypeResolveBlobResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[ResolveBlobRequest], returnType: ResolveBlobResponse): ReturnTypeResolveBlobResponse = {
+  inline def apply(paramsType: js.Array[ResolveBlobRequest], returnType: ResolveBlobResponse): ReturnTypeResolveBlobResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeResolveBlobResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeResolveBlobResponseMutableBuilder[Self <: ReturnTypeResolveBlobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeResolveBlobResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[ResolveBlobRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[ResolveBlobRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: ResolveBlobRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: ResolveBlobRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: ResolveBlobResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: ResolveBlobResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

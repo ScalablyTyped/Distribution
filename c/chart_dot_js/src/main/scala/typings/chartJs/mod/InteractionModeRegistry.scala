@@ -36,41 +36,30 @@ trait InteractionModeRegistry extends StObject {
 }
 object InteractionModeRegistry {
   
-  @scala.inline
-  def apply(): InteractionModeRegistry = {
+  inline def apply(): InteractionModeRegistry = {
     val __obj = js.Dynamic.literal(dataset = "dataset", index = "index", label = "label", nearest = "nearest", point = "point", single = "single", x = "x", y = "y")
     __obj.updateDynamic("x-axis")("x-axis")
     __obj.asInstanceOf[InteractionModeRegistry]
   }
   
-  @scala.inline
-  implicit class InteractionModeRegistryMutableBuilder[Self <: InteractionModeRegistry] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionModeRegistry](x: Self) {
     
-    @scala.inline
-    def setDataset(value: dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: index): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: index): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNearest(value: nearest): Self = StObject.set(x, "nearest", value.asInstanceOf[js.Any])
+    inline def setNearest(value: nearest): Self = StObject.set(x, "nearest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingle(value: single): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+    inline def setSingle(value: single): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: typings.chartJs.chartJsStrings.x): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: typings.chartJs.chartJsStrings.x): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-axis`(value: `x-axis`): Self = StObject.set(x, "x-axis", value.asInstanceOf[js.Any])
+    inline def `setX-axis`(value: `x-axis`): Self = StObject.set(x, "x-axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: y): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: y): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

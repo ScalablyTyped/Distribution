@@ -26,49 +26,35 @@ trait IAnimatedTileLayerOptions extends StObject {
 }
 object IAnimatedTileLayerOptions {
   
-  @scala.inline
-  def apply(mercator: js.Array[TileSource]): IAnimatedTileLayerOptions = {
+  inline def apply(mercator: js.Array[TileSource]): IAnimatedTileLayerOptions = {
     val __obj = js.Dynamic.literal(mercator = mercator.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnimatedTileLayerOptions]
   }
   
-  @scala.inline
-  implicit class IAnimatedTileLayerOptionsMutableBuilder[Self <: IAnimatedTileLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IAnimatedTileLayerOptions](x: Self) {
     
-    @scala.inline
-    def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
+    inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
+    inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
     
-    @scala.inline
-    def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+    inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
-    @scala.inline
-    def setLoadingScreen(value: CustomOverlay): Self = StObject.set(x, "loadingScreen", value.asInstanceOf[js.Any])
+    inline def setLoadingScreen(value: CustomOverlay): Self = StObject.set(x, "loadingScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingScreenUndefined: Self = StObject.set(x, "loadingScreen", js.undefined)
+    inline def setLoadingScreenUndefined: Self = StObject.set(x, "loadingScreen", js.undefined)
     
-    @scala.inline
-    def setMaxTotalLoadTime(value: Double): Self = StObject.set(x, "maxTotalLoadTime", value.asInstanceOf[js.Any])
+    inline def setMaxTotalLoadTime(value: Double): Self = StObject.set(x, "maxTotalLoadTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTotalLoadTimeUndefined: Self = StObject.set(x, "maxTotalLoadTime", js.undefined)
+    inline def setMaxTotalLoadTimeUndefined: Self = StObject.set(x, "maxTotalLoadTime", js.undefined)
     
-    @scala.inline
-    def setMercator(value: js.Array[TileSource]): Self = StObject.set(x, "mercator", value.asInstanceOf[js.Any])
+    inline def setMercator(value: js.Array[TileSource]): Self = StObject.set(x, "mercator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMercatorVarargs(value: TileSource*): Self = StObject.set(x, "mercator", js.Array(value :_*))
+    inline def setMercatorVarargs(value: TileSource*): Self = StObject.set(x, "mercator", js.Array(value :_*))
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

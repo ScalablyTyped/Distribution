@@ -13,16 +13,13 @@ trait DomainMetadataRequest extends StObject {
 }
 object DomainMetadataRequest {
   
-  @scala.inline
-  def apply(DomainName: String): DomainMetadataRequest = {
+  inline def apply(DomainName: String): DomainMetadataRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainMetadataRequest]
   }
   
-  @scala.inline
-  implicit class DomainMetadataRequestMutableBuilder[Self <: DomainMetadataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DomainMetadataRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

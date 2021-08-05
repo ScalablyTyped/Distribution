@@ -10,8 +10,7 @@ trait CoreWindowPopupShowingEventArgs
      with ICoreWindowPopupShowingEventArgs
 object CoreWindowPopupShowingEventArgs {
   
-  @scala.inline
-  def apply(setDesiredSize: Size => Unit): CoreWindowPopupShowingEventArgs = {
+  inline def apply(setDesiredSize: Size => Unit): CoreWindowPopupShowingEventArgs = {
     val __obj = js.Dynamic.literal(setDesiredSize = js.Any.fromFunction1(setDesiredSize))
     __obj.asInstanceOf[CoreWindowPopupShowingEventArgs]
   }

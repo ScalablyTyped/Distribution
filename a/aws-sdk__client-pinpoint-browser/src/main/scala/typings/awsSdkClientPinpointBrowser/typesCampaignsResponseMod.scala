@@ -23,29 +23,22 @@ object typesCampaignsResponseMod {
   }
   object CampaignsResponse {
     
-    @scala.inline
-    def apply(): CampaignsResponse = {
+    inline def apply(): CampaignsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CampaignsResponse]
     }
     
-    @scala.inline
-    implicit class CampaignsResponseMutableBuilder[Self <: CampaignsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: CampaignsResponse](x: Self) {
       
-      @scala.inline
-      def setItem(value: js.Array[CampaignResponse] | Iterable[CampaignResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[CampaignResponse] | Iterable[CampaignResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setItemVarargs(value: CampaignResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: CampaignResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     }
   }
   
@@ -61,23 +54,18 @@ object typesCampaignsResponseMod {
   }
   object UnmarshalledCampaignsResponse {
     
-    @scala.inline
-    def apply(): UnmarshalledCampaignsResponse = {
+    inline def apply(): UnmarshalledCampaignsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledCampaignsResponse]
     }
     
-    @scala.inline
-    implicit class UnmarshalledCampaignsResponseMutableBuilder[Self <: UnmarshalledCampaignsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledCampaignsResponse](x: Self) {
       
-      @scala.inline
-      def setItem(value: js.Array[UnmarshalledCampaignResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[UnmarshalledCampaignResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setItemVarargs(value: UnmarshalledCampaignResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: UnmarshalledCampaignResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
     }
   }
 }

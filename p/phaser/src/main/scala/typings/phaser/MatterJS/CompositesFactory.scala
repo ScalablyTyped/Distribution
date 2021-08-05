@@ -138,8 +138,7 @@ trait CompositesFactory extends StObject {
 }
 object CompositesFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     car: (Double, Double, Double, Double, Double) => CompositeType,
     chain: (CompositeType, Double, Double, Double, Double, js.Any) => CompositeType,
     mesh: (CompositeType, Double, Double, Boolean, js.Any) => CompositeType,
@@ -152,30 +151,22 @@ object CompositesFactory {
     __obj.asInstanceOf[CompositesFactory]
   }
   
-  @scala.inline
-  implicit class CompositesFactoryMutableBuilder[Self <: CompositesFactory] (val x: Self) extends AnyVal {
+  extension [Self <: CompositesFactory](x: Self) {
     
-    @scala.inline
-    def setCar(value: (Double, Double, Double, Double, Double) => CompositeType): Self = StObject.set(x, "car", js.Any.fromFunction5(value))
+    inline def setCar(value: (Double, Double, Double, Double, Double) => CompositeType): Self = StObject.set(x, "car", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setChain(value: (CompositeType, Double, Double, Double, Double, js.Any) => CompositeType): Self = StObject.set(x, "chain", js.Any.fromFunction6(value))
+    inline def setChain(value: (CompositeType, Double, Double, Double, Double, js.Any) => CompositeType): Self = StObject.set(x, "chain", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setMesh(value: (CompositeType, Double, Double, Boolean, js.Any) => CompositeType): Self = StObject.set(x, "mesh", js.Any.fromFunction5(value))
+    inline def setMesh(value: (CompositeType, Double, Double, Boolean, js.Any) => CompositeType): Self = StObject.set(x, "mesh", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setNewtonsCradle(value: (Double, Double, Double, Double, Double) => CompositeType): Self = StObject.set(x, "newtonsCradle", js.Any.fromFunction5(value))
+    inline def setNewtonsCradle(value: (Double, Double, Double, Double, Double) => CompositeType): Self = StObject.set(x, "newtonsCradle", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setPyramid(value: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType): Self = StObject.set(x, "pyramid", js.Any.fromFunction7(value))
+    inline def setPyramid(value: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType): Self = StObject.set(x, "pyramid", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setSoftBody(
+    inline def setSoftBody(
       value: (Double, Double, Double, Double, Double, Double, Boolean, Double, js.Any, js.Any) => CompositeType
     ): Self = StObject.set(x, "softBody", js.Any.fromFunction10(value))
     
-    @scala.inline
-    def setStack(value: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType): Self = StObject.set(x, "stack", js.Any.fromFunction7(value))
+    inline def setStack(value: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType): Self = StObject.set(x, "stack", js.Any.fromFunction7(value))
   }
 }

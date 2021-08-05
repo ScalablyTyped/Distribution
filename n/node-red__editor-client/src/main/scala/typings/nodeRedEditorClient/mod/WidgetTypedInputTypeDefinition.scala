@@ -27,52 +27,37 @@ trait WidgetTypedInputTypeDefinition extends StObject {
 }
 object WidgetTypedInputTypeDefinition {
   
-  @scala.inline
-  def apply(value: String): WidgetTypedInputTypeDefinition = {
+  inline def apply(value: String): WidgetTypedInputTypeDefinition = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidgetTypedInputTypeDefinition]
   }
   
-  @scala.inline
-  implicit class WidgetTypedInputTypeDefinitionMutableBuilder[Self <: WidgetTypedInputTypeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: WidgetTypedInputTypeDefinition](x: Self) {
     
-    @scala.inline
-    def setHasValue(value: Boolean): Self = StObject.set(x, "hasValue", value.asInstanceOf[js.Any])
+    inline def setHasValue(value: Boolean): Self = StObject.set(x, "hasValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasValueUndefined: Self = StObject.set(x, "hasValue", js.undefined)
+    inline def setHasValueUndefined: Self = StObject.set(x, "hasValue", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setValidate(value: (js.Function1[/* v */ String, Boolean]) | RegExp): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: (js.Function1[/* v */ String, Boolean]) | RegExp): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateFunction1(value: /* v */ String => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidateFunction1(value: /* v */ String => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

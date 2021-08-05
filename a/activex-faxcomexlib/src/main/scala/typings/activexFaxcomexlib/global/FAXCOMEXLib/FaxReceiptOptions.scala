@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxReceiptOptions Class */
 @JSGlobal("FAXCOMEXLib.FaxReceiptOptions")
 @js.native
-class FaxReceiptOptions protected ()
+/* private */ class FaxReceiptOptions ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxReceiptOptions {
   
@@ -21,7 +21,7 @@ class FaxReceiptOptions protected ()
   /* CompleteClass */
   var AuthenticationType: FAX_SMTP_AUTHENTICATION_TYPE_ENUM = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxReceiptOptions_typekey")
   var FAXCOMEXLibDotFaxReceiptOptions_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.FaxReceiptOptions = js.native
   

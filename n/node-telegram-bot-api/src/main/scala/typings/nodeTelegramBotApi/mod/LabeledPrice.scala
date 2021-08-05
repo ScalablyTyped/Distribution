@@ -12,19 +12,15 @@ trait LabeledPrice extends StObject {
 }
 object LabeledPrice {
   
-  @scala.inline
-  def apply(amount: Double, label: String): LabeledPrice = {
+  inline def apply(amount: Double, label: String): LabeledPrice = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabeledPrice]
   }
   
-  @scala.inline
-  implicit class LabeledPriceMutableBuilder[Self <: LabeledPrice] (val x: Self) extends AnyVal {
+  extension [Self <: LabeledPrice](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

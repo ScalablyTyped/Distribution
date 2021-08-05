@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TravelMode extends StObject
 object TravelMode {
   
-  @scala.inline
-  def bicycling: typings.googleMaps.googleMapsStrings.bicycling = "bicycling".asInstanceOf[typings.googleMaps.googleMapsStrings.bicycling]
+  inline def bicycling: typings.googleMaps.googleMapsStrings.bicycling = "bicycling".asInstanceOf[typings.googleMaps.googleMapsStrings.bicycling]
   
-  @scala.inline
-  def driving: typings.googleMaps.googleMapsStrings.driving = "driving".asInstanceOf[typings.googleMaps.googleMapsStrings.driving]
+  inline def driving: typings.googleMaps.googleMapsStrings.driving = "driving".asInstanceOf[typings.googleMaps.googleMapsStrings.driving]
   
-  @scala.inline
-  def transit: typings.googleMaps.googleMapsStrings.transit = "transit".asInstanceOf[typings.googleMaps.googleMapsStrings.transit]
+  inline def transit: typings.googleMaps.googleMapsStrings.transit = "transit".asInstanceOf[typings.googleMaps.googleMapsStrings.transit]
   
-  @scala.inline
-  def walking: typings.googleMaps.googleMapsStrings.walking = "walking".asInstanceOf[typings.googleMaps.googleMapsStrings.walking]
+  inline def walking: typings.googleMaps.googleMapsStrings.walking = "walking".asInstanceOf[typings.googleMaps.googleMapsStrings.walking]
 }

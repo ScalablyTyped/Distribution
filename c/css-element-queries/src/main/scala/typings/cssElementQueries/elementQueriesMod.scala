@@ -20,14 +20,12 @@ object elementQueriesMod {
       * Parses all available CSS and attach ResizeSensor to those elements which have rules attached.
       * Make sure this is called after 'load' event, because CSS files are not ready when domReady is fired.
       */
-    @scala.inline
-    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
     
     /**
       * Attaches to DOMLoadContent
       */
-    @scala.inline
-    def listen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[Unit]
+    inline def listen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[Unit]
   }
   
   @JSImport("css-element-queries/src/ElementQueries", "ElementQueries")
@@ -44,13 +42,11 @@ object elementQueriesMod {
       * Parses all available CSS and attach ResizeSensor to those elements which have rules attached.
       * Make sure this is called after 'load' event, because CSS files are not ready when domReady is fired.
       */
-    @scala.inline
-    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
     
     /**
       * Attaches to DOMLoadContent
       */
-    @scala.inline
-    def listen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[Unit]
+    inline def listen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[Unit]
   }
 }

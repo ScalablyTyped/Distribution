@@ -14,8 +14,6 @@ object predicateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def expression(model: Model, filterOp: LogicalComposition[Predicate]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expression")(model.asInstanceOf[js.Any], filterOp.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def expression(model: Model, filterOp: LogicalComposition[Predicate], node: DataFlowNode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expression")(model.asInstanceOf[js.Any], filterOp.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def expression(model: Model, filterOp: LogicalComposition[Predicate]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expression")(model.asInstanceOf[js.Any], filterOp.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def expression(model: Model, filterOp: LogicalComposition[Predicate], node: DataFlowNode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expression")(model.asInstanceOf[js.Any], filterOp.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[String]
 }

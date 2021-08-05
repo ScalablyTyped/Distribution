@@ -20,8 +20,7 @@ trait JobRequestMessage extends StObject {
 }
 object JobRequestMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     environment: JobEnvironment,
     jobId: String,
     jobName: String,
@@ -33,25 +32,18 @@ object JobRequestMessage {
     __obj.asInstanceOf[JobRequestMessage]
   }
   
-  @scala.inline
-  implicit class JobRequestMessageMutableBuilder[Self <: JobRequestMessage] (val x: Self) extends AnyVal {
+  extension [Self <: JobRequestMessage](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: JobEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: JobEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlan(value: TaskOrchestrationPlanReference): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+    inline def setPlan(value: TaskOrchestrationPlanReference): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeline(value: TimelineReference): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+    inline def setTimeline(value: TimelineReference): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait DocumentMetadata extends StObject {
 }
 object DocumentMetadata {
   
-  @scala.inline
-  def apply(): DocumentMetadata = {
+  inline def apply(): DocumentMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentMetadata]
   }
   
-  @scala.inline
-  implicit class DocumentMetadataMutableBuilder[Self <: DocumentMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentMetadata](x: Self) {
     
-    @scala.inline
-    def setPages(value: UInteger): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: UInteger): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "Pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "Pages", js.undefined)
   }
 }

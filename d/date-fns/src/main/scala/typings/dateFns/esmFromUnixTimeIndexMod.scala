@@ -9,8 +9,7 @@ object esmFromUnixTimeIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(unixTime: Double): Date = ^.asInstanceOf[js.Dynamic].apply(unixTime.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def apply(unixTime: Double): Date = ^.asInstanceOf[js.Dynamic].apply(unixTime.asInstanceOf[js.Any]).asInstanceOf[Date]
     
     @JSImport("date-fns/esm/fromUnixTime/index", JSImport.Default)
     @js.native

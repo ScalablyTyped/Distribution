@@ -27,14 +27,12 @@ object nativePickerAndroidMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def Item(_props: ValueAny): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(_props.asInstanceOf[js.Any]).asInstanceOf[Null]
+    inline def Item(_props: ValueAny): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(_props.asInstanceOf[js.Any]).asInstanceOf[Null]
     
     @JSImport("@ant-design/react-native/lib/picker/NativePicker.android", "default.contextType")
     @js.native
     def contextType: js.UndefOr[Context[js.Any]] = js.native
-    @scala.inline
-    def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   }
   
   trait IPickerProp extends StObject {
@@ -45,20 +43,16 @@ object nativePickerAndroidMod {
   }
   object IPickerProp {
     
-    @scala.inline
-    def apply(doScrollingComplete: js.Function, select: js.Function): IPickerProp = {
+    inline def apply(doScrollingComplete: js.Function, select: js.Function): IPickerProp = {
       val __obj = js.Dynamic.literal(doScrollingComplete = doScrollingComplete.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPickerProp]
     }
     
-    @scala.inline
-    implicit class IPickerPropMutableBuilder[Self <: IPickerProp] (val x: Self) extends AnyVal {
+    extension [Self <: IPickerProp](x: Self) {
       
-      @scala.inline
-      def setDoScrollingComplete(value: js.Function): Self = StObject.set(x, "doScrollingComplete", value.asInstanceOf[js.Any])
+      inline def setDoScrollingComplete(value: js.Function): Self = StObject.set(x, "doScrollingComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelect(value: js.Function): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: js.Function): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     }
   }
 }

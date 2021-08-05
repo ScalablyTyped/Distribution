@@ -26,8 +26,7 @@ trait WebAccountProviderDeleteAccountOperation extends StObject {
 }
 object WebAccountProviderDeleteAccountOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: WebAccountProviderOperationKind,
     reportCompleted: () => Unit,
     reportError: WebProviderError => Unit,
@@ -37,19 +36,14 @@ object WebAccountProviderDeleteAccountOperation {
     __obj.asInstanceOf[WebAccountProviderDeleteAccountOperation]
   }
   
-  @scala.inline
-  implicit class WebAccountProviderDeleteAccountOperationMutableBuilder[Self <: WebAccountProviderDeleteAccountOperation] (val x: Self) extends AnyVal {
+  extension [Self <: WebAccountProviderDeleteAccountOperation](x: Self) {
     
-    @scala.inline
-    def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
+    inline def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReportError(value: WebProviderError => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
+    inline def setReportError(value: WebProviderError => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWebAccount(value: WebAccount): Self = StObject.set(x, "webAccount", value.asInstanceOf[js.Any])
+    inline def setWebAccount(value: WebAccount): Self = StObject.set(x, "webAccount", value.asInstanceOf[js.Any])
   }
 }

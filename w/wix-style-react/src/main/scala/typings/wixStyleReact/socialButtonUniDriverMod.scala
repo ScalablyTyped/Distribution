@@ -15,8 +15,7 @@ object socialButtonUniDriverMod {
   }
   object SocialButtonUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -26,11 +25,9 @@ object socialButtonUniDriverMod {
       __obj.asInstanceOf[SocialButtonUniDriver]
     }
     
-    @scala.inline
-    implicit class SocialButtonUniDriverMutableBuilder[Self <: SocialButtonUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SocialButtonUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     }
   }
 }

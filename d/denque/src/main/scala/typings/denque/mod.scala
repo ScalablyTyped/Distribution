@@ -98,8 +98,7 @@ object mod {
   }
   object Denque {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       clear: () => Unit,
       get: Double => js.UndefOr[T],
       isEmpty: () => Boolean,
@@ -121,56 +120,39 @@ object mod {
       __obj.asInstanceOf[Denque[T]]
     }
     
-    @scala.inline
-    implicit class DenqueMutableBuilder[Self <: Denque[?], T] (val x: Self & Denque[T]) extends AnyVal {
+    extension [Self <: Denque[?], T](x: Self & Denque[T]) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: Double => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: Double => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeekAt(value: Double => js.UndefOr[T]): Self = StObject.set(x, "peekAt", js.Any.fromFunction1(value))
+      inline def setPeekAt(value: Double => js.UndefOr[T]): Self = StObject.set(x, "peekAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPeekBack(value: () => js.UndefOr[T]): Self = StObject.set(x, "peekBack", js.Any.fromFunction0(value))
+      inline def setPeekBack(value: () => js.UndefOr[T]): Self = StObject.set(x, "peekBack", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPeekFront(value: () => js.UndefOr[T]): Self = StObject.set(x, "peekFront", js.Any.fromFunction0(value))
+      inline def setPeekFront(value: () => js.UndefOr[T]): Self = StObject.set(x, "peekFront", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPop(value: () => js.UndefOr[T]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+      inline def setPop(value: () => js.UndefOr[T]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPush(value: T => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: T => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: (Double, Double) => js.Array[T]): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (Double, Double) => js.Array[T]): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveBack(value: () => js.UndefOr[T]): Self = StObject.set(x, "removeBack", js.Any.fromFunction0(value))
+      inline def setRemoveBack(value: () => js.UndefOr[T]): Self = StObject.set(x, "removeBack", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveOne(value: Double => js.UndefOr[T]): Self = StObject.set(x, "removeOne", js.Any.fromFunction1(value))
+      inline def setRemoveOne(value: Double => js.UndefOr[T]): Self = StObject.set(x, "removeOne", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShift(value: () => js.UndefOr[T]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
+      inline def setShift(value: () => js.UndefOr[T]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSplice(value: (Double, Double, /* repeated */ T) => js.UndefOr[js.Array[T]]): Self = StObject.set(x, "splice", js.Any.fromFunction3(value))
+      inline def setSplice(value: (Double, Double, /* repeated */ T) => js.UndefOr[js.Array[T]]): Self = StObject.set(x, "splice", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnshift(value: T => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
+      inline def setUnshift(value: T => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
     }
   }
 }

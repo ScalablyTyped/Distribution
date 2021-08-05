@@ -13,19 +13,15 @@ trait Event[TEvent /* <: js.Object */] extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply[TEvent /* <: js.Object */](event: TEvent, style: CSSProperties): Event[TEvent] = {
+  inline def apply[TEvent /* <: js.Object */](event: TEvent, style: CSSProperties): Event[TEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event[TEvent]]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event[?], TEvent /* <: js.Object */] (val x: Self & Event[TEvent]) extends AnyVal {
+  extension [Self <: Event[?], TEvent /* <: js.Object */](x: Self & Event[TEvent]) {
     
-    @scala.inline
-    def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

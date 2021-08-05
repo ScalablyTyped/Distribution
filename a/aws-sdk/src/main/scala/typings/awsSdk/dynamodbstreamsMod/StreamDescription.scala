@@ -53,73 +53,51 @@ trait StreamDescription extends StObject {
 }
 object StreamDescription {
   
-  @scala.inline
-  def apply(): StreamDescription = {
+  inline def apply(): StreamDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamDescription]
   }
   
-  @scala.inline
-  implicit class StreamDescriptionMutableBuilder[Self <: StreamDescription] (val x: Self) extends AnyVal {
+  extension [Self <: StreamDescription](x: Self) {
     
-    @scala.inline
-    def setCreationRequestDateTime(value: Date): Self = StObject.set(x, "CreationRequestDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationRequestDateTime(value: Date): Self = StObject.set(x, "CreationRequestDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationRequestDateTimeUndefined: Self = StObject.set(x, "CreationRequestDateTime", js.undefined)
+    inline def setCreationRequestDateTimeUndefined: Self = StObject.set(x, "CreationRequestDateTime", js.undefined)
     
-    @scala.inline
-    def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+    inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
+    inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
-    @scala.inline
-    def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+    inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
     
-    @scala.inline
-    def setLastEvaluatedShardId(value: ShardId): Self = StObject.set(x, "LastEvaluatedShardId", value.asInstanceOf[js.Any])
+    inline def setLastEvaluatedShardId(value: ShardId): Self = StObject.set(x, "LastEvaluatedShardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEvaluatedShardIdUndefined: Self = StObject.set(x, "LastEvaluatedShardId", js.undefined)
+    inline def setLastEvaluatedShardIdUndefined: Self = StObject.set(x, "LastEvaluatedShardId", js.undefined)
     
-    @scala.inline
-    def setShards(value: ShardDescriptionList): Self = StObject.set(x, "Shards", value.asInstanceOf[js.Any])
+    inline def setShards(value: ShardDescriptionList): Self = StObject.set(x, "Shards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardsUndefined: Self = StObject.set(x, "Shards", js.undefined)
+    inline def setShardsUndefined: Self = StObject.set(x, "Shards", js.undefined)
     
-    @scala.inline
-    def setShardsVarargs(value: Shard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
+    inline def setShardsVarargs(value: Shard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
     
-    @scala.inline
-    def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
+    inline def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamArnUndefined: Self = StObject.set(x, "StreamArn", js.undefined)
+    inline def setStreamArnUndefined: Self = StObject.set(x, "StreamArn", js.undefined)
     
-    @scala.inline
-    def setStreamLabel(value: String): Self = StObject.set(x, "StreamLabel", value.asInstanceOf[js.Any])
+    inline def setStreamLabel(value: String): Self = StObject.set(x, "StreamLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamLabelUndefined: Self = StObject.set(x, "StreamLabel", js.undefined)
+    inline def setStreamLabelUndefined: Self = StObject.set(x, "StreamLabel", js.undefined)
     
-    @scala.inline
-    def setStreamStatus(value: StreamStatus): Self = StObject.set(x, "StreamStatus", value.asInstanceOf[js.Any])
+    inline def setStreamStatus(value: StreamStatus): Self = StObject.set(x, "StreamStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamStatusUndefined: Self = StObject.set(x, "StreamStatus", js.undefined)
+    inline def setStreamStatusUndefined: Self = StObject.set(x, "StreamStatus", js.undefined)
     
-    @scala.inline
-    def setStreamViewType(value: StreamViewType): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
+    inline def setStreamViewType(value: StreamViewType): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
+    inline def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
   }
 }

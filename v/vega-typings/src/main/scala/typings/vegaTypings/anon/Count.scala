@@ -19,40 +19,29 @@ trait Count
 }
 object Count {
   
-  @scala.inline
-  def apply(gradient: typings.vegaTypings.encodeMod.Field): Count = {
+  inline def apply(gradient: typings.vegaTypings.encodeMod.Field): Count = {
     val __obj = js.Dynamic.literal(gradient = gradient.asInstanceOf[js.Any])
     __obj.asInstanceOf[Count]
   }
   
-  @scala.inline
-  implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
+  extension [Self <: Count](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setGradient(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: js.Array[Double]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Array[Double]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value :_*))
+    inline def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value :_*))
     
-    @scala.inline
-    def setStop(value: js.Array[Double]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: js.Array[Double]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     
-    @scala.inline
-    def setStopVarargs(value: Double*): Self = StObject.set(x, "stop", js.Array(value :_*))
+    inline def setStopVarargs(value: Double*): Self = StObject.set(x, "stop", js.Array(value :_*))
   }
 }

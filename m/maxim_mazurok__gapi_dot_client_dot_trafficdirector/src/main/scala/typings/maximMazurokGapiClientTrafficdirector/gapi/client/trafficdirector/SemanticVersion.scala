@@ -14,31 +14,23 @@ trait SemanticVersion extends StObject {
 }
 object SemanticVersion {
   
-  @scala.inline
-  def apply(): SemanticVersion = {
+  inline def apply(): SemanticVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SemanticVersion]
   }
   
-  @scala.inline
-  implicit class SemanticVersionMutableBuilder[Self <: SemanticVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticVersion](x: Self) {
     
-    @scala.inline
-    def setMajorNumber(value: Double): Self = StObject.set(x, "majorNumber", value.asInstanceOf[js.Any])
+    inline def setMajorNumber(value: Double): Self = StObject.set(x, "majorNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorNumberUndefined: Self = StObject.set(x, "majorNumber", js.undefined)
+    inline def setMajorNumberUndefined: Self = StObject.set(x, "majorNumber", js.undefined)
     
-    @scala.inline
-    def setMinorNumber(value: Double): Self = StObject.set(x, "minorNumber", value.asInstanceOf[js.Any])
+    inline def setMinorNumber(value: Double): Self = StObject.set(x, "minorNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorNumberUndefined: Self = StObject.set(x, "minorNumber", js.undefined)
+    inline def setMinorNumberUndefined: Self = StObject.set(x, "minorNumber", js.undefined)
     
-    @scala.inline
-    def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+    inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
   }
 }

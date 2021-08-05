@@ -25,8 +25,7 @@ trait XFlatParagraphIteratorProvider
 }
 object XFlatParagraphIteratorProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getFlatParagraphIterator: (Double, Boolean) => XFlatParagraphIterator,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XFlatParagraphIteratorProvider {
     __obj.asInstanceOf[XFlatParagraphIteratorProvider]
   }
   
-  @scala.inline
-  implicit class XFlatParagraphIteratorProviderMutableBuilder[Self <: XFlatParagraphIteratorProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XFlatParagraphIteratorProvider](x: Self) {
     
-    @scala.inline
-    def setGetFlatParagraphIterator(value: (Double, Boolean) => XFlatParagraphIterator): Self = StObject.set(x, "getFlatParagraphIterator", js.Any.fromFunction2(value))
+    inline def setGetFlatParagraphIterator(value: (Double, Boolean) => XFlatParagraphIterator): Self = StObject.set(x, "getFlatParagraphIterator", js.Any.fromFunction2(value))
   }
 }

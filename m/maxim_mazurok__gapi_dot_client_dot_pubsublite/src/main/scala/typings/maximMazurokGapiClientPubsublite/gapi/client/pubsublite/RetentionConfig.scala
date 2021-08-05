@@ -17,25 +17,19 @@ trait RetentionConfig extends StObject {
 }
 object RetentionConfig {
   
-  @scala.inline
-  def apply(): RetentionConfig = {
+  inline def apply(): RetentionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetentionConfig]
   }
   
-  @scala.inline
-  implicit class RetentionConfigMutableBuilder[Self <: RetentionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RetentionConfig](x: Self) {
     
-    @scala.inline
-    def setPerPartitionBytes(value: String): Self = StObject.set(x, "perPartitionBytes", value.asInstanceOf[js.Any])
+    inline def setPerPartitionBytes(value: String): Self = StObject.set(x, "perPartitionBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerPartitionBytesUndefined: Self = StObject.set(x, "perPartitionBytes", js.undefined)
+    inline def setPerPartitionBytesUndefined: Self = StObject.set(x, "perPartitionBytes", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

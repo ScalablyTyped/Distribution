@@ -15,25 +15,19 @@ trait TickOptions
 }
 object TickOptions {
   
-  @scala.inline
-  def apply(): TickOptions = {
+  inline def apply(): TickOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TickOptions]
   }
   
-  @scala.inline
-  implicit class TickOptionsMutableBuilder[Self <: TickOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TickOptions](x: Self) {
     
-    @scala.inline
-    def setMajor(value: MajorTickOptions | `false`): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: MajorTickOptions | `false`): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
+    inline def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
     
-    @scala.inline
-    def setMinor(value: NestedTickOptions | `false`): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: NestedTickOptions | `false`): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
+    inline def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait XSequenceOutputStream
 }
 object XSequenceOutputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     WrittenBytes: SafeArray[Double],
     acquire: () => Unit,
     closeOutput: () => Unit,
@@ -35,13 +34,10 @@ object XSequenceOutputStream {
     __obj.asInstanceOf[XSequenceOutputStream]
   }
   
-  @scala.inline
-  implicit class XSequenceOutputStreamMutableBuilder[Self <: XSequenceOutputStream] (val x: Self) extends AnyVal {
+  extension [Self <: XSequenceOutputStream](x: Self) {
     
-    @scala.inline
-    def setGetWrittenBytes(value: () => SafeArray[Double]): Self = StObject.set(x, "getWrittenBytes", js.Any.fromFunction0(value))
+    inline def setGetWrittenBytes(value: () => SafeArray[Double]): Self = StObject.set(x, "getWrittenBytes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWrittenBytes(value: SafeArray[Double]): Self = StObject.set(x, "WrittenBytes", value.asInstanceOf[js.Any])
+    inline def setWrittenBytes(value: SafeArray[Double]): Self = StObject.set(x, "WrittenBytes", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ object enc {
   }
   object EncStatic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Base64: ICoder,
       Hex: ICoder,
       Latin1: ICoder,
@@ -39,29 +38,21 @@ object enc {
       __obj.asInstanceOf[EncStatic]
     }
     
-    @scala.inline
-    implicit class EncStaticMutableBuilder[Self <: EncStatic] (val x: Self) extends AnyVal {
+    extension [Self <: EncStatic](x: Self) {
       
-      @scala.inline
-      def setBase64(value: ICoder): Self = StObject.set(x, "Base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: ICoder): Self = StObject.set(x, "Base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHex(value: ICoder): Self = StObject.set(x, "Hex", value.asInstanceOf[js.Any])
+      inline def setHex(value: ICoder): Self = StObject.set(x, "Hex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatin1(value: ICoder): Self = StObject.set(x, "Latin1", value.asInstanceOf[js.Any])
+      inline def setLatin1(value: ICoder): Self = StObject.set(x, "Latin1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtf16(value: ICoder): Self = StObject.set(x, "Utf16", value.asInstanceOf[js.Any])
+      inline def setUtf16(value: ICoder): Self = StObject.set(x, "Utf16", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtf16BE(value: ICoder): Self = StObject.set(x, "Utf16BE", value.asInstanceOf[js.Any])
+      inline def setUtf16BE(value: ICoder): Self = StObject.set(x, "Utf16BE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtf16LE(value: ICoder): Self = StObject.set(x, "Utf16LE", value.asInstanceOf[js.Any])
+      inline def setUtf16LE(value: ICoder): Self = StObject.set(x, "Utf16LE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtf8(value: ICoder): Self = StObject.set(x, "Utf8", value.asInstanceOf[js.Any])
+      inline def setUtf8(value: ICoder): Self = StObject.set(x, "Utf8", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,8 +62,7 @@ object enc {
        with IDecoder
   object ICoder {
     
-    @scala.inline
-    def apply(parse: String => WordArray, stringify: WordArray => String): ICoder = {
+    inline def apply(parse: String => WordArray, stringify: WordArray => String): ICoder = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
       __obj.asInstanceOf[ICoder]
     }
@@ -84,17 +74,14 @@ object enc {
   }
   object IDecoder {
     
-    @scala.inline
-    def apply(parse: String => WordArray): IDecoder = {
+    inline def apply(parse: String => WordArray): IDecoder = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
       __obj.asInstanceOf[IDecoder]
     }
     
-    @scala.inline
-    implicit class IDecoderMutableBuilder[Self <: IDecoder] (val x: Self) extends AnyVal {
+    extension [Self <: IDecoder](x: Self) {
       
-      @scala.inline
-      def setParse(value: String => WordArray): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: String => WordArray): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }
   }
   
@@ -104,17 +91,14 @@ object enc {
   }
   object IEncoder {
     
-    @scala.inline
-    def apply(stringify: WordArray => String): IEncoder = {
+    inline def apply(stringify: WordArray => String): IEncoder = {
       val __obj = js.Dynamic.literal(stringify = js.Any.fromFunction1(stringify))
       __obj.asInstanceOf[IEncoder]
     }
     
-    @scala.inline
-    implicit class IEncoderMutableBuilder[Self <: IEncoder] (val x: Self) extends AnyVal {
+    extension [Self <: IEncoder](x: Self) {
       
-      @scala.inline
-      def setStringify(value: WordArray => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+      inline def setStringify(value: WordArray => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
     }
   }
 }

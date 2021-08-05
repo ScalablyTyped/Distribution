@@ -12,19 +12,15 @@ trait pixelPos extends StObject {
 }
 object pixelPos {
   
-  @scala.inline
-  def apply(x: Double, y: Double): pixelPos = {
+  inline def apply(x: Double, y: Double): pixelPos = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[pixelPos]
   }
   
-  @scala.inline
-  implicit class pixelPosMutableBuilder[Self <: pixelPos] (val x: Self) extends AnyVal {
+  extension [Self <: pixelPos](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

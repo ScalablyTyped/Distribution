@@ -19,10 +19,8 @@ object arrayLikeObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T](arrayLike: ArrayLike[T]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(arrayLike.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T](
+    inline def create[T](arrayLike: ArrayLike[T]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(arrayLike.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create[T](
       arrayLike: ArrayLike[T],
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(arrayLike.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]

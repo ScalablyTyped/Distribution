@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IHTMLImgElement extends StObject {
   
-  @JSName("MSHTML.IHTMLImgElement_typekey")
+  /* private */ @JSName("MSHTML.IHTMLImgElement_typekey")
   var MSHTMLDotIHTMLImgElement_typekey: IHTMLImgElement
   
   var align: String
@@ -69,8 +69,7 @@ trait IHTMLImgElement extends StObject {
 }
 object IHTMLImgElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIHTMLImgElement_typekey: IHTMLImgElement,
     align: String,
     alt: String,
@@ -107,97 +106,66 @@ object IHTMLImgElement {
     __obj.asInstanceOf[IHTMLImgElement]
   }
   
-  @scala.inline
-  implicit class IHTMLImgElementMutableBuilder[Self <: IHTMLImgElement] (val x: Self) extends AnyVal {
+  extension [Self <: IHTMLImgElement](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: js.Any): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: js.Any): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+    inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynsrc(value: String): Self = StObject.set(x, "dynsrc", value.asInstanceOf[js.Any])
+    inline def setDynsrc(value: String): Self = StObject.set(x, "dynsrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileCreatedDate(value: String): Self = StObject.set(x, "fileCreatedDate", value.asInstanceOf[js.Any])
+    inline def setFileCreatedDate(value: String): Self = StObject.set(x, "fileCreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileModifiedDate(value: String): Self = StObject.set(x, "fileModifiedDate", value.asInstanceOf[js.Any])
+    inline def setFileModifiedDate(value: String): Self = StObject.set(x, "fileModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUpdatedDate(value: String): Self = StObject.set(x, "fileUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setFileUpdatedDate(value: String): Self = StObject.set(x, "fileUpdatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHspace(value: Double): Self = StObject.set(x, "hspace", value.asInstanceOf[js.Any])
+    inline def setHspace(value: Double): Self = StObject.set(x, "hspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMap(value: Boolean): Self = StObject.set(x, "isMap", value.asInstanceOf[js.Any])
+    inline def setIsMap(value: Boolean): Self = StObject.set(x, "isMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoop(value: js.Any): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: js.Any): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowsrc(value: String): Self = StObject.set(x, "lowsrc", value.asInstanceOf[js.Any])
+    inline def setLowsrc(value: String): Self = StObject.set(x, "lowsrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotIHTMLImgElement_typekey(value: IHTMLImgElement): Self = StObject.set(x, "MSHTML.IHTMLImgElement_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIHTMLImgElement_typekey(value: IHTMLImgElement): Self = StObject.set(x, "MSHTML.IHTMLImgElement_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameProp(value: String): Self = StObject.set(x, "nameProp", value.asInstanceOf[js.Any])
+    inline def setNameProp(value: String): Self = StObject.set(x, "nameProp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnabort(value: js.Any): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+    inline def setOnabort(value: js.Any): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnerror(value: js.Any): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+    inline def setOnerror(value: js.Any): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnload(value: js.Any): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
+    inline def setOnload(value: js.Any): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyState(value: String): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
+    inline def setReadyState(value: String): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMap(value: String): Self = StObject.set(x, "useMap", value.asInstanceOf[js.Any])
+    inline def setUseMap(value: String): Self = StObject.set(x, "useMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVrml(value: String): Self = StObject.set(x, "vrml", value.asInstanceOf[js.Any])
+    inline def setVrml(value: String): Self = StObject.set(x, "vrml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVspace(value: Double): Self = StObject.set(x, "vspace", value.asInstanceOf[js.Any])
+    inline def setVspace(value: Double): Self = StObject.set(x, "vspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -23,25 +23,19 @@ trait GetJobRunRequest extends StObject {
 }
 object GetJobRunRequest {
   
-  @scala.inline
-  def apply(JobName: NameString, RunId: IdString): GetJobRunRequest = {
+  inline def apply(JobName: NameString, RunId: IdString): GetJobRunRequest = {
     val __obj = js.Dynamic.literal(JobName = JobName.asInstanceOf[js.Any], RunId = RunId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJobRunRequest]
   }
   
-  @scala.inline
-  implicit class GetJobRunRequestMutableBuilder[Self <: GetJobRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetJobRunRequest](x: Self) {
     
-    @scala.inline
-    def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredecessorsIncluded(value: BooleanValue): Self = StObject.set(x, "PredecessorsIncluded", value.asInstanceOf[js.Any])
+    inline def setPredecessorsIncluded(value: BooleanValue): Self = StObject.set(x, "PredecessorsIncluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredecessorsIncludedUndefined: Self = StObject.set(x, "PredecessorsIncluded", js.undefined)
+    inline def setPredecessorsIncludedUndefined: Self = StObject.set(x, "PredecessorsIncluded", js.undefined)
     
-    @scala.inline
-    def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
   }
 }

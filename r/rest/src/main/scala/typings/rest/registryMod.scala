@@ -20,20 +20,16 @@ object registryMod extends Shortcut {
   }
   object MIMEConverter {
     
-    @scala.inline
-    def apply(read: String => js.Any | Promise[js.Any], write: js.Any => String | Promise[String]): MIMEConverter = {
+    inline def apply(read: String => js.Any | Promise[js.Any], write: js.Any => String | Promise[String]): MIMEConverter = {
       val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[MIMEConverter]
     }
     
-    @scala.inline
-    implicit class MIMEConverterMutableBuilder[Self <: MIMEConverter] (val x: Self) extends AnyVal {
+    extension [Self <: MIMEConverter](x: Self) {
       
-      @scala.inline
-      def setRead(value: String => js.Any | Promise[js.Any]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: String => js.Any | Promise[js.Any]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: js.Any => String | Promise[String]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: js.Any => String | Promise[String]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -45,20 +41,16 @@ object registryMod extends Shortcut {
   }
   object Registry {
     
-    @scala.inline
-    def apply(lookup: String => Promise[MIMEConverter], register: (String, MIMEConverter) => Unit): Registry = {
+    inline def apply(lookup: String => Promise[MIMEConverter], register: (String, MIMEConverter) => Unit): Registry = {
       val __obj = js.Dynamic.literal(lookup = js.Any.fromFunction1(lookup), register = js.Any.fromFunction2(register))
       __obj.asInstanceOf[Registry]
     }
     
-    @scala.inline
-    implicit class RegistryMutableBuilder[Self <: Registry] (val x: Self) extends AnyVal {
+    extension [Self <: Registry](x: Self) {
       
-      @scala.inline
-      def setLookup(value: String => Promise[MIMEConverter]): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+      inline def setLookup(value: String => Promise[MIMEConverter]): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegister(value: (String, MIMEConverter) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+      inline def setRegister(value: (String, MIMEConverter) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
   }
   

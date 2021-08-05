@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HasSelectionSet extends StObject
 object HasSelectionSet {
   
-  @scala.inline
-  def FragmentDefinition(kind: String, name: Name, selectionSet: SelectionSet, typeCondition: NamedType): typings.typedGraphql.mod.FragmentDefinition = {
+  inline def FragmentDefinition(kind: String, name: Name, selectionSet: SelectionSet, typeCondition: NamedType): typings.typedGraphql.mod.FragmentDefinition = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selectionSet = selectionSet.asInstanceOf[js.Any], typeCondition = typeCondition.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedGraphql.mod.FragmentDefinition]
   }
   
-  @scala.inline
-  def OperationDefinition(kind: String, operation: String, selectionSet: SelectionSet): typings.typedGraphql.mod.OperationDefinition = {
+  inline def OperationDefinition(kind: String, operation: String, selectionSet: SelectionSet): typings.typedGraphql.mod.OperationDefinition = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], selectionSet = selectionSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedGraphql.mod.OperationDefinition]
   }

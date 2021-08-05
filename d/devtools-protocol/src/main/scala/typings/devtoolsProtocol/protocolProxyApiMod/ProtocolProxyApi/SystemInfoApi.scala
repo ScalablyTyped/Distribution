@@ -20,8 +20,7 @@ trait SystemInfoApi extends StObject {
 }
 object SystemInfoApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getInfo: () => js.Promise[GetInfoResponse],
     getProcessInfo: () => js.Promise[GetProcessInfoResponse]
   ): SystemInfoApi = {
@@ -29,13 +28,10 @@ object SystemInfoApi {
     __obj.asInstanceOf[SystemInfoApi]
   }
   
-  @scala.inline
-  implicit class SystemInfoApiMutableBuilder[Self <: SystemInfoApi] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoApi](x: Self) {
     
-    @scala.inline
-    def setGetInfo(value: () => js.Promise[GetInfoResponse]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+    inline def setGetInfo(value: () => js.Promise[GetInfoResponse]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProcessInfo(value: () => js.Promise[GetProcessInfoResponse]): Self = StObject.set(x, "getProcessInfo", js.Any.fromFunction0(value))
+    inline def setGetProcessInfo(value: () => js.Promise[GetProcessInfoResponse]): Self = StObject.set(x, "getProcessInfo", js.Any.fromFunction0(value))
   }
 }

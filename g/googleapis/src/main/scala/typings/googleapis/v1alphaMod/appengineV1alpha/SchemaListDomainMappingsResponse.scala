@@ -21,28 +21,21 @@ trait SchemaListDomainMappingsResponse extends StObject {
 }
 object SchemaListDomainMappingsResponse {
   
-  @scala.inline
-  def apply(): SchemaListDomainMappingsResponse = {
+  inline def apply(): SchemaListDomainMappingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListDomainMappingsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListDomainMappingsResponseMutableBuilder[Self <: SchemaListDomainMappingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListDomainMappingsResponse](x: Self) {
     
-    @scala.inline
-    def setDomainMappings(value: js.Array[SchemaDomainMapping]): Self = StObject.set(x, "domainMappings", value.asInstanceOf[js.Any])
+    inline def setDomainMappings(value: js.Array[SchemaDomainMapping]): Self = StObject.set(x, "domainMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainMappingsUndefined: Self = StObject.set(x, "domainMappings", js.undefined)
+    inline def setDomainMappingsUndefined: Self = StObject.set(x, "domainMappings", js.undefined)
     
-    @scala.inline
-    def setDomainMappingsVarargs(value: SchemaDomainMapping*): Self = StObject.set(x, "domainMappings", js.Array(value :_*))
+    inline def setDomainMappingsVarargs(value: SchemaDomainMapping*): Self = StObject.set(x, "domainMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

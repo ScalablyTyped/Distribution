@@ -15,37 +15,27 @@ trait Directory
 }
 object Directory {
   
-  @scala.inline
-  def apply(): Directory = {
+  inline def apply(): Directory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Directory]
   }
   
-  @scala.inline
-  implicit class DirectoryMutableBuilder[Self <: Directory] (val x: Self) extends AnyVal {
+  extension [Self <: Directory](x: Self) {
     
-    @scala.inline
-    def setAdministrativeUnits(value: NullableOption[js.Array[AdministrativeUnit]]): Self = StObject.set(x, "administrativeUnits", value.asInstanceOf[js.Any])
+    inline def setAdministrativeUnits(value: NullableOption[js.Array[AdministrativeUnit]]): Self = StObject.set(x, "administrativeUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdministrativeUnitsNull: Self = StObject.set(x, "administrativeUnits", null)
+    inline def setAdministrativeUnitsNull: Self = StObject.set(x, "administrativeUnits", null)
     
-    @scala.inline
-    def setAdministrativeUnitsUndefined: Self = StObject.set(x, "administrativeUnits", js.undefined)
+    inline def setAdministrativeUnitsUndefined: Self = StObject.set(x, "administrativeUnits", js.undefined)
     
-    @scala.inline
-    def setAdministrativeUnitsVarargs(value: AdministrativeUnit*): Self = StObject.set(x, "administrativeUnits", js.Array(value :_*))
+    inline def setAdministrativeUnitsVarargs(value: AdministrativeUnit*): Self = StObject.set(x, "administrativeUnits", js.Array(value :_*))
     
-    @scala.inline
-    def setDeletedItems(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "deletedItems", value.asInstanceOf[js.Any])
+    inline def setDeletedItems(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "deletedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedItemsNull: Self = StObject.set(x, "deletedItems", null)
+    inline def setDeletedItemsNull: Self = StObject.set(x, "deletedItems", null)
     
-    @scala.inline
-    def setDeletedItemsUndefined: Self = StObject.set(x, "deletedItems", js.undefined)
+    inline def setDeletedItemsUndefined: Self = StObject.set(x, "deletedItems", js.undefined)
     
-    @scala.inline
-    def setDeletedItemsVarargs(value: DirectoryObject*): Self = StObject.set(x, "deletedItems", js.Array(value :_*))
+    inline def setDeletedItemsVarargs(value: DirectoryObject*): Self = StObject.set(x, "deletedItems", js.Array(value :_*))
   }
 }

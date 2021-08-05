@@ -27,55 +27,39 @@ trait OrgChartOptions extends StObject {
 }
 object OrgChartOptions {
   
-  @scala.inline
-  def apply(): OrgChartOptions = {
+  inline def apply(): OrgChartOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrgChartOptions]
   }
   
-  @scala.inline
-  implicit class OrgChartOptionsMutableBuilder[Self <: OrgChartOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OrgChartOptions](x: Self) {
     
-    @scala.inline
-    def setAllowCollapse(value: Boolean): Self = StObject.set(x, "allowCollapse", value.asInstanceOf[js.Any])
+    inline def setAllowCollapse(value: Boolean): Self = StObject.set(x, "allowCollapse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowCollapseUndefined: Self = StObject.set(x, "allowCollapse", js.undefined)
+    inline def setAllowCollapseUndefined: Self = StObject.set(x, "allowCollapse", js.undefined)
     
-    @scala.inline
-    def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
+    inline def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowHtmlUndefined: Self = StObject.set(x, "allowHtml", js.undefined)
+    inline def setAllowHtmlUndefined: Self = StObject.set(x, "allowHtml", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setNodeClass(value: String): Self = StObject.set(x, "nodeClass", value.asInstanceOf[js.Any])
+    inline def setNodeClass(value: String): Self = StObject.set(x, "nodeClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeClassUndefined: Self = StObject.set(x, "nodeClass", js.undefined)
+    inline def setNodeClassUndefined: Self = StObject.set(x, "nodeClass", js.undefined)
     
-    @scala.inline
-    def setSelectedNodeClass(value: String): Self = StObject.set(x, "selectedNodeClass", value.asInstanceOf[js.Any])
+    inline def setSelectedNodeClass(value: String): Self = StObject.set(x, "selectedNodeClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedNodeClassUndefined: Self = StObject.set(x, "selectedNodeClass", js.undefined)
+    inline def setSelectedNodeClassUndefined: Self = StObject.set(x, "selectedNodeClass", js.undefined)
     
-    @scala.inline
-    def setSelectionColor(value: String): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
+    inline def setSelectionColor(value: String): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionColorUndefined: Self = StObject.set(x, "selectionColor", js.undefined)
+    inline def setSelectionColorUndefined: Self = StObject.set(x, "selectionColor", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

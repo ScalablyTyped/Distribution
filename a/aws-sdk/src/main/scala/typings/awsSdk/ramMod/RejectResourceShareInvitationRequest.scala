@@ -18,22 +18,17 @@ trait RejectResourceShareInvitationRequest extends StObject {
 }
 object RejectResourceShareInvitationRequest {
   
-  @scala.inline
-  def apply(resourceShareInvitationArn: String): RejectResourceShareInvitationRequest = {
+  inline def apply(resourceShareInvitationArn: String): RejectResourceShareInvitationRequest = {
     val __obj = js.Dynamic.literal(resourceShareInvitationArn = resourceShareInvitationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RejectResourceShareInvitationRequest]
   }
   
-  @scala.inline
-  implicit class RejectResourceShareInvitationRequestMutableBuilder[Self <: RejectResourceShareInvitationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RejectResourceShareInvitationRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setResourceShareInvitationArn(value: String): Self = StObject.set(x, "resourceShareInvitationArn", value.asInstanceOf[js.Any])
+    inline def setResourceShareInvitationArn(value: String): Self = StObject.set(x, "resourceShareInvitationArn", value.asInstanceOf[js.Any])
   }
 }

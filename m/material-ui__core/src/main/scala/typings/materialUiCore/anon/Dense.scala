@@ -10,19 +10,15 @@ trait Dense extends StObject {
 }
 object Dense {
   
-  @scala.inline
-  def apply(): Dense = {
+  inline def apply(): Dense = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dense]
   }
   
-  @scala.inline
-  implicit class DenseMutableBuilder[Self <: Dense] (val x: Self) extends AnyVal {
+  extension [Self <: Dense](x: Self) {
     
-    @scala.inline
-    def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+    inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+    inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
   }
 }

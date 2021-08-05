@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IHTMLAttributeCollection3 extends StObject {
   
-  @JSName("MSHTML.IHTMLAttributeCollection3_typekey")
+  /* private */ @JSName("MSHTML.IHTMLAttributeCollection3_typekey")
   var MSHTMLDotIHTMLAttributeCollection3_typekey: IHTMLAttributeCollection3
   
   def getNamedItem(bstrName: String): IHTMLDOMAttribute
@@ -21,8 +21,7 @@ trait IHTMLAttributeCollection3 extends StObject {
 }
 object IHTMLAttributeCollection3 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIHTMLAttributeCollection3_typekey: IHTMLAttributeCollection3,
     getNamedItem: String => IHTMLDOMAttribute,
     item: Double => IHTMLDOMAttribute,
@@ -35,25 +34,18 @@ object IHTMLAttributeCollection3 {
     __obj.asInstanceOf[IHTMLAttributeCollection3]
   }
   
-  @scala.inline
-  implicit class IHTMLAttributeCollection3MutableBuilder[Self <: IHTMLAttributeCollection3] (val x: Self) extends AnyVal {
+  extension [Self <: IHTMLAttributeCollection3](x: Self) {
     
-    @scala.inline
-    def setGetNamedItem(value: String => IHTMLDOMAttribute): Self = StObject.set(x, "getNamedItem", js.Any.fromFunction1(value))
+    inline def setGetNamedItem(value: String => IHTMLDOMAttribute): Self = StObject.set(x, "getNamedItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: Double => IHTMLDOMAttribute): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IHTMLDOMAttribute): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotIHTMLAttributeCollection3_typekey(value: IHTMLAttributeCollection3): Self = StObject.set(x, "MSHTML.IHTMLAttributeCollection3_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIHTMLAttributeCollection3_typekey(value: IHTMLAttributeCollection3): Self = StObject.set(x, "MSHTML.IHTMLAttributeCollection3_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveNamedItem(value: String => IHTMLDOMAttribute): Self = StObject.set(x, "removeNamedItem", js.Any.fromFunction1(value))
+    inline def setRemoveNamedItem(value: String => IHTMLDOMAttribute): Self = StObject.set(x, "removeNamedItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNamedItem(value: IHTMLDOMAttribute => IHTMLDOMAttribute): Self = StObject.set(x, "setNamedItem", js.Any.fromFunction1(value))
+    inline def setSetNamedItem(value: IHTMLDOMAttribute => IHTMLDOMAttribute): Self = StObject.set(x, "setNamedItem", js.Any.fromFunction1(value))
   }
 }

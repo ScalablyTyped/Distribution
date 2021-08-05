@@ -78,17 +78,13 @@ object AMap {
     trait DataType extends StObject
     object DataType {
       
-      @scala.inline
-      def all: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.all = "all".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.all]
+      inline def all: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.all = "all".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.all]
       
-      @scala.inline
-      def bus: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.bus = "bus".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.bus]
+      inline def bus: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.bus = "bus".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.bus]
       
-      @scala.inline
-      def busline: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.busline = "busline".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.busline]
+      inline def busline: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.busline = "busline".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.busline]
       
-      @scala.inline
-      def poi: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.poi = "poi".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.poi]
+      inline def poi: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.poi = "poi".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.poi]
     }
     
     trait EventMap extends StObject {
@@ -112,8 +108,7 @@ object AMap {
     }
     object EventMap {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         choose: Event_[choose, typings.amapJsApiAutocomplete.anon.Tip],
         complete: Event_[complete, SearchResult | Info],
         error: Event_[error, Info],
@@ -123,20 +118,15 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      @scala.inline
-      implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+      extension [Self <: EventMap](x: Self) {
         
-        @scala.inline
-        def setChoose(value: Event_[choose, typings.amapJsApiAutocomplete.anon.Tip]): Self = StObject.set(x, "choose", value.asInstanceOf[js.Any])
+        inline def setChoose(value: Event_[choose, typings.amapJsApiAutocomplete.anon.Tip]): Self = StObject.set(x, "choose", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setComplete(value: Event_[complete, SearchResult | Info]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+        inline def setComplete(value: Event_[complete, SearchResult | Info]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelect(value: Event_[select, typings.amapJsApiAutocomplete.anon.Tip]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+        inline def setSelect(value: Event_[select, typings.amapJsApiAutocomplete.anon.Tip]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       }
     }
     
@@ -184,68 +174,48 @@ object AMap {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+        inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+        inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
         
-        @scala.inline
-        def setCitylimit(value: Boolean): Self = StObject.set(x, "citylimit", value.asInstanceOf[js.Any])
+        inline def setCitylimit(value: Boolean): Self = StObject.set(x, "citylimit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCitylimitUndefined: Self = StObject.set(x, "citylimit", js.undefined)
+        inline def setCitylimitUndefined: Self = StObject.set(x, "citylimit", js.undefined)
         
-        @scala.inline
-        def setCloseResultOnScroll(value: Boolean): Self = StObject.set(x, "closeResultOnScroll", value.asInstanceOf[js.Any])
+        inline def setCloseResultOnScroll(value: Boolean): Self = StObject.set(x, "closeResultOnScroll", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCloseResultOnScrollUndefined: Self = StObject.set(x, "closeResultOnScroll", js.undefined)
+        inline def setCloseResultOnScrollUndefined: Self = StObject.set(x, "closeResultOnScroll", js.undefined)
         
-        @scala.inline
-        def setDatatype(value: DataType): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+        inline def setDatatype(value: DataType): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+        inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
         
-        @scala.inline
-        def setInput(value: String | HTMLInputElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+        inline def setInput(value: String | HTMLInputElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+        inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
         
-        @scala.inline
-        def setLang(value: Lang): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+        inline def setLang(value: Lang): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+        inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
         
-        @scala.inline
-        def setOutPutDirAuto(value: Boolean): Self = StObject.set(x, "outPutDirAuto", value.asInstanceOf[js.Any])
+        inline def setOutPutDirAuto(value: Boolean): Self = StObject.set(x, "outPutDirAuto", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutPutDirAutoUndefined: Self = StObject.set(x, "outPutDirAuto", js.undefined)
+        inline def setOutPutDirAutoUndefined: Self = StObject.set(x, "outPutDirAuto", js.undefined)
         
-        @scala.inline
-        def setOutput(value: String | HTMLDivElement): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+        inline def setOutput(value: String | HTMLDivElement): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+        inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -268,26 +238,20 @@ object AMap {
     }
     object SearchResult {
       
-      @scala.inline
-      def apply(count: Double, info: String, tips: js.Array[Tip]): SearchResult = {
+      inline def apply(count: Double, info: String, tips: js.Array[Tip]): SearchResult = {
         val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], tips = tips.asInstanceOf[js.Any])
         __obj.asInstanceOf[SearchResult]
       }
       
-      @scala.inline
-      implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+      extension [Self <: SearchResult](x: Self) {
         
-        @scala.inline
-        def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTips(value: js.Array[Tip]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
+        inline def setTips(value: js.Array[Tip]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTipsVarargs(value: Tip*): Self = StObject.set(x, "tips", js.Array(value :_*))
+        inline def setTipsVarargs(value: Tip*): Self = StObject.set(x, "tips", js.Array(value :_*))
       }
     }
     
@@ -299,14 +263,11 @@ object AMap {
     trait SearchStatus extends StObject
     object SearchStatus {
       
-      @scala.inline
-      def complete: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.complete = "complete".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.complete]
+      inline def complete: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.complete = "complete".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.complete]
       
-      @scala.inline
-      def error: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.error = "error".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.error]
+      inline def error: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.error = "error".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.error]
       
-      @scala.inline
-      def no_data: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.no_data]
+      inline def no_data: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.no_data]
     }
     
     trait Tip extends StObject {
@@ -353,8 +314,7 @@ object AMap {
     }
     object Tip {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         adcode: String,
         address: String,
         city: js.Array[js.Any],
@@ -368,35 +328,25 @@ object AMap {
         __obj.asInstanceOf[Tip]
       }
       
-      @scala.inline
-      implicit class TipMutableBuilder[Self <: Tip] (val x: Self) extends AnyVal {
+      extension [Self <: Tip](x: Self) {
         
-        @scala.inline
-        def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+        inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+        inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCity(value: js.Array[js.Any]): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+        inline def setCity(value: js.Array[js.Any]): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCityVarargs(value: js.Any*): Self = StObject.set(x, "city", js.Array(value :_*))
+        inline def setCityVarargs(value: js.Any*): Self = StObject.set(x, "city", js.Array(value :_*))
         
-        @scala.inline
-        def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
+        inline def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypecode(value: String): Self = StObject.set(x, "typecode", value.asInstanceOf[js.Any])
+        inline def setTypecode(value: String): Self = StObject.set(x, "typecode", value.asInstanceOf[js.Any])
       }
     }
   }

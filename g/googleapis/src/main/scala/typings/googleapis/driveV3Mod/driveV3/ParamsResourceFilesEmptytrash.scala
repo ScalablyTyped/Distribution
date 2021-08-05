@@ -19,19 +19,15 @@ trait ParamsResourceFilesEmptytrash
 }
 object ParamsResourceFilesEmptytrash {
   
-  @scala.inline
-  def apply(): ParamsResourceFilesEmptytrash = {
+  inline def apply(): ParamsResourceFilesEmptytrash = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceFilesEmptytrash]
   }
   
-  @scala.inline
-  implicit class ParamsResourceFilesEmptytrashMutableBuilder[Self <: ParamsResourceFilesEmptytrash] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceFilesEmptytrash](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
   }
 }

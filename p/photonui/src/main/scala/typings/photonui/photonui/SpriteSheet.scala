@@ -28,8 +28,7 @@ trait SpriteSheet
 }
 object SpriteSheet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addIcon: (String, Double, Double) => Unit,
     destroy: () => Unit,
     getIconCSS: String => String,
@@ -46,31 +45,22 @@ object SpriteSheet {
     __obj.asInstanceOf[SpriteSheet]
   }
   
-  @scala.inline
-  implicit class SpriteSheetMutableBuilder[Self <: SpriteSheet] (val x: Self) extends AnyVal {
+  extension [Self <: SpriteSheet](x: Self) {
     
-    @scala.inline
-    def setAddIcon(value: (String, Double, Double) => Unit): Self = StObject.set(x, "addIcon", js.Any.fromFunction3(value))
+    inline def setAddIcon(value: (String, Double, Double) => Unit): Self = StObject.set(x, "addIcon", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetIconCSS(value: String => String): Self = StObject.set(x, "getIconCSS", js.Any.fromFunction1(value))
+    inline def setGetIconCSS(value: String => String): Self = StObject.set(x, "getIconCSS", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetIconPosition(value: String => X): Self = StObject.set(x, "getIconPosition", js.Any.fromFunction1(value))
+    inline def setGetIconPosition(value: String => X): Self = StObject.set(x, "getIconPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIcons(value: StringDictionary[js.Array[Double]]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: StringDictionary[js.Array[Double]]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveIcon(value: String => Unit): Self = StObject.set(x, "removeIcon", js.Any.fromFunction1(value))
+    inline def setRemoveIcon(value: String => Unit): Self = StObject.set(x, "removeIcon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

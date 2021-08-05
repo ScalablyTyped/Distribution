@@ -25,28 +25,21 @@ trait IIdentifiedSingleEditOperation extends StObject {
 }
 object IIdentifiedSingleEditOperation {
   
-  @scala.inline
-  def apply(range: IRange): IIdentifiedSingleEditOperation = {
+  inline def apply(range: IRange): IIdentifiedSingleEditOperation = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], text = null)
     __obj.asInstanceOf[IIdentifiedSingleEditOperation]
   }
   
-  @scala.inline
-  implicit class IIdentifiedSingleEditOperationMutableBuilder[Self <: IIdentifiedSingleEditOperation] (val x: Self) extends AnyVal {
+  extension [Self <: IIdentifiedSingleEditOperation](x: Self) {
     
-    @scala.inline
-    def setForceMoveMarkers(value: Boolean): Self = StObject.set(x, "forceMoveMarkers", value.asInstanceOf[js.Any])
+    inline def setForceMoveMarkers(value: Boolean): Self = StObject.set(x, "forceMoveMarkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceMoveMarkersUndefined: Self = StObject.set(x, "forceMoveMarkers", js.undefined)
+    inline def setForceMoveMarkersUndefined: Self = StObject.set(x, "forceMoveMarkers", js.undefined)
     
-    @scala.inline
-    def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextNull: Self = StObject.set(x, "text", null)
+    inline def setTextNull: Self = StObject.set(x, "text", null)
   }
 }

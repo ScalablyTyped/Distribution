@@ -13,11 +13,9 @@ object listBoxPropTypesMod {
   trait ListBoxSize extends StObject
   object ListBoxSize {
     
-    @scala.inline
-    def sm: typings.carbonComponentsReact.carbonComponentsReactStrings.sm = "sm".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.sm]
+    inline def sm: typings.carbonComponentsReact.carbonComponentsReactStrings.sm = "sm".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.sm]
     
-    @scala.inline
-    def xl: typings.carbonComponentsReact.carbonComponentsReactStrings.xl = "xl".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.xl]
+    inline def xl: typings.carbonComponentsReact.carbonComponentsReactStrings.xl = "xl".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.xl]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -27,10 +25,8 @@ object listBoxPropTypesMod {
   trait ListBoxType extends StObject
   object ListBoxType {
     
-    @scala.inline
-    def default: typings.carbonComponentsReact.carbonComponentsReactStrings.default = "default".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.default]
+    inline def default: typings.carbonComponentsReact.carbonComponentsReactStrings.default = "default".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.default]
     
-    @scala.inline
-    def `inline`: typings.carbonComponentsReact.carbonComponentsReactStrings.`inline` = "inline".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.`inline`]
+    inline def `inline`: typings.carbonComponentsReact.carbonComponentsReactStrings.`inline` = "inline".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.`inline`]
   }
 }

@@ -13,8 +13,7 @@ trait ICalendarFactory extends StObject {
 }
 object ICalendarFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createCalendar: (IIterable[String], String, String) => Calendar,
     createCalendarDefaultCalendarAndClock: IIterable[String] => Calendar
   ): ICalendarFactory = {
@@ -22,13 +21,10 @@ object ICalendarFactory {
     __obj.asInstanceOf[ICalendarFactory]
   }
   
-  @scala.inline
-  implicit class ICalendarFactoryMutableBuilder[Self <: ICalendarFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ICalendarFactory](x: Self) {
     
-    @scala.inline
-    def setCreateCalendar(value: (IIterable[String], String, String) => Calendar): Self = StObject.set(x, "createCalendar", js.Any.fromFunction3(value))
+    inline def setCreateCalendar(value: (IIterable[String], String, String) => Calendar): Self = StObject.set(x, "createCalendar", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateCalendarDefaultCalendarAndClock(value: IIterable[String] => Calendar): Self = StObject.set(x, "createCalendarDefaultCalendarAndClock", js.Any.fromFunction1(value))
+    inline def setCreateCalendarDefaultCalendarAndClock(value: IIterable[String] => Calendar): Self = StObject.set(x, "createCalendarDefaultCalendarAndClock", js.Any.fromFunction1(value))
   }
 }

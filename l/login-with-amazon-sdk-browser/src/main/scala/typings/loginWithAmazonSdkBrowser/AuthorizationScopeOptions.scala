@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthorizationScopeOptions extends StObject
 object AuthorizationScopeOptions {
   
-  @scala.inline
-  def postal_code: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.postal_code = "postal_code".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.postal_code]
+  inline def postal_code: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.postal_code = "postal_code".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.postal_code]
   
-  @scala.inline
-  def profile: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profile = "profile".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profile]
+  inline def profile: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profile = "profile".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profile]
   
-  @scala.inline
-  def profileColonuser_id: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profileColonuser_id = "profile:user_id".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profileColonuser_id]
+  inline def profileColonuser_id: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profileColonuser_id = "profile:user_id".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profileColonuser_id]
 }

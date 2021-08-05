@@ -14,25 +14,19 @@ trait SslCertDetail extends StObject {
 }
 object SslCertDetail {
   
-  @scala.inline
-  def apply(): SslCertDetail = {
+  inline def apply(): SslCertDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SslCertDetail]
   }
   
-  @scala.inline
-  implicit class SslCertDetailMutableBuilder[Self <: SslCertDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SslCertDetail](x: Self) {
     
-    @scala.inline
-    def setCertInfo(value: SslCert): Self = StObject.set(x, "certInfo", value.asInstanceOf[js.Any])
+    inline def setCertInfo(value: SslCert): Self = StObject.set(x, "certInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertInfoUndefined: Self = StObject.set(x, "certInfo", js.undefined)
+    inline def setCertInfoUndefined: Self = StObject.set(x, "certInfo", js.undefined)
     
-    @scala.inline
-    def setCertPrivateKey(value: String): Self = StObject.set(x, "certPrivateKey", value.asInstanceOf[js.Any])
+    inline def setCertPrivateKey(value: String): Self = StObject.set(x, "certPrivateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertPrivateKeyUndefined: Self = StObject.set(x, "certPrivateKey", js.undefined)
+    inline def setCertPrivateKeyUndefined: Self = StObject.set(x, "certPrivateKey", js.undefined)
   }
 }

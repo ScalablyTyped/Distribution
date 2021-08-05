@@ -18,22 +18,17 @@ trait TrialComponentArtifact extends StObject {
 }
 object TrialComponentArtifact {
   
-  @scala.inline
-  def apply(Value: TrialComponentArtifactValue): TrialComponentArtifact = {
+  inline def apply(Value: TrialComponentArtifactValue): TrialComponentArtifact = {
     val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrialComponentArtifact]
   }
   
-  @scala.inline
-  implicit class TrialComponentArtifactMutableBuilder[Self <: TrialComponentArtifact] (val x: Self) extends AnyVal {
+  extension [Self <: TrialComponentArtifact](x: Self) {
     
-    @scala.inline
-    def setMediaType(value: MediaType): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: MediaType): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaTypeUndefined: Self = StObject.set(x, "MediaType", js.undefined)
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "MediaType", js.undefined)
     
-    @scala.inline
-    def setValue(value: TrialComponentArtifactValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TrialComponentArtifactValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

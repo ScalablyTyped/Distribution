@@ -16,31 +16,23 @@ trait WeakValidationMapInputGro extends StObject {
 }
 object WeakValidationMapInputGro {
   
-  @scala.inline
-  def apply(): WeakValidationMapInputGro = {
+  inline def apply(): WeakValidationMapInputGro = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeakValidationMapInputGro]
   }
   
-  @scala.inline
-  implicit class WeakValidationMapInputGroMutableBuilder[Self <: WeakValidationMapInputGro] (val x: Self) extends AnyVal {
+  extension [Self <: WeakValidationMapInputGro](x: Self) {
     
-    @scala.inline
-    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setCompact(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+    inline def setCompact(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+    inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
-    @scala.inline
-    def setIsButton(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "isButton", value.asInstanceOf[js.Any])
+    inline def setIsButton(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "isButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsButtonUndefined: Self = StObject.set(x, "isButton", js.undefined)
+    inline def setIsButtonUndefined: Self = StObject.set(x, "isButton", js.undefined)
   }
 }

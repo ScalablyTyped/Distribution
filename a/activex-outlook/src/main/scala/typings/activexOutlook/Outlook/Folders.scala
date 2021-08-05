@@ -26,7 +26,7 @@ trait Folders extends StObject {
   
   def Item(Index: js.Any): Folder = js.native
   
-  @JSName("Outlook.Folders_typekey")
+  /* private */ @JSName("Outlook.Folders_typekey")
   var OutlookDotFolders_typekey: Folders = js.native
   
   val Parent: js.Any = js.native

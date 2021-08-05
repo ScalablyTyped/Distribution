@@ -63,76 +63,53 @@ trait DecryptOptions extends StObject {
 }
 object DecryptOptions {
   
-  @scala.inline
-  def apply(message: Message): DecryptOptions = {
+  inline def apply(message: Message): DecryptOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptOptions]
   }
   
-  @scala.inline
-  implicit class DecryptOptionsMutableBuilder[Self <: DecryptOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DecryptOptions](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setFormat(value: utf8 | binary): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: utf8 | binary): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswords(value: String | js.Array[String]): Self = StObject.set(x, "passwords", value.asInstanceOf[js.Any])
+    inline def setPasswords(value: String | js.Array[String]): Self = StObject.set(x, "passwords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordsUndefined: Self = StObject.set(x, "passwords", js.undefined)
+    inline def setPasswordsUndefined: Self = StObject.set(x, "passwords", js.undefined)
     
-    @scala.inline
-    def setPasswordsVarargs(value: String*): Self = StObject.set(x, "passwords", js.Array(value :_*))
+    inline def setPasswordsVarargs(value: String*): Self = StObject.set(x, "passwords", js.Array(value :_*))
     
-    @scala.inline
-    def setPrivateKeys(value: Key | js.Array[Key]): Self = StObject.set(x, "privateKeys", value.asInstanceOf[js.Any])
+    inline def setPrivateKeys(value: Key | js.Array[Key]): Self = StObject.set(x, "privateKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeysUndefined: Self = StObject.set(x, "privateKeys", js.undefined)
+    inline def setPrivateKeysUndefined: Self = StObject.set(x, "privateKeys", js.undefined)
     
-    @scala.inline
-    def setPrivateKeysVarargs(value: Key*): Self = StObject.set(x, "privateKeys", js.Array(value :_*))
+    inline def setPrivateKeysVarargs(value: Key*): Self = StObject.set(x, "privateKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setPublicKeys(value: Key | js.Array[Key]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
+    inline def setPublicKeys(value: Key | js.Array[Key]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
+    inline def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
     
-    @scala.inline
-    def setPublicKeysVarargs(value: Key*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
+    inline def setPublicKeysVarargs(value: Key*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setSessionKeys(value: Algorithm | js.Array[Algorithm]): Self = StObject.set(x, "sessionKeys", value.asInstanceOf[js.Any])
+    inline def setSessionKeys(value: Algorithm | js.Array[Algorithm]): Self = StObject.set(x, "sessionKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionKeysUndefined: Self = StObject.set(x, "sessionKeys", js.undefined)
+    inline def setSessionKeysUndefined: Self = StObject.set(x, "sessionKeys", js.undefined)
     
-    @scala.inline
-    def setSessionKeysVarargs(value: Algorithm*): Self = StObject.set(x, "sessionKeys", js.Array(value :_*))
+    inline def setSessionKeysVarargs(value: Algorithm*): Self = StObject.set(x, "sessionKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setSignature(value: Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
-    @scala.inline
-    def setStreaming(value: web | node | `false`): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
+    inline def setStreaming(value: web | node | `false`): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
+    inline def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
   }
 }

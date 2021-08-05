@@ -26,8 +26,7 @@ trait SupportingWidgetDefaultsFeatureForm
 }
 object SupportingWidgetDefaultsFeatureForm {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,22 +35,16 @@ object SupportingWidgetDefaultsFeatureForm {
     __obj.asInstanceOf[SupportingWidgetDefaultsFeatureForm]
   }
   
-  @scala.inline
-  implicit class SupportingWidgetDefaultsFeatureFormMutableBuilder[Self <: SupportingWidgetDefaultsFeatureForm] (val x: Self) extends AnyVal {
+  extension [Self <: SupportingWidgetDefaultsFeatureForm](x: Self) {
     
-    @scala.inline
-    def setFieldConfig(value: js.Array[FieldConfig]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
+    inline def setFieldConfig(value: js.Array[FieldConfig]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
+    inline def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
     
-    @scala.inline
-    def setFieldConfigVarargs(value: FieldConfig*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
+    inline def setFieldConfigVarargs(value: FieldConfig*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupDisplay(value: String): Self = StObject.set(x, "groupDisplay", value.asInstanceOf[js.Any])
+    inline def setGroupDisplay(value: String): Self = StObject.set(x, "groupDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupDisplayUndefined: Self = StObject.set(x, "groupDisplay", js.undefined)
+    inline def setGroupDisplayUndefined: Self = StObject.set(x, "groupDisplay", js.undefined)
   }
 }

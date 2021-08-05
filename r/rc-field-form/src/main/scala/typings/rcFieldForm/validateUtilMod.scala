@@ -16,16 +16,14 @@ object validateUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def validateRules(
+  inline def validateRules(
     namePath: InternalNamePath,
     value: StoreValue,
     rules: js.Array[RuleObject],
     options: ValidateOptions,
     validateFirst: Boolean
   ): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRules")(namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validateFirst.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
-  @scala.inline
-  def validateRules(
+  inline def validateRules(
     namePath: InternalNamePath,
     value: StoreValue,
     rules: js.Array[RuleObject],
@@ -34,16 +32,14 @@ object validateUtilMod {
     messageVariables: Record[String, String]
   ): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRules")(namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validateFirst.asInstanceOf[js.Any], messageVariables.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @scala.inline
-  def validateRules_parallel(
+  inline def validateRules_parallel(
     namePath: InternalNamePath,
     value: StoreValue,
     rules: js.Array[RuleObject],
     options: ValidateOptions,
     validateFirst: parallel
   ): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRules")(namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validateFirst.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
-  @scala.inline
-  def validateRules_parallel(
+  inline def validateRules_parallel(
     namePath: InternalNamePath,
     value: StoreValue,
     rules: js.Array[RuleObject],

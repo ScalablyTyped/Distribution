@@ -28,76 +28,53 @@ trait DeployOptions extends StObject {
 }
 object DeployOptions {
   
-  @scala.inline
-  def apply(): DeployOptions = {
+  inline def apply(): DeployOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeployOptions]
   }
   
-  @scala.inline
-  implicit class DeployOptionsMutableBuilder[Self <: DeployOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeployOptions](x: Self) {
     
-    @scala.inline
-    def setAllowMissingFiles(value: Boolean): Self = StObject.set(x, "allowMissingFiles", value.asInstanceOf[js.Any])
+    inline def setAllowMissingFiles(value: Boolean): Self = StObject.set(x, "allowMissingFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowMissingFilesUndefined: Self = StObject.set(x, "allowMissingFiles", js.undefined)
+    inline def setAllowMissingFilesUndefined: Self = StObject.set(x, "allowMissingFiles", js.undefined)
     
-    @scala.inline
-    def setAutoUpdatePackage(value: Boolean): Self = StObject.set(x, "autoUpdatePackage", value.asInstanceOf[js.Any])
+    inline def setAutoUpdatePackage(value: Boolean): Self = StObject.set(x, "autoUpdatePackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUpdatePackageUndefined: Self = StObject.set(x, "autoUpdatePackage", js.undefined)
+    inline def setAutoUpdatePackageUndefined: Self = StObject.set(x, "autoUpdatePackage", js.undefined)
     
-    @scala.inline
-    def setCheckOnly(value: Boolean): Self = StObject.set(x, "checkOnly", value.asInstanceOf[js.Any])
+    inline def setCheckOnly(value: Boolean): Self = StObject.set(x, "checkOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckOnlyUndefined: Self = StObject.set(x, "checkOnly", js.undefined)
+    inline def setCheckOnlyUndefined: Self = StObject.set(x, "checkOnly", js.undefined)
     
-    @scala.inline
-    def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
+    inline def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
+    inline def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
     
-    @scala.inline
-    def setPerformRetrieve(value: Boolean): Self = StObject.set(x, "performRetrieve", value.asInstanceOf[js.Any])
+    inline def setPerformRetrieve(value: Boolean): Self = StObject.set(x, "performRetrieve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformRetrieveUndefined: Self = StObject.set(x, "performRetrieve", js.undefined)
+    inline def setPerformRetrieveUndefined: Self = StObject.set(x, "performRetrieve", js.undefined)
     
-    @scala.inline
-    def setPurgeOnDelete(value: Boolean): Self = StObject.set(x, "purgeOnDelete", value.asInstanceOf[js.Any])
+    inline def setPurgeOnDelete(value: Boolean): Self = StObject.set(x, "purgeOnDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurgeOnDeleteUndefined: Self = StObject.set(x, "purgeOnDelete", js.undefined)
+    inline def setPurgeOnDeleteUndefined: Self = StObject.set(x, "purgeOnDelete", js.undefined)
     
-    @scala.inline
-    def setRollbackOnError(value: Boolean): Self = StObject.set(x, "rollbackOnError", value.asInstanceOf[js.Any])
+    inline def setRollbackOnError(value: Boolean): Self = StObject.set(x, "rollbackOnError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollbackOnErrorUndefined: Self = StObject.set(x, "rollbackOnError", js.undefined)
+    inline def setRollbackOnErrorUndefined: Self = StObject.set(x, "rollbackOnError", js.undefined)
     
-    @scala.inline
-    def setRunAllTests(value: Boolean): Self = StObject.set(x, "runAllTests", value.asInstanceOf[js.Any])
+    inline def setRunAllTests(value: Boolean): Self = StObject.set(x, "runAllTests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAllTestsUndefined: Self = StObject.set(x, "runAllTests", js.undefined)
+    inline def setRunAllTestsUndefined: Self = StObject.set(x, "runAllTests", js.undefined)
     
-    @scala.inline
-    def setRunTests(value: js.Array[String]): Self = StObject.set(x, "runTests", value.asInstanceOf[js.Any])
+    inline def setRunTests(value: js.Array[String]): Self = StObject.set(x, "runTests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunTestsUndefined: Self = StObject.set(x, "runTests", js.undefined)
+    inline def setRunTestsUndefined: Self = StObject.set(x, "runTests", js.undefined)
     
-    @scala.inline
-    def setRunTestsVarargs(value: String*): Self = StObject.set(x, "runTests", js.Array(value :_*))
+    inline def setRunTestsVarargs(value: String*): Self = StObject.set(x, "runTests", js.Array(value :_*))
     
-    @scala.inline
-    def setSinglePackage(value: Boolean): Self = StObject.set(x, "singlePackage", value.asInstanceOf[js.Any])
+    inline def setSinglePackage(value: Boolean): Self = StObject.set(x, "singlePackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinglePackageUndefined: Self = StObject.set(x, "singlePackage", js.undefined)
+    inline def setSinglePackageUndefined: Self = StObject.set(x, "singlePackage", js.undefined)
   }
 }

@@ -20,31 +20,23 @@ trait SourceAndDestination extends StObject {
 }
 object SourceAndDestination {
   
-  @scala.inline
-  def apply(): SourceAndDestination = {
+  inline def apply(): SourceAndDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceAndDestination]
   }
   
-  @scala.inline
-  implicit class SourceAndDestinationMutableBuilder[Self <: SourceAndDestination] (val x: Self) extends AnyVal {
+  extension [Self <: SourceAndDestination](x: Self) {
     
-    @scala.inline
-    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
+    inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
-    @scala.inline
-    def setFillLength(value: Double): Self = StObject.set(x, "fillLength", value.asInstanceOf[js.Any])
+    inline def setFillLength(value: Double): Self = StObject.set(x, "fillLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillLengthUndefined: Self = StObject.set(x, "fillLength", js.undefined)
+    inline def setFillLengthUndefined: Self = StObject.set(x, "fillLength", js.undefined)
     
-    @scala.inline
-    def setSource(value: GridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: GridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

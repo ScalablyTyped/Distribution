@@ -21,22 +21,17 @@ trait IEventData[T] extends StObject {
 }
 object IEventData {
   
-  @scala.inline
-  def apply[T](__identifier__ : String, data: T): IEventData[T] = {
+  inline def apply[T](__identifier__ : String, data: T): IEventData[T] = {
     val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = "event_data", data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEventData[T]]
   }
   
-  @scala.inline
-  implicit class IEventDataMutableBuilder[Self <: IEventData[?], T] (val x: Self & IEventData[T]) extends AnyVal {
+  extension [Self <: IEventData[?], T](x: Self & IEventData[T]) {
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__identifier__(value: String): Self = StObject.set(x, "__identifier__", value.asInstanceOf[js.Any])
+    inline def set__identifier__(value: String): Self = StObject.set(x, "__identifier__", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type__(value: event_data): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
+    inline def set__type__(value: event_data): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
   }
 }

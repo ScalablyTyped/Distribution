@@ -13,19 +13,15 @@ trait SchemaProjectsSetDefaultServiceAccountRequest extends StObject {
 }
 object SchemaProjectsSetDefaultServiceAccountRequest {
   
-  @scala.inline
-  def apply(): SchemaProjectsSetDefaultServiceAccountRequest = {
+  inline def apply(): SchemaProjectsSetDefaultServiceAccountRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProjectsSetDefaultServiceAccountRequest]
   }
   
-  @scala.inline
-  implicit class SchemaProjectsSetDefaultServiceAccountRequestMutableBuilder[Self <: SchemaProjectsSetDefaultServiceAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProjectsSetDefaultServiceAccountRequest](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait DescribeClientVpnTargetNetworksResult extends StObject {
 }
 object DescribeClientVpnTargetNetworksResult {
   
-  @scala.inline
-  def apply(): DescribeClientVpnTargetNetworksResult = {
+  inline def apply(): DescribeClientVpnTargetNetworksResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeClientVpnTargetNetworksResult]
   }
   
-  @scala.inline
-  implicit class DescribeClientVpnTargetNetworksResultMutableBuilder[Self <: DescribeClientVpnTargetNetworksResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeClientVpnTargetNetworksResult](x: Self) {
     
-    @scala.inline
-    def setClientVpnTargetNetworks(value: TargetNetworkSet): Self = StObject.set(x, "ClientVpnTargetNetworks", value.asInstanceOf[js.Any])
+    inline def setClientVpnTargetNetworks(value: TargetNetworkSet): Self = StObject.set(x, "ClientVpnTargetNetworks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientVpnTargetNetworksUndefined: Self = StObject.set(x, "ClientVpnTargetNetworks", js.undefined)
+    inline def setClientVpnTargetNetworksUndefined: Self = StObject.set(x, "ClientVpnTargetNetworks", js.undefined)
     
-    @scala.inline
-    def setClientVpnTargetNetworksVarargs(value: TargetNetwork*): Self = StObject.set(x, "ClientVpnTargetNetworks", js.Array(value :_*))
+    inline def setClientVpnTargetNetworksVarargs(value: TargetNetwork*): Self = StObject.set(x, "ClientVpnTargetNetworks", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

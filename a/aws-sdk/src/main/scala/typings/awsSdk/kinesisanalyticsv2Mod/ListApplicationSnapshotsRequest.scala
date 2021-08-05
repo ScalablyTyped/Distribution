@@ -23,28 +23,21 @@ trait ListApplicationSnapshotsRequest extends StObject {
 }
 object ListApplicationSnapshotsRequest {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName): ListApplicationSnapshotsRequest = {
+  inline def apply(ApplicationName: ApplicationName): ListApplicationSnapshotsRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListApplicationSnapshotsRequest]
   }
   
-  @scala.inline
-  implicit class ListApplicationSnapshotsRequestMutableBuilder[Self <: ListApplicationSnapshotsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListApplicationSnapshotsRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: ListSnapshotsInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: ListSnapshotsInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

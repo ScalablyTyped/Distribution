@@ -50,43 +50,31 @@ trait SchemaDeprecationStatus extends StObject {
 }
 object SchemaDeprecationStatus {
   
-  @scala.inline
-  def apply(): SchemaDeprecationStatus = {
+  inline def apply(): SchemaDeprecationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeprecationStatus]
   }
   
-  @scala.inline
-  implicit class SchemaDeprecationStatusMutableBuilder[Self <: SchemaDeprecationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeprecationStatus](x: Self) {
     
-    @scala.inline
-    def setDeleted(value: String): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: String): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    @scala.inline
-    def setDeprecated(value: String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    @scala.inline
-    def setObsolete(value: String): Self = StObject.set(x, "obsolete", value.asInstanceOf[js.Any])
+    inline def setObsolete(value: String): Self = StObject.set(x, "obsolete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObsoleteUndefined: Self = StObject.set(x, "obsolete", js.undefined)
+    inline def setObsoleteUndefined: Self = StObject.set(x, "obsolete", js.undefined)
     
-    @scala.inline
-    def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
+    inline def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
+    inline def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

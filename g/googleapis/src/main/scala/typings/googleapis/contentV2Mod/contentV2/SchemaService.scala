@@ -56,64 +56,45 @@ trait SchemaService extends StObject {
 }
 object SchemaService {
   
-  @scala.inline
-  def apply(): SchemaService = {
+  inline def apply(): SchemaService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaService]
   }
   
-  @scala.inline
-  implicit class SchemaServiceMutableBuilder[Self <: SchemaService] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaService](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
-    @scala.inline
-    def setDeliveryCountry(value: String): Self = StObject.set(x, "deliveryCountry", value.asInstanceOf[js.Any])
+    inline def setDeliveryCountry(value: String): Self = StObject.set(x, "deliveryCountry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryCountryUndefined: Self = StObject.set(x, "deliveryCountry", js.undefined)
+    inline def setDeliveryCountryUndefined: Self = StObject.set(x, "deliveryCountry", js.undefined)
     
-    @scala.inline
-    def setDeliveryTime(value: SchemaDeliveryTime): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
+    inline def setDeliveryTime(value: SchemaDeliveryTime): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryTimeUndefined: Self = StObject.set(x, "deliveryTime", js.undefined)
+    inline def setDeliveryTimeUndefined: Self = StObject.set(x, "deliveryTime", js.undefined)
     
-    @scala.inline
-    def setEligibility(value: String): Self = StObject.set(x, "eligibility", value.asInstanceOf[js.Any])
+    inline def setEligibility(value: String): Self = StObject.set(x, "eligibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEligibilityUndefined: Self = StObject.set(x, "eligibility", js.undefined)
+    inline def setEligibilityUndefined: Self = StObject.set(x, "eligibility", js.undefined)
     
-    @scala.inline
-    def setMinimumOrderValue(value: SchemaPrice): Self = StObject.set(x, "minimumOrderValue", value.asInstanceOf[js.Any])
+    inline def setMinimumOrderValue(value: SchemaPrice): Self = StObject.set(x, "minimumOrderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumOrderValueUndefined: Self = StObject.set(x, "minimumOrderValue", js.undefined)
+    inline def setMinimumOrderValueUndefined: Self = StObject.set(x, "minimumOrderValue", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRateGroups(value: js.Array[SchemaRateGroup]): Self = StObject.set(x, "rateGroups", value.asInstanceOf[js.Any])
+    inline def setRateGroups(value: js.Array[SchemaRateGroup]): Self = StObject.set(x, "rateGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateGroupsUndefined: Self = StObject.set(x, "rateGroups", js.undefined)
+    inline def setRateGroupsUndefined: Self = StObject.set(x, "rateGroups", js.undefined)
     
-    @scala.inline
-    def setRateGroupsVarargs(value: SchemaRateGroup*): Self = StObject.set(x, "rateGroups", js.Array(value :_*))
+    inline def setRateGroupsVarargs(value: SchemaRateGroup*): Self = StObject.set(x, "rateGroups", js.Array(value :_*))
   }
 }

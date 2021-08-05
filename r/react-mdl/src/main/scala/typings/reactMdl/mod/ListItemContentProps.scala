@@ -22,37 +22,27 @@ trait ListItemContentProps
 }
 object ListItemContentProps {
   
-  @scala.inline
-  def apply(): ListItemContentProps = {
+  inline def apply(): ListItemContentProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListItemContentProps]
   }
   
-  @scala.inline
-  implicit class ListItemContentPropsMutableBuilder[Self <: ListItemContentProps] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemContentProps](x: Self) {
     
-    @scala.inline
-    def setAvatar(value: String | Element): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+    inline def setAvatar(value: String | Element): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+    inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String | Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String | Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    @scala.inline
-    def setUseBodyClass(value: Boolean): Self = StObject.set(x, "useBodyClass", value.asInstanceOf[js.Any])
+    inline def setUseBodyClass(value: Boolean): Self = StObject.set(x, "useBodyClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseBodyClassUndefined: Self = StObject.set(x, "useBodyClass", js.undefined)
+    inline def setUseBodyClassUndefined: Self = StObject.set(x, "useBodyClass", js.undefined)
   }
 }

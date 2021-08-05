@@ -13,19 +13,15 @@ trait StartImportTaskResponse extends StObject {
 }
 object StartImportTaskResponse {
   
-  @scala.inline
-  def apply(): StartImportTaskResponse = {
+  inline def apply(): StartImportTaskResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartImportTaskResponse]
   }
   
-  @scala.inline
-  implicit class StartImportTaskResponseMutableBuilder[Self <: StartImportTaskResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartImportTaskResponse](x: Self) {
     
-    @scala.inline
-    def setTask(value: ImportTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: ImportTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
+    inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
   }
 }

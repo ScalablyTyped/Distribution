@@ -12,19 +12,15 @@ trait IDataTransferManagerStatics extends StObject {
 }
 object IDataTransferManagerStatics {
   
-  @scala.inline
-  def apply(getForCurrentView: () => DataTransferManager, showShareUI: () => Unit): IDataTransferManagerStatics = {
+  inline def apply(getForCurrentView: () => DataTransferManager, showShareUI: () => Unit): IDataTransferManagerStatics = {
     val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView), showShareUI = js.Any.fromFunction0(showShareUI))
     __obj.asInstanceOf[IDataTransferManagerStatics]
   }
   
-  @scala.inline
-  implicit class IDataTransferManagerStaticsMutableBuilder[Self <: IDataTransferManagerStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IDataTransferManagerStatics](x: Self) {
     
-    @scala.inline
-    def setGetForCurrentView(value: () => DataTransferManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
+    inline def setGetForCurrentView(value: () => DataTransferManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowShareUI(value: () => Unit): Self = StObject.set(x, "showShareUI", js.Any.fromFunction0(value))
+    inline def setShowShareUI(value: () => Unit): Self = StObject.set(x, "showShareUI", js.Any.fromFunction0(value))
   }
 }

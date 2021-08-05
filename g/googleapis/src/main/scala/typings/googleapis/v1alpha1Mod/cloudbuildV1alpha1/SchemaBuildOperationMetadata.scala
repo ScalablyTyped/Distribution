@@ -16,19 +16,15 @@ trait SchemaBuildOperationMetadata extends StObject {
 }
 object SchemaBuildOperationMetadata {
   
-  @scala.inline
-  def apply(): SchemaBuildOperationMetadata = {
+  inline def apply(): SchemaBuildOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildOperationMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaBuildOperationMetadataMutableBuilder[Self <: SchemaBuildOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setBuild(value: SchemaBuild): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: SchemaBuild): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
   }
 }

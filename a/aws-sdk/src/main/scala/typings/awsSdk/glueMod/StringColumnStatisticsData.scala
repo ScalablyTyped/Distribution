@@ -28,8 +28,7 @@ trait StringColumnStatisticsData extends StObject {
 }
 object StringColumnStatisticsData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AverageLength: NonNegativeDouble,
     MaximumLength: NonNegativeLong,
     NumberOfDistinctValues: NonNegativeLong,
@@ -39,19 +38,14 @@ object StringColumnStatisticsData {
     __obj.asInstanceOf[StringColumnStatisticsData]
   }
   
-  @scala.inline
-  implicit class StringColumnStatisticsDataMutableBuilder[Self <: StringColumnStatisticsData] (val x: Self) extends AnyVal {
+  extension [Self <: StringColumnStatisticsData](x: Self) {
     
-    @scala.inline
-    def setAverageLength(value: NonNegativeDouble): Self = StObject.set(x, "AverageLength", value.asInstanceOf[js.Any])
+    inline def setAverageLength(value: NonNegativeDouble): Self = StObject.set(x, "AverageLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumLength(value: NonNegativeLong): Self = StObject.set(x, "MaximumLength", value.asInstanceOf[js.Any])
+    inline def setMaximumLength(value: NonNegativeLong): Self = StObject.set(x, "MaximumLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfDistinctValues(value: NonNegativeLong): Self = StObject.set(x, "NumberOfDistinctValues", value.asInstanceOf[js.Any])
+    inline def setNumberOfDistinctValues(value: NonNegativeLong): Self = StObject.set(x, "NumberOfDistinctValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfNulls(value: NonNegativeLong): Self = StObject.set(x, "NumberOfNulls", value.asInstanceOf[js.Any])
+    inline def setNumberOfNulls(value: NonNegativeLong): Self = StObject.set(x, "NumberOfNulls", value.asInstanceOf[js.Any])
   }
 }

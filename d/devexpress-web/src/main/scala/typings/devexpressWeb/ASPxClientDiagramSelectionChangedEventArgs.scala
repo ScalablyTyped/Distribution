@@ -18,19 +18,15 @@ trait ASPxClientDiagramSelectionChangedEventArgs
 }
 object ASPxClientDiagramSelectionChangedEventArgs {
   
-  @scala.inline
-  def apply(items: js.Array[DiagramItem]): ASPxClientDiagramSelectionChangedEventArgs = {
+  inline def apply(items: js.Array[DiagramItem]): ASPxClientDiagramSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDiagramSelectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDiagramSelectionChangedEventArgsMutableBuilder[Self <: ASPxClientDiagramSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDiagramSelectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[DiagramItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[DiagramItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: DiagramItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: DiagramItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

@@ -12,17 +12,14 @@ object anon {
   }
   object Packages {
     
-    @scala.inline
-    def apply(packages: typings.lockfileLintApi.mod.Packages): Packages = {
+    inline def apply(packages: typings.lockfileLintApi.mod.Packages): Packages = {
       val __obj = js.Dynamic.literal(packages = packages.asInstanceOf[js.Any])
       __obj.asInstanceOf[Packages]
     }
     
-    @scala.inline
-    implicit class PackagesMutableBuilder[Self <: Packages] (val x: Self) extends AnyVal {
+    extension [Self <: Packages](x: Self) {
       
-      @scala.inline
-      def setPackages(value: typings.lockfileLintApi.mod.Packages): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
+      inline def setPackages(value: typings.lockfileLintApi.mod.Packages): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
     }
   }
 }

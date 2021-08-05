@@ -25,8 +25,7 @@ trait NodeDragEventParamsHTMLDiDragNode extends StObject {
 }
 object NodeDragEventParamsHTMLDiDragNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dragNode: EventDataNode,
     dragNodesKeys: js.Array[typings.rcTree.interfaceMod.Key],
     dropPosition: Double,
@@ -38,28 +37,20 @@ object NodeDragEventParamsHTMLDiDragNode {
     __obj.asInstanceOf[NodeDragEventParamsHTMLDiDragNode]
   }
   
-  @scala.inline
-  implicit class NodeDragEventParamsHTMLDiDragNodeMutableBuilder[Self <: NodeDragEventParamsHTMLDiDragNode] (val x: Self) extends AnyVal {
+  extension [Self <: NodeDragEventParamsHTMLDiDragNode](x: Self) {
     
-    @scala.inline
-    def setDragNode(value: EventDataNode): Self = StObject.set(x, "dragNode", value.asInstanceOf[js.Any])
+    inline def setDragNode(value: EventDataNode): Self = StObject.set(x, "dragNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragNodesKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "dragNodesKeys", value.asInstanceOf[js.Any])
+    inline def setDragNodesKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "dragNodesKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragNodesKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "dragNodesKeys", js.Array(value :_*))
+    inline def setDragNodesKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "dragNodesKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setDropPosition(value: Double): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
+    inline def setDropPosition(value: Double): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropToGap(value: Boolean): Self = StObject.set(x, "dropToGap", value.asInstanceOf[js.Any])
+    inline def setDropToGap(value: Boolean): Self = StObject.set(x, "dropToGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: MouseEvent[HTMLDivElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: MouseEvent[HTMLDivElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: EventDataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: EventDataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

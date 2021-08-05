@@ -13,17 +13,14 @@ trait ServiceNowSourceProperties extends StObject {
 }
 object ServiceNowSourceProperties {
   
-  @scala.inline
-  def apply(`object`: Object): ServiceNowSourceProperties = {
+  inline def apply(`object`: Object): ServiceNowSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceNowSourceProperties]
   }
   
-  @scala.inline
-  implicit class ServiceNowSourcePropertiesMutableBuilder[Self <: ServiceNowSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceNowSourceProperties](x: Self) {
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

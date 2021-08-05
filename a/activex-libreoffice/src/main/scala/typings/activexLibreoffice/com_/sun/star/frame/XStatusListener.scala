@@ -27,8 +27,7 @@ trait XStatusListener
 }
 object XStatusListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -39,10 +38,8 @@ object XStatusListener {
     __obj.asInstanceOf[XStatusListener]
   }
   
-  @scala.inline
-  implicit class XStatusListenerMutableBuilder[Self <: XStatusListener] (val x: Self) extends AnyVal {
+  extension [Self <: XStatusListener](x: Self) {
     
-    @scala.inline
-    def setStatusChanged(value: FeatureStateEvent => Unit): Self = StObject.set(x, "statusChanged", js.Any.fromFunction1(value))
+    inline def setStatusChanged(value: FeatureStateEvent => Unit): Self = StObject.set(x, "statusChanged", js.Any.fromFunction1(value))
   }
 }

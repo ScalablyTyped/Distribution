@@ -14,22 +14,17 @@ trait SetRuleSelectorRequest extends StObject {
 }
 object SetRuleSelectorRequest {
   
-  @scala.inline
-  def apply(range: SourceRange, selector: String, styleSheetId: StyleSheetId): SetRuleSelectorRequest = {
+  inline def apply(range: SourceRange, selector: String, styleSheetId: StyleSheetId): SetRuleSelectorRequest = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], styleSheetId = styleSheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetRuleSelectorRequest]
   }
   
-  @scala.inline
-  implicit class SetRuleSelectorRequestMutableBuilder[Self <: SetRuleSelectorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetRuleSelectorRequest](x: Self) {
     
-    @scala.inline
-    def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
   }
 }

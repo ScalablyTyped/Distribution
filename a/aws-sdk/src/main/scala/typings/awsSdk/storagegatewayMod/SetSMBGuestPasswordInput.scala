@@ -18,19 +18,15 @@ trait SetSMBGuestPasswordInput extends StObject {
 }
 object SetSMBGuestPasswordInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN, Password: SMBGuestPassword): SetSMBGuestPasswordInput = {
+  inline def apply(GatewayARN: GatewayARN, Password: SMBGuestPassword): SetSMBGuestPasswordInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetSMBGuestPasswordInput]
   }
   
-  @scala.inline
-  implicit class SetSMBGuestPasswordInputMutableBuilder[Self <: SetSMBGuestPasswordInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetSMBGuestPasswordInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: SMBGuestPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: SMBGuestPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
   }
 }

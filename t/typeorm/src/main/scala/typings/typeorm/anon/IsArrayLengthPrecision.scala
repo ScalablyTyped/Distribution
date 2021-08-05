@@ -19,46 +19,33 @@ trait IsArrayLengthPrecision extends StObject {
 }
 object IsArrayLengthPrecision {
   
-  @scala.inline
-  def apply(): IsArrayLengthPrecision = {
+  inline def apply(): IsArrayLengthPrecision = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsArrayLengthPrecision]
   }
   
-  @scala.inline
-  implicit class IsArrayLengthPrecisionMutableBuilder[Self <: IsArrayLengthPrecision] (val x: Self) extends AnyVal {
+  extension [Self <: IsArrayLengthPrecision](x: Self) {
     
-    @scala.inline
-    def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
+    inline def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
+    inline def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double | String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double | String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionNull: Self = StObject.set(x, "precision", null)
+    inline def setPrecisionNull: Self = StObject.set(x, "precision", null)
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setType(value: ColumnType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ColumnType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

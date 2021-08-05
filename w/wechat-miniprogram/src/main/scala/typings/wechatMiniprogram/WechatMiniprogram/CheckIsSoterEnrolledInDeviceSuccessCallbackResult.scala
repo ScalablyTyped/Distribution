@@ -14,19 +14,15 @@ trait CheckIsSoterEnrolledInDeviceSuccessCallbackResult extends StObject {
 }
 object CheckIsSoterEnrolledInDeviceSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, isEnrolled: Boolean): CheckIsSoterEnrolledInDeviceSuccessCallbackResult = {
+  inline def apply(errMsg: String, isEnrolled: Boolean): CheckIsSoterEnrolledInDeviceSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], isEnrolled = isEnrolled.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckIsSoterEnrolledInDeviceSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class CheckIsSoterEnrolledInDeviceSuccessCallbackResultMutableBuilder[Self <: CheckIsSoterEnrolledInDeviceSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: CheckIsSoterEnrolledInDeviceSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnrolled(value: Boolean): Self = StObject.set(x, "isEnrolled", value.asInstanceOf[js.Any])
+    inline def setIsEnrolled(value: Boolean): Self = StObject.set(x, "isEnrolled", value.asInstanceOf[js.Any])
   }
 }

@@ -15,20 +15,16 @@ trait Opts
 }
 object Opts {
   
-  @scala.inline
-  def apply(mode: Mode, `type`: String): Opts = {
+  inline def apply(mode: Mode, `type`: String): Opts = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opts]
   }
   
-  @scala.inline
-  implicit class OptsMutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
+  extension [Self <: Opts](x: Self) {
     
-    @scala.inline
-    def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

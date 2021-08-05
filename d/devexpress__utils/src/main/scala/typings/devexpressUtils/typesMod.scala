@@ -18,17 +18,14 @@ object typesMod {
   }
   object IDisposable {
     
-    @scala.inline
-    def apply(dispose: () => js.Any): IDisposable = {
+    inline def apply(dispose: () => js.Any): IDisposable = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
       __obj.asInstanceOf[IDisposable]
     }
     
-    @scala.inline
-    implicit class IDisposableMutableBuilder[Self <: IDisposable] (val x: Self) extends AnyVal {
+    extension [Self <: IDisposable](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => js.Any): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => js.Any): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
   
@@ -40,17 +37,14 @@ object typesMod {
   }
   object ISupportConverting {
     
-    @scala.inline
-    def apply[T](applyConverter: SimpleConverter[T] => ISupportConverting[T]): ISupportConverting[T] = {
+    inline def apply[T](applyConverter: SimpleConverter[T] => ISupportConverting[T]): ISupportConverting[T] = {
       val __obj = js.Dynamic.literal(applyConverter = js.Any.fromFunction1(applyConverter))
       __obj.asInstanceOf[ISupportConverting[T]]
     }
     
-    @scala.inline
-    implicit class ISupportConvertingMutableBuilder[Self <: ISupportConverting[?], T] (val x: Self & ISupportConverting[T]) extends AnyVal {
+    extension [Self <: ISupportConverting[?], T](x: Self & ISupportConverting[T]) {
       
-      @scala.inline
-      def setApplyConverter(value: SimpleConverter[T] => ISupportConverting[T]): Self = StObject.set(x, "applyConverter", js.Any.fromFunction1(value))
+      inline def setApplyConverter(value: SimpleConverter[T] => ISupportConverting[T]): Self = StObject.set(x, "applyConverter", js.Any.fromFunction1(value))
     }
   }
   
@@ -60,17 +54,14 @@ object typesMod {
   }
   object ISupportCopyFrom {
     
-    @scala.inline
-    def apply[T](copyFrom: T => Unit): ISupportCopyFrom[T] = {
+    inline def apply[T](copyFrom: T => Unit): ISupportCopyFrom[T] = {
       val __obj = js.Dynamic.literal(copyFrom = js.Any.fromFunction1(copyFrom))
       __obj.asInstanceOf[ISupportCopyFrom[T]]
     }
     
-    @scala.inline
-    implicit class ISupportCopyFromMutableBuilder[Self <: ISupportCopyFrom[?], T] (val x: Self & ISupportCopyFrom[T]) extends AnyVal {
+    extension [Self <: ISupportCopyFrom[?], T](x: Self & ISupportCopyFrom[T]) {
       
-      @scala.inline
-      def setCopyFrom(value: T => Unit): Self = StObject.set(x, "copyFrom", js.Any.fromFunction1(value))
+      inline def setCopyFrom(value: T => Unit): Self = StObject.set(x, "copyFrom", js.Any.fromFunction1(value))
     }
   }
   

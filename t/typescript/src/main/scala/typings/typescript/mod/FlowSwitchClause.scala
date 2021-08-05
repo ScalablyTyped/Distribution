@@ -19,8 +19,7 @@ trait FlowSwitchClause
 }
 object FlowSwitchClause {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     antecedent: FlowNode,
     clauseEnd: Double,
     clauseStart: Double,
@@ -31,19 +30,14 @@ object FlowSwitchClause {
     __obj.asInstanceOf[FlowSwitchClause]
   }
   
-  @scala.inline
-  implicit class FlowSwitchClauseMutableBuilder[Self <: FlowSwitchClause] (val x: Self) extends AnyVal {
+  extension [Self <: FlowSwitchClause](x: Self) {
     
-    @scala.inline
-    def setAntecedent(value: FlowNode): Self = StObject.set(x, "antecedent", value.asInstanceOf[js.Any])
+    inline def setAntecedent(value: FlowNode): Self = StObject.set(x, "antecedent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClauseEnd(value: Double): Self = StObject.set(x, "clauseEnd", value.asInstanceOf[js.Any])
+    inline def setClauseEnd(value: Double): Self = StObject.set(x, "clauseEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClauseStart(value: Double): Self = StObject.set(x, "clauseStart", value.asInstanceOf[js.Any])
+    inline def setClauseStart(value: Double): Self = StObject.set(x, "clauseStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitchStatement(value: SwitchStatement): Self = StObject.set(x, "switchStatement", value.asInstanceOf[js.Any])
+    inline def setSwitchStatement(value: SwitchStatement): Self = StObject.set(x, "switchStatement", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait MuiName extends StObject {
 }
 object MuiName {
   
-  @scala.inline
-  def apply(muiName: String): MuiName = {
+  inline def apply(muiName: String): MuiName = {
     val __obj = js.Dynamic.literal(muiName = muiName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MuiName]
   }
   
-  @scala.inline
-  implicit class MuiNameMutableBuilder[Self <: MuiName] (val x: Self) extends AnyVal {
+  extension [Self <: MuiName](x: Self) {
     
-    @scala.inline
-    def setMuiName(value: String): Self = StObject.set(x, "muiName", value.asInstanceOf[js.Any])
+    inline def setMuiName(value: String): Self = StObject.set(x, "muiName", value.asInstanceOf[js.Any])
   }
 }

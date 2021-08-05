@@ -14,19 +14,15 @@ trait SchemaIndexItemOptions extends StObject {
 }
 object SchemaIndexItemOptions {
   
-  @scala.inline
-  def apply(): SchemaIndexItemOptions = {
+  inline def apply(): SchemaIndexItemOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIndexItemOptions]
   }
   
-  @scala.inline
-  implicit class SchemaIndexItemOptionsMutableBuilder[Self <: SchemaIndexItemOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIndexItemOptions](x: Self) {
     
-    @scala.inline
-    def setAllowUnknownGsuitePrincipals(value: Boolean): Self = StObject.set(x, "allowUnknownGsuitePrincipals", value.asInstanceOf[js.Any])
+    inline def setAllowUnknownGsuitePrincipals(value: Boolean): Self = StObject.set(x, "allowUnknownGsuitePrincipals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUnknownGsuitePrincipalsUndefined: Self = StObject.set(x, "allowUnknownGsuitePrincipals", js.undefined)
+    inline def setAllowUnknownGsuitePrincipalsUndefined: Self = StObject.set(x, "allowUnknownGsuitePrincipals", js.undefined)
   }
 }

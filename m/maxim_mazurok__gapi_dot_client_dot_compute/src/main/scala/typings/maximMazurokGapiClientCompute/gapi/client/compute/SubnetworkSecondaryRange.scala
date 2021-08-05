@@ -20,25 +20,19 @@ trait SubnetworkSecondaryRange extends StObject {
 }
 object SubnetworkSecondaryRange {
   
-  @scala.inline
-  def apply(): SubnetworkSecondaryRange = {
+  inline def apply(): SubnetworkSecondaryRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubnetworkSecondaryRange]
   }
   
-  @scala.inline
-  implicit class SubnetworkSecondaryRangeMutableBuilder[Self <: SubnetworkSecondaryRange] (val x: Self) extends AnyVal {
+  extension [Self <: SubnetworkSecondaryRange](x: Self) {
     
-    @scala.inline
-    def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
+    inline def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
+    inline def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
     
-    @scala.inline
-    def setRangeName(value: String): Self = StObject.set(x, "rangeName", value.asInstanceOf[js.Any])
+    inline def setRangeName(value: String): Self = StObject.set(x, "rangeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeNameUndefined: Self = StObject.set(x, "rangeName", js.undefined)
+    inline def setRangeNameUndefined: Self = StObject.set(x, "rangeName", js.undefined)
   }
 }

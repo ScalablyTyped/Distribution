@@ -12,6 +12,5 @@ object facepileStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def styles(props: IFacepileStyleProps): IFacepileStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("styles")(props.asInstanceOf[js.Any]).asInstanceOf[IFacepileStyles]
+  inline def styles(props: IFacepileStyleProps): IFacepileStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("styles")(props.asInstanceOf[js.Any]).asInstanceOf[IFacepileStyles]
 }

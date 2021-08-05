@@ -72,20 +72,16 @@ object core {
   }
   object dxTemplateOptions {
     
-    @scala.inline
-    def apply(): dxTemplateOptions = {
+    inline def apply(): dxTemplateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[dxTemplateOptions]
     }
     
-    @scala.inline
-    implicit class dxTemplateOptionsMutableBuilder[Self <: dxTemplateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: dxTemplateOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   

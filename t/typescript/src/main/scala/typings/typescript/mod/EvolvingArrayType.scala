@@ -14,8 +14,7 @@ trait EvolvingArrayType
 }
 object EvolvingArrayType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     elementType: Type,
     flags: TypeFlags,
     getApparentProperties: () => js.Array[Symbol],
@@ -47,16 +46,12 @@ object EvolvingArrayType {
     __obj.asInstanceOf[EvolvingArrayType]
   }
   
-  @scala.inline
-  implicit class EvolvingArrayTypeMutableBuilder[Self <: EvolvingArrayType] (val x: Self) extends AnyVal {
+  extension [Self <: EvolvingArrayType](x: Self) {
     
-    @scala.inline
-    def setElementType(value: Type): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: Type): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalArrayType(value: Type): Self = StObject.set(x, "finalArrayType", value.asInstanceOf[js.Any])
+    inline def setFinalArrayType(value: Type): Self = StObject.set(x, "finalArrayType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalArrayTypeUndefined: Self = StObject.set(x, "finalArrayType", js.undefined)
+    inline def setFinalArrayTypeUndefined: Self = StObject.set(x, "finalArrayType", js.undefined)
   }
 }

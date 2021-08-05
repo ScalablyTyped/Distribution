@@ -26,43 +26,31 @@ trait KeyedAppState extends StObject {
 }
 object KeyedAppState {
   
-  @scala.inline
-  def apply(): KeyedAppState = {
+  inline def apply(): KeyedAppState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyedAppState]
   }
   
-  @scala.inline
-  implicit class KeyedAppStateMutableBuilder[Self <: KeyedAppState] (val x: Self) extends AnyVal {
+  extension [Self <: KeyedAppState](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setStateTimestampMillis(value: String): Self = StObject.set(x, "stateTimestampMillis", value.asInstanceOf[js.Any])
+    inline def setStateTimestampMillis(value: String): Self = StObject.set(x, "stateTimestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateTimestampMillisUndefined: Self = StObject.set(x, "stateTimestampMillis", js.undefined)
+    inline def setStateTimestampMillisUndefined: Self = StObject.set(x, "stateTimestampMillis", js.undefined)
   }
 }

@@ -144,32 +144,24 @@ object mod {
   }
   object BallIndicatorProps {
     
-    @scala.inline
-    def apply(): BallIndicatorProps = {
+    inline def apply(): BallIndicatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BallIndicatorProps]
     }
     
-    @scala.inline
-    implicit class BallIndicatorPropsMutableBuilder[Self <: BallIndicatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: BallIndicatorProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -197,32 +189,24 @@ object mod {
   }
   object BarIndicatorProps {
     
-    @scala.inline
-    def apply(): BarIndicatorProps = {
+    inline def apply(): BarIndicatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BarIndicatorProps]
     }
     
-    @scala.inline
-    implicit class BarIndicatorPropsMutableBuilder[Self <: BarIndicatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: BarIndicatorProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -266,53 +250,38 @@ object mod {
   }
   object BaseIndicatorProps {
     
-    @scala.inline
-    def apply(): BaseIndicatorProps = {
+    inline def apply(): BaseIndicatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseIndicatorProps]
     }
     
-    @scala.inline
-    implicit class BaseIndicatorPropsMutableBuilder[Self <: BaseIndicatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: BaseIndicatorProps](x: Self) {
       
-      @scala.inline
-      def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
+      inline def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatingUndefined: Self = StObject.set(x, "animating", js.undefined)
+      inline def setAnimatingUndefined: Self = StObject.set(x, "animating", js.undefined)
       
-      @scala.inline
-      def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      @scala.inline
-      def setAnimationEasing(value: /* value */ Double => Double): Self = StObject.set(x, "animationEasing", js.Any.fromFunction1(value))
+      inline def setAnimationEasing(value: /* value */ Double => Double): Self = StObject.set(x, "animationEasing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
+      inline def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
       
-      @scala.inline
-      def setHidesWhenStopped(value: Boolean): Self = StObject.set(x, "hidesWhenStopped", value.asInstanceOf[js.Any])
+      inline def setHidesWhenStopped(value: Boolean): Self = StObject.set(x, "hidesWhenStopped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidesWhenStoppedUndefined: Self = StObject.set(x, "hidesWhenStopped", js.undefined)
+      inline def setHidesWhenStoppedUndefined: Self = StObject.set(x, "hidesWhenStopped", js.undefined)
       
-      @scala.inline
-      def setInteraction(value: Boolean): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+      inline def setInteraction(value: Boolean): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
+      inline def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -340,32 +309,24 @@ object mod {
   }
   object DotIndicatorProps {
     
-    @scala.inline
-    def apply(): DotIndicatorProps = {
+    inline def apply(): DotIndicatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DotIndicatorProps]
     }
     
-    @scala.inline
-    implicit class DotIndicatorPropsMutableBuilder[Self <: DotIndicatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: DotIndicatorProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -393,32 +354,24 @@ object mod {
   }
   object MaterialIndicatorProps {
     
-    @scala.inline
-    def apply(): MaterialIndicatorProps = {
+    inline def apply(): MaterialIndicatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaterialIndicatorProps]
     }
     
-    @scala.inline
-    implicit class MaterialIndicatorPropsMutableBuilder[Self <: MaterialIndicatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: MaterialIndicatorProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTrackWidth(value: Double): Self = StObject.set(x, "trackWidth", value.asInstanceOf[js.Any])
+      inline def setTrackWidth(value: Double): Self = StObject.set(x, "trackWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackWidthUndefined: Self = StObject.set(x, "trackWidth", js.undefined)
+      inline def setTrackWidthUndefined: Self = StObject.set(x, "trackWidth", js.undefined)
     }
   }
   
@@ -440,26 +393,20 @@ object mod {
   }
   object PacmanIndicatorProps {
     
-    @scala.inline
-    def apply(): PacmanIndicatorProps = {
+    inline def apply(): PacmanIndicatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PacmanIndicatorProps]
     }
     
-    @scala.inline
-    implicit class PacmanIndicatorPropsMutableBuilder[Self <: PacmanIndicatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: PacmanIndicatorProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -481,26 +428,20 @@ object mod {
   }
   object PulseIndicatorProps {
     
-    @scala.inline
-    def apply(): PulseIndicatorProps = {
+    inline def apply(): PulseIndicatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PulseIndicatorProps]
     }
     
-    @scala.inline
-    implicit class PulseIndicatorPropsMutableBuilder[Self <: PulseIndicatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: PulseIndicatorProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -540,44 +481,32 @@ object mod {
   }
   object SkypeIndicatorProps {
     
-    @scala.inline
-    def apply(): SkypeIndicatorProps = {
+    inline def apply(): SkypeIndicatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkypeIndicatorProps]
     }
     
-    @scala.inline
-    implicit class SkypeIndicatorPropsMutableBuilder[Self <: SkypeIndicatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: SkypeIndicatorProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+      inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
+      inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
       
-      @scala.inline
-      def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+      inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
+      inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -605,32 +534,24 @@ object mod {
   }
   object UIActivityIndicatorProps {
     
-    @scala.inline
-    def apply(): UIActivityIndicatorProps = {
+    inline def apply(): UIActivityIndicatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIActivityIndicatorProps]
     }
     
-    @scala.inline
-    implicit class UIActivityIndicatorPropsMutableBuilder[Self <: UIActivityIndicatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: UIActivityIndicatorProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -670,44 +591,32 @@ object mod {
   }
   object WaveIndicatorProps {
     
-    @scala.inline
-    def apply(): WaveIndicatorProps = {
+    inline def apply(): WaveIndicatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WaveIndicatorProps]
     }
     
-    @scala.inline
-    implicit class WaveIndicatorPropsMutableBuilder[Self <: WaveIndicatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: WaveIndicatorProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setWaveFactor(value: Double): Self = StObject.set(x, "waveFactor", value.asInstanceOf[js.Any])
+      inline def setWaveFactor(value: Double): Self = StObject.set(x, "waveFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaveFactorUndefined: Self = StObject.set(x, "waveFactor", js.undefined)
+      inline def setWaveFactorUndefined: Self = StObject.set(x, "waveFactor", js.undefined)
       
-      @scala.inline
-      def setWaveMode(value: fill | outline): Self = StObject.set(x, "waveMode", value.asInstanceOf[js.Any])
+      inline def setWaveMode(value: fill | outline): Self = StObject.set(x, "waveMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaveModeUndefined: Self = StObject.set(x, "waveMode", js.undefined)
+      inline def setWaveModeUndefined: Self = StObject.set(x, "waveMode", js.undefined)
     }
   }
 }

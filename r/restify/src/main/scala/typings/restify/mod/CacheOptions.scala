@@ -10,16 +10,13 @@ trait CacheOptions extends StObject {
 }
 object CacheOptions {
   
-  @scala.inline
-  def apply(maxAge: Double): CacheOptions = {
+  inline def apply(maxAge: Double): CacheOptions = {
     val __obj = js.Dynamic.literal(maxAge = maxAge.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheOptions]
   }
   
-  @scala.inline
-  implicit class CacheOptionsMutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CacheOptions](x: Self) {
     
-    @scala.inline
-    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+    inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
   }
 }

@@ -11,6 +11,5 @@ object wonkaOperatorSkipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def skip[A](max: Double): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("skip")(max.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
+  inline def skip[A](max: Double): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("skip")(max.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
 }

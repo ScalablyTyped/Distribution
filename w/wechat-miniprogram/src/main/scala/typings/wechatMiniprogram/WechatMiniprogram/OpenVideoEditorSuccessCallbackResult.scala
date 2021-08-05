@@ -22,28 +22,21 @@ trait OpenVideoEditorSuccessCallbackResult extends StObject {
 }
 object OpenVideoEditorSuccessCallbackResult {
   
-  @scala.inline
-  def apply(duration: Double, errMsg: String, size: Double, tempFilePath: String, tempThumbPath: String): OpenVideoEditorSuccessCallbackResult = {
+  inline def apply(duration: Double, errMsg: String, size: Double, tempFilePath: String, tempThumbPath: String): OpenVideoEditorSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], tempFilePath = tempFilePath.asInstanceOf[js.Any], tempThumbPath = tempThumbPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenVideoEditorSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class OpenVideoEditorSuccessCallbackResultMutableBuilder[Self <: OpenVideoEditorSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OpenVideoEditorSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
+    inline def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
   }
 }

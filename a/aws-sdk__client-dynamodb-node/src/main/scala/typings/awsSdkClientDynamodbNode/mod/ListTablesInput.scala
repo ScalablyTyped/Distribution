@@ -9,8 +9,7 @@ trait ListTablesInput
      with typings.awsSdkClientDynamodbNode.typesListTablesInputMod.ListTablesInput
 object ListTablesInput {
   
-  @scala.inline
-  def apply(): ListTablesInput = {
+  inline def apply(): ListTablesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTablesInput]
   }

@@ -19,16 +19,13 @@ trait MoveContentCommand
 }
 object MoveContentCommand {
   
-  @scala.inline
-  def apply(execute: Double => Boolean, getState: () => SimpleCommandState): MoveContentCommand = {
+  inline def apply(execute: Double => Boolean, getState: () => SimpleCommandState): MoveContentCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[MoveContentCommand]
   }
   
-  @scala.inline
-  implicit class MoveContentCommandMutableBuilder[Self <: MoveContentCommand] (val x: Self) extends AnyVal {
+  extension [Self <: MoveContentCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: Double => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: Double => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

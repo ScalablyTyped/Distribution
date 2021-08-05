@@ -34,8 +34,7 @@ trait D extends StObject {
 }
 object D {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     D: String,
     F: String,
     G: String,
@@ -54,31 +53,22 @@ object D {
     __obj.asInstanceOf[D]
   }
   
-  @scala.inline
-  implicit class DMutableBuilder[Self <: D] (val x: Self) extends AnyVal {
+  extension [Self <: D](x: Self) {
     
-    @scala.inline
-    def setD(value: String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
+    inline def setD(value: String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
+    inline def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setG(value: String): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
+    inline def setG(value: String): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM(value: String): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
+    inline def setM(value: String): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT(value: String): Self = StObject.set(x, "T", value.asInstanceOf[js.Any])
+    inline def setT(value: String): Self = StObject.set(x, "T", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+    inline def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: String): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+    inline def setY(value: String): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
   }
 }

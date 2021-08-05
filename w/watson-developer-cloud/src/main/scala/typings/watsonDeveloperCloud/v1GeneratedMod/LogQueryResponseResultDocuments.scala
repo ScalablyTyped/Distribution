@@ -15,28 +15,21 @@ trait LogQueryResponseResultDocuments extends StObject {
 }
 object LogQueryResponseResultDocuments {
   
-  @scala.inline
-  def apply(): LogQueryResponseResultDocuments = {
+  inline def apply(): LogQueryResponseResultDocuments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogQueryResponseResultDocuments]
   }
   
-  @scala.inline
-  implicit class LogQueryResponseResultDocumentsMutableBuilder[Self <: LogQueryResponseResultDocuments] (val x: Self) extends AnyVal {
+  extension [Self <: LogQueryResponseResultDocuments](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[LogQueryResponseResultDocumentsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[LogQueryResponseResultDocumentsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: LogQueryResponseResultDocumentsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: LogQueryResponseResultDocumentsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

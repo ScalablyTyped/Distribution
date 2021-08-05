@@ -14,7 +14,7 @@ trait LinkFormat extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.LinkFormat_typekey")
+  /* private */ @JSName("PowerPoint.LinkFormat_typekey")
   var PowerPointDotLinkFormat_typekey: LinkFormat
   
   var SourceFullName: String
@@ -23,8 +23,7 @@ trait LinkFormat extends StObject {
 }
 object LinkFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     AutoUpdate: PpUpdateOption,
     BreakLink: () => Unit,
@@ -38,28 +37,20 @@ object LinkFormat {
     __obj.asInstanceOf[LinkFormat]
   }
   
-  @scala.inline
-  implicit class LinkFormatMutableBuilder[Self <: LinkFormat] (val x: Self) extends AnyVal {
+  extension [Self <: LinkFormat](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUpdate(value: PpUpdateOption): Self = StObject.set(x, "AutoUpdate", value.asInstanceOf[js.Any])
+    inline def setAutoUpdate(value: PpUpdateOption): Self = StObject.set(x, "AutoUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakLink(value: () => Unit): Self = StObject.set(x, "BreakLink", js.Any.fromFunction0(value))
+    inline def setBreakLink(value: () => Unit): Self = StObject.set(x, "BreakLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotLinkFormat_typekey(value: LinkFormat): Self = StObject.set(x, "PowerPoint.LinkFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotLinkFormat_typekey(value: LinkFormat): Self = StObject.set(x, "PowerPoint.LinkFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFullName(value: String): Self = StObject.set(x, "SourceFullName", value.asInstanceOf[js.Any])
+    inline def setSourceFullName(value: String): Self = StObject.set(x, "SourceFullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
   }
 }

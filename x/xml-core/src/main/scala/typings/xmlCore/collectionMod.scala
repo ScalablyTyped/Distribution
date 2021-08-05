@@ -58,6 +58,6 @@ object collectionMod {
     /* CompleteClass */
     override def Sort(cb: js.Function2[I, I, Double]): ICollection[I] = js.native
     
-    var items: js.Array[I] = js.native
+    /* protected */ var items: js.Array[I] = js.native
   }
 }

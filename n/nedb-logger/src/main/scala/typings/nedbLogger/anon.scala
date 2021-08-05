@@ -12,17 +12,14 @@ object anon {
   }
   object Filename {
     
-    @scala.inline
-    def apply(filename: String): Filename = {
+    inline def apply(filename: String): Filename = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filename]
     }
     
-    @scala.inline
-    implicit class FilenameMutableBuilder[Self <: Filename] (val x: Self) extends AnyVal {
+    extension [Self <: Filename](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     }
   }
 }

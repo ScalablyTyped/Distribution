@@ -84,10 +84,8 @@ object ChangeLogEntry {
       * @returns Successor instance
       */
     /* static member */
-    @scala.inline
-    def create(): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Successor]
-    @scala.inline
-    def create(properties: ISuccessor): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Successor]
+    inline def create(): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Successor]
+    inline def create(properties: ISuccessor): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Successor]
     
     /**
       * Decodes a Successor message from the specified reader or buffer.
@@ -98,14 +96,10 @@ object ChangeLogEntry {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Successor]
-    @scala.inline
-    def decode(reader: Reader, length: Double): Successor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Successor]
-    @scala.inline
-    def decode(reader: Uint8Array): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Successor]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): Successor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Successor]
+    inline def decode(reader: Reader): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Successor]
+    inline def decode(reader: Reader, length: Double): Successor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Successor]
+    inline def decode(reader: Uint8Array): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Successor]
+    inline def decode(reader: Uint8Array, length: Double): Successor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Successor]
     
     /**
       * Decodes a Successor message from the specified reader or buffer, length delimited.
@@ -115,10 +109,8 @@ object ChangeLogEntry {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Successor]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Successor]
+    inline def decodeDelimited(reader: Reader): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Successor]
+    inline def decodeDelimited(reader: Uint8Array): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Successor]
     
     /**
       * Encodes the specified Successor message. Does not implicitly {@link ChangeLogEntry.Successor.verify|verify} messages.
@@ -127,10 +119,8 @@ object ChangeLogEntry {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: ISuccessor): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: ISuccessor, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: ISuccessor): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: ISuccessor, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Successor message, length delimited. Does not implicitly {@link ChangeLogEntry.Successor.verify|verify} messages.
@@ -139,10 +129,8 @@ object ChangeLogEntry {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: ISuccessor): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: ISuccessor, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ISuccessor): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ISuccessor, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Successor message from a plain object. Also converts values to their respective internal types.
@@ -150,8 +138,7 @@ object ChangeLogEntry {
       * @returns Successor
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Successor]
+    inline def fromObject(`object`: StringDictionary[js.Any]): Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Successor]
     
     /**
       * Creates a plain object from a Successor message. Also converts values to other types if specified.
@@ -160,10 +147,8 @@ object ChangeLogEntry {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: Successor): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: Successor, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Successor): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Successor, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Successor message.
@@ -171,8 +156,7 @@ object ChangeLogEntry {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -180,10 +164,8 @@ object ChangeLogEntry {
     * @param [properties] Properties to set
     * @returns ChangeLogEntry instance
     */
-  @scala.inline
-  def create(): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ChangeLogEntry]
-  @scala.inline
-  def create(properties: IChangeLogEntry): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ChangeLogEntry]
+  inline def create(): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ChangeLogEntry]
+  inline def create(properties: IChangeLogEntry): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ChangeLogEntry]
   
   /**
     * Decodes a ChangeLogEntry message from the specified reader or buffer.
@@ -193,14 +175,10 @@ object ChangeLogEntry {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decode(reader: Reader): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ChangeLogEntry]
-  @scala.inline
-  def decode(reader: Reader, length: Double): ChangeLogEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ChangeLogEntry]
-  @scala.inline
-  def decode(reader: Uint8Array): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ChangeLogEntry]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): ChangeLogEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ChangeLogEntry]
+  inline def decode(reader: Reader): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ChangeLogEntry]
+  inline def decode(reader: Reader, length: Double): ChangeLogEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ChangeLogEntry]
+  inline def decode(reader: Uint8Array): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ChangeLogEntry]
+  inline def decode(reader: Uint8Array, length: Double): ChangeLogEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ChangeLogEntry]
   
   /**
     * Decodes a ChangeLogEntry message from the specified reader or buffer, length delimited.
@@ -209,10 +187,8 @@ object ChangeLogEntry {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decodeDelimited(reader: Reader): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ChangeLogEntry]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ChangeLogEntry]
+  inline def decodeDelimited(reader: Reader): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ChangeLogEntry]
+  inline def decodeDelimited(reader: Uint8Array): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ChangeLogEntry]
   
   /**
     * Encodes the specified ChangeLogEntry message. Does not implicitly {@link ChangeLogEntry.verify|verify} messages.
@@ -220,10 +196,8 @@ object ChangeLogEntry {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encode(message: IChangeLogEntry): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IChangeLogEntry, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IChangeLogEntry): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IChangeLogEntry, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ChangeLogEntry message, length delimited. Does not implicitly {@link ChangeLogEntry.verify|verify} messages.
@@ -231,18 +205,15 @@ object ChangeLogEntry {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encodeDelimited(message: IChangeLogEntry): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IChangeLogEntry, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IChangeLogEntry): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IChangeLogEntry, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ChangeLogEntry message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ChangeLogEntry
     */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ChangeLogEntry]
+  inline def fromObject(`object`: StringDictionary[js.Any]): ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ChangeLogEntry]
   
   /**
     * Creates a plain object from a ChangeLogEntry message. Also converts values to other types if specified.
@@ -250,18 +221,15 @@ object ChangeLogEntry {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @scala.inline
-  def toObject(message: ChangeLogEntry): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: ChangeLogEntry, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ChangeLogEntry): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ChangeLogEntry, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ChangeLogEntry message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a Successor. */
   trait ISuccessor extends StObject {
@@ -274,35 +242,26 @@ object ChangeLogEntry {
   }
   object ISuccessor {
     
-    @scala.inline
-    def apply(): ISuccessor = {
+    inline def apply(): ISuccessor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISuccessor]
     }
     
-    @scala.inline
-    implicit class ISuccessorMutableBuilder[Self <: ISuccessor] (val x: Self) extends AnyVal {
+    extension [Self <: ISuccessor](x: Self) {
       
-      @scala.inline
-      def setDeletions(value: js.Array[Uint8Array]): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
+      inline def setDeletions(value: js.Array[Uint8Array]): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletionsNull: Self = StObject.set(x, "deletions", null)
+      inline def setDeletionsNull: Self = StObject.set(x, "deletions", null)
       
-      @scala.inline
-      def setDeletionsUndefined: Self = StObject.set(x, "deletions", js.undefined)
+      inline def setDeletionsUndefined: Self = StObject.set(x, "deletions", js.undefined)
       
-      @scala.inline
-      def setDeletionsVarargs(value: Uint8Array*): Self = StObject.set(x, "deletions", js.Array(value :_*))
+      inline def setDeletionsVarargs(value: Uint8Array*): Self = StObject.set(x, "deletions", js.Array(value :_*))
       
-      @scala.inline
-      def setSuccessor(value: Uint8Array): Self = StObject.set(x, "successor", value.asInstanceOf[js.Any])
+      inline def setSuccessor(value: Uint8Array): Self = StObject.set(x, "successor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessorNull: Self = StObject.set(x, "successor", null)
+      inline def setSuccessorNull: Self = StObject.set(x, "successor", null)
       
-      @scala.inline
-      def setSuccessorUndefined: Self = StObject.set(x, "successor", js.undefined)
+      inline def setSuccessorUndefined: Self = StObject.set(x, "successor", js.undefined)
     }
   }
 }

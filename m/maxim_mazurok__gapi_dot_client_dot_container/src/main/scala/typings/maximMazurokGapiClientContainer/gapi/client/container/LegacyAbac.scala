@@ -14,19 +14,15 @@ trait LegacyAbac extends StObject {
 }
 object LegacyAbac {
   
-  @scala.inline
-  def apply(): LegacyAbac = {
+  inline def apply(): LegacyAbac = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegacyAbac]
   }
   
-  @scala.inline
-  implicit class LegacyAbacMutableBuilder[Self <: LegacyAbac] (val x: Self) extends AnyVal {
+  extension [Self <: LegacyAbac](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

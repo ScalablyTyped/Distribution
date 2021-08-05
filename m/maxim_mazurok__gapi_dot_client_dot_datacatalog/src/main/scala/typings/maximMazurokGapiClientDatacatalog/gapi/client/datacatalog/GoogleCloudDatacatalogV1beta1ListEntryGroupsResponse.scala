@@ -14,28 +14,21 @@ trait GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1ListEntryGroupsResponseMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setEntryGroups(value: js.Array[GoogleCloudDatacatalogV1beta1EntryGroup]): Self = StObject.set(x, "entryGroups", value.asInstanceOf[js.Any])
+    inline def setEntryGroups(value: js.Array[GoogleCloudDatacatalogV1beta1EntryGroup]): Self = StObject.set(x, "entryGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryGroupsUndefined: Self = StObject.set(x, "entryGroups", js.undefined)
+    inline def setEntryGroupsUndefined: Self = StObject.set(x, "entryGroups", js.undefined)
     
-    @scala.inline
-    def setEntryGroupsVarargs(value: GoogleCloudDatacatalogV1beta1EntryGroup*): Self = StObject.set(x, "entryGroups", js.Array(value :_*))
+    inline def setEntryGroupsVarargs(value: GoogleCloudDatacatalogV1beta1EntryGroup*): Self = StObject.set(x, "entryGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

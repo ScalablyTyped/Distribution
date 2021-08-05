@@ -22,22 +22,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: LoggerOptions): Logger = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def apply(options: LoggerOptions): Logger = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
   @JSImport("pino-multi-stream", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def multistream(streams: Streams): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("multistream")(streams.asInstanceOf[js.Any]).asInstanceOf[Writable]
-  @scala.inline
-  def multistream(streams: Streams, opts: MultiStreamOptions): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("multistream")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  inline def multistream(streams: Streams): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("multistream")(streams.asInstanceOf[js.Any]).asInstanceOf[Writable]
+  inline def multistream(streams: Streams, opts: MultiStreamOptions): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("multistream")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Writable]
   
-  @scala.inline
-  def prettyStream(): DestinationStream = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyStream")().asInstanceOf[DestinationStream]
-  @scala.inline
-  def prettyStream(opts: PrettyStreamOptions): DestinationStream = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyStream")(opts.asInstanceOf[js.Any]).asInstanceOf[DestinationStream]
+  inline def prettyStream(): DestinationStream = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyStream")().asInstanceOf[DestinationStream]
+  inline def prettyStream(opts: PrettyStreamOptions): DestinationStream = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyStream")(opts.asInstanceOf[js.Any]).asInstanceOf[DestinationStream]
   
   object stdSerializers {
     
@@ -54,10 +49,8 @@ object mod {
     /**
       * Serializes an Error object.
       */
-    @scala.inline
-    def err(err: Error): SerializedError = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(err.asInstanceOf[js.Any]).asInstanceOf[SerializedError]
-    @scala.inline
-    def err_=(x: js.Function1[/* err */ Error, SerializedError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("err")(x.asInstanceOf[js.Any])
+    inline def err(err: Error): SerializedError = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(err.asInstanceOf[js.Any]).asInstanceOf[SerializedError]
+    inline def err_=(x: js.Function1[/* err */ Error, SerializedError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("err")(x.asInstanceOf[js.Any])
     
     /**
       * Returns an object:
@@ -84,10 +77,8 @@ object mod {
       * @param req The request to serialize
       * @return An object
       */
-    @scala.inline
-    def mapHttpRequest(req: IncomingMessage): Req = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpRequest")(req.asInstanceOf[js.Any]).asInstanceOf[Req]
-    @scala.inline
-    def mapHttpRequest_=(x: js.Function1[/* req */ IncomingMessage, Req]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapHttpRequest")(x.asInstanceOf[js.Any])
+    inline def mapHttpRequest(req: IncomingMessage): Req = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpRequest")(req.asInstanceOf[js.Any]).asInstanceOf[Req]
+    inline def mapHttpRequest_=(x: js.Function1[/* req */ IncomingMessage, Req]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapHttpRequest")(x.asInstanceOf[js.Any])
     
     /**
       * Returns an object:
@@ -114,10 +105,8 @@ object mod {
       * @param res The response to serialize.
       * @return An object.
       */
-    @scala.inline
-    def mapHttpResponse(res: ServerResponse): Res = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpResponse")(res.asInstanceOf[js.Any]).asInstanceOf[Res]
-    @scala.inline
-    def mapHttpResponse_=(x: js.Function1[/* res */ ServerResponse, Res]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapHttpResponse")(x.asInstanceOf[js.Any])
+    inline def mapHttpResponse(res: ServerResponse): Res = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpResponse")(res.asInstanceOf[js.Any]).asInstanceOf[Res]
+    inline def mapHttpResponse_=(x: js.Function1[/* res */ ServerResponse, Res]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapHttpResponse")(x.asInstanceOf[js.Any])
     
     /**
       * Generates a JSONifiable object from the HTTP `request` object passed to the `createServer` callback of Node's HTTP server.
@@ -128,10 +117,8 @@ object mod {
     /**
       * Generates a JSONifiable object from the HTTP `request` object passed to the `createServer` callback of Node's HTTP server.
       */
-    @scala.inline
-    def req(req: IncomingMessage): SerializedRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("req")(req.asInstanceOf[js.Any]).asInstanceOf[SerializedRequest]
-    @scala.inline
-    def req_=(x: js.Function1[/* req */ IncomingMessage, SerializedRequest]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("req")(x.asInstanceOf[js.Any])
+    inline def req(req: IncomingMessage): SerializedRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("req")(req.asInstanceOf[js.Any]).asInstanceOf[SerializedRequest]
+    inline def req_=(x: js.Function1[/* req */ IncomingMessage, SerializedRequest]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("req")(x.asInstanceOf[js.Any])
     
     /**
       * Generates a JSONifiable object from the HTTP `response` object passed to the `createServer` callback of Node's HTTP server.
@@ -142,10 +129,8 @@ object mod {
     /**
       * Generates a JSONifiable object from the HTTP `response` object passed to the `createServer` callback of Node's HTTP server.
       */
-    @scala.inline
-    def res(res: ServerResponse): SerializedResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("res")(res.asInstanceOf[js.Any]).asInstanceOf[SerializedResponse]
-    @scala.inline
-    def res_=(x: js.Function1[/* res */ ServerResponse, SerializedResponse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("res")(x.asInstanceOf[js.Any])
+    inline def res(res: ServerResponse): SerializedResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("res")(res.asInstanceOf[js.Any]).asInstanceOf[SerializedResponse]
+    inline def res_=(x: js.Function1[/* res */ ServerResponse, SerializedResponse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("res")(x.asInstanceOf[js.Any])
     
     /**
       * A utility method for wrapping the default error serializer. Allows custom serializers to work with the
@@ -167,10 +152,8 @@ object mod {
       * error object. Returns the new (or updated) error object.
       * @return A new error serializer.
       */
-    @scala.inline
-    def wrapErrorSerializer(customSerializer: CustomErrorSerializer): js.Function1[/* err */ Error, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapErrorSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* err */ Error, Record[String, js.Any]]]
-    @scala.inline
-    def wrapErrorSerializer_=(
+    inline def wrapErrorSerializer(customSerializer: CustomErrorSerializer): js.Function1[/* err */ Error, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapErrorSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* err */ Error, Record[String, js.Any]]]
+    inline def wrapErrorSerializer_=(
       x: js.Function1[
           /* customSerializer */ CustomErrorSerializer, 
           js.Function1[/* err */ Error, Record[String, js.Any]]
@@ -197,10 +180,8 @@ object mod {
       * request object. Returns the new (or updated) request object.
       * @return A new error serializer.
       */
-    @scala.inline
-    def wrapRequestSerializer(customSerializer: CustomRequestSerializer): js.Function1[/* req */ IncomingMessage, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRequestSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* req */ IncomingMessage, Record[String, js.Any]]]
-    @scala.inline
-    def wrapRequestSerializer_=(
+    inline def wrapRequestSerializer(customSerializer: CustomRequestSerializer): js.Function1[/* req */ IncomingMessage, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRequestSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* req */ IncomingMessage, Record[String, js.Any]]]
+    inline def wrapRequestSerializer_=(
       x: js.Function1[
           /* customSerializer */ CustomRequestSerializer, 
           js.Function1[/* req */ IncomingMessage, Record[String, js.Any]]
@@ -227,10 +208,8 @@ object mod {
       * response object. Returns the new (or updated) response object.
       * @return A new error serializer.
       */
-    @scala.inline
-    def wrapResponseSerializer(customSerializer: CustomResponseSerializer): js.Function1[/* res */ ServerResponse, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapResponseSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* res */ ServerResponse, Record[String, js.Any]]]
-    @scala.inline
-    def wrapResponseSerializer_=(
+    inline def wrapResponseSerializer(customSerializer: CustomResponseSerializer): js.Function1[/* res */ ServerResponse, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapResponseSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* res */ ServerResponse, Record[String, js.Any]]]
+    inline def wrapResponseSerializer_=(
       x: js.Function1[
           /* customSerializer */ CustomResponseSerializer, 
           js.Function1[/* res */ ServerResponse, Record[String, js.Any]]
@@ -250,23 +229,18 @@ object mod {
   }
   object LoggerOptions {
     
-    @scala.inline
-    def apply(): LoggerOptions = {
+    inline def apply(): LoggerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    @scala.inline
-    implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerOptions](x: Self) {
       
-      @scala.inline
-      def setStreams(value: Streams): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
+      inline def setStreams(value: Streams): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
+      inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
       
-      @scala.inline
-      def setStreamsVarargs(value: typings.pinoMultiStream.anon.Level*): Self = StObject.set(x, "streams", js.Array(value :_*))
+      inline def setStreamsVarargs(value: typings.pinoMultiStream.anon.Level*): Self = StObject.set(x, "streams", js.Array(value :_*))
     }
   }
   
@@ -276,20 +250,16 @@ object mod {
   }
   object MultiStreamOptions {
     
-    @scala.inline
-    def apply(): MultiStreamOptions = {
+    inline def apply(): MultiStreamOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MultiStreamOptions]
     }
     
-    @scala.inline
-    implicit class MultiStreamOptionsMutableBuilder[Self <: MultiStreamOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MultiStreamOptions](x: Self) {
       
-      @scala.inline
-      def setDedupe(value: Boolean): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
+      inline def setDedupe(value: Boolean): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDedupeUndefined: Self = StObject.set(x, "dedupe", js.undefined)
+      inline def setDedupeUndefined: Self = StObject.set(x, "dedupe", js.undefined)
     }
   }
   
@@ -308,32 +278,24 @@ object mod {
   }
   object PrettyStreamOptions {
     
-    @scala.inline
-    def apply(): PrettyStreamOptions = {
+    inline def apply(): PrettyStreamOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrettyStreamOptions]
     }
     
-    @scala.inline
-    implicit class PrettyStreamOptionsMutableBuilder[Self <: PrettyStreamOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrettyStreamOptions](x: Self) {
       
-      @scala.inline
-      def setDest(value: DestinationStream | WritableStream): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: DestinationStream | WritableStream): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
+      inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
-      @scala.inline
-      def setPrettifier(value: js.Any): Self = StObject.set(x, "prettifier", value.asInstanceOf[js.Any])
+      inline def setPrettifier(value: js.Any): Self = StObject.set(x, "prettifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettifierUndefined: Self = StObject.set(x, "prettifier", js.undefined)
+      inline def setPrettifierUndefined: Self = StObject.set(x, "prettifier", js.undefined)
       
-      @scala.inline
-      def setPrettyPrint(value: Boolean | PrettyOptions): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+      inline def setPrettyPrint(value: Boolean | PrettyOptions): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+      inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     }
   }
   

@@ -23,22 +23,17 @@ trait PluginRegistered extends StObject {
 }
 object PluginRegistered {
   
-  @scala.inline
-  def apply(name: String, options: js.Object, version: String): PluginRegistered = {
+  inline def apply(name: String, options: js.Object, version: String): PluginRegistered = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRegistered]
   }
   
-  @scala.inline
-  implicit class PluginRegisteredMutableBuilder[Self <: PluginRegistered] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRegistered](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

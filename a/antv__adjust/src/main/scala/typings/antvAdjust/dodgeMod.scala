@@ -17,20 +17,20 @@ object dodgeMod {
   trait Dodge
     extends typings.antvAdjust.adjustMod.default {
     
-    var adjustDataArray: js.Any = js.native
+    /* private */ var adjustDataArray: js.Any = js.native
     
-    var cacheMap: js.Any = js.native
+    /* private */ var cacheMap: js.Any = js.native
     
-    var getDistribution: js.Any = js.native
+    /* private */ var getDistribution: js.Any = js.native
     
-    var getDodgeOffset: js.Any = js.native
+    /* private */ var getDodgeOffset: js.Any = js.native
     
-    var getDodgeOnlyOffset: js.Any = js.native
+    /* private */ var getDodgeOnlyOffset: js.Any = js.native
     
-    var getIntervalAndDodgeOffset: js.Any = js.native
+    /* private */ var getIntervalAndDodgeOffset: js.Any = js.native
     
-    var getIntervalOnlyOffset: js.Any = js.native
+    /* private */ var getIntervalOnlyOffset: js.Any = js.native
     
-    var mergeData: js.Any = js.native
+    /* private */ var mergeData: js.Any = js.native
   }
 }

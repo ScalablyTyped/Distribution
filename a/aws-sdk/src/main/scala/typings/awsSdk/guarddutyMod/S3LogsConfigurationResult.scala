@@ -13,16 +13,13 @@ trait S3LogsConfigurationResult extends StObject {
 }
 object S3LogsConfigurationResult {
   
-  @scala.inline
-  def apply(Status: DataSourceStatus): S3LogsConfigurationResult = {
+  inline def apply(Status: DataSourceStatus): S3LogsConfigurationResult = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3LogsConfigurationResult]
   }
   
-  @scala.inline
-  implicit class S3LogsConfigurationResultMutableBuilder[Self <: S3LogsConfigurationResult] (val x: Self) extends AnyVal {
+  extension [Self <: S3LogsConfigurationResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: DataSourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DataSourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

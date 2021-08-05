@@ -14,8 +14,7 @@ trait AddEvent
 }
 object AddEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     controller: Controller,
     currentTarget: Scene,
     namespace: String,
@@ -28,10 +27,8 @@ object AddEvent {
     __obj.asInstanceOf[AddEvent]
   }
   
-  @scala.inline
-  implicit class AddEventMutableBuilder[Self <: AddEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AddEvent](x: Self) {
     
-    @scala.inline
-    def setController(value: Controller): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: Controller): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
   }
 }

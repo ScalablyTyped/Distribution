@@ -13,22 +13,17 @@ trait SchemaRegionalinventoryCustomBatchRequest extends StObject {
 }
 object SchemaRegionalinventoryCustomBatchRequest {
   
-  @scala.inline
-  def apply(): SchemaRegionalinventoryCustomBatchRequest = {
+  inline def apply(): SchemaRegionalinventoryCustomBatchRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegionalinventoryCustomBatchRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRegionalinventoryCustomBatchRequestMutableBuilder[Self <: SchemaRegionalinventoryCustomBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegionalinventoryCustomBatchRequest](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[SchemaRegionalinventoryCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[SchemaRegionalinventoryCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: SchemaRegionalinventoryCustomBatchRequestEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: SchemaRegionalinventoryCustomBatchRequestEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

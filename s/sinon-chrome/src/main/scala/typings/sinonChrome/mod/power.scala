@@ -13,12 +13,10 @@ object power {
   @JSImport("sinon-chrome", "power.releaseKeepAwake")
   @js.native
   def releaseKeepAwake: SinonChromeStub = js.native
-  @scala.inline
-  def releaseKeepAwake_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("releaseKeepAwake")(x.asInstanceOf[js.Any])
+  inline def releaseKeepAwake_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("releaseKeepAwake")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "power.requestKeepAwake")
   @js.native
   def requestKeepAwake: SinonChromeStub = js.native
-  @scala.inline
-  def requestKeepAwake_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestKeepAwake")(x.asInstanceOf[js.Any])
+  inline def requestKeepAwake_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestKeepAwake")(x.asInstanceOf[js.Any])
 }

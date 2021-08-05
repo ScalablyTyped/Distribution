@@ -33,8 +33,7 @@ trait CloneStatistics extends StObject {
 }
 object CloneStatistics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clonedRequirementsCount: Double,
     clonedSharedStepsCount: Double,
     clonedTestCasesCount: Double,
@@ -45,22 +44,16 @@ object CloneStatistics {
     __obj.asInstanceOf[CloneStatistics]
   }
   
-  @scala.inline
-  implicit class CloneStatisticsMutableBuilder[Self <: CloneStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: CloneStatistics](x: Self) {
     
-    @scala.inline
-    def setClonedRequirementsCount(value: Double): Self = StObject.set(x, "clonedRequirementsCount", value.asInstanceOf[js.Any])
+    inline def setClonedRequirementsCount(value: Double): Self = StObject.set(x, "clonedRequirementsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClonedSharedStepsCount(value: Double): Self = StObject.set(x, "clonedSharedStepsCount", value.asInstanceOf[js.Any])
+    inline def setClonedSharedStepsCount(value: Double): Self = StObject.set(x, "clonedSharedStepsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClonedTestCasesCount(value: Double): Self = StObject.set(x, "clonedTestCasesCount", value.asInstanceOf[js.Any])
+    inline def setClonedTestCasesCount(value: Double): Self = StObject.set(x, "clonedTestCasesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRequirementsCount(value: Double): Self = StObject.set(x, "totalRequirementsCount", value.asInstanceOf[js.Any])
+    inline def setTotalRequirementsCount(value: Double): Self = StObject.set(x, "totalRequirementsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalTestCasesCount(value: Double): Self = StObject.set(x, "totalTestCasesCount", value.asInstanceOf[js.Any])
+    inline def setTotalTestCasesCount(value: Double): Self = StObject.set(x, "totalTestCasesCount", value.asInstanceOf[js.Any])
   }
 }

@@ -23,25 +23,19 @@ trait WebSocketCreatedEvent extends StObject {
 }
 object WebSocketCreatedEvent {
   
-  @scala.inline
-  def apply(requestId: RequestId, url: String): WebSocketCreatedEvent = {
+  inline def apply(requestId: RequestId, url: String): WebSocketCreatedEvent = {
     val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSocketCreatedEvent]
   }
   
-  @scala.inline
-  implicit class WebSocketCreatedEventMutableBuilder[Self <: WebSocketCreatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WebSocketCreatedEvent](x: Self) {
     
-    @scala.inline
-    def setInitiator(value: Initiator): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
+    inline def setInitiator(value: Initiator): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiatorUndefined: Self = StObject.set(x, "initiator", js.undefined)
+    inline def setInitiatorUndefined: Self = StObject.set(x, "initiator", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -17,28 +17,21 @@ trait ServiceAccountConfig extends StObject {
 }
 object ServiceAccountConfig {
   
-  @scala.inline
-  def apply(): ServiceAccountConfig = {
+  inline def apply(): ServiceAccountConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceAccountConfig]
   }
   
-  @scala.inline
-  implicit class ServiceAccountConfigMutableBuilder[Self <: ServiceAccountConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceAccountConfig](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setTenantProjectRoles(value: js.Array[String]): Self = StObject.set(x, "tenantProjectRoles", value.asInstanceOf[js.Any])
+    inline def setTenantProjectRoles(value: js.Array[String]): Self = StObject.set(x, "tenantProjectRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantProjectRolesUndefined: Self = StObject.set(x, "tenantProjectRoles", js.undefined)
+    inline def setTenantProjectRolesUndefined: Self = StObject.set(x, "tenantProjectRoles", js.undefined)
     
-    @scala.inline
-    def setTenantProjectRolesVarargs(value: String*): Self = StObject.set(x, "tenantProjectRoles", js.Array(value :_*))
+    inline def setTenantProjectRolesVarargs(value: String*): Self = StObject.set(x, "tenantProjectRoles", js.Array(value :_*))
   }
 }

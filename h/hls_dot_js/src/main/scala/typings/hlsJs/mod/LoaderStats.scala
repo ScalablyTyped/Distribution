@@ -38,31 +38,23 @@ trait LoaderStats extends StObject {
 }
 object LoaderStats {
   
-  @scala.inline
-  def apply(bw: Double, loaded: Double, tfirst: Double, tload: Double, total: Double, trequest: Double): LoaderStats = {
+  inline def apply(bw: Double, loaded: Double, tfirst: Double, tload: Double, total: Double, trequest: Double): LoaderStats = {
     val __obj = js.Dynamic.literal(bw = bw.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any], tfirst = tfirst.asInstanceOf[js.Any], tload = tload.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], trequest = trequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderStats]
   }
   
-  @scala.inline
-  implicit class LoaderStatsMutableBuilder[Self <: LoaderStats] (val x: Self) extends AnyVal {
+  extension [Self <: LoaderStats](x: Self) {
     
-    @scala.inline
-    def setBw(value: Double): Self = StObject.set(x, "bw", value.asInstanceOf[js.Any])
+    inline def setBw(value: Double): Self = StObject.set(x, "bw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfirst(value: Double): Self = StObject.set(x, "tfirst", value.asInstanceOf[js.Any])
+    inline def setTfirst(value: Double): Self = StObject.set(x, "tfirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTload(value: Double): Self = StObject.set(x, "tload", value.asInstanceOf[js.Any])
+    inline def setTload(value: Double): Self = StObject.set(x, "tload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrequest(value: Double): Self = StObject.set(x, "trequest", value.asInstanceOf[js.Any])
+    inline def setTrequest(value: Double): Self = StObject.set(x, "trequest", value.asInstanceOf[js.Any])
   }
 }

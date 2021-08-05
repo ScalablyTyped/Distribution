@@ -18,19 +18,15 @@ trait ResourceDownloadOwnerSetting extends StObject {
 }
 object ResourceDownloadOwnerSetting {
   
-  @scala.inline
-  def apply(GroupOwner: string, GroupPermission: Permission): ResourceDownloadOwnerSetting = {
+  inline def apply(GroupOwner: string, GroupPermission: Permission): ResourceDownloadOwnerSetting = {
     val __obj = js.Dynamic.literal(GroupOwner = GroupOwner.asInstanceOf[js.Any], GroupPermission = GroupPermission.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceDownloadOwnerSetting]
   }
   
-  @scala.inline
-  implicit class ResourceDownloadOwnerSettingMutableBuilder[Self <: ResourceDownloadOwnerSetting] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceDownloadOwnerSetting](x: Self) {
     
-    @scala.inline
-    def setGroupOwner(value: string): Self = StObject.set(x, "GroupOwner", value.asInstanceOf[js.Any])
+    inline def setGroupOwner(value: string): Self = StObject.set(x, "GroupOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupPermission(value: Permission): Self = StObject.set(x, "GroupPermission", value.asInstanceOf[js.Any])
+    inline def setGroupPermission(value: Permission): Self = StObject.set(x, "GroupPermission", value.asInstanceOf[js.Any])
   }
 }

@@ -100,89 +100,62 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAssetsPath(value: Boolean | String): Self = StObject.set(x, "assetsPath", value.asInstanceOf[js.Any])
+      inline def setAssetsPath(value: Boolean | String): Self = StObject.set(x, "assetsPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetsPathUndefined: Self = StObject.set(x, "assetsPath", js.undefined)
+      inline def setAssetsPathUndefined: Self = StObject.set(x, "assetsPath", js.undefined)
       
-      @scala.inline
-      def setBasePath(value: String | js.Array[String]): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String | js.Array[String]): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setBasePathVarargs(value: String*): Self = StObject.set(x, "basePath", js.Array(value :_*))
+      inline def setBasePathVarargs(value: String*): Self = StObject.set(x, "basePath", js.Array(value :_*))
       
-      @scala.inline
-      def setFallback(value: (/* asset */ AbsolutePath, /* dir */ File) => String): Self = StObject.set(x, "fallback", js.Any.fromFunction2(value))
+      inline def setFallback(value: (/* asset */ AbsolutePath, /* dir */ File) => String): Self = StObject.set(x, "fallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setFilter(value: RegExp | CustomFilterFunction | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: RegExp | CustomFilterFunction | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction1(value: /* file */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilterFunction1(value: /* file */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setHashOptions(value: Append): Self = StObject.set(x, "hashOptions", value.asInstanceOf[js.Any])
+      inline def setHashOptions(value: Append): Self = StObject.set(x, "hashOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashOptionsUndefined: Self = StObject.set(x, "hashOptions", js.undefined)
+      inline def setHashOptionsUndefined: Self = StObject.set(x, "hashOptions", js.undefined)
       
-      @scala.inline
-      def setIgnoreFragmentWarning(value: Boolean): Self = StObject.set(x, "ignoreFragmentWarning", value.asInstanceOf[js.Any])
+      inline def setIgnoreFragmentWarning(value: Boolean): Self = StObject.set(x, "ignoreFragmentWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreFragmentWarningUndefined: Self = StObject.set(x, "ignoreFragmentWarning", js.undefined)
+      inline def setIgnoreFragmentWarningUndefined: Self = StObject.set(x, "ignoreFragmentWarning", js.undefined)
       
-      @scala.inline
-      def setIncludeUriFragment(value: Boolean): Self = StObject.set(x, "includeUriFragment", value.asInstanceOf[js.Any])
+      inline def setIncludeUriFragment(value: Boolean): Self = StObject.set(x, "includeUriFragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUriFragmentUndefined: Self = StObject.set(x, "includeUriFragment", js.undefined)
+      inline def setIncludeUriFragmentUndefined: Self = StObject.set(x, "includeUriFragment", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setOptimizeSvgEncode(value: Boolean): Self = StObject.set(x, "optimizeSvgEncode", value.asInstanceOf[js.Any])
+      inline def setOptimizeSvgEncode(value: Boolean): Self = StObject.set(x, "optimizeSvgEncode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimizeSvgEncodeUndefined: Self = StObject.set(x, "optimizeSvgEncode", js.undefined)
+      inline def setOptimizeSvgEncodeUndefined: Self = StObject.set(x, "optimizeSvgEncode", js.undefined)
       
-      @scala.inline
-      def setUrl(value: copy | `inline` | rebase | CustomTransformFunction): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: copy | `inline` | rebase | CustomTransformFunction): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlFunction2(value: (/* asset */ AbsolutePath, /* dir */ File) => String): Self = StObject.set(x, "url", js.Any.fromFunction2(value))
+      inline def setUrlFunction2(value: (/* asset */ AbsolutePath, /* dir */ File) => String): Self = StObject.set(x, "url", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setUseHash(value: Boolean): Self = StObject.set(x, "useHash", value.asInstanceOf[js.Any])
+      inline def setUseHash(value: Boolean): Self = StObject.set(x, "useHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseHashUndefined: Self = StObject.set(x, "useHash", js.undefined)
+      inline def setUseHashUndefined: Self = StObject.set(x, "useHash", js.undefined)
     }
   }
   

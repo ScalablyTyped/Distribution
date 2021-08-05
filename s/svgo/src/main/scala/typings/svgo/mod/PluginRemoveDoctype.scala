@@ -12,16 +12,13 @@ trait PluginRemoveDoctype
 }
 object PluginRemoveDoctype {
   
-  @scala.inline
-  def apply(removeDoctype: Boolean | js.Object): PluginRemoveDoctype = {
+  inline def apply(removeDoctype: Boolean | js.Object): PluginRemoveDoctype = {
     val __obj = js.Dynamic.literal(removeDoctype = removeDoctype.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveDoctype]
   }
   
-  @scala.inline
-  implicit class PluginRemoveDoctypeMutableBuilder[Self <: PluginRemoveDoctype] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveDoctype](x: Self) {
     
-    @scala.inline
-    def setRemoveDoctype(value: Boolean | js.Object): Self = StObject.set(x, "removeDoctype", value.asInstanceOf[js.Any])
+    inline def setRemoveDoctype(value: Boolean | js.Object): Self = StObject.set(x, "removeDoctype", value.asInstanceOf[js.Any])
   }
 }

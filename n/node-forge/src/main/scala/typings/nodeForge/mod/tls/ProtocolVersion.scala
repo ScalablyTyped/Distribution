@@ -13,19 +13,15 @@ trait ProtocolVersion extends StObject {
 }
 object ProtocolVersion {
   
-  @scala.inline
-  def apply(major: Byte, minor: Byte): ProtocolVersion = {
+  inline def apply(major: Byte, minor: Byte): ProtocolVersion = {
     val __obj = js.Dynamic.literal(major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtocolVersion]
   }
   
-  @scala.inline
-  implicit class ProtocolVersionMutableBuilder[Self <: ProtocolVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ProtocolVersion](x: Self) {
     
-    @scala.inline
-    def setMajor(value: Byte): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: Byte): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinor(value: Byte): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: Byte): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
   }
 }

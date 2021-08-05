@@ -37,17 +37,14 @@ object emitterStructuredMod {
   }
   object CloudEvent {
     
-    @scala.inline
-    def apply(CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): CloudEvent = {
+    inline def apply(CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): CloudEvent = {
       val __obj = js.Dynamic.literal(CloudEvent = CloudEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudEvent]
     }
     
-    @scala.inline
-    implicit class CloudEventMutableBuilder[Self <: CloudEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CloudEvent](x: Self) {
       
-      @scala.inline
-      def setCloudEvent(value: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): Self = StObject.set(x, "CloudEvent", value.asInstanceOf[js.Any])
+      inline def setCloudEvent(value: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): Self = StObject.set(x, "CloudEvent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,17 +66,14 @@ object emitterStructuredMod {
   }
   object StructuredHTTPEmitter {
     
-    @scala.inline
-    def apply(emit: (UrlURL, CloudEvent) => js.Promise[js.Any]): StructuredHTTPEmitter = {
+    inline def apply(emit: (UrlURL, CloudEvent) => js.Promise[js.Any]): StructuredHTTPEmitter = {
       val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit))
       __obj.asInstanceOf[StructuredHTTPEmitter]
     }
     
-    @scala.inline
-    implicit class StructuredHTTPEmitterMutableBuilder[Self <: StructuredHTTPEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: StructuredHTTPEmitter](x: Self) {
       
-      @scala.inline
-      def setEmit(value: (UrlURL, CloudEvent) => js.Promise[js.Any]): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (UrlURL, CloudEvent) => js.Promise[js.Any]): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     }
   }
 }

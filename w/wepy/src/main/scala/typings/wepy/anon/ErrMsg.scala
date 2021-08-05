@@ -12,19 +12,15 @@ trait ErrMsg extends StObject {
 }
 object ErrMsg {
   
-  @scala.inline
-  def apply(errMsg: String, isEnrolled: Boolean): ErrMsg = {
+  inline def apply(errMsg: String, isEnrolled: Boolean): ErrMsg = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], isEnrolled = isEnrolled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrMsg]
   }
   
-  @scala.inline
-  implicit class ErrMsgMutableBuilder[Self <: ErrMsg] (val x: Self) extends AnyVal {
+  extension [Self <: ErrMsg](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnrolled(value: Boolean): Self = StObject.set(x, "isEnrolled", value.asInstanceOf[js.Any])
+    inline def setIsEnrolled(value: Boolean): Self = StObject.set(x, "isEnrolled", value.asInstanceOf[js.Any])
   }
 }

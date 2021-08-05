@@ -11,8 +11,7 @@ object repeatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](
+  inline def default[V](
     generator: js.Function1[/* iteration */ Double, js.UndefOr[typings.baconjs.observableMod.default[V]]]
   ): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generator.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
 }

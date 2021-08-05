@@ -366,8 +366,7 @@ object mod {
   }
   object Agilite {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ApiKeys: ApiKeys,
       BPM: BPM,
       Connectors: Connectors,
@@ -389,56 +388,39 @@ object mod {
       __obj.asInstanceOf[Agilite]
     }
     
-    @scala.inline
-    implicit class AgiliteMutableBuilder[Self <: Agilite] (val x: Self) extends AnyVal {
+    extension [Self <: Agilite](x: Self) {
       
-      @scala.inline
-      def setApiKeys(value: ApiKeys): Self = StObject.set(x, "ApiKeys", value.asInstanceOf[js.Any])
+      inline def setApiKeys(value: ApiKeys): Self = StObject.set(x, "ApiKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppName(value: appName): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: appName): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBPM(value: BPM): Self = StObject.set(x, "BPM", value.asInstanceOf[js.Any])
+      inline def setBPM(value: BPM): Self = StObject.set(x, "BPM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: AgiliteConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: AgiliteConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectors(value: Connectors): Self = StObject.set(x, "Connectors", value.asInstanceOf[js.Any])
+      inline def setConnectors(value: Connectors): Self = StObject.set(x, "Connectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataMappings(value: DataMappings): Self = StObject.set(x, "DataMappings", value.asInstanceOf[js.Any])
+      inline def setDataMappings(value: DataMappings): Self = StObject.set(x, "DataMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecuteCRUDRequest(value: (String, String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "executeCRUDRequest", js.Any.fromFunction4(value))
+      inline def setExecuteCRUDRequest(value: (String, String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "executeCRUDRequest", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFiles(value: Files): Self = StObject.set(x, "Files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Files): Self = StObject.set(x, "Files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetConfig(value: () => AgiliteConfig): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
+      inline def setGetConfig(value: () => AgiliteConfig): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKeywords(value: Keywords): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
+      inline def setKeywords(value: Keywords): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumbering(value: Numbering): Self = StObject.set(x, "Numbering", value.asInstanceOf[js.Any])
+      inline def setNumbering(value: Numbering): Self = StObject.set(x, "Numbering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqType(value: reqType): Self = StObject.set(x, "reqType", value.asInstanceOf[js.Any])
+      inline def setReqType(value: reqType): Self = StObject.set(x, "reqType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoles(value: Roles): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: Roles): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplates(value: Templates): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
+      inline def setTemplates(value: Templates): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTierStructures(value: TierStructures): Self = StObject.set(x, "TierStructures", value.asInstanceOf[js.Any])
+      inline def setTierStructures(value: TierStructures): Self = StObject.set(x, "TierStructures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtils(value: Utils): Self = StObject.set(x, "Utils", value.asInstanceOf[js.Any])
+      inline def setUtils(value: Utils): Self = StObject.set(x, "Utils", value.asInstanceOf[js.Any])
     }
   }
   
@@ -452,32 +434,24 @@ object mod {
   }
   object AgiliteConfig {
     
-    @scala.inline
-    def apply(): AgiliteConfig = {
+    inline def apply(): AgiliteConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AgiliteConfig]
     }
     
-    @scala.inline
-    implicit class AgiliteConfigMutableBuilder[Self <: AgiliteConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AgiliteConfig](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+      inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
       
-      @scala.inline
-      def setApiServerUrl(value: String): Self = StObject.set(x, "apiServerUrl", value.asInstanceOf[js.Any])
+      inline def setApiServerUrl(value: String): Self = StObject.set(x, "apiServerUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiServerUrlUndefined: Self = StObject.set(x, "apiServerUrl", js.undefined)
+      inline def setApiServerUrlUndefined: Self = StObject.set(x, "apiServerUrl", js.undefined)
       
-      @scala.inline
-      def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+      inline def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamIdUndefined: Self = StObject.set(x, "teamId", js.undefined)
+      inline def setTeamIdUndefined: Self = StObject.set(x, "teamId", js.undefined)
     }
   }
   
@@ -509,8 +483,7 @@ object mod {
   }
   object appName {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       MODULE_KEY_API_KEYS: String,
       MODULE_KEY_BOT_BUILDER: String,
       MODULE_KEY_BPM: String,
@@ -528,44 +501,31 @@ object mod {
       __obj.asInstanceOf[appName]
     }
     
-    @scala.inline
-    implicit class appNameMutableBuilder[Self <: appName] (val x: Self) extends AnyVal {
+    extension [Self <: appName](x: Self) {
       
-      @scala.inline
-      def setMODULE_KEY_API_KEYS(value: String): Self = StObject.set(x, "MODULE_KEY_API_KEYS", value.asInstanceOf[js.Any])
+      inline def setMODULE_KEY_API_KEYS(value: String): Self = StObject.set(x, "MODULE_KEY_API_KEYS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODULE_KEY_BOT_BUILDER(value: String): Self = StObject.set(x, "MODULE_KEY_BOT_BUILDER", value.asInstanceOf[js.Any])
+      inline def setMODULE_KEY_BOT_BUILDER(value: String): Self = StObject.set(x, "MODULE_KEY_BOT_BUILDER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODULE_KEY_BPM(value: String): Self = StObject.set(x, "MODULE_KEY_BPM", value.asInstanceOf[js.Any])
+      inline def setMODULE_KEY_BPM(value: String): Self = StObject.set(x, "MODULE_KEY_BPM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODULE_KEY_CONNECTORS(value: String): Self = StObject.set(x, "MODULE_KEY_CONNECTORS", value.asInstanceOf[js.Any])
+      inline def setMODULE_KEY_CONNECTORS(value: String): Self = StObject.set(x, "MODULE_KEY_CONNECTORS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODULE_KEY_DATA_MAPPING(value: String): Self = StObject.set(x, "MODULE_KEY_DATA_MAPPING", value.asInstanceOf[js.Any])
+      inline def setMODULE_KEY_DATA_MAPPING(value: String): Self = StObject.set(x, "MODULE_KEY_DATA_MAPPING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODULE_KEY_FILES(value: String): Self = StObject.set(x, "MODULE_KEY_FILES", value.asInstanceOf[js.Any])
+      inline def setMODULE_KEY_FILES(value: String): Self = StObject.set(x, "MODULE_KEY_FILES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODULE_KEY_KEYWORDS(value: String): Self = StObject.set(x, "MODULE_KEY_KEYWORDS", value.asInstanceOf[js.Any])
+      inline def setMODULE_KEY_KEYWORDS(value: String): Self = StObject.set(x, "MODULE_KEY_KEYWORDS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODULE_KEY_NUMBERING(value: String): Self = StObject.set(x, "MODULE_KEY_NUMBERING", value.asInstanceOf[js.Any])
+      inline def setMODULE_KEY_NUMBERING(value: String): Self = StObject.set(x, "MODULE_KEY_NUMBERING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODULE_KEY_ROLES(value: String): Self = StObject.set(x, "MODULE_KEY_ROLES", value.asInstanceOf[js.Any])
+      inline def setMODULE_KEY_ROLES(value: String): Self = StObject.set(x, "MODULE_KEY_ROLES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODULE_KEY_TEMPLATES(value: String): Self = StObject.set(x, "MODULE_KEY_TEMPLATES", value.asInstanceOf[js.Any])
+      inline def setMODULE_KEY_TEMPLATES(value: String): Self = StObject.set(x, "MODULE_KEY_TEMPLATES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODULE_KEY_TIER_STRUCTURES(value: String): Self = StObject.set(x, "MODULE_KEY_TIER_STRUCTURES", value.asInstanceOf[js.Any])
+      inline def setMODULE_KEY_TIER_STRUCTURES(value: String): Self = StObject.set(x, "MODULE_KEY_TIER_STRUCTURES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODULE_KEY_UTILS(value: String): Self = StObject.set(x, "MODULE_KEY_UTILS", value.asInstanceOf[js.Any])
+      inline def setMODULE_KEY_UTILS(value: String): Self = StObject.set(x, "MODULE_KEY_UTILS", value.asInstanceOf[js.Any])
     }
   }
   
@@ -579,23 +539,18 @@ object mod {
   }
   object outputFormat {
     
-    @scala.inline
-    def apply(ARRAY: String, JSON: String, STRING: String): outputFormat = {
+    inline def apply(ARRAY: String, JSON: String, STRING: String): outputFormat = {
       val __obj = js.Dynamic.literal(ARRAY = ARRAY.asInstanceOf[js.Any], JSON = JSON.asInstanceOf[js.Any], STRING = STRING.asInstanceOf[js.Any])
       __obj.asInstanceOf[outputFormat]
     }
     
-    @scala.inline
-    implicit class outputFormatMutableBuilder[Self <: outputFormat] (val x: Self) extends AnyVal {
+    extension [Self <: outputFormat](x: Self) {
       
-      @scala.inline
-      def setARRAY(value: String): Self = StObject.set(x, "ARRAY", value.asInstanceOf[js.Any])
+      inline def setARRAY(value: String): Self = StObject.set(x, "ARRAY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSON(value: String): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
+      inline def setJSON(value: String): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTRING(value: String): Self = StObject.set(x, "STRING", value.asInstanceOf[js.Any])
+      inline def setSTRING(value: String): Self = StObject.set(x, "STRING", value.asInstanceOf[js.Any])
     }
   }
   
@@ -611,26 +566,20 @@ object mod {
   }
   object reqType {
     
-    @scala.inline
-    def apply(DELETE: String, GET: String, POST: String, PUT: String): reqType = {
+    inline def apply(DELETE: String, GET: String, POST: String, PUT: String): reqType = {
       val __obj = js.Dynamic.literal(DELETE = DELETE.asInstanceOf[js.Any], GET = GET.asInstanceOf[js.Any], POST = POST.asInstanceOf[js.Any], PUT = PUT.asInstanceOf[js.Any])
       __obj.asInstanceOf[reqType]
     }
     
-    @scala.inline
-    implicit class reqTypeMutableBuilder[Self <: reqType] (val x: Self) extends AnyVal {
+    extension [Self <: reqType](x: Self) {
       
-      @scala.inline
-      def setDELETE(value: String): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
+      inline def setDELETE(value: String): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET(value: String): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
+      inline def setGET(value: String): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOST(value: String): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
+      inline def setPOST(value: String): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPUT(value: String): Self = StObject.set(x, "PUT", value.asInstanceOf[js.Any])
+      inline def setPUT(value: String): Self = StObject.set(x, "PUT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -650,32 +599,24 @@ object mod {
   }
   object responseType {
     
-    @scala.inline
-    def apply(ARRAY_BUFFER: String, BLOB: String, DOCUMENT: String, JSON: String, STREAM: String, TEXT: String): responseType = {
+    inline def apply(ARRAY_BUFFER: String, BLOB: String, DOCUMENT: String, JSON: String, STREAM: String, TEXT: String): responseType = {
       val __obj = js.Dynamic.literal(ARRAY_BUFFER = ARRAY_BUFFER.asInstanceOf[js.Any], BLOB = BLOB.asInstanceOf[js.Any], DOCUMENT = DOCUMENT.asInstanceOf[js.Any], JSON = JSON.asInstanceOf[js.Any], STREAM = STREAM.asInstanceOf[js.Any], TEXT = TEXT.asInstanceOf[js.Any])
       __obj.asInstanceOf[responseType]
     }
     
-    @scala.inline
-    implicit class responseTypeMutableBuilder[Self <: responseType] (val x: Self) extends AnyVal {
+    extension [Self <: responseType](x: Self) {
       
-      @scala.inline
-      def setARRAY_BUFFER(value: String): Self = StObject.set(x, "ARRAY_BUFFER", value.asInstanceOf[js.Any])
+      inline def setARRAY_BUFFER(value: String): Self = StObject.set(x, "ARRAY_BUFFER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBLOB(value: String): Self = StObject.set(x, "BLOB", value.asInstanceOf[js.Any])
+      inline def setBLOB(value: String): Self = StObject.set(x, "BLOB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOCUMENT(value: String): Self = StObject.set(x, "DOCUMENT", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT(value: String): Self = StObject.set(x, "DOCUMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSON(value: String): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
+      inline def setJSON(value: String): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTREAM(value: String): Self = StObject.set(x, "STREAM", value.asInstanceOf[js.Any])
+      inline def setSTREAM(value: String): Self = StObject.set(x, "STREAM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTEXT(value: String): Self = StObject.set(x, "TEXT", value.asInstanceOf[js.Any])
+      inline def setTEXT(value: String): Self = StObject.set(x, "TEXT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -691,26 +632,20 @@ object mod {
   }
   object sort {
     
-    @scala.inline
-    def apply(ASC: String, ASC_VALUE: String, DESC: String, DESC_VALUE: String): sort = {
+    inline def apply(ASC: String, ASC_VALUE: String, DESC: String, DESC_VALUE: String): sort = {
       val __obj = js.Dynamic.literal(ASC = ASC.asInstanceOf[js.Any], ASC_VALUE = ASC_VALUE.asInstanceOf[js.Any], DESC = DESC.asInstanceOf[js.Any], DESC_VALUE = DESC_VALUE.asInstanceOf[js.Any])
       __obj.asInstanceOf[sort]
     }
     
-    @scala.inline
-    implicit class sortMutableBuilder[Self <: sort] (val x: Self) extends AnyVal {
+    extension [Self <: sort](x: Self) {
       
-      @scala.inline
-      def setASC(value: String): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
+      inline def setASC(value: String): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setASC_VALUE(value: String): Self = StObject.set(x, "ASC_VALUE", value.asInstanceOf[js.Any])
+      inline def setASC_VALUE(value: String): Self = StObject.set(x, "ASC_VALUE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDESC(value: String): Self = StObject.set(x, "DESC", value.asInstanceOf[js.Any])
+      inline def setDESC(value: String): Self = StObject.set(x, "DESC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDESC_VALUE(value: String): Self = StObject.set(x, "DESC_VALUE", value.asInstanceOf[js.Any])
+      inline def setDESC_VALUE(value: String): Self = StObject.set(x, "DESC_VALUE", value.asInstanceOf[js.Any])
     }
   }
 }

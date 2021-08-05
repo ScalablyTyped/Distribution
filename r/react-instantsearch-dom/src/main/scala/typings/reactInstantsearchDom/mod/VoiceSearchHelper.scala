@@ -18,8 +18,7 @@ trait VoiceSearchHelper extends StObject {
 }
 object VoiceSearchHelper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dispose: () => Unit,
     getState: () => VoiceListeningState,
     isBrowserSupported: () => Boolean,
@@ -30,22 +29,16 @@ object VoiceSearchHelper {
     __obj.asInstanceOf[VoiceSearchHelper]
   }
   
-  @scala.inline
-  implicit class VoiceSearchHelperMutableBuilder[Self <: VoiceSearchHelper] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceSearchHelper](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetState(value: () => VoiceListeningState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => VoiceListeningState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsBrowserSupported(value: () => Boolean): Self = StObject.set(x, "isBrowserSupported", js.Any.fromFunction0(value))
+    inline def setIsBrowserSupported(value: () => Boolean): Self = StObject.set(x, "isBrowserSupported", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsListening(value: () => Boolean): Self = StObject.set(x, "isListening", js.Any.fromFunction0(value))
+    inline def setIsListening(value: () => Boolean): Self = StObject.set(x, "isListening", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggleListening(value: () => Unit): Self = StObject.set(x, "toggleListening", js.Any.fromFunction0(value))
+    inline def setToggleListening(value: () => Unit): Self = StObject.set(x, "toggleListening", js.Any.fromFunction0(value))
   }
 }

@@ -10,16 +10,13 @@ trait IRigidVehicleOptions extends StObject {
 }
 object IRigidVehicleOptions {
   
-  @scala.inline
-  def apply(chassisBody: Body): IRigidVehicleOptions = {
+  inline def apply(chassisBody: Body): IRigidVehicleOptions = {
     val __obj = js.Dynamic.literal(chassisBody = chassisBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRigidVehicleOptions]
   }
   
-  @scala.inline
-  implicit class IRigidVehicleOptionsMutableBuilder[Self <: IRigidVehicleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IRigidVehicleOptions](x: Self) {
     
-    @scala.inline
-    def setChassisBody(value: Body): Self = StObject.set(x, "chassisBody", value.asInstanceOf[js.Any])
+    inline def setChassisBody(value: Body): Self = StObject.set(x, "chassisBody", value.asInstanceOf[js.Any])
   }
 }

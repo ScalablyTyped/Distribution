@@ -17,14 +17,12 @@ object mod {
   @JSImport("moment", "holidays")
   @js.native
   def holidays: Holidays_ = js.native
-  @scala.inline
-  def holidays_=(x: Holidays_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("holidays")(x.asInstanceOf[js.Any])
+  inline def holidays_=(x: Holidays_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("holidays")(x.asInstanceOf[js.Any])
   
   @JSImport("moment", "modifyHolidays")
   @js.native
   def modifyHolidays: HolidayModifier = js.native
-  @scala.inline
-  def modifyHolidays_=(x: HolidayModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modifyHolidays")(x.asInstanceOf[js.Any])
+  inline def modifyHolidays_=(x: HolidayModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modifyHolidays")(x.asInstanceOf[js.Any])
   
   trait HolidayDefinition extends StObject {
     
@@ -42,62 +40,44 @@ object mod {
   }
   object HolidayDefinition {
     
-    @scala.inline
-    def apply(date: String): HolidayDefinition = {
+    inline def apply(date: String): HolidayDefinition = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
       __obj.asInstanceOf[HolidayDefinition]
     }
     
-    @scala.inline
-    implicit class HolidayDefinitionMutableBuilder[Self <: HolidayDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: HolidayDefinition](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+      inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+      inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
       
-      @scala.inline
-      def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
       
-      @scala.inline
-      def setKeywords_n(value: js.Array[String]): Self = StObject.set(x, "keywords_n", value.asInstanceOf[js.Any])
+      inline def setKeywords_n(value: js.Array[String]): Self = StObject.set(x, "keywords_n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywords_nUndefined: Self = StObject.set(x, "keywords_n", js.undefined)
+      inline def setKeywords_nUndefined: Self = StObject.set(x, "keywords_n", js.undefined)
       
-      @scala.inline
-      def setKeywords_nVarargs(value: String*): Self = StObject.set(x, "keywords_n", js.Array(value :_*))
+      inline def setKeywords_nVarargs(value: String*): Self = StObject.set(x, "keywords_n", js.Array(value :_*))
       
-      @scala.inline
-      def setKeywords_y(value: js.Array[String]): Self = StObject.set(x, "keywords_y", value.asInstanceOf[js.Any])
+      inline def setKeywords_y(value: js.Array[String]): Self = StObject.set(x, "keywords_y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywords_yUndefined: Self = StObject.set(x, "keywords_y", js.undefined)
+      inline def setKeywords_yUndefined: Self = StObject.set(x, "keywords_y", js.undefined)
       
-      @scala.inline
-      def setKeywords_yVarargs(value: String*): Self = StObject.set(x, "keywords_y", js.Array(value :_*))
+      inline def setKeywords_yVarargs(value: String*): Self = StObject.set(x, "keywords_y", js.Array(value :_*))
       
-      @scala.inline
-      def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+      inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
       
-      @scala.inline
-      def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
       
-      @scala.inline
-      def setRegions_n(value: js.Array[String]): Self = StObject.set(x, "regions_n", value.asInstanceOf[js.Any])
+      inline def setRegions_n(value: js.Array[String]): Self = StObject.set(x, "regions_n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegions_nUndefined: Self = StObject.set(x, "regions_n", js.undefined)
+      inline def setRegions_nUndefined: Self = StObject.set(x, "regions_n", js.undefined)
       
-      @scala.inline
-      def setRegions_nVarargs(value: String*): Self = StObject.set(x, "regions_n", js.Array(value :_*))
+      inline def setRegions_nVarargs(value: String*): Self = StObject.set(x, "regions_n", js.Array(value :_*))
     }
   }
   
@@ -140,20 +120,16 @@ object mod {
   }
   object Holidays_ {
     
-    @scala.inline
-    def apply(active: HolidaysMapping, active_last: HolidaysMapping): Holidays_ = {
+    inline def apply(active: HolidaysMapping, active_last: HolidaysMapping): Holidays_ = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], active_last = active_last.asInstanceOf[js.Any])
       __obj.asInstanceOf[Holidays_]
     }
     
-    @scala.inline
-    implicit class Holidays_MutableBuilder[Self <: Holidays_] (val x: Self) extends AnyVal {
+    extension [Self <: Holidays_](x: Self) {
       
-      @scala.inline
-      def setActive(value: HolidaysMapping): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: HolidaysMapping): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActive_last(value: HolidaysMapping): Self = StObject.set(x, "active_last", value.asInstanceOf[js.Any])
+      inline def setActive_last(value: HolidaysMapping): Self = StObject.set(x, "active_last", value.asInstanceOf[js.Any])
     }
   }
   

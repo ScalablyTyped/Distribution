@@ -33,43 +33,31 @@ trait ProjectFileSystemLocation extends StObject {
 }
 object ProjectFileSystemLocation {
   
-  @scala.inline
-  def apply(): ProjectFileSystemLocation = {
+  inline def apply(): ProjectFileSystemLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectFileSystemLocation]
   }
   
-  @scala.inline
-  implicit class ProjectFileSystemLocationMutableBuilder[Self <: ProjectFileSystemLocation] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectFileSystemLocation](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMountOptions(value: String): Self = StObject.set(x, "mountOptions", value.asInstanceOf[js.Any])
+    inline def setMountOptions(value: String): Self = StObject.set(x, "mountOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountOptionsUndefined: Self = StObject.set(x, "mountOptions", js.undefined)
+    inline def setMountOptionsUndefined: Self = StObject.set(x, "mountOptions", js.undefined)
     
-    @scala.inline
-    def setMountPoint(value: String): Self = StObject.set(x, "mountPoint", value.asInstanceOf[js.Any])
+    inline def setMountPoint(value: String): Self = StObject.set(x, "mountPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountPointUndefined: Self = StObject.set(x, "mountPoint", js.undefined)
+    inline def setMountPointUndefined: Self = StObject.set(x, "mountPoint", js.undefined)
     
-    @scala.inline
-    def setType(value: FileSystemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FileSystemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

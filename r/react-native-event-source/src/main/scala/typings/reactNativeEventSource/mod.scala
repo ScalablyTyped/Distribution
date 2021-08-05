@@ -41,30 +41,23 @@ object mod {
   }
   object MessageEvent {
     
-    @scala.inline
-    def apply(lastEventId: String, origin: String, `type`: String): MessageEvent = {
+    inline def apply(lastEventId: String, origin: String, `type`: String): MessageEvent = {
       val __obj = js.Dynamic.literal(lastEventId = lastEventId.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], data = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageEvent]
     }
     
-    @scala.inline
-    implicit class MessageEventMutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
+    extension [Self <: MessageEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      @scala.inline
-      def setLastEventId(value: String): Self = StObject.set(x, "lastEventId", value.asInstanceOf[js.Any])
+      inline def setLastEventId(value: String): Self = StObject.set(x, "lastEventId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,8 +73,7 @@ object mod {
   }
   object RNEventSource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addEventListener: (String, ListenerCallback) => js.Any,
       close: () => Unit,
       removeAllListeners: () => Unit,
@@ -91,20 +83,15 @@ object mod {
       __obj.asInstanceOf[RNEventSource]
     }
     
-    @scala.inline
-    implicit class RNEventSourceMutableBuilder[Self <: RNEventSource] (val x: Self) extends AnyVal {
+    extension [Self <: RNEventSource](x: Self) {
       
-      @scala.inline
-      def setAddEventListener(value: (String, ListenerCallback) => js.Any): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      inline def setAddEventListener(value: (String, ListenerCallback) => js.Any): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveAllListeners(value: () => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction0(value))
+      inline def setRemoveAllListeners(value: () => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveListener(value: (String, ListenerCallback) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      inline def setRemoveListener(value: (String, ListenerCallback) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
     }
   }
 }

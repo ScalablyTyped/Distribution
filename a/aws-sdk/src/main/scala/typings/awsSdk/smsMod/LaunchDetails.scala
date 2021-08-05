@@ -23,31 +23,23 @@ trait LaunchDetails extends StObject {
 }
 object LaunchDetails {
   
-  @scala.inline
-  def apply(): LaunchDetails = {
+  inline def apply(): LaunchDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchDetails]
   }
   
-  @scala.inline
-  implicit class LaunchDetailsMutableBuilder[Self <: LaunchDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchDetails](x: Self) {
     
-    @scala.inline
-    def setLatestLaunchTime(value: Timestamp): Self = StObject.set(x, "latestLaunchTime", value.asInstanceOf[js.Any])
+    inline def setLatestLaunchTime(value: Timestamp): Self = StObject.set(x, "latestLaunchTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestLaunchTimeUndefined: Self = StObject.set(x, "latestLaunchTime", js.undefined)
+    inline def setLatestLaunchTimeUndefined: Self = StObject.set(x, "latestLaunchTime", js.undefined)
     
-    @scala.inline
-    def setStackId(value: StackId): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: StackId): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
     
-    @scala.inline
-    def setStackName(value: StackName): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackName): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackNameUndefined: Self = StObject.set(x, "stackName", js.undefined)
+    inline def setStackNameUndefined: Self = StObject.set(x, "stackName", js.undefined)
   }
 }

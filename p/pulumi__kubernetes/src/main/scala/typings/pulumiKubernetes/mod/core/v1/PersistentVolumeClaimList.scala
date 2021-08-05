@@ -39,15 +39,12 @@ object PersistentVolumeClaimList {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  @scala.inline
-  def get(name: String, id: Input[ID]): typings.pulumiKubernetes.persistentVolumeClaimListMod.PersistentVolumeClaimList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.persistentVolumeClaimListMod.PersistentVolumeClaimList]
-  @scala.inline
-  def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.persistentVolumeClaimListMod.PersistentVolumeClaimList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.persistentVolumeClaimListMod.PersistentVolumeClaimList]
+  inline def get(name: String, id: Input[ID]): typings.pulumiKubernetes.persistentVolumeClaimListMod.PersistentVolumeClaimList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.persistentVolumeClaimListMod.PersistentVolumeClaimList]
+  inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.persistentVolumeClaimListMod.PersistentVolumeClaimList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.persistentVolumeClaimListMod.PersistentVolumeClaimList]
   
   /**
     * Returns true if the given object is an instance of PersistentVolumeClaimList.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  @scala.inline
-  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/persistentVolumeClaimList.PersistentVolumeClaimList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/persistentVolumeClaimList.PersistentVolumeClaimList */ Boolean]
+  inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/persistentVolumeClaimList.PersistentVolumeClaimList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/persistentVolumeClaimList.PersistentVolumeClaimList */ Boolean]
 }

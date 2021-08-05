@@ -16,19 +16,15 @@ trait RotateLabel extends StObject {
 }
 object RotateLabel {
   
-  @scala.inline
-  def apply(): RotateLabel = {
+  inline def apply(): RotateLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RotateLabel]
   }
   
-  @scala.inline
-  implicit class RotateLabelMutableBuilder[Self <: RotateLabel] (val x: Self) extends AnyVal {
+  extension [Self <: RotateLabel](x: Self) {
     
-    @scala.inline
-    def setRotateLabel(value: Boolean): Self = StObject.set(x, "rotateLabel", value.asInstanceOf[js.Any])
+    inline def setRotateLabel(value: Boolean): Self = StObject.set(x, "rotateLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateLabelUndefined: Self = StObject.set(x, "rotateLabel", js.undefined)
+    inline def setRotateLabelUndefined: Self = StObject.set(x, "rotateLabel", js.undefined)
   }
 }

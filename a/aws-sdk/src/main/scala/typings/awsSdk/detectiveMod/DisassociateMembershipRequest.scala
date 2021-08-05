@@ -13,16 +13,13 @@ trait DisassociateMembershipRequest extends StObject {
 }
 object DisassociateMembershipRequest {
   
-  @scala.inline
-  def apply(GraphArn: GraphArn): DisassociateMembershipRequest = {
+  inline def apply(GraphArn: GraphArn): DisassociateMembershipRequest = {
     val __obj = js.Dynamic.literal(GraphArn = GraphArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateMembershipRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateMembershipRequestMutableBuilder[Self <: DisassociateMembershipRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateMembershipRequest](x: Self) {
     
-    @scala.inline
-    def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
+    inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
   }
 }

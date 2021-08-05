@@ -17,9 +17,9 @@ object pathTemplateMod {
       */
     def this(data: String) = this()
     
-    var bindings: js.Any = js.native
+    /* private */ var bindings: js.Any = js.native
     
-    var data: js.Any = js.native
+    /* private */ var data: js.Any = js.native
     
     /**
       * Renders the path template.
@@ -43,7 +43,7 @@ object pathTemplateMod {
       * @return {string[]} return segments of the input path.
       * For example: 'buckets/{hello}'' will give back ['buckets', {hello=*}]
       */
-    var parsePathTemplate: js.Any = js.native
+    /* private */ var parsePathTemplate: js.Any = js.native
     
     /**
       * Renders a path template using the provided bindings.

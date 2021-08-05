@@ -8,16 +8,13 @@ object flipsnapStrings {
   
   @js.native
   sealed trait fstouchend extends StObject
-  @scala.inline
-  def fstouchend: fstouchend = "fstouchend".asInstanceOf[fstouchend]
+  inline def fstouchend: fstouchend = "fstouchend".asInstanceOf[fstouchend]
   
   @js.native
   sealed trait fstouchmove extends StObject
-  @scala.inline
-  def fstouchmove: fstouchmove = "fstouchmove".asInstanceOf[fstouchmove]
+  inline def fstouchmove: fstouchmove = "fstouchmove".asInstanceOf[fstouchmove]
   
   @js.native
   sealed trait fstouchstart extends StObject
-  @scala.inline
-  def fstouchstart: fstouchstart = "fstouchstart".asInstanceOf[fstouchstart]
+  inline def fstouchstart: fstouchstart = "fstouchstart".asInstanceOf[fstouchstart]
 }

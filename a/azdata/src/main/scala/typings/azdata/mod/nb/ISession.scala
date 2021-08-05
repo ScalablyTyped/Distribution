@@ -60,8 +60,7 @@ trait ISession extends StObject {
 }
 object ISession {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canChangeKernels: Boolean,
     changeKernel: IKernelSpec => Thenable[IKernel],
     configureConnection: IConnectionProfile => Thenable[Unit],
@@ -78,43 +77,30 @@ object ISession {
     __obj.asInstanceOf[ISession]
   }
   
-  @scala.inline
-  implicit class ISessionMutableBuilder[Self <: ISession] (val x: Self) extends AnyVal {
+  extension [Self <: ISession](x: Self) {
     
-    @scala.inline
-    def setCanChangeKernels(value: Boolean): Self = StObject.set(x, "canChangeKernels", value.asInstanceOf[js.Any])
+    inline def setCanChangeKernels(value: Boolean): Self = StObject.set(x, "canChangeKernels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeKernel(value: IKernelSpec => Thenable[IKernel]): Self = StObject.set(x, "changeKernel", js.Any.fromFunction1(value))
+    inline def setChangeKernel(value: IKernelSpec => Thenable[IKernel]): Self = StObject.set(x, "changeKernel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConfigureConnection(value: IConnectionProfile => Thenable[Unit]): Self = StObject.set(x, "configureConnection", js.Any.fromFunction1(value))
+    inline def setConfigureConnection(value: IConnectionProfile => Thenable[Unit]): Self = StObject.set(x, "configureConnection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConfigureKernel(value: IKernelSpec => Thenable[Unit]): Self = StObject.set(x, "configureKernel", js.Any.fromFunction1(value))
+    inline def setConfigureKernel(value: IKernelSpec => Thenable[Unit]): Self = StObject.set(x, "configureKernel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefaultKernelLoaded(value: Boolean): Self = StObject.set(x, "defaultKernelLoaded", value.asInstanceOf[js.Any])
+    inline def setDefaultKernelLoaded(value: Boolean): Self = StObject.set(x, "defaultKernelLoaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultKernelLoadedUndefined: Self = StObject.set(x, "defaultKernelLoaded", js.undefined)
+    inline def setDefaultKernelLoadedUndefined: Self = StObject.set(x, "defaultKernelLoaded", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernel(value: IKernel): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
+    inline def setKernel(value: IKernel): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: KernelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: KernelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

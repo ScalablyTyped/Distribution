@@ -35,8 +35,7 @@ trait FileDescriptorStat extends StObject {
 }
 object FileDescriptorStat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     atime: Date,
     blksize: Double,
     blocks: Double,
@@ -55,46 +54,32 @@ object FileDescriptorStat {
     __obj.asInstanceOf[FileDescriptorStat]
   }
   
-  @scala.inline
-  implicit class FileDescriptorStatMutableBuilder[Self <: FileDescriptorStat] (val x: Self) extends AnyVal {
+  extension [Self <: FileDescriptorStat](x: Self) {
     
-    @scala.inline
-    def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+    inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlksize(value: Double): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
+    inline def setBlksize(value: Double): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+    inline def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+    inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDev(value: Double): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
+    inline def setDev(value: Double): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+    inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
+    inline def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
+    inline def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdev(value: Double): Self = StObject.set(x, "rdev", value.asInstanceOf[js.Any])
+    inline def setRdev(value: Double): Self = StObject.set(x, "rdev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait EmailQueryTextSearch extends StObject {
 }
 object EmailQueryTextSearch {
   
-  @scala.inline
-  def apply(fields: EmailQuerySearchFields, searchScope: EmailQuerySearchScope, text: String): EmailQueryTextSearch = {
+  inline def apply(fields: EmailQuerySearchFields, searchScope: EmailQuerySearchScope, text: String): EmailQueryTextSearch = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], searchScope = searchScope.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailQueryTextSearch]
   }
   
-  @scala.inline
-  implicit class EmailQueryTextSearchMutableBuilder[Self <: EmailQueryTextSearch] (val x: Self) extends AnyVal {
+  extension [Self <: EmailQueryTextSearch](x: Self) {
     
-    @scala.inline
-    def setFields(value: EmailQuerySearchFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: EmailQuerySearchFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchScope(value: EmailQuerySearchScope): Self = StObject.set(x, "searchScope", value.asInstanceOf[js.Any])
+    inline def setSearchScope(value: EmailQuerySearchScope): Self = StObject.set(x, "searchScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

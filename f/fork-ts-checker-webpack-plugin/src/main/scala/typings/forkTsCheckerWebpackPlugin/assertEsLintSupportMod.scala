@@ -11,6 +11,5 @@ object assertEsLintSupportMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assertEsLintSupport(configuration: EsLintReporterConfiguration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertEsLintSupport")(configuration.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def assertEsLintSupport(configuration: EsLintReporterConfiguration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertEsLintSupport")(configuration.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -16,22 +16,17 @@ trait PJobStatus extends StObject {
 }
 object PJobStatus {
   
-  @scala.inline
-  def apply(bstrJobId: String, pFaxServer: FaxServer, pJobStatus: FaxJobStatus): PJobStatus = {
+  inline def apply(bstrJobId: String, pFaxServer: FaxServer, pJobStatus: FaxJobStatus): PJobStatus = {
     val __obj = js.Dynamic.literal(bstrJobId = bstrJobId.asInstanceOf[js.Any], pFaxServer = pFaxServer.asInstanceOf[js.Any], pJobStatus = pJobStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PJobStatus]
   }
   
-  @scala.inline
-  implicit class PJobStatusMutableBuilder[Self <: PJobStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PJobStatus](x: Self) {
     
-    @scala.inline
-    def setBstrJobId(value: String): Self = StObject.set(x, "bstrJobId", value.asInstanceOf[js.Any])
+    inline def setBstrJobId(value: String): Self = StObject.set(x, "bstrJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
+    inline def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPJobStatus(value: FaxJobStatus): Self = StObject.set(x, "pJobStatus", value.asInstanceOf[js.Any])
+    inline def setPJobStatus(value: FaxJobStatus): Self = StObject.set(x, "pJobStatus", value.asInstanceOf[js.Any])
   }
 }

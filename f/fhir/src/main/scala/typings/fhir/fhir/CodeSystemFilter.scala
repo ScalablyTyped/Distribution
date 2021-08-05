@@ -53,58 +53,41 @@ trait CodeSystemFilter
 }
 object CodeSystemFilter {
   
-  @scala.inline
-  def apply(code: code, operator: js.Array[code], value: String): CodeSystemFilter = {
+  inline def apply(code: code, operator: js.Array[code], value: String): CodeSystemFilter = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeSystemFilter]
   }
   
-  @scala.inline
-  implicit class CodeSystemFilterMutableBuilder[Self <: CodeSystemFilter] (val x: Self) extends AnyVal {
+  extension [Self <: CodeSystemFilter](x: Self) {
     
-    @scala.inline
-    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setOperator(value: js.Array[code]): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: js.Array[code]): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorVarargs(value: code*): Self = StObject.set(x, "operator", js.Array(value :_*))
+    inline def setOperatorVarargs(value: code*): Self = StObject.set(x, "operator", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
+    inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
+    inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    @scala.inline
-    def set_operator(value: js.Array[Element]): Self = StObject.set(x, "_operator", value.asInstanceOf[js.Any])
+    inline def set_operator(value: js.Array[Element]): Self = StObject.set(x, "_operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_operatorUndefined: Self = StObject.set(x, "_operator", js.undefined)
+    inline def set_operatorUndefined: Self = StObject.set(x, "_operator", js.undefined)
     
-    @scala.inline
-    def set_operatorVarargs(value: Element*): Self = StObject.set(x, "_operator", js.Array(value :_*))
+    inline def set_operatorVarargs(value: Element*): Self = StObject.set(x, "_operator", js.Array(value :_*))
     
-    @scala.inline
-    def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+    inline def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
+    inline def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

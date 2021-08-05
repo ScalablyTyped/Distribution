@@ -11,19 +11,15 @@ trait DriveDataRef extends StObject {
 }
 object DriveDataRef {
   
-  @scala.inline
-  def apply(): DriveDataRef = {
+  inline def apply(): DriveDataRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DriveDataRef]
   }
   
-  @scala.inline
-  implicit class DriveDataRefMutableBuilder[Self <: DriveDataRef] (val x: Self) extends AnyVal {
+  extension [Self <: DriveDataRef](x: Self) {
     
-    @scala.inline
-    def setDriveFileId(value: String): Self = StObject.set(x, "driveFileId", value.asInstanceOf[js.Any])
+    inline def setDriveFileId(value: String): Self = StObject.set(x, "driveFileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveFileIdUndefined: Self = StObject.set(x, "driveFileId", js.undefined)
+    inline def setDriveFileIdUndefined: Self = StObject.set(x, "driveFileId", js.undefined)
   }
 }

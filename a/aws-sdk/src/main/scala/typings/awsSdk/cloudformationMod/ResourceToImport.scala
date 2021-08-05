@@ -23,8 +23,7 @@ trait ResourceToImport extends StObject {
 }
 object ResourceToImport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LogicalResourceId: LogicalResourceId,
     ResourceIdentifier: ResourceIdentifierProperties,
     ResourceType: ResourceType
@@ -33,16 +32,12 @@ object ResourceToImport {
     __obj.asInstanceOf[ResourceToImport]
   }
   
-  @scala.inline
-  implicit class ResourceToImportMutableBuilder[Self <: ResourceToImport] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceToImport](x: Self) {
     
-    @scala.inline
-    def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
+    inline def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifier(value: ResourceIdentifierProperties): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setResourceIdentifier(value: ResourceIdentifierProperties): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
   }
 }

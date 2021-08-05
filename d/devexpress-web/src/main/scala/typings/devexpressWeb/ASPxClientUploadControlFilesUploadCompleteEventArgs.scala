@@ -23,19 +23,15 @@ trait ASPxClientUploadControlFilesUploadCompleteEventArgs
 }
 object ASPxClientUploadControlFilesUploadCompleteEventArgs {
   
-  @scala.inline
-  def apply(callbackData: String, errorText: String): ASPxClientUploadControlFilesUploadCompleteEventArgs = {
+  inline def apply(callbackData: String, errorText: String): ASPxClientUploadControlFilesUploadCompleteEventArgs = {
     val __obj = js.Dynamic.literal(callbackData = callbackData.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientUploadControlFilesUploadCompleteEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientUploadControlFilesUploadCompleteEventArgsMutableBuilder[Self <: ASPxClientUploadControlFilesUploadCompleteEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientUploadControlFilesUploadCompleteEventArgs](x: Self) {
     
-    @scala.inline
-    def setCallbackData(value: String): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
+    inline def setCallbackData(value: String): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
+    inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
   }
 }

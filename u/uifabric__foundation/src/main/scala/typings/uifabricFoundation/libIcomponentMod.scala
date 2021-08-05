@@ -39,8 +39,7 @@ object libIcomponentMod {
   }
   object IComponent {
     
-    @scala.inline
-    def apply[TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics](
+    inline def apply[TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics](
       displayName: String,
       factoryOptions: IFactoryOptions[TComponentProps],
       fields: js.Array[String],
@@ -54,38 +53,27 @@ object libIcomponentMod {
       __obj.asInstanceOf[IComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics]]
     }
     
-    @scala.inline
-    implicit class IComponentMutableBuilder[Self <: IComponent[?, ?, ?, ?, ?], TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics] (val x: Self & (IComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics])) extends AnyVal {
+    extension [Self <: IComponent[?, ?, ?, ?, ?], TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics](x: Self & (IComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics])) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactoryOptions(value: IFactoryOptions[TComponentProps]): Self = StObject.set(x, "factoryOptions", value.asInstanceOf[js.Any])
+      inline def setFactoryOptions(value: IFactoryOptions[TComponentProps]): Self = StObject.set(x, "factoryOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setState(value: TComponentProps => TViewProps): Self = StObject.set(x, "state", js.Any.fromFunction1(value))
+      inline def setState(value: TComponentProps => TViewProps): Self = StObject.set(x, "state", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStatics(value: TStatics): Self = StObject.set(x, "statics", value.asInstanceOf[js.Any])
+      inline def setStatics(value: TStatics): Self = StObject.set(x, "statics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyles(value: IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction3(value: (TViewProps, /* theme */ ITheme, TTokens) => TStyleSet): Self = StObject.set(x, "styles", js.Any.fromFunction3(value))
+      inline def setStylesFunction3(value: (TViewProps, /* theme */ ITheme, TTokens) => TStyleSet): Self = StObject.set(x, "styles", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTokens(value: ITokenFunctionOrObject[TViewProps, TTokens]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: ITokenFunctionOrObject[TViewProps, TTokens]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setView(value: /* props */ PropsWithChildren[TViewProps] => ReturnType[FunctionComponent[js.Object]]): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
+      inline def setView(value: /* props */ PropsWithChildren[TViewProps] => ReturnType[FunctionComponent[js.Object]]): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
     }
   }
   
@@ -129,62 +117,44 @@ object libIcomponentMod {
   }
   object IComponentOptions {
     
-    @scala.inline
-    def apply[TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics](): IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics] = {
+    inline def apply[TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics](): IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics]]
     }
     
-    @scala.inline
-    implicit class IComponentOptionsMutableBuilder[Self <: IComponentOptions[?, ?, ?, ?, ?], TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics] (val x: Self & (IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics])) extends AnyVal {
+    extension [Self <: IComponentOptions[?, ?, ?, ?, ?], TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics](x: Self & (IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics])) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setFactoryOptions(value: IFactoryOptions[TComponentProps]): Self = StObject.set(x, "factoryOptions", value.asInstanceOf[js.Any])
+      inline def setFactoryOptions(value: IFactoryOptions[TComponentProps]): Self = StObject.set(x, "factoryOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactoryOptionsUndefined: Self = StObject.set(x, "factoryOptions", js.undefined)
+      inline def setFactoryOptionsUndefined: Self = StObject.set(x, "factoryOptions", js.undefined)
       
-      @scala.inline
-      def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setState(value: TComponentProps => TViewProps): Self = StObject.set(x, "state", js.Any.fromFunction1(value))
+      inline def setState(value: TComponentProps => TViewProps): Self = StObject.set(x, "state", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setStatics(value: TStatics): Self = StObject.set(x, "statics", value.asInstanceOf[js.Any])
+      inline def setStatics(value: TStatics): Self = StObject.set(x, "statics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticsUndefined: Self = StObject.set(x, "statics", js.undefined)
+      inline def setStaticsUndefined: Self = StObject.set(x, "statics", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction3(value: (TViewProps, /* theme */ ITheme, TTokens) => TStyleSet): Self = StObject.set(x, "styles", js.Any.fromFunction3(value))
+      inline def setStylesFunction3(value: (TViewProps, /* theme */ ITheme, TTokens) => TStyleSet): Self = StObject.set(x, "styles", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTokens(value: ITokenFunctionOrObject[TViewProps, TTokens]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: ITokenFunctionOrObject[TViewProps, TTokens]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+      inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     }
   }
   
@@ -205,38 +175,28 @@ object libIcomponentMod {
   }
   object ICustomizationProps {
     
-    @scala.inline
-    def apply[TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */](theme: js.UndefOr[ITheme] & ITheme): ICustomizationProps[TViewProps, TTokens, TStyleSet] = {
+    inline def apply[TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */](theme: js.UndefOr[ITheme] & ITheme): ICustomizationProps[TViewProps, TTokens, TStyleSet] = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICustomizationProps[TViewProps, TTokens, TStyleSet]]
     }
     
-    @scala.inline
-    implicit class ICustomizationPropsMutableBuilder[Self <: ICustomizationProps[?, ?, ?], TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */] (val x: Self & (ICustomizationProps[TViewProps, TTokens, TStyleSet])) extends AnyVal {
+    extension [Self <: ICustomizationProps[?, ?, ?], TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */](x: Self & (ICustomizationProps[TViewProps, TTokens, TStyleSet])) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction3(value: (TViewProps, /* theme */ ITheme, TTokens) => TStyleSet): Self = StObject.set(x, "styles", js.Any.fromFunction3(value))
+      inline def setStylesFunction3(value: (TViewProps, /* theme */ ITheme, TTokens) => TStyleSet): Self = StObject.set(x, "styles", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: js.UndefOr[ITheme] & ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: js.UndefOr[ITheme] & ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokens(value: ITokenFunctionOrObject[TViewProps, TTokens]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: ITokenFunctionOrObject[TViewProps, TTokens]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+      inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     }
   }
   
@@ -249,20 +209,16 @@ object libIcomponentMod {
   }
   object IFactoryOptions {
     
-    @scala.inline
-    def apply[TProps](): IFactoryOptions[TProps] = {
+    inline def apply[TProps](): IFactoryOptions[TProps] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFactoryOptions[TProps]]
     }
     
-    @scala.inline
-    implicit class IFactoryOptionsMutableBuilder[Self <: IFactoryOptions[?], TProps] (val x: Self & IFactoryOptions[TProps]) extends AnyVal {
+    extension [Self <: IFactoryOptions[?], TProps](x: Self & IFactoryOptions[TProps]) {
       
-      @scala.inline
-      def setDefaultProp(value: (/* keyof TProps */ String) | children): Self = StObject.set(x, "defaultProp", value.asInstanceOf[js.Any])
+      inline def setDefaultProp(value: (/* keyof TProps */ String) | children): Self = StObject.set(x, "defaultProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPropUndefined: Self = StObject.set(x, "defaultProp", js.undefined)
+      inline def setDefaultPropUndefined: Self = StObject.set(x, "defaultProp", js.undefined)
     }
   }
   
@@ -282,41 +238,30 @@ object libIcomponentMod {
   }
   object IStyleableComponentProps {
     
-    @scala.inline
-    def apply[TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */](): IStyleableComponentProps[TViewProps, TTokens, TStyleSet] = {
+    inline def apply[TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */](): IStyleableComponentProps[TViewProps, TTokens, TStyleSet] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStyleableComponentProps[TViewProps, TTokens, TStyleSet]]
     }
     
-    @scala.inline
-    implicit class IStyleableComponentPropsMutableBuilder[Self <: IStyleableComponentProps[?, ?, ?], TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */] (val x: Self & (IStyleableComponentProps[TViewProps, TTokens, TStyleSet])) extends AnyVal {
+    extension [Self <: IStyleableComponentProps[?, ?, ?], TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */](x: Self & (IStyleableComponentProps[TViewProps, TTokens, TStyleSet])) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction3(value: (TViewProps, /* theme */ ITheme, TTokens) => TStyleSet): Self = StObject.set(x, "styles", js.Any.fromFunction3(value))
+      inline def setStylesFunction3(value: (TViewProps, /* theme */ ITheme, TTokens) => TStyleSet): Self = StObject.set(x, "styles", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTokens(value: ITokenFunctionOrObject[TViewProps, TTokens]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: ITokenFunctionOrObject[TViewProps, TTokens]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+      inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     }
   }
   

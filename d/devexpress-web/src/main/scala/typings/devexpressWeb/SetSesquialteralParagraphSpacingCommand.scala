@@ -18,16 +18,13 @@ trait SetSesquialteralParagraphSpacingCommand
 }
 object SetSesquialteralParagraphSpacingCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): SetSesquialteralParagraphSpacingCommand = {
+  inline def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): SetSesquialteralParagraphSpacingCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[SetSesquialteralParagraphSpacingCommand]
   }
   
-  @scala.inline
-  implicit class SetSesquialteralParagraphSpacingCommandMutableBuilder[Self <: SetSesquialteralParagraphSpacingCommand] (val x: Self) extends AnyVal {
+  extension [Self <: SetSesquialteralParagraphSpacingCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

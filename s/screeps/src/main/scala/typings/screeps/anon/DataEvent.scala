@@ -18,8 +18,7 @@ trait DataEvent
 }
 object DataEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_BUILD] */ js.Any,
     event: EVENT_BUILD,
     objectId: String
@@ -28,18 +27,14 @@ object DataEvent {
     __obj.asInstanceOf[DataEvent]
   }
   
-  @scala.inline
-  implicit class DataEventMutableBuilder[Self <: DataEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DataEvent](x: Self) {
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_BUILD] */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: EVENT_BUILD): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: EVENT_BUILD): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }
 }

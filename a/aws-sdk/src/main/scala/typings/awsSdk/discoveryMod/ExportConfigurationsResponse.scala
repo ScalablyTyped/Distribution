@@ -13,19 +13,15 @@ trait ExportConfigurationsResponse extends StObject {
 }
 object ExportConfigurationsResponse {
   
-  @scala.inline
-  def apply(): ExportConfigurationsResponse = {
+  inline def apply(): ExportConfigurationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportConfigurationsResponse]
   }
   
-  @scala.inline
-  implicit class ExportConfigurationsResponseMutableBuilder[Self <: ExportConfigurationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExportConfigurationsResponse](x: Self) {
     
-    @scala.inline
-    def setExportId(value: ConfigurationsExportId): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
+    inline def setExportId(value: ConfigurationsExportId): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportIdUndefined: Self = StObject.set(x, "exportId", js.undefined)
+    inline def setExportIdUndefined: Self = StObject.set(x, "exportId", js.undefined)
   }
 }

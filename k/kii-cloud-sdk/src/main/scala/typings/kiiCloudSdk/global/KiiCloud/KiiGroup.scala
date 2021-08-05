@@ -36,8 +36,7 @@ object KiiGroup {
     *     var group = new KiiUser.groupWithID("__GROUP_ID__");
     */
   /* static member */
-  @scala.inline
-  def groupWithID(groupId: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("groupWithID")(groupId.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiGroup]
+  inline def groupWithID(groupId: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("groupWithID")(groupId.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiGroup]
   
   /**
     * Creates a reference to a group with the given name
@@ -54,8 +53,7 @@ object KiiGroup {
     *     var group = new KiiGroup.groupWithName("myGroup");
     */
   /* static member */
-  @scala.inline
-  def groupWithName(groupName: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("groupWithName")(groupName.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiGroup]
+  inline def groupWithName(groupName: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("groupWithName")(groupName.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiGroup]
   
   /**
     * Creates a reference to a group with the given name and a list of default members
@@ -73,8 +71,7 @@ object KiiGroup {
     *     var group = new KiiGroup.groupWithName("myGroup", members);
     */
   /* static member */
-  @scala.inline
-  def groupWithNameAndMembers(groupName: String, members: js.Array[typings.kiiCloudSdk.KiiCloud.KiiUser]): typings.kiiCloudSdk.KiiCloud.KiiGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWithNameAndMembers")(groupName.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiGroup]
+  inline def groupWithNameAndMembers(groupName: String, members: js.Array[typings.kiiCloudSdk.KiiCloud.KiiUser]): typings.kiiCloudSdk.KiiCloud.KiiGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWithNameAndMembers")(groupName.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiGroup]
   
   /**
     * Generate a new KiiGroup based on a given URI
@@ -93,8 +90,7 @@ object KiiGroup {
     *     var group = new KiiGroup.groupWithURI("kiicloud://myuri");
     */
   /* static member */
-  @scala.inline
-  def groupWithURI(uri: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("groupWithURI")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiGroup]
+  inline def groupWithURI(uri: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("groupWithURI")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiGroup]
   
   /**
     * Register new group own by current user on Kii Cloud with specified ID.
@@ -147,10 +143,8 @@ object KiiGroup {
     *     });
     */
   /* static member */
-  @scala.inline
-  def registerGroupWithID(groupID: String, groupName: String, members: js.Array[typings.kiiCloudSdk.KiiCloud.KiiUser]): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGroupWithID")(groupID.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup]]
-  @scala.inline
-  def registerGroupWithID(
+  inline def registerGroupWithID(groupID: String, groupName: String, members: js.Array[typings.kiiCloudSdk.KiiCloud.KiiUser]): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGroupWithID")(groupID.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup]]
+  inline def registerGroupWithID(
     groupID: String,
     groupName: String,
     members: js.Array[typings.kiiCloudSdk.KiiCloud.KiiUser],

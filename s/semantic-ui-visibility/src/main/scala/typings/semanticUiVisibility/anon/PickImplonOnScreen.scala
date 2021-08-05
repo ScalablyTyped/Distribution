@@ -14,16 +14,13 @@ trait PickImplonOnScreen extends StObject {
 }
 object PickImplonOnScreen {
   
-  @scala.inline
-  def apply(onOnScreen: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonOnScreen = {
+  inline def apply(onOnScreen: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonOnScreen = {
     val __obj = js.Dynamic.literal(onOnScreen = onOnScreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonOnScreen]
   }
   
-  @scala.inline
-  implicit class PickImplonOnScreenMutableBuilder[Self <: PickImplonOnScreen] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonOnScreen](x: Self) {
     
-    @scala.inline
-    def setOnOnScreen(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onOnScreen", value.asInstanceOf[js.Any])
+    inline def setOnOnScreen(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onOnScreen", value.asInstanceOf[js.Any])
   }
 }

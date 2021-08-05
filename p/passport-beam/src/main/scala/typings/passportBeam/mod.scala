@@ -41,23 +41,18 @@ object mod {
     }
     object IStrategyOption {
       
-      @scala.inline
-      def apply(callbackURL: String, clientID: String, clientSecret: String): IStrategyOption = {
+      inline def apply(callbackURL: String, clientID: String, clientSecret: String): IStrategyOption = {
         val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
         __obj.asInstanceOf[IStrategyOption]
       }
       
-      @scala.inline
-      implicit class IStrategyOptionMutableBuilder[Self <: IStrategyOption] (val x: Self) extends AnyVal {
+      extension [Self <: IStrategyOption](x: Self) {
         
-        @scala.inline
-        def setCallbackURL(value: String): Self = StObject.set(x, "callbackURL", value.asInstanceOf[js.Any])
+        inline def setCallbackURL(value: String): Self = StObject.set(x, "callbackURL", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+        inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+        inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       }
     }
     
@@ -75,8 +70,7 @@ object mod {
     }
     object Profile {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         _json: js.Any,
         _raw: js.Any,
         displayName: String,
@@ -89,20 +83,15 @@ object mod {
         __obj.asInstanceOf[Profile]
       }
       
-      @scala.inline
-      implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
+      extension [Self <: Profile](x: Self) {
         
-        @scala.inline
-        def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+        inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfileUrl(value: String): Self = StObject.set(x, "profileUrl", value.asInstanceOf[js.Any])
+        inline def setProfileUrl(value: String): Self = StObject.set(x, "profileUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_json(value: js.Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
+        inline def set_json(value: js.Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_raw(value: js.Any): Self = StObject.set(x, "_raw", value.asInstanceOf[js.Any])
+        inline def set_raw(value: js.Any): Self = StObject.set(x, "_raw", value.asInstanceOf[js.Any])
       }
     }
   }

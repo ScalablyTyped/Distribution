@@ -29,43 +29,31 @@ trait ReturnPricingInfo extends StObject {
 }
 object ReturnPricingInfo {
   
-  @scala.inline
-  def apply(): ReturnPricingInfo = {
+  inline def apply(): ReturnPricingInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReturnPricingInfo]
   }
   
-  @scala.inline
-  implicit class ReturnPricingInfoMutableBuilder[Self <: ReturnPricingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnPricingInfo](x: Self) {
     
-    @scala.inline
-    def setChargeReturnShippingFee(value: Boolean): Self = StObject.set(x, "chargeReturnShippingFee", value.asInstanceOf[js.Any])
+    inline def setChargeReturnShippingFee(value: Boolean): Self = StObject.set(x, "chargeReturnShippingFee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChargeReturnShippingFeeUndefined: Self = StObject.set(x, "chargeReturnShippingFee", js.undefined)
+    inline def setChargeReturnShippingFeeUndefined: Self = StObject.set(x, "chargeReturnShippingFee", js.undefined)
     
-    @scala.inline
-    def setMaxReturnShippingFee(value: MonetaryAmount): Self = StObject.set(x, "maxReturnShippingFee", value.asInstanceOf[js.Any])
+    inline def setMaxReturnShippingFee(value: MonetaryAmount): Self = StObject.set(x, "maxReturnShippingFee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxReturnShippingFeeUndefined: Self = StObject.set(x, "maxReturnShippingFee", js.undefined)
+    inline def setMaxReturnShippingFeeUndefined: Self = StObject.set(x, "maxReturnShippingFee", js.undefined)
     
-    @scala.inline
-    def setRefundableItemsTotalAmount(value: MonetaryAmount): Self = StObject.set(x, "refundableItemsTotalAmount", value.asInstanceOf[js.Any])
+    inline def setRefundableItemsTotalAmount(value: MonetaryAmount): Self = StObject.set(x, "refundableItemsTotalAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefundableItemsTotalAmountUndefined: Self = StObject.set(x, "refundableItemsTotalAmount", js.undefined)
+    inline def setRefundableItemsTotalAmountUndefined: Self = StObject.set(x, "refundableItemsTotalAmount", js.undefined)
     
-    @scala.inline
-    def setRefundableShippingAmount(value: MonetaryAmount): Self = StObject.set(x, "refundableShippingAmount", value.asInstanceOf[js.Any])
+    inline def setRefundableShippingAmount(value: MonetaryAmount): Self = StObject.set(x, "refundableShippingAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefundableShippingAmountUndefined: Self = StObject.set(x, "refundableShippingAmount", js.undefined)
+    inline def setRefundableShippingAmountUndefined: Self = StObject.set(x, "refundableShippingAmount", js.undefined)
     
-    @scala.inline
-    def setTotalRefundedAmount(value: MonetaryAmount): Self = StObject.set(x, "totalRefundedAmount", value.asInstanceOf[js.Any])
+    inline def setTotalRefundedAmount(value: MonetaryAmount): Self = StObject.set(x, "totalRefundedAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRefundedAmountUndefined: Self = StObject.set(x, "totalRefundedAmount", js.undefined)
+    inline def setTotalRefundedAmountUndefined: Self = StObject.set(x, "totalRefundedAmount", js.undefined)
   }
 }

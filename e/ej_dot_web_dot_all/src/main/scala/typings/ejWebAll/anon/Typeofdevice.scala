@@ -18,8 +18,7 @@ trait Typeofdevice extends StObject {
 }
 object Typeofdevice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isAndroid: () => Boolean,
     isFlat: () => Boolean,
     isIOS: () => Boolean,
@@ -30,22 +29,16 @@ object Typeofdevice {
     __obj.asInstanceOf[Typeofdevice]
   }
   
-  @scala.inline
-  implicit class TypeofdeviceMutableBuilder[Self <: Typeofdevice] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofdevice](x: Self) {
     
-    @scala.inline
-    def setIsAndroid(value: () => Boolean): Self = StObject.set(x, "isAndroid", js.Any.fromFunction0(value))
+    inline def setIsAndroid(value: () => Boolean): Self = StObject.set(x, "isAndroid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFlat(value: () => Boolean): Self = StObject.set(x, "isFlat", js.Any.fromFunction0(value))
+    inline def setIsFlat(value: () => Boolean): Self = StObject.set(x, "isFlat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsIOS(value: () => Boolean): Self = StObject.set(x, "isIOS", js.Any.fromFunction0(value))
+    inline def setIsIOS(value: () => Boolean): Self = StObject.set(x, "isIOS", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsIOS7(value: () => Boolean): Self = StObject.set(x, "isIOS7", js.Any.fromFunction0(value))
+    inline def setIsIOS7(value: () => Boolean): Self = StObject.set(x, "isIOS7", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsWindows(value: () => Boolean): Self = StObject.set(x, "isWindows", js.Any.fromFunction0(value))
+    inline def setIsWindows(value: () => Boolean): Self = StObject.set(x, "isWindows", js.Any.fromFunction0(value))
   }
 }

@@ -18,25 +18,19 @@ trait DetectSentimentResponse extends StObject {
 }
 object DetectSentimentResponse {
   
-  @scala.inline
-  def apply(): DetectSentimentResponse = {
+  inline def apply(): DetectSentimentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectSentimentResponse]
   }
   
-  @scala.inline
-  implicit class DetectSentimentResponseMutableBuilder[Self <: DetectSentimentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DetectSentimentResponse](x: Self) {
     
-    @scala.inline
-    def setSentiment(value: SentimentType): Self = StObject.set(x, "Sentiment", value.asInstanceOf[js.Any])
+    inline def setSentiment(value: SentimentType): Self = StObject.set(x, "Sentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentScore(value: SentimentScore): Self = StObject.set(x, "SentimentScore", value.asInstanceOf[js.Any])
+    inline def setSentimentScore(value: SentimentScore): Self = StObject.set(x, "SentimentScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentScoreUndefined: Self = StObject.set(x, "SentimentScore", js.undefined)
+    inline def setSentimentScoreUndefined: Self = StObject.set(x, "SentimentScore", js.undefined)
     
-    @scala.inline
-    def setSentimentUndefined: Self = StObject.set(x, "Sentiment", js.undefined)
+    inline def setSentimentUndefined: Self = StObject.set(x, "Sentiment", js.undefined)
   }
 }

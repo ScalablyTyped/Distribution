@@ -29,8 +29,7 @@ object systemMod {
   @js.native
   val env: js.Any = js.native
   
-  @scala.inline
-  def exit(code: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exit")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def exit(code: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exit")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("sdk/system", "id")
   @js.native
@@ -40,8 +39,7 @@ object systemMod {
   @js.native
   val name: String = js.native
   
-  @scala.inline
-  def pathFor(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathFor")(id.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pathFor(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathFor")(id.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("sdk/system", "platform")
   @js.native

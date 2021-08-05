@@ -23,28 +23,21 @@ trait EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint extends StObjec
 }
 object EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(enterprise: String): EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint = {
+  inline def apply(enterprise: String): EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint = {
     val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpointMutableBuilder[Self <: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait GetConnectionResponse extends StObject {
 }
 object GetConnectionResponse {
   
-  @scala.inline
-  def apply(): GetConnectionResponse = {
+  inline def apply(): GetConnectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConnectionResponse]
   }
   
-  @scala.inline
-  implicit class GetConnectionResponseMutableBuilder[Self <: GetConnectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectionResponse](x: Self) {
     
-    @scala.inline
-    def setConnection(value: Connection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: Connection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionUndefined: Self = StObject.set(x, "Connection", js.undefined)
+    inline def setConnectionUndefined: Self = StObject.set(x, "Connection", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait StripeCheckoutStatic extends StObject {
 }
 object StripeCheckoutStatic {
   
-  @scala.inline
-  def apply(configure: StripeCheckoutOptions => StripeCheckoutHandler): StripeCheckoutStatic = {
+  inline def apply(configure: StripeCheckoutOptions => StripeCheckoutHandler): StripeCheckoutStatic = {
     val __obj = js.Dynamic.literal(configure = js.Any.fromFunction1(configure))
     __obj.asInstanceOf[StripeCheckoutStatic]
   }
   
-  @scala.inline
-  implicit class StripeCheckoutStaticMutableBuilder[Self <: StripeCheckoutStatic] (val x: Self) extends AnyVal {
+  extension [Self <: StripeCheckoutStatic](x: Self) {
     
-    @scala.inline
-    def setConfigure(value: StripeCheckoutOptions => StripeCheckoutHandler): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
+    inline def setConfigure(value: StripeCheckoutOptions => StripeCheckoutHandler): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
   }
 }

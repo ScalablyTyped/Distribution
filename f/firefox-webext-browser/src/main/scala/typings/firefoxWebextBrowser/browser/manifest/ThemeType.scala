@@ -14,31 +14,23 @@ trait ThemeType extends StObject {
 }
 object ThemeType {
   
-  @scala.inline
-  def apply(): ThemeType = {
+  inline def apply(): ThemeType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThemeType]
   }
   
-  @scala.inline
-  implicit class ThemeTypeMutableBuilder[Self <: ThemeType] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeType](x: Self) {
     
-    @scala.inline
-    def setColors(value: ThemeTypeColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: ThemeTypeColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setImages(value: ThemeTypeImages): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: ThemeTypeImages): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setProperties(value: _ThemeType): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: _ThemeType): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

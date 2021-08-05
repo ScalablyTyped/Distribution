@@ -9,8 +9,7 @@ trait IEmail
      with IText
 object IEmail {
   
-  @scala.inline
-  def apply(): IEmail = {
+  inline def apply(): IEmail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEmail]
   }

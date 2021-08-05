@@ -18,23 +18,18 @@ trait MixedDeclarationOption
 }
 object MixedDeclarationOption {
   
-  @scala.inline
-  def apply(help: String, name: String, `type`: Mixed): MixedDeclarationOption = {
+  inline def apply(help: String, name: String, `type`: Mixed): MixedDeclarationOption = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MixedDeclarationOption]
   }
   
-  @scala.inline
-  implicit class MixedDeclarationOptionMutableBuilder[Self <: MixedDeclarationOption] (val x: Self) extends AnyVal {
+  extension [Self <: MixedDeclarationOption](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setType(value: Mixed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Mixed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

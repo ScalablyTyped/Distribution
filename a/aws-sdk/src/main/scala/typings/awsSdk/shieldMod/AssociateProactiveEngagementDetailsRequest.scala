@@ -13,19 +13,15 @@ trait AssociateProactiveEngagementDetailsRequest extends StObject {
 }
 object AssociateProactiveEngagementDetailsRequest {
   
-  @scala.inline
-  def apply(EmergencyContactList: EmergencyContactList): AssociateProactiveEngagementDetailsRequest = {
+  inline def apply(EmergencyContactList: EmergencyContactList): AssociateProactiveEngagementDetailsRequest = {
     val __obj = js.Dynamic.literal(EmergencyContactList = EmergencyContactList.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateProactiveEngagementDetailsRequest]
   }
   
-  @scala.inline
-  implicit class AssociateProactiveEngagementDetailsRequestMutableBuilder[Self <: AssociateProactiveEngagementDetailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateProactiveEngagementDetailsRequest](x: Self) {
     
-    @scala.inline
-    def setEmergencyContactList(value: EmergencyContactList): Self = StObject.set(x, "EmergencyContactList", value.asInstanceOf[js.Any])
+    inline def setEmergencyContactList(value: EmergencyContactList): Self = StObject.set(x, "EmergencyContactList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmergencyContactListVarargs(value: EmergencyContact*): Self = StObject.set(x, "EmergencyContactList", js.Array(value :_*))
+    inline def setEmergencyContactListVarargs(value: EmergencyContact*): Self = StObject.set(x, "EmergencyContactList", js.Array(value :_*))
   }
 }

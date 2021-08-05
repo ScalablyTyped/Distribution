@@ -19,8 +19,7 @@ trait Balance extends StObject {
 }
 object Balance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addresses: js.Array[String],
     balance: Double,
     inputs: js.Array[InputObject],
@@ -31,31 +30,22 @@ object Balance {
     __obj.asInstanceOf[Balance]
   }
   
-  @scala.inline
-  implicit class BalanceMutableBuilder[Self <: Balance] (val x: Self) extends AnyVal {
+  extension [Self <: Balance](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
+    inline def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: js.Array[InputObject]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[InputObject]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsVarargs(value: InputObject*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: InputObject*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setLatestAddress(value: String): Self = StObject.set(x, "latestAddress", value.asInstanceOf[js.Any])
+    inline def setLatestAddress(value: String): Self = StObject.set(x, "latestAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransfers(value: js.Array[String]): Self = StObject.set(x, "transfers", value.asInstanceOf[js.Any])
+    inline def setTransfers(value: js.Array[String]): Self = StObject.set(x, "transfers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransfersVarargs(value: String*): Self = StObject.set(x, "transfers", js.Array(value :_*))
+    inline def setTransfersVarargs(value: String*): Self = StObject.set(x, "transfers", js.Array(value :_*))
   }
 }

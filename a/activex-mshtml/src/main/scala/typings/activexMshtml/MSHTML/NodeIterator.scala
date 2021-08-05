@@ -8,7 +8,7 @@ trait NodeIterator extends StObject {
   
   def Detach(): Unit
   
-  @JSName("MSHTML.NodeIterator_typekey")
+  /* private */ @JSName("MSHTML.NodeIterator_typekey")
   var MSHTMLDotNodeIterator_typekey: NodeIterator
   
   val expandEntityReferences: Boolean
@@ -25,8 +25,7 @@ trait NodeIterator extends StObject {
 }
 object NodeIterator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Detach: () => Unit,
     MSHTMLDotNodeIterator_typekey: NodeIterator,
     expandEntityReferences: Boolean,
@@ -41,31 +40,22 @@ object NodeIterator {
     __obj.asInstanceOf[NodeIterator]
   }
   
-  @scala.inline
-  implicit class NodeIteratorMutableBuilder[Self <: NodeIterator] (val x: Self) extends AnyVal {
+  extension [Self <: NodeIterator](x: Self) {
     
-    @scala.inline
-    def setDetach(value: () => Unit): Self = StObject.set(x, "Detach", js.Any.fromFunction0(value))
+    inline def setDetach(value: () => Unit): Self = StObject.set(x, "Detach", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExpandEntityReferences(value: Boolean): Self = StObject.set(x, "expandEntityReferences", value.asInstanceOf[js.Any])
+    inline def setExpandEntityReferences(value: Boolean): Self = StObject.set(x, "expandEntityReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotNodeIterator_typekey(value: NodeIterator): Self = StObject.set(x, "MSHTML.NodeIterator_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotNodeIterator_typekey(value: NodeIterator): Self = StObject.set(x, "MSHTML.NodeIterator_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextNode(value: () => js.Any): Self = StObject.set(x, "nextNode", js.Any.fromFunction0(value))
+    inline def setNextNode(value: () => js.Any): Self = StObject.set(x, "nextNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreviousNode(value: () => js.Any): Self = StObject.set(x, "previousNode", js.Any.fromFunction0(value))
+    inline def setPreviousNode(value: () => js.Any): Self = StObject.set(x, "previousNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhatToShow(value: Double): Self = StObject.set(x, "whatToShow", value.asInstanceOf[js.Any])
+    inline def setWhatToShow(value: Double): Self = StObject.set(x, "whatToShow", value.asInstanceOf[js.Any])
   }
 }

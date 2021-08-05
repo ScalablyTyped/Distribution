@@ -15,22 +15,17 @@ trait ValueCollection extends StObject {
 }
 object ValueCollection {
   
-  @scala.inline
-  def apply(pagination: Pagination, values: js.Array[Value]): ValueCollection = {
+  inline def apply(pagination: Pagination, values: js.Array[Value]): ValueCollection = {
     val __obj = js.Dynamic.literal(pagination = pagination.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueCollection]
   }
   
-  @scala.inline
-  implicit class ValueCollectionMutableBuilder[Self <: ValueCollection] (val x: Self) extends AnyVal {
+  extension [Self <: ValueCollection](x: Self) {
     
-    @scala.inline
-    def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

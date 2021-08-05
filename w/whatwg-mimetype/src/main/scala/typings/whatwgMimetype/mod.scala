@@ -20,8 +20,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def parse(s: String): MIMEType | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any]).asInstanceOf[MIMEType | Null]
+  inline def parse(s: String): MIMEType | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any]).asInstanceOf[MIMEType | Null]
   
   @js.native
   trait MIMEType extends StObject {

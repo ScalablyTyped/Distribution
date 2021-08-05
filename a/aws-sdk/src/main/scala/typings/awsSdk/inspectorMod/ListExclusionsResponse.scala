@@ -18,25 +18,19 @@ trait ListExclusionsResponse extends StObject {
 }
 object ListExclusionsResponse {
   
-  @scala.inline
-  def apply(exclusionArns: ListReturnedArnList): ListExclusionsResponse = {
+  inline def apply(exclusionArns: ListReturnedArnList): ListExclusionsResponse = {
     val __obj = js.Dynamic.literal(exclusionArns = exclusionArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListExclusionsResponse]
   }
   
-  @scala.inline
-  implicit class ListExclusionsResponseMutableBuilder[Self <: ListExclusionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListExclusionsResponse](x: Self) {
     
-    @scala.inline
-    def setExclusionArns(value: ListReturnedArnList): Self = StObject.set(x, "exclusionArns", value.asInstanceOf[js.Any])
+    inline def setExclusionArns(value: ListReturnedArnList): Self = StObject.set(x, "exclusionArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusionArnsVarargs(value: Arn*): Self = StObject.set(x, "exclusionArns", js.Array(value :_*))
+    inline def setExclusionArnsVarargs(value: Arn*): Self = StObject.set(x, "exclusionArns", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

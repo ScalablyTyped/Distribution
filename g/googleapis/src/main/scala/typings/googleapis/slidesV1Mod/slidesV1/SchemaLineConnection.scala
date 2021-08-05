@@ -32,25 +32,19 @@ trait SchemaLineConnection extends StObject {
 }
 object SchemaLineConnection {
   
-  @scala.inline
-  def apply(): SchemaLineConnection = {
+  inline def apply(): SchemaLineConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLineConnection]
   }
   
-  @scala.inline
-  implicit class SchemaLineConnectionMutableBuilder[Self <: SchemaLineConnection] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLineConnection](x: Self) {
     
-    @scala.inline
-    def setConnectedObjectId(value: String): Self = StObject.set(x, "connectedObjectId", value.asInstanceOf[js.Any])
+    inline def setConnectedObjectId(value: String): Self = StObject.set(x, "connectedObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectedObjectIdUndefined: Self = StObject.set(x, "connectedObjectId", js.undefined)
+    inline def setConnectedObjectIdUndefined: Self = StObject.set(x, "connectedObjectId", js.undefined)
     
-    @scala.inline
-    def setConnectionSiteIndex(value: Double): Self = StObject.set(x, "connectionSiteIndex", value.asInstanceOf[js.Any])
+    inline def setConnectionSiteIndex(value: Double): Self = StObject.set(x, "connectionSiteIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionSiteIndexUndefined: Self = StObject.set(x, "connectionSiteIndex", js.undefined)
+    inline def setConnectionSiteIndexUndefined: Self = StObject.set(x, "connectionSiteIndex", js.undefined)
   }
 }

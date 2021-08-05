@@ -12,42 +12,35 @@ object cssSelectorParserStrings {
   sealed trait numeric
     extends StObject
        with PseudoSelectorType
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
   sealed trait rule extends StObject
-  @scala.inline
-  def rule: rule = "rule".asInstanceOf[rule]
+  inline def rule: rule = "rule".asInstanceOf[rule]
   
   @js.native
   sealed trait ruleSet extends StObject
-  @scala.inline
-  def ruleSet: ruleSet = "ruleSet".asInstanceOf[ruleSet]
+  inline def ruleSet: ruleSet = "ruleSet".asInstanceOf[ruleSet]
   
   @js.native
   sealed trait selector
     extends StObject
        with PseudoSelectorType
-  @scala.inline
-  def selector: selector = "selector".asInstanceOf[selector]
+  inline def selector: selector = "selector".asInstanceOf[selector]
   
   @js.native
   sealed trait selectors extends StObject
-  @scala.inline
-  def selectors: selectors = "selectors".asInstanceOf[selectors]
+  inline def selectors: selectors = "selectors".asInstanceOf[selectors]
   
   @js.native
   sealed trait string
     extends StObject
        with AttrValueType
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait substitute
     extends StObject
        with AttrValueType
-  @scala.inline
-  def substitute: substitute = "substitute".asInstanceOf[substitute]
+  inline def substitute: substitute = "substitute".asInstanceOf[substitute]
 }

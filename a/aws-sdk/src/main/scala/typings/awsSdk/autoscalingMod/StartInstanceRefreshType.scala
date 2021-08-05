@@ -23,28 +23,21 @@ trait StartInstanceRefreshType extends StObject {
 }
 object StartInstanceRefreshType {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: XmlStringMaxLen255): StartInstanceRefreshType = {
+  inline def apply(AutoScalingGroupName: XmlStringMaxLen255): StartInstanceRefreshType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartInstanceRefreshType]
   }
   
-  @scala.inline
-  implicit class StartInstanceRefreshTypeMutableBuilder[Self <: StartInstanceRefreshType] (val x: Self) extends AnyVal {
+  extension [Self <: StartInstanceRefreshType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferences(value: RefreshPreferences): Self = StObject.set(x, "Preferences", value.asInstanceOf[js.Any])
+    inline def setPreferences(value: RefreshPreferences): Self = StObject.set(x, "Preferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferencesUndefined: Self = StObject.set(x, "Preferences", js.undefined)
+    inline def setPreferencesUndefined: Self = StObject.set(x, "Preferences", js.undefined)
     
-    @scala.inline
-    def setStrategy(value: RefreshStrategy): Self = StObject.set(x, "Strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: RefreshStrategy): Self = StObject.set(x, "Strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrategyUndefined: Self = StObject.set(x, "Strategy", js.undefined)
+    inline def setStrategyUndefined: Self = StObject.set(x, "Strategy", js.undefined)
   }
 }

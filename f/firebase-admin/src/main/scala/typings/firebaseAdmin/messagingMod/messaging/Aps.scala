@@ -49,55 +49,39 @@ trait Aps
 }
 object Aps {
   
-  @scala.inline
-  def apply(): Aps = {
+  inline def apply(): Aps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Aps]
   }
   
-  @scala.inline
-  implicit class ApsMutableBuilder[Self <: Aps] (val x: Self) extends AnyVal {
+  extension [Self <: Aps](x: Self) {
     
-    @scala.inline
-    def setAlert(value: String | ApsAlert): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+    inline def setAlert(value: String | ApsAlert): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
+    inline def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
     
-    @scala.inline
-    def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    inline def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setContentAvailable(value: Boolean): Self = StObject.set(x, "contentAvailable", value.asInstanceOf[js.Any])
+    inline def setContentAvailable(value: Boolean): Self = StObject.set(x, "contentAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentAvailableUndefined: Self = StObject.set(x, "contentAvailable", js.undefined)
+    inline def setContentAvailableUndefined: Self = StObject.set(x, "contentAvailable", js.undefined)
     
-    @scala.inline
-    def setMutableContent(value: Boolean): Self = StObject.set(x, "mutableContent", value.asInstanceOf[js.Any])
+    inline def setMutableContent(value: Boolean): Self = StObject.set(x, "mutableContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutableContentUndefined: Self = StObject.set(x, "mutableContent", js.undefined)
+    inline def setMutableContentUndefined: Self = StObject.set(x, "mutableContent", js.undefined)
     
-    @scala.inline
-    def setSound(value: String | CriticalSound): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    inline def setSound(value: String | CriticalSound): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+    inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
-    @scala.inline
-    def setThreadId(value: String): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
+    inline def setThreadId(value: String): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadIdUndefined: Self = StObject.set(x, "threadId", js.undefined)
+    inline def setThreadIdUndefined: Self = StObject.set(x, "threadId", js.undefined)
   }
 }

@@ -37,40 +37,29 @@ trait HorizontalPodAutoscalerSpec extends StObject {
 }
 object HorizontalPodAutoscalerSpec {
   
-  @scala.inline
-  def apply(maxReplicas: Input[Double], scaleTargetRef: Input[CrossVersionObjectReference]): HorizontalPodAutoscalerSpec = {
+  inline def apply(maxReplicas: Input[Double], scaleTargetRef: Input[CrossVersionObjectReference]): HorizontalPodAutoscalerSpec = {
     val __obj = js.Dynamic.literal(maxReplicas = maxReplicas.asInstanceOf[js.Any], scaleTargetRef = scaleTargetRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[HorizontalPodAutoscalerSpec]
   }
   
-  @scala.inline
-  implicit class HorizontalPodAutoscalerSpecMutableBuilder[Self <: HorizontalPodAutoscalerSpec] (val x: Self) extends AnyVal {
+  extension [Self <: HorizontalPodAutoscalerSpec](x: Self) {
     
-    @scala.inline
-    def setBehavior(value: Input[HorizontalPodAutoscalerBehavior]): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: Input[HorizontalPodAutoscalerBehavior]): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+    inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     
-    @scala.inline
-    def setMaxReplicas(value: Input[Double]): Self = StObject.set(x, "maxReplicas", value.asInstanceOf[js.Any])
+    inline def setMaxReplicas(value: Input[Double]): Self = StObject.set(x, "maxReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetrics(value: Input[js.Array[Input[MetricSpec]]]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: Input[js.Array[Input[MetricSpec]]]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: Input[MetricSpec]*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: Input[MetricSpec]*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setMinReplicas(value: Input[Double]): Self = StObject.set(x, "minReplicas", value.asInstanceOf[js.Any])
+    inline def setMinReplicas(value: Input[Double]): Self = StObject.set(x, "minReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinReplicasUndefined: Self = StObject.set(x, "minReplicas", js.undefined)
+    inline def setMinReplicasUndefined: Self = StObject.set(x, "minReplicas", js.undefined)
     
-    @scala.inline
-    def setScaleTargetRef(value: Input[CrossVersionObjectReference]): Self = StObject.set(x, "scaleTargetRef", value.asInstanceOf[js.Any])
+    inline def setScaleTargetRef(value: Input[CrossVersionObjectReference]): Self = StObject.set(x, "scaleTargetRef", value.asInstanceOf[js.Any])
   }
 }

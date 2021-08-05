@@ -10,19 +10,15 @@ trait MultiViewCalendarMessages extends StObject {
 }
 object MultiViewCalendarMessages {
   
-  @scala.inline
-  def apply(): MultiViewCalendarMessages = {
+  inline def apply(): MultiViewCalendarMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiViewCalendarMessages]
   }
   
-  @scala.inline
-  implicit class MultiViewCalendarMessagesMutableBuilder[Self <: MultiViewCalendarMessages] (val x: Self) extends AnyVal {
+  extension [Self <: MultiViewCalendarMessages](x: Self) {
     
-    @scala.inline
-    def setWeekColumnHeader(value: String): Self = StObject.set(x, "weekColumnHeader", value.asInstanceOf[js.Any])
+    inline def setWeekColumnHeader(value: String): Self = StObject.set(x, "weekColumnHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekColumnHeaderUndefined: Self = StObject.set(x, "weekColumnHeader", js.undefined)
+    inline def setWeekColumnHeaderUndefined: Self = StObject.set(x, "weekColumnHeader", js.undefined)
   }
 }

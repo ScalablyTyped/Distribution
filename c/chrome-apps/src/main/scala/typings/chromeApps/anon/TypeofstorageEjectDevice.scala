@@ -61,8 +61,7 @@ trait TypeofstorageEjectDevice extends StObject {
 }
 object TypeofstorageEjectDevice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EjectDeviceResultCode: FAILURE,
     StorageUnitType: FIXED,
     ejectDevice: (String, js.Function1[
@@ -85,11 +84,9 @@ object TypeofstorageEjectDevice {
     __obj.asInstanceOf[TypeofstorageEjectDevice]
   }
   
-  @scala.inline
-  implicit class TypeofstorageEjectDeviceMutableBuilder[Self <: TypeofstorageEjectDevice] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofstorageEjectDevice](x: Self) {
     
-    @scala.inline
-    def setEjectDevice(
+    inline def setEjectDevice(
       value: (String, js.Function1[
           /* result */ ToStringLiteral[
             /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode */ js.Any, 
@@ -103,22 +100,16 @@ object TypeofstorageEjectDevice {
         ]) => Unit
     ): Self = StObject.set(x, "ejectDevice", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEjectDeviceResultCode(value: FAILURE): Self = StObject.set(x, "EjectDeviceResultCode", value.asInstanceOf[js.Any])
+    inline def setEjectDeviceResultCode(value: FAILURE): Self = StObject.set(x, "EjectDeviceResultCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAvailableCapacity(value: (String, js.Function1[/* info */ StorageCapacityInfo, Unit]) => Unit): Self = StObject.set(x, "getAvailableCapacity", js.Any.fromFunction2(value))
+    inline def setGetAvailableCapacity(value: (String, js.Function1[/* info */ StorageCapacityInfo, Unit]) => Unit): Self = StObject.set(x, "getAvailableCapacity", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetInfo(value: js.Function1[/* info */ js.Array[StorageUnitInfo], Unit] => Unit): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
+    inline def setGetInfo(value: js.Function1[/* info */ js.Array[StorageUnitInfo], Unit] => Unit): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnAttached(value: Event[js.Function1[/* info */ StorageUnitInfo, Unit]]): Self = StObject.set(x, "onAttached", value.asInstanceOf[js.Any])
+    inline def setOnAttached(value: Event[js.Function1[/* info */ StorageUnitInfo, Unit]]): Self = StObject.set(x, "onAttached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDetached(value: Event[js.Function1[/* id */ String, Unit]]): Self = StObject.set(x, "onDetached", value.asInstanceOf[js.Any])
+    inline def setOnDetached(value: Event[js.Function1[/* id */ String, Unit]]): Self = StObject.set(x, "onDetached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageUnitType(value: FIXED): Self = StObject.set(x, "StorageUnitType", value.asInstanceOf[js.Any])
+    inline def setStorageUnitType(value: FIXED): Self = StObject.set(x, "StorageUnitType", value.asInstanceOf[js.Any])
   }
 }

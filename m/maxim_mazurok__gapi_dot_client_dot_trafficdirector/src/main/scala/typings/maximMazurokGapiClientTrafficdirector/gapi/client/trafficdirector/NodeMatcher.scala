@@ -14,28 +14,21 @@ trait NodeMatcher extends StObject {
 }
 object NodeMatcher {
   
-  @scala.inline
-  def apply(): NodeMatcher = {
+  inline def apply(): NodeMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeMatcher]
   }
   
-  @scala.inline
-  implicit class NodeMatcherMutableBuilder[Self <: NodeMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: NodeMatcher](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: StringMatcher): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: StringMatcher): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    @scala.inline
-    def setNodeMetadatas(value: js.Array[StructMatcher]): Self = StObject.set(x, "nodeMetadatas", value.asInstanceOf[js.Any])
+    inline def setNodeMetadatas(value: js.Array[StructMatcher]): Self = StObject.set(x, "nodeMetadatas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeMetadatasUndefined: Self = StObject.set(x, "nodeMetadatas", js.undefined)
+    inline def setNodeMetadatasUndefined: Self = StObject.set(x, "nodeMetadatas", js.undefined)
     
-    @scala.inline
-    def setNodeMetadatasVarargs(value: StructMatcher*): Self = StObject.set(x, "nodeMetadatas", js.Array(value :_*))
+    inline def setNodeMetadatasVarargs(value: StructMatcher*): Self = StObject.set(x, "nodeMetadatas", js.Array(value :_*))
   }
 }

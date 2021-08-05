@@ -11,22 +11,17 @@ trait LinkedDataTypeCollectionUpdateData extends StObject {
 }
 object LinkedDataTypeCollectionUpdateData {
   
-  @scala.inline
-  def apply(): LinkedDataTypeCollectionUpdateData = {
+  inline def apply(): LinkedDataTypeCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinkedDataTypeCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class LinkedDataTypeCollectionUpdateDataMutableBuilder[Self <: LinkedDataTypeCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: LinkedDataTypeCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[LinkedDataTypeData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[LinkedDataTypeData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: LinkedDataTypeData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: LinkedDataTypeData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

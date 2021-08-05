@@ -15,31 +15,23 @@ trait CropBar extends StObject {
 }
 object CropBar {
   
-  @scala.inline
-  def apply(): CropBar = {
+  inline def apply(): CropBar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CropBar]
   }
   
-  @scala.inline
-  implicit class CropBarMutableBuilder[Self <: CropBar] (val x: Self) extends AnyVal {
+  extension [Self <: CropBar](x: Self) {
     
-    @scala.inline
-    def setCropBar(value: Boolean): Self = StObject.set(x, "cropBar", value.asInstanceOf[js.Any])
+    inline def setCropBar(value: Boolean): Self = StObject.set(x, "cropBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropBarUndefined: Self = StObject.set(x, "cropBar", js.undefined)
+    inline def setCropBarUndefined: Self = StObject.set(x, "cropBar", js.undefined)
     
-    @scala.inline
-    def setCropMask(value: Boolean): Self = StObject.set(x, "cropMask", value.asInstanceOf[js.Any])
+    inline def setCropMask(value: Boolean): Self = StObject.set(x, "cropMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropMaskUndefined: Self = StObject.set(x, "cropMask", js.undefined)
+    inline def setCropMaskUndefined: Self = StObject.set(x, "cropMask", js.undefined)
     
-    @scala.inline
-    def setRatios(value: js.Any): Self = StObject.set(x, "ratios", value.asInstanceOf[js.Any])
+    inline def setRatios(value: js.Any): Self = StObject.set(x, "ratios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatiosUndefined: Self = StObject.set(x, "ratios", js.undefined)
+    inline def setRatiosUndefined: Self = StObject.set(x, "ratios", js.undefined)
   }
 }

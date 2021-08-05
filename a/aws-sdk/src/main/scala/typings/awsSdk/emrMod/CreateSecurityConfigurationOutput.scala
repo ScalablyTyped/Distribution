@@ -18,19 +18,15 @@ trait CreateSecurityConfigurationOutput extends StObject {
 }
 object CreateSecurityConfigurationOutput {
   
-  @scala.inline
-  def apply(CreationDateTime: Date, Name: XmlString): CreateSecurityConfigurationOutput = {
+  inline def apply(CreationDateTime: Date, Name: XmlString): CreateSecurityConfigurationOutput = {
     val __obj = js.Dynamic.literal(CreationDateTime = CreationDateTime.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSecurityConfigurationOutput]
   }
   
-  @scala.inline
-  implicit class CreateSecurityConfigurationOutputMutableBuilder[Self <: CreateSecurityConfigurationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSecurityConfigurationOutput](x: Self) {
     
-    @scala.inline
-    def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: XmlString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: XmlString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -68,21 +68,16 @@ object replicationSubnetGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ReplicationSubnetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReplicationSubnetGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReplicationSubnetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationSubnetGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ReplicationSubnetGroupState): ReplicationSubnetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReplicationSubnetGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ReplicationSubnetGroupState, opts: CustomResourceOptions): ReplicationSubnetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationSubnetGroup]
+    inline def get(name: String, id: Input[ID]): ReplicationSubnetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReplicationSubnetGroup]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReplicationSubnetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationSubnetGroup]
+    inline def get(name: String, id: Input[ID], state: ReplicationSubnetGroupState): ReplicationSubnetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReplicationSubnetGroup]
+    inline def get(name: String, id: Input[ID], state: ReplicationSubnetGroupState, opts: CustomResourceOptions): ReplicationSubnetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationSubnetGroup]
     
     /**
       * Returns true if the given object is an instance of ReplicationSubnetGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/replicationSubnetGroup.ReplicationSubnetGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/replicationSubnetGroup.ReplicationSubnetGroup */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/replicationSubnetGroup.ReplicationSubnetGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/replicationSubnetGroup.ReplicationSubnetGroup */ Boolean]
   }
   
   trait ReplicationSubnetGroupArgs extends StObject {
@@ -109,8 +104,7 @@ object replicationSubnetGroupMod {
   }
   object ReplicationSubnetGroupArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       replicationSubnetGroupDescription: Input[String],
       replicationSubnetGroupId: Input[String],
       subnetIds: Input[js.Array[Input[String]]]
@@ -119,26 +113,19 @@ object replicationSubnetGroupMod {
       __obj.asInstanceOf[ReplicationSubnetGroupArgs]
     }
     
-    @scala.inline
-    implicit class ReplicationSubnetGroupArgsMutableBuilder[Self <: ReplicationSubnetGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicationSubnetGroupArgs](x: Self) {
       
-      @scala.inline
-      def setReplicationSubnetGroupDescription(value: Input[String]): Self = StObject.set(x, "replicationSubnetGroupDescription", value.asInstanceOf[js.Any])
+      inline def setReplicationSubnetGroupDescription(value: Input[String]): Self = StObject.set(x, "replicationSubnetGroupDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationSubnetGroupId(value: Input[String]): Self = StObject.set(x, "replicationSubnetGroupId", value.asInstanceOf[js.Any])
+      inline def setReplicationSubnetGroupId(value: Input[String]): Self = StObject.set(x, "replicationSubnetGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -173,53 +160,38 @@ object replicationSubnetGroupMod {
   }
   object ReplicationSubnetGroupState {
     
-    @scala.inline
-    def apply(): ReplicationSubnetGroupState = {
+    inline def apply(): ReplicationSubnetGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicationSubnetGroupState]
     }
     
-    @scala.inline
-    implicit class ReplicationSubnetGroupStateMutableBuilder[Self <: ReplicationSubnetGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicationSubnetGroupState](x: Self) {
       
-      @scala.inline
-      def setReplicationSubnetGroupArn(value: Input[String]): Self = StObject.set(x, "replicationSubnetGroupArn", value.asInstanceOf[js.Any])
+      inline def setReplicationSubnetGroupArn(value: Input[String]): Self = StObject.set(x, "replicationSubnetGroupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationSubnetGroupArnUndefined: Self = StObject.set(x, "replicationSubnetGroupArn", js.undefined)
+      inline def setReplicationSubnetGroupArnUndefined: Self = StObject.set(x, "replicationSubnetGroupArn", js.undefined)
       
-      @scala.inline
-      def setReplicationSubnetGroupDescription(value: Input[String]): Self = StObject.set(x, "replicationSubnetGroupDescription", value.asInstanceOf[js.Any])
+      inline def setReplicationSubnetGroupDescription(value: Input[String]): Self = StObject.set(x, "replicationSubnetGroupDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationSubnetGroupDescriptionUndefined: Self = StObject.set(x, "replicationSubnetGroupDescription", js.undefined)
+      inline def setReplicationSubnetGroupDescriptionUndefined: Self = StObject.set(x, "replicationSubnetGroupDescription", js.undefined)
       
-      @scala.inline
-      def setReplicationSubnetGroupId(value: Input[String]): Self = StObject.set(x, "replicationSubnetGroupId", value.asInstanceOf[js.Any])
+      inline def setReplicationSubnetGroupId(value: Input[String]): Self = StObject.set(x, "replicationSubnetGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationSubnetGroupIdUndefined: Self = StObject.set(x, "replicationSubnetGroupId", js.undefined)
+      inline def setReplicationSubnetGroupIdUndefined: Self = StObject.set(x, "replicationSubnetGroupId", js.undefined)
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
+      inline def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

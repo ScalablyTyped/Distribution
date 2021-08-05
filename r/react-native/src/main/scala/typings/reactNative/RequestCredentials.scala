@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestCredentials extends StObject
 object RequestCredentials {
   
-  @scala.inline
-  def include: typings.reactNative.reactNativeStrings.include = "include".asInstanceOf[typings.reactNative.reactNativeStrings.include]
+  inline def include: typings.reactNative.reactNativeStrings.include = "include".asInstanceOf[typings.reactNative.reactNativeStrings.include]
   
-  @scala.inline
-  def omit: typings.reactNative.reactNativeStrings.omit = "omit".asInstanceOf[typings.reactNative.reactNativeStrings.omit]
+  inline def omit: typings.reactNative.reactNativeStrings.omit = "omit".asInstanceOf[typings.reactNative.reactNativeStrings.omit]
   
-  @scala.inline
-  def `same-origin`: typings.reactNative.reactNativeStrings.`same-origin` = "same-origin".asInstanceOf[typings.reactNative.reactNativeStrings.`same-origin`]
+  inline def `same-origin`: typings.reactNative.reactNativeStrings.`same-origin` = "same-origin".asInstanceOf[typings.reactNative.reactNativeStrings.`same-origin`]
 }

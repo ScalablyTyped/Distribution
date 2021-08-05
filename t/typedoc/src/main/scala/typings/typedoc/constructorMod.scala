@@ -15,6 +15,6 @@ object constructorMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Converter) = this()
     
-    var addParameterProperty: js.Any = js.native
+    /* private */ var addParameterProperty: js.Any = js.native
   }
 }

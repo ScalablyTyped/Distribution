@@ -18,19 +18,15 @@ trait SolidEdges3DProperties
 }
 object SolidEdges3DProperties {
   
-  @scala.inline
-  def apply(): SolidEdges3DProperties = {
+  inline def apply(): SolidEdges3DProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SolidEdges3DProperties]
   }
   
-  @scala.inline
-  implicit class SolidEdges3DPropertiesMutableBuilder[Self <: SolidEdges3DProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SolidEdges3DProperties](x: Self) {
     
-    @scala.inline
-    def setType(value: solid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: solid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

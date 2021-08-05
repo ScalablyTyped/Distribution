@@ -10,23 +10,18 @@ object loader {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def load(scriptName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(scriptName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def load(scriptName: String, defer: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(scriptName.asInstanceOf[js.Any], defer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def load(scriptName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(scriptName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def load(scriptName: String, defer: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(scriptName.asInstanceOf[js.Any], defer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def loadPending(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPending")().asInstanceOf[Unit]
+  inline def loadPending(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPending")().asInstanceOf[Unit]
   
   @JSGlobal("CKEDITOR.loader.loadedScripts")
   @js.native
   def loadedScripts: js.Array[String] = js.native
-  @scala.inline
-  def loadedScripts_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadedScripts")(x.asInstanceOf[js.Any])
+  inline def loadedScripts_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadedScripts")(x.asInstanceOf[js.Any])
   
   @JSGlobal("CKEDITOR.loader.scripts")
   @js.native
   def scripts: js.Array[String] = js.native
-  @scala.inline
-  def scripts_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scripts")(x.asInstanceOf[js.Any])
+  inline def scripts_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scripts")(x.asInstanceOf[js.Any])
 }

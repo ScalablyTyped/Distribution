@@ -35,43 +35,31 @@ trait LaunchTemplateInstanceMarketOptionsSpotOptions extends StObject {
 }
 object LaunchTemplateInstanceMarketOptionsSpotOptions {
   
-  @scala.inline
-  def apply(): LaunchTemplateInstanceMarketOptionsSpotOptions = {
+  inline def apply(): LaunchTemplateInstanceMarketOptionsSpotOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplateInstanceMarketOptionsSpotOptions]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateInstanceMarketOptionsSpotOptionsMutableBuilder[Self <: LaunchTemplateInstanceMarketOptionsSpotOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateInstanceMarketOptionsSpotOptions](x: Self) {
     
-    @scala.inline
-    def setBlockDurationMinutes(value: Input[Double]): Self = StObject.set(x, "blockDurationMinutes", value.asInstanceOf[js.Any])
+    inline def setBlockDurationMinutes(value: Input[Double]): Self = StObject.set(x, "blockDurationMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockDurationMinutesUndefined: Self = StObject.set(x, "blockDurationMinutes", js.undefined)
+    inline def setBlockDurationMinutesUndefined: Self = StObject.set(x, "blockDurationMinutes", js.undefined)
     
-    @scala.inline
-    def setInstanceInterruptionBehavior(value: Input[String]): Self = StObject.set(x, "instanceInterruptionBehavior", value.asInstanceOf[js.Any])
+    inline def setInstanceInterruptionBehavior(value: Input[String]): Self = StObject.set(x, "instanceInterruptionBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceInterruptionBehaviorUndefined: Self = StObject.set(x, "instanceInterruptionBehavior", js.undefined)
+    inline def setInstanceInterruptionBehaviorUndefined: Self = StObject.set(x, "instanceInterruptionBehavior", js.undefined)
     
-    @scala.inline
-    def setMaxPrice(value: Input[String]): Self = StObject.set(x, "maxPrice", value.asInstanceOf[js.Any])
+    inline def setMaxPrice(value: Input[String]): Self = StObject.set(x, "maxPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPriceUndefined: Self = StObject.set(x, "maxPrice", js.undefined)
+    inline def setMaxPriceUndefined: Self = StObject.set(x, "maxPrice", js.undefined)
     
-    @scala.inline
-    def setSpotInstanceType(value: Input[String]): Self = StObject.set(x, "spotInstanceType", value.asInstanceOf[js.Any])
+    inline def setSpotInstanceType(value: Input[String]): Self = StObject.set(x, "spotInstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotInstanceTypeUndefined: Self = StObject.set(x, "spotInstanceType", js.undefined)
+    inline def setSpotInstanceTypeUndefined: Self = StObject.set(x, "spotInstanceType", js.undefined)
     
-    @scala.inline
-    def setValidUntil(value: Input[String]): Self = StObject.set(x, "validUntil", value.asInstanceOf[js.Any])
+    inline def setValidUntil(value: Input[String]): Self = StObject.set(x, "validUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidUntilUndefined: Self = StObject.set(x, "validUntil", js.undefined)
+    inline def setValidUntilUndefined: Self = StObject.set(x, "validUntil", js.undefined)
   }
 }

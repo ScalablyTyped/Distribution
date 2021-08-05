@@ -33,43 +33,31 @@ trait DescribeNamespaceResponse extends StObject {
 }
 object DescribeNamespaceResponse {
   
-  @scala.inline
-  def apply(): DescribeNamespaceResponse = {
+  inline def apply(): DescribeNamespaceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeNamespaceResponse]
   }
   
-  @scala.inline
-  implicit class DescribeNamespaceResponseMutableBuilder[Self <: DescribeNamespaceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNamespaceResponse](x: Self) {
     
-    @scala.inline
-    def setNamespaceArn(value: Arn): Self = StObject.set(x, "namespaceArn", value.asInstanceOf[js.Any])
+    inline def setNamespaceArn(value: Arn): Self = StObject.set(x, "namespaceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceArnUndefined: Self = StObject.set(x, "namespaceArn", js.undefined)
+    inline def setNamespaceArnUndefined: Self = StObject.set(x, "namespaceArn", js.undefined)
     
-    @scala.inline
-    def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
+    inline def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceNameUndefined: Self = StObject.set(x, "namespaceName", js.undefined)
+    inline def setNamespaceNameUndefined: Self = StObject.set(x, "namespaceName", js.undefined)
     
-    @scala.inline
-    def setNamespaceVersion(value: Version): Self = StObject.set(x, "namespaceVersion", value.asInstanceOf[js.Any])
+    inline def setNamespaceVersion(value: Version): Self = StObject.set(x, "namespaceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceVersionUndefined: Self = StObject.set(x, "namespaceVersion", js.undefined)
+    inline def setNamespaceVersionUndefined: Self = StObject.set(x, "namespaceVersion", js.undefined)
     
-    @scala.inline
-    def setTrackingNamespaceName(value: NamespaceName): Self = StObject.set(x, "trackingNamespaceName", value.asInstanceOf[js.Any])
+    inline def setTrackingNamespaceName(value: NamespaceName): Self = StObject.set(x, "trackingNamespaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingNamespaceNameUndefined: Self = StObject.set(x, "trackingNamespaceName", js.undefined)
+    inline def setTrackingNamespaceNameUndefined: Self = StObject.set(x, "trackingNamespaceName", js.undefined)
     
-    @scala.inline
-    def setTrackingNamespaceVersion(value: Version): Self = StObject.set(x, "trackingNamespaceVersion", value.asInstanceOf[js.Any])
+    inline def setTrackingNamespaceVersion(value: Version): Self = StObject.set(x, "trackingNamespaceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingNamespaceVersionUndefined: Self = StObject.set(x, "trackingNamespaceVersion", js.undefined)
+    inline def setTrackingNamespaceVersionUndefined: Self = StObject.set(x, "trackingNamespaceVersion", js.undefined)
   }
 }

@@ -20,43 +20,31 @@ trait PartialXlsxWriteOptions extends StObject {
 }
 object PartialXlsxWriteOptions {
   
-  @scala.inline
-  def apply(): PartialXlsxWriteOptions = {
+  inline def apply(): PartialXlsxWriteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialXlsxWriteOptions]
   }
   
-  @scala.inline
-  implicit class PartialXlsxWriteOptionsMutableBuilder[Self <: PartialXlsxWriteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialXlsxWriteOptions](x: Self) {
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
-    @scala.inline
-    def setUseSharedStrings(value: Boolean): Self = StObject.set(x, "useSharedStrings", value.asInstanceOf[js.Any])
+    inline def setUseSharedStrings(value: Boolean): Self = StObject.set(x, "useSharedStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSharedStringsUndefined: Self = StObject.set(x, "useSharedStrings", js.undefined)
+    inline def setUseSharedStringsUndefined: Self = StObject.set(x, "useSharedStrings", js.undefined)
     
-    @scala.inline
-    def setUseStyles(value: Boolean): Self = StObject.set(x, "useStyles", value.asInstanceOf[js.Any])
+    inline def setUseStyles(value: Boolean): Self = StObject.set(x, "useStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseStylesUndefined: Self = StObject.set(x, "useStyles", js.undefined)
+    inline def setUseStylesUndefined: Self = StObject.set(x, "useStyles", js.undefined)
     
-    @scala.inline
-    def setZip(value: PartialJSZipGeneratorOpti): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
+    inline def setZip(value: PartialJSZipGeneratorOpti): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipUndefined: Self = StObject.set(x, "zip", js.undefined)
+    inline def setZipUndefined: Self = StObject.set(x, "zip", js.undefined)
   }
 }

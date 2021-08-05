@@ -36,8 +36,7 @@ object mod {
   @js.native
   val event: typings.dogapi.mod.event = js.native
   
-  @scala.inline
-  def initialize(opts: Apihost): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initialize(opts: Apihost): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait metric extends StObject {
@@ -80,23 +79,18 @@ object mod {
   }
   object EventCreateResponse {
     
-    @scala.inline
-    def apply(event: Datehappened, ok: Boolean): EventCreateResponse = {
+    inline def apply(event: Datehappened, ok: Boolean): EventCreateResponse = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], status = "ok")
       __obj.asInstanceOf[EventCreateResponse]
     }
     
-    @scala.inline
-    implicit class EventCreateResponseMutableBuilder[Self <: EventCreateResponse] (val x: Self) extends AnyVal {
+    extension [Self <: EventCreateResponse](x: Self) {
       
-      @scala.inline
-      def setEvent(value: Datehappened): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Datehappened): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: ok): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: ok): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

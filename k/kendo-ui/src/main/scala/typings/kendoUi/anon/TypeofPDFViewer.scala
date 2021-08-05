@@ -15,19 +15,15 @@ trait TypeofPDFViewer extends StObject {
 }
 object TypeofPDFViewer {
   
-  @scala.inline
-  def apply(extend: js.Object => PDFViewer, fn: PDFViewer): TypeofPDFViewer = {
+  inline def apply(extend: js.Object => PDFViewer, fn: PDFViewer): TypeofPDFViewer = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPDFViewer]
   }
   
-  @scala.inline
-  implicit class TypeofPDFViewerMutableBuilder[Self <: TypeofPDFViewer] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPDFViewer](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => PDFViewer): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => PDFViewer): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: PDFViewer): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: PDFViewer): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

@@ -19,37 +19,27 @@ trait ParserOptions extends StObject {
 }
 object ParserOptions {
   
-  @scala.inline
-  def apply(): ParserOptions = {
+  inline def apply(): ParserOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParserOptions]
   }
   
-  @scala.inline
-  implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ParserOptions](x: Self) {
     
-    @scala.inline
-    def setBaseIRI(value: String): Self = StObject.set(x, "baseIRI", value.asInstanceOf[js.Any])
+    inline def setBaseIRI(value: String): Self = StObject.set(x, "baseIRI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseIRIUndefined: Self = StObject.set(x, "baseIRI", js.undefined)
+    inline def setBaseIRIUndefined: Self = StObject.set(x, "baseIRI", js.undefined)
     
-    @scala.inline
-    def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+    inline def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
+    inline def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
     
-    @scala.inline
-    def setPrefixes(value: StringDictionary[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
+    inline def setPrefixes(value: StringDictionary[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
+    inline def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
     
-    @scala.inline
-    def setSparqlStar(value: Boolean): Self = StObject.set(x, "sparqlStar", value.asInstanceOf[js.Any])
+    inline def setSparqlStar(value: Boolean): Self = StObject.set(x, "sparqlStar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSparqlStarUndefined: Self = StObject.set(x, "sparqlStar", js.undefined)
+    inline def setSparqlStarUndefined: Self = StObject.set(x, "sparqlStar", js.undefined)
   }
 }

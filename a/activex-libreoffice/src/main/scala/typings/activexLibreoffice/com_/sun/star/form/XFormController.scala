@@ -28,8 +28,7 @@ trait XFormController
 }
 object XFormController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Container: XControlContainer,
     Controls: SafeArray[XControl],
     CurrentControl: XControl,
@@ -53,19 +52,14 @@ object XFormController {
     __obj.asInstanceOf[XFormController]
   }
   
-  @scala.inline
-  implicit class XFormControllerMutableBuilder[Self <: XFormController] (val x: Self) extends AnyVal {
+  extension [Self <: XFormController](x: Self) {
     
-    @scala.inline
-    def setAddActivateListener(value: XFormControllerListener => Unit): Self = StObject.set(x, "addActivateListener", js.Any.fromFunction1(value))
+    inline def setAddActivateListener(value: XFormControllerListener => Unit): Self = StObject.set(x, "addActivateListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCurrentControl(value: XControl): Self = StObject.set(x, "CurrentControl", value.asInstanceOf[js.Any])
+    inline def setCurrentControl(value: XControl): Self = StObject.set(x, "CurrentControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentControl(value: () => XControl): Self = StObject.set(x, "getCurrentControl", js.Any.fromFunction0(value))
+    inline def setGetCurrentControl(value: () => XControl): Self = StObject.set(x, "getCurrentControl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveActivateListener(value: XFormControllerListener => Unit): Self = StObject.set(x, "removeActivateListener", js.Any.fromFunction1(value))
+    inline def setRemoveActivateListener(value: XFormControllerListener => Unit): Self = StObject.set(x, "removeActivateListener", js.Any.fromFunction1(value))
   }
 }

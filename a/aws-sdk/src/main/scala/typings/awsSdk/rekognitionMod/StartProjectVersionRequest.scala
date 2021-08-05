@@ -18,19 +18,15 @@ trait StartProjectVersionRequest extends StObject {
 }
 object StartProjectVersionRequest {
   
-  @scala.inline
-  def apply(MinInferenceUnits: InferenceUnits, ProjectVersionArn: ProjectVersionArn): StartProjectVersionRequest = {
+  inline def apply(MinInferenceUnits: InferenceUnits, ProjectVersionArn: ProjectVersionArn): StartProjectVersionRequest = {
     val __obj = js.Dynamic.literal(MinInferenceUnits = MinInferenceUnits.asInstanceOf[js.Any], ProjectVersionArn = ProjectVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartProjectVersionRequest]
   }
   
-  @scala.inline
-  implicit class StartProjectVersionRequestMutableBuilder[Self <: StartProjectVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartProjectVersionRequest](x: Self) {
     
-    @scala.inline
-    def setMinInferenceUnits(value: InferenceUnits): Self = StObject.set(x, "MinInferenceUnits", value.asInstanceOf[js.Any])
+    inline def setMinInferenceUnits(value: InferenceUnits): Self = StObject.set(x, "MinInferenceUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectVersionArn(value: ProjectVersionArn): Self = StObject.set(x, "ProjectVersionArn", value.asInstanceOf[js.Any])
+    inline def setProjectVersionArn(value: ProjectVersionArn): Self = StObject.set(x, "ProjectVersionArn", value.asInstanceOf[js.Any])
   }
 }

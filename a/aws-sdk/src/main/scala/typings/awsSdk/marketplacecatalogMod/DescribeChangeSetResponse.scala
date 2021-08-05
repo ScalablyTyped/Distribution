@@ -53,70 +53,49 @@ trait DescribeChangeSetResponse extends StObject {
 }
 object DescribeChangeSetResponse {
   
-  @scala.inline
-  def apply(): DescribeChangeSetResponse = {
+  inline def apply(): DescribeChangeSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeChangeSetResponse]
   }
   
-  @scala.inline
-  implicit class DescribeChangeSetResponseMutableBuilder[Self <: DescribeChangeSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChangeSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeSet(value: ChangeSetDescription): Self = StObject.set(x, "ChangeSet", value.asInstanceOf[js.Any])
+    inline def setChangeSet(value: ChangeSetDescription): Self = StObject.set(x, "ChangeSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetArn(value: ARN): Self = StObject.set(x, "ChangeSetArn", value.asInstanceOf[js.Any])
+    inline def setChangeSetArn(value: ARN): Self = StObject.set(x, "ChangeSetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetArnUndefined: Self = StObject.set(x, "ChangeSetArn", js.undefined)
+    inline def setChangeSetArnUndefined: Self = StObject.set(x, "ChangeSetArn", js.undefined)
     
-    @scala.inline
-    def setChangeSetId(value: ResourceId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
+    inline def setChangeSetId(value: ResourceId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetIdUndefined: Self = StObject.set(x, "ChangeSetId", js.undefined)
+    inline def setChangeSetIdUndefined: Self = StObject.set(x, "ChangeSetId", js.undefined)
     
-    @scala.inline
-    def setChangeSetName(value: ChangeSetName): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
+    inline def setChangeSetName(value: ChangeSetName): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetNameUndefined: Self = StObject.set(x, "ChangeSetName", js.undefined)
+    inline def setChangeSetNameUndefined: Self = StObject.set(x, "ChangeSetName", js.undefined)
     
-    @scala.inline
-    def setChangeSetUndefined: Self = StObject.set(x, "ChangeSet", js.undefined)
+    inline def setChangeSetUndefined: Self = StObject.set(x, "ChangeSet", js.undefined)
     
-    @scala.inline
-    def setChangeSetVarargs(value: ChangeSummary*): Self = StObject.set(x, "ChangeSet", js.Array(value :_*))
+    inline def setChangeSetVarargs(value: ChangeSummary*): Self = StObject.set(x, "ChangeSet", js.Array(value :_*))
     
-    @scala.inline
-    def setEndTime(value: DateTimeISO8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: DateTimeISO8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setFailureCode(value: FailureCode): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
+    inline def setFailureCode(value: FailureCode): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
+    inline def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
     
-    @scala.inline
-    def setFailureDescription(value: StringValue): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
+    inline def setFailureDescription(value: StringValue): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureDescriptionUndefined: Self = StObject.set(x, "FailureDescription", js.undefined)
+    inline def setFailureDescriptionUndefined: Self = StObject.set(x, "FailureDescription", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: DateTimeISO8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: DateTimeISO8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ChangeStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ChangeStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait ValidationError extends StObject {
 }
 object ValidationError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     key: String,
     message: String,
     validator: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String
@@ -30,16 +29,12 @@ object ValidationError {
     __obj.asInstanceOf[ValidationError]
   }
   
-  @scala.inline
-  implicit class ValidationErrorMutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationError](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidator(value: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
+    inline def setValidator(value: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
   }
 }

@@ -14,19 +14,15 @@ trait ReposUpdateInformationAboutPagesSiteParamsSource extends StObject {
 }
 object ReposUpdateInformationAboutPagesSiteParamsSource {
   
-  @scala.inline
-  def apply(branch: String, path: Slash | Slashdocs): ReposUpdateInformationAboutPagesSiteParamsSource = {
+  inline def apply(branch: String, path: Slash | Slashdocs): ReposUpdateInformationAboutPagesSiteParamsSource = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUpdateInformationAboutPagesSiteParamsSource]
   }
   
-  @scala.inline
-  implicit class ReposUpdateInformationAboutPagesSiteParamsSourceMutableBuilder[Self <: ReposUpdateInformationAboutPagesSiteParamsSource] (val x: Self) extends AnyVal {
+  extension [Self <: ReposUpdateInformationAboutPagesSiteParamsSource](x: Self) {
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: Slash | Slashdocs): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Slash | Slashdocs): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

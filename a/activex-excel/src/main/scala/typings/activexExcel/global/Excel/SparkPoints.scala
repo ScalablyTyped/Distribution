@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SparkPoints")
 @js.native
-class SparkPoints protected ()
+/* private */ class SparkPoints ()
   extends StObject
      with typings.activexExcel.Excel.SparkPoints {
   
@@ -17,7 +17,7 @@ class SparkPoints protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.SparkPoints_typekey")
   var ExcelDotSparkPoints_typekey: typings.activexExcel.Excel.SparkPoints = js.native
   

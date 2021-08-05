@@ -18,19 +18,15 @@ trait DeleteBranchRequest extends StObject {
 }
 object DeleteBranchRequest {
   
-  @scala.inline
-  def apply(appId: AppId, branchName: BranchName): DeleteBranchRequest = {
+  inline def apply(appId: AppId, branchName: BranchName): DeleteBranchRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], branchName = branchName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBranchRequest]
   }
   
-  @scala.inline
-  implicit class DeleteBranchRequestMutableBuilder[Self <: DeleteBranchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBranchRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
   }
 }

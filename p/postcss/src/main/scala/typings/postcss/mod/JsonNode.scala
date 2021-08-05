@@ -36,37 +36,27 @@ trait JsonNode extends StObject {
 }
 object JsonNode {
   
-  @scala.inline
-  def apply(): JsonNode = {
+  inline def apply(): JsonNode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JsonNode]
   }
   
-  @scala.inline
-  implicit class JsonNodeMutableBuilder[Self <: JsonNode] (val x: Self) extends AnyVal {
+  extension [Self <: JsonNode](x: Self) {
     
-    @scala.inline
-    def setParent(value: JsonContainer): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: JsonContainer): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setRaws(value: NodeRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
+    inline def setRaws(value: NodeRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
+    inline def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
     
-    @scala.inline
-    def setSource(value: NodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: NodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

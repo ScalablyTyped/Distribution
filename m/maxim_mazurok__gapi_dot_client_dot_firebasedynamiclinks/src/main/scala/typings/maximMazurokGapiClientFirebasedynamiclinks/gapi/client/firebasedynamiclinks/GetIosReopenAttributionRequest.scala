@@ -20,31 +20,23 @@ trait GetIosReopenAttributionRequest extends StObject {
 }
 object GetIosReopenAttributionRequest {
   
-  @scala.inline
-  def apply(): GetIosReopenAttributionRequest = {
+  inline def apply(): GetIosReopenAttributionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetIosReopenAttributionRequest]
   }
   
-  @scala.inline
-  implicit class GetIosReopenAttributionRequestMutableBuilder[Self <: GetIosReopenAttributionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetIosReopenAttributionRequest](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
-    @scala.inline
-    def setRequestedLink(value: String): Self = StObject.set(x, "requestedLink", value.asInstanceOf[js.Any])
+    inline def setRequestedLink(value: String): Self = StObject.set(x, "requestedLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedLinkUndefined: Self = StObject.set(x, "requestedLink", js.undefined)
+    inline def setRequestedLinkUndefined: Self = StObject.set(x, "requestedLink", js.undefined)
     
-    @scala.inline
-    def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
+    inline def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
+    inline def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
   }
 }

@@ -17,19 +17,15 @@ trait BucketReplicationConfigurationRuleSourceSelectionCriteria extends StObject
 }
 object BucketReplicationConfigurationRuleSourceSelectionCriteria {
   
-  @scala.inline
-  def apply(): BucketReplicationConfigurationRuleSourceSelectionCriteria = {
+  inline def apply(): BucketReplicationConfigurationRuleSourceSelectionCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketReplicationConfigurationRuleSourceSelectionCriteria]
   }
   
-  @scala.inline
-  implicit class BucketReplicationConfigurationRuleSourceSelectionCriteriaMutableBuilder[Self <: BucketReplicationConfigurationRuleSourceSelectionCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: BucketReplicationConfigurationRuleSourceSelectionCriteria](x: Self) {
     
-    @scala.inline
-    def setSseKmsEncryptedObjects(value: Input[BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects]): Self = StObject.set(x, "sseKmsEncryptedObjects", value.asInstanceOf[js.Any])
+    inline def setSseKmsEncryptedObjects(value: Input[BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects]): Self = StObject.set(x, "sseKmsEncryptedObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSseKmsEncryptedObjectsUndefined: Self = StObject.set(x, "sseKmsEncryptedObjects", js.undefined)
+    inline def setSseKmsEncryptedObjectsUndefined: Self = StObject.set(x, "sseKmsEncryptedObjects", js.undefined)
   }
 }

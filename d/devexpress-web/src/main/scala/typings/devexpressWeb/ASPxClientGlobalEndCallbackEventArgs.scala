@@ -18,16 +18,13 @@ trait ASPxClientGlobalEndCallbackEventArgs
 }
 object ASPxClientGlobalEndCallbackEventArgs {
   
-  @scala.inline
-  def apply(command: String, control: ASPxClientControl): ASPxClientGlobalEndCallbackEventArgs = {
+  inline def apply(command: String, control: ASPxClientControl): ASPxClientGlobalEndCallbackEventArgs = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientGlobalEndCallbackEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientGlobalEndCallbackEventArgsMutableBuilder[Self <: ASPxClientGlobalEndCallbackEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGlobalEndCallbackEventArgs](x: Self) {
     
-    @scala.inline
-    def setControl(value: ASPxClientControl): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: ASPxClientControl): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
   }
 }

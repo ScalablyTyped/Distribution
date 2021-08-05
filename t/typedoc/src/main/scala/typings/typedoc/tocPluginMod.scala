@@ -16,7 +16,7 @@ object tocPluginMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Renderer) = this()
     
-    var onRendererBeginPage: js.Any = js.native
+    /* private */ var onRendererBeginPage: js.Any = js.native
   }
   /* static members */
   object TocPlugin {
@@ -25,10 +25,8 @@ object tocPluginMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def buildToc(model: Reflection, trail: js.Array[Reflection], parent: NavigationItem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("buildToc")(model.asInstanceOf[js.Any], trail.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def buildToc(
+    inline def buildToc(model: Reflection, trail: js.Array[Reflection], parent: NavigationItem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("buildToc")(model.asInstanceOf[js.Any], trail.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def buildToc(
       model: Reflection,
       trail: js.Array[Reflection],
       parent: NavigationItem,

@@ -18,20 +18,16 @@ trait TableAttribute extends StObject {
 }
 object TableAttribute {
   
-  @scala.inline
-  def apply(name: String, `type`: String): TableAttribute = {
+  inline def apply(name: String, `type`: String): TableAttribute = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableAttribute]
   }
   
-  @scala.inline
-  implicit class TableAttributeMutableBuilder[Self <: TableAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: TableAttribute](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

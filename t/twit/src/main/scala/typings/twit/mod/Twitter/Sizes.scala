@@ -16,25 +16,19 @@ trait Sizes extends StObject {
 }
 object Sizes {
   
-  @scala.inline
-  def apply(large: Size, medium: Size, small: Size, thumb: Size): Sizes = {
+  inline def apply(large: Size, medium: Size, small: Size, thumb: Size): Sizes = {
     val __obj = js.Dynamic.literal(large = large.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], thumb = thumb.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sizes]
   }
   
-  @scala.inline
-  implicit class SizesMutableBuilder[Self <: Sizes] (val x: Self) extends AnyVal {
+  extension [Self <: Sizes](x: Self) {
     
-    @scala.inline
-    def setLarge(value: Size): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+    inline def setLarge(value: Size): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedium(value: Size): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: Size): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmall(value: Size): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    inline def setSmall(value: Size): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumb(value: Size): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: Size): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
   }
 }

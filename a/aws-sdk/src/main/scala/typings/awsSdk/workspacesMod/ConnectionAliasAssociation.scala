@@ -28,37 +28,27 @@ trait ConnectionAliasAssociation extends StObject {
 }
 object ConnectionAliasAssociation {
   
-  @scala.inline
-  def apply(): ConnectionAliasAssociation = {
+  inline def apply(): ConnectionAliasAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionAliasAssociation]
   }
   
-  @scala.inline
-  implicit class ConnectionAliasAssociationMutableBuilder[Self <: ConnectionAliasAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionAliasAssociation](x: Self) {
     
-    @scala.inline
-    def setAssociatedAccountId(value: AwsAccount): Self = StObject.set(x, "AssociatedAccountId", value.asInstanceOf[js.Any])
+    inline def setAssociatedAccountId(value: AwsAccount): Self = StObject.set(x, "AssociatedAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedAccountIdUndefined: Self = StObject.set(x, "AssociatedAccountId", js.undefined)
+    inline def setAssociatedAccountIdUndefined: Self = StObject.set(x, "AssociatedAccountId", js.undefined)
     
-    @scala.inline
-    def setAssociationStatus(value: AssociationStatus): Self = StObject.set(x, "AssociationStatus", value.asInstanceOf[js.Any])
+    inline def setAssociationStatus(value: AssociationStatus): Self = StObject.set(x, "AssociationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationStatusUndefined: Self = StObject.set(x, "AssociationStatus", js.undefined)
+    inline def setAssociationStatusUndefined: Self = StObject.set(x, "AssociationStatus", js.undefined)
     
-    @scala.inline
-    def setConnectionIdentifier(value: ConnectionIdentifier): Self = StObject.set(x, "ConnectionIdentifier", value.asInstanceOf[js.Any])
+    inline def setConnectionIdentifier(value: ConnectionIdentifier): Self = StObject.set(x, "ConnectionIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionIdentifierUndefined: Self = StObject.set(x, "ConnectionIdentifier", js.undefined)
+    inline def setConnectionIdentifierUndefined: Self = StObject.set(x, "ConnectionIdentifier", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: NonEmptyString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: NonEmptyString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
   }
 }

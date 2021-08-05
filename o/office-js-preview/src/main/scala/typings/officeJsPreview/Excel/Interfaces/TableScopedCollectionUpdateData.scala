@@ -11,22 +11,17 @@ trait TableScopedCollectionUpdateData extends StObject {
 }
 object TableScopedCollectionUpdateData {
   
-  @scala.inline
-  def apply(): TableScopedCollectionUpdateData = {
+  inline def apply(): TableScopedCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableScopedCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class TableScopedCollectionUpdateDataMutableBuilder[Self <: TableScopedCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: TableScopedCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[TableData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[TableData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: TableData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: TableData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

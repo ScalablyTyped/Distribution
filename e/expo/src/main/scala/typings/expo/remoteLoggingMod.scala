@@ -21,8 +21,7 @@ object remoteLoggingMod {
     @JSImport("expo/build/logs/RemoteLogging", "default.addTransportErrorListener")
     @js.native
     def addTransportErrorListener: js.Function1[/* listener */ TransportErrorListener, EventSubscription] = js.native
-    @scala.inline
-    def addTransportErrorListener_=(x: js.Function1[/* listener */ TransportErrorListener, EventSubscription]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addTransportErrorListener")(x.asInstanceOf[js.Any])
+    inline def addTransportErrorListener_=(x: js.Function1[/* listener */ TransportErrorListener, EventSubscription]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addTransportErrorListener")(x.asInstanceOf[js.Any])
     
     @JSImport("expo/build/logs/RemoteLogging", "default.enqueueRemoteLogAsync")
     @js.native
@@ -32,8 +31,7 @@ object remoteLoggingMod {
         /* data */ js.Array[js.Any], 
         js.Promise[Unit]
       ] = js.native
-    @scala.inline
-    def enqueueRemoteLogAsync_=(
+    inline def enqueueRemoteLogAsync_=(
       x: js.Function3[
           /* level */ LogLevel, 
           /* additionalFields */ LogEntryFields, 
@@ -43,8 +41,7 @@ object remoteLoggingMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enqueueRemoteLogAsync")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def waitForEmptyLogQueueAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("__waitForEmptyLogQueueAsync")().asInstanceOf[js.Promise[Unit]]
+  inline def waitForEmptyLogQueueAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("__waitForEmptyLogQueueAsync")().asInstanceOf[js.Promise[Unit]]
   
   type LogData = String | LogErrorData
   
@@ -58,32 +55,24 @@ object remoteLoggingMod {
   }
   object LogEntryFields {
     
-    @scala.inline
-    def apply(): LogEntryFields = {
+    inline def apply(): LogEntryFields = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogEntryFields]
     }
     
-    @scala.inline
-    implicit class LogEntryFieldsMutableBuilder[Self <: LogEntryFields] (val x: Self) extends AnyVal {
+    extension [Self <: LogEntryFields](x: Self) {
       
-      @scala.inline
-      def setGroupCollapsed(value: Boolean): Self = StObject.set(x, "groupCollapsed", value.asInstanceOf[js.Any])
+      inline def setGroupCollapsed(value: Boolean): Self = StObject.set(x, "groupCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupCollapsedUndefined: Self = StObject.set(x, "groupCollapsed", js.undefined)
+      inline def setGroupCollapsedUndefined: Self = StObject.set(x, "groupCollapsed", js.undefined)
       
-      @scala.inline
-      def setGroupDepth(value: Double): Self = StObject.set(x, "groupDepth", value.asInstanceOf[js.Any])
+      inline def setGroupDepth(value: Double): Self = StObject.set(x, "groupDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupDepthUndefined: Self = StObject.set(x, "groupDepth", js.undefined)
+      inline def setGroupDepthUndefined: Self = StObject.set(x, "groupDepth", js.undefined)
       
-      @scala.inline
-      def setShouldHide(value: Boolean): Self = StObject.set(x, "shouldHide", value.asInstanceOf[js.Any])
+      inline def setShouldHide(value: Boolean): Self = StObject.set(x, "shouldHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldHideUndefined: Self = StObject.set(x, "shouldHide", js.undefined)
+      inline def setShouldHideUndefined: Self = StObject.set(x, "shouldHide", js.undefined)
     }
   }
   
@@ -95,20 +84,16 @@ object remoteLoggingMod {
   }
   object LogErrorData {
     
-    @scala.inline
-    def apply(message: String, stack: String): LogErrorData = {
+    inline def apply(message: String, stack: String): LogErrorData = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogErrorData]
     }
     
-    @scala.inline
-    implicit class LogErrorDataMutableBuilder[Self <: LogErrorData] (val x: Self) extends AnyVal {
+    extension [Self <: LogErrorData](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,17 +106,13 @@ object remoteLoggingMod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def debug: typings.expo.expoStrings.debug = "debug".asInstanceOf[typings.expo.expoStrings.debug]
+    inline def debug: typings.expo.expoStrings.debug = "debug".asInstanceOf[typings.expo.expoStrings.debug]
     
-    @scala.inline
-    def error: typings.expo.expoStrings.error = "error".asInstanceOf[typings.expo.expoStrings.error]
+    inline def error: typings.expo.expoStrings.error = "error".asInstanceOf[typings.expo.expoStrings.error]
     
-    @scala.inline
-    def info: typings.expo.expoStrings.info = "info".asInstanceOf[typings.expo.expoStrings.info]
+    inline def info: typings.expo.expoStrings.info = "info".asInstanceOf[typings.expo.expoStrings.info]
     
-    @scala.inline
-    def warn: typings.expo.expoStrings.warn = "warn".asInstanceOf[typings.expo.expoStrings.warn]
+    inline def warn: typings.expo.expoStrings.warn = "warn".asInstanceOf[typings.expo.expoStrings.warn]
   }
   
   type TransportErrorListener = js.Function1[/* event */ Response, Unit]

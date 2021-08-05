@@ -13,16 +13,13 @@ trait DescribeReservationRequest extends StObject {
 }
 object DescribeReservationRequest {
   
-  @scala.inline
-  def apply(ReservationId: string): DescribeReservationRequest = {
+  inline def apply(ReservationId: string): DescribeReservationRequest = {
     val __obj = js.Dynamic.literal(ReservationId = ReservationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReservationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeReservationRequestMutableBuilder[Self <: DescribeReservationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReservationRequest](x: Self) {
     
-    @scala.inline
-    def setReservationId(value: string): Self = StObject.set(x, "ReservationId", value.asInstanceOf[js.Any])
+    inline def setReservationId(value: string): Self = StObject.set(x, "ReservationId", value.asInstanceOf[js.Any])
   }
 }

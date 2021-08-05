@@ -10,8 +10,6 @@ object cpuCoreCountMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cpuCoreCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuCoreCount")().asInstanceOf[Double]
-  @scala.inline
-  def cpuCoreCount(ignoreEnvVar: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuCoreCount")(ignoreEnvVar.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def cpuCoreCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuCoreCount")().asInstanceOf[Double]
+  inline def cpuCoreCount(ignoreEnvVar: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuCoreCount")(ignoreEnvVar.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

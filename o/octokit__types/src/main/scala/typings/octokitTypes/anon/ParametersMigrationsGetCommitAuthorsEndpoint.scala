@@ -18,8 +18,7 @@ trait ParametersMigrationsGetCommitAuthorsEndpoint extends StObject {
 }
 object ParametersMigrationsGetCommitAuthorsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MigrationsGetCommitAuthorsEndpoint,
     request: MigrationsGetCommitAuthorsRequestOptions,
     response: OctokitResponse[MigrationsGetCommitAuthorsResponseData]
@@ -28,16 +27,12 @@ object ParametersMigrationsGetCommitAuthorsEndpoint {
     __obj.asInstanceOf[ParametersMigrationsGetCommitAuthorsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMigrationsGetCommitAuthorsEndpointMutableBuilder[Self <: ParametersMigrationsGetCommitAuthorsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMigrationsGetCommitAuthorsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MigrationsGetCommitAuthorsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MigrationsGetCommitAuthorsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: MigrationsGetCommitAuthorsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MigrationsGetCommitAuthorsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[MigrationsGetCommitAuthorsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[MigrationsGetCommitAuthorsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -16,7 +16,7 @@ object deserializationErrorMod {
     def this(message: String, json: String) = this()
     def this(message: Unit, json: String) = this()
     
-    var _json: js.Any = js.native
+    /* private */ var _json: js.Any = js.native
     
     val json: js.UndefOr[String] = js.native
     

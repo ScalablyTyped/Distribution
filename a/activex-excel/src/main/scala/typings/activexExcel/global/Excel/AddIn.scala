@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.AddIn")
 @js.native
-class AddIn protected ()
+/* private */ class AddIn ()
   extends StObject
      with typings.activexExcel.Excel.AddIn {
   
@@ -26,7 +26,7 @@ class AddIn protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.AddIn_typekey")
   var ExcelDotAddIn_typekey: typings.activexExcel.Excel.AddIn = js.native
   

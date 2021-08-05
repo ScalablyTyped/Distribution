@@ -12,16 +12,13 @@ trait ClientOptions
 }
 object ClientOptions {
   
-  @scala.inline
-  def apply(authentication: () => AbstractHandshake, sandboxId: String): ClientOptions = {
+  inline def apply(authentication: () => AbstractHandshake, sandboxId: String): ClientOptions = {
     val __obj = js.Dynamic.literal(authentication = js.Any.fromFunction0(authentication), sandboxId = sandboxId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
   
-  @scala.inline
-  implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientOptions](x: Self) {
     
-    @scala.inline
-    def setAuthentication(value: () => AbstractHandshake): Self = StObject.set(x, "authentication", js.Any.fromFunction0(value))
+    inline def setAuthentication(value: () => AbstractHandshake): Self = StObject.set(x, "authentication", js.Any.fromFunction0(value))
   }
 }

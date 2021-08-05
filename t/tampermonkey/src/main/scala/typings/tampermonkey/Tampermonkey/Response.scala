@@ -14,8 +14,7 @@ trait Response[TContext]
 }
 object Response {
   
-  @scala.inline
-  def apply[TContext](
+  inline def apply[TContext](
     context: TContext,
     finalUrl: String,
     readyState: ReadyState,
@@ -29,13 +28,10 @@ object Response {
     __obj.asInstanceOf[Response[TContext]]
   }
   
-  @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response[?], TContext] (val x: Self & Response[TContext]) extends AnyVal {
+  extension [Self <: Response[?], TContext](x: Self & Response[TContext]) {
     
-    @scala.inline
-    def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
+    inline def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
   }
 }

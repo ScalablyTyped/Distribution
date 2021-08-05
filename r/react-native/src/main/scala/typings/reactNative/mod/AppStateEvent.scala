@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppStateEvent extends StObject
 object AppStateEvent {
   
-  @scala.inline
-  def blur: typings.reactNative.reactNativeStrings.blur = "blur".asInstanceOf[typings.reactNative.reactNativeStrings.blur]
+  inline def blur: typings.reactNative.reactNativeStrings.blur = "blur".asInstanceOf[typings.reactNative.reactNativeStrings.blur]
   
-  @scala.inline
-  def change: typings.reactNative.reactNativeStrings.change = "change".asInstanceOf[typings.reactNative.reactNativeStrings.change]
+  inline def change: typings.reactNative.reactNativeStrings.change = "change".asInstanceOf[typings.reactNative.reactNativeStrings.change]
   
-  @scala.inline
-  def focus: typings.reactNative.reactNativeStrings.focus = "focus".asInstanceOf[typings.reactNative.reactNativeStrings.focus]
+  inline def focus: typings.reactNative.reactNativeStrings.focus = "focus".asInstanceOf[typings.reactNative.reactNativeStrings.focus]
   
-  @scala.inline
-  def memoryWarning: typings.reactNative.reactNativeStrings.memoryWarning = "memoryWarning".asInstanceOf[typings.reactNative.reactNativeStrings.memoryWarning]
+  inline def memoryWarning: typings.reactNative.reactNativeStrings.memoryWarning = "memoryWarning".asInstanceOf[typings.reactNative.reactNativeStrings.memoryWarning]
 }

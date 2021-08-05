@@ -11,22 +11,17 @@ trait ConditionalRangeBorderCollectionData extends StObject {
 }
 object ConditionalRangeBorderCollectionData {
   
-  @scala.inline
-  def apply(): ConditionalRangeBorderCollectionData = {
+  inline def apply(): ConditionalRangeBorderCollectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalRangeBorderCollectionData]
   }
   
-  @scala.inline
-  implicit class ConditionalRangeBorderCollectionDataMutableBuilder[Self <: ConditionalRangeBorderCollectionData] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalRangeBorderCollectionData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[ConditionalRangeBorderData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ConditionalRangeBorderData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: ConditionalRangeBorderData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ConditionalRangeBorderData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

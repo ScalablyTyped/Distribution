@@ -16,25 +16,19 @@ trait fragParsingInitSegmentData extends StObject {
 }
 object fragParsingInitSegmentData {
   
-  @scala.inline
-  def apply(codecs: js.Any, frag: Fragment, id: String, moov: js.Any): fragParsingInitSegmentData = {
+  inline def apply(codecs: js.Any, frag: Fragment, id: String, moov: js.Any): fragParsingInitSegmentData = {
     val __obj = js.Dynamic.literal(codecs = codecs.asInstanceOf[js.Any], frag = frag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], moov = moov.asInstanceOf[js.Any])
     __obj.asInstanceOf[fragParsingInitSegmentData]
   }
   
-  @scala.inline
-  implicit class fragParsingInitSegmentDataMutableBuilder[Self <: fragParsingInitSegmentData] (val x: Self) extends AnyVal {
+  extension [Self <: fragParsingInitSegmentData](x: Self) {
     
-    @scala.inline
-    def setCodecs(value: js.Any): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
+    inline def setCodecs(value: js.Any): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
+    inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoov(value: js.Any): Self = StObject.set(x, "moov", value.asInstanceOf[js.Any])
+    inline def setMoov(value: js.Any): Self = StObject.set(x, "moov", value.asInstanceOf[js.Any])
   }
 }

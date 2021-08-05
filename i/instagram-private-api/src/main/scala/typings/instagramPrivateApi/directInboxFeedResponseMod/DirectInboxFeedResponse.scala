@@ -20,8 +20,7 @@ trait DirectInboxFeedResponse extends StObject {
 }
 object DirectInboxFeedResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inbox: DirectInboxFeedResponseInbox,
     most_recent_inviter: DirectInboxFeedResponseMostRecentInviter,
     pending_requests_total: Double,
@@ -33,25 +32,18 @@ object DirectInboxFeedResponse {
     __obj.asInstanceOf[DirectInboxFeedResponse]
   }
   
-  @scala.inline
-  implicit class DirectInboxFeedResponseMutableBuilder[Self <: DirectInboxFeedResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DirectInboxFeedResponse](x: Self) {
     
-    @scala.inline
-    def setInbox(value: DirectInboxFeedResponseInbox): Self = StObject.set(x, "inbox", value.asInstanceOf[js.Any])
+    inline def setInbox(value: DirectInboxFeedResponseInbox): Self = StObject.set(x, "inbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMost_recent_inviter(value: DirectInboxFeedResponseMostRecentInviter): Self = StObject.set(x, "most_recent_inviter", value.asInstanceOf[js.Any])
+    inline def setMost_recent_inviter(value: DirectInboxFeedResponseMostRecentInviter): Self = StObject.set(x, "most_recent_inviter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPending_requests_total(value: Double): Self = StObject.set(x, "pending_requests_total", value.asInstanceOf[js.Any])
+    inline def setPending_requests_total(value: Double): Self = StObject.set(x, "pending_requests_total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeq_id(value: Double): Self = StObject.set(x, "seq_id", value.asInstanceOf[js.Any])
+    inline def setSeq_id(value: Double): Self = StObject.set(x, "seq_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshot_at_ms(value: Double): Self = StObject.set(x, "snapshot_at_ms", value.asInstanceOf[js.Any])
+    inline def setSnapshot_at_ms(value: Double): Self = StObject.set(x, "snapshot_at_ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

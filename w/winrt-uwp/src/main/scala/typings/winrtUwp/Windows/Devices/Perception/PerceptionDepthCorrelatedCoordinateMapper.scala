@@ -41,8 +41,7 @@ trait PerceptionDepthCorrelatedCoordinateMapper extends StObject {
 }
 object PerceptionDepthCorrelatedCoordinateMapper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mapAllPixelsToTargetAsync: PerceptionDepthFrame => TargetCoordinates,
     mapPixelToTarget: (Point, PerceptionDepthFrame) => Point,
     mapPixelsToTarget: (Point, PerceptionDepthFrame) => Point,
@@ -52,19 +51,14 @@ object PerceptionDepthCorrelatedCoordinateMapper {
     __obj.asInstanceOf[PerceptionDepthCorrelatedCoordinateMapper]
   }
   
-  @scala.inline
-  implicit class PerceptionDepthCorrelatedCoordinateMapperMutableBuilder[Self <: PerceptionDepthCorrelatedCoordinateMapper] (val x: Self) extends AnyVal {
+  extension [Self <: PerceptionDepthCorrelatedCoordinateMapper](x: Self) {
     
-    @scala.inline
-    def setMapAllPixelsToTargetAsync(value: PerceptionDepthFrame => TargetCoordinates): Self = StObject.set(x, "mapAllPixelsToTargetAsync", js.Any.fromFunction1(value))
+    inline def setMapAllPixelsToTargetAsync(value: PerceptionDepthFrame => TargetCoordinates): Self = StObject.set(x, "mapAllPixelsToTargetAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMapPixelToTarget(value: (Point, PerceptionDepthFrame) => Point): Self = StObject.set(x, "mapPixelToTarget", js.Any.fromFunction2(value))
+    inline def setMapPixelToTarget(value: (Point, PerceptionDepthFrame) => Point): Self = StObject.set(x, "mapPixelToTarget", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMapPixelsToTarget(value: (Point, PerceptionDepthFrame) => Point): Self = StObject.set(x, "mapPixelsToTarget", js.Any.fromFunction2(value))
+    inline def setMapPixelsToTarget(value: (Point, PerceptionDepthFrame) => Point): Self = StObject.set(x, "mapPixelsToTarget", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMapRegionOfPixelsToTargetAsync(value: (Rect, PerceptionDepthFrame) => TargetCoordinates): Self = StObject.set(x, "mapRegionOfPixelsToTargetAsync", js.Any.fromFunction2(value))
+    inline def setMapRegionOfPixelsToTargetAsync(value: (Rect, PerceptionDepthFrame) => TargetCoordinates): Self = StObject.set(x, "mapRegionOfPixelsToTargetAsync", js.Any.fromFunction2(value))
   }
 }

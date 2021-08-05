@@ -22,29 +22,23 @@ trait NotificationDefaults extends StObject {
 }
 object NotificationDefaults {
   
-  @scala.inline
-  def apply(): NotificationDefaults = {
+  inline def apply(): NotificationDefaults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationDefaults]
   }
   
-  @scala.inline
-  implicit class NotificationDefaultsMutableBuilder[Self <: NotificationDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationDefaults](x: Self) {
     
-    @scala.inline
-    def setApiEmailNotifications(
+    inline def setApiEmailNotifications(
       value: /* Contains details about the default notification settings for the envelope notifications that senders and signers receive. */ NotificationDefaultSettings
     ): Self = StObject.set(x, "apiEmailNotifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiEmailNotificationsUndefined: Self = StObject.set(x, "apiEmailNotifications", js.undefined)
+    inline def setApiEmailNotificationsUndefined: Self = StObject.set(x, "apiEmailNotifications", js.undefined)
     
-    @scala.inline
-    def setEmailNotifications(
+    inline def setEmailNotifications(
       value: /* Contains details about the default notification settings for the envelope notifications that senders and signers receive. */ NotificationDefaultSettings
     ): Self = StObject.set(x, "emailNotifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailNotificationsUndefined: Self = StObject.set(x, "emailNotifications", js.undefined)
+    inline def setEmailNotificationsUndefined: Self = StObject.set(x, "emailNotifications", js.undefined)
   }
 }

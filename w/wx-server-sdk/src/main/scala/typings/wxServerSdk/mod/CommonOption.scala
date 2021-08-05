@@ -10,16 +10,13 @@ trait CommonOption[T] extends StObject {
 }
 object CommonOption {
   
-  @scala.inline
-  def apply[T](data: T): CommonOption[T] = {
+  inline def apply[T](data: T): CommonOption[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonOption[T]]
   }
   
-  @scala.inline
-  implicit class CommonOptionMutableBuilder[Self <: CommonOption[?], T] (val x: Self & CommonOption[T]) extends AnyVal {
+  extension [Self <: CommonOption[?], T](x: Self & CommonOption[T]) {
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

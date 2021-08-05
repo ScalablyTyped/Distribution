@@ -10,16 +10,13 @@ trait Access extends StObject {
 }
 object Access {
   
-  @scala.inline
-  def apply(access: Boolean): Access = {
+  inline def apply(access: Boolean): Access = {
     val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any])
     __obj.asInstanceOf[Access]
   }
   
-  @scala.inline
-  implicit class AccessMutableBuilder[Self <: Access] (val x: Self) extends AnyVal {
+  extension [Self <: Access](x: Self) {
     
-    @scala.inline
-    def setAccess(value: Boolean): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: Boolean): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
   }
 }

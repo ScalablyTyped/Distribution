@@ -11,8 +11,7 @@ object helpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getOptionsHelp(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsHelp")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getOptionsHelp(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsHelp")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait ParameterHelp extends StObject {
     
@@ -24,29 +23,22 @@ object helpMod {
   }
   object ParameterHelp {
     
-    @scala.inline
-    def apply(helps: js.Array[String], margin: Double, names: js.Array[String]): ParameterHelp = {
+    inline def apply(helps: js.Array[String], margin: Double, names: js.Array[String]): ParameterHelp = {
       val __obj = js.Dynamic.literal(helps = helps.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParameterHelp]
     }
     
-    @scala.inline
-    implicit class ParameterHelpMutableBuilder[Self <: ParameterHelp] (val x: Self) extends AnyVal {
+    extension [Self <: ParameterHelp](x: Self) {
       
-      @scala.inline
-      def setHelps(value: js.Array[String]): Self = StObject.set(x, "helps", value.asInstanceOf[js.Any])
+      inline def setHelps(value: js.Array[String]): Self = StObject.set(x, "helps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpsVarargs(value: String*): Self = StObject.set(x, "helps", js.Array(value :_*))
+      inline def setHelpsVarargs(value: String*): Self = StObject.set(x, "helps", js.Array(value :_*))
       
-      @scala.inline
-      def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
     }
   }
 }

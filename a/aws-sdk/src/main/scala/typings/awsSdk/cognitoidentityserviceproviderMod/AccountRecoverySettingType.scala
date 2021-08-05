@@ -13,22 +13,17 @@ trait AccountRecoverySettingType extends StObject {
 }
 object AccountRecoverySettingType {
   
-  @scala.inline
-  def apply(): AccountRecoverySettingType = {
+  inline def apply(): AccountRecoverySettingType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountRecoverySettingType]
   }
   
-  @scala.inline
-  implicit class AccountRecoverySettingTypeMutableBuilder[Self <: AccountRecoverySettingType] (val x: Self) extends AnyVal {
+  extension [Self <: AccountRecoverySettingType](x: Self) {
     
-    @scala.inline
-    def setRecoveryMechanisms(value: RecoveryMechanismsType): Self = StObject.set(x, "RecoveryMechanisms", value.asInstanceOf[js.Any])
+    inline def setRecoveryMechanisms(value: RecoveryMechanismsType): Self = StObject.set(x, "RecoveryMechanisms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecoveryMechanismsUndefined: Self = StObject.set(x, "RecoveryMechanisms", js.undefined)
+    inline def setRecoveryMechanismsUndefined: Self = StObject.set(x, "RecoveryMechanisms", js.undefined)
     
-    @scala.inline
-    def setRecoveryMechanismsVarargs(value: RecoveryOptionType*): Self = StObject.set(x, "RecoveryMechanisms", js.Array(value :_*))
+    inline def setRecoveryMechanismsVarargs(value: RecoveryOptionType*): Self = StObject.set(x, "RecoveryMechanisms", js.Array(value :_*))
   }
 }

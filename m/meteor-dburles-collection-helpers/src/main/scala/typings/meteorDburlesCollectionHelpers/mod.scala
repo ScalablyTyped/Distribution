@@ -27,20 +27,16 @@ object mod {
   }
   object DataFlavor {
     
-    @scala.inline
-    def apply[T](): DataFlavor[T] = {
+    inline def apply[T](): DataFlavor[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataFlavor[T]]
     }
     
-    @scala.inline
-    implicit class DataFlavorMutableBuilder[Self <: DataFlavor[?], T] (val x: Self & DataFlavor[T]) extends AnyVal {
+    extension [Self <: DataFlavor[?], T](x: Self & DataFlavor[T]) {
       
-      @scala.inline
-      def set_meteor_dburles_collection_helpers_isData(value: js.Tuple2[Flavor, T]): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isData", value.asInstanceOf[js.Any])
+      inline def set_meteor_dburles_collection_helpers_isData(value: js.Tuple2[Flavor, T]): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_meteor_dburles_collection_helpers_isDataUndefined: Self = StObject.set(x, "_meteor_dburles_collection_helpers_isData", js.undefined)
+      inline def set_meteor_dburles_collection_helpers_isDataUndefined: Self = StObject.set(x, "_meteor_dburles_collection_helpers_isData", js.undefined)
     }
   }
   
@@ -79,17 +75,14 @@ object mod {
   }
   object HelperBrand {
     
-    @scala.inline
-    def apply(_meteor_dburles_collection_helpers_isBrandUnsupportedHelper: Brand): HelperBrand = {
+    inline def apply(_meteor_dburles_collection_helpers_isBrandUnsupportedHelper: Brand): HelperBrand = {
       val __obj = js.Dynamic.literal(_meteor_dburles_collection_helpers_isBrandUnsupportedHelper = _meteor_dburles_collection_helpers_isBrandUnsupportedHelper.asInstanceOf[js.Any])
       __obj.asInstanceOf[HelperBrand]
     }
     
-    @scala.inline
-    implicit class HelperBrandMutableBuilder[Self <: HelperBrand] (val x: Self) extends AnyVal {
+    extension [Self <: HelperBrand](x: Self) {
       
-      @scala.inline
-      def set_meteor_dburles_collection_helpers_isBrandUnsupportedHelper(value: Brand): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isBrandUnsupportedHelper", value.asInstanceOf[js.Any])
+      inline def set_meteor_dburles_collection_helpers_isBrandUnsupportedHelper(value: Brand): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isBrandUnsupportedHelper", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,20 +99,16 @@ object mod {
   }
   object HelperFlavor {
     
-    @scala.inline
-    def apply(): HelperFlavor = {
+    inline def apply(): HelperFlavor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HelperFlavor]
     }
     
-    @scala.inline
-    implicit class HelperFlavorMutableBuilder[Self <: HelperFlavor] (val x: Self) extends AnyVal {
+    extension [Self <: HelperFlavor](x: Self) {
       
-      @scala.inline
-      def set_meteor_dburles_collection_helpers_isHelper(value: Flavor): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isHelper", value.asInstanceOf[js.Any])
+      inline def set_meteor_dburles_collection_helpers_isHelper(value: Flavor): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isHelper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_meteor_dburles_collection_helpers_isHelperUndefined: Self = StObject.set(x, "_meteor_dburles_collection_helpers_isHelper", js.undefined)
+      inline def set_meteor_dburles_collection_helpers_isHelperUndefined: Self = StObject.set(x, "_meteor_dburles_collection_helpers_isHelper", js.undefined)
     }
   }
   
@@ -142,20 +131,16 @@ object mod {
   }
   object HelpersFlavor {
     
-    @scala.inline
-    def apply[T](): HelpersFlavor[T] = {
+    inline def apply[T](): HelpersFlavor[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HelpersFlavor[T]]
     }
     
-    @scala.inline
-    implicit class HelpersFlavorMutableBuilder[Self <: HelpersFlavor[?], T] (val x: Self & HelpersFlavor[T]) extends AnyVal {
+    extension [Self <: HelpersFlavor[?], T](x: Self & HelpersFlavor[T]) {
       
-      @scala.inline
-      def set_meteor_dburles_collection_helpers_isHelpersOf(value: js.Tuple2[Flavor, T]): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isHelpersOf", value.asInstanceOf[js.Any])
+      inline def set_meteor_dburles_collection_helpers_isHelpersOf(value: js.Tuple2[Flavor, T]): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isHelpersOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_meteor_dburles_collection_helpers_isHelpersOfUndefined: Self = StObject.set(x, "_meteor_dburles_collection_helpers_isHelpersOf", js.undefined)
+      inline def set_meteor_dburles_collection_helpers_isHelpersOfUndefined: Self = StObject.set(x, "_meteor_dburles_collection_helpers_isHelpersOf", js.undefined)
     }
   }
   
@@ -203,20 +188,16 @@ object mod {
   }
   object OptionalHelperBrand {
     
-    @scala.inline
-    def apply(): OptionalHelperBrand = {
+    inline def apply(): OptionalHelperBrand = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionalHelperBrand]
     }
     
-    @scala.inline
-    implicit class OptionalHelperBrandMutableBuilder[Self <: OptionalHelperBrand] (val x: Self) extends AnyVal {
+    extension [Self <: OptionalHelperBrand](x: Self) {
       
-      @scala.inline
-      def set_meteor_dburles_collection_helpers_isBrandUnsupportedOptionalHelper(value: Brand): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isBrandUnsupportedOptionalHelper", value.asInstanceOf[js.Any])
+      inline def set_meteor_dburles_collection_helpers_isBrandUnsupportedOptionalHelper(value: Brand): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isBrandUnsupportedOptionalHelper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_meteor_dburles_collection_helpers_isBrandUnsupportedOptionalHelperUndefined: Self = StObject.set(x, "_meteor_dburles_collection_helpers_isBrandUnsupportedOptionalHelper", js.undefined)
+      inline def set_meteor_dburles_collection_helpers_isBrandUnsupportedOptionalHelperUndefined: Self = StObject.set(x, "_meteor_dburles_collection_helpers_isBrandUnsupportedOptionalHelper", js.undefined)
     }
   }
   
@@ -226,20 +207,16 @@ object mod {
   }
   object OptionalHelperFlavor {
     
-    @scala.inline
-    def apply(): OptionalHelperFlavor = {
+    inline def apply(): OptionalHelperFlavor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionalHelperFlavor]
     }
     
-    @scala.inline
-    implicit class OptionalHelperFlavorMutableBuilder[Self <: OptionalHelperFlavor] (val x: Self) extends AnyVal {
+    extension [Self <: OptionalHelperFlavor](x: Self) {
       
-      @scala.inline
-      def set_meteor_dburles_collection_helpers_isOptionalHelper(value: Flavor): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isOptionalHelper", value.asInstanceOf[js.Any])
+      inline def set_meteor_dburles_collection_helpers_isOptionalHelper(value: Flavor): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isOptionalHelper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_meteor_dburles_collection_helpers_isOptionalHelperUndefined: Self = StObject.set(x, "_meteor_dburles_collection_helpers_isOptionalHelper", js.undefined)
+      inline def set_meteor_dburles_collection_helpers_isOptionalHelperUndefined: Self = StObject.set(x, "_meteor_dburles_collection_helpers_isOptionalHelper", js.undefined)
     }
   }
   
@@ -271,14 +248,12 @@ object mod {
   trait _OptionalHelper[T] extends StObject
   object _OptionalHelper {
     
-    @scala.inline
-    def HelperBrand(_meteor_dburles_collection_helpers_isBrandUnsupportedHelper: Brand): typings.meteorDburlesCollectionHelpers.mod.HelperBrand = {
+    inline def HelperBrand(_meteor_dburles_collection_helpers_isBrandUnsupportedHelper: Brand): typings.meteorDburlesCollectionHelpers.mod.HelperBrand = {
       val __obj = js.Dynamic.literal(_meteor_dburles_collection_helpers_isBrandUnsupportedHelper = _meteor_dburles_collection_helpers_isBrandUnsupportedHelper.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.meteorDburlesCollectionHelpers.mod.HelperBrand]
     }
     
-    @scala.inline
-    def OptionalHelperBrand(): typings.meteorDburlesCollectionHelpers.mod.OptionalHelperBrand = {
+    inline def OptionalHelperBrand(): typings.meteorDburlesCollectionHelpers.mod.OptionalHelperBrand = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.meteorDburlesCollectionHelpers.mod.OptionalHelperBrand]
     }

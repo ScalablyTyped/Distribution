@@ -18,17 +18,14 @@ object typesInvalidRepositoryTriggerRegionExceptionMod {
   }
   object InvalidRepositoryTriggerRegionException {
     
-    @scala.inline
-    def apply(): InvalidRepositoryTriggerRegionException = {
+    inline def apply(): InvalidRepositoryTriggerRegionException = {
       val __obj = js.Dynamic.literal(name = "InvalidRepositoryTriggerRegionException")
       __obj.asInstanceOf[InvalidRepositoryTriggerRegionException]
     }
     
-    @scala.inline
-    implicit class InvalidRepositoryTriggerRegionExceptionMutableBuilder[Self <: InvalidRepositoryTriggerRegionException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidRepositoryTriggerRegionException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryTriggerRegionException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -127,23 +127,18 @@ object mod {
     }
     object ErrorObject {
       
-      @scala.inline
-      def apply(response: String, status: Double, statusText: String): ErrorObject = {
+      inline def apply(response: String, status: Double, statusText: String): ErrorObject = {
         val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorObject]
       }
       
-      @scala.inline
-      implicit class ErrorObjectMutableBuilder[Self <: ErrorObject] (val x: Self) extends AnyVal {
+      extension [Self <: ErrorObject](x: Self) {
         
-        @scala.inline
-        def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+        inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       }
     }
     

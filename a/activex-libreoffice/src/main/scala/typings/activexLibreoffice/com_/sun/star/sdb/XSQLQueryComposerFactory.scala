@@ -19,8 +19,7 @@ trait XSQLQueryComposerFactory
 }
 object XSQLQueryComposerFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createQueryComposer: () => XSQLQueryComposer,
     queryInterface: `type` => js.Any,
@@ -30,10 +29,8 @@ object XSQLQueryComposerFactory {
     __obj.asInstanceOf[XSQLQueryComposerFactory]
   }
   
-  @scala.inline
-  implicit class XSQLQueryComposerFactoryMutableBuilder[Self <: XSQLQueryComposerFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XSQLQueryComposerFactory](x: Self) {
     
-    @scala.inline
-    def setCreateQueryComposer(value: () => XSQLQueryComposer): Self = StObject.set(x, "createQueryComposer", js.Any.fromFunction0(value))
+    inline def setCreateQueryComposer(value: () => XSQLQueryComposer): Self = StObject.set(x, "createQueryComposer", js.Any.fromFunction0(value))
   }
 }

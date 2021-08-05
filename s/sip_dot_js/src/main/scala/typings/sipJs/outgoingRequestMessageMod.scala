@@ -94,7 +94,7 @@ object outgoingRequestMessageMod {
     
     val method: String = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     val ruri: URI = js.native
     
@@ -142,14 +142,12 @@ object outgoingRequestMessageMod {
     @JSImport("sip.js/lib/core/messages/outgoing-request-message", "OutgoingRequestMessage.getDefaultOptions")
     @js.native
     def getDefaultOptions: js.Any = js.native
-    @scala.inline
-    def getDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultOptions")(x.asInstanceOf[js.Any])
+    inline def getDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultOptions")(x.asInstanceOf[js.Any])
     
     @JSImport("sip.js/lib/core/messages/outgoing-request-message", "OutgoingRequestMessage.makeNameAddrHeader")
     @js.native
     def makeNameAddrHeader: js.Any = js.native
-    @scala.inline
-    def makeNameAddrHeader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeNameAddrHeader")(x.asInstanceOf[js.Any])
+    inline def makeNameAddrHeader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeNameAddrHeader")(x.asInstanceOf[js.Any])
   }
   
   trait OutgoingRequestMessageOptions extends StObject {
@@ -182,98 +180,68 @@ object outgoingRequestMessageMod {
   }
   object OutgoingRequestMessageOptions {
     
-    @scala.inline
-    def apply(): OutgoingRequestMessageOptions = {
+    inline def apply(): OutgoingRequestMessageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OutgoingRequestMessageOptions]
     }
     
-    @scala.inline
-    implicit class OutgoingRequestMessageOptionsMutableBuilder[Self <: OutgoingRequestMessageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OutgoingRequestMessageOptions](x: Self) {
       
-      @scala.inline
-      def setCallId(value: String): Self = StObject.set(x, "callId", value.asInstanceOf[js.Any])
+      inline def setCallId(value: String): Self = StObject.set(x, "callId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallIdPrefix(value: String): Self = StObject.set(x, "callIdPrefix", value.asInstanceOf[js.Any])
+      inline def setCallIdPrefix(value: String): Self = StObject.set(x, "callIdPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallIdPrefixUndefined: Self = StObject.set(x, "callIdPrefix", js.undefined)
+      inline def setCallIdPrefixUndefined: Self = StObject.set(x, "callIdPrefix", js.undefined)
       
-      @scala.inline
-      def setCallIdUndefined: Self = StObject.set(x, "callId", js.undefined)
+      inline def setCallIdUndefined: Self = StObject.set(x, "callId", js.undefined)
       
-      @scala.inline
-      def setCseq(value: Double): Self = StObject.set(x, "cseq", value.asInstanceOf[js.Any])
+      inline def setCseq(value: Double): Self = StObject.set(x, "cseq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCseqUndefined: Self = StObject.set(x, "cseq", js.undefined)
+      inline def setCseqUndefined: Self = StObject.set(x, "cseq", js.undefined)
       
-      @scala.inline
-      def setForceRport(value: Boolean): Self = StObject.set(x, "forceRport", value.asInstanceOf[js.Any])
+      inline def setForceRport(value: Boolean): Self = StObject.set(x, "forceRport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceRportUndefined: Self = StObject.set(x, "forceRport", js.undefined)
+      inline def setForceRportUndefined: Self = StObject.set(x, "forceRport", js.undefined)
       
-      @scala.inline
-      def setFromDisplayName(value: String): Self = StObject.set(x, "fromDisplayName", value.asInstanceOf[js.Any])
+      inline def setFromDisplayName(value: String): Self = StObject.set(x, "fromDisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromDisplayNameUndefined: Self = StObject.set(x, "fromDisplayName", js.undefined)
+      inline def setFromDisplayNameUndefined: Self = StObject.set(x, "fromDisplayName", js.undefined)
       
-      @scala.inline
-      def setFromTag(value: String): Self = StObject.set(x, "fromTag", value.asInstanceOf[js.Any])
+      inline def setFromTag(value: String): Self = StObject.set(x, "fromTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromTagUndefined: Self = StObject.set(x, "fromTag", js.undefined)
+      inline def setFromTagUndefined: Self = StObject.set(x, "fromTag", js.undefined)
       
-      @scala.inline
-      def setHackViaTcp(value: Boolean): Self = StObject.set(x, "hackViaTcp", value.asInstanceOf[js.Any])
+      inline def setHackViaTcp(value: Boolean): Self = StObject.set(x, "hackViaTcp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHackViaTcpUndefined: Self = StObject.set(x, "hackViaTcp", js.undefined)
+      inline def setHackViaTcpUndefined: Self = StObject.set(x, "hackViaTcp", js.undefined)
       
-      @scala.inline
-      def setOptionTags(value: js.Array[String]): Self = StObject.set(x, "optionTags", value.asInstanceOf[js.Any])
+      inline def setOptionTags(value: js.Array[String]): Self = StObject.set(x, "optionTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionTagsUndefined: Self = StObject.set(x, "optionTags", js.undefined)
+      inline def setOptionTagsUndefined: Self = StObject.set(x, "optionTags", js.undefined)
       
-      @scala.inline
-      def setOptionTagsVarargs(value: String*): Self = StObject.set(x, "optionTags", js.Array(value :_*))
+      inline def setOptionTagsVarargs(value: String*): Self = StObject.set(x, "optionTags", js.Array(value :_*))
       
-      @scala.inline
-      def setRouteSet(value: js.Array[String]): Self = StObject.set(x, "routeSet", value.asInstanceOf[js.Any])
+      inline def setRouteSet(value: js.Array[String]): Self = StObject.set(x, "routeSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteSetUndefined: Self = StObject.set(x, "routeSet", js.undefined)
+      inline def setRouteSetUndefined: Self = StObject.set(x, "routeSet", js.undefined)
       
-      @scala.inline
-      def setRouteSetVarargs(value: String*): Self = StObject.set(x, "routeSet", js.Array(value :_*))
+      inline def setRouteSetVarargs(value: String*): Self = StObject.set(x, "routeSet", js.Array(value :_*))
       
-      @scala.inline
-      def setToDisplayName(value: String): Self = StObject.set(x, "toDisplayName", value.asInstanceOf[js.Any])
+      inline def setToDisplayName(value: String): Self = StObject.set(x, "toDisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToDisplayNameUndefined: Self = StObject.set(x, "toDisplayName", js.undefined)
+      inline def setToDisplayNameUndefined: Self = StObject.set(x, "toDisplayName", js.undefined)
       
-      @scala.inline
-      def setToTag(value: String): Self = StObject.set(x, "toTag", value.asInstanceOf[js.Any])
+      inline def setToTag(value: String): Self = StObject.set(x, "toTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToTagUndefined: Self = StObject.set(x, "toTag", js.undefined)
+      inline def setToTagUndefined: Self = StObject.set(x, "toTag", js.undefined)
       
-      @scala.inline
-      def setUserAgentString(value: String): Self = StObject.set(x, "userAgentString", value.asInstanceOf[js.Any])
+      inline def setUserAgentString(value: String): Self = StObject.set(x, "userAgentString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentStringUndefined: Self = StObject.set(x, "userAgentString", js.undefined)
+      inline def setUserAgentStringUndefined: Self = StObject.set(x, "userAgentString", js.undefined)
       
-      @scala.inline
-      def setViaHost(value: String): Self = StObject.set(x, "viaHost", value.asInstanceOf[js.Any])
+      inline def setViaHost(value: String): Self = StObject.set(x, "viaHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViaHostUndefined: Self = StObject.set(x, "viaHost", js.undefined)
+      inline def setViaHostUndefined: Self = StObject.set(x, "viaHost", js.undefined)
     }
   }
 }

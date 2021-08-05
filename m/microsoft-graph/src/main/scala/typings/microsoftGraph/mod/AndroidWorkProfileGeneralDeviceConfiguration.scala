@@ -121,265 +121,179 @@ trait AndroidWorkProfileGeneralDeviceConfiguration
 }
 object AndroidWorkProfileGeneralDeviceConfiguration {
   
-  @scala.inline
-  def apply(): AndroidWorkProfileGeneralDeviceConfiguration = {
+  inline def apply(): AndroidWorkProfileGeneralDeviceConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AndroidWorkProfileGeneralDeviceConfiguration]
   }
   
-  @scala.inline
-  implicit class AndroidWorkProfileGeneralDeviceConfigurationMutableBuilder[Self <: AndroidWorkProfileGeneralDeviceConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidWorkProfileGeneralDeviceConfiguration](x: Self) {
     
-    @scala.inline
-    def setPasswordBlockFingerprintUnlock(value: Boolean): Self = StObject.set(x, "passwordBlockFingerprintUnlock", value.asInstanceOf[js.Any])
+    inline def setPasswordBlockFingerprintUnlock(value: Boolean): Self = StObject.set(x, "passwordBlockFingerprintUnlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordBlockFingerprintUnlockUndefined: Self = StObject.set(x, "passwordBlockFingerprintUnlock", js.undefined)
+    inline def setPasswordBlockFingerprintUnlockUndefined: Self = StObject.set(x, "passwordBlockFingerprintUnlock", js.undefined)
     
-    @scala.inline
-    def setPasswordBlockTrustAgents(value: Boolean): Self = StObject.set(x, "passwordBlockTrustAgents", value.asInstanceOf[js.Any])
+    inline def setPasswordBlockTrustAgents(value: Boolean): Self = StObject.set(x, "passwordBlockTrustAgents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordBlockTrustAgentsUndefined: Self = StObject.set(x, "passwordBlockTrustAgents", js.undefined)
+    inline def setPasswordBlockTrustAgentsUndefined: Self = StObject.set(x, "passwordBlockTrustAgents", js.undefined)
     
-    @scala.inline
-    def setPasswordExpirationDays(value: NullableOption[Double]): Self = StObject.set(x, "passwordExpirationDays", value.asInstanceOf[js.Any])
+    inline def setPasswordExpirationDays(value: NullableOption[Double]): Self = StObject.set(x, "passwordExpirationDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordExpirationDaysNull: Self = StObject.set(x, "passwordExpirationDays", null)
+    inline def setPasswordExpirationDaysNull: Self = StObject.set(x, "passwordExpirationDays", null)
     
-    @scala.inline
-    def setPasswordExpirationDaysUndefined: Self = StObject.set(x, "passwordExpirationDays", js.undefined)
+    inline def setPasswordExpirationDaysUndefined: Self = StObject.set(x, "passwordExpirationDays", js.undefined)
     
-    @scala.inline
-    def setPasswordMinimumLength(value: NullableOption[Double]): Self = StObject.set(x, "passwordMinimumLength", value.asInstanceOf[js.Any])
+    inline def setPasswordMinimumLength(value: NullableOption[Double]): Self = StObject.set(x, "passwordMinimumLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordMinimumLengthNull: Self = StObject.set(x, "passwordMinimumLength", null)
+    inline def setPasswordMinimumLengthNull: Self = StObject.set(x, "passwordMinimumLength", null)
     
-    @scala.inline
-    def setPasswordMinimumLengthUndefined: Self = StObject.set(x, "passwordMinimumLength", js.undefined)
+    inline def setPasswordMinimumLengthUndefined: Self = StObject.set(x, "passwordMinimumLength", js.undefined)
     
-    @scala.inline
-    def setPasswordMinutesOfInactivityBeforeScreenTimeout(value: NullableOption[Double]): Self = StObject.set(x, "passwordMinutesOfInactivityBeforeScreenTimeout", value.asInstanceOf[js.Any])
+    inline def setPasswordMinutesOfInactivityBeforeScreenTimeout(value: NullableOption[Double]): Self = StObject.set(x, "passwordMinutesOfInactivityBeforeScreenTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordMinutesOfInactivityBeforeScreenTimeoutNull: Self = StObject.set(x, "passwordMinutesOfInactivityBeforeScreenTimeout", null)
+    inline def setPasswordMinutesOfInactivityBeforeScreenTimeoutNull: Self = StObject.set(x, "passwordMinutesOfInactivityBeforeScreenTimeout", null)
     
-    @scala.inline
-    def setPasswordMinutesOfInactivityBeforeScreenTimeoutUndefined: Self = StObject.set(x, "passwordMinutesOfInactivityBeforeScreenTimeout", js.undefined)
+    inline def setPasswordMinutesOfInactivityBeforeScreenTimeoutUndefined: Self = StObject.set(x, "passwordMinutesOfInactivityBeforeScreenTimeout", js.undefined)
     
-    @scala.inline
-    def setPasswordPreviousPasswordBlockCount(value: NullableOption[Double]): Self = StObject.set(x, "passwordPreviousPasswordBlockCount", value.asInstanceOf[js.Any])
+    inline def setPasswordPreviousPasswordBlockCount(value: NullableOption[Double]): Self = StObject.set(x, "passwordPreviousPasswordBlockCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordPreviousPasswordBlockCountNull: Self = StObject.set(x, "passwordPreviousPasswordBlockCount", null)
+    inline def setPasswordPreviousPasswordBlockCountNull: Self = StObject.set(x, "passwordPreviousPasswordBlockCount", null)
     
-    @scala.inline
-    def setPasswordPreviousPasswordBlockCountUndefined: Self = StObject.set(x, "passwordPreviousPasswordBlockCount", js.undefined)
+    inline def setPasswordPreviousPasswordBlockCountUndefined: Self = StObject.set(x, "passwordPreviousPasswordBlockCount", js.undefined)
     
-    @scala.inline
-    def setPasswordRequiredType(value: AndroidWorkProfileRequiredPasswordType): Self = StObject.set(x, "passwordRequiredType", value.asInstanceOf[js.Any])
+    inline def setPasswordRequiredType(value: AndroidWorkProfileRequiredPasswordType): Self = StObject.set(x, "passwordRequiredType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordRequiredTypeUndefined: Self = StObject.set(x, "passwordRequiredType", js.undefined)
+    inline def setPasswordRequiredTypeUndefined: Self = StObject.set(x, "passwordRequiredType", js.undefined)
     
-    @scala.inline
-    def setPasswordSignInFailureCountBeforeFactoryReset(value: NullableOption[Double]): Self = StObject.set(x, "passwordSignInFailureCountBeforeFactoryReset", value.asInstanceOf[js.Any])
+    inline def setPasswordSignInFailureCountBeforeFactoryReset(value: NullableOption[Double]): Self = StObject.set(x, "passwordSignInFailureCountBeforeFactoryReset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordSignInFailureCountBeforeFactoryResetNull: Self = StObject.set(x, "passwordSignInFailureCountBeforeFactoryReset", null)
+    inline def setPasswordSignInFailureCountBeforeFactoryResetNull: Self = StObject.set(x, "passwordSignInFailureCountBeforeFactoryReset", null)
     
-    @scala.inline
-    def setPasswordSignInFailureCountBeforeFactoryResetUndefined: Self = StObject.set(x, "passwordSignInFailureCountBeforeFactoryReset", js.undefined)
+    inline def setPasswordSignInFailureCountBeforeFactoryResetUndefined: Self = StObject.set(x, "passwordSignInFailureCountBeforeFactoryReset", js.undefined)
     
-    @scala.inline
-    def setSecurityRequireVerifyApps(value: Boolean): Self = StObject.set(x, "securityRequireVerifyApps", value.asInstanceOf[js.Any])
+    inline def setSecurityRequireVerifyApps(value: Boolean): Self = StObject.set(x, "securityRequireVerifyApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityRequireVerifyAppsUndefined: Self = StObject.set(x, "securityRequireVerifyApps", js.undefined)
+    inline def setSecurityRequireVerifyAppsUndefined: Self = StObject.set(x, "securityRequireVerifyApps", js.undefined)
     
-    @scala.inline
-    def setWorkProfileBlockAddingAccounts(value: Boolean): Self = StObject.set(x, "workProfileBlockAddingAccounts", value.asInstanceOf[js.Any])
+    inline def setWorkProfileBlockAddingAccounts(value: Boolean): Self = StObject.set(x, "workProfileBlockAddingAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfileBlockAddingAccountsUndefined: Self = StObject.set(x, "workProfileBlockAddingAccounts", js.undefined)
+    inline def setWorkProfileBlockAddingAccountsUndefined: Self = StObject.set(x, "workProfileBlockAddingAccounts", js.undefined)
     
-    @scala.inline
-    def setWorkProfileBlockCamera(value: Boolean): Self = StObject.set(x, "workProfileBlockCamera", value.asInstanceOf[js.Any])
+    inline def setWorkProfileBlockCamera(value: Boolean): Self = StObject.set(x, "workProfileBlockCamera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfileBlockCameraUndefined: Self = StObject.set(x, "workProfileBlockCamera", js.undefined)
+    inline def setWorkProfileBlockCameraUndefined: Self = StObject.set(x, "workProfileBlockCamera", js.undefined)
     
-    @scala.inline
-    def setWorkProfileBlockCrossProfileCallerId(value: Boolean): Self = StObject.set(x, "workProfileBlockCrossProfileCallerId", value.asInstanceOf[js.Any])
+    inline def setWorkProfileBlockCrossProfileCallerId(value: Boolean): Self = StObject.set(x, "workProfileBlockCrossProfileCallerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfileBlockCrossProfileCallerIdUndefined: Self = StObject.set(x, "workProfileBlockCrossProfileCallerId", js.undefined)
+    inline def setWorkProfileBlockCrossProfileCallerIdUndefined: Self = StObject.set(x, "workProfileBlockCrossProfileCallerId", js.undefined)
     
-    @scala.inline
-    def setWorkProfileBlockCrossProfileContactsSearch(value: Boolean): Self = StObject.set(x, "workProfileBlockCrossProfileContactsSearch", value.asInstanceOf[js.Any])
+    inline def setWorkProfileBlockCrossProfileContactsSearch(value: Boolean): Self = StObject.set(x, "workProfileBlockCrossProfileContactsSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfileBlockCrossProfileContactsSearchUndefined: Self = StObject.set(x, "workProfileBlockCrossProfileContactsSearch", js.undefined)
+    inline def setWorkProfileBlockCrossProfileContactsSearchUndefined: Self = StObject.set(x, "workProfileBlockCrossProfileContactsSearch", js.undefined)
     
-    @scala.inline
-    def setWorkProfileBlockCrossProfileCopyPaste(value: Boolean): Self = StObject.set(x, "workProfileBlockCrossProfileCopyPaste", value.asInstanceOf[js.Any])
+    inline def setWorkProfileBlockCrossProfileCopyPaste(value: Boolean): Self = StObject.set(x, "workProfileBlockCrossProfileCopyPaste", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfileBlockCrossProfileCopyPasteUndefined: Self = StObject.set(x, "workProfileBlockCrossProfileCopyPaste", js.undefined)
+    inline def setWorkProfileBlockCrossProfileCopyPasteUndefined: Self = StObject.set(x, "workProfileBlockCrossProfileCopyPaste", js.undefined)
     
-    @scala.inline
-    def setWorkProfileBlockNotificationsWhileDeviceLocked(value: Boolean): Self = StObject.set(x, "workProfileBlockNotificationsWhileDeviceLocked", value.asInstanceOf[js.Any])
+    inline def setWorkProfileBlockNotificationsWhileDeviceLocked(value: Boolean): Self = StObject.set(x, "workProfileBlockNotificationsWhileDeviceLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfileBlockNotificationsWhileDeviceLockedUndefined: Self = StObject.set(x, "workProfileBlockNotificationsWhileDeviceLocked", js.undefined)
+    inline def setWorkProfileBlockNotificationsWhileDeviceLockedUndefined: Self = StObject.set(x, "workProfileBlockNotificationsWhileDeviceLocked", js.undefined)
     
-    @scala.inline
-    def setWorkProfileBlockScreenCapture(value: Boolean): Self = StObject.set(x, "workProfileBlockScreenCapture", value.asInstanceOf[js.Any])
+    inline def setWorkProfileBlockScreenCapture(value: Boolean): Self = StObject.set(x, "workProfileBlockScreenCapture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfileBlockScreenCaptureUndefined: Self = StObject.set(x, "workProfileBlockScreenCapture", js.undefined)
+    inline def setWorkProfileBlockScreenCaptureUndefined: Self = StObject.set(x, "workProfileBlockScreenCapture", js.undefined)
     
-    @scala.inline
-    def setWorkProfileBluetoothEnableContactSharing(value: Boolean): Self = StObject.set(x, "workProfileBluetoothEnableContactSharing", value.asInstanceOf[js.Any])
+    inline def setWorkProfileBluetoothEnableContactSharing(value: Boolean): Self = StObject.set(x, "workProfileBluetoothEnableContactSharing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfileBluetoothEnableContactSharingUndefined: Self = StObject.set(x, "workProfileBluetoothEnableContactSharing", js.undefined)
+    inline def setWorkProfileBluetoothEnableContactSharingUndefined: Self = StObject.set(x, "workProfileBluetoothEnableContactSharing", js.undefined)
     
-    @scala.inline
-    def setWorkProfileDataSharingType(value: AndroidWorkProfileCrossProfileDataSharingType): Self = StObject.set(x, "workProfileDataSharingType", value.asInstanceOf[js.Any])
+    inline def setWorkProfileDataSharingType(value: AndroidWorkProfileCrossProfileDataSharingType): Self = StObject.set(x, "workProfileDataSharingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfileDataSharingTypeUndefined: Self = StObject.set(x, "workProfileDataSharingType", js.undefined)
+    inline def setWorkProfileDataSharingTypeUndefined: Self = StObject.set(x, "workProfileDataSharingType", js.undefined)
     
-    @scala.inline
-    def setWorkProfileDefaultAppPermissionPolicy(value: AndroidWorkProfileDefaultAppPermissionPolicyType): Self = StObject.set(x, "workProfileDefaultAppPermissionPolicy", value.asInstanceOf[js.Any])
+    inline def setWorkProfileDefaultAppPermissionPolicy(value: AndroidWorkProfileDefaultAppPermissionPolicyType): Self = StObject.set(x, "workProfileDefaultAppPermissionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfileDefaultAppPermissionPolicyUndefined: Self = StObject.set(x, "workProfileDefaultAppPermissionPolicy", js.undefined)
+    inline def setWorkProfileDefaultAppPermissionPolicyUndefined: Self = StObject.set(x, "workProfileDefaultAppPermissionPolicy", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordBlockFingerprintUnlock(value: Boolean): Self = StObject.set(x, "workProfilePasswordBlockFingerprintUnlock", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordBlockFingerprintUnlock(value: Boolean): Self = StObject.set(x, "workProfilePasswordBlockFingerprintUnlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordBlockFingerprintUnlockUndefined: Self = StObject.set(x, "workProfilePasswordBlockFingerprintUnlock", js.undefined)
+    inline def setWorkProfilePasswordBlockFingerprintUnlockUndefined: Self = StObject.set(x, "workProfilePasswordBlockFingerprintUnlock", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordBlockTrustAgents(value: Boolean): Self = StObject.set(x, "workProfilePasswordBlockTrustAgents", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordBlockTrustAgents(value: Boolean): Self = StObject.set(x, "workProfilePasswordBlockTrustAgents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordBlockTrustAgentsUndefined: Self = StObject.set(x, "workProfilePasswordBlockTrustAgents", js.undefined)
+    inline def setWorkProfilePasswordBlockTrustAgentsUndefined: Self = StObject.set(x, "workProfilePasswordBlockTrustAgents", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordExpirationDays(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordExpirationDays", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordExpirationDays(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordExpirationDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordExpirationDaysNull: Self = StObject.set(x, "workProfilePasswordExpirationDays", null)
+    inline def setWorkProfilePasswordExpirationDaysNull: Self = StObject.set(x, "workProfilePasswordExpirationDays", null)
     
-    @scala.inline
-    def setWorkProfilePasswordExpirationDaysUndefined: Self = StObject.set(x, "workProfilePasswordExpirationDays", js.undefined)
+    inline def setWorkProfilePasswordExpirationDaysUndefined: Self = StObject.set(x, "workProfilePasswordExpirationDays", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordMinLetterCharacters(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinLetterCharacters", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordMinLetterCharacters(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinLetterCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordMinLetterCharactersNull: Self = StObject.set(x, "workProfilePasswordMinLetterCharacters", null)
+    inline def setWorkProfilePasswordMinLetterCharactersNull: Self = StObject.set(x, "workProfilePasswordMinLetterCharacters", null)
     
-    @scala.inline
-    def setWorkProfilePasswordMinLetterCharactersUndefined: Self = StObject.set(x, "workProfilePasswordMinLetterCharacters", js.undefined)
+    inline def setWorkProfilePasswordMinLetterCharactersUndefined: Self = StObject.set(x, "workProfilePasswordMinLetterCharacters", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordMinLowerCaseCharacters(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinLowerCaseCharacters", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordMinLowerCaseCharacters(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinLowerCaseCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordMinLowerCaseCharactersNull: Self = StObject.set(x, "workProfilePasswordMinLowerCaseCharacters", null)
+    inline def setWorkProfilePasswordMinLowerCaseCharactersNull: Self = StObject.set(x, "workProfilePasswordMinLowerCaseCharacters", null)
     
-    @scala.inline
-    def setWorkProfilePasswordMinLowerCaseCharactersUndefined: Self = StObject.set(x, "workProfilePasswordMinLowerCaseCharacters", js.undefined)
+    inline def setWorkProfilePasswordMinLowerCaseCharactersUndefined: Self = StObject.set(x, "workProfilePasswordMinLowerCaseCharacters", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordMinNonLetterCharacters(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinNonLetterCharacters", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordMinNonLetterCharacters(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinNonLetterCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordMinNonLetterCharactersNull: Self = StObject.set(x, "workProfilePasswordMinNonLetterCharacters", null)
+    inline def setWorkProfilePasswordMinNonLetterCharactersNull: Self = StObject.set(x, "workProfilePasswordMinNonLetterCharacters", null)
     
-    @scala.inline
-    def setWorkProfilePasswordMinNonLetterCharactersUndefined: Self = StObject.set(x, "workProfilePasswordMinNonLetterCharacters", js.undefined)
+    inline def setWorkProfilePasswordMinNonLetterCharactersUndefined: Self = StObject.set(x, "workProfilePasswordMinNonLetterCharacters", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordMinNumericCharacters(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinNumericCharacters", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordMinNumericCharacters(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinNumericCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordMinNumericCharactersNull: Self = StObject.set(x, "workProfilePasswordMinNumericCharacters", null)
+    inline def setWorkProfilePasswordMinNumericCharactersNull: Self = StObject.set(x, "workProfilePasswordMinNumericCharacters", null)
     
-    @scala.inline
-    def setWorkProfilePasswordMinNumericCharactersUndefined: Self = StObject.set(x, "workProfilePasswordMinNumericCharacters", js.undefined)
+    inline def setWorkProfilePasswordMinNumericCharactersUndefined: Self = StObject.set(x, "workProfilePasswordMinNumericCharacters", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordMinSymbolCharacters(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinSymbolCharacters", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordMinSymbolCharacters(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinSymbolCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordMinSymbolCharactersNull: Self = StObject.set(x, "workProfilePasswordMinSymbolCharacters", null)
+    inline def setWorkProfilePasswordMinSymbolCharactersNull: Self = StObject.set(x, "workProfilePasswordMinSymbolCharacters", null)
     
-    @scala.inline
-    def setWorkProfilePasswordMinSymbolCharactersUndefined: Self = StObject.set(x, "workProfilePasswordMinSymbolCharacters", js.undefined)
+    inline def setWorkProfilePasswordMinSymbolCharactersUndefined: Self = StObject.set(x, "workProfilePasswordMinSymbolCharacters", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordMinUpperCaseCharacters(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinUpperCaseCharacters", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordMinUpperCaseCharacters(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinUpperCaseCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordMinUpperCaseCharactersNull: Self = StObject.set(x, "workProfilePasswordMinUpperCaseCharacters", null)
+    inline def setWorkProfilePasswordMinUpperCaseCharactersNull: Self = StObject.set(x, "workProfilePasswordMinUpperCaseCharacters", null)
     
-    @scala.inline
-    def setWorkProfilePasswordMinUpperCaseCharactersUndefined: Self = StObject.set(x, "workProfilePasswordMinUpperCaseCharacters", js.undefined)
+    inline def setWorkProfilePasswordMinUpperCaseCharactersUndefined: Self = StObject.set(x, "workProfilePasswordMinUpperCaseCharacters", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordMinimumLength(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinimumLength", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordMinimumLength(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinimumLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordMinimumLengthNull: Self = StObject.set(x, "workProfilePasswordMinimumLength", null)
+    inline def setWorkProfilePasswordMinimumLengthNull: Self = StObject.set(x, "workProfilePasswordMinimumLength", null)
     
-    @scala.inline
-    def setWorkProfilePasswordMinimumLengthUndefined: Self = StObject.set(x, "workProfilePasswordMinimumLength", js.undefined)
+    inline def setWorkProfilePasswordMinimumLengthUndefined: Self = StObject.set(x, "workProfilePasswordMinimumLength", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordMinutesOfInactivityBeforeScreenTimeout(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordMinutesOfInactivityBeforeScreenTimeout(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordMinutesOfInactivityBeforeScreenTimeoutNull: Self = StObject.set(x, "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout", null)
+    inline def setWorkProfilePasswordMinutesOfInactivityBeforeScreenTimeoutNull: Self = StObject.set(x, "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout", null)
     
-    @scala.inline
-    def setWorkProfilePasswordMinutesOfInactivityBeforeScreenTimeoutUndefined: Self = StObject.set(x, "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout", js.undefined)
+    inline def setWorkProfilePasswordMinutesOfInactivityBeforeScreenTimeoutUndefined: Self = StObject.set(x, "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordPreviousPasswordBlockCount(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordPreviousPasswordBlockCount", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordPreviousPasswordBlockCount(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordPreviousPasswordBlockCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordPreviousPasswordBlockCountNull: Self = StObject.set(x, "workProfilePasswordPreviousPasswordBlockCount", null)
+    inline def setWorkProfilePasswordPreviousPasswordBlockCountNull: Self = StObject.set(x, "workProfilePasswordPreviousPasswordBlockCount", null)
     
-    @scala.inline
-    def setWorkProfilePasswordPreviousPasswordBlockCountUndefined: Self = StObject.set(x, "workProfilePasswordPreviousPasswordBlockCount", js.undefined)
+    inline def setWorkProfilePasswordPreviousPasswordBlockCountUndefined: Self = StObject.set(x, "workProfilePasswordPreviousPasswordBlockCount", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordRequiredType(value: AndroidWorkProfileRequiredPasswordType): Self = StObject.set(x, "workProfilePasswordRequiredType", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordRequiredType(value: AndroidWorkProfileRequiredPasswordType): Self = StObject.set(x, "workProfilePasswordRequiredType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordRequiredTypeUndefined: Self = StObject.set(x, "workProfilePasswordRequiredType", js.undefined)
+    inline def setWorkProfilePasswordRequiredTypeUndefined: Self = StObject.set(x, "workProfilePasswordRequiredType", js.undefined)
     
-    @scala.inline
-    def setWorkProfilePasswordSignInFailureCountBeforeFactoryReset(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordSignInFailureCountBeforeFactoryReset", value.asInstanceOf[js.Any])
+    inline def setWorkProfilePasswordSignInFailureCountBeforeFactoryReset(value: NullableOption[Double]): Self = StObject.set(x, "workProfilePasswordSignInFailureCountBeforeFactoryReset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfilePasswordSignInFailureCountBeforeFactoryResetNull: Self = StObject.set(x, "workProfilePasswordSignInFailureCountBeforeFactoryReset", null)
+    inline def setWorkProfilePasswordSignInFailureCountBeforeFactoryResetNull: Self = StObject.set(x, "workProfilePasswordSignInFailureCountBeforeFactoryReset", null)
     
-    @scala.inline
-    def setWorkProfilePasswordSignInFailureCountBeforeFactoryResetUndefined: Self = StObject.set(x, "workProfilePasswordSignInFailureCountBeforeFactoryReset", js.undefined)
+    inline def setWorkProfilePasswordSignInFailureCountBeforeFactoryResetUndefined: Self = StObject.set(x, "workProfilePasswordSignInFailureCountBeforeFactoryReset", js.undefined)
     
-    @scala.inline
-    def setWorkProfileRequirePassword(value: Boolean): Self = StObject.set(x, "workProfileRequirePassword", value.asInstanceOf[js.Any])
+    inline def setWorkProfileRequirePassword(value: Boolean): Self = StObject.set(x, "workProfileRequirePassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkProfileRequirePasswordUndefined: Self = StObject.set(x, "workProfileRequirePassword", js.undefined)
+    inline def setWorkProfileRequirePasswordUndefined: Self = StObject.set(x, "workProfileRequirePassword", js.undefined)
   }
 }

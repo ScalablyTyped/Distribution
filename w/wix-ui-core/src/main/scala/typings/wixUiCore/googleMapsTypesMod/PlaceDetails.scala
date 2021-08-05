@@ -38,8 +38,7 @@ trait PlaceDetails extends StObject {
 }
 object PlaceDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address_components: js.Array[AddressComponent],
     adr_address: String,
     formatted_address: String,
@@ -60,58 +59,40 @@ object PlaceDetails {
     __obj.asInstanceOf[PlaceDetails]
   }
   
-  @scala.inline
-  implicit class PlaceDetailsMutableBuilder[Self <: PlaceDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceDetails](x: Self) {
     
-    @scala.inline
-    def setAddress_components(value: js.Array[AddressComponent]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
+    inline def setAddress_components(value: js.Array[AddressComponent]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddress_componentsVarargs(value: AddressComponent*): Self = StObject.set(x, "address_components", js.Array(value :_*))
+    inline def setAddress_componentsVarargs(value: AddressComponent*): Self = StObject.set(x, "address_components", js.Array(value :_*))
     
-    @scala.inline
-    def setAdr_address(value: String): Self = StObject.set(x, "adr_address", value.asInstanceOf[js.Any])
+    inline def setAdr_address(value: String): Self = StObject.set(x, "adr_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatted_address(value: String): Self = StObject.set(x, "formatted_address", value.asInstanceOf[js.Any])
+    inline def setFormatted_address(value: String): Self = StObject.set(x, "formatted_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml_attributions(value: String): Self = StObject.set(x, "html_attributions", value.asInstanceOf[js.Any])
+    inline def setHtml_attributions(value: String): Self = StObject.set(x, "html_attributions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotos(value: String): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+    inline def setPhotos(value: String): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
+    inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtc_offset(value: String): Self = StObject.set(x, "utc_offset", value.asInstanceOf[js.Any])
+    inline def setUtc_offset(value: String): Self = StObject.set(x, "utc_offset", value.asInstanceOf[js.Any])
   }
 }

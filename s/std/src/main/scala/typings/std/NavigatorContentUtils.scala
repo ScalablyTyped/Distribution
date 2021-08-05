@@ -12,8 +12,7 @@ trait NavigatorContentUtils extends StObject {
 }
 object NavigatorContentUtils {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     registerProtocolHandler: (java.lang.String, java.lang.String, java.lang.String) => Unit,
     unregisterProtocolHandler: (java.lang.String, java.lang.String) => Unit
   ): NavigatorContentUtils = {
@@ -21,13 +20,10 @@ object NavigatorContentUtils {
     __obj.asInstanceOf[NavigatorContentUtils]
   }
   
-  @scala.inline
-  implicit class NavigatorContentUtilsMutableBuilder[Self <: NavigatorContentUtils] (val x: Self) extends AnyVal {
+  extension [Self <: NavigatorContentUtils](x: Self) {
     
-    @scala.inline
-    def setRegisterProtocolHandler(value: (java.lang.String, java.lang.String, java.lang.String) => Unit): Self = StObject.set(x, "registerProtocolHandler", js.Any.fromFunction3(value))
+    inline def setRegisterProtocolHandler(value: (java.lang.String, java.lang.String, java.lang.String) => Unit): Self = StObject.set(x, "registerProtocolHandler", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUnregisterProtocolHandler(value: (java.lang.String, java.lang.String) => Unit): Self = StObject.set(x, "unregisterProtocolHandler", js.Any.fromFunction2(value))
+    inline def setUnregisterProtocolHandler(value: (java.lang.String, java.lang.String) => Unit): Self = StObject.set(x, "unregisterProtocolHandler", js.Any.fromFunction2(value))
   }
 }

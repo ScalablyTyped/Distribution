@@ -23,34 +23,25 @@ trait DescribeInstancesHealthResult extends StObject {
 }
 object DescribeInstancesHealthResult {
   
-  @scala.inline
-  def apply(): DescribeInstancesHealthResult = {
+  inline def apply(): DescribeInstancesHealthResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInstancesHealthResult]
   }
   
-  @scala.inline
-  implicit class DescribeInstancesHealthResultMutableBuilder[Self <: DescribeInstancesHealthResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInstancesHealthResult](x: Self) {
     
-    @scala.inline
-    def setInstanceHealthList(value: InstanceHealthList): Self = StObject.set(x, "InstanceHealthList", value.asInstanceOf[js.Any])
+    inline def setInstanceHealthList(value: InstanceHealthList): Self = StObject.set(x, "InstanceHealthList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceHealthListUndefined: Self = StObject.set(x, "InstanceHealthList", js.undefined)
+    inline def setInstanceHealthListUndefined: Self = StObject.set(x, "InstanceHealthList", js.undefined)
     
-    @scala.inline
-    def setInstanceHealthListVarargs(value: SingleInstanceHealth*): Self = StObject.set(x, "InstanceHealthList", js.Array(value :_*))
+    inline def setInstanceHealthListVarargs(value: SingleInstanceHealth*): Self = StObject.set(x, "InstanceHealthList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRefreshedAt(value: RefreshedAt): Self = StObject.set(x, "RefreshedAt", value.asInstanceOf[js.Any])
+    inline def setRefreshedAt(value: RefreshedAt): Self = StObject.set(x, "RefreshedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshedAtUndefined: Self = StObject.set(x, "RefreshedAt", js.undefined)
+    inline def setRefreshedAtUndefined: Self = StObject.set(x, "RefreshedAt", js.undefined)
   }
 }

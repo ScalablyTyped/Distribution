@@ -28,34 +28,25 @@ trait ListProvisioningArtifactsForServiceActionInput extends StObject {
 }
 object ListProvisioningArtifactsForServiceActionInput {
   
-  @scala.inline
-  def apply(ServiceActionId: Id): ListProvisioningArtifactsForServiceActionInput = {
+  inline def apply(ServiceActionId: Id): ListProvisioningArtifactsForServiceActionInput = {
     val __obj = js.Dynamic.literal(ServiceActionId = ServiceActionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProvisioningArtifactsForServiceActionInput]
   }
   
-  @scala.inline
-  implicit class ListProvisioningArtifactsForServiceActionInputMutableBuilder[Self <: ListProvisioningArtifactsForServiceActionInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListProvisioningArtifactsForServiceActionInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
     
-    @scala.inline
-    def setServiceActionId(value: Id): Self = StObject.set(x, "ServiceActionId", value.asInstanceOf[js.Any])
+    inline def setServiceActionId(value: Id): Self = StObject.set(x, "ServiceActionId", value.asInstanceOf[js.Any])
   }
 }

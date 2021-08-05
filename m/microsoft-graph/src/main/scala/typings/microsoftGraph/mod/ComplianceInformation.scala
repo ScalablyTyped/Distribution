@@ -14,34 +14,25 @@ trait ComplianceInformation extends StObject {
 }
 object ComplianceInformation {
   
-  @scala.inline
-  def apply(): ComplianceInformation = {
+  inline def apply(): ComplianceInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComplianceInformation]
   }
   
-  @scala.inline
-  implicit class ComplianceInformationMutableBuilder[Self <: ComplianceInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ComplianceInformation](x: Self) {
     
-    @scala.inline
-    def setCertificationControls(value: NullableOption[js.Array[CertificationControl]]): Self = StObject.set(x, "certificationControls", value.asInstanceOf[js.Any])
+    inline def setCertificationControls(value: NullableOption[js.Array[CertificationControl]]): Self = StObject.set(x, "certificationControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificationControlsNull: Self = StObject.set(x, "certificationControls", null)
+    inline def setCertificationControlsNull: Self = StObject.set(x, "certificationControls", null)
     
-    @scala.inline
-    def setCertificationControlsUndefined: Self = StObject.set(x, "certificationControls", js.undefined)
+    inline def setCertificationControlsUndefined: Self = StObject.set(x, "certificationControls", js.undefined)
     
-    @scala.inline
-    def setCertificationControlsVarargs(value: CertificationControl*): Self = StObject.set(x, "certificationControls", js.Array(value :_*))
+    inline def setCertificationControlsVarargs(value: CertificationControl*): Self = StObject.set(x, "certificationControls", js.Array(value :_*))
     
-    @scala.inline
-    def setCertificationName(value: NullableOption[String]): Self = StObject.set(x, "certificationName", value.asInstanceOf[js.Any])
+    inline def setCertificationName(value: NullableOption[String]): Self = StObject.set(x, "certificationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificationNameNull: Self = StObject.set(x, "certificationName", null)
+    inline def setCertificationNameNull: Self = StObject.set(x, "certificationName", null)
     
-    @scala.inline
-    def setCertificationNameUndefined: Self = StObject.set(x, "certificationName", js.undefined)
+    inline def setCertificationNameUndefined: Self = StObject.set(x, "certificationName", js.undefined)
   }
 }

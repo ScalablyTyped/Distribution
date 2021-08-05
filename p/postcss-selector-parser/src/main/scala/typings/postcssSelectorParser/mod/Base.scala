@@ -74,8 +74,7 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
 }
 object Base {
   
-  @scala.inline
-  def apply[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */](
+  inline def apply[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */](
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone_ : StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
@@ -99,63 +98,44 @@ object Base {
     __obj.asInstanceOf[Base[Value, ParentType]]
   }
   
-  @scala.inline
-  implicit class BaseMutableBuilder[Self <: Base[?, ?], Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */] (val x: Self & (Base[Value, ParentType])) extends AnyVal {
+  extension [Self <: Base[?, ?], Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */](x: Self & (Base[Value, ParentType])) {
     
-    @scala.inline
-    def setAppendToPropertyAndEscape(value: (String, js.Any, String) => Unit): Self = StObject.set(x, "appendToPropertyAndEscape", js.Any.fromFunction3(value))
+    inline def setAppendToPropertyAndEscape(value: (String, js.Any, String) => Unit): Self = StObject.set(x, "appendToPropertyAndEscape", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setClone_(value: StringDictionary[js.Any] => Node): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
+    inline def setClone_(value: StringDictionary[js.Any] => Node): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsAtPosition(value: (Double, Double) => js.UndefOr[Boolean]): Self = StObject.set(x, "isAtPosition", js.Any.fromFunction2(value))
+    inline def setIsAtPosition(value: (Double, Double) => js.UndefOr[Boolean]): Self = StObject.set(x, "isAtPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNext(value: () => Node): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => Node): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: ParentType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: ParentType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrev(value: () => Node): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
+    inline def setPrev(value: () => Node): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRawSpaceAfter(value: String): Self = StObject.set(x, "rawSpaceAfter", value.asInstanceOf[js.Any])
+    inline def setRawSpaceAfter(value: String): Self = StObject.set(x, "rawSpaceAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawSpaceBefore(value: String): Self = StObject.set(x, "rawSpaceBefore", value.asInstanceOf[js.Any])
+    inline def setRawSpaceBefore(value: String): Self = StObject.set(x, "rawSpaceBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: () => Node): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Node): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplaceWith(value: /* repeated */ Node => Node): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
+    inline def setReplaceWith(value: /* repeated */ Node => Node): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPropertyAndEscape(value: (String, js.Any, String) => Unit): Self = StObject.set(x, "setPropertyAndEscape", js.Any.fromFunction3(value))
+    inline def setSetPropertyAndEscape(value: (String, js.Any, String) => Unit): Self = StObject.set(x, "setPropertyAndEscape", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetPropertyWithoutEscape(value: (String, js.Any) => Unit): Self = StObject.set(x, "setPropertyWithoutEscape", js.Any.fromFunction2(value))
+    inline def setSetPropertyWithoutEscape(value: (String, js.Any) => Unit): Self = StObject.set(x, "setPropertyWithoutEscape", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSource(value: NodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: NodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
+    inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setSpaces(value: Spaces): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+    inline def setSpaces(value: Spaces): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: typings.postcssSelectorParser.postcssSelectorParserStrings.tag | typings.postcssSelectorParser.postcssSelectorParserStrings.string | typings.postcssSelectorParser.postcssSelectorParserStrings.selector | typings.postcssSelectorParser.postcssSelectorParserStrings.root | typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo | typings.postcssSelectorParser.postcssSelectorParserStrings.nesting | typings.postcssSelectorParser.postcssSelectorParserStrings.id | typings.postcssSelectorParser.postcssSelectorParserStrings.comment | typings.postcssSelectorParser.postcssSelectorParserStrings.combinator | `class` | typings.postcssSelectorParser.postcssSelectorParserStrings.attribute | typings.postcssSelectorParser.postcssSelectorParserStrings.universal
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

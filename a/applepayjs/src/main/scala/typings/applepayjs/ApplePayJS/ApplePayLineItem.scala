@@ -26,25 +26,19 @@ trait ApplePayLineItem extends StObject {
 }
 object ApplePayLineItem {
   
-  @scala.inline
-  def apply(amount: String, label: String): ApplePayLineItem = {
+  inline def apply(amount: String, label: String): ApplePayLineItem = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayLineItem]
   }
   
-  @scala.inline
-  implicit class ApplePayLineItemMutableBuilder[Self <: ApplePayLineItem] (val x: Self) extends AnyVal {
+  extension [Self <: ApplePayLineItem](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ApplePayLineItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ApplePayLineItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

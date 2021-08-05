@@ -13,16 +13,13 @@ trait PickImplprefer extends StObject {
 }
 object PickImplprefer {
   
-  @scala.inline
-  def apply(prefer: adjacent | opposite): PickImplprefer = {
+  inline def apply(prefer: adjacent | opposite): PickImplprefer = {
     val __obj = js.Dynamic.literal(prefer = prefer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplprefer]
   }
   
-  @scala.inline
-  implicit class PickImplpreferMutableBuilder[Self <: PickImplprefer] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplprefer](x: Self) {
     
-    @scala.inline
-    def setPrefer(value: adjacent | opposite): Self = StObject.set(x, "prefer", value.asInstanceOf[js.Any])
+    inline def setPrefer(value: adjacent | opposite): Self = StObject.set(x, "prefer", value.asInstanceOf[js.Any])
   }
 }

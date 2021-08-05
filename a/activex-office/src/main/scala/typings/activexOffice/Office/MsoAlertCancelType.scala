@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoAlertCancelType extends StObject
 object MsoAlertCancelType {
   
-  @scala.inline
-  def msoAlertCancelDefault: `-1` = -1.asInstanceOf[`-1`]
+  inline def msoAlertCancelDefault: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def msoAlertCancelFifth: `4` = 4.asInstanceOf[`4`]
+  inline def msoAlertCancelFifth: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoAlertCancelFirst: `0` = 0.asInstanceOf[`0`]
+  inline def msoAlertCancelFirst: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoAlertCancelFourth: `3` = 3.asInstanceOf[`3`]
+  inline def msoAlertCancelFourth: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoAlertCancelSecond: `1` = 1.asInstanceOf[`1`]
+  inline def msoAlertCancelSecond: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoAlertCancelThird: `2` = 2.asInstanceOf[`2`]
+  inline def msoAlertCancelThird: `2` = 2.asInstanceOf[`2`]
 }

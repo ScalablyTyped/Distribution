@@ -18,6 +18,5 @@ object TakeUntilObserver {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(prevObserver: IObserver): typings.wonderFrp.takeUntilObserverMod.TakeUntilObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(prevObserver.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.takeUntilObserverMod.TakeUntilObserver]
+  inline def create(prevObserver: IObserver): typings.wonderFrp.takeUntilObserverMod.TakeUntilObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(prevObserver.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.takeUntilObserverMod.TakeUntilObserver]
 }

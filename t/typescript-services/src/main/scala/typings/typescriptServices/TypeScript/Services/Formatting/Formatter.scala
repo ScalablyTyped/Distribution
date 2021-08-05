@@ -106,23 +106,23 @@ trait Formatter
   
   /* private */ def formatPair(t1: js.Any, t1Parent: js.Any, t2: js.Any, t2Parent: js.Any): js.Any
   
-  var formattingContext: js.Any
+  /* private */ var formattingContext: js.Any
   
-  var formattingRequestKind: js.Any
+  /* private */ var formattingRequestKind: js.Any
   
   /* private */ def getLineNumber(span: js.Any): js.Any
   
-  var previousTokenParent: js.Any
+  /* private */ var previousTokenParent: js.Any
   
-  var previousTokenSpan: js.Any
+  /* private */ var previousTokenSpan: js.Any
   
   /* private */ def processToken(token: js.Any): js.Any
   
   /* private */ def processTrivia(triviaList: js.Any, fullStart: js.Any): js.Any
   
-  var rulesProvider: js.Any
+  /* private */ var rulesProvider: js.Any
   
-  var scriptHasErrors: js.Any
+  /* private */ var scriptHasErrors: js.Any
   
   /* private */ def trimWhitespace(line: js.Any, token: js.Any): js.Any
   
@@ -130,8 +130,7 @@ trait Formatter
 }
 object Formatter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RecordRuleEdits: (js.Any, js.Any, js.Any) => js.Any,
     _edits: js.Any,
     _indentationNodeContextPool: js.Any,
@@ -273,49 +272,34 @@ object Formatter {
     __obj.asInstanceOf[Formatter]
   }
   
-  @scala.inline
-  implicit class FormatterMutableBuilder[Self <: Formatter] (val x: Self) extends AnyVal {
+  extension [Self <: Formatter](x: Self) {
     
-    @scala.inline
-    def setFindCommonParents(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "findCommonParents", js.Any.fromFunction2(value))
+    inline def setFindCommonParents(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "findCommonParents", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFormatPair(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "formatPair", js.Any.fromFunction4(value))
+    inline def setFormatPair(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "formatPair", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFormattingContext(value: js.Any): Self = StObject.set(x, "formattingContext", value.asInstanceOf[js.Any])
+    inline def setFormattingContext(value: js.Any): Self = StObject.set(x, "formattingContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattingRequestKind(value: js.Any): Self = StObject.set(x, "formattingRequestKind", value.asInstanceOf[js.Any])
+    inline def setFormattingRequestKind(value: js.Any): Self = StObject.set(x, "formattingRequestKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetLineNumber(value: js.Any => js.Any): Self = StObject.set(x, "getLineNumber", js.Any.fromFunction1(value))
+    inline def setGetLineNumber(value: js.Any => js.Any): Self = StObject.set(x, "getLineNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreviousTokenParent(value: js.Any): Self = StObject.set(x, "previousTokenParent", value.asInstanceOf[js.Any])
+    inline def setPreviousTokenParent(value: js.Any): Self = StObject.set(x, "previousTokenParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousTokenSpan(value: js.Any): Self = StObject.set(x, "previousTokenSpan", value.asInstanceOf[js.Any])
+    inline def setPreviousTokenSpan(value: js.Any): Self = StObject.set(x, "previousTokenSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessToken(value: js.Any => js.Any): Self = StObject.set(x, "processToken", js.Any.fromFunction1(value))
+    inline def setProcessToken(value: js.Any => js.Any): Self = StObject.set(x, "processToken", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProcessTrivia(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "processTrivia", js.Any.fromFunction2(value))
+    inline def setProcessTrivia(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "processTrivia", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRecordRuleEdits(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "RecordRuleEdits", js.Any.fromFunction3(value))
+    inline def setRecordRuleEdits(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "RecordRuleEdits", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRulesProvider(value: js.Any): Self = StObject.set(x, "rulesProvider", value.asInstanceOf[js.Any])
+    inline def setRulesProvider(value: js.Any): Self = StObject.set(x, "rulesProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptHasErrors(value: js.Any): Self = StObject.set(x, "scriptHasErrors", value.asInstanceOf[js.Any])
+    inline def setScriptHasErrors(value: js.Any): Self = StObject.set(x, "scriptHasErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrimWhitespace(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "trimWhitespace", js.Any.fromFunction2(value))
+    inline def setTrimWhitespace(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "trimWhitespace", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTrimWhitespaceInLineRange(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "trimWhitespaceInLineRange", js.Any.fromFunction3(value))
+    inline def setTrimWhitespaceInLineRange(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "trimWhitespaceInLineRange", js.Any.fromFunction3(value))
   }
 }

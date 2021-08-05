@@ -13,19 +13,15 @@ trait NotificationCenter extends StObject {
 }
 object NotificationCenter {
   
-  @scala.inline
-  def apply(add: NotificationRequest => js.Promise[NotificationResponse], cancel: String => Unit): NotificationCenter = {
+  inline def apply(add: NotificationRequest => js.Promise[NotificationResponse], cancel: String => Unit): NotificationCenter = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), cancel = js.Any.fromFunction1(cancel))
     __obj.asInstanceOf[NotificationCenter]
   }
   
-  @scala.inline
-  implicit class NotificationCenterMutableBuilder[Self <: NotificationCenter] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationCenter](x: Self) {
     
-    @scala.inline
-    def setAdd(value: NotificationRequest => js.Promise[NotificationResponse]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: NotificationRequest => js.Promise[NotificationResponse]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCancel(value: String => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+    inline def setCancel(value: String => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
   }
 }

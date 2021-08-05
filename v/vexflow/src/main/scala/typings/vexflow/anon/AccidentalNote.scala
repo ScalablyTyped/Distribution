@@ -12,19 +12,15 @@ trait AccidentalNote extends StObject {
 }
 object AccidentalNote {
   
-  @scala.inline
-  def apply(accidental: String, note: String): AccidentalNote = {
+  inline def apply(accidental: String, note: String): AccidentalNote = {
     val __obj = js.Dynamic.literal(accidental = accidental.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccidentalNote]
   }
   
-  @scala.inline
-  implicit class AccidentalNoteMutableBuilder[Self <: AccidentalNote] (val x: Self) extends AnyVal {
+  extension [Self <: AccidentalNote](x: Self) {
     
-    @scala.inline
-    def setAccidental(value: String): Self = StObject.set(x, "accidental", value.asInstanceOf[js.Any])
+    inline def setAccidental(value: String): Self = StObject.set(x, "accidental", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
   }
 }

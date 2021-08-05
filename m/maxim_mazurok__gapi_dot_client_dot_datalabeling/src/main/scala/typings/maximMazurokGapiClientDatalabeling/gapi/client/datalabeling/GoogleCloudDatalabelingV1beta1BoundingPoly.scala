@@ -11,22 +11,17 @@ trait GoogleCloudDatalabelingV1beta1BoundingPoly extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1BoundingPoly {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1BoundingPoly = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1BoundingPoly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1BoundingPoly]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1BoundingPolyMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1BoundingPoly] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1BoundingPoly](x: Self) {
     
-    @scala.inline
-    def setVertices(value: js.Array[GoogleCloudDatalabelingV1beta1Vertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: js.Array[GoogleCloudDatalabelingV1beta1Vertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
+    inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    @scala.inline
-    def setVerticesVarargs(value: GoogleCloudDatalabelingV1beta1Vertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: GoogleCloudDatalabelingV1beta1Vertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

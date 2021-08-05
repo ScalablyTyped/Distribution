@@ -12,23 +12,18 @@ trait PrismToken extends StObject {
 }
 object PrismToken {
   
-  @scala.inline
-  def apply(content: (js.Array[PrismToken | String]) | String, `type`: String): PrismToken = {
+  inline def apply(content: (js.Array[PrismToken | String]) | String, `type`: String): PrismToken = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrismToken]
   }
   
-  @scala.inline
-  implicit class PrismTokenMutableBuilder[Self <: PrismToken] (val x: Self) extends AnyVal {
+  extension [Self <: PrismToken](x: Self) {
     
-    @scala.inline
-    def setContent(value: (js.Array[PrismToken | String]) | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: (js.Array[PrismToken | String]) | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentVarargs(value: (PrismToken | String)*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: (PrismToken | String)*): Self = StObject.set(x, "content", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

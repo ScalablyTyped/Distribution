@@ -18,28 +18,21 @@ trait ListRemoteAccessSessionsResult extends StObject {
 }
 object ListRemoteAccessSessionsResult {
   
-  @scala.inline
-  def apply(): ListRemoteAccessSessionsResult = {
+  inline def apply(): ListRemoteAccessSessionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRemoteAccessSessionsResult]
   }
   
-  @scala.inline
-  implicit class ListRemoteAccessSessionsResultMutableBuilder[Self <: ListRemoteAccessSessionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListRemoteAccessSessionsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRemoteAccessSessions(value: RemoteAccessSessions): Self = StObject.set(x, "remoteAccessSessions", value.asInstanceOf[js.Any])
+    inline def setRemoteAccessSessions(value: RemoteAccessSessions): Self = StObject.set(x, "remoteAccessSessions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteAccessSessionsUndefined: Self = StObject.set(x, "remoteAccessSessions", js.undefined)
+    inline def setRemoteAccessSessionsUndefined: Self = StObject.set(x, "remoteAccessSessions", js.undefined)
     
-    @scala.inline
-    def setRemoteAccessSessionsVarargs(value: RemoteAccessSession*): Self = StObject.set(x, "remoteAccessSessions", js.Array(value :_*))
+    inline def setRemoteAccessSessionsVarargs(value: RemoteAccessSession*): Self = StObject.set(x, "remoteAccessSessions", js.Array(value :_*))
   }
 }

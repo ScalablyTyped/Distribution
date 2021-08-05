@@ -12,8 +12,7 @@ trait OmittedExpression
 }
 object OmittedExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -39,10 +38,8 @@ object OmittedExpression {
     __obj.asInstanceOf[OmittedExpression]
   }
   
-  @scala.inline
-  implicit class OmittedExpressionMutableBuilder[Self <: OmittedExpression] (val x: Self) extends AnyVal {
+  extension [Self <: OmittedExpression](x: Self) {
     
-    @scala.inline
-    def setStructuralEquals(value: (CatchClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (CatchClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

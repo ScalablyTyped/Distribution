@@ -13,22 +13,17 @@ trait CertificateBasedAuthConfiguration
 }
 object CertificateBasedAuthConfiguration {
   
-  @scala.inline
-  def apply(): CertificateBasedAuthConfiguration = {
+  inline def apply(): CertificateBasedAuthConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertificateBasedAuthConfiguration]
   }
   
-  @scala.inline
-  implicit class CertificateBasedAuthConfigurationMutableBuilder[Self <: CertificateBasedAuthConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateBasedAuthConfiguration](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorities(value: js.Array[CertificateAuthority]): Self = StObject.set(x, "certificateAuthorities", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorities(value: js.Array[CertificateAuthority]): Self = StObject.set(x, "certificateAuthorities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthoritiesUndefined: Self = StObject.set(x, "certificateAuthorities", js.undefined)
+    inline def setCertificateAuthoritiesUndefined: Self = StObject.set(x, "certificateAuthorities", js.undefined)
     
-    @scala.inline
-    def setCertificateAuthoritiesVarargs(value: CertificateAuthority*): Self = StObject.set(x, "certificateAuthorities", js.Array(value :_*))
+    inline def setCertificateAuthoritiesVarargs(value: CertificateAuthority*): Self = StObject.set(x, "certificateAuthorities", js.Array(value :_*))
   }
 }

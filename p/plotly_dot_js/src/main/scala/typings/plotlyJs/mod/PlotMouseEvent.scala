@@ -13,22 +13,17 @@ trait PlotMouseEvent extends StObject {
 }
 object PlotMouseEvent {
   
-  @scala.inline
-  def apply(event: MouseEvent, points: js.Array[PlotDatum]): PlotMouseEvent = {
+  inline def apply(event: MouseEvent, points: js.Array[PlotDatum]): PlotMouseEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotMouseEvent]
   }
   
-  @scala.inline
-  implicit class PlotMouseEventMutableBuilder[Self <: PlotMouseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlotMouseEvent](x: Self) {
     
-    @scala.inline
-    def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: js.Array[PlotDatum]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[PlotDatum]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: PlotDatum*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: PlotDatum*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

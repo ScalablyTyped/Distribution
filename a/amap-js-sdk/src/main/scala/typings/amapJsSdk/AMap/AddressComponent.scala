@@ -34,8 +34,7 @@ trait AddressComponent extends StObject {
 }
 object AddressComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adcode: String,
     building: String,
     buildingType: String,
@@ -54,49 +53,34 @@ object AddressComponent {
     __obj.asInstanceOf[AddressComponent]
   }
   
-  @scala.inline
-  implicit class AddressComponentMutableBuilder[Self <: AddressComponent] (val x: Self) extends AnyVal {
+  extension [Self <: AddressComponent](x: Self) {
     
-    @scala.inline
-    def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+    inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuilding(value: String): Self = StObject.set(x, "building", value.asInstanceOf[js.Any])
+    inline def setBuilding(value: String): Self = StObject.set(x, "building", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildingType(value: String): Self = StObject.set(x, "buildingType", value.asInstanceOf[js.Any])
+    inline def setBuildingType(value: String): Self = StObject.set(x, "buildingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusinessAreas(value: js.Array[BusinessArea]): Self = StObject.set(x, "businessAreas", value.asInstanceOf[js.Any])
+    inline def setBusinessAreas(value: js.Array[BusinessArea]): Self = StObject.set(x, "businessAreas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusinessAreasVarargs(value: BusinessArea*): Self = StObject.set(x, "businessAreas", js.Array(value :_*))
+    inline def setBusinessAreasVarargs(value: BusinessArea*): Self = StObject.set(x, "businessAreas", js.Array(value :_*))
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
+    inline def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
+    inline def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeighborhood(value: String): Self = StObject.set(x, "neighborhood", value.asInstanceOf[js.Any])
+    inline def setNeighborhood(value: String): Self = StObject.set(x, "neighborhood", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeighborhoodType(value: String): Self = StObject.set(x, "neighborhoodType", value.asInstanceOf[js.Any])
+    inline def setNeighborhoodType(value: String): Self = StObject.set(x, "neighborhoodType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+    inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
+    inline def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreetNumber(value: String): Self = StObject.set(x, "streetNumber", value.asInstanceOf[js.Any])
+    inline def setStreetNumber(value: String): Self = StObject.set(x, "streetNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTownship(value: String): Self = StObject.set(x, "township", value.asInstanceOf[js.Any])
+    inline def setTownship(value: String): Self = StObject.set(x, "township", value.asInstanceOf[js.Any])
   }
 }

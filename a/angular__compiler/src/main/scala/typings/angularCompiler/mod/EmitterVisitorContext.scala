@@ -17,6 +17,5 @@ object EmitterVisitorContext {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createRoot(): typings.angularCompiler.abstractEmitterMod.EmitterVisitorContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoot")().asInstanceOf[typings.angularCompiler.abstractEmitterMod.EmitterVisitorContext]
+  inline def createRoot(): typings.angularCompiler.abstractEmitterMod.EmitterVisitorContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoot")().asInstanceOf[typings.angularCompiler.abstractEmitterMod.EmitterVisitorContext]
 }

@@ -8,31 +8,25 @@ object bonjourStrings {
   
   @js.native
   sealed trait down extends StObject
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
+  inline def down: down = "down".asInstanceOf[down]
   
   @js.native
   sealed trait tcp extends StObject
-  @scala.inline
-  def tcp: tcp = "tcp".asInstanceOf[tcp]
+  inline def tcp: tcp = "tcp".asInstanceOf[tcp]
   
   @js.native
   sealed trait udp extends StObject
-  @scala.inline
-  def udp: udp = "udp".asInstanceOf[udp]
+  inline def udp: udp = "udp".asInstanceOf[udp]
   
   @js.native
   sealed trait udp4 extends StObject
-  @scala.inline
-  def udp4: udp4 = "udp4".asInstanceOf[udp4]
+  inline def udp4: udp4 = "udp4".asInstanceOf[udp4]
   
   @js.native
   sealed trait udp6 extends StObject
-  @scala.inline
-  def udp6: udp6 = "udp6".asInstanceOf[udp6]
+  inline def udp6: udp6 = "udp6".asInstanceOf[udp6]
   
   @js.native
   sealed trait up extends StObject
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
+  inline def up: up = "up".asInstanceOf[up]
 }

@@ -38,43 +38,31 @@ trait SchemaGerritSourceContext extends StObject {
 }
 object SchemaGerritSourceContext {
   
-  @scala.inline
-  def apply(): SchemaGerritSourceContext = {
+  inline def apply(): SchemaGerritSourceContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGerritSourceContext]
   }
   
-  @scala.inline
-  implicit class SchemaGerritSourceContextMutableBuilder[Self <: SchemaGerritSourceContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGerritSourceContext](x: Self) {
     
-    @scala.inline
-    def setAliasContext(value: SchemaAliasContext): Self = StObject.set(x, "aliasContext", value.asInstanceOf[js.Any])
+    inline def setAliasContext(value: SchemaAliasContext): Self = StObject.set(x, "aliasContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasContextUndefined: Self = StObject.set(x, "aliasContext", js.undefined)
+    inline def setAliasContextUndefined: Self = StObject.set(x, "aliasContext", js.undefined)
     
-    @scala.inline
-    def setAliasName(value: String): Self = StObject.set(x, "aliasName", value.asInstanceOf[js.Any])
+    inline def setAliasName(value: String): Self = StObject.set(x, "aliasName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasNameUndefined: Self = StObject.set(x, "aliasName", js.undefined)
+    inline def setAliasNameUndefined: Self = StObject.set(x, "aliasName", js.undefined)
     
-    @scala.inline
-    def setGerritProject(value: String): Self = StObject.set(x, "gerritProject", value.asInstanceOf[js.Any])
+    inline def setGerritProject(value: String): Self = StObject.set(x, "gerritProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGerritProjectUndefined: Self = StObject.set(x, "gerritProject", js.undefined)
+    inline def setGerritProjectUndefined: Self = StObject.set(x, "gerritProject", js.undefined)
     
-    @scala.inline
-    def setHostUri(value: String): Self = StObject.set(x, "hostUri", value.asInstanceOf[js.Any])
+    inline def setHostUri(value: String): Self = StObject.set(x, "hostUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUriUndefined: Self = StObject.set(x, "hostUri", js.undefined)
+    inline def setHostUriUndefined: Self = StObject.set(x, "hostUri", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
   }
 }

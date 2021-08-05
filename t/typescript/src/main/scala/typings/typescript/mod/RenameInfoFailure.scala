@@ -15,19 +15,15 @@ trait RenameInfoFailure
 }
 object RenameInfoFailure {
   
-  @scala.inline
-  def apply(localizedErrorMessage: java.lang.String): RenameInfoFailure = {
+  inline def apply(localizedErrorMessage: java.lang.String): RenameInfoFailure = {
     val __obj = js.Dynamic.literal(canRename = false, localizedErrorMessage = localizedErrorMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameInfoFailure]
   }
   
-  @scala.inline
-  implicit class RenameInfoFailureMutableBuilder[Self <: RenameInfoFailure] (val x: Self) extends AnyVal {
+  extension [Self <: RenameInfoFailure](x: Self) {
     
-    @scala.inline
-    def setCanRename(value: `false`): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
+    inline def setCanRename(value: `false`): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizedErrorMessage(value: java.lang.String): Self = StObject.set(x, "localizedErrorMessage", value.asInstanceOf[js.Any])
+    inline def setLocalizedErrorMessage(value: java.lang.String): Self = StObject.set(x, "localizedErrorMessage", value.asInstanceOf[js.Any])
   }
 }

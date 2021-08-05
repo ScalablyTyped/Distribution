@@ -18,25 +18,19 @@ trait PlotVbpZoneLinesOptions extends StObject {
 }
 object PlotVbpZoneLinesOptions {
   
-  @scala.inline
-  def apply(): PlotVbpZoneLinesOptions = {
+  inline def apply(): PlotVbpZoneLinesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotVbpZoneLinesOptions]
   }
   
-  @scala.inline
-  implicit class PlotVbpZoneLinesOptionsMutableBuilder[Self <: PlotVbpZoneLinesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotVbpZoneLinesOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setStyles(value: CSSObject): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: CSSObject): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

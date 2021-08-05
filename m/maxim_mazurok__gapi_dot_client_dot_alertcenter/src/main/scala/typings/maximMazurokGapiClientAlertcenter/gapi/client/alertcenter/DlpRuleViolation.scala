@@ -14,19 +14,15 @@ trait DlpRuleViolation extends StObject {
 }
 object DlpRuleViolation {
   
-  @scala.inline
-  def apply(): DlpRuleViolation = {
+  inline def apply(): DlpRuleViolation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DlpRuleViolation]
   }
   
-  @scala.inline
-  implicit class DlpRuleViolationMutableBuilder[Self <: DlpRuleViolation] (val x: Self) extends AnyVal {
+  extension [Self <: DlpRuleViolation](x: Self) {
     
-    @scala.inline
-    def setRuleViolationInfo(value: RuleViolationInfo): Self = StObject.set(x, "ruleViolationInfo", value.asInstanceOf[js.Any])
+    inline def setRuleViolationInfo(value: RuleViolationInfo): Self = StObject.set(x, "ruleViolationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleViolationInfoUndefined: Self = StObject.set(x, "ruleViolationInfo", js.undefined)
+    inline def setRuleViolationInfoUndefined: Self = StObject.set(x, "ruleViolationInfo", js.undefined)
   }
 }

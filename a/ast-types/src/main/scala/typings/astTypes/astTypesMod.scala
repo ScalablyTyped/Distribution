@@ -16,17 +16,14 @@ object astTypesMod {
   }
   object Fork {
     
-    @scala.inline
-    def apply(use: Plugin[js.Any] => js.Any): Fork = {
+    inline def apply(use: Plugin[js.Any] => js.Any): Fork = {
       val __obj = js.Dynamic.literal(use = js.Any.fromFunction1(use))
       __obj.asInstanceOf[Fork]
     }
     
-    @scala.inline
-    implicit class ForkMutableBuilder[Self <: Fork] (val x: Self) extends AnyVal {
+    extension [Self <: Fork](x: Self) {
       
-      @scala.inline
-      def setUse(value: Plugin[js.Any] => js.Any): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
+      inline def setUse(value: Plugin[js.Any] => js.Any): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
     }
   }
   

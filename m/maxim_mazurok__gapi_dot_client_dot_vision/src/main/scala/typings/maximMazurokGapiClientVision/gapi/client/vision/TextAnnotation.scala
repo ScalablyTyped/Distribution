@@ -14,28 +14,21 @@ trait TextAnnotation extends StObject {
 }
 object TextAnnotation {
   
-  @scala.inline
-  def apply(): TextAnnotation = {
+  inline def apply(): TextAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextAnnotation]
   }
   
-  @scala.inline
-  implicit class TextAnnotationMutableBuilder[Self <: TextAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: TextAnnotation](x: Self) {
     
-    @scala.inline
-    def setPages(value: js.Array[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

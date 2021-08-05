@@ -14,25 +14,19 @@ trait Hash extends StObject {
 }
 object Hash {
   
-  @scala.inline
-  def apply(): Hash = {
+  inline def apply(): Hash = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hash]
   }
   
-  @scala.inline
-  implicit class HashMutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
+  extension [Self <: Hash](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

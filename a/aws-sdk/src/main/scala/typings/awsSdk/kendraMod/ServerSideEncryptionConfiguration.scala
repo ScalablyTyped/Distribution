@@ -13,19 +13,15 @@ trait ServerSideEncryptionConfiguration extends StObject {
 }
 object ServerSideEncryptionConfiguration {
   
-  @scala.inline
-  def apply(): ServerSideEncryptionConfiguration = {
+  inline def apply(): ServerSideEncryptionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerSideEncryptionConfiguration]
   }
   
-  @scala.inline
-  implicit class ServerSideEncryptionConfigurationMutableBuilder[Self <: ServerSideEncryptionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ServerSideEncryptionConfiguration](x: Self) {
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
   }
 }

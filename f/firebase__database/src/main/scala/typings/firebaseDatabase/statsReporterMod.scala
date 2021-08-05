@@ -19,12 +19,12 @@ object statsReporterMod {
     
     def includeStat(stat: String): Unit = js.native
     
-    var reportStats_ : js.Any = js.native
+    /* private */ var reportStats_ : js.Any = js.native
     
-    var server_ : js.Any = js.native
+    /* private */ var server_ : js.Any = js.native
     
-    var statsListener_ : js.Any = js.native
+    /* private */ var statsListener_ : js.Any = js.native
     
-    var statsToReport_ : js.Any = js.native
+    /* private */ var statsToReport_ : js.Any = js.native
   }
 }

@@ -19,8 +19,7 @@ object InjectionMode {
   @JSImport("office-ui-fabric-react", "InjectionMode.appendChild")
   @js.native
   def appendChild: `2` = js.native
-  @scala.inline
-  def appendChild_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appendChild")(x.asInstanceOf[js.Any])
+  inline def appendChild_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appendChild")(x.asInstanceOf[js.Any])
   
   /**
     * Inserts rules using the insertRule api.
@@ -28,8 +27,7 @@ object InjectionMode {
   @JSImport("office-ui-fabric-react", "InjectionMode.insertNode")
   @js.native
   def insertNode: `1` = js.native
-  @scala.inline
-  def insertNode_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insertNode")(x.asInstanceOf[js.Any])
+  inline def insertNode_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insertNode")(x.asInstanceOf[js.Any])
   
   /**
     * Avoids style injection, use getRules() to read the styles.
@@ -37,6 +35,5 @@ object InjectionMode {
   @JSImport("office-ui-fabric-react", "InjectionMode.none")
   @js.native
   def none: `0` = js.native
-  @scala.inline
-  def none_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+  inline def none_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
 }

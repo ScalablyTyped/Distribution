@@ -31,38 +31,28 @@ object modalHeaderMod {
   }
   object ModalHeaderProps {
     
-    @scala.inline
-    def apply(): ModalHeaderProps = {
+    inline def apply(): ModalHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModalHeaderProps]
     }
     
-    @scala.inline
-    implicit class ModalHeaderPropsMutableBuilder[Self <: ModalHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ModalHeaderProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+      inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+      inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
       
-      @scala.inline
-      def setCloseLabel(value: String): Self = StObject.set(x, "closeLabel", value.asInstanceOf[js.Any])
+      inline def setCloseLabel(value: String): Self = StObject.set(x, "closeLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseLabelUndefined: Self = StObject.set(x, "closeLabel", js.undefined)
+      inline def setCloseLabelUndefined: Self = StObject.set(x, "closeLabel", js.undefined)
       
-      @scala.inline
-      def setOnHide(value: js.Function): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
+      inline def setOnHide(value: js.Function): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     }
   }
 }

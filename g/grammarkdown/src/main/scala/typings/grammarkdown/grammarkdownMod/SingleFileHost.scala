@@ -16,5 +16,5 @@ class SingleFileHost protected () extends Host {
   
   val file: String = js.native
   
-  var hostFallback: js.Any = js.native
+  /* private */ var hostFallback: js.Any = js.native
 }

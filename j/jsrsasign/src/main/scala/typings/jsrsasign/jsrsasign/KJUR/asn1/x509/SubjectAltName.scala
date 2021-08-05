@@ -42,8 +42,7 @@ trait SubjectAltName
 }
 object SubjectAltName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getExtnValueHex: () => String,
     getFreshValueHex: () => String,
@@ -60,13 +59,10 @@ object SubjectAltName {
     __obj.asInstanceOf[SubjectAltName]
   }
   
-  @scala.inline
-  implicit class SubjectAltNameMutableBuilder[Self <: SubjectAltName] (val x: Self) extends AnyVal {
+  extension [Self <: SubjectAltName](x: Self) {
     
-    @scala.inline
-    def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
+    inline def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetNameArray(value: js.Array[UriParam] => Unit): Self = StObject.set(x, "setNameArray", js.Any.fromFunction1(value))
+    inline def setSetNameArray(value: js.Array[UriParam] => Unit): Self = StObject.set(x, "setNameArray", js.Any.fromFunction1(value))
   }
 }

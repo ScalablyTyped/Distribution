@@ -11,16 +11,13 @@ trait ELEMENT_MARKER extends StObject {
 }
 object ELEMENT_MARKER {
   
-  @scala.inline
-  def apply(): ELEMENT_MARKER = {
+  inline def apply(): ELEMENT_MARKER = {
     val __obj = js.Dynamic.literal(marker = "element")
     __obj.asInstanceOf[ELEMENT_MARKER]
   }
   
-  @scala.inline
-  implicit class ELEMENT_MARKERMutableBuilder[Self <: ELEMENT_MARKER] (val x: Self) extends AnyVal {
+  extension [Self <: ELEMENT_MARKER](x: Self) {
     
-    @scala.inline
-    def setMarker(value: element): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: element): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
   }
 }

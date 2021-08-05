@@ -12,19 +12,15 @@ trait OSEmailSubscriptionState extends StObject {
 }
 object OSEmailSubscriptionState {
   
-  @scala.inline
-  def apply(emailAddress: String, emailUserId: String): OSEmailSubscriptionState = {
+  inline def apply(emailAddress: String, emailUserId: String): OSEmailSubscriptionState = {
     val __obj = js.Dynamic.literal(emailAddress = emailAddress.asInstanceOf[js.Any], emailUserId = emailUserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OSEmailSubscriptionState]
   }
   
-  @scala.inline
-  implicit class OSEmailSubscriptionStateMutableBuilder[Self <: OSEmailSubscriptionState] (val x: Self) extends AnyVal {
+  extension [Self <: OSEmailSubscriptionState](x: Self) {
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUserId(value: String): Self = StObject.set(x, "emailUserId", value.asInstanceOf[js.Any])
+    inline def setEmailUserId(value: String): Self = StObject.set(x, "emailUserId", value.asInstanceOf[js.Any])
   }
 }

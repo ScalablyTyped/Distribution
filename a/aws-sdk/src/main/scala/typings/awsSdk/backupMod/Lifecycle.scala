@@ -18,25 +18,19 @@ trait Lifecycle extends StObject {
 }
 object Lifecycle {
   
-  @scala.inline
-  def apply(): Lifecycle = {
+  inline def apply(): Lifecycle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Lifecycle]
   }
   
-  @scala.inline
-  implicit class LifecycleMutableBuilder[Self <: Lifecycle] (val x: Self) extends AnyVal {
+  extension [Self <: Lifecycle](x: Self) {
     
-    @scala.inline
-    def setDeleteAfterDays(value: Long_): Self = StObject.set(x, "DeleteAfterDays", value.asInstanceOf[js.Any])
+    inline def setDeleteAfterDays(value: Long_): Self = StObject.set(x, "DeleteAfterDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteAfterDaysUndefined: Self = StObject.set(x, "DeleteAfterDays", js.undefined)
+    inline def setDeleteAfterDaysUndefined: Self = StObject.set(x, "DeleteAfterDays", js.undefined)
     
-    @scala.inline
-    def setMoveToColdStorageAfterDays(value: Long_): Self = StObject.set(x, "MoveToColdStorageAfterDays", value.asInstanceOf[js.Any])
+    inline def setMoveToColdStorageAfterDays(value: Long_): Self = StObject.set(x, "MoveToColdStorageAfterDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveToColdStorageAfterDaysUndefined: Self = StObject.set(x, "MoveToColdStorageAfterDays", js.undefined)
+    inline def setMoveToColdStorageAfterDaysUndefined: Self = StObject.set(x, "MoveToColdStorageAfterDays", js.undefined)
   }
 }

@@ -49,67 +49,47 @@ trait SendAs extends StObject {
 }
 object SendAs {
   
-  @scala.inline
-  def apply(): SendAs = {
+  inline def apply(): SendAs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendAs]
   }
   
-  @scala.inline
-  implicit class SendAsMutableBuilder[Self <: SendAs] (val x: Self) extends AnyVal {
+  extension [Self <: SendAs](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
-    @scala.inline
-    def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+    inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
+    inline def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
     
-    @scala.inline
-    def setReplyToAddress(value: String): Self = StObject.set(x, "replyToAddress", value.asInstanceOf[js.Any])
+    inline def setReplyToAddress(value: String): Self = StObject.set(x, "replyToAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToAddressUndefined: Self = StObject.set(x, "replyToAddress", js.undefined)
+    inline def setReplyToAddressUndefined: Self = StObject.set(x, "replyToAddress", js.undefined)
     
-    @scala.inline
-    def setSendAsEmail(value: String): Self = StObject.set(x, "sendAsEmail", value.asInstanceOf[js.Any])
+    inline def setSendAsEmail(value: String): Self = StObject.set(x, "sendAsEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendAsEmailUndefined: Self = StObject.set(x, "sendAsEmail", js.undefined)
+    inline def setSendAsEmailUndefined: Self = StObject.set(x, "sendAsEmail", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
-    @scala.inline
-    def setSmtpMsa(value: SmtpMsa): Self = StObject.set(x, "smtpMsa", value.asInstanceOf[js.Any])
+    inline def setSmtpMsa(value: SmtpMsa): Self = StObject.set(x, "smtpMsa", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmtpMsaUndefined: Self = StObject.set(x, "smtpMsa", js.undefined)
+    inline def setSmtpMsaUndefined: Self = StObject.set(x, "smtpMsa", js.undefined)
     
-    @scala.inline
-    def setTreatAsAlias(value: Boolean): Self = StObject.set(x, "treatAsAlias", value.asInstanceOf[js.Any])
+    inline def setTreatAsAlias(value: Boolean): Self = StObject.set(x, "treatAsAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreatAsAliasUndefined: Self = StObject.set(x, "treatAsAlias", js.undefined)
+    inline def setTreatAsAliasUndefined: Self = StObject.set(x, "treatAsAlias", js.undefined)
     
-    @scala.inline
-    def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
+    inline def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
+    inline def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
   }
 }

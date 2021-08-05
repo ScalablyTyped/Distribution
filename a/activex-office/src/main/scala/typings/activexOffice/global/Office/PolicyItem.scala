@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.PolicyItem")
 @js.native
-class PolicyItem protected ()
+/* private */ class PolicyItem ()
   extends StObject
      with typings.activexOffice.Office.PolicyItem {
   
@@ -28,7 +28,7 @@ class PolicyItem protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.PolicyItem_typekey")
   var OfficeDotPolicyItem_typekey: typings.activexOffice.Office.PolicyItem = js.native
   

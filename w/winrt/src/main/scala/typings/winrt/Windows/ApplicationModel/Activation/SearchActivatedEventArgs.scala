@@ -9,8 +9,7 @@ trait SearchActivatedEventArgs
      with ISearchActivatedEventArgs
 object SearchActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActivationKind,
     language: String,
     previousExecutionState: ApplicationExecutionState,

@@ -133,133 +133,91 @@ trait ConnectionConfig
 }
 object ConnectionConfig {
   
-  @scala.inline
-  def apply(): ConnectionConfig = {
+  inline def apply(): ConnectionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionConfig]
   }
   
-  @scala.inline
-  implicit class ConnectionConfigMutableBuilder[Self <: ConnectionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionConfig](x: Self) {
     
-    @scala.inline
-    def setBigNumberStrings(value: Boolean): Self = StObject.set(x, "bigNumberStrings", value.asInstanceOf[js.Any])
+    inline def setBigNumberStrings(value: Boolean): Self = StObject.set(x, "bigNumberStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigNumberStringsUndefined: Self = StObject.set(x, "bigNumberStrings", js.undefined)
+    inline def setBigNumberStringsUndefined: Self = StObject.set(x, "bigNumberStrings", js.undefined)
     
-    @scala.inline
-    def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+    inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+    inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
     
-    @scala.inline
-    def setDateStrings(value: Boolean | (js.Array[TIMESTAMP | DATETIME | DATE])): Self = StObject.set(x, "dateStrings", value.asInstanceOf[js.Any])
+    inline def setDateStrings(value: Boolean | (js.Array[TIMESTAMP | DATETIME | DATE])): Self = StObject.set(x, "dateStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateStringsUndefined: Self = StObject.set(x, "dateStrings", js.undefined)
+    inline def setDateStringsUndefined: Self = StObject.set(x, "dateStrings", js.undefined)
     
-    @scala.inline
-    def setDateStringsVarargs(value: (TIMESTAMP | DATETIME | DATE)*): Self = StObject.set(x, "dateStrings", js.Array(value :_*))
+    inline def setDateStringsVarargs(value: (TIMESTAMP | DATETIME | DATE)*): Self = StObject.set(x, "dateStrings", js.Array(value :_*))
     
-    @scala.inline
-    def setDebug(value: Boolean | (js.Array[String | Types])): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean | (js.Array[String | Types])): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setDebugVarargs(value: (String | Types)*): Self = StObject.set(x, "debug", js.Array(value :_*))
+    inline def setDebugVarargs(value: (String | Types)*): Self = StObject.set(x, "debug", js.Array(value :_*))
     
-    @scala.inline
-    def setFlags(value: String | js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: String | js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    @scala.inline
-    def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setInsecureAuth(value: Boolean): Self = StObject.set(x, "insecureAuth", value.asInstanceOf[js.Any])
+    inline def setInsecureAuth(value: Boolean): Self = StObject.set(x, "insecureAuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsecureAuthUndefined: Self = StObject.set(x, "insecureAuth", js.undefined)
+    inline def setInsecureAuthUndefined: Self = StObject.set(x, "insecureAuth", js.undefined)
     
-    @scala.inline
-    def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+    inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+    inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
     
-    @scala.inline
-    def setMultipleStatements(value: Boolean): Self = StObject.set(x, "multipleStatements", value.asInstanceOf[js.Any])
+    inline def setMultipleStatements(value: Boolean): Self = StObject.set(x, "multipleStatements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleStatementsUndefined: Self = StObject.set(x, "multipleStatements", js.undefined)
+    inline def setMultipleStatementsUndefined: Self = StObject.set(x, "multipleStatements", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setQueryFormat(value: (/* query */ String, /* values */ js.Any) => String): Self = StObject.set(x, "queryFormat", js.Any.fromFunction2(value))
+    inline def setQueryFormat(value: (/* query */ String, /* values */ js.Any) => String): Self = StObject.set(x, "queryFormat", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQueryFormatUndefined: Self = StObject.set(x, "queryFormat", js.undefined)
+    inline def setQueryFormatUndefined: Self = StObject.set(x, "queryFormat", js.undefined)
     
-    @scala.inline
-    def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+    inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
+    inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
     
-    @scala.inline
-    def setSsl(value: String | SecureContextOptionsrejec): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: String | SecureContextOptionsrejec): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
-    @scala.inline
-    def setStringifyObjects(value: Boolean): Self = StObject.set(x, "stringifyObjects", value.asInstanceOf[js.Any])
+    inline def setStringifyObjects(value: Boolean): Self = StObject.set(x, "stringifyObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringifyObjectsUndefined: Self = StObject.set(x, "stringifyObjects", js.undefined)
+    inline def setStringifyObjectsUndefined: Self = StObject.set(x, "stringifyObjects", js.undefined)
     
-    @scala.inline
-    def setSupportBigNumbers(value: Boolean): Self = StObject.set(x, "supportBigNumbers", value.asInstanceOf[js.Any])
+    inline def setSupportBigNumbers(value: Boolean): Self = StObject.set(x, "supportBigNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportBigNumbersUndefined: Self = StObject.set(x, "supportBigNumbers", js.undefined)
+    inline def setSupportBigNumbersUndefined: Self = StObject.set(x, "supportBigNumbers", js.undefined)
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
-    @scala.inline
-    def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+    inline def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+    inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
     
-    @scala.inline
-    def setTypeCast(value: TypeCast): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
+    inline def setTypeCast(value: TypeCast): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeCastFunction2(value: (/* field */ UntypedFieldInfotypestrin, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
+    inline def setTypeCastFunction2(value: (/* field */ UntypedFieldInfotypestrin, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
+    inline def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
   }
 }

@@ -15,20 +15,17 @@ object videoConstantsMod {
     @JSImport("wix-ui-core/dist/src/components/video/constants", "EVENTS.ENDED")
     @js.native
     def ENDED: String = js.native
-    @scala.inline
-    def ENDED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENDED")(x.asInstanceOf[js.Any])
+    inline def ENDED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENDED")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/video/constants", "EVENTS.PAUSED")
     @js.native
     def PAUSED: String = js.native
-    @scala.inline
-    def PAUSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSED")(x.asInstanceOf[js.Any])
+    inline def PAUSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSED")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/video/constants", "EVENTS.PLAYING")
     @js.native
     def PLAYING: String = js.native
-    @scala.inline
-    def PLAYING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAYING")(x.asInstanceOf[js.Any])
+    inline def PLAYING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAYING")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("wix-ui-core/dist/src/components/video/constants", "PROGRESS_INTERVAL")

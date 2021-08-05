@@ -14,10 +14,8 @@ trait AxisOrientation extends StObject
 object AxisOrientation {
   
   /** means equal to the primary writing direction */
-  @scala.inline
-  def MATHEMATICAL: `0` = 0.asInstanceOf[`0`]
+  inline def MATHEMATICAL: `0` = 0.asInstanceOf[`0`]
   
   /** means the opposite of the primary writing direction */
-  @scala.inline
-  def REVERSE: `1` = 1.asInstanceOf[`1`]
+  inline def REVERSE: `1` = 1.asInstanceOf[`1`]
 }

@@ -17,16 +17,13 @@ trait ReLaunchOptions
 }
 object ReLaunchOptions {
   
-  @scala.inline
-  def apply(url: String): ReLaunchOptions = {
+  inline def apply(url: String): ReLaunchOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReLaunchOptions]
   }
   
-  @scala.inline
-  implicit class ReLaunchOptionsMutableBuilder[Self <: ReLaunchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReLaunchOptions](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

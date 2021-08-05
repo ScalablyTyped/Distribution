@@ -10,22 +10,17 @@ trait SchemaSslPoliciesListAvailableFeaturesResponse extends StObject {
 }
 object SchemaSslPoliciesListAvailableFeaturesResponse {
   
-  @scala.inline
-  def apply(): SchemaSslPoliciesListAvailableFeaturesResponse = {
+  inline def apply(): SchemaSslPoliciesListAvailableFeaturesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSslPoliciesListAvailableFeaturesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSslPoliciesListAvailableFeaturesResponseMutableBuilder[Self <: SchemaSslPoliciesListAvailableFeaturesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSslPoliciesListAvailableFeaturesResponse](x: Self) {
     
-    @scala.inline
-    def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
   }
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ChartGroup")
 @js.native
-class ChartGroup protected ()
+/* private */ class ChartGroup ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ChartGroup

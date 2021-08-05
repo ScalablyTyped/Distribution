@@ -18,17 +18,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object BooleanTypeAnnotation_ {
   
-  @scala.inline
-  def apply(): BooleanTypeAnnotation_ = {
+  inline def apply(): BooleanTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("BooleanTypeAnnotation")
     __obj.asInstanceOf[BooleanTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class BooleanTypeAnnotation_MutableBuilder[Self <: BooleanTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: BooleanTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setType(value: BooleanTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BooleanTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

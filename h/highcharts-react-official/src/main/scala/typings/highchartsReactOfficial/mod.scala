@@ -98,65 +98,46 @@ object mod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setAllowChartUpdate(value: Boolean): Self = StObject.set(x, "allowChartUpdate", value.asInstanceOf[js.Any])
+        inline def setAllowChartUpdate(value: Boolean): Self = StObject.set(x, "allowChartUpdate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowChartUpdateUndefined: Self = StObject.set(x, "allowChartUpdate", js.undefined)
+        inline def setAllowChartUpdateUndefined: Self = StObject.set(x, "allowChartUpdate", js.undefined)
         
-        @scala.inline
-        def setCallback(value: /* chart */ Chart_ => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+        inline def setCallback(value: /* chart */ Chart_ => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+        inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
         
-        @scala.inline
-        def setConstructorType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 81 */ js.Any): Self = StObject.set(x, "constructorType", value.asInstanceOf[js.Any])
+        inline def setConstructorType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 81 */ js.Any): Self = StObject.set(x, "constructorType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConstructorTypeUndefined: Self = StObject.set(x, "constructorType", js.undefined)
+        inline def setConstructorTypeUndefined: Self = StObject.set(x, "constructorType", js.undefined)
         
-        @scala.inline
-        def setContainerProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "containerProps", value.asInstanceOf[js.Any])
+        inline def setContainerProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "containerProps", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerPropsUndefined: Self = StObject.set(x, "containerProps", js.undefined)
+        inline def setContainerPropsUndefined: Self = StObject.set(x, "containerProps", js.undefined)
         
-        @scala.inline
-        def setHighcharts(value: TypeofHighcharts): Self = StObject.set(x, "highcharts", value.asInstanceOf[js.Any])
+        inline def setHighcharts(value: TypeofHighcharts): Self = StObject.set(x, "highcharts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHighchartsUndefined: Self = StObject.set(x, "highcharts", js.undefined)
+        inline def setHighchartsUndefined: Self = StObject.set(x, "highcharts", js.undefined)
         
-        @scala.inline
-        def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
+        inline def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
+        inline def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
         
-        @scala.inline
-        def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+        inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
         
-        @scala.inline
-        def setUpdateArgs(value: js.Array[Boolean] | (js.Tuple2[Boolean, Boolean]) | (js.Tuple3[Boolean, Boolean, Boolean])): Self = StObject.set(x, "updateArgs", value.asInstanceOf[js.Any])
+        inline def setUpdateArgs(value: js.Array[Boolean] | (js.Tuple2[Boolean, Boolean]) | (js.Tuple3[Boolean, Boolean, Boolean])): Self = StObject.set(x, "updateArgs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateArgsUndefined: Self = StObject.set(x, "updateArgs", js.undefined)
+        inline def setUpdateArgsUndefined: Self = StObject.set(x, "updateArgs", js.undefined)
         
-        @scala.inline
-        def setUpdateArgsVarargs(value: Boolean*): Self = StObject.set(x, "updateArgs", js.Array(value :_*))
+        inline def setUpdateArgsVarargs(value: Boolean*): Self = StObject.set(x, "updateArgs", js.Array(value :_*))
       }
     }
   }

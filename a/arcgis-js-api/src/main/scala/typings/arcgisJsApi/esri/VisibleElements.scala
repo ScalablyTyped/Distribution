@@ -33,8 +33,7 @@ trait VisibleElements
 }
 object VisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object VisibleElements {
     __obj.asInstanceOf[VisibleElements]
   }
   
-  @scala.inline
-  implicit class VisibleElementsMutableBuilder[Self <: VisibleElements] (val x: Self) extends AnyVal {
+  extension [Self <: VisibleElements](x: Self) {
     
-    @scala.inline
-    def setBaseLayers(value: Boolean): Self = StObject.set(x, "baseLayers", value.asInstanceOf[js.Any])
+    inline def setBaseLayers(value: Boolean): Self = StObject.set(x, "baseLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseLayersUndefined: Self = StObject.set(x, "baseLayers", js.undefined)
+    inline def setBaseLayersUndefined: Self = StObject.set(x, "baseLayers", js.undefined)
     
-    @scala.inline
-    def setReferenceLayers(value: Boolean): Self = StObject.set(x, "referenceLayers", value.asInstanceOf[js.Any])
+    inline def setReferenceLayers(value: Boolean): Self = StObject.set(x, "referenceLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceLayersUndefined: Self = StObject.set(x, "referenceLayers", js.undefined)
+    inline def setReferenceLayersUndefined: Self = StObject.set(x, "referenceLayers", js.undefined)
     
-    @scala.inline
-    def setStatusIndicators(value: Boolean): Self = StObject.set(x, "statusIndicators", value.asInstanceOf[js.Any])
+    inline def setStatusIndicators(value: Boolean): Self = StObject.set(x, "statusIndicators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusIndicatorsUndefined: Self = StObject.set(x, "statusIndicators", js.undefined)
+    inline def setStatusIndicatorsUndefined: Self = StObject.set(x, "statusIndicators", js.undefined)
   }
 }

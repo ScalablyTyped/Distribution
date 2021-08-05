@@ -11,22 +11,17 @@ trait IListValue extends StObject {
 }
 object IListValue {
   
-  @scala.inline
-  def apply(): IListValue = {
+  inline def apply(): IListValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListValue]
   }
   
-  @scala.inline
-  implicit class IListValueMutableBuilder[Self <: IListValue] (val x: Self) extends AnyVal {
+  extension [Self <: IListValue](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[IValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[IValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: IValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: IValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

@@ -10,19 +10,15 @@ trait FileSystemCreateWritableOptions extends StObject {
 }
 object FileSystemCreateWritableOptions {
   
-  @scala.inline
-  def apply(): FileSystemCreateWritableOptions = {
+  inline def apply(): FileSystemCreateWritableOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileSystemCreateWritableOptions]
   }
   
-  @scala.inline
-  implicit class FileSystemCreateWritableOptionsMutableBuilder[Self <: FileSystemCreateWritableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemCreateWritableOptions](x: Self) {
     
-    @scala.inline
-    def setKeepExistingData(value: Boolean): Self = StObject.set(x, "keepExistingData", value.asInstanceOf[js.Any])
+    inline def setKeepExistingData(value: Boolean): Self = StObject.set(x, "keepExistingData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepExistingDataUndefined: Self = StObject.set(x, "keepExistingData", js.undefined)
+    inline def setKeepExistingDataUndefined: Self = StObject.set(x, "keepExistingData", js.undefined)
   }
 }

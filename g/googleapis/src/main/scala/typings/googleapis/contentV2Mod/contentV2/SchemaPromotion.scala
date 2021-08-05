@@ -19,25 +19,19 @@ trait SchemaPromotion extends StObject {
 }
 object SchemaPromotion {
   
-  @scala.inline
-  def apply(): SchemaPromotion = {
+  inline def apply(): SchemaPromotion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPromotion]
   }
   
-  @scala.inline
-  implicit class SchemaPromotionMutableBuilder[Self <: SchemaPromotion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPromotion](x: Self) {
     
-    @scala.inline
-    def setPromotionAmount(value: SchemaAmount): Self = StObject.set(x, "promotionAmount", value.asInstanceOf[js.Any])
+    inline def setPromotionAmount(value: SchemaAmount): Self = StObject.set(x, "promotionAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotionAmountUndefined: Self = StObject.set(x, "promotionAmount", js.undefined)
+    inline def setPromotionAmountUndefined: Self = StObject.set(x, "promotionAmount", js.undefined)
     
-    @scala.inline
-    def setPromotionId(value: String): Self = StObject.set(x, "promotionId", value.asInstanceOf[js.Any])
+    inline def setPromotionId(value: String): Self = StObject.set(x, "promotionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotionIdUndefined: Self = StObject.set(x, "promotionId", js.undefined)
+    inline def setPromotionIdUndefined: Self = StObject.set(x, "promotionId", js.undefined)
   }
 }

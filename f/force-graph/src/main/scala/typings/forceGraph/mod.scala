@@ -16,8 +16,7 @@ object mod {
   
   object default {
     
-    @scala.inline
-    def apply(): ForceGraphInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ForceGraphInstance]
+    inline def apply(): ForceGraphInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ForceGraphInstance]
     
     @JSImport("force-graph", JSImport.Default)
     @js.native
@@ -37,23 +36,17 @@ object mod {
     trait DagMode extends StObject
     object DagMode {
       
-      @scala.inline
-      def bu: typings.forceGraph.forceGraphStrings.bu = "bu".asInstanceOf[typings.forceGraph.forceGraphStrings.bu]
+      inline def bu: typings.forceGraph.forceGraphStrings.bu = "bu".asInstanceOf[typings.forceGraph.forceGraphStrings.bu]
       
-      @scala.inline
-      def lr: typings.forceGraph.forceGraphStrings.lr = "lr".asInstanceOf[typings.forceGraph.forceGraphStrings.lr]
+      inline def lr: typings.forceGraph.forceGraphStrings.lr = "lr".asInstanceOf[typings.forceGraph.forceGraphStrings.lr]
       
-      @scala.inline
-      def radialin: typings.forceGraph.forceGraphStrings.radialin = "radialin".asInstanceOf[typings.forceGraph.forceGraphStrings.radialin]
+      inline def radialin: typings.forceGraph.forceGraphStrings.radialin = "radialin".asInstanceOf[typings.forceGraph.forceGraphStrings.radialin]
       
-      @scala.inline
-      def radialout: typings.forceGraph.forceGraphStrings.radialout = "radialout".asInstanceOf[typings.forceGraph.forceGraphStrings.radialout]
+      inline def radialout: typings.forceGraph.forceGraphStrings.radialout = "radialout".asInstanceOf[typings.forceGraph.forceGraphStrings.radialout]
       
-      @scala.inline
-      def rl: typings.forceGraph.forceGraphStrings.rl = "rl".asInstanceOf[typings.forceGraph.forceGraphStrings.rl]
+      inline def rl: typings.forceGraph.forceGraphStrings.rl = "rl".asInstanceOf[typings.forceGraph.forceGraphStrings.rl]
       
-      @scala.inline
-      def td: typings.forceGraph.forceGraphStrings.td = "td".asInstanceOf[typings.forceGraph.forceGraphStrings.td]
+      inline def td: typings.forceGraph.forceGraphStrings.td = "td".asInstanceOf[typings.forceGraph.forceGraphStrings.td]
     }
     
     type ForceFn = js.Function1[/* node */ X, Double]
@@ -310,26 +303,20 @@ object mod {
     }
     object GraphData {
       
-      @scala.inline
-      def apply(links: js.Array[GraphLink], nodes: js.Array[GraphNode]): GraphData = {
+      inline def apply(links: js.Array[GraphLink], nodes: js.Array[GraphNode]): GraphData = {
         val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
         __obj.asInstanceOf[GraphData]
       }
       
-      @scala.inline
-      implicit class GraphDataMutableBuilder[Self <: GraphData] (val x: Self) extends AnyVal {
+      extension [Self <: GraphData](x: Self) {
         
-        @scala.inline
-        def setLinks(value: js.Array[GraphLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+        inline def setLinks(value: js.Array[GraphLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinksVarargs(value: GraphLink*): Self = StObject.set(x, "links", js.Array(value :_*))
+        inline def setLinksVarargs(value: GraphLink*): Self = StObject.set(x, "links", js.Array(value :_*))
         
-        @scala.inline
-        def setNodes(value: js.Array[GraphNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+        inline def setNodes(value: js.Array[GraphNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNodesVarargs(value: GraphNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+        inline def setNodesVarargs(value: GraphNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       }
     }
     
@@ -339,17 +326,14 @@ object mod {
     }
     object GraphEntity {
       
-      @scala.inline
-      def apply(id: String): GraphEntity = {
+      inline def apply(id: String): GraphEntity = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[GraphEntity]
       }
       
-      @scala.inline
-      implicit class GraphEntityMutableBuilder[Self <: GraphEntity] (val x: Self) extends AnyVal {
+      extension [Self <: GraphEntity](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
     }
     
@@ -365,24 +349,19 @@ object mod {
     }
     object GraphLink {
       
-      @scala.inline
-      def apply(id: String, source: String | GraphNode, target: String | GraphNode, `type`: String): GraphLink = {
+      inline def apply(id: String, source: String | GraphNode, target: String | GraphNode, `type`: String): GraphLink = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[GraphLink]
       }
       
-      @scala.inline
-      implicit class GraphLinkMutableBuilder[Self <: GraphLink] (val x: Self) extends AnyVal {
+      extension [Self <: GraphLink](x: Self) {
         
-        @scala.inline
-        def setSource(value: String | GraphNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: String | GraphNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTarget(value: String | GraphNode): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: String | GraphNode): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -398,21 +377,17 @@ object mod {
     }
     object GraphLinkObject {
       
-      @scala.inline
-      def apply(id: String, source: GraphNode, target: GraphNode, `type`: String): GraphLinkObject = {
+      inline def apply(id: String, source: GraphNode, target: GraphNode, `type`: String): GraphLinkObject = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[GraphLinkObject]
       }
       
-      @scala.inline
-      implicit class GraphLinkObjectMutableBuilder[Self <: GraphLinkObject] (val x: Self) extends AnyVal {
+      extension [Self <: GraphLinkObject](x: Self) {
         
-        @scala.inline
-        def setSource(value: GraphNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: GraphNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTarget(value: GraphNode): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: GraphNode): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
     
@@ -426,26 +401,20 @@ object mod {
     }
     object GraphNode {
       
-      @scala.inline
-      def apply(id: String): GraphNode = {
+      inline def apply(id: String): GraphNode = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[GraphNode]
       }
       
-      @scala.inline
-      implicit class GraphNodeMutableBuilder[Self <: GraphNode] (val x: Self) extends AnyVal {
+      extension [Self <: GraphNode](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+        inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValUndefined: Self = StObject.set(x, "val", js.undefined)
+        inline def setValUndefined: Self = StObject.set(x, "val", js.undefined)
       }
     }
     
@@ -461,23 +430,18 @@ object mod {
     }
     object GraphNodeObject {
       
-      @scala.inline
-      def apply(id: String, index: Double, x: Double, y: Double): GraphNodeObject = {
+      inline def apply(id: String, index: Double, x: Double, y: Double): GraphNodeObject = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
         __obj.asInstanceOf[GraphNodeObject]
       }
       
-      @scala.inline
-      implicit class GraphNodeObjectMutableBuilder[Self <: GraphNodeObject] (val x: Self) extends AnyVal {
+      extension [Self <: GraphNodeObject](x: Self) {
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       }
     }
     

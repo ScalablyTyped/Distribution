@@ -20,40 +20,29 @@ trait GoogleCloudMlV1SuggestTrialsResponse extends StObject {
 }
 object GoogleCloudMlV1SuggestTrialsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1SuggestTrialsResponse = {
+  inline def apply(): GoogleCloudMlV1SuggestTrialsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1SuggestTrialsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1SuggestTrialsResponseMutableBuilder[Self <: GoogleCloudMlV1SuggestTrialsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1SuggestTrialsResponse](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setStudyState(value: String): Self = StObject.set(x, "studyState", value.asInstanceOf[js.Any])
+    inline def setStudyState(value: String): Self = StObject.set(x, "studyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudyStateUndefined: Self = StObject.set(x, "studyState", js.undefined)
+    inline def setStudyStateUndefined: Self = StObject.set(x, "studyState", js.undefined)
     
-    @scala.inline
-    def setTrials(value: js.Array[GoogleCloudMlV1Trial]): Self = StObject.set(x, "trials", value.asInstanceOf[js.Any])
+    inline def setTrials(value: js.Array[GoogleCloudMlV1Trial]): Self = StObject.set(x, "trials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialsUndefined: Self = StObject.set(x, "trials", js.undefined)
+    inline def setTrialsUndefined: Self = StObject.set(x, "trials", js.undefined)
     
-    @scala.inline
-    def setTrialsVarargs(value: GoogleCloudMlV1Trial*): Self = StObject.set(x, "trials", js.Array(value :_*))
+    inline def setTrialsVarargs(value: GoogleCloudMlV1Trial*): Self = StObject.set(x, "trials", js.Array(value :_*))
   }
 }

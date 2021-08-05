@@ -80,8 +80,7 @@ trait GetAll extends StObject {
 }
 object GetAll {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: /* args */ WithExtendedOptions[
       Parameters[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_config.Get */ js.Any
@@ -120,11 +119,9 @@ object GetAll {
     __obj.asInstanceOf[GetAll]
   }
   
-  @scala.inline
-  implicit class GetAllMutableBuilder[Self <: GetAll] (val x: Self) extends AnyVal {
+  extension [Self <: GetAll](x: Self) {
     
-    @scala.inline
-    def setGet(
+    inline def setGet(
       value: /* args */ WithExtendedOptions[
           Parameters[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_config.Get */ js.Any
@@ -135,8 +132,7 @@ object GetAll {
         ]
     ): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAll(
+    inline def setGetAll(
       value: /* args */ WithExtendedOptions[
           Parameters[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_config.GetAll */ js.Any
@@ -147,11 +143,9 @@ object GetAll {
         ]
     ): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProfiles(value: Apply): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
+    inline def setProfiles(value: Apply): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace(
+    inline def setReplace(
       value: /* args */ WithExtendedOptions[
           Parameters[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_config.Replace */ js.Any
@@ -162,8 +156,7 @@ object GetAll {
         ]
     ): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet(
+    inline def setSet(
       value: /* args */ WithExtendedOptions[
           Parameters[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_config.Set */ js.Any

@@ -17,31 +17,23 @@ trait GenerateMediationReportResponse extends StObject {
 }
 object GenerateMediationReportResponse {
   
-  @scala.inline
-  def apply(): GenerateMediationReportResponse = {
+  inline def apply(): GenerateMediationReportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateMediationReportResponse]
   }
   
-  @scala.inline
-  implicit class GenerateMediationReportResponseMutableBuilder[Self <: GenerateMediationReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateMediationReportResponse](x: Self) {
     
-    @scala.inline
-    def setFooter(value: ReportFooter): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: ReportFooter): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    @scala.inline
-    def setHeader(value: ReportHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: ReportHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setRow(value: ReportRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: ReportRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

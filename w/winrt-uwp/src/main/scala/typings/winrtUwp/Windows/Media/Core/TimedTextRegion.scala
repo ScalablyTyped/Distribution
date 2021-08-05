@@ -46,8 +46,7 @@ trait TimedTextRegion extends StObject {
 }
 object TimedTextRegion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     background: Color,
     displayAlignment: TimedTextDisplayAlignment,
     extent: TimedTextSize,
@@ -65,43 +64,30 @@ object TimedTextRegion {
     __obj.asInstanceOf[TimedTextRegion]
   }
   
-  @scala.inline
-  implicit class TimedTextRegionMutableBuilder[Self <: TimedTextRegion] (val x: Self) extends AnyVal {
+  extension [Self <: TimedTextRegion](x: Self) {
     
-    @scala.inline
-    def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayAlignment(value: TimedTextDisplayAlignment): Self = StObject.set(x, "displayAlignment", value.asInstanceOf[js.Any])
+    inline def setDisplayAlignment(value: TimedTextDisplayAlignment): Self = StObject.set(x, "displayAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtent(value: TimedTextSize): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: TimedTextSize): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOverflowClipped(value: Boolean): Self = StObject.set(x, "isOverflowClipped", value.asInstanceOf[js.Any])
+    inline def setIsOverflowClipped(value: Boolean): Self = StObject.set(x, "isOverflowClipped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeight(value: TimedTextDouble): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: TimedTextDouble): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: TimedTextPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: TimedTextPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: TimedTextPoint): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: TimedTextPoint): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollMode(value: TimedTextScrollMode): Self = StObject.set(x, "scrollMode", value.asInstanceOf[js.Any])
+    inline def setScrollMode(value: TimedTextScrollMode): Self = StObject.set(x, "scrollMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextWrapping(value: TimedTextWrapping): Self = StObject.set(x, "textWrapping", value.asInstanceOf[js.Any])
+    inline def setTextWrapping(value: TimedTextWrapping): Self = StObject.set(x, "textWrapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritingMode(value: TimedTextWritingMode): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
+    inline def setWritingMode(value: TimedTextWritingMode): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
+    inline def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
   }
 }

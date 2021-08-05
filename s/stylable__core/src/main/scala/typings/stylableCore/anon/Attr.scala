@@ -132,8 +132,7 @@ trait Attr extends StObject {
 }
 object Attr {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attr: Boolean,
     blur: Boolean,
     brightness: Boolean,
@@ -209,193 +208,130 @@ object Attr {
     __obj.asInstanceOf[Attr]
   }
   
-  @scala.inline
-  implicit class AttrMutableBuilder[Self <: Attr] (val x: Self) extends AnyVal {
+  extension [Self <: Attr](x: Self) {
     
-    @scala.inline
-    def setAttr(value: Boolean): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: Boolean): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlur(value: Boolean): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+    inline def setBlur(value: Boolean): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrightness(value: Boolean): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
+    inline def setBrightness(value: Boolean): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalc(value: Boolean): Self = StObject.set(x, "calc", value.asInstanceOf[js.Any])
+    inline def setCalc(value: Boolean): Self = StObject.set(x, "calc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstant(value: Boolean): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
+    inline def setConstant(value: Boolean): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContrast(value: Boolean): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
+    inline def setContrast(value: Boolean): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounter(value: Boolean): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+    inline def setCounter(value: Boolean): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounters(value: Boolean): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
+    inline def setCounters(value: Boolean): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCubic-bezier`(value: Boolean): Self = StObject.set(x, "cubic-bezier", value.asInstanceOf[js.Any])
+    inline def `setCubic-bezier`(value: Boolean): Self = StObject.set(x, "cubic-bezier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDrop-shadow`(value: Boolean): Self = StObject.set(x, "drop-shadow", value.asInstanceOf[js.Any])
+    inline def `setDrop-shadow`(value: Boolean): Self = StObject.set(x, "drop-shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipse(value: Boolean): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
+    inline def setEllipse(value: Boolean): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnv(value: Boolean): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: Boolean): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrayscale(value: Boolean): Self = StObject.set(x, "grayscale", value.asInstanceOf[js.Any])
+    inline def setGrayscale(value: Boolean): Self = StObject.set(x, "grayscale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsl(value: Boolean): Self = StObject.set(x, "hsl", value.asInstanceOf[js.Any])
+    inline def setHsl(value: Boolean): Self = StObject.set(x, "hsl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsla(value: Boolean): Self = StObject.set(x, "hsla", value.asInstanceOf[js.Any])
+    inline def setHsla(value: Boolean): Self = StObject.set(x, "hsla", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHue-rotate`(value: Boolean): Self = StObject.set(x, "hue-rotate", value.asInstanceOf[js.Any])
+    inline def `setHue-rotate`(value: Boolean): Self = StObject.set(x, "hue-rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHwb(value: Boolean): Self = StObject.set(x, "hwb", value.asInstanceOf[js.Any])
+    inline def setHwb(value: Boolean): Self = StObject.set(x, "hwb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: Boolean): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Boolean): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
+    inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLinear-gradient`(value: Boolean): Self = StObject.set(x, "linear-gradient", value.asInstanceOf[js.Any])
+    inline def `setLinear-gradient`(value: Boolean): Self = StObject.set(x, "linear-gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrix(value: Boolean): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: Boolean): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrix3d(value: Boolean): Self = StObject.set(x, "matrix3d", value.asInstanceOf[js.Any])
+    inline def setMatrix3d(value: Boolean): Self = StObject.set(x, "matrix3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinmax(value: Boolean): Self = StObject.set(x, "minmax", value.asInstanceOf[js.Any])
+    inline def setMinmax(value: Boolean): Self = StObject.set(x, "minmax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Boolean): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Boolean): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaint(value: Boolean): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
+    inline def setPaint(value: Boolean): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: Boolean): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Boolean): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerspective(value: Boolean): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
+    inline def setPerspective(value: Boolean): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygon(value: Boolean): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
+    inline def setPolygon(value: Boolean): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRadial-gradient`(value: Boolean): Self = StObject.set(x, "radial-gradient", value.asInstanceOf[js.Any])
+    inline def `setRadial-gradient`(value: Boolean): Self = StObject.set(x, "radial-gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRect(value: Boolean): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: Boolean): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRepeating-linear-gradient`(value: Boolean): Self = StObject.set(x, "repeating-linear-gradient", value.asInstanceOf[js.Any])
+    inline def `setRepeating-linear-gradient`(value: Boolean): Self = StObject.set(x, "repeating-linear-gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRepeating-radial-gradient`(value: Boolean): Self = StObject.set(x, "repeating-radial-gradient", value.asInstanceOf[js.Any])
+    inline def `setRepeating-radial-gradient`(value: Boolean): Self = StObject.set(x, "repeating-radial-gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRgb(value: Boolean): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
+    inline def setRgb(value: Boolean): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRgba(value: Boolean): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
+    inline def setRgba(value: Boolean): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotate3d(value: Boolean): Self = StObject.set(x, "rotate3d", value.asInstanceOf[js.Any])
+    inline def setRotate3d(value: Boolean): Self = StObject.set(x, "rotate3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateX(value: Boolean): Self = StObject.set(x, "rotateX", value.asInstanceOf[js.Any])
+    inline def setRotateX(value: Boolean): Self = StObject.set(x, "rotateX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateY(value: Boolean): Self = StObject.set(x, "rotateY", value.asInstanceOf[js.Any])
+    inline def setRotateY(value: Boolean): Self = StObject.set(x, "rotateY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateZ(value: Boolean): Self = StObject.set(x, "rotateZ", value.asInstanceOf[js.Any])
+    inline def setRotateZ(value: Boolean): Self = StObject.set(x, "rotateZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaturate(value: Boolean): Self = StObject.set(x, "saturate", value.asInstanceOf[js.Any])
+    inline def setSaturate(value: Boolean): Self = StObject.set(x, "saturate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale3d(value: Boolean): Self = StObject.set(x, "scale3d", value.asInstanceOf[js.Any])
+    inline def setScale3d(value: Boolean): Self = StObject.set(x, "scale3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleX(value: Boolean): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    inline def setScaleX(value: Boolean): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleY(value: Boolean): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    inline def setScaleY(value: Boolean): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleZ(value: Boolean): Self = StObject.set(x, "scaleZ", value.asInstanceOf[js.Any])
+    inline def setScaleZ(value: Boolean): Self = StObject.set(x, "scaleZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSepia(value: Boolean): Self = StObject.set(x, "sepia", value.asInstanceOf[js.Any])
+    inline def setSepia(value: Boolean): Self = StObject.set(x, "sepia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkew(value: Boolean): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
+    inline def setSkew(value: Boolean): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewX(value: Boolean): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
+    inline def setSkewX(value: Boolean): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewY(value: Boolean): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
+    inline def setSkewY(value: Boolean): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+    inline def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslate(value: Boolean): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTranslate(value: Boolean): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslate3d(value: Boolean): Self = StObject.set(x, "translate3d", value.asInstanceOf[js.Any])
+    inline def setTranslate3d(value: Boolean): Self = StObject.set(x, "translate3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateX(value: Boolean): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
+    inline def setTranslateX(value: Boolean): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateY(value: Boolean): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
+    inline def setTranslateY(value: Boolean): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateZ(value: Boolean): Self = StObject.set(x, "translateZ", value.asInstanceOf[js.Any])
+    inline def setTranslateZ(value: Boolean): Self = StObject.set(x, "translateZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: Boolean): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Boolean): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVar(value: Boolean): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
+    inline def setVar(value: Boolean): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait XAccessibleEventBroadcaster
 }
 object XAccessibleEventBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addAccessibleEventListener: XAccessibleEventListener => Unit,
     queryInterface: `type` => js.Any,
@@ -36,13 +35,10 @@ object XAccessibleEventBroadcaster {
     __obj.asInstanceOf[XAccessibleEventBroadcaster]
   }
   
-  @scala.inline
-  implicit class XAccessibleEventBroadcasterMutableBuilder[Self <: XAccessibleEventBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleEventBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddAccessibleEventListener(value: XAccessibleEventListener => Unit): Self = StObject.set(x, "addAccessibleEventListener", js.Any.fromFunction1(value))
+    inline def setAddAccessibleEventListener(value: XAccessibleEventListener => Unit): Self = StObject.set(x, "addAccessibleEventListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveAccessibleEventListener(value: XAccessibleEventListener => Unit): Self = StObject.set(x, "removeAccessibleEventListener", js.Any.fromFunction1(value))
+    inline def setRemoveAccessibleEventListener(value: XAccessibleEventListener => Unit): Self = StObject.set(x, "removeAccessibleEventListener", js.Any.fromFunction1(value))
   }
 }

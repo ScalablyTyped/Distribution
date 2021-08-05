@@ -44,8 +44,7 @@ trait DataProviderResult extends StObject {
 }
 object DataProviderResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientProviders: StringDictionary[ClientDataProviderQuery],
     data: StringDictionary[js.Any],
     exceptions: StringDictionary[DataProviderExceptionDetails],
@@ -58,31 +57,22 @@ object DataProviderResult {
     __obj.asInstanceOf[DataProviderResult]
   }
   
-  @scala.inline
-  implicit class DataProviderResultMutableBuilder[Self <: DataProviderResult] (val x: Self) extends AnyVal {
+  extension [Self <: DataProviderResult](x: Self) {
     
-    @scala.inline
-    def setClientProviders(value: StringDictionary[ClientDataProviderQuery]): Self = StObject.set(x, "clientProviders", value.asInstanceOf[js.Any])
+    inline def setClientProviders(value: StringDictionary[ClientDataProviderQuery]): Self = StObject.set(x, "clientProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptions(value: StringDictionary[DataProviderExceptionDetails]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
+    inline def setExceptions(value: StringDictionary[DataProviderExceptionDetails]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedProviders(value: js.Array[ResolvedDataProvider]): Self = StObject.set(x, "resolvedProviders", value.asInstanceOf[js.Any])
+    inline def setResolvedProviders(value: js.Array[ResolvedDataProvider]): Self = StObject.set(x, "resolvedProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedProvidersVarargs(value: ResolvedDataProvider*): Self = StObject.set(x, "resolvedProviders", js.Array(value :_*))
+    inline def setResolvedProvidersVarargs(value: ResolvedDataProvider*): Self = StObject.set(x, "resolvedProviders", js.Array(value :_*))
     
-    @scala.inline
-    def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
+    inline def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeValue(value: String): Self = StObject.set(x, "scopeValue", value.asInstanceOf[js.Any])
+    inline def setScopeValue(value: String): Self = StObject.set(x, "scopeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedData(value: StringDictionary[js.Any]): Self = StObject.set(x, "sharedData", value.asInstanceOf[js.Any])
+    inline def setSharedData(value: StringDictionary[js.Any]): Self = StObject.set(x, "sharedData", value.asInstanceOf[js.Any])
   }
 }

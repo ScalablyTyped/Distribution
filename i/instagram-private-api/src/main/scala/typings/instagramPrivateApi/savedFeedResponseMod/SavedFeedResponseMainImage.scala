@@ -12,19 +12,15 @@ trait SavedFeedResponseMainImage extends StObject {
 }
 object SavedFeedResponseMainImage {
   
-  @scala.inline
-  def apply(image_versions2: SavedFeedResponseImageVersions2, preview: Null): SavedFeedResponseMainImage = {
+  inline def apply(image_versions2: SavedFeedResponseImageVersions2, preview: Null): SavedFeedResponseMainImage = {
     val __obj = js.Dynamic.literal(image_versions2 = image_versions2.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedFeedResponseMainImage]
   }
   
-  @scala.inline
-  implicit class SavedFeedResponseMainImageMutableBuilder[Self <: SavedFeedResponseMainImage] (val x: Self) extends AnyVal {
+  extension [Self <: SavedFeedResponseMainImage](x: Self) {
     
-    @scala.inline
-    def setImage_versions2(value: SavedFeedResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
+    inline def setImage_versions2(value: SavedFeedResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreview(value: Null): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Null): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
   }
 }

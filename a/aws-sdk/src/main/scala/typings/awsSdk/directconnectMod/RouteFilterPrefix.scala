@@ -13,19 +13,15 @@ trait RouteFilterPrefix extends StObject {
 }
 object RouteFilterPrefix {
   
-  @scala.inline
-  def apply(): RouteFilterPrefix = {
+  inline def apply(): RouteFilterPrefix = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteFilterPrefix]
   }
   
-  @scala.inline
-  implicit class RouteFilterPrefixMutableBuilder[Self <: RouteFilterPrefix] (val x: Self) extends AnyVal {
+  extension [Self <: RouteFilterPrefix](x: Self) {
     
-    @scala.inline
-    def setCidr(value: CIDR): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: CIDR): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrUndefined: Self = StObject.set(x, "cidr", js.undefined)
+    inline def setCidrUndefined: Self = StObject.set(x, "cidr", js.undefined)
   }
 }

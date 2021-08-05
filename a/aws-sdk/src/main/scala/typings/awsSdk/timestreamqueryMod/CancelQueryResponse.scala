@@ -13,19 +13,15 @@ trait CancelQueryResponse extends StObject {
 }
 object CancelQueryResponse {
   
-  @scala.inline
-  def apply(): CancelQueryResponse = {
+  inline def apply(): CancelQueryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelQueryResponse]
   }
   
-  @scala.inline
-  implicit class CancelQueryResponseMutableBuilder[Self <: CancelQueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CancelQueryResponse](x: Self) {
     
-    @scala.inline
-    def setCancellationMessage(value: String): Self = StObject.set(x, "CancellationMessage", value.asInstanceOf[js.Any])
+    inline def setCancellationMessage(value: String): Self = StObject.set(x, "CancellationMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancellationMessageUndefined: Self = StObject.set(x, "CancellationMessage", js.undefined)
+    inline def setCancellationMessageUndefined: Self = StObject.set(x, "CancellationMessage", js.undefined)
   }
 }

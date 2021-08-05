@@ -41,37 +41,27 @@ trait Product extends StObject {
 }
 object Product {
   
-  @scala.inline
-  def apply(price: String, priceCurrencyCode: String, productID: String, title: String): Product = {
+  inline def apply(price: String, priceCurrencyCode: String, productID: String, title: String): Product = {
     val __obj = js.Dynamic.literal(price = price.asInstanceOf[js.Any], priceCurrencyCode = priceCurrencyCode.asInstanceOf[js.Any], productID = productID.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Product]
   }
   
-  @scala.inline
-  implicit class ProductMutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
+  extension [Self <: Product](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setImageURI(value: String): Self = StObject.set(x, "imageURI", value.asInstanceOf[js.Any])
+    inline def setImageURI(value: String): Self = StObject.set(x, "imageURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageURIUndefined: Self = StObject.set(x, "imageURI", js.undefined)
+    inline def setImageURIUndefined: Self = StObject.set(x, "imageURI", js.undefined)
     
-    @scala.inline
-    def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceCurrencyCode(value: String): Self = StObject.set(x, "priceCurrencyCode", value.asInstanceOf[js.Any])
+    inline def setPriceCurrencyCode(value: String): Self = StObject.set(x, "priceCurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductID(value: String): Self = StObject.set(x, "productID", value.asInstanceOf[js.Any])
+    inline def setProductID(value: String): Self = StObject.set(x, "productID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

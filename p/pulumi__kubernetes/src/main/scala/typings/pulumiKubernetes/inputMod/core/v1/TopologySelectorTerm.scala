@@ -17,22 +17,17 @@ trait TopologySelectorTerm extends StObject {
 }
 object TopologySelectorTerm {
   
-  @scala.inline
-  def apply(): TopologySelectorTerm = {
+  inline def apply(): TopologySelectorTerm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopologySelectorTerm]
   }
   
-  @scala.inline
-  implicit class TopologySelectorTermMutableBuilder[Self <: TopologySelectorTerm] (val x: Self) extends AnyVal {
+  extension [Self <: TopologySelectorTerm](x: Self) {
     
-    @scala.inline
-    def setMatchLabelExpressions(value: Input[js.Array[Input[TopologySelectorLabelRequirement]]]): Self = StObject.set(x, "matchLabelExpressions", value.asInstanceOf[js.Any])
+    inline def setMatchLabelExpressions(value: Input[js.Array[Input[TopologySelectorLabelRequirement]]]): Self = StObject.set(x, "matchLabelExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchLabelExpressionsUndefined: Self = StObject.set(x, "matchLabelExpressions", js.undefined)
+    inline def setMatchLabelExpressionsUndefined: Self = StObject.set(x, "matchLabelExpressions", js.undefined)
     
-    @scala.inline
-    def setMatchLabelExpressionsVarargs(value: Input[TopologySelectorLabelRequirement]*): Self = StObject.set(x, "matchLabelExpressions", js.Array(value :_*))
+    inline def setMatchLabelExpressionsVarargs(value: Input[TopologySelectorLabelRequirement]*): Self = StObject.set(x, "matchLabelExpressions", js.Array(value :_*))
   }
 }

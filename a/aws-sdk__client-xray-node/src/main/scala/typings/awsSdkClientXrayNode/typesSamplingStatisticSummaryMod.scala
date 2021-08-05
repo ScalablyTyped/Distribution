@@ -36,44 +36,32 @@ object typesSamplingStatisticSummaryMod {
   }
   object SamplingStatisticSummary {
     
-    @scala.inline
-    def apply(): SamplingStatisticSummary = {
+    inline def apply(): SamplingStatisticSummary = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SamplingStatisticSummary]
     }
     
-    @scala.inline
-    implicit class SamplingStatisticSummaryMutableBuilder[Self <: SamplingStatisticSummary] (val x: Self) extends AnyVal {
+    extension [Self <: SamplingStatisticSummary](x: Self) {
       
-      @scala.inline
-      def setBorrowCount(value: Double): Self = StObject.set(x, "BorrowCount", value.asInstanceOf[js.Any])
+      inline def setBorrowCount(value: Double): Self = StObject.set(x, "BorrowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorrowCountUndefined: Self = StObject.set(x, "BorrowCount", js.undefined)
+      inline def setBorrowCountUndefined: Self = StObject.set(x, "BorrowCount", js.undefined)
       
-      @scala.inline
-      def setRequestCount(value: Double): Self = StObject.set(x, "RequestCount", value.asInstanceOf[js.Any])
+      inline def setRequestCount(value: Double): Self = StObject.set(x, "RequestCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestCountUndefined: Self = StObject.set(x, "RequestCount", js.undefined)
+      inline def setRequestCountUndefined: Self = StObject.set(x, "RequestCount", js.undefined)
       
-      @scala.inline
-      def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+      inline def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
+      inline def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
       
-      @scala.inline
-      def setSampledCount(value: Double): Self = StObject.set(x, "SampledCount", value.asInstanceOf[js.Any])
+      inline def setSampledCount(value: Double): Self = StObject.set(x, "SampledCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampledCountUndefined: Self = StObject.set(x, "SampledCount", js.undefined)
+      inline def setSampledCountUndefined: Self = StObject.set(x, "SampledCount", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     }
   }
   
@@ -89,20 +77,16 @@ object typesSamplingStatisticSummaryMod {
   }
   object UnmarshalledSamplingStatisticSummary {
     
-    @scala.inline
-    def apply(): UnmarshalledSamplingStatisticSummary = {
+    inline def apply(): UnmarshalledSamplingStatisticSummary = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledSamplingStatisticSummary]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSamplingStatisticSummaryMutableBuilder[Self <: UnmarshalledSamplingStatisticSummary] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSamplingStatisticSummary](x: Self) {
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     }
   }
 }

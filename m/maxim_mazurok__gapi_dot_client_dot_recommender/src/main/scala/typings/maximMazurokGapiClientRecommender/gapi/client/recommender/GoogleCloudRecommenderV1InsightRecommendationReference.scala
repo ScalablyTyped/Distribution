@@ -11,19 +11,15 @@ trait GoogleCloudRecommenderV1InsightRecommendationReference extends StObject {
 }
 object GoogleCloudRecommenderV1InsightRecommendationReference {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommenderV1InsightRecommendationReference = {
+  inline def apply(): GoogleCloudRecommenderV1InsightRecommendationReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommenderV1InsightRecommendationReference]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommenderV1InsightRecommendationReferenceMutableBuilder[Self <: GoogleCloudRecommenderV1InsightRecommendationReference] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommenderV1InsightRecommendationReference](x: Self) {
     
-    @scala.inline
-    def setRecommendation(value: String): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
+    inline def setRecommendation(value: String): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationUndefined: Self = StObject.set(x, "recommendation", js.undefined)
+    inline def setRecommendationUndefined: Self = StObject.set(x, "recommendation", js.undefined)
   }
 }

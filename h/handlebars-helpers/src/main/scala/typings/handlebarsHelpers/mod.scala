@@ -9,22 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): StringDictionary[HelperDelegate] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StringDictionary[HelperDelegate]]
-  @scala.inline
-  def apply(groups: String): StringDictionary[HelperDelegate] = ^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[HelperDelegate]]
-  @scala.inline
-  def apply(groups: String, options: Options): StringDictionary[HelperDelegate] = (^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[HelperDelegate]]
-  @scala.inline
-  def apply(groups: js.Array[String]): StringDictionary[HelperDelegate] = ^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[HelperDelegate]]
-  @scala.inline
-  def apply(groups: js.Array[String], options: Options): StringDictionary[HelperDelegate] = (^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[HelperDelegate]]
-  @scala.inline
-  def apply(groups: Unit, options: Options): StringDictionary[HelperDelegate] = (^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[HelperDelegate]]
-  @scala.inline
-  def apply(groups: Options): StringDictionary[HelperDelegate] = ^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[HelperDelegate]]
-  @scala.inline
-  def apply(groups: Options, options: Options): StringDictionary[HelperDelegate] = (^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[HelperDelegate]]
+  inline def apply(): StringDictionary[HelperDelegate] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StringDictionary[HelperDelegate]]
+  inline def apply(groups: String): StringDictionary[HelperDelegate] = ^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[HelperDelegate]]
+  inline def apply(groups: String, options: Options): StringDictionary[HelperDelegate] = (^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[HelperDelegate]]
+  inline def apply(groups: js.Array[String]): StringDictionary[HelperDelegate] = ^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[HelperDelegate]]
+  inline def apply(groups: js.Array[String], options: Options): StringDictionary[HelperDelegate] = (^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[HelperDelegate]]
+  inline def apply(groups: Unit, options: Options): StringDictionary[HelperDelegate] = (^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[HelperDelegate]]
+  inline def apply(groups: Options): StringDictionary[HelperDelegate] = ^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[HelperDelegate]]
+  inline def apply(groups: Options, options: Options): StringDictionary[HelperDelegate] = (^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[HelperDelegate]]
   
   @JSImport("handlebars-helpers", JSImport.Namespace)
   @js.native
@@ -42,26 +34,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHandlebars(value: TypeofHandlebars): Self = StObject.set(x, "handlebars", value.asInstanceOf[js.Any])
+      inline def setHandlebars(value: TypeofHandlebars): Self = StObject.set(x, "handlebars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlebarsUndefined: Self = StObject.set(x, "handlebars", js.undefined)
+      inline def setHandlebarsUndefined: Self = StObject.set(x, "handlebars", js.undefined)
       
-      @scala.inline
-      def setHbs(value: TypeofHandlebars): Self = StObject.set(x, "hbs", value.asInstanceOf[js.Any])
+      inline def setHbs(value: TypeofHandlebars): Self = StObject.set(x, "hbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHbsUndefined: Self = StObject.set(x, "hbs", js.undefined)
+      inline def setHbsUndefined: Self = StObject.set(x, "hbs", js.undefined)
     }
   }
   
@@ -96,8 +82,7 @@ object mod {
   }
   object Utils_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       changecase: (String, js.Function1[/* str */ String, String]) => String,
       chop: String => String,
       contains: (js.Array[js.Any], js.Any, Double) => Boolean
@@ -106,17 +91,13 @@ object mod {
       __obj.asInstanceOf[Utils_]
     }
     
-    @scala.inline
-    implicit class Utils_MutableBuilder[Self <: Utils_] (val x: Self) extends AnyVal {
+    extension [Self <: Utils_](x: Self) {
       
-      @scala.inline
-      def setChangecase(value: (String, js.Function1[/* str */ String, String]) => String): Self = StObject.set(x, "changecase", js.Any.fromFunction2(value))
+      inline def setChangecase(value: (String, js.Function1[/* str */ String, String]) => String): Self = StObject.set(x, "changecase", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChop(value: String => String): Self = StObject.set(x, "chop", js.Any.fromFunction1(value))
+      inline def setChop(value: String => String): Self = StObject.set(x, "chop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContains(value: (js.Array[js.Any], js.Any, Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction3(value))
+      inline def setContains(value: (js.Array[js.Any], js.Any, Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction3(value))
     }
   }
 }

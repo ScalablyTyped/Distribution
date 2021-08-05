@@ -28,73 +28,51 @@ trait LangAccessibilityAxisOptions extends StObject {
 }
 object LangAccessibilityAxisOptions {
   
-  @scala.inline
-  def apply(): LangAccessibilityAxisOptions = {
+  inline def apply(): LangAccessibilityAxisOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangAccessibilityAxisOptions]
   }
   
-  @scala.inline
-  implicit class LangAccessibilityAxisOptionsMutableBuilder[Self <: LangAccessibilityAxisOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangAccessibilityAxisOptions](x: Self) {
     
-    @scala.inline
-    def setRangeCategories(value: String): Self = StObject.set(x, "rangeCategories", value.asInstanceOf[js.Any])
+    inline def setRangeCategories(value: String): Self = StObject.set(x, "rangeCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeCategoriesUndefined: Self = StObject.set(x, "rangeCategories", js.undefined)
+    inline def setRangeCategoriesUndefined: Self = StObject.set(x, "rangeCategories", js.undefined)
     
-    @scala.inline
-    def setRangeFromTo(value: String): Self = StObject.set(x, "rangeFromTo", value.asInstanceOf[js.Any])
+    inline def setRangeFromTo(value: String): Self = StObject.set(x, "rangeFromTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeFromToUndefined: Self = StObject.set(x, "rangeFromTo", js.undefined)
+    inline def setRangeFromToUndefined: Self = StObject.set(x, "rangeFromTo", js.undefined)
     
-    @scala.inline
-    def setTimeRangeDays(value: String): Self = StObject.set(x, "timeRangeDays", value.asInstanceOf[js.Any])
+    inline def setTimeRangeDays(value: String): Self = StObject.set(x, "timeRangeDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRangeDaysUndefined: Self = StObject.set(x, "timeRangeDays", js.undefined)
+    inline def setTimeRangeDaysUndefined: Self = StObject.set(x, "timeRangeDays", js.undefined)
     
-    @scala.inline
-    def setTimeRangeHours(value: String): Self = StObject.set(x, "timeRangeHours", value.asInstanceOf[js.Any])
+    inline def setTimeRangeHours(value: String): Self = StObject.set(x, "timeRangeHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRangeHoursUndefined: Self = StObject.set(x, "timeRangeHours", js.undefined)
+    inline def setTimeRangeHoursUndefined: Self = StObject.set(x, "timeRangeHours", js.undefined)
     
-    @scala.inline
-    def setTimeRangeMinutes(value: String): Self = StObject.set(x, "timeRangeMinutes", value.asInstanceOf[js.Any])
+    inline def setTimeRangeMinutes(value: String): Self = StObject.set(x, "timeRangeMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRangeMinutesUndefined: Self = StObject.set(x, "timeRangeMinutes", js.undefined)
+    inline def setTimeRangeMinutesUndefined: Self = StObject.set(x, "timeRangeMinutes", js.undefined)
     
-    @scala.inline
-    def setTimeRangeSeconds(value: String): Self = StObject.set(x, "timeRangeSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeRangeSeconds(value: String): Self = StObject.set(x, "timeRangeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRangeSecondsUndefined: Self = StObject.set(x, "timeRangeSeconds", js.undefined)
+    inline def setTimeRangeSecondsUndefined: Self = StObject.set(x, "timeRangeSeconds", js.undefined)
     
-    @scala.inline
-    def setXAxisDescriptionPlural(value: String): Self = StObject.set(x, "xAxisDescriptionPlural", value.asInstanceOf[js.Any])
+    inline def setXAxisDescriptionPlural(value: String): Self = StObject.set(x, "xAxisDescriptionPlural", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisDescriptionPluralUndefined: Self = StObject.set(x, "xAxisDescriptionPlural", js.undefined)
+    inline def setXAxisDescriptionPluralUndefined: Self = StObject.set(x, "xAxisDescriptionPlural", js.undefined)
     
-    @scala.inline
-    def setXAxisDescriptionSingular(value: String): Self = StObject.set(x, "xAxisDescriptionSingular", value.asInstanceOf[js.Any])
+    inline def setXAxisDescriptionSingular(value: String): Self = StObject.set(x, "xAxisDescriptionSingular", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisDescriptionSingularUndefined: Self = StObject.set(x, "xAxisDescriptionSingular", js.undefined)
+    inline def setXAxisDescriptionSingularUndefined: Self = StObject.set(x, "xAxisDescriptionSingular", js.undefined)
     
-    @scala.inline
-    def setYAxisDescriptionPlural(value: String): Self = StObject.set(x, "yAxisDescriptionPlural", value.asInstanceOf[js.Any])
+    inline def setYAxisDescriptionPlural(value: String): Self = StObject.set(x, "yAxisDescriptionPlural", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisDescriptionPluralUndefined: Self = StObject.set(x, "yAxisDescriptionPlural", js.undefined)
+    inline def setYAxisDescriptionPluralUndefined: Self = StObject.set(x, "yAxisDescriptionPlural", js.undefined)
     
-    @scala.inline
-    def setYAxisDescriptionSingular(value: String): Self = StObject.set(x, "yAxisDescriptionSingular", value.asInstanceOf[js.Any])
+    inline def setYAxisDescriptionSingular(value: String): Self = StObject.set(x, "yAxisDescriptionSingular", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisDescriptionSingularUndefined: Self = StObject.set(x, "yAxisDescriptionSingular", js.undefined)
+    inline def setYAxisDescriptionSingularUndefined: Self = StObject.set(x, "yAxisDescriptionSingular", js.undefined)
   }
 }

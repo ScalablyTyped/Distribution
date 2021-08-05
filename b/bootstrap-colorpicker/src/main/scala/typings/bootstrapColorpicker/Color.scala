@@ -64,8 +64,7 @@ trait Color extends StObject {
 }
 object Color {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fallbackFormat: String,
     fallbackValue: String,
     hexNumberSignPrefix: Boolean,
@@ -86,49 +85,34 @@ object Color {
     __obj.asInstanceOf[Color]
   }
   
-  @scala.inline
-  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+  extension [Self <: Color](x: Self) {
     
-    @scala.inline
-    def setFallbackFormat(value: String): Self = StObject.set(x, "fallbackFormat", value.asInstanceOf[js.Any])
+    inline def setFallbackFormat(value: String): Self = StObject.set(x, "fallbackFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackValue(value: String): Self = StObject.set(x, "fallbackValue", value.asInstanceOf[js.Any])
+    inline def setFallbackValue(value: String): Self = StObject.set(x, "fallbackValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHexNumberSignPrefix(value: Boolean): Self = StObject.set(x, "hexNumberSignPrefix", value.asInstanceOf[js.Any])
+    inline def setHexNumberSignPrefix(value: Boolean): Self = StObject.set(x, "hexNumberSignPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigFormat(value: String): Self = StObject.set(x, "origFormat", value.asInstanceOf[js.Any])
+    inline def setOrigFormat(value: String): Self = StObject.set(x, "origFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAlpha(value: Double => Unit): Self = StObject.set(x, "setAlpha", js.Any.fromFunction1(value))
+    inline def setSetAlpha(value: Double => Unit): Self = StObject.set(x, "setAlpha", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBrightness(value: Double => Unit): Self = StObject.set(x, "setBrightness", js.Any.fromFunction1(value))
+    inline def setSetBrightness(value: Double => Unit): Self = StObject.set(x, "setBrightness", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetColor(value: String => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
+    inline def setSetColor(value: String => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHue(value: Double => Unit): Self = StObject.set(x, "setHue", js.Any.fromFunction1(value))
+    inline def setSetHue(value: Double => Unit): Self = StObject.set(x, "setHue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSaturation(value: Double => Unit): Self = StObject.set(x, "setSaturation", js.Any.fromFunction1(value))
+    inline def setSetSaturation(value: Double => Unit): Self = StObject.set(x, "setSaturation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToHSL(value: () => String): Self = StObject.set(x, "toHSL", js.Any.fromFunction0(value))
+    inline def setToHSL(value: () => String): Self = StObject.set(x, "toHSL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToHex(value: () => String): Self = StObject.set(x, "toHex", js.Any.fromFunction0(value))
+    inline def setToHex(value: () => String): Self = StObject.set(x, "toHex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToRGB(value: () => String): Self = StObject.set(x, "toRGB", js.Any.fromFunction0(value))
+    inline def setToRGB(value: () => String): Self = StObject.set(x, "toRGB", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToString_(value: ColorFormat => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+    inline def setToString_(value: ColorFormat => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(value: A): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: A): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait GetInlinePolicyForPermissionSetRequest extends StObject {
 }
 object GetInlinePolicyForPermissionSetRequest {
   
-  @scala.inline
-  def apply(InstanceArn: InstanceArn, PermissionSetArn: PermissionSetArn): GetInlinePolicyForPermissionSetRequest = {
+  inline def apply(InstanceArn: InstanceArn, PermissionSetArn: PermissionSetArn): GetInlinePolicyForPermissionSetRequest = {
     val __obj = js.Dynamic.literal(InstanceArn = InstanceArn.asInstanceOf[js.Any], PermissionSetArn = PermissionSetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInlinePolicyForPermissionSetRequest]
   }
   
-  @scala.inline
-  implicit class GetInlinePolicyForPermissionSetRequestMutableBuilder[Self <: GetInlinePolicyForPermissionSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInlinePolicyForPermissionSetRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
+    inline def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
   }
 }

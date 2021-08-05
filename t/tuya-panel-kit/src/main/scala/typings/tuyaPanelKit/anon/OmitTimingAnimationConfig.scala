@@ -15,31 +15,23 @@ trait OmitTimingAnimationConfig extends StObject {
 }
 object OmitTimingAnimationConfig {
   
-  @scala.inline
-  def apply(): OmitTimingAnimationConfig = {
+  inline def apply(): OmitTimingAnimationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OmitTimingAnimationConfig]
   }
   
-  @scala.inline
-  implicit class OmitTimingAnimationConfigMutableBuilder[Self <: OmitTimingAnimationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OmitTimingAnimationConfig](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: /* value */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+    inline def setEasing(value: /* value */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
   }
 }

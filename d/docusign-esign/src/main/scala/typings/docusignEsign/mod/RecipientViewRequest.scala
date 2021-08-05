@@ -147,97 +147,67 @@ trait RecipientViewRequest extends StObject {
 }
 object RecipientViewRequest {
   
-  @scala.inline
-  def apply(): RecipientViewRequest = {
+  inline def apply(): RecipientViewRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientViewRequest]
   }
   
-  @scala.inline
-  implicit class RecipientViewRequestMutableBuilder[Self <: RecipientViewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientViewRequest](x: Self) {
     
-    @scala.inline
-    def setAssertionId(value: String): Self = StObject.set(x, "assertionId", value.asInstanceOf[js.Any])
+    inline def setAssertionId(value: String): Self = StObject.set(x, "assertionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssertionIdUndefined: Self = StObject.set(x, "assertionId", js.undefined)
+    inline def setAssertionIdUndefined: Self = StObject.set(x, "assertionId", js.undefined)
     
-    @scala.inline
-    def setAuthenticationInstant(value: String): Self = StObject.set(x, "authenticationInstant", value.asInstanceOf[js.Any])
+    inline def setAuthenticationInstant(value: String): Self = StObject.set(x, "authenticationInstant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationInstantUndefined: Self = StObject.set(x, "authenticationInstant", js.undefined)
+    inline def setAuthenticationInstantUndefined: Self = StObject.set(x, "authenticationInstant", js.undefined)
     
-    @scala.inline
-    def setAuthenticationMethod(value: String): Self = StObject.set(x, "authenticationMethod", value.asInstanceOf[js.Any])
+    inline def setAuthenticationMethod(value: String): Self = StObject.set(x, "authenticationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationMethodUndefined: Self = StObject.set(x, "authenticationMethod", js.undefined)
+    inline def setAuthenticationMethodUndefined: Self = StObject.set(x, "authenticationMethod", js.undefined)
     
-    @scala.inline
-    def setClientUserId(value: String): Self = StObject.set(x, "clientUserId", value.asInstanceOf[js.Any])
+    inline def setClientUserId(value: String): Self = StObject.set(x, "clientUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUserIdUndefined: Self = StObject.set(x, "clientUserId", js.undefined)
+    inline def setClientUserIdUndefined: Self = StObject.set(x, "clientUserId", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setPingFrequency(value: String): Self = StObject.set(x, "pingFrequency", value.asInstanceOf[js.Any])
+    inline def setPingFrequency(value: String): Self = StObject.set(x, "pingFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPingFrequencyUndefined: Self = StObject.set(x, "pingFrequency", js.undefined)
+    inline def setPingFrequencyUndefined: Self = StObject.set(x, "pingFrequency", js.undefined)
     
-    @scala.inline
-    def setPingUrl(value: String): Self = StObject.set(x, "pingUrl", value.asInstanceOf[js.Any])
+    inline def setPingUrl(value: String): Self = StObject.set(x, "pingUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPingUrlUndefined: Self = StObject.set(x, "pingUrl", js.undefined)
+    inline def setPingUrlUndefined: Self = StObject.set(x, "pingUrl", js.undefined)
     
-    @scala.inline
-    def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
+    inline def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
+    inline def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
     
-    @scala.inline
-    def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
+    inline def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUrlUndefined: Self = StObject.set(x, "returnUrl", js.undefined)
+    inline def setReturnUrlUndefined: Self = StObject.set(x, "returnUrl", js.undefined)
     
-    @scala.inline
-    def setSecurityDomain(value: String): Self = StObject.set(x, "securityDomain", value.asInstanceOf[js.Any])
+    inline def setSecurityDomain(value: String): Self = StObject.set(x, "securityDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityDomainUndefined: Self = StObject.set(x, "securityDomain", js.undefined)
+    inline def setSecurityDomainUndefined: Self = StObject.set(x, "securityDomain", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
     
-    @scala.inline
-    def setXFrameOptions(value: String): Self = StObject.set(x, "xFrameOptions", value.asInstanceOf[js.Any])
+    inline def setXFrameOptions(value: String): Self = StObject.set(x, "xFrameOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXFrameOptionsAllowFromUrl(value: String): Self = StObject.set(x, "xFrameOptionsAllowFromUrl", value.asInstanceOf[js.Any])
+    inline def setXFrameOptionsAllowFromUrl(value: String): Self = StObject.set(x, "xFrameOptionsAllowFromUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXFrameOptionsAllowFromUrlUndefined: Self = StObject.set(x, "xFrameOptionsAllowFromUrl", js.undefined)
+    inline def setXFrameOptionsAllowFromUrlUndefined: Self = StObject.set(x, "xFrameOptionsAllowFromUrl", js.undefined)
     
-    @scala.inline
-    def setXFrameOptionsUndefined: Self = StObject.set(x, "xFrameOptions", js.undefined)
+    inline def setXFrameOptionsUndefined: Self = StObject.set(x, "xFrameOptions", js.undefined)
   }
 }

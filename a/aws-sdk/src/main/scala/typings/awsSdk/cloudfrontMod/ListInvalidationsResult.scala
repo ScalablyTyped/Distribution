@@ -13,19 +13,15 @@ trait ListInvalidationsResult extends StObject {
 }
 object ListInvalidationsResult {
   
-  @scala.inline
-  def apply(): ListInvalidationsResult = {
+  inline def apply(): ListInvalidationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListInvalidationsResult]
   }
   
-  @scala.inline
-  implicit class ListInvalidationsResultMutableBuilder[Self <: ListInvalidationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListInvalidationsResult](x: Self) {
     
-    @scala.inline
-    def setInvalidationList(value: InvalidationList): Self = StObject.set(x, "InvalidationList", value.asInstanceOf[js.Any])
+    inline def setInvalidationList(value: InvalidationList): Self = StObject.set(x, "InvalidationList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidationListUndefined: Self = StObject.set(x, "InvalidationList", js.undefined)
+    inline def setInvalidationListUndefined: Self = StObject.set(x, "InvalidationList", js.undefined)
   }
 }

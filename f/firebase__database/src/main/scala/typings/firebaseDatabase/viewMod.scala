@@ -42,9 +42,9 @@ object viewMod {
     def applyOperation(operation: Operation, writesCache: WriteTreeRef): js.Array[Event] = js.native
     def applyOperation(operation: Operation, writesCache: WriteTreeRef, completeServerCache: Node): js.Array[Event] = js.native
     
-    var eventGenerator_ : js.Any = js.native
+    /* private */ var eventGenerator_ : js.Any = js.native
     
-    var eventRegistrations_ : js.Any = js.native
+    /* private */ var eventRegistrations_ : js.Any = js.native
     
     /**
       * @private
@@ -83,9 +83,9 @@ object viewMod {
       */
     def isEmpty(): Boolean = js.native
     
-    var processor_ : js.Any = js.native
+    /* private */ var processor_ : js.Any = js.native
     
-    var query_ : js.Any = js.native
+    /* private */ var query_ : js.Any = js.native
     
     /**
       * @param {?EventRegistration} eventRegistration If null, remove all callbacks.
@@ -97,6 +97,6 @@ object viewMod {
     def removeEventRegistration(eventRegistration: EventRegistration): js.Array[Event] = js.native
     def removeEventRegistration(eventRegistration: EventRegistration, cancelError: Error): js.Array[Event] = js.native
     
-    var viewCache_ : js.Any = js.native
+    /* private */ var viewCache_ : js.Any = js.native
   }
 }

@@ -36,79 +36,55 @@ trait Route
 }
 object Route {
   
-  @scala.inline
-  def apply(): Route = {
+  inline def apply(): Route = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Route]
   }
   
-  @scala.inline
-  implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
+  extension [Self <: Route](x: Self) {
     
-    @scala.inline
-    def setBackButtonTitle(value: String): Self = StObject.set(x, "backButtonTitle", value.asInstanceOf[js.Any])
+    inline def setBackButtonTitle(value: String): Self = StObject.set(x, "backButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackButtonTitleUndefined: Self = StObject.set(x, "backButtonTitle", js.undefined)
+    inline def setBackButtonTitleUndefined: Self = StObject.set(x, "backButtonTitle", js.undefined)
     
-    @scala.inline
-    def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setOnRightButtonPress(value: () => Unit): Self = StObject.set(x, "onRightButtonPress", js.Any.fromFunction0(value))
+    inline def setOnRightButtonPress(value: () => Unit): Self = StObject.set(x, "onRightButtonPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnRightButtonPressUndefined: Self = StObject.set(x, "onRightButtonPress", js.undefined)
+    inline def setOnRightButtonPressUndefined: Self = StObject.set(x, "onRightButtonPress", js.undefined)
     
-    @scala.inline
-    def setPassProps(value: js.Object): Self = StObject.set(x, "passProps", value.asInstanceOf[js.Any])
+    inline def setPassProps(value: js.Object): Self = StObject.set(x, "passProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassPropsUndefined: Self = StObject.set(x, "passProps", js.undefined)
+    inline def setPassPropsUndefined: Self = StObject.set(x, "passProps", js.undefined)
     
-    @scala.inline
-    def setRightButtonTitle(value: String): Self = StObject.set(x, "rightButtonTitle", value.asInstanceOf[js.Any])
+    inline def setRightButtonTitle(value: String): Self = StObject.set(x, "rightButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightButtonTitleUndefined: Self = StObject.set(x, "rightButtonTitle", js.undefined)
+    inline def setRightButtonTitleUndefined: Self = StObject.set(x, "rightButtonTitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setWrapperStyle(value: js.Any): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
+    inline def setWrapperStyle(value: js.Any): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
+    inline def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
   }
 }

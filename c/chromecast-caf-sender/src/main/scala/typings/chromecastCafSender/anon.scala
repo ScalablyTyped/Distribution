@@ -39,17 +39,14 @@ object anon {
   }
   object TypeofCastContext {
     
-    @scala.inline
-    def apply(getInstance: () => CastContext): TypeofCastContext = {
+    inline def apply(getInstance: () => CastContext): TypeofCastContext = {
       val __obj = js.Dynamic.literal(getInstance = js.Any.fromFunction0(getInstance))
       __obj.asInstanceOf[TypeofCastContext]
     }
     
-    @scala.inline
-    implicit class TypeofCastContextMutableBuilder[Self <: TypeofCastContext] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofCastContext](x: Self) {
       
-      @scala.inline
-      def setGetInstance(value: () => CastContext): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
+      inline def setGetInstance(value: () => CastContext): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
     }
   }
   
@@ -66,17 +63,14 @@ object anon {
   }
   object Typeofcast {
     
-    @scala.inline
-    def apply(framework: Typeofframework): Typeofcast = {
+    inline def apply(framework: Typeofframework): Typeofcast = {
       val __obj = js.Dynamic.literal(framework = framework.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofcast]
     }
     
-    @scala.inline
-    implicit class TypeofcastMutableBuilder[Self <: Typeofcast] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofcast](x: Self) {
       
-      @scala.inline
-      def setFramework(value: Typeofframework): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
+      inline def setFramework(value: Typeofframework): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,8 +149,7 @@ object anon {
   }
   object Typeofframework {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActiveInputStateEventData: Instantiable1[/* activeInputState */ ActiveInputState, ActiveInputStateEventData],
       ApplicationMetadata: Instantiable1[/* sessionObj */ Session, ApplicationMetadata],
       ApplicationMetadataEventData: Instantiable1[/* metadata */ ApplicationMetadata, ApplicationMetadataEventData],
@@ -188,41 +181,29 @@ object anon {
       __obj.asInstanceOf[Typeofframework]
     }
     
-    @scala.inline
-    implicit class TypeofframeworkMutableBuilder[Self <: Typeofframework] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofframework](x: Self) {
       
-      @scala.inline
-      def setActiveInputStateEventData(value: Instantiable1[/* activeInputState */ ActiveInputState, ActiveInputStateEventData]): Self = StObject.set(x, "ActiveInputStateEventData", value.asInstanceOf[js.Any])
+      inline def setActiveInputStateEventData(value: Instantiable1[/* activeInputState */ ActiveInputState, ActiveInputStateEventData]): Self = StObject.set(x, "ActiveInputStateEventData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationMetadata(value: Instantiable1[/* sessionObj */ Session, ApplicationMetadata]): Self = StObject.set(x, "ApplicationMetadata", value.asInstanceOf[js.Any])
+      inline def setApplicationMetadata(value: Instantiable1[/* sessionObj */ Session, ApplicationMetadata]): Self = StObject.set(x, "ApplicationMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationMetadataEventData(value: Instantiable1[/* metadata */ ApplicationMetadata, ApplicationMetadataEventData]): Self = StObject.set(x, "ApplicationMetadataEventData", value.asInstanceOf[js.Any])
+      inline def setApplicationMetadataEventData(value: Instantiable1[/* metadata */ ApplicationMetadata, ApplicationMetadataEventData]): Self = StObject.set(x, "ApplicationMetadataEventData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationStatusEventData(value: Instantiable1[/* status */ String, ApplicationStatusEventData]): Self = StObject.set(x, "ApplicationStatusEventData", value.asInstanceOf[js.Any])
+      inline def setApplicationStatusEventData(value: Instantiable1[/* status */ String, ApplicationStatusEventData]): Self = StObject.set(x, "ApplicationStatusEventData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCastContext(value: Instantiable0[CastContext] & TypeofCastContext): Self = StObject.set(x, "CastContext", value.asInstanceOf[js.Any])
+      inline def setCastContext(value: Instantiable0[CastContext] & TypeofCastContext): Self = StObject.set(x, "CastContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCastSession(value: Instantiable2[/* sessionObj */ Session, /* state */ SessionState, CastSession]): Self = StObject.set(x, "CastSession", value.asInstanceOf[js.Any])
+      inline def setCastSession(value: Instantiable2[/* sessionObj */ Session, /* state */ SessionState, CastSession]): Self = StObject.set(x, "CastSession", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCastStateEventData(value: Instantiable1[/* castState */ CastState, CastStateEventData]): Self = StObject.set(x, "CastStateEventData", value.asInstanceOf[js.Any])
+      inline def setCastStateEventData(value: Instantiable1[/* castState */ CastState, CastStateEventData]): Self = StObject.set(x, "CastStateEventData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventData(value: Instantiable1[/* type */ String, EventData]): Self = StObject.set(x, "EventData", value.asInstanceOf[js.Any])
+      inline def setEventData(value: Instantiable1[/* type */ String, EventData]): Self = StObject.set(x, "EventData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaSessionEventData(value: Instantiable1[/* mediaSession */ Media, MediaSessionEventData]): Self = StObject.set(x, "MediaSessionEventData", value.asInstanceOf[js.Any])
+      inline def setMediaSessionEventData(value: Instantiable1[/* mediaSession */ Media, MediaSessionEventData]): Self = StObject.set(x, "MediaSessionEventData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemotePlayer(value: Instantiable0[RemotePlayer]): Self = StObject.set(x, "RemotePlayer", value.asInstanceOf[js.Any])
+      inline def setRemotePlayer(value: Instantiable0[RemotePlayer]): Self = StObject.set(x, "RemotePlayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemotePlayerChangedEvent(
+      inline def setRemotePlayerChangedEvent(
         value: Instantiable3[
               /* type */ RemotePlayerEventType, 
               /* field */ String, 
@@ -231,11 +212,9 @@ object anon {
             ]
       ): Self = StObject.set(x, "RemotePlayerChangedEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemotePlayerController(value: Instantiable1[/* player */ RemotePlayer, RemotePlayerController]): Self = StObject.set(x, "RemotePlayerController", value.asInstanceOf[js.Any])
+      inline def setRemotePlayerController(value: Instantiable1[/* player */ RemotePlayer, RemotePlayerController]): Self = StObject.set(x, "RemotePlayerController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionStateEventData(
+      inline def setSessionStateEventData(
         value: Instantiable3[
               /* session */ CastSession, 
               /* sessionState */ SessionState, 
@@ -244,14 +223,11 @@ object anon {
             ]
       ): Self = StObject.set(x, "SessionStateEventData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetLoggerLevel(value: LoggerLevel => Unit): Self = StObject.set(x, "setLoggerLevel", js.Any.fromFunction1(value))
+      inline def setSetLoggerLevel(value: LoggerLevel => Unit): Self = StObject.set(x, "setLoggerLevel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
+      inline def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeEventData(value: Instantiable2[/* volume */ Double, /* isMute */ Boolean, VolumeEventData]): Self = StObject.set(x, "VolumeEventData", value.asInstanceOf[js.Any])
+      inline def setVolumeEventData(value: Instantiable2[/* volume */ Double, /* isMute */ Boolean, VolumeEventData]): Self = StObject.set(x, "VolumeEventData", value.asInstanceOf[js.Any])
     }
   }
 }

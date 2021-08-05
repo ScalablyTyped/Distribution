@@ -22,7 +22,7 @@ trait ChartFillFormat extends StObject {
   
   val GradientVariant: Double
   
-  @JSName("Office.ChartFillFormat_typekey")
+  /* private */ @JSName("Office.ChartFillFormat_typekey")
   var OfficeDotChartFillFormat_typekey: ChartFillFormat
   
   def OneColorGradient(Style: Double, Variant: Double, Degree: Double): Unit
@@ -59,8 +59,7 @@ trait ChartFillFormat extends StObject {
 }
 object ChartFillFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     BackColor: ChartColorFormat,
     Creator: Double,
@@ -92,82 +91,56 @@ object ChartFillFormat {
     __obj.asInstanceOf[ChartFillFormat]
   }
   
-  @scala.inline
-  implicit class ChartFillFormatMutableBuilder[Self <: ChartFillFormat] (val x: Self) extends AnyVal {
+  extension [Self <: ChartFillFormat](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackColor(value: ChartColorFormat): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
+    inline def setBackColor(value: ChartColorFormat): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeColor(value: ChartColorFormat): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
+    inline def setForeColor(value: ChartColorFormat): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientColorType(value: Double): Self = StObject.set(x, "GradientColorType", value.asInstanceOf[js.Any])
+    inline def setGradientColorType(value: Double): Self = StObject.set(x, "GradientColorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientDegree(value: Double): Self = StObject.set(x, "GradientDegree", value.asInstanceOf[js.Any])
+    inline def setGradientDegree(value: Double): Self = StObject.set(x, "GradientDegree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientStyle(value: Double): Self = StObject.set(x, "GradientStyle", value.asInstanceOf[js.Any])
+    inline def setGradientStyle(value: Double): Self = StObject.set(x, "GradientStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientVariant(value: Double): Self = StObject.set(x, "GradientVariant", value.asInstanceOf[js.Any])
+    inline def setGradientVariant(value: Double): Self = StObject.set(x, "GradientVariant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotChartFillFormat_typekey(value: ChartFillFormat): Self = StObject.set(x, "Office.ChartFillFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotChartFillFormat_typekey(value: ChartFillFormat): Self = StObject.set(x, "Office.ChartFillFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneColorGradient(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "OneColorGradient", js.Any.fromFunction3(value))
+    inline def setOneColorGradient(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "OneColorGradient", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: Double): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: Double): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatterned(value: Double => Unit): Self = StObject.set(x, "Patterned", js.Any.fromFunction1(value))
+    inline def setPatterned(value: Double => Unit): Self = StObject.set(x, "Patterned", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPresetGradient(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "PresetGradient", js.Any.fromFunction3(value))
+    inline def setPresetGradient(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "PresetGradient", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPresetGradientType(value: Double): Self = StObject.set(x, "PresetGradientType", value.asInstanceOf[js.Any])
+    inline def setPresetGradientType(value: Double): Self = StObject.set(x, "PresetGradientType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetTexture(value: Double): Self = StObject.set(x, "PresetTexture", value.asInstanceOf[js.Any])
+    inline def setPresetTexture(value: Double): Self = StObject.set(x, "PresetTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetTextured(value: Double => Unit): Self = StObject.set(x, "PresetTextured", js.Any.fromFunction1(value))
+    inline def setPresetTextured(value: Double => Unit): Self = StObject.set(x, "PresetTextured", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSolid(value: () => Unit): Self = StObject.set(x, "Solid", js.Any.fromFunction0(value))
+    inline def setSolid(value: () => Unit): Self = StObject.set(x, "Solid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextureName(value: String): Self = StObject.set(x, "TextureName", value.asInstanceOf[js.Any])
+    inline def setTextureName(value: String): Self = StObject.set(x, "TextureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureType(value: Double): Self = StObject.set(x, "TextureType", value.asInstanceOf[js.Any])
+    inline def setTextureType(value: Double): Self = StObject.set(x, "TextureType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwoColorGradient(value: (Double, Double) => Unit): Self = StObject.set(x, "TwoColorGradient", js.Any.fromFunction2(value))
+    inline def setTwoColorGradient(value: (Double, Double) => Unit): Self = StObject.set(x, "TwoColorGradient", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPicture(value: (String, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "UserPicture", js.Any.fromFunction4(value))
+    inline def setUserPicture(value: (String, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "UserPicture", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setUserTextured(value: String => Unit): Self = StObject.set(x, "UserTextured", js.Any.fromFunction1(value))
+    inline def setUserTextured(value: String => Unit): Self = StObject.set(x, "UserTextured", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisible(value: Double): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Double): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

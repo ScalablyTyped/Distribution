@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dumpLicenses(args: CrawlerOptions, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dumpLicenses")(args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dumpLicenses(args: CrawlerOptions, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dumpLicenses")(args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Callback = js.Function2[/* error */ Error | Null, /* licenses */ Licenses, Unit]
   
@@ -55,83 +54,58 @@ object mod {
   }
   object CrawlerOptions {
     
-    @scala.inline
-    def apply(start: String | js.Array[String]): CrawlerOptions = {
+    inline def apply(start: String | js.Array[String]): CrawlerOptions = {
       val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[CrawlerOptions]
     }
     
-    @scala.inline
-    implicit class CrawlerOptionsMutableBuilder[Self <: CrawlerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CrawlerOptions](x: Self) {
       
-      @scala.inline
-      def setCsv(value: String): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+      inline def setCsv(value: String): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
+      inline def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
       
-      @scala.inline
-      def setDependencies(value: Boolean): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: Boolean): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+      inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      @scala.inline
-      def setDevelopment(value: Boolean): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
+      inline def setDevelopment(value: Boolean): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevelopmentUndefined: Self = StObject.set(x, "development", js.undefined)
+      inline def setDevelopmentUndefined: Self = StObject.set(x, "development", js.undefined)
       
-      @scala.inline
-      def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setJson(value: String): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: String): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setOmitVersion(value: Boolean): Self = StObject.set(x, "omitVersion", value.asInstanceOf[js.Any])
+      inline def setOmitVersion(value: Boolean): Self = StObject.set(x, "omitVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOmitVersionUndefined: Self = StObject.set(x, "omitVersion", js.undefined)
+      inline def setOmitVersionUndefined: Self = StObject.set(x, "omitVersion", js.undefined)
       
-      @scala.inline
-      def setOnlyDirectDependencies(value: Boolean): Self = StObject.set(x, "onlyDirectDependencies", value.asInstanceOf[js.Any])
+      inline def setOnlyDirectDependencies(value: Boolean): Self = StObject.set(x, "onlyDirectDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyDirectDependenciesUndefined: Self = StObject.set(x, "onlyDirectDependencies", js.undefined)
+      inline def setOnlyDirectDependenciesUndefined: Self = StObject.set(x, "onlyDirectDependencies", js.undefined)
       
-      @scala.inline
-      def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
+      inline def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductionUndefined: Self = StObject.set(x, "production", js.undefined)
+      inline def setProductionUndefined: Self = StObject.set(x, "production", js.undefined)
       
-      @scala.inline
-      def setRelativeLicensePath(value: Boolean): Self = StObject.set(x, "relativeLicensePath", value.asInstanceOf[js.Any])
+      inline def setRelativeLicensePath(value: Boolean): Self = StObject.set(x, "relativeLicensePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeLicensePathUndefined: Self = StObject.set(x, "relativeLicensePath", js.undefined)
+      inline def setRelativeLicensePathUndefined: Self = StObject.set(x, "relativeLicensePath", js.undefined)
       
-      @scala.inline
-      def setStart(value: String | js.Array[String]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: String | js.Array[String]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartVarargs(value: String*): Self = StObject.set(x, "start", js.Array(value :_*))
+      inline def setStartVarargs(value: String*): Self = StObject.set(x, "start", js.Array(value :_*))
       
-      @scala.inline
-      def setUnknown(value: Boolean): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+      inline def setUnknown(value: Boolean): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnknownUndefined: Self = StObject.set(x, "unknown", js.undefined)
+      inline def setUnknownUndefined: Self = StObject.set(x, "unknown", js.undefined)
     }
   }
   

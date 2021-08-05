@@ -40,24 +40,19 @@ object contextMod {
   }
   object ContactContext {
     
-    @scala.inline
-    def apply(id: Dictkey, name: String): ContactContext = {
+    inline def apply(id: Dictkey, name: String): ContactContext = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("fdc3.contact")
       __obj.asInstanceOf[ContactContext]
     }
     
-    @scala.inline
-    implicit class ContactContextMutableBuilder[Self <: ContactContext] (val x: Self) extends AnyVal {
+    extension [Self <: ContactContext](x: Self) {
       
-      @scala.inline
-      def setId(value: Dictkey): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Dictkey): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: fdc3Dotcontact): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: fdc3Dotcontact): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,30 +83,23 @@ object contextMod {
   }
   object Context {
     
-    @scala.inline
-    def apply(`type`: String): Context = {
+    inline def apply(`type`: String): Context = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setId(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,21 +129,17 @@ object contextMod {
   }
   object InstrumentContext {
     
-    @scala.inline
-    def apply(id: BBG): InstrumentContext = {
+    inline def apply(id: BBG): InstrumentContext = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("fdc3.instrument")
       __obj.asInstanceOf[InstrumentContext]
     }
     
-    @scala.inline
-    implicit class InstrumentContextMutableBuilder[Self <: InstrumentContext] (val x: Self) extends AnyVal {
+    extension [Self <: InstrumentContext](x: Self) {
       
-      @scala.inline
-      def setId(value: BBG): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: BBG): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: fdc3Dotinstrument): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: fdc3Dotinstrument): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,21 +163,17 @@ object contextMod {
   }
   object OrganizationContext {
     
-    @scala.inline
-    def apply(id: LEI): OrganizationContext = {
+    inline def apply(id: LEI): OrganizationContext = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("fdc3.organization")
       __obj.asInstanceOf[OrganizationContext]
     }
     
-    @scala.inline
-    implicit class OrganizationContextMutableBuilder[Self <: OrganizationContext] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationContext](x: Self) {
       
-      @scala.inline
-      def setId(value: LEI): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: LEI): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: fdc3Dotorganization): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: fdc3Dotorganization): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

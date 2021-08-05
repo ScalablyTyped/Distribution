@@ -402,97 +402,67 @@ trait ChildrenVisibleMin extends StObject {
 }
 object ChildrenVisibleMin {
   
-  @scala.inline
-  def apply(): ChildrenVisibleMin = {
+  inline def apply(): ChildrenVisibleMin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChildrenVisibleMin]
   }
   
-  @scala.inline
-  implicit class ChildrenVisibleMinMutableBuilder[Self <: ChildrenVisibleMin] (val x: Self) extends AnyVal {
+  extension [Self <: ChildrenVisibleMin](x: Self) {
     
-    @scala.inline
-    def setChildrenVisibleMin(value: Double): Self = StObject.set(x, "childrenVisibleMin", value.asInstanceOf[js.Any])
+    inline def setChildrenVisibleMin(value: Double): Self = StObject.set(x, "childrenVisibleMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVisibleMinUndefined: Self = StObject.set(x, "childrenVisibleMin", js.undefined)
+    inline def setChildrenVisibleMinUndefined: Self = StObject.set(x, "childrenVisibleMin", js.undefined)
     
-    @scala.inline
-    def setColor(value: js.Array[js.Any]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Array[js.Any]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorAlpha(value: js.Array[js.Any]): Self = StObject.set(x, "colorAlpha", value.asInstanceOf[js.Any])
+    inline def setColorAlpha(value: js.Array[js.Any]): Self = StObject.set(x, "colorAlpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorAlphaUndefined: Self = StObject.set(x, "colorAlpha", js.undefined)
+    inline def setColorAlphaUndefined: Self = StObject.set(x, "colorAlpha", js.undefined)
     
-    @scala.inline
-    def setColorAlphaVarargs(value: js.Any*): Self = StObject.set(x, "colorAlpha", js.Array(value :_*))
+    inline def setColorAlphaVarargs(value: js.Any*): Self = StObject.set(x, "colorAlpha", js.Array(value :_*))
     
-    @scala.inline
-    def setColorMappingBy(value: String): Self = StObject.set(x, "colorMappingBy", value.asInstanceOf[js.Any])
+    inline def setColorMappingBy(value: String): Self = StObject.set(x, "colorMappingBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorMappingByUndefined: Self = StObject.set(x, "colorMappingBy", js.undefined)
+    inline def setColorMappingByUndefined: Self = StObject.set(x, "colorMappingBy", js.undefined)
     
-    @scala.inline
-    def setColorSaturation(value: Double): Self = StObject.set(x, "colorSaturation", value.asInstanceOf[js.Any])
+    inline def setColorSaturation(value: Double): Self = StObject.set(x, "colorSaturation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSaturationUndefined: Self = StObject.set(x, "colorSaturation", js.undefined)
+    inline def setColorSaturationUndefined: Self = StObject.set(x, "colorSaturation", js.undefined)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: js.Any*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: js.Any*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setEmphasis(value: UpperLabel): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+    inline def setEmphasis(value: UpperLabel): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
+    inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
     
-    @scala.inline
-    def setItemStyle(value: BorderColorSaturation): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BorderColorSaturation): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    @scala.inline
-    def setLabel(value: Ellipsis): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Ellipsis): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setUpperLabel(value: TextShadowColor): Self = StObject.set(x, "upperLabel", value.asInstanceOf[js.Any])
+    inline def setUpperLabel(value: TextShadowColor): Self = StObject.set(x, "upperLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperLabelUndefined: Self = StObject.set(x, "upperLabel", js.undefined)
+    inline def setUpperLabelUndefined: Self = StObject.set(x, "upperLabel", js.undefined)
     
-    @scala.inline
-    def setVisibleMin(value: Double): Self = StObject.set(x, "visibleMin", value.asInstanceOf[js.Any])
+    inline def setVisibleMin(value: Double): Self = StObject.set(x, "visibleMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleMinUndefined: Self = StObject.set(x, "visibleMin", js.undefined)
+    inline def setVisibleMinUndefined: Self = StObject.set(x, "visibleMin", js.undefined)
     
-    @scala.inline
-    def setVisualDimension(value: Double): Self = StObject.set(x, "visualDimension", value.asInstanceOf[js.Any])
+    inline def setVisualDimension(value: Double): Self = StObject.set(x, "visualDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualDimensionUndefined: Self = StObject.set(x, "visualDimension", js.undefined)
+    inline def setVisualDimensionUndefined: Self = StObject.set(x, "visualDimension", js.undefined)
     
-    @scala.inline
-    def setVisualMax(value: Double): Self = StObject.set(x, "visualMax", value.asInstanceOf[js.Any])
+    inline def setVisualMax(value: Double): Self = StObject.set(x, "visualMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualMaxUndefined: Self = StObject.set(x, "visualMax", js.undefined)
+    inline def setVisualMaxUndefined: Self = StObject.set(x, "visualMax", js.undefined)
     
-    @scala.inline
-    def setVisualMin(value: Double): Self = StObject.set(x, "visualMin", value.asInstanceOf[js.Any])
+    inline def setVisualMin(value: Double): Self = StObject.set(x, "visualMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualMinUndefined: Self = StObject.set(x, "visualMin", js.undefined)
+    inline def setVisualMinUndefined: Self = StObject.set(x, "visualMin", js.undefined)
   }
 }

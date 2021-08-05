@@ -43,49 +43,35 @@ trait HyperParameterSpecification extends StObject {
 }
 object HyperParameterSpecification {
   
-  @scala.inline
-  def apply(Name: ParameterName, Type: ParameterType): HyperParameterSpecification = {
+  inline def apply(Name: ParameterName, Type: ParameterType): HyperParameterSpecification = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperParameterSpecification]
   }
   
-  @scala.inline
-  implicit class HyperParameterSpecificationMutableBuilder[Self <: HyperParameterSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: HyperParameterSpecification](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: HyperParameterValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: HyperParameterValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
-    @scala.inline
-    def setDescription(value: EntityDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: EntityDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setIsRequired(value: Boolean): Self = StObject.set(x, "IsRequired", value.asInstanceOf[js.Any])
+    inline def setIsRequired(value: Boolean): Self = StObject.set(x, "IsRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequiredUndefined: Self = StObject.set(x, "IsRequired", js.undefined)
+    inline def setIsRequiredUndefined: Self = StObject.set(x, "IsRequired", js.undefined)
     
-    @scala.inline
-    def setIsTunable(value: Boolean): Self = StObject.set(x, "IsTunable", value.asInstanceOf[js.Any])
+    inline def setIsTunable(value: Boolean): Self = StObject.set(x, "IsTunable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTunableUndefined: Self = StObject.set(x, "IsTunable", js.undefined)
+    inline def setIsTunableUndefined: Self = StObject.set(x, "IsTunable", js.undefined)
     
-    @scala.inline
-    def setName(value: ParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: ParameterRange): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: ParameterRange): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "Range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "Range", js.undefined)
     
-    @scala.inline
-    def setType(value: ParameterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ParameterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

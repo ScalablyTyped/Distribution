@@ -24,8 +24,7 @@ object useDescriptorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](
+  inline def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](
     hasStateScreensNavigationScreenOptionsOnActionGetStateSetStateAddListenerAddKeyedListenerOnRouteFocusRouterEmitter: Options[State, ScreenOptions, EventMap]
   ): Record[
     String, 

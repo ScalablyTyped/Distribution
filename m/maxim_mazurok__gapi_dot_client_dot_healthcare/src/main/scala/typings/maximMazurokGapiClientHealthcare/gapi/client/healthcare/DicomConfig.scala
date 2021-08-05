@@ -25,37 +25,27 @@ trait DicomConfig extends StObject {
 }
 object DicomConfig {
   
-  @scala.inline
-  def apply(): DicomConfig = {
+  inline def apply(): DicomConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DicomConfig]
   }
   
-  @scala.inline
-  implicit class DicomConfigMutableBuilder[Self <: DicomConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DicomConfig](x: Self) {
     
-    @scala.inline
-    def setFilterProfile(value: String): Self = StObject.set(x, "filterProfile", value.asInstanceOf[js.Any])
+    inline def setFilterProfile(value: String): Self = StObject.set(x, "filterProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterProfileUndefined: Self = StObject.set(x, "filterProfile", js.undefined)
+    inline def setFilterProfileUndefined: Self = StObject.set(x, "filterProfile", js.undefined)
     
-    @scala.inline
-    def setKeepList(value: TagFilterList): Self = StObject.set(x, "keepList", value.asInstanceOf[js.Any])
+    inline def setKeepList(value: TagFilterList): Self = StObject.set(x, "keepList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepListUndefined: Self = StObject.set(x, "keepList", js.undefined)
+    inline def setKeepListUndefined: Self = StObject.set(x, "keepList", js.undefined)
     
-    @scala.inline
-    def setRemoveList(value: TagFilterList): Self = StObject.set(x, "removeList", value.asInstanceOf[js.Any])
+    inline def setRemoveList(value: TagFilterList): Self = StObject.set(x, "removeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveListUndefined: Self = StObject.set(x, "removeList", js.undefined)
+    inline def setRemoveListUndefined: Self = StObject.set(x, "removeList", js.undefined)
     
-    @scala.inline
-    def setSkipIdRedaction(value: Boolean): Self = StObject.set(x, "skipIdRedaction", value.asInstanceOf[js.Any])
+    inline def setSkipIdRedaction(value: Boolean): Self = StObject.set(x, "skipIdRedaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipIdRedactionUndefined: Self = StObject.set(x, "skipIdRedaction", js.undefined)
+    inline def setSkipIdRedactionUndefined: Self = StObject.set(x, "skipIdRedaction", js.undefined)
   }
 }

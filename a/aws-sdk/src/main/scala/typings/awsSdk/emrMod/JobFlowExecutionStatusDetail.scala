@@ -38,43 +38,31 @@ trait JobFlowExecutionStatusDetail extends StObject {
 }
 object JobFlowExecutionStatusDetail {
   
-  @scala.inline
-  def apply(CreationDateTime: Date, State: JobFlowExecutionState): JobFlowExecutionStatusDetail = {
+  inline def apply(CreationDateTime: Date, State: JobFlowExecutionState): JobFlowExecutionStatusDetail = {
     val __obj = js.Dynamic.literal(CreationDateTime = CreationDateTime.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobFlowExecutionStatusDetail]
   }
   
-  @scala.inline
-  implicit class JobFlowExecutionStatusDetailMutableBuilder[Self <: JobFlowExecutionStatusDetail] (val x: Self) extends AnyVal {
+  extension [Self <: JobFlowExecutionStatusDetail](x: Self) {
     
-    @scala.inline
-    def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
     
-    @scala.inline
-    def setLastStateChangeReason(value: XmlString): Self = StObject.set(x, "LastStateChangeReason", value.asInstanceOf[js.Any])
+    inline def setLastStateChangeReason(value: XmlString): Self = StObject.set(x, "LastStateChangeReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStateChangeReasonUndefined: Self = StObject.set(x, "LastStateChangeReason", js.undefined)
+    inline def setLastStateChangeReasonUndefined: Self = StObject.set(x, "LastStateChangeReason", js.undefined)
     
-    @scala.inline
-    def setReadyDateTime(value: Date): Self = StObject.set(x, "ReadyDateTime", value.asInstanceOf[js.Any])
+    inline def setReadyDateTime(value: Date): Self = StObject.set(x, "ReadyDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyDateTimeUndefined: Self = StObject.set(x, "ReadyDateTime", js.undefined)
+    inline def setReadyDateTimeUndefined: Self = StObject.set(x, "ReadyDateTime", js.undefined)
     
-    @scala.inline
-    def setStartDateTime(value: Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
     
-    @scala.inline
-    def setState(value: JobFlowExecutionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: JobFlowExecutionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

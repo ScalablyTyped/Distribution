@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](ComposedComponent: ComponentType[T & WindowSizeProps]): ComponentType[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[T]]
+  inline def default[T](ComposedComponent: ComponentType[T & WindowSizeProps]): ComponentType[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[T]]
   
   trait WindowSizeProps extends StObject {
     
@@ -22,20 +21,16 @@ object mod {
   }
   object WindowSizeProps {
     
-    @scala.inline
-    def apply(windowHeight: Double, windowWidth: Double): WindowSizeProps = {
+    inline def apply(windowHeight: Double, windowWidth: Double): WindowSizeProps = {
       val __obj = js.Dynamic.literal(windowHeight = windowHeight.asInstanceOf[js.Any], windowWidth = windowWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[WindowSizeProps]
     }
     
-    @scala.inline
-    implicit class WindowSizePropsMutableBuilder[Self <: WindowSizeProps] (val x: Self) extends AnyVal {
+    extension [Self <: WindowSizeProps](x: Self) {
       
-      @scala.inline
-      def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
+      inline def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
+      inline def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
     }
   }
 }

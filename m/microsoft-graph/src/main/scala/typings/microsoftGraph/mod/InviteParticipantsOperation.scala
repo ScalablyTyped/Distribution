@@ -13,22 +13,17 @@ trait InviteParticipantsOperation
 }
 object InviteParticipantsOperation {
   
-  @scala.inline
-  def apply(): InviteParticipantsOperation = {
+  inline def apply(): InviteParticipantsOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InviteParticipantsOperation]
   }
   
-  @scala.inline
-  implicit class InviteParticipantsOperationMutableBuilder[Self <: InviteParticipantsOperation] (val x: Self) extends AnyVal {
+  extension [Self <: InviteParticipantsOperation](x: Self) {
     
-    @scala.inline
-    def setParticipants(value: js.Array[InvitationParticipantInfo]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+    inline def setParticipants(value: js.Array[InvitationParticipantInfo]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
+    inline def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
     
-    @scala.inline
-    def setParticipantsVarargs(value: InvitationParticipantInfo*): Self = StObject.set(x, "participants", js.Array(value :_*))
+    inline def setParticipantsVarargs(value: InvitationParticipantInfo*): Self = StObject.set(x, "participants", js.Array(value :_*))
   }
 }

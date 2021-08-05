@@ -47,8 +47,7 @@ trait Diagnostic extends StObject {
 }
 object Diagnostic {
   
-  @scala.inline
-  def apply(message: String, range: Range): Diagnostic = {
+  inline def apply(message: String, range: Range): Diagnostic = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diagnostic]
   }
@@ -60,14 +59,10 @@ object Diagnostic {
   /**
     * Creates a new Diagnostic literal.
     */
-  @scala.inline
-  def create(range: Range, message: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(range: Range, message: String, severity: Unit, code: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(range: Range, message: String, severity: Unit, code: String, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(
+  inline def create(range: Range, message: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(range: Range, message: String, severity: Unit, code: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(range: Range, message: String, severity: Unit, code: String, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(
     range: Range,
     message: String,
     severity: Unit,
@@ -75,8 +70,7 @@ object Diagnostic {
     source: String,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(
+  inline def create(
     range: Range,
     message: String,
     severity: Unit,
@@ -84,12 +78,9 @@ object Diagnostic {
     source: Unit,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(range: Range, message: String, severity: Unit, code: Double): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(range: Range, message: String, severity: Unit, code: Double, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(
+  inline def create(range: Range, message: String, severity: Unit, code: Double): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(range: Range, message: String, severity: Unit, code: Double, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(
     range: Range,
     message: String,
     severity: Unit,
@@ -97,8 +88,7 @@ object Diagnostic {
     source: String,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(
+  inline def create(
     range: Range,
     message: String,
     severity: Unit,
@@ -106,10 +96,8 @@ object Diagnostic {
     source: Unit,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(range: Range, message: String, severity: Unit, code: Unit, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(
+  inline def create(range: Range, message: String, severity: Unit, code: Unit, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(
     range: Range,
     message: String,
     severity: Unit,
@@ -117,8 +105,7 @@ object Diagnostic {
     source: String,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(
+  inline def create(
     range: Range,
     message: String,
     severity: Unit,
@@ -126,14 +113,10 @@ object Diagnostic {
     source: Unit,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(range: Range, message: String, severity: DiagnosticSeverity): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(range: Range, message: String, severity: DiagnosticSeverity, code: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(range: Range, message: String, severity: DiagnosticSeverity, code: String, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(
+  inline def create(range: Range, message: String, severity: DiagnosticSeverity): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(range: Range, message: String, severity: DiagnosticSeverity, code: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(range: Range, message: String, severity: DiagnosticSeverity, code: String, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(
     range: Range,
     message: String,
     severity: DiagnosticSeverity,
@@ -141,8 +124,7 @@ object Diagnostic {
     source: String,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(
+  inline def create(
     range: Range,
     message: String,
     severity: DiagnosticSeverity,
@@ -150,12 +132,9 @@ object Diagnostic {
     source: Unit,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(range: Range, message: String, severity: DiagnosticSeverity, code: Double): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(range: Range, message: String, severity: DiagnosticSeverity, code: Double, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(
+  inline def create(range: Range, message: String, severity: DiagnosticSeverity, code: Double): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(range: Range, message: String, severity: DiagnosticSeverity, code: Double, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(
     range: Range,
     message: String,
     severity: DiagnosticSeverity,
@@ -163,8 +142,7 @@ object Diagnostic {
     source: String,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(
+  inline def create(
     range: Range,
     message: String,
     severity: DiagnosticSeverity,
@@ -172,10 +150,8 @@ object Diagnostic {
     source: Unit,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(range: Range, message: String, severity: DiagnosticSeverity, code: Unit, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(
+  inline def create(range: Range, message: String, severity: DiagnosticSeverity, code: Unit, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(
     range: Range,
     message: String,
     severity: DiagnosticSeverity,
@@ -183,8 +159,7 @@ object Diagnostic {
     source: String,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  @scala.inline
-  def create(
+  inline def create(
     range: Range,
     message: String,
     severity: DiagnosticSeverity,
@@ -196,52 +171,36 @@ object Diagnostic {
   /**
     * Checks whether the given literal conforms to the [Diagnostic](#Diagnostic) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean]
   
-  @scala.inline
-  implicit class DiagnosticMutableBuilder[Self <: Diagnostic] (val x: Self) extends AnyVal {
+  extension [Self <: Diagnostic](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedInformation(value: js.Array[DiagnosticRelatedInformation]): Self = StObject.set(x, "relatedInformation", value.asInstanceOf[js.Any])
+    inline def setRelatedInformation(value: js.Array[DiagnosticRelatedInformation]): Self = StObject.set(x, "relatedInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedInformationUndefined: Self = StObject.set(x, "relatedInformation", js.undefined)
+    inline def setRelatedInformationUndefined: Self = StObject.set(x, "relatedInformation", js.undefined)
     
-    @scala.inline
-    def setRelatedInformationVarargs(value: DiagnosticRelatedInformation*): Self = StObject.set(x, "relatedInformation", js.Array(value :_*))
+    inline def setRelatedInformationVarargs(value: DiagnosticRelatedInformation*): Self = StObject.set(x, "relatedInformation", js.Array(value :_*))
     
-    @scala.inline
-    def setSeverity(value: DiagnosticSeverity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: DiagnosticSeverity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[DiagnosticTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[DiagnosticTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: DiagnosticTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: DiagnosticTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

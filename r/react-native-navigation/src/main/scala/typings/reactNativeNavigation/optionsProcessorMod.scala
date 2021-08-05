@@ -26,38 +26,38 @@ object optionsProcessorMod {
       deprecations: Deprecations
     ) = this()
     
-    var assetService: js.Any = js.native
+    /* private */ var assetService: js.Any = js.native
     
-    var colorService: js.Any = js.native
+    /* private */ var colorService: js.Any = js.native
     
-    var deprecations: js.Any = js.native
+    /* private */ var deprecations: js.Any = js.native
     
-    var optionProcessorsRegistry: js.Any = js.native
+    /* private */ var optionProcessorsRegistry: js.Any = js.native
     
-    var processButtonsPassProps: js.Any = js.native
+    /* private */ var processButtonsPassProps: js.Any = js.native
     
-    var processColor: js.Any = js.native
+    /* private */ var processColor: js.Any = js.native
     
-    var processComponent: js.Any = js.native
+    /* private */ var processComponent: js.Any = js.native
     
     def processDefaultOptions(options: Options, commandName: CommandName): Unit = js.native
     
-    var processImage: js.Any = js.native
+    /* private */ var processImage: js.Any = js.native
     
-    var processInterpolation: js.Any = js.native
+    /* private */ var processInterpolation: js.Any = js.native
     
-    var processObject: js.Any = js.native
+    /* private */ var processObject: js.Any = js.native
     
     def processOptions(options: Options, commandName: CommandName): Unit = js.native
     
-    var processSearchBar: js.Any = js.native
+    /* private */ var processSearchBar: js.Any = js.native
     
-    var processWithRegisteredProcessor: js.Any = js.native
+    /* private */ var processWithRegisteredProcessor: js.Any = js.native
     
-    var resolveObjectPath: js.Any = js.native
+    /* private */ var resolveObjectPath: js.Any = js.native
     
-    var store: js.Any = js.native
+    /* private */ var store: js.Any = js.native
     
-    var uniqueIdProvider: js.Any = js.native
+    /* private */ var uniqueIdProvider: js.Any = js.native
   }
 }

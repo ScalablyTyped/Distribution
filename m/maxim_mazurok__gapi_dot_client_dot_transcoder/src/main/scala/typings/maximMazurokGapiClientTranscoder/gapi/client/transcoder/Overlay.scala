@@ -14,28 +14,21 @@ trait Overlay extends StObject {
 }
 object Overlay {
   
-  @scala.inline
-  def apply(): Overlay = {
+  inline def apply(): Overlay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Overlay]
   }
   
-  @scala.inline
-  implicit class OverlayMutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
+  extension [Self <: Overlay](x: Self) {
     
-    @scala.inline
-    def setAnimations(value: js.Array[Animation]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    inline def setAnimations(value: js.Array[Animation]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
+    inline def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
     
-    @scala.inline
-    def setAnimationsVarargs(value: Animation*): Self = StObject.set(x, "animations", js.Array(value :_*))
+    inline def setAnimationsVarargs(value: Animation*): Self = StObject.set(x, "animations", js.Array(value :_*))
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

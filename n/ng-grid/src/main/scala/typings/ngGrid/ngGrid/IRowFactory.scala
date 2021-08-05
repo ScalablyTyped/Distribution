@@ -46,8 +46,7 @@ trait IRowFactory extends StObject {
 }
 object IRowFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     UpdateViewableRange: IRenderedRange => Unit,
     aggCache: js.Any,
     buildAggregateRow: (js.Any, Double) => IAggregate,
@@ -72,70 +71,48 @@ object IRowFactory {
     __obj.asInstanceOf[IRowFactory]
   }
   
-  @scala.inline
-  implicit class IRowFactoryMutableBuilder[Self <: IRowFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IRowFactory](x: Self) {
     
-    @scala.inline
-    def setAggCache(value: js.Any): Self = StObject.set(x, "aggCache", value.asInstanceOf[js.Any])
+    inline def setAggCache(value: js.Any): Self = StObject.set(x, "aggCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildAggregateRow(value: (js.Any, Double) => IAggregate): Self = StObject.set(x, "buildAggregateRow", js.Any.fromFunction2(value))
+    inline def setBuildAggregateRow(value: (js.Any, Double) => IAggregate): Self = StObject.set(x, "buildAggregateRow", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBuildEntityRow(value: (js.Any, Double) => IRow): Self = StObject.set(x, "buildEntityRow", js.Any.fromFunction2(value))
+    inline def setBuildEntityRow(value: (js.Any, Double) => IRow): Self = StObject.set(x, "buildEntityRow", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDataChanged(value: Boolean): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
+    inline def setDataChanged(value: Boolean): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilteredRowsChanged(value: () => Unit): Self = StObject.set(x, "filteredRowsChanged", js.Any.fromFunction0(value))
+    inline def setFilteredRowsChanged(value: () => Unit): Self = StObject.set(x, "filteredRowsChanged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFixRowCache(value: () => Unit): Self = StObject.set(x, "fixRowCache", js.Any.fromFunction0(value))
+    inline def setFixRowCache(value: () => Unit): Self = StObject.set(x, "fixRowCache", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGrouping(value: js.Any => Unit): Self = StObject.set(x, "getGrouping", js.Any.fromFunction1(value))
+    inline def setGetGrouping(value: js.Any => Unit): Self = StObject.set(x, "getGrouping", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGroupedData(value: js.Any): Self = StObject.set(x, "groupedData", value.asInstanceOf[js.Any])
+    inline def setGroupedData(value: js.Any): Self = StObject.set(x, "groupedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfAggregates(value: Double): Self = StObject.set(x, "numberOfAggregates", value.asInstanceOf[js.Any])
+    inline def setNumberOfAggregates(value: Double): Self = StObject.set(x, "numberOfAggregates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentCache(value: js.Array[js.Any]): Self = StObject.set(x, "parentCache", value.asInstanceOf[js.Any])
+    inline def setParentCache(value: js.Array[js.Any]): Self = StObject.set(x, "parentCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentCacheVarargs(value: js.Any*): Self = StObject.set(x, "parentCache", js.Array(value :_*))
+    inline def setParentCacheVarargs(value: js.Any*): Self = StObject.set(x, "parentCache", js.Array(value :_*))
     
-    @scala.inline
-    def setParseGroupData(value: js.Any => Unit): Self = StObject.set(x, "parseGroupData", js.Any.fromFunction1(value))
+    inline def setParseGroupData(value: js.Any => Unit): Self = StObject.set(x, "parseGroupData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParsedData(value: js.Array[js.Any]): Self = StObject.set(x, "parsedData", value.asInstanceOf[js.Any])
+    inline def setParsedData(value: js.Array[js.Any]): Self = StObject.set(x, "parsedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParsedDataVarargs(value: js.Any*): Self = StObject.set(x, "parsedData", js.Array(value :_*))
+    inline def setParsedDataVarargs(value: js.Any*): Self = StObject.set(x, "parsedData", js.Array(value :_*))
     
-    @scala.inline
-    def setRenderedChange(value: () => Unit): Self = StObject.set(x, "renderedChange", js.Any.fromFunction0(value))
+    inline def setRenderedChange(value: () => Unit): Self = StObject.set(x, "renderedChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderedChangeNoGroups(value: () => Unit): Self = StObject.set(x, "renderedChangeNoGroups", js.Any.fromFunction0(value))
+    inline def setRenderedChangeNoGroups(value: () => Unit): Self = StObject.set(x, "renderedChangeNoGroups", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderedRange(value: IRenderedRange): Self = StObject.set(x, "renderedRange", value.asInstanceOf[js.Any])
+    inline def setRenderedRange(value: IRenderedRange): Self = StObject.set(x, "renderedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowConfig(value: IRowConfig): Self = StObject.set(x, "rowConfig", value.asInstanceOf[js.Any])
+    inline def setRowConfig(value: IRowConfig): Self = StObject.set(x, "rowConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionProvider(value: ISelectionProvider): Self = StObject.set(x, "selectionProvider", value.asInstanceOf[js.Any])
+    inline def setSelectionProvider(value: ISelectionProvider): Self = StObject.set(x, "selectionProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateViewableRange(value: IRenderedRange => Unit): Self = StObject.set(x, "UpdateViewableRange", js.Any.fromFunction1(value))
+    inline def setUpdateViewableRange(value: IRenderedRange => Unit): Self = StObject.set(x, "UpdateViewableRange", js.Any.fromFunction1(value))
   }
 }

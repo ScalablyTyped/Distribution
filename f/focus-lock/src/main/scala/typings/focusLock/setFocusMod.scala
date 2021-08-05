@@ -13,11 +13,8 @@ object setFocusMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def focusOn(target: HTMLFrameElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusOn")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def focusOn(target: HTMLInputElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusOn")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def focusOn(target: HTMLFrameElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusOn")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def focusOn(target: HTMLInputElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusOn")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setFocus(topNode: HTMLElement, lastNode: HTMLInputElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setFocus")(topNode.asInstanceOf[js.Any], lastNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setFocus(topNode: HTMLElement, lastNode: HTMLInputElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setFocus")(topNode.asInstanceOf[js.Any], lastNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

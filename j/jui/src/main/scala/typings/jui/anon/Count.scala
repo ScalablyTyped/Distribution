@@ -30,43 +30,31 @@ trait Count extends StObject {
 }
 object Count {
   
-  @scala.inline
-  def apply(): Count = {
+  inline def apply(): Count = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Count]
   }
   
-  @scala.inline
-  implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
+  extension [Self <: Count](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
+    inline def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
+    inline def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
     
-    @scala.inline
-    def setScreenCount(value: Double): Self = StObject.set(x, "screenCount", value.asInstanceOf[js.Any])
+    inline def setScreenCount(value: Double): Self = StObject.set(x, "screenCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenCountUndefined: Self = StObject.set(x, "screenCount", js.undefined)
+    inline def setScreenCountUndefined: Self = StObject.set(x, "screenCount", js.undefined)
     
-    @scala.inline
-    def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
+    inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
   }
 }

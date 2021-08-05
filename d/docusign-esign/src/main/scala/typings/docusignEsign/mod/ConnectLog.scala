@@ -116,124 +116,85 @@ trait ConnectLog extends StObject {
 }
 object ConnectLog {
   
-  @scala.inline
-  def apply(): ConnectLog = {
+  inline def apply(): ConnectLog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectLog]
   }
   
-  @scala.inline
-  implicit class ConnectLogMutableBuilder[Self <: ConnectLog] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectLog](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setConfigUrl(value: String): Self = StObject.set(x, "configUrl", value.asInstanceOf[js.Any])
+    inline def setConfigUrl(value: String): Self = StObject.set(x, "configUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUrlUndefined: Self = StObject.set(x, "configUrl", js.undefined)
+    inline def setConfigUrlUndefined: Self = StObject.set(x, "configUrl", js.undefined)
     
-    @scala.inline
-    def setConnectDebugLog(value: js.Array[ConnectDebugLog]): Self = StObject.set(x, "connectDebugLog", value.asInstanceOf[js.Any])
+    inline def setConnectDebugLog(value: js.Array[ConnectDebugLog]): Self = StObject.set(x, "connectDebugLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectDebugLogUndefined: Self = StObject.set(x, "connectDebugLog", js.undefined)
+    inline def setConnectDebugLogUndefined: Self = StObject.set(x, "connectDebugLog", js.undefined)
     
-    @scala.inline
-    def setConnectDebugLogVarargs(value: ConnectDebugLog*): Self = StObject.set(x, "connectDebugLog", js.Array(value :_*))
+    inline def setConnectDebugLogVarargs(value: ConnectDebugLog*): Self = StObject.set(x, "connectDebugLog", js.Array(value :_*))
     
-    @scala.inline
-    def setConnectId(value: String): Self = StObject.set(x, "connectId", value.asInstanceOf[js.Any])
+    inline def setConnectId(value: String): Self = StObject.set(x, "connectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectIdUndefined: Self = StObject.set(x, "connectId", js.undefined)
+    inline def setConnectIdUndefined: Self = StObject.set(x, "connectId", js.undefined)
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
+    inline def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
+    inline def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setFailureId(value: String): Self = StObject.set(x, "failureId", value.asInstanceOf[js.Any])
+    inline def setFailureId(value: String): Self = StObject.set(x, "failureId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureIdUndefined: Self = StObject.set(x, "failureId", js.undefined)
+    inline def setFailureIdUndefined: Self = StObject.set(x, "failureId", js.undefined)
     
-    @scala.inline
-    def setFailureUri(value: String): Self = StObject.set(x, "failureUri", value.asInstanceOf[js.Any])
+    inline def setFailureUri(value: String): Self = StObject.set(x, "failureUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureUriUndefined: Self = StObject.set(x, "failureUri", js.undefined)
+    inline def setFailureUriUndefined: Self = StObject.set(x, "failureUri", js.undefined)
     
-    @scala.inline
-    def setLastTry(value: String): Self = StObject.set(x, "lastTry", value.asInstanceOf[js.Any])
+    inline def setLastTry(value: String): Self = StObject.set(x, "lastTry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTryUndefined: Self = StObject.set(x, "lastTry", js.undefined)
+    inline def setLastTryUndefined: Self = StObject.set(x, "lastTry", js.undefined)
     
-    @scala.inline
-    def setLogId(value: String): Self = StObject.set(x, "logId", value.asInstanceOf[js.Any])
+    inline def setLogId(value: String): Self = StObject.set(x, "logId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogIdUndefined: Self = StObject.set(x, "logId", js.undefined)
+    inline def setLogIdUndefined: Self = StObject.set(x, "logId", js.undefined)
     
-    @scala.inline
-    def setLogUri(value: String): Self = StObject.set(x, "logUri", value.asInstanceOf[js.Any])
+    inline def setLogUri(value: String): Self = StObject.set(x, "logUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUriUndefined: Self = StObject.set(x, "logUri", js.undefined)
+    inline def setLogUriUndefined: Self = StObject.set(x, "logUri", js.undefined)
     
-    @scala.inline
-    def setRetryCount(value: String): Self = StObject.set(x, "retryCount", value.asInstanceOf[js.Any])
+    inline def setRetryCount(value: String): Self = StObject.set(x, "retryCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryCountUndefined: Self = StObject.set(x, "retryCount", js.undefined)
+    inline def setRetryCountUndefined: Self = StObject.set(x, "retryCount", js.undefined)
     
-    @scala.inline
-    def setRetryUri(value: String): Self = StObject.set(x, "retryUri", value.asInstanceOf[js.Any])
+    inline def setRetryUri(value: String): Self = StObject.set(x, "retryUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryUriUndefined: Self = StObject.set(x, "retryUri", js.undefined)
+    inline def setRetryUriUndefined: Self = StObject.set(x, "retryUri", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
   }
 }

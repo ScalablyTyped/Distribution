@@ -10,16 +10,13 @@ trait CompileIdentifierMetadata extends StObject {
 }
 object CompileIdentifierMetadata {
   
-  @scala.inline
-  def apply(reference: js.Any): CompileIdentifierMetadata = {
+  inline def apply(reference: js.Any): CompileIdentifierMetadata = {
     val __obj = js.Dynamic.literal(reference = reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileIdentifierMetadata]
   }
   
-  @scala.inline
-  implicit class CompileIdentifierMetadataMutableBuilder[Self <: CompileIdentifierMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CompileIdentifierMetadata](x: Self) {
     
-    @scala.inline
-    def setReference(value: js.Any): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: js.Any): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
   }
 }

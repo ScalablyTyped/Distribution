@@ -10,16 +10,13 @@ trait TargetDestroyedEvent extends StObject {
 }
 object TargetDestroyedEvent {
   
-  @scala.inline
-  def apply(targetId: TargetID): TargetDestroyedEvent = {
+  inline def apply(targetId: TargetID): TargetDestroyedEvent = {
     val __obj = js.Dynamic.literal(targetId = targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetDestroyedEvent]
   }
   
-  @scala.inline
-  implicit class TargetDestroyedEventMutableBuilder[Self <: TargetDestroyedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TargetDestroyedEvent](x: Self) {
     
-    @scala.inline
-    def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

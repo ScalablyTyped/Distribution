@@ -22,8 +22,7 @@ trait GitRefFavorite extends StObject {
 }
 object GitRefFavorite {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     id: Double,
     identityId: String,
@@ -37,28 +36,20 @@ object GitRefFavorite {
     __obj.asInstanceOf[GitRefFavorite]
   }
   
-  @scala.inline
-  implicit class GitRefFavoriteMutableBuilder[Self <: GitRefFavorite] (val x: Self) extends AnyVal {
+  extension [Self <: GitRefFavorite](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityId(value: String): Self = StObject.set(x, "identityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: String): Self = StObject.set(x, "identityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
+    inline def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: RefFavoriteType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: RefFavoriteType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

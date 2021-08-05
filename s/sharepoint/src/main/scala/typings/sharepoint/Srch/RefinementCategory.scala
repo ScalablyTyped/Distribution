@@ -27,34 +27,25 @@ trait RefinementCategory extends StObject {
 }
 object RefinementCategory {
   
-  @scala.inline
-  def apply(k: Boolean, n: String, o: String | and_ | or_ | AND | OR, t: js.Array[String]): RefinementCategory = {
+  inline def apply(k: Boolean, n: String, o: String | and_ | or_ | AND | OR, t: js.Array[String]): RefinementCategory = {
     val __obj = js.Dynamic.literal(k = k.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], o = o.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any], m = null)
     __obj.asInstanceOf[RefinementCategory]
   }
   
-  @scala.inline
-  implicit class RefinementCategoryMutableBuilder[Self <: RefinementCategory] (val x: Self) extends AnyVal {
+  extension [Self <: RefinementCategory](x: Self) {
     
-    @scala.inline
-    def setK(value: Boolean): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+    inline def setK(value: Boolean): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM(value: StringDictionary[String]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+    inline def setM(value: StringDictionary[String]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMNull: Self = StObject.set(x, "m", null)
+    inline def setMNull: Self = StObject.set(x, "m", null)
     
-    @scala.inline
-    def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setO(value: String | and_ | or_ | AND | OR): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
+    inline def setO(value: String | and_ | or_ | AND | OR): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT(value: js.Array[String]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: js.Array[String]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTVarargs(value: String*): Self = StObject.set(x, "t", js.Array(value :_*))
+    inline def setTVarargs(value: String*): Self = StObject.set(x, "t", js.Array(value :_*))
   }
 }

@@ -15,16 +15,13 @@ trait StatFailCallbackResult extends StObject {
 }
 object StatFailCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String): StatFailCallbackResult = {
+  inline def apply(errMsg: String): StatFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatFailCallbackResult]
   }
   
-  @scala.inline
-  implicit class StatFailCallbackResultMutableBuilder[Self <: StatFailCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: StatFailCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

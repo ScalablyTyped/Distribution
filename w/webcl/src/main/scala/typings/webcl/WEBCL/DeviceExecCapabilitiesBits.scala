@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DeviceExecCapabilitiesBits {
   
-  @scala.inline
-  def EXEC_KERNEL: `0x1` = 0x1.asInstanceOf[`0x1`]
+  inline def EXEC_KERNEL: `0x1` = 0x1.asInstanceOf[`0x1`]
 }

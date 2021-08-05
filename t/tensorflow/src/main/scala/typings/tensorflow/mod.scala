@@ -36,29 +36,18 @@ object mod {
     /* 3 */ val int32: typings.tensorflow.mod.Types.int32 & Double = js.native
   }
   
-  @scala.inline
-  def graph(graphDef: String): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")(graphDef.asInstanceOf[js.Any]).asInstanceOf[Graph_]
-  @scala.inline
-  def graph(graphDef: js.Object): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")(graphDef.asInstanceOf[js.Any]).asInstanceOf[Graph_]
-  @scala.inline
-  def graph(graphDef: Buffer): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")(graphDef.asInstanceOf[js.Any]).asInstanceOf[Graph_]
+  inline def graph(graphDef: String): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")(graphDef.asInstanceOf[js.Any]).asInstanceOf[Graph_]
+  inline def graph(graphDef: js.Object): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")(graphDef.asInstanceOf[js.Any]).asInstanceOf[Graph_]
+  inline def graph(graphDef: Buffer): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")(graphDef.asInstanceOf[js.Any]).asInstanceOf[Graph_]
   
-  @scala.inline
-  def tensor(value: Buffer): Tensor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any]).asInstanceOf[Tensor_]
-  @scala.inline
-  def tensor(value: Buffer, `type`: Unit, shape: js.Array[Double]): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
-  @scala.inline
-  def tensor(value: Buffer, `type`: Types): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
-  @scala.inline
-  def tensor(value: Buffer, `type`: Types, shape: js.Array[Double]): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
-  @scala.inline
-  def tensor(value: TensorValue): Tensor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any]).asInstanceOf[Tensor_]
-  @scala.inline
-  def tensor(value: TensorValue, `type`: Unit, shape: js.Array[Double]): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
-  @scala.inline
-  def tensor(value: TensorValue, `type`: Types): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
-  @scala.inline
-  def tensor(value: TensorValue, `type`: Types, shape: js.Array[Double]): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
+  inline def tensor(value: Buffer): Tensor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any]).asInstanceOf[Tensor_]
+  inline def tensor(value: Buffer, `type`: Unit, shape: js.Array[Double]): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
+  inline def tensor(value: Buffer, `type`: Types): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
+  inline def tensor(value: Buffer, `type`: Types, shape: js.Array[Double]): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
+  inline def tensor(value: TensorValue): Tensor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any]).asInstanceOf[Tensor_]
+  inline def tensor(value: TensorValue, `type`: Unit, shape: js.Array[Double]): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
+  inline def tensor(value: TensorValue, `type`: Types): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
+  inline def tensor(value: TensorValue, `type`: Types, shape: js.Array[Double]): Tensor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor_]
   
   trait Graph_ extends StObject {
     
@@ -68,20 +57,16 @@ object mod {
   }
   object Graph_ {
     
-    @scala.inline
-    def apply(createSession: () => Session, delete: () => js.Any): Graph_ = {
+    inline def apply(createSession: () => Session, delete: () => js.Any): Graph_ = {
       val __obj = js.Dynamic.literal(createSession = js.Any.fromFunction0(createSession), delete = js.Any.fromFunction0(delete))
       __obj.asInstanceOf[Graph_]
     }
     
-    @scala.inline
-    implicit class Graph_MutableBuilder[Self <: Graph_] (val x: Self) extends AnyVal {
+    extension [Self <: Graph_](x: Self) {
       
-      @scala.inline
-      def setCreateSession(value: () => Session): Self = StObject.set(x, "createSession", js.Any.fromFunction0(value))
+      inline def setCreateSession(value: () => Session): Self = StObject.set(x, "createSession", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDelete(value: () => js.Any): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Any): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     }
   }
   
@@ -120,30 +105,23 @@ object mod {
   }
   object Tensor_ {
     
-    @scala.inline
-    def apply(shape: js.Array[Double], `type`: Types, value: Buffer | TensorValue): Tensor_ = {
+    inline def apply(shape: js.Array[Double], `type`: Types, value: Buffer | TensorValue): Tensor_ = {
       val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tensor_]
     }
     
-    @scala.inline
-    implicit class Tensor_MutableBuilder[Self <: Tensor_] (val x: Self) extends AnyVal {
+    extension [Self <: Tensor_](x: Self) {
       
-      @scala.inline
-      def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: Types): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Types): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Buffer | TensorValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Buffer | TensorValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: ((js.Array[(js.Array[js.Array[TensorData] | TensorData]) | TensorData]) | TensorData)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: ((js.Array[(js.Array[js.Array[TensorData] | TensorData]) | TensorData]) | TensorData)*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
 }

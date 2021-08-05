@@ -13,19 +13,15 @@ trait DeleteIdentitiesInput extends StObject {
 }
 object DeleteIdentitiesInput {
   
-  @scala.inline
-  def apply(IdentityIdsToDelete: IdentityIdList): DeleteIdentitiesInput = {
+  inline def apply(IdentityIdsToDelete: IdentityIdList): DeleteIdentitiesInput = {
     val __obj = js.Dynamic.literal(IdentityIdsToDelete = IdentityIdsToDelete.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteIdentitiesInput]
   }
   
-  @scala.inline
-  implicit class DeleteIdentitiesInputMutableBuilder[Self <: DeleteIdentitiesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteIdentitiesInput](x: Self) {
     
-    @scala.inline
-    def setIdentityIdsToDelete(value: IdentityIdList): Self = StObject.set(x, "IdentityIdsToDelete", value.asInstanceOf[js.Any])
+    inline def setIdentityIdsToDelete(value: IdentityIdList): Self = StObject.set(x, "IdentityIdsToDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdsToDeleteVarargs(value: IdentityId*): Self = StObject.set(x, "IdentityIdsToDelete", js.Array(value :_*))
+    inline def setIdentityIdsToDeleteVarargs(value: IdentityId*): Self = StObject.set(x, "IdentityIdsToDelete", js.Array(value :_*))
   }
 }

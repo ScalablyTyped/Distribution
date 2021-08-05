@@ -21,22 +21,17 @@ trait ApplicationApplicationConfigurationApplicationCodeConfiguration extends St
 }
 object ApplicationApplicationConfigurationApplicationCodeConfiguration {
   
-  @scala.inline
-  def apply(codeContentType: Input[String]): ApplicationApplicationConfigurationApplicationCodeConfiguration = {
+  inline def apply(codeContentType: Input[String]): ApplicationApplicationConfigurationApplicationCodeConfiguration = {
     val __obj = js.Dynamic.literal(codeContentType = codeContentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationApplicationConfigurationApplicationCodeConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationApplicationCodeConfigurationMutableBuilder[Self <: ApplicationApplicationConfigurationApplicationCodeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationApplicationCodeConfiguration](x: Self) {
     
-    @scala.inline
-    def setCodeContent(value: Input[ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent]): Self = StObject.set(x, "codeContent", value.asInstanceOf[js.Any])
+    inline def setCodeContent(value: Input[ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent]): Self = StObject.set(x, "codeContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeContentType(value: Input[String]): Self = StObject.set(x, "codeContentType", value.asInstanceOf[js.Any])
+    inline def setCodeContentType(value: Input[String]): Self = StObject.set(x, "codeContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeContentUndefined: Self = StObject.set(x, "codeContent", js.undefined)
+    inline def setCodeContentUndefined: Self = StObject.set(x, "codeContent", js.undefined)
   }
 }

@@ -154,19 +154,16 @@ object anon {
   }
   object Throttle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       throttle: (js.Function1[/* repeated */ js.Any, js.Any], Double) => js.Function1[/* repeated */ js.Any, js.Any]
     ): Throttle = {
       val __obj = js.Dynamic.literal(throttle = js.Any.fromFunction2(throttle))
       __obj.asInstanceOf[Throttle]
     }
     
-    @scala.inline
-    implicit class ThrottleMutableBuilder[Self <: Throttle] (val x: Self) extends AnyVal {
+    extension [Self <: Throttle](x: Self) {
       
-      @scala.inline
-      def setThrottle(
+      inline def setThrottle(
         value: (js.Function1[/* repeated */ js.Any, js.Any], Double) => js.Function1[/* repeated */ js.Any, js.Any]
       ): Self = StObject.set(x, "throttle", js.Any.fromFunction2(value))
     }

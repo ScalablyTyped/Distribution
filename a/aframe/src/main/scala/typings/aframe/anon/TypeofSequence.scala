@@ -14,19 +14,15 @@ trait TypeofSequence extends StObject {
 }
 object TypeofSequence {
   
-  @scala.inline
-  def apply(_nextId: js.Any, nextId: () => Double): TypeofSequence = {
+  inline def apply(_nextId: js.Any, nextId: () => Double): TypeofSequence = {
     val __obj = js.Dynamic.literal(_nextId = _nextId.asInstanceOf[js.Any], nextId = js.Any.fromFunction0(nextId))
     __obj.asInstanceOf[TypeofSequence]
   }
   
-  @scala.inline
-  implicit class TypeofSequenceMutableBuilder[Self <: TypeofSequence] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSequence](x: Self) {
     
-    @scala.inline
-    def setNextId(value: () => Double): Self = StObject.set(x, "nextId", js.Any.fromFunction0(value))
+    inline def setNextId(value: () => Double): Self = StObject.set(x, "nextId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_nextId(value: js.Any): Self = StObject.set(x, "_nextId", value.asInstanceOf[js.Any])
+    inline def set_nextId(value: js.Any): Self = StObject.set(x, "_nextId", value.asInstanceOf[js.Any])
   }
 }

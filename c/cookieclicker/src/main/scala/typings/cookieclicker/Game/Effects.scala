@@ -50,8 +50,7 @@ trait Effects extends StObject {
 }
 object Effects {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buildingCost: Double,
     click: Double,
     cps: Double,
@@ -78,70 +77,48 @@ object Effects {
     __obj.asInstanceOf[Effects]
   }
   
-  @scala.inline
-  implicit class EffectsMutableBuilder[Self <: Effects] (val x: Self) extends AnyVal {
+  extension [Self <: Effects](x: Self) {
     
-    @scala.inline
-    def setBuildingCost(value: Double): Self = StObject.set(x, "buildingCost", value.asInstanceOf[js.Any])
+    inline def setBuildingCost(value: Double): Self = StObject.set(x, "buildingCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClick(value: Double): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    inline def setClick(value: Double): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCps(value: Double): Self = StObject.set(x, "cps", value.asInstanceOf[js.Any])
+    inline def setCps(value: Double): Self = StObject.set(x, "cps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorCps(value: Double): Self = StObject.set(x, "cursorCps", value.asInstanceOf[js.Any])
+    inline def setCursorCps(value: Double): Self = StObject.set(x, "cursorCps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoldenCookieDur(value: Double): Self = StObject.set(x, "goldenCookieDur", value.asInstanceOf[js.Any])
+    inline def setGoldenCookieDur(value: Double): Self = StObject.set(x, "goldenCookieDur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoldenCookieEffDur(value: Double): Self = StObject.set(x, "goldenCookieEffDur", value.asInstanceOf[js.Any])
+    inline def setGoldenCookieEffDur(value: Double): Self = StObject.set(x, "goldenCookieEffDur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoldenCookieFreq(value: Double): Self = StObject.set(x, "goldenCookieFreq", value.asInstanceOf[js.Any])
+    inline def setGoldenCookieFreq(value: Double): Self = StObject.set(x, "goldenCookieFreq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoldenCookieGain(value: Double): Self = StObject.set(x, "goldenCookieGain", value.asInstanceOf[js.Any])
+    inline def setGoldenCookieGain(value: Double): Self = StObject.set(x, "goldenCookieGain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrandmaCps(value: Double): Self = StObject.set(x, "grandmaCps", value.asInstanceOf[js.Any])
+    inline def setGrandmaCps(value: Double): Self = StObject.set(x, "grandmaCps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDrops(value: Double): Self = StObject.set(x, "itemDrops", value.asInstanceOf[js.Any])
+    inline def setItemDrops(value: Double): Self = StObject.set(x, "itemDrops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMilk(value: Double): Self = StObject.set(x, "milk", value.asInstanceOf[js.Any])
+    inline def setMilk(value: Double): Self = StObject.set(x, "milk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReindeerDur(value: Double): Self = StObject.set(x, "reindeerDur", value.asInstanceOf[js.Any])
+    inline def setReindeerDur(value: Double): Self = StObject.set(x, "reindeerDur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReindeerFreq(value: Double): Self = StObject.set(x, "reindeerFreq", value.asInstanceOf[js.Any])
+    inline def setReindeerFreq(value: Double): Self = StObject.set(x, "reindeerFreq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReindeerGain(value: Double): Self = StObject.set(x, "reindeerGain", value.asInstanceOf[js.Any])
+    inline def setReindeerGain(value: Double): Self = StObject.set(x, "reindeerGain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeCost(value: Double): Self = StObject.set(x, "upgradeCost", value.asInstanceOf[js.Any])
+    inline def setUpgradeCost(value: Double): Self = StObject.set(x, "upgradeCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrathCookieDur(value: Double): Self = StObject.set(x, "wrathCookieDur", value.asInstanceOf[js.Any])
+    inline def setWrathCookieDur(value: Double): Self = StObject.set(x, "wrathCookieDur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrathCookieEffDur(value: Double): Self = StObject.set(x, "wrathCookieEffDur", value.asInstanceOf[js.Any])
+    inline def setWrathCookieEffDur(value: Double): Self = StObject.set(x, "wrathCookieEffDur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrathCookieFreq(value: Double): Self = StObject.set(x, "wrathCookieFreq", value.asInstanceOf[js.Any])
+    inline def setWrathCookieFreq(value: Double): Self = StObject.set(x, "wrathCookieFreq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrathCookieGain(value: Double): Self = StObject.set(x, "wrathCookieGain", value.asInstanceOf[js.Any])
+    inline def setWrathCookieGain(value: Double): Self = StObject.set(x, "wrathCookieGain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrinklerEat(value: Double): Self = StObject.set(x, "wrinklerEat", value.asInstanceOf[js.Any])
+    inline def setWrinklerEat(value: Double): Self = StObject.set(x, "wrinklerEat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrinklerSpawn(value: Double): Self = StObject.set(x, "wrinklerSpawn", value.asInstanceOf[js.Any])
+    inline def setWrinklerSpawn(value: Double): Self = StObject.set(x, "wrinklerSpawn", value.asInstanceOf[js.Any])
   }
 }

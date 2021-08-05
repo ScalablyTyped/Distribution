@@ -26,25 +26,19 @@ trait ChooseAlipayContactOptions
 }
 object ChooseAlipayContactOptions {
   
-  @scala.inline
-  def apply(count: Double, success: Avatar => Unit): ChooseAlipayContactOptions = {
+  inline def apply(count: Double, success: Avatar => Unit): ChooseAlipayContactOptions = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[ChooseAlipayContactOptions]
   }
   
-  @scala.inline
-  implicit class ChooseAlipayContactOptionsMutableBuilder[Self <: ChooseAlipayContactOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseAlipayContactOptions](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFail(value: /* error */ `10` | `11` => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* error */ `10` | `11` => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: Avatar => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Avatar => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

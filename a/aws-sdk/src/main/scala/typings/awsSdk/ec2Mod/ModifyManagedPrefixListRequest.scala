@@ -38,52 +38,37 @@ trait ModifyManagedPrefixListRequest extends StObject {
 }
 object ModifyManagedPrefixListRequest {
   
-  @scala.inline
-  def apply(PrefixListId: PrefixListResourceId): ModifyManagedPrefixListRequest = {
+  inline def apply(PrefixListId: PrefixListResourceId): ModifyManagedPrefixListRequest = {
     val __obj = js.Dynamic.literal(PrefixListId = PrefixListId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyManagedPrefixListRequest]
   }
   
-  @scala.inline
-  implicit class ModifyManagedPrefixListRequestMutableBuilder[Self <: ModifyManagedPrefixListRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyManagedPrefixListRequest](x: Self) {
     
-    @scala.inline
-    def setAddEntries(value: AddPrefixListEntries): Self = StObject.set(x, "AddEntries", value.asInstanceOf[js.Any])
+    inline def setAddEntries(value: AddPrefixListEntries): Self = StObject.set(x, "AddEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddEntriesUndefined: Self = StObject.set(x, "AddEntries", js.undefined)
+    inline def setAddEntriesUndefined: Self = StObject.set(x, "AddEntries", js.undefined)
     
-    @scala.inline
-    def setAddEntriesVarargs(value: AddPrefixListEntry*): Self = StObject.set(x, "AddEntries", js.Array(value :_*))
+    inline def setAddEntriesVarargs(value: AddPrefixListEntry*): Self = StObject.set(x, "AddEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setCurrentVersion(value: Long): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: Long): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersionUndefined: Self = StObject.set(x, "CurrentVersion", js.undefined)
+    inline def setCurrentVersionUndefined: Self = StObject.set(x, "CurrentVersion", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
+    inline def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListName(value: String): Self = StObject.set(x, "PrefixListName", value.asInstanceOf[js.Any])
+    inline def setPrefixListName(value: String): Self = StObject.set(x, "PrefixListName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListNameUndefined: Self = StObject.set(x, "PrefixListName", js.undefined)
+    inline def setPrefixListNameUndefined: Self = StObject.set(x, "PrefixListName", js.undefined)
     
-    @scala.inline
-    def setRemoveEntries(value: RemovePrefixListEntries): Self = StObject.set(x, "RemoveEntries", value.asInstanceOf[js.Any])
+    inline def setRemoveEntries(value: RemovePrefixListEntries): Self = StObject.set(x, "RemoveEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEntriesUndefined: Self = StObject.set(x, "RemoveEntries", js.undefined)
+    inline def setRemoveEntriesUndefined: Self = StObject.set(x, "RemoveEntries", js.undefined)
     
-    @scala.inline
-    def setRemoveEntriesVarargs(value: RemovePrefixListEntry*): Self = StObject.set(x, "RemoveEntries", js.Array(value :_*))
+    inline def setRemoveEntriesVarargs(value: RemovePrefixListEntry*): Self = StObject.set(x, "RemoveEntries", js.Array(value :_*))
   }
 }

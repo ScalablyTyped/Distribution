@@ -28,25 +28,19 @@ trait SectionCollectionLoadOptions extends StObject {
 }
 object SectionCollectionLoadOptions {
   
-  @scala.inline
-  def apply(): SectionCollectionLoadOptions = {
+  inline def apply(): SectionCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SectionCollectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class SectionCollectionLoadOptionsMutableBuilder[Self <: SectionCollectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SectionCollectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setBody(value: BodyLoadOptions): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BodyLoadOptions): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
   }
 }

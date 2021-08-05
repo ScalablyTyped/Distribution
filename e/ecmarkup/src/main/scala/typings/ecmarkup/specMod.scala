@@ -27,8 +27,7 @@ object specMod {
   }
   object Spec {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exportBiblio: () => js.Any,
       namespace: String,
       opts: Options,
@@ -41,29 +40,21 @@ object specMod {
       __obj.asInstanceOf[Spec]
     }
     
-    @scala.inline
-    implicit class SpecMutableBuilder[Self <: Spec] (val x: Self) extends AnyVal {
+    extension [Self <: Spec](x: Self) {
       
-      @scala.inline
-      def setExportBiblio(value: () => js.Any): Self = StObject.set(x, "exportBiblio", js.Any.fromFunction0(value))
+      inline def setExportBiblio(value: () => js.Any): Self = StObject.set(x, "exportBiblio", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpts(value: Options): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: Options): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
+      inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
+      inline def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpec(value: Spec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: Spec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToHTML(value: () => String): Self = StObject.set(x, "toHTML", js.Any.fromFunction0(value))
+      inline def setToHTML(value: () => String): Self = StObject.set(x, "toHTML", js.Any.fromFunction0(value))
     }
   }
   
@@ -77,36 +68,31 @@ object specMod {
   trait Warning extends StObject
   object Warning {
     
-    @scala.inline
-    def Attr(attr: String, message: String, node: Element, ruleId: String): typings.ecmarkup.anon.Attr = {
+    inline def Attr(attr: String, message: String, node: Element, ruleId: String): typings.ecmarkup.anon.Attr = {
       val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("attr")
       __obj.asInstanceOf[typings.ecmarkup.anon.Attr]
     }
     
-    @scala.inline
-    def Column(column: Double, line: Double, message: String, ruleId: String): typings.ecmarkup.anon.Column = {
+    inline def Column(column: Double, line: Double, message: String, ruleId: String): typings.ecmarkup.anon.Column = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("raw")
       __obj.asInstanceOf[typings.ecmarkup.anon.Column]
     }
     
-    @scala.inline
-    def Message(message: String, ruleId: String): typings.ecmarkup.anon.Message = {
+    inline def Message(message: String, ruleId: String): typings.ecmarkup.anon.Message = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("global")
       __obj.asInstanceOf[typings.ecmarkup.anon.Message]
     }
     
-    @scala.inline
-    def Node(message: String, node: Text | Element, ruleId: String): typings.ecmarkup.anon.Node = {
+    inline def Node(message: String, node: Text | Element, ruleId: String): typings.ecmarkup.anon.Node = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("node")
       __obj.asInstanceOf[typings.ecmarkup.anon.Node]
     }
     
-    @scala.inline
-    def NodeRelativeColumn(
+    inline def NodeRelativeColumn(
       message: String,
       node: Text | Element,
       nodeRelativeColumn: Double,

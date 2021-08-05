@@ -12,19 +12,15 @@ trait XNumber extends StObject {
 }
 object XNumber {
   
-  @scala.inline
-  def apply(x: Double, y: Double): XNumber = {
+  inline def apply(x: Double, y: Double): XNumber = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[XNumber]
   }
   
-  @scala.inline
-  implicit class XNumberMutableBuilder[Self <: XNumber] (val x: Self) extends AnyVal {
+  extension [Self <: XNumber](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

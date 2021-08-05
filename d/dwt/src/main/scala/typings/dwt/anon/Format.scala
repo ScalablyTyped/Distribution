@@ -66,79 +66,55 @@ trait Format extends StObject {
 }
 object Format {
   
-  @scala.inline
-  def apply(): Format = {
+  inline def apply(): Format = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Format]
   }
   
-  @scala.inline
-  implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+  extension [Self <: Format](x: Self) {
     
-    @scala.inline
-    def setFormat(value: EnumDWTImageType | Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: EnumDWTImageType | Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setFuncHttpUploadStatus(value: /* fileInfo */ js.Any => Unit): Self = StObject.set(x, "funcHttpUploadStatus", js.Any.fromFunction1(value))
+    inline def setFuncHttpUploadStatus(value: /* fileInfo */ js.Any => Unit): Self = StObject.set(x, "funcHttpUploadStatus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFuncHttpUploadStatusUndefined: Self = StObject.set(x, "funcHttpUploadStatus", js.undefined)
+    inline def setFuncHttpUploadStatusUndefined: Self = StObject.set(x, "funcHttpUploadStatus", js.undefined)
     
-    @scala.inline
-    def setHttpParams(value: FileName): Self = StObject.set(x, "httpParams", value.asInstanceOf[js.Any])
+    inline def setHttpParams(value: FileName): Self = StObject.set(x, "httpParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpParamsUndefined: Self = StObject.set(x, "httpParams", js.undefined)
+    inline def setHttpParamsUndefined: Self = StObject.set(x, "httpParams", js.undefined)
     
-    @scala.inline
-    def setPdfSetup(value: Author): Self = StObject.set(x, "pdfSetup", value.asInstanceOf[js.Any])
+    inline def setPdfSetup(value: Author): Self = StObject.set(x, "pdfSetup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPdfSetupUndefined: Self = StObject.set(x, "pdfSetup", js.undefined)
+    inline def setPdfSetupUndefined: Self = StObject.set(x, "pdfSetup", js.undefined)
     
-    @scala.inline
-    def setReTries(value: Double): Self = StObject.set(x, "reTries", value.asInstanceOf[js.Any])
+    inline def setReTries(value: Double): Self = StObject.set(x, "reTries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReTriesUndefined: Self = StObject.set(x, "reTries", js.undefined)
+    inline def setReTriesUndefined: Self = StObject.set(x, "reTries", js.undefined)
     
-    @scala.inline
-    def setRemoveAfterOutput(value: Boolean): Self = StObject.set(x, "removeAfterOutput", value.asInstanceOf[js.Any])
+    inline def setRemoveAfterOutput(value: Boolean): Self = StObject.set(x, "removeAfterOutput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAfterOutputUndefined: Self = StObject.set(x, "removeAfterOutput", js.undefined)
+    inline def setRemoveAfterOutputUndefined: Self = StObject.set(x, "removeAfterOutput", js.undefined)
     
-    @scala.inline
-    def setShowProgressBar(value: Boolean): Self = StObject.set(x, "showProgressBar", value.asInstanceOf[js.Any])
+    inline def setShowProgressBar(value: Boolean): Self = StObject.set(x, "showProgressBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowProgressBarUndefined: Self = StObject.set(x, "showProgressBar", js.undefined)
+    inline def setShowProgressBarUndefined: Self = StObject.set(x, "showProgressBar", js.undefined)
     
-    @scala.inline
-    def setSinglePost(value: Boolean): Self = StObject.set(x, "singlePost", value.asInstanceOf[js.Any])
+    inline def setSinglePost(value: Boolean): Self = StObject.set(x, "singlePost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinglePostUndefined: Self = StObject.set(x, "singlePost", js.undefined)
+    inline def setSinglePostUndefined: Self = StObject.set(x, "singlePost", js.undefined)
     
-    @scala.inline
-    def setTiffSetup(value: Compression): Self = StObject.set(x, "tiffSetup", value.asInstanceOf[js.Any])
+    inline def setTiffSetup(value: Compression): Self = StObject.set(x, "tiffSetup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiffSetupUndefined: Self = StObject.set(x, "tiffSetup", js.undefined)
+    inline def setTiffSetupUndefined: Self = StObject.set(x, "tiffSetup", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUseUploader(value: `false`): Self = StObject.set(x, "useUploader", value.asInstanceOf[js.Any])
+    inline def setUseUploader(value: `false`): Self = StObject.set(x, "useUploader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseUploaderUndefined: Self = StObject.set(x, "useUploader", js.undefined)
+    inline def setUseUploaderUndefined: Self = StObject.set(x, "useUploader", js.undefined)
   }
 }

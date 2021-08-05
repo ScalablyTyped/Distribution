@@ -23,22 +23,17 @@ trait S3Source extends StObject {
 }
 object S3Source {
   
-  @scala.inline
-  def apply(bucketName: BucketName, key: Key_, version: Version): S3Source = {
+  inline def apply(bucketName: BucketName, key: Key_, version: Version): S3Source = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Source]
   }
   
-  @scala.inline
-  implicit class S3SourceMutableBuilder[Self <: S3Source] (val x: Self) extends AnyVal {
+  extension [Self <: S3Source](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: Key_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

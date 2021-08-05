@@ -13,19 +13,15 @@ trait ToastNotificationActionTriggerDetail extends StObject {
 }
 object ToastNotificationActionTriggerDetail {
   
-  @scala.inline
-  def apply(argument: js.Any, userInput: js.Any): ToastNotificationActionTriggerDetail = {
+  inline def apply(argument: js.Any, userInput: js.Any): ToastNotificationActionTriggerDetail = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], userInput = userInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastNotificationActionTriggerDetail]
   }
   
-  @scala.inline
-  implicit class ToastNotificationActionTriggerDetailMutableBuilder[Self <: ToastNotificationActionTriggerDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ToastNotificationActionTriggerDetail](x: Self) {
     
-    @scala.inline
-    def setArgument(value: js.Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: js.Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInput(value: js.Any): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
+    inline def setUserInput(value: js.Any): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
   }
 }

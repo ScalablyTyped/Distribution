@@ -26,58 +26,41 @@ trait LookupColumn extends StObject {
 }
 object LookupColumn {
   
-  @scala.inline
-  def apply(): LookupColumn = {
+  inline def apply(): LookupColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LookupColumn]
   }
   
-  @scala.inline
-  implicit class LookupColumnMutableBuilder[Self <: LookupColumn] (val x: Self) extends AnyVal {
+  extension [Self <: LookupColumn](x: Self) {
     
-    @scala.inline
-    def setAllowMultipleValues(value: NullableOption[Boolean]): Self = StObject.set(x, "allowMultipleValues", value.asInstanceOf[js.Any])
+    inline def setAllowMultipleValues(value: NullableOption[Boolean]): Self = StObject.set(x, "allowMultipleValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowMultipleValuesNull: Self = StObject.set(x, "allowMultipleValues", null)
+    inline def setAllowMultipleValuesNull: Self = StObject.set(x, "allowMultipleValues", null)
     
-    @scala.inline
-    def setAllowMultipleValuesUndefined: Self = StObject.set(x, "allowMultipleValues", js.undefined)
+    inline def setAllowMultipleValuesUndefined: Self = StObject.set(x, "allowMultipleValues", js.undefined)
     
-    @scala.inline
-    def setAllowUnlimitedLength(value: NullableOption[Boolean]): Self = StObject.set(x, "allowUnlimitedLength", value.asInstanceOf[js.Any])
+    inline def setAllowUnlimitedLength(value: NullableOption[Boolean]): Self = StObject.set(x, "allowUnlimitedLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUnlimitedLengthNull: Self = StObject.set(x, "allowUnlimitedLength", null)
+    inline def setAllowUnlimitedLengthNull: Self = StObject.set(x, "allowUnlimitedLength", null)
     
-    @scala.inline
-    def setAllowUnlimitedLengthUndefined: Self = StObject.set(x, "allowUnlimitedLength", js.undefined)
+    inline def setAllowUnlimitedLengthUndefined: Self = StObject.set(x, "allowUnlimitedLength", js.undefined)
     
-    @scala.inline
-    def setColumnName(value: NullableOption[String]): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: NullableOption[String]): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNameNull: Self = StObject.set(x, "columnName", null)
+    inline def setColumnNameNull: Self = StObject.set(x, "columnName", null)
     
-    @scala.inline
-    def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
+    inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
     
-    @scala.inline
-    def setListId(value: NullableOption[String]): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+    inline def setListId(value: NullableOption[String]): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIdNull: Self = StObject.set(x, "listId", null)
+    inline def setListIdNull: Self = StObject.set(x, "listId", null)
     
-    @scala.inline
-    def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
+    inline def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
-    @scala.inline
-    def setPrimaryLookupColumnId(value: NullableOption[String]): Self = StObject.set(x, "primaryLookupColumnId", value.asInstanceOf[js.Any])
+    inline def setPrimaryLookupColumnId(value: NullableOption[String]): Self = StObject.set(x, "primaryLookupColumnId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryLookupColumnIdNull: Self = StObject.set(x, "primaryLookupColumnId", null)
+    inline def setPrimaryLookupColumnIdNull: Self = StObject.set(x, "primaryLookupColumnId", null)
     
-    @scala.inline
-    def setPrimaryLookupColumnIdUndefined: Self = StObject.set(x, "primaryLookupColumnId", js.undefined)
+    inline def setPrimaryLookupColumnIdUndefined: Self = StObject.set(x, "primaryLookupColumnId", js.undefined)
   }
 }

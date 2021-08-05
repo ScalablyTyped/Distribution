@@ -16,25 +16,19 @@ trait InsertLeft extends StObject {
 }
 object InsertLeft {
   
-  @scala.inline
-  def apply(): InsertLeft = {
+  inline def apply(): InsertLeft = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertLeft]
   }
   
-  @scala.inline
-  implicit class InsertLeftMutableBuilder[Self <: InsertLeft] (val x: Self) extends AnyVal {
+  extension [Self <: InsertLeft](x: Self) {
     
-    @scala.inline
-    def setInsertLeft(value: Boolean): Self = StObject.set(x, "insertLeft", value.asInstanceOf[js.Any])
+    inline def setInsertLeft(value: Boolean): Self = StObject.set(x, "insertLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertLeftUndefined: Self = StObject.set(x, "insertLeft", js.undefined)
+    inline def setInsertLeftUndefined: Self = StObject.set(x, "insertLeft", js.undefined)
     
-    @scala.inline
-    def setWidget(value: HTMLElement): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
+    inline def setWidget(value: HTMLElement): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidgetUndefined: Self = StObject.set(x, "widget", js.undefined)
+    inline def setWidgetUndefined: Self = StObject.set(x, "widget", js.undefined)
   }
 }

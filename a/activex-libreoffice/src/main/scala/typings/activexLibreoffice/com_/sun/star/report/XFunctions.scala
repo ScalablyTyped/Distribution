@@ -29,8 +29,7 @@ trait XFunctions
 }
 object XFunctions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     Parent: XInterface,
@@ -57,10 +56,8 @@ object XFunctions {
     __obj.asInstanceOf[XFunctions]
   }
   
-  @scala.inline
-  implicit class XFunctionsMutableBuilder[Self <: XFunctions] (val x: Self) extends AnyVal {
+  extension [Self <: XFunctions](x: Self) {
     
-    @scala.inline
-    def setCreateFunction(value: () => XFunction): Self = StObject.set(x, "createFunction", js.Any.fromFunction0(value))
+    inline def setCreateFunction(value: () => XFunction): Self = StObject.set(x, "createFunction", js.Any.fromFunction0(value))
   }
 }

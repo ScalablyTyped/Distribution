@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NpmClient extends StObject
 object NpmClient {
   
-  @scala.inline
-  def npm: typings.ionic.ionicStrings.npm = "npm".asInstanceOf[typings.ionic.ionicStrings.npm]
+  inline def npm: typings.ionic.ionicStrings.npm = "npm".asInstanceOf[typings.ionic.ionicStrings.npm]
   
-  @scala.inline
-  def yarn: typings.ionic.ionicStrings.yarn = "yarn".asInstanceOf[typings.ionic.ionicStrings.yarn]
+  inline def yarn: typings.ionic.ionicStrings.yarn = "yarn".asInstanceOf[typings.ionic.ionicStrings.yarn]
 }

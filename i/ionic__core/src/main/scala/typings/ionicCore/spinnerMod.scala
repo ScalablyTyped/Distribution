@@ -27,7 +27,7 @@ object spinnerMod {
       */
     var duration: js.UndefOr[Double] = js.native
     
-    var getName: js.Any = js.native
+    /* private */ var getName: js.Any = js.native
     
     /**
       * The name of the SVG spinner to use. If a name is not provided, the platform's default

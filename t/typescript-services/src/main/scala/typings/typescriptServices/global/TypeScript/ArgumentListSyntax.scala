@@ -96,10 +96,8 @@ object ArgumentListSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(openParenToken: ISyntaxToken, closeParenToken: ISyntaxToken): typings.typescriptServices.TypeScript.ArgumentListSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openParenToken.asInstanceOf[js.Any], closeParenToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ArgumentListSyntax]
+  inline def create(openParenToken: ISyntaxToken, closeParenToken: ISyntaxToken): typings.typescriptServices.TypeScript.ArgumentListSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openParenToken.asInstanceOf[js.Any], closeParenToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ArgumentListSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.ArgumentListSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ArgumentListSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.ArgumentListSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ArgumentListSyntax]
 }

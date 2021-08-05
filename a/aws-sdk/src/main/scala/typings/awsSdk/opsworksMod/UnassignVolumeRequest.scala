@@ -13,16 +13,13 @@ trait UnassignVolumeRequest extends StObject {
 }
 object UnassignVolumeRequest {
   
-  @scala.inline
-  def apply(VolumeId: String): UnassignVolumeRequest = {
+  inline def apply(VolumeId: String): UnassignVolumeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnassignVolumeRequest]
   }
   
-  @scala.inline
-  implicit class UnassignVolumeRequestMutableBuilder[Self <: UnassignVolumeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UnassignVolumeRequest](x: Self) {
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
   }
 }

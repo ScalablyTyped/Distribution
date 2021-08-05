@@ -32,37 +32,27 @@ trait HandleCardPaymentOptions extends StObject {
 }
 object HandleCardPaymentOptions {
   
-  @scala.inline
-  def apply(): HandleCardPaymentOptions = {
+  inline def apply(): HandleCardPaymentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HandleCardPaymentOptions]
   }
   
-  @scala.inline
-  implicit class HandleCardPaymentOptionsMutableBuilder[Self <: HandleCardPaymentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HandleCardPaymentOptions](x: Self) {
     
-    @scala.inline
-    def setPayment_method_data(value: Billingdetails): Self = StObject.set(x, "payment_method_data", value.asInstanceOf[js.Any])
+    inline def setPayment_method_data(value: Billingdetails): Self = StObject.set(x, "payment_method_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_method_dataUndefined: Self = StObject.set(x, "payment_method_data", js.undefined)
+    inline def setPayment_method_dataUndefined: Self = StObject.set(x, "payment_method_data", js.undefined)
     
-    @scala.inline
-    def setReceipt_email(value: String): Self = StObject.set(x, "receipt_email", value.asInstanceOf[js.Any])
+    inline def setReceipt_email(value: String): Self = StObject.set(x, "receipt_email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceipt_emailUndefined: Self = StObject.set(x, "receipt_email", js.undefined)
+    inline def setReceipt_emailUndefined: Self = StObject.set(x, "receipt_email", js.undefined)
     
-    @scala.inline
-    def setSave_payment_method(value: Boolean): Self = StObject.set(x, "save_payment_method", value.asInstanceOf[js.Any])
+    inline def setSave_payment_method(value: Boolean): Self = StObject.set(x, "save_payment_method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSave_payment_methodUndefined: Self = StObject.set(x, "save_payment_method", js.undefined)
+    inline def setSave_payment_methodUndefined: Self = StObject.set(x, "save_payment_method", js.undefined)
     
-    @scala.inline
-    def setShipping(value: ShippingDetails): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+    inline def setShipping(value: ShippingDetails): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
+    inline def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
   }
 }

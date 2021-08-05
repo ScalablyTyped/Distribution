@@ -64,61 +64,43 @@ trait UnifiedTopologyOptions extends StObject {
 }
 object UnifiedTopologyOptions {
   
-  @scala.inline
-  def apply(): UnifiedTopologyOptions = {
+  inline def apply(): UnifiedTopologyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnifiedTopologyOptions]
   }
   
-  @scala.inline
-  implicit class UnifiedTopologyOptionsMutableBuilder[Self <: UnifiedTopologyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UnifiedTopologyOptions](x: Self) {
     
-    @scala.inline
-    def setHeartbeatFrequencyMS(value: scala.Double): Self = StObject.set(x, "heartbeatFrequencyMS", value.asInstanceOf[js.Any])
+    inline def setHeartbeatFrequencyMS(value: scala.Double): Self = StObject.set(x, "heartbeatFrequencyMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeartbeatFrequencyMSUndefined: Self = StObject.set(x, "heartbeatFrequencyMS", js.undefined)
+    inline def setHeartbeatFrequencyMSUndefined: Self = StObject.set(x, "heartbeatFrequencyMS", js.undefined)
     
-    @scala.inline
-    def setLocalThresholdMS(value: scala.Double): Self = StObject.set(x, "localThresholdMS", value.asInstanceOf[js.Any])
+    inline def setLocalThresholdMS(value: scala.Double): Self = StObject.set(x, "localThresholdMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalThresholdMSUndefined: Self = StObject.set(x, "localThresholdMS", js.undefined)
+    inline def setLocalThresholdMSUndefined: Self = StObject.set(x, "localThresholdMS", js.undefined)
     
-    @scala.inline
-    def setMaxIdleTimeMS(value: scala.Double): Self = StObject.set(x, "maxIdleTimeMS", value.asInstanceOf[js.Any])
+    inline def setMaxIdleTimeMS(value: scala.Double): Self = StObject.set(x, "maxIdleTimeMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxIdleTimeMSUndefined: Self = StObject.set(x, "maxIdleTimeMS", js.undefined)
+    inline def setMaxIdleTimeMSUndefined: Self = StObject.set(x, "maxIdleTimeMS", js.undefined)
     
-    @scala.inline
-    def setMaxPoolSize(value: scala.Double): Self = StObject.set(x, "maxPoolSize", value.asInstanceOf[js.Any])
+    inline def setMaxPoolSize(value: scala.Double): Self = StObject.set(x, "maxPoolSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPoolSizeUndefined: Self = StObject.set(x, "maxPoolSize", js.undefined)
+    inline def setMaxPoolSizeUndefined: Self = StObject.set(x, "maxPoolSize", js.undefined)
     
-    @scala.inline
-    def setMinPoolSize(value: scala.Double): Self = StObject.set(x, "minPoolSize", value.asInstanceOf[js.Any])
+    inline def setMinPoolSize(value: scala.Double): Self = StObject.set(x, "minPoolSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinPoolSizeUndefined: Self = StObject.set(x, "minPoolSize", js.undefined)
+    inline def setMinPoolSizeUndefined: Self = StObject.set(x, "minPoolSize", js.undefined)
     
-    @scala.inline
-    def setServerSelectionTimeoutMS(value: scala.Double): Self = StObject.set(x, "serverSelectionTimeoutMS", value.asInstanceOf[js.Any])
+    inline def setServerSelectionTimeoutMS(value: scala.Double): Self = StObject.set(x, "serverSelectionTimeoutMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerSelectionTimeoutMSUndefined: Self = StObject.set(x, "serverSelectionTimeoutMS", js.undefined)
+    inline def setServerSelectionTimeoutMSUndefined: Self = StObject.set(x, "serverSelectionTimeoutMS", js.undefined)
     
-    @scala.inline
-    def setUseUnifiedTopology(value: Boolean): Self = StObject.set(x, "useUnifiedTopology", value.asInstanceOf[js.Any])
+    inline def setUseUnifiedTopology(value: Boolean): Self = StObject.set(x, "useUnifiedTopology", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseUnifiedTopologyUndefined: Self = StObject.set(x, "useUnifiedTopology", js.undefined)
+    inline def setUseUnifiedTopologyUndefined: Self = StObject.set(x, "useUnifiedTopology", js.undefined)
     
-    @scala.inline
-    def setWaitQueueTimeoutMS(value: scala.Double): Self = StObject.set(x, "waitQueueTimeoutMS", value.asInstanceOf[js.Any])
+    inline def setWaitQueueTimeoutMS(value: scala.Double): Self = StObject.set(x, "waitQueueTimeoutMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitQueueTimeoutMSUndefined: Self = StObject.set(x, "waitQueueTimeoutMS", js.undefined)
+    inline def setWaitQueueTimeoutMSUndefined: Self = StObject.set(x, "waitQueueTimeoutMS", js.undefined)
   }
 }

@@ -51,8 +51,7 @@ trait BasicDataValidation extends StObject {
 }
 object BasicDataValidation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     formula1: String | Double | Range,
     operator: DataValidationOperator | Between | NotBetween | EqualTo | NotEqualTo | GreaterThan | LessThan | GreaterThanOrEqualTo | LessThanOrEqualTo
   ): BasicDataValidation = {
@@ -60,20 +59,15 @@ object BasicDataValidation {
     __obj.asInstanceOf[BasicDataValidation]
   }
   
-  @scala.inline
-  implicit class BasicDataValidationMutableBuilder[Self <: BasicDataValidation] (val x: Self) extends AnyVal {
+  extension [Self <: BasicDataValidation](x: Self) {
     
-    @scala.inline
-    def setFormula1(value: String | Double | Range): Self = StObject.set(x, "formula1", value.asInstanceOf[js.Any])
+    inline def setFormula1(value: String | Double | Range): Self = StObject.set(x, "formula1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula2(value: String | Double | Range): Self = StObject.set(x, "formula2", value.asInstanceOf[js.Any])
+    inline def setFormula2(value: String | Double | Range): Self = StObject.set(x, "formula2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula2Undefined: Self = StObject.set(x, "formula2", js.undefined)
+    inline def setFormula2Undefined: Self = StObject.set(x, "formula2", js.undefined)
     
-    @scala.inline
-    def setOperator(
+    inline def setOperator(
       value: DataValidationOperator | Between | NotBetween | EqualTo | NotEqualTo | GreaterThan | LessThan | GreaterThanOrEqualTo | LessThanOrEqualTo
     ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
   }

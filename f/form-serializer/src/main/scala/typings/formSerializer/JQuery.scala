@@ -18,19 +18,15 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(serializeJSON: () => String, serializeObject: () => js.Object): JQuery = {
+  inline def apply(serializeJSON: () => String, serializeObject: () => js.Object): JQuery = {
     val __obj = js.Dynamic.literal(serializeJSON = js.Any.fromFunction0(serializeJSON), serializeObject = js.Any.fromFunction0(serializeObject))
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setSerializeJSON(value: () => String): Self = StObject.set(x, "serializeJSON", js.Any.fromFunction0(value))
+    inline def setSerializeJSON(value: () => String): Self = StObject.set(x, "serializeJSON", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSerializeObject(value: () => js.Object): Self = StObject.set(x, "serializeObject", js.Any.fromFunction0(value))
+    inline def setSerializeObject(value: () => js.Object): Self = StObject.set(x, "serializeObject", js.Any.fromFunction0(value))
   }
 }

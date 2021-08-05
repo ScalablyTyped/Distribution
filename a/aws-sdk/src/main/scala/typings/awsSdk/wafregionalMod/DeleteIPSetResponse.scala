@@ -13,19 +13,15 @@ trait DeleteIPSetResponse extends StObject {
 }
 object DeleteIPSetResponse {
   
-  @scala.inline
-  def apply(): DeleteIPSetResponse = {
+  inline def apply(): DeleteIPSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteIPSetResponse]
   }
   
-  @scala.inline
-  implicit class DeleteIPSetResponseMutableBuilder[Self <: DeleteIPSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteIPSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

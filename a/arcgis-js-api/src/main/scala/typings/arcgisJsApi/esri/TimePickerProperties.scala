@@ -24,25 +24,19 @@ trait TimePickerProperties
 }
 object TimePickerProperties {
   
-  @scala.inline
-  def apply(): TimePickerProperties = {
+  inline def apply(): TimePickerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimePickerProperties]
   }
   
-  @scala.inline
-  implicit class TimePickerPropertiesMutableBuilder[Self <: TimePickerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TimePickerProperties](x: Self) {
     
-    @scala.inline
-    def setValue(value: DateProperties): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DateProperties): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setViewModel(value: TimePickerViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: TimePickerViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

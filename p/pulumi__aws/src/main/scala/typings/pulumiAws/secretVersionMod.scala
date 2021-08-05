@@ -70,21 +70,16 @@ object secretVersionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): SecretVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SecretVersion]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SecretVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretVersion]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SecretVersionState): SecretVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SecretVersion]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SecretVersionState, opts: CustomResourceOptions): SecretVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretVersion]
+    inline def get(name: String, id: Input[ID]): SecretVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SecretVersion]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SecretVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretVersion]
+    inline def get(name: String, id: Input[ID], state: SecretVersionState): SecretVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SecretVersion]
+    inline def get(name: String, id: Input[ID], state: SecretVersionState, opts: CustomResourceOptions): SecretVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretVersion]
     
     /**
       * Returns true if the given object is an instance of SecretVersion.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretVersion.SecretVersion */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/secretsmanager/secretVersion.SecretVersion */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretVersion.SecretVersion */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/secretsmanager/secretVersion.SecretVersion */ Boolean]
   }
   
   trait SecretVersionArgs extends StObject {
@@ -111,38 +106,28 @@ object secretVersionMod {
   }
   object SecretVersionArgs {
     
-    @scala.inline
-    def apply(secretId: Input[String]): SecretVersionArgs = {
+    inline def apply(secretId: Input[String]): SecretVersionArgs = {
       val __obj = js.Dynamic.literal(secretId = secretId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SecretVersionArgs]
     }
     
-    @scala.inline
-    implicit class SecretVersionArgsMutableBuilder[Self <: SecretVersionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SecretVersionArgs](x: Self) {
       
-      @scala.inline
-      def setSecretBinary(value: Input[String]): Self = StObject.set(x, "secretBinary", value.asInstanceOf[js.Any])
+      inline def setSecretBinary(value: Input[String]): Self = StObject.set(x, "secretBinary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretBinaryUndefined: Self = StObject.set(x, "secretBinary", js.undefined)
+      inline def setSecretBinaryUndefined: Self = StObject.set(x, "secretBinary", js.undefined)
       
-      @scala.inline
-      def setSecretId(value: Input[String]): Self = StObject.set(x, "secretId", value.asInstanceOf[js.Any])
+      inline def setSecretId(value: Input[String]): Self = StObject.set(x, "secretId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretString(value: Input[String]): Self = StObject.set(x, "secretString", value.asInstanceOf[js.Any])
+      inline def setSecretString(value: Input[String]): Self = StObject.set(x, "secretString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretStringUndefined: Self = StObject.set(x, "secretString", js.undefined)
+      inline def setSecretStringUndefined: Self = StObject.set(x, "secretString", js.undefined)
       
-      @scala.inline
-      def setVersionStages(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "versionStages", value.asInstanceOf[js.Any])
+      inline def setVersionStages(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "versionStages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionStagesUndefined: Self = StObject.set(x, "versionStages", js.undefined)
+      inline def setVersionStagesUndefined: Self = StObject.set(x, "versionStages", js.undefined)
       
-      @scala.inline
-      def setVersionStagesVarargs(value: Input[String]*): Self = StObject.set(x, "versionStages", js.Array(value :_*))
+      inline def setVersionStagesVarargs(value: Input[String]*): Self = StObject.set(x, "versionStages", js.Array(value :_*))
     }
   }
   
@@ -180,53 +165,38 @@ object secretVersionMod {
   }
   object SecretVersionState {
     
-    @scala.inline
-    def apply(): SecretVersionState = {
+    inline def apply(): SecretVersionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SecretVersionState]
     }
     
-    @scala.inline
-    implicit class SecretVersionStateMutableBuilder[Self <: SecretVersionState] (val x: Self) extends AnyVal {
+    extension [Self <: SecretVersionState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setSecretBinary(value: Input[String]): Self = StObject.set(x, "secretBinary", value.asInstanceOf[js.Any])
+      inline def setSecretBinary(value: Input[String]): Self = StObject.set(x, "secretBinary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretBinaryUndefined: Self = StObject.set(x, "secretBinary", js.undefined)
+      inline def setSecretBinaryUndefined: Self = StObject.set(x, "secretBinary", js.undefined)
       
-      @scala.inline
-      def setSecretId(value: Input[String]): Self = StObject.set(x, "secretId", value.asInstanceOf[js.Any])
+      inline def setSecretId(value: Input[String]): Self = StObject.set(x, "secretId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretIdUndefined: Self = StObject.set(x, "secretId", js.undefined)
+      inline def setSecretIdUndefined: Self = StObject.set(x, "secretId", js.undefined)
       
-      @scala.inline
-      def setSecretString(value: Input[String]): Self = StObject.set(x, "secretString", value.asInstanceOf[js.Any])
+      inline def setSecretString(value: Input[String]): Self = StObject.set(x, "secretString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretStringUndefined: Self = StObject.set(x, "secretString", js.undefined)
+      inline def setSecretStringUndefined: Self = StObject.set(x, "secretString", js.undefined)
       
-      @scala.inline
-      def setVersionId(value: Input[String]): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+      inline def setVersionId(value: Input[String]): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+      inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
       
-      @scala.inline
-      def setVersionStages(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "versionStages", value.asInstanceOf[js.Any])
+      inline def setVersionStages(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "versionStages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionStagesUndefined: Self = StObject.set(x, "versionStages", js.undefined)
+      inline def setVersionStagesUndefined: Self = StObject.set(x, "versionStages", js.undefined)
       
-      @scala.inline
-      def setVersionStagesVarargs(value: Input[String]*): Self = StObject.set(x, "versionStages", js.Array(value :_*))
+      inline def setVersionStagesVarargs(value: Input[String]*): Self = StObject.set(x, "versionStages", js.Array(value :_*))
     }
   }
 }

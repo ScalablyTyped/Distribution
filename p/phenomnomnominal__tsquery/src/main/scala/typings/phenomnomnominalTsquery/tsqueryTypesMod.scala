@@ -75,14 +75,11 @@ object tsqueryTypesMod {
   trait TSQueryAttributeOperatorType extends StObject
   object TSQueryAttributeOperatorType {
     
-    @scala.inline
-    def literal: typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.literal = "literal".asInstanceOf[typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.literal]
+    inline def literal: typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.literal = "literal".asInstanceOf[typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.literal]
     
-    @scala.inline
-    def regexp: typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.regexp = "regexp".asInstanceOf[typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.regexp]
+    inline def regexp: typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.regexp = "regexp".asInstanceOf[typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.regexp]
     
-    @scala.inline
-    def `type`: typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.`type` = "type".asInstanceOf[typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.`type`]
+    inline def `type`: typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.`type` = "type".asInstanceOf[typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.`type`]
   }
   
   type TSQueryAttributeOperators = StringDictionary[TSQueryAttributeOperator]
@@ -105,20 +102,16 @@ object tsqueryTypesMod {
   }
   object TSQueryOptions {
     
-    @scala.inline
-    def apply(): TSQueryOptions = {
+    inline def apply(): TSQueryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TSQueryOptions]
     }
     
-    @scala.inline
-    implicit class TSQueryOptionsMutableBuilder[Self <: TSQueryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TSQueryOptions](x: Self) {
       
-      @scala.inline
-      def setVisitAllChildren(value: Boolean): Self = StObject.set(x, "visitAllChildren", value.asInstanceOf[js.Any])
+      inline def setVisitAllChildren(value: Boolean): Self = StObject.set(x, "visitAllChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitAllChildrenUndefined: Self = StObject.set(x, "visitAllChildren", js.undefined)
+      inline def setVisitAllChildrenUndefined: Self = StObject.set(x, "visitAllChildren", js.undefined)
     }
   }
   
@@ -134,32 +127,24 @@ object tsqueryTypesMod {
   }
   object TSQueryProperties {
     
-    @scala.inline
-    def apply(kindName: String, text: String): TSQueryProperties = {
+    inline def apply(kindName: String, text: String): TSQueryProperties = {
       val __obj = js.Dynamic.literal(kindName = kindName.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TSQueryProperties]
     }
     
-    @scala.inline
-    implicit class TSQueryPropertiesMutableBuilder[Self <: TSQueryProperties] (val x: Self) extends AnyVal {
+    extension [Self <: TSQueryProperties](x: Self) {
       
-      @scala.inline
-      def setKindName(value: String): Self = StObject.set(x, "kindName", value.asInstanceOf[js.Any])
+      inline def setKindName(value: String): Self = StObject.set(x, "kindName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -189,8 +174,7 @@ object tsqueryTypesMod {
   }
   object TSQuerySelectorNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       index: TSQuerySelectorNode,
       left: TSQuerySelectorNode,
       name: String,
@@ -206,40 +190,29 @@ object tsqueryTypesMod {
       __obj.asInstanceOf[TSQuerySelectorNode]
     }
     
-    @scala.inline
-    implicit class TSQuerySelectorNodeMutableBuilder[Self <: TSQuerySelectorNode] (val x: Self) extends AnyVal {
+    extension [Self <: TSQuerySelectorNode](x: Self) {
       
-      @scala.inline
-      def setIndex(value: TSQuerySelectorNode): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: TSQuerySelectorNode): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: TSQuerySelectorNode): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: TSQuerySelectorNode): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperator(
+      inline def setOperator(
         value: Equalssign | ExclamationmarkEqualssign | LessthansignEqualssign | Lessthansign | GreaterthansignEqualssign | Greaterthansign
       ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: TSQuerySelectorNode): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: TSQuerySelectorNode): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectors(value: js.Array[TSQuerySelectorNode]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+      inline def setSelectors(value: js.Array[TSQuerySelectorNode]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorsVarargs(value: TSQuerySelectorNode*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+      inline def setSelectorsVarargs(value: TSQuerySelectorNode*): Self = StObject.set(x, "selectors", js.Array(value :_*))
       
-      @scala.inline
-      def setSubject(value: Boolean): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: Boolean): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: TSQueryAttributeOperatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TSQueryAttributeOperatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: TSQuerySelectorNode | RegExp | Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: TSQuerySelectorNode | RegExp | Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

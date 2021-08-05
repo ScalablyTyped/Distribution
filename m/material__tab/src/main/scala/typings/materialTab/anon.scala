@@ -13,17 +13,14 @@ object anon {
   }
   object ACTIVE {
     
-    @scala.inline
-    def apply(ACTIVE: String): ACTIVE = {
+    inline def apply(ACTIVE: String): ACTIVE = {
       val __obj = js.Dynamic.literal(ACTIVE = ACTIVE.asInstanceOf[js.Any])
       __obj.asInstanceOf[ACTIVE]
     }
     
-    @scala.inline
-    implicit class ACTIVEMutableBuilder[Self <: ACTIVE] (val x: Self) extends AnyVal {
+    extension [Self <: ACTIVE](x: Self) {
       
-      @scala.inline
-      def setACTIVE(value: String): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
+      inline def setACTIVE(value: String): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,8 +40,7 @@ object anon {
   }
   object ARIASELECTED {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ARIA_SELECTED: String,
       CONTENT_SELECTOR: String,
       INTERACTED_EVENT: String,
@@ -56,26 +52,19 @@ object anon {
       __obj.asInstanceOf[ARIASELECTED]
     }
     
-    @scala.inline
-    implicit class ARIASELECTEDMutableBuilder[Self <: ARIASELECTED] (val x: Self) extends AnyVal {
+    extension [Self <: ARIASELECTED](x: Self) {
       
-      @scala.inline
-      def setARIA_SELECTED(value: String): Self = StObject.set(x, "ARIA_SELECTED", value.asInstanceOf[js.Any])
+      inline def setARIA_SELECTED(value: String): Self = StObject.set(x, "ARIA_SELECTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONTENT_SELECTOR(value: String): Self = StObject.set(x, "CONTENT_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setCONTENT_SELECTOR(value: String): Self = StObject.set(x, "CONTENT_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINTERACTED_EVENT(value: String): Self = StObject.set(x, "INTERACTED_EVENT", value.asInstanceOf[js.Any])
+      inline def setINTERACTED_EVENT(value: String): Self = StObject.set(x, "INTERACTED_EVENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRIPPLE_SELECTOR(value: String): Self = StObject.set(x, "RIPPLE_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setRIPPLE_SELECTOR(value: String): Self = StObject.set(x, "RIPPLE_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTABINDEX(value: String): Self = StObject.set(x, "TABINDEX", value.asInstanceOf[js.Any])
+      inline def setTABINDEX(value: String): Self = StObject.set(x, "TABINDEX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTAB_INDICATOR_SELECTOR(value: String): Self = StObject.set(x, "TAB_INDICATOR_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setTAB_INDICATOR_SELECTOR(value: String): Self = StObject.set(x, "TAB_INDICATOR_SELECTOR", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,86 +97,60 @@ object anon {
   }
   object PartialMDCTabAdapter {
     
-    @scala.inline
-    def apply(): PartialMDCTabAdapter = {
+    inline def apply(): PartialMDCTabAdapter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMDCTabAdapter]
     }
     
-    @scala.inline
-    implicit class PartialMDCTabAdapterMutableBuilder[Self <: PartialMDCTabAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMDCTabAdapter](x: Self) {
       
-      @scala.inline
-      def setActivateIndicator(value: /* previousIndicatorClientRect */ js.UndefOr[ClientRect] => Unit): Self = StObject.set(x, "activateIndicator", js.Any.fromFunction1(value))
+      inline def setActivateIndicator(value: /* previousIndicatorClientRect */ js.UndefOr[ClientRect] => Unit): Self = StObject.set(x, "activateIndicator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActivateIndicatorUndefined: Self = StObject.set(x, "activateIndicator", js.undefined)
+      inline def setActivateIndicatorUndefined: Self = StObject.set(x, "activateIndicator", js.undefined)
       
-      @scala.inline
-      def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
+      inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
       
-      @scala.inline
-      def setDeactivateIndicator(value: () => Unit): Self = StObject.set(x, "deactivateIndicator", js.Any.fromFunction0(value))
+      inline def setDeactivateIndicator(value: () => Unit): Self = StObject.set(x, "deactivateIndicator", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeactivateIndicatorUndefined: Self = StObject.set(x, "deactivateIndicator", js.undefined)
+      inline def setDeactivateIndicatorUndefined: Self = StObject.set(x, "deactivateIndicator", js.undefined)
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+      inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
-      @scala.inline
-      def setGetContentOffsetLeft(value: () => Double): Self = StObject.set(x, "getContentOffsetLeft", js.Any.fromFunction0(value))
+      inline def setGetContentOffsetLeft(value: () => Double): Self = StObject.set(x, "getContentOffsetLeft", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentOffsetLeftUndefined: Self = StObject.set(x, "getContentOffsetLeft", js.undefined)
+      inline def setGetContentOffsetLeftUndefined: Self = StObject.set(x, "getContentOffsetLeft", js.undefined)
       
-      @scala.inline
-      def setGetContentOffsetWidth(value: () => Double): Self = StObject.set(x, "getContentOffsetWidth", js.Any.fromFunction0(value))
+      inline def setGetContentOffsetWidth(value: () => Double): Self = StObject.set(x, "getContentOffsetWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentOffsetWidthUndefined: Self = StObject.set(x, "getContentOffsetWidth", js.undefined)
+      inline def setGetContentOffsetWidthUndefined: Self = StObject.set(x, "getContentOffsetWidth", js.undefined)
       
-      @scala.inline
-      def setGetOffsetLeft(value: () => Double): Self = StObject.set(x, "getOffsetLeft", js.Any.fromFunction0(value))
+      inline def setGetOffsetLeft(value: () => Double): Self = StObject.set(x, "getOffsetLeft", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOffsetLeftUndefined: Self = StObject.set(x, "getOffsetLeft", js.undefined)
+      inline def setGetOffsetLeftUndefined: Self = StObject.set(x, "getOffsetLeft", js.undefined)
       
-      @scala.inline
-      def setGetOffsetWidth(value: () => Double): Self = StObject.set(x, "getOffsetWidth", js.Any.fromFunction0(value))
+      inline def setGetOffsetWidth(value: () => Double): Self = StObject.set(x, "getOffsetWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOffsetWidthUndefined: Self = StObject.set(x, "getOffsetWidth", js.undefined)
+      inline def setGetOffsetWidthUndefined: Self = StObject.set(x, "getOffsetWidth", js.undefined)
       
-      @scala.inline
-      def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
+      inline def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
       
-      @scala.inline
-      def setNotifyInteracted(value: () => Unit): Self = StObject.set(x, "notifyInteracted", js.Any.fromFunction0(value))
+      inline def setNotifyInteracted(value: () => Unit): Self = StObject.set(x, "notifyInteracted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotifyInteractedUndefined: Self = StObject.set(x, "notifyInteracted", js.undefined)
+      inline def setNotifyInteractedUndefined: Self = StObject.set(x, "notifyInteracted", js.undefined)
       
-      @scala.inline
-      def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
+      inline def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
       
-      @scala.inline
-      def setSetAttr(value: (/* attr */ String, /* value */ String) => Unit): Self = StObject.set(x, "setAttr", js.Any.fromFunction2(value))
+      inline def setSetAttr(value: (/* attr */ String, /* value */ String) => Unit): Self = StObject.set(x, "setAttr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetAttrUndefined: Self = StObject.set(x, "setAttr", js.undefined)
+      inline def setSetAttrUndefined: Self = StObject.set(x, "setAttr", js.undefined)
     }
   }
 }

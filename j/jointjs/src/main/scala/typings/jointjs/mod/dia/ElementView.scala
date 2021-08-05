@@ -60,26 +60,20 @@ object ElementView {
   }
   object InteractivityOptions {
     
-    @scala.inline
-    def apply(): InteractivityOptions = {
+    inline def apply(): InteractivityOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InteractivityOptions]
     }
     
-    @scala.inline
-    implicit class InteractivityOptionsMutableBuilder[Self <: InteractivityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InteractivityOptions](x: Self) {
       
-      @scala.inline
-      def setAddLinkFromMagnet(value: Boolean): Self = StObject.set(x, "addLinkFromMagnet", value.asInstanceOf[js.Any])
+      inline def setAddLinkFromMagnet(value: Boolean): Self = StObject.set(x, "addLinkFromMagnet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddLinkFromMagnetUndefined: Self = StObject.set(x, "addLinkFromMagnet", js.undefined)
+      inline def setAddLinkFromMagnetUndefined: Self = StObject.set(x, "addLinkFromMagnet", js.undefined)
       
-      @scala.inline
-      def setElementMove(value: Boolean): Self = StObject.set(x, "elementMove", value.asInstanceOf[js.Any])
+      inline def setElementMove(value: Boolean): Self = StObject.set(x, "elementMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementMoveUndefined: Self = StObject.set(x, "elementMove", js.undefined)
+      inline def setElementMoveUndefined: Self = StObject.set(x, "elementMove", js.undefined)
     }
   }
 }

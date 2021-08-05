@@ -13,22 +13,17 @@ trait AddRuleOptions extends StObject {
 }
 object AddRuleOptions {
   
-  @scala.inline
-  def apply(name: String): AddRuleOptions = {
+  inline def apply(name: String): AddRuleOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddRuleOptions]
   }
   
-  @scala.inline
-  implicit class AddRuleOptionsMutableBuilder[Self <: AddRuleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddRuleOptions](x: Self) {
     
-    @scala.inline
-    def setArgs(value: StringDictionary[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: StringDictionary[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

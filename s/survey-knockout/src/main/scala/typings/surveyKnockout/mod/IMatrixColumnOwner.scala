@@ -20,8 +20,7 @@ trait IMatrixColumnOwner
 }
 object IMatrixColumnOwner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCellType: () => String,
     getLocale: () => String,
     getMarkdownHtml: String => String,
@@ -35,22 +34,16 @@ object IMatrixColumnOwner {
     __obj.asInstanceOf[IMatrixColumnOwner]
   }
   
-  @scala.inline
-  implicit class IMatrixColumnOwnerMutableBuilder[Self <: IMatrixColumnOwner] (val x: Self) extends AnyVal {
+  extension [Self <: IMatrixColumnOwner](x: Self) {
     
-    @scala.inline
-    def setGetCellType(value: () => String): Self = StObject.set(x, "getCellType", js.Any.fromFunction0(value))
+    inline def setGetCellType(value: () => String): Self = StObject.set(x, "getCellType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRequiredText(value: () => String): Self = StObject.set(x, "getRequiredText", js.Any.fromFunction0(value))
+    inline def setGetRequiredText(value: () => String): Self = StObject.set(x, "getRequiredText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnColumnCellTypeChanged(value: MatrixDropdownColumn => Unit): Self = StObject.set(x, "onColumnCellTypeChanged", js.Any.fromFunction1(value))
+    inline def setOnColumnCellTypeChanged(value: MatrixDropdownColumn => Unit): Self = StObject.set(x, "onColumnCellTypeChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnColumnPropertyChanged(value: (MatrixDropdownColumn, String, js.Any) => Unit): Self = StObject.set(x, "onColumnPropertyChanged", js.Any.fromFunction3(value))
+    inline def setOnColumnPropertyChanged(value: (MatrixDropdownColumn, String, js.Any) => Unit): Self = StObject.set(x, "onColumnPropertyChanged", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnShowInMultipleColumnsChanged(value: MatrixDropdownColumn => Unit): Self = StObject.set(x, "onShowInMultipleColumnsChanged", js.Any.fromFunction1(value))
+    inline def setOnShowInMultipleColumnsChanged(value: MatrixDropdownColumn => Unit): Self = StObject.set(x, "onShowInMultipleColumnsChanged", js.Any.fromFunction1(value))
   }
 }

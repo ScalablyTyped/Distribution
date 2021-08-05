@@ -11,19 +11,15 @@ trait GoogleCloudVisionV1p4beta1AsyncBatchAnnotateImagesResponse extends StObjec
 }
 object GoogleCloudVisionV1p4beta1AsyncBatchAnnotateImagesResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p4beta1AsyncBatchAnnotateImagesResponse = {
+  inline def apply(): GoogleCloudVisionV1p4beta1AsyncBatchAnnotateImagesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1AsyncBatchAnnotateImagesResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p4beta1AsyncBatchAnnotateImagesResponseMutableBuilder[Self <: GoogleCloudVisionV1p4beta1AsyncBatchAnnotateImagesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p4beta1AsyncBatchAnnotateImagesResponse](x: Self) {
     
-    @scala.inline
-    def setOutputConfig(value: GoogleCloudVisionV1p4beta1OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
+    inline def setOutputConfig(value: GoogleCloudVisionV1p4beta1OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
+    inline def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
   }
 }

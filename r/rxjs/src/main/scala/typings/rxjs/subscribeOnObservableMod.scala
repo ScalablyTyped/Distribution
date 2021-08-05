@@ -18,9 +18,9 @@ object subscribeOnObservableMod {
     def this(source: Observable[T], delayTime: Double, scheduler: SchedulerLike) = this()
     def this(source: Observable[T], delayTime: Unit, scheduler: SchedulerLike) = this()
     
-    var delayTime: js.Any = js.native
+    /* private */ var delayTime: js.Any = js.native
     
-    var scheduler: js.Any = js.native
+    /* private */ var scheduler: js.Any = js.native
     
     @JSName("source")
     var source_SubscribeOnObservable: Observable[T] = js.native
@@ -33,18 +33,13 @@ object subscribeOnObservableMod {
     val ^ : js.Any = js.native
     
     /** @nocollapse */
-    @scala.inline
-    def create[T](source: Observable[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
-    @scala.inline
-    def create[T](source: Observable[T], delay: Double): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
-    @scala.inline
-    def create[T](source: Observable[T], delay: Double, scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
-    @scala.inline
-    def create[T](source: Observable[T], delay: Unit, scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+    inline def create[T](source: Observable[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+    inline def create[T](source: Observable[T], delay: Double): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+    inline def create[T](source: Observable[T], delay: Double, scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+    inline def create[T](source: Observable[T], delay: Unit, scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
     
     /** @nocollapse */
-    @scala.inline
-    def dispatch[T](arg: DispatchArg[T]): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(arg.asInstanceOf[js.Any]).asInstanceOf[Subscription]
+    inline def dispatch[T](arg: DispatchArg[T]): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(arg.asInstanceOf[js.Any]).asInstanceOf[Subscription]
   }
   
   trait DispatchArg[T] extends StObject {
@@ -55,20 +50,16 @@ object subscribeOnObservableMod {
   }
   object DispatchArg {
     
-    @scala.inline
-    def apply[T](source: Observable[T], subscriber: Subscriber[T]): DispatchArg[T] = {
+    inline def apply[T](source: Observable[T], subscriber: Subscriber[T]): DispatchArg[T] = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], subscriber = subscriber.asInstanceOf[js.Any])
       __obj.asInstanceOf[DispatchArg[T]]
     }
     
-    @scala.inline
-    implicit class DispatchArgMutableBuilder[Self <: DispatchArg[?], T] (val x: Self & DispatchArg[T]) extends AnyVal {
+    extension [Self <: DispatchArg[?], T](x: Self & DispatchArg[T]) {
       
-      @scala.inline
-      def setSource(value: Observable[T]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Observable[T]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriber(value: Subscriber[T]): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
+      inline def setSubscriber(value: Subscriber[T]): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
     }
   }
 }

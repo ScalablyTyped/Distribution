@@ -23,22 +23,17 @@ trait ProcessRequestItem
 }
 object ProcessRequestItem {
   
-  @scala.inline
-  def apply(sequenceLinkId: integer): ProcessRequestItem = {
+  inline def apply(sequenceLinkId: integer): ProcessRequestItem = {
     val __obj = js.Dynamic.literal(sequenceLinkId = sequenceLinkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessRequestItem]
   }
   
-  @scala.inline
-  implicit class ProcessRequestItemMutableBuilder[Self <: ProcessRequestItem] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessRequestItem](x: Self) {
     
-    @scala.inline
-    def setSequenceLinkId(value: integer): Self = StObject.set(x, "sequenceLinkId", value.asInstanceOf[js.Any])
+    inline def setSequenceLinkId(value: integer): Self = StObject.set(x, "sequenceLinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sequenceLinkId(value: Element): Self = StObject.set(x, "_sequenceLinkId", value.asInstanceOf[js.Any])
+    inline def set_sequenceLinkId(value: Element): Self = StObject.set(x, "_sequenceLinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sequenceLinkIdUndefined: Self = StObject.set(x, "_sequenceLinkId", js.undefined)
+    inline def set_sequenceLinkIdUndefined: Self = StObject.set(x, "_sequenceLinkId", js.undefined)
   }
 }

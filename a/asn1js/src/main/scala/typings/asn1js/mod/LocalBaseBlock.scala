@@ -42,6 +42,5 @@ object LocalBaseBlock {
     * @memberOf LocalBaseBlock
     */
   /* static member */
-  @scala.inline
-  def blockName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("blockName")().asInstanceOf[String]
+  inline def blockName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("blockName")().asInstanceOf[String]
 }

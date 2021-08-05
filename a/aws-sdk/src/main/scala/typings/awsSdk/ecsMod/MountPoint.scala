@@ -23,31 +23,23 @@ trait MountPoint extends StObject {
 }
 object MountPoint {
   
-  @scala.inline
-  def apply(): MountPoint = {
+  inline def apply(): MountPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MountPoint]
   }
   
-  @scala.inline
-  implicit class MountPointMutableBuilder[Self <: MountPoint] (val x: Self) extends AnyVal {
+  extension [Self <: MountPoint](x: Self) {
     
-    @scala.inline
-    def setContainerPath(value: String): Self = StObject.set(x, "containerPath", value.asInstanceOf[js.Any])
+    inline def setContainerPath(value: String): Self = StObject.set(x, "containerPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerPathUndefined: Self = StObject.set(x, "containerPath", js.undefined)
+    inline def setContainerPathUndefined: Self = StObject.set(x, "containerPath", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: BoxedBoolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: BoxedBoolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setSourceVolume(value: String): Self = StObject.set(x, "sourceVolume", value.asInstanceOf[js.Any])
+    inline def setSourceVolume(value: String): Self = StObject.set(x, "sourceVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVolumeUndefined: Self = StObject.set(x, "sourceVolume", js.undefined)
+    inline def setSourceVolumeUndefined: Self = StObject.set(x, "sourceVolume", js.undefined)
   }
 }

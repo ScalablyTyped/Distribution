@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.NameSpace")
 @js.native
-class NameSpace protected ()
+/* private */ class NameSpace ()
   extends StObject
      with typings.activexOutlook.Outlook.NameSpace

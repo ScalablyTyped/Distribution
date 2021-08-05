@@ -51,8 +51,7 @@ trait XCommandEnvironment
 }
 object XCommandEnvironment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InteractionHandler: XInteractionHandler,
     ProgressHandler: XProgressHandler,
     acquire: () => Unit,
@@ -65,19 +64,14 @@ object XCommandEnvironment {
     __obj.asInstanceOf[XCommandEnvironment]
   }
   
-  @scala.inline
-  implicit class XCommandEnvironmentMutableBuilder[Self <: XCommandEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: XCommandEnvironment](x: Self) {
     
-    @scala.inline
-    def setGetInteractionHandler(value: () => XInteractionHandler): Self = StObject.set(x, "getInteractionHandler", js.Any.fromFunction0(value))
+    inline def setGetInteractionHandler(value: () => XInteractionHandler): Self = StObject.set(x, "getInteractionHandler", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProgressHandler(value: () => XProgressHandler): Self = StObject.set(x, "getProgressHandler", js.Any.fromFunction0(value))
+    inline def setGetProgressHandler(value: () => XProgressHandler): Self = StObject.set(x, "getProgressHandler", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInteractionHandler(value: XInteractionHandler): Self = StObject.set(x, "InteractionHandler", value.asInstanceOf[js.Any])
+    inline def setInteractionHandler(value: XInteractionHandler): Self = StObject.set(x, "InteractionHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressHandler(value: XProgressHandler): Self = StObject.set(x, "ProgressHandler", value.asInstanceOf[js.Any])
+    inline def setProgressHandler(value: XProgressHandler): Self = StObject.set(x, "ProgressHandler", value.asInstanceOf[js.Any])
   }
 }

@@ -26,37 +26,27 @@ trait ResourceGroupPatchable extends StObject {
 }
 object ResourceGroupPatchable {
   
-  @scala.inline
-  def apply(): ResourceGroupPatchable = {
+  inline def apply(): ResourceGroupPatchable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceGroupPatchable]
   }
   
-  @scala.inline
-  implicit class ResourceGroupPatchableMutableBuilder[Self <: ResourceGroupPatchable] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceGroupPatchable](x: Self) {
     
-    @scala.inline
-    def setManagedBy(value: String): Self = StObject.set(x, "managedBy", value.asInstanceOf[js.Any])
+    inline def setManagedBy(value: String): Self = StObject.set(x, "managedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedByUndefined: Self = StObject.set(x, "managedBy", js.undefined)
+    inline def setManagedByUndefined: Self = StObject.set(x, "managedBy", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProperties(value: ResourceGroupProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: ResourceGroupProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

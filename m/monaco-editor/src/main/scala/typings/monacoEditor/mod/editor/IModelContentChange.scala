@@ -29,25 +29,19 @@ trait IModelContentChange extends StObject {
 }
 object IModelContentChange {
   
-  @scala.inline
-  def apply(range: IRange, rangeLength: Double, rangeOffset: Double, text: String): IModelContentChange = {
+  inline def apply(range: IRange, rangeLength: Double, rangeOffset: Double, text: String): IModelContentChange = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], rangeLength = rangeLength.asInstanceOf[js.Any], rangeOffset = rangeOffset.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelContentChange]
   }
   
-  @scala.inline
-  implicit class IModelContentChangeMutableBuilder[Self <: IModelContentChange] (val x: Self) extends AnyVal {
+  extension [Self <: IModelContentChange](x: Self) {
     
-    @scala.inline
-    def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeLength(value: Double): Self = StObject.set(x, "rangeLength", value.asInstanceOf[js.Any])
+    inline def setRangeLength(value: Double): Self = StObject.set(x, "rangeLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeOffset(value: Double): Self = StObject.set(x, "rangeOffset", value.asInstanceOf[js.Any])
+    inline def setRangeOffset(value: Double): Self = StObject.set(x, "rangeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

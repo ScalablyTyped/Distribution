@@ -10,9 +10,7 @@ object cspMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cspNonce(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("cspNonce")().asInstanceOf[js.UndefOr[String]]
+  inline def cspNonce(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("cspNonce")().asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def loadCSPNonce(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCSPNonce")().asInstanceOf[js.UndefOr[String]]
+  inline def loadCSPNonce(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCSPNonce")().asInstanceOf[js.UndefOr[String]]
 }

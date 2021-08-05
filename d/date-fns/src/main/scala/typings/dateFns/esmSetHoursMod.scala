@@ -9,10 +9,8 @@ object esmSetHoursMod {
   
   object default {
     
-    @scala.inline
-    def apply(date: Double, hours: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Date]
-    @scala.inline
-    def apply(date: Date, hours: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Double, hours: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Date, hours: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     @JSImport("date-fns/esm/setHours", JSImport.Default)
     @js.native

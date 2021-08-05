@@ -26,29 +26,22 @@ object efs {
   }
   object AccessPointPosixUser {
     
-    @scala.inline
-    def apply(gid: Input[Double], uid: Input[Double]): AccessPointPosixUser = {
+    inline def apply(gid: Input[Double], uid: Input[Double]): AccessPointPosixUser = {
       val __obj = js.Dynamic.literal(gid = gid.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessPointPosixUser]
     }
     
-    @scala.inline
-    implicit class AccessPointPosixUserMutableBuilder[Self <: AccessPointPosixUser] (val x: Self) extends AnyVal {
+    extension [Self <: AccessPointPosixUser](x: Self) {
       
-      @scala.inline
-      def setGid(value: Input[Double]): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Input[Double]): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryGids(value: Input[js.Array[Input[Double]]]): Self = StObject.set(x, "secondaryGids", value.asInstanceOf[js.Any])
+      inline def setSecondaryGids(value: Input[js.Array[Input[Double]]]): Self = StObject.set(x, "secondaryGids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryGidsUndefined: Self = StObject.set(x, "secondaryGids", js.undefined)
+      inline def setSecondaryGidsUndefined: Self = StObject.set(x, "secondaryGids", js.undefined)
       
-      @scala.inline
-      def setSecondaryGidsVarargs(value: Input[Double]*): Self = StObject.set(x, "secondaryGids", js.Array(value :_*))
+      inline def setSecondaryGidsVarargs(value: Input[Double]*): Self = StObject.set(x, "secondaryGids", js.Array(value :_*))
       
-      @scala.inline
-      def setUid(value: Input[Double]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Input[Double]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,26 +59,20 @@ object efs {
   }
   object AccessPointRootDirectory {
     
-    @scala.inline
-    def apply(): AccessPointRootDirectory = {
+    inline def apply(): AccessPointRootDirectory = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccessPointRootDirectory]
     }
     
-    @scala.inline
-    implicit class AccessPointRootDirectoryMutableBuilder[Self <: AccessPointRootDirectory] (val x: Self) extends AnyVal {
+    extension [Self <: AccessPointRootDirectory](x: Self) {
       
-      @scala.inline
-      def setCreationInfo(value: Input[AccessPointRootDirectoryCreationInfo]): Self = StObject.set(x, "creationInfo", value.asInstanceOf[js.Any])
+      inline def setCreationInfo(value: Input[AccessPointRootDirectoryCreationInfo]): Self = StObject.set(x, "creationInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationInfoUndefined: Self = StObject.set(x, "creationInfo", js.undefined)
+      inline def setCreationInfoUndefined: Self = StObject.set(x, "creationInfo", js.undefined)
       
-      @scala.inline
-      def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -108,23 +95,18 @@ object efs {
   }
   object AccessPointRootDirectoryCreationInfo {
     
-    @scala.inline
-    def apply(ownerGid: Input[Double], ownerUid: Input[Double], permissions: Input[String]): AccessPointRootDirectoryCreationInfo = {
+    inline def apply(ownerGid: Input[Double], ownerUid: Input[Double], permissions: Input[String]): AccessPointRootDirectoryCreationInfo = {
       val __obj = js.Dynamic.literal(ownerGid = ownerGid.asInstanceOf[js.Any], ownerUid = ownerUid.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessPointRootDirectoryCreationInfo]
     }
     
-    @scala.inline
-    implicit class AccessPointRootDirectoryCreationInfoMutableBuilder[Self <: AccessPointRootDirectoryCreationInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AccessPointRootDirectoryCreationInfo](x: Self) {
       
-      @scala.inline
-      def setOwnerGid(value: Input[Double]): Self = StObject.set(x, "ownerGid", value.asInstanceOf[js.Any])
+      inline def setOwnerGid(value: Input[Double]): Self = StObject.set(x, "ownerGid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerUid(value: Input[Double]): Self = StObject.set(x, "ownerUid", value.asInstanceOf[js.Any])
+      inline def setOwnerUid(value: Input[Double]): Self = StObject.set(x, "ownerUid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissions(value: Input[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: Input[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,17 +119,14 @@ object efs {
   }
   object FileSystemLifecyclePolicy {
     
-    @scala.inline
-    def apply(transitionToIa: Input[String]): FileSystemLifecyclePolicy = {
+    inline def apply(transitionToIa: Input[String]): FileSystemLifecyclePolicy = {
       val __obj = js.Dynamic.literal(transitionToIa = transitionToIa.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileSystemLifecyclePolicy]
     }
     
-    @scala.inline
-    implicit class FileSystemLifecyclePolicyMutableBuilder[Self <: FileSystemLifecyclePolicy] (val x: Self) extends AnyVal {
+    extension [Self <: FileSystemLifecyclePolicy](x: Self) {
       
-      @scala.inline
-      def setTransitionToIa(value: Input[String]): Self = StObject.set(x, "transitionToIa", value.asInstanceOf[js.Any])
+      inline def setTransitionToIa(value: Input[String]): Self = StObject.set(x, "transitionToIa", value.asInstanceOf[js.Any])
     }
   }
 }

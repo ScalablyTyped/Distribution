@@ -13,16 +13,13 @@ trait GetCorsPolicyInput extends StObject {
 }
 object GetCorsPolicyInput {
   
-  @scala.inline
-  def apply(ContainerName: ContainerName): GetCorsPolicyInput = {
+  inline def apply(ContainerName: ContainerName): GetCorsPolicyInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCorsPolicyInput]
   }
   
-  @scala.inline
-  implicit class GetCorsPolicyInputMutableBuilder[Self <: GetCorsPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetCorsPolicyInput](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
   }
 }

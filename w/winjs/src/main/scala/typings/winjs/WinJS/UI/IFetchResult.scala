@@ -42,8 +42,7 @@ trait IFetchResult[T] extends StObject {
 }
 object IFetchResult {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     absoluteIndex: Double,
     atEnd: Boolean,
     atStart: Boolean,
@@ -55,28 +54,20 @@ object IFetchResult {
     __obj.asInstanceOf[IFetchResult[T]]
   }
   
-  @scala.inline
-  implicit class IFetchResultMutableBuilder[Self <: IFetchResult[?], T] (val x: Self & IFetchResult[T]) extends AnyVal {
+  extension [Self <: IFetchResult[?], T](x: Self & IFetchResult[T]) {
     
-    @scala.inline
-    def setAbsoluteIndex(value: Double): Self = StObject.set(x, "absoluteIndex", value.asInstanceOf[js.Any])
+    inline def setAbsoluteIndex(value: Double): Self = StObject.set(x, "absoluteIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtEnd(value: Boolean): Self = StObject.set(x, "atEnd", value.asInstanceOf[js.Any])
+    inline def setAtEnd(value: Boolean): Self = StObject.set(x, "atEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtStart(value: Boolean): Self = StObject.set(x, "atStart", value.asInstanceOf[js.Any])
+    inline def setAtStart(value: Boolean): Self = StObject.set(x, "atStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ trait SearchPaneSuggestionsRequest
      with ISearchPaneSuggestionsRequest
 object SearchPaneSuggestionsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDeferral: () => SearchPaneSuggestionsRequestDeferral,
     isCanceled: Boolean,
     searchSuggestionCollection: SearchSuggestionCollection

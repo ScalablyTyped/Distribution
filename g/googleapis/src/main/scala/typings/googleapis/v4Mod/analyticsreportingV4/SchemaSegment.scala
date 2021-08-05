@@ -23,25 +23,19 @@ trait SchemaSegment extends StObject {
 }
 object SchemaSegment {
   
-  @scala.inline
-  def apply(): SchemaSegment = {
+  inline def apply(): SchemaSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSegment]
   }
   
-  @scala.inline
-  implicit class SchemaSegmentMutableBuilder[Self <: SchemaSegment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSegment](x: Self) {
     
-    @scala.inline
-    def setDynamicSegment(value: SchemaDynamicSegment): Self = StObject.set(x, "dynamicSegment", value.asInstanceOf[js.Any])
+    inline def setDynamicSegment(value: SchemaDynamicSegment): Self = StObject.set(x, "dynamicSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicSegmentUndefined: Self = StObject.set(x, "dynamicSegment", js.undefined)
+    inline def setDynamicSegmentUndefined: Self = StObject.set(x, "dynamicSegment", js.undefined)
     
-    @scala.inline
-    def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
+    inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
+    inline def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
   }
 }

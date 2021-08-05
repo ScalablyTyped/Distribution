@@ -15,8 +15,7 @@ object mod {
   /**
     * findAndReplaceDOMText searches for regular expression matches in a given DOM node and replaces or wraps each match with a node or piece of text that you can specify.
     */
-  @scala.inline
-  def apply(node: HTMLElement, options: Options): Return = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Return]
+  inline def apply(node: HTMLElement, options: Options): Return = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Return]
   
   @JSImport("findandreplacedomtext", JSImport.Namespace)
   @js.native
@@ -89,47 +88,34 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(find: RegExp | String): Options = {
+    inline def apply(find: RegExp | String): Options = {
       val __obj = js.Dynamic.literal(find = find.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFilterElements(value: /* el */ HTMLElement => Boolean): Self = StObject.set(x, "filterElements", js.Any.fromFunction1(value))
+      inline def setFilterElements(value: /* el */ HTMLElement => Boolean): Self = StObject.set(x, "filterElements", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterElementsUndefined: Self = StObject.set(x, "filterElements", js.undefined)
+      inline def setFilterElementsUndefined: Self = StObject.set(x, "filterElements", js.undefined)
       
-      @scala.inline
-      def setFind(value: RegExp | String): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
+      inline def setFind(value: RegExp | String): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceContext(value: Boolean | (js.Function1[/* el */ HTMLElement, Boolean])): Self = StObject.set(x, "forceContext", value.asInstanceOf[js.Any])
+      inline def setForceContext(value: Boolean | (js.Function1[/* el */ HTMLElement, Boolean])): Self = StObject.set(x, "forceContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceContextFunction1(value: /* el */ HTMLElement => Boolean): Self = StObject.set(x, "forceContext", js.Any.fromFunction1(value))
+      inline def setForceContextFunction1(value: /* el */ HTMLElement => Boolean): Self = StObject.set(x, "forceContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForceContextUndefined: Self = StObject.set(x, "forceContext", js.undefined)
+      inline def setForceContextUndefined: Self = StObject.set(x, "forceContext", js.undefined)
       
-      @scala.inline
-      def setPortionMode(value: retain | first): Self = StObject.set(x, "portionMode", value.asInstanceOf[js.Any])
+      inline def setPortionMode(value: retain | first): Self = StObject.set(x, "portionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortionModeUndefined: Self = StObject.set(x, "portionMode", js.undefined)
+      inline def setPortionModeUndefined: Self = StObject.set(x, "portionMode", js.undefined)
       
-      @scala.inline
-      def setPreset(value: prose | String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      inline def setPreset(value: prose | String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+      inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
       
-      @scala.inline
-      def setReplace(
+      inline def setReplace(
         value: String | (js.Function2[
               /* portion */ Portion, 
               /* match */ js.UndefOr[js.Any], 
@@ -137,25 +123,19 @@ object mod {
             ])
       ): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceFunction2(
+      inline def setReplaceFunction2(
         value: (/* portion */ Portion, /* match */ js.UndefOr[js.Any]) => String | Double | HTMLElement | Text
       ): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
-      @scala.inline
-      def setWrap(value: String | HTMLElement): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: String | HTMLElement): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapClass(value: String): Self = StObject.set(x, "wrapClass", value.asInstanceOf[js.Any])
+      inline def setWrapClass(value: String): Self = StObject.set(x, "wrapClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapClassUndefined: Self = StObject.set(x, "wrapClass", js.undefined)
+      inline def setWrapClassUndefined: Self = StObject.set(x, "wrapClass", js.undefined)
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
@@ -177,8 +157,7 @@ object mod {
   }
   object Portion {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       endIndexInNode: Double,
       index: Double,
       indexInMatch: Double,
@@ -191,29 +170,21 @@ object mod {
       __obj.asInstanceOf[Portion]
     }
     
-    @scala.inline
-    implicit class PortionMutableBuilder[Self <: Portion] (val x: Self) extends AnyVal {
+    extension [Self <: Portion](x: Self) {
       
-      @scala.inline
-      def setEndIndexInNode(value: Double): Self = StObject.set(x, "endIndexInNode", value.asInstanceOf[js.Any])
+      inline def setEndIndexInNode(value: Double): Self = StObject.set(x, "endIndexInNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexInMatch(value: Double): Self = StObject.set(x, "indexInMatch", value.asInstanceOf[js.Any])
+      inline def setIndexInMatch(value: Double): Self = StObject.set(x, "indexInMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexInNode(value: Double): Self = StObject.set(x, "indexInNode", value.asInstanceOf[js.Any])
+      inline def setIndexInNode(value: Double): Self = StObject.set(x, "indexInNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnd(value: Boolean): Self = StObject.set(x, "isEnd", value.asInstanceOf[js.Any])
+      inline def setIsEnd(value: Boolean): Self = StObject.set(x, "isEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -226,17 +197,14 @@ object mod {
   }
   object Return {
     
-    @scala.inline
-    def apply(revert: () => Return): Return = {
+    inline def apply(revert: () => Return): Return = {
       val __obj = js.Dynamic.literal(revert = js.Any.fromFunction0(revert))
       __obj.asInstanceOf[Return]
     }
     
-    @scala.inline
-    implicit class ReturnMutableBuilder[Self <: Return] (val x: Self) extends AnyVal {
+    extension [Self <: Return](x: Self) {
       
-      @scala.inline
-      def setRevert(value: () => Return): Self = StObject.set(x, "revert", js.Any.fromFunction0(value))
+      inline def setRevert(value: () => Return): Self = StObject.set(x, "revert", js.Any.fromFunction0(value))
     }
   }
 }

@@ -14,22 +14,17 @@ trait GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy extends
 }
 object GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchyMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
   }
 }

@@ -29,76 +29,53 @@ trait SharepointIds extends StObject {
 }
 object SharepointIds {
   
-  @scala.inline
-  def apply(): SharepointIds = {
+  inline def apply(): SharepointIds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SharepointIds]
   }
   
-  @scala.inline
-  implicit class SharepointIdsMutableBuilder[Self <: SharepointIds] (val x: Self) extends AnyVal {
+  extension [Self <: SharepointIds](x: Self) {
     
-    @scala.inline
-    def setListId(value: NullableOption[String]): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+    inline def setListId(value: NullableOption[String]): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIdNull: Self = StObject.set(x, "listId", null)
+    inline def setListIdNull: Self = StObject.set(x, "listId", null)
     
-    @scala.inline
-    def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
+    inline def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
-    @scala.inline
-    def setListItemId(value: NullableOption[String]): Self = StObject.set(x, "listItemId", value.asInstanceOf[js.Any])
+    inline def setListItemId(value: NullableOption[String]): Self = StObject.set(x, "listItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListItemIdNull: Self = StObject.set(x, "listItemId", null)
+    inline def setListItemIdNull: Self = StObject.set(x, "listItemId", null)
     
-    @scala.inline
-    def setListItemIdUndefined: Self = StObject.set(x, "listItemId", js.undefined)
+    inline def setListItemIdUndefined: Self = StObject.set(x, "listItemId", js.undefined)
     
-    @scala.inline
-    def setListItemUniqueId(value: NullableOption[String]): Self = StObject.set(x, "listItemUniqueId", value.asInstanceOf[js.Any])
+    inline def setListItemUniqueId(value: NullableOption[String]): Self = StObject.set(x, "listItemUniqueId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListItemUniqueIdNull: Self = StObject.set(x, "listItemUniqueId", null)
+    inline def setListItemUniqueIdNull: Self = StObject.set(x, "listItemUniqueId", null)
     
-    @scala.inline
-    def setListItemUniqueIdUndefined: Self = StObject.set(x, "listItemUniqueId", js.undefined)
+    inline def setListItemUniqueIdUndefined: Self = StObject.set(x, "listItemUniqueId", js.undefined)
     
-    @scala.inline
-    def setSiteId(value: NullableOption[String]): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
+    inline def setSiteId(value: NullableOption[String]): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteIdNull: Self = StObject.set(x, "siteId", null)
+    inline def setSiteIdNull: Self = StObject.set(x, "siteId", null)
     
-    @scala.inline
-    def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
+    inline def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
     
-    @scala.inline
-    def setSiteUrl(value: NullableOption[String]): Self = StObject.set(x, "siteUrl", value.asInstanceOf[js.Any])
+    inline def setSiteUrl(value: NullableOption[String]): Self = StObject.set(x, "siteUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteUrlNull: Self = StObject.set(x, "siteUrl", null)
+    inline def setSiteUrlNull: Self = StObject.set(x, "siteUrl", null)
     
-    @scala.inline
-    def setSiteUrlUndefined: Self = StObject.set(x, "siteUrl", js.undefined)
+    inline def setSiteUrlUndefined: Self = StObject.set(x, "siteUrl", js.undefined)
     
-    @scala.inline
-    def setTenantId(value: NullableOption[String]): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+    inline def setTenantId(value: NullableOption[String]): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantIdNull: Self = StObject.set(x, "tenantId", null)
+    inline def setTenantIdNull: Self = StObject.set(x, "tenantId", null)
     
-    @scala.inline
-    def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+    inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
     
-    @scala.inline
-    def setWebId(value: NullableOption[String]): Self = StObject.set(x, "webId", value.asInstanceOf[js.Any])
+    inline def setWebId(value: NullableOption[String]): Self = StObject.set(x, "webId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebIdNull: Self = StObject.set(x, "webId", null)
+    inline def setWebIdNull: Self = StObject.set(x, "webId", null)
     
-    @scala.inline
-    def setWebIdUndefined: Self = StObject.set(x, "webId", js.undefined)
+    inline def setWebIdUndefined: Self = StObject.set(x, "webId", js.undefined)
   }
 }

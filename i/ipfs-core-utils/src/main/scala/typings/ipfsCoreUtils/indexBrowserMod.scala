@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object indexBrowserMod {
   
-  @scala.inline
-  def apply(input: Source): AsyncIterable[Entry[Blob]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Entry[Blob]]]
+  inline def apply(input: Source): AsyncIterable[Entry[Blob]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Entry[Blob]]]
   
   @JSImport("ipfs-core-utils/dist/src/files/normalise-input/index.browser", JSImport.Namespace)
   @js.native

@@ -20,26 +20,20 @@ object tablesorterCacheMod {
   }
   object TablesorterCache {
     
-    @scala.inline
-    def apply(colMax: js.Array[js.Any], normalized: js.Array[js.Any]): TablesorterCache = {
+    inline def apply(colMax: js.Array[js.Any], normalized: js.Array[js.Any]): TablesorterCache = {
       val __obj = js.Dynamic.literal(colMax = colMax.asInstanceOf[js.Any], normalized = normalized.asInstanceOf[js.Any])
       __obj.asInstanceOf[TablesorterCache]
     }
     
-    @scala.inline
-    implicit class TablesorterCacheMutableBuilder[Self <: TablesorterCache] (val x: Self) extends AnyVal {
+    extension [Self <: TablesorterCache](x: Self) {
       
-      @scala.inline
-      def setColMax(value: js.Array[js.Any]): Self = StObject.set(x, "colMax", value.asInstanceOf[js.Any])
+      inline def setColMax(value: js.Array[js.Any]): Self = StObject.set(x, "colMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColMaxVarargs(value: js.Any*): Self = StObject.set(x, "colMax", js.Array(value :_*))
+      inline def setColMaxVarargs(value: js.Any*): Self = StObject.set(x, "colMax", js.Array(value :_*))
       
-      @scala.inline
-      def setNormalized(value: js.Array[js.Any]): Self = StObject.set(x, "normalized", value.asInstanceOf[js.Any])
+      inline def setNormalized(value: js.Array[js.Any]): Self = StObject.set(x, "normalized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizedVarargs(value: js.Any*): Self = StObject.set(x, "normalized", js.Array(value :_*))
+      inline def setNormalizedVarargs(value: js.Any*): Self = StObject.set(x, "normalized", js.Array(value :_*))
     }
   }
 }

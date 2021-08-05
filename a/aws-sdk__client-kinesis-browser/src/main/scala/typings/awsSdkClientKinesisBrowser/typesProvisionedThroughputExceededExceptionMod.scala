@@ -22,17 +22,14 @@ object typesProvisionedThroughputExceededExceptionMod {
   }
   object ProvisionedThroughputExceededException {
     
-    @scala.inline
-    def apply(): ProvisionedThroughputExceededException = {
+    inline def apply(): ProvisionedThroughputExceededException = {
       val __obj = js.Dynamic.literal(name = "ProvisionedThroughputExceededException")
       __obj.asInstanceOf[ProvisionedThroughputExceededException]
     }
     
-    @scala.inline
-    implicit class ProvisionedThroughputExceededExceptionMutableBuilder[Self <: ProvisionedThroughputExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: ProvisionedThroughputExceededException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ProvisionedThroughputExceededException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -47,20 +44,16 @@ object typesProvisionedThroughputExceededExceptionMod {
   }
   object ProvisionedThroughputExceededExceptionDetails {
     
-    @scala.inline
-    def apply(): ProvisionedThroughputExceededExceptionDetails = {
+    inline def apply(): ProvisionedThroughputExceededExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProvisionedThroughputExceededExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ProvisionedThroughputExceededExceptionDetailsMutableBuilder[Self <: ProvisionedThroughputExceededExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ProvisionedThroughputExceededExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

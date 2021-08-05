@@ -22,25 +22,19 @@ trait SchemaCpuUtilization extends StObject {
 }
 object SchemaCpuUtilization {
   
-  @scala.inline
-  def apply(): SchemaCpuUtilization = {
+  inline def apply(): SchemaCpuUtilization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCpuUtilization]
   }
   
-  @scala.inline
-  implicit class SchemaCpuUtilizationMutableBuilder[Self <: SchemaCpuUtilization] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCpuUtilization](x: Self) {
     
-    @scala.inline
-    def setAggregationWindowLength(value: String): Self = StObject.set(x, "aggregationWindowLength", value.asInstanceOf[js.Any])
+    inline def setAggregationWindowLength(value: String): Self = StObject.set(x, "aggregationWindowLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationWindowLengthUndefined: Self = StObject.set(x, "aggregationWindowLength", js.undefined)
+    inline def setAggregationWindowLengthUndefined: Self = StObject.set(x, "aggregationWindowLength", js.undefined)
     
-    @scala.inline
-    def setTargetUtilization(value: Double): Self = StObject.set(x, "targetUtilization", value.asInstanceOf[js.Any])
+    inline def setTargetUtilization(value: Double): Self = StObject.set(x, "targetUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUtilizationUndefined: Self = StObject.set(x, "targetUtilization", js.undefined)
+    inline def setTargetUtilizationUndefined: Self = StObject.set(x, "targetUtilization", js.undefined)
   }
 }

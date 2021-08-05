@@ -20,28 +20,21 @@ trait ResponderAdvertisement
 }
 object ResponderAdvertisement {
   
-  @scala.inline
-  def apply(name: String): ResponderAdvertisement = {
+  inline def apply(name: String): ResponderAdvertisement = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponderAdvertisement]
   }
   
-  @scala.inline
-  implicit class ResponderAdvertisementMutableBuilder[Self <: ResponderAdvertisement] (val x: Self) extends AnyVal {
+  extension [Self <: ResponderAdvertisement](x: Self) {
     
-    @scala.inline
-    def setRespondsTo(value: js.Array[String]): Self = StObject.set(x, "respondsTo", value.asInstanceOf[js.Any])
+    inline def setRespondsTo(value: js.Array[String]): Self = StObject.set(x, "respondsTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRespondsToUndefined: Self = StObject.set(x, "respondsTo", js.undefined)
+    inline def setRespondsToUndefined: Self = StObject.set(x, "respondsTo", js.undefined)
     
-    @scala.inline
-    def setRespondsToVarargs(value: String*): Self = StObject.set(x, "respondsTo", js.Array(value :_*))
+    inline def setRespondsToVarargs(value: String*): Self = StObject.set(x, "respondsTo", js.Array(value :_*))
     
-    @scala.inline
-    def setSubset(value: String): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
+    inline def setSubset(value: String): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubsetUndefined: Self = StObject.set(x, "subset", js.undefined)
+    inline def setSubsetUndefined: Self = StObject.set(x, "subset", js.undefined)
   }
 }

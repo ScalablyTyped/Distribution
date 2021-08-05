@@ -63,82 +63,57 @@ trait MatchmakingTicket extends StObject {
 }
 object MatchmakingTicket {
   
-  @scala.inline
-  def apply(): MatchmakingTicket = {
+  inline def apply(): MatchmakingTicket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchmakingTicket]
   }
   
-  @scala.inline
-  implicit class MatchmakingTicketMutableBuilder[Self <: MatchmakingTicket] (val x: Self) extends AnyVal {
+  extension [Self <: MatchmakingTicket](x: Self) {
     
-    @scala.inline
-    def setConfigurationArn(value: MatchmakingConfigurationArn): Self = StObject.set(x, "ConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setConfigurationArn(value: MatchmakingConfigurationArn): Self = StObject.set(x, "ConfigurationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationArnUndefined: Self = StObject.set(x, "ConfigurationArn", js.undefined)
+    inline def setConfigurationArnUndefined: Self = StObject.set(x, "ConfigurationArn", js.undefined)
     
-    @scala.inline
-    def setConfigurationName(value: MatchmakingIdStringModel): Self = StObject.set(x, "ConfigurationName", value.asInstanceOf[js.Any])
+    inline def setConfigurationName(value: MatchmakingIdStringModel): Self = StObject.set(x, "ConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationNameUndefined: Self = StObject.set(x, "ConfigurationName", js.undefined)
+    inline def setConfigurationNameUndefined: Self = StObject.set(x, "ConfigurationName", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setEstimatedWaitTime(value: WholeNumber): Self = StObject.set(x, "EstimatedWaitTime", value.asInstanceOf[js.Any])
+    inline def setEstimatedWaitTime(value: WholeNumber): Self = StObject.set(x, "EstimatedWaitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedWaitTimeUndefined: Self = StObject.set(x, "EstimatedWaitTime", js.undefined)
+    inline def setEstimatedWaitTimeUndefined: Self = StObject.set(x, "EstimatedWaitTime", js.undefined)
     
-    @scala.inline
-    def setGameSessionConnectionInfo(value: GameSessionConnectionInfo): Self = StObject.set(x, "GameSessionConnectionInfo", value.asInstanceOf[js.Any])
+    inline def setGameSessionConnectionInfo(value: GameSessionConnectionInfo): Self = StObject.set(x, "GameSessionConnectionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionConnectionInfoUndefined: Self = StObject.set(x, "GameSessionConnectionInfo", js.undefined)
+    inline def setGameSessionConnectionInfoUndefined: Self = StObject.set(x, "GameSessionConnectionInfo", js.undefined)
     
-    @scala.inline
-    def setPlayers(value: PlayerList): Self = StObject.set(x, "Players", value.asInstanceOf[js.Any])
+    inline def setPlayers(value: PlayerList): Self = StObject.set(x, "Players", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayersUndefined: Self = StObject.set(x, "Players", js.undefined)
+    inline def setPlayersUndefined: Self = StObject.set(x, "Players", js.undefined)
     
-    @scala.inline
-    def setPlayersVarargs(value: Player*): Self = StObject.set(x, "Players", js.Array(value :_*))
+    inline def setPlayersVarargs(value: Player*): Self = StObject.set(x, "Players", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: MatchmakingConfigurationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MatchmakingConfigurationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: StringModel): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: StringModel): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusReason(value: StringModel): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: StringModel): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonUndefined: Self = StObject.set(x, "StatusReason", js.undefined)
+    inline def setStatusReasonUndefined: Self = StObject.set(x, "StatusReason", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTicketId(value: MatchmakingIdStringModel): Self = StObject.set(x, "TicketId", value.asInstanceOf[js.Any])
+    inline def setTicketId(value: MatchmakingIdStringModel): Self = StObject.set(x, "TicketId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicketIdUndefined: Self = StObject.set(x, "TicketId", js.undefined)
+    inline def setTicketIdUndefined: Self = StObject.set(x, "TicketId", js.undefined)
   }
 }

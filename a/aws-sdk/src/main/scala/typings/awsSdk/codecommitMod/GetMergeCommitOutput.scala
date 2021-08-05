@@ -28,37 +28,27 @@ trait GetMergeCommitOutput extends StObject {
 }
 object GetMergeCommitOutput {
   
-  @scala.inline
-  def apply(): GetMergeCommitOutput = {
+  inline def apply(): GetMergeCommitOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMergeCommitOutput]
   }
   
-  @scala.inline
-  implicit class GetMergeCommitOutputMutableBuilder[Self <: GetMergeCommitOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetMergeCommitOutput](x: Self) {
     
-    @scala.inline
-    def setBaseCommitId(value: ObjectId): Self = StObject.set(x, "baseCommitId", value.asInstanceOf[js.Any])
+    inline def setBaseCommitId(value: ObjectId): Self = StObject.set(x, "baseCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseCommitIdUndefined: Self = StObject.set(x, "baseCommitId", js.undefined)
+    inline def setBaseCommitIdUndefined: Self = StObject.set(x, "baseCommitId", js.undefined)
     
-    @scala.inline
-    def setDestinationCommitId(value: ObjectId): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
+    inline def setDestinationCommitId(value: ObjectId): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationCommitIdUndefined: Self = StObject.set(x, "destinationCommitId", js.undefined)
+    inline def setDestinationCommitIdUndefined: Self = StObject.set(x, "destinationCommitId", js.undefined)
     
-    @scala.inline
-    def setMergedCommitId(value: ObjectId): Self = StObject.set(x, "mergedCommitId", value.asInstanceOf[js.Any])
+    inline def setMergedCommitId(value: ObjectId): Self = StObject.set(x, "mergedCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergedCommitIdUndefined: Self = StObject.set(x, "mergedCommitId", js.undefined)
+    inline def setMergedCommitIdUndefined: Self = StObject.set(x, "mergedCommitId", js.undefined)
     
-    @scala.inline
-    def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
+    inline def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCommitIdUndefined: Self = StObject.set(x, "sourceCommitId", js.undefined)
+    inline def setSourceCommitIdUndefined: Self = StObject.set(x, "sourceCommitId", js.undefined)
   }
 }

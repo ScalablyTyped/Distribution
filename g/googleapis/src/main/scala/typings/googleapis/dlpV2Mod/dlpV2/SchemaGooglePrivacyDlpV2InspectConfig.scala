@@ -65,73 +65,51 @@ trait SchemaGooglePrivacyDlpV2InspectConfig extends StObject {
 }
 object SchemaGooglePrivacyDlpV2InspectConfig {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2InspectConfig = {
+  inline def apply(): SchemaGooglePrivacyDlpV2InspectConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InspectConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2InspectConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2InspectConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2InspectConfig](x: Self) {
     
-    @scala.inline
-    def setContentOptions(value: js.Array[String]): Self = StObject.set(x, "contentOptions", value.asInstanceOf[js.Any])
+    inline def setContentOptions(value: js.Array[String]): Self = StObject.set(x, "contentOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentOptionsUndefined: Self = StObject.set(x, "contentOptions", js.undefined)
+    inline def setContentOptionsUndefined: Self = StObject.set(x, "contentOptions", js.undefined)
     
-    @scala.inline
-    def setContentOptionsVarargs(value: String*): Self = StObject.set(x, "contentOptions", js.Array(value :_*))
+    inline def setContentOptionsVarargs(value: String*): Self = StObject.set(x, "contentOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomInfoTypes(value: js.Array[SchemaGooglePrivacyDlpV2CustomInfoType]): Self = StObject.set(x, "customInfoTypes", value.asInstanceOf[js.Any])
+    inline def setCustomInfoTypes(value: js.Array[SchemaGooglePrivacyDlpV2CustomInfoType]): Self = StObject.set(x, "customInfoTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomInfoTypesUndefined: Self = StObject.set(x, "customInfoTypes", js.undefined)
+    inline def setCustomInfoTypesUndefined: Self = StObject.set(x, "customInfoTypes", js.undefined)
     
-    @scala.inline
-    def setCustomInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2CustomInfoType*): Self = StObject.set(x, "customInfoTypes", js.Array(value :_*))
+    inline def setCustomInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2CustomInfoType*): Self = StObject.set(x, "customInfoTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setExcludeInfoTypes(value: Boolean): Self = StObject.set(x, "excludeInfoTypes", value.asInstanceOf[js.Any])
+    inline def setExcludeInfoTypes(value: Boolean): Self = StObject.set(x, "excludeInfoTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeInfoTypesUndefined: Self = StObject.set(x, "excludeInfoTypes", js.undefined)
+    inline def setExcludeInfoTypesUndefined: Self = StObject.set(x, "excludeInfoTypes", js.undefined)
     
-    @scala.inline
-    def setIncludeQuote(value: Boolean): Self = StObject.set(x, "includeQuote", value.asInstanceOf[js.Any])
+    inline def setIncludeQuote(value: Boolean): Self = StObject.set(x, "includeQuote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeQuoteUndefined: Self = StObject.set(x, "includeQuote", js.undefined)
+    inline def setIncludeQuoteUndefined: Self = StObject.set(x, "includeQuote", js.undefined)
     
-    @scala.inline
-    def setInfoTypes(value: js.Array[SchemaGooglePrivacyDlpV2InfoType]): Self = StObject.set(x, "infoTypes", value.asInstanceOf[js.Any])
+    inline def setInfoTypes(value: js.Array[SchemaGooglePrivacyDlpV2InfoType]): Self = StObject.set(x, "infoTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
+    inline def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
     
-    @scala.inline
-    def setInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
+    inline def setInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setLimits(value: SchemaGooglePrivacyDlpV2FindingLimits): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: SchemaGooglePrivacyDlpV2FindingLimits): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+    inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
-    @scala.inline
-    def setMinLikelihood(value: String): Self = StObject.set(x, "minLikelihood", value.asInstanceOf[js.Any])
+    inline def setMinLikelihood(value: String): Self = StObject.set(x, "minLikelihood", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLikelihoodUndefined: Self = StObject.set(x, "minLikelihood", js.undefined)
+    inline def setMinLikelihoodUndefined: Self = StObject.set(x, "minLikelihood", js.undefined)
     
-    @scala.inline
-    def setRuleSet(value: js.Array[SchemaGooglePrivacyDlpV2InspectionRuleSet]): Self = StObject.set(x, "ruleSet", value.asInstanceOf[js.Any])
+    inline def setRuleSet(value: js.Array[SchemaGooglePrivacyDlpV2InspectionRuleSet]): Self = StObject.set(x, "ruleSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleSetUndefined: Self = StObject.set(x, "ruleSet", js.undefined)
+    inline def setRuleSetUndefined: Self = StObject.set(x, "ruleSet", js.undefined)
     
-    @scala.inline
-    def setRuleSetVarargs(value: SchemaGooglePrivacyDlpV2InspectionRuleSet*): Self = StObject.set(x, "ruleSet", js.Array(value :_*))
+    inline def setRuleSetVarargs(value: SchemaGooglePrivacyDlpV2InspectionRuleSet*): Self = StObject.set(x, "ruleSet", js.Array(value :_*))
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdPageFit extends StObject
 object WdPageFit {
   
-  @scala.inline
-  def wdPageFitBestFit: `2` = 2.asInstanceOf[`2`]
+  inline def wdPageFitBestFit: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdPageFitFullPage: `1` = 1.asInstanceOf[`1`]
+  inline def wdPageFitFullPage: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdPageFitNone: `0` = 0.asInstanceOf[`0`]
+  inline def wdPageFitNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdPageFitTextFit: `3` = 3.asInstanceOf[`3`]
+  inline def wdPageFitTextFit: `3` = 3.asInstanceOf[`3`]
 }

@@ -12,19 +12,15 @@ trait BinaryNode extends StObject {
 }
 object BinaryNode {
   
-  @scala.inline
-  def apply(and: BinaryNode => BinaryNode, or: BinaryNode => BinaryNode): BinaryNode = {
+  inline def apply(and: BinaryNode => BinaryNode, or: BinaryNode => BinaryNode): BinaryNode = {
     val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), or = js.Any.fromFunction1(or))
     __obj.asInstanceOf[BinaryNode]
   }
   
-  @scala.inline
-  implicit class BinaryNodeMutableBuilder[Self <: BinaryNode] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryNode](x: Self) {
     
-    @scala.inline
-    def setAnd(value: BinaryNode => BinaryNode): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+    inline def setAnd(value: BinaryNode => BinaryNode): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOr(value: BinaryNode => BinaryNode): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+    inline def setOr(value: BinaryNode => BinaryNode): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
   }
 }

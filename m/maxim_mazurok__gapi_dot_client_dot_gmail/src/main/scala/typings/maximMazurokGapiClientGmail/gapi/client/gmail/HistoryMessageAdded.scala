@@ -10,19 +10,15 @@ trait HistoryMessageAdded extends StObject {
 }
 object HistoryMessageAdded {
   
-  @scala.inline
-  def apply(): HistoryMessageAdded = {
+  inline def apply(): HistoryMessageAdded = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistoryMessageAdded]
   }
   
-  @scala.inline
-  implicit class HistoryMessageAddedMutableBuilder[Self <: HistoryMessageAdded] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryMessageAdded](x: Self) {
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

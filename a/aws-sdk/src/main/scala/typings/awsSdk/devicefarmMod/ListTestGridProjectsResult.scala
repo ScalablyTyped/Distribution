@@ -18,28 +18,21 @@ trait ListTestGridProjectsResult extends StObject {
 }
 object ListTestGridProjectsResult {
   
-  @scala.inline
-  def apply(): ListTestGridProjectsResult = {
+  inline def apply(): ListTestGridProjectsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTestGridProjectsResult]
   }
   
-  @scala.inline
-  implicit class ListTestGridProjectsResultMutableBuilder[Self <: ListTestGridProjectsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListTestGridProjectsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTestGridProjects(value: TestGridProjects): Self = StObject.set(x, "testGridProjects", value.asInstanceOf[js.Any])
+    inline def setTestGridProjects(value: TestGridProjects): Self = StObject.set(x, "testGridProjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestGridProjectsUndefined: Self = StObject.set(x, "testGridProjects", js.undefined)
+    inline def setTestGridProjectsUndefined: Self = StObject.set(x, "testGridProjects", js.undefined)
     
-    @scala.inline
-    def setTestGridProjectsVarargs(value: TestGridProject*): Self = StObject.set(x, "testGridProjects", js.Array(value :_*))
+    inline def setTestGridProjectsVarargs(value: TestGridProject*): Self = StObject.set(x, "testGridProjects", js.Array(value :_*))
   }
 }

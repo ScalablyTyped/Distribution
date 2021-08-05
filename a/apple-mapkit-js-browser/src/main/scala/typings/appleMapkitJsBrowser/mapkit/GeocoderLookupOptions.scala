@@ -32,37 +32,27 @@ trait GeocoderLookupOptions extends StObject {
 }
 object GeocoderLookupOptions {
   
-  @scala.inline
-  def apply(): GeocoderLookupOptions = {
+  inline def apply(): GeocoderLookupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeocoderLookupOptions]
   }
   
-  @scala.inline
-  implicit class GeocoderLookupOptionsMutableBuilder[Self <: GeocoderLookupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeocoderLookupOptions](x: Self) {
     
-    @scala.inline
-    def setCoordinate(value: Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
+    inline def setCoordinate(value: Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinateUndefined: Self = StObject.set(x, "coordinate", js.undefined)
+    inline def setCoordinateUndefined: Self = StObject.set(x, "coordinate", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLimitToCountries(value: String): Self = StObject.set(x, "limitToCountries", value.asInstanceOf[js.Any])
+    inline def setLimitToCountries(value: String): Self = StObject.set(x, "limitToCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitToCountriesUndefined: Self = StObject.set(x, "limitToCountries", js.undefined)
+    inline def setLimitToCountriesUndefined: Self = StObject.set(x, "limitToCountries", js.undefined)
     
-    @scala.inline
-    def setRegion(value: CoordinateRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: CoordinateRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

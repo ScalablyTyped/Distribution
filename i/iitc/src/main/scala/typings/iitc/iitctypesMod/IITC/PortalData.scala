@@ -32,8 +32,7 @@ trait PortalData
 }
 object PortalData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     health: Double,
     image: String,
     latE6: Double,
@@ -51,43 +50,30 @@ object PortalData {
     __obj.asInstanceOf[PortalData]
   }
   
-  @scala.inline
-  implicit class PortalDataMutableBuilder[Self <: PortalData] (val x: Self) extends AnyVal {
+  extension [Self <: PortalData](x: Self) {
     
-    @scala.inline
-    def setArtifactBrief(value: Fragment): Self = StObject.set(x, "artifactBrief", value.asInstanceOf[js.Any])
+    inline def setArtifactBrief(value: Fragment): Self = StObject.set(x, "artifactBrief", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactBriefNull: Self = StObject.set(x, "artifactBrief", null)
+    inline def setArtifactBriefNull: Self = StObject.set(x, "artifactBrief", null)
     
-    @scala.inline
-    def setHealth(value: Double): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
+    inline def setHealth(value: Double): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMission(value: Boolean): Self = StObject.set(x, "mission", value.asInstanceOf[js.Any])
+    inline def setMission(value: Boolean): Self = StObject.set(x, "mission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMission50plus(value: Boolean): Self = StObject.set(x, "mission50plus", value.asInstanceOf[js.Any])
+    inline def setMission50plus(value: Boolean): Self = StObject.set(x, "mission50plus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrnaments(value: js.Array[String]): Self = StObject.set(x, "ornaments", value.asInstanceOf[js.Any])
+    inline def setOrnaments(value: js.Array[String]): Self = StObject.set(x, "ornaments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrnamentsVarargs(value: String*): Self = StObject.set(x, "ornaments", js.Array(value :_*))
+    inline def setOrnamentsVarargs(value: String*): Self = StObject.set(x, "ornaments", js.Array(value :_*))
     
-    @scala.inline
-    def setResCount(value: Double): Self = StObject.set(x, "resCount", value.asInstanceOf[js.Any])
+    inline def setResCount(value: Double): Self = StObject.set(x, "resCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

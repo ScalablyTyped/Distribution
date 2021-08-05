@@ -14,8 +14,7 @@ object mod {
   @js.native
   val default: genericShouldForwardProp = js.native
   
-  @scala.inline
-  def createShouldForwardProp(props: js.Array[String]): genericShouldForwardProp = ^.asInstanceOf[js.Dynamic].applyDynamic("createShouldForwardProp")(props.asInstanceOf[js.Any]).asInstanceOf[genericShouldForwardProp]
+  inline def createShouldForwardProp(props: js.Array[String]): genericShouldForwardProp = ^.asInstanceOf[js.Dynamic].applyDynamic("createShouldForwardProp")(props.asInstanceOf[js.Any]).asInstanceOf[genericShouldForwardProp]
   
   @JSImport("@styled-system/should-forward-prop", "props")
   @js.native

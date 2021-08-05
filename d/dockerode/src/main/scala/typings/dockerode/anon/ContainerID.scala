@@ -10,16 +10,13 @@ trait ContainerID extends StObject {
 }
 object ContainerID {
   
-  @scala.inline
-  def apply(ContainerID: String): ContainerID = {
+  inline def apply(ContainerID: String): ContainerID = {
     val __obj = js.Dynamic.literal(ContainerID = ContainerID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerID]
   }
   
-  @scala.inline
-  implicit class ContainerIDMutableBuilder[Self <: ContainerID] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerID](x: Self) {
     
-    @scala.inline
-    def setContainerID(value: String): Self = StObject.set(x, "ContainerID", value.asInstanceOf[js.Any])
+    inline def setContainerID(value: String): Self = StObject.set(x, "ContainerID", value.asInstanceOf[js.Any])
   }
 }

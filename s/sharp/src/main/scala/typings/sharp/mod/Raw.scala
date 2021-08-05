@@ -18,22 +18,17 @@ trait Raw extends StObject {
 }
 object Raw {
   
-  @scala.inline
-  def apply(channels: `1` | `2` | `3` | `4`, height: Double, width: Double): Raw = {
+  inline def apply(channels: `1` | `2` | `3` | `4`, height: Double, width: Double): Raw = {
     val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Raw]
   }
   
-  @scala.inline
-  implicit class RawMutableBuilder[Self <: Raw] (val x: Self) extends AnyVal {
+  extension [Self <: Raw](x: Self) {
     
-    @scala.inline
-    def setChannels(value: `1` | `2` | `3` | `4`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: `1` | `2` | `3` | `4`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

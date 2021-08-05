@@ -28,8 +28,7 @@ trait CreateReservedInstancesListingRequest extends StObject {
 }
 object CreateReservedInstancesListingRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClientToken: String,
     InstanceCount: Integer,
     PriceSchedules: PriceScheduleSpecificationList,
@@ -39,22 +38,16 @@ object CreateReservedInstancesListingRequest {
     __obj.asInstanceOf[CreateReservedInstancesListingRequest]
   }
   
-  @scala.inline
-  implicit class CreateReservedInstancesListingRequestMutableBuilder[Self <: CreateReservedInstancesListingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReservedInstancesListingRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceSchedules(value: PriceScheduleSpecificationList): Self = StObject.set(x, "PriceSchedules", value.asInstanceOf[js.Any])
+    inline def setPriceSchedules(value: PriceScheduleSpecificationList): Self = StObject.set(x, "PriceSchedules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceSchedulesVarargs(value: PriceScheduleSpecification*): Self = StObject.set(x, "PriceSchedules", js.Array(value :_*))
+    inline def setPriceSchedulesVarargs(value: PriceScheduleSpecification*): Self = StObject.set(x, "PriceSchedules", js.Array(value :_*))
     
-    @scala.inline
-    def setReservedInstancesId(value: ReservationId): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesId(value: ReservationId): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
   }
 }

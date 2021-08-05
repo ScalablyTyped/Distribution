@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CheckBox extends StObject {
   
-  @JSName("Access.CheckBox_typekey")
+  /* private */ @JSName("Access.CheckBox_typekey")
   var AccessDotCheckBox_typekey: CheckBox = js.native
   
   var AddColon: Boolean = js.native

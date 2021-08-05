@@ -14,19 +14,15 @@ trait Groups extends StObject {
 }
 object Groups {
   
-  @scala.inline
-  def apply(groups: StringDictionary[Double], re: RegExp): Groups = {
+  inline def apply(groups: StringDictionary[Double], re: RegExp): Groups = {
     val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], re = re.asInstanceOf[js.Any])
     __obj.asInstanceOf[Groups]
   }
   
-  @scala.inline
-  implicit class GroupsMutableBuilder[Self <: Groups] (val x: Self) extends AnyVal {
+  extension [Self <: Groups](x: Self) {
     
-    @scala.inline
-    def setGroups(value: StringDictionary[Double]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: StringDictionary[Double]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRe(value: RegExp): Self = StObject.set(x, "re", value.asInstanceOf[js.Any])
+    inline def setRe(value: RegExp): Self = StObject.set(x, "re", value.asInstanceOf[js.Any])
   }
 }

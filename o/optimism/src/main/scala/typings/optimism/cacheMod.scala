@@ -21,17 +21,17 @@ object cacheMod {
     
     def get(key: K): js.UndefOr[V] = js.native
     
-    var getEntry: js.Any = js.native
+    /* private */ var getEntry: js.Any = js.native
     
     def has(key: K): Boolean = js.native
     
-    var map: js.Any = js.native
+    /* private */ var map: js.Any = js.native
     
-    var max: js.Any = js.native
+    /* private */ var max: js.Any = js.native
     
-    var newest: js.Any = js.native
+    /* private */ var newest: js.Any = js.native
     
-    var oldest: js.Any = js.native
+    /* private */ var oldest: js.Any = js.native
     
     def set(key: K, value: V): V = js.native
   }

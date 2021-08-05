@@ -13,19 +13,15 @@ trait AccountAttributeValue extends StObject {
 }
 object AccountAttributeValue {
   
-  @scala.inline
-  def apply(): AccountAttributeValue = {
+  inline def apply(): AccountAttributeValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountAttributeValue]
   }
   
-  @scala.inline
-  implicit class AccountAttributeValueMutableBuilder[Self <: AccountAttributeValue] (val x: Self) extends AnyVal {
+  extension [Self <: AccountAttributeValue](x: Self) {
     
-    @scala.inline
-    def setAttributeValue(value: String): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
+    inline def setAttributeValue(value: String): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValueUndefined: Self = StObject.set(x, "AttributeValue", js.undefined)
+    inline def setAttributeValueUndefined: Self = StObject.set(x, "AttributeValue", js.undefined)
   }
 }

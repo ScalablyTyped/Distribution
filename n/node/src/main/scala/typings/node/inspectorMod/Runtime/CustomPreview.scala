@@ -21,8 +21,7 @@ trait CustomPreview extends StObject {
 }
 object CustomPreview {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindRemoteObjectFunctionId: RemoteObjectId,
     formatterObjectId: RemoteObjectId,
     hasBody: Boolean,
@@ -32,25 +31,18 @@ object CustomPreview {
     __obj.asInstanceOf[CustomPreview]
   }
   
-  @scala.inline
-  implicit class CustomPreviewMutableBuilder[Self <: CustomPreview] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPreview](x: Self) {
     
-    @scala.inline
-    def setBindRemoteObjectFunctionId(value: RemoteObjectId): Self = StObject.set(x, "bindRemoteObjectFunctionId", value.asInstanceOf[js.Any])
+    inline def setBindRemoteObjectFunctionId(value: RemoteObjectId): Self = StObject.set(x, "bindRemoteObjectFunctionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigObjectId(value: RemoteObjectId): Self = StObject.set(x, "configObjectId", value.asInstanceOf[js.Any])
+    inline def setConfigObjectId(value: RemoteObjectId): Self = StObject.set(x, "configObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigObjectIdUndefined: Self = StObject.set(x, "configObjectId", js.undefined)
+    inline def setConfigObjectIdUndefined: Self = StObject.set(x, "configObjectId", js.undefined)
     
-    @scala.inline
-    def setFormatterObjectId(value: RemoteObjectId): Self = StObject.set(x, "formatterObjectId", value.asInstanceOf[js.Any])
+    inline def setFormatterObjectId(value: RemoteObjectId): Self = StObject.set(x, "formatterObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasBody(value: Boolean): Self = StObject.set(x, "hasBody", value.asInstanceOf[js.Any])
+    inline def setHasBody(value: Boolean): Self = StObject.set(x, "hasBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }
 }

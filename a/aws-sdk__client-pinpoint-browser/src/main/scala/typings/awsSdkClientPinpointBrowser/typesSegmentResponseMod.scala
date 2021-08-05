@@ -70,74 +70,52 @@ object typesSegmentResponseMod {
   }
   object SegmentResponse {
     
-    @scala.inline
-    def apply(): SegmentResponse = {
+    inline def apply(): SegmentResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SegmentResponse]
     }
     
-    @scala.inline
-    implicit class SegmentResponseMutableBuilder[Self <: SegmentResponse] (val x: Self) extends AnyVal {
+    extension [Self <: SegmentResponse](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
       
-      @scala.inline
-      def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
       
-      @scala.inline
-      def setDimensions(value: SegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: SegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+      inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setImportDefinition(value: SegmentImportResource): Self = StObject.set(x, "ImportDefinition", value.asInstanceOf[js.Any])
+      inline def setImportDefinition(value: SegmentImportResource): Self = StObject.set(x, "ImportDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportDefinitionUndefined: Self = StObject.set(x, "ImportDefinition", js.undefined)
+      inline def setImportDefinitionUndefined: Self = StObject.set(x, "ImportDefinition", js.undefined)
       
-      @scala.inline
-      def setLastModifiedDate(value: String): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: String): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
+      inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
       
-      @scala.inline
-      def setSegmentGroups(value: SegmentGroupList): Self = StObject.set(x, "SegmentGroups", value.asInstanceOf[js.Any])
+      inline def setSegmentGroups(value: SegmentGroupList): Self = StObject.set(x, "SegmentGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentGroupsUndefined: Self = StObject.set(x, "SegmentGroups", js.undefined)
+      inline def setSegmentGroupsUndefined: Self = StObject.set(x, "SegmentGroups", js.undefined)
       
-      @scala.inline
-      def setSegmentType(value: DIMENSIONAL | IMPORT | String): Self = StObject.set(x, "SegmentType", value.asInstanceOf[js.Any])
+      inline def setSegmentType(value: DIMENSIONAL | IMPORT | String): Self = StObject.set(x, "SegmentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentTypeUndefined: Self = StObject.set(x, "SegmentType", js.undefined)
+      inline def setSegmentTypeUndefined: Self = StObject.set(x, "SegmentType", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
     }
   }
   
@@ -165,32 +143,24 @@ object typesSegmentResponseMod {
   }
   object UnmarshalledSegmentResponse {
     
-    @scala.inline
-    def apply(): UnmarshalledSegmentResponse = {
+    inline def apply(): UnmarshalledSegmentResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledSegmentResponse]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSegmentResponseMutableBuilder[Self <: UnmarshalledSegmentResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSegmentResponse](x: Self) {
       
-      @scala.inline
-      def setDimensions(value: UnmarshalledSegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: UnmarshalledSegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+      inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
       
-      @scala.inline
-      def setImportDefinition(value: UnmarshalledSegmentImportResource): Self = StObject.set(x, "ImportDefinition", value.asInstanceOf[js.Any])
+      inline def setImportDefinition(value: UnmarshalledSegmentImportResource): Self = StObject.set(x, "ImportDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportDefinitionUndefined: Self = StObject.set(x, "ImportDefinition", js.undefined)
+      inline def setImportDefinitionUndefined: Self = StObject.set(x, "ImportDefinition", js.undefined)
       
-      @scala.inline
-      def setSegmentGroups(value: UnmarshalledSegmentGroupList): Self = StObject.set(x, "SegmentGroups", value.asInstanceOf[js.Any])
+      inline def setSegmentGroups(value: UnmarshalledSegmentGroupList): Self = StObject.set(x, "SegmentGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentGroupsUndefined: Self = StObject.set(x, "SegmentGroups", js.undefined)
+      inline def setSegmentGroupsUndefined: Self = StObject.set(x, "SegmentGroups", js.undefined)
     }
   }
 }

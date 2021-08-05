@@ -12,19 +12,15 @@ trait Typeofrefs extends StObject {
 }
 object Typeofrefs {
   
-  @scala.inline
-  def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options_8: Typeofoptions8): Typeofrefs = {
+  inline def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options_8: Typeofoptions8): Typeofrefs = {
     val __obj = js.Dynamic.literal(handler = js.Any.fromFunction2(handler), options_8 = options_8.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofrefs]
   }
   
-  @scala.inline
-  implicit class TypeofrefsMutableBuilder[Self <: Typeofrefs] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofrefs](x: Self) {
     
-    @scala.inline
-    def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+    inline def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions_8(value: Typeofoptions8): Self = StObject.set(x, "options_8", value.asInstanceOf[js.Any])
+    inline def setOptions_8(value: Typeofoptions8): Self = StObject.set(x, "options_8", value.asInstanceOf[js.Any])
   }
 }

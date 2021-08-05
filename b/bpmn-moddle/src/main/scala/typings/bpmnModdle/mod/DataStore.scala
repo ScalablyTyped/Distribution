@@ -16,8 +16,7 @@ trait DataStore
 }
 object DataStore {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     capacity: Double,
@@ -31,16 +30,12 @@ object DataStore {
     __obj.asInstanceOf[DataStore]
   }
   
-  @scala.inline
-  implicit class DataStoreMutableBuilder[Self <: DataStore] (val x: Self) extends AnyVal {
+  extension [Self <: DataStore](x: Self) {
     
-    @scala.inline
-    def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUnlimited(value: Boolean): Self = StObject.set(x, "isUnlimited", value.asInstanceOf[js.Any])
+    inline def setIsUnlimited(value: Boolean): Self = StObject.set(x, "isUnlimited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

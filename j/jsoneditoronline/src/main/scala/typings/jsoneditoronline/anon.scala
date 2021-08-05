@@ -30,8 +30,7 @@ object anon {
   }
   object AddEventListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addEventListener: (HTMLElement, String, js.Function1[/* event */ js.UndefOr[Event], Unit], Boolean) => js.Function1[/* event */ js.UndefOr[Event], Unit],
       preventDefault: Event => Unit,
       removeEventListener: (HTMLElement, String, js.Function1[/* event */ js.UndefOr[Event], Unit], Boolean) => Unit,
@@ -41,22 +40,17 @@ object anon {
       __obj.asInstanceOf[AddEventListener]
     }
     
-    @scala.inline
-    implicit class AddEventListenerMutableBuilder[Self <: AddEventListener] (val x: Self) extends AnyVal {
+    extension [Self <: AddEventListener](x: Self) {
       
-      @scala.inline
-      def setAddEventListener(
+      inline def setAddEventListener(
         value: (HTMLElement, String, js.Function1[/* event */ js.UndefOr[Event], Unit], Boolean) => js.Function1[/* event */ js.UndefOr[Event], Unit]
       ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPreventDefault(value: Event => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction1(value))
+      inline def setPreventDefault(value: Event => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveEventListener(value: (HTMLElement, String, js.Function1[/* event */ js.UndefOr[Event], Unit], Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction4(value))
+      inline def setRemoveEventListener(value: (HTMLElement, String, js.Function1[/* event */ js.UndefOr[Event], Unit], Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setStopPropagation(value: Event => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction1(value))
+      inline def setStopPropagation(value: Event => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction1(value))
     }
   }
 }

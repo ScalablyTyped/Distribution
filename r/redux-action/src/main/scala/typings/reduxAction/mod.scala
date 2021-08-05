@@ -14,46 +14,31 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createAction[Payload](): ActionFunction1[js.Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[ActionFunction1[js.Any, ThunkAction[Payload]]]
-  @scala.inline
-  def createAction[Payload](payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload]): ActionFunctionAny[ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunctionAny[ThunkAction[Payload]]]
-  @scala.inline
-  def createAction[Payload](`type`: String): ActionFunction1[js.Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[js.Any, ThunkAction[Payload]]]
-  @scala.inline
-  def createAction[Payload](`type`: String, payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload]): ActionFunctionAny[ThunkAction[Payload]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[ThunkAction[Payload]]]
-  @scala.inline
-  def createAction[Payload, Arg](payloadCreator: ActionFunction1[Arg, js.Promise[Payload] | Payload]): ActionFunction1[Arg, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[Arg, ThunkAction[Payload]]]
-  @scala.inline
-  def createAction[Payload, Meta](
+  inline def createAction[Payload](): ActionFunction1[js.Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[ActionFunction1[js.Any, ThunkAction[Payload]]]
+  inline def createAction[Payload](payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload]): ActionFunctionAny[ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunctionAny[ThunkAction[Payload]]]
+  inline def createAction[Payload](`type`: String): ActionFunction1[js.Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[js.Any, ThunkAction[Payload]]]
+  inline def createAction[Payload](`type`: String, payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload]): ActionFunctionAny[ThunkAction[Payload]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[ThunkAction[Payload]]]
+  inline def createAction[Payload, Arg](payloadCreator: ActionFunction1[Arg, js.Promise[Payload] | Payload]): ActionFunction1[Arg, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[Arg, ThunkAction[Payload]]]
+  inline def createAction[Payload, Meta](
     payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload],
     metaCreator: ActionFunctionAny[Meta]
   ): ActionFunctionAny[ThunkMetaAction[Payload, Meta]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[ThunkMetaAction[Payload, Meta]]]
-  @scala.inline
-  def createAction[Payload, Meta](
+  inline def createAction[Payload, Meta](
     `type`: String,
     payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload],
     metaCreator: ActionFunctionAny[Meta]
   ): ActionFunctionAny[ThunkMetaAction[Payload, Meta]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[ThunkMetaAction[Payload, Meta]]]
-  @scala.inline
-  def createAction[Payload, Arg1, Arg2](payloadCreator: ActionFunction2[Arg1, Arg2, js.Promise[Payload] | Payload]): ActionFunction2[Arg1, Arg2, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunction2[Arg1, Arg2, ThunkAction[Payload]]]
-  @scala.inline
-  def createAction[Payload, Arg1, Arg2, Arg3](payloadCreator: ActionFunction3[Arg1, Arg2, Arg3, js.Promise[Payload] | Payload]): ActionFunction3[Arg1, Arg2, Arg3, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunction3[Arg1, Arg2, Arg3, ThunkAction[Payload]]]
+  inline def createAction[Payload, Arg1, Arg2](payloadCreator: ActionFunction2[Arg1, Arg2, js.Promise[Payload] | Payload]): ActionFunction2[Arg1, Arg2, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunction2[Arg1, Arg2, ThunkAction[Payload]]]
+  inline def createAction[Payload, Arg1, Arg2, Arg3](payloadCreator: ActionFunction3[Arg1, Arg2, Arg3, js.Promise[Payload] | Payload]): ActionFunction3[Arg1, Arg2, Arg3, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunction3[Arg1, Arg2, Arg3, ThunkAction[Payload]]]
   
-  @scala.inline
-  def createAction_PayloadArg[Payload, Arg](): ActionFunction1[Arg, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[ActionFunction1[Arg, ThunkAction[Payload]]]
-  @scala.inline
-  def createAction_PayloadArg[Payload, Arg](`type`: String): ActionFunction1[Arg, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[Arg, ThunkAction[Payload]]]
+  inline def createAction_PayloadArg[Payload, Arg](): ActionFunction1[Arg, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[ActionFunction1[Arg, ThunkAction[Payload]]]
+  inline def createAction_PayloadArg[Payload, Arg](`type`: String): ActionFunction1[Arg, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[Arg, ThunkAction[Payload]]]
   
-  @scala.inline
-  def createReducer[State](defaultState: State, handlers: ReducerHandlers[State]): Reducer[State, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReducer")(defaultState.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any])).asInstanceOf[Reducer[State, AnyAction]]
+  inline def createReducer[State](defaultState: State, handlers: ReducerHandlers[State]): Reducer[State, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReducer")(defaultState.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any])).asInstanceOf[Reducer[State, AnyAction]]
   
-  @scala.inline
-  def createSyncAction[Payload](`type`: String): ActionFunctionAny[Action[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSyncAction")(`type`.asInstanceOf[js.Any]).asInstanceOf[ActionFunctionAny[Action[Payload]]]
-  @scala.inline
-  def createSyncAction[Payload](`type`: String, payloadCreator: ActionFunctionAny[Payload]): ActionFunctionAny[Action[Payload]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSyncAction")(`type`.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[Action[Payload]]]
-  @scala.inline
-  def createSyncAction[Payload, Meta](`type`: String, payloadCreator: ActionFunctionAny[Payload], metaCreator: ActionFunctionAny[Meta]): ActionFunctionAny[MetaAction[Payload, Meta]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSyncAction")(`type`.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[MetaAction[Payload, Meta]]]
+  inline def createSyncAction[Payload](`type`: String): ActionFunctionAny[Action[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSyncAction")(`type`.asInstanceOf[js.Any]).asInstanceOf[ActionFunctionAny[Action[Payload]]]
+  inline def createSyncAction[Payload](`type`: String, payloadCreator: ActionFunctionAny[Payload]): ActionFunctionAny[Action[Payload]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSyncAction")(`type`.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[Action[Payload]]]
+  inline def createSyncAction[Payload, Meta](`type`: String, payloadCreator: ActionFunctionAny[Payload], metaCreator: ActionFunctionAny[Meta]): ActionFunctionAny[MetaAction[Payload, Meta]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSyncAction")(`type`.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[MetaAction[Payload, Meta]]]
   
   trait Action[Payload]
     extends StObject
@@ -63,18 +48,15 @@ object mod {
   }
   object Action {
     
-    @scala.inline
-    def apply[Payload](payload: Payload, `type`: String): Action[Payload] = {
+    inline def apply[Payload](payload: Payload, `type`: String): Action[Payload] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action[Payload]]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action[?], Payload] (val x: Self & Action[Payload]) extends AnyVal {
+    extension [Self <: Action[?], Payload](x: Self & Action[Payload]) {
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,18 +80,15 @@ object mod {
   }
   object BaseAction {
     
-    @scala.inline
-    def apply(`type`: String): BaseAction = {
+    inline def apply(`type`: String): BaseAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseAction]
     }
     
-    @scala.inline
-    implicit class BaseActionMutableBuilder[Self <: BaseAction] (val x: Self) extends AnyVal {
+    extension [Self <: BaseAction](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,18 +100,15 @@ object mod {
   }
   object MetaAction {
     
-    @scala.inline
-    def apply[Payload, Meta](meta: Meta, payload: Payload, `type`: String): MetaAction[Payload, Meta] = {
+    inline def apply[Payload, Meta](meta: Meta, payload: Payload, `type`: String): MetaAction[Payload, Meta] = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetaAction[Payload, Meta]]
     }
     
-    @scala.inline
-    implicit class MetaActionMutableBuilder[Self <: MetaAction[?, ?], Payload, Meta] (val x: Self & (MetaAction[Payload, Meta])) extends AnyVal {
+    extension [Self <: MetaAction[?, ?], Payload, Meta](x: Self & (MetaAction[Payload, Meta])) {
       
-      @scala.inline
-      def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
   

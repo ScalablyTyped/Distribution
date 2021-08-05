@@ -13,22 +13,17 @@ trait DescribeServiceErrorsResult extends StObject {
 }
 object DescribeServiceErrorsResult {
   
-  @scala.inline
-  def apply(): DescribeServiceErrorsResult = {
+  inline def apply(): DescribeServiceErrorsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeServiceErrorsResult]
   }
   
-  @scala.inline
-  implicit class DescribeServiceErrorsResultMutableBuilder[Self <: DescribeServiceErrorsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeServiceErrorsResult](x: Self) {
     
-    @scala.inline
-    def setServiceErrors(value: ServiceErrors): Self = StObject.set(x, "ServiceErrors", value.asInstanceOf[js.Any])
+    inline def setServiceErrors(value: ServiceErrors): Self = StObject.set(x, "ServiceErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceErrorsUndefined: Self = StObject.set(x, "ServiceErrors", js.undefined)
+    inline def setServiceErrorsUndefined: Self = StObject.set(x, "ServiceErrors", js.undefined)
     
-    @scala.inline
-    def setServiceErrorsVarargs(value: ServiceError*): Self = StObject.set(x, "ServiceErrors", js.Array(value :_*))
+    inline def setServiceErrorsVarargs(value: ServiceError*): Self = StObject.set(x, "ServiceErrors", js.Array(value :_*))
   }
 }

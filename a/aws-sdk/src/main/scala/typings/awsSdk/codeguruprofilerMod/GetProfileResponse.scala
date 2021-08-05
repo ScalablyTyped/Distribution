@@ -23,25 +23,19 @@ trait GetProfileResponse extends StObject {
 }
 object GetProfileResponse {
   
-  @scala.inline
-  def apply(contentType: String, profile: AggregatedProfile): GetProfileResponse = {
+  inline def apply(contentType: String, profile: AggregatedProfile): GetProfileResponse = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetProfileResponse]
   }
   
-  @scala.inline
-  implicit class GetProfileResponseMutableBuilder[Self <: GetProfileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetProfileResponse](x: Self) {
     
-    @scala.inline
-    def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
+    inline def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
+    inline def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile(value: AggregatedProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: AggregatedProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
   }
 }

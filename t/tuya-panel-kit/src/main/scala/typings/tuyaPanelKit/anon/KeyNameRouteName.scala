@@ -14,8 +14,7 @@ trait KeyNameRouteName[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@r
 }
 object KeyNameRouteName {
   
-  @scala.inline
-  def apply[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](
+  inline def apply[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](
     name: RouteName,
     params: /* import warning: importer.ImportType#apply Failed type conversion: tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase[RouteName] */ js.Any
   ): KeyNameRouteName[RouteName] = {
@@ -23,20 +22,15 @@ object KeyNameRouteName {
     __obj.asInstanceOf[KeyNameRouteName[RouteName]]
   }
   
-  @scala.inline
-  implicit class KeyNameRouteNameMutableBuilder[Self <: KeyNameRouteName[?], RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */] (val x: Self & KeyNameRouteName[RouteName]) extends AnyVal {
+  extension [Self <: KeyNameRouteName[?], RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](x: Self & KeyNameRouteName[RouteName]) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setName(value: RouteName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: RouteName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(
+    inline def setParams(
       value: /* import warning: importer.ImportType#apply Failed type conversion: tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase[RouteName] */ js.Any
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }

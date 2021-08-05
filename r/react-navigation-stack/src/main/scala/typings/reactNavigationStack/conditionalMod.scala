@@ -12,6 +12,5 @@ object conditionalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(condition: AnimatedInterpolation, main: AnimatedInterpolation, fallback: AnimatedInterpolation): AnimatedAddition = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(condition.asInstanceOf[js.Any], main.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[AnimatedAddition]
+  inline def default(condition: AnimatedInterpolation, main: AnimatedInterpolation, fallback: AnimatedInterpolation): AnimatedAddition = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(condition.asInstanceOf[js.Any], main.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[AnimatedAddition]
 }

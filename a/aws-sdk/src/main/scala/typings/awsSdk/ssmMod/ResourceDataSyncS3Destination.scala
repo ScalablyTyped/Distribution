@@ -38,8 +38,7 @@ trait ResourceDataSyncS3Destination extends StObject {
 }
 object ResourceDataSyncS3Destination {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BucketName: ResourceDataSyncS3BucketName,
     Region: ResourceDataSyncS3Region,
     SyncFormat: ResourceDataSyncS3Format
@@ -48,34 +47,24 @@ object ResourceDataSyncS3Destination {
     __obj.asInstanceOf[ResourceDataSyncS3Destination]
   }
   
-  @scala.inline
-  implicit class ResourceDataSyncS3DestinationMutableBuilder[Self <: ResourceDataSyncS3Destination] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceDataSyncS3Destination](x: Self) {
     
-    @scala.inline
-    def setAWSKMSKeyARN(value: ResourceDataSyncAWSKMSKeyARN): Self = StObject.set(x, "AWSKMSKeyARN", value.asInstanceOf[js.Any])
+    inline def setAWSKMSKeyARN(value: ResourceDataSyncAWSKMSKeyARN): Self = StObject.set(x, "AWSKMSKeyARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAWSKMSKeyARNUndefined: Self = StObject.set(x, "AWSKMSKeyARN", js.undefined)
+    inline def setAWSKMSKeyARNUndefined: Self = StObject.set(x, "AWSKMSKeyARN", js.undefined)
     
-    @scala.inline
-    def setBucketName(value: ResourceDataSyncS3BucketName): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: ResourceDataSyncS3BucketName): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationDataSharing(value: ResourceDataSyncDestinationDataSharing): Self = StObject.set(x, "DestinationDataSharing", value.asInstanceOf[js.Any])
+    inline def setDestinationDataSharing(value: ResourceDataSyncDestinationDataSharing): Self = StObject.set(x, "DestinationDataSharing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationDataSharingUndefined: Self = StObject.set(x, "DestinationDataSharing", js.undefined)
+    inline def setDestinationDataSharingUndefined: Self = StObject.set(x, "DestinationDataSharing", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: ResourceDataSyncS3Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: ResourceDataSyncS3Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
-    @scala.inline
-    def setRegion(value: ResourceDataSyncS3Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: ResourceDataSyncS3Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncFormat(value: ResourceDataSyncS3Format): Self = StObject.set(x, "SyncFormat", value.asInstanceOf[js.Any])
+    inline def setSyncFormat(value: ResourceDataSyncS3Format): Self = StObject.set(x, "SyncFormat", value.asInstanceOf[js.Any])
   }
 }

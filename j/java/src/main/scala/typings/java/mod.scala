@@ -25,35 +25,26 @@ object mod extends Shortcut {
   }
   object AsyncOptions {
     
-    @scala.inline
-    def apply(syncSuffix: String): AsyncOptions = {
+    inline def apply(syncSuffix: String): AsyncOptions = {
       val __obj = js.Dynamic.literal(syncSuffix = syncSuffix.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsyncOptions]
     }
     
-    @scala.inline
-    implicit class AsyncOptionsMutableBuilder[Self <: AsyncOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncOptions](x: Self) {
       
-      @scala.inline
-      def setAsyncSuffix(value: String): Self = StObject.set(x, "asyncSuffix", value.asInstanceOf[js.Any])
+      inline def setAsyncSuffix(value: String): Self = StObject.set(x, "asyncSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncSuffixUndefined: Self = StObject.set(x, "asyncSuffix", js.undefined)
+      inline def setAsyncSuffixUndefined: Self = StObject.set(x, "asyncSuffix", js.undefined)
       
-      @scala.inline
-      def setPromiseSuffix(value: String): Self = StObject.set(x, "promiseSuffix", value.asInstanceOf[js.Any])
+      inline def setPromiseSuffix(value: String): Self = StObject.set(x, "promiseSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseSuffixUndefined: Self = StObject.set(x, "promiseSuffix", js.undefined)
+      inline def setPromiseSuffixUndefined: Self = StObject.set(x, "promiseSuffix", js.undefined)
       
-      @scala.inline
-      def setPromisify(value: (/* funct */ js.Function, /* receiver */ js.UndefOr[js.Any]) => js.Function): Self = StObject.set(x, "promisify", js.Any.fromFunction2(value))
+      inline def setPromisify(value: (/* funct */ js.Function, /* receiver */ js.UndefOr[js.Any]) => js.Function): Self = StObject.set(x, "promisify", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPromisifyUndefined: Self = StObject.set(x, "promisify", js.undefined)
+      inline def setPromisifyUndefined: Self = StObject.set(x, "promisify", js.undefined)
       
-      @scala.inline
-      def setSyncSuffix(value: String): Self = StObject.set(x, "syncSuffix", value.asInstanceOf[js.Any])
+      inline def setSyncSuffix(value: String): Self = StObject.set(x, "syncSuffix", value.asInstanceOf[js.Any])
     }
   }
   

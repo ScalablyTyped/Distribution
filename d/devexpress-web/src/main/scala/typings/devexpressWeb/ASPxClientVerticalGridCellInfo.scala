@@ -21,19 +21,15 @@ trait ASPxClientVerticalGridCellInfo extends StObject {
 }
 object ASPxClientVerticalGridCellInfo {
   
-  @scala.inline
-  def apply(recordVisibleIndex: Double, row: ASPxClientVerticalGridRow): ASPxClientVerticalGridCellInfo = {
+  inline def apply(recordVisibleIndex: Double, row: ASPxClientVerticalGridRow): ASPxClientVerticalGridCellInfo = {
     val __obj = js.Dynamic.literal(recordVisibleIndex = recordVisibleIndex.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientVerticalGridCellInfo]
   }
   
-  @scala.inline
-  implicit class ASPxClientVerticalGridCellInfoMutableBuilder[Self <: ASPxClientVerticalGridCellInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientVerticalGridCellInfo](x: Self) {
     
-    @scala.inline
-    def setRecordVisibleIndex(value: Double): Self = StObject.set(x, "recordVisibleIndex", value.asInstanceOf[js.Any])
+    inline def setRecordVisibleIndex(value: Double): Self = StObject.set(x, "recordVisibleIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: ASPxClientVerticalGridRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: ASPxClientVerticalGridRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

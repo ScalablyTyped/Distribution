@@ -23,31 +23,23 @@ trait VerifyResponse extends StObject {
 }
 object VerifyResponse {
   
-  @scala.inline
-  def apply(): VerifyResponse = {
+  inline def apply(): VerifyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VerifyResponse]
   }
   
-  @scala.inline
-  implicit class VerifyResponseMutableBuilder[Self <: VerifyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: VerifyResponse](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
-    @scala.inline
-    def setSignatureValid(value: BooleanType): Self = StObject.set(x, "SignatureValid", value.asInstanceOf[js.Any])
+    inline def setSignatureValid(value: BooleanType): Self = StObject.set(x, "SignatureValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureValidUndefined: Self = StObject.set(x, "SignatureValid", js.undefined)
+    inline def setSignatureValidUndefined: Self = StObject.set(x, "SignatureValid", js.undefined)
     
-    @scala.inline
-    def setSigningAlgorithm(value: SigningAlgorithmSpec): Self = StObject.set(x, "SigningAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSigningAlgorithm(value: SigningAlgorithmSpec): Self = StObject.set(x, "SigningAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningAlgorithmUndefined: Self = StObject.set(x, "SigningAlgorithm", js.undefined)
+    inline def setSigningAlgorithmUndefined: Self = StObject.set(x, "SigningAlgorithm", js.undefined)
   }
 }

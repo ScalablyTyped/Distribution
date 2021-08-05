@@ -13,9 +13,9 @@ object blockMod {
   @js.native
   class Block () extends StObject {
     
-    var __checkMerkleRoot: js.Any = js.native
+    /* private */ var __checkMerkleRoot: js.Any = js.native
     
-    var __checkWitnessCommit: js.Any = js.native
+    /* private */ var __checkWitnessCommit: js.Any = js.native
     
     var bits: Double = js.native
     
@@ -69,18 +69,13 @@ object blockMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def calculateMerkleRoot(transactions: js.Array[Transaction]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMerkleRoot")(transactions.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-    @scala.inline
-    def calculateMerkleRoot(transactions: js.Array[Transaction], forWitness: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateMerkleRoot")(transactions.asInstanceOf[js.Any], forWitness.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    inline def calculateMerkleRoot(transactions: js.Array[Transaction]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMerkleRoot")(transactions.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def calculateMerkleRoot(transactions: js.Array[Transaction], forWitness: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateMerkleRoot")(transactions.asInstanceOf[js.Any], forWitness.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @scala.inline
-    def calculateTarget(bits: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateTarget")(bits.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def calculateTarget(bits: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateTarget")(bits.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @scala.inline
-    def fromBuffer(buffer: Buffer): Block = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Block]
+    inline def fromBuffer(buffer: Buffer): Block = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Block]
     
-    @scala.inline
-    def fromHex(hex: String): Block = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[Block]
+    inline def fromHex(hex: String): Block = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[Block]
   }
 }

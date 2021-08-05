@@ -26,22 +26,18 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromDir(root: String): Project = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDir")(root.asInstanceOf[js.Any]).asInstanceOf[Project]
-  @scala.inline
-  def fromDir(root: String, name: String): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDir")(root.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Project]
+  inline def fromDir(root: String): Project = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDir")(root.asInstanceOf[js.Any]).asInstanceOf[Project]
+  inline def fromDir(root: String, name: String): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDir")(root.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Project]
   
   /* static member */
-  @scala.inline
-  def fromJSON(json: DirJSON, name: String): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Project]
+  inline def fromJSON(json: DirJSON, name: String): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Project]
   
   trait DirJSON
     extends StObject
        with /* filename */ StringDictionary[DirJSON | String]
   object DirJSON {
     
-    @scala.inline
-    def apply(): DirJSON = {
+    inline def apply(): DirJSON = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DirJSON]
     }
@@ -50,13 +46,13 @@ object mod {
   @js.native
   trait Project extends StObject {
     
-    var _dependencies: js.Any = js.native
+    /* private */ var _dependencies: js.Any = js.native
     
-    var _devDependencies: js.Any = js.native
+    /* private */ var _devDependencies: js.Any = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
-    var _tmp: js.Any = js.native
+    /* private */ var _tmp: js.Any = js.native
     
     def addDependency(name: String): Project = js.native
     def addDependency(name: String, version: String): Project = js.native

@@ -10,22 +10,17 @@ trait Skip extends StObject {
 }
 object Skip {
   
-  @scala.inline
-  def apply(): Skip = {
+  inline def apply(): Skip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Skip]
   }
   
-  @scala.inline
-  implicit class SkipMutableBuilder[Self <: Skip] (val x: Self) extends AnyVal {
+  extension [Self <: Skip](x: Self) {
     
-    @scala.inline
-    def setSkip(value: js.Array[String]): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: js.Array[String]): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setSkipVarargs(value: String*): Self = StObject.set(x, "skip", js.Array(value :_*))
+    inline def setSkipVarargs(value: String*): Self = StObject.set(x, "skip", js.Array(value :_*))
   }
 }

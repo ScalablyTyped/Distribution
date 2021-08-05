@@ -30,14 +30,11 @@ object Scripting {
   trait CompareMethod extends StObject
   object CompareMethod {
     
-    @scala.inline
-    def BinaryCompare: `0` = 0.asInstanceOf[`0`]
+    inline def BinaryCompare: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def DatabaseCompare: `2` = 2.asInstanceOf[`2`]
+    inline def DatabaseCompare: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def TextCompare: `1` = 1.asInstanceOf[`1`]
+    inline def TextCompare: `1` = 1.asInstanceOf[`1`]
   }
   
   /** Scripting.Dictionary */
@@ -107,7 +104,7 @@ object Scripting {
     /** Root folder */
     val RootFolder: Folder
     
-    @JSName("Scripting.Drive_typekey")
+    /* private */ @JSName("Scripting.Drive_typekey")
     var ScriptingDotDrive_typekey: Drive
     
     /** Serial number */
@@ -124,8 +121,7 @@ object Scripting {
   }
   object Drive {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AvailableSpace: Double,
       DriveLetter: String,
       DriveType: DriveTypeConst,
@@ -145,47 +141,33 @@ object Scripting {
       __obj.asInstanceOf[Drive]
     }
     
-    @scala.inline
-    implicit class DriveMutableBuilder[Self <: Drive] (val x: Self) extends AnyVal {
+    extension [Self <: Drive](x: Self) {
       
-      @scala.inline
-      def setAvailableSpace(value: Double): Self = StObject.set(x, "AvailableSpace", value.asInstanceOf[js.Any])
+      inline def setAvailableSpace(value: Double): Self = StObject.set(x, "AvailableSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDriveLetter(value: String): Self = StObject.set(x, "DriveLetter", value.asInstanceOf[js.Any])
+      inline def setDriveLetter(value: String): Self = StObject.set(x, "DriveLetter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDriveType(value: DriveTypeConst): Self = StObject.set(x, "DriveType", value.asInstanceOf[js.Any])
+      inline def setDriveType(value: DriveTypeConst): Self = StObject.set(x, "DriveType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystem(value: String): Self = StObject.set(x, "FileSystem", value.asInstanceOf[js.Any])
+      inline def setFileSystem(value: String): Self = StObject.set(x, "FileSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreeSpace(value: Double): Self = StObject.set(x, "FreeSpace", value.asInstanceOf[js.Any])
+      inline def setFreeSpace(value: Double): Self = StObject.set(x, "FreeSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsReady(value: Boolean): Self = StObject.set(x, "IsReady", value.asInstanceOf[js.Any])
+      inline def setIsReady(value: Boolean): Self = StObject.set(x, "IsReady", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootFolder(value: Folder): Self = StObject.set(x, "RootFolder", value.asInstanceOf[js.Any])
+      inline def setRootFolder(value: Folder): Self = StObject.set(x, "RootFolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptingDotDrive_typekey(value: Drive): Self = StObject.set(x, "Scripting.Drive_typekey", value.asInstanceOf[js.Any])
+      inline def setScriptingDotDrive_typekey(value: Drive): Self = StObject.set(x, "Scripting.Drive_typekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialNumber(value: Double): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
+      inline def setSerialNumber(value: Double): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShareName(value: String): Self = StObject.set(x, "ShareName", value.asInstanceOf[js.Any])
+      inline def setShareName(value: String): Self = StObject.set(x, "ShareName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalSize(value: Double): Self = StObject.set(x, "TotalSize", value.asInstanceOf[js.Any])
+      inline def setTotalSize(value: Double): Self = StObject.set(x, "TotalSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeName(value: String): Self = StObject.set(x, "VolumeName", value.asInstanceOf[js.Any])
+      inline def setVolumeName(value: String): Self = StObject.set(x, "VolumeName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -201,23 +183,17 @@ object Scripting {
   trait DriveTypeConst extends StObject
   object DriveTypeConst {
     
-    @scala.inline
-    def CDRom: `4` = 4.asInstanceOf[`4`]
+    inline def CDRom: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def Fixed: `2` = 2.asInstanceOf[`2`]
+    inline def Fixed: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def RamDisk: `5` = 5.asInstanceOf[`5`]
+    inline def RamDisk: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def Remote: `3` = 3.asInstanceOf[`3`]
+    inline def Remote: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def Removable: `1` = 1.asInstanceOf[`1`]
+    inline def Removable: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def UnknownType: `0` = 0.asInstanceOf[`0`]
+    inline def UnknownType: `0` = 0.asInstanceOf[`0`]
   }
   
   /** Collection of drives associated with drive letters */
@@ -300,7 +276,7 @@ object Scripting {
     /** Path to the file */
     val Path: String = js.native
     
-    @JSName("Scripting.File_typekey")
+    /* private */ @JSName("Scripting.File_typekey")
     var ScriptingDotFile_typekey: File = js.native
     
     /** Short name */
@@ -331,32 +307,23 @@ object Scripting {
   trait FileAttribute extends StObject
   object FileAttribute {
     
-    @scala.inline
-    def Alias: `1024` = 1024.asInstanceOf[`1024`]
+    inline def Alias: `1024` = 1024.asInstanceOf[`1024`]
     
-    @scala.inline
-    def Archive: `32` = 32.asInstanceOf[`32`]
+    inline def Archive: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def Compressed: `2048` = 2048.asInstanceOf[`2048`]
+    inline def Compressed: `2048` = 2048.asInstanceOf[`2048`]
     
-    @scala.inline
-    def Directory: `16` = 16.asInstanceOf[`16`]
+    inline def Directory: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def Hidden: `2` = 2.asInstanceOf[`2`]
+    inline def Hidden: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def Normal: `0` = 0.asInstanceOf[`0`]
+    inline def Normal: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def ReadOnly: `1` = 1.asInstanceOf[`1`]
+    inline def ReadOnly: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def System: `4` = 4.asInstanceOf[`4`]
+    inline def System: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def Volume: `8` = 8.asInstanceOf[`8`]
+    inline def Volume: `8` = 8.asInstanceOf[`8`]
   }
   
   /** FileSystem Object */
@@ -487,7 +454,7 @@ object Scripting {
     def OpenTextFile(FileName: String, IOMode: IOMode, Create: Boolean, Format: Tristate): TextStream = js.native
     def OpenTextFile(FileName: String, IOMode: IOMode, Create: Unit, Format: Tristate): TextStream = js.native
     
-    @JSName("Scripting.FileSystemObject_typekey")
+    /* private */ @JSName("Scripting.FileSystemObject_typekey")
     var ScriptingDotFileSystemObject_typekey: FileSystemObject = js.native
   }
   
@@ -570,7 +537,7 @@ object Scripting {
     /** Path to folder */
     val Path: String = js.native
     
-    @JSName("Scripting.Folder_typekey")
+    /* private */ @JSName("Scripting.Folder_typekey")
     var ScriptingDotFolder_typekey: Folder = js.native
     
     /** Short name */
@@ -619,14 +586,11 @@ object Scripting {
   trait IOMode extends StObject
   object IOMode {
     
-    @scala.inline
-    def ForAppending: `8` = 8.asInstanceOf[`8`]
+    inline def ForAppending: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def ForReading: `1` = 1.asInstanceOf[`1`]
+    inline def ForReading: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def ForWriting: `2` = 2.asInstanceOf[`2`]
+    inline def ForWriting: `2` = 2.asInstanceOf[`2`]
   }
   
   // tslint:disable-next-line:no-const-enum
@@ -638,14 +602,11 @@ object Scripting {
   trait SpecialFolderConst extends StObject
   object SpecialFolderConst {
     
-    @scala.inline
-    def SystemFolder: `1` = 1.asInstanceOf[`1`]
+    inline def SystemFolder: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def TemporaryFolder: `2` = 2.asInstanceOf[`2`]
+    inline def TemporaryFolder: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def WindowsFolder: `0` = 0.asInstanceOf[`0`]
+    inline def WindowsFolder: `0` = 0.asInstanceOf[`0`]
   }
   
   // tslint:disable-next-line:no-const-enum
@@ -657,14 +618,11 @@ object Scripting {
   trait StandardStreamTypes extends StObject
   object StandardStreamTypes {
     
-    @scala.inline
-    def StdErr: `2` = 2.asInstanceOf[`2`]
+    inline def StdErr: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def StdIn: `0` = 0.asInstanceOf[`0`]
+    inline def StdIn: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def StdOut: `1` = 1.asInstanceOf[`1`]
+    inline def StdOut: `1` = 1.asInstanceOf[`1`]
   }
   
   /** TextStream object */
@@ -695,7 +653,7 @@ object Scripting {
     /** Read an entire line into a string */
     def ReadLine(): String = js.native
     
-    @JSName("Scripting.TextStream_typekey")
+    /* private */ @JSName("Scripting.TextStream_typekey")
     var ScriptingDotTextStream_typekey: TextStream = js.native
     
     /** Skip a specific number of characters */
@@ -727,16 +685,12 @@ object Scripting {
   trait Tristate extends StObject
   object Tristate {
     
-    @scala.inline
-    def TristateFalse: `0` = 0.asInstanceOf[`0`]
+    inline def TristateFalse: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def TristateMixed: `-2` = -2.asInstanceOf[`-2`]
+    inline def TristateMixed: `-2` = -2.asInstanceOf[`-2`]
     
-    @scala.inline
-    def TristateTrue: `-1` = -1.asInstanceOf[`-1`]
+    inline def TristateTrue: `-1` = -1.asInstanceOf[`-1`]
     
-    @scala.inline
-    def TristateUseDefault: `-2` = -2.asInstanceOf[`-2`]
+    inline def TristateUseDefault: `-2` = -2.asInstanceOf[`-2`]
   }
 }

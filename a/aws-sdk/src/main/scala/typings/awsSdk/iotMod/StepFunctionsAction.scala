@@ -23,25 +23,19 @@ trait StepFunctionsAction extends StObject {
 }
 object StepFunctionsAction {
   
-  @scala.inline
-  def apply(roleArn: AwsArn, stateMachineName: StateMachineName): StepFunctionsAction = {
+  inline def apply(roleArn: AwsArn, stateMachineName: StateMachineName): StepFunctionsAction = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], stateMachineName = stateMachineName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepFunctionsAction]
   }
   
-  @scala.inline
-  implicit class StepFunctionsActionMutableBuilder[Self <: StepFunctionsAction] (val x: Self) extends AnyVal {
+  extension [Self <: StepFunctionsAction](x: Self) {
     
-    @scala.inline
-    def setExecutionNamePrefix(value: ExecutionNamePrefix): Self = StObject.set(x, "executionNamePrefix", value.asInstanceOf[js.Any])
+    inline def setExecutionNamePrefix(value: ExecutionNamePrefix): Self = StObject.set(x, "executionNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionNamePrefixUndefined: Self = StObject.set(x, "executionNamePrefix", js.undefined)
+    inline def setExecutionNamePrefixUndefined: Self = StObject.set(x, "executionNamePrefix", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateMachineName(value: StateMachineName): Self = StObject.set(x, "stateMachineName", value.asInstanceOf[js.Any])
+    inline def setStateMachineName(value: StateMachineName): Self = StObject.set(x, "stateMachineName", value.asInstanceOf[js.Any])
   }
 }

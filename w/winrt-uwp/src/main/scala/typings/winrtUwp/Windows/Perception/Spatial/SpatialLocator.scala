@@ -32,8 +32,7 @@ trait SpatialLocator extends StObject {
 }
 object SpatialLocator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventListener: js.Any,
     createAttachedFrameOfReferenceAtCurrentHeading: js.Any,
     createStationaryFrameOfReferenceAtCurrentLocation: js.Any,
@@ -47,31 +46,22 @@ object SpatialLocator {
     __obj.asInstanceOf[SpatialLocator]
   }
   
-  @scala.inline
-  implicit class SpatialLocatorMutableBuilder[Self <: SpatialLocator] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialLocator](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: js.Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
+    inline def setAddEventListener(value: js.Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateAttachedFrameOfReferenceAtCurrentHeading(value: js.Any): Self = StObject.set(x, "createAttachedFrameOfReferenceAtCurrentHeading", value.asInstanceOf[js.Any])
+    inline def setCreateAttachedFrameOfReferenceAtCurrentHeading(value: js.Any): Self = StObject.set(x, "createAttachedFrameOfReferenceAtCurrentHeading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateStationaryFrameOfReferenceAtCurrentLocation(value: js.Any): Self = StObject.set(x, "createStationaryFrameOfReferenceAtCurrentLocation", value.asInstanceOf[js.Any])
+    inline def setCreateStationaryFrameOfReferenceAtCurrentLocation(value: js.Any): Self = StObject.set(x, "createStationaryFrameOfReferenceAtCurrentLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocatability(value: js.Any): Self = StObject.set(x, "locatability", value.asInstanceOf[js.Any])
+    inline def setLocatability(value: js.Any): Self = StObject.set(x, "locatability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlocatabilitychanged(value: js.Any): Self = StObject.set(x, "onlocatabilitychanged", value.asInstanceOf[js.Any])
+    inline def setOnlocatabilitychanged(value: js.Any): Self = StObject.set(x, "onlocatabilitychanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnpositionaltrackingdeactivating(value: js.Any): Self = StObject.set(x, "onpositionaltrackingdeactivating", value.asInstanceOf[js.Any])
+    inline def setOnpositionaltrackingdeactivating(value: js.Any): Self = StObject.set(x, "onpositionaltrackingdeactivating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEventListener(value: js.Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
+    inline def setRemoveEventListener(value: js.Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryLocateAtTimestamp(value: js.Any): Self = StObject.set(x, "tryLocateAtTimestamp", value.asInstanceOf[js.Any])
+    inline def setTryLocateAtTimestamp(value: js.Any): Self = StObject.set(x, "tryLocateAtTimestamp", value.asInstanceOf[js.Any])
   }
 }

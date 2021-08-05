@@ -12,6 +12,5 @@ object getNamedCookieMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasName: Name): js.Promise[Cookie] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cookie]]
+  inline def default(hasName: Name): js.Promise[Cookie] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cookie]]
 }

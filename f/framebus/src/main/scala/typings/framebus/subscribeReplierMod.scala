@@ -11,6 +11,5 @@ object subscribeReplierMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def subscribeReplier(fn: FramebusSubscribeHandler, origin: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeReplier")(fn.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def subscribeReplier(fn: FramebusSubscribeHandler, origin: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeReplier")(fn.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[String]
 }

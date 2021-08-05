@@ -239,8 +239,7 @@ trait XFrame
 }
 object XFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ComponentWindow: XWindow,
     ContainerWindow: XWindow,
     Controller: XController,
@@ -274,73 +273,50 @@ object XFrame {
     __obj.asInstanceOf[XFrame]
   }
   
-  @scala.inline
-  implicit class XFrameMutableBuilder[Self <: XFrame] (val x: Self) extends AnyVal {
+  extension [Self <: XFrame](x: Self) {
     
-    @scala.inline
-    def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAddFrameActionListener(value: XFrameActionListener => Unit): Self = StObject.set(x, "addFrameActionListener", js.Any.fromFunction1(value))
+    inline def setAddFrameActionListener(value: XFrameActionListener => Unit): Self = StObject.set(x, "addFrameActionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setComponentWindow(value: XWindow): Self = StObject.set(x, "ComponentWindow", value.asInstanceOf[js.Any])
+    inline def setComponentWindow(value: XWindow): Self = StObject.set(x, "ComponentWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerWindow(value: XWindow): Self = StObject.set(x, "ContainerWindow", value.asInstanceOf[js.Any])
+    inline def setContainerWindow(value: XWindow): Self = StObject.set(x, "ContainerWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextChanged(value: () => Unit): Self = StObject.set(x, "contextChanged", js.Any.fromFunction0(value))
+    inline def setContextChanged(value: () => Unit): Self = StObject.set(x, "contextChanged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setController(value: XController): Self = StObject.set(x, "Controller", value.asInstanceOf[js.Any])
+    inline def setController(value: XController): Self = StObject.set(x, "Controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XFramesSupplier): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XFramesSupplier): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeactivate(value: () => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction0(value))
+    inline def setDeactivate(value: () => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFindFrame(value: (String, Double) => XFrame): Self = StObject.set(x, "findFrame", js.Any.fromFunction2(value))
+    inline def setFindFrame(value: (String, Double) => XFrame): Self = StObject.set(x, "findFrame", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetComponentWindow(value: () => XWindow): Self = StObject.set(x, "getComponentWindow", js.Any.fromFunction0(value))
+    inline def setGetComponentWindow(value: () => XWindow): Self = StObject.set(x, "getComponentWindow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContainerWindow(value: () => XWindow): Self = StObject.set(x, "getContainerWindow", js.Any.fromFunction0(value))
+    inline def setGetContainerWindow(value: () => XWindow): Self = StObject.set(x, "getContainerWindow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetController(value: () => XController): Self = StObject.set(x, "getController", js.Any.fromFunction0(value))
+    inline def setGetController(value: () => XController): Self = StObject.set(x, "getController", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCreator(value: () => XFramesSupplier): Self = StObject.set(x, "getCreator", js.Any.fromFunction0(value))
+    inline def setGetCreator(value: () => XFramesSupplier): Self = StObject.set(x, "getCreator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitialize(value: XWindow => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+    inline def setInitialize(value: XWindow => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+    inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsTop(value: () => Boolean): Self = StObject.set(x, "isTop", js.Any.fromFunction0(value))
+    inline def setIsTop(value: () => Boolean): Self = StObject.set(x, "isTop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveFrameActionListener(value: XFrameActionListener => Unit): Self = StObject.set(x, "removeFrameActionListener", js.Any.fromFunction1(value))
+    inline def setRemoveFrameActionListener(value: XFrameActionListener => Unit): Self = StObject.set(x, "removeFrameActionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetComponent(value: (XWindow, XController) => Boolean): Self = StObject.set(x, "setComponent", js.Any.fromFunction2(value))
+    inline def setSetComponent(value: (XWindow, XController) => Boolean): Self = StObject.set(x, "setComponent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetCreator(value: XFramesSupplier => Unit): Self = StObject.set(x, "setCreator", js.Any.fromFunction1(value))
+    inline def setSetCreator(value: XFramesSupplier => Unit): Self = StObject.set(x, "setCreator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
   }
 }

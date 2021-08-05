@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChannelType extends StObject
 object ChannelType {
   
-  @scala.inline
-  def All: typings.gm.gmStrings.All = "All".asInstanceOf[typings.gm.gmStrings.All]
+  inline def All: typings.gm.gmStrings.All = "All".asInstanceOf[typings.gm.gmStrings.All]
   
-  @scala.inline
-  def Black: typings.gm.gmStrings.Black = "Black".asInstanceOf[typings.gm.gmStrings.Black]
+  inline def Black: typings.gm.gmStrings.Black = "Black".asInstanceOf[typings.gm.gmStrings.Black]
   
-  @scala.inline
-  def Blue: typings.gm.gmStrings.Blue = "Blue".asInstanceOf[typings.gm.gmStrings.Blue]
+  inline def Blue: typings.gm.gmStrings.Blue = "Blue".asInstanceOf[typings.gm.gmStrings.Blue]
   
-  @scala.inline
-  def Cyan: typings.gm.gmStrings.Cyan = "Cyan".asInstanceOf[typings.gm.gmStrings.Cyan]
+  inline def Cyan: typings.gm.gmStrings.Cyan = "Cyan".asInstanceOf[typings.gm.gmStrings.Cyan]
   
-  @scala.inline
-  def Green: typings.gm.gmStrings.Green = "Green".asInstanceOf[typings.gm.gmStrings.Green]
+  inline def Green: typings.gm.gmStrings.Green = "Green".asInstanceOf[typings.gm.gmStrings.Green]
   
-  @scala.inline
-  def Intensity: typings.gm.gmStrings.Intensity = "Intensity".asInstanceOf[typings.gm.gmStrings.Intensity]
+  inline def Intensity: typings.gm.gmStrings.Intensity = "Intensity".asInstanceOf[typings.gm.gmStrings.Intensity]
   
-  @scala.inline
-  def Magenta: typings.gm.gmStrings.Magenta = "Magenta".asInstanceOf[typings.gm.gmStrings.Magenta]
+  inline def Magenta: typings.gm.gmStrings.Magenta = "Magenta".asInstanceOf[typings.gm.gmStrings.Magenta]
   
-  @scala.inline
-  def Opacity: typings.gm.gmStrings.Opacity = "Opacity".asInstanceOf[typings.gm.gmStrings.Opacity]
+  inline def Opacity: typings.gm.gmStrings.Opacity = "Opacity".asInstanceOf[typings.gm.gmStrings.Opacity]
   
-  @scala.inline
-  def Red: typings.gm.gmStrings.Red = "Red".asInstanceOf[typings.gm.gmStrings.Red]
+  inline def Red: typings.gm.gmStrings.Red = "Red".asInstanceOf[typings.gm.gmStrings.Red]
   
-  @scala.inline
-  def Yellow: typings.gm.gmStrings.Yellow = "Yellow".asInstanceOf[typings.gm.gmStrings.Yellow]
+  inline def Yellow: typings.gm.gmStrings.Yellow = "Yellow".asInstanceOf[typings.gm.gmStrings.Yellow]
 }

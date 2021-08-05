@@ -24,8 +24,7 @@ trait GalleryAlbum
 }
 object GalleryAlbum {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     comment_count: Double,
     cover: String,
     cover_height: Double,
@@ -52,31 +51,22 @@ object GalleryAlbum {
     __obj.asInstanceOf[GalleryAlbum]
   }
   
-  @scala.inline
-  implicit class GalleryAlbumMutableBuilder[Self <: GalleryAlbum] (val x: Self) extends AnyVal {
+  extension [Self <: GalleryAlbum](x: Self) {
     
-    @scala.inline
-    def setCover(value: String): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
+    inline def setCover(value: String): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCover_height(value: Double): Self = StObject.set(x, "cover_height", value.asInstanceOf[js.Any])
+    inline def setCover_height(value: Double): Self = StObject.set(x, "cover_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCover_width(value: Double): Self = StObject.set(x, "cover_width", value.asInstanceOf[js.Any])
+    inline def setCover_width(value: Double): Self = StObject.set(x, "cover_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setImages_count(value: Double): Self = StObject.set(x, "images_count", value.asInstanceOf[js.Any])
+    inline def setImages_count(value: Double): Self = StObject.set(x, "images_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacy(value: String): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
+    inline def setPrivacy(value: String): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
   }
 }

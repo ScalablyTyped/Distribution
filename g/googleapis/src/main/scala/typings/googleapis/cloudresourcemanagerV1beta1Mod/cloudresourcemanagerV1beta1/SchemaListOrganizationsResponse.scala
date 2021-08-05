@@ -26,28 +26,21 @@ trait SchemaListOrganizationsResponse extends StObject {
 }
 object SchemaListOrganizationsResponse {
   
-  @scala.inline
-  def apply(): SchemaListOrganizationsResponse = {
+  inline def apply(): SchemaListOrganizationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListOrganizationsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListOrganizationsResponseMutableBuilder[Self <: SchemaListOrganizationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListOrganizationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setOrganizations(value: js.Array[SchemaOrganization]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
+    inline def setOrganizations(value: js.Array[SchemaOrganization]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationsUndefined: Self = StObject.set(x, "organizations", js.undefined)
+    inline def setOrganizationsUndefined: Self = StObject.set(x, "organizations", js.undefined)
     
-    @scala.inline
-    def setOrganizationsVarargs(value: SchemaOrganization*): Self = StObject.set(x, "organizations", js.Array(value :_*))
+    inline def setOrganizationsVarargs(value: SchemaOrganization*): Self = StObject.set(x, "organizations", js.Array(value :_*))
   }
 }

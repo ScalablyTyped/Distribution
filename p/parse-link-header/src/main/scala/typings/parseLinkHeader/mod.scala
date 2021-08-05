@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(linkHeader: String): Links | Null = ^.asInstanceOf[js.Dynamic].apply(linkHeader.asInstanceOf[js.Any]).asInstanceOf[Links | Null]
+  inline def apply(linkHeader: String): Links | Null = ^.asInstanceOf[js.Dynamic].apply(linkHeader.asInstanceOf[js.Any]).asInstanceOf[Links | Null]
   
   @JSImport("parse-link-header", JSImport.Namespace)
   @js.native
@@ -24,20 +23,16 @@ object mod {
   }
   object Link {
     
-    @scala.inline
-    def apply(rel: String, url: String): Link = {
+    inline def apply(rel: String, url: String): Link = {
       val __obj = js.Dynamic.literal(rel = rel.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Link]
     }
     
-    @scala.inline
-    implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+    extension [Self <: Link](x: Self) {
       
-      @scala.inline
-      def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

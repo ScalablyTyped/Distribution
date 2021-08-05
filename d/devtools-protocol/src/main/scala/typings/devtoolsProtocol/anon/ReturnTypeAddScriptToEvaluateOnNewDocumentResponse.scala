@@ -14,8 +14,7 @@ trait ReturnTypeAddScriptToEvaluateOnNewDocumentResponse extends StObject {
 }
 object ReturnTypeAddScriptToEvaluateOnNewDocumentResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     paramsType: js.Array[AddScriptToEvaluateOnNewDocumentRequest],
     returnType: AddScriptToEvaluateOnNewDocumentResponse
   ): ReturnTypeAddScriptToEvaluateOnNewDocumentResponse = {
@@ -23,16 +22,12 @@ object ReturnTypeAddScriptToEvaluateOnNewDocumentResponse {
     __obj.asInstanceOf[ReturnTypeAddScriptToEvaluateOnNewDocumentResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeAddScriptToEvaluateOnNewDocumentResponseMutableBuilder[Self <: ReturnTypeAddScriptToEvaluateOnNewDocumentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeAddScriptToEvaluateOnNewDocumentResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[AddScriptToEvaluateOnNewDocumentRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[AddScriptToEvaluateOnNewDocumentRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: AddScriptToEvaluateOnNewDocumentRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: AddScriptToEvaluateOnNewDocumentRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: AddScriptToEvaluateOnNewDocumentResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: AddScriptToEvaluateOnNewDocumentResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

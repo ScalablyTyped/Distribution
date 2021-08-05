@@ -11,22 +11,17 @@ trait AsyncBatchAnnotateFilesResponse extends StObject {
 }
 object AsyncBatchAnnotateFilesResponse {
   
-  @scala.inline
-  def apply(): AsyncBatchAnnotateFilesResponse = {
+  inline def apply(): AsyncBatchAnnotateFilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncBatchAnnotateFilesResponse]
   }
   
-  @scala.inline
-  implicit class AsyncBatchAnnotateFilesResponseMutableBuilder[Self <: AsyncBatchAnnotateFilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncBatchAnnotateFilesResponse](x: Self) {
     
-    @scala.inline
-    def setResponses(value: js.Array[AsyncAnnotateFileResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[AsyncAnnotateFileResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: AsyncAnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: AsyncAnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
   }
 }

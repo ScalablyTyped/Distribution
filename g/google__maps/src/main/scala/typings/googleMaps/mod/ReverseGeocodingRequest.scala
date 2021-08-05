@@ -52,43 +52,31 @@ trait ReverseGeocodingRequest extends StObject {
 }
 object ReverseGeocodingRequest {
   
-  @scala.inline
-  def apply(): ReverseGeocodingRequest = {
+  inline def apply(): ReverseGeocodingRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReverseGeocodingRequest]
   }
   
-  @scala.inline
-  implicit class ReverseGeocodingRequestMutableBuilder[Self <: ReverseGeocodingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReverseGeocodingRequest](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLatlng(value: LatLng): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
+    inline def setLatlng(value: LatLng): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatlngUndefined: Self = StObject.set(x, "latlng", js.undefined)
+    inline def setLatlngUndefined: Self = StObject.set(x, "latlng", js.undefined)
     
-    @scala.inline
-    def setLocation_type(value: ReverseGeocodingLocationType): Self = StObject.set(x, "location_type", value.asInstanceOf[js.Any])
+    inline def setLocation_type(value: ReverseGeocodingLocationType): Self = StObject.set(x, "location_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation_typeUndefined: Self = StObject.set(x, "location_type", js.undefined)
+    inline def setLocation_typeUndefined: Self = StObject.set(x, "location_type", js.undefined)
     
-    @scala.inline
-    def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
+    inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlace_idUndefined: Self = StObject.set(x, "place_id", js.undefined)
+    inline def setPlace_idUndefined: Self = StObject.set(x, "place_id", js.undefined)
     
-    @scala.inline
-    def setResult_type(value: AddressType): Self = StObject.set(x, "result_type", value.asInstanceOf[js.Any])
+    inline def setResult_type(value: AddressType): Self = StObject.set(x, "result_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult_typeUndefined: Self = StObject.set(x, "result_type", js.undefined)
+    inline def setResult_typeUndefined: Self = StObject.set(x, "result_type", js.undefined)
   }
 }

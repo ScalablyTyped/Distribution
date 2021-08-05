@@ -15,20 +15,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setDefaultCountry(value: CountryCode): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
+      inline def setDefaultCountry(value: CountryCode): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
+      inline def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
     }
   }
   
@@ -40,26 +36,20 @@ object anon {
   }
   object DefaultCallingCode {
     
-    @scala.inline
-    def apply(): DefaultCallingCode = {
+    inline def apply(): DefaultCallingCode = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultCallingCode]
     }
     
-    @scala.inline
-    implicit class DefaultCallingCodeMutableBuilder[Self <: DefaultCallingCode] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultCallingCode](x: Self) {
       
-      @scala.inline
-      def setDefaultCallingCode(value: String): Self = StObject.set(x, "defaultCallingCode", value.asInstanceOf[js.Any])
+      inline def setDefaultCallingCode(value: String): Self = StObject.set(x, "defaultCallingCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCallingCodeUndefined: Self = StObject.set(x, "defaultCallingCode", js.undefined)
+      inline def setDefaultCallingCodeUndefined: Self = StObject.set(x, "defaultCallingCode", js.undefined)
       
-      @scala.inline
-      def setDefaultCountry(value: CountryCode): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
+      inline def setDefaultCountry(value: CountryCode): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
+      inline def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
     }
   }
   
@@ -71,23 +61,18 @@ object anon {
   }
   object DefaultCountry {
     
-    @scala.inline
-    def apply(): DefaultCountry = {
+    inline def apply(): DefaultCountry = {
       val __obj = js.Dynamic.literal(v2 = true)
       __obj.asInstanceOf[DefaultCountry]
     }
     
-    @scala.inline
-    implicit class DefaultCountryMutableBuilder[Self <: DefaultCountry] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultCountry](x: Self) {
       
-      @scala.inline
-      def setDefaultCountry(value: CountryCode): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
+      inline def setDefaultCountry(value: CountryCode): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
+      inline def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
       
-      @scala.inline
-      def setV2(value: `true`): Self = StObject.set(x, "v2", value.asInstanceOf[js.Any])
+      inline def setV2(value: `true`): Self = StObject.set(x, "v2", value.asInstanceOf[js.Any])
     }
   }
   
@@ -588,8 +573,7 @@ object anon {
   }
   object countryinCountryCodeNatio {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `001`: NationalNumber,
       AC: NationalNumber,
       AD: NationalNumber,
@@ -842,746 +826,499 @@ object anon {
       __obj.asInstanceOf[countryinCountryCodeNatio]
     }
     
-    @scala.inline
-    implicit class countryinCountryCodeNatioMutableBuilder[Self <: countryinCountryCodeNatio] (val x: Self) extends AnyVal {
+    extension [Self <: countryinCountryCodeNatio](x: Self) {
       
-      @scala.inline
-      def set001(value: NationalNumber): Self = StObject.set(x, "001", value.asInstanceOf[js.Any])
+      inline def set001(value: NationalNumber): Self = StObject.set(x, "001", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAC(value: NationalNumber): Self = StObject.set(x, "AC", value.asInstanceOf[js.Any])
+      inline def setAC(value: NationalNumber): Self = StObject.set(x, "AC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAD(value: NationalNumber): Self = StObject.set(x, "AD", value.asInstanceOf[js.Any])
+      inline def setAD(value: NationalNumber): Self = StObject.set(x, "AD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAE(value: NationalNumber): Self = StObject.set(x, "AE", value.asInstanceOf[js.Any])
+      inline def setAE(value: NationalNumber): Self = StObject.set(x, "AE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAF(value: NationalNumber): Self = StObject.set(x, "AF", value.asInstanceOf[js.Any])
+      inline def setAF(value: NationalNumber): Self = StObject.set(x, "AF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAG(value: NationalNumber): Self = StObject.set(x, "AG", value.asInstanceOf[js.Any])
+      inline def setAG(value: NationalNumber): Self = StObject.set(x, "AG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAI(value: NationalNumber): Self = StObject.set(x, "AI", value.asInstanceOf[js.Any])
+      inline def setAI(value: NationalNumber): Self = StObject.set(x, "AI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAL(value: NationalNumber): Self = StObject.set(x, "AL", value.asInstanceOf[js.Any])
+      inline def setAL(value: NationalNumber): Self = StObject.set(x, "AL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAM(value: NationalNumber): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
+      inline def setAM(value: NationalNumber): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAO(value: NationalNumber): Self = StObject.set(x, "AO", value.asInstanceOf[js.Any])
+      inline def setAO(value: NationalNumber): Self = StObject.set(x, "AO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAR(value: NationalNumber): Self = StObject.set(x, "AR", value.asInstanceOf[js.Any])
+      inline def setAR(value: NationalNumber): Self = StObject.set(x, "AR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAS(value: NationalNumber): Self = StObject.set(x, "AS", value.asInstanceOf[js.Any])
+      inline def setAS(value: NationalNumber): Self = StObject.set(x, "AS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAT(value: NationalNumber): Self = StObject.set(x, "AT", value.asInstanceOf[js.Any])
+      inline def setAT(value: NationalNumber): Self = StObject.set(x, "AT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAU(value: NationalNumber): Self = StObject.set(x, "AU", value.asInstanceOf[js.Any])
+      inline def setAU(value: NationalNumber): Self = StObject.set(x, "AU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAW(value: NationalNumber): Self = StObject.set(x, "AW", value.asInstanceOf[js.Any])
+      inline def setAW(value: NationalNumber): Self = StObject.set(x, "AW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAX(value: NationalNumber): Self = StObject.set(x, "AX", value.asInstanceOf[js.Any])
+      inline def setAX(value: NationalNumber): Self = StObject.set(x, "AX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAZ(value: NationalNumber): Self = StObject.set(x, "AZ", value.asInstanceOf[js.Any])
+      inline def setAZ(value: NationalNumber): Self = StObject.set(x, "AZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBA(value: NationalNumber): Self = StObject.set(x, "BA", value.asInstanceOf[js.Any])
+      inline def setBA(value: NationalNumber): Self = StObject.set(x, "BA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBB(value: NationalNumber): Self = StObject.set(x, "BB", value.asInstanceOf[js.Any])
+      inline def setBB(value: NationalNumber): Self = StObject.set(x, "BB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBD(value: NationalNumber): Self = StObject.set(x, "BD", value.asInstanceOf[js.Any])
+      inline def setBD(value: NationalNumber): Self = StObject.set(x, "BD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBE(value: NationalNumber): Self = StObject.set(x, "BE", value.asInstanceOf[js.Any])
+      inline def setBE(value: NationalNumber): Self = StObject.set(x, "BE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBF(value: NationalNumber): Self = StObject.set(x, "BF", value.asInstanceOf[js.Any])
+      inline def setBF(value: NationalNumber): Self = StObject.set(x, "BF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBG(value: NationalNumber): Self = StObject.set(x, "BG", value.asInstanceOf[js.Any])
+      inline def setBG(value: NationalNumber): Self = StObject.set(x, "BG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBH(value: NationalNumber): Self = StObject.set(x, "BH", value.asInstanceOf[js.Any])
+      inline def setBH(value: NationalNumber): Self = StObject.set(x, "BH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBI(value: NationalNumber): Self = StObject.set(x, "BI", value.asInstanceOf[js.Any])
+      inline def setBI(value: NationalNumber): Self = StObject.set(x, "BI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBJ(value: NationalNumber): Self = StObject.set(x, "BJ", value.asInstanceOf[js.Any])
+      inline def setBJ(value: NationalNumber): Self = StObject.set(x, "BJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBL(value: NationalNumber): Self = StObject.set(x, "BL", value.asInstanceOf[js.Any])
+      inline def setBL(value: NationalNumber): Self = StObject.set(x, "BL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBM(value: NationalNumber): Self = StObject.set(x, "BM", value.asInstanceOf[js.Any])
+      inline def setBM(value: NationalNumber): Self = StObject.set(x, "BM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBN(value: NationalNumber): Self = StObject.set(x, "BN", value.asInstanceOf[js.Any])
+      inline def setBN(value: NationalNumber): Self = StObject.set(x, "BN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBO(value: NationalNumber): Self = StObject.set(x, "BO", value.asInstanceOf[js.Any])
+      inline def setBO(value: NationalNumber): Self = StObject.set(x, "BO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBQ(value: NationalNumber): Self = StObject.set(x, "BQ", value.asInstanceOf[js.Any])
+      inline def setBQ(value: NationalNumber): Self = StObject.set(x, "BQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBR(value: NationalNumber): Self = StObject.set(x, "BR", value.asInstanceOf[js.Any])
+      inline def setBR(value: NationalNumber): Self = StObject.set(x, "BR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBS(value: NationalNumber): Self = StObject.set(x, "BS", value.asInstanceOf[js.Any])
+      inline def setBS(value: NationalNumber): Self = StObject.set(x, "BS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBT(value: NationalNumber): Self = StObject.set(x, "BT", value.asInstanceOf[js.Any])
+      inline def setBT(value: NationalNumber): Self = StObject.set(x, "BT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBW(value: NationalNumber): Self = StObject.set(x, "BW", value.asInstanceOf[js.Any])
+      inline def setBW(value: NationalNumber): Self = StObject.set(x, "BW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBY(value: NationalNumber): Self = StObject.set(x, "BY", value.asInstanceOf[js.Any])
+      inline def setBY(value: NationalNumber): Self = StObject.set(x, "BY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBZ(value: NationalNumber): Self = StObject.set(x, "BZ", value.asInstanceOf[js.Any])
+      inline def setBZ(value: NationalNumber): Self = StObject.set(x, "BZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCA(value: NationalNumber): Self = StObject.set(x, "CA", value.asInstanceOf[js.Any])
+      inline def setCA(value: NationalNumber): Self = StObject.set(x, "CA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCC(value: NationalNumber): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
+      inline def setCC(value: NationalNumber): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCD(value: NationalNumber): Self = StObject.set(x, "CD", value.asInstanceOf[js.Any])
+      inline def setCD(value: NationalNumber): Self = StObject.set(x, "CD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCF(value: NationalNumber): Self = StObject.set(x, "CF", value.asInstanceOf[js.Any])
+      inline def setCF(value: NationalNumber): Self = StObject.set(x, "CF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCG(value: NationalNumber): Self = StObject.set(x, "CG", value.asInstanceOf[js.Any])
+      inline def setCG(value: NationalNumber): Self = StObject.set(x, "CG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCH(value: NationalNumber): Self = StObject.set(x, "CH", value.asInstanceOf[js.Any])
+      inline def setCH(value: NationalNumber): Self = StObject.set(x, "CH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCI(value: NationalNumber): Self = StObject.set(x, "CI", value.asInstanceOf[js.Any])
+      inline def setCI(value: NationalNumber): Self = StObject.set(x, "CI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCK(value: NationalNumber): Self = StObject.set(x, "CK", value.asInstanceOf[js.Any])
+      inline def setCK(value: NationalNumber): Self = StObject.set(x, "CK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCL(value: NationalNumber): Self = StObject.set(x, "CL", value.asInstanceOf[js.Any])
+      inline def setCL(value: NationalNumber): Self = StObject.set(x, "CL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCM(value: NationalNumber): Self = StObject.set(x, "CM", value.asInstanceOf[js.Any])
+      inline def setCM(value: NationalNumber): Self = StObject.set(x, "CM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCN(value: NationalNumber): Self = StObject.set(x, "CN", value.asInstanceOf[js.Any])
+      inline def setCN(value: NationalNumber): Self = StObject.set(x, "CN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCO(value: NationalNumber): Self = StObject.set(x, "CO", value.asInstanceOf[js.Any])
+      inline def setCO(value: NationalNumber): Self = StObject.set(x, "CO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCR(value: NationalNumber): Self = StObject.set(x, "CR", value.asInstanceOf[js.Any])
+      inline def setCR(value: NationalNumber): Self = StObject.set(x, "CR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCU(value: NationalNumber): Self = StObject.set(x, "CU", value.asInstanceOf[js.Any])
+      inline def setCU(value: NationalNumber): Self = StObject.set(x, "CU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCV(value: NationalNumber): Self = StObject.set(x, "CV", value.asInstanceOf[js.Any])
+      inline def setCV(value: NationalNumber): Self = StObject.set(x, "CV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCW(value: NationalNumber): Self = StObject.set(x, "CW", value.asInstanceOf[js.Any])
+      inline def setCW(value: NationalNumber): Self = StObject.set(x, "CW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCX(value: NationalNumber): Self = StObject.set(x, "CX", value.asInstanceOf[js.Any])
+      inline def setCX(value: NationalNumber): Self = StObject.set(x, "CX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCY(value: NationalNumber): Self = StObject.set(x, "CY", value.asInstanceOf[js.Any])
+      inline def setCY(value: NationalNumber): Self = StObject.set(x, "CY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCZ(value: NationalNumber): Self = StObject.set(x, "CZ", value.asInstanceOf[js.Any])
+      inline def setCZ(value: NationalNumber): Self = StObject.set(x, "CZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDE(value: NationalNumber): Self = StObject.set(x, "DE", value.asInstanceOf[js.Any])
+      inline def setDE(value: NationalNumber): Self = StObject.set(x, "DE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDJ(value: NationalNumber): Self = StObject.set(x, "DJ", value.asInstanceOf[js.Any])
+      inline def setDJ(value: NationalNumber): Self = StObject.set(x, "DJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDK(value: NationalNumber): Self = StObject.set(x, "DK", value.asInstanceOf[js.Any])
+      inline def setDK(value: NationalNumber): Self = StObject.set(x, "DK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDM(value: NationalNumber): Self = StObject.set(x, "DM", value.asInstanceOf[js.Any])
+      inline def setDM(value: NationalNumber): Self = StObject.set(x, "DM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDO(value: NationalNumber): Self = StObject.set(x, "DO", value.asInstanceOf[js.Any])
+      inline def setDO(value: NationalNumber): Self = StObject.set(x, "DO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDZ(value: NationalNumber): Self = StObject.set(x, "DZ", value.asInstanceOf[js.Any])
+      inline def setDZ(value: NationalNumber): Self = StObject.set(x, "DZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEC(value: NationalNumber): Self = StObject.set(x, "EC", value.asInstanceOf[js.Any])
+      inline def setEC(value: NationalNumber): Self = StObject.set(x, "EC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEE(value: NationalNumber): Self = StObject.set(x, "EE", value.asInstanceOf[js.Any])
+      inline def setEE(value: NationalNumber): Self = StObject.set(x, "EE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEG(value: NationalNumber): Self = StObject.set(x, "EG", value.asInstanceOf[js.Any])
+      inline def setEG(value: NationalNumber): Self = StObject.set(x, "EG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEH(value: NationalNumber): Self = StObject.set(x, "EH", value.asInstanceOf[js.Any])
+      inline def setEH(value: NationalNumber): Self = StObject.set(x, "EH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setER(value: NationalNumber): Self = StObject.set(x, "ER", value.asInstanceOf[js.Any])
+      inline def setER(value: NationalNumber): Self = StObject.set(x, "ER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setES(value: NationalNumber): Self = StObject.set(x, "ES", value.asInstanceOf[js.Any])
+      inline def setES(value: NationalNumber): Self = StObject.set(x, "ES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setET(value: NationalNumber): Self = StObject.set(x, "ET", value.asInstanceOf[js.Any])
+      inline def setET(value: NationalNumber): Self = StObject.set(x, "ET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFI(value: NationalNumber): Self = StObject.set(x, "FI", value.asInstanceOf[js.Any])
+      inline def setFI(value: NationalNumber): Self = StObject.set(x, "FI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFJ(value: NationalNumber): Self = StObject.set(x, "FJ", value.asInstanceOf[js.Any])
+      inline def setFJ(value: NationalNumber): Self = StObject.set(x, "FJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFK(value: NationalNumber): Self = StObject.set(x, "FK", value.asInstanceOf[js.Any])
+      inline def setFK(value: NationalNumber): Self = StObject.set(x, "FK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFM(value: NationalNumber): Self = StObject.set(x, "FM", value.asInstanceOf[js.Any])
+      inline def setFM(value: NationalNumber): Self = StObject.set(x, "FM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFO(value: NationalNumber): Self = StObject.set(x, "FO", value.asInstanceOf[js.Any])
+      inline def setFO(value: NationalNumber): Self = StObject.set(x, "FO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFR(value: NationalNumber): Self = StObject.set(x, "FR", value.asInstanceOf[js.Any])
+      inline def setFR(value: NationalNumber): Self = StObject.set(x, "FR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGA(value: NationalNumber): Self = StObject.set(x, "GA", value.asInstanceOf[js.Any])
+      inline def setGA(value: NationalNumber): Self = StObject.set(x, "GA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGB(value: NationalNumber): Self = StObject.set(x, "GB", value.asInstanceOf[js.Any])
+      inline def setGB(value: NationalNumber): Self = StObject.set(x, "GB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGD(value: NationalNumber): Self = StObject.set(x, "GD", value.asInstanceOf[js.Any])
+      inline def setGD(value: NationalNumber): Self = StObject.set(x, "GD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGE(value: NationalNumber): Self = StObject.set(x, "GE", value.asInstanceOf[js.Any])
+      inline def setGE(value: NationalNumber): Self = StObject.set(x, "GE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGF(value: NationalNumber): Self = StObject.set(x, "GF", value.asInstanceOf[js.Any])
+      inline def setGF(value: NationalNumber): Self = StObject.set(x, "GF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGG(value: NationalNumber): Self = StObject.set(x, "GG", value.asInstanceOf[js.Any])
+      inline def setGG(value: NationalNumber): Self = StObject.set(x, "GG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGH(value: NationalNumber): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
+      inline def setGH(value: NationalNumber): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGI(value: NationalNumber): Self = StObject.set(x, "GI", value.asInstanceOf[js.Any])
+      inline def setGI(value: NationalNumber): Self = StObject.set(x, "GI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGL(value: NationalNumber): Self = StObject.set(x, "GL", value.asInstanceOf[js.Any])
+      inline def setGL(value: NationalNumber): Self = StObject.set(x, "GL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGM(value: NationalNumber): Self = StObject.set(x, "GM", value.asInstanceOf[js.Any])
+      inline def setGM(value: NationalNumber): Self = StObject.set(x, "GM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGN(value: NationalNumber): Self = StObject.set(x, "GN", value.asInstanceOf[js.Any])
+      inline def setGN(value: NationalNumber): Self = StObject.set(x, "GN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGP(value: NationalNumber): Self = StObject.set(x, "GP", value.asInstanceOf[js.Any])
+      inline def setGP(value: NationalNumber): Self = StObject.set(x, "GP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGQ(value: NationalNumber): Self = StObject.set(x, "GQ", value.asInstanceOf[js.Any])
+      inline def setGQ(value: NationalNumber): Self = StObject.set(x, "GQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGR(value: NationalNumber): Self = StObject.set(x, "GR", value.asInstanceOf[js.Any])
+      inline def setGR(value: NationalNumber): Self = StObject.set(x, "GR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGT(value: NationalNumber): Self = StObject.set(x, "GT", value.asInstanceOf[js.Any])
+      inline def setGT(value: NationalNumber): Self = StObject.set(x, "GT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGU(value: NationalNumber): Self = StObject.set(x, "GU", value.asInstanceOf[js.Any])
+      inline def setGU(value: NationalNumber): Self = StObject.set(x, "GU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGW(value: NationalNumber): Self = StObject.set(x, "GW", value.asInstanceOf[js.Any])
+      inline def setGW(value: NationalNumber): Self = StObject.set(x, "GW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGY(value: NationalNumber): Self = StObject.set(x, "GY", value.asInstanceOf[js.Any])
+      inline def setGY(value: NationalNumber): Self = StObject.set(x, "GY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHK(value: NationalNumber): Self = StObject.set(x, "HK", value.asInstanceOf[js.Any])
+      inline def setHK(value: NationalNumber): Self = StObject.set(x, "HK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHN(value: NationalNumber): Self = StObject.set(x, "HN", value.asInstanceOf[js.Any])
+      inline def setHN(value: NationalNumber): Self = StObject.set(x, "HN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHR(value: NationalNumber): Self = StObject.set(x, "HR", value.asInstanceOf[js.Any])
+      inline def setHR(value: NationalNumber): Self = StObject.set(x, "HR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHT(value: NationalNumber): Self = StObject.set(x, "HT", value.asInstanceOf[js.Any])
+      inline def setHT(value: NationalNumber): Self = StObject.set(x, "HT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHU(value: NationalNumber): Self = StObject.set(x, "HU", value.asInstanceOf[js.Any])
+      inline def setHU(value: NationalNumber): Self = StObject.set(x, "HU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setID(value: NationalNumber): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: NationalNumber): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIE(value: NationalNumber): Self = StObject.set(x, "IE", value.asInstanceOf[js.Any])
+      inline def setIE(value: NationalNumber): Self = StObject.set(x, "IE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIL(value: NationalNumber): Self = StObject.set(x, "IL", value.asInstanceOf[js.Any])
+      inline def setIL(value: NationalNumber): Self = StObject.set(x, "IL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIM(value: NationalNumber): Self = StObject.set(x, "IM", value.asInstanceOf[js.Any])
+      inline def setIM(value: NationalNumber): Self = StObject.set(x, "IM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIN(value: NationalNumber): Self = StObject.set(x, "IN", value.asInstanceOf[js.Any])
+      inline def setIN(value: NationalNumber): Self = StObject.set(x, "IN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIO(value: NationalNumber): Self = StObject.set(x, "IO", value.asInstanceOf[js.Any])
+      inline def setIO(value: NationalNumber): Self = StObject.set(x, "IO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIQ(value: NationalNumber): Self = StObject.set(x, "IQ", value.asInstanceOf[js.Any])
+      inline def setIQ(value: NationalNumber): Self = StObject.set(x, "IQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIR(value: NationalNumber): Self = StObject.set(x, "IR", value.asInstanceOf[js.Any])
+      inline def setIR(value: NationalNumber): Self = StObject.set(x, "IR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIS(value: NationalNumber): Self = StObject.set(x, "IS", value.asInstanceOf[js.Any])
+      inline def setIS(value: NationalNumber): Self = StObject.set(x, "IS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIT(value: NationalNumber): Self = StObject.set(x, "IT", value.asInstanceOf[js.Any])
+      inline def setIT(value: NationalNumber): Self = StObject.set(x, "IT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJE(value: NationalNumber): Self = StObject.set(x, "JE", value.asInstanceOf[js.Any])
+      inline def setJE(value: NationalNumber): Self = StObject.set(x, "JE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJM(value: NationalNumber): Self = StObject.set(x, "JM", value.asInstanceOf[js.Any])
+      inline def setJM(value: NationalNumber): Self = StObject.set(x, "JM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJO(value: NationalNumber): Self = StObject.set(x, "JO", value.asInstanceOf[js.Any])
+      inline def setJO(value: NationalNumber): Self = StObject.set(x, "JO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJP(value: NationalNumber): Self = StObject.set(x, "JP", value.asInstanceOf[js.Any])
+      inline def setJP(value: NationalNumber): Self = StObject.set(x, "JP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKE(value: NationalNumber): Self = StObject.set(x, "KE", value.asInstanceOf[js.Any])
+      inline def setKE(value: NationalNumber): Self = StObject.set(x, "KE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKG(value: NationalNumber): Self = StObject.set(x, "KG", value.asInstanceOf[js.Any])
+      inline def setKG(value: NationalNumber): Self = StObject.set(x, "KG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKH(value: NationalNumber): Self = StObject.set(x, "KH", value.asInstanceOf[js.Any])
+      inline def setKH(value: NationalNumber): Self = StObject.set(x, "KH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKI(value: NationalNumber): Self = StObject.set(x, "KI", value.asInstanceOf[js.Any])
+      inline def setKI(value: NationalNumber): Self = StObject.set(x, "KI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKM(value: NationalNumber): Self = StObject.set(x, "KM", value.asInstanceOf[js.Any])
+      inline def setKM(value: NationalNumber): Self = StObject.set(x, "KM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKN(value: NationalNumber): Self = StObject.set(x, "KN", value.asInstanceOf[js.Any])
+      inline def setKN(value: NationalNumber): Self = StObject.set(x, "KN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKP(value: NationalNumber): Self = StObject.set(x, "KP", value.asInstanceOf[js.Any])
+      inline def setKP(value: NationalNumber): Self = StObject.set(x, "KP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKR(value: NationalNumber): Self = StObject.set(x, "KR", value.asInstanceOf[js.Any])
+      inline def setKR(value: NationalNumber): Self = StObject.set(x, "KR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKW(value: NationalNumber): Self = StObject.set(x, "KW", value.asInstanceOf[js.Any])
+      inline def setKW(value: NationalNumber): Self = StObject.set(x, "KW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKY(value: NationalNumber): Self = StObject.set(x, "KY", value.asInstanceOf[js.Any])
+      inline def setKY(value: NationalNumber): Self = StObject.set(x, "KY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKZ(value: NationalNumber): Self = StObject.set(x, "KZ", value.asInstanceOf[js.Any])
+      inline def setKZ(value: NationalNumber): Self = StObject.set(x, "KZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLA(value: NationalNumber): Self = StObject.set(x, "LA", value.asInstanceOf[js.Any])
+      inline def setLA(value: NationalNumber): Self = StObject.set(x, "LA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLB(value: NationalNumber): Self = StObject.set(x, "LB", value.asInstanceOf[js.Any])
+      inline def setLB(value: NationalNumber): Self = StObject.set(x, "LB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLC(value: NationalNumber): Self = StObject.set(x, "LC", value.asInstanceOf[js.Any])
+      inline def setLC(value: NationalNumber): Self = StObject.set(x, "LC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLI(value: NationalNumber): Self = StObject.set(x, "LI", value.asInstanceOf[js.Any])
+      inline def setLI(value: NationalNumber): Self = StObject.set(x, "LI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLK(value: NationalNumber): Self = StObject.set(x, "LK", value.asInstanceOf[js.Any])
+      inline def setLK(value: NationalNumber): Self = StObject.set(x, "LK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLR(value: NationalNumber): Self = StObject.set(x, "LR", value.asInstanceOf[js.Any])
+      inline def setLR(value: NationalNumber): Self = StObject.set(x, "LR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLS(value: NationalNumber): Self = StObject.set(x, "LS", value.asInstanceOf[js.Any])
+      inline def setLS(value: NationalNumber): Self = StObject.set(x, "LS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLT(value: NationalNumber): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
+      inline def setLT(value: NationalNumber): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLU(value: NationalNumber): Self = StObject.set(x, "LU", value.asInstanceOf[js.Any])
+      inline def setLU(value: NationalNumber): Self = StObject.set(x, "LU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLV(value: NationalNumber): Self = StObject.set(x, "LV", value.asInstanceOf[js.Any])
+      inline def setLV(value: NationalNumber): Self = StObject.set(x, "LV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLY(value: NationalNumber): Self = StObject.set(x, "LY", value.asInstanceOf[js.Any])
+      inline def setLY(value: NationalNumber): Self = StObject.set(x, "LY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMA(value: NationalNumber): Self = StObject.set(x, "MA", value.asInstanceOf[js.Any])
+      inline def setMA(value: NationalNumber): Self = StObject.set(x, "MA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMC(value: NationalNumber): Self = StObject.set(x, "MC", value.asInstanceOf[js.Any])
+      inline def setMC(value: NationalNumber): Self = StObject.set(x, "MC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMD(value: NationalNumber): Self = StObject.set(x, "MD", value.asInstanceOf[js.Any])
+      inline def setMD(value: NationalNumber): Self = StObject.set(x, "MD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setME(value: NationalNumber): Self = StObject.set(x, "ME", value.asInstanceOf[js.Any])
+      inline def setME(value: NationalNumber): Self = StObject.set(x, "ME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMF(value: NationalNumber): Self = StObject.set(x, "MF", value.asInstanceOf[js.Any])
+      inline def setMF(value: NationalNumber): Self = StObject.set(x, "MF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMG(value: NationalNumber): Self = StObject.set(x, "MG", value.asInstanceOf[js.Any])
+      inline def setMG(value: NationalNumber): Self = StObject.set(x, "MG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMH(value: NationalNumber): Self = StObject.set(x, "MH", value.asInstanceOf[js.Any])
+      inline def setMH(value: NationalNumber): Self = StObject.set(x, "MH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMK(value: NationalNumber): Self = StObject.set(x, "MK", value.asInstanceOf[js.Any])
+      inline def setMK(value: NationalNumber): Self = StObject.set(x, "MK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setML(value: NationalNumber): Self = StObject.set(x, "ML", value.asInstanceOf[js.Any])
+      inline def setML(value: NationalNumber): Self = StObject.set(x, "ML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMM(value: NationalNumber): Self = StObject.set(x, "MM", value.asInstanceOf[js.Any])
+      inline def setMM(value: NationalNumber): Self = StObject.set(x, "MM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMN(value: NationalNumber): Self = StObject.set(x, "MN", value.asInstanceOf[js.Any])
+      inline def setMN(value: NationalNumber): Self = StObject.set(x, "MN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMO(value: NationalNumber): Self = StObject.set(x, "MO", value.asInstanceOf[js.Any])
+      inline def setMO(value: NationalNumber): Self = StObject.set(x, "MO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMP(value: NationalNumber): Self = StObject.set(x, "MP", value.asInstanceOf[js.Any])
+      inline def setMP(value: NationalNumber): Self = StObject.set(x, "MP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMQ(value: NationalNumber): Self = StObject.set(x, "MQ", value.asInstanceOf[js.Any])
+      inline def setMQ(value: NationalNumber): Self = StObject.set(x, "MQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMR(value: NationalNumber): Self = StObject.set(x, "MR", value.asInstanceOf[js.Any])
+      inline def setMR(value: NationalNumber): Self = StObject.set(x, "MR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMS(value: NationalNumber): Self = StObject.set(x, "MS", value.asInstanceOf[js.Any])
+      inline def setMS(value: NationalNumber): Self = StObject.set(x, "MS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMT(value: NationalNumber): Self = StObject.set(x, "MT", value.asInstanceOf[js.Any])
+      inline def setMT(value: NationalNumber): Self = StObject.set(x, "MT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMU(value: NationalNumber): Self = StObject.set(x, "MU", value.asInstanceOf[js.Any])
+      inline def setMU(value: NationalNumber): Self = StObject.set(x, "MU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMV(value: NationalNumber): Self = StObject.set(x, "MV", value.asInstanceOf[js.Any])
+      inline def setMV(value: NationalNumber): Self = StObject.set(x, "MV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMW(value: NationalNumber): Self = StObject.set(x, "MW", value.asInstanceOf[js.Any])
+      inline def setMW(value: NationalNumber): Self = StObject.set(x, "MW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMX(value: NationalNumber): Self = StObject.set(x, "MX", value.asInstanceOf[js.Any])
+      inline def setMX(value: NationalNumber): Self = StObject.set(x, "MX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMY(value: NationalNumber): Self = StObject.set(x, "MY", value.asInstanceOf[js.Any])
+      inline def setMY(value: NationalNumber): Self = StObject.set(x, "MY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMZ(value: NationalNumber): Self = StObject.set(x, "MZ", value.asInstanceOf[js.Any])
+      inline def setMZ(value: NationalNumber): Self = StObject.set(x, "MZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNA(value: NationalNumber): Self = StObject.set(x, "NA", value.asInstanceOf[js.Any])
+      inline def setNA(value: NationalNumber): Self = StObject.set(x, "NA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNC(value: NationalNumber): Self = StObject.set(x, "NC", value.asInstanceOf[js.Any])
+      inline def setNC(value: NationalNumber): Self = StObject.set(x, "NC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNE(value: NationalNumber): Self = StObject.set(x, "NE", value.asInstanceOf[js.Any])
+      inline def setNE(value: NationalNumber): Self = StObject.set(x, "NE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNF(value: NationalNumber): Self = StObject.set(x, "NF", value.asInstanceOf[js.Any])
+      inline def setNF(value: NationalNumber): Self = StObject.set(x, "NF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNG(value: NationalNumber): Self = StObject.set(x, "NG", value.asInstanceOf[js.Any])
+      inline def setNG(value: NationalNumber): Self = StObject.set(x, "NG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNI(value: NationalNumber): Self = StObject.set(x, "NI", value.asInstanceOf[js.Any])
+      inline def setNI(value: NationalNumber): Self = StObject.set(x, "NI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNL(value: NationalNumber): Self = StObject.set(x, "NL", value.asInstanceOf[js.Any])
+      inline def setNL(value: NationalNumber): Self = StObject.set(x, "NL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNO(value: NationalNumber): Self = StObject.set(x, "NO", value.asInstanceOf[js.Any])
+      inline def setNO(value: NationalNumber): Self = StObject.set(x, "NO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNP(value: NationalNumber): Self = StObject.set(x, "NP", value.asInstanceOf[js.Any])
+      inline def setNP(value: NationalNumber): Self = StObject.set(x, "NP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNR(value: NationalNumber): Self = StObject.set(x, "NR", value.asInstanceOf[js.Any])
+      inline def setNR(value: NationalNumber): Self = StObject.set(x, "NR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNU(value: NationalNumber): Self = StObject.set(x, "NU", value.asInstanceOf[js.Any])
+      inline def setNU(value: NationalNumber): Self = StObject.set(x, "NU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNZ(value: NationalNumber): Self = StObject.set(x, "NZ", value.asInstanceOf[js.Any])
+      inline def setNZ(value: NationalNumber): Self = StObject.set(x, "NZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOM(value: NationalNumber): Self = StObject.set(x, "OM", value.asInstanceOf[js.Any])
+      inline def setOM(value: NationalNumber): Self = StObject.set(x, "OM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPA(value: NationalNumber): Self = StObject.set(x, "PA", value.asInstanceOf[js.Any])
+      inline def setPA(value: NationalNumber): Self = StObject.set(x, "PA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPE(value: NationalNumber): Self = StObject.set(x, "PE", value.asInstanceOf[js.Any])
+      inline def setPE(value: NationalNumber): Self = StObject.set(x, "PE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPF(value: NationalNumber): Self = StObject.set(x, "PF", value.asInstanceOf[js.Any])
+      inline def setPF(value: NationalNumber): Self = StObject.set(x, "PF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPG(value: NationalNumber): Self = StObject.set(x, "PG", value.asInstanceOf[js.Any])
+      inline def setPG(value: NationalNumber): Self = StObject.set(x, "PG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPH(value: NationalNumber): Self = StObject.set(x, "PH", value.asInstanceOf[js.Any])
+      inline def setPH(value: NationalNumber): Self = StObject.set(x, "PH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPK(value: NationalNumber): Self = StObject.set(x, "PK", value.asInstanceOf[js.Any])
+      inline def setPK(value: NationalNumber): Self = StObject.set(x, "PK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPL(value: NationalNumber): Self = StObject.set(x, "PL", value.asInstanceOf[js.Any])
+      inline def setPL(value: NationalNumber): Self = StObject.set(x, "PL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPM(value: NationalNumber): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
+      inline def setPM(value: NationalNumber): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPR(value: NationalNumber): Self = StObject.set(x, "PR", value.asInstanceOf[js.Any])
+      inline def setPR(value: NationalNumber): Self = StObject.set(x, "PR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPS(value: NationalNumber): Self = StObject.set(x, "PS", value.asInstanceOf[js.Any])
+      inline def setPS(value: NationalNumber): Self = StObject.set(x, "PS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPT(value: NationalNumber): Self = StObject.set(x, "PT", value.asInstanceOf[js.Any])
+      inline def setPT(value: NationalNumber): Self = StObject.set(x, "PT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPW(value: NationalNumber): Self = StObject.set(x, "PW", value.asInstanceOf[js.Any])
+      inline def setPW(value: NationalNumber): Self = StObject.set(x, "PW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPY(value: NationalNumber): Self = StObject.set(x, "PY", value.asInstanceOf[js.Any])
+      inline def setPY(value: NationalNumber): Self = StObject.set(x, "PY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQA(value: NationalNumber): Self = StObject.set(x, "QA", value.asInstanceOf[js.Any])
+      inline def setQA(value: NationalNumber): Self = StObject.set(x, "QA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRE(value: NationalNumber): Self = StObject.set(x, "RE", value.asInstanceOf[js.Any])
+      inline def setRE(value: NationalNumber): Self = StObject.set(x, "RE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRO(value: NationalNumber): Self = StObject.set(x, "RO", value.asInstanceOf[js.Any])
+      inline def setRO(value: NationalNumber): Self = StObject.set(x, "RO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRS(value: NationalNumber): Self = StObject.set(x, "RS", value.asInstanceOf[js.Any])
+      inline def setRS(value: NationalNumber): Self = StObject.set(x, "RS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRU(value: NationalNumber): Self = StObject.set(x, "RU", value.asInstanceOf[js.Any])
+      inline def setRU(value: NationalNumber): Self = StObject.set(x, "RU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRW(value: NationalNumber): Self = StObject.set(x, "RW", value.asInstanceOf[js.Any])
+      inline def setRW(value: NationalNumber): Self = StObject.set(x, "RW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSA(value: NationalNumber): Self = StObject.set(x, "SA", value.asInstanceOf[js.Any])
+      inline def setSA(value: NationalNumber): Self = StObject.set(x, "SA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSB(value: NationalNumber): Self = StObject.set(x, "SB", value.asInstanceOf[js.Any])
+      inline def setSB(value: NationalNumber): Self = StObject.set(x, "SB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSC(value: NationalNumber): Self = StObject.set(x, "SC", value.asInstanceOf[js.Any])
+      inline def setSC(value: NationalNumber): Self = StObject.set(x, "SC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSD(value: NationalNumber): Self = StObject.set(x, "SD", value.asInstanceOf[js.Any])
+      inline def setSD(value: NationalNumber): Self = StObject.set(x, "SD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSE(value: NationalNumber): Self = StObject.set(x, "SE", value.asInstanceOf[js.Any])
+      inline def setSE(value: NationalNumber): Self = StObject.set(x, "SE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSG(value: NationalNumber): Self = StObject.set(x, "SG", value.asInstanceOf[js.Any])
+      inline def setSG(value: NationalNumber): Self = StObject.set(x, "SG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSH(value: NationalNumber): Self = StObject.set(x, "SH", value.asInstanceOf[js.Any])
+      inline def setSH(value: NationalNumber): Self = StObject.set(x, "SH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSI(value: NationalNumber): Self = StObject.set(x, "SI", value.asInstanceOf[js.Any])
+      inline def setSI(value: NationalNumber): Self = StObject.set(x, "SI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSJ(value: NationalNumber): Self = StObject.set(x, "SJ", value.asInstanceOf[js.Any])
+      inline def setSJ(value: NationalNumber): Self = StObject.set(x, "SJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSK(value: NationalNumber): Self = StObject.set(x, "SK", value.asInstanceOf[js.Any])
+      inline def setSK(value: NationalNumber): Self = StObject.set(x, "SK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSL(value: NationalNumber): Self = StObject.set(x, "SL", value.asInstanceOf[js.Any])
+      inline def setSL(value: NationalNumber): Self = StObject.set(x, "SL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSM(value: NationalNumber): Self = StObject.set(x, "SM", value.asInstanceOf[js.Any])
+      inline def setSM(value: NationalNumber): Self = StObject.set(x, "SM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSN(value: NationalNumber): Self = StObject.set(x, "SN", value.asInstanceOf[js.Any])
+      inline def setSN(value: NationalNumber): Self = StObject.set(x, "SN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSO(value: NationalNumber): Self = StObject.set(x, "SO", value.asInstanceOf[js.Any])
+      inline def setSO(value: NationalNumber): Self = StObject.set(x, "SO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSR(value: NationalNumber): Self = StObject.set(x, "SR", value.asInstanceOf[js.Any])
+      inline def setSR(value: NationalNumber): Self = StObject.set(x, "SR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSS(value: NationalNumber): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
+      inline def setSS(value: NationalNumber): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setST(value: NationalNumber): Self = StObject.set(x, "ST", value.asInstanceOf[js.Any])
+      inline def setST(value: NationalNumber): Self = StObject.set(x, "ST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSV(value: NationalNumber): Self = StObject.set(x, "SV", value.asInstanceOf[js.Any])
+      inline def setSV(value: NationalNumber): Self = StObject.set(x, "SV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSX(value: NationalNumber): Self = StObject.set(x, "SX", value.asInstanceOf[js.Any])
+      inline def setSX(value: NationalNumber): Self = StObject.set(x, "SX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSY(value: NationalNumber): Self = StObject.set(x, "SY", value.asInstanceOf[js.Any])
+      inline def setSY(value: NationalNumber): Self = StObject.set(x, "SY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSZ(value: NationalNumber): Self = StObject.set(x, "SZ", value.asInstanceOf[js.Any])
+      inline def setSZ(value: NationalNumber): Self = StObject.set(x, "SZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTA(value: NationalNumber): Self = StObject.set(x, "TA", value.asInstanceOf[js.Any])
+      inline def setTA(value: NationalNumber): Self = StObject.set(x, "TA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTC(value: NationalNumber): Self = StObject.set(x, "TC", value.asInstanceOf[js.Any])
+      inline def setTC(value: NationalNumber): Self = StObject.set(x, "TC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTD(value: NationalNumber): Self = StObject.set(x, "TD", value.asInstanceOf[js.Any])
+      inline def setTD(value: NationalNumber): Self = StObject.set(x, "TD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTG(value: NationalNumber): Self = StObject.set(x, "TG", value.asInstanceOf[js.Any])
+      inline def setTG(value: NationalNumber): Self = StObject.set(x, "TG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTH(value: NationalNumber): Self = StObject.set(x, "TH", value.asInstanceOf[js.Any])
+      inline def setTH(value: NationalNumber): Self = StObject.set(x, "TH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTJ(value: NationalNumber): Self = StObject.set(x, "TJ", value.asInstanceOf[js.Any])
+      inline def setTJ(value: NationalNumber): Self = StObject.set(x, "TJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTK(value: NationalNumber): Self = StObject.set(x, "TK", value.asInstanceOf[js.Any])
+      inline def setTK(value: NationalNumber): Self = StObject.set(x, "TK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTL(value: NationalNumber): Self = StObject.set(x, "TL", value.asInstanceOf[js.Any])
+      inline def setTL(value: NationalNumber): Self = StObject.set(x, "TL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTM(value: NationalNumber): Self = StObject.set(x, "TM", value.asInstanceOf[js.Any])
+      inline def setTM(value: NationalNumber): Self = StObject.set(x, "TM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTN(value: NationalNumber): Self = StObject.set(x, "TN", value.asInstanceOf[js.Any])
+      inline def setTN(value: NationalNumber): Self = StObject.set(x, "TN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTO(value: NationalNumber): Self = StObject.set(x, "TO", value.asInstanceOf[js.Any])
+      inline def setTO(value: NationalNumber): Self = StObject.set(x, "TO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTR(value: NationalNumber): Self = StObject.set(x, "TR", value.asInstanceOf[js.Any])
+      inline def setTR(value: NationalNumber): Self = StObject.set(x, "TR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTT(value: NationalNumber): Self = StObject.set(x, "TT", value.asInstanceOf[js.Any])
+      inline def setTT(value: NationalNumber): Self = StObject.set(x, "TT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTV(value: NationalNumber): Self = StObject.set(x, "TV", value.asInstanceOf[js.Any])
+      inline def setTV(value: NationalNumber): Self = StObject.set(x, "TV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTW(value: NationalNumber): Self = StObject.set(x, "TW", value.asInstanceOf[js.Any])
+      inline def setTW(value: NationalNumber): Self = StObject.set(x, "TW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTZ(value: NationalNumber): Self = StObject.set(x, "TZ", value.asInstanceOf[js.Any])
+      inline def setTZ(value: NationalNumber): Self = StObject.set(x, "TZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUA(value: NationalNumber): Self = StObject.set(x, "UA", value.asInstanceOf[js.Any])
+      inline def setUA(value: NationalNumber): Self = StObject.set(x, "UA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUG(value: NationalNumber): Self = StObject.set(x, "UG", value.asInstanceOf[js.Any])
+      inline def setUG(value: NationalNumber): Self = StObject.set(x, "UG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUS(value: NationalNumber): Self = StObject.set(x, "US", value.asInstanceOf[js.Any])
+      inline def setUS(value: NationalNumber): Self = StObject.set(x, "US", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUY(value: NationalNumber): Self = StObject.set(x, "UY", value.asInstanceOf[js.Any])
+      inline def setUY(value: NationalNumber): Self = StObject.set(x, "UY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUZ(value: NationalNumber): Self = StObject.set(x, "UZ", value.asInstanceOf[js.Any])
+      inline def setUZ(value: NationalNumber): Self = StObject.set(x, "UZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVA(value: NationalNumber): Self = StObject.set(x, "VA", value.asInstanceOf[js.Any])
+      inline def setVA(value: NationalNumber): Self = StObject.set(x, "VA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVC(value: NationalNumber): Self = StObject.set(x, "VC", value.asInstanceOf[js.Any])
+      inline def setVC(value: NationalNumber): Self = StObject.set(x, "VC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVE(value: NationalNumber): Self = StObject.set(x, "VE", value.asInstanceOf[js.Any])
+      inline def setVE(value: NationalNumber): Self = StObject.set(x, "VE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVG(value: NationalNumber): Self = StObject.set(x, "VG", value.asInstanceOf[js.Any])
+      inline def setVG(value: NationalNumber): Self = StObject.set(x, "VG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVI(value: NationalNumber): Self = StObject.set(x, "VI", value.asInstanceOf[js.Any])
+      inline def setVI(value: NationalNumber): Self = StObject.set(x, "VI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVN(value: NationalNumber): Self = StObject.set(x, "VN", value.asInstanceOf[js.Any])
+      inline def setVN(value: NationalNumber): Self = StObject.set(x, "VN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVU(value: NationalNumber): Self = StObject.set(x, "VU", value.asInstanceOf[js.Any])
+      inline def setVU(value: NationalNumber): Self = StObject.set(x, "VU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWF(value: NationalNumber): Self = StObject.set(x, "WF", value.asInstanceOf[js.Any])
+      inline def setWF(value: NationalNumber): Self = StObject.set(x, "WF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWS(value: NationalNumber): Self = StObject.set(x, "WS", value.asInstanceOf[js.Any])
+      inline def setWS(value: NationalNumber): Self = StObject.set(x, "WS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXK(value: NationalNumber): Self = StObject.set(x, "XK", value.asInstanceOf[js.Any])
+      inline def setXK(value: NationalNumber): Self = StObject.set(x, "XK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYE(value: NationalNumber): Self = StObject.set(x, "YE", value.asInstanceOf[js.Any])
+      inline def setYE(value: NationalNumber): Self = StObject.set(x, "YE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYT(value: NationalNumber): Self = StObject.set(x, "YT", value.asInstanceOf[js.Any])
+      inline def setYT(value: NationalNumber): Self = StObject.set(x, "YT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZA(value: NationalNumber): Self = StObject.set(x, "ZA", value.asInstanceOf[js.Any])
+      inline def setZA(value: NationalNumber): Self = StObject.set(x, "ZA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZM(value: NationalNumber): Self = StObject.set(x, "ZM", value.asInstanceOf[js.Any])
+      inline def setZM(value: NationalNumber): Self = StObject.set(x, "ZM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZW(value: NationalNumber): Self = StObject.set(x, "ZW", value.asInstanceOf[js.Any])
+      inline def setZW(value: NationalNumber): Self = StObject.set(x, "ZW", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,8 +28,7 @@ object systemWindowMod {
   }
   object WindowDetail {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bottom: Double,
       height: Double,
       isShowing: Boolean,
@@ -44,35 +43,25 @@ object systemWindowMod {
       __obj.asInstanceOf[WindowDetail]
     }
     
-    @scala.inline
-    implicit class WindowDetailMutableBuilder[Self <: WindowDetail] (val x: Self) extends AnyVal {
+    extension [Self <: WindowDetail](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsShowing(value: Boolean): Self = StObject.set(x, "isShowing", value.asInstanceOf[js.Any])
+      inline def setIsShowing(value: Boolean): Self = StObject.set(x, "isShowing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,26 +75,20 @@ object systemWindowMod {
   }
   object WindowInfo {
     
-    @scala.inline
-    def apply(childWindows: js.Array[WindowDetail], mainWindow: WindowDetail, uuid: String): WindowInfo = {
+    inline def apply(childWindows: js.Array[WindowDetail], mainWindow: WindowDetail, uuid: String): WindowInfo = {
       val __obj = js.Dynamic.literal(childWindows = childWindows.asInstanceOf[js.Any], mainWindow = mainWindow.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[WindowInfo]
     }
     
-    @scala.inline
-    implicit class WindowInfoMutableBuilder[Self <: WindowInfo] (val x: Self) extends AnyVal {
+    extension [Self <: WindowInfo](x: Self) {
       
-      @scala.inline
-      def setChildWindows(value: js.Array[WindowDetail]): Self = StObject.set(x, "childWindows", value.asInstanceOf[js.Any])
+      inline def setChildWindows(value: js.Array[WindowDetail]): Self = StObject.set(x, "childWindows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildWindowsVarargs(value: WindowDetail*): Self = StObject.set(x, "childWindows", js.Array(value :_*))
+      inline def setChildWindowsVarargs(value: WindowDetail*): Self = StObject.set(x, "childWindows", js.Array(value :_*))
       
-      @scala.inline
-      def setMainWindow(value: WindowDetail): Self = StObject.set(x, "mainWindow", value.asInstanceOf[js.Any])
+      inline def setMainWindow(value: WindowDetail): Self = StObject.set(x, "mainWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
 }

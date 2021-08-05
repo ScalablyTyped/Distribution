@@ -46,8 +46,7 @@ object JQueryFinger {
   }
   object JQueryFingerOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       doubleTapInterval: Double,
       flickDuration: Double,
       motionThreshhold: Double,
@@ -58,23 +57,17 @@ object JQueryFinger {
       __obj.asInstanceOf[JQueryFingerOptions]
     }
     
-    @scala.inline
-    implicit class JQueryFingerOptionsMutableBuilder[Self <: JQueryFingerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JQueryFingerOptions](x: Self) {
       
-      @scala.inline
-      def setDoubleTapInterval(value: Double): Self = StObject.set(x, "doubleTapInterval", value.asInstanceOf[js.Any])
+      inline def setDoubleTapInterval(value: Double): Self = StObject.set(x, "doubleTapInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlickDuration(value: Double): Self = StObject.set(x, "flickDuration", value.asInstanceOf[js.Any])
+      inline def setFlickDuration(value: Double): Self = StObject.set(x, "flickDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMotionThreshhold(value: Double): Self = StObject.set(x, "motionThreshhold", value.asInstanceOf[js.Any])
+      inline def setMotionThreshhold(value: Double): Self = StObject.set(x, "motionThreshhold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPressDuration(value: Double): Self = StObject.set(x, "pressDuration", value.asInstanceOf[js.Any])
+      inline def setPressDuration(value: Double): Self = StObject.set(x, "pressDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+      inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     }
   }
 }

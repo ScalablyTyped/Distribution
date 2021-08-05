@@ -28,37 +28,27 @@ trait TemporaryCredential extends StObject {
 }
 object TemporaryCredential {
   
-  @scala.inline
-  def apply(): TemporaryCredential = {
+  inline def apply(): TemporaryCredential = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemporaryCredential]
   }
   
-  @scala.inline
-  implicit class TemporaryCredentialMutableBuilder[Self <: TemporaryCredential] (val x: Self) extends AnyVal {
+  extension [Self <: TemporaryCredential](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
     
-    @scala.inline
-    def setValidForInMinutes(value: Integer): Self = StObject.set(x, "ValidForInMinutes", value.asInstanceOf[js.Any])
+    inline def setValidForInMinutes(value: Integer): Self = StObject.set(x, "ValidForInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidForInMinutesUndefined: Self = StObject.set(x, "ValidForInMinutes", js.undefined)
+    inline def setValidForInMinutesUndefined: Self = StObject.set(x, "ValidForInMinutes", js.undefined)
   }
 }

@@ -13,22 +13,17 @@ trait Mechanism extends StObject {
 }
 object Mechanism {
   
-  @scala.inline
-  def apply(mechanism: Double): Mechanism = {
+  inline def apply(mechanism: Double): Mechanism = {
     val __obj = js.Dynamic.literal(mechanism = mechanism.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mechanism]
   }
   
-  @scala.inline
-  implicit class MechanismMutableBuilder[Self <: Mechanism] (val x: Self) extends AnyVal {
+  extension [Self <: Mechanism](x: Self) {
     
-    @scala.inline
-    def setMechanism(value: Double): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
+    inline def setMechanism(value: Double): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameter(value: Buffer | IParams): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: Buffer | IParams): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+    inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
   }
 }

@@ -17,28 +17,19 @@ object pointerEventsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createEvent(evt: PointerEvent): KonvaPointerEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[KonvaPointerEvent]
+  inline def createEvent(evt: PointerEvent): KonvaPointerEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[KonvaPointerEvent]
   
-  @scala.inline
-  def getCapturedShape(pointerId: Double): Stage | Shape[ShapeConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCapturedShape")(pointerId.asInstanceOf[js.Any]).asInstanceOf[Stage | Shape[ShapeConfig]]
+  inline def getCapturedShape(pointerId: Double): Stage | Shape[ShapeConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCapturedShape")(pointerId.asInstanceOf[js.Any]).asInstanceOf[Stage | Shape[ShapeConfig]]
   
-  @scala.inline
-  def hasPointerCapture(pointerId: Double, shape: Shape[ShapeConfig]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPointerCapture")(pointerId.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def hasPointerCapture(pointerId: Double, shape: Stage): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPointerCapture")(pointerId.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasPointerCapture(pointerId: Double, shape: Shape[ShapeConfig]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPointerCapture")(pointerId.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasPointerCapture(pointerId: Double, shape: Stage): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPointerCapture")(pointerId.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def releaseCapture(pointerId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("releaseCapture")(pointerId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def releaseCapture(pointerId: Double, target: Shape[ShapeConfig]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("releaseCapture")(pointerId.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def releaseCapture(pointerId: Double, target: Stage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("releaseCapture")(pointerId.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def releaseCapture(pointerId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("releaseCapture")(pointerId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def releaseCapture(pointerId: Double, target: Shape[ShapeConfig]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("releaseCapture")(pointerId.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def releaseCapture(pointerId: Double, target: Stage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("releaseCapture")(pointerId.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setPointerCapture(pointerId: Double, shape: Shape[ShapeConfig]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPointerCapture")(pointerId.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setPointerCapture(pointerId: Double, shape: Stage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPointerCapture")(pointerId.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setPointerCapture(pointerId: Double, shape: Shape[ShapeConfig]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPointerCapture")(pointerId.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setPointerCapture(pointerId: Double, shape: Stage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPointerCapture")(pointerId.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait KonvaPointerEvent
     extends StObject
@@ -48,8 +39,7 @@ object pointerEventsMod {
   }
   object KonvaPointerEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancelBubble: Boolean,
       currentTarget: Node[NodeConfig],
       evt: PointerEvent,
@@ -60,11 +50,9 @@ object pointerEventsMod {
       __obj.asInstanceOf[KonvaPointerEvent]
     }
     
-    @scala.inline
-    implicit class KonvaPointerEventMutableBuilder[Self <: KonvaPointerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: KonvaPointerEvent](x: Self) {
       
-      @scala.inline
-      def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+      inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
     }
   }
 }

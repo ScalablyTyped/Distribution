@@ -16,19 +16,15 @@ trait PatchOptions
 }
 object PatchOptions {
   
-  @scala.inline
-  def apply(): PatchOptions = {
+  inline def apply(): PatchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatchOptions]
   }
   
-  @scala.inline
-  implicit class PatchOptionsMutableBuilder[Self <: PatchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PatchOptions](x: Self) {
     
-    @scala.inline
-    def setContext(value: Double): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Double): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
   }
 }

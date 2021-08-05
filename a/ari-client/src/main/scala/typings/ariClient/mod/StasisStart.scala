@@ -26,8 +26,7 @@ trait StasisStart
 }
 object StasisStart {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     application: String,
     args: String | js.Array[String],
     channel: Channel,
@@ -39,22 +38,16 @@ object StasisStart {
     __obj.asInstanceOf[StasisStart]
   }
   
-  @scala.inline
-  implicit class StasisStartMutableBuilder[Self <: StasisStart] (val x: Self) extends AnyVal {
+  extension [Self <: StasisStart](x: Self) {
     
-    @scala.inline
-    def setArgs(value: String | js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: String | js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace_channel(value: Channel): Self = StObject.set(x, "replace_channel", value.asInstanceOf[js.Any])
+    inline def setReplace_channel(value: Channel): Self = StObject.set(x, "replace_channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace_channelUndefined: Self = StObject.set(x, "replace_channel", js.undefined)
+    inline def setReplace_channelUndefined: Self = StObject.set(x, "replace_channel", js.undefined)
   }
 }

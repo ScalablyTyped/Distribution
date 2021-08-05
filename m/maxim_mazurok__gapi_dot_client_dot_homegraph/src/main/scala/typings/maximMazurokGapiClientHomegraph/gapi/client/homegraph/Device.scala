@@ -62,99 +62,71 @@ trait Device extends StObject {
 }
 object Device {
   
-  @scala.inline
-  def apply(): Device = {
+  inline def apply(): Device = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Device]
   }
   
-  @scala.inline
-  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
+  extension [Self <: Device](x: Self) {
     
-    @scala.inline
-    def setAttributes(
+    inline def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[js.Any]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setCustomData(
+    inline def setCustomData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[js.Any]
     ): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
+    inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
-    @scala.inline
-    def setDeviceInfo(value: DeviceInfo): Self = StObject.set(x, "deviceInfo", value.asInstanceOf[js.Any])
+    inline def setDeviceInfo(value: DeviceInfo): Self = StObject.set(x, "deviceInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceInfoUndefined: Self = StObject.set(x, "deviceInfo", js.undefined)
+    inline def setDeviceInfoUndefined: Self = StObject.set(x, "deviceInfo", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: DeviceNames): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DeviceNames): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotificationSupportedByAgent(value: Boolean): Self = StObject.set(x, "notificationSupportedByAgent", value.asInstanceOf[js.Any])
+    inline def setNotificationSupportedByAgent(value: Boolean): Self = StObject.set(x, "notificationSupportedByAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationSupportedByAgentUndefined: Self = StObject.set(x, "notificationSupportedByAgent", js.undefined)
+    inline def setNotificationSupportedByAgentUndefined: Self = StObject.set(x, "notificationSupportedByAgent", js.undefined)
     
-    @scala.inline
-    def setOtherDeviceIds(value: js.Array[AgentOtherDeviceId]): Self = StObject.set(x, "otherDeviceIds", value.asInstanceOf[js.Any])
+    inline def setOtherDeviceIds(value: js.Array[AgentOtherDeviceId]): Self = StObject.set(x, "otherDeviceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherDeviceIdsUndefined: Self = StObject.set(x, "otherDeviceIds", js.undefined)
+    inline def setOtherDeviceIdsUndefined: Self = StObject.set(x, "otherDeviceIds", js.undefined)
     
-    @scala.inline
-    def setOtherDeviceIdsVarargs(value: AgentOtherDeviceId*): Self = StObject.set(x, "otherDeviceIds", js.Array(value :_*))
+    inline def setOtherDeviceIdsVarargs(value: AgentOtherDeviceId*): Self = StObject.set(x, "otherDeviceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setRoomHint(value: String): Self = StObject.set(x, "roomHint", value.asInstanceOf[js.Any])
+    inline def setRoomHint(value: String): Self = StObject.set(x, "roomHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomHintUndefined: Self = StObject.set(x, "roomHint", js.undefined)
+    inline def setRoomHintUndefined: Self = StObject.set(x, "roomHint", js.undefined)
     
-    @scala.inline
-    def setStructureHint(value: String): Self = StObject.set(x, "structureHint", value.asInstanceOf[js.Any])
+    inline def setStructureHint(value: String): Self = StObject.set(x, "structureHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureHintUndefined: Self = StObject.set(x, "structureHint", js.undefined)
+    inline def setStructureHintUndefined: Self = StObject.set(x, "structureHint", js.undefined)
     
-    @scala.inline
-    def setTraits(value: js.Array[String]): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
+    inline def setTraits(value: js.Array[String]): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
+    inline def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
     
-    @scala.inline
-    def setTraitsVarargs(value: String*): Self = StObject.set(x, "traits", js.Array(value :_*))
+    inline def setTraitsVarargs(value: String*): Self = StObject.set(x, "traits", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWillReportState(value: Boolean): Self = StObject.set(x, "willReportState", value.asInstanceOf[js.Any])
+    inline def setWillReportState(value: Boolean): Self = StObject.set(x, "willReportState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWillReportStateUndefined: Self = StObject.set(x, "willReportState", js.undefined)
+    inline def setWillReportStateUndefined: Self = StObject.set(x, "willReportState", js.undefined)
   }
 }

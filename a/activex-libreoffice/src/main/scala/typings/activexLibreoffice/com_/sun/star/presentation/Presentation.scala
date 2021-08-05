@@ -69,8 +69,7 @@ trait Presentation
 }
 object Presentation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowAnimations: Boolean,
     CustomShow: String,
     FirstPage: String,
@@ -102,43 +101,30 @@ object Presentation {
     __obj.asInstanceOf[Presentation]
   }
   
-  @scala.inline
-  implicit class PresentationMutableBuilder[Self <: Presentation] (val x: Self) extends AnyVal {
+  extension [Self <: Presentation](x: Self) {
     
-    @scala.inline
-    def setAllowAnimations(value: Boolean): Self = StObject.set(x, "AllowAnimations", value.asInstanceOf[js.Any])
+    inline def setAllowAnimations(value: Boolean): Self = StObject.set(x, "AllowAnimations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomShow(value: String): Self = StObject.set(x, "CustomShow", value.asInstanceOf[js.Any])
+    inline def setCustomShow(value: String): Self = StObject.set(x, "CustomShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPage(value: String): Self = StObject.set(x, "FirstPage", value.asInstanceOf[js.Any])
+    inline def setFirstPage(value: String): Self = StObject.set(x, "FirstPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAlwaysOnTop(value: Boolean): Self = StObject.set(x, "IsAlwaysOnTop", value.asInstanceOf[js.Any])
+    inline def setIsAlwaysOnTop(value: Boolean): Self = StObject.set(x, "IsAlwaysOnTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutomatic(value: Boolean): Self = StObject.set(x, "IsAutomatic", value.asInstanceOf[js.Any])
+    inline def setIsAutomatic(value: Boolean): Self = StObject.set(x, "IsAutomatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEndless(value: Boolean): Self = StObject.set(x, "IsEndless", value.asInstanceOf[js.Any])
+    inline def setIsEndless(value: Boolean): Self = StObject.set(x, "IsEndless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFullScreen(value: Boolean): Self = StObject.set(x, "IsFullScreen", value.asInstanceOf[js.Any])
+    inline def setIsFullScreen(value: Boolean): Self = StObject.set(x, "IsFullScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLivePresentation(value: Boolean): Self = StObject.set(x, "IsLivePresentation", value.asInstanceOf[js.Any])
+    inline def setIsLivePresentation(value: Boolean): Self = StObject.set(x, "IsLivePresentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMouseVisible(value: Boolean): Self = StObject.set(x, "IsMouseVisible", value.asInstanceOf[js.Any])
+    inline def setIsMouseVisible(value: Boolean): Self = StObject.set(x, "IsMouseVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: Double): Self = StObject.set(x, "Pause", value.asInstanceOf[js.Any])
+    inline def setPause(value: Double): Self = StObject.set(x, "Pause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartWithNavigator(value: Boolean): Self = StObject.set(x, "StartWithNavigator", value.asInstanceOf[js.Any])
+    inline def setStartWithNavigator(value: Boolean): Self = StObject.set(x, "StartWithNavigator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePen(value: Boolean): Self = StObject.set(x, "UsePen", value.asInstanceOf[js.Any])
+    inline def setUsePen(value: Boolean): Self = StObject.set(x, "UsePen", value.asInstanceOf[js.Any])
   }
 }

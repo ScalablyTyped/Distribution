@@ -30,31 +30,23 @@ trait ParamsResourcePlayersUnhide
 }
 object ParamsResourcePlayersUnhide {
   
-  @scala.inline
-  def apply(): ParamsResourcePlayersUnhide = {
+  inline def apply(): ParamsResourcePlayersUnhide = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePlayersUnhide]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePlayersUnhideMutableBuilder[Self <: ParamsResourcePlayersUnhide] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePlayersUnhide](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
+    inline def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPlayerId(value: String): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
+    inline def setPlayerId(value: String): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerIdUndefined: Self = StObject.set(x, "playerId", js.undefined)
+    inline def setPlayerIdUndefined: Self = StObject.set(x, "playerId", js.undefined)
   }
 }

@@ -17,22 +17,17 @@ trait ApplicationData extends StObject {
 }
 object ApplicationData {
   
-  @scala.inline
-  def apply(): ApplicationData = {
+  inline def apply(): ApplicationData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationData]
   }
   
-  @scala.inline
-  implicit class ApplicationDataMutableBuilder[Self <: ApplicationData] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationData](x: Self) {
     
-    @scala.inline
-    def setNotebooks(value: js.Array[NotebookData]): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
+    inline def setNotebooks(value: js.Array[NotebookData]): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
+    inline def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
     
-    @scala.inline
-    def setNotebooksVarargs(value: NotebookData*): Self = StObject.set(x, "notebooks", js.Array(value :_*))
+    inline def setNotebooksVarargs(value: NotebookData*): Self = StObject.set(x, "notebooks", js.Array(value :_*))
   }
 }

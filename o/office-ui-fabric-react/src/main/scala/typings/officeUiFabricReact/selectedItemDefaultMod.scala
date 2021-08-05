@@ -12,6 +12,5 @@ object selectedItemDefaultMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def SelectedItemDefault(props: IPeoplePickerItemSelectedProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectedItemDefault")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SelectedItemDefault(props: IPeoplePickerItemSelectedProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectedItemDefault")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

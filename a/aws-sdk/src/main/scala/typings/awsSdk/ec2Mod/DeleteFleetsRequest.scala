@@ -23,28 +23,21 @@ trait DeleteFleetsRequest extends StObject {
 }
 object DeleteFleetsRequest {
   
-  @scala.inline
-  def apply(FleetIds: FleetIdSet, TerminateInstances: Boolean): DeleteFleetsRequest = {
+  inline def apply(FleetIds: FleetIdSet, TerminateInstances: Boolean): DeleteFleetsRequest = {
     val __obj = js.Dynamic.literal(FleetIds = FleetIds.asInstanceOf[js.Any], TerminateInstances = TerminateInstances.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFleetsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFleetsRequestMutableBuilder[Self <: DeleteFleetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFleetsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFleetIds(value: FleetIdSet): Self = StObject.set(x, "FleetIds", value.asInstanceOf[js.Any])
+    inline def setFleetIds(value: FleetIdSet): Self = StObject.set(x, "FleetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdsVarargs(value: FleetId*): Self = StObject.set(x, "FleetIds", js.Array(value :_*))
+    inline def setFleetIdsVarargs(value: FleetId*): Self = StObject.set(x, "FleetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTerminateInstances(value: Boolean): Self = StObject.set(x, "TerminateInstances", value.asInstanceOf[js.Any])
+    inline def setTerminateInstances(value: Boolean): Self = StObject.set(x, "TerminateInstances", value.asInstanceOf[js.Any])
   }
 }

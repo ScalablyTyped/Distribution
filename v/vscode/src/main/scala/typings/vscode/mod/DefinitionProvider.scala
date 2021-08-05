@@ -19,19 +19,16 @@ trait DefinitionProvider extends StObject {
 }
 object DefinitionProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideDefinition: (TextDocument, Position, CancellationToken) => ProviderResult[Definition | js.Array[DefinitionLink]]
   ): DefinitionProvider = {
     val __obj = js.Dynamic.literal(provideDefinition = js.Any.fromFunction3(provideDefinition))
     __obj.asInstanceOf[DefinitionProvider]
   }
   
-  @scala.inline
-  implicit class DefinitionProviderMutableBuilder[Self <: DefinitionProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DefinitionProvider](x: Self) {
     
-    @scala.inline
-    def setProvideDefinition(
+    inline def setProvideDefinition(
       value: (TextDocument, Position, CancellationToken) => ProviderResult[Definition | js.Array[DefinitionLink]]
     ): Self = StObject.set(x, "provideDefinition", js.Any.fromFunction3(value))
   }

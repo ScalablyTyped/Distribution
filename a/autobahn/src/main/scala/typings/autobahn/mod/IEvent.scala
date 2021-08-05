@@ -14,25 +14,19 @@ trait IEvent extends StObject {
 }
 object IEvent {
   
-  @scala.inline
-  def apply(publication: Double, topic: String): IEvent = {
+  inline def apply(publication: Double, topic: String): IEvent = {
     val __obj = js.Dynamic.literal(publication = publication.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEvent]
   }
   
-  @scala.inline
-  implicit class IEventMutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IEvent](x: Self) {
     
-    @scala.inline
-    def setPublication(value: Double): Self = StObject.set(x, "publication", value.asInstanceOf[js.Any])
+    inline def setPublication(value: Double): Self = StObject.set(x, "publication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisher(value: Double): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    inline def setPublisher(value: Double): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
+    inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

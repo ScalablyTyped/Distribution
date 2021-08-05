@@ -21,31 +21,23 @@ trait TimeKlassOptions
 }
 object TimeKlassOptions {
   
-  @scala.inline
-  def apply(): TimeKlassOptions = {
+  inline def apply(): TimeKlassOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeKlassOptions]
   }
   
-  @scala.inline
-  implicit class TimeKlassOptionsMutableBuilder[Self <: TimeKlassOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TimeKlassOptions](x: Self) {
     
-    @scala.inline
-    def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListItem(value: String): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+    inline def setListItem(value: String): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+    inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
     
-    @scala.inline
-    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+    inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
-    @scala.inline
-    def setViewset(value: String): Self = StObject.set(x, "viewset", value.asInstanceOf[js.Any])
+    inline def setViewset(value: String): Self = StObject.set(x, "viewset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewsetUndefined: Self = StObject.set(x, "viewset", js.undefined)
+    inline def setViewsetUndefined: Self = StObject.set(x, "viewset", js.undefined)
   }
 }

@@ -11,8 +11,7 @@ object createMergedRefMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createMergedRef[TType, TValue](): js.Function1[
+  inline def createMergedRef[TType, TValue](): js.Function1[
     /* repeated */ js.UndefOr[
       (js.Function1[/* instance */ TType | TValue | Null, Unit]) | (RefObject[TType | TValue | Null]) | Null
     ], 
@@ -23,8 +22,7 @@ object createMergedRefMod {
     ], 
     js.Function1[/* newValue */ TType | TValue | Null, Unit]
   ]]
-  @scala.inline
-  def createMergedRef[TType, TValue](value: TValue): js.Function1[
+  inline def createMergedRef[TType, TValue](value: TValue): js.Function1[
     /* repeated */ js.UndefOr[
       (js.Function1[/* instance */ TType | TValue | Null, Unit]) | (RefObject[TType | TValue | Null]) | Null
     ], 

@@ -38,55 +38,39 @@ trait InsightImpactGraphService extends StObject {
 }
 object InsightImpactGraphService {
   
-  @scala.inline
-  def apply(): InsightImpactGraphService = {
+  inline def apply(): InsightImpactGraphService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsightImpactGraphService]
   }
   
-  @scala.inline
-  implicit class InsightImpactGraphServiceMutableBuilder[Self <: InsightImpactGraphService] (val x: Self) extends AnyVal {
+  extension [Self <: InsightImpactGraphService](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setEdges(value: InsightImpactGraphEdgeList): Self = StObject.set(x, "Edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: InsightImpactGraphEdgeList): Self = StObject.set(x, "Edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesUndefined: Self = StObject.set(x, "Edges", js.undefined)
+    inline def setEdgesUndefined: Self = StObject.set(x, "Edges", js.undefined)
     
-    @scala.inline
-    def setEdgesVarargs(value: InsightImpactGraphEdge*): Self = StObject.set(x, "Edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: InsightImpactGraphEdge*): Self = StObject.set(x, "Edges", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNames(value: ServiceNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+    inline def setNames(value: ServiceNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
-    @scala.inline
-    def setReferenceId(value: NullableInteger): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
+    inline def setReferenceId(value: NullableInteger): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceIdUndefined: Self = StObject.set(x, "ReferenceId", js.undefined)
+    inline def setReferenceIdUndefined: Self = StObject.set(x, "ReferenceId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

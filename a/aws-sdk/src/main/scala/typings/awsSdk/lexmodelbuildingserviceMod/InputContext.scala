@@ -13,16 +13,13 @@ trait InputContext extends StObject {
 }
 object InputContext {
   
-  @scala.inline
-  def apply(name: InputContextName): InputContext = {
+  inline def apply(name: InputContextName): InputContext = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputContext]
   }
   
-  @scala.inline
-  implicit class InputContextMutableBuilder[Self <: InputContext] (val x: Self) extends AnyVal {
+  extension [Self <: InputContext](x: Self) {
     
-    @scala.inline
-    def setName(value: InputContextName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: InputContextName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

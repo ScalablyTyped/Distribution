@@ -14,22 +14,17 @@ trait NModified extends StObject {
 }
 object NModified {
   
-  @scala.inline
-  def apply(n: Double, nModified: Double, ok: Double): NModified = {
+  inline def apply(n: Double, nModified: Double, ok: Double): NModified = {
     val __obj = js.Dynamic.literal(n = n.asInstanceOf[js.Any], nModified = nModified.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
     __obj.asInstanceOf[NModified]
   }
   
-  @scala.inline
-  implicit class NModifiedMutableBuilder[Self <: NModified] (val x: Self) extends AnyVal {
+  extension [Self <: NModified](x: Self) {
     
-    @scala.inline
-    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNModified(value: Double): Self = StObject.set(x, "nModified", value.asInstanceOf[js.Any])
+    inline def setNModified(value: Double): Self = StObject.set(x, "nModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOk(value: Double): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Double): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
   }
 }

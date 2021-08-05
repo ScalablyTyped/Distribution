@@ -16,31 +16,23 @@ trait LayerPhotosData extends StObject {
 }
 object LayerPhotosData {
   
-  @scala.inline
-  def apply(data: js.Array[LayerPhotosDataItem], id: Double, title: String): LayerPhotosData = {
+  inline def apply(data: js.Array[LayerPhotosDataItem], id: Double, title: String): LayerPhotosData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerPhotosData]
   }
   
-  @scala.inline
-  implicit class LayerPhotosDataMutableBuilder[Self <: LayerPhotosData] (val x: Self) extends AnyVal {
+  extension [Self <: LayerPhotosData](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[LayerPhotosDataItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[LayerPhotosDataItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: LayerPhotosDataItem*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: LayerPhotosDataItem*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

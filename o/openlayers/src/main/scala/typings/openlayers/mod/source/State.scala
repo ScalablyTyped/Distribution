@@ -16,15 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait State extends StObject
 object State {
   
-  @scala.inline
-  def error: typings.openlayers.openlayersStrings.error = "error".asInstanceOf[typings.openlayers.openlayersStrings.error]
+  inline def error: typings.openlayers.openlayersStrings.error = "error".asInstanceOf[typings.openlayers.openlayersStrings.error]
   
-  @scala.inline
-  def loading: typings.openlayers.openlayersStrings.loading = "loading".asInstanceOf[typings.openlayers.openlayersStrings.loading]
+  inline def loading: typings.openlayers.openlayersStrings.loading = "loading".asInstanceOf[typings.openlayers.openlayersStrings.loading]
   
-  @scala.inline
-  def ready: typings.openlayers.openlayersStrings.ready = "ready".asInstanceOf[typings.openlayers.openlayersStrings.ready]
+  inline def ready: typings.openlayers.openlayersStrings.ready = "ready".asInstanceOf[typings.openlayers.openlayersStrings.ready]
   
-  @scala.inline
-  def undefined: typings.openlayers.openlayersStrings.undefined = "undefined".asInstanceOf[typings.openlayers.openlayersStrings.undefined]
+  inline def undefined: typings.openlayers.openlayersStrings.undefined = "undefined".asInstanceOf[typings.openlayers.openlayersStrings.undefined]
 }

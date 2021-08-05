@@ -13,25 +13,19 @@ trait PartialTileContentProps extends StObject {
 }
 object PartialTileContentProps {
   
-  @scala.inline
-  def apply(): PartialTileContentProps = {
+  inline def apply(): PartialTileContentProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTileContentProps]
   }
   
-  @scala.inline
-  implicit class PartialTileContentPropsMutableBuilder[Self <: PartialTileContentProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialTileContentProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setTwoColumns(value: Boolean): Self = StObject.set(x, "twoColumns", value.asInstanceOf[js.Any])
+    inline def setTwoColumns(value: Boolean): Self = StObject.set(x, "twoColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwoColumnsUndefined: Self = StObject.set(x, "twoColumns", js.undefined)
+    inline def setTwoColumnsUndefined: Self = StObject.set(x, "twoColumns", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait SpreadsheetDrawPage
      with XShapeGrouper
 object SpreadsheetDrawPage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,

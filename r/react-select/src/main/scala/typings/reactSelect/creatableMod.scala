@@ -34,8 +34,7 @@ object creatableMod {
     @JSImport("react-select/creatable", "default.defaultProps")
     @js.native
     def defaultProps: Props[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/creatable", "Creatable")
@@ -59,14 +58,12 @@ object creatableMod {
     @JSImport("react-select/creatable", "Creatable.defaultProps")
     @js.native
     def defaultProps: Props[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/creatable", "defaultProps")
   @js.native
   val defaultProps: Props[js.Any] = js.native
   
-  @scala.inline
-  def makeCreatableSelect(SelectComponent: ComponentType[js.Any]): typings.reactSelect.srcCreatableMod.Creatable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeCreatableSelect")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[typings.reactSelect.srcCreatableMod.Creatable[js.Any]]
+  inline def makeCreatableSelect(SelectComponent: ComponentType[js.Any]): typings.reactSelect.srcCreatableMod.Creatable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeCreatableSelect")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[typings.reactSelect.srcCreatableMod.Creatable[js.Any]]
 }

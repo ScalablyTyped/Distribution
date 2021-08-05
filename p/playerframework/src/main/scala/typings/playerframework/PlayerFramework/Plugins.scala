@@ -33,8 +33,7 @@ object Plugins {
   }
   object AudioSelectorPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alignment: String,
       anchor: HTMLElement,
       currentMediaSource: MediaSource,
@@ -53,23 +52,17 @@ object Plugins {
       __obj.asInstanceOf[AudioSelectorPlugin]
     }
     
-    @scala.inline
-    implicit class AudioSelectorPluginMutableBuilder[Self <: AudioSelectorPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: AudioSelectorPlugin](x: Self) {
       
-      @scala.inline
-      def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+      inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchor(value: HTMLElement): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: HTMLElement): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -83,8 +76,7 @@ object Plugins {
   }
   object BufferingPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentMediaSource: MediaSource,
       hide: () => Unit,
       isActive: Boolean,
@@ -100,14 +92,11 @@ object Plugins {
       __obj.asInstanceOf[BufferingPlugin]
     }
     
-    @scala.inline
-    implicit class BufferingPluginMutableBuilder[Self <: BufferingPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: BufferingPlugin](x: Self) {
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -136,8 +125,7 @@ object Plugins {
   }
   object CaptionSelectorPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alignment: String,
       anchor: HTMLElement,
       currentMediaSource: MediaSource,
@@ -156,23 +144,17 @@ object Plugins {
       __obj.asInstanceOf[CaptionSelectorPlugin]
     }
     
-    @scala.inline
-    implicit class CaptionSelectorPluginMutableBuilder[Self <: CaptionSelectorPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: CaptionSelectorPlugin](x: Self) {
       
-      @scala.inline
-      def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+      inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchor(value: HTMLElement): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: HTMLElement): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -190,8 +172,7 @@ object Plugins {
   }
   object ChaptersPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoCreateChaptersFromTextTracks: Boolean,
       autoCreateDefaultChapters: Boolean,
       currentMediaSource: MediaSource,
@@ -209,20 +190,15 @@ object Plugins {
       __obj.asInstanceOf[ChaptersPlugin]
     }
     
-    @scala.inline
-    implicit class ChaptersPluginMutableBuilder[Self <: ChaptersPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: ChaptersPlugin](x: Self) {
       
-      @scala.inline
-      def setAutoCreateChaptersFromTextTracks(value: Boolean): Self = StObject.set(x, "autoCreateChaptersFromTextTracks", value.asInstanceOf[js.Any])
+      inline def setAutoCreateChaptersFromTextTracks(value: Boolean): Self = StObject.set(x, "autoCreateChaptersFromTextTracks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCreateDefaultChapters(value: Boolean): Self = StObject.set(x, "autoCreateDefaultChapters", value.asInstanceOf[js.Any])
+      inline def setAutoCreateDefaultChapters(value: Boolean): Self = StObject.set(x, "autoCreateDefaultChapters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultChapterCount(value: Double): Self = StObject.set(x, "defaultChapterCount", value.asInstanceOf[js.Any])
+      inline def setDefaultChapterCount(value: Double): Self = StObject.set(x, "defaultChapterCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisualMarkerClass(value: String): Self = StObject.set(x, "visualMarkerClass", value.asInstanceOf[js.Any])
+      inline def setVisualMarkerClass(value: String): Self = StObject.set(x, "visualMarkerClass", value.asInstanceOf[js.Any])
     }
   }
   
@@ -242,8 +218,7 @@ object Plugins {
   }
   object ControlPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compactThresholdInInches: () => Double,
       currentMediaSource: MediaSource,
       hide: () => Unit,
@@ -262,23 +237,17 @@ object Plugins {
       __obj.asInstanceOf[ControlPlugin]
     }
     
-    @scala.inline
-    implicit class ControlPluginMutableBuilder[Self <: ControlPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: ControlPlugin](x: Self) {
       
-      @scala.inline
-      def setCompactThresholdInInches(value: () => Double): Self = StObject.set(x, "compactThresholdInInches", js.Any.fromFunction0(value))
+      inline def setCompactThresholdInInches(value: () => Double): Self = StObject.set(x, "compactThresholdInInches", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCompact(value: () => Boolean): Self = StObject.set(x, "isCompact", js.Any.fromFunction0(value))
+      inline def setIsCompact(value: () => Boolean): Self = StObject.set(x, "isCompact", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOrientation(value: () => String): Self = StObject.set(x, "orientation", js.Any.fromFunction0(value))
+      inline def setOrientation(value: () => String): Self = StObject.set(x, "orientation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -290,8 +259,7 @@ object Plugins {
   }
   object DisplayRequestPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentMediaSource: MediaSource,
       isActive: Boolean,
       isEnabled: Boolean,
@@ -306,11 +274,9 @@ object Plugins {
       __obj.asInstanceOf[DisplayRequestPlugin]
     }
     
-    @scala.inline
-    implicit class DisplayRequestPluginMutableBuilder[Self <: DisplayRequestPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayRequestPlugin](x: Self) {
       
-      @scala.inline
-      def setIsRequestActive(value: Boolean): Self = StObject.set(x, "isRequestActive", value.asInstanceOf[js.Any])
+      inline def setIsRequestActive(value: Boolean): Self = StObject.set(x, "isRequestActive", value.asInstanceOf[js.Any])
     }
   }
   
@@ -324,8 +290,7 @@ object Plugins {
   }
   object ErrorPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentMediaSource: MediaSource,
       hide: () => Unit,
       isActive: Boolean,
@@ -341,14 +306,11 @@ object Plugins {
       __obj.asInstanceOf[ErrorPlugin]
     }
     
-    @scala.inline
-    implicit class ErrorPluginMutableBuilder[Self <: ErrorPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorPlugin](x: Self) {
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -362,8 +324,7 @@ object Plugins {
   }
   object LoaderPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentMediaSource: MediaSource,
       hide: () => Unit,
       isActive: Boolean,
@@ -379,14 +340,11 @@ object Plugins {
       __obj.asInstanceOf[LoaderPlugin]
     }
     
-    @scala.inline
-    implicit class LoaderPluginMutableBuilder[Self <: LoaderPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderPlugin](x: Self) {
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -400,8 +358,7 @@ object Plugins {
   }
   object PlayTimeTrackingPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentMediaSource: MediaSource,
       isActive: Boolean,
       isEnabled: Boolean,
@@ -417,14 +374,11 @@ object Plugins {
       __obj.asInstanceOf[PlayTimeTrackingPlugin]
     }
     
-    @scala.inline
-    implicit class PlayTimeTrackingPluginMutableBuilder[Self <: PlayTimeTrackingPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: PlayTimeTrackingPlugin](x: Self) {
       
-      @scala.inline
-      def setPlayTime(value: Double): Self = StObject.set(x, "playTime", value.asInstanceOf[js.Any])
+      inline def setPlayTime(value: Double): Self = StObject.set(x, "playTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayTimePercentage(value: Double): Self = StObject.set(x, "playTimePercentage", value.asInstanceOf[js.Any])
+      inline def setPlayTimePercentage(value: Double): Self = StObject.set(x, "playTimePercentage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -476,8 +430,7 @@ object Plugins {
   }
   object PlaylistPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoAdvance: Boolean,
       canGoToNextPlaylistItem: () => Boolean,
       canGoToPreviousPlaylistItem: () => Boolean,
@@ -501,41 +454,29 @@ object Plugins {
       __obj.asInstanceOf[PlaylistPlugin]
     }
     
-    @scala.inline
-    implicit class PlaylistPluginMutableBuilder[Self <: PlaylistPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: PlaylistPlugin](x: Self) {
       
-      @scala.inline
-      def setAutoAdvance(value: Boolean): Self = StObject.set(x, "autoAdvance", value.asInstanceOf[js.Any])
+      inline def setAutoAdvance(value: Boolean): Self = StObject.set(x, "autoAdvance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanGoToNextPlaylistItem(value: () => Boolean): Self = StObject.set(x, "canGoToNextPlaylistItem", js.Any.fromFunction0(value))
+      inline def setCanGoToNextPlaylistItem(value: () => Boolean): Self = StObject.set(x, "canGoToNextPlaylistItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCanGoToPreviousPlaylistItem(value: () => Boolean): Self = StObject.set(x, "canGoToPreviousPlaylistItem", js.Any.fromFunction0(value))
+      inline def setCanGoToPreviousPlaylistItem(value: () => Boolean): Self = StObject.set(x, "canGoToPreviousPlaylistItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCurrentPlaylistItem(value: PlaylistItem): Self = StObject.set(x, "currentPlaylistItem", value.asInstanceOf[js.Any])
+      inline def setCurrentPlaylistItem(value: PlaylistItem): Self = StObject.set(x, "currentPlaylistItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPlaylistItemIndex(value: Double): Self = StObject.set(x, "currentPlaylistItemIndex", value.asInstanceOf[js.Any])
+      inline def setCurrentPlaylistItemIndex(value: Double): Self = StObject.set(x, "currentPlaylistItemIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoToNextPlaylistItem(value: () => Unit): Self = StObject.set(x, "goToNextPlaylistItem", js.Any.fromFunction0(value))
+      inline def setGoToNextPlaylistItem(value: () => Unit): Self = StObject.set(x, "goToNextPlaylistItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGoToPreviousPlaylistItem(value: () => Unit): Self = StObject.set(x, "goToPreviousPlaylistItem", js.Any.fromFunction0(value))
+      inline def setGoToPreviousPlaylistItem(value: () => Unit): Self = StObject.set(x, "goToPreviousPlaylistItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPlaylist(value: js.Array[PlaylistItem]): Self = StObject.set(x, "playlist", value.asInstanceOf[js.Any])
+      inline def setPlaylist(value: js.Array[PlaylistItem]): Self = StObject.set(x, "playlist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaylistVarargs(value: PlaylistItem*): Self = StObject.set(x, "playlist", js.Array(value :_*))
+      inline def setPlaylistVarargs(value: PlaylistItem*): Self = StObject.set(x, "playlist", js.Array(value :_*))
       
-      @scala.inline
-      def setSkipBackThreshold(value: Double): Self = StObject.set(x, "skipBackThreshold", value.asInstanceOf[js.Any])
+      inline def setSkipBackThreshold(value: Double): Self = StObject.set(x, "skipBackThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartupPlaylistItemIndex(value: Double): Self = StObject.set(x, "startupPlaylistItemIndex", value.asInstanceOf[js.Any])
+      inline def setStartupPlaylistItemIndex(value: Double): Self = StObject.set(x, "startupPlaylistItemIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -551,8 +492,7 @@ object Plugins {
   }
   object PositionTrackingPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentMediaSource: MediaSource,
       evaluateOnForwardOnly: Boolean,
       isActive: Boolean,
@@ -569,17 +509,13 @@ object Plugins {
       __obj.asInstanceOf[PositionTrackingPlugin]
     }
     
-    @scala.inline
-    implicit class PositionTrackingPluginMutableBuilder[Self <: PositionTrackingPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: PositionTrackingPlugin](x: Self) {
       
-      @scala.inline
-      def setEvaluateOnForwardOnly(value: Boolean): Self = StObject.set(x, "evaluateOnForwardOnly", value.asInstanceOf[js.Any])
+      inline def setEvaluateOnForwardOnly(value: Boolean): Self = StObject.set(x, "evaluateOnForwardOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionPercentage(value: Double): Self = StObject.set(x, "positionPercentage", value.asInstanceOf[js.Any])
+      inline def setPositionPercentage(value: Double): Self = StObject.set(x, "positionPercentage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -597,8 +533,7 @@ object Plugins {
   }
   object SystemTransportControlsPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentMediaSource: MediaSource,
       isActive: Boolean,
       isEnabled: Boolean,
@@ -616,20 +551,15 @@ object Plugins {
       __obj.asInstanceOf[SystemTransportControlsPlugin]
     }
     
-    @scala.inline
-    implicit class SystemTransportControlsPluginMutableBuilder[Self <: SystemTransportControlsPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: SystemTransportControlsPlugin](x: Self) {
       
-      @scala.inline
-      def setIsNextTrackEnabled(value: Boolean): Self = StObject.set(x, "isNextTrackEnabled", value.asInstanceOf[js.Any])
+      inline def setIsNextTrackEnabled(value: Boolean): Self = StObject.set(x, "isNextTrackEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPreviousTrackEnabled(value: Boolean): Self = StObject.set(x, "isPreviousTrackEnabled", value.asInstanceOf[js.Any])
+      inline def setIsPreviousTrackEnabled(value: Boolean): Self = StObject.set(x, "isPreviousTrackEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTrackExists(value: Boolean): Self = StObject.set(x, "nextTrackExists", value.asInstanceOf[js.Any])
+      inline def setNextTrackExists(value: Boolean): Self = StObject.set(x, "nextTrackExists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousTrackExists(value: Boolean): Self = StObject.set(x, "previousTrackExists", value.asInstanceOf[js.Any])
+      inline def setPreviousTrackExists(value: Boolean): Self = StObject.set(x, "previousTrackExists", value.asInstanceOf[js.Any])
     }
   }
   
@@ -641,8 +571,7 @@ object Plugins {
   }
   object TrackingPluginBase {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentMediaSource: MediaSource,
       isActive: Boolean,
       isEnabled: Boolean,
@@ -657,14 +586,11 @@ object Plugins {
       __obj.asInstanceOf[TrackingPluginBase]
     }
     
-    @scala.inline
-    implicit class TrackingPluginBaseMutableBuilder[Self <: TrackingPluginBase] (val x: Self) extends AnyVal {
+    extension [Self <: TrackingPluginBase](x: Self) {
       
-      @scala.inline
-      def setTrackingEvents(value: js.Array[js.Any]): Self = StObject.set(x, "trackingEvents", value.asInstanceOf[js.Any])
+      inline def setTrackingEvents(value: js.Array[js.Any]): Self = StObject.set(x, "trackingEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackingEventsVarargs(value: js.Any*): Self = StObject.set(x, "trackingEvents", js.Array(value :_*))
+      inline def setTrackingEventsVarargs(value: js.Any*): Self = StObject.set(x, "trackingEvents", js.Array(value :_*))
     }
   }
 }

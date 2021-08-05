@@ -55,45 +55,29 @@ object netMod {
     extends StObject
        with ClassUrlObject
   
-  @scala.inline
-  def backend(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("backend")().asInstanceOf[String]
+  inline def backend(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("backend")().asInstanceOf[String]
   
-  @scala.inline
-  def connect(url: String): ClassStream = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[ClassStream]
-  @scala.inline
-  def connect(url: String, timeout: Double): ClassStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[ClassStream]
+  inline def connect(url: String): ClassStream = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[ClassStream]
+  inline def connect(url: String, timeout: Double): ClassStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[ClassStream]
   
-  @scala.inline
-  def info(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("info")().asInstanceOf[js.Object]
+  inline def info(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("info")().asInstanceOf[js.Object]
   
-  @scala.inline
-  def ip(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ip")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ip(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ip")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def ipv6(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ipv6")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ipv6(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ipv6")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isIP(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isIP")().asInstanceOf[Double]
-  @scala.inline
-  def isIP(ip: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isIP")(ip.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def isIP(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isIP")().asInstanceOf[Double]
+  inline def isIP(ip: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isIP")(ip.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def isIPv4(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPv4")().asInstanceOf[Boolean]
-  @scala.inline
-  def isIPv4(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPv4")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIPv4(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPv4")().asInstanceOf[Boolean]
+  inline def isIPv4(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPv4")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIPv6(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPv6")().asInstanceOf[Boolean]
-  @scala.inline
-  def isIPv6(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPv6")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIPv6(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPv6")().asInstanceOf[Boolean]
+  inline def isIPv6(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPv6")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def openSmtp(url: String): ClassSmtp = ^.asInstanceOf[js.Dynamic].applyDynamic("openSmtp")(url.asInstanceOf[js.Any]).asInstanceOf[ClassSmtp]
-  @scala.inline
-  def openSmtp(url: String, timeout: Double): ClassSmtp = (^.asInstanceOf[js.Dynamic].applyDynamic("openSmtp")(url.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[ClassSmtp]
+  inline def openSmtp(url: String): ClassSmtp = ^.asInstanceOf[js.Dynamic].applyDynamic("openSmtp")(url.asInstanceOf[js.Any]).asInstanceOf[ClassSmtp]
+  inline def openSmtp(url: String, timeout: Double): ClassSmtp = (^.asInstanceOf[js.Dynamic].applyDynamic("openSmtp")(url.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[ClassSmtp]
   
-  @scala.inline
-  def resolve(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def resolve(name: String, family: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolve(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def resolve(name: String, family: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
 }

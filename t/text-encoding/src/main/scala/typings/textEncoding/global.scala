@@ -21,14 +21,10 @@ object global {
     }
     object TextDecoder {
       
-      @scala.inline
-      def apply(): typings.textEncoding.TextDecoder = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.textEncoding.TextDecoder]
-      @scala.inline
-      def apply(label: String): typings.textEncoding.TextDecoder = ^.asInstanceOf[js.Dynamic].apply(label.asInstanceOf[js.Any]).asInstanceOf[typings.textEncoding.TextDecoder]
-      @scala.inline
-      def apply(label: String, options: TextDecoderOptions): typings.textEncoding.TextDecoder = (^.asInstanceOf[js.Dynamic].apply(label.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.textEncoding.TextDecoder]
-      @scala.inline
-      def apply(label: Unit, options: TextDecoderOptions): typings.textEncoding.TextDecoder = (^.asInstanceOf[js.Dynamic].apply(label.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.textEncoding.TextDecoder]
+      inline def apply(): typings.textEncoding.TextDecoder = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.textEncoding.TextDecoder]
+      inline def apply(label: String): typings.textEncoding.TextDecoder = ^.asInstanceOf[js.Dynamic].apply(label.asInstanceOf[js.Any]).asInstanceOf[typings.textEncoding.TextDecoder]
+      inline def apply(label: String, options: TextDecoderOptions): typings.textEncoding.TextDecoder = (^.asInstanceOf[js.Dynamic].apply(label.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.textEncoding.TextDecoder]
+      inline def apply(label: Unit, options: TextDecoderOptions): typings.textEncoding.TextDecoder = (^.asInstanceOf[js.Dynamic].apply(label.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.textEncoding.TextDecoder]
       
       @JSGlobal("TextEncoding.TextDecoder")
       @js.native
@@ -37,8 +33,7 @@ object global {
       @JSGlobal("TextEncoding.TextDecoder.encoding")
       @js.native
       def encoding: String = js.native
-      @scala.inline
-      def encoding_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encoding")(x.asInstanceOf[js.Any])
+      inline def encoding_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encoding")(x.asInstanceOf[js.Any])
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -53,14 +48,10 @@ object global {
     }
     object TextEncoder {
       
-      @scala.inline
-      def apply(): typings.textEncoding.TextEncoder = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.textEncoding.TextEncoder]
-      @scala.inline
-      def apply(utfLabel: String): typings.textEncoding.TextEncoder = ^.asInstanceOf[js.Dynamic].apply(utfLabel.asInstanceOf[js.Any]).asInstanceOf[typings.textEncoding.TextEncoder]
-      @scala.inline
-      def apply(utfLabel: String, options: TextEncoderOptions): typings.textEncoding.TextEncoder = (^.asInstanceOf[js.Dynamic].apply(utfLabel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.textEncoding.TextEncoder]
-      @scala.inline
-      def apply(utfLabel: Unit, options: TextEncoderOptions): typings.textEncoding.TextEncoder = (^.asInstanceOf[js.Dynamic].apply(utfLabel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.textEncoding.TextEncoder]
+      inline def apply(): typings.textEncoding.TextEncoder = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.textEncoding.TextEncoder]
+      inline def apply(utfLabel: String): typings.textEncoding.TextEncoder = ^.asInstanceOf[js.Dynamic].apply(utfLabel.asInstanceOf[js.Any]).asInstanceOf[typings.textEncoding.TextEncoder]
+      inline def apply(utfLabel: String, options: TextEncoderOptions): typings.textEncoding.TextEncoder = (^.asInstanceOf[js.Dynamic].apply(utfLabel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.textEncoding.TextEncoder]
+      inline def apply(utfLabel: Unit, options: TextEncoderOptions): typings.textEncoding.TextEncoder = (^.asInstanceOf[js.Dynamic].apply(utfLabel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.textEncoding.TextEncoder]
       
       @JSGlobal("TextEncoding.TextEncoder")
       @js.native
@@ -69,8 +60,7 @@ object global {
       @JSGlobal("TextEncoding.TextEncoder.encoding")
       @js.native
       def encoding: String = js.native
-      @scala.inline
-      def encoding_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encoding")(x.asInstanceOf[js.Any])
+      inline def encoding_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encoding")(x.asInstanceOf[js.Any])
     }
   }
 }

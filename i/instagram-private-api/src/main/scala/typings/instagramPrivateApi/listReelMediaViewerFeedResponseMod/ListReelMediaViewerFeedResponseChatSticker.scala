@@ -22,8 +22,7 @@ trait ListReelMediaViewerFeedResponseChatSticker extends StObject {
 }
 object ListReelMediaViewerFeedResponseChatSticker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end_background_color: String,
     has_started_chat: Boolean,
     start_background_color: String,
@@ -36,28 +35,20 @@ object ListReelMediaViewerFeedResponseChatSticker {
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseChatSticker]
   }
   
-  @scala.inline
-  implicit class ListReelMediaViewerFeedResponseChatStickerMutableBuilder[Self <: ListReelMediaViewerFeedResponseChatSticker] (val x: Self) extends AnyVal {
+  extension [Self <: ListReelMediaViewerFeedResponseChatSticker](x: Self) {
     
-    @scala.inline
-    def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
+    inline def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_started_chat(value: Boolean): Self = StObject.set(x, "has_started_chat", value.asInstanceOf[js.Any])
+    inline def setHas_started_chat(value: Boolean): Self = StObject.set(x, "has_started_chat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
+    inline def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory_chat_id(value: String): Self = StObject.set(x, "story_chat_id", value.asInstanceOf[js.Any])
+    inline def setStory_chat_id(value: String): Self = StObject.set(x, "story_chat_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThread_id(value: String): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
+    inline def setThread_id(value: String): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
   }
 }

@@ -29,8 +29,7 @@ trait GridProps
 }
 object GridProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cellRenderer: /* props */ GridCellProps => ReactNode,
     columnCount: Double,
     columnWidth: Double | (js.Function1[/* params */ Index, Double]),
@@ -43,19 +42,14 @@ object GridProps {
     __obj.asInstanceOf[GridProps]
   }
   
-  @scala.inline
-  implicit class GridPropsMutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
+  extension [Self <: GridProps](x: Self) {
     
-    @scala.inline
-    def setCellRenderer(value: /* props */ GridCellProps => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
+    inline def setCellRenderer(value: /* props */ GridCellProps => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnWidth(value: Double | (js.Function1[/* params */ Index, Double])): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    inline def setColumnWidth(value: Double | (js.Function1[/* params */ Index, Double])): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnWidthFunction1(value: /* params */ Index => Double): Self = StObject.set(x, "columnWidth", js.Any.fromFunction1(value))
+    inline def setColumnWidthFunction1(value: /* params */ Index => Double): Self = StObject.set(x, "columnWidth", js.Any.fromFunction1(value))
   }
 }

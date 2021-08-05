@@ -34,8 +34,7 @@ object errorsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(message: String, location: ILocation): GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(message.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[GherkinException]
+    inline def create(message: String, location: ILocation): GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(message.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[GherkinException]
   }
   
   @JSImport("gherkin/dist/src/Errors", "CompositeParserException")
@@ -63,8 +62,7 @@ object errorsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(errors: js.Array[Error]): CompositeParserException = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(errors.asInstanceOf[js.Any]).asInstanceOf[CompositeParserException]
+    inline def create(errors: js.Array[Error]): CompositeParserException = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(errors.asInstanceOf[js.Any]).asInstanceOf[CompositeParserException]
   }
   
   @JSImport("gherkin/dist/src/Errors", "NoSuchLanguageException")
@@ -92,8 +90,7 @@ object errorsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(language: String, location: ILocation): GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(language.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[GherkinException]
+    inline def create(language: String, location: ILocation): GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(language.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[GherkinException]
   }
   
   @JSImport("gherkin/dist/src/Errors", "ParserException")
@@ -140,8 +137,7 @@ object errorsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(token: default, expectedTokenTypes: js.Array[String], stateComment: String): GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any], expectedTokenTypes.asInstanceOf[js.Any], stateComment.asInstanceOf[js.Any])).asInstanceOf[GherkinException]
+    inline def create(token: default, expectedTokenTypes: js.Array[String], stateComment: String): GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any], expectedTokenTypes.asInstanceOf[js.Any], stateComment.asInstanceOf[js.Any])).asInstanceOf[GherkinException]
   }
   
   @JSImport("gherkin/dist/src/Errors", "UnexpectedTokenException")
@@ -169,8 +165,7 @@ object errorsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(token: default, expectedTokenTypes: js.Array[String], stateComment: String): GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any], expectedTokenTypes.asInstanceOf[js.Any], stateComment.asInstanceOf[js.Any])).asInstanceOf[GherkinException]
+    inline def create(token: default, expectedTokenTypes: js.Array[String], stateComment: String): GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any], expectedTokenTypes.asInstanceOf[js.Any], stateComment.asInstanceOf[js.Any])).asInstanceOf[GherkinException]
   }
   
   trait GherkinException
@@ -183,23 +178,18 @@ object errorsMod {
   }
   object GherkinException {
     
-    @scala.inline
-    def apply(errors: js.Array[Error], location: ILocation, message: String, name: String): GherkinException = {
+    inline def apply(errors: js.Array[Error], location: ILocation, message: String, name: String): GherkinException = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GherkinException]
     }
     
-    @scala.inline
-    implicit class GherkinExceptionMutableBuilder[Self <: GherkinException] (val x: Self) extends AnyVal {
+    extension [Self <: GherkinException](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setLocation(value: ILocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: ILocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }
   }
 }

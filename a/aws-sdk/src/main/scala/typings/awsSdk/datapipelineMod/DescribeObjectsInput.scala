@@ -28,34 +28,25 @@ trait DescribeObjectsInput extends StObject {
 }
 object DescribeObjectsInput {
   
-  @scala.inline
-  def apply(objectIds: idList, pipelineId: id): DescribeObjectsInput = {
+  inline def apply(objectIds: idList, pipelineId: id): DescribeObjectsInput = {
     val __obj = js.Dynamic.literal(objectIds = objectIds.asInstanceOf[js.Any], pipelineId = pipelineId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeObjectsInput]
   }
   
-  @scala.inline
-  implicit class DescribeObjectsInputMutableBuilder[Self <: DescribeObjectsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeObjectsInput](x: Self) {
     
-    @scala.inline
-    def setEvaluateExpressions(value: Boolean): Self = StObject.set(x, "evaluateExpressions", value.asInstanceOf[js.Any])
+    inline def setEvaluateExpressions(value: Boolean): Self = StObject.set(x, "evaluateExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluateExpressionsUndefined: Self = StObject.set(x, "evaluateExpressions", js.undefined)
+    inline def setEvaluateExpressionsUndefined: Self = StObject.set(x, "evaluateExpressions", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setObjectIds(value: idList): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
+    inline def setObjectIds(value: idList): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdsVarargs(value: id*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+    inline def setObjectIdsVarargs(value: id*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
     
-    @scala.inline
-    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
   }
 }

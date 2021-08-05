@@ -80,8 +80,7 @@ object utilsMod extends Shortcut {
   }
   object Utils {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arrayReplaceAt: (js.Array[js.Any], Double, js.Array[js.Any]) => js.Array[js.Any],
       assign: (js.Any, /* repeated */ js.Any) => js.Any,
       escapeHtml: String => String,
@@ -103,56 +102,39 @@ object utilsMod extends Shortcut {
       __obj.asInstanceOf[Utils]
     }
     
-    @scala.inline
-    implicit class UtilsMutableBuilder[Self <: Utils] (val x: Self) extends AnyVal {
+    extension [Self <: Utils](x: Self) {
       
-      @scala.inline
-      def setArrayReplaceAt(value: (js.Array[js.Any], Double, js.Array[js.Any]) => js.Array[js.Any]): Self = StObject.set(x, "arrayReplaceAt", js.Any.fromFunction3(value))
+      inline def setArrayReplaceAt(value: (js.Array[js.Any], Double, js.Array[js.Any]) => js.Array[js.Any]): Self = StObject.set(x, "arrayReplaceAt", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAssign(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "assign", js.Any.fromFunction2(value))
+      inline def setAssign(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "assign", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEscapeHtml(value: String => String): Self = StObject.set(x, "escapeHtml", js.Any.fromFunction1(value))
+      inline def setEscapeHtml(value: String => String): Self = StObject.set(x, "escapeHtml", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEscapeRE(value: String => String): Self = StObject.set(x, "escapeRE", js.Any.fromFunction1(value))
+      inline def setEscapeRE(value: String => String): Self = StObject.set(x, "escapeRE", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromCodePoint(value: Double => String): Self = StObject.set(x, "fromCodePoint", js.Any.fromFunction1(value))
+      inline def setFromCodePoint(value: Double => String): Self = StObject.set(x, "fromCodePoint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: (js.Any, /* keyof any */ String) => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction2(value))
+      inline def setHas(value: (js.Any, /* keyof any */ String) => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsMdAsciiPunct(value: Double => Boolean): Self = StObject.set(x, "isMdAsciiPunct", js.Any.fromFunction1(value))
+      inline def setIsMdAsciiPunct(value: Double => Boolean): Self = StObject.set(x, "isMdAsciiPunct", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsPunctChar(value: String => Boolean): Self = StObject.set(x, "isPunctChar", js.Any.fromFunction1(value))
+      inline def setIsPunctChar(value: String => Boolean): Self = StObject.set(x, "isPunctChar", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsSpace(value: Double => Boolean): Self = StObject.set(x, "isSpace", js.Any.fromFunction1(value))
+      inline def setIsSpace(value: Double => Boolean): Self = StObject.set(x, "isSpace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsString(value: js.Any => /* is string */ Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
+      inline def setIsString(value: js.Any => /* is string */ Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsValidEntityCode(value: Double => Boolean): Self = StObject.set(x, "isValidEntityCode", js.Any.fromFunction1(value))
+      inline def setIsValidEntityCode(value: Double => Boolean): Self = StObject.set(x, "isValidEntityCode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsWhiteSpace(value: Double => Boolean): Self = StObject.set(x, "isWhiteSpace", js.Any.fromFunction1(value))
+      inline def setIsWhiteSpace(value: Double => Boolean): Self = StObject.set(x, "isWhiteSpace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLib(value: Mdurl): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
+      inline def setLib(value: Mdurl): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeReference(value: String => String): Self = StObject.set(x, "normalizeReference", js.Any.fromFunction1(value))
+      inline def setNormalizeReference(value: String => String): Self = StObject.set(x, "normalizeReference", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnescapeAll(value: String => String): Self = StObject.set(x, "unescapeAll", js.Any.fromFunction1(value))
+      inline def setUnescapeAll(value: String => String): Self = StObject.set(x, "unescapeAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnescapeMd(value: String => String): Self = StObject.set(x, "unescapeMd", js.Any.fromFunction1(value))
+      inline def setUnescapeMd(value: String => String): Self = StObject.set(x, "unescapeMd", js.Any.fromFunction1(value))
     }
   }
   

@@ -28,37 +28,27 @@ trait DebugHookConfig extends StObject {
 }
 object DebugHookConfig {
   
-  @scala.inline
-  def apply(S3OutputPath: S3Uri): DebugHookConfig = {
+  inline def apply(S3OutputPath: S3Uri): DebugHookConfig = {
     val __obj = js.Dynamic.literal(S3OutputPath = S3OutputPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugHookConfig]
   }
   
-  @scala.inline
-  implicit class DebugHookConfigMutableBuilder[Self <: DebugHookConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DebugHookConfig](x: Self) {
     
-    @scala.inline
-    def setCollectionConfigurations(value: CollectionConfigurations): Self = StObject.set(x, "CollectionConfigurations", value.asInstanceOf[js.Any])
+    inline def setCollectionConfigurations(value: CollectionConfigurations): Self = StObject.set(x, "CollectionConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionConfigurationsUndefined: Self = StObject.set(x, "CollectionConfigurations", js.undefined)
+    inline def setCollectionConfigurationsUndefined: Self = StObject.set(x, "CollectionConfigurations", js.undefined)
     
-    @scala.inline
-    def setCollectionConfigurationsVarargs(value: CollectionConfiguration*): Self = StObject.set(x, "CollectionConfigurations", js.Array(value :_*))
+    inline def setCollectionConfigurationsVarargs(value: CollectionConfiguration*): Self = StObject.set(x, "CollectionConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setHookParameters(value: HookParameters): Self = StObject.set(x, "HookParameters", value.asInstanceOf[js.Any])
+    inline def setHookParameters(value: HookParameters): Self = StObject.set(x, "HookParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHookParametersUndefined: Self = StObject.set(x, "HookParameters", js.undefined)
+    inline def setHookParametersUndefined: Self = StObject.set(x, "HookParameters", js.undefined)
     
-    @scala.inline
-    def setLocalPath(value: DirectoryPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
+    inline def setLocalPath(value: DirectoryPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalPathUndefined: Self = StObject.set(x, "LocalPath", js.undefined)
+    inline def setLocalPathUndefined: Self = StObject.set(x, "LocalPath", js.undefined)
     
-    @scala.inline
-    def setS3OutputPath(value: S3Uri): Self = StObject.set(x, "S3OutputPath", value.asInstanceOf[js.Any])
+    inline def setS3OutputPath(value: S3Uri): Self = StObject.set(x, "S3OutputPath", value.asInstanceOf[js.Any])
   }
 }

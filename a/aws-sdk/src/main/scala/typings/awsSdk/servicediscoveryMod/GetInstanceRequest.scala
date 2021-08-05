@@ -18,19 +18,15 @@ trait GetInstanceRequest extends StObject {
 }
 object GetInstanceRequest {
   
-  @scala.inline
-  def apply(InstanceId: ResourceId, ServiceId: ResourceId): GetInstanceRequest = {
+  inline def apply(InstanceId: ResourceId, ServiceId: ResourceId): GetInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], ServiceId = ServiceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstanceRequest]
   }
   
-  @scala.inline
-  implicit class GetInstanceRequestMutableBuilder[Self <: GetInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: ResourceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: ResourceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: ResourceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: ResourceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
   }
 }

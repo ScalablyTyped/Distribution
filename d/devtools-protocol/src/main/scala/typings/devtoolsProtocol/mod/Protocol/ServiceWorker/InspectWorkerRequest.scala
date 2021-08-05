@@ -10,16 +10,13 @@ trait InspectWorkerRequest extends StObject {
 }
 object InspectWorkerRequest {
   
-  @scala.inline
-  def apply(versionId: String): InspectWorkerRequest = {
+  inline def apply(versionId: String): InspectWorkerRequest = {
     val __obj = js.Dynamic.literal(versionId = versionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InspectWorkerRequest]
   }
   
-  @scala.inline
-  implicit class InspectWorkerRequestMutableBuilder[Self <: InspectWorkerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InspectWorkerRequest](x: Self) {
     
-    @scala.inline
-    def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
   }
 }

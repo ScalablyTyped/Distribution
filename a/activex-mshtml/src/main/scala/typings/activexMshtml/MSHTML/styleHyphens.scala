@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleHyphens extends StObject
 object styleHyphens {
   
-  @scala.inline
-  def styleHyphensAuto: `2` = 2.asInstanceOf[`2`]
+  inline def styleHyphensAuto: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleHyphensManual: `1` = 1.asInstanceOf[`1`]
+  inline def styleHyphensManual: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleHyphensNone: `0` = 0.asInstanceOf[`0`]
+  inline def styleHyphensNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleHyphensNotSet: `3` = 3.asInstanceOf[`3`]
+  inline def styleHyphensNotSet: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleHyphens_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleHyphens_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

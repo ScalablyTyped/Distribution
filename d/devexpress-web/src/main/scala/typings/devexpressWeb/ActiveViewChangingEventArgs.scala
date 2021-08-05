@@ -28,22 +28,17 @@ trait ActiveViewChangingEventArgs
 }
 object ActiveViewChangingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, newView: ASPxSchedulerViewType, oldView: ASPxSchedulerViewType): ActiveViewChangingEventArgs = {
+  inline def apply(cancel: Boolean, newView: ASPxSchedulerViewType, oldView: ASPxSchedulerViewType): ActiveViewChangingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], newView = newView.asInstanceOf[js.Any], oldView = oldView.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveViewChangingEventArgs]
   }
   
-  @scala.inline
-  implicit class ActiveViewChangingEventArgsMutableBuilder[Self <: ActiveViewChangingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveViewChangingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewView(value: ASPxSchedulerViewType): Self = StObject.set(x, "newView", value.asInstanceOf[js.Any])
+    inline def setNewView(value: ASPxSchedulerViewType): Self = StObject.set(x, "newView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldView(value: ASPxSchedulerViewType): Self = StObject.set(x, "oldView", value.asInstanceOf[js.Any])
+    inline def setOldView(value: ASPxSchedulerViewType): Self = StObject.set(x, "oldView", value.asInstanceOf[js.Any])
   }
 }

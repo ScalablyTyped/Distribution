@@ -14,22 +14,17 @@ trait PlaceholderRendererProps extends StObject {
 }
 object PlaceholderRendererProps {
   
-  @scala.inline
-  def apply(canDrop: Boolean, draggedNode: TreeItem, isOver: Boolean): PlaceholderRendererProps = {
+  inline def apply(canDrop: Boolean, draggedNode: TreeItem, isOver: Boolean): PlaceholderRendererProps = {
     val __obj = js.Dynamic.literal(canDrop = canDrop.asInstanceOf[js.Any], draggedNode = draggedNode.asInstanceOf[js.Any], isOver = isOver.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceholderRendererProps]
   }
   
-  @scala.inline
-  implicit class PlaceholderRendererPropsMutableBuilder[Self <: PlaceholderRendererProps] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceholderRendererProps](x: Self) {
     
-    @scala.inline
-    def setCanDrop(value: Boolean): Self = StObject.set(x, "canDrop", value.asInstanceOf[js.Any])
+    inline def setCanDrop(value: Boolean): Self = StObject.set(x, "canDrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggedNode(value: TreeItem): Self = StObject.set(x, "draggedNode", value.asInstanceOf[js.Any])
+    inline def setDraggedNode(value: TreeItem): Self = StObject.set(x, "draggedNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOver(value: Boolean): Self = StObject.set(x, "isOver", value.asInstanceOf[js.Any])
+    inline def setIsOver(value: Boolean): Self = StObject.set(x, "isOver", value.asInstanceOf[js.Any])
   }
 }

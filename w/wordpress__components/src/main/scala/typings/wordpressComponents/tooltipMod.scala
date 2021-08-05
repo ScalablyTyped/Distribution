@@ -46,35 +46,26 @@ object tooltipMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(children: Element): Props = {
+      inline def apply(children: Element): Props = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setShortcut(value: ShortcutType): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
+        inline def setShortcut(value: ShortcutType): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
+        inline def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
         
-        @scala.inline
-        def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+        inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       }
     }
   }

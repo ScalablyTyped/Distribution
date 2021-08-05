@@ -52,8 +52,7 @@ object mod {
     def this(apiName: String) = this()
   }
   
-  @scala.inline
-  def API_=(x: APIConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("API")(x.asInstanceOf[js.Any])
+  inline def API_=(x: APIConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("API")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/cloud", "Bucket")
   @js.native
@@ -75,8 +74,7 @@ object mod {
     def this(name: String, opts: ResourceOptions) = this()
   }
   
-  @scala.inline
-  def Bucket_=(x: BucketConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bucket")(x.asInstanceOf[js.Any])
+  inline def Bucket_=(x: BucketConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bucket")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/cloud", "HostPathVolume")
   @js.native
@@ -100,8 +98,7 @@ object mod {
     var path: String = js.native
   }
   
-  @scala.inline
-  def HostPathVolume_=(x: HostPathVolumeConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HostPathVolume")(x.asInstanceOf[js.Any])
+  inline def HostPathVolume_=(x: HostPathVolumeConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HostPathVolume")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/cloud", "HttpEndpoint")
   @js.native
@@ -116,8 +113,7 @@ object mod {
     def this(apiName: String) = this()
   }
   
-  @scala.inline
-  def HttpEndpoint_=(x: APIConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpEndpoint")(x.asInstanceOf[js.Any])
+  inline def HttpEndpoint_=(x: APIConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpEndpoint")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/cloud", "HttpServer")
   @js.native
@@ -143,8 +139,7 @@ object mod {
     override val url: Output_[String] = js.native
   }
   
-  @scala.inline
-  def HttpServer_=(x: HttpServerConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpServer")(x.asInstanceOf[js.Any])
+  inline def HttpServer_=(x: HttpServerConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpServer")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/cloud", "Service")
   @js.native
@@ -166,8 +161,7 @@ object mod {
     def this(name: String, args: ServiceArguments, opts: ResourceOptions) = this()
   }
   
-  @scala.inline
-  def Service_=(x: ServiceConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Service")(x.asInstanceOf[js.Any])
+  inline def Service_=(x: ServiceConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Service")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/cloud", "SharedVolume")
   @js.native
@@ -195,8 +189,7 @@ object mod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def SharedVolume_=(x: SharedVolumeConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SharedVolume")(x.asInstanceOf[js.Any])
+  inline def SharedVolume_=(x: SharedVolumeConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SharedVolume")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/cloud", "Table")
   @js.native
@@ -231,8 +224,7 @@ object mod {
     ) = this()
   }
   
-  @scala.inline
-  def Table_=(x: TableConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Table")(x.asInstanceOf[js.Any])
+  inline def Table_=(x: TableConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Table")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/cloud", "Task")
   @js.native
@@ -255,8 +247,7 @@ object mod {
     def this(name: String, container: Container, opts: ResourceOptions) = this()
   }
   
-  @scala.inline
-  def Task_=(x: TaskConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Task")(x.asInstanceOf[js.Any])
+  inline def Task_=(x: TaskConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Task")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/cloud", "Topic")
   @js.native
@@ -301,8 +292,7 @@ object mod {
     override def subscribe(name: String, handler: js.Function1[T, js.Promise[Unit]]): Unit = js.native
   }
   
-  @scala.inline
-  def Topic_=(x: TopicConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Topic")(x.asInstanceOf[js.Any])
+  inline def Topic_=(x: TopicConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Topic")(x.asInstanceOf[js.Any])
   
   object timer {
     
@@ -310,32 +300,20 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def cron(name: String, cronTab: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cron")(name.asInstanceOf[js.Any], cronTab.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def cron(name: String, cronTab: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cron")(name.asInstanceOf[js.Any], cronTab.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def cron(name: String, cronTab: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cron")(name.asInstanceOf[js.Any], cronTab.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def cron(name: String, cronTab: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cron")(name.asInstanceOf[js.Any], cronTab.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def daily(name: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def daily(name: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def daily(name: String, schedule: DailySchedule, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def daily(name: String, schedule: DailySchedule, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def daily(name: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def daily(name: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def daily(name: String, schedule: DailySchedule, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def daily(name: String, schedule: DailySchedule, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def hourly(name: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def hourly(name: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def hourly(name: String, schedule: HourlySchedule, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def hourly(name: String, schedule: HourlySchedule, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def hourly(name: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def hourly(name: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def hourly(name: String, schedule: HourlySchedule, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def hourly(name: String, schedule: HourlySchedule, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def interval(name: String, options: IntervalRate, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def interval(name: String, options: IntervalRate, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def interval(name: String, options: IntervalRate, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def interval(name: String, options: IntervalRate, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

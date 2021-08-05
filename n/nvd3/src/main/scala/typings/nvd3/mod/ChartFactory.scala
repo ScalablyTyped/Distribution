@@ -12,22 +12,17 @@ trait ChartFactory[TChart /* <: Nvd3Element */] extends StObject {
 }
 object ChartFactory {
   
-  @scala.inline
-  def apply[TChart /* <: Nvd3Element */](generate: () => TChart): ChartFactory[TChart] = {
+  inline def apply[TChart /* <: Nvd3Element */](generate: () => TChart): ChartFactory[TChart] = {
     val __obj = js.Dynamic.literal(generate = js.Any.fromFunction0(generate))
     __obj.asInstanceOf[ChartFactory[TChart]]
   }
   
-  @scala.inline
-  implicit class ChartFactoryMutableBuilder[Self <: ChartFactory[?], TChart /* <: Nvd3Element */] (val x: Self & ChartFactory[TChart]) extends AnyVal {
+  extension [Self <: ChartFactory[?], TChart /* <: Nvd3Element */](x: Self & ChartFactory[TChart]) {
     
-    @scala.inline
-    def setCallback(value: /* chart */ TChart => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: /* chart */ TChart => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setGenerate(value: () => TChart): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
+    inline def setGenerate(value: () => TChart): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
   }
 }

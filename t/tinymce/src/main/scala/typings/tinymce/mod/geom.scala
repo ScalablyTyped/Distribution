@@ -25,8 +25,7 @@ object geom {
   }
   object Rect {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clamp: (Rect, Rect, Boolean) => Rect,
       create: (Double, Double, Double, Double) => Rect,
       findBestRelativePosition: (Rect, Rect, Rect, js.Array[js.Any]) => Unit,
@@ -39,29 +38,21 @@ object geom {
       __obj.asInstanceOf[Rect]
     }
     
-    @scala.inline
-    implicit class RectMutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
+    extension [Self <: Rect](x: Self) {
       
-      @scala.inline
-      def setClamp(value: (Rect, Rect, Boolean) => Rect): Self = StObject.set(x, "clamp", js.Any.fromFunction3(value))
+      inline def setClamp(value: (Rect, Rect, Boolean) => Rect): Self = StObject.set(x, "clamp", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCreate(value: (Double, Double, Double, Double) => Rect): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
+      inline def setCreate(value: (Double, Double, Double, Double) => Rect): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindBestRelativePosition(value: (Rect, Rect, Rect, js.Array[js.Any]) => Unit): Self = StObject.set(x, "findBestRelativePosition", js.Any.fromFunction4(value))
+      inline def setFindBestRelativePosition(value: (Rect, Rect, Rect, js.Array[js.Any]) => Unit): Self = StObject.set(x, "findBestRelativePosition", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFromClientRect(value: ClientRect => Rect): Self = StObject.set(x, "fromClientRect", js.Any.fromFunction1(value))
+      inline def setFromClientRect(value: ClientRect => Rect): Self = StObject.set(x, "fromClientRect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInflate(value: (Rect, Double, Double) => Rect): Self = StObject.set(x, "inflate", js.Any.fromFunction3(value))
+      inline def setInflate(value: (Rect, Double, Double) => Rect): Self = StObject.set(x, "inflate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIntersect(value: (Rect, Rect) => Rect): Self = StObject.set(x, "intersect", js.Any.fromFunction2(value))
+      inline def setIntersect(value: (Rect, Rect) => Rect): Self = StObject.set(x, "intersect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRelativePosition(value: (Rect, Rect, String) => Unit): Self = StObject.set(x, "relativePosition", js.Any.fromFunction3(value))
+      inline def setRelativePosition(value: (Rect, Rect, String) => Unit): Self = StObject.set(x, "relativePosition", js.Any.fromFunction3(value))
     }
   }
 }

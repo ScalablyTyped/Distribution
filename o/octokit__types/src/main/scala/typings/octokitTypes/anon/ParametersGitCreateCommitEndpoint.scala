@@ -18,8 +18,7 @@ trait ParametersGitCreateCommitEndpoint extends StObject {
 }
 object ParametersGitCreateCommitEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: GitCreateCommitEndpoint,
     request: GitCreateCommitRequestOptions,
     response: OctokitResponse[GitCreateCommitResponseData]
@@ -28,16 +27,12 @@ object ParametersGitCreateCommitEndpoint {
     __obj.asInstanceOf[ParametersGitCreateCommitEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersGitCreateCommitEndpointMutableBuilder[Self <: ParametersGitCreateCommitEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersGitCreateCommitEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: GitCreateCommitEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GitCreateCommitEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: GitCreateCommitRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: GitCreateCommitRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[GitCreateCommitResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[GitCreateCommitResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

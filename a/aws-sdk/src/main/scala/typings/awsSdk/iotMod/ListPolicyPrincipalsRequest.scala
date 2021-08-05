@@ -28,34 +28,25 @@ trait ListPolicyPrincipalsRequest extends StObject {
 }
 object ListPolicyPrincipalsRequest {
   
-  @scala.inline
-  def apply(policyName: PolicyName): ListPolicyPrincipalsRequest = {
+  inline def apply(policyName: PolicyName): ListPolicyPrincipalsRequest = {
     val __obj = js.Dynamic.literal(policyName = policyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPolicyPrincipalsRequest]
   }
   
-  @scala.inline
-  implicit class ListPolicyPrincipalsRequestMutableBuilder[Self <: ListPolicyPrincipalsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListPolicyPrincipalsRequest](x: Self) {
     
-    @scala.inline
-    def setAscendingOrder(value: AscendingOrder): Self = StObject.set(x, "ascendingOrder", value.asInstanceOf[js.Any])
+    inline def setAscendingOrder(value: AscendingOrder): Self = StObject.set(x, "ascendingOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAscendingOrderUndefined: Self = StObject.set(x, "ascendingOrder", js.undefined)
+    inline def setAscendingOrderUndefined: Self = StObject.set(x, "ascendingOrder", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DeleteImagePipelineRequest extends StObject {
 }
 object DeleteImagePipelineRequest {
   
-  @scala.inline
-  def apply(imagePipelineArn: ImagePipelineArn): DeleteImagePipelineRequest = {
+  inline def apply(imagePipelineArn: ImagePipelineArn): DeleteImagePipelineRequest = {
     val __obj = js.Dynamic.literal(imagePipelineArn = imagePipelineArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteImagePipelineRequest]
   }
   
-  @scala.inline
-  implicit class DeleteImagePipelineRequestMutableBuilder[Self <: DeleteImagePipelineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteImagePipelineRequest](x: Self) {
     
-    @scala.inline
-    def setImagePipelineArn(value: ImagePipelineArn): Self = StObject.set(x, "imagePipelineArn", value.asInstanceOf[js.Any])
+    inline def setImagePipelineArn(value: ImagePipelineArn): Self = StObject.set(x, "imagePipelineArn", value.asInstanceOf[js.Any])
   }
 }

@@ -16,25 +16,19 @@ trait VerificationRequestParams extends StObject {
 }
 object VerificationRequestParams {
   
-  @scala.inline
-  def apply(baseUrl: String, identifier: String, provider: ProviderEmailOptions, url: String): VerificationRequestParams = {
+  inline def apply(baseUrl: String, identifier: String, provider: ProviderEmailOptions, url: String): VerificationRequestParams = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerificationRequestParams]
   }
   
-  @scala.inline
-  implicit class VerificationRequestParamsMutableBuilder[Self <: VerificationRequestParams] (val x: Self) extends AnyVal {
+  extension [Self <: VerificationRequestParams](x: Self) {
     
-    @scala.inline
-    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvider(value: ProviderEmailOptions): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: ProviderEmailOptions): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait BackgroundColorDarkMode extends StObject {
 }
 object BackgroundColorDarkMode {
   
-  @scala.inline
-  def apply(backgroundColor: Color): BackgroundColorDarkMode = {
+  inline def apply(backgroundColor: Color): BackgroundColorDarkMode = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundColorDarkMode]
   }
   
-  @scala.inline
-  implicit class BackgroundColorDarkModeMutableBuilder[Self <: BackgroundColorDarkMode] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundColorDarkMode](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDarkMode(value: `1`): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
+    inline def setDarkMode(value: `1`): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
+    inline def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
   }
 }

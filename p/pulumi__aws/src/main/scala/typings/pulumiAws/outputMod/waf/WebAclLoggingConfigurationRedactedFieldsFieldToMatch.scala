@@ -18,23 +18,18 @@ trait WebAclLoggingConfigurationRedactedFieldsFieldToMatch extends StObject {
 }
 object WebAclLoggingConfigurationRedactedFieldsFieldToMatch {
   
-  @scala.inline
-  def apply(`type`: String): WebAclLoggingConfigurationRedactedFieldsFieldToMatch = {
+  inline def apply(`type`: String): WebAclLoggingConfigurationRedactedFieldsFieldToMatch = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclLoggingConfigurationRedactedFieldsFieldToMatch]
   }
   
-  @scala.inline
-  implicit class WebAclLoggingConfigurationRedactedFieldsFieldToMatchMutableBuilder[Self <: WebAclLoggingConfigurationRedactedFieldsFieldToMatch] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclLoggingConfigurationRedactedFieldsFieldToMatch](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

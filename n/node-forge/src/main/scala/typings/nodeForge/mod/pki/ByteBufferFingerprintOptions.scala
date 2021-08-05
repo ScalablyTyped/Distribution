@@ -26,31 +26,23 @@ trait ByteBufferFingerprintOptions extends StObject {
 }
 object ByteBufferFingerprintOptions {
   
-  @scala.inline
-  def apply(): ByteBufferFingerprintOptions = {
+  inline def apply(): ByteBufferFingerprintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ByteBufferFingerprintOptions]
   }
   
-  @scala.inline
-  implicit class ByteBufferFingerprintOptionsMutableBuilder[Self <: ByteBufferFingerprintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ByteBufferFingerprintOptions](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    @scala.inline
-    def setMd(value: MessageDigest): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+    inline def setMd(value: MessageDigest): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+    inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
     
-    @scala.inline
-    def setType(value: SubjectPublicKeyInfo | RSAPublicKey): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SubjectPublicKeyInfo | RSAPublicKey): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

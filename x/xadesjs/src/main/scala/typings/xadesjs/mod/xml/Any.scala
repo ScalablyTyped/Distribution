@@ -13,6 +13,5 @@ class Any ()
   extends typings.xadesjs.xmlMod.Any
 object Any {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("Any").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.Any]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("Any").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.Any]]
 }

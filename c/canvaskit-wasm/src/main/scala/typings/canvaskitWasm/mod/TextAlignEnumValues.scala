@@ -22,8 +22,7 @@ trait TextAlignEnumValues
 }
 object TextAlignEnumValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Center: TextAlign,
     End: TextAlign,
     Justify: TextAlign,
@@ -36,25 +35,18 @@ object TextAlignEnumValues {
     __obj.asInstanceOf[TextAlignEnumValues]
   }
   
-  @scala.inline
-  implicit class TextAlignEnumValuesMutableBuilder[Self <: TextAlignEnumValues] (val x: Self) extends AnyVal {
+  extension [Self <: TextAlignEnumValues](x: Self) {
     
-    @scala.inline
-    def setCenter(value: TextAlign): Self = StObject.set(x, "Center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: TextAlign): Self = StObject.set(x, "Center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: TextAlign): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: TextAlign): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustify(value: TextAlign): Self = StObject.set(x, "Justify", value.asInstanceOf[js.Any])
+    inline def setJustify(value: TextAlign): Self = StObject.set(x, "Justify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: TextAlign): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: TextAlign): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: TextAlign): Self = StObject.set(x, "Right", value.asInstanceOf[js.Any])
+    inline def setRight(value: TextAlign): Self = StObject.set(x, "Right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: TextAlign): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: TextAlign): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
   }
 }

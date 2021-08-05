@@ -114,14 +114,10 @@ object Point {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromPolar(distance: Double, angle: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPolar")(distance.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Point]
-  @scala.inline
-  def fromPolar(distance: Double, angle: Double, origin: String): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPolar")(distance.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Point]
-  @scala.inline
-  def fromPolar(distance: Double, angle: Double, origin: PlainPoint): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPolar")(distance.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Point]
+  inline def fromPolar(distance: Double, angle: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPolar")(distance.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Point]
+  inline def fromPolar(distance: Double, angle: Double, origin: String): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPolar")(distance.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Point]
+  inline def fromPolar(distance: Double, angle: Double, origin: PlainPoint): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPolar")(distance.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Point]
   
   /* static member */
-  @scala.inline
-  def random(x1: Double, x2: Double, y1: Double, y2: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(x1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Point]
+  inline def random(x1: Double, x2: Double, y1: Double, y2: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(x1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Point]
 }

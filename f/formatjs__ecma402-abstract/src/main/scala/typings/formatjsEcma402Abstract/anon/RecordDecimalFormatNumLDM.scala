@@ -34,8 +34,7 @@ trait RecordDecimalFormatNumLDM extends StObject {
 }
 object RecordDecimalFormatNumLDM {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `1000`: LDMLPluralRuleMap[String],
     `10000`: LDMLPluralRuleMap[String],
     `100000`: LDMLPluralRuleMap[String],
@@ -65,43 +64,30 @@ object RecordDecimalFormatNumLDM {
     __obj.asInstanceOf[RecordDecimalFormatNumLDM]
   }
   
-  @scala.inline
-  implicit class RecordDecimalFormatNumLDMMutableBuilder[Self <: RecordDecimalFormatNumLDM] (val x: Self) extends AnyVal {
+  extension [Self <: RecordDecimalFormatNumLDM](x: Self) {
     
-    @scala.inline
-    def set1000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "1000", value.asInstanceOf[js.Any])
+    inline def set1000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "1000", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set10000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "10000", value.asInstanceOf[js.Any])
+    inline def set10000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "10000", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set100000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "100000", value.asInstanceOf[js.Any])
+    inline def set100000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "100000", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "1000000", value.asInstanceOf[js.Any])
+    inline def set1000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "1000000", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set10000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "10000000", value.asInstanceOf[js.Any])
+    inline def set10000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "10000000", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set100000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "100000000", value.asInstanceOf[js.Any])
+    inline def set100000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "100000000", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1000000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "1000000000", value.asInstanceOf[js.Any])
+    inline def set1000000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "1000000000", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set10000000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "10000000000", value.asInstanceOf[js.Any])
+    inline def set10000000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "10000000000", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set100000000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "100000000000", value.asInstanceOf[js.Any])
+    inline def set100000000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "100000000000", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1000000000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "1000000000000", value.asInstanceOf[js.Any])
+    inline def set1000000000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "1000000000000", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set10000000000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "10000000000000", value.asInstanceOf[js.Any])
+    inline def set10000000000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "10000000000000", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set100000000000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "100000000000000", value.asInstanceOf[js.Any])
+    inline def set100000000000000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "100000000000000", value.asInstanceOf[js.Any])
   }
 }

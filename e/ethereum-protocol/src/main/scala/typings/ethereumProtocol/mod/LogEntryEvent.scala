@@ -12,16 +12,13 @@ trait LogEntryEvent
 }
 object LogEntryEvent {
   
-  @scala.inline
-  def apply(address: String, data: String, removed: Boolean, topics: js.Array[String], transactionHash: String): LogEntryEvent = {
+  inline def apply(address: String, data: String, removed: Boolean, topics: js.Array[String], transactionHash: String): LogEntryEvent = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], blockHash = null, blockNumber = null, logIndex = null, transactionIndex = null)
     __obj.asInstanceOf[LogEntryEvent]
   }
   
-  @scala.inline
-  implicit class LogEntryEventMutableBuilder[Self <: LogEntryEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LogEntryEvent](x: Self) {
     
-    @scala.inline
-    def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
   }
 }

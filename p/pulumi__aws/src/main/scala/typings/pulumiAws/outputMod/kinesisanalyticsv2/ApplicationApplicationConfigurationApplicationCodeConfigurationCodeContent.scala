@@ -20,25 +20,19 @@ trait ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent
 }
 object ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent {
   
-  @scala.inline
-  def apply(): ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent = {
+  inline def apply(): ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentMutableBuilder[Self <: ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent](x: Self) {
     
-    @scala.inline
-    def setS3ContentLocation(value: ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation): Self = StObject.set(x, "s3ContentLocation", value.asInstanceOf[js.Any])
+    inline def setS3ContentLocation(value: ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation): Self = StObject.set(x, "s3ContentLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ContentLocationUndefined: Self = StObject.set(x, "s3ContentLocation", js.undefined)
+    inline def setS3ContentLocationUndefined: Self = StObject.set(x, "s3ContentLocation", js.undefined)
     
-    @scala.inline
-    def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
+    inline def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextContentUndefined: Self = StObject.set(x, "textContent", js.undefined)
+    inline def setTextContentUndefined: Self = StObject.set(x, "textContent", js.undefined)
   }
 }

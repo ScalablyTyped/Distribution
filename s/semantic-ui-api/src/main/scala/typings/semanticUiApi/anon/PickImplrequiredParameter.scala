@@ -11,16 +11,13 @@ trait PickImplrequiredParameter extends StObject {
 }
 object PickImplrequiredParameter {
   
-  @scala.inline
-  def apply(requiredParameter: String): PickImplrequiredParameter = {
+  inline def apply(requiredParameter: String): PickImplrequiredParameter = {
     val __obj = js.Dynamic.literal(requiredParameter = requiredParameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrequiredParameter]
   }
   
-  @scala.inline
-  implicit class PickImplrequiredParameterMutableBuilder[Self <: PickImplrequiredParameter] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplrequiredParameter](x: Self) {
     
-    @scala.inline
-    def setRequiredParameter(value: String): Self = StObject.set(x, "requiredParameter", value.asInstanceOf[js.Any])
+    inline def setRequiredParameter(value: String): Self = StObject.set(x, "requiredParameter", value.asInstanceOf[js.Any])
   }
 }

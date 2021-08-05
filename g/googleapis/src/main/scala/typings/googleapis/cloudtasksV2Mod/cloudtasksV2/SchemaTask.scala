@@ -103,73 +103,51 @@ trait SchemaTask extends StObject {
 }
 object SchemaTask {
   
-  @scala.inline
-  def apply(): SchemaTask = {
+  inline def apply(): SchemaTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTask]
   }
   
-  @scala.inline
-  implicit class SchemaTaskMutableBuilder[Self <: SchemaTask] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTask](x: Self) {
     
-    @scala.inline
-    def setAppEngineHttpRequest(value: SchemaAppEngineHttpRequest): Self = StObject.set(x, "appEngineHttpRequest", value.asInstanceOf[js.Any])
+    inline def setAppEngineHttpRequest(value: SchemaAppEngineHttpRequest): Self = StObject.set(x, "appEngineHttpRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppEngineHttpRequestUndefined: Self = StObject.set(x, "appEngineHttpRequest", js.undefined)
+    inline def setAppEngineHttpRequestUndefined: Self = StObject.set(x, "appEngineHttpRequest", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDispatchCount(value: Double): Self = StObject.set(x, "dispatchCount", value.asInstanceOf[js.Any])
+    inline def setDispatchCount(value: Double): Self = StObject.set(x, "dispatchCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDispatchCountUndefined: Self = StObject.set(x, "dispatchCount", js.undefined)
+    inline def setDispatchCountUndefined: Self = StObject.set(x, "dispatchCount", js.undefined)
     
-    @scala.inline
-    def setDispatchDeadline(value: String): Self = StObject.set(x, "dispatchDeadline", value.asInstanceOf[js.Any])
+    inline def setDispatchDeadline(value: String): Self = StObject.set(x, "dispatchDeadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDispatchDeadlineUndefined: Self = StObject.set(x, "dispatchDeadline", js.undefined)
+    inline def setDispatchDeadlineUndefined: Self = StObject.set(x, "dispatchDeadline", js.undefined)
     
-    @scala.inline
-    def setFirstAttempt(value: SchemaAttempt): Self = StObject.set(x, "firstAttempt", value.asInstanceOf[js.Any])
+    inline def setFirstAttempt(value: SchemaAttempt): Self = StObject.set(x, "firstAttempt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstAttemptUndefined: Self = StObject.set(x, "firstAttempt", js.undefined)
+    inline def setFirstAttemptUndefined: Self = StObject.set(x, "firstAttempt", js.undefined)
     
-    @scala.inline
-    def setLastAttempt(value: SchemaAttempt): Self = StObject.set(x, "lastAttempt", value.asInstanceOf[js.Any])
+    inline def setLastAttempt(value: SchemaAttempt): Self = StObject.set(x, "lastAttempt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAttemptUndefined: Self = StObject.set(x, "lastAttempt", js.undefined)
+    inline def setLastAttemptUndefined: Self = StObject.set(x, "lastAttempt", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResponseCount(value: Double): Self = StObject.set(x, "responseCount", value.asInstanceOf[js.Any])
+    inline def setResponseCount(value: Double): Self = StObject.set(x, "responseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCountUndefined: Self = StObject.set(x, "responseCount", js.undefined)
+    inline def setResponseCountUndefined: Self = StObject.set(x, "responseCount", js.undefined)
     
-    @scala.inline
-    def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
+    inline def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
+    inline def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

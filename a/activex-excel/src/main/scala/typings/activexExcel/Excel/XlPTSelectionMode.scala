@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPTSelectionMode extends StObject
 object XlPTSelectionMode {
   
-  @scala.inline
-  def xlBlanks: `4` = 4.asInstanceOf[`4`]
+  inline def xlBlanks: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlButton: `15` = 15.asInstanceOf[`15`]
+  inline def xlButton: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def xlDataAndLabel: `0` = 0.asInstanceOf[`0`]
+  inline def xlDataAndLabel: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlDataOnly: `2` = 2.asInstanceOf[`2`]
+  inline def xlDataOnly: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlFirstRow: `256` = 256.asInstanceOf[`256`]
+  inline def xlFirstRow: `256` = 256.asInstanceOf[`256`]
   
-  @scala.inline
-  def xlLabelOnly: `1` = 1.asInstanceOf[`1`]
+  inline def xlLabelOnly: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlOrigin: `3` = 3.asInstanceOf[`3`]
+  inline def xlOrigin: `3` = 3.asInstanceOf[`3`]
 }

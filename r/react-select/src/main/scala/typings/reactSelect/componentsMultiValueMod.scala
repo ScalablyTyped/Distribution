@@ -41,8 +41,7 @@ object componentsMultiValueMod {
     @JSImport("react-select/src/components/MultiValue", "default.defaultProps")
     @js.native
     def defaultProps: CropWithEllipsis = js.native
-    @scala.inline
-    def defaultProps_=(x: CropWithEllipsis): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CropWithEllipsis): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/src/components/MultiValue", "MultiValue")
@@ -66,8 +65,7 @@ object componentsMultiValueMod {
     @JSImport("react-select/src/components/MultiValue", "MultiValue.defaultProps")
     @js.native
     def defaultProps: CropWithEllipsis = js.native
-    @scala.inline
-    def defaultProps_=(x: CropWithEllipsis): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CropWithEllipsis): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/src/components/MultiValue", "MultiValueContainer")
@@ -103,18 +101,14 @@ object componentsMultiValueMod {
     @JSImport("react-select/src/components/MultiValue", "MultiValueRemove.defaultProps")
     @js.native
     def defaultProps: Children = js.native
-    @scala.inline
-    def defaultProps_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def multiValueCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueCSS")().asInstanceOf[CSSProperties]
+  inline def multiValueCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueCSS")().asInstanceOf[CSSProperties]
   
-  @scala.inline
-  def multiValueLabelCSS(props: MultiValueProps[js.Any]): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueLabelCSS")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def multiValueLabelCSS(props: MultiValueProps[js.Any]): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueLabelCSS")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
-  @scala.inline
-  def multiValueRemoveCSS(props: MultiValueProps[js.Any]): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueRemoveCSS")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def multiValueRemoveCSS(props: MultiValueProps[js.Any]): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueRemoveCSS")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
   trait MultiValueGenericProps[OptionType /* <: OptionTypeBase */] extends StObject {
     
@@ -128,29 +122,22 @@ object componentsMultiValueMod {
   }
   object MultiValueGenericProps {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](data: OptionType, innerProps: ClassName, selectProps: js.Any): MultiValueGenericProps[OptionType] = {
+    inline def apply[OptionType /* <: OptionTypeBase */](data: OptionType, innerProps: ClassName, selectProps: js.Any): MultiValueGenericProps[OptionType] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], innerProps = innerProps.asInstanceOf[js.Any], selectProps = selectProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultiValueGenericProps[OptionType]]
     }
     
-    @scala.inline
-    implicit class MultiValueGenericPropsMutableBuilder[Self <: MultiValueGenericProps[?], OptionType /* <: OptionTypeBase */] (val x: Self & MultiValueGenericProps[OptionType]) extends AnyVal {
+    extension [Self <: MultiValueGenericProps[?], OptionType /* <: OptionTypeBase */](x: Self & MultiValueGenericProps[OptionType]) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setData(value: OptionType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: OptionType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerProps(value: ClassName): Self = StObject.set(x, "innerProps", value.asInstanceOf[js.Any])
+      inline def setInnerProps(value: ClassName): Self = StObject.set(x, "innerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectProps(value: js.Any): Self = StObject.set(x, "selectProps", value.asInstanceOf[js.Any])
+      inline def setSelectProps(value: js.Any): Self = StObject.set(x, "selectProps", value.asInstanceOf[js.Any])
     }
   }
   

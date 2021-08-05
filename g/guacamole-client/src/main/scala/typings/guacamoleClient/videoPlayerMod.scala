@@ -43,8 +43,7 @@ object videoPlayerMod {
       * reading from the given stream, or null if support for the given mimetype
       * is absent.
       */
-    @scala.inline
-    def getInstance(stream: InputStream, layer: VisibleLayer, mimetype: MimeType): VideoPlayer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[VideoPlayer | Null]
+    inline def getInstance(stream: InputStream, layer: VisibleLayer, mimetype: MimeType): VideoPlayer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[VideoPlayer | Null]
     
     /**
       * Returns a list of all mimetypes supported by any built-in
@@ -55,8 +54,7 @@ object videoPlayerMod {
       * @returns A list of all mimetypes supported by any built-in Guacamole.VideoPlayer,
       * excluding any parameters.
       */
-    @scala.inline
-    def getSupportedTypes(): js.Array[Mimetype] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedTypes")().asInstanceOf[js.Array[Mimetype]]
+    inline def getSupportedTypes(): js.Array[Mimetype] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedTypes")().asInstanceOf[js.Array[Mimetype]]
     
     /**
       * Determines whether the given mimetype is supported by any built-in
@@ -65,7 +63,6 @@ object videoPlayerMod {
       * @param mimetype The mimetype to check.
       * @returns true if the given mimetype is supported by any built-in Guacamole.VideoPlayer, false otherwise.
       */
-    @scala.inline
-    def isSupportedType(mimetype: MimeType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(mimetype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isSupportedType(mimetype: MimeType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(mimetype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

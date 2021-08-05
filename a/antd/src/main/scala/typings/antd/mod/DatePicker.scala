@@ -43,8 +43,7 @@ object DatePicker {
   @JSImport("antd", "DatePicker.MonthPicker")
   @js.native
   def MonthPicker: ComponentClass[PickPickPickerDatePropsMo, js.Any] = js.native
-  @scala.inline
-  def MonthPicker_=(x: ComponentClass[PickPickPickerDatePropsMo, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonthPicker")(x.asInstanceOf[js.Any])
+  inline def MonthPicker_=(x: ComponentClass[PickPickPickerDatePropsMo, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonthPicker")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("antd", "DatePicker.QuarterPicker")
@@ -57,8 +56,7 @@ object DatePicker {
   @JSImport("antd", "DatePicker.QuarterPicker")
   @js.native
   def QuarterPicker: ComponentClass[PickPickPickerTimePropsMo, js.Any] = js.native
-  @scala.inline
-  def QuarterPicker_=(x: ComponentClass[PickPickPickerTimePropsMo, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QuarterPicker")(x.asInstanceOf[js.Any])
+  inline def QuarterPicker_=(x: ComponentClass[PickPickPickerTimePropsMo, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QuarterPicker")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("antd", "DatePicker.RangePicker")
@@ -71,8 +69,7 @@ object DatePicker {
   @JSImport("antd", "DatePicker.RangePicker")
   @js.native
   def RangePicker: ComponentClass[RangePickerProps[Moment], js.Any] = js.native
-  @scala.inline
-  def RangePicker_=(x: ComponentClass[RangePickerProps[Moment], js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RangePicker")(x.asInstanceOf[js.Any])
+  inline def RangePicker_=(x: ComponentClass[RangePickerProps[Moment], js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RangePicker")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("antd", "DatePicker.TimePicker")
@@ -85,8 +82,7 @@ object DatePicker {
   @JSImport("antd", "DatePicker.TimePicker")
   @js.native
   def TimePicker: ComponentClass[PickPickPickerTimePropsMo, js.Any] = js.native
-  @scala.inline
-  def TimePicker_=(x: ComponentClass[PickPickPickerTimePropsMo, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimePicker")(x.asInstanceOf[js.Any])
+  inline def TimePicker_=(x: ComponentClass[PickPickPickerTimePropsMo, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimePicker")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("antd", "DatePicker.WeekPicker")
@@ -99,8 +95,7 @@ object DatePicker {
   @JSImport("antd", "DatePicker.WeekPicker")
   @js.native
   def WeekPicker: ComponentClass[PickPickPickerDatePropsMo, js.Any] = js.native
-  @scala.inline
-  def WeekPicker_=(x: ComponentClass[PickPickPickerDatePropsMo, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WeekPicker")(x.asInstanceOf[js.Any])
+  inline def WeekPicker_=(x: ComponentClass[PickPickPickerDatePropsMo, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WeekPicker")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("antd", "DatePicker.YearPicker")
@@ -113,54 +108,45 @@ object DatePicker {
   @JSImport("antd", "DatePicker.YearPicker")
   @js.native
   def YearPicker: ComponentClass[PickPickPickerDatePropsMo, js.Any] = js.native
-  @scala.inline
-  def YearPicker_=(x: ComponentClass[PickPickPickerDatePropsMo, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YearPicker")(x.asInstanceOf[js.Any])
+  inline def YearPicker_=(x: ComponentClass[PickPickPickerDatePropsMo, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YearPicker")(x.asInstanceOf[js.Any])
   
   @JSImport("antd", "DatePicker.childContextTypes")
   @js.native
   def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-  @scala.inline
-  def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+  inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("antd", "DatePicker.contextType")
   @js.native
   def contextType: js.UndefOr[Context[js.Any]] = js.native
-  @scala.inline
-  def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+  inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   
   @JSImport("antd", "DatePicker.contextTypes")
   @js.native
   def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-  @scala.inline
-  def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("antd", "DatePicker.defaultProps")
   @js.native
   def defaultProps: js.UndefOr[Partial[PickerProps[Moment]]] = js.native
-  @scala.inline
-  def defaultProps_=(x: js.UndefOr[Partial[PickerProps[Moment]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: js.UndefOr[Partial[PickerProps[Moment]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("antd", "DatePicker.displayName")
   @js.native
   def displayName: js.UndefOr[String] = js.native
-  @scala.inline
-  def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
   @JSImport("antd", "DatePicker.getDerivedStateFromError")
   @js.native
   def getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[PickerProps[Moment], js.Any]] = js.native
-  @scala.inline
-  def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[PickerProps[Moment], js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
+  inline def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[PickerProps[Moment], js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
   
   @JSImport("antd", "DatePicker.getDerivedStateFromProps")
   @js.native
   def getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[PickerProps[Moment], js.Any]] = js.native
-  @scala.inline
-  def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[PickerProps[Moment], js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
+  inline def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[PickerProps[Moment], js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
   
   @JSImport("antd", "DatePicker.propTypes")
   @js.native
   def propTypes: js.UndefOr[WeakValidationMap[PickerProps[Moment]]] = js.native
-  @scala.inline
-  def propTypes_=(x: js.UndefOr[WeakValidationMap[PickerProps[Moment]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  inline def propTypes_=(x: js.UndefOr[WeakValidationMap[PickerProps[Moment]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

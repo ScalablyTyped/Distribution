@@ -17,22 +17,17 @@ trait OnClickTagName extends StObject {
 }
 object OnClickTagName {
   
-  @scala.inline
-  def apply(): OnClickTagName = {
+  inline def apply(): OnClickTagName = {
     val __obj = js.Dynamic.literal(tagName = "a")
     __obj.asInstanceOf[OnClickTagName]
   }
   
-  @scala.inline
-  implicit class OnClickTagNameMutableBuilder[Self <: OnClickTagName] (val x: Self) extends AnyVal {
+  extension [Self <: OnClickTagName](x: Self) {
     
-    @scala.inline
-    def setOnClick(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setTagName(value: a): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: a): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait RelativeDateFilter
 }
 object RelativeDateFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFieldAsync: () => js.Promise[Field],
     getFieldName: () => String,
     getFilterType: () => FilterType,
@@ -34,16 +33,12 @@ object RelativeDateFilter {
     __obj.asInstanceOf[RelativeDateFilter]
   }
   
-  @scala.inline
-  implicit class RelativeDateFilterMutableBuilder[Self <: RelativeDateFilter] (val x: Self) extends AnyVal {
+  extension [Self <: RelativeDateFilter](x: Self) {
     
-    @scala.inline
-    def setGetPeriod(value: () => PeriodType): Self = StObject.set(x, "getPeriod", js.Any.fromFunction0(value))
+    inline def setGetPeriod(value: () => PeriodType): Self = StObject.set(x, "getPeriod", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRange(value: () => DateRangeType): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
+    inline def setGetRange(value: () => DateRangeType): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRangeN(value: () => Double): Self = StObject.set(x, "getRangeN", js.Any.fromFunction0(value))
+    inline def setGetRangeN(value: () => Double): Self = StObject.set(x, "getRangeN", js.Any.fromFunction0(value))
   }
 }

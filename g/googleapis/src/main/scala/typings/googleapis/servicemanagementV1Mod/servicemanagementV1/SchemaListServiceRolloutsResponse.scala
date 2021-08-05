@@ -21,28 +21,21 @@ trait SchemaListServiceRolloutsResponse extends StObject {
 }
 object SchemaListServiceRolloutsResponse {
   
-  @scala.inline
-  def apply(): SchemaListServiceRolloutsResponse = {
+  inline def apply(): SchemaListServiceRolloutsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListServiceRolloutsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListServiceRolloutsResponseMutableBuilder[Self <: SchemaListServiceRolloutsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListServiceRolloutsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRollouts(value: js.Array[SchemaRollout]): Self = StObject.set(x, "rollouts", value.asInstanceOf[js.Any])
+    inline def setRollouts(value: js.Array[SchemaRollout]): Self = StObject.set(x, "rollouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolloutsUndefined: Self = StObject.set(x, "rollouts", js.undefined)
+    inline def setRolloutsUndefined: Self = StObject.set(x, "rollouts", js.undefined)
     
-    @scala.inline
-    def setRolloutsVarargs(value: SchemaRollout*): Self = StObject.set(x, "rollouts", js.Array(value :_*))
+    inline def setRolloutsVarargs(value: SchemaRollout*): Self = StObject.set(x, "rollouts", js.Array(value :_*))
   }
 }

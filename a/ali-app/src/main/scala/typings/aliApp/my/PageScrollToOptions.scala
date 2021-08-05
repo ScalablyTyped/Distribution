@@ -12,16 +12,13 @@ trait PageScrollToOptions extends StObject {
 }
 object PageScrollToOptions {
   
-  @scala.inline
-  def apply(scrollTop: Double): PageScrollToOptions = {
+  inline def apply(scrollTop: Double): PageScrollToOptions = {
     val __obj = js.Dynamic.literal(scrollTop = scrollTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageScrollToOptions]
   }
   
-  @scala.inline
-  implicit class PageScrollToOptionsMutableBuilder[Self <: PageScrollToOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageScrollToOptions](x: Self) {
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
   }
 }

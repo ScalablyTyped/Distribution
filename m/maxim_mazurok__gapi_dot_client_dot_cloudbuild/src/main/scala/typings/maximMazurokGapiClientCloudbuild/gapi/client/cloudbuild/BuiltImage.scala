@@ -17,31 +17,23 @@ trait BuiltImage extends StObject {
 }
 object BuiltImage {
   
-  @scala.inline
-  def apply(): BuiltImage = {
+  inline def apply(): BuiltImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuiltImage]
   }
   
-  @scala.inline
-  implicit class BuiltImageMutableBuilder[Self <: BuiltImage] (val x: Self) extends AnyVal {
+  extension [Self <: BuiltImage](x: Self) {
     
-    @scala.inline
-    def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPushTiming(value: TimeSpan): Self = StObject.set(x, "pushTiming", value.asInstanceOf[js.Any])
+    inline def setPushTiming(value: TimeSpan): Self = StObject.set(x, "pushTiming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushTimingUndefined: Self = StObject.set(x, "pushTiming", js.undefined)
+    inline def setPushTimingUndefined: Self = StObject.set(x, "pushTiming", js.undefined)
   }
 }

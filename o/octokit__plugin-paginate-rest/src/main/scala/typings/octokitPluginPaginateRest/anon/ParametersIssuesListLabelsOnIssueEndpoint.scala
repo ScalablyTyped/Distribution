@@ -15,8 +15,7 @@ trait ParametersIssuesListLabelsOnIssueEndpoint extends StObject {
 }
 object ParametersIssuesListLabelsOnIssueEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: IssuesListLabelsOnIssueEndpoint,
     response: OctokitResponse[IssuesListLabelsOnIssueResponseData]
   ): ParametersIssuesListLabelsOnIssueEndpoint = {
@@ -24,13 +23,10 @@ object ParametersIssuesListLabelsOnIssueEndpoint {
     __obj.asInstanceOf[ParametersIssuesListLabelsOnIssueEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersIssuesListLabelsOnIssueEndpointMutableBuilder[Self <: ParametersIssuesListLabelsOnIssueEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersIssuesListLabelsOnIssueEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: IssuesListLabelsOnIssueEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: IssuesListLabelsOnIssueEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[IssuesListLabelsOnIssueResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[IssuesListLabelsOnIssueResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

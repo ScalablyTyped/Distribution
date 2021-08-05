@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grpc", "ServerReadableStream")
 @js.native
-class ServerReadableStream[RequestType] protected () extends Readable {
+/* private */ class ServerReadableStream[RequestType] () extends Readable {
   
   /**
     * Indicates if the call has been cancelled

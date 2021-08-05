@@ -18,19 +18,15 @@ trait AssessmentRunStateChange extends StObject {
 }
 object AssessmentRunStateChange {
   
-  @scala.inline
-  def apply(state: AssessmentRunState, stateChangedAt: Timestamp): AssessmentRunStateChange = {
+  inline def apply(state: AssessmentRunState, stateChangedAt: Timestamp): AssessmentRunStateChange = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], stateChangedAt = stateChangedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssessmentRunStateChange]
   }
   
-  @scala.inline
-  implicit class AssessmentRunStateChangeMutableBuilder[Self <: AssessmentRunStateChange] (val x: Self) extends AnyVal {
+  extension [Self <: AssessmentRunStateChange](x: Self) {
     
-    @scala.inline
-    def setState(value: AssessmentRunState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: AssessmentRunState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangedAt(value: Timestamp): Self = StObject.set(x, "stateChangedAt", value.asInstanceOf[js.Any])
+    inline def setStateChangedAt(value: Timestamp): Self = StObject.set(x, "stateChangedAt", value.asInstanceOf[js.Any])
   }
 }

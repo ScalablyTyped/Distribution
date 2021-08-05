@@ -16,8 +16,7 @@ object liveFinalViewersResponseMod {
   }
   object LiveFinalViewersResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       status: String,
       total_unique_viewer_count: Double,
       users: js.Array[LiveFinalViewersResponseUsersItem]
@@ -26,20 +25,15 @@ object liveFinalViewersResponseMod {
       __obj.asInstanceOf[LiveFinalViewersResponseRootObject]
     }
     
-    @scala.inline
-    implicit class LiveFinalViewersResponseRootObjectMutableBuilder[Self <: LiveFinalViewersResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: LiveFinalViewersResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_unique_viewer_count(value: Double): Self = StObject.set(x, "total_unique_viewer_count", value.asInstanceOf[js.Any])
+      inline def setTotal_unique_viewer_count(value: Double): Self = StObject.set(x, "total_unique_viewer_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: js.Array[LiveFinalViewersResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[LiveFinalViewersResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: LiveFinalViewersResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: LiveFinalViewersResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
   
@@ -61,8 +55,7 @@ object liveFinalViewersResponseMod {
   }
   object LiveFinalViewersResponseUsersItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       full_name: String,
       is_private: Boolean,
       is_verified: Boolean,
@@ -75,29 +68,21 @@ object liveFinalViewersResponseMod {
       __obj.asInstanceOf[LiveFinalViewersResponseUsersItem]
     }
     
-    @scala.inline
-    implicit class LiveFinalViewersResponseUsersItemMutableBuilder[Self <: LiveFinalViewersResponseUsersItem] (val x: Self) extends AnyVal {
+    extension [Self <: LiveFinalViewersResponseUsersItem](x: Self) {
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

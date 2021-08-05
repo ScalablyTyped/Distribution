@@ -22,20 +22,16 @@ object textAreaImageMod extends Shortcut {
   }
   object TextAreaImageProps {
     
-    @scala.inline
-    def apply(): TextAreaImageProps = {
+    inline def apply(): TextAreaImageProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextAreaImageProps]
     }
     
-    @scala.inline
-    implicit class TextAreaImagePropsMutableBuilder[Self <: TextAreaImageProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextAreaImageProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

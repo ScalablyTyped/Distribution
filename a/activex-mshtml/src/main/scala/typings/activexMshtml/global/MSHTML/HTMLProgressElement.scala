@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLProgressElement")
 @js.native
-class HTMLProgressElement protected ()
+/* private */ class HTMLProgressElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLProgressElement

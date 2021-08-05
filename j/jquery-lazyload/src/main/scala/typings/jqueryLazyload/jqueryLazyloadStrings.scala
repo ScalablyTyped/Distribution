@@ -8,6 +8,5 @@ object jqueryLazyloadStrings {
   
   @js.native
   sealed trait load extends StObject
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
+  inline def load: load = "load".asInstanceOf[load]
 }

@@ -11,9 +11,9 @@ object mod {
   class Lazy[T] protected () extends StObject {
     def this(creator: js.Function0[js.Promise[T]]) = this()
     
-    var _value: js.Any = js.native
+    /* private */ var _value: js.Any = js.native
     
-    var creator: js.Any = js.native
+    /* private */ var creator: js.Any = js.native
     
     val hasValue: Boolean = js.native
     

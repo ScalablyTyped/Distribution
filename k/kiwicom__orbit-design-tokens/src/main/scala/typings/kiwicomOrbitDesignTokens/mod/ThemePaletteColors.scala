@@ -28,8 +28,7 @@ trait ThemePaletteColors extends StObject {
 }
 object ThemePaletteColors {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     productDark: String,
     productLight: String,
     productLightActive: String,
@@ -42,46 +41,32 @@ object ThemePaletteColors {
     __obj.asInstanceOf[ThemePaletteColors]
   }
   
-  @scala.inline
-  implicit class ThemePaletteColorsMutableBuilder[Self <: ThemePaletteColors] (val x: Self) extends AnyVal {
+  extension [Self <: ThemePaletteColors](x: Self) {
     
-    @scala.inline
-    def setProductDark(value: String): Self = StObject.set(x, "productDark", value.asInstanceOf[js.Any])
+    inline def setProductDark(value: String): Self = StObject.set(x, "productDark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductDarkActive(value: String): Self = StObject.set(x, "productDarkActive", value.asInstanceOf[js.Any])
+    inline def setProductDarkActive(value: String): Self = StObject.set(x, "productDarkActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductDarkActiveUndefined: Self = StObject.set(x, "productDarkActive", js.undefined)
+    inline def setProductDarkActiveUndefined: Self = StObject.set(x, "productDarkActive", js.undefined)
     
-    @scala.inline
-    def setProductDarkHover(value: String): Self = StObject.set(x, "productDarkHover", value.asInstanceOf[js.Any])
+    inline def setProductDarkHover(value: String): Self = StObject.set(x, "productDarkHover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductDarkHoverUndefined: Self = StObject.set(x, "productDarkHover", js.undefined)
+    inline def setProductDarkHoverUndefined: Self = StObject.set(x, "productDarkHover", js.undefined)
     
-    @scala.inline
-    def setProductDarker(value: String): Self = StObject.set(x, "productDarker", value.asInstanceOf[js.Any])
+    inline def setProductDarker(value: String): Self = StObject.set(x, "productDarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductDarkerUndefined: Self = StObject.set(x, "productDarker", js.undefined)
+    inline def setProductDarkerUndefined: Self = StObject.set(x, "productDarker", js.undefined)
     
-    @scala.inline
-    def setProductLight(value: String): Self = StObject.set(x, "productLight", value.asInstanceOf[js.Any])
+    inline def setProductLight(value: String): Self = StObject.set(x, "productLight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductLightActive(value: String): Self = StObject.set(x, "productLightActive", value.asInstanceOf[js.Any])
+    inline def setProductLightActive(value: String): Self = StObject.set(x, "productLightActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductLightHover(value: String): Self = StObject.set(x, "productLightHover", value.asInstanceOf[js.Any])
+    inline def setProductLightHover(value: String): Self = StObject.set(x, "productLightHover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductNormal(value: String): Self = StObject.set(x, "productNormal", value.asInstanceOf[js.Any])
+    inline def setProductNormal(value: String): Self = StObject.set(x, "productNormal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductNormalActive(value: String): Self = StObject.set(x, "productNormalActive", value.asInstanceOf[js.Any])
+    inline def setProductNormalActive(value: String): Self = StObject.set(x, "productNormalActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductNormalHover(value: String): Self = StObject.set(x, "productNormalHover", value.asInstanceOf[js.Any])
+    inline def setProductNormalHover(value: String): Self = StObject.set(x, "productNormalHover", value.asInstanceOf[js.Any])
   }
 }

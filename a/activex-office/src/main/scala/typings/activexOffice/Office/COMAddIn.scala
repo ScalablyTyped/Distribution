@@ -18,7 +18,7 @@ trait COMAddIn extends StObject {
   
   var Object: js.Any
   
-  @JSName("Office.COMAddIn_typekey")
+  /* private */ @JSName("Office.COMAddIn_typekey")
   var OfficeDotCOMAddIn_typekey: COMAddIn
   
   val Parent: js.Any
@@ -27,8 +27,7 @@ trait COMAddIn extends StObject {
 }
 object COMAddIn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Connect: Boolean,
     Creator: Double,
@@ -44,34 +43,24 @@ object COMAddIn {
     __obj.asInstanceOf[COMAddIn]
   }
   
-  @scala.inline
-  implicit class COMAddInMutableBuilder[Self <: COMAddIn] (val x: Self) extends AnyVal {
+  extension [Self <: COMAddIn](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnect(value: Boolean): Self = StObject.set(x, "Connect", value.asInstanceOf[js.Any])
+    inline def setConnect(value: Boolean): Self = StObject.set(x, "Connect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "Guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "Guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: js.Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
+    inline def setObject(value: js.Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotCOMAddIn_typekey(value: COMAddIn): Self = StObject.set(x, "Office.COMAddIn_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotCOMAddIn_typekey(value: COMAddIn): Self = StObject.set(x, "Office.COMAddIn_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgId(value: String): Self = StObject.set(x, "ProgId", value.asInstanceOf[js.Any])
+    inline def setProgId(value: String): Self = StObject.set(x, "ProgId", value.asInstanceOf[js.Any])
   }
 }

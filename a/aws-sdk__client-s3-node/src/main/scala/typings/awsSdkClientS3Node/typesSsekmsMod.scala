@@ -17,17 +17,14 @@ object typesSsekmsMod {
   }
   object _SSEKMS {
     
-    @scala.inline
-    def apply(KeyId: String): _SSEKMS = {
+    inline def apply(KeyId: String): _SSEKMS = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[_SSEKMS]
     }
     
-    @scala.inline
-    implicit class _SSEKMSMutableBuilder[Self <: _SSEKMS] (val x: Self) extends AnyVal {
+    extension [Self <: _SSEKMS](x: Self) {
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     }
   }
 }

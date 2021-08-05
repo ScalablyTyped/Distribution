@@ -12,19 +12,15 @@ trait BusStation extends StObject {
 }
 object BusStation {
   
-  @scala.inline
-  def apply(name: String, position: Point): BusStation = {
+  inline def apply(name: String, position: Point): BusStation = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[BusStation]
   }
   
-  @scala.inline
-  implicit class BusStationMutableBuilder[Self <: BusStation] (val x: Self) extends AnyVal {
+  extension [Self <: BusStation](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

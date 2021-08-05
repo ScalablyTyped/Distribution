@@ -17,19 +17,15 @@ trait SchemaFirewallLogConfig extends StObject {
 }
 object SchemaFirewallLogConfig {
   
-  @scala.inline
-  def apply(): SchemaFirewallLogConfig = {
+  inline def apply(): SchemaFirewallLogConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFirewallLogConfig]
   }
   
-  @scala.inline
-  implicit class SchemaFirewallLogConfigMutableBuilder[Self <: SchemaFirewallLogConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFirewallLogConfig](x: Self) {
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait IMessageOptions extends StObject {
 }
 object IMessageOptions {
   
-  @scala.inline
-  def apply(): IMessageOptions = {
+  inline def apply(): IMessageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMessageOptions]
   }
   
-  @scala.inline
-  implicit class IMessageOptionsMutableBuilder[Self <: IMessageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IMessageOptions](x: Self) {
     
-    @scala.inline
-    def setMapEntry(value: Boolean): Self = StObject.set(x, "mapEntry", value.asInstanceOf[js.Any])
+    inline def setMapEntry(value: Boolean): Self = StObject.set(x, "mapEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapEntryUndefined: Self = StObject.set(x, "mapEntry", js.undefined)
+    inline def setMapEntryUndefined: Self = StObject.set(x, "mapEntry", js.undefined)
   }
 }

@@ -29,25 +29,19 @@ trait SchemaRawHashes extends StObject {
 }
 object SchemaRawHashes {
   
-  @scala.inline
-  def apply(): SchemaRawHashes = {
+  inline def apply(): SchemaRawHashes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRawHashes]
   }
   
-  @scala.inline
-  implicit class SchemaRawHashesMutableBuilder[Self <: SchemaRawHashes] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRawHashes](x: Self) {
     
-    @scala.inline
-    def setPrefixSize(value: Double): Self = StObject.set(x, "prefixSize", value.asInstanceOf[js.Any])
+    inline def setPrefixSize(value: Double): Self = StObject.set(x, "prefixSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixSizeUndefined: Self = StObject.set(x, "prefixSize", js.undefined)
+    inline def setPrefixSizeUndefined: Self = StObject.set(x, "prefixSize", js.undefined)
     
-    @scala.inline
-    def setRawHashes(value: String): Self = StObject.set(x, "rawHashes", value.asInstanceOf[js.Any])
+    inline def setRawHashes(value: String): Self = StObject.set(x, "rawHashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawHashesUndefined: Self = StObject.set(x, "rawHashes", js.undefined)
+    inline def setRawHashesUndefined: Self = StObject.set(x, "rawHashes", js.undefined)
   }
 }

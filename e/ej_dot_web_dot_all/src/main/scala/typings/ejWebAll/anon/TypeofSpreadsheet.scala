@@ -15,19 +15,15 @@ trait TypeofSpreadsheet extends StObject {
 }
 object TypeofSpreadsheet {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Spreadsheet): TypeofSpreadsheet = {
+  inline def apply(Locale: js.Any, fn: Spreadsheet): TypeofSpreadsheet = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSpreadsheet]
   }
   
-  @scala.inline
-  implicit class TypeofSpreadsheetMutableBuilder[Self <: TypeofSpreadsheet] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSpreadsheet](x: Self) {
     
-    @scala.inline
-    def setFn(value: Spreadsheet): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Spreadsheet): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

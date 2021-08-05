@@ -25,31 +25,23 @@ trait SchemaRoutineReference extends StObject {
 }
 object SchemaRoutineReference {
   
-  @scala.inline
-  def apply(): SchemaRoutineReference = {
+  inline def apply(): SchemaRoutineReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRoutineReference]
   }
   
-  @scala.inline
-  implicit class SchemaRoutineReferenceMutableBuilder[Self <: SchemaRoutineReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRoutineReference](x: Self) {
     
-    @scala.inline
-    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
+    inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
+    inline def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setRoutineId(value: String): Self = StObject.set(x, "routineId", value.asInstanceOf[js.Any])
+    inline def setRoutineId(value: String): Self = StObject.set(x, "routineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutineIdUndefined: Self = StObject.set(x, "routineId", js.undefined)
+    inline def setRoutineIdUndefined: Self = StObject.set(x, "routineId", js.undefined)
   }
 }

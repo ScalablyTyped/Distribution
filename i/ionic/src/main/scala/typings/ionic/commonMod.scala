@@ -10,8 +10,7 @@ object commonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findOpenIonicPorts(address: String, ports: Ports): js.Promise[Ports] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOpenIonicPorts")(address.asInstanceOf[js.Any], ports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Ports]]
+  inline def findOpenIonicPorts(address: String, ports: Ports): js.Promise[Ports] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOpenIonicPorts")(address.asInstanceOf[js.Any], ports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Ports]]
   
   trait Ports extends StObject {
     
@@ -23,23 +22,18 @@ object commonMod {
   }
   object Ports {
     
-    @scala.inline
-    def apply(livereloadPort: Double, notificationPort: Double, port: Double): Ports = {
+    inline def apply(livereloadPort: Double, notificationPort: Double, port: Double): Ports = {
       val __obj = js.Dynamic.literal(livereloadPort = livereloadPort.asInstanceOf[js.Any], notificationPort = notificationPort.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ports]
     }
     
-    @scala.inline
-    implicit class PortsMutableBuilder[Self <: Ports] (val x: Self) extends AnyVal {
+    extension [Self <: Ports](x: Self) {
       
-      @scala.inline
-      def setLivereloadPort(value: Double): Self = StObject.set(x, "livereloadPort", value.asInstanceOf[js.Any])
+      inline def setLivereloadPort(value: Double): Self = StObject.set(x, "livereloadPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationPort(value: Double): Self = StObject.set(x, "notificationPort", value.asInstanceOf[js.Any])
+      inline def setNotificationPort(value: Double): Self = StObject.set(x, "notificationPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
 }

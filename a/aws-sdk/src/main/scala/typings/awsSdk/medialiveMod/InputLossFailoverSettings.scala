@@ -13,19 +13,15 @@ trait InputLossFailoverSettings extends StObject {
 }
 object InputLossFailoverSettings {
   
-  @scala.inline
-  def apply(): InputLossFailoverSettings = {
+  inline def apply(): InputLossFailoverSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputLossFailoverSettings]
   }
   
-  @scala.inline
-  implicit class InputLossFailoverSettingsMutableBuilder[Self <: InputLossFailoverSettings] (val x: Self) extends AnyVal {
+  extension [Self <: InputLossFailoverSettings](x: Self) {
     
-    @scala.inline
-    def setInputLossThresholdMsec(value: integerMin100): Self = StObject.set(x, "InputLossThresholdMsec", value.asInstanceOf[js.Any])
+    inline def setInputLossThresholdMsec(value: integerMin100): Self = StObject.set(x, "InputLossThresholdMsec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputLossThresholdMsecUndefined: Self = StObject.set(x, "InputLossThresholdMsec", js.undefined)
+    inline def setInputLossThresholdMsecUndefined: Self = StObject.set(x, "InputLossThresholdMsec", js.undefined)
   }
 }

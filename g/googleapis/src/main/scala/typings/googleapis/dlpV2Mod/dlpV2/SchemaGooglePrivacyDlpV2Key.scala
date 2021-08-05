@@ -31,28 +31,21 @@ trait SchemaGooglePrivacyDlpV2Key extends StObject {
 }
 object SchemaGooglePrivacyDlpV2Key {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2Key = {
+  inline def apply(): SchemaGooglePrivacyDlpV2Key = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Key]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2KeyMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Key] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2Key](x: Self) {
     
-    @scala.inline
-    def setPartitionId(value: SchemaGooglePrivacyDlpV2PartitionId): Self = StObject.set(x, "partitionId", value.asInstanceOf[js.Any])
+    inline def setPartitionId(value: SchemaGooglePrivacyDlpV2PartitionId): Self = StObject.set(x, "partitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionIdUndefined: Self = StObject.set(x, "partitionId", js.undefined)
+    inline def setPartitionIdUndefined: Self = StObject.set(x, "partitionId", js.undefined)
     
-    @scala.inline
-    def setPath(value: js.Array[SchemaGooglePrivacyDlpV2PathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[SchemaGooglePrivacyDlpV2PathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPathVarargs(value: SchemaGooglePrivacyDlpV2PathElement*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: SchemaGooglePrivacyDlpV2PathElement*): Self = StObject.set(x, "path", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait UnmergeTableCellsRequest extends StObject {
 }
 object UnmergeTableCellsRequest {
   
-  @scala.inline
-  def apply(): UnmergeTableCellsRequest = {
+  inline def apply(): UnmergeTableCellsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnmergeTableCellsRequest]
   }
   
-  @scala.inline
-  implicit class UnmergeTableCellsRequestMutableBuilder[Self <: UnmergeTableCellsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UnmergeTableCellsRequest](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setTableRange(value: TableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
+    inline def setTableRange(value: TableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
+    inline def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
   }
 }

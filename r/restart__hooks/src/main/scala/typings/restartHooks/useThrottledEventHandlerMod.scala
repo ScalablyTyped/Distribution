@@ -11,8 +11,7 @@ object useThrottledEventHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TEvent](handler: js.Function1[/* event */ TEvent, Unit]): ThrottledHandler[TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(handler.asInstanceOf[js.Any]).asInstanceOf[ThrottledHandler[TEvent]]
+  inline def default[TEvent](handler: js.Function1[/* event */ TEvent, Unit]): ThrottledHandler[TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(handler.asInstanceOf[js.Any]).asInstanceOf[ThrottledHandler[TEvent]]
   
   type ThrottledHandler[TEvent] = (js.Function1[/* event */ TEvent, Unit]) & Clear
 }

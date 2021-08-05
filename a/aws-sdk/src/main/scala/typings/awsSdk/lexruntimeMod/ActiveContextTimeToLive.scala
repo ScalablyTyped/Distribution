@@ -18,25 +18,19 @@ trait ActiveContextTimeToLive extends StObject {
 }
 object ActiveContextTimeToLive {
   
-  @scala.inline
-  def apply(): ActiveContextTimeToLive = {
+  inline def apply(): ActiveContextTimeToLive = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActiveContextTimeToLive]
   }
   
-  @scala.inline
-  implicit class ActiveContextTimeToLiveMutableBuilder[Self <: ActiveContextTimeToLive] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveContextTimeToLive](x: Self) {
     
-    @scala.inline
-    def setTimeToLiveInSeconds(value: ActiveContextTimeToLiveInSeconds): Self = StObject.set(x, "timeToLiveInSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeToLiveInSeconds(value: ActiveContextTimeToLiveInSeconds): Self = StObject.set(x, "timeToLiveInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToLiveInSecondsUndefined: Self = StObject.set(x, "timeToLiveInSeconds", js.undefined)
+    inline def setTimeToLiveInSecondsUndefined: Self = StObject.set(x, "timeToLiveInSeconds", js.undefined)
     
-    @scala.inline
-    def setTurnsToLive(value: ActiveContextTurnsToLive): Self = StObject.set(x, "turnsToLive", value.asInstanceOf[js.Any])
+    inline def setTurnsToLive(value: ActiveContextTurnsToLive): Self = StObject.set(x, "turnsToLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTurnsToLiveUndefined: Self = StObject.set(x, "turnsToLive", js.undefined)
+    inline def setTurnsToLiveUndefined: Self = StObject.set(x, "turnsToLive", js.undefined)
   }
 }

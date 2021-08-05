@@ -14,22 +14,17 @@ trait AdminReply extends StObject {
 }
 object AdminReply {
   
-  @scala.inline
-  def apply(adminReply: scala.Double, publisherReply: scala.Double, review: scala.Double): AdminReply = {
+  inline def apply(adminReply: scala.Double, publisherReply: scala.Double, review: scala.Double): AdminReply = {
     val __obj = js.Dynamic.literal(adminReply = adminReply.asInstanceOf[js.Any], publisherReply = publisherReply.asInstanceOf[js.Any], review = review.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminReply]
   }
   
-  @scala.inline
-  implicit class AdminReplyMutableBuilder[Self <: AdminReply] (val x: Self) extends AnyVal {
+  extension [Self <: AdminReply](x: Self) {
     
-    @scala.inline
-    def setAdminReply(value: scala.Double): Self = StObject.set(x, "adminReply", value.asInstanceOf[js.Any])
+    inline def setAdminReply(value: scala.Double): Self = StObject.set(x, "adminReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherReply(value: scala.Double): Self = StObject.set(x, "publisherReply", value.asInstanceOf[js.Any])
+    inline def setPublisherReply(value: scala.Double): Self = StObject.set(x, "publisherReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReview(value: scala.Double): Self = StObject.set(x, "review", value.asInstanceOf[js.Any])
+    inline def setReview(value: scala.Double): Self = StObject.set(x, "review", value.asInstanceOf[js.Any])
   }
 }

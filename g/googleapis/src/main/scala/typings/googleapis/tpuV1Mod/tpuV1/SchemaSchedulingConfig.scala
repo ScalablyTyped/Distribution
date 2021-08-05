@@ -10,19 +10,15 @@ trait SchemaSchedulingConfig extends StObject {
 }
 object SchemaSchedulingConfig {
   
-  @scala.inline
-  def apply(): SchemaSchedulingConfig = {
+  inline def apply(): SchemaSchedulingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSchedulingConfig]
   }
   
-  @scala.inline
-  implicit class SchemaSchedulingConfigMutableBuilder[Self <: SchemaSchedulingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSchedulingConfig](x: Self) {
     
-    @scala.inline
-    def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
+    inline def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
+    inline def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
   }
 }

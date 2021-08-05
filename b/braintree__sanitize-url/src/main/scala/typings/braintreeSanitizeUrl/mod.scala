@@ -10,8 +10,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sanitizeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeUrl")().asInstanceOf[String]
-  @scala.inline
-  def sanitizeUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sanitizeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeUrl")().asInstanceOf[String]
+  inline def sanitizeUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }

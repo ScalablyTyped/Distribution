@@ -97,20 +97,16 @@ object fieldsMod {
   }
   object AttributeOpts {
     
-    @scala.inline
-    def apply(): AttributeOpts = {
+    inline def apply(): AttributeOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttributeOpts]
     }
     
-    @scala.inline
-    implicit class AttributeOptsMutableBuilder[Self <: AttributeOpts] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeOpts](x: Self) {
       
-      @scala.inline
-      def setGetDefault(value: () => js.Any): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
+      inline def setGetDefault(value: () => js.Any): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDefaultUndefined: Self = StObject.set(x, "getDefault", js.undefined)
+      inline def setGetDefaultUndefined: Self = StObject.set(x, "getDefault", js.undefined)
     }
   }
   
@@ -160,41 +156,30 @@ object fieldsMod {
   }
   object RelationalFieldOpts {
     
-    @scala.inline
-    def apply(to: String): RelationalFieldOpts = {
+    inline def apply(to: String): RelationalFieldOpts = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelationalFieldOpts]
     }
     
-    @scala.inline
-    implicit class RelationalFieldOptsMutableBuilder[Self <: RelationalFieldOpts] (val x: Self) extends AnyVal {
+    extension [Self <: RelationalFieldOpts](x: Self) {
       
-      @scala.inline
-      def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setRelatedName(value: String): Self = StObject.set(x, "relatedName", value.asInstanceOf[js.Any])
+      inline def setRelatedName(value: String): Self = StObject.set(x, "relatedName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedNameUndefined: Self = StObject.set(x, "relatedName", js.undefined)
+      inline def setRelatedNameUndefined: Self = StObject.set(x, "relatedName", js.undefined)
       
-      @scala.inline
-      def setThrough(value: String): Self = StObject.set(x, "through", value.asInstanceOf[js.Any])
+      inline def setThrough(value: String): Self = StObject.set(x, "through", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThroughFields(value: js.Tuple2[String, String]): Self = StObject.set(x, "throughFields", value.asInstanceOf[js.Any])
+      inline def setThroughFields(value: js.Tuple2[String, String]): Self = StObject.set(x, "throughFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThroughFieldsUndefined: Self = StObject.set(x, "throughFields", js.undefined)
+      inline def setThroughFieldsUndefined: Self = StObject.set(x, "throughFields", js.undefined)
       
-      @scala.inline
-      def setThroughUndefined: Self = StObject.set(x, "through", js.undefined)
+      inline def setThroughUndefined: Self = StObject.set(x, "through", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
 }

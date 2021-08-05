@@ -48,61 +48,43 @@ trait DataSetSummary extends StObject {
 }
 object DataSetSummary {
   
-  @scala.inline
-  def apply(): DataSetSummary = {
+  inline def apply(): DataSetSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSetSummary]
   }
   
-  @scala.inline
-  implicit class DataSetSummaryMutableBuilder[Self <: DataSetSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DataSetSummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setColumnLevelPermissionRulesApplied(value: Boolean): Self = StObject.set(x, "ColumnLevelPermissionRulesApplied", value.asInstanceOf[js.Any])
+    inline def setColumnLevelPermissionRulesApplied(value: Boolean): Self = StObject.set(x, "ColumnLevelPermissionRulesApplied", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnLevelPermissionRulesAppliedUndefined: Self = StObject.set(x, "ColumnLevelPermissionRulesApplied", js.undefined)
+    inline def setColumnLevelPermissionRulesAppliedUndefined: Self = StObject.set(x, "ColumnLevelPermissionRulesApplied", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setDataSetId(value: ResourceId): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: ResourceId): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetIdUndefined: Self = StObject.set(x, "DataSetId", js.undefined)
+    inline def setDataSetIdUndefined: Self = StObject.set(x, "DataSetId", js.undefined)
     
-    @scala.inline
-    def setImportMode(value: DataSetImportMode): Self = StObject.set(x, "ImportMode", value.asInstanceOf[js.Any])
+    inline def setImportMode(value: DataSetImportMode): Self = StObject.set(x, "ImportMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportModeUndefined: Self = StObject.set(x, "ImportMode", js.undefined)
+    inline def setImportModeUndefined: Self = StObject.set(x, "ImportMode", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: Timestamp_): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: Timestamp_): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRowLevelPermissionDataSet(value: RowLevelPermissionDataSet): Self = StObject.set(x, "RowLevelPermissionDataSet", value.asInstanceOf[js.Any])
+    inline def setRowLevelPermissionDataSet(value: RowLevelPermissionDataSet): Self = StObject.set(x, "RowLevelPermissionDataSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowLevelPermissionDataSetUndefined: Self = StObject.set(x, "RowLevelPermissionDataSet", js.undefined)
+    inline def setRowLevelPermissionDataSetUndefined: Self = StObject.set(x, "RowLevelPermissionDataSet", js.undefined)
   }
 }

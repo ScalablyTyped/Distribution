@@ -21,20 +21,17 @@ object ShowMessageType {
   @JSImport("mendixmodelsdk", "microflows.ShowMessageType.Error")
   @js.native
   def Error: typings.mendixmodelsdk.microflowsMod.microflows.ShowMessageType = js.native
-  @scala.inline
-  def Error_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ShowMessageType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Error")(x.asInstanceOf[js.Any])
+  inline def Error_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ShowMessageType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Error")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.ShowMessageType.Information")
   @js.native
   def Information: typings.mendixmodelsdk.microflowsMod.microflows.ShowMessageType = js.native
-  @scala.inline
-  def Information_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ShowMessageType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Information")(x.asInstanceOf[js.Any])
+  inline def Information_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ShowMessageType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Information")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.ShowMessageType.Warning")
   @js.native
   def Warning: typings.mendixmodelsdk.microflowsMod.microflows.ShowMessageType = js.native
-  @scala.inline
-  def Warning_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ShowMessageType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Warning")(x.asInstanceOf[js.Any])
+  inline def Warning_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ShowMessageType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Warning")(x.asInstanceOf[js.Any])
 }

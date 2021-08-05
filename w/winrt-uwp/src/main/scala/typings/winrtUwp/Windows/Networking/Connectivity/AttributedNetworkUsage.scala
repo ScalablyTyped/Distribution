@@ -25,8 +25,7 @@ trait AttributedNetworkUsage extends StObject {
 }
 object AttributedNetworkUsage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributionId: String,
     attributionName: String,
     attributionThumbnail: IRandomAccessStreamReference,
@@ -37,22 +36,16 @@ object AttributedNetworkUsage {
     __obj.asInstanceOf[AttributedNetworkUsage]
   }
   
-  @scala.inline
-  implicit class AttributedNetworkUsageMutableBuilder[Self <: AttributedNetworkUsage] (val x: Self) extends AnyVal {
+  extension [Self <: AttributedNetworkUsage](x: Self) {
     
-    @scala.inline
-    def setAttributionId(value: String): Self = StObject.set(x, "attributionId", value.asInstanceOf[js.Any])
+    inline def setAttributionId(value: String): Self = StObject.set(x, "attributionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionName(value: String): Self = StObject.set(x, "attributionName", value.asInstanceOf[js.Any])
+    inline def setAttributionName(value: String): Self = StObject.set(x, "attributionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "attributionThumbnail", value.asInstanceOf[js.Any])
+    inline def setAttributionThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "attributionThumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
+    inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
+    inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
   }
 }

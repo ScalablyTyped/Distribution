@@ -16,8 +16,7 @@ trait IFolderNameListing extends StObject {
 }
 object IFolderNameListing {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     Item: Double => ITypedValue,
     MoreValues: Boolean,
@@ -27,19 +26,14 @@ object IFolderNameListing {
     __obj.asInstanceOf[IFolderNameListing]
   }
   
-  @scala.inline
-  implicit class IFolderNameListingMutableBuilder[Self <: IFolderNameListing] (val x: Self) extends AnyVal {
+  extension [Self <: IFolderNameListing](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => ITypedValue): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => ITypedValue): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMoreValues(value: Boolean): Self = StObject.set(x, "MoreValues", value.asInstanceOf[js.Any])
+    inline def setMoreValues(value: Boolean): Self = StObject.set(x, "MoreValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortWithExpression(value: (IExpression, Double) => Unit): Self = StObject.set(x, "SortWithExpression", js.Any.fromFunction2(value))
+    inline def setSortWithExpression(value: (IExpression, Double) => Unit): Self = StObject.set(x, "SortWithExpression", js.Any.fromFunction2(value))
   }
 }

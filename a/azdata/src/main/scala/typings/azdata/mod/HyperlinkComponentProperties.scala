@@ -15,19 +15,15 @@ trait HyperlinkComponentProperties
 }
 object HyperlinkComponentProperties {
   
-  @scala.inline
-  def apply(label: String, url: String): HyperlinkComponentProperties = {
+  inline def apply(label: String, url: String): HyperlinkComponentProperties = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperlinkComponentProperties]
   }
   
-  @scala.inline
-  implicit class HyperlinkComponentPropertiesMutableBuilder[Self <: HyperlinkComponentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HyperlinkComponentProperties](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

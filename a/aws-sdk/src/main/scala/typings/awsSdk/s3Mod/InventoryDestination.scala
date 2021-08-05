@@ -13,16 +13,13 @@ trait InventoryDestination extends StObject {
 }
 object InventoryDestination {
   
-  @scala.inline
-  def apply(S3BucketDestination: InventoryS3BucketDestination): InventoryDestination = {
+  inline def apply(S3BucketDestination: InventoryS3BucketDestination): InventoryDestination = {
     val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryDestination]
   }
   
-  @scala.inline
-  implicit class InventoryDestinationMutableBuilder[Self <: InventoryDestination] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryDestination](x: Self) {
     
-    @scala.inline
-    def setS3BucketDestination(value: InventoryS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
+    inline def setS3BucketDestination(value: InventoryS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
   }
 }

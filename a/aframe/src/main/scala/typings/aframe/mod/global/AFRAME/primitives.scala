@@ -15,12 +15,10 @@ object primitives {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getMeshMixin(): DefaultComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeshMixin")().asInstanceOf[DefaultComponents]
+  inline def getMeshMixin(): DefaultComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeshMixin")().asInstanceOf[DefaultComponents]
   
   @JSGlobal("AFRAME.primitives.primitives")
   @js.native
   def primitives: ObjectMap[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]] = js.native
-  @scala.inline
-  def primitives_=(x: ObjectMap[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primitives")(x.asInstanceOf[js.Any])
+  inline def primitives_=(x: ObjectMap[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primitives")(x.asInstanceOf[js.Any])
 }

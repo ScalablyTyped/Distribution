@@ -11,16 +11,13 @@ trait Synchronize extends StObject {
 }
 object Synchronize {
   
-  @scala.inline
-  def apply(): Synchronize = {
+  inline def apply(): Synchronize = {
     val __obj = js.Dynamic.literal(synchronize = false)
     __obj.asInstanceOf[Synchronize]
   }
   
-  @scala.inline
-  implicit class SynchronizeMutableBuilder[Self <: Synchronize] (val x: Self) extends AnyVal {
+  extension [Self <: Synchronize](x: Self) {
     
-    @scala.inline
-    def setSynchronize(value: `false`): Self = StObject.set(x, "synchronize", value.asInstanceOf[js.Any])
+    inline def setSynchronize(value: `false`): Self = StObject.set(x, "synchronize", value.asInstanceOf[js.Any])
   }
 }

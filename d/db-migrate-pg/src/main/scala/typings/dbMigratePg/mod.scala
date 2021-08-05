@@ -65,20 +65,16 @@ object mod {
   }
   object ColumnConstraint {
     
-    @scala.inline
-    def apply(constraints: String, foreignKey: CallbackFunction => Unit): ColumnConstraint = {
+    inline def apply(constraints: String, foreignKey: CallbackFunction => Unit): ColumnConstraint = {
       val __obj = js.Dynamic.literal(constraints = constraints.asInstanceOf[js.Any], foreignKey = js.Any.fromFunction1(foreignKey))
       __obj.asInstanceOf[ColumnConstraint]
     }
     
-    @scala.inline
-    implicit class ColumnConstraintMutableBuilder[Self <: ColumnConstraint] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnConstraint](x: Self) {
       
-      @scala.inline
-      def setConstraints(value: String): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: String): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForeignKey(value: CallbackFunction => Unit): Self = StObject.set(x, "foreignKey", js.Any.fromFunction1(value))
+      inline def setForeignKey(value: CallbackFunction => Unit): Self = StObject.set(x, "foreignKey", js.Any.fromFunction1(value))
     }
   }
   
@@ -88,20 +84,16 @@ object mod {
   }
   object ColumnConstraintOptions {
     
-    @scala.inline
-    def apply(): ColumnConstraintOptions = {
+    inline def apply(): ColumnConstraintOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnConstraintOptions]
     }
     
-    @scala.inline
-    implicit class ColumnConstraintOptionsMutableBuilder[Self <: ColumnConstraintOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnConstraintOptions](x: Self) {
       
-      @scala.inline
-      def setEmitPrimaryKey(value: Boolean): Self = StObject.set(x, "emitPrimaryKey", value.asInstanceOf[js.Any])
+      inline def setEmitPrimaryKey(value: Boolean): Self = StObject.set(x, "emitPrimaryKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitPrimaryKeyUndefined: Self = StObject.set(x, "emitPrimaryKey", js.undefined)
+      inline def setEmitPrimaryKeyUndefined: Self = StObject.set(x, "emitPrimaryKey", js.undefined)
     }
   }
   
@@ -113,20 +105,16 @@ object mod {
   }
   object CreateSequenceOptions {
     
-    @scala.inline
-    def apply(): CreateSequenceOptions = {
+    inline def apply(): CreateSequenceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateSequenceOptions]
     }
     
-    @scala.inline
-    implicit class CreateSequenceOptionsMutableBuilder[Self <: CreateSequenceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateSequenceOptions](x: Self) {
       
-      @scala.inline
-      def setTemp(value: Boolean): Self = StObject.set(x, "temp", value.asInstanceOf[js.Any])
+      inline def setTemp(value: Boolean): Self = StObject.set(x, "temp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTempUndefined: Self = StObject.set(x, "temp", js.undefined)
+      inline def setTempUndefined: Self = StObject.set(x, "temp", js.undefined)
     }
   }
   
@@ -136,20 +124,16 @@ object mod {
   }
   object DropDatabaseOptions {
     
-    @scala.inline
-    def apply(): DropDatabaseOptions = {
+    inline def apply(): DropDatabaseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropDatabaseOptions]
     }
     
-    @scala.inline
-    implicit class DropDatabaseOptionsMutableBuilder[Self <: DropDatabaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DropDatabaseOptions](x: Self) {
       
-      @scala.inline
-      def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
+      inline def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfExistsUndefined: Self = StObject.set(x, "ifExists", js.undefined)
+      inline def setIfExistsUndefined: Self = StObject.set(x, "ifExists", js.undefined)
     }
   }
   
@@ -163,32 +147,24 @@ object mod {
   }
   object DropSequenceOptions {
     
-    @scala.inline
-    def apply(): DropSequenceOptions = {
+    inline def apply(): DropSequenceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropSequenceOptions]
     }
     
-    @scala.inline
-    implicit class DropSequenceOptionsMutableBuilder[Self <: DropSequenceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DropSequenceOptions](x: Self) {
       
-      @scala.inline
-      def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
+      inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
+      inline def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
       
-      @scala.inline
-      def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
+      inline def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfExistsUndefined: Self = StObject.set(x, "ifExists", js.undefined)
+      inline def setIfExistsUndefined: Self = StObject.set(x, "ifExists", js.undefined)
       
-      @scala.inline
-      def setRestrict(value: Boolean): Self = StObject.set(x, "restrict", value.asInstanceOf[js.Any])
+      inline def setRestrict(value: Boolean): Self = StObject.set(x, "restrict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrictUndefined: Self = StObject.set(x, "restrict", js.undefined)
+      inline def setRestrictUndefined: Self = StObject.set(x, "restrict", js.undefined)
     }
   }
   
@@ -198,20 +174,16 @@ object mod {
   }
   object SwitchDatabaseOptions {
     
-    @scala.inline
-    def apply(): SwitchDatabaseOptions = {
+    inline def apply(): SwitchDatabaseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwitchDatabaseOptions]
     }
     
-    @scala.inline
-    implicit class SwitchDatabaseOptionsMutableBuilder[Self <: SwitchDatabaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SwitchDatabaseOptions](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     }
   }
 }

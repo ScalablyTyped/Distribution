@@ -18,16 +18,13 @@ trait ASPxClientReportDesignerCustomizeToolboxEventArgs
 }
 object ASPxClientReportDesignerCustomizeToolboxEventArgs {
   
-  @scala.inline
-  def apply(ControlsFactory: ASPxDesignerControlsFactory): ASPxClientReportDesignerCustomizeToolboxEventArgs = {
+  inline def apply(ControlsFactory: ASPxDesignerControlsFactory): ASPxClientReportDesignerCustomizeToolboxEventArgs = {
     val __obj = js.Dynamic.literal(ControlsFactory = ControlsFactory.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportDesignerCustomizeToolboxEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportDesignerCustomizeToolboxEventArgsMutableBuilder[Self <: ASPxClientReportDesignerCustomizeToolboxEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportDesignerCustomizeToolboxEventArgs](x: Self) {
     
-    @scala.inline
-    def setControlsFactory(value: ASPxDesignerControlsFactory): Self = StObject.set(x, "ControlsFactory", value.asInstanceOf[js.Any])
+    inline def setControlsFactory(value: ASPxDesignerControlsFactory): Self = StObject.set(x, "ControlsFactory", value.asInstanceOf[js.Any])
   }
 }

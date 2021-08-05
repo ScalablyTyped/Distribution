@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(authOptions: AuthOptions, callback: js.Function2[/* err */ Error, /* tokenData */ TokenData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(authOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(authOptions: AuthOptions, callback: js.Function2[/* err */ Error, /* tokenData */ TokenData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(authOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("ghauth", JSImport.Namespace)
   @js.native
@@ -50,56 +49,40 @@ object mod {
   }
   object AuthOptions {
     
-    @scala.inline
-    def apply(configName: String): AuthOptions = {
+    inline def apply(configName: String): AuthOptions = {
       val __obj = js.Dynamic.literal(configName = configName.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthOptions]
     }
     
-    @scala.inline
-    implicit class AuthOptionsMutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AuthOptions](x: Self) {
       
-      @scala.inline
-      def setAuthUrl(value: String): Self = StObject.set(x, "authUrl", value.asInstanceOf[js.Any])
+      inline def setAuthUrl(value: String): Self = StObject.set(x, "authUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUrlUndefined: Self = StObject.set(x, "authUrl", js.undefined)
+      inline def setAuthUrlUndefined: Self = StObject.set(x, "authUrl", js.undefined)
       
-      @scala.inline
-      def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
+      inline def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoSave(value: Boolean): Self = StObject.set(x, "noSave", value.asInstanceOf[js.Any])
+      inline def setNoSave(value: Boolean): Self = StObject.set(x, "noSave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoSaveUndefined: Self = StObject.set(x, "noSave", js.undefined)
+      inline def setNoSaveUndefined: Self = StObject.set(x, "noSave", js.undefined)
       
-      @scala.inline
-      def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+      inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+      inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
       
-      @scala.inline
-      def setPromptName(value: String): Self = StObject.set(x, "promptName", value.asInstanceOf[js.Any])
+      inline def setPromptName(value: String): Self = StObject.set(x, "promptName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptNameUndefined: Self = StObject.set(x, "promptName", js.undefined)
+      inline def setPromptNameUndefined: Self = StObject.set(x, "promptName", js.undefined)
       
-      @scala.inline
-      def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     }
   }
   
@@ -111,20 +94,16 @@ object mod {
   }
   object TokenData {
     
-    @scala.inline
-    def apply(token: String, user: String): TokenData = {
+    inline def apply(token: String, user: String): TokenData = {
       val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenData]
     }
     
-    @scala.inline
-    implicit class TokenDataMutableBuilder[Self <: TokenData] (val x: Self) extends AnyVal {
+    extension [Self <: TokenData](x: Self) {
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
 }

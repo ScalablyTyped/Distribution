@@ -14,28 +14,21 @@ trait GoogleCloudVideointelligenceV1beta2FaceFrame extends StObject {
 }
 object GoogleCloudVideointelligenceV1beta2FaceFrame {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1beta2FaceFrame = {
+  inline def apply(): GoogleCloudVideointelligenceV1beta2FaceFrame = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2FaceFrame]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1beta2FaceFrameMutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2FaceFrame] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1beta2FaceFrame](x: Self) {
     
-    @scala.inline
-    def setNormalizedBoundingBoxes(value: js.Array[GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox]): Self = StObject.set(x, "normalizedBoundingBoxes", value.asInstanceOf[js.Any])
+    inline def setNormalizedBoundingBoxes(value: js.Array[GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox]): Self = StObject.set(x, "normalizedBoundingBoxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedBoundingBoxesUndefined: Self = StObject.set(x, "normalizedBoundingBoxes", js.undefined)
+    inline def setNormalizedBoundingBoxesUndefined: Self = StObject.set(x, "normalizedBoundingBoxes", js.undefined)
     
-    @scala.inline
-    def setNormalizedBoundingBoxesVarargs(value: GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox*): Self = StObject.set(x, "normalizedBoundingBoxes", js.Array(value :_*))
+    inline def setNormalizedBoundingBoxesVarargs(value: GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox*): Self = StObject.set(x, "normalizedBoundingBoxes", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
+    inline def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
+    inline def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
   }
 }

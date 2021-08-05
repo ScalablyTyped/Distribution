@@ -53,67 +53,47 @@ trait DocDbSettings extends StObject {
 }
 object DocDbSettings {
   
-  @scala.inline
-  def apply(): DocDbSettings = {
+  inline def apply(): DocDbSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocDbSettings]
   }
   
-  @scala.inline
-  implicit class DocDbSettingsMutableBuilder[Self <: DocDbSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DocDbSettings](x: Self) {
     
-    @scala.inline
-    def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
+    inline def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
-    @scala.inline
-    def setDocsToInvestigate(value: IntegerOptional): Self = StObject.set(x, "DocsToInvestigate", value.asInstanceOf[js.Any])
+    inline def setDocsToInvestigate(value: IntegerOptional): Self = StObject.set(x, "DocsToInvestigate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocsToInvestigateUndefined: Self = StObject.set(x, "DocsToInvestigate", js.undefined)
+    inline def setDocsToInvestigateUndefined: Self = StObject.set(x, "DocsToInvestigate", js.undefined)
     
-    @scala.inline
-    def setExtractDocId(value: BooleanOptional): Self = StObject.set(x, "ExtractDocId", value.asInstanceOf[js.Any])
+    inline def setExtractDocId(value: BooleanOptional): Self = StObject.set(x, "ExtractDocId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtractDocIdUndefined: Self = StObject.set(x, "ExtractDocId", js.undefined)
+    inline def setExtractDocIdUndefined: Self = StObject.set(x, "ExtractDocId", js.undefined)
     
-    @scala.inline
-    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setNestingLevel(value: NestingLevelValue): Self = StObject.set(x, "NestingLevel", value.asInstanceOf[js.Any])
+    inline def setNestingLevel(value: NestingLevelValue): Self = StObject.set(x, "NestingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingLevelUndefined: Self = StObject.set(x, "NestingLevel", js.undefined)
+    inline def setNestingLevelUndefined: Self = StObject.set(x, "NestingLevel", js.undefined)
     
-    @scala.inline
-    def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
-    @scala.inline
-    def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    @scala.inline
-    def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
+    inline def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

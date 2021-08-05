@@ -28,25 +28,19 @@ trait PoolContextType extends StObject {
 }
 object PoolContextType {
   
-  @scala.inline
-  def apply(log: LoggerType, poolId: String): PoolContextType = {
+  inline def apply(log: LoggerType, poolId: String): PoolContextType = {
     val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any], poolId = poolId.asInstanceOf[js.Any], query = null)
     __obj.asInstanceOf[PoolContextType]
   }
   
-  @scala.inline
-  implicit class PoolContextTypeMutableBuilder[Self <: PoolContextType] (val x: Self) extends AnyVal {
+  extension [Self <: PoolContextType](x: Self) {
     
-    @scala.inline
-    def setLog(value: LoggerType): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: LoggerType): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: TaggedTemplateLiteralInvocationType[QueryResultRowType[String]]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: TaggedTemplateLiteralInvocationType[QueryResultRowType[String]]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryNull: Self = StObject.set(x, "query", null)
+    inline def setQueryNull: Self = StObject.set(x, "query", null)
   }
 }

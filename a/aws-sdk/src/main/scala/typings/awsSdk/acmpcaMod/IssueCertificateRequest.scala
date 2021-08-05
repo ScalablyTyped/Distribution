@@ -38,37 +38,27 @@ trait IssueCertificateRequest extends StObject {
 }
 object IssueCertificateRequest {
   
-  @scala.inline
-  def apply(CertificateAuthorityArn: Arn, Csr: CsrBlob, SigningAlgorithm: SigningAlgorithm, Validity: Validity): IssueCertificateRequest = {
+  inline def apply(CertificateAuthorityArn: Arn, Csr: CsrBlob, SigningAlgorithm: SigningAlgorithm, Validity: Validity): IssueCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any], Csr = Csr.asInstanceOf[js.Any], SigningAlgorithm = SigningAlgorithm.asInstanceOf[js.Any], Validity = Validity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssueCertificateRequest]
   }
   
-  @scala.inline
-  implicit class IssueCertificateRequestMutableBuilder[Self <: IssueCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IssueCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsr(value: CsrBlob): Self = StObject.set(x, "Csr", value.asInstanceOf[js.Any])
+    inline def setCsr(value: CsrBlob): Self = StObject.set(x, "Csr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
+    inline def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotencyTokenUndefined: Self = StObject.set(x, "IdempotencyToken", js.undefined)
+    inline def setIdempotencyTokenUndefined: Self = StObject.set(x, "IdempotencyToken", js.undefined)
     
-    @scala.inline
-    def setSigningAlgorithm(value: SigningAlgorithm): Self = StObject.set(x, "SigningAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSigningAlgorithm(value: SigningAlgorithm): Self = StObject.set(x, "SigningAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateArn(value: Arn): Self = StObject.set(x, "TemplateArn", value.asInstanceOf[js.Any])
+    inline def setTemplateArn(value: Arn): Self = StObject.set(x, "TemplateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateArnUndefined: Self = StObject.set(x, "TemplateArn", js.undefined)
+    inline def setTemplateArnUndefined: Self = StObject.set(x, "TemplateArn", js.undefined)
     
-    @scala.inline
-    def setValidity(value: Validity): Self = StObject.set(x, "Validity", value.asInstanceOf[js.Any])
+    inline def setValidity(value: Validity): Self = StObject.set(x, "Validity", value.asInstanceOf[js.Any])
   }
 }

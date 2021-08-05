@@ -33,8 +33,7 @@ trait XSortableGridData extends StObject {
 }
 object XSortableGridData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentSortOrder: Pair[Double, Boolean],
     getCurrentSortOrder: () => Pair[Double, Boolean],
     removeColumnSort: () => Unit,
@@ -44,19 +43,14 @@ object XSortableGridData {
     __obj.asInstanceOf[XSortableGridData]
   }
   
-  @scala.inline
-  implicit class XSortableGridDataMutableBuilder[Self <: XSortableGridData] (val x: Self) extends AnyVal {
+  extension [Self <: XSortableGridData](x: Self) {
     
-    @scala.inline
-    def setCurrentSortOrder(value: Pair[Double, Boolean]): Self = StObject.set(x, "CurrentSortOrder", value.asInstanceOf[js.Any])
+    inline def setCurrentSortOrder(value: Pair[Double, Boolean]): Self = StObject.set(x, "CurrentSortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentSortOrder(value: () => Pair[Double, Boolean]): Self = StObject.set(x, "getCurrentSortOrder", js.Any.fromFunction0(value))
+    inline def setGetCurrentSortOrder(value: () => Pair[Double, Boolean]): Self = StObject.set(x, "getCurrentSortOrder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveColumnSort(value: () => Unit): Self = StObject.set(x, "removeColumnSort", js.Any.fromFunction0(value))
+    inline def setRemoveColumnSort(value: () => Unit): Self = StObject.set(x, "removeColumnSort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSortByColumn(value: (Double, Boolean) => Unit): Self = StObject.set(x, "sortByColumn", js.Any.fromFunction2(value))
+    inline def setSortByColumn(value: (Double, Boolean) => Unit): Self = StObject.set(x, "sortByColumn", js.Any.fromFunction2(value))
   }
 }

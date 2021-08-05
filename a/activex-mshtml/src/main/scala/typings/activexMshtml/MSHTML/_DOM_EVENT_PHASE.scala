@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _DOM_EVENT_PHASE extends StObject
 object _DOM_EVENT_PHASE {
   
-  @scala.inline
-  def DEP_AT_TARGET: `2` = 2.asInstanceOf[`2`]
+  inline def DEP_AT_TARGET: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def DEP_BUBBLING_PHASE: `3` = 3.asInstanceOf[`3`]
+  inline def DEP_BUBBLING_PHASE: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def DEP_CAPTURING_PHASE: `1` = 1.asInstanceOf[`1`]
+  inline def DEP_CAPTURING_PHASE: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def DOM_EVENT_PHASE_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def DOM_EVENT_PHASE_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

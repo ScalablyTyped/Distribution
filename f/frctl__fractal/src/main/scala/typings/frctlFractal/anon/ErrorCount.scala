@@ -10,16 +10,13 @@ trait ErrorCount extends StObject {
 }
 object ErrorCount {
   
-  @scala.inline
-  def apply(errorCount: Double): ErrorCount = {
+  inline def apply(errorCount: Double): ErrorCount = {
     val __obj = js.Dynamic.literal(errorCount = errorCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorCount]
   }
   
-  @scala.inline
-  implicit class ErrorCountMutableBuilder[Self <: ErrorCount] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorCount](x: Self) {
     
-    @scala.inline
-    def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
+    inline def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
   }
 }

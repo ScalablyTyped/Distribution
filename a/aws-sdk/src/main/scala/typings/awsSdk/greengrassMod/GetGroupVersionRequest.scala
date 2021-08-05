@@ -18,19 +18,15 @@ trait GetGroupVersionRequest extends StObject {
 }
 object GetGroupVersionRequest {
   
-  @scala.inline
-  def apply(GroupId: string, GroupVersionId: string): GetGroupVersionRequest = {
+  inline def apply(GroupId: string, GroupVersionId: string): GetGroupVersionRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any], GroupVersionId = GroupVersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGroupVersionRequest]
   }
   
-  @scala.inline
-  implicit class GetGroupVersionRequestMutableBuilder[Self <: GetGroupVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetGroupVersionRequest](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupVersionId(value: string): Self = StObject.set(x, "GroupVersionId", value.asInstanceOf[js.Any])
+    inline def setGroupVersionId(value: string): Self = StObject.set(x, "GroupVersionId", value.asInstanceOf[js.Any])
   }
 }

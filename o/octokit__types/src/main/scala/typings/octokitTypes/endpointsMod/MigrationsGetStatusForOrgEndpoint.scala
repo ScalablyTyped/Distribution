@@ -17,20 +17,16 @@ trait MigrationsGetStatusForOrgEndpoint
 }
 object MigrationsGetStatusForOrgEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[wyandotte], migration_id: Double, org_ : String): MigrationsGetStatusForOrgEndpoint = {
+  inline def apply(mediaType: `0`[wyandotte], migration_id: Double, org_ : String): MigrationsGetStatusForOrgEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], migration_id = migration_id.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsGetStatusForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class MigrationsGetStatusForOrgEndpointMutableBuilder[Self <: MigrationsGetStatusForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsGetStatusForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setMigration_id(value: Double): Self = StObject.set(x, "migration_id", value.asInstanceOf[js.Any])
+    inline def setMigration_id(value: Double): Self = StObject.set(x, "migration_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

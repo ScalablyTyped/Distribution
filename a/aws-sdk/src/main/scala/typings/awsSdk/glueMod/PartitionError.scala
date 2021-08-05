@@ -18,28 +18,21 @@ trait PartitionError extends StObject {
 }
 object PartitionError {
   
-  @scala.inline
-  def apply(): PartitionError = {
+  inline def apply(): PartitionError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartitionError]
   }
   
-  @scala.inline
-  implicit class PartitionErrorMutableBuilder[Self <: PartitionError] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionError](x: Self) {
     
-    @scala.inline
-    def setErrorDetail(value: ErrorDetail): Self = StObject.set(x, "ErrorDetail", value.asInstanceOf[js.Any])
+    inline def setErrorDetail(value: ErrorDetail): Self = StObject.set(x, "ErrorDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailUndefined: Self = StObject.set(x, "ErrorDetail", js.undefined)
+    inline def setErrorDetailUndefined: Self = StObject.set(x, "ErrorDetail", js.undefined)
     
-    @scala.inline
-    def setPartitionValues(value: ValueStringList): Self = StObject.set(x, "PartitionValues", value.asInstanceOf[js.Any])
+    inline def setPartitionValues(value: ValueStringList): Self = StObject.set(x, "PartitionValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionValuesUndefined: Self = StObject.set(x, "PartitionValues", js.undefined)
+    inline def setPartitionValuesUndefined: Self = StObject.set(x, "PartitionValues", js.undefined)
     
-    @scala.inline
-    def setPartitionValuesVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValues", js.Array(value :_*))
+    inline def setPartitionValuesVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValues", js.Array(value :_*))
   }
 }

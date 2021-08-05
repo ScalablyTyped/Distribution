@@ -8,66 +8,53 @@ object appleMusicApiStrings {
   
   @js.native
   sealed trait albums extends StObject
-  @scala.inline
-  def albums: albums = "albums".asInstanceOf[albums]
+  inline def albums: albums = "albums".asInstanceOf[albums]
   
   @js.native
   sealed trait artists extends StObject
-  @scala.inline
-  def artists: artists = "artists".asInstanceOf[artists]
+  inline def artists: artists = "artists".asInstanceOf[artists]
   
   @js.native
   sealed trait clean extends StObject
-  @scala.inline
-  def clean: clean = "clean".asInstanceOf[clean]
+  inline def clean: clean = "clean".asInstanceOf[clean]
   
   @js.native
   sealed trait curators extends StObject
-  @scala.inline
-  def curators: curators = "curators".asInstanceOf[curators]
+  inline def curators: curators = "curators".asInstanceOf[curators]
   
   @js.native
   sealed trait editorial extends StObject
-  @scala.inline
-  def editorial: editorial = "editorial".asInstanceOf[editorial]
+  inline def editorial: editorial = "editorial".asInstanceOf[editorial]
   
   @js.native
   sealed trait explicit extends StObject
-  @scala.inline
-  def explicit: explicit = "explicit".asInstanceOf[explicit]
+  inline def explicit: explicit = "explicit".asInstanceOf[explicit]
   
   @js.native
   sealed trait external extends StObject
-  @scala.inline
-  def external: external = "external".asInstanceOf[external]
+  inline def external: external = "external".asInstanceOf[external]
   
   @js.native
   sealed trait genres extends StObject
-  @scala.inline
-  def genres: genres = "genres".asInstanceOf[genres]
+  inline def genres: genres = "genres".asInstanceOf[genres]
   
   @js.native
   sealed trait `personal-mix` extends StObject
-  @scala.inline
-  def `personal-mix`: `personal-mix` = "personal-mix".asInstanceOf[`personal-mix`]
+  inline def `personal-mix`: `personal-mix` = "personal-mix".asInstanceOf[`personal-mix`]
   
   @js.native
   sealed trait playlists extends StObject
-  @scala.inline
-  def playlists: playlists = "playlists".asInstanceOf[playlists]
+  inline def playlists: playlists = "playlists".asInstanceOf[playlists]
   
   @js.native
   sealed trait songs extends StObject
-  @scala.inline
-  def songs: songs = "songs".asInstanceOf[songs]
+  inline def songs: songs = "songs".asInstanceOf[songs]
   
   @js.native
   sealed trait stations extends StObject
-  @scala.inline
-  def stations: stations = "stations".asInstanceOf[stations]
+  inline def stations: stations = "stations".asInstanceOf[stations]
   
   @js.native
   sealed trait `user-shared` extends StObject
-  @scala.inline
-  def `user-shared`: `user-shared` = "user-shared".asInstanceOf[`user-shared`]
+  inline def `user-shared`: `user-shared` = "user-shared".asInstanceOf[`user-shared`]
 }

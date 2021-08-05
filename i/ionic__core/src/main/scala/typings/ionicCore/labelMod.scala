@@ -37,11 +37,11 @@ object labelMod {
     
     var el: HTMLElement = js.native
     
-    var emitColor: js.Any = js.native
+    /* private */ var emitColor: js.Any = js.native
     
-    var emitStyle: js.Any = js.native
+    /* private */ var emitStyle: js.Any = js.native
     
-    var inRange: js.Any = js.native
+    /* private */ var inRange: js.Any = js.native
     
     /**
       * Emitted when the color changes.

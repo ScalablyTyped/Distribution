@@ -24,50 +24,36 @@ object exceptionMod {
   }
   object Exception {
     
-    @scala.inline
-    def apply(): Exception = {
+    inline def apply(): Exception = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Exception]
     }
     
-    @scala.inline
-    implicit class ExceptionMutableBuilder[Self <: Exception] (val x: Self) extends AnyVal {
+    extension [Self <: Exception](x: Self) {
       
-      @scala.inline
-      def setMechanism(value: Mechanism): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
+      inline def setMechanism(value: Mechanism): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMechanismUndefined: Self = StObject.set(x, "mechanism", js.undefined)
+      inline def setMechanismUndefined: Self = StObject.set(x, "mechanism", js.undefined)
       
-      @scala.inline
-      def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
-      @scala.inline
-      def setStacktrace(value: Stacktrace): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
+      inline def setStacktrace(value: Stacktrace): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStacktraceUndefined: Self = StObject.set(x, "stacktrace", js.undefined)
+      inline def setStacktraceUndefined: Self = StObject.set(x, "stacktrace", js.undefined)
       
-      @scala.inline
-      def setThread_id(value: Double): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
+      inline def setThread_id(value: Double): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThread_idUndefined: Self = StObject.set(x, "thread_id", js.undefined)
+      inline def setThread_idUndefined: Self = StObject.set(x, "thread_id", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

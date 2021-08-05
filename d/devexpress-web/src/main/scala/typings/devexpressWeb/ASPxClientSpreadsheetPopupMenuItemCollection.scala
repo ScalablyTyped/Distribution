@@ -58,8 +58,7 @@ trait ASPxClientSpreadsheetPopupMenuItemCollection extends StObject {
 }
 object ASPxClientSpreadsheetPopupMenuItemCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: ASPxClientSpreadsheetPopupMenuItem => Unit,
     Clear: () => Unit,
     Get: Double => ASPxClientSpreadsheetPopupMenuItem,
@@ -73,31 +72,22 @@ object ASPxClientSpreadsheetPopupMenuItemCollection {
     __obj.asInstanceOf[ASPxClientSpreadsheetPopupMenuItemCollection]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpreadsheetPopupMenuItemCollectionMutableBuilder[Self <: ASPxClientSpreadsheetPopupMenuItemCollection] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpreadsheetPopupMenuItemCollection](x: Self) {
     
-    @scala.inline
-    def setAdd(value: ASPxClientSpreadsheetPopupMenuItem => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: ASPxClientSpreadsheetPopupMenuItem => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet(value: Double => ASPxClientSpreadsheetPopupMenuItem): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
+    inline def setGet(value: Double => ASPxClientSpreadsheetPopupMenuItem): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetByName(value: String => ASPxClientSpreadsheetPopupMenuItem): Self = StObject.set(x, "GetByName", js.Any.fromFunction1(value))
+    inline def setGetByName(value: String => ASPxClientSpreadsheetPopupMenuItem): Self = StObject.set(x, "GetByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCount(value: () => Double): Self = StObject.set(x, "GetCount", js.Any.fromFunction0(value))
+    inline def setGetCount(value: () => Double): Self = StObject.set(x, "GetCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsert(value: (Double, ASPxClientSpreadsheetPopupMenuItem) => Unit): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (Double, ASPxClientSpreadsheetPopupMenuItem) => Unit): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveByName(value: String => Unit): Self = StObject.set(x, "RemoveByName", js.Any.fromFunction1(value))
+    inline def setRemoveByName(value: String => Unit): Self = StObject.set(x, "RemoveByName", js.Any.fromFunction1(value))
   }
 }

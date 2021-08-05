@@ -16,7 +16,7 @@ trait SyncObjects extends StObject {
   
   def Item(Index: js.Any): SyncObject
   
-  @JSName("Outlook.SyncObjects_typekey")
+  /* private */ @JSName("Outlook.SyncObjects_typekey")
   var OutlookDotSyncObjects_typekey: SyncObjects
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait SyncObjects extends StObject {
 }
 object SyncObjects {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AppFolders: SyncObject,
     Application: Application,
     Class: OlObjectClass,
@@ -41,31 +40,22 @@ object SyncObjects {
     __obj.asInstanceOf[SyncObjects]
   }
   
-  @scala.inline
-  implicit class SyncObjectsMutableBuilder[Self <: SyncObjects] (val x: Self) extends AnyVal {
+  extension [Self <: SyncObjects](x: Self) {
     
-    @scala.inline
-    def setAppFolders(value: SyncObject): Self = StObject.set(x, "AppFolders", value.asInstanceOf[js.Any])
+    inline def setAppFolders(value: SyncObject): Self = StObject.set(x, "AppFolders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => SyncObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => SyncObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotSyncObjects_typekey(value: SyncObjects): Self = StObject.set(x, "Outlook.SyncObjects_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotSyncObjects_typekey(value: SyncObjects): Self = StObject.set(x, "Outlook.SyncObjects_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

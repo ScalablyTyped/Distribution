@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Encoding extends StObject
 object Encoding {
   
-  @scala.inline
-  def ascii: typings.speakeasy.speakeasyStrings.ascii = "ascii".asInstanceOf[typings.speakeasy.speakeasyStrings.ascii]
+  inline def ascii: typings.speakeasy.speakeasyStrings.ascii = "ascii".asInstanceOf[typings.speakeasy.speakeasyStrings.ascii]
   
-  @scala.inline
-  def base32: typings.speakeasy.speakeasyStrings.base32 = "base32".asInstanceOf[typings.speakeasy.speakeasyStrings.base32]
+  inline def base32: typings.speakeasy.speakeasyStrings.base32 = "base32".asInstanceOf[typings.speakeasy.speakeasyStrings.base32]
   
-  @scala.inline
-  def base64: typings.speakeasy.speakeasyStrings.base64 = "base64".asInstanceOf[typings.speakeasy.speakeasyStrings.base64]
+  inline def base64: typings.speakeasy.speakeasyStrings.base64 = "base64".asInstanceOf[typings.speakeasy.speakeasyStrings.base64]
   
-  @scala.inline
-  def hex: typings.speakeasy.speakeasyStrings.hex = "hex".asInstanceOf[typings.speakeasy.speakeasyStrings.hex]
+  inline def hex: typings.speakeasy.speakeasyStrings.hex = "hex".asInstanceOf[typings.speakeasy.speakeasyStrings.hex]
 }

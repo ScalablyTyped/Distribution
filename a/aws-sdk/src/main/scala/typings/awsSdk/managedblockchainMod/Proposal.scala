@@ -68,85 +68,59 @@ trait Proposal extends StObject {
 }
 object Proposal {
   
-  @scala.inline
-  def apply(): Proposal = {
+  inline def apply(): Proposal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Proposal]
   }
   
-  @scala.inline
-  implicit class ProposalMutableBuilder[Self <: Proposal] (val x: Self) extends AnyVal {
+  extension [Self <: Proposal](x: Self) {
     
-    @scala.inline
-    def setActions(value: ProposalActions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: ProposalActions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
+    inline def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
-    @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkIdUndefined: Self = StObject.set(x, "NetworkId", js.undefined)
+    inline def setNetworkIdUndefined: Self = StObject.set(x, "NetworkId", js.undefined)
     
-    @scala.inline
-    def setNoVoteCount(value: VoteCount): Self = StObject.set(x, "NoVoteCount", value.asInstanceOf[js.Any])
+    inline def setNoVoteCount(value: VoteCount): Self = StObject.set(x, "NoVoteCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoVoteCountUndefined: Self = StObject.set(x, "NoVoteCount", js.undefined)
+    inline def setNoVoteCountUndefined: Self = StObject.set(x, "NoVoteCount", js.undefined)
     
-    @scala.inline
-    def setOutstandingVoteCount(value: VoteCount): Self = StObject.set(x, "OutstandingVoteCount", value.asInstanceOf[js.Any])
+    inline def setOutstandingVoteCount(value: VoteCount): Self = StObject.set(x, "OutstandingVoteCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutstandingVoteCountUndefined: Self = StObject.set(x, "OutstandingVoteCount", js.undefined)
+    inline def setOutstandingVoteCountUndefined: Self = StObject.set(x, "OutstandingVoteCount", js.undefined)
     
-    @scala.inline
-    def setProposalId(value: ResourceIdString): Self = StObject.set(x, "ProposalId", value.asInstanceOf[js.Any])
+    inline def setProposalId(value: ResourceIdString): Self = StObject.set(x, "ProposalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalIdUndefined: Self = StObject.set(x, "ProposalId", js.undefined)
+    inline def setProposalIdUndefined: Self = StObject.set(x, "ProposalId", js.undefined)
     
-    @scala.inline
-    def setProposedByMemberId(value: ResourceIdString): Self = StObject.set(x, "ProposedByMemberId", value.asInstanceOf[js.Any])
+    inline def setProposedByMemberId(value: ResourceIdString): Self = StObject.set(x, "ProposedByMemberId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposedByMemberIdUndefined: Self = StObject.set(x, "ProposedByMemberId", js.undefined)
+    inline def setProposedByMemberIdUndefined: Self = StObject.set(x, "ProposedByMemberId", js.undefined)
     
-    @scala.inline
-    def setProposedByMemberName(value: NetworkMemberNameString): Self = StObject.set(x, "ProposedByMemberName", value.asInstanceOf[js.Any])
+    inline def setProposedByMemberName(value: NetworkMemberNameString): Self = StObject.set(x, "ProposedByMemberName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposedByMemberNameUndefined: Self = StObject.set(x, "ProposedByMemberName", js.undefined)
+    inline def setProposedByMemberNameUndefined: Self = StObject.set(x, "ProposedByMemberName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ProposalStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ProposalStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setYesVoteCount(value: VoteCount): Self = StObject.set(x, "YesVoteCount", value.asInstanceOf[js.Any])
+    inline def setYesVoteCount(value: VoteCount): Self = StObject.set(x, "YesVoteCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYesVoteCountUndefined: Self = StObject.set(x, "YesVoteCount", js.undefined)
+    inline def setYesVoteCountUndefined: Self = StObject.set(x, "YesVoteCount", js.undefined)
   }
 }

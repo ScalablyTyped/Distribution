@@ -17,20 +17,16 @@ object highlighterDriverMod {
   }
   object HighlighterDriver {
     
-    @scala.inline
-    def apply[T](exists: () => Boolean, getElement: () => T, html: () => String): HighlighterDriver[T] = {
+    inline def apply[T](exists: () => Boolean, getElement: () => T, html: () => String): HighlighterDriver[T] = {
       val __obj = js.Dynamic.literal(exists = js.Any.fromFunction0(exists), getElement = js.Any.fromFunction0(getElement), html = js.Any.fromFunction0(html))
       __obj.asInstanceOf[HighlighterDriver[T]]
     }
     
-    @scala.inline
-    implicit class HighlighterDriverMutableBuilder[Self <: HighlighterDriver[?], T] (val x: Self & HighlighterDriver[T]) extends AnyVal {
+    extension [Self <: HighlighterDriver[?], T](x: Self & HighlighterDriver[T]) {
       
-      @scala.inline
-      def setGetElement(value: () => T): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => T): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHtml(value: () => String): Self = StObject.set(x, "html", js.Any.fromFunction0(value))
+      inline def setHtml(value: () => String): Self = StObject.set(x, "html", js.Any.fromFunction0(value))
     }
   }
 }

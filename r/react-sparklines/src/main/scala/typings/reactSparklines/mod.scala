@@ -125,20 +125,16 @@ object mod {
   }
   object Point {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Point = {
+    inline def apply(x: Double, y: Double): Point = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Point]
     }
     
-    @scala.inline
-    implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+    extension [Self <: Point](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,53 +156,38 @@ object mod {
   }
   object SparklinesBarsProps {
     
-    @scala.inline
-    def apply(): SparklinesBarsProps = {
+    inline def apply(): SparklinesBarsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SparklinesBarsProps]
     }
     
-    @scala.inline
-    implicit class SparklinesBarsPropsMutableBuilder[Self <: SparklinesBarsProps] (val x: Self) extends AnyVal {
+    extension [Self <: SparklinesBarsProps](x: Self) {
       
-      @scala.inline
-      def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
+      inline def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
+      inline def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setOnMouseMove(value: (/* p */ Point, /* event */ MouseEvent[ReactSVGElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction2(value))
+      inline def setOnMouseMove(value: (/* p */ Point, /* event */ MouseEvent[ReactSVGElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+      inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      @scala.inline
-      def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+      inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
       
-      @scala.inline
-      def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -218,26 +199,20 @@ object mod {
   }
   object SparklinesCurveProps {
     
-    @scala.inline
-    def apply(): SparklinesCurveProps = {
+    inline def apply(): SparklinesCurveProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SparklinesCurveProps]
     }
     
-    @scala.inline
-    implicit class SparklinesCurvePropsMutableBuilder[Self <: SparklinesCurveProps] (val x: Self) extends AnyVal {
+    extension [Self <: SparklinesCurveProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -253,32 +228,24 @@ object mod {
   }
   object SparklinesLineProps {
     
-    @scala.inline
-    def apply(): SparklinesLineProps = {
+    inline def apply(): SparklinesLineProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SparklinesLineProps]
     }
     
-    @scala.inline
-    implicit class SparklinesLinePropsMutableBuilder[Self <: SparklinesLineProps] (val x: Self) extends AnyVal {
+    extension [Self <: SparklinesLineProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setOnMouseMove(value: (/* event */ enter | click, /* value */ Double, /* point */ Point) => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction3(value))
+      inline def setOnMouseMove(value: (/* event */ enter | click, /* value */ Double, /* point */ Point) => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+      inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -288,20 +255,16 @@ object mod {
   }
   object SparklinesNormalBandProps {
     
-    @scala.inline
-    def apply(): SparklinesNormalBandProps = {
+    inline def apply(): SparklinesNormalBandProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SparklinesNormalBandProps]
     }
     
-    @scala.inline
-    implicit class SparklinesNormalBandPropsMutableBuilder[Self <: SparklinesNormalBandProps] (val x: Self) extends AnyVal {
+    extension [Self <: SparklinesNormalBandProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -331,83 +294,58 @@ object mod {
   }
   object SparklinesProps {
     
-    @scala.inline
-    def apply(): SparklinesProps = {
+    inline def apply(): SparklinesProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SparklinesProps]
     }
     
-    @scala.inline
-    implicit class SparklinesPropsMutableBuilder[Self <: SparklinesProps] (val x: Self) extends AnyVal {
+    extension [Self <: SparklinesProps](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
+      inline def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
+      inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSvgHeight(value: Double | String): Self = StObject.set(x, "svgHeight", value.asInstanceOf[js.Any])
+      inline def setSvgHeight(value: Double | String): Self = StObject.set(x, "svgHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgHeightUndefined: Self = StObject.set(x, "svgHeight", js.undefined)
+      inline def setSvgHeightUndefined: Self = StObject.set(x, "svgHeight", js.undefined)
       
-      @scala.inline
-      def setSvgWidth(value: Double | String): Self = StObject.set(x, "svgWidth", value.asInstanceOf[js.Any])
+      inline def setSvgWidth(value: Double | String): Self = StObject.set(x, "svgWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgWidthUndefined: Self = StObject.set(x, "svgWidth", js.undefined)
+      inline def setSvgWidthUndefined: Self = StObject.set(x, "svgWidth", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -421,32 +359,24 @@ object mod {
   }
   object SparklinesReferenceLineProps {
     
-    @scala.inline
-    def apply(): SparklinesReferenceLineProps = {
+    inline def apply(): SparklinesReferenceLineProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SparklinesReferenceLineProps]
     }
     
-    @scala.inline
-    implicit class SparklinesReferenceLinePropsMutableBuilder[Self <: SparklinesReferenceLineProps] (val x: Self) extends AnyVal {
+    extension [Self <: SparklinesReferenceLineProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setType(value: max | min | mean | avg | median | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: max | min | mean | avg | median | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -460,32 +390,24 @@ object mod {
   }
   object SparklinesSpotsProps {
     
-    @scala.inline
-    def apply(): SparklinesSpotsProps = {
+    inline def apply(): SparklinesSpotsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SparklinesSpotsProps]
     }
     
-    @scala.inline
-    implicit class SparklinesSpotsPropsMutableBuilder[Self <: SparklinesSpotsProps] (val x: Self) extends AnyVal {
+    extension [Self <: SparklinesSpotsProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSpotColors(value: StringDictionary[String]): Self = StObject.set(x, "spotColors", value.asInstanceOf[js.Any])
+      inline def setSpotColors(value: StringDictionary[String]): Self = StObject.set(x, "spotColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpotColorsUndefined: Self = StObject.set(x, "spotColors", js.undefined)
+      inline def setSpotColorsUndefined: Self = StObject.set(x, "spotColors", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -501,38 +423,28 @@ object mod {
   }
   object SparklinesTextProps {
     
-    @scala.inline
-    def apply(): SparklinesTextProps = {
+    inline def apply(): SparklinesTextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SparklinesTextProps]
     }
     
-    @scala.inline
-    implicit class SparklinesTextPropsMutableBuilder[Self <: SparklinesTextProps] (val x: Self) extends AnyVal {
+    extension [Self <: SparklinesTextProps](x: Self) {
       
-      @scala.inline
-      def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+      inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

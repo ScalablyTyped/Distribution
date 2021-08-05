@@ -11,9 +11,9 @@ object suggestionsControllerMod {
   @js.native
   class SuggestionsController[T] () extends StObject {
     
-    var _ensureSuggestionModel: js.Any = js.native
+    /* private */ var _ensureSuggestionModel: js.Any = js.native
     
-    var _isSuggestionModel: js.Any = js.native
+    /* private */ var _isSuggestionModel: js.Any = js.native
     
     def convertSuggestionsToSuggestionItems(suggestions: js.Array[ISuggestionModel[T] | T]): js.Array[ISuggestionModel[T]] = js.native
     

@@ -16,16 +16,12 @@ object portalMarkerMod {
     /**
       *  create a new marker. 'data' contain the IITC-specific entity data to be stored in the object options
       */
-    @scala.inline
-    def createMarker(latlng: LatLng_, data: PortalData): Portal = (js.Dynamic.global.applyDynamic("createMarker")(latlng.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Portal]
+    inline def createMarker(latlng: LatLng_, data: PortalData): Portal = (js.Dynamic.global.applyDynamic("createMarker")(latlng.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Portal]
     
-    @scala.inline
-    def getMarkerStyleOptions(details: PortalOptions): PathOptions = js.Dynamic.global.applyDynamic("getMarkerStyleOptions")(details.asInstanceOf[js.Any]).asInstanceOf[PathOptions]
+    inline def getMarkerStyleOptions(details: PortalOptions): PathOptions = js.Dynamic.global.applyDynamic("getMarkerStyleOptions")(details.asInstanceOf[js.Any]).asInstanceOf[PathOptions]
     
-    @scala.inline
-    def portalMarkerScale(): Double = js.Dynamic.global.applyDynamic("portalMarkerScale")().asInstanceOf[Double]
+    inline def portalMarkerScale(): Double = js.Dynamic.global.applyDynamic("portalMarkerScale")().asInstanceOf[Double]
     
-    @scala.inline
-    def setMarkerStyle(marker: Portal, selected: Boolean): Unit = (js.Dynamic.global.applyDynamic("setMarkerStyle")(marker.asInstanceOf[js.Any], selected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMarkerStyle(marker: Portal, selected: Boolean): Unit = (js.Dynamic.global.applyDynamic("setMarkerStyle")(marker.asInstanceOf[js.Any], selected.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

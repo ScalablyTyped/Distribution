@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-remap-coverage"
-version := "0.1-dt-20200212Z-30cf1c"
+version := "0.1-dt-20200212Z-0b86c8"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

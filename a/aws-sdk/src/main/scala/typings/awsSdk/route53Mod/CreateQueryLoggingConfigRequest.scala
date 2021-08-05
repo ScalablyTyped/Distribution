@@ -18,19 +18,15 @@ trait CreateQueryLoggingConfigRequest extends StObject {
 }
 object CreateQueryLoggingConfigRequest {
   
-  @scala.inline
-  def apply(CloudWatchLogsLogGroupArn: CloudWatchLogsLogGroupArn, HostedZoneId: ResourceId): CreateQueryLoggingConfigRequest = {
+  inline def apply(CloudWatchLogsLogGroupArn: CloudWatchLogsLogGroupArn, HostedZoneId: ResourceId): CreateQueryLoggingConfigRequest = {
     val __obj = js.Dynamic.literal(CloudWatchLogsLogGroupArn = CloudWatchLogsLogGroupArn.asInstanceOf[js.Any], HostedZoneId = HostedZoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateQueryLoggingConfigRequest]
   }
   
-  @scala.inline
-  implicit class CreateQueryLoggingConfigRequestMutableBuilder[Self <: CreateQueryLoggingConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateQueryLoggingConfigRequest](x: Self) {
     
-    @scala.inline
-    def setCloudWatchLogsLogGroupArn(value: CloudWatchLogsLogGroupArn): Self = StObject.set(x, "CloudWatchLogsLogGroupArn", value.asInstanceOf[js.Any])
+    inline def setCloudWatchLogsLogGroupArn(value: CloudWatchLogsLogGroupArn): Self = StObject.set(x, "CloudWatchLogsLogGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
   }
 }

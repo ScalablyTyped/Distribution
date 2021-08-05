@@ -14,31 +14,23 @@ trait ProjectIntegrations extends StObject {
 }
 object ProjectIntegrations {
   
-  @scala.inline
-  def apply(): ProjectIntegrations = {
+  inline def apply(): ProjectIntegrations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectIntegrations]
   }
   
-  @scala.inline
-  implicit class ProjectIntegrationsMutableBuilder[Self <: ProjectIntegrations] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectIntegrations](x: Self) {
     
-    @scala.inline
-    def setCapacitor(value: ProjectIntegration): Self = StObject.set(x, "capacitor", value.asInstanceOf[js.Any])
+    inline def setCapacitor(value: ProjectIntegration): Self = StObject.set(x, "capacitor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacitorUndefined: Self = StObject.set(x, "capacitor", js.undefined)
+    inline def setCapacitorUndefined: Self = StObject.set(x, "capacitor", js.undefined)
     
-    @scala.inline
-    def setCordova(value: ProjectIntegration): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
+    inline def setCordova(value: ProjectIntegration): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCordovaUndefined: Self = StObject.set(x, "cordova", js.undefined)
+    inline def setCordovaUndefined: Self = StObject.set(x, "cordova", js.undefined)
     
-    @scala.inline
-    def setEnterprise(value: EnterpriseProjectIntegration): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: EnterpriseProjectIntegration): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseUndefined: Self = StObject.set(x, "enterprise", js.undefined)
+    inline def setEnterpriseUndefined: Self = StObject.set(x, "enterprise", js.undefined)
   }
 }

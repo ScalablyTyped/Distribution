@@ -41,12 +41,10 @@ object Util {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def queryParamsFromUrl(url: String): QueryParams = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[QueryParams]
+    inline def queryParamsFromUrl(url: String): QueryParams = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[QueryParams]
     
     /* static member */
-    @scala.inline
-    def randomAuthStateParam(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomAuthStateParam")().asInstanceOf[String]
+    inline def randomAuthStateParam(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomAuthStateParam")().asInstanceOf[String]
   }
   
   @JSGlobal("Dropbox.Util.Xhr")
@@ -63,15 +61,12 @@ object Util {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def urlDecode(string: js.Object): QueryParams = ^.asInstanceOf[js.Dynamic].applyDynamic("urlDecode")(string.asInstanceOf[js.Any]).asInstanceOf[QueryParams]
+    inline def urlDecode(string: js.Object): QueryParams = ^.asInstanceOf[js.Dynamic].applyDynamic("urlDecode")(string.asInstanceOf[js.Any]).asInstanceOf[QueryParams]
     
     /* static member */
-    @scala.inline
-    def urlEncode(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncode")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def urlEncode(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncode")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def urlEncodeValue(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncodeValue")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def urlEncodeValue(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncodeValue")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

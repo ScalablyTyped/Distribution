@@ -13,19 +13,15 @@ trait CaptionRenderingEventUIParam extends StObject {
 }
 object CaptionRenderingEventUIParam {
   
-  @scala.inline
-  def apply(): CaptionRenderingEventUIParam = {
+  inline def apply(): CaptionRenderingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaptionRenderingEventUIParam]
   }
   
-  @scala.inline
-  implicit class CaptionRenderingEventUIParamMutableBuilder[Self <: CaptionRenderingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionRenderingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

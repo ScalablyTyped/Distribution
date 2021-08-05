@@ -44,8 +44,7 @@ trait DataTypeSymbol
 }
 object DataTypeSymbol {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultValue: js.Any,
     fmtOData: js.Any => js.Any,
     getName: () => String,
@@ -56,76 +55,52 @@ object DataTypeSymbol {
     __obj.asInstanceOf[DataTypeSymbol]
   }
   
-  @scala.inline
-  implicit class DataTypeSymbolMutableBuilder[Self <: DataTypeSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: DataTypeSymbol](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFmtOData(value: js.Any => js.Any): Self = StObject.set(x, "fmtOData", js.Any.fromFunction1(value))
+    inline def setFmtOData(value: js.Any => js.Any): Self = StObject.set(x, "fmtOData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetConcurrencyValue(value: /* val */ js.Any => js.Any): Self = StObject.set(x, "getConcurrencyValue", js.Any.fromFunction1(value))
+    inline def setGetConcurrencyValue(value: /* val */ js.Any => js.Any): Self = StObject.set(x, "getConcurrencyValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetConcurrencyValueUndefined: Self = StObject.set(x, "getConcurrencyValue", js.undefined)
+    inline def setGetConcurrencyValueUndefined: Self = StObject.set(x, "getConcurrencyValue", js.undefined)
     
-    @scala.inline
-    def setGetNext(value: () => js.Any): Self = StObject.set(x, "getNext", js.Any.fromFunction0(value))
+    inline def setGetNext(value: () => js.Any): Self = StObject.set(x, "getNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNextUndefined: Self = StObject.set(x, "getNext", js.undefined)
+    inline def setGetNextUndefined: Self = StObject.set(x, "getNext", js.undefined)
     
-    @scala.inline
-    def setIsDate(value: Boolean): Self = StObject.set(x, "isDate", value.asInstanceOf[js.Any])
+    inline def setIsDate(value: Boolean): Self = StObject.set(x, "isDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDateUndefined: Self = StObject.set(x, "isDate", js.undefined)
+    inline def setIsDateUndefined: Self = StObject.set(x, "isDate", js.undefined)
     
-    @scala.inline
-    def setIsFloat(value: Boolean): Self = StObject.set(x, "isFloat", value.asInstanceOf[js.Any])
+    inline def setIsFloat(value: Boolean): Self = StObject.set(x, "isFloat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFloatUndefined: Self = StObject.set(x, "isFloat", js.undefined)
+    inline def setIsFloatUndefined: Self = StObject.set(x, "isFloat", js.undefined)
     
-    @scala.inline
-    def setIsInteger(value: Boolean): Self = StObject.set(x, "isInteger", value.asInstanceOf[js.Any])
+    inline def setIsInteger(value: Boolean): Self = StObject.set(x, "isInteger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIntegerUndefined: Self = StObject.set(x, "isInteger", js.undefined)
+    inline def setIsIntegerUndefined: Self = StObject.set(x, "isInteger", js.undefined)
     
-    @scala.inline
-    def setIsNumeric(value: Boolean): Self = StObject.set(x, "isNumeric", value.asInstanceOf[js.Any])
+    inline def setIsNumeric(value: Boolean): Self = StObject.set(x, "isNumeric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
+    inline def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
     
-    @scala.inline
-    def setNormalize(value: /* val */ js.Any => js.Any): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
+    inline def setNormalize(value: /* val */ js.Any => js.Any): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+    inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
-    @scala.inline
-    def setParse(value: (/* val */ js.Any, /* sourceTypeName */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+    inline def setParse(value: (/* val */ js.Any, /* sourceTypeName */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParseRawValue(value: /* val */ js.Any => js.Any): Self = StObject.set(x, "parseRawValue", js.Any.fromFunction1(value))
+    inline def setParseRawValue(value: /* val */ js.Any => js.Any): Self = StObject.set(x, "parseRawValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseRawValueUndefined: Self = StObject.set(x, "parseRawValue", js.undefined)
+    inline def setParseRawValueUndefined: Self = StObject.set(x, "parseRawValue", js.undefined)
     
-    @scala.inline
-    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     
-    @scala.inline
-    def setQuoteJsonOData(value: Boolean): Self = StObject.set(x, "quoteJsonOData", value.asInstanceOf[js.Any])
+    inline def setQuoteJsonOData(value: Boolean): Self = StObject.set(x, "quoteJsonOData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteJsonODataUndefined: Self = StObject.set(x, "quoteJsonOData", js.undefined)
+    inline def setQuoteJsonODataUndefined: Self = StObject.set(x, "quoteJsonOData", js.undefined)
     
-    @scala.inline
-    def setValidatorCtor(value: js.Any => Validator): Self = StObject.set(x, "validatorCtor", js.Any.fromFunction1(value))
+    inline def setValidatorCtor(value: js.Any => Validator): Self = StObject.set(x, "validatorCtor", js.Any.fromFunction1(value))
   }
 }

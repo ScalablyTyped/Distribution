@@ -10,19 +10,15 @@ trait ListDistributionsByRealtimeLogConfigResult extends StObject {
 }
 object ListDistributionsByRealtimeLogConfigResult {
   
-  @scala.inline
-  def apply(): ListDistributionsByRealtimeLogConfigResult = {
+  inline def apply(): ListDistributionsByRealtimeLogConfigResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDistributionsByRealtimeLogConfigResult]
   }
   
-  @scala.inline
-  implicit class ListDistributionsByRealtimeLogConfigResultMutableBuilder[Self <: ListDistributionsByRealtimeLogConfigResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListDistributionsByRealtimeLogConfigResult](x: Self) {
     
-    @scala.inline
-    def setDistributionList(value: DistributionList): Self = StObject.set(x, "DistributionList", value.asInstanceOf[js.Any])
+    inline def setDistributionList(value: DistributionList): Self = StObject.set(x, "DistributionList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionListUndefined: Self = StObject.set(x, "DistributionList", js.undefined)
+    inline def setDistributionListUndefined: Self = StObject.set(x, "DistributionList", js.undefined)
   }
 }

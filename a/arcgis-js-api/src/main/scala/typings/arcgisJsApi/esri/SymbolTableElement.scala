@@ -41,8 +41,7 @@ trait SymbolTableElement
 }
 object SymbolTableElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     infos: js.Array[SymbolTableElementType],
@@ -54,28 +53,20 @@ object SymbolTableElement {
     __obj.asInstanceOf[SymbolTableElement]
   }
   
-  @scala.inline
-  implicit class SymbolTableElementMutableBuilder[Self <: SymbolTableElement] (val x: Self) extends AnyVal {
+  extension [Self <: SymbolTableElement](x: Self) {
     
-    @scala.inline
-    def setInfos(value: js.Array[SymbolTableElementType]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
+    inline def setInfos(value: js.Array[SymbolTableElementType]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfosVarargs(value: SymbolTableElementType*): Self = StObject.set(x, "infos", js.Array(value :_*))
+    inline def setInfosVarargs(value: SymbolTableElementType*): Self = StObject.set(x, "infos", js.Array(value :_*))
     
-    @scala.inline
-    def setLegendType(value: String): Self = StObject.set(x, "legendType", value.asInstanceOf[js.Any])
+    inline def setLegendType(value: String): Self = StObject.set(x, "legendType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendTypeUndefined: Self = StObject.set(x, "legendType", js.undefined)
+    inline def setLegendTypeUndefined: Self = StObject.set(x, "legendType", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String | RendererTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | RendererTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

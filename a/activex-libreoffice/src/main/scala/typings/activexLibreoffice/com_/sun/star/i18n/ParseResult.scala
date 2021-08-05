@@ -36,8 +36,7 @@ trait ParseResult extends StObject {
 }
 object ParseResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharLen: Double,
     ContFlags: Double,
     DequotedNameOrString: String,
@@ -51,31 +50,22 @@ object ParseResult {
     __obj.asInstanceOf[ParseResult]
   }
   
-  @scala.inline
-  implicit class ParseResultMutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
+  extension [Self <: ParseResult](x: Self) {
     
-    @scala.inline
-    def setCharLen(value: Double): Self = StObject.set(x, "CharLen", value.asInstanceOf[js.Any])
+    inline def setCharLen(value: Double): Self = StObject.set(x, "CharLen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContFlags(value: Double): Self = StObject.set(x, "ContFlags", value.asInstanceOf[js.Any])
+    inline def setContFlags(value: Double): Self = StObject.set(x, "ContFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDequotedNameOrString(value: String): Self = StObject.set(x, "DequotedNameOrString", value.asInstanceOf[js.Any])
+    inline def setDequotedNameOrString(value: String): Self = StObject.set(x, "DequotedNameOrString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPos(value: Double): Self = StObject.set(x, "EndPos", value.asInstanceOf[js.Any])
+    inline def setEndPos(value: Double): Self = StObject.set(x, "EndPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadingWhiteSpace(value: Double): Self = StObject.set(x, "LeadingWhiteSpace", value.asInstanceOf[js.Any])
+    inline def setLeadingWhiteSpace(value: Double): Self = StObject.set(x, "LeadingWhiteSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartFlags(value: Double): Self = StObject.set(x, "StartFlags", value.asInstanceOf[js.Any])
+    inline def setStartFlags(value: Double): Self = StObject.set(x, "StartFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenType(value: Double): Self = StObject.set(x, "TokenType", value.asInstanceOf[js.Any])
+    inline def setTokenType(value: Double): Self = StObject.set(x, "TokenType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

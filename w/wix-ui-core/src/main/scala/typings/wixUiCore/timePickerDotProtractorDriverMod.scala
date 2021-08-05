@@ -35,8 +35,7 @@ object timePickerDotProtractorDriverMod {
   }
   object TimePickerDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blur: () => js.Promise[Unit],
       clickTickerDown: () => js.Promise[Unit],
       clickTickerUp: () => js.Promise[Unit],
@@ -51,32 +50,23 @@ object timePickerDotProtractorDriverMod {
       __obj.asInstanceOf[TimePickerDriver]
     }
     
-    @scala.inline
-    implicit class TimePickerDriverMutableBuilder[Self <: TimePickerDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TimePickerDriver](x: Self) {
       
-      @scala.inline
-      def setBlur(value: () => js.Promise[Unit]): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+      inline def setBlur(value: () => js.Promise[Unit]): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickTickerDown(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickTickerDown", js.Any.fromFunction0(value))
+      inline def setClickTickerDown(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickTickerDown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickTickerUp(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickTickerUp", js.Any.fromFunction0(value))
+      inline def setClickTickerUp(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickTickerUp", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocus(value: () => js.Promise[Unit]): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => js.Promise[Unit]): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMouseEnter(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
+      inline def setMouseEnter(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPressKeyArrowLeft(value: () => js.Promise[Unit]): Self = StObject.set(x, "pressKeyArrowLeft", js.Any.fromFunction0(value))
+      inline def setPressKeyArrowLeft(value: () => js.Promise[Unit]): Self = StObject.set(x, "pressKeyArrowLeft", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPressKeyArrowRight(value: () => js.Promise[Unit]): Self = StObject.set(x, "pressKeyArrowRight", js.Any.fromFunction0(value))
+      inline def setPressKeyArrowRight(value: () => js.Promise[Unit]): Self = StObject.set(x, "pressKeyArrowRight", js.Any.fromFunction0(value))
     }
   }
 }

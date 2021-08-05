@@ -122,8 +122,7 @@ object LocalizeJS {
     }
     object Options {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         autodetectLanguage: Boolean,
         basePath: String,
         blockedClasses: js.Array[String],
@@ -149,74 +148,51 @@ object LocalizeJS {
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setAutodetectLanguage(value: Boolean): Self = StObject.set(x, "autodetectLanguage", value.asInstanceOf[js.Any])
+        inline def setAutodetectLanguage(value: Boolean): Self = StObject.set(x, "autodetectLanguage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+        inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlockedClasses(value: js.Array[String]): Self = StObject.set(x, "blockedClasses", value.asInstanceOf[js.Any])
+        inline def setBlockedClasses(value: js.Array[String]): Self = StObject.set(x, "blockedClasses", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlockedClassesVarargs(value: String*): Self = StObject.set(x, "blockedClasses", js.Array(value :_*))
+        inline def setBlockedClassesVarargs(value: String*): Self = StObject.set(x, "blockedClasses", js.Array(value :_*))
         
-        @scala.inline
-        def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
+        inline def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnhancedContentSecurity(value: Boolean): Self = StObject.set(x, "enhancedContentSecurity", value.asInstanceOf[js.Any])
+        inline def setEnhancedContentSecurity(value: Boolean): Self = StObject.set(x, "enhancedContentSecurity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetchTranslations(value: Boolean): Self = StObject.set(x, "fetchTranslations", value.asInstanceOf[js.Any])
+        inline def setFetchTranslations(value: Boolean): Self = StObject.set(x, "fetchTranslations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrefetch(value: Boolean): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
+        inline def setPrefetch(value: Boolean): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRememberLanguage(value: Boolean): Self = StObject.set(x, "rememberLanguage", value.asInstanceOf[js.Any])
+        inline def setRememberLanguage(value: Boolean): Self = StObject.set(x, "rememberLanguage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRetranslateOnNewPhrases(value: Boolean): Self = StObject.set(x, "retranslateOnNewPhrases", value.asInstanceOf[js.Any])
+        inline def setRetranslateOnNewPhrases(value: Boolean): Self = StObject.set(x, "retranslateOnNewPhrases", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSaveNewPhrases(value: Boolean): Self = StObject.set(x, "saveNewPhrases", value.asInstanceOf[js.Any])
+        inline def setSaveNewPhrases(value: Boolean): Self = StObject.set(x, "saveNewPhrases", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSaveNewPhrasesFromSource(value: Boolean): Self = StObject.set(x, "saveNewPhrasesFromSource", value.asInstanceOf[js.Any])
+        inline def setSaveNewPhrasesFromSource(value: Boolean): Self = StObject.set(x, "saveNewPhrasesFromSource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetLanguage(value: String): Self = StObject.set(x, "targetLanguage", value.asInstanceOf[js.Any])
+        inline def setTargetLanguage(value: String): Self = StObject.set(x, "targetLanguage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTranslateAlt(value: Boolean): Self = StObject.set(x, "translateAlt", value.asInstanceOf[js.Any])
+        inline def setTranslateAlt(value: Boolean): Self = StObject.set(x, "translateAlt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTranslateBody(value: Boolean): Self = StObject.set(x, "translateBody", value.asInstanceOf[js.Any])
+        inline def setTranslateBody(value: Boolean): Self = StObject.set(x, "translateBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTranslateClasses(value: js.Array[String]): Self = StObject.set(x, "translateClasses", value.asInstanceOf[js.Any])
+        inline def setTranslateClasses(value: js.Array[String]): Self = StObject.set(x, "translateClasses", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTranslateClassesVarargs(value: String*): Self = StObject.set(x, "translateClasses", js.Array(value :_*))
+        inline def setTranslateClassesVarargs(value: String*): Self = StObject.set(x, "translateClasses", js.Array(value :_*))
         
-        @scala.inline
-        def setTranslateMetaTags(value: Boolean): Self = StObject.set(x, "translateMetaTags", value.asInstanceOf[js.Any])
+        inline def setTranslateMetaTags(value: Boolean): Self = StObject.set(x, "translateMetaTags", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTranslateNumbers(value: Boolean): Self = StObject.set(x, "translateNumbers", value.asInstanceOf[js.Any])
+        inline def setTranslateNumbers(value: Boolean): Self = StObject.set(x, "translateNumbers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTranslateTimeElement(value: Boolean): Self = StObject.set(x, "translateTimeElement", value.asInstanceOf[js.Any])
+        inline def setTranslateTimeElement(value: Boolean): Self = StObject.set(x, "translateTimeElement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTranslateTitle(value: Boolean): Self = StObject.set(x, "translateTitle", value.asInstanceOf[js.Any])
+        inline def setTranslateTitle(value: Boolean): Self = StObject.set(x, "translateTitle", value.asInstanceOf[js.Any])
       }
     }
     
@@ -230,23 +206,18 @@ object LocalizeJS {
     }
     object RateData {
       
-      @scala.inline
-      def apply(fromCurrency: String, rate: String, toCurrency: String): RateData = {
+      inline def apply(fromCurrency: String, rate: String, toCurrency: String): RateData = {
         val __obj = js.Dynamic.literal(fromCurrency = fromCurrency.asInstanceOf[js.Any], rate = rate.asInstanceOf[js.Any], toCurrency = toCurrency.asInstanceOf[js.Any])
         __obj.asInstanceOf[RateData]
       }
       
-      @scala.inline
-      implicit class RateDataMutableBuilder[Self <: RateData] (val x: Self) extends AnyVal {
+      extension [Self <: RateData](x: Self) {
         
-        @scala.inline
-        def setFromCurrency(value: String): Self = StObject.set(x, "fromCurrency", value.asInstanceOf[js.Any])
+        inline def setFromCurrency(value: String): Self = StObject.set(x, "fromCurrency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+        inline def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToCurrency(value: String): Self = StObject.set(x, "toCurrency", value.asInstanceOf[js.Any])
+        inline def setToCurrency(value: String): Self = StObject.set(x, "toCurrency", value.asInstanceOf[js.Any])
       }
     }
   }

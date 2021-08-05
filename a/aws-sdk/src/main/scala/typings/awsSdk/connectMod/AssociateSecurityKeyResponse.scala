@@ -13,19 +13,15 @@ trait AssociateSecurityKeyResponse extends StObject {
 }
 object AssociateSecurityKeyResponse {
   
-  @scala.inline
-  def apply(): AssociateSecurityKeyResponse = {
+  inline def apply(): AssociateSecurityKeyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateSecurityKeyResponse]
   }
   
-  @scala.inline
-  implicit class AssociateSecurityKeyResponseMutableBuilder[Self <: AssociateSecurityKeyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateSecurityKeyResponse](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
   }
 }

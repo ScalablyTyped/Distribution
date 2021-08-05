@@ -34,31 +34,23 @@ trait DirectionsRequestWaypoint extends StObject {
 }
 object DirectionsRequestWaypoint {
   
-  @scala.inline
-  def apply(coordinates: js.Array[Double] | LngLatLike): DirectionsRequestWaypoint = {
+  inline def apply(coordinates: js.Array[Double] | LngLatLike): DirectionsRequestWaypoint = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsRequestWaypoint]
   }
   
-  @scala.inline
-  implicit class DirectionsRequestWaypointMutableBuilder[Self <: DirectionsRequestWaypoint] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsRequestWaypoint](x: Self) {
     
-    @scala.inline
-    def setApproach(value: DirectionsApproach): Self = StObject.set(x, "approach", value.asInstanceOf[js.Any])
+    inline def setApproach(value: DirectionsApproach): Self = StObject.set(x, "approach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproachUndefined: Self = StObject.set(x, "approach", js.undefined)
+    inline def setApproachUndefined: Self = StObject.set(x, "approach", js.undefined)
     
-    @scala.inline
-    def setCoordinates(value: js.Array[Double] | LngLatLike): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: js.Array[Double] | LngLatLike): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
-    @scala.inline
-    def setRadius(value: String | unlimited): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: String | unlimited): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoHorizontalAnchor extends StObject
 object MsoHorizontalAnchor {
   
-  @scala.inline
-  def msoAnchorCenter: `2` = 2.asInstanceOf[`2`]
+  inline def msoAnchorCenter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoAnchorNone: `1` = 1.asInstanceOf[`1`]
+  inline def msoAnchorNone: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoHorizontalAnchorMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoHorizontalAnchorMixed: `-2` = -2.asInstanceOf[`-2`]
 }

@@ -16,26 +16,20 @@ object apiResponseMod {
   }
   object CreateInstallationResponse {
     
-    @scala.inline
-    def apply(authToken: GenerateAuthTokenResponse, refreshToken: String): CreateInstallationResponse = {
+    inline def apply(authToken: GenerateAuthTokenResponse, refreshToken: String): CreateInstallationResponse = {
       val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateInstallationResponse]
     }
     
-    @scala.inline
-    implicit class CreateInstallationResponseMutableBuilder[Self <: CreateInstallationResponse] (val x: Self) extends AnyVal {
+    extension [Self <: CreateInstallationResponse](x: Self) {
       
-      @scala.inline
-      def setAuthToken(value: GenerateAuthTokenResponse): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+      inline def setAuthToken(value: GenerateAuthTokenResponse): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFid(value: String): Self = StObject.set(x, "fid", value.asInstanceOf[js.Any])
+      inline def setFid(value: String): Self = StObject.set(x, "fid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFidUndefined: Self = StObject.set(x, "fid", js.undefined)
+      inline def setFidUndefined: Self = StObject.set(x, "fid", js.undefined)
       
-      @scala.inline
-      def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+      inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,20 +47,16 @@ object apiResponseMod {
   }
   object GenerateAuthTokenResponse {
     
-    @scala.inline
-    def apply(expiresIn: String, token: String): GenerateAuthTokenResponse = {
+    inline def apply(expiresIn: String, token: String): GenerateAuthTokenResponse = {
       val __obj = js.Dynamic.literal(expiresIn = expiresIn.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateAuthTokenResponse]
     }
     
-    @scala.inline
-    implicit class GenerateAuthTokenResponseMutableBuilder[Self <: GenerateAuthTokenResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateAuthTokenResponse](x: Self) {
       
-      @scala.inline
-      def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
 }

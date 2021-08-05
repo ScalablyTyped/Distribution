@@ -22,25 +22,19 @@ trait SchemaGooglePrivacyDlpV2DatastoreOptions extends StObject {
 }
 object SchemaGooglePrivacyDlpV2DatastoreOptions {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2DatastoreOptions = {
+  inline def apply(): SchemaGooglePrivacyDlpV2DatastoreOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DatastoreOptions]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2DatastoreOptionsMutableBuilder[Self <: SchemaGooglePrivacyDlpV2DatastoreOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2DatastoreOptions](x: Self) {
     
-    @scala.inline
-    def setKind(value: SchemaGooglePrivacyDlpV2KindExpression): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: SchemaGooglePrivacyDlpV2KindExpression): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPartitionId(value: SchemaGooglePrivacyDlpV2PartitionId): Self = StObject.set(x, "partitionId", value.asInstanceOf[js.Any])
+    inline def setPartitionId(value: SchemaGooglePrivacyDlpV2PartitionId): Self = StObject.set(x, "partitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionIdUndefined: Self = StObject.set(x, "partitionId", js.undefined)
+    inline def setPartitionIdUndefined: Self = StObject.set(x, "partitionId", js.undefined)
   }
 }

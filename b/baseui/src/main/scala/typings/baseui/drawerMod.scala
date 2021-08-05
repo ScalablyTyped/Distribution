@@ -44,20 +44,15 @@ object drawerMod {
     @js.native
     val ^ : ANCHOR = js.native
     
-    @scala.inline
-    implicit class ANCHORMutableBuilder[Self <: ANCHOR] (val x: Self) extends AnyVal {
+    extension [Self <: ANCHOR](x: Self) {
       
-      @scala.inline
-      def setBottom(value: bottom): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: bottom): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: left): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: left): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: right): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: right): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: top): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: top): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,17 +70,13 @@ object drawerMod {
     @js.native
     val ^ : CLOSE_SOURCE = js.native
     
-    @scala.inline
-    implicit class CLOSE_SOURCEMutableBuilder[Self <: CLOSE_SOURCE] (val x: Self) extends AnyVal {
+    extension [Self <: CLOSE_SOURCE](x: Self) {
       
-      @scala.inline
-      def setBackdrop(value: backdrop): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+      inline def setBackdrop(value: backdrop): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseButton(value: closeButton): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+      inline def setCloseButton(value: closeButton): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscape(value: escape_): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: escape_): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,17 +143,13 @@ object drawerMod {
     @js.native
     val ^ : SIZE = js.native
     
-    @scala.inline
-    implicit class SIZEMutableBuilder[Self <: SIZE] (val x: Self) extends AnyVal {
+    extension [Self <: SIZE](x: Self) {
       
-      @scala.inline
-      def setAuto(value: auto): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+      inline def setAuto(value: auto): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault(value: default_): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: default_): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull(value: full): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: full): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,17 +167,13 @@ object drawerMod {
     @js.native
     val ^ : SIZE_DIMENSIONS = js.native
     
-    @scala.inline
-    implicit class SIZE_DIMENSIONSMutableBuilder[Self <: SIZE_DIMENSIONS] (val x: Self) extends AnyVal {
+    extension [Self <: SIZE_DIMENSIONS](x: Self) {
       
-      @scala.inline
-      def setAuto(value: auto): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+      inline def setAuto(value: auto): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault(value: `500px`): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: `500px`): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull(value: `100Percentsign`): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: `100Percentsign`): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     }
   }
   
@@ -238,54 +221,42 @@ object drawerMod {
   }
   object DrawerOverrides {
     
-    @scala.inline
-    def apply(): DrawerOverrides = {
+    inline def apply(): DrawerOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DrawerOverrides]
     }
     
-    @scala.inline
-    implicit class DrawerOverridesMutableBuilder[Self <: DrawerOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: DrawerOverrides](x: Self) {
       
-      @scala.inline
-      def setBackdrop(
+      inline def setBackdrop(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "Backdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropUndefined: Self = StObject.set(x, "Backdrop", js.undefined)
+      inline def setBackdropUndefined: Self = StObject.set(x, "Backdrop", js.undefined)
       
-      @scala.inline
-      def setClose(
+      inline def setClose(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "Close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "Close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "Close", js.undefined)
       
-      @scala.inline
-      def setDrawerBody(
+      inline def setDrawerBody(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "DrawerBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerBodyUndefined: Self = StObject.set(x, "DrawerBody", js.undefined)
+      inline def setDrawerBodyUndefined: Self = StObject.set(x, "DrawerBody", js.undefined)
       
-      @scala.inline
-      def setDrawerContainer(
+      inline def setDrawerContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "DrawerContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerContainerUndefined: Self = StObject.set(x, "DrawerContainer", js.undefined)
+      inline def setDrawerContainerUndefined: Self = StObject.set(x, "DrawerContainer", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
     }
   }
   
@@ -321,98 +292,68 @@ object drawerMod {
   }
   object DrawerProps {
     
-    @scala.inline
-    def apply(): DrawerProps = {
+    inline def apply(): DrawerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DrawerProps]
     }
     
-    @scala.inline
-    implicit class DrawerPropsMutableBuilder[Self <: DrawerProps] (val x: Self) extends AnyVal {
+    extension [Self <: DrawerProps](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: left | right | top | bottom | String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: left | right | top | bottom | String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCloseable(value: Boolean): Self = StObject.set(x, "closeable", value.asInstanceOf[js.Any])
+      inline def setCloseable(value: Boolean): Self = StObject.set(x, "closeable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseableUndefined: Self = StObject.set(x, "closeable", js.undefined)
+      inline def setCloseableUndefined: Self = StObject.set(x, "closeable", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      @scala.inline
-      def setMountNode(value: HTMLElement): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
+      inline def setMountNode(value: HTMLElement): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
+      inline def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
       
-      @scala.inline
-      def setOnBackdropClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "onBackdropClick", js.Any.fromFunction1(value))
+      inline def setOnBackdropClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "onBackdropClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBackdropClickUndefined: Self = StObject.set(x, "onBackdropClick", js.undefined)
+      inline def setOnBackdropClickUndefined: Self = StObject.set(x, "onBackdropClick", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: /* args */ CloseSource => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* args */ CloseSource => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnEscapeKeyDown(value: /* event */ typings.react.mod.KeyboardEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onEscapeKeyDown", js.Any.fromFunction1(value))
+      inline def setOnEscapeKeyDown(value: /* event */ typings.react.mod.KeyboardEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onEscapeKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEscapeKeyDownUndefined: Self = StObject.set(x, "onEscapeKeyDown", js.undefined)
+      inline def setOnEscapeKeyDownUndefined: Self = StObject.set(x, "onEscapeKeyDown", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: DrawerOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: DrawerOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
+      inline def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
+      inline def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
       
-      @scala.inline
-      def setShowBackdrop(value: Boolean): Self = StObject.set(x, "showBackdrop", value.asInstanceOf[js.Any])
+      inline def setShowBackdrop(value: Boolean): Self = StObject.set(x, "showBackdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowBackdropUndefined: Self = StObject.set(x, "showBackdrop", js.undefined)
+      inline def setShowBackdropUndefined: Self = StObject.set(x, "showBackdrop", js.undefined)
       
-      @scala.inline
-      def setSize(value: default_ | full | auto | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: default_ | full | auto | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -424,20 +365,16 @@ object drawerMod {
   }
   object DrawerState {
     
-    @scala.inline
-    def apply(isVisible: Boolean, mounted: Boolean): DrawerState = {
+    inline def apply(isVisible: Boolean, mounted: Boolean): DrawerState = {
       val __obj = js.Dynamic.literal(isVisible = isVisible.asInstanceOf[js.Any], mounted = mounted.asInstanceOf[js.Any])
       __obj.asInstanceOf[DrawerState]
     }
     
-    @scala.inline
-    implicit class DrawerStateMutableBuilder[Self <: DrawerState] (val x: Self) extends AnyVal {
+    extension [Self <: DrawerState](x: Self) {
       
-      @scala.inline
-      def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMounted(value: Boolean): Self = StObject.set(x, "mounted", value.asInstanceOf[js.Any])
+      inline def setMounted(value: Boolean): Self = StObject.set(x, "mounted", value.asInstanceOf[js.Any])
     }
   }
   
@@ -465,56 +402,40 @@ object drawerMod {
   }
   object SharedStylePropsArg {
     
-    @scala.inline
-    def apply(): SharedStylePropsArg = {
+    inline def apply(): SharedStylePropsArg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SharedStylePropsArg]
     }
     
-    @scala.inline
-    implicit class SharedStylePropsArgMutableBuilder[Self <: SharedStylePropsArg] (val x: Self) extends AnyVal {
+    extension [Self <: SharedStylePropsArg](x: Self) {
       
-      @scala.inline
-      def set$anchor(value: left | right | top | bottom): Self = StObject.set(x, "$anchor", value.asInstanceOf[js.Any])
+      inline def set$anchor(value: left | right | top | bottom): Self = StObject.set(x, "$anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$anchorUndefined: Self = StObject.set(x, "$anchor", js.undefined)
+      inline def set$anchorUndefined: Self = StObject.set(x, "$anchor", js.undefined)
       
-      @scala.inline
-      def set$animating(value: Boolean): Self = StObject.set(x, "$animating", value.asInstanceOf[js.Any])
+      inline def set$animating(value: Boolean): Self = StObject.set(x, "$animating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$animatingUndefined: Self = StObject.set(x, "$animating", js.undefined)
+      inline def set$animatingUndefined: Self = StObject.set(x, "$animating", js.undefined)
       
-      @scala.inline
-      def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
+      inline def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$closeableUndefined: Self = StObject.set(x, "$closeable", js.undefined)
+      inline def set$closeableUndefined: Self = StObject.set(x, "$closeable", js.undefined)
       
-      @scala.inline
-      def set$isOpen(value: Boolean): Self = StObject.set(x, "$isOpen", value.asInstanceOf[js.Any])
+      inline def set$isOpen(value: Boolean): Self = StObject.set(x, "$isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isOpenUndefined: Self = StObject.set(x, "$isOpen", js.undefined)
+      inline def set$isOpenUndefined: Self = StObject.set(x, "$isOpen", js.undefined)
       
-      @scala.inline
-      def set$isVisible(value: Boolean): Self = StObject.set(x, "$isVisible", value.asInstanceOf[js.Any])
+      inline def set$isVisible(value: Boolean): Self = StObject.set(x, "$isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isVisibleUndefined: Self = StObject.set(x, "$isVisible", js.undefined)
+      inline def set$isVisibleUndefined: Self = StObject.set(x, "$isVisible", js.undefined)
       
-      @scala.inline
-      def set$size(value: default_ | full | auto): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+      inline def set$size(value: default_ | full | auto): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
+      inline def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

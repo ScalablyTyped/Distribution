@@ -16,19 +16,15 @@ trait MobileBroadbandUiccAppReadRecordResult extends StObject {
 }
 object MobileBroadbandUiccAppReadRecordResult {
   
-  @scala.inline
-  def apply(data: IBuffer, status: MobileBroadbandUiccAppOperationStatus): MobileBroadbandUiccAppReadRecordResult = {
+  inline def apply(data: IBuffer, status: MobileBroadbandUiccAppOperationStatus): MobileBroadbandUiccAppReadRecordResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandUiccAppReadRecordResult]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandUiccAppReadRecordResultMutableBuilder[Self <: MobileBroadbandUiccAppReadRecordResult] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandUiccAppReadRecordResult](x: Self) {
     
-    @scala.inline
-    def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: MobileBroadbandUiccAppOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MobileBroadbandUiccAppOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

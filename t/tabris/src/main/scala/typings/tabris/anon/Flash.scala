@@ -13,19 +13,15 @@ trait Flash extends StObject {
 }
 object Flash {
   
-  @scala.inline
-  def apply(): Flash = {
+  inline def apply(): Flash = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Flash]
   }
   
-  @scala.inline
-  implicit class FlashMutableBuilder[Self <: Flash] (val x: Self) extends AnyVal {
+  extension [Self <: Flash](x: Self) {
     
-    @scala.inline
-    def setFlash(value: auto | on | off): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
+    inline def setFlash(value: auto | on | off): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlashUndefined: Self = StObject.set(x, "flash", js.undefined)
+    inline def setFlashUndefined: Self = StObject.set(x, "flash", js.undefined)
   }
 }

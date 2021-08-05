@@ -21,22 +21,17 @@ trait SchemaListPropertiesSuggestionState extends StObject {
 }
 object SchemaListPropertiesSuggestionState {
   
-  @scala.inline
-  def apply(): SchemaListPropertiesSuggestionState = {
+  inline def apply(): SchemaListPropertiesSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListPropertiesSuggestionState]
   }
   
-  @scala.inline
-  implicit class SchemaListPropertiesSuggestionStateMutableBuilder[Self <: SchemaListPropertiesSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListPropertiesSuggestionState](x: Self) {
     
-    @scala.inline
-    def setNestingLevelsSuggestionStates(value: js.Array[SchemaNestingLevelSuggestionState]): Self = StObject.set(x, "nestingLevelsSuggestionStates", value.asInstanceOf[js.Any])
+    inline def setNestingLevelsSuggestionStates(value: js.Array[SchemaNestingLevelSuggestionState]): Self = StObject.set(x, "nestingLevelsSuggestionStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingLevelsSuggestionStatesUndefined: Self = StObject.set(x, "nestingLevelsSuggestionStates", js.undefined)
+    inline def setNestingLevelsSuggestionStatesUndefined: Self = StObject.set(x, "nestingLevelsSuggestionStates", js.undefined)
     
-    @scala.inline
-    def setNestingLevelsSuggestionStatesVarargs(value: SchemaNestingLevelSuggestionState*): Self = StObject.set(x, "nestingLevelsSuggestionStates", js.Array(value :_*))
+    inline def setNestingLevelsSuggestionStatesVarargs(value: SchemaNestingLevelSuggestionState*): Self = StObject.set(x, "nestingLevelsSuggestionStates", js.Array(value :_*))
   }
 }

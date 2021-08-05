@@ -14,31 +14,23 @@ trait DataSeries extends StObject {
 }
 object DataSeries {
   
-  @scala.inline
-  def apply(values: js.Array[DataPoint]): DataSeries = {
+  inline def apply(values: js.Array[DataPoint]): DataSeries = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSeries]
   }
   
-  @scala.inline
-  implicit class DataSeriesMutableBuilder[Self <: DataSeries] (val x: Self) extends AnyVal {
+  extension [Self <: DataSeries](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setId_org(value: String): Self = StObject.set(x, "id_org", value.asInstanceOf[js.Any])
+    inline def setId_org(value: String): Self = StObject.set(x, "id_org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId_orgUndefined: Self = StObject.set(x, "id_org", js.undefined)
+    inline def setId_orgUndefined: Self = StObject.set(x, "id_org", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[DataPoint]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[DataPoint]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: DataPoint*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: DataPoint*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

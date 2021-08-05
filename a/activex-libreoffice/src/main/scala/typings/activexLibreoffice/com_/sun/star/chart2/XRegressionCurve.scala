@@ -23,8 +23,7 @@ trait XRegressionCurve
 }
 object XRegressionCurve {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Calculator: XRegressionCurveCalculator,
     EquationProperties: XPropertySet,
     acquire: () => Unit,
@@ -38,22 +37,16 @@ object XRegressionCurve {
     __obj.asInstanceOf[XRegressionCurve]
   }
   
-  @scala.inline
-  implicit class XRegressionCurveMutableBuilder[Self <: XRegressionCurve] (val x: Self) extends AnyVal {
+  extension [Self <: XRegressionCurve](x: Self) {
     
-    @scala.inline
-    def setCalculator(value: XRegressionCurveCalculator): Self = StObject.set(x, "Calculator", value.asInstanceOf[js.Any])
+    inline def setCalculator(value: XRegressionCurveCalculator): Self = StObject.set(x, "Calculator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquationProperties(value: XPropertySet): Self = StObject.set(x, "EquationProperties", value.asInstanceOf[js.Any])
+    inline def setEquationProperties(value: XPropertySet): Self = StObject.set(x, "EquationProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCalculator(value: () => XRegressionCurveCalculator): Self = StObject.set(x, "getCalculator", js.Any.fromFunction0(value))
+    inline def setGetCalculator(value: () => XRegressionCurveCalculator): Self = StObject.set(x, "getCalculator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEquationProperties(value: () => XPropertySet): Self = StObject.set(x, "getEquationProperties", js.Any.fromFunction0(value))
+    inline def setGetEquationProperties(value: () => XPropertySet): Self = StObject.set(x, "getEquationProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEquationProperties(value: XPropertySet => Unit): Self = StObject.set(x, "setEquationProperties", js.Any.fromFunction1(value))
+    inline def setSetEquationProperties(value: XPropertySet => Unit): Self = StObject.set(x, "setEquationProperties", js.Any.fromFunction1(value))
   }
 }

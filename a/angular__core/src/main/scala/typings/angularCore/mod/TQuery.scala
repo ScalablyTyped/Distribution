@@ -83,8 +83,7 @@ trait TQuery extends StObject {
 }
 object TQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     crossesNgTemplate: Boolean,
     elementEnd: TNode => Unit,
     elementStart: (TView, TNode) => Unit,
@@ -97,37 +96,26 @@ object TQuery {
     __obj.asInstanceOf[TQuery]
   }
   
-  @scala.inline
-  implicit class TQueryMutableBuilder[Self <: TQuery] (val x: Self) extends AnyVal {
+  extension [Self <: TQuery](x: Self) {
     
-    @scala.inline
-    def setCrossesNgTemplate(value: Boolean): Self = StObject.set(x, "crossesNgTemplate", value.asInstanceOf[js.Any])
+    inline def setCrossesNgTemplate(value: Boolean): Self = StObject.set(x, "crossesNgTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementEnd(value: TNode => Unit): Self = StObject.set(x, "elementEnd", js.Any.fromFunction1(value))
+    inline def setElementEnd(value: TNode => Unit): Self = StObject.set(x, "elementEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementStart(value: (TView, TNode) => Unit): Self = StObject.set(x, "elementStart", js.Any.fromFunction2(value))
+    inline def setElementStart(value: (TView, TNode) => Unit): Self = StObject.set(x, "elementStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEmbeddedTView(value: (TNode, Double) => TQuery | Null): Self = StObject.set(x, "embeddedTView", js.Any.fromFunction2(value))
+    inline def setEmbeddedTView(value: (TNode, Double) => TQuery | Null): Self = StObject.set(x, "embeddedTView", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIndexInDeclarationView(value: Double): Self = StObject.set(x, "indexInDeclarationView", value.asInstanceOf[js.Any])
+    inline def setIndexInDeclarationView(value: Double): Self = StObject.set(x, "indexInDeclarationView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatches(value: js.Array[Double]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[Double]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesNull: Self = StObject.set(x, "matches", null)
+    inline def setMatchesNull: Self = StObject.set(x, "matches", null)
     
-    @scala.inline
-    def setMatchesVarargs(value: Double*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: Double*): Self = StObject.set(x, "matches", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadata(value: TQueryMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: TQueryMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: (TView, TNode) => Unit): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    inline def setTemplate(value: (TView, TNode) => Unit): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
   }
 }

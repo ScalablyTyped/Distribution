@@ -43,49 +43,35 @@ trait ParamsResourceInstancesGetguestattributes
 }
 object ParamsResourceInstancesGetguestattributes {
   
-  @scala.inline
-  def apply(): ParamsResourceInstancesGetguestattributes = {
+  inline def apply(): ParamsResourceInstancesGetguestattributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceInstancesGetguestattributes]
   }
   
-  @scala.inline
-  implicit class ParamsResourceInstancesGetguestattributesMutableBuilder[Self <: ParamsResourceInstancesGetguestattributes] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceInstancesGetguestattributes](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
-    @scala.inline
-    def setQueryPath(value: String): Self = StObject.set(x, "queryPath", value.asInstanceOf[js.Any])
+    inline def setQueryPath(value: String): Self = StObject.set(x, "queryPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryPathUndefined: Self = StObject.set(x, "queryPath", js.undefined)
+    inline def setQueryPathUndefined: Self = StObject.set(x, "queryPath", js.undefined)
     
-    @scala.inline
-    def setVariableKey(value: String): Self = StObject.set(x, "variableKey", value.asInstanceOf[js.Any])
+    inline def setVariableKey(value: String): Self = StObject.set(x, "variableKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableKeyUndefined: Self = StObject.set(x, "variableKey", js.undefined)
+    inline def setVariableKeyUndefined: Self = StObject.set(x, "variableKey", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

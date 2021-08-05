@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLPerformanceNavigation")
 @js.native
-class IHTMLPerformanceNavigation protected ()
+/* private */ class IHTMLPerformanceNavigation ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLPerformanceNavigation {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IHTMLPerformanceNavigation_typekey")
   var MSHTMLDotIHTMLPerformanceNavigation_typekey: typings.activexMshtml.MSHTML.IHTMLPerformanceNavigation = js.native
   

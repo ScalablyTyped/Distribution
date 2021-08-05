@@ -25,8 +25,7 @@ trait Printing3DMaterial extends StObject {
 }
 object Printing3DMaterial {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseGroups: IVector[Printing3DBaseMaterialGroup],
     colorGroups: IVector[Printing3DColorMaterialGroup],
     compositeGroups: IVector[Printing3DCompositeMaterialGroup],
@@ -37,22 +36,16 @@ object Printing3DMaterial {
     __obj.asInstanceOf[Printing3DMaterial]
   }
   
-  @scala.inline
-  implicit class Printing3DMaterialMutableBuilder[Self <: Printing3DMaterial] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DMaterial](x: Self) {
     
-    @scala.inline
-    def setBaseGroups(value: IVector[Printing3DBaseMaterialGroup]): Self = StObject.set(x, "baseGroups", value.asInstanceOf[js.Any])
+    inline def setBaseGroups(value: IVector[Printing3DBaseMaterialGroup]): Self = StObject.set(x, "baseGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorGroups(value: IVector[Printing3DColorMaterialGroup]): Self = StObject.set(x, "colorGroups", value.asInstanceOf[js.Any])
+    inline def setColorGroups(value: IVector[Printing3DColorMaterialGroup]): Self = StObject.set(x, "colorGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeGroups(value: IVector[Printing3DCompositeMaterialGroup]): Self = StObject.set(x, "compositeGroups", value.asInstanceOf[js.Any])
+    inline def setCompositeGroups(value: IVector[Printing3DCompositeMaterialGroup]): Self = StObject.set(x, "compositeGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiplePropertyGroups(value: IVector[Printing3DMultiplePropertyMaterialGroup]): Self = StObject.set(x, "multiplePropertyGroups", value.asInstanceOf[js.Any])
+    inline def setMultiplePropertyGroups(value: IVector[Printing3DMultiplePropertyMaterialGroup]): Self = StObject.set(x, "multiplePropertyGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTexture2CoordGroups(value: IVector[Printing3DTexture2CoordMaterialGroup]): Self = StObject.set(x, "texture2CoordGroups", value.asInstanceOf[js.Any])
+    inline def setTexture2CoordGroups(value: IVector[Printing3DTexture2CoordMaterialGroup]): Self = StObject.set(x, "texture2CoordGroups", value.asInstanceOf[js.Any])
   }
 }

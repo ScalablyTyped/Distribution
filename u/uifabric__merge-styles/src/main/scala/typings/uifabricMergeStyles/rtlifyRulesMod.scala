@@ -11,6 +11,5 @@ object rtlifyRulesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def rtlifyRules(options: IStyleOptions, rulePairs: js.Array[String | Double], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rtlifyRules")(options.asInstanceOf[js.Any], rulePairs.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def rtlifyRules(options: IStyleOptions, rulePairs: js.Array[String | Double], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rtlifyRules")(options.asInstanceOf[js.Any], rulePairs.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

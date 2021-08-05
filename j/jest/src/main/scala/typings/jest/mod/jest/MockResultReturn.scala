@@ -18,20 +18,16 @@ trait MockResultReturn[T]
 }
 object MockResultReturn {
   
-  @scala.inline
-  def apply[T](value: T): MockResultReturn[T] = {
+  inline def apply[T](value: T): MockResultReturn[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("return")
     __obj.asInstanceOf[MockResultReturn[T]]
   }
   
-  @scala.inline
-  implicit class MockResultReturnMutableBuilder[Self <: MockResultReturn[?], T] (val x: Self & MockResultReturn[T]) extends AnyVal {
+  extension [Self <: MockResultReturn[?], T](x: Self & MockResultReturn[T]) {
     
-    @scala.inline
-    def setType(value: `return`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `return`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

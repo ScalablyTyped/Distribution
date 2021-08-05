@@ -19,46 +19,33 @@ trait CreateNotificationOptions extends StObject {
 }
 object CreateNotificationOptions {
   
-  @scala.inline
-  def apply(): CreateNotificationOptions = {
+  inline def apply(): CreateNotificationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNotificationOptions]
   }
   
-  @scala.inline
-  implicit class CreateNotificationOptionsMutableBuilder[Self <: CreateNotificationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNotificationOptions](x: Self) {
     
-    @scala.inline
-    def setCustomAttributes(value: StringDictionary[String]): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
+    inline def setCustomAttributes(value: StringDictionary[String]): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomAttributesUndefined: Self = StObject.set(x, "customAttributes", js.undefined)
+    inline def setCustomAttributesUndefined: Self = StObject.set(x, "customAttributes", js.undefined)
     
-    @scala.inline
-    def setEventTypes(value: js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
+    inline def setEventTypes(value: js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
+    inline def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
     
-    @scala.inline
-    def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
+    inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setObjectNamePrefix(value: String): Self = StObject.set(x, "objectNamePrefix", value.asInstanceOf[js.Any])
+    inline def setObjectNamePrefix(value: String): Self = StObject.set(x, "objectNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectNamePrefixUndefined: Self = StObject.set(x, "objectNamePrefix", js.undefined)
+    inline def setObjectNamePrefixUndefined: Self = StObject.set(x, "objectNamePrefix", js.undefined)
     
-    @scala.inline
-    def setPayloadFormat(value: String): Self = StObject.set(x, "payloadFormat", value.asInstanceOf[js.Any])
+    inline def setPayloadFormat(value: String): Self = StObject.set(x, "payloadFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadFormatUndefined: Self = StObject.set(x, "payloadFormat", js.undefined)
+    inline def setPayloadFormatUndefined: Self = StObject.set(x, "payloadFormat", js.undefined)
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait DefaultReducer extends StObject {
 }
 object DefaultReducer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fields: (js.Object, /* action */ Action) => /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongorito.mongorito.Reducer<any> */ js.Object,
     unset: (js.Array[String], /* action */ Action) => /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongorito.mongorito.Reducer<any> */ js.Object
   ): DefaultReducer = {
@@ -25,16 +24,13 @@ object DefaultReducer {
     __obj.asInstanceOf[DefaultReducer]
   }
   
-  @scala.inline
-  implicit class DefaultReducerMutableBuilder[Self <: DefaultReducer] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultReducer](x: Self) {
     
-    @scala.inline
-    def setFields(
+    inline def setFields(
       value: (js.Object, /* action */ Action) => /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongorito.mongorito.Reducer<any> */ js.Object
     ): Self = StObject.set(x, "fields", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnset(
+    inline def setUnset(
       value: (js.Array[String], /* action */ Action) => /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongorito.mongorito.Reducer<any> */ js.Object
     ): Self = StObject.set(x, "unset", js.Any.fromFunction2(value))
   }

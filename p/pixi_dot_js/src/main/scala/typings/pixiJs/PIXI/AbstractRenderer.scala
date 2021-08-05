@@ -26,7 +26,7 @@ trait AbstractRenderer
     * @member {number} PIXI.AbstractRenderer#_backgroundColor
     * @protected
     */
-  var _backgroundColor: Double = js.native
+  /* protected */ var _backgroundColor: Double = js.native
   
   /**
     * The background color as an [R, G, B] array.
@@ -34,7 +34,7 @@ trait AbstractRenderer
     * @member {number[]} PIXI.AbstractRenderer#_backgroundColorRgba
     * @protected
     */
-  var _backgroundColorRgba: js.Array[Double] = js.native
+  /* protected */ var _backgroundColorRgba: js.Array[Double] = js.native
   
   /**
     * The background color as a string.
@@ -42,7 +42,7 @@ trait AbstractRenderer
     * @member {string} PIXI.AbstractRenderer#_backgroundColorString
     * @protected
     */
-  var _backgroundColorString: String = js.native
+  /* protected */ var _backgroundColorString: String = js.native
   
   /**
     * The last root object that the renderer tried to render.
@@ -50,7 +50,7 @@ trait AbstractRenderer
     * @member {PIXI.DisplayObject} PIXI.AbstractRenderer#_lastObjectRendered
     * @protected
     */
-  var _lastObjectRendered: DisplayObject = js.native
+  /* protected */ var _lastObjectRendered: DisplayObject = js.native
   
   /**
     * Whether CSS dimensions of canvas view should be resized to screen dimensions automatically.

@@ -20,25 +20,19 @@ trait IssuesDeleteMilestoneRequestOptions extends StObject {
 }
 object IssuesDeleteMilestoneRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): IssuesDeleteMilestoneRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): IssuesDeleteMilestoneRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/milestones/:milestone_number")
     __obj.asInstanceOf[IssuesDeleteMilestoneRequestOptions]
   }
   
-  @scala.inline
-  implicit class IssuesDeleteMilestoneRequestOptionsMutableBuilder[Self <: IssuesDeleteMilestoneRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IssuesDeleteMilestoneRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_number): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_number): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

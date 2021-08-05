@@ -15,28 +15,21 @@ trait ArmBaseOperand extends StObject {
 }
 object ArmBaseOperand {
   
-  @scala.inline
-  def apply(subtracted: Boolean): ArmBaseOperand = {
+  inline def apply(subtracted: Boolean): ArmBaseOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArmBaseOperand]
   }
   
-  @scala.inline
-  implicit class ArmBaseOperandMutableBuilder[Self <: ArmBaseOperand] (val x: Self) extends AnyVal {
+  extension [Self <: ArmBaseOperand](x: Self) {
     
-    @scala.inline
-    def setShift(value: Type): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
+    inline def setShift(value: Type): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
+    inline def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
     
-    @scala.inline
-    def setSubtracted(value: Boolean): Self = StObject.set(x, "subtracted", value.asInstanceOf[js.Any])
+    inline def setSubtracted(value: Boolean): Self = StObject.set(x, "subtracted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVectorIndex(value: Double): Self = StObject.set(x, "vectorIndex", value.asInstanceOf[js.Any])
+    inline def setVectorIndex(value: Double): Self = StObject.set(x, "vectorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVectorIndexUndefined: Self = StObject.set(x, "vectorIndex", js.undefined)
+    inline def setVectorIndexUndefined: Self = StObject.set(x, "vectorIndex", js.undefined)
   }
 }

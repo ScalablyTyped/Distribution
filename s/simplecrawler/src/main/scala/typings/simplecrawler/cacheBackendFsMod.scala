@@ -14,10 +14,8 @@ object cacheBackendFsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): FSBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[FSBackend]
-  @scala.inline
-  def default(loadParameter: String): FSBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(loadParameter.asInstanceOf[js.Any]).asInstanceOf[FSBackend]
+  inline def default(): FSBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[FSBackend]
+  inline def default(loadParameter: String): FSBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(loadParameter.asInstanceOf[js.Any]).asInstanceOf[FSBackend]
   
   @JSImport("simplecrawler/cache-backend-fs", "FSBackend")
   @js.native

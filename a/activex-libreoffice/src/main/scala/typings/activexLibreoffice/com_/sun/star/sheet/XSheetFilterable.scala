@@ -28,8 +28,7 @@ trait XSheetFilterable
 }
 object XSheetFilterable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createFilterDescriptor: Boolean => XSheetFilterDescriptor,
     filter: XSheetFilterDescriptor => Unit,
@@ -40,13 +39,10 @@ object XSheetFilterable {
     __obj.asInstanceOf[XSheetFilterable]
   }
   
-  @scala.inline
-  implicit class XSheetFilterableMutableBuilder[Self <: XSheetFilterable] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetFilterable](x: Self) {
     
-    @scala.inline
-    def setCreateFilterDescriptor(value: Boolean => XSheetFilterDescriptor): Self = StObject.set(x, "createFilterDescriptor", js.Any.fromFunction1(value))
+    inline def setCreateFilterDescriptor(value: Boolean => XSheetFilterDescriptor): Self = StObject.set(x, "createFilterDescriptor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilter(value: XSheetFilterDescriptor => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: XSheetFilterDescriptor => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
   }
 }

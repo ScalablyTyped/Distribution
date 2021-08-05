@@ -19,8 +19,7 @@ object esmPrismAsyncLightMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   type SyntaxHighlighter = Component[SyntaxHighlighterProps, js.Object, js.Any]

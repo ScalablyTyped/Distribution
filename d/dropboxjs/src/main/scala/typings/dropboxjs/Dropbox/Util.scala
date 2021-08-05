@@ -19,8 +19,7 @@ object Util {
   }
   object EventSource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addListener: js.Function1[/* event */ js.Any, Unit] => EventSource,
       dispatch: js.Object => Boolean,
       removeListener: js.Function1[/* event */ js.Any, Unit] => EventSource
@@ -29,17 +28,13 @@ object Util {
       __obj.asInstanceOf[EventSource]
     }
     
-    @scala.inline
-    implicit class EventSourceMutableBuilder[Self <: EventSource] (val x: Self) extends AnyVal {
+    extension [Self <: EventSource](x: Self) {
       
-      @scala.inline
-      def setAddListener(value: js.Function1[/* event */ js.Any, Unit] => EventSource): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+      inline def setAddListener(value: js.Function1[/* event */ js.Any, Unit] => EventSource): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDispatch(value: js.Object => Boolean): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: js.Object => Boolean): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveListener(value: js.Function1[/* event */ js.Any, Unit] => EventSource): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+      inline def setRemoveListener(value: js.Function1[/* event */ js.Any, Unit] => EventSource): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -49,17 +44,14 @@ object Util {
   }
   object Oauth {
     
-    @scala.inline
-    def apply(checkAuthStateParam: String => Boolean): Oauth = {
+    inline def apply(checkAuthStateParam: String => Boolean): Oauth = {
       val __obj = js.Dynamic.literal(checkAuthStateParam = js.Any.fromFunction1(checkAuthStateParam))
       __obj.asInstanceOf[Oauth]
     }
     
-    @scala.inline
-    implicit class OauthMutableBuilder[Self <: Oauth] (val x: Self) extends AnyVal {
+    extension [Self <: Oauth](x: Self) {
       
-      @scala.inline
-      def setCheckAuthStateParam(value: String => Boolean): Self = StObject.set(x, "checkAuthStateParam", js.Any.fromFunction1(value))
+      inline def setCheckAuthStateParam(value: String => Boolean): Self = StObject.set(x, "checkAuthStateParam", js.Any.fromFunction1(value))
     }
   }
   

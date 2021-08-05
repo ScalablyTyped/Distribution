@@ -28,20 +28,12 @@ object commonMod {
   @js.native
   val DragPreviewImage: FC[DragPreviewImageProps] = js.native
   
-  @scala.inline
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory): DndContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any]).asInstanceOf[DndContextType]
-  @scala.inline
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
-  @scala.inline
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext, options: BackendOptions): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
-  @scala.inline
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext, options: BackendOptions, debugMode: Boolean): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any], debugMode.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
-  @scala.inline
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext, options: Unit, debugMode: Boolean): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any], debugMode.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
-  @scala.inline
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: Unit, options: BackendOptions): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
-  @scala.inline
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: Unit, options: BackendOptions, debugMode: Boolean): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any], debugMode.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
-  @scala.inline
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: Unit, options: Unit, debugMode: Boolean): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any], debugMode.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
+  inline def createDndContext[BackendContext, BackendOptions](backend: BackendFactory): DndContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any]).asInstanceOf[DndContextType]
+  inline def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
+  inline def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext, options: BackendOptions): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
+  inline def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext, options: BackendOptions, debugMode: Boolean): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any], debugMode.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
+  inline def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext, options: Unit, debugMode: Boolean): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any], debugMode.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
+  inline def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: Unit, options: BackendOptions): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
+  inline def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: Unit, options: BackendOptions, debugMode: Boolean): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any], debugMode.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
+  inline def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: Unit, options: Unit, debugMode: Boolean): DndContextType = (^.asInstanceOf[js.Dynamic].applyDynamic("createDndContext")(backend.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any], debugMode.asInstanceOf[js.Any])).asInstanceOf[DndContextType]
 }

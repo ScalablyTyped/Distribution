@@ -39,8 +39,7 @@ trait DimensionAttribute extends StObject {
 }
 object DimensionAttribute {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDimension: () => Dimension,
     getKeyProperty: () => js.Any,
     getLabelText: () => String,
@@ -51,22 +50,16 @@ object DimensionAttribute {
     __obj.asInstanceOf[DimensionAttribute]
   }
   
-  @scala.inline
-  implicit class DimensionAttributeMutableBuilder[Self <: DimensionAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionAttribute](x: Self) {
     
-    @scala.inline
-    def setGetDimension(value: () => Dimension): Self = StObject.set(x, "getDimension", js.Any.fromFunction0(value))
+    inline def setGetDimension(value: () => Dimension): Self = StObject.set(x, "getDimension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetKeyProperty(value: () => js.Any): Self = StObject.set(x, "getKeyProperty", js.Any.fromFunction0(value))
+    inline def setGetKeyProperty(value: () => js.Any): Self = StObject.set(x, "getKeyProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabelText(value: () => String): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
+    inline def setGetLabelText(value: () => String): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextProperty(value: () => js.Any): Self = StObject.set(x, "getTextProperty", js.Any.fromFunction0(value))
+    inline def setGetTextProperty(value: () => js.Any): Self = StObject.set(x, "getTextProperty", js.Any.fromFunction0(value))
   }
 }

@@ -23,22 +23,17 @@ trait SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly extends 
 }
 object SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPolyMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly](x: Self) {
     
-    @scala.inline
-    def setVertices(value: js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
+    inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    @scala.inline
-    def setVerticesVarargs(value: SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

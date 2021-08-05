@@ -53,23 +53,23 @@ object topologyMod {
   abstract class Layer () extends Serializable {
     def this(args: LayerArgs) = this()
     
-    var _addedWeightNames: js.Any = js.native
+    /* private */ var _addedWeightNames: js.Any = js.native
     
-    var _built: js.Any = js.native
+    /* private */ var _built: js.Any = js.native
     
-    var _callHook: js.Any = js.native
+    /* private */ var _callHook: js.Any = js.native
     
-    var _losses: js.Any = js.native
+    /* private */ var _losses: js.Any = js.native
     
-    var _nonTrainableWeights: js.Any = js.native
+    /* private */ var _nonTrainableWeights: js.Any = js.native
     
-    var _refCount: Double | Null = js.native
+    /* protected */ var _refCount: Double | Null = js.native
     
-    var _stateful: Boolean = js.native
+    /* protected */ var _stateful: Boolean = js.native
     
-    var _trainableWeights: js.Array[LayerVariable] = js.native
+    /* protected */ var _trainableWeights: js.Array[LayerVariable] = js.native
     
-    var _updates: js.Any = js.native
+    /* private */ var _updates: js.Any = js.native
     
     var activityRegularizer: Regularizer = js.native
     
@@ -85,7 +85,7 @@ object topologyMod {
       * @param kwargs Dictionary of keyword arguments that were passed to the
       *   `call` method of the layer at the call that created the node.
       */
-    var addInboundNode: js.Any = js.native
+    /* private */ var addInboundNode: js.Any = js.native
     
     def addLoss(losses: js.Array[RegularizerFn]): Unit = js.native
     /**
@@ -545,7 +545,7 @@ object topologyMod {
     
     var dtype: DataType = js.native
     
-    var fastWeightInitDuringBuild: js.Any = js.native
+    /* private */ var fastWeightInitDuringBuild: js.Any = js.native
     
     /**
       * Retrieves the input tensor(s) of a layer at a given node.
@@ -565,7 +565,7 @@ object topologyMod {
       * @param nodeIndex
       * @param attrName The name of the attribute related to request for this node.
       */
-    var getNodeAtIndex: js.Any = js.native
+    /* private */ var getNodeAtIndex: js.Any = js.native
     
     /**
       * Retrieves the output tensor(s) of a layer at a given node.
@@ -708,7 +708,7 @@ object topologyMod {
     var trainableWeights: js.Array[LayerVariable] = js.native
     
     /** Whether the layer weights will be updated during training. */
-    var trainable_ : Boolean = js.native
+    /* protected */ var trainable_ : Boolean = js.native
     
     val updates: js.Array[Tensor[Rank]] = js.native
     
@@ -743,8 +743,7 @@ object topologyMod {
       *
       * @returns The unique name.
       */
-    @scala.inline
-    def nodeKey(layer: Layer, nodeIndex: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeKey")(layer.asInstanceOf[js.Any], nodeIndex.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def nodeKey(layer: Layer, nodeIndex: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeKey")(layer.asInstanceOf[js.Any], nodeIndex.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "Node")
@@ -890,14 +889,10 @@ object topologyMod {
     var tensorIndex: Double = js.native
   }
   
-  @scala.inline
-  def getSourceInputs(tensor: SymbolicTensor): js.Array[SymbolicTensor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceInputs")(tensor.asInstanceOf[js.Any]).asInstanceOf[js.Array[SymbolicTensor]]
-  @scala.inline
-  def getSourceInputs(tensor: SymbolicTensor, layer: Unit, nodeIndex: Double): js.Array[SymbolicTensor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceInputs")(tensor.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], nodeIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[SymbolicTensor]]
-  @scala.inline
-  def getSourceInputs(tensor: SymbolicTensor, layer: Layer): js.Array[SymbolicTensor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceInputs")(tensor.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[js.Array[SymbolicTensor]]
-  @scala.inline
-  def getSourceInputs(tensor: SymbolicTensor, layer: Layer, nodeIndex: Double): js.Array[SymbolicTensor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceInputs")(tensor.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], nodeIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[SymbolicTensor]]
+  inline def getSourceInputs(tensor: SymbolicTensor): js.Array[SymbolicTensor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceInputs")(tensor.asInstanceOf[js.Any]).asInstanceOf[js.Array[SymbolicTensor]]
+  inline def getSourceInputs(tensor: SymbolicTensor, layer: Unit, nodeIndex: Double): js.Array[SymbolicTensor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceInputs")(tensor.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], nodeIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[SymbolicTensor]]
+  inline def getSourceInputs(tensor: SymbolicTensor, layer: Layer): js.Array[SymbolicTensor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceInputs")(tensor.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[js.Array[SymbolicTensor]]
+  inline def getSourceInputs(tensor: SymbolicTensor, layer: Layer, nodeIndex: Double): js.Array[SymbolicTensor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceInputs")(tensor.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], nodeIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[SymbolicTensor]]
   
   type CallHook = js.Function2[/* inputs */ Tensor[Rank] | js.Array[Tensor[Rank]], /* kwargs */ Kwargs, Unit]
   
@@ -915,20 +910,16 @@ object topologyMod {
   }
   object DisposeResult {
     
-    @scala.inline
-    def apply(numDisposedVariables: Double, refCountAfterDispose: Double): DisposeResult = {
+    inline def apply(numDisposedVariables: Double, refCountAfterDispose: Double): DisposeResult = {
       val __obj = js.Dynamic.literal(numDisposedVariables = numDisposedVariables.asInstanceOf[js.Any], refCountAfterDispose = refCountAfterDispose.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisposeResult]
     }
     
-    @scala.inline
-    implicit class DisposeResultMutableBuilder[Self <: DisposeResult] (val x: Self) extends AnyVal {
+    extension [Self <: DisposeResult](x: Self) {
       
-      @scala.inline
-      def setNumDisposedVariables(value: Double): Self = StObject.set(x, "numDisposedVariables", value.asInstanceOf[js.Any])
+      inline def setNumDisposedVariables(value: Double): Self = StObject.set(x, "numDisposedVariables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefCountAfterDispose(value: Double): Self = StObject.set(x, "refCountAfterDispose", value.asInstanceOf[js.Any])
+      inline def setRefCountAfterDispose(value: Double): Self = StObject.set(x, "refCountAfterDispose", value.asInstanceOf[js.Any])
     }
   }
   
@@ -954,53 +945,38 @@ object topologyMod {
   }
   object InputSpecArgs {
     
-    @scala.inline
-    def apply(): InputSpecArgs = {
+    inline def apply(): InputSpecArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputSpecArgs]
     }
     
-    @scala.inline
-    implicit class InputSpecArgsMutableBuilder[Self <: InputSpecArgs] (val x: Self) extends AnyVal {
+    extension [Self <: InputSpecArgs](x: Self) {
       
-      @scala.inline
-      def setAxes(value: NumberDictionary[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: NumberDictionary[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+      inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
-      @scala.inline
-      def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
-      @scala.inline
-      def setMaxNDim(value: Double): Self = StObject.set(x, "maxNDim", value.asInstanceOf[js.Any])
+      inline def setMaxNDim(value: Double): Self = StObject.set(x, "maxNDim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxNDimUndefined: Self = StObject.set(x, "maxNDim", js.undefined)
+      inline def setMaxNDimUndefined: Self = StObject.set(x, "maxNDim", js.undefined)
       
-      @scala.inline
-      def setMinNDim(value: Double): Self = StObject.set(x, "minNDim", value.asInstanceOf[js.Any])
+      inline def setMinNDim(value: Double): Self = StObject.set(x, "minNDim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinNDimUndefined: Self = StObject.set(x, "minNDim", js.undefined)
+      inline def setMinNDimUndefined: Self = StObject.set(x, "minNDim", js.undefined)
       
-      @scala.inline
-      def setNdim(value: Double): Self = StObject.set(x, "ndim", value.asInstanceOf[js.Any])
+      inline def setNdim(value: Double): Self = StObject.set(x, "ndim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNdimUndefined: Self = StObject.set(x, "ndim", js.undefined)
+      inline def setNdimUndefined: Self = StObject.set(x, "ndim", js.undefined)
       
-      @scala.inline
-      def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      @scala.inline
-      def setShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "shape", js.Array(value :_*))
     }
   }
   
@@ -1055,71 +1031,50 @@ object topologyMod {
   }
   object LayerArgs {
     
-    @scala.inline
-    def apply(): LayerArgs = {
+    inline def apply(): LayerArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayerArgs]
     }
     
-    @scala.inline
-    implicit class LayerArgsMutableBuilder[Self <: LayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LayerArgs](x: Self) {
       
-      @scala.inline
-      def setBatchInputShape(value: Shape): Self = StObject.set(x, "batchInputShape", value.asInstanceOf[js.Any])
+      inline def setBatchInputShape(value: Shape): Self = StObject.set(x, "batchInputShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
+      inline def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
       
-      @scala.inline
-      def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
+      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
-      @scala.inline
-      def setInputDType(value: DataType): Self = StObject.set(x, "inputDType", value.asInstanceOf[js.Any])
+      inline def setInputDType(value: DataType): Self = StObject.set(x, "inputDType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputDTypeUndefined: Self = StObject.set(x, "inputDType", js.undefined)
+      inline def setInputDTypeUndefined: Self = StObject.set(x, "inputDType", js.undefined)
       
-      @scala.inline
-      def setInputShape(value: Shape): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
+      inline def setInputShape(value: Shape): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
+      inline def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
       
-      @scala.inline
-      def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
+      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTrainable(value: Boolean): Self = StObject.set(x, "trainable", value.asInstanceOf[js.Any])
+      inline def setTrainable(value: Boolean): Self = StObject.set(x, "trainable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrainableUndefined: Self = StObject.set(x, "trainable", js.undefined)
+      inline def setTrainableUndefined: Self = StObject.set(x, "trainable", js.undefined)
       
-      @scala.inline
-      def setWeights(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
+      inline def setWeights(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
+      inline def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
       
-      @scala.inline
-      def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value :_*))
+      inline def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value :_*))
     }
   }
   
@@ -1173,8 +1128,7 @@ object topologyMod {
   }
   object NodeArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       inboundLayers: js.Array[Layer],
       inputMasks: js.Array[Tensor[Rank]],
       inputShapes: Shape | js.Array[Shape],
@@ -1190,65 +1144,45 @@ object topologyMod {
       __obj.asInstanceOf[NodeArgs]
     }
     
-    @scala.inline
-    implicit class NodeArgsMutableBuilder[Self <: NodeArgs] (val x: Self) extends AnyVal {
+    extension [Self <: NodeArgs](x: Self) {
       
-      @scala.inline
-      def setInboundLayers(value: js.Array[Layer]): Self = StObject.set(x, "inboundLayers", value.asInstanceOf[js.Any])
+      inline def setInboundLayers(value: js.Array[Layer]): Self = StObject.set(x, "inboundLayers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInboundLayersVarargs(value: Layer*): Self = StObject.set(x, "inboundLayers", js.Array(value :_*))
+      inline def setInboundLayersVarargs(value: Layer*): Self = StObject.set(x, "inboundLayers", js.Array(value :_*))
       
-      @scala.inline
-      def setInputMasks(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "inputMasks", value.asInstanceOf[js.Any])
+      inline def setInputMasks(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "inputMasks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputMasksVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "inputMasks", js.Array(value :_*))
+      inline def setInputMasksVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "inputMasks", js.Array(value :_*))
       
-      @scala.inline
-      def setInputShapes(value: Shape | js.Array[Shape]): Self = StObject.set(x, "inputShapes", value.asInstanceOf[js.Any])
+      inline def setInputShapes(value: Shape | js.Array[Shape]): Self = StObject.set(x, "inputShapes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputShapesVarargs(value: (Double | Null | Shape)*): Self = StObject.set(x, "inputShapes", js.Array(value :_*))
+      inline def setInputShapesVarargs(value: (Double | Null | Shape)*): Self = StObject.set(x, "inputShapes", js.Array(value :_*))
       
-      @scala.inline
-      def setInputTensors(value: js.Array[SymbolicTensor]): Self = StObject.set(x, "inputTensors", value.asInstanceOf[js.Any])
+      inline def setInputTensors(value: js.Array[SymbolicTensor]): Self = StObject.set(x, "inputTensors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputTensorsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "inputTensors", js.Array(value :_*))
+      inline def setInputTensorsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "inputTensors", js.Array(value :_*))
       
-      @scala.inline
-      def setNodeIndices(value: js.Array[Double]): Self = StObject.set(x, "nodeIndices", value.asInstanceOf[js.Any])
+      inline def setNodeIndices(value: js.Array[Double]): Self = StObject.set(x, "nodeIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeIndicesVarargs(value: Double*): Self = StObject.set(x, "nodeIndices", js.Array(value :_*))
+      inline def setNodeIndicesVarargs(value: Double*): Self = StObject.set(x, "nodeIndices", js.Array(value :_*))
       
-      @scala.inline
-      def setOutboundLayer(value: Layer): Self = StObject.set(x, "outboundLayer", value.asInstanceOf[js.Any])
+      inline def setOutboundLayer(value: Layer): Self = StObject.set(x, "outboundLayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputMasks(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "outputMasks", value.asInstanceOf[js.Any])
+      inline def setOutputMasks(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "outputMasks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputMasksVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "outputMasks", js.Array(value :_*))
+      inline def setOutputMasksVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "outputMasks", js.Array(value :_*))
       
-      @scala.inline
-      def setOutputShapes(value: Shape | js.Array[Shape]): Self = StObject.set(x, "outputShapes", value.asInstanceOf[js.Any])
+      inline def setOutputShapes(value: Shape | js.Array[Shape]): Self = StObject.set(x, "outputShapes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputShapesVarargs(value: (Double | Null | Shape)*): Self = StObject.set(x, "outputShapes", js.Array(value :_*))
+      inline def setOutputShapesVarargs(value: (Double | Null | Shape)*): Self = StObject.set(x, "outputShapes", js.Array(value :_*))
       
-      @scala.inline
-      def setOutputTensors(value: js.Array[SymbolicTensor]): Self = StObject.set(x, "outputTensors", value.asInstanceOf[js.Any])
+      inline def setOutputTensors(value: js.Array[SymbolicTensor]): Self = StObject.set(x, "outputTensors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputTensorsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "outputTensors", js.Array(value :_*))
+      inline def setOutputTensorsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "outputTensors", js.Array(value :_*))
       
-      @scala.inline
-      def setTensorIndices(value: js.Array[Double]): Self = StObject.set(x, "tensorIndices", value.asInstanceOf[js.Any])
+      inline def setTensorIndices(value: js.Array[Double]): Self = StObject.set(x, "tensorIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTensorIndicesVarargs(value: Double*): Self = StObject.set(x, "tensorIndices", js.Array(value :_*))
+      inline def setTensorIndicesVarargs(value: Double*): Self = StObject.set(x, "tensorIndices", js.Array(value :_*))
     }
   }
   

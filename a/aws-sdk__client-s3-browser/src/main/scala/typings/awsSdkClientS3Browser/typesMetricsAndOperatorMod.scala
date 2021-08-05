@@ -23,29 +23,22 @@ object typesMetricsAndOperatorMod {
   }
   object MetricsAndOperator {
     
-    @scala.inline
-    def apply(): MetricsAndOperator = {
+    inline def apply(): MetricsAndOperator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MetricsAndOperator]
     }
     
-    @scala.inline
-    implicit class MetricsAndOperatorMutableBuilder[Self <: MetricsAndOperator] (val x: Self) extends AnyVal {
+    extension [Self <: MetricsAndOperator](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[Tag] | Iterable[Tag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[Tag] | Iterable[Tag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     }
   }
   
@@ -61,23 +54,18 @@ object typesMetricsAndOperatorMod {
   }
   object UnmarshalledMetricsAndOperator {
     
-    @scala.inline
-    def apply(): UnmarshalledMetricsAndOperator = {
+    inline def apply(): UnmarshalledMetricsAndOperator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledMetricsAndOperator]
     }
     
-    @scala.inline
-    implicit class UnmarshalledMetricsAndOperatorMutableBuilder[Self <: UnmarshalledMetricsAndOperator] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledMetricsAndOperator](x: Self) {
       
-      @scala.inline
-      def setTags(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     }
   }
 }

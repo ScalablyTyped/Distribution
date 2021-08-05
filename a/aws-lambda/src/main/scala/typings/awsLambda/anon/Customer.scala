@@ -10,16 +10,13 @@ trait Customer extends StObject {
 }
 object Customer {
   
-  @scala.inline
-  def apply(Customer: Audio): Customer = {
+  inline def apply(Customer: Audio): Customer = {
     val __obj = js.Dynamic.literal(Customer = Customer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Customer]
   }
   
-  @scala.inline
-  implicit class CustomerMutableBuilder[Self <: Customer] (val x: Self) extends AnyVal {
+  extension [Self <: Customer](x: Self) {
     
-    @scala.inline
-    def setCustomer(value: Audio): Self = StObject.set(x, "Customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: Audio): Self = StObject.set(x, "Customer", value.asInstanceOf[js.Any])
   }
 }

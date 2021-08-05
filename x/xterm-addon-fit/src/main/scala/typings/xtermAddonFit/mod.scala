@@ -51,20 +51,16 @@ object mod {
   }
   object ITerminalDimensions {
     
-    @scala.inline
-    def apply(cols: Double, rows: Double): ITerminalDimensions = {
+    inline def apply(cols: Double, rows: Double): ITerminalDimensions = {
       val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITerminalDimensions]
     }
     
-    @scala.inline
-    implicit class ITerminalDimensionsMutableBuilder[Self <: ITerminalDimensions] (val x: Self) extends AnyVal {
+    extension [Self <: ITerminalDimensions](x: Self) {
       
-      @scala.inline
-      def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     }
   }
 }

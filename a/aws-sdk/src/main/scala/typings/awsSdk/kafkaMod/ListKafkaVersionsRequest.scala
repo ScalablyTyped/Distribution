@@ -20,25 +20,19 @@ trait ListKafkaVersionsRequest extends StObject {
 }
 object ListKafkaVersionsRequest {
   
-  @scala.inline
-  def apply(): ListKafkaVersionsRequest = {
+  inline def apply(): ListKafkaVersionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListKafkaVersionsRequest]
   }
   
-  @scala.inline
-  implicit class ListKafkaVersionsRequestMutableBuilder[Self <: ListKafkaVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListKafkaVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

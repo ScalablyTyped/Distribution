@@ -14,6 +14,5 @@ object iterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def iter[M /* <: QueryMethodTypes */](iterResult: default[M], options: ParsedOptions): IterResultType[M] = (^.asInstanceOf[js.Dynamic].applyDynamic("iter")(iterResult.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IterResultType[M]]
+  inline def iter[M /* <: QueryMethodTypes */](iterResult: default[M], options: ParsedOptions): IterResultType[M] = (^.asInstanceOf[js.Dynamic].applyDynamic("iter")(iterResult.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IterResultType[M]]
 }

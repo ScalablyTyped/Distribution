@@ -20,27 +20,21 @@ trait S3EncryptionSettings extends StObject {
 }
 object S3EncryptionSettings {
   
-  @scala.inline
-  def apply(): S3EncryptionSettings = {
+  inline def apply(): S3EncryptionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3EncryptionSettings]
   }
   
-  @scala.inline
-  implicit class S3EncryptionSettingsMutableBuilder[Self <: S3EncryptionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: S3EncryptionSettings](x: Self) {
     
-    @scala.inline
-    def setEncryptionType(value: S3ServerSideEncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
+    inline def setEncryptionType(value: S3ServerSideEncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
+    inline def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
     
-    @scala.inline
-    def setKmsKeyArn(
+    inline def setKmsKeyArn(
       value: stringPatternArnAwsUsGovCnKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912
     ): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
   }
 }

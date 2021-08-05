@@ -133,8 +133,7 @@ trait GetRestrictionsForOrg extends StObject {
 }
 object GetRestrictionsForOrg {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getRestrictionsForOrg: `159`,
     getRestrictionsForRepo: `160`,
     removeRestrictionsForOrg: `161`,
@@ -146,25 +145,18 @@ object GetRestrictionsForOrg {
     __obj.asInstanceOf[GetRestrictionsForOrg]
   }
   
-  @scala.inline
-  implicit class GetRestrictionsForOrgMutableBuilder[Self <: GetRestrictionsForOrg] (val x: Self) extends AnyVal {
+  extension [Self <: GetRestrictionsForOrg](x: Self) {
     
-    @scala.inline
-    def setGetRestrictionsForOrg(value: `159`): Self = StObject.set(x, "getRestrictionsForOrg", value.asInstanceOf[js.Any])
+    inline def setGetRestrictionsForOrg(value: `159`): Self = StObject.set(x, "getRestrictionsForOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRestrictionsForRepo(value: `160`): Self = StObject.set(x, "getRestrictionsForRepo", value.asInstanceOf[js.Any])
+    inline def setGetRestrictionsForRepo(value: `160`): Self = StObject.set(x, "getRestrictionsForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveRestrictionsForOrg(value: `161`): Self = StObject.set(x, "removeRestrictionsForOrg", value.asInstanceOf[js.Any])
+    inline def setRemoveRestrictionsForOrg(value: `161`): Self = StObject.set(x, "removeRestrictionsForOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveRestrictionsForRepo(value: `162`): Self = StObject.set(x, "removeRestrictionsForRepo", value.asInstanceOf[js.Any])
+    inline def setRemoveRestrictionsForRepo(value: `162`): Self = StObject.set(x, "removeRestrictionsForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetRestrictionsForOrg(value: `163`): Self = StObject.set(x, "setRestrictionsForOrg", value.asInstanceOf[js.Any])
+    inline def setSetRestrictionsForOrg(value: `163`): Self = StObject.set(x, "setRestrictionsForOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetRestrictionsForRepo(value: `164`): Self = StObject.set(x, "setRestrictionsForRepo", value.asInstanceOf[js.Any])
+    inline def setSetRestrictionsForRepo(value: `164`): Self = StObject.set(x, "setRestrictionsForRepo", value.asInstanceOf[js.Any])
   }
 }

@@ -47,8 +47,7 @@ trait MediaCaptureInitializationSettings extends StObject {
 }
 object MediaCaptureInitializationSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audioDeviceId: String,
     audioProcessing: AudioProcessing,
     audioSource: IMediaSource,
@@ -66,43 +65,30 @@ object MediaCaptureInitializationSettings {
     __obj.asInstanceOf[MediaCaptureInitializationSettings]
   }
   
-  @scala.inline
-  implicit class MediaCaptureInitializationSettingsMutableBuilder[Self <: MediaCaptureInitializationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MediaCaptureInitializationSettings](x: Self) {
     
-    @scala.inline
-    def setAudioDeviceId(value: String): Self = StObject.set(x, "audioDeviceId", value.asInstanceOf[js.Any])
+    inline def setAudioDeviceId(value: String): Self = StObject.set(x, "audioDeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioProcessing(value: AudioProcessing): Self = StObject.set(x, "audioProcessing", value.asInstanceOf[js.Any])
+    inline def setAudioProcessing(value: AudioProcessing): Self = StObject.set(x, "audioProcessing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSource(value: IMediaSource): Self = StObject.set(x, "audioSource", value.asInstanceOf[js.Any])
+    inline def setAudioSource(value: IMediaSource): Self = StObject.set(x, "audioSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaCategory(value: MediaCategory): Self = StObject.set(x, "mediaCategory", value.asInstanceOf[js.Any])
+    inline def setMediaCategory(value: MediaCategory): Self = StObject.set(x, "mediaCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoCaptureSource(value: PhotoCaptureSource): Self = StObject.set(x, "photoCaptureSource", value.asInstanceOf[js.Any])
+    inline def setPhotoCaptureSource(value: PhotoCaptureSource): Self = StObject.set(x, "photoCaptureSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoMediaDescription(value: MediaCaptureVideoProfileMediaDescription): Self = StObject.set(x, "photoMediaDescription", value.asInstanceOf[js.Any])
+    inline def setPhotoMediaDescription(value: MediaCaptureVideoProfileMediaDescription): Self = StObject.set(x, "photoMediaDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewMediaDescription(value: MediaCaptureVideoProfileMediaDescription): Self = StObject.set(x, "previewMediaDescription", value.asInstanceOf[js.Any])
+    inline def setPreviewMediaDescription(value: MediaCaptureVideoProfileMediaDescription): Self = StObject.set(x, "previewMediaDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordMediaDescription(value: MediaCaptureVideoProfileMediaDescription): Self = StObject.set(x, "recordMediaDescription", value.asInstanceOf[js.Any])
+    inline def setRecordMediaDescription(value: MediaCaptureVideoProfileMediaDescription): Self = StObject.set(x, "recordMediaDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingCaptureMode(value: StreamingCaptureMode): Self = StObject.set(x, "streamingCaptureMode", value.asInstanceOf[js.Any])
+    inline def setStreamingCaptureMode(value: StreamingCaptureMode): Self = StObject.set(x, "streamingCaptureMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoDeviceId(value: String): Self = StObject.set(x, "videoDeviceId", value.asInstanceOf[js.Any])
+    inline def setVideoDeviceId(value: String): Self = StObject.set(x, "videoDeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoProfile(value: MediaCaptureVideoProfile): Self = StObject.set(x, "videoProfile", value.asInstanceOf[js.Any])
+    inline def setVideoProfile(value: MediaCaptureVideoProfile): Self = StObject.set(x, "videoProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSource(value: IMediaSource): Self = StObject.set(x, "videoSource", value.asInstanceOf[js.Any])
+    inline def setVideoSource(value: IMediaSource): Self = StObject.set(x, "videoSource", value.asInstanceOf[js.Any])
   }
 }

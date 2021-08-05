@@ -15,16 +15,13 @@ trait Readonlynamestoresnapshot
 }
 object Readonlynamestoresnapshot {
   
-  @scala.inline
-  def apply(): Readonlynamestoresnapshot = {
+  inline def apply(): Readonlynamestoresnapshot = {
     val __obj = js.Dynamic.literal(name = "store.snapshot")
     __obj.asInstanceOf[Readonlynamestoresnapshot]
   }
   
-  @scala.inline
-  implicit class ReadonlynamestoresnapshotMutableBuilder[Self <: Readonlynamestoresnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: Readonlynamestoresnapshot](x: Self) {
     
-    @scala.inline
-    def setName(value: storeDotsnapshot): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: storeDotsnapshot): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

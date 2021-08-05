@@ -24,31 +24,23 @@ trait SpotInstanceRequestMetadataOptions extends StObject {
 }
 object SpotInstanceRequestMetadataOptions {
   
-  @scala.inline
-  def apply(): SpotInstanceRequestMetadataOptions = {
+  inline def apply(): SpotInstanceRequestMetadataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpotInstanceRequestMetadataOptions]
   }
   
-  @scala.inline
-  implicit class SpotInstanceRequestMetadataOptionsMutableBuilder[Self <: SpotInstanceRequestMetadataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SpotInstanceRequestMetadataOptions](x: Self) {
     
-    @scala.inline
-    def setHttpEndpoint(value: Input[String]): Self = StObject.set(x, "httpEndpoint", value.asInstanceOf[js.Any])
+    inline def setHttpEndpoint(value: Input[String]): Self = StObject.set(x, "httpEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpEndpointUndefined: Self = StObject.set(x, "httpEndpoint", js.undefined)
+    inline def setHttpEndpointUndefined: Self = StObject.set(x, "httpEndpoint", js.undefined)
     
-    @scala.inline
-    def setHttpPutResponseHopLimit(value: Input[Double]): Self = StObject.set(x, "httpPutResponseHopLimit", value.asInstanceOf[js.Any])
+    inline def setHttpPutResponseHopLimit(value: Input[Double]): Self = StObject.set(x, "httpPutResponseHopLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpPutResponseHopLimitUndefined: Self = StObject.set(x, "httpPutResponseHopLimit", js.undefined)
+    inline def setHttpPutResponseHopLimitUndefined: Self = StObject.set(x, "httpPutResponseHopLimit", js.undefined)
     
-    @scala.inline
-    def setHttpTokens(value: Input[String]): Self = StObject.set(x, "httpTokens", value.asInstanceOf[js.Any])
+    inline def setHttpTokens(value: Input[String]): Self = StObject.set(x, "httpTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpTokensUndefined: Self = StObject.set(x, "httpTokens", js.undefined)
+    inline def setHttpTokensUndefined: Self = StObject.set(x, "httpTokens", js.undefined)
   }
 }

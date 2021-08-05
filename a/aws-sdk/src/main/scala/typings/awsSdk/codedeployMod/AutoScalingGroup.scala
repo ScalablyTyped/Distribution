@@ -18,25 +18,19 @@ trait AutoScalingGroup extends StObject {
 }
 object AutoScalingGroup {
   
-  @scala.inline
-  def apply(): AutoScalingGroup = {
+  inline def apply(): AutoScalingGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoScalingGroup]
   }
   
-  @scala.inline
-  implicit class AutoScalingGroupMutableBuilder[Self <: AutoScalingGroup] (val x: Self) extends AnyVal {
+  extension [Self <: AutoScalingGroup](x: Self) {
     
-    @scala.inline
-    def setHook(value: AutoScalingGroupHook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+    inline def setHook(value: AutoScalingGroupHook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)
+    inline def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)
     
-    @scala.inline
-    def setName(value: AutoScalingGroupName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: AutoScalingGroupName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

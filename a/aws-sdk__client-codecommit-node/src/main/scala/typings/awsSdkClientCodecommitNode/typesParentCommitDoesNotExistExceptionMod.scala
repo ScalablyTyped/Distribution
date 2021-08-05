@@ -18,17 +18,14 @@ object typesParentCommitDoesNotExistExceptionMod {
   }
   object ParentCommitDoesNotExistException {
     
-    @scala.inline
-    def apply(): ParentCommitDoesNotExistException = {
+    inline def apply(): ParentCommitDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "ParentCommitDoesNotExistException")
       __obj.asInstanceOf[ParentCommitDoesNotExistException]
     }
     
-    @scala.inline
-    implicit class ParentCommitDoesNotExistExceptionMutableBuilder[Self <: ParentCommitDoesNotExistException] (val x: Self) extends AnyVal {
+    extension [Self <: ParentCommitDoesNotExistException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ParentCommitDoesNotExistException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

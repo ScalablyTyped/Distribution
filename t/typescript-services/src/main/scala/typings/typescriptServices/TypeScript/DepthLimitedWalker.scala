@@ -8,14 +8,13 @@ trait DepthLimitedWalker
   extends StObject
      with PositionTrackingWalker {
   
-  var _depth: js.Any
+  /* private */ var _depth: js.Any
   
-  var _maximumDepth: js.Any
+  /* private */ var _maximumDepth: js.Any
 }
 object DepthLimitedWalker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _depth: js.Any,
     _maximumDepth: js.Any,
     _position: js.Any,
@@ -119,13 +118,10 @@ object DepthLimitedWalker {
     __obj.asInstanceOf[DepthLimitedWalker]
   }
   
-  @scala.inline
-  implicit class DepthLimitedWalkerMutableBuilder[Self <: DepthLimitedWalker] (val x: Self) extends AnyVal {
+  extension [Self <: DepthLimitedWalker](x: Self) {
     
-    @scala.inline
-    def set_depth(value: js.Any): Self = StObject.set(x, "_depth", value.asInstanceOf[js.Any])
+    inline def set_depth(value: js.Any): Self = StObject.set(x, "_depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_maximumDepth(value: js.Any): Self = StObject.set(x, "_maximumDepth", value.asInstanceOf[js.Any])
+    inline def set_maximumDepth(value: js.Any): Self = StObject.set(x, "_maximumDepth", value.asInstanceOf[js.Any])
   }
 }

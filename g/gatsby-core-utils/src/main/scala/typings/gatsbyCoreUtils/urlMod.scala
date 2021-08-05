@@ -10,6 +10,5 @@ object urlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def urlResolve(segments: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlResolve")(segments.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def urlResolve(segments: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlResolve")(segments.asInstanceOf[js.Any]).asInstanceOf[String]
 }

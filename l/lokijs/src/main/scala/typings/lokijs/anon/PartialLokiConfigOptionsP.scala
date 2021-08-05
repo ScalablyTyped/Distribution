@@ -44,106 +44,73 @@ trait PartialLokiConfigOptionsP extends StObject {
 }
 object PartialLokiConfigOptionsP {
   
-  @scala.inline
-  def apply(): PartialLokiConfigOptionsP = {
+  inline def apply(): PartialLokiConfigOptionsP = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialLokiConfigOptionsP]
   }
   
-  @scala.inline
-  implicit class PartialLokiConfigOptionsPMutableBuilder[Self <: PartialLokiConfigOptionsP] (val x: Self) extends AnyVal {
+  extension [Self <: PartialLokiConfigOptionsP](x: Self) {
     
-    @scala.inline
-    def setAdapter(value: LokiPersistenceAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+    inline def setAdapter(value: LokiPersistenceAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdapterNull: Self = StObject.set(x, "adapter", null)
+    inline def setAdapterNull: Self = StObject.set(x, "adapter", null)
     
-    @scala.inline
-    def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
+    inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
     
-    @scala.inline
-    def setAutoload(value: Boolean): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
+    inline def setAutoload(value: Boolean): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoloadCallback(value: /* err */ js.Any => Unit): Self = StObject.set(x, "autoloadCallback", js.Any.fromFunction1(value))
+    inline def setAutoloadCallback(value: /* err */ js.Any => Unit): Self = StObject.set(x, "autoloadCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAutoloadCallbackUndefined: Self = StObject.set(x, "autoloadCallback", js.undefined)
+    inline def setAutoloadCallbackUndefined: Self = StObject.set(x, "autoloadCallback", js.undefined)
     
-    @scala.inline
-    def setAutoloadUndefined: Self = StObject.set(x, "autoload", js.undefined)
+    inline def setAutoloadUndefined: Self = StObject.set(x, "autoload", js.undefined)
     
-    @scala.inline
-    def setAutosave(value: Boolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
+    inline def setAutosave(value: Boolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutosaveCallback(value: /* err */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "autosaveCallback", js.Any.fromFunction1(value))
+    inline def setAutosaveCallback(value: /* err */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "autosaveCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAutosaveCallbackUndefined: Self = StObject.set(x, "autosaveCallback", js.undefined)
+    inline def setAutosaveCallbackUndefined: Self = StObject.set(x, "autosaveCallback", js.undefined)
     
-    @scala.inline
-    def setAutosaveInterval(value: String | Double): Self = StObject.set(x, "autosaveInterval", value.asInstanceOf[js.Any])
+    inline def setAutosaveInterval(value: String | Double): Self = StObject.set(x, "autosaveInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutosaveIntervalUndefined: Self = StObject.set(x, "autosaveInterval", js.undefined)
+    inline def setAutosaveIntervalUndefined: Self = StObject.set(x, "autosaveInterval", js.undefined)
     
-    @scala.inline
-    def setAutosaveUndefined: Self = StObject.set(x, "autosave", js.undefined)
+    inline def setAutosaveUndefined: Self = StObject.set(x, "autosave", js.undefined)
     
-    @scala.inline
-    def setDestructureDelimiter(value: String): Self = StObject.set(x, "destructureDelimiter", value.asInstanceOf[js.Any])
+    inline def setDestructureDelimiter(value: String): Self = StObject.set(x, "destructureDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestructureDelimiterUndefined: Self = StObject.set(x, "destructureDelimiter", js.undefined)
+    inline def setDestructureDelimiterUndefined: Self = StObject.set(x, "destructureDelimiter", js.undefined)
     
-    @scala.inline
-    def setPersistenceMethod(value: fs | localStorage | memory): Self = StObject.set(x, "persistenceMethod", value.asInstanceOf[js.Any])
+    inline def setPersistenceMethod(value: fs | localStorage | memory): Self = StObject.set(x, "persistenceMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistenceMethodNull: Self = StObject.set(x, "persistenceMethod", null)
+    inline def setPersistenceMethodNull: Self = StObject.set(x, "persistenceMethod", null)
     
-    @scala.inline
-    def setPersistenceMethodUndefined: Self = StObject.set(x, "persistenceMethod", js.undefined)
+    inline def setPersistenceMethodUndefined: Self = StObject.set(x, "persistenceMethod", js.undefined)
     
-    @scala.inline
-    def setRecursiveWait(value: Boolean): Self = StObject.set(x, "recursiveWait", value.asInstanceOf[js.Any])
+    inline def setRecursiveWait(value: Boolean): Self = StObject.set(x, "recursiveWait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveWaitLimit(value: Boolean): Self = StObject.set(x, "recursiveWaitLimit", value.asInstanceOf[js.Any])
+    inline def setRecursiveWaitLimit(value: Boolean): Self = StObject.set(x, "recursiveWaitLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveWaitLimitDuration(value: Double): Self = StObject.set(x, "recursiveWaitLimitDuration", value.asInstanceOf[js.Any])
+    inline def setRecursiveWaitLimitDuration(value: Double): Self = StObject.set(x, "recursiveWaitLimitDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveWaitLimitDurationUndefined: Self = StObject.set(x, "recursiveWaitLimitDuration", js.undefined)
+    inline def setRecursiveWaitLimitDurationUndefined: Self = StObject.set(x, "recursiveWaitLimitDuration", js.undefined)
     
-    @scala.inline
-    def setRecursiveWaitLimitUndefined: Self = StObject.set(x, "recursiveWaitLimit", js.undefined)
+    inline def setRecursiveWaitLimitUndefined: Self = StObject.set(x, "recursiveWaitLimit", js.undefined)
     
-    @scala.inline
-    def setRecursiveWaitUndefined: Self = StObject.set(x, "recursiveWait", js.undefined)
+    inline def setRecursiveWaitUndefined: Self = StObject.set(x, "recursiveWait", js.undefined)
     
-    @scala.inline
-    def setSerializationMethod(value: normal | pretty | destructured): Self = StObject.set(x, "serializationMethod", value.asInstanceOf[js.Any])
+    inline def setSerializationMethod(value: normal | pretty | destructured): Self = StObject.set(x, "serializationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializationMethodNull: Self = StObject.set(x, "serializationMethod", null)
+    inline def setSerializationMethodNull: Self = StObject.set(x, "serializationMethod", null)
     
-    @scala.inline
-    def setSerializationMethodUndefined: Self = StObject.set(x, "serializationMethod", js.undefined)
+    inline def setSerializationMethodUndefined: Self = StObject.set(x, "serializationMethod", js.undefined)
     
-    @scala.inline
-    def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
+    inline def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
     
-    @scala.inline
-    def setThrottledSaves(value: Boolean): Self = StObject.set(x, "throttledSaves", value.asInstanceOf[js.Any])
+    inline def setThrottledSaves(value: Boolean): Self = StObject.set(x, "throttledSaves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottledSavesUndefined: Self = StObject.set(x, "throttledSaves", js.undefined)
+    inline def setThrottledSavesUndefined: Self = StObject.set(x, "throttledSaves", js.undefined)
   }
 }

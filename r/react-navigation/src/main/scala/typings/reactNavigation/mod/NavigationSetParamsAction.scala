@@ -14,17 +14,14 @@ trait NavigationSetParamsAction
 }
 object NavigationSetParamsAction {
   
-  @scala.inline
-  def apply(key: String, params: NavigationParams): NavigationSetParamsAction = {
+  inline def apply(key: String, params: NavigationParams): NavigationSetParamsAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Navigation/SET_PARAMS")
     __obj.asInstanceOf[NavigationSetParamsAction]
   }
   
-  @scala.inline
-  implicit class NavigationSetParamsActionMutableBuilder[Self <: NavigationSetParamsAction] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationSetParamsAction](x: Self) {
     
-    @scala.inline
-    def setType(value: NavigationSlashSET_PARAMS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NavigationSlashSET_PARAMS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

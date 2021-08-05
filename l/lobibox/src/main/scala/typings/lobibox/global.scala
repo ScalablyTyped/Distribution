@@ -10,6 +10,5 @@ object global {
   @JSGlobal("Lobibox")
   @js.native
   def Lobibox: LobiboxStatic = js.native
-  @scala.inline
-  def Lobibox_=(x: LobiboxStatic): Unit = js.Dynamic.global.updateDynamic("Lobibox")(x.asInstanceOf[js.Any])
+  inline def Lobibox_=(x: LobiboxStatic): Unit = js.Dynamic.global.updateDynamic("Lobibox")(x.asInstanceOf[js.Any])
 }

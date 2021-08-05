@@ -16,37 +16,27 @@ trait Permission extends StObject {
 }
 object Permission {
   
-  @scala.inline
-  def apply(): Permission = {
+  inline def apply(): Permission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Permission]
   }
   
-  @scala.inline
-  implicit class PermissionMutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
+  extension [Self <: Permission](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setPermission_name(value: String): Self = StObject.set(x, "permission_name", value.asInstanceOf[js.Any])
+    inline def setPermission_name(value: String): Self = StObject.set(x, "permission_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermission_nameUndefined: Self = StObject.set(x, "permission_name", js.undefined)
+    inline def setPermission_nameUndefined: Self = StObject.set(x, "permission_name", js.undefined)
     
-    @scala.inline
-    def setResource_server_identifier(value: String): Self = StObject.set(x, "resource_server_identifier", value.asInstanceOf[js.Any])
+    inline def setResource_server_identifier(value: String): Self = StObject.set(x, "resource_server_identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource_server_identifierUndefined: Self = StObject.set(x, "resource_server_identifier", js.undefined)
+    inline def setResource_server_identifierUndefined: Self = StObject.set(x, "resource_server_identifier", js.undefined)
     
-    @scala.inline
-    def setResource_server_name(value: String): Self = StObject.set(x, "resource_server_name", value.asInstanceOf[js.Any])
+    inline def setResource_server_name(value: String): Self = StObject.set(x, "resource_server_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource_server_nameUndefined: Self = StObject.set(x, "resource_server_name", js.undefined)
+    inline def setResource_server_nameUndefined: Self = StObject.set(x, "resource_server_name", js.undefined)
   }
 }

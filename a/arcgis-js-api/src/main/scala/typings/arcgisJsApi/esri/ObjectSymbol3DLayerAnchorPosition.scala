@@ -33,8 +33,7 @@ trait ObjectSymbol3DLayerAnchorPosition
 }
 object ObjectSymbol3DLayerAnchorPosition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -46,16 +45,12 @@ object ObjectSymbol3DLayerAnchorPosition {
     __obj.asInstanceOf[ObjectSymbol3DLayerAnchorPosition]
   }
   
-  @scala.inline
-  implicit class ObjectSymbol3DLayerAnchorPositionMutableBuilder[Self <: ObjectSymbol3DLayerAnchorPosition] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectSymbol3DLayerAnchorPosition](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

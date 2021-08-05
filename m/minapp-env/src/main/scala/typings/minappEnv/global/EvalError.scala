@@ -21,6 +21,5 @@ class EvalError ()
 }
 object EvalError {
   
-  @scala.inline
-  def apply: EvalErrorConstructor = js.Dynamic.global.selectDynamic("EvalError").asInstanceOf[EvalErrorConstructor]
+  inline def apply: EvalErrorConstructor = js.Dynamic.global.selectDynamic("EvalError").asInstanceOf[EvalErrorConstructor]
 }

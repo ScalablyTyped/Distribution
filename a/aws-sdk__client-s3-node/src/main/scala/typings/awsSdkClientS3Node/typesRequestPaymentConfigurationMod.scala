@@ -17,17 +17,14 @@ object typesRequestPaymentConfigurationMod {
   }
   object RequestPaymentConfiguration {
     
-    @scala.inline
-    def apply(Payer: Requester | BucketOwner | String): RequestPaymentConfiguration = {
+    inline def apply(Payer: Requester | BucketOwner | String): RequestPaymentConfiguration = {
       val __obj = js.Dynamic.literal(Payer = Payer.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestPaymentConfiguration]
     }
     
-    @scala.inline
-    implicit class RequestPaymentConfigurationMutableBuilder[Self <: RequestPaymentConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: RequestPaymentConfiguration](x: Self) {
       
-      @scala.inline
-      def setPayer(value: Requester | BucketOwner | String): Self = StObject.set(x, "Payer", value.asInstanceOf[js.Any])
+      inline def setPayer(value: Requester | BucketOwner | String): Self = StObject.set(x, "Payer", value.asInstanceOf[js.Any])
     }
   }
   

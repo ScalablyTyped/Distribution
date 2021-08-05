@@ -18,28 +18,21 @@ trait Operator extends StObject {
 }
 object Operator {
   
-  @scala.inline
-  def apply(): Operator = {
+  inline def apply(): Operator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Operator]
   }
   
-  @scala.inline
-  implicit class OperatorMutableBuilder[Self <: Operator] (val x: Self) extends AnyVal {
+  extension [Self <: Operator](x: Self) {
     
-    @scala.inline
-    def setType(value: OperatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OperatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValues(value: stringList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: stringList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

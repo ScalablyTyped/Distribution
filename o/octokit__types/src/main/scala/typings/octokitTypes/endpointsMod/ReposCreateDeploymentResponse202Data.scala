@@ -10,16 +10,13 @@ trait ReposCreateDeploymentResponse202Data extends StObject {
 }
 object ReposCreateDeploymentResponse202Data {
   
-  @scala.inline
-  def apply(message: String): ReposCreateDeploymentResponse202Data = {
+  inline def apply(message: String): ReposCreateDeploymentResponse202Data = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateDeploymentResponse202Data]
   }
   
-  @scala.inline
-  implicit class ReposCreateDeploymentResponse202DataMutableBuilder[Self <: ReposCreateDeploymentResponse202Data] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCreateDeploymentResponse202Data](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

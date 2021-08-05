@@ -96,8 +96,7 @@ trait ClientControl
 }
 object ClientControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCssClass: String => Unit,
     add_disposing: js.Function => Unit,
     add_propertyChanged: js.Function => Unit,
@@ -158,112 +157,76 @@ object ClientControl {
     __obj.asInstanceOf[ClientControl]
   }
   
-  @scala.inline
-  implicit class ClientControlMutableBuilder[Self <: ClientControl] (val x: Self) extends AnyVal {
+  extension [Self <: ClientControl](x: Self) {
     
-    @scala.inline
-    def setAlternateRenderContext(value: js.Any): Self = StObject.set(x, "alternateRenderContext", value.asInstanceOf[js.Any])
+    inline def setAlternateRenderContext(value: js.Any): Self = StObject.set(x, "alternateRenderContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateRenderer(value: js.Any): Self = StObject.set(x, "alternateRenderer", value.asInstanceOf[js.Any])
+    inline def setAlternateRenderer(value: js.Any): Self = StObject.set(x, "alternateRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickHandler(value: Event => js.Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction1(value))
+    inline def setClickHandler(value: Event => js.Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet_alternateErrorMessage(value: () => String): Self = StObject.set(x, "get_alternateErrorMessage", js.Any.fromFunction0(value))
+    inline def setGet_alternateErrorMessage(value: () => String): Self = StObject.set(x, "get_alternateErrorMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_delayLoadTemplateScripts(value: () => Boolean): Self = StObject.set(x, "get_delayLoadTemplateScripts", js.Any.fromFunction0(value))
+    inline def setGet_delayLoadTemplateScripts(value: () => Boolean): Self = StObject.set(x, "get_delayLoadTemplateScripts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_isInitialLoad(value: () => Boolean): Self = StObject.set(x, "get_isInitialLoad", js.Any.fromFunction0(value))
+    inline def setGet_isInitialLoad(value: () => Boolean): Self = StObject.set(x, "get_isInitialLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_messages(value: () => js.Array[js.Any]): Self = StObject.set(x, "get_messages", js.Any.fromFunction0(value))
+    inline def setGet_messages(value: () => js.Array[js.Any]): Self = StObject.set(x, "get_messages", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_nextUniqueId(value: () => String): Self = StObject.set(x, "get_nextUniqueId", js.Any.fromFunction0(value))
+    inline def setGet_nextUniqueId(value: () => String): Self = StObject.set(x, "get_nextUniqueId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_renderTemplateId(value: () => String): Self = StObject.set(x, "get_renderTemplateId", js.Any.fromFunction0(value))
+    inline def setGet_renderTemplateId(value: () => String): Self = StObject.set(x, "get_renderTemplateId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_showDataErrors(value: () => Boolean): Self = StObject.set(x, "get_showDataErrors", js.Any.fromFunction0(value))
+    inline def setGet_showDataErrors(value: () => Boolean): Self = StObject.set(x, "get_showDataErrors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_states(value: () => js.Any): Self = StObject.set(x, "get_states", js.Any.fromFunction0(value))
+    inline def setGet_states(value: () => js.Any): Self = StObject.set(x, "get_states", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasMessages(value: () => js.Any): Self = StObject.set(x, "hasMessages", js.Any.fromFunction0(value))
+    inline def setHasMessages(value: () => js.Any): Self = StObject.set(x, "hasMessages", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInvokeAlternateRender(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "invokeAlternateRender", js.Any.fromFunction3(value))
+    inline def setInvokeAlternateRender(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "invokeAlternateRender", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInvokeClientRenderer(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "invokeClientRenderer", js.Any.fromFunction2(value))
+    inline def setInvokeClientRenderer(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "invokeClientRenderer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadRenderTemplateScripts(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Boolean): Self = StObject.set(x, "loadRenderTemplateScripts", js.Any.fromFunction5(value))
+    inline def setLoadRenderTemplateScripts(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Boolean): Self = StObject.set(x, "loadRenderTemplateScripts", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setLoadServerTemplateScripts(value: () => Unit): Self = StObject.set(x, "loadServerTemplateScripts", js.Any.fromFunction0(value))
+    inline def setLoadServerTemplateScripts(value: () => Unit): Self = StObject.set(x, "loadServerTemplateScripts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessDataErrorMessages(value: js.Any => js.Any): Self = StObject.set(x, "processDataErrorMessages", js.Any.fromFunction1(value))
+    inline def setProcessDataErrorMessages(value: js.Any => js.Any): Self = StObject.set(x, "processDataErrorMessages", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProcessDataProviderErrors(value: js.Any => Unit): Self = StObject.set(x, "processDataProviderErrors", js.Any.fromFunction1(value))
+    inline def setProcessDataProviderErrors(value: js.Any => Unit): Self = StObject.set(x, "processDataProviderErrors", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProcessRenderingErrorMessages(value: js.Any => js.Any): Self = StObject.set(x, "processRenderingErrorMessages", js.Any.fromFunction1(value))
+    inline def setProcessRenderingErrorMessages(value: js.Any => js.Any): Self = StObject.set(x, "processRenderingErrorMessages", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderControl(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "renderControl", js.Any.fromFunction2(value))
+    inline def setRenderControl(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "renderControl", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScriptApplication_Load(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "scriptApplication_Load", js.Any.fromFunction2(value))
+    inline def setScriptApplication_Load(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "scriptApplication_Load", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScriptApplication_PostLoad(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "scriptApplication_PostLoad", js.Any.fromFunction2(value))
+    inline def setScriptApplication_PostLoad(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "scriptApplication_PostLoad", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScriptApplication_PreLoad(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "scriptApplication_PreLoad", js.Any.fromFunction2(value))
+    inline def setScriptApplication_PreLoad(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "scriptApplication_PreLoad", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setServerTemplateScriptsCallback(value: () => Unit): Self = StObject.set(x, "serverTemplateScriptsCallback", js.Any.fromFunction0(value))
+    inline def setServerTemplateScriptsCallback(value: () => Unit): Self = StObject.set(x, "serverTemplateScriptsCallback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setServerTemplateScriptsToLoad(value: js.Array[js.Any]): Self = StObject.set(x, "serverTemplateScriptsToLoad", value.asInstanceOf[js.Any])
+    inline def setServerTemplateScriptsToLoad(value: js.Array[js.Any]): Self = StObject.set(x, "serverTemplateScriptsToLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerTemplateScriptsToLoadVarargs(value: js.Any*): Self = StObject.set(x, "serverTemplateScriptsToLoad", js.Array(value :_*))
+    inline def setServerTemplateScriptsToLoadVarargs(value: js.Any*): Self = StObject.set(x, "serverTemplateScriptsToLoad", js.Array(value :_*))
     
-    @scala.inline
-    def setSetControlElementVisibility(value: Boolean => js.Any): Self = StObject.set(x, "setControlElementVisibility", js.Any.fromFunction1(value))
+    inline def setSetControlElementVisibility(value: Boolean => js.Any): Self = StObject.set(x, "setControlElementVisibility", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_alternateErrorMessage(value: String => String): Self = StObject.set(x, "set_alternateErrorMessage", js.Any.fromFunction1(value))
+    inline def setSet_alternateErrorMessage(value: String => String): Self = StObject.set(x, "set_alternateErrorMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_delayLoadTemplateScripts(value: Boolean => Boolean): Self = StObject.set(x, "set_delayLoadTemplateScripts", js.Any.fromFunction1(value))
+    inline def setSet_delayLoadTemplateScripts(value: Boolean => Boolean): Self = StObject.set(x, "set_delayLoadTemplateScripts", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_messages(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "set_messages", js.Any.fromFunction1(value))
+    inline def setSet_messages(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "set_messages", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_renderTemplateId(value: String => String): Self = StObject.set(x, "set_renderTemplateId", js.Any.fromFunction1(value))
+    inline def setSet_renderTemplateId(value: String => String): Self = StObject.set(x, "set_renderTemplateId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_showDataErrors(value: Boolean => Boolean): Self = StObject.set(x, "set_showDataErrors", js.Any.fromFunction1(value))
+    inline def setSet_showDataErrors(value: Boolean => Boolean): Self = StObject.set(x, "set_showDataErrors", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_states(value: js.Any => js.Any): Self = StObject.set(x, "set_states", js.Any.fromFunction1(value))
+    inline def setSet_states(value: js.Any => js.Any): Self = StObject.set(x, "set_states", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateDisplayControlWithNewMessages(value: () => js.Any): Self = StObject.set(x, "updateDisplayControlWithNewMessages", js.Any.fromFunction0(value))
+    inline def setUpdateDisplayControlWithNewMessages(value: () => js.Any): Self = StObject.set(x, "updateDisplayControlWithNewMessages", js.Any.fromFunction0(value))
   }
 }

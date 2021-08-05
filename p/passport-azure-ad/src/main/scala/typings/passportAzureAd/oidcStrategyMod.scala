@@ -68,8 +68,7 @@ object oidcStrategyMod {
   }
   object IOIDCStrategyOption {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientID: String,
       identityMetadata: String,
       redirectUrl: String,
@@ -80,83 +79,57 @@ object oidcStrategyMod {
       __obj.asInstanceOf[IOIDCStrategyOption]
     }
     
-    @scala.inline
-    implicit class IOIDCStrategyOptionMutableBuilder[Self <: IOIDCStrategyOption] (val x: Self) extends AnyVal {
+    extension [Self <: IOIDCStrategyOption](x: Self) {
       
-      @scala.inline
-      def setAllowHttpForRedirectUrl(value: Boolean): Self = StObject.set(x, "allowHttpForRedirectUrl", value.asInstanceOf[js.Any])
+      inline def setAllowHttpForRedirectUrl(value: Boolean): Self = StObject.set(x, "allowHttpForRedirectUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowHttpForRedirectUrlUndefined: Self = StObject.set(x, "allowHttpForRedirectUrl", js.undefined)
+      inline def setAllowHttpForRedirectUrlUndefined: Self = StObject.set(x, "allowHttpForRedirectUrl", js.undefined)
       
-      @scala.inline
-      def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
+      inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
       
-      @scala.inline
-      def setCookieEncryptionKeys(value: js.Array[Iv]): Self = StObject.set(x, "cookieEncryptionKeys", value.asInstanceOf[js.Any])
+      inline def setCookieEncryptionKeys(value: js.Array[Iv]): Self = StObject.set(x, "cookieEncryptionKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieEncryptionKeysUndefined: Self = StObject.set(x, "cookieEncryptionKeys", js.undefined)
+      inline def setCookieEncryptionKeysUndefined: Self = StObject.set(x, "cookieEncryptionKeys", js.undefined)
       
-      @scala.inline
-      def setCookieEncryptionKeysVarargs(value: Iv*): Self = StObject.set(x, "cookieEncryptionKeys", js.Array(value :_*))
+      inline def setCookieEncryptionKeysVarargs(value: Iv*): Self = StObject.set(x, "cookieEncryptionKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setCookieSameSite(value: Boolean): Self = StObject.set(x, "cookieSameSite", value.asInstanceOf[js.Any])
+      inline def setCookieSameSite(value: Boolean): Self = StObject.set(x, "cookieSameSite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieSameSiteUndefined: Self = StObject.set(x, "cookieSameSite", js.undefined)
+      inline def setCookieSameSiteUndefined: Self = StObject.set(x, "cookieSameSite", js.undefined)
       
-      @scala.inline
-      def setNonceLifetime(value: Double): Self = StObject.set(x, "nonceLifetime", value.asInstanceOf[js.Any])
+      inline def setNonceLifetime(value: Double): Self = StObject.set(x, "nonceLifetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceLifetimeUndefined: Self = StObject.set(x, "nonceLifetime", js.undefined)
+      inline def setNonceLifetimeUndefined: Self = StObject.set(x, "nonceLifetime", js.undefined)
       
-      @scala.inline
-      def setNonceMaxAmount(value: Double): Self = StObject.set(x, "nonceMaxAmount", value.asInstanceOf[js.Any])
+      inline def setNonceMaxAmount(value: Double): Self = StObject.set(x, "nonceMaxAmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceMaxAmountUndefined: Self = StObject.set(x, "nonceMaxAmount", js.undefined)
+      inline def setNonceMaxAmountUndefined: Self = StObject.set(x, "nonceMaxAmount", js.undefined)
       
-      @scala.inline
-      def setPrivatePEMKey(value: String): Self = StObject.set(x, "privatePEMKey", value.asInstanceOf[js.Any])
+      inline def setPrivatePEMKey(value: String): Self = StObject.set(x, "privatePEMKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivatePEMKeyUndefined: Self = StObject.set(x, "privatePEMKey", js.undefined)
+      inline def setPrivatePEMKeyUndefined: Self = StObject.set(x, "privatePEMKey", js.undefined)
       
-      @scala.inline
-      def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
+      inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseMode(value: query | form_post): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
+      inline def setResponseMode(value: query | form_post): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseType(value: code | (`code id_token`) | (`id_token code`) | id_token): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: code | (`code id_token`) | (`id_token code`) | id_token): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
       
-      @scala.inline
-      def setThumbprint(value: String): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
+      inline def setThumbprint(value: String): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbprintUndefined: Self = StObject.set(x, "thumbprint", js.undefined)
+      inline def setThumbprintUndefined: Self = StObject.set(x, "thumbprint", js.undefined)
       
-      @scala.inline
-      def setUseCookieInsteadOfSession(value: Boolean): Self = StObject.set(x, "useCookieInsteadOfSession", value.asInstanceOf[js.Any])
+      inline def setUseCookieInsteadOfSession(value: Boolean): Self = StObject.set(x, "useCookieInsteadOfSession", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCookieInsteadOfSessionUndefined: Self = StObject.set(x, "useCookieInsteadOfSession", js.undefined)
+      inline def setUseCookieInsteadOfSessionUndefined: Self = StObject.set(x, "useCookieInsteadOfSession", js.undefined)
     }
   }
   
@@ -168,8 +141,7 @@ object oidcStrategyMod {
   }
   object IOIDCStrategyOptionWithRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientID: String,
       identityMetadata: String,
       redirectUrl: String,
@@ -180,11 +152,9 @@ object oidcStrategyMod {
       __obj.asInstanceOf[IOIDCStrategyOptionWithRequest]
     }
     
-    @scala.inline
-    implicit class IOIDCStrategyOptionWithRequestMutableBuilder[Self <: IOIDCStrategyOptionWithRequest] (val x: Self) extends AnyVal {
+    extension [Self <: IOIDCStrategyOptionWithRequest](x: Self) {
       
-      @scala.inline
-      def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,8 +166,7 @@ object oidcStrategyMod {
   }
   object IOIDCStrategyOptionWithoutRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientID: String,
       identityMetadata: String,
       redirectUrl: String,
@@ -208,11 +177,9 @@ object oidcStrategyMod {
       __obj.asInstanceOf[IOIDCStrategyOptionWithoutRequest]
     }
     
-    @scala.inline
-    implicit class IOIDCStrategyOptionWithoutRequestMutableBuilder[Self <: IOIDCStrategyOptionWithoutRequest] (val x: Self) extends AnyVal {
+    extension [Self <: IOIDCStrategyOptionWithoutRequest](x: Self) {
       
-      @scala.inline
-      def setPassReqToCallback(value: `false`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: `false`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }
   }
   
@@ -236,62 +203,44 @@ object oidcStrategyMod {
   }
   object IProfile {
     
-    @scala.inline
-    def apply(): IProfile = {
+    inline def apply(): IProfile = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IProfile]
     }
     
-    @scala.inline
-    implicit class IProfileMutableBuilder[Self <: IProfile] (val x: Self) extends AnyVal {
+    extension [Self <: IProfile](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setEmails(value: js.Any): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+      inline def setEmails(value: js.Any): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
+      inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
       
-      @scala.inline
-      def setName(value: FamilyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: FamilyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
+      inline def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOidUndefined: Self = StObject.set(x, "oid", js.undefined)
+      inline def setOidUndefined: Self = StObject.set(x, "oid", js.undefined)
       
-      @scala.inline
-      def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
       
-      @scala.inline
-      def setUpn(value: String): Self = StObject.set(x, "upn", value.asInstanceOf[js.Any])
+      inline def setUpn(value: String): Self = StObject.set(x, "upn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpnUndefined: Self = StObject.set(x, "upn", js.undefined)
+      inline def setUpnUndefined: Self = StObject.set(x, "upn", js.undefined)
       
-      @scala.inline
-      def set_json(value: js.Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
+      inline def set_json(value: js.Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_jsonUndefined: Self = StObject.set(x, "_json", js.undefined)
+      inline def set_jsonUndefined: Self = StObject.set(x, "_json", js.undefined)
       
-      @scala.inline
-      def set_raw(value: String): Self = StObject.set(x, "_raw", value.asInstanceOf[js.Any])
+      inline def set_raw(value: String): Self = StObject.set(x, "_raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_rawUndefined: Self = StObject.set(x, "_raw", js.undefined)
+      inline def set_rawUndefined: Self = StObject.set(x, "_raw", js.undefined)
     }
   }
   

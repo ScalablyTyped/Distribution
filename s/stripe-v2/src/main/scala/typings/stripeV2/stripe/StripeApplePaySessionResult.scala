@@ -14,28 +14,21 @@ trait StripeApplePaySessionResult extends StObject {
 }
 object StripeApplePaySessionResult {
   
-  @scala.inline
-  def apply(token: StripeCardTokenResponse): StripeApplePaySessionResult = {
+  inline def apply(token: StripeCardTokenResponse): StripeApplePaySessionResult = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeApplePaySessionResult]
   }
   
-  @scala.inline
-  implicit class StripeApplePaySessionResultMutableBuilder[Self <: StripeApplePaySessionResult] (val x: Self) extends AnyVal {
+  extension [Self <: StripeApplePaySessionResult](x: Self) {
     
-    @scala.inline
-    def setShippingContact(value: StripeApplePayPaymentContact): Self = StObject.set(x, "shippingContact", value.asInstanceOf[js.Any])
+    inline def setShippingContact(value: StripeApplePayPaymentContact): Self = StObject.set(x, "shippingContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingContactUndefined: Self = StObject.set(x, "shippingContact", js.undefined)
+    inline def setShippingContactUndefined: Self = StObject.set(x, "shippingContact", js.undefined)
     
-    @scala.inline
-    def setShippingMethod(value: StripeApplePayShippingMethod): Self = StObject.set(x, "shippingMethod", value.asInstanceOf[js.Any])
+    inline def setShippingMethod(value: StripeApplePayShippingMethod): Self = StObject.set(x, "shippingMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingMethodUndefined: Self = StObject.set(x, "shippingMethod", js.undefined)
+    inline def setShippingMethodUndefined: Self = StObject.set(x, "shippingMethod", js.undefined)
     
-    @scala.inline
-    def setToken(value: StripeCardTokenResponse): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: StripeCardTokenResponse): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

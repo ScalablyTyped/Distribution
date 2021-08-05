@@ -27,7 +27,7 @@ object x509DataMod {
       */
     def AddCertificate(certificate: X509Certificate): Unit = js.native
     
-    var AddCertificatesChainFrom: js.Any = js.native
+    /* private */ var AddCertificatesChainFrom: js.Any = js.native
     
     /**
       * Adds the specified issuer name and serial number pair to the KeyInfoX509Data object.
@@ -63,7 +63,7 @@ object x509DataMod {
       */
     def Certificates: js.Array[X509Certificate] = js.native
     
-    var IssuerSerialList: js.Any = js.native
+    /* private */ var IssuerSerialList: js.Any = js.native
     
     /**
       * Gets a list of X509IssuerSerial structures that represent an issuer name and serial number pair.
@@ -76,21 +76,21 @@ object x509DataMod {
     @JSName("Key")
     def Key_MKeyInfoX509Data: CryptoKey | Null = js.native
     
-    var SubjectKeyIdList: js.Any = js.native
+    /* private */ var SubjectKeyIdList: js.Any = js.native
     
     /**
       * Gets a list of the subject key identifiers (SKIs) contained in the KeyInfoX509Data object.
       */
     def SubjectKeyIds: js.Array[Uint8Array] = js.native
     
-    var SubjectNameList: js.Any = js.native
+    /* private */ var SubjectNameList: js.Any = js.native
     
     /**
       * Gets a list of the subject names of the entities contained in the KeyInfoX509Data object.
       */
     def SubjectNames: js.Array[String] = js.native
     
-    var X509CertificateList: js.Any = js.native
+    /* private */ var X509CertificateList: js.Any = js.native
     
     def exportKey(alg: EcKeyImportParams): js.Promise[js.Any] = js.native
     /**
@@ -100,9 +100,9 @@ object x509DataMod {
       */
     def exportKey(alg: RsaHashedImportParams): js.Promise[js.Any] = js.native
     
-    var key: js.Any = js.native
+    /* private */ var key: js.Any = js.native
     
-    var x509crl: js.Any = js.native
+    /* private */ var x509crl: js.Any = js.native
   }
   
   @js.native
@@ -157,20 +157,16 @@ object x509DataMod {
   }
   object IX509IssuerSerial {
     
-    @scala.inline
-    def apply(issuerName: String, serialNumber: String): IX509IssuerSerial = {
+    inline def apply(issuerName: String, serialNumber: String): IX509IssuerSerial = {
       val __obj = js.Dynamic.literal(issuerName = issuerName.asInstanceOf[js.Any], serialNumber = serialNumber.asInstanceOf[js.Any])
       __obj.asInstanceOf[IX509IssuerSerial]
     }
     
-    @scala.inline
-    implicit class IX509IssuerSerialMutableBuilder[Self <: IX509IssuerSerial] (val x: Self) extends AnyVal {
+    extension [Self <: IX509IssuerSerial](x: Self) {
       
-      @scala.inline
-      def setIssuerName(value: String): Self = StObject.set(x, "issuerName", value.asInstanceOf[js.Any])
+      inline def setIssuerName(value: String): Self = StObject.set(x, "issuerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+      inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     }
   }
 }

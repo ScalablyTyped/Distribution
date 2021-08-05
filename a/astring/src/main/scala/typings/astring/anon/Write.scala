@@ -10,16 +10,13 @@ trait Write extends StObject {
 }
 object Write {
   
-  @scala.inline
-  def apply(write: String => Unit): Write = {
+  inline def apply(write: String => Unit): Write = {
     val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
     __obj.asInstanceOf[Write]
   }
   
-  @scala.inline
-  implicit class WriteMutableBuilder[Self <: Write] (val x: Self) extends AnyVal {
+  extension [Self <: Write](x: Self) {
     
-    @scala.inline
-    def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

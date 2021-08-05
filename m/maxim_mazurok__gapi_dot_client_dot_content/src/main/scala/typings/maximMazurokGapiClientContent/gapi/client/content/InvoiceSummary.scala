@@ -14,28 +14,21 @@ trait InvoiceSummary extends StObject {
 }
 object InvoiceSummary {
   
-  @scala.inline
-  def apply(): InvoiceSummary = {
+  inline def apply(): InvoiceSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InvoiceSummary]
   }
   
-  @scala.inline
-  implicit class InvoiceSummaryMutableBuilder[Self <: InvoiceSummary] (val x: Self) extends AnyVal {
+  extension [Self <: InvoiceSummary](x: Self) {
     
-    @scala.inline
-    def setAdditionalChargeSummaries(value: js.Array[InvoiceSummaryAdditionalChargeSummary]): Self = StObject.set(x, "additionalChargeSummaries", value.asInstanceOf[js.Any])
+    inline def setAdditionalChargeSummaries(value: js.Array[InvoiceSummaryAdditionalChargeSummary]): Self = StObject.set(x, "additionalChargeSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalChargeSummariesUndefined: Self = StObject.set(x, "additionalChargeSummaries", js.undefined)
+    inline def setAdditionalChargeSummariesUndefined: Self = StObject.set(x, "additionalChargeSummaries", js.undefined)
     
-    @scala.inline
-    def setAdditionalChargeSummariesVarargs(value: InvoiceSummaryAdditionalChargeSummary*): Self = StObject.set(x, "additionalChargeSummaries", js.Array(value :_*))
+    inline def setAdditionalChargeSummariesVarargs(value: InvoiceSummaryAdditionalChargeSummary*): Self = StObject.set(x, "additionalChargeSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setProductTotal(value: Amount): Self = StObject.set(x, "productTotal", value.asInstanceOf[js.Any])
+    inline def setProductTotal(value: Amount): Self = StObject.set(x, "productTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductTotalUndefined: Self = StObject.set(x, "productTotal", js.undefined)
+    inline def setProductTotalUndefined: Self = StObject.set(x, "productTotal", js.undefined)
   }
 }

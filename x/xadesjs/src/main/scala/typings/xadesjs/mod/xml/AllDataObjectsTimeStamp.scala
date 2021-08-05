@@ -13,6 +13,5 @@ class AllDataObjectsTimeStamp ()
   extends typings.xadesjs.xmlMod.AllDataObjectsTimeStamp
 object AllDataObjectsTimeStamp {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.AllDataObjectsTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("AllDataObjectsTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.AllDataObjectsTimeStamp]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.AllDataObjectsTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("AllDataObjectsTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.AllDataObjectsTimeStamp]]
 }

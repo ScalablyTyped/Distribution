@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Alignment extends StObject
 object Alignment {
   
-  @scala.inline
-  def `0`: typings.sharepoint.sharepointNumbers.`0` = 0.asInstanceOf[typings.sharepoint.sharepointNumbers.`0`]
+  inline def `0`: typings.sharepoint.sharepointNumbers.`0` = 0.asInstanceOf[typings.sharepoint.sharepointNumbers.`0`]
   
-  @scala.inline
-  def `2`: typings.sharepoint.sharepointNumbers.`2` = 2.asInstanceOf[typings.sharepoint.sharepointNumbers.`2`]
+  inline def `2`: typings.sharepoint.sharepointNumbers.`2` = 2.asInstanceOf[typings.sharepoint.sharepointNumbers.`2`]
 }

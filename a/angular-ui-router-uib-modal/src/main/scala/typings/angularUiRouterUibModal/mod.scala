@@ -15,23 +15,18 @@ object mod {
     }
     object IState {
       
-      @scala.inline
-      def apply(): IState = {
+      inline def apply(): IState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IState]
       }
       
-      @scala.inline
-      implicit class IStateMutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
+      extension [Self <: IState](x: Self) {
         
-        @scala.inline
-        def setModal(value: Boolean | js.Array[String]): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+        inline def setModal(value: Boolean | js.Array[String]): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+        inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
         
-        @scala.inline
-        def setModalVarargs(value: String*): Self = StObject.set(x, "modal", js.Array(value :_*))
+        inline def setModalVarargs(value: String*): Self = StObject.set(x, "modal", js.Array(value :_*))
       }
     }
   }

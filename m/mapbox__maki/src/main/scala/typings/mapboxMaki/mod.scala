@@ -15,14 +15,12 @@ object mod {
   @JSImport("@mapbox/maki", "layouts")
   @js.native
   def layouts: All = js.native
-  @scala.inline
-  def layouts_=(x: All): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("layouts")(x.asInstanceOf[js.Any])
+  inline def layouts_=(x: All): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("layouts")(x.asInstanceOf[js.Any])
   
   @JSImport("@mapbox/maki", "svgArray")
   @js.native
   def svgArray: js.Array[SvgContent] = js.native
-  @scala.inline
-  def svgArray_=(x: js.Array[SvgContent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("svgArray")(x.asInstanceOf[js.Any])
+  inline def svgArray_=(x: js.Array[SvgContent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("svgArray")(x.asInstanceOf[js.Any])
   
   type IconName = String
   

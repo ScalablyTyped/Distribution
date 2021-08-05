@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /* static member */
-@scala.inline
-def types: typings.sharedb.sharedbMod.Types = typings.sharedb.mod.^.asInstanceOf[js.Dynamic].selectDynamic("types").asInstanceOf[typings.sharedb.sharedbMod.Types]
-@scala.inline
-def types_=(x: typings.sharedb.sharedbMod.Types): scala.Unit = typings.sharedb.mod.^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
+inline def types: typings.sharedb.sharedbMod.Types = typings.sharedb.mod.^.asInstanceOf[js.Dynamic].selectDynamic("types").asInstanceOf[typings.sharedb.sharedbMod.Types]
+inline def types_=(x: typings.sharedb.sharedbMod.Types): scala.Unit = typings.sharedb.mod.^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
 
 type AddNumOp = typings.sharedb.sharedbMod.AddNumOp
 

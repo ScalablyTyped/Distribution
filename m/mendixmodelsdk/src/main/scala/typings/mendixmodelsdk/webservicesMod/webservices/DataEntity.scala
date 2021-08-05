@@ -35,8 +35,7 @@ object DataEntity {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DataEntity]
+  inline def create(model: IModel): DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DataEntity]
   
   /**
     * Creates and returns a new DataEntity instance in the SDK and on the server.
@@ -44,8 +43,7 @@ object DataEntity {
     * of the parent DataEntityBase element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInDataEntityBaseUnderChildMembers(container: DataEntityBase): DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataEntityBaseUnderChildMembers")(container.asInstanceOf[js.Any]).asInstanceOf[DataEntity]
+  inline def createInDataEntityBaseUnderChildMembers(container: DataEntityBase): DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataEntityBaseUnderChildMembers")(container.asInstanceOf[js.Any]).asInstanceOf[DataEntity]
   
   /**
     * Creates and returns a new DataEntity instance in the SDK and on the server.
@@ -53,8 +51,7 @@ object DataEntity {
     * of the parent PublishedParameter element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInPublishedParameterUnderDataEntity(container: PublishedParameter): DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderDataEntity")(container.asInstanceOf[js.Any]).asInstanceOf[DataEntity]
+  inline def createInPublishedParameterUnderDataEntity(container: PublishedParameter): DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderDataEntity")(container.asInstanceOf[js.Any]).asInstanceOf[DataEntity]
   
   /**
     * Creates and returns a new DataEntity instance in the SDK and on the server.
@@ -62,20 +59,17 @@ object DataEntity {
     * of the parent PublishedResource element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInPublishedResourceUnderDataEntity(container: PublishedResource): DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedResourceUnderDataEntity")(container.asInstanceOf[js.Any]).asInstanceOf[DataEntity]
+  inline def createInPublishedResourceUnderDataEntity(container: PublishedResource): DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedResourceUnderDataEntity")(container.asInstanceOf[js.Any]).asInstanceOf[DataEntity]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.DataEntity.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.DataEntity.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

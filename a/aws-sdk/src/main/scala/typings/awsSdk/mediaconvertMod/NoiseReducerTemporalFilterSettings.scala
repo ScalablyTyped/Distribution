@@ -28,37 +28,27 @@ trait NoiseReducerTemporalFilterSettings extends StObject {
 }
 object NoiseReducerTemporalFilterSettings {
   
-  @scala.inline
-  def apply(): NoiseReducerTemporalFilterSettings = {
+  inline def apply(): NoiseReducerTemporalFilterSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NoiseReducerTemporalFilterSettings]
   }
   
-  @scala.inline
-  implicit class NoiseReducerTemporalFilterSettingsMutableBuilder[Self <: NoiseReducerTemporalFilterSettings] (val x: Self) extends AnyVal {
+  extension [Self <: NoiseReducerTemporalFilterSettings](x: Self) {
     
-    @scala.inline
-    def setAggressiveMode(value: integerMin0Max4): Self = StObject.set(x, "AggressiveMode", value.asInstanceOf[js.Any])
+    inline def setAggressiveMode(value: integerMin0Max4): Self = StObject.set(x, "AggressiveMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggressiveModeUndefined: Self = StObject.set(x, "AggressiveMode", js.undefined)
+    inline def setAggressiveModeUndefined: Self = StObject.set(x, "AggressiveMode", js.undefined)
     
-    @scala.inline
-    def setPostTemporalSharpening(value: NoiseFilterPostTemporalSharpening): Self = StObject.set(x, "PostTemporalSharpening", value.asInstanceOf[js.Any])
+    inline def setPostTemporalSharpening(value: NoiseFilterPostTemporalSharpening): Self = StObject.set(x, "PostTemporalSharpening", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostTemporalSharpeningUndefined: Self = StObject.set(x, "PostTemporalSharpening", js.undefined)
+    inline def setPostTemporalSharpeningUndefined: Self = StObject.set(x, "PostTemporalSharpening", js.undefined)
     
-    @scala.inline
-    def setSpeed(value: integerMinNegative1Max3): Self = StObject.set(x, "Speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: integerMinNegative1Max3): Self = StObject.set(x, "Speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedUndefined: Self = StObject.set(x, "Speed", js.undefined)
+    inline def setSpeedUndefined: Self = StObject.set(x, "Speed", js.undefined)
     
-    @scala.inline
-    def setStrength(value: integerMin0Max16): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: integerMin0Max16): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrengthUndefined: Self = StObject.set(x, "Strength", js.undefined)
+    inline def setStrengthUndefined: Self = StObject.set(x, "Strength", js.undefined)
   }
 }

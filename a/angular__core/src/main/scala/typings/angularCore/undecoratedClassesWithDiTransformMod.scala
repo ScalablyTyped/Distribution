@@ -26,64 +26,64 @@ object undecoratedClassesWithDiTransformMod {
       * Adds the abstract "@Directive()" decorator to the given class in case there
       * is no existing directive decorator.
       */
-    var _addAbstractDirectiveDecorator: js.Any = js.native
+    /* private */ var _addAbstractDirectiveDecorator: js.Any = js.native
     
     /**
       * Adds the abstract "@Injectable()" decorator to the given class in case there
       * is no existing directive decorator.
       */
-    var _addInjectableDecorator: js.Any = js.native
+    /* private */ var _addInjectableDecorator: js.Any = js.native
     
     /** Adds a comment for adding an explicit constructor to the given class declaration. */
-    var _addMissingExplicitConstructorTodo: js.Any = js.native
+    /* private */ var _addMissingExplicitConstructorTodo: js.Any = js.native
     
     /**
       * Constructs a TypeScript decorator node from the specified declaration metadata. Returns
       * null if the metadata could not be simplified/resolved.
       */
-    var _constructDecoratorFromMetadata: js.Any = js.native
+    /* private */ var _constructDecoratorFromMetadata: js.Any = js.native
     
     /**
       * Disables that static symbols are resolved through summaries. Summaries
       * cannot be used for decorator analysis as decorators are omitted in summaries.
       */
-    var _disableSummaryResolution: js.Any = js.native
+    /* private */ var _disableSummaryResolution: js.Any = js.native
     
-    var _getStaticSymbolOfIdentifier: js.Any = js.native
+    /* private */ var _getStaticSymbolOfIdentifier: js.Any = js.native
     
-    var _migrateDecoratedClassWithInheritedCtor: js.Any = js.native
+    /* private */ var _migrateDecoratedClassWithInheritedCtor: js.Any = js.native
     
-    var _migrateDerivedDeclaration: js.Any = js.native
+    /* private */ var _migrateDerivedDeclaration: js.Any = js.native
     
-    var _migrateDirectiveBaseClass: js.Any = js.native
+    /* private */ var _migrateDirectiveBaseClass: js.Any = js.native
     
-    var _migrateProviderBaseClass: js.Any = js.native
+    /* private */ var _migrateProviderBaseClass: js.Any = js.native
     
     /**
       * Resolves the declaration metadata of a given static symbol. The metadata
       * is determined by resolving metadata for the static symbol.
       */
-    var _resolveDeclarationMetadata: js.Any = js.native
+    /* private */ var _resolveDeclarationMetadata: js.Any = js.native
     
-    var compiler: js.Any = js.native
+    /* private */ var compiler: js.Any = js.native
     
-    var compilerHost: js.Any = js.native
+    /* private */ var compilerHost: js.Any = js.native
     
     /** Set of class declarations which have been decorated with "@Directive". */
-    var decoratedDirectives: js.Any = js.native
+    /* private */ var decoratedDirectives: js.Any = js.native
     
     /** Set of class declarations which have been decorated with "@Injectable" */
-    var decoratedProviders: js.Any = js.native
+    /* private */ var decoratedProviders: js.Any = js.native
     
-    var decoratorRewriter: js.Any = js.native
+    /* private */ var decoratorRewriter: js.Any = js.native
     
-    var evaluator: js.Any = js.native
+    /* private */ var evaluator: js.Any = js.native
     
-    var getUpdateRecorder: js.Any = js.native
+    /* private */ var getUpdateRecorder: js.Any = js.native
     
-    var importManager: js.Any = js.native
+    /* private */ var importManager: js.Any = js.native
     
-    var metadataResolver: js.Any = js.native
+    /* private */ var metadataResolver: js.Any = js.native
     
     /**
       * Migrates decorated directives which can potentially inherit a constructor
@@ -117,16 +117,16 @@ object undecoratedClassesWithDiTransformMod {
       * Set of class declarations which have been analyzed and need to specify
       * an explicit constructor.
       */
-    var missingExplicitConstructorClasses: js.Any = js.native
+    /* private */ var missingExplicitConstructorClasses: js.Any = js.native
     
-    var printer: js.Any = js.native
+    /* private */ var printer: js.Any = js.native
     
     /** Records all changes that were made in the import manager. */
     def recordChanges(): Unit = js.native
     
-    var symbolResolver: js.Any = js.native
+    /* private */ var symbolResolver: js.Any = js.native
     
-    var typeChecker: js.Any = js.native
+    /* private */ var typeChecker: js.Any = js.native
   }
   
   trait TransformFailure extends StObject {
@@ -137,20 +137,16 @@ object undecoratedClassesWithDiTransformMod {
   }
   object TransformFailure {
     
-    @scala.inline
-    def apply(message: String, node: Node): TransformFailure = {
+    inline def apply(message: String, node: Node): TransformFailure = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransformFailure]
     }
     
-    @scala.inline
-    implicit class TransformFailureMutableBuilder[Self <: TransformFailure] (val x: Self) extends AnyVal {
+    extension [Self <: TransformFailure](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
 }

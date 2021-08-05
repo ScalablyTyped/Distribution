@@ -18,19 +18,15 @@ trait DeclarationRaws
 }
 object DeclarationRaws {
   
-  @scala.inline
-  def apply(): DeclarationRaws = {
+  inline def apply(): DeclarationRaws = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeclarationRaws]
   }
   
-  @scala.inline
-  implicit class DeclarationRawsMutableBuilder[Self <: DeclarationRaws] (val x: Self) extends AnyVal {
+  extension [Self <: DeclarationRaws](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -43,46 +43,33 @@ trait ExplanationOfBenefitProcedure
 }
 object ExplanationOfBenefitProcedure {
   
-  @scala.inline
-  def apply(sequence: positiveInt): ExplanationOfBenefitProcedure = {
+  inline def apply(sequence: positiveInt): ExplanationOfBenefitProcedure = {
     val __obj = js.Dynamic.literal(sequence = sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplanationOfBenefitProcedure]
   }
   
-  @scala.inline
-  implicit class ExplanationOfBenefitProcedureMutableBuilder[Self <: ExplanationOfBenefitProcedure] (val x: Self) extends AnyVal {
+  extension [Self <: ExplanationOfBenefitProcedure](x: Self) {
     
-    @scala.inline
-    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setProcedureCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "procedureCodeableConcept", value.asInstanceOf[js.Any])
+    inline def setProcedureCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "procedureCodeableConcept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcedureCodeableConceptUndefined: Self = StObject.set(x, "procedureCodeableConcept", js.undefined)
+    inline def setProcedureCodeableConceptUndefined: Self = StObject.set(x, "procedureCodeableConcept", js.undefined)
     
-    @scala.inline
-    def setProcedureReference(value: Reference): Self = StObject.set(x, "procedureReference", value.asInstanceOf[js.Any])
+    inline def setProcedureReference(value: Reference): Self = StObject.set(x, "procedureReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcedureReferenceUndefined: Self = StObject.set(x, "procedureReference", js.undefined)
+    inline def setProcedureReferenceUndefined: Self = StObject.set(x, "procedureReference", js.undefined)
     
-    @scala.inline
-    def setSequence(value: positiveInt): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+    inline def setSequence(value: positiveInt): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
+    inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
+    inline def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
-    @scala.inline
-    def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
+    inline def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
+    inline def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
   }
 }

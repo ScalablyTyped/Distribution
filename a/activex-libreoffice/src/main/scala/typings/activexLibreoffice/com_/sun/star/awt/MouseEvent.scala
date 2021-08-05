@@ -46,8 +46,7 @@ trait MouseEvent
 }
 object MouseEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Buttons: Double,
     ClickCount: Double,
     Modifiers: Double,
@@ -60,22 +59,16 @@ object MouseEvent {
     __obj.asInstanceOf[MouseEvent]
   }
   
-  @scala.inline
-  implicit class MouseEventMutableBuilder[Self <: MouseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MouseEvent](x: Self) {
     
-    @scala.inline
-    def setButtons(value: Double): Self = StObject.set(x, "Buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: Double): Self = StObject.set(x, "Buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickCount(value: Double): Self = StObject.set(x, "ClickCount", value.asInstanceOf[js.Any])
+    inline def setClickCount(value: Double): Self = StObject.set(x, "ClickCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupTrigger(value: Boolean): Self = StObject.set(x, "PopupTrigger", value.asInstanceOf[js.Any])
+    inline def setPopupTrigger(value: Boolean): Self = StObject.set(x, "PopupTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
   }
 }

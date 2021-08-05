@@ -19,7 +19,7 @@ object hoverCardBaseMod {
        with IHoverCard {
     def this(props: IHoverCardProps) = this()
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
     /**
       * Hide HoverCard
@@ -28,37 +28,37 @@ object hoverCardBaseMod {
       *  true: Event is coming from event listeners set up in componentDidMount.
       *  false: Event is coming from the `onLeave` prop from the HoverCard component.
       */
-    var _cardDismiss: js.Any = js.native
+    /* private */ var _cardDismiss: js.Any = js.native
     
-    var _cardOpen: js.Any = js.native
+    /* private */ var _cardOpen: js.Any = js.native
     
-    var _childDismissEvent: js.Any = js.native
+    /* private */ var _childDismissEvent: js.Any = js.native
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _currentMouseTarget: js.Any = js.native
+    /* private */ var _currentMouseTarget: js.Any = js.native
     
-    var _dismissTimerId: js.Any = js.native
+    /* private */ var _dismissTimerId: js.Any = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
-    var _executeCardOpen: js.Any = js.native
+    /* private */ var _executeCardOpen: js.Any = js.native
     
-    var _getTargetElement: js.Any = js.native
+    /* private */ var _getTargetElement: js.Any = js.native
     
-    var _hoverCard: js.Any = js.native
+    /* private */ var _hoverCard: js.Any = js.native
     
-    var _instantOpenAsExpanded: js.Any = js.native
+    /* private */ var _instantOpenAsExpanded: js.Any = js.native
     
-    var _nativeDismissEvent: js.Any = js.native
+    /* private */ var _nativeDismissEvent: js.Any = js.native
     
-    var _openTimerId: js.Any = js.native
+    /* private */ var _openTimerId: js.Any = js.native
     
-    var _setDismissedState: js.Any = js.native
+    /* private */ var _setDismissedState: js.Any = js.native
     
-    var _setEventListeners: js.Any = js.native
+    /* private */ var _setEventListeners: js.Any = js.native
     
-    var _shouldBlockHoverCard: js.Any = js.native
+    /* private */ var _shouldBlockHoverCard: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MHoverCardBase(): Unit = js.native
@@ -79,8 +79,7 @@ object hoverCardBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/HoverCard/HoverCard.base", "HoverCardBase.defaultProps")
     @js.native
     def defaultProps: CardDismissDelay = js.native
-    @scala.inline
-    def defaultProps_=(x: CardDismissDelay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CardDismissDelay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IHoverCardState extends StObject {
@@ -93,32 +92,24 @@ object hoverCardBaseMod {
   }
   object IHoverCardState {
     
-    @scala.inline
-    def apply(): IHoverCardState = {
+    inline def apply(): IHoverCardState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IHoverCardState]
     }
     
-    @scala.inline
-    implicit class IHoverCardStateMutableBuilder[Self <: IHoverCardState] (val x: Self) extends AnyVal {
+    extension [Self <: IHoverCardState](x: Self) {
       
-      @scala.inline
-      def setIsHoverCardVisible(value: Boolean): Self = StObject.set(x, "isHoverCardVisible", value.asInstanceOf[js.Any])
+      inline def setIsHoverCardVisible(value: Boolean): Self = StObject.set(x, "isHoverCardVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHoverCardVisibleUndefined: Self = StObject.set(x, "isHoverCardVisible", js.undefined)
+      inline def setIsHoverCardVisibleUndefined: Self = StObject.set(x, "isHoverCardVisible", js.undefined)
       
-      @scala.inline
-      def setMode(value: ExpandingCardMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: ExpandingCardMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOpenMode(value: OpenCardMode): Self = StObject.set(x, "openMode", value.asInstanceOf[js.Any])
+      inline def setOpenMode(value: OpenCardMode): Self = StObject.set(x, "openMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenModeUndefined: Self = StObject.set(x, "openMode", js.undefined)
+      inline def setOpenModeUndefined: Self = StObject.set(x, "openMode", js.undefined)
     }
   }
 }

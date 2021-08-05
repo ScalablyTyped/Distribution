@@ -22,22 +22,17 @@ trait StartAdvertisingObject extends StObject {
 }
 object StartAdvertisingObject {
   
-  @scala.inline
-  def apply(advertiseRequest: AdvertiseReqObj): StartAdvertisingObject = {
+  inline def apply(advertiseRequest: AdvertiseReqObj): StartAdvertisingObject = {
     val __obj = js.Dynamic.literal(advertiseRequest = advertiseRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartAdvertisingObject]
   }
   
-  @scala.inline
-  implicit class StartAdvertisingObjectMutableBuilder[Self <: StartAdvertisingObject] (val x: Self) extends AnyVal {
+  extension [Self <: StartAdvertisingObject](x: Self) {
     
-    @scala.inline
-    def setAdvertiseRequest(value: AdvertiseReqObj): Self = StObject.set(x, "advertiseRequest", value.asInstanceOf[js.Any])
+    inline def setAdvertiseRequest(value: AdvertiseReqObj): Self = StObject.set(x, "advertiseRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerLevel(value: low | medium | high): Self = StObject.set(x, "powerLevel", value.asInstanceOf[js.Any])
+    inline def setPowerLevel(value: low | medium | high): Self = StObject.set(x, "powerLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerLevelUndefined: Self = StObject.set(x, "powerLevel", js.undefined)
+    inline def setPowerLevelUndefined: Self = StObject.set(x, "powerLevel", js.undefined)
   }
 }

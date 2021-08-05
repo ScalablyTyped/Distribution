@@ -45,8 +45,7 @@ trait CallHierarchyProvider extends StObject {
 }
 object CallHierarchyProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     prepareCallHierarchy: (TextDocument, Position, CancellationToken) => ProviderResult[CallHierarchyItem | js.Array[CallHierarchyItem]],
     provideCallHierarchyIncomingCalls: (CallHierarchyItem, CancellationToken) => ProviderResult[js.Array[CallHierarchyIncomingCall]],
     provideCallHierarchyOutgoingCalls: (CallHierarchyItem, CancellationToken) => ProviderResult[js.Array[CallHierarchyOutgoingCall]]
@@ -55,21 +54,17 @@ object CallHierarchyProvider {
     __obj.asInstanceOf[CallHierarchyProvider]
   }
   
-  @scala.inline
-  implicit class CallHierarchyProviderMutableBuilder[Self <: CallHierarchyProvider] (val x: Self) extends AnyVal {
+  extension [Self <: CallHierarchyProvider](x: Self) {
     
-    @scala.inline
-    def setPrepareCallHierarchy(
+    inline def setPrepareCallHierarchy(
       value: (TextDocument, Position, CancellationToken) => ProviderResult[CallHierarchyItem | js.Array[CallHierarchyItem]]
     ): Self = StObject.set(x, "prepareCallHierarchy", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setProvideCallHierarchyIncomingCalls(
+    inline def setProvideCallHierarchyIncomingCalls(
       value: (CallHierarchyItem, CancellationToken) => ProviderResult[js.Array[CallHierarchyIncomingCall]]
     ): Self = StObject.set(x, "provideCallHierarchyIncomingCalls", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProvideCallHierarchyOutgoingCalls(
+    inline def setProvideCallHierarchyOutgoingCalls(
       value: (CallHierarchyItem, CancellationToken) => ProviderResult[js.Array[CallHierarchyOutgoingCall]]
     ): Self = StObject.set(x, "provideCallHierarchyOutgoingCalls", js.Any.fromFunction2(value))
   }

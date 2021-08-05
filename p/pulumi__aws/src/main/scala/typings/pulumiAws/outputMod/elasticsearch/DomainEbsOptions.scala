@@ -29,31 +29,23 @@ trait DomainEbsOptions extends StObject {
 }
 object DomainEbsOptions {
   
-  @scala.inline
-  def apply(ebsEnabled: Boolean, volumeType: String): DomainEbsOptions = {
+  inline def apply(ebsEnabled: Boolean, volumeType: String): DomainEbsOptions = {
     val __obj = js.Dynamic.literal(ebsEnabled = ebsEnabled.asInstanceOf[js.Any], volumeType = volumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainEbsOptions]
   }
   
-  @scala.inline
-  implicit class DomainEbsOptionsMutableBuilder[Self <: DomainEbsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DomainEbsOptions](x: Self) {
     
-    @scala.inline
-    def setEbsEnabled(value: Boolean): Self = StObject.set(x, "ebsEnabled", value.asInstanceOf[js.Any])
+    inline def setEbsEnabled(value: Boolean): Self = StObject.set(x, "ebsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
+    inline def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
+    inline def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
     
-    @scala.inline
-    def setVolumeSize(value: Double): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
+    inline def setVolumeSize(value: Double): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSizeUndefined: Self = StObject.set(x, "volumeSize", js.undefined)
+    inline def setVolumeSizeUndefined: Self = StObject.set(x, "volumeSize", js.undefined)
     
-    @scala.inline
-    def setVolumeType(value: String): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
+    inline def setVolumeType(value: String): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
   }
 }

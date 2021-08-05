@@ -16,19 +16,15 @@ trait TypeofSubMenu extends StObject {
 }
 object TypeofSubMenu {
   
-  @scala.inline
-  def apply(contextType: Context[MenuContextProps], isSubMenu: Double): TypeofSubMenu = {
+  inline def apply(contextType: Context[MenuContextProps], isSubMenu: Double): TypeofSubMenu = {
     val __obj = js.Dynamic.literal(contextType = contextType.asInstanceOf[js.Any], isSubMenu = isSubMenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSubMenu]
   }
   
-  @scala.inline
-  implicit class TypeofSubMenuMutableBuilder[Self <: TypeofSubMenu] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSubMenu](x: Self) {
     
-    @scala.inline
-    def setContextType(value: Context[MenuContextProps]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
+    inline def setContextType(value: Context[MenuContextProps]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSubMenu(value: Double): Self = StObject.set(x, "isSubMenu", value.asInstanceOf[js.Any])
+    inline def setIsSubMenu(value: Double): Self = StObject.set(x, "isSubMenu", value.asInstanceOf[js.Any])
   }
 }

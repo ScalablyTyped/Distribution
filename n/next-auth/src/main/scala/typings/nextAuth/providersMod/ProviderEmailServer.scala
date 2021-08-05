@@ -14,22 +14,17 @@ trait ProviderEmailServer extends StObject {
 }
 object ProviderEmailServer {
   
-  @scala.inline
-  def apply(auth: ProviderEmailAuth, host: String, port: Double): ProviderEmailServer = {
+  inline def apply(auth: ProviderEmailAuth, host: String, port: Double): ProviderEmailServer = {
     val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderEmailServer]
   }
   
-  @scala.inline
-  implicit class ProviderEmailServerMutableBuilder[Self <: ProviderEmailServer] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderEmailServer](x: Self) {
     
-    @scala.inline
-    def setAuth(value: ProviderEmailAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: ProviderEmailAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

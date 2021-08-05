@@ -13,19 +13,15 @@ trait GoogleActionsV2OrdersPromotion extends StObject {
 }
 object GoogleActionsV2OrdersPromotion {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersPromotion = {
+  inline def apply(): GoogleActionsV2OrdersPromotion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersPromotion]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersPromotionMutableBuilder[Self <: GoogleActionsV2OrdersPromotion] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersPromotion](x: Self) {
     
-    @scala.inline
-    def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
+    inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
+    inline def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
   }
 }

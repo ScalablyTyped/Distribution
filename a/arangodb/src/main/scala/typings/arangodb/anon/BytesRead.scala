@@ -20,8 +20,7 @@ trait BytesRead extends StObject {
 }
 object BytesRead {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bytesRead: Double,
     bytesWritten: Double,
     count: Double,
@@ -33,25 +32,18 @@ object BytesRead {
     __obj.asInstanceOf[BytesRead]
   }
   
-  @scala.inline
-  implicit class BytesReadMutableBuilder[Self <: BytesRead] (val x: Self) extends AnyVal {
+  extension [Self <: BytesRead](x: Self) {
     
-    @scala.inline
-    def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
+    inline def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
+    inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesCombined(value: Double): Self = StObject.set(x, "filesCombined", value.asInstanceOf[js.Any])
+    inline def setFilesCombined(value: Double): Self = StObject.set(x, "filesCombined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

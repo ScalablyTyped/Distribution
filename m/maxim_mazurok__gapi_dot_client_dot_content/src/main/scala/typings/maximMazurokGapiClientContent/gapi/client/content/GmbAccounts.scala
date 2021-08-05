@@ -14,28 +14,21 @@ trait GmbAccounts extends StObject {
 }
 object GmbAccounts {
   
-  @scala.inline
-  def apply(): GmbAccounts = {
+  inline def apply(): GmbAccounts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GmbAccounts]
   }
   
-  @scala.inline
-  implicit class GmbAccountsMutableBuilder[Self <: GmbAccounts] (val x: Self) extends AnyVal {
+  extension [Self <: GmbAccounts](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setGmbAccounts(value: js.Array[GmbAccountsGmbAccount]): Self = StObject.set(x, "gmbAccounts", value.asInstanceOf[js.Any])
+    inline def setGmbAccounts(value: js.Array[GmbAccountsGmbAccount]): Self = StObject.set(x, "gmbAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmbAccountsUndefined: Self = StObject.set(x, "gmbAccounts", js.undefined)
+    inline def setGmbAccountsUndefined: Self = StObject.set(x, "gmbAccounts", js.undefined)
     
-    @scala.inline
-    def setGmbAccountsVarargs(value: GmbAccountsGmbAccount*): Self = StObject.set(x, "gmbAccounts", js.Array(value :_*))
+    inline def setGmbAccountsVarargs(value: GmbAccountsGmbAccount*): Self = StObject.set(x, "gmbAccounts", js.Array(value :_*))
   }
 }

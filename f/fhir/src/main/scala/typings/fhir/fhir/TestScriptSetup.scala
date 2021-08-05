@@ -18,19 +18,15 @@ trait TestScriptSetup
 }
 object TestScriptSetup {
   
-  @scala.inline
-  def apply(action: js.Array[TestScriptSetupAction]): TestScriptSetup = {
+  inline def apply(action: js.Array[TestScriptSetupAction]): TestScriptSetup = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestScriptSetup]
   }
   
-  @scala.inline
-  implicit class TestScriptSetupMutableBuilder[Self <: TestScriptSetup] (val x: Self) extends AnyVal {
+  extension [Self <: TestScriptSetup](x: Self) {
     
-    @scala.inline
-    def setAction(value: js.Array[TestScriptSetupAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: js.Array[TestScriptSetupAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionVarargs(value: TestScriptSetupAction*): Self = StObject.set(x, "action", js.Array(value :_*))
+    inline def setActionVarargs(value: TestScriptSetupAction*): Self = StObject.set(x, "action", js.Array(value :_*))
   }
 }

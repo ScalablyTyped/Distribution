@@ -28,37 +28,27 @@ trait CustomCodeSigning extends StObject {
 }
 object CustomCodeSigning {
   
-  @scala.inline
-  def apply(): CustomCodeSigning = {
+  inline def apply(): CustomCodeSigning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomCodeSigning]
   }
   
-  @scala.inline
-  implicit class CustomCodeSigningMutableBuilder[Self <: CustomCodeSigning] (val x: Self) extends AnyVal {
+  extension [Self <: CustomCodeSigning](x: Self) {
     
-    @scala.inline
-    def setCertificateChain(value: CodeSigningCertificateChain): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
+    inline def setCertificateChain(value: CodeSigningCertificateChain): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateChainUndefined: Self = StObject.set(x, "certificateChain", js.undefined)
+    inline def setCertificateChainUndefined: Self = StObject.set(x, "certificateChain", js.undefined)
     
-    @scala.inline
-    def setHashAlgorithm(value: HashAlgorithm): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
+    inline def setHashAlgorithm(value: HashAlgorithm): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashAlgorithmUndefined: Self = StObject.set(x, "hashAlgorithm", js.undefined)
+    inline def setHashAlgorithmUndefined: Self = StObject.set(x, "hashAlgorithm", js.undefined)
     
-    @scala.inline
-    def setSignature(value: CodeSigningSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: CodeSigningSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureAlgorithm(value: SignatureAlgorithm): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSignatureAlgorithm(value: SignatureAlgorithm): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
+    inline def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

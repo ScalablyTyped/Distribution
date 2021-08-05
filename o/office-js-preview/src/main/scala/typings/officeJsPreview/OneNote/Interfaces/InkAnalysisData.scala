@@ -25,25 +25,19 @@ trait InkAnalysisData extends StObject {
 }
 object InkAnalysisData {
   
-  @scala.inline
-  def apply(): InkAnalysisData = {
+  inline def apply(): InkAnalysisData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InkAnalysisData]
   }
   
-  @scala.inline
-  implicit class InkAnalysisDataMutableBuilder[Self <: InkAnalysisData] (val x: Self) extends AnyVal {
+  extension [Self <: InkAnalysisData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPage(value: PageData): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: PageData): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }
 }

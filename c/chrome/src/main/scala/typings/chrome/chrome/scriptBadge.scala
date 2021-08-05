@@ -17,17 +17,14 @@ object scriptBadge {
   }
   object AttentionDetails {
     
-    @scala.inline
-    def apply(tabId: Double): AttentionDetails = {
+    inline def apply(tabId: Double): AttentionDetails = {
       val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttentionDetails]
     }
     
-    @scala.inline
-    implicit class AttentionDetailsMutableBuilder[Self <: AttentionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: AttentionDetails](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +34,14 @@ object scriptBadge {
   }
   object GetPopupDetails {
     
-    @scala.inline
-    def apply(tabId: Double): GetPopupDetails = {
+    inline def apply(tabId: Double): GetPopupDetails = {
       val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPopupDetails]
     }
     
-    @scala.inline
-    implicit class GetPopupDetailsMutableBuilder[Self <: GetPopupDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GetPopupDetails](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,20 +55,16 @@ object scriptBadge {
   }
   object SetPopupDetails {
     
-    @scala.inline
-    def apply(popup: String, tabId: Double): SetPopupDetails = {
+    inline def apply(popup: String, tabId: Double): SetPopupDetails = {
       val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetPopupDetails]
     }
     
-    @scala.inline
-    implicit class SetPopupDetailsMutableBuilder[Self <: SetPopupDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SetPopupDetails](x: Self) {
       
-      @scala.inline
-      def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+      inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
   }
 }

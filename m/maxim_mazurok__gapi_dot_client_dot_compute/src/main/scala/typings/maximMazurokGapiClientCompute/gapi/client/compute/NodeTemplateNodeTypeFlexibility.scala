@@ -14,31 +14,23 @@ trait NodeTemplateNodeTypeFlexibility extends StObject {
 }
 object NodeTemplateNodeTypeFlexibility {
   
-  @scala.inline
-  def apply(): NodeTemplateNodeTypeFlexibility = {
+  inline def apply(): NodeTemplateNodeTypeFlexibility = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeTemplateNodeTypeFlexibility]
   }
   
-  @scala.inline
-  implicit class NodeTemplateNodeTypeFlexibilityMutableBuilder[Self <: NodeTemplateNodeTypeFlexibility] (val x: Self) extends AnyVal {
+  extension [Self <: NodeTemplateNodeTypeFlexibility](x: Self) {
     
-    @scala.inline
-    def setCpus(value: String): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
+    inline def setCpus(value: String): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpusUndefined: Self = StObject.set(x, "cpus", js.undefined)
+    inline def setCpusUndefined: Self = StObject.set(x, "cpus", js.undefined)
     
-    @scala.inline
-    def setLocalSsd(value: String): Self = StObject.set(x, "localSsd", value.asInstanceOf[js.Any])
+    inline def setLocalSsd(value: String): Self = StObject.set(x, "localSsd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalSsdUndefined: Self = StObject.set(x, "localSsd", js.undefined)
+    inline def setLocalSsdUndefined: Self = StObject.set(x, "localSsd", js.undefined)
     
-    @scala.inline
-    def setMemory(value: String): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: String): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+    inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
   }
 }

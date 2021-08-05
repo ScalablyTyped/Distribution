@@ -11,16 +11,13 @@ trait PickImplallowRepeats extends StObject {
 }
 object PickImplallowRepeats {
   
-  @scala.inline
-  def apply(allowRepeats: Boolean): PickImplallowRepeats = {
+  inline def apply(allowRepeats: Boolean): PickImplallowRepeats = {
     val __obj = js.Dynamic.literal(allowRepeats = allowRepeats.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplallowRepeats]
   }
   
-  @scala.inline
-  implicit class PickImplallowRepeatsMutableBuilder[Self <: PickImplallowRepeats] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplallowRepeats](x: Self) {
     
-    @scala.inline
-    def setAllowRepeats(value: Boolean): Self = StObject.set(x, "allowRepeats", value.asInstanceOf[js.Any])
+    inline def setAllowRepeats(value: Boolean): Self = StObject.set(x, "allowRepeats", value.asInstanceOf[js.Any])
   }
 }

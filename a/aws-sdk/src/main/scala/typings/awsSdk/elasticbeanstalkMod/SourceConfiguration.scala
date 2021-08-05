@@ -18,25 +18,19 @@ trait SourceConfiguration extends StObject {
 }
 object SourceConfiguration {
   
-  @scala.inline
-  def apply(): SourceConfiguration = {
+  inline def apply(): SourceConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceConfiguration]
   }
   
-  @scala.inline
-  implicit class SourceConfigurationMutableBuilder[Self <: SourceConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SourceConfiguration](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
-    @scala.inline
-    def setTemplateName(value: ConfigurationTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: ConfigurationTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
+    inline def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
   }
 }

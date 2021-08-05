@@ -13,16 +13,13 @@ trait TlsValidationContextFileTrust extends StObject {
 }
 object TlsValidationContextFileTrust {
   
-  @scala.inline
-  def apply(certificateChain: FilePath): TlsValidationContextFileTrust = {
+  inline def apply(certificateChain: FilePath): TlsValidationContextFileTrust = {
     val __obj = js.Dynamic.literal(certificateChain = certificateChain.asInstanceOf[js.Any])
     __obj.asInstanceOf[TlsValidationContextFileTrust]
   }
   
-  @scala.inline
-  implicit class TlsValidationContextFileTrustMutableBuilder[Self <: TlsValidationContextFileTrust] (val x: Self) extends AnyVal {
+  extension [Self <: TlsValidationContextFileTrust](x: Self) {
     
-    @scala.inline
-    def setCertificateChain(value: FilePath): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
+    inline def setCertificateChain(value: FilePath): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
   }
 }

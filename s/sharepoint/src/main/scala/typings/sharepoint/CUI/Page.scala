@@ -12,17 +12,14 @@ object Page {
   }
   object CommandDispatcher {
     
-    @scala.inline
-    def apply(executeCommand: (String, js.Any) => js.Any): CommandDispatcher = {
+    inline def apply(executeCommand: (String, js.Any) => js.Any): CommandDispatcher = {
       val __obj = js.Dynamic.literal(executeCommand = js.Any.fromFunction2(executeCommand))
       __obj.asInstanceOf[CommandDispatcher]
     }
     
-    @scala.inline
-    implicit class CommandDispatcherMutableBuilder[Self <: CommandDispatcher] (val x: Self) extends AnyVal {
+    extension [Self <: CommandDispatcher](x: Self) {
       
-      @scala.inline
-      def setExecuteCommand(value: (String, js.Any) => js.Any): Self = StObject.set(x, "executeCommand", js.Any.fromFunction2(value))
+      inline def setExecuteCommand(value: (String, js.Any) => js.Any): Self = StObject.set(x, "executeCommand", js.Any.fromFunction2(value))
     }
   }
   
@@ -41,8 +38,7 @@ object Page {
   }
   object FocusManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canHandleCommand: String => Boolean,
       executeCommand: (String, js.Any) => js.Any,
       getFocusedComponents: () => js.Array[Component],
@@ -55,20 +51,15 @@ object Page {
       __obj.asInstanceOf[FocusManager]
     }
     
-    @scala.inline
-    implicit class FocusManagerMutableBuilder[Self <: FocusManager] (val x: Self) extends AnyVal {
+    extension [Self <: FocusManager](x: Self) {
       
-      @scala.inline
-      def setGetFocusedComponents(value: () => js.Array[Component]): Self = StObject.set(x, "getFocusedComponents", js.Any.fromFunction0(value))
+      inline def setGetFocusedComponents(value: () => js.Array[Component]): Self = StObject.set(x, "getFocusedComponents", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReleaseAllFoci(value: () => Boolean): Self = StObject.set(x, "releaseAllFoci", js.Any.fromFunction0(value))
+      inline def setReleaseAllFoci(value: () => Boolean): Self = StObject.set(x, "releaseAllFoci", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReleaseFocusFromComponent(value: Component => js.Any): Self = StObject.set(x, "releaseFocusFromComponent", js.Any.fromFunction1(value))
+      inline def setReleaseFocusFromComponent(value: Component => js.Any): Self = StObject.set(x, "releaseFocusFromComponent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestFocusForComponent(value: Component => js.Any): Self = StObject.set(x, "requestFocusForComponent", js.Any.fromFunction1(value))
+      inline def setRequestFocusForComponent(value: Component => js.Any): Self = StObject.set(x, "requestFocusForComponent", js.Any.fromFunction1(value))
     }
   }
   
@@ -80,20 +71,16 @@ object Page {
   }
   object ICommandHandler {
     
-    @scala.inline
-    def apply(canHandleCommand: String => Boolean, handleCommand: (String, js.Any, Double) => Boolean): ICommandHandler = {
+    inline def apply(canHandleCommand: String => Boolean, handleCommand: (String, js.Any, Double) => Boolean): ICommandHandler = {
       val __obj = js.Dynamic.literal(canHandleCommand = js.Any.fromFunction1(canHandleCommand), handleCommand = js.Any.fromFunction3(handleCommand))
       __obj.asInstanceOf[ICommandHandler]
     }
     
-    @scala.inline
-    implicit class ICommandHandlerMutableBuilder[Self <: ICommandHandler] (val x: Self) extends AnyVal {
+    extension [Self <: ICommandHandler](x: Self) {
       
-      @scala.inline
-      def setCanHandleCommand(value: String => Boolean): Self = StObject.set(x, "canHandleCommand", js.Any.fromFunction1(value))
+      inline def setCanHandleCommand(value: String => Boolean): Self = StObject.set(x, "canHandleCommand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleCommand(value: (String, js.Any, Double) => Boolean): Self = StObject.set(x, "handleCommand", js.Any.fromFunction3(value))
+      inline def setHandleCommand(value: (String, js.Any, Double) => Boolean): Self = StObject.set(x, "handleCommand", js.Any.fromFunction3(value))
     }
   }
   
@@ -117,8 +104,7 @@ object Page {
   }
   object PageComponent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canHandleCommand: String => Boolean,
       getFocusedCommands: () => js.Array[String],
       getGlobalCommands: () => js.Array[String],
@@ -133,29 +119,21 @@ object Page {
       __obj.asInstanceOf[PageComponent]
     }
     
-    @scala.inline
-    implicit class PageComponentMutableBuilder[Self <: PageComponent] (val x: Self) extends AnyVal {
+    extension [Self <: PageComponent](x: Self) {
       
-      @scala.inline
-      def setGetFocusedCommands(value: () => js.Array[String]): Self = StObject.set(x, "getFocusedCommands", js.Any.fromFunction0(value))
+      inline def setGetFocusedCommands(value: () => js.Array[String]): Self = StObject.set(x, "getFocusedCommands", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetGlobalCommands(value: () => js.Array[String]): Self = StObject.set(x, "getGlobalCommands", js.Any.fromFunction0(value))
+      inline def setGetGlobalCommands(value: () => js.Array[String]): Self = StObject.set(x, "getGlobalCommands", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInit(value: () => scala.Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      inline def setInit(value: () => scala.Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFocusable(value: () => Boolean): Self = StObject.set(x, "isFocusable", js.Any.fromFunction0(value))
+      inline def setIsFocusable(value: () => Boolean): Self = StObject.set(x, "isFocusable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReceiveFocus(value: () => Boolean): Self = StObject.set(x, "receiveFocus", js.Any.fromFunction0(value))
+      inline def setReceiveFocus(value: () => Boolean): Self = StObject.set(x, "receiveFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setYieldFocus(value: () => Boolean): Self = StObject.set(x, "yieldFocus", js.Any.fromFunction0(value))
+      inline def setYieldFocus(value: () => Boolean): Self = StObject.set(x, "yieldFocus", js.Any.fromFunction0(value))
     }
   }
   
@@ -175,8 +153,7 @@ object Page {
   }
   object PageManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add_ribbonInited: js.Function0[scala.Unit] => js.Any,
       canHandleCommand: String => Boolean,
       get_commandDispatcher: () => CommandDispatcher,
@@ -188,20 +165,15 @@ object Page {
       __obj.asInstanceOf[PageManager]
     }
     
-    @scala.inline
-    implicit class PageManagerMutableBuilder[Self <: PageManager] (val x: Self) extends AnyVal {
+    extension [Self <: PageManager](x: Self) {
       
-      @scala.inline
-      def setAdd_ribbonInited(value: js.Function0[scala.Unit] => js.Any): Self = StObject.set(x, "add_ribbonInited", js.Any.fromFunction1(value))
+      inline def setAdd_ribbonInited(value: js.Function0[scala.Unit] => js.Any): Self = StObject.set(x, "add_ribbonInited", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet_commandDispatcher(value: () => CommandDispatcher): Self = StObject.set(x, "get_commandDispatcher", js.Any.fromFunction0(value))
+      inline def setGet_commandDispatcher(value: () => CommandDispatcher): Self = StObject.set(x, "get_commandDispatcher", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_focusManager(value: () => FocusManager): Self = StObject.set(x, "get_focusManager", js.Any.fromFunction0(value))
+      inline def setGet_focusManager(value: () => FocusManager): Self = StObject.set(x, "get_focusManager", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_undoManager(value: () => UndoManager): Self = StObject.set(x, "get_undoManager", js.Any.fromFunction0(value))
+      inline def setGet_undoManager(value: () => UndoManager): Self = StObject.set(x, "get_undoManager", js.Any.fromFunction0(value))
     }
   }
   
@@ -210,8 +182,7 @@ object Page {
        with ICommandHandler
   object UndoManager {
     
-    @scala.inline
-    def apply(canHandleCommand: String => Boolean, handleCommand: (String, js.Any, Double) => Boolean): UndoManager = {
+    inline def apply(canHandleCommand: String => Boolean, handleCommand: (String, js.Any, Double) => Boolean): UndoManager = {
       val __obj = js.Dynamic.literal(canHandleCommand = js.Any.fromFunction1(canHandleCommand), handleCommand = js.Any.fromFunction3(handleCommand))
       __obj.asInstanceOf[UndoManager]
     }

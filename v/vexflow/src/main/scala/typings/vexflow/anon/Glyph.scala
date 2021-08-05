@@ -12,19 +12,15 @@ trait Glyph extends StObject {
 }
 object Glyph {
   
-  @scala.inline
-  def apply(glyph: typings.vexflow.Vex.Flow.Glyph, num: Double): Glyph = {
+  inline def apply(glyph: typings.vexflow.Vex.Flow.Glyph, num: Double): Glyph = {
     val __obj = js.Dynamic.literal(glyph = glyph.asInstanceOf[js.Any], num = num.asInstanceOf[js.Any])
     __obj.asInstanceOf[Glyph]
   }
   
-  @scala.inline
-  implicit class GlyphMutableBuilder[Self <: Glyph] (val x: Self) extends AnyVal {
+  extension [Self <: Glyph](x: Self) {
     
-    @scala.inline
-    def setGlyph(value: typings.vexflow.Vex.Flow.Glyph): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+    inline def setGlyph(value: typings.vexflow.Vex.Flow.Glyph): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
+    inline def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
   }
 }

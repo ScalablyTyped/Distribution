@@ -13,16 +13,13 @@ trait GetBackupPlanFromJSONInput extends StObject {
 }
 object GetBackupPlanFromJSONInput {
   
-  @scala.inline
-  def apply(BackupPlanTemplateJson: String): GetBackupPlanFromJSONInput = {
+  inline def apply(BackupPlanTemplateJson: String): GetBackupPlanFromJSONInput = {
     val __obj = js.Dynamic.literal(BackupPlanTemplateJson = BackupPlanTemplateJson.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBackupPlanFromJSONInput]
   }
   
-  @scala.inline
-  implicit class GetBackupPlanFromJSONInputMutableBuilder[Self <: GetBackupPlanFromJSONInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackupPlanFromJSONInput](x: Self) {
     
-    @scala.inline
-    def setBackupPlanTemplateJson(value: String): Self = StObject.set(x, "BackupPlanTemplateJson", value.asInstanceOf[js.Any])
+    inline def setBackupPlanTemplateJson(value: String): Self = StObject.set(x, "BackupPlanTemplateJson", value.asInstanceOf[js.Any])
   }
 }

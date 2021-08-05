@@ -29,31 +29,23 @@ trait Header extends StObject {
 }
 object Header {
   
-  @scala.inline
-  def apply(header: Layout, screen: Layout): Header = {
+  inline def apply(header: Layout, screen: Layout): Header = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
   
-  @scala.inline
-  implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+  extension [Self <: Header](x: Self) {
     
-    @scala.inline
-    def setHeader(value: Layout): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Layout): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftLabel(value: Layout): Self = StObject.set(x, "leftLabel", value.asInstanceOf[js.Any])
+    inline def setLeftLabel(value: Layout): Self = StObject.set(x, "leftLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftLabelUndefined: Self = StObject.set(x, "leftLabel", js.undefined)
+    inline def setLeftLabelUndefined: Self = StObject.set(x, "leftLabel", js.undefined)
     
-    @scala.inline
-    def setScreen(value: Layout): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: Layout): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: Layout): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Layout): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

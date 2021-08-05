@@ -11,6 +11,5 @@ object resolveServiceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resolveFactory(): `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveFactory")().asInstanceOf[`0`]
+  inline def resolveFactory(): `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveFactory")().asInstanceOf[`0`]
 }

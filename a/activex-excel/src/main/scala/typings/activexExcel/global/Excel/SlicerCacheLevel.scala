@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SlicerCacheLevel")
 @js.native
-class SlicerCacheLevel protected ()
+/* private */ class SlicerCacheLevel ()
   extends StObject
      with typings.activexExcel.Excel.SlicerCacheLevel {
   
@@ -26,7 +26,7 @@ class SlicerCacheLevel protected ()
   /* CompleteClass */
   var CrossFilterType: XlSlicerCrossFilterType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.SlicerCacheLevel_typekey")
   var ExcelDotSlicerCacheLevel_typekey: typings.activexExcel.Excel.SlicerCacheLevel = js.native
   

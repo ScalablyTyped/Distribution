@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTCDefaultDispatch")
 @js.native
-class HTCDefaultDispatch protected ()
+/* private */ class HTCDefaultDispatch ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTCDefaultDispatch {
   
   /* CompleteClass */
   override def CreateEventObject(): typings.activexMshtml.MSHTML.IHTMLEventObj = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTCDefaultDispatch_typekey")
   var MSHTMLDotHTCDefaultDispatch_typekey: typings.activexMshtml.MSHTML.HTCDefaultDispatch = js.native
   

@@ -13,16 +13,13 @@ trait LoadingMessageDescriptorHtml
 }
 object LoadingMessageDescriptorHtml {
   
-  @scala.inline
-  def apply(html: String): LoadingMessageDescriptorHtml = {
+  inline def apply(html: String): LoadingMessageDescriptorHtml = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingMessageDescriptorHtml]
   }
   
-  @scala.inline
-  implicit class LoadingMessageDescriptorHtmlMutableBuilder[Self <: LoadingMessageDescriptorHtml] (val x: Self) extends AnyVal {
+  extension [Self <: LoadingMessageDescriptorHtml](x: Self) {
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
   }
 }

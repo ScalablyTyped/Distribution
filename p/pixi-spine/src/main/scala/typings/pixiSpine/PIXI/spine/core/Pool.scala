@@ -12,16 +12,15 @@ trait Pool[T] extends StObject {
   
   def freeAll(items: ArrayLike[T]): Unit
   
-  var instantiator: js.Any
+  /* private */ var instantiator: js.Any
   
-  var items: js.Any
+  /* private */ var items: js.Any
   
   def obtain(): T
 }
 object Pool {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     clear: () => Unit,
     free: T => Unit,
     freeAll: ArrayLike[T] => Unit,
@@ -33,25 +32,18 @@ object Pool {
     __obj.asInstanceOf[Pool[T]]
   }
   
-  @scala.inline
-  implicit class PoolMutableBuilder[Self <: Pool[?], T] (val x: Self & Pool[T]) extends AnyVal {
+  extension [Self <: Pool[?], T](x: Self & Pool[T]) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFree(value: T => Unit): Self = StObject.set(x, "free", js.Any.fromFunction1(value))
+    inline def setFree(value: T => Unit): Self = StObject.set(x, "free", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFreeAll(value: ArrayLike[T] => Unit): Self = StObject.set(x, "freeAll", js.Any.fromFunction1(value))
+    inline def setFreeAll(value: ArrayLike[T] => Unit): Self = StObject.set(x, "freeAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInstantiator(value: js.Any): Self = StObject.set(x, "instantiator", value.asInstanceOf[js.Any])
+    inline def setInstantiator(value: js.Any): Self = StObject.set(x, "instantiator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObtain(value: () => T): Self = StObject.set(x, "obtain", js.Any.fromFunction0(value))
+    inline def setObtain(value: () => T): Self = StObject.set(x, "obtain", js.Any.fromFunction0(value))
   }
 }

@@ -14,23 +14,18 @@ object ilanguagerequestMod {
   }
   object ILanguageRequest {
     
-    @scala.inline
-    def apply(languageId: Double): ILanguageRequest = {
+    inline def apply(languageId: Double): ILanguageRequest = {
       val __obj = js.Dynamic.literal(languageId = languageId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILanguageRequest]
     }
     
-    @scala.inline
-    implicit class ILanguageRequestMutableBuilder[Self <: ILanguageRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ILanguageRequest](x: Self) {
       
-      @scala.inline
-      def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+      inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+      inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
       
-      @scala.inline
-      def setLanguageId(value: Double): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
+      inline def setLanguageId(value: Double): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     }
   }
 }

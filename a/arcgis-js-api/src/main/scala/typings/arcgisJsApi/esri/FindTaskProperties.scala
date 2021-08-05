@@ -17,19 +17,15 @@ trait FindTaskProperties
 }
 object FindTaskProperties {
   
-  @scala.inline
-  def apply(): FindTaskProperties = {
+  inline def apply(): FindTaskProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindTaskProperties]
   }
   
-  @scala.inline
-  implicit class FindTaskPropertiesMutableBuilder[Self <: FindTaskProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FindTaskProperties](x: Self) {
     
-    @scala.inline
-    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
+    inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
+    inline def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
   }
 }

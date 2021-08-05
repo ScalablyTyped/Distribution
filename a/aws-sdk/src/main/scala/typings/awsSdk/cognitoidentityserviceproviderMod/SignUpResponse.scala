@@ -23,25 +23,19 @@ trait SignUpResponse extends StObject {
 }
 object SignUpResponse {
   
-  @scala.inline
-  def apply(UserConfirmed: BooleanType, UserSub: StringType): SignUpResponse = {
+  inline def apply(UserConfirmed: BooleanType, UserSub: StringType): SignUpResponse = {
     val __obj = js.Dynamic.literal(UserConfirmed = UserConfirmed.asInstanceOf[js.Any], UserSub = UserSub.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignUpResponse]
   }
   
-  @scala.inline
-  implicit class SignUpResponseMutableBuilder[Self <: SignUpResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SignUpResponse](x: Self) {
     
-    @scala.inline
-    def setCodeDeliveryDetails(value: CodeDeliveryDetailsType): Self = StObject.set(x, "CodeDeliveryDetails", value.asInstanceOf[js.Any])
+    inline def setCodeDeliveryDetails(value: CodeDeliveryDetailsType): Self = StObject.set(x, "CodeDeliveryDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeDeliveryDetailsUndefined: Self = StObject.set(x, "CodeDeliveryDetails", js.undefined)
+    inline def setCodeDeliveryDetailsUndefined: Self = StObject.set(x, "CodeDeliveryDetails", js.undefined)
     
-    @scala.inline
-    def setUserConfirmed(value: BooleanType): Self = StObject.set(x, "UserConfirmed", value.asInstanceOf[js.Any])
+    inline def setUserConfirmed(value: BooleanType): Self = StObject.set(x, "UserConfirmed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSub(value: StringType): Self = StObject.set(x, "UserSub", value.asInstanceOf[js.Any])
+    inline def setUserSub(value: StringType): Self = StObject.set(x, "UserSub", value.asInstanceOf[js.Any])
   }
 }

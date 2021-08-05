@@ -23,25 +23,19 @@ trait IPathIntersectionOptions
 }
 object IPathIntersectionOptions {
   
-  @scala.inline
-  def apply(): IPathIntersectionOptions = {
+  inline def apply(): IPathIntersectionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPathIntersectionOptions]
   }
   
-  @scala.inline
-  implicit class IPathIntersectionOptionsMutableBuilder[Self <: IPathIntersectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPathIntersectionOptions](x: Self) {
     
-    @scala.inline
-    def setPath1Offset(value: IPoint): Self = StObject.set(x, "path1Offset", value.asInstanceOf[js.Any])
+    inline def setPath1Offset(value: IPoint): Self = StObject.set(x, "path1Offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath1OffsetUndefined: Self = StObject.set(x, "path1Offset", js.undefined)
+    inline def setPath1OffsetUndefined: Self = StObject.set(x, "path1Offset", js.undefined)
     
-    @scala.inline
-    def setPath2Offset(value: IPoint): Self = StObject.set(x, "path2Offset", value.asInstanceOf[js.Any])
+    inline def setPath2Offset(value: IPoint): Self = StObject.set(x, "path2Offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath2OffsetUndefined: Self = StObject.set(x, "path2Offset", js.undefined)
+    inline def setPath2OffsetUndefined: Self = StObject.set(x, "path2Offset", js.undefined)
   }
 }

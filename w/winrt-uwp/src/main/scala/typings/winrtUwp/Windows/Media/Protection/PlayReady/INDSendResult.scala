@@ -12,16 +12,13 @@ trait INDSendResult extends StObject {
 }
 object INDSendResult {
   
-  @scala.inline
-  def apply(response: Double): INDSendResult = {
+  inline def apply(response: Double): INDSendResult = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[INDSendResult]
   }
   
-  @scala.inline
-  implicit class INDSendResultMutableBuilder[Self <: INDSendResult] (val x: Self) extends AnyVal {
+  extension [Self <: INDSendResult](x: Self) {
     
-    @scala.inline
-    def setResponse(value: Double): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Double): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

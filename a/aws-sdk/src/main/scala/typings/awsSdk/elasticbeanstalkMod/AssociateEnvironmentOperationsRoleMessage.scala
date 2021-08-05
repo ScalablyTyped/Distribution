@@ -18,19 +18,15 @@ trait AssociateEnvironmentOperationsRoleMessage extends StObject {
 }
 object AssociateEnvironmentOperationsRoleMessage {
   
-  @scala.inline
-  def apply(EnvironmentName: EnvironmentName, OperationsRole: OperationsRole): AssociateEnvironmentOperationsRoleMessage = {
+  inline def apply(EnvironmentName: EnvironmentName, OperationsRole: OperationsRole): AssociateEnvironmentOperationsRoleMessage = {
     val __obj = js.Dynamic.literal(EnvironmentName = EnvironmentName.asInstanceOf[js.Any], OperationsRole = OperationsRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateEnvironmentOperationsRoleMessage]
   }
   
-  @scala.inline
-  implicit class AssociateEnvironmentOperationsRoleMessageMutableBuilder[Self <: AssociateEnvironmentOperationsRoleMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateEnvironmentOperationsRoleMessage](x: Self) {
     
-    @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsRole(value: OperationsRole): Self = StObject.set(x, "OperationsRole", value.asInstanceOf[js.Any])
+    inline def setOperationsRole(value: OperationsRole): Self = StObject.set(x, "OperationsRole", value.asInstanceOf[js.Any])
   }
 }

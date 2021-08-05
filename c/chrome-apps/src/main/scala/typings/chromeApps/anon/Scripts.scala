@@ -10,22 +10,17 @@ trait Scripts extends StObject {
 }
 object Scripts {
   
-  @scala.inline
-  def apply(): Scripts = {
+  inline def apply(): Scripts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Scripts]
   }
   
-  @scala.inline
-  implicit class ScriptsMutableBuilder[Self <: Scripts] (val x: Self) extends AnyVal {
+  extension [Self <: Scripts](x: Self) {
     
-    @scala.inline
-    def setScripts(value: js.Array[String]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+    inline def setScripts(value: js.Array[String]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+    inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
     
-    @scala.inline
-    def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+    inline def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value :_*))
   }
 }

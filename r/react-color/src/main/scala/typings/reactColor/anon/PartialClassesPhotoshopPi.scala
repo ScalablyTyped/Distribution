@@ -11,19 +11,15 @@ trait PartialClassesPhotoshopPi extends StObject {
 }
 object PartialClassesPhotoshopPi {
   
-  @scala.inline
-  def apply(): PartialClassesPhotoshopPi = {
+  inline def apply(): PartialClassesPhotoshopPi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassesPhotoshopPi]
   }
   
-  @scala.inline
-  implicit class PartialClassesPhotoshopPiMutableBuilder[Self <: PartialClassesPhotoshopPi] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassesPhotoshopPi](x: Self) {
     
-    @scala.inline
-    def setDefault(value: PartialPhotoshopPickerSty): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: PartialPhotoshopPickerSty): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

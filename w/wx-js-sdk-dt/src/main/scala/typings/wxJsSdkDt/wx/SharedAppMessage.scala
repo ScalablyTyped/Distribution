@@ -29,28 +29,21 @@ trait SharedAppMessage
 }
 object SharedAppMessage {
   
-  @scala.inline
-  def apply(desc: String, link: String, title: String): SharedAppMessage = {
+  inline def apply(desc: String, link: String, title: String): SharedAppMessage = {
     val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedAppMessage]
   }
   
-  @scala.inline
-  implicit class SharedAppMessageMutableBuilder[Self <: SharedAppMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SharedAppMessage](x: Self) {
     
-    @scala.inline
-    def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
+    inline def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
+    inline def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

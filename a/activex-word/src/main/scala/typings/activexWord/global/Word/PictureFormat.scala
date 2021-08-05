@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.PictureFormat")
 @js.native
-class PictureFormat protected ()
+/* private */ class PictureFormat ()
   extends StObject
      with typings.activexWord.Word.PictureFormat {
   
@@ -57,7 +57,7 @@ class PictureFormat protected ()
   /* CompleteClass */
   var TransparentBackground: MsoTriState = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.PictureFormat_typekey")
   var WordDotPictureFormat_typekey: typings.activexWord.Word.PictureFormat = js.native
 }

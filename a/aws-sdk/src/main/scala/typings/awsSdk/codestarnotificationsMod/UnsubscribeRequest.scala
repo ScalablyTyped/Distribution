@@ -18,19 +18,15 @@ trait UnsubscribeRequest extends StObject {
 }
 object UnsubscribeRequest {
   
-  @scala.inline
-  def apply(Arn: NotificationRuleArn, TargetAddress: TargetAddress): UnsubscribeRequest = {
+  inline def apply(Arn: NotificationRuleArn, TargetAddress: TargetAddress): UnsubscribeRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], TargetAddress = TargetAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsubscribeRequest]
   }
   
-  @scala.inline
-  implicit class UnsubscribeRequestMutableBuilder[Self <: UnsubscribeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UnsubscribeRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAddress(value: TargetAddress): Self = StObject.set(x, "TargetAddress", value.asInstanceOf[js.Any])
+    inline def setTargetAddress(value: TargetAddress): Self = StObject.set(x, "TargetAddress", value.asInstanceOf[js.Any])
   }
 }

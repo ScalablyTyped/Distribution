@@ -15,22 +15,17 @@ trait IUSER_COUNT_CHANGE extends StObject {
 }
 object IUSER_COUNT_CHANGE {
   
-  @scala.inline
-  def apply(room: SFSRoom, sCount: Double, uCount: Double): IUSER_COUNT_CHANGE = {
+  inline def apply(room: SFSRoom, sCount: Double, uCount: Double): IUSER_COUNT_CHANGE = {
     val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any], sCount = sCount.asInstanceOf[js.Any], uCount = uCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUSER_COUNT_CHANGE]
   }
   
-  @scala.inline
-  implicit class IUSER_COUNT_CHANGEMutableBuilder[Self <: IUSER_COUNT_CHANGE] (val x: Self) extends AnyVal {
+  extension [Self <: IUSER_COUNT_CHANGE](x: Self) {
     
-    @scala.inline
-    def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSCount(value: Double): Self = StObject.set(x, "sCount", value.asInstanceOf[js.Any])
+    inline def setSCount(value: Double): Self = StObject.set(x, "sCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUCount(value: Double): Self = StObject.set(x, "uCount", value.asInstanceOf[js.Any])
+    inline def setUCount(value: Double): Self = StObject.set(x, "uCount", value.asInstanceOf[js.Any])
   }
 }

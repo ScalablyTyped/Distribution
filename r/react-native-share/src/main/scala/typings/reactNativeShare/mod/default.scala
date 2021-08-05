@@ -53,14 +53,10 @@ object default {
     /* "whatsapp" */ val WHATSAPP: typings.reactNativeShare.mod.Share.Social.WHATSAPP & String = js.native
   }
   
-  @scala.inline
-  def isPackageInstalled(packageName: String): js.Promise[ShareSingleReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("isPackageInstalled")(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ShareSingleReturn]]
+  inline def isPackageInstalled(packageName: String): js.Promise[ShareSingleReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("isPackageInstalled")(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ShareSingleReturn]]
   
-  @scala.inline
-  def open(options: MultipleOptions): js.Promise[OpenReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OpenReturn]]
-  @scala.inline
-  def open(options: Options): js.Promise[OpenReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OpenReturn]]
+  inline def open(options: MultipleOptions): js.Promise[OpenReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OpenReturn]]
+  inline def open(options: Options): js.Promise[OpenReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OpenReturn]]
   
-  @scala.inline
-  def shareSingle(options: OptionssocialSocial): js.Promise[ShareSingleReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("shareSingle")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ShareSingleReturn]]
+  inline def shareSingle(options: OptionssocialSocial): js.Promise[ShareSingleReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("shareSingle")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ShareSingleReturn]]
 }

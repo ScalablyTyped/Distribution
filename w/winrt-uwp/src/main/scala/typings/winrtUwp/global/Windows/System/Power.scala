@@ -31,72 +31,62 @@ object Power {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets the excessive usage level, expressed as a percentage of normal energy usage. */
     /* static member */
     @JSGlobal("Windows.System.Power.BackgroundEnergyManager.excessiveUsageLevel")
     @js.native
     def excessiveUsageLevel: Double = js.native
-    @scala.inline
-    def excessiveUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("excessiveUsageLevel")(x.asInstanceOf[js.Any])
+    inline def excessiveUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("excessiveUsageLevel")(x.asInstanceOf[js.Any])
     
     /** Gets the low usage level, expressed as a percentage of normal energy consumption. */
     /* static member */
     @JSGlobal("Windows.System.Power.BackgroundEnergyManager.lowUsageLevel")
     @js.native
     def lowUsageLevel: Double = js.native
-    @scala.inline
-    def lowUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lowUsageLevel")(x.asInstanceOf[js.Any])
+    inline def lowUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lowUsageLevel")(x.asInstanceOf[js.Any])
     
     /** Gets the maximum acceptable usage level, expressed as a percentage of normal energy consumption. */
     /* static member */
     @JSGlobal("Windows.System.Power.BackgroundEnergyManager.maxAcceptableUsageLevel")
     @js.native
     def maxAcceptableUsageLevel: Double = js.native
-    @scala.inline
-    def maxAcceptableUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxAcceptableUsageLevel")(x.asInstanceOf[js.Any])
+    inline def maxAcceptableUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxAcceptableUsageLevel")(x.asInstanceOf[js.Any])
     
     /** Gets the near-maximum acceptable usage level, expressed as a percentage of normal energy usage. */
     /* static member */
     @JSGlobal("Windows.System.Power.BackgroundEnergyManager.nearMaxAcceptableUsageLevel")
     @js.native
     def nearMaxAcceptableUsageLevel: Double = js.native
-    @scala.inline
-    def nearMaxAcceptableUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nearMaxAcceptableUsageLevel")(x.asInstanceOf[js.Any])
+    inline def nearMaxAcceptableUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nearMaxAcceptableUsageLevel")(x.asInstanceOf[js.Any])
     
     /** Gets the near-termination usage level, expressed as a percentage of normal energy usage. */
     /* static member */
     @JSGlobal("Windows.System.Power.BackgroundEnergyManager.nearTerminationUsageLevel")
     @js.native
     def nearTerminationUsageLevel: Double = js.native
-    @scala.inline
-    def nearTerminationUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nearTerminationUsageLevel")(x.asInstanceOf[js.Any])
+    inline def nearTerminationUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nearTerminationUsageLevel")(x.asInstanceOf[js.Any])
     
     /** Occurs when the background task's energy usage has increased significantly. */
     /* static member */
     @JSGlobal("Windows.System.Power.BackgroundEnergyManager.onrecentenergyusageincreased")
     @js.native
     def onrecentenergyusageincreased: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onrecentenergyusageincreased_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusageincreased")(x.asInstanceOf[js.Any])
+    inline def onrecentenergyusageincreased_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusageincreased")(x.asInstanceOf[js.Any])
     
     /** Occurs when the background task's energy usage has decreased to a low usage level. */
     /* static member */
     @JSGlobal("Windows.System.Power.BackgroundEnergyManager.onrecentenergyusagereturnedtolow")
     @js.native
     def onrecentenergyusagereturnedtolow: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onrecentenergyusagereturnedtolow_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusagereturnedtolow")(x.asInstanceOf[js.Any])
+    inline def onrecentenergyusagereturnedtolow_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusagereturnedtolow")(x.asInstanceOf[js.Any])
     
     /** Gets the energy usage of the app's background task for the current 30 minute period, expressed as a percentage of normal. */
     /* static member */
@@ -109,31 +99,25 @@ object Power {
     @JSGlobal("Windows.System.Power.BackgroundEnergyManager.recentEnergyUsageLevel")
     @js.native
     def recentEnergyUsageLevel: Double = js.native
-    @scala.inline
-    def recentEnergyUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recentEnergyUsageLevel")(x.asInstanceOf[js.Any])
+    inline def recentEnergyUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recentEnergyUsageLevel")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def recentEnergyUsage_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recentEnergyUsage")(x.asInstanceOf[js.Any])
+    inline def recentEnergyUsage_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recentEnergyUsage")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets the termination usage level, expressed as a percentage of normal energy usage. */
     /* static member */
     @JSGlobal("Windows.System.Power.BackgroundEnergyManager.terminationUsageLevel")
     @js.native
     def terminationUsageLevel: Double = js.native
-    @scala.inline
-    def terminationUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("terminationUsageLevel")(x.asInstanceOf[js.Any])
+    inline def terminationUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("terminationUsageLevel")(x.asInstanceOf[js.Any])
   }
   
   /** Indicates the status of the battery. */
@@ -173,21 +157,18 @@ object Power {
         * @return The total cumulative energy usage of the background task since the last reset, expressed as a percentage of normal.
         */
       /* static member */
-      @scala.inline
-      def computeTotalEnergyUsage(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTotalEnergyUsage")().asInstanceOf[Double]
+      inline def computeTotalEnergyUsage(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTotalEnergyUsage")().asInstanceOf[Double]
       
       /** Gets the device-specific conversion factor used to convert energy usage (mW) to a normalized percentage. */
       /* static member */
       @JSGlobal("Windows.System.Power.Diagnostics.BackgroundEnergyDiagnostics.deviceSpecificConversionFactor")
       @js.native
       def deviceSpecificConversionFactor: Double = js.native
-      @scala.inline
-      def deviceSpecificConversionFactor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceSpecificConversionFactor")(x.asInstanceOf[js.Any])
+      inline def deviceSpecificConversionFactor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceSpecificConversionFactor")(x.asInstanceOf[js.Any])
       
       /** Clears the value that represents the total cumulative energy usage of the background task since the last reset. */
       /* static member */
-      @scala.inline
-      def resetTotalEnergyUsage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetTotalEnergyUsage")().asInstanceOf[Unit]
+      inline def resetTotalEnergyUsage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetTotalEnergyUsage")().asInstanceOf[Unit]
     }
     
     /** Provides debugging APIs for calculating your app's foreground energy usage in real time. We recommend using these APIs only for debugging. */
@@ -207,21 +188,18 @@ object Power {
         * @return The total cumulative energy usage of the foreground app since the last reset, expressed as a percentage of normal.
         */
       /* static member */
-      @scala.inline
-      def computeTotalEnergyUsage(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTotalEnergyUsage")().asInstanceOf[Double]
+      inline def computeTotalEnergyUsage(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTotalEnergyUsage")().asInstanceOf[Double]
       
       /** Gets the device-specific conversion factor used to convert energy usage (mW) to a normalized percentage. */
       /* static member */
       @JSGlobal("Windows.System.Power.Diagnostics.ForegroundEnergyDiagnostics.deviceSpecificConversionFactor")
       @js.native
       def deviceSpecificConversionFactor: Double = js.native
-      @scala.inline
-      def deviceSpecificConversionFactor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceSpecificConversionFactor")(x.asInstanceOf[js.Any])
+      inline def deviceSpecificConversionFactor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceSpecificConversionFactor")(x.asInstanceOf[js.Any])
       
       /** Clears the value that represents the total cumulative energy usage of the foreground app since the last reset. */
       /* static member */
-      @scala.inline
-      def resetTotalEnergyUsage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetTotalEnergyUsage")().asInstanceOf[Unit]
+      inline def resetTotalEnergyUsage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetTotalEnergyUsage")().asInstanceOf[Unit]
     }
   }
   
@@ -253,64 +231,55 @@ object Power {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets the excessive usage level, expressed as a percentage of normal energy usage. */
     /* static member */
     @JSGlobal("Windows.System.Power.ForegroundEnergyManager.excessiveUsageLevel")
     @js.native
     def excessiveUsageLevel: Double = js.native
-    @scala.inline
-    def excessiveUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("excessiveUsageLevel")(x.asInstanceOf[js.Any])
+    inline def excessiveUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("excessiveUsageLevel")(x.asInstanceOf[js.Any])
     
     /** Gets the low usage level, expressed as a percentage of normal energy consumption. */
     /* static member */
     @JSGlobal("Windows.System.Power.ForegroundEnergyManager.lowUsageLevel")
     @js.native
     def lowUsageLevel: Double = js.native
-    @scala.inline
-    def lowUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lowUsageLevel")(x.asInstanceOf[js.Any])
+    inline def lowUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lowUsageLevel")(x.asInstanceOf[js.Any])
     
     /** Gets the maximum acceptable usage level, expressed as a percentage of normal energy consumption. */
     /* static member */
     @JSGlobal("Windows.System.Power.ForegroundEnergyManager.maxAcceptableUsageLevel")
     @js.native
     def maxAcceptableUsageLevel: Double = js.native
-    @scala.inline
-    def maxAcceptableUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxAcceptableUsageLevel")(x.asInstanceOf[js.Any])
+    inline def maxAcceptableUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxAcceptableUsageLevel")(x.asInstanceOf[js.Any])
     
     /** Gets the near-maximum acceptable usage level, expressed as a percentage of normal energy usage. */
     /* static member */
     @JSGlobal("Windows.System.Power.ForegroundEnergyManager.nearMaxAcceptableUsageLevel")
     @js.native
     def nearMaxAcceptableUsageLevel: Double = js.native
-    @scala.inline
-    def nearMaxAcceptableUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nearMaxAcceptableUsageLevel")(x.asInstanceOf[js.Any])
+    inline def nearMaxAcceptableUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nearMaxAcceptableUsageLevel")(x.asInstanceOf[js.Any])
     
     /** Occurs when the app's foreground energy usage has increased significantly. */
     /* static member */
     @JSGlobal("Windows.System.Power.ForegroundEnergyManager.onrecentenergyusageincreased")
     @js.native
     def onrecentenergyusageincreased: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onrecentenergyusageincreased_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusageincreased")(x.asInstanceOf[js.Any])
+    inline def onrecentenergyusageincreased_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusageincreased")(x.asInstanceOf[js.Any])
     
     /** Occurs when the app's energy usage has decreased to a low usage level. */
     /* static member */
     @JSGlobal("Windows.System.Power.ForegroundEnergyManager.onrecentenergyusagereturnedtolow")
     @js.native
     def onrecentenergyusagereturnedtolow: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onrecentenergyusagereturnedtolow_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusagereturnedtolow")(x.asInstanceOf[js.Any])
+    inline def onrecentenergyusagereturnedtolow_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusagereturnedtolow")(x.asInstanceOf[js.Any])
     
     /** Gets the nearest predefined energy level of the foreground app for the current 30 minute period, equal to LowUsageLevel , NearMaxAcceptableUsageLevel , MaxAcceptableUsageLevel , or ExcessiveUsageLevel . */
     /* static member */
@@ -323,23 +292,18 @@ object Power {
     @JSGlobal("Windows.System.Power.ForegroundEnergyManager.recentEnergyUsageLevel")
     @js.native
     def recentEnergyUsageLevel: Double = js.native
-    @scala.inline
-    def recentEnergyUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recentEnergyUsageLevel")(x.asInstanceOf[js.Any])
+    inline def recentEnergyUsageLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recentEnergyUsageLevel")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def recentEnergyUsage_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recentEnergyUsage")(x.asInstanceOf[js.Any])
+    inline def recentEnergyUsage_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recentEnergyUsage")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /** Provides access to information about a device's battery and power supply status. */
@@ -355,132 +319,110 @@ object Power {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_batterystatuschanged(`type`: batterystatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_batterystatuschanged(`type`: batterystatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_energysaverstatuschanged(`type`: energysaverstatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_energysaverstatuschanged(`type`: energysaverstatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_powersupplystatuschanged(`type`: powersupplystatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_powersupplystatuschanged(`type`: powersupplystatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_remainingchargepercentchanged(`type`: remainingchargepercentchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_remainingchargepercentchanged(`type`: remainingchargepercentchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_remainingdischargetimechanged(`type`: remainingdischargetimechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_remainingdischargetimechanged(`type`: remainingdischargetimechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets the device's battery status. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.batteryStatus")
     @js.native
     def batteryStatus: BatteryStatus = js.native
-    @scala.inline
-    def batteryStatus_=(x: BatteryStatus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("batteryStatus")(x.asInstanceOf[js.Any])
+    inline def batteryStatus_=(x: BatteryStatus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("batteryStatus")(x.asInstanceOf[js.Any])
     
     /** Gets battery saver status, indicating when to save energy. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.energySaverStatus")
     @js.native
     def energySaverStatus: EnergySaverStatus = js.native
-    @scala.inline
-    def energySaverStatus_=(x: EnergySaverStatus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("energySaverStatus")(x.asInstanceOf[js.Any])
+    inline def energySaverStatus_=(x: EnergySaverStatus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("energySaverStatus")(x.asInstanceOf[js.Any])
     
     /** Occurs when BatteryStatus changes. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.onbatterystatuschanged")
     @js.native
     def onbatterystatuschanged: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onbatterystatuschanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onbatterystatuschanged")(x.asInstanceOf[js.Any])
+    inline def onbatterystatuschanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onbatterystatuschanged")(x.asInstanceOf[js.Any])
     
     /** Occurs when EnergySaverStatus changes. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.onenergysaverstatuschanged")
     @js.native
     def onenergysaverstatuschanged: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onenergysaverstatuschanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onenergysaverstatuschanged")(x.asInstanceOf[js.Any])
+    inline def onenergysaverstatuschanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onenergysaverstatuschanged")(x.asInstanceOf[js.Any])
     
     /** Occurs when the PowerSupplyStatus changes. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.onpowersupplystatuschanged")
     @js.native
     def onpowersupplystatuschanged: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onpowersupplystatuschanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onpowersupplystatuschanged")(x.asInstanceOf[js.Any])
+    inline def onpowersupplystatuschanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onpowersupplystatuschanged")(x.asInstanceOf[js.Any])
     
     /** Occurs when RemainingChargePercent changes. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.onremainingchargepercentchanged")
     @js.native
     def onremainingchargepercentchanged: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onremainingchargepercentchanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onremainingchargepercentchanged")(x.asInstanceOf[js.Any])
+    inline def onremainingchargepercentchanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onremainingchargepercentchanged")(x.asInstanceOf[js.Any])
     
     /** Occurs when RemainingDischargeTime changes. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.onremainingdischargetimechanged")
     @js.native
     def onremainingdischargetimechanged: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onremainingdischargetimechanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onremainingdischargetimechanged")(x.asInstanceOf[js.Any])
+    inline def onremainingdischargetimechanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onremainingdischargetimechanged")(x.asInstanceOf[js.Any])
     
     /** Gets the device's power supply status. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.powerSupplyStatus")
     @js.native
     def powerSupplyStatus: PowerSupplyStatus = js.native
-    @scala.inline
-    def powerSupplyStatus_=(x: PowerSupplyStatus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("powerSupplyStatus")(x.asInstanceOf[js.Any])
+    inline def powerSupplyStatus_=(x: PowerSupplyStatus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("powerSupplyStatus")(x.asInstanceOf[js.Any])
     
     /** Gets the total percentage of charge remaining from all batteries connected to the device. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.remainingChargePercent")
     @js.native
     def remainingChargePercent: Double = js.native
-    @scala.inline
-    def remainingChargePercent_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remainingChargePercent")(x.asInstanceOf[js.Any])
+    inline def remainingChargePercent_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remainingChargePercent")(x.asInstanceOf[js.Any])
     
     /** Gets the total runtime remaining from all batteries connected to the device. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.remainingDischargeTime")
     @js.native
     def remainingDischargeTime: Double = js.native
-    @scala.inline
-    def remainingDischargeTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remainingDischargeTime")(x.asInstanceOf[js.Any])
+    inline def remainingDischargeTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remainingDischargeTime")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_batterystatuschanged(`type`: batterystatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_batterystatuschanged(`type`: batterystatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_energysaverstatuschanged(`type`: energysaverstatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_energysaverstatuschanged(`type`: energysaverstatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_powersupplystatuschanged(`type`: powersupplystatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_powersupplystatuschanged(`type`: powersupplystatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_remainingchargepercentchanged(`type`: remainingchargepercentchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_remainingchargepercentchanged(`type`: remainingchargepercentchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_remainingdischargetimechanged(`type`: remainingdischargetimechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_remainingdischargetimechanged(`type`: remainingdischargetimechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /** Represents the device's power supply status. */

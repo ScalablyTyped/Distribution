@@ -35,56 +35,40 @@ object mod {
   }
   object ConnectionOptions {
     
-    @scala.inline
-    def apply(): ConnectionOptions = {
+    inline def apply(): ConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    @scala.inline
-    implicit class ConnectionOptionsMutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setLocalTSAP(value: Double): Self = StObject.set(x, "localTSAP", value.asInstanceOf[js.Any])
+      inline def setLocalTSAP(value: Double): Self = StObject.set(x, "localTSAP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalTSAPUndefined: Self = StObject.set(x, "localTSAP", js.undefined)
+      inline def setLocalTSAPUndefined: Self = StObject.set(x, "localTSAP", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRack(value: Double): Self = StObject.set(x, "rack", value.asInstanceOf[js.Any])
+      inline def setRack(value: Double): Self = StObject.set(x, "rack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRackUndefined: Self = StObject.set(x, "rack", js.undefined)
+      inline def setRackUndefined: Self = StObject.set(x, "rack", js.undefined)
       
-      @scala.inline
-      def setRemoteTSAP(value: Double): Self = StObject.set(x, "remoteTSAP", value.asInstanceOf[js.Any])
+      inline def setRemoteTSAP(value: Double): Self = StObject.set(x, "remoteTSAP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteTSAPUndefined: Self = StObject.set(x, "remoteTSAP", js.undefined)
+      inline def setRemoteTSAPUndefined: Self = StObject.set(x, "remoteTSAP", js.undefined)
       
-      @scala.inline
-      def setSlot(value: Double): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+      inline def setSlot(value: Double): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+      inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -221,26 +205,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
   

@@ -9,6 +9,5 @@ object global {
   @JSGlobal("hopscotch")
   @js.native
   def hopscotch: HopscotchStatic = js.native
-  @scala.inline
-  def hopscotch_=(x: HopscotchStatic): Unit = js.Dynamic.global.updateDynamic("hopscotch")(x.asInstanceOf[js.Any])
+  inline def hopscotch_=(x: HopscotchStatic): Unit = js.Dynamic.global.updateDynamic("hopscotch")(x.asInstanceOf[js.Any])
 }

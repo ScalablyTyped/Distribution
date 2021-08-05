@@ -14,17 +14,14 @@ object operatorMod {
   }
   object Operator {
     
-    @scala.inline
-    def apply[T, R](call: (Subscriber[R], js.Any) => TeardownLogic): Operator[T, R] = {
+    inline def apply[T, R](call: (Subscriber[R], js.Any) => TeardownLogic): Operator[T, R] = {
       val __obj = js.Dynamic.literal(call = js.Any.fromFunction2(call))
       __obj.asInstanceOf[Operator[T, R]]
     }
     
-    @scala.inline
-    implicit class OperatorMutableBuilder[Self <: Operator[?, ?], T, R] (val x: Self & (Operator[T, R])) extends AnyVal {
+    extension [Self <: Operator[?, ?], T, R](x: Self & (Operator[T, R])) {
       
-      @scala.inline
-      def setCall(value: (Subscriber[R], js.Any) => TeardownLogic): Self = StObject.set(x, "call", js.Any.fromFunction2(value))
+      inline def setCall(value: (Subscriber[R], js.Any) => TeardownLogic): Self = StObject.set(x, "call", js.Any.fromFunction2(value))
     }
   }
 }

@@ -38,8 +38,7 @@ trait CodeCoverageStatistics extends StObject {
 }
 object CodeCoverageStatistics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     covered: Double,
     delta: Double,
     isDeltaAvailable: Boolean,
@@ -51,25 +50,18 @@ object CodeCoverageStatistics {
     __obj.asInstanceOf[CodeCoverageStatistics]
   }
   
-  @scala.inline
-  implicit class CodeCoverageStatisticsMutableBuilder[Self <: CodeCoverageStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: CodeCoverageStatistics](x: Self) {
     
-    @scala.inline
-    def setCovered(value: Double): Self = StObject.set(x, "covered", value.asInstanceOf[js.Any])
+    inline def setCovered(value: Double): Self = StObject.set(x, "covered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDeltaAvailable(value: Boolean): Self = StObject.set(x, "isDeltaAvailable", value.asInstanceOf[js.Any])
+    inline def setIsDeltaAvailable(value: Boolean): Self = StObject.set(x, "isDeltaAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

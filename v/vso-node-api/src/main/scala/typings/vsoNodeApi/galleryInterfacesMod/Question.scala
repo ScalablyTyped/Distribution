@@ -16,8 +16,7 @@ trait Question
 }
 object Question {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createdDate: Date,
     id: Double,
     responses: js.Array[Response],
@@ -30,13 +29,10 @@ object Question {
     __obj.asInstanceOf[Question]
   }
   
-  @scala.inline
-  implicit class QuestionMutableBuilder[Self <: Question] (val x: Self) extends AnyVal {
+  extension [Self <: Question](x: Self) {
     
-    @scala.inline
-    def setResponses(value: js.Array[Response]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[Response]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesVarargs(value: Response*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: Response*): Self = StObject.set(x, "responses", js.Array(value :_*))
   }
 }

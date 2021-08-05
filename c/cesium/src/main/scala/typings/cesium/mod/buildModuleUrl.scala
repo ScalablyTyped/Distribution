@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object buildModuleUrl {
   
-  @scala.inline
-  def apply(value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("cesium", "buildModuleUrl")
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setBaseUrl(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBaseUrl")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBaseUrl(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBaseUrl")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -16,22 +16,17 @@ trait SchemaGoogleWatcherV1ChangeBatch extends StObject {
 }
 object SchemaGoogleWatcherV1ChangeBatch {
   
-  @scala.inline
-  def apply(): SchemaGoogleWatcherV1ChangeBatch = {
+  inline def apply(): SchemaGoogleWatcherV1ChangeBatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleWatcherV1ChangeBatch]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleWatcherV1ChangeBatchMutableBuilder[Self <: SchemaGoogleWatcherV1ChangeBatch] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleWatcherV1ChangeBatch](x: Self) {
     
-    @scala.inline
-    def setChanges(value: js.Array[SchemaGoogleWatcherV1Change]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[SchemaGoogleWatcherV1Change]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
+    inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
     
-    @scala.inline
-    def setChangesVarargs(value: SchemaGoogleWatcherV1Change*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: SchemaGoogleWatcherV1Change*): Self = StObject.set(x, "changes", js.Array(value :_*))
   }
 }

@@ -14,8 +14,7 @@ trait Arguments
 }
 object Arguments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -39,10 +38,8 @@ object Arguments {
     __obj.asInstanceOf[Arguments]
   }
   
-  @scala.inline
-  implicit class ArgumentsMutableBuilder[Self <: Arguments] (val x: Self) extends AnyVal {
+  extension [Self <: Arguments](x: Self) {
     
-    @scala.inline
-    def setMap(value: Dictionary[Node]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: Dictionary[Node]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
   }
 }

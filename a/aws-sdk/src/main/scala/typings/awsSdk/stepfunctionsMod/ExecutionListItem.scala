@@ -38,34 +38,25 @@ trait ExecutionListItem extends StObject {
 }
 object ExecutionListItem {
   
-  @scala.inline
-  def apply(executionArn: Arn, name: Name, startDate: Timestamp, stateMachineArn: Arn, status: ExecutionStatus): ExecutionListItem = {
+  inline def apply(executionArn: Arn, name: Name, startDate: Timestamp, stateMachineArn: Arn, status: ExecutionStatus): ExecutionListItem = {
     val __obj = js.Dynamic.literal(executionArn = executionArn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], stateMachineArn = stateMachineArn.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionListItem]
   }
   
-  @scala.inline
-  implicit class ExecutionListItemMutableBuilder[Self <: ExecutionListItem] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionListItem](x: Self) {
     
-    @scala.inline
-    def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
+    inline def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDate(value: Timestamp): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
+    inline def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopDate(value: Timestamp): Self = StObject.set(x, "stopDate", value.asInstanceOf[js.Any])
+    inline def setStopDate(value: Timestamp): Self = StObject.set(x, "stopDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopDateUndefined: Self = StObject.set(x, "stopDate", js.undefined)
+    inline def setStopDateUndefined: Self = StObject.set(x, "stopDate", js.undefined)
   }
 }

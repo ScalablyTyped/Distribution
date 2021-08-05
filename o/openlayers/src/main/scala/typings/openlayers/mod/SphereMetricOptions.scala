@@ -22,25 +22,19 @@ trait SphereMetricOptions extends StObject {
 }
 object SphereMetricOptions {
   
-  @scala.inline
-  def apply(): SphereMetricOptions = {
+  inline def apply(): SphereMetricOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SphereMetricOptions]
   }
   
-  @scala.inline
-  implicit class SphereMetricOptionsMutableBuilder[Self <: SphereMetricOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SphereMetricOptions](x: Self) {
     
-    @scala.inline
-    def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

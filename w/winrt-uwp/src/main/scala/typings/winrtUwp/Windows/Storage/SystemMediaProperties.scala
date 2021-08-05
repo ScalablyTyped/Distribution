@@ -27,8 +27,7 @@ trait SystemMediaProperties extends StObject {
 }
 object SystemMediaProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duration: String,
     producer: String,
     publisher: String,
@@ -40,25 +39,18 @@ object SystemMediaProperties {
     __obj.asInstanceOf[SystemMediaProperties]
   }
   
-  @scala.inline
-  implicit class SystemMediaPropertiesMutableBuilder[Self <: SystemMediaProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SystemMediaProperties](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducer(value: String): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
+    inline def setProducer(value: String): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTitle(value: String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
+    inline def setSubTitle(value: String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriter(value: String): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
+    inline def setWriter(value: String): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

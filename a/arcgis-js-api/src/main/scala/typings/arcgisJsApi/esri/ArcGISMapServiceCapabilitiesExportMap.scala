@@ -47,8 +47,7 @@ trait ArcGISMapServiceCapabilitiesExportMap
 }
 object ArcGISMapServiceCapabilitiesExportMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -62,22 +61,16 @@ object ArcGISMapServiceCapabilitiesExportMap {
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesExportMap]
   }
   
-  @scala.inline
-  implicit class ArcGISMapServiceCapabilitiesExportMapMutableBuilder[Self <: ArcGISMapServiceCapabilitiesExportMap] (val x: Self) extends AnyVal {
+  extension [Self <: ArcGISMapServiceCapabilitiesExportMap](x: Self) {
     
-    @scala.inline
-    def setSupportsDynamicLayers(value: Boolean): Self = StObject.set(x, "supportsDynamicLayers", value.asInstanceOf[js.Any])
+    inline def setSupportsDynamicLayers(value: Boolean): Self = StObject.set(x, "supportsDynamicLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsModification(value: Boolean): Self = StObject.set(x, "supportsModification", value.asInstanceOf[js.Any])
+    inline def setSupportsModification(value: Boolean): Self = StObject.set(x, "supportsModification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsSublayerDefinitionExpression(value: Boolean): Self = StObject.set(x, "supportsSublayerDefinitionExpression", value.asInstanceOf[js.Any])
+    inline def setSupportsSublayerDefinitionExpression(value: Boolean): Self = StObject.set(x, "supportsSublayerDefinitionExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsSublayerVisibility(value: Boolean): Self = StObject.set(x, "supportsSublayerVisibility", value.asInstanceOf[js.Any])
+    inline def setSupportsSublayerVisibility(value: Boolean): Self = StObject.set(x, "supportsSublayerVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsSublayersChanges(value: Boolean): Self = StObject.set(x, "supportsSublayersChanges", value.asInstanceOf[js.Any])
+    inline def setSupportsSublayersChanges(value: Boolean): Self = StObject.set(x, "supportsSublayersChanges", value.asInstanceOf[js.Any])
   }
 }

@@ -42,20 +42,16 @@ object placeMod {
   }
   object PlaceOptions {
     
-    @scala.inline
-    def apply(context: String, prompt: String): PlaceOptions = {
+    inline def apply(context: String, prompt: String): PlaceOptions = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlaceOptions]
     }
     
-    @scala.inline
-    implicit class PlaceOptionsMutableBuilder[Self <: PlaceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PlaceOptions](x: Self) {
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     }
   }
 }

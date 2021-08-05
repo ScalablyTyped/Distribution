@@ -36,8 +36,7 @@ object anon {
   }
   object CopyWithin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       copyWithin: scala.Boolean,
       entries: scala.Boolean,
       fill: scala.Boolean,
@@ -50,29 +49,21 @@ object anon {
       __obj.asInstanceOf[CopyWithin]
     }
     
-    @scala.inline
-    implicit class CopyWithinMutableBuilder[Self <: CopyWithin] (val x: Self) extends AnyVal {
+    extension [Self <: CopyWithin](x: Self) {
       
-      @scala.inline
-      def setCopyWithin(value: scala.Boolean): Self = StObject.set(x, "copyWithin", value.asInstanceOf[js.Any])
+      inline def setCopyWithin(value: scala.Boolean): Self = StObject.set(x, "copyWithin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntries(value: scala.Boolean): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: scala.Boolean): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFill(value: scala.Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: scala.Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFind(value: scala.Boolean): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
+      inline def setFind(value: scala.Boolean): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindIndex(value: scala.Boolean): Self = StObject.set(x, "findIndex", value.asInstanceOf[js.Any])
+      inline def setFindIndex(value: scala.Boolean): Self = StObject.set(x, "findIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeys(value: scala.Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: scala.Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: scala.Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: scala.Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,20 +75,16 @@ object anon {
   }
   object Done {
     
-    @scala.inline
-    def apply[Arr](done: Arr, recur: Arr): Done[Arr] = {
+    inline def apply[Arr](done: Arr, recur: Arr): Done[Arr] = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], recur = recur.asInstanceOf[js.Any])
       __obj.asInstanceOf[Done[Arr]]
     }
     
-    @scala.inline
-    implicit class DoneMutableBuilder[Self <: Done[?], Arr] (val x: Self & Done[Arr]) extends AnyVal {
+    extension [Self <: Done[?], Arr](x: Self & Done[Arr]) {
       
-      @scala.inline
-      def setDone(value: Arr): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: Arr): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecur(value: Arr): Self = StObject.set(x, "recur", value.asInstanceOf[js.Any])
+      inline def setRecur(value: Arr): Self = StObject.set(x, "recur", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,17 +94,14 @@ object anon {
   }
   object HighWaterMark {
     
-    @scala.inline
-    def apply(highWaterMark: Double): HighWaterMark = {
+    inline def apply(highWaterMark: Double): HighWaterMark = {
       val __obj = js.Dynamic.literal(highWaterMark = highWaterMark.asInstanceOf[js.Any])
       __obj.asInstanceOf[HighWaterMark]
     }
     
-    @scala.inline
-    implicit class HighWaterMarkMutableBuilder[Self <: HighWaterMark] (val x: Self) extends AnyVal {
+    extension [Self <: HighWaterMark](x: Self) {
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,17 +111,14 @@ object anon {
   }
   object Item {
     
-    @scala.inline
-    def apply[T](Item: js.Any => T): Item[T] = {
+    inline def apply[T](Item: js.Any => T): Item[T] = {
       val __obj = js.Dynamic.literal(Item = js.Any.fromFunction1(Item))
       __obj.asInstanceOf[Item[T]]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item[?], T] (val x: Self & Item[T]) extends AnyVal {
+    extension [Self <: Item[?], T](x: Self & Item[T]) {
       
-      @scala.inline
-      def setItem(value: js.Any => T): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+      inline def setItem(value: js.Any => T): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     }
   }
   
@@ -149,20 +130,16 @@ object anon {
   }
   object Length {
     
-    @scala.inline
-    def apply(Item: Double => java.lang.String, length: Double): Length = {
+    inline def apply(Item: Double => java.lang.String, length: Double): Length = {
       val __obj = js.Dynamic.literal(Item = js.Any.fromFunction1(Item), length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[Length]
     }
     
-    @scala.inline
-    implicit class LengthMutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
+    extension [Self <: Length](x: Self) {
       
-      @scala.inline
-      def setItem(value: Double => java.lang.String): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+      inline def setItem(value: Double => java.lang.String): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,17 +163,14 @@ object anon {
   }
   object Mode {
     
-    @scala.inline
-    def apply(): Mode = {
+    inline def apply(): Mode = {
       val __obj = js.Dynamic.literal(mode = "byob")
       __obj.asInstanceOf[Mode]
     }
     
-    @scala.inline
-    implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+    extension [Self <: Mode](x: Self) {
       
-      @scala.inline
-      def setMode(value: byob): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: byob): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -208,20 +182,16 @@ object anon {
   }
   object Proxy {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](proxy: T, revoke: () => Unit): Proxy[T] = {
+    inline def apply[T /* <: js.Object */](proxy: T, revoke: () => Unit): Proxy[T] = {
       val __obj = js.Dynamic.literal(proxy = proxy.asInstanceOf[js.Any], revoke = js.Any.fromFunction0(revoke))
       __obj.asInstanceOf[Proxy[T]]
     }
     
-    @scala.inline
-    implicit class ProxyMutableBuilder[Self <: Proxy[?], T /* <: js.Object */] (val x: Self & Proxy[T]) extends AnyVal {
+    extension [Self <: Proxy[?], T /* <: js.Object */](x: Self & Proxy[T]) {
       
-      @scala.inline
-      def setProxy(value: T): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: T): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevoke(value: () => Unit): Self = StObject.set(x, "revoke", js.Any.fromFunction0(value))
+      inline def setRevoke(value: () => Unit): Self = StObject.set(x, "revoke", js.Any.fromFunction0(value))
     }
   }
   
@@ -233,20 +203,16 @@ object anon {
   }
   object Readable {
     
-    @scala.inline
-    def apply[R, T](readable: ReadableStream[T], writable: WritableStream[R]): Readable[R, T] = {
+    inline def apply[R, T](readable: ReadableStream[T], writable: WritableStream[R]): Readable[R, T] = {
       val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
       __obj.asInstanceOf[Readable[R, T]]
     }
     
-    @scala.inline
-    implicit class ReadableMutableBuilder[Self <: Readable[?, ?], R, T] (val x: Self & (Readable[R, T])) extends AnyVal {
+    extension [Self <: Readable[?, ?], R, T](x: Self & (Readable[R, T])) {
       
-      @scala.inline
-      def setReadable(value: ReadableStream[T]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: ReadableStream[T]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritable(value: WritableStream[R]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      inline def setWritable(value: WritableStream[R]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,23 +238,18 @@ object anon {
   }
   object Size {
     
-    @scala.inline
-    def apply(size: Unit): Size = {
+    inline def apply(size: Unit): Size = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Size]
     }
     
-    @scala.inline
-    implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+    extension [Self <: Size](x: Self) {
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      @scala.inline
-      def setSize(value: Unit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Unit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   

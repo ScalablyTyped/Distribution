@@ -13,16 +13,13 @@ trait StopNotebookExecutionInput extends StObject {
 }
 object StopNotebookExecutionInput {
   
-  @scala.inline
-  def apply(NotebookExecutionId: XmlStringMaxLen256): StopNotebookExecutionInput = {
+  inline def apply(NotebookExecutionId: XmlStringMaxLen256): StopNotebookExecutionInput = {
     val __obj = js.Dynamic.literal(NotebookExecutionId = NotebookExecutionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopNotebookExecutionInput]
   }
   
-  @scala.inline
-  implicit class StopNotebookExecutionInputMutableBuilder[Self <: StopNotebookExecutionInput] (val x: Self) extends AnyVal {
+  extension [Self <: StopNotebookExecutionInput](x: Self) {
     
-    @scala.inline
-    def setNotebookExecutionId(value: XmlStringMaxLen256): Self = StObject.set(x, "NotebookExecutionId", value.asInstanceOf[js.Any])
+    inline def setNotebookExecutionId(value: XmlStringMaxLen256): Self = StObject.set(x, "NotebookExecutionId", value.asInstanceOf[js.Any])
   }
 }

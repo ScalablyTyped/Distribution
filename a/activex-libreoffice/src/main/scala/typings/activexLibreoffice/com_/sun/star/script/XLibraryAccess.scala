@@ -58,8 +58,7 @@ trait XLibraryAccess
 }
 object XLibraryAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ModuleNames: SafeArray[String],
     acquire: () => Unit,
     getFunctionCode: String => SafeArray[Double],
@@ -76,31 +75,22 @@ object XLibraryAccess {
     __obj.asInstanceOf[XLibraryAccess]
   }
   
-  @scala.inline
-  implicit class XLibraryAccessMutableBuilder[Self <: XLibraryAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XLibraryAccess](x: Self) {
     
-    @scala.inline
-    def setGetFunctionCode(value: String => SafeArray[Double]): Self = StObject.set(x, "getFunctionCode", js.Any.fromFunction1(value))
+    inline def setGetFunctionCode(value: String => SafeArray[Double]): Self = StObject.set(x, "getFunctionCode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFunctionSource(value: String => String): Self = StObject.set(x, "getFunctionSource", js.Any.fromFunction1(value))
+    inline def setGetFunctionSource(value: String => String): Self = StObject.set(x, "getFunctionSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetModuleCode(value: String => SafeArray[Double]): Self = StObject.set(x, "getModuleCode", js.Any.fromFunction1(value))
+    inline def setGetModuleCode(value: String => SafeArray[Double]): Self = StObject.set(x, "getModuleCode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetModuleNames(value: () => SafeArray[String]): Self = StObject.set(x, "getModuleNames", js.Any.fromFunction0(value))
+    inline def setGetModuleNames(value: () => SafeArray[String]): Self = StObject.set(x, "getModuleNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetModuleSource(value: String => String): Self = StObject.set(x, "getModuleSource", js.Any.fromFunction1(value))
+    inline def setGetModuleSource(value: String => String): Self = StObject.set(x, "getModuleSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsFunction(value: String => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
+    inline def setIsFunction(value: String => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsValidPath(value: String => Boolean): Self = StObject.set(x, "isValidPath", js.Any.fromFunction1(value))
+    inline def setIsValidPath(value: String => Boolean): Self = StObject.set(x, "isValidPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setModuleNames(value: SafeArray[String]): Self = StObject.set(x, "ModuleNames", value.asInstanceOf[js.Any])
+    inline def setModuleNames(value: SafeArray[String]): Self = StObject.set(x, "ModuleNames", value.asInstanceOf[js.Any])
   }
 }

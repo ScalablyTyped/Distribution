@@ -10,8 +10,7 @@ trait XGridProps
      with RowProps
 object XGridProps {
   
-  @scala.inline
-  def apply(): XGridProps = {
+  inline def apply(): XGridProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XGridProps]
   }

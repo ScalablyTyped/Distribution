@@ -13,14 +13,10 @@ object getInstancesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getInstances(): js.Promise[GetInstancesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstances")().asInstanceOf[js.Promise[GetInstancesResult]]
-  @scala.inline
-  def getInstances(args: Unit, opts: InvokeOptions): js.Promise[GetInstancesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstances")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstancesResult]]
-  @scala.inline
-  def getInstances(args: GetInstancesArgs): js.Promise[GetInstancesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstances")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstancesResult]]
-  @scala.inline
-  def getInstances(args: GetInstancesArgs, opts: InvokeOptions): js.Promise[GetInstancesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstances")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstancesResult]]
+  inline def getInstances(): js.Promise[GetInstancesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstances")().asInstanceOf[js.Promise[GetInstancesResult]]
+  inline def getInstances(args: Unit, opts: InvokeOptions): js.Promise[GetInstancesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstances")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstancesResult]]
+  inline def getInstances(args: GetInstancesArgs): js.Promise[GetInstancesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstances")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstancesResult]]
+  inline def getInstances(args: GetInstancesArgs, opts: InvokeOptions): js.Promise[GetInstancesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstances")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstancesResult]]
   
   trait GetInstancesArgs extends StObject {
     
@@ -44,38 +40,28 @@ object getInstancesMod {
   }
   object GetInstancesArgs {
     
-    @scala.inline
-    def apply(): GetInstancesArgs = {
+    inline def apply(): GetInstancesArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetInstancesArgs]
     }
     
-    @scala.inline
-    implicit class GetInstancesArgsMutableBuilder[Self <: GetInstancesArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetInstancesArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetInstancesFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetInstancesFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetInstancesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetInstancesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setInstanceStateNames(value: js.Array[String]): Self = StObject.set(x, "instanceStateNames", value.asInstanceOf[js.Any])
+      inline def setInstanceStateNames(value: js.Array[String]): Self = StObject.set(x, "instanceStateNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceStateNamesUndefined: Self = StObject.set(x, "instanceStateNames", js.undefined)
+      inline def setInstanceStateNamesUndefined: Self = StObject.set(x, "instanceStateNames", js.undefined)
       
-      @scala.inline
-      def setInstanceStateNamesVarargs(value: String*): Self = StObject.set(x, "instanceStateNames", js.Array(value :_*))
+      inline def setInstanceStateNamesVarargs(value: String*): Self = StObject.set(x, "instanceStateNames", js.Array(value :_*))
       
-      @scala.inline
-      def setInstanceTags(value: StringDictionary[String]): Self = StObject.set(x, "instanceTags", value.asInstanceOf[js.Any])
+      inline def setInstanceTags(value: StringDictionary[String]): Self = StObject.set(x, "instanceTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTagsUndefined: Self = StObject.set(x, "instanceTags", js.undefined)
+      inline def setInstanceTagsUndefined: Self = StObject.set(x, "instanceTags", js.undefined)
     }
   }
   
@@ -109,8 +95,7 @@ object getInstancesMod {
   }
   object GetInstancesResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       ids: js.Array[String],
       instanceTags: StringDictionary[String],
@@ -121,50 +106,35 @@ object getInstancesMod {
       __obj.asInstanceOf[GetInstancesResult]
     }
     
-    @scala.inline
-    implicit class GetInstancesResultMutableBuilder[Self <: GetInstancesResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetInstancesResult](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInstancesFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInstancesFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetInstancesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetInstancesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setInstanceStateNames(value: js.Array[String]): Self = StObject.set(x, "instanceStateNames", value.asInstanceOf[js.Any])
+      inline def setInstanceStateNames(value: js.Array[String]): Self = StObject.set(x, "instanceStateNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceStateNamesUndefined: Self = StObject.set(x, "instanceStateNames", js.undefined)
+      inline def setInstanceStateNamesUndefined: Self = StObject.set(x, "instanceStateNames", js.undefined)
       
-      @scala.inline
-      def setInstanceStateNamesVarargs(value: String*): Self = StObject.set(x, "instanceStateNames", js.Array(value :_*))
+      inline def setInstanceStateNamesVarargs(value: String*): Self = StObject.set(x, "instanceStateNames", js.Array(value :_*))
       
-      @scala.inline
-      def setInstanceTags(value: StringDictionary[String]): Self = StObject.set(x, "instanceTags", value.asInstanceOf[js.Any])
+      inline def setInstanceTags(value: StringDictionary[String]): Self = StObject.set(x, "instanceTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateIps(value: js.Array[String]): Self = StObject.set(x, "privateIps", value.asInstanceOf[js.Any])
+      inline def setPrivateIps(value: js.Array[String]): Self = StObject.set(x, "privateIps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateIpsVarargs(value: String*): Self = StObject.set(x, "privateIps", js.Array(value :_*))
+      inline def setPrivateIpsVarargs(value: String*): Self = StObject.set(x, "privateIps", js.Array(value :_*))
       
-      @scala.inline
-      def setPublicIps(value: js.Array[String]): Self = StObject.set(x, "publicIps", value.asInstanceOf[js.Any])
+      inline def setPublicIps(value: js.Array[String]): Self = StObject.set(x, "publicIps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicIpsVarargs(value: String*): Self = StObject.set(x, "publicIps", js.Array(value :_*))
+      inline def setPublicIpsVarargs(value: String*): Self = StObject.set(x, "publicIps", js.Array(value :_*))
     }
   }
 }

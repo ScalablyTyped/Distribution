@@ -56,8 +56,7 @@ trait IgGridFeatureChooserMethods extends StObject {
 }
 object IgGridFeatureChooserMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeGlobalLanguage: () => Unit,
     changeGlobalRegional: () => Unit,
     changeLocale: () => Unit,
@@ -72,34 +71,24 @@ object IgGridFeatureChooserMethods {
     __obj.asInstanceOf[IgGridFeatureChooserMethods]
   }
   
-  @scala.inline
-  implicit class IgGridFeatureChooserMethodsMutableBuilder[Self <: IgGridFeatureChooserMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridFeatureChooserMethods](x: Self) {
     
-    @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
+    inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
+    inline def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
+    inline def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroy(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction2(value))
+    inline def setDestroy(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDropDownByColumnKey(value: String => Unit): Self = StObject.set(x, "getDropDownByColumnKey", js.Any.fromFunction1(value))
+    inline def setGetDropDownByColumnKey(value: String => Unit): Self = StObject.set(x, "getDropDownByColumnKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHideDropDown(value: String => Unit): Self = StObject.set(x, "hideDropDown", js.Any.fromFunction1(value))
+    inline def setHideDropDown(value: String => Unit): Self = StObject.set(x, "hideDropDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShouldShowFeatureIcon(value: js.Object => Unit): Self = StObject.set(x, "shouldShowFeatureIcon", js.Any.fromFunction1(value))
+    inline def setShouldShowFeatureIcon(value: js.Object => Unit): Self = StObject.set(x, "shouldShowFeatureIcon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowDropDown(value: String => Unit): Self = StObject.set(x, "showDropDown", js.Any.fromFunction1(value))
+    inline def setShowDropDown(value: String => Unit): Self = StObject.set(x, "showDropDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleDropDown(value: String => Unit): Self = StObject.set(x, "toggleDropDown", js.Any.fromFunction1(value))
+    inline def setToggleDropDown(value: String => Unit): Self = StObject.set(x, "toggleDropDown", js.Any.fromFunction1(value))
   }
 }

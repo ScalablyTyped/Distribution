@@ -54,20 +54,16 @@ object mod {
   }
   object AttributeConverter {
     
-    @scala.inline
-    def apply(convert: (String, js.Any) => String, test: (String, js.Any) => Boolean): AttributeConverter = {
+    inline def apply(convert: (String, js.Any) => String, test: (String, js.Any) => Boolean): AttributeConverter = {
       val __obj = js.Dynamic.literal(convert = js.Any.fromFunction2(convert), test = js.Any.fromFunction2(test))
       __obj.asInstanceOf[AttributeConverter]
     }
     
-    @scala.inline
-    implicit class AttributeConverterMutableBuilder[Self <: AttributeConverter] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeConverter](x: Self) {
       
-      @scala.inline
-      def setConvert(value: (String, js.Any) => String): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
+      inline def setConvert(value: (String, js.Any) => String): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTest(value: (String, js.Any) => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction2(value))
+      inline def setTest(value: (String, js.Any) => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction2(value))
     }
   }
   
@@ -207,125 +203,88 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArrayAccessForm(value: property | none): Self = StObject.set(x, "arrayAccessForm", value.asInstanceOf[js.Any])
+      inline def setArrayAccessForm(value: property | none): Self = StObject.set(x, "arrayAccessForm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayAccessFormPaths(
+      inline def setArrayAccessFormPaths(
         value: js.Array[
               String | RegExp | (js.Function2[/* elementName */ String, /* elementPath */ String, Boolean])
             ]
       ): Self = StObject.set(x, "arrayAccessFormPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayAccessFormPathsUndefined: Self = StObject.set(x, "arrayAccessFormPaths", js.undefined)
+      inline def setArrayAccessFormPathsUndefined: Self = StObject.set(x, "arrayAccessFormPaths", js.undefined)
       
-      @scala.inline
-      def setArrayAccessFormPathsVarargs(
+      inline def setArrayAccessFormPathsVarargs(
         value: (String | RegExp | (js.Function2[/* elementName */ String, /* elementPath */ String, Boolean]))*
       ): Self = StObject.set(x, "arrayAccessFormPaths", js.Array(value :_*))
       
-      @scala.inline
-      def setArrayAccessFormUndefined: Self = StObject.set(x, "arrayAccessForm", js.undefined)
+      inline def setArrayAccessFormUndefined: Self = StObject.set(x, "arrayAccessForm", js.undefined)
       
-      @scala.inline
-      def setAttributeConverters(value: js.Array[AttributeConverter]): Self = StObject.set(x, "attributeConverters", value.asInstanceOf[js.Any])
+      inline def setAttributeConverters(value: js.Array[AttributeConverter]): Self = StObject.set(x, "attributeConverters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeConvertersUndefined: Self = StObject.set(x, "attributeConverters", js.undefined)
+      inline def setAttributeConvertersUndefined: Self = StObject.set(x, "attributeConverters", js.undefined)
       
-      @scala.inline
-      def setAttributeConvertersVarargs(value: AttributeConverter*): Self = StObject.set(x, "attributeConverters", js.Array(value :_*))
+      inline def setAttributeConvertersVarargs(value: AttributeConverter*): Self = StObject.set(x, "attributeConverters", js.Array(value :_*))
       
-      @scala.inline
-      def setAttributePrefix(value: String): Self = StObject.set(x, "attributePrefix", value.asInstanceOf[js.Any])
+      inline def setAttributePrefix(value: String): Self = StObject.set(x, "attributePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributePrefixUndefined: Self = StObject.set(x, "attributePrefix", js.undefined)
+      inline def setAttributePrefixUndefined: Self = StObject.set(x, "attributePrefix", js.undefined)
       
-      @scala.inline
-      def setDatetimeAccessFormPaths(value: js.Array[String | RegExp | (js.Function1[/* elementPath */ String, Boolean])]): Self = StObject.set(x, "datetimeAccessFormPaths", value.asInstanceOf[js.Any])
+      inline def setDatetimeAccessFormPaths(value: js.Array[String | RegExp | (js.Function1[/* elementPath */ String, Boolean])]): Self = StObject.set(x, "datetimeAccessFormPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatetimeAccessFormPathsUndefined: Self = StObject.set(x, "datetimeAccessFormPaths", js.undefined)
+      inline def setDatetimeAccessFormPathsUndefined: Self = StObject.set(x, "datetimeAccessFormPaths", js.undefined)
       
-      @scala.inline
-      def setDatetimeAccessFormPathsVarargs(value: (String | RegExp | (js.Function1[/* elementPath */ String, Boolean]))*): Self = StObject.set(x, "datetimeAccessFormPaths", js.Array(value :_*))
+      inline def setDatetimeAccessFormPathsVarargs(value: (String | RegExp | (js.Function1[/* elementPath */ String, Boolean]))*): Self = StObject.set(x, "datetimeAccessFormPaths", js.Array(value :_*))
       
-      @scala.inline
-      def setEmptyNodeForm(value: `object` | text): Self = StObject.set(x, "emptyNodeForm", value.asInstanceOf[js.Any])
+      inline def setEmptyNodeForm(value: `object` | text): Self = StObject.set(x, "emptyNodeForm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyNodeFormUndefined: Self = StObject.set(x, "emptyNodeForm", js.undefined)
+      inline def setEmptyNodeFormUndefined: Self = StObject.set(x, "emptyNodeForm", js.undefined)
       
-      @scala.inline
-      def setEnableToStringFunc(value: Boolean): Self = StObject.set(x, "enableToStringFunc", value.asInstanceOf[js.Any])
+      inline def setEnableToStringFunc(value: Boolean): Self = StObject.set(x, "enableToStringFunc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableToStringFuncUndefined: Self = StObject.set(x, "enableToStringFunc", js.undefined)
+      inline def setEnableToStringFuncUndefined: Self = StObject.set(x, "enableToStringFunc", js.undefined)
       
-      @scala.inline
-      def setEscapeMode(value: Boolean): Self = StObject.set(x, "escapeMode", value.asInstanceOf[js.Any])
+      inline def setEscapeMode(value: Boolean): Self = StObject.set(x, "escapeMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeModeUndefined: Self = StObject.set(x, "escapeMode", js.undefined)
+      inline def setEscapeModeUndefined: Self = StObject.set(x, "escapeMode", js.undefined)
       
-      @scala.inline
-      def setIgnoreRoot(value: Boolean): Self = StObject.set(x, "ignoreRoot", value.asInstanceOf[js.Any])
+      inline def setIgnoreRoot(value: Boolean): Self = StObject.set(x, "ignoreRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreRootUndefined: Self = StObject.set(x, "ignoreRoot", js.undefined)
+      inline def setIgnoreRootUndefined: Self = StObject.set(x, "ignoreRoot", js.undefined)
       
-      @scala.inline
-      def setKeepCData(value: Boolean): Self = StObject.set(x, "keepCData", value.asInstanceOf[js.Any])
+      inline def setKeepCData(value: Boolean): Self = StObject.set(x, "keepCData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepCDataUndefined: Self = StObject.set(x, "keepCData", js.undefined)
+      inline def setKeepCDataUndefined: Self = StObject.set(x, "keepCData", js.undefined)
       
-      @scala.inline
-      def setKeepText(value: Boolean): Self = StObject.set(x, "keepText", value.asInstanceOf[js.Any])
+      inline def setKeepText(value: Boolean): Self = StObject.set(x, "keepText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepTextUndefined: Self = StObject.set(x, "keepText", js.undefined)
+      inline def setKeepTextUndefined: Self = StObject.set(x, "keepText", js.undefined)
       
-      @scala.inline
-      def setSelfClosingElements(value: Boolean): Self = StObject.set(x, "selfClosingElements", value.asInstanceOf[js.Any])
+      inline def setSelfClosingElements(value: Boolean): Self = StObject.set(x, "selfClosingElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfClosingElementsUndefined: Self = StObject.set(x, "selfClosingElements", js.undefined)
+      inline def setSelfClosingElementsUndefined: Self = StObject.set(x, "selfClosingElements", js.undefined)
       
-      @scala.inline
-      def setSkipEmptyTextNodesForObj(value: Boolean): Self = StObject.set(x, "skipEmptyTextNodesForObj", value.asInstanceOf[js.Any])
+      inline def setSkipEmptyTextNodesForObj(value: Boolean): Self = StObject.set(x, "skipEmptyTextNodesForObj", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipEmptyTextNodesForObjUndefined: Self = StObject.set(x, "skipEmptyTextNodesForObj", js.undefined)
+      inline def setSkipEmptyTextNodesForObjUndefined: Self = StObject.set(x, "skipEmptyTextNodesForObj", js.undefined)
       
-      @scala.inline
-      def setStripWhitespaces(value: Boolean): Self = StObject.set(x, "stripWhitespaces", value.asInstanceOf[js.Any])
+      inline def setStripWhitespaces(value: Boolean): Self = StObject.set(x, "stripWhitespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripWhitespacesUndefined: Self = StObject.set(x, "stripWhitespaces", js.undefined)
+      inline def setStripWhitespacesUndefined: Self = StObject.set(x, "stripWhitespaces", js.undefined)
       
-      @scala.inline
-      def setUseDoubleQuotes(value: Boolean): Self = StObject.set(x, "useDoubleQuotes", value.asInstanceOf[js.Any])
+      inline def setUseDoubleQuotes(value: Boolean): Self = StObject.set(x, "useDoubleQuotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseDoubleQuotesUndefined: Self = StObject.set(x, "useDoubleQuotes", js.undefined)
+      inline def setUseDoubleQuotesUndefined: Self = StObject.set(x, "useDoubleQuotes", js.undefined)
       
-      @scala.inline
-      def setXmldomOptions(value: `object`): Self = StObject.set(x, "xmldomOptions", value.asInstanceOf[js.Any])
+      inline def setXmldomOptions(value: `object`): Self = StObject.set(x, "xmldomOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmldomOptionsUndefined: Self = StObject.set(x, "xmldomOptions", js.undefined)
+      inline def setXmldomOptionsUndefined: Self = StObject.set(x, "xmldomOptions", js.undefined)
     }
   }
   

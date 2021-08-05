@@ -32,13 +32,12 @@ trait OMathMat extends StObject {
   
   val Rows: OMathMatRows
   
-  @JSName("Word.OMathMat_typekey")
+  /* private */ @JSName("Word.OMathMat_typekey")
   var WordDotOMathMat_typekey: OMathMat
 }
 object OMathMat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Align: WdOMathVertAlignType,
     Application: Application,
     Cell: (Double, Double) => OMath,
@@ -59,49 +58,34 @@ object OMathMat {
     __obj.asInstanceOf[OMathMat]
   }
   
-  @scala.inline
-  implicit class OMathMatMutableBuilder[Self <: OMathMat] (val x: Self) extends AnyVal {
+  extension [Self <: OMathMat](x: Self) {
     
-    @scala.inline
-    def setAlign(value: WdOMathVertAlignType): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: WdOMathVertAlignType): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCell(value: (Double, Double) => OMath): Self = StObject.set(x, "Cell", js.Any.fromFunction2(value))
+    inline def setCell(value: (Double, Double) => OMath): Self = StObject.set(x, "Cell", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColGap(value: Double): Self = StObject.set(x, "ColGap", value.asInstanceOf[js.Any])
+    inline def setColGap(value: Double): Self = StObject.set(x, "ColGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColGapRule(value: WdOMathSpacingRule): Self = StObject.set(x, "ColGapRule", value.asInstanceOf[js.Any])
+    inline def setColGapRule(value: WdOMathSpacingRule): Self = StObject.set(x, "ColGapRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColSpacing(value: Double): Self = StObject.set(x, "ColSpacing", value.asInstanceOf[js.Any])
+    inline def setColSpacing(value: Double): Self = StObject.set(x, "ColSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCols(value: OMathMatCols): Self = StObject.set(x, "Cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: OMathMatCols): Self = StObject.set(x, "Cols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlcHoldHidden(value: Boolean): Self = StObject.set(x, "PlcHoldHidden", value.asInstanceOf[js.Any])
+    inline def setPlcHoldHidden(value: Boolean): Self = StObject.set(x, "PlcHoldHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSpacing(value: Double): Self = StObject.set(x, "RowSpacing", value.asInstanceOf[js.Any])
+    inline def setRowSpacing(value: Double): Self = StObject.set(x, "RowSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSpacingRule(value: WdOMathSpacingRule): Self = StObject.set(x, "RowSpacingRule", value.asInstanceOf[js.Any])
+    inline def setRowSpacingRule(value: WdOMathSpacingRule): Self = StObject.set(x, "RowSpacingRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: OMathMatRows): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: OMathMatRows): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOMathMat_typekey(value: OMathMat): Self = StObject.set(x, "Word.OMathMat_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathMat_typekey(value: OMathMat): Self = StObject.set(x, "Word.OMathMat_typekey", value.asInstanceOf[js.Any])
   }
 }

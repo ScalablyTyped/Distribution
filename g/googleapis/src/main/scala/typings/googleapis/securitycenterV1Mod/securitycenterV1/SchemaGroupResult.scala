@@ -22,25 +22,19 @@ trait SchemaGroupResult extends StObject {
 }
 object SchemaGroupResult {
   
-  @scala.inline
-  def apply(): SchemaGroupResult = {
+  inline def apply(): SchemaGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGroupResult]
   }
   
-  @scala.inline
-  implicit class SchemaGroupResultMutableBuilder[Self <: SchemaGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGroupResult](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

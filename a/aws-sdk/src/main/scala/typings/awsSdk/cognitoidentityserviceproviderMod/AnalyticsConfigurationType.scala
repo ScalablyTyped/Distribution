@@ -33,43 +33,31 @@ trait AnalyticsConfigurationType extends StObject {
 }
 object AnalyticsConfigurationType {
   
-  @scala.inline
-  def apply(): AnalyticsConfigurationType = {
+  inline def apply(): AnalyticsConfigurationType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyticsConfigurationType]
   }
   
-  @scala.inline
-  implicit class AnalyticsConfigurationTypeMutableBuilder[Self <: AnalyticsConfigurationType] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsConfigurationType](x: Self) {
     
-    @scala.inline
-    def setApplicationArn(value: ArnType): Self = StObject.set(x, "ApplicationArn", value.asInstanceOf[js.Any])
+    inline def setApplicationArn(value: ArnType): Self = StObject.set(x, "ApplicationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationArnUndefined: Self = StObject.set(x, "ApplicationArn", js.undefined)
+    inline def setApplicationArnUndefined: Self = StObject.set(x, "ApplicationArn", js.undefined)
     
-    @scala.inline
-    def setApplicationId(value: HexStringType): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: HexStringType): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
+    inline def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
     
-    @scala.inline
-    def setExternalId(value: StringType): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: StringType): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: ArnType): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: ArnType): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
-    @scala.inline
-    def setUserDataShared(value: BooleanType): Self = StObject.set(x, "UserDataShared", value.asInstanceOf[js.Any])
+    inline def setUserDataShared(value: BooleanType): Self = StObject.set(x, "UserDataShared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDataSharedUndefined: Self = StObject.set(x, "UserDataShared", js.undefined)
+    inline def setUserDataSharedUndefined: Self = StObject.set(x, "UserDataShared", js.undefined)
   }
 }

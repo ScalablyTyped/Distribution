@@ -17,19 +17,15 @@ trait SchemaUpdateActiveBreakpointRequest extends StObject {
 }
 object SchemaUpdateActiveBreakpointRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateActiveBreakpointRequest = {
+  inline def apply(): SchemaUpdateActiveBreakpointRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateActiveBreakpointRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateActiveBreakpointRequestMutableBuilder[Self <: SchemaUpdateActiveBreakpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateActiveBreakpointRequest](x: Self) {
     
-    @scala.inline
-    def setBreakpoint(value: SchemaBreakpoint): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+    inline def setBreakpoint(value: SchemaBreakpoint): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
+    inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
   }
 }

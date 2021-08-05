@@ -10,19 +10,15 @@ trait Inclusive extends StObject {
 }
 object Inclusive {
   
-  @scala.inline
-  def apply(): Inclusive = {
+  inline def apply(): Inclusive = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Inclusive]
   }
   
-  @scala.inline
-  implicit class InclusiveMutableBuilder[Self <: Inclusive] (val x: Self) extends AnyVal {
+  extension [Self <: Inclusive](x: Self) {
     
-    @scala.inline
-    def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
+    inline def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclusiveUndefined: Self = StObject.set(x, "inclusive", js.undefined)
+    inline def setInclusiveUndefined: Self = StObject.set(x, "inclusive", js.undefined)
   }
 }

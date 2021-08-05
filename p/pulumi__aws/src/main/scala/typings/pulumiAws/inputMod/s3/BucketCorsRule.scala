@@ -34,49 +34,35 @@ trait BucketCorsRule extends StObject {
 }
 object BucketCorsRule {
   
-  @scala.inline
-  def apply(allowedMethods: Input[js.Array[Input[String]]], allowedOrigins: Input[js.Array[Input[String]]]): BucketCorsRule = {
+  inline def apply(allowedMethods: Input[js.Array[Input[String]]], allowedOrigins: Input[js.Array[Input[String]]]): BucketCorsRule = {
     val __obj = js.Dynamic.literal(allowedMethods = allowedMethods.asInstanceOf[js.Any], allowedOrigins = allowedOrigins.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketCorsRule]
   }
   
-  @scala.inline
-  implicit class BucketCorsRuleMutableBuilder[Self <: BucketCorsRule] (val x: Self) extends AnyVal {
+  extension [Self <: BucketCorsRule](x: Self) {
     
-    @scala.inline
-    def setAllowedHeaders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedHeaders", value.asInstanceOf[js.Any])
+    inline def setAllowedHeaders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedHeadersUndefined: Self = StObject.set(x, "allowedHeaders", js.undefined)
+    inline def setAllowedHeadersUndefined: Self = StObject.set(x, "allowedHeaders", js.undefined)
     
-    @scala.inline
-    def setAllowedHeadersVarargs(value: Input[String]*): Self = StObject.set(x, "allowedHeaders", js.Array(value :_*))
+    inline def setAllowedHeadersVarargs(value: Input[String]*): Self = StObject.set(x, "allowedHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowedMethods(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedMethods", value.asInstanceOf[js.Any])
+    inline def setAllowedMethods(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedMethodsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedMethods", js.Array(value :_*))
+    inline def setAllowedMethodsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedMethods", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowedOrigins(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedOrigins", value.asInstanceOf[js.Any])
+    inline def setAllowedOrigins(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedOrigins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedOriginsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedOrigins", js.Array(value :_*))
+    inline def setAllowedOriginsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedOrigins", js.Array(value :_*))
     
-    @scala.inline
-    def setExposeHeaders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "exposeHeaders", value.asInstanceOf[js.Any])
+    inline def setExposeHeaders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "exposeHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposeHeadersUndefined: Self = StObject.set(x, "exposeHeaders", js.undefined)
+    inline def setExposeHeadersUndefined: Self = StObject.set(x, "exposeHeaders", js.undefined)
     
-    @scala.inline
-    def setExposeHeadersVarargs(value: Input[String]*): Self = StObject.set(x, "exposeHeaders", js.Array(value :_*))
+    inline def setExposeHeadersVarargs(value: Input[String]*): Self = StObject.set(x, "exposeHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxAgeSeconds(value: Input[Double]): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxAgeSeconds(value: Input[Double]): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
+    inline def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
   }
 }

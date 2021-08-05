@@ -26,8 +26,7 @@ trait configRequestProxyRules
 }
 object configRequestProxyRules {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object configRequestProxyRules {
     __obj.asInstanceOf[configRequestProxyRules]
   }
   
-  @scala.inline
-  implicit class configRequestProxyRulesMutableBuilder[Self <: configRequestProxyRules] (val x: Self) extends AnyVal {
+  extension [Self <: configRequestProxyRules](x: Self) {
     
-    @scala.inline
-    def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+    inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
+    inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
     
-    @scala.inline
-    def setUrlPrefix(value: String): Self = StObject.set(x, "urlPrefix", value.asInstanceOf[js.Any])
+    inline def setUrlPrefix(value: String): Self = StObject.set(x, "urlPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlPrefixUndefined: Self = StObject.set(x, "urlPrefix", js.undefined)
+    inline def setUrlPrefixUndefined: Self = StObject.set(x, "urlPrefix", js.undefined)
   }
 }

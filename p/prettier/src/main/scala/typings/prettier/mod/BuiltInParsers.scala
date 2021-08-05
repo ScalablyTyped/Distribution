@@ -106,8 +106,7 @@ trait BuiltInParsers extends StObject {
 }
 object BuiltInParsers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     angular: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST,
     babel: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST,
     `babel-flow`: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST,
@@ -135,64 +134,44 @@ object BuiltInParsers {
     __obj.asInstanceOf[BuiltInParsers]
   }
   
-  @scala.inline
-  implicit class BuiltInParsersMutableBuilder[Self <: BuiltInParsers] (val x: Self) extends AnyVal {
+  extension [Self <: BuiltInParsers](x: Self) {
     
-    @scala.inline
-    def setAngular(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "angular", js.Any.fromFunction2(value))
+    inline def setAngular(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "angular", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBabel(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "babel", js.Any.fromFunction2(value))
+    inline def setBabel(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "babel", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def `setBabel-flow`(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "babel-flow", js.Any.fromFunction2(value))
+    inline def `setBabel-flow`(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "babel-flow", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def `setBabel-ts`(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "babel-ts", js.Any.fromFunction2(value))
+    inline def `setBabel-ts`(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "babel-ts", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCss(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "css", js.Any.fromFunction2(value))
+    inline def setCss(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "css", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFlow(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "flow", js.Any.fromFunction2(value))
+    inline def setFlow(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "flow", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGraphql(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "graphql", js.Any.fromFunction2(value))
+    inline def setGraphql(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "graphql", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHtml(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "html", js.Any.fromFunction2(value))
+    inline def setHtml(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "html", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setJson(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "json", js.Any.fromFunction2(value))
+    inline def setJson(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "json", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def `setJson-stringify`(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "json-stringify", js.Any.fromFunction2(value))
+    inline def `setJson-stringify`(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "json-stringify", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setJson5(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "json5", js.Any.fromFunction2(value))
+    inline def setJson5(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "json5", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLess(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "less", js.Any.fromFunction2(value))
+    inline def setLess(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "less", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLwc(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "lwc", js.Any.fromFunction2(value))
+    inline def setLwc(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "lwc", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMarkdown(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "markdown", js.Any.fromFunction2(value))
+    inline def setMarkdown(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "markdown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMdx(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "mdx", js.Any.fromFunction2(value))
+    inline def setMdx(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "mdx", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScss(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "scss", js.Any.fromFunction2(value))
+    inline def setScss(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "scss", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTypescript(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "typescript", js.Any.fromFunction2(value))
+    inline def setTypescript(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "typescript", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVue(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "vue", js.Any.fromFunction2(value))
+    inline def setVue(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "vue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setYaml(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "yaml", js.Any.fromFunction2(value))
+    inline def setYaml(value: (/* text */ String, /* options */ js.UndefOr[js.Any]) => AST): Self = StObject.set(x, "yaml", js.Any.fromFunction2(value))
   }
 }

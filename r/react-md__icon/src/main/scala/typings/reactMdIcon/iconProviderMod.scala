@@ -26,8 +26,7 @@ object iconProviderMod {
   
   object IconProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasChildrenBackCheckboxDownloadDropdownExpanderForwardMenuNotificationPasswordRadioSelectedSort: IconProviderProps
     ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildrenBackCheckboxDownloadDropdownExpanderForwardMenuNotificationPasswordRadioSelectedSort.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
@@ -44,142 +43,105 @@ object iconProviderMod {
       @JSImport("@react-md/icon/types/IconProvider", "IconProvider.propTypes.back")
       @js.native
       def back: js.Any = js.native
-      @scala.inline
-      def back_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("back")(x.asInstanceOf[js.Any])
+      inline def back_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("back")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/IconProvider", "IconProvider.propTypes.checkbox")
       @js.native
       def checkbox: js.Any = js.native
-      @scala.inline
-      def checkbox_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkbox")(x.asInstanceOf[js.Any])
+      inline def checkbox_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkbox")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/IconProvider", "IconProvider.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/IconProvider", "IconProvider.propTypes.download")
       @js.native
       def download: js.Any = js.native
-      @scala.inline
-      def download_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("download")(x.asInstanceOf[js.Any])
+      inline def download_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("download")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/IconProvider", "IconProvider.propTypes.dropdown")
       @js.native
       def dropdown: js.Any = js.native
-      @scala.inline
-      def dropdown_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropdown")(x.asInstanceOf[js.Any])
+      inline def dropdown_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropdown")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/IconProvider", "IconProvider.propTypes.expander")
       @js.native
       def expander: js.Any = js.native
-      @scala.inline
-      def expander_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expander")(x.asInstanceOf[js.Any])
+      inline def expander_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expander")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/IconProvider", "IconProvider.propTypes.forward")
       @js.native
       def forward: js.Any = js.native
-      @scala.inline
-      def forward_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forward")(x.asInstanceOf[js.Any])
+      inline def forward_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forward")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/IconProvider", "IconProvider.propTypes.menu")
       @js.native
       def menu: js.Any = js.native
-      @scala.inline
-      def menu_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("menu")(x.asInstanceOf[js.Any])
+      inline def menu_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("menu")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/IconProvider", "IconProvider.propTypes.notification")
       @js.native
       def notification: js.Any = js.native
-      @scala.inline
-      def notification_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notification")(x.asInstanceOf[js.Any])
+      inline def notification_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notification")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/IconProvider", "IconProvider.propTypes.password")
       @js.native
       def password: js.Any = js.native
-      @scala.inline
-      def password_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("password")(x.asInstanceOf[js.Any])
+      inline def password_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("password")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/IconProvider", "IconProvider.propTypes.radio")
       @js.native
       def radio: js.Any = js.native
-      @scala.inline
-      def radio_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radio")(x.asInstanceOf[js.Any])
+      inline def radio_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radio")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/IconProvider", "IconProvider.propTypes.selected")
       @js.native
       def selected: js.Any = js.native
-      @scala.inline
-      def selected_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selected")(x.asInstanceOf[js.Any])
+      inline def selected_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selected")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/IconProvider", "IconProvider.propTypes.sort")
       @js.native
       def sort: js.Any = js.native
-      @scala.inline
-      def sort_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sort")(x.asInstanceOf[js.Any])
+      inline def sort_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sort")(x.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  def useIcon_back(name: back): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def useIcon_back(name: back, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def useIcon_back(name: back): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def useIcon_back(name: back, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def useIcon_checkbox(name: checkbox): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def useIcon_checkbox(name: checkbox, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def useIcon_checkbox(name: checkbox): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def useIcon_checkbox(name: checkbox, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def useIcon_download(name: download): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def useIcon_download(name: download, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def useIcon_download(name: download): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def useIcon_download(name: download, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def useIcon_dropdown(name: dropdown): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def useIcon_dropdown(name: dropdown, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def useIcon_dropdown(name: dropdown): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def useIcon_dropdown(name: dropdown, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def useIcon_expander(name: expander): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def useIcon_expander(name: expander, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def useIcon_expander(name: expander): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def useIcon_expander(name: expander, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def useIcon_forward(name: forward): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def useIcon_forward(name: forward, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def useIcon_forward(name: forward): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def useIcon_forward(name: forward, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def useIcon_menu(name: menu): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def useIcon_menu(name: menu, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def useIcon_menu(name: menu): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def useIcon_menu(name: menu, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def useIcon_notification(name: notification): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def useIcon_notification(name: notification, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def useIcon_notification(name: notification): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def useIcon_notification(name: notification, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def useIcon_password(name: password): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def useIcon_password(name: password, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def useIcon_password(name: password): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def useIcon_password(name: password, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def useIcon_radio(name: radio): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def useIcon_radio(name: radio, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def useIcon_radio(name: radio): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def useIcon_radio(name: radio, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def useIcon_selected(name: selected): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def useIcon_selected(name: selected, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def useIcon_selected(name: selected): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def useIcon_selected(name: selected, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def useIcon_sort(name: sort): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def useIcon_sort(name: sort, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def useIcon_sort(name: sort): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def useIcon_sort(name: sort, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
   trait ConfigurableIcons extends StObject {
     
@@ -252,86 +214,60 @@ object iconProviderMod {
   }
   object ConfigurableIcons {
     
-    @scala.inline
-    def apply(): ConfigurableIcons = {
+    inline def apply(): ConfigurableIcons = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurableIcons]
     }
     
-    @scala.inline
-    implicit class ConfigurableIconsMutableBuilder[Self <: ConfigurableIcons] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurableIcons](x: Self) {
       
-      @scala.inline
-      def setBack(value: ReactNode): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+      inline def setBack(value: ReactNode): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
+      inline def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
       
-      @scala.inline
-      def setCheckbox(value: ReactNode): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+      inline def setCheckbox(value: ReactNode): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckboxUndefined: Self = StObject.set(x, "checkbox", js.undefined)
+      inline def setCheckboxUndefined: Self = StObject.set(x, "checkbox", js.undefined)
       
-      @scala.inline
-      def setDownload(value: ReactNode): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: ReactNode): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+      inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
-      @scala.inline
-      def setDropdown(value: ReactNode): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+      inline def setDropdown(value: ReactNode): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
+      inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
       
-      @scala.inline
-      def setExpander(value: ReactNode): Self = StObject.set(x, "expander", value.asInstanceOf[js.Any])
+      inline def setExpander(value: ReactNode): Self = StObject.set(x, "expander", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpanderUndefined: Self = StObject.set(x, "expander", js.undefined)
+      inline def setExpanderUndefined: Self = StObject.set(x, "expander", js.undefined)
       
-      @scala.inline
-      def setForward(value: ReactNode): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+      inline def setForward(value: ReactNode): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
+      inline def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
       
-      @scala.inline
-      def setMenu(value: ReactNode): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: ReactNode): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+      inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
-      @scala.inline
-      def setNotification(value: ReactNode): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: ReactNode): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+      inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
       
-      @scala.inline
-      def setPassword(value: ReactNode): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: ReactNode): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setRadio(value: ReactNode): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
+      inline def setRadio(value: ReactNode): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
+      inline def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
       
-      @scala.inline
-      def setSelected(value: ReactNode): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: ReactNode): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setSort(value: ReactNode): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: ReactNode): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     }
   }
   
@@ -364,86 +300,60 @@ object iconProviderMod {
   }
   object ConfiguredIcons {
     
-    @scala.inline
-    def apply(): ConfiguredIcons = {
+    inline def apply(): ConfiguredIcons = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfiguredIcons]
     }
     
-    @scala.inline
-    implicit class ConfiguredIconsMutableBuilder[Self <: ConfiguredIcons] (val x: Self) extends AnyVal {
+    extension [Self <: ConfiguredIcons](x: Self) {
       
-      @scala.inline
-      def setBack(value: ReactNode): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+      inline def setBack(value: ReactNode): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
+      inline def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
       
-      @scala.inline
-      def setCheckbox(value: ReactNode): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+      inline def setCheckbox(value: ReactNode): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckboxUndefined: Self = StObject.set(x, "checkbox", js.undefined)
+      inline def setCheckboxUndefined: Self = StObject.set(x, "checkbox", js.undefined)
       
-      @scala.inline
-      def setDownload(value: ReactNode): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: ReactNode): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+      inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
-      @scala.inline
-      def setDropdown(value: ReactNode): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+      inline def setDropdown(value: ReactNode): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
+      inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
       
-      @scala.inline
-      def setExpander(value: ReactNode): Self = StObject.set(x, "expander", value.asInstanceOf[js.Any])
+      inline def setExpander(value: ReactNode): Self = StObject.set(x, "expander", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpanderUndefined: Self = StObject.set(x, "expander", js.undefined)
+      inline def setExpanderUndefined: Self = StObject.set(x, "expander", js.undefined)
       
-      @scala.inline
-      def setForward(value: ReactNode): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+      inline def setForward(value: ReactNode): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
+      inline def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
       
-      @scala.inline
-      def setMenu(value: ReactNode): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: ReactNode): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+      inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
-      @scala.inline
-      def setNotification(value: ReactNode): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: ReactNode): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+      inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
       
-      @scala.inline
-      def setPassword(value: ReactNode): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: ReactNode): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setRadio(value: ReactNode): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
+      inline def setRadio(value: ReactNode): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
+      inline def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
       
-      @scala.inline
-      def setSelected(value: ReactNode): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: ReactNode): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setSort(value: ReactNode): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: ReactNode): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     }
   }
   
@@ -460,20 +370,16 @@ object iconProviderMod {
   }
   object IconProviderProps {
     
-    @scala.inline
-    def apply(): IconProviderProps = {
+    inline def apply(): IconProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IconProviderProps]
     }
     
-    @scala.inline
-    implicit class IconProviderPropsMutableBuilder[Self <: IconProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconProviderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

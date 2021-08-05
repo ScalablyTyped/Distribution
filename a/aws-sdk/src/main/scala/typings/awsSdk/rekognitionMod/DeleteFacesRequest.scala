@@ -18,22 +18,17 @@ trait DeleteFacesRequest extends StObject {
 }
 object DeleteFacesRequest {
   
-  @scala.inline
-  def apply(CollectionId: CollectionId, FaceIds: FaceIdList): DeleteFacesRequest = {
+  inline def apply(CollectionId: CollectionId, FaceIds: FaceIdList): DeleteFacesRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any], FaceIds = FaceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFacesRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFacesRequestMutableBuilder[Self <: DeleteFacesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFacesRequest](x: Self) {
     
-    @scala.inline
-    def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
+    inline def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceIds(value: FaceIdList): Self = StObject.set(x, "FaceIds", value.asInstanceOf[js.Any])
+    inline def setFaceIds(value: FaceIdList): Self = StObject.set(x, "FaceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceIdsVarargs(value: FaceId*): Self = StObject.set(x, "FaceIds", js.Array(value :_*))
+    inline def setFaceIdsVarargs(value: FaceId*): Self = StObject.set(x, "FaceIds", js.Array(value :_*))
   }
 }

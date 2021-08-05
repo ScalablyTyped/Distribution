@@ -22,16 +22,13 @@ trait NotifyCollectionChangedEventArgs
 }
 object NotifyCollectionChangedEventArgs {
   
-  @scala.inline
-  def apply(Empty: EventArgs, get_changes: () => js.Array[CollectionChange]): NotifyCollectionChangedEventArgs = {
+  inline def apply(Empty: EventArgs, get_changes: () => js.Array[CollectionChange]): NotifyCollectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], get_changes = js.Any.fromFunction0(get_changes))
     __obj.asInstanceOf[NotifyCollectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class NotifyCollectionChangedEventArgsMutableBuilder[Self <: NotifyCollectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: NotifyCollectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setGet_changes(value: () => js.Array[CollectionChange]): Self = StObject.set(x, "get_changes", js.Any.fromFunction0(value))
+    inline def setGet_changes(value: () => js.Array[CollectionChange]): Self = StObject.set(x, "get_changes", js.Any.fromFunction0(value))
   }
 }

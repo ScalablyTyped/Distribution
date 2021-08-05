@@ -12,19 +12,15 @@ trait JoinTokens extends StObject {
 }
 object JoinTokens {
   
-  @scala.inline
-  def apply(Manager: String, Worker: String): JoinTokens = {
+  inline def apply(Manager: String, Worker: String): JoinTokens = {
     val __obj = js.Dynamic.literal(Manager = Manager.asInstanceOf[js.Any], Worker = Worker.asInstanceOf[js.Any])
     __obj.asInstanceOf[JoinTokens]
   }
   
-  @scala.inline
-  implicit class JoinTokensMutableBuilder[Self <: JoinTokens] (val x: Self) extends AnyVal {
+  extension [Self <: JoinTokens](x: Self) {
     
-    @scala.inline
-    def setManager(value: String): Self = StObject.set(x, "Manager", value.asInstanceOf[js.Any])
+    inline def setManager(value: String): Self = StObject.set(x, "Manager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorker(value: String): Self = StObject.set(x, "Worker", value.asInstanceOf[js.Any])
+    inline def setWorker(value: String): Self = StObject.set(x, "Worker", value.asInstanceOf[js.Any])
   }
 }

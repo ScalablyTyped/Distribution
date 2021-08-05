@@ -71,106 +71,73 @@ trait Activity extends StObject {
 }
 object Activity {
   
-  @scala.inline
-  def apply(): Activity = {
+  inline def apply(): Activity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Activity]
   }
   
-  @scala.inline
-  implicit class ActivityMutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
+  extension [Self <: Activity](x: Self) {
     
-    @scala.inline
-    def setActivityTime(value: String): Self = StObject.set(x, "activityTime", value.asInstanceOf[js.Any])
+    inline def setActivityTime(value: String): Self = StObject.set(x, "activityTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityTimeUndefined: Self = StObject.set(x, "activityTime", js.undefined)
+    inline def setActivityTimeUndefined: Self = StObject.set(x, "activityTime", js.undefined)
     
-    @scala.inline
-    def setActivityType(value: String): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
+    inline def setActivityType(value: String): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
+    inline def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
     
-    @scala.inline
-    def setAppview(value: ScreenviewData): Self = StObject.set(x, "appview", value.asInstanceOf[js.Any])
+    inline def setAppview(value: ScreenviewData): Self = StObject.set(x, "appview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppviewUndefined: Self = StObject.set(x, "appview", js.undefined)
+    inline def setAppviewUndefined: Self = StObject.set(x, "appview", js.undefined)
     
-    @scala.inline
-    def setCampaign(value: String): Self = StObject.set(x, "campaign", value.asInstanceOf[js.Any])
+    inline def setCampaign(value: String): Self = StObject.set(x, "campaign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignUndefined: Self = StObject.set(x, "campaign", js.undefined)
+    inline def setCampaignUndefined: Self = StObject.set(x, "campaign", js.undefined)
     
-    @scala.inline
-    def setChannelGrouping(value: String): Self = StObject.set(x, "channelGrouping", value.asInstanceOf[js.Any])
+    inline def setChannelGrouping(value: String): Self = StObject.set(x, "channelGrouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelGroupingUndefined: Self = StObject.set(x, "channelGrouping", js.undefined)
+    inline def setChannelGroupingUndefined: Self = StObject.set(x, "channelGrouping", js.undefined)
     
-    @scala.inline
-    def setCustomDimension(value: js.Array[CustomDimension]): Self = StObject.set(x, "customDimension", value.asInstanceOf[js.Any])
+    inline def setCustomDimension(value: js.Array[CustomDimension]): Self = StObject.set(x, "customDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDimensionUndefined: Self = StObject.set(x, "customDimension", js.undefined)
+    inline def setCustomDimensionUndefined: Self = StObject.set(x, "customDimension", js.undefined)
     
-    @scala.inline
-    def setCustomDimensionVarargs(value: CustomDimension*): Self = StObject.set(x, "customDimension", js.Array(value :_*))
+    inline def setCustomDimensionVarargs(value: CustomDimension*): Self = StObject.set(x, "customDimension", js.Array(value :_*))
     
-    @scala.inline
-    def setEcommerce(value: EcommerceData): Self = StObject.set(x, "ecommerce", value.asInstanceOf[js.Any])
+    inline def setEcommerce(value: EcommerceData): Self = StObject.set(x, "ecommerce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcommerceUndefined: Self = StObject.set(x, "ecommerce", js.undefined)
+    inline def setEcommerceUndefined: Self = StObject.set(x, "ecommerce", js.undefined)
     
-    @scala.inline
-    def setEvent(value: EventData): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: EventData): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setGoals(value: GoalSetData): Self = StObject.set(x, "goals", value.asInstanceOf[js.Any])
+    inline def setGoals(value: GoalSetData): Self = StObject.set(x, "goals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
+    inline def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
-    @scala.inline
-    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+    inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
+    inline def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
     
-    @scala.inline
-    def setLandingPagePath(value: String): Self = StObject.set(x, "landingPagePath", value.asInstanceOf[js.Any])
+    inline def setLandingPagePath(value: String): Self = StObject.set(x, "landingPagePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandingPagePathUndefined: Self = StObject.set(x, "landingPagePath", js.undefined)
+    inline def setLandingPagePathUndefined: Self = StObject.set(x, "landingPagePath", js.undefined)
     
-    @scala.inline
-    def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+    inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
-    @scala.inline
-    def setPageview(value: PageviewData): Self = StObject.set(x, "pageview", value.asInstanceOf[js.Any])
+    inline def setPageview(value: PageviewData): Self = StObject.set(x, "pageview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageviewUndefined: Self = StObject.set(x, "pageview", js.undefined)
+    inline def setPageviewUndefined: Self = StObject.set(x, "pageview", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

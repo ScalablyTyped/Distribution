@@ -93,8 +93,7 @@ object loader {
   }
   object XImplementationLoader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       activate: (String, String, String, XRegistryKey) => XInterface,
       queryInterface: `type` => js.Any,
@@ -105,14 +104,11 @@ object loader {
       __obj.asInstanceOf[XImplementationLoader]
     }
     
-    @scala.inline
-    implicit class XImplementationLoaderMutableBuilder[Self <: XImplementationLoader] (val x: Self) extends AnyVal {
+    extension [Self <: XImplementationLoader](x: Self) {
       
-      @scala.inline
-      def setActivate(value: (String, String, String, XRegistryKey) => XInterface): Self = StObject.set(x, "activate", js.Any.fromFunction4(value))
+      inline def setActivate(value: (String, String, String, XRegistryKey) => XInterface): Self = StObject.set(x, "activate", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setWriteRegistryInfo(value: (XRegistryKey, String, String) => Boolean): Self = StObject.set(x, "writeRegistryInfo", js.Any.fromFunction3(value))
+      inline def setWriteRegistryInfo(value: (XRegistryKey, String, String) => Boolean): Self = StObject.set(x, "writeRegistryInfo", js.Any.fromFunction3(value))
     }
   }
 }

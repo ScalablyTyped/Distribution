@@ -15,19 +15,15 @@ trait PlayToConnectionErrorEventArgs extends StObject {
 }
 object PlayToConnectionErrorEventArgs {
   
-  @scala.inline
-  def apply(code: PlayToConnectionError, message: String): PlayToConnectionErrorEventArgs = {
+  inline def apply(code: PlayToConnectionError, message: String): PlayToConnectionErrorEventArgs = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayToConnectionErrorEventArgs]
   }
   
-  @scala.inline
-  implicit class PlayToConnectionErrorEventArgsMutableBuilder[Self <: PlayToConnectionErrorEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PlayToConnectionErrorEventArgs](x: Self) {
     
-    @scala.inline
-    def setCode(value: PlayToConnectionError): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: PlayToConnectionError): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

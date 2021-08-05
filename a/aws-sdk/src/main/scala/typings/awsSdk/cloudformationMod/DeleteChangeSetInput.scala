@@ -18,22 +18,17 @@ trait DeleteChangeSetInput extends StObject {
 }
 object DeleteChangeSetInput {
   
-  @scala.inline
-  def apply(ChangeSetName: ChangeSetNameOrId): DeleteChangeSetInput = {
+  inline def apply(ChangeSetName: ChangeSetNameOrId): DeleteChangeSetInput = {
     val __obj = js.Dynamic.literal(ChangeSetName = ChangeSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteChangeSetInput]
   }
   
-  @scala.inline
-  implicit class DeleteChangeSetInputMutableBuilder[Self <: DeleteChangeSetInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteChangeSetInput](x: Self) {
     
-    @scala.inline
-    def setChangeSetName(value: ChangeSetNameOrId): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
+    inline def setChangeSetName(value: ChangeSetNameOrId): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
+    inline def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
   }
 }

@@ -48,31 +48,23 @@ trait IgGridGroupByColumnSettingsSummaries
 }
 object IgGridGroupByColumnSettingsSummaries {
   
-  @scala.inline
-  def apply(): IgGridGroupByColumnSettingsSummaries = {
+  inline def apply(): IgGridGroupByColumnSettingsSummaries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridGroupByColumnSettingsSummaries]
   }
   
-  @scala.inline
-  implicit class IgGridGroupByColumnSettingsSummariesMutableBuilder[Self <: IgGridGroupByColumnSettingsSummaries] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridGroupByColumnSettingsSummaries](x: Self) {
     
-    @scala.inline
-    def setCustomSummary(value: String | js.Function): Self = StObject.set(x, "customSummary", value.asInstanceOf[js.Any])
+    inline def setCustomSummary(value: String | js.Function): Self = StObject.set(x, "customSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSummaryUndefined: Self = StObject.set(x, "customSummary", js.undefined)
+    inline def setCustomSummaryUndefined: Self = StObject.set(x, "customSummary", js.undefined)
     
-    @scala.inline
-    def setSummaryFunction(value: String): Self = StObject.set(x, "summaryFunction", value.asInstanceOf[js.Any])
+    inline def setSummaryFunction(value: String): Self = StObject.set(x, "summaryFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryFunctionUndefined: Self = StObject.set(x, "summaryFunction", js.undefined)
+    inline def setSummaryFunctionUndefined: Self = StObject.set(x, "summaryFunction", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -24,41 +24,31 @@ trait VariantArgs[TStyle, K /* <: String */, TPropName] extends StObject {
 }
 object VariantArgs {
   
-  @scala.inline
-  def apply[TStyle, K /* <: String */, TPropName](): VariantArgs[TStyle, K, TPropName] = {
+  inline def apply[TStyle, K /* <: String */, TPropName](): VariantArgs[TStyle, K, TPropName] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VariantArgs[TStyle, K, TPropName]]
   }
   
-  @scala.inline
-  implicit class VariantArgsMutableBuilder[Self <: VariantArgs[?, ?, ?], TStyle, K /* <: String */, TPropName] (val x: Self & (VariantArgs[TStyle, K, TPropName])) extends AnyVal {
+  extension [Self <: VariantArgs[?, ?, ?], TStyle, K /* <: String */, TPropName](x: Self & (VariantArgs[TStyle, K, TPropName])) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setProp(value: TPropName): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+    inline def setProp(value: TPropName): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
+    inline def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
     
-    @scala.inline
-    def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setVariants(
+    inline def setVariants(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in K ]: TStyle}
       */ typings.styledSystem.styledSystemStrings.VariantArgs & TopLevel[js.Any]
     ): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
+    inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
   }
 }

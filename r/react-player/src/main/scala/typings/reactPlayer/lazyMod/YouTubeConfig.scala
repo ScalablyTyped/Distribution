@@ -14,31 +14,23 @@ trait YouTubeConfig extends StObject {
 }
 object YouTubeConfig {
   
-  @scala.inline
-  def apply(): YouTubeConfig = {
+  inline def apply(): YouTubeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[YouTubeConfig]
   }
   
-  @scala.inline
-  implicit class YouTubeConfigMutableBuilder[Self <: YouTubeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: YouTubeConfig](x: Self) {
     
-    @scala.inline
-    def setEmbedOptions(value: js.Object): Self = StObject.set(x, "embedOptions", value.asInstanceOf[js.Any])
+    inline def setEmbedOptions(value: js.Object): Self = StObject.set(x, "embedOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedOptionsUndefined: Self = StObject.set(x, "embedOptions", js.undefined)
+    inline def setEmbedOptionsUndefined: Self = StObject.set(x, "embedOptions", js.undefined)
     
-    @scala.inline
-    def setOnUnstarted(value: () => Unit): Self = StObject.set(x, "onUnstarted", js.Any.fromFunction0(value))
+    inline def setOnUnstarted(value: () => Unit): Self = StObject.set(x, "onUnstarted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnUnstartedUndefined: Self = StObject.set(x, "onUnstarted", js.undefined)
+    inline def setOnUnstartedUndefined: Self = StObject.set(x, "onUnstarted", js.undefined)
     
-    @scala.inline
-    def setPlayerVars(value: js.Object): Self = StObject.set(x, "playerVars", value.asInstanceOf[js.Any])
+    inline def setPlayerVars(value: js.Object): Self = StObject.set(x, "playerVars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerVarsUndefined: Self = StObject.set(x, "playerVars", js.undefined)
+    inline def setPlayerVarsUndefined: Self = StObject.set(x, "playerVars", js.undefined)
   }
 }

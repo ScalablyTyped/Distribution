@@ -29,37 +29,27 @@ trait XAxisPlotLinesEventsOptions extends StObject {
 }
 object XAxisPlotLinesEventsOptions {
   
-  @scala.inline
-  def apply(): XAxisPlotLinesEventsOptions = {
+  inline def apply(): XAxisPlotLinesEventsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XAxisPlotLinesEventsOptions]
   }
   
-  @scala.inline
-  implicit class XAxisPlotLinesEventsOptionsMutableBuilder[Self <: XAxisPlotLinesEventsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: XAxisPlotLinesEventsOptions](x: Self) {
     
-    @scala.inline
-    def setClick(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    inline def setClick(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
-    @scala.inline
-    def setMousemove(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
+    inline def setMousemove(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousemoveUndefined: Self = StObject.set(x, "mousemove", js.undefined)
+    inline def setMousemoveUndefined: Self = StObject.set(x, "mousemove", js.undefined)
     
-    @scala.inline
-    def setMouseout(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
+    inline def setMouseout(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseoutUndefined: Self = StObject.set(x, "mouseout", js.undefined)
+    inline def setMouseoutUndefined: Self = StObject.set(x, "mouseout", js.undefined)
     
-    @scala.inline
-    def setMouseover(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
+    inline def setMouseover(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseoverUndefined: Self = StObject.set(x, "mouseover", js.undefined)
+    inline def setMouseoverUndefined: Self = StObject.set(x, "mouseover", js.undefined)
   }
 }

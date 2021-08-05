@@ -22,7 +22,7 @@ object relationCountRelationCountAttributeMod {
       */
     var alias: js.UndefOr[String] = js.native
     
-    var expressionMap: js.Any = js.native
+    /* private */ var expressionMap: js.Any = js.native
     
     val joinInverseSideMetadata: EntityMetadata = js.native
     

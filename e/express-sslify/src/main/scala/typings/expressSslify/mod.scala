@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def HTTPS(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("HTTPS")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def HTTPS(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("HTTPS")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def HTTPS(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("HTTPS")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def HTTPS(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("HTTPS")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   trait Options extends StObject {
     
@@ -43,32 +41,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setTrustAzureHeader(value: Boolean): Self = StObject.set(x, "trustAzureHeader", value.asInstanceOf[js.Any])
+      inline def setTrustAzureHeader(value: Boolean): Self = StObject.set(x, "trustAzureHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrustAzureHeaderUndefined: Self = StObject.set(x, "trustAzureHeader", js.undefined)
+      inline def setTrustAzureHeaderUndefined: Self = StObject.set(x, "trustAzureHeader", js.undefined)
       
-      @scala.inline
-      def setTrustProtoHeader(value: Boolean): Self = StObject.set(x, "trustProtoHeader", value.asInstanceOf[js.Any])
+      inline def setTrustProtoHeader(value: Boolean): Self = StObject.set(x, "trustProtoHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrustProtoHeaderUndefined: Self = StObject.set(x, "trustProtoHeader", js.undefined)
+      inline def setTrustProtoHeaderUndefined: Self = StObject.set(x, "trustProtoHeader", js.undefined)
       
-      @scala.inline
-      def setTrustXForwardedHostHeader(value: Boolean): Self = StObject.set(x, "trustXForwardedHostHeader", value.asInstanceOf[js.Any])
+      inline def setTrustXForwardedHostHeader(value: Boolean): Self = StObject.set(x, "trustXForwardedHostHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrustXForwardedHostHeaderUndefined: Self = StObject.set(x, "trustXForwardedHostHeader", js.undefined)
+      inline def setTrustXForwardedHostHeaderUndefined: Self = StObject.set(x, "trustXForwardedHostHeader", js.undefined)
     }
   }
 }

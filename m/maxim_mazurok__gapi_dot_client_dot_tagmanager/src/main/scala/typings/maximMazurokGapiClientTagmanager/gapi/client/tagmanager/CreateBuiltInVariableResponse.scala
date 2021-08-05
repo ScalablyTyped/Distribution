@@ -11,22 +11,17 @@ trait CreateBuiltInVariableResponse extends StObject {
 }
 object CreateBuiltInVariableResponse {
   
-  @scala.inline
-  def apply(): CreateBuiltInVariableResponse = {
+  inline def apply(): CreateBuiltInVariableResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateBuiltInVariableResponse]
   }
   
-  @scala.inline
-  implicit class CreateBuiltInVariableResponseMutableBuilder[Self <: CreateBuiltInVariableResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBuiltInVariableResponse](x: Self) {
     
-    @scala.inline
-    def setBuiltInVariable(value: js.Array[BuiltInVariable]): Self = StObject.set(x, "builtInVariable", value.asInstanceOf[js.Any])
+    inline def setBuiltInVariable(value: js.Array[BuiltInVariable]): Self = StObject.set(x, "builtInVariable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
+    inline def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
     
-    @scala.inline
-    def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
+    inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
   }
 }

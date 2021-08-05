@@ -20,25 +20,19 @@ trait ILegalPersonType extends StObject {
 }
 object ILegalPersonType {
   
-  @scala.inline
-  def apply(): ILegalPersonType = {
+  inline def apply(): ILegalPersonType = {
     val __obj = js.Dynamic.literal(Business = "BUSINESS", NotSpecified = "NotSpecified", Organization = "ORGANIZATION", Soletrader = "SOLETRADER")
     __obj.asInstanceOf[ILegalPersonType]
   }
   
-  @scala.inline
-  implicit class ILegalPersonTypeMutableBuilder[Self <: ILegalPersonType] (val x: Self) extends AnyVal {
+  extension [Self <: ILegalPersonType](x: Self) {
     
-    @scala.inline
-    def setBusiness(value: BUSINESS): Self = StObject.set(x, "Business", value.asInstanceOf[js.Any])
+    inline def setBusiness(value: BUSINESS): Self = StObject.set(x, "Business", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotSpecified(value: NotSpecified): Self = StObject.set(x, "NotSpecified", value.asInstanceOf[js.Any])
+    inline def setNotSpecified(value: NotSpecified): Self = StObject.set(x, "NotSpecified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganization(value: ORGANIZATION): Self = StObject.set(x, "Organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: ORGANIZATION): Self = StObject.set(x, "Organization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoletrader(value: SOLETRADER): Self = StObject.set(x, "Soletrader", value.asInstanceOf[js.Any])
+    inline def setSoletrader(value: SOLETRADER): Self = StObject.set(x, "Soletrader", value.asInstanceOf[js.Any])
   }
 }

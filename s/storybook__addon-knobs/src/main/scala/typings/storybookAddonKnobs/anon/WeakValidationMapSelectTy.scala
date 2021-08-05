@@ -20,29 +20,23 @@ trait WeakValidationMapSelectTy extends StObject {
 }
 object WeakValidationMapSelectTy {
   
-  @scala.inline
-  def apply(): WeakValidationMapSelectTy = {
+  inline def apply(): WeakValidationMapSelectTy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeakValidationMapSelectTy]
   }
   
-  @scala.inline
-  implicit class WeakValidationMapSelectTyMutableBuilder[Self <: WeakValidationMapSelectTy] (val x: Self) extends AnyVal {
+  extension [Self <: WeakValidationMapSelectTy](x: Self) {
     
-    @scala.inline
-    def setKnob(value: Validator[js.UndefOr[Null | SelectTypeKnob[SelectTypeKnobValue]]]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: Validator[js.UndefOr[Null | SelectTypeKnob[SelectTypeKnobValue]]]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
+    inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
-    @scala.inline
-    def setOnChange(
+    inline def setOnChange(
       value: Validator[
           js.UndefOr[(js.Function1[/* value */ SelectTypeKnobValue, SelectTypeKnobValue]) | Null]
         ]
     ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }
 }

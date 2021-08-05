@@ -17,26 +17,20 @@ object testMessageMod {
   }
   object TestMessage {
     
-    @scala.inline
-    def apply(frame: Double, notification: Notification[js.Any]): TestMessage = {
+    inline def apply(frame: Double, notification: Notification[js.Any]): TestMessage = {
       val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], notification = notification.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestMessage]
     }
     
-    @scala.inline
-    implicit class TestMessageMutableBuilder[Self <: TestMessage] (val x: Self) extends AnyVal {
+    extension [Self <: TestMessage](x: Self) {
       
-      @scala.inline
-      def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsGhost(value: Boolean): Self = StObject.set(x, "isGhost", value.asInstanceOf[js.Any])
+      inline def setIsGhost(value: Boolean): Self = StObject.set(x, "isGhost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsGhostUndefined: Self = StObject.set(x, "isGhost", js.undefined)
+      inline def setIsGhostUndefined: Self = StObject.set(x, "isGhost", js.undefined)
       
-      @scala.inline
-      def setNotification(value: Notification[js.Any]): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: Notification[js.Any]): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     }
   }
 }

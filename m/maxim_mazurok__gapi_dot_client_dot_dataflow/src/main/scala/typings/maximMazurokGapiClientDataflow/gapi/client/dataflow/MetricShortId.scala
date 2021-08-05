@@ -14,25 +14,19 @@ trait MetricShortId extends StObject {
 }
 object MetricShortId {
   
-  @scala.inline
-  def apply(): MetricShortId = {
+  inline def apply(): MetricShortId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricShortId]
   }
   
-  @scala.inline
-  implicit class MetricShortIdMutableBuilder[Self <: MetricShortId] (val x: Self) extends AnyVal {
+  extension [Self <: MetricShortId](x: Self) {
     
-    @scala.inline
-    def setMetricIndex(value: Double): Self = StObject.set(x, "metricIndex", value.asInstanceOf[js.Any])
+    inline def setMetricIndex(value: Double): Self = StObject.set(x, "metricIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricIndexUndefined: Self = StObject.set(x, "metricIndex", js.undefined)
+    inline def setMetricIndexUndefined: Self = StObject.set(x, "metricIndex", js.undefined)
     
-    @scala.inline
-    def setShortId(value: String): Self = StObject.set(x, "shortId", value.asInstanceOf[js.Any])
+    inline def setShortId(value: String): Self = StObject.set(x, "shortId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortIdUndefined: Self = StObject.set(x, "shortId", js.undefined)
+    inline def setShortIdUndefined: Self = StObject.set(x, "shortId", js.undefined)
   }
 }

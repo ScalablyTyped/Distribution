@@ -72,71 +72,50 @@ object mod {
   }
   object CatboxRedisOptions {
     
-    @scala.inline
-    def apply(): CatboxRedisOptions = {
+    inline def apply(): CatboxRedisOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CatboxRedisOptions]
     }
     
-    @scala.inline
-    implicit class CatboxRedisOptionsMutableBuilder[Self <: CatboxRedisOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CatboxRedisOptions](x: Self) {
       
-      @scala.inline
-      def setClient(value: Redis): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Redis): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setSentinelName(value: String): Self = StObject.set(x, "sentinelName", value.asInstanceOf[js.Any])
+      inline def setSentinelName(value: String): Self = StObject.set(x, "sentinelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSentinelNameUndefined: Self = StObject.set(x, "sentinelName", js.undefined)
+      inline def setSentinelNameUndefined: Self = StObject.set(x, "sentinelName", js.undefined)
       
-      @scala.inline
-      def setSentinels(value: js.Array[Host]): Self = StObject.set(x, "sentinels", value.asInstanceOf[js.Any])
+      inline def setSentinels(value: js.Array[Host]): Self = StObject.set(x, "sentinels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSentinelsUndefined: Self = StObject.set(x, "sentinels", js.undefined)
+      inline def setSentinelsUndefined: Self = StObject.set(x, "sentinels", js.undefined)
       
-      @scala.inline
-      def setSentinelsVarargs(value: Host*): Self = StObject.set(x, "sentinels", js.Array(value :_*))
+      inline def setSentinelsVarargs(value: Host*): Self = StObject.set(x, "sentinels", js.Array(value :_*))
       
-      @scala.inline
-      def setSocket(value: String): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: String): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
+      inline def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

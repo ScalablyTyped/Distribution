@@ -46,61 +46,43 @@ trait SchemaGooglePrivacyDlpV2TransformationSummary extends StObject {
 }
 object SchemaGooglePrivacyDlpV2TransformationSummary {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2TransformationSummary = {
+  inline def apply(): SchemaGooglePrivacyDlpV2TransformationSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2TransformationSummary]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2TransformationSummaryMutableBuilder[Self <: SchemaGooglePrivacyDlpV2TransformationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2TransformationSummary](x: Self) {
     
-    @scala.inline
-    def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldTransformations(value: js.Array[SchemaGooglePrivacyDlpV2FieldTransformation]): Self = StObject.set(x, "fieldTransformations", value.asInstanceOf[js.Any])
+    inline def setFieldTransformations(value: js.Array[SchemaGooglePrivacyDlpV2FieldTransformation]): Self = StObject.set(x, "fieldTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldTransformationsUndefined: Self = StObject.set(x, "fieldTransformations", js.undefined)
+    inline def setFieldTransformationsUndefined: Self = StObject.set(x, "fieldTransformations", js.undefined)
     
-    @scala.inline
-    def setFieldTransformationsVarargs(value: SchemaGooglePrivacyDlpV2FieldTransformation*): Self = StObject.set(x, "fieldTransformations", js.Array(value :_*))
+    inline def setFieldTransformationsVarargs(value: SchemaGooglePrivacyDlpV2FieldTransformation*): Self = StObject.set(x, "fieldTransformations", js.Array(value :_*))
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
+    inline def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
+    inline def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
     
-    @scala.inline
-    def setRecordSuppress(value: SchemaGooglePrivacyDlpV2RecordSuppression): Self = StObject.set(x, "recordSuppress", value.asInstanceOf[js.Any])
+    inline def setRecordSuppress(value: SchemaGooglePrivacyDlpV2RecordSuppression): Self = StObject.set(x, "recordSuppress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordSuppressUndefined: Self = StObject.set(x, "recordSuppress", js.undefined)
+    inline def setRecordSuppressUndefined: Self = StObject.set(x, "recordSuppress", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[SchemaGooglePrivacyDlpV2SummaryResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SchemaGooglePrivacyDlpV2SummaryResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: SchemaGooglePrivacyDlpV2SummaryResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaGooglePrivacyDlpV2SummaryResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setTransformation(value: SchemaGooglePrivacyDlpV2PrimitiveTransformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
+    inline def setTransformation(value: SchemaGooglePrivacyDlpV2PrimitiveTransformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
+    inline def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
     
-    @scala.inline
-    def setTransformedBytes(value: String): Self = StObject.set(x, "transformedBytes", value.asInstanceOf[js.Any])
+    inline def setTransformedBytes(value: String): Self = StObject.set(x, "transformedBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformedBytesUndefined: Self = StObject.set(x, "transformedBytes", js.undefined)
+    inline def setTransformedBytesUndefined: Self = StObject.set(x, "transformedBytes", js.undefined)
   }
 }

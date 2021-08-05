@@ -11,10 +11,8 @@ object stepsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def steps(steps: Double): Easing = ^.asInstanceOf[js.Dynamic].applyDynamic("steps")(steps.asInstanceOf[js.Any]).asInstanceOf[Easing]
-  @scala.inline
-  def steps(steps: Double, direction: Direction): Easing = (^.asInstanceOf[js.Dynamic].applyDynamic("steps")(steps.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Easing]
+  inline def steps(steps: Double): Easing = ^.asInstanceOf[js.Dynamic].applyDynamic("steps")(steps.asInstanceOf[js.Any]).asInstanceOf[Easing]
+  inline def steps(steps: Double, direction: Direction): Easing = (^.asInstanceOf[js.Dynamic].applyDynamic("steps")(steps.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Easing]
   
   /* Rewritten from type alias, can be one of: 
     - typings.popmotion.popmotionStrings.start
@@ -23,10 +21,8 @@ object stepsMod {
   trait Direction extends StObject
   object Direction {
     
-    @scala.inline
-    def end: typings.popmotion.popmotionStrings.end = "end".asInstanceOf[typings.popmotion.popmotionStrings.end]
+    inline def end: typings.popmotion.popmotionStrings.end = "end".asInstanceOf[typings.popmotion.popmotionStrings.end]
     
-    @scala.inline
-    def start: typings.popmotion.popmotionStrings.start = "start".asInstanceOf[typings.popmotion.popmotionStrings.start]
+    inline def start: typings.popmotion.popmotionStrings.start = "start".asInstanceOf[typings.popmotion.popmotionStrings.start]
   }
 }

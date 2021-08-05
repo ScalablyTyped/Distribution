@@ -17,8 +17,7 @@ object mod {
   @js.native
   val Waiter: FunctionComponent[js.Object] = js.native
   
-  @scala.inline
-  def useWait(): UseWaitAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("useWait")().asInstanceOf[UseWaitAPI]
+  inline def useWait(): UseWaitAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("useWait")().asInstanceOf[UseWaitAPI]
   
   trait UseWaitAPI extends StObject {
     
@@ -112,8 +111,7 @@ object mod {
   }
   object UseWaitAPI {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Wait: ComponentType[WaitProps],
       anyWaiting: () => Boolean,
       createWaitingContext: String => WaitingContext,
@@ -126,32 +124,23 @@ object mod {
       __obj.asInstanceOf[UseWaitAPI]
     }
     
-    @scala.inline
-    implicit class UseWaitAPIMutableBuilder[Self <: UseWaitAPI] (val x: Self) extends AnyVal {
+    extension [Self <: UseWaitAPI](x: Self) {
       
-      @scala.inline
-      def setAnyWaiting(value: () => Boolean): Self = StObject.set(x, "anyWaiting", js.Any.fromFunction0(value))
+      inline def setAnyWaiting(value: () => Boolean): Self = StObject.set(x, "anyWaiting", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateWaitingContext(value: String => WaitingContext): Self = StObject.set(x, "createWaitingContext", js.Any.fromFunction1(value))
+      inline def setCreateWaitingContext(value: String => WaitingContext): Self = StObject.set(x, "createWaitingContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEndWaiting(value: String => Unit): Self = StObject.set(x, "endWaiting", js.Any.fromFunction1(value))
+      inline def setEndWaiting(value: String => Unit): Self = StObject.set(x, "endWaiting", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsWaiting(value: String => Boolean): Self = StObject.set(x, "isWaiting", js.Any.fromFunction1(value))
+      inline def setIsWaiting(value: String => Boolean): Self = StObject.set(x, "isWaiting", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartWaiting(value: String => Unit): Self = StObject.set(x, "startWaiting", js.Any.fromFunction1(value))
+      inline def setStartWaiting(value: String => Unit): Self = StObject.set(x, "startWaiting", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWait(value: ComponentType[WaitProps]): Self = StObject.set(x, "Wait", value.asInstanceOf[js.Any])
+      inline def setWait(value: ComponentType[WaitProps]): Self = StObject.set(x, "Wait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaiters(value: js.Array[String]): Self = StObject.set(x, "waiters", value.asInstanceOf[js.Any])
+      inline def setWaiters(value: js.Array[String]): Self = StObject.set(x, "waiters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitersVarargs(value: String*): Self = StObject.set(x, "waiters", js.Array(value :_*))
+      inline def setWaitersVarargs(value: String*): Self = StObject.set(x, "waiters", js.Array(value :_*))
     }
   }
   
@@ -163,17 +152,14 @@ object mod {
   }
   object WaitProps {
     
-    @scala.inline
-    def apply(fallback: Element, on: String): WaitProps = {
+    inline def apply(fallback: Element, on: String): WaitProps = {
       val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any])
       __obj.asInstanceOf[WaitProps]
     }
     
-    @scala.inline
-    implicit class WaitPropsMutableBuilder[Self <: WaitProps] (val x: Self) extends AnyVal {
+    extension [Self <: WaitProps](x: Self) {
       
-      @scala.inline
-      def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,8 +175,7 @@ object mod {
   }
   object WaitingContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Wait: ComponentType[WaitingContextWaitProps],
       endWaiting: () => Unit,
       isWaiting: () => Boolean,
@@ -200,20 +185,15 @@ object mod {
       __obj.asInstanceOf[WaitingContext]
     }
     
-    @scala.inline
-    implicit class WaitingContextMutableBuilder[Self <: WaitingContext] (val x: Self) extends AnyVal {
+    extension [Self <: WaitingContext](x: Self) {
       
-      @scala.inline
-      def setEndWaiting(value: () => Unit): Self = StObject.set(x, "endWaiting", js.Any.fromFunction0(value))
+      inline def setEndWaiting(value: () => Unit): Self = StObject.set(x, "endWaiting", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsWaiting(value: () => Boolean): Self = StObject.set(x, "isWaiting", js.Any.fromFunction0(value))
+      inline def setIsWaiting(value: () => Boolean): Self = StObject.set(x, "isWaiting", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStartWaiting(value: () => Unit): Self = StObject.set(x, "startWaiting", js.Any.fromFunction0(value))
+      inline def setStartWaiting(value: () => Unit): Self = StObject.set(x, "startWaiting", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWait(value: ComponentType[WaitingContextWaitProps]): Self = StObject.set(x, "Wait", value.asInstanceOf[js.Any])
+      inline def setWait(value: ComponentType[WaitingContextWaitProps]): Self = StObject.set(x, "Wait", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,17 +203,14 @@ object mod {
   }
   object WaitingContextWaitProps {
     
-    @scala.inline
-    def apply(fallback: Element): WaitingContextWaitProps = {
+    inline def apply(fallback: Element): WaitingContextWaitProps = {
       val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any])
       __obj.asInstanceOf[WaitingContextWaitProps]
     }
     
-    @scala.inline
-    implicit class WaitingContextWaitPropsMutableBuilder[Self <: WaitingContextWaitProps] (val x: Self) extends AnyVal {
+    extension [Self <: WaitingContextWaitProps](x: Self) {
       
-      @scala.inline
-      def setFallback(value: Element): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: Element): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -164,8 +164,6 @@ object GitRepository {
   
   // Construction
   /** Creates a new GitRepository instance. */
-  @scala.inline
-  def open(path: String): GitRepository = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[GitRepository]
-  @scala.inline
-  def open(path: String, options: RefreshOnWindowFocus): GitRepository = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GitRepository]
+  inline def open(path: String): GitRepository = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[GitRepository]
+  inline def open(path: String, options: RefreshOnWindowFocus): GitRepository = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GitRepository]
 }

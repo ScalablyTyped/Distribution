@@ -38,8 +38,7 @@ object windowSizeWindowSizeMod {
     @JSImport("react-fns/dist/WindowSize/WindowSize", "WindowSize.defaultProps")
     @js.native
     def defaultProps: PartialWindowSizeConfig = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialWindowSizeConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialWindowSizeConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait WindowSizeConfig extends StObject {
@@ -48,20 +47,16 @@ object windowSizeWindowSizeMod {
   }
   object WindowSizeConfig {
     
-    @scala.inline
-    def apply(): WindowSizeConfig = {
+    inline def apply(): WindowSizeConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WindowSizeConfig]
     }
     
-    @scala.inline
-    implicit class WindowSizeConfigMutableBuilder[Self <: WindowSizeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WindowSizeConfig](x: Self) {
       
-      @scala.inline
-      def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+      inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
+      inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
     }
   }
   
@@ -73,20 +68,16 @@ object windowSizeWindowSizeMod {
   }
   object WindowSizeProps {
     
-    @scala.inline
-    def apply(height: Double, width: Double): WindowSizeProps = {
+    inline def apply(height: Double, width: Double): WindowSizeProps = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[WindowSizeProps]
     }
     
-    @scala.inline
-    implicit class WindowSizePropsMutableBuilder[Self <: WindowSizeProps] (val x: Self) extends AnyVal {
+    extension [Self <: WindowSizeProps](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

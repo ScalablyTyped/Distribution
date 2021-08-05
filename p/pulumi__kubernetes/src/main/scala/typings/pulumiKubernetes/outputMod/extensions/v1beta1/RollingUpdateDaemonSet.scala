@@ -16,16 +16,13 @@ trait RollingUpdateDaemonSet extends StObject {
 }
 object RollingUpdateDaemonSet {
   
-  @scala.inline
-  def apply(maxUnavailable: Double | String): RollingUpdateDaemonSet = {
+  inline def apply(maxUnavailable: Double | String): RollingUpdateDaemonSet = {
     val __obj = js.Dynamic.literal(maxUnavailable = maxUnavailable.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollingUpdateDaemonSet]
   }
   
-  @scala.inline
-  implicit class RollingUpdateDaemonSetMutableBuilder[Self <: RollingUpdateDaemonSet] (val x: Self) extends AnyVal {
+  extension [Self <: RollingUpdateDaemonSet](x: Self) {
     
-    @scala.inline
-    def setMaxUnavailable(value: Double | String): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
+    inline def setMaxUnavailable(value: Double | String): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
   }
 }

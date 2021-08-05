@@ -12,19 +12,15 @@ trait BorderBottomRightRadius extends StObject {
 }
 object BorderBottomRightRadius {
   
-  @scala.inline
-  def apply(borderBottomLeftRadius: Double, borderBottomRightRadius: Double): BorderBottomRightRadius = {
+  inline def apply(borderBottomLeftRadius: Double, borderBottomRightRadius: Double): BorderBottomRightRadius = {
     val __obj = js.Dynamic.literal(borderBottomLeftRadius = borderBottomLeftRadius.asInstanceOf[js.Any], borderBottomRightRadius = borderBottomRightRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderBottomRightRadius]
   }
   
-  @scala.inline
-  implicit class BorderBottomRightRadiusMutableBuilder[Self <: BorderBottomRightRadius] (val x: Self) extends AnyVal {
+  extension [Self <: BorderBottomRightRadius](x: Self) {
     
-    @scala.inline
-    def setBorderBottomLeftRadius(value: Double): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
+    inline def setBorderBottomLeftRadius(value: Double): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomRightRadius(value: Double): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
+    inline def setBorderBottomRightRadius(value: Double): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
   }
 }

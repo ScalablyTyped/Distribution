@@ -22,28 +22,21 @@ trait ReposUpdateInformationAboutPagesSiteEndpoint extends StObject {
 }
 object ReposUpdateInformationAboutPagesSiteEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, source: ReposUpdateInformationAboutPagesSiteParamsSource): ReposUpdateInformationAboutPagesSiteEndpoint = {
+  inline def apply(owner: String, repo: String, source: ReposUpdateInformationAboutPagesSiteParamsSource): ReposUpdateInformationAboutPagesSiteEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUpdateInformationAboutPagesSiteEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposUpdateInformationAboutPagesSiteEndpointMutableBuilder[Self <: ReposUpdateInformationAboutPagesSiteEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposUpdateInformationAboutPagesSiteEndpoint](x: Self) {
     
-    @scala.inline
-    def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
+    inline def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
+    inline def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: ReposUpdateInformationAboutPagesSiteParamsSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: ReposUpdateInformationAboutPagesSiteParamsSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

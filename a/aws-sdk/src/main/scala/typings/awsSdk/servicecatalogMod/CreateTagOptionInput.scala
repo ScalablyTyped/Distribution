@@ -18,19 +18,15 @@ trait CreateTagOptionInput extends StObject {
 }
 object CreateTagOptionInput {
   
-  @scala.inline
-  def apply(Key: TagOptionKey, Value: TagOptionValue): CreateTagOptionInput = {
+  inline def apply(Key: TagOptionKey, Value: TagOptionValue): CreateTagOptionInput = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTagOptionInput]
   }
   
-  @scala.inline
-  implicit class CreateTagOptionInputMutableBuilder[Self <: CreateTagOptionInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTagOptionInput](x: Self) {
     
-    @scala.inline
-    def setKey(value: TagOptionKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: TagOptionKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: TagOptionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TagOptionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

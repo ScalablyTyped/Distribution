@@ -38,8 +38,7 @@ object appengineMod {
     @JSImport("googleapis/build/src/apis/appengine", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Appengine] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Appengine]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
@@ -58,8 +57,7 @@ object appengineMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.v1alphaMod.appengineV1alpha.Appengine
       ] = js.native
-    @scala.inline
-    def v1alpha_=(
+    inline def v1alpha_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -82,8 +80,7 @@ object appengineMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine
       ] = js.native
-    @scala.inline
-    def v1beta_=(
+    inline def v1beta_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -92,21 +89,15 @@ object appengineMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1beta")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def appengine(options: Options): Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(options.asInstanceOf[js.Any]).asInstanceOf[Appengine]
-  @scala.inline
-  def appengine(options: typings.googleapis.appengineV1betaMod.appengineV1beta.Options): typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine]
-  @scala.inline
-  def appengine(options: typings.googleapis.v1alphaMod.appengineV1alpha.Options): typings.googleapis.v1alphaMod.appengineV1alpha.Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alphaMod.appengineV1alpha.Appengine]
+  inline def appengine(options: Options): Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(options.asInstanceOf[js.Any]).asInstanceOf[Appengine]
+  inline def appengine(options: typings.googleapis.appengineV1betaMod.appengineV1beta.Options): typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine]
+  inline def appengine(options: typings.googleapis.v1alphaMod.appengineV1alpha.Options): typings.googleapis.v1alphaMod.appengineV1alpha.Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alphaMod.appengineV1alpha.Appengine]
   
-  @scala.inline
-  def appengine_v1(version: v1): Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(version.asInstanceOf[js.Any]).asInstanceOf[Appengine]
+  inline def appengine_v1(version: v1): Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(version.asInstanceOf[js.Any]).asInstanceOf[Appengine]
   
-  @scala.inline
-  def appengine_v1alpha(version: v1alpha): typings.googleapis.v1alphaMod.appengineV1alpha.Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alphaMod.appengineV1alpha.Appengine]
+  inline def appengine_v1alpha(version: v1alpha): typings.googleapis.v1alphaMod.appengineV1alpha.Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alphaMod.appengineV1alpha.Appengine]
   
-  @scala.inline
-  def appengine_v1beta(version: v1beta): typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine]
+  inline def appengine_v1beta(version: v1beta): typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine = ^.asInstanceOf[js.Dynamic].applyDynamic("appengine")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine]
   
   object auth extends Shortcut {
     
@@ -141,8 +132,7 @@ object appengineMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RuntimeTarget extends StObject
 object RuntimeTarget {
   
-  @scala.inline
-  def browser: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.browser = "browser".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.browser]
+  inline def browser: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.browser = "browser".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.browser]
   
-  @scala.inline
-  def node: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.node = "node".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.node]
+  inline def node: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.node = "node".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.node]
   
-  @scala.inline
-  def universal: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.universal = "universal".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.universal]
+  inline def universal: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.universal = "universal".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.universal]
 }

@@ -15,20 +15,16 @@ trait LongHeaderValue
 }
 object LongHeaderValue {
   
-  @scala.inline
-  def apply(value: Int64): LongHeaderValue = {
+  inline def apply(value: Int64): LongHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("long")
     __obj.asInstanceOf[LongHeaderValue]
   }
   
-  @scala.inline
-  implicit class LongHeaderValueMutableBuilder[Self <: LongHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: LongHeaderValue](x: Self) {
     
-    @scala.inline
-    def setType(value: long): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: long): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Int64): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Int64): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait BatchDeleteImageRequest extends StObject {
 }
 object BatchDeleteImageRequest {
   
-  @scala.inline
-  def apply(imageIds: ImageIdentifierList, repositoryName: RepositoryName): BatchDeleteImageRequest = {
+  inline def apply(imageIds: ImageIdentifierList, repositoryName: RepositoryName): BatchDeleteImageRequest = {
     val __obj = js.Dynamic.literal(imageIds = imageIds.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteImageRequest]
   }
   
-  @scala.inline
-  implicit class BatchDeleteImageRequestMutableBuilder[Self <: BatchDeleteImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteImageRequest](x: Self) {
     
-    @scala.inline
-    def setImageIds(value: ImageIdentifierList): Self = StObject.set(x, "imageIds", value.asInstanceOf[js.Any])
+    inline def setImageIds(value: ImageIdentifierList): Self = StObject.set(x, "imageIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdsVarargs(value: ImageIdentifier*): Self = StObject.set(x, "imageIds", js.Array(value :_*))
+    inline def setImageIdsVarargs(value: ImageIdentifier*): Self = StObject.set(x, "imageIds", js.Array(value :_*))
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

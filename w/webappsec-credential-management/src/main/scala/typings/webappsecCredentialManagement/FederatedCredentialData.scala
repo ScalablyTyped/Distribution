@@ -17,22 +17,17 @@ trait FederatedCredentialData
 }
 object FederatedCredentialData {
   
-  @scala.inline
-  def apply(id: String, provider: String): FederatedCredentialData = {
+  inline def apply(id: String, provider: String): FederatedCredentialData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
     __obj.asInstanceOf[FederatedCredentialData]
   }
   
-  @scala.inline
-  implicit class FederatedCredentialDataMutableBuilder[Self <: FederatedCredentialData] (val x: Self) extends AnyVal {
+  extension [Self <: FederatedCredentialData](x: Self) {
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    @scala.inline
-    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
   }
 }

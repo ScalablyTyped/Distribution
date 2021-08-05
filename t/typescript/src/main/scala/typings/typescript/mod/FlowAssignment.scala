@@ -15,19 +15,15 @@ trait FlowAssignment
 }
 object FlowAssignment {
   
-  @scala.inline
-  def apply(antecedent: FlowNode, flags: FlowFlags, node: Expression | VariableDeclaration | BindingElement): FlowAssignment = {
+  inline def apply(antecedent: FlowNode, flags: FlowFlags, node: Expression | VariableDeclaration | BindingElement): FlowAssignment = {
     val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowAssignment]
   }
   
-  @scala.inline
-  implicit class FlowAssignmentMutableBuilder[Self <: FlowAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: FlowAssignment](x: Self) {
     
-    @scala.inline
-    def setAntecedent(value: FlowNode): Self = StObject.set(x, "antecedent", value.asInstanceOf[js.Any])
+    inline def setAntecedent(value: FlowNode): Self = StObject.set(x, "antecedent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: Expression | VariableDeclaration | BindingElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Expression | VariableDeclaration | BindingElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

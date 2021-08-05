@@ -176,20 +176,16 @@ object tracking {
   }
   object TrackEvent {
     
-    @scala.inline
-    def apply(data: js.Array[TrackRect]): TrackEvent = {
+    inline def apply(data: js.Array[TrackRect]): TrackEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrackEvent]
     }
     
-    @scala.inline
-    implicit class TrackEventMutableBuilder[Self <: TrackEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TrackEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[TrackRect]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[TrackRect]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: TrackRect*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: TrackRect*): Self = StObject.set(x, "data", js.Array(value :_*))
     }
   }
   
@@ -220,32 +216,24 @@ object tracking {
   }
   object TrackRect {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): TrackRect = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): TrackRect = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrackRect]
     }
     
-    @scala.inline
-    implicit class TrackRectMutableBuilder[Self <: TrackRect] (val x: Self) extends AnyVal {
+    extension [Self <: TrackRect](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   

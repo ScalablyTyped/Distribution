@@ -9,8 +9,7 @@ trait IXmlCDataSection
      with IXmlText
 object IXmlCDataSection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChild: IXmlNode => IXmlNode,
     appendData: String => Unit,
     attributes: XmlNamedNodeMap,

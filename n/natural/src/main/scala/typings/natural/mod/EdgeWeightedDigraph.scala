@@ -14,22 +14,17 @@ trait EdgeWeightedDigraph extends StObject {
 }
 object EdgeWeightedDigraph {
   
-  @scala.inline
-  def apply(add: (Double, Double, Double) => Unit, e: () => Double, v: () => Double): EdgeWeightedDigraph = {
+  inline def apply(add: (Double, Double, Double) => Unit, e: () => Double, v: () => Double): EdgeWeightedDigraph = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction3(add), e = js.Any.fromFunction0(e), v = js.Any.fromFunction0(v))
     __obj.asInstanceOf[EdgeWeightedDigraph]
   }
   
-  @scala.inline
-  implicit class EdgeWeightedDigraphMutableBuilder[Self <: EdgeWeightedDigraph] (val x: Self) extends AnyVal {
+  extension [Self <: EdgeWeightedDigraph](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
+    inline def setAdd(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setE(value: () => Double): Self = StObject.set(x, "e", js.Any.fromFunction0(value))
+    inline def setE(value: () => Double): Self = StObject.set(x, "e", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setV(value: () => Double): Self = StObject.set(x, "v", js.Any.fromFunction0(value))
+    inline def setV(value: () => Double): Self = StObject.set(x, "v", js.Any.fromFunction0(value))
   }
 }

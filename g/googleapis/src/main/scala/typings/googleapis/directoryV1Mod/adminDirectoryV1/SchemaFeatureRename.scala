@@ -16,19 +16,15 @@ trait SchemaFeatureRename extends StObject {
 }
 object SchemaFeatureRename {
   
-  @scala.inline
-  def apply(): SchemaFeatureRename = {
+  inline def apply(): SchemaFeatureRename = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFeatureRename]
   }
   
-  @scala.inline
-  implicit class SchemaFeatureRenameMutableBuilder[Self <: SchemaFeatureRename] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFeatureRename](x: Self) {
     
-    @scala.inline
-    def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
+    inline def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewNameUndefined: Self = StObject.set(x, "newName", js.undefined)
+    inline def setNewNameUndefined: Self = StObject.set(x, "newName", js.undefined)
   }
 }

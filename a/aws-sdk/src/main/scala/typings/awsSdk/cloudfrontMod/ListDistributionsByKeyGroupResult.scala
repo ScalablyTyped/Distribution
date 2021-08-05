@@ -10,19 +10,15 @@ trait ListDistributionsByKeyGroupResult extends StObject {
 }
 object ListDistributionsByKeyGroupResult {
   
-  @scala.inline
-  def apply(): ListDistributionsByKeyGroupResult = {
+  inline def apply(): ListDistributionsByKeyGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDistributionsByKeyGroupResult]
   }
   
-  @scala.inline
-  implicit class ListDistributionsByKeyGroupResultMutableBuilder[Self <: ListDistributionsByKeyGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListDistributionsByKeyGroupResult](x: Self) {
     
-    @scala.inline
-    def setDistributionIdList(value: DistributionIdList): Self = StObject.set(x, "DistributionIdList", value.asInstanceOf[js.Any])
+    inline def setDistributionIdList(value: DistributionIdList): Self = StObject.set(x, "DistributionIdList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionIdListUndefined: Self = StObject.set(x, "DistributionIdList", js.undefined)
+    inline def setDistributionIdListUndefined: Self = StObject.set(x, "DistributionIdList", js.undefined)
   }
 }

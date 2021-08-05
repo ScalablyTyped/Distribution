@@ -30,43 +30,31 @@ trait CertPattern extends StObject {
 }
 object CertPattern {
   
-  @scala.inline
-  def apply(): CertPattern = {
+  inline def apply(): CertPattern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertPattern]
   }
   
-  @scala.inline
-  implicit class CertPatternMutableBuilder[Self <: CertPattern] (val x: Self) extends AnyVal {
+  extension [Self <: CertPattern](x: Self) {
     
-    @scala.inline
-    def setEnrollmentURI(value: js.Array[String]): Self = StObject.set(x, "EnrollmentURI", value.asInstanceOf[js.Any])
+    inline def setEnrollmentURI(value: js.Array[String]): Self = StObject.set(x, "EnrollmentURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnrollmentURIUndefined: Self = StObject.set(x, "EnrollmentURI", js.undefined)
+    inline def setEnrollmentURIUndefined: Self = StObject.set(x, "EnrollmentURI", js.undefined)
     
-    @scala.inline
-    def setEnrollmentURIVarargs(value: String*): Self = StObject.set(x, "EnrollmentURI", js.Array(value :_*))
+    inline def setEnrollmentURIVarargs(value: String*): Self = StObject.set(x, "EnrollmentURI", js.Array(value :_*))
     
-    @scala.inline
-    def setIssuer(value: IssuerSubjectPattern): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: IssuerSubjectPattern): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerCARef(value: js.Array[String]): Self = StObject.set(x, "IssuerCARef", value.asInstanceOf[js.Any])
+    inline def setIssuerCARef(value: js.Array[String]): Self = StObject.set(x, "IssuerCARef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerCARefUndefined: Self = StObject.set(x, "IssuerCARef", js.undefined)
+    inline def setIssuerCARefUndefined: Self = StObject.set(x, "IssuerCARef", js.undefined)
     
-    @scala.inline
-    def setIssuerCARefVarargs(value: String*): Self = StObject.set(x, "IssuerCARef", js.Array(value :_*))
+    inline def setIssuerCARefVarargs(value: String*): Self = StObject.set(x, "IssuerCARef", js.Array(value :_*))
     
-    @scala.inline
-    def setIssuerSubjectPattern(value: IssuerSubjectPattern): Self = StObject.set(x, "IssuerSubjectPattern", value.asInstanceOf[js.Any])
+    inline def setIssuerSubjectPattern(value: IssuerSubjectPattern): Self = StObject.set(x, "IssuerSubjectPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerSubjectPatternUndefined: Self = StObject.set(x, "IssuerSubjectPattern", js.undefined)
+    inline def setIssuerSubjectPatternUndefined: Self = StObject.set(x, "IssuerSubjectPattern", js.undefined)
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "Issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "Issuer", js.undefined)
   }
 }

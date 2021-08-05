@@ -11,6 +11,5 @@ object routingHeader {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromParams(params: StringDictionary[String | Double | Boolean]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParams")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromParams(params: StringDictionary[String | Double | Boolean]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParams")(params.asInstanceOf[js.Any]).asInstanceOf[String]
 }

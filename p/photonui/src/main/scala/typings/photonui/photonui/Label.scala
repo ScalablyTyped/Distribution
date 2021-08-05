@@ -21,8 +21,7 @@ trait Label
 }
 object Label {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     contextMenu: PopupWindow,
@@ -52,19 +51,14 @@ object Label {
     __obj.asInstanceOf[Label]
   }
   
-  @scala.inline
-  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+  extension [Self <: Label](x: Self) {
     
-    @scala.inline
-    def setForInput(value: Field | CheckBox): Self = StObject.set(x, "forInput", value.asInstanceOf[js.Any])
+    inline def setForInput(value: Field | CheckBox): Self = StObject.set(x, "forInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForInputName(value: String): Self = StObject.set(x, "forInputName", value.asInstanceOf[js.Any])
+    inline def setForInputName(value: String): Self = StObject.set(x, "forInputName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
   }
 }

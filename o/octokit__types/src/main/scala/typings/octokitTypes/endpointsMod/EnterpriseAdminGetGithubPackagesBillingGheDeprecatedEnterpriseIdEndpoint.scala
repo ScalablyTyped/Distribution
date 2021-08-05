@@ -14,19 +14,15 @@ trait EnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint e
 }
 object EnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint {
   
-  @scala.inline
-  def apply(): EnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint = {
+  inline def apply(): EnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpointMutableBuilder[Self <: EnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise_id(value: String): Self = StObject.set(x, "enterprise_id", value.asInstanceOf[js.Any])
+    inline def setEnterprise_id(value: String): Self = StObject.set(x, "enterprise_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterprise_idUndefined: Self = StObject.set(x, "enterprise_id", js.undefined)
+    inline def setEnterprise_idUndefined: Self = StObject.set(x, "enterprise_id", js.undefined)
   }
 }

@@ -165,8 +165,7 @@ object AllJoyn {
       * @return An object containing About data for the session.
       */
     /* static member */
-    @scala.inline
-    def getDataBySessionPortAsync(
+    inline def getDataBySessionPortAsync(
       uniqueName: String,
       busAttachment: typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynBusAttachment,
       sessionPort: Double
@@ -180,8 +179,7 @@ object AllJoyn {
       * @return An object containing About data for the session in the set language.
       */
     /* static member */
-    @scala.inline
-    def getDataBySessionPortAsync(
+    inline def getDataBySessionPortAsync(
       uniqueName: String,
       busAttachment: typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynBusAttachment,
       sessionPort: Double,
@@ -589,144 +587,126 @@ object AllJoyn {
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.authenticationFailed")
     @js.native
     def authenticationFailed: Double = js.native
-    @scala.inline
-    def authenticationFailed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("authenticationFailed")(x.asInstanceOf[js.Any])
+    inline def authenticationFailed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("authenticationFailed")(x.asInstanceOf[js.Any])
     
     /** Authentication was rejected by the advertising app. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.authenticationRejectedByUser")
     @js.native
     def authenticationRejectedByUser: Double = js.native
-    @scala.inline
-    def authenticationRejectedByUser_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("authenticationRejectedByUser")(x.asInstanceOf[js.Any])
+    inline def authenticationRejectedByUser_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("authenticationRejectedByUser")(x.asInstanceOf[js.Any])
     
     /** The connection to the session was refused. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.connectionRefused")
     @js.native
     def connectionRefused: Double = js.native
-    @scala.inline
-    def connectionRefused_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectionRefused")(x.asInstanceOf[js.Any])
+    inline def connectionRefused_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectionRefused")(x.asInstanceOf[js.Any])
     
     /** The operation has failed. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.fail")
     @js.native
     def fail: Double = js.native
-    @scala.inline
-    def fail_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fail")(x.asInstanceOf[js.Any])
+    inline def fail_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fail")(x.asInstanceOf[js.Any])
     
     /** Insufficient security provided for session connections. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.insufficientSecurity")
     @js.native
     def insufficientSecurity: Double = js.native
-    @scala.inline
-    def insufficientSecurity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insufficientSecurity")(x.asInstanceOf[js.Any])
+    inline def insufficientSecurity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insufficientSecurity")(x.asInstanceOf[js.Any])
     
     /** Function call argument 1 is invalid. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.invalidArgument1")
     @js.native
     def invalidArgument1: Double = js.native
-    @scala.inline
-    def invalidArgument1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument1")(x.asInstanceOf[js.Any])
+    inline def invalidArgument1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument1")(x.asInstanceOf[js.Any])
     
     /** Function call argument 2 is invalid. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.invalidArgument2")
     @js.native
     def invalidArgument2: Double = js.native
-    @scala.inline
-    def invalidArgument2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument2")(x.asInstanceOf[js.Any])
+    inline def invalidArgument2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument2")(x.asInstanceOf[js.Any])
     
     /** Function call argument 3 is invalid. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.invalidArgument3")
     @js.native
     def invalidArgument3: Double = js.native
-    @scala.inline
-    def invalidArgument3_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument3")(x.asInstanceOf[js.Any])
+    inline def invalidArgument3_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument3")(x.asInstanceOf[js.Any])
     
     /** Function call argument 4 is invalid. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.invalidArgument4")
     @js.native
     def invalidArgument4: Double = js.native
-    @scala.inline
-    def invalidArgument4_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument4")(x.asInstanceOf[js.Any])
+    inline def invalidArgument4_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument4")(x.asInstanceOf[js.Any])
     
     /** Function call argument 5 is invalid. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.invalidArgument5")
     @js.native
     def invalidArgument5: Double = js.native
-    @scala.inline
-    def invalidArgument5_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument5")(x.asInstanceOf[js.Any])
+    inline def invalidArgument5_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument5")(x.asInstanceOf[js.Any])
     
     /** Function call argument 6 is invalid. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.invalidArgument6")
     @js.native
     def invalidArgument6: Double = js.native
-    @scala.inline
-    def invalidArgument6_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument6")(x.asInstanceOf[js.Any])
+    inline def invalidArgument6_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument6")(x.asInstanceOf[js.Any])
     
     /** Function call argument 7 is invalid. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.invalidArgument7")
     @js.native
     def invalidArgument7: Double = js.native
-    @scala.inline
-    def invalidArgument7_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument7")(x.asInstanceOf[js.Any])
+    inline def invalidArgument7_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument7")(x.asInstanceOf[js.Any])
     
     /** Function call argument 8 is invalid. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.invalidArgument8")
     @js.native
     def invalidArgument8: Double = js.native
-    @scala.inline
-    def invalidArgument8_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument8")(x.asInstanceOf[js.Any])
+    inline def invalidArgument8_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidArgument8")(x.asInstanceOf[js.Any])
     
     /** Operation successful. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.ok")
     @js.native
     def ok: Double = js.native
-    @scala.inline
-    def ok_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ok")(x.asInstanceOf[js.Any])
+    inline def ok_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ok")(x.asInstanceOf[js.Any])
     
     /** The operation timed out. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.operationTimedOut")
     @js.native
     def operationTimedOut: Double = js.native
-    @scala.inline
-    def operationTimedOut_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operationTimedOut")(x.asInstanceOf[js.Any])
+    inline def operationTimedOut_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operationTimedOut")(x.asInstanceOf[js.Any])
     
     /** The Producer end of the session connection was closed. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.otherEndClosed")
     @js.native
     def otherEndClosed: Double = js.native
-    @scala.inline
-    def otherEndClosed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("otherEndClosed")(x.asInstanceOf[js.Any])
+    inline def otherEndClosed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("otherEndClosed")(x.asInstanceOf[js.Any])
     
     /** The SSL connection has failed. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.sslConnectFailed")
     @js.native
     def sslConnectFailed: Double = js.native
-    @scala.inline
-    def sslConnectFailed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sslConnectFailed")(x.asInstanceOf[js.Any])
+    inline def sslConnectFailed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sslConnectFailed")(x.asInstanceOf[js.Any])
     
     /** The SSL verification failed. Review provided SSL credentials. */
     /* static member */
     @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus.sslIdentityVerificationFailed")
     @js.native
     def sslIdentityVerificationFailed: Double = js.native
-    @scala.inline
-    def sslIdentityVerificationFailed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sslIdentityVerificationFailed")(x.asInstanceOf[js.Any])
+    inline def sslIdentityVerificationFailed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sslIdentityVerificationFailed")(x.asInstanceOf[js.Any])
   }
   
   /** Defines values used to indicate the type of data carried in session traffic. */

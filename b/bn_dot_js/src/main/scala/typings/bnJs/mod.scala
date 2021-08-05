@@ -70,38 +70,32 @@ object mod {
     * @description returns true if the supplied object is a BN.js instance
     */
   /* static member */
-  @scala.inline
-  def isBN(b: js.Any): /* is bn.js.bn.js.BN */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBN")(b.asInstanceOf[js.Any]).asInstanceOf[/* is bn.js.bn.js.BN */ Boolean]
+  inline def isBN(b: js.Any): /* is bn.js.bn.js.BN */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBN")(b.asInstanceOf[js.Any]).asInstanceOf[/* is bn.js.bn.js.BN */ Boolean]
   
   /**
     * @description returns the maximum of 2 BN instances.
     */
   /* static member */
-  @scala.inline
-  def max(left: BN, right: BN): BN = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BN]
+  inline def max(left: BN, right: BN): BN = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BN]
   
   /**
     * @description returns the minimum of 2 BN instances.
     */
   /* static member */
-  @scala.inline
-  def min(left: BN, right: BN): BN = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BN]
+  inline def min(left: BN, right: BN): BN = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BN]
   
   /**
     * @description  create a reduction context  with the Montgomery trick.
     */
   /* static member */
-  @scala.inline
-  def mont(num: BN): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("mont")(num.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
+  inline def mont(num: BN): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("mont")(num.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
   
   /**
     * @description  create a reduction context
     */
   /* static member */
-  @scala.inline
-  def red(reductionContext: BN): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(reductionContext.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
-  @scala.inline
-  def red(reductionContext: IPrimeName): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(reductionContext.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
+  inline def red(reductionContext: BN): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(reductionContext.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
+  inline def red(reductionContext: IPrimeName): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(reductionContext.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
   
   @js.native
   trait BN extends StObject {
@@ -572,11 +566,9 @@ object mod {
   trait Endianness extends StObject
   object Endianness {
     
-    @scala.inline
-    def be: typings.bnJs.bnJsStrings.be = "be".asInstanceOf[typings.bnJs.bnJsStrings.be]
+    inline def be: typings.bnJs.bnJsStrings.be = "be".asInstanceOf[typings.bnJs.bnJsStrings.be]
     
-    @scala.inline
-    def le: typings.bnJs.bnJsStrings.le = "le".asInstanceOf[typings.bnJs.bnJsStrings.le]
+    inline def le: typings.bnJs.bnJsStrings.le = "le".asInstanceOf[typings.bnJs.bnJsStrings.le]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -588,17 +580,13 @@ object mod {
   trait IPrimeName extends StObject
   object IPrimeName {
     
-    @scala.inline
-    def k256: typings.bnJs.bnJsStrings.k256 = "k256".asInstanceOf[typings.bnJs.bnJsStrings.k256]
+    inline def k256: typings.bnJs.bnJsStrings.k256 = "k256".asInstanceOf[typings.bnJs.bnJsStrings.k256]
     
-    @scala.inline
-    def p192: typings.bnJs.bnJsStrings.p192 = "p192".asInstanceOf[typings.bnJs.bnJsStrings.p192]
+    inline def p192: typings.bnJs.bnJsStrings.p192 = "p192".asInstanceOf[typings.bnJs.bnJsStrings.p192]
     
-    @scala.inline
-    def p224: typings.bnJs.bnJsStrings.p224 = "p224".asInstanceOf[typings.bnJs.bnJsStrings.p224]
+    inline def p224: typings.bnJs.bnJsStrings.p224 = "p224".asInstanceOf[typings.bnJs.bnJsStrings.p224]
     
-    @scala.inline
-    def p25519: typings.bnJs.bnJsStrings.p25519 = "p25519".asInstanceOf[typings.bnJs.bnJsStrings.p25519]
+    inline def p25519: typings.bnJs.bnJsStrings.p25519 = "p25519".asInstanceOf[typings.bnJs.bnJsStrings.p25519]
   }
   
   trait MPrime extends StObject {
@@ -613,26 +601,20 @@ object mod {
   }
   object MPrime {
     
-    @scala.inline
-    def apply(k: BN, n: Double, name: String, p: BN): MPrime = {
+    inline def apply(k: BN, n: Double, name: String, p: BN): MPrime = {
       val __obj = js.Dynamic.literal(k = k.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
       __obj.asInstanceOf[MPrime]
     }
     
-    @scala.inline
-    implicit class MPrimeMutableBuilder[Self <: MPrime] (val x: Self) extends AnyVal {
+    extension [Self <: MPrime](x: Self) {
       
-      @scala.inline
-      def setK(value: BN): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+      inline def setK(value: BN): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP(value: BN): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: BN): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     }
   }
   
@@ -726,20 +708,16 @@ object mod {
   }
   object ReductionContext {
     
-    @scala.inline
-    def apply(m: Double, prime: MPrime): ReductionContext = {
+    inline def apply(m: Double, prime: MPrime): ReductionContext = {
       val __obj = js.Dynamic.literal(m = m.asInstanceOf[js.Any], prime = prime.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReductionContext]
     }
     
-    @scala.inline
-    implicit class ReductionContextMutableBuilder[Self <: ReductionContext] (val x: Self) extends AnyVal {
+    extension [Self <: ReductionContext](x: Self) {
       
-      @scala.inline
-      def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrime(value: MPrime): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
+      inline def setPrime(value: MPrime): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
     }
   }
 }

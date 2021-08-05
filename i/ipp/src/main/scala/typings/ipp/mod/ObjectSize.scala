@@ -14,31 +14,23 @@ trait ObjectSize extends StObject {
 }
 object ObjectSize {
   
-  @scala.inline
-  def apply(): ObjectSize = {
+  inline def apply(): ObjectSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectSize]
   }
   
-  @scala.inline
-  implicit class ObjectSizeMutableBuilder[Self <: ObjectSize] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectSize](x: Self) {
     
-    @scala.inline
-    def `setX-dimension`(value: Double): Self = StObject.set(x, "x-dimension", value.asInstanceOf[js.Any])
+    inline def `setX-dimension`(value: Double): Self = StObject.set(x, "x-dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-dimensionUndefined`: Self = StObject.set(x, "x-dimension", js.undefined)
+    inline def `setX-dimensionUndefined`: Self = StObject.set(x, "x-dimension", js.undefined)
     
-    @scala.inline
-    def `setY-dimension`(value: Double): Self = StObject.set(x, "y-dimension", value.asInstanceOf[js.Any])
+    inline def `setY-dimension`(value: Double): Self = StObject.set(x, "y-dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setY-dimensionUndefined`: Self = StObject.set(x, "y-dimension", js.undefined)
+    inline def `setY-dimensionUndefined`: Self = StObject.set(x, "y-dimension", js.undefined)
     
-    @scala.inline
-    def `setZ-dimension`(value: Double): Self = StObject.set(x, "z-dimension", value.asInstanceOf[js.Any])
+    inline def `setZ-dimension`(value: Double): Self = StObject.set(x, "z-dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setZ-dimensionUndefined`: Self = StObject.set(x, "z-dimension", js.undefined)
+    inline def `setZ-dimensionUndefined`: Self = StObject.set(x, "z-dimension", js.undefined)
   }
 }

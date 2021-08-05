@@ -61,8 +61,7 @@ trait XUIElementFactoryRegistration
 }
 object XUIElementFactoryRegistration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RegisteredFactories: SafeArray[SafeArray[PropertyValue]],
     acquire: () => Unit,
     deregisterFactory: (String, String, String) => Unit,
@@ -76,22 +75,16 @@ object XUIElementFactoryRegistration {
     __obj.asInstanceOf[XUIElementFactoryRegistration]
   }
   
-  @scala.inline
-  implicit class XUIElementFactoryRegistrationMutableBuilder[Self <: XUIElementFactoryRegistration] (val x: Self) extends AnyVal {
+  extension [Self <: XUIElementFactoryRegistration](x: Self) {
     
-    @scala.inline
-    def setDeregisterFactory(value: (String, String, String) => Unit): Self = StObject.set(x, "deregisterFactory", js.Any.fromFunction3(value))
+    inline def setDeregisterFactory(value: (String, String, String) => Unit): Self = StObject.set(x, "deregisterFactory", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetFactory(value: (String, String) => XUIElementFactory): Self = StObject.set(x, "getFactory", js.Any.fromFunction2(value))
+    inline def setGetFactory(value: (String, String) => XUIElementFactory): Self = StObject.set(x, "getFactory", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetRegisteredFactories(value: () => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "getRegisteredFactories", js.Any.fromFunction0(value))
+    inline def setGetRegisteredFactories(value: () => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "getRegisteredFactories", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRegisterFactory(value: (String, String, String, String) => Unit): Self = StObject.set(x, "registerFactory", js.Any.fromFunction4(value))
+    inline def setRegisterFactory(value: (String, String, String, String) => Unit): Self = StObject.set(x, "registerFactory", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRegisteredFactories(value: SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "RegisteredFactories", value.asInstanceOf[js.Any])
+    inline def setRegisteredFactories(value: SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "RegisteredFactories", value.asInstanceOf[js.Any])
   }
 }

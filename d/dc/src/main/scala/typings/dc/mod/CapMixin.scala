@@ -23,8 +23,7 @@ trait CapMixin[T] extends StObject {
 }
 object CapMixin {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     cap: IGetSet[Double, T],
     othersGrouper: IGetSet[js.Function1[/* data */ js.Array[js.Any], js.Array[js.Any]], T],
     othersLabel: IGetSet[String, T]
@@ -33,16 +32,12 @@ object CapMixin {
     __obj.asInstanceOf[CapMixin[T]]
   }
   
-  @scala.inline
-  implicit class CapMixinMutableBuilder[Self <: CapMixin[?], T] (val x: Self & CapMixin[T]) extends AnyVal {
+  extension [Self <: CapMixin[?], T](x: Self & CapMixin[T]) {
     
-    @scala.inline
-    def setCap(value: IGetSet[Double, T]): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
+    inline def setCap(value: IGetSet[Double, T]): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOthersGrouper(value: IGetSet[js.Function1[/* data */ js.Array[js.Any], js.Array[js.Any]], T]): Self = StObject.set(x, "othersGrouper", value.asInstanceOf[js.Any])
+    inline def setOthersGrouper(value: IGetSet[js.Function1[/* data */ js.Array[js.Any], js.Array[js.Any]], T]): Self = StObject.set(x, "othersGrouper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOthersLabel(value: IGetSet[String, T]): Self = StObject.set(x, "othersLabel", value.asInstanceOf[js.Any])
+    inline def setOthersLabel(value: IGetSet[String, T]): Self = StObject.set(x, "othersLabel", value.asInstanceOf[js.Any])
   }
 }

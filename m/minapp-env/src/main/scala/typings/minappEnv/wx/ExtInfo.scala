@@ -11,16 +11,13 @@ trait ExtInfo extends StObject {
 }
 object ExtInfo {
   
-  @scala.inline
-  def apply(extConfig: js.Object): ExtInfo = {
+  inline def apply(extConfig: js.Object): ExtInfo = {
     val __obj = js.Dynamic.literal(extConfig = extConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtInfo]
   }
   
-  @scala.inline
-  implicit class ExtInfoMutableBuilder[Self <: ExtInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExtInfo](x: Self) {
     
-    @scala.inline
-    def setExtConfig(value: js.Object): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
+    inline def setExtConfig(value: js.Object): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
   }
 }

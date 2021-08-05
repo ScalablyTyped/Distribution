@@ -14,25 +14,19 @@ trait GooglePrivacyDlpV2Expressions extends StObject {
 }
 object GooglePrivacyDlpV2Expressions {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2Expressions = {
+  inline def apply(): GooglePrivacyDlpV2Expressions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2Expressions]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ExpressionsMutableBuilder[Self <: GooglePrivacyDlpV2Expressions] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2Expressions](x: Self) {
     
-    @scala.inline
-    def setConditions(value: GooglePrivacyDlpV2Conditions): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: GooglePrivacyDlpV2Conditions): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setLogicalOperator(value: String): Self = StObject.set(x, "logicalOperator", value.asInstanceOf[js.Any])
+    inline def setLogicalOperator(value: String): Self = StObject.set(x, "logicalOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalOperatorUndefined: Self = StObject.set(x, "logicalOperator", js.undefined)
+    inline def setLogicalOperatorUndefined: Self = StObject.set(x, "logicalOperator", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait JavascriptDialogClosedEvent extends StObject {
 }
 object JavascriptDialogClosedEvent {
   
-  @scala.inline
-  def apply(result: Boolean, userInput: String): JavascriptDialogClosedEvent = {
+  inline def apply(result: Boolean, userInput: String): JavascriptDialogClosedEvent = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], userInput = userInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[JavascriptDialogClosedEvent]
   }
   
-  @scala.inline
-  implicit class JavascriptDialogClosedEventMutableBuilder[Self <: JavascriptDialogClosedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: JavascriptDialogClosedEvent](x: Self) {
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInput(value: String): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
+    inline def setUserInput(value: String): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
   }
 }

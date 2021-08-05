@@ -15,8 +15,7 @@ object rowInterfaceMod {
        with /* key */ StringDictionary[ScalarType | ArrayType | RowInterface | js.Array[RowInterface]]
   object RowInterface {
     
-    @scala.inline
-    def apply(): RowInterface = {
+    inline def apply(): RowInterface = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RowInterface]
     }

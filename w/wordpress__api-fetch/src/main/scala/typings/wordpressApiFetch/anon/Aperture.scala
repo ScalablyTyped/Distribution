@@ -32,8 +32,7 @@ trait Aperture extends StObject {
 }
 object Aperture {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aperture: String,
     camera: String,
     caption: String,
@@ -51,46 +50,32 @@ object Aperture {
     __obj.asInstanceOf[Aperture]
   }
   
-  @scala.inline
-  implicit class ApertureMutableBuilder[Self <: Aperture] (val x: Self) extends AnyVal {
+  extension [Self <: Aperture](x: Self) {
     
-    @scala.inline
-    def setAperture(value: String): Self = StObject.set(x, "aperture", value.asInstanceOf[js.Any])
+    inline def setAperture(value: String): Self = StObject.set(x, "aperture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCamera(value: String): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: String): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_timestamp(value: String): Self = StObject.set(x, "created_timestamp", value.asInstanceOf[js.Any])
+    inline def setCreated_timestamp(value: String): Self = StObject.set(x, "created_timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredit(value: String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
+    inline def setCredit(value: String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocal_length(value: String): Self = StObject.set(x, "focal_length", value.asInstanceOf[js.Any])
+    inline def setFocal_length(value: String): Self = StObject.set(x, "focal_length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIso(value: String): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
+    inline def setIso(value: String): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShutter_speed(value: String): Self = StObject.set(x, "shutter_speed", value.asInstanceOf[js.Any])
+    inline def setShutter_speed(value: String): Self = StObject.set(x, "shutter_speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -17,31 +17,23 @@ trait PartialOptionsTypePropsan extends StObject {
 }
 object PartialOptionsTypePropsan {
   
-  @scala.inline
-  def apply(): PartialOptionsTypePropsan = {
+  inline def apply(): PartialOptionsTypePropsan = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialOptionsTypePropsan]
   }
   
-  @scala.inline
-  implicit class PartialOptionsTypePropsanMutableBuilder[Self <: PartialOptionsTypePropsan] (val x: Self) extends AnyVal {
+  extension [Self <: PartialOptionsTypePropsan](x: Self) {
     
-    @scala.inline
-    def setDisplay(value: OptionsKnobOptionsDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: OptionsKnobOptionsDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setKnob(value: OptionsTypeKnob[js.Any]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: OptionsTypeKnob[js.Any]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
+    inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait IsVertical extends StObject {
 }
 object IsVertical {
   
-  @scala.inline
-  def apply(exists: () => Boolean, isVertical: () => Boolean, textContent: () => js.Any): IsVertical = {
+  inline def apply(exists: () => Boolean, isVertical: () => Boolean, textContent: () => js.Any): IsVertical = {
     val __obj = js.Dynamic.literal(exists = js.Any.fromFunction0(exists), isVertical = js.Any.fromFunction0(isVertical), textContent = js.Any.fromFunction0(textContent))
     __obj.asInstanceOf[IsVertical]
   }
   
-  @scala.inline
-  implicit class IsVerticalMutableBuilder[Self <: IsVertical] (val x: Self) extends AnyVal {
+  extension [Self <: IsVertical](x: Self) {
     
-    @scala.inline
-    def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVertical(value: () => Boolean): Self = StObject.set(x, "isVertical", js.Any.fromFunction0(value))
+    inline def setIsVertical(value: () => Boolean): Self = StObject.set(x, "isVertical", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextContent(value: () => js.Any): Self = StObject.set(x, "textContent", js.Any.fromFunction0(value))
+    inline def setTextContent(value: () => js.Any): Self = StObject.set(x, "textContent", js.Any.fromFunction0(value))
   }
 }

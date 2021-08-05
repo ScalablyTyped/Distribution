@@ -16,16 +16,13 @@ object mod {
   @js.native
   val all: IRouteConfig = js.native
   
-  @scala.inline
-  def cache(cacheConfig: ICacheConfig): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(cacheConfig.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any]]
+  inline def cache(cacheConfig: ICacheConfig): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(cacheConfig.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any]]
   
-  @scala.inline
-  def config(
+  inline def config(
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteAdditionalConfigurationOptions */ js.Any
   ): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any]]
   
-  @scala.inline
-  def controller(baseUrl: String): js.Function1[/* target */ ControllerStatic, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("controller")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ ControllerStatic, Unit]]
+  inline def controller(baseUrl: String): js.Function1[/* target */ ControllerStatic, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("controller")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ ControllerStatic, Unit]]
   
   @JSImport("hapi-decorators", "get")
   @js.native
@@ -39,8 +36,7 @@ object mod {
   @js.native
   val post: IRouteConfig = js.native
   
-  @scala.inline
-  def pre(pre: StringDictionary[js.Any]): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("pre")(pre.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any]]
+  inline def pre(pre: StringDictionary[js.Any]): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("pre")(pre.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any]]
   
   @JSImport("hapi-decorators", "put")
   @js.native
@@ -50,8 +46,7 @@ object mod {
   @js.native
   val route: IRouteDecorator = js.native
   
-  @scala.inline
-  def validate(
+  inline def validate(
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteValidationConfigurationObject */ js.Any
   ): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any]]
   
@@ -70,8 +65,7 @@ object mod {
   }
   object Controller_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseUrl: String,
       routes: () => js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ js.Any
@@ -81,14 +75,11 @@ object mod {
       __obj.asInstanceOf[Controller_]
     }
     
-    @scala.inline
-    implicit class Controller_MutableBuilder[Self <: Controller_] (val x: Self) extends AnyVal {
+    extension [Self <: Controller_](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutes(
+      inline def setRoutes(
         value: () => js.Array[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ js.Any
             ]
@@ -106,32 +97,24 @@ object mod {
   }
   object ICacheConfig {
     
-    @scala.inline
-    def apply(): ICacheConfig = {
+    inline def apply(): ICacheConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICacheConfig]
     }
     
-    @scala.inline
-    implicit class ICacheConfigMutableBuilder[Self <: ICacheConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ICacheConfig](x: Self) {
       
-      @scala.inline
-      def setExpiresAt(value: Double): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: Double): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
+      inline def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
       
-      @scala.inline
-      def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
+      inline def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
       
-      @scala.inline
-      def setPrivacy(value: String): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
+      inline def setPrivacy(value: String): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivacyUndefined: Self = StObject.set(x, "privacy", js.undefined)
+      inline def setPrivacyUndefined: Self = StObject.set(x, "privacy", js.undefined)
     }
   }
   

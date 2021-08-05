@@ -16,28 +16,21 @@ trait GetPublicKeyParams
 }
 object GetPublicKeyParams {
   
-  @scala.inline
-  def apply(path: String): GetPublicKeyParams = {
+  inline def apply(path: String): GetPublicKeyParams = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPublicKeyParams]
   }
   
-  @scala.inline
-  implicit class GetPublicKeyParamsMutableBuilder[Self <: GetPublicKeyParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetPublicKeyParams](x: Self) {
     
-    @scala.inline
-    def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
+    inline def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoinUndefined: Self = StObject.set(x, "coin", js.undefined)
+    inline def setCoinUndefined: Self = StObject.set(x, "coin", js.undefined)
     
-    @scala.inline
-    def setCrossChain(value: Boolean): Self = StObject.set(x, "crossChain", value.asInstanceOf[js.Any])
+    inline def setCrossChain(value: Boolean): Self = StObject.set(x, "crossChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossChainUndefined: Self = StObject.set(x, "crossChain", js.undefined)
+    inline def setCrossChainUndefined: Self = StObject.set(x, "crossChain", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

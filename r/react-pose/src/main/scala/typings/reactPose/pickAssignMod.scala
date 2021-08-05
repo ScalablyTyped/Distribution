@@ -11,8 +11,7 @@ object pickAssignMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pickAssign(shouldPick: TestString, sources: js.Array[Props]): Props = (^.asInstanceOf[js.Dynamic].applyDynamic("pickAssign")(shouldPick.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[Props]
+  inline def pickAssign(shouldPick: TestString, sources: js.Array[Props]): Props = (^.asInstanceOf[js.Dynamic].applyDynamic("pickAssign")(shouldPick.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[Props]
   
   type Props = StringDictionary[js.Any]
   

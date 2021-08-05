@@ -18,19 +18,15 @@ trait DeletePermissionSetRequest extends StObject {
 }
 object DeletePermissionSetRequest {
   
-  @scala.inline
-  def apply(InstanceArn: InstanceArn, PermissionSetArn: PermissionSetArn): DeletePermissionSetRequest = {
+  inline def apply(InstanceArn: InstanceArn, PermissionSetArn: PermissionSetArn): DeletePermissionSetRequest = {
     val __obj = js.Dynamic.literal(InstanceArn = InstanceArn.asInstanceOf[js.Any], PermissionSetArn = PermissionSetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePermissionSetRequest]
   }
   
-  @scala.inline
-  implicit class DeletePermissionSetRequestMutableBuilder[Self <: DeletePermissionSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePermissionSetRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
+    inline def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
   }
 }

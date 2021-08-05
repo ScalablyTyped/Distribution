@@ -18,25 +18,19 @@ trait ReservedInstanceLimitPrice extends StObject {
 }
 object ReservedInstanceLimitPrice {
   
-  @scala.inline
-  def apply(): ReservedInstanceLimitPrice = {
+  inline def apply(): ReservedInstanceLimitPrice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservedInstanceLimitPrice]
   }
   
-  @scala.inline
-  implicit class ReservedInstanceLimitPriceMutableBuilder[Self <: ReservedInstanceLimitPrice] (val x: Self) extends AnyVal {
+  extension [Self <: ReservedInstanceLimitPrice](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "Amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "Amount", js.undefined)
     
-    @scala.inline
-    def setCurrencyCode(value: CurrencyCodeValues): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: CurrencyCodeValues): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
   }
 }

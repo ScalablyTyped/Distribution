@@ -14,25 +14,19 @@ trait BarChartProps[T]
 }
 object BarChartProps {
   
-  @scala.inline
-  def apply[T](data: js.Array[T]): BarChartProps[T] = {
+  inline def apply[T](data: js.Array[T]): BarChartProps[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarChartProps[T]]
   }
   
-  @scala.inline
-  implicit class BarChartPropsMutableBuilder[Self <: BarChartProps[?], T] (val x: Self & BarChartProps[T]) extends AnyVal {
+  extension [Self <: BarChartProps[?], T](x: Self & BarChartProps[T]) {
     
-    @scala.inline
-    def setSpacingInner(value: Double): Self = StObject.set(x, "spacingInner", value.asInstanceOf[js.Any])
+    inline def setSpacingInner(value: Double): Self = StObject.set(x, "spacingInner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingInnerUndefined: Self = StObject.set(x, "spacingInner", js.undefined)
+    inline def setSpacingInnerUndefined: Self = StObject.set(x, "spacingInner", js.undefined)
     
-    @scala.inline
-    def setSpacingOuter(value: Double): Self = StObject.set(x, "spacingOuter", value.asInstanceOf[js.Any])
+    inline def setSpacingOuter(value: Double): Self = StObject.set(x, "spacingOuter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingOuterUndefined: Self = StObject.set(x, "spacingOuter", js.undefined)
+    inline def setSpacingOuterUndefined: Self = StObject.set(x, "spacingOuter", js.undefined)
   }
 }

@@ -16,37 +16,27 @@ trait InclusionStates extends StObject {
 }
 object InclusionStates {
   
-  @scala.inline
-  def apply(): InclusionStates = {
+  inline def apply(): InclusionStates = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InclusionStates]
   }
   
-  @scala.inline
-  implicit class InclusionStatesMutableBuilder[Self <: InclusionStates] (val x: Self) extends AnyVal {
+  extension [Self <: InclusionStates](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setInclusionStates(value: Boolean): Self = StObject.set(x, "inclusionStates", value.asInstanceOf[js.Any])
+    inline def setInclusionStates(value: Boolean): Self = StObject.set(x, "inclusionStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclusionStatesUndefined: Self = StObject.set(x, "inclusionStates", js.undefined)
+    inline def setInclusionStatesUndefined: Self = StObject.set(x, "inclusionStates", js.undefined)
     
-    @scala.inline
-    def setSecurity(value: typings.iotaLibJs.mod.Security): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+    inline def setSecurity(value: typings.iotaLibJs.mod.Security): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+    inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

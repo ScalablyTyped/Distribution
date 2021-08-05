@@ -29,8 +29,7 @@ trait CheckToken extends StObject {
 }
 object CheckToken {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     handler: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => Unit,
     method: GET | PUT | POST | DELETE,
     path: String
@@ -39,24 +38,18 @@ object CheckToken {
     __obj.asInstanceOf[CheckToken]
   }
   
-  @scala.inline
-  implicit class CheckTokenMutableBuilder[Self <: CheckToken] (val x: Self) extends AnyVal {
+  extension [Self <: CheckToken](x: Self) {
     
-    @scala.inline
-    def setCheckToken(value: Boolean): Self = StObject.set(x, "checkToken", value.asInstanceOf[js.Any])
+    inline def setCheckToken(value: Boolean): Self = StObject.set(x, "checkToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckTokenUndefined: Self = StObject.set(x, "checkToken", js.undefined)
+    inline def setCheckTokenUndefined: Self = StObject.set(x, "checkToken", js.undefined)
     
-    @scala.inline
-    def setHandler(
+    inline def setHandler(
       value: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => Unit
     ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMethod(value: GET | PUT | POST | DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET | PUT | POST | DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

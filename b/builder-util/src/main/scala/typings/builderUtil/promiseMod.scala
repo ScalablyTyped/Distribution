@@ -26,15 +26,11 @@ object promiseMod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def executeFinally[T](promise: js.Promise[T], task: js.Function1[/* isErrorOccurred */ Boolean, js.Promise[js.Any]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeFinally")(promise.asInstanceOf[js.Any], task.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def executeFinally[T](promise: js.Promise[T], task: js.Function1[/* isErrorOccurred */ Boolean, js.Promise[js.Any]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeFinally")(promise.asInstanceOf[js.Any], task.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @scala.inline
-  def orIfFileNotExist[T](promise: js.Promise[T], fallbackValue: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("orIfFileNotExist")(promise.asInstanceOf[js.Any], fallbackValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def orIfFileNotExist[T](promise: js.Promise[T], fallbackValue: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("orIfFileNotExist")(promise.asInstanceOf[js.Any], fallbackValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @scala.inline
-  def orNullIfFileNotExist[T](promise: js.Promise[T]): js.Promise[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("orNullIfFileNotExist")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | Null]]
+  inline def orNullIfFileNotExist[T](promise: js.Promise[T]): js.Promise[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("orNullIfFileNotExist")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | Null]]
   
-  @scala.inline
-  def printErrorAndExit(error: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printErrorAndExit")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def printErrorAndExit(error: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printErrorAndExit")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

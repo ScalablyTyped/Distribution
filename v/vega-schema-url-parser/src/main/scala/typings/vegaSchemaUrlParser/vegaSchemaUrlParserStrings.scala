@@ -8,11 +8,9 @@ object vegaSchemaUrlParserStrings {
   
   @js.native
   sealed trait vega extends StObject
-  @scala.inline
-  def vega: vega = "vega".asInstanceOf[vega]
+  inline def vega: vega = "vega".asInstanceOf[vega]
   
   @js.native
   sealed trait `vega-lite` extends StObject
-  @scala.inline
-  def `vega-lite`: `vega-lite` = "vega-lite".asInstanceOf[`vega-lite`]
+  inline def `vega-lite`: `vega-lite` = "vega-lite".asInstanceOf[`vega-lite`]
 }

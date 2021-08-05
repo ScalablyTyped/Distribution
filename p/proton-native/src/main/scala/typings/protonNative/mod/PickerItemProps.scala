@@ -10,16 +10,13 @@ trait PickerItemProps extends StObject {
 }
 object PickerItemProps {
   
-  @scala.inline
-  def apply(children: String): PickerItemProps = {
+  inline def apply(children: String): PickerItemProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickerItemProps]
   }
   
-  @scala.inline
-  implicit class PickerItemPropsMutableBuilder[Self <: PickerItemProps] (val x: Self) extends AnyVal {
+  extension [Self <: PickerItemProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

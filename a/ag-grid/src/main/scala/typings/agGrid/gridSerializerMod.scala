@@ -136,23 +136,23 @@ object gridSerializerMod {
   @js.native
   class GridSerializer () extends StObject {
     
-    var balancedColumnTreeBuilder: js.Any = js.native
+    /* private */ var balancedColumnTreeBuilder: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var displayedGroupCreator: js.Any = js.native
+    /* private */ var displayedGroupCreator: js.Any = js.native
     
     /* private */ def doAddHeaderHeader[T](gridSerializingSession: js.Any, displayedGroups: js.Any): js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var pinnedRowModel: js.Any = js.native
+    /* private */ var pinnedRowModel: js.Any = js.native
     
     def recursivelyAddHeaderGroups[T](displayedGroups: js.Array[ColumnGroupChild], gridSerializingSession: GridSerializingSession[T]): Unit = js.native
     
-    var rowModel: js.Any = js.native
+    /* private */ var rowModel: js.Any = js.native
     
-    var selectionController: js.Any = js.native
+    /* private */ var selectionController: js.Any = js.native
     
     def serialize[T](gridSerializingSession: GridSerializingSession[T]): String = js.native
     def serialize[T](gridSerializingSession: GridSerializingSession[T], params: ExportParams[T]): String = js.native
@@ -213,8 +213,7 @@ object gridSerializerMod {
   }
   object GridSerializingSession {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       addCustomFooter: T => Unit,
       addCustomHeader: T => Unit,
       onNewBodyRow: () => RowAccumulator,
@@ -227,29 +226,21 @@ object gridSerializerMod {
       __obj.asInstanceOf[GridSerializingSession[T]]
     }
     
-    @scala.inline
-    implicit class GridSerializingSessionMutableBuilder[Self <: GridSerializingSession[?], T] (val x: Self & GridSerializingSession[T]) extends AnyVal {
+    extension [Self <: GridSerializingSession[?], T](x: Self & GridSerializingSession[T]) {
       
-      @scala.inline
-      def setAddCustomFooter(value: T => Unit): Self = StObject.set(x, "addCustomFooter", js.Any.fromFunction1(value))
+      inline def setAddCustomFooter(value: T => Unit): Self = StObject.set(x, "addCustomFooter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddCustomHeader(value: T => Unit): Self = StObject.set(x, "addCustomHeader", js.Any.fromFunction1(value))
+      inline def setAddCustomHeader(value: T => Unit): Self = StObject.set(x, "addCustomHeader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNewBodyRow(value: () => RowAccumulator): Self = StObject.set(x, "onNewBodyRow", js.Any.fromFunction0(value))
+      inline def setOnNewBodyRow(value: () => RowAccumulator): Self = StObject.set(x, "onNewBodyRow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnNewHeaderGroupingRow(value: () => RowSpanningAccumulator): Self = StObject.set(x, "onNewHeaderGroupingRow", js.Any.fromFunction0(value))
+      inline def setOnNewHeaderGroupingRow(value: () => RowSpanningAccumulator): Self = StObject.set(x, "onNewHeaderGroupingRow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnNewHeaderRow(value: () => RowAccumulator): Self = StObject.set(x, "onNewHeaderRow", js.Any.fromFunction0(value))
+      inline def setOnNewHeaderRow(value: () => RowAccumulator): Self = StObject.set(x, "onNewHeaderRow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParse(value: () => String): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
+      inline def setParse(value: () => String): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrepare(value: js.Array[Column] => Unit): Self = StObject.set(x, "prepare", js.Any.fromFunction1(value))
+      inline def setPrepare(value: js.Array[Column] => Unit): Self = StObject.set(x, "prepare", js.Any.fromFunction1(value))
     }
   }
   
@@ -266,17 +257,14 @@ object gridSerializerMod {
   }
   object RowSpanningAccumulator {
     
-    @scala.inline
-    def apply(onColumn: (String, Double, Double) => Unit): RowSpanningAccumulator = {
+    inline def apply(onColumn: (String, Double, Double) => Unit): RowSpanningAccumulator = {
       val __obj = js.Dynamic.literal(onColumn = js.Any.fromFunction3(onColumn))
       __obj.asInstanceOf[RowSpanningAccumulator]
     }
     
-    @scala.inline
-    implicit class RowSpanningAccumulatorMutableBuilder[Self <: RowSpanningAccumulator] (val x: Self) extends AnyVal {
+    extension [Self <: RowSpanningAccumulator](x: Self) {
       
-      @scala.inline
-      def setOnColumn(value: (String, Double, Double) => Unit): Self = StObject.set(x, "onColumn", js.Any.fromFunction3(value))
+      inline def setOnColumn(value: (String, Double, Double) => Unit): Self = StObject.set(x, "onColumn", js.Any.fromFunction3(value))
     }
   }
 }

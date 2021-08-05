@@ -16,8 +16,7 @@ trait UnoControlRadioButton
      with XLayoutConstrains
 object UnoControlRadioButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     Context: XInterface,
     Graphics: XGraphics,

@@ -24,11 +24,9 @@ object global {
           @js.native
           val ^ : js.Any = js.native
           
-          @scala.inline
-          def get(parameters: GetParameters): HttpRequest[Person] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Person]]
+          inline def get(parameters: GetParameters): HttpRequest[Person] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Person]]
           
-          @scala.inline
-          def search(parameters: SearchParameters): HttpRequest[PeopleFeed] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[PeopleFeed]]
+          inline def search(parameters: SearchParameters): HttpRequest[PeopleFeed] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[PeopleFeed]]
         }
       }
     }

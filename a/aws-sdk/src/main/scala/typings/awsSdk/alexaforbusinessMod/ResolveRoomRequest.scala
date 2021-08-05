@@ -18,19 +18,15 @@ trait ResolveRoomRequest extends StObject {
 }
 object ResolveRoomRequest {
   
-  @scala.inline
-  def apply(SkillId: SkillId, UserId: UserId): ResolveRoomRequest = {
+  inline def apply(SkillId: SkillId, UserId: UserId): ResolveRoomRequest = {
     val __obj = js.Dynamic.literal(SkillId = SkillId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveRoomRequest]
   }
   
-  @scala.inline
-  implicit class ResolveRoomRequestMutableBuilder[Self <: ResolveRoomRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveRoomRequest](x: Self) {
     
-    @scala.inline
-    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
+    inline def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

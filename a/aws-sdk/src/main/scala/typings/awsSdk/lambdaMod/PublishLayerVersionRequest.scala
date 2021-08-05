@@ -33,40 +33,29 @@ trait PublishLayerVersionRequest extends StObject {
 }
 object PublishLayerVersionRequest {
   
-  @scala.inline
-  def apply(Content: LayerVersionContentInput, LayerName: LayerName): PublishLayerVersionRequest = {
+  inline def apply(Content: LayerVersionContentInput, LayerName: LayerName): PublishLayerVersionRequest = {
     val __obj = js.Dynamic.literal(Content = Content.asInstanceOf[js.Any], LayerName = LayerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishLayerVersionRequest]
   }
   
-  @scala.inline
-  implicit class PublishLayerVersionRequestMutableBuilder[Self <: PublishLayerVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PublishLayerVersionRequest](x: Self) {
     
-    @scala.inline
-    def setCompatibleRuntimes(value: CompatibleRuntimes): Self = StObject.set(x, "CompatibleRuntimes", value.asInstanceOf[js.Any])
+    inline def setCompatibleRuntimes(value: CompatibleRuntimes): Self = StObject.set(x, "CompatibleRuntimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibleRuntimesUndefined: Self = StObject.set(x, "CompatibleRuntimes", js.undefined)
+    inline def setCompatibleRuntimesUndefined: Self = StObject.set(x, "CompatibleRuntimes", js.undefined)
     
-    @scala.inline
-    def setCompatibleRuntimesVarargs(value: Runtime*): Self = StObject.set(x, "CompatibleRuntimes", js.Array(value :_*))
+    inline def setCompatibleRuntimesVarargs(value: Runtime*): Self = StObject.set(x, "CompatibleRuntimes", js.Array(value :_*))
     
-    @scala.inline
-    def setContent(value: LayerVersionContentInput): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: LayerVersionContentInput): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setLayerName(value: LayerName): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
+    inline def setLayerName(value: LayerName): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseInfo(value: LicenseInfo): Self = StObject.set(x, "LicenseInfo", value.asInstanceOf[js.Any])
+    inline def setLicenseInfo(value: LicenseInfo): Self = StObject.set(x, "LicenseInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseInfoUndefined: Self = StObject.set(x, "LicenseInfo", js.undefined)
+    inline def setLicenseInfoUndefined: Self = StObject.set(x, "LicenseInfo", js.undefined)
   }
 }

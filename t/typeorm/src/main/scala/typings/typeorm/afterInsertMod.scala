@@ -11,6 +11,5 @@ object afterInsertMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def AfterInsert(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterInsert")().asInstanceOf[PropertyDecorator]
+  inline def AfterInsert(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterInsert")().asInstanceOf[PropertyDecorator]
 }

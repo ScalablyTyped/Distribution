@@ -67,38 +67,28 @@ object geoJSONMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
+      inline def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
+      inline def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
       
-      @scala.inline
-      def setExtractGeometryName(value: Boolean): Self = StObject.set(x, "extractGeometryName", value.asInstanceOf[js.Any])
+      inline def setExtractGeometryName(value: Boolean): Self = StObject.set(x, "extractGeometryName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtractGeometryNameUndefined: Self = StObject.set(x, "extractGeometryName", js.undefined)
+      inline def setExtractGeometryNameUndefined: Self = StObject.set(x, "extractGeometryName", js.undefined)
       
-      @scala.inline
-      def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
+      inline def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
+      inline def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
       
-      @scala.inline
-      def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
+      inline def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
+      inline def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
     }
   }
 }

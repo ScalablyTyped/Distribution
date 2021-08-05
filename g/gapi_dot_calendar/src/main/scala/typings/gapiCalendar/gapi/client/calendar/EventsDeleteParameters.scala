@@ -16,25 +16,19 @@ trait EventsDeleteParameters extends StObject {
 }
 object EventsDeleteParameters {
   
-  @scala.inline
-  def apply(calendarId: String, eventId: String): EventsDeleteParameters = {
+  inline def apply(calendarId: String, eventId: String): EventsDeleteParameters = {
     val __obj = js.Dynamic.literal(calendarId = calendarId.asInstanceOf[js.Any], eventId = eventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventsDeleteParameters]
   }
   
-  @scala.inline
-  implicit class EventsDeleteParametersMutableBuilder[Self <: EventsDeleteParameters] (val x: Self) extends AnyVal {
+  extension [Self <: EventsDeleteParameters](x: Self) {
     
-    @scala.inline
-    def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
+    inline def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendNotifications(value: Boolean): Self = StObject.set(x, "sendNotifications", value.asInstanceOf[js.Any])
+    inline def setSendNotifications(value: Boolean): Self = StObject.set(x, "sendNotifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendNotificationsUndefined: Self = StObject.set(x, "sendNotifications", js.undefined)
+    inline def setSendNotificationsUndefined: Self = StObject.set(x, "sendNotifications", js.undefined)
   }
 }

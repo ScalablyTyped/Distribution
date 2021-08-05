@@ -20,8 +20,7 @@ trait XSupportedLanguages
 }
 object XSupportedLanguages {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Languages: SafeArray[Double],
     acquire: () => Unit,
     getLanguages: () => SafeArray[Double],
@@ -33,16 +32,12 @@ object XSupportedLanguages {
     __obj.asInstanceOf[XSupportedLanguages]
   }
   
-  @scala.inline
-  implicit class XSupportedLanguagesMutableBuilder[Self <: XSupportedLanguages] (val x: Self) extends AnyVal {
+  extension [Self <: XSupportedLanguages](x: Self) {
     
-    @scala.inline
-    def setGetLanguages(value: () => SafeArray[Double]): Self = StObject.set(x, "getLanguages", js.Any.fromFunction0(value))
+    inline def setGetLanguages(value: () => SafeArray[Double]): Self = StObject.set(x, "getLanguages", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasLanguage(value: Double => Boolean): Self = StObject.set(x, "hasLanguage", js.Any.fromFunction1(value))
+    inline def setHasLanguage(value: Double => Boolean): Self = StObject.set(x, "hasLanguage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLanguages(value: SafeArray[Double]): Self = StObject.set(x, "Languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: SafeArray[Double]): Self = StObject.set(x, "Languages", value.asInstanceOf[js.Any])
   }
 }

@@ -29,8 +29,7 @@ trait ActionTextActiveOpacity extends StObject {
 }
 object ActionTextActiveOpacity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     WrapComponent: View,
     actionTextActiveOpacity: Double,
     actionTextUnderlayColor: String,
@@ -46,37 +45,26 @@ object ActionTextActiveOpacity {
     __obj.asInstanceOf[ActionTextActiveOpacity]
   }
   
-  @scala.inline
-  implicit class ActionTextActiveOpacityMutableBuilder[Self <: ActionTextActiveOpacity] (val x: Self) extends AnyVal {
+  extension [Self <: ActionTextActiveOpacity](x: Self) {
     
-    @scala.inline
-    def setActionTextActiveOpacity(value: Double): Self = StObject.set(x, "actionTextActiveOpacity", value.asInstanceOf[js.Any])
+    inline def setActionTextActiveOpacity(value: Double): Self = StObject.set(x, "actionTextActiveOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTextUnderlayColor(value: String): Self = StObject.set(x, "actionTextUnderlayColor", value.asInstanceOf[js.Any])
+    inline def setActionTextUnderlayColor(value: String): Self = StObject.set(x, "actionTextUnderlayColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDismissText(value: String): Self = StObject.set(x, "dismissText", value.asInstanceOf[js.Any])
+    inline def setDismissText(value: String): Self = StObject.set(x, "dismissText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+    inline def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
+    inline def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnOk(value: js.Any => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
+    inline def setOnOk(value: js.Any => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnVisibleChange(value: js.Any => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
+    inline def setOnVisibleChange(value: js.Any => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerType(value: String): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: String): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapComponent(value: View): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
+    inline def setWrapComponent(value: View): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
   }
 }

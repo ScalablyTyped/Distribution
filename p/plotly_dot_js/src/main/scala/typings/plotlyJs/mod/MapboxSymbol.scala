@@ -31,8 +31,7 @@ trait MapboxSymbol extends StObject {
 }
 object MapboxSymbol {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     icon: String,
     iconsize: Double,
     placement: point | line | `line-center`,
@@ -44,26 +43,19 @@ object MapboxSymbol {
     __obj.asInstanceOf[MapboxSymbol]
   }
   
-  @scala.inline
-  implicit class MapboxSymbolMutableBuilder[Self <: MapboxSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: MapboxSymbol](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsize(value: Double): Self = StObject.set(x, "iconsize", value.asInstanceOf[js.Any])
+    inline def setIconsize(value: Double): Self = StObject.set(x, "iconsize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacement(value: point | line | `line-center`): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: point | line | `line-center`): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextfont(value: PartialFont): Self = StObject.set(x, "textfont", value.asInstanceOf[js.Any])
+    inline def setTextfont(value: PartialFont): Self = StObject.set(x, "textfont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextposition(
+    inline def setTextposition(
       value: (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`)
     ): Self = StObject.set(x, "textposition", value.asInstanceOf[js.Any])
   }

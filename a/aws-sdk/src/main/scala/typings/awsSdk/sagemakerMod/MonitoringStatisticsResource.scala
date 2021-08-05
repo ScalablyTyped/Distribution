@@ -13,19 +13,15 @@ trait MonitoringStatisticsResource extends StObject {
 }
 object MonitoringStatisticsResource {
   
-  @scala.inline
-  def apply(): MonitoringStatisticsResource = {
+  inline def apply(): MonitoringStatisticsResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MonitoringStatisticsResource]
   }
   
-  @scala.inline
-  implicit class MonitoringStatisticsResourceMutableBuilder[Self <: MonitoringStatisticsResource] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringStatisticsResource](x: Self) {
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3UriUndefined: Self = StObject.set(x, "S3Uri", js.undefined)
+    inline def setS3UriUndefined: Self = StObject.set(x, "S3Uri", js.undefined)
   }
 }

@@ -19,17 +19,14 @@ object CordovaAppVersionPlugin {
   }
   object CordovaAppVersionPlugin {
     
-    @scala.inline
-    def apply(getAppVersion: () => String): typings.cordovaAppVersionPlugin.CordovaAppVersionPlugin.CordovaAppVersionPlugin = {
+    inline def apply(getAppVersion: () => String): typings.cordovaAppVersionPlugin.CordovaAppVersionPlugin.CordovaAppVersionPlugin = {
       val __obj = js.Dynamic.literal(getAppVersion = js.Any.fromFunction0(getAppVersion))
       __obj.asInstanceOf[typings.cordovaAppVersionPlugin.CordovaAppVersionPlugin.CordovaAppVersionPlugin]
     }
     
-    @scala.inline
-    implicit class CordovaAppVersionPluginMutableBuilder[Self <: typings.cordovaAppVersionPlugin.CordovaAppVersionPlugin.CordovaAppVersionPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: typings.cordovaAppVersionPlugin.CordovaAppVersionPlugin.CordovaAppVersionPlugin](x: Self) {
       
-      @scala.inline
-      def setGetAppVersion(value: () => String): Self = StObject.set(x, "getAppVersion", js.Any.fromFunction0(value))
+      inline def setGetAppVersion(value: () => String): Self = StObject.set(x, "getAppVersion", js.Any.fromFunction0(value))
     }
   }
 }

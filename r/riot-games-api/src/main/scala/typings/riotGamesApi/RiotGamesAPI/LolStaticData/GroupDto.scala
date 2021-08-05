@@ -12,19 +12,15 @@ trait GroupDto extends StObject {
 }
 object GroupDto {
   
-  @scala.inline
-  def apply(MaxGroupOwnable: String, key: String): GroupDto = {
+  inline def apply(MaxGroupOwnable: String, key: String): GroupDto = {
     val __obj = js.Dynamic.literal(MaxGroupOwnable = MaxGroupOwnable.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupDto]
   }
   
-  @scala.inline
-  implicit class GroupDtoMutableBuilder[Self <: GroupDto] (val x: Self) extends AnyVal {
+  extension [Self <: GroupDto](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxGroupOwnable(value: String): Self = StObject.set(x, "MaxGroupOwnable", value.asInstanceOf[js.Any])
+    inline def setMaxGroupOwnable(value: String): Self = StObject.set(x, "MaxGroupOwnable", value.asInstanceOf[js.Any])
   }
 }

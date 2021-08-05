@@ -43,8 +43,7 @@ trait ITokenizerHandle extends StObject {
 }
 object ITokenizerHandle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cmnt: /* line */ js.UndefOr[Double] => String | Null,
     line: Double,
     next: () => String | Null,
@@ -56,25 +55,18 @@ object ITokenizerHandle {
     __obj.asInstanceOf[ITokenizerHandle]
   }
   
-  @scala.inline
-  implicit class ITokenizerHandleMutableBuilder[Self <: ITokenizerHandle] (val x: Self) extends AnyVal {
+  extension [Self <: ITokenizerHandle](x: Self) {
     
-    @scala.inline
-    def setCmnt(value: /* line */ js.UndefOr[Double] => String | Null): Self = StObject.set(x, "cmnt", js.Any.fromFunction1(value))
+    inline def setCmnt(value: /* line */ js.UndefOr[Double] => String | Null): Self = StObject.set(x, "cmnt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: () => String | Null): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => String | Null): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPeek(value: () => String | Null): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
+    inline def setPeek(value: () => String | Null): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPush(value: /* token */ String => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: /* token */ String => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSkip(value: (/* expected */ String, /* optional */ js.UndefOr[Boolean]) => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
+    inline def setSkip(value: (/* expected */ String, /* optional */ js.UndefOr[Boolean]) => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
   }
 }

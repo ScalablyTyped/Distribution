@@ -18,26 +18,20 @@ object anon {
   }
   object Arrays {
     
-    @scala.inline
-    def apply(): Arrays = {
+    inline def apply(): Arrays = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Arrays]
     }
     
-    @scala.inline
-    implicit class ArraysMutableBuilder[Self <: Arrays] (val x: Self) extends AnyVal {
+    extension [Self <: Arrays](x: Self) {
       
-      @scala.inline
-      def setArrays(value: Boolean): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
+      inline def setArrays(value: Boolean): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArraysUndefined: Self = StObject.set(x, "arrays", js.undefined)
+      inline def setArraysUndefined: Self = StObject.set(x, "arrays", js.undefined)
       
-      @scala.inline
-      def setObjects(value: Boolean): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: Boolean): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
+      inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
     }
   }
   
@@ -55,17 +49,14 @@ object anon {
   }
   object CreateError {
     
-    @scala.inline
-    def apply(createError: (String, Context, State, ValidationOptions) => Err): CreateError = {
+    inline def apply(createError: (String, Context, State, ValidationOptions) => Err): CreateError = {
       val __obj = js.Dynamic.literal(createError = js.Any.fromFunction4(createError))
       __obj.asInstanceOf[CreateError]
     }
     
-    @scala.inline
-    implicit class CreateErrorMutableBuilder[Self <: CreateError] (val x: Self) extends AnyVal {
+    extension [Self <: CreateError](x: Self) {
       
-      @scala.inline
-      def setCreateError(value: (String, Context, State, ValidationOptions) => Err): Self = StObject.set(x, "createError", js.Any.fromFunction4(value))
+      inline def setCreateError(value: (String, Context, State, ValidationOptions) => Err): Self = StObject.set(x, "createError", js.Any.fromFunction4(value))
     }
   }
   
@@ -75,20 +66,16 @@ object anon {
   }
   object WrapArrays {
     
-    @scala.inline
-    def apply(): WrapArrays = {
+    inline def apply(): WrapArrays = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WrapArrays]
     }
     
-    @scala.inline
-    implicit class WrapArraysMutableBuilder[Self <: WrapArrays] (val x: Self) extends AnyVal {
+    extension [Self <: WrapArrays](x: Self) {
       
-      @scala.inline
-      def setWrapArrays(value: Boolean): Self = StObject.set(x, "wrapArrays", value.asInstanceOf[js.Any])
+      inline def setWrapArrays(value: Boolean): Self = StObject.set(x, "wrapArrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapArraysUndefined: Self = StObject.set(x, "wrapArrays", js.undefined)
+      inline def setWrapArraysUndefined: Self = StObject.set(x, "wrapArrays", js.undefined)
     }
   }
 }

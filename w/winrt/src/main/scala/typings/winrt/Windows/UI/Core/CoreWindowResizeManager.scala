@@ -9,8 +9,7 @@ trait CoreWindowResizeManager
      with ICoreWindowResizeManager
 object CoreWindowResizeManager {
   
-  @scala.inline
-  def apply(notifyLayoutCompleted: () => Unit): CoreWindowResizeManager = {
+  inline def apply(notifyLayoutCompleted: () => Unit): CoreWindowResizeManager = {
     val __obj = js.Dynamic.literal(notifyLayoutCompleted = js.Any.fromFunction0(notifyLayoutCompleted))
     __obj.asInstanceOf[CoreWindowResizeManager]
   }

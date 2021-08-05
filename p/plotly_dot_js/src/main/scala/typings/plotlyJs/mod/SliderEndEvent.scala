@@ -12,19 +12,15 @@ trait SliderEndEvent extends StObject {
 }
 object SliderEndEvent {
   
-  @scala.inline
-  def apply(slider: Slider, step: SliderStep): SliderEndEvent = {
+  inline def apply(slider: Slider, step: SliderStep): SliderEndEvent = {
     val __obj = js.Dynamic.literal(slider = slider.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderEndEvent]
   }
   
-  @scala.inline
-  implicit class SliderEndEventMutableBuilder[Self <: SliderEndEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SliderEndEvent](x: Self) {
     
-    @scala.inline
-    def setSlider(value: Slider): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+    inline def setSlider(value: Slider): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: SliderStep): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: SliderStep): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

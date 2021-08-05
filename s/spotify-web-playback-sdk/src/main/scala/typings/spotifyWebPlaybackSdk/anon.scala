@@ -15,17 +15,14 @@ object anon {
   }
   object TypeofSpotify {
     
-    @scala.inline
-    def apply(SpotifyPlayer: Instantiable1[/* options */ PlayerInit, SpotifyPlayer]): TypeofSpotify = {
+    inline def apply(SpotifyPlayer: Instantiable1[/* options */ PlayerInit, SpotifyPlayer]): TypeofSpotify = {
       val __obj = js.Dynamic.literal(SpotifyPlayer = SpotifyPlayer.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofSpotify]
     }
     
-    @scala.inline
-    implicit class TypeofSpotifyMutableBuilder[Self <: TypeofSpotify] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofSpotify](x: Self) {
       
-      @scala.inline
-      def setSpotifyPlayer(value: Instantiable1[/* options */ PlayerInit, SpotifyPlayer]): Self = StObject.set(x, "SpotifyPlayer", value.asInstanceOf[js.Any])
+      inline def setSpotifyPlayer(value: Instantiable1[/* options */ PlayerInit, SpotifyPlayer]): Self = StObject.set(x, "SpotifyPlayer", value.asInstanceOf[js.Any])
     }
   }
 }

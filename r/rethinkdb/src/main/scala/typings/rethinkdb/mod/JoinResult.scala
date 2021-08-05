@@ -12,19 +12,15 @@ trait JoinResult extends StObject {
 }
 object JoinResult {
   
-  @scala.inline
-  def apply(left: js.Any, right: js.Any): JoinResult = {
+  inline def apply(left: js.Any, right: js.Any): JoinResult = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.asInstanceOf[JoinResult]
   }
   
-  @scala.inline
-  implicit class JoinResultMutableBuilder[Self <: JoinResult] (val x: Self) extends AnyVal {
+  extension [Self <: JoinResult](x: Self) {
     
-    @scala.inline
-    def setLeft(value: js.Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: js.Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: js.Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: js.Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

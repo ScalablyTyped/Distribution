@@ -53,15 +53,10 @@ object xmlMod {
   @js.native
   val TEXT_NODE: /* 3 */ Double = js.native
   
-  @scala.inline
-  def parse(source: String): ClassXmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[ClassXmlDocument]
-  @scala.inline
-  def parse(source: String, `type`: String): ClassXmlDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ClassXmlDocument]
-  @scala.inline
-  def parse(source: ClassBuffer): ClassXmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[ClassXmlDocument]
-  @scala.inline
-  def parse(source: ClassBuffer, `type`: String): ClassXmlDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ClassXmlDocument]
+  inline def parse(source: String): ClassXmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[ClassXmlDocument]
+  inline def parse(source: String, `type`: String): ClassXmlDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ClassXmlDocument]
+  inline def parse(source: ClassBuffer): ClassXmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[ClassXmlDocument]
+  inline def parse(source: ClassBuffer, `type`: String): ClassXmlDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ClassXmlDocument]
   
-  @scala.inline
-  def serialize(node: ClassXmlNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serialize(node: ClassXmlNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(node.asInstanceOf[js.Any]).asInstanceOf[String]
 }

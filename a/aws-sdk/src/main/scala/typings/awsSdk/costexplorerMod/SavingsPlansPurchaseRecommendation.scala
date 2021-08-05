@@ -43,58 +43,41 @@ trait SavingsPlansPurchaseRecommendation extends StObject {
 }
 object SavingsPlansPurchaseRecommendation {
   
-  @scala.inline
-  def apply(): SavingsPlansPurchaseRecommendation = {
+  inline def apply(): SavingsPlansPurchaseRecommendation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SavingsPlansPurchaseRecommendation]
   }
   
-  @scala.inline
-  implicit class SavingsPlansPurchaseRecommendationMutableBuilder[Self <: SavingsPlansPurchaseRecommendation] (val x: Self) extends AnyVal {
+  extension [Self <: SavingsPlansPurchaseRecommendation](x: Self) {
     
-    @scala.inline
-    def setAccountScope(value: AccountScope): Self = StObject.set(x, "AccountScope", value.asInstanceOf[js.Any])
+    inline def setAccountScope(value: AccountScope): Self = StObject.set(x, "AccountScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountScopeUndefined: Self = StObject.set(x, "AccountScope", js.undefined)
+    inline def setAccountScopeUndefined: Self = StObject.set(x, "AccountScope", js.undefined)
     
-    @scala.inline
-    def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = StObject.set(x, "LookbackPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = StObject.set(x, "LookbackPeriodInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookbackPeriodInDaysUndefined: Self = StObject.set(x, "LookbackPeriodInDays", js.undefined)
+    inline def setLookbackPeriodInDaysUndefined: Self = StObject.set(x, "LookbackPeriodInDays", js.undefined)
     
-    @scala.inline
-    def setPaymentOption(value: PaymentOption): Self = StObject.set(x, "PaymentOption", value.asInstanceOf[js.Any])
+    inline def setPaymentOption(value: PaymentOption): Self = StObject.set(x, "PaymentOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentOptionUndefined: Self = StObject.set(x, "PaymentOption", js.undefined)
+    inline def setPaymentOptionUndefined: Self = StObject.set(x, "PaymentOption", js.undefined)
     
-    @scala.inline
-    def setSavingsPlansPurchaseRecommendationDetails(value: SavingsPlansPurchaseRecommendationDetailList): Self = StObject.set(x, "SavingsPlansPurchaseRecommendationDetails", value.asInstanceOf[js.Any])
+    inline def setSavingsPlansPurchaseRecommendationDetails(value: SavingsPlansPurchaseRecommendationDetailList): Self = StObject.set(x, "SavingsPlansPurchaseRecommendationDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsPlansPurchaseRecommendationDetailsUndefined: Self = StObject.set(x, "SavingsPlansPurchaseRecommendationDetails", js.undefined)
+    inline def setSavingsPlansPurchaseRecommendationDetailsUndefined: Self = StObject.set(x, "SavingsPlansPurchaseRecommendationDetails", js.undefined)
     
-    @scala.inline
-    def setSavingsPlansPurchaseRecommendationDetailsVarargs(value: SavingsPlansPurchaseRecommendationDetail*): Self = StObject.set(x, "SavingsPlansPurchaseRecommendationDetails", js.Array(value :_*))
+    inline def setSavingsPlansPurchaseRecommendationDetailsVarargs(value: SavingsPlansPurchaseRecommendationDetail*): Self = StObject.set(x, "SavingsPlansPurchaseRecommendationDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setSavingsPlansPurchaseRecommendationSummary(value: SavingsPlansPurchaseRecommendationSummary): Self = StObject.set(x, "SavingsPlansPurchaseRecommendationSummary", value.asInstanceOf[js.Any])
+    inline def setSavingsPlansPurchaseRecommendationSummary(value: SavingsPlansPurchaseRecommendationSummary): Self = StObject.set(x, "SavingsPlansPurchaseRecommendationSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsPlansPurchaseRecommendationSummaryUndefined: Self = StObject.set(x, "SavingsPlansPurchaseRecommendationSummary", js.undefined)
+    inline def setSavingsPlansPurchaseRecommendationSummaryUndefined: Self = StObject.set(x, "SavingsPlansPurchaseRecommendationSummary", js.undefined)
     
-    @scala.inline
-    def setSavingsPlansType(value: SupportedSavingsPlansType): Self = StObject.set(x, "SavingsPlansType", value.asInstanceOf[js.Any])
+    inline def setSavingsPlansType(value: SupportedSavingsPlansType): Self = StObject.set(x, "SavingsPlansType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsPlansTypeUndefined: Self = StObject.set(x, "SavingsPlansType", js.undefined)
+    inline def setSavingsPlansTypeUndefined: Self = StObject.set(x, "SavingsPlansType", js.undefined)
     
-    @scala.inline
-    def setTermInYears(value: TermInYears): Self = StObject.set(x, "TermInYears", value.asInstanceOf[js.Any])
+    inline def setTermInYears(value: TermInYears): Self = StObject.set(x, "TermInYears", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermInYearsUndefined: Self = StObject.set(x, "TermInYears", js.undefined)
+    inline def setTermInYearsUndefined: Self = StObject.set(x, "TermInYears", js.undefined)
   }
 }

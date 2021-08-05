@@ -28,28 +28,21 @@ trait UserPoolConfig extends StObject {
 }
 object UserPoolConfig {
   
-  @scala.inline
-  def apply(awsRegion: String, defaultAction: DefaultAction, userPoolId: String): UserPoolConfig = {
+  inline def apply(awsRegion: String, defaultAction: DefaultAction, userPoolId: String): UserPoolConfig = {
     val __obj = js.Dynamic.literal(awsRegion = awsRegion.asInstanceOf[js.Any], defaultAction = defaultAction.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolConfig]
   }
   
-  @scala.inline
-  implicit class UserPoolConfigMutableBuilder[Self <: UserPoolConfig] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolConfig](x: Self) {
     
-    @scala.inline
-    def setAppIdClientRegex(value: String): Self = StObject.set(x, "appIdClientRegex", value.asInstanceOf[js.Any])
+    inline def setAppIdClientRegex(value: String): Self = StObject.set(x, "appIdClientRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdClientRegexUndefined: Self = StObject.set(x, "appIdClientRegex", js.undefined)
+    inline def setAppIdClientRegexUndefined: Self = StObject.set(x, "appIdClientRegex", js.undefined)
     
-    @scala.inline
-    def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+    inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAction(value: DefaultAction): Self = StObject.set(x, "defaultAction", value.asInstanceOf[js.Any])
+    inline def setDefaultAction(value: DefaultAction): Self = StObject.set(x, "defaultAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolId(value: String): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: String): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
   }
 }

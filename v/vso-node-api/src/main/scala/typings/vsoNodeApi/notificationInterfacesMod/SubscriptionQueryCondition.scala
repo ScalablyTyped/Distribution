@@ -33,8 +33,7 @@ trait SubscriptionQueryCondition extends StObject {
 }
 object SubscriptionQueryCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filter: ISubscriptionFilter,
     flags: SubscriptionFlags,
     scope: String,
@@ -45,22 +44,16 @@ object SubscriptionQueryCondition {
     __obj.asInstanceOf[SubscriptionQueryCondition]
   }
   
-  @scala.inline
-  implicit class SubscriptionQueryConditionMutableBuilder[Self <: SubscriptionQueryCondition] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionQueryCondition](x: Self) {
     
-    @scala.inline
-    def setFilter(value: ISubscriptionFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: ISubscriptionFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: SubscriptionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: SubscriptionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriberId(value: String): Self = StObject.set(x, "subscriberId", value.asInstanceOf[js.Any])
+    inline def setSubscriberId(value: String): Self = StObject.set(x, "subscriberId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
+    inline def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait ISuspendingEventArgs extends StObject {
 }
 object ISuspendingEventArgs {
   
-  @scala.inline
-  def apply(suspendingOperation: SuspendingOperation): ISuspendingEventArgs = {
+  inline def apply(suspendingOperation: SuspendingOperation): ISuspendingEventArgs = {
     val __obj = js.Dynamic.literal(suspendingOperation = suspendingOperation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISuspendingEventArgs]
   }
   
-  @scala.inline
-  implicit class ISuspendingEventArgsMutableBuilder[Self <: ISuspendingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ISuspendingEventArgs](x: Self) {
     
-    @scala.inline
-    def setSuspendingOperation(value: SuspendingOperation): Self = StObject.set(x, "suspendingOperation", value.asInstanceOf[js.Any])
+    inline def setSuspendingOperation(value: SuspendingOperation): Self = StObject.set(x, "suspendingOperation", value.asInstanceOf[js.Any])
   }
 }

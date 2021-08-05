@@ -14,14 +14,10 @@ object browserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(method: HttpVerb, url: String): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Response]
-  @scala.inline
-  def default(method: HttpVerb, url: String, options: Options): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Response]
-  @scala.inline
-  def default(method: HttpVerb, url: URL_): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Response]
-  @scala.inline
-  def default(method: HttpVerb, url: URL_, options: Options): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Response]
+  inline def default(method: HttpVerb, url: String): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Response]
+  inline def default(method: HttpVerb, url: String, options: Options): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Response]
+  inline def default(method: HttpVerb, url: URL_): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Response]
+  inline def default(method: HttpVerb, url: URL_, options: Options): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Response]
   
   @JSImport("sync-request/lib/browser", "FormData")
   @js.native

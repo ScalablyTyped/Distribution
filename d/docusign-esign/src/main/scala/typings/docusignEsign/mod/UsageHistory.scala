@@ -28,37 +28,27 @@ trait UsageHistory extends StObject {
 }
 object UsageHistory {
   
-  @scala.inline
-  def apply(): UsageHistory = {
+  inline def apply(): UsageHistory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageHistory]
   }
   
-  @scala.inline
-  implicit class UsageHistoryMutableBuilder[Self <: UsageHistory] (val x: Self) extends AnyVal {
+  extension [Self <: UsageHistory](x: Self) {
     
-    @scala.inline
-    def setLastSentDateTime(value: String): Self = StObject.set(x, "lastSentDateTime", value.asInstanceOf[js.Any])
+    inline def setLastSentDateTime(value: String): Self = StObject.set(x, "lastSentDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSentDateTimeUndefined: Self = StObject.set(x, "lastSentDateTime", js.undefined)
+    inline def setLastSentDateTimeUndefined: Self = StObject.set(x, "lastSentDateTime", js.undefined)
     
-    @scala.inline
-    def setLastSignedDateTime(value: String): Self = StObject.set(x, "lastSignedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastSignedDateTime(value: String): Self = StObject.set(x, "lastSignedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSignedDateTimeUndefined: Self = StObject.set(x, "lastSignedDateTime", js.undefined)
+    inline def setLastSignedDateTimeUndefined: Self = StObject.set(x, "lastSignedDateTime", js.undefined)
     
-    @scala.inline
-    def setSentCount(value: String): Self = StObject.set(x, "sentCount", value.asInstanceOf[js.Any])
+    inline def setSentCount(value: String): Self = StObject.set(x, "sentCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentCountUndefined: Self = StObject.set(x, "sentCount", js.undefined)
+    inline def setSentCountUndefined: Self = StObject.set(x, "sentCount", js.undefined)
     
-    @scala.inline
-    def setSignedCount(value: String): Self = StObject.set(x, "signedCount", value.asInstanceOf[js.Any])
+    inline def setSignedCount(value: String): Self = StObject.set(x, "signedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedCountUndefined: Self = StObject.set(x, "signedCount", js.undefined)
+    inline def setSignedCountUndefined: Self = StObject.set(x, "signedCount", js.undefined)
   }
 }

@@ -12,7 +12,7 @@ trait XmlDataBinding extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.XmlDataBinding_typekey")
+  /* private */ @JSName("Excel.XmlDataBinding_typekey")
   var ExcelDotXmlDataBinding_typekey: XmlDataBinding
   
   def LoadSettings(Url: String): Unit
@@ -27,8 +27,7 @@ trait XmlDataBinding extends StObject {
 }
 object XmlDataBinding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     ClearSettings: () => Unit,
     Creator: XlCreator,
@@ -44,34 +43,24 @@ object XmlDataBinding {
     __obj.asInstanceOf[XmlDataBinding]
   }
   
-  @scala.inline
-  implicit class XmlDataBindingMutableBuilder[Self <: XmlDataBinding] (val x: Self) extends AnyVal {
+  extension [Self <: XmlDataBinding](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearSettings(value: () => Unit): Self = StObject.set(x, "ClearSettings", js.Any.fromFunction0(value))
+    inline def setClearSettings(value: () => Unit): Self = StObject.set(x, "ClearSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotXmlDataBinding_typekey(value: XmlDataBinding): Self = StObject.set(x, "Excel.XmlDataBinding_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotXmlDataBinding_typekey(value: XmlDataBinding): Self = StObject.set(x, "Excel.XmlDataBinding_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadSettings(value: String => Unit): Self = StObject.set(x, "LoadSettings", js.Any.fromFunction1(value))
+    inline def setLoadSettings(value: String => Unit): Self = StObject.set(x, "LoadSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => XlXmlImportResult): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => XlXmlImportResult): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSourceUrl(value: String): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
+    inline def setSourceUrl(value: String): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+    inline def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

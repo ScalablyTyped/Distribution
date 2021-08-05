@@ -44,12 +44,10 @@ object PopoutMenu {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def closeActivePopoutMenuInstance(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeActivePopoutMenuInstance")().asInstanceOf[Unit]
+  inline def closeActivePopoutMenuInstance(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeActivePopoutMenuInstance")().asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def createPopoutMenuInstanceAndLaunch(
+  inline def createPopoutMenuInstanceAndLaunch(
     anchorId: String,
     menuId: String,
     iconId: String,

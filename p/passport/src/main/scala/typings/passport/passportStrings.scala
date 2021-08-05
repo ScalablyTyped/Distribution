@@ -8,6 +8,5 @@ object passportStrings {
   
   @js.native
   sealed trait StrategyCreated extends StObject
-  @scala.inline
-  def StrategyCreated: StrategyCreated = "StrategyCreated".asInstanceOf[StrategyCreated]
+  inline def StrategyCreated: StrategyCreated = "StrategyCreated".asInstanceOf[StrategyCreated]
 }

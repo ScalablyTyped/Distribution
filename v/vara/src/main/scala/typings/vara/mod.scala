@@ -46,23 +46,18 @@ object mod {
   }
   object TextElements {
     
-    @scala.inline
-    def apply(characters: js.Array[SVGGElement], container: SVGGElement): TextElements = {
+    inline def apply(characters: js.Array[SVGGElement], container: SVGGElement): TextElements = {
       val __obj = js.Dynamic.literal(characters = characters.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextElements]
     }
     
-    @scala.inline
-    implicit class TextElementsMutableBuilder[Self <: TextElements] (val x: Self) extends AnyVal {
+    extension [Self <: TextElements](x: Self) {
       
-      @scala.inline
-      def setCharacters(value: js.Array[SVGGElement]): Self = StObject.set(x, "characters", value.asInstanceOf[js.Any])
+      inline def setCharacters(value: js.Array[SVGGElement]): Self = StObject.set(x, "characters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharactersVarargs(value: SVGGElement*): Self = StObject.set(x, "characters", js.Array(value :_*))
+      inline def setCharactersVarargs(value: SVGGElement*): Self = StObject.set(x, "characters", js.Array(value :_*))
       
-      @scala.inline
-      def setContainer(value: SVGGElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: SVGGElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,62 +105,44 @@ object mod {
   }
   object TextProperties {
     
-    @scala.inline
-    def apply(): TextProperties = {
+    inline def apply(): TextProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextProperties]
     }
     
-    @scala.inline
-    implicit class TextPropertiesMutableBuilder[Self <: TextProperties] (val x: Self) extends AnyVal {
+    extension [Self <: TextProperties](x: Self) {
       
-      @scala.inline
-      def setAutoAnimation(value: Boolean): Self = StObject.set(x, "autoAnimation", value.asInstanceOf[js.Any])
+      inline def setAutoAnimation(value: Boolean): Self = StObject.set(x, "autoAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoAnimationUndefined: Self = StObject.set(x, "autoAnimation", js.undefined)
+      inline def setAutoAnimationUndefined: Self = StObject.set(x, "autoAnimation", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+      inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+      inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
       
-      @scala.inline
-      def setQueued(value: Boolean): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
+      inline def setQueued(value: Boolean): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueuedUndefined: Self = StObject.set(x, "queued", js.undefined)
+      inline def setQueuedUndefined: Self = StObject.set(x, "queued", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: left | center | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: left | center | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     }
   }
   
@@ -207,47 +184,34 @@ object mod {
   }
   object TextStep {
     
-    @scala.inline
-    def apply(text: String): TextStep = {
+    inline def apply(text: String): TextStep = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextStep]
     }
     
-    @scala.inline
-    implicit class TextStepMutableBuilder[Self <: TextStep] (val x: Self) extends AnyVal {
+    extension [Self <: TextStep](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setFromCurrentPosition(value: X): Self = StObject.set(x, "fromCurrentPosition", value.asInstanceOf[js.Any])
+      inline def setFromCurrentPosition(value: X): Self = StObject.set(x, "fromCurrentPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromCurrentPositionUndefined: Self = StObject.set(x, "fromCurrentPosition", js.undefined)
+      inline def setFromCurrentPositionUndefined: Self = StObject.set(x, "fromCurrentPosition", js.undefined)
       
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   

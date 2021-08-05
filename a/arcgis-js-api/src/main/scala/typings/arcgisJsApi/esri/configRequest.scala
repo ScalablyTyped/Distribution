@@ -68,8 +68,7 @@ trait configRequest
 }
 object configRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -78,67 +77,46 @@ object configRequest {
     __obj.asInstanceOf[configRequest]
   }
   
-  @scala.inline
-  implicit class configRequestMutableBuilder[Self <: configRequest] (val x: Self) extends AnyVal {
+  extension [Self <: configRequest](x: Self) {
     
-    @scala.inline
-    def setHttpsDomains(value: js.Array[String]): Self = StObject.set(x, "httpsDomains", value.asInstanceOf[js.Any])
+    inline def setHttpsDomains(value: js.Array[String]): Self = StObject.set(x, "httpsDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpsDomainsUndefined: Self = StObject.set(x, "httpsDomains", js.undefined)
+    inline def setHttpsDomainsUndefined: Self = StObject.set(x, "httpsDomains", js.undefined)
     
-    @scala.inline
-    def setHttpsDomainsVarargs(value: String*): Self = StObject.set(x, "httpsDomains", js.Array(value :_*))
+    inline def setHttpsDomainsVarargs(value: String*): Self = StObject.set(x, "httpsDomains", js.Array(value :_*))
     
-    @scala.inline
-    def setInterceptors(value: js.Array[RequestInterceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
+    inline def setInterceptors(value: js.Array[RequestInterceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
+    inline def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
     
-    @scala.inline
-    def setInterceptorsVarargs(value: RequestInterceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
+    inline def setInterceptorsVarargs(value: RequestInterceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxUrlLength(value: Double): Self = StObject.set(x, "maxUrlLength", value.asInstanceOf[js.Any])
+    inline def setMaxUrlLength(value: Double): Self = StObject.set(x, "maxUrlLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUrlLengthUndefined: Self = StObject.set(x, "maxUrlLength", js.undefined)
+    inline def setMaxUrlLengthUndefined: Self = StObject.set(x, "maxUrlLength", js.undefined)
     
-    @scala.inline
-    def setProxyRules(value: js.Array[configRequestProxyRules]): Self = StObject.set(x, "proxyRules", value.asInstanceOf[js.Any])
+    inline def setProxyRules(value: js.Array[configRequestProxyRules]): Self = StObject.set(x, "proxyRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyRulesUndefined: Self = StObject.set(x, "proxyRules", js.undefined)
+    inline def setProxyRulesUndefined: Self = StObject.set(x, "proxyRules", js.undefined)
     
-    @scala.inline
-    def setProxyRulesVarargs(value: configRequestProxyRules*): Self = StObject.set(x, "proxyRules", js.Array(value :_*))
+    inline def setProxyRulesVarargs(value: configRequestProxyRules*): Self = StObject.set(x, "proxyRules", js.Array(value :_*))
     
-    @scala.inline
-    def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+    inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
+    inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setTrustedServers(value: js.Array[String]): Self = StObject.set(x, "trustedServers", value.asInstanceOf[js.Any])
+    inline def setTrustedServers(value: js.Array[String]): Self = StObject.set(x, "trustedServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustedServersUndefined: Self = StObject.set(x, "trustedServers", js.undefined)
+    inline def setTrustedServersUndefined: Self = StObject.set(x, "trustedServers", js.undefined)
     
-    @scala.inline
-    def setTrustedServersVarargs(value: String*): Self = StObject.set(x, "trustedServers", js.Array(value :_*))
+    inline def setTrustedServersVarargs(value: String*): Self = StObject.set(x, "trustedServers", js.Array(value :_*))
     
-    @scala.inline
-    def setUseIdentity(value: Boolean): Self = StObject.set(x, "useIdentity", value.asInstanceOf[js.Any])
+    inline def setUseIdentity(value: Boolean): Self = StObject.set(x, "useIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseIdentityUndefined: Self = StObject.set(x, "useIdentity", js.undefined)
+    inline def setUseIdentityUndefined: Self = StObject.set(x, "useIdentity", js.undefined)
   }
 }

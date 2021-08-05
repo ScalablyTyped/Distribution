@@ -17,22 +17,17 @@ trait SchemaClustering extends StObject {
 }
 object SchemaClustering {
   
-  @scala.inline
-  def apply(): SchemaClustering = {
+  inline def apply(): SchemaClustering = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClustering]
   }
   
-  @scala.inline
-  implicit class SchemaClusteringMutableBuilder[Self <: SchemaClustering] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClustering](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

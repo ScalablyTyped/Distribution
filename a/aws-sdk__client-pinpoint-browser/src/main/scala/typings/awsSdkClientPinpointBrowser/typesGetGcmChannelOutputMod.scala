@@ -26,20 +26,16 @@ object typesGetGcmChannelOutputMod {
   }
   object GetGcmChannelOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, GCMChannelResponse: UnmarshalledGCMChannelResponse): GetGcmChannelOutput = {
+    inline def apply($metadata: ResponseMetadata, GCMChannelResponse: UnmarshalledGCMChannelResponse): GetGcmChannelOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], GCMChannelResponse = GCMChannelResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetGcmChannelOutput]
     }
     
-    @scala.inline
-    implicit class GetGcmChannelOutputMutableBuilder[Self <: GetGcmChannelOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetGcmChannelOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGCMChannelResponse(value: UnmarshalledGCMChannelResponse): Self = StObject.set(x, "GCMChannelResponse", value.asInstanceOf[js.Any])
+      inline def setGCMChannelResponse(value: UnmarshalledGCMChannelResponse): Self = StObject.set(x, "GCMChannelResponse", value.asInstanceOf[js.Any])
     }
   }
 }

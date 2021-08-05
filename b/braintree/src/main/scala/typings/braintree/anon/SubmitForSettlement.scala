@@ -10,16 +10,13 @@ trait SubmitForSettlement extends StObject {
 }
 object SubmitForSettlement {
   
-  @scala.inline
-  def apply(submitForSettlement: Boolean): SubmitForSettlement = {
+  inline def apply(submitForSettlement: Boolean): SubmitForSettlement = {
     val __obj = js.Dynamic.literal(submitForSettlement = submitForSettlement.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitForSettlement]
   }
   
-  @scala.inline
-  implicit class SubmitForSettlementMutableBuilder[Self <: SubmitForSettlement] (val x: Self) extends AnyVal {
+  extension [Self <: SubmitForSettlement](x: Self) {
     
-    @scala.inline
-    def setSubmitForSettlement(value: Boolean): Self = StObject.set(x, "submitForSettlement", value.asInstanceOf[js.Any])
+    inline def setSubmitForSettlement(value: Boolean): Self = StObject.set(x, "submitForSettlement", value.asInstanceOf[js.Any])
   }
 }

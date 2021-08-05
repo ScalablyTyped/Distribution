@@ -20,31 +20,23 @@ trait UpgradeElasticsearchDomainResponse extends StObject {
 }
 object UpgradeElasticsearchDomainResponse {
   
-  @scala.inline
-  def apply(): UpgradeElasticsearchDomainResponse = {
+  inline def apply(): UpgradeElasticsearchDomainResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpgradeElasticsearchDomainResponse]
   }
   
-  @scala.inline
-  implicit class UpgradeElasticsearchDomainResponseMutableBuilder[Self <: UpgradeElasticsearchDomainResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpgradeElasticsearchDomainResponse](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
-    @scala.inline
-    def setPerformCheckOnly(value: Boolean): Self = StObject.set(x, "PerformCheckOnly", value.asInstanceOf[js.Any])
+    inline def setPerformCheckOnly(value: Boolean): Self = StObject.set(x, "PerformCheckOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformCheckOnlyUndefined: Self = StObject.set(x, "PerformCheckOnly", js.undefined)
+    inline def setPerformCheckOnlyUndefined: Self = StObject.set(x, "PerformCheckOnly", js.undefined)
     
-    @scala.inline
-    def setTargetVersion(value: ElasticsearchVersionString): Self = StObject.set(x, "TargetVersion", value.asInstanceOf[js.Any])
+    inline def setTargetVersion(value: ElasticsearchVersionString): Self = StObject.set(x, "TargetVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVersionUndefined: Self = StObject.set(x, "TargetVersion", js.undefined)
+    inline def setTargetVersionUndefined: Self = StObject.set(x, "TargetVersion", js.undefined)
   }
 }

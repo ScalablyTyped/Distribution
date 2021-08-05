@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartAxisTitlesPosition extends StObject
 object ChartAxisTitlesPosition {
   
-  @scala.inline
-  def in: typings.googleVisualization.googleVisualizationStrings.in = "in".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.in]
+  inline def in: typings.googleVisualization.googleVisualizationStrings.in = "in".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.in]
   
-  @scala.inline
-  def none: typings.googleVisualization.googleVisualizationStrings.none = "none".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.none]
+  inline def none: typings.googleVisualization.googleVisualizationStrings.none = "none".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.none]
   
-  @scala.inline
-  def out: typings.googleVisualization.googleVisualizationStrings.out = "out".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.out]
+  inline def out: typings.googleVisualization.googleVisualizationStrings.out = "out".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.out]
 }

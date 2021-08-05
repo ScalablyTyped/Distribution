@@ -12,19 +12,15 @@ trait PickVictoryStyleInterface extends StObject {
 }
 object PickVictoryStyleInterface {
   
-  @scala.inline
-  def apply(): PickVictoryStyleInterface = {
+  inline def apply(): PickVictoryStyleInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickVictoryStyleInterface]
   }
   
-  @scala.inline
-  implicit class PickVictoryStyleInterfaceMutableBuilder[Self <: PickVictoryStyleInterface] (val x: Self) extends AnyVal {
+  extension [Self <: PickVictoryStyleInterface](x: Self) {
     
-    @scala.inline
-    def setParent(value: VictoryStyleObject): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: VictoryStyleObject): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

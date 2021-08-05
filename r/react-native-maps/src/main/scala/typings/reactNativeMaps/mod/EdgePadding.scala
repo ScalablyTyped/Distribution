@@ -17,25 +17,19 @@ trait EdgePadding extends StObject {
 }
 object EdgePadding {
   
-  @scala.inline
-  def apply(bottom: Number, left: Number, right: Number, top: Number): EdgePadding = {
+  inline def apply(bottom: Number, left: Number, right: Number, top: Number): EdgePadding = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgePadding]
   }
   
-  @scala.inline
-  implicit class EdgePaddingMutableBuilder[Self <: EdgePadding] (val x: Self) extends AnyVal {
+  extension [Self <: EdgePadding](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Number): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Number): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Number): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Number): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Number): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Number): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Number): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Number): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

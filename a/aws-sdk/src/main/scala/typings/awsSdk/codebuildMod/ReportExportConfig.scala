@@ -18,25 +18,19 @@ trait ReportExportConfig extends StObject {
 }
 object ReportExportConfig {
   
-  @scala.inline
-  def apply(): ReportExportConfig = {
+  inline def apply(): ReportExportConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportExportConfig]
   }
   
-  @scala.inline
-  implicit class ReportExportConfigMutableBuilder[Self <: ReportExportConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ReportExportConfig](x: Self) {
     
-    @scala.inline
-    def setExportConfigType(value: ReportExportConfigType): Self = StObject.set(x, "exportConfigType", value.asInstanceOf[js.Any])
+    inline def setExportConfigType(value: ReportExportConfigType): Self = StObject.set(x, "exportConfigType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportConfigTypeUndefined: Self = StObject.set(x, "exportConfigType", js.undefined)
+    inline def setExportConfigTypeUndefined: Self = StObject.set(x, "exportConfigType", js.undefined)
     
-    @scala.inline
-    def setS3Destination(value: S3ReportExportConfig): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
+    inline def setS3Destination(value: S3ReportExportConfig): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
+    inline def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
   }
 }

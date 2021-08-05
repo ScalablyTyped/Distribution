@@ -25,8 +25,7 @@ trait TypeofDynamsoftStatic extends StObject {
 }
 object TypeofDynamsoftStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FileUploader: FileUploader,
     Lib: DynamsoftLib,
     MSG: Messages,
@@ -38,25 +37,18 @@ object TypeofDynamsoftStatic {
     __obj.asInstanceOf[TypeofDynamsoftStatic]
   }
   
-  @scala.inline
-  implicit class TypeofDynamsoftStaticMutableBuilder[Self <: TypeofDynamsoftStatic] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDynamsoftStatic](x: Self) {
     
-    @scala.inline
-    def setFileUploader(value: FileUploader): Self = StObject.set(x, "FileUploader", value.asInstanceOf[js.Any])
+    inline def setFileUploader(value: FileUploader): Self = StObject.set(x, "FileUploader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLib(value: DynamsoftLib): Self = StObject.set(x, "Lib", value.asInstanceOf[js.Any])
+    inline def setLib(value: DynamsoftLib): Self = StObject.set(x, "Lib", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSG(value: Messages): Self = StObject.set(x, "MSG", value.asInstanceOf[js.Any])
+    inline def setMSG(value: Messages): Self = StObject.set(x, "MSG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagerEnv(value: ManagerEnv): Self = StObject.set(x, "managerEnv", value.asInstanceOf[js.Any])
+    inline def setManagerEnv(value: ManagerEnv): Self = StObject.set(x, "managerEnv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebTwain(value: TypeofWebTwain): Self = StObject.set(x, "WebTwain", value.asInstanceOf[js.Any])
+    inline def setWebTwain(value: TypeofWebTwain): Self = StObject.set(x, "WebTwain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebTwainEnv(value: WebTwainEnv): Self = StObject.set(x, "WebTwainEnv", value.asInstanceOf[js.Any])
+    inline def setWebTwainEnv(value: WebTwainEnv): Self = StObject.set(x, "WebTwainEnv", value.asInstanceOf[js.Any])
   }
 }

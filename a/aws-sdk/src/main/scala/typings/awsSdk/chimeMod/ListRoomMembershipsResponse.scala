@@ -18,28 +18,21 @@ trait ListRoomMembershipsResponse extends StObject {
 }
 object ListRoomMembershipsResponse {
   
-  @scala.inline
-  def apply(): ListRoomMembershipsResponse = {
+  inline def apply(): ListRoomMembershipsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRoomMembershipsResponse]
   }
   
-  @scala.inline
-  implicit class ListRoomMembershipsResponseMutableBuilder[Self <: ListRoomMembershipsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRoomMembershipsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRoomMemberships(value: RoomMembershipList): Self = StObject.set(x, "RoomMemberships", value.asInstanceOf[js.Any])
+    inline def setRoomMemberships(value: RoomMembershipList): Self = StObject.set(x, "RoomMemberships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomMembershipsUndefined: Self = StObject.set(x, "RoomMemberships", js.undefined)
+    inline def setRoomMembershipsUndefined: Self = StObject.set(x, "RoomMemberships", js.undefined)
     
-    @scala.inline
-    def setRoomMembershipsVarargs(value: RoomMembership*): Self = StObject.set(x, "RoomMemberships", js.Array(value :_*))
+    inline def setRoomMembershipsVarargs(value: RoomMembership*): Self = StObject.set(x, "RoomMemberships", js.Array(value :_*))
   }
 }

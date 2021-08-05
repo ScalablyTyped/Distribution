@@ -18,6 +18,5 @@ object CancellationToken {
   @js.native
   val None: typings.vscodeJsonrpc.cancellationMod.CancellationToken = js.native
   
-  @scala.inline
-  def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/cancellation.CancellationToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/cancellation.CancellationToken */ Boolean]
+  inline def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/cancellation.CancellationToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/cancellation.CancellationToken */ Boolean]
 }

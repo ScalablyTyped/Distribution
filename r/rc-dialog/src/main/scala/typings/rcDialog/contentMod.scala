@@ -33,8 +33,7 @@ object contentMod extends Shortcut {
   }
   object ContentProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ariaId: String,
       getOpenCount: () => Double,
       motionName: String,
@@ -45,20 +44,15 @@ object contentMod extends Shortcut {
       __obj.asInstanceOf[ContentProps]
     }
     
-    @scala.inline
-    implicit class ContentPropsMutableBuilder[Self <: ContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: ContentProps](x: Self) {
       
-      @scala.inline
-      def setAriaId(value: String): Self = StObject.set(x, "ariaId", value.asInstanceOf[js.Any])
+      inline def setAriaId(value: String): Self = StObject.set(x, "ariaId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMotionName(value: String): Self = StObject.set(x, "motionName", value.asInstanceOf[js.Any])
+      inline def setMotionName(value: String): Self = StObject.set(x, "motionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVisibleChanged(value: Boolean => Unit): Self = StObject.set(x, "onVisibleChanged", js.Any.fromFunction1(value))
+      inline def setOnVisibleChanged(value: Boolean => Unit): Self = StObject.set(x, "onVisibleChanged", js.Any.fromFunction1(value))
     }
   }
   
@@ -72,23 +66,18 @@ object contentMod extends Shortcut {
   }
   object ContentRef {
     
-    @scala.inline
-    def apply(changeActive: Boolean => Unit, focus: () => Unit, getDOM: () => HTMLDivElement): ContentRef = {
+    inline def apply(changeActive: Boolean => Unit, focus: () => Unit, getDOM: () => HTMLDivElement): ContentRef = {
       val __obj = js.Dynamic.literal(changeActive = js.Any.fromFunction1(changeActive), focus = js.Any.fromFunction0(focus), getDOM = js.Any.fromFunction0(getDOM))
       __obj.asInstanceOf[ContentRef]
     }
     
-    @scala.inline
-    implicit class ContentRefMutableBuilder[Self <: ContentRef] (val x: Self) extends AnyVal {
+    extension [Self <: ContentRef](x: Self) {
       
-      @scala.inline
-      def setChangeActive(value: Boolean => Unit): Self = StObject.set(x, "changeActive", js.Any.fromFunction1(value))
+      inline def setChangeActive(value: Boolean => Unit): Self = StObject.set(x, "changeActive", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDOM(value: () => HTMLDivElement): Self = StObject.set(x, "getDOM", js.Any.fromFunction0(value))
+      inline def setGetDOM(value: () => HTMLDivElement): Self = StObject.set(x, "getDOM", js.Any.fromFunction0(value))
     }
   }
   

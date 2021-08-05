@@ -35,29 +35,22 @@ object mod extends Shortcut {
   }
   object Baseline {
     
-    @scala.inline
-    def apply(has_baseline: Boolean, x0: Double, x1: Double, y0: Double, y1: Double): Baseline = {
+    inline def apply(has_baseline: Boolean, x0: Double, x1: Double, y0: Double, y1: Double): Baseline = {
       val __obj = js.Dynamic.literal(has_baseline = has_baseline.asInstanceOf[js.Any], x0 = x0.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], y0 = y0.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any])
       __obj.asInstanceOf[Baseline]
     }
     
-    @scala.inline
-    implicit class BaselineMutableBuilder[Self <: Baseline] (val x: Self) extends AnyVal {
+    extension [Self <: Baseline](x: Self) {
       
-      @scala.inline
-      def setHas_baseline(value: Boolean): Self = StObject.set(x, "has_baseline", value.asInstanceOf[js.Any])
+      inline def setHas_baseline(value: Boolean): Self = StObject.set(x, "has_baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
+      inline def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+      inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+      inline def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,26 +66,20 @@ object mod extends Shortcut {
   }
   object Bbox {
     
-    @scala.inline
-    def apply(x0: Double, x1: Double, y0: Double, y1: Double): Bbox = {
+    inline def apply(x0: Double, x1: Double, y0: Double, y1: Double): Bbox = {
       val __obj = js.Dynamic.literal(x0 = x0.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], y0 = y0.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bbox]
     }
     
-    @scala.inline
-    implicit class BboxMutableBuilder[Self <: Bbox] (val x: Self) extends AnyVal {
+    extension [Self <: Bbox](x: Self) {
       
-      @scala.inline
-      def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
+      inline def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+      inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+      inline def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,8 +109,7 @@ object mod extends Shortcut {
   }
   object Block {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseline: Baseline,
       bbox: Bbox,
       blocktype: String,
@@ -140,50 +126,35 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Block]
     }
     
-    @scala.inline
-    implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+    extension [Self <: Block](x: Self) {
       
-      @scala.inline
-      def setBaseline(value: Baseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+      inline def setBaseline(value: Baseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBbox(value: Bbox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: Bbox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocktype(value: String): Self = StObject.set(x, "blocktype", value.asInstanceOf[js.Any])
+      inline def setBlocktype(value: String): Self = StObject.set(x, "blocktype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
       
-      @scala.inline
-      def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParagraphs(value: Paragraph): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
+      inline def setParagraphs(value: Paragraph): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygon(value: js.Any): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
+      inline def setPolygon(value: js.Any): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbols(value: js.Array[Symbol]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      inline def setSymbols(value: js.Array[Symbol]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolsVarargs(value: Symbol*): Self = StObject.set(x, "symbols", js.Array(value :_*))
+      inline def setSymbolsVarargs(value: Symbol*): Self = StObject.set(x, "symbols", js.Array(value :_*))
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWords(value: js.Array[Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: js.Array[Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value :_*))
     }
   }
   
@@ -195,20 +166,16 @@ object mod extends Shortcut {
   }
   object Choice {
     
-    @scala.inline
-    def apply(confidence: Double, text: String): Choice = {
+    inline def apply(confidence: Double, text: String): Choice = {
       val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Choice]
     }
     
-    @scala.inline
-    implicit class ChoiceMutableBuilder[Self <: Choice] (val x: Self) extends AnyVal {
+    extension [Self <: Choice](x: Self) {
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -236,8 +203,7 @@ object mod extends Shortcut {
   }
   object Line {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseline: Baseline,
       bbox: Bbox,
       block: Block,
@@ -252,41 +218,29 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Line]
     }
     
-    @scala.inline
-    implicit class LineMutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
+    extension [Self <: Line](x: Self) {
       
-      @scala.inline
-      def setBaseline(value: Baseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+      inline def setBaseline(value: Baseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBbox(value: Bbox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: Bbox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParagraph(value: Paragraph): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+      inline def setParagraph(value: Paragraph): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbols(value: js.Array[Symbol]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      inline def setSymbols(value: js.Array[Symbol]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolsVarargs(value: Symbol*): Self = StObject.set(x, "symbols", js.Array(value :_*))
+      inline def setSymbolsVarargs(value: Symbol*): Self = StObject.set(x, "symbols", js.Array(value :_*))
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWords(value: js.Array[Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: js.Array[Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value :_*))
     }
   }
   
@@ -316,8 +270,7 @@ object mod extends Shortcut {
   }
   object Page {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blocks: js.Array[Block],
       confidence: Double,
       html: String,
@@ -334,56 +287,39 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Page]
     }
     
-    @scala.inline
-    implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+    extension [Self <: Page](x: Self) {
       
-      @scala.inline
-      def setBlocks(value: js.Array[Block]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      inline def setBlocks(value: js.Array[Block]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocksVarargs(value: Block*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+      inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "blocks", js.Array(value :_*))
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
       
-      @scala.inline
-      def setOem(value: String): Self = StObject.set(x, "oem", value.asInstanceOf[js.Any])
+      inline def setOem(value: String): Self = StObject.set(x, "oem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParagraphs(value: js.Array[Paragraph]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
+      inline def setParagraphs(value: js.Array[Paragraph]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParagraphsVarargs(value: Paragraph*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
+      inline def setParagraphsVarargs(value: Paragraph*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
       
-      @scala.inline
-      def setPsm(value: String): Self = StObject.set(x, "psm", value.asInstanceOf[js.Any])
+      inline def setPsm(value: String): Self = StObject.set(x, "psm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbols(value: js.Array[Symbol]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      inline def setSymbols(value: js.Array[Symbol]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolsVarargs(value: Symbol*): Self = StObject.set(x, "symbols", js.Array(value :_*))
+      inline def setSymbolsVarargs(value: Symbol*): Self = StObject.set(x, "symbols", js.Array(value :_*))
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWords(value: js.Array[Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: js.Array[Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value :_*))
     }
   }
   
@@ -411,8 +347,7 @@ object mod extends Shortcut {
   }
   object Paragraph {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseline: Baseline,
       bbox: Bbox,
       block: Block,
@@ -428,47 +363,33 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Paragraph]
     }
     
-    @scala.inline
-    implicit class ParagraphMutableBuilder[Self <: Paragraph] (val x: Self) extends AnyVal {
+    extension [Self <: Paragraph](x: Self) {
       
-      @scala.inline
-      def setBaseline(value: Baseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+      inline def setBaseline(value: Baseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBbox(value: Bbox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: Bbox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_ltr(value: Boolean): Self = StObject.set(x, "is_ltr", value.asInstanceOf[js.Any])
+      inline def setIs_ltr(value: Boolean): Self = StObject.set(x, "is_ltr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
       
-      @scala.inline
-      def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbols(value: js.Array[Symbol]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      inline def setSymbols(value: js.Array[Symbol]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolsVarargs(value: Symbol*): Self = StObject.set(x, "symbols", js.Array(value :_*))
+      inline def setSymbolsVarargs(value: Symbol*): Self = StObject.set(x, "symbols", js.Array(value :_*))
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWords(value: js.Array[Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: js.Array[Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value :_*))
     }
   }
   
@@ -482,26 +403,20 @@ object mod extends Shortcut {
   }
   object Progress {
     
-    @scala.inline
-    def apply(progress: Double, status: String): Progress = {
+    inline def apply(progress: Double, status: String): Progress = {
       val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Progress]
     }
     
-    @scala.inline
-    implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+    extension [Self <: Progress](x: Self) {
       
-      @scala.inline
-      def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+      inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -537,8 +452,7 @@ object mod extends Shortcut {
   }
   object Symbol {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseline: Baseline,
       bbox: Bbox,
       block: Block,
@@ -558,53 +472,37 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Symbol]
     }
     
-    @scala.inline
-    implicit class SymbolMutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
+    extension [Self <: Symbol](x: Self) {
       
-      @scala.inline
-      def setBaseline(value: Baseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+      inline def setBaseline(value: Baseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBbox(value: Bbox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: Bbox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+      inline def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value :_*))
+      inline def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value :_*))
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_dropcap(value: Boolean): Self = StObject.set(x, "is_dropcap", value.asInstanceOf[js.Any])
+      inline def setIs_dropcap(value: Boolean): Self = StObject.set(x, "is_dropcap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_subscript(value: Boolean): Self = StObject.set(x, "is_subscript", value.asInstanceOf[js.Any])
+      inline def setIs_subscript(value: Boolean): Self = StObject.set(x, "is_subscript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_superscript(value: Boolean): Self = StObject.set(x, "is_superscript", value.asInstanceOf[js.Any])
+      inline def setIs_superscript(value: Boolean): Self = StObject.set(x, "is_superscript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParagraph(value: Paragraph): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+      inline def setParagraph(value: Paragraph): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWord(value: Word): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+      inline def setWord(value: Word): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     }
   }
   
@@ -622,8 +520,7 @@ object mod extends Shortcut {
   }
   object TesseractJob {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `catch`: js.Function1[/* error */ Error, Unit] => TesseractJob,
       `finally`: js.Function1[/* resultOrError */ Error | Page, Unit] => TesseractJob,
       progress: js.Function1[/* progress */ Progress, Unit] => TesseractJob,
@@ -636,26 +533,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TesseractJob]
     }
     
-    @scala.inline
-    implicit class TesseractJobMutableBuilder[Self <: TesseractJob] (val x: Self) extends AnyVal {
+    extension [Self <: TesseractJob](x: Self) {
       
-      @scala.inline
-      def setCatch(value: js.Function1[/* error */ Error, Unit] => TesseractJob): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
+      inline def setCatch(value: js.Function1[/* error */ Error, Unit] => TesseractJob): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: /* error */ Error => TesseractJob): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* error */ Error => TesseractJob): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFinally(value: js.Function1[/* resultOrError */ Error | Page, Unit] => TesseractJob): Self = StObject.set(x, "finally", js.Any.fromFunction1(value))
+      inline def setFinally(value: js.Function1[/* resultOrError */ Error | Page, Unit] => TesseractJob): Self = StObject.set(x, "finally", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProgress(value: js.Function1[/* progress */ Progress, Unit] => TesseractJob): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
+      inline def setProgress(value: js.Function1[/* progress */ Progress, Unit] => TesseractJob): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThen(value: js.Function1[/* result */ Page, Unit] => TesseractJob): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
+      inline def setThen(value: js.Function1[/* result */ Page, Unit] => TesseractJob): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
     }
   }
   
@@ -720,8 +610,7 @@ object mod extends Shortcut {
   }
   object Word {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseline: Baseline,
       bbox: Bbox,
       block: Block,
@@ -750,83 +639,57 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Word]
     }
     
-    @scala.inline
-    implicit class WordMutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
+    extension [Self <: Word](x: Self) {
       
-      @scala.inline
-      def setBaseline(value: Baseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+      inline def setBaseline(value: Baseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBbox(value: Bbox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: Bbox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+      inline def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value :_*))
+      inline def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value :_*))
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFont_id(value: Double): Self = StObject.set(x, "font_id", value.asInstanceOf[js.Any])
+      inline def setFont_id(value: Double): Self = StObject.set(x, "font_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFont_name(value: String): Self = StObject.set(x, "font_name", value.asInstanceOf[js.Any])
+      inline def setFont_name(value: String): Self = StObject.set(x, "font_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFont_size(value: Double): Self = StObject.set(x, "font_size", value.asInstanceOf[js.Any])
+      inline def setFont_size(value: Double): Self = StObject.set(x, "font_size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIn_dictionary(value: Boolean): Self = StObject.set(x, "in_dictionary", value.asInstanceOf[js.Any])
+      inline def setIn_dictionary(value: Boolean): Self = StObject.set(x, "in_dictionary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_bold(value: Boolean): Self = StObject.set(x, "is_bold", value.asInstanceOf[js.Any])
+      inline def setIs_bold(value: Boolean): Self = StObject.set(x, "is_bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_italic(value: Boolean): Self = StObject.set(x, "is_italic", value.asInstanceOf[js.Any])
+      inline def setIs_italic(value: Boolean): Self = StObject.set(x, "is_italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_monospace(value: Boolean): Self = StObject.set(x, "is_monospace", value.asInstanceOf[js.Any])
+      inline def setIs_monospace(value: Boolean): Self = StObject.set(x, "is_monospace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_numeric(value: Boolean): Self = StObject.set(x, "is_numeric", value.asInstanceOf[js.Any])
+      inline def setIs_numeric(value: Boolean): Self = StObject.set(x, "is_numeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_serif(value: Boolean): Self = StObject.set(x, "is_serif", value.asInstanceOf[js.Any])
+      inline def setIs_serif(value: Boolean): Self = StObject.set(x, "is_serif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_smallcaps(value: Boolean): Self = StObject.set(x, "is_smallcaps", value.asInstanceOf[js.Any])
+      inline def setIs_smallcaps(value: Boolean): Self = StObject.set(x, "is_smallcaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_underlined(value: Boolean): Self = StObject.set(x, "is_underlined", value.asInstanceOf[js.Any])
+      inline def setIs_underlined(value: Boolean): Self = StObject.set(x, "is_underlined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParagraph(value: Paragraph): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+      inline def setParagraph(value: Paragraph): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbols(value: js.Array[Symbol]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      inline def setSymbols(value: js.Array[Symbol]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolsVarargs(value: Symbol*): Self = StObject.set(x, "symbols", js.Array(value :_*))
+      inline def setSymbolsVarargs(value: Symbol*): Self = StObject.set(x, "symbols", js.Array(value :_*))
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   

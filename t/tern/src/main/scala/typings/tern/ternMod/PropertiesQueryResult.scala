@@ -11,19 +11,15 @@ trait PropertiesQueryResult extends StObject {
 }
 object PropertiesQueryResult {
   
-  @scala.inline
-  def apply(completions: js.Array[String]): PropertiesQueryResult = {
+  inline def apply(completions: js.Array[String]): PropertiesQueryResult = {
     val __obj = js.Dynamic.literal(completions = completions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertiesQueryResult]
   }
   
-  @scala.inline
-  implicit class PropertiesQueryResultMutableBuilder[Self <: PropertiesQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: PropertiesQueryResult](x: Self) {
     
-    @scala.inline
-    def setCompletions(value: js.Array[String]): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
+    inline def setCompletions(value: js.Array[String]): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionsVarargs(value: String*): Self = StObject.set(x, "completions", js.Array(value :_*))
+    inline def setCompletionsVarargs(value: String*): Self = StObject.set(x, "completions", js.Array(value :_*))
   }
 }

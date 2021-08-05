@@ -11,14 +11,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def camelCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def camelCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def camelCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def camelCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def camelCaseTransform(input: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseTransform")(input.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def camelCaseTransform(input: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseTransform")(input.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def camelCaseTransformMerge(input: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseTransformMerge")(input.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def camelCaseTransformMerge(input: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseTransformMerge")(input.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
 }

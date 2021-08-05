@@ -10,16 +10,13 @@ trait ThemeColor extends StObject {
 }
 object ThemeColor {
   
-  @scala.inline
-  def apply(id: String): ThemeColor = {
+  inline def apply(id: String): ThemeColor = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeColor]
   }
   
-  @scala.inline
-  implicit class ThemeColorMutableBuilder[Self <: ThemeColor] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeColor](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

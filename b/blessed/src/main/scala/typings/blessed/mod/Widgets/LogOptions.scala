@@ -20,25 +20,19 @@ trait LogOptions
 }
 object LogOptions {
   
-  @scala.inline
-  def apply(): LogOptions = {
+  inline def apply(): LogOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogOptions]
   }
   
-  @scala.inline
-  implicit class LogOptionsMutableBuilder[Self <: LogOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LogOptions](x: Self) {
     
-    @scala.inline
-    def setScrollOnInput(value: Boolean): Self = StObject.set(x, "scrollOnInput", value.asInstanceOf[js.Any])
+    inline def setScrollOnInput(value: Boolean): Self = StObject.set(x, "scrollOnInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollOnInputUndefined: Self = StObject.set(x, "scrollOnInput", js.undefined)
+    inline def setScrollOnInputUndefined: Self = StObject.set(x, "scrollOnInput", js.undefined)
     
-    @scala.inline
-    def setScrollback(value: Double): Self = StObject.set(x, "scrollback", value.asInstanceOf[js.Any])
+    inline def setScrollback(value: Double): Self = StObject.set(x, "scrollback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollbackUndefined: Self = StObject.set(x, "scrollback", js.undefined)
+    inline def setScrollbackUndefined: Self = StObject.set(x, "scrollback", js.undefined)
   }
 }

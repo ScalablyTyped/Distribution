@@ -16,19 +16,15 @@ trait EdgeSearchEngineCustom
 }
 object EdgeSearchEngineCustom {
   
-  @scala.inline
-  def apply(): EdgeSearchEngineCustom = {
+  inline def apply(): EdgeSearchEngineCustom = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EdgeSearchEngineCustom]
   }
   
-  @scala.inline
-  implicit class EdgeSearchEngineCustomMutableBuilder[Self <: EdgeSearchEngineCustom] (val x: Self) extends AnyVal {
+  extension [Self <: EdgeSearchEngineCustom](x: Self) {
     
-    @scala.inline
-    def setEdgeSearchEngineOpenSearchXmlUrl(value: String): Self = StObject.set(x, "edgeSearchEngineOpenSearchXmlUrl", value.asInstanceOf[js.Any])
+    inline def setEdgeSearchEngineOpenSearchXmlUrl(value: String): Self = StObject.set(x, "edgeSearchEngineOpenSearchXmlUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeSearchEngineOpenSearchXmlUrlUndefined: Self = StObject.set(x, "edgeSearchEngineOpenSearchXmlUrl", js.undefined)
+    inline def setEdgeSearchEngineOpenSearchXmlUrlUndefined: Self = StObject.set(x, "edgeSearchEngineOpenSearchXmlUrl", js.undefined)
   }
 }

@@ -28,8 +28,7 @@ trait UnityMediaPlayer extends StObject {
 }
 object UnityMediaPlayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getPlaybackstate: js.Function => js.Any,
     onNext: js.Function => js.Any,
     onPlayPause: js.Function => js.Any,
@@ -45,37 +44,26 @@ object UnityMediaPlayer {
     __obj.asInstanceOf[UnityMediaPlayer]
   }
   
-  @scala.inline
-  implicit class UnityMediaPlayerMutableBuilder[Self <: UnityMediaPlayer] (val x: Self) extends AnyVal {
+  extension [Self <: UnityMediaPlayer](x: Self) {
     
-    @scala.inline
-    def setGetPlaybackstate(value: js.Function => js.Any): Self = StObject.set(x, "getPlaybackstate", js.Any.fromFunction1(value))
+    inline def setGetPlaybackstate(value: js.Function => js.Any): Self = StObject.set(x, "getPlaybackstate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnNext(value: js.Function => js.Any): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
+    inline def setOnNext(value: js.Function => js.Any): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPlayPause(value: js.Function => js.Any): Self = StObject.set(x, "onPlayPause", js.Any.fromFunction1(value))
+    inline def setOnPlayPause(value: js.Function => js.Any): Self = StObject.set(x, "onPlayPause", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPrevious(value: js.Function => js.Any): Self = StObject.set(x, "onPrevious", js.Any.fromFunction1(value))
+    inline def setOnPrevious(value: js.Function => js.Any): Self = StObject.set(x, "onPrevious", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCanGoNext(value: Boolean => js.Any): Self = StObject.set(x, "setCanGoNext", js.Any.fromFunction1(value))
+    inline def setSetCanGoNext(value: Boolean => js.Any): Self = StObject.set(x, "setCanGoNext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCanGoPrev(value: Boolean => js.Any): Self = StObject.set(x, "setCanGoPrev", js.Any.fromFunction1(value))
+    inline def setSetCanGoPrev(value: Boolean => js.Any): Self = StObject.set(x, "setCanGoPrev", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCanPause(value: Boolean => js.Any): Self = StObject.set(x, "setCanPause", js.Any.fromFunction1(value))
+    inline def setSetCanPause(value: Boolean => js.Any): Self = StObject.set(x, "setCanPause", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCanPlay(value: Boolean => js.Any): Self = StObject.set(x, "setCanPlay", js.Any.fromFunction1(value))
+    inline def setSetCanPlay(value: Boolean => js.Any): Self = StObject.set(x, "setCanPlay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPlaybackstate(value: UnityPlaybackState => js.Any): Self = StObject.set(x, "setPlaybackstate", js.Any.fromFunction1(value))
+    inline def setSetPlaybackstate(value: UnityPlaybackState => js.Any): Self = StObject.set(x, "setPlaybackstate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTrack(value: UnityTrackMetadata => js.Any): Self = StObject.set(x, "setTrack", js.Any.fromFunction1(value))
+    inline def setSetTrack(value: UnityTrackMetadata => js.Any): Self = StObject.set(x, "setTrack", js.Any.fromFunction1(value))
   }
 }

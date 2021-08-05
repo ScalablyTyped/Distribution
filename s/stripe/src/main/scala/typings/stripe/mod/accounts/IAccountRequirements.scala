@@ -39,64 +39,45 @@ trait IAccountRequirements extends StObject {
 }
 object IAccountRequirements {
   
-  @scala.inline
-  def apply(): IAccountRequirements = {
+  inline def apply(): IAccountRequirements = {
     val __obj = js.Dynamic.literal(current_deadline = null)
     __obj.asInstanceOf[IAccountRequirements]
   }
   
-  @scala.inline
-  implicit class IAccountRequirementsMutableBuilder[Self <: IAccountRequirements] (val x: Self) extends AnyVal {
+  extension [Self <: IAccountRequirements](x: Self) {
     
-    @scala.inline
-    def setCurrent_deadline(value: Double): Self = StObject.set(x, "current_deadline", value.asInstanceOf[js.Any])
+    inline def setCurrent_deadline(value: Double): Self = StObject.set(x, "current_deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrent_deadlineNull: Self = StObject.set(x, "current_deadline", null)
+    inline def setCurrent_deadlineNull: Self = StObject.set(x, "current_deadline", null)
     
-    @scala.inline
-    def setCurrently_due(value: js.Array[String]): Self = StObject.set(x, "currently_due", value.asInstanceOf[js.Any])
+    inline def setCurrently_due(value: js.Array[String]): Self = StObject.set(x, "currently_due", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrently_dueUndefined: Self = StObject.set(x, "currently_due", js.undefined)
+    inline def setCurrently_dueUndefined: Self = StObject.set(x, "currently_due", js.undefined)
     
-    @scala.inline
-    def setCurrently_dueVarargs(value: String*): Self = StObject.set(x, "currently_due", js.Array(value :_*))
+    inline def setCurrently_dueVarargs(value: String*): Self = StObject.set(x, "currently_due", js.Array(value :_*))
     
-    @scala.inline
-    def setDisabled_reason(value: String): Self = StObject.set(x, "disabled_reason", value.asInstanceOf[js.Any])
+    inline def setDisabled_reason(value: String): Self = StObject.set(x, "disabled_reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled_reasonNull: Self = StObject.set(x, "disabled_reason", null)
+    inline def setDisabled_reasonNull: Self = StObject.set(x, "disabled_reason", null)
     
-    @scala.inline
-    def setDisabled_reasonUndefined: Self = StObject.set(x, "disabled_reason", js.undefined)
+    inline def setDisabled_reasonUndefined: Self = StObject.set(x, "disabled_reason", js.undefined)
     
-    @scala.inline
-    def setEventually_due(value: js.Array[String]): Self = StObject.set(x, "eventually_due", value.asInstanceOf[js.Any])
+    inline def setEventually_due(value: js.Array[String]): Self = StObject.set(x, "eventually_due", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventually_dueUndefined: Self = StObject.set(x, "eventually_due", js.undefined)
+    inline def setEventually_dueUndefined: Self = StObject.set(x, "eventually_due", js.undefined)
     
-    @scala.inline
-    def setEventually_dueVarargs(value: String*): Self = StObject.set(x, "eventually_due", js.Array(value :_*))
+    inline def setEventually_dueVarargs(value: String*): Self = StObject.set(x, "eventually_due", js.Array(value :_*))
     
-    @scala.inline
-    def setPast_due(value: js.Array[String]): Self = StObject.set(x, "past_due", value.asInstanceOf[js.Any])
+    inline def setPast_due(value: js.Array[String]): Self = StObject.set(x, "past_due", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPast_dueUndefined: Self = StObject.set(x, "past_due", js.undefined)
+    inline def setPast_dueUndefined: Self = StObject.set(x, "past_due", js.undefined)
     
-    @scala.inline
-    def setPast_dueVarargs(value: String*): Self = StObject.set(x, "past_due", js.Array(value :_*))
+    inline def setPast_dueVarargs(value: String*): Self = StObject.set(x, "past_due", js.Array(value :_*))
     
-    @scala.inline
-    def setPending_verification(value: js.Array[String]): Self = StObject.set(x, "pending_verification", value.asInstanceOf[js.Any])
+    inline def setPending_verification(value: js.Array[String]): Self = StObject.set(x, "pending_verification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPending_verificationUndefined: Self = StObject.set(x, "pending_verification", js.undefined)
+    inline def setPending_verificationUndefined: Self = StObject.set(x, "pending_verification", js.undefined)
     
-    @scala.inline
-    def setPending_verificationVarargs(value: String*): Self = StObject.set(x, "pending_verification", js.Array(value :_*))
+    inline def setPending_verificationVarargs(value: String*): Self = StObject.set(x, "pending_verification", js.Array(value :_*))
   }
 }

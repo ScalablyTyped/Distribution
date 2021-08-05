@@ -16,8 +16,7 @@ trait DateCondition
 }
 object DateCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DateType: Double,
     StyleName: String,
     Type: Double,
@@ -30,13 +29,10 @@ object DateCondition {
     __obj.asInstanceOf[DateCondition]
   }
   
-  @scala.inline
-  implicit class DateConditionMutableBuilder[Self <: DateCondition] (val x: Self) extends AnyVal {
+  extension [Self <: DateCondition](x: Self) {
     
-    @scala.inline
-    def setDateType(value: Double): Self = StObject.set(x, "DateType", value.asInstanceOf[js.Any])
+    inline def setDateType(value: Double): Self = StObject.set(x, "DateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleName(value: String): Self = StObject.set(x, "StyleName", value.asInstanceOf[js.Any])
+    inline def setStyleName(value: String): Self = StObject.set(x, "StyleName", value.asInstanceOf[js.Any])
   }
 }

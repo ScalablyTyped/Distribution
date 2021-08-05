@@ -16,32 +16,24 @@ object anon {
   }
   object After {
     
-    @scala.inline
-    def apply(): After = {
+    inline def apply(): After = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[After]
     }
     
-    @scala.inline
-    implicit class AfterMutableBuilder[Self <: After] (val x: Self) extends AnyVal {
+    extension [Self <: After](x: Self) {
       
-      @scala.inline
-      def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setReady(value: String): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+      inline def setReady(value: String): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+      inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
       
-      @scala.inline
-      def setUse(value: String): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: String): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+      inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     }
   }
 }

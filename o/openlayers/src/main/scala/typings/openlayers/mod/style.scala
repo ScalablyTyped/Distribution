@@ -837,11 +837,9 @@ object style {
   trait IconAnchorUnits extends StObject
   object IconAnchorUnits {
     
-    @scala.inline
-    def fraction: typings.openlayers.openlayersStrings.fraction = "fraction".asInstanceOf[typings.openlayers.openlayersStrings.fraction]
+    inline def fraction: typings.openlayers.openlayersStrings.fraction = "fraction".asInstanceOf[typings.openlayers.openlayersStrings.fraction]
     
-    @scala.inline
-    def pixels: typings.openlayers.openlayersStrings.pixels = "pixels".asInstanceOf[typings.openlayers.openlayersStrings.pixels]
+    inline def pixels: typings.openlayers.openlayersStrings.pixels = "pixels".asInstanceOf[typings.openlayers.openlayersStrings.pixels]
   }
   
   /**
@@ -856,16 +854,12 @@ object style {
   trait IconOrigin extends StObject
   object IconOrigin {
     
-    @scala.inline
-    def `bottom-left`: typings.openlayers.openlayersStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.openlayers.openlayersStrings.`bottom-left`]
+    inline def `bottom-left`: typings.openlayers.openlayersStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.openlayers.openlayersStrings.`bottom-left`]
     
-    @scala.inline
-    def `bottom-right`: typings.openlayers.openlayersStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.openlayers.openlayersStrings.`bottom-right`]
+    inline def `bottom-right`: typings.openlayers.openlayersStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.openlayers.openlayersStrings.`bottom-right`]
     
-    @scala.inline
-    def `top-left`: typings.openlayers.openlayersStrings.`top-left` = "top-left".asInstanceOf[typings.openlayers.openlayersStrings.`top-left`]
+    inline def `top-left`: typings.openlayers.openlayersStrings.`top-left` = "top-left".asInstanceOf[typings.openlayers.openlayersStrings.`top-left`]
     
-    @scala.inline
-    def `top-right`: typings.openlayers.openlayersStrings.`top-right` = "top-right".asInstanceOf[typings.openlayers.openlayersStrings.`top-right`]
+    inline def `top-right`: typings.openlayers.openlayersStrings.`top-right` = "top-right".asInstanceOf[typings.openlayers.openlayersStrings.`top-right`]
   }
 }

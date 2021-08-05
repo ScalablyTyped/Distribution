@@ -21,16 +21,13 @@ trait Trigger[TTarget, TData]
 }
 object Trigger {
   
-  @scala.inline
-  def apply[TTarget, TData](trigger: (Event, TData) => Unit | `false`): Trigger[TTarget, TData] = {
+  inline def apply[TTarget, TData](trigger: (Event, TData) => Unit | `false`): Trigger[TTarget, TData] = {
     val __obj = js.Dynamic.literal(trigger = js.Any.fromFunction2(trigger))
     __obj.asInstanceOf[Trigger[TTarget, TData]]
   }
   
-  @scala.inline
-  implicit class TriggerMutableBuilder[Self <: Trigger[?, ?], TTarget, TData] (val x: Self & (Trigger[TTarget, TData])) extends AnyVal {
+  extension [Self <: Trigger[?, ?], TTarget, TData](x: Self & (Trigger[TTarget, TData])) {
     
-    @scala.inline
-    def setTrigger(value: (Event, TData) => Unit | `false`): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
+    inline def setTrigger(value: (Event, TData) => Unit | `false`): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
   }
 }

@@ -27,31 +27,23 @@ trait SchemaProductDetail extends StObject {
 }
 object SchemaProductDetail {
   
-  @scala.inline
-  def apply(): SchemaProductDetail = {
+  inline def apply(): SchemaProductDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductDetail]
   }
   
-  @scala.inline
-  implicit class SchemaProductDetailMutableBuilder[Self <: SchemaProductDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductDetail](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
     
-    @scala.inline
-    def setAttributeValue(value: String): Self = StObject.set(x, "attributeValue", value.asInstanceOf[js.Any])
+    inline def setAttributeValue(value: String): Self = StObject.set(x, "attributeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValueUndefined: Self = StObject.set(x, "attributeValue", js.undefined)
+    inline def setAttributeValueUndefined: Self = StObject.set(x, "attributeValue", js.undefined)
     
-    @scala.inline
-    def setSectionName(value: String): Self = StObject.set(x, "sectionName", value.asInstanceOf[js.Any])
+    inline def setSectionName(value: String): Self = StObject.set(x, "sectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionNameUndefined: Self = StObject.set(x, "sectionName", js.undefined)
+    inline def setSectionNameUndefined: Self = StObject.set(x, "sectionName", js.undefined)
   }
 }

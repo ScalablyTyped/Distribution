@@ -17,10 +17,8 @@ object errorObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T](error: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(error.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T](
+    inline def create[T](error: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(error.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create[T](
       error: js.Any,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(error.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]

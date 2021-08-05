@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(passwdText: String): js.Array[PasswdEntry] = ^.asInstanceOf[js.Dynamic].apply(passwdText.asInstanceOf[js.Any]).asInstanceOf[js.Array[PasswdEntry]]
+  inline def apply(passwdText: String): js.Array[PasswdEntry] = ^.asInstanceOf[js.Dynamic].apply(passwdText.asInstanceOf[js.Any]).asInstanceOf[js.Array[PasswdEntry]]
   
   @JSImport("parse-passwd", JSImport.Namespace)
   @js.native
@@ -31,8 +30,7 @@ object mod {
   }
   object PasswdEntry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       gecos: String,
       gid: String,
       homedir: String,
@@ -45,29 +43,21 @@ object mod {
       __obj.asInstanceOf[PasswdEntry]
     }
     
-    @scala.inline
-    implicit class PasswdEntryMutableBuilder[Self <: PasswdEntry] (val x: Self) extends AnyVal {
+    extension [Self <: PasswdEntry](x: Self) {
       
-      @scala.inline
-      def setGecos(value: String): Self = StObject.set(x, "gecos", value.asInstanceOf[js.Any])
+      inline def setGecos(value: String): Self = StObject.set(x, "gecos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGid(value: String): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: String): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomedir(value: String): Self = StObject.set(x, "homedir", value.asInstanceOf[js.Any])
+      inline def setHomedir(value: String): Self = StObject.set(x, "homedir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

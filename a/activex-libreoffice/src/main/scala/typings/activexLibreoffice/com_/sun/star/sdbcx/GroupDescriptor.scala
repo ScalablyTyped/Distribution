@@ -17,8 +17,7 @@ trait GroupDescriptor
      with Descriptor
 object GroupDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     PropertySetInfo: XPropertySetInfo,
     acquire: () => Unit,

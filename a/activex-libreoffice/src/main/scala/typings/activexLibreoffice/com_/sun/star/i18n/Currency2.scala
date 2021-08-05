@@ -23,8 +23,7 @@ trait Currency2
 }
 object Currency2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BankSymbol: String,
     DecimalPlaces: Double,
     Default: Boolean,
@@ -38,10 +37,8 @@ object Currency2 {
     __obj.asInstanceOf[Currency2]
   }
   
-  @scala.inline
-  implicit class Currency2MutableBuilder[Self <: Currency2] (val x: Self) extends AnyVal {
+  extension [Self <: Currency2](x: Self) {
     
-    @scala.inline
-    def setLegacyOnly(value: Boolean): Self = StObject.set(x, "LegacyOnly", value.asInstanceOf[js.Any])
+    inline def setLegacyOnly(value: Boolean): Self = StObject.set(x, "LegacyOnly", value.asInstanceOf[js.Any])
   }
 }

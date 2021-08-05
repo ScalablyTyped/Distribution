@@ -60,79 +60,55 @@ trait FilterResponseCookie extends StObject {
 }
 object FilterResponseCookie {
   
-  @scala.inline
-  def apply(): FilterResponseCookie = {
+  inline def apply(): FilterResponseCookie = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterResponseCookie]
   }
   
-  @scala.inline
-  implicit class FilterResponseCookieMutableBuilder[Self <: FilterResponseCookie] (val x: Self) extends AnyVal {
+  extension [Self <: FilterResponseCookie](x: Self) {
     
-    @scala.inline
-    def setAgeLowerBound(value: integer): Self = StObject.set(x, "ageLowerBound", value.asInstanceOf[js.Any])
+    inline def setAgeLowerBound(value: integer): Self = StObject.set(x, "ageLowerBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeLowerBoundUndefined: Self = StObject.set(x, "ageLowerBound", js.undefined)
+    inline def setAgeLowerBoundUndefined: Self = StObject.set(x, "ageLowerBound", js.undefined)
     
-    @scala.inline
-    def setAgeUpperBound(value: integer): Self = StObject.set(x, "ageUpperBound", value.asInstanceOf[js.Any])
+    inline def setAgeUpperBound(value: integer): Self = StObject.set(x, "ageUpperBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeUpperBoundUndefined: Self = StObject.set(x, "ageUpperBound", js.undefined)
+    inline def setAgeUpperBoundUndefined: Self = StObject.set(x, "ageUpperBound", js.undefined)
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
-    @scala.inline
-    def setHttpOnly(value: String): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+    inline def setHttpOnly(value: String): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
+    inline def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
     
-    @scala.inline
-    def setMaxAge(value: double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+    inline def setMaxAge(value: double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+    inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setSecure(value: String): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+    inline def setSecure(value: String): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+    inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     
-    @scala.inline
-    def setSessionCookie(value: Boolean): Self = StObject.set(x, "sessionCookie", value.asInstanceOf[js.Any])
+    inline def setSessionCookie(value: Boolean): Self = StObject.set(x, "sessionCookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionCookieUndefined: Self = StObject.set(x, "sessionCookie", js.undefined)
+    inline def setSessionCookieUndefined: Self = StObject.set(x, "sessionCookie", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

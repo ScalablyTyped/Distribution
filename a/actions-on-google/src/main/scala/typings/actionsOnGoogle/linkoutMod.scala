@@ -37,20 +37,16 @@ object linkoutMod {
   }
   object LinkOutSuggestionOptions {
     
-    @scala.inline
-    def apply(name: String, url: String): LinkOutSuggestionOptions = {
+    inline def apply(name: String, url: String): LinkOutSuggestionOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkOutSuggestionOptions]
     }
     
-    @scala.inline
-    implicit class LinkOutSuggestionOptionsMutableBuilder[Self <: LinkOutSuggestionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LinkOutSuggestionOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

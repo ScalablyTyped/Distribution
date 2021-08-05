@@ -13,19 +13,15 @@ trait CreateEndpointGroupResponse extends StObject {
 }
 object CreateEndpointGroupResponse {
   
-  @scala.inline
-  def apply(): CreateEndpointGroupResponse = {
+  inline def apply(): CreateEndpointGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateEndpointGroupResponse]
   }
   
-  @scala.inline
-  implicit class CreateEndpointGroupResponseMutableBuilder[Self <: CreateEndpointGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEndpointGroupResponse](x: Self) {
     
-    @scala.inline
-    def setEndpointGroup(value: EndpointGroup): Self = StObject.set(x, "EndpointGroup", value.asInstanceOf[js.Any])
+    inline def setEndpointGroup(value: EndpointGroup): Self = StObject.set(x, "EndpointGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointGroupUndefined: Self = StObject.set(x, "EndpointGroup", js.undefined)
+    inline def setEndpointGroupUndefined: Self = StObject.set(x, "EndpointGroup", js.undefined)
   }
 }

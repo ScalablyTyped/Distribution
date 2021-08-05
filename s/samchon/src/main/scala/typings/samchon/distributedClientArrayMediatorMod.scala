@@ -140,6 +140,6 @@ object distributedClientArrayMediatorMod {
     /**
       * A subrogator of {@link IServer server}'s role instead of this {@link ExternalClientArray}.
       */
-    var server_base_ : js.Any = js.native
+    /* private */ var server_base_ : js.Any = js.native
   }
 }

@@ -32,35 +32,26 @@ object slideInChildMod {
   }
   object SlideInChildProps {
     
-    @scala.inline
-    def apply(getLeaveDirection: js.Function): SlideInChildProps = {
+    inline def apply(getLeaveDirection: js.Function): SlideInChildProps = {
       val __obj = js.Dynamic.literal(getLeaveDirection = getLeaveDirection.asInstanceOf[js.Any])
       __obj.asInstanceOf[SlideInChildProps]
     }
     
-    @scala.inline
-    implicit class SlideInChildPropsMutableBuilder[Self <: SlideInChildProps] (val x: Self) extends AnyVal {
+    extension [Self <: SlideInChildProps](x: Self) {
       
-      @scala.inline
-      def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setEnterDelay(value: Double): Self = StObject.set(x, "enterDelay", value.asInstanceOf[js.Any])
+      inline def setEnterDelay(value: Double): Self = StObject.set(x, "enterDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterDelayUndefined: Self = StObject.set(x, "enterDelay", js.undefined)
+      inline def setEnterDelayUndefined: Self = StObject.set(x, "enterDelay", js.undefined)
       
-      @scala.inline
-      def setGetLeaveDirection(value: js.Function): Self = StObject.set(x, "getLeaveDirection", value.asInstanceOf[js.Any])
+      inline def setGetLeaveDirection(value: js.Function): Self = StObject.set(x, "getLeaveDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

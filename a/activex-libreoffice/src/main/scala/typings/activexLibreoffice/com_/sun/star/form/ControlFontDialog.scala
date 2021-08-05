@@ -16,8 +16,7 @@ trait ControlFontDialog
 }
 object ControlFontDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createWithGridModel: XPropertySet => Unit,
     execute: () => Double,
@@ -29,10 +28,8 @@ object ControlFontDialog {
     __obj.asInstanceOf[ControlFontDialog]
   }
   
-  @scala.inline
-  implicit class ControlFontDialogMutableBuilder[Self <: ControlFontDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ControlFontDialog](x: Self) {
     
-    @scala.inline
-    def setCreateWithGridModel(value: XPropertySet => Unit): Self = StObject.set(x, "createWithGridModel", js.Any.fromFunction1(value))
+    inline def setCreateWithGridModel(value: XPropertySet => Unit): Self = StObject.set(x, "createWithGridModel", js.Any.fromFunction1(value))
   }
 }

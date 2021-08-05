@@ -46,37 +46,27 @@ trait PlusIoMetadata extends StObject {
 }
 object PlusIoMetadata {
   
-  @scala.inline
-  def apply(): PlusIoMetadata = {
+  inline def apply(): PlusIoMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusIoMetadata]
   }
   
-  @scala.inline
-  implicit class PlusIoMetadataMutableBuilder[Self <: PlusIoMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: PlusIoMetadata](x: Self) {
     
-    @scala.inline
-    def setDirectoryCount(value: Double): Self = StObject.set(x, "directoryCount", value.asInstanceOf[js.Any])
+    inline def setDirectoryCount(value: Double): Self = StObject.set(x, "directoryCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryCountUndefined: Self = StObject.set(x, "directoryCount", js.undefined)
+    inline def setDirectoryCountUndefined: Self = StObject.set(x, "directoryCount", js.undefined)
     
-    @scala.inline
-    def setFileCount(value: Double): Self = StObject.set(x, "fileCount", value.asInstanceOf[js.Any])
+    inline def setFileCount(value: Double): Self = StObject.set(x, "fileCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileCountUndefined: Self = StObject.set(x, "fileCount", js.undefined)
+    inline def setFileCountUndefined: Self = StObject.set(x, "fileCount", js.undefined)
     
-    @scala.inline
-    def setModificationTime(value: Date): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
+    inline def setModificationTime(value: Date): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModificationTimeUndefined: Self = StObject.set(x, "modificationTime", js.undefined)
+    inline def setModificationTimeUndefined: Self = StObject.set(x, "modificationTime", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

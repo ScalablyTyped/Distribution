@@ -12,10 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[V /* <: HTTPVersion */](): Instance[V] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance[V]]
-  @scala.inline
-  def apply[V /* <: HTTPVersion */](config: Config[V]): Instance[V] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Instance[V]]
+  inline def apply[V /* <: HTTPVersion */](): Instance[V] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance[V]]
+  inline def apply[V /* <: HTTPVersion */](config: Config[V]): Instance[V] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Instance[V]]
   
   @JSImport("find-my-way", JSImport.Namespace)
   @js.native
@@ -61,56 +59,40 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply[V /* <: HTTPVersion */](): Config[V] = {
+    inline def apply[V /* <: HTTPVersion */](): Config[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config[V]]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[?], V /* <: HTTPVersion */] (val x: Self & Config[V]) extends AnyVal {
+    extension [Self <: Config[?], V /* <: HTTPVersion */](x: Self & Config[V]) {
       
-      @scala.inline
-      def setAllowUnsafeRegex(value: Boolean): Self = StObject.set(x, "allowUnsafeRegex", value.asInstanceOf[js.Any])
+      inline def setAllowUnsafeRegex(value: Boolean): Self = StObject.set(x, "allowUnsafeRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUnsafeRegexUndefined: Self = StObject.set(x, "allowUnsafeRegex", js.undefined)
+      inline def setAllowUnsafeRegexUndefined: Self = StObject.set(x, "allowUnsafeRegex", js.undefined)
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
-      @scala.inline
-      def setDefaultRoute(value: (/* req */ Req[V], /* res */ Res[V]) => Unit): Self = StObject.set(x, "defaultRoute", js.Any.fromFunction2(value))
+      inline def setDefaultRoute(value: (/* req */ Req[V], /* res */ Res[V]) => Unit): Self = StObject.set(x, "defaultRoute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDefaultRouteUndefined: Self = StObject.set(x, "defaultRoute", js.undefined)
+      inline def setDefaultRouteUndefined: Self = StObject.set(x, "defaultRoute", js.undefined)
       
-      @scala.inline
-      def setIgnoreTrailingSlash(value: Boolean): Self = StObject.set(x, "ignoreTrailingSlash", value.asInstanceOf[js.Any])
+      inline def setIgnoreTrailingSlash(value: Boolean): Self = StObject.set(x, "ignoreTrailingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreTrailingSlashUndefined: Self = StObject.set(x, "ignoreTrailingSlash", js.undefined)
+      inline def setIgnoreTrailingSlashUndefined: Self = StObject.set(x, "ignoreTrailingSlash", js.undefined)
       
-      @scala.inline
-      def setMaxParamLength(value: Double): Self = StObject.set(x, "maxParamLength", value.asInstanceOf[js.Any])
+      inline def setMaxParamLength(value: Double): Self = StObject.set(x, "maxParamLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxParamLengthUndefined: Self = StObject.set(x, "maxParamLength", js.undefined)
+      inline def setMaxParamLengthUndefined: Self = StObject.set(x, "maxParamLength", js.undefined)
       
-      @scala.inline
-      def setOnBadUrl(value: (/* path */ String, /* req */ Req[V], /* res */ Res[V]) => Unit): Self = StObject.set(x, "onBadUrl", js.Any.fromFunction3(value))
+      inline def setOnBadUrl(value: (/* path */ String, /* req */ Req[V], /* res */ Res[V]) => Unit): Self = StObject.set(x, "onBadUrl", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnBadUrlUndefined: Self = StObject.set(x, "onBadUrl", js.undefined)
+      inline def setOnBadUrlUndefined: Self = StObject.set(x, "onBadUrl", js.undefined)
       
-      @scala.inline
-      def setVersioning(value: DeriveVersion[V]): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
+      inline def setVersioning(value: DeriveVersion[V]): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
+      inline def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
     }
   }
   
@@ -126,8 +108,7 @@ object mod {
   }
   object FindResult {
     
-    @scala.inline
-    def apply[V /* <: HTTPVersion */](
+    inline def apply[V /* <: HTTPVersion */](
       handler: (/* req */ Req[V], /* res */ Res[V], /* params */ StringDictionary[js.UndefOr[String]], /* store */ js.Any) => Unit,
       params: StringDictionary[js.UndefOr[String]],
       store: js.Any
@@ -136,19 +117,15 @@ object mod {
       __obj.asInstanceOf[FindResult[V]]
     }
     
-    @scala.inline
-    implicit class FindResultMutableBuilder[Self <: FindResult[?], V /* <: HTTPVersion */] (val x: Self & FindResult[V]) extends AnyVal {
+    extension [Self <: FindResult[?], V /* <: HTTPVersion */](x: Self & FindResult[V]) {
       
-      @scala.inline
-      def setHandler(
+      inline def setHandler(
         value: (/* req */ Req[V], /* res */ Res[V], /* params */ StringDictionary[js.UndefOr[String]], /* store */ js.Any) => Unit
       ): Self = StObject.set(x, "handler", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setParams(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,107 +168,73 @@ object mod {
   trait HTTPMethod extends StObject
   object HTTPMethod {
     
-    @scala.inline
-    def ACL: typings.findMyWay.findMyWayStrings.ACL = "ACL".asInstanceOf[typings.findMyWay.findMyWayStrings.ACL]
+    inline def ACL: typings.findMyWay.findMyWayStrings.ACL = "ACL".asInstanceOf[typings.findMyWay.findMyWayStrings.ACL]
     
-    @scala.inline
-    def BIND: typings.findMyWay.findMyWayStrings.BIND = "BIND".asInstanceOf[typings.findMyWay.findMyWayStrings.BIND]
+    inline def BIND: typings.findMyWay.findMyWayStrings.BIND = "BIND".asInstanceOf[typings.findMyWay.findMyWayStrings.BIND]
     
-    @scala.inline
-    def CHECKOUT: typings.findMyWay.findMyWayStrings.CHECKOUT = "CHECKOUT".asInstanceOf[typings.findMyWay.findMyWayStrings.CHECKOUT]
+    inline def CHECKOUT: typings.findMyWay.findMyWayStrings.CHECKOUT = "CHECKOUT".asInstanceOf[typings.findMyWay.findMyWayStrings.CHECKOUT]
     
-    @scala.inline
-    def CONNECT: typings.findMyWay.findMyWayStrings.CONNECT = "CONNECT".asInstanceOf[typings.findMyWay.findMyWayStrings.CONNECT]
+    inline def CONNECT: typings.findMyWay.findMyWayStrings.CONNECT = "CONNECT".asInstanceOf[typings.findMyWay.findMyWayStrings.CONNECT]
     
-    @scala.inline
-    def COPY: typings.findMyWay.findMyWayStrings.COPY = "COPY".asInstanceOf[typings.findMyWay.findMyWayStrings.COPY]
+    inline def COPY: typings.findMyWay.findMyWayStrings.COPY = "COPY".asInstanceOf[typings.findMyWay.findMyWayStrings.COPY]
     
-    @scala.inline
-    def DELETE: typings.findMyWay.findMyWayStrings.DELETE = "DELETE".asInstanceOf[typings.findMyWay.findMyWayStrings.DELETE]
+    inline def DELETE: typings.findMyWay.findMyWayStrings.DELETE = "DELETE".asInstanceOf[typings.findMyWay.findMyWayStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.findMyWay.findMyWayStrings.GET = "GET".asInstanceOf[typings.findMyWay.findMyWayStrings.GET]
+    inline def GET: typings.findMyWay.findMyWayStrings.GET = "GET".asInstanceOf[typings.findMyWay.findMyWayStrings.GET]
     
-    @scala.inline
-    def HEAD: typings.findMyWay.findMyWayStrings.HEAD = "HEAD".asInstanceOf[typings.findMyWay.findMyWayStrings.HEAD]
+    inline def HEAD: typings.findMyWay.findMyWayStrings.HEAD = "HEAD".asInstanceOf[typings.findMyWay.findMyWayStrings.HEAD]
     
-    @scala.inline
-    def LINK: typings.findMyWay.findMyWayStrings.LINK = "LINK".asInstanceOf[typings.findMyWay.findMyWayStrings.LINK]
+    inline def LINK: typings.findMyWay.findMyWayStrings.LINK = "LINK".asInstanceOf[typings.findMyWay.findMyWayStrings.LINK]
     
-    @scala.inline
-    def LOCK: typings.findMyWay.findMyWayStrings.LOCK = "LOCK".asInstanceOf[typings.findMyWay.findMyWayStrings.LOCK]
+    inline def LOCK: typings.findMyWay.findMyWayStrings.LOCK = "LOCK".asInstanceOf[typings.findMyWay.findMyWayStrings.LOCK]
     
-    @scala.inline
-    def `M-SEARCH`: typings.findMyWay.findMyWayStrings.`M-SEARCH` = "M-SEARCH".asInstanceOf[typings.findMyWay.findMyWayStrings.`M-SEARCH`]
+    inline def `M-SEARCH`: typings.findMyWay.findMyWayStrings.`M-SEARCH` = "M-SEARCH".asInstanceOf[typings.findMyWay.findMyWayStrings.`M-SEARCH`]
     
-    @scala.inline
-    def MERGE: typings.findMyWay.findMyWayStrings.MERGE = "MERGE".asInstanceOf[typings.findMyWay.findMyWayStrings.MERGE]
+    inline def MERGE: typings.findMyWay.findMyWayStrings.MERGE = "MERGE".asInstanceOf[typings.findMyWay.findMyWayStrings.MERGE]
     
-    @scala.inline
-    def MKACTIVITY: typings.findMyWay.findMyWayStrings.MKACTIVITY = "MKACTIVITY".asInstanceOf[typings.findMyWay.findMyWayStrings.MKACTIVITY]
+    inline def MKACTIVITY: typings.findMyWay.findMyWayStrings.MKACTIVITY = "MKACTIVITY".asInstanceOf[typings.findMyWay.findMyWayStrings.MKACTIVITY]
     
-    @scala.inline
-    def MKCALENDAR: typings.findMyWay.findMyWayStrings.MKCALENDAR = "MKCALENDAR".asInstanceOf[typings.findMyWay.findMyWayStrings.MKCALENDAR]
+    inline def MKCALENDAR: typings.findMyWay.findMyWayStrings.MKCALENDAR = "MKCALENDAR".asInstanceOf[typings.findMyWay.findMyWayStrings.MKCALENDAR]
     
-    @scala.inline
-    def MKCOL: typings.findMyWay.findMyWayStrings.MKCOL = "MKCOL".asInstanceOf[typings.findMyWay.findMyWayStrings.MKCOL]
+    inline def MKCOL: typings.findMyWay.findMyWayStrings.MKCOL = "MKCOL".asInstanceOf[typings.findMyWay.findMyWayStrings.MKCOL]
     
-    @scala.inline
-    def MOVE: typings.findMyWay.findMyWayStrings.MOVE = "MOVE".asInstanceOf[typings.findMyWay.findMyWayStrings.MOVE]
+    inline def MOVE: typings.findMyWay.findMyWayStrings.MOVE = "MOVE".asInstanceOf[typings.findMyWay.findMyWayStrings.MOVE]
     
-    @scala.inline
-    def NOTIFY: typings.findMyWay.findMyWayStrings.NOTIFY = "NOTIFY".asInstanceOf[typings.findMyWay.findMyWayStrings.NOTIFY]
+    inline def NOTIFY: typings.findMyWay.findMyWayStrings.NOTIFY = "NOTIFY".asInstanceOf[typings.findMyWay.findMyWayStrings.NOTIFY]
     
-    @scala.inline
-    def OPTIONS: typings.findMyWay.findMyWayStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.findMyWay.findMyWayStrings.OPTIONS]
+    inline def OPTIONS: typings.findMyWay.findMyWayStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.findMyWay.findMyWayStrings.OPTIONS]
     
-    @scala.inline
-    def PATCH: typings.findMyWay.findMyWayStrings.PATCH = "PATCH".asInstanceOf[typings.findMyWay.findMyWayStrings.PATCH]
+    inline def PATCH: typings.findMyWay.findMyWayStrings.PATCH = "PATCH".asInstanceOf[typings.findMyWay.findMyWayStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.findMyWay.findMyWayStrings.POST = "POST".asInstanceOf[typings.findMyWay.findMyWayStrings.POST]
+    inline def POST: typings.findMyWay.findMyWayStrings.POST = "POST".asInstanceOf[typings.findMyWay.findMyWayStrings.POST]
     
-    @scala.inline
-    def PROPFIND: typings.findMyWay.findMyWayStrings.PROPFIND = "PROPFIND".asInstanceOf[typings.findMyWay.findMyWayStrings.PROPFIND]
+    inline def PROPFIND: typings.findMyWay.findMyWayStrings.PROPFIND = "PROPFIND".asInstanceOf[typings.findMyWay.findMyWayStrings.PROPFIND]
     
-    @scala.inline
-    def PROPPATCH: typings.findMyWay.findMyWayStrings.PROPPATCH = "PROPPATCH".asInstanceOf[typings.findMyWay.findMyWayStrings.PROPPATCH]
+    inline def PROPPATCH: typings.findMyWay.findMyWayStrings.PROPPATCH = "PROPPATCH".asInstanceOf[typings.findMyWay.findMyWayStrings.PROPPATCH]
     
-    @scala.inline
-    def PURGE: typings.findMyWay.findMyWayStrings.PURGE = "PURGE".asInstanceOf[typings.findMyWay.findMyWayStrings.PURGE]
+    inline def PURGE: typings.findMyWay.findMyWayStrings.PURGE = "PURGE".asInstanceOf[typings.findMyWay.findMyWayStrings.PURGE]
     
-    @scala.inline
-    def PUT: typings.findMyWay.findMyWayStrings.PUT = "PUT".asInstanceOf[typings.findMyWay.findMyWayStrings.PUT]
+    inline def PUT: typings.findMyWay.findMyWayStrings.PUT = "PUT".asInstanceOf[typings.findMyWay.findMyWayStrings.PUT]
     
-    @scala.inline
-    def REBIND: typings.findMyWay.findMyWayStrings.REBIND = "REBIND".asInstanceOf[typings.findMyWay.findMyWayStrings.REBIND]
+    inline def REBIND: typings.findMyWay.findMyWayStrings.REBIND = "REBIND".asInstanceOf[typings.findMyWay.findMyWayStrings.REBIND]
     
-    @scala.inline
-    def REPORT: typings.findMyWay.findMyWayStrings.REPORT = "REPORT".asInstanceOf[typings.findMyWay.findMyWayStrings.REPORT]
+    inline def REPORT: typings.findMyWay.findMyWayStrings.REPORT = "REPORT".asInstanceOf[typings.findMyWay.findMyWayStrings.REPORT]
     
-    @scala.inline
-    def SEARCH: typings.findMyWay.findMyWayStrings.SEARCH = "SEARCH".asInstanceOf[typings.findMyWay.findMyWayStrings.SEARCH]
+    inline def SEARCH: typings.findMyWay.findMyWayStrings.SEARCH = "SEARCH".asInstanceOf[typings.findMyWay.findMyWayStrings.SEARCH]
     
-    @scala.inline
-    def SOURCE: typings.findMyWay.findMyWayStrings.SOURCE = "SOURCE".asInstanceOf[typings.findMyWay.findMyWayStrings.SOURCE]
+    inline def SOURCE: typings.findMyWay.findMyWayStrings.SOURCE = "SOURCE".asInstanceOf[typings.findMyWay.findMyWayStrings.SOURCE]
     
-    @scala.inline
-    def SUBSCRIBE: typings.findMyWay.findMyWayStrings.SUBSCRIBE = "SUBSCRIBE".asInstanceOf[typings.findMyWay.findMyWayStrings.SUBSCRIBE]
+    inline def SUBSCRIBE: typings.findMyWay.findMyWayStrings.SUBSCRIBE = "SUBSCRIBE".asInstanceOf[typings.findMyWay.findMyWayStrings.SUBSCRIBE]
     
-    @scala.inline
-    def TRACE: typings.findMyWay.findMyWayStrings.TRACE = "TRACE".asInstanceOf[typings.findMyWay.findMyWayStrings.TRACE]
+    inline def TRACE: typings.findMyWay.findMyWayStrings.TRACE = "TRACE".asInstanceOf[typings.findMyWay.findMyWayStrings.TRACE]
     
-    @scala.inline
-    def UNBIND: typings.findMyWay.findMyWayStrings.UNBIND = "UNBIND".asInstanceOf[typings.findMyWay.findMyWayStrings.UNBIND]
+    inline def UNBIND: typings.findMyWay.findMyWayStrings.UNBIND = "UNBIND".asInstanceOf[typings.findMyWay.findMyWayStrings.UNBIND]
     
-    @scala.inline
-    def UNLINK: typings.findMyWay.findMyWayStrings.UNLINK = "UNLINK".asInstanceOf[typings.findMyWay.findMyWayStrings.UNLINK]
+    inline def UNLINK: typings.findMyWay.findMyWayStrings.UNLINK = "UNLINK".asInstanceOf[typings.findMyWay.findMyWayStrings.UNLINK]
     
-    @scala.inline
-    def UNLOCK: typings.findMyWay.findMyWayStrings.UNLOCK = "UNLOCK".asInstanceOf[typings.findMyWay.findMyWayStrings.UNLOCK]
+    inline def UNLOCK: typings.findMyWay.findMyWayStrings.UNLOCK = "UNLOCK".asInstanceOf[typings.findMyWay.findMyWayStrings.UNLOCK]
     
-    @scala.inline
-    def UNSUBSCRIBE: typings.findMyWay.findMyWayStrings.UNSUBSCRIBE = "UNSUBSCRIBE".asInstanceOf[typings.findMyWay.findMyWayStrings.UNSUBSCRIBE]
+    inline def UNSUBSCRIBE: typings.findMyWay.findMyWayStrings.UNSUBSCRIBE = "UNSUBSCRIBE".asInstanceOf[typings.findMyWay.findMyWayStrings.UNSUBSCRIBE]
   }
   
   type Handler[V /* <: HTTPVersion */] = js.Function4[
@@ -589,17 +532,14 @@ object mod {
   }
   object RouteOptions {
     
-    @scala.inline
-    def apply(version: String): RouteOptions = {
+    inline def apply(version: String): RouteOptions = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteOptions]
     }
     
-    @scala.inline
-    implicit class RouteOptionsMutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RouteOptions](x: Self) {
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

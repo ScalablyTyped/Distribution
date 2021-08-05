@@ -15,22 +15,17 @@ trait TextThemeMap extends StObject {
 }
 object TextThemeMap {
   
-  @scala.inline
-  def apply(large: js.Any => FontSize, normal: js.Any => FontSize, small: js.Any => FontSize): TextThemeMap = {
+  inline def apply(large: js.Any => FontSize, normal: js.Any => FontSize, small: js.Any => FontSize): TextThemeMap = {
     val __obj = js.Dynamic.literal(large = js.Any.fromFunction1(large), normal = js.Any.fromFunction1(normal), small = js.Any.fromFunction1(small))
     __obj.asInstanceOf[TextThemeMap]
   }
   
-  @scala.inline
-  implicit class TextThemeMapMutableBuilder[Self <: TextThemeMap] (val x: Self) extends AnyVal {
+  extension [Self <: TextThemeMap](x: Self) {
     
-    @scala.inline
-    def setLarge(value: js.Any => FontSize): Self = StObject.set(x, "large", js.Any.fromFunction1(value))
+    inline def setLarge(value: js.Any => FontSize): Self = StObject.set(x, "large", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNormal(value: js.Any => FontSize): Self = StObject.set(x, "normal", js.Any.fromFunction1(value))
+    inline def setNormal(value: js.Any => FontSize): Self = StObject.set(x, "normal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSmall(value: js.Any => FontSize): Self = StObject.set(x, "small", js.Any.fromFunction1(value))
+    inline def setSmall(value: js.Any => FontSize): Self = StObject.set(x, "small", js.Any.fromFunction1(value))
   }
 }

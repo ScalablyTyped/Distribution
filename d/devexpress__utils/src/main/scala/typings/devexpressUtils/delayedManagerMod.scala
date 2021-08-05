@@ -11,15 +11,15 @@ object delayedManagerMod {
   class DelayedActionManager protected () extends StObject {
     def this(action: js.Function0[Unit]) = this()
     
-    var action: js.Any = js.native
+    /* private */ var action: js.Any = js.native
     
     val actionExecuted: Boolean = js.native
     
-    var actionStartTime: js.Any = js.native
+    /* private */ var actionStartTime: js.Any = js.native
     
-    var actionTimeout: js.Any = js.native
+    /* private */ var actionTimeout: js.Any = js.native
     
-    var actionTimeoutId: js.Any = js.native
+    /* private */ var actionTimeoutId: js.Any = js.native
     
     def executeAction(): Unit = js.native
     

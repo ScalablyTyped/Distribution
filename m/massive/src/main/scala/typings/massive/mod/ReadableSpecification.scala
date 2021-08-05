@@ -20,28 +20,21 @@ trait ReadableSpecification extends StObject {
 }
 object ReadableSpecification {
   
-  @scala.inline
-  def apply(db: Database, name: String, schema: String): ReadableSpecification = {
+  inline def apply(db: Database, name: String, schema: String): ReadableSpecification = {
     val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadableSpecification]
   }
   
-  @scala.inline
-  implicit class ReadableSpecificationMutableBuilder[Self <: ReadableSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: ReadableSpecification](x: Self) {
     
-    @scala.inline
-    def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    inline def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_matview(value: Boolean): Self = StObject.set(x, "is_matview", value.asInstanceOf[js.Any])
+    inline def setIs_matview(value: Boolean): Self = StObject.set(x, "is_matview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_matviewUndefined: Self = StObject.set(x, "is_matview", js.undefined)
+    inline def setIs_matviewUndefined: Self = StObject.set(x, "is_matview", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

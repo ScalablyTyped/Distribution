@@ -17,57 +17,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LiteralKind extends StObject
 object LiteralKind {
   
-  @scala.inline
-  def BigIntLiteral(value: String | Double): typings.astTypes.namedTypesMod.namedTypes.BigIntLiteral = {
+  inline def BigIntLiteral(value: String | Double): typings.astTypes.namedTypesMod.namedTypes.BigIntLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BigIntLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.BigIntLiteral]
   }
   
-  @scala.inline
-  def BooleanLiteral(value: Boolean): typings.astTypes.namedTypesMod.namedTypes.BooleanLiteral = {
+  inline def BooleanLiteral(value: Boolean): typings.astTypes.namedTypesMod.namedTypes.BooleanLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BooleanLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.BooleanLiteral]
   }
   
-  @scala.inline
-  def JSXText(value: String): typings.astTypes.namedTypesMod.namedTypes.JSXText = {
+  inline def JSXText(value: String): typings.astTypes.namedTypesMod.namedTypes.JSXText = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXText")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.JSXText]
   }
   
-  @scala.inline
-  def Literal(): typings.astTypes.namedTypesMod.namedTypes.Literal = {
+  inline def Literal(): typings.astTypes.namedTypesMod.namedTypes.Literal = {
     val __obj = js.Dynamic.literal(value = null)
     __obj.updateDynamic("type")("Literal")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.Literal]
   }
   
-  @scala.inline
-  def NullLiteral(): typings.astTypes.namedTypesMod.namedTypes.NullLiteral = {
+  inline def NullLiteral(): typings.astTypes.namedTypesMod.namedTypes.NullLiteral = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("NullLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.NullLiteral]
   }
   
-  @scala.inline
-  def NumericLiteral(value: Double): typings.astTypes.namedTypesMod.namedTypes.NumericLiteral = {
+  inline def NumericLiteral(value: Double): typings.astTypes.namedTypesMod.namedTypes.NumericLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NumericLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.NumericLiteral]
   }
   
-  @scala.inline
-  def RegExpLiteral(flags: String, pattern: String): typings.astTypes.namedTypesMod.namedTypes.RegExpLiteral = {
+  inline def RegExpLiteral(flags: String, pattern: String): typings.astTypes.namedTypesMod.namedTypes.RegExpLiteral = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("RegExpLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.RegExpLiteral]
   }
   
-  @scala.inline
-  def StringLiteral(value: String): typings.astTypes.namedTypesMod.namedTypes.StringLiteral = {
+  inline def StringLiteral(value: String): typings.astTypes.namedTypesMod.namedTypes.StringLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StringLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.StringLiteral]

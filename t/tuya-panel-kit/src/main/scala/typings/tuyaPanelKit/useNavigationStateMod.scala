@@ -12,8 +12,7 @@ object useNavigationStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](selector: Selector[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def default[T](selector: Selector[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any]).asInstanceOf[T]
   
   // tslint:disable-next-line strict-export-declare-modifiers
   type Selector[T] = js.Function1[/* state */ NavigationState[ParamListBase], T]

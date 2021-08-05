@@ -48,49 +48,35 @@ trait ParamsResourceEntitlementsPatch
 }
 object ParamsResourceEntitlementsPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceEntitlementsPatch = {
+  inline def apply(): ParamsResourceEntitlementsPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceEntitlementsPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceEntitlementsPatchMutableBuilder[Self <: ParamsResourceEntitlementsPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceEntitlementsPatch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
+    inline def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
+    inline def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
     
-    @scala.inline
-    def setEntitlementId(value: String): Self = StObject.set(x, "entitlementId", value.asInstanceOf[js.Any])
+    inline def setEntitlementId(value: String): Self = StObject.set(x, "entitlementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementIdUndefined: Self = StObject.set(x, "entitlementId", js.undefined)
+    inline def setEntitlementIdUndefined: Self = StObject.set(x, "entitlementId", js.undefined)
     
-    @scala.inline
-    def setInstall(value: Boolean): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
+    inline def setInstall(value: Boolean): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallUndefined: Self = StObject.set(x, "install", js.undefined)
+    inline def setInstallUndefined: Self = StObject.set(x, "install", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaEntitlement): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaEntitlement): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

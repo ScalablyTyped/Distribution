@@ -25,16 +25,14 @@ object CellDeleteMode {
     *
     * entire columns to the right of the inserted cells are moved right.
     */
-  @scala.inline
-  def COLUMNS: `4` = 4.asInstanceOf[`4`]
+  inline def COLUMNS: `4` = 4.asInstanceOf[`4`]
   
   /**
     * selects the left border.
     *
     * the cells to the right of the deleted cells are moved left.
     */
-  @scala.inline
-  def LEFT: `2` = 2.asInstanceOf[`2`]
+  inline def LEFT: `2` = 2.asInstanceOf[`2`]
   
   /**
     * no cells are moved.
@@ -49,18 +47,15 @@ object CellDeleteMode {
     *
     * sheet is not linked.
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /**
     * entire rows below the deleted cells are moved up.
     *
     * entire rows below the inserted cells are moved down.
     */
-  @scala.inline
-  def ROWS: `3` = 3.asInstanceOf[`3`]
+  inline def ROWS: `3` = 3.asInstanceOf[`3`]
   
   /** the cells below the deleted cells are moved up. */
-  @scala.inline
-  def UP: `1` = 1.asInstanceOf[`1`]
+  inline def UP: `1` = 1.asInstanceOf[`1`]
 }

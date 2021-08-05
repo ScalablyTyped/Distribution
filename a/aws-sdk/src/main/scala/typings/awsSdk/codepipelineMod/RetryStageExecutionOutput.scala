@@ -13,19 +13,15 @@ trait RetryStageExecutionOutput extends StObject {
 }
 object RetryStageExecutionOutput {
   
-  @scala.inline
-  def apply(): RetryStageExecutionOutput = {
+  inline def apply(): RetryStageExecutionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryStageExecutionOutput]
   }
   
-  @scala.inline
-  implicit class RetryStageExecutionOutputMutableBuilder[Self <: RetryStageExecutionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RetryStageExecutionOutput](x: Self) {
     
-    @scala.inline
-    def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
+    inline def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineExecutionIdUndefined: Self = StObject.set(x, "pipelineExecutionId", js.undefined)
+    inline def setPipelineExecutionIdUndefined: Self = StObject.set(x, "pipelineExecutionId", js.undefined)
   }
 }

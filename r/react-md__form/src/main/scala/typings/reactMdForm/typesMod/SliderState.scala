@@ -14,25 +14,19 @@ trait SliderState extends StObject {
 }
 object SliderState {
   
-  @scala.inline
-  def apply(dragging: Boolean, value: Double): SliderState = {
+  inline def apply(dragging: Boolean, value: Double): SliderState = {
     val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], dragType = null)
     __obj.asInstanceOf[SliderState]
   }
   
-  @scala.inline
-  implicit class SliderStateMutableBuilder[Self <: SliderState] (val x: Self) extends AnyVal {
+  extension [Self <: SliderState](x: Self) {
     
-    @scala.inline
-    def setDragType(value: SliderDraggingType): Self = StObject.set(x, "dragType", value.asInstanceOf[js.Any])
+    inline def setDragType(value: SliderDraggingType): Self = StObject.set(x, "dragType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragTypeNull: Self = StObject.set(x, "dragType", null)
+    inline def setDragTypeNull: Self = StObject.set(x, "dragType", null)
     
-    @scala.inline
-    def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+    inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

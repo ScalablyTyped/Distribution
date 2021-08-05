@@ -12,19 +12,15 @@ trait GetCredentialsResult
 }
 object GetCredentialsResult {
   
-  @scala.inline
-  def apply(credentials: js.Array[CredentialInfo], errorMessage: String, success: Boolean): GetCredentialsResult = {
+  inline def apply(credentials: js.Array[CredentialInfo], errorMessage: String, success: Boolean): GetCredentialsResult = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCredentialsResult]
   }
   
-  @scala.inline
-  implicit class GetCredentialsResultMutableBuilder[Self <: GetCredentialsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetCredentialsResult](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: js.Array[CredentialInfo]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: js.Array[CredentialInfo]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsVarargs(value: CredentialInfo*): Self = StObject.set(x, "credentials", js.Array(value :_*))
+    inline def setCredentialsVarargs(value: CredentialInfo*): Self = StObject.set(x, "credentials", js.Array(value :_*))
   }
 }

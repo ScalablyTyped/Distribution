@@ -34,8 +34,7 @@ object cryptoOperationMod {
   }
   object CryptoOperation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: () => Unit,
       algorithm: String,
       finish: () => Unit,
@@ -50,41 +49,29 @@ object cryptoOperationMod {
       __obj.asInstanceOf[CryptoOperation]
     }
     
-    @scala.inline
-    implicit class CryptoOperationMutableBuilder[Self <: CryptoOperation] (val x: Self) extends AnyVal {
+    extension [Self <: CryptoOperation](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinish(value: () => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
+      inline def setFinish(value: () => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnabort(value: Event => Unit): Self = StObject.set(x, "onabort", js.Any.fromFunction1(value))
+      inline def setOnabort(value: Event => Unit): Self = StObject.set(x, "onabort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOncomplete(value: Event => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction1(value))
+      inline def setOncomplete(value: Event => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnerror(value: Event => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+      inline def setOnerror(value: Event => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnprogress(value: Event => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction1(value))
+      inline def setOnprogress(value: Event => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProcess(value: ArrayBufferView => Unit): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
+      inline def setProcess(value: ArrayBufferView => Unit): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResult(value: ArrayBuffer): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: ArrayBuffer): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }
   }
 }

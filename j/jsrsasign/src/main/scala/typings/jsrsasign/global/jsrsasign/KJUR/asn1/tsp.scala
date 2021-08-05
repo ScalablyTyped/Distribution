@@ -287,50 +287,42 @@ object tsp {
       @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIFailureInfo.valueList.addInfoNotAvailable")
       @js.native
       def addInfoNotAvailable: Double = js.native
-      @scala.inline
-      def addInfoNotAvailable_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addInfoNotAvailable")(x.asInstanceOf[js.Any])
+      inline def addInfoNotAvailable_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addInfoNotAvailable")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIFailureInfo.valueList.badAlg")
       @js.native
       def badAlg: Double = js.native
-      @scala.inline
-      def badAlg_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badAlg")(x.asInstanceOf[js.Any])
+      inline def badAlg_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badAlg")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIFailureInfo.valueList.badDataFormat")
       @js.native
       def badDataFormat: Double = js.native
-      @scala.inline
-      def badDataFormat_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badDataFormat")(x.asInstanceOf[js.Any])
+      inline def badDataFormat_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badDataFormat")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIFailureInfo.valueList.badRequest")
       @js.native
       def badRequest: Double = js.native
-      @scala.inline
-      def badRequest_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badRequest")(x.asInstanceOf[js.Any])
+      inline def badRequest_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badRequest")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIFailureInfo.valueList.systemFailure")
       @js.native
       def systemFailure: Double = js.native
-      @scala.inline
-      def systemFailure_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("systemFailure")(x.asInstanceOf[js.Any])
+      inline def systemFailure_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("systemFailure")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIFailureInfo.valueList.timeNotAvailable")
       @js.native
       def timeNotAvailable: Double = js.native
-      @scala.inline
-      def timeNotAvailable_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeNotAvailable")(x.asInstanceOf[js.Any])
+      inline def timeNotAvailable_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeNotAvailable")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIFailureInfo.valueList.unacceptedExtension")
       @js.native
       def unacceptedExtension: Double = js.native
-      @scala.inline
-      def unacceptedExtension_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unacceptedExtension")(x.asInstanceOf[js.Any])
+      inline def unacceptedExtension_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unacceptedExtension")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIFailureInfo.valueList.unacceptedPolicy")
       @js.native
       def unacceptedPolicy: Double = js.native
-      @scala.inline
-      def unacceptedPolicy_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unacceptedPolicy")(x.asInstanceOf[js.Any])
+      inline def unacceptedPolicy_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unacceptedPolicy")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -476,35 +468,29 @@ object tsp {
       @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIStatus.valueList.grantedWithMods")
       @js.native
       def grantedWithMods: Double = js.native
-      @scala.inline
-      def grantedWithMods_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grantedWithMods")(x.asInstanceOf[js.Any])
+      inline def grantedWithMods_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grantedWithMods")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def granted_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("granted")(x.asInstanceOf[js.Any])
+      inline def granted_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("granted")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIStatus.valueList.rejection")
       @js.native
       def rejection: Double = js.native
-      @scala.inline
-      def rejection_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rejection")(x.asInstanceOf[js.Any])
+      inline def rejection_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rejection")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIStatus.valueList.revocationNotification")
       @js.native
       def revocationNotification: Double = js.native
-      @scala.inline
-      def revocationNotification_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("revocationNotification")(x.asInstanceOf[js.Any])
+      inline def revocationNotification_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("revocationNotification")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIStatus.valueList.revocationWarning")
       @js.native
       def revocationWarning: Double = js.native
-      @scala.inline
-      def revocationWarning_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("revocationWarning")(x.asInstanceOf[js.Any])
+      inline def revocationWarning_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("revocationWarning")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIStatus.valueList.waiting")
       @js.native
       def waiting: Double = js.native
-      @scala.inline
-      def waiting_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waiting")(x.asInstanceOf[js.Any])
+      inline def waiting_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waiting")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -600,10 +586,8 @@ object tsp {
       * @description
       * @example
       */
-    @scala.inline
-    def newTimeStampToken(): SignedData = ^.asInstanceOf[js.Dynamic].applyDynamic("newTimeStampToken")().asInstanceOf[SignedData]
-    @scala.inline
-    def newTimeStampToken(param: SignerCert): SignedData = ^.asInstanceOf[js.Dynamic].applyDynamic("newTimeStampToken")(param.asInstanceOf[js.Any]).asInstanceOf[SignedData]
+    inline def newTimeStampToken(): SignedData = ^.asInstanceOf[js.Dynamic].applyDynamic("newTimeStampToken")().asInstanceOf[SignedData]
+    inline def newTimeStampToken(param: SignerCert): SignedData = ^.asInstanceOf[js.Dynamic].applyDynamic("newTimeStampToken")(param.asInstanceOf[js.Any]).asInstanceOf[SignedData]
   }
   
   /**
@@ -830,8 +814,7 @@ object tsp {
     * {hashAlg: 'sha256',          // MessageImprint hashAlg
     *  hashValue: 'a1a2a3a4...'}   // MessageImprint hashValue
     */
-  @scala.inline
-  def parseMessageImprint(miHex: String): typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMessageImprint")(miHex.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint]
+  inline def parseMessageImprint(miHex: String): typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMessageImprint")(miHex.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint]
   
   /**
     * parse hexadecimal string of TimeStampReq
@@ -849,6 +832,5 @@ object tsp {
     *  nonce: '9abcf318...',            // nonce (OPTION)
     *  certreq: true}                   // certReq (OPTION)
     */
-  @scala.inline
-  def parseTimeStampReq(reqHex: String): Certreq = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTimeStampReq")(reqHex.asInstanceOf[js.Any]).asInstanceOf[Certreq]
+  inline def parseTimeStampReq(reqHex: String): Certreq = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTimeStampReq")(reqHex.asInstanceOf[js.Any]).asInstanceOf[Certreq]
 }

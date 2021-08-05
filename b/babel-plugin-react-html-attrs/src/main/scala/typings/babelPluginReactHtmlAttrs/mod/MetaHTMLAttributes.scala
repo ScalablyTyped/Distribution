@@ -22,43 +22,31 @@ trait MetaHTMLAttributes[T]
 }
 object MetaHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): MetaHTMLAttributes[T] = {
+  inline def apply[T](): MetaHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetaHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class MetaHTMLAttributesMutableBuilder[Self <: MetaHTMLAttributes[?], T] (val x: Self & MetaHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: MetaHTMLAttributes[?], T](x: Self & MetaHTMLAttributes[T]) {
     
-    @scala.inline
-    def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
+    inline def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
+    inline def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def `setHttp-equiv`(value: String): Self = StObject.set(x, "http-equiv", value.asInstanceOf[js.Any])
+    inline def `setHttp-equiv`(value: String): Self = StObject.set(x, "http-equiv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHttp-equivUndefined`: Self = StObject.set(x, "http-equiv", js.undefined)
+    inline def `setHttp-equivUndefined`: Self = StObject.set(x, "http-equiv", js.undefined)
     
-    @scala.inline
-    def setHttpEquiv(value: String): Self = StObject.set(x, "httpEquiv", value.asInstanceOf[js.Any])
+    inline def setHttpEquiv(value: String): Self = StObject.set(x, "httpEquiv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpEquivUndefined: Self = StObject.set(x, "httpEquiv", js.undefined)
+    inline def setHttpEquivUndefined: Self = StObject.set(x, "httpEquiv", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

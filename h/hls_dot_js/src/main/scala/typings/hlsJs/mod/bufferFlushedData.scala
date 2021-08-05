@@ -12,19 +12,15 @@ trait bufferFlushedData extends StObject {
 }
 object bufferFlushedData {
   
-  @scala.inline
-  def apply(endOffset: Double, startOffset: Double): bufferFlushedData = {
+  inline def apply(endOffset: Double, startOffset: Double): bufferFlushedData = {
     val __obj = js.Dynamic.literal(endOffset = endOffset.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[bufferFlushedData]
   }
   
-  @scala.inline
-  implicit class bufferFlushedDataMutableBuilder[Self <: bufferFlushedData] (val x: Self) extends AnyVal {
+  extension [Self <: bufferFlushedData](x: Self) {
     
-    @scala.inline
-    def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
+    inline def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
+    inline def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
   }
 }

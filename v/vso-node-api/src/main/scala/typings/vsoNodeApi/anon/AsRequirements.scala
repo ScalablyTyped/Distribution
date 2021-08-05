@@ -14,22 +14,17 @@ trait AsRequirements extends StObject {
 }
 object AsRequirements {
   
-  @scala.inline
-  def apply(asRequirements: scala.Double, asTasks: scala.Double, off: scala.Double): AsRequirements = {
+  inline def apply(asRequirements: scala.Double, asTasks: scala.Double, off: scala.Double): AsRequirements = {
     val __obj = js.Dynamic.literal(asRequirements = asRequirements.asInstanceOf[js.Any], asTasks = asTasks.asInstanceOf[js.Any], off = off.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsRequirements]
   }
   
-  @scala.inline
-  implicit class AsRequirementsMutableBuilder[Self <: AsRequirements] (val x: Self) extends AnyVal {
+  extension [Self <: AsRequirements](x: Self) {
     
-    @scala.inline
-    def setAsRequirements(value: scala.Double): Self = StObject.set(x, "asRequirements", value.asInstanceOf[js.Any])
+    inline def setAsRequirements(value: scala.Double): Self = StObject.set(x, "asRequirements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsTasks(value: scala.Double): Self = StObject.set(x, "asTasks", value.asInstanceOf[js.Any])
+    inline def setAsTasks(value: scala.Double): Self = StObject.set(x, "asTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOff(value: scala.Double): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
+    inline def setOff(value: scala.Double): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
   }
 }

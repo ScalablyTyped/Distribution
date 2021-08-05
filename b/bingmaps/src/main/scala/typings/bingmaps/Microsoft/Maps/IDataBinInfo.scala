@@ -14,22 +14,17 @@ trait IDataBinInfo extends StObject {
 }
 object IDataBinInfo {
   
-  @scala.inline
-  def apply(containedPushpins: js.Array[Pushpin], metrics: IDataBinMetrics): IDataBinInfo = {
+  inline def apply(containedPushpins: js.Array[Pushpin], metrics: IDataBinMetrics): IDataBinInfo = {
     val __obj = js.Dynamic.literal(containedPushpins = containedPushpins.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataBinInfo]
   }
   
-  @scala.inline
-  implicit class IDataBinInfoMutableBuilder[Self <: IDataBinInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IDataBinInfo](x: Self) {
     
-    @scala.inline
-    def setContainedPushpins(value: js.Array[Pushpin]): Self = StObject.set(x, "containedPushpins", value.asInstanceOf[js.Any])
+    inline def setContainedPushpins(value: js.Array[Pushpin]): Self = StObject.set(x, "containedPushpins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainedPushpinsVarargs(value: Pushpin*): Self = StObject.set(x, "containedPushpins", js.Array(value :_*))
+    inline def setContainedPushpinsVarargs(value: Pushpin*): Self = StObject.set(x, "containedPushpins", js.Array(value :_*))
     
-    @scala.inline
-    def setMetrics(value: IDataBinMetrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: IDataBinMetrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
   }
 }

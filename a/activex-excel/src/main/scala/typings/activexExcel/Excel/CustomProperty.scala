@@ -12,7 +12,7 @@ trait CustomProperty extends StObject {
   
   def Delete(): Unit
   
-  @JSName("Excel.CustomProperty_typekey")
+  /* private */ @JSName("Excel.CustomProperty_typekey")
   var ExcelDotCustomProperty_typekey: CustomProperty
   
   var Name: String
@@ -25,8 +25,7 @@ trait CustomProperty extends StObject {
 }
 object CustomProperty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     Delete: () => Unit,
@@ -41,31 +40,22 @@ object CustomProperty {
     __obj.asInstanceOf[CustomProperty]
   }
   
-  @scala.inline
-  implicit class CustomPropertyMutableBuilder[Self <: CustomProperty] (val x: Self) extends AnyVal {
+  extension [Self <: CustomProperty](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcelDotCustomProperty_typekey(value: CustomProperty): Self = StObject.set(x, "Excel.CustomProperty_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotCustomProperty_typekey(value: CustomProperty): Self = StObject.set(x, "Excel.CustomProperty_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Default(value: js.Any): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+    inline def set_Default(value: js.Any): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

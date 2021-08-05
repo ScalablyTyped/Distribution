@@ -18,19 +18,15 @@ trait GetDeploymentStatusRequest extends StObject {
 }
 object GetDeploymentStatusRequest {
   
-  @scala.inline
-  def apply(DeploymentId: string, GroupId: string): GetDeploymentStatusRequest = {
+  inline def apply(DeploymentId: string, GroupId: string): GetDeploymentStatusRequest = {
     val __obj = js.Dynamic.literal(DeploymentId = DeploymentId.asInstanceOf[js.Any], GroupId = GroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDeploymentStatusRequest]
   }
   
-  @scala.inline
-  implicit class GetDeploymentStatusRequestMutableBuilder[Self <: GetDeploymentStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeploymentStatusRequest](x: Self) {
     
-    @scala.inline
-    def setDeploymentId(value: string): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: string): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
   }
 }

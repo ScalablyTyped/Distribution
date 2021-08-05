@@ -100,6 +100,5 @@ object ConditionalExpressionSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(condition: IExpressionSyntax, whenTrue: IExpressionSyntax, whenFalse: IExpressionSyntax): typings.typescriptServices.TypeScript.ConditionalExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(condition.asInstanceOf[js.Any], whenTrue.asInstanceOf[js.Any], whenFalse.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ConditionalExpressionSyntax]
+  inline def create1(condition: IExpressionSyntax, whenTrue: IExpressionSyntax, whenFalse: IExpressionSyntax): typings.typescriptServices.TypeScript.ConditionalExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(condition.asInstanceOf[js.Any], whenTrue.asInstanceOf[js.Any], whenFalse.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ConditionalExpressionSyntax]
 }

@@ -15,19 +15,15 @@ trait PublicKey extends StObject {
 }
 object PublicKey {
   
-  @scala.inline
-  def apply(algo: String, data: Buffer): PublicKey = {
+  inline def apply(algo: String, data: Buffer): PublicKey = {
     val __obj = js.Dynamic.literal(algo = algo.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKey]
   }
   
-  @scala.inline
-  implicit class PublicKeyMutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKey](x: Self) {
     
-    @scala.inline
-    def setAlgo(value: String): Self = StObject.set(x, "algo", value.asInstanceOf[js.Any])
+    inline def setAlgo(value: String): Self = StObject.set(x, "algo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

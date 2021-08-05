@@ -26,19 +26,15 @@ trait IgTreeGridFilteringLocale
 }
 object IgTreeGridFilteringLocale {
   
-  @scala.inline
-  def apply(): IgTreeGridFilteringLocale = {
+  inline def apply(): IgTreeGridFilteringLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTreeGridFilteringLocale]
   }
   
-  @scala.inline
-  implicit class IgTreeGridFilteringLocaleMutableBuilder[Self <: IgTreeGridFilteringLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgTreeGridFilteringLocale](x: Self) {
     
-    @scala.inline
-    def setFilterSummaryInPagerTemplate(value: String): Self = StObject.set(x, "filterSummaryInPagerTemplate", value.asInstanceOf[js.Any])
+    inline def setFilterSummaryInPagerTemplate(value: String): Self = StObject.set(x, "filterSummaryInPagerTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterSummaryInPagerTemplateUndefined: Self = StObject.set(x, "filterSummaryInPagerTemplate", js.undefined)
+    inline def setFilterSummaryInPagerTemplateUndefined: Self = StObject.set(x, "filterSummaryInPagerTemplate", js.undefined)
   }
 }

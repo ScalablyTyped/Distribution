@@ -14,16 +14,13 @@ trait PickCoordinatestop
 }
 object PickCoordinatestop {
   
-  @scala.inline
-  def apply(top: Double): PickCoordinatestop = {
+  inline def apply(top: Double): PickCoordinatestop = {
     val __obj = js.Dynamic.literal(top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickCoordinatestop]
   }
   
-  @scala.inline
-  implicit class PickCoordinatestopMutableBuilder[Self <: PickCoordinatestop] (val x: Self) extends AnyVal {
+  extension [Self <: PickCoordinatestop](x: Self) {
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

@@ -17,6 +17,5 @@ trait TreeRenderStack extends StObject {
 }
 object TreeRenderStack {
   
-  @scala.inline
-  def apply: TreeRenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeRenderStack").asInstanceOf[TreeRenderStack]
+  inline def apply: TreeRenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeRenderStack").asInstanceOf[TreeRenderStack]
 }

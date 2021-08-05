@@ -10,17 +10,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Elapsor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Elapsor]
+  inline def default(): Elapsor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Elapsor]
   
-  @scala.inline
-  def hiresTimeBrowserDate(): Elapsor = ^.asInstanceOf[js.Dynamic].applyDynamic("hiresTimeBrowserDate")().asInstanceOf[Elapsor]
+  inline def hiresTimeBrowserDate(): Elapsor = ^.asInstanceOf[js.Dynamic].applyDynamic("hiresTimeBrowserDate")().asInstanceOf[Elapsor]
   
-  @scala.inline
-  def hiresTimeBrowserPerformance(): Elapsor = ^.asInstanceOf[js.Dynamic].applyDynamic("hiresTimeBrowserPerformance")().asInstanceOf[Elapsor]
+  inline def hiresTimeBrowserPerformance(): Elapsor = ^.asInstanceOf[js.Dynamic].applyDynamic("hiresTimeBrowserPerformance")().asInstanceOf[Elapsor]
   
-  @scala.inline
-  def hirestimeNode(): Elapsor = ^.asInstanceOf[js.Dynamic].applyDynamic("hirestimeNode")().asInstanceOf[Elapsor]
+  inline def hirestimeNode(): Elapsor = ^.asInstanceOf[js.Dynamic].applyDynamic("hirestimeNode")().asInstanceOf[Elapsor]
   
   @js.native
   trait Elapsor extends StObject {

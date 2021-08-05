@@ -23,34 +23,25 @@ trait UpdateFleetPortSettingsInput extends StObject {
 }
 object UpdateFleetPortSettingsInput {
   
-  @scala.inline
-  def apply(FleetId: FleetIdOrArn): UpdateFleetPortSettingsInput = {
+  inline def apply(FleetId: FleetIdOrArn): UpdateFleetPortSettingsInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFleetPortSettingsInput]
   }
   
-  @scala.inline
-  implicit class UpdateFleetPortSettingsInputMutableBuilder[Self <: UpdateFleetPortSettingsInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFleetPortSettingsInput](x: Self) {
     
-    @scala.inline
-    def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundPermissionAuthorizations(value: IpPermissionsList): Self = StObject.set(x, "InboundPermissionAuthorizations", value.asInstanceOf[js.Any])
+    inline def setInboundPermissionAuthorizations(value: IpPermissionsList): Self = StObject.set(x, "InboundPermissionAuthorizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundPermissionAuthorizationsUndefined: Self = StObject.set(x, "InboundPermissionAuthorizations", js.undefined)
+    inline def setInboundPermissionAuthorizationsUndefined: Self = StObject.set(x, "InboundPermissionAuthorizations", js.undefined)
     
-    @scala.inline
-    def setInboundPermissionAuthorizationsVarargs(value: IpPermission*): Self = StObject.set(x, "InboundPermissionAuthorizations", js.Array(value :_*))
+    inline def setInboundPermissionAuthorizationsVarargs(value: IpPermission*): Self = StObject.set(x, "InboundPermissionAuthorizations", js.Array(value :_*))
     
-    @scala.inline
-    def setInboundPermissionRevocations(value: IpPermissionsList): Self = StObject.set(x, "InboundPermissionRevocations", value.asInstanceOf[js.Any])
+    inline def setInboundPermissionRevocations(value: IpPermissionsList): Self = StObject.set(x, "InboundPermissionRevocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundPermissionRevocationsUndefined: Self = StObject.set(x, "InboundPermissionRevocations", js.undefined)
+    inline def setInboundPermissionRevocationsUndefined: Self = StObject.set(x, "InboundPermissionRevocations", js.undefined)
     
-    @scala.inline
-    def setInboundPermissionRevocationsVarargs(value: IpPermission*): Self = StObject.set(x, "InboundPermissionRevocations", js.Array(value :_*))
+    inline def setInboundPermissionRevocationsVarargs(value: IpPermission*): Self = StObject.set(x, "InboundPermissionRevocations", js.Array(value :_*))
   }
 }

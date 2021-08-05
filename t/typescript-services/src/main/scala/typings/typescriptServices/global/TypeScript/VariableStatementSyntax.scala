@@ -98,13 +98,11 @@ object VariableStatementSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     variableDeclaration: typings.typescriptServices.TypeScript.VariableDeclarationSyntax,
     semicolonToken: ISyntaxToken
   ): typings.typescriptServices.TypeScript.VariableStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(variableDeclaration.asInstanceOf[js.Any], semicolonToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.VariableStatementSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(variableDeclaration: typings.typescriptServices.TypeScript.VariableDeclarationSyntax): typings.typescriptServices.TypeScript.VariableStatementSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(variableDeclaration.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.VariableStatementSyntax]
+  inline def create1(variableDeclaration: typings.typescriptServices.TypeScript.VariableDeclarationSyntax): typings.typescriptServices.TypeScript.VariableStatementSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(variableDeclaration.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.VariableStatementSyntax]
 }

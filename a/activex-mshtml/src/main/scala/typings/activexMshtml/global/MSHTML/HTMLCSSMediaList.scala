@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLCSSMediaList")
 @js.native
-class HTMLCSSMediaList protected ()
+/* private */ class HTMLCSSMediaList ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLCSSMediaList {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLCSSMediaList_typekey")
   var MSHTMLDotHTMLCSSMediaList_typekey: typings.activexMshtml.MSHTML.HTMLCSSMediaList = js.native
   

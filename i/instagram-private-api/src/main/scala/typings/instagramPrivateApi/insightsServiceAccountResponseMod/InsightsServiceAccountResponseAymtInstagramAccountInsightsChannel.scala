@@ -14,25 +14,19 @@ trait InsightsServiceAccountResponseAymtInstagramAccountInsightsChannel extends 
 }
 object InsightsServiceAccountResponseAymtInstagramAccountInsightsChannel {
   
-  @scala.inline
-  def apply(channel_id: String, id: String, tips: js.Array[js.Any]): InsightsServiceAccountResponseAymtInstagramAccountInsightsChannel = {
+  inline def apply(channel_id: String, id: String, tips: js.Array[js.Any]): InsightsServiceAccountResponseAymtInstagramAccountInsightsChannel = {
     val __obj = js.Dynamic.literal(channel_id = channel_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], tips = tips.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServiceAccountResponseAymtInstagramAccountInsightsChannel]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseAymtInstagramAccountInsightsChannelMutableBuilder[Self <: InsightsServiceAccountResponseAymtInstagramAccountInsightsChannel] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseAymtInstagramAccountInsightsChannel](x: Self) {
     
-    @scala.inline
-    def setChannel_id(value: String): Self = StObject.set(x, "channel_id", value.asInstanceOf[js.Any])
+    inline def setChannel_id(value: String): Self = StObject.set(x, "channel_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTips(value: js.Array[js.Any]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
+    inline def setTips(value: js.Array[js.Any]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTipsVarargs(value: js.Any*): Self = StObject.set(x, "tips", js.Array(value :_*))
+    inline def setTipsVarargs(value: js.Any*): Self = StObject.set(x, "tips", js.Array(value :_*))
   }
 }

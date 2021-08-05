@@ -23,31 +23,23 @@ trait KinesisStreamSourceDescription extends StObject {
 }
 object KinesisStreamSourceDescription {
   
-  @scala.inline
-  def apply(): KinesisStreamSourceDescription = {
+  inline def apply(): KinesisStreamSourceDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KinesisStreamSourceDescription]
   }
   
-  @scala.inline
-  implicit class KinesisStreamSourceDescriptionMutableBuilder[Self <: KinesisStreamSourceDescription] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisStreamSourceDescription](x: Self) {
     
-    @scala.inline
-    def setDeliveryStartTimestamp(value: DeliveryStartTimestamp): Self = StObject.set(x, "DeliveryStartTimestamp", value.asInstanceOf[js.Any])
+    inline def setDeliveryStartTimestamp(value: DeliveryStartTimestamp): Self = StObject.set(x, "DeliveryStartTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStartTimestampUndefined: Self = StObject.set(x, "DeliveryStartTimestamp", js.undefined)
+    inline def setDeliveryStartTimestampUndefined: Self = StObject.set(x, "DeliveryStartTimestamp", js.undefined)
     
-    @scala.inline
-    def setKinesisStreamARN(value: KinesisStreamARN): Self = StObject.set(x, "KinesisStreamARN", value.asInstanceOf[js.Any])
+    inline def setKinesisStreamARN(value: KinesisStreamARN): Self = StObject.set(x, "KinesisStreamARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisStreamARNUndefined: Self = StObject.set(x, "KinesisStreamARN", js.undefined)
+    inline def setKinesisStreamARNUndefined: Self = StObject.set(x, "KinesisStreamARN", js.undefined)
     
-    @scala.inline
-    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
+    inline def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
   }
 }

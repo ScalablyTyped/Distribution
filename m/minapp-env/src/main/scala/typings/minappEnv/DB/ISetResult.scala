@@ -16,19 +16,15 @@ trait ISetResult
 }
 object ISetResult {
   
-  @scala.inline
-  def apply(_id: DocumentId, errMsg: String, stats: Created): ISetResult = {
+  inline def apply(_id: DocumentId, errMsg: String, stats: Created): ISetResult = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetResult]
   }
   
-  @scala.inline
-  implicit class ISetResultMutableBuilder[Self <: ISetResult] (val x: Self) extends AnyVal {
+  extension [Self <: ISetResult](x: Self) {
     
-    @scala.inline
-    def setStats(value: Created): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Created): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_id(value: DocumentId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: DocumentId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

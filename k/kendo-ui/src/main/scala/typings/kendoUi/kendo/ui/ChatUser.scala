@@ -12,25 +12,19 @@ trait ChatUser extends StObject {
 }
 object ChatUser {
   
-  @scala.inline
-  def apply(): ChatUser = {
+  inline def apply(): ChatUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChatUser]
   }
   
-  @scala.inline
-  implicit class ChatUserMutableBuilder[Self <: ChatUser] (val x: Self) extends AnyVal {
+  extension [Self <: ChatUser](x: Self) {
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+    inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

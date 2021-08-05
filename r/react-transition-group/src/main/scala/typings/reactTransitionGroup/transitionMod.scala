@@ -164,89 +164,62 @@ object transitionMod {
   }
   object BaseTransitionProps {
     
-    @scala.inline
-    def apply[RefElement /* <: js.UndefOr[HTMLElement] */](): BaseTransitionProps[RefElement] = {
+    inline def apply[RefElement /* <: js.UndefOr[HTMLElement] */](): BaseTransitionProps[RefElement] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseTransitionProps[RefElement]]
     }
     
-    @scala.inline
-    implicit class BaseTransitionPropsMutableBuilder[Self <: BaseTransitionProps[?], RefElement /* <: js.UndefOr[HTMLElement] */] (val x: Self & BaseTransitionProps[RefElement]) extends AnyVal {
+    extension [Self <: BaseTransitionProps[?], RefElement /* <: js.UndefOr[HTMLElement] */](x: Self & BaseTransitionProps[RefElement]) {
       
-      @scala.inline
-      def setChildren(value: TransitionChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: TransitionChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* status */ TransitionStatus => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* status */ TransitionStatus => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInUndefined: Self = StObject.set(x, "in", js.undefined)
+      inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
       
-      @scala.inline
-      def setMountOnEnter(value: Boolean): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
+      inline def setMountOnEnter(value: Boolean): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountOnEnterUndefined: Self = StObject.set(x, "mountOnEnter", js.undefined)
+      inline def setMountOnEnterUndefined: Self = StObject.set(x, "mountOnEnter", js.undefined)
       
-      @scala.inline
-      def setNodeRef(value: Ref[RefElement]): Self = StObject.set(x, "nodeRef", value.asInstanceOf[js.Any])
+      inline def setNodeRef(value: Ref[RefElement]): Self = StObject.set(x, "nodeRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeRefFunction1(value: /* instance */ RefElement | Null => Unit): Self = StObject.set(x, "nodeRef", js.Any.fromFunction1(value))
+      inline def setNodeRefFunction1(value: /* instance */ RefElement | Null => Unit): Self = StObject.set(x, "nodeRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNodeRefNull: Self = StObject.set(x, "nodeRef", null)
+      inline def setNodeRefNull: Self = StObject.set(x, "nodeRef", null)
       
-      @scala.inline
-      def setNodeRefUndefined: Self = StObject.set(x, "nodeRef", js.undefined)
+      inline def setNodeRefUndefined: Self = StObject.set(x, "nodeRef", js.undefined)
       
-      @scala.inline
-      def setOnEnter(value: EnterHandler[RefElement]): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+      inline def setOnEnter(value: EnterHandler[RefElement]): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+      inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      @scala.inline
-      def setOnEntered(value: EnterHandler[RefElement]): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
+      inline def setOnEntered(value: EnterHandler[RefElement]): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
+      inline def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
       
-      @scala.inline
-      def setOnEntering(value: EnterHandler[RefElement]): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
+      inline def setOnEntering(value: EnterHandler[RefElement]): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
+      inline def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
       
-      @scala.inline
-      def setOnExit(value: ExitHandler[RefElement]): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+      inline def setOnExit(value: ExitHandler[RefElement]): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+      inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
-      @scala.inline
-      def setOnExited(value: ExitHandler[RefElement]): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
+      inline def setOnExited(value: ExitHandler[RefElement]): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
+      inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
       
-      @scala.inline
-      def setOnExiting(value: ExitHandler[RefElement]): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
+      inline def setOnExiting(value: ExitHandler[RefElement]): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
+      inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
       
-      @scala.inline
-      def setUnmountOnExit(value: Boolean): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
+      inline def setUnmountOnExit(value: Boolean): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
+      inline def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
     }
   }
   
@@ -291,23 +264,18 @@ object transitionMod {
   }
   object EndListenerProps {
     
-    @scala.inline
-    def apply[Ref /* <: js.UndefOr[HTMLElement] */](addEndListener: EndHandler[Ref]): EndListenerProps[Ref] = {
+    inline def apply[Ref /* <: js.UndefOr[HTMLElement] */](addEndListener: EndHandler[Ref]): EndListenerProps[Ref] = {
       val __obj = js.Dynamic.literal(addEndListener = addEndListener.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndListenerProps[Ref]]
     }
     
-    @scala.inline
-    implicit class EndListenerPropsMutableBuilder[Self <: EndListenerProps[?], Ref /* <: js.UndefOr[HTMLElement] */] (val x: Self & EndListenerProps[Ref]) extends AnyVal {
+    extension [Self <: EndListenerProps[?], Ref /* <: js.UndefOr[HTMLElement] */](x: Self & EndListenerProps[Ref]) {
       
-      @scala.inline
-      def setAddEndListener(value: EndHandler[Ref]): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
+      inline def setAddEndListener(value: EndHandler[Ref]): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double | Appear): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double | Appear): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -356,23 +324,18 @@ object transitionMod {
   }
   object TimeoutProps {
     
-    @scala.inline
-    def apply[RefElement /* <: js.UndefOr[HTMLElement] */](timeout: Double | Appear): TimeoutProps[RefElement] = {
+    inline def apply[RefElement /* <: js.UndefOr[HTMLElement] */](timeout: Double | Appear): TimeoutProps[RefElement] = {
       val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimeoutProps[RefElement]]
     }
     
-    @scala.inline
-    implicit class TimeoutPropsMutableBuilder[Self <: TimeoutProps[?], RefElement /* <: js.UndefOr[HTMLElement] */] (val x: Self & TimeoutProps[RefElement]) extends AnyVal {
+    extension [Self <: TimeoutProps[?], RefElement /* <: js.UndefOr[HTMLElement] */](x: Self & TimeoutProps[RefElement]) {
       
-      @scala.inline
-      def setAddEndListener(value: EndHandler[RefElement]): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
+      inline def setAddEndListener(value: EndHandler[RefElement]): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddEndListenerUndefined: Self = StObject.set(x, "addEndListener", js.undefined)
+      inline def setAddEndListenerUndefined: Self = StObject.set(x, "addEndListener", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double | Appear): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double | Appear): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -442,32 +405,24 @@ object transitionMod {
   }
   object TransitionActions {
     
-    @scala.inline
-    def apply(): TransitionActions = {
+    inline def apply(): TransitionActions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransitionActions]
     }
     
-    @scala.inline
-    implicit class TransitionActionsMutableBuilder[Self <: TransitionActions] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionActions](x: Self) {
       
-      @scala.inline
-      def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
+      inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
+      inline def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
       
-      @scala.inline
-      def setEnter(value: Boolean): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: Boolean): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+      inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      @scala.inline
-      def setExit(value: Boolean): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: Boolean): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+      inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     }
   }
   
@@ -480,14 +435,12 @@ object transitionMod {
   trait TransitionProps[RefElement /* <: js.UndefOr[HTMLElement] */] extends StObject
   object TransitionProps {
     
-    @scala.inline
-    def EndListenerProps[RefElement /* <: js.UndefOr[HTMLElement] */](addEndListener: EndHandler[RefElement]): typings.reactTransitionGroup.transitionMod.EndListenerProps[RefElement] = {
+    inline def EndListenerProps[RefElement /* <: js.UndefOr[HTMLElement] */](addEndListener: EndHandler[RefElement]): typings.reactTransitionGroup.transitionMod.EndListenerProps[RefElement] = {
       val __obj = js.Dynamic.literal(addEndListener = addEndListener.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactTransitionGroup.transitionMod.EndListenerProps[RefElement]]
     }
     
-    @scala.inline
-    def TimeoutProps[RefElement /* <: js.UndefOr[HTMLElement] */](timeout: Double | Appear): typings.reactTransitionGroup.transitionMod.TimeoutProps[RefElement] = {
+    inline def TimeoutProps[RefElement /* <: js.UndefOr[HTMLElement] */](timeout: Double | Appear): typings.reactTransitionGroup.transitionMod.TimeoutProps[RefElement] = {
       val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactTransitionGroup.transitionMod.TimeoutProps[RefElement]]
     }

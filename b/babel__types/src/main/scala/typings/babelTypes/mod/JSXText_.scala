@@ -19,20 +19,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object JSXText_ {
   
-  @scala.inline
-  def apply(value: String): JSXText_ = {
+  inline def apply(value: String): JSXText_ = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("JSXText")
     __obj.asInstanceOf[JSXText_]
   }
   
-  @scala.inline
-  implicit class JSXText_MutableBuilder[Self <: JSXText_] (val x: Self) extends AnyVal {
+  extension [Self <: JSXText_](x: Self) {
     
-    @scala.inline
-    def setType(value: JSXText): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: JSXText): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

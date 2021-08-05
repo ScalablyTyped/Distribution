@@ -13,17 +13,14 @@ object anon {
   }
   object Cancel {
     
-    @scala.inline
-    def apply[T, U, V /* <: String */](cancel: State[T, U, V] => Boolean): Cancel[T, U, V] = {
+    inline def apply[T, U, V /* <: String */](cancel: State[T, U, V] => Boolean): Cancel[T, U, V] = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel))
       __obj.asInstanceOf[Cancel[T, U, V]]
     }
     
-    @scala.inline
-    implicit class CancelMutableBuilder[Self <: Cancel[?, ?, ?], T, U, V /* <: String */] (val x: Self & (Cancel[T, U, V])) extends AnyVal {
+    extension [Self <: Cancel[?, ?, ?], T, U, V /* <: String */](x: Self & (Cancel[T, U, V])) {
       
-      @scala.inline
-      def setCancel(value: State[T, U, V] => Boolean): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: State[T, U, V] => Boolean): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     }
   }
   
@@ -38,32 +35,24 @@ object anon {
   }
   object PartialFrequency {
     
-    @scala.inline
-    def apply(): PartialFrequency = {
+    inline def apply(): PartialFrequency = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialFrequency]
     }
     
-    @scala.inline
-    implicit class PartialFrequencyMutableBuilder[Self <: PartialFrequency] (val x: Self) extends AnyVal {
+    extension [Self <: PartialFrequency](x: Self) {
       
-      @scala.inline
-      def setBackoff(value: Boolean | Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
+      inline def setBackoff(value: Boolean | Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackoffUndefined: Self = StObject.set(x, "backoff", js.undefined)
+      inline def setBackoffUndefined: Self = StObject.set(x, "backoff", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     }
   }
 }

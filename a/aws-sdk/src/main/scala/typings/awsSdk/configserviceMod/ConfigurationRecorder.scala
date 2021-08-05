@@ -23,31 +23,23 @@ trait ConfigurationRecorder extends StObject {
 }
 object ConfigurationRecorder {
   
-  @scala.inline
-  def apply(): ConfigurationRecorder = {
+  inline def apply(): ConfigurationRecorder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationRecorder]
   }
   
-  @scala.inline
-  implicit class ConfigurationRecorderMutableBuilder[Self <: ConfigurationRecorder] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationRecorder](x: Self) {
     
-    @scala.inline
-    def setName(value: RecorderName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: RecorderName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRecordingGroup(value: RecordingGroup): Self = StObject.set(x, "recordingGroup", value.asInstanceOf[js.Any])
+    inline def setRecordingGroup(value: RecordingGroup): Self = StObject.set(x, "recordingGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordingGroupUndefined: Self = StObject.set(x, "recordingGroup", js.undefined)
+    inline def setRecordingGroupUndefined: Self = StObject.set(x, "recordingGroup", js.undefined)
     
-    @scala.inline
-    def setRoleARN(value: String): Self = StObject.set(x, "roleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: String): Self = StObject.set(x, "roleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARNUndefined: Self = StObject.set(x, "roleARN", js.undefined)
+    inline def setRoleARNUndefined: Self = StObject.set(x, "roleARN", js.undefined)
   }
 }

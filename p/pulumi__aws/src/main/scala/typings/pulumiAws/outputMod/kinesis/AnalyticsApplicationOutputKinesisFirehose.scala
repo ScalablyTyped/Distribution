@@ -18,19 +18,15 @@ trait AnalyticsApplicationOutputKinesisFirehose extends StObject {
 }
 object AnalyticsApplicationOutputKinesisFirehose {
   
-  @scala.inline
-  def apply(resourceArn: String, roleArn: String): AnalyticsApplicationOutputKinesisFirehose = {
+  inline def apply(resourceArn: String, roleArn: String): AnalyticsApplicationOutputKinesisFirehose = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationOutputKinesisFirehose]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationOutputKinesisFirehoseMutableBuilder[Self <: AnalyticsApplicationOutputKinesisFirehose] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationOutputKinesisFirehose](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

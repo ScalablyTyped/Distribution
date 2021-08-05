@@ -31,8 +31,7 @@ trait RegionOfInterest extends StObject {
 }
 object RegionOfInterest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoExposureEnabled: Boolean,
     autoFocusEnabled: Boolean,
     autoWhiteBalanceEnabled: Boolean,
@@ -46,28 +45,20 @@ object RegionOfInterest {
     __obj.asInstanceOf[RegionOfInterest]
   }
   
-  @scala.inline
-  implicit class RegionOfInterestMutableBuilder[Self <: RegionOfInterest] (val x: Self) extends AnyVal {
+  extension [Self <: RegionOfInterest](x: Self) {
     
-    @scala.inline
-    def setAutoExposureEnabled(value: Boolean): Self = StObject.set(x, "autoExposureEnabled", value.asInstanceOf[js.Any])
+    inline def setAutoExposureEnabled(value: Boolean): Self = StObject.set(x, "autoExposureEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFocusEnabled(value: Boolean): Self = StObject.set(x, "autoFocusEnabled", value.asInstanceOf[js.Any])
+    inline def setAutoFocusEnabled(value: Boolean): Self = StObject.set(x, "autoFocusEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoWhiteBalanceEnabled(value: Boolean): Self = StObject.set(x, "autoWhiteBalanceEnabled", value.asInstanceOf[js.Any])
+    inline def setAutoWhiteBalanceEnabled(value: Boolean): Self = StObject.set(x, "autoWhiteBalanceEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsNormalized(value: Boolean): Self = StObject.set(x, "boundsNormalized", value.asInstanceOf[js.Any])
+    inline def setBoundsNormalized(value: Boolean): Self = StObject.set(x, "boundsNormalized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: RegionOfInterestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: RegionOfInterestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

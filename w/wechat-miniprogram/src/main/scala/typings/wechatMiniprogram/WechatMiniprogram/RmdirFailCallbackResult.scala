@@ -16,16 +16,13 @@ trait RmdirFailCallbackResult extends StObject {
 }
 object RmdirFailCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String): RmdirFailCallbackResult = {
+  inline def apply(errMsg: String): RmdirFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[RmdirFailCallbackResult]
   }
   
-  @scala.inline
-  implicit class RmdirFailCallbackResultMutableBuilder[Self <: RmdirFailCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: RmdirFailCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

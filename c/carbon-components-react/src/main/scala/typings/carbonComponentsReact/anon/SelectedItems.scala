@@ -11,19 +11,15 @@ trait SelectedItems[T /* <: ListBoxBaseItemType */] extends StObject {
 }
 object SelectedItems {
   
-  @scala.inline
-  def apply[T /* <: ListBoxBaseItemType */](selectedItems: js.Array[T]): SelectedItems[T] = {
+  inline def apply[T /* <: ListBoxBaseItemType */](selectedItems: js.Array[T]): SelectedItems[T] = {
     val __obj = js.Dynamic.literal(selectedItems = selectedItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectedItems[T]]
   }
   
-  @scala.inline
-  implicit class SelectedItemsMutableBuilder[Self <: SelectedItems[?], T /* <: ListBoxBaseItemType */] (val x: Self & SelectedItems[T]) extends AnyVal {
+  extension [Self <: SelectedItems[?], T /* <: ListBoxBaseItemType */](x: Self & SelectedItems[T]) {
     
-    @scala.inline
-    def setSelectedItems(value: js.Array[T]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    inline def setSelectedItems(value: js.Array[T]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
   }
 }

@@ -128,8 +128,7 @@ trait Put extends StObject {
 }
 object Put {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: /* args */ WithExtendedOptions[
       Parameters[
         js.Function2[
@@ -203,11 +202,9 @@ object Put {
     __obj.asInstanceOf[Put]
   }
   
-  @scala.inline
-  implicit class PutMutableBuilder[Self <: Put] (val x: Self) extends AnyVal {
+  extension [Self <: Put](x: Self) {
     
-    @scala.inline
-    def setGet(
+    inline def setGet(
       value: /* args */ WithExtendedOptions[
           Parameters[
             js.Function2[
@@ -234,8 +231,7 @@ object Put {
         ]
     ): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPut(
+    inline def setPut(
       value: /* args */ WithExtendedOptions[
           Parameters[
             js.Function2[
@@ -258,8 +254,7 @@ object Put {
         ]
     ): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolve(
+    inline def setResolve(
       value: /* args */ WithExtendedOptions[
           Parameters[
             js.Function2[

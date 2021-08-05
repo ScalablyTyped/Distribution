@@ -18,19 +18,15 @@ trait Secret extends StObject {
 }
 object Secret {
   
-  @scala.inline
-  def apply(name: String, valueFrom: String): Secret = {
+  inline def apply(name: String, valueFrom: String): Secret = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], valueFrom = valueFrom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Secret]
   }
   
-  @scala.inline
-  implicit class SecretMutableBuilder[Self <: Secret] (val x: Self) extends AnyVal {
+  extension [Self <: Secret](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFrom(value: String): Self = StObject.set(x, "valueFrom", value.asInstanceOf[js.Any])
+    inline def setValueFrom(value: String): Self = StObject.set(x, "valueFrom", value.asInstanceOf[js.Any])
   }
 }

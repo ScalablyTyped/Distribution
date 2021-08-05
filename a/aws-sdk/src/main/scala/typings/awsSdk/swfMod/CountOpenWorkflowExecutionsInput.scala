@@ -33,37 +33,27 @@ trait CountOpenWorkflowExecutionsInput extends StObject {
 }
 object CountOpenWorkflowExecutionsInput {
   
-  @scala.inline
-  def apply(domain: DomainName, startTimeFilter: ExecutionTimeFilter): CountOpenWorkflowExecutionsInput = {
+  inline def apply(domain: DomainName, startTimeFilter: ExecutionTimeFilter): CountOpenWorkflowExecutionsInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], startTimeFilter = startTimeFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountOpenWorkflowExecutionsInput]
   }
   
-  @scala.inline
-  implicit class CountOpenWorkflowExecutionsInputMutableBuilder[Self <: CountOpenWorkflowExecutionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: CountOpenWorkflowExecutionsInput](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionFilter(value: WorkflowExecutionFilter): Self = StObject.set(x, "executionFilter", value.asInstanceOf[js.Any])
+    inline def setExecutionFilter(value: WorkflowExecutionFilter): Self = StObject.set(x, "executionFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionFilterUndefined: Self = StObject.set(x, "executionFilter", js.undefined)
+    inline def setExecutionFilterUndefined: Self = StObject.set(x, "executionFilter", js.undefined)
     
-    @scala.inline
-    def setStartTimeFilter(value: ExecutionTimeFilter): Self = StObject.set(x, "startTimeFilter", value.asInstanceOf[js.Any])
+    inline def setStartTimeFilter(value: ExecutionTimeFilter): Self = StObject.set(x, "startTimeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagFilter(value: TagFilter): Self = StObject.set(x, "tagFilter", value.asInstanceOf[js.Any])
+    inline def setTagFilter(value: TagFilter): Self = StObject.set(x, "tagFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagFilterUndefined: Self = StObject.set(x, "tagFilter", js.undefined)
+    inline def setTagFilterUndefined: Self = StObject.set(x, "tagFilter", js.undefined)
     
-    @scala.inline
-    def setTypeFilter(value: WorkflowTypeFilter): Self = StObject.set(x, "typeFilter", value.asInstanceOf[js.Any])
+    inline def setTypeFilter(value: WorkflowTypeFilter): Self = StObject.set(x, "typeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeFilterUndefined: Self = StObject.set(x, "typeFilter", js.undefined)
+    inline def setTypeFilterUndefined: Self = StObject.set(x, "typeFilter", js.undefined)
   }
 }

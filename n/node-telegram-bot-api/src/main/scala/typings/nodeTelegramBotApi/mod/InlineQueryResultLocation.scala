@@ -14,17 +14,14 @@ trait InlineQueryResultLocation
 }
 object InlineQueryResultLocation {
   
-  @scala.inline
-  def apply(id: String, latitude: Double, longitude: Double, title: String): InlineQueryResultLocation = {
+  inline def apply(id: String, latitude: Double, longitude: Double, title: String): InlineQueryResultLocation = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("location")
     __obj.asInstanceOf[InlineQueryResultLocation]
   }
   
-  @scala.inline
-  implicit class InlineQueryResultLocationMutableBuilder[Self <: InlineQueryResultLocation] (val x: Self) extends AnyVal {
+  extension [Self <: InlineQueryResultLocation](x: Self) {
     
-    @scala.inline
-    def setType(value: location): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: location): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

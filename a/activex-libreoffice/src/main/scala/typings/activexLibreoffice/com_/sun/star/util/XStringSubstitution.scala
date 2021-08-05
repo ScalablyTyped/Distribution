@@ -51,8 +51,7 @@ trait XStringSubstitution
 }
 object XStringSubstitution {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getSubstituteVariableValue: String => String,
     queryInterface: `type` => js.Any,
@@ -64,16 +63,12 @@ object XStringSubstitution {
     __obj.asInstanceOf[XStringSubstitution]
   }
   
-  @scala.inline
-  implicit class XStringSubstitutionMutableBuilder[Self <: XStringSubstitution] (val x: Self) extends AnyVal {
+  extension [Self <: XStringSubstitution](x: Self) {
     
-    @scala.inline
-    def setGetSubstituteVariableValue(value: String => String): Self = StObject.set(x, "getSubstituteVariableValue", js.Any.fromFunction1(value))
+    inline def setGetSubstituteVariableValue(value: String => String): Self = StObject.set(x, "getSubstituteVariableValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReSubstituteVariables(value: String => String): Self = StObject.set(x, "reSubstituteVariables", js.Any.fromFunction1(value))
+    inline def setReSubstituteVariables(value: String => String): Self = StObject.set(x, "reSubstituteVariables", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubstituteVariables(value: (String, Boolean) => String): Self = StObject.set(x, "substituteVariables", js.Any.fromFunction2(value))
+    inline def setSubstituteVariables(value: (String, Boolean) => String): Self = StObject.set(x, "substituteVariables", js.Any.fromFunction2(value))
   }
 }

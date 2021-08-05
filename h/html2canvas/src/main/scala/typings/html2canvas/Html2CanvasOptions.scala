@@ -82,160 +82,109 @@ trait Html2CanvasOptions extends StObject {
 }
 object Html2CanvasOptions {
   
-  @scala.inline
-  def apply(): Html2CanvasOptions = {
+  inline def apply(): Html2CanvasOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Html2CanvasOptions]
   }
   
-  @scala.inline
-  implicit class Html2CanvasOptionsMutableBuilder[Self <: Html2CanvasOptions] (val x: Self) extends AnyVal {
+  extension [Self <: Html2CanvasOptions](x: Self) {
     
-    @scala.inline
-    def setAllowTaint(value: Boolean): Self = StObject.set(x, "allowTaint", value.asInstanceOf[js.Any])
+    inline def setAllowTaint(value: Boolean): Self = StObject.set(x, "allowTaint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowTaintUndefined: Self = StObject.set(x, "allowTaint", js.undefined)
+    inline def setAllowTaintUndefined: Self = StObject.set(x, "allowTaint", js.undefined)
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
+    inline def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setCanvas(value: js.Any): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: js.Any): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
+    inline def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
     
-    @scala.inline
-    def setForeignObjectRendering(value: Boolean): Self = StObject.set(x, "foreignObjectRendering", value.asInstanceOf[js.Any])
+    inline def setForeignObjectRendering(value: Boolean): Self = StObject.set(x, "foreignObjectRendering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeignObjectRenderingUndefined: Self = StObject.set(x, "foreignObjectRendering", js.undefined)
+    inline def setForeignObjectRenderingUndefined: Self = StObject.set(x, "foreignObjectRendering", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setIgnoreElements(value: /* element */ HTMLElement => Boolean): Self = StObject.set(x, "ignoreElements", js.Any.fromFunction1(value))
+    inline def setIgnoreElements(value: /* element */ HTMLElement => Boolean): Self = StObject.set(x, "ignoreElements", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIgnoreElementsUndefined: Self = StObject.set(x, "ignoreElements", js.undefined)
+    inline def setIgnoreElementsUndefined: Self = StObject.set(x, "ignoreElements", js.undefined)
     
-    @scala.inline
-    def setImageTimeout(value: Double): Self = StObject.set(x, "imageTimeout", value.asInstanceOf[js.Any])
+    inline def setImageTimeout(value: Double): Self = StObject.set(x, "imageTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTimeoutUndefined: Self = StObject.set(x, "imageTimeout", js.undefined)
+    inline def setImageTimeoutUndefined: Self = StObject.set(x, "imageTimeout", js.undefined)
     
-    @scala.inline
-    def setLetterRendering(value: Boolean): Self = StObject.set(x, "letterRendering", value.asInstanceOf[js.Any])
+    inline def setLetterRendering(value: Boolean): Self = StObject.set(x, "letterRendering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterRenderingUndefined: Self = StObject.set(x, "letterRendering", js.undefined)
+    inline def setLetterRenderingUndefined: Self = StObject.set(x, "letterRendering", js.undefined)
     
-    @scala.inline
-    def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
-    @scala.inline
-    def setOnclone(value: /* doc */ HTMLDocument => Unit): Self = StObject.set(x, "onclone", js.Any.fromFunction1(value))
+    inline def setOnclone(value: /* doc */ HTMLDocument => Unit): Self = StObject.set(x, "onclone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOncloneUndefined: Self = StObject.set(x, "onclone", js.undefined)
+    inline def setOncloneUndefined: Self = StObject.set(x, "onclone", js.undefined)
     
-    @scala.inline
-    def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    @scala.inline
-    def setRemoveContainer(value: Boolean): Self = StObject.set(x, "removeContainer", value.asInstanceOf[js.Any])
+    inline def setRemoveContainer(value: Boolean): Self = StObject.set(x, "removeContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveContainerUndefined: Self = StObject.set(x, "removeContainer", js.undefined)
+    inline def setRemoveContainerUndefined: Self = StObject.set(x, "removeContainer", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setScrollX(value: Double): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
+    inline def setScrollX(value: Double): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollXUndefined: Self = StObject.set(x, "scrollX", js.undefined)
+    inline def setScrollXUndefined: Self = StObject.set(x, "scrollX", js.undefined)
     
-    @scala.inline
-    def setScrollY(value: Double): Self = StObject.set(x, "scrollY", value.asInstanceOf[js.Any])
+    inline def setScrollY(value: Double): Self = StObject.set(x, "scrollY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollYUndefined: Self = StObject.set(x, "scrollY", js.undefined)
+    inline def setScrollYUndefined: Self = StObject.set(x, "scrollY", js.undefined)
     
-    @scala.inline
-    def setSvgRendering(value: Boolean): Self = StObject.set(x, "svgRendering", value.asInstanceOf[js.Any])
+    inline def setSvgRendering(value: Boolean): Self = StObject.set(x, "svgRendering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgRenderingUndefined: Self = StObject.set(x, "svgRendering", js.undefined)
+    inline def setSvgRenderingUndefined: Self = StObject.set(x, "svgRendering", js.undefined)
     
-    @scala.inline
-    def setTaintTest(value: Boolean): Self = StObject.set(x, "taintTest", value.asInstanceOf[js.Any])
+    inline def setTaintTest(value: Boolean): Self = StObject.set(x, "taintTest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaintTestUndefined: Self = StObject.set(x, "taintTest", js.undefined)
+    inline def setTaintTestUndefined: Self = StObject.set(x, "taintTest", js.undefined)
     
-    @scala.inline
-    def setUseCORS(value: Boolean): Self = StObject.set(x, "useCORS", value.asInstanceOf[js.Any])
+    inline def setUseCORS(value: Boolean): Self = StObject.set(x, "useCORS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCORSUndefined: Self = StObject.set(x, "useCORS", js.undefined)
+    inline def setUseCORSUndefined: Self = StObject.set(x, "useCORS", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
+    inline def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowHeightUndefined: Self = StObject.set(x, "windowHeight", js.undefined)
+    inline def setWindowHeightUndefined: Self = StObject.set(x, "windowHeight", js.undefined)
     
-    @scala.inline
-    def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
+    inline def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowWidthUndefined: Self = StObject.set(x, "windowWidth", js.undefined)
+    inline def setWindowWidthUndefined: Self = StObject.set(x, "windowWidth", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

@@ -15,16 +15,16 @@ object clientMod {
   class ChannelClient protected () extends ChannelBase {
     def this(routingInfo: RoutingInfo, send: FnCall, clientMap: Map[String, ChannelClient]) = this()
     
-    var clientMap: js.Any = js.native
+    /* private */ var clientMap: js.Any = js.native
     
     def disconnect(): js.Promise[Unit] = js.native
     
-    var disconnectListener: js.Any = js.native
+    /* private */ var disconnectListener: js.Any = js.native
     
     def dispatch(action: String): js.Promise[js.Any] = js.native
     def dispatch(action: String, payload: js.Any): js.Promise[js.Any] = js.native
     
-    var endpointId: js.Any = js.native
+    /* private */ var endpointId: js.Any = js.native
     
     def onDisconnection(listener: DisconnectionListener): Unit = js.native
     
@@ -41,17 +41,14 @@ object clientMod {
   }
   object RoutingInfo {
     
-    @scala.inline
-    def apply(endpointId: String, uuid: String): RoutingInfo = {
+    inline def apply(endpointId: String, uuid: String): RoutingInfo = {
       val __obj = js.Dynamic.literal(endpointId = endpointId.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoutingInfo]
     }
     
-    @scala.inline
-    implicit class RoutingInfoMutableBuilder[Self <: RoutingInfo] (val x: Self) extends AnyVal {
+    extension [Self <: RoutingInfo](x: Self) {
       
-      @scala.inline
-      def setEndpointId(value: String): Self = StObject.set(x, "endpointId", value.asInstanceOf[js.Any])
+      inline def setEndpointId(value: String): Self = StObject.set(x, "endpointId", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,25 +28,19 @@ trait UserIDResponse extends StObject {
 }
 object UserIDResponse {
   
-  @scala.inline
-  def apply(clusterName: String, dataSize: Double, nbRecords: Double, userID: String): UserIDResponse = {
+  inline def apply(clusterName: String, dataSize: Double, nbRecords: Double, userID: String): UserIDResponse = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], dataSize = dataSize.asInstanceOf[js.Any], nbRecords = nbRecords.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserIDResponse]
   }
   
-  @scala.inline
-  implicit class UserIDResponseMutableBuilder[Self <: UserIDResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UserIDResponse](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
+    inline def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNbRecords(value: Double): Self = StObject.set(x, "nbRecords", value.asInstanceOf[js.Any])
+    inline def setNbRecords(value: Double): Self = StObject.set(x, "nbRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
+    inline def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
   }
 }

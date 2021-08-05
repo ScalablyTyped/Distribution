@@ -14,8 +14,7 @@ trait SheetRangesQuery
      with XFormulaQuery
 object SheetRangesQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryColumnDifferences: CellAddress => XSheetCellRanges,
     queryContentCells: Double => XSheetCellRanges,

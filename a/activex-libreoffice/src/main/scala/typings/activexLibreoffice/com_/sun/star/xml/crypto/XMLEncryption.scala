@@ -14,8 +14,7 @@ trait XMLEncryption
      with XInitialization
 object XMLEncryption {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     decrypt: (XXMLEncryptionTemplate, XXMLSecurityContext) => XXMLEncryptionTemplate,
     encrypt: (XXMLEncryptionTemplate, XSecurityEnvironment) => XXMLEncryptionTemplate,

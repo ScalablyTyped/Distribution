@@ -60,44 +60,32 @@ object Uploadbox {
   }
   object BeforeSendEventArgs {
     
-    @scala.inline
-    def apply(): BeforeSendEventArgs = {
+    inline def apply(): BeforeSendEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BeforeSendEventArgs]
     }
     
-    @scala.inline
-    implicit class BeforeSendEventArgsMutableBuilder[Self <: BeforeSendEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeSendEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+      inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
   }
   
@@ -125,44 +113,32 @@ object Uploadbox {
   }
   object BeginEventArgs {
     
-    @scala.inline
-    def apply(): BeginEventArgs = {
+    inline def apply(): BeginEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BeginEventArgs]
     }
     
-    @scala.inline
-    implicit class BeginEventArgsMutableBuilder[Self <: BeginEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BeginEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -186,38 +162,28 @@ object Uploadbox {
   }
   object ButtonText {
     
-    @scala.inline
-    def apply(): ButtonText = {
+    inline def apply(): ButtonText = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonText]
     }
     
-    @scala.inline
-    implicit class ButtonTextMutableBuilder[Self <: ButtonText] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonText](x: Self) {
       
-      @scala.inline
-      def setBrowse(value: String): Self = StObject.set(x, "browse", value.asInstanceOf[js.Any])
+      inline def setBrowse(value: String): Self = StObject.set(x, "browse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowseUndefined: Self = StObject.set(x, "browse", js.undefined)
+      inline def setBrowseUndefined: Self = StObject.set(x, "browse", js.undefined)
       
-      @scala.inline
-      def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setClose(value: String): Self = StObject.set(x, "Close", value.asInstanceOf[js.Any])
+      inline def setClose(value: String): Self = StObject.set(x, "Close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "Close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "Close", js.undefined)
       
-      @scala.inline
-      def setUpload(value: String): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+      inline def setUpload(value: String): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+      inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
     }
   }
   
@@ -237,32 +203,24 @@ object Uploadbox {
   }
   object CancelEventArgs {
     
-    @scala.inline
-    def apply(): CancelEventArgs = {
+    inline def apply(): CancelEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CancelEventArgs]
     }
     
-    @scala.inline
-    implicit class CancelEventArgsMutableBuilder[Self <: CancelEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CancelEventArgs](x: Self) {
       
-      @scala.inline
-      def setFileStatus(value: js.Any): Self = StObject.set(x, "fileStatus", value.asInstanceOf[js.Any])
+      inline def setFileStatus(value: js.Any): Self = StObject.set(x, "fileStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileStatusUndefined: Self = StObject.set(x, "fileStatus", js.undefined)
+      inline def setFileStatusUndefined: Self = StObject.set(x, "fileStatus", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -294,50 +252,36 @@ object Uploadbox {
   }
   object CompleteEventArgs {
     
-    @scala.inline
-    def apply(): CompleteEventArgs = {
+    inline def apply(): CompleteEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompleteEventArgs]
     }
     
-    @scala.inline
-    implicit class CompleteEventArgsMutableBuilder[Self <: CompleteEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CompleteEventArgs](x: Self) {
       
-      @scala.inline
-      def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEUndefined: Self = StObject.set(x, "e", js.undefined)
+      inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
-      @scala.inline
-      def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
+      inline def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTextUndefined: Self = StObject.set(x, "responseText", js.undefined)
+      inline def setResponseTextUndefined: Self = StObject.set(x, "responseText", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+      inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
   }
   
@@ -353,26 +297,20 @@ object Uploadbox {
   }
   object CreateEventArgs {
     
-    @scala.inline
-    def apply(): CreateEventArgs = {
+    inline def apply(): CreateEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    @scala.inline
-    implicit class CreateEventArgsMutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CreateEventArgs](x: Self) {
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -400,44 +338,32 @@ object Uploadbox {
   }
   object CustomFileDetails {
     
-    @scala.inline
-    def apply(): CustomFileDetails = {
+    inline def apply(): CustomFileDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomFileDetails]
     }
     
-    @scala.inline
-    implicit class CustomFileDetailsMutableBuilder[Self <: CustomFileDetails] (val x: Self) extends AnyVal {
+    extension [Self <: CustomFileDetails](x: Self) {
       
-      @scala.inline
-      def setAction(value: Boolean): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Boolean): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -453,26 +379,20 @@ object Uploadbox {
   }
   object DestroyEventArgs {
     
-    @scala.inline
-    def apply(): DestroyEventArgs = {
+    inline def apply(): DestroyEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    @scala.inline
-    implicit class DestroyEventArgsMutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DestroyEventArgs](x: Self) {
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -496,38 +416,28 @@ object Uploadbox {
   }
   object DialogAction {
     
-    @scala.inline
-    def apply(): DialogAction = {
+    inline def apply(): DialogAction = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DialogAction]
     }
     
-    @scala.inline
-    implicit class DialogActionMutableBuilder[Self <: DialogAction] (val x: Self) extends AnyVal {
+    extension [Self <: DialogAction](x: Self) {
       
-      @scala.inline
-      def setCloseOnComplete(value: Boolean): Self = StObject.set(x, "closeOnComplete", value.asInstanceOf[js.Any])
+      inline def setCloseOnComplete(value: Boolean): Self = StObject.set(x, "closeOnComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnCompleteUndefined: Self = StObject.set(x, "closeOnComplete", js.undefined)
+      inline def setCloseOnCompleteUndefined: Self = StObject.set(x, "closeOnComplete", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDrag(value: Boolean): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
+      inline def setDrag(value: Boolean): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+      inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
       
-      @scala.inline
-      def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+      inline def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+      inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     }
   }
   
@@ -551,38 +461,28 @@ object Uploadbox {
   }
   object DialogText {
     
-    @scala.inline
-    def apply(): DialogText = {
+    inline def apply(): DialogText = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DialogText]
     }
     
-    @scala.inline
-    implicit class DialogTextMutableBuilder[Self <: DialogText] (val x: Self) extends AnyVal {
+    extension [Self <: DialogText](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -606,38 +506,28 @@ object Uploadbox {
   }
   object ErrorEventArgs {
     
-    @scala.inline
-    def apply(): ErrorEventArgs = {
+    inline def apply(): ErrorEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorEventArgs]
     }
     
-    @scala.inline
-    implicit class ErrorEventArgsMutableBuilder[Self <: ErrorEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorEventArgs](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -657,32 +547,24 @@ object Uploadbox {
   }
   object FileSelectEventArgs {
     
-    @scala.inline
-    def apply(): FileSelectEventArgs = {
+    inline def apply(): FileSelectEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileSelectEventArgs]
     }
     
-    @scala.inline
-    implicit class FileSelectEventArgsMutableBuilder[Self <: FileSelectEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FileSelectEventArgs](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -714,50 +596,36 @@ object Uploadbox {
   }
   object InProgressEventArgs {
     
-    @scala.inline
-    def apply(): InProgressEventArgs = {
+    inline def apply(): InProgressEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InProgressEventArgs]
     }
     
-    @scala.inline
-    implicit class InProgressEventArgsMutableBuilder[Self <: InProgressEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: InProgressEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEUndefined: Self = StObject.set(x, "e", js.undefined)
+      inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
-      @scala.inline
-      def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setPercentage(value: js.Any): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: js.Any): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+      inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -948,254 +816,172 @@ object Uploadbox {
   }
   object Model {
     
-    @scala.inline
-    def apply(): typings.ejWebAll.ej.Uploadbox.Model = {
+    inline def apply(): typings.ejWebAll.ej.Uploadbox.Model = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.ejWebAll.ej.Uploadbox.Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: typings.ejWebAll.ej.Uploadbox.Model] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ejWebAll.ej.Uploadbox.Model](x: Self) {
       
-      @scala.inline
-      def setAllowDragAndDrop(value: Boolean): Self = StObject.set(x, "allowDragAndDrop", value.asInstanceOf[js.Any])
+      inline def setAllowDragAndDrop(value: Boolean): Self = StObject.set(x, "allowDragAndDrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowDragAndDropUndefined: Self = StObject.set(x, "allowDragAndDrop", js.undefined)
+      inline def setAllowDragAndDropUndefined: Self = StObject.set(x, "allowDragAndDrop", js.undefined)
       
-      @scala.inline
-      def setAsyncUpload(value: Boolean): Self = StObject.set(x, "asyncUpload", value.asInstanceOf[js.Any])
+      inline def setAsyncUpload(value: Boolean): Self = StObject.set(x, "asyncUpload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUploadUndefined: Self = StObject.set(x, "asyncUpload", js.undefined)
+      inline def setAsyncUploadUndefined: Self = StObject.set(x, "asyncUpload", js.undefined)
       
-      @scala.inline
-      def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
+      inline def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUploadUndefined: Self = StObject.set(x, "autoUpload", js.undefined)
+      inline def setAutoUploadUndefined: Self = StObject.set(x, "autoUpload", js.undefined)
       
-      @scala.inline
-      def setBeforeSend(value: /* e */ BeforeSendEventArgs => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
+      inline def setBeforeSend(value: /* e */ BeforeSendEventArgs => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
+      inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
       
-      @scala.inline
-      def setBegin(value: /* e */ BeginEventArgs => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
+      inline def setBegin(value: /* e */ BeginEventArgs => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
+      inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
       
-      @scala.inline
-      def setButtonText(value: ButtonText): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+      inline def setButtonText(value: ButtonText): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
+      inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
       
-      @scala.inline
-      def setCancel(value: /* e */ CancelEventArgs => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: /* e */ CancelEventArgs => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setComplete(value: /* e */ CompleteEventArgs => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      inline def setComplete(value: /* e */ CompleteEventArgs => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      @scala.inline
-      def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+      inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+      inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      @scala.inline
-      def setCustomFileDetails(value: CustomFileDetails): Self = StObject.set(x, "customFileDetails", value.asInstanceOf[js.Any])
+      inline def setCustomFileDetails(value: CustomFileDetails): Self = StObject.set(x, "customFileDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFileDetailsUndefined: Self = StObject.set(x, "customFileDetails", js.undefined)
+      inline def setCustomFileDetailsUndefined: Self = StObject.set(x, "customFileDetails", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setDialogAction(value: DialogAction): Self = StObject.set(x, "dialogAction", value.asInstanceOf[js.Any])
+      inline def setDialogAction(value: DialogAction): Self = StObject.set(x, "dialogAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogActionUndefined: Self = StObject.set(x, "dialogAction", js.undefined)
+      inline def setDialogActionUndefined: Self = StObject.set(x, "dialogAction", js.undefined)
       
-      @scala.inline
-      def setDialogPosition(value: js.Any): Self = StObject.set(x, "dialogPosition", value.asInstanceOf[js.Any])
+      inline def setDialogPosition(value: js.Any): Self = StObject.set(x, "dialogPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogPositionUndefined: Self = StObject.set(x, "dialogPosition", js.undefined)
+      inline def setDialogPositionUndefined: Self = StObject.set(x, "dialogPosition", js.undefined)
       
-      @scala.inline
-      def setDialogText(value: DialogText): Self = StObject.set(x, "dialogText", value.asInstanceOf[js.Any])
+      inline def setDialogText(value: DialogText): Self = StObject.set(x, "dialogText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogTextUndefined: Self = StObject.set(x, "dialogText", js.undefined)
+      inline def setDialogTextUndefined: Self = StObject.set(x, "dialogText", js.undefined)
       
-      @scala.inline
-      def setDropAreaHeight(value: Double | String): Self = StObject.set(x, "dropAreaHeight", value.asInstanceOf[js.Any])
+      inline def setDropAreaHeight(value: Double | String): Self = StObject.set(x, "dropAreaHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropAreaHeightUndefined: Self = StObject.set(x, "dropAreaHeight", js.undefined)
+      inline def setDropAreaHeightUndefined: Self = StObject.set(x, "dropAreaHeight", js.undefined)
       
-      @scala.inline
-      def setDropAreaText(value: String): Self = StObject.set(x, "dropAreaText", value.asInstanceOf[js.Any])
+      inline def setDropAreaText(value: String): Self = StObject.set(x, "dropAreaText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropAreaTextUndefined: Self = StObject.set(x, "dropAreaText", js.undefined)
+      inline def setDropAreaTextUndefined: Self = StObject.set(x, "dropAreaText", js.undefined)
       
-      @scala.inline
-      def setDropAreaWidth(value: Double | String): Self = StObject.set(x, "dropAreaWidth", value.asInstanceOf[js.Any])
+      inline def setDropAreaWidth(value: Double | String): Self = StObject.set(x, "dropAreaWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropAreaWidthUndefined: Self = StObject.set(x, "dropAreaWidth", js.undefined)
+      inline def setDropAreaWidthUndefined: Self = StObject.set(x, "dropAreaWidth", js.undefined)
       
-      @scala.inline
-      def setEnableRTL(value: Boolean): Self = StObject.set(x, "enableRTL", value.asInstanceOf[js.Any])
+      inline def setEnableRTL(value: Boolean): Self = StObject.set(x, "enableRTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableRTLUndefined: Self = StObject.set(x, "enableRTL", js.undefined)
+      inline def setEnableRTLUndefined: Self = StObject.set(x, "enableRTL", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setError(value: /* e */ ErrorEventArgs => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* e */ ErrorEventArgs => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setExtensionsAllow(value: String): Self = StObject.set(x, "extensionsAllow", value.asInstanceOf[js.Any])
+      inline def setExtensionsAllow(value: String): Self = StObject.set(x, "extensionsAllow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsAllowUndefined: Self = StObject.set(x, "extensionsAllow", js.undefined)
+      inline def setExtensionsAllowUndefined: Self = StObject.set(x, "extensionsAllow", js.undefined)
       
-      @scala.inline
-      def setExtensionsDeny(value: String): Self = StObject.set(x, "extensionsDeny", value.asInstanceOf[js.Any])
+      inline def setExtensionsDeny(value: String): Self = StObject.set(x, "extensionsDeny", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsDenyUndefined: Self = StObject.set(x, "extensionsDeny", js.undefined)
+      inline def setExtensionsDenyUndefined: Self = StObject.set(x, "extensionsDeny", js.undefined)
       
-      @scala.inline
-      def setFileSelect(value: /* e */ FileSelectEventArgs => Unit): Self = StObject.set(x, "fileSelect", js.Any.fromFunction1(value))
+      inline def setFileSelect(value: /* e */ FileSelectEventArgs => Unit): Self = StObject.set(x, "fileSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFileSelectUndefined: Self = StObject.set(x, "fileSelect", js.undefined)
+      inline def setFileSelectUndefined: Self = StObject.set(x, "fileSelect", js.undefined)
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+      inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
+      inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
-      @scala.inline
-      def setInProgress(value: /* e */ InProgressEventArgs => Unit): Self = StObject.set(x, "inProgress", js.Any.fromFunction1(value))
+      inline def setInProgress(value: /* e */ InProgressEventArgs => Unit): Self = StObject.set(x, "inProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInProgressUndefined: Self = StObject.set(x, "inProgress", js.undefined)
+      inline def setInProgressUndefined: Self = StObject.set(x, "inProgress", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setMultipleFilesSelection(value: Boolean): Self = StObject.set(x, "multipleFilesSelection", value.asInstanceOf[js.Any])
+      inline def setMultipleFilesSelection(value: Boolean): Self = StObject.set(x, "multipleFilesSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleFilesSelectionUndefined: Self = StObject.set(x, "multipleFilesSelection", js.undefined)
+      inline def setMultipleFilesSelectionUndefined: Self = StObject.set(x, "multipleFilesSelection", js.undefined)
       
-      @scala.inline
-      def setPushFile(value: js.Any): Self = StObject.set(x, "pushFile", value.asInstanceOf[js.Any])
+      inline def setPushFile(value: js.Any): Self = StObject.set(x, "pushFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushFileUndefined: Self = StObject.set(x, "pushFile", js.undefined)
+      inline def setPushFileUndefined: Self = StObject.set(x, "pushFile", js.undefined)
       
-      @scala.inline
-      def setRemove(value: /* e */ RemoveEventArgs => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: /* e */ RemoveEventArgs => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setRemoveUrl(value: String): Self = StObject.set(x, "removeUrl", value.asInstanceOf[js.Any])
+      inline def setRemoveUrl(value: String): Self = StObject.set(x, "removeUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUrlUndefined: Self = StObject.set(x, "removeUrl", js.undefined)
+      inline def setRemoveUrlUndefined: Self = StObject.set(x, "removeUrl", js.undefined)
       
-      @scala.inline
-      def setSaveUrl(value: String): Self = StObject.set(x, "saveUrl", value.asInstanceOf[js.Any])
+      inline def setSaveUrl(value: String): Self = StObject.set(x, "saveUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveUrlUndefined: Self = StObject.set(x, "saveUrl", js.undefined)
+      inline def setSaveUrlUndefined: Self = StObject.set(x, "saveUrl", js.undefined)
       
-      @scala.inline
-      def setShowBrowseButton(value: Boolean): Self = StObject.set(x, "showBrowseButton", value.asInstanceOf[js.Any])
+      inline def setShowBrowseButton(value: Boolean): Self = StObject.set(x, "showBrowseButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowBrowseButtonUndefined: Self = StObject.set(x, "showBrowseButton", js.undefined)
+      inline def setShowBrowseButtonUndefined: Self = StObject.set(x, "showBrowseButton", js.undefined)
       
-      @scala.inline
-      def setShowFileDetails(value: Boolean): Self = StObject.set(x, "showFileDetails", value.asInstanceOf[js.Any])
+      inline def setShowFileDetails(value: Boolean): Self = StObject.set(x, "showFileDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowFileDetailsUndefined: Self = StObject.set(x, "showFileDetails", js.undefined)
+      inline def setShowFileDetailsUndefined: Self = StObject.set(x, "showFileDetails", js.undefined)
       
-      @scala.inline
-      def setShowRoundedCorner(value: Boolean): Self = StObject.set(x, "showRoundedCorner", value.asInstanceOf[js.Any])
+      inline def setShowRoundedCorner(value: Boolean): Self = StObject.set(x, "showRoundedCorner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRoundedCornerUndefined: Self = StObject.set(x, "showRoundedCorner", js.undefined)
+      inline def setShowRoundedCornerUndefined: Self = StObject.set(x, "showRoundedCorner", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: /* e */ SuccessEventArgs => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* e */ SuccessEventArgs => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setUploadName(value: String): Self = StObject.set(x, "uploadName", value.asInstanceOf[js.Any])
+      inline def setUploadName(value: String): Self = StObject.set(x, "uploadName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadNameUndefined: Self = StObject.set(x, "uploadName", js.undefined)
+      inline def setUploadNameUndefined: Self = StObject.set(x, "uploadName", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -1215,32 +1001,24 @@ object Uploadbox {
   }
   object RemoveEventArgs {
     
-    @scala.inline
-    def apply(): RemoveEventArgs = {
+    inline def apply(): RemoveEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemoveEventArgs]
     }
     
-    @scala.inline
-    implicit class RemoveEventArgsMutableBuilder[Self <: RemoveEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveEventArgs](x: Self) {
       
-      @scala.inline
-      def setFileStatus(value: js.Any): Self = StObject.set(x, "fileStatus", value.asInstanceOf[js.Any])
+      inline def setFileStatus(value: js.Any): Self = StObject.set(x, "fileStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileStatusUndefined: Self = StObject.set(x, "fileStatus", js.undefined)
+      inline def setFileStatusUndefined: Self = StObject.set(x, "fileStatus", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -1276,56 +1054,40 @@ object Uploadbox {
   }
   object SuccessEventArgs {
     
-    @scala.inline
-    def apply(): SuccessEventArgs = {
+    inline def apply(): SuccessEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SuccessEventArgs]
     }
     
-    @scala.inline
-    implicit class SuccessEventArgsMutableBuilder[Self <: SuccessEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SuccessEventArgs](x: Self) {
       
-      @scala.inline
-      def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEUndefined: Self = StObject.set(x, "e", js.undefined)
+      inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
-      @scala.inline
-      def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
+      inline def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTextUndefined: Self = StObject.set(x, "responseText", js.undefined)
+      inline def setResponseTextUndefined: Self = StObject.set(x, "responseText", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: js.Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: js.Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+      inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
   }
 }

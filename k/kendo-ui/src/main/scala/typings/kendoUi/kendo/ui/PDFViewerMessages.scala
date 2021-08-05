@@ -16,37 +16,27 @@ trait PDFViewerMessages extends StObject {
 }
 object PDFViewerMessages {
   
-  @scala.inline
-  def apply(): PDFViewerMessages = {
+  inline def apply(): PDFViewerMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PDFViewerMessages]
   }
   
-  @scala.inline
-  implicit class PDFViewerMessagesMutableBuilder[Self <: PDFViewerMessages] (val x: Self) extends AnyVal {
+  extension [Self <: PDFViewerMessages](x: Self) {
     
-    @scala.inline
-    def setDefaultFileName(value: String): Self = StObject.set(x, "defaultFileName", value.asInstanceOf[js.Any])
+    inline def setDefaultFileName(value: String): Self = StObject.set(x, "defaultFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFileNameUndefined: Self = StObject.set(x, "defaultFileName", js.undefined)
+    inline def setDefaultFileNameUndefined: Self = StObject.set(x, "defaultFileName", js.undefined)
     
-    @scala.inline
-    def setDialogs(value: PDFViewerMessagesDialogs): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
+    inline def setDialogs(value: PDFViewerMessagesDialogs): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogsUndefined: Self = StObject.set(x, "dialogs", js.undefined)
+    inline def setDialogsUndefined: Self = StObject.set(x, "dialogs", js.undefined)
     
-    @scala.inline
-    def setErrorMessages(value: PDFViewerMessagesErrorMessages): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
+    inline def setErrorMessages(value: PDFViewerMessagesErrorMessages): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessagesUndefined: Self = StObject.set(x, "errorMessages", js.undefined)
+    inline def setErrorMessagesUndefined: Self = StObject.set(x, "errorMessages", js.undefined)
     
-    @scala.inline
-    def setToolbar(value: PDFViewerMessagesToolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: PDFViewerMessagesToolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+    inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait SuggestRequest extends StObject {
 }
 object SuggestRequest {
   
-  @scala.inline
-  def apply(query: Query, suggester: Suggester): SuggestRequest = {
+  inline def apply(query: Query, suggester: Suggester): SuggestRequest = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], suggester = suggester.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestRequest]
   }
   
-  @scala.inline
-  implicit class SuggestRequestMutableBuilder[Self <: SuggestRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestRequest](x: Self) {
     
-    @scala.inline
-    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: SuggestionsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: SuggestionsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSuggester(value: Suggester): Self = StObject.set(x, "suggester", value.asInstanceOf[js.Any])
+    inline def setSuggester(value: Suggester): Self = StObject.set(x, "suggester", value.asInstanceOf[js.Any])
   }
 }

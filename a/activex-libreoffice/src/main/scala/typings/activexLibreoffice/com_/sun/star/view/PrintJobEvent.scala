@@ -22,16 +22,13 @@ trait PrintJobEvent
 }
 object PrintJobEvent {
   
-  @scala.inline
-  def apply(Source: XInterface, State: PrintableState): PrintJobEvent = {
+  inline def apply(Source: XInterface, State: PrintableState): PrintJobEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintJobEvent]
   }
   
-  @scala.inline
-  implicit class PrintJobEventMutableBuilder[Self <: PrintJobEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PrintJobEvent](x: Self) {
     
-    @scala.inline
-    def setState(value: PrintableState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: PrintableState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

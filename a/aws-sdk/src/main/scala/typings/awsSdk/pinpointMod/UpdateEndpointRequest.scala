@@ -20,22 +20,17 @@ trait UpdateEndpointRequest extends StObject {
 }
 object UpdateEndpointRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, EndpointId: string, EndpointRequest: EndpointRequest): UpdateEndpointRequest = {
+  inline def apply(ApplicationId: string, EndpointId: string, EndpointRequest: EndpointRequest): UpdateEndpointRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EndpointId = EndpointId.asInstanceOf[js.Any], EndpointRequest = EndpointRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndpointRequest]
   }
   
-  @scala.inline
-  implicit class UpdateEndpointRequestMutableBuilder[Self <: UpdateEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointId(value: string): Self = StObject.set(x, "EndpointId", value.asInstanceOf[js.Any])
+    inline def setEndpointId(value: string): Self = StObject.set(x, "EndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointRequest(value: EndpointRequest): Self = StObject.set(x, "EndpointRequest", value.asInstanceOf[js.Any])
+    inline def setEndpointRequest(value: EndpointRequest): Self = StObject.set(x, "EndpointRequest", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait GattCharacteristicNotificationTrigger extends StObject {
 }
 object GattCharacteristicNotificationTrigger {
   
-  @scala.inline
-  def apply(characteristic: GattCharacteristic): GattCharacteristicNotificationTrigger = {
+  inline def apply(characteristic: GattCharacteristic): GattCharacteristicNotificationTrigger = {
     val __obj = js.Dynamic.literal(characteristic = characteristic.asInstanceOf[js.Any])
     __obj.asInstanceOf[GattCharacteristicNotificationTrigger]
   }
   
-  @scala.inline
-  implicit class GattCharacteristicNotificationTriggerMutableBuilder[Self <: GattCharacteristicNotificationTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: GattCharacteristicNotificationTrigger](x: Self) {
     
-    @scala.inline
-    def setCharacteristic(value: GattCharacteristic): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
+    inline def setCharacteristic(value: GattCharacteristic): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
   }
 }

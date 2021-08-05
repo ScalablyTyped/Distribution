@@ -36,8 +36,7 @@ trait WebAccountProviderRequestTokenOperation extends StObject {
 }
 object WebAccountProviderRequestTokenOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cacheExpirationTime: Date,
     kind: WebAccountProviderOperationKind,
     providerRequest: WebProviderTokenRequest,
@@ -50,28 +49,20 @@ object WebAccountProviderRequestTokenOperation {
     __obj.asInstanceOf[WebAccountProviderRequestTokenOperation]
   }
   
-  @scala.inline
-  implicit class WebAccountProviderRequestTokenOperationMutableBuilder[Self <: WebAccountProviderRequestTokenOperation] (val x: Self) extends AnyVal {
+  extension [Self <: WebAccountProviderRequestTokenOperation](x: Self) {
     
-    @scala.inline
-    def setCacheExpirationTime(value: Date): Self = StObject.set(x, "cacheExpirationTime", value.asInstanceOf[js.Any])
+    inline def setCacheExpirationTime(value: Date): Self = StObject.set(x, "cacheExpirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderRequest(value: WebProviderTokenRequest): Self = StObject.set(x, "providerRequest", value.asInstanceOf[js.Any])
+    inline def setProviderRequest(value: WebProviderTokenRequest): Self = StObject.set(x, "providerRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderResponses(value: IVector[WebProviderTokenResponse]): Self = StObject.set(x, "providerResponses", value.asInstanceOf[js.Any])
+    inline def setProviderResponses(value: IVector[WebProviderTokenResponse]): Self = StObject.set(x, "providerResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
+    inline def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReportError(value: WebProviderError => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
+    inline def setReportError(value: WebProviderError => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReportUserCanceled(value: () => Unit): Self = StObject.set(x, "reportUserCanceled", js.Any.fromFunction0(value))
+    inline def setReportUserCanceled(value: () => Unit): Self = StObject.set(x, "reportUserCanceled", js.Any.fromFunction0(value))
   }
 }

@@ -24,31 +24,23 @@ trait SchemaManagedInstanceInstanceHealth extends StObject {
 }
 object SchemaManagedInstanceInstanceHealth {
   
-  @scala.inline
-  def apply(): SchemaManagedInstanceInstanceHealth = {
+  inline def apply(): SchemaManagedInstanceInstanceHealth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedInstanceInstanceHealth]
   }
   
-  @scala.inline
-  implicit class SchemaManagedInstanceInstanceHealthMutableBuilder[Self <: SchemaManagedInstanceInstanceHealth] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedInstanceInstanceHealth](x: Self) {
     
-    @scala.inline
-    def setDetailedHealthState(value: String): Self = StObject.set(x, "detailedHealthState", value.asInstanceOf[js.Any])
+    inline def setDetailedHealthState(value: String): Self = StObject.set(x, "detailedHealthState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedHealthStateUndefined: Self = StObject.set(x, "detailedHealthState", js.undefined)
+    inline def setDetailedHealthStateUndefined: Self = StObject.set(x, "detailedHealthState", js.undefined)
     
-    @scala.inline
-    def setHealthCheck(value: String): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+    inline def setHealthCheck(value: String): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
+    inline def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
     
-    @scala.inline
-    def setHealthState(value: String): Self = StObject.set(x, "healthState", value.asInstanceOf[js.Any])
+    inline def setHealthState(value: String): Self = StObject.set(x, "healthState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthStateUndefined: Self = StObject.set(x, "healthState", js.undefined)
+    inline def setHealthStateUndefined: Self = StObject.set(x, "healthState", js.undefined)
   }
 }

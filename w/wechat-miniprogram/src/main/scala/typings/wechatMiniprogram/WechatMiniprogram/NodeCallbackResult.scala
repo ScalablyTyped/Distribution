@@ -11,16 +11,13 @@ trait NodeCallbackResult extends StObject {
 }
 object NodeCallbackResult {
   
-  @scala.inline
-  def apply(node: IAnyObject): NodeCallbackResult = {
+  inline def apply(node: IAnyObject): NodeCallbackResult = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeCallbackResult]
   }
   
-  @scala.inline
-  implicit class NodeCallbackResultMutableBuilder[Self <: NodeCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: NodeCallbackResult](x: Self) {
     
-    @scala.inline
-    def setNode(value: IAnyObject): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: IAnyObject): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

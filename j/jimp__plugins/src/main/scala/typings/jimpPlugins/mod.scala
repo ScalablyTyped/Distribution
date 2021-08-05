@@ -32,8 +32,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Plugins = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugins]
+  inline def default(): Plugins = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugins]
   
   type BlitRet = ReturnType[js.Function0[Blit]]
   

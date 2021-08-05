@@ -20,15 +20,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InteractionType extends StObject
 object InteractionType {
   
-  @scala.inline
-  def IT_BREAK: typings.qlikEngineapi.qlikEngineapiStrings.IT_BREAK = "IT_BREAK".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IT_BREAK]
+  inline def IT_BREAK: typings.qlikEngineapi.qlikEngineapiStrings.IT_BREAK = "IT_BREAK".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IT_BREAK]
   
-  @scala.inline
-  def IT_END: typings.qlikEngineapi.qlikEngineapiStrings.IT_END = "IT_END".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IT_END]
+  inline def IT_END: typings.qlikEngineapi.qlikEngineapiStrings.IT_END = "IT_END".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IT_END]
   
-  @scala.inline
-  def IT_MSGBOX: typings.qlikEngineapi.qlikEngineapiStrings.IT_MSGBOX = "IT_MSGBOX".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IT_MSGBOX]
+  inline def IT_MSGBOX: typings.qlikEngineapi.qlikEngineapiStrings.IT_MSGBOX = "IT_MSGBOX".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IT_MSGBOX]
   
-  @scala.inline
-  def IT_SCRIPTLINE: typings.qlikEngineapi.qlikEngineapiStrings.IT_SCRIPTLINE = "IT_SCRIPTLINE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IT_SCRIPTLINE]
+  inline def IT_SCRIPTLINE: typings.qlikEngineapi.qlikEngineapiStrings.IT_SCRIPTLINE = "IT_SCRIPTLINE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IT_SCRIPTLINE]
 }

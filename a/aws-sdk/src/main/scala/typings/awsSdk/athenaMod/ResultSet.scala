@@ -18,28 +18,21 @@ trait ResultSet extends StObject {
 }
 object ResultSet {
   
-  @scala.inline
-  def apply(): ResultSet = {
+  inline def apply(): ResultSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultSet]
   }
   
-  @scala.inline
-  implicit class ResultSetMutableBuilder[Self <: ResultSet] (val x: Self) extends AnyVal {
+  extension [Self <: ResultSet](x: Self) {
     
-    @scala.inline
-    def setResultSetMetadata(value: ResultSetMetadata): Self = StObject.set(x, "ResultSetMetadata", value.asInstanceOf[js.Any])
+    inline def setResultSetMetadata(value: ResultSetMetadata): Self = StObject.set(x, "ResultSetMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetMetadataUndefined: Self = StObject.set(x, "ResultSetMetadata", js.undefined)
+    inline def setResultSetMetadataUndefined: Self = StObject.set(x, "ResultSetMetadata", js.undefined)
     
-    @scala.inline
-    def setRows(value: RowList): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: RowList): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "Rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "Rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: Row*): Self = StObject.set(x, "Rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "Rows", js.Array(value :_*))
   }
 }

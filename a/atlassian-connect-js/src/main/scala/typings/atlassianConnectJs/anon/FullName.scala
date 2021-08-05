@@ -14,22 +14,17 @@ trait FullName extends StObject {
 }
 object FullName {
   
-  @scala.inline
-  def apply(fullName: String, id: String, key: String): FullName = {
+  inline def apply(fullName: String, id: String, key: String): FullName = {
     val __obj = js.Dynamic.literal(fullName = fullName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullName]
   }
   
-  @scala.inline
-  implicit class FullNameMutableBuilder[Self <: FullName] (val x: Self) extends AnyVal {
+  extension [Self <: FullName](x: Self) {
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

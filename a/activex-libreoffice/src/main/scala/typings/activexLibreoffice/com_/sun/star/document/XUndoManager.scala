@@ -241,8 +241,7 @@ trait XUndoManager
 }
 object XUndoManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllRedoActionTitles: SafeArray[String],
     AllUndoActionTitles: SafeArray[String],
     CurrentRedoActionTitle: String,
@@ -278,70 +277,48 @@ object XUndoManager {
     __obj.asInstanceOf[XUndoManager]
   }
   
-  @scala.inline
-  implicit class XUndoManagerMutableBuilder[Self <: XUndoManager] (val x: Self) extends AnyVal {
+  extension [Self <: XUndoManager](x: Self) {
     
-    @scala.inline
-    def setAddUndoAction(value: XUndoAction => Unit): Self = StObject.set(x, "addUndoAction", js.Any.fromFunction1(value))
+    inline def setAddUndoAction(value: XUndoAction => Unit): Self = StObject.set(x, "addUndoAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddUndoManagerListener(value: XUndoManagerListener => Unit): Self = StObject.set(x, "addUndoManagerListener", js.Any.fromFunction1(value))
+    inline def setAddUndoManagerListener(value: XUndoManagerListener => Unit): Self = StObject.set(x, "addUndoManagerListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAllRedoActionTitles(value: SafeArray[String]): Self = StObject.set(x, "AllRedoActionTitles", value.asInstanceOf[js.Any])
+    inline def setAllRedoActionTitles(value: SafeArray[String]): Self = StObject.set(x, "AllRedoActionTitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllUndoActionTitles(value: SafeArray[String]): Self = StObject.set(x, "AllUndoActionTitles", value.asInstanceOf[js.Any])
+    inline def setAllUndoActionTitles(value: SafeArray[String]): Self = StObject.set(x, "AllUndoActionTitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearRedo(value: () => Unit): Self = StObject.set(x, "clearRedo", js.Any.fromFunction0(value))
+    inline def setClearRedo(value: () => Unit): Self = StObject.set(x, "clearRedo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCurrentRedoActionTitle(value: String): Self = StObject.set(x, "CurrentRedoActionTitle", value.asInstanceOf[js.Any])
+    inline def setCurrentRedoActionTitle(value: String): Self = StObject.set(x, "CurrentRedoActionTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentUndoActionTitle(value: String): Self = StObject.set(x, "CurrentUndoActionTitle", value.asInstanceOf[js.Any])
+    inline def setCurrentUndoActionTitle(value: String): Self = StObject.set(x, "CurrentUndoActionTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterHiddenUndoContext(value: () => Unit): Self = StObject.set(x, "enterHiddenUndoContext", js.Any.fromFunction0(value))
+    inline def setEnterHiddenUndoContext(value: () => Unit): Self = StObject.set(x, "enterHiddenUndoContext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnterUndoContext(value: String => Unit): Self = StObject.set(x, "enterUndoContext", js.Any.fromFunction1(value))
+    inline def setEnterUndoContext(value: String => Unit): Self = StObject.set(x, "enterUndoContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAllRedoActionTitles(value: () => SafeArray[String]): Self = StObject.set(x, "getAllRedoActionTitles", js.Any.fromFunction0(value))
+    inline def setGetAllRedoActionTitles(value: () => SafeArray[String]): Self = StObject.set(x, "getAllRedoActionTitles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllUndoActionTitles(value: () => SafeArray[String]): Self = StObject.set(x, "getAllUndoActionTitles", js.Any.fromFunction0(value))
+    inline def setGetAllUndoActionTitles(value: () => SafeArray[String]): Self = StObject.set(x, "getAllUndoActionTitles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentRedoActionTitle(value: () => String): Self = StObject.set(x, "getCurrentRedoActionTitle", js.Any.fromFunction0(value))
+    inline def setGetCurrentRedoActionTitle(value: () => String): Self = StObject.set(x, "getCurrentRedoActionTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentUndoActionTitle(value: () => String): Self = StObject.set(x, "getCurrentUndoActionTitle", js.Any.fromFunction0(value))
+    inline def setGetCurrentUndoActionTitle(value: () => String): Self = StObject.set(x, "getCurrentUndoActionTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsRedoPossible(value: () => Boolean): Self = StObject.set(x, "isRedoPossible", js.Any.fromFunction0(value))
+    inline def setIsRedoPossible(value: () => Boolean): Self = StObject.set(x, "isRedoPossible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsUndoPossible(value: () => Boolean): Self = StObject.set(x, "isUndoPossible", js.Any.fromFunction0(value))
+    inline def setIsUndoPossible(value: () => Boolean): Self = StObject.set(x, "isUndoPossible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLeaveUndoContext(value: () => Unit): Self = StObject.set(x, "leaveUndoContext", js.Any.fromFunction0(value))
+    inline def setLeaveUndoContext(value: () => Unit): Self = StObject.set(x, "leaveUndoContext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
+    inline def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveUndoManagerListener(value: XUndoManagerListener => Unit): Self = StObject.set(x, "removeUndoManagerListener", js.Any.fromFunction1(value))
+    inline def setRemoveUndoManagerListener(value: XUndoManagerListener => Unit): Self = StObject.set(x, "removeUndoManagerListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUndo(value: () => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
+    inline def setUndo(value: () => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
   }
 }

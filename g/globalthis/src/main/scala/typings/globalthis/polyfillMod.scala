@@ -9,8 +9,7 @@ object polyfillMod {
   /**
     * Gets the `globalThis` object.
     */
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
   
   @JSImport("globalthis/polyfill", JSImport.Namespace)
   @js.native

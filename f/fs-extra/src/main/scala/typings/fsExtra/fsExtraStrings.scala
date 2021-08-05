@@ -9,27 +9,23 @@ object fsExtraStrings {
   
   @js.native
   sealed trait buffer extends StObject
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
   sealed trait dir
     extends StObject
        with SymlinkType
-  @scala.inline
-  def dir: dir = "dir".asInstanceOf[dir]
+  inline def dir: dir = "dir".asInstanceOf[dir]
   
   @js.native
   sealed trait file
     extends StObject
        with SymlinkType
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
   sealed trait junction
     extends StObject
        with SymlinkType
-  @scala.inline
-  def junction: junction = "junction".asInstanceOf[junction]
+  inline def junction: junction = "junction".asInstanceOf[junction]
 }

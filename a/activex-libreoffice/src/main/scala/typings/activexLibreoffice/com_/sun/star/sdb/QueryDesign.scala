@@ -118,8 +118,7 @@ trait QueryDesign
 }
 object QueryDesign {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveCommand: String,
     EscapeProcessing: Boolean,
     Frame: XFrame,
@@ -144,13 +143,10 @@ object QueryDesign {
     __obj.asInstanceOf[QueryDesign]
   }
   
-  @scala.inline
-  implicit class QueryDesignMutableBuilder[Self <: QueryDesign] (val x: Self) extends AnyVal {
+  extension [Self <: QueryDesign](x: Self) {
     
-    @scala.inline
-    def setActiveCommand(value: String): Self = StObject.set(x, "ActiveCommand", value.asInstanceOf[js.Any])
+    inline def setActiveCommand(value: String): Self = StObject.set(x, "ActiveCommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscapeProcessing(value: Boolean): Self = StObject.set(x, "EscapeProcessing", value.asInstanceOf[js.Any])
+    inline def setEscapeProcessing(value: Boolean): Self = StObject.set(x, "EscapeProcessing", value.asInstanceOf[js.Any])
   }
 }

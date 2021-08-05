@@ -45,8 +45,7 @@ trait IUtilArc extends StObject {
 }
 object IUtilArc {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     drawArc: (CanvasRenderingContext2D, Double, Double, js.Array[Double]) => Unit,
     getBoundsOfArc: (Double, Double, Double, Double, Double, Double, Double, Double, Double) => js.Array[Point],
     getBoundsOfCurve: (Double, Double, Double, Double, Double, Double, Double, Double) => js.Array[Point]
@@ -55,16 +54,12 @@ object IUtilArc {
     __obj.asInstanceOf[IUtilArc]
   }
   
-  @scala.inline
-  implicit class IUtilArcMutableBuilder[Self <: IUtilArc] (val x: Self) extends AnyVal {
+  extension [Self <: IUtilArc](x: Self) {
     
-    @scala.inline
-    def setDrawArc(value: (CanvasRenderingContext2D, Double, Double, js.Array[Double]) => Unit): Self = StObject.set(x, "drawArc", js.Any.fromFunction4(value))
+    inline def setDrawArc(value: (CanvasRenderingContext2D, Double, Double, js.Array[Double]) => Unit): Self = StObject.set(x, "drawArc", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetBoundsOfArc(value: (Double, Double, Double, Double, Double, Double, Double, Double, Double) => js.Array[Point]): Self = StObject.set(x, "getBoundsOfArc", js.Any.fromFunction9(value))
+    inline def setGetBoundsOfArc(value: (Double, Double, Double, Double, Double, Double, Double, Double, Double) => js.Array[Point]): Self = StObject.set(x, "getBoundsOfArc", js.Any.fromFunction9(value))
     
-    @scala.inline
-    def setGetBoundsOfCurve(value: (Double, Double, Double, Double, Double, Double, Double, Double) => js.Array[Point]): Self = StObject.set(x, "getBoundsOfCurve", js.Any.fromFunction8(value))
+    inline def setGetBoundsOfCurve(value: (Double, Double, Double, Double, Double, Double, Double, Double) => js.Array[Point]): Self = StObject.set(x, "getBoundsOfCurve", js.Any.fromFunction8(value))
   }
 }

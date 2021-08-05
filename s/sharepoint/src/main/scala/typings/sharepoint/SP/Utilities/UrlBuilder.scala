@@ -15,8 +15,7 @@ trait UrlBuilder extends StObject {
 }
 object UrlBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addKeyValueQueryString: (String, String) => Unit,
     combinePath: String => Unit,
     get_url: () => String
@@ -25,16 +24,12 @@ object UrlBuilder {
     __obj.asInstanceOf[UrlBuilder]
   }
   
-  @scala.inline
-  implicit class UrlBuilderMutableBuilder[Self <: UrlBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: UrlBuilder](x: Self) {
     
-    @scala.inline
-    def setAddKeyValueQueryString(value: (String, String) => Unit): Self = StObject.set(x, "addKeyValueQueryString", js.Any.fromFunction2(value))
+    inline def setAddKeyValueQueryString(value: (String, String) => Unit): Self = StObject.set(x, "addKeyValueQueryString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCombinePath(value: String => Unit): Self = StObject.set(x, "combinePath", js.Any.fromFunction1(value))
+    inline def setCombinePath(value: String => Unit): Self = StObject.set(x, "combinePath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
+    inline def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
   }
 }

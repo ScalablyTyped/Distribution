@@ -16,8 +16,7 @@ trait TabSwitchEvent
 }
 object TabSwitchEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEventName: () => TableauEventName,
     getNewSheetName: () => String,
     getOldSheetName: () => String,
@@ -27,13 +26,10 @@ object TabSwitchEvent {
     __obj.asInstanceOf[TabSwitchEvent]
   }
   
-  @scala.inline
-  implicit class TabSwitchEventMutableBuilder[Self <: TabSwitchEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TabSwitchEvent](x: Self) {
     
-    @scala.inline
-    def setGetNewSheetName(value: () => String): Self = StObject.set(x, "getNewSheetName", js.Any.fromFunction0(value))
+    inline def setGetNewSheetName(value: () => String): Self = StObject.set(x, "getNewSheetName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOldSheetName(value: () => String): Self = StObject.set(x, "getOldSheetName", js.Any.fromFunction0(value))
+    inline def setGetOldSheetName(value: () => String): Self = StObject.set(x, "getOldSheetName", js.Any.fromFunction0(value))
   }
 }

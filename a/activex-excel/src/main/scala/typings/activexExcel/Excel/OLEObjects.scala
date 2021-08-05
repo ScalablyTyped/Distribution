@@ -469,7 +469,7 @@ trait OLEObjects extends StObject {
   
   var Enabled: Boolean = js.native
   
-  @JSName("Excel.OLEObjects_typekey")
+  /* private */ @JSName("Excel.OLEObjects_typekey")
   var ExcelDotOLEObjects_typekey: OLEObjects = js.native
   
   def Group(): GroupObject = js.native

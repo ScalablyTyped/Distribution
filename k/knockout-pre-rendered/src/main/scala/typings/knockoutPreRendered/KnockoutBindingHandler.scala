@@ -42,43 +42,33 @@ trait KnockoutBindingHandler extends StObject {
 }
 object KnockoutBindingHandler {
   
-  @scala.inline
-  def apply(): KnockoutBindingHandler = {
+  inline def apply(): KnockoutBindingHandler = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KnockoutBindingHandler]
   }
   
-  @scala.inline
-  implicit class KnockoutBindingHandlerMutableBuilder[Self <: KnockoutBindingHandler] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutBindingHandler](x: Self) {
     
-    @scala.inline
-    def setInit(
+    inline def setInit(
       value: (/* element */ js.Any, /* valueAccessor */ js.Function0[js.Any], /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], /* viewModel */ js.UndefOr[js.Any], /* bindingContext */ js.UndefOr[KnockoutBindingContext]) => Unit | ControlsDescendantBindings
     ): Self = StObject.set(x, "init", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPreprocess(
+    inline def setPreprocess(
       value: (/* value */ String, /* name */ String, /* addBindingCallback */ js.UndefOr[js.Function2[/* name */ String, /* value */ String, Unit]]) => String
     ): Self = StObject.set(x, "preprocess", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
+    inline def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
     
-    @scala.inline
-    def setUpdate(
+    inline def setUpdate(
       value: (/* element */ js.Any, /* valueAccessor */ js.Function0[js.Any], /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], /* viewModel */ js.UndefOr[js.Any], /* bindingContext */ js.UndefOr[KnockoutBindingContext]) => Unit
     ): Self = StObject.set(x, "update", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

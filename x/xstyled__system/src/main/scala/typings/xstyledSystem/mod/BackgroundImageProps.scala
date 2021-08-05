@@ -14,27 +14,22 @@ trait BackgroundImageProps extends StObject {
 }
 object BackgroundImageProps {
   
-  @scala.inline
-  def apply(): BackgroundImageProps = {
+  inline def apply(): BackgroundImageProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundImageProps]
   }
   
-  @scala.inline
-  implicit class BackgroundImagePropsMutableBuilder[Self <: BackgroundImageProps] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundImageProps](x: Self) {
     
-    @scala.inline
-    def setBackgroundImage(
+    inline def setBackgroundImage(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ js.Any
         ]
     ): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
+    inline def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
     
-    @scala.inline
-    def setBackgroundImageVarargs(
+    inline def setBackgroundImageVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ js.Any)*
     ): Self = StObject.set(x, "backgroundImage", js.Array(value :_*))
   }

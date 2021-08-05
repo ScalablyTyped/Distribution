@@ -13,16 +13,13 @@ trait InvocationListener extends StObject {
 }
 object InvocationListener {
   
-  @scala.inline
-  def apply(detach: () => Unit): InvocationListener = {
+  inline def apply(detach: () => Unit): InvocationListener = {
     val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach))
     __obj.asInstanceOf[InvocationListener]
   }
   
-  @scala.inline
-  implicit class InvocationListenerMutableBuilder[Self <: InvocationListener] (val x: Self) extends AnyVal {
+  extension [Self <: InvocationListener](x: Self) {
     
-    @scala.inline
-    def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
+    inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
   }
 }

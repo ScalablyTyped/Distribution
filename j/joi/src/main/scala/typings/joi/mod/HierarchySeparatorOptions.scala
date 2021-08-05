@@ -16,19 +16,15 @@ trait HierarchySeparatorOptions extends StObject {
 }
 object HierarchySeparatorOptions {
   
-  @scala.inline
-  def apply(): HierarchySeparatorOptions = {
+  inline def apply(): HierarchySeparatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HierarchySeparatorOptions]
   }
   
-  @scala.inline
-  implicit class HierarchySeparatorOptionsMutableBuilder[Self <: HierarchySeparatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HierarchySeparatorOptions](x: Self) {
     
-    @scala.inline
-    def setSeparator(value: String | `false`): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String | `false`): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }
 }

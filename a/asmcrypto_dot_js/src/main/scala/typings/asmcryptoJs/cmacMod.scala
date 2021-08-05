@@ -12,15 +12,15 @@ object cmacMod {
   class AES_CMAC protected () extends StObject {
     def this(key: Uint8Array) = this()
     
-    val buffer: js.Any = js.native
+    /* private */ val buffer: js.Any = js.native
     
-    var bufferLength: js.Any = js.native
+    /* private */ var bufferLength: js.Any = js.native
     
-    val cbc: js.Any = js.native
+    /* private */ val cbc: js.Any = js.native
     
     def finish(): this.type = js.native
     
-    val k: js.Any = js.native
+    /* private */ val k: js.Any = js.native
     
     def process(data: Uint8Array): this.type = js.native
     
@@ -33,7 +33,6 @@ object cmacMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def bytes(data: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("bytes")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def bytes(data: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("bytes")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   }
 }

@@ -14,19 +14,15 @@ trait GetNodeStackTracesResponse extends StObject {
 }
 object GetNodeStackTracesResponse {
   
-  @scala.inline
-  def apply(): GetNodeStackTracesResponse = {
+  inline def apply(): GetNodeStackTracesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetNodeStackTracesResponse]
   }
   
-  @scala.inline
-  implicit class GetNodeStackTracesResponseMutableBuilder[Self <: GetNodeStackTracesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetNodeStackTracesResponse](x: Self) {
     
-    @scala.inline
-    def setCreation(value: StackTrace): Self = StObject.set(x, "creation", value.asInstanceOf[js.Any])
+    inline def setCreation(value: StackTrace): Self = StObject.set(x, "creation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationUndefined: Self = StObject.set(x, "creation", js.undefined)
+    inline def setCreationUndefined: Self = StObject.set(x, "creation", js.undefined)
   }
 }

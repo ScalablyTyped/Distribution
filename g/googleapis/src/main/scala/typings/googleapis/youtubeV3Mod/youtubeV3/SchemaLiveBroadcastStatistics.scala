@@ -34,25 +34,19 @@ trait SchemaLiveBroadcastStatistics extends StObject {
 }
 object SchemaLiveBroadcastStatistics {
   
-  @scala.inline
-  def apply(): SchemaLiveBroadcastStatistics = {
+  inline def apply(): SchemaLiveBroadcastStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiveBroadcastStatistics]
   }
   
-  @scala.inline
-  implicit class SchemaLiveBroadcastStatisticsMutableBuilder[Self <: SchemaLiveBroadcastStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiveBroadcastStatistics](x: Self) {
     
-    @scala.inline
-    def setConcurrentViewers(value: String): Self = StObject.set(x, "concurrentViewers", value.asInstanceOf[js.Any])
+    inline def setConcurrentViewers(value: String): Self = StObject.set(x, "concurrentViewers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcurrentViewersUndefined: Self = StObject.set(x, "concurrentViewers", js.undefined)
+    inline def setConcurrentViewersUndefined: Self = StObject.set(x, "concurrentViewers", js.undefined)
     
-    @scala.inline
-    def setTotalChatCount(value: String): Self = StObject.set(x, "totalChatCount", value.asInstanceOf[js.Any])
+    inline def setTotalChatCount(value: String): Self = StObject.set(x, "totalChatCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalChatCountUndefined: Self = StObject.set(x, "totalChatCount", js.undefined)
+    inline def setTotalChatCountUndefined: Self = StObject.set(x, "totalChatCount", js.undefined)
   }
 }

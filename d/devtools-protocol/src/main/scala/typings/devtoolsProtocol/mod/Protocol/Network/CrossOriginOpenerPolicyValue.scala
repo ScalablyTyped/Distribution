@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CrossOriginOpenerPolicyValue extends StObject
 object CrossOriginOpenerPolicyValue {
   
-  @scala.inline
-  def SameOrigin: typings.devtoolsProtocol.devtoolsProtocolStrings.SameOrigin = "SameOrigin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameOrigin]
+  inline def SameOrigin: typings.devtoolsProtocol.devtoolsProtocolStrings.SameOrigin = "SameOrigin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameOrigin]
   
-  @scala.inline
-  def SameOriginAllowPopups: typings.devtoolsProtocol.devtoolsProtocolStrings.SameOriginAllowPopups = "SameOriginAllowPopups".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameOriginAllowPopups]
+  inline def SameOriginAllowPopups: typings.devtoolsProtocol.devtoolsProtocolStrings.SameOriginAllowPopups = "SameOriginAllowPopups".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameOriginAllowPopups]
   
-  @scala.inline
-  def SameOriginPlusCoep: typings.devtoolsProtocol.devtoolsProtocolStrings.SameOriginPlusCoep = "SameOriginPlusCoep".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameOriginPlusCoep]
+  inline def SameOriginPlusCoep: typings.devtoolsProtocol.devtoolsProtocolStrings.SameOriginPlusCoep = "SameOriginPlusCoep".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameOriginPlusCoep]
   
-  @scala.inline
-  def UnsafeNone: typings.devtoolsProtocol.devtoolsProtocolStrings.UnsafeNone = "UnsafeNone".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.UnsafeNone]
+  inline def UnsafeNone: typings.devtoolsProtocol.devtoolsProtocolStrings.UnsafeNone = "UnsafeNone".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.UnsafeNone]
 }

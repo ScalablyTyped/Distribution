@@ -32,8 +32,7 @@ trait XControlContainer
 }
 object XControlContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Controls: SafeArray[XControl],
     acquire: () => Unit,
     addControl: (String, XControl) => Unit,
@@ -48,25 +47,18 @@ object XControlContainer {
     __obj.asInstanceOf[XControlContainer]
   }
   
-  @scala.inline
-  implicit class XControlContainerMutableBuilder[Self <: XControlContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XControlContainer](x: Self) {
     
-    @scala.inline
-    def setAddControl(value: (String, XControl) => Unit): Self = StObject.set(x, "addControl", js.Any.fromFunction2(value))
+    inline def setAddControl(value: (String, XControl) => Unit): Self = StObject.set(x, "addControl", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setControls(value: SafeArray[XControl]): Self = StObject.set(x, "Controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: SafeArray[XControl]): Self = StObject.set(x, "Controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetControl(value: String => XControl): Self = StObject.set(x, "getControl", js.Any.fromFunction1(value))
+    inline def setGetControl(value: String => XControl): Self = StObject.set(x, "getControl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetControls(value: () => SafeArray[XControl]): Self = StObject.set(x, "getControls", js.Any.fromFunction0(value))
+    inline def setGetControls(value: () => SafeArray[XControl]): Self = StObject.set(x, "getControls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveControl(value: XControl => Unit): Self = StObject.set(x, "removeControl", js.Any.fromFunction1(value))
+    inline def setRemoveControl(value: XControl => Unit): Self = StObject.set(x, "removeControl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStatusText(value: String => Unit): Self = StObject.set(x, "setStatusText", js.Any.fromFunction1(value))
+    inline def setSetStatusText(value: String => Unit): Self = StObject.set(x, "setStatusText", js.Any.fromFunction1(value))
   }
 }

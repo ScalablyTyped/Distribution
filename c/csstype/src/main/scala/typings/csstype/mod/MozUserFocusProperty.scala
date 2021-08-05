@@ -22,42 +22,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MozUserFocusProperty extends StObject
 object MozUserFocusProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   
-  @scala.inline
-  def ignore: typings.csstype.csstypeStrings.ignore = "ignore".asInstanceOf[typings.csstype.csstypeStrings.ignore]
+  inline def ignore: typings.csstype.csstypeStrings.ignore = "ignore".asInstanceOf[typings.csstype.csstypeStrings.ignore]
   
-  @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   
-  @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   
-  @scala.inline
-  def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
+  inline def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
   
-  @scala.inline
-  def normal: typings.csstype.csstypeStrings.normal = "normal".asInstanceOf[typings.csstype.csstypeStrings.normal]
+  inline def normal: typings.csstype.csstypeStrings.normal = "normal".asInstanceOf[typings.csstype.csstypeStrings.normal]
   
-  @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   
-  @scala.inline
-  def `select-after`: typings.csstype.csstypeStrings.`select-after` = "select-after".asInstanceOf[typings.csstype.csstypeStrings.`select-after`]
+  inline def `select-after`: typings.csstype.csstypeStrings.`select-after` = "select-after".asInstanceOf[typings.csstype.csstypeStrings.`select-after`]
   
-  @scala.inline
-  def `select-all`: typings.csstype.csstypeStrings.`select-all` = "select-all".asInstanceOf[typings.csstype.csstypeStrings.`select-all`]
+  inline def `select-all`: typings.csstype.csstypeStrings.`select-all` = "select-all".asInstanceOf[typings.csstype.csstypeStrings.`select-all`]
   
-  @scala.inline
-  def `select-before`: typings.csstype.csstypeStrings.`select-before` = "select-before".asInstanceOf[typings.csstype.csstypeStrings.`select-before`]
+  inline def `select-before`: typings.csstype.csstypeStrings.`select-before` = "select-before".asInstanceOf[typings.csstype.csstypeStrings.`select-before`]
   
-  @scala.inline
-  def `select-menu`: typings.csstype.csstypeStrings.`select-menu` = "select-menu".asInstanceOf[typings.csstype.csstypeStrings.`select-menu`]
+  inline def `select-menu`: typings.csstype.csstypeStrings.`select-menu` = "select-menu".asInstanceOf[typings.csstype.csstypeStrings.`select-menu`]
   
-  @scala.inline
-  def `select-same`: typings.csstype.csstypeStrings.`select-same` = "select-same".asInstanceOf[typings.csstype.csstypeStrings.`select-same`]
+  inline def `select-same`: typings.csstype.csstypeStrings.`select-same` = "select-same".asInstanceOf[typings.csstype.csstypeStrings.`select-same`]
   
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }

@@ -13,19 +13,15 @@ trait AutomatedEncodingSettings extends StObject {
 }
 object AutomatedEncodingSettings {
   
-  @scala.inline
-  def apply(): AutomatedEncodingSettings = {
+  inline def apply(): AutomatedEncodingSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutomatedEncodingSettings]
   }
   
-  @scala.inline
-  implicit class AutomatedEncodingSettingsMutableBuilder[Self <: AutomatedEncodingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AutomatedEncodingSettings](x: Self) {
     
-    @scala.inline
-    def setAbrSettings(value: AutomatedAbrSettings): Self = StObject.set(x, "AbrSettings", value.asInstanceOf[js.Any])
+    inline def setAbrSettings(value: AutomatedAbrSettings): Self = StObject.set(x, "AbrSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbrSettingsUndefined: Self = StObject.set(x, "AbrSettings", js.undefined)
+    inline def setAbrSettingsUndefined: Self = StObject.set(x, "AbrSettings", js.undefined)
   }
 }

@@ -14,17 +14,14 @@ trait `2`
 }
 object `2` {
   
-  @scala.inline
-  def apply(ExclamationmarkEqualssignEqualssign: js.Tuple2[js.Any, js.Any]): `2` = {
+  inline def apply(ExclamationmarkEqualssignEqualssign: js.Tuple2[js.Any, js.Any]): `2` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("!==")(ExclamationmarkEqualssignEqualssign.asInstanceOf[js.Any])
     __obj.asInstanceOf[`2`]
   }
   
-  @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+  extension [Self <: `2`](x: Self) {
     
-    @scala.inline
-    def setExclamationmarkEqualssignEqualssign(value: js.Tuple2[js.Any, js.Any]): Self = StObject.set(x, "!==", value.asInstanceOf[js.Any])
+    inline def setExclamationmarkEqualssignEqualssign(value: js.Tuple2[js.Any, js.Any]): Self = StObject.set(x, "!==", value.asInstanceOf[js.Any])
   }
 }

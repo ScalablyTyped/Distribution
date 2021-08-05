@@ -33,43 +33,31 @@ trait VastRequestOptions extends StObject {
 }
 object VastRequestOptions {
   
-  @scala.inline
-  def apply(): VastRequestOptions = {
+  inline def apply(): VastRequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VastRequestOptions]
   }
   
-  @scala.inline
-  implicit class VastRequestOptionsMutableBuilder[Self <: VastRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VastRequestOptions](x: Self) {
     
-    @scala.inline
-    def setResolveAll(value: Boolean): Self = StObject.set(x, "resolveAll", value.asInstanceOf[js.Any])
+    inline def setResolveAll(value: Boolean): Self = StObject.set(x, "resolveAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveAllUndefined: Self = StObject.set(x, "resolveAll", js.undefined)
+    inline def setResolveAllUndefined: Self = StObject.set(x, "resolveAll", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUrlHandler(value: VASTClientUrlHandler): Self = StObject.set(x, "urlHandler", value.asInstanceOf[js.Any])
+    inline def setUrlHandler(value: VASTClientUrlHandler): Self = StObject.set(x, "urlHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlHandlerUndefined: Self = StObject.set(x, "urlHandler", js.undefined)
+    inline def setUrlHandlerUndefined: Self = StObject.set(x, "urlHandler", js.undefined)
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     
-    @scala.inline
-    def setWrapperLimit(value: Double): Self = StObject.set(x, "wrapperLimit", value.asInstanceOf[js.Any])
+    inline def setWrapperLimit(value: Double): Self = StObject.set(x, "wrapperLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperLimitUndefined: Self = StObject.set(x, "wrapperLimit", js.undefined)
+    inline def setWrapperLimitUndefined: Self = StObject.set(x, "wrapperLimit", js.undefined)
   }
 }

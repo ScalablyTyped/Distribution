@@ -82,17 +82,14 @@ object sidebarMod {
   }
   object SidebarWorker {
     
-    @scala.inline
-    def apply(port: Port): SidebarWorker = {
+    inline def apply(port: Port): SidebarWorker = {
       val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[SidebarWorker]
     }
     
-    @scala.inline
-    implicit class SidebarWorkerMutableBuilder[Self <: SidebarWorker] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarWorker](x: Self) {
       
-      @scala.inline
-      def setPort(value: Port): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Port): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
 }

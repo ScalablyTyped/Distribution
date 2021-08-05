@@ -42,32 +42,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAdditionalHashContent(value: /* chunk */ js.Any => String): Self = StObject.set(x, "additionalHashContent", js.Any.fromFunction1(value))
+      inline def setAdditionalHashContent(value: /* chunk */ js.Any => String): Self = StObject.set(x, "additionalHashContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAdditionalHashContentUndefined: Self = StObject.set(x, "additionalHashContent", js.undefined)
+      inline def setAdditionalHashContentUndefined: Self = StObject.set(x, "additionalHashContent", js.undefined)
       
-      @scala.inline
-      def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
-      @scala.inline
-      def setDigest(value: hex | latin1 | base64): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+      inline def setDigest(value: hex | latin1 | base64): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+      inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     }
   }
   

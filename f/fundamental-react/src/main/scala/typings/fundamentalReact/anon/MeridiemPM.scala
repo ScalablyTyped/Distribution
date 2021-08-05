@@ -12,19 +12,15 @@ trait MeridiemPM extends StObject {
 }
 object MeridiemPM {
   
-  @scala.inline
-  def apply(meridiemAM: String, meridiemPM: String): MeridiemPM = {
+  inline def apply(meridiemAM: String, meridiemPM: String): MeridiemPM = {
     val __obj = js.Dynamic.literal(meridiemAM = meridiemAM.asInstanceOf[js.Any], meridiemPM = meridiemPM.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeridiemPM]
   }
   
-  @scala.inline
-  implicit class MeridiemPMMutableBuilder[Self <: MeridiemPM] (val x: Self) extends AnyVal {
+  extension [Self <: MeridiemPM](x: Self) {
     
-    @scala.inline
-    def setMeridiemAM(value: String): Self = StObject.set(x, "meridiemAM", value.asInstanceOf[js.Any])
+    inline def setMeridiemAM(value: String): Self = StObject.set(x, "meridiemAM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeridiemPM(value: String): Self = StObject.set(x, "meridiemPM", value.asInstanceOf[js.Any])
+    inline def setMeridiemPM(value: String): Self = StObject.set(x, "meridiemPM", value.asInstanceOf[js.Any])
   }
 }

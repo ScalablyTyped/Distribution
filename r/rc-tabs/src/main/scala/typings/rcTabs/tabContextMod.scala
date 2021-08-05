@@ -21,23 +21,18 @@ object tabContextMod extends Shortcut {
   }
   object TabContextProps {
     
-    @scala.inline
-    def apply(prefixCls: String, tabs: js.Array[Tab]): TabContextProps = {
+    inline def apply(prefixCls: String, tabs: js.Array[Tab]): TabContextProps = {
       val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabContextProps]
     }
     
-    @scala.inline
-    implicit class TabContextPropsMutableBuilder[Self <: TabContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabContextProps](x: Self) {
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     }
   }
   

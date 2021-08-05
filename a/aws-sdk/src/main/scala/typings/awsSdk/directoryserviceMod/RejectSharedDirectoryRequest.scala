@@ -13,16 +13,13 @@ trait RejectSharedDirectoryRequest extends StObject {
 }
 object RejectSharedDirectoryRequest {
   
-  @scala.inline
-  def apply(SharedDirectoryId: DirectoryId): RejectSharedDirectoryRequest = {
+  inline def apply(SharedDirectoryId: DirectoryId): RejectSharedDirectoryRequest = {
     val __obj = js.Dynamic.literal(SharedDirectoryId = SharedDirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RejectSharedDirectoryRequest]
   }
   
-  @scala.inline
-  implicit class RejectSharedDirectoryRequestMutableBuilder[Self <: RejectSharedDirectoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RejectSharedDirectoryRequest](x: Self) {
     
-    @scala.inline
-    def setSharedDirectoryId(value: DirectoryId): Self = StObject.set(x, "SharedDirectoryId", value.asInstanceOf[js.Any])
+    inline def setSharedDirectoryId(value: DirectoryId): Self = StObject.set(x, "SharedDirectoryId", value.asInstanceOf[js.Any])
   }
 }

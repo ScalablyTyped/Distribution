@@ -19,16 +19,12 @@ object SearchAlgorithms2 {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ABSOLUTE: `1` = 1.asInstanceOf[`1`]
+    inline def ABSOLUTE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def APPROXIMATE: `3` = 3.asInstanceOf[`3`]
+    inline def APPROXIMATE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def REGEXP: `2` = 2.asInstanceOf[`2`]
+    inline def REGEXP: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def WILDCARD: `4` = 4.asInstanceOf[`4`]
+    inline def WILDCARD: `4` = 4.asInstanceOf[`4`]
   }
 }

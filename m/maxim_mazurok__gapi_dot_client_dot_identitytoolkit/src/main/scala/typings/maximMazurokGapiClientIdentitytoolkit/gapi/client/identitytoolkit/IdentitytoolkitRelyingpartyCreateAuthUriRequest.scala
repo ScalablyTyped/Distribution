@@ -64,113 +64,79 @@ trait IdentitytoolkitRelyingpartyCreateAuthUriRequest extends StObject {
 }
 object IdentitytoolkitRelyingpartyCreateAuthUriRequest {
   
-  @scala.inline
-  def apply(): IdentitytoolkitRelyingpartyCreateAuthUriRequest = {
+  inline def apply(): IdentitytoolkitRelyingpartyCreateAuthUriRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyCreateAuthUriRequest]
   }
   
-  @scala.inline
-  implicit class IdentitytoolkitRelyingpartyCreateAuthUriRequestMutableBuilder[Self <: IdentitytoolkitRelyingpartyCreateAuthUriRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IdentitytoolkitRelyingpartyCreateAuthUriRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    @scala.inline
-    def setAuthFlowType(value: String): Self = StObject.set(x, "authFlowType", value.asInstanceOf[js.Any])
+    inline def setAuthFlowType(value: String): Self = StObject.set(x, "authFlowType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthFlowTypeUndefined: Self = StObject.set(x, "authFlowType", js.undefined)
+    inline def setAuthFlowTypeUndefined: Self = StObject.set(x, "authFlowType", js.undefined)
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setContinueUri(value: String): Self = StObject.set(x, "continueUri", value.asInstanceOf[js.Any])
+    inline def setContinueUri(value: String): Self = StObject.set(x, "continueUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueUriUndefined: Self = StObject.set(x, "continueUri", js.undefined)
+    inline def setContinueUriUndefined: Self = StObject.set(x, "continueUri", js.undefined)
     
-    @scala.inline
-    def setCustomParameter(
+    inline def setCustomParameter(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientIdentitytoolkit.maximMazurokGapiClientIdentitytoolkitStrings.IdentitytoolkitRelyingpartyCreateAuthUriRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "customParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomParameterUndefined: Self = StObject.set(x, "customParameter", js.undefined)
+    inline def setCustomParameterUndefined: Self = StObject.set(x, "customParameter", js.undefined)
     
-    @scala.inline
-    def setHostedDomain(value: String): Self = StObject.set(x, "hostedDomain", value.asInstanceOf[js.Any])
+    inline def setHostedDomain(value: String): Self = StObject.set(x, "hostedDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedDomainUndefined: Self = StObject.set(x, "hostedDomain", js.undefined)
+    inline def setHostedDomainUndefined: Self = StObject.set(x, "hostedDomain", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setOauthConsumerKey(value: String): Self = StObject.set(x, "oauthConsumerKey", value.asInstanceOf[js.Any])
+    inline def setOauthConsumerKey(value: String): Self = StObject.set(x, "oauthConsumerKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauthConsumerKeyUndefined: Self = StObject.set(x, "oauthConsumerKey", js.undefined)
+    inline def setOauthConsumerKeyUndefined: Self = StObject.set(x, "oauthConsumerKey", js.undefined)
     
-    @scala.inline
-    def setOauthScope(value: String): Self = StObject.set(x, "oauthScope", value.asInstanceOf[js.Any])
+    inline def setOauthScope(value: String): Self = StObject.set(x, "oauthScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauthScopeUndefined: Self = StObject.set(x, "oauthScope", js.undefined)
+    inline def setOauthScopeUndefined: Self = StObject.set(x, "oauthScope", js.undefined)
     
-    @scala.inline
-    def setOpenidRealm(value: String): Self = StObject.set(x, "openidRealm", value.asInstanceOf[js.Any])
+    inline def setOpenidRealm(value: String): Self = StObject.set(x, "openidRealm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenidRealmUndefined: Self = StObject.set(x, "openidRealm", js.undefined)
+    inline def setOpenidRealmUndefined: Self = StObject.set(x, "openidRealm", js.undefined)
     
-    @scala.inline
-    def setOtaApp(value: String): Self = StObject.set(x, "otaApp", value.asInstanceOf[js.Any])
+    inline def setOtaApp(value: String): Self = StObject.set(x, "otaApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtaAppUndefined: Self = StObject.set(x, "otaApp", js.undefined)
+    inline def setOtaAppUndefined: Self = StObject.set(x, "otaApp", js.undefined)
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
+    inline def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
+    inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
-    @scala.inline
-    def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+    inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+    inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
     
-    @scala.inline
-    def setTenantProjectNumber(value: String): Self = StObject.set(x, "tenantProjectNumber", value.asInstanceOf[js.Any])
+    inline def setTenantProjectNumber(value: String): Self = StObject.set(x, "tenantProjectNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantProjectNumberUndefined: Self = StObject.set(x, "tenantProjectNumber", js.undefined)
+    inline def setTenantProjectNumberUndefined: Self = StObject.set(x, "tenantProjectNumber", js.undefined)
   }
 }

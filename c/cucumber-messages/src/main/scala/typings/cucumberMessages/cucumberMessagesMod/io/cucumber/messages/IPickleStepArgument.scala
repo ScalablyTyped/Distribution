@@ -17,31 +17,23 @@ trait IPickleStepArgument extends StObject {
 }
 object IPickleStepArgument {
   
-  @scala.inline
-  def apply(): IPickleStepArgument = {
+  inline def apply(): IPickleStepArgument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPickleStepArgument]
   }
   
-  @scala.inline
-  implicit class IPickleStepArgumentMutableBuilder[Self <: IPickleStepArgument] (val x: Self) extends AnyVal {
+  extension [Self <: IPickleStepArgument](x: Self) {
     
-    @scala.inline
-    def setDataTable(value: IPickleTable): Self = StObject.set(x, "dataTable", value.asInstanceOf[js.Any])
+    inline def setDataTable(value: IPickleTable): Self = StObject.set(x, "dataTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTableNull: Self = StObject.set(x, "dataTable", null)
+    inline def setDataTableNull: Self = StObject.set(x, "dataTable", null)
     
-    @scala.inline
-    def setDataTableUndefined: Self = StObject.set(x, "dataTable", js.undefined)
+    inline def setDataTableUndefined: Self = StObject.set(x, "dataTable", js.undefined)
     
-    @scala.inline
-    def setDocString(value: IPickleDocString): Self = StObject.set(x, "docString", value.asInstanceOf[js.Any])
+    inline def setDocString(value: IPickleDocString): Self = StObject.set(x, "docString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocStringNull: Self = StObject.set(x, "docString", null)
+    inline def setDocStringNull: Self = StObject.set(x, "docString", null)
     
-    @scala.inline
-    def setDocStringUndefined: Self = StObject.set(x, "docString", js.undefined)
+    inline def setDocStringUndefined: Self = StObject.set(x, "docString", js.undefined)
   }
 }

@@ -276,65 +276,49 @@ object mod {
     /**
       * Returns a buffer from a file.
       */
-    @scala.inline
-    def fileToBuffer(file: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fileToBuffer")(file.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-    @scala.inline
-    def fileToBuffer(file: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fileToBuffer")(file.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def fileToBuffer(file: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fileToBuffer")(file.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def fileToBuffer(file: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fileToBuffer")(file.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Creates fdf file from JSON input.
       */
-    @scala.inline
-    def generateFdfFromJSON(data: js.Object): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generateFdfFromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def generateFdfFromJSON(data: js.Object): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generateFdfFromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Creates pdf info text file from JSON input.
       */
-    @scala.inline
-    def generateInfoFromJSON(data: js.Object): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generateInfoFromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def generateInfoFromJSON(data: js.Object): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generateInfoFromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Simple object check. Arrays not included.
       */
-    @scala.inline
-    def isObject(item: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isObject(item: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Simple string check.
       */
-    @scala.inline
-    def isString(item: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isString(item: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Sanitizes fdf input
       */
-    @scala.inline
-    def sanitizeForFdf(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeForFdf")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def sanitizeForFdf(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeForFdf")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Returns a buffer from a string.
       */
-    @scala.inline
-    def stringToBuffer(file: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBuffer")(file.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-    @scala.inline
-    def stringToBuffer(file: String, encoding: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToBuffer")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-    @scala.inline
-    def stringToBuffer(file: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBuffer")(file.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-    @scala.inline
-    def stringToBuffer(file: Buffer, encoding: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToBuffer")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    inline def stringToBuffer(file: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBuffer")(file.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def stringToBuffer(file: String, encoding: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToBuffer")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    inline def stringToBuffer(file: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBuffer")(file.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def stringToBuffer(file: Buffer, encoding: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToBuffer")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   }
   
-  @scala.inline
-  def configure(opts: ConfigureOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configure(opts: ConfigureOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def input(file: String): PDFTK = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(file.asInstanceOf[js.Any]).asInstanceOf[PDFTK]
-  @scala.inline
-  def input(file: js.Array[Buffer]): PDFTK = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(file.asInstanceOf[js.Any]).asInstanceOf[PDFTK]
-  @scala.inline
-  def input(file: Buffer): PDFTK = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(file.asInstanceOf[js.Any]).asInstanceOf[PDFTK]
-  @scala.inline
-  def input(file: PartialRecordLetterstring): PDFTK = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(file.asInstanceOf[js.Any]).asInstanceOf[PDFTK]
+  inline def input(file: String): PDFTK = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(file.asInstanceOf[js.Any]).asInstanceOf[PDFTK]
+  inline def input(file: js.Array[Buffer]): PDFTK = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(file.asInstanceOf[js.Any]).asInstanceOf[PDFTK]
+  inline def input(file: Buffer): PDFTK = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(file.asInstanceOf[js.Any]).asInstanceOf[PDFTK]
+  inline def input(file: PartialRecordLetterstring): PDFTK = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(file.asInstanceOf[js.Any]).asInstanceOf[PDFTK]
   
   trait ConfigureOptions extends StObject {
     
@@ -348,26 +332,20 @@ object mod {
   }
   object ConfigureOptions {
     
-    @scala.inline
-    def apply(Promise: PromiseConstructor, bin: String, tempDir: String): ConfigureOptions = {
+    inline def apply(Promise: PromiseConstructor, bin: String, tempDir: String): ConfigureOptions = {
       val __obj = js.Dynamic.literal(Promise = Promise.asInstanceOf[js.Any], bin = bin.asInstanceOf[js.Any], ignoreWarnings = true, tempDir = tempDir.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigureOptions]
     }
     
-    @scala.inline
-    implicit class ConfigureOptionsMutableBuilder[Self <: ConfigureOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigureOptions](x: Self) {
       
-      @scala.inline
-      def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
+      inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreWarnings(value: `true`): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
+      inline def setIgnoreWarnings(value: `true`): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTempDir(value: String): Self = StObject.set(x, "tempDir", value.asInstanceOf[js.Any])
+      inline def setTempDir(value: String): Self = StObject.set(x, "tempDir", value.asInstanceOf[js.Any])
     }
   }
   
@@ -402,83 +380,57 @@ object mod {
   trait Letter extends StObject
   object Letter {
     
-    @scala.inline
-    def A: typings.nodePdftk.nodePdftkStrings.A = "A".asInstanceOf[typings.nodePdftk.nodePdftkStrings.A]
+    inline def A: typings.nodePdftk.nodePdftkStrings.A = "A".asInstanceOf[typings.nodePdftk.nodePdftkStrings.A]
     
-    @scala.inline
-    def B: typings.nodePdftk.nodePdftkStrings.B = "B".asInstanceOf[typings.nodePdftk.nodePdftkStrings.B]
+    inline def B: typings.nodePdftk.nodePdftkStrings.B = "B".asInstanceOf[typings.nodePdftk.nodePdftkStrings.B]
     
-    @scala.inline
-    def C: typings.nodePdftk.nodePdftkStrings.C = "C".asInstanceOf[typings.nodePdftk.nodePdftkStrings.C]
+    inline def C: typings.nodePdftk.nodePdftkStrings.C = "C".asInstanceOf[typings.nodePdftk.nodePdftkStrings.C]
     
-    @scala.inline
-    def D: typings.nodePdftk.nodePdftkStrings.D = "D".asInstanceOf[typings.nodePdftk.nodePdftkStrings.D]
+    inline def D: typings.nodePdftk.nodePdftkStrings.D = "D".asInstanceOf[typings.nodePdftk.nodePdftkStrings.D]
     
-    @scala.inline
-    def E: typings.nodePdftk.nodePdftkStrings.E = "E".asInstanceOf[typings.nodePdftk.nodePdftkStrings.E]
+    inline def E: typings.nodePdftk.nodePdftkStrings.E = "E".asInstanceOf[typings.nodePdftk.nodePdftkStrings.E]
     
-    @scala.inline
-    def F: typings.nodePdftk.nodePdftkStrings.F = "F".asInstanceOf[typings.nodePdftk.nodePdftkStrings.F]
+    inline def F: typings.nodePdftk.nodePdftkStrings.F = "F".asInstanceOf[typings.nodePdftk.nodePdftkStrings.F]
     
-    @scala.inline
-    def G: typings.nodePdftk.nodePdftkStrings.G = "G".asInstanceOf[typings.nodePdftk.nodePdftkStrings.G]
+    inline def G: typings.nodePdftk.nodePdftkStrings.G = "G".asInstanceOf[typings.nodePdftk.nodePdftkStrings.G]
     
-    @scala.inline
-    def H: typings.nodePdftk.nodePdftkStrings.H = "H".asInstanceOf[typings.nodePdftk.nodePdftkStrings.H]
+    inline def H: typings.nodePdftk.nodePdftkStrings.H = "H".asInstanceOf[typings.nodePdftk.nodePdftkStrings.H]
     
-    @scala.inline
-    def I: typings.nodePdftk.nodePdftkStrings.I = "I".asInstanceOf[typings.nodePdftk.nodePdftkStrings.I]
+    inline def I: typings.nodePdftk.nodePdftkStrings.I = "I".asInstanceOf[typings.nodePdftk.nodePdftkStrings.I]
     
-    @scala.inline
-    def J: typings.nodePdftk.nodePdftkStrings.J = "J".asInstanceOf[typings.nodePdftk.nodePdftkStrings.J]
+    inline def J: typings.nodePdftk.nodePdftkStrings.J = "J".asInstanceOf[typings.nodePdftk.nodePdftkStrings.J]
     
-    @scala.inline
-    def K: typings.nodePdftk.nodePdftkStrings.K = "K".asInstanceOf[typings.nodePdftk.nodePdftkStrings.K]
+    inline def K: typings.nodePdftk.nodePdftkStrings.K = "K".asInstanceOf[typings.nodePdftk.nodePdftkStrings.K]
     
-    @scala.inline
-    def L: typings.nodePdftk.nodePdftkStrings.L = "L".asInstanceOf[typings.nodePdftk.nodePdftkStrings.L]
+    inline def L: typings.nodePdftk.nodePdftkStrings.L = "L".asInstanceOf[typings.nodePdftk.nodePdftkStrings.L]
     
-    @scala.inline
-    def M: typings.nodePdftk.nodePdftkStrings.M = "M".asInstanceOf[typings.nodePdftk.nodePdftkStrings.M]
+    inline def M: typings.nodePdftk.nodePdftkStrings.M = "M".asInstanceOf[typings.nodePdftk.nodePdftkStrings.M]
     
-    @scala.inline
-    def N: typings.nodePdftk.nodePdftkStrings.N = "N".asInstanceOf[typings.nodePdftk.nodePdftkStrings.N]
+    inline def N: typings.nodePdftk.nodePdftkStrings.N = "N".asInstanceOf[typings.nodePdftk.nodePdftkStrings.N]
     
-    @scala.inline
-    def O: typings.nodePdftk.nodePdftkStrings.O = "O".asInstanceOf[typings.nodePdftk.nodePdftkStrings.O]
+    inline def O: typings.nodePdftk.nodePdftkStrings.O = "O".asInstanceOf[typings.nodePdftk.nodePdftkStrings.O]
     
-    @scala.inline
-    def P: typings.nodePdftk.nodePdftkStrings.P = "P".asInstanceOf[typings.nodePdftk.nodePdftkStrings.P]
+    inline def P: typings.nodePdftk.nodePdftkStrings.P = "P".asInstanceOf[typings.nodePdftk.nodePdftkStrings.P]
     
-    @scala.inline
-    def Q: typings.nodePdftk.nodePdftkStrings.Q = "Q".asInstanceOf[typings.nodePdftk.nodePdftkStrings.Q]
+    inline def Q: typings.nodePdftk.nodePdftkStrings.Q = "Q".asInstanceOf[typings.nodePdftk.nodePdftkStrings.Q]
     
-    @scala.inline
-    def R: typings.nodePdftk.nodePdftkStrings.R = "R".asInstanceOf[typings.nodePdftk.nodePdftkStrings.R]
+    inline def R: typings.nodePdftk.nodePdftkStrings.R = "R".asInstanceOf[typings.nodePdftk.nodePdftkStrings.R]
     
-    @scala.inline
-    def S: typings.nodePdftk.nodePdftkStrings.S = "S".asInstanceOf[typings.nodePdftk.nodePdftkStrings.S]
+    inline def S: typings.nodePdftk.nodePdftkStrings.S = "S".asInstanceOf[typings.nodePdftk.nodePdftkStrings.S]
     
-    @scala.inline
-    def T: typings.nodePdftk.nodePdftkStrings.T = "T".asInstanceOf[typings.nodePdftk.nodePdftkStrings.T]
+    inline def T: typings.nodePdftk.nodePdftkStrings.T = "T".asInstanceOf[typings.nodePdftk.nodePdftkStrings.T]
     
-    @scala.inline
-    def U: typings.nodePdftk.nodePdftkStrings.U = "U".asInstanceOf[typings.nodePdftk.nodePdftkStrings.U]
+    inline def U: typings.nodePdftk.nodePdftkStrings.U = "U".asInstanceOf[typings.nodePdftk.nodePdftkStrings.U]
     
-    @scala.inline
-    def V: typings.nodePdftk.nodePdftkStrings.V = "V".asInstanceOf[typings.nodePdftk.nodePdftkStrings.V]
+    inline def V: typings.nodePdftk.nodePdftkStrings.V = "V".asInstanceOf[typings.nodePdftk.nodePdftkStrings.V]
     
-    @scala.inline
-    def W: typings.nodePdftk.nodePdftkStrings.W = "W".asInstanceOf[typings.nodePdftk.nodePdftkStrings.W]
+    inline def W: typings.nodePdftk.nodePdftkStrings.W = "W".asInstanceOf[typings.nodePdftk.nodePdftkStrings.W]
     
-    @scala.inline
-    def X: typings.nodePdftk.nodePdftkStrings.X = "X".asInstanceOf[typings.nodePdftk.nodePdftkStrings.X]
+    inline def X: typings.nodePdftk.nodePdftkStrings.X = "X".asInstanceOf[typings.nodePdftk.nodePdftkStrings.X]
     
-    @scala.inline
-    def Y: typings.nodePdftk.nodePdftkStrings.Y = "Y".asInstanceOf[typings.nodePdftk.nodePdftkStrings.Y]
+    inline def Y: typings.nodePdftk.nodePdftkStrings.Y = "Y".asInstanceOf[typings.nodePdftk.nodePdftkStrings.Y]
     
-    @scala.inline
-    def Z: typings.nodePdftk.nodePdftkStrings.Z = "Z".asInstanceOf[typings.nodePdftk.nodePdftkStrings.Z]
+    inline def Z: typings.nodePdftk.nodePdftkStrings.Z = "Z".asInstanceOf[typings.nodePdftk.nodePdftkStrings.Z]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -495,31 +447,22 @@ object mod {
   trait Permission extends StObject
   object Permission {
     
-    @scala.inline
-    def AllFeatures: typings.nodePdftk.nodePdftkStrings.AllFeatures = "AllFeatures".asInstanceOf[typings.nodePdftk.nodePdftkStrings.AllFeatures]
+    inline def AllFeatures: typings.nodePdftk.nodePdftkStrings.AllFeatures = "AllFeatures".asInstanceOf[typings.nodePdftk.nodePdftkStrings.AllFeatures]
     
-    @scala.inline
-    def Assembly: typings.nodePdftk.nodePdftkStrings.Assembly = "Assembly".asInstanceOf[typings.nodePdftk.nodePdftkStrings.Assembly]
+    inline def Assembly: typings.nodePdftk.nodePdftkStrings.Assembly = "Assembly".asInstanceOf[typings.nodePdftk.nodePdftkStrings.Assembly]
     
-    @scala.inline
-    def CopyContents: typings.nodePdftk.nodePdftkStrings.CopyContents = "CopyContents".asInstanceOf[typings.nodePdftk.nodePdftkStrings.CopyContents]
+    inline def CopyContents: typings.nodePdftk.nodePdftkStrings.CopyContents = "CopyContents".asInstanceOf[typings.nodePdftk.nodePdftkStrings.CopyContents]
     
-    @scala.inline
-    def DegradedPrintin: typings.nodePdftk.nodePdftkStrings.DegradedPrintin = "DegradedPrintin".asInstanceOf[typings.nodePdftk.nodePdftkStrings.DegradedPrintin]
+    inline def DegradedPrintin: typings.nodePdftk.nodePdftkStrings.DegradedPrintin = "DegradedPrintin".asInstanceOf[typings.nodePdftk.nodePdftkStrings.DegradedPrintin]
     
-    @scala.inline
-    def FillIn: typings.nodePdftk.nodePdftkStrings.FillIn = "FillIn".asInstanceOf[typings.nodePdftk.nodePdftkStrings.FillIn]
+    inline def FillIn: typings.nodePdftk.nodePdftkStrings.FillIn = "FillIn".asInstanceOf[typings.nodePdftk.nodePdftkStrings.FillIn]
     
-    @scala.inline
-    def ModifyAnnotations: typings.nodePdftk.nodePdftkStrings.ModifyAnnotations = "ModifyAnnotations".asInstanceOf[typings.nodePdftk.nodePdftkStrings.ModifyAnnotations]
+    inline def ModifyAnnotations: typings.nodePdftk.nodePdftkStrings.ModifyAnnotations = "ModifyAnnotations".asInstanceOf[typings.nodePdftk.nodePdftkStrings.ModifyAnnotations]
     
-    @scala.inline
-    def ModifyContents: typings.nodePdftk.nodePdftkStrings.ModifyContents = "ModifyContents".asInstanceOf[typings.nodePdftk.nodePdftkStrings.ModifyContents]
+    inline def ModifyContents: typings.nodePdftk.nodePdftkStrings.ModifyContents = "ModifyContents".asInstanceOf[typings.nodePdftk.nodePdftkStrings.ModifyContents]
     
-    @scala.inline
-    def Printing: typings.nodePdftk.nodePdftkStrings.Printing = "Printing".asInstanceOf[typings.nodePdftk.nodePdftkStrings.Printing]
+    inline def Printing: typings.nodePdftk.nodePdftkStrings.Printing = "Printing".asInstanceOf[typings.nodePdftk.nodePdftkStrings.Printing]
     
-    @scala.inline
-    def ScreenReaders: typings.nodePdftk.nodePdftkStrings.ScreenReaders = "ScreenReaders".asInstanceOf[typings.nodePdftk.nodePdftkStrings.ScreenReaders]
+    inline def ScreenReaders: typings.nodePdftk.nodePdftkStrings.ScreenReaders = "ScreenReaders".asInstanceOf[typings.nodePdftk.nodePdftkStrings.ScreenReaders]
   }
 }

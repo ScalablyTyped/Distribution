@@ -24,25 +24,19 @@ trait SchemaGooglePrivacyDlpV2DeidentifyConfig extends StObject {
 }
 object SchemaGooglePrivacyDlpV2DeidentifyConfig {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2DeidentifyConfig = {
+  inline def apply(): SchemaGooglePrivacyDlpV2DeidentifyConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DeidentifyConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2DeidentifyConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2DeidentifyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2DeidentifyConfig](x: Self) {
     
-    @scala.inline
-    def setInfoTypeTransformations(value: SchemaGooglePrivacyDlpV2InfoTypeTransformations): Self = StObject.set(x, "infoTypeTransformations", value.asInstanceOf[js.Any])
+    inline def setInfoTypeTransformations(value: SchemaGooglePrivacyDlpV2InfoTypeTransformations): Self = StObject.set(x, "infoTypeTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypeTransformationsUndefined: Self = StObject.set(x, "infoTypeTransformations", js.undefined)
+    inline def setInfoTypeTransformationsUndefined: Self = StObject.set(x, "infoTypeTransformations", js.undefined)
     
-    @scala.inline
-    def setRecordTransformations(value: SchemaGooglePrivacyDlpV2RecordTransformations): Self = StObject.set(x, "recordTransformations", value.asInstanceOf[js.Any])
+    inline def setRecordTransformations(value: SchemaGooglePrivacyDlpV2RecordTransformations): Self = StObject.set(x, "recordTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordTransformationsUndefined: Self = StObject.set(x, "recordTransformations", js.undefined)
+    inline def setRecordTransformationsUndefined: Self = StObject.set(x, "recordTransformations", js.undefined)
   }
 }

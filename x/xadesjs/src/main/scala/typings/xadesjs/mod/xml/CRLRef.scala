@@ -13,6 +13,5 @@ class CRLRef ()
   extends typings.xadesjs.xmlMod.CRLRef
 object CRLRef {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.CRLRef] = ^.asInstanceOf[js.Dynamic].selectDynamic("CRLRef").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CRLRef]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.CRLRef] = ^.asInstanceOf[js.Dynamic].selectDynamic("CRLRef").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CRLRef]]
 }

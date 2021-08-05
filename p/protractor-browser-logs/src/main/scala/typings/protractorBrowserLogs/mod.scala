@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(browser: ProtractorBrowser): BrowserLogs = ^.asInstanceOf[js.Dynamic].apply(browser.asInstanceOf[js.Any]).asInstanceOf[BrowserLogs]
-  @scala.inline
-  def apply(browser: ProtractorBrowser, options: BrowserLogOptions): BrowserLogs = (^.asInstanceOf[js.Dynamic].apply(browser.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BrowserLogs]
+  inline def apply(browser: ProtractorBrowser): BrowserLogs = ^.asInstanceOf[js.Dynamic].apply(browser.asInstanceOf[js.Any]).asInstanceOf[BrowserLogs]
+  inline def apply(browser: ProtractorBrowser, options: BrowserLogOptions): BrowserLogs = (^.asInstanceOf[js.Dynamic].apply(browser.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BrowserLogs]
   
   @JSImport("protractor-browser-logs", JSImport.Namespace)
   @js.native
@@ -24,23 +22,18 @@ object mod {
   }
   object BrowserLogOptions {
     
-    @scala.inline
-    def apply(): BrowserLogOptions = {
+    inline def apply(): BrowserLogOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrowserLogOptions]
     }
     
-    @scala.inline
-    implicit class BrowserLogOptionsMutableBuilder[Self <: BrowserLogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserLogOptions](x: Self) {
       
-      @scala.inline
-      def setReporters(value: js.Array[js.Function1[/* entries */ js.Array[Entry], Unit]]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
+      inline def setReporters(value: js.Array[js.Function1[/* entries */ js.Array[Entry], Unit]]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
+      inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
       
-      @scala.inline
-      def setReportersVarargs(value: (js.Function1[/* entries */ js.Array[Entry], Unit])*): Self = StObject.set(x, "reporters", js.Array(value :_*))
+      inline def setReportersVarargs(value: (js.Function1[/* entries */ js.Array[Entry], Unit])*): Self = StObject.set(x, "reporters", js.Array(value :_*))
     }
   }
   
@@ -82,8 +75,7 @@ object mod {
   }
   object BrowserLogs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DEBUG: /* entry */ Entry => Boolean,
       ERROR: /* entry */ Entry => Boolean,
       INFO: /* entry */ Entry => Boolean,
@@ -101,44 +93,31 @@ object mod {
       __obj.asInstanceOf[BrowserLogs]
     }
     
-    @scala.inline
-    implicit class BrowserLogsMutableBuilder[Self <: BrowserLogs] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserLogs](x: Self) {
       
-      @scala.inline
-      def setAnd(value: (matchPredicateFunction, matchPredicateFunction) => matchPredicateFunction): Self = StObject.set(x, "and", js.Any.fromFunction2(value))
+      inline def setAnd(value: (matchPredicateFunction, matchPredicateFunction) => matchPredicateFunction): Self = StObject.set(x, "and", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDEBUG(value: /* entry */ Entry => Boolean): Self = StObject.set(x, "DEBUG", js.Any.fromFunction1(value))
+      inline def setDEBUG(value: /* entry */ Entry => Boolean): Self = StObject.set(x, "DEBUG", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setERROR(value: /* entry */ Entry => Boolean): Self = StObject.set(x, "ERROR", js.Any.fromFunction1(value))
+      inline def setERROR(value: /* entry */ Entry => Boolean): Self = StObject.set(x, "ERROR", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExpect(value: /* repeated */ matchPredicate => js.Array[matchPredicateFunction]): Self = StObject.set(x, "expect", js.Any.fromFunction1(value))
+      inline def setExpect(value: /* repeated */ matchPredicate => js.Array[matchPredicateFunction]): Self = StObject.set(x, "expect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setINFO(value: /* entry */ Entry => Boolean): Self = StObject.set(x, "INFO", js.Any.fromFunction1(value))
+      inline def setINFO(value: /* entry */ Entry => Boolean): Self = StObject.set(x, "INFO", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIgnore(value: /* repeated */ matchPredicate => js.Array[matchPredicateFunction]): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
+      inline def setIgnore(value: /* repeated */ matchPredicate => js.Array[matchPredicateFunction]): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLOG(value: /* entry */ Entry => Boolean): Self = StObject.set(x, "LOG", js.Any.fromFunction1(value))
+      inline def setLOG(value: /* entry */ Entry => Boolean): Self = StObject.set(x, "LOG", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogs(value: () => js.Array[Entry]): Self = StObject.set(x, "logs", js.Any.fromFunction0(value))
+      inline def setLogs(value: () => js.Array[Entry]): Self = StObject.set(x, "logs", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOr(value: (matchPredicateFunction, matchPredicateFunction) => matchPredicateFunction): Self = StObject.set(x, "or", js.Any.fromFunction2(value))
+      inline def setOr(value: (matchPredicateFunction, matchPredicateFunction) => matchPredicateFunction): Self = StObject.set(x, "or", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVerify(value: () => Unit): Self = StObject.set(x, "verify", js.Any.fromFunction0(value))
+      inline def setVerify(value: () => Unit): Self = StObject.set(x, "verify", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWARNING(value: /* entry */ Entry => Boolean): Self = StObject.set(x, "WARNING", js.Any.fromFunction1(value))
+      inline def setWARNING(value: /* entry */ Entry => Boolean): Self = StObject.set(x, "WARNING", js.Any.fromFunction1(value))
     }
   }
   

@@ -20,6 +20,5 @@ object LongestCommonSubsequence {
   @JSImport("webcola", "LongestCommonSubsequence.findMatch")
   @js.native
   def findMatch: js.Any = js.native
-  @scala.inline
-  def findMatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findMatch")(x.asInstanceOf[js.Any])
+  inline def findMatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findMatch")(x.asInstanceOf[js.Any])
 }

@@ -17,31 +17,23 @@ trait EmbeddedObjectPosition extends StObject {
 }
 object EmbeddedObjectPosition {
   
-  @scala.inline
-  def apply(): EmbeddedObjectPosition = {
+  inline def apply(): EmbeddedObjectPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmbeddedObjectPosition]
   }
   
-  @scala.inline
-  implicit class EmbeddedObjectPositionMutableBuilder[Self <: EmbeddedObjectPosition] (val x: Self) extends AnyVal {
+  extension [Self <: EmbeddedObjectPosition](x: Self) {
     
-    @scala.inline
-    def setNewSheet(value: Boolean): Self = StObject.set(x, "newSheet", value.asInstanceOf[js.Any])
+    inline def setNewSheet(value: Boolean): Self = StObject.set(x, "newSheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewSheetUndefined: Self = StObject.set(x, "newSheet", js.undefined)
+    inline def setNewSheetUndefined: Self = StObject.set(x, "newSheet", js.undefined)
     
-    @scala.inline
-    def setOverlayPosition(value: OverlayPosition): Self = StObject.set(x, "overlayPosition", value.asInstanceOf[js.Any])
+    inline def setOverlayPosition(value: OverlayPosition): Self = StObject.set(x, "overlayPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayPositionUndefined: Self = StObject.set(x, "overlayPosition", js.undefined)
+    inline def setOverlayPositionUndefined: Self = StObject.set(x, "overlayPosition", js.undefined)
     
-    @scala.inline
-    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
+    inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
+    inline def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
   }
 }

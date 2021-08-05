@@ -12,19 +12,15 @@ trait ResponsePayload extends StObject {
 }
 object ResponsePayload {
   
-  @scala.inline
-  def apply(audit: Audit, ticket: ResponseModel): ResponsePayload = {
+  inline def apply(audit: Audit, ticket: ResponseModel): ResponsePayload = {
     val __obj = js.Dynamic.literal(audit = audit.asInstanceOf[js.Any], ticket = ticket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsePayload]
   }
   
-  @scala.inline
-  implicit class ResponsePayloadMutableBuilder[Self <: ResponsePayload] (val x: Self) extends AnyVal {
+  extension [Self <: ResponsePayload](x: Self) {
     
-    @scala.inline
-    def setAudit(value: Audit): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
+    inline def setAudit(value: Audit): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicket(value: ResponseModel): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
+    inline def setTicket(value: ResponseModel): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
   }
 }

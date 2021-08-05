@@ -11,19 +11,15 @@ trait Authority extends StObject {
 }
 object Authority {
   
-  @scala.inline
-  def apply(): Authority = {
+  inline def apply(): Authority = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Authority]
   }
   
-  @scala.inline
-  implicit class AuthorityMutableBuilder[Self <: Authority] (val x: Self) extends AnyVal {
+  extension [Self <: Authority](x: Self) {
     
-    @scala.inline
-    def setHint(value: Hint): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: Hint): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+    inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
   }
 }

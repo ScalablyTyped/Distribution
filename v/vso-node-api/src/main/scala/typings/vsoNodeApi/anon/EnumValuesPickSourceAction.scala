@@ -10,16 +10,13 @@ trait EnumValuesPickSourceAction extends StObject {
 }
 object EnumValuesPickSourceAction {
   
-  @scala.inline
-  def apply(enumValues: PickSourceAction): EnumValuesPickSourceAction = {
+  inline def apply(enumValues: PickSourceAction): EnumValuesPickSourceAction = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesPickSourceAction]
   }
   
-  @scala.inline
-  implicit class EnumValuesPickSourceActionMutableBuilder[Self <: EnumValuesPickSourceAction] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesPickSourceAction](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: PickSourceAction): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: PickSourceAction): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

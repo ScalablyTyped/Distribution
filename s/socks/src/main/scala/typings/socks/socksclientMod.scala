@@ -26,7 +26,7 @@ object socksclientMod {
       * Closes and destroys the underlying Socket. Emits an error event.
       * @param err { String } An error string to include in error event.
       */
-    var closeSocket: js.Any = js.native
+    /* private */ var closeSocket: js.Any = js.native
     
     /**
       * Starts the connection establishment to the proxy and destination.
@@ -42,81 +42,81 @@ object socksclientMod {
     @JSName("emit")
     def emit_established(event: established, info: SocksClientEstablishedEvent): Boolean = js.native
     
-    var getSocketOptions: js.Any = js.native
+    /* private */ var getSocketOptions: js.Any = js.native
     
     /**
       * Handles Socks v5 auth handshake response.
       * @param data
       */
-    var handleInitialSocks5AuthenticationHandshakeResponse: js.Any = js.native
+    /* private */ var handleInitialSocks5AuthenticationHandshakeResponse: js.Any = js.native
     
     /**
       * Handles initial Socks v5 handshake response.
       * @param data
       */
-    var handleInitialSocks5HandshakeResponse: js.Any = js.native
+    /* private */ var handleInitialSocks5HandshakeResponse: js.Any = js.native
     
     /**
       * Handles Socks v4 handshake response.
       * @param data
       */
-    var handleSocks4FinalHandshakeResponse: js.Any = js.native
+    /* private */ var handleSocks4FinalHandshakeResponse: js.Any = js.native
     
     /**
       * Handles Socks v4 incoming connection request (BIND)
       * @param data
       */
-    var handleSocks4IncomingConnectionResponse: js.Any = js.native
+    /* private */ var handleSocks4IncomingConnectionResponse: js.Any = js.native
     
     /**
       * Handles Socks v5 final handshake response.
       * @param data
       */
-    var handleSocks5FinalHandshakeResponse: js.Any = js.native
+    /* private */ var handleSocks5FinalHandshakeResponse: js.Any = js.native
     
     /**
       * Handles Socks v5 incoming connection request (BIND).
       */
-    var handleSocks5IncomingConnectionResponse: js.Any = js.native
+    /* private */ var handleSocks5IncomingConnectionResponse: js.Any = js.native
     
-    var nextRequiredPacketBufferSize: js.Any = js.native
+    /* private */ var nextRequiredPacketBufferSize: js.Any = js.native
     
-    var onClose: js.Any = js.native
+    /* private */ var onClose: js.Any = js.native
     
     /**
       * Handles Socket close event.
       * @param had_error
       */
-    var onCloseHandler: js.Any = js.native
+    /* private */ var onCloseHandler: js.Any = js.native
     
-    var onConnect: js.Any = js.native
+    /* private */ var onConnect: js.Any = js.native
     
     /**
       * Handles Socket connect event.
       */
-    var onConnectHandler: js.Any = js.native
+    /* private */ var onConnectHandler: js.Any = js.native
     
-    var onDataReceived: js.Any = js.native
+    /* private */ var onDataReceived: js.Any = js.native
     
     /**
       * Handles Socket data event.
       * @param data
       */
-    var onDataReceivedHandler: js.Any = js.native
+    /* private */ var onDataReceivedHandler: js.Any = js.native
     
-    var onError: js.Any = js.native
+    /* private */ var onError: js.Any = js.native
     
     /**
       * Handles Socket error event.
       * @param err
       */
-    var onErrorHandler: js.Any = js.native
+    /* private */ var onErrorHandler: js.Any = js.native
     
     /**
       * Handles internal Socks timeout callback.
       * Note: If the Socks client is not BoundWaitingForConnection or Established, the connection will be closed.
       */
-    var onEstablishedTimeout: js.Any = js.native
+    /* private */ var onEstablishedTimeout: js.Any = js.native
     
     @JSName("on")
     def on_bound(event: bound, listener: js.Function1[/* info */ SocksClientBoundEvent, Unit]): this.type = js.native
@@ -132,52 +132,52 @@ object socksclientMod {
     @JSName("once")
     def once_established(event: established, listener: js.Function1[/* info */ SocksClientEstablishedEvent, Unit]): this.type = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     /**
       * Handles processing of the data we have received.
       */
-    var processData: js.Any = js.native
+    /* private */ var processData: js.Any = js.native
     
-    var receiveBuffer: js.Any = js.native
+    /* private */ var receiveBuffer: js.Any = js.native
     
     /**
       * Removes internal event listeners on the underlying Socket.
       */
-    var removeInternalSocketHandlers: js.Any = js.native
+    /* private */ var removeInternalSocketHandlers: js.Any = js.native
     
     /**
       * Sends initial Socks v4 handshake request.
       */
-    var sendSocks4InitialHandshake: js.Any = js.native
+    /* private */ var sendSocks4InitialHandshake: js.Any = js.native
     
     /**
       * Sends Socks v5 final handshake request.
       */
-    var sendSocks5CommandRequest: js.Any = js.native
+    /* private */ var sendSocks5CommandRequest: js.Any = js.native
     
     /**
       * Sends initial Socks v5 handshake request.
       */
-    var sendSocks5InitialHandshake: js.Any = js.native
+    /* private */ var sendSocks5InitialHandshake: js.Any = js.native
     
     /**
       * Sends Socks v5 user & password auth handshake.
       *
       * Note: No auth and user/pass are currently supported.
       */
-    var sendSocks5UserPassAuthentication: js.Any = js.native
+    /* private */ var sendSocks5UserPassAuthentication: js.Any = js.native
     
     /**
       * Internal state setter. If the SocksClient is in an error state, it cannot be changed to a non error state.
       */
-    var setState: js.Any = js.native
+    /* private */ var setState: js.Any = js.native
     
-    var socket: js.Any = js.native
+    /* private */ var socket: js.Any = js.native
     
     def socksClientOptions: SocksClientOptions = js.native
     
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
   }
   object SocksClient {
     
@@ -194,10 +194,8 @@ object socksclientMod {
       * @returns { Promise }
       */
     /* static member */
-    @scala.inline
-    def createConnection(options: SocksClientOptions): js.Promise[SocksClientEstablishedEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
-    @scala.inline
-    def createConnection(options: SocksClientOptions, callback: js.Function): js.Promise[SocksClientEstablishedEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
+    inline def createConnection(options: SocksClientOptions): js.Promise[SocksClientEstablishedEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
+    inline def createConnection(options: SocksClientOptions, callback: js.Function): js.Promise[SocksClientEstablishedEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
     
     /**
       * Creates a new SOCKS connection chain to a destination host through 2 or more SOCKS proxies.
@@ -209,26 +207,22 @@ object socksclientMod {
       * @returns { Promise }
       */
     /* static member */
-    @scala.inline
-    def createConnectionChain(options: SocksClientChainOptions): js.Promise[SocksClientEstablishedEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnectionChain")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
-    @scala.inline
-    def createConnectionChain(options: SocksClientChainOptions, callback: js.Function): js.Promise[SocksClientEstablishedEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnectionChain")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
+    inline def createConnectionChain(options: SocksClientChainOptions): js.Promise[SocksClientEstablishedEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnectionChain")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
+    inline def createConnectionChain(options: SocksClientChainOptions, callback: js.Function): js.Promise[SocksClientEstablishedEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnectionChain")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
     
     /**
       * Creates a SOCKS UDP Frame.
       * @param options
       */
     /* static member */
-    @scala.inline
-    def createUDPFrame(options: SocksUDPFrameDetails): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createUDPFrame")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def createUDPFrame(options: SocksUDPFrameDetails): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createUDPFrame")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Parses a SOCKS UDP frame.
       * @param data
       */
     /* static member */
-    @scala.inline
-    def parseUDPFrame(data: Buffer): SocksUDPFrameDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUDPFrame")(data.asInstanceOf[js.Any]).asInstanceOf[SocksUDPFrameDetails]
+    inline def parseUDPFrame(data: Buffer): SocksUDPFrameDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUDPFrame")(data.asInstanceOf[js.Any]).asInstanceOf[SocksUDPFrameDetails]
   }
   
   /**

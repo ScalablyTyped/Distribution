@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthenticatorTransport extends StObject
 object AuthenticatorTransport {
   
-  @scala.inline
-  def ble: typings.devtoolsProtocol.devtoolsProtocolStrings.ble = "ble".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ble]
+  inline def ble: typings.devtoolsProtocol.devtoolsProtocolStrings.ble = "ble".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ble]
   
-  @scala.inline
-  def cable: typings.devtoolsProtocol.devtoolsProtocolStrings.cable = "cable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.cable]
+  inline def cable: typings.devtoolsProtocol.devtoolsProtocolStrings.cable = "cable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.cable]
   
-  @scala.inline
-  def internal: typings.devtoolsProtocol.devtoolsProtocolStrings.internal = "internal".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.internal]
+  inline def internal: typings.devtoolsProtocol.devtoolsProtocolStrings.internal = "internal".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.internal]
   
-  @scala.inline
-  def nfc: typings.devtoolsProtocol.devtoolsProtocolStrings.nfc = "nfc".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.nfc]
+  inline def nfc: typings.devtoolsProtocol.devtoolsProtocolStrings.nfc = "nfc".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.nfc]
   
-  @scala.inline
-  def usb: typings.devtoolsProtocol.devtoolsProtocolStrings.usb = "usb".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.usb]
+  inline def usb: typings.devtoolsProtocol.devtoolsProtocolStrings.usb = "usb".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.usb]
 }

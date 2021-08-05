@@ -10,19 +10,15 @@ trait Responsetype extends StObject {
 }
 object Responsetype {
   
-  @scala.inline
-  def apply(): Responsetype = {
+  inline def apply(): Responsetype = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Responsetype]
   }
   
-  @scala.inline
-  implicit class ResponsetypeMutableBuilder[Self <: Responsetype] (val x: Self) extends AnyVal {
+  extension [Self <: Responsetype](x: Self) {
     
-    @scala.inline
-    def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+    inline def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
+    inline def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
   }
 }

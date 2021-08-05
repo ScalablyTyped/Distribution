@@ -29,31 +29,23 @@ trait ParamsResourceEnterprisesCompletesignup
 }
 object ParamsResourceEnterprisesCompletesignup {
   
-  @scala.inline
-  def apply(): ParamsResourceEnterprisesCompletesignup = {
+  inline def apply(): ParamsResourceEnterprisesCompletesignup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceEnterprisesCompletesignup]
   }
   
-  @scala.inline
-  implicit class ParamsResourceEnterprisesCompletesignupMutableBuilder[Self <: ParamsResourceEnterprisesCompletesignup] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceEnterprisesCompletesignup](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCompletionToken(value: String): Self = StObject.set(x, "completionToken", value.asInstanceOf[js.Any])
+    inline def setCompletionToken(value: String): Self = StObject.set(x, "completionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionTokenUndefined: Self = StObject.set(x, "completionToken", js.undefined)
+    inline def setCompletionTokenUndefined: Self = StObject.set(x, "completionToken", js.undefined)
     
-    @scala.inline
-    def setEnterpriseToken(value: String): Self = StObject.set(x, "enterpriseToken", value.asInstanceOf[js.Any])
+    inline def setEnterpriseToken(value: String): Self = StObject.set(x, "enterpriseToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseTokenUndefined: Self = StObject.set(x, "enterpriseToken", js.undefined)
+    inline def setEnterpriseTokenUndefined: Self = StObject.set(x, "enterpriseToken", js.undefined)
   }
 }

@@ -20,25 +20,19 @@ trait HotKeysProps
 }
 object HotKeysProps {
   
-  @scala.inline
-  def apply(): HotKeysProps = {
+  inline def apply(): HotKeysProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HotKeysProps]
   }
   
-  @scala.inline
-  implicit class HotKeysPropsMutableBuilder[Self <: HotKeysProps] (val x: Self) extends AnyVal {
+  extension [Self <: HotKeysProps](x: Self) {
     
-    @scala.inline
-    def setComponent(value: ReactComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ReactComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setInnerRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+    inline def setInnerRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+    inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
   }
 }

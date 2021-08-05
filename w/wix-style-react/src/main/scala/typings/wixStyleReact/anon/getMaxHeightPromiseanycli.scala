@@ -38,8 +38,7 @@ trait getMaxHeightPromiseanycli extends StObject {
 }
 object getMaxHeightPromiseanycli {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: () => js.Promise[Unit],
     clickOnInputWrapper: () => js.Promise[Unit],
     customSuffixExists: () => js.Promise[js.Any],
@@ -58,46 +57,32 @@ object getMaxHeightPromiseanycli {
     __obj.asInstanceOf[getMaxHeightPromiseanycli]
   }
   
-  @scala.inline
-  implicit class getMaxHeightPromiseanycliMutableBuilder[Self <: getMaxHeightPromiseanycli] (val x: Self) extends AnyVal {
+  extension [Self <: getMaxHeightPromiseanycli](x: Self) {
     
-    @scala.inline
-    def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+    inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClickOnInputWrapper(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnInputWrapper", js.Any.fromFunction0(value))
+    inline def setClickOnInputWrapper(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnInputWrapper", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCustomSuffixExists(value: () => js.Promise[js.Any]): Self = StObject.set(x, "customSuffixExists", js.Any.fromFunction0(value))
+    inline def setCustomSuffixExists(value: () => js.Promise[js.Any]): Self = StObject.set(x, "customSuffixExists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDriver(value: Focus): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: Focus): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+    inline def setElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxHeight(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getMaxHeight", js.Any.fromFunction0(value))
+    inline def setGetMaxHeight(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getMaxHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTagDriverByTagId(value: String => js.Promise[TagUniDriverisCloseButton]): Self = StObject.set(x, "getTagDriverByTagId", js.Any.fromFunction1(value))
+    inline def setGetTagDriverByTagId(value: String => js.Promise[TagUniDriverisCloseButton]): Self = StObject.set(x, "getTagDriverByTagId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTagLabelAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getTagLabelAt", js.Any.fromFunction1(value))
+    inline def setGetTagLabelAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getTagLabelAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInputWrapperHasFocus(value: () => js.Promise[js.Any]): Self = StObject.set(x, "inputWrapperHasFocus", js.Any.fromFunction0(value))
+    inline def setInputWrapperHasFocus(value: () => js.Promise[js.Any]): Self = StObject.set(x, "inputWrapperHasFocus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInputWrapperIsDisabled(value: () => js.Promise[js.Any]): Self = StObject.set(x, "inputWrapperIsDisabled", js.Any.fromFunction0(value))
+    inline def setInputWrapperIsDisabled(value: () => js.Promise[js.Any]): Self = StObject.set(x, "inputWrapperIsDisabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNumberOfTags(value: () => js.Promise[Double]): Self = StObject.set(x, "numberOfTags", js.Any.fromFunction0(value))
+    inline def setNumberOfTags(value: () => js.Promise[Double]): Self = StObject.set(x, "numberOfTags", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPressCommaKey(value: () => js.Promise[Unit]): Self = StObject.set(x, "pressCommaKey", js.Any.fromFunction0(value))
+    inline def setPressCommaKey(value: () => js.Promise[Unit]): Self = StObject.set(x, "pressCommaKey", js.Any.fromFunction0(value))
   }
 }

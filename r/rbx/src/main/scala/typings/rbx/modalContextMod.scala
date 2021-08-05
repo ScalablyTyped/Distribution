@@ -25,23 +25,18 @@ object modalContextMod {
   }
   object ModalContextValue {
     
-    @scala.inline
-    def apply(close: () => Unit, closeOnBlur: Boolean, closeOnEsc: Boolean): ModalContextValue = {
+    inline def apply(close: () => Unit, closeOnBlur: Boolean, closeOnEsc: Boolean): ModalContextValue = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), closeOnBlur = closeOnBlur.asInstanceOf[js.Any], closeOnEsc = closeOnEsc.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModalContextValue]
     }
     
-    @scala.inline
-    implicit class ModalContextValueMutableBuilder[Self <: ModalContextValue] (val x: Self) extends AnyVal {
+    extension [Self <: ModalContextValue](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCloseOnBlur(value: Boolean): Self = StObject.set(x, "closeOnBlur", value.asInstanceOf[js.Any])
+      inline def setCloseOnBlur(value: Boolean): Self = StObject.set(x, "closeOnBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
+      inline def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
     }
   }
 }

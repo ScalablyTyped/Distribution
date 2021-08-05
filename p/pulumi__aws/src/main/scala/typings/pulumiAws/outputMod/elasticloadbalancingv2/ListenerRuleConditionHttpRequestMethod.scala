@@ -13,19 +13,15 @@ trait ListenerRuleConditionHttpRequestMethod extends StObject {
 }
 object ListenerRuleConditionHttpRequestMethod {
   
-  @scala.inline
-  def apply(values: js.Array[String]): ListenerRuleConditionHttpRequestMethod = {
+  inline def apply(values: js.Array[String]): ListenerRuleConditionHttpRequestMethod = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleConditionHttpRequestMethod]
   }
   
-  @scala.inline
-  implicit class ListenerRuleConditionHttpRequestMethodMutableBuilder[Self <: ListenerRuleConditionHttpRequestMethod] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerRuleConditionHttpRequestMethod](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

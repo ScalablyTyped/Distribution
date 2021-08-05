@@ -17,23 +17,18 @@ object anon {
   }
   object Attributes {
     
-    @scala.inline
-    def apply[P /* <: Provider */, AM /* <: AttributesManager */](provider: P): Attributes[P, AM] = {
+    inline def apply[P /* <: Provider */, AM /* <: AttributesManager */](provider: P): Attributes[P, AM] = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attributes[P, AM]]
     }
     
-    @scala.inline
-    implicit class AttributesMutableBuilder[Self <: Attributes[?, ?], P /* <: Provider */, AM /* <: AttributesManager */] (val x: Self & (Attributes[P, AM])) extends AnyVal {
+    extension [Self <: Attributes[?, ?], P /* <: Provider */, AM /* <: AttributesManager */](x: Self & (Attributes[P, AM])) {
       
-      @scala.inline
-      def setAttributes(value: AM): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: AM): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setProvider(value: P): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: P): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     }
   }
   

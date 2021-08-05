@@ -14,22 +14,17 @@ trait Patchurl extends StObject {
 }
 object Patchurl {
   
-  @scala.inline
-  def apply(diff_url: String, html_url: String, patch_url: String): Patchurl = {
+  inline def apply(diff_url: String, html_url: String, patch_url: String): Patchurl = {
     val __obj = js.Dynamic.literal(diff_url = diff_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], patch_url = patch_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Patchurl]
   }
   
-  @scala.inline
-  implicit class PatchurlMutableBuilder[Self <: Patchurl] (val x: Self) extends AnyVal {
+  extension [Self <: Patchurl](x: Self) {
     
-    @scala.inline
-    def setDiff_url(value: String): Self = StObject.set(x, "diff_url", value.asInstanceOf[js.Any])
+    inline def setDiff_url(value: String): Self = StObject.set(x, "diff_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatch_url(value: String): Self = StObject.set(x, "patch_url", value.asInstanceOf[js.Any])
+    inline def setPatch_url(value: String): Self = StObject.set(x, "patch_url", value.asInstanceOf[js.Any])
   }
 }

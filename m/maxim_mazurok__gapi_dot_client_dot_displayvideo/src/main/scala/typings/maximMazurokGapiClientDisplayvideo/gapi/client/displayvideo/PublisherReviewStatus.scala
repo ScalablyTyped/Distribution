@@ -14,25 +14,19 @@ trait PublisherReviewStatus extends StObject {
 }
 object PublisherReviewStatus {
   
-  @scala.inline
-  def apply(): PublisherReviewStatus = {
+  inline def apply(): PublisherReviewStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublisherReviewStatus]
   }
   
-  @scala.inline
-  implicit class PublisherReviewStatusMutableBuilder[Self <: PublisherReviewStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PublisherReviewStatus](x: Self) {
     
-    @scala.inline
-    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+    inline def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherNameUndefined: Self = StObject.set(x, "publisherName", js.undefined)
+    inline def setPublisherNameUndefined: Self = StObject.set(x, "publisherName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

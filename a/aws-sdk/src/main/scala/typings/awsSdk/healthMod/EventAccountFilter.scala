@@ -18,22 +18,17 @@ trait EventAccountFilter extends StObject {
 }
 object EventAccountFilter {
   
-  @scala.inline
-  def apply(eventArn: eventArn): EventAccountFilter = {
+  inline def apply(eventArn: eventArn): EventAccountFilter = {
     val __obj = js.Dynamic.literal(eventArn = eventArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventAccountFilter]
   }
   
-  @scala.inline
-  implicit class EventAccountFilterMutableBuilder[Self <: EventAccountFilter] (val x: Self) extends AnyVal {
+  extension [Self <: EventAccountFilter](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: accountId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: accountId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
+    inline def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
     
-    @scala.inline
-    def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
+    inline def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
   }
 }

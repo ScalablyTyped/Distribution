@@ -34,8 +34,7 @@ object rsocketencodingMod {
   }
   object Encoder {
     
-    @scala.inline
-    def apply[T /* <: Encodable */](
+    inline def apply[T /* <: Encodable */](
       byteLength: Encodable => Double,
       decode: (Buffer, Double, Double) => T,
       encode: (Encodable, Buffer, Double, Double) => Double
@@ -44,17 +43,13 @@ object rsocketencodingMod {
       __obj.asInstanceOf[Encoder[T]]
     }
     
-    @scala.inline
-    implicit class EncoderMutableBuilder[Self <: Encoder[?], T /* <: Encodable */] (val x: Self & Encoder[T]) extends AnyVal {
+    extension [Self <: Encoder[?], T /* <: Encodable */](x: Self & Encoder[T]) {
       
-      @scala.inline
-      def setByteLength(value: Encodable => Double): Self = StObject.set(x, "byteLength", js.Any.fromFunction1(value))
+      inline def setByteLength(value: Encodable => Double): Self = StObject.set(x, "byteLength", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecode(value: (Buffer, Double, Double) => T): Self = StObject.set(x, "decode", js.Any.fromFunction3(value))
+      inline def setDecode(value: (Buffer, Double, Double) => T): Self = StObject.set(x, "decode", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setEncode(value: (Encodable, Buffer, Double, Double) => Double): Self = StObject.set(x, "encode", js.Any.fromFunction4(value))
+      inline def setEncode(value: (Encodable, Buffer, Double, Double) => Double): Self = StObject.set(x, "encode", js.Any.fromFunction4(value))
     }
   }
   
@@ -74,8 +69,7 @@ object rsocketencodingMod {
   }
   object Encoders {
     
-    @scala.inline
-    def apply[T /* <: Encodable */](
+    inline def apply[T /* <: Encodable */](
       data: Encoder[T],
       dataMimeType: Encoder[String],
       message: Encoder[String],
@@ -87,26 +81,19 @@ object rsocketencodingMod {
       __obj.asInstanceOf[Encoders[T]]
     }
     
-    @scala.inline
-    implicit class EncodersMutableBuilder[Self <: Encoders[?], T /* <: Encodable */] (val x: Self & Encoders[T]) extends AnyVal {
+    extension [Self <: Encoders[?], T /* <: Encodable */](x: Self & Encoders[T]) {
       
-      @scala.inline
-      def setData(value: Encoder[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Encoder[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataMimeType(value: Encoder[String]): Self = StObject.set(x, "dataMimeType", value.asInstanceOf[js.Any])
+      inline def setDataMimeType(value: Encoder[String]): Self = StObject.set(x, "dataMimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: Encoder[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Encoder[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: Encoder[T]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Encoder[T]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataMimeType(value: Encoder[String]): Self = StObject.set(x, "metadataMimeType", value.asInstanceOf[js.Any])
+      inline def setMetadataMimeType(value: Encoder[String]): Self = StObject.set(x, "metadataMimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResumeToken(value: Encoder[T]): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
+      inline def setResumeToken(value: Encoder[T]): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     }
   }
 }

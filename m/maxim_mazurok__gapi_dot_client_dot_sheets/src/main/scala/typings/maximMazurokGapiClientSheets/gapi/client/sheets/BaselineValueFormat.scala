@@ -32,61 +32,43 @@ trait BaselineValueFormat extends StObject {
 }
 object BaselineValueFormat {
   
-  @scala.inline
-  def apply(): BaselineValueFormat = {
+  inline def apply(): BaselineValueFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaselineValueFormat]
   }
   
-  @scala.inline
-  implicit class BaselineValueFormatMutableBuilder[Self <: BaselineValueFormat] (val x: Self) extends AnyVal {
+  extension [Self <: BaselineValueFormat](x: Self) {
     
-    @scala.inline
-    def setComparisonType(value: String): Self = StObject.set(x, "comparisonType", value.asInstanceOf[js.Any])
+    inline def setComparisonType(value: String): Self = StObject.set(x, "comparisonType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonTypeUndefined: Self = StObject.set(x, "comparisonType", js.undefined)
+    inline def setComparisonTypeUndefined: Self = StObject.set(x, "comparisonType", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setNegativeColor(value: Color): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
+    inline def setNegativeColor(value: Color): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeColorStyle(value: ColorStyle): Self = StObject.set(x, "negativeColorStyle", value.asInstanceOf[js.Any])
+    inline def setNegativeColorStyle(value: ColorStyle): Self = StObject.set(x, "negativeColorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeColorStyleUndefined: Self = StObject.set(x, "negativeColorStyle", js.undefined)
+    inline def setNegativeColorStyleUndefined: Self = StObject.set(x, "negativeColorStyle", js.undefined)
     
-    @scala.inline
-    def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
+    inline def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
     
-    @scala.inline
-    def setPosition(value: TextPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: TextPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setPositiveColor(value: Color): Self = StObject.set(x, "positiveColor", value.asInstanceOf[js.Any])
+    inline def setPositiveColor(value: Color): Self = StObject.set(x, "positiveColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositiveColorStyle(value: ColorStyle): Self = StObject.set(x, "positiveColorStyle", value.asInstanceOf[js.Any])
+    inline def setPositiveColorStyle(value: ColorStyle): Self = StObject.set(x, "positiveColorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositiveColorStyleUndefined: Self = StObject.set(x, "positiveColorStyle", js.undefined)
+    inline def setPositiveColorStyleUndefined: Self = StObject.set(x, "positiveColorStyle", js.undefined)
     
-    @scala.inline
-    def setPositiveColorUndefined: Self = StObject.set(x, "positiveColor", js.undefined)
+    inline def setPositiveColorUndefined: Self = StObject.set(x, "positiveColor", js.undefined)
     
-    @scala.inline
-    def setTextFormat(value: TextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
+    inline def setTextFormat(value: TextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
+    inline def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
   }
 }

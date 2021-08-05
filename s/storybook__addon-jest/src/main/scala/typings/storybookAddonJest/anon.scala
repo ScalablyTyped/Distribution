@@ -30,17 +30,14 @@ object anon {
   }
   object Active {
     
-    @scala.inline
-    def apply(active: Boolean): Active = {
+    inline def apply(active: Boolean): Active = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[Active]
     }
     
-    @scala.inline
-    implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
+    extension [Self <: Active](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,23 +49,18 @@ object anon {
   }
   object AssertionResults {
     
-    @scala.inline
-    def apply(assertionResults: js.Array[AssertionResult], status: String): AssertionResults = {
+    inline def apply(assertionResults: js.Array[AssertionResult], status: String): AssertionResults = {
       val __obj = js.Dynamic.literal(assertionResults = assertionResults.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssertionResults]
     }
     
-    @scala.inline
-    implicit class AssertionResultsMutableBuilder[Self <: AssertionResults] (val x: Self) extends AnyVal {
+    extension [Self <: AssertionResults](x: Self) {
       
-      @scala.inline
-      def setAssertionResults(value: js.Array[AssertionResult]): Self = StObject.set(x, "assertionResults", value.asInstanceOf[js.Any])
+      inline def setAssertionResults(value: js.Array[AssertionResult]): Self = StObject.set(x, "assertionResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssertionResultsVarargs(value: AssertionResult*): Self = StObject.set(x, "assertionResults", js.Array(value :_*))
+      inline def setAssertionResultsVarargs(value: AssertionResult*): Self = StObject.set(x, "assertionResults", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,23 +169,18 @@ object anon {
   }
   object FilesExt {
     
-    @scala.inline
-    def apply(results: js.Any): FilesExt = {
+    inline def apply(results: js.Any): FilesExt = {
       val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilesExt]
     }
     
-    @scala.inline
-    implicit class FilesExtMutableBuilder[Self <: FilesExt] (val x: Self) extends AnyVal {
+    extension [Self <: FilesExt](x: Self) {
       
-      @scala.inline
-      def setFilesExt(value: String): Self = StObject.set(x, "filesExt", value.asInstanceOf[js.Any])
+      inline def setFilesExt(value: String): Self = StObject.set(x, "filesExt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesExtUndefined: Self = StObject.set(x, "filesExt", js.undefined)
+      inline def setFilesExtUndefined: Self = StObject.set(x, "filesExt", js.undefined)
       
-      @scala.inline
-      def setResults(value: js.Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     }
   }
   
@@ -217,23 +204,18 @@ object anon {
   }
   object ReadonlyHocProps {
     
-    @scala.inline
-    def apply(api: API): ReadonlyHocProps = {
+    inline def apply(api: API): ReadonlyHocProps = {
       val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyHocProps]
     }
     
-    @scala.inline
-    implicit class ReadonlyHocPropsMutableBuilder[Self <: ReadonlyHocProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyHocProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     }
   }
   
@@ -248,29 +230,22 @@ object anon {
   }
   object ReadonlyHocPropsReadonlyc {
     
-    @scala.inline
-    def apply(api: API): ReadonlyHocPropsReadonlyc = {
+    inline def apply(api: API): ReadonlyHocPropsReadonlyc = {
       val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyHocPropsReadonlyc]
     }
     
-    @scala.inline
-    implicit class ReadonlyHocPropsReadonlycMutableBuilder[Self <: ReadonlyHocPropsReadonlyc] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyHocPropsReadonlyc](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -285,35 +260,26 @@ object anon {
   }
   object ReadonlyHocState {
     
-    @scala.inline
-    def apply(): ReadonlyHocState = {
+    inline def apply(): ReadonlyHocState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyHocState]
     }
     
-    @scala.inline
-    implicit class ReadonlyHocStateMutableBuilder[Self <: ReadonlyHocState] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyHocState](x: Self) {
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setStoryName(value: String): Self = StObject.set(x, "storyName", value.asInstanceOf[js.Any])
+      inline def setStoryName(value: String): Self = StObject.set(x, "storyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoryNameUndefined: Self = StObject.set(x, "storyName", js.undefined)
+      inline def setStoryNameUndefined: Self = StObject.set(x, "storyName", js.undefined)
       
-      @scala.inline
-      def setTests(value: js.Array[Test]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
+      inline def setTests(value: js.Array[Test]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
+      inline def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
       
-      @scala.inline
-      def setTestsVarargs(value: Test*): Self = StObject.set(x, "tests", js.Array(value :_*))
+      inline def setTestsVarargs(value: Test*): Self = StObject.set(x, "tests", js.Array(value :_*))
     }
   }
 }

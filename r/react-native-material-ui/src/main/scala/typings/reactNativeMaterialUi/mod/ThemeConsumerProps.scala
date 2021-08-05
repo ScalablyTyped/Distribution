@@ -11,16 +11,13 @@ trait ThemeConsumerProps extends StObject {
 }
 object ThemeConsumerProps {
   
-  @scala.inline
-  def apply(children: ThemeProps => ReactElement): ThemeConsumerProps = {
+  inline def apply(children: ThemeProps => ReactElement): ThemeConsumerProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     __obj.asInstanceOf[ThemeConsumerProps]
   }
   
-  @scala.inline
-  implicit class ThemeConsumerPropsMutableBuilder[Self <: ThemeConsumerProps] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeConsumerProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ThemeProps => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: ThemeProps => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
   }
 }

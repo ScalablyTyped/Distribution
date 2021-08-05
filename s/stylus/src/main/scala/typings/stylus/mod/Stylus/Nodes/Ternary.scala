@@ -17,8 +17,7 @@ trait Ternary
 }
 object Ternary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -40,16 +39,12 @@ object Ternary {
     __obj.asInstanceOf[Ternary]
   }
   
-  @scala.inline
-  implicit class TernaryMutableBuilder[Self <: Ternary] (val x: Self) extends AnyVal {
+  extension [Self <: Ternary](x: Self) {
     
-    @scala.inline
-    def setFalseExpr(value: Expression): Self = StObject.set(x, "falseExpr", value.asInstanceOf[js.Any])
+    inline def setFalseExpr(value: Expression): Self = StObject.set(x, "falseExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOp(value: java.lang.String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: java.lang.String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrueExpr(value: Expression): Self = StObject.set(x, "trueExpr", value.asInstanceOf[js.Any])
+    inline def setTrueExpr(value: Expression): Self = StObject.set(x, "trueExpr", value.asInstanceOf[js.Any])
   }
 }

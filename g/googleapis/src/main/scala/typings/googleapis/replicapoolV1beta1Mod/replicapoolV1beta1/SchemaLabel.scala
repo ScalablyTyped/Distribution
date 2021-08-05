@@ -21,25 +21,19 @@ trait SchemaLabel extends StObject {
 }
 object SchemaLabel {
   
-  @scala.inline
-  def apply(): SchemaLabel = {
+  inline def apply(): SchemaLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLabel]
   }
   
-  @scala.inline
-  implicit class SchemaLabelMutableBuilder[Self <: SchemaLabel] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLabel](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -28,8 +28,7 @@ object namesAndRolesMod {
   }
   object Member {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       email: String,
       family_name: String,
       given_name: String,
@@ -45,29 +44,21 @@ object namesAndRolesMod {
       __obj.asInstanceOf[Member]
     }
     
-    @scala.inline
-    implicit class MemberMutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
+    extension [Self <: Member](x: Self) {
       
-      @scala.inline
-      def setLis_person_sourcedid(value: String): Self = StObject.set(x, "lis_person_sourcedid", value.asInstanceOf[js.Any])
+      inline def setLis_person_sourcedid(value: String): Self = StObject.set(x, "lis_person_sourcedid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddle_name(value: String): Self = StObject.set(x, "middle_name", value.asInstanceOf[js.Any])
+      inline def setMiddle_name(value: String): Self = StObject.set(x, "middle_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+      inline def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+      inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,38 +74,28 @@ object namesAndRolesMod {
   }
   object MemberFilters {
     
-    @scala.inline
-    def apply(): MemberFilters = {
+    inline def apply(): MemberFilters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MemberFilters]
     }
     
-    @scala.inline
-    implicit class MemberFiltersMutableBuilder[Self <: MemberFilters] (val x: Self) extends AnyVal {
+    extension [Self <: MemberFilters](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+      inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -130,32 +111,24 @@ object namesAndRolesMod {
   }
   object MembersResult {
     
-    @scala.inline
-    def apply(context: Id, id: String, members: js.Array[Member]): MembersResult = {
+    inline def apply(context: Id, id: String, members: js.Array[Member]): MembersResult = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any])
       __obj.asInstanceOf[MembersResult]
     }
     
-    @scala.inline
-    implicit class MembersResultMutableBuilder[Self <: MembersResult] (val x: Self) extends AnyVal {
+    extension [Self <: MembersResult](x: Self) {
       
-      @scala.inline
-      def setContext(value: Id): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Id): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers(value: js.Array[Member]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: js.Array[Member]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersVarargs(value: Member*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "members", js.Array(value :_*))
       
-      @scala.inline
-      def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     }
   }
   

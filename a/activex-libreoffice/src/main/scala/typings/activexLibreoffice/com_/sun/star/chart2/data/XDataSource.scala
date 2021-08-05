@@ -33,8 +33,7 @@ trait XDataSource
 }
 object XDataSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataSequences: SafeArray[XLabeledDataSequence],
     acquire: () => Unit,
     getDataSequences: () => SafeArray[XLabeledDataSequence],
@@ -45,13 +44,10 @@ object XDataSource {
     __obj.asInstanceOf[XDataSource]
   }
   
-  @scala.inline
-  implicit class XDataSourceMutableBuilder[Self <: XDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: XDataSource](x: Self) {
     
-    @scala.inline
-    def setDataSequences(value: SafeArray[XLabeledDataSequence]): Self = StObject.set(x, "DataSequences", value.asInstanceOf[js.Any])
+    inline def setDataSequences(value: SafeArray[XLabeledDataSequence]): Self = StObject.set(x, "DataSequences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDataSequences(value: () => SafeArray[XLabeledDataSequence]): Self = StObject.set(x, "getDataSequences", js.Any.fromFunction0(value))
+    inline def setGetDataSequences(value: () => SafeArray[XLabeledDataSequence]): Self = StObject.set(x, "getDataSequences", js.Any.fromFunction0(value))
   }
 }

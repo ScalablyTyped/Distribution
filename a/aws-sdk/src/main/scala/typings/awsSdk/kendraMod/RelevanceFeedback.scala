@@ -18,19 +18,15 @@ trait RelevanceFeedback extends StObject {
 }
 object RelevanceFeedback {
   
-  @scala.inline
-  def apply(RelevanceValue: RelevanceType, ResultId: ResultId): RelevanceFeedback = {
+  inline def apply(RelevanceValue: RelevanceType, ResultId: ResultId): RelevanceFeedback = {
     val __obj = js.Dynamic.literal(RelevanceValue = RelevanceValue.asInstanceOf[js.Any], ResultId = ResultId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelevanceFeedback]
   }
   
-  @scala.inline
-  implicit class RelevanceFeedbackMutableBuilder[Self <: RelevanceFeedback] (val x: Self) extends AnyVal {
+  extension [Self <: RelevanceFeedback](x: Self) {
     
-    @scala.inline
-    def setRelevanceValue(value: RelevanceType): Self = StObject.set(x, "RelevanceValue", value.asInstanceOf[js.Any])
+    inline def setRelevanceValue(value: RelevanceType): Self = StObject.set(x, "RelevanceValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultId(value: ResultId): Self = StObject.set(x, "ResultId", value.asInstanceOf[js.Any])
+    inline def setResultId(value: ResultId): Self = StObject.set(x, "ResultId", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait CurrentSlide extends StObject {
 }
 object CurrentSlide {
   
-  @scala.inline
-  def apply(currentSlide: Double, numberOfSlides: Double): CurrentSlide = {
+  inline def apply(currentSlide: Double, numberOfSlides: Double): CurrentSlide = {
     val __obj = js.Dynamic.literal(currentSlide = currentSlide.asInstanceOf[js.Any], numberOfSlides = numberOfSlides.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentSlide]
   }
   
-  @scala.inline
-  implicit class CurrentSlideMutableBuilder[Self <: CurrentSlide] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentSlide](x: Self) {
     
-    @scala.inline
-    def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
+    inline def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfSlides(value: Double): Self = StObject.set(x, "numberOfSlides", value.asInstanceOf[js.Any])
+    inline def setNumberOfSlides(value: Double): Self = StObject.set(x, "numberOfSlides", value.asInstanceOf[js.Any])
   }
 }

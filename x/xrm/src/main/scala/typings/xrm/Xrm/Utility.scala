@@ -214,32 +214,24 @@ object Utility {
   }
   object FormOpenParameters {
     
-    @scala.inline
-    def apply(): FormOpenParameters = {
+    inline def apply(): FormOpenParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormOpenParameters]
     }
     
-    @scala.inline
-    implicit class FormOpenParametersMutableBuilder[Self <: FormOpenParameters] (val x: Self) extends AnyVal {
+    extension [Self <: FormOpenParameters](x: Self) {
       
-      @scala.inline
-      def setCmdbar(value: CmdBarDisplay): Self = StObject.set(x, "cmdbar", value.asInstanceOf[js.Any])
+      inline def setCmdbar(value: CmdBarDisplay): Self = StObject.set(x, "cmdbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCmdbarUndefined: Self = StObject.set(x, "cmdbar", js.undefined)
+      inline def setCmdbarUndefined: Self = StObject.set(x, "cmdbar", js.undefined)
       
-      @scala.inline
-      def setFormid(value: String): Self = StObject.set(x, "formid", value.asInstanceOf[js.Any])
+      inline def setFormid(value: String): Self = StObject.set(x, "formid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormidUndefined: Self = StObject.set(x, "formid", js.undefined)
+      inline def setFormidUndefined: Self = StObject.set(x, "formid", js.undefined)
       
-      @scala.inline
-      def setNavbar(value: NavBarDisplay): Self = StObject.set(x, "navbar", value.asInstanceOf[js.Any])
+      inline def setNavbar(value: NavBarDisplay): Self = StObject.set(x, "navbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavbarUndefined: Self = StObject.set(x, "navbar", js.undefined)
+      inline def setNavbarUndefined: Self = StObject.set(x, "navbar", js.undefined)
     }
   }
   
@@ -266,17 +258,14 @@ object Utility {
   }
   object WindowOptions {
     
-    @scala.inline
-    def apply(openInNewWindow: Boolean): WindowOptions = {
+    inline def apply(openInNewWindow: Boolean): WindowOptions = {
       val __obj = js.Dynamic.literal(openInNewWindow = openInNewWindow.asInstanceOf[js.Any])
       __obj.asInstanceOf[WindowOptions]
     }
     
-    @scala.inline
-    implicit class WindowOptionsMutableBuilder[Self <: WindowOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WindowOptions](x: Self) {
       
-      @scala.inline
-      def setOpenInNewWindow(value: Boolean): Self = StObject.set(x, "openInNewWindow", value.asInstanceOf[js.Any])
+      inline def setOpenInNewWindow(value: Boolean): Self = StObject.set(x, "openInNewWindow", value.asInstanceOf[js.Any])
     }
   }
 }

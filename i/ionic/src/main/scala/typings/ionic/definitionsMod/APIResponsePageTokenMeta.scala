@@ -14,25 +14,19 @@ trait APIResponsePageTokenMeta
 }
 object APIResponsePageTokenMeta {
   
-  @scala.inline
-  def apply(request_id: String, status: Double, version: String): APIResponsePageTokenMeta = {
+  inline def apply(request_id: String, status: Double, version: String): APIResponsePageTokenMeta = {
     val __obj = js.Dynamic.literal(request_id = request_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIResponsePageTokenMeta]
   }
   
-  @scala.inline
-  implicit class APIResponsePageTokenMetaMutableBuilder[Self <: APIResponsePageTokenMeta] (val x: Self) extends AnyVal {
+  extension [Self <: APIResponsePageTokenMeta](x: Self) {
     
-    @scala.inline
-    def setNext_page_token(value: String): Self = StObject.set(x, "next_page_token", value.asInstanceOf[js.Any])
+    inline def setNext_page_token(value: String): Self = StObject.set(x, "next_page_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_page_tokenUndefined: Self = StObject.set(x, "next_page_token", js.undefined)
+    inline def setNext_page_tokenUndefined: Self = StObject.set(x, "next_page_token", js.undefined)
     
-    @scala.inline
-    def setPrev_page_token(value: String): Self = StObject.set(x, "prev_page_token", value.asInstanceOf[js.Any])
+    inline def setPrev_page_token(value: String): Self = StObject.set(x, "prev_page_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrev_page_tokenUndefined: Self = StObject.set(x, "prev_page_token", js.undefined)
+    inline def setPrev_page_tokenUndefined: Self = StObject.set(x, "prev_page_token", js.undefined)
   }
 }

@@ -47,61 +47,43 @@ trait NodeSpec extends StObject {
 }
 object NodeSpec {
   
-  @scala.inline
-  def apply(): NodeSpec = {
+  inline def apply(): NodeSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeSpec]
   }
   
-  @scala.inline
-  implicit class NodeSpecMutableBuilder[Self <: NodeSpec] (val x: Self) extends AnyVal {
+  extension [Self <: NodeSpec](x: Self) {
     
-    @scala.inline
-    def setConfigSource(value: Input[NodeConfigSource]): Self = StObject.set(x, "configSource", value.asInstanceOf[js.Any])
+    inline def setConfigSource(value: Input[NodeConfigSource]): Self = StObject.set(x, "configSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigSourceUndefined: Self = StObject.set(x, "configSource", js.undefined)
+    inline def setConfigSourceUndefined: Self = StObject.set(x, "configSource", js.undefined)
     
-    @scala.inline
-    def setExternalID(value: Input[String]): Self = StObject.set(x, "externalID", value.asInstanceOf[js.Any])
+    inline def setExternalID(value: Input[String]): Self = StObject.set(x, "externalID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIDUndefined: Self = StObject.set(x, "externalID", js.undefined)
+    inline def setExternalIDUndefined: Self = StObject.set(x, "externalID", js.undefined)
     
-    @scala.inline
-    def setPodCIDR(value: Input[String]): Self = StObject.set(x, "podCIDR", value.asInstanceOf[js.Any])
+    inline def setPodCIDR(value: Input[String]): Self = StObject.set(x, "podCIDR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodCIDRUndefined: Self = StObject.set(x, "podCIDR", js.undefined)
+    inline def setPodCIDRUndefined: Self = StObject.set(x, "podCIDR", js.undefined)
     
-    @scala.inline
-    def setPodCIDRs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "podCIDRs", value.asInstanceOf[js.Any])
+    inline def setPodCIDRs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "podCIDRs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodCIDRsUndefined: Self = StObject.set(x, "podCIDRs", js.undefined)
+    inline def setPodCIDRsUndefined: Self = StObject.set(x, "podCIDRs", js.undefined)
     
-    @scala.inline
-    def setPodCIDRsVarargs(value: Input[String]*): Self = StObject.set(x, "podCIDRs", js.Array(value :_*))
+    inline def setPodCIDRsVarargs(value: Input[String]*): Self = StObject.set(x, "podCIDRs", js.Array(value :_*))
     
-    @scala.inline
-    def setProviderID(value: Input[String]): Self = StObject.set(x, "providerID", value.asInstanceOf[js.Any])
+    inline def setProviderID(value: Input[String]): Self = StObject.set(x, "providerID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderIDUndefined: Self = StObject.set(x, "providerID", js.undefined)
+    inline def setProviderIDUndefined: Self = StObject.set(x, "providerID", js.undefined)
     
-    @scala.inline
-    def setTaints(value: Input[js.Array[Input[Taint]]]): Self = StObject.set(x, "taints", value.asInstanceOf[js.Any])
+    inline def setTaints(value: Input[js.Array[Input[Taint]]]): Self = StObject.set(x, "taints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaintsUndefined: Self = StObject.set(x, "taints", js.undefined)
+    inline def setTaintsUndefined: Self = StObject.set(x, "taints", js.undefined)
     
-    @scala.inline
-    def setTaintsVarargs(value: Input[Taint]*): Self = StObject.set(x, "taints", js.Array(value :_*))
+    inline def setTaintsVarargs(value: Input[Taint]*): Self = StObject.set(x, "taints", js.Array(value :_*))
     
-    @scala.inline
-    def setUnschedulable(value: Input[Boolean]): Self = StObject.set(x, "unschedulable", value.asInstanceOf[js.Any])
+    inline def setUnschedulable(value: Input[Boolean]): Self = StObject.set(x, "unschedulable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnschedulableUndefined: Self = StObject.set(x, "unschedulable", js.undefined)
+    inline def setUnschedulableUndefined: Self = StObject.set(x, "unschedulable", js.undefined)
   }
 }

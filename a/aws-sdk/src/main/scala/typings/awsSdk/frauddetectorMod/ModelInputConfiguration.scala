@@ -33,40 +33,29 @@ trait ModelInputConfiguration extends StObject {
 }
 object ModelInputConfiguration {
   
-  @scala.inline
-  def apply(useEventVariables: UseEventVariables): ModelInputConfiguration = {
+  inline def apply(useEventVariables: UseEventVariables): ModelInputConfiguration = {
     val __obj = js.Dynamic.literal(useEventVariables = useEventVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelInputConfiguration]
   }
   
-  @scala.inline
-  implicit class ModelInputConfigurationMutableBuilder[Self <: ModelInputConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ModelInputConfiguration](x: Self) {
     
-    @scala.inline
-    def setCsvInputTemplate(value: String): Self = StObject.set(x, "csvInputTemplate", value.asInstanceOf[js.Any])
+    inline def setCsvInputTemplate(value: String): Self = StObject.set(x, "csvInputTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvInputTemplateUndefined: Self = StObject.set(x, "csvInputTemplate", js.undefined)
+    inline def setCsvInputTemplateUndefined: Self = StObject.set(x, "csvInputTemplate", js.undefined)
     
-    @scala.inline
-    def setEventTypeName(value: identifier): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
+    inline def setEventTypeName(value: identifier): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeNameUndefined: Self = StObject.set(x, "eventTypeName", js.undefined)
+    inline def setEventTypeNameUndefined: Self = StObject.set(x, "eventTypeName", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ModelInputDataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ModelInputDataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setJsonInputTemplate(value: String): Self = StObject.set(x, "jsonInputTemplate", value.asInstanceOf[js.Any])
+    inline def setJsonInputTemplate(value: String): Self = StObject.set(x, "jsonInputTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonInputTemplateUndefined: Self = StObject.set(x, "jsonInputTemplate", js.undefined)
+    inline def setJsonInputTemplateUndefined: Self = StObject.set(x, "jsonInputTemplate", js.undefined)
     
-    @scala.inline
-    def setUseEventVariables(value: UseEventVariables): Self = StObject.set(x, "useEventVariables", value.asInstanceOf[js.Any])
+    inline def setUseEventVariables(value: UseEventVariables): Self = StObject.set(x, "useEventVariables", value.asInstanceOf[js.Any])
   }
 }

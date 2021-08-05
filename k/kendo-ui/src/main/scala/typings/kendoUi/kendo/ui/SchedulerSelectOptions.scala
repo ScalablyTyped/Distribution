@@ -19,49 +19,35 @@ trait SchedulerSelectOptions extends StObject {
 }
 object SchedulerSelectOptions {
   
-  @scala.inline
-  def apply(): SchedulerSelectOptions = {
+  inline def apply(): SchedulerSelectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerSelectOptions]
   }
   
-  @scala.inline
-  implicit class SchedulerSelectOptionsMutableBuilder[Self <: SchedulerSelectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerSelectOptions](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setEvents(value: js.Array[js.Any | SchedulerEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[js.Any | SchedulerEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: (js.Any | SchedulerEvent)*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: (js.Any | SchedulerEvent)*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setIsAllDay(value: Boolean): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
+    inline def setIsAllDay(value: Boolean): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAllDayUndefined: Self = StObject.set(x, "isAllDay", js.undefined)
+    inline def setIsAllDayUndefined: Self = StObject.set(x, "isAllDay", js.undefined)
     
-    @scala.inline
-    def setResources(value: js.Array[js.Any]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[js.Any]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: js.Any*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: js.Any*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

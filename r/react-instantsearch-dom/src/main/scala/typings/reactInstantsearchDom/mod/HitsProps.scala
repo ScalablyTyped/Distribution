@@ -12,19 +12,15 @@ trait HitsProps[T] extends StObject {
 }
 object HitsProps {
   
-  @scala.inline
-  def apply[T](): HitsProps[T] = {
+  inline def apply[T](): HitsProps[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HitsProps[T]]
   }
   
-  @scala.inline
-  implicit class HitsPropsMutableBuilder[Self <: HitsProps[?], T] (val x: Self & HitsProps[T]) extends AnyVal {
+  extension [Self <: HitsProps[?], T](x: Self & HitsProps[T]) {
     
-    @scala.inline
-    def setHitComponent(value: ComponentType[Hit[T]]): Self = StObject.set(x, "hitComponent", value.asInstanceOf[js.Any])
+    inline def setHitComponent(value: ComponentType[Hit[T]]): Self = StObject.set(x, "hitComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitComponentUndefined: Self = StObject.set(x, "hitComponent", js.undefined)
+    inline def setHitComponentUndefined: Self = StObject.set(x, "hitComponent", js.undefined)
   }
 }

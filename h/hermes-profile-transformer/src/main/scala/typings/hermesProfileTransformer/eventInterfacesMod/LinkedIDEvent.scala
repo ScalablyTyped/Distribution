@@ -21,22 +21,17 @@ trait LinkedIDEvent
 }
 object LinkedIDEvent {
   
-  @scala.inline
-  def apply(args: Linkedid, id: Double, ph: LINKED_ID_EVENTS): LinkedIDEvent = {
+  inline def apply(args: Linkedid, id: Double, ph: LINKED_ID_EVENTS): LinkedIDEvent = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkedIDEvent]
   }
   
-  @scala.inline
-  implicit class LinkedIDEventMutableBuilder[Self <: LinkedIDEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LinkedIDEvent](x: Self) {
     
-    @scala.inline
-    def setArgs(value: Linkedid): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Linkedid): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPh(value: LINKED_ID_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: LINKED_ID_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }
 }

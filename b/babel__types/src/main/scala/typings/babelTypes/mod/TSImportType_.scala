@@ -22,32 +22,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSImportType_ {
   
-  @scala.inline
-  def apply(argument: StringLiteral_): TSImportType_ = {
+  inline def apply(argument: StringLiteral_): TSImportType_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, qualifier = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("TSImportType")
     __obj.asInstanceOf[TSImportType_]
   }
   
-  @scala.inline
-  implicit class TSImportType_MutableBuilder[Self <: TSImportType_] (val x: Self) extends AnyVal {
+  extension [Self <: TSImportType_](x: Self) {
     
-    @scala.inline
-    def setArgument(value: StringLiteral_): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: StringLiteral_): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifier(value: TSEntityName): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: TSEntityName): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifierNull: Self = StObject.set(x, "qualifier", null)
+    inline def setQualifierNull: Self = StObject.set(x, "qualifier", null)
     
-    @scala.inline
-    def setType(value: TSImportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSImportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParameters(value: TSTypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TSTypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
+    inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
   }
 }

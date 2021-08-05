@@ -13,16 +13,13 @@ trait KinesisStreamsInputUpdate extends StObject {
 }
 object KinesisStreamsInputUpdate {
   
-  @scala.inline
-  def apply(ResourceARNUpdate: ResourceARN): KinesisStreamsInputUpdate = {
+  inline def apply(ResourceARNUpdate: ResourceARN): KinesisStreamsInputUpdate = {
     val __obj = js.Dynamic.literal(ResourceARNUpdate = ResourceARNUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisStreamsInputUpdate]
   }
   
-  @scala.inline
-  implicit class KinesisStreamsInputUpdateMutableBuilder[Self <: KinesisStreamsInputUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisStreamsInputUpdate](x: Self) {
     
-    @scala.inline
-    def setResourceARNUpdate(value: ResourceARN): Self = StObject.set(x, "ResourceARNUpdate", value.asInstanceOf[js.Any])
+    inline def setResourceARNUpdate(value: ResourceARN): Self = StObject.set(x, "ResourceARNUpdate", value.asInstanceOf[js.Any])
   }
 }

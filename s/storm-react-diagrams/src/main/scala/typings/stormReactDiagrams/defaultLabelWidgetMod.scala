@@ -24,17 +24,14 @@ object defaultLabelWidgetMod {
   }
   object DefaultLabelWidgetProps {
     
-    @scala.inline
-    def apply(model: DefaultLabelModel): DefaultLabelWidgetProps = {
+    inline def apply(model: DefaultLabelModel): DefaultLabelWidgetProps = {
       val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultLabelWidgetProps]
     }
     
-    @scala.inline
-    implicit class DefaultLabelWidgetPropsMutableBuilder[Self <: DefaultLabelWidgetProps] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultLabelWidgetProps](x: Self) {
       
-      @scala.inline
-      def setModel(value: DefaultLabelModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: DefaultLabelModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     }
   }
 }

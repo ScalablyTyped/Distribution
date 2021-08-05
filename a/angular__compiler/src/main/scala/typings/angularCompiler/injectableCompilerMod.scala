@@ -15,18 +15,18 @@ object injectableCompilerMod {
   class InjectableCompiler protected () extends StObject {
     def this(reflector: CompileReflector, alwaysGenerateDef: Boolean) = this()
     
-    var alwaysGenerateDef: js.Any = js.native
+    /* private */ var alwaysGenerateDef: js.Any = js.native
     
     def compile(injectable: CompileInjectableMetadata, ctx: OutputContext): Unit = js.native
     
-    var depsArray: js.Any = js.native
+    /* private */ var depsArray: js.Any = js.native
     
     def factoryFor(injectable: CompileInjectableMetadata, ctx: OutputContext): Expression = js.native
     
     def injectableDef(injectable: CompileInjectableMetadata, ctx: OutputContext): Expression = js.native
     
-    var reflector: js.Any = js.native
+    /* private */ var reflector: js.Any = js.native
     
-    var tokenInjector: js.Any = js.native
+    /* private */ var tokenInjector: js.Any = js.native
   }
 }

@@ -28,8 +28,7 @@ trait AdminUpdateAuthEventFeedbackRequest extends StObject {
 }
 object AdminUpdateAuthEventFeedbackRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EventId: EventIdType,
     FeedbackValue: FeedbackValueType,
     UserPoolId: UserPoolIdType,
@@ -39,19 +38,14 @@ object AdminUpdateAuthEventFeedbackRequest {
     __obj.asInstanceOf[AdminUpdateAuthEventFeedbackRequest]
   }
   
-  @scala.inline
-  implicit class AdminUpdateAuthEventFeedbackRequestMutableBuilder[Self <: AdminUpdateAuthEventFeedbackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AdminUpdateAuthEventFeedbackRequest](x: Self) {
     
-    @scala.inline
-    def setEventId(value: EventIdType): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: EventIdType): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackValue(value: FeedbackValueType): Self = StObject.set(x, "FeedbackValue", value.asInstanceOf[js.Any])
+    inline def setFeedbackValue(value: FeedbackValueType): Self = StObject.set(x, "FeedbackValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

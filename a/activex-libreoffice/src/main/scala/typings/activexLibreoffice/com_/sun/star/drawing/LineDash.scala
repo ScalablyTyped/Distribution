@@ -27,31 +27,23 @@ trait LineDash extends StObject {
 }
 object LineDash {
   
-  @scala.inline
-  def apply(DashLen: Double, Dashes: Double, Distance: Double, DotLen: Double, Dots: Double, Style: DashStyle): LineDash = {
+  inline def apply(DashLen: Double, Dashes: Double, Distance: Double, DotLen: Double, Dots: Double, Style: DashStyle): LineDash = {
     val __obj = js.Dynamic.literal(DashLen = DashLen.asInstanceOf[js.Any], Dashes = Dashes.asInstanceOf[js.Any], Distance = Distance.asInstanceOf[js.Any], DotLen = DotLen.asInstanceOf[js.Any], Dots = Dots.asInstanceOf[js.Any], Style = Style.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineDash]
   }
   
-  @scala.inline
-  implicit class LineDashMutableBuilder[Self <: LineDash] (val x: Self) extends AnyVal {
+  extension [Self <: LineDash](x: Self) {
     
-    @scala.inline
-    def setDashLen(value: Double): Self = StObject.set(x, "DashLen", value.asInstanceOf[js.Any])
+    inline def setDashLen(value: Double): Self = StObject.set(x, "DashLen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashes(value: Double): Self = StObject.set(x, "Dashes", value.asInstanceOf[js.Any])
+    inline def setDashes(value: Double): Self = StObject.set(x, "Dashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotLen(value: Double): Self = StObject.set(x, "DotLen", value.asInstanceOf[js.Any])
+    inline def setDotLen(value: Double): Self = StObject.set(x, "DotLen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDots(value: Double): Self = StObject.set(x, "Dots", value.asInstanceOf[js.Any])
+    inline def setDots(value: Double): Self = StObject.set(x, "Dots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: DashStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: DashStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
   }
 }

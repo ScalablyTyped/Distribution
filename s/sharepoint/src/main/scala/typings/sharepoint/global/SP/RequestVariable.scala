@@ -18,6 +18,5 @@ object RequestVariable {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def newObject(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.RequestVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.RequestVariable]
+  inline def newObject(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.RequestVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.RequestVariable]
 }

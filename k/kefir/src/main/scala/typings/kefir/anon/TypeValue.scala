@@ -16,20 +16,16 @@ trait TypeValue[E]
 }
 object TypeValue {
   
-  @scala.inline
-  def apply[E](value: E): TypeValue[E] = {
+  inline def apply[E](value: E): TypeValue[E] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[TypeValue[E]]
   }
   
-  @scala.inline
-  implicit class TypeValueMutableBuilder[Self <: TypeValue[?], E] (val x: Self & TypeValue[E]) extends AnyVal {
+  extension [Self <: TypeValue[?], E](x: Self & TypeValue[E]) {
     
-    @scala.inline
-    def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: E): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: E): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -33,43 +33,31 @@ trait ParallelismConfigurationDescription extends StObject {
 }
 object ParallelismConfigurationDescription {
   
-  @scala.inline
-  def apply(): ParallelismConfigurationDescription = {
+  inline def apply(): ParallelismConfigurationDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParallelismConfigurationDescription]
   }
   
-  @scala.inline
-  implicit class ParallelismConfigurationDescriptionMutableBuilder[Self <: ParallelismConfigurationDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ParallelismConfigurationDescription](x: Self) {
     
-    @scala.inline
-    def setAutoScalingEnabled(value: BooleanObject): Self = StObject.set(x, "AutoScalingEnabled", value.asInstanceOf[js.Any])
+    inline def setAutoScalingEnabled(value: BooleanObject): Self = StObject.set(x, "AutoScalingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingEnabledUndefined: Self = StObject.set(x, "AutoScalingEnabled", js.undefined)
+    inline def setAutoScalingEnabledUndefined: Self = StObject.set(x, "AutoScalingEnabled", js.undefined)
     
-    @scala.inline
-    def setConfigurationType(value: ConfigurationType): Self = StObject.set(x, "ConfigurationType", value.asInstanceOf[js.Any])
+    inline def setConfigurationType(value: ConfigurationType): Self = StObject.set(x, "ConfigurationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationTypeUndefined: Self = StObject.set(x, "ConfigurationType", js.undefined)
+    inline def setConfigurationTypeUndefined: Self = StObject.set(x, "ConfigurationType", js.undefined)
     
-    @scala.inline
-    def setCurrentParallelism(value: Parallelism): Self = StObject.set(x, "CurrentParallelism", value.asInstanceOf[js.Any])
+    inline def setCurrentParallelism(value: Parallelism): Self = StObject.set(x, "CurrentParallelism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentParallelismUndefined: Self = StObject.set(x, "CurrentParallelism", js.undefined)
+    inline def setCurrentParallelismUndefined: Self = StObject.set(x, "CurrentParallelism", js.undefined)
     
-    @scala.inline
-    def setParallelism(value: Parallelism): Self = StObject.set(x, "Parallelism", value.asInstanceOf[js.Any])
+    inline def setParallelism(value: Parallelism): Self = StObject.set(x, "Parallelism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelismPerKPU(value: ParallelismPerKPU): Self = StObject.set(x, "ParallelismPerKPU", value.asInstanceOf[js.Any])
+    inline def setParallelismPerKPU(value: ParallelismPerKPU): Self = StObject.set(x, "ParallelismPerKPU", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelismPerKPUUndefined: Self = StObject.set(x, "ParallelismPerKPU", js.undefined)
+    inline def setParallelismPerKPUUndefined: Self = StObject.set(x, "ParallelismPerKPU", js.undefined)
     
-    @scala.inline
-    def setParallelismUndefined: Self = StObject.set(x, "Parallelism", js.undefined)
+    inline def setParallelismUndefined: Self = StObject.set(x, "Parallelism", js.undefined)
   }
 }

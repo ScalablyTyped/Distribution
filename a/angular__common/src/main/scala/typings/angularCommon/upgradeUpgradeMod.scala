@@ -42,10 +42,8 @@ object upgradeUpgradeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def config(): ModuleWithProviders[LocationUpgradeModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[ModuleWithProviders[LocationUpgradeModule]]
-    @scala.inline
-    def config(config: LocationUpgradeConfig): ModuleWithProviders[LocationUpgradeModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[LocationUpgradeModule]]
+    inline def config(): ModuleWithProviders[LocationUpgradeModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[ModuleWithProviders[LocationUpgradeModule]]
+    inline def config(config: LocationUpgradeConfig): ModuleWithProviders[LocationUpgradeModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[LocationUpgradeModule]]
   }
   
   @JSImport("@angular/common/upgrade/upgrade", "UrlCodec")
@@ -140,16 +138,16 @@ object upgradeUpgradeMod {
       locationStrategy: LocationStrategy
     ) = this()
     
-    @JSName("$$absUrl")
+    /* private */ @JSName("$$absUrl")
     var DollarDollarabsUrl: js.Any = js.native
     
-    @JSName("$$changeListeners")
+    /* private */ @JSName("$$changeListeners")
     var DollarDollarchangeListeners: js.Any = js.native
     
-    @JSName("$$hash")
+    /* private */ @JSName("$$hash")
     var DollarDollarhash: js.Any = js.native
     
-    @JSName("$$host")
+    /* private */ @JSName("$$host")
     var DollarDollarhost: js.Any = js.native
     
     /**
@@ -171,25 +169,25 @@ object upgradeUpgradeMod {
     @JSName("$$parseLinkUrl")
     def DollarDollarparseLinkUrl(url: String, relHref: String): Boolean = js.native
     
-    @JSName("$$path")
+    /* private */ @JSName("$$path")
     var DollarDollarpath: js.Any = js.native
     
-    @JSName("$$port")
+    /* private */ @JSName("$$port")
     var DollarDollarport: js.Any = js.native
     
-    @JSName("$$protocol")
+    /* private */ @JSName("$$protocol")
     var DollarDollarprotocol: js.Any = js.native
     
-    @JSName("$$replace")
+    /* private */ @JSName("$$replace")
     var DollarDollarreplace: js.Any = js.native
     
-    @JSName("$$search")
+    /* private */ @JSName("$$search")
     var DollarDollarsearch: js.Any = js.native
     
-    @JSName("$$state")
+    /* private */ @JSName("$$state")
     var DollarDollarstate: js.Any = js.native
     
-    @JSName("$$url")
+    /* private */ @JSName("$$url")
     var DollarDollarurl: js.Any = js.native
     
     /**
@@ -210,17 +208,17 @@ object upgradeUpgradeMod {
       * This function emulates the $browser.state() function from AngularJS. It will cause
       * history.state to be cached unless changed with deep equality check.
       */
-    var browserState: js.Any = js.native
+    /* private */ var browserState: js.Any = js.native
     
-    var browserUrl: js.Any = js.native
+    /* private */ var browserUrl: js.Any = js.native
     
-    var cacheState: js.Any = js.native
+    /* private */ var cacheState: js.Any = js.native
     
-    var cachedState: js.Any = js.native
+    /* private */ var cachedState: js.Any = js.native
     
-    var composeUrls: js.Any = js.native
+    /* private */ var composeUrls: js.Any = js.native
     
-    var getServerBase: js.Any = js.native
+    /* private */ var getServerBase: js.Any = js.native
     
     def hash(): this.type = js.native
     def hash(hash: String): this.type = js.native
@@ -259,19 +257,19 @@ object upgradeUpgradeMod {
       */
     def host(): String = js.native
     
-    var initalizing: js.Any = js.native
+    /* private */ var initalizing: js.Any = js.native
     
-    var initialize: js.Any = js.native
+    /* private */ var initialize: js.Any = js.native
     
-    var lastBrowserUrl: js.Any = js.native
+    /* private */ var lastBrowserUrl: js.Any = js.native
     
-    var lastCachedState: js.Any = js.native
+    /* private */ var lastCachedState: js.Any = js.native
     
-    var lastHistoryState: js.Any = js.native
+    /* private */ var lastHistoryState: js.Any = js.native
     
-    var location: js.Any = js.native
+    /* private */ var location: js.Any = js.native
     
-    var locationStrategy: js.Any = js.native
+    /* private */ var locationStrategy: js.Any = js.native
     
     /**
       * Registers listeners for URL changes. This API is used to catch updates performed by the
@@ -294,7 +292,7 @@ object upgradeUpgradeMod {
       err: js.Function1[/* e */ Error, Unit]
     ): Unit = js.native
     
-    var parseAppUrl: js.Any = js.native
+    /* private */ var parseAppUrl: js.Any = js.native
     
     def path(): this.type = js.native
     def path(path: String): this.type = js.native
@@ -315,7 +313,7 @@ object upgradeUpgradeMod {
     @JSName("path")
     def path_String(): String = js.native
     
-    var platformLocation: js.Any = js.native
+    /* private */ var platformLocation: js.Any = js.native
     
     /**
       * Retrieves the port of the current URL.
@@ -345,7 +343,7 @@ object upgradeUpgradeMod {
       */
     def replace(): this.type = js.native
     
-    var resetBrowserUpdate: js.Any = js.native
+    /* private */ var resetBrowserUpdate: js.Any = js.native
     
     /**
       * Retrieves a map of the search parameters of the current URL, or changes a search
@@ -402,7 +400,7 @@ object upgradeUpgradeMod {
     def search(search: Double, paramValue: Boolean): this.type = js.native
     def search(search: Double, paramValue: Double): this.type = js.native
     
-    var setBrowserUrlWithFallback: js.Any = js.native
+    /* private */ var setBrowserUrlWithFallback: js.Any = js.native
     
     /**
       * Retrieves the history state object when called without any parameter.
@@ -418,9 +416,9 @@ object upgradeUpgradeMod {
     def state(): js.Any = js.native
     def state(state: js.Any): this.type = js.native
     
-    var stripBaseUrl: js.Any = js.native
+    /* private */ var stripBaseUrl: js.Any = js.native
     
-    var updateBrowser: js.Any = js.native
+    /* private */ var updateBrowser: js.Any = js.native
     
     /**
       * Retrieves the current URL, or sets a new URL. When setting a URL,
@@ -435,9 +433,9 @@ object upgradeUpgradeMod {
     def url(): String = js.native
     def url(url: String): this.type = js.native
     
-    var urlChanges: js.Any = js.native
+    /* private */ var urlChanges: js.Any = js.native
     
-    var urlCodec: js.Any = js.native
+    /* private */ var urlCodec: js.Any = js.native
   }
   
   @JSImport("@angular/common/upgrade/upgrade", "$locationShimProvider")
@@ -471,32 +469,26 @@ object upgradeUpgradeMod {
     def html5Mode(): Unit = js.native
     def html5Mode(mode: js.Any): Unit = js.native
     
-    var location: js.Any = js.native
+    /* private */ var location: js.Any = js.native
     
-    var locationStrategy: js.Any = js.native
+    /* private */ var locationStrategy: js.Any = js.native
     
-    var ngUpgrade: js.Any = js.native
+    /* private */ var ngUpgrade: js.Any = js.native
     
-    var platformLocation: js.Any = js.native
+    /* private */ var platformLocation: js.Any = js.native
     
-    var urlCodec: js.Any = js.native
+    /* private */ var urlCodec: js.Any = js.native
   }
   
-  @scala.inline
-  def ɵangularPackagesCommonUpgradeUpgradeA(config: LocationUpgradeConfig): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_a")(config.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def ɵangularPackagesCommonUpgradeUpgradeA(config: LocationUpgradeConfig, appBaseHref: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_a")(config.asInstanceOf[js.Any], appBaseHref.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def ɵangularPackagesCommonUpgradeUpgradeA(config: LocationUpgradeConfig): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_a")(config.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ɵangularPackagesCommonUpgradeUpgradeA(config: LocationUpgradeConfig, appBaseHref: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_a")(config.asInstanceOf[js.Any], appBaseHref.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def ɵangularPackagesCommonUpgradeUpgradeB(config: LocationUpgradeConfig): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_b")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def ɵangularPackagesCommonUpgradeUpgradeB(config: LocationUpgradeConfig): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_b")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def ɵangularPackagesCommonUpgradeUpgradeC(platformLocation: PlatformLocation, baseHref: String): HashLocationStrategy | PathLocationStrategy = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_c")(platformLocation.asInstanceOf[js.Any], baseHref.asInstanceOf[js.Any])).asInstanceOf[HashLocationStrategy | PathLocationStrategy]
-  @scala.inline
-  def ɵangularPackagesCommonUpgradeUpgradeC(platformLocation: PlatformLocation, baseHref: String, options: LocationUpgradeConfig): HashLocationStrategy | PathLocationStrategy = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_c")(platformLocation.asInstanceOf[js.Any], baseHref.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HashLocationStrategy | PathLocationStrategy]
+  inline def ɵangularPackagesCommonUpgradeUpgradeC(platformLocation: PlatformLocation, baseHref: String): HashLocationStrategy | PathLocationStrategy = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_c")(platformLocation.asInstanceOf[js.Any], baseHref.asInstanceOf[js.Any])).asInstanceOf[HashLocationStrategy | PathLocationStrategy]
+  inline def ɵangularPackagesCommonUpgradeUpgradeC(platformLocation: PlatformLocation, baseHref: String, options: LocationUpgradeConfig): HashLocationStrategy | PathLocationStrategy = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_upgrade_upgrade_c")(platformLocation.asInstanceOf[js.Any], baseHref.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HashLocationStrategy | PathLocationStrategy]
   
-  @scala.inline
-  def ɵangularPackagesCommonUpgradeUpgradeD(
+  inline def ɵangularPackagesCommonUpgradeUpgradeD(
     ngUpgrade: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpgradeModule */ js.Any,
     location: Location,
     platformLocation: PlatformLocation,
@@ -534,44 +526,32 @@ object upgradeUpgradeMod {
   }
   object LocationUpgradeConfig {
     
-    @scala.inline
-    def apply(): LocationUpgradeConfig = {
+    inline def apply(): LocationUpgradeConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocationUpgradeConfig]
     }
     
-    @scala.inline
-    implicit class LocationUpgradeConfigMutableBuilder[Self <: LocationUpgradeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: LocationUpgradeConfig](x: Self) {
       
-      @scala.inline
-      def setAppBaseHref(value: String): Self = StObject.set(x, "appBaseHref", value.asInstanceOf[js.Any])
+      inline def setAppBaseHref(value: String): Self = StObject.set(x, "appBaseHref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppBaseHrefUndefined: Self = StObject.set(x, "appBaseHref", js.undefined)
+      inline def setAppBaseHrefUndefined: Self = StObject.set(x, "appBaseHref", js.undefined)
       
-      @scala.inline
-      def setHashPrefix(value: String): Self = StObject.set(x, "hashPrefix", value.asInstanceOf[js.Any])
+      inline def setHashPrefix(value: String): Self = StObject.set(x, "hashPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashPrefixUndefined: Self = StObject.set(x, "hashPrefix", js.undefined)
+      inline def setHashPrefixUndefined: Self = StObject.set(x, "hashPrefix", js.undefined)
       
-      @scala.inline
-      def setServerBaseHref(value: String): Self = StObject.set(x, "serverBaseHref", value.asInstanceOf[js.Any])
+      inline def setServerBaseHref(value: String): Self = StObject.set(x, "serverBaseHref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerBaseHrefUndefined: Self = StObject.set(x, "serverBaseHref", js.undefined)
+      inline def setServerBaseHrefUndefined: Self = StObject.set(x, "serverBaseHref", js.undefined)
       
-      @scala.inline
-      def setUrlCodec(value: Instantiable0[UrlCodec]): Self = StObject.set(x, "urlCodec", value.asInstanceOf[js.Any])
+      inline def setUrlCodec(value: Instantiable0[UrlCodec]): Self = StObject.set(x, "urlCodec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlCodecUndefined: Self = StObject.set(x, "urlCodec", js.undefined)
+      inline def setUrlCodecUndefined: Self = StObject.set(x, "urlCodec", js.undefined)
       
-      @scala.inline
-      def setUseHash(value: Boolean): Self = StObject.set(x, "useHash", value.asInstanceOf[js.Any])
+      inline def setUseHash(value: Boolean): Self = StObject.set(x, "useHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseHashUndefined: Self = StObject.set(x, "useHash", js.undefined)
+      inline def setUseHashUndefined: Self = StObject.set(x, "useHash", js.undefined)
     }
   }
 }

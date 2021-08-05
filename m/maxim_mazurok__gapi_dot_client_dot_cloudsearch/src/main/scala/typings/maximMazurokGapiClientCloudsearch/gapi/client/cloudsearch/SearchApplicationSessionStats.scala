@@ -14,25 +14,19 @@ trait SearchApplicationSessionStats extends StObject {
 }
 object SearchApplicationSessionStats {
   
-  @scala.inline
-  def apply(): SearchApplicationSessionStats = {
+  inline def apply(): SearchApplicationSessionStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchApplicationSessionStats]
   }
   
-  @scala.inline
-  implicit class SearchApplicationSessionStatsMutableBuilder[Self <: SearchApplicationSessionStats] (val x: Self) extends AnyVal {
+  extension [Self <: SearchApplicationSessionStats](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setSearchSessionsCount(value: String): Self = StObject.set(x, "searchSessionsCount", value.asInstanceOf[js.Any])
+    inline def setSearchSessionsCount(value: String): Self = StObject.set(x, "searchSessionsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchSessionsCountUndefined: Self = StObject.set(x, "searchSessionsCount", js.undefined)
+    inline def setSearchSessionsCountUndefined: Self = StObject.set(x, "searchSessionsCount", js.undefined)
   }
 }

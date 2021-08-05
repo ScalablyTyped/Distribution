@@ -39,43 +39,31 @@ trait SchemaHolidayCutoff extends StObject {
 }
 object SchemaHolidayCutoff {
   
-  @scala.inline
-  def apply(): SchemaHolidayCutoff = {
+  inline def apply(): SchemaHolidayCutoff = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHolidayCutoff]
   }
   
-  @scala.inline
-  implicit class SchemaHolidayCutoffMutableBuilder[Self <: SchemaHolidayCutoff] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHolidayCutoff](x: Self) {
     
-    @scala.inline
-    def setDeadlineDate(value: String): Self = StObject.set(x, "deadlineDate", value.asInstanceOf[js.Any])
+    inline def setDeadlineDate(value: String): Self = StObject.set(x, "deadlineDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadlineDateUndefined: Self = StObject.set(x, "deadlineDate", js.undefined)
+    inline def setDeadlineDateUndefined: Self = StObject.set(x, "deadlineDate", js.undefined)
     
-    @scala.inline
-    def setDeadlineHour(value: Double): Self = StObject.set(x, "deadlineHour", value.asInstanceOf[js.Any])
+    inline def setDeadlineHour(value: Double): Self = StObject.set(x, "deadlineHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadlineHourUndefined: Self = StObject.set(x, "deadlineHour", js.undefined)
+    inline def setDeadlineHourUndefined: Self = StObject.set(x, "deadlineHour", js.undefined)
     
-    @scala.inline
-    def setDeadlineTimezone(value: String): Self = StObject.set(x, "deadlineTimezone", value.asInstanceOf[js.Any])
+    inline def setDeadlineTimezone(value: String): Self = StObject.set(x, "deadlineTimezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadlineTimezoneUndefined: Self = StObject.set(x, "deadlineTimezone", js.undefined)
+    inline def setDeadlineTimezoneUndefined: Self = StObject.set(x, "deadlineTimezone", js.undefined)
     
-    @scala.inline
-    def setHolidayId(value: String): Self = StObject.set(x, "holidayId", value.asInstanceOf[js.Any])
+    inline def setHolidayId(value: String): Self = StObject.set(x, "holidayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHolidayIdUndefined: Self = StObject.set(x, "holidayId", js.undefined)
+    inline def setHolidayIdUndefined: Self = StObject.set(x, "holidayId", js.undefined)
     
-    @scala.inline
-    def setVisibleFromDate(value: String): Self = StObject.set(x, "visibleFromDate", value.asInstanceOf[js.Any])
+    inline def setVisibleFromDate(value: String): Self = StObject.set(x, "visibleFromDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleFromDateUndefined: Self = StObject.set(x, "visibleFromDate", js.undefined)
+    inline def setVisibleFromDateUndefined: Self = StObject.set(x, "visibleFromDate", js.undefined)
   }
 }

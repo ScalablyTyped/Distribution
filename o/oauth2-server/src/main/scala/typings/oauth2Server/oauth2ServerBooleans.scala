@@ -11,6 +11,5 @@ object oauth2ServerBooleans {
   sealed trait `false`
     extends StObject
        with _Falsey
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

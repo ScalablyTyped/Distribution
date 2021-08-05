@@ -12,19 +12,15 @@ trait DialogCloseEvent
 }
 object DialogCloseEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Dialog): DialogCloseEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Dialog): DialogCloseEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogCloseEvent]
   }
   
-  @scala.inline
-  implicit class DialogCloseEventMutableBuilder[Self <: DialogCloseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DialogCloseEvent](x: Self) {
     
-    @scala.inline
-    def setUserTriggered(value: Boolean): Self = StObject.set(x, "userTriggered", value.asInstanceOf[js.Any])
+    inline def setUserTriggered(value: Boolean): Self = StObject.set(x, "userTriggered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserTriggeredUndefined: Self = StObject.set(x, "userTriggered", js.undefined)
+    inline def setUserTriggeredUndefined: Self = StObject.set(x, "userTriggered", js.undefined)
   }
 }

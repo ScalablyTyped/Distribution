@@ -16,37 +16,27 @@ trait GridFSBucketOptions extends StObject {
 }
 object GridFSBucketOptions {
   
-  @scala.inline
-  def apply(): GridFSBucketOptions = {
+  inline def apply(): GridFSBucketOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridFSBucketOptions]
   }
   
-  @scala.inline
-  implicit class GridFSBucketOptionsMutableBuilder[Self <: GridFSBucketOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GridFSBucketOptions](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+    inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
     
-    @scala.inline
-    def setChunkSizeBytes(value: scala.Double): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
+    inline def setChunkSizeBytes(value: scala.Double): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
+    inline def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
-    @scala.inline
-    def setWriteConcern(value: WriteConcern): Self = StObject.set(x, "writeConcern", value.asInstanceOf[js.Any])
+    inline def setWriteConcern(value: WriteConcern): Self = StObject.set(x, "writeConcern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteConcernUndefined: Self = StObject.set(x, "writeConcern", js.undefined)
+    inline def setWriteConcernUndefined: Self = StObject.set(x, "writeConcern", js.undefined)
   }
 }

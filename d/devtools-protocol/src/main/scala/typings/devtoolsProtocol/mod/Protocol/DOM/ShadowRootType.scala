@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShadowRootType extends StObject
 object ShadowRootType {
   
-  @scala.inline
-  def closed: typings.devtoolsProtocol.devtoolsProtocolStrings.closed = "closed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.closed]
+  inline def closed: typings.devtoolsProtocol.devtoolsProtocolStrings.closed = "closed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.closed]
   
-  @scala.inline
-  def open: typings.devtoolsProtocol.devtoolsProtocolStrings.open = "open".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.open]
+  inline def open: typings.devtoolsProtocol.devtoolsProtocolStrings.open = "open".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.open]
   
-  @scala.inline
-  def `user-agent`: typings.devtoolsProtocol.devtoolsProtocolStrings.`user-agent` = "user-agent".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`user-agent`]
+  inline def `user-agent`: typings.devtoolsProtocol.devtoolsProtocolStrings.`user-agent` = "user-agent".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`user-agent`]
 }

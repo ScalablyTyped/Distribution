@@ -26,67 +26,47 @@ trait PlannerCategoryDescriptions extends StObject {
 }
 object PlannerCategoryDescriptions {
   
-  @scala.inline
-  def apply(): PlannerCategoryDescriptions = {
+  inline def apply(): PlannerCategoryDescriptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlannerCategoryDescriptions]
   }
   
-  @scala.inline
-  implicit class PlannerCategoryDescriptionsMutableBuilder[Self <: PlannerCategoryDescriptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlannerCategoryDescriptions](x: Self) {
     
-    @scala.inline
-    def setCategory1(value: NullableOption[String]): Self = StObject.set(x, "category1", value.asInstanceOf[js.Any])
+    inline def setCategory1(value: NullableOption[String]): Self = StObject.set(x, "category1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory1Null: Self = StObject.set(x, "category1", null)
+    inline def setCategory1Null: Self = StObject.set(x, "category1", null)
     
-    @scala.inline
-    def setCategory1Undefined: Self = StObject.set(x, "category1", js.undefined)
+    inline def setCategory1Undefined: Self = StObject.set(x, "category1", js.undefined)
     
-    @scala.inline
-    def setCategory2(value: NullableOption[String]): Self = StObject.set(x, "category2", value.asInstanceOf[js.Any])
+    inline def setCategory2(value: NullableOption[String]): Self = StObject.set(x, "category2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory2Null: Self = StObject.set(x, "category2", null)
+    inline def setCategory2Null: Self = StObject.set(x, "category2", null)
     
-    @scala.inline
-    def setCategory2Undefined: Self = StObject.set(x, "category2", js.undefined)
+    inline def setCategory2Undefined: Self = StObject.set(x, "category2", js.undefined)
     
-    @scala.inline
-    def setCategory3(value: NullableOption[String]): Self = StObject.set(x, "category3", value.asInstanceOf[js.Any])
+    inline def setCategory3(value: NullableOption[String]): Self = StObject.set(x, "category3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory3Null: Self = StObject.set(x, "category3", null)
+    inline def setCategory3Null: Self = StObject.set(x, "category3", null)
     
-    @scala.inline
-    def setCategory3Undefined: Self = StObject.set(x, "category3", js.undefined)
+    inline def setCategory3Undefined: Self = StObject.set(x, "category3", js.undefined)
     
-    @scala.inline
-    def setCategory4(value: NullableOption[String]): Self = StObject.set(x, "category4", value.asInstanceOf[js.Any])
+    inline def setCategory4(value: NullableOption[String]): Self = StObject.set(x, "category4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory4Null: Self = StObject.set(x, "category4", null)
+    inline def setCategory4Null: Self = StObject.set(x, "category4", null)
     
-    @scala.inline
-    def setCategory4Undefined: Self = StObject.set(x, "category4", js.undefined)
+    inline def setCategory4Undefined: Self = StObject.set(x, "category4", js.undefined)
     
-    @scala.inline
-    def setCategory5(value: NullableOption[String]): Self = StObject.set(x, "category5", value.asInstanceOf[js.Any])
+    inline def setCategory5(value: NullableOption[String]): Self = StObject.set(x, "category5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory5Null: Self = StObject.set(x, "category5", null)
+    inline def setCategory5Null: Self = StObject.set(x, "category5", null)
     
-    @scala.inline
-    def setCategory5Undefined: Self = StObject.set(x, "category5", js.undefined)
+    inline def setCategory5Undefined: Self = StObject.set(x, "category5", js.undefined)
     
-    @scala.inline
-    def setCategory6(value: NullableOption[String]): Self = StObject.set(x, "category6", value.asInstanceOf[js.Any])
+    inline def setCategory6(value: NullableOption[String]): Self = StObject.set(x, "category6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory6Null: Self = StObject.set(x, "category6", null)
+    inline def setCategory6Null: Self = StObject.set(x, "category6", null)
     
-    @scala.inline
-    def setCategory6Undefined: Self = StObject.set(x, "category6", js.undefined)
+    inline def setCategory6Undefined: Self = StObject.set(x, "category6", js.undefined)
   }
 }

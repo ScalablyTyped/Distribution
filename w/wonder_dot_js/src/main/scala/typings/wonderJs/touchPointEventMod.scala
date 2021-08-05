@@ -31,7 +31,6 @@ object touchPointEventMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(eventName: EEventName): TouchPointEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(eventName.asInstanceOf[js.Any]).asInstanceOf[TouchPointEvent]
+    inline def create(eventName: EEventName): TouchPointEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(eventName.asInstanceOf[js.Any]).asInstanceOf[TouchPointEvent]
   }
 }

@@ -14,25 +14,19 @@ trait DatabaseFileInfo extends StObject {
 }
 object DatabaseFileInfo {
   
-  @scala.inline
-  def apply(id: String, isSelected: Boolean, properties: js.Array[LocalizedPropertyInfo]): DatabaseFileInfo = {
+  inline def apply(id: String, isSelected: Boolean, properties: js.Array[LocalizedPropertyInfo]): DatabaseFileInfo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseFileInfo]
   }
   
-  @scala.inline
-  implicit class DatabaseFileInfoMutableBuilder[Self <: DatabaseFileInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseFileInfo](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Array[LocalizedPropertyInfo]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[LocalizedPropertyInfo]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(value: LocalizedPropertyInfo*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: LocalizedPropertyInfo*): Self = StObject.set(x, "properties", js.Array(value :_*))
   }
 }

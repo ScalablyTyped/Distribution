@@ -18,28 +18,21 @@ trait UpdateGlobalTableSettingsOutput extends StObject {
 }
 object UpdateGlobalTableSettingsOutput {
   
-  @scala.inline
-  def apply(): UpdateGlobalTableSettingsOutput = {
+  inline def apply(): UpdateGlobalTableSettingsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateGlobalTableSettingsOutput]
   }
   
-  @scala.inline
-  implicit class UpdateGlobalTableSettingsOutputMutableBuilder[Self <: UpdateGlobalTableSettingsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGlobalTableSettingsOutput](x: Self) {
     
-    @scala.inline
-    def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+    inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
+    inline def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
     
-    @scala.inline
-    def setReplicaSettings(value: ReplicaSettingsDescriptionList): Self = StObject.set(x, "ReplicaSettings", value.asInstanceOf[js.Any])
+    inline def setReplicaSettings(value: ReplicaSettingsDescriptionList): Self = StObject.set(x, "ReplicaSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicaSettingsUndefined: Self = StObject.set(x, "ReplicaSettings", js.undefined)
+    inline def setReplicaSettingsUndefined: Self = StObject.set(x, "ReplicaSettings", js.undefined)
     
-    @scala.inline
-    def setReplicaSettingsVarargs(value: ReplicaSettingsDescription*): Self = StObject.set(x, "ReplicaSettings", js.Array(value :_*))
+    inline def setReplicaSettingsVarargs(value: ReplicaSettingsDescription*): Self = StObject.set(x, "ReplicaSettings", js.Array(value :_*))
   }
 }

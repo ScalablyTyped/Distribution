@@ -14,23 +14,18 @@ trait CommitName extends StObject {
 }
 object CommitName {
   
-  @scala.inline
-  def apply(commit: ShaUrl, name: String, `protected`: Boolean): CommitName = {
+  inline def apply(commit: ShaUrl, name: String, `protected`: Boolean): CommitName = {
     val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitName]
   }
   
-  @scala.inline
-  implicit class CommitNameMutableBuilder[Self <: CommitName] (val x: Self) extends AnyVal {
+  extension [Self <: CommitName](x: Self) {
     
-    @scala.inline
-    def setCommit(value: ShaUrl): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: ShaUrl): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
+    inline def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
   }
 }

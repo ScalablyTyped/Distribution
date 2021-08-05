@@ -12,19 +12,15 @@ trait StyleSheetProperties extends StObject {
 }
 object StyleSheetProperties {
   
-  @scala.inline
-  def apply(flatten: js.Any => js.Any, hairlineWidth: Double): StyleSheetProperties = {
+  inline def apply(flatten: js.Any => js.Any, hairlineWidth: Double): StyleSheetProperties = {
     val __obj = js.Dynamic.literal(flatten = js.Any.fromFunction1(flatten), hairlineWidth = hairlineWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleSheetProperties]
   }
   
-  @scala.inline
-  implicit class StyleSheetPropertiesMutableBuilder[Self <: StyleSheetProperties] (val x: Self) extends AnyVal {
+  extension [Self <: StyleSheetProperties](x: Self) {
     
-    @scala.inline
-    def setFlatten(value: js.Any => js.Any): Self = StObject.set(x, "flatten", js.Any.fromFunction1(value))
+    inline def setFlatten(value: js.Any => js.Any): Self = StObject.set(x, "flatten", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHairlineWidth(value: Double): Self = StObject.set(x, "hairlineWidth", value.asInstanceOf[js.Any])
+    inline def setHairlineWidth(value: Double): Self = StObject.set(x, "hairlineWidth", value.asInstanceOf[js.Any])
   }
 }

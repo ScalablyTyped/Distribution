@@ -19,8 +19,7 @@ trait ClassBreaksRendererLegendOptions
 }
 object ClassBreaksRendererLegendOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object ClassBreaksRendererLegendOptions {
     __obj.asInstanceOf[ClassBreaksRendererLegendOptions]
   }
   
-  @scala.inline
-  implicit class ClassBreaksRendererLegendOptionsMutableBuilder[Self <: ClassBreaksRendererLegendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClassBreaksRendererLegendOptions](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

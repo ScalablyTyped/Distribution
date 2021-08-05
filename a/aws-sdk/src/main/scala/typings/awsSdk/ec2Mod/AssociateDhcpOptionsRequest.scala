@@ -23,25 +23,19 @@ trait AssociateDhcpOptionsRequest extends StObject {
 }
 object AssociateDhcpOptionsRequest {
   
-  @scala.inline
-  def apply(DhcpOptionsId: DefaultingDhcpOptionsId, VpcId: VpcId): AssociateDhcpOptionsRequest = {
+  inline def apply(DhcpOptionsId: DefaultingDhcpOptionsId, VpcId: VpcId): AssociateDhcpOptionsRequest = {
     val __obj = js.Dynamic.literal(DhcpOptionsId = DhcpOptionsId.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateDhcpOptionsRequest]
   }
   
-  @scala.inline
-  implicit class AssociateDhcpOptionsRequestMutableBuilder[Self <: AssociateDhcpOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateDhcpOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setDhcpOptionsId(value: DefaultingDhcpOptionsId): Self = StObject.set(x, "DhcpOptionsId", value.asInstanceOf[js.Any])
+    inline def setDhcpOptionsId(value: DefaultingDhcpOptionsId): Self = StObject.set(x, "DhcpOptionsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

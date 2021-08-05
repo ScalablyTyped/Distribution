@@ -79,59 +79,42 @@ object iiifinfoMod {
   }
   object IiifProfile {
     
-    @scala.inline
-    def apply(): IiifProfile = {
+    inline def apply(): IiifProfile = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IiifProfile]
     }
     
-    @scala.inline
-    implicit class IiifProfileMutableBuilder[Self <: IiifProfile] (val x: Self) extends AnyVal {
+    extension [Self <: IiifProfile](x: Self) {
       
-      @scala.inline
-      def setFormats(value: js.Array[String]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: js.Array[String]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+      inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      @scala.inline
-      def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
+      inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxArea(value: Double): Self = StObject.set(x, "maxArea", value.asInstanceOf[js.Any])
+      inline def setMaxArea(value: Double): Self = StObject.set(x, "maxArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAreaUndefined: Self = StObject.set(x, "maxArea", js.undefined)
+      inline def setMaxAreaUndefined: Self = StObject.set(x, "maxArea", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setQualities(value: js.Array[String]): Self = StObject.set(x, "qualities", value.asInstanceOf[js.Any])
+      inline def setQualities(value: js.Array[String]): Self = StObject.set(x, "qualities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualitiesUndefined: Self = StObject.set(x, "qualities", js.undefined)
+      inline def setQualitiesUndefined: Self = StObject.set(x, "qualities", js.undefined)
       
-      @scala.inline
-      def setQualitiesVarargs(value: String*): Self = StObject.set(x, "qualities", js.Array(value :_*))
+      inline def setQualitiesVarargs(value: String*): Self = StObject.set(x, "qualities", js.Array(value :_*))
       
-      @scala.inline
-      def setSupports(value: js.Array[String]): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
+      inline def setSupports(value: js.Array[String]): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
+      inline def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
       
-      @scala.inline
-      def setSupportsVarargs(value: String*): Self = StObject.set(x, "supports", js.Array(value :_*))
+      inline def setSupportsVarargs(value: String*): Self = StObject.set(x, "supports", js.Array(value :_*))
     }
   }
   
@@ -147,26 +130,20 @@ object iiifinfoMod {
   }
   object PreferredOptions {
     
-    @scala.inline
-    def apply(): PreferredOptions = {
+    inline def apply(): PreferredOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreferredOptions]
     }
     
-    @scala.inline
-    implicit class PreferredOptionsMutableBuilder[Self <: PreferredOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PreferredOptions](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     }
   }
   
@@ -180,41 +157,30 @@ object iiifinfoMod {
   }
   object SupportedFeatures {
     
-    @scala.inline
-    def apply(): SupportedFeatures = {
+    inline def apply(): SupportedFeatures = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SupportedFeatures]
     }
     
-    @scala.inline
-    implicit class SupportedFeaturesMutableBuilder[Self <: SupportedFeatures] (val x: Self) extends AnyVal {
+    extension [Self <: SupportedFeatures](x: Self) {
       
-      @scala.inline
-      def setFormats(value: js.Array[String]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: js.Array[String]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+      inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      @scala.inline
-      def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
+      inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
       
-      @scala.inline
-      def setQualities(value: js.Array[String]): Self = StObject.set(x, "qualities", value.asInstanceOf[js.Any])
+      inline def setQualities(value: js.Array[String]): Self = StObject.set(x, "qualities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualitiesUndefined: Self = StObject.set(x, "qualities", js.undefined)
+      inline def setQualitiesUndefined: Self = StObject.set(x, "qualities", js.undefined)
       
-      @scala.inline
-      def setQualitiesVarargs(value: String*): Self = StObject.set(x, "qualities", js.Array(value :_*))
+      inline def setQualitiesVarargs(value: String*): Self = StObject.set(x, "qualities", js.Array(value :_*))
       
-      @scala.inline
-      def setSupports(value: js.Array[String]): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
+      inline def setSupports(value: js.Array[String]): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
+      inline def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
       
-      @scala.inline
-      def setSupportsVarargs(value: String*): Self = StObject.set(x, "supports", js.Array(value :_*))
+      inline def setSupportsVarargs(value: String*): Self = StObject.set(x, "supports", js.Array(value :_*))
     }
   }
   
@@ -228,29 +194,22 @@ object iiifinfoMod {
   }
   object TileInfo {
     
-    @scala.inline
-    def apply(scaleFactors: js.Array[Double], width: Double): TileInfo = {
+    inline def apply(scaleFactors: js.Array[Double], width: Double): TileInfo = {
       val __obj = js.Dynamic.literal(scaleFactors = scaleFactors.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[TileInfo]
     }
     
-    @scala.inline
-    implicit class TileInfoMutableBuilder[Self <: TileInfo] (val x: Self) extends AnyVal {
+    extension [Self <: TileInfo](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setScaleFactors(value: js.Array[Double]): Self = StObject.set(x, "scaleFactors", value.asInstanceOf[js.Any])
+      inline def setScaleFactors(value: js.Array[Double]): Self = StObject.set(x, "scaleFactors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleFactorsVarargs(value: Double*): Self = StObject.set(x, "scaleFactors", js.Array(value :_*))
+      inline def setScaleFactorsVarargs(value: Double*): Self = StObject.set(x, "scaleFactors", js.Array(value :_*))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

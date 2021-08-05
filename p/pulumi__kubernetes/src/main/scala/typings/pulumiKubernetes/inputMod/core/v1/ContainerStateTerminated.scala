@@ -47,52 +47,37 @@ trait ContainerStateTerminated extends StObject {
 }
 object ContainerStateTerminated {
   
-  @scala.inline
-  def apply(exitCode: Input[Double]): ContainerStateTerminated = {
+  inline def apply(exitCode: Input[Double]): ContainerStateTerminated = {
     val __obj = js.Dynamic.literal(exitCode = exitCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerStateTerminated]
   }
   
-  @scala.inline
-  implicit class ContainerStateTerminatedMutableBuilder[Self <: ContainerStateTerminated] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerStateTerminated](x: Self) {
     
-    @scala.inline
-    def setContainerID(value: Input[String]): Self = StObject.set(x, "containerID", value.asInstanceOf[js.Any])
+    inline def setContainerID(value: Input[String]): Self = StObject.set(x, "containerID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerIDUndefined: Self = StObject.set(x, "containerID", js.undefined)
+    inline def setContainerIDUndefined: Self = StObject.set(x, "containerID", js.undefined)
     
-    @scala.inline
-    def setExitCode(value: Input[Double]): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: Input[Double]): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishedAt(value: Input[String]): Self = StObject.set(x, "finishedAt", value.asInstanceOf[js.Any])
+    inline def setFinishedAt(value: Input[String]): Self = StObject.set(x, "finishedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishedAtUndefined: Self = StObject.set(x, "finishedAt", js.undefined)
+    inline def setFinishedAtUndefined: Self = StObject.set(x, "finishedAt", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setSignal(value: Input[Double]): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: Input[Double]): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setStartedAt(value: Input[String]): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: Input[String]): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
+    inline def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
   }
 }

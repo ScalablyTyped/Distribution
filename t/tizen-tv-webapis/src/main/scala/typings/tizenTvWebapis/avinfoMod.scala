@@ -68,8 +68,7 @@ object avinfoMod {
   }
   object AVInfoManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AvInfoDigitalCompMode: DOLBYDIGITALCOMPMODELINE,
       getDolbyDigitalCompMode: () => AvInfoDigitalCompMode,
       getVersion: () => String,
@@ -79,20 +78,15 @@ object avinfoMod {
       __obj.asInstanceOf[AVInfoManager]
     }
     
-    @scala.inline
-    implicit class AVInfoManagerMutableBuilder[Self <: AVInfoManager] (val x: Self) extends AnyVal {
+    extension [Self <: AVInfoManager](x: Self) {
       
-      @scala.inline
-      def setAvInfoDigitalCompMode(value: DOLBYDIGITALCOMPMODELINE): Self = StObject.set(x, "AvInfoDigitalCompMode", value.asInstanceOf[js.Any])
+      inline def setAvInfoDigitalCompMode(value: DOLBYDIGITALCOMPMODELINE): Self = StObject.set(x, "AvInfoDigitalCompMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDolbyDigitalCompMode(value: () => AvInfoDigitalCompMode): Self = StObject.set(x, "getDolbyDigitalCompMode", js.Any.fromFunction0(value))
+      inline def setGetDolbyDigitalCompMode(value: () => AvInfoDigitalCompMode): Self = StObject.set(x, "getDolbyDigitalCompMode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
+      inline def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsHdrTvSupport(value: () => Boolean): Self = StObject.set(x, "isHdrTvSupport", js.Any.fromFunction0(value))
+      inline def setIsHdrTvSupport(value: () => Boolean): Self = StObject.set(x, "isHdrTvSupport", js.Any.fromFunction0(value))
     }
   }
 }

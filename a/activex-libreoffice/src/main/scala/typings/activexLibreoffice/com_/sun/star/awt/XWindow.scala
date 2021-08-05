@@ -83,8 +83,7 @@ trait XWindow
 }
 object XWindow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PosSize: Rectangle,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
@@ -114,61 +113,42 @@ object XWindow {
     __obj.asInstanceOf[XWindow]
   }
   
-  @scala.inline
-  implicit class XWindowMutableBuilder[Self <: XWindow] (val x: Self) extends AnyVal {
+  extension [Self <: XWindow](x: Self) {
     
-    @scala.inline
-    def setAddFocusListener(value: XFocusListener => Unit): Self = StObject.set(x, "addFocusListener", js.Any.fromFunction1(value))
+    inline def setAddFocusListener(value: XFocusListener => Unit): Self = StObject.set(x, "addFocusListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddKeyListener(value: XKeyListener => Unit): Self = StObject.set(x, "addKeyListener", js.Any.fromFunction1(value))
+    inline def setAddKeyListener(value: XKeyListener => Unit): Self = StObject.set(x, "addKeyListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddMouseListener(value: XMouseListener => Unit): Self = StObject.set(x, "addMouseListener", js.Any.fromFunction1(value))
+    inline def setAddMouseListener(value: XMouseListener => Unit): Self = StObject.set(x, "addMouseListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddMouseMotionListener(value: XMouseMotionListener => Unit): Self = StObject.set(x, "addMouseMotionListener", js.Any.fromFunction1(value))
+    inline def setAddMouseMotionListener(value: XMouseMotionListener => Unit): Self = StObject.set(x, "addMouseMotionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddPaintListener(value: XPaintListener => Unit): Self = StObject.set(x, "addPaintListener", js.Any.fromFunction1(value))
+    inline def setAddPaintListener(value: XPaintListener => Unit): Self = StObject.set(x, "addPaintListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddWindowListener(value: XWindowListener => Unit): Self = StObject.set(x, "addWindowListener", js.Any.fromFunction1(value))
+    inline def setAddWindowListener(value: XWindowListener => Unit): Self = StObject.set(x, "addWindowListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPosSize(value: () => Rectangle): Self = StObject.set(x, "getPosSize", js.Any.fromFunction0(value))
+    inline def setGetPosSize(value: () => Rectangle): Self = StObject.set(x, "getPosSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPosSize(value: Rectangle): Self = StObject.set(x, "PosSize", value.asInstanceOf[js.Any])
+    inline def setPosSize(value: Rectangle): Self = StObject.set(x, "PosSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveFocusListener(value: XFocusListener => Unit): Self = StObject.set(x, "removeFocusListener", js.Any.fromFunction1(value))
+    inline def setRemoveFocusListener(value: XFocusListener => Unit): Self = StObject.set(x, "removeFocusListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveKeyListener(value: XKeyListener => Unit): Self = StObject.set(x, "removeKeyListener", js.Any.fromFunction1(value))
+    inline def setRemoveKeyListener(value: XKeyListener => Unit): Self = StObject.set(x, "removeKeyListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveMouseListener(value: XMouseListener => Unit): Self = StObject.set(x, "removeMouseListener", js.Any.fromFunction1(value))
+    inline def setRemoveMouseListener(value: XMouseListener => Unit): Self = StObject.set(x, "removeMouseListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveMouseMotionListener(value: XMouseMotionListener => Unit): Self = StObject.set(x, "removeMouseMotionListener", js.Any.fromFunction1(value))
+    inline def setRemoveMouseMotionListener(value: XMouseMotionListener => Unit): Self = StObject.set(x, "removeMouseMotionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemovePaintListener(value: XPaintListener => Unit): Self = StObject.set(x, "removePaintListener", js.Any.fromFunction1(value))
+    inline def setRemovePaintListener(value: XPaintListener => Unit): Self = StObject.set(x, "removePaintListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveWindowListener(value: XWindowListener => Unit): Self = StObject.set(x, "removeWindowListener", js.Any.fromFunction1(value))
+    inline def setRemoveWindowListener(value: XWindowListener => Unit): Self = StObject.set(x, "removeWindowListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
+    inline def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFocus(value: () => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
+    inline def setSetFocus(value: () => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPosSize(value: (Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setPosSize", js.Any.fromFunction5(value))
+    inline def setSetPosSize(value: (Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setPosSize", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
   }
 }

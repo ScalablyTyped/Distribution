@@ -19,11 +19,11 @@ object validationResultMod {
     def array(): js.Array[T] = js.native
     def array(options: OnlyFirstError): js.Array[T] = js.native
     
-    val errors: js.Any = js.native
+    /* private */ val errors: js.Any = js.native
     
     def formatWith[T2](formatter: ErrorFormatter[T2]): Result[T2] = js.native
     
-    var formatter: js.Any = js.native
+    /* private */ var formatter: js.Any = js.native
     
     def isEmpty(): Boolean = js.native
     
@@ -48,17 +48,14 @@ object validationResultMod {
   }
   object ResultFactoryBuilderOptions {
     
-    @scala.inline
-    def apply[T](formatter: /* error */ ValidationError => T): ResultFactoryBuilderOptions[T] = {
+    inline def apply[T](formatter: /* error */ ValidationError => T): ResultFactoryBuilderOptions[T] = {
       val __obj = js.Dynamic.literal(formatter = js.Any.fromFunction1(formatter))
       __obj.asInstanceOf[ResultFactoryBuilderOptions[T]]
     }
     
-    @scala.inline
-    implicit class ResultFactoryBuilderOptionsMutableBuilder[Self <: ResultFactoryBuilderOptions[?], T] (val x: Self & ResultFactoryBuilderOptions[T]) extends AnyVal {
+    extension [Self <: ResultFactoryBuilderOptions[?], T](x: Self & ResultFactoryBuilderOptions[T]) {
       
-      @scala.inline
-      def setFormatter(value: /* error */ ValidationError => T): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* error */ ValidationError => T): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     }
   }
 }

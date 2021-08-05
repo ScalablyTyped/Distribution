@@ -16,19 +16,15 @@ trait TimedMetadataTrackError extends StObject {
 }
 object TimedMetadataTrackError {
   
-  @scala.inline
-  def apply(errorCode: TimedMetadataTrackErrorCode, extendedError: WinRTError): TimedMetadataTrackError = {
+  inline def apply(errorCode: TimedMetadataTrackErrorCode, extendedError: WinRTError): TimedMetadataTrackError = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], extendedError = extendedError.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimedMetadataTrackError]
   }
   
-  @scala.inline
-  implicit class TimedMetadataTrackErrorMutableBuilder[Self <: TimedMetadataTrackError] (val x: Self) extends AnyVal {
+  extension [Self <: TimedMetadataTrackError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: TimedMetadataTrackErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: TimedMetadataTrackErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
+    inline def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
   }
 }

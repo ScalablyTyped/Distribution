@@ -28,34 +28,25 @@ trait PutSchemaVersionMetadataInput extends StObject {
 }
 object PutSchemaVersionMetadataInput {
   
-  @scala.inline
-  def apply(MetadataKeyValue: MetadataKeyValuePair): PutSchemaVersionMetadataInput = {
+  inline def apply(MetadataKeyValue: MetadataKeyValuePair): PutSchemaVersionMetadataInput = {
     val __obj = js.Dynamic.literal(MetadataKeyValue = MetadataKeyValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutSchemaVersionMetadataInput]
   }
   
-  @scala.inline
-  implicit class PutSchemaVersionMetadataInputMutableBuilder[Self <: PutSchemaVersionMetadataInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutSchemaVersionMetadataInput](x: Self) {
     
-    @scala.inline
-    def setMetadataKeyValue(value: MetadataKeyValuePair): Self = StObject.set(x, "MetadataKeyValue", value.asInstanceOf[js.Any])
+    inline def setMetadataKeyValue(value: MetadataKeyValuePair): Self = StObject.set(x, "MetadataKeyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
+    inline def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaIdUndefined: Self = StObject.set(x, "SchemaId", js.undefined)
+    inline def setSchemaIdUndefined: Self = StObject.set(x, "SchemaId", js.undefined)
     
-    @scala.inline
-    def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
+    inline def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionIdUndefined: Self = StObject.set(x, "SchemaVersionId", js.undefined)
+    inline def setSchemaVersionIdUndefined: Self = StObject.set(x, "SchemaVersionId", js.undefined)
     
-    @scala.inline
-    def setSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "SchemaVersionNumber", value.asInstanceOf[js.Any])
+    inline def setSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "SchemaVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionNumberUndefined: Self = StObject.set(x, "SchemaVersionNumber", js.undefined)
+    inline def setSchemaVersionNumberUndefined: Self = StObject.set(x, "SchemaVersionNumber", js.undefined)
   }
 }

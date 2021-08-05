@@ -10,16 +10,13 @@ trait CordovaPluginBadgeOptions extends StObject {
 }
 object CordovaPluginBadgeOptions {
   
-  @scala.inline
-  def apply(autoClear: Boolean): CordovaPluginBadgeOptions = {
+  inline def apply(autoClear: Boolean): CordovaPluginBadgeOptions = {
     val __obj = js.Dynamic.literal(autoClear = autoClear.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPluginBadgeOptions]
   }
   
-  @scala.inline
-  implicit class CordovaPluginBadgeOptionsMutableBuilder[Self <: CordovaPluginBadgeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CordovaPluginBadgeOptions](x: Self) {
     
-    @scala.inline
-    def setAutoClear(value: Boolean): Self = StObject.set(x, "autoClear", value.asInstanceOf[js.Any])
+    inline def setAutoClear(value: Boolean): Self = StObject.set(x, "autoClear", value.asInstanceOf[js.Any])
   }
 }

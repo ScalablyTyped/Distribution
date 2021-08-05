@@ -23,8 +23,7 @@ trait UpdateConfigurationSetEventDestinationRequest extends StObject {
 }
 object UpdateConfigurationSetEventDestinationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConfigurationSetName: ConfigurationSetName,
     EventDestination: EventDestinationDefinition,
     EventDestinationName: EventDestinationName
@@ -33,16 +32,12 @@ object UpdateConfigurationSetEventDestinationRequest {
     __obj.asInstanceOf[UpdateConfigurationSetEventDestinationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateConfigurationSetEventDestinationRequestMutableBuilder[Self <: UpdateConfigurationSetEventDestinationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConfigurationSetEventDestinationRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDestination(value: EventDestinationDefinition): Self = StObject.set(x, "EventDestination", value.asInstanceOf[js.Any])
+    inline def setEventDestination(value: EventDestinationDefinition): Self = StObject.set(x, "EventDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDestinationName(value: EventDestinationName): Self = StObject.set(x, "EventDestinationName", value.asInstanceOf[js.Any])
+    inline def setEventDestinationName(value: EventDestinationName): Self = StObject.set(x, "EventDestinationName", value.asInstanceOf[js.Any])
   }
 }

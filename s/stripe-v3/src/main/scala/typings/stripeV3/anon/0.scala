@@ -21,22 +21,17 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(card: Element | Token): `0` = {
+  inline def apply(card: Element | Token): `0` = {
     val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setBilling_details(value: BillingDetails): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
+    inline def setBilling_details(value: BillingDetails): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBilling_detailsUndefined: Self = StObject.set(x, "billing_details", js.undefined)
+    inline def setBilling_detailsUndefined: Self = StObject.set(x, "billing_details", js.undefined)
     
-    @scala.inline
-    def setCard(value: Element | Token): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: Element | Token): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
   }
 }

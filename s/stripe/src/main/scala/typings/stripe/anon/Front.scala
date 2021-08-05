@@ -18,19 +18,15 @@ trait Front extends StObject {
 }
 object Front {
   
-  @scala.inline
-  def apply(back: String, front: String): Front = {
+  inline def apply(back: String, front: String): Front = {
     val __obj = js.Dynamic.literal(back = back.asInstanceOf[js.Any], front = front.asInstanceOf[js.Any])
     __obj.asInstanceOf[Front]
   }
   
-  @scala.inline
-  implicit class FrontMutableBuilder[Self <: Front] (val x: Self) extends AnyVal {
+  extension [Self <: Front](x: Self) {
     
-    @scala.inline
-    def setBack(value: String): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+    inline def setBack(value: String): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFront(value: String): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
+    inline def setFront(value: String): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
   }
 }

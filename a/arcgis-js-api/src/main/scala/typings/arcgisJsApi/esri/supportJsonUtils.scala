@@ -15,16 +15,13 @@ trait supportJsonUtils extends StObject {
 }
 object supportJsonUtils {
   
-  @scala.inline
-  def apply(fromJSON: js.Any => Renderer): supportJsonUtils = {
+  inline def apply(fromJSON: js.Any => Renderer): supportJsonUtils = {
     val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction1(fromJSON))
     __obj.asInstanceOf[supportJsonUtils]
   }
   
-  @scala.inline
-  implicit class supportJsonUtilsMutableBuilder[Self <: supportJsonUtils] (val x: Self) extends AnyVal {
+  extension [Self <: supportJsonUtils](x: Self) {
     
-    @scala.inline
-    def setFromJSON(value: js.Any => Renderer): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
+    inline def setFromJSON(value: js.Any => Renderer): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
   }
 }

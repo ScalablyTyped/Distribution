@@ -18,28 +18,21 @@ trait DescribeFastSnapshotRestoresResult extends StObject {
 }
 object DescribeFastSnapshotRestoresResult {
   
-  @scala.inline
-  def apply(): DescribeFastSnapshotRestoresResult = {
+  inline def apply(): DescribeFastSnapshotRestoresResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFastSnapshotRestoresResult]
   }
   
-  @scala.inline
-  implicit class DescribeFastSnapshotRestoresResultMutableBuilder[Self <: DescribeFastSnapshotRestoresResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFastSnapshotRestoresResult](x: Self) {
     
-    @scala.inline
-    def setFastSnapshotRestores(value: DescribeFastSnapshotRestoreSuccessSet): Self = StObject.set(x, "FastSnapshotRestores", value.asInstanceOf[js.Any])
+    inline def setFastSnapshotRestores(value: DescribeFastSnapshotRestoreSuccessSet): Self = StObject.set(x, "FastSnapshotRestores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFastSnapshotRestoresUndefined: Self = StObject.set(x, "FastSnapshotRestores", js.undefined)
+    inline def setFastSnapshotRestoresUndefined: Self = StObject.set(x, "FastSnapshotRestores", js.undefined)
     
-    @scala.inline
-    def setFastSnapshotRestoresVarargs(value: DescribeFastSnapshotRestoreSuccessItem*): Self = StObject.set(x, "FastSnapshotRestores", js.Array(value :_*))
+    inline def setFastSnapshotRestoresVarargs(value: DescribeFastSnapshotRestoreSuccessItem*): Self = StObject.set(x, "FastSnapshotRestores", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

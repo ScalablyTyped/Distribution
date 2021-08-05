@@ -21,7 +21,7 @@ trait ChartFillFormat extends StObject {
   
   val Creator: XlCreator = js.native
   
-  @JSName("Excel.ChartFillFormat_typekey")
+  /* private */ @JSName("Excel.ChartFillFormat_typekey")
   var ExcelDotChartFillFormat_typekey: ChartFillFormat = js.native
   
   val ForeColor: ChartColorFormat = js.native

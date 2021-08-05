@@ -21,27 +21,21 @@ trait RemoveHandlerOptions extends StObject {
 }
 object RemoveHandlerOptions {
   
-  @scala.inline
-  def apply(): RemoveHandlerOptions = {
+  inline def apply(): RemoveHandlerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveHandlerOptions]
   }
   
-  @scala.inline
-  implicit class RemoveHandlerOptionsMutableBuilder[Self <: RemoveHandlerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveHandlerOptions](x: Self) {
     
-    @scala.inline
-    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+    inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
-    @scala.inline
-    def setHandler(
+    inline def setHandler(
       value: /* eventArgs */ js.UndefOr[BindingDataChangedEventArgs | BindingSelectionChangedEventArgs] => js.Any
     ): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+    inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
   }
 }

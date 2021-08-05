@@ -36,32 +36,24 @@ object svgIconSetOptionsMod {
   }
   object SvgIconSetOptions {
     
-    @scala.inline
-    def apply(): SvgIconSetOptions = {
+    inline def apply(): SvgIconSetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SvgIconSetOptions]
     }
     
-    @scala.inline
-    implicit class SvgIconSetOptionsMutableBuilder[Self <: SvgIconSetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SvgIconSetOptions](x: Self) {
       
-      @scala.inline
-      def setCumulative(value: `false`): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+      inline def setCumulative(value: `false`): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+      inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
       
-      @scala.inline
-      def setIconIdResolver(value: /* id */ String => String): Self = StObject.set(x, "iconIdResolver", js.Any.fromFunction1(value))
+      inline def setIconIdResolver(value: /* id */ String => String): Self = StObject.set(x, "iconIdResolver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIconIdResolverUndefined: Self = StObject.set(x, "iconIdResolver", js.undefined)
+      inline def setIconIdResolverUndefined: Self = StObject.set(x, "iconIdResolver", js.undefined)
       
-      @scala.inline
-      def setPreloadable(value: Boolean): Self = StObject.set(x, "preloadable", value.asInstanceOf[js.Any])
+      inline def setPreloadable(value: Boolean): Self = StObject.set(x, "preloadable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadableUndefined: Self = StObject.set(x, "preloadable", js.undefined)
+      inline def setPreloadableUndefined: Self = StObject.set(x, "preloadable", js.undefined)
     }
   }
 }

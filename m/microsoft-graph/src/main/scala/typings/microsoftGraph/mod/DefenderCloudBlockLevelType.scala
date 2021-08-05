@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DefenderCloudBlockLevelType extends StObject
 object DefenderCloudBlockLevelType {
   
-  @scala.inline
-  def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
+  inline def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
   
-  @scala.inline
-  def highPlus: typings.microsoftGraph.microsoftGraphStrings.highPlus = "highPlus".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.highPlus]
+  inline def highPlus: typings.microsoftGraph.microsoftGraphStrings.highPlus = "highPlus".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.highPlus]
   
-  @scala.inline
-  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
+  inline def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
   
-  @scala.inline
-  def zeroTolerance: typings.microsoftGraph.microsoftGraphStrings.zeroTolerance = "zeroTolerance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.zeroTolerance]
+  inline def zeroTolerance: typings.microsoftGraph.microsoftGraphStrings.zeroTolerance = "zeroTolerance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.zeroTolerance]
 }

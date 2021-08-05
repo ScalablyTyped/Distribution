@@ -12,22 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Job extends StObject
 object Job {
   
-  @scala.inline
-  def ExportUsersJob(id: String, status: JobStatus): typings.auth0.mod.ExportUsersJob = {
+  inline def ExportUsersJob(id: String, status: JobStatus): typings.auth0.mod.ExportUsersJob = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("users_export")
     __obj.asInstanceOf[typings.auth0.mod.ExportUsersJob]
   }
   
-  @scala.inline
-  def ImportUsersJob(id: String, status: JobStatus): typings.auth0.mod.ImportUsersJob = {
+  inline def ImportUsersJob(id: String, status: JobStatus): typings.auth0.mod.ImportUsersJob = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("users_import")
     __obj.asInstanceOf[typings.auth0.mod.ImportUsersJob]
   }
   
-  @scala.inline
-  def VerificationEmailJob(id: String, status: JobStatus): typings.auth0.mod.VerificationEmailJob = {
+  inline def VerificationEmailJob(id: String, status: JobStatus): typings.auth0.mod.VerificationEmailJob = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("verification_email")
     __obj.asInstanceOf[typings.auth0.mod.VerificationEmailJob]

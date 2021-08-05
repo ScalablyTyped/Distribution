@@ -10,16 +10,13 @@ trait NetworkType extends StObject {
 }
 object NetworkType {
   
-  @scala.inline
-  def apply(networkType: String): NetworkType = {
+  inline def apply(networkType: String): NetworkType = {
     val __obj = js.Dynamic.literal(networkType = networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkType]
   }
   
-  @scala.inline
-  implicit class NetworkTypeMutableBuilder[Self <: NetworkType] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkType](x: Self) {
     
-    @scala.inline
-    def setNetworkType(value: String): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+    inline def setNetworkType(value: String): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
   }
 }

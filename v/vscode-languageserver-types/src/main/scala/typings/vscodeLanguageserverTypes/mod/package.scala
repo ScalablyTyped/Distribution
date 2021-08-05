@@ -9,8 +9,7 @@ type CodeActionKind = java.lang.String
 
 type CompletionItemTag = typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
 
-@scala.inline
-def EOL: js.Array[java.lang.String] = typings.vscodeLanguageserverTypes.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EOL").asInstanceOf[js.Array[java.lang.String]]
+inline def EOL: js.Array[java.lang.String] = typings.vscodeLanguageserverTypes.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EOL").asInstanceOf[js.Array[java.lang.String]]
 
 type MarkedString = java.lang.String | typings.vscodeLanguageserverTypes.anon.Language
 

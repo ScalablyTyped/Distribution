@@ -32,27 +32,27 @@ object treeMod {
     def getNodeContentElement(nodeId: String): js.UndefOr[HTMLElement] = js.native
     def getNodeContentElement(nodeId: Double): js.UndefOr[HTMLElement] = js.native
     
-    var handleContentRef: js.Any = js.native
+    /* private */ var handleContentRef: js.Any = js.native
     
-    var handleNodeClick: js.Any = js.native
+    /* private */ var handleNodeClick: js.Any = js.native
     
-    var handleNodeCollapse: js.Any = js.native
+    /* private */ var handleNodeCollapse: js.Any = js.native
     
-    var handleNodeContextMenu: js.Any = js.native
+    /* private */ var handleNodeContextMenu: js.Any = js.native
     
-    var handleNodeDoubleClick: js.Any = js.native
+    /* private */ var handleNodeDoubleClick: js.Any = js.native
     
-    var handleNodeExpand: js.Any = js.native
+    /* private */ var handleNodeExpand: js.Any = js.native
     
-    var handleNodeMouseEnter: js.Any = js.native
+    /* private */ var handleNodeMouseEnter: js.Any = js.native
     
-    var handleNodeMouseLeave: js.Any = js.native
+    /* private */ var handleNodeMouseLeave: js.Any = js.native
     
-    var handlerHelper: js.Any = js.native
+    /* private */ var handlerHelper: js.Any = js.native
     
-    var nodeRefs: js.Any = js.native
+    /* private */ var nodeRefs: js.Any = js.native
     
-    var renderNodes: js.Any = js.native
+    /* private */ var renderNodes: js.Any = js.native
   }
   /* static members */
   object Tree {
@@ -64,16 +64,12 @@ object treeMod {
     @JSImport("@blueprintjs/core/lib/esm/components/tree/tree", "Tree.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def nodeFromPath[U](path: js.Array[Double]): ITreeNode[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[ITreeNode[U]]
-    @scala.inline
-    def nodeFromPath[U](path: js.Array[Double], treeNodes: js.Array[ITreeNode[U]]): ITreeNode[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromPath")(path.asInstanceOf[js.Any], treeNodes.asInstanceOf[js.Any])).asInstanceOf[ITreeNode[U]]
+    inline def nodeFromPath[U](path: js.Array[Double]): ITreeNode[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[ITreeNode[U]]
+    inline def nodeFromPath[U](path: js.Array[Double], treeNodes: js.Array[ITreeNode[U]]): ITreeNode[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromPath")(path.asInstanceOf[js.Any], treeNodes.asInstanceOf[js.Any])).asInstanceOf[ITreeNode[U]]
     
-    @scala.inline
-    def ofType[U](): Instantiable1[/* props */ ITreeProps[U], Tree[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ITreeProps[U], Tree[U]]]
+    inline def ofType[U](): Instantiable1[/* props */ ITreeProps[U], Tree[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ITreeProps[U], Tree[U]]]
   }
   
   trait ITreeProps[T]
@@ -124,76 +120,58 @@ object treeMod {
   }
   object ITreeProps {
     
-    @scala.inline
-    def apply[T](contents: js.Array[ITreeNode[T]]): ITreeProps[T] = {
+    inline def apply[T](contents: js.Array[ITreeNode[T]]): ITreeProps[T] = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITreeProps[T]]
     }
     
-    @scala.inline
-    implicit class ITreePropsMutableBuilder[Self <: ITreeProps[?], T] (val x: Self & ITreeProps[T]) extends AnyVal {
+    extension [Self <: ITreeProps[?], T](x: Self & ITreeProps[T]) {
       
-      @scala.inline
-      def setContents(value: js.Array[ITreeNode[T]]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: js.Array[ITreeNode[T]]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentsVarargs(value: ITreeNode[T]*): Self = StObject.set(x, "contents", js.Array(value :_*))
+      inline def setContentsVarargs(value: ITreeNode[T]*): Self = StObject.set(x, "contents", js.Array(value :_*))
       
-      @scala.inline
-      def setOnNodeClick(
+      inline def setOnNodeClick(
         value: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
       ): Self = StObject.set(x, "onNodeClick", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnNodeClickUndefined: Self = StObject.set(x, "onNodeClick", js.undefined)
+      inline def setOnNodeClickUndefined: Self = StObject.set(x, "onNodeClick", js.undefined)
       
-      @scala.inline
-      def setOnNodeCollapse(
+      inline def setOnNodeCollapse(
         value: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
       ): Self = StObject.set(x, "onNodeCollapse", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnNodeCollapseUndefined: Self = StObject.set(x, "onNodeCollapse", js.undefined)
+      inline def setOnNodeCollapseUndefined: Self = StObject.set(x, "onNodeCollapse", js.undefined)
       
-      @scala.inline
-      def setOnNodeContextMenu(
+      inline def setOnNodeContextMenu(
         value: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
       ): Self = StObject.set(x, "onNodeContextMenu", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnNodeContextMenuUndefined: Self = StObject.set(x, "onNodeContextMenu", js.undefined)
+      inline def setOnNodeContextMenuUndefined: Self = StObject.set(x, "onNodeContextMenu", js.undefined)
       
-      @scala.inline
-      def setOnNodeDoubleClick(
+      inline def setOnNodeDoubleClick(
         value: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
       ): Self = StObject.set(x, "onNodeDoubleClick", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnNodeDoubleClickUndefined: Self = StObject.set(x, "onNodeDoubleClick", js.undefined)
+      inline def setOnNodeDoubleClickUndefined: Self = StObject.set(x, "onNodeDoubleClick", js.undefined)
       
-      @scala.inline
-      def setOnNodeExpand(
+      inline def setOnNodeExpand(
         value: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
       ): Self = StObject.set(x, "onNodeExpand", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnNodeExpandUndefined: Self = StObject.set(x, "onNodeExpand", js.undefined)
+      inline def setOnNodeExpandUndefined: Self = StObject.set(x, "onNodeExpand", js.undefined)
       
-      @scala.inline
-      def setOnNodeMouseEnter(
+      inline def setOnNodeMouseEnter(
         value: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
       ): Self = StObject.set(x, "onNodeMouseEnter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnNodeMouseEnterUndefined: Self = StObject.set(x, "onNodeMouseEnter", js.undefined)
+      inline def setOnNodeMouseEnterUndefined: Self = StObject.set(x, "onNodeMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnNodeMouseLeave(
+      inline def setOnNodeMouseLeave(
         value: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
       ): Self = StObject.set(x, "onNodeMouseLeave", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnNodeMouseLeaveUndefined: Self = StObject.set(x, "onNodeMouseLeave", js.undefined)
+      inline def setOnNodeMouseLeaveUndefined: Self = StObject.set(x, "onNodeMouseLeave", js.undefined)
     }
   }
   

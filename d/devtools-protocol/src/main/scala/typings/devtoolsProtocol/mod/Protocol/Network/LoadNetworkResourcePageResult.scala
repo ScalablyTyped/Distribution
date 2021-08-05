@@ -30,46 +30,33 @@ trait LoadNetworkResourcePageResult extends StObject {
 }
 object LoadNetworkResourcePageResult {
   
-  @scala.inline
-  def apply(success: Boolean): LoadNetworkResourcePageResult = {
+  inline def apply(success: Boolean): LoadNetworkResourcePageResult = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadNetworkResourcePageResult]
   }
   
-  @scala.inline
-  implicit class LoadNetworkResourcePageResultMutableBuilder[Self <: LoadNetworkResourcePageResult] (val x: Self) extends AnyVal {
+  extension [Self <: LoadNetworkResourcePageResult](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
+    inline def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpStatusCodeUndefined: Self = StObject.set(x, "httpStatusCode", js.undefined)
+    inline def setHttpStatusCodeUndefined: Self = StObject.set(x, "httpStatusCode", js.undefined)
     
-    @scala.inline
-    def setNetError(value: Double): Self = StObject.set(x, "netError", value.asInstanceOf[js.Any])
+    inline def setNetError(value: Double): Self = StObject.set(x, "netError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetErrorName(value: String): Self = StObject.set(x, "netErrorName", value.asInstanceOf[js.Any])
+    inline def setNetErrorName(value: String): Self = StObject.set(x, "netErrorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetErrorNameUndefined: Self = StObject.set(x, "netErrorName", js.undefined)
+    inline def setNetErrorNameUndefined: Self = StObject.set(x, "netErrorName", js.undefined)
     
-    @scala.inline
-    def setNetErrorUndefined: Self = StObject.set(x, "netError", js.undefined)
+    inline def setNetErrorUndefined: Self = StObject.set(x, "netError", js.undefined)
     
-    @scala.inline
-    def setStream(value: StreamHandle): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: StreamHandle): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

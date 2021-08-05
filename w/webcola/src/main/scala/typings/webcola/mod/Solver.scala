@@ -20,12 +20,10 @@ object Solver {
   @JSImport("webcola", "Solver.LAGRANGIAN_TOLERANCE")
   @js.native
   def LAGRANGIAN_TOLERANCE: Double = js.native
-  @scala.inline
-  def LAGRANGIAN_TOLERANCE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LAGRANGIAN_TOLERANCE")(x.asInstanceOf[js.Any])
+  inline def LAGRANGIAN_TOLERANCE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LAGRANGIAN_TOLERANCE")(x.asInstanceOf[js.Any])
   
   @JSImport("webcola", "Solver.ZERO_UPPERBOUND")
   @js.native
   def ZERO_UPPERBOUND: Double = js.native
-  @scala.inline
-  def ZERO_UPPERBOUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO_UPPERBOUND")(x.asInstanceOf[js.Any])
+  inline def ZERO_UPPERBOUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO_UPPERBOUND")(x.asInstanceOf[js.Any])
 }

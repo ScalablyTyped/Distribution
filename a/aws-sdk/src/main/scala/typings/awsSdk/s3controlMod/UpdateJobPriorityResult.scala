@@ -18,19 +18,15 @@ trait UpdateJobPriorityResult extends StObject {
 }
 object UpdateJobPriorityResult {
   
-  @scala.inline
-  def apply(JobId: JobId, Priority: JobPriority): UpdateJobPriorityResult = {
+  inline def apply(JobId: JobId, Priority: JobPriority): UpdateJobPriorityResult = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobPriorityResult]
   }
   
-  @scala.inline
-  implicit class UpdateJobPriorityResultMutableBuilder[Self <: UpdateJobPriorityResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateJobPriorityResult](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: JobPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: JobPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
   }
 }

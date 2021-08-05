@@ -61,13 +61,13 @@ object subscriberMod {
       complete: js.Function0[Unit]
     ) = this()
     
-    var __tryOrSetError: js.Any = js.native
+    /* private */ var __tryOrSetError: js.Any = js.native
     
-    var __tryOrUnsub: js.Any = js.native
+    /* private */ var __tryOrUnsub: js.Any = js.native
     
-    var _context: js.Any = js.native
+    /* private */ var _context: js.Any = js.native
     
-    var _parentSubscriber: js.Any = js.native
+    /* private */ var _parentSubscriber: js.Any = js.native
     
     /** @internal This is an internal implementation detail, do not use. */
     def _unsubscribe(): Unit = js.native
@@ -129,7 +129,7 @@ object subscriberMod {
       */
     def complete(): Unit = js.native
     
-    var destination: PartialObserver[js.Any] | Subscriber[js.Any] = js.native
+    /* protected */ var destination: PartialObserver[js.Any] | Subscriber[js.Any] = js.native
     
     /**
       * The {@link Observer} callback to receive notifications of type `error` from
@@ -141,7 +141,7 @@ object subscriberMod {
     def error(): Unit = js.native
     def error(err: js.Any): Unit = js.native
     
-    var isStopped: Boolean = js.native
+    /* protected */ var isStopped: Boolean = js.native
     
     /**
       * The {@link Observer} callback to receive notifications of type `next` from
@@ -178,28 +178,20 @@ object subscriberMod {
       * Observer represented by the given arguments.
       * @nocollapse
       */
-    @scala.inline
-    def create[T](): Subscriber[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Subscriber[T]]
-    @scala.inline
-    def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit]): Subscriber[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any]).asInstanceOf[Subscriber[T]]
-    @scala.inline
-    def create[T](
+    inline def create[T](): Subscriber[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Subscriber[T]]
+    inline def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit]): Subscriber[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any]).asInstanceOf[Subscriber[T]]
+    inline def create[T](
       next: js.Function1[/* x */ js.UndefOr[T], Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
     ): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
-    @scala.inline
-    def create[T](
+    inline def create[T](
       next: js.Function1[/* x */ js.UndefOr[T], Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
-    @scala.inline
-    def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit], error: Unit, complete: js.Function0[Unit]): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
-    @scala.inline
-    def create[T](next: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
-    @scala.inline
-    def create[T](next: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit], complete: js.Function0[Unit]): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
-    @scala.inline
-    def create[T](next: Unit, error: Unit, complete: js.Function0[Unit]): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
+    inline def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit], error: Unit, complete: js.Function0[Unit]): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
+    inline def create[T](next: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
+    inline def create[T](next: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit], complete: js.Function0[Unit]): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
+    inline def create[T](next: Unit, error: Unit, complete: js.Function0[Unit]): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
   }
 }

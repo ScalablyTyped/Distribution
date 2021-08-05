@@ -13,19 +13,15 @@ trait ListenerRuleConditionSourceIp extends StObject {
 }
 object ListenerRuleConditionSourceIp {
   
-  @scala.inline
-  def apply(values: js.Array[String]): ListenerRuleConditionSourceIp = {
+  inline def apply(values: js.Array[String]): ListenerRuleConditionSourceIp = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleConditionSourceIp]
   }
   
-  @scala.inline
-  implicit class ListenerRuleConditionSourceIpMutableBuilder[Self <: ListenerRuleConditionSourceIp] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerRuleConditionSourceIp](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

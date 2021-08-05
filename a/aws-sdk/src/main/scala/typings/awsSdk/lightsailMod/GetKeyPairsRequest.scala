@@ -13,19 +13,15 @@ trait GetKeyPairsRequest extends StObject {
 }
 object GetKeyPairsRequest {
   
-  @scala.inline
-  def apply(): GetKeyPairsRequest = {
+  inline def apply(): GetKeyPairsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetKeyPairsRequest]
   }
   
-  @scala.inline
-  implicit class GetKeyPairsRequestMutableBuilder[Self <: GetKeyPairsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetKeyPairsRequest](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

@@ -25,31 +25,23 @@ trait SubaccountInformation extends StObject {
 }
 object SubaccountInformation {
   
-  @scala.inline
-  def apply(compliance_status: String, id: Double, name: String, status: active | suspended | terminated): SubaccountInformation = {
+  inline def apply(compliance_status: String, id: Double, name: String, status: active | suspended | terminated): SubaccountInformation = {
     val __obj = js.Dynamic.literal(compliance_status = compliance_status.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubaccountInformation]
   }
   
-  @scala.inline
-  implicit class SubaccountInformationMutableBuilder[Self <: SubaccountInformation] (val x: Self) extends AnyVal {
+  extension [Self <: SubaccountInformation](x: Self) {
     
-    @scala.inline
-    def setCompliance_status(value: String): Self = StObject.set(x, "compliance_status", value.asInstanceOf[js.Any])
+    inline def setCompliance_status(value: String): Self = StObject.set(x, "compliance_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
+    inline def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp_poolUndefined: Self = StObject.set(x, "ip_pool", js.undefined)
+    inline def setIp_poolUndefined: Self = StObject.set(x, "ip_pool", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: active | suspended | terminated): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: active | suspended | terminated): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

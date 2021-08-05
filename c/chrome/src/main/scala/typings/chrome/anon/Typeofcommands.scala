@@ -14,19 +14,15 @@ trait Typeofcommands extends StObject {
 }
 object Typeofcommands {
   
-  @scala.inline
-  def apply(getAll: js.Function1[/* commands */ js.Array[Command], Unit] => Unit, onCommand: CommandEvent): Typeofcommands = {
+  inline def apply(getAll: js.Function1[/* commands */ js.Array[Command], Unit] => Unit, onCommand: CommandEvent): Typeofcommands = {
     val __obj = js.Dynamic.literal(getAll = js.Any.fromFunction1(getAll), onCommand = onCommand.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofcommands]
   }
   
-  @scala.inline
-  implicit class TypeofcommandsMutableBuilder[Self <: Typeofcommands] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofcommands](x: Self) {
     
-    @scala.inline
-    def setGetAll(value: js.Function1[/* commands */ js.Array[Command], Unit] => Unit): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
+    inline def setGetAll(value: js.Function1[/* commands */ js.Array[Command], Unit] => Unit): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCommand(value: CommandEvent): Self = StObject.set(x, "onCommand", value.asInstanceOf[js.Any])
+    inline def setOnCommand(value: CommandEvent): Self = StObject.set(x, "onCommand", value.asInstanceOf[js.Any])
   }
 }

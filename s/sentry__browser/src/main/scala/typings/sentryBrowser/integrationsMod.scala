@@ -32,8 +32,7 @@ object integrationsMod {
     @JSImport("@sentry/browser/dist/integrations", "Breadcrumbs.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@sentry/browser/dist/integrations", "GlobalHandlers")
@@ -56,8 +55,7 @@ object integrationsMod {
     @JSImport("@sentry/browser/dist/integrations", "GlobalHandlers.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@sentry/browser/dist/integrations", "LinkedErrors")
@@ -82,8 +80,7 @@ object integrationsMod {
     @JSImport("@sentry/browser/dist/integrations", "LinkedErrors.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@sentry/browser/dist/integrations", "TryCatch")
@@ -108,8 +105,7 @@ object integrationsMod {
     @JSImport("@sentry/browser/dist/integrations", "TryCatch.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@sentry/browser/dist/integrations", "UserAgent")
@@ -129,7 +125,6 @@ object integrationsMod {
     @JSImport("@sentry/browser/dist/integrations", "UserAgent.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
 }

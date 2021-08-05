@@ -18,28 +18,21 @@ trait GetAggregateComplianceDetailsByConfigRuleResponse extends StObject {
 }
 object GetAggregateComplianceDetailsByConfigRuleResponse {
   
-  @scala.inline
-  def apply(): GetAggregateComplianceDetailsByConfigRuleResponse = {
+  inline def apply(): GetAggregateComplianceDetailsByConfigRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAggregateComplianceDetailsByConfigRuleResponse]
   }
   
-  @scala.inline
-  implicit class GetAggregateComplianceDetailsByConfigRuleResponseMutableBuilder[Self <: GetAggregateComplianceDetailsByConfigRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAggregateComplianceDetailsByConfigRuleResponse](x: Self) {
     
-    @scala.inline
-    def setAggregateEvaluationResults(value: AggregateEvaluationResultList): Self = StObject.set(x, "AggregateEvaluationResults", value.asInstanceOf[js.Any])
+    inline def setAggregateEvaluationResults(value: AggregateEvaluationResultList): Self = StObject.set(x, "AggregateEvaluationResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateEvaluationResultsUndefined: Self = StObject.set(x, "AggregateEvaluationResults", js.undefined)
+    inline def setAggregateEvaluationResultsUndefined: Self = StObject.set(x, "AggregateEvaluationResults", js.undefined)
     
-    @scala.inline
-    def setAggregateEvaluationResultsVarargs(value: AggregateEvaluationResult*): Self = StObject.set(x, "AggregateEvaluationResults", js.Array(value :_*))
+    inline def setAggregateEvaluationResultsVarargs(value: AggregateEvaluationResult*): Self = StObject.set(x, "AggregateEvaluationResults", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

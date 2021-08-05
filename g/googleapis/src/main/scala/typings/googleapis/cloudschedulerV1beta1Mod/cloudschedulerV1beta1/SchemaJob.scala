@@ -122,97 +122,67 @@ trait SchemaJob extends StObject {
 }
 object SchemaJob {
   
-  @scala.inline
-  def apply(): SchemaJob = {
+  inline def apply(): SchemaJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJob]
   }
   
-  @scala.inline
-  implicit class SchemaJobMutableBuilder[Self <: SchemaJob] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJob](x: Self) {
     
-    @scala.inline
-    def setAppEngineHttpTarget(value: SchemaAppEngineHttpTarget): Self = StObject.set(x, "appEngineHttpTarget", value.asInstanceOf[js.Any])
+    inline def setAppEngineHttpTarget(value: SchemaAppEngineHttpTarget): Self = StObject.set(x, "appEngineHttpTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppEngineHttpTargetUndefined: Self = StObject.set(x, "appEngineHttpTarget", js.undefined)
+    inline def setAppEngineHttpTargetUndefined: Self = StObject.set(x, "appEngineHttpTarget", js.undefined)
     
-    @scala.inline
-    def setAttemptDeadline(value: String): Self = StObject.set(x, "attemptDeadline", value.asInstanceOf[js.Any])
+    inline def setAttemptDeadline(value: String): Self = StObject.set(x, "attemptDeadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptDeadlineUndefined: Self = StObject.set(x, "attemptDeadline", js.undefined)
+    inline def setAttemptDeadlineUndefined: Self = StObject.set(x, "attemptDeadline", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setHttpTarget(value: SchemaHttpTarget): Self = StObject.set(x, "httpTarget", value.asInstanceOf[js.Any])
+    inline def setHttpTarget(value: SchemaHttpTarget): Self = StObject.set(x, "httpTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpTargetUndefined: Self = StObject.set(x, "httpTarget", js.undefined)
+    inline def setHttpTargetUndefined: Self = StObject.set(x, "httpTarget", js.undefined)
     
-    @scala.inline
-    def setLastAttemptTime(value: String): Self = StObject.set(x, "lastAttemptTime", value.asInstanceOf[js.Any])
+    inline def setLastAttemptTime(value: String): Self = StObject.set(x, "lastAttemptTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAttemptTimeUndefined: Self = StObject.set(x, "lastAttemptTime", js.undefined)
+    inline def setLastAttemptTimeUndefined: Self = StObject.set(x, "lastAttemptTime", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPubsubTarget(value: SchemaPubsubTarget): Self = StObject.set(x, "pubsubTarget", value.asInstanceOf[js.Any])
+    inline def setPubsubTarget(value: SchemaPubsubTarget): Self = StObject.set(x, "pubsubTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsubTargetUndefined: Self = StObject.set(x, "pubsubTarget", js.undefined)
+    inline def setPubsubTargetUndefined: Self = StObject.set(x, "pubsubTarget", js.undefined)
     
-    @scala.inline
-    def setRetryConfig(value: SchemaRetryConfig): Self = StObject.set(x, "retryConfig", value.asInstanceOf[js.Any])
+    inline def setRetryConfig(value: SchemaRetryConfig): Self = StObject.set(x, "retryConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryConfigUndefined: Self = StObject.set(x, "retryConfig", js.undefined)
+    inline def setRetryConfigUndefined: Self = StObject.set(x, "retryConfig", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: String): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: String): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
+    inline def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
+    inline def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     
-    @scala.inline
-    def setUserUpdateTime(value: String): Self = StObject.set(x, "userUpdateTime", value.asInstanceOf[js.Any])
+    inline def setUserUpdateTime(value: String): Self = StObject.set(x, "userUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUpdateTimeUndefined: Self = StObject.set(x, "userUpdateTime", js.undefined)
+    inline def setUserUpdateTimeUndefined: Self = StObject.set(x, "userUpdateTime", js.undefined)
   }
 }

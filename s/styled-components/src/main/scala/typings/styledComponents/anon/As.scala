@@ -13,25 +13,19 @@ trait As[C /* <: String | ComponentType[js.Any] */] extends StObject {
 }
 object As {
   
-  @scala.inline
-  def apply[C /* <: String | ComponentType[js.Any] */](): As[C] = {
+  inline def apply[C /* <: String | ComponentType[js.Any] */](): As[C] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[As[C]]
   }
   
-  @scala.inline
-  implicit class AsMutableBuilder[Self <: As[?], C /* <: String | ComponentType[js.Any] */] (val x: Self & As[C]) extends AnyVal {
+  extension [Self <: As[?], C /* <: String | ComponentType[js.Any] */](x: Self & As[C]) {
     
-    @scala.inline
-    def setAs(value: C): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: C): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setForwardedAs(value: C): Self = StObject.set(x, "forwardedAs", value.asInstanceOf[js.Any])
+    inline def setForwardedAs(value: C): Self = StObject.set(x, "forwardedAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedAsUndefined: Self = StObject.set(x, "forwardedAs", js.undefined)
+    inline def setForwardedAsUndefined: Self = StObject.set(x, "forwardedAs", js.undefined)
   }
 }

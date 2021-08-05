@@ -36,43 +36,31 @@ trait FormTemplateProperties extends StObject {
 }
 object FormTemplateProperties {
   
-  @scala.inline
-  def apply(): FormTemplateProperties = {
+  inline def apply(): FormTemplateProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormTemplateProperties]
   }
   
-  @scala.inline
-  implicit class FormTemplatePropertiesMutableBuilder[Self <: FormTemplateProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FormTemplateProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setElements(value: js.Array[ElementProperties]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[ElementProperties]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    @scala.inline
-    def setElementsVarargs(value: ElementProperties*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: ElementProperties*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setExpressionInfos(value: js.Array[ExpressionInfoProperties]): Self = StObject.set(x, "expressionInfos", value.asInstanceOf[js.Any])
+    inline def setExpressionInfos(value: js.Array[ExpressionInfoProperties]): Self = StObject.set(x, "expressionInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionInfosUndefined: Self = StObject.set(x, "expressionInfos", js.undefined)
+    inline def setExpressionInfosUndefined: Self = StObject.set(x, "expressionInfos", js.undefined)
     
-    @scala.inline
-    def setExpressionInfosVarargs(value: ExpressionInfoProperties*): Self = StObject.set(x, "expressionInfos", js.Array(value :_*))
+    inline def setExpressionInfosVarargs(value: ExpressionInfoProperties*): Self = StObject.set(x, "expressionInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

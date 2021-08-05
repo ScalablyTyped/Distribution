@@ -20,8 +20,7 @@ trait XBookmarksSupplier
 }
 object XBookmarksSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmarks: XNameAccess,
     acquire: () => Unit,
     getBookmarks: () => XNameAccess,
@@ -32,13 +31,10 @@ object XBookmarksSupplier {
     __obj.asInstanceOf[XBookmarksSupplier]
   }
   
-  @scala.inline
-  implicit class XBookmarksSupplierMutableBuilder[Self <: XBookmarksSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XBookmarksSupplier](x: Self) {
     
-    @scala.inline
-    def setBookmarks(value: XNameAccess): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
+    inline def setBookmarks(value: XNameAccess): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBookmarks(value: () => XNameAccess): Self = StObject.set(x, "getBookmarks", js.Any.fromFunction0(value))
+    inline def setGetBookmarks(value: () => XNameAccess): Self = StObject.set(x, "getBookmarks", js.Any.fromFunction0(value))
   }
 }

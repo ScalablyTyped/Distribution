@@ -31,31 +31,23 @@ trait ParamsResourceDocumentsGet
 }
 object ParamsResourceDocumentsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceDocumentsGet = {
+  inline def apply(): ParamsResourceDocumentsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceDocumentsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceDocumentsGetMutableBuilder[Self <: ParamsResourceDocumentsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceDocumentsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+    inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
-    @scala.inline
-    def setSuggestionsViewMode(value: String): Self = StObject.set(x, "suggestionsViewMode", value.asInstanceOf[js.Any])
+    inline def setSuggestionsViewMode(value: String): Self = StObject.set(x, "suggestionsViewMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionsViewModeUndefined: Self = StObject.set(x, "suggestionsViewMode", js.undefined)
+    inline def setSuggestionsViewModeUndefined: Self = StObject.set(x, "suggestionsViewMode", js.undefined)
   }
 }

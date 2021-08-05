@@ -18,19 +18,15 @@ trait EncodedTokensProvider extends StObject {
 }
 object EncodedTokensProvider {
   
-  @scala.inline
-  def apply(getInitialState: () => IState, tokenizeEncoded: (String, IState) => IEncodedLineTokens): EncodedTokensProvider = {
+  inline def apply(getInitialState: () => IState, tokenizeEncoded: (String, IState) => IEncodedLineTokens): EncodedTokensProvider = {
     val __obj = js.Dynamic.literal(getInitialState = js.Any.fromFunction0(getInitialState), tokenizeEncoded = js.Any.fromFunction2(tokenizeEncoded))
     __obj.asInstanceOf[EncodedTokensProvider]
   }
   
-  @scala.inline
-  implicit class EncodedTokensProviderMutableBuilder[Self <: EncodedTokensProvider] (val x: Self) extends AnyVal {
+  extension [Self <: EncodedTokensProvider](x: Self) {
     
-    @scala.inline
-    def setGetInitialState(value: () => IState): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
+    inline def setGetInitialState(value: () => IState): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTokenizeEncoded(value: (String, IState) => IEncodedLineTokens): Self = StObject.set(x, "tokenizeEncoded", js.Any.fromFunction2(value))
+    inline def setTokenizeEncoded(value: (String, IState) => IEncodedLineTokens): Self = StObject.set(x, "tokenizeEncoded", js.Any.fromFunction2(value))
   }
 }

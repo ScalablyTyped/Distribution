@@ -136,8 +136,7 @@ object Style {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Style]
+  inline def create(model: IModel): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Style]
   
   /**
     * Creates and returns a new Style instance in the SDK and on the server.
@@ -145,8 +144,7 @@ object Style {
     * of the parent DataGridCell element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInDataGridCellUnderStyle(container: DataGridCell): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridCellUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
+  inline def createInDataGridCellUnderStyle(container: DataGridCell): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridCellUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
   
   /**
     * Creates and returns a new Style instance in the SDK and on the server.
@@ -154,8 +152,7 @@ object Style {
     * of the parent DataGridColumn element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInDataGridColumnUnderStyle(container: DataGridColumn): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
+  inline def createInDataGridColumnUnderStyle(container: DataGridColumn): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
   
   /**
     * Creates and returns a new Style instance in the SDK and on the server.
@@ -163,8 +160,7 @@ object Style {
     * of the parent DocumentTemplate element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInDocumentTemplateUnderStyle(container: DocumentTemplate): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
+  inline def createInDocumentTemplateUnderStyle(container: DocumentTemplate): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
   
   /**
     * Creates and returns a new Style instance in the SDK and on the server.
@@ -172,8 +168,7 @@ object Style {
     * of the parent DynamicLabel element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInDynamicLabelUnderStyle(container: DynamicLabel): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicLabelUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
+  inline def createInDynamicLabelUnderStyle(container: DynamicLabel): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicLabelUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
   
   /**
     * Creates and returns a new Style instance in the SDK and on the server.
@@ -181,8 +176,7 @@ object Style {
     * of the parent Grid element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInGridUnderStyle(container: Grid): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
+  inline def createInGridUnderStyle(container: Grid): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
   
   /**
     * Creates and returns a new Style instance in the SDK and on the server.
@@ -190,8 +184,7 @@ object Style {
     * of the parent StaticLabel element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInStaticLabelUnderStyle(container: StaticLabel): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticLabelUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
+  inline def createInStaticLabelUnderStyle(container: StaticLabel): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticLabelUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
   
   /**
     * Creates and returns a new Style instance in the SDK and on the server.
@@ -199,8 +192,7 @@ object Style {
     * of the parent TableCell element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderStyle(container: TableCell): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
+  inline def createInTableCellUnderStyle(container: TableCell): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
   
   /**
     * Creates and returns a new Style instance in the SDK and on the server.
@@ -208,8 +200,7 @@ object Style {
     * of the parent Table element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInTableUnderStyle(container: Table): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
+  inline def createInTableUnderStyle(container: Table): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
   
   /**
     * Creates and returns a new Style instance in the SDK and on the server.
@@ -217,20 +208,17 @@ object Style {
     * of the parent Title element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInTitleUnderStyle(container: Title): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTitleUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
+  inline def createInTitleUnderStyle(container: Title): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTitleUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -13,19 +13,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createAutoCorrectedDatePipe(): Pipe = ^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")().asInstanceOf[Pipe]
-  @scala.inline
-  def createAutoCorrectedDatePipe(dateFormat: String): Pipe = ^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[Pipe]
-  @scala.inline
-  def createAutoCorrectedDatePipe(dateFormat: String, validYears: DatePipeYears): Pipe = (^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any], validYears.asInstanceOf[js.Any])).asInstanceOf[Pipe]
-  @scala.inline
-  def createAutoCorrectedDatePipe(dateFormat: Unit, validYears: DatePipeYears): Pipe = (^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any], validYears.asInstanceOf[js.Any])).asInstanceOf[Pipe]
+  inline def createAutoCorrectedDatePipe(): Pipe = ^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")().asInstanceOf[Pipe]
+  inline def createAutoCorrectedDatePipe(dateFormat: String): Pipe = ^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[Pipe]
+  inline def createAutoCorrectedDatePipe(dateFormat: String, validYears: DatePipeYears): Pipe = (^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any], validYears.asInstanceOf[js.Any])).asInstanceOf[Pipe]
+  inline def createAutoCorrectedDatePipe(dateFormat: Unit, validYears: DatePipeYears): Pipe = (^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any], validYears.asInstanceOf[js.Any])).asInstanceOf[Pipe]
   
-  @scala.inline
-  def createNumberMask(): js.Function1[/* rawValue */ String, Mask] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberMask")().asInstanceOf[js.Function1[/* rawValue */ String, Mask]]
-  @scala.inline
-  def createNumberMask(maskOptions: PartialNumberMaskOptions): js.Function1[/* rawValue */ String, Mask] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberMask")(maskOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* rawValue */ String, Mask]]
+  inline def createNumberMask(): js.Function1[/* rawValue */ String, Mask] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberMask")().asInstanceOf[js.Function1[/* rawValue */ String, Mask]]
+  inline def createNumberMask(maskOptions: PartialNumberMaskOptions): js.Function1[/* rawValue */ String, Mask] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberMask")(maskOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* rawValue */ String, Mask]]
   
   trait DatePipeYears extends StObject {
     
@@ -35,20 +29,16 @@ object mod {
   }
   object DatePipeYears {
     
-    @scala.inline
-    def apply(maxYear: Double, minYear: Double): DatePipeYears = {
+    inline def apply(maxYear: Double, minYear: Double): DatePipeYears = {
       val __obj = js.Dynamic.literal(maxYear = maxYear.asInstanceOf[js.Any], minYear = minYear.asInstanceOf[js.Any])
       __obj.asInstanceOf[DatePipeYears]
     }
     
-    @scala.inline
-    implicit class DatePipeYearsMutableBuilder[Self <: DatePipeYears] (val x: Self) extends AnyVal {
+    extension [Self <: DatePipeYears](x: Self) {
       
-      @scala.inline
-      def setMaxYear(value: Double): Self = StObject.set(x, "maxYear", value.asInstanceOf[js.Any])
+      inline def setMaxYear(value: Double): Self = StObject.set(x, "maxYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinYear(value: Double): Self = StObject.set(x, "minYear", value.asInstanceOf[js.Any])
+      inline def setMinYear(value: Double): Self = StObject.set(x, "minYear", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,8 +68,7 @@ object mod {
   }
   object NumberMaskOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowDecimal: Boolean,
       allowLeadingZeroes: Boolean,
       allowNegative: Boolean,
@@ -95,44 +84,31 @@ object mod {
       __obj.asInstanceOf[NumberMaskOptions]
     }
     
-    @scala.inline
-    implicit class NumberMaskOptionsMutableBuilder[Self <: NumberMaskOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NumberMaskOptions](x: Self) {
       
-      @scala.inline
-      def setAllowDecimal(value: Boolean): Self = StObject.set(x, "allowDecimal", value.asInstanceOf[js.Any])
+      inline def setAllowDecimal(value: Boolean): Self = StObject.set(x, "allowDecimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowLeadingZeroes(value: Boolean): Self = StObject.set(x, "allowLeadingZeroes", value.asInstanceOf[js.Any])
+      inline def setAllowLeadingZeroes(value: Boolean): Self = StObject.set(x, "allowLeadingZeroes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowNegative(value: Boolean): Self = StObject.set(x, "allowNegative", value.asInstanceOf[js.Any])
+      inline def setAllowNegative(value: Boolean): Self = StObject.set(x, "allowNegative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalLimit(value: Double): Self = StObject.set(x, "decimalLimit", value.asInstanceOf[js.Any])
+      inline def setDecimalLimit(value: Double): Self = StObject.set(x, "decimalLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalSymbol(value: String): Self = StObject.set(x, "decimalSymbol", value.asInstanceOf[js.Any])
+      inline def setDecimalSymbol(value: String): Self = StObject.set(x, "decimalSymbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeThousandsSeparator(value: Boolean): Self = StObject.set(x, "includeThousandsSeparator", value.asInstanceOf[js.Any])
+      inline def setIncludeThousandsSeparator(value: Boolean): Self = StObject.set(x, "includeThousandsSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegerLimit(value: Double): Self = StObject.set(x, "integerLimit", value.asInstanceOf[js.Any])
+      inline def setIntegerLimit(value: Double): Self = StObject.set(x, "integerLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegerLimitNull: Self = StObject.set(x, "integerLimit", null)
+      inline def setIntegerLimitNull: Self = StObject.set(x, "integerLimit", null)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireDecimal(value: Boolean): Self = StObject.set(x, "requireDecimal", value.asInstanceOf[js.Any])
+      inline def setRequireDecimal(value: Boolean): Self = StObject.set(x, "requireDecimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThousandsSeparatorSymbol(value: String): Self = StObject.set(x, "thousandsSeparatorSymbol", value.asInstanceOf[js.Any])
+      inline def setThousandsSeparatorSymbol(value: String): Self = StObject.set(x, "thousandsSeparatorSymbol", value.asInstanceOf[js.Any])
     }
   }
 }

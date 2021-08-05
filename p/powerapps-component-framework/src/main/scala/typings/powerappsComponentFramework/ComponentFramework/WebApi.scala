@@ -86,23 +86,18 @@ object WebApi {
   }
   object RetrieveMultipleResponse {
     
-    @scala.inline
-    def apply(entities: js.Array[Entity], nextLink: String): RetrieveMultipleResponse = {
+    inline def apply(entities: js.Array[Entity], nextLink: String): RetrieveMultipleResponse = {
       val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], nextLink = nextLink.asInstanceOf[js.Any])
       __obj.asInstanceOf[RetrieveMultipleResponse]
     }
     
-    @scala.inline
-    implicit class RetrieveMultipleResponseMutableBuilder[Self <: RetrieveMultipleResponse] (val x: Self) extends AnyVal {
+    extension [Self <: RetrieveMultipleResponse](x: Self) {
       
-      @scala.inline
-      def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+      inline def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+      inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
       
-      @scala.inline
-      def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
+      inline def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
     }
   }
 }

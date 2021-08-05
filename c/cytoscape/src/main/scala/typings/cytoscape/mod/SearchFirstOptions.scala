@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchFirstOptions extends StObject
 object SearchFirstOptions {
   
-  @scala.inline
-  def SearchFirstOptions1(root: Selector | CollectionArgument): typings.cytoscape.mod.SearchFirstOptions1 = {
+  inline def SearchFirstOptions1(root: Selector | CollectionArgument): typings.cytoscape.mod.SearchFirstOptions1 = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.cytoscape.mod.SearchFirstOptions1]
   }
   
-  @scala.inline
-  def SearchFirstOptions2(roots: Selector | CollectionArgument): typings.cytoscape.mod.SearchFirstOptions2 = {
+  inline def SearchFirstOptions2(roots: Selector | CollectionArgument): typings.cytoscape.mod.SearchFirstOptions2 = {
     val __obj = js.Dynamic.literal(roots = roots.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.cytoscape.mod.SearchFirstOptions2]
   }

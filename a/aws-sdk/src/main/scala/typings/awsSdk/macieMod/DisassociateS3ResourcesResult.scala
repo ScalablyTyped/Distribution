@@ -13,22 +13,17 @@ trait DisassociateS3ResourcesResult extends StObject {
 }
 object DisassociateS3ResourcesResult {
   
-  @scala.inline
-  def apply(): DisassociateS3ResourcesResult = {
+  inline def apply(): DisassociateS3ResourcesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateS3ResourcesResult]
   }
   
-  @scala.inline
-  implicit class DisassociateS3ResourcesResultMutableBuilder[Self <: DisassociateS3ResourcesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateS3ResourcesResult](x: Self) {
     
-    @scala.inline
-    def setFailedS3Resources(value: FailedS3Resources): Self = StObject.set(x, "failedS3Resources", value.asInstanceOf[js.Any])
+    inline def setFailedS3Resources(value: FailedS3Resources): Self = StObject.set(x, "failedS3Resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedS3ResourcesUndefined: Self = StObject.set(x, "failedS3Resources", js.undefined)
+    inline def setFailedS3ResourcesUndefined: Self = StObject.set(x, "failedS3Resources", js.undefined)
     
-    @scala.inline
-    def setFailedS3ResourcesVarargs(value: FailedS3Resource*): Self = StObject.set(x, "failedS3Resources", js.Array(value :_*))
+    inline def setFailedS3ResourcesVarargs(value: FailedS3Resource*): Self = StObject.set(x, "failedS3Resources", js.Array(value :_*))
   }
 }

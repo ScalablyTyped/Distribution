@@ -30,20 +30,16 @@ object typesMod {
   }
   object GraphQlEndpointOptions {
     
-    @scala.inline
-    def apply(method: RequestMethod, url: Url): GraphQlEndpointOptions = {
+    inline def apply(method: RequestMethod, url: Url): GraphQlEndpointOptions = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQlEndpointOptions]
     }
     
-    @scala.inline
-    implicit class GraphQlEndpointOptionsMutableBuilder[Self <: GraphQlEndpointOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQlEndpointOptions](x: Self) {
       
-      @scala.inline
-      def setVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+      inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     }
   }
   
@@ -55,26 +51,20 @@ object typesMod {
   }
   object GraphQlQueryResponse {
     
-    @scala.inline
-    def apply[ResponseData](data: ResponseData): GraphQlQueryResponse[ResponseData] = {
+    inline def apply[ResponseData](data: ResponseData): GraphQlQueryResponse[ResponseData] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQlQueryResponse[ResponseData]]
     }
     
-    @scala.inline
-    implicit class GraphQlQueryResponseMutableBuilder[Self <: GraphQlQueryResponse[?], ResponseData] (val x: Self & GraphQlQueryResponse[ResponseData]) extends AnyVal {
+    extension [Self <: GraphQlQueryResponse[?], ResponseData](x: Self & GraphQlQueryResponse[ResponseData]) {
       
-      @scala.inline
-      def setData(value: ResponseData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ResponseData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: js.Array[Extensions]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[Extensions]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setErrorsVarargs(value: Extensions*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Extensions*): Self = StObject.set(x, "errors", js.Array(value :_*))
     }
   }
   

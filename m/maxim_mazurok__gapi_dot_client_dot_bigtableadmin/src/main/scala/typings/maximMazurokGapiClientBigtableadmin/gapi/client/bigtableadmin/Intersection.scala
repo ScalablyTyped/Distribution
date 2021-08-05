@@ -11,22 +11,17 @@ trait Intersection extends StObject {
 }
 object Intersection {
   
-  @scala.inline
-  def apply(): Intersection = {
+  inline def apply(): Intersection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Intersection]
   }
   
-  @scala.inline
-  implicit class IntersectionMutableBuilder[Self <: Intersection] (val x: Self) extends AnyVal {
+  extension [Self <: Intersection](x: Self) {
     
-    @scala.inline
-    def setRules(value: js.Array[GcRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[GcRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: GcRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: GcRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

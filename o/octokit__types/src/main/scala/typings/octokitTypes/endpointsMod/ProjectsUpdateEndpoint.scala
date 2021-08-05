@@ -53,46 +53,33 @@ trait ProjectsUpdateEndpoint
 }
 object ProjectsUpdateEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[inertia], project_id: Double): ProjectsUpdateEndpoint = {
+  inline def apply(mediaType: `0`[inertia], project_id: Double): ProjectsUpdateEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsUpdateEndpoint]
   }
   
-  @scala.inline
-  implicit class ProjectsUpdateEndpointMutableBuilder[Self <: ProjectsUpdateEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsUpdateEndpoint](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrganization_permission(value: String): Self = StObject.set(x, "organization_permission", value.asInstanceOf[js.Any])
+    inline def setOrganization_permission(value: String): Self = StObject.set(x, "organization_permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganization_permissionUndefined: Self = StObject.set(x, "organization_permission", js.undefined)
+    inline def setOrganization_permissionUndefined: Self = StObject.set(x, "organization_permission", js.undefined)
     
-    @scala.inline
-    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+    inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
     
-    @scala.inline
-    def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    inline def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: open | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: open | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

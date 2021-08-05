@@ -11,6 +11,5 @@ object toggleElementClassMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: HTMLElement, className: String, shouldAdd: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], shouldAdd.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(element: HTMLElement, className: String, shouldAdd: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], shouldAdd.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

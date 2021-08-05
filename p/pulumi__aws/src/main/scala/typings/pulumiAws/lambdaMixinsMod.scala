@@ -39,13 +39,10 @@ object lambdaMixinsMod {
     var permission: Permission = js.native
   }
   
-  @scala.inline
-  def createFunctionFromEventHandler[E, R](name: String, handler: EventHandler[E, R]): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctionFromEventHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Function]
-  @scala.inline
-  def createFunctionFromEventHandler[E, R](name: String, handler: EventHandler[E, R], opts: ResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctionFromEventHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
+  inline def createFunctionFromEventHandler[E, R](name: String, handler: EventHandler[E, R]): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctionFromEventHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Function]
+  inline def createFunctionFromEventHandler[E, R](name: String, handler: EventHandler[E, R], opts: ResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctionFromEventHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
   
-  @scala.inline
-  def isEventHandler(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/lambdaMixins.EventHandler<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventHandler")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/lambdaMixins.EventHandler<any, any> */ Boolean]
+  inline def isEventHandler(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/lambdaMixins.EventHandler<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventHandler")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/lambdaMixins.EventHandler<any, any> */ Boolean]
   
   type BaseCallbackFunctionArgs = Overwrite[FunctionArgs, Code]
   
@@ -83,28 +80,22 @@ object lambdaMixinsMod {
   }
   object CallbackFunctionArgs {
     
-    @scala.inline
-    def apply[E, R](): CallbackFunctionArgs[E, R] = {
+    inline def apply[E, R](): CallbackFunctionArgs[E, R] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CallbackFunctionArgs[E, R]]
     }
     
-    @scala.inline
-    implicit class CallbackFunctionArgsMutableBuilder[Self <: CallbackFunctionArgs[?, ?], E, R] (val x: Self & (CallbackFunctionArgs[E, R])) extends AnyVal {
+    extension [Self <: CallbackFunctionArgs[?, ?], E, R](x: Self & (CallbackFunctionArgs[E, R])) {
       
-      @scala.inline
-      def setCallback(
+      inline def setCallback(
         value: (E, /* context */ Context, /* callback */ js.Function2[/* error */ js.UndefOr[js.Any], /* result */ js.UndefOr[R], Unit]) => js.Promise[R] | Unit
       ): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCallbackFactory(value: () => Callback[E, R]): Self = StObject.set(x, "callbackFactory", js.Any.fromFunction0(value))
+      inline def setCallbackFactory(value: () => Callback[E, R]): Self = StObject.set(x, "callbackFactory", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCallbackFactoryUndefined: Self = StObject.set(x, "callbackFactory", js.undefined)
+      inline def setCallbackFactoryUndefined: Self = StObject.set(x, "callbackFactory", js.undefined)
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     }
   }
   
@@ -193,8 +184,7 @@ object lambdaMixinsMod {
   }
   object Context {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       awsRequestId: String,
       callbackWaitsForEmptyEventLoop: Boolean,
       clientContext: js.Any,
@@ -211,41 +201,29 @@ object lambdaMixinsMod {
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setAwsRequestId(value: String): Self = StObject.set(x, "awsRequestId", value.asInstanceOf[js.Any])
+      inline def setAwsRequestId(value: String): Self = StObject.set(x, "awsRequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackWaitsForEmptyEventLoop(value: Boolean): Self = StObject.set(x, "callbackWaitsForEmptyEventLoop", value.asInstanceOf[js.Any])
+      inline def setCallbackWaitsForEmptyEventLoop(value: Boolean): Self = StObject.set(x, "callbackWaitsForEmptyEventLoop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientContext(value: js.Any): Self = StObject.set(x, "clientContext", value.asInstanceOf[js.Any])
+      inline def setClientContext(value: js.Any): Self = StObject.set(x, "clientContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionVersion(value: String): Self = StObject.set(x, "functionVersion", value.asInstanceOf[js.Any])
+      inline def setFunctionVersion(value: String): Self = StObject.set(x, "functionVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetRemainingTimeInMillis(value: () => String): Self = StObject.set(x, "getRemainingTimeInMillis", js.Any.fromFunction0(value))
+      inline def setGetRemainingTimeInMillis(value: () => String): Self = StObject.set(x, "getRemainingTimeInMillis", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIdentity(value: js.Any): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: js.Any): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvokedFunctionArn(value: String): Self = StObject.set(x, "invokedFunctionArn", value.asInstanceOf[js.Any])
+      inline def setInvokedFunctionArn(value: String): Self = StObject.set(x, "invokedFunctionArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogGroupName(value: String): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+      inline def setLogGroupName(value: String): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogStreamName(value: String): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
+      inline def setLogStreamName(value: String): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryLimitInMB(value: String): Self = StObject.set(x, "memoryLimitInMB", value.asInstanceOf[js.Any])
+      inline def setMemoryLimitInMB(value: String): Self = StObject.set(x, "memoryLimitInMB", value.asInstanceOf[js.Any])
     }
   }
   

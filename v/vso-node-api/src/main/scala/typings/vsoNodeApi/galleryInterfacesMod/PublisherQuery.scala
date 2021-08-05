@@ -18,22 +18,17 @@ trait PublisherQuery extends StObject {
 }
 object PublisherQuery {
   
-  @scala.inline
-  def apply(filters: js.Array[QueryFilter], flags: PublisherQueryFlags): PublisherQuery = {
+  inline def apply(filters: js.Array[QueryFilter], flags: PublisherQueryFlags): PublisherQuery = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublisherQuery]
   }
   
-  @scala.inline
-  implicit class PublisherQueryMutableBuilder[Self <: PublisherQuery] (val x: Self) extends AnyVal {
+  extension [Self <: PublisherQuery](x: Self) {
     
-    @scala.inline
-    def setFilters(value: js.Array[QueryFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[QueryFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersVarargs(value: QueryFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: QueryFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setFlags(value: PublisherQueryFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: PublisherQueryFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
   }
 }

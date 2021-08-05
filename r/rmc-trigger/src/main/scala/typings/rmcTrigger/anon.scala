@@ -33,8 +33,7 @@ object anon {
   }
   object AfterPopupVisibleChange {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       afterPopupVisibleChange: () => Unit,
       defaultPopupVisible: Boolean,
       destroyPopupOnHide: Boolean,
@@ -51,41 +50,29 @@ object anon {
       __obj.asInstanceOf[AfterPopupVisibleChange]
     }
     
-    @scala.inline
-    implicit class AfterPopupVisibleChangeMutableBuilder[Self <: AfterPopupVisibleChange] (val x: Self) extends AnyVal {
+    extension [Self <: AfterPopupVisibleChange](x: Self) {
       
-      @scala.inline
-      def setAfterPopupVisibleChange(value: () => Unit): Self = StObject.set(x, "afterPopupVisibleChange", js.Any.fromFunction0(value))
+      inline def setAfterPopupVisibleChange(value: () => Unit): Self = StObject.set(x, "afterPopupVisibleChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDefaultPopupVisible(value: Boolean): Self = StObject.set(x, "defaultPopupVisible", value.asInstanceOf[js.Any])
+      inline def setDefaultPopupVisible(value: Boolean): Self = StObject.set(x, "defaultPopupVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyPopupOnHide(value: Boolean): Self = StObject.set(x, "destroyPopupOnHide", value.asInstanceOf[js.Any])
+      inline def setDestroyPopupOnHide(value: Boolean): Self = StObject.set(x, "destroyPopupOnHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDocument(value: () => Document): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
+      inline def setGetDocument(value: () => Document): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPopupClassNameFromAlign(value: () => String): Self = StObject.set(x, "getPopupClassNameFromAlign", js.Any.fromFunction0(value))
+      inline def setGetPopupClassNameFromAlign(value: () => String): Self = StObject.set(x, "getPopupClassNameFromAlign", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskClosable(value: Boolean): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
+      inline def setMaskClosable(value: Boolean): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnPopupAlign(value: () => Unit): Self = StObject.set(x, "onPopupAlign", js.Any.fromFunction0(value))
+      inline def setOnPopupAlign(value: () => Unit): Self = StObject.set(x, "onPopupAlign", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPopupVisibleChange(value: () => Unit): Self = StObject.set(x, "onPopupVisibleChange", js.Any.fromFunction0(value))
+      inline def setOnPopupVisibleChange(value: () => Unit): Self = StObject.set(x, "onPopupVisibleChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
+      inline def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     }
   }
 }

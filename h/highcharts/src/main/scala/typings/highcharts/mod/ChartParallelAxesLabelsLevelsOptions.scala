@@ -16,25 +16,19 @@ trait ChartParallelAxesLabelsLevelsOptions extends StObject {
 }
 object ChartParallelAxesLabelsLevelsOptions {
   
-  @scala.inline
-  def apply(): ChartParallelAxesLabelsLevelsOptions = {
+  inline def apply(): ChartParallelAxesLabelsLevelsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartParallelAxesLabelsLevelsOptions]
   }
   
-  @scala.inline
-  implicit class ChartParallelAxesLabelsLevelsOptionsMutableBuilder[Self <: ChartParallelAxesLabelsLevelsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartParallelAxesLabelsLevelsOptions](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

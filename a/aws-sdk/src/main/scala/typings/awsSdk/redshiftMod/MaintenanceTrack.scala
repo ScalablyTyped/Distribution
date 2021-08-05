@@ -23,34 +23,25 @@ trait MaintenanceTrack extends StObject {
 }
 object MaintenanceTrack {
   
-  @scala.inline
-  def apply(): MaintenanceTrack = {
+  inline def apply(): MaintenanceTrack = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaintenanceTrack]
   }
   
-  @scala.inline
-  implicit class MaintenanceTrackMutableBuilder[Self <: MaintenanceTrack] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceTrack](x: Self) {
     
-    @scala.inline
-    def setDatabaseVersion(value: String): Self = StObject.set(x, "DatabaseVersion", value.asInstanceOf[js.Any])
+    inline def setDatabaseVersion(value: String): Self = StObject.set(x, "DatabaseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseVersionUndefined: Self = StObject.set(x, "DatabaseVersion", js.undefined)
+    inline def setDatabaseVersionUndefined: Self = StObject.set(x, "DatabaseVersion", js.undefined)
     
-    @scala.inline
-    def setMaintenanceTrackName(value: String): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
+    inline def setMaintenanceTrackName(value: String): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintenanceTrackNameUndefined: Self = StObject.set(x, "MaintenanceTrackName", js.undefined)
+    inline def setMaintenanceTrackNameUndefined: Self = StObject.set(x, "MaintenanceTrackName", js.undefined)
     
-    @scala.inline
-    def setUpdateTargets(value: EligibleTracksToUpdateList): Self = StObject.set(x, "UpdateTargets", value.asInstanceOf[js.Any])
+    inline def setUpdateTargets(value: EligibleTracksToUpdateList): Self = StObject.set(x, "UpdateTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTargetsUndefined: Self = StObject.set(x, "UpdateTargets", js.undefined)
+    inline def setUpdateTargetsUndefined: Self = StObject.set(x, "UpdateTargets", js.undefined)
     
-    @scala.inline
-    def setUpdateTargetsVarargs(value: UpdateTarget*): Self = StObject.set(x, "UpdateTargets", js.Array(value :_*))
+    inline def setUpdateTargetsVarargs(value: UpdateTarget*): Self = StObject.set(x, "UpdateTargets", js.Array(value :_*))
   }
 }

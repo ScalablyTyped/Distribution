@@ -16,16 +16,13 @@ trait CanvasGradient extends StObject {
 }
 object CanvasGradient {
   
-  @scala.inline
-  def apply(addColorStop: (Double, java.lang.String) => Unit): CanvasGradient = {
+  inline def apply(addColorStop: (Double, java.lang.String) => Unit): CanvasGradient = {
     val __obj = js.Dynamic.literal(addColorStop = js.Any.fromFunction2(addColorStop))
     __obj.asInstanceOf[CanvasGradient]
   }
   
-  @scala.inline
-  implicit class CanvasGradientMutableBuilder[Self <: CanvasGradient] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasGradient](x: Self) {
     
-    @scala.inline
-    def setAddColorStop(value: (Double, java.lang.String) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
+    inline def setAddColorStop(value: (Double, java.lang.String) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
   }
 }

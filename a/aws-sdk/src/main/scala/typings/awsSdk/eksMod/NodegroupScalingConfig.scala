@@ -23,31 +23,23 @@ trait NodegroupScalingConfig extends StObject {
 }
 object NodegroupScalingConfig {
   
-  @scala.inline
-  def apply(): NodegroupScalingConfig = {
+  inline def apply(): NodegroupScalingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodegroupScalingConfig]
   }
   
-  @scala.inline
-  implicit class NodegroupScalingConfigMutableBuilder[Self <: NodegroupScalingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: NodegroupScalingConfig](x: Self) {
     
-    @scala.inline
-    def setDesiredSize(value: Capacity): Self = StObject.set(x, "desiredSize", value.asInstanceOf[js.Any])
+    inline def setDesiredSize(value: Capacity): Self = StObject.set(x, "desiredSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredSizeUndefined: Self = StObject.set(x, "desiredSize", js.undefined)
+    inline def setDesiredSizeUndefined: Self = StObject.set(x, "desiredSize", js.undefined)
     
-    @scala.inline
-    def setMaxSize(value: Capacity): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Capacity): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
-    @scala.inline
-    def setMinSize(value: Capacity): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: Capacity): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+    inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
   }
 }

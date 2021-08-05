@@ -17,31 +17,23 @@ trait Transactionid
 }
 object Transactionid {
   
-  @scala.inline
-  def apply(): Transactionid = {
+  inline def apply(): Transactionid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Transactionid]
   }
   
-  @scala.inline
-  implicit class TransactionidMutableBuilder[Self <: Transactionid] (val x: Self) extends AnyVal {
+  extension [Self <: Transactionid](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
-    @scala.inline
-    def setTransaction_id(value: String): Self = StObject.set(x, "transaction_id", value.asInstanceOf[js.Any])
+    inline def setTransaction_id(value: String): Self = StObject.set(x, "transaction_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransaction_idUndefined: Self = StObject.set(x, "transaction_id", js.undefined)
+    inline def setTransaction_idUndefined: Self = StObject.set(x, "transaction_id", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

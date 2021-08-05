@@ -450,7 +450,7 @@ trait SpineGameObject extends StObject {
     * The Scene to which this Game Object belongs.
     * Game Objects can only belong to one Scene.
     */
-  var scene: Scene = js.native
+  /* protected */ var scene: Scene = js.native
   
   var scrollFactorX: Double = js.native
   

@@ -33,8 +33,7 @@ trait RestApiResponseStatusModel extends StObject {
 }
 object RestApiResponseStatusModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     operationDetails: js.Any,
     operationId: String,
     percentageCompleted: Double,
@@ -45,22 +44,16 @@ object RestApiResponseStatusModel {
     __obj.asInstanceOf[RestApiResponseStatusModel]
   }
   
-  @scala.inline
-  implicit class RestApiResponseStatusModelMutableBuilder[Self <: RestApiResponseStatusModel] (val x: Self) extends AnyVal {
+  extension [Self <: RestApiResponseStatusModel](x: Self) {
     
-    @scala.inline
-    def setOperationDetails(value: js.Any): Self = StObject.set(x, "operationDetails", value.asInstanceOf[js.Any])
+    inline def setOperationDetails(value: js.Any): Self = StObject.set(x, "operationDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageCompleted(value: Double): Self = StObject.set(x, "percentageCompleted", value.asInstanceOf[js.Any])
+    inline def setPercentageCompleted(value: Double): Self = StObject.set(x, "percentageCompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: RestApiResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: RestApiResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

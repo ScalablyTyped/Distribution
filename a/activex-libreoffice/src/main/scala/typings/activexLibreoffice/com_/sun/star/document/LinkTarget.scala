@@ -21,8 +21,7 @@ trait LinkTarget
 }
 object LinkTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LinkDisplayName: String,
     Links: XNameAccess,
     PropertySetInfo: XPropertySetInfo,
@@ -42,10 +41,8 @@ object LinkTarget {
     __obj.asInstanceOf[LinkTarget]
   }
   
-  @scala.inline
-  implicit class LinkTargetMutableBuilder[Self <: LinkTarget] (val x: Self) extends AnyVal {
+  extension [Self <: LinkTarget](x: Self) {
     
-    @scala.inline
-    def setLinkDisplayName(value: String): Self = StObject.set(x, "LinkDisplayName", value.asInstanceOf[js.Any])
+    inline def setLinkDisplayName(value: String): Self = StObject.set(x, "LinkDisplayName", value.asInstanceOf[js.Any])
   }
 }

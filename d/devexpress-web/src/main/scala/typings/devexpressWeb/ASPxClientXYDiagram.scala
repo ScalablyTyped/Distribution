@@ -18,8 +18,7 @@ trait ASPxClientXYDiagram
 }
 object ASPxClientXYDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DiagramToPoint: (js.Any, js.Any, ASPxClientAxis2D, ASPxClientAxis2D, ASPxClientXYDiagramPane) => ASPxClientControlCoordinates,
     PointToDiagram: (Double, Double) => ASPxClientDiagramCoordinates,
     ShowCrosshair: (Double, Double) => Unit,
@@ -36,10 +35,8 @@ object ASPxClientXYDiagram {
     __obj.asInstanceOf[ASPxClientXYDiagram]
   }
   
-  @scala.inline
-  implicit class ASPxClientXYDiagramMutableBuilder[Self <: ASPxClientXYDiagram] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientXYDiagram](x: Self) {
     
-    @scala.inline
-    def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
+    inline def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
   }
 }

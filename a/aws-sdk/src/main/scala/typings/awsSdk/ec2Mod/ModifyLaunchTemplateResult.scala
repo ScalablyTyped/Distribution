@@ -13,19 +13,15 @@ trait ModifyLaunchTemplateResult extends StObject {
 }
 object ModifyLaunchTemplateResult {
   
-  @scala.inline
-  def apply(): ModifyLaunchTemplateResult = {
+  inline def apply(): ModifyLaunchTemplateResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyLaunchTemplateResult]
   }
   
-  @scala.inline
-  implicit class ModifyLaunchTemplateResultMutableBuilder[Self <: ModifyLaunchTemplateResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyLaunchTemplateResult](x: Self) {
     
-    @scala.inline
-    def setLaunchTemplate(value: LaunchTemplate): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplate(value: LaunchTemplate): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateUndefined: Self = StObject.set(x, "LaunchTemplate", js.undefined)
+    inline def setLaunchTemplateUndefined: Self = StObject.set(x, "LaunchTemplate", js.undefined)
   }
 }

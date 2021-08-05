@@ -18,25 +18,19 @@ trait InventoryEncryption extends StObject {
 }
 object InventoryEncryption {
   
-  @scala.inline
-  def apply(): InventoryEncryption = {
+  inline def apply(): InventoryEncryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InventoryEncryption]
   }
   
-  @scala.inline
-  implicit class InventoryEncryptionMutableBuilder[Self <: InventoryEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryEncryption](x: Self) {
     
-    @scala.inline
-    def setSSEKMS(value: SSEKMS): Self = StObject.set(x, "SSEKMS", value.asInstanceOf[js.Any])
+    inline def setSSEKMS(value: SSEKMS): Self = StObject.set(x, "SSEKMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSEKMSUndefined: Self = StObject.set(x, "SSEKMS", js.undefined)
+    inline def setSSEKMSUndefined: Self = StObject.set(x, "SSEKMS", js.undefined)
     
-    @scala.inline
-    def setSSES3(value: SSES3): Self = StObject.set(x, "SSES3", value.asInstanceOf[js.Any])
+    inline def setSSES3(value: SSES3): Self = StObject.set(x, "SSES3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSES3Undefined: Self = StObject.set(x, "SSES3", js.undefined)
+    inline def setSSES3Undefined: Self = StObject.set(x, "SSES3", js.undefined)
   }
 }

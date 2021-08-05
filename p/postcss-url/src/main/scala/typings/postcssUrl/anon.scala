@@ -44,47 +44,34 @@ object anon {
   }
   object AbsolutePath {
     
-    @scala.inline
-    def apply(url: String): AbsolutePath = {
+    inline def apply(url: String): AbsolutePath = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbsolutePath]
     }
     
-    @scala.inline
-    implicit class AbsolutePathMutableBuilder[Self <: AbsolutePath] (val x: Self) extends AnyVal {
+    extension [Self <: AbsolutePath](x: Self) {
       
-      @scala.inline
-      def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
+      inline def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
+      inline def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
       
-      @scala.inline
-      def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+      inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
+      inline def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,35 +94,26 @@ object anon {
   }
   object Append {
     
-    @scala.inline
-    def apply(): Append = {
+    inline def apply(): Append = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Append]
     }
     
-    @scala.inline
-    implicit class AppendMutableBuilder[Self <: Append] (val x: Self) extends AnyVal {
+    extension [Self <: Append](x: Self) {
       
-      @scala.inline
-      def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+      inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+      inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
       
-      @scala.inline
-      def setMethod(value: xxhash32 | xxhash64 | CustomHashFunction): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: xxhash32 | xxhash64 | CustomHashFunction): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodFunction1(value: /* file */ Buffer => String): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
+      inline def setMethodFunction1(value: /* file */ Buffer => String): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setShrink(value: Double): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
+      inline def setShrink(value: Double): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
+      inline def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
     }
   }
   
@@ -158,32 +136,24 @@ object anon {
   }
   object File {
     
-    @scala.inline
-    def apply(): File = {
+    inline def apply(): File = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
 }

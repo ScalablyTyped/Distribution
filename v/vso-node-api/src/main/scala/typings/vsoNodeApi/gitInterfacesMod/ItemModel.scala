@@ -20,8 +20,7 @@ trait ItemModel extends StObject {
 }
 object ItemModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     contentMetadata: FileContentMetadata,
     isFolder: Boolean,
@@ -33,25 +32,18 @@ object ItemModel {
     __obj.asInstanceOf[ItemModel]
   }
   
-  @scala.inline
-  implicit class ItemModelMutableBuilder[Self <: ItemModel] (val x: Self) extends AnyVal {
+  extension [Self <: ItemModel](x: Self) {
     
-    @scala.inline
-    def setContentMetadata(value: FileContentMetadata): Self = StObject.set(x, "contentMetadata", value.asInstanceOf[js.Any])
+    inline def setContentMetadata(value: FileContentMetadata): Self = StObject.set(x, "contentMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFolder(value: Boolean): Self = StObject.set(x, "isFolder", value.asInstanceOf[js.Any])
+    inline def setIsFolder(value: Boolean): Self = StObject.set(x, "isFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSymLink(value: Boolean): Self = StObject.set(x, "isSymLink", value.asInstanceOf[js.Any])
+    inline def setIsSymLink(value: Boolean): Self = StObject.set(x, "isSymLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

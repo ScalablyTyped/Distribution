@@ -18,19 +18,15 @@ trait TagResourceInput extends StObject {
 }
 object TagResourceInput {
   
-  @scala.inline
-  def apply(ResourceArn: ARNString, Tags: IdentityPoolTagsType): TagResourceInput = {
+  inline def apply(ResourceArn: ARNString, Tags: IdentityPoolTagsType): TagResourceInput = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagResourceInput]
   }
   
-  @scala.inline
-  implicit class TagResourceInputMutableBuilder[Self <: TagResourceInput] (val x: Self) extends AnyVal {
+  extension [Self <: TagResourceInput](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: ARNString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ARNString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: IdentityPoolTagsType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: IdentityPoolTagsType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
   }
 }

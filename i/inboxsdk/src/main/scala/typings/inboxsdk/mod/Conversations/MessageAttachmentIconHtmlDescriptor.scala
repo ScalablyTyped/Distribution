@@ -14,16 +14,13 @@ trait MessageAttachmentIconHtmlDescriptor
 }
 object MessageAttachmentIconHtmlDescriptor {
   
-  @scala.inline
-  def apply(iconHtml: String, tooltip: String | HTMLElement): MessageAttachmentIconHtmlDescriptor = {
+  inline def apply(iconHtml: String, tooltip: String | HTMLElement): MessageAttachmentIconHtmlDescriptor = {
     val __obj = js.Dynamic.literal(iconHtml = iconHtml.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageAttachmentIconHtmlDescriptor]
   }
   
-  @scala.inline
-  implicit class MessageAttachmentIconHtmlDescriptorMutableBuilder[Self <: MessageAttachmentIconHtmlDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: MessageAttachmentIconHtmlDescriptor](x: Self) {
     
-    @scala.inline
-    def setIconHtml(value: String): Self = StObject.set(x, "iconHtml", value.asInstanceOf[js.Any])
+    inline def setIconHtml(value: String): Self = StObject.set(x, "iconHtml", value.asInstanceOf[js.Any])
   }
 }

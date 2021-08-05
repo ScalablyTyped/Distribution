@@ -28,37 +28,27 @@ trait NoiseReducer extends StObject {
 }
 object NoiseReducer {
   
-  @scala.inline
-  def apply(): NoiseReducer = {
+  inline def apply(): NoiseReducer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NoiseReducer]
   }
   
-  @scala.inline
-  implicit class NoiseReducerMutableBuilder[Self <: NoiseReducer] (val x: Self) extends AnyVal {
+  extension [Self <: NoiseReducer](x: Self) {
     
-    @scala.inline
-    def setFilter(value: NoiseReducerFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: NoiseReducerFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterSettings(value: NoiseReducerFilterSettings): Self = StObject.set(x, "FilterSettings", value.asInstanceOf[js.Any])
+    inline def setFilterSettings(value: NoiseReducerFilterSettings): Self = StObject.set(x, "FilterSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterSettingsUndefined: Self = StObject.set(x, "FilterSettings", js.undefined)
+    inline def setFilterSettingsUndefined: Self = StObject.set(x, "FilterSettings", js.undefined)
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setSpatialFilterSettings(value: NoiseReducerSpatialFilterSettings): Self = StObject.set(x, "SpatialFilterSettings", value.asInstanceOf[js.Any])
+    inline def setSpatialFilterSettings(value: NoiseReducerSpatialFilterSettings): Self = StObject.set(x, "SpatialFilterSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialFilterSettingsUndefined: Self = StObject.set(x, "SpatialFilterSettings", js.undefined)
+    inline def setSpatialFilterSettingsUndefined: Self = StObject.set(x, "SpatialFilterSettings", js.undefined)
     
-    @scala.inline
-    def setTemporalFilterSettings(value: NoiseReducerTemporalFilterSettings): Self = StObject.set(x, "TemporalFilterSettings", value.asInstanceOf[js.Any])
+    inline def setTemporalFilterSettings(value: NoiseReducerTemporalFilterSettings): Self = StObject.set(x, "TemporalFilterSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemporalFilterSettingsUndefined: Self = StObject.set(x, "TemporalFilterSettings", js.undefined)
+    inline def setTemporalFilterSettingsUndefined: Self = StObject.set(x, "TemporalFilterSettings", js.undefined)
   }
 }

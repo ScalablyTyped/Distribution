@@ -13,16 +13,13 @@ trait SetDefaultAuthorizerRequest extends StObject {
 }
 object SetDefaultAuthorizerRequest {
   
-  @scala.inline
-  def apply(authorizerName: AuthorizerName): SetDefaultAuthorizerRequest = {
+  inline def apply(authorizerName: AuthorizerName): SetDefaultAuthorizerRequest = {
     val __obj = js.Dynamic.literal(authorizerName = authorizerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDefaultAuthorizerRequest]
   }
   
-  @scala.inline
-  implicit class SetDefaultAuthorizerRequestMutableBuilder[Self <: SetDefaultAuthorizerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetDefaultAuthorizerRequest](x: Self) {
     
-    @scala.inline
-    def setAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "authorizerName", value.asInstanceOf[js.Any])
+    inline def setAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "authorizerName", value.asInstanceOf[js.Any])
   }
 }

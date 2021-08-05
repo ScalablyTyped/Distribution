@@ -16,23 +16,19 @@ trait LoggingConfig extends StObject {
 }
 object LoggingConfig {
   
-  @scala.inline
-  def apply(): LoggingConfig = {
+  inline def apply(): LoggingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoggingConfig]
   }
   
-  @scala.inline
-  implicit class LoggingConfigMutableBuilder[Self <: LoggingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingConfig](x: Self) {
     
-    @scala.inline
-    def setDriverLogLevels(
+    inline def setDriverLogLevels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.LoggingConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "driverLogLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriverLogLevelsUndefined: Self = StObject.set(x, "driverLogLevels", js.undefined)
+    inline def setDriverLogLevelsUndefined: Self = StObject.set(x, "driverLogLevels", js.undefined)
   }
 }

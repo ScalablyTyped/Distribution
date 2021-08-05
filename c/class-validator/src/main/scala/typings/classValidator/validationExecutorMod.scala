@@ -19,33 +19,33 @@ object validationExecutorMod {
     
     var awaitingPromises: js.Array[js.Promise[js.Any]] = js.native
     
-    var conditionalValidations: js.Any = js.native
+    /* private */ var conditionalValidations: js.Any = js.native
     
-    var createValidationError: js.Any = js.native
+    /* private */ var createValidationError: js.Any = js.native
     
-    var customValidations: js.Any = js.native
+    /* private */ var customValidations: js.Any = js.native
     
     def execute(`object`: js.Object, targetSchema: String, validationErrors: js.Array[ValidationError]): Unit = js.native
     
-    var generateValidationError: js.Any = js.native
+    /* private */ var generateValidationError: js.Any = js.native
     
-    var getConstraintType: js.Any = js.native
+    /* private */ var getConstraintType: js.Any = js.native
     
     var ignoreAsyncValidations: Boolean = js.native
     
-    var mapContexts: js.Any = js.native
+    /* private */ var mapContexts: js.Any = js.native
     
-    var metadataStorage: js.Any = js.native
+    /* private */ var metadataStorage: js.Any = js.native
     
-    var nestedValidations: js.Any = js.native
+    /* private */ var nestedValidations: js.Any = js.native
     
-    var performValidations: js.Any = js.native
+    /* private */ var performValidations: js.Any = js.native
     
     def stripEmptyErrors(errors: js.Array[ValidationError]): js.Array[ValidationError] = js.native
     
-    var validator: js.Any = js.native
+    /* private */ var validator: js.Any = js.native
     
-    var validatorOptions: js.Any = js.native
+    /* private */ var validatorOptions: js.Any = js.native
     
     def whitelist(
       `object`: js.Any,

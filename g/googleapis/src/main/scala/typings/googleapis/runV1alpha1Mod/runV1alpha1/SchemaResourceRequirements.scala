@@ -46,37 +46,27 @@ trait SchemaResourceRequirements extends StObject {
 }
 object SchemaResourceRequirements {
   
-  @scala.inline
-  def apply(): SchemaResourceRequirements = {
+  inline def apply(): SchemaResourceRequirements = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourceRequirements]
   }
   
-  @scala.inline
-  implicit class SchemaResourceRequirementsMutableBuilder[Self <: SchemaResourceRequirements] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourceRequirements](x: Self) {
     
-    @scala.inline
-    def setLimits(value: StringDictionary[String]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: StringDictionary[String]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsInMap(value: StringDictionary[SchemaQuantity]): Self = StObject.set(x, "limitsInMap", value.asInstanceOf[js.Any])
+    inline def setLimitsInMap(value: StringDictionary[SchemaQuantity]): Self = StObject.set(x, "limitsInMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsInMapUndefined: Self = StObject.set(x, "limitsInMap", js.undefined)
+    inline def setLimitsInMapUndefined: Self = StObject.set(x, "limitsInMap", js.undefined)
     
-    @scala.inline
-    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+    inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
-    @scala.inline
-    def setRequests(value: StringDictionary[String]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: StringDictionary[String]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsInMap(value: StringDictionary[SchemaQuantity]): Self = StObject.set(x, "requestsInMap", value.asInstanceOf[js.Any])
+    inline def setRequestsInMap(value: StringDictionary[SchemaQuantity]): Self = StObject.set(x, "requestsInMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsInMapUndefined: Self = StObject.set(x, "requestsInMap", js.undefined)
+    inline def setRequestsInMapUndefined: Self = StObject.set(x, "requestsInMap", js.undefined)
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
   }
 }

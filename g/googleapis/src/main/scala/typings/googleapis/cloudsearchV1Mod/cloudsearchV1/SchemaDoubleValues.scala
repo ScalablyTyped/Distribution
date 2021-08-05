@@ -13,22 +13,17 @@ trait SchemaDoubleValues extends StObject {
 }
 object SchemaDoubleValues {
   
-  @scala.inline
-  def apply(): SchemaDoubleValues = {
+  inline def apply(): SchemaDoubleValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDoubleValues]
   }
   
-  @scala.inline
-  implicit class SchemaDoubleValuesMutableBuilder[Self <: SchemaDoubleValues] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDoubleValues](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

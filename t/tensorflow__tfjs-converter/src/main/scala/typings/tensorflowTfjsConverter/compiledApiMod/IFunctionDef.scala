@@ -21,52 +21,37 @@ trait IFunctionDef extends StObject {
 }
 object IFunctionDef {
   
-  @scala.inline
-  def apply(): IFunctionDef = {
+  inline def apply(): IFunctionDef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFunctionDef]
   }
   
-  @scala.inline
-  implicit class IFunctionDefMutableBuilder[Self <: IFunctionDef] (val x: Self) extends AnyVal {
+  extension [Self <: IFunctionDef](x: Self) {
     
-    @scala.inline
-    def setAttr(value: StringDictionary[IAttrValue]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: StringDictionary[IAttrValue]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttrNull: Self = StObject.set(x, "attr", null)
+    inline def setAttrNull: Self = StObject.set(x, "attr", null)
     
-    @scala.inline
-    def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
+    inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
-    @scala.inline
-    def setNodeDef(value: js.Array[INodeDef]): Self = StObject.set(x, "nodeDef", value.asInstanceOf[js.Any])
+    inline def setNodeDef(value: js.Array[INodeDef]): Self = StObject.set(x, "nodeDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeDefNull: Self = StObject.set(x, "nodeDef", null)
+    inline def setNodeDefNull: Self = StObject.set(x, "nodeDef", null)
     
-    @scala.inline
-    def setNodeDefUndefined: Self = StObject.set(x, "nodeDef", js.undefined)
+    inline def setNodeDefUndefined: Self = StObject.set(x, "nodeDef", js.undefined)
     
-    @scala.inline
-    def setNodeDefVarargs(value: INodeDef*): Self = StObject.set(x, "nodeDef", js.Array(value :_*))
+    inline def setNodeDefVarargs(value: INodeDef*): Self = StObject.set(x, "nodeDef", js.Array(value :_*))
     
-    @scala.inline
-    def setRet(value: StringDictionary[String]): Self = StObject.set(x, "ret", value.asInstanceOf[js.Any])
+    inline def setRet(value: StringDictionary[String]): Self = StObject.set(x, "ret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetNull: Self = StObject.set(x, "ret", null)
+    inline def setRetNull: Self = StObject.set(x, "ret", null)
     
-    @scala.inline
-    def setRetUndefined: Self = StObject.set(x, "ret", js.undefined)
+    inline def setRetUndefined: Self = StObject.set(x, "ret", js.undefined)
     
-    @scala.inline
-    def setSignature(value: IOpDef): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: IOpDef): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureNull: Self = StObject.set(x, "signature", null)
+    inline def setSignatureNull: Self = StObject.set(x, "signature", null)
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

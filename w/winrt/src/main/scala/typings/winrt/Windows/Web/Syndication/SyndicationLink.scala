@@ -12,8 +12,7 @@ trait SyndicationLink
      with ISyndicationLink
 object SyndicationLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributeExtensions: IVector[SyndicationAttribute],
     baseUri: Uri,
     elementExtensions: IVector[ISyndicationNode],

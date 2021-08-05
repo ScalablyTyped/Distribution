@@ -11,16 +11,13 @@ trait JSONSchemaRefType extends StObject {
 }
 object JSONSchemaRefType {
   
-  @scala.inline
-  def apply($ref: String): JSONSchemaRefType = {
+  inline def apply($ref: String): JSONSchemaRefType = {
     val __obj = js.Dynamic.literal($ref = $ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONSchemaRefType]
   }
   
-  @scala.inline
-  implicit class JSONSchemaRefTypeMutableBuilder[Self <: JSONSchemaRefType] (val x: Self) extends AnyVal {
+  extension [Self <: JSONSchemaRefType](x: Self) {
     
-    @scala.inline
-    def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
+    inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
   }
 }

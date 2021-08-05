@@ -22,49 +22,35 @@ trait SendFileParameters extends StObject {
 }
 object SendFileParameters {
   
-  @scala.inline
-  def apply(channel: String, file: StreamFileInput | BufferFileInput | UriFileInput): SendFileParameters = {
+  inline def apply(channel: String, file: StreamFileInput | BufferFileInput | UriFileInput): SendFileParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendFileParameters]
   }
   
-  @scala.inline
-  implicit class SendFileParametersMutableBuilder[Self <: SendFileParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SendFileParameters](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCipherKey(value: String): Self = StObject.set(x, "cipherKey", value.asInstanceOf[js.Any])
+    inline def setCipherKey(value: String): Self = StObject.set(x, "cipherKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCipherKeyUndefined: Self = StObject.set(x, "cipherKey", js.undefined)
+    inline def setCipherKeyUndefined: Self = StObject.set(x, "cipherKey", js.undefined)
     
-    @scala.inline
-    def setFile(value: StreamFileInput | BufferFileInput | UriFileInput): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: StreamFileInput | BufferFileInput | UriFileInput): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setStoreInHistory(value: Boolean): Self = StObject.set(x, "storeInHistory", value.asInstanceOf[js.Any])
+    inline def setStoreInHistory(value: Boolean): Self = StObject.set(x, "storeInHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreInHistoryUndefined: Self = StObject.set(x, "storeInHistory", js.undefined)
+    inline def setStoreInHistoryUndefined: Self = StObject.set(x, "storeInHistory", js.undefined)
     
-    @scala.inline
-    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

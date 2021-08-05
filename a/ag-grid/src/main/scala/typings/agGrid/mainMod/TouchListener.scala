@@ -22,24 +22,20 @@ object TouchListener {
   @JSImport("ag-grid/dist/lib/main", "TouchListener.DOUBLE_TAP_MILLIS")
   @js.native
   def DOUBLE_TAP_MILLIS: js.Any = js.native
-  @scala.inline
-  def DOUBLE_TAP_MILLIS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOUBLE_TAP_MILLIS")(x.asInstanceOf[js.Any])
+  inline def DOUBLE_TAP_MILLIS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOUBLE_TAP_MILLIS")(x.asInstanceOf[js.Any])
   
   @JSImport("ag-grid/dist/lib/main", "TouchListener.EVENT_DOUBLE_TAP")
   @js.native
   def EVENT_DOUBLE_TAP: String = js.native
-  @scala.inline
-  def EVENT_DOUBLE_TAP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_DOUBLE_TAP")(x.asInstanceOf[js.Any])
+  inline def EVENT_DOUBLE_TAP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_DOUBLE_TAP")(x.asInstanceOf[js.Any])
   
   @JSImport("ag-grid/dist/lib/main", "TouchListener.EVENT_LONG_TAP")
   @js.native
   def EVENT_LONG_TAP: String = js.native
-  @scala.inline
-  def EVENT_LONG_TAP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_LONG_TAP")(x.asInstanceOf[js.Any])
+  inline def EVENT_LONG_TAP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_LONG_TAP")(x.asInstanceOf[js.Any])
   
   @JSImport("ag-grid/dist/lib/main", "TouchListener.EVENT_TAP")
   @js.native
   def EVENT_TAP: String = js.native
-  @scala.inline
-  def EVENT_TAP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_TAP")(x.asInstanceOf[js.Any])
+  inline def EVENT_TAP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_TAP")(x.asInstanceOf[js.Any])
 }

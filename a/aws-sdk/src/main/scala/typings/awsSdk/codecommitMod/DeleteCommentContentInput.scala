@@ -13,16 +13,13 @@ trait DeleteCommentContentInput extends StObject {
 }
 object DeleteCommentContentInput {
   
-  @scala.inline
-  def apply(commentId: CommentId): DeleteCommentContentInput = {
+  inline def apply(commentId: CommentId): DeleteCommentContentInput = {
     val __obj = js.Dynamic.literal(commentId = commentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCommentContentInput]
   }
   
-  @scala.inline
-  implicit class DeleteCommentContentInputMutableBuilder[Self <: DeleteCommentContentInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCommentContentInput](x: Self) {
     
-    @scala.inline
-    def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
+    inline def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
   }
 }

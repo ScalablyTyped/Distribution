@@ -8,16 +8,13 @@ object voucherCodeGeneratorStrings {
   
   @js.native
   sealed trait alphabetic extends StObject
-  @scala.inline
-  def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  inline def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
   
   @js.native
   sealed trait alphanumeric extends StObject
-  @scala.inline
-  def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
+  inline def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
   
   @js.native
   sealed trait numbers extends StObject
-  @scala.inline
-  def numbers: numbers = "numbers".asInstanceOf[numbers]
+  inline def numbers: numbers = "numbers".asInstanceOf[numbers]
 }

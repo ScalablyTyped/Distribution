@@ -71,70 +71,49 @@ trait SchemaDataSource extends StObject {
 }
 object SchemaDataSource {
   
-  @scala.inline
-  def apply(): SchemaDataSource = {
+  inline def apply(): SchemaDataSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDataSource]
   }
   
-  @scala.inline
-  implicit class SchemaDataSourceMutableBuilder[Self <: SchemaDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDataSource](x: Self) {
     
-    @scala.inline
-    def setDisableModifications(value: Boolean): Self = StObject.set(x, "disableModifications", value.asInstanceOf[js.Any])
+    inline def setDisableModifications(value: Boolean): Self = StObject.set(x, "disableModifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableModificationsUndefined: Self = StObject.set(x, "disableModifications", js.undefined)
+    inline def setDisableModificationsUndefined: Self = StObject.set(x, "disableModifications", js.undefined)
     
-    @scala.inline
-    def setDisableServing(value: Boolean): Self = StObject.set(x, "disableServing", value.asInstanceOf[js.Any])
+    inline def setDisableServing(value: Boolean): Self = StObject.set(x, "disableServing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableServingUndefined: Self = StObject.set(x, "disableServing", js.undefined)
+    inline def setDisableServingUndefined: Self = StObject.set(x, "disableServing", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setIndexingServiceAccounts(value: js.Array[String]): Self = StObject.set(x, "indexingServiceAccounts", value.asInstanceOf[js.Any])
+    inline def setIndexingServiceAccounts(value: js.Array[String]): Self = StObject.set(x, "indexingServiceAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexingServiceAccountsUndefined: Self = StObject.set(x, "indexingServiceAccounts", js.undefined)
+    inline def setIndexingServiceAccountsUndefined: Self = StObject.set(x, "indexingServiceAccounts", js.undefined)
     
-    @scala.inline
-    def setIndexingServiceAccountsVarargs(value: String*): Self = StObject.set(x, "indexingServiceAccounts", js.Array(value :_*))
+    inline def setIndexingServiceAccountsVarargs(value: String*): Self = StObject.set(x, "indexingServiceAccounts", js.Array(value :_*))
     
-    @scala.inline
-    def setItemsVisibility(value: js.Array[SchemaGSuitePrincipal]): Self = StObject.set(x, "itemsVisibility", value.asInstanceOf[js.Any])
+    inline def setItemsVisibility(value: js.Array[SchemaGSuitePrincipal]): Self = StObject.set(x, "itemsVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVisibilityUndefined: Self = StObject.set(x, "itemsVisibility", js.undefined)
+    inline def setItemsVisibilityUndefined: Self = StObject.set(x, "itemsVisibility", js.undefined)
     
-    @scala.inline
-    def setItemsVisibilityVarargs(value: SchemaGSuitePrincipal*): Self = StObject.set(x, "itemsVisibility", js.Array(value :_*))
+    inline def setItemsVisibilityVarargs(value: SchemaGSuitePrincipal*): Self = StObject.set(x, "itemsVisibility", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOperationIds(value: js.Array[String]): Self = StObject.set(x, "operationIds", value.asInstanceOf[js.Any])
+    inline def setOperationIds(value: js.Array[String]): Self = StObject.set(x, "operationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdsUndefined: Self = StObject.set(x, "operationIds", js.undefined)
+    inline def setOperationIdsUndefined: Self = StObject.set(x, "operationIds", js.undefined)
     
-    @scala.inline
-    def setOperationIdsVarargs(value: String*): Self = StObject.set(x, "operationIds", js.Array(value :_*))
+    inline def setOperationIdsVarargs(value: String*): Self = StObject.set(x, "operationIds", js.Array(value :_*))
     
-    @scala.inline
-    def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+    inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
+    inline def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
   }
 }

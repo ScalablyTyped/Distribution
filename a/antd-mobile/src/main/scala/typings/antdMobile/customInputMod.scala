@@ -35,50 +35,40 @@ object customInputMod {
       @JSImport("antd-mobile/lib/input-item/CustomInput", "default.defaultProps.autoAdjustHeight")
       @js.native
       def autoAdjustHeight: Boolean = js.native
-      @scala.inline
-      def autoAdjustHeight_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoAdjustHeight")(x.asInstanceOf[js.Any])
+      inline def autoAdjustHeight_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoAdjustHeight")(x.asInstanceOf[js.Any])
       
       @JSImport("antd-mobile/lib/input-item/CustomInput", "default.defaultProps.disabled")
       @js.native
       def disabled: Boolean = js.native
-      @scala.inline
-      def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
+      inline def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
       
       @JSImport("antd-mobile/lib/input-item/CustomInput", "default.defaultProps.editable")
       @js.native
       def editable: Boolean = js.native
-      @scala.inline
-      def editable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("editable")(x.asInstanceOf[js.Any])
+      inline def editable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("editable")(x.asInstanceOf[js.Any])
       
       @JSImport("antd-mobile/lib/input-item/CustomInput", "default.defaultProps.keyboardPrefixCls")
       @js.native
       def keyboardPrefixCls: String = js.native
-      @scala.inline
-      def keyboardPrefixCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keyboardPrefixCls")(x.asInstanceOf[js.Any])
+      inline def keyboardPrefixCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keyboardPrefixCls")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def onBlur(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBlur")().asInstanceOf[Unit]
+      inline def onBlur(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBlur")().asInstanceOf[Unit]
       
-      @scala.inline
-      def onChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")().asInstanceOf[Unit]
+      inline def onChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")().asInstanceOf[Unit]
       
-      @scala.inline
-      def onFocus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFocus")().asInstanceOf[Unit]
+      inline def onFocus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFocus")().asInstanceOf[Unit]
       
-      @scala.inline
-      def onVirtualKeyboardConfirm(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onVirtualKeyboardConfirm")().asInstanceOf[Unit]
+      inline def onVirtualKeyboardConfirm(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onVirtualKeyboardConfirm")().asInstanceOf[Unit]
       
       @JSImport("antd-mobile/lib/input-item/CustomInput", "default.defaultProps.placeholder")
       @js.native
       def placeholder: String = js.native
-      @scala.inline
-      def placeholder_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("placeholder")(x.asInstanceOf[js.Any])
+      inline def placeholder_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("placeholder")(x.asInstanceOf[js.Any])
       
       @JSImport("antd-mobile/lib/input-item/CustomInput", "default.defaultProps.prefixCls")
       @js.native
       def prefixCls: String = js.native
-      @scala.inline
-      def prefixCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixCls")(x.asInstanceOf[js.Any])
+      inline def prefixCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixCls")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -178,137 +168,94 @@ object customInputMod {
   }
   object NumberInputProps {
     
-    @scala.inline
-    def apply(backspaceLabel: js.Any, cancelKeyboardLabel: js.Any, confirmLabel: js.Any): NumberInputProps = {
+    inline def apply(backspaceLabel: js.Any, cancelKeyboardLabel: js.Any, confirmLabel: js.Any): NumberInputProps = {
       val __obj = js.Dynamic.literal(backspaceLabel = backspaceLabel.asInstanceOf[js.Any], cancelKeyboardLabel = cancelKeyboardLabel.asInstanceOf[js.Any], confirmLabel = confirmLabel.asInstanceOf[js.Any])
       __obj.asInstanceOf[NumberInputProps]
     }
     
-    @scala.inline
-    implicit class NumberInputPropsMutableBuilder[Self <: NumberInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: NumberInputProps](x: Self) {
       
-      @scala.inline
-      def setAutoAdjustHeight(value: Boolean): Self = StObject.set(x, "autoAdjustHeight", value.asInstanceOf[js.Any])
+      inline def setAutoAdjustHeight(value: Boolean): Self = StObject.set(x, "autoAdjustHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoAdjustHeightUndefined: Self = StObject.set(x, "autoAdjustHeight", js.undefined)
+      inline def setAutoAdjustHeightUndefined: Self = StObject.set(x, "autoAdjustHeight", js.undefined)
       
-      @scala.inline
-      def setBackspaceLabel(value: js.Any): Self = StObject.set(x, "backspaceLabel", value.asInstanceOf[js.Any])
+      inline def setBackspaceLabel(value: js.Any): Self = StObject.set(x, "backspaceLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelKeyboardLabel(value: js.Any): Self = StObject.set(x, "cancelKeyboardLabel", value.asInstanceOf[js.Any])
+      inline def setCancelKeyboardLabel(value: js.Any): Self = StObject.set(x, "cancelKeyboardLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmLabel(value: js.Any): Self = StObject.set(x, "confirmLabel", value.asInstanceOf[js.Any])
+      inline def setConfirmLabel(value: js.Any): Self = StObject.set(x, "confirmLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledKeys(value: js.Array[InputKey]): Self = StObject.set(x, "disabledKeys", value.asInstanceOf[js.Any])
+      inline def setDisabledKeys(value: js.Array[InputKey]): Self = StObject.set(x, "disabledKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledKeysNull: Self = StObject.set(x, "disabledKeys", null)
+      inline def setDisabledKeysNull: Self = StObject.set(x, "disabledKeys", null)
       
-      @scala.inline
-      def setDisabledKeysUndefined: Self = StObject.set(x, "disabledKeys", js.undefined)
+      inline def setDisabledKeysUndefined: Self = StObject.set(x, "disabledKeys", js.undefined)
       
-      @scala.inline
-      def setDisabledKeysVarargs(value: InputKey*): Self = StObject.set(x, "disabledKeys", js.Array(value :_*))
+      inline def setDisabledKeysVarargs(value: InputKey*): Self = StObject.set(x, "disabledKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+      inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+      inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
       
-      @scala.inline
-      def setKeyboardPrefixCls(value: String): Self = StObject.set(x, "keyboardPrefixCls", value.asInstanceOf[js.Any])
+      inline def setKeyboardPrefixCls(value: String): Self = StObject.set(x, "keyboardPrefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardPrefixClsUndefined: Self = StObject.set(x, "keyboardPrefixCls", js.undefined)
+      inline def setKeyboardPrefixClsUndefined: Self = StObject.set(x, "keyboardPrefixCls", js.undefined)
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setMoneyKeyboardAlign(value: left | right | String): Self = StObject.set(x, "moneyKeyboardAlign", value.asInstanceOf[js.Any])
+      inline def setMoneyKeyboardAlign(value: left | right | String): Self = StObject.set(x, "moneyKeyboardAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoneyKeyboardAlignUndefined: Self = StObject.set(x, "moneyKeyboardAlign", js.undefined)
+      inline def setMoneyKeyboardAlignUndefined: Self = StObject.set(x, "moneyKeyboardAlign", js.undefined)
       
-      @scala.inline
-      def setMoneyKeyboardHeader(value: ReactNode): Self = StObject.set(x, "moneyKeyboardHeader", value.asInstanceOf[js.Any])
+      inline def setMoneyKeyboardHeader(value: ReactNode): Self = StObject.set(x, "moneyKeyboardHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoneyKeyboardHeaderUndefined: Self = StObject.set(x, "moneyKeyboardHeader", js.undefined)
+      inline def setMoneyKeyboardHeaderUndefined: Self = StObject.set(x, "moneyKeyboardHeader", js.undefined)
       
-      @scala.inline
-      def setMoneyKeyboardWrapProps(value: js.Object): Self = StObject.set(x, "moneyKeyboardWrapProps", value.asInstanceOf[js.Any])
+      inline def setMoneyKeyboardWrapProps(value: js.Object): Self = StObject.set(x, "moneyKeyboardWrapProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoneyKeyboardWrapPropsUndefined: Self = StObject.set(x, "moneyKeyboardWrapProps", js.undefined)
+      inline def setMoneyKeyboardWrapPropsUndefined: Self = StObject.set(x, "moneyKeyboardWrapProps", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: /* value */ js.UndefOr[String] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: /* value */ js.UndefOr[String] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* e */ ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: /* value */ js.UndefOr[String] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: /* value */ js.UndefOr[String] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnVirtualKeyboardConfirm(value: /* value */ js.UndefOr[String] => Unit): Self = StObject.set(x, "onVirtualKeyboardConfirm", js.Any.fromFunction1(value))
+      inline def setOnVirtualKeyboardConfirm(value: /* value */ js.UndefOr[String] => Unit): Self = StObject.set(x, "onVirtualKeyboardConfirm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVirtualKeyboardConfirmUndefined: Self = StObject.set(x, "onVirtualKeyboardConfirm", js.undefined)
+      inline def setOnVirtualKeyboardConfirmUndefined: Self = StObject.set(x, "onVirtualKeyboardConfirm", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

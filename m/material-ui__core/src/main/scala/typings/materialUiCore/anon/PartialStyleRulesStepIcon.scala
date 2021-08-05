@@ -20,43 +20,31 @@ trait PartialStyleRulesStepIcon extends StObject {
 }
 object PartialStyleRulesStepIcon {
   
-  @scala.inline
-  def apply(): PartialStyleRulesStepIcon = {
+  inline def apply(): PartialStyleRulesStepIcon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesStepIcon]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesStepIconMutableBuilder[Self <: PartialStyleRulesStepIcon] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesStepIcon](x: Self) {
     
-    @scala.inline
-    def setActive(value: CSSProperties): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: CSSProperties): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setCompleted(value: CSSProperties): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: CSSProperties): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
+    inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     
-    @scala.inline
-    def setError(value: CSSProperties): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: CSSProperties): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setText(value: CSSProperties): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: CSSProperties): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

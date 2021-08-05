@@ -9,8 +9,7 @@ trait BaseEncodingOptions
      with typings.node.fsMod.BaseEncodingOptions
 object BaseEncodingOptions {
   
-  @scala.inline
-  def apply(): BaseEncodingOptions = {
+  inline def apply(): BaseEncodingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseEncodingOptions]
   }

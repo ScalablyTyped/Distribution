@@ -72,8 +72,7 @@ trait INxAppLayout extends StObject {
 }
 object INxAppLayout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qFileName: String,
     qHasData: Boolean,
     qHasScript: Boolean,
@@ -91,46 +90,32 @@ object INxAppLayout {
     __obj.asInstanceOf[INxAppLayout]
   }
   
-  @scala.inline
-  implicit class INxAppLayoutMutableBuilder[Self <: INxAppLayout] (val x: Self) extends AnyVal {
+  extension [Self <: INxAppLayout](x: Self) {
     
-    @scala.inline
-    def setQFileName(value: String): Self = StObject.set(x, "qFileName", value.asInstanceOf[js.Any])
+    inline def setQFileName(value: String): Self = StObject.set(x, "qFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQHasData(value: Boolean): Self = StObject.set(x, "qHasData", value.asInstanceOf[js.Any])
+    inline def setQHasData(value: Boolean): Self = StObject.set(x, "qHasData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQHasScript(value: Boolean): Self = StObject.set(x, "qHasScript", value.asInstanceOf[js.Any])
+    inline def setQHasScript(value: Boolean): Self = StObject.set(x, "qHasScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsOpenedWithoutData(value: Boolean): Self = StObject.set(x, "qIsOpenedWithoutData", value.asInstanceOf[js.Any])
+    inline def setQIsOpenedWithoutData(value: Boolean): Self = StObject.set(x, "qIsOpenedWithoutData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLastReloadTime(value: String): Self = StObject.set(x, "qLastReloadTime", value.asInstanceOf[js.Any])
+    inline def setQLastReloadTime(value: String): Self = StObject.set(x, "qLastReloadTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLocaleInfo(value: ILocaleInfo): Self = StObject.set(x, "qLocaleInfo", value.asInstanceOf[js.Any])
+    inline def setQLocaleInfo(value: ILocaleInfo): Self = StObject.set(x, "qLocaleInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
+    inline def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQModified(value: Boolean): Self = StObject.set(x, "qModified", value.asInstanceOf[js.Any])
+    inline def setQModified(value: Boolean): Self = StObject.set(x, "qModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQReadOnly(value: Boolean): Self = StObject.set(x, "qReadOnly", value.asInstanceOf[js.Any])
+    inline def setQReadOnly(value: Boolean): Self = StObject.set(x, "qReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQStateNames(value: js.Array[String]): Self = StObject.set(x, "qStateNames", value.asInstanceOf[js.Any])
+    inline def setQStateNames(value: js.Array[String]): Self = StObject.set(x, "qStateNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQStateNamesVarargs(value: String*): Self = StObject.set(x, "qStateNames", js.Array(value :_*))
+    inline def setQStateNamesVarargs(value: String*): Self = StObject.set(x, "qStateNames", js.Array(value :_*))
     
-    @scala.inline
-    def setQThumbnail(value: IStaticContentUrl): Self = StObject.set(x, "qThumbnail", value.asInstanceOf[js.Any])
+    inline def setQThumbnail(value: IStaticContentUrl): Self = StObject.set(x, "qThumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTitle(value: String): Self = StObject.set(x, "qTitle", value.asInstanceOf[js.Any])
+    inline def setQTitle(value: String): Self = StObject.set(x, "qTitle", value.asInstanceOf[js.Any])
   }
 }

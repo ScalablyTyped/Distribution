@@ -28,20 +28,16 @@ object dialogContentMod {
   }
   object DialogContentProps {
     
-    @scala.inline
-    def apply(): DialogContentProps = {
+    inline def apply(): DialogContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DialogContentProps]
     }
     
-    @scala.inline
-    implicit class DialogContentPropsMutableBuilder[Self <: DialogContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: DialogContentProps](x: Self) {
       
-      @scala.inline
-      def setDisablePadding(value: Boolean): Self = StObject.set(x, "disablePadding", value.asInstanceOf[js.Any])
+      inline def setDisablePadding(value: Boolean): Self = StObject.set(x, "disablePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisablePaddingUndefined: Self = StObject.set(x, "disablePadding", js.undefined)
+      inline def setDisablePaddingUndefined: Self = StObject.set(x, "disablePadding", js.undefined)
     }
   }
 }

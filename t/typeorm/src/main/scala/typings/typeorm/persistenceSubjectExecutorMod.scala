@@ -23,7 +23,7 @@ object persistenceSubjectExecutorMod {
     /**
       * All subjects that needs to be operated.
       */
-    var allSubjects: js.Array[Subject] = js.native
+    /* protected */ var allSubjects: js.Array[Subject] = js.native
     
     /**
       * Broadcasts "AFTER_INSERT", "AFTER_UPDATE", "AFTER_REMOVE" events for all given subjects.
@@ -70,8 +70,8 @@ object persistenceSubjectExecutorMod {
       */
     /* protected */ def executeUpdateOperations(): js.Promise[Unit] = js.native
     
-    @JSName("groupBulkSubjects")
-    /* protected */ def groupBulkSubjects_delete(subjects: js.Array[Subject], `type`: delete): js.Tuple2[StringDictionary[js.Array[Subject]], js.Array[String]] = js.native
+    /* protected */ @JSName("groupBulkSubjects")
+    def groupBulkSubjects_delete(subjects: js.Array[Subject], `type`: delete): js.Tuple2[StringDictionary[js.Array[Subject]], js.Array[String]] = js.native
     /**
       * Groups subjects by metadata names (by tables) to make bulk insertions and deletions possible.
       * However there are some limitations with bulk insertions of data into tables with generated (increment) columns
@@ -83,8 +83,8 @@ object persistenceSubjectExecutorMod {
       * Other drivers like postgres and sql server support RETURNING / OUTPUT statement which allows to return generated
       * id for each inserted row, that's why bulk insertion is not limited to junction tables in there.
       */
-    @JSName("groupBulkSubjects")
-    /* protected */ def groupBulkSubjects_insert(subjects: js.Array[Subject], `type`: insert): js.Tuple2[StringDictionary[js.Array[Subject]], js.Array[String]] = js.native
+    /* protected */ @JSName("groupBulkSubjects")
+    def groupBulkSubjects_insert(subjects: js.Array[Subject], `type`: insert): js.Tuple2[StringDictionary[js.Array[Subject]], js.Array[String]] = js.native
     
     /**
       * Indicates if executor has any operations to execute (e.g. has insert / update / delete operations to be executed).
@@ -94,17 +94,17 @@ object persistenceSubjectExecutorMod {
     /**
       * Subjects that must be inserted.
       */
-    var insertSubjects: js.Array[Subject] = js.native
+    /* protected */ var insertSubjects: js.Array[Subject] = js.native
     
     /**
       * Persistence options.
       */
-    var options: js.UndefOr[SaveOptions & RemoveOptions] = js.native
+    /* protected */ var options: js.UndefOr[SaveOptions & RemoveOptions] = js.native
     
     /**
       * QueryRunner used to execute all queries with a given subjects.
       */
-    var queryRunner: QueryRunner = js.native
+    /* protected */ var queryRunner: QueryRunner = js.native
     
     /**
       * Performs entity re-computations - finds changed columns, re-builds insert/update/remove subjects.
@@ -114,17 +114,17 @@ object persistenceSubjectExecutorMod {
     /**
       * Subjects that must be recovered.
       */
-    var recoverSubjects: js.Array[Subject] = js.native
+    /* protected */ var recoverSubjects: js.Array[Subject] = js.native
     
     /**
       * Subjects that must be removed.
       */
-    var removeSubjects: js.Array[Subject] = js.native
+    /* protected */ var removeSubjects: js.Array[Subject] = js.native
     
     /**
       * Subjects that must be soft-removed.
       */
-    var softRemoveSubjects: js.Array[Subject] = js.native
+    /* protected */ var softRemoveSubjects: js.Array[Subject] = js.native
     
     /**
       * Updates all special columns of the saving entities (create date, update date, version, etc.).
@@ -141,7 +141,7 @@ object persistenceSubjectExecutorMod {
     /**
       * Subjects that must be updated.
       */
-    var updateSubjects: js.Array[Subject] = js.native
+    /* protected */ var updateSubjects: js.Array[Subject] = js.native
     
     /**
       * Validates all given subjects.

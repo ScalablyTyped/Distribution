@@ -10,8 +10,6 @@ object debugMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def default(commandTimeout: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(commandTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def default(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[js.Any]]
+  inline def default(commandTimeout: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(commandTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

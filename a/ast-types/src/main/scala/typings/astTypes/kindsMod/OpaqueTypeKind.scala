@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpaqueTypeKind extends StObject
 object OpaqueTypeKind {
   
-  @scala.inline
-  def DeclareOpaqueType(id: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.DeclareOpaqueType = {
+  inline def DeclareOpaqueType(id: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.DeclareOpaqueType = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], impltype = null)
     __obj.updateDynamic("type")("DeclareOpaqueType")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.DeclareOpaqueType]
   }
   
-  @scala.inline
-  def OpaqueType(id: IdentifierKind, impltype: FlowTypeKind): typings.astTypes.namedTypesMod.namedTypes.OpaqueType = {
+  inline def OpaqueType(id: IdentifierKind, impltype: FlowTypeKind): typings.astTypes.namedTypesMod.namedTypes.OpaqueType = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], impltype = impltype.asInstanceOf[js.Any], supertype = null, typeParameters = null)
     __obj.updateDynamic("type")("OpaqueType")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.OpaqueType]

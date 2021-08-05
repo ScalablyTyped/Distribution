@@ -17,10 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(dir: String): Watcher = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[Watcher]
-  @scala.inline
-  def apply(dir: String, options: Options): Watcher = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Watcher]
+  inline def apply(dir: String): Watcher = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[Watcher]
+  inline def apply(dir: String, options: Options): Watcher = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Watcher]
   
   @JSImport("sane", JSImport.Namespace)
   @js.native
@@ -78,14 +76,11 @@ object mod {
   trait AllEventType extends StObject
   object AllEventType {
     
-    @scala.inline
-    def add: typings.sane.saneStrings.add = "add".asInstanceOf[typings.sane.saneStrings.add]
+    inline def add: typings.sane.saneStrings.add = "add".asInstanceOf[typings.sane.saneStrings.add]
     
-    @scala.inline
-    def change: typings.sane.saneStrings.change = "change".asInstanceOf[typings.sane.saneStrings.change]
+    inline def change: typings.sane.saneStrings.change = "change".asInstanceOf[typings.sane.saneStrings.change]
     
-    @scala.inline
-    def delete: typings.sane.saneStrings.delete = "delete".asInstanceOf[typings.sane.saneStrings.delete]
+    inline def delete: typings.sane.saneStrings.delete = "delete".asInstanceOf[typings.sane.saneStrings.delete]
   }
   
   type AnymatchMatcher = String | RegExp | (js.Function1[/* repeated */ String, Boolean])
@@ -101,23 +96,17 @@ object mod {
   trait EventType extends StObject
   object EventType {
     
-    @scala.inline
-    def add: typings.sane.saneStrings.add = "add".asInstanceOf[typings.sane.saneStrings.add]
+    inline def add: typings.sane.saneStrings.add = "add".asInstanceOf[typings.sane.saneStrings.add]
     
-    @scala.inline
-    def all: typings.sane.saneStrings.all = "all".asInstanceOf[typings.sane.saneStrings.all]
+    inline def all: typings.sane.saneStrings.all = "all".asInstanceOf[typings.sane.saneStrings.all]
     
-    @scala.inline
-    def change: typings.sane.saneStrings.change = "change".asInstanceOf[typings.sane.saneStrings.change]
+    inline def change: typings.sane.saneStrings.change = "change".asInstanceOf[typings.sane.saneStrings.change]
     
-    @scala.inline
-    def delete: typings.sane.saneStrings.delete = "delete".asInstanceOf[typings.sane.saneStrings.delete]
+    inline def delete: typings.sane.saneStrings.delete = "delete".asInstanceOf[typings.sane.saneStrings.delete]
     
-    @scala.inline
-    def error: typings.sane.saneStrings.error = "error".asInstanceOf[typings.sane.saneStrings.error]
+    inline def error: typings.sane.saneStrings.error = "error".asInstanceOf[typings.sane.saneStrings.error]
     
-    @scala.inline
-    def ready: typings.sane.saneStrings.ready = "ready".asInstanceOf[typings.sane.saneStrings.ready]
+    inline def ready: typings.sane.saneStrings.ready = "ready".asInstanceOf[typings.sane.saneStrings.ready]
   }
   
   trait Options extends StObject {
@@ -138,65 +127,46 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
+      inline def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
       
-      @scala.inline
-      def setFsevents(value: Boolean): Self = StObject.set(x, "fsevents", value.asInstanceOf[js.Any])
+      inline def setFsevents(value: Boolean): Self = StObject.set(x, "fsevents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFseventsUndefined: Self = StObject.set(x, "fsevents", js.undefined)
+      inline def setFseventsUndefined: Self = StObject.set(x, "fsevents", js.undefined)
       
-      @scala.inline
-      def setGlob(value: String | js.Array[String]): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
+      inline def setGlob(value: String | js.Array[String]): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
+      inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
       
-      @scala.inline
-      def setGlobVarargs(value: String*): Self = StObject.set(x, "glob", js.Array(value :_*))
+      inline def setGlobVarargs(value: String*): Self = StObject.set(x, "glob", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnored(value: AnymatchMatcher | js.Array[AnymatchMatcher]): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+      inline def setIgnored(value: AnymatchMatcher | js.Array[AnymatchMatcher]): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredFunction1(value: /* repeated */ String => Boolean): Self = StObject.set(x, "ignored", js.Any.fromFunction1(value))
+      inline def setIgnoredFunction1(value: /* repeated */ String => Boolean): Self = StObject.set(x, "ignored", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
+      inline def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
       
-      @scala.inline
-      def setIgnoredVarargs(value: AnymatchMatcher*): Self = StObject.set(x, "ignored", js.Array(value :_*))
+      inline def setIgnoredVarargs(value: AnymatchMatcher*): Self = StObject.set(x, "ignored", js.Array(value :_*))
       
-      @scala.inline
-      def setPoll(value: Boolean): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
+      inline def setPoll(value: Boolean): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
+      inline def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
       
-      @scala.inline
-      def setWatcher(value: String): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
+      inline def setWatcher(value: String): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatcherUndefined: Self = StObject.set(x, "watcher", js.undefined)
+      inline def setWatcherUndefined: Self = StObject.set(x, "watcher", js.undefined)
       
-      @scala.inline
-      def setWatchman(value: Boolean): Self = StObject.set(x, "watchman", value.asInstanceOf[js.Any])
+      inline def setWatchman(value: Boolean): Self = StObject.set(x, "watchman", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchmanUndefined: Self = StObject.set(x, "watchman", js.undefined)
+      inline def setWatchmanUndefined: Self = StObject.set(x, "watchman", js.undefined)
     }
   }
   

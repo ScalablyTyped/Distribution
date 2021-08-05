@@ -14,20 +14,16 @@ object mod {
   }
   object Classes {
     
-    @scala.inline
-    def apply(): Classes = {
+    inline def apply(): Classes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Classes]
     }
     
-    @scala.inline
-    implicit class ClassesMutableBuilder[Self <: Classes] (val x: Self) extends AnyVal {
+    extension [Self <: Classes](x: Self) {
       
-      @scala.inline
-      def setFade(value: String): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
+      inline def setFade(value: String): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
+      inline def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
     }
   }
   
@@ -40,26 +36,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setClasses(value: Classes): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: Classes): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
+      inline def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
+      inline def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
     }
   }
   

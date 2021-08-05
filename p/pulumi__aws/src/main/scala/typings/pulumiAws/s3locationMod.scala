@@ -70,21 +70,16 @@ object s3locationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): S3Location = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[S3Location]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): S3Location = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[S3Location]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: S3LocationState): S3Location = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[S3Location]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: S3LocationState, opts: CustomResourceOptions): S3Location = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[S3Location]
+    inline def get(name: String, id: Input[ID]): S3Location = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[S3Location]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): S3Location = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[S3Location]
+    inline def get(name: String, id: Input[ID], state: S3LocationState): S3Location = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[S3Location]
+    inline def get(name: String, id: Input[ID], state: S3LocationState, opts: CustomResourceOptions): S3Location = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[S3Location]
     
     /**
       * Returns true if the given object is an instance of S3Location.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/s3location.S3Location */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/s3location.S3Location */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/s3location.S3Location */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/s3location.S3Location */ Boolean]
   }
   
   trait S3LocationArgs extends StObject {
@@ -111,23 +106,17 @@ object s3locationMod {
   }
   object S3LocationArgs {
     
-    @scala.inline
-    implicit class S3LocationArgsMutableBuilder[Self <: S3LocationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: S3LocationArgs](x: Self) {
       
-      @scala.inline
-      def setS3BucketArn(value: Input[ARN]): Self = StObject.set(x, "s3BucketArn", value.asInstanceOf[js.Any])
+      inline def setS3BucketArn(value: Input[ARN]): Self = StObject.set(x, "s3BucketArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3Config(value: Input[typings.pulumiAws.inputMod.datasync.S3LocationS3Config]): Self = StObject.set(x, "s3Config", value.asInstanceOf[js.Any])
+      inline def setS3Config(value: Input[typings.pulumiAws.inputMod.datasync.S3LocationS3Config]): Self = StObject.set(x, "s3Config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
+      inline def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -162,50 +151,36 @@ object s3locationMod {
   }
   object S3LocationState {
     
-    @scala.inline
-    def apply(): S3LocationState = {
+    inline def apply(): S3LocationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3LocationState]
     }
     
-    @scala.inline
-    implicit class S3LocationStateMutableBuilder[Self <: S3LocationState] (val x: Self) extends AnyVal {
+    extension [Self <: S3LocationState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setS3BucketArn(value: Input[ARN]): Self = StObject.set(x, "s3BucketArn", value.asInstanceOf[js.Any])
+      inline def setS3BucketArn(value: Input[ARN]): Self = StObject.set(x, "s3BucketArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketArnUndefined: Self = StObject.set(x, "s3BucketArn", js.undefined)
+      inline def setS3BucketArnUndefined: Self = StObject.set(x, "s3BucketArn", js.undefined)
       
-      @scala.inline
-      def setS3Config(value: Input[typings.pulumiAws.inputMod.datasync.S3LocationS3Config]): Self = StObject.set(x, "s3Config", value.asInstanceOf[js.Any])
+      inline def setS3Config(value: Input[typings.pulumiAws.inputMod.datasync.S3LocationS3Config]): Self = StObject.set(x, "s3Config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3ConfigUndefined: Self = StObject.set(x, "s3Config", js.undefined)
+      inline def setS3ConfigUndefined: Self = StObject.set(x, "s3Config", js.undefined)
       
-      @scala.inline
-      def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
+      inline def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
+      inline def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     }
   }
 }

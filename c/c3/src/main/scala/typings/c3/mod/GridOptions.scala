@@ -18,37 +18,27 @@ trait GridOptions extends StObject {
 }
 object GridOptions {
   
-  @scala.inline
-  def apply(): GridOptions = {
+  inline def apply(): GridOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridOptions]
   }
   
-  @scala.inline
-  implicit class GridOptionsMutableBuilder[Self <: GridOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GridOptions](x: Self) {
     
-    @scala.inline
-    def setFocus(value: Show): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: Show): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    @scala.inline
-    def setLines(value: Front): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: Front): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+    inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    @scala.inline
-    def setX(value: AxisGridOptions): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: AxisGridOptions): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: AxisGridOptions): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: AxisGridOptions): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

@@ -24,12 +24,10 @@ object TEXT_GRADIENT {
   @JSGlobal("PIXI.TEXT_GRADIENT.LINEAR_HORIZONTAL")
   @js.native
   def LINEAR_HORIZONTAL: Double = js.native
-  @scala.inline
-  def LINEAR_HORIZONTAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEAR_HORIZONTAL")(x.asInstanceOf[js.Any])
+  inline def LINEAR_HORIZONTAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEAR_HORIZONTAL")(x.asInstanceOf[js.Any])
   
   @JSGlobal("PIXI.TEXT_GRADIENT.LINEAR_VERTICAL")
   @js.native
   def LINEAR_VERTICAL: Double = js.native
-  @scala.inline
-  def LINEAR_VERTICAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEAR_VERTICAL")(x.asInstanceOf[js.Any])
+  inline def LINEAR_VERTICAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEAR_VERTICAL")(x.asInstanceOf[js.Any])
 }

@@ -51,13 +51,13 @@ object abstractRuleMod {
     /* CompleteClass */
     override def isEnabled(): Boolean = js.native
     
-    val options: js.Any = js.native
+    /* private */ val options: js.Any = js.native
     
-    val ruleArguments: js.Array[js.Any] = js.native
+    /* protected */ val ruleArguments: js.Array[js.Any] = js.native
     
     var ruleName: String = js.native
     
-    val ruleSeverity: RuleSeverity = js.native
+    /* protected */ val ruleSeverity: RuleSeverity = js.native
   }
   /* static members */
   object AbstractRule {
@@ -69,8 +69,7 @@ object abstractRuleMod {
     @JSImport("tslint/lib/language/rule/abstractRule", "AbstractRule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   type NoInfer[T] = T & typings.tslint.tslintStrings.NoInfer & TopLevel[T]

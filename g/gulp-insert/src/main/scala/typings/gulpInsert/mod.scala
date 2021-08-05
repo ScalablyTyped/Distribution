@@ -17,24 +17,21 @@ object mod {
     * @param {string} content
     * @returns {NodeJS.ReadWriteStream}
     */
-  @scala.inline
-  def append(content: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("append")(content.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def append(content: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("append")(content.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   /**
     * Prepends a string onto the contents
     * @param {string} content
     * @returns {NodeJS.ReadWriteStream}
     */
-  @scala.inline
-  def prepend(content: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(content.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def prepend(content: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(content.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   /**
     * Calls a function with the contents of the file
     * @param {Transformer} transformer
     * @returns {NodeJS.ReadWriteStream}
     */
-  @scala.inline
-  def transform(transformer: Transformer): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transformer.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def transform(transformer: Transformer): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transformer.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   /**
     * Wraps the contents with two strings
@@ -42,8 +39,7 @@ object mod {
     * @param {string} append
     * @returns {NodeJS.ReadWriteStream}
     */
-  @scala.inline
-  def wrap(prepend: String, append: String): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(prepend.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def wrap(prepend: String, append: String): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(prepend.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   type Transformer = js.Function2[/* contents */ String, /* file */ File, String]
 }

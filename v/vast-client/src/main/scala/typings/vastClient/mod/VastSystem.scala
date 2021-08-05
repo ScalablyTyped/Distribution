@@ -12,22 +12,17 @@ trait VastSystem extends StObject {
 }
 object VastSystem {
   
-  @scala.inline
-  def apply(value: String): VastSystem = {
+  inline def apply(value: String): VastSystem = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], version = null)
     __obj.asInstanceOf[VastSystem]
   }
   
-  @scala.inline
-  implicit class VastSystemMutableBuilder[Self <: VastSystem] (val x: Self) extends AnyVal {
+  extension [Self <: VastSystem](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNull: Self = StObject.set(x, "version", null)
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
   }
 }

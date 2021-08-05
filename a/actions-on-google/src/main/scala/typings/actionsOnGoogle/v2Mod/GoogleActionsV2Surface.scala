@@ -14,22 +14,17 @@ trait GoogleActionsV2Surface extends StObject {
 }
 object GoogleActionsV2Surface {
   
-  @scala.inline
-  def apply(): GoogleActionsV2Surface = {
+  inline def apply(): GoogleActionsV2Surface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2Surface]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2SurfaceMutableBuilder[Self <: GoogleActionsV2Surface] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2Surface](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: js.Array[GoogleActionsV2Capability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: js.Array[GoogleActionsV2Capability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+    inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    @scala.inline
-    def setCapabilitiesVarargs(value: GoogleActionsV2Capability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: GoogleActionsV2Capability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
   }
 }

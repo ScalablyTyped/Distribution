@@ -58,23 +58,18 @@ object mod {
   }
   object StylelintWebpackPlugin {
     
-    @scala.inline
-    def apply(apply: Compiler => Unit, getContext: Compiler => String, options: Options): StylelintWebpackPlugin = {
+    inline def apply(apply: Compiler => Unit, getContext: Compiler => String, options: Options): StylelintWebpackPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), getContext = js.Any.fromFunction1(getContext), options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[StylelintWebpackPlugin]
     }
     
-    @scala.inline
-    implicit class StylelintWebpackPluginMutableBuilder[Self <: StylelintWebpackPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: StylelintWebpackPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetContext(value: Compiler => String): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
+      inline def setGetContext(value: Compiler => String): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

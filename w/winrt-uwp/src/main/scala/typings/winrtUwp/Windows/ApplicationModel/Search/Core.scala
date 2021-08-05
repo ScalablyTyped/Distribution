@@ -66,8 +66,7 @@ object Core {
   }
   object SearchSuggestion {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       detailText: String,
       image: IRandomAccessStreamReference,
       imageAlternateText: String,
@@ -79,26 +78,19 @@ object Core {
       __obj.asInstanceOf[SearchSuggestion]
     }
     
-    @scala.inline
-    implicit class SearchSuggestionMutableBuilder[Self <: SearchSuggestion] (val x: Self) extends AnyVal {
+    extension [Self <: SearchSuggestion](x: Self) {
       
-      @scala.inline
-      def setDetailText(value: String): Self = StObject.set(x, "detailText", value.asInstanceOf[js.Any])
+      inline def setDetailText(value: String): Self = StObject.set(x, "detailText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageAlternateText(value: String): Self = StObject.set(x, "imageAlternateText", value.asInstanceOf[js.Any])
+      inline def setImageAlternateText(value: String): Self = StObject.set(x, "imageAlternateText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: SearchSuggestionKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: SearchSuggestionKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -209,8 +201,7 @@ object Core {
   }
   object SearchSuggestionsRequestedEventArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       language: String,
       linguisticDetails: SearchQueryLinguisticDetails,
       queryText: String,
@@ -220,20 +211,15 @@ object Core {
       __obj.asInstanceOf[SearchSuggestionsRequestedEventArgs]
     }
     
-    @scala.inline
-    implicit class SearchSuggestionsRequestedEventArgsMutableBuilder[Self <: SearchSuggestionsRequestedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SearchSuggestionsRequestedEventArgs](x: Self) {
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinguisticDetails(value: SearchQueryLinguisticDetails): Self = StObject.set(x, "linguisticDetails", value.asInstanceOf[js.Any])
+      inline def setLinguisticDetails(value: SearchQueryLinguisticDetails): Self = StObject.set(x, "linguisticDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
+      inline def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: SearchSuggestionsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: SearchSuggestionsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
 }

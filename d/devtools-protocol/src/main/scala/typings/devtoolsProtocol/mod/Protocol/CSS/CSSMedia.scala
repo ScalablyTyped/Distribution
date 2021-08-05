@@ -46,46 +46,33 @@ trait CSSMedia extends StObject {
 }
 object CSSMedia {
   
-  @scala.inline
-  def apply(source: mediaRule | importRule | linkedSheet | inlineSheet, text: String): CSSMedia = {
+  inline def apply(source: mediaRule | importRule | linkedSheet | inlineSheet, text: String): CSSMedia = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSMedia]
   }
   
-  @scala.inline
-  implicit class CSSMediaMutableBuilder[Self <: CSSMedia] (val x: Self) extends AnyVal {
+  extension [Self <: CSSMedia](x: Self) {
     
-    @scala.inline
-    def setMediaList(value: js.Array[MediaQuery]): Self = StObject.set(x, "mediaList", value.asInstanceOf[js.Any])
+    inline def setMediaList(value: js.Array[MediaQuery]): Self = StObject.set(x, "mediaList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaListUndefined: Self = StObject.set(x, "mediaList", js.undefined)
+    inline def setMediaListUndefined: Self = StObject.set(x, "mediaList", js.undefined)
     
-    @scala.inline
-    def setMediaListVarargs(value: MediaQuery*): Self = StObject.set(x, "mediaList", js.Array(value :_*))
+    inline def setMediaListVarargs(value: MediaQuery*): Self = StObject.set(x, "mediaList", js.Array(value :_*))
     
-    @scala.inline
-    def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setSource(value: mediaRule | importRule | linkedSheet | inlineSheet): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: mediaRule | importRule | linkedSheet | inlineSheet): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
+    inline def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceURLUndefined: Self = StObject.set(x, "sourceURL", js.undefined)
+    inline def setSourceURLUndefined: Self = StObject.set(x, "sourceURL", js.undefined)
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSheetIdUndefined: Self = StObject.set(x, "styleSheetId", js.undefined)
+    inline def setStyleSheetIdUndefined: Self = StObject.set(x, "styleSheetId", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

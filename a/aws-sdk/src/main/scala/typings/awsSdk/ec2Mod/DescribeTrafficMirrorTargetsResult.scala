@@ -18,28 +18,21 @@ trait DescribeTrafficMirrorTargetsResult extends StObject {
 }
 object DescribeTrafficMirrorTargetsResult {
   
-  @scala.inline
-  def apply(): DescribeTrafficMirrorTargetsResult = {
+  inline def apply(): DescribeTrafficMirrorTargetsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTrafficMirrorTargetsResult]
   }
   
-  @scala.inline
-  implicit class DescribeTrafficMirrorTargetsResultMutableBuilder[Self <: DescribeTrafficMirrorTargetsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTrafficMirrorTargetsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTrafficMirrorTargets(value: TrafficMirrorTargetSet): Self = StObject.set(x, "TrafficMirrorTargets", value.asInstanceOf[js.Any])
+    inline def setTrafficMirrorTargets(value: TrafficMirrorTargetSet): Self = StObject.set(x, "TrafficMirrorTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficMirrorTargetsUndefined: Self = StObject.set(x, "TrafficMirrorTargets", js.undefined)
+    inline def setTrafficMirrorTargetsUndefined: Self = StObject.set(x, "TrafficMirrorTargets", js.undefined)
     
-    @scala.inline
-    def setTrafficMirrorTargetsVarargs(value: TrafficMirrorTarget*): Self = StObject.set(x, "TrafficMirrorTargets", js.Array(value :_*))
+    inline def setTrafficMirrorTargetsVarargs(value: TrafficMirrorTarget*): Self = StObject.set(x, "TrafficMirrorTargets", js.Array(value :_*))
   }
 }

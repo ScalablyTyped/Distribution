@@ -13,19 +13,15 @@ trait GetWorkflowRunPropertiesResponse extends StObject {
 }
 object GetWorkflowRunPropertiesResponse {
   
-  @scala.inline
-  def apply(): GetWorkflowRunPropertiesResponse = {
+  inline def apply(): GetWorkflowRunPropertiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetWorkflowRunPropertiesResponse]
   }
   
-  @scala.inline
-  implicit class GetWorkflowRunPropertiesResponseMutableBuilder[Self <: GetWorkflowRunPropertiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetWorkflowRunPropertiesResponse](x: Self) {
     
-    @scala.inline
-    def setRunProperties(value: WorkflowRunProperties): Self = StObject.set(x, "RunProperties", value.asInstanceOf[js.Any])
+    inline def setRunProperties(value: WorkflowRunProperties): Self = StObject.set(x, "RunProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunPropertiesUndefined: Self = StObject.set(x, "RunProperties", js.undefined)
+    inline def setRunPropertiesUndefined: Self = StObject.set(x, "RunProperties", js.undefined)
   }
 }

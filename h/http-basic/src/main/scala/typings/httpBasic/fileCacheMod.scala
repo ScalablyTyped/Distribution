@@ -21,7 +21,7 @@ object fileCacheMod {
     extends StObject
        with ICache {
     
-    val _location: js.Any = js.native
+    /* private */ val _location: js.Any = js.native
     
     @JSName("updateResponseHeaders")
     def updateResponseHeaders_MFileCache(url: String, response: PickCachedResponseheaders): Unit = js.native

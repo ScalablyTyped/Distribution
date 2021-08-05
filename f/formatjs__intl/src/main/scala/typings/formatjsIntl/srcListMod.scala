@@ -14,8 +14,7 @@ object srcListMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formatList_1(
+  inline def formatList_1(
     hasLocaleOnError: Locale,
     getListFormat: js.Function1[/* args */ ConstructorParameters[TypeofIntlListFormat], default],
     values: js.Array[String],

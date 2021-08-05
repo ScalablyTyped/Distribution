@@ -14,25 +14,19 @@ trait GoogleCloudDialogflowCxV3beta1ResponseMessagePlayAudio extends StObject {
 }
 object GoogleCloudDialogflowCxV3beta1ResponseMessagePlayAudio {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3beta1ResponseMessagePlayAudio = {
+  inline def apply(): GoogleCloudDialogflowCxV3beta1ResponseMessagePlayAudio = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1ResponseMessagePlayAudio]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3beta1ResponseMessagePlayAudioMutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1ResponseMessagePlayAudio] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3beta1ResponseMessagePlayAudio](x: Self) {
     
-    @scala.inline
-    def setAllowPlaybackInterruption(value: Boolean): Self = StObject.set(x, "allowPlaybackInterruption", value.asInstanceOf[js.Any])
+    inline def setAllowPlaybackInterruption(value: Boolean): Self = StObject.set(x, "allowPlaybackInterruption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPlaybackInterruptionUndefined: Self = StObject.set(x, "allowPlaybackInterruption", js.undefined)
+    inline def setAllowPlaybackInterruptionUndefined: Self = StObject.set(x, "allowPlaybackInterruption", js.undefined)
     
-    @scala.inline
-    def setAudioUri(value: String): Self = StObject.set(x, "audioUri", value.asInstanceOf[js.Any])
+    inline def setAudioUri(value: String): Self = StObject.set(x, "audioUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioUriUndefined: Self = StObject.set(x, "audioUri", js.undefined)
+    inline def setAudioUriUndefined: Self = StObject.set(x, "audioUri", js.undefined)
   }
 }

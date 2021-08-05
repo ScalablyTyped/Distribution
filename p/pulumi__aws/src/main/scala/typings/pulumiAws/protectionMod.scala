@@ -50,21 +50,16 @@ object protectionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Protection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Protection]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Protection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Protection]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProtectionState): Protection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Protection]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProtectionState, opts: CustomResourceOptions): Protection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Protection]
+    inline def get(name: String, id: Input[ID]): Protection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Protection]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Protection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Protection]
+    inline def get(name: String, id: Input[ID], state: ProtectionState): Protection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Protection]
+    inline def get(name: String, id: Input[ID], state: ProtectionState, opts: CustomResourceOptions): Protection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Protection]
     
     /**
       * Returns true if the given object is an instance of Protection.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/shield/protection.Protection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/shield/protection.Protection */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/shield/protection.Protection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/shield/protection.Protection */ Boolean]
   }
   
   trait ProtectionArgs extends StObject {
@@ -81,23 +76,18 @@ object protectionMod {
   }
   object ProtectionArgs {
     
-    @scala.inline
-    def apply(resourceArn: Input[String]): ProtectionArgs = {
+    inline def apply(resourceArn: Input[String]): ProtectionArgs = {
       val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProtectionArgs]
     }
     
-    @scala.inline
-    implicit class ProtectionArgsMutableBuilder[Self <: ProtectionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ProtectionArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,26 +105,20 @@ object protectionMod {
   }
   object ProtectionState {
     
-    @scala.inline
-    def apply(): ProtectionState = {
+    inline def apply(): ProtectionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProtectionState]
     }
     
-    @scala.inline
-    implicit class ProtectionStateMutableBuilder[Self <: ProtectionState] (val x: Self) extends AnyVal {
+    extension [Self <: ProtectionState](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
+      inline def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
     }
   }
 }

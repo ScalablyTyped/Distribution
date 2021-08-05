@@ -18,13 +18,12 @@ trait Browser extends StObject {
   
   var Target: WdBrowseTarget
   
-  @JSName("Word.Browser_typekey")
+  /* private */ @JSName("Word.Browser_typekey")
   var WordDotBrowser_typekey: Browser
 }
 object Browser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Next: () => Unit,
@@ -38,28 +37,20 @@ object Browser {
     __obj.asInstanceOf[Browser]
   }
   
-  @scala.inline
-  implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
+  extension [Self <: Browser](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: () => Unit): Self = StObject.set(x, "Next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => Unit): Self = StObject.set(x, "Next", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevious(value: () => Unit): Self = StObject.set(x, "Previous", js.Any.fromFunction0(value))
+    inline def setPrevious(value: () => Unit): Self = StObject.set(x, "Previous", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTarget(value: WdBrowseTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: WdBrowseTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotBrowser_typekey(value: Browser): Self = StObject.set(x, "Word.Browser_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotBrowser_typekey(value: Browser): Self = StObject.set(x, "Word.Browser_typekey", value.asInstanceOf[js.Any])
   }
 }

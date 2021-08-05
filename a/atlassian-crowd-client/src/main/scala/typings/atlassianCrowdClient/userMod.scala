@@ -110,8 +110,7 @@ object userMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromCrowd(userObj: UserObj): User = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(userObj.asInstanceOf[js.Any]).asInstanceOf[User]
+  inline def fromCrowd(userObj: UserObj): User = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(userObj.asInstanceOf[js.Any]).asInstanceOf[User]
   
   trait User extends StObject {
     
@@ -135,8 +134,7 @@ object userMod {
   }
   object User {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       attributes: StringDictionary[js.Any],
       displayname: String,
@@ -150,38 +148,27 @@ object userMod {
       __obj.asInstanceOf[User]
     }
     
-    @scala.inline
-    implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+    extension [Self <: User](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayname(value: String): Self = StObject.set(x, "displayname", value.asInstanceOf[js.Any])
+      inline def setDisplayname(value: String): Self = StObject.set(x, "displayname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstname(value: String): Self = StObject.set(x, "firstname", value.asInstanceOf[js.Any])
+      inline def setFirstname(value: String): Self = StObject.set(x, "firstname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastname(value: String): Self = StObject.set(x, "lastname", value.asInstanceOf[js.Any])
+      inline def setLastname(value: String): Self = StObject.set(x, "lastname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setToCrowd(value: () => UserObj): Self = StObject.set(x, "toCrowd", js.Any.fromFunction0(value))
+      inline def setToCrowd(value: () => UserObj): Self = StObject.set(x, "toCrowd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,8 +190,7 @@ object userMod {
   }
   object UserObj {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       `display-name`: String,
       email: String,
@@ -219,32 +205,23 @@ object userMod {
       __obj.asInstanceOf[UserObj]
     }
     
-    @scala.inline
-    implicit class UserObjMutableBuilder[Self <: UserObj] (val x: Self) extends AnyVal {
+    extension [Self <: UserObj](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDisplay-name`(value: String): Self = StObject.set(x, "display-name", value.asInstanceOf[js.Any])
+      inline def `setDisplay-name`(value: String): Self = StObject.set(x, "display-name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFirst-name`(value: String): Self = StObject.set(x, "first-name", value.asInstanceOf[js.Any])
+      inline def `setFirst-name`(value: String): Self = StObject.set(x, "first-name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLast-name`(value: String): Self = StObject.set(x, "last-name", value.asInstanceOf[js.Any])
+      inline def `setLast-name`(value: String): Self = StObject.set(x, "last-name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: Value): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Value): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     }
   }
 }

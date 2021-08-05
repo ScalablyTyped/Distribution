@@ -38,52 +38,37 @@ trait ListDeploymentsInput extends StObject {
 }
 object ListDeploymentsInput {
   
-  @scala.inline
-  def apply(): ListDeploymentsInput = {
+  inline def apply(): ListDeploymentsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDeploymentsInput]
   }
   
-  @scala.inline
-  implicit class ListDeploymentsInputMutableBuilder[Self <: ListDeploymentsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListDeploymentsInput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
-    @scala.inline
-    def setCreateTimeRange(value: TimeRange): Self = StObject.set(x, "createTimeRange", value.asInstanceOf[js.Any])
+    inline def setCreateTimeRange(value: TimeRange): Self = StObject.set(x, "createTimeRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeRangeUndefined: Self = StObject.set(x, "createTimeRange", js.undefined)
+    inline def setCreateTimeRangeUndefined: Self = StObject.set(x, "createTimeRange", js.undefined)
     
-    @scala.inline
-    def setDeploymentGroupName(value: DeploymentGroupName): Self = StObject.set(x, "deploymentGroupName", value.asInstanceOf[js.Any])
+    inline def setDeploymentGroupName(value: DeploymentGroupName): Self = StObject.set(x, "deploymentGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentGroupNameUndefined: Self = StObject.set(x, "deploymentGroupName", js.undefined)
+    inline def setDeploymentGroupNameUndefined: Self = StObject.set(x, "deploymentGroupName", js.undefined)
     
-    @scala.inline
-    def setExternalId(value: ExternalId): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: ExternalId): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
-    @scala.inline
-    def setIncludeOnlyStatuses(value: DeploymentStatusList): Self = StObject.set(x, "includeOnlyStatuses", value.asInstanceOf[js.Any])
+    inline def setIncludeOnlyStatuses(value: DeploymentStatusList): Self = StObject.set(x, "includeOnlyStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeOnlyStatusesUndefined: Self = StObject.set(x, "includeOnlyStatuses", js.undefined)
+    inline def setIncludeOnlyStatusesUndefined: Self = StObject.set(x, "includeOnlyStatuses", js.undefined)
     
-    @scala.inline
-    def setIncludeOnlyStatusesVarargs(value: DeploymentStatus*): Self = StObject.set(x, "includeOnlyStatuses", js.Array(value :_*))
+    inline def setIncludeOnlyStatusesVarargs(value: DeploymentStatus*): Self = StObject.set(x, "includeOnlyStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesIncludeFields extends StObject {
 }
 object EnumValuesIncludeFields {
   
-  @scala.inline
-  def apply(enumValues: IncludeFields): EnumValuesIncludeFields = {
+  inline def apply(enumValues: IncludeFields): EnumValuesIncludeFields = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesIncludeFields]
   }
   
-  @scala.inline
-  implicit class EnumValuesIncludeFieldsMutableBuilder[Self <: EnumValuesIncludeFields] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesIncludeFields](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: IncludeFields): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: IncludeFields): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

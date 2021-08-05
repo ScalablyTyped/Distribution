@@ -21,9 +21,9 @@ object classExclusionMod {
     
     val privacies: Set[Privacy] = js.native
     
-    var shouldLocationBeDocumented: js.Any = js.native
+    /* private */ var shouldLocationBeDocumented: js.Any = js.native
     
-    var shouldPrivacyBeDocumented: js.Any = js.native
+    /* private */ var shouldPrivacyBeDocumented: js.Any = js.native
   }
   
   trait IClassExclusionDescriptor
@@ -36,32 +36,24 @@ object classExclusionMod {
   }
   object IClassExclusionDescriptor {
     
-    @scala.inline
-    def apply(): IClassExclusionDescriptor = {
+    inline def apply(): IClassExclusionDescriptor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IClassExclusionDescriptor]
     }
     
-    @scala.inline
-    implicit class IClassExclusionDescriptorMutableBuilder[Self <: IClassExclusionDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: IClassExclusionDescriptor](x: Self) {
       
-      @scala.inline
-      def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+      inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
       
-      @scala.inline
-      def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
       
-      @scala.inline
-      def setPrivacies(value: js.Array[Privacy]): Self = StObject.set(x, "privacies", value.asInstanceOf[js.Any])
+      inline def setPrivacies(value: js.Array[Privacy]): Self = StObject.set(x, "privacies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivaciesUndefined: Self = StObject.set(x, "privacies", js.undefined)
+      inline def setPrivaciesUndefined: Self = StObject.set(x, "privacies", js.undefined)
       
-      @scala.inline
-      def setPrivaciesVarargs(value: Privacy*): Self = StObject.set(x, "privacies", js.Array(value :_*))
+      inline def setPrivaciesVarargs(value: Privacy*): Self = StObject.set(x, "privacies", js.Array(value :_*))
     }
   }
 }

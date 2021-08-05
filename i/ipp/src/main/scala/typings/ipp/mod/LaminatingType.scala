@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LaminatingType extends StObject
 object LaminatingType {
   
-  @scala.inline
-  def archival: typings.ipp.ippStrings.archival = "archival".asInstanceOf[typings.ipp.ippStrings.archival]
+  inline def archival: typings.ipp.ippStrings.archival = "archival".asInstanceOf[typings.ipp.ippStrings.archival]
   
-  @scala.inline
-  def glossy: typings.ipp.ippStrings.glossy = "glossy".asInstanceOf[typings.ipp.ippStrings.glossy]
+  inline def glossy: typings.ipp.ippStrings.glossy = "glossy".asInstanceOf[typings.ipp.ippStrings.glossy]
   
-  @scala.inline
-  def `high-gloss`: typings.ipp.ippStrings.`high-gloss` = "high-gloss".asInstanceOf[typings.ipp.ippStrings.`high-gloss`]
+  inline def `high-gloss`: typings.ipp.ippStrings.`high-gloss` = "high-gloss".asInstanceOf[typings.ipp.ippStrings.`high-gloss`]
   
-  @scala.inline
-  def matte: typings.ipp.ippStrings.matte = "matte".asInstanceOf[typings.ipp.ippStrings.matte]
+  inline def matte: typings.ipp.ippStrings.matte = "matte".asInstanceOf[typings.ipp.ippStrings.matte]
   
-  @scala.inline
-  def `semi-gloss`: typings.ipp.ippStrings.`semi-gloss` = "semi-gloss".asInstanceOf[typings.ipp.ippStrings.`semi-gloss`]
+  inline def `semi-gloss`: typings.ipp.ippStrings.`semi-gloss` = "semi-gloss".asInstanceOf[typings.ipp.ippStrings.`semi-gloss`]
   
-  @scala.inline
-  def translucent: typings.ipp.ippStrings.translucent = "translucent".asInstanceOf[typings.ipp.ippStrings.translucent]
+  inline def translucent: typings.ipp.ippStrings.translucent = "translucent".asInstanceOf[typings.ipp.ippStrings.translucent]
 }

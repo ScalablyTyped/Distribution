@@ -13,6 +13,5 @@ class ReferenceInfo ()
   extends typings.xadesjs.xmlMod.ReferenceInfo
 object ReferenceInfo {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.ReferenceInfo] = ^.asInstanceOf[js.Dynamic].selectDynamic("ReferenceInfo").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.ReferenceInfo]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.ReferenceInfo] = ^.asInstanceOf[js.Dynamic].selectDynamic("ReferenceInfo").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.ReferenceInfo]]
 }

@@ -10,6 +10,5 @@ object esmProxyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initializeProxy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeProxy")().asInstanceOf[Unit]
+  inline def initializeProxy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeProxy")().asInstanceOf[Unit]
 }

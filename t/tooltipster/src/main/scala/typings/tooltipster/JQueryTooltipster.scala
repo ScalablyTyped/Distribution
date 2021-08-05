@@ -60,23 +60,18 @@ object JQueryTooltipster {
   }
   object ITooltipEvent {
     
-    @scala.inline
-    def apply(event: JQueryEventObject, instance: ITooltipsterInstance, origin: HTMLElement): ITooltipEvent = {
+    inline def apply(event: JQueryEventObject, instance: ITooltipsterInstance, origin: HTMLElement): ITooltipEvent = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITooltipEvent]
     }
     
-    @scala.inline
-    implicit class ITooltipEventMutableBuilder[Self <: ITooltipEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipEvent](x: Self) {
       
-      @scala.inline
-      def setEvent(value: JQueryEventObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: JQueryEventObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstance(value: ITooltipsterInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: ITooltipsterInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: HTMLElement): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: HTMLElement): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,29 +105,22 @@ object JQueryTooltipster {
   }
   object ITooltipPosition {
     
-    @scala.inline
-    def apply(coord: Left, distance: Double, side: TooltipPositioningSide, size: Height, target: Double): ITooltipPosition = {
+    inline def apply(coord: Left, distance: Double, side: TooltipPositioningSide, size: Height, target: Double): ITooltipPosition = {
       val __obj = js.Dynamic.literal(coord = coord.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], side = side.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITooltipPosition]
     }
     
-    @scala.inline
-    implicit class ITooltipPositionMutableBuilder[Self <: ITooltipPosition] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipPosition](x: Self) {
       
-      @scala.inline
-      def setCoord(value: Left): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
+      inline def setCoord(value: Left): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSide(value: TooltipPositioningSide): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+      inline def setSide(value: TooltipPositioningSide): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,8 +143,7 @@ object JQueryTooltipster {
   }
   object ITooltipStatus {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroyed: Boolean,
       destroying: Boolean,
       enabled: Boolean,
@@ -167,23 +154,17 @@ object JQueryTooltipster {
       __obj.asInstanceOf[ITooltipStatus]
     }
     
-    @scala.inline
-    implicit class ITooltipStatusMutableBuilder[Self <: ITooltipStatus] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipStatus](x: Self) {
       
-      @scala.inline
-      def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+      inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroying(value: Boolean): Self = StObject.set(x, "destroying", value.asInstanceOf[js.Any])
+      inline def setDestroying(value: Boolean): Self = StObject.set(x, "destroying", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: appearing | stable | disappearing | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: appearing | stable | disappearing | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,23 +178,18 @@ object JQueryTooltipster {
   }
   object ITooltipsterGeoHelper {
     
-    @scala.inline
-    def apply(document: Size, origin: FixedLineage, window: Scroll): ITooltipsterGeoHelper = {
+    inline def apply(document: Size, origin: FixedLineage, window: Scroll): ITooltipsterGeoHelper = {
       val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITooltipsterGeoHelper]
     }
     
-    @scala.inline
-    implicit class ITooltipsterGeoHelperMutableBuilder[Self <: ITooltipsterGeoHelper] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipsterGeoHelper](x: Self) {
       
-      @scala.inline
-      def setDocument(value: Size): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: Size): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: FixedLineage): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: FixedLineage): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindow(value: Scroll): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: Scroll): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     }
   }
   
@@ -238,50 +214,36 @@ object JQueryTooltipster {
   }
   object ITooltipsterHelper {
     
-    @scala.inline
-    def apply(origin: HTMLElement): ITooltipsterHelper = {
+    inline def apply(origin: HTMLElement): ITooltipsterHelper = {
       val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITooltipsterHelper]
     }
     
-    @scala.inline
-    implicit class ITooltipsterHelperMutableBuilder[Self <: ITooltipsterHelper] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipsterHelper](x: Self) {
       
-      @scala.inline
-      def setEvent(value: MouseEvent | TouchEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: MouseEvent | TouchEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventNull: Self = StObject.set(x, "event", null)
+      inline def setEventNull: Self = StObject.set(x, "event", null)
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      @scala.inline
-      def setGeo(value: ITooltipsterGeoHelper): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
+      inline def setGeo(value: ITooltipsterGeoHelper): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
+      inline def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
       
-      @scala.inline
-      def setMode(value: natural | constrained): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: natural | constrained): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: HTMLElement): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: HTMLElement): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltip(value: HTMLElement): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: HTMLElement): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipClone(value: HTMLElement): Self = StObject.set(x, "tooltipClone", value.asInstanceOf[js.Any])
+      inline def setTooltipClone(value: HTMLElement): Self = StObject.set(x, "tooltipClone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipCloneUndefined: Self = StObject.set(x, "tooltipClone", js.undefined)
+      inline def setTooltipCloneUndefined: Self = StObject.set(x, "tooltipClone", js.undefined)
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     }
   }
   
@@ -764,270 +726,184 @@ object JQueryTooltipster {
   }
   object ITooltipsterOptions {
     
-    @scala.inline
-    def apply(): ITooltipsterOptions = {
+    inline def apply(): ITooltipsterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITooltipsterOptions]
     }
     
-    @scala.inline
-    implicit class ITooltipsterOptionsMutableBuilder[Self <: ITooltipsterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipsterOptions](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: fade | grow | swing | slide | fall): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: fade | grow | swing | slide | fall): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDuration(value: Double | js.Array[Double]): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      inline def setAnimationDuration(value: Double | js.Array[Double]): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      @scala.inline
-      def setAnimationDurationVarargs(value: Double*): Self = StObject.set(x, "animationDuration", js.Array(value :_*))
+      inline def setAnimationDurationVarargs(value: Double*): Self = StObject.set(x, "animationDuration", js.Array(value :_*))
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setArrow(value: Boolean): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+      inline def setArrow(value: Boolean): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
+      inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
       
-      @scala.inline
-      def setContent(value: String | JQuery | js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | JQuery | js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentAsHTML(value: Boolean): Self = StObject.set(x, "contentAsHTML", value.asInstanceOf[js.Any])
+      inline def setContentAsHTML(value: Boolean): Self = StObject.set(x, "contentAsHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentAsHTMLUndefined: Self = StObject.set(x, "contentAsHTML", js.undefined)
+      inline def setContentAsHTMLUndefined: Self = StObject.set(x, "contentAsHTML", js.undefined)
       
-      @scala.inline
-      def setContentCloning(value: Boolean): Self = StObject.set(x, "contentCloning", value.asInstanceOf[js.Any])
+      inline def setContentCloning(value: Boolean): Self = StObject.set(x, "contentCloning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentCloningUndefined: Self = StObject.set(x, "contentCloning", js.undefined)
+      inline def setContentCloningUndefined: Self = StObject.set(x, "contentCloning", js.undefined)
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double | js.Array[Double]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double | js.Array[Double]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayTouch(value: Double | js.Array[Double]): Self = StObject.set(x, "delayTouch", value.asInstanceOf[js.Any])
+      inline def setDelayTouch(value: Double | js.Array[Double]): Self = StObject.set(x, "delayTouch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayTouchUndefined: Self = StObject.set(x, "delayTouch", js.undefined)
+      inline def setDelayTouchUndefined: Self = StObject.set(x, "delayTouch", js.undefined)
       
-      @scala.inline
-      def setDelayTouchVarargs(value: Double*): Self = StObject.set(x, "delayTouch", js.Array(value :_*))
+      inline def setDelayTouchVarargs(value: Double*): Self = StObject.set(x, "delayTouch", js.Array(value :_*))
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDelayVarargs(value: Double*): Self = StObject.set(x, "delay", js.Array(value :_*))
+      inline def setDelayVarargs(value: Double*): Self = StObject.set(x, "delay", js.Array(value :_*))
       
-      @scala.inline
-      def setDistance(value: Double | js.Array[Double]): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double | js.Array[Double]): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+      inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
       
-      @scala.inline
-      def setDistanceVarargs(value: Double*): Self = StObject.set(x, "distance", js.Array(value :_*))
+      inline def setDistanceVarargs(value: Double*): Self = StObject.set(x, "distance", js.Array(value :_*))
       
-      @scala.inline
-      def setFunctionAfter(value: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper) => Unit): Self = StObject.set(x, "functionAfter", js.Any.fromFunction2(value))
+      inline def setFunctionAfter(value: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper) => Unit): Self = StObject.set(x, "functionAfter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFunctionAfterUndefined: Self = StObject.set(x, "functionAfter", js.undefined)
+      inline def setFunctionAfterUndefined: Self = StObject.set(x, "functionAfter", js.undefined)
       
-      @scala.inline
-      def setFunctionBefore(value: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper) => Unit): Self = StObject.set(x, "functionBefore", js.Any.fromFunction2(value))
+      inline def setFunctionBefore(value: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper) => Unit): Self = StObject.set(x, "functionBefore", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFunctionBeforeUndefined: Self = StObject.set(x, "functionBefore", js.undefined)
+      inline def setFunctionBeforeUndefined: Self = StObject.set(x, "functionBefore", js.undefined)
       
-      @scala.inline
-      def setFunctionFormat(
+      inline def setFunctionFormat(
         value: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper, /* content */ js.Any) => String | JQuery
       ): Self = StObject.set(x, "functionFormat", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFunctionFormatUndefined: Self = StObject.set(x, "functionFormat", js.undefined)
+      inline def setFunctionFormatUndefined: Self = StObject.set(x, "functionFormat", js.undefined)
       
-      @scala.inline
-      def setFunctionInit(value: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper) => Unit): Self = StObject.set(x, "functionInit", js.Any.fromFunction2(value))
+      inline def setFunctionInit(value: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper) => Unit): Self = StObject.set(x, "functionInit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFunctionInitUndefined: Self = StObject.set(x, "functionInit", js.undefined)
+      inline def setFunctionInitUndefined: Self = StObject.set(x, "functionInit", js.undefined)
       
-      @scala.inline
-      def setFunctionPosition(
+      inline def setFunctionPosition(
         value: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper, /* position */ ITooltipPosition) => ITooltipPosition
       ): Self = StObject.set(x, "functionPosition", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFunctionPositionUndefined: Self = StObject.set(x, "functionPosition", js.undefined)
+      inline def setFunctionPositionUndefined: Self = StObject.set(x, "functionPosition", js.undefined)
       
-      @scala.inline
-      def setFunctionReady(value: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper) => Unit): Self = StObject.set(x, "functionReady", js.Any.fromFunction2(value))
+      inline def setFunctionReady(value: (/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper) => Unit): Self = StObject.set(x, "functionReady", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFunctionReadyUndefined: Self = StObject.set(x, "functionReady", js.undefined)
+      inline def setFunctionReadyUndefined: Self = StObject.set(x, "functionReady", js.undefined)
       
-      @scala.inline
-      def setIEmin(value: Double): Self = StObject.set(x, "IEmin", value.asInstanceOf[js.Any])
+      inline def setIEmin(value: Double): Self = StObject.set(x, "IEmin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIEminUndefined: Self = StObject.set(x, "IEmin", js.undefined)
+      inline def setIEminUndefined: Self = StObject.set(x, "IEmin", js.undefined)
       
-      @scala.inline
-      def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+      inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+      inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinIntersection(value: Double): Self = StObject.set(x, "minIntersection", value.asInstanceOf[js.Any])
+      inline def setMinIntersection(value: Double): Self = StObject.set(x, "minIntersection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinIntersectionUndefined: Self = StObject.set(x, "minIntersection", js.undefined)
+      inline def setMinIntersectionUndefined: Self = StObject.set(x, "minIntersection", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setRepositionOnScroll(value: Boolean): Self = StObject.set(x, "repositionOnScroll", value.asInstanceOf[js.Any])
+      inline def setRepositionOnScroll(value: Boolean): Self = StObject.set(x, "repositionOnScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositionOnScrollUndefined: Self = StObject.set(x, "repositionOnScroll", js.undefined)
+      inline def setRepositionOnScrollUndefined: Self = StObject.set(x, "repositionOnScroll", js.undefined)
       
-      @scala.inline
-      def setRestoration(value: none | previous | current): Self = StObject.set(x, "restoration", value.asInstanceOf[js.Any])
+      inline def setRestoration(value: none | previous | current): Self = StObject.set(x, "restoration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestorationUndefined: Self = StObject.set(x, "restoration", js.undefined)
+      inline def setRestorationUndefined: Self = StObject.set(x, "restoration", js.undefined)
       
-      @scala.inline
-      def setSelfDestruction(value: Boolean): Self = StObject.set(x, "selfDestruction", value.asInstanceOf[js.Any])
+      inline def setSelfDestruction(value: Boolean): Self = StObject.set(x, "selfDestruction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfDestructionUndefined: Self = StObject.set(x, "selfDestruction", js.undefined)
+      inline def setSelfDestructionUndefined: Self = StObject.set(x, "selfDestruction", js.undefined)
       
-      @scala.inline
-      def setSide(value: TooltipPositioningSide | js.Array[TooltipPositioningSide]): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+      inline def setSide(value: TooltipPositioningSide | js.Array[TooltipPositioningSide]): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
+      inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
       
-      @scala.inline
-      def setSideVarargs(value: TooltipPositioningSide*): Self = StObject.set(x, "side", js.Array(value :_*))
+      inline def setSideVarargs(value: TooltipPositioningSide*): Self = StObject.set(x, "side", js.Array(value :_*))
       
-      @scala.inline
-      def setTheme(value: String | js.Array[String]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String | js.Array[String]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setThemeVarargs(value: String*): Self = StObject.set(x, "theme", js.Array(value :_*))
+      inline def setThemeVarargs(value: String*): Self = StObject.set(x, "theme", js.Array(value :_*))
       
-      @scala.inline
-      def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
+      inline def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimerUndefined: Self = StObject.set(x, "timer", js.undefined)
+      inline def setTimerUndefined: Self = StObject.set(x, "timer", js.undefined)
       
-      @scala.inline
-      def setTrackOrigin(value: Boolean): Self = StObject.set(x, "trackOrigin", value.asInstanceOf[js.Any])
+      inline def setTrackOrigin(value: Boolean): Self = StObject.set(x, "trackOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackOriginUndefined: Self = StObject.set(x, "trackOrigin", js.undefined)
+      inline def setTrackOriginUndefined: Self = StObject.set(x, "trackOrigin", js.undefined)
       
-      @scala.inline
-      def setTrackTooltip(value: Boolean): Self = StObject.set(x, "trackTooltip", value.asInstanceOf[js.Any])
+      inline def setTrackTooltip(value: Boolean): Self = StObject.set(x, "trackTooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackTooltipUndefined: Self = StObject.set(x, "trackTooltip", js.undefined)
+      inline def setTrackTooltipUndefined: Self = StObject.set(x, "trackTooltip", js.undefined)
       
-      @scala.inline
-      def setTrackerInterval(value: Double): Self = StObject.set(x, "trackerInterval", value.asInstanceOf[js.Any])
+      inline def setTrackerInterval(value: Double): Self = StObject.set(x, "trackerInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackerIntervalUndefined: Self = StObject.set(x, "trackerInterval", js.undefined)
+      inline def setTrackerIntervalUndefined: Self = StObject.set(x, "trackerInterval", js.undefined)
       
-      @scala.inline
-      def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerClose(value: Click): Self = StObject.set(x, "triggerClose", value.asInstanceOf[js.Any])
+      inline def setTriggerClose(value: Click): Self = StObject.set(x, "triggerClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerCloseUndefined: Self = StObject.set(x, "triggerClose", js.undefined)
+      inline def setTriggerCloseUndefined: Self = StObject.set(x, "triggerClose", js.undefined)
       
-      @scala.inline
-      def setTriggerOpen(value: Mouseenter): Self = StObject.set(x, "triggerOpen", value.asInstanceOf[js.Any])
+      inline def setTriggerOpen(value: Mouseenter): Self = StObject.set(x, "triggerOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerOpenUndefined: Self = StObject.set(x, "triggerOpen", js.undefined)
+      inline def setTriggerOpenUndefined: Self = StObject.set(x, "triggerOpen", js.undefined)
       
-      @scala.inline
-      def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+      inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      @scala.inline
-      def setUpdateAnimation(value: fade | rotate | scale): Self = StObject.set(x, "updateAnimation", value.asInstanceOf[js.Any])
+      inline def setUpdateAnimation(value: fade | rotate | scale): Self = StObject.set(x, "updateAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateAnimationNull: Self = StObject.set(x, "updateAnimation", null)
+      inline def setUpdateAnimationNull: Self = StObject.set(x, "updateAnimation", null)
       
-      @scala.inline
-      def setUpdateAnimationUndefined: Self = StObject.set(x, "updateAnimation", js.undefined)
+      inline def setUpdateAnimationUndefined: Self = StObject.set(x, "updateAnimation", js.undefined)
       
-      @scala.inline
-      def setViewportAware(value: Boolean): Self = StObject.set(x, "viewportAware", value.asInstanceOf[js.Any])
+      inline def setViewportAware(value: Boolean): Self = StObject.set(x, "viewportAware", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportAwareUndefined: Self = StObject.set(x, "viewportAware", js.undefined)
+      inline def setViewportAwareUndefined: Self = StObject.set(x, "viewportAware", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -1116,74 +992,51 @@ object JQueryTooltipster {
   trait TooltipEventName extends StObject
   object TooltipEventName {
     
-    @scala.inline
-    def after: typings.tooltipster.tooltipsterStrings.after = "after".asInstanceOf[typings.tooltipster.tooltipsterStrings.after]
+    inline def after: typings.tooltipster.tooltipsterStrings.after = "after".asInstanceOf[typings.tooltipster.tooltipsterStrings.after]
     
-    @scala.inline
-    def before: typings.tooltipster.tooltipsterStrings.before = "before".asInstanceOf[typings.tooltipster.tooltipsterStrings.before]
+    inline def before: typings.tooltipster.tooltipsterStrings.before = "before".asInstanceOf[typings.tooltipster.tooltipsterStrings.before]
     
-    @scala.inline
-    def close: typings.tooltipster.tooltipsterStrings.close = "close".asInstanceOf[typings.tooltipster.tooltipsterStrings.close]
+    inline def close: typings.tooltipster.tooltipsterStrings.close = "close".asInstanceOf[typings.tooltipster.tooltipsterStrings.close]
     
-    @scala.inline
-    def closing: typings.tooltipster.tooltipsterStrings.closing = "closing".asInstanceOf[typings.tooltipster.tooltipsterStrings.closing]
+    inline def closing: typings.tooltipster.tooltipsterStrings.closing = "closing".asInstanceOf[typings.tooltipster.tooltipsterStrings.closing]
     
-    @scala.inline
-    def created: typings.tooltipster.tooltipsterStrings.created = "created".asInstanceOf[typings.tooltipster.tooltipsterStrings.created]
+    inline def created: typings.tooltipster.tooltipsterStrings.created = "created".asInstanceOf[typings.tooltipster.tooltipsterStrings.created]
     
-    @scala.inline
-    def destroy: typings.tooltipster.tooltipsterStrings.destroy = "destroy".asInstanceOf[typings.tooltipster.tooltipsterStrings.destroy]
+    inline def destroy: typings.tooltipster.tooltipsterStrings.destroy = "destroy".asInstanceOf[typings.tooltipster.tooltipsterStrings.destroy]
     
-    @scala.inline
-    def destroyed: typings.tooltipster.tooltipsterStrings.destroyed = "destroyed".asInstanceOf[typings.tooltipster.tooltipsterStrings.destroyed]
+    inline def destroyed: typings.tooltipster.tooltipsterStrings.destroyed = "destroyed".asInstanceOf[typings.tooltipster.tooltipsterStrings.destroyed]
     
-    @scala.inline
-    def dismissable: typings.tooltipster.tooltipsterStrings.dismissable = "dismissable".asInstanceOf[typings.tooltipster.tooltipsterStrings.dismissable]
+    inline def dismissable: typings.tooltipster.tooltipsterStrings.dismissable = "dismissable".asInstanceOf[typings.tooltipster.tooltipsterStrings.dismissable]
     
-    @scala.inline
-    def format: typings.tooltipster.tooltipsterStrings.format = "format".asInstanceOf[typings.tooltipster.tooltipsterStrings.format]
+    inline def format: typings.tooltipster.tooltipsterStrings.format = "format".asInstanceOf[typings.tooltipster.tooltipsterStrings.format]
     
-    @scala.inline
-    def geometry: typings.tooltipster.tooltipsterStrings.geometry = "geometry".asInstanceOf[typings.tooltipster.tooltipsterStrings.geometry]
+    inline def geometry: typings.tooltipster.tooltipsterStrings.geometry = "geometry".asInstanceOf[typings.tooltipster.tooltipsterStrings.geometry]
     
-    @scala.inline
-    def init: typings.tooltipster.tooltipsterStrings.init = "init".asInstanceOf[typings.tooltipster.tooltipsterStrings.init]
+    inline def init: typings.tooltipster.tooltipsterStrings.init = "init".asInstanceOf[typings.tooltipster.tooltipsterStrings.init]
     
-    @scala.inline
-    def position: typings.tooltipster.tooltipsterStrings.position = "position".asInstanceOf[typings.tooltipster.tooltipsterStrings.position]
+    inline def position: typings.tooltipster.tooltipsterStrings.position = "position".asInstanceOf[typings.tooltipster.tooltipsterStrings.position]
     
-    @scala.inline
-    def positionTest: typings.tooltipster.tooltipsterStrings.positionTest = "positionTest".asInstanceOf[typings.tooltipster.tooltipsterStrings.positionTest]
+    inline def positionTest: typings.tooltipster.tooltipsterStrings.positionTest = "positionTest".asInstanceOf[typings.tooltipster.tooltipsterStrings.positionTest]
     
-    @scala.inline
-    def positionTested: typings.tooltipster.tooltipsterStrings.positionTested = "positionTested".asInstanceOf[typings.tooltipster.tooltipsterStrings.positionTested]
+    inline def positionTested: typings.tooltipster.tooltipsterStrings.positionTested = "positionTested".asInstanceOf[typings.tooltipster.tooltipsterStrings.positionTested]
     
-    @scala.inline
-    def ready: typings.tooltipster.tooltipsterStrings.ready = "ready".asInstanceOf[typings.tooltipster.tooltipsterStrings.ready]
+    inline def ready: typings.tooltipster.tooltipsterStrings.ready = "ready".asInstanceOf[typings.tooltipster.tooltipsterStrings.ready]
     
-    @scala.inline
-    def reposition: typings.tooltipster.tooltipsterStrings.reposition = "reposition".asInstanceOf[typings.tooltipster.tooltipsterStrings.reposition]
+    inline def reposition: typings.tooltipster.tooltipsterStrings.reposition = "reposition".asInstanceOf[typings.tooltipster.tooltipsterStrings.reposition]
     
-    @scala.inline
-    def repositioned: typings.tooltipster.tooltipsterStrings.repositioned = "repositioned".asInstanceOf[typings.tooltipster.tooltipsterStrings.repositioned]
+    inline def repositioned: typings.tooltipster.tooltipsterStrings.repositioned = "repositioned".asInstanceOf[typings.tooltipster.tooltipsterStrings.repositioned]
     
-    @scala.inline
-    def scroll: typings.tooltipster.tooltipsterStrings.scroll = "scroll".asInstanceOf[typings.tooltipster.tooltipsterStrings.scroll]
+    inline def scroll: typings.tooltipster.tooltipsterStrings.scroll = "scroll".asInstanceOf[typings.tooltipster.tooltipsterStrings.scroll]
     
-    @scala.inline
-    def start: typings.tooltipster.tooltipsterStrings.start = "start".asInstanceOf[typings.tooltipster.tooltipsterStrings.start]
+    inline def start: typings.tooltipster.tooltipsterStrings.start = "start".asInstanceOf[typings.tooltipster.tooltipsterStrings.start]
     
-    @scala.inline
-    def startcancel: typings.tooltipster.tooltipsterStrings.startcancel = "startcancel".asInstanceOf[typings.tooltipster.tooltipsterStrings.startcancel]
+    inline def startcancel: typings.tooltipster.tooltipsterStrings.startcancel = "startcancel".asInstanceOf[typings.tooltipster.tooltipsterStrings.startcancel]
     
-    @scala.inline
-    def startend: typings.tooltipster.tooltipsterStrings.startend = "startend".asInstanceOf[typings.tooltipster.tooltipsterStrings.startend]
+    inline def startend: typings.tooltipster.tooltipsterStrings.startend = "startend".asInstanceOf[typings.tooltipster.tooltipsterStrings.startend]
     
-    @scala.inline
-    def state: typings.tooltipster.tooltipsterStrings.state = "state".asInstanceOf[typings.tooltipster.tooltipsterStrings.state]
+    inline def state: typings.tooltipster.tooltipsterStrings.state = "state".asInstanceOf[typings.tooltipster.tooltipsterStrings.state]
     
-    @scala.inline
-    def updated: typings.tooltipster.tooltipsterStrings.updated = "updated".asInstanceOf[typings.tooltipster.tooltipsterStrings.updated]
+    inline def updated: typings.tooltipster.tooltipsterStrings.updated = "updated".asInstanceOf[typings.tooltipster.tooltipsterStrings.updated]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -1195,17 +1048,13 @@ object JQueryTooltipster {
   trait TooltipPositioningSide extends StObject
   object TooltipPositioningSide {
     
-    @scala.inline
-    def bottom: typings.tooltipster.tooltipsterStrings.bottom = "bottom".asInstanceOf[typings.tooltipster.tooltipsterStrings.bottom]
+    inline def bottom: typings.tooltipster.tooltipsterStrings.bottom = "bottom".asInstanceOf[typings.tooltipster.tooltipsterStrings.bottom]
     
-    @scala.inline
-    def left: typings.tooltipster.tooltipsterStrings.left = "left".asInstanceOf[typings.tooltipster.tooltipsterStrings.left]
+    inline def left: typings.tooltipster.tooltipsterStrings.left = "left".asInstanceOf[typings.tooltipster.tooltipsterStrings.left]
     
-    @scala.inline
-    def right: typings.tooltipster.tooltipsterStrings.right = "right".asInstanceOf[typings.tooltipster.tooltipsterStrings.right]
+    inline def right: typings.tooltipster.tooltipsterStrings.right = "right".asInstanceOf[typings.tooltipster.tooltipsterStrings.right]
     
-    @scala.inline
-    def top: typings.tooltipster.tooltipsterStrings.top = "top".asInstanceOf[typings.tooltipster.tooltipsterStrings.top]
+    inline def top: typings.tooltipster.tooltipsterStrings.top = "top".asInstanceOf[typings.tooltipster.tooltipsterStrings.top]
   }
   
   type TooltipsterStandardCallbackFunction = js.Function2[/* instance */ ITooltipsterInstance, /* helper */ ITooltipsterHelper, Unit]

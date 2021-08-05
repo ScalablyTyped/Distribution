@@ -18,19 +18,15 @@ trait DescribeTableRequest extends StObject {
 }
 object DescribeTableRequest {
   
-  @scala.inline
-  def apply(DatabaseName: ResourceName, TableName: ResourceName): DescribeTableRequest = {
+  inline def apply(DatabaseName: ResourceName, TableName: ResourceName): DescribeTableRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTableRequest]
   }
   
-  @scala.inline
-  implicit class DescribeTableRequestMutableBuilder[Self <: DescribeTableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTableRequest](x: Self) {
     
-    @scala.inline
-    def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: ResourceName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: ResourceName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

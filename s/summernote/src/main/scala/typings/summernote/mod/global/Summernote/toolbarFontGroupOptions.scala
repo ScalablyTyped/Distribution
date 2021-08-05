@@ -26,42 +26,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait toolbarFontGroupOptions extends StObject
 object toolbarFontGroupOptions {
   
-  @scala.inline
-  def backcolor: backcolor_ = "backcolor".asInstanceOf[backcolor_]
+  inline def backcolor: backcolor_ = "backcolor".asInstanceOf[backcolor_]
   
-  @scala.inline
-  def bold: typings.summernote.summernoteStrings.bold = "bold".asInstanceOf[typings.summernote.summernoteStrings.bold]
+  inline def bold: typings.summernote.summernoteStrings.bold = "bold".asInstanceOf[typings.summernote.summernoteStrings.bold]
   
-  @scala.inline
-  def clear: typings.summernote.summernoteStrings.clear = "clear".asInstanceOf[typings.summernote.summernoteStrings.clear]
+  inline def clear: typings.summernote.summernoteStrings.clear = "clear".asInstanceOf[typings.summernote.summernoteStrings.clear]
   
-  @scala.inline
-  def color: typings.summernote.summernoteStrings.color = "color".asInstanceOf[typings.summernote.summernoteStrings.color]
+  inline def color: typings.summernote.summernoteStrings.color = "color".asInstanceOf[typings.summernote.summernoteStrings.color]
   
-  @scala.inline
-  def fontname: fontname_ = "fontname".asInstanceOf[fontname_]
+  inline def fontname: fontname_ = "fontname".asInstanceOf[fontname_]
   
-  @scala.inline
-  def fontsize: fontsize_ = "fontsize".asInstanceOf[fontsize_]
+  inline def fontsize: fontsize_ = "fontsize".asInstanceOf[fontsize_]
   
-  @scala.inline
-  def fontsizeunit: typings.summernote.summernoteStrings.fontsizeunit = "fontsizeunit".asInstanceOf[typings.summernote.summernoteStrings.fontsizeunit]
+  inline def fontsizeunit: typings.summernote.summernoteStrings.fontsizeunit = "fontsizeunit".asInstanceOf[typings.summernote.summernoteStrings.fontsizeunit]
   
-  @scala.inline
-  def forecolor: forecolor_ = "forecolor".asInstanceOf[forecolor_]
+  inline def forecolor: forecolor_ = "forecolor".asInstanceOf[forecolor_]
   
-  @scala.inline
-  def italic: typings.summernote.summernoteStrings.italic = "italic".asInstanceOf[typings.summernote.summernoteStrings.italic]
+  inline def italic: typings.summernote.summernoteStrings.italic = "italic".asInstanceOf[typings.summernote.summernoteStrings.italic]
   
-  @scala.inline
-  def strikethrough: typings.summernote.summernoteStrings.strikethrough = "strikethrough".asInstanceOf[typings.summernote.summernoteStrings.strikethrough]
+  inline def strikethrough: typings.summernote.summernoteStrings.strikethrough = "strikethrough".asInstanceOf[typings.summernote.summernoteStrings.strikethrough]
   
-  @scala.inline
-  def subscript: typings.summernote.summernoteStrings.subscript = "subscript".asInstanceOf[typings.summernote.summernoteStrings.subscript]
+  inline def subscript: typings.summernote.summernoteStrings.subscript = "subscript".asInstanceOf[typings.summernote.summernoteStrings.subscript]
   
-  @scala.inline
-  def superscript: typings.summernote.summernoteStrings.superscript = "superscript".asInstanceOf[typings.summernote.summernoteStrings.superscript]
+  inline def superscript: typings.summernote.summernoteStrings.superscript = "superscript".asInstanceOf[typings.summernote.summernoteStrings.superscript]
   
-  @scala.inline
-  def underline: typings.summernote.summernoteStrings.underline = "underline".asInstanceOf[typings.summernote.summernoteStrings.underline]
+  inline def underline: typings.summernote.summernoteStrings.underline = "underline".asInstanceOf[typings.summernote.summernoteStrings.underline]
 }

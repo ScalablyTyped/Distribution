@@ -16,8 +16,7 @@ trait VideoDeviceController
      with IAdvancedVideoCaptureDeviceController
 object VideoDeviceController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backlightCompensation: MediaDeviceControl,
     brightness: MediaDeviceControl,
     contrast: MediaDeviceControl,

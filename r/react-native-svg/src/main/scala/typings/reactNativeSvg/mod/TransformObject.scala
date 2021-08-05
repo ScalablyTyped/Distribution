@@ -38,121 +38,83 @@ trait TransformObject extends StObject {
 }
 object TransformObject {
   
-  @scala.inline
-  def apply(): TransformObject = {
+  inline def apply(): TransformObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransformObject]
   }
   
-  @scala.inline
-  implicit class TransformObjectMutableBuilder[Self <: TransformObject] (val x: Self) extends AnyVal {
+  extension [Self <: TransformObject](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: NumberArray): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: NumberArray): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setOriginVarargs(value: NumberProp*): Self = StObject.set(x, "origin", js.Array(value :_*))
+    inline def setOriginVarargs(value: NumberProp*): Self = StObject.set(x, "origin", js.Array(value :_*))
     
-    @scala.inline
-    def setOriginX(value: NumberProp): Self = StObject.set(x, "originX", value.asInstanceOf[js.Any])
+    inline def setOriginX(value: NumberProp): Self = StObject.set(x, "originX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginXUndefined: Self = StObject.set(x, "originX", js.undefined)
+    inline def setOriginXUndefined: Self = StObject.set(x, "originX", js.undefined)
     
-    @scala.inline
-    def setOriginY(value: NumberProp): Self = StObject.set(x, "originY", value.asInstanceOf[js.Any])
+    inline def setOriginY(value: NumberProp): Self = StObject.set(x, "originY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginYUndefined: Self = StObject.set(x, "originY", js.undefined)
+    inline def setOriginYUndefined: Self = StObject.set(x, "originY", js.undefined)
     
-    @scala.inline
-    def setRotation(value: NumberProp): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: NumberProp): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    @scala.inline
-    def setScale(value: NumberArray): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: NumberArray): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setScaleVarargs(value: NumberProp*): Self = StObject.set(x, "scale", js.Array(value :_*))
+    inline def setScaleVarargs(value: NumberProp*): Self = StObject.set(x, "scale", js.Array(value :_*))
     
-    @scala.inline
-    def setScaleX(value: NumberProp): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    inline def setScaleX(value: NumberProp): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+    inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
-    @scala.inline
-    def setScaleY(value: NumberProp): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    inline def setScaleY(value: NumberProp): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
+    inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
     
-    @scala.inline
-    def setSkew(value: NumberArray): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
+    inline def setSkew(value: NumberArray): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewUndefined: Self = StObject.set(x, "skew", js.undefined)
+    inline def setSkewUndefined: Self = StObject.set(x, "skew", js.undefined)
     
-    @scala.inline
-    def setSkewVarargs(value: NumberProp*): Self = StObject.set(x, "skew", js.Array(value :_*))
+    inline def setSkewVarargs(value: NumberProp*): Self = StObject.set(x, "skew", js.Array(value :_*))
     
-    @scala.inline
-    def setSkewX(value: NumberProp): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
+    inline def setSkewX(value: NumberProp): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewXUndefined: Self = StObject.set(x, "skewX", js.undefined)
+    inline def setSkewXUndefined: Self = StObject.set(x, "skewX", js.undefined)
     
-    @scala.inline
-    def setSkewY(value: NumberProp): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
+    inline def setSkewY(value: NumberProp): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
+    inline def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
     
-    @scala.inline
-    def setTranslate(value: NumberArray): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTranslate(value: NumberArray): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+    inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
-    @scala.inline
-    def setTranslateVarargs(value: NumberProp*): Self = StObject.set(x, "translate", js.Array(value :_*))
+    inline def setTranslateVarargs(value: NumberProp*): Self = StObject.set(x, "translate", js.Array(value :_*))
     
-    @scala.inline
-    def setTranslateX(value: NumberProp): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
+    inline def setTranslateX(value: NumberProp): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
+    inline def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
     
-    @scala.inline
-    def setTranslateY(value: NumberProp): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
+    inline def setTranslateY(value: NumberProp): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
+    inline def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
     
-    @scala.inline
-    def setX(value: NumberArray): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: NumberArray): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setXVarargs(value: NumberProp*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: NumberProp*): Self = StObject.set(x, "x", js.Array(value :_*))
     
-    @scala.inline
-    def setY(value: NumberArray): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: NumberArray): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    @scala.inline
-    def setYVarargs(value: NumberProp*): Self = StObject.set(x, "y", js.Array(value :_*))
+    inline def setYVarargs(value: NumberProp*): Self = StObject.set(x, "y", js.Array(value :_*))
   }
 }

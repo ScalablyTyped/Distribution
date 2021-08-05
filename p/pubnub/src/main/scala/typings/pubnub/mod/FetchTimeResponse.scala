@@ -11,16 +11,13 @@ trait FetchTimeResponse extends StObject {
 }
 object FetchTimeResponse {
   
-  @scala.inline
-  def apply(timetoken: Double): FetchTimeResponse = {
+  inline def apply(timetoken: Double): FetchTimeResponse = {
     val __obj = js.Dynamic.literal(timetoken = timetoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchTimeResponse]
   }
   
-  @scala.inline
-  implicit class FetchTimeResponseMutableBuilder[Self <: FetchTimeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: FetchTimeResponse](x: Self) {
     
-    @scala.inline
-    def setTimetoken(value: Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
+    inline def setTimetoken(value: Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
   }
 }

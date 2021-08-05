@@ -29,31 +29,23 @@ trait FleetTargetCapacitySpecification extends StObject {
 }
 object FleetTargetCapacitySpecification {
   
-  @scala.inline
-  def apply(defaultTargetCapacityType: Input[String], totalTargetCapacity: Input[Double]): FleetTargetCapacitySpecification = {
+  inline def apply(defaultTargetCapacityType: Input[String], totalTargetCapacity: Input[Double]): FleetTargetCapacitySpecification = {
     val __obj = js.Dynamic.literal(defaultTargetCapacityType = defaultTargetCapacityType.asInstanceOf[js.Any], totalTargetCapacity = totalTargetCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetTargetCapacitySpecification]
   }
   
-  @scala.inline
-  implicit class FleetTargetCapacitySpecificationMutableBuilder[Self <: FleetTargetCapacitySpecification] (val x: Self) extends AnyVal {
+  extension [Self <: FleetTargetCapacitySpecification](x: Self) {
     
-    @scala.inline
-    def setDefaultTargetCapacityType(value: Input[String]): Self = StObject.set(x, "defaultTargetCapacityType", value.asInstanceOf[js.Any])
+    inline def setDefaultTargetCapacityType(value: Input[String]): Self = StObject.set(x, "defaultTargetCapacityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandTargetCapacity(value: Input[Double]): Self = StObject.set(x, "onDemandTargetCapacity", value.asInstanceOf[js.Any])
+    inline def setOnDemandTargetCapacity(value: Input[Double]): Self = StObject.set(x, "onDemandTargetCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandTargetCapacityUndefined: Self = StObject.set(x, "onDemandTargetCapacity", js.undefined)
+    inline def setOnDemandTargetCapacityUndefined: Self = StObject.set(x, "onDemandTargetCapacity", js.undefined)
     
-    @scala.inline
-    def setSpotTargetCapacity(value: Input[Double]): Self = StObject.set(x, "spotTargetCapacity", value.asInstanceOf[js.Any])
+    inline def setSpotTargetCapacity(value: Input[Double]): Self = StObject.set(x, "spotTargetCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotTargetCapacityUndefined: Self = StObject.set(x, "spotTargetCapacity", js.undefined)
+    inline def setSpotTargetCapacityUndefined: Self = StObject.set(x, "spotTargetCapacity", js.undefined)
     
-    @scala.inline
-    def setTotalTargetCapacity(value: Input[Double]): Self = StObject.set(x, "totalTargetCapacity", value.asInstanceOf[js.Any])
+    inline def setTotalTargetCapacity(value: Input[Double]): Self = StObject.set(x, "totalTargetCapacity", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait ListMemberDeleteResposne extends StObject {
 }
 object ListMemberDeleteResposne {
   
-  @scala.inline
-  def apply(del_count: Double): ListMemberDeleteResposne = {
+  inline def apply(del_count: Double): ListMemberDeleteResposne = {
     val __obj = js.Dynamic.literal(del_count = del_count.asInstanceOf[js.Any], message = "success")
     __obj.asInstanceOf[ListMemberDeleteResposne]
   }
   
-  @scala.inline
-  implicit class ListMemberDeleteResposneMutableBuilder[Self <: ListMemberDeleteResposne] (val x: Self) extends AnyVal {
+  extension [Self <: ListMemberDeleteResposne](x: Self) {
     
-    @scala.inline
-    def setDel_count(value: Double): Self = StObject.set(x, "del_count", value.asInstanceOf[js.Any])
+    inline def setDel_count(value: Double): Self = StObject.set(x, "del_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: success): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: success): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

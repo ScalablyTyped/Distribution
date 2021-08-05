@@ -20,8 +20,7 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def GetNegDigits(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetNegDigits")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+      inline def GetNegDigits(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetNegDigits")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
     
     @JSGlobal("Utils.StringFce")
@@ -36,8 +35,7 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def format(s: String, args: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(s.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def format(s: String, args: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(s.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
     }
   }
 }

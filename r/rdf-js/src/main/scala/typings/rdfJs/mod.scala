@@ -507,17 +507,14 @@ object mod {
   }
   object QuadFilterIteratee {
     
-    @scala.inline
-    def apply[Q /* <: BaseQuad */](test: (Q, Dataset[Q, Q]) => Boolean): QuadFilterIteratee[Q] = {
+    inline def apply[Q /* <: BaseQuad */](test: (Q, Dataset[Q, Q]) => Boolean): QuadFilterIteratee[Q] = {
       val __obj = js.Dynamic.literal(test = js.Any.fromFunction2(test))
       __obj.asInstanceOf[QuadFilterIteratee[Q]]
     }
     
-    @scala.inline
-    implicit class QuadFilterIterateeMutableBuilder[Self <: QuadFilterIteratee[?], Q /* <: BaseQuad */] (val x: Self & QuadFilterIteratee[Q]) extends AnyVal {
+    extension [Self <: QuadFilterIteratee[?], Q /* <: BaseQuad */](x: Self & QuadFilterIteratee[Q]) {
       
-      @scala.inline
-      def setTest(value: (Q, Dataset[Q, Q]) => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction2(value))
+      inline def setTest(value: (Q, Dataset[Q, Q]) => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction2(value))
     }
   }
   
@@ -540,17 +537,14 @@ object mod {
   }
   object QuadMapIteratee {
     
-    @scala.inline
-    def apply[Q /* <: BaseQuad */](map: (Q, Dataset[Q, Q]) => Q): QuadMapIteratee[Q] = {
+    inline def apply[Q /* <: BaseQuad */](map: (Q, Dataset[Q, Q]) => Q): QuadMapIteratee[Q] = {
       val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map))
       __obj.asInstanceOf[QuadMapIteratee[Q]]
     }
     
-    @scala.inline
-    implicit class QuadMapIterateeMutableBuilder[Self <: QuadMapIteratee[?], Q /* <: BaseQuad */] (val x: Self & QuadMapIteratee[Q]) extends AnyVal {
+    extension [Self <: QuadMapIteratee[?], Q /* <: BaseQuad */](x: Self & QuadMapIteratee[Q]) {
       
-      @scala.inline
-      def setMap(value: (Q, Dataset[Q, Q]) => Q): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+      inline def setMap(value: (Q, Dataset[Q, Q]) => Q): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     }
   }
   
@@ -574,17 +568,14 @@ object mod {
   }
   object QuadReduceIteratee {
     
-    @scala.inline
-    def apply[A, Q /* <: BaseQuad */](run: (A, Q, Dataset[Q, Q]) => A): QuadReduceIteratee[A, Q] = {
+    inline def apply[A, Q /* <: BaseQuad */](run: (A, Q, Dataset[Q, Q]) => A): QuadReduceIteratee[A, Q] = {
       val __obj = js.Dynamic.literal(run = js.Any.fromFunction3(run))
       __obj.asInstanceOf[QuadReduceIteratee[A, Q]]
     }
     
-    @scala.inline
-    implicit class QuadReduceIterateeMutableBuilder[Self <: QuadReduceIteratee[?, ?], A, Q /* <: BaseQuad */] (val x: Self & (QuadReduceIteratee[A, Q])) extends AnyVal {
+    extension [Self <: QuadReduceIteratee[?, ?], A, Q /* <: BaseQuad */](x: Self & (QuadReduceIteratee[A, Q])) {
       
-      @scala.inline
-      def setRun(value: (A, Q, Dataset[Q, Q]) => A): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
+      inline def setRun(value: (A, Q, Dataset[Q, Q]) => A): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
     }
   }
   
@@ -597,17 +588,14 @@ object mod {
   }
   object QuadRunIteratee {
     
-    @scala.inline
-    def apply[Q /* <: BaseQuad */](run: (Q, Dataset[Q, Q]) => Unit): QuadRunIteratee[Q] = {
+    inline def apply[Q /* <: BaseQuad */](run: (Q, Dataset[Q, Q]) => Unit): QuadRunIteratee[Q] = {
       val __obj = js.Dynamic.literal(run = js.Any.fromFunction2(run))
       __obj.asInstanceOf[QuadRunIteratee[Q]]
     }
     
-    @scala.inline
-    implicit class QuadRunIterateeMutableBuilder[Self <: QuadRunIteratee[?], Q /* <: BaseQuad */] (val x: Self & QuadRunIteratee[Q]) extends AnyVal {
+    extension [Self <: QuadRunIteratee[?], Q /* <: BaseQuad */](x: Self & QuadRunIteratee[Q]) {
       
-      @scala.inline
-      def setRun(value: (Q, Dataset[Q, Q]) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction2(value))
+      inline def setRun(value: (Q, Dataset[Q, Q]) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction2(value))
     }
   }
   
@@ -635,18 +623,15 @@ object mod {
   }
   object Sink {
     
-    @scala.inline
-    def apply[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */](`import`: InputStream => OutputStream): Sink[InputStream, OutputStream] = {
+    inline def apply[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */](`import`: InputStream => OutputStream): Sink[InputStream, OutputStream] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
       __obj.asInstanceOf[Sink[InputStream, OutputStream]]
     }
     
-    @scala.inline
-    implicit class SinkMutableBuilder[Self <: Sink[?, ?], InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] (val x: Self & (Sink[InputStream, OutputStream])) extends AnyVal {
+    extension [Self <: Sink[?, ?], InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */](x: Self & (Sink[InputStream, OutputStream])) {
       
-      @scala.inline
-      def setImport(value: InputStream => OutputStream): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
+      inline def setImport(value: InputStream => OutputStream): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
     }
   }
   
@@ -670,8 +655,7 @@ object mod {
   }
   object Source {
     
-    @scala.inline
-    def apply[Q /* <: BaseQuad */](
+    inline def apply[Q /* <: BaseQuad */](
       `match`: (js.UndefOr[Term | RegExp], js.UndefOr[Term | RegExp], js.UndefOr[Term | RegExp], js.UndefOr[Term | RegExp]) => Stream[Q]
     ): Source[Q] = {
       val __obj = js.Dynamic.literal()
@@ -679,11 +663,9 @@ object mod {
       __obj.asInstanceOf[Source[Q]]
     }
     
-    @scala.inline
-    implicit class SourceMutableBuilder[Self <: Source[?], Q /* <: BaseQuad */] (val x: Self & Source[Q]) extends AnyVal {
+    extension [Self <: Source[?], Q /* <: BaseQuad */](x: Self & Source[Q]) {
       
-      @scala.inline
-      def setMatch(
+      inline def setMatch(
         value: (js.UndefOr[Term | RegExp], js.UndefOr[Term | RegExp], js.UndefOr[Term | RegExp], js.UndefOr[Term | RegExp]) => Stream[Q]
       ): Self = StObject.set(x, "match", js.Any.fromFunction4(value))
     }

@@ -30,8 +30,7 @@ trait AutoUpgradeError extends StObject {
 }
 object AutoUpgradeError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoUpgradeError: scala.Double,
     builtIn: scala.Double,
     disabled: scala.Double,
@@ -48,40 +47,28 @@ object AutoUpgradeError {
     __obj.asInstanceOf[AutoUpgradeError]
   }
   
-  @scala.inline
-  implicit class AutoUpgradeErrorMutableBuilder[Self <: AutoUpgradeError] (val x: Self) extends AnyVal {
+  extension [Self <: AutoUpgradeError](x: Self) {
     
-    @scala.inline
-    def setAutoUpgradeError(value: scala.Double): Self = StObject.set(x, "autoUpgradeError", value.asInstanceOf[js.Any])
+    inline def setAutoUpgradeError(value: scala.Double): Self = StObject.set(x, "autoUpgradeError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuiltIn(value: scala.Double): Self = StObject.set(x, "builtIn", value.asInstanceOf[js.Any])
+    inline def setBuiltIn(value: scala.Double): Self = StObject.set(x, "builtIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: scala.Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: scala.Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiVersion(value: scala.Double): Self = StObject.set(x, "multiVersion", value.asInstanceOf[js.Any])
+    inline def setMultiVersion(value: scala.Double): Self = StObject.set(x, "multiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedsReauthorization(value: scala.Double): Self = StObject.set(x, "needsReauthorization", value.asInstanceOf[js.Any])
+    inline def setNeedsReauthorization(value: scala.Double): Self = StObject.set(x, "needsReauthorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrusted(value: scala.Double): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
+    inline def setTrusted(value: scala.Double): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnInstalled(value: scala.Double): Self = StObject.set(x, "unInstalled", value.asInstanceOf[js.Any])
+    inline def setUnInstalled(value: scala.Double): Self = StObject.set(x, "unInstalled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCheckError(value: scala.Double): Self = StObject.set(x, "versionCheckError", value.asInstanceOf[js.Any])
+    inline def setVersionCheckError(value: scala.Double): Self = StObject.set(x, "versionCheckError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarning(value: scala.Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: scala.Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
   }
 }

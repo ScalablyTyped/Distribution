@@ -10,16 +10,13 @@ trait IWebUINavigatedDeferral extends StObject {
 }
 object IWebUINavigatedDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): IWebUINavigatedDeferral = {
+  inline def apply(complete: () => Unit): IWebUINavigatedDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[IWebUINavigatedDeferral]
   }
   
-  @scala.inline
-  implicit class IWebUINavigatedDeferralMutableBuilder[Self <: IWebUINavigatedDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: IWebUINavigatedDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

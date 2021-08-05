@@ -10,16 +10,13 @@ trait ICursor extends StObject {
 }
 object ICursor {
   
-  @scala.inline
-  def apply(cursor: String): ICursor = {
+  inline def apply(cursor: String): ICursor = {
     val __obj = js.Dynamic.literal(cursor = cursor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICursor]
   }
   
-  @scala.inline
-  implicit class ICursorMutableBuilder[Self <: ICursor] (val x: Self) extends AnyVal {
+  extension [Self <: ICursor](x: Self) {
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
   }
 }

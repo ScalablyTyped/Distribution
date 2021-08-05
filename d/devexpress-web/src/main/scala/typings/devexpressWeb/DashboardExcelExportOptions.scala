@@ -41,8 +41,7 @@ trait DashboardExcelExportOptions extends StObject {
 }
 object DashboardExcelExportOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CsvValueSeparator: String,
     DashboardStatePosition: String,
     ExportFilters: Boolean,
@@ -54,25 +53,18 @@ object DashboardExcelExportOptions {
     __obj.asInstanceOf[DashboardExcelExportOptions]
   }
   
-  @scala.inline
-  implicit class DashboardExcelExportOptionsMutableBuilder[Self <: DashboardExcelExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DashboardExcelExportOptions](x: Self) {
     
-    @scala.inline
-    def setCsvValueSeparator(value: String): Self = StObject.set(x, "CsvValueSeparator", value.asInstanceOf[js.Any])
+    inline def setCsvValueSeparator(value: String): Self = StObject.set(x, "CsvValueSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardStatePosition(value: String): Self = StObject.set(x, "DashboardStatePosition", value.asInstanceOf[js.Any])
+    inline def setDashboardStatePosition(value: String): Self = StObject.set(x, "DashboardStatePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportFilters(value: Boolean): Self = StObject.set(x, "ExportFilters", value.asInstanceOf[js.Any])
+    inline def setExportFilters(value: Boolean): Self = StObject.set(x, "ExportFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportParameters(value: Boolean): Self = StObject.set(x, "ExportParameters", value.asInstanceOf[js.Any])
+    inline def setExportParameters(value: Boolean): Self = StObject.set(x, "ExportParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeHiddenParameters(value: Boolean): Self = StObject.set(x, "IncludeHiddenParameters", value.asInstanceOf[js.Any])
+    inline def setIncludeHiddenParameters(value: Boolean): Self = StObject.set(x, "IncludeHiddenParameters", value.asInstanceOf[js.Any])
   }
 }

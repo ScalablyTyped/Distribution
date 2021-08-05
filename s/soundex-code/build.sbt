@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "soundex-code"
-version := "1.0-dt-20201003Z-328b6d"
+version := "1.0-dt-20201003Z-c531ed"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -14,8 +14,7 @@ object createHigherOrderComponentMod {
   
   // tslint:disable:no-unnecessary-generics
   // prettier-ignore
-  @scala.inline
-  def default[EP](
+  inline def default[EP](
     mapComponentToEnhancedComponent: js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]],
     modifierName: String
   ): js.Function1[

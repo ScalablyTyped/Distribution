@@ -15,23 +15,18 @@ object PgpProvider {
   }
   object KeyFingerprint {
     
-    @scala.inline
-    def apply(fingerprint: String, words: js.Array[String]): KeyFingerprint = {
+    inline def apply(fingerprint: String, words: js.Array[String]): KeyFingerprint = {
       val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyFingerprint]
     }
     
-    @scala.inline
-    implicit class KeyFingerprintMutableBuilder[Self <: KeyFingerprint] (val x: Self) extends AnyVal {
+    extension [Self <: KeyFingerprint](x: Self) {
       
-      @scala.inline
-      def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
     }
   }
   
@@ -73,26 +68,20 @@ object PgpProvider {
   }
   object PublicKey {
     
-    @scala.inline
-    def apply(fingerprint: String, key: String, words: js.Array[String]): PublicKey = {
+    inline def apply(fingerprint: String, key: String, words: js.Array[String]): PublicKey = {
       val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublicKey]
     }
     
-    @scala.inline
-    implicit class PublicKeyMutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
+    extension [Self <: PublicKey](x: Self) {
       
-      @scala.inline
-      def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
     }
   }
   
@@ -104,23 +93,18 @@ object PgpProvider {
   }
   object VerifyDecryptResult {
     
-    @scala.inline
-    def apply(data: ArrayBuffer, signedBy: js.Array[String]): VerifyDecryptResult = {
+    inline def apply(data: ArrayBuffer, signedBy: js.Array[String]): VerifyDecryptResult = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], signedBy = signedBy.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyDecryptResult]
     }
     
-    @scala.inline
-    implicit class VerifyDecryptResultMutableBuilder[Self <: VerifyDecryptResult] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyDecryptResult](x: Self) {
       
-      @scala.inline
-      def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedBy(value: js.Array[String]): Self = StObject.set(x, "signedBy", value.asInstanceOf[js.Any])
+      inline def setSignedBy(value: js.Array[String]): Self = StObject.set(x, "signedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedByVarargs(value: String*): Self = StObject.set(x, "signedBy", js.Array(value :_*))
+      inline def setSignedByVarargs(value: String*): Self = StObject.set(x, "signedBy", js.Array(value :_*))
     }
   }
 }

@@ -23,39 +23,29 @@ trait PartialPushpinOptions extends StObject {
 }
 object PartialPushpinOptions {
   
-  @scala.inline
-  def apply(): PartialPushpinOptions = {
+  inline def apply(): PartialPushpinOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPushpinOptions]
   }
   
-  @scala.inline
-  implicit class PartialPushpinOptionsMutableBuilder[Self <: PartialPushpinOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPushpinOptions](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setOnPositionChange(
+    inline def setOnPositionChange(
       value: js.ThisFunction1[/* this */ Pushpin, /* position */ pinned | `pin-top` | `pin-bottom`, Unit]
     ): Self = StObject.set(x, "onPositionChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPositionChangeUndefined: Self = StObject.set(x, "onPositionChange", js.undefined)
+    inline def setOnPositionChangeUndefined: Self = StObject.set(x, "onPositionChange", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

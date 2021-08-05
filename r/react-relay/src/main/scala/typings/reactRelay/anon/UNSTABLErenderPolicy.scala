@@ -11,19 +11,15 @@ trait UNSTABLErenderPolicy extends StObject {
 }
 object UNSTABLErenderPolicy {
   
-  @scala.inline
-  def apply(): UNSTABLErenderPolicy = {
+  inline def apply(): UNSTABLErenderPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UNSTABLErenderPolicy]
   }
   
-  @scala.inline
-  implicit class UNSTABLErenderPolicyMutableBuilder[Self <: UNSTABLErenderPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: UNSTABLErenderPolicy](x: Self) {
     
-    @scala.inline
-    def setUNSTABLE_renderPolicy(value: RenderPolicy): Self = StObject.set(x, "UNSTABLE_renderPolicy", value.asInstanceOf[js.Any])
+    inline def setUNSTABLE_renderPolicy(value: RenderPolicy): Self = StObject.set(x, "UNSTABLE_renderPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNSTABLE_renderPolicyUndefined: Self = StObject.set(x, "UNSTABLE_renderPolicy", js.undefined)
+    inline def setUNSTABLE_renderPolicyUndefined: Self = StObject.set(x, "UNSTABLE_renderPolicy", js.undefined)
   }
 }

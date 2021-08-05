@@ -22,8 +22,7 @@ trait IAutomaticPermissions extends StObject {
 }
 object IAutomaticPermissions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CanDeactivate: Boolean,
     Clone: () => IAutomaticPermissions,
     IsBasedOnObjectACL: Boolean,
@@ -36,28 +35,20 @@ object IAutomaticPermissions {
     __obj.asInstanceOf[IAutomaticPermissions]
   }
   
-  @scala.inline
-  implicit class IAutomaticPermissionsMutableBuilder[Self <: IAutomaticPermissions] (val x: Self) extends AnyVal {
+  extension [Self <: IAutomaticPermissions](x: Self) {
     
-    @scala.inline
-    def setCanDeactivate(value: Boolean): Self = StObject.set(x, "CanDeactivate", value.asInstanceOf[js.Any])
+    inline def setCanDeactivate(value: Boolean): Self = StObject.set(x, "CanDeactivate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IAutomaticPermissions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IAutomaticPermissions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsBasedOnObjectACL(value: Boolean): Self = StObject.set(x, "IsBasedOnObjectACL", value.asInstanceOf[js.Any])
+    inline def setIsBasedOnObjectACL(value: Boolean): Self = StObject.set(x, "IsBasedOnObjectACL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedACL(value: INamedACL): Self = StObject.set(x, "NamedACL", value.asInstanceOf[js.Any])
+    inline def setNamedACL(value: INamedACL): Self = StObject.set(x, "NamedACL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetBasedOnObjectACL(value: () => Unit): Self = StObject.set(x, "SetBasedOnObjectACL", js.Any.fromFunction0(value))
+    inline def setSetBasedOnObjectACL(value: () => Unit): Self = StObject.set(x, "SetBasedOnObjectACL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetNamedACL(value: INamedACL => Unit): Self = StObject.set(x, "SetNamedACL", js.Any.fromFunction1(value))
+    inline def setSetNamedACL(value: INamedACL => Unit): Self = StObject.set(x, "SetNamedACL", js.Any.fromFunction1(value))
   }
 }

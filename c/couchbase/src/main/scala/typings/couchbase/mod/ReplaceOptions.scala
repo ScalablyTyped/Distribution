@@ -15,19 +15,15 @@ trait ReplaceOptions
 }
 object ReplaceOptions {
   
-  @scala.inline
-  def apply(): ReplaceOptions = {
+  inline def apply(): ReplaceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplaceOptions]
   }
   
-  @scala.inline
-  implicit class ReplaceOptionsMutableBuilder[Self <: ReplaceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceOptions](x: Self) {
     
-    @scala.inline
-    def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
+    inline def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
+    inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
   }
 }

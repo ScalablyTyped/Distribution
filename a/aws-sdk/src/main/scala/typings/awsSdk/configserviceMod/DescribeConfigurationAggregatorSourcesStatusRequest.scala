@@ -28,37 +28,27 @@ trait DescribeConfigurationAggregatorSourcesStatusRequest extends StObject {
 }
 object DescribeConfigurationAggregatorSourcesStatusRequest {
   
-  @scala.inline
-  def apply(ConfigurationAggregatorName: ConfigurationAggregatorName): DescribeConfigurationAggregatorSourcesStatusRequest = {
+  inline def apply(ConfigurationAggregatorName: ConfigurationAggregatorName): DescribeConfigurationAggregatorSourcesStatusRequest = {
     val __obj = js.Dynamic.literal(ConfigurationAggregatorName = ConfigurationAggregatorName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationAggregatorSourcesStatusRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConfigurationAggregatorSourcesStatusRequestMutableBuilder[Self <: DescribeConfigurationAggregatorSourcesStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigurationAggregatorSourcesStatusRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
+    inline def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setUpdateStatus(value: AggregatedSourceStatusTypeList): Self = StObject.set(x, "UpdateStatus", value.asInstanceOf[js.Any])
+    inline def setUpdateStatus(value: AggregatedSourceStatusTypeList): Self = StObject.set(x, "UpdateStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateStatusUndefined: Self = StObject.set(x, "UpdateStatus", js.undefined)
+    inline def setUpdateStatusUndefined: Self = StObject.set(x, "UpdateStatus", js.undefined)
     
-    @scala.inline
-    def setUpdateStatusVarargs(value: AggregatedSourceStatusType*): Self = StObject.set(x, "UpdateStatus", js.Array(value :_*))
+    inline def setUpdateStatusVarargs(value: AggregatedSourceStatusType*): Self = StObject.set(x, "UpdateStatus", js.Array(value :_*))
   }
 }

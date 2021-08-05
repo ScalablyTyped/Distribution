@@ -52,76 +52,53 @@ trait BrowserInfo extends StObject {
 }
 object BrowserInfo {
   
-  @scala.inline
-  def apply(Select: js.Any => Unit, version: String, versionAtLeast: String => Unit): BrowserInfo = {
+  inline def apply(Select: js.Any => Unit, version: String, versionAtLeast: String => Unit): BrowserInfo = {
     val __obj = js.Dynamic.literal(Select = js.Any.fromFunction1(Select), version = version.asInstanceOf[js.Any], versionAtLeast = js.Any.fromFunction1(versionAtLeast))
     __obj.asInstanceOf[BrowserInfo]
   }
   
-  @scala.inline
-  implicit class BrowserInfoMutableBuilder[Self <: BrowserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BrowserInfo](x: Self) {
     
-    @scala.inline
-    def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
+    inline def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsChromeUndefined: Self = StObject.set(x, "isChrome", js.undefined)
+    inline def setIsChromeUndefined: Self = StObject.set(x, "isChrome", js.undefined)
     
-    @scala.inline
-    def setIsFirefox(value: Boolean): Self = StObject.set(x, "isFirefox", value.asInstanceOf[js.Any])
+    inline def setIsFirefox(value: Boolean): Self = StObject.set(x, "isFirefox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFirefoxUndefined: Self = StObject.set(x, "isFirefox", js.undefined)
+    inline def setIsFirefoxUndefined: Self = StObject.set(x, "isFirefox", js.undefined)
     
-    @scala.inline
-    def setIsKonqueror(value: Boolean): Self = StObject.set(x, "isKonqueror", value.asInstanceOf[js.Any])
+    inline def setIsKonqueror(value: Boolean): Self = StObject.set(x, "isKonqueror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsKonquerorUndefined: Self = StObject.set(x, "isKonqueror", js.undefined)
+    inline def setIsKonquerorUndefined: Self = StObject.set(x, "isKonqueror", js.undefined)
     
-    @scala.inline
-    def setIsMSIE(value: Boolean): Self = StObject.set(x, "isMSIE", value.asInstanceOf[js.Any])
+    inline def setIsMSIE(value: Boolean): Self = StObject.set(x, "isMSIE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMSIEUndefined: Self = StObject.set(x, "isMSIE", js.undefined)
+    inline def setIsMSIEUndefined: Self = StObject.set(x, "isMSIE", js.undefined)
     
-    @scala.inline
-    def setIsMac(value: Boolean): Self = StObject.set(x, "isMac", value.asInstanceOf[js.Any])
+    inline def setIsMac(value: Boolean): Self = StObject.set(x, "isMac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMacUndefined: Self = StObject.set(x, "isMac", js.undefined)
+    inline def setIsMacUndefined: Self = StObject.set(x, "isMac", js.undefined)
     
-    @scala.inline
-    def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+    inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
+    inline def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
     
-    @scala.inline
-    def setIsOpera(value: Boolean): Self = StObject.set(x, "isOpera", value.asInstanceOf[js.Any])
+    inline def setIsOpera(value: Boolean): Self = StObject.set(x, "isOpera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOperaUndefined: Self = StObject.set(x, "isOpera", js.undefined)
+    inline def setIsOperaUndefined: Self = StObject.set(x, "isOpera", js.undefined)
     
-    @scala.inline
-    def setIsPC(value: Boolean): Self = StObject.set(x, "isPC", value.asInstanceOf[js.Any])
+    inline def setIsPC(value: Boolean): Self = StObject.set(x, "isPC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPCUndefined: Self = StObject.set(x, "isPC", js.undefined)
+    inline def setIsPCUndefined: Self = StObject.set(x, "isPC", js.undefined)
     
-    @scala.inline
-    def setIsSafari(value: Boolean): Self = StObject.set(x, "isSafari", value.asInstanceOf[js.Any])
+    inline def setIsSafari(value: Boolean): Self = StObject.set(x, "isSafari", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSafariUndefined: Self = StObject.set(x, "isSafari", js.undefined)
+    inline def setIsSafariUndefined: Self = StObject.set(x, "isSafari", js.undefined)
     
-    @scala.inline
-    def setSelect(value: js.Any => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction1(value))
+    inline def setSelect(value: js.Any => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionAtLeast(value: String => Unit): Self = StObject.set(x, "versionAtLeast", js.Any.fromFunction1(value))
+    inline def setVersionAtLeast(value: String => Unit): Self = StObject.set(x, "versionAtLeast", js.Any.fromFunction1(value))
   }
 }

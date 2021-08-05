@@ -234,19 +234,16 @@ object mod {
       @JSImport("@ckeditor/ckeditor5-core", "editor.Editor.builtinPlugins")
       @js.native
       def builtinPlugins: js.Array[Plugin[js.Any]] = js.native
-      @scala.inline
-      def builtinPlugins_=(x: js.Array[Plugin[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("builtinPlugins")(x.asInstanceOf[js.Any])
+      inline def builtinPlugins_=(x: js.Array[Plugin[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("builtinPlugins")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @scala.inline
-      def create(config: js.Object): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+      inline def create(config: js.Object): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
       
       /* static member */
       @JSImport("@ckeditor/ckeditor5-core", "editor.Editor.defaultConfig")
       @js.native
       def defaultConfig: js.Object = js.native
-      @scala.inline
-      def defaultConfig_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultConfig")(x.asInstanceOf[js.Any])
+      inline def defaultConfig_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultConfig")(x.asInstanceOf[js.Any])
     }
     
     // core/editor/editorui
@@ -293,8 +290,7 @@ object mod {
       val ElementApiMixin: ElementApi = js.native
       
       // core/editor/utils/attachtoform
-      @scala.inline
-      def attachToForm(editor: Editor & ElementApi): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachToForm")(editor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def attachToForm(editor: Editor & ElementApi): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachToForm")(editor.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       trait DataApi extends StObject {
         
@@ -304,20 +300,16 @@ object mod {
       }
       object DataApi {
         
-        @scala.inline
-        def apply(getData: () => String, setData: String => Unit): DataApi = {
+        inline def apply(getData: () => String, setData: String => Unit): DataApi = {
           val __obj = js.Dynamic.literal(getData = js.Any.fromFunction0(getData), setData = js.Any.fromFunction1(setData))
           __obj.asInstanceOf[DataApi]
         }
         
-        @scala.inline
-        implicit class DataApiMutableBuilder[Self <: DataApi] (val x: Self) extends AnyVal {
+        extension [Self <: DataApi](x: Self) {
           
-          @scala.inline
-          def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+          inline def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setSetData(value: String => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+          inline def setSetData(value: String => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
         }
       }
       
@@ -329,20 +321,16 @@ object mod {
       }
       object ElementApi {
         
-        @scala.inline
-        def apply(sourceElement: HTMLElement, updateSourceElement: () => Unit): ElementApi = {
+        inline def apply(sourceElement: HTMLElement, updateSourceElement: () => Unit): ElementApi = {
           val __obj = js.Dynamic.literal(sourceElement = sourceElement.asInstanceOf[js.Any], updateSourceElement = js.Any.fromFunction0(updateSourceElement))
           __obj.asInstanceOf[ElementApi]
         }
         
-        @scala.inline
-        implicit class ElementApiMutableBuilder[Self <: ElementApi] (val x: Self) extends AnyVal {
+        extension [Self <: ElementApi](x: Self) {
           
-          @scala.inline
-          def setSourceElement(value: HTMLElement): Self = StObject.set(x, "sourceElement", value.asInstanceOf[js.Any])
+          inline def setSourceElement(value: HTMLElement): Self = StObject.set(x, "sourceElement", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUpdateSourceElement(value: () => Unit): Self = StObject.set(x, "updateSourceElement", js.Any.fromFunction0(value))
+          inline def setUpdateSourceElement(value: () => Unit): Self = StObject.set(x, "updateSourceElement", js.Any.fromFunction0(value))
         }
       }
     }
@@ -386,8 +374,7 @@ object mod {
     }
     object EditorConfig {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         alignment: AlignmentConfig,
         autosave: AutosaveConfig,
         balloonToolbar: js.Array[String],
@@ -410,74 +397,51 @@ object mod {
         __obj.asInstanceOf[EditorConfig]
       }
       
-      @scala.inline
-      implicit class EditorConfigMutableBuilder[Self <: EditorConfig] (val x: Self) extends AnyVal {
+      extension [Self <: EditorConfig](x: Self) {
         
-        @scala.inline
-        def setAlignment(value: AlignmentConfig): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+        inline def setAlignment(value: AlignmentConfig): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutosave(value: AutosaveConfig): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
+        inline def setAutosave(value: AutosaveConfig): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBalloonToolbar(value: js.Array[String]): Self = StObject.set(x, "balloonToolbar", value.asInstanceOf[js.Any])
+        inline def setBalloonToolbar(value: js.Array[String]): Self = StObject.set(x, "balloonToolbar", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBalloonToolbarVarargs(value: String*): Self = StObject.set(x, "balloonToolbar", js.Array(value :_*))
+        inline def setBalloonToolbarVarargs(value: String*): Self = StObject.set(x, "balloonToolbar", js.Array(value :_*))
         
-        @scala.inline
-        def setBlockToolbar(value: js.Array[String]): Self = StObject.set(x, "blockToolbar", value.asInstanceOf[js.Any])
+        inline def setBlockToolbar(value: js.Array[String]): Self = StObject.set(x, "blockToolbar", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlockToolbarVarargs(value: String*): Self = StObject.set(x, "blockToolbar", js.Array(value :_*))
+        inline def setBlockToolbarVarargs(value: String*): Self = StObject.set(x, "blockToolbar", js.Array(value :_*))
         
-        @scala.inline
-        def setCkfinder(value: CKFinderAdapterConfig): Self = StObject.set(x, "ckfinder", value.asInstanceOf[js.Any])
+        inline def setCkfinder(value: CKFinderAdapterConfig): Self = StObject.set(x, "ckfinder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCloudServices(value: CloudServicesConfig): Self = StObject.set(x, "cloudServices", value.asInstanceOf[js.Any])
+        inline def setCloudServices(value: CloudServicesConfig): Self = StObject.set(x, "cloudServices", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontFamily(value: FontFamilyConfig): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+        inline def setFontFamily(value: FontFamilyConfig): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontSize(value: FontSizeConfig): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+        inline def setFontSize(value: FontSizeConfig): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeading(value: HeadingConfig): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+        inline def setHeading(value: HeadingConfig): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHighlight(value: HighlightConfig): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+        inline def setHighlight(value: HighlightConfig): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImage(value: ImageConfig): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+        inline def setImage(value: ImageConfig): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+        inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMediaEmbed(value: MediaEmbedConfig): Self = StObject.set(x, "mediaEmbed", value.asInstanceOf[js.Any])
+        inline def setMediaEmbed(value: MediaEmbedConfig): Self = StObject.set(x, "mediaEmbed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlugins(value: js.Array[String | Plugin[Unit]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+        inline def setPlugins(value: js.Array[String | Plugin[Unit]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPluginsVarargs(value: (String | Plugin[Unit])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+        inline def setPluginsVarargs(value: (String | Plugin[Unit])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
         
-        @scala.inline
-        def setRemovePlugins(value: js.Array[String]): Self = StObject.set(x, "removePlugins", value.asInstanceOf[js.Any])
+        inline def setRemovePlugins(value: js.Array[String]): Self = StObject.set(x, "removePlugins", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemovePluginsVarargs(value: String*): Self = StObject.set(x, "removePlugins", js.Array(value :_*))
+        inline def setRemovePluginsVarargs(value: String*): Self = StObject.set(x, "removePlugins", js.Array(value :_*))
         
-        @scala.inline
-        def setToolbar(value: js.Array[String] | Items): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+        inline def setToolbar(value: js.Array[String] | Items): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToolbarVarargs(value: String*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+        inline def setToolbarVarargs(value: String*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
         
-        @scala.inline
-        def setTyping(value: TypingConfig): Self = StObject.set(x, "typing", value.asInstanceOf[js.Any])
+        inline def setTyping(value: TypingConfig): Self = StObject.set(x, "typing", value.asInstanceOf[js.Any])
       }
     }
     
@@ -490,23 +454,18 @@ object mod {
     }
     object EditorWithUI {
       
-      @scala.inline
-      def apply(ui: EditorUI): EditorWithUI = {
+      inline def apply(ui: EditorUI): EditorWithUI = {
         val __obj = js.Dynamic.literal(ui = ui.asInstanceOf[js.Any], element = null)
         __obj.asInstanceOf[EditorWithUI]
       }
       
-      @scala.inline
-      implicit class EditorWithUIMutableBuilder[Self <: EditorWithUI] (val x: Self) extends AnyVal {
+      extension [Self <: EditorWithUI](x: Self) {
         
-        @scala.inline
-        def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+        inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementNull: Self = StObject.set(x, "element", null)
+        inline def setElementNull: Self = StObject.set(x, "element", null)
         
-        @scala.inline
-        def setUi(value: EditorUI): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+        inline def setUi(value: EditorUI): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
       }
     }
   }

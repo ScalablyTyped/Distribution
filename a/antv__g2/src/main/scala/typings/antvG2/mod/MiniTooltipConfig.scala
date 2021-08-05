@@ -25,41 +25,30 @@ trait MiniTooltipConfig
 }
 object MiniTooltipConfig {
   
-  @scala.inline
-  def apply(): MiniTooltipConfig = {
+  inline def apply(): MiniTooltipConfig = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("mini")
     __obj.asInstanceOf[MiniTooltipConfig]
   }
   
-  @scala.inline
-  implicit class MiniTooltipConfigMutableBuilder[Self <: MiniTooltipConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MiniTooltipConfig](x: Self) {
     
-    @scala.inline
-    def setBoardStyle(value: background): Self = StObject.set(x, "boardStyle", value.asInstanceOf[js.Any])
+    inline def setBoardStyle(value: background): Self = StObject.set(x, "boardStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoardStyleUndefined: Self = StObject.set(x, "boardStyle", js.undefined)
+    inline def setBoardStyleUndefined: Self = StObject.set(x, "boardStyle", js.undefined)
     
-    @scala.inline
-    def setTriangleHeight(value: Double): Self = StObject.set(x, "triangleHeight", value.asInstanceOf[js.Any])
+    inline def setTriangleHeight(value: Double): Self = StObject.set(x, "triangleHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangleHeightUndefined: Self = StObject.set(x, "triangleHeight", js.undefined)
+    inline def setTriangleHeightUndefined: Self = StObject.set(x, "triangleHeight", js.undefined)
     
-    @scala.inline
-    def setTriangleWidth(value: Double): Self = StObject.set(x, "triangleWidth", value.asInstanceOf[js.Any])
+    inline def setTriangleWidth(value: Double): Self = StObject.set(x, "triangleWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangleWidthUndefined: Self = StObject.set(x, "triangleWidth", js.undefined)
+    inline def setTriangleWidthUndefined: Self = StObject.set(x, "triangleWidth", js.undefined)
     
-    @scala.inline
-    def setType(value: mini): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: mini): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueStyle(value: text): Self = StObject.set(x, "valueStyle", value.asInstanceOf[js.Any])
+    inline def setValueStyle(value: text): Self = StObject.set(x, "valueStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueStyleUndefined: Self = StObject.set(x, "valueStyle", js.undefined)
+    inline def setValueStyleUndefined: Self = StObject.set(x, "valueStyle", js.undefined)
   }
 }

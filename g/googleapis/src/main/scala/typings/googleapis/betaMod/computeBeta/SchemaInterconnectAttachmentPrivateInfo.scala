@@ -18,19 +18,15 @@ trait SchemaInterconnectAttachmentPrivateInfo extends StObject {
 }
 object SchemaInterconnectAttachmentPrivateInfo {
   
-  @scala.inline
-  def apply(): SchemaInterconnectAttachmentPrivateInfo = {
+  inline def apply(): SchemaInterconnectAttachmentPrivateInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInterconnectAttachmentPrivateInfo]
   }
   
-  @scala.inline
-  implicit class SchemaInterconnectAttachmentPrivateInfoMutableBuilder[Self <: SchemaInterconnectAttachmentPrivateInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInterconnectAttachmentPrivateInfo](x: Self) {
     
-    @scala.inline
-    def setTag8021q(value: Double): Self = StObject.set(x, "tag8021q", value.asInstanceOf[js.Any])
+    inline def setTag8021q(value: Double): Self = StObject.set(x, "tag8021q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag8021qUndefined: Self = StObject.set(x, "tag8021q", js.undefined)
+    inline def setTag8021qUndefined: Self = StObject.set(x, "tag8021q", js.undefined)
   }
 }

@@ -44,33 +44,33 @@ object mod {
     
     def __broccoliGetInfo__(): TransformNodeInfo = js.native
     
-    var _annotation: js.Any = js.native
+    /* private */ var _annotation: js.Any = js.native
     
-    var _baseConstructorCalled: js.Any = js.native
+    /* private */ var _baseConstructorCalled: js.Any = js.native
     
-    var _checkOverrides: js.Any = js.native
+    /* private */ var _checkOverrides: js.Any = js.native
     
-    var _initializeReadCompat: js.Any = js.native
+    /* private */ var _initializeReadCompat: js.Any = js.native
     
-    var _inputNodes: js.Any = js.native
+    /* private */ var _inputNodes: js.Any = js.native
     
-    var _instantiationStack: js.Any = js.native
+    /* private */ var _instantiationStack: js.Any = js.native
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
-    var _needsCache: js.Any = js.native
+    /* private */ var _needsCache: js.Any = js.native
     
-    var _persistentOutput: js.Any = js.native
+    /* private */ var _persistentOutput: js.Any = js.native
     
-    var _readCompat: js.Any = js.native
+    /* private */ var _readCompat: js.Any = js.native
     
-    var _readCompatError: js.Any = js.native
+    /* private */ var _readCompatError: js.Any = js.native
     
-    var _setup: js.Any = js.native
+    /* private */ var _setup: js.Any = js.native
     
-    var _trackInputChanges: js.Any = js.native
+    /* private */ var _trackInputChanges: js.Any = js.native
     
-    var _volatile: js.Any = js.native
+    /* private */ var _volatile: js.Any = js.native
     
     /**
       * Override this method in your subclass. It will be called on each (re-)build.
@@ -131,6 +131,6 @@ object mod {
     
     def read(readTree: MapSeriesIterator[InputNode]): js.UndefOr[js.Promise[String]] = js.native
     
-    var rebuild: js.Any = js.native
+    /* private */ var rebuild: js.Any = js.native
   }
 }

@@ -14,22 +14,17 @@ trait ProjectsResource extends StObject {
 }
 object ProjectsResource {
   
-  @scala.inline
-  def apply(builds: BuildsResource, locations: LocationsResource, triggers: TriggersResource): ProjectsResource = {
+  inline def apply(builds: BuildsResource, locations: LocationsResource, triggers: TriggersResource): ProjectsResource = {
     val __obj = js.Dynamic.literal(builds = builds.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsResource]
   }
   
-  @scala.inline
-  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsResource](x: Self) {
     
-    @scala.inline
-    def setBuilds(value: BuildsResource): Self = StObject.set(x, "builds", value.asInstanceOf[js.Any])
+    inline def setBuilds(value: BuildsResource): Self = StObject.set(x, "builds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggers(value: TriggersResource): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
+    inline def setTriggers(value: TriggersResource): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
   }
 }

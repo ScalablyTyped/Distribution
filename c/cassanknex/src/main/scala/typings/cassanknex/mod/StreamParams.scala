@@ -15,22 +15,17 @@ trait StreamParams extends StObject {
 }
 object StreamParams {
   
-  @scala.inline
-  def apply(end: () => js.Any, error: Error => js.Any, readable: () => js.Any): StreamParams = {
+  inline def apply(end: () => js.Any, error: Error => js.Any, readable: () => js.Any): StreamParams = {
     val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), error = js.Any.fromFunction1(error), readable = js.Any.fromFunction0(readable))
     __obj.asInstanceOf[StreamParams]
   }
   
-  @scala.inline
-  implicit class StreamParamsMutableBuilder[Self <: StreamParams] (val x: Self) extends AnyVal {
+  extension [Self <: StreamParams](x: Self) {
     
-    @scala.inline
-    def setEnd(value: () => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setError(value: Error => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: Error => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadable(value: () => js.Any): Self = StObject.set(x, "readable", js.Any.fromFunction0(value))
+    inline def setReadable(value: () => js.Any): Self = StObject.set(x, "readable", js.Any.fromFunction0(value))
   }
 }

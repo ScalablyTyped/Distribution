@@ -13,19 +13,15 @@ trait Reference extends StObject {
 }
 object Reference {
   
-  @scala.inline
-  def apply(popper: Rect, reference: Rect): Reference = {
+  inline def apply(popper: Rect, reference: Rect): Reference = {
     val __obj = js.Dynamic.literal(popper = popper.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }
   
-  @scala.inline
-  implicit class ReferenceMutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
+  extension [Self <: Reference](x: Self) {
     
-    @scala.inline
-    def setPopper(value: Rect): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+    inline def setPopper(value: Rect): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReference(value: Rect): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Rect): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
   }
 }

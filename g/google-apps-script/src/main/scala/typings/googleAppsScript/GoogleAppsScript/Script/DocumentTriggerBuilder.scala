@@ -15,19 +15,15 @@ trait DocumentTriggerBuilder extends StObject {
 }
 object DocumentTriggerBuilder {
   
-  @scala.inline
-  def apply(create: () => Trigger, onOpen: () => DocumentTriggerBuilder): DocumentTriggerBuilder = {
+  inline def apply(create: () => Trigger, onOpen: () => DocumentTriggerBuilder): DocumentTriggerBuilder = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), onOpen = js.Any.fromFunction0(onOpen))
     __obj.asInstanceOf[DocumentTriggerBuilder]
   }
   
-  @scala.inline
-  implicit class DocumentTriggerBuilderMutableBuilder[Self <: DocumentTriggerBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentTriggerBuilder](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnOpen(value: () => DocumentTriggerBuilder): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+    inline def setOnOpen(value: () => DocumentTriggerBuilder): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
   }
 }

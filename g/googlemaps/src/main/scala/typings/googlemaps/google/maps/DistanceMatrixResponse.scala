@@ -31,8 +31,7 @@ trait DistanceMatrixResponse extends StObject {
 }
 object DistanceMatrixResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destinationAddresses: js.Array[String],
     originAddresses: js.Array[String],
     rows: js.Array[DistanceMatrixResponseRow]
@@ -41,25 +40,18 @@ object DistanceMatrixResponse {
     __obj.asInstanceOf[DistanceMatrixResponse]
   }
   
-  @scala.inline
-  implicit class DistanceMatrixResponseMutableBuilder[Self <: DistanceMatrixResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DistanceMatrixResponse](x: Self) {
     
-    @scala.inline
-    def setDestinationAddresses(value: js.Array[String]): Self = StObject.set(x, "destinationAddresses", value.asInstanceOf[js.Any])
+    inline def setDestinationAddresses(value: js.Array[String]): Self = StObject.set(x, "destinationAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationAddressesVarargs(value: String*): Self = StObject.set(x, "destinationAddresses", js.Array(value :_*))
+    inline def setDestinationAddressesVarargs(value: String*): Self = StObject.set(x, "destinationAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setOriginAddresses(value: js.Array[String]): Self = StObject.set(x, "originAddresses", value.asInstanceOf[js.Any])
+    inline def setOriginAddresses(value: js.Array[String]): Self = StObject.set(x, "originAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginAddressesVarargs(value: String*): Self = StObject.set(x, "originAddresses", js.Array(value :_*))
+    inline def setOriginAddressesVarargs(value: String*): Self = StObject.set(x, "originAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setRows(value: js.Array[DistanceMatrixResponseRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[DistanceMatrixResponseRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: DistanceMatrixResponseRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: DistanceMatrixResponseRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

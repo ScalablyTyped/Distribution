@@ -25,8 +25,7 @@ object addressInputUniDriverMod {
   }
   object AddressInputUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearText: () => js.Promise[Unit],
       click: () => js.Promise[Unit],
       clickAtOption: Double => js.Promise[Unit],
@@ -41,26 +40,19 @@ object addressInputUniDriverMod {
       __obj.asInstanceOf[AddressInputUniDriver]
     }
     
-    @scala.inline
-    implicit class AddressInputUniDriverMutableBuilder[Self <: AddressInputUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: AddressInputUniDriver](x: Self) {
       
-      @scala.inline
-      def setClearText(value: () => js.Promise[Unit]): Self = StObject.set(x, "clearText", js.Any.fromFunction0(value))
+      inline def setClearText(value: () => js.Promise[Unit]): Self = StObject.set(x, "clearText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickAtOption(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickAtOption", js.Any.fromFunction1(value))
+      inline def setClickAtOption(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickAtOption", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickAtOptionWithValue(value: String => js.Promise[Unit]): Self = StObject.set(x, "clickAtOptionWithValue", js.Any.fromFunction1(value))
+      inline def setClickAtOptionWithValue(value: String => js.Promise[Unit]): Self = StObject.set(x, "clickAtOptionWithValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
+      inline def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetInputValue(value: () => js.Promise[String]): Self = StObject.set(x, "getInputValue", js.Any.fromFunction0(value))
+      inline def setGetInputValue(value: () => js.Promise[String]): Self = StObject.set(x, "getInputValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     }
   }
 }

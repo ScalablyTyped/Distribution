@@ -42,66 +42,48 @@ object mod {
   }
   object Command {
     
-    @scala.inline
-    def apply[IsDetached /* <: Boolean */](func: CommandFunction[js.Object] | DetachedCommandFunction[js.Object], name: String): Command[IsDetached] = {
+    inline def apply[IsDetached /* <: Boolean */](func: CommandFunction[js.Object] | DetachedCommandFunction[js.Object], name: String): Command[IsDetached] = {
       val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Command[IsDetached]]
     }
     
-    @scala.inline
-    implicit class CommandMutableBuilder[Self <: Command[?], IsDetached /* <: Boolean */] (val x: Self & Command[IsDetached]) extends AnyVal {
+    extension [Self <: Command[?], IsDetached /* <: Boolean */](x: Self & Command[IsDetached]) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDetached(value: IsDetached): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+      inline def setDetached(value: IsDetached): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+      inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
-      @scala.inline
-      def setExamples(value: js.Array[Cmd]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+      inline def setExamples(value: js.Array[Cmd]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
+      inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
       
-      @scala.inline
-      def setExamplesVarargs(value: Cmd*): Self = StObject.set(x, "examples", js.Array(value :_*))
+      inline def setExamplesVarargs(value: Cmd*): Self = StObject.set(x, "examples", js.Array(value :_*))
       
-      @scala.inline
-      def setFunc(value: CommandFunction[js.Object] | DetachedCommandFunction[js.Object]): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+      inline def setFunc(value: CommandFunction[js.Object] | DetachedCommandFunction[js.Object]): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFuncFunction2(value: (/* argv */ js.Array[String], js.Object) => js.Promise[Unit] | Unit): Self = StObject.set(x, "func", js.Any.fromFunction2(value))
+      inline def setFuncFunction2(value: (/* argv */ js.Array[String], js.Object) => js.Promise[Unit] | Unit): Self = StObject.set(x, "func", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFuncFunction3(value: (/* argv */ js.Array[String], /* ctx */ Config, js.Object) => js.Promise[Unit] | Unit): Self = StObject.set(x, "func", js.Any.fromFunction3(value))
+      inline def setFuncFunction3(value: (/* argv */ js.Array[String], /* ctx */ Config, js.Object) => js.Promise[Unit] | Unit): Self = StObject.set(x, "func", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(
+      inline def setOptions(
         value: js.Array[
               CommandOption[(js.Function1[/* ctx */ Config, OptionValue]) | js.Function0[OptionValue]]
             ]
       ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOptionsVarargs(value: (CommandOption[(js.Function1[/* ctx */ Config, OptionValue]) | js.Function0[OptionValue]])*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (CommandOption[(js.Function1[/* ctx */ Config, OptionValue]) | js.Function0[OptionValue]])*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setPkg(value: Name): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+      inline def setPkg(value: Name): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
+      inline def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
     }
   }
   
@@ -124,35 +106,26 @@ object mod {
   }
   object CommandOption {
     
-    @scala.inline
-    def apply[T](name: String): CommandOption[T] = {
+    inline def apply[T](name: String): CommandOption[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandOption[T]]
     }
     
-    @scala.inline
-    implicit class CommandOptionMutableBuilder[Self <: CommandOption[?], T] (val x: Self & CommandOption[T]) extends AnyVal {
+    extension [Self <: CommandOption[?], T](x: Self & CommandOption[T]) {
       
-      @scala.inline
-      def setDefault(value: OptionValue | T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: OptionValue | T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParse(value: /* val */ String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: /* val */ String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     }
   }
   
@@ -176,8 +149,7 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       assets: js.Array[String],
       commands: js.Array[Command[`false`]],
       dependencies: StringDictionary[Dependency],
@@ -190,32 +162,23 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+      inline def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value :_*))
+      inline def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value :_*))
       
-      @scala.inline
-      def setCommands(value: js.Array[Command[`false`]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      inline def setCommands(value: js.Array[Command[`false`]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandsVarargs(value: Command[`false`]*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: Command[`false`]*): Self = StObject.set(x, "commands", js.Array(value :_*))
       
-      @scala.inline
-      def setDependencies(value: StringDictionary[Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: StringDictionary[Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatforms(value: Dictname): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
+      inline def setPlatforms(value: Dictname): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: ProjectConfig): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: ProjectConfig): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   
@@ -235,8 +198,7 @@ object mod {
   }
   object Dependency {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       assets: js.Array[String],
       hooks: Postlink,
       name: String,
@@ -248,32 +210,23 @@ object mod {
       __obj.asInstanceOf[Dependency]
     }
     
-    @scala.inline
-    implicit class DependencyMutableBuilder[Self <: Dependency] (val x: Self) extends AnyVal {
+    extension [Self <: Dependency](x: Self) {
       
-      @scala.inline
-      def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+      inline def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value :_*))
+      inline def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value :_*))
       
-      @scala.inline
-      def setHooks(value: Postlink): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      inline def setHooks(value: Postlink): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Array[InquirerPrompt]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[InquirerPrompt]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsVarargs(value: InquirerPrompt*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: InquirerPrompt*): Self = StObject.set(x, "params", js.Array(value :_*))
       
-      @scala.inline
-      def setPlatforms(value: Dictkey): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
+      inline def setPlatforms(value: Dictkey): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   
@@ -308,26 +261,20 @@ object mod {
   }
   object ProjectConfig {
     
-    @scala.inline
-    def apply(): ProjectConfig = {
+    inline def apply(): ProjectConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProjectConfig]
     }
     
-    @scala.inline
-    implicit class ProjectConfigMutableBuilder[Self <: ProjectConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ProjectConfig](x: Self) {
       
-      @scala.inline
-      def setAndroid(value: AndroidProjectConfig): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+      inline def setAndroid(value: AndroidProjectConfig): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
+      inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
       
-      @scala.inline
-      def setIos(value: IOSProjectConfig): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+      inline def setIos(value: IOSProjectConfig): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+      inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
     }
   }
   
@@ -348,8 +295,7 @@ object mod {
   }
   object UserConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       assets: js.Array[String],
       commands: js.Array[Command[`false`]],
       dependencies: StringDictionary[Dependency],
@@ -361,32 +307,23 @@ object mod {
       __obj.asInstanceOf[UserConfig]
     }
     
-    @scala.inline
-    implicit class UserConfigMutableBuilder[Self <: UserConfig] (val x: Self) extends AnyVal {
+    extension [Self <: UserConfig](x: Self) {
       
-      @scala.inline
-      def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+      inline def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value :_*))
+      inline def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value :_*))
       
-      @scala.inline
-      def setCommands(value: js.Array[Command[`false`]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      inline def setCommands(value: js.Array[Command[`false`]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandsVarargs(value: Command[`false`]*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: Command[`false`]*): Self = StObject.set(x, "commands", js.Array(value :_*))
       
-      @scala.inline
-      def setDependencies(value: StringDictionary[Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: StringDictionary[Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatforms(value: Dictname): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
+      inline def setPlatforms(value: Dictname): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: ProjectConfig & Android): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: ProjectConfig & Android): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReactNativePath(value: String & (String | Unit)): Self = StObject.set(x, "reactNativePath", value.asInstanceOf[js.Any])
+      inline def setReactNativePath(value: String & (String | Unit)): Self = StObject.set(x, "reactNativePath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -400,26 +337,20 @@ object mod {
   }
   object UserDependencyConfig {
     
-    @scala.inline
-    def apply(commands: js.Array[Command[`false`]], dependency: OmitDependencynameroot, platforms: Dictname): UserDependencyConfig = {
+    inline def apply(commands: js.Array[Command[`false`]], dependency: OmitDependencynameroot, platforms: Dictname): UserDependencyConfig = {
       val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], dependency = dependency.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserDependencyConfig]
     }
     
-    @scala.inline
-    implicit class UserDependencyConfigMutableBuilder[Self <: UserDependencyConfig] (val x: Self) extends AnyVal {
+    extension [Self <: UserDependencyConfig](x: Self) {
       
-      @scala.inline
-      def setCommands(value: js.Array[Command[`false`]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      inline def setCommands(value: js.Array[Command[`false`]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandsVarargs(value: Command[`false`]*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: Command[`false`]*): Self = StObject.set(x, "commands", js.Array(value :_*))
       
-      @scala.inline
-      def setDependency(value: OmitDependencynameroot): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
+      inline def setDependency(value: OmitDependencynameroot): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatforms(value: Dictname): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
+      inline def setPlatforms(value: Dictname): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     }
   }
 }

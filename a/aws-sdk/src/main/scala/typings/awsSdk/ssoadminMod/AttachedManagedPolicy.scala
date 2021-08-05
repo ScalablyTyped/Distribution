@@ -18,25 +18,19 @@ trait AttachedManagedPolicy extends StObject {
 }
 object AttachedManagedPolicy {
   
-  @scala.inline
-  def apply(): AttachedManagedPolicy = {
+  inline def apply(): AttachedManagedPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachedManagedPolicy]
   }
   
-  @scala.inline
-  implicit class AttachedManagedPolicyMutableBuilder[Self <: AttachedManagedPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: AttachedManagedPolicy](x: Self) {
     
-    @scala.inline
-    def setArn(value: ManagedPolicyArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ManagedPolicyArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

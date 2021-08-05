@@ -10,16 +10,13 @@ trait Placeholder extends StObject {
 }
 object Placeholder {
   
-  @scala.inline
-  def apply(placeholder: js.Any): Placeholder = {
+  inline def apply(placeholder: js.Any): Placeholder = {
     val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Placeholder]
   }
   
-  @scala.inline
-  implicit class PlaceholderMutableBuilder[Self <: Placeholder] (val x: Self) extends AnyVal {
+  extension [Self <: Placeholder](x: Self) {
     
-    @scala.inline
-    def setPlaceholder(value: js.Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: js.Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
   }
 }

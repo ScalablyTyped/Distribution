@@ -11,16 +11,13 @@ trait Xml extends StObject {
 }
 object Xml {
   
-  @scala.inline
-  def apply(xml: Node): Xml = {
+  inline def apply(xml: Node): Xml = {
     val __obj = js.Dynamic.literal(xml = xml.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xml]
   }
   
-  @scala.inline
-  implicit class XmlMutableBuilder[Self <: Xml] (val x: Self) extends AnyVal {
+  extension [Self <: Xml](x: Self) {
     
-    @scala.inline
-    def setXml(value: Node): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
+    inline def setXml(value: Node): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
   }
 }

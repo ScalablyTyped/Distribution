@@ -17,8 +17,7 @@ trait XItemListener
 }
 object XItemListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     itemStateChanged: ItemEvent => Unit,
@@ -29,10 +28,8 @@ object XItemListener {
     __obj.asInstanceOf[XItemListener]
   }
   
-  @scala.inline
-  implicit class XItemListenerMutableBuilder[Self <: XItemListener] (val x: Self) extends AnyVal {
+  extension [Self <: XItemListener](x: Self) {
     
-    @scala.inline
-    def setItemStateChanged(value: ItemEvent => Unit): Self = StObject.set(x, "itemStateChanged", js.Any.fromFunction1(value))
+    inline def setItemStateChanged(value: ItemEvent => Unit): Self = StObject.set(x, "itemStateChanged", js.Any.fromFunction1(value))
   }
 }

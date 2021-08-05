@@ -23,25 +23,19 @@ trait INxTreeDataOption extends StObject {
 }
 object INxTreeDataOption {
   
-  @scala.inline
-  def apply(MaxNbrOfNodes: Double, TreeLevels: INxPageTreeLevel, TreeNodes: js.Array[INxPageTreeNode]): INxTreeDataOption = {
+  inline def apply(MaxNbrOfNodes: Double, TreeLevels: INxPageTreeLevel, TreeNodes: js.Array[INxPageTreeNode]): INxTreeDataOption = {
     val __obj = js.Dynamic.literal(MaxNbrOfNodes = MaxNbrOfNodes.asInstanceOf[js.Any], TreeLevels = TreeLevels.asInstanceOf[js.Any], TreeNodes = TreeNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxTreeDataOption]
   }
   
-  @scala.inline
-  implicit class INxTreeDataOptionMutableBuilder[Self <: INxTreeDataOption] (val x: Self) extends AnyVal {
+  extension [Self <: INxTreeDataOption](x: Self) {
     
-    @scala.inline
-    def setMaxNbrOfNodes(value: Double): Self = StObject.set(x, "MaxNbrOfNodes", value.asInstanceOf[js.Any])
+    inline def setMaxNbrOfNodes(value: Double): Self = StObject.set(x, "MaxNbrOfNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeLevels(value: INxPageTreeLevel): Self = StObject.set(x, "TreeLevels", value.asInstanceOf[js.Any])
+    inline def setTreeLevels(value: INxPageTreeLevel): Self = StObject.set(x, "TreeLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeNodes(value: js.Array[INxPageTreeNode]): Self = StObject.set(x, "TreeNodes", value.asInstanceOf[js.Any])
+    inline def setTreeNodes(value: js.Array[INxPageTreeNode]): Self = StObject.set(x, "TreeNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeNodesVarargs(value: INxPageTreeNode*): Self = StObject.set(x, "TreeNodes", js.Array(value :_*))
+    inline def setTreeNodesVarargs(value: INxPageTreeNode*): Self = StObject.set(x, "TreeNodes", js.Array(value :_*))
   }
 }

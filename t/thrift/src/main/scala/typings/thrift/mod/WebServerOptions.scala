@@ -12,16 +12,13 @@ trait WebServerOptions[TProcessor, THandler] extends StObject {
 }
 object WebServerOptions {
   
-  @scala.inline
-  def apply[TProcessor, THandler](services: StringDictionary[Handler[TProcessor, THandler]]): WebServerOptions[TProcessor, THandler] = {
+  inline def apply[TProcessor, THandler](services: StringDictionary[Handler[TProcessor, THandler]]): WebServerOptions[TProcessor, THandler] = {
     val __obj = js.Dynamic.literal(services = services.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebServerOptions[TProcessor, THandler]]
   }
   
-  @scala.inline
-  implicit class WebServerOptionsMutableBuilder[Self <: WebServerOptions[?, ?], TProcessor, THandler] (val x: Self & (WebServerOptions[TProcessor, THandler])) extends AnyVal {
+  extension [Self <: WebServerOptions[?, ?], TProcessor, THandler](x: Self & (WebServerOptions[TProcessor, THandler])) {
     
-    @scala.inline
-    def setServices(value: StringDictionary[Handler[TProcessor, THandler]]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: StringDictionary[Handler[TProcessor, THandler]]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
   }
 }

@@ -53,70 +53,49 @@ trait TransformFilterCriteria extends StObject {
 }
 object TransformFilterCriteria {
   
-  @scala.inline
-  def apply(): TransformFilterCriteria = {
+  inline def apply(): TransformFilterCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransformFilterCriteria]
   }
   
-  @scala.inline
-  implicit class TransformFilterCriteriaMutableBuilder[Self <: TransformFilterCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: TransformFilterCriteria](x: Self) {
     
-    @scala.inline
-    def setCreatedAfter(value: Timestamp): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
+    inline def setCreatedAfter(value: Timestamp): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAfterUndefined: Self = StObject.set(x, "CreatedAfter", js.undefined)
+    inline def setCreatedAfterUndefined: Self = StObject.set(x, "CreatedAfter", js.undefined)
     
-    @scala.inline
-    def setCreatedBefore(value: Timestamp): Self = StObject.set(x, "CreatedBefore", value.asInstanceOf[js.Any])
+    inline def setCreatedBefore(value: Timestamp): Self = StObject.set(x, "CreatedBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedBeforeUndefined: Self = StObject.set(x, "CreatedBefore", js.undefined)
+    inline def setCreatedBeforeUndefined: Self = StObject.set(x, "CreatedBefore", js.undefined)
     
-    @scala.inline
-    def setGlueVersion(value: GlueVersionString): Self = StObject.set(x, "GlueVersion", value.asInstanceOf[js.Any])
+    inline def setGlueVersion(value: GlueVersionString): Self = StObject.set(x, "GlueVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlueVersionUndefined: Self = StObject.set(x, "GlueVersion", js.undefined)
+    inline def setGlueVersionUndefined: Self = StObject.set(x, "GlueVersion", js.undefined)
     
-    @scala.inline
-    def setLastModifiedAfter(value: Timestamp): Self = StObject.set(x, "LastModifiedAfter", value.asInstanceOf[js.Any])
+    inline def setLastModifiedAfter(value: Timestamp): Self = StObject.set(x, "LastModifiedAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedAfterUndefined: Self = StObject.set(x, "LastModifiedAfter", js.undefined)
+    inline def setLastModifiedAfterUndefined: Self = StObject.set(x, "LastModifiedAfter", js.undefined)
     
-    @scala.inline
-    def setLastModifiedBefore(value: Timestamp): Self = StObject.set(x, "LastModifiedBefore", value.asInstanceOf[js.Any])
+    inline def setLastModifiedBefore(value: Timestamp): Self = StObject.set(x, "LastModifiedBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedBeforeUndefined: Self = StObject.set(x, "LastModifiedBefore", js.undefined)
+    inline def setLastModifiedBeforeUndefined: Self = StObject.set(x, "LastModifiedBefore", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSchema(value: TransformSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: TransformSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
     
-    @scala.inline
-    def setSchemaVarargs(value: SchemaColumn*): Self = StObject.set(x, "Schema", js.Array(value :_*))
+    inline def setSchemaVarargs(value: SchemaColumn*): Self = StObject.set(x, "Schema", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: TransformStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TransformStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTransformType(value: TransformType): Self = StObject.set(x, "TransformType", value.asInstanceOf[js.Any])
+    inline def setTransformType(value: TransformType): Self = StObject.set(x, "TransformType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformTypeUndefined: Self = StObject.set(x, "TransformType", js.undefined)
+    inline def setTransformTypeUndefined: Self = StObject.set(x, "TransformType", js.undefined)
   }
 }

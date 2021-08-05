@@ -10,19 +10,15 @@ trait MuiTheme extends StObject {
 }
 object MuiTheme {
   
-  @scala.inline
-  def apply(): MuiTheme = {
+  inline def apply(): MuiTheme = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MuiTheme]
   }
   
-  @scala.inline
-  implicit class MuiThemeMutableBuilder[Self <: MuiTheme] (val x: Self) extends AnyVal {
+  extension [Self <: MuiTheme](x: Self) {
     
-    @scala.inline
-    def setMuiTheme(value: typings.materialUi.MaterialUI.Styles.MuiTheme): Self = StObject.set(x, "muiTheme", value.asInstanceOf[js.Any])
+    inline def setMuiTheme(value: typings.materialUi.MaterialUI.Styles.MuiTheme): Self = StObject.set(x, "muiTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMuiThemeUndefined: Self = StObject.set(x, "muiTheme", js.undefined)
+    inline def setMuiThemeUndefined: Self = StObject.set(x, "muiTheme", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DescribeOfferingRequest extends StObject {
 }
 object DescribeOfferingRequest {
   
-  @scala.inline
-  def apply(OfferingArn: string): DescribeOfferingRequest = {
+  inline def apply(OfferingArn: string): DescribeOfferingRequest = {
     val __obj = js.Dynamic.literal(OfferingArn = OfferingArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOfferingRequest]
   }
   
-  @scala.inline
-  implicit class DescribeOfferingRequestMutableBuilder[Self <: DescribeOfferingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOfferingRequest](x: Self) {
     
-    @scala.inline
-    def setOfferingArn(value: string): Self = StObject.set(x, "OfferingArn", value.asInstanceOf[js.Any])
+    inline def setOfferingArn(value: string): Self = StObject.set(x, "OfferingArn", value.asInstanceOf[js.Any])
   }
 }

@@ -12,17 +12,14 @@ trait GoBackAction
 }
 object GoBackAction {
   
-  @scala.inline
-  def apply(`type`: /* "ROUTER_GO_BACK" */ String): GoBackAction = {
+  inline def apply(`type`: /* "ROUTER_GO_BACK" */ String): GoBackAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoBackAction]
   }
   
-  @scala.inline
-  implicit class GoBackActionMutableBuilder[Self <: GoBackAction] (val x: Self) extends AnyVal {
+  extension [Self <: GoBackAction](x: Self) {
     
-    @scala.inline
-    def setType(value: /* "ROUTER_GO_BACK" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: /* "ROUTER_GO_BACK" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -87,91 +87,63 @@ trait RenewAuthOptions extends StObject {
 }
 object RenewAuthOptions {
   
-  @scala.inline
-  def apply(): RenewAuthOptions = {
+  inline def apply(): RenewAuthOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenewAuthOptions]
   }
   
-  @scala.inline
-  implicit class RenewAuthOptionsMutableBuilder[Self <: RenewAuthOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RenewAuthOptions](x: Self) {
     
-    @scala.inline
-    def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+    inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
-    @scala.inline
-    def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+    inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
+    inline def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
-    @scala.inline
-    def setPostMessageDataType(value: String): Self = StObject.set(x, "postMessageDataType", value.asInstanceOf[js.Any])
+    inline def setPostMessageDataType(value: String): Self = StObject.set(x, "postMessageDataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostMessageDataTypeUndefined: Self = StObject.set(x, "postMessageDataType", js.undefined)
+    inline def setPostMessageDataTypeUndefined: Self = StObject.set(x, "postMessageDataType", js.undefined)
     
-    @scala.inline
-    def setPostMessageOrigin(value: String): Self = StObject.set(x, "postMessageOrigin", value.asInstanceOf[js.Any])
+    inline def setPostMessageOrigin(value: String): Self = StObject.set(x, "postMessageOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostMessageOriginUndefined: Self = StObject.set(x, "postMessageOrigin", js.undefined)
+    inline def setPostMessageOriginUndefined: Self = StObject.set(x, "postMessageOrigin", js.undefined)
     
-    @scala.inline
-    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+    inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
     
-    @scala.inline
-    def setResponseMode(value: String): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
+    inline def setResponseMode(value: String): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
+    inline def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
     
-    @scala.inline
-    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUsePostMessage(value: Boolean): Self = StObject.set(x, "usePostMessage", value.asInstanceOf[js.Any])
+    inline def setUsePostMessage(value: Boolean): Self = StObject.set(x, "usePostMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePostMessageUndefined: Self = StObject.set(x, "usePostMessage", js.undefined)
+    inline def setUsePostMessageUndefined: Self = StObject.set(x, "usePostMessage", js.undefined)
   }
 }

@@ -14,28 +14,21 @@ trait ListNotesResponse extends StObject {
 }
 object ListNotesResponse {
   
-  @scala.inline
-  def apply(): ListNotesResponse = {
+  inline def apply(): ListNotesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNotesResponse]
   }
   
-  @scala.inline
-  implicit class ListNotesResponseMutableBuilder[Self <: ListNotesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListNotesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setNotes(value: js.Array[Note]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: js.Array[Note]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    @scala.inline
-    def setNotesVarargs(value: Note*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: Note*): Self = StObject.set(x, "notes", js.Array(value :_*))
   }
 }

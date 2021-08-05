@@ -18,19 +18,15 @@ trait ContinueAsNewWorkflowExecutionFailedEventAttributes extends StObject {
 }
 object ContinueAsNewWorkflowExecutionFailedEventAttributes {
   
-  @scala.inline
-  def apply(cause: ContinueAsNewWorkflowExecutionFailedCause, decisionTaskCompletedEventId: EventId): ContinueAsNewWorkflowExecutionFailedEventAttributes = {
+  inline def apply(cause: ContinueAsNewWorkflowExecutionFailedCause, decisionTaskCompletedEventId: EventId): ContinueAsNewWorkflowExecutionFailedEventAttributes = {
     val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinueAsNewWorkflowExecutionFailedEventAttributes]
   }
   
-  @scala.inline
-  implicit class ContinueAsNewWorkflowExecutionFailedEventAttributesMutableBuilder[Self <: ContinueAsNewWorkflowExecutionFailedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ContinueAsNewWorkflowExecutionFailedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setCause(value: ContinueAsNewWorkflowExecutionFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: ContinueAsNewWorkflowExecutionFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
   }
 }

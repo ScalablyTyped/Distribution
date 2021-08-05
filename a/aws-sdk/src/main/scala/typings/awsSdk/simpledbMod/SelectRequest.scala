@@ -23,28 +23,21 @@ trait SelectRequest extends StObject {
 }
 object SelectRequest {
   
-  @scala.inline
-  def apply(SelectExpression: String): SelectRequest = {
+  inline def apply(SelectExpression: String): SelectRequest = {
     val __obj = js.Dynamic.literal(SelectExpression = SelectExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectRequest]
   }
   
-  @scala.inline
-  implicit class SelectRequestMutableBuilder[Self <: SelectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SelectRequest](x: Self) {
     
-    @scala.inline
-    def setConsistentRead(value: Boolean): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
+    inline def setConsistentRead(value: Boolean): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
+    inline def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSelectExpression(value: String): Self = StObject.set(x, "SelectExpression", value.asInstanceOf[js.Any])
+    inline def setSelectExpression(value: String): Self = StObject.set(x, "SelectExpression", value.asInstanceOf[js.Any])
   }
 }

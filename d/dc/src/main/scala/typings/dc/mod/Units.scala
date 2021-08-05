@@ -41,8 +41,7 @@ trait Units extends StObject {
 }
 object Units {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fp: FloatPointUnits,
     integers: (/* start */ Double | Date, /* end */ Double | Date, /* domain */ js.UndefOr[Double | js.Array[String]]) => Double | (js.Array[Double | Date | String]),
     ordinal: (/* start */ Double | Date, /* end */ Double | Date, /* domain */ js.UndefOr[Double | js.Array[String]]) => Double | (js.Array[Double | Date | String])
@@ -51,19 +50,15 @@ object Units {
     __obj.asInstanceOf[Units]
   }
   
-  @scala.inline
-  implicit class UnitsMutableBuilder[Self <: Units] (val x: Self) extends AnyVal {
+  extension [Self <: Units](x: Self) {
     
-    @scala.inline
-    def setFp(value: FloatPointUnits): Self = StObject.set(x, "fp", value.asInstanceOf[js.Any])
+    inline def setFp(value: FloatPointUnits): Self = StObject.set(x, "fp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegers(
+    inline def setIntegers(
       value: (/* start */ Double | Date, /* end */ Double | Date, /* domain */ js.UndefOr[Double | js.Array[String]]) => Double | (js.Array[Double | Date | String])
     ): Self = StObject.set(x, "integers", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOrdinal(
+    inline def setOrdinal(
       value: (/* start */ Double | Date, /* end */ Double | Date, /* domain */ js.UndefOr[Double | js.Array[String]]) => Double | (js.Array[Double | Date | String])
     ): Self = StObject.set(x, "ordinal", js.Any.fromFunction3(value))
   }

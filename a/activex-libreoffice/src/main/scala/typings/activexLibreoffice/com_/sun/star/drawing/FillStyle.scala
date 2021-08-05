@@ -21,16 +21,13 @@ trait FillStyle extends StObject
 object FillStyle {
   
   /** use a bitmap to fill the area. */
-  @scala.inline
-  def BITMAP: `4` = 4.asInstanceOf[`4`]
+  inline def BITMAP: `4` = 4.asInstanceOf[`4`]
   
   /** use a gradient color to fill the area. */
-  @scala.inline
-  def GRADIENT: `2` = 2.asInstanceOf[`2`]
+  inline def GRADIENT: `2` = 2.asInstanceOf[`2`]
   
   /** use a hatch to fill the area. */
-  @scala.inline
-  def HATCH: `3` = 3.asInstanceOf[`3`]
+  inline def HATCH: `3` = 3.asInstanceOf[`3`]
   
   /**
     * the area is not filled.
@@ -45,14 +42,12 @@ object FillStyle {
     *
     * the text size is only defined by the font properties
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /**
     * use a solid color to fill the area.
     *
     * the line is solid.
     */
-  @scala.inline
-  def SOLID: `1` = 1.asInstanceOf[`1`]
+  inline def SOLID: `1` = 1.asInstanceOf[`1`]
 }

@@ -13,19 +13,15 @@ trait CreateNetworkInterfacePermissionResult extends StObject {
 }
 object CreateNetworkInterfacePermissionResult {
   
-  @scala.inline
-  def apply(): CreateNetworkInterfacePermissionResult = {
+  inline def apply(): CreateNetworkInterfacePermissionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNetworkInterfacePermissionResult]
   }
   
-  @scala.inline
-  implicit class CreateNetworkInterfacePermissionResultMutableBuilder[Self <: CreateNetworkInterfacePermissionResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNetworkInterfacePermissionResult](x: Self) {
     
-    @scala.inline
-    def setInterfacePermission(value: NetworkInterfacePermission): Self = StObject.set(x, "InterfacePermission", value.asInstanceOf[js.Any])
+    inline def setInterfacePermission(value: NetworkInterfacePermission): Self = StObject.set(x, "InterfacePermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfacePermissionUndefined: Self = StObject.set(x, "InterfacePermission", js.undefined)
+    inline def setInterfacePermissionUndefined: Self = StObject.set(x, "InterfacePermission", js.undefined)
   }
 }

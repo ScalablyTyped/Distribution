@@ -18,19 +18,15 @@ trait PartRequestBody extends StObject {
 }
 object PartRequestBody {
   
-  @scala.inline
-  def apply(RequestBody: String, part: String): PartRequestBody = {
+  inline def apply(RequestBody: String, part: String): PartRequestBody = {
     val __obj = js.Dynamic.literal(RequestBody = RequestBody.asInstanceOf[js.Any], part = part.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartRequestBody]
   }
   
-  @scala.inline
-  implicit class PartRequestBodyMutableBuilder[Self <: PartRequestBody] (val x: Self) extends AnyVal {
+  extension [Self <: PartRequestBody](x: Self) {
     
-    @scala.inline
-    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBody(value: String): Self = StObject.set(x, "RequestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: String): Self = StObject.set(x, "RequestBody", value.asInstanceOf[js.Any])
   }
 }

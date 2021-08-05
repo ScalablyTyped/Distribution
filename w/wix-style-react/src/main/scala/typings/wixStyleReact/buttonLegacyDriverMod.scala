@@ -31,8 +31,7 @@ object buttonLegacyDriverMod {
   }
   object buttonDriverFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blur: () => Unit,
       click: () => Unit,
       exists: () => Boolean,
@@ -48,35 +47,25 @@ object buttonLegacyDriverMod {
       __obj.asInstanceOf[buttonDriverFactory]
     }
     
-    @scala.inline
-    implicit class buttonDriverFactoryMutableBuilder[Self <: buttonDriverFactory] (val x: Self) extends AnyVal {
+    extension [Self <: buttonDriverFactory](x: Self) {
       
-      @scala.inline
-      def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+      inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetButtonTextContent(value: () => String): Self = StObject.set(x, "getButtonTextContent", js.Any.fromFunction0(value))
+      inline def setGetButtonTextContent(value: () => String): Self = StObject.set(x, "getButtonTextContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsButtonDisabled(value: () => Boolean): Self = StObject.set(x, "isButtonDisabled", js.Any.fromFunction0(value))
+      inline def setIsButtonDisabled(value: () => Boolean): Self = StObject.set(x, "isButtonDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPrefixIconExists(value: () => Boolean): Self = StObject.set(x, "isPrefixIconExists", js.Any.fromFunction0(value))
+      inline def setIsPrefixIconExists(value: () => Boolean): Self = StObject.set(x, "isPrefixIconExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSuffixIconExists(value: () => Boolean): Self = StObject.set(x, "isSuffixIconExists", js.Any.fromFunction0(value))
+      inline def setIsSuffixIconExists(value: () => Boolean): Self = StObject.set(x, "isSuffixIconExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMouseEnter(value: () => Unit): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
+      inline def setMouseEnter(value: () => Unit): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMouseLeave(value: () => Unit): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
+      inline def setMouseLeave(value: () => Unit): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
     }
   }
 }

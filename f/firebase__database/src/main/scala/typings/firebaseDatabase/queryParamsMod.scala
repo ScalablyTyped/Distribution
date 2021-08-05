@@ -17,7 +17,7 @@ object queryParamsMod {
       * @return {!QueryParams}
       * @private
       */
-    var copy_ : js.Any = js.native
+    /* private */ var copy_ : js.Any = js.native
     
     /**
       * @param {*} indexValue
@@ -27,9 +27,9 @@ object queryParamsMod {
     def endAt(indexValue: js.Any): QueryParams = js.native
     def endAt(indexValue: js.Any, key: String): QueryParams = js.native
     
-    var endNameSet_ : js.Any = js.native
+    /* private */ var endNameSet_ : js.Any = js.native
     
-    var endSet_ : js.Any = js.native
+    /* private */ var endSet_ : js.Any = js.native
     
     /**
       * @return {!Index}
@@ -98,15 +98,15 @@ object queryParamsMod {
       */
     def hasStart(): Boolean = js.native
     
-    var indexEndName_ : js.Any = js.native
+    /* private */ var indexEndName_ : js.Any = js.native
     
-    var indexEndValue_ : js.Any = js.native
+    /* private */ var indexEndValue_ : js.Any = js.native
     
-    var indexStartName_ : js.Any = js.native
+    /* private */ var indexStartName_ : js.Any = js.native
     
-    var indexStartValue_ : js.Any = js.native
+    /* private */ var indexStartValue_ : js.Any = js.native
     
-    var index_ : js.Any = js.native
+    /* private */ var index_ : js.Any = js.native
     
     /**
       * @return {boolean}
@@ -124,7 +124,7 @@ object queryParamsMod {
       */
     def limit(newLimit: Double): QueryParams = js.native
     
-    var limitSet_ : js.Any = js.native
+    /* private */ var limitSet_ : js.Any = js.native
     
     /**
       * @param {!number} newLimit
@@ -138,7 +138,7 @@ object queryParamsMod {
       */
     def limitToLast(newLimit: Double): QueryParams = js.native
     
-    var limit_ : js.Any = js.native
+    /* private */ var limit_ : js.Any = js.native
     
     /**
       * @return {boolean}
@@ -159,9 +159,9 @@ object queryParamsMod {
     def startAt(indexValue: js.Any): QueryParams = js.native
     def startAt(indexValue: js.Any, key: String): QueryParams = js.native
     
-    var startNameSet_ : js.Any = js.native
+    /* private */ var startNameSet_ : js.Any = js.native
     
-    var startSet_ : js.Any = js.native
+    /* private */ var startSet_ : js.Any = js.native
     
     /**
       * Returns a set of REST query string parameters representing this query.
@@ -170,7 +170,7 @@ object queryParamsMod {
       */
     def toRestQueryStringParameters(): StringDictionary[String | Double] = js.native
     
-    var viewFrom_ : js.Any = js.native
+    /* private */ var viewFrom_ : js.Any = js.native
   }
   /* static members */
   object QueryParams {

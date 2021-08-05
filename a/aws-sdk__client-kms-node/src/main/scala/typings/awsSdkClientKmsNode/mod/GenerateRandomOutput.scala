@@ -10,8 +10,7 @@ trait GenerateRandomOutput
      with typings.awsSdkClientKmsNode.typesGenerateRandomOutputMod.GenerateRandomOutput
 object GenerateRandomOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GenerateRandomOutput = {
+  inline def apply($metadata: ResponseMetadata): GenerateRandomOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateRandomOutput]
   }

@@ -11,19 +11,15 @@ trait RelationshipDetails extends StObject {
 }
 object RelationshipDetails {
   
-  @scala.inline
-  def apply(): RelationshipDetails = {
+  inline def apply(): RelationshipDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelationshipDetails]
   }
   
-  @scala.inline
-  implicit class RelationshipDetailsMutableBuilder[Self <: RelationshipDetails] (val x: Self) extends AnyVal {
+  extension [Self <: RelationshipDetails](x: Self) {
     
-    @scala.inline
-    def setLinkedTable(value: String): Self = StObject.set(x, "linkedTable", value.asInstanceOf[js.Any])
+    inline def setLinkedTable(value: String): Self = StObject.set(x, "linkedTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedTableUndefined: Self = StObject.set(x, "linkedTable", js.undefined)
+    inline def setLinkedTableUndefined: Self = StObject.set(x, "linkedTable", js.undefined)
   }
 }

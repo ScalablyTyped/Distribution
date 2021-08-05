@@ -28,17 +28,14 @@ object webHooksMod {
   }
   object Event {
     
-    @scala.inline
-    def apply(action: String): Event = {
+    inline def apply(action: String): Event = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,20 +50,16 @@ object webHooksMod {
   }
   object IssueAssignedEvent {
     
-    @scala.inline
-    def apply(action: assigned | unassigned, assignee: UserSummary, issue: Issue): IssueAssignedEvent = {
+    inline def apply(action: assigned | unassigned, assignee: UserSummary, issue: Issue): IssueAssignedEvent = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], assignee = assignee.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any])
       __obj.asInstanceOf[IssueAssignedEvent]
     }
     
-    @scala.inline
-    implicit class IssueAssignedEventMutableBuilder[Self <: IssueAssignedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IssueAssignedEvent](x: Self) {
       
-      @scala.inline
-      def setAction(value: assigned | unassigned): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: assigned | unassigned): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignee(value: UserSummary): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+      inline def setAssignee(value: UserSummary): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,20 +74,16 @@ object webHooksMod {
   }
   object IssueEditedEvent {
     
-    @scala.inline
-    def apply(changes: Body, issue: Issue): IssueEditedEvent = {
+    inline def apply(changes: Body, issue: Issue): IssueEditedEvent = {
       val __obj = js.Dynamic.literal(action = "edited", changes = changes.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any])
       __obj.asInstanceOf[IssueEditedEvent]
     }
     
-    @scala.inline
-    implicit class IssueEditedEventMutableBuilder[Self <: IssueEditedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IssueEditedEvent](x: Self) {
       
-      @scala.inline
-      def setAction(value: edited): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: edited): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChanges(value: Body): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+      inline def setChanges(value: Body): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,8 +98,7 @@ object webHooksMod {
   }
   object IssueEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: assigned | unassigned | labeled | unlabeled | opened | edited | milestoned | demilestoned | closed | reopened,
       issue: Issue
     ): IssueEvent = {
@@ -118,16 +106,13 @@ object webHooksMod {
       __obj.asInstanceOf[IssueEvent]
     }
     
-    @scala.inline
-    implicit class IssueEventMutableBuilder[Self <: IssueEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IssueEvent](x: Self) {
       
-      @scala.inline
-      def setAction(
+      inline def setAction(
         value: assigned | unassigned | labeled | unlabeled | opened | edited | milestoned | demilestoned | closed | reopened
       ): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssue(value: Issue): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+      inline def setIssue(value: Issue): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,20 +127,16 @@ object webHooksMod {
   }
   object IssueLabeledEvent {
     
-    @scala.inline
-    def apply(action: labeled | unlabeled, issue: Issue, label: Label): IssueLabeledEvent = {
+    inline def apply(action: labeled | unlabeled, issue: Issue, label: Label): IssueLabeledEvent = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[IssueLabeledEvent]
     }
     
-    @scala.inline
-    implicit class IssueLabeledEventMutableBuilder[Self <: IssueLabeledEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IssueLabeledEvent](x: Self) {
       
-      @scala.inline
-      def setAction(value: labeled | unlabeled): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: labeled | unlabeled): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   
@@ -173,8 +154,7 @@ object webHooksMod {
   }
   object IssueWebHookData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: assigned | unassigned | labeled | unlabeled | opened | edited | milestoned | demilestoned | closed | reopened,
       issue: Issue,
       sender: UserSummary
@@ -183,23 +163,17 @@ object webHooksMod {
       __obj.asInstanceOf[IssueWebHookData]
     }
     
-    @scala.inline
-    implicit class IssueWebHookDataMutableBuilder[Self <: IssueWebHookData] (val x: Self) extends AnyVal {
+    extension [Self <: IssueWebHookData](x: Self) {
       
-      @scala.inline
-      def setOrganization(value: OrganizationSummary): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+      inline def setOrganization(value: OrganizationSummary): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
+      inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
       
-      @scala.inline
-      def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+      inline def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+      inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
       
-      @scala.inline
-      def setSender(value: UserSummary): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      inline def setSender(value: UserSummary): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     }
   }
   
@@ -215,29 +189,22 @@ object webHooksMod {
   }
   object WebHookData {
     
-    @scala.inline
-    def apply(action: String, sender: UserSummary): WebHookData = {
+    inline def apply(action: String, sender: UserSummary): WebHookData = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebHookData]
     }
     
-    @scala.inline
-    implicit class WebHookDataMutableBuilder[Self <: WebHookData] (val x: Self) extends AnyVal {
+    extension [Self <: WebHookData](x: Self) {
       
-      @scala.inline
-      def setOrganization(value: OrganizationSummary): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+      inline def setOrganization(value: OrganizationSummary): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
+      inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
       
-      @scala.inline
-      def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+      inline def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+      inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
       
-      @scala.inline
-      def setSender(value: UserSummary): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      inline def setSender(value: UserSummary): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     }
   }
 }

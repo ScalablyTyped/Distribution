@@ -20,25 +20,19 @@ trait CreateAnimationOptions extends StObject {
 }
 object CreateAnimationOptions {
   
-  @scala.inline
-  def apply(delay: Double, duration: Double, timeFunction: TimingFunction, transformOrigin: String): CreateAnimationOptions = {
+  inline def apply(delay: Double, duration: Double, timeFunction: TimingFunction, transformOrigin: String): CreateAnimationOptions = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], timeFunction = timeFunction.asInstanceOf[js.Any], transformOrigin = transformOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAnimationOptions]
   }
   
-  @scala.inline
-  implicit class CreateAnimationOptionsMutableBuilder[Self <: CreateAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeFunction(value: TimingFunction): Self = StObject.set(x, "timeFunction", value.asInstanceOf[js.Any])
+    inline def setTimeFunction(value: TimingFunction): Self = StObject.set(x, "timeFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
+    inline def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
   }
 }

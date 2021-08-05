@@ -20,31 +20,23 @@ trait S3OutputFormatConfig extends StObject {
 }
 object S3OutputFormatConfig {
   
-  @scala.inline
-  def apply(): S3OutputFormatConfig = {
+  inline def apply(): S3OutputFormatConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3OutputFormatConfig]
   }
   
-  @scala.inline
-  implicit class S3OutputFormatConfigMutableBuilder[Self <: S3OutputFormatConfig] (val x: Self) extends AnyVal {
+  extension [Self <: S3OutputFormatConfig](x: Self) {
     
-    @scala.inline
-    def setAggregationConfig(value: AggregationConfig): Self = StObject.set(x, "aggregationConfig", value.asInstanceOf[js.Any])
+    inline def setAggregationConfig(value: AggregationConfig): Self = StObject.set(x, "aggregationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationConfigUndefined: Self = StObject.set(x, "aggregationConfig", js.undefined)
+    inline def setAggregationConfigUndefined: Self = StObject.set(x, "aggregationConfig", js.undefined)
     
-    @scala.inline
-    def setFileType(value: FileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    inline def setFileType(value: FileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+    inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
-    @scala.inline
-    def setPrefixConfig(value: PrefixConfig): Self = StObject.set(x, "prefixConfig", value.asInstanceOf[js.Any])
+    inline def setPrefixConfig(value: PrefixConfig): Self = StObject.set(x, "prefixConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixConfigUndefined: Self = StObject.set(x, "prefixConfig", js.undefined)
+    inline def setPrefixConfigUndefined: Self = StObject.set(x, "prefixConfig", js.undefined)
   }
 }

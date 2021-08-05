@@ -10,6 +10,5 @@ object enumerableDecoratorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Enumerable(value: Boolean): js.Function2[/* target */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Enumerable")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
+  inline def Enumerable(value: Boolean): js.Function2[/* target */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Enumerable")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
 }

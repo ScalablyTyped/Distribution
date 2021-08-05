@@ -10,16 +10,13 @@ trait ThumbStyle extends StObject {
 }
 object ThumbStyle {
   
-  @scala.inline
-  def apply(prefixCls: String): ThumbStyle = {
+  inline def apply(prefixCls: String): ThumbStyle = {
     val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbStyle]
   }
   
-  @scala.inline
-  implicit class ThumbStyleMutableBuilder[Self <: ThumbStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ThumbStyle](x: Self) {
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
   }
 }

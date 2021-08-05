@@ -14,25 +14,19 @@ trait ContentMatcher extends StObject {
 }
 object ContentMatcher {
   
-  @scala.inline
-  def apply(): ContentMatcher = {
+  inline def apply(): ContentMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentMatcher]
   }
   
-  @scala.inline
-  implicit class ContentMatcherMutableBuilder[Self <: ContentMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: ContentMatcher](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setMatcher(value: String): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
+    inline def setMatcher(value: String): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
+    inline def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
   }
 }

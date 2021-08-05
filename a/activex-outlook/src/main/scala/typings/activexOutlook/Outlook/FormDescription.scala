@@ -37,7 +37,7 @@ trait FormDescription extends StObject {
   
   var OneOff: Boolean = js.native
   
-  @JSName("Outlook.FormDescription_typekey")
+  /* private */ @JSName("Outlook.FormDescription_typekey")
   var OutlookDotFormDescription_typekey: FormDescription = js.native
   
   val Parent: js.Any = js.native

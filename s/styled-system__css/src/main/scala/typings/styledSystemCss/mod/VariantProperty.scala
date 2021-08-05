@@ -33,16 +33,13 @@ trait VariantProperty
 }
 object VariantProperty {
   
-  @scala.inline
-  def apply(variant: String): VariantProperty = {
+  inline def apply(variant: String): VariantProperty = {
     val __obj = js.Dynamic.literal(variant = variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariantProperty]
   }
   
-  @scala.inline
-  implicit class VariantPropertyMutableBuilder[Self <: VariantProperty] (val x: Self) extends AnyVal {
+  extension [Self <: VariantProperty](x: Self) {
     
-    @scala.inline
-    def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
   }
 }

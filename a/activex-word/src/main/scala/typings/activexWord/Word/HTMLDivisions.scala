@@ -22,6 +22,6 @@ trait HTMLDivisions extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.HTMLDivisions_typekey")
+  /* private */ @JSName("Word.HTMLDivisions_typekey")
   var WordDotHTMLDivisions_typekey: HTMLDivisions = js.native
 }

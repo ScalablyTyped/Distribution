@@ -15,17 +15,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(json = true)
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,29 +36,22 @@ object anon {
   }
   object Der {
     
-    @scala.inline
-    def apply(der: Uint8Array): Der = {
+    inline def apply(der: Uint8Array): Der = {
       val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any])
       __obj.asInstanceOf[Der]
     }
     
-    @scala.inline
-    implicit class DerMutableBuilder[Self <: Der] (val x: Self) extends AnyVal {
+    extension [Self <: Der](x: Self) {
       
-      @scala.inline
-      def setDer(value: Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
+      inline def setDer(value: Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: `false`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: `false`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -75,26 +65,20 @@ object anon {
   }
   object DerJson {
     
-    @scala.inline
-    def apply(der: Uint8Array): DerJson = {
+    inline def apply(der: Uint8Array): DerJson = {
       val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any], verbose = true)
       __obj.asInstanceOf[DerJson]
     }
     
-    @scala.inline
-    implicit class DerJsonMutableBuilder[Self <: DerJson] (val x: Self) extends AnyVal {
+    extension [Self <: DerJson](x: Self) {
       
-      @scala.inline
-      def setDer(value: Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
+      inline def setDer(value: Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: `true`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: `true`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,20 +88,16 @@ object anon {
   }
   object Json {
     
-    @scala.inline
-    def apply(): Json = {
+    inline def apply(): Json = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Json]
     }
     
-    @scala.inline
-    implicit class JsonMutableBuilder[Self <: Json] (val x: Self) extends AnyVal {
+    extension [Self <: Json](x: Self) {
       
-      @scala.inline
-      def setJson(value: `false`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: `false`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     }
   }
   
@@ -131,23 +111,18 @@ object anon {
   }
   object JsonVerbose {
     
-    @scala.inline
-    def apply(der: Uint8Array): JsonVerbose = {
+    inline def apply(der: Uint8Array): JsonVerbose = {
       val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any], json = false, verbose = true)
       __obj.asInstanceOf[JsonVerbose]
     }
     
-    @scala.inline
-    implicit class JsonVerboseMutableBuilder[Self <: JsonVerbose] (val x: Self) extends AnyVal {
+    extension [Self <: JsonVerbose](x: Self) {
       
-      @scala.inline
-      def setDer(value: Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
+      inline def setDer(value: Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: `false`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: `false`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbose(value: `true`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: `true`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,26 +136,20 @@ object anon {
   }
   object Verbose {
     
-    @scala.inline
-    def apply(der: Uint8Array): Verbose = {
+    inline def apply(der: Uint8Array): Verbose = {
       val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any], json = false)
       __obj.asInstanceOf[Verbose]
     }
     
-    @scala.inline
-    implicit class VerboseMutableBuilder[Self <: Verbose] (val x: Self) extends AnyVal {
+    extension [Self <: Verbose](x: Self) {
       
-      @scala.inline
-      def setDer(value: Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
+      inline def setDer(value: Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: `false`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: `false`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbose(value: `false`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: `false`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
 }

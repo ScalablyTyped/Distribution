@@ -17,19 +17,15 @@ trait ScheduleDeleteCertificateAuthorityRequest extends StObject {
 }
 object ScheduleDeleteCertificateAuthorityRequest {
   
-  @scala.inline
-  def apply(): ScheduleDeleteCertificateAuthorityRequest = {
+  inline def apply(): ScheduleDeleteCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduleDeleteCertificateAuthorityRequest]
   }
   
-  @scala.inline
-  implicit class ScheduleDeleteCertificateAuthorityRequestMutableBuilder[Self <: ScheduleDeleteCertificateAuthorityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduleDeleteCertificateAuthorityRequest](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

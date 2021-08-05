@@ -32,8 +32,7 @@ trait Levels_ extends StObject {
 }
 object Levels_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ALL: Level,
     DEBUG: Level,
     ERROR: Level,
@@ -51,46 +50,32 @@ object Levels_ {
     __obj.asInstanceOf[Levels_]
   }
   
-  @scala.inline
-  implicit class Levels_MutableBuilder[Self <: Levels_] (val x: Self) extends AnyVal {
+  extension [Self <: Levels_](x: Self) {
     
-    @scala.inline
-    def setALL(value: Level): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
+    inline def setALL(value: Level): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddLevels(value: js.Object => Unit): Self = StObject.set(x, "addLevels", js.Any.fromFunction1(value))
+    inline def setAddLevels(value: js.Object => Unit): Self = StObject.set(x, "addLevels", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDEBUG(value: Level): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
+    inline def setDEBUG(value: Level): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setERROR(value: Level): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    inline def setERROR(value: Level): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFATAL(value: Level): Self = StObject.set(x, "FATAL", value.asInstanceOf[js.Any])
+    inline def setFATAL(value: Level): Self = StObject.set(x, "FATAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetLevel(value: String => Level): Self = StObject.set(x, "getLevel", js.Any.fromFunction1(value))
+    inline def setGetLevel(value: String => Level): Self = StObject.set(x, "getLevel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setINFO(value: Level): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
+    inline def setINFO(value: Level): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevels(value: js.Array[Level]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: js.Array[Level]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsVarargs(value: Level*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: Level*): Self = StObject.set(x, "levels", js.Array(value :_*))
     
-    @scala.inline
-    def setMARK(value: Level): Self = StObject.set(x, "MARK", value.asInstanceOf[js.Any])
+    inline def setMARK(value: Level): Self = StObject.set(x, "MARK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOFF(value: Level): Self = StObject.set(x, "OFF", value.asInstanceOf[js.Any])
+    inline def setOFF(value: Level): Self = StObject.set(x, "OFF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTRACE(value: Level): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
+    inline def setTRACE(value: Level): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWARN(value: Level): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
+    inline def setWARN(value: Level): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
   }
 }

@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.TextFrame2")
 @js.native
-class TextFrame2 protected ()
+/* private */ class TextFrame2 ()
   extends StObject
      with typings.activexExcel.Excel.TextFrame2 {
   
@@ -36,7 +36,7 @@ class TextFrame2 protected ()
   /* CompleteClass */
   override def DeleteText(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.TextFrame2_typekey")
   var ExcelDotTextFrame2_typekey: typings.activexExcel.Excel.TextFrame2 = js.native
   

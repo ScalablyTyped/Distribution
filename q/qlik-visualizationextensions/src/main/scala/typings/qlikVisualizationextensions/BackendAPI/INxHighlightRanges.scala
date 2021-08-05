@@ -14,19 +14,15 @@ trait INxHighlightRanges extends StObject {
 }
 object INxHighlightRanges {
   
-  @scala.inline
-  def apply(qRanges: js.Array[ICharRange]): INxHighlightRanges = {
+  inline def apply(qRanges: js.Array[ICharRange]): INxHighlightRanges = {
     val __obj = js.Dynamic.literal(qRanges = qRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxHighlightRanges]
   }
   
-  @scala.inline
-  implicit class INxHighlightRangesMutableBuilder[Self <: INxHighlightRanges] (val x: Self) extends AnyVal {
+  extension [Self <: INxHighlightRanges](x: Self) {
     
-    @scala.inline
-    def setQRanges(value: js.Array[ICharRange]): Self = StObject.set(x, "qRanges", value.asInstanceOf[js.Any])
+    inline def setQRanges(value: js.Array[ICharRange]): Self = StObject.set(x, "qRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQRangesVarargs(value: ICharRange*): Self = StObject.set(x, "qRanges", js.Array(value :_*))
+    inline def setQRangesVarargs(value: ICharRange*): Self = StObject.set(x, "qRanges", js.Array(value :_*))
   }
 }

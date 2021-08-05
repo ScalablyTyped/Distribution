@@ -14,22 +14,17 @@ trait FoolBuilding extends StObject {
 }
 object FoolBuilding {
   
-  @scala.inline
-  def apply(desc: String, icon: js.Tuple2[Double, Double], name: String): FoolBuilding = {
+  inline def apply(desc: String, icon: js.Tuple2[Double, Double], name: String): FoolBuilding = {
     val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FoolBuilding]
   }
   
-  @scala.inline
-  implicit class FoolBuildingMutableBuilder[Self <: FoolBuilding] (val x: Self) extends AnyVal {
+  extension [Self <: FoolBuilding](x: Self) {
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

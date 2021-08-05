@@ -13,6 +13,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def serializerMiddleware[Input /* <: js.Object */, Output /* <: js.Object */, Stream](requestSerializerProvider: Provider[RequestSerializer[Stream, js.Any]]): SerializeMiddleware[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializerMiddleware")(requestSerializerProvider.asInstanceOf[js.Any]).asInstanceOf[SerializeMiddleware[Input, Output]]
+  inline def serializerMiddleware[Input /* <: js.Object */, Output /* <: js.Object */, Stream](requestSerializerProvider: Provider[RequestSerializer[Stream, js.Any]]): SerializeMiddleware[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializerMiddleware")(requestSerializerProvider.asInstanceOf[js.Any]).asInstanceOf[SerializeMiddleware[Input, Output]]
 }

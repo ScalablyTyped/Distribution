@@ -18,28 +18,21 @@ trait ListRecommendationFeedbackResponse extends StObject {
 }
 object ListRecommendationFeedbackResponse {
   
-  @scala.inline
-  def apply(): ListRecommendationFeedbackResponse = {
+  inline def apply(): ListRecommendationFeedbackResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRecommendationFeedbackResponse]
   }
   
-  @scala.inline
-  implicit class ListRecommendationFeedbackResponseMutableBuilder[Self <: ListRecommendationFeedbackResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRecommendationFeedbackResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRecommendationFeedbackSummaries(value: RecommendationFeedbackSummaries): Self = StObject.set(x, "RecommendationFeedbackSummaries", value.asInstanceOf[js.Any])
+    inline def setRecommendationFeedbackSummaries(value: RecommendationFeedbackSummaries): Self = StObject.set(x, "RecommendationFeedbackSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationFeedbackSummariesUndefined: Self = StObject.set(x, "RecommendationFeedbackSummaries", js.undefined)
+    inline def setRecommendationFeedbackSummariesUndefined: Self = StObject.set(x, "RecommendationFeedbackSummaries", js.undefined)
     
-    @scala.inline
-    def setRecommendationFeedbackSummariesVarargs(value: RecommendationFeedbackSummary*): Self = StObject.set(x, "RecommendationFeedbackSummaries", js.Array(value :_*))
+    inline def setRecommendationFeedbackSummariesVarargs(value: RecommendationFeedbackSummary*): Self = StObject.set(x, "RecommendationFeedbackSummaries", js.Array(value :_*))
   }
 }

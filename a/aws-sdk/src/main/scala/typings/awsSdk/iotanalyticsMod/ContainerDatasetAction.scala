@@ -28,31 +28,23 @@ trait ContainerDatasetAction extends StObject {
 }
 object ContainerDatasetAction {
   
-  @scala.inline
-  def apply(executionRoleArn: RoleArn, image: Image, resourceConfiguration: ResourceConfiguration): ContainerDatasetAction = {
+  inline def apply(executionRoleArn: RoleArn, image: Image, resourceConfiguration: ResourceConfiguration): ContainerDatasetAction = {
     val __obj = js.Dynamic.literal(executionRoleArn = executionRoleArn.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], resourceConfiguration = resourceConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerDatasetAction]
   }
   
-  @scala.inline
-  implicit class ContainerDatasetActionMutableBuilder[Self <: ContainerDatasetAction] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerDatasetAction](x: Self) {
     
-    @scala.inline
-    def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
+    inline def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceConfiguration(value: ResourceConfiguration): Self = StObject.set(x, "resourceConfiguration", value.asInstanceOf[js.Any])
+    inline def setResourceConfiguration(value: ResourceConfiguration): Self = StObject.set(x, "resourceConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+    inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     
-    @scala.inline
-    def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

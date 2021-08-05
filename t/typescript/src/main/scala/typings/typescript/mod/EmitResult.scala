@@ -15,31 +15,23 @@ trait EmitResult extends StObject {
 }
 object EmitResult {
   
-  @scala.inline
-  def apply(diagnostics: js.Array[Diagnostic], emitSkipped: Boolean): EmitResult = {
+  inline def apply(diagnostics: js.Array[Diagnostic], emitSkipped: Boolean): EmitResult = {
     val __obj = js.Dynamic.literal(diagnostics = diagnostics.asInstanceOf[js.Any], emitSkipped = emitSkipped.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitResult]
   }
   
-  @scala.inline
-  implicit class EmitResultMutableBuilder[Self <: EmitResult] (val x: Self) extends AnyVal {
+  extension [Self <: EmitResult](x: Self) {
     
-    @scala.inline
-    def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
-    @scala.inline
-    def setEmitSkipped(value: Boolean): Self = StObject.set(x, "emitSkipped", value.asInstanceOf[js.Any])
+    inline def setEmitSkipped(value: Boolean): Self = StObject.set(x, "emitSkipped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmittedFiles(value: js.Array[java.lang.String]): Self = StObject.set(x, "emittedFiles", value.asInstanceOf[js.Any])
+    inline def setEmittedFiles(value: js.Array[java.lang.String]): Self = StObject.set(x, "emittedFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmittedFilesUndefined: Self = StObject.set(x, "emittedFiles", js.undefined)
+    inline def setEmittedFilesUndefined: Self = StObject.set(x, "emittedFiles", js.undefined)
     
-    @scala.inline
-    def setEmittedFilesVarargs(value: java.lang.String*): Self = StObject.set(x, "emittedFiles", js.Array(value :_*))
+    inline def setEmittedFilesVarargs(value: java.lang.String*): Self = StObject.set(x, "emittedFiles", js.Array(value :_*))
   }
 }

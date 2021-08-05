@@ -12,19 +12,15 @@ trait NxListobjectExpressionDef extends StObject {
 }
 object NxListobjectExpressionDef {
   
-  @scala.inline
-  def apply(qExpr: String, qLibraryId: String): NxListobjectExpressionDef = {
+  inline def apply(qExpr: String, qLibraryId: String): NxListobjectExpressionDef = {
     val __obj = js.Dynamic.literal(qExpr = qExpr.asInstanceOf[js.Any], qLibraryId = qLibraryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxListobjectExpressionDef]
   }
   
-  @scala.inline
-  implicit class NxListobjectExpressionDefMutableBuilder[Self <: NxListobjectExpressionDef] (val x: Self) extends AnyVal {
+  extension [Self <: NxListobjectExpressionDef](x: Self) {
     
-    @scala.inline
-    def setQExpr(value: String): Self = StObject.set(x, "qExpr", value.asInstanceOf[js.Any])
+    inline def setQExpr(value: String): Self = StObject.set(x, "qExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
+    inline def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
   }
 }

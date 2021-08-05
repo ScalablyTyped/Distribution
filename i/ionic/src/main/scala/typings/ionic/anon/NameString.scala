@@ -10,16 +10,13 @@ trait NameString extends StObject {
 }
 object NameString {
   
-  @scala.inline
-  def apply(name: String): NameString = {
+  inline def apply(name: String): NameString = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameString]
   }
   
-  @scala.inline
-  implicit class NameStringMutableBuilder[Self <: NameString] (val x: Self) extends AnyVal {
+  extension [Self <: NameString](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

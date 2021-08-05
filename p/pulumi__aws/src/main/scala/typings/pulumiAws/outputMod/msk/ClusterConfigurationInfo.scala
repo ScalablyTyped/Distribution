@@ -18,19 +18,15 @@ trait ClusterConfigurationInfo extends StObject {
 }
 object ClusterConfigurationInfo {
   
-  @scala.inline
-  def apply(arn: String, revision: Double): ClusterConfigurationInfo = {
+  inline def apply(arn: String, revision: Double): ClusterConfigurationInfo = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterConfigurationInfo]
   }
   
-  @scala.inline
-  implicit class ClusterConfigurationInfoMutableBuilder[Self <: ClusterConfigurationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterConfigurationInfo](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

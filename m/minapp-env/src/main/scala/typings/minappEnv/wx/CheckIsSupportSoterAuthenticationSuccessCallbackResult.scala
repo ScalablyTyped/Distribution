@@ -20,16 +20,13 @@ trait CheckIsSupportSoterAuthenticationSuccessCallbackResult extends StObject {
 }
 object CheckIsSupportSoterAuthenticationSuccessCallbackResult {
   
-  @scala.inline
-  def apply(supportMode: Array[fingerPrint | facial | speech]): CheckIsSupportSoterAuthenticationSuccessCallbackResult = {
+  inline def apply(supportMode: Array[fingerPrint | facial | speech]): CheckIsSupportSoterAuthenticationSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(supportMode = supportMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckIsSupportSoterAuthenticationSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class CheckIsSupportSoterAuthenticationSuccessCallbackResultMutableBuilder[Self <: CheckIsSupportSoterAuthenticationSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: CheckIsSupportSoterAuthenticationSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setSupportMode(value: Array[fingerPrint | facial | speech]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
+    inline def setSupportMode(value: Array[fingerPrint | facial | speech]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
   }
 }

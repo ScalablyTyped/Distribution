@@ -30,8 +30,7 @@ object modalMod {
   @JSImport("react-bootstrap/lib/Modal", "Body")
   @js.native
   def Body: Instantiable0[typings.reactBootstrap.modalBodyMod.^] = js.native
-  @scala.inline
-  def Body_=(x: Instantiable0[typings.reactBootstrap.modalBodyMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
+  inline def Body_=(x: Instantiable0[typings.reactBootstrap.modalBodyMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Modal", "Dialog")
@@ -42,8 +41,7 @@ object modalMod {
   @JSImport("react-bootstrap/lib/Modal", "Dialog")
   @js.native
   def Dialog: Instantiable0[typings.reactBootstrap.modalDialogMod.^] = js.native
-  @scala.inline
-  def Dialog_=(x: Instantiable0[typings.reactBootstrap.modalDialogMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dialog")(x.asInstanceOf[js.Any])
+  inline def Dialog_=(x: Instantiable0[typings.reactBootstrap.modalDialogMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dialog")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Modal", "Footer")
@@ -54,8 +52,7 @@ object modalMod {
   @JSImport("react-bootstrap/lib/Modal", "Footer")
   @js.native
   def Footer: Instantiable0[typings.reactBootstrap.modalFooterMod.^] = js.native
-  @scala.inline
-  def Footer_=(x: Instantiable0[typings.reactBootstrap.modalFooterMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
+  inline def Footer_=(x: Instantiable0[typings.reactBootstrap.modalFooterMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Modal", "Header")
@@ -66,8 +63,7 @@ object modalMod {
   @JSImport("react-bootstrap/lib/Modal", "Header")
   @js.native
   def Header: Instantiable0[typings.reactBootstrap.modalHeaderMod.^] = js.native
-  @scala.inline
-  def Header_=(x: Instantiable0[typings.reactBootstrap.modalHeaderMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
+  inline def Header_=(x: Instantiable0[typings.reactBootstrap.modalHeaderMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Modal", "Title")
@@ -78,8 +74,7 @@ object modalMod {
   @JSImport("react-bootstrap/lib/Modal", "Title")
   @js.native
   def Title: Instantiable0[typings.reactBootstrap.modalTitleMod.^] = js.native
-  @scala.inline
-  def Title_=(x: Instantiable0[typings.reactBootstrap.modalTitleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+  inline def Title_=(x: Instantiable0[typings.reactBootstrap.modalTitleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Modal
@@ -143,143 +138,98 @@ object modalMod {
   }
   object ModalProps {
     
-    @scala.inline
-    def apply(onHide: js.Function): ModalProps = {
+    inline def apply(onHide: js.Function): ModalProps = {
       val __obj = js.Dynamic.literal(onHide = onHide.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModalProps]
     }
     
-    @scala.inline
-    implicit class ModalPropsMutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
+    extension [Self <: ModalProps](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setBackdrop(value: Boolean | String): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+      inline def setBackdrop(value: Boolean | String): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropClassName(value: String): Self = StObject.set(x, "backdropClassName", value.asInstanceOf[js.Any])
+      inline def setBackdropClassName(value: String): Self = StObject.set(x, "backdropClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropClassNameUndefined: Self = StObject.set(x, "backdropClassName", js.undefined)
+      inline def setBackdropClassNameUndefined: Self = StObject.set(x, "backdropClassName", js.undefined)
       
-      @scala.inline
-      def setBackdropStyle(value: js.Any): Self = StObject.set(x, "backdropStyle", value.asInstanceOf[js.Any])
+      inline def setBackdropStyle(value: js.Any): Self = StObject.set(x, "backdropStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropStyleUndefined: Self = StObject.set(x, "backdropStyle", js.undefined)
+      inline def setBackdropStyleUndefined: Self = StObject.set(x, "backdropStyle", js.undefined)
       
-      @scala.inline
-      def setBackdropTransitionTimeout(value: Double): Self = StObject.set(x, "backdropTransitionTimeout", value.asInstanceOf[js.Any])
+      inline def setBackdropTransitionTimeout(value: Double): Self = StObject.set(x, "backdropTransitionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropTransitionTimeoutUndefined: Self = StObject.set(x, "backdropTransitionTimeout", js.undefined)
+      inline def setBackdropTransitionTimeoutUndefined: Self = StObject.set(x, "backdropTransitionTimeout", js.undefined)
       
-      @scala.inline
-      def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
+      inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
+      inline def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
+      inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
       
-      @scala.inline
-      def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
+      inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
+      inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setDialogClassName(value: String): Self = StObject.set(x, "dialogClassName", value.asInstanceOf[js.Any])
+      inline def setDialogClassName(value: String): Self = StObject.set(x, "dialogClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogClassNameUndefined: Self = StObject.set(x, "dialogClassName", js.undefined)
+      inline def setDialogClassNameUndefined: Self = StObject.set(x, "dialogClassName", js.undefined)
       
-      @scala.inline
-      def setDialogComponent(value: js.Any): Self = StObject.set(x, "dialogComponent", value.asInstanceOf[js.Any])
+      inline def setDialogComponent(value: js.Any): Self = StObject.set(x, "dialogComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogComponentUndefined: Self = StObject.set(x, "dialogComponent", js.undefined)
+      inline def setDialogComponentUndefined: Self = StObject.set(x, "dialogComponent", js.undefined)
       
-      @scala.inline
-      def setDialogTransitionTimeout(value: Double): Self = StObject.set(x, "dialogTransitionTimeout", value.asInstanceOf[js.Any])
+      inline def setDialogTransitionTimeout(value: Double): Self = StObject.set(x, "dialogTransitionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogTransitionTimeoutUndefined: Self = StObject.set(x, "dialogTransitionTimeout", js.undefined)
+      inline def setDialogTransitionTimeoutUndefined: Self = StObject.set(x, "dialogTransitionTimeout", js.undefined)
       
-      @scala.inline
-      def setEnforceFocus(value: Boolean): Self = StObject.set(x, "enforceFocus", value.asInstanceOf[js.Any])
+      inline def setEnforceFocus(value: Boolean): Self = StObject.set(x, "enforceFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnforceFocusUndefined: Self = StObject.set(x, "enforceFocus", js.undefined)
+      inline def setEnforceFocusUndefined: Self = StObject.set(x, "enforceFocus", js.undefined)
       
-      @scala.inline
-      def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+      inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+      inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
       
-      @scala.inline
-      def setOnBackdropClick(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onBackdropClick", js.Any.fromFunction1(value))
+      inline def setOnBackdropClick(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onBackdropClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBackdropClickUndefined: Self = StObject.set(x, "onBackdropClick", js.undefined)
+      inline def setOnBackdropClickUndefined: Self = StObject.set(x, "onBackdropClick", js.undefined)
       
-      @scala.inline
-      def setOnEscapeKeyDown(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEscapeKeyDown", js.Any.fromFunction1(value))
+      inline def setOnEscapeKeyDown(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEscapeKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEscapeKeyDownUndefined: Self = StObject.set(x, "onEscapeKeyDown", js.undefined)
+      inline def setOnEscapeKeyDownUndefined: Self = StObject.set(x, "onEscapeKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnEscapeKeyUp(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEscapeKeyUp", js.Any.fromFunction1(value))
+      inline def setOnEscapeKeyUp(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEscapeKeyUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEscapeKeyUpUndefined: Self = StObject.set(x, "onEscapeKeyUp", js.undefined)
+      inline def setOnEscapeKeyUpUndefined: Self = StObject.set(x, "onEscapeKeyUp", js.undefined)
       
-      @scala.inline
-      def setOnHide(value: js.Function): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
+      inline def setOnHide(value: js.Function): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnShow(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+      inline def setOnShow(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      @scala.inline
-      def setRestoreFocus(value: Boolean): Self = StObject.set(x, "restoreFocus", value.asInstanceOf[js.Any])
+      inline def setRestoreFocus(value: Boolean): Self = StObject.set(x, "restoreFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestoreFocusUndefined: Self = StObject.set(x, "restoreFocus", js.undefined)
+      inline def setRestoreFocusUndefined: Self = StObject.set(x, "restoreFocus", js.undefined)
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      @scala.inline
-      def setTransition(value: ReactElement): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: ReactElement): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     }
   }
 }

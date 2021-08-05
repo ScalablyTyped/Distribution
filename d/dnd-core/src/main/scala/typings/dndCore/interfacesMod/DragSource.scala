@@ -16,8 +16,7 @@ trait DragSource extends StObject {
 }
 object DragSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginDrag: (DragDropMonitor, Identifier) => Unit,
     canDrag: (DragDropMonitor, Identifier) => Boolean,
     endDrag: (DragDropMonitor, Identifier) => Unit,
@@ -27,19 +26,14 @@ object DragSource {
     __obj.asInstanceOf[DragSource]
   }
   
-  @scala.inline
-  implicit class DragSourceMutableBuilder[Self <: DragSource] (val x: Self) extends AnyVal {
+  extension [Self <: DragSource](x: Self) {
     
-    @scala.inline
-    def setBeginDrag(value: (DragDropMonitor, Identifier) => Unit): Self = StObject.set(x, "beginDrag", js.Any.fromFunction2(value))
+    inline def setBeginDrag(value: (DragDropMonitor, Identifier) => Unit): Self = StObject.set(x, "beginDrag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCanDrag(value: (DragDropMonitor, Identifier) => Boolean): Self = StObject.set(x, "canDrag", js.Any.fromFunction2(value))
+    inline def setCanDrag(value: (DragDropMonitor, Identifier) => Boolean): Self = StObject.set(x, "canDrag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEndDrag(value: (DragDropMonitor, Identifier) => Unit): Self = StObject.set(x, "endDrag", js.Any.fromFunction2(value))
+    inline def setEndDrag(value: (DragDropMonitor, Identifier) => Unit): Self = StObject.set(x, "endDrag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsDragging(value: (DragDropMonitor, Identifier) => Boolean): Self = StObject.set(x, "isDragging", js.Any.fromFunction2(value))
+    inline def setIsDragging(value: (DragDropMonitor, Identifier) => Boolean): Self = StObject.set(x, "isDragging", js.Any.fromFunction2(value))
   }
 }

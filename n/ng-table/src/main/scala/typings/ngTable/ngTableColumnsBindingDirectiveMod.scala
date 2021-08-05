@@ -16,6 +16,5 @@ object ngTableColumnsBindingDirectiveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ngTableColumnsBinding[T]($parse: IParseService): IDirective[IScope, JQLite, IAttributes, IController] = ^.asInstanceOf[js.Dynamic].applyDynamic("ngTableColumnsBinding")($parse.asInstanceOf[js.Any]).asInstanceOf[IDirective[IScope, JQLite, IAttributes, IController]]
+  inline def ngTableColumnsBinding[T]($parse: IParseService): IDirective[IScope, JQLite, IAttributes, IController] = ^.asInstanceOf[js.Dynamic].applyDynamic("ngTableColumnsBinding")($parse.asInstanceOf[js.Any]).asInstanceOf[IDirective[IScope, JQLite, IAttributes, IController]]
 }

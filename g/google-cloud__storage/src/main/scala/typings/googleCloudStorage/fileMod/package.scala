@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def STORAGE_POST_POLICY_BASE_URL: /* "https://storage.googleapis.com" */ java.lang.String = typings.googleCloudStorage.fileMod.^.asInstanceOf[js.Dynamic].selectDynamic("STORAGE_POST_POLICY_BASE_URL").asInstanceOf[/* "https://storage.googleapis.com" */ java.lang.String]
+inline def STORAGE_POST_POLICY_BASE_URL: /* "https://storage.googleapis.com" */ java.lang.String = typings.googleCloudStorage.fileMod.^.asInstanceOf[js.Dynamic].selectDynamic("STORAGE_POST_POLICY_BASE_URL").asInstanceOf[/* "https://storage.googleapis.com" */ java.lang.String]
 
 type CopyCallback = js.Function3[
 /* err */ typings.std.Error | scala.Null, 

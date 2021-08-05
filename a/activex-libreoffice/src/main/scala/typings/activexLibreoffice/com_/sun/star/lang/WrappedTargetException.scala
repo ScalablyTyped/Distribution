@@ -23,16 +23,13 @@ trait WrappedTargetException
 }
 object WrappedTargetException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, TargetException: js.Any): WrappedTargetException = {
+  inline def apply(Context: XInterface, Message: String, TargetException: js.Any): WrappedTargetException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], TargetException = TargetException.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrappedTargetException]
   }
   
-  @scala.inline
-  implicit class WrappedTargetExceptionMutableBuilder[Self <: WrappedTargetException] (val x: Self) extends AnyVal {
+  extension [Self <: WrappedTargetException](x: Self) {
     
-    @scala.inline
-    def setTargetException(value: js.Any): Self = StObject.set(x, "TargetException", value.asInstanceOf[js.Any])
+    inline def setTargetException(value: js.Any): Self = StObject.set(x, "TargetException", value.asInstanceOf[js.Any])
   }
 }

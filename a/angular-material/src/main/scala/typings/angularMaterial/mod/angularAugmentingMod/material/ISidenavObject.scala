@@ -21,8 +21,7 @@ trait ISidenavObject extends StObject {
 }
 object ISidenavObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => IPromise[Unit],
     isLockedOpen: () => Boolean,
     isOpen: () => Boolean,
@@ -34,25 +33,18 @@ object ISidenavObject {
     __obj.asInstanceOf[ISidenavObject]
   }
   
-  @scala.inline
-  implicit class ISidenavObjectMutableBuilder[Self <: ISidenavObject] (val x: Self) extends AnyVal {
+  extension [Self <: ISidenavObject](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => IPromise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => IPromise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLockedOpen(value: () => Boolean): Self = StObject.set(x, "isLockedOpen", js.Any.fromFunction0(value))
+    inline def setIsLockedOpen(value: () => Boolean): Self = StObject.set(x, "isLockedOpen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
+    inline def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnClose(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+    inline def setOnClose(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpen(value: () => IPromise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => IPromise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggle(value: () => IPromise[Unit]): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => IPromise[Unit]): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }
 }

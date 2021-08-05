@@ -16,7 +16,7 @@ object eventEmitterMod {
       value: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
     ): Unit = js.native
     
-    var eventEmitter: js.Any = js.native
+    /* private */ var eventEmitter: js.Any = js.native
     
     def on[E /* <: Extract[/* keyof T */ String, String] */](
       eventType: E,

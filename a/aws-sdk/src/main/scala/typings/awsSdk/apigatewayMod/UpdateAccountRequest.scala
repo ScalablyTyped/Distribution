@@ -13,22 +13,17 @@ trait UpdateAccountRequest extends StObject {
 }
 object UpdateAccountRequest {
   
-  @scala.inline
-  def apply(): UpdateAccountRequest = {
+  inline def apply(): UpdateAccountRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateAccountRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAccountRequestMutableBuilder[Self <: UpdateAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAccountRequest](x: Self) {
     
-    @scala.inline
-    def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
+    inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
+    inline def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
-    @scala.inline
-    def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
+    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
   }
 }

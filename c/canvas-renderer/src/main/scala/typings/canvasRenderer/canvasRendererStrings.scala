@@ -8,11 +8,9 @@ object canvasRendererStrings {
   
   @js.native
   sealed trait evenodd extends StObject
-  @scala.inline
-  def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
+  inline def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   
   @js.native
   sealed trait nonzero extends StObject
-  @scala.inline
-  def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
+  inline def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
 }

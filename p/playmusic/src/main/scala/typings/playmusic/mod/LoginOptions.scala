@@ -14,31 +14,23 @@ trait LoginOptions extends StObject {
 }
 object LoginOptions {
   
-  @scala.inline
-  def apply(): LoginOptions = {
+  inline def apply(): LoginOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoginOptions]
   }
   
-  @scala.inline
-  implicit class LoginOptionsMutableBuilder[Self <: LoginOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoginOptions](x: Self) {
     
-    @scala.inline
-    def setAndroidId(value: String): Self = StObject.set(x, "androidId", value.asInstanceOf[js.Any])
+    inline def setAndroidId(value: String): Self = StObject.set(x, "androidId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidIdUndefined: Self = StObject.set(x, "androidId", js.undefined)
+    inline def setAndroidIdUndefined: Self = StObject.set(x, "androidId", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
   }
 }

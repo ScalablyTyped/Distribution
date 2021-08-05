@@ -20,28 +20,21 @@ trait SchemaFetchThreatListUpdatesResponse extends StObject {
 }
 object SchemaFetchThreatListUpdatesResponse {
   
-  @scala.inline
-  def apply(): SchemaFetchThreatListUpdatesResponse = {
+  inline def apply(): SchemaFetchThreatListUpdatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFetchThreatListUpdatesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaFetchThreatListUpdatesResponseMutableBuilder[Self <: SchemaFetchThreatListUpdatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFetchThreatListUpdatesResponse](x: Self) {
     
-    @scala.inline
-    def setListUpdateResponses(value: js.Array[SchemaListUpdateResponse]): Self = StObject.set(x, "listUpdateResponses", value.asInstanceOf[js.Any])
+    inline def setListUpdateResponses(value: js.Array[SchemaListUpdateResponse]): Self = StObject.set(x, "listUpdateResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUpdateResponsesUndefined: Self = StObject.set(x, "listUpdateResponses", js.undefined)
+    inline def setListUpdateResponsesUndefined: Self = StObject.set(x, "listUpdateResponses", js.undefined)
     
-    @scala.inline
-    def setListUpdateResponsesVarargs(value: SchemaListUpdateResponse*): Self = StObject.set(x, "listUpdateResponses", js.Array(value :_*))
+    inline def setListUpdateResponsesVarargs(value: SchemaListUpdateResponse*): Self = StObject.set(x, "listUpdateResponses", js.Array(value :_*))
     
-    @scala.inline
-    def setMinimumWaitDuration(value: String): Self = StObject.set(x, "minimumWaitDuration", value.asInstanceOf[js.Any])
+    inline def setMinimumWaitDuration(value: String): Self = StObject.set(x, "minimumWaitDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumWaitDurationUndefined: Self = StObject.set(x, "minimumWaitDuration", js.undefined)
+    inline def setMinimumWaitDurationUndefined: Self = StObject.set(x, "minimumWaitDuration", js.undefined)
   }
 }

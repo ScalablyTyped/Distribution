@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(aLength: Double, bLength: Double, isCommon: IsCommon, foundSubsequence: FoundSubsequence): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(aLength.asInstanceOf[js.Any], bLength.asInstanceOf[js.Any], isCommon.asInstanceOf[js.Any], foundSubsequence.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(aLength: Double, bLength: Double, isCommon: IsCommon, foundSubsequence: FoundSubsequence): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(aLength.asInstanceOf[js.Any], bLength.asInstanceOf[js.Any], isCommon.asInstanceOf[js.Any], foundSubsequence.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Callbacks extends StObject {
     
@@ -32,8 +31,7 @@ object mod {
   }
   object Callbacks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       foundSubsequence: (/* nCommon */ Double, /* aCommon */ Double, /* bCommon */ Double) => Unit,
       isCommon: (/* aIndex */ Double, /* bIndex */ Double) => Boolean
     ): Callbacks = {
@@ -41,14 +39,11 @@ object mod {
       __obj.asInstanceOf[Callbacks]
     }
     
-    @scala.inline
-    implicit class CallbacksMutableBuilder[Self <: Callbacks] (val x: Self) extends AnyVal {
+    extension [Self <: Callbacks](x: Self) {
       
-      @scala.inline
-      def setFoundSubsequence(value: (/* nCommon */ Double, /* aCommon */ Double, /* bCommon */ Double) => Unit): Self = StObject.set(x, "foundSubsequence", js.Any.fromFunction3(value))
+      inline def setFoundSubsequence(value: (/* nCommon */ Double, /* aCommon */ Double, /* bCommon */ Double) => Unit): Self = StObject.set(x, "foundSubsequence", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIsCommon(value: (/* aIndex */ Double, /* bIndex */ Double) => Boolean): Self = StObject.set(x, "isCommon", js.Any.fromFunction2(value))
+      inline def setIsCommon(value: (/* aIndex */ Double, /* bIndex */ Double) => Boolean): Self = StObject.set(x, "isCommon", js.Any.fromFunction2(value))
     }
   }
   

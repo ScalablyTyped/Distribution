@@ -57,24 +57,21 @@ object global {
           *
           * @see https://dev.twitch.tv/docs/extensions/reference/#followchannel
           */
-        @scala.inline
-        def followChannel(channelName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("followChannel")(channelName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        inline def followChannel(channelName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("followChannel")(channelName.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
         /**
           * This function causes your video-component or video-overlay extension to be minimized.
           *
           * @see https://dev.twitch.tv/docs/extensions/reference/#minimize
           */
-        @scala.inline
-        def minimize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("minimize")().asInstanceOf[Unit]
+        inline def minimize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("minimize")().asInstanceOf[Unit]
         
         /**
           * This function registers a callback that is invoked whenever a user completes an interaction prompted by the followChannel action.
           *
           * @see https://dev.twitch.tv/docs/extensions/reference/#onfollow
           */
-        @scala.inline
-        def onFollow(callback: js.Function2[/* didFollow */ Boolean, /* channelName */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFollow")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        inline def onFollow(callback: js.Function2[/* didFollow */ Boolean, /* channelName */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFollow")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
         /**
           * This function opens a prompt for users to share their identity.
@@ -82,8 +79,7 @@ object global {
           *
           * @see https://dev.twitch.tv/docs/extensions/reference/#requestidshare
           */
-        @scala.inline
-        def requestIdShare(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestIdShare")().asInstanceOf[Unit]
+        inline def requestIdShare(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestIdShare")().asInstanceOf[Unit]
       }
       
       /**
@@ -104,8 +100,7 @@ object global {
           *
           * @see https://dev.twitch.tv/docs/extensions/bits/#getproducts
           */
-        @scala.inline
-        def getProducts(): js.Promise[js.Array[BitsProduct]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProducts")().asInstanceOf[js.Promise[js.Array[BitsProduct]]]
+        inline def getProducts(): js.Promise[js.Array[BitsProduct]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProducts")().asInstanceOf[js.Promise[js.Array[BitsProduct]]]
         
         /**
           * This function takes a callback that is fired whenever a transaction is cancelled.
@@ -113,8 +108,7 @@ object global {
           *
           * @see https://dev.twitch.tv/docs/extensions/bits/#ontransactioncancelledcallback
           */
-        @scala.inline
-        def onTransactionCancelled(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onTransactionCancelled")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        inline def onTransactionCancelled(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onTransactionCancelled")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
         /**
           * This function registers a callback that is fired whenever a Bits in Extensions transaction
@@ -123,8 +117,7 @@ object global {
           *
           * @see https://dev.twitch.tv/docs/extensions/bits/#ontransactioncompletecallbacktransactionobject
           */
-        @scala.inline
-        def onTransactionComplete(callback: js.Function1[/* transaction */ BitsTransaction, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onTransactionComplete")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        inline def onTransactionComplete(callback: js.Function1[/* transaction */ BitsTransaction, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onTransactionComplete")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
         /**
           * This function sets the state of the extension helper, so it does not call live services for
@@ -134,8 +127,7 @@ object global {
           *
           * @see https://dev.twitch.tv/docs/extensions/bits/#setuseloopbackboolean
           */
-        @scala.inline
-        def setUseLoopback(useLoopback: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUseLoopback")(useLoopback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        inline def setUseLoopback(useLoopback: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUseLoopback")(useLoopback.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
         /**
           * Call this function when the viewer hovers over a product in your extension UI, to cause the
@@ -150,8 +142,7 @@ object global {
           *
           * @see https://dev.twitch.tv/docs/extensions/bits/#showbitsbalance
           */
-        @scala.inline
-        def showBitsBalance(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showBitsBalance")().asInstanceOf[Unit]
+        inline def showBitsBalance(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showBitsBalance")().asInstanceOf[Unit]
         
         /**
           * This function redeems a product with the specified SKU for the number of Bits specified in
@@ -161,8 +152,7 @@ object global {
           * @see https://dev.twitch.tv/docs/extensions/bits/#usebitssku
           * @see https://dev.twitch.tv/docs/extensions/bits/#exchanging-bits-for-a-product
           */
-        @scala.inline
-        def useBits(sku: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useBits")(sku.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        inline def useBits(sku: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useBits")(sku.asInstanceOf[js.Any]).asInstanceOf[Unit]
       }
       
       /**
@@ -201,8 +191,7 @@ object global {
           * the records for the global, developer and broadcaster segments will be set if the data is available.
           * @param callback The callback that is fired.
           */
-        @scala.inline
-        def onChanged(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        inline def onChanged(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
         /**
           * This function can be called by the front end to set an extension configuration.
@@ -210,8 +199,7 @@ object global {
           * @param version The version of configuration with which the segment is stored.
           * @param content The string-encoded configuration.
           */
-        @scala.inline
-        def set_broadcaster(segment: typings.twitchExt.twitchExtStrings.broadcaster, version: String, content: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(segment.asInstanceOf[js.Any], version.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        inline def set_broadcaster(segment: typings.twitchExt.twitchExtStrings.broadcaster, version: String, content: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(segment.asInstanceOf[js.Any], version.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
       }
       
       /**
@@ -261,8 +249,7 @@ object global {
           *
           * @param callback The callback is called with an array of feature flags which were updated.
           */
-        @scala.inline
-        def onChanged(callback: js.Function1[/* changed */ js.Array[ChangedKey], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        inline def onChanged(callback: js.Function1[/* changed */ js.Array[ChangedKey], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       }
       
       /**
@@ -272,8 +259,7 @@ object global {
         * @param callback These fields correspond to the values in the send() message, except the message is always a string.
         * @see https://dev.twitch.tv/docs/extensions/reference/#listen
         */
-      @scala.inline
-      def listen(
+      inline def listen(
         target: String,
         callback: js.Function3[/* target */ String, /* contentType */ String, /* message */ String, Unit]
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -284,8 +270,7 @@ object global {
         * @param authCallback This callback is fired each time the JWT is refreshed.
         * @see https://dev.twitch.tv/docs/extensions/reference/#onauthorized
         */
-      @scala.inline
-      def onAuthorized(authCallback: js.Function1[/* auth */ Authorized, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAuthorized")(authCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def onAuthorized(authCallback: js.Function1[/* auth */ Authorized, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAuthorized")(authCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * This function binds the callback to the initial values and changes to the context.
@@ -293,8 +278,7 @@ object global {
         * @param contextCallback This callback is fired when the context of an extension is fired.
         * @see https://dev.twitch.tv/docs/extensions/reference/#oncontext
         */
-      @scala.inline
-      def onContext(
+      inline def onContext(
         contextCallback: js.Function2[
               /* context */ PartialContext, 
               /* changed */ js.Array[
@@ -310,8 +294,7 @@ object global {
         * @param errorCallback This callback is fired if any errors are generated by the extension helper.
         * @see https://dev.twitch.tv/docs/extensions/reference/#onerror
         */
-      @scala.inline
-      def onError(errorCallback: js.Function1[/* errorValue */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def onError(errorCallback: js.Function1[/* errorValue */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * This function allows an extension to adjust its visibility when the viewer highlights the extension by hovering
@@ -321,8 +304,7 @@ object global {
         * @param callback This callback is called whenever the extension is or is no longer highlighted by the user.
         * @see https://dev.twitch.tv/docs/extensions/reference/#onhighlightchanged
         */
-      @scala.inline
-      def onHighlightChanged(callback: js.Function1[/* isHighlighted */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onHighlightChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def onHighlightChanged(callback: js.Function1[/* isHighlighted */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onHighlightChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * This function registers a callback that gets called whenever an extension changes position in the player. This
@@ -331,8 +313,7 @@ object global {
         * @param callback This callback is called whenever an extension changes position in the player.
         * @see https://dev.twitch.tv/docs/extensions/reference/#onpositionchanged
         */
-      @scala.inline
-      def onPositionChanged(callback: js.Function1[/* position */ X, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPositionChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def onPositionChanged(callback: js.Function1[/* position */ X, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPositionChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * This function registers a callback that gets called whenever an extension is hidden/re-shown. (This occurs only
@@ -342,11 +323,9 @@ object global {
         * @param callback This callback is called whenever an extension is hidden/re-shown.
         * @see https://dev.twitch.tv/docs/extensions/reference/#onvisibilitychanged
         */
-      @scala.inline
-      def onVisibilityChanged_false(callback: js.Function1[`false`, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onVisibilityChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def onVisibilityChanged_false(callback: js.Function1[`false`, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onVisibilityChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @scala.inline
-      def onVisibilityChanged_true(callback: js.Function2[`true`, /* context */ PartialContext, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onVisibilityChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def onVisibilityChanged_true(callback: js.Function2[`true`, /* context */ PartialContext, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onVisibilityChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Helper methods for the Twitch Extension rig.
@@ -356,8 +335,7 @@ object global {
       @js.native
       val rig: Rig = js.native
       
-      @scala.inline
-      def send(target: String, contentType: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(target.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def send(target: String, contentType: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(target.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
       /**
         * This function can be called by the front end to send directly to PubSub.
         *
@@ -366,8 +344,7 @@ object global {
         * @param message Either an object that will be automatically serialized as JSON or a string.
         * @see https://dev.twitch.tv/docs/extensions/reference/#send
         */
-      @scala.inline
-      def send(target: String, contentType: String, message: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(target.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def send(target: String, contentType: String, message: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(target.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * This function unbinds the listen callback from the target.
@@ -376,8 +353,7 @@ object global {
         * @param callback These fields correspond to the values in the send() message, except the message is always a string.
         * @see https://dev.twitch.tv/docs/extensions/reference/#unlisten
         */
-      @scala.inline
-      def unlisten(
+      inline def unlisten(
         target: String,
         callback: js.Function3[/* target */ String, /* contentType */ String, /* message */ String, Unit]
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlisten")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

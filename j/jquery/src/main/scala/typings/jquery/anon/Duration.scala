@@ -16,16 +16,13 @@ trait Duration
 }
 object Duration {
   
-  @scala.inline
-  def apply(duration: typings.jquery.JQuery.Duration): Duration = {
+  inline def apply(duration: typings.jquery.JQuery.Duration): Duration = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Duration]
   }
   
-  @scala.inline
-  implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
+  extension [Self <: Duration](x: Self) {
     
-    @scala.inline
-    def setDuration(value: typings.jquery.JQuery.Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: typings.jquery.JQuery.Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
   }
 }

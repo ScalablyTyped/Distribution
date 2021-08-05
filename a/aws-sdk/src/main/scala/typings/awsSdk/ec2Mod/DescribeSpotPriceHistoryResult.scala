@@ -18,28 +18,21 @@ trait DescribeSpotPriceHistoryResult extends StObject {
 }
 object DescribeSpotPriceHistoryResult {
   
-  @scala.inline
-  def apply(): DescribeSpotPriceHistoryResult = {
+  inline def apply(): DescribeSpotPriceHistoryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSpotPriceHistoryResult]
   }
   
-  @scala.inline
-  implicit class DescribeSpotPriceHistoryResultMutableBuilder[Self <: DescribeSpotPriceHistoryResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSpotPriceHistoryResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSpotPriceHistory(value: SpotPriceHistoryList): Self = StObject.set(x, "SpotPriceHistory", value.asInstanceOf[js.Any])
+    inline def setSpotPriceHistory(value: SpotPriceHistoryList): Self = StObject.set(x, "SpotPriceHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotPriceHistoryUndefined: Self = StObject.set(x, "SpotPriceHistory", js.undefined)
+    inline def setSpotPriceHistoryUndefined: Self = StObject.set(x, "SpotPriceHistory", js.undefined)
     
-    @scala.inline
-    def setSpotPriceHistoryVarargs(value: SpotPrice*): Self = StObject.set(x, "SpotPriceHistory", js.Array(value :_*))
+    inline def setSpotPriceHistoryVarargs(value: SpotPrice*): Self = StObject.set(x, "SpotPriceHistory", js.Array(value :_*))
   }
 }

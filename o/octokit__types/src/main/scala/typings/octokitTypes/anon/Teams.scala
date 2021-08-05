@@ -18,8 +18,7 @@ trait Teams extends StObject {
 }
 object Teams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     teams: js.Array[Membersurl],
     teams_url: String,
     url: String,
@@ -30,28 +29,20 @@ object Teams {
     __obj.asInstanceOf[Teams]
   }
   
-  @scala.inline
-  implicit class TeamsMutableBuilder[Self <: Teams] (val x: Self) extends AnyVal {
+  extension [Self <: Teams](x: Self) {
     
-    @scala.inline
-    def setTeams(value: js.Array[Membersurl]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+    inline def setTeams(value: js.Array[Membersurl]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamsVarargs(value: Membersurl*): Self = StObject.set(x, "teams", js.Array(value :_*))
+    inline def setTeamsVarargs(value: Membersurl*): Self = StObject.set(x, "teams", js.Array(value :_*))
     
-    @scala.inline
-    def setTeams_url(value: String): Self = StObject.set(x, "teams_url", value.asInstanceOf[js.Any])
+    inline def setTeams_url(value: String): Self = StObject.set(x, "teams_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsers(value: js.Array[Avatarurl]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[Avatarurl]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersVarargs(value: Avatarurl*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: Avatarurl*): Self = StObject.set(x, "users", js.Array(value :_*))
     
-    @scala.inline
-    def setUsers_url(value: String): Self = StObject.set(x, "users_url", value.asInstanceOf[js.Any])
+    inline def setUsers_url(value: String): Self = StObject.set(x, "users_url", value.asInstanceOf[js.Any])
   }
 }

@@ -10,6 +10,5 @@ object customMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(strategyName: String, strategyArguments: js.Any*): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(strategyName.asInstanceOf[js.Any], strategyArguments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def default(strategyName: String, strategyArguments: js.Any*): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(strategyName.asInstanceOf[js.Any], strategyArguments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
 }

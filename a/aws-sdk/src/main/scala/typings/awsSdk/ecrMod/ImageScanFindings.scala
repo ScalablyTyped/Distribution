@@ -28,40 +28,29 @@ trait ImageScanFindings extends StObject {
 }
 object ImageScanFindings {
   
-  @scala.inline
-  def apply(): ImageScanFindings = {
+  inline def apply(): ImageScanFindings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageScanFindings]
   }
   
-  @scala.inline
-  implicit class ImageScanFindingsMutableBuilder[Self <: ImageScanFindings] (val x: Self) extends AnyVal {
+  extension [Self <: ImageScanFindings](x: Self) {
     
-    @scala.inline
-    def setFindingSeverityCounts(value: FindingSeverityCounts): Self = StObject.set(x, "findingSeverityCounts", value.asInstanceOf[js.Any])
+    inline def setFindingSeverityCounts(value: FindingSeverityCounts): Self = StObject.set(x, "findingSeverityCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingSeverityCountsUndefined: Self = StObject.set(x, "findingSeverityCounts", js.undefined)
+    inline def setFindingSeverityCountsUndefined: Self = StObject.set(x, "findingSeverityCounts", js.undefined)
     
-    @scala.inline
-    def setFindings(value: ImageScanFindingList): Self = StObject.set(x, "findings", value.asInstanceOf[js.Any])
+    inline def setFindings(value: ImageScanFindingList): Self = StObject.set(x, "findings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingsUndefined: Self = StObject.set(x, "findings", js.undefined)
+    inline def setFindingsUndefined: Self = StObject.set(x, "findings", js.undefined)
     
-    @scala.inline
-    def setFindingsVarargs(value: ImageScanFinding*): Self = StObject.set(x, "findings", js.Array(value :_*))
+    inline def setFindingsVarargs(value: ImageScanFinding*): Self = StObject.set(x, "findings", js.Array(value :_*))
     
-    @scala.inline
-    def setImageScanCompletedAt(value: ScanTimestamp): Self = StObject.set(x, "imageScanCompletedAt", value.asInstanceOf[js.Any])
+    inline def setImageScanCompletedAt(value: ScanTimestamp): Self = StObject.set(x, "imageScanCompletedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageScanCompletedAtUndefined: Self = StObject.set(x, "imageScanCompletedAt", js.undefined)
+    inline def setImageScanCompletedAtUndefined: Self = StObject.set(x, "imageScanCompletedAt", js.undefined)
     
-    @scala.inline
-    def setVulnerabilitySourceUpdatedAt(value: VulnerabilitySourceUpdateTimestamp): Self = StObject.set(x, "vulnerabilitySourceUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setVulnerabilitySourceUpdatedAt(value: VulnerabilitySourceUpdateTimestamp): Self = StObject.set(x, "vulnerabilitySourceUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVulnerabilitySourceUpdatedAtUndefined: Self = StObject.set(x, "vulnerabilitySourceUpdatedAt", js.undefined)
+    inline def setVulnerabilitySourceUpdatedAtUndefined: Self = StObject.set(x, "vulnerabilitySourceUpdatedAt", js.undefined)
   }
 }

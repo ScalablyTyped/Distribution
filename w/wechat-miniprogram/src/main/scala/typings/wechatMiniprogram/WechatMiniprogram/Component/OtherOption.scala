@@ -41,8 +41,7 @@ trait OtherOption extends StObject {
 }
 object OtherOption {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     behaviors: js.Array[BehaviorIdentifier],
     observers: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
     options: ComponentOptions,
@@ -52,17 +51,13 @@ object OtherOption {
     __obj.asInstanceOf[OtherOption]
   }
   
-  @scala.inline
-  implicit class OtherOptionMutableBuilder[Self <: OtherOption] (val x: Self) extends AnyVal {
+  extension [Self <: OtherOption](x: Self) {
     
-    @scala.inline
-    def setBehaviors(value: js.Array[BehaviorIdentifier]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
+    inline def setBehaviors(value: js.Array[BehaviorIdentifier]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorsVarargs(value: BehaviorIdentifier*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
+    inline def setBehaviorsVarargs(value: BehaviorIdentifier*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
     
-    @scala.inline
-    def setDefinitionFilter(
+    inline def setDefinitionFilter(
       value: (/* defFields */ TrivialOption, /* definitionFilterArr */ js.UndefOr[
           js.Array[
             /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias wechat-miniprogram.WechatMiniprogram.Component.DefinitionFilter */ js.Object
@@ -70,31 +65,22 @@ object OtherOption {
         ]) => Unit
     ): Self = StObject.set(x, "definitionFilter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDefinitionFilterUndefined: Self = StObject.set(x, "definitionFilter", js.undefined)
+    inline def setDefinitionFilterUndefined: Self = StObject.set(x, "definitionFilter", js.undefined)
     
-    @scala.inline
-    def setExternalClasses(value: js.Array[String]): Self = StObject.set(x, "externalClasses", value.asInstanceOf[js.Any])
+    inline def setExternalClasses(value: js.Array[String]): Self = StObject.set(x, "externalClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalClassesUndefined: Self = StObject.set(x, "externalClasses", js.undefined)
+    inline def setExternalClassesUndefined: Self = StObject.set(x, "externalClasses", js.undefined)
     
-    @scala.inline
-    def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value :_*))
+    inline def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value :_*))
     
-    @scala.inline
-    def setObservers(value: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
+    inline def setObservers(value: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: ComponentOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ComponentOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLifetimes(value: PartialPageLifetimes): Self = StObject.set(x, "pageLifetimes", value.asInstanceOf[js.Any])
+    inline def setPageLifetimes(value: PartialPageLifetimes): Self = StObject.set(x, "pageLifetimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLifetimesUndefined: Self = StObject.set(x, "pageLifetimes", js.undefined)
+    inline def setPageLifetimesUndefined: Self = StObject.set(x, "pageLifetimes", js.undefined)
     
-    @scala.inline
-    def setRelations(value: StringDictionary[RelationOption]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
+    inline def setRelations(value: StringDictionary[RelationOption]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
   }
 }

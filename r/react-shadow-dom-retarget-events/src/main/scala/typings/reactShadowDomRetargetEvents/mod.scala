@@ -15,8 +15,7 @@ object mod {
     *
     * A bug is filed at [#10422](https://github.com/facebook/react/issues/10422).
     */
-  @scala.inline
-  def apply(shadowRoot: ShadowRoot): Unit = ^.asInstanceOf[js.Dynamic].apply(shadowRoot.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(shadowRoot: ShadowRoot): Unit = ^.asInstanceOf[js.Dynamic].apply(shadowRoot.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("react-shadow-dom-retarget-events", JSImport.Namespace)
   @js.native

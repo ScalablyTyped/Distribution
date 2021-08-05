@@ -12,20 +12,16 @@ trait SubjectSelectorAtom
 }
 object SubjectSelectorAtom {
   
-  @scala.inline
-  def apply(`type`: String): SubjectSelectorAtom = {
+  inline def apply(`type`: String): SubjectSelectorAtom = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubjectSelectorAtom]
   }
   
-  @scala.inline
-  implicit class SubjectSelectorAtomMutableBuilder[Self <: SubjectSelectorAtom] (val x: Self) extends AnyVal {
+  extension [Self <: SubjectSelectorAtom](x: Self) {
     
-    @scala.inline
-    def setSubject(value: Boolean): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: Boolean): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

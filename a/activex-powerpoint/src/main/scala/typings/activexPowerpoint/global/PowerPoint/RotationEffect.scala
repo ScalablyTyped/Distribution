@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.RotationEffect")
 @js.native
-class RotationEffect protected ()
+/* private */ class RotationEffect ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.RotationEffect {
   
@@ -22,7 +22,7 @@ class RotationEffect protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.RotationEffect_typekey")
   var PowerPointDotRotationEffect_typekey: typings.activexPowerpoint.PowerPoint.RotationEffect = js.native
   

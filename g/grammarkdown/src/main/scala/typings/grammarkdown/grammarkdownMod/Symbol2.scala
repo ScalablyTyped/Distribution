@@ -18,34 +18,25 @@ trait Symbol2 extends StObject {
 }
 object Symbol2 {
   
-  @scala.inline
-  def apply(id: Double, kind: SymbolKind, name: String): Symbol2 = {
+  inline def apply(id: Double, kind: SymbolKind, name: String): Symbol2 = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Symbol2]
   }
   
-  @scala.inline
-  implicit class Symbol2MutableBuilder[Self <: Symbol2] (val x: Self) extends AnyVal {
+  extension [Self <: Symbol2](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: SymbolKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: SymbolKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocals(value: SymbolTable): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+    inline def setLocals(value: SymbolTable): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
+    inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Symbol2): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Symbol2): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

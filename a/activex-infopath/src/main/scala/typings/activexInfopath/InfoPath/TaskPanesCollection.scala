@@ -8,15 +8,14 @@ trait TaskPanesCollection extends StObject {
   
   val Count: Double
   
-  @JSName("InfoPath.TaskPanesCollection_typekey")
+  /* private */ @JSName("InfoPath.TaskPanesCollection_typekey")
   var InfoPathDotTaskPanesCollection_typekey: TaskPanesCollection
   
   def Item(varIndex: js.Any): TaskPaneObject
 }
 object TaskPanesCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     InfoPathDotTaskPanesCollection_typekey: TaskPanesCollection,
     Item: js.Any => TaskPaneObject
@@ -26,16 +25,12 @@ object TaskPanesCollection {
     __obj.asInstanceOf[TaskPanesCollection]
   }
   
-  @scala.inline
-  implicit class TaskPanesCollectionMutableBuilder[Self <: TaskPanesCollection] (val x: Self) extends AnyVal {
+  extension [Self <: TaskPanesCollection](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotTaskPanesCollection_typekey(value: TaskPanesCollection): Self = StObject.set(x, "InfoPath.TaskPanesCollection_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotTaskPanesCollection_typekey(value: TaskPanesCollection): Self = StObject.set(x, "InfoPath.TaskPanesCollection_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => TaskPaneObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => TaskPaneObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

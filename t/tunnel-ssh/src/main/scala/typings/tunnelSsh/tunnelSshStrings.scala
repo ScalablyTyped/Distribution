@@ -8,6 +8,5 @@ object tunnelSshStrings {
   
   @js.native
   sealed trait force extends StObject
-  @scala.inline
-  def force: force = "force".asInstanceOf[force]
+  inline def force: force = "force".asInstanceOf[force]
 }

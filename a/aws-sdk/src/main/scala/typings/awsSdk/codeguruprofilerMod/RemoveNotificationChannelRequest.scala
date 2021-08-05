@@ -18,19 +18,15 @@ trait RemoveNotificationChannelRequest extends StObject {
 }
 object RemoveNotificationChannelRequest {
   
-  @scala.inline
-  def apply(channelId: ChannelId, profilingGroupName: ProfilingGroupName): RemoveNotificationChannelRequest = {
+  inline def apply(channelId: ChannelId, profilingGroupName: ProfilingGroupName): RemoveNotificationChannelRequest = {
     val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveNotificationChannelRequest]
   }
   
-  @scala.inline
-  implicit class RemoveNotificationChannelRequestMutableBuilder[Self <: RemoveNotificationChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveNotificationChannelRequest](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: ChannelId): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: ChannelId): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
+    inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
   }
 }

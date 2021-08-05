@@ -5,35 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def applicationId: java.lang.String = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("applicationId").asInstanceOf[java.lang.String]
-@scala.inline
-def applicationId_=(x: java.lang.String): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("applicationId")(x.asInstanceOf[js.Any])
+inline def applicationId: java.lang.String = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("applicationId").asInstanceOf[java.lang.String]
+inline def applicationId_=(x: java.lang.String): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("applicationId")(x.asInstanceOf[js.Any])
 
 /**
   * Gets all contents from Local Datastore.
   */
-@scala.inline
-def dumpLocalDatastore(): js.Promise[org.scalablytyped.runtime.StringDictionary[js.Any]] = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("dumpLocalDatastore")().asInstanceOf[js.Promise[org.scalablytyped.runtime.StringDictionary[js.Any]]]
+inline def dumpLocalDatastore(): js.Promise[org.scalablytyped.runtime.StringDictionary[js.Any]] = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("dumpLocalDatastore")().asInstanceOf[js.Promise[org.scalablytyped.runtime.StringDictionary[js.Any]]]
 
 /**
   * Enable the current user encryption.
   * This must be called before login any user.
   */
-@scala.inline
-def enableEncryptedUser(): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("enableEncryptedUser")().asInstanceOf[scala.Unit]
+inline def enableEncryptedUser(): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("enableEncryptedUser")().asInstanceOf[scala.Unit]
 
 /**
   * Enable pinning in your application.
   * This must be called before your application can use pinning.
   */
-@scala.inline
-def enableLocalDatastore(): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("enableLocalDatastore")().asInstanceOf[scala.Unit]
+inline def enableLocalDatastore(): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("enableLocalDatastore")().asInstanceOf[scala.Unit]
 
-@scala.inline
-def encryptedUser: scala.Boolean = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("encryptedUser").asInstanceOf[scala.Boolean]
-@scala.inline
-def encryptedUser_=(x: scala.Boolean): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("encryptedUser")(x.asInstanceOf[js.Any])
+inline def encryptedUser: scala.Boolean = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("encryptedUser").asInstanceOf[scala.Boolean]
+inline def encryptedUser_=(x: scala.Boolean): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("encryptedUser")(x.asInstanceOf[js.Any])
 
 /**
   * Call this method first to set up your authentication tokens for Parse.
@@ -42,71 +35,49 @@ def encryptedUser_=(x: scala.Boolean): scala.Unit = typings.parse.mod.global.Par
   * @param javaScriptKey (optional) Your Parse JavaScript Key (Not needed for parse-server)
   * @param masterKey (optional) Your Parse Master Key. (Node.js only!)
   */
-@scala.inline
-def initialize(applicationId: java.lang.String): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def initialize(applicationId: java.lang.String, javaScriptKey: java.lang.String): scala.Unit = (typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any], javaScriptKey.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def initialize(applicationId: java.lang.String, javaScriptKey: java.lang.String, masterKey: java.lang.String): scala.Unit = (typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any], javaScriptKey.asInstanceOf[js.Any], masterKey.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def initialize(applicationId: java.lang.String, javaScriptKey: scala.Unit, masterKey: java.lang.String): scala.Unit = (typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any], javaScriptKey.asInstanceOf[js.Any], masterKey.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def initialize(applicationId: java.lang.String): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def initialize(applicationId: java.lang.String, javaScriptKey: java.lang.String): scala.Unit = (typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any], javaScriptKey.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def initialize(applicationId: java.lang.String, javaScriptKey: java.lang.String, masterKey: java.lang.String): scala.Unit = (typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any], javaScriptKey.asInstanceOf[js.Any], masterKey.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def initialize(applicationId: java.lang.String, javaScriptKey: scala.Unit, masterKey: java.lang.String): scala.Unit = (typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(applicationId.asInstanceOf[js.Any], javaScriptKey.asInstanceOf[js.Any], masterKey.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
 /**
   * Flag that indicates whether Encrypted User is enabled.
   */
-@scala.inline
-def isEncryptedUserEnabled(): scala.Boolean = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("isEncryptedUserEnabled")().asInstanceOf[scala.Boolean]
+inline def isEncryptedUserEnabled(): scala.Boolean = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("isEncryptedUserEnabled")().asInstanceOf[scala.Boolean]
 
 /**
   * Flag that indicates whether Local Datastore is enabled.
   */
-@scala.inline
-def isLocalDatastoreEnabled(): scala.Boolean = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("isLocalDatastoreEnabled")().asInstanceOf[scala.Boolean]
+inline def isLocalDatastoreEnabled(): scala.Boolean = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("isLocalDatastoreEnabled")().asInstanceOf[scala.Boolean]
 
-@scala.inline
-def javaScriptKey: js.UndefOr[java.lang.String] = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("javaScriptKey").asInstanceOf[js.UndefOr[java.lang.String]]
-@scala.inline
-def javaScriptKey_=(x: js.UndefOr[java.lang.String]): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("javaScriptKey")(x.asInstanceOf[js.Any])
+inline def javaScriptKey: js.UndefOr[java.lang.String] = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("javaScriptKey").asInstanceOf[js.UndefOr[java.lang.String]]
+inline def javaScriptKey_=(x: js.UndefOr[java.lang.String]): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("javaScriptKey")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def liveQueryServerURL: java.lang.String = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("liveQueryServerURL").asInstanceOf[java.lang.String]
-@scala.inline
-def liveQueryServerURL_=(x: java.lang.String): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("liveQueryServerURL")(x.asInstanceOf[js.Any])
+inline def liveQueryServerURL: java.lang.String = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("liveQueryServerURL").asInstanceOf[java.lang.String]
+inline def liveQueryServerURL_=(x: java.lang.String): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("liveQueryServerURL")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def masterKey: js.UndefOr[java.lang.String] = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("masterKey").asInstanceOf[js.UndefOr[java.lang.String]]
-@scala.inline
-def masterKey_=(x: js.UndefOr[java.lang.String]): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("masterKey")(x.asInstanceOf[js.Any])
+inline def masterKey: js.UndefOr[java.lang.String] = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("masterKey").asInstanceOf[js.UndefOr[java.lang.String]]
+inline def masterKey_=(x: js.UndefOr[java.lang.String]): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("masterKey")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def secret: java.lang.String = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("secret").asInstanceOf[java.lang.String]
-@scala.inline
-def secret_=(x: java.lang.String): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("secret")(x.asInstanceOf[js.Any])
+inline def secret: java.lang.String = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("secret").asInstanceOf[java.lang.String]
+inline def secret_=(x: java.lang.String): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("secret")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def serverAuthToken: js.UndefOr[java.lang.String] = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("serverAuthToken").asInstanceOf[js.UndefOr[java.lang.String]]
-@scala.inline
-def serverAuthToken_=(x: js.UndefOr[java.lang.String]): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("serverAuthToken")(x.asInstanceOf[js.Any])
+inline def serverAuthToken: js.UndefOr[java.lang.String] = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("serverAuthToken").asInstanceOf[js.UndefOr[java.lang.String]]
+inline def serverAuthToken_=(x: js.UndefOr[java.lang.String]): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("serverAuthToken")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def serverAuthType: js.UndefOr[java.lang.String] = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("serverAuthType").asInstanceOf[js.UndefOr[java.lang.String]]
-@scala.inline
-def serverAuthType_=(x: js.UndefOr[java.lang.String]): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("serverAuthType")(x.asInstanceOf[js.Any])
+inline def serverAuthType: js.UndefOr[java.lang.String] = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("serverAuthType").asInstanceOf[js.UndefOr[java.lang.String]]
+inline def serverAuthType_=(x: js.UndefOr[java.lang.String]): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("serverAuthType")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def serverURL: java.lang.String = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("serverURL").asInstanceOf[java.lang.String]
-@scala.inline
-def serverURL_=(x: java.lang.String): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("serverURL")(x.asInstanceOf[js.Any])
+inline def serverURL: java.lang.String = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].selectDynamic("serverURL").asInstanceOf[java.lang.String]
+inline def serverURL_=(x: java.lang.String): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].updateDynamic("serverURL")(x.asInstanceOf[js.Any])
 
 /**
   * Additionally on React-Native / Expo environments, add AsyncStorage from 'react-native' package
   * @param AsyncStorage AsyncStorage from 'react-native' package
   */
-@scala.inline
-def setAsyncStorage(AsyncStorage: js.Any): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("setAsyncStorage")(AsyncStorage.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setAsyncStorage(AsyncStorage: js.Any): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("setAsyncStorage")(AsyncStorage.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def setLocalDatastoreController(controller: js.Any): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("setLocalDatastoreController")(controller.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setLocalDatastoreController(controller: js.Any): scala.Unit = typings.parse.mod.global.Parse.^.asInstanceOf[js.Dynamic].applyDynamic("setLocalDatastoreController")(controller.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
 type Attributes = org.scalablytyped.runtime.StringDictionary[js.Any]
 

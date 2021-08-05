@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Product extends StObject
 object Product {
   
-  @scala.inline
-  def assets: typings.plaidLink.plaidLinkStrings.assets = "assets".asInstanceOf[typings.plaidLink.plaidLinkStrings.assets]
+  inline def assets: typings.plaidLink.plaidLinkStrings.assets = "assets".asInstanceOf[typings.plaidLink.plaidLinkStrings.assets]
   
-  @scala.inline
-  def auth: typings.plaidLink.plaidLinkStrings.auth = "auth".asInstanceOf[typings.plaidLink.plaidLinkStrings.auth]
+  inline def auth: typings.plaidLink.plaidLinkStrings.auth = "auth".asInstanceOf[typings.plaidLink.plaidLinkStrings.auth]
   
-  @scala.inline
-  def identity: typings.plaidLink.plaidLinkStrings.identity = "identity".asInstanceOf[typings.plaidLink.plaidLinkStrings.identity]
+  inline def identity: typings.plaidLink.plaidLinkStrings.identity = "identity".asInstanceOf[typings.plaidLink.plaidLinkStrings.identity]
   
-  @scala.inline
-  def income: typings.plaidLink.plaidLinkStrings.income = "income".asInstanceOf[typings.plaidLink.plaidLinkStrings.income]
+  inline def income: typings.plaidLink.plaidLinkStrings.income = "income".asInstanceOf[typings.plaidLink.plaidLinkStrings.income]
   
-  @scala.inline
-  def investments: typings.plaidLink.plaidLinkStrings.investments = "investments".asInstanceOf[typings.plaidLink.plaidLinkStrings.investments]
+  inline def investments: typings.plaidLink.plaidLinkStrings.investments = "investments".asInstanceOf[typings.plaidLink.plaidLinkStrings.investments]
   
-  @scala.inline
-  def liabilities: typings.plaidLink.plaidLinkStrings.liabilities = "liabilities".asInstanceOf[typings.plaidLink.plaidLinkStrings.liabilities]
+  inline def liabilities: typings.plaidLink.plaidLinkStrings.liabilities = "liabilities".asInstanceOf[typings.plaidLink.plaidLinkStrings.liabilities]
   
-  @scala.inline
-  def transactions: typings.plaidLink.plaidLinkStrings.transactions = "transactions".asInstanceOf[typings.plaidLink.plaidLinkStrings.transactions]
+  inline def transactions: typings.plaidLink.plaidLinkStrings.transactions = "transactions".asInstanceOf[typings.plaidLink.plaidLinkStrings.transactions]
 }

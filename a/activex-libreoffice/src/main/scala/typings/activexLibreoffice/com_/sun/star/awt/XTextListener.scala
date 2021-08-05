@@ -17,8 +17,7 @@ trait XTextListener
 }
 object XTextListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -29,10 +28,8 @@ object XTextListener {
     __obj.asInstanceOf[XTextListener]
   }
   
-  @scala.inline
-  implicit class XTextListenerMutableBuilder[Self <: XTextListener] (val x: Self) extends AnyVal {
+  extension [Self <: XTextListener](x: Self) {
     
-    @scala.inline
-    def setTextChanged(value: TextEvent => Unit): Self = StObject.set(x, "textChanged", js.Any.fromFunction1(value))
+    inline def setTextChanged(value: TextEvent => Unit): Self = StObject.set(x, "textChanged", js.Any.fromFunction1(value))
   }
 }

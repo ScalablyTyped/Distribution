@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimeoutPredicate extends StObject
 object TimeoutPredicate {
   
-  @scala.inline
-  def activity: typings.ipp.ippStrings.activity = "activity".asInstanceOf[typings.ipp.ippStrings.activity]
+  inline def activity: typings.ipp.ippStrings.activity = "activity".asInstanceOf[typings.ipp.ippStrings.activity]
   
-  @scala.inline
-  def inactivity: typings.ipp.ippStrings.inactivity = "inactivity".asInstanceOf[typings.ipp.ippStrings.inactivity]
+  inline def inactivity: typings.ipp.ippStrings.inactivity = "inactivity".asInstanceOf[typings.ipp.ippStrings.inactivity]
   
-  @scala.inline
-  def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
+  inline def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
 }

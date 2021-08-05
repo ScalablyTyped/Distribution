@@ -18,8 +18,7 @@ trait ParametersChecksGetEndpoint extends StObject {
 }
 object ParametersChecksGetEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ChecksGetEndpoint,
     request: ChecksGetRequestOptions,
     response: OctokitResponse[ChecksGetResponseData]
@@ -28,16 +27,12 @@ object ParametersChecksGetEndpoint {
     __obj.asInstanceOf[ParametersChecksGetEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersChecksGetEndpointMutableBuilder[Self <: ParametersChecksGetEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersChecksGetEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ChecksGetEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ChecksGetEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ChecksGetRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ChecksGetRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ChecksGetResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ChecksGetResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

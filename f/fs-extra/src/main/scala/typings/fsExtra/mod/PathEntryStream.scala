@@ -10,16 +10,13 @@ trait PathEntryStream extends StObject {
 }
 object PathEntryStream {
   
-  @scala.inline
-  def apply(read: () => PathEntry | Null): PathEntryStream = {
+  inline def apply(read: () => PathEntry | Null): PathEntryStream = {
     val __obj = js.Dynamic.literal(read = js.Any.fromFunction0(read))
     __obj.asInstanceOf[PathEntryStream]
   }
   
-  @scala.inline
-  implicit class PathEntryStreamMutableBuilder[Self <: PathEntryStream] (val x: Self) extends AnyVal {
+  extension [Self <: PathEntryStream](x: Self) {
     
-    @scala.inline
-    def setRead(value: () => PathEntry | Null): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+    inline def setRead(value: () => PathEntry | Null): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
   }
 }

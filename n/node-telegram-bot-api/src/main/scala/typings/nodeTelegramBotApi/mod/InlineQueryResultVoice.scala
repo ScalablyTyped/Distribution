@@ -24,41 +24,30 @@ trait InlineQueryResultVoice
 }
 object InlineQueryResultVoice {
   
-  @scala.inline
-  def apply(id: String, title: String, voice_url: String): InlineQueryResultVoice = {
+  inline def apply(id: String, title: String, voice_url: String): InlineQueryResultVoice = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], voice_url = voice_url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("voice")
     __obj.asInstanceOf[InlineQueryResultVoice]
   }
   
-  @scala.inline
-  implicit class InlineQueryResultVoiceMutableBuilder[Self <: InlineQueryResultVoice] (val x: Self) extends AnyVal {
+  extension [Self <: InlineQueryResultVoice](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
+    inline def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
+    inline def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: voice): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: voice): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoice_duration(value: Double): Self = StObject.set(x, "voice_duration", value.asInstanceOf[js.Any])
+    inline def setVoice_duration(value: Double): Self = StObject.set(x, "voice_duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoice_durationUndefined: Self = StObject.set(x, "voice_duration", js.undefined)
+    inline def setVoice_durationUndefined: Self = StObject.set(x, "voice_duration", js.undefined)
     
-    @scala.inline
-    def setVoice_url(value: String): Self = StObject.set(x, "voice_url", value.asInstanceOf[js.Any])
+    inline def setVoice_url(value: String): Self = StObject.set(x, "voice_url", value.asInstanceOf[js.Any])
   }
 }

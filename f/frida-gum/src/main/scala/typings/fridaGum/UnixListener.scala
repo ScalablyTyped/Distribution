@@ -16,16 +16,13 @@ trait UnixListener
 }
 object UnixListener {
   
-  @scala.inline
-  def apply(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit], path: String): UnixListener = {
+  inline def apply(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit], path: String): UnixListener = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction0(accept), close = js.Any.fromFunction0(close), path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnixListener]
   }
   
-  @scala.inline
-  implicit class UnixListenerMutableBuilder[Self <: UnixListener] (val x: Self) extends AnyVal {
+  extension [Self <: UnixListener](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

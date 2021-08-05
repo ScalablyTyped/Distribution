@@ -15,23 +15,19 @@ trait Environment extends StObject {
 }
 object Environment {
   
-  @scala.inline
-  def apply(): Environment = {
+  inline def apply(): Environment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Environment]
   }
   
-  @scala.inline
-  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+  extension [Self <: Environment](x: Self) {
     
-    @scala.inline
-    def setCustomValues(
+    inline def setCustomValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Environment & TopLevel[js.Any]
     ): Self = StObject.set(x, "customValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomValuesUndefined: Self = StObject.set(x, "customValues", js.undefined)
+    inline def setCustomValuesUndefined: Self = StObject.set(x, "customValues", js.undefined)
   }
 }

@@ -43,55 +43,39 @@ trait ServicePerimeter extends StObject {
 }
 object ServicePerimeter {
   
-  @scala.inline
-  def apply(): ServicePerimeter = {
+  inline def apply(): ServicePerimeter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServicePerimeter]
   }
   
-  @scala.inline
-  implicit class ServicePerimeterMutableBuilder[Self <: ServicePerimeter] (val x: Self) extends AnyVal {
+  extension [Self <: ServicePerimeter](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPerimeterType(value: String): Self = StObject.set(x, "perimeterType", value.asInstanceOf[js.Any])
+    inline def setPerimeterType(value: String): Self = StObject.set(x, "perimeterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerimeterTypeUndefined: Self = StObject.set(x, "perimeterType", js.undefined)
+    inline def setPerimeterTypeUndefined: Self = StObject.set(x, "perimeterType", js.undefined)
     
-    @scala.inline
-    def setSpec(value: ServicePerimeterConfig): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: ServicePerimeterConfig): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ServicePerimeterConfig): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ServicePerimeterConfig): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUseExplicitDryRunSpec(value: Boolean): Self = StObject.set(x, "useExplicitDryRunSpec", value.asInstanceOf[js.Any])
+    inline def setUseExplicitDryRunSpec(value: Boolean): Self = StObject.set(x, "useExplicitDryRunSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseExplicitDryRunSpecUndefined: Self = StObject.set(x, "useExplicitDryRunSpec", js.undefined)
+    inline def setUseExplicitDryRunSpecUndefined: Self = StObject.set(x, "useExplicitDryRunSpec", js.undefined)
   }
 }

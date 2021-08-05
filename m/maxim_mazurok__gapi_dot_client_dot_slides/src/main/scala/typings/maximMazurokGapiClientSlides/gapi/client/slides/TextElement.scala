@@ -29,43 +29,31 @@ trait TextElement extends StObject {
 }
 object TextElement {
   
-  @scala.inline
-  def apply(): TextElement = {
+  inline def apply(): TextElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextElement]
   }
   
-  @scala.inline
-  implicit class TextElementMutableBuilder[Self <: TextElement] (val x: Self) extends AnyVal {
+  extension [Self <: TextElement](x: Self) {
     
-    @scala.inline
-    def setAutoText(value: AutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
+    inline def setAutoText(value: AutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
+    inline def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
     
-    @scala.inline
-    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+    inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+    inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
-    @scala.inline
-    def setParagraphMarker(value: ParagraphMarker): Self = StObject.set(x, "paragraphMarker", value.asInstanceOf[js.Any])
+    inline def setParagraphMarker(value: ParagraphMarker): Self = StObject.set(x, "paragraphMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphMarkerUndefined: Self = StObject.set(x, "paragraphMarker", js.undefined)
+    inline def setParagraphMarkerUndefined: Self = StObject.set(x, "paragraphMarker", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
-    @scala.inline
-    def setTextRun(value: TextRun): Self = StObject.set(x, "textRun", value.asInstanceOf[js.Any])
+    inline def setTextRun(value: TextRun): Self = StObject.set(x, "textRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRunUndefined: Self = StObject.set(x, "textRun", js.undefined)
+    inline def setTextRunUndefined: Self = StObject.set(x, "textRun", js.undefined)
   }
 }

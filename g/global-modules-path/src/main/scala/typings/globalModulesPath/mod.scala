@@ -10,8 +10,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPath(module: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(module.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  @scala.inline
-  def getPath(module: String, executable: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(module.asInstanceOf[js.Any], executable.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def getPath(module: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(module.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def getPath(module: String, executable: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(module.asInstanceOf[js.Any], executable.asInstanceOf[js.Any])).asInstanceOf[String | Null]
 }

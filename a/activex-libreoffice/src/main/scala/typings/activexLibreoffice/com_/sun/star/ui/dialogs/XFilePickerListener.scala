@@ -54,8 +54,7 @@ trait XFilePickerListener
 }
 object XFilePickerListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     controlStateChanged: FilePickerEvent => Unit,
     dialogSizeChanged: () => Unit,
@@ -70,22 +69,16 @@ object XFilePickerListener {
     __obj.asInstanceOf[XFilePickerListener]
   }
   
-  @scala.inline
-  implicit class XFilePickerListenerMutableBuilder[Self <: XFilePickerListener] (val x: Self) extends AnyVal {
+  extension [Self <: XFilePickerListener](x: Self) {
     
-    @scala.inline
-    def setControlStateChanged(value: FilePickerEvent => Unit): Self = StObject.set(x, "controlStateChanged", js.Any.fromFunction1(value))
+    inline def setControlStateChanged(value: FilePickerEvent => Unit): Self = StObject.set(x, "controlStateChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDialogSizeChanged(value: () => Unit): Self = StObject.set(x, "dialogSizeChanged", js.Any.fromFunction0(value))
+    inline def setDialogSizeChanged(value: () => Unit): Self = StObject.set(x, "dialogSizeChanged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDirectoryChanged(value: FilePickerEvent => Unit): Self = StObject.set(x, "directoryChanged", js.Any.fromFunction1(value))
+    inline def setDirectoryChanged(value: FilePickerEvent => Unit): Self = StObject.set(x, "directoryChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFileSelectionChanged(value: FilePickerEvent => Unit): Self = StObject.set(x, "fileSelectionChanged", js.Any.fromFunction1(value))
+    inline def setFileSelectionChanged(value: FilePickerEvent => Unit): Self = StObject.set(x, "fileSelectionChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHelpRequested(value: FilePickerEvent => String): Self = StObject.set(x, "helpRequested", js.Any.fromFunction1(value))
+    inline def setHelpRequested(value: FilePickerEvent => String): Self = StObject.set(x, "helpRequested", js.Any.fromFunction1(value))
   }
 }

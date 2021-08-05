@@ -16,19 +16,15 @@ trait Implementation extends StObject {
 }
 object Implementation {
   
-  @scala.inline
-  def apply(isDefault: Boolean, unoID: String): Implementation = {
+  inline def apply(isDefault: Boolean, unoID: String): Implementation = {
     val __obj = js.Dynamic.literal(isDefault = isDefault.asInstanceOf[js.Any], unoID = unoID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Implementation]
   }
   
-  @scala.inline
-  implicit class ImplementationMutableBuilder[Self <: Implementation] (val x: Self) extends AnyVal {
+  extension [Self <: Implementation](x: Self) {
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnoID(value: String): Self = StObject.set(x, "unoID", value.asInstanceOf[js.Any])
+    inline def setUnoID(value: String): Self = StObject.set(x, "unoID", value.asInstanceOf[js.Any])
   }
 }

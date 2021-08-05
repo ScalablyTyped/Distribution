@@ -45,11 +45,11 @@ object settingregistryMod {
       * #### Notes
       * It is safe to call this function multiple times with the same plugin name.
       */
-    var _addSchema: js.Any = js.native
+    /* private */ var _addSchema: js.Any = js.native
     
-    var _composer: js.Any = js.native
+    /* private */ var _composer: js.Any = js.native
     
-    var _validator: js.Any = js.native
+    /* private */ var _validator: js.Any = js.native
   }
   
   @JSImport("@jupyterlab/settingregistry/lib/settingregistry", "SettingRegistry")
@@ -65,35 +65,35 @@ object settingregistryMod {
     /**
       * Load a plugin into the registry.
       */
-    var _load: js.Any = js.native
+    /* private */ var _load: js.Any = js.native
     
-    var _pluginChanged: js.Any = js.native
+    /* private */ var _pluginChanged: js.Any = js.native
     
     /**
       * Preload a list of plugins and fail gracefully.
       */
-    var _preload: js.Any = js.native
+    /* private */ var _preload: js.Any = js.native
     
-    var _ready: js.Any = js.native
+    /* private */ var _ready: js.Any = js.native
     
     /**
       * Save a plugin in the registry.
       */
-    var _save: js.Any = js.native
+    /* private */ var _save: js.Any = js.native
     
-    var _timeout: js.Any = js.native
+    /* private */ var _timeout: js.Any = js.native
     
     /**
       * Transform the plugin if necessary.
       */
-    var _transform: js.Any = js.native
+    /* private */ var _transform: js.Any = js.native
     
-    var _transformers: js.Any = js.native
+    /* private */ var _transformers: js.Any = js.native
     
     /**
       * Validate and preload a plugin, compose the `composite` data.
       */
-    var _validate: js.Any = js.native
+    /* private */ var _validate: js.Any = js.native
     
     /**
       * The data connector used by the setting registry.
@@ -244,8 +244,7 @@ object settingregistryMod {
       *
       * @returns A loadable list of shortcuts (omitting disabled and overridden).
       */
-    @scala.inline
-    def reconcileShortcuts(defaults: js.Array[IShortcut], user: js.Array[IShortcut]): js.Array[IShortcut] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileShortcuts")(defaults.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[js.Array[IShortcut]]
+    inline def reconcileShortcuts(defaults: js.Array[IShortcut], user: js.Array[IShortcut]): js.Array[IShortcut] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileShortcuts")(defaults.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[js.Array[IShortcut]]
     
     /**
       * The instantiation options for a setting registry
@@ -279,38 +278,28 @@ object settingregistryMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(connector: IDataConnector[IPlugin, String, String, String]): IOptions = {
+      inline def apply(connector: IDataConnector[IPlugin, String, String, String]): IOptions = {
         val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setConnector(value: IDataConnector[IPlugin, String, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+        inline def setConnector(value: IDataConnector[IPlugin, String, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlugins(value: js.Array[IPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+        inline def setPlugins(value: js.Array[IPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+        inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
         
-        @scala.inline
-        def setPluginsVarargs(value: IPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+        inline def setPluginsVarargs(value: IPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
         
-        @scala.inline
-        def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+        inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+        inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
         
-        @scala.inline
-        def setValidator(value: ISchemaValidator): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+        inline def setValidator(value: ISchemaValidator): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+        inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
       }
     }
   }
@@ -335,14 +324,14 @@ object settingregistryMod {
     /* CompleteClass */
     override def default(key: String): js.UndefOr[PartialJSONValue] = js.native
     
-    var _changed: js.Any = js.native
+    /* private */ var _changed: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
     /**
       * Handle plugin changes in the setting registry.
       */
-    var _onPluginChanged: js.Any = js.native
+    /* private */ var _onPluginChanged: js.Any = js.native
     
     /**
       * Return the defaults in a commented JSON format.
@@ -533,20 +522,16 @@ object settingregistryMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(plugin: IPlugin, registry: ISettingRegistry): typings.jupyterlabSettingregistry.settingregistryMod.Settings.IOptions = {
+      inline def apply(plugin: IPlugin, registry: ISettingRegistry): typings.jupyterlabSettingregistry.settingregistryMod.Settings.IOptions = {
         val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.jupyterlabSettingregistry.settingregistryMod.Settings.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabSettingregistry.settingregistryMod.Settings.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jupyterlabSettingregistry.settingregistryMod.Settings.IOptions](x: Self) {
         
-        @scala.inline
-        def setPlugin(value: IPlugin): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+        inline def setPlugin(value: IPlugin): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegistry(value: ISettingRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+        inline def setRegistry(value: ISettingRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -603,32 +588,24 @@ object settingregistryMod {
     }
     object IError {
       
-      @scala.inline
-      def apply(dataPath: String, keyword: String, message: String, schemaPath: String): IError = {
+      inline def apply(dataPath: String, keyword: String, message: String, schemaPath: String): IError = {
         val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
         __obj.asInstanceOf[IError]
       }
       
-      @scala.inline
-      implicit class IErrorMutableBuilder[Self <: IError] (val x: Self) extends AnyVal {
+      extension [Self <: IError](x: Self) {
         
-        @scala.inline
-        def setDataPath(value: String): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
+        inline def setDataPath(value: String): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+        inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParams(value: ReadonlyJSONObject): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: ReadonlyJSONObject): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+        inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
-        @scala.inline
-        def setSchemaPath(value: String): Self = StObject.set(x, "schemaPath", value.asInstanceOf[js.Any])
+        inline def setSchemaPath(value: String): Self = StObject.set(x, "schemaPath", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -24,50 +24,36 @@ object anon {
   }
   object Accuracy {
     
-    @scala.inline
-    def apply(latitude: Double, longitude: Double): Accuracy = {
+    inline def apply(latitude: Double, longitude: Double): Accuracy = {
       val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], accuracy = null, altitude = null, altitudeAccuracy = null, heading = null, speed = null)
       __obj.asInstanceOf[Accuracy]
     }
     
-    @scala.inline
-    implicit class AccuracyMutableBuilder[Self <: Accuracy] (val x: Self) extends AnyVal {
+    extension [Self <: Accuracy](x: Self) {
       
-      @scala.inline
-      def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+      inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccuracyNull: Self = StObject.set(x, "accuracy", null)
+      inline def setAccuracyNull: Self = StObject.set(x, "accuracy", null)
       
-      @scala.inline
-      def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+      inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltitudeAccuracy(value: Double): Self = StObject.set(x, "altitudeAccuracy", value.asInstanceOf[js.Any])
+      inline def setAltitudeAccuracy(value: Double): Self = StObject.set(x, "altitudeAccuracy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltitudeAccuracyNull: Self = StObject.set(x, "altitudeAccuracy", null)
+      inline def setAltitudeAccuracyNull: Self = StObject.set(x, "altitudeAccuracy", null)
       
-      @scala.inline
-      def setAltitudeNull: Self = StObject.set(x, "altitude", null)
+      inline def setAltitudeNull: Self = StObject.set(x, "altitude", null)
       
-      @scala.inline
-      def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+      inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadingNull: Self = StObject.set(x, "heading", null)
+      inline def setHeadingNull: Self = StObject.set(x, "heading", null)
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedNull: Self = StObject.set(x, "speed", null)
+      inline def setSpeedNull: Self = StObject.set(x, "speed", null)
     }
   }
   
@@ -79,20 +65,16 @@ object anon {
   }
   object Latitude {
     
-    @scala.inline
-    def apply(latitude: Double, longitude: Double): Latitude = {
+    inline def apply(latitude: Double, longitude: Double): Latitude = {
       val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
       __obj.asInstanceOf[Latitude]
     }
     
-    @scala.inline
-    implicit class LatitudeMutableBuilder[Self <: Latitude] (val x: Self) extends AnyVal {
+    extension [Self <: Latitude](x: Self) {
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,17 +84,14 @@ object anon {
   }
   object LocationServicesEnabled {
     
-    @scala.inline
-    def apply(locationServicesEnabled: Boolean): LocationServicesEnabled = {
+    inline def apply(locationServicesEnabled: Boolean): LocationServicesEnabled = {
       val __obj = js.Dynamic.literal(locationServicesEnabled = locationServicesEnabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocationServicesEnabled]
     }
     
-    @scala.inline
-    implicit class LocationServicesEnabledMutableBuilder[Self <: LocationServicesEnabled] (val x: Self) extends AnyVal {
+    extension [Self <: LocationServicesEnabled](x: Self) {
       
-      @scala.inline
-      def setLocationServicesEnabled(value: Boolean): Self = StObject.set(x, "locationServicesEnabled", value.asInstanceOf[js.Any])
+      inline def setLocationServicesEnabled(value: Boolean): Self = StObject.set(x, "locationServicesEnabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -126,26 +105,20 @@ object anon {
   }
   object NotificationBody {
     
-    @scala.inline
-    def apply(notificationBody: String, notificationTitle: String): NotificationBody = {
+    inline def apply(notificationBody: String, notificationTitle: String): NotificationBody = {
       val __obj = js.Dynamic.literal(notificationBody = notificationBody.asInstanceOf[js.Any], notificationTitle = notificationTitle.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationBody]
     }
     
-    @scala.inline
-    implicit class NotificationBodyMutableBuilder[Self <: NotificationBody] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationBody](x: Self) {
       
-      @scala.inline
-      def setNotificationBody(value: String): Self = StObject.set(x, "notificationBody", value.asInstanceOf[js.Any])
+      inline def setNotificationBody(value: String): Self = StObject.set(x, "notificationBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationColor(value: String): Self = StObject.set(x, "notificationColor", value.asInstanceOf[js.Any])
+      inline def setNotificationColor(value: String): Self = StObject.set(x, "notificationColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationColorUndefined: Self = StObject.set(x, "notificationColor", js.undefined)
+      inline def setNotificationColorUndefined: Self = StObject.set(x, "notificationColor", js.undefined)
       
-      @scala.inline
-      def setNotificationTitle(value: String): Self = StObject.set(x, "notificationTitle", value.asInstanceOf[js.Any])
+      inline def setNotificationTitle(value: String): Self = StObject.set(x, "notificationTitle", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,20 +131,16 @@ object anon {
   }
   object PickLocationGeocodedLocat {
     
-    @scala.inline
-    def apply(latitude: Double, longitude: Double): PickLocationGeocodedLocat = {
+    inline def apply(latitude: Double, longitude: Double): PickLocationGeocodedLocat = {
       val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickLocationGeocodedLocat]
     }
     
-    @scala.inline
-    implicit class PickLocationGeocodedLocatMutableBuilder[Self <: PickLocationGeocodedLocat] (val x: Self) extends AnyVal {
+    extension [Self <: PickLocationGeocodedLocat](x: Self) {
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,17 +150,14 @@ object anon {
   }
   object Remove {
     
-    @scala.inline
-    def apply(remove: () => Unit): Remove = {
+    inline def apply(remove: () => Unit): Remove = {
       val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
       __obj.asInstanceOf[Remove]
     }
     
-    @scala.inline
-    implicit class RemoveMutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
+    extension [Self <: Remove](x: Self) {
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }
   }
 }

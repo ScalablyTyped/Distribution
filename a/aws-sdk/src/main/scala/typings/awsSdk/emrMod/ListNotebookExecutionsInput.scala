@@ -33,43 +33,31 @@ trait ListNotebookExecutionsInput extends StObject {
 }
 object ListNotebookExecutionsInput {
   
-  @scala.inline
-  def apply(): ListNotebookExecutionsInput = {
+  inline def apply(): ListNotebookExecutionsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNotebookExecutionsInput]
   }
   
-  @scala.inline
-  implicit class ListNotebookExecutionsInputMutableBuilder[Self <: ListNotebookExecutionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListNotebookExecutionsInput](x: Self) {
     
-    @scala.inline
-    def setEditorId(value: XmlStringMaxLen256): Self = StObject.set(x, "EditorId", value.asInstanceOf[js.Any])
+    inline def setEditorId(value: XmlStringMaxLen256): Self = StObject.set(x, "EditorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorIdUndefined: Self = StObject.set(x, "EditorId", js.undefined)
+    inline def setEditorIdUndefined: Self = StObject.set(x, "EditorId", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Date): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Date): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NotebookExecutionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NotebookExecutionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTo(value: Date): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: Date): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "To", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "To", js.undefined)
   }
 }

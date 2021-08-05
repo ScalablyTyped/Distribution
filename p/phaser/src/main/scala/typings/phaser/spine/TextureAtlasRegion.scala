@@ -24,8 +24,7 @@ trait TextureAtlasRegion
 }
 object TextureAtlasRegion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     degrees: Double,
     height: Double,
     index: Double,
@@ -50,28 +49,20 @@ object TextureAtlasRegion {
     __obj.asInstanceOf[TextureAtlasRegion]
   }
   
-  @scala.inline
-  implicit class TextureAtlasRegionMutableBuilder[Self <: TextureAtlasRegion] (val x: Self) extends AnyVal {
+  extension [Self <: TextureAtlasRegion](x: Self) {
     
-    @scala.inline
-    def setDegrees(value: Double): Self = StObject.set(x, "degrees", value.asInstanceOf[js.Any])
+    inline def setDegrees(value: Double): Self = StObject.set(x, "degrees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: TextureAtlasPage): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: TextureAtlasPage): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTexture(value: Texture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+    inline def setTexture(value: Texture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

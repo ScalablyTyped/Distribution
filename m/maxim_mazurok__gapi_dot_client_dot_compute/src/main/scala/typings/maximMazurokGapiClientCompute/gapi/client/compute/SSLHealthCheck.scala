@@ -38,49 +38,35 @@ trait SSLHealthCheck extends StObject {
 }
 object SSLHealthCheck {
   
-  @scala.inline
-  def apply(): SSLHealthCheck = {
+  inline def apply(): SSLHealthCheck = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SSLHealthCheck]
   }
   
-  @scala.inline
-  implicit class SSLHealthCheckMutableBuilder[Self <: SSLHealthCheck] (val x: Self) extends AnyVal {
+  extension [Self <: SSLHealthCheck](x: Self) {
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortName(value: String): Self = StObject.set(x, "portName", value.asInstanceOf[js.Any])
+    inline def setPortName(value: String): Self = StObject.set(x, "portName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortNameUndefined: Self = StObject.set(x, "portName", js.undefined)
+    inline def setPortNameUndefined: Self = StObject.set(x, "portName", js.undefined)
     
-    @scala.inline
-    def setPortSpecification(value: String): Self = StObject.set(x, "portSpecification", value.asInstanceOf[js.Any])
+    inline def setPortSpecification(value: String): Self = StObject.set(x, "portSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortSpecificationUndefined: Self = StObject.set(x, "portSpecification", js.undefined)
+    inline def setPortSpecificationUndefined: Self = StObject.set(x, "portSpecification", js.undefined)
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setProxyHeader(value: String): Self = StObject.set(x, "proxyHeader", value.asInstanceOf[js.Any])
+    inline def setProxyHeader(value: String): Self = StObject.set(x, "proxyHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyHeaderUndefined: Self = StObject.set(x, "proxyHeader", js.undefined)
+    inline def setProxyHeaderUndefined: Self = StObject.set(x, "proxyHeader", js.undefined)
     
-    @scala.inline
-    def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

@@ -32,24 +32,19 @@ object cordovaConnectionOptionsMod {
   }
   object CordovaConnectionOptions {
     
-    @scala.inline
-    def apply(database: String, location: String): CordovaConnectionOptions = {
+    inline def apply(database: String, location: String): CordovaConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("cordova")
       __obj.asInstanceOf[CordovaConnectionOptions]
     }
     
-    @scala.inline
-    implicit class CordovaConnectionOptionsMutableBuilder[Self <: CordovaConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CordovaConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: cordova): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: cordova): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

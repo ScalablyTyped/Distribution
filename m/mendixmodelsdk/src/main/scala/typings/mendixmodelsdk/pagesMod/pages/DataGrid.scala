@@ -48,8 +48,7 @@ object DataGrid {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def create(model: IModel): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -60,8 +59,7 @@ object DataGrid {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInBuildingBlockUnderWidget(container: BuildingBlock): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -72,8 +70,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -84,8 +81,7 @@ object DataGrid {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidget(container: DataView): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInDataViewUnderFooterWidget(container: DataView): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -96,8 +92,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidgets(container: DataView): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInDataViewUnderFooterWidgets(container: DataView): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -108,8 +103,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidget(container: DataView): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInDataViewUnderWidget(container: DataView): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -120,8 +114,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidgets(container: DataView): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInDataViewUnderWidgets(container: DataView): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -132,8 +125,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidget(container: DivContainer): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInDivContainerUnderWidget(container: DivContainer): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -144,8 +136,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidgets(container: DivContainer): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInDivContainerUnderWidgets(container: DivContainer): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -156,8 +147,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidget(container: GroupBox): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInGroupBoxUnderWidget(container: GroupBox): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -168,8 +158,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidgets(container: GroupBox): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInGroupBoxUnderWidgets(container: GroupBox): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -180,8 +169,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidget(container: Header): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInHeaderUnderLeftWidget(container: Header): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -192,8 +180,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidgets(container: Header): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInHeaderUnderLeftWidgets(container: Header): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -204,8 +191,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidget(container: Header): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInHeaderUnderRightWidget(container: Header): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -216,8 +202,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidgets(container: Header): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInHeaderUnderRightWidgets(container: Header): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -228,8 +213,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -240,8 +224,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -252,8 +235,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -264,8 +246,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -276,8 +257,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidget(container: Layout): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInLayoutUnderWidget(container: Layout): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -288,8 +268,7 @@ object DataGrid {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidgets(container: Layout): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInLayoutUnderWidgets(container: Layout): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -300,8 +279,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -312,8 +290,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -324,8 +301,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidget(container: ListView): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInListViewUnderWidget(container: ListView): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -336,8 +312,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidgets(container: ListView): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInListViewUnderWidgets(container: ListView): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -348,8 +323,7 @@ object DataGrid {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -360,8 +334,7 @@ object DataGrid {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -372,8 +345,7 @@ object DataGrid {
     *  8.5.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -384,8 +356,7 @@ object DataGrid {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -396,8 +367,7 @@ object DataGrid {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -408,8 +378,7 @@ object DataGrid {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInNativeLayoutUnderWidgets(container: NativeLayout): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -420,8 +389,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInNavigationListItemUnderWidget(container: NavigationListItem): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -432,8 +400,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -444,8 +411,7 @@ object DataGrid {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderParameterWidget(container: ReportPane): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInReportPaneUnderParameterWidget(container: ReportPane): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -456,8 +422,7 @@ object DataGrid {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderReportWidget(container: ReportPane): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInReportPaneUnderReportWidget(container: ReportPane): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -468,8 +433,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -480,8 +444,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -492,8 +455,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidget(container: Snippet): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInSnippetUnderWidget(container: Snippet): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -504,8 +466,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidgets(container: Snippet): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInSnippetUnderWidgets(container: Snippet): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -516,8 +477,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInSplitPaneUnderFirstWidget(container: SplitPane): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -528,8 +488,7 @@ object DataGrid {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -540,8 +499,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInSplitPaneUnderSecondWidget(container: SplitPane): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -552,8 +510,7 @@ object DataGrid {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -564,8 +521,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidget(container: TabPage): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInTabPageUnderWidget(container: TabPage): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -576,8 +532,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidgets(container: TabPage): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInTabPageUnderWidgets(container: TabPage): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -588,8 +543,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidget(container: TableCell): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInTableCellUnderWidget(container: TableCell): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -600,8 +554,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidgets(container: TableCell): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInTableCellUnderWidgets(container: TableCell): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -612,8 +565,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -624,8 +576,7 @@ object DataGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -636,8 +587,7 @@ object DataGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -648,8 +598,7 @@ object DataGrid {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
@@ -660,20 +609,17 @@ object DataGrid {
     *  8.2.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderWidgets(container: WidgetValue): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
+  inline def createInWidgetValueUnderWidgets(container: WidgetValue): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataGrid.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataGrid.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

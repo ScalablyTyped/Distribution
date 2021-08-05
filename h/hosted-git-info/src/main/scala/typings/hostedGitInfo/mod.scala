@@ -125,10 +125,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromUrl(gitUrl: String): js.UndefOr[GitHost] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(gitUrl.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[GitHost]]
-  @scala.inline
-  def fromUrl(gitUrl: String, opts: Options): js.UndefOr[GitHost] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(gitUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[GitHost]]
+  inline def fromUrl(gitUrl: String): js.UndefOr[GitHost] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(gitUrl.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[GitHost]]
+  inline def fromUrl(gitUrl: String, opts: Options): js.UndefOr[GitHost] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(gitUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[GitHost]]
   
   trait FillOptions
     extends StObject
@@ -146,44 +144,32 @@ object mod {
   }
   object FillOptions {
     
-    @scala.inline
-    def apply(): FillOptions = {
+    inline def apply(): FillOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FillOptions]
     }
     
-    @scala.inline
-    implicit class FillOptionsMutableBuilder[Self <: FillOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FillOptions](x: Self) {
       
-      @scala.inline
-      def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setCommittish(value: String): Self = StObject.set(x, "committish", value.asInstanceOf[js.Any])
+      inline def setCommittish(value: String): Self = StObject.set(x, "committish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommittishUndefined: Self = StObject.set(x, "committish", js.undefined)
+      inline def setCommittishUndefined: Self = StObject.set(x, "committish", js.undefined)
       
-      @scala.inline
-      def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+      inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
+      inline def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setTreepath(value: String): Self = StObject.set(x, "treepath", value.asInstanceOf[js.Any])
+      inline def setTreepath(value: String): Self = StObject.set(x, "treepath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreepathUndefined: Self = StObject.set(x, "treepath", js.undefined)
+      inline def setTreepathUndefined: Self = StObject.set(x, "treepath", js.undefined)
     }
   }
   
@@ -294,17 +280,13 @@ object mod {
   trait Hosts extends StObject
   object Hosts {
     
-    @scala.inline
-    def bitbucket: typings.hostedGitInfo.hostedGitInfoStrings.bitbucket = "bitbucket".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.bitbucket]
+    inline def bitbucket: typings.hostedGitInfo.hostedGitInfoStrings.bitbucket = "bitbucket".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.bitbucket]
     
-    @scala.inline
-    def gist: typings.hostedGitInfo.hostedGitInfoStrings.gist = "gist".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.gist]
+    inline def gist: typings.hostedGitInfo.hostedGitInfoStrings.gist = "gist".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.gist]
     
-    @scala.inline
-    def github: typings.hostedGitInfo.hostedGitInfoStrings.github = "github".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.github]
+    inline def github: typings.hostedGitInfo.hostedGitInfoStrings.github = "github".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.github]
     
-    @scala.inline
-    def gitlab: typings.hostedGitInfo.hostedGitInfoStrings.gitlab = "gitlab".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.gitlab]
+    inline def gitlab: typings.hostedGitInfo.hostedGitInfoStrings.gitlab = "gitlab".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.gitlab]
   }
   
   trait Options extends StObject {
@@ -315,26 +297,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setNoCommittish(value: Boolean): Self = StObject.set(x, "noCommittish", value.asInstanceOf[js.Any])
+      inline def setNoCommittish(value: Boolean): Self = StObject.set(x, "noCommittish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoCommittishUndefined: Self = StObject.set(x, "noCommittish", js.undefined)
+      inline def setNoCommittishUndefined: Self = StObject.set(x, "noCommittish", js.undefined)
       
-      @scala.inline
-      def setNoGitPlus(value: Boolean): Self = StObject.set(x, "noGitPlus", value.asInstanceOf[js.Any])
+      inline def setNoGitPlus(value: Boolean): Self = StObject.set(x, "noGitPlus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoGitPlusUndefined: Self = StObject.set(x, "noGitPlus", js.undefined)
+      inline def setNoGitPlusUndefined: Self = StObject.set(x, "noGitPlus", js.undefined)
     }
   }
   
@@ -355,40 +331,28 @@ object mod {
   trait Representation extends StObject
   object Representation {
     
-    @scala.inline
-    def browse: typings.hostedGitInfo.hostedGitInfoStrings.browse = "browse".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.browse]
+    inline def browse: typings.hostedGitInfo.hostedGitInfoStrings.browse = "browse".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.browse]
     
-    @scala.inline
-    def bugs: typings.hostedGitInfo.hostedGitInfoStrings.bugs = "bugs".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.bugs]
+    inline def bugs: typings.hostedGitInfo.hostedGitInfoStrings.bugs = "bugs".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.bugs]
     
-    @scala.inline
-    def docs: typings.hostedGitInfo.hostedGitInfoStrings.docs = "docs".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.docs]
+    inline def docs: typings.hostedGitInfo.hostedGitInfoStrings.docs = "docs".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.docs]
     
-    @scala.inline
-    def file: typings.hostedGitInfo.hostedGitInfoStrings.file = "file".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.file]
+    inline def file: typings.hostedGitInfo.hostedGitInfoStrings.file = "file".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.file]
     
-    @scala.inline
-    def git: typings.hostedGitInfo.hostedGitInfoStrings.git = "git".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.git]
+    inline def git: typings.hostedGitInfo.hostedGitInfoStrings.git = "git".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.git]
     
-    @scala.inline
-    def hash: typings.hostedGitInfo.hostedGitInfoStrings.hash = "hash".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.hash]
+    inline def hash: typings.hostedGitInfo.hostedGitInfoStrings.hash = "hash".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.hash]
     
-    @scala.inline
-    def https: typings.hostedGitInfo.hostedGitInfoStrings.https = "https".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.https]
+    inline def https: typings.hostedGitInfo.hostedGitInfoStrings.https = "https".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.https]
     
-    @scala.inline
-    def path: typings.hostedGitInfo.hostedGitInfoStrings.path = "path".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.path]
+    inline def path: typings.hostedGitInfo.hostedGitInfoStrings.path = "path".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.path]
     
-    @scala.inline
-    def shortcut: typings.hostedGitInfo.hostedGitInfoStrings.shortcut = "shortcut".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.shortcut]
+    inline def shortcut: typings.hostedGitInfo.hostedGitInfoStrings.shortcut = "shortcut".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.shortcut]
     
-    @scala.inline
-    def ssh: typings.hostedGitInfo.hostedGitInfoStrings.ssh = "ssh".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.ssh]
+    inline def ssh: typings.hostedGitInfo.hostedGitInfoStrings.ssh = "ssh".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.ssh]
     
-    @scala.inline
-    def sshurl: typings.hostedGitInfo.hostedGitInfoStrings.sshurl = "sshurl".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.sshurl]
+    inline def sshurl: typings.hostedGitInfo.hostedGitInfoStrings.sshurl = "sshurl".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.sshurl]
     
-    @scala.inline
-    def tarball: typings.hostedGitInfo.hostedGitInfoStrings.tarball = "tarball".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.tarball]
+    inline def tarball: typings.hostedGitInfo.hostedGitInfoStrings.tarball = "tarball".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.tarball]
   }
 }

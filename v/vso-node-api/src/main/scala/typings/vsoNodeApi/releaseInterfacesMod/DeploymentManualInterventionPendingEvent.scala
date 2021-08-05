@@ -21,8 +21,7 @@ trait DeploymentManualInterventionPendingEvent extends StObject {
 }
 object DeploymentManualInterventionPendingEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deployment: Deployment,
     emailRecipients: js.Array[String],
     environmentOwner: IdentityRef,
@@ -34,28 +33,20 @@ object DeploymentManualInterventionPendingEvent {
     __obj.asInstanceOf[DeploymentManualInterventionPendingEvent]
   }
   
-  @scala.inline
-  implicit class DeploymentManualInterventionPendingEventMutableBuilder[Self <: DeploymentManualInterventionPendingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentManualInterventionPendingEvent](x: Self) {
     
-    @scala.inline
-    def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailRecipients(value: js.Array[String]): Self = StObject.set(x, "emailRecipients", value.asInstanceOf[js.Any])
+    inline def setEmailRecipients(value: js.Array[String]): Self = StObject.set(x, "emailRecipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailRecipientsVarargs(value: String*): Self = StObject.set(x, "emailRecipients", js.Array(value :_*))
+    inline def setEmailRecipientsVarargs(value: String*): Self = StObject.set(x, "emailRecipients", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvironmentOwner(value: IdentityRef): Self = StObject.set(x, "environmentOwner", value.asInstanceOf[js.Any])
+    inline def setEnvironmentOwner(value: IdentityRef): Self = StObject.set(x, "environmentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualIntervention(value: ManualIntervention): Self = StObject.set(x, "manualIntervention", value.asInstanceOf[js.Any])
+    inline def setManualIntervention(value: ManualIntervention): Self = StObject.set(x, "manualIntervention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
   }
 }

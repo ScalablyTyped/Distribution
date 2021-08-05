@@ -13,16 +13,13 @@ trait GetRequestPostDataRequest extends StObject {
 }
 object GetRequestPostDataRequest {
   
-  @scala.inline
-  def apply(requestId: RequestId): GetRequestPostDataRequest = {
+  inline def apply(requestId: RequestId): GetRequestPostDataRequest = {
     val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRequestPostDataRequest]
   }
   
-  @scala.inline
-  implicit class GetRequestPostDataRequestMutableBuilder[Self <: GetRequestPostDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRequestPostDataRequest](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

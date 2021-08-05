@@ -10,8 +10,7 @@ object setTimeoutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     timeouts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Timeouts */ js.Any
   ): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(timeouts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

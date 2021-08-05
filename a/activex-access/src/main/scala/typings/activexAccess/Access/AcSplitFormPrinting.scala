@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcSplitFormPrinting extends StObject
 object AcSplitFormPrinting {
   
-  @scala.inline
-  def acFormOnly: `0` = 0.asInstanceOf[`0`]
+  inline def acFormOnly: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acGridOnly: `1` = 1.asInstanceOf[`1`]
+  inline def acGridOnly: `1` = 1.asInstanceOf[`1`]
 }

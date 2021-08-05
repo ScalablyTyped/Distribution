@@ -35,38 +35,28 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBubble(value: js.Array[String]): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
+      inline def setBubble(value: js.Array[String]): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
+      inline def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
       
-      @scala.inline
-      def setBubbleVarargs(value: String*): Self = StObject.set(x, "bubble", js.Array(value :_*))
+      inline def setBubbleVarargs(value: String*): Self = StObject.set(x, "bubble", js.Array(value :_*))
       
-      @scala.inline
-      def setPreserveEmpty(value: Boolean): Self = StObject.set(x, "preserveEmpty", value.asInstanceOf[js.Any])
+      inline def setPreserveEmpty(value: Boolean): Self = StObject.set(x, "preserveEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveEmptyUndefined: Self = StObject.set(x, "preserveEmpty", js.undefined)
+      inline def setPreserveEmptyUndefined: Self = StObject.set(x, "preserveEmpty", js.undefined)
       
-      @scala.inline
-      def setUnwrap(value: js.Array[String]): Self = StObject.set(x, "unwrap", value.asInstanceOf[js.Any])
+      inline def setUnwrap(value: js.Array[String]): Self = StObject.set(x, "unwrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnwrapUndefined: Self = StObject.set(x, "unwrap", js.undefined)
+      inline def setUnwrapUndefined: Self = StObject.set(x, "unwrap", js.undefined)
       
-      @scala.inline
-      def setUnwrapVarargs(value: String*): Self = StObject.set(x, "unwrap", js.Array(value :_*))
+      inline def setUnwrapVarargs(value: String*): Self = StObject.set(x, "unwrap", js.Array(value :_*))
     }
   }
   

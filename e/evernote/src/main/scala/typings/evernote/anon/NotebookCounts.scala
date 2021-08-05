@@ -15,31 +15,23 @@ trait NotebookCounts extends StObject {
 }
 object NotebookCounts {
   
-  @scala.inline
-  def apply(): NotebookCounts = {
+  inline def apply(): NotebookCounts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotebookCounts]
   }
   
-  @scala.inline
-  implicit class NotebookCountsMutableBuilder[Self <: NotebookCounts] (val x: Self) extends AnyVal {
+  extension [Self <: NotebookCounts](x: Self) {
     
-    @scala.inline
-    def setNotebookCounts(value: Map[typings.evernote.mod.Types.Guid, Double]): Self = StObject.set(x, "notebookCounts", value.asInstanceOf[js.Any])
+    inline def setNotebookCounts(value: Map[typings.evernote.mod.Types.Guid, Double]): Self = StObject.set(x, "notebookCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotebookCountsUndefined: Self = StObject.set(x, "notebookCounts", js.undefined)
+    inline def setNotebookCountsUndefined: Self = StObject.set(x, "notebookCounts", js.undefined)
     
-    @scala.inline
-    def setTagCounts(value: Map[typings.evernote.mod.Types.Guid, Double]): Self = StObject.set(x, "tagCounts", value.asInstanceOf[js.Any])
+    inline def setTagCounts(value: Map[typings.evernote.mod.Types.Guid, Double]): Self = StObject.set(x, "tagCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagCountsUndefined: Self = StObject.set(x, "tagCounts", js.undefined)
+    inline def setTagCountsUndefined: Self = StObject.set(x, "tagCounts", js.undefined)
     
-    @scala.inline
-    def setTrashCount(value: Double): Self = StObject.set(x, "trashCount", value.asInstanceOf[js.Any])
+    inline def setTrashCount(value: Double): Self = StObject.set(x, "trashCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrashCountUndefined: Self = StObject.set(x, "trashCount", js.undefined)
+    inline def setTrashCountUndefined: Self = StObject.set(x, "trashCount", js.undefined)
   }
 }

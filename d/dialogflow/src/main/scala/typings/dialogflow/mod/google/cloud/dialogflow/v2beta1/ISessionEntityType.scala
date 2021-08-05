@@ -22,45 +22,33 @@ trait ISessionEntityType extends StObject {
 }
 object ISessionEntityType {
   
-  @scala.inline
-  def apply(): ISessionEntityType = {
+  inline def apply(): ISessionEntityType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISessionEntityType]
   }
   
-  @scala.inline
-  implicit class ISessionEntityTypeMutableBuilder[Self <: ISessionEntityType] (val x: Self) extends AnyVal {
+  extension [Self <: ISessionEntityType](x: Self) {
     
-    @scala.inline
-    def setEntities(value: js.Array[IEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[IEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesNull: Self = StObject.set(x, "entities", null)
+    inline def setEntitiesNull: Self = StObject.set(x, "entities", null)
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: IEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: IEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setEntityOverrideMode(
+    inline def setEntityOverrideMode(
       value: EntityOverrideMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.SessionEntityType.EntityOverrideMode * / any */ String)
     ): Self = StObject.set(x, "entityOverrideMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityOverrideModeNull: Self = StObject.set(x, "entityOverrideMode", null)
+    inline def setEntityOverrideModeNull: Self = StObject.set(x, "entityOverrideMode", null)
     
-    @scala.inline
-    def setEntityOverrideModeUndefined: Self = StObject.set(x, "entityOverrideMode", js.undefined)
+    inline def setEntityOverrideModeUndefined: Self = StObject.set(x, "entityOverrideMode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

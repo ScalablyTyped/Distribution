@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Method extends StObject
 object Method {
   
-  @scala.inline
-  def deselect_all: typings.multiselect.multiselectStrings.deselect_all = "deselect_all".asInstanceOf[typings.multiselect.multiselectStrings.deselect_all]
+  inline def deselect_all: typings.multiselect.multiselectStrings.deselect_all = "deselect_all".asInstanceOf[typings.multiselect.multiselectStrings.deselect_all]
   
-  @scala.inline
-  def refresh: typings.multiselect.multiselectStrings.refresh = "refresh".asInstanceOf[typings.multiselect.multiselectStrings.refresh]
+  inline def refresh: typings.multiselect.multiselectStrings.refresh = "refresh".asInstanceOf[typings.multiselect.multiselectStrings.refresh]
   
-  @scala.inline
-  def select_all: typings.multiselect.multiselectStrings.select_all = "select_all".asInstanceOf[typings.multiselect.multiselectStrings.select_all]
+  inline def select_all: typings.multiselect.multiselectStrings.select_all = "select_all".asInstanceOf[typings.multiselect.multiselectStrings.select_all]
 }

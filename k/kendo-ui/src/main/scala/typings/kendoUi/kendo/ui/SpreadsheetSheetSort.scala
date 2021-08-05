@@ -12,28 +12,21 @@ trait SpreadsheetSheetSort extends StObject {
 }
 object SpreadsheetSheetSort {
   
-  @scala.inline
-  def apply(): SpreadsheetSheetSort = {
+  inline def apply(): SpreadsheetSheetSort = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpreadsheetSheetSort]
   }
   
-  @scala.inline
-  implicit class SpreadsheetSheetSortMutableBuilder[Self <: SpreadsheetSheetSort] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetSheetSort](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[SpreadsheetSheetSortColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[SpreadsheetSheetSortColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: SpreadsheetSheetSortColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: SpreadsheetSheetSortColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }
 }

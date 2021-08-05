@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditValidatorType extends StObject
 object EditValidatorType {
   
-  @scala.inline
-  def error: typings.reactBootstrapTable.reactBootstrapTableStrings.error = "error".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.error]
+  inline def error: typings.reactBootstrapTable.reactBootstrapTableStrings.error = "error".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.error]
   
-  @scala.inline
-  def success: typings.reactBootstrapTable.reactBootstrapTableStrings.success = "success".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.success]
+  inline def success: typings.reactBootstrapTable.reactBootstrapTableStrings.success = "success".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.success]
 }

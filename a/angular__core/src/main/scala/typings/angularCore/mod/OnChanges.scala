@@ -17,16 +17,13 @@ trait OnChanges extends StObject {
 }
 object OnChanges {
   
-  @scala.inline
-  def apply(ngOnChanges: SimpleChanges => Unit): OnChanges = {
+  inline def apply(ngOnChanges: SimpleChanges => Unit): OnChanges = {
     val __obj = js.Dynamic.literal(ngOnChanges = js.Any.fromFunction1(ngOnChanges))
     __obj.asInstanceOf[OnChanges]
   }
   
-  @scala.inline
-  implicit class OnChangesMutableBuilder[Self <: OnChanges] (val x: Self) extends AnyVal {
+  extension [Self <: OnChanges](x: Self) {
     
-    @scala.inline
-    def setNgOnChanges(value: SimpleChanges => Unit): Self = StObject.set(x, "ngOnChanges", js.Any.fromFunction1(value))
+    inline def setNgOnChanges(value: SimpleChanges => Unit): Self = StObject.set(x, "ngOnChanges", js.Any.fromFunction1(value))
   }
 }

@@ -28,19 +28,15 @@ trait XDocumentPropertiesSupplier extends StObject {
 }
 object XDocumentPropertiesSupplier {
   
-  @scala.inline
-  def apply(DocumentProperties: XDocumentProperties, getDocumentProperties: () => XDocumentProperties): XDocumentPropertiesSupplier = {
+  inline def apply(DocumentProperties: XDocumentProperties, getDocumentProperties: () => XDocumentProperties): XDocumentPropertiesSupplier = {
     val __obj = js.Dynamic.literal(DocumentProperties = DocumentProperties.asInstanceOf[js.Any], getDocumentProperties = js.Any.fromFunction0(getDocumentProperties))
     __obj.asInstanceOf[XDocumentPropertiesSupplier]
   }
   
-  @scala.inline
-  implicit class XDocumentPropertiesSupplierMutableBuilder[Self <: XDocumentPropertiesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentPropertiesSupplier](x: Self) {
     
-    @scala.inline
-    def setDocumentProperties(value: XDocumentProperties): Self = StObject.set(x, "DocumentProperties", value.asInstanceOf[js.Any])
+    inline def setDocumentProperties(value: XDocumentProperties): Self = StObject.set(x, "DocumentProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDocumentProperties(value: () => XDocumentProperties): Self = StObject.set(x, "getDocumentProperties", js.Any.fromFunction0(value))
+    inline def setGetDocumentProperties(value: () => XDocumentProperties): Self = StObject.set(x, "getDocumentProperties", js.Any.fromFunction0(value))
   }
 }

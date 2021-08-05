@@ -18,25 +18,19 @@ trait DeleteImagePipelineResponse extends StObject {
 }
 object DeleteImagePipelineResponse {
   
-  @scala.inline
-  def apply(): DeleteImagePipelineResponse = {
+  inline def apply(): DeleteImagePipelineResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteImagePipelineResponse]
   }
   
-  @scala.inline
-  implicit class DeleteImagePipelineResponseMutableBuilder[Self <: DeleteImagePipelineResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteImagePipelineResponse](x: Self) {
     
-    @scala.inline
-    def setImagePipelineArn(value: ImagePipelineArn): Self = StObject.set(x, "imagePipelineArn", value.asInstanceOf[js.Any])
+    inline def setImagePipelineArn(value: ImagePipelineArn): Self = StObject.set(x, "imagePipelineArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePipelineArnUndefined: Self = StObject.set(x, "imagePipelineArn", js.undefined)
+    inline def setImagePipelineArnUndefined: Self = StObject.set(x, "imagePipelineArn", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

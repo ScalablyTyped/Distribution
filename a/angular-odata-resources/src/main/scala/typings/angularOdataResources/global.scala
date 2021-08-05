@@ -95,8 +95,7 @@ object global {
       @js.native
       def inject: js.Array[String] = js.native
       
-      @scala.inline
-      def inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+      inline def inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("OData.MethodCall")
@@ -119,11 +118,11 @@ object global {
       /* CompleteClass */
       var operators: Add = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var rtrim: js.Any = js.native
       
-      /* CompleteClass */
-      /* private */ override def trim(value: js.Any): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def trim(value: js.Any): js.Any = js.native
     }
     
     @JSGlobal("OData.OrderByStatement")
@@ -152,22 +151,16 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def and(andStatements: js.Any): IExecutable = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(andStatements.asInstanceOf[js.Any]).asInstanceOf[IExecutable]
+      inline def and(andStatements: js.Any): IExecutable = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(andStatements.asInstanceOf[js.Any]).asInstanceOf[IExecutable]
       
       /* static member */
-      @scala.inline
-      def create(propertyOrPredicate: js.Any): IExecutable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any]).asInstanceOf[IExecutable]
-      @scala.inline
-      def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any): IExecutable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any], operatorOrValue.asInstanceOf[js.Any])).asInstanceOf[IExecutable]
-      @scala.inline
-      def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): IExecutable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any], operatorOrValue.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IExecutable]
-      @scala.inline
-      def create(propertyOrPredicate: js.Any, operatorOrValue: Unit, value: js.Any): IExecutable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any], operatorOrValue.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IExecutable]
+      inline def create(propertyOrPredicate: js.Any): IExecutable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any]).asInstanceOf[IExecutable]
+      inline def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any): IExecutable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any], operatorOrValue.asInstanceOf[js.Any])).asInstanceOf[IExecutable]
+      inline def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): IExecutable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any], operatorOrValue.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IExecutable]
+      inline def create(propertyOrPredicate: js.Any, operatorOrValue: Unit, value: js.Any): IExecutable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyOrPredicate.asInstanceOf[js.Any], operatorOrValue.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IExecutable]
       
       /* static member */
-      @scala.inline
-      def or(orStatements: js.Array[js.Any]): IExecutable = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(orStatements.asInstanceOf[js.Any]).asInstanceOf[IExecutable]
+      inline def or(orStatements: js.Array[js.Any]): IExecutable = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(orStatements.asInstanceOf[js.Any]).asInstanceOf[IExecutable]
     }
     
     @JSGlobal("OData.Property")
@@ -194,8 +187,8 @@ object global {
       def this(value: js.Any) = this()
       def this(value: js.Any, `type`: String) = this()
       
-      /* CompleteClass */
-      /* private */ override def escapeIllegalChars(haystack: js.Any): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def escapeIllegalChars(haystack: js.Any): js.Any = js.native
       
       /* CompleteClass */
       override def execute(): String = js.native
@@ -206,16 +199,16 @@ object global {
       /* CompleteClass */
       override def executeWithUndefinedType(): js.Any = js.native
       
-      /* CompleteClass */
-      /* private */ override def generateDate(date: js.Any): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def generateDate(date: js.Any): js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var illegalChars: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var `type`: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var value: js.Any = js.native
     }
     
@@ -234,64 +227,55 @@ object global {
       @JSGlobal("OData.ValueTypes.Boolean")
       @js.native
       def Boolean: String = js.native
-      @scala.inline
-      def Boolean_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
+      inline def Boolean_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSGlobal("OData.ValueTypes.Byte")
       @js.native
       def Byte: String = js.native
-      @scala.inline
-      def Byte_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Byte")(x.asInstanceOf[js.Any])
+      inline def Byte_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Byte")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSGlobal("OData.ValueTypes.DateTime")
       @js.native
       def DateTime: String = js.native
-      @scala.inline
-      def DateTime_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
+      inline def DateTime_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSGlobal("OData.ValueTypes.Decimal")
       @js.native
       def Decimal: String = js.native
-      @scala.inline
-      def Decimal_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
+      inline def Decimal_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSGlobal("OData.ValueTypes.Double")
       @js.native
       def Double: String = js.native
-      @scala.inline
-      def Double_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Double")(x.asInstanceOf[js.Any])
+      inline def Double_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Double")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSGlobal("OData.ValueTypes.Guid")
       @js.native
       def Guid: String = js.native
-      @scala.inline
-      def Guid_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Guid")(x.asInstanceOf[js.Any])
+      inline def Guid_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Guid")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSGlobal("OData.ValueTypes.Int32")
       @js.native
       def Int32: String = js.native
-      @scala.inline
-      def Int32_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Int32")(x.asInstanceOf[js.Any])
+      inline def Int32_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Int32")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSGlobal("OData.ValueTypes.Single")
       @js.native
       def Single: String = js.native
-      @scala.inline
-      def Single_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Single")(x.asInstanceOf[js.Any])
+      inline def Single_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Single")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSGlobal("OData.ValueTypes.String")
       @js.native
       def String: java.lang.String = js.native
-      @scala.inline
-      def String_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
+      inline def String_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
     }
   }
 }

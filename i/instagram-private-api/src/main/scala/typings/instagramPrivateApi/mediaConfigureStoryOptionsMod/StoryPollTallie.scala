@@ -15,22 +15,17 @@ trait StoryPollTallie extends StObject {
 }
 object StoryPollTallie {
   
-  @scala.inline
-  def apply(font_size: Double, text: String): StoryPollTallie = {
+  inline def apply(font_size: Double, text: String): StoryPollTallie = {
     val __obj = js.Dynamic.literal(count = 0, font_size = font_size.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoryPollTallie]
   }
   
-  @scala.inline
-  implicit class StoryPollTallieMutableBuilder[Self <: StoryPollTallie] (val x: Self) extends AnyVal {
+  extension [Self <: StoryPollTallie](x: Self) {
     
-    @scala.inline
-    def setCount(value: `0`): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: `0`): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont_size(value: Double): Self = StObject.set(x, "font_size", value.asInstanceOf[js.Any])
+    inline def setFont_size(value: Double): Self = StObject.set(x, "font_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

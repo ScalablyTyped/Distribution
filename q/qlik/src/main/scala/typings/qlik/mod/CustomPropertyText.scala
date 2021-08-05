@@ -14,16 +14,13 @@ trait CustomPropertyText
 }
 object CustomPropertyText {
   
-  @scala.inline
-  def apply(): CustomPropertyText = {
+  inline def apply(): CustomPropertyText = {
     val __obj = js.Dynamic.literal(component = "text")
     __obj.asInstanceOf[CustomPropertyText]
   }
   
-  @scala.inline
-  implicit class CustomPropertyTextMutableBuilder[Self <: CustomPropertyText] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertyText](x: Self) {
     
-    @scala.inline
-    def setComponent(value: text): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: text): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
   }
 }

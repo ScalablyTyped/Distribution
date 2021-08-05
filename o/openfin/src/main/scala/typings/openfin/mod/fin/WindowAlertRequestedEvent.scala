@@ -14,8 +14,7 @@ trait WindowAlertRequestedEvent
 }
 object WindowAlertRequestedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     message: String,
     name: String,
     topic: String,
@@ -28,13 +27,10 @@ object WindowAlertRequestedEvent {
     __obj.asInstanceOf[WindowAlertRequestedEvent]
   }
   
-  @scala.inline
-  implicit class WindowAlertRequestedEventMutableBuilder[Self <: WindowAlertRequestedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WindowAlertRequestedEvent](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

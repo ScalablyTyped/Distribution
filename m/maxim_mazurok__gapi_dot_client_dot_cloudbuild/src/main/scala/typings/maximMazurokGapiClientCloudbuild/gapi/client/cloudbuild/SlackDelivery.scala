@@ -11,19 +11,15 @@ trait SlackDelivery extends StObject {
 }
 object SlackDelivery {
   
-  @scala.inline
-  def apply(): SlackDelivery = {
+  inline def apply(): SlackDelivery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlackDelivery]
   }
   
-  @scala.inline
-  implicit class SlackDeliveryMutableBuilder[Self <: SlackDelivery] (val x: Self) extends AnyVal {
+  extension [Self <: SlackDelivery](x: Self) {
     
-    @scala.inline
-    def setWebhookUri(value: NotifierSecretRef): Self = StObject.set(x, "webhookUri", value.asInstanceOf[js.Any])
+    inline def setWebhookUri(value: NotifierSecretRef): Self = StObject.set(x, "webhookUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookUriUndefined: Self = StObject.set(x, "webhookUri", js.undefined)
+    inline def setWebhookUriUndefined: Self = StObject.set(x, "webhookUri", js.undefined)
   }
 }

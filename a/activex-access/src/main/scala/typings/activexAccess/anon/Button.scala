@@ -16,25 +16,19 @@ trait Button extends StObject {
 }
 object Button {
   
-  @scala.inline
-  def apply(Button: Double, Shift: Double, X: Double, Y: Double): Button = {
+  inline def apply(Button: Double, Shift: Double, X: Double, Y: Double): Button = {
     val __obj = js.Dynamic.literal(Button = Button.asInstanceOf[js.Any], Shift = Shift.asInstanceOf[js.Any], X = X.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Button]
   }
   
-  @scala.inline
-  implicit class ButtonMutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
+  extension [Self <: Button](x: Self) {
     
-    @scala.inline
-    def setButton(value: Double): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
+    inline def setButton(value: Double): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
+    inline def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
   }
 }

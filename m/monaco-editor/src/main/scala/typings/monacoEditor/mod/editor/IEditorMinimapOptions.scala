@@ -56,55 +56,39 @@ trait IEditorMinimapOptions extends StObject {
 }
 object IEditorMinimapOptions {
   
-  @scala.inline
-  def apply(): IEditorMinimapOptions = {
+  inline def apply(): IEditorMinimapOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEditorMinimapOptions]
   }
   
-  @scala.inline
-  implicit class IEditorMinimapOptionsMutableBuilder[Self <: IEditorMinimapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IEditorMinimapOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setMaxColumn(value: Double): Self = StObject.set(x, "maxColumn", value.asInstanceOf[js.Any])
+    inline def setMaxColumn(value: Double): Self = StObject.set(x, "maxColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxColumnUndefined: Self = StObject.set(x, "maxColumn", js.undefined)
+    inline def setMaxColumnUndefined: Self = StObject.set(x, "maxColumn", js.undefined)
     
-    @scala.inline
-    def setRenderCharacters(value: Boolean): Self = StObject.set(x, "renderCharacters", value.asInstanceOf[js.Any])
+    inline def setRenderCharacters(value: Boolean): Self = StObject.set(x, "renderCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderCharactersUndefined: Self = StObject.set(x, "renderCharacters", js.undefined)
+    inline def setRenderCharactersUndefined: Self = StObject.set(x, "renderCharacters", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setShowSlider(value: always | mouseover): Self = StObject.set(x, "showSlider", value.asInstanceOf[js.Any])
+    inline def setShowSlider(value: always | mouseover): Self = StObject.set(x, "showSlider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSliderUndefined: Self = StObject.set(x, "showSlider", js.undefined)
+    inline def setShowSliderUndefined: Self = StObject.set(x, "showSlider", js.undefined)
     
-    @scala.inline
-    def setSide(value: right | left): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+    inline def setSide(value: right | left): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
+    inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
     
-    @scala.inline
-    def setSize(value: proportional | fill | fit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: proportional | fill | fit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

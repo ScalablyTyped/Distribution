@@ -17,22 +17,17 @@ trait OpeningHoursTime extends StObject {
 }
 object OpeningHoursTime {
   
-  @scala.inline
-  def apply(day: Double): OpeningHoursTime = {
+  inline def apply(day: Double): OpeningHoursTime = {
     val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpeningHoursTime]
   }
   
-  @scala.inline
-  implicit class OpeningHoursTimeMutableBuilder[Self <: OpeningHoursTime] (val x: Self) extends AnyVal {
+  extension [Self <: OpeningHoursTime](x: Self) {
     
-    @scala.inline
-    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

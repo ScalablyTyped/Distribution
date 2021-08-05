@@ -35,8 +35,7 @@ trait SinonSandboxConfig extends StObject {
 }
 object SinonSandboxConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     properties: js.Array[String],
     useFakeServer: Boolean | SinonFakeServer,
     useFakeTimers: Boolean | PartialSinonFakeTimersCon
@@ -45,25 +44,18 @@ object SinonSandboxConfig {
     __obj.asInstanceOf[SinonSandboxConfig]
   }
   
-  @scala.inline
-  implicit class SinonSandboxConfigMutableBuilder[Self <: SinonSandboxConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SinonSandboxConfig](x: Self) {
     
-    @scala.inline
-    def setInjectInto(value: js.Object): Self = StObject.set(x, "injectInto", value.asInstanceOf[js.Any])
+    inline def setInjectInto(value: js.Object): Self = StObject.set(x, "injectInto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInjectIntoNull: Self = StObject.set(x, "injectInto", null)
+    inline def setInjectIntoNull: Self = StObject.set(x, "injectInto", null)
     
-    @scala.inline
-    def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setUseFakeServer(value: Boolean | SinonFakeServer): Self = StObject.set(x, "useFakeServer", value.asInstanceOf[js.Any])
+    inline def setUseFakeServer(value: Boolean | SinonFakeServer): Self = StObject.set(x, "useFakeServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFakeTimers(value: Boolean | PartialSinonFakeTimersCon): Self = StObject.set(x, "useFakeTimers", value.asInstanceOf[js.Any])
+    inline def setUseFakeTimers(value: Boolean | PartialSinonFakeTimersCon): Self = StObject.set(x, "useFakeTimers", value.asInstanceOf[js.Any])
   }
 }

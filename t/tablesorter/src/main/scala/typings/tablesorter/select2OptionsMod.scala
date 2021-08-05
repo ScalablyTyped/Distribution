@@ -20,8 +20,7 @@ object select2OptionsMod {
        with DefaultValueOptions[String]
   object Select2Options {
     
-    @scala.inline
-    def apply(): Select2Options = {
+    inline def apply(): Select2Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Select2Options]
     }

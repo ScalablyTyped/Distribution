@@ -14,25 +14,19 @@ trait APIResponseErrorDetails extends StObject {
 }
 object APIResponseErrorDetails {
   
-  @scala.inline
-  def apply(error_type: String, errors: js.Array[String], parameter: String): APIResponseErrorDetails = {
+  inline def apply(error_type: String, errors: js.Array[String], parameter: String): APIResponseErrorDetails = {
     val __obj = js.Dynamic.literal(error_type = error_type.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIResponseErrorDetails]
   }
   
-  @scala.inline
-  implicit class APIResponseErrorDetailsMutableBuilder[Self <: APIResponseErrorDetails] (val x: Self) extends AnyVal {
+  extension [Self <: APIResponseErrorDetails](x: Self) {
     
-    @scala.inline
-    def setError_type(value: String): Self = StObject.set(x, "error_type", value.asInstanceOf[js.Any])
+    inline def setError_type(value: String): Self = StObject.set(x, "error_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }
 }

@@ -15,10 +15,8 @@ object CertificateCharacters {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def HAS_PRIVATE_KEY: `4` = 4.asInstanceOf[`4`]
+    inline def HAS_PRIVATE_KEY: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def SELF_SIGNED: `1` = 1.asInstanceOf[`1`]
+    inline def SELF_SIGNED: `1` = 1.asInstanceOf[`1`]
   }
 }

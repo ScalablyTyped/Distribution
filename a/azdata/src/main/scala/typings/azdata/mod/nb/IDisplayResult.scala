@@ -23,22 +23,17 @@ trait IDisplayResult
 }
 object IDisplayResult {
   
-  @scala.inline
-  def apply(data: StringDictionary[js.Any], output_type: OutputTypeName): IDisplayResult = {
+  inline def apply(data: StringDictionary[js.Any], output_type: OutputTypeName): IDisplayResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDisplayResult]
   }
   
-  @scala.inline
-  implicit class IDisplayResultMutableBuilder[Self <: IDisplayResult] (val x: Self) extends AnyVal {
+  extension [Self <: IDisplayResult](x: Self) {
     
-    @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

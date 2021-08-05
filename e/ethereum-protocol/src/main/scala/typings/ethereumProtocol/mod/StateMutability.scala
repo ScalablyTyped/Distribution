@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StateMutability extends StObject
 object StateMutability {
   
-  @scala.inline
-  def nonpayable: typings.ethereumProtocol.ethereumProtocolStrings.nonpayable = "nonpayable".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.nonpayable]
+  inline def nonpayable: typings.ethereumProtocol.ethereumProtocolStrings.nonpayable = "nonpayable".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.nonpayable]
   
-  @scala.inline
-  def payable: typings.ethereumProtocol.ethereumProtocolStrings.payable = "payable".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.payable]
+  inline def payable: typings.ethereumProtocol.ethereumProtocolStrings.payable = "payable".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.payable]
   
-  @scala.inline
-  def pure: typings.ethereumProtocol.ethereumProtocolStrings.pure = "pure".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.pure]
+  inline def pure: typings.ethereumProtocol.ethereumProtocolStrings.pure = "pure".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.pure]
   
-  @scala.inline
-  def view: typings.ethereumProtocol.ethereumProtocolStrings.view = "view".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.view]
+  inline def view: typings.ethereumProtocol.ethereumProtocolStrings.view = "view".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.view]
 }

@@ -18,10 +18,8 @@ trait TypeDescriptionSearchDepth extends StObject
 object TypeDescriptionSearchDepth {
   
   /** Infinite search depth. Search through all children including direct children, grand children, grand children's children, ... */
-  @scala.inline
-  def INFINITE: `-1` = -1.asInstanceOf[`-1`]
+  inline def INFINITE: `-1` = -1.asInstanceOf[`-1`]
   
   /** Search only through direct children. */
-  @scala.inline
-  def ONE: `1` = 1.asInstanceOf[`1`]
+  inline def ONE: `1` = 1.asInstanceOf[`1`]
 }

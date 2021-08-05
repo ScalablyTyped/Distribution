@@ -14,31 +14,23 @@ trait TranspileOutput extends StObject {
 }
 object TranspileOutput {
   
-  @scala.inline
-  def apply(outputText: java.lang.String): TranspileOutput = {
+  inline def apply(outputText: java.lang.String): TranspileOutput = {
     val __obj = js.Dynamic.literal(outputText = outputText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranspileOutput]
   }
   
-  @scala.inline
-  implicit class TranspileOutputMutableBuilder[Self <: TranspileOutput] (val x: Self) extends AnyVal {
+  extension [Self <: TranspileOutput](x: Self) {
     
-    @scala.inline
-    def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+    inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    @scala.inline
-    def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputText(value: java.lang.String): Self = StObject.set(x, "outputText", value.asInstanceOf[js.Any])
+    inline def setOutputText(value: java.lang.String): Self = StObject.set(x, "outputText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMapText(value: java.lang.String): Self = StObject.set(x, "sourceMapText", value.asInstanceOf[js.Any])
+    inline def setSourceMapText(value: java.lang.String): Self = StObject.set(x, "sourceMapText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMapTextUndefined: Self = StObject.set(x, "sourceMapText", js.undefined)
+    inline def setSourceMapTextUndefined: Self = StObject.set(x, "sourceMapText", js.undefined)
   }
 }

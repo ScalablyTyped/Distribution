@@ -18,25 +18,19 @@ trait PrefixConfig extends StObject {
 }
 object PrefixConfig {
   
-  @scala.inline
-  def apply(): PrefixConfig = {
+  inline def apply(): PrefixConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrefixConfig]
   }
   
-  @scala.inline
-  implicit class PrefixConfigMutableBuilder[Self <: PrefixConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PrefixConfig](x: Self) {
     
-    @scala.inline
-    def setPrefixFormat(value: PrefixFormat): Self = StObject.set(x, "prefixFormat", value.asInstanceOf[js.Any])
+    inline def setPrefixFormat(value: PrefixFormat): Self = StObject.set(x, "prefixFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixFormatUndefined: Self = StObject.set(x, "prefixFormat", js.undefined)
+    inline def setPrefixFormatUndefined: Self = StObject.set(x, "prefixFormat", js.undefined)
     
-    @scala.inline
-    def setPrefixType(value: PrefixType): Self = StObject.set(x, "prefixType", value.asInstanceOf[js.Any])
+    inline def setPrefixType(value: PrefixType): Self = StObject.set(x, "prefixType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixTypeUndefined: Self = StObject.set(x, "prefixType", js.undefined)
+    inline def setPrefixTypeUndefined: Self = StObject.set(x, "prefixType", js.undefined)
   }
 }

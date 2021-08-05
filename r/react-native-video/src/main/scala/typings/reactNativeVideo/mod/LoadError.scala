@@ -11,16 +11,13 @@ trait LoadError extends StObject {
 }
 object LoadError {
   
-  @scala.inline
-  def apply(error: _empty): LoadError = {
+  inline def apply(error: _empty): LoadError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadError]
   }
   
-  @scala.inline
-  implicit class LoadErrorMutableBuilder[Self <: LoadError] (val x: Self) extends AnyVal {
+  extension [Self <: LoadError](x: Self) {
     
-    @scala.inline
-    def setError(value: _empty): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: _empty): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

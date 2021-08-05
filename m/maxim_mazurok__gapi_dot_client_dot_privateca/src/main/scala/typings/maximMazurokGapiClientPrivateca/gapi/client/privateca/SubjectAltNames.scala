@@ -23,58 +23,41 @@ trait SubjectAltNames extends StObject {
 }
 object SubjectAltNames {
   
-  @scala.inline
-  def apply(): SubjectAltNames = {
+  inline def apply(): SubjectAltNames = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubjectAltNames]
   }
   
-  @scala.inline
-  implicit class SubjectAltNamesMutableBuilder[Self <: SubjectAltNames] (val x: Self) extends AnyVal {
+  extension [Self <: SubjectAltNames](x: Self) {
     
-    @scala.inline
-    def setCustomSans(value: js.Array[X509Extension]): Self = StObject.set(x, "customSans", value.asInstanceOf[js.Any])
+    inline def setCustomSans(value: js.Array[X509Extension]): Self = StObject.set(x, "customSans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSansUndefined: Self = StObject.set(x, "customSans", js.undefined)
+    inline def setCustomSansUndefined: Self = StObject.set(x, "customSans", js.undefined)
     
-    @scala.inline
-    def setCustomSansVarargs(value: X509Extension*): Self = StObject.set(x, "customSans", js.Array(value :_*))
+    inline def setCustomSansVarargs(value: X509Extension*): Self = StObject.set(x, "customSans", js.Array(value :_*))
     
-    @scala.inline
-    def setDnsNames(value: js.Array[String]): Self = StObject.set(x, "dnsNames", value.asInstanceOf[js.Any])
+    inline def setDnsNames(value: js.Array[String]): Self = StObject.set(x, "dnsNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsNamesUndefined: Self = StObject.set(x, "dnsNames", js.undefined)
+    inline def setDnsNamesUndefined: Self = StObject.set(x, "dnsNames", js.undefined)
     
-    @scala.inline
-    def setDnsNamesVarargs(value: String*): Self = StObject.set(x, "dnsNames", js.Array(value :_*))
+    inline def setDnsNamesVarargs(value: String*): Self = StObject.set(x, "dnsNames", js.Array(value :_*))
     
-    @scala.inline
-    def setEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
+    inline def setEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressesUndefined: Self = StObject.set(x, "emailAddresses", js.undefined)
+    inline def setEmailAddressesUndefined: Self = StObject.set(x, "emailAddresses", js.undefined)
     
-    @scala.inline
-    def setEmailAddressesVarargs(value: String*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
+    inline def setEmailAddressesVarargs(value: String*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setIpAddresses(value: js.Array[String]): Self = StObject.set(x, "ipAddresses", value.asInstanceOf[js.Any])
+    inline def setIpAddresses(value: js.Array[String]): Self = StObject.set(x, "ipAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressesUndefined: Self = StObject.set(x, "ipAddresses", js.undefined)
+    inline def setIpAddressesUndefined: Self = StObject.set(x, "ipAddresses", js.undefined)
     
-    @scala.inline
-    def setIpAddressesVarargs(value: String*): Self = StObject.set(x, "ipAddresses", js.Array(value :_*))
+    inline def setIpAddressesVarargs(value: String*): Self = StObject.set(x, "ipAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setUris(value: js.Array[String]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
+    inline def setUris(value: js.Array[String]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
+    inline def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
     
-    @scala.inline
-    def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value :_*))
+    inline def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value :_*))
   }
 }

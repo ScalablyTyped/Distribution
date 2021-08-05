@@ -64,17 +64,14 @@ object v1MutatingWebhookConfigurationMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): MutatingWebhookConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MutatingWebhookConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): MutatingWebhookConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MutatingWebhookConfiguration]
+    inline def get(name: String, id: Input[ID]): MutatingWebhookConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MutatingWebhookConfiguration]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): MutatingWebhookConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MutatingWebhookConfiguration]
     
     /**
       * Returns true if the given object is an instance of MutatingWebhookConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1/mutatingWebhookConfiguration.MutatingWebhookConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1/mutatingWebhookConfiguration.MutatingWebhookConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1/mutatingWebhookConfiguration.MutatingWebhookConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/admissionregistration/v1/mutatingWebhookConfiguration.MutatingWebhookConfiguration */ Boolean]
   }
   
   trait MutatingWebhookConfigurationArgs extends StObject {
@@ -109,35 +106,26 @@ object v1MutatingWebhookConfigurationMod {
   }
   object MutatingWebhookConfigurationArgs {
     
-    @scala.inline
-    def apply(): MutatingWebhookConfigurationArgs = {
+    inline def apply(): MutatingWebhookConfigurationArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MutatingWebhookConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class MutatingWebhookConfigurationArgsMutableBuilder[Self <: MutatingWebhookConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MutatingWebhookConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[admissionregistrationDotk8sDotioSlashv1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[admissionregistrationDotk8sDotioSlashv1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.MutatingWebhookConfiguration]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.MutatingWebhookConfiguration]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setWebhooks(
+      inline def setWebhooks(
         value: Input[
               js.Array[
                 Input[typings.pulumiKubernetes.inputMod.admissionregistration.v1.MutatingWebhook]
@@ -145,11 +133,9 @@ object v1MutatingWebhookConfigurationMod {
             ]
       ): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebhooksUndefined: Self = StObject.set(x, "webhooks", js.undefined)
+      inline def setWebhooksUndefined: Self = StObject.set(x, "webhooks", js.undefined)
       
-      @scala.inline
-      def setWebhooksVarargs(value: Input[typings.pulumiKubernetes.inputMod.admissionregistration.v1.MutatingWebhook]*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
+      inline def setWebhooksVarargs(value: Input[typings.pulumiKubernetes.inputMod.admissionregistration.v1.MutatingWebhook]*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
     }
   }
 }

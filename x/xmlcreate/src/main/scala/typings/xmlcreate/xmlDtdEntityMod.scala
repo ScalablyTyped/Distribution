@@ -23,28 +23,25 @@ object xmlDtdEntityMod {
   }
   object IXmlDtdEntityOptions {
     
-    @scala.inline
-    def apply(charData: String): IXmlDtdEntityOptions = {
+    inline def apply(charData: String): IXmlDtdEntityOptions = {
       val __obj = js.Dynamic.literal(charData = charData.asInstanceOf[js.Any])
       __obj.asInstanceOf[IXmlDtdEntityOptions]
     }
     
-    @scala.inline
-    implicit class IXmlDtdEntityOptionsMutableBuilder[Self <: IXmlDtdEntityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IXmlDtdEntityOptions](x: Self) {
       
-      @scala.inline
-      def setCharData(value: String): Self = StObject.set(x, "charData", value.asInstanceOf[js.Any])
+      inline def setCharData(value: String): Self = StObject.set(x, "charData", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait XmlDtdEntity[Parent] extends StObject {
     
-    var _charData: js.Any = js.native
+    /* private */ var _charData: js.Any = js.native
     
-    val _parent: js.Any = js.native
+    /* private */ val _parent: js.Any = js.native
     
-    val _validation: js.Any = js.native
+    /* private */ val _validation: js.Any = js.native
     
     /**
       * Gets the text of this entity declaration.

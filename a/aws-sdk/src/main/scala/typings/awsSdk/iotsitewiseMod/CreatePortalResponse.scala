@@ -33,8 +33,7 @@ trait CreatePortalResponse extends StObject {
 }
 object CreatePortalResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     portalArn: ARN,
     portalId: ID,
     portalStartUrl: Url,
@@ -45,22 +44,16 @@ object CreatePortalResponse {
     __obj.asInstanceOf[CreatePortalResponse]
   }
   
-  @scala.inline
-  implicit class CreatePortalResponseMutableBuilder[Self <: CreatePortalResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePortalResponse](x: Self) {
     
-    @scala.inline
-    def setPortalArn(value: ARN): Self = StObject.set(x, "portalArn", value.asInstanceOf[js.Any])
+    inline def setPortalArn(value: ARN): Self = StObject.set(x, "portalArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
+    inline def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalStartUrl(value: Url): Self = StObject.set(x, "portalStartUrl", value.asInstanceOf[js.Any])
+    inline def setPortalStartUrl(value: Url): Self = StObject.set(x, "portalStartUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalStatus(value: PortalStatus): Self = StObject.set(x, "portalStatus", value.asInstanceOf[js.Any])
+    inline def setPortalStatus(value: PortalStatus): Self = StObject.set(x, "portalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsoApplicationId(value: SSOApplicationId): Self = StObject.set(x, "ssoApplicationId", value.asInstanceOf[js.Any])
+    inline def setSsoApplicationId(value: SSOApplicationId): Self = StObject.set(x, "ssoApplicationId", value.asInstanceOf[js.Any])
   }
 }

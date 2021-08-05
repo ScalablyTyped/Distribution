@@ -32,8 +32,7 @@ trait TextInput extends StObject {
 }
 object TextInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setFieldName: String => TextInput,
     setHint: String => TextInput,
     setMultiline: Boolean => TextInput,
@@ -47,31 +46,22 @@ object TextInput {
     __obj.asInstanceOf[TextInput]
   }
   
-  @scala.inline
-  implicit class TextInputMutableBuilder[Self <: TextInput] (val x: Self) extends AnyVal {
+  extension [Self <: TextInput](x: Self) {
     
-    @scala.inline
-    def setSetFieldName(value: String => TextInput): Self = StObject.set(x, "setFieldName", js.Any.fromFunction1(value))
+    inline def setSetFieldName(value: String => TextInput): Self = StObject.set(x, "setFieldName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHint(value: String => TextInput): Self = StObject.set(x, "setHint", js.Any.fromFunction1(value))
+    inline def setSetHint(value: String => TextInput): Self = StObject.set(x, "setHint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMultiline(value: Boolean => TextInput): Self = StObject.set(x, "setMultiline", js.Any.fromFunction1(value))
+    inline def setSetMultiline(value: Boolean => TextInput): Self = StObject.set(x, "setMultiline", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOnChangeAction(value: Action => TextInput): Self = StObject.set(x, "setOnChangeAction", js.Any.fromFunction1(value))
+    inline def setSetOnChangeAction(value: Action => TextInput): Self = StObject.set(x, "setOnChangeAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSuggestions(value: Suggestions => TextInput): Self = StObject.set(x, "setSuggestions", js.Any.fromFunction1(value))
+    inline def setSetSuggestions(value: Suggestions => TextInput): Self = StObject.set(x, "setSuggestions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSuggestionsAction(value: Action => TextInput): Self = StObject.set(x, "setSuggestionsAction", js.Any.fromFunction1(value))
+    inline def setSetSuggestionsAction(value: Action => TextInput): Self = StObject.set(x, "setSuggestionsAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitle(value: String => TextInput): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: String => TextInput): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: String => TextInput): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: String => TextInput): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

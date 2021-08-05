@@ -18,19 +18,15 @@ trait CreateFirewallPolicyResponse extends StObject {
 }
 object CreateFirewallPolicyResponse {
   
-  @scala.inline
-  def apply(FirewallPolicyResponse: FirewallPolicyResponse, UpdateToken: UpdateToken): CreateFirewallPolicyResponse = {
+  inline def apply(FirewallPolicyResponse: FirewallPolicyResponse, UpdateToken: UpdateToken): CreateFirewallPolicyResponse = {
     val __obj = js.Dynamic.literal(FirewallPolicyResponse = FirewallPolicyResponse.asInstanceOf[js.Any], UpdateToken = UpdateToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFirewallPolicyResponse]
   }
   
-  @scala.inline
-  implicit class CreateFirewallPolicyResponseMutableBuilder[Self <: CreateFirewallPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFirewallPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setFirewallPolicyResponse(value: FirewallPolicyResponse): Self = StObject.set(x, "FirewallPolicyResponse", value.asInstanceOf[js.Any])
+    inline def setFirewallPolicyResponse(value: FirewallPolicyResponse): Self = StObject.set(x, "FirewallPolicyResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
+    inline def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
   }
 }

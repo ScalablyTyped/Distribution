@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociationType extends StObject
 object AssociationType {
   
-  @scala.inline
-  def bitbucket_cloud: typings.ionic.ionicStrings.bitbucket_cloud = "bitbucket_cloud".asInstanceOf[typings.ionic.ionicStrings.bitbucket_cloud]
+  inline def bitbucket_cloud: typings.ionic.ionicStrings.bitbucket_cloud = "bitbucket_cloud".asInstanceOf[typings.ionic.ionicStrings.bitbucket_cloud]
   
-  @scala.inline
-  def bitbucket_server: typings.ionic.ionicStrings.bitbucket_server = "bitbucket_server".asInstanceOf[typings.ionic.ionicStrings.bitbucket_server]
+  inline def bitbucket_server: typings.ionic.ionicStrings.bitbucket_server = "bitbucket_server".asInstanceOf[typings.ionic.ionicStrings.bitbucket_server]
   
-  @scala.inline
-  def github: typings.ionic.ionicStrings.github = "github".asInstanceOf[typings.ionic.ionicStrings.github]
+  inline def github: typings.ionic.ionicStrings.github = "github".asInstanceOf[typings.ionic.ionicStrings.github]
 }

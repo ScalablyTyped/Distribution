@@ -23,31 +23,23 @@ trait Encryption extends StObject {
 }
 object Encryption {
   
-  @scala.inline
-  def apply(): Encryption = {
+  inline def apply(): Encryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Encryption]
   }
   
-  @scala.inline
-  implicit class EncryptionMutableBuilder[Self <: Encryption] (val x: Self) extends AnyVal {
+  extension [Self <: Encryption](x: Self) {
     
-    @scala.inline
-    def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
+    inline def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
+    inline def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
     
-    @scala.inline
-    def setKMSContext(value: String): Self = StObject.set(x, "KMSContext", value.asInstanceOf[js.Any])
+    inline def setKMSContext(value: String): Self = StObject.set(x, "KMSContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKMSContextUndefined: Self = StObject.set(x, "KMSContext", js.undefined)
+    inline def setKMSContextUndefined: Self = StObject.set(x, "KMSContext", js.undefined)
     
-    @scala.inline
-    def setKMSKeyId(value: String): Self = StObject.set(x, "KMSKeyId", value.asInstanceOf[js.Any])
+    inline def setKMSKeyId(value: String): Self = StObject.set(x, "KMSKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKMSKeyIdUndefined: Self = StObject.set(x, "KMSKeyId", js.undefined)
+    inline def setKMSKeyIdUndefined: Self = StObject.set(x, "KMSKeyId", js.undefined)
   }
 }

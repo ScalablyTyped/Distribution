@@ -23,22 +23,17 @@ trait IsShown extends StObject {
 }
 object IsShown {
   
-  @scala.inline
-  def apply(hide: () => Unit, isShown: () => Boolean, show: () => Unit): IsShown = {
+  inline def apply(hide: () => Unit, isShown: () => Boolean, show: () => Unit): IsShown = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), isShown = js.Any.fromFunction0(isShown), show = js.Any.fromFunction0(show))
     __obj.asInstanceOf[IsShown]
   }
   
-  @scala.inline
-  implicit class IsShownMutableBuilder[Self <: IsShown] (val x: Self) extends AnyVal {
+  extension [Self <: IsShown](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsShown(value: () => Boolean): Self = StObject.set(x, "isShown", js.Any.fromFunction0(value))
+    inline def setIsShown(value: () => Boolean): Self = StObject.set(x, "isShown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

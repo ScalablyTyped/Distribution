@@ -17,31 +17,23 @@ trait RevokedCertificate extends StObject {
 }
 object RevokedCertificate {
   
-  @scala.inline
-  def apply(): RevokedCertificate = {
+  inline def apply(): RevokedCertificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevokedCertificate]
   }
   
-  @scala.inline
-  implicit class RevokedCertificateMutableBuilder[Self <: RevokedCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: RevokedCertificate](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
-    @scala.inline
-    def setHexSerialNumber(value: String): Self = StObject.set(x, "hexSerialNumber", value.asInstanceOf[js.Any])
+    inline def setHexSerialNumber(value: String): Self = StObject.set(x, "hexSerialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHexSerialNumberUndefined: Self = StObject.set(x, "hexSerialNumber", js.undefined)
+    inline def setHexSerialNumberUndefined: Self = StObject.set(x, "hexSerialNumber", js.undefined)
     
-    @scala.inline
-    def setRevocationReason(value: String): Self = StObject.set(x, "revocationReason", value.asInstanceOf[js.Any])
+    inline def setRevocationReason(value: String): Self = StObject.set(x, "revocationReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevocationReasonUndefined: Self = StObject.set(x, "revocationReason", js.undefined)
+    inline def setRevocationReasonUndefined: Self = StObject.set(x, "revocationReason", js.undefined)
   }
 }

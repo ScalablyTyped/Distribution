@@ -22,25 +22,19 @@ trait RangeCoordinates extends StObject {
 }
 object RangeCoordinates {
   
-  @scala.inline
-  def apply(): RangeCoordinates = {
+  inline def apply(): RangeCoordinates = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeCoordinates]
   }
   
-  @scala.inline
-  implicit class RangeCoordinatesMutableBuilder[Self <: RangeCoordinates] (val x: Self) extends AnyVal {
+  extension [Self <: RangeCoordinates](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

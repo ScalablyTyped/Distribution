@@ -32,31 +32,23 @@ trait SchemaPlusDomainsAclentryResource extends StObject {
 }
 object SchemaPlusDomainsAclentryResource {
   
-  @scala.inline
-  def apply(): SchemaPlusDomainsAclentryResource = {
+  inline def apply(): SchemaPlusDomainsAclentryResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPlusDomainsAclentryResource]
   }
   
-  @scala.inline
-  implicit class SchemaPlusDomainsAclentryResourceMutableBuilder[Self <: SchemaPlusDomainsAclentryResource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPlusDomainsAclentryResource](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait XMLHTTP60 extends StObject {
   
-  @JSName("MSXML2.XMLHTTP60_typekey")
+  /* private */ @JSName("MSXML2.XMLHTTP60_typekey")
   var MSXML2DotXMLHTTP60_typekey: XMLHTTP60 = js.native
   
   /** Abort HTTP request */

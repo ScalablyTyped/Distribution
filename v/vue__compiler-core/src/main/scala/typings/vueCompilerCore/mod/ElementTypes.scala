@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElementTypes extends StObject
 object ElementTypes {
   
-  @scala.inline
-  def COMPONENT: `1` = 1.asInstanceOf[`1`]
+  inline def COMPONENT: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ELEMENT: `0` = 0.asInstanceOf[`0`]
+  inline def ELEMENT: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def SLOT: `2` = 2.asInstanceOf[`2`]
+  inline def SLOT: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def TEMPLATE: `3` = 3.asInstanceOf[`3`]
+  inline def TEMPLATE: `3` = 3.asInstanceOf[`3`]
 }

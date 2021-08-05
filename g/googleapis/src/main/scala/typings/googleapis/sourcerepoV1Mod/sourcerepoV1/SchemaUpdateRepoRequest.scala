@@ -23,25 +23,19 @@ trait SchemaUpdateRepoRequest extends StObject {
 }
 object SchemaUpdateRepoRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateRepoRequest = {
+  inline def apply(): SchemaUpdateRepoRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateRepoRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateRepoRequestMutableBuilder[Self <: SchemaUpdateRepoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateRepoRequest](x: Self) {
     
-    @scala.inline
-    def setRepo(value: SchemaRepo): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: SchemaRepo): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
+    inline def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

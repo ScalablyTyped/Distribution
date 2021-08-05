@@ -11,6 +11,5 @@ object tagFilteringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def applyTagFilters(parsedFeature: ParsedFeature): ParsedFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("applyTagFilters")(parsedFeature.asInstanceOf[js.Any]).asInstanceOf[ParsedFeature]
+  inline def applyTagFilters(parsedFeature: ParsedFeature): ParsedFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("applyTagFilters")(parsedFeature.asInstanceOf[js.Any]).asInstanceOf[ParsedFeature]
 }

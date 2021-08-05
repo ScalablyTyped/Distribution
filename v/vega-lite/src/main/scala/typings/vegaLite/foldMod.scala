@@ -15,6 +15,6 @@ object foldMod {
     
     def assemble(): typings.vegaTypings.transformMod.FoldTransform = js.native
     
-    var transform: js.Any = js.native
+    /* private */ var transform: js.Any = js.native
   }
 }

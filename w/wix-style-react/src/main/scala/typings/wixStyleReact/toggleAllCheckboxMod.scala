@@ -30,8 +30,7 @@ object toggleAllCheckboxMod extends Shortcut {
   }
   object ToggleAllCheckboxProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deselectAll: () => Unit,
       enabledItemsAmount: Double,
       selectAll: () => Unit,
@@ -41,38 +40,27 @@ object toggleAllCheckboxMod extends Shortcut {
       __obj.asInstanceOf[ToggleAllCheckboxProps]
     }
     
-    @scala.inline
-    implicit class ToggleAllCheckboxPropsMutableBuilder[Self <: ToggleAllCheckboxProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleAllCheckboxProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDeselectAll(value: () => Unit): Self = StObject.set(x, "deselectAll", js.Any.fromFunction0(value))
+      inline def setDeselectAll(value: () => Unit): Self = StObject.set(x, "deselectAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeselectAllText(value: String): Self = StObject.set(x, "deselectAllText", value.asInstanceOf[js.Any])
+      inline def setDeselectAllText(value: String): Self = StObject.set(x, "deselectAllText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeselectAllTextUndefined: Self = StObject.set(x, "deselectAllText", js.undefined)
+      inline def setDeselectAllTextUndefined: Self = StObject.set(x, "deselectAllText", js.undefined)
       
-      @scala.inline
-      def setEnabledItemsAmount(value: Double): Self = StObject.set(x, "enabledItemsAmount", value.asInstanceOf[js.Any])
+      inline def setEnabledItemsAmount(value: Double): Self = StObject.set(x, "enabledItemsAmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectAll(value: () => Unit): Self = StObject.set(x, "selectAll", js.Any.fromFunction0(value))
+      inline def setSelectAll(value: () => Unit): Self = StObject.set(x, "selectAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelectAllText(value: String): Self = StObject.set(x, "selectAllText", value.asInstanceOf[js.Any])
+      inline def setSelectAllText(value: String): Self = StObject.set(x, "selectAllText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectAllTextUndefined: Self = StObject.set(x, "selectAllText", js.undefined)
+      inline def setSelectAllTextUndefined: Self = StObject.set(x, "selectAllText", js.undefined)
       
-      @scala.inline
-      def setSelectedEnabledItemsAmount(value: Double): Self = StObject.set(x, "selectedEnabledItemsAmount", value.asInstanceOf[js.Any])
+      inline def setSelectedEnabledItemsAmount(value: Double): Self = StObject.set(x, "selectedEnabledItemsAmount", value.asInstanceOf[js.Any])
     }
   }
   

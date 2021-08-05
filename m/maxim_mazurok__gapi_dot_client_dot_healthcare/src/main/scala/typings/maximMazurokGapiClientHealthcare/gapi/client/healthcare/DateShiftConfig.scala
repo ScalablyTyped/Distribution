@@ -14,19 +14,15 @@ trait DateShiftConfig extends StObject {
 }
 object DateShiftConfig {
   
-  @scala.inline
-  def apply(): DateShiftConfig = {
+  inline def apply(): DateShiftConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateShiftConfig]
   }
   
-  @scala.inline
-  implicit class DateShiftConfigMutableBuilder[Self <: DateShiftConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DateShiftConfig](x: Self) {
     
-    @scala.inline
-    def setCryptoKey(value: String): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
+    inline def setCryptoKey(value: String): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
+    inline def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
   }
 }

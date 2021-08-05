@@ -17,34 +17,25 @@ trait ResultInfo extends StObject {
 }
 object ResultInfo {
   
-  @scala.inline
-  def apply(): ResultInfo = {
+  inline def apply(): ResultInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultInfo]
   }
   
-  @scala.inline
-  implicit class ResultInfoMutableBuilder[Self <: ResultInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ResultInfo](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageNull: Self = StObject.set(x, "message", null)
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setSubcode(value: Double): Self = StObject.set(x, "subcode", value.asInstanceOf[js.Any])
+    inline def setSubcode(value: Double): Self = StObject.set(x, "subcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubcodeUndefined: Self = StObject.set(x, "subcode", js.undefined)
+    inline def setSubcodeUndefined: Self = StObject.set(x, "subcode", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait ControlOptions
 }
 object ControlOptions {
   
-  @scala.inline
-  def apply(): ControlOptions = {
+  inline def apply(): ControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ControlOptions]
   }
   
-  @scala.inline
-  implicit class ControlOptionsMutableBuilder[Self <: ControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ControlOptions](x: Self) {
     
-    @scala.inline
-    def setSanitizer(value: /* template */ String => String): Self = StObject.set(x, "sanitizer", js.Any.fromFunction1(value))
+    inline def setSanitizer(value: /* template */ String => String): Self = StObject.set(x, "sanitizer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
+    inline def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
   }
 }

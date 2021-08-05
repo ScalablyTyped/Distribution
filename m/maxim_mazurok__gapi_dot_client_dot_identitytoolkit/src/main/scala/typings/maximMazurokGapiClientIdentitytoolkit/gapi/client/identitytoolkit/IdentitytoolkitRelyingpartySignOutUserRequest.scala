@@ -14,25 +14,19 @@ trait IdentitytoolkitRelyingpartySignOutUserRequest extends StObject {
 }
 object IdentitytoolkitRelyingpartySignOutUserRequest {
   
-  @scala.inline
-  def apply(): IdentitytoolkitRelyingpartySignOutUserRequest = {
+  inline def apply(): IdentitytoolkitRelyingpartySignOutUserRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySignOutUserRequest]
   }
   
-  @scala.inline
-  implicit class IdentitytoolkitRelyingpartySignOutUserRequestMutableBuilder[Self <: IdentitytoolkitRelyingpartySignOutUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IdentitytoolkitRelyingpartySignOutUserRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
-    @scala.inline
-    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
+    inline def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
   }
 }

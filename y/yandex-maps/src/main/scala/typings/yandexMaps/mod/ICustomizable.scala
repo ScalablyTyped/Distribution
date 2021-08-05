@@ -12,16 +12,13 @@ trait ICustomizable
 }
 object ICustomizable {
   
-  @scala.inline
-  def apply(events: IEventManager[js.Object], options: IOptionManager): ICustomizable = {
+  inline def apply(events: IEventManager[js.Object], options: IOptionManager): ICustomizable = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomizable]
   }
   
-  @scala.inline
-  implicit class ICustomizableMutableBuilder[Self <: ICustomizable] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomizable](x: Self) {
     
-    @scala.inline
-    def setOptions(value: IOptionManager): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IOptionManager): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

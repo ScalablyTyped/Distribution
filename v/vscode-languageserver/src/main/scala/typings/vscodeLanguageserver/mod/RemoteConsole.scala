@@ -41,8 +41,7 @@ trait RemoteConsole extends StObject {
 }
 object RemoteConsole {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connection: IConnection,
     error: String => Unit,
     info: String => Unit,
@@ -53,22 +52,16 @@ object RemoteConsole {
     __obj.asInstanceOf[RemoteConsole]
   }
   
-  @scala.inline
-  implicit class RemoteConsoleMutableBuilder[Self <: RemoteConsole] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteConsole](x: Self) {
     
-    @scala.inline
-    def setConnection(value: IConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: IConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInfo(value: String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+    inline def setInfo(value: String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWarn(value: String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

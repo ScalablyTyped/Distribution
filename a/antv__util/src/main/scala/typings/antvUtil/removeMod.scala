@@ -10,8 +10,7 @@ object removeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](
+  inline def default[T](
     arr: js.Array[T],
     predicate: js.Function3[/* value */ T, /* idx */ Double, /* arr */ js.UndefOr[js.Array[T]], Boolean]
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]

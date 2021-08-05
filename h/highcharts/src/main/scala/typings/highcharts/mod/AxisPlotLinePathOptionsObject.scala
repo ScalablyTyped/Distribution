@@ -48,55 +48,39 @@ trait AxisPlotLinePathOptionsObject extends StObject {
 }
 object AxisPlotLinePathOptionsObject {
   
-  @scala.inline
-  def apply(): AxisPlotLinePathOptionsObject = {
+  inline def apply(): AxisPlotLinePathOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AxisPlotLinePathOptionsObject]
   }
   
-  @scala.inline
-  implicit class AxisPlotLinePathOptionsObjectMutableBuilder[Self <: AxisPlotLinePathOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: AxisPlotLinePathOptionsObject](x: Self) {
     
-    @scala.inline
-    def setAcrossPanes(value: Boolean): Self = StObject.set(x, "acrossPanes", value.asInstanceOf[js.Any])
+    inline def setAcrossPanes(value: Boolean): Self = StObject.set(x, "acrossPanes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcrossPanesUndefined: Self = StObject.set(x, "acrossPanes", js.undefined)
+    inline def setAcrossPanesUndefined: Self = StObject.set(x, "acrossPanes", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean | String): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean | String): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
-    @scala.inline
-    def setOld(value: Boolean): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
+    inline def setOld(value: Boolean): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
+    inline def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
-    @scala.inline
-    def setTranslatedValue(value: Double): Self = StObject.set(x, "translatedValue", value.asInstanceOf[js.Any])
+    inline def setTranslatedValue(value: Double): Self = StObject.set(x, "translatedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslatedValueUndefined: Self = StObject.set(x, "translatedValue", js.undefined)
+    inline def setTranslatedValueUndefined: Self = StObject.set(x, "translatedValue", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

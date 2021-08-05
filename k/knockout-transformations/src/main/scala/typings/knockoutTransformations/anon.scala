@@ -14,20 +14,16 @@ object anon {
   }
   object Dispose {
     
-    @scala.inline
-    def apply[TResult](dispose: () => Unit, mappedValue: TResult): Dispose[TResult] = {
+    inline def apply[TResult](dispose: () => Unit, mappedValue: TResult): Dispose[TResult] = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), mappedValue = mappedValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dispose[TResult]]
     }
     
-    @scala.inline
-    implicit class DisposeMutableBuilder[Self <: Dispose[?], TResult] (val x: Self & Dispose[TResult]) extends AnyVal {
+    extension [Self <: Dispose[?], TResult](x: Self & Dispose[TResult]) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMappedValue(value: TResult): Self = StObject.set(x, "mappedValue", value.asInstanceOf[js.Any])
+      inline def setMappedValue(value: TResult): Self = StObject.set(x, "mappedValue", value.asInstanceOf[js.Any])
     }
   }
 }

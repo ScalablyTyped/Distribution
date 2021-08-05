@@ -101,6 +101,5 @@ object SpatialQuery {
     * @param name     The view to use.
     */
   /* static member */
-  @scala.inline
-  def from(ddoc: String, name: String): SpatialQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(ddoc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[SpatialQuery]
+  inline def from(ddoc: String, name: String): SpatialQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(ddoc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[SpatialQuery]
 }

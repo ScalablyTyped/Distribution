@@ -14,8 +14,7 @@ object useScrollToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](
+  inline def default[T](
     containerRef: RefObject[HTMLDivElement],
     data: js.Array[T],
     heights: typings.rcVirtualList.cacheMapMod.default,

@@ -38,10 +38,8 @@ object crowdsaleMod {
     override val privateKey: String = js.native
   }
   
-  @scala.inline
-  def decrypt(json: String, password: String): ExternallyOwnedAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ExternallyOwnedAccount]
-  @scala.inline
-  def decrypt(json: String, password: Bytes): ExternallyOwnedAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ExternallyOwnedAccount]
+  inline def decrypt(json: String, password: String): ExternallyOwnedAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ExternallyOwnedAccount]
+  inline def decrypt(json: String, password: Bytes): ExternallyOwnedAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ExternallyOwnedAccount]
   
   trait _CrowdsaleAccount extends StObject {
     
@@ -53,23 +51,18 @@ object crowdsaleMod {
   }
   object _CrowdsaleAccount {
     
-    @scala.inline
-    def apply(_isCrowdsaleAccount: Boolean, address: String, privateKey: String): _CrowdsaleAccount = {
+    inline def apply(_isCrowdsaleAccount: Boolean, address: String, privateKey: String): _CrowdsaleAccount = {
       val __obj = js.Dynamic.literal(_isCrowdsaleAccount = _isCrowdsaleAccount.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[_CrowdsaleAccount]
     }
     
-    @scala.inline
-    implicit class _CrowdsaleAccountMutableBuilder[Self <: _CrowdsaleAccount] (val x: Self) extends AnyVal {
+    extension [Self <: _CrowdsaleAccount](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isCrowdsaleAccount(value: Boolean): Self = StObject.set(x, "_isCrowdsaleAccount", value.asInstanceOf[js.Any])
+      inline def set_isCrowdsaleAccount(value: Boolean): Self = StObject.set(x, "_isCrowdsaleAccount", value.asInstanceOf[js.Any])
     }
   }
 }

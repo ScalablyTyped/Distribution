@@ -12,8 +12,7 @@ trait TypeAnnotation
 }
 object TypeAnnotation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -41,10 +40,8 @@ object TypeAnnotation {
     __obj.asInstanceOf[TypeAnnotation]
   }
   
-  @scala.inline
-  implicit class TypeAnnotationMutableBuilder[Self <: TypeAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: TypeAnnotation](x: Self) {
     
-    @scala.inline
-    def setType(value: AST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

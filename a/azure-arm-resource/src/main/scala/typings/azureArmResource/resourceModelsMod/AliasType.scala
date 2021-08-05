@@ -18,28 +18,21 @@ trait AliasType extends StObject {
 }
 object AliasType {
   
-  @scala.inline
-  def apply(): AliasType = {
+  inline def apply(): AliasType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AliasType]
   }
   
-  @scala.inline
-  implicit class AliasTypeMutableBuilder[Self <: AliasType] (val x: Self) extends AnyVal {
+  extension [Self <: AliasType](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPaths(value: js.Array[AliasPathType]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Array[AliasPathType]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    @scala.inline
-    def setPathsVarargs(value: AliasPathType*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: AliasPathType*): Self = StObject.set(x, "paths", js.Array(value :_*))
   }
 }

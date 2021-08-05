@@ -9,8 +9,7 @@ trait BackgroundTaskDeferral
      with IBackgroundTaskDeferral
 object BackgroundTaskDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): BackgroundTaskDeferral = {
+  inline def apply(complete: () => Unit): BackgroundTaskDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[BackgroundTaskDeferral]
   }

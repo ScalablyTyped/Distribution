@@ -27,7 +27,7 @@ trait SharedWorkspaceTask extends StObject {
   
   val ModifiedDate: VarDate
   
-  @JSName("Office.SharedWorkspaceTask_typekey")
+  /* private */ @JSName("Office.SharedWorkspaceTask_typekey")
   var OfficeDotSharedWorkspaceTask_typekey: SharedWorkspaceTask
   
   val Parent: js.Any
@@ -42,8 +42,7 @@ trait SharedWorkspaceTask extends StObject {
 }
 object SharedWorkspaceTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     AssignedTo: String,
     CreatedBy: String,
@@ -66,55 +65,38 @@ object SharedWorkspaceTask {
     __obj.asInstanceOf[SharedWorkspaceTask]
   }
   
-  @scala.inline
-  implicit class SharedWorkspaceTaskMutableBuilder[Self <: SharedWorkspaceTask] (val x: Self) extends AnyVal {
+  extension [Self <: SharedWorkspaceTask](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedTo(value: String): Self = StObject.set(x, "AssignedTo", value.asInstanceOf[js.Any])
+    inline def setAssignedTo(value: String): Self = StObject.set(x, "AssignedTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedBy(value: String): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: String): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDate(value: VarDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: VarDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDueDate(value: VarDate): Self = StObject.set(x, "DueDate", value.asInstanceOf[js.Any])
+    inline def setDueDate(value: VarDate): Self = StObject.set(x, "DueDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedBy(value: String): Self = StObject.set(x, "ModifiedBy", value.asInstanceOf[js.Any])
+    inline def setModifiedBy(value: String): Self = StObject.set(x, "ModifiedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedDate(value: VarDate): Self = StObject.set(x, "ModifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: VarDate): Self = StObject.set(x, "ModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotSharedWorkspaceTask_typekey(value: SharedWorkspaceTask): Self = StObject.set(x, "Office.SharedWorkspaceTask_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotSharedWorkspaceTask_typekey(value: SharedWorkspaceTask): Self = StObject.set(x, "Office.SharedWorkspaceTask_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: MsoSharedWorkspaceTaskPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: MsoSharedWorkspaceTaskPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStatus(value: MsoSharedWorkspaceTaskStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MsoSharedWorkspaceTaskStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

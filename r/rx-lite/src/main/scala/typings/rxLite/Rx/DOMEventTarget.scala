@@ -12,8 +12,7 @@ trait DOMEventTarget extends StObject {
 }
 object DOMEventTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventListener: (String, js.Function1[/* e */ js.Any, js.Any], Boolean) => Unit,
     removeEventListener: (String, js.Function1[/* e */ js.Any, js.Any], Boolean) => Unit
   ): DOMEventTarget = {
@@ -21,13 +20,10 @@ object DOMEventTarget {
     __obj.asInstanceOf[DOMEventTarget]
   }
   
-  @scala.inline
-  implicit class DOMEventTargetMutableBuilder[Self <: DOMEventTarget] (val x: Self) extends AnyVal {
+  extension [Self <: DOMEventTarget](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: (String, js.Function1[/* e */ js.Any, js.Any], Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
+    inline def setAddEventListener(value: (String, js.Function1[/* e */ js.Any, js.Any], Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveEventListener(value: (String, js.Function1[/* e */ js.Any, js.Any], Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
+    inline def setRemoveEventListener(value: (String, js.Function1[/* e */ js.Any, js.Any], Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
   }
 }

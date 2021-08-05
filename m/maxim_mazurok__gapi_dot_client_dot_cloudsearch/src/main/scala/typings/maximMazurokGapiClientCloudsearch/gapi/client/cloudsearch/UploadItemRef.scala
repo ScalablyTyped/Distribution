@@ -11,19 +11,15 @@ trait UploadItemRef extends StObject {
 }
 object UploadItemRef {
   
-  @scala.inline
-  def apply(): UploadItemRef = {
+  inline def apply(): UploadItemRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadItemRef]
   }
   
-  @scala.inline
-  implicit class UploadItemRefMutableBuilder[Self <: UploadItemRef] (val x: Self) extends AnyVal {
+  extension [Self <: UploadItemRef](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

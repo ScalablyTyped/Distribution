@@ -29,7 +29,6 @@ object listMod {
     @JSImport("react-virtualized/dist/commonjs/List", "List.defaultProps")
     @js.native
     def defaultProps: AutoHeight = js.native
-    @scala.inline
-    def defaultProps_=(x: AutoHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: AutoHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

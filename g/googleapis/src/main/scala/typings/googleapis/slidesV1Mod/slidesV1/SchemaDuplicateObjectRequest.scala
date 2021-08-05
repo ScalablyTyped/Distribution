@@ -39,25 +39,19 @@ trait SchemaDuplicateObjectRequest extends StObject {
 }
 object SchemaDuplicateObjectRequest {
   
-  @scala.inline
-  def apply(): SchemaDuplicateObjectRequest = {
+  inline def apply(): SchemaDuplicateObjectRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDuplicateObjectRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDuplicateObjectRequestMutableBuilder[Self <: SchemaDuplicateObjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDuplicateObjectRequest](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setObjectIds(value: StringDictionary[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
+    inline def setObjectIds(value: StringDictionary[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
+    inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
   }
 }

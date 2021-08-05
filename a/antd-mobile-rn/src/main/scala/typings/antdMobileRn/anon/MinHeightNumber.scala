@@ -10,16 +10,13 @@ trait MinHeightNumber extends StObject {
 }
 object MinHeightNumber {
   
-  @scala.inline
-  def apply(minHeight: Double): MinHeightNumber = {
+  inline def apply(minHeight: Double): MinHeightNumber = {
     val __obj = js.Dynamic.literal(minHeight = minHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinHeightNumber]
   }
   
-  @scala.inline
-  implicit class MinHeightNumberMutableBuilder[Self <: MinHeightNumber] (val x: Self) extends AnyVal {
+  extension [Self <: MinHeightNumber](x: Self) {
     
-    @scala.inline
-    def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
   }
 }

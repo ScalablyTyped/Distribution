@@ -15,19 +15,15 @@ trait TypeofCollapsible extends StObject {
 }
 object TypeofCollapsible {
   
-  @scala.inline
-  def apply(extend: js.Object => Collapsible, fn: Collapsible): TypeofCollapsible = {
+  inline def apply(extend: js.Object => Collapsible, fn: Collapsible): TypeofCollapsible = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofCollapsible]
   }
   
-  @scala.inline
-  implicit class TypeofCollapsibleMutableBuilder[Self <: TypeofCollapsible] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofCollapsible](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Collapsible): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Collapsible): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Collapsible): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Collapsible): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

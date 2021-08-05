@@ -34,25 +34,19 @@ trait SonificationObject extends StObject {
 }
 object SonificationObject {
   
-  @scala.inline
-  def apply(Earcon: js.Function, Instrument: js.Function, fadeOutDuration: Double, instruments: js.Object): SonificationObject = {
+  inline def apply(Earcon: js.Function, Instrument: js.Function, fadeOutDuration: Double, instruments: js.Object): SonificationObject = {
     val __obj = js.Dynamic.literal(Earcon = Earcon.asInstanceOf[js.Any], Instrument = Instrument.asInstanceOf[js.Any], fadeOutDuration = fadeOutDuration.asInstanceOf[js.Any], instruments = instruments.asInstanceOf[js.Any])
     __obj.asInstanceOf[SonificationObject]
   }
   
-  @scala.inline
-  implicit class SonificationObjectMutableBuilder[Self <: SonificationObject] (val x: Self) extends AnyVal {
+  extension [Self <: SonificationObject](x: Self) {
     
-    @scala.inline
-    def setEarcon(value: js.Function): Self = StObject.set(x, "Earcon", value.asInstanceOf[js.Any])
+    inline def setEarcon(value: js.Function): Self = StObject.set(x, "Earcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeOutDuration(value: Double): Self = StObject.set(x, "fadeOutDuration", value.asInstanceOf[js.Any])
+    inline def setFadeOutDuration(value: Double): Self = StObject.set(x, "fadeOutDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstrument(value: js.Function): Self = StObject.set(x, "Instrument", value.asInstanceOf[js.Any])
+    inline def setInstrument(value: js.Function): Self = StObject.set(x, "Instrument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstruments(value: js.Object): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
+    inline def setInstruments(value: js.Object): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
   }
 }

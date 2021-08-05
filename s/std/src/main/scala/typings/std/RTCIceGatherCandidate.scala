@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCIceGatherCandidate extends StObject
 object RTCIceGatherCandidate {
   
-  @scala.inline
-  def RTCIceCandidateDictionary(): typings.std.RTCIceCandidateDictionary = {
+  inline def RTCIceCandidateDictionary(): typings.std.RTCIceCandidateDictionary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.std.RTCIceCandidateDictionary]
   }

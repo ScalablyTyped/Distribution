@@ -20,8 +20,7 @@ trait Reporter extends StObject {
 }
 object Reporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     log: String => Unit,
     reportRunnerResults: Runner => Unit,
     reportRunnerStarting: Runner => Unit,
@@ -33,25 +32,18 @@ object Reporter {
     __obj.asInstanceOf[Reporter]
   }
   
-  @scala.inline
-  implicit class ReporterMutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
+  extension [Self <: Reporter](x: Self) {
     
-    @scala.inline
-    def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReportRunnerResults(value: Runner => Unit): Self = StObject.set(x, "reportRunnerResults", js.Any.fromFunction1(value))
+    inline def setReportRunnerResults(value: Runner => Unit): Self = StObject.set(x, "reportRunnerResults", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReportRunnerStarting(value: Runner => Unit): Self = StObject.set(x, "reportRunnerStarting", js.Any.fromFunction1(value))
+    inline def setReportRunnerStarting(value: Runner => Unit): Self = StObject.set(x, "reportRunnerStarting", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReportSpecResults(value: Spec => Unit): Self = StObject.set(x, "reportSpecResults", js.Any.fromFunction1(value))
+    inline def setReportSpecResults(value: Spec => Unit): Self = StObject.set(x, "reportSpecResults", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReportSpecStarting(value: Spec => Unit): Self = StObject.set(x, "reportSpecStarting", js.Any.fromFunction1(value))
+    inline def setReportSpecStarting(value: Spec => Unit): Self = StObject.set(x, "reportSpecStarting", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReportSuiteResults(value: Suite => Unit): Self = StObject.set(x, "reportSuiteResults", js.Any.fromFunction1(value))
+    inline def setReportSuiteResults(value: Suite => Unit): Self = StObject.set(x, "reportSuiteResults", js.Any.fromFunction1(value))
   }
 }

@@ -122,8 +122,7 @@ object mod {
       * @static
       * @returns {string} The collection name.
       */
-    @scala.inline
-    def collectionName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("collectionName")().asInstanceOf[String]
+    inline def collectionName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("collectionName")().asInstanceOf[String]
     
     /**
       * Number of matching documents without retrieving all the data.
@@ -132,8 +131,7 @@ object mod {
       * @param {*} query Count query.
       * @returns {Promise<number>}
       */
-    @scala.inline
-    def count(query: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def count(query: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
     
     /**
       * Creates a camo document instance.
@@ -143,8 +141,7 @@ object mod {
       * @param {StaticSchema} schema Base schema to create a document.
       * @returns {DocumentInstance<StaticSchema>} A camo document instance.
       */
-    @scala.inline
-    def create[StaticSchema /* <: DocumentSchema */](schema: StaticSchema): Document[StaticSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(schema.asInstanceOf[js.Any]).asInstanceOf[Document[StaticSchema]]
+    inline def create[StaticSchema /* <: DocumentSchema */](schema: StaticSchema): Document[StaticSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(schema.asInstanceOf[js.Any]).asInstanceOf[Document[StaticSchema]]
     
     /**
       * Removes all documents matching the query.
@@ -153,8 +150,7 @@ object mod {
       * @param {*} query Delete query.
       * @returns {Promise<number>} Number of deleted documents.
       */
-    @scala.inline
-    def deleteMany(query: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteMany")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def deleteMany(query: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteMany")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
     
     /**
       * Removes the first document found, even if multiple documents match the query.
@@ -163,8 +159,7 @@ object mod {
       * @param {*} query Delete query.
       * @returns {Promise<number>} Number of deleted documents.
       */
-    @scala.inline
-    def deleteOne(query: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteOne")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def deleteOne(query: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteOne")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
     
     /**
       * Return all documents matching the query.
@@ -175,10 +170,8 @@ object mod {
       * @param {FindOptions} options
       * @returns {Promise<StaticSchema>}
       */
-    @scala.inline
-    def find[StaticSchema /* <: DocumentSchema */](query: js.Any): js.Promise[js.Array[StaticSchema]] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[StaticSchema]]]
-    @scala.inline
-    def find[StaticSchema /* <: DocumentSchema */](query: js.Any, options: FindOptions): js.Promise[js.Array[StaticSchema]] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[StaticSchema]]]
+    inline def find[StaticSchema /* <: DocumentSchema */](query: js.Any): js.Promise[js.Array[StaticSchema]] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[StaticSchema]]]
+    inline def find[StaticSchema /* <: DocumentSchema */](query: js.Any, options: FindOptions): js.Promise[js.Array[StaticSchema]] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[StaticSchema]]]
     
     /**
       * Return the first document found, even if multiple documents match the query.
@@ -189,10 +182,8 @@ object mod {
       * @param {FindOneOptions} options findOne method options.
       * @returns {Promise<StaticSchema>}
       */
-    @scala.inline
-    def findOne[StaticSchema /* <: DocumentSchema */](query: js.Any): js.Promise[StaticSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StaticSchema]]
-    @scala.inline
-    def findOne[StaticSchema /* <: DocumentSchema */](query: js.Any, options: FindOneOptions): js.Promise[StaticSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticSchema]]
+    inline def findOne[StaticSchema /* <: DocumentSchema */](query: js.Any): js.Promise[StaticSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StaticSchema]]
+    inline def findOne[StaticSchema /* <: DocumentSchema */](query: js.Any, options: FindOneOptions): js.Promise[StaticSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticSchema]]
     
     /**
       * Find the first document and delete it.
@@ -202,10 +193,8 @@ object mod {
       * @param {*} options Database Options for findOneAndDelete method.
       * @returns {Promise<number>} Number of deleted documents.
       */
-    @scala.inline
-    def findOneAndDelete(query: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndDelete")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
-    @scala.inline
-    def findOneAndDelete(query: js.Any, options: js.Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndDelete")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def findOneAndDelete(query: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndDelete")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def findOneAndDelete(query: js.Any, options: js.Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndDelete")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
     /**
       * Find and update (or insert) a document in one atomic operation (atomic for MongoDB only).
@@ -217,14 +206,11 @@ object mod {
       * @param {FindOneAndUpdateOptions} options findOneAndUpdate method options.
       * @returns {Promise<StaticSchema>}
       */
-    @scala.inline
-    def findOneAndUpdate[StaticSchema /* <: DocumentSchema */](query: js.Any, values: StaticSchema): js.Promise[StaticSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndUpdate")(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticSchema]]
-    @scala.inline
-    def findOneAndUpdate[StaticSchema /* <: DocumentSchema */](query: js.Any, values: StaticSchema, options: FindOneAndUpdateOptions): js.Promise[StaticSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndUpdate")(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticSchema]]
+    inline def findOneAndUpdate[StaticSchema /* <: DocumentSchema */](query: js.Any, values: StaticSchema): js.Promise[StaticSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndUpdate")(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticSchema]]
+    inline def findOneAndUpdate[StaticSchema /* <: DocumentSchema */](query: js.Any, values: StaticSchema, options: FindOneAndUpdateOptions): js.Promise[StaticSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndUpdate")(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticSchema]]
   }
   
-  @scala.inline
-  def connect(uri: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def connect(uri: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
   trait DocumentSchema
     extends StObject
@@ -240,20 +226,16 @@ object mod {
   }
   object DocumentSchema {
     
-    @scala.inline
-    def apply(): DocumentSchema = {
+    inline def apply(): DocumentSchema = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DocumentSchema]
     }
     
-    @scala.inline
-    implicit class DocumentSchemaMutableBuilder[Self <: DocumentSchema] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentSchema](x: Self) {
       
-      @scala.inline
-      def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
+      inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
     }
   }
   
@@ -268,20 +250,16 @@ object mod {
   }
   object FindOneAndUpdateOptions {
     
-    @scala.inline
-    def apply(): FindOneAndUpdateOptions = {
+    inline def apply(): FindOneAndUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindOneAndUpdateOptions]
     }
     
-    @scala.inline
-    implicit class FindOneAndUpdateOptionsMutableBuilder[Self <: FindOneAndUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FindOneAndUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+      inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+      inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
     }
   }
   
@@ -297,23 +275,18 @@ object mod {
   }
   object FindOneOptions {
     
-    @scala.inline
-    def apply(): FindOneOptions = {
+    inline def apply(): FindOneOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindOneOptions]
     }
     
-    @scala.inline
-    implicit class FindOneOptionsMutableBuilder[Self <: FindOneOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FindOneOptions](x: Self) {
       
-      @scala.inline
-      def setPopulate(value: Boolean | js.Array[String]): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
+      inline def setPopulate(value: Boolean | js.Array[String]): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
+      inline def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
       
-      @scala.inline
-      def setPopulateVarargs(value: String*): Self = StObject.set(x, "populate", js.Array(value :_*))
+      inline def setPopulateVarargs(value: String*): Self = StObject.set(x, "populate", js.Array(value :_*))
     }
   }
   
@@ -350,44 +323,32 @@ object mod {
   }
   object FindOptions {
     
-    @scala.inline
-    def apply(): FindOptions = {
+    inline def apply(): FindOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindOptions]
     }
     
-    @scala.inline
-    implicit class FindOptionsMutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FindOptions](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setPopulate(value: Boolean | js.Array[String]): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
+      inline def setPopulate(value: Boolean | js.Array[String]): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
+      inline def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
       
-      @scala.inline
-      def setPopulateVarargs(value: String*): Self = StObject.set(x, "populate", js.Array(value :_*))
+      inline def setPopulateVarargs(value: String*): Self = StObject.set(x, "populate", js.Array(value :_*))
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setSort(value: TypeOrArrayOfType[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: TypeOrArrayOfType[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      @scala.inline
-      def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
+      inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
     }
   }
   
@@ -451,74 +412,53 @@ object mod {
   }
   object SchemaTypeOptions {
     
-    @scala.inline
-    def apply[Type](`type`: SchemaTypeConstructor): SchemaTypeOptions[Type] = {
+    inline def apply[Type](`type`: SchemaTypeConstructor): SchemaTypeOptions[Type] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SchemaTypeOptions[Type]]
     }
     
-    @scala.inline
-    implicit class SchemaTypeOptionsMutableBuilder[Self <: SchemaTypeOptions[?], Type] (val x: Self & SchemaTypeOptions[Type]) extends AnyVal {
+    extension [Self <: SchemaTypeOptions[?], Type](x: Self & SchemaTypeOptions[Type]) {
       
-      @scala.inline
-      def setChoices(value: js.Array[Type]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+      inline def setChoices(value: js.Array[Type]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
+      inline def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
       
-      @scala.inline
-      def setChoicesVarargs(value: Type*): Self = StObject.set(x, "choices", js.Array(value :_*))
+      inline def setChoicesVarargs(value: Type*): Self = StObject.set(x, "choices", js.Array(value :_*))
       
-      @scala.inline
-      def setDefault(value: Type): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Type): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setType(value: SchemaTypeConstructor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: SchemaTypeConstructor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeVarargs(
+      inline def setTypeVarargs(
         value: (ArrayBufferConstructor | ArrayConstructor | BooleanConstructor | DateConstructor | NumberConstructor | ObjectConstructor | StringConstructor)*
       ): Self = StObject.set(x, "type", js.Array(value :_*))
       
-      @scala.inline
-      def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+      inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+      inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
       
-      @scala.inline
-      def setValidate(value: /* value */ Type => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: /* value */ Type => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   

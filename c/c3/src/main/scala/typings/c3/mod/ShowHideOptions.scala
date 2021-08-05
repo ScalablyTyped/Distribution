@@ -11,19 +11,15 @@ trait ShowHideOptions extends StObject {
 }
 object ShowHideOptions {
   
-  @scala.inline
-  def apply(): ShowHideOptions = {
+  inline def apply(): ShowHideOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShowHideOptions]
   }
   
-  @scala.inline
-  implicit class ShowHideOptionsMutableBuilder[Self <: ShowHideOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShowHideOptions](x: Self) {
     
-    @scala.inline
-    def setWithLegend(value: Boolean): Self = StObject.set(x, "withLegend", value.asInstanceOf[js.Any])
+    inline def setWithLegend(value: Boolean): Self = StObject.set(x, "withLegend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithLegendUndefined: Self = StObject.set(x, "withLegend", js.undefined)
+    inline def setWithLegendUndefined: Self = StObject.set(x, "withLegend", js.undefined)
   }
 }

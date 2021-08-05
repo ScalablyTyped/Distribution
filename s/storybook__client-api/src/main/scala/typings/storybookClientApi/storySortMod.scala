@@ -12,8 +12,6 @@ object storySortMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def storySort(): StorySortComparator = ^.asInstanceOf[js.Dynamic].applyDynamic("storySort")().asInstanceOf[StorySortComparator]
-  @scala.inline
-  def storySort(options: StorySortObjectParameter): StorySortComparator = ^.asInstanceOf[js.Dynamic].applyDynamic("storySort")(options.asInstanceOf[js.Any]).asInstanceOf[StorySortComparator]
+  inline def storySort(): StorySortComparator = ^.asInstanceOf[js.Dynamic].applyDynamic("storySort")().asInstanceOf[StorySortComparator]
+  inline def storySort(options: StorySortObjectParameter): StorySortComparator = ^.asInstanceOf[js.Dynamic].applyDynamic("storySort")(options.asInstanceOf[js.Any]).asInstanceOf[StorySortComparator]
 }

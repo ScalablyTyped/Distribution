@@ -12,19 +12,15 @@ trait UIkitCountdownElement extends StObject {
 }
 object UIkitCountdownElement {
   
-  @scala.inline
-  def apply(start: () => Unit, stop: () => Unit): UIkitCountdownElement = {
+  inline def apply(start: () => Unit, stop: () => Unit): UIkitCountdownElement = {
     val __obj = js.Dynamic.literal(start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
     __obj.asInstanceOf[UIkitCountdownElement]
   }
   
-  @scala.inline
-  implicit class UIkitCountdownElementMutableBuilder[Self <: UIkitCountdownElement] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitCountdownElement](x: Self) {
     
-    @scala.inline
-    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

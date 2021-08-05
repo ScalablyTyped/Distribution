@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "internal-slot"
-version := "1.0-dt-20200515Z-f93c07"
+version := "1.0-dt-20200515Z-3f1f43"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

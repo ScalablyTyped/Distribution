@@ -20,14 +20,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ProgressStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ProgressStream]
-  @scala.inline
-  def apply(optionsOrProgressListener: Options): ProgressStream = ^.asInstanceOf[js.Dynamic].apply(optionsOrProgressListener.asInstanceOf[js.Any]).asInstanceOf[ProgressStream]
-  @scala.inline
-  def apply(optionsOrProgressListener: ProgressListener): ProgressStream = ^.asInstanceOf[js.Dynamic].apply(optionsOrProgressListener.asInstanceOf[js.Any]).asInstanceOf[ProgressStream]
-  @scala.inline
-  def apply(options: Options, progressListener: ProgressListener): ProgressStream = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], progressListener.asInstanceOf[js.Any])).asInstanceOf[ProgressStream]
+  inline def apply(): ProgressStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ProgressStream]
+  inline def apply(optionsOrProgressListener: Options): ProgressStream = ^.asInstanceOf[js.Dynamic].apply(optionsOrProgressListener.asInstanceOf[js.Any]).asInstanceOf[ProgressStream]
+  inline def apply(optionsOrProgressListener: ProgressListener): ProgressStream = ^.asInstanceOf[js.Dynamic].apply(optionsOrProgressListener.asInstanceOf[js.Any]).asInstanceOf[ProgressStream]
+  inline def apply(options: Options, progressListener: ProgressListener): ProgressStream = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], progressListener.asInstanceOf[js.Any])).asInstanceOf[ProgressStream]
   
   @JSImport("progress-stream", JSImport.Namespace)
   @js.native
@@ -47,44 +43,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDrain(value: Boolean): Self = StObject.set(x, "drain", value.asInstanceOf[js.Any])
+      inline def setDrain(value: Boolean): Self = StObject.set(x, "drain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrainUndefined: Self = StObject.set(x, "drain", js.undefined)
+      inline def setDrainUndefined: Self = StObject.set(x, "drain", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
       
-      @scala.inline
-      def setTransferred(value: Double): Self = StObject.set(x, "transferred", value.asInstanceOf[js.Any])
+      inline def setTransferred(value: Double): Self = StObject.set(x, "transferred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransferredUndefined: Self = StObject.set(x, "transferred", js.undefined)
+      inline def setTransferredUndefined: Self = StObject.set(x, "transferred", js.undefined)
     }
   }
   
@@ -108,8 +92,7 @@ object mod {
   }
   object Progress {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delta: Double,
       eta: Double,
       length: Double,
@@ -123,32 +106,23 @@ object mod {
       __obj.asInstanceOf[Progress]
     }
     
-    @scala.inline
-    implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+    extension [Self <: Progress](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEta(value: Double): Self = StObject.set(x, "eta", value.asInstanceOf[js.Any])
+      inline def setEta(value: Double): Self = StObject.set(x, "eta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
+      inline def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransferred(value: Double): Self = StObject.set(x, "transferred", value.asInstanceOf[js.Any])
+      inline def setTransferred(value: Double): Self = StObject.set(x, "transferred", value.asInstanceOf[js.Any])
     }
   }
   

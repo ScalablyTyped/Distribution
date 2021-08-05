@@ -14,8 +14,7 @@ trait IXmlProcessingInstruction
 }
 object IXmlProcessingInstruction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChild: IXmlNode => IXmlNode,
     attributes: XmlNamedNodeMap,
     childNodes: XmlNodeList,
@@ -50,13 +49,10 @@ object IXmlProcessingInstruction {
     __obj.asInstanceOf[IXmlProcessingInstruction]
   }
   
-  @scala.inline
-  implicit class IXmlProcessingInstructionMutableBuilder[Self <: IXmlProcessingInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: IXmlProcessingInstruction](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

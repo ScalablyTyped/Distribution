@@ -44,88 +44,61 @@ trait ApplicationReport extends StObject {
 }
 object ApplicationReport {
   
-  @scala.inline
-  def apply(): ApplicationReport = {
+  inline def apply(): ApplicationReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationReport]
   }
   
-  @scala.inline
-  implicit class ApplicationReportMutableBuilder[Self <: ApplicationReport] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationReport](x: Self) {
     
-    @scala.inline
-    def setApplicationSource(value: String): Self = StObject.set(x, "applicationSource", value.asInstanceOf[js.Any])
+    inline def setApplicationSource(value: String): Self = StObject.set(x, "applicationSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationSourceUndefined: Self = StObject.set(x, "applicationSource", js.undefined)
+    inline def setApplicationSourceUndefined: Self = StObject.set(x, "applicationSource", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEvents(value: js.Array[ApplicationEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[ApplicationEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: ApplicationEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: ApplicationEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setInstallerPackageName(value: String): Self = StObject.set(x, "installerPackageName", value.asInstanceOf[js.Any])
+    inline def setInstallerPackageName(value: String): Self = StObject.set(x, "installerPackageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallerPackageNameUndefined: Self = StObject.set(x, "installerPackageName", js.undefined)
+    inline def setInstallerPackageNameUndefined: Self = StObject.set(x, "installerPackageName", js.undefined)
     
-    @scala.inline
-    def setKeyedAppStates(value: js.Array[KeyedAppState]): Self = StObject.set(x, "keyedAppStates", value.asInstanceOf[js.Any])
+    inline def setKeyedAppStates(value: js.Array[KeyedAppState]): Self = StObject.set(x, "keyedAppStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyedAppStatesUndefined: Self = StObject.set(x, "keyedAppStates", js.undefined)
+    inline def setKeyedAppStatesUndefined: Self = StObject.set(x, "keyedAppStates", js.undefined)
     
-    @scala.inline
-    def setKeyedAppStatesVarargs(value: KeyedAppState*): Self = StObject.set(x, "keyedAppStates", js.Array(value :_*))
+    inline def setKeyedAppStatesVarargs(value: KeyedAppState*): Self = StObject.set(x, "keyedAppStates", js.Array(value :_*))
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setPackageSha256Hash(value: String): Self = StObject.set(x, "packageSha256Hash", value.asInstanceOf[js.Any])
+    inline def setPackageSha256Hash(value: String): Self = StObject.set(x, "packageSha256Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageSha256HashUndefined: Self = StObject.set(x, "packageSha256Hash", js.undefined)
+    inline def setPackageSha256HashUndefined: Self = StObject.set(x, "packageSha256Hash", js.undefined)
     
-    @scala.inline
-    def setSigningKeyCertFingerprints(value: js.Array[String]): Self = StObject.set(x, "signingKeyCertFingerprints", value.asInstanceOf[js.Any])
+    inline def setSigningKeyCertFingerprints(value: js.Array[String]): Self = StObject.set(x, "signingKeyCertFingerprints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningKeyCertFingerprintsUndefined: Self = StObject.set(x, "signingKeyCertFingerprints", js.undefined)
+    inline def setSigningKeyCertFingerprintsUndefined: Self = StObject.set(x, "signingKeyCertFingerprints", js.undefined)
     
-    @scala.inline
-    def setSigningKeyCertFingerprintsVarargs(value: String*): Self = StObject.set(x, "signingKeyCertFingerprints", js.Array(value :_*))
+    inline def setSigningKeyCertFingerprintsVarargs(value: String*): Self = StObject.set(x, "signingKeyCertFingerprints", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
+    inline def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
+    inline def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
     
-    @scala.inline
-    def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
+    inline def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
+    inline def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
   }
 }

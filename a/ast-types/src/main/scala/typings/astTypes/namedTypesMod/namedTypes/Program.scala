@@ -37,55 +37,38 @@ object Program {
   @js.native
   val ^ : Type[Program] = js.native
   
-  @scala.inline
-  implicit class ProgramMutableBuilder[Self <: Program] (val x: Self) extends AnyVal {
+  extension [Self <: Program](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Array[StatementKind]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[StatementKind]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(value: StatementKind*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: StatementKind*): Self = StObject.set(x, "body", js.Array(value :_*))
     
-    @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    inline def setCommentsNull: Self = StObject.set(x, "comments", null)
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectives(value: js.Array[DirectiveKind]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    inline def setDirectives(value: js.Array[DirectiveKind]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+    inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
-    @scala.inline
-    def setDirectivesVarargs(value: DirectiveKind*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: DirectiveKind*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
-    @scala.inline
-    def setInterpreter(value: InterpreterDirectiveKind): Self = StObject.set(x, "interpreter", value.asInstanceOf[js.Any])
+    inline def setInterpreter(value: InterpreterDirectiveKind): Self = StObject.set(x, "interpreter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpreterNull: Self = StObject.set(x, "interpreter", null)
+    inline def setInterpreterNull: Self = StObject.set(x, "interpreter", null)
     
-    @scala.inline
-    def setInterpreterUndefined: Self = StObject.set(x, "interpreter", js.undefined)
+    inline def setInterpreterUndefined: Self = StObject.set(x, "interpreter", js.undefined)
     
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocNull: Self = StObject.set(x, "loc", null)
+    inline def setLocNull: Self = StObject.set(x, "loc", null)
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.astTypes.astTypesStrings.Program): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.astTypes.astTypesStrings.Program): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

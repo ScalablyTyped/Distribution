@@ -20,43 +20,31 @@ trait StackFrame extends StObject {
 }
 object StackFrame {
   
-  @scala.inline
-  def apply(): StackFrame = {
+  inline def apply(): StackFrame = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackFrame]
   }
   
-  @scala.inline
-  implicit class StackFrameMutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
+  extension [Self <: StackFrame](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[Variable]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Variable]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+    inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    @scala.inline
-    def setArgumentsVarargs(value: Variable*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Variable*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+    inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
-    @scala.inline
-    def setLocals(value: js.Array[Variable]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+    inline def setLocals(value: js.Array[Variable]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
+    inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
     
-    @scala.inline
-    def setLocalsVarargs(value: Variable*): Self = StObject.set(x, "locals", js.Array(value :_*))
+    inline def setLocalsVarargs(value: Variable*): Self = StObject.set(x, "locals", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: SourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: SourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

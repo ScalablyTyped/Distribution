@@ -21,34 +21,25 @@ trait CommitRequest extends StObject {
 }
 object CommitRequest {
   
-  @scala.inline
-  def apply(): CommitRequest = {
+  inline def apply(): CommitRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommitRequest]
   }
   
-  @scala.inline
-  implicit class CommitRequestMutableBuilder[Self <: CommitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CommitRequest](x: Self) {
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setMutations(value: js.Array[Mutation]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
+    inline def setMutations(value: js.Array[Mutation]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutationsUndefined: Self = StObject.set(x, "mutations", js.undefined)
+    inline def setMutationsUndefined: Self = StObject.set(x, "mutations", js.undefined)
     
-    @scala.inline
-    def setMutationsVarargs(value: Mutation*): Self = StObject.set(x, "mutations", js.Array(value :_*))
+    inline def setMutationsVarargs(value: Mutation*): Self = StObject.set(x, "mutations", js.Array(value :_*))
     
-    @scala.inline
-    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

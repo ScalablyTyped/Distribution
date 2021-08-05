@@ -10,16 +10,13 @@ trait Rendered extends StObject {
 }
 object Rendered {
   
-  @scala.inline
-  def apply(rendered: String): Rendered = {
+  inline def apply(rendered: String): Rendered = {
     val __obj = js.Dynamic.literal(rendered = rendered.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rendered]
   }
   
-  @scala.inline
-  implicit class RenderedMutableBuilder[Self <: Rendered] (val x: Self) extends AnyVal {
+  extension [Self <: Rendered](x: Self) {
     
-    @scala.inline
-    def setRendered(value: String): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+    inline def setRendered(value: String): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
   }
 }

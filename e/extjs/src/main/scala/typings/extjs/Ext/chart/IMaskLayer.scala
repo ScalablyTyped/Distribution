@@ -10,8 +10,7 @@ trait IMaskLayer
      with IComponent
 object IMaskLayer {
   
-  @scala.inline
-  def apply(): IMaskLayer = {
+  inline def apply(): IMaskLayer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMaskLayer]
   }

@@ -21,22 +21,17 @@ trait TabsSettings extends StObject {
 }
 object TabsSettings {
   
-  @scala.inline
-  def apply(defaultTabStop: Double, tabs: js.Array[TabSettings]): TabsSettings = {
+  inline def apply(defaultTabStop: Double, tabs: js.Array[TabSettings]): TabsSettings = {
     val __obj = js.Dynamic.literal(defaultTabStop = defaultTabStop.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsSettings]
   }
   
-  @scala.inline
-  implicit class TabsSettingsMutableBuilder[Self <: TabsSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TabsSettings](x: Self) {
     
-    @scala.inline
-    def setDefaultTabStop(value: Double): Self = StObject.set(x, "defaultTabStop", value.asInstanceOf[js.Any])
+    inline def setDefaultTabStop(value: Double): Self = StObject.set(x, "defaultTabStop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabs(value: js.Array[TabSettings]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+    inline def setTabs(value: js.Array[TabSettings]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabsVarargs(value: TabSettings*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: TabSettings*): Self = StObject.set(x, "tabs", js.Array(value :_*))
   }
 }

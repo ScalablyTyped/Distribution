@@ -10,16 +10,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(JsonRpcClient: JsonRpcClientFactory): JQueryStatic = {
+  inline def apply(JsonRpcClient: JsonRpcClientFactory): JQueryStatic = {
     val __obj = js.Dynamic.literal(JsonRpcClient = JsonRpcClient.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setJsonRpcClient(value: JsonRpcClientFactory): Self = StObject.set(x, "JsonRpcClient", value.asInstanceOf[js.Any])
+    inline def setJsonRpcClient(value: JsonRpcClientFactory): Self = StObject.set(x, "JsonRpcClient", value.asInstanceOf[js.Any])
   }
 }

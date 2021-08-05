@@ -11,22 +11,17 @@ trait TextConfig extends StObject {
 }
 object TextConfig {
   
-  @scala.inline
-  def apply(): TextConfig = {
+  inline def apply(): TextConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextConfig]
   }
   
-  @scala.inline
-  implicit class TextConfigMutableBuilder[Self <: TextConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TextConfig](x: Self) {
     
-    @scala.inline
-    def setTransformations(value: js.Array[InfoTypeTransformation]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+    inline def setTransformations(value: js.Array[InfoTypeTransformation]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
+    inline def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
     
-    @scala.inline
-    def setTransformationsVarargs(value: InfoTypeTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+    inline def setTransformationsVarargs(value: InfoTypeTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
   }
 }

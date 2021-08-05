@@ -48,61 +48,43 @@ trait APNSSandboxChannelRequest extends StObject {
 }
 object APNSSandboxChannelRequest {
   
-  @scala.inline
-  def apply(): APNSSandboxChannelRequest = {
+  inline def apply(): APNSSandboxChannelRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[APNSSandboxChannelRequest]
   }
   
-  @scala.inline
-  implicit class APNSSandboxChannelRequestMutableBuilder[Self <: APNSSandboxChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: APNSSandboxChannelRequest](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: string): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: string): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "BundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "BundleId", js.undefined)
     
-    @scala.inline
-    def setCertificate(value: string): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: string): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
     
-    @scala.inline
-    def setDefaultAuthenticationMethod(value: string): Self = StObject.set(x, "DefaultAuthenticationMethod", value.asInstanceOf[js.Any])
+    inline def setDefaultAuthenticationMethod(value: string): Self = StObject.set(x, "DefaultAuthenticationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAuthenticationMethodUndefined: Self = StObject.set(x, "DefaultAuthenticationMethod", js.undefined)
+    inline def setDefaultAuthenticationMethodUndefined: Self = StObject.set(x, "DefaultAuthenticationMethod", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setPrivateKey(value: string): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: string): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyUndefined: Self = StObject.set(x, "PrivateKey", js.undefined)
+    inline def setPrivateKeyUndefined: Self = StObject.set(x, "PrivateKey", js.undefined)
     
-    @scala.inline
-    def setTeamId(value: string): Self = StObject.set(x, "TeamId", value.asInstanceOf[js.Any])
+    inline def setTeamId(value: string): Self = StObject.set(x, "TeamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamIdUndefined: Self = StObject.set(x, "TeamId", js.undefined)
+    inline def setTeamIdUndefined: Self = StObject.set(x, "TeamId", js.undefined)
     
-    @scala.inline
-    def setTokenKey(value: string): Self = StObject.set(x, "TokenKey", value.asInstanceOf[js.Any])
+    inline def setTokenKey(value: string): Self = StObject.set(x, "TokenKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenKeyId(value: string): Self = StObject.set(x, "TokenKeyId", value.asInstanceOf[js.Any])
+    inline def setTokenKeyId(value: string): Self = StObject.set(x, "TokenKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenKeyIdUndefined: Self = StObject.set(x, "TokenKeyId", js.undefined)
+    inline def setTokenKeyIdUndefined: Self = StObject.set(x, "TokenKeyId", js.undefined)
     
-    @scala.inline
-    def setTokenKeyUndefined: Self = StObject.set(x, "TokenKey", js.undefined)
+    inline def setTokenKeyUndefined: Self = StObject.set(x, "TokenKey", js.undefined)
   }
 }

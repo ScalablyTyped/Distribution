@@ -18,22 +18,17 @@ trait ContactQueryTextSearch extends StObject {
 }
 object ContactQueryTextSearch {
   
-  @scala.inline
-  def apply(fields: ContactQuerySearchFields, searchScope: ContactQuerySearchScope, text: String): ContactQueryTextSearch = {
+  inline def apply(fields: ContactQuerySearchFields, searchScope: ContactQuerySearchScope, text: String): ContactQueryTextSearch = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], searchScope = searchScope.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactQueryTextSearch]
   }
   
-  @scala.inline
-  implicit class ContactQueryTextSearchMutableBuilder[Self <: ContactQueryTextSearch] (val x: Self) extends AnyVal {
+  extension [Self <: ContactQueryTextSearch](x: Self) {
     
-    @scala.inline
-    def setFields(value: ContactQuerySearchFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: ContactQuerySearchFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchScope(value: ContactQuerySearchScope): Self = StObject.set(x, "searchScope", value.asInstanceOf[js.Any])
+    inline def setSearchScope(value: ContactQuerySearchScope): Self = StObject.set(x, "searchScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

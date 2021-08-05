@@ -33,31 +33,23 @@ trait ListItemData extends StObject {
 }
 object ListItemData {
   
-  @scala.inline
-  def apply(): ListItemData = {
+  inline def apply(): ListItemData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListItemData]
   }
   
-  @scala.inline
-  implicit class ListItemDataMutableBuilder[Self <: ListItemData] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemData](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setListString(value: String): Self = StObject.set(x, "listString", value.asInstanceOf[js.Any])
+    inline def setListString(value: String): Self = StObject.set(x, "listString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListStringUndefined: Self = StObject.set(x, "listString", js.undefined)
+    inline def setListStringUndefined: Self = StObject.set(x, "listString", js.undefined)
     
-    @scala.inline
-    def setSiblingIndex(value: Double): Self = StObject.set(x, "siblingIndex", value.asInstanceOf[js.Any])
+    inline def setSiblingIndex(value: Double): Self = StObject.set(x, "siblingIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiblingIndexUndefined: Self = StObject.set(x, "siblingIndex", js.undefined)
+    inline def setSiblingIndexUndefined: Self = StObject.set(x, "siblingIndex", js.undefined)
   }
 }

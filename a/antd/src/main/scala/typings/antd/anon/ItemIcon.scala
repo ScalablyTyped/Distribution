@@ -17,37 +17,27 @@ trait ItemIcon extends StObject {
 }
 object ItemIcon {
   
-  @scala.inline
-  def apply(): ItemIcon = {
+  inline def apply(): ItemIcon = {
     val __obj = js.Dynamic.literal(itemIcon = null, removeIcon = null, suffixIcon = null)
     __obj.asInstanceOf[ItemIcon]
   }
   
-  @scala.inline
-  implicit class ItemIconMutableBuilder[Self <: ItemIcon] (val x: Self) extends AnyVal {
+  extension [Self <: ItemIcon](x: Self) {
     
-    @scala.inline
-    def setClearIcon(value: ReactNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
+    inline def setClearIcon(value: ReactNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
+    inline def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
     
-    @scala.inline
-    def setItemIcon(value: js.Object): Self = StObject.set(x, "itemIcon", value.asInstanceOf[js.Any])
+    inline def setItemIcon(value: js.Object): Self = StObject.set(x, "itemIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIconNull: Self = StObject.set(x, "itemIcon", null)
+    inline def setItemIconNull: Self = StObject.set(x, "itemIcon", null)
     
-    @scala.inline
-    def setRemoveIcon(value: js.Object): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+    inline def setRemoveIcon(value: js.Object): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveIconNull: Self = StObject.set(x, "removeIcon", null)
+    inline def setRemoveIconNull: Self = StObject.set(x, "removeIcon", null)
     
-    @scala.inline
-    def setSuffixIcon(value: js.Object): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
+    inline def setSuffixIcon(value: js.Object): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixIconNull: Self = StObject.set(x, "suffixIcon", null)
+    inline def setSuffixIconNull: Self = StObject.set(x, "suffixIcon", null)
   }
 }

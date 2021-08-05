@@ -111,20 +111,16 @@ object mod {
   }
   object Blockcipher {
     
-    @scala.inline
-    def apply(decrypt: (Buffer, Buffer) => Buffer, encrypt: (Buffer, Buffer) => Buffer): Blockcipher = {
+    inline def apply(decrypt: (Buffer, Buffer) => Buffer, encrypt: (Buffer, Buffer) => Buffer): Blockcipher = {
       val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction2(decrypt), encrypt = js.Any.fromFunction2(encrypt))
       __obj.asInstanceOf[Blockcipher]
     }
     
-    @scala.inline
-    implicit class BlockcipherMutableBuilder[Self <: Blockcipher] (val x: Self) extends AnyVal {
+    extension [Self <: Blockcipher](x: Self) {
       
-      @scala.inline
-      def setDecrypt(value: (Buffer, Buffer) => Buffer): Self = StObject.set(x, "decrypt", js.Any.fromFunction2(value))
+      inline def setDecrypt(value: (Buffer, Buffer) => Buffer): Self = StObject.set(x, "decrypt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEncrypt(value: (Buffer, Buffer) => Buffer): Self = StObject.set(x, "encrypt", js.Any.fromFunction2(value))
+      inline def setEncrypt(value: (Buffer, Buffer) => Buffer): Self = StObject.set(x, "encrypt", js.Any.fromFunction2(value))
     }
   }
   
@@ -136,26 +132,20 @@ object mod {
   }
   object ECIESOptions {
     
-    @scala.inline
-    def apply(): ECIESOptions = {
+    inline def apply(): ECIESOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ECIESOptions]
     }
     
-    @scala.inline
-    implicit class ECIESOptionsMutableBuilder[Self <: ECIESOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ECIESOptions](x: Self) {
       
-      @scala.inline
-      def setNoKey(value: Boolean): Self = StObject.set(x, "noKey", value.asInstanceOf[js.Any])
+      inline def setNoKey(value: Boolean): Self = StObject.set(x, "noKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoKeyUndefined: Self = StObject.set(x, "noKey", js.undefined)
+      inline def setNoKeyUndefined: Self = StObject.set(x, "noKey", js.undefined)
       
-      @scala.inline
-      def setShortTag(value: Boolean): Self = StObject.set(x, "shortTag", value.asInstanceOf[js.Any])
+      inline def setShortTag(value: Boolean): Self = StObject.set(x, "shortTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortTagUndefined: Self = StObject.set(x, "shortTag", js.undefined)
+      inline def setShortTagUndefined: Self = StObject.set(x, "shortTag", js.undefined)
     }
   }
 }

@@ -12,25 +12,19 @@ trait RequestVertexNormals extends StObject {
 }
 object RequestVertexNormals {
   
-  @scala.inline
-  def apply(): RequestVertexNormals = {
+  inline def apply(): RequestVertexNormals = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestVertexNormals]
   }
   
-  @scala.inline
-  implicit class RequestVertexNormalsMutableBuilder[Self <: RequestVertexNormals] (val x: Self) extends AnyVal {
+  extension [Self <: RequestVertexNormals](x: Self) {
     
-    @scala.inline
-    def setRequestVertexNormals(value: Boolean): Self = StObject.set(x, "requestVertexNormals", value.asInstanceOf[js.Any])
+    inline def setRequestVertexNormals(value: Boolean): Self = StObject.set(x, "requestVertexNormals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestVertexNormalsUndefined: Self = StObject.set(x, "requestVertexNormals", js.undefined)
+    inline def setRequestVertexNormalsUndefined: Self = StObject.set(x, "requestVertexNormals", js.undefined)
     
-    @scala.inline
-    def setRequestWaterMask(value: Boolean): Self = StObject.set(x, "requestWaterMask", value.asInstanceOf[js.Any])
+    inline def setRequestWaterMask(value: Boolean): Self = StObject.set(x, "requestWaterMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestWaterMaskUndefined: Self = StObject.set(x, "requestWaterMask", js.undefined)
+    inline def setRequestWaterMaskUndefined: Self = StObject.set(x, "requestWaterMask", js.undefined)
   }
 }

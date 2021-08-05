@@ -30,31 +30,23 @@ trait ParamsResourceAccountsUserPermissionsUpdate
 }
 object ParamsResourceAccountsUserPermissionsUpdate {
   
-  @scala.inline
-  def apply(): ParamsResourceAccountsUserPermissionsUpdate = {
+  inline def apply(): ParamsResourceAccountsUserPermissionsUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAccountsUserPermissionsUpdate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAccountsUserPermissionsUpdateMutableBuilder[Self <: ParamsResourceAccountsUserPermissionsUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAccountsUserPermissionsUpdate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaUserPermission): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaUserPermission): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

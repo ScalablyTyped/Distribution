@@ -20,8 +20,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(opts: Config): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def create(opts: Config): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait BaseRequest extends StObject {
@@ -36,7 +35,7 @@ object mod {
     def _request(opts: js.Any, cb: js.Any): js.Any = js.native
     def _request(opts: Unit, cb: js.Any): js.Any = js.native
     
-    var base: Request = js.native
+    /* protected */ var base: Request = js.native
     
     def del(): js.Any = js.native
     def del(url: js.Any): js.Any = js.native
@@ -56,9 +55,9 @@ object mod {
     def get(url: Unit, opts: js.Any, cb: js.Any): js.Any = js.native
     def get(url: Unit, opts: Unit, cb: js.Any): js.Any = js.native
     
-    var jSend: Boolean = js.native
+    /* protected */ var jSend: Boolean = js.native
     
-    var log: typings.bunyan.mod.^ = js.native
+    /* protected */ var log: typings.bunyan.mod.^ = js.native
     
     def patch(): js.Any = js.native
     def patch(url: js.Any): js.Any = js.native
@@ -78,9 +77,9 @@ object mod {
     def post(url: Unit, opts: js.Any, cb: js.Any): js.Any = js.native
     def post(url: Unit, opts: Unit, cb: js.Any): js.Any = js.native
     
-    var replyCookies: js.Array[String] = js.native
+    /* protected */ var replyCookies: js.Array[String] = js.native
     
-    var req: Request_[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    /* protected */ var req: Request_[ParamsDictionary, js.Any, js.Any, Query] = js.native
   }
   
   @js.native
@@ -166,32 +165,24 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(body: js.Any, response: IncomingMessage): Result = {
+    inline def apply(body: js.Any, response: IncomingMessage): Result = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setErr(value: js.Any): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: js.Any): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+      inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       
-      @scala.inline
-      def setResponse(value: IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   

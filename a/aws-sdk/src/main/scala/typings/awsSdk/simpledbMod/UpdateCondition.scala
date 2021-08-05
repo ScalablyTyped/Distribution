@@ -23,31 +23,23 @@ trait UpdateCondition extends StObject {
 }
 object UpdateCondition {
   
-  @scala.inline
-  def apply(): UpdateCondition = {
+  inline def apply(): UpdateCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateCondition]
   }
   
-  @scala.inline
-  implicit class UpdateConditionMutableBuilder[Self <: UpdateCondition] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCondition](x: Self) {
     
-    @scala.inline
-    def setExists(value: Boolean): Self = StObject.set(x, "Exists", value.asInstanceOf[js.Any])
+    inline def setExists(value: Boolean): Self = StObject.set(x, "Exists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistsUndefined: Self = StObject.set(x, "Exists", js.undefined)
+    inline def setExistsUndefined: Self = StObject.set(x, "Exists", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

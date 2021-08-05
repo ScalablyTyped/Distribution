@@ -18,46 +18,33 @@ trait BleedRatio extends StObject {
 }
 object BleedRatio {
   
-  @scala.inline
-  def apply(): BleedRatio = {
+  inline def apply(): BleedRatio = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BleedRatio]
   }
   
-  @scala.inline
-  implicit class BleedRatioMutableBuilder[Self <: BleedRatio] (val x: Self) extends AnyVal {
+  extension [Self <: BleedRatio](x: Self) {
     
-    @scala.inline
-    def setBleedRatio(value: Double): Self = StObject.set(x, "bleedRatio", value.asInstanceOf[js.Any])
+    inline def setBleedRatio(value: Double): Self = StObject.set(x, "bleedRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBleedRatioUndefined: Self = StObject.set(x, "bleedRatio", js.undefined)
+    inline def setBleedRatioUndefined: Self = StObject.set(x, "bleedRatio", js.undefined)
     
-    @scala.inline
-    def setClipToRenderBounds(value: Boolean): Self = StObject.set(x, "clipToRenderBounds", value.asInstanceOf[js.Any])
+    inline def setClipToRenderBounds(value: Boolean): Self = StObject.set(x, "clipToRenderBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipToRenderBoundsUndefined: Self = StObject.set(x, "clipToRenderBounds", js.undefined)
+    inline def setClipToRenderBoundsUndefined: Self = StObject.set(x, "clipToRenderBounds", js.undefined)
     
-    @scala.inline
-    def setFieldNames(value: js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
+    inline def setFieldNames(value: js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
+    inline def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
     
-    @scala.inline
-    def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value :_*))
+    inline def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value :_*))
     
-    @scala.inline
-    def setSimplifyEnabled(value: Boolean): Self = StObject.set(x, "simplifyEnabled", value.asInstanceOf[js.Any])
+    inline def setSimplifyEnabled(value: Boolean): Self = StObject.set(x, "simplifyEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimplifyEnabledUndefined: Self = StObject.set(x, "simplifyEnabled", js.undefined)
+    inline def setSimplifyEnabledUndefined: Self = StObject.set(x, "simplifyEnabled", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

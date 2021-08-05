@@ -18,20 +18,16 @@ trait ParenthesizedExpression_
 }
 object ParenthesizedExpression_ {
   
-  @scala.inline
-  def apply(end: Double, expression: Expression, loc: SourceLocation, start: Double): ParenthesizedExpression_ = {
+  inline def apply(end: Double, expression: Expression, loc: SourceLocation, start: Double): ParenthesizedExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ParenthesizedExpression")
     __obj.asInstanceOf[ParenthesizedExpression_]
   }
   
-  @scala.inline
-  implicit class ParenthesizedExpression_MutableBuilder[Self <: ParenthesizedExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: ParenthesizedExpression_](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ParenthesizedExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ParenthesizedExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

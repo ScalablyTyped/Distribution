@@ -24,8 +24,7 @@ trait RootData extends StObject {
 }
 object RootData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorHandler: ErrorHandler,
     injector: Injector,
     ngModule: NgModuleRef[js.Any],
@@ -39,34 +38,24 @@ object RootData {
     __obj.asInstanceOf[RootData]
   }
   
-  @scala.inline
-  implicit class RootDataMutableBuilder[Self <: RootData] (val x: Self) extends AnyVal {
+  extension [Self <: RootData](x: Self) {
     
-    @scala.inline
-    def setErrorHandler(value: ErrorHandler): Self = StObject.set(x, "errorHandler", value.asInstanceOf[js.Any])
+    inline def setErrorHandler(value: ErrorHandler): Self = StObject.set(x, "errorHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInjector(value: Injector): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
+    inline def setInjector(value: Injector): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNgModule(value: NgModuleRef[js.Any]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
+    inline def setNgModule(value: NgModuleRef[js.Any]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectableNodes(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "projectableNodes", value.asInstanceOf[js.Any])
+    inline def setProjectableNodes(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "projectableNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectableNodesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "projectableNodes", js.Array(value :_*))
+    inline def setProjectableNodesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "projectableNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setRenderer(value: Renderer2): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: Renderer2): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererFactory(value: RendererFactory2): Self = StObject.set(x, "rendererFactory", value.asInstanceOf[js.Any])
+    inline def setRendererFactory(value: RendererFactory2): Self = StObject.set(x, "rendererFactory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSanitizer(value: Sanitizer): Self = StObject.set(x, "sanitizer", value.asInstanceOf[js.Any])
+    inline def setSanitizer(value: Sanitizer): Self = StObject.set(x, "sanitizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorOrNode(value: js.Any): Self = StObject.set(x, "selectorOrNode", value.asInstanceOf[js.Any])
+    inline def setSelectorOrNode(value: js.Any): Self = StObject.set(x, "selectorOrNode", value.asInstanceOf[js.Any])
   }
 }

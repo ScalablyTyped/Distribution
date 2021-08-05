@@ -23,31 +23,23 @@ trait BatchModifyClusterSnapshotsMessage extends StObject {
 }
 object BatchModifyClusterSnapshotsMessage {
   
-  @scala.inline
-  def apply(SnapshotIdentifierList: SnapshotIdentifierList): BatchModifyClusterSnapshotsMessage = {
+  inline def apply(SnapshotIdentifierList: SnapshotIdentifierList): BatchModifyClusterSnapshotsMessage = {
     val __obj = js.Dynamic.literal(SnapshotIdentifierList = SnapshotIdentifierList.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchModifyClusterSnapshotsMessage]
   }
   
-  @scala.inline
-  implicit class BatchModifyClusterSnapshotsMessageMutableBuilder[Self <: BatchModifyClusterSnapshotsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: BatchModifyClusterSnapshotsMessage](x: Self) {
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
     
-    @scala.inline
-    def setManualSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    inline def setManualSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "ManualSnapshotRetentionPeriod", js.undefined)
+    inline def setManualSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "ManualSnapshotRetentionPeriod", js.undefined)
     
-    @scala.inline
-    def setSnapshotIdentifierList(value: SnapshotIdentifierList): Self = StObject.set(x, "SnapshotIdentifierList", value.asInstanceOf[js.Any])
+    inline def setSnapshotIdentifierList(value: SnapshotIdentifierList): Self = StObject.set(x, "SnapshotIdentifierList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdentifierListVarargs(value: String*): Self = StObject.set(x, "SnapshotIdentifierList", js.Array(value :_*))
+    inline def setSnapshotIdentifierListVarargs(value: String*): Self = StObject.set(x, "SnapshotIdentifierList", js.Array(value :_*))
   }
 }

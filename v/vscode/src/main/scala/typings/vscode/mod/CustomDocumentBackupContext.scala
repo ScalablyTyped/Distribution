@@ -22,16 +22,13 @@ trait CustomDocumentBackupContext extends StObject {
 }
 object CustomDocumentBackupContext {
   
-  @scala.inline
-  def apply(destination: Uri): CustomDocumentBackupContext = {
+  inline def apply(destination: Uri): CustomDocumentBackupContext = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomDocumentBackupContext]
   }
   
-  @scala.inline
-  implicit class CustomDocumentBackupContextMutableBuilder[Self <: CustomDocumentBackupContext] (val x: Self) extends AnyVal {
+  extension [Self <: CustomDocumentBackupContext](x: Self) {
     
-    @scala.inline
-    def setDestination(value: Uri): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Uri): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
   }
 }

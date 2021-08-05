@@ -18,22 +18,17 @@ trait CreateConnectionRequest extends StObject {
 }
 object CreateConnectionRequest {
   
-  @scala.inline
-  def apply(ConnectionInput: ConnectionInput): CreateConnectionRequest = {
+  inline def apply(ConnectionInput: ConnectionInput): CreateConnectionRequest = {
     val __obj = js.Dynamic.literal(ConnectionInput = ConnectionInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConnectionRequest]
   }
   
-  @scala.inline
-  implicit class CreateConnectionRequestMutableBuilder[Self <: CreateConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setConnectionInput(value: ConnectionInput): Self = StObject.set(x, "ConnectionInput", value.asInstanceOf[js.Any])
+    inline def setConnectionInput(value: ConnectionInput): Self = StObject.set(x, "ConnectionInput", value.asInstanceOf[js.Any])
   }
 }

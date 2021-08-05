@@ -62,104 +62,72 @@ object datePickerMod {
   }
   object DatePickerProps {
     
-    @scala.inline
-    def apply(onChange: js.Function): DatePickerProps = {
+    inline def apply(onChange: js.Function): DatePickerProps = {
       val __obj = js.Dynamic.literal(onChange = onChange.asInstanceOf[js.Any])
       __obj.asInstanceOf[DatePickerProps]
     }
     
-    @scala.inline
-    implicit class DatePickerPropsMutableBuilder[Self <: DatePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: DatePickerProps](x: Self) {
       
-      @scala.inline
-      def setCalendarDataHook(value: String): Self = StObject.set(x, "calendarDataHook", value.asInstanceOf[js.Any])
+      inline def setCalendarDataHook(value: String): Self = StObject.set(x, "calendarDataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalendarDataHookUndefined: Self = StObject.set(x, "calendarDataHook", js.undefined)
+      inline def setCalendarDataHookUndefined: Self = StObject.set(x, "calendarDataHook", js.undefined)
       
-      @scala.inline
-      def setCustomInput(value: ReactNode): Self = StObject.set(x, "customInput", value.asInstanceOf[js.Any])
+      inline def setCustomInput(value: ReactNode): Self = StObject.set(x, "customInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomInputUndefined: Self = StObject.set(x, "customInput", js.undefined)
+      inline def setCustomInputUndefined: Self = StObject.set(x, "customInput", js.undefined)
       
-      @scala.inline
-      def setDateFormat(value: String | js.Function): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: String | js.Function): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+      inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
-      @scala.inline
-      def setDateFormatV2(value: String | js.Function): Self = StObject.set(x, "dateFormatV2", value.asInstanceOf[js.Any])
+      inline def setDateFormatV2(value: String | js.Function): Self = StObject.set(x, "dateFormatV2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateFormatV2Undefined: Self = StObject.set(x, "dateFormatV2", js.undefined)
+      inline def setDateFormatV2Undefined: Self = StObject.set(x, "dateFormatV2", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setInitialOpen(value: Boolean): Self = StObject.set(x, "initialOpen", value.asInstanceOf[js.Any])
+      inline def setInitialOpen(value: Boolean): Self = StObject.set(x, "initialOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialOpenUndefined: Self = StObject.set(x, "initialOpen", js.undefined)
+      inline def setInitialOpenUndefined: Self = StObject.set(x, "initialOpen", js.undefined)
       
-      @scala.inline
-      def setInputDataHook(value: String): Self = StObject.set(x, "inputDataHook", value.asInstanceOf[js.Any])
+      inline def setInputDataHook(value: String): Self = StObject.set(x, "inputDataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputDataHookUndefined: Self = StObject.set(x, "inputDataHook", js.undefined)
+      inline def setInputDataHookUndefined: Self = StObject.set(x, "inputDataHook", js.undefined)
       
-      @scala.inline
-      def setInputProps(value: js.Object): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: js.Object): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
+      inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
-      @scala.inline
-      def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
+      inline def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderTextUndefined: Self = StObject.set(x, "placeholderText", js.undefined)
+      inline def setPlaceholderTextUndefined: Self = StObject.set(x, "placeholderText", js.undefined)
       
-      @scala.inline
-      def setPopoverProps(value: PopoverCommonProps): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
+      inline def setPopoverProps(value: PopoverCommonProps): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
+      inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
       
-      @scala.inline
-      def setStatus(value: DatePickerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: DatePickerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusMessage(value: ReactNode): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+      inline def setStatusMessage(value: ReactNode): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+      inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -171,13 +139,10 @@ object datePickerMod {
   trait DatePickerStatus extends StObject
   object DatePickerStatus {
     
-    @scala.inline
-    def error: typings.wixStyleReact.wixStyleReactStrings.error = "error".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.error]
+    inline def error: typings.wixStyleReact.wixStyleReactStrings.error = "error".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.error]
     
-    @scala.inline
-    def loading: typings.wixStyleReact.wixStyleReactStrings.loading = "loading".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.loading]
+    inline def loading: typings.wixStyleReact.wixStyleReactStrings.loading = "loading".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.loading]
     
-    @scala.inline
-    def warning: typings.wixStyleReact.wixStyleReactStrings.warning = "warning".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warning]
+    inline def warning: typings.wixStyleReact.wixStyleReactStrings.warning = "warning".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warning]
   }
 }

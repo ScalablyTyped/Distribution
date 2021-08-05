@@ -18,25 +18,19 @@ trait TextStyleAndroid
 }
 object TextStyleAndroid {
   
-  @scala.inline
-  def apply(): TextStyleAndroid = {
+  inline def apply(): TextStyleAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextStyleAndroid]
   }
   
-  @scala.inline
-  implicit class TextStyleAndroidMutableBuilder[Self <: TextStyleAndroid] (val x: Self) extends AnyVal {
+  extension [Self <: TextStyleAndroid](x: Self) {
     
-    @scala.inline
-    def setIncludeFontPadding(value: Boolean): Self = StObject.set(x, "includeFontPadding", value.asInstanceOf[js.Any])
+    inline def setIncludeFontPadding(value: Boolean): Self = StObject.set(x, "includeFontPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeFontPaddingUndefined: Self = StObject.set(x, "includeFontPadding", js.undefined)
+    inline def setIncludeFontPaddingUndefined: Self = StObject.set(x, "includeFontPadding", js.undefined)
     
-    @scala.inline
-    def setTextAlignVertical(value: auto | top | bottom | center): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
+    inline def setTextAlignVertical(value: auto | top | bottom | center): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlignVerticalUndefined: Self = StObject.set(x, "textAlignVertical", js.undefined)
+    inline def setTextAlignVerticalUndefined: Self = StObject.set(x, "textAlignVertical", js.undefined)
   }
 }

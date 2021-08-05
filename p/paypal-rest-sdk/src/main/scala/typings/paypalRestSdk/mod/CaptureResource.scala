@@ -16,31 +16,23 @@ trait CaptureResource
 }
 object CaptureResource {
   
-  @scala.inline
-  def apply(amount: Amount, id: String): CaptureResource = {
+  inline def apply(amount: Amount, id: String): CaptureResource = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureResource]
   }
   
-  @scala.inline
-  implicit class CaptureResourceMutableBuilder[Self <: CaptureResource] (val x: Self) extends AnyVal {
+  extension [Self <: CaptureResource](x: Self) {
     
-    @scala.inline
-    def setInvoice_number(value: String): Self = StObject.set(x, "invoice_number", value.asInstanceOf[js.Any])
+    inline def setInvoice_number(value: String): Self = StObject.set(x, "invoice_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoice_numberUndefined: Self = StObject.set(x, "invoice_number", js.undefined)
+    inline def setInvoice_numberUndefined: Self = StObject.set(x, "invoice_number", js.undefined)
     
-    @scala.inline
-    def setIs_final_capture(value: Boolean): Self = StObject.set(x, "is_final_capture", value.asInstanceOf[js.Any])
+    inline def setIs_final_capture(value: Boolean): Self = StObject.set(x, "is_final_capture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_final_captureUndefined: Self = StObject.set(x, "is_final_capture", js.undefined)
+    inline def setIs_final_captureUndefined: Self = StObject.set(x, "is_final_capture", js.undefined)
     
-    @scala.inline
-    def setTransaction_fee(value: Currency): Self = StObject.set(x, "transaction_fee", value.asInstanceOf[js.Any])
+    inline def setTransaction_fee(value: Currency): Self = StObject.set(x, "transaction_fee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransaction_feeUndefined: Self = StObject.set(x, "transaction_fee", js.undefined)
+    inline def setTransaction_feeUndefined: Self = StObject.set(x, "transaction_fee", js.undefined)
   }
 }

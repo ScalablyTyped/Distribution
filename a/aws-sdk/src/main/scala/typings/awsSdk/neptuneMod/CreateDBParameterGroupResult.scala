@@ -10,19 +10,15 @@ trait CreateDBParameterGroupResult extends StObject {
 }
 object CreateDBParameterGroupResult {
   
-  @scala.inline
-  def apply(): CreateDBParameterGroupResult = {
+  inline def apply(): CreateDBParameterGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDBParameterGroupResult]
   }
   
-  @scala.inline
-  implicit class CreateDBParameterGroupResultMutableBuilder[Self <: CreateDBParameterGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDBParameterGroupResult](x: Self) {
     
-    @scala.inline
-    def setDBParameterGroup(value: DBParameterGroup): Self = StObject.set(x, "DBParameterGroup", value.asInstanceOf[js.Any])
+    inline def setDBParameterGroup(value: DBParameterGroup): Self = StObject.set(x, "DBParameterGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBParameterGroupUndefined: Self = StObject.set(x, "DBParameterGroup", js.undefined)
+    inline def setDBParameterGroupUndefined: Self = StObject.set(x, "DBParameterGroup", js.undefined)
   }
 }

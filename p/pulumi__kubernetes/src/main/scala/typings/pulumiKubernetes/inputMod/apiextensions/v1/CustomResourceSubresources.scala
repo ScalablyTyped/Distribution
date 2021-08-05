@@ -22,25 +22,19 @@ trait CustomResourceSubresources extends StObject {
 }
 object CustomResourceSubresources {
   
-  @scala.inline
-  def apply(): CustomResourceSubresources = {
+  inline def apply(): CustomResourceSubresources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomResourceSubresources]
   }
   
-  @scala.inline
-  implicit class CustomResourceSubresourcesMutableBuilder[Self <: CustomResourceSubresources] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceSubresources](x: Self) {
     
-    @scala.inline
-    def setScale(value: Input[CustomResourceSubresourceScale]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Input[CustomResourceSubresourceScale]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

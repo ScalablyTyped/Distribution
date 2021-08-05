@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoChartFormat")
 @js.native
-class IMsoChartFormat protected ()
+/* private */ class IMsoChartFormat ()
   extends StObject
      with typings.activexOffice.Office.IMsoChartFormat {
   
@@ -36,7 +36,7 @@ class IMsoChartFormat protected ()
   /* CompleteClass */
   override val Line: typings.activexOffice.Office.LineFormat = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.IMsoChartFormat_typekey")
   var OfficeDotIMsoChartFormat_typekey: typings.activexOffice.Office.IMsoChartFormat = js.native
   

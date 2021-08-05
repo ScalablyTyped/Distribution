@@ -27,9 +27,7 @@ object TreeNode {
   @JSImport("@blueprintjs/core", "TreeNode.displayName")
   @js.native
   def displayName: String = js.native
-  @scala.inline
-  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def ofType[U](): Instantiable1[/* props */ ITreeNodeProps[U], typings.blueprintjsCore.treeNodeMod.TreeNode[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ITreeNodeProps[U], typings.blueprintjsCore.treeNodeMod.TreeNode[U]]]
+  inline def ofType[U](): Instantiable1[/* props */ ITreeNodeProps[U], typings.blueprintjsCore.treeNodeMod.TreeNode[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ITreeNodeProps[U], typings.blueprintjsCore.treeNodeMod.TreeNode[U]]]
 }

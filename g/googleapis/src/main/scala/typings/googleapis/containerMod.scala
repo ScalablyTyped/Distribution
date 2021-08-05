@@ -37,8 +37,7 @@ object containerMod {
     @JSImport("googleapis/build/src/apis/container", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Container] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Container]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
@@ -57,8 +56,7 @@ object containerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.containerV1beta1Mod.containerV1beta1.Container
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -100,8 +98,7 @@ object containerMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -145,14 +142,10 @@ object containerMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def container(options: Options): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(options.asInstanceOf[js.Any]).asInstanceOf[Container]
-  @scala.inline
-  def container(options: typings.googleapis.containerV1beta1Mod.containerV1beta1.Options): typings.googleapis.containerV1beta1Mod.containerV1beta1.Container = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.containerV1beta1Mod.containerV1beta1.Container]
+  inline def container(options: Options): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(options.asInstanceOf[js.Any]).asInstanceOf[Container]
+  inline def container(options: typings.googleapis.containerV1beta1Mod.containerV1beta1.Options): typings.googleapis.containerV1beta1Mod.containerV1beta1.Container = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.containerV1beta1Mod.containerV1beta1.Container]
   
-  @scala.inline
-  def container_v1(version: v1): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(version.asInstanceOf[js.Any]).asInstanceOf[Container]
+  inline def container_v1(version: v1): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(version.asInstanceOf[js.Any]).asInstanceOf[Container]
   
-  @scala.inline
-  def container_v1beta1(version: v1beta1): typings.googleapis.containerV1beta1Mod.containerV1beta1.Container = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.containerV1beta1Mod.containerV1beta1.Container]
+  inline def container_v1beta1(version: v1beta1): typings.googleapis.containerV1beta1Mod.containerV1beta1.Container = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.containerV1beta1Mod.containerV1beta1.Container]
 }

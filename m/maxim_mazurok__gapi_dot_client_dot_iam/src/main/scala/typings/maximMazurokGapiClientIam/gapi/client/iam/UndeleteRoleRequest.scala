@@ -11,19 +11,15 @@ trait UndeleteRoleRequest extends StObject {
 }
 object UndeleteRoleRequest {
   
-  @scala.inline
-  def apply(): UndeleteRoleRequest = {
+  inline def apply(): UndeleteRoleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UndeleteRoleRequest]
   }
   
-  @scala.inline
-  implicit class UndeleteRoleRequestMutableBuilder[Self <: UndeleteRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UndeleteRoleRequest](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
   }
 }

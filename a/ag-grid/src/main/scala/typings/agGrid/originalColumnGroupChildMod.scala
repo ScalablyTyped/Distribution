@@ -16,23 +16,18 @@ object originalColumnGroupChildMod {
   }
   object OriginalColumnGroupChild {
     
-    @scala.inline
-    def apply(getColumnGroupShow: () => String, getId: () => String, isVisible: () => Boolean): OriginalColumnGroupChild = {
+    inline def apply(getColumnGroupShow: () => String, getId: () => String, isVisible: () => Boolean): OriginalColumnGroupChild = {
       val __obj = js.Dynamic.literal(getColumnGroupShow = js.Any.fromFunction0(getColumnGroupShow), getId = js.Any.fromFunction0(getId), isVisible = js.Any.fromFunction0(isVisible))
       __obj.asInstanceOf[OriginalColumnGroupChild]
     }
     
-    @scala.inline
-    implicit class OriginalColumnGroupChildMutableBuilder[Self <: OriginalColumnGroupChild] (val x: Self) extends AnyVal {
+    extension [Self <: OriginalColumnGroupChild](x: Self) {
       
-      @scala.inline
-      def setGetColumnGroupShow(value: () => String): Self = StObject.set(x, "getColumnGroupShow", js.Any.fromFunction0(value))
+      inline def setGetColumnGroupShow(value: () => String): Self = StObject.set(x, "getColumnGroupShow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+      inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     }
   }
 }

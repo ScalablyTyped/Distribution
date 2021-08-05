@@ -21,11 +21,9 @@ object mod {
   
   object default {
     
-    @scala.inline
-    def apply(config: RadiumConfig): js.Function1[/* component */ js.UndefOr[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ js.UndefOr[js.Any], js.Any]]
+    inline def apply(config: RadiumConfig): js.Function1[/* component */ js.UndefOr[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ js.UndefOr[js.Any], js.Any]]
     // @Radium decorator
-    @scala.inline
-    def apply[TElement /* <: js.Function */](component: TElement): TElement = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[TElement]
+    inline def apply[TElement /* <: js.Function */](component: TElement): TElement = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[TElement]
     
     @JSImport("radium", JSImport.Default)
     @js.native
@@ -44,28 +42,19 @@ object mod {
     @JSImport("radium", "default.TestMode")
     @js.native
     def TestMode: RadiumTestMode = js.native
-    @scala.inline
-    def TestMode_=(x: RadiumTestMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TestMode")(x.asInstanceOf[js.Any])
+    inline def TestMode_=(x: RadiumTestMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TestMode")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getState_active(state: js.Any, elementKey: String, value: Colonactive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def getState_active(state: js.Any, elementKey: Unit, value: Colonactive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def getState_active(state: js.Any, elementKey: String, value: Colonactive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def getState_active(state: js.Any, elementKey: Unit, value: Colonactive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def getState_focus(state: js.Any, elementKey: String, value: Colonfocus): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def getState_focus(state: js.Any, elementKey: Unit, value: Colonfocus): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def getState_focus(state: js.Any, elementKey: String, value: Colonfocus): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def getState_focus(state: js.Any, elementKey: Unit, value: Colonfocus): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def getState_hover(state: js.Any, elementKey: String, value: Colonhover): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def getState_hover(state: js.Any, elementKey: Unit, value: Colonhover): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def getState_hover(state: js.Any, elementKey: String, value: Colonhover): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def getState_hover(state: js.Any, elementKey: Unit, value: Colonhover): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def keyframes(keyframes: StyleRules): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(keyframes.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-    @scala.inline
-    def keyframes(keyframes: StyleRules, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(keyframes.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def keyframes(keyframes: StyleRules): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(keyframes.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def keyframes(keyframes: StyleRules, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(keyframes.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   }
   
   object Radium {
@@ -91,35 +80,26 @@ object mod {
     }
     object RadiumConfig {
       
-      @scala.inline
-      def apply(): RadiumConfig = {
+      inline def apply(): RadiumConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RadiumConfig]
       }
       
-      @scala.inline
-      implicit class RadiumConfigMutableBuilder[Self <: RadiumConfig] (val x: Self) extends AnyVal {
+      extension [Self <: RadiumConfig](x: Self) {
         
-        @scala.inline
-        def setMatchMedia(value: /* mediaQuery */ String => MediaQueryList): Self = StObject.set(x, "matchMedia", js.Any.fromFunction1(value))
+        inline def setMatchMedia(value: /* mediaQuery */ String => MediaQueryList): Self = StObject.set(x, "matchMedia", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setMatchMediaUndefined: Self = StObject.set(x, "matchMedia", js.undefined)
+        inline def setMatchMediaUndefined: Self = StObject.set(x, "matchMedia", js.undefined)
         
-        @scala.inline
-        def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+        inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+        inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
         
-        @scala.inline
-        def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+        inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
         
-        @scala.inline
-        def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+        inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+        inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
       }
     }
     
@@ -146,23 +126,18 @@ object mod {
     }
     object RadiumTestMode {
       
-      @scala.inline
-      def apply(clearState: () => Unit, disable: () => Unit, enable: () => Unit): RadiumTestMode = {
+      inline def apply(clearState: () => Unit, disable: () => Unit, enable: () => Unit): RadiumTestMode = {
         val __obj = js.Dynamic.literal(clearState = js.Any.fromFunction0(clearState), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable))
         __obj.asInstanceOf[RadiumTestMode]
       }
       
-      @scala.inline
-      implicit class RadiumTestModeMutableBuilder[Self <: RadiumTestMode] (val x: Self) extends AnyVal {
+      extension [Self <: RadiumTestMode](x: Self) {
         
-        @scala.inline
-        def setClearState(value: () => Unit): Self = StObject.set(x, "clearState", js.Any.fromFunction0(value))
+        inline def setClearState(value: () => Unit): Self = StObject.set(x, "clearState", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+        inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+        inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
       }
     }
     
@@ -185,23 +160,18 @@ object mod {
     }
     object StyleProps {
       
-      @scala.inline
-      def apply(rules: CSSProperties | StyleRules): StyleProps = {
+      inline def apply(rules: CSSProperties | StyleRules): StyleProps = {
         val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
         __obj.asInstanceOf[StyleProps]
       }
       
-      @scala.inline
-      implicit class StylePropsMutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
+      extension [Self <: StyleProps](x: Self) {
         
-        @scala.inline
-        def setRules(value: CSSProperties | StyleRules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+        inline def setRules(value: CSSProperties | StyleRules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScopeSelector(value: String): Self = StObject.set(x, "scopeSelector", value.asInstanceOf[js.Any])
+        inline def setScopeSelector(value: String): Self = StObject.set(x, "scopeSelector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScopeSelectorUndefined: Self = StObject.set(x, "scopeSelector", js.undefined)
+        inline def setScopeSelectorUndefined: Self = StObject.set(x, "scopeSelector", js.undefined)
       }
     }
     
@@ -217,20 +187,16 @@ object mod {
     }
     object StyleRootProps {
       
-      @scala.inline
-      def apply(): StyleRootProps = {
+      inline def apply(): StyleRootProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StyleRootProps]
       }
       
-      @scala.inline
-      implicit class StyleRootPropsMutableBuilder[Self <: StyleRootProps] (val x: Self) extends AnyVal {
+      extension [Self <: StyleRootProps](x: Self) {
         
-        @scala.inline
-        def setRadiumConfig(value: RadiumConfig): Self = StObject.set(x, "radiumConfig", value.asInstanceOf[js.Any])
+        inline def setRadiumConfig(value: RadiumConfig): Self = StObject.set(x, "radiumConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRadiumConfigUndefined: Self = StObject.set(x, "radiumConfig", js.undefined)
+        inline def setRadiumConfigUndefined: Self = StObject.set(x, "radiumConfig", js.undefined)
       }
     }
     
@@ -239,8 +205,7 @@ object mod {
          with /* index */ StringDictionary[CSSProperties | StyleRules]
     object StyleRules {
       
-      @scala.inline
-      def apply(): StyleRules = {
+      inline def apply(): StyleRules = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StyleRules]
       }

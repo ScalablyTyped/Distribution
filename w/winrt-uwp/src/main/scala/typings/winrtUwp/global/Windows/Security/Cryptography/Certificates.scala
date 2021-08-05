@@ -79,8 +79,7 @@ object Certificates {
       * @return This method returns a string that contains the base64 encoded PKCS #10 certificate request.
       */
     /* static member */
-    @scala.inline
-    def createRequestAsync(request: typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateRequestProperties): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequestAsync")(request.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def createRequestAsync(request: typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateRequestProperties): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequestAsync")(request.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Asynchronously imports a certificate from a Personal Information Exchange (PFX) message.
@@ -93,8 +92,7 @@ object Certificates {
       * @return This method does not return a value.
       */
     /* static member */
-    @scala.inline
-    def importPfxDataAsync(
+    inline def importPfxDataAsync(
       pfxData: String,
       password: String,
       exportable: ExportOption,
@@ -114,8 +112,7 @@ object Certificates {
       * @return This method does not return a value.
       */
     /* static member */
-    @scala.inline
-    def importPfxDataAsync(
+    inline def importPfxDataAsync(
       pfxData: String,
       password: String,
       exportable: ExportOption,
@@ -132,8 +129,7 @@ object Certificates {
       * @return This method does not return a value.
       */
     /* static member */
-    @scala.inline
-    def importPfxDataAsync(
+    inline def importPfxDataAsync(
       pfxData: String,
       password: String,
       pfxImportParameters: typings.winrtUwp.Windows.Security.Cryptography.Certificates.PfxImportParameters
@@ -146,16 +142,14 @@ object Certificates {
       * @return This method does not return a value.
       */
     /* static member */
-    @scala.inline
-    def installCertificateAsync(certificate: String, installOption: InstallOptions): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("installCertificateAsync")(certificate.asInstanceOf[js.Any], installOption.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def installCertificateAsync(certificate: String, installOption: InstallOptions): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("installCertificateAsync")(certificate.asInstanceOf[js.Any], installOption.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
     
     /** Gets the associated UserCertificateEnrollmentManager . */
     /* static member */
     @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager.userCertificateEnrollmentManager")
     @js.native
     def userCertificateEnrollmentManager: typings.winrtUwp.Windows.Security.Cryptography.Certificates.UserCertificateEnrollmentManager = js.native
-    @scala.inline
-    def userCertificateEnrollmentManager_=(x: typings.winrtUwp.Windows.Security.Cryptography.Certificates.UserCertificateEnrollmentManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("userCertificateEnrollmentManager")(x.asInstanceOf[js.Any])
+    inline def userCertificateEnrollmentManager_=(x: typings.winrtUwp.Windows.Security.Cryptography.Certificates.UserCertificateEnrollmentManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("userCertificateEnrollmentManager")(x.asInstanceOf[js.Any])
   }
   
   /** Represents the usages of a certificate key. */
@@ -360,16 +354,14 @@ object Certificates {
       * @return An asynchronous operation to retrieve the list of certificates.
       */
     /* static member */
-    @scala.inline
-    def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     /**
       * Get all certificates from the certificate stores that match the specified query parameters.
       * @param query The certificate values to search for.
       * @return An asynchronous operation to retrieve the list of certificates.
       */
     /* static member */
-    @scala.inline
-    def findAllAsync(query: typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateQuery): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(query.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllAsync(query: typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateQuery): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(query.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * Gets a certificate store from the collection of certificate stores by name.
@@ -377,24 +369,21 @@ object Certificates {
       * @return The requested certificate store.
       */
     /* static member */
-    @scala.inline
-    def getStoreByName(storeName: String): typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateStore = ^.asInstanceOf[js.Dynamic].applyDynamic("getStoreByName")(storeName.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateStore]
+    inline def getStoreByName(storeName: String): typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateStore = ^.asInstanceOf[js.Dynamic].applyDynamic("getStoreByName")(storeName.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateStore]
     
     /** Gets the certificate store of intermediate certification authorities for an app. */
     /* static member */
     @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateStores.intermediateCertificationAuthorities")
     @js.native
     def intermediateCertificationAuthorities: typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateStore = js.native
-    @scala.inline
-    def intermediateCertificationAuthorities_=(x: typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateStore): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intermediateCertificationAuthorities")(x.asInstanceOf[js.Any])
+    inline def intermediateCertificationAuthorities_=(x: typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateStore): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intermediateCertificationAuthorities")(x.asInstanceOf[js.Any])
     
     /** Gets the certificate store of trusted root certificates for an app. */
     /* static member */
     @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateStores.trustedRootCertificationAuthorities")
     @js.native
     def trustedRootCertificationAuthorities: typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateStore = js.native
-    @scala.inline
-    def trustedRootCertificationAuthorities_=(x: typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateStore): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trustedRootCertificationAuthorities")(x.asInstanceOf[js.Any])
+    inline def trustedRootCertificationAuthorities_=(x: typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateStore): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trustedRootCertificationAuthorities")(x.asInstanceOf[js.Any])
   }
   
   /** Represents parameters to use when building a certificate chain. */
@@ -535,8 +524,7 @@ object Certificates {
       * @return An asynchronous operation to retrieve the attached signed CMS message.
       */
     /* static member */
-    @scala.inline
-    def generateSignatureAsync(
+    inline def generateSignatureAsync(
       data: IBuffer,
       signers: IIterable[typings.winrtUwp.Windows.Security.Cryptography.Certificates.CmsSignerInfo],
       certificates: IIterable[typings.winrtUwp.Windows.Security.Cryptography.Certificates.Certificate]
@@ -585,8 +573,7 @@ object Certificates {
       * @return An asynchronous operation to retrieve the detached signed CMS message.
       */
     /* static member */
-    @scala.inline
-    def generateSignatureAsync(
+    inline def generateSignatureAsync(
       data: IInputStream,
       signers: IIterable[typings.winrtUwp.Windows.Security.Cryptography.Certificates.CmsSignerInfo],
       certificates: IIterable[typings.winrtUwp.Windows.Security.Cryptography.Certificates.Certificate]
@@ -702,8 +689,7 @@ object Certificates {
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.dsa")
     @js.native
     def dsa: String = js.native
-    @scala.inline
-    def dsa_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dsa")(x.asInstanceOf[js.Any])
+    inline def dsa_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dsa")(x.asInstanceOf[js.Any])
     
     /** Returns "ECDH" as the key algorithm name. */
     /* static member */
@@ -716,27 +702,23 @@ object Certificates {
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdh256")
     @js.native
     def ecdh256: String = js.native
-    @scala.inline
-    def ecdh256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh256")(x.asInstanceOf[js.Any])
+    inline def ecdh256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh256")(x.asInstanceOf[js.Any])
     
     /** Returns "ECDH384" as the key algorithm name. */
     /* static member */
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdh384")
     @js.native
     def ecdh384: String = js.native
-    @scala.inline
-    def ecdh384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh384")(x.asInstanceOf[js.Any])
+    inline def ecdh384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh384")(x.asInstanceOf[js.Any])
     
     /** Returns "ECDH521" as the key algorithm name. */
     /* static member */
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdh521")
     @js.native
     def ecdh521: String = js.native
-    @scala.inline
-    def ecdh521_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh521")(x.asInstanceOf[js.Any])
+    inline def ecdh521_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh521")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def ecdh_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh")(x.asInstanceOf[js.Any])
+    inline def ecdh_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh")(x.asInstanceOf[js.Any])
     
     /** Returns "ECDSA" as the key algorithm name. */
     /* static member */
@@ -749,35 +731,30 @@ object Certificates {
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdsa256")
     @js.native
     def ecdsa256: String = js.native
-    @scala.inline
-    def ecdsa256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa256")(x.asInstanceOf[js.Any])
+    inline def ecdsa256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa256")(x.asInstanceOf[js.Any])
     
     /** Returns "ECDSA384" as the key algorithm name. */
     /* static member */
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdsa384")
     @js.native
     def ecdsa384: String = js.native
-    @scala.inline
-    def ecdsa384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa384")(x.asInstanceOf[js.Any])
+    inline def ecdsa384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa384")(x.asInstanceOf[js.Any])
     
     /** Returns "ECDSA521" as the key algorithm name. */
     /* static member */
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdsa521")
     @js.native
     def ecdsa521: String = js.native
-    @scala.inline
-    def ecdsa521_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa521")(x.asInstanceOf[js.Any])
+    inline def ecdsa521_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa521")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def ecdsa_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa")(x.asInstanceOf[js.Any])
+    inline def ecdsa_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa")(x.asInstanceOf[js.Any])
     
     /** Returns "RSA" as the key algorithm name. */
     /* static member */
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.rsa")
     @js.native
     def rsa: String = js.native
-    @scala.inline
-    def rsa_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsa")(x.asInstanceOf[js.Any])
+    inline def rsa_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsa")(x.asInstanceOf[js.Any])
   }
   
   /** Provides access to key attestation methods. */
@@ -798,8 +775,7 @@ object Certificates {
       * @return When this method completes, it returns the decrypted TPM key attestation credential.
       */
     /* static member */
-    @scala.inline
-    def decryptTpmAttestationCredentialAsync(credential: String): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("decryptTpmAttestationCredentialAsync")(credential.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def decryptTpmAttestationCredentialAsync(credential: String): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("decryptTpmAttestationCredentialAsync")(credential.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     /**
       * Decrypts a TPM key attestation credential.
       * @param credential The TPM key attestation credential to decrypt.
@@ -807,8 +783,7 @@ object Certificates {
       * @return When this method completes, it returns the decrypted TPM key attestation credential.
       */
     /* static member */
-    @scala.inline
-    def decryptTpmAttestationCredentialAsync(credential: String, containerName: String): IPromiseWithIAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptTpmAttestationCredentialAsync")(credential.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def decryptTpmAttestationCredentialAsync(credential: String, containerName: String): IPromiseWithIAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptTpmAttestationCredentialAsync")(credential.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Gets the credential ID from a TPM key attestation credential.
@@ -816,8 +791,7 @@ object Certificates {
       * @return The credential ID from the TPM key attestation credential.
       */
     /* static member */
-    @scala.inline
-    def getTpmAttestationCredentialId(credential: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTpmAttestationCredentialId")(credential.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getTpmAttestationCredentialId(credential: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTpmAttestationCredentialId")(credential.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Specifies the key protection level. This enumeration type is used in the KeyProtectionLevel property of a CertificateRequestProperties object. */
@@ -871,32 +845,28 @@ object Certificates {
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames.passportKeyStorageProvider")
     @js.native
     def passportKeyStorageProvider: String = js.native
-    @scala.inline
-    def passportKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("passportKeyStorageProvider")(x.asInstanceOf[js.Any])
+    inline def passportKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("passportKeyStorageProvider")(x.asInstanceOf[js.Any])
     
     /** Returns "Microsoft Platform Crypyto Key Storage Provider" as the provider name. */
     /* static member */
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames.platformKeyStorageProvider")
     @js.native
     def platformKeyStorageProvider: String = js.native
-    @scala.inline
-    def platformKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("platformKeyStorageProvider")(x.asInstanceOf[js.Any])
+    inline def platformKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("platformKeyStorageProvider")(x.asInstanceOf[js.Any])
     
     /** Returns "Microsoft Smart Card Key Storage Provider" as the provider name. */
     /* static member */
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames.smartcardKeyStorageProvider")
     @js.native
     def smartcardKeyStorageProvider: String = js.native
-    @scala.inline
-    def smartcardKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartcardKeyStorageProvider")(x.asInstanceOf[js.Any])
+    inline def smartcardKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartcardKeyStorageProvider")(x.asInstanceOf[js.Any])
     
     /** Returns "Microsoft Software Key Storage Provider" as the provider name. */
     /* static member */
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames.softwareKeyStorageProvider")
     @js.native
     def softwareKeyStorageProvider: String = js.native
-    @scala.inline
-    def softwareKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("softwareKeyStorageProvider")(x.asInstanceOf[js.Any])
+    inline def softwareKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("softwareKeyStorageProvider")(x.asInstanceOf[js.Any])
   }
   
   /** Represents PFX import parameters. */

@@ -35,8 +35,7 @@ object topBlockTypesMod {
   }
   object ITopBlock {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -53,41 +52,29 @@ object topBlockTypesMod {
       __obj.asInstanceOf[ITopBlock]
     }
     
-    @scala.inline
-    implicit class ITopBlockMutableBuilder[Self <: ITopBlock] (val x: Self) extends AnyVal {
+    extension [Self <: ITopBlock](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideContent(value: () => Unit): Self = StObject.set(x, "hideContent", js.Any.fromFunction0(value))
+      inline def setHideContent(value: () => Unit): Self = StObject.set(x, "hideContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideLiveIndicator(value: () => Unit): Self = StObject.set(x, "hideLiveIndicator", js.Any.fromFunction0(value))
+      inline def setHideLiveIndicator(value: () => Unit): Self = StObject.set(x, "hideLiveIndicator", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideTitle(value: () => Unit): Self = StObject.set(x, "hideTitle", js.Any.fromFunction0(value))
+      inline def setHideTitle(value: () => Unit): Self = StObject.set(x, "hideTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+      inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowContent(value: () => Unit): Self = StObject.set(x, "showContent", js.Any.fromFunction0(value))
+      inline def setShowContent(value: () => Unit): Self = StObject.set(x, "showContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowLiveIndicator(value: () => Unit): Self = StObject.set(x, "showLiveIndicator", js.Any.fromFunction0(value))
+      inline def setShowLiveIndicator(value: () => Unit): Self = StObject.set(x, "showLiveIndicator", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowTitle(value: () => Unit): Self = StObject.set(x, "showTitle", js.Any.fromFunction0(value))
+      inline def setShowTitle(value: () => Unit): Self = StObject.set(x, "showTitle", js.Any.fromFunction0(value))
     }
   }
   
@@ -103,38 +90,28 @@ object topBlockTypesMod {
   }
   object ITopBlockAPI {
     
-    @scala.inline
-    def apply(): ITopBlockAPI = {
+    inline def apply(): ITopBlockAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITopBlockAPI]
     }
     
-    @scala.inline
-    implicit class ITopBlockAPIMutableBuilder[Self <: ITopBlockAPI] (val x: Self) extends AnyVal {
+    extension [Self <: ITopBlockAPI](x: Self) {
       
-      @scala.inline
-      def setHideLiveIndicator(value: () => Unit): Self = StObject.set(x, "hideLiveIndicator", js.Any.fromFunction0(value))
+      inline def setHideLiveIndicator(value: () => Unit): Self = StObject.set(x, "hideLiveIndicator", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideLiveIndicatorUndefined: Self = StObject.set(x, "hideLiveIndicator", js.undefined)
+      inline def setHideLiveIndicatorUndefined: Self = StObject.set(x, "hideLiveIndicator", js.undefined)
       
-      @scala.inline
-      def setHideTitle(value: () => Unit): Self = StObject.set(x, "hideTitle", js.Any.fromFunction0(value))
+      inline def setHideTitle(value: () => Unit): Self = StObject.set(x, "hideTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideTitleUndefined: Self = StObject.set(x, "hideTitle", js.undefined)
+      inline def setHideTitleUndefined: Self = StObject.set(x, "hideTitle", js.undefined)
       
-      @scala.inline
-      def setShowLiveIndicator(value: () => Unit): Self = StObject.set(x, "showLiveIndicator", js.Any.fromFunction0(value))
+      inline def setShowLiveIndicator(value: () => Unit): Self = StObject.set(x, "showLiveIndicator", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowLiveIndicatorUndefined: Self = StObject.set(x, "showLiveIndicator", js.undefined)
+      inline def setShowLiveIndicatorUndefined: Self = StObject.set(x, "showLiveIndicator", js.undefined)
       
-      @scala.inline
-      def setShowTitle(value: () => Unit): Self = StObject.set(x, "showTitle", js.Any.fromFunction0(value))
+      inline def setShowTitle(value: () => Unit): Self = StObject.set(x, "showTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
+      inline def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
     }
   }
   
@@ -146,8 +123,7 @@ object topBlockTypesMod {
   }
   object ITopBlockViewCallbacks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onBlockMouseMove: EventListenerOrEventListenerObject,
       onBlockMouseOut: EventListenerOrEventListenerObject
     ): ITopBlockViewCallbacks = {
@@ -155,20 +131,15 @@ object topBlockTypesMod {
       __obj.asInstanceOf[ITopBlockViewCallbacks]
     }
     
-    @scala.inline
-    implicit class ITopBlockViewCallbacksMutableBuilder[Self <: ITopBlockViewCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: ITopBlockViewCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnBlockMouseMove(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onBlockMouseMove", value.asInstanceOf[js.Any])
+      inline def setOnBlockMouseMove(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onBlockMouseMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnBlockMouseMoveFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onBlockMouseMove", js.Any.fromFunction1(value))
+      inline def setOnBlockMouseMoveFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onBlockMouseMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlockMouseOut(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onBlockMouseOut", value.asInstanceOf[js.Any])
+      inline def setOnBlockMouseOut(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onBlockMouseOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnBlockMouseOutFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onBlockMouseOut", js.Any.fromFunction1(value))
+      inline def setOnBlockMouseOutFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onBlockMouseOut", js.Any.fromFunction1(value))
     }
   }
   
@@ -180,20 +151,16 @@ object topBlockTypesMod {
   }
   object ITopBlockViewConfig {
     
-    @scala.inline
-    def apply(callbacks: ITopBlockViewCallbacks, elements: ITopBlockViewElements): ITopBlockViewConfig = {
+    inline def apply(callbacks: ITopBlockViewCallbacks, elements: ITopBlockViewElements): ITopBlockViewConfig = {
       val __obj = js.Dynamic.literal(callbacks = callbacks.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITopBlockViewConfig]
     }
     
-    @scala.inline
-    implicit class ITopBlockViewConfigMutableBuilder[Self <: ITopBlockViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ITopBlockViewConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: ITopBlockViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: ITopBlockViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElements(value: ITopBlockViewElements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: ITopBlockViewElements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     }
   }
   
@@ -205,20 +172,16 @@ object topBlockTypesMod {
   }
   object ITopBlockViewElements {
     
-    @scala.inline
-    def apply(liveIndicator: HTMLElement, title: HTMLElement): ITopBlockViewElements = {
+    inline def apply(liveIndicator: HTMLElement, title: HTMLElement): ITopBlockViewElements = {
       val __obj = js.Dynamic.literal(liveIndicator = liveIndicator.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITopBlockViewElements]
     }
     
-    @scala.inline
-    implicit class ITopBlockViewElementsMutableBuilder[Self <: ITopBlockViewElements] (val x: Self) extends AnyVal {
+    extension [Self <: ITopBlockViewElements](x: Self) {
       
-      @scala.inline
-      def setLiveIndicator(value: HTMLElement): Self = StObject.set(x, "liveIndicator", value.asInstanceOf[js.Any])
+      inline def setLiveIndicator(value: HTMLElement): Self = StObject.set(x, "liveIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: HTMLElement): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: HTMLElement): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -238,8 +201,7 @@ object topBlockTypesMod {
   }
   object ITopBlockViewStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activated: String,
       elementsContainer: String,
       hidden: String,
@@ -251,26 +213,19 @@ object topBlockTypesMod {
       __obj.asInstanceOf[ITopBlockViewStyles]
     }
     
-    @scala.inline
-    implicit class ITopBlockViewStylesMutableBuilder[Self <: ITopBlockViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ITopBlockViewStyles](x: Self) {
       
-      @scala.inline
-      def setActivated(value: String): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
+      inline def setActivated(value: String): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsContainer(value: String): Self = StObject.set(x, "elementsContainer", value.asInstanceOf[js.Any])
+      inline def setElementsContainer(value: String): Self = StObject.set(x, "elementsContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiveIndicatorContainer(value: String): Self = StObject.set(x, "liveIndicatorContainer", value.asInstanceOf[js.Any])
+      inline def setLiveIndicatorContainer(value: String): Self = StObject.set(x, "liveIndicatorContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleContainer(value: String): Self = StObject.set(x, "titleContainer", value.asInstanceOf[js.Any])
+      inline def setTitleContainer(value: String): Self = StObject.set(x, "titleContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopBlock(value: String): Self = StObject.set(x, "topBlock", value.asInstanceOf[js.Any])
+      inline def setTopBlock(value: String): Self = StObject.set(x, "topBlock", value.asInstanceOf[js.Any])
     }
   }
 }

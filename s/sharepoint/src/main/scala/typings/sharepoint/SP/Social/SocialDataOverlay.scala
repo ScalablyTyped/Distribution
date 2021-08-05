@@ -34,8 +34,7 @@ trait SocialDataOverlay
 }
 object SocialDataOverlay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -51,22 +50,16 @@ object SocialDataOverlay {
     __obj.asInstanceOf[SocialDataOverlay]
   }
   
-  @scala.inline
-  implicit class SocialDataOverlayMutableBuilder[Self <: SocialDataOverlay] (val x: Self) extends AnyVal {
+  extension [Self <: SocialDataOverlay](x: Self) {
     
-    @scala.inline
-    def setGet_actorIndexes(value: () => js.Array[Double]): Self = StObject.set(x, "get_actorIndexes", js.Any.fromFunction0(value))
+    inline def setGet_actorIndexes(value: () => js.Array[Double]): Self = StObject.set(x, "get_actorIndexes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_index(value: () => Double): Self = StObject.set(x, "get_index", js.Any.fromFunction0(value))
+    inline def setGet_index(value: () => Double): Self = StObject.set(x, "get_index", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_length(value: () => Double): Self = StObject.set(x, "get_length", js.Any.fromFunction0(value))
+    inline def setGet_length(value: () => Double): Self = StObject.set(x, "get_length", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_linkUri(value: () => String): Self = StObject.set(x, "get_linkUri", js.Any.fromFunction0(value))
+    inline def setGet_linkUri(value: () => String): Self = StObject.set(x, "get_linkUri", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_overlayType(value: () => SocialDataOverlayType): Self = StObject.set(x, "get_overlayType", js.Any.fromFunction0(value))
+    inline def setGet_overlayType(value: () => SocialDataOverlayType): Self = StObject.set(x, "get_overlayType", js.Any.fromFunction0(value))
   }
 }

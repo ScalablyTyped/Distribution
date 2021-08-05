@@ -13,22 +13,17 @@ trait ReadVResult extends StObject {
 }
 object ReadVResult {
   
-  @scala.inline
-  def apply(buffers: js.Array[ArrayBufferView], bytesRead: Double): ReadVResult = {
+  inline def apply(buffers: js.Array[ArrayBufferView], bytesRead: Double): ReadVResult = {
     val __obj = js.Dynamic.literal(buffers = buffers.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadVResult]
   }
   
-  @scala.inline
-  implicit class ReadVResultMutableBuilder[Self <: ReadVResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReadVResult](x: Self) {
     
-    @scala.inline
-    def setBuffers(value: js.Array[ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
+    inline def setBuffers(value: js.Array[ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuffersVarargs(value: ArrayBufferView*): Self = StObject.set(x, "buffers", js.Array(value :_*))
+    inline def setBuffersVarargs(value: ArrayBufferView*): Self = StObject.set(x, "buffers", js.Array(value :_*))
     
-    @scala.inline
-    def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
+    inline def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
   }
 }

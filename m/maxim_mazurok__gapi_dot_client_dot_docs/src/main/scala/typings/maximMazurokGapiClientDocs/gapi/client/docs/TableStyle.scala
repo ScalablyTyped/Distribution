@@ -11,22 +11,17 @@ trait TableStyle extends StObject {
 }
 object TableStyle {
   
-  @scala.inline
-  def apply(): TableStyle = {
+  inline def apply(): TableStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableStyle]
   }
   
-  @scala.inline
-  implicit class TableStyleMutableBuilder[Self <: TableStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TableStyle](x: Self) {
     
-    @scala.inline
-    def setTableColumnProperties(value: js.Array[TableColumnProperties]): Self = StObject.set(x, "tableColumnProperties", value.asInstanceOf[js.Any])
+    inline def setTableColumnProperties(value: js.Array[TableColumnProperties]): Self = StObject.set(x, "tableColumnProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableColumnPropertiesUndefined: Self = StObject.set(x, "tableColumnProperties", js.undefined)
+    inline def setTableColumnPropertiesUndefined: Self = StObject.set(x, "tableColumnProperties", js.undefined)
     
-    @scala.inline
-    def setTableColumnPropertiesVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumnProperties", js.Array(value :_*))
+    inline def setTableColumnPropertiesVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumnProperties", js.Array(value :_*))
   }
 }

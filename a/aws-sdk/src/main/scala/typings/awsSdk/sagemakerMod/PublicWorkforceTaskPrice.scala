@@ -13,19 +13,15 @@ trait PublicWorkforceTaskPrice extends StObject {
 }
 object PublicWorkforceTaskPrice {
   
-  @scala.inline
-  def apply(): PublicWorkforceTaskPrice = {
+  inline def apply(): PublicWorkforceTaskPrice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublicWorkforceTaskPrice]
   }
   
-  @scala.inline
-  implicit class PublicWorkforceTaskPriceMutableBuilder[Self <: PublicWorkforceTaskPrice] (val x: Self) extends AnyVal {
+  extension [Self <: PublicWorkforceTaskPrice](x: Self) {
     
-    @scala.inline
-    def setAmountInUsd(value: USD): Self = StObject.set(x, "AmountInUsd", value.asInstanceOf[js.Any])
+    inline def setAmountInUsd(value: USD): Self = StObject.set(x, "AmountInUsd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountInUsdUndefined: Self = StObject.set(x, "AmountInUsd", js.undefined)
+    inline def setAmountInUsdUndefined: Self = StObject.set(x, "AmountInUsd", js.undefined)
   }
 }

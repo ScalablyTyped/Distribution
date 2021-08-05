@@ -23,28 +23,21 @@ trait LabelingJobAlgorithmsConfig extends StObject {
 }
 object LabelingJobAlgorithmsConfig {
   
-  @scala.inline
-  def apply(LabelingJobAlgorithmSpecificationArn: LabelingJobAlgorithmSpecificationArn): LabelingJobAlgorithmsConfig = {
+  inline def apply(LabelingJobAlgorithmSpecificationArn: LabelingJobAlgorithmSpecificationArn): LabelingJobAlgorithmsConfig = {
     val __obj = js.Dynamic.literal(LabelingJobAlgorithmSpecificationArn = LabelingJobAlgorithmSpecificationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelingJobAlgorithmsConfig]
   }
   
-  @scala.inline
-  implicit class LabelingJobAlgorithmsConfigMutableBuilder[Self <: LabelingJobAlgorithmsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LabelingJobAlgorithmsConfig](x: Self) {
     
-    @scala.inline
-    def setInitialActiveLearningModelArn(value: ModelArn): Self = StObject.set(x, "InitialActiveLearningModelArn", value.asInstanceOf[js.Any])
+    inline def setInitialActiveLearningModelArn(value: ModelArn): Self = StObject.set(x, "InitialActiveLearningModelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialActiveLearningModelArnUndefined: Self = StObject.set(x, "InitialActiveLearningModelArn", js.undefined)
+    inline def setInitialActiveLearningModelArnUndefined: Self = StObject.set(x, "InitialActiveLearningModelArn", js.undefined)
     
-    @scala.inline
-    def setLabelingJobAlgorithmSpecificationArn(value: LabelingJobAlgorithmSpecificationArn): Self = StObject.set(x, "LabelingJobAlgorithmSpecificationArn", value.asInstanceOf[js.Any])
+    inline def setLabelingJobAlgorithmSpecificationArn(value: LabelingJobAlgorithmSpecificationArn): Self = StObject.set(x, "LabelingJobAlgorithmSpecificationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelingJobResourceConfig(value: LabelingJobResourceConfig): Self = StObject.set(x, "LabelingJobResourceConfig", value.asInstanceOf[js.Any])
+    inline def setLabelingJobResourceConfig(value: LabelingJobResourceConfig): Self = StObject.set(x, "LabelingJobResourceConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelingJobResourceConfigUndefined: Self = StObject.set(x, "LabelingJobResourceConfig", js.undefined)
+    inline def setLabelingJobResourceConfigUndefined: Self = StObject.set(x, "LabelingJobResourceConfig", js.undefined)
   }
 }

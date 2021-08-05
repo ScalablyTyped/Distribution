@@ -15,6 +15,5 @@ object equalsMod {
     *
     * @param comparison - String to compare
     */
-  @scala.inline
-  def default(str: String, comparison: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], comparison.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(str: String, comparison: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], comparison.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

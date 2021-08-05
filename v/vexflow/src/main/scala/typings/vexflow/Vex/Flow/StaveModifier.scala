@@ -31,8 +31,7 @@ trait StaveModifier extends StObject {
 }
 object StaveModifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEndModifier: () => Unit,
     addModifier: () => Unit,
     addToStave: (Stave, Boolean) => StaveModifier,
@@ -87,40 +86,28 @@ object StaveModifier {
          with Position
   }
   
-  @scala.inline
-  implicit class StaveModifierMutableBuilder[Self <: StaveModifier] (val x: Self) extends AnyVal {
+  extension [Self <: StaveModifier](x: Self) {
     
-    @scala.inline
-    def setAddEndModifier(value: () => Unit): Self = StObject.set(x, "addEndModifier", js.Any.fromFunction0(value))
+    inline def setAddEndModifier(value: () => Unit): Self = StObject.set(x, "addEndModifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAddModifier(value: () => Unit): Self = StObject.set(x, "addModifier", js.Any.fromFunction0(value))
+    inline def setAddModifier(value: () => Unit): Self = StObject.set(x, "addModifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAddToStave(value: (Stave, Boolean) => StaveModifier): Self = StObject.set(x, "addToStave", js.Any.fromFunction2(value))
+    inline def setAddToStave(value: (Stave, Boolean) => StaveModifier): Self = StObject.set(x, "addToStave", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddToStaveEnd(value: (Stave, Boolean) => StaveModifier): Self = StObject.set(x, "addToStaveEnd", js.Any.fromFunction2(value))
+    inline def setAddToStaveEnd(value: (Stave, Boolean) => StaveModifier): Self = StObject.set(x, "addToStaveEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCategory(value: () => String): Self = StObject.set(x, "getCategory", js.Any.fromFunction0(value))
+    inline def setGetCategory(value: () => String): Self = StObject.set(x, "getCategory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPadding(value: Double => Double): Self = StObject.set(x, "getPadding", js.Any.fromFunction1(value))
+    inline def setGetPadding(value: Double => Double): Self = StObject.set(x, "getPadding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPosition(value: () => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMakeSpacer(value: Double => GetContext): Self = StObject.set(x, "makeSpacer", js.Any.fromFunction1(value))
+    inline def setMakeSpacer(value: Double => GetContext): Self = StObject.set(x, "makeSpacer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPlaceGlyphOnLine(value: (Glyph, Stave, Double) => Unit): Self = StObject.set(x, "placeGlyphOnLine", js.Any.fromFunction3(value))
+    inline def setPlaceGlyphOnLine(value: (Glyph, Stave, Double) => Unit): Self = StObject.set(x, "placeGlyphOnLine", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetPadding(value: Double => Unit): Self = StObject.set(x, "setPadding", js.Any.fromFunction1(value))
+    inline def setSetPadding(value: Double => Unit): Self = StObject.set(x, "setPadding", js.Any.fromFunction1(value))
   }
 }

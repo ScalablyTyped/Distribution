@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(publicKey: String, privateKey: String): Instance = (^.asInstanceOf[js.Dynamic].apply(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  inline def apply(publicKey: String, privateKey: String): Instance = (^.asInstanceOf[js.Dynamic].apply(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Instance]
   
   @JSImport("uploadcare", JSImport.Namespace)
   @js.native
@@ -43,8 +42,7 @@ object mod {
   }
   object File {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       datetime_stored: String,
       datetime_uploaded: String,
       image_info: ImageInfo,
@@ -61,47 +59,33 @@ object mod {
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setDatetime_removed(value: String): Self = StObject.set(x, "datetime_removed", value.asInstanceOf[js.Any])
+      inline def setDatetime_removed(value: String): Self = StObject.set(x, "datetime_removed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatetime_removedNull: Self = StObject.set(x, "datetime_removed", null)
+      inline def setDatetime_removedNull: Self = StObject.set(x, "datetime_removed", null)
       
-      @scala.inline
-      def setDatetime_stored(value: String): Self = StObject.set(x, "datetime_stored", value.asInstanceOf[js.Any])
+      inline def setDatetime_stored(value: String): Self = StObject.set(x, "datetime_stored", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatetime_uploaded(value: String): Self = StObject.set(x, "datetime_uploaded", value.asInstanceOf[js.Any])
+      inline def setDatetime_uploaded(value: String): Self = StObject.set(x, "datetime_uploaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage_info(value: ImageInfo): Self = StObject.set(x, "image_info", value.asInstanceOf[js.Any])
+      inline def setImage_info(value: ImageInfo): Self = StObject.set(x, "image_info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_image(value: Boolean): Self = StObject.set(x, "is_image", value.asInstanceOf[js.Any])
+      inline def setIs_image(value: Boolean): Self = StObject.set(x, "is_image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_ready(value: Boolean): Self = StObject.set(x, "is_ready", value.asInstanceOf[js.Any])
+      inline def setIs_ready(value: Boolean): Self = StObject.set(x, "is_ready", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMime_type(value: String): Self = StObject.set(x, "mime_type", value.asInstanceOf[js.Any])
+      inline def setMime_type(value: String): Self = StObject.set(x, "mime_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginal_file_url(value: String): Self = StObject.set(x, "original_file_url", value.asInstanceOf[js.Any])
+      inline def setOriginal_file_url(value: String): Self = StObject.set(x, "original_file_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginal_filename(value: String): Self = StObject.set(x, "original_filename", value.asInstanceOf[js.Any])
+      inline def setOriginal_filename(value: String): Self = StObject.set(x, "original_filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,8 +109,7 @@ object mod {
   }
   object ImageInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       datetime_original: Null,
       dpi: js.Array[Double],
       format: String,
@@ -140,35 +123,25 @@ object mod {
       __obj.asInstanceOf[ImageInfo]
     }
     
-    @scala.inline
-    implicit class ImageInfoMutableBuilder[Self <: ImageInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ImageInfo](x: Self) {
       
-      @scala.inline
-      def setDatetime_original(value: Null): Self = StObject.set(x, "datetime_original", value.asInstanceOf[js.Any])
+      inline def setDatetime_original(value: Null): Self = StObject.set(x, "datetime_original", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDpi(value: js.Array[Double]): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
+      inline def setDpi(value: js.Array[Double]): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDpiVarargs(value: Double*): Self = StObject.set(x, "dpi", js.Array(value :_*))
+      inline def setDpiVarargs(value: Double*): Self = StObject.set(x, "dpi", js.Array(value :_*))
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeo_location(value: Null): Self = StObject.set(x, "geo_location", value.asInstanceOf[js.Any])
+      inline def setGeo_location(value: Null): Self = StObject.set(x, "geo_location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientation(value: Null): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Null): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequence(value: Boolean): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+      inline def setSequence(value: Boolean): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,20 +153,16 @@ object mod {
   }
   object Instance {
     
-    @scala.inline
-    def apply(file: FromUrl, files: Remove): Instance = {
+    inline def apply(file: FromUrl, files: Remove): Instance = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
       __obj.asInstanceOf[Instance]
     }
     
-    @scala.inline
-    implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+    extension [Self <: Instance](x: Self) {
       
-      @scala.inline
-      def setFile(value: FromUrl): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: FromUrl): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiles(value: Remove): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Remove): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     }
   }
 }

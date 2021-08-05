@@ -14,28 +14,21 @@ trait MasterAuthorizedNetworksConfig extends StObject {
 }
 object MasterAuthorizedNetworksConfig {
   
-  @scala.inline
-  def apply(): MasterAuthorizedNetworksConfig = {
+  inline def apply(): MasterAuthorizedNetworksConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MasterAuthorizedNetworksConfig]
   }
   
-  @scala.inline
-  implicit class MasterAuthorizedNetworksConfigMutableBuilder[Self <: MasterAuthorizedNetworksConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MasterAuthorizedNetworksConfig](x: Self) {
     
-    @scala.inline
-    def setCidrBlocks(value: js.Array[CidrBlock]): Self = StObject.set(x, "cidrBlocks", value.asInstanceOf[js.Any])
+    inline def setCidrBlocks(value: js.Array[CidrBlock]): Self = StObject.set(x, "cidrBlocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrBlocksUndefined: Self = StObject.set(x, "cidrBlocks", js.undefined)
+    inline def setCidrBlocksUndefined: Self = StObject.set(x, "cidrBlocks", js.undefined)
     
-    @scala.inline
-    def setCidrBlocksVarargs(value: CidrBlock*): Self = StObject.set(x, "cidrBlocks", js.Array(value :_*))
+    inline def setCidrBlocksVarargs(value: CidrBlock*): Self = StObject.set(x, "cidrBlocks", js.Array(value :_*))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

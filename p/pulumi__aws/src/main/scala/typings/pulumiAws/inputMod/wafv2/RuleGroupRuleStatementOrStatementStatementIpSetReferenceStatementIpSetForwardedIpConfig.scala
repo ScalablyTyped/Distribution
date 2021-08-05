@@ -24,22 +24,17 @@ trait RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementIpSetForw
 }
 object RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
   
-  @scala.inline
-  def apply(fallbackBehavior: Input[String], headerName: Input[String], position: Input[String]): RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig = {
+  inline def apply(fallbackBehavior: Input[String], headerName: Input[String], position: Input[String]): RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig = {
     val __obj = js.Dynamic.literal(fallbackBehavior = fallbackBehavior.asInstanceOf[js.Any], headerName = headerName.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigMutableBuilder[Self <: RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig](x: Self) {
     
-    @scala.inline
-    def setFallbackBehavior(value: Input[String]): Self = StObject.set(x, "fallbackBehavior", value.asInstanceOf[js.Any])
+    inline def setFallbackBehavior(value: Input[String]): Self = StObject.set(x, "fallbackBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderName(value: Input[String]): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
+    inline def setHeaderName(value: Input[String]): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Input[String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Input[String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

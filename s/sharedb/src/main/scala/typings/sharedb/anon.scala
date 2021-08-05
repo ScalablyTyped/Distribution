@@ -40,23 +40,18 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setResults(value: js.Array[Query]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[Query]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      @scala.inline
-      def setResultsVarargs(value: Query*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: Query*): Self = StObject.set(x, "results", js.Array(value :_*))
     }
   }
   
@@ -68,21 +63,17 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: js.Any, `type`: String): Data = {
+    inline def apply(data: js.Any, `type`: String): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,44 +91,32 @@ object anon {
   }
   object Db {
     
-    @scala.inline
-    def apply(): Db = {
+    inline def apply(): Db = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Db]
     }
     
-    @scala.inline
-    implicit class DbMutableBuilder[Self <: Db] (val x: Self) extends AnyVal {
+    extension [Self <: Db](x: Self) {
       
-      @scala.inline
-      def setDb(value: js.Any): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: js.Any): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
+      inline def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
       
-      @scala.inline
-      def setDisableDocAction(value: Boolean): Self = StObject.set(x, "disableDocAction", value.asInstanceOf[js.Any])
+      inline def setDisableDocAction(value: Boolean): Self = StObject.set(x, "disableDocAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableDocActionUndefined: Self = StObject.set(x, "disableDocAction", js.undefined)
+      inline def setDisableDocActionUndefined: Self = StObject.set(x, "disableDocAction", js.undefined)
       
-      @scala.inline
-      def setDisableSpaceDelimitedActions(value: Boolean): Self = StObject.set(x, "disableSpaceDelimitedActions", value.asInstanceOf[js.Any])
+      inline def setDisableSpaceDelimitedActions(value: Boolean): Self = StObject.set(x, "disableSpaceDelimitedActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableSpaceDelimitedActionsUndefined: Self = StObject.set(x, "disableSpaceDelimitedActions", js.undefined)
+      inline def setDisableSpaceDelimitedActionsUndefined: Self = StObject.set(x, "disableSpaceDelimitedActions", js.undefined)
       
-      @scala.inline
-      def setExtraDbs(value: StringDictionary[ExtraDB]): Self = StObject.set(x, "extraDbs", value.asInstanceOf[js.Any])
+      inline def setExtraDbs(value: StringDictionary[ExtraDB]): Self = StObject.set(x, "extraDbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraDbsUndefined: Self = StObject.set(x, "extraDbs", js.undefined)
+      inline def setExtraDbsUndefined: Self = StObject.set(x, "extraDbs", js.undefined)
       
-      @scala.inline
-      def setPubsub(value: PubSub): Self = StObject.set(x, "pubsub", value.asInstanceOf[js.Any])
+      inline def setPubsub(value: PubSub): Self = StObject.set(x, "pubsub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubsubUndefined: Self = StObject.set(x, "pubsub", js.undefined)
+      inline def setPubsubUndefined: Self = StObject.set(x, "pubsub", js.undefined)
     }
   }
   
@@ -490,23 +469,18 @@ object anon {
   }
   object Results {
     
-    @scala.inline
-    def apply(): Results = {
+    inline def apply(): Results = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Results]
     }
     
-    @scala.inline
-    implicit class ResultsMutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
+    extension [Self <: Results](x: Self) {
       
-      @scala.inline
-      def setResults(value: js.Array[typings.sharedb.sharedbMod.Query]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[typings.sharedb.sharedbMod.Query]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      @scala.inline
-      def setResultsVarargs(value: typings.sharedb.sharedbMod.Query*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: typings.sharedb.sharedbMod.Query*): Self = StObject.set(x, "results", js.Array(value :_*))
     }
   }
 }

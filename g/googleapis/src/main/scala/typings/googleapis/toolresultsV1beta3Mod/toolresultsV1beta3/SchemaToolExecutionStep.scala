@@ -18,19 +18,15 @@ trait SchemaToolExecutionStep extends StObject {
 }
 object SchemaToolExecutionStep {
   
-  @scala.inline
-  def apply(): SchemaToolExecutionStep = {
+  inline def apply(): SchemaToolExecutionStep = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaToolExecutionStep]
   }
   
-  @scala.inline
-  implicit class SchemaToolExecutionStepMutableBuilder[Self <: SchemaToolExecutionStep] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaToolExecutionStep](x: Self) {
     
-    @scala.inline
-    def setToolExecution(value: SchemaToolExecution): Self = StObject.set(x, "toolExecution", value.asInstanceOf[js.Any])
+    inline def setToolExecution(value: SchemaToolExecution): Self = StObject.set(x, "toolExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolExecutionUndefined: Self = StObject.set(x, "toolExecution", js.undefined)
+    inline def setToolExecutionUndefined: Self = StObject.set(x, "toolExecution", js.undefined)
   }
 }

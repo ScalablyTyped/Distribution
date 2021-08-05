@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamTypeEnum extends StObject
 object StreamTypeEnum {
   
-  @scala.inline
-  def adTypeBinary: `1` = 1.asInstanceOf[`1`]
+  inline def adTypeBinary: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adTypeText: `2` = 2.asInstanceOf[`2`]
+  inline def adTypeText: `2` = 2.asInstanceOf[`2`]
 }

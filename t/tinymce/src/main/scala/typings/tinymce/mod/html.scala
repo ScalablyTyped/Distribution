@@ -152,23 +152,18 @@ object html {
   }
   object Styles {
     
-    @scala.inline
-    def apply(parse: String => js.Object, serialize: (js.Object, String) => String, toHex: String => String): Styles = {
+    inline def apply(parse: String => js.Object, serialize: (js.Object, String) => String, toHex: String => String): Styles = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), serialize = js.Any.fromFunction2(serialize), toHex = js.Any.fromFunction1(toHex))
       __obj.asInstanceOf[Styles]
     }
     
-    @scala.inline
-    implicit class StylesMutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
+    extension [Self <: Styles](x: Self) {
       
-      @scala.inline
-      def setParse(value: String => js.Object): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: String => js.Object): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerialize(value: (js.Object, String) => String): Self = StObject.set(x, "serialize", js.Any.fromFunction2(value))
+      inline def setSerialize(value: (js.Object, String) => String): Self = StObject.set(x, "serialize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToHex(value: String => String): Self = StObject.set(x, "toHex", js.Any.fromFunction1(value))
+      inline def setToHex(value: String => String): Self = StObject.set(x, "toHex", js.Any.fromFunction1(value))
     }
   }
   

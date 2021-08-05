@@ -23,34 +23,25 @@ trait MutualTlsAuthentication extends StObject {
 }
 object MutualTlsAuthentication {
   
-  @scala.inline
-  def apply(): MutualTlsAuthentication = {
+  inline def apply(): MutualTlsAuthentication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MutualTlsAuthentication]
   }
   
-  @scala.inline
-  implicit class MutualTlsAuthenticationMutableBuilder[Self <: MutualTlsAuthentication] (val x: Self) extends AnyVal {
+  extension [Self <: MutualTlsAuthentication](x: Self) {
     
-    @scala.inline
-    def setTruststoreUri(value: UriWithLengthBetween1And2048): Self = StObject.set(x, "TruststoreUri", value.asInstanceOf[js.Any])
+    inline def setTruststoreUri(value: UriWithLengthBetween1And2048): Self = StObject.set(x, "TruststoreUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruststoreUriUndefined: Self = StObject.set(x, "TruststoreUri", js.undefined)
+    inline def setTruststoreUriUndefined: Self = StObject.set(x, "TruststoreUri", js.undefined)
     
-    @scala.inline
-    def setTruststoreVersion(value: StringWithLengthBetween1And64): Self = StObject.set(x, "TruststoreVersion", value.asInstanceOf[js.Any])
+    inline def setTruststoreVersion(value: StringWithLengthBetween1And64): Self = StObject.set(x, "TruststoreVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruststoreVersionUndefined: Self = StObject.set(x, "TruststoreVersion", js.undefined)
+    inline def setTruststoreVersionUndefined: Self = StObject.set(x, "TruststoreVersion", js.undefined)
     
-    @scala.inline
-    def setTruststoreWarnings(value: listOfString): Self = StObject.set(x, "TruststoreWarnings", value.asInstanceOf[js.Any])
+    inline def setTruststoreWarnings(value: listOfString): Self = StObject.set(x, "TruststoreWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruststoreWarningsUndefined: Self = StObject.set(x, "TruststoreWarnings", js.undefined)
+    inline def setTruststoreWarningsUndefined: Self = StObject.set(x, "TruststoreWarnings", js.undefined)
     
-    @scala.inline
-    def setTruststoreWarningsVarargs(value: string*): Self = StObject.set(x, "TruststoreWarnings", js.Array(value :_*))
+    inline def setTruststoreWarningsVarargs(value: string*): Self = StObject.set(x, "TruststoreWarnings", js.Array(value :_*))
   }
 }

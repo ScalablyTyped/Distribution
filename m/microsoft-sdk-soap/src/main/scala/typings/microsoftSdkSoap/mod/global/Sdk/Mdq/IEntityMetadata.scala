@@ -130,8 +130,7 @@ trait IEntityMetadata extends StObject {
 }
 object IEntityMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActivityTypeMask: Double,
     Attributes: js.Array[IAttributeMetadata],
     AutoCreateAccessTeams: js.Any,
@@ -196,192 +195,130 @@ object IEntityMetadata {
     __obj.asInstanceOf[IEntityMetadata]
   }
   
-  @scala.inline
-  implicit class IEntityMetadataMutableBuilder[Self <: IEntityMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: IEntityMetadata](x: Self) {
     
-    @scala.inline
-    def setActivityTypeMask(value: Double): Self = StObject.set(x, "ActivityTypeMask", value.asInstanceOf[js.Any])
+    inline def setActivityTypeMask(value: Double): Self = StObject.set(x, "ActivityTypeMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributes(value: js.Array[IAttributeMetadata]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Array[IAttributeMetadata]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesVarargs(value: IAttributeMetadata*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: IAttributeMetadata*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setAutoCreateAccessTeams(value: js.Any): Self = StObject.set(x, "AutoCreateAccessTeams", value.asInstanceOf[js.Any])
+    inline def setAutoCreateAccessTeams(value: js.Any): Self = StObject.set(x, "AutoCreateAccessTeams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRouteToOwnerQueue(value: Boolean): Self = StObject.set(x, "AutoRouteToOwnerQueue", value.asInstanceOf[js.Any])
+    inline def setAutoRouteToOwnerQueue(value: Boolean): Self = StObject.set(x, "AutoRouteToOwnerQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBeInManyToMany(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanBeInManyToMany", value.asInstanceOf[js.Any])
+    inline def setCanBeInManyToMany(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanBeInManyToMany", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBePrimaryEntityInRelationship(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanBePrimaryEntityInRelationship", value.asInstanceOf[js.Any])
+    inline def setCanBePrimaryEntityInRelationship(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanBePrimaryEntityInRelationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBeRelatedEntityInRelationship(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanBeRelatedEntityInRelationship", value.asInstanceOf[js.Any])
+    inline def setCanBeRelatedEntityInRelationship(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanBeRelatedEntityInRelationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanCreateAttributes(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanCreateAttributes", value.asInstanceOf[js.Any])
+    inline def setCanCreateAttributes(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanCreateAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanCreateCharts(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanCreateCharts", value.asInstanceOf[js.Any])
+    inline def setCanCreateCharts(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanCreateCharts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanCreateForms(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanCreateForms", value.asInstanceOf[js.Any])
+    inline def setCanCreateForms(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanCreateForms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanCreateViews(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanCreateViews", value.asInstanceOf[js.Any])
+    inline def setCanCreateViews(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanCreateViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanModifyAdditionalSettings(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanModifyAdditionalSettings", value.asInstanceOf[js.Any])
+    inline def setCanModifyAdditionalSettings(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanModifyAdditionalSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanTriggerWorkflow(value: Boolean): Self = StObject.set(x, "CanTriggerWorkflow", value.asInstanceOf[js.Any])
+    inline def setCanTriggerWorkflow(value: Boolean): Self = StObject.set(x, "CanTriggerWorkflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Label): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Label): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayCollectionName(value: Label): Self = StObject.set(x, "DisplayCollectionName", value.asInstanceOf[js.Any])
+    inline def setDisplayCollectionName(value: Label): Self = StObject.set(x, "DisplayCollectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: Label): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: Label): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconLargeName(value: String): Self = StObject.set(x, "IconLargeName", value.asInstanceOf[js.Any])
+    inline def setIconLargeName(value: String): Self = StObject.set(x, "IconLargeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconMediumName(value: String): Self = StObject.set(x, "IconMediumName", value.asInstanceOf[js.Any])
+    inline def setIconMediumName(value: String): Self = StObject.set(x, "IconMediumName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconSmallName(value: String): Self = StObject.set(x, "IconSmallName", value.asInstanceOf[js.Any])
+    inline def setIconSmallName(value: String): Self = StObject.set(x, "IconSmallName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntroducedVersion(value: js.Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
+    inline def setIntroducedVersion(value: js.Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAIRUpdated(value: Boolean): Self = StObject.set(x, "IsAIRUpdated", value.asInstanceOf[js.Any])
+    inline def setIsAIRUpdated(value: Boolean): Self = StObject.set(x, "IsAIRUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActivity(value: Boolean): Self = StObject.set(x, "IsActivity", value.asInstanceOf[js.Any])
+    inline def setIsActivity(value: Boolean): Self = StObject.set(x, "IsActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActivityParty(value: Boolean): Self = StObject.set(x, "IsActivityParty", value.asInstanceOf[js.Any])
+    inline def setIsActivityParty(value: Boolean): Self = StObject.set(x, "IsActivityParty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAuditEnabled(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsAuditEnabled", value.asInstanceOf[js.Any])
+    inline def setIsAuditEnabled(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsAuditEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAvailableOffline(value: Boolean): Self = StObject.set(x, "IsAvailableOffline", value.asInstanceOf[js.Any])
+    inline def setIsAvailableOffline(value: Boolean): Self = StObject.set(x, "IsAvailableOffline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBusinessProcessEnabled(value: Boolean): Self = StObject.set(x, "IsBusinessProcessEnabled", value.asInstanceOf[js.Any])
+    inline def setIsBusinessProcessEnabled(value: Boolean): Self = StObject.set(x, "IsBusinessProcessEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsChildEntity(value: Boolean): Self = StObject.set(x, "IsChildEntity", value.asInstanceOf[js.Any])
+    inline def setIsChildEntity(value: Boolean): Self = StObject.set(x, "IsChildEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsConnectionsEnabled(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsConnectionsEnabled", value.asInstanceOf[js.Any])
+    inline def setIsConnectionsEnabled(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsConnectionsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCustomEntity(value: Boolean): Self = StObject.set(x, "IsCustomEntity", value.asInstanceOf[js.Any])
+    inline def setIsCustomEntity(value: Boolean): Self = StObject.set(x, "IsCustomEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCustomizable(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsCustomizable", value.asInstanceOf[js.Any])
+    inline def setIsCustomizable(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsCustomizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDocumentManagementEnabled(value: Boolean): Self = StObject.set(x, "IsDocumentManagementEnabled", value.asInstanceOf[js.Any])
+    inline def setIsDocumentManagementEnabled(value: Boolean): Self = StObject.set(x, "IsDocumentManagementEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDuplicateDetectionEnabled(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsDuplicateDetectionEnabled", value.asInstanceOf[js.Any])
+    inline def setIsDuplicateDetectionEnabled(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsDuplicateDetectionEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabledForCharts(value: Boolean): Self = StObject.set(x, "IsEnabledForCharts", value.asInstanceOf[js.Any])
+    inline def setIsEnabledForCharts(value: Boolean): Self = StObject.set(x, "IsEnabledForCharts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsImportable(value: Boolean): Self = StObject.set(x, "IsImportable", value.asInstanceOf[js.Any])
+    inline def setIsImportable(value: Boolean): Self = StObject.set(x, "IsImportable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIntersect(value: Boolean): Self = StObject.set(x, "IsIntersect", value.asInstanceOf[js.Any])
+    inline def setIsIntersect(value: Boolean): Self = StObject.set(x, "IsIntersect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMailMergeEnabled(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsMailMergeEnabled", value.asInstanceOf[js.Any])
+    inline def setIsMailMergeEnabled(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsMailMergeEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsManaged(value: Boolean): Self = StObject.set(x, "IsManaged", value.asInstanceOf[js.Any])
+    inline def setIsManaged(value: Boolean): Self = StObject.set(x, "IsManaged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMappable(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsMappable", value.asInstanceOf[js.Any])
+    inline def setIsMappable(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsMappable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsQuickCreateEnabled(value: Boolean): Self = StObject.set(x, "IsQuickCreateEnabled", value.asInstanceOf[js.Any])
+    inline def setIsQuickCreateEnabled(value: Boolean): Self = StObject.set(x, "IsQuickCreateEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadingPaneEnabled(value: Boolean): Self = StObject.set(x, "IsReadingPaneEnabled", value.asInstanceOf[js.Any])
+    inline def setIsReadingPaneEnabled(value: Boolean): Self = StObject.set(x, "IsReadingPaneEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRenameable(value: Boolean): Self = StObject.set(x, "IsRenameable", value.asInstanceOf[js.Any])
+    inline def setIsRenameable(value: Boolean): Self = StObject.set(x, "IsRenameable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValidForAdvancedFind(value: Boolean): Self = StObject.set(x, "IsValidForAdvancedFind", value.asInstanceOf[js.Any])
+    inline def setIsValidForAdvancedFind(value: Boolean): Self = StObject.set(x, "IsValidForAdvancedFind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValidForQueue(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsValidForQueue", value.asInstanceOf[js.Any])
+    inline def setIsValidForQueue(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsValidForQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisibleInMobile(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsVisibleInMobile", value.asInstanceOf[js.Any])
+    inline def setIsVisibleInMobile(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsVisibleInMobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisibleInMobileClient(value: Boolean): Self = StObject.set(x, "IsVisibleInMobileClient", value.asInstanceOf[js.Any])
+    inline def setIsVisibleInMobileClient(value: Boolean): Self = StObject.set(x, "IsVisibleInMobileClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalName(value: String): Self = StObject.set(x, "LogicalName", value.asInstanceOf[js.Any])
+    inline def setLogicalName(value: String): Self = StObject.set(x, "LogicalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManyToManyRelationships(value: ManyToManyRelationshipMetadata): Self = StObject.set(x, "ManyToManyRelationships", value.asInstanceOf[js.Any])
+    inline def setManyToManyRelationships(value: ManyToManyRelationshipMetadata): Self = StObject.set(x, "ManyToManyRelationships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManyToOneRelationships(value: OneToManyRelationshipMetadata): Self = StObject.set(x, "ManyToOneRelationships", value.asInstanceOf[js.Any])
+    inline def setManyToOneRelationships(value: OneToManyRelationshipMetadata): Self = StObject.set(x, "ManyToOneRelationships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataId(value: String): Self = StObject.set(x, "MetadataId", value.asInstanceOf[js.Any])
+    inline def setMetadataId(value: String): Self = StObject.set(x, "MetadataId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeCode(value: Double): Self = StObject.set(x, "ObjectTypeCode", value.asInstanceOf[js.Any])
+    inline def setObjectTypeCode(value: Double): Self = StObject.set(x, "ObjectTypeCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneToManyRelationships(value: OneToManyRelationshipMetadata): Self = StObject.set(x, "OneToManyRelationships", value.asInstanceOf[js.Any])
+    inline def setOneToManyRelationships(value: OneToManyRelationshipMetadata): Self = StObject.set(x, "OneToManyRelationships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnershipType(
+    inline def setOwnershipType(
       value: BusinessOwned | BusinessParented | (`None    OrganizationOwned`) | (`TeamOwned    UserOwned`)
     ): Self = StObject.set(x, "OwnershipType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryIdAttribute(value: String): Self = StObject.set(x, "PrimaryIdAttribute", value.asInstanceOf[js.Any])
+    inline def setPrimaryIdAttribute(value: String): Self = StObject.set(x, "PrimaryIdAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryImageAttribute(value: String): Self = StObject.set(x, "PrimaryImageAttribute", value.asInstanceOf[js.Any])
+    inline def setPrimaryImageAttribute(value: String): Self = StObject.set(x, "PrimaryImageAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryNameAttribute(value: String): Self = StObject.set(x, "PrimaryNameAttribute", value.asInstanceOf[js.Any])
+    inline def setPrimaryNameAttribute(value: String): Self = StObject.set(x, "PrimaryNameAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivileges(value: js.Array[SecurityPrivilegeMetadata]): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
+    inline def setPrivileges(value: js.Array[SecurityPrivilegeMetadata]): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegesVarargs(value: SecurityPrivilegeMetadata*): Self = StObject.set(x, "Privileges", js.Array(value :_*))
+    inline def setPrivilegesVarargs(value: SecurityPrivilegeMetadata*): Self = StObject.set(x, "Privileges", js.Array(value :_*))
     
-    @scala.inline
-    def setRecurrenceBaseEntityLogicalName(value: String): Self = StObject.set(x, "RecurrenceBaseEntityLogicalName", value.asInstanceOf[js.Any])
+    inline def setRecurrenceBaseEntityLogicalName(value: String): Self = StObject.set(x, "RecurrenceBaseEntityLogicalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportViewName(value: String): Self = StObject.set(x, "ReportViewName", value.asInstanceOf[js.Any])
+    inline def setReportViewName(value: String): Self = StObject.set(x, "ReportViewName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
   }
 }

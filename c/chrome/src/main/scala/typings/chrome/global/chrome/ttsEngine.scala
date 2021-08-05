@@ -23,24 +23,20 @@ object ttsEngine {
   @JSGlobal("chrome.ttsEngine.onPause")
   @js.native
   def onPause: Event[js.Function0[Unit]] = js.native
-  @scala.inline
-  def onPause_=(x: Event[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPause")(x.asInstanceOf[js.Any])
+  inline def onPause_=(x: Event[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPause")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.ttsEngine.onResume")
   @js.native
   def onResume: Event[js.Function0[Unit]] = js.native
-  @scala.inline
-  def onResume_=(x: Event[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onResume")(x.asInstanceOf[js.Any])
+  inline def onResume_=(x: Event[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onResume")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.ttsEngine.onSpeak")
   @js.native
   def onSpeak: TtsEngineSpeakEvent = js.native
-  @scala.inline
-  def onSpeak_=(x: TtsEngineSpeakEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onSpeak")(x.asInstanceOf[js.Any])
+  inline def onSpeak_=(x: TtsEngineSpeakEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onSpeak")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.ttsEngine.onStop")
   @js.native
   def onStop: Event[js.Function0[Unit]] = js.native
-  @scala.inline
-  def onStop_=(x: Event[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStop")(x.asInstanceOf[js.Any])
+  inline def onStop_=(x: Event[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStop")(x.asInstanceOf[js.Any])
 }

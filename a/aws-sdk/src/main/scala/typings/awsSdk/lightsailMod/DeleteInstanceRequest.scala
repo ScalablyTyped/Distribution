@@ -18,22 +18,17 @@ trait DeleteInstanceRequest extends StObject {
 }
 object DeleteInstanceRequest {
   
-  @scala.inline
-  def apply(instanceName: ResourceName): DeleteInstanceRequest = {
+  inline def apply(instanceName: ResourceName): DeleteInstanceRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInstanceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteInstanceRequestMutableBuilder[Self <: DeleteInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setForceDeleteAddOns(value: Boolean): Self = StObject.set(x, "forceDeleteAddOns", value.asInstanceOf[js.Any])
+    inline def setForceDeleteAddOns(value: Boolean): Self = StObject.set(x, "forceDeleteAddOns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDeleteAddOnsUndefined: Self = StObject.set(x, "forceDeleteAddOns", js.undefined)
+    inline def setForceDeleteAddOnsUndefined: Self = StObject.set(x, "forceDeleteAddOns", js.undefined)
     
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }
 }

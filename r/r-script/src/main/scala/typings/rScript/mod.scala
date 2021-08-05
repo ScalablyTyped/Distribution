@@ -21,8 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(scriptPath: String): R = ^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any]).asInstanceOf[R]
+  inline def apply(scriptPath: String): R = ^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any]).asInstanceOf[R]
   
   @JSImport("r-script", JSImport.Namespace)
   @js.native
@@ -60,92 +59,64 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAuto_unbox(value: Boolean): Self = StObject.set(x, "auto_unbox", value.asInstanceOf[js.Any])
+      inline def setAuto_unbox(value: Boolean): Self = StObject.set(x, "auto_unbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuto_unboxUndefined: Self = StObject.set(x, "auto_unbox", js.undefined)
+      inline def setAuto_unboxUndefined: Self = StObject.set(x, "auto_unbox", js.undefined)
       
-      @scala.inline
-      def setComplex(value: string | list): Self = StObject.set(x, "complex", value.asInstanceOf[js.Any])
+      inline def setComplex(value: string | list): Self = StObject.set(x, "complex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplexUndefined: Self = StObject.set(x, "complex", js.undefined)
+      inline def setComplexUndefined: Self = StObject.set(x, "complex", js.undefined)
       
-      @scala.inline
-      def setDataframe(value: rows | colums | values): Self = StObject.set(x, "dataframe", value.asInstanceOf[js.Any])
+      inline def setDataframe(value: rows | colums | values): Self = StObject.set(x, "dataframe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataframeUndefined: Self = StObject.set(x, "dataframe", js.undefined)
+      inline def setDataframeUndefined: Self = StObject.set(x, "dataframe", js.undefined)
       
-      @scala.inline
-      def setDate(value: ISO8601 | epoch): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+      inline def setDate(value: ISO8601 | epoch): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
       
-      @scala.inline
-      def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+      inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+      inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
       
-      @scala.inline
-      def setFactor(value: string | integer): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+      inline def setFactor(value: string | integer): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+      inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
       
-      @scala.inline
-      def setMatrix(value: rowmajor | columnmajor): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+      inline def setMatrix(value: rowmajor | columnmajor): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
+      inline def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
       
-      @scala.inline
-      def setNa(value: `null` | string): Self = StObject.set(x, "na", value.asInstanceOf[js.Any])
+      inline def setNa(value: `null` | string): Self = StObject.set(x, "na", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNaUndefined: Self = StObject.set(x, "na", js.undefined)
+      inline def setNaUndefined: Self = StObject.set(x, "na", js.undefined)
       
-      @scala.inline
-      def setNull(value: list | `null`): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
+      inline def setNull(value: list | `null`): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullUndefined: Self = StObject.set(x, "null", js.undefined)
+      inline def setNullUndefined: Self = StObject.set(x, "null", js.undefined)
       
-      @scala.inline
-      def setPOSIXt(value: string | ISO8601 | epoch | mongo): Self = StObject.set(x, "POSIXt", value.asInstanceOf[js.Any])
+      inline def setPOSIXt(value: string | ISO8601 | epoch | mongo): Self = StObject.set(x, "POSIXt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOSIXtUndefined: Self = StObject.set(x, "POSIXt", js.undefined)
+      inline def setPOSIXtUndefined: Self = StObject.set(x, "POSIXt", js.undefined)
       
-      @scala.inline
-      def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
+      inline def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
+      inline def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
       
-      @scala.inline
-      def setRaw(value: base64 | hex | mongo): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: base64 | hex | mongo): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     }
   }
   

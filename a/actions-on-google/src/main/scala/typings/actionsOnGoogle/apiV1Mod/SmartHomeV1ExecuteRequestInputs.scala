@@ -12,19 +12,15 @@ trait SmartHomeV1ExecuteRequestInputs extends StObject {
 }
 object SmartHomeV1ExecuteRequestInputs {
   
-  @scala.inline
-  def apply(intent: SmartHomeV1Intents, payload: SmartHomeV1ExecuteRequestPayload): SmartHomeV1ExecuteRequestInputs = {
+  inline def apply(intent: SmartHomeV1Intents, payload: SmartHomeV1ExecuteRequestPayload): SmartHomeV1ExecuteRequestInputs = {
     val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1ExecuteRequestInputs]
   }
   
-  @scala.inline
-  implicit class SmartHomeV1ExecuteRequestInputsMutableBuilder[Self <: SmartHomeV1ExecuteRequestInputs] (val x: Self) extends AnyVal {
+  extension [Self <: SmartHomeV1ExecuteRequestInputs](x: Self) {
     
-    @scala.inline
-    def setIntent(value: SmartHomeV1Intents): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: SmartHomeV1Intents): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: SmartHomeV1ExecuteRequestPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: SmartHomeV1ExecuteRequestPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
   }
 }

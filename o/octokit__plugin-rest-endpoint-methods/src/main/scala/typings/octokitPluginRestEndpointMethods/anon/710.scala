@@ -20,8 +20,7 @@ trait `710` extends StObject {
 }
 object `710` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[GitignoreGetAllTemplatesEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[GitignoreGetAllTemplatesResponseData]
   ): `710` = {
@@ -29,13 +28,10 @@ object `710` {
     __obj.asInstanceOf[`710`]
   }
   
-  @scala.inline
-  implicit class `710MutableBuilder`[Self <: `710`] (val x: Self) extends AnyVal {
+  extension [Self <: `710`](x: Self) {
     
-    @scala.inline
-    def setParameters(value: RequestParameters & (Omit[GitignoreGetAllTemplatesEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: RequestParameters & (Omit[GitignoreGetAllTemplatesEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[GitignoreGetAllTemplatesResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[GitignoreGetAllTemplatesResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

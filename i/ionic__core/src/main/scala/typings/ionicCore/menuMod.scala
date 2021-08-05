@@ -18,19 +18,19 @@ object menuMod {
        with ComponentInterface
        with MenuI {
     
-    var _isActive: js.Any = js.native
+    /* private */ var _isActive: js.Any = js.native
     
-    var afterAnimation: js.Any = js.native
+    /* private */ var afterAnimation: js.Any = js.native
     
-    var animation: js.Any = js.native
+    /* private */ var animation: js.Any = js.native
     
-    var beforeAnimation: js.Any = js.native
+    /* private */ var beforeAnimation: js.Any = js.native
     
-    var blocker: js.Any = js.native
+    /* private */ var blocker: js.Any = js.native
     
-    var canStart: js.Any = js.native
+    /* private */ var canStart: js.Any = js.native
     
-    var canSwipe: js.Any = js.native
+    /* private */ var canSwipe: js.Any = js.native
     
     @JSName("componentDidLoad")
     def componentDidLoad_MMenu(): js.Promise[Unit] = js.native
@@ -48,9 +48,9 @@ object menuMod {
     @JSName("disconnectedCallback")
     def disconnectedCallback_MMenu(): Unit = js.native
     
-    var forceClosing: js.Any = js.native
+    /* private */ var forceClosing: js.Any = js.native
     
-    var gesture: js.Any = js.native
+    /* private */ var gesture: js.Any = js.native
     
     /**
       * Emitted when the menu is closed.
@@ -66,7 +66,7 @@ object menuMod {
       * Emitted when the menu state is changed.
       * @internal
       */
-    var ionMenuChange: EventEmitter[MenuChangeEventDetail] = js.native
+    /* protected */ var ionMenuChange: EventEmitter[MenuChangeEventDetail] = js.native
     
     /**
       * Emitted when the menu is about to be closed.
@@ -85,9 +85,9 @@ object menuMod {
     
     var isPaneVisible: Boolean = js.native
     
-    var lastOnEnd: js.Any = js.native
+    /* private */ var lastOnEnd: js.Any = js.native
     
-    var loadAnimation: js.Any = js.native
+    /* private */ var loadAnimation: js.Any = js.native
     
     /**
       * The edge threshold for dragging the menu open.
@@ -97,22 +97,22 @@ object menuMod {
     
     def onBackdropClick(ev: js.Any): Unit = js.native
     
-    var onEnd: js.Any = js.native
+    /* private */ var onEnd: js.Any = js.native
     
-    var onMove: js.Any = js.native
+    /* private */ var onMove: js.Any = js.native
     
     def onSplitPaneChanged(ev: CustomEvent[js.Any]): Unit = js.native
     
-    var onStart: js.Any = js.native
+    /* private */ var onStart: js.Any = js.native
     
-    var onWillStart: js.Any = js.native
+    /* private */ var onWillStart: js.Any = js.native
     
     @JSName("render")
     def render_MMenu(): js.Any = js.native
     
     /* protected */ def sideChanged(): Unit = js.native
     
-    var startAnimation: js.Any = js.native
+    /* private */ var startAnimation: js.Any = js.native
     
     /**
       * If `true`, swiping the menu is enabled.
@@ -130,6 +130,6 @@ object menuMod {
     def typeChanged(`type`: String): Unit = js.native
     def typeChanged(`type`: String, oldType: String): Unit = js.native
     
-    var updateState: js.Any = js.native
+    /* private */ var updateState: js.Any = js.native
   }
 }

@@ -14,28 +14,21 @@ trait SenderApplication extends StObject {
 }
 object SenderApplication {
   
-  @scala.inline
-  def apply(platform: SenderPlatform): SenderApplication = {
+  inline def apply(platform: SenderPlatform): SenderApplication = {
     val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any], packageId = null, url = null)
     __obj.asInstanceOf[SenderApplication]
   }
   
-  @scala.inline
-  implicit class SenderApplicationMutableBuilder[Self <: SenderApplication] (val x: Self) extends AnyVal {
+  extension [Self <: SenderApplication](x: Self) {
     
-    @scala.inline
-    def setPackageId(value: String): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
+    inline def setPackageId(value: String): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageIdNull: Self = StObject.set(x, "packageId", null)
+    inline def setPackageIdNull: Self = StObject.set(x, "packageId", null)
     
-    @scala.inline
-    def setPlatform(value: SenderPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: SenderPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlNull: Self = StObject.set(x, "url", null)
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
   }
 }

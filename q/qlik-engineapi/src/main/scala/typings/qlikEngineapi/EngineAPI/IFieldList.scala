@@ -16,19 +16,15 @@ trait IFieldList extends StObject {
 }
 object IFieldList {
   
-  @scala.inline
-  def apply(qItems: js.Array[INxFieldDescription]): IFieldList = {
+  inline def apply(qItems: js.Array[INxFieldDescription]): IFieldList = {
     val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldList]
   }
   
-  @scala.inline
-  implicit class IFieldListMutableBuilder[Self <: IFieldList] (val x: Self) extends AnyVal {
+  extension [Self <: IFieldList](x: Self) {
     
-    @scala.inline
-    def setQItems(value: js.Array[INxFieldDescription]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
+    inline def setQItems(value: js.Array[INxFieldDescription]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQItemsVarargs(value: INxFieldDescription*): Self = StObject.set(x, "qItems", js.Array(value :_*))
+    inline def setQItemsVarargs(value: INxFieldDescription*): Self = StObject.set(x, "qItems", js.Array(value :_*))
   }
 }

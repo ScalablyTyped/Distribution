@@ -14,31 +14,23 @@ trait ResponseHeaderType extends StObject {
 }
 object ResponseHeaderType {
   
-  @scala.inline
-  def apply(): ResponseHeaderType = {
+  inline def apply(): ResponseHeaderType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseHeaderType]
   }
   
-  @scala.inline
-  implicit class ResponseHeaderTypeMutableBuilder[Self <: ResponseHeaderType] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseHeaderType](x: Self) {
     
-    @scala.inline
-    def `setCache-control`(value: String): Self = StObject.set(x, "cache-control", value.asInstanceOf[js.Any])
+    inline def `setCache-control`(value: String): Self = StObject.set(x, "cache-control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCache-controlUndefined`: Self = StObject.set(x, "cache-control", js.undefined)
+    inline def `setCache-controlUndefined`: Self = StObject.set(x, "cache-control", js.undefined)
     
-    @scala.inline
-    def `setContent-disposition`(value: String): Self = StObject.set(x, "content-disposition", value.asInstanceOf[js.Any])
+    inline def `setContent-disposition`(value: String): Self = StObject.set(x, "content-disposition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setContent-dispositionUndefined`: Self = StObject.set(x, "content-disposition", js.undefined)
+    inline def `setContent-dispositionUndefined`: Self = StObject.set(x, "content-disposition", js.undefined)
     
-    @scala.inline
-    def `setContent-type`(value: String): Self = StObject.set(x, "content-type", value.asInstanceOf[js.Any])
+    inline def `setContent-type`(value: String): Self = StObject.set(x, "content-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setContent-typeUndefined`: Self = StObject.set(x, "content-type", js.undefined)
+    inline def `setContent-typeUndefined`: Self = StObject.set(x, "content-type", js.undefined)
   }
 }

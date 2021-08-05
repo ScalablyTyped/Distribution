@@ -13,19 +13,15 @@ trait PlayParameters extends StObject {
 }
 object PlayParameters {
   
-  @scala.inline
-  def apply(id: String, kind: String): PlayParameters = {
+  inline def apply(id: String, kind: String): PlayParameters = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayParameters]
   }
   
-  @scala.inline
-  implicit class PlayParametersMutableBuilder[Self <: PlayParameters] (val x: Self) extends AnyVal {
+  extension [Self <: PlayParameters](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

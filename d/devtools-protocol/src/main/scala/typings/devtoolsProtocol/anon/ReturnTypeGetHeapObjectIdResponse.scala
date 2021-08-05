@@ -14,22 +14,17 @@ trait ReturnTypeGetHeapObjectIdResponse extends StObject {
 }
 object ReturnTypeGetHeapObjectIdResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[GetHeapObjectIdRequest], returnType: GetHeapObjectIdResponse): ReturnTypeGetHeapObjectIdResponse = {
+  inline def apply(paramsType: js.Array[GetHeapObjectIdRequest], returnType: GetHeapObjectIdResponse): ReturnTypeGetHeapObjectIdResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetHeapObjectIdResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetHeapObjectIdResponseMutableBuilder[Self <: ReturnTypeGetHeapObjectIdResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetHeapObjectIdResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetHeapObjectIdRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetHeapObjectIdRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetHeapObjectIdRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetHeapObjectIdRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetHeapObjectIdResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetHeapObjectIdResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

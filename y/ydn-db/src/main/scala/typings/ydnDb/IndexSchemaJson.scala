@@ -18,43 +18,31 @@ trait IndexSchemaJson extends StObject {
 }
 object IndexSchemaJson {
   
-  @scala.inline
-  def apply(keyPath: String | js.Array[String]): IndexSchemaJson = {
+  inline def apply(keyPath: String | js.Array[String]): IndexSchemaJson = {
     val __obj = js.Dynamic.literal(keyPath = keyPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexSchemaJson]
   }
   
-  @scala.inline
-  implicit class IndexSchemaJsonMutableBuilder[Self <: IndexSchemaJson] (val x: Self) extends AnyVal {
+  extension [Self <: IndexSchemaJson](x: Self) {
     
-    @scala.inline
-    def setKeyPath(value: String | js.Array[String]): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
+    inline def setKeyPath(value: String | js.Array[String]): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPathVarargs(value: String*): Self = StObject.set(x, "keyPath", js.Array(value :_*))
+    inline def setKeyPathVarargs(value: String*): Self = StObject.set(x, "keyPath", js.Array(value :_*))
     
-    @scala.inline
-    def setMultiEntry(value: Boolean): Self = StObject.set(x, "multiEntry", value.asInstanceOf[js.Any])
+    inline def setMultiEntry(value: Boolean): Self = StObject.set(x, "multiEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiEntryUndefined: Self = StObject.set(x, "multiEntry", js.undefined)
+    inline def setMultiEntryUndefined: Self = StObject.set(x, "multiEntry", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+    inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

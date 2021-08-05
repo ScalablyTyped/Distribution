@@ -24,8 +24,7 @@ trait DatabaseReplicateResponse extends StObject {
 }
 object DatabaseReplicateResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     history: js.Array[DatabaseReplicationHistoryItem],
     ok: Boolean,
     replication_id_version: Double,
@@ -36,25 +35,18 @@ object DatabaseReplicateResponse {
     __obj.asInstanceOf[DatabaseReplicateResponse]
   }
   
-  @scala.inline
-  implicit class DatabaseReplicateResponseMutableBuilder[Self <: DatabaseReplicateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseReplicateResponse](x: Self) {
     
-    @scala.inline
-    def setHistory(value: js.Array[DatabaseReplicationHistoryItem]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: js.Array[DatabaseReplicationHistoryItem]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryVarargs(value: DatabaseReplicationHistoryItem*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: DatabaseReplicationHistoryItem*): Self = StObject.set(x, "history", js.Array(value :_*))
     
-    @scala.inline
-    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplication_id_version(value: Double): Self = StObject.set(x, "replication_id_version", value.asInstanceOf[js.Any])
+    inline def setReplication_id_version(value: Double): Self = StObject.set(x, "replication_id_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession_id(value: String): Self = StObject.set(x, "session_id", value.asInstanceOf[js.Any])
+    inline def setSession_id(value: String): Self = StObject.set(x, "session_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_last_seq(value: Double): Self = StObject.set(x, "source_last_seq", value.asInstanceOf[js.Any])
+    inline def setSource_last_seq(value: Double): Self = StObject.set(x, "source_last_seq", value.asInstanceOf[js.Any])
   }
 }

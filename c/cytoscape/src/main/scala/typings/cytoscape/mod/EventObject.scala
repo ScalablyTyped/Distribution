@@ -26,8 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object EventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cy: Core,
     isDefaultPrevented: () => Boolean,
     isImmediatePropagationStopped: () => Boolean,
@@ -49,10 +48,8 @@ object EventObject {
     __obj.asInstanceOf[EventObject]
   }
   
-  @scala.inline
-  implicit class EventObjectMutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
+  extension [Self <: EventObject](x: Self) {
     
-    @scala.inline
-    def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
   }
 }

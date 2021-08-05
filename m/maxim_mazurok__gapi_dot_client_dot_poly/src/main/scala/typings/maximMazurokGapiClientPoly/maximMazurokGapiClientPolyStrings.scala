@@ -8,11 +8,9 @@ object maximMazurokGapiClientPolyStrings {
   
   @js.native
   sealed trait poly extends StObject
-  @scala.inline
-  def poly: poly = "poly".asInstanceOf[poly]
+  inline def poly: poly = "poly".asInstanceOf[poly]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

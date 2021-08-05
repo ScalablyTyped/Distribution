@@ -23,43 +23,31 @@ trait CoordRendering extends StObject {
 }
 object CoordRendering {
   
-  @scala.inline
-  def apply(): CoordRendering = {
+  inline def apply(): CoordRendering = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoordRendering]
   }
   
-  @scala.inline
-  implicit class CoordRenderingMutableBuilder[Self <: CoordRendering] (val x: Self) extends AnyVal {
+  extension [Self <: CoordRendering](x: Self) {
     
-    @scala.inline
-    def setCoordRendering(value: shortestPath | straightPath): Self = StObject.set(x, "coordRendering", value.asInstanceOf[js.Any])
+    inline def setCoordRendering(value: shortestPath | straightPath): Self = StObject.set(x, "coordRendering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordRenderingUndefined: Self = StObject.set(x, "coordRendering", js.undefined)
+    inline def setCoordRenderingUndefined: Self = StObject.set(x, "coordRendering", js.undefined)
     
-    @scala.inline
-    def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
+    inline def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
+    inline def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
     
-    @scala.inline
-    def setPixelRendering(value: jumpy | static): Self = StObject.set(x, "pixelRendering", value.asInstanceOf[js.Any])
+    inline def setPixelRendering(value: jumpy | static): Self = StObject.set(x, "pixelRendering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelRenderingUndefined: Self = StObject.set(x, "pixelRendering", js.undefined)
+    inline def setPixelRenderingUndefined: Self = StObject.set(x, "pixelRendering", js.undefined)
     
-    @scala.inline
-    def setProjection(value: IProjection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: IProjection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setSimplification(value: Boolean): Self = StObject.set(x, "simplification", value.asInstanceOf[js.Any])
+    inline def setSimplification(value: Boolean): Self = StObject.set(x, "simplification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimplificationUndefined: Self = StObject.set(x, "simplification", js.undefined)
+    inline def setSimplificationUndefined: Self = StObject.set(x, "simplification", js.undefined)
   }
 }

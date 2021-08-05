@@ -18,19 +18,15 @@ trait UpdateConfigurationSetSendingEnabledRequest extends StObject {
 }
 object UpdateConfigurationSetSendingEnabledRequest {
   
-  @scala.inline
-  def apply(ConfigurationSetName: ConfigurationSetName, Enabled: Enabled): UpdateConfigurationSetSendingEnabledRequest = {
+  inline def apply(ConfigurationSetName: ConfigurationSetName, Enabled: Enabled): UpdateConfigurationSetSendingEnabledRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConfigurationSetSendingEnabledRequest]
   }
   
-  @scala.inline
-  implicit class UpdateConfigurationSetSendingEnabledRequestMutableBuilder[Self <: UpdateConfigurationSetSendingEnabledRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConfigurationSetSendingEnabledRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
   }
 }

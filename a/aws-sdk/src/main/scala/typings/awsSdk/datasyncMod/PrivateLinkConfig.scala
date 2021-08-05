@@ -28,43 +28,31 @@ trait PrivateLinkConfig extends StObject {
 }
 object PrivateLinkConfig {
   
-  @scala.inline
-  def apply(): PrivateLinkConfig = {
+  inline def apply(): PrivateLinkConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrivateLinkConfig]
   }
   
-  @scala.inline
-  implicit class PrivateLinkConfigMutableBuilder[Self <: PrivateLinkConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PrivateLinkConfig](x: Self) {
     
-    @scala.inline
-    def setPrivateLinkEndpoint(value: Endpoint): Self = StObject.set(x, "PrivateLinkEndpoint", value.asInstanceOf[js.Any])
+    inline def setPrivateLinkEndpoint(value: Endpoint): Self = StObject.set(x, "PrivateLinkEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateLinkEndpointUndefined: Self = StObject.set(x, "PrivateLinkEndpoint", js.undefined)
+    inline def setPrivateLinkEndpointUndefined: Self = StObject.set(x, "PrivateLinkEndpoint", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupArns(value: PLSecurityGroupArnList): Self = StObject.set(x, "SecurityGroupArns", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupArns(value: PLSecurityGroupArnList): Self = StObject.set(x, "SecurityGroupArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupArnsUndefined: Self = StObject.set(x, "SecurityGroupArns", js.undefined)
+    inline def setSecurityGroupArnsUndefined: Self = StObject.set(x, "SecurityGroupArns", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = StObject.set(x, "SecurityGroupArns", js.Array(value :_*))
+    inline def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = StObject.set(x, "SecurityGroupArns", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetArns(value: PLSubnetArnList): Self = StObject.set(x, "SubnetArns", value.asInstanceOf[js.Any])
+    inline def setSubnetArns(value: PLSubnetArnList): Self = StObject.set(x, "SubnetArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetArnsUndefined: Self = StObject.set(x, "SubnetArns", js.undefined)
+    inline def setSubnetArnsUndefined: Self = StObject.set(x, "SubnetArns", js.undefined)
     
-    @scala.inline
-    def setSubnetArnsVarargs(value: Ec2SubnetArn*): Self = StObject.set(x, "SubnetArns", js.Array(value :_*))
+    inline def setSubnetArnsVarargs(value: Ec2SubnetArn*): Self = StObject.set(x, "SubnetArns", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcEndpointId(value: VpcEndpointId): Self = StObject.set(x, "VpcEndpointId", value.asInstanceOf[js.Any])
+    inline def setVpcEndpointId(value: VpcEndpointId): Self = StObject.set(x, "VpcEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcEndpointIdUndefined: Self = StObject.set(x, "VpcEndpointId", js.undefined)
+    inline def setVpcEndpointIdUndefined: Self = StObject.set(x, "VpcEndpointId", js.undefined)
   }
 }

@@ -22,6 +22,5 @@ object DropdownBase {
   @JSImport("office-ui-fabric-react", "DropdownBase.defaultProps")
   @js.native
   def defaultProps: Options = js.native
-  @scala.inline
-  def defaultProps_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

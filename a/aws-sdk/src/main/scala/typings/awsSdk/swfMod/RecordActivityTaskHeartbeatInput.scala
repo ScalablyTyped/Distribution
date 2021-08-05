@@ -18,22 +18,17 @@ trait RecordActivityTaskHeartbeatInput extends StObject {
 }
 object RecordActivityTaskHeartbeatInput {
   
-  @scala.inline
-  def apply(taskToken: TaskToken): RecordActivityTaskHeartbeatInput = {
+  inline def apply(taskToken: TaskToken): RecordActivityTaskHeartbeatInput = {
     val __obj = js.Dynamic.literal(taskToken = taskToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordActivityTaskHeartbeatInput]
   }
   
-  @scala.inline
-  implicit class RecordActivityTaskHeartbeatInputMutableBuilder[Self <: RecordActivityTaskHeartbeatInput] (val x: Self) extends AnyVal {
+  extension [Self <: RecordActivityTaskHeartbeatInput](x: Self) {
     
-    @scala.inline
-    def setDetails(value: LimitedData): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: LimitedData): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
+    inline def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
   }
 }

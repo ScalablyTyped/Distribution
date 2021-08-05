@@ -15,25 +15,19 @@ trait OnError extends StObject {
 }
 object OnError {
   
-  @scala.inline
-  def apply(): OnError = {
+  inline def apply(): OnError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnError]
   }
   
-  @scala.inline
-  implicit class OnErrorMutableBuilder[Self <: OnError] (val x: Self) extends AnyVal {
+  extension [Self <: OnError](x: Self) {
     
-    @scala.inline
-    def setOnError(value: (/* knuddelAmount */ KnuddelAmount, /* reason */ String, /* message */ String) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
+    inline def setOnError(value: (/* knuddelAmount */ KnuddelAmount, /* reason */ String, /* message */ String) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnSuccess(value: (/* knuddelAmount */ KnuddelAmount, /* reason */ String) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
+    inline def setOnSuccess(value: (/* knuddelAmount */ KnuddelAmount, /* reason */ String) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
   }
 }

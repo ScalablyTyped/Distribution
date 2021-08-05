@@ -16,20 +16,16 @@ object proxy {
   }
   object IClientProxy {
     
-    @scala.inline
-    def apply(): IClientProxy = {
+    inline def apply(): IClientProxy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IClientProxy]
     }
     
-    @scala.inline
-    implicit class IClientProxyMutableBuilder[Self <: IClientProxy] (val x: Self) extends AnyVal {
+    extension [Self <: IClientProxy](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+      inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     }
   }
 }

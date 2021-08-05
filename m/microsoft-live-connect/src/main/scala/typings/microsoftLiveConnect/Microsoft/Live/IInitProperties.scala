@@ -77,55 +77,39 @@ trait IInitProperties extends StObject {
 }
 object IInitProperties {
   
-  @scala.inline
-  def apply(): IInitProperties = {
+  inline def apply(): IInitProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IInitProperties]
   }
   
-  @scala.inline
-  implicit class IInitPropertiesMutableBuilder[Self <: IInitProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IInitProperties](x: Self) {
     
-    @scala.inline
-    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
+    inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
-    @scala.inline
-    def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
-    @scala.inline
-    def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
+    inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
+    inline def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
     
-    @scala.inline
-    def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+    inline def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
+    inline def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
     
-    @scala.inline
-    def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setSecure_cookie(value: String): Self = StObject.set(x, "secure_cookie", value.asInstanceOf[js.Any])
+    inline def setSecure_cookie(value: String): Self = StObject.set(x, "secure_cookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecure_cookieUndefined: Self = StObject.set(x, "secure_cookie", js.undefined)
+    inline def setSecure_cookieUndefined: Self = StObject.set(x, "secure_cookie", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.DialogSheetView")
 @js.native
-class DialogSheetView protected ()
+/* private */ class DialogSheetView ()
   extends StObject
      with typings.activexExcel.Excel.DialogSheetView {
   
@@ -17,7 +17,7 @@ class DialogSheetView protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.DialogSheetView_typekey")
   var ExcelDotDialogSheetView_typekey: typings.activexExcel.Excel.DialogSheetView = js.native
   

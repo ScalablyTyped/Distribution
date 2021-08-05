@@ -18,28 +18,21 @@ trait ListDomainConfigurationsResponse extends StObject {
 }
 object ListDomainConfigurationsResponse {
   
-  @scala.inline
-  def apply(): ListDomainConfigurationsResponse = {
+  inline def apply(): ListDomainConfigurationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDomainConfigurationsResponse]
   }
   
-  @scala.inline
-  implicit class ListDomainConfigurationsResponseMutableBuilder[Self <: ListDomainConfigurationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDomainConfigurationsResponse](x: Self) {
     
-    @scala.inline
-    def setDomainConfigurations(value: DomainConfigurations): Self = StObject.set(x, "domainConfigurations", value.asInstanceOf[js.Any])
+    inline def setDomainConfigurations(value: DomainConfigurations): Self = StObject.set(x, "domainConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainConfigurationsUndefined: Self = StObject.set(x, "domainConfigurations", js.undefined)
+    inline def setDomainConfigurationsUndefined: Self = StObject.set(x, "domainConfigurations", js.undefined)
     
-    @scala.inline
-    def setDomainConfigurationsVarargs(value: DomainConfigurationSummary*): Self = StObject.set(x, "domainConfigurations", js.Array(value :_*))
+    inline def setDomainConfigurationsVarargs(value: DomainConfigurationSummary*): Self = StObject.set(x, "domainConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "nextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "nextMarker", js.undefined)
   }
 }

@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object OlJournalRecipientType {
   
-  @scala.inline
-  def olAssociatedContact: `1` = 1.asInstanceOf[`1`]
+  inline def olAssociatedContact: `1` = 1.asInstanceOf[`1`]
 }

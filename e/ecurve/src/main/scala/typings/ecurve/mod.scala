@@ -82,13 +82,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def decodeFrom(curve: Curve, buffer: Buffer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFrom")(curve.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def decodeFrom(curve: Curve, buffer: Buffer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFrom")(curve.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def fromAffine(curve: Curve, x: typings.bigi.mod.^, y: typings.bigi.mod.^): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAffine")(curve.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Point]
+    inline def fromAffine(curve: Curve, x: typings.bigi.mod.^, y: typings.bigi.mod.^): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAffine")(curve.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Point]
   }
   
-  @scala.inline
-  def getCurveByName(name: String): Curve = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurveByName")(name.asInstanceOf[js.Any]).asInstanceOf[Curve]
+  inline def getCurveByName(name: String): Curve = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurveByName")(name.asInstanceOf[js.Any]).asInstanceOf[Curve]
 }

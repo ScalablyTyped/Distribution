@@ -22,20 +22,16 @@ object typesMod {
   }
   object ReaderOptions {
     
-    @scala.inline
-    def apply(): ReaderOptions = {
+    inline def apply(): ReaderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReaderOptions]
     }
     
-    @scala.inline
-    implicit class ReaderOptionsMutableBuilder[Self <: ReaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReaderOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: Cache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Cache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     }
   }
 }

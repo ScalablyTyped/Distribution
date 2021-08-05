@@ -62,70 +62,49 @@ trait ParamsResourceJobsList
 }
 object ParamsResourceJobsList {
   
-  @scala.inline
-  def apply(): ParamsResourceJobsList = {
+  inline def apply(): ParamsResourceJobsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceJobsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceJobsListMutableBuilder[Self <: ParamsResourceJobsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceJobsList](x: Self) {
     
-    @scala.inline
-    def setAllUsers(value: Boolean): Self = StObject.set(x, "allUsers", value.asInstanceOf[js.Any])
+    inline def setAllUsers(value: Boolean): Self = StObject.set(x, "allUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllUsersUndefined: Self = StObject.set(x, "allUsers", js.undefined)
+    inline def setAllUsersUndefined: Self = StObject.set(x, "allUsers", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setMaxCreationTime(value: String): Self = StObject.set(x, "maxCreationTime", value.asInstanceOf[js.Any])
+    inline def setMaxCreationTime(value: String): Self = StObject.set(x, "maxCreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCreationTimeUndefined: Self = StObject.set(x, "maxCreationTime", js.undefined)
+    inline def setMaxCreationTimeUndefined: Self = StObject.set(x, "maxCreationTime", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setMinCreationTime(value: String): Self = StObject.set(x, "minCreationTime", value.asInstanceOf[js.Any])
+    inline def setMinCreationTime(value: String): Self = StObject.set(x, "minCreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCreationTimeUndefined: Self = StObject.set(x, "minCreationTime", js.undefined)
+    inline def setMinCreationTimeUndefined: Self = StObject.set(x, "minCreationTime", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setStateFilter(value: js.Array[String]): Self = StObject.set(x, "stateFilter", value.asInstanceOf[js.Any])
+    inline def setStateFilter(value: js.Array[String]): Self = StObject.set(x, "stateFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateFilterUndefined: Self = StObject.set(x, "stateFilter", js.undefined)
+    inline def setStateFilterUndefined: Self = StObject.set(x, "stateFilter", js.undefined)
     
-    @scala.inline
-    def setStateFilterVarargs(value: String*): Self = StObject.set(x, "stateFilter", js.Array(value :_*))
+    inline def setStateFilterVarargs(value: String*): Self = StObject.set(x, "stateFilter", js.Array(value :_*))
   }
 }

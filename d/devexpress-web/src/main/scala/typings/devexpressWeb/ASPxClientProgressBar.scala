@@ -69,8 +69,7 @@ trait ASPxClientProgressBar
 }
 object ASPxClientProgressBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetCaption: () => String,
     GetClientVisible: () => Boolean,
@@ -107,37 +106,26 @@ object ASPxClientProgressBar {
     __obj.asInstanceOf[ASPxClientProgressBar]
   }
   
-  @scala.inline
-  implicit class ASPxClientProgressBarMutableBuilder[Self <: ASPxClientProgressBar] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientProgressBar](x: Self) {
     
-    @scala.inline
-    def setGetDisplayText(value: () => String): Self = StObject.set(x, "GetDisplayText", js.Any.fromFunction0(value))
+    inline def setGetDisplayText(value: () => String): Self = StObject.set(x, "GetDisplayText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaximum(value: () => Double): Self = StObject.set(x, "GetMaximum", js.Any.fromFunction0(value))
+    inline def setGetMaximum(value: () => Double): Self = StObject.set(x, "GetMaximum", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinimum(value: () => Double): Self = StObject.set(x, "GetMinimum", js.Any.fromFunction0(value))
+    inline def setGetMinimum(value: () => Double): Self = StObject.set(x, "GetMinimum", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPercent(value: () => Double): Self = StObject.set(x, "GetPercent", js.Any.fromFunction0(value))
+    inline def setGetPercent(value: () => Double): Self = StObject.set(x, "GetPercent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosition(value: () => Double): Self = StObject.set(x, "GetPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Double): Self = StObject.set(x, "GetPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCustomDisplayFormat(value: String => Unit): Self = StObject.set(x, "SetCustomDisplayFormat", js.Any.fromFunction1(value))
+    inline def setSetCustomDisplayFormat(value: String => Unit): Self = StObject.set(x, "SetCustomDisplayFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaximum(value: Double => Unit): Self = StObject.set(x, "SetMaximum", js.Any.fromFunction1(value))
+    inline def setSetMaximum(value: Double => Unit): Self = StObject.set(x, "SetMaximum", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinMaxValues(value: (Double, Double) => Unit): Self = StObject.set(x, "SetMinMaxValues", js.Any.fromFunction2(value))
+    inline def setSetMinMaxValues(value: (Double, Double) => Unit): Self = StObject.set(x, "SetMinMaxValues", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetMinimum(value: Double => Unit): Self = StObject.set(x, "SetMinimum", js.Any.fromFunction1(value))
+    inline def setSetMinimum(value: Double => Unit): Self = StObject.set(x, "SetMinimum", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPosition(value: Double => Unit): Self = StObject.set(x, "SetPosition", js.Any.fromFunction1(value))
+    inline def setSetPosition(value: Double => Unit): Self = StObject.set(x, "SetPosition", js.Any.fromFunction1(value))
   }
 }

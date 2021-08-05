@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XRSessionMode extends StObject
 object XRSessionMode {
   
-  @scala.inline
-  def `immersive-ar`: typings.three.threeStrings.`immersive-ar` = "immersive-ar".asInstanceOf[typings.three.threeStrings.`immersive-ar`]
+  inline def `immersive-ar`: typings.three.threeStrings.`immersive-ar` = "immersive-ar".asInstanceOf[typings.three.threeStrings.`immersive-ar`]
   
-  @scala.inline
-  def `immersive-vr`: typings.three.threeStrings.`immersive-vr` = "immersive-vr".asInstanceOf[typings.three.threeStrings.`immersive-vr`]
+  inline def `immersive-vr`: typings.three.threeStrings.`immersive-vr` = "immersive-vr".asInstanceOf[typings.three.threeStrings.`immersive-vr`]
   
-  @scala.inline
-  def `inline`: typings.three.threeStrings.`inline` = "inline".asInstanceOf[typings.three.threeStrings.`inline`]
+  inline def `inline`: typings.three.threeStrings.`inline` = "inline".asInstanceOf[typings.three.threeStrings.`inline`]
 }

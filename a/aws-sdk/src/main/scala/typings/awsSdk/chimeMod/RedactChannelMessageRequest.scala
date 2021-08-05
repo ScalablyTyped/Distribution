@@ -18,19 +18,15 @@ trait RedactChannelMessageRequest extends StObject {
 }
 object RedactChannelMessageRequest {
   
-  @scala.inline
-  def apply(ChannelArn: ChimeArn, MessageId: MessageId): RedactChannelMessageRequest = {
+  inline def apply(ChannelArn: ChimeArn, MessageId: MessageId): RedactChannelMessageRequest = {
     val __obj = js.Dynamic.literal(ChannelArn = ChannelArn.asInstanceOf[js.Any], MessageId = MessageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedactChannelMessageRequest]
   }
   
-  @scala.inline
-  implicit class RedactChannelMessageRequestMutableBuilder[Self <: RedactChannelMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RedactChannelMessageRequest](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
   }
 }

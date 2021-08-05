@@ -33,37 +33,27 @@ trait SchemaStreamLocation extends StObject {
 }
 object SchemaStreamLocation {
   
-  @scala.inline
-  def apply(): SchemaStreamLocation = {
+  inline def apply(): SchemaStreamLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStreamLocation]
   }
   
-  @scala.inline
-  implicit class SchemaStreamLocationMutableBuilder[Self <: SchemaStreamLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStreamLocation](x: Self) {
     
-    @scala.inline
-    def setCustomSourceLocation(value: SchemaCustomSourceLocation): Self = StObject.set(x, "customSourceLocation", value.asInstanceOf[js.Any])
+    inline def setCustomSourceLocation(value: SchemaCustomSourceLocation): Self = StObject.set(x, "customSourceLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSourceLocationUndefined: Self = StObject.set(x, "customSourceLocation", js.undefined)
+    inline def setCustomSourceLocationUndefined: Self = StObject.set(x, "customSourceLocation", js.undefined)
     
-    @scala.inline
-    def setPubsubLocation(value: SchemaPubsubLocation): Self = StObject.set(x, "pubsubLocation", value.asInstanceOf[js.Any])
+    inline def setPubsubLocation(value: SchemaPubsubLocation): Self = StObject.set(x, "pubsubLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsubLocationUndefined: Self = StObject.set(x, "pubsubLocation", js.undefined)
+    inline def setPubsubLocationUndefined: Self = StObject.set(x, "pubsubLocation", js.undefined)
     
-    @scala.inline
-    def setSideInputLocation(value: SchemaStreamingSideInputLocation): Self = StObject.set(x, "sideInputLocation", value.asInstanceOf[js.Any])
+    inline def setSideInputLocation(value: SchemaStreamingSideInputLocation): Self = StObject.set(x, "sideInputLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideInputLocationUndefined: Self = StObject.set(x, "sideInputLocation", js.undefined)
+    inline def setSideInputLocationUndefined: Self = StObject.set(x, "sideInputLocation", js.undefined)
     
-    @scala.inline
-    def setStreamingStageLocation(value: SchemaStreamingStageLocation): Self = StObject.set(x, "streamingStageLocation", value.asInstanceOf[js.Any])
+    inline def setStreamingStageLocation(value: SchemaStreamingStageLocation): Self = StObject.set(x, "streamingStageLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingStageLocationUndefined: Self = StObject.set(x, "streamingStageLocation", js.undefined)
+    inline def setStreamingStageLocationUndefined: Self = StObject.set(x, "streamingStageLocation", js.undefined)
   }
 }

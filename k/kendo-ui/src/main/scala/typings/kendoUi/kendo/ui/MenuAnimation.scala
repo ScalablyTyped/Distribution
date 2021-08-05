@@ -12,25 +12,19 @@ trait MenuAnimation extends StObject {
 }
 object MenuAnimation {
   
-  @scala.inline
-  def apply(): MenuAnimation = {
+  inline def apply(): MenuAnimation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MenuAnimation]
   }
   
-  @scala.inline
-  implicit class MenuAnimationMutableBuilder[Self <: MenuAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: MenuAnimation](x: Self) {
     
-    @scala.inline
-    def setClose(value: MenuAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: MenuAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setOpen(value: MenuAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: MenuAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

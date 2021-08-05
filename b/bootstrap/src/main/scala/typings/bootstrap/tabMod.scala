@@ -57,8 +57,7 @@ object tabMod {
       * DOM element
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): Tab = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Tab]
+    inline def getInstance(element: Element): Tab = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Tab]
   }
   
   trait Tab extends StObject {
@@ -79,8 +78,7 @@ object tabMod {
   }
   object Tab {
     
-    @scala.inline
-    def apply(dispose: () => Unit, show: () => Unit): Tab = {
+    inline def apply(dispose: () => Unit, show: () => Unit): Tab = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), show = js.Any.fromFunction0(show))
       __obj.asInstanceOf[Tab]
     }
@@ -133,14 +131,11 @@ object tabMod {
            with Events
     }
     
-    @scala.inline
-    implicit class TabMutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
+    extension [Self <: Tab](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
 }

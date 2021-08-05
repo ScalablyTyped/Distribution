@@ -21,34 +21,25 @@ trait CollectionAdsDialogParams
 }
 object CollectionAdsDialogParams {
   
-  @scala.inline
-  def apply(account_id: String, business_id: String, canvas_id: Unit, page_id: String, template_id: String): CollectionAdsDialogParams = {
+  inline def apply(account_id: String, business_id: String, canvas_id: Unit, page_id: String, template_id: String): CollectionAdsDialogParams = {
     val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], business_id = business_id.asInstanceOf[js.Any], canvas_id = canvas_id.asInstanceOf[js.Any], display = "popup", method = "canvas_editor", page_id = page_id.asInstanceOf[js.Any], template_id = template_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionAdsDialogParams]
   }
   
-  @scala.inline
-  implicit class CollectionAdsDialogParamsMutableBuilder[Self <: CollectionAdsDialogParams] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionAdsDialogParams](x: Self) {
     
-    @scala.inline
-    def setAccount_id(value: String): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
+    inline def setAccount_id(value: String): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvas_id(value: Unit): Self = StObject.set(x, "canvas_id", value.asInstanceOf[js.Any])
+    inline def setCanvas_id(value: Unit): Self = StObject.set(x, "canvas_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct_catalog_id(value: String): Self = StObject.set(x, "product_catalog_id", value.asInstanceOf[js.Any])
+    inline def setProduct_catalog_id(value: String): Self = StObject.set(x, "product_catalog_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct_catalog_idUndefined: Self = StObject.set(x, "product_catalog_id", js.undefined)
+    inline def setProduct_catalog_idUndefined: Self = StObject.set(x, "product_catalog_id", js.undefined)
     
-    @scala.inline
-    def setProduct_set_id(value: String): Self = StObject.set(x, "product_set_id", value.asInstanceOf[js.Any])
+    inline def setProduct_set_id(value: String): Self = StObject.set(x, "product_set_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct_set_idUndefined: Self = StObject.set(x, "product_set_id", js.undefined)
+    inline def setProduct_set_idUndefined: Self = StObject.set(x, "product_set_id", js.undefined)
     
-    @scala.inline
-    def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
+    inline def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
   }
 }

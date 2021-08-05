@@ -22,20 +22,16 @@ object shareMod extends Shortcut {
   }
   object ShareProps {
     
-    @scala.inline
-    def apply(): ShareProps = {
+    inline def apply(): ShareProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShareProps]
     }
     
-    @scala.inline
-    implicit class SharePropsMutableBuilder[Self <: ShareProps] (val x: Self) extends AnyVal {
+    extension [Self <: ShareProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

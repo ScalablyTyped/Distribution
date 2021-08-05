@@ -66,80 +66,56 @@ object JQueryTinyCarousel {
   }
   object JQueryTinyCarouselOptions {
     
-    @scala.inline
-    def apply(): JQueryTinyCarouselOptions = {
+    inline def apply(): JQueryTinyCarouselOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JQueryTinyCarouselOptions]
     }
     
-    @scala.inline
-    implicit class JQueryTinyCarouselOptionsMutableBuilder[Self <: JQueryTinyCarouselOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JQueryTinyCarouselOptions](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      @scala.inline
-      def setCallback(value: (/* element */ HTMLElement, /* index */ Double) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* element */ HTMLElement, /* index */ Double) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+      inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
       
-      @scala.inline
-      def setDisplay(value: Double): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: Double): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Boolean): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Boolean): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setIntervaltime(value: Double): Self = StObject.set(x, "intervaltime", value.asInstanceOf[js.Any])
+      inline def setIntervaltime(value: Double): Self = StObject.set(x, "intervaltime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervaltimeUndefined: Self = StObject.set(x, "intervaltime", js.undefined)
+      inline def setIntervaltimeUndefined: Self = StObject.set(x, "intervaltime", js.undefined)
       
-      @scala.inline
-      def setPager(value: Boolean): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+      inline def setPager(value: Boolean): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
+      inline def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
       
-      @scala.inline
-      def setRewind(value: Boolean): Self = StObject.set(x, "rewind", value.asInstanceOf[js.Any])
+      inline def setRewind(value: Boolean): Self = StObject.set(x, "rewind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRewindUndefined: Self = StObject.set(x, "rewind", js.undefined)
+      inline def setRewindUndefined: Self = StObject.set(x, "rewind", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
 }

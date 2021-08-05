@@ -32,40 +32,29 @@ trait SchemaWidgetMarkup extends StObject {
 }
 object SchemaWidgetMarkup {
   
-  @scala.inline
-  def apply(): SchemaWidgetMarkup = {
+  inline def apply(): SchemaWidgetMarkup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWidgetMarkup]
   }
   
-  @scala.inline
-  implicit class SchemaWidgetMarkupMutableBuilder[Self <: SchemaWidgetMarkup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWidgetMarkup](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[SchemaButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[SchemaButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: SchemaButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: SchemaButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setImage(value: SchemaImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: SchemaImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setKeyValue(value: SchemaKeyValue): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
+    inline def setKeyValue(value: SchemaKeyValue): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
+    inline def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
     
-    @scala.inline
-    def setTextParagraph(value: SchemaTextParagraph): Self = StObject.set(x, "textParagraph", value.asInstanceOf[js.Any])
+    inline def setTextParagraph(value: SchemaTextParagraph): Self = StObject.set(x, "textParagraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextParagraphUndefined: Self = StObject.set(x, "textParagraph", js.undefined)
+    inline def setTextParagraphUndefined: Self = StObject.set(x, "textParagraph", js.undefined)
   }
 }

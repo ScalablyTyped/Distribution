@@ -22,25 +22,19 @@ trait SchemaWmxSite extends StObject {
 }
 object SchemaWmxSite {
   
-  @scala.inline
-  def apply(): SchemaWmxSite = {
+  inline def apply(): SchemaWmxSite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWmxSite]
   }
   
-  @scala.inline
-  implicit class SchemaWmxSiteMutableBuilder[Self <: SchemaWmxSite] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWmxSite](x: Self) {
     
-    @scala.inline
-    def setPermissionLevel(value: String): Self = StObject.set(x, "permissionLevel", value.asInstanceOf[js.Any])
+    inline def setPermissionLevel(value: String): Self = StObject.set(x, "permissionLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionLevelUndefined: Self = StObject.set(x, "permissionLevel", js.undefined)
+    inline def setPermissionLevelUndefined: Self = StObject.set(x, "permissionLevel", js.undefined)
     
-    @scala.inline
-    def setSiteUrl(value: String): Self = StObject.set(x, "siteUrl", value.asInstanceOf[js.Any])
+    inline def setSiteUrl(value: String): Self = StObject.set(x, "siteUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteUrlUndefined: Self = StObject.set(x, "siteUrl", js.undefined)
+    inline def setSiteUrlUndefined: Self = StObject.set(x, "siteUrl", js.undefined)
   }
 }

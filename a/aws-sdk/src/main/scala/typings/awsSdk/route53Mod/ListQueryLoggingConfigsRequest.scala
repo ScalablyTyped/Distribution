@@ -23,31 +23,23 @@ trait ListQueryLoggingConfigsRequest extends StObject {
 }
 object ListQueryLoggingConfigsRequest {
   
-  @scala.inline
-  def apply(): ListQueryLoggingConfigsRequest = {
+  inline def apply(): ListQueryLoggingConfigsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListQueryLoggingConfigsRequest]
   }
   
-  @scala.inline
-  implicit class ListQueryLoggingConfigsRequestMutableBuilder[Self <: ListQueryLoggingConfigsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListQueryLoggingConfigsRequest](x: Self) {
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
+    inline def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

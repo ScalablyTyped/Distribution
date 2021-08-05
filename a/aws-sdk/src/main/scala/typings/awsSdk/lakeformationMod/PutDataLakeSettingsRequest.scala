@@ -18,22 +18,17 @@ trait PutDataLakeSettingsRequest extends StObject {
 }
 object PutDataLakeSettingsRequest {
   
-  @scala.inline
-  def apply(DataLakeSettings: DataLakeSettings): PutDataLakeSettingsRequest = {
+  inline def apply(DataLakeSettings: DataLakeSettings): PutDataLakeSettingsRequest = {
     val __obj = js.Dynamic.literal(DataLakeSettings = DataLakeSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutDataLakeSettingsRequest]
   }
   
-  @scala.inline
-  implicit class PutDataLakeSettingsRequestMutableBuilder[Self <: PutDataLakeSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutDataLakeSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDataLakeSettings(value: DataLakeSettings): Self = StObject.set(x, "DataLakeSettings", value.asInstanceOf[js.Any])
+    inline def setDataLakeSettings(value: DataLakeSettings): Self = StObject.set(x, "DataLakeSettings", value.asInstanceOf[js.Any])
   }
 }

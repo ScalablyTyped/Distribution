@@ -11,19 +11,15 @@ trait SampleAesEncryption extends StObject {
 }
 object SampleAesEncryption {
   
-  @scala.inline
-  def apply(): SampleAesEncryption = {
+  inline def apply(): SampleAesEncryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SampleAesEncryption]
   }
   
-  @scala.inline
-  implicit class SampleAesEncryptionMutableBuilder[Self <: SampleAesEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: SampleAesEncryption](x: Self) {
     
-    @scala.inline
-    def setKeyUri(value: String): Self = StObject.set(x, "keyUri", value.asInstanceOf[js.Any])
+    inline def setKeyUri(value: String): Self = StObject.set(x, "keyUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUriUndefined: Self = StObject.set(x, "keyUri", js.undefined)
+    inline def setKeyUriUndefined: Self = StObject.set(x, "keyUri", js.undefined)
   }
 }

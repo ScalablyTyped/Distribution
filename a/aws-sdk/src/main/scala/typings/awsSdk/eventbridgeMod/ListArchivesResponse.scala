@@ -18,28 +18,21 @@ trait ListArchivesResponse extends StObject {
 }
 object ListArchivesResponse {
   
-  @scala.inline
-  def apply(): ListArchivesResponse = {
+  inline def apply(): ListArchivesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListArchivesResponse]
   }
   
-  @scala.inline
-  implicit class ListArchivesResponseMutableBuilder[Self <: ListArchivesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListArchivesResponse](x: Self) {
     
-    @scala.inline
-    def setArchives(value: ArchiveResponseList): Self = StObject.set(x, "Archives", value.asInstanceOf[js.Any])
+    inline def setArchives(value: ArchiveResponseList): Self = StObject.set(x, "Archives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchivesUndefined: Self = StObject.set(x, "Archives", js.undefined)
+    inline def setArchivesUndefined: Self = StObject.set(x, "Archives", js.undefined)
     
-    @scala.inline
-    def setArchivesVarargs(value: Archive*): Self = StObject.set(x, "Archives", js.Array(value :_*))
+    inline def setArchivesVarargs(value: Archive*): Self = StObject.set(x, "Archives", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

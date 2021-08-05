@@ -15,25 +15,19 @@ trait IOneOf extends StObject {
 }
 object IOneOf {
   
-  @scala.inline
-  def apply(oneof: js.Array[String]): IOneOf = {
+  inline def apply(oneof: js.Array[String]): IOneOf = {
     val __obj = js.Dynamic.literal(oneof = oneof.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOneOf]
   }
   
-  @scala.inline
-  implicit class IOneOfMutableBuilder[Self <: IOneOf] (val x: Self) extends AnyVal {
+  extension [Self <: IOneOf](x: Self) {
     
-    @scala.inline
-    def setOneof(value: js.Array[String]): Self = StObject.set(x, "oneof", value.asInstanceOf[js.Any])
+    inline def setOneof(value: js.Array[String]): Self = StObject.set(x, "oneof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneofVarargs(value: String*): Self = StObject.set(x, "oneof", js.Array(value :_*))
+    inline def setOneofVarargs(value: String*): Self = StObject.set(x, "oneof", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: StringDictionary[js.UndefOr[js.Any]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[js.UndefOr[js.Any]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

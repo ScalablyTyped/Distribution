@@ -13,16 +13,13 @@ trait Result extends StObject {
 }
 object Result {
   
-  @scala.inline
-  def apply(result: clean | terminated | failed): Result = {
+  inline def apply(result: clean | terminated | failed): Result = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
   
-  @scala.inline
-  implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+  extension [Self <: Result](x: Self) {
     
-    @scala.inline
-    def setResult(value: clean | terminated | failed): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: clean | terminated | failed): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

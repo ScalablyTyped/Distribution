@@ -13,19 +13,15 @@ trait DisassociateTransitGatewayMulticastDomainResult extends StObject {
 }
 object DisassociateTransitGatewayMulticastDomainResult {
   
-  @scala.inline
-  def apply(): DisassociateTransitGatewayMulticastDomainResult = {
+  inline def apply(): DisassociateTransitGatewayMulticastDomainResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateTransitGatewayMulticastDomainResult]
   }
   
-  @scala.inline
-  implicit class DisassociateTransitGatewayMulticastDomainResultMutableBuilder[Self <: DisassociateTransitGatewayMulticastDomainResult] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateTransitGatewayMulticastDomainResult](x: Self) {
     
-    @scala.inline
-    def setAssociations(value: TransitGatewayMulticastDomainAssociations): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
+    inline def setAssociations(value: TransitGatewayMulticastDomainAssociations): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
+    inline def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
   }
 }

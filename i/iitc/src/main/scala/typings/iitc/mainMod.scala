@@ -21,75 +21,61 @@ object mainMod {
     @JSGlobal("DEFAULT_MAX_IDLE_TIME")
     @js.native
     def DEFAULT_MAX_IDLE_TIME: Double = js.native
-    @scala.inline
-    def DEFAULT_MAX_IDLE_TIME_=(x: Double): Unit = js.Dynamic.global.updateDynamic("DEFAULT_MAX_IDLE_TIME")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_MAX_IDLE_TIME_=(x: Double): Unit = js.Dynamic.global.updateDynamic("DEFAULT_MAX_IDLE_TIME")(x.asInstanceOf[js.Any])
     
     @JSGlobal("DEFAULT_REFRESH")
     @js.native
     def DEFAULT_REFRESH: Double = js.native
-    @scala.inline
-    def DEFAULT_REFRESH_=(x: Double): Unit = js.Dynamic.global.updateDynamic("DEFAULT_REFRESH")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_REFRESH_=(x: Double): Unit = js.Dynamic.global.updateDynamic("DEFAULT_REFRESH")(x.asInstanceOf[js.Any])
     
     /** Info about current player/agent */
     @JSGlobal("PLAYER")
     @js.native
     def PLAYER: PlayerInfo = js.native
-    @scala.inline
-    def PLAYER_=(x: PlayerInfo): Unit = js.Dynamic.global.updateDynamic("PLAYER")(x.asInstanceOf[js.Any])
+    inline def PLAYER_=(x: PlayerInfo): Unit = js.Dynamic.global.updateDynamic("PLAYER")(x.asInstanceOf[js.Any])
     
     /** add Layergroup to leaflets layer-chooser */
-    @scala.inline
-    def addLayerGroup(name: String, layer: LayerGroup_[js.Any], defaultVisibile: Boolean): Unit = (js.Dynamic.global.applyDynamic("addLayerGroup")(name.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], defaultVisibile.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addLayerGroup(name: String, layer: LayerGroup_[js.Any], defaultVisibile: Boolean, groupname: String): Unit = (js.Dynamic.global.applyDynamic("addLayerGroup")(name.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], defaultVisibile.asInstanceOf[js.Any], groupname.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addLayerGroup(name: String, layer: LayerGroup_[js.Any], defaultVisibile: Boolean): Unit = (js.Dynamic.global.applyDynamic("addLayerGroup")(name.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], defaultVisibile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addLayerGroup(name: String, layer: LayerGroup_[js.Any], defaultVisibile: Boolean, groupname: String): Unit = (js.Dynamic.global.applyDynamic("addLayerGroup")(name.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], defaultVisibile.asInstanceOf[js.Any], groupname.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** iitc-Pluigns setup/initialize function */
     @JSGlobal("bootPlugins")
     @js.native
     def bootPlugins: js.Array[BootCallback] = js.native
-    @scala.inline
-    def bootPlugins_=(x: js.Array[BootCallback]): Unit = js.Dynamic.global.updateDynamic("bootPlugins")(x.asInstanceOf[js.Any])
+    inline def bootPlugins_=(x: js.Array[BootCallback]): Unit = js.Dynamic.global.updateDynamic("bootPlugins")(x.asInstanceOf[js.Any])
     
     /** Create Portal-Marker */
-    @scala.inline
-    def createMarker(position: LatLng_, options: PortalOptions): CircleMarker_[js.Any] = (js.Dynamic.global.applyDynamic("createMarker")(position.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CircleMarker_[js.Any]]
+    inline def createMarker(position: LatLng_, options: PortalOptions): CircleMarker_[js.Any] = (js.Dynamic.global.applyDynamic("createMarker")(position.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CircleMarker_[js.Any]]
     
     @JSGlobal("currentPane")
     @js.native
     def currentPane: String = js.native
-    @scala.inline
-    def currentPane_=(x: String): Unit = js.Dynamic.global.updateDynamic("currentPane")(x.asInstanceOf[js.Any])
+    inline def currentPane_=(x: String): Unit = js.Dynamic.global.updateDynamic("currentPane")(x.asInstanceOf[js.Any])
     
     /** escape Html string */
-    @scala.inline
-    def escapeHtmlSpecialChars(name: String): String = js.Dynamic.global.applyDynamic("escapeHtmlSpecialChars")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def escapeHtmlSpecialChars(name: String): String = js.Dynamic.global.applyDynamic("escapeHtmlSpecialChars")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** google-api */
     @JSGlobal("gapi")
     @js.native
     def gapi: js.Any = js.native
-    @scala.inline
-    def gapi_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("gapi")(x.asInstanceOf[js.Any])
+    inline def gapi_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("gapi")(x.asInstanceOf[js.Any])
     
     /** if true iitc main script was already loaded (plugin need to trigger setup on iths own) */
     @JSGlobal("iitcLoaded")
     @js.native
     def iitcLoaded: Boolean = js.native
-    @scala.inline
-    def iitcLoaded_=(x: Boolean): Unit = js.Dynamic.global.updateDynamic("iitcLoaded")(x.asInstanceOf[js.Any])
+    inline def iitcLoaded_=(x: Boolean): Unit = js.Dynamic.global.updateDynamic("iitcLoaded")(x.asInstanceOf[js.Any])
     
     /** get layer visiblity */
-    @scala.inline
-    def isLayerGroupDisplayed(name: String): Boolean = js.Dynamic.global.applyDynamic("isLayerGroupDisplayed")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def isLayerGroupDisplayed(name: String, defaultDisplay: Boolean): Boolean = (js.Dynamic.global.applyDynamic("isLayerGroupDisplayed")(name.asInstanceOf[js.Any], defaultDisplay.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isLayerGroupDisplayed(name: String): Boolean = js.Dynamic.global.applyDynamic("isLayerGroupDisplayed")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isLayerGroupDisplayed(name: String, defaultDisplay: Boolean): Boolean = (js.Dynamic.global.applyDynamic("isLayerGroupDisplayed")(name.asInstanceOf[js.Any], defaultDisplay.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** Layer visibilty control */
     @JSGlobal("layerChooser")
     @js.native
     def layerChooser: Layers = js.native
-    @scala.inline
-    def layerChooser_=(x: Layers): Unit = js.Dynamic.global.updateDynamic("layerChooser")(x.asInstanceOf[js.Any])
+    inline def layerChooser_=(x: Layers): Unit = js.Dynamic.global.updateDynamic("layerChooser")(x.asInstanceOf[js.Any])
     
     /** the Leaflet Map */
     @JSGlobal("map")
@@ -100,62 +86,47 @@ object mainMod {
     @JSGlobal("mapDataRequest")
     @js.native
     def mapDataRequest: MapDataRequest = js.native
-    @scala.inline
-    def mapDataRequest_=(x: MapDataRequest): Unit = js.Dynamic.global.updateDynamic("mapDataRequest")(x.asInstanceOf[js.Any])
+    inline def mapDataRequest_=(x: MapDataRequest): Unit = js.Dynamic.global.updateDynamic("mapDataRequest")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def map_=(x: Map_): Unit = js.Dynamic.global.updateDynamic("map")(x.asInstanceOf[js.Any])
+    inline def map_=(x: Map_): Unit = js.Dynamic.global.updateDynamic("map")(x.asInstanceOf[js.Any])
     
     /** All iitc Pluigns */
     @JSGlobal("plugin")
     @js.native
     def plugin: js.Any = js.native
-    @scala.inline
-    def plugin_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("plugin")(x.asInstanceOf[js.Any])
+    inline def plugin_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("plugin")(x.asInstanceOf[js.Any])
     
     /** prepare marker for OverlappingMarkerSpiderfier */
-    @scala.inline
-    def registerMarkerForOMS(marker: Marker_[js.Any]): Unit = js.Dynamic.global.applyDynamic("registerMarkerForOMS")(marker.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def registerMarkerForOMS(marker: Marker_[js.Any]): Unit = js.Dynamic.global.applyDynamic("registerMarkerForOMS")(marker.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** remove a layer */
-    @scala.inline
-    def removeLayerGroup(layer: LayerGroup_[js.Any]): Unit = js.Dynamic.global.applyDynamic("removeLayerGroup")(layer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeLayerGroup(layer: LayerGroup_[js.Any]): Unit = js.Dynamic.global.applyDynamic("removeLayerGroup")(layer.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Load & show Portal Details Window */
-    @scala.inline
-    def renderPortalDetails(): Unit = js.Dynamic.global.applyDynamic("renderPortalDetails")().asInstanceOf[Unit]
-    @scala.inline
-    def renderPortalDetails(guid: PortalGUID): Unit = js.Dynamic.global.applyDynamic("renderPortalDetails")(guid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def renderPortalDetails(): Unit = js.Dynamic.global.applyDynamic("renderPortalDetails")().asInstanceOf[Unit]
+    inline def renderPortalDetails(guid: PortalGUID): Unit = js.Dynamic.global.applyDynamic("renderPortalDetails")(guid.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** update status bar */
-    @scala.inline
-    def renderUpdateStatus(): Unit = js.Dynamic.global.applyDynamic("renderUpdateStatus")().asInstanceOf[Unit]
+    inline def renderUpdateStatus(): Unit = js.Dynamic.global.applyDynamic("renderUpdateStatus")().asInstanceOf[Unit]
     
     // Map Stuff
-    @scala.inline
-    def selectPortalByLatLng(lat: Double, lng: Double): Unit = (js.Dynamic.global.applyDynamic("selectPortalByLatLng")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def selectPortalByLatLng(lat: Double, lng: Double): Unit = (js.Dynamic.global.applyDynamic("selectPortalByLatLng")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def show(paneID: String): Unit = js.Dynamic.global.applyDynamic("show")(paneID.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def show(paneID: String): Unit = js.Dynamic.global.applyDynamic("show")(paneID.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def startRefreshTimeout(): Unit = js.Dynamic.global.applyDynamic("startRefreshTimeout")().asInstanceOf[Unit]
+    inline def startRefreshTimeout(): Unit = js.Dynamic.global.applyDynamic("startRefreshTimeout")().asInstanceOf[Unit]
     
     /** convert team string to id */
-    @scala.inline
-    def teamStringToId(team: String): Double = js.Dynamic.global.applyDynamic("teamStringToId")(team.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def teamStringToId(team: String): Double = js.Dynamic.global.applyDynamic("teamStringToId")(team.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /** set layer visiblity */
-    @scala.inline
-    def updateDisplayedLayerGroup(name: String, display: Boolean): Unit = (js.Dynamic.global.applyDynamic("updateDisplayedLayerGroup")(name.asInstanceOf[js.Any], display.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def updateDisplayedLayerGroup(name: String, display: Boolean): Unit = (js.Dynamic.global.applyDynamic("updateDisplayedLayerGroup")(name.asInstanceOf[js.Any], display.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     // Android
-    @scala.inline
-    def useAndroidPanes(): Boolean = js.Dynamic.global.applyDynamic("useAndroidPanes")().asInstanceOf[Boolean]
+    inline def useAndroidPanes(): Boolean = js.Dynamic.global.applyDynamic("useAndroidPanes")().asInstanceOf[Boolean]
     
     /** Make sure Portal is visible in Window */
-    @scala.inline
-    def zoomToAndShowPortal(guid: PortalGUID, position: LatLng_): Unit = (js.Dynamic.global.applyDynamic("zoomToAndShowPortal")(guid.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def zoomToAndShowPortal(guid: PortalGUID, position: LatLng_): Unit = (js.Dynamic.global.applyDynamic("zoomToAndShowPortal")(guid.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     type BootCallback = js.Function0[Unit]
   }

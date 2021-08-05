@@ -12,8 +12,7 @@ trait SVGPathSegLinetoHorizontalRel
 }
 object SVGPathSegLinetoHorizontalRel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PATHSEG_ARC_ABS: Double,
     PATHSEG_ARC_REL: Double,
     PATHSEG_CLOSEPATH: Double,
@@ -42,10 +41,8 @@ object SVGPathSegLinetoHorizontalRel {
     __obj.asInstanceOf[SVGPathSegLinetoHorizontalRel]
   }
   
-  @scala.inline
-  implicit class SVGPathSegLinetoHorizontalRelMutableBuilder[Self <: SVGPathSegLinetoHorizontalRel] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPathSegLinetoHorizontalRel](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
   }
 }

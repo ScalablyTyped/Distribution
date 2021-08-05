@@ -23,22 +23,17 @@ trait RuleGroupRuleVisibilityConfig extends StObject {
 }
 object RuleGroupRuleVisibilityConfig {
   
-  @scala.inline
-  def apply(cloudwatchMetricsEnabled: Boolean, metricName: String, sampledRequestsEnabled: Boolean): RuleGroupRuleVisibilityConfig = {
+  inline def apply(cloudwatchMetricsEnabled: Boolean, metricName: String, sampledRequestsEnabled: Boolean): RuleGroupRuleVisibilityConfig = {
     val __obj = js.Dynamic.literal(cloudwatchMetricsEnabled = cloudwatchMetricsEnabled.asInstanceOf[js.Any], metricName = metricName.asInstanceOf[js.Any], sampledRequestsEnabled = sampledRequestsEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleVisibilityConfig]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleVisibilityConfigMutableBuilder[Self <: RuleGroupRuleVisibilityConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleVisibilityConfig](x: Self) {
     
-    @scala.inline
-    def setCloudwatchMetricsEnabled(value: Boolean): Self = StObject.set(x, "cloudwatchMetricsEnabled", value.asInstanceOf[js.Any])
+    inline def setCloudwatchMetricsEnabled(value: Boolean): Self = StObject.set(x, "cloudwatchMetricsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampledRequestsEnabled(value: Boolean): Self = StObject.set(x, "sampledRequestsEnabled", value.asInstanceOf[js.Any])
+    inline def setSampledRequestsEnabled(value: Boolean): Self = StObject.set(x, "sampledRequestsEnabled", value.asInstanceOf[js.Any])
   }
 }

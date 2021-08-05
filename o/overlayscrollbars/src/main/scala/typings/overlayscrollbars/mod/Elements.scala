@@ -26,8 +26,7 @@ trait Elements extends StObject {
 }
 object Elements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     content: HTMLElement,
     host: HTMLElement,
     padding: HTMLElement,
@@ -41,31 +40,22 @@ object Elements {
     __obj.asInstanceOf[Elements]
   }
   
-  @scala.inline
-  implicit class ElementsMutableBuilder[Self <: Elements] (val x: Self) extends AnyVal {
+  extension [Self <: Elements](x: Self) {
     
-    @scala.inline
-    def setContent(value: HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: HTMLElement): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: HTMLElement): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollbarCorner(value: HTMLElement): Self = StObject.set(x, "scrollbarCorner", value.asInstanceOf[js.Any])
+    inline def setScrollbarCorner(value: HTMLElement): Self = StObject.set(x, "scrollbarCorner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollbarHorizontal(value: Handle): Self = StObject.set(x, "scrollbarHorizontal", value.asInstanceOf[js.Any])
+    inline def setScrollbarHorizontal(value: Handle): Self = StObject.set(x, "scrollbarHorizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollbarVertical(value: Handle): Self = StObject.set(x, "scrollbarVertical", value.asInstanceOf[js.Any])
+    inline def setScrollbarVertical(value: Handle): Self = StObject.set(x, "scrollbarVertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewport(value: HTMLElement): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: HTMLElement): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

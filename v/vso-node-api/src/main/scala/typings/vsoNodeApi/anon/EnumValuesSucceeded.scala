@@ -10,16 +10,13 @@ trait EnumValuesSucceeded extends StObject {
 }
 object EnumValuesSucceeded {
   
-  @scala.inline
-  def apply(enumValues: Succeeded): EnumValuesSucceeded = {
+  inline def apply(enumValues: Succeeded): EnumValuesSucceeded = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesSucceeded]
   }
   
-  @scala.inline
-  implicit class EnumValuesSucceededMutableBuilder[Self <: EnumValuesSucceeded] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesSucceeded](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Succeeded): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Succeeded): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

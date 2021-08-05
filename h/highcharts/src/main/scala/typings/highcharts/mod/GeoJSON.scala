@@ -54,61 +54,43 @@ trait GeoJSON extends StObject {
 }
 object GeoJSON {
   
-  @scala.inline
-  def apply(features: js.Array[GeoJSONFeature]): GeoJSON = {
+  inline def apply(features: js.Array[GeoJSONFeature]): GeoJSON = {
     val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSON]
   }
   
-  @scala.inline
-  implicit class GeoJSONMutableBuilder[Self <: GeoJSON] (val x: Self) extends AnyVal {
+  extension [Self <: GeoJSON](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightShort(value: String): Self = StObject.set(x, "copyrightShort", value.asInstanceOf[js.Any])
+    inline def setCopyrightShort(value: String): Self = StObject.set(x, "copyrightShort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightShortUndefined: Self = StObject.set(x, "copyrightShort", js.undefined)
+    inline def setCopyrightShortUndefined: Self = StObject.set(x, "copyrightShort", js.undefined)
     
-    @scala.inline
-    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    @scala.inline
-    def setCrs(value: Dictionary[js.Any]): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
+    inline def setCrs(value: Dictionary[js.Any]): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrsUndefined: Self = StObject.set(x, "crs", js.undefined)
+    inline def setCrsUndefined: Self = StObject.set(x, "crs", js.undefined)
     
-    @scala.inline
-    def setFeatures(value: js.Array[GeoJSONFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[GeoJSONFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesVarargs(value: GeoJSONFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: GeoJSONFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def `setHc-transform`(value: Dictionary[GeoJSONTranslation]): Self = StObject.set(x, "hc-transform", value.asInstanceOf[js.Any])
+    inline def `setHc-transform`(value: Dictionary[GeoJSONTranslation]): Self = StObject.set(x, "hc-transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHc-transformUndefined`: Self = StObject.set(x, "hc-transform", js.undefined)
+    inline def `setHc-transformUndefined`: Self = StObject.set(x, "hc-transform", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

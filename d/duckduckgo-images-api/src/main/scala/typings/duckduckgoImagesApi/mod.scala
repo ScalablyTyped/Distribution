@@ -11,11 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def imageSearch(params: Iterations): js.Promise[js.Array[DuckDuckGoImage]] = ^.asInstanceOf[js.Dynamic].applyDynamic("image_search")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[DuckDuckGoImage]]]
+  inline def imageSearch(params: Iterations): js.Promise[js.Array[DuckDuckGoImage]] = ^.asInstanceOf[js.Dynamic].applyDynamic("image_search")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[DuckDuckGoImage]]]
   
-  @scala.inline
-  def imageSearchGenerator(params: Iterations): js.Promise[js.Array[DuckDuckGoImage]] = ^.asInstanceOf[js.Dynamic].applyDynamic("image_search_generator")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[DuckDuckGoImage]]]
+  inline def imageSearchGenerator(params: Iterations): js.Promise[js.Array[DuckDuckGoImage]] = ^.asInstanceOf[js.Dynamic].applyDynamic("image_search_generator")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[DuckDuckGoImage]]]
   
   trait DuckDuckGoImage extends StObject {
     
@@ -35,8 +33,7 @@ object mod {
   }
   object DuckDuckGoImage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       height: Double,
       image: String,
       source: String,
@@ -49,29 +46,21 @@ object mod {
       __obj.asInstanceOf[DuckDuckGoImage]
     }
     
-    @scala.inline
-    implicit class DuckDuckGoImageMutableBuilder[Self <: DuckDuckGoImage] (val x: Self) extends AnyVal {
+    extension [Self <: DuckDuckGoImage](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -16,13 +16,12 @@ trait ColorScheme extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.ColorScheme_typekey")
+  /* private */ @JSName("PowerPoint.ColorScheme_typekey")
   var PowerPointDotColorScheme_typekey: ColorScheme
 }
 object ColorScheme {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Colors: PpColorSchemeIndex => RGBColor,
     Count: Double,
@@ -35,25 +34,18 @@ object ColorScheme {
     __obj.asInstanceOf[ColorScheme]
   }
   
-  @scala.inline
-  implicit class ColorSchemeMutableBuilder[Self <: ColorScheme] (val x: Self) extends AnyVal {
+  extension [Self <: ColorScheme](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColors(value: PpColorSchemeIndex => RGBColor): Self = StObject.set(x, "Colors", js.Any.fromFunction1(value))
+    inline def setColors(value: PpColorSchemeIndex => RGBColor): Self = StObject.set(x, "Colors", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotColorScheme_typekey(value: ColorScheme): Self = StObject.set(x, "PowerPoint.ColorScheme_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotColorScheme_typekey(value: ColorScheme): Self = StObject.set(x, "PowerPoint.ColorScheme_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -13,26 +13,22 @@ object scatterNdMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def scatterND[R /* <: Rank */](
+  inline def scatterND[R /* <: Rank */](
     indices: Tensor[Rank],
     updates: Tensor[Rank],
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def scatterND[R /* <: Rank */](
+  inline def scatterND[R /* <: Rank */](
     indices: Tensor[Rank],
     updates: TensorLike,
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def scatterND[R /* <: Rank */](
+  inline def scatterND[R /* <: Rank */](
     indices: TensorLike,
     updates: Tensor[Rank],
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def scatterND[R /* <: Rank */](
+  inline def scatterND[R /* <: Rank */](
     indices: TensorLike,
     updates: TensorLike,
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any

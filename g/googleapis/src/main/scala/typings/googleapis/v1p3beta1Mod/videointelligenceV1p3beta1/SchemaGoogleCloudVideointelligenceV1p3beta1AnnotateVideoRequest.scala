@@ -59,52 +59,37 @@ trait SchemaGoogleCloudVideointelligenceV1p3beta1AnnotateVideoRequest extends St
 }
 object SchemaGoogleCloudVideointelligenceV1p3beta1AnnotateVideoRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1p3beta1AnnotateVideoRequest = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1p3beta1AnnotateVideoRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p3beta1AnnotateVideoRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p3beta1AnnotateVideoRequestMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p3beta1AnnotateVideoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1p3beta1AnnotateVideoRequest](x: Self) {
     
-    @scala.inline
-    def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def setInputContent(value: String): Self = StObject.set(x, "inputContent", value.asInstanceOf[js.Any])
+    inline def setInputContent(value: String): Self = StObject.set(x, "inputContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputContentUndefined: Self = StObject.set(x, "inputContent", js.undefined)
+    inline def setInputContentUndefined: Self = StObject.set(x, "inputContent", js.undefined)
     
-    @scala.inline
-    def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
+    inline def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
+    inline def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
     
-    @scala.inline
-    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
-    @scala.inline
-    def setOutputUri(value: String): Self = StObject.set(x, "outputUri", value.asInstanceOf[js.Any])
+    inline def setOutputUri(value: String): Self = StObject.set(x, "outputUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUriUndefined: Self = StObject.set(x, "outputUri", js.undefined)
+    inline def setOutputUriUndefined: Self = StObject.set(x, "outputUri", js.undefined)
     
-    @scala.inline
-    def setVideoContext(value: SchemaGoogleCloudVideointelligenceV1p3beta1VideoContext): Self = StObject.set(x, "videoContext", value.asInstanceOf[js.Any])
+    inline def setVideoContext(value: SchemaGoogleCloudVideointelligenceV1p3beta1VideoContext): Self = StObject.set(x, "videoContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoContextUndefined: Self = StObject.set(x, "videoContext", js.undefined)
+    inline def setVideoContextUndefined: Self = StObject.set(x, "videoContext", js.undefined)
   }
 }

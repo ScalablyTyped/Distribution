@@ -13,19 +13,15 @@ trait GetUserDefinedFunctionResponse extends StObject {
 }
 object GetUserDefinedFunctionResponse {
   
-  @scala.inline
-  def apply(): GetUserDefinedFunctionResponse = {
+  inline def apply(): GetUserDefinedFunctionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUserDefinedFunctionResponse]
   }
   
-  @scala.inline
-  implicit class GetUserDefinedFunctionResponseMutableBuilder[Self <: GetUserDefinedFunctionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserDefinedFunctionResponse](x: Self) {
     
-    @scala.inline
-    def setUserDefinedFunction(value: UserDefinedFunction): Self = StObject.set(x, "UserDefinedFunction", value.asInstanceOf[js.Any])
+    inline def setUserDefinedFunction(value: UserDefinedFunction): Self = StObject.set(x, "UserDefinedFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedFunctionUndefined: Self = StObject.set(x, "UserDefinedFunction", js.undefined)
+    inline def setUserDefinedFunctionUndefined: Self = StObject.set(x, "UserDefinedFunction", js.undefined)
   }
 }

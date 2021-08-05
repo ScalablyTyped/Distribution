@@ -10,8 +10,7 @@ trait UpdateBaiduChannelInput
      with typings.awsSdkClientPinpointBrowser.typesUpdateBaiduChannelInputMod.UpdateBaiduChannelInput
 object UpdateBaiduChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, BaiduChannelRequest: BaiduChannelRequest): UpdateBaiduChannelInput = {
+  inline def apply(ApplicationId: String, BaiduChannelRequest: BaiduChannelRequest): UpdateBaiduChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], BaiduChannelRequest = BaiduChannelRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBaiduChannelInput]
   }

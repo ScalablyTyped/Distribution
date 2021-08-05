@@ -31,31 +31,23 @@ trait SchemaGooglePrivacyDlpV2ImageRedactionConfig extends StObject {
 }
 object SchemaGooglePrivacyDlpV2ImageRedactionConfig {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2ImageRedactionConfig = {
+  inline def apply(): SchemaGooglePrivacyDlpV2ImageRedactionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2ImageRedactionConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ImageRedactionConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2ImageRedactionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2ImageRedactionConfig](x: Self) {
     
-    @scala.inline
-    def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
+    inline def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
+    inline def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
     
-    @scala.inline
-    def setRedactAllText(value: Boolean): Self = StObject.set(x, "redactAllText", value.asInstanceOf[js.Any])
+    inline def setRedactAllText(value: Boolean): Self = StObject.set(x, "redactAllText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactAllTextUndefined: Self = StObject.set(x, "redactAllText", js.undefined)
+    inline def setRedactAllTextUndefined: Self = StObject.set(x, "redactAllText", js.undefined)
     
-    @scala.inline
-    def setRedactionColor(value: SchemaGooglePrivacyDlpV2Color): Self = StObject.set(x, "redactionColor", value.asInstanceOf[js.Any])
+    inline def setRedactionColor(value: SchemaGooglePrivacyDlpV2Color): Self = StObject.set(x, "redactionColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactionColorUndefined: Self = StObject.set(x, "redactionColor", js.undefined)
+    inline def setRedactionColorUndefined: Self = StObject.set(x, "redactionColor", js.undefined)
   }
 }

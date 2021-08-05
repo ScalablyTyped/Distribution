@@ -28,37 +28,27 @@ trait StartSoterAuthenticationRes extends StObject {
 }
 object StartSoterAuthenticationRes {
   
-  @scala.inline
-  def apply(): StartSoterAuthenticationRes = {
+  inline def apply(): StartSoterAuthenticationRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartSoterAuthenticationRes]
   }
   
-  @scala.inline
-  implicit class StartSoterAuthenticationResMutableBuilder[Self <: StartSoterAuthenticationRes] (val x: Self) extends AnyVal {
+  extension [Self <: StartSoterAuthenticationRes](x: Self) {
     
-    @scala.inline
-    def setAuthMode(value: String): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
+    inline def setAuthMode(value: String): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthModeUndefined: Self = StObject.set(x, "authMode", js.undefined)
+    inline def setAuthModeUndefined: Self = StObject.set(x, "authMode", js.undefined)
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrCodeUndefined: Self = StObject.set(x, "errCode", js.undefined)
+    inline def setErrCodeUndefined: Self = StObject.set(x, "errCode", js.undefined)
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
     
-    @scala.inline
-    def setResultJSON(value: String): Self = StObject.set(x, "resultJSON", value.asInstanceOf[js.Any])
+    inline def setResultJSON(value: String): Self = StObject.set(x, "resultJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultJSONUndefined: Self = StObject.set(x, "resultJSON", js.undefined)
+    inline def setResultJSONUndefined: Self = StObject.set(x, "resultJSON", js.undefined)
   }
 }

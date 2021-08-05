@@ -23,28 +23,21 @@ trait CatalogTablePartitionKey extends StObject {
 }
 object CatalogTablePartitionKey {
   
-  @scala.inline
-  def apply(name: String): CatalogTablePartitionKey = {
+  inline def apply(name: String): CatalogTablePartitionKey = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatalogTablePartitionKey]
   }
   
-  @scala.inline
-  implicit class CatalogTablePartitionKeyMutableBuilder[Self <: CatalogTablePartitionKey] (val x: Self) extends AnyVal {
+  extension [Self <: CatalogTablePartitionKey](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

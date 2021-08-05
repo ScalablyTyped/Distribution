@@ -16,19 +16,15 @@ trait IEditorState extends StObject {
 }
 object IEditorState {
   
-  @scala.inline
-  def apply(current: js.Any, state: IState): IEditorState = {
+  inline def apply(current: js.Any, state: IState): IEditorState = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorState]
   }
   
-  @scala.inline
-  implicit class IEditorStateMutableBuilder[Self <: IEditorState] (val x: Self) extends AnyVal {
+  extension [Self <: IEditorState](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: js.Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: js.Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: IState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: IState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

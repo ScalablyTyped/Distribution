@@ -18,25 +18,19 @@ trait ResolveAliasOutput extends StObject {
 }
 object ResolveAliasOutput {
   
-  @scala.inline
-  def apply(): ResolveAliasOutput = {
+  inline def apply(): ResolveAliasOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolveAliasOutput]
   }
   
-  @scala.inline
-  implicit class ResolveAliasOutputMutableBuilder[Self <: ResolveAliasOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveAliasOutput](x: Self) {
     
-    @scala.inline
-    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetArnUndefined: Self = StObject.set(x, "FleetArn", js.undefined)
+    inline def setFleetArnUndefined: Self = StObject.set(x, "FleetArn", js.undefined)
     
-    @scala.inline
-    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
   }
 }

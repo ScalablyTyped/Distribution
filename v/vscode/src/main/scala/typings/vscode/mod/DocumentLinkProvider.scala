@@ -30,22 +30,17 @@ trait DocumentLinkProvider[T /* <: DocumentLink */] extends StObject {
 }
 object DocumentLinkProvider {
   
-  @scala.inline
-  def apply[T /* <: DocumentLink */](provideDocumentLinks: (TextDocument, CancellationToken) => ProviderResult[js.Array[T]]): DocumentLinkProvider[T] = {
+  inline def apply[T /* <: DocumentLink */](provideDocumentLinks: (TextDocument, CancellationToken) => ProviderResult[js.Array[T]]): DocumentLinkProvider[T] = {
     val __obj = js.Dynamic.literal(provideDocumentLinks = js.Any.fromFunction2(provideDocumentLinks))
     __obj.asInstanceOf[DocumentLinkProvider[T]]
   }
   
-  @scala.inline
-  implicit class DocumentLinkProviderMutableBuilder[Self <: DocumentLinkProvider[?], T /* <: DocumentLink */] (val x: Self & DocumentLinkProvider[T]) extends AnyVal {
+  extension [Self <: DocumentLinkProvider[?], T /* <: DocumentLink */](x: Self & DocumentLinkProvider[T]) {
     
-    @scala.inline
-    def setProvideDocumentLinks(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideDocumentLinks", js.Any.fromFunction2(value))
+    inline def setProvideDocumentLinks(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideDocumentLinks", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveDocumentLink(value: (/* link */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveDocumentLink", js.Any.fromFunction2(value))
+    inline def setResolveDocumentLink(value: (/* link */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveDocumentLink", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveDocumentLinkUndefined: Self = StObject.set(x, "resolveDocumentLink", js.undefined)
+    inline def setResolveDocumentLinkUndefined: Self = StObject.set(x, "resolveDocumentLink", js.undefined)
   }
 }

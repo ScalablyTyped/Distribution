@@ -10,8 +10,7 @@ trait PutItemOutput
      with typings.awsSdkClientDynamodbBrowser.typesPutItemOutputMod.PutItemOutput
 object PutItemOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): PutItemOutput = {
+  inline def apply($metadata: ResponseMetadata): PutItemOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutItemOutput]
   }

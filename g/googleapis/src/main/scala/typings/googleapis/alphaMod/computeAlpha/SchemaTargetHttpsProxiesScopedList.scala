@@ -20,28 +20,21 @@ trait SchemaTargetHttpsProxiesScopedList extends StObject {
 }
 object SchemaTargetHttpsProxiesScopedList {
   
-  @scala.inline
-  def apply(): SchemaTargetHttpsProxiesScopedList = {
+  inline def apply(): SchemaTargetHttpsProxiesScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTargetHttpsProxiesScopedList]
   }
   
-  @scala.inline
-  implicit class SchemaTargetHttpsProxiesScopedListMutableBuilder[Self <: SchemaTargetHttpsProxiesScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTargetHttpsProxiesScopedList](x: Self) {
     
-    @scala.inline
-    def setTargetHttpsProxies(value: js.Array[SchemaTargetHttpsProxy]): Self = StObject.set(x, "targetHttpsProxies", value.asInstanceOf[js.Any])
+    inline def setTargetHttpsProxies(value: js.Array[SchemaTargetHttpsProxy]): Self = StObject.set(x, "targetHttpsProxies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetHttpsProxiesUndefined: Self = StObject.set(x, "targetHttpsProxies", js.undefined)
+    inline def setTargetHttpsProxiesUndefined: Self = StObject.set(x, "targetHttpsProxies", js.undefined)
     
-    @scala.inline
-    def setTargetHttpsProxiesVarargs(value: SchemaTargetHttpsProxy*): Self = StObject.set(x, "targetHttpsProxies", js.Array(value :_*))
+    inline def setTargetHttpsProxiesVarargs(value: SchemaTargetHttpsProxy*): Self = StObject.set(x, "targetHttpsProxies", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

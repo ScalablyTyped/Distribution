@@ -20,22 +20,17 @@ trait DidSaveTextDocumentParams extends StObject {
 }
 object DidSaveTextDocumentParams {
   
-  @scala.inline
-  def apply(textDocument: VersionedTextDocumentIdentifier): DidSaveTextDocumentParams = {
+  inline def apply(textDocument: VersionedTextDocumentIdentifier): DidSaveTextDocumentParams = {
     val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[DidSaveTextDocumentParams]
   }
   
-  @scala.inline
-  implicit class DidSaveTextDocumentParamsMutableBuilder[Self <: DidSaveTextDocumentParams] (val x: Self) extends AnyVal {
+  extension [Self <: DidSaveTextDocumentParams](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDocument(value: VersionedTextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: VersionedTextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

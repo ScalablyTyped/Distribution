@@ -11,14 +11,10 @@ object requireMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPagePath(page: String, distDir: String, serverless: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getPagePath(page: String, distDir: String, serverless: Boolean, dev: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any], dev.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getPagePath(page: String, distDir: String, serverless: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getPagePath(page: String, distDir: String, serverless: Boolean, dev: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any], dev.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def pageNotFoundError(page: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("pageNotFoundError")(page.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def pageNotFoundError(page: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("pageNotFoundError")(page.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @scala.inline
-  def requirePage(page: String, distDir: String, serverless: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requirePage")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def requirePage(page: String, distDir: String, serverless: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requirePage")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

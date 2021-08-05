@@ -13,22 +13,17 @@ trait DiscriminatorObject extends StObject {
 }
 object DiscriminatorObject {
   
-  @scala.inline
-  def apply(propertyName: String): DiscriminatorObject = {
+  inline def apply(propertyName: String): DiscriminatorObject = {
     val __obj = js.Dynamic.literal(propertyName = propertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscriminatorObject]
   }
   
-  @scala.inline
-  implicit class DiscriminatorObjectMutableBuilder[Self <: DiscriminatorObject] (val x: Self) extends AnyVal {
+  extension [Self <: DiscriminatorObject](x: Self) {
     
-    @scala.inline
-    def setMapping(value: StringDictionary[String]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+    inline def setMapping(value: StringDictionary[String]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
+    inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
   }
 }

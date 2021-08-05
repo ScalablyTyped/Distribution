@@ -20,46 +20,33 @@ trait WindowsInformationProtectionDataRecoveryCertificate extends StObject {
 }
 object WindowsInformationProtectionDataRecoveryCertificate {
   
-  @scala.inline
-  def apply(): WindowsInformationProtectionDataRecoveryCertificate = {
+  inline def apply(): WindowsInformationProtectionDataRecoveryCertificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsInformationProtectionDataRecoveryCertificate]
   }
   
-  @scala.inline
-  implicit class WindowsInformationProtectionDataRecoveryCertificateMutableBuilder[Self <: WindowsInformationProtectionDataRecoveryCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsInformationProtectionDataRecoveryCertificate](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: NullableOption[Double]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: NullableOption[Double]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateNull: Self = StObject.set(x, "certificate", null)
+    inline def setCertificateNull: Self = StObject.set(x, "certificate", null)
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExpirationDateTime(value: String): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
+    inline def setExpirationDateTime(value: String): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
+    inline def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
-    @scala.inline
-    def setSubjectName(value: NullableOption[String]): Self = StObject.set(x, "subjectName", value.asInstanceOf[js.Any])
+    inline def setSubjectName(value: NullableOption[String]): Self = StObject.set(x, "subjectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectNameNull: Self = StObject.set(x, "subjectName", null)
+    inline def setSubjectNameNull: Self = StObject.set(x, "subjectName", null)
     
-    @scala.inline
-    def setSubjectNameUndefined: Self = StObject.set(x, "subjectName", js.undefined)
+    inline def setSubjectNameUndefined: Self = StObject.set(x, "subjectName", js.undefined)
   }
 }

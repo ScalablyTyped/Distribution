@@ -11,22 +11,17 @@ trait DocumentMask extends StObject {
 }
 object DocumentMask {
   
-  @scala.inline
-  def apply(): DocumentMask = {
+  inline def apply(): DocumentMask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentMask]
   }
   
-  @scala.inline
-  implicit class DocumentMaskMutableBuilder[Self <: DocumentMask] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentMask](x: Self) {
     
-    @scala.inline
-    def setFieldPaths(value: js.Array[String]): Self = StObject.set(x, "fieldPaths", value.asInstanceOf[js.Any])
+    inline def setFieldPaths(value: js.Array[String]): Self = StObject.set(x, "fieldPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldPathsUndefined: Self = StObject.set(x, "fieldPaths", js.undefined)
+    inline def setFieldPathsUndefined: Self = StObject.set(x, "fieldPaths", js.undefined)
     
-    @scala.inline
-    def setFieldPathsVarargs(value: String*): Self = StObject.set(x, "fieldPaths", js.Array(value :_*))
+    inline def setFieldPathsVarargs(value: String*): Self = StObject.set(x, "fieldPaths", js.Array(value :_*))
   }
 }

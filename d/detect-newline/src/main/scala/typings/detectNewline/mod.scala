@@ -18,21 +18,17 @@ object mod {
   	//=> '\n'
   	```
   	*/
-  @scala.inline
-  def apply(string: String): js.UndefOr[CarriagereturnLinefeed | Linefeed] = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CarriagereturnLinefeed | Linefeed]]
+  inline def apply(string: String): js.UndefOr[CarriagereturnLinefeed | Linefeed] = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CarriagereturnLinefeed | Linefeed]]
   
   @JSImport("detect-newline", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def graceful(): Linefeed = ^.asInstanceOf[js.Dynamic].applyDynamic("graceful")().asInstanceOf[Linefeed]
+  inline def graceful(): Linefeed = ^.asInstanceOf[js.Dynamic].applyDynamic("graceful")().asInstanceOf[Linefeed]
   /**
   	Detect the dominant newline character of a string.
   	@returns The detected newline or `\n` when no newline character is found or the input is not a string.
   	*/
-  @scala.inline
-  def graceful(string: String): CarriagereturnLinefeed | Linefeed = ^.asInstanceOf[js.Dynamic].applyDynamic("graceful")(string.asInstanceOf[js.Any]).asInstanceOf[CarriagereturnLinefeed | Linefeed]
-  @scala.inline
-  def graceful(string: js.Any): Linefeed = ^.asInstanceOf[js.Dynamic].applyDynamic("graceful")(string.asInstanceOf[js.Any]).asInstanceOf[Linefeed]
+  inline def graceful(string: String): CarriagereturnLinefeed | Linefeed = ^.asInstanceOf[js.Dynamic].applyDynamic("graceful")(string.asInstanceOf[js.Any]).asInstanceOf[CarriagereturnLinefeed | Linefeed]
+  inline def graceful(string: js.Any): Linefeed = ^.asInstanceOf[js.Dynamic].applyDynamic("graceful")(string.asInstanceOf[js.Any]).asInstanceOf[Linefeed]
 }

@@ -12,8 +12,7 @@ trait ParamsRec
 /* key */ StringDictionary[js.UndefOr[String | Double | Boolean | Null | Params]]
 object ParamsRec {
   
-  @scala.inline
-  def apply(): ParamsRec = {
+  inline def apply(): ParamsRec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsRec]
   }

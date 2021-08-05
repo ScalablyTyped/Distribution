@@ -16,16 +16,13 @@ trait Command extends StObject {
 }
 object Command {
   
-  @scala.inline
-  def apply(register: (String, String, js.Function0[Unit]) => Unit): Command = {
+  inline def apply(register: (String, String, js.Function0[Unit]) => Unit): Command = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction3(register))
     __obj.asInstanceOf[Command]
   }
   
-  @scala.inline
-  implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
+  extension [Self <: Command](x: Self) {
     
-    @scala.inline
-    def setRegister(value: (String, String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction3(value))
+    inline def setRegister(value: (String, String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction3(value))
   }
 }

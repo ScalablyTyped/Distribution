@@ -13,10 +13,8 @@ object interfaceMod {
   trait FormLabelAlign extends StObject
   object FormLabelAlign {
     
-    @scala.inline
-    def left: typings.antd.antdStrings.left = "left".asInstanceOf[typings.antd.antdStrings.left]
+    inline def left: typings.antd.antdStrings.left = "left".asInstanceOf[typings.antd.antdStrings.left]
     
-    @scala.inline
-    def right: typings.antd.antdStrings.right = "right".asInstanceOf[typings.antd.antdStrings.right]
+    inline def right: typings.antd.antdStrings.right = "right".asInstanceOf[typings.antd.antdStrings.right]
   }
 }

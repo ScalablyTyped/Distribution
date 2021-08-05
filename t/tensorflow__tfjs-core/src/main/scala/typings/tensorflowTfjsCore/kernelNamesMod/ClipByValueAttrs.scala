@@ -12,19 +12,15 @@ trait ClipByValueAttrs extends StObject {
 }
 object ClipByValueAttrs {
   
-  @scala.inline
-  def apply(clipValueMax: Double, clipValueMin: Double): ClipByValueAttrs = {
+  inline def apply(clipValueMax: Double, clipValueMin: Double): ClipByValueAttrs = {
     val __obj = js.Dynamic.literal(clipValueMax = clipValueMax.asInstanceOf[js.Any], clipValueMin = clipValueMin.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClipByValueAttrs]
   }
   
-  @scala.inline
-  implicit class ClipByValueAttrsMutableBuilder[Self <: ClipByValueAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: ClipByValueAttrs](x: Self) {
     
-    @scala.inline
-    def setClipValueMax(value: Double): Self = StObject.set(x, "clipValueMax", value.asInstanceOf[js.Any])
+    inline def setClipValueMax(value: Double): Self = StObject.set(x, "clipValueMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipValueMin(value: Double): Self = StObject.set(x, "clipValueMin", value.asInstanceOf[js.Any])
+    inline def setClipValueMin(value: Double): Self = StObject.set(x, "clipValueMin", value.asInstanceOf[js.Any])
   }
 }

@@ -50,8 +50,7 @@ trait XConfigManager
 }
 object XConfigManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     flush: () => Unit,
@@ -64,19 +63,14 @@ object XConfigManager {
     __obj.asInstanceOf[XConfigManager]
   }
   
-  @scala.inline
-  implicit class XConfigManagerMutableBuilder[Self <: XConfigManager] (val x: Self) extends AnyVal {
+  extension [Self <: XConfigManager](x: Self) {
     
-    @scala.inline
-    def setAddPropertyChangeListener(value: (String, XPropertyChangeListener) => Unit): Self = StObject.set(x, "addPropertyChangeListener", js.Any.fromFunction2(value))
+    inline def setAddPropertyChangeListener(value: (String, XPropertyChangeListener) => Unit): Self = StObject.set(x, "addPropertyChangeListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemovePropertyChangeListener(value: (String, XPropertyChangeListener) => Unit): Self = StObject.set(x, "removePropertyChangeListener", js.Any.fromFunction2(value))
+    inline def setRemovePropertyChangeListener(value: (String, XPropertyChangeListener) => Unit): Self = StObject.set(x, "removePropertyChangeListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSubstituteVariables(value: String => String): Self = StObject.set(x, "substituteVariables", js.Any.fromFunction1(value))
+    inline def setSubstituteVariables(value: String => String): Self = StObject.set(x, "substituteVariables", js.Any.fromFunction1(value))
   }
 }

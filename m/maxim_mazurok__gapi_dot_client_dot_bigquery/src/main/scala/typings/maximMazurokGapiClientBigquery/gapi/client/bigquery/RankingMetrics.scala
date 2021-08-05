@@ -23,37 +23,27 @@ trait RankingMetrics extends StObject {
 }
 object RankingMetrics {
   
-  @scala.inline
-  def apply(): RankingMetrics = {
+  inline def apply(): RankingMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RankingMetrics]
   }
   
-  @scala.inline
-  implicit class RankingMetricsMutableBuilder[Self <: RankingMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: RankingMetrics](x: Self) {
     
-    @scala.inline
-    def setAverageRank(value: Double): Self = StObject.set(x, "averageRank", value.asInstanceOf[js.Any])
+    inline def setAverageRank(value: Double): Self = StObject.set(x, "averageRank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageRankUndefined: Self = StObject.set(x, "averageRank", js.undefined)
+    inline def setAverageRankUndefined: Self = StObject.set(x, "averageRank", js.undefined)
     
-    @scala.inline
-    def setMeanAveragePrecision(value: Double): Self = StObject.set(x, "meanAveragePrecision", value.asInstanceOf[js.Any])
+    inline def setMeanAveragePrecision(value: Double): Self = StObject.set(x, "meanAveragePrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanAveragePrecisionUndefined: Self = StObject.set(x, "meanAveragePrecision", js.undefined)
+    inline def setMeanAveragePrecisionUndefined: Self = StObject.set(x, "meanAveragePrecision", js.undefined)
     
-    @scala.inline
-    def setMeanSquaredError(value: Double): Self = StObject.set(x, "meanSquaredError", value.asInstanceOf[js.Any])
+    inline def setMeanSquaredError(value: Double): Self = StObject.set(x, "meanSquaredError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanSquaredErrorUndefined: Self = StObject.set(x, "meanSquaredError", js.undefined)
+    inline def setMeanSquaredErrorUndefined: Self = StObject.set(x, "meanSquaredError", js.undefined)
     
-    @scala.inline
-    def setNormalizedDiscountedCumulativeGain(value: Double): Self = StObject.set(x, "normalizedDiscountedCumulativeGain", value.asInstanceOf[js.Any])
+    inline def setNormalizedDiscountedCumulativeGain(value: Double): Self = StObject.set(x, "normalizedDiscountedCumulativeGain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedDiscountedCumulativeGainUndefined: Self = StObject.set(x, "normalizedDiscountedCumulativeGain", js.undefined)
+    inline def setNormalizedDiscountedCumulativeGainUndefined: Self = StObject.set(x, "normalizedDiscountedCumulativeGain", js.undefined)
   }
 }

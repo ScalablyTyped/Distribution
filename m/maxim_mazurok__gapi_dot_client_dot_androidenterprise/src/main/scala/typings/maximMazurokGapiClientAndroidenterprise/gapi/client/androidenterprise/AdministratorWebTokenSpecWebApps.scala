@@ -11,19 +11,15 @@ trait AdministratorWebTokenSpecWebApps extends StObject {
 }
 object AdministratorWebTokenSpecWebApps {
   
-  @scala.inline
-  def apply(): AdministratorWebTokenSpecWebApps = {
+  inline def apply(): AdministratorWebTokenSpecWebApps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdministratorWebTokenSpecWebApps]
   }
   
-  @scala.inline
-  implicit class AdministratorWebTokenSpecWebAppsMutableBuilder[Self <: AdministratorWebTokenSpecWebApps] (val x: Self) extends AnyVal {
+  extension [Self <: AdministratorWebTokenSpecWebApps](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

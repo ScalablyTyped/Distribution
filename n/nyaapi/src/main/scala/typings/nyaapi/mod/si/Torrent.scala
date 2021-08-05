@@ -32,8 +32,7 @@ trait Torrent extends StObject {
 }
 object Torrent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     category: String,
     completed: String,
     date: String,
@@ -51,43 +50,30 @@ object Torrent {
     __obj.asInstanceOf[Torrent]
   }
   
-  @scala.inline
-  implicit class TorrentMutableBuilder[Self <: Torrent] (val x: Self) extends AnyVal {
+  extension [Self <: Torrent](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleted(value: String): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: String): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesize(value: String): Self = StObject.set(x, "filesize", value.asInstanceOf[js.Any])
+    inline def setFilesize(value: String): Self = StObject.set(x, "filesize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeechers(value: String): Self = StObject.set(x, "leechers", value.asInstanceOf[js.Any])
+    inline def setLeechers(value: String): Self = StObject.set(x, "leechers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagnet(value: String): Self = StObject.set(x, "magnet", value.asInstanceOf[js.Any])
+    inline def setMagnet(value: String): Self = StObject.set(x, "magnet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeeders(value: String): Self = StObject.set(x, "seeders", value.asInstanceOf[js.Any])
+    inline def setSeeders(value: String): Self = StObject.set(x, "seeders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSub_category(value: String): Self = StObject.set(x, "sub_category", value.asInstanceOf[js.Any])
+    inline def setSub_category(value: String): Self = StObject.set(x, "sub_category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTorrent(value: String): Self = StObject.set(x, "torrent", value.asInstanceOf[js.Any])
+    inline def setTorrent(value: String): Self = StObject.set(x, "torrent", value.asInstanceOf[js.Any])
   }
 }

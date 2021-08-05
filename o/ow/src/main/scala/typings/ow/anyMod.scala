@@ -16,8 +16,8 @@ object anyMod {
     def this(predicates: js.Array[BasePredicate[js.Any]]) = this()
     def this(predicates: js.Array[BasePredicate[js.Any]], options: PredicateOptions) = this()
     
-    val options: js.Any = js.native
+    /* private */ val options: js.Any = js.native
     
-    val predicates: js.Any = js.native
+    /* private */ val predicates: js.Any = js.native
   }
 }

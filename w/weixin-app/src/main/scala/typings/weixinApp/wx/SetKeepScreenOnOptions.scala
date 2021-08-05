@@ -17,22 +17,17 @@ trait SetKeepScreenOnOptions
 }
 object SetKeepScreenOnOptions {
   
-  @scala.inline
-  def apply(keepScreenOn: Boolean): SetKeepScreenOnOptions = {
+  inline def apply(keepScreenOn: Boolean): SetKeepScreenOnOptions = {
     val __obj = js.Dynamic.literal(keepScreenOn = keepScreenOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetKeepScreenOnOptions]
   }
   
-  @scala.inline
-  implicit class SetKeepScreenOnOptionsMutableBuilder[Self <: SetKeepScreenOnOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SetKeepScreenOnOptions](x: Self) {
     
-    @scala.inline
-    def setKeepScreenOn(value: Boolean): Self = StObject.set(x, "keepScreenOn", value.asInstanceOf[js.Any])
+    inline def setKeepScreenOn(value: Boolean): Self = StObject.set(x, "keepScreenOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ ErrMsg => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ ErrMsg => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

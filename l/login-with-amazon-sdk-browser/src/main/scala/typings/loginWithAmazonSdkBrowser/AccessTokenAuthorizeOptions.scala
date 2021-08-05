@@ -14,19 +14,15 @@ trait AccessTokenAuthorizeOptions
 }
 object AccessTokenAuthorizeOptions {
   
-  @scala.inline
-  def apply(scope: AuthorizeScope): AccessTokenAuthorizeOptions = {
+  inline def apply(scope: AuthorizeScope): AccessTokenAuthorizeOptions = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessTokenAuthorizeOptions]
   }
   
-  @scala.inline
-  implicit class AccessTokenAuthorizeOptionsMutableBuilder[Self <: AccessTokenAuthorizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AccessTokenAuthorizeOptions](x: Self) {
     
-    @scala.inline
-    def setResponse_type(value: token): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+    inline def setResponse_type(value: token): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
+    inline def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
   }
 }

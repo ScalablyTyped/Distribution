@@ -20,16 +20,12 @@ object Certificate {
   @js.native
   def apply(): Certificate = js.native
   
-  @scala.inline
-  implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
+  extension [Self <: Certificate](x: Self) {
     
-    @scala.inline
-    def setExportChallenge(value: BinaryLike => Buffer): Self = StObject.set(x, "exportChallenge", js.Any.fromFunction1(value))
+    inline def setExportChallenge(value: BinaryLike => Buffer): Self = StObject.set(x, "exportChallenge", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExportPublicKey(value: BinaryLike => Buffer): Self = StObject.set(x, "exportPublicKey", js.Any.fromFunction1(value))
+    inline def setExportPublicKey(value: BinaryLike => Buffer): Self = StObject.set(x, "exportPublicKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVerifySpkac(value: ArrayBufferView => Boolean): Self = StObject.set(x, "verifySpkac", js.Any.fromFunction1(value))
+    inline def setVerifySpkac(value: ArrayBufferView => Boolean): Self = StObject.set(x, "verifySpkac", js.Any.fromFunction1(value))
   }
 }

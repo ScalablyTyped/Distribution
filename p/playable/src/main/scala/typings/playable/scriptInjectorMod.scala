@@ -10,10 +10,8 @@ object scriptInjectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(src: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def default(src: String, props: IScriptAttributes): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(src: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(src: String, props: IScriptAttributes): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait IScriptAttributes extends StObject {
     
@@ -27,30 +25,23 @@ object scriptInjectorMod {
   }
   object IScriptAttributes {
     
-    @scala.inline
-    def apply(async: Boolean, text: String, `type`: String): IScriptAttributes = {
+    inline def apply(async: Boolean, text: String, `type`: String): IScriptAttributes = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], crossOrigin = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IScriptAttributes]
     }
     
-    @scala.inline
-    implicit class IScriptAttributesMutableBuilder[Self <: IScriptAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: IScriptAttributes](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

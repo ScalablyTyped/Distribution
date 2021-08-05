@@ -18,19 +18,15 @@ trait ItemDetailsOptions extends StObject {
 }
 object ItemDetailsOptions {
   
-  @scala.inline
-  def apply(includeContentMetadata: Boolean, recursionLevel: VersionControlRecursionType): ItemDetailsOptions = {
+  inline def apply(includeContentMetadata: Boolean, recursionLevel: VersionControlRecursionType): ItemDetailsOptions = {
     val __obj = js.Dynamic.literal(includeContentMetadata = includeContentMetadata.asInstanceOf[js.Any], recursionLevel = recursionLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemDetailsOptions]
   }
   
-  @scala.inline
-  implicit class ItemDetailsOptionsMutableBuilder[Self <: ItemDetailsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ItemDetailsOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeContentMetadata(value: Boolean): Self = StObject.set(x, "includeContentMetadata", value.asInstanceOf[js.Any])
+    inline def setIncludeContentMetadata(value: Boolean): Self = StObject.set(x, "includeContentMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursionLevel(value: VersionControlRecursionType): Self = StObject.set(x, "recursionLevel", value.asInstanceOf[js.Any])
+    inline def setRecursionLevel(value: VersionControlRecursionType): Self = StObject.set(x, "recursionLevel", value.asInstanceOf[js.Any])
   }
 }

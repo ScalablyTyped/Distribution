@@ -30,23 +30,18 @@ object eventTransactionRollbackEventMod {
   }
   object TransactionRollbackEvent {
     
-    @scala.inline
-    def apply(connection: Connection, manager: EntityManager, queryRunner: QueryRunner): TransactionRollbackEvent = {
+    inline def apply(connection: Connection, manager: EntityManager, queryRunner: QueryRunner): TransactionRollbackEvent = {
       val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any], queryRunner = queryRunner.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactionRollbackEvent]
     }
     
-    @scala.inline
-    implicit class TransactionRollbackEventMutableBuilder[Self <: TransactionRollbackEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionRollbackEvent](x: Self) {
       
-      @scala.inline
-      def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManager(value: EntityManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+      inline def setManager(value: EntityManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryRunner(value: QueryRunner): Self = StObject.set(x, "queryRunner", value.asInstanceOf[js.Any])
+      inline def setQueryRunner(value: QueryRunner): Self = StObject.set(x, "queryRunner", value.asInstanceOf[js.Any])
     }
   }
 }

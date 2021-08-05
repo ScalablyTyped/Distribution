@@ -19,20 +19,16 @@ object anon {
   }
   object Attrs {
     
-    @scala.inline
-    def apply(attrs: ShortcodeAttrs, tag: String): Attrs = {
+    inline def apply(attrs: ShortcodeAttrs, tag: String): Attrs = {
       val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attrs]
     }
     
-    @scala.inline
-    implicit class AttrsMutableBuilder[Self <: Attrs] (val x: Self) extends AnyVal {
+    extension [Self <: Attrs](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: ShortcodeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: ShortcodeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,21 +69,17 @@ object anon {
   }
   object Content {
     
-    @scala.inline
-    def apply(content: String): Content = {
+    inline def apply(content: String): Content = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("closed")
       __obj.asInstanceOf[Content]
     }
     
-    @scala.inline
-    implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+    extension [Self <: Content](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: closed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: closed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,29 +92,22 @@ object anon {
   }
   object PartialShortcodeAttrs {
     
-    @scala.inline
-    def apply(): PartialShortcodeAttrs = {
+    inline def apply(): PartialShortcodeAttrs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialShortcodeAttrs]
     }
     
-    @scala.inline
-    implicit class PartialShortcodeAttrsMutableBuilder[Self <: PartialShortcodeAttrs] (val x: Self) extends AnyVal {
+    extension [Self <: PartialShortcodeAttrs](x: Self) {
       
-      @scala.inline
-      def setNamed(value: Record[String, js.UndefOr[String]]): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
+      inline def setNamed(value: Record[String, js.UndefOr[String]]): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedUndefined: Self = StObject.set(x, "named", js.undefined)
+      inline def setNamedUndefined: Self = StObject.set(x, "named", js.undefined)
       
-      @scala.inline
-      def setNumeric(value: js.Array[String]): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+      inline def setNumeric(value: js.Array[String]): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
+      inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
       
-      @scala.inline
-      def setNumericVarargs(value: String*): Self = StObject.set(x, "numeric", js.Array(value :_*))
+      inline def setNumericVarargs(value: String*): Self = StObject.set(x, "numeric", js.Array(value :_*))
     }
   }
   
@@ -139,38 +124,28 @@ object anon {
   }
   object PartialShortcodeOptions {
     
-    @scala.inline
-    def apply(): PartialShortcodeOptions = {
+    inline def apply(): PartialShortcodeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialShortcodeOptions]
     }
     
-    @scala.inline
-    implicit class PartialShortcodeOptionsMutableBuilder[Self <: PartialShortcodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialShortcodeOptions](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: PartialShortcodeAttrs | String): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: PartialShortcodeAttrs | String): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setType(value: closed | `self-closing` | single): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: closed | `self-closing` | single): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -180,18 +155,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(`type`: `self-closing` | single): Type = {
+    inline def apply(`type`: `self-closing` | single): Type = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: `self-closing` | single): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `self-closing` | single): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

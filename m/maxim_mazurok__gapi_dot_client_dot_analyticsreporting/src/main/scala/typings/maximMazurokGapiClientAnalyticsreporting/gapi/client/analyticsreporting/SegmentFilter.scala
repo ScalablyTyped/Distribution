@@ -24,31 +24,23 @@ trait SegmentFilter extends StObject {
 }
 object SegmentFilter {
   
-  @scala.inline
-  def apply(): SegmentFilter = {
+  inline def apply(): SegmentFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentFilter]
   }
   
-  @scala.inline
-  implicit class SegmentFilterMutableBuilder[Self <: SegmentFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentFilter](x: Self) {
     
-    @scala.inline
-    def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+    inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+    inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
     
-    @scala.inline
-    def setSequenceSegment(value: SequenceSegment): Self = StObject.set(x, "sequenceSegment", value.asInstanceOf[js.Any])
+    inline def setSequenceSegment(value: SequenceSegment): Self = StObject.set(x, "sequenceSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceSegmentUndefined: Self = StObject.set(x, "sequenceSegment", js.undefined)
+    inline def setSequenceSegmentUndefined: Self = StObject.set(x, "sequenceSegment", js.undefined)
     
-    @scala.inline
-    def setSimpleSegment(value: SimpleSegment): Self = StObject.set(x, "simpleSegment", value.asInstanceOf[js.Any])
+    inline def setSimpleSegment(value: SimpleSegment): Self = StObject.set(x, "simpleSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimpleSegmentUndefined: Self = StObject.set(x, "simpleSegment", js.undefined)
+    inline def setSimpleSegmentUndefined: Self = StObject.set(x, "simpleSegment", js.undefined)
   }
 }

@@ -11,21 +11,17 @@ object mod {
     * If the JSON is valid, it just does JSON.parse as normal.
     * If either side of the conflict is invalid JSON, then an error is thrown for that.
     */
-  @scala.inline
-  def apply(text: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(
+  inline def apply(text: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(
     text: String,
     reviver: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
   ): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(
+  inline def apply(
     text: String,
     reviver: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
     prefer: Prefer
   ): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], prefer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(text: String, reviver: Unit, prefer: Prefer): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], prefer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(text: String, reviver: Unit, prefer: Prefer): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], prefer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("parse-conflict-json", JSImport.Namespace)
   @js.native
@@ -34,8 +30,7 @@ object mod {
   /**
     * returns true if the data looks like a conflicted diff file
     */
-  @scala.inline
-  def isDiff(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDiff")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDiff(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDiff")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * If prefer is set to theirs, then the vaules of theirs and ours are switched in the resolver function.
@@ -53,10 +48,8 @@ object mod {
   trait Prefer extends StObject
   object Prefer {
     
-    @scala.inline
-    def ours: typings.parseConflictJson.parseConflictJsonStrings.ours = "ours".asInstanceOf[typings.parseConflictJson.parseConflictJsonStrings.ours]
+    inline def ours: typings.parseConflictJson.parseConflictJsonStrings.ours = "ours".asInstanceOf[typings.parseConflictJson.parseConflictJsonStrings.ours]
     
-    @scala.inline
-    def theirs: typings.parseConflictJson.parseConflictJsonStrings.theirs = "theirs".asInstanceOf[typings.parseConflictJson.parseConflictJsonStrings.theirs]
+    inline def theirs: typings.parseConflictJson.parseConflictJsonStrings.theirs = "theirs".asInstanceOf[typings.parseConflictJson.parseConflictJsonStrings.theirs]
   }
 }

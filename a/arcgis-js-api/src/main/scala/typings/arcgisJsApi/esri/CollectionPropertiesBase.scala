@@ -10,22 +10,17 @@ trait CollectionPropertiesBase[T] extends StObject {
 }
 object CollectionPropertiesBase {
   
-  @scala.inline
-  def apply[T](): CollectionPropertiesBase[T] = {
+  inline def apply[T](): CollectionPropertiesBase[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionPropertiesBase[T]]
   }
   
-  @scala.inline
-  implicit class CollectionPropertiesBaseMutableBuilder[Self <: CollectionPropertiesBase[?], T] (val x: Self & CollectionPropertiesBase[T]) extends AnyVal {
+  extension [Self <: CollectionPropertiesBase[?], T](x: Self & CollectionPropertiesBase[T]) {
     
-    @scala.inline
-    def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

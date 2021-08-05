@@ -8,7 +8,7 @@ object PullHelpers {
   
   trait OtherPullDeclsWalker extends StObject {
     
-    var currentlyWalkingOtherDecls: js.Any
+    /* private */ var currentlyWalkingOtherDecls: js.Any
     
     def walkOtherPullDecls(
       currentDecl: PullDecl,
@@ -18,8 +18,7 @@ object PullHelpers {
   }
   object OtherPullDeclsWalker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentlyWalkingOtherDecls: js.Any,
       walkOtherPullDecls: (PullDecl, js.Array[PullDecl], js.Function1[/* otherDecl */ PullDecl, Unit]) => Unit
     ): OtherPullDeclsWalker = {
@@ -27,14 +26,11 @@ object PullHelpers {
       __obj.asInstanceOf[OtherPullDeclsWalker]
     }
     
-    @scala.inline
-    implicit class OtherPullDeclsWalkerMutableBuilder[Self <: OtherPullDeclsWalker] (val x: Self) extends AnyVal {
+    extension [Self <: OtherPullDeclsWalker](x: Self) {
       
-      @scala.inline
-      def setCurrentlyWalkingOtherDecls(value: js.Any): Self = StObject.set(x, "currentlyWalkingOtherDecls", value.asInstanceOf[js.Any])
+      inline def setCurrentlyWalkingOtherDecls(value: js.Any): Self = StObject.set(x, "currentlyWalkingOtherDecls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWalkOtherPullDecls(value: (PullDecl, js.Array[PullDecl], js.Function1[/* otherDecl */ PullDecl, Unit]) => Unit): Self = StObject.set(x, "walkOtherPullDecls", js.Any.fromFunction3(value))
+      inline def setWalkOtherPullDecls(value: (PullDecl, js.Array[PullDecl], js.Function1[/* otherDecl */ PullDecl, Unit]) => Unit): Self = StObject.set(x, "walkOtherPullDecls", js.Any.fromFunction3(value))
     }
   }
   
@@ -54,8 +50,7 @@ object PullHelpers {
   }
   object PullTypeSymbolStructureWalker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callSignatureWalk: PullSignatureSymbol => Boolean,
       constructSignatureWalk: PullSignatureSymbol => Boolean,
       indexSignatureWalk: PullSignatureSymbol => Boolean,
@@ -67,26 +62,19 @@ object PullHelpers {
       __obj.asInstanceOf[PullTypeSymbolStructureWalker]
     }
     
-    @scala.inline
-    implicit class PullTypeSymbolStructureWalkerMutableBuilder[Self <: PullTypeSymbolStructureWalker] (val x: Self) extends AnyVal {
+    extension [Self <: PullTypeSymbolStructureWalker](x: Self) {
       
-      @scala.inline
-      def setCallSignatureWalk(value: PullSignatureSymbol => Boolean): Self = StObject.set(x, "callSignatureWalk", js.Any.fromFunction1(value))
+      inline def setCallSignatureWalk(value: PullSignatureSymbol => Boolean): Self = StObject.set(x, "callSignatureWalk", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConstructSignatureWalk(value: PullSignatureSymbol => Boolean): Self = StObject.set(x, "constructSignatureWalk", js.Any.fromFunction1(value))
+      inline def setConstructSignatureWalk(value: PullSignatureSymbol => Boolean): Self = StObject.set(x, "constructSignatureWalk", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndexSignatureWalk(value: PullSignatureSymbol => Boolean): Self = StObject.set(x, "indexSignatureWalk", js.Any.fromFunction1(value))
+      inline def setIndexSignatureWalk(value: PullSignatureSymbol => Boolean): Self = StObject.set(x, "indexSignatureWalk", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMemberSymbolWalk(value: PullSymbol => Boolean): Self = StObject.set(x, "memberSymbolWalk", js.Any.fromFunction1(value))
+      inline def setMemberSymbolWalk(value: PullSymbol => Boolean): Self = StObject.set(x, "memberSymbolWalk", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSignatureParameterWalk(value: PullSymbol => Boolean): Self = StObject.set(x, "signatureParameterWalk", js.Any.fromFunction1(value))
+      inline def setSignatureParameterWalk(value: PullSymbol => Boolean): Self = StObject.set(x, "signatureParameterWalk", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSignatureReturnTypeWalk(value: PullTypeSymbol => Boolean): Self = StObject.set(x, "signatureReturnTypeWalk", js.Any.fromFunction1(value))
+      inline def setSignatureReturnTypeWalk(value: PullTypeSymbol => Boolean): Self = StObject.set(x, "signatureReturnTypeWalk", js.Any.fromFunction1(value))
     }
   }
   
@@ -98,23 +86,18 @@ object PullHelpers {
   }
   object SignatureInfoForFuncDecl {
     
-    @scala.inline
-    def apply(allSignatures: js.Array[PullSignatureSymbol], signature: PullSignatureSymbol): SignatureInfoForFuncDecl = {
+    inline def apply(allSignatures: js.Array[PullSignatureSymbol], signature: PullSignatureSymbol): SignatureInfoForFuncDecl = {
       val __obj = js.Dynamic.literal(allSignatures = allSignatures.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignatureInfoForFuncDecl]
     }
     
-    @scala.inline
-    implicit class SignatureInfoForFuncDeclMutableBuilder[Self <: SignatureInfoForFuncDecl] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureInfoForFuncDecl](x: Self) {
       
-      @scala.inline
-      def setAllSignatures(value: js.Array[PullSignatureSymbol]): Self = StObject.set(x, "allSignatures", value.asInstanceOf[js.Any])
+      inline def setAllSignatures(value: js.Array[PullSignatureSymbol]): Self = StObject.set(x, "allSignatures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllSignaturesVarargs(value: PullSignatureSymbol*): Self = StObject.set(x, "allSignatures", js.Array(value :_*))
+      inline def setAllSignaturesVarargs(value: PullSignatureSymbol*): Self = StObject.set(x, "allSignatures", js.Array(value :_*))
       
-      @scala.inline
-      def setSignature(value: PullSignatureSymbol): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: PullSignatureSymbol): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
   }
 }

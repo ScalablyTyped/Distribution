@@ -38,8 +38,7 @@ trait XPrimitiveFactory2D
 }
 object XPrimitiveFactory2D {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createPrimitivesFromXDrawPage: (XDrawPage, SeqEquiv[PropertyValue]) => SafeArray[XPrimitive2D],
     createPrimitivesFromXShape: (XShape, SeqEquiv[PropertyValue]) => SafeArray[XPrimitive2D],
@@ -50,13 +49,10 @@ object XPrimitiveFactory2D {
     __obj.asInstanceOf[XPrimitiveFactory2D]
   }
   
-  @scala.inline
-  implicit class XPrimitiveFactory2DMutableBuilder[Self <: XPrimitiveFactory2D] (val x: Self) extends AnyVal {
+  extension [Self <: XPrimitiveFactory2D](x: Self) {
     
-    @scala.inline
-    def setCreatePrimitivesFromXDrawPage(value: (XDrawPage, SeqEquiv[PropertyValue]) => SafeArray[XPrimitive2D]): Self = StObject.set(x, "createPrimitivesFromXDrawPage", js.Any.fromFunction2(value))
+    inline def setCreatePrimitivesFromXDrawPage(value: (XDrawPage, SeqEquiv[PropertyValue]) => SafeArray[XPrimitive2D]): Self = StObject.set(x, "createPrimitivesFromXDrawPage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreatePrimitivesFromXShape(value: (XShape, SeqEquiv[PropertyValue]) => SafeArray[XPrimitive2D]): Self = StObject.set(x, "createPrimitivesFromXShape", js.Any.fromFunction2(value))
+    inline def setCreatePrimitivesFromXShape(value: (XShape, SeqEquiv[PropertyValue]) => SafeArray[XPrimitive2D]): Self = StObject.set(x, "createPrimitivesFromXShape", js.Any.fromFunction2(value))
   }
 }

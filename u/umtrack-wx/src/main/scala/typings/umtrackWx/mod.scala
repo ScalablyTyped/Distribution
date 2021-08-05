@@ -43,35 +43,26 @@ object mod extends Shortcut {
     }
     object InitParams {
       
-      @scala.inline
-      def apply(appKey: String): InitParams = {
+      inline def apply(appKey: String): InitParams = {
         val __obj = js.Dynamic.literal(appKey = appKey.asInstanceOf[js.Any])
         __obj.asInstanceOf[InitParams]
       }
       
-      @scala.inline
-      implicit class InitParamsMutableBuilder[Self <: InitParams] (val x: Self) extends AnyVal {
+      extension [Self <: InitParams](x: Self) {
         
-        @scala.inline
-        def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
+        inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoGetOpenid(value: Boolean): Self = StObject.set(x, "autoGetOpenid", value.asInstanceOf[js.Any])
+        inline def setAutoGetOpenid(value: Boolean): Self = StObject.set(x, "autoGetOpenid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoGetOpenidUndefined: Self = StObject.set(x, "autoGetOpenid", js.undefined)
+        inline def setAutoGetOpenidUndefined: Self = StObject.set(x, "autoGetOpenid", js.undefined)
         
-        @scala.inline
-        def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+        inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+        inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
         
-        @scala.inline
-        def setUseOpenid(value: Boolean): Self = StObject.set(x, "useOpenid", value.asInstanceOf[js.Any])
+        inline def setUseOpenid(value: Boolean): Self = StObject.set(x, "useOpenid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseOpenidUndefined: Self = StObject.set(x, "useOpenid", js.undefined)
+        inline def setUseOpenidUndefined: Self = StObject.set(x, "useOpenid", js.undefined)
       }
     }
     

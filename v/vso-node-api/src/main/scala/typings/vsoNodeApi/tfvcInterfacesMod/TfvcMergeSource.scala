@@ -28,25 +28,19 @@ trait TfvcMergeSource extends StObject {
 }
 object TfvcMergeSource {
   
-  @scala.inline
-  def apply(isRename: Boolean, serverItem: String, versionFrom: Double, versionTo: Double): TfvcMergeSource = {
+  inline def apply(isRename: Boolean, serverItem: String, versionFrom: Double, versionTo: Double): TfvcMergeSource = {
     val __obj = js.Dynamic.literal(isRename = isRename.asInstanceOf[js.Any], serverItem = serverItem.asInstanceOf[js.Any], versionFrom = versionFrom.asInstanceOf[js.Any], versionTo = versionTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[TfvcMergeSource]
   }
   
-  @scala.inline
-  implicit class TfvcMergeSourceMutableBuilder[Self <: TfvcMergeSource] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcMergeSource](x: Self) {
     
-    @scala.inline
-    def setIsRename(value: Boolean): Self = StObject.set(x, "isRename", value.asInstanceOf[js.Any])
+    inline def setIsRename(value: Boolean): Self = StObject.set(x, "isRename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerItem(value: String): Self = StObject.set(x, "serverItem", value.asInstanceOf[js.Any])
+    inline def setServerItem(value: String): Self = StObject.set(x, "serverItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionFrom(value: Double): Self = StObject.set(x, "versionFrom", value.asInstanceOf[js.Any])
+    inline def setVersionFrom(value: Double): Self = StObject.set(x, "versionFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionTo(value: Double): Self = StObject.set(x, "versionTo", value.asInstanceOf[js.Any])
+    inline def setVersionTo(value: Double): Self = StObject.set(x, "versionTo", value.asInstanceOf[js.Any])
   }
 }

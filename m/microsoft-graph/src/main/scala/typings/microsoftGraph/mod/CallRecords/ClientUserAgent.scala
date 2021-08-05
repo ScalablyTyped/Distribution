@@ -22,25 +22,19 @@ trait ClientUserAgent
 }
 object ClientUserAgent {
   
-  @scala.inline
-  def apply(): ClientUserAgent = {
+  inline def apply(): ClientUserAgent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientUserAgent]
   }
   
-  @scala.inline
-  implicit class ClientUserAgentMutableBuilder[Self <: ClientUserAgent] (val x: Self) extends AnyVal {
+  extension [Self <: ClientUserAgent](x: Self) {
     
-    @scala.inline
-    def setPlatform(value: ClientPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: ClientPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setProductFamily(value: ProductFamily): Self = StObject.set(x, "productFamily", value.asInstanceOf[js.Any])
+    inline def setProductFamily(value: ProductFamily): Self = StObject.set(x, "productFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductFamilyUndefined: Self = StObject.set(x, "productFamily", js.undefined)
+    inline def setProductFamilyUndefined: Self = StObject.set(x, "productFamily", js.undefined)
   }
 }

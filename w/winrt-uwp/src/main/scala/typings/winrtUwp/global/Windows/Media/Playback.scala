@@ -36,81 +36,68 @@ object Playback {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_messagereceivedfrombackground(`type`: messagereceivedfrombackground, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_messagereceivedfrombackground(`type`: messagereceivedfrombackground, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_messagereceivedfromforeground(`type`: messagereceivedfromforeground, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_messagereceivedfromforeground(`type`: messagereceivedfromforeground, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets the current instance of the background media player. */
     /* static member */
     @JSGlobal("Windows.Media.Playback.BackgroundMediaPlayer.current")
     @js.native
     def current: typings.winrtUwp.Windows.Media.Playback.MediaPlayer = js.native
-    @scala.inline
-    def current_=(x: typings.winrtUwp.Windows.Media.Playback.MediaPlayer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
+    inline def current_=(x: typings.winrtUwp.Windows.Media.Playback.MediaPlayer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
     
     /**
       * Returns a Boolean value indicating if other media is currently playing on the device.
       * @return Boolean value indicating if other media is currently playing on the device.
       */
     /* static member */
-    @scala.inline
-    def isMediaPlaying(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMediaPlaying")().asInstanceOf[Boolean]
+    inline def isMediaPlaying(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMediaPlaying")().asInstanceOf[Boolean]
     
     /** Occurs when a message is received from the background task. */
     /* static member */
     @JSGlobal("Windows.Media.Playback.BackgroundMediaPlayer.onmessagereceivedfrombackground")
     @js.native
     def onmessagereceivedfrombackground: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onmessagereceivedfrombackground_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onmessagereceivedfrombackground")(x.asInstanceOf[js.Any])
+    inline def onmessagereceivedfrombackground_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onmessagereceivedfrombackground")(x.asInstanceOf[js.Any])
     
     /** Occurs when a message is received from the foreground task. */
     /* static member */
     @JSGlobal("Windows.Media.Playback.BackgroundMediaPlayer.onmessagereceivedfromforeground")
     @js.native
     def onmessagereceivedfromforeground: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onmessagereceivedfromforeground_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onmessagereceivedfromforeground")(x.asInstanceOf[js.Any])
+    inline def onmessagereceivedfromforeground_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onmessagereceivedfromforeground")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_messagereceivedfrombackground(`type`: messagereceivedfrombackground, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_messagereceivedfrombackground(`type`: messagereceivedfrombackground, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_messagereceivedfromforeground(`type`: messagereceivedfromforeground, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_messagereceivedfromforeground(`type`: messagereceivedfromforeground, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sends a message to the background media player.
       * @param value Set of values representing the message.
       */
     /* static member */
-    @scala.inline
-    def sendMessageToBackground(value: ValueSet): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageToBackground")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def sendMessageToBackground(value: ValueSet): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageToBackground")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Sends a message to the foreground task.
       * @param value Set of values representing the message.
       */
     /* static member */
-    @scala.inline
-    def sendMessageToForeground(value: ValueSet): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageToForeground")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def sendMessageToForeground(value: ValueSet): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageToForeground")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Shuts down the current background media player. */
     /* static member */
-    @scala.inline
-    def shutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Unit]
+    inline def shutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Unit]
   }
   
   /** Provides data for the MediaPlaybackList::CurrentItemChanged event. */
@@ -159,8 +146,7 @@ object Playback {
     @JSGlobal("Windows.Media.Playback.MediaPlaybackItem.findFromMediaSource")
     @js.native
     def findFromMediaSource: js.Any = js.native
-    @scala.inline
-    def findFromMediaSource_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findFromMediaSource")(x.asInstanceOf[js.Any])
+    inline def findFromMediaSource_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findFromMediaSource")(x.asInstanceOf[js.Any])
   }
   
   /** Represents an error that occurred trying to resolve a MediaPlaybackItem . */
@@ -502,13 +488,11 @@ object Playback {
   @JSGlobal("Windows.Media.Playback.ateChangeRequestedEventArgs")
   @js.native
   def ateChangeRequestedEventArgs: js.Any = js.native
-  @scala.inline
-  def ateChangeRequestedEventArgs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ateChangeRequestedEventArgs")(x.asInstanceOf[js.Any])
+  inline def ateChangeRequestedEventArgs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ateChangeRequestedEventArgs")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   @JSGlobal("Windows.Media.Playback.ositionChangeRequestedEventArgs")
   @js.native
   def ositionChangeRequestedEventArgs: js.Any = js.native
-  @scala.inline
-  def ositionChangeRequestedEventArgs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ositionChangeRequestedEventArgs")(x.asInstanceOf[js.Any])
+  inline def ositionChangeRequestedEventArgs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ositionChangeRequestedEventArgs")(x.asInstanceOf[js.Any])
 }

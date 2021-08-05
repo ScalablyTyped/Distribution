@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClientCertType extends StObject
 object ClientCertType {
   
-  @scala.inline
-  def Pattern: typings.chromeApps.chromeAppsStrings.Pattern = "Pattern".asInstanceOf[typings.chromeApps.chromeAppsStrings.Pattern]
+  inline def Pattern: typings.chromeApps.chromeAppsStrings.Pattern = "Pattern".asInstanceOf[typings.chromeApps.chromeAppsStrings.Pattern]
   
-  @scala.inline
-  def Ref: typings.chromeApps.chromeAppsStrings.Ref = "Ref".asInstanceOf[typings.chromeApps.chromeAppsStrings.Ref]
+  inline def Ref: typings.chromeApps.chromeAppsStrings.Ref = "Ref".asInstanceOf[typings.chromeApps.chromeAppsStrings.Ref]
 }

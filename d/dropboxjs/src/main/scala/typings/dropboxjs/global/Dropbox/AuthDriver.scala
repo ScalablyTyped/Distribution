@@ -66,16 +66,13 @@ object AuthDriver {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def cleanupLocation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanupLocation")().asInstanceOf[Unit]
+    inline def cleanupLocation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanupLocation")().asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def currentLocation(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("currentLocation")().asInstanceOf[String]
+    inline def currentLocation(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("currentLocation")().asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def localStorage(): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("localStorage")().asInstanceOf[Storage]
+    inline def localStorage(): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("localStorage")().asInstanceOf[Storage]
   }
   
   @JSGlobal("Dropbox.AuthDriver.ChromeApp")
@@ -100,8 +97,7 @@ object AuthDriver {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def oauthReceiver(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("oauthReceiver")().asInstanceOf[Unit]
+    inline def oauthReceiver(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("oauthReceiver")().asInstanceOf[Unit]
   }
   
   @JSGlobal("Dropbox.AuthDriver.Cordova")
@@ -118,8 +114,7 @@ object AuthDriver {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def oauthReceiver(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("oauthReceiver")().asInstanceOf[Unit]
+    inline def oauthReceiver(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("oauthReceiver")().asInstanceOf[Unit]
   }
   
   /** Do not use class! TypeScript definition implementation detail : https://github.com/Microsoft/TypeScript/issues/371 */
@@ -151,12 +146,10 @@ object AuthDriver {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def locationOrigin(location: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locationOrigin")(location.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def locationOrigin(location: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locationOrigin")(location.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def oauthReceiver(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("oauthReceiver")().asInstanceOf[Unit]
+    inline def oauthReceiver(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("oauthReceiver")().asInstanceOf[Unit]
   }
   
   @JSGlobal("Dropbox.AuthDriver.Redirect")

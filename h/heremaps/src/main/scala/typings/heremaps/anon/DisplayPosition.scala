@@ -20,8 +20,7 @@ trait DisplayPosition extends StObject {
 }
 object DisplayPosition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Address: AdditionalData,
     DisplayPosition: Longitude,
     LocationId: String,
@@ -33,28 +32,20 @@ object DisplayPosition {
     __obj.asInstanceOf[DisplayPosition]
   }
   
-  @scala.inline
-  implicit class DisplayPositionMutableBuilder[Self <: DisplayPosition] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayPosition](x: Self) {
     
-    @scala.inline
-    def setAddress(value: AdditionalData): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: AdditionalData): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayPosition(value: Longitude): Self = StObject.set(x, "DisplayPosition", value.asInstanceOf[js.Any])
+    inline def setDisplayPosition(value: Longitude): Self = StObject.set(x, "DisplayPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationId(value: String): Self = StObject.set(x, "LocationId", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "LocationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationType(value: String): Self = StObject.set(x, "LocationType", value.asInstanceOf[js.Any])
+    inline def setLocationType(value: String): Self = StObject.set(x, "LocationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapView(value: BottomRight): Self = StObject.set(x, "MapView", value.asInstanceOf[js.Any])
+    inline def setMapView(value: BottomRight): Self = StObject.set(x, "MapView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationPosition(value: js.Array[Longitude]): Self = StObject.set(x, "NavigationPosition", value.asInstanceOf[js.Any])
+    inline def setNavigationPosition(value: js.Array[Longitude]): Self = StObject.set(x, "NavigationPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationPositionVarargs(value: Longitude*): Self = StObject.set(x, "NavigationPosition", js.Array(value :_*))
+    inline def setNavigationPositionVarargs(value: Longitude*): Self = StObject.set(x, "NavigationPosition", js.Array(value :_*))
   }
 }

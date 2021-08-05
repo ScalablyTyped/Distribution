@@ -14,22 +14,17 @@ trait ReturnTypeReadResponse extends StObject {
 }
 object ReturnTypeReadResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[ReadRequest], returnType: ReadResponse): ReturnTypeReadResponse = {
+  inline def apply(paramsType: js.Array[ReadRequest], returnType: ReadResponse): ReturnTypeReadResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeReadResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeReadResponseMutableBuilder[Self <: ReturnTypeReadResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeReadResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[ReadRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[ReadRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: ReadRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: ReadRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: ReadResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: ReadResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

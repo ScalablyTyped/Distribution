@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RulesApplied extends StObject {
   
-  @JSName("MSHTML.RulesApplied_typekey")
+  /* private */ @JSName("MSHTML.RulesApplied_typekey")
   var MSHTMLDotRulesApplied_typekey: RulesApplied
   
   def appliedRules(index: Double): IHTMLStyleSheetRule
@@ -25,8 +25,7 @@ trait RulesApplied extends StObject {
 }
 object RulesApplied {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotRulesApplied_typekey: RulesApplied,
     appliedRules: IHTMLStyleSheetRulesAppliedCollection,
     element: IHTMLElement,
@@ -40,28 +39,20 @@ object RulesApplied {
     __obj.asInstanceOf[RulesApplied]
   }
   
-  @scala.inline
-  implicit class RulesAppliedMutableBuilder[Self <: RulesApplied] (val x: Self) extends AnyVal {
+  extension [Self <: RulesApplied](x: Self) {
     
-    @scala.inline
-    def setAppliedRules(value: IHTMLStyleSheetRulesAppliedCollection): Self = StObject.set(x, "appliedRules", value.asInstanceOf[js.Any])
+    inline def setAppliedRules(value: IHTMLStyleSheetRulesAppliedCollection): Self = StObject.set(x, "appliedRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: IHTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: IHTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasInheritableProperty(value: () => Boolean): Self = StObject.set(x, "hasInheritableProperty", js.Any.fromFunction0(value))
+    inline def setHasInheritableProperty(value: () => Boolean): Self = StObject.set(x, "hasInheritableProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInlineStyles(value: IHTMLStyle): Self = StObject.set(x, "inlineStyles", value.asInstanceOf[js.Any])
+    inline def setInlineStyles(value: IHTMLStyle): Self = StObject.set(x, "inlineStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotRulesApplied_typekey(value: RulesApplied): Self = StObject.set(x, "MSHTML.RulesApplied_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotRulesApplied_typekey(value: RulesApplied): Self = StObject.set(x, "MSHTML.RulesApplied_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyIsInheritable(value: String => Boolean): Self = StObject.set(x, "propertyIsInheritable", js.Any.fromFunction1(value))
+    inline def setPropertyIsInheritable(value: String => Boolean): Self = StObject.set(x, "propertyIsInheritable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropertyIsInline(value: String => Boolean): Self = StObject.set(x, "propertyIsInline", js.Any.fromFunction1(value))
+    inline def setPropertyIsInline(value: String => Boolean): Self = StObject.set(x, "propertyIsInline", js.Any.fromFunction1(value))
   }
 }

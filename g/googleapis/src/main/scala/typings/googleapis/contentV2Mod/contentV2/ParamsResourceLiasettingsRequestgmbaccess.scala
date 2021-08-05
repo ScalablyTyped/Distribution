@@ -36,37 +36,27 @@ trait ParamsResourceLiasettingsRequestgmbaccess
 }
 object ParamsResourceLiasettingsRequestgmbaccess {
   
-  @scala.inline
-  def apply(): ParamsResourceLiasettingsRequestgmbaccess = {
+  inline def apply(): ParamsResourceLiasettingsRequestgmbaccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceLiasettingsRequestgmbaccess]
   }
   
-  @scala.inline
-  implicit class ParamsResourceLiasettingsRequestgmbaccessMutableBuilder[Self <: ParamsResourceLiasettingsRequestgmbaccess] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceLiasettingsRequestgmbaccess](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setGmbEmail(value: String): Self = StObject.set(x, "gmbEmail", value.asInstanceOf[js.Any])
+    inline def setGmbEmail(value: String): Self = StObject.set(x, "gmbEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmbEmailUndefined: Self = StObject.set(x, "gmbEmail", js.undefined)
+    inline def setGmbEmailUndefined: Self = StObject.set(x, "gmbEmail", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
   }
 }

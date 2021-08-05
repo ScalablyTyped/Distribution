@@ -15,19 +15,15 @@ trait INDCustomData extends StObject {
 }
 object INDCustomData {
   
-  @scala.inline
-  def apply(customData: Double, customDataTypeID: Double): INDCustomData = {
+  inline def apply(customData: Double, customDataTypeID: Double): INDCustomData = {
     val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any], customDataTypeID = customDataTypeID.asInstanceOf[js.Any])
     __obj.asInstanceOf[INDCustomData]
   }
   
-  @scala.inline
-  implicit class INDCustomDataMutableBuilder[Self <: INDCustomData] (val x: Self) extends AnyVal {
+  extension [Self <: INDCustomData](x: Self) {
     
-    @scala.inline
-    def setCustomData(value: Double): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: Double): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDataTypeID(value: Double): Self = StObject.set(x, "customDataTypeID", value.asInstanceOf[js.Any])
+    inline def setCustomDataTypeID(value: Double): Self = StObject.set(x, "customDataTypeID", value.asInstanceOf[js.Any])
   }
 }

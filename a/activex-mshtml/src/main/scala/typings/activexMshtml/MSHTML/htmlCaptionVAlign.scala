@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlCaptionVAlign extends StObject
 object htmlCaptionVAlign {
   
-  @scala.inline
-  def htmlCaptionVAlignBottom: `2` = 2.asInstanceOf[`2`]
+  inline def htmlCaptionVAlignBottom: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def htmlCaptionVAlignNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def htmlCaptionVAlignNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlCaptionVAlignTop: `1` = 1.asInstanceOf[`1`]
+  inline def htmlCaptionVAlignTop: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlCaptionVAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlCaptionVAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

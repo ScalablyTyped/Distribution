@@ -44,8 +44,7 @@ trait XLinePolyPolygon2D
 }
 object XLinePolyPolygon2D {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FillRule: FillRule,
     NumberOfPolygons: Double,
     acquire: () => Unit,
@@ -67,19 +66,14 @@ object XLinePolyPolygon2D {
     __obj.asInstanceOf[XLinePolyPolygon2D]
   }
   
-  @scala.inline
-  implicit class XLinePolyPolygon2DMutableBuilder[Self <: XLinePolyPolygon2D] (val x: Self) extends AnyVal {
+  extension [Self <: XLinePolyPolygon2D](x: Self) {
     
-    @scala.inline
-    def setGetPoint(value: (Double, Double) => RealPoint2D): Self = StObject.set(x, "getPoint", js.Any.fromFunction2(value))
+    inline def setGetPoint(value: (Double, Double) => RealPoint2D): Self = StObject.set(x, "getPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetPoints(value: (Double, Double, Double, Double) => SafeArray[SafeArray[RealPoint2D]]): Self = StObject.set(x, "getPoints", js.Any.fromFunction4(value))
+    inline def setGetPoints(value: (Double, Double, Double, Double) => SafeArray[SafeArray[RealPoint2D]]): Self = StObject.set(x, "getPoints", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSetPoint(value: (RealPoint2D, Double, Double) => Unit): Self = StObject.set(x, "setPoint", js.Any.fromFunction3(value))
+    inline def setSetPoint(value: (RealPoint2D, Double, Double) => Unit): Self = StObject.set(x, "setPoint", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetPoints(value: (SeqEquiv[SeqEquiv[RealPoint2D]], Double) => Unit): Self = StObject.set(x, "setPoints", js.Any.fromFunction2(value))
+    inline def setSetPoints(value: (SeqEquiv[SeqEquiv[RealPoint2D]], Double) => Unit): Self = StObject.set(x, "setPoints", js.Any.fromFunction2(value))
   }
 }

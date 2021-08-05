@@ -15,19 +15,15 @@ trait DebugInstanceRequest extends StObject {
 }
 object DebugInstanceRequest {
   
-  @scala.inline
-  def apply(): DebugInstanceRequest = {
+  inline def apply(): DebugInstanceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DebugInstanceRequest]
   }
   
-  @scala.inline
-  implicit class DebugInstanceRequestMutableBuilder[Self <: DebugInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DebugInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setSshKey(value: String): Self = StObject.set(x, "sshKey", value.asInstanceOf[js.Any])
+    inline def setSshKey(value: String): Self = StObject.set(x, "sshKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshKeyUndefined: Self = StObject.set(x, "sshKey", js.undefined)
+    inline def setSshKeyUndefined: Self = StObject.set(x, "sshKey", js.undefined)
   }
 }

@@ -30,44 +30,32 @@ object mod {
   }
   object ConstructorOptions {
     
-    @scala.inline
-    def apply(): ConstructorOptions = {
+    inline def apply(): ConstructorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    @scala.inline
-    implicit class ConstructorOptionsMutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConstructorOptions](x: Self) {
       
-      @scala.inline
-      def setDatacenter(value: Double): Self = StObject.set(x, "datacenter", value.asInstanceOf[js.Any])
+      inline def setDatacenter(value: Double): Self = StObject.set(x, "datacenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatacenterUndefined: Self = StObject.set(x, "datacenter", js.undefined)
+      inline def setDatacenterUndefined: Self = StObject.set(x, "datacenter", js.undefined)
       
-      @scala.inline
-      def setEpoch(value: Double): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
+      inline def setEpoch(value: Double): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEpochUndefined: Self = StObject.set(x, "epoch", js.undefined)
+      inline def setEpochUndefined: Self = StObject.set(x, "epoch", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setSeqMask(value: Double): Self = StObject.set(x, "seqMask", value.asInstanceOf[js.Any])
+      inline def setSeqMask(value: Double): Self = StObject.set(x, "seqMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeqMaskUndefined: Self = StObject.set(x, "seqMask", js.undefined)
+      inline def setSeqMaskUndefined: Self = StObject.set(x, "seqMask", js.undefined)
       
-      @scala.inline
-      def setWorker(value: Double): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
+      inline def setWorker(value: Double): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
+      inline def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
     }
   }
   

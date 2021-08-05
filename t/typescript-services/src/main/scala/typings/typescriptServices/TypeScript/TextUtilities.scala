@@ -14,20 +14,16 @@ object TextUtilities {
   }
   object ICharacterSequence {
     
-    @scala.inline
-    def apply(charCodeAt: Double => Double, length: Double): ICharacterSequence = {
+    inline def apply(charCodeAt: Double => Double, length: Double): ICharacterSequence = {
       val __obj = js.Dynamic.literal(charCodeAt = js.Any.fromFunction1(charCodeAt), length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICharacterSequence]
     }
     
-    @scala.inline
-    implicit class ICharacterSequenceMutableBuilder[Self <: ICharacterSequence] (val x: Self) extends AnyVal {
+    extension [Self <: ICharacterSequence](x: Self) {
       
-      @scala.inline
-      def setCharCodeAt(value: Double => Double): Self = StObject.set(x, "charCodeAt", js.Any.fromFunction1(value))
+      inline def setCharCodeAt(value: Double => Double): Self = StObject.set(x, "charCodeAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
 }

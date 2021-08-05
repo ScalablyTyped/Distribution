@@ -11,6 +11,5 @@ object cloneSvgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(sourceSvg: SVGElement): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sourceSvg.asInstanceOf[js.Any]).asInstanceOf[SVGElement]
+  inline def default(sourceSvg: SVGElement): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sourceSvg.asInstanceOf[js.Any]).asInstanceOf[SVGElement]
 }

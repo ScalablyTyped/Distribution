@@ -51,49 +51,35 @@ trait SchemaCommuteFilter extends StObject {
 }
 object SchemaCommuteFilter {
   
-  @scala.inline
-  def apply(): SchemaCommuteFilter = {
+  inline def apply(): SchemaCommuteFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCommuteFilter]
   }
   
-  @scala.inline
-  implicit class SchemaCommuteFilterMutableBuilder[Self <: SchemaCommuteFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCommuteFilter](x: Self) {
     
-    @scala.inline
-    def setAllowImpreciseAddresses(value: Boolean): Self = StObject.set(x, "allowImpreciseAddresses", value.asInstanceOf[js.Any])
+    inline def setAllowImpreciseAddresses(value: Boolean): Self = StObject.set(x, "allowImpreciseAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowImpreciseAddressesUndefined: Self = StObject.set(x, "allowImpreciseAddresses", js.undefined)
+    inline def setAllowImpreciseAddressesUndefined: Self = StObject.set(x, "allowImpreciseAddresses", js.undefined)
     
-    @scala.inline
-    def setCommuteMethod(value: String): Self = StObject.set(x, "commuteMethod", value.asInstanceOf[js.Any])
+    inline def setCommuteMethod(value: String): Self = StObject.set(x, "commuteMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommuteMethodUndefined: Self = StObject.set(x, "commuteMethod", js.undefined)
+    inline def setCommuteMethodUndefined: Self = StObject.set(x, "commuteMethod", js.undefined)
     
-    @scala.inline
-    def setDepartureTime(value: SchemaTimeOfDay): Self = StObject.set(x, "departureTime", value.asInstanceOf[js.Any])
+    inline def setDepartureTime(value: SchemaTimeOfDay): Self = StObject.set(x, "departureTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepartureTimeUndefined: Self = StObject.set(x, "departureTime", js.undefined)
+    inline def setDepartureTimeUndefined: Self = StObject.set(x, "departureTime", js.undefined)
     
-    @scala.inline
-    def setRoadTraffic(value: String): Self = StObject.set(x, "roadTraffic", value.asInstanceOf[js.Any])
+    inline def setRoadTraffic(value: String): Self = StObject.set(x, "roadTraffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoadTrafficUndefined: Self = StObject.set(x, "roadTraffic", js.undefined)
+    inline def setRoadTrafficUndefined: Self = StObject.set(x, "roadTraffic", js.undefined)
     
-    @scala.inline
-    def setStartCoordinates(value: SchemaLatLng): Self = StObject.set(x, "startCoordinates", value.asInstanceOf[js.Any])
+    inline def setStartCoordinates(value: SchemaLatLng): Self = StObject.set(x, "startCoordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartCoordinatesUndefined: Self = StObject.set(x, "startCoordinates", js.undefined)
+    inline def setStartCoordinatesUndefined: Self = StObject.set(x, "startCoordinates", js.undefined)
     
-    @scala.inline
-    def setTravelDuration(value: String): Self = StObject.set(x, "travelDuration", value.asInstanceOf[js.Any])
+    inline def setTravelDuration(value: String): Self = StObject.set(x, "travelDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTravelDurationUndefined: Self = StObject.set(x, "travelDuration", js.undefined)
+    inline def setTravelDurationUndefined: Self = StObject.set(x, "travelDuration", js.undefined)
   }
 }

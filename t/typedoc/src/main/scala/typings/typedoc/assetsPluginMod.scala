@@ -16,6 +16,6 @@ object assetsPluginMod {
     
     var copyDefaultAssets: Boolean = js.native
     
-    var onRendererBegin: js.Any = js.native
+    /* private */ var onRendererBegin: js.Any = js.native
   }
 }

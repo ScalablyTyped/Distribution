@@ -32,22 +32,17 @@ trait Typeofapp extends StObject {
 }
 object Typeofapp {
   
-  @scala.inline
-  def apply(_State: FULLSCREEN, runtime: Typeofruntime, window: ChromeAppWindow): Typeofapp = {
+  inline def apply(_State: FULLSCREEN, runtime: Typeofruntime, window: ChromeAppWindow): Typeofapp = {
     val __obj = js.Dynamic.literal(_State = _State.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofapp]
   }
   
-  @scala.inline
-  implicit class TypeofappMutableBuilder[Self <: Typeofapp] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofapp](x: Self) {
     
-    @scala.inline
-    def setRuntime(value: Typeofruntime): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+    inline def setRuntime(value: Typeofruntime): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow(value: ChromeAppWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: ChromeAppWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_State(value: FULLSCREEN): Self = StObject.set(x, "_State", value.asInstanceOf[js.Any])
+    inline def set_State(value: FULLSCREEN): Self = StObject.set(x, "_State", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ object maxImplMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def maxImpl(
+  inline def maxImpl(
     x: TensorInfo,
     reduceShape: js.Array[Double],
     outShape: js.Array[Double],

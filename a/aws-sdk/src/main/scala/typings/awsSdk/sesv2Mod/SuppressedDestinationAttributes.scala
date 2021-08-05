@@ -18,25 +18,19 @@ trait SuppressedDestinationAttributes extends StObject {
 }
 object SuppressedDestinationAttributes {
   
-  @scala.inline
-  def apply(): SuppressedDestinationAttributes = {
+  inline def apply(): SuppressedDestinationAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuppressedDestinationAttributes]
   }
   
-  @scala.inline
-  implicit class SuppressedDestinationAttributesMutableBuilder[Self <: SuppressedDestinationAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SuppressedDestinationAttributes](x: Self) {
     
-    @scala.inline
-    def setFeedbackId(value: FeedbackId): Self = StObject.set(x, "FeedbackId", value.asInstanceOf[js.Any])
+    inline def setFeedbackId(value: FeedbackId): Self = StObject.set(x, "FeedbackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackIdUndefined: Self = StObject.set(x, "FeedbackId", js.undefined)
+    inline def setFeedbackIdUndefined: Self = StObject.set(x, "FeedbackId", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: OutboundMessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: OutboundMessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
   }
 }

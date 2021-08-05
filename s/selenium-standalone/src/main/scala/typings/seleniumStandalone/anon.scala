@@ -15,17 +15,14 @@ object anon {
   }
   object Dictx {
     
-    @scala.inline
-    def apply(installPath: String): Dictx = {
+    inline def apply(installPath: String): Dictx = {
       val __obj = js.Dynamic.literal(installPath = installPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictx]
     }
     
-    @scala.inline
-    implicit class DictxMutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
+    extension [Self <: Dictx](x: Self) {
       
-      @scala.inline
-      def setInstallPath(value: String): Self = StObject.set(x, "installPath", value.asInstanceOf[js.Any])
+      inline def setInstallPath(value: String): Self = StObject.set(x, "installPath", value.asInstanceOf[js.Any])
     }
   }
 }

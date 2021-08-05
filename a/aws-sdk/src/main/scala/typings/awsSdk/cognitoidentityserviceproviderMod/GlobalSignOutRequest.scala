@@ -13,16 +13,13 @@ trait GlobalSignOutRequest extends StObject {
 }
 object GlobalSignOutRequest {
   
-  @scala.inline
-  def apply(AccessToken: TokenModelType): GlobalSignOutRequest = {
+  inline def apply(AccessToken: TokenModelType): GlobalSignOutRequest = {
     val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalSignOutRequest]
   }
   
-  @scala.inline
-  implicit class GlobalSignOutRequestMutableBuilder[Self <: GlobalSignOutRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalSignOutRequest](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
   }
 }

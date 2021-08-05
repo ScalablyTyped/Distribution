@@ -27,34 +27,25 @@ trait GoogleActionsV2NewSurfaceValueSpec extends StObject {
 }
 object GoogleActionsV2NewSurfaceValueSpec {
   
-  @scala.inline
-  def apply(): GoogleActionsV2NewSurfaceValueSpec = {
+  inline def apply(): GoogleActionsV2NewSurfaceValueSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2NewSurfaceValueSpec]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2NewSurfaceValueSpecMutableBuilder[Self <: GoogleActionsV2NewSurfaceValueSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2NewSurfaceValueSpec](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+    inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    @scala.inline
-    def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setNotificationTitle(value: String): Self = StObject.set(x, "notificationTitle", value.asInstanceOf[js.Any])
+    inline def setNotificationTitle(value: String): Self = StObject.set(x, "notificationTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationTitleUndefined: Self = StObject.set(x, "notificationTitle", js.undefined)
+    inline def setNotificationTitleUndefined: Self = StObject.set(x, "notificationTitle", js.undefined)
   }
 }

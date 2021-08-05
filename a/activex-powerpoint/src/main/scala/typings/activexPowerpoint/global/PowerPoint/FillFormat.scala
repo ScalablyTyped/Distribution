@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.FillFormat")
 @js.native
-class FillFormat protected ()
+/* private */ class FillFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.FillFormat {
   
@@ -77,7 +77,7 @@ class FillFormat protected ()
   @JSName("PictureEffects")
   override val PictureEffects_Original: PictureEffects = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.FillFormat_typekey")
   var PowerPointDotFillFormat_typekey: typings.activexPowerpoint.PowerPoint.FillFormat = js.native
   

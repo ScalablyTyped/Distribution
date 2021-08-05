@@ -13,16 +13,13 @@ trait NotificationsEvaluationResult extends StObject {
 }
 object NotificationsEvaluationResult {
   
-  @scala.inline
-  def apply(count: Double): NotificationsEvaluationResult = {
+  inline def apply(count: Double): NotificationsEvaluationResult = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationsEvaluationResult]
   }
   
-  @scala.inline
-  implicit class NotificationsEvaluationResultMutableBuilder[Self <: NotificationsEvaluationResult] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationsEvaluationResult](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }
 }

@@ -21,19 +21,19 @@ object trycatchMod {
     def this(options: PartialTryCatchOptions) = this()
     
     /** JSDoc */
-    val _options: js.Any = js.native
+    /* private */ val _options: js.Any = js.native
     
     /** JSDoc */
-    var _wrapEventTarget: js.Any = js.native
+    /* private */ var _wrapEventTarget: js.Any = js.native
     
     /** JSDoc */
-    var _wrapRAF: js.Any = js.native
+    /* private */ var _wrapRAF: js.Any = js.native
     
     /** JSDoc */
-    var _wrapTimeFunction: js.Any = js.native
+    /* private */ var _wrapTimeFunction: js.Any = js.native
     
     /** JSDoc */
-    var _wrapXHR: js.Any = js.native
+    /* private */ var _wrapXHR: js.Any = js.native
     
     /**
       * Returns {@link IntegrationClass.id}
@@ -69,8 +69,7 @@ object trycatchMod {
     @JSImport("@sentry/browser/dist/integrations/trycatch", "TryCatch.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
   /** JSDoc */
@@ -88,8 +87,7 @@ object trycatchMod {
   }
   object TryCatchOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       XMLHttpRequest: Boolean,
       eventTarget: Boolean | js.Array[String],
       requestAnimationFrame: Boolean,
@@ -100,26 +98,19 @@ object trycatchMod {
       __obj.asInstanceOf[TryCatchOptions]
     }
     
-    @scala.inline
-    implicit class TryCatchOptionsMutableBuilder[Self <: TryCatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TryCatchOptions](x: Self) {
       
-      @scala.inline
-      def setEventTarget(value: Boolean | js.Array[String]): Self = StObject.set(x, "eventTarget", value.asInstanceOf[js.Any])
+      inline def setEventTarget(value: Boolean | js.Array[String]): Self = StObject.set(x, "eventTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTargetVarargs(value: String*): Self = StObject.set(x, "eventTarget", js.Array(value :_*))
+      inline def setEventTargetVarargs(value: String*): Self = StObject.set(x, "eventTarget", js.Array(value :_*))
       
-      @scala.inline
-      def setRequestAnimationFrame(value: Boolean): Self = StObject.set(x, "requestAnimationFrame", value.asInstanceOf[js.Any])
+      inline def setRequestAnimationFrame(value: Boolean): Self = StObject.set(x, "requestAnimationFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetInterval(value: Boolean): Self = StObject.set(x, "setInterval", value.asInstanceOf[js.Any])
+      inline def setSetInterval(value: Boolean): Self = StObject.set(x, "setInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetTimeout(value: Boolean): Self = StObject.set(x, "setTimeout", value.asInstanceOf[js.Any])
+      inline def setSetTimeout(value: Boolean): Self = StObject.set(x, "setTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXMLHttpRequest(value: Boolean): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
+      inline def setXMLHttpRequest(value: Boolean): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,19 +12,15 @@ trait CancelSaveAsUI extends StObject {
 }
 object CancelSaveAsUI {
   
-  @scala.inline
-  def apply(Cancel: Boolean, SaveAsUI: Boolean): CancelSaveAsUI = {
+  inline def apply(Cancel: Boolean, SaveAsUI: Boolean): CancelSaveAsUI = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], SaveAsUI = SaveAsUI.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelSaveAsUI]
   }
   
-  @scala.inline
-  implicit class CancelSaveAsUIMutableBuilder[Self <: CancelSaveAsUI] (val x: Self) extends AnyVal {
+  extension [Self <: CancelSaveAsUI](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveAsUI(value: Boolean): Self = StObject.set(x, "SaveAsUI", value.asInstanceOf[js.Any])
+    inline def setSaveAsUI(value: Boolean): Self = StObject.set(x, "SaveAsUI", value.asInstanceOf[js.Any])
   }
 }

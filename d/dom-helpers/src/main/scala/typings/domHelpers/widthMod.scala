@@ -11,8 +11,6 @@ object widthMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def default(node: HTMLElement, client: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], client.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(node: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(node: HTMLElement, client: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], client.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

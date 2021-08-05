@@ -23,22 +23,17 @@ trait GetParametersForImportRequest extends StObject {
 }
 object GetParametersForImportRequest {
   
-  @scala.inline
-  def apply(KeyId: KeyIdType, WrappingAlgorithm: AlgorithmSpec, WrappingKeySpec: WrappingKeySpec): GetParametersForImportRequest = {
+  inline def apply(KeyId: KeyIdType, WrappingAlgorithm: AlgorithmSpec, WrappingKeySpec: WrappingKeySpec): GetParametersForImportRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], WrappingAlgorithm = WrappingAlgorithm.asInstanceOf[js.Any], WrappingKeySpec = WrappingKeySpec.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersForImportRequest]
   }
   
-  @scala.inline
-  implicit class GetParametersForImportRequestMutableBuilder[Self <: GetParametersForImportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetParametersForImportRequest](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrappingAlgorithm(value: AlgorithmSpec): Self = StObject.set(x, "WrappingAlgorithm", value.asInstanceOf[js.Any])
+    inline def setWrappingAlgorithm(value: AlgorithmSpec): Self = StObject.set(x, "WrappingAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrappingKeySpec(value: WrappingKeySpec): Self = StObject.set(x, "WrappingKeySpec", value.asInstanceOf[js.Any])
+    inline def setWrappingKeySpec(value: WrappingKeySpec): Self = StObject.set(x, "WrappingKeySpec", value.asInstanceOf[js.Any])
   }
 }

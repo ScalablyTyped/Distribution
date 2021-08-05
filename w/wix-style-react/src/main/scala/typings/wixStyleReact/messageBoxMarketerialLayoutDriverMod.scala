@@ -39,8 +39,7 @@ object messageBoxMarketerialLayoutDriverMod {
   }
   object MessageBoxMarketerialLayoutDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clickOnPrimaryButton: () => Unit,
       clickOnSecondaryButton: () => Unit,
       closeMessageBox: () => Unit,
@@ -59,44 +58,31 @@ object messageBoxMarketerialLayoutDriverMod {
       __obj.asInstanceOf[MessageBoxMarketerialLayoutDriver]
     }
     
-    @scala.inline
-    implicit class MessageBoxMarketerialLayoutDriverMutableBuilder[Self <: MessageBoxMarketerialLayoutDriver] (val x: Self) extends AnyVal {
+    extension [Self <: MessageBoxMarketerialLayoutDriver](x: Self) {
       
-      @scala.inline
-      def setClickOnPrimaryButton(value: () => Unit): Self = StObject.set(x, "clickOnPrimaryButton", js.Any.fromFunction0(value))
+      inline def setClickOnPrimaryButton(value: () => Unit): Self = StObject.set(x, "clickOnPrimaryButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnSecondaryButton(value: () => Unit): Self = StObject.set(x, "clickOnSecondaryButton", js.Any.fromFunction0(value))
+      inline def setClickOnSecondaryButton(value: () => Unit): Self = StObject.set(x, "clickOnSecondaryButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCloseMessageBox(value: () => Unit): Self = StObject.set(x, "closeMessageBox", js.Any.fromFunction0(value))
+      inline def setCloseMessageBox(value: () => Unit): Self = StObject.set(x, "closeMessageBox", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentBySelector(value: String => HTMLElement | Null): Self = StObject.set(x, "getContentBySelector", js.Any.fromFunction1(value))
+      inline def setGetContentBySelector(value: String => HTMLElement | Null): Self = StObject.set(x, "getContentBySelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetHeaderCloseButton(value: () => HTMLButtonElement): Self = StObject.set(x, "getHeaderCloseButton", js.Any.fromFunction0(value))
+      inline def setGetHeaderCloseButton(value: () => HTMLButtonElement): Self = StObject.set(x, "getHeaderCloseButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetImageSrc(value: () => String): Self = StObject.set(x, "getImageSrc", js.Any.fromFunction0(value))
+      inline def setGetImageSrc(value: () => String): Self = StObject.set(x, "getImageSrc", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrimaryButton(value: () => HTMLButtonElement): Self = StObject.set(x, "getPrimaryButton", js.Any.fromFunction0(value))
+      inline def setGetPrimaryButton(value: () => HTMLButtonElement): Self = StObject.set(x, "getPrimaryButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrimaryButtonNode(value: () => HTMLElement | Null): Self = StObject.set(x, "getPrimaryButtonNode", js.Any.fromFunction0(value))
+      inline def setGetPrimaryButtonNode(value: () => HTMLElement | Null): Self = StObject.set(x, "getPrimaryButtonNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrimaryButtonText(value: () => String): Self = StObject.set(x, "getPrimaryButtonText", js.Any.fromFunction0(value))
+      inline def setGetPrimaryButtonText(value: () => String): Self = StObject.set(x, "getPrimaryButtonText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSecondaryButton(value: () => HTMLElement): Self = StObject.set(x, "getSecondaryButton", js.Any.fromFunction0(value))
+      inline def setGetSecondaryButton(value: () => HTMLElement): Self = StObject.set(x, "getSecondaryButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSecondaryButtonText(value: () => String): Self = StObject.set(x, "getSecondaryButtonText", js.Any.fromFunction0(value))
+      inline def setGetSecondaryButtonText(value: () => String): Self = StObject.set(x, "getSecondaryButtonText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     }
   }
 }

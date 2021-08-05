@@ -18,25 +18,19 @@ trait PrefixListId extends StObject {
 }
 object PrefixListId {
   
-  @scala.inline
-  def apply(): PrefixListId = {
+  inline def apply(): PrefixListId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrefixListId]
   }
   
-  @scala.inline
-  implicit class PrefixListIdMutableBuilder[Self <: PrefixListId] (val x: Self) extends AnyVal {
+  extension [Self <: PrefixListId](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setPrefixListId(value: String): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
+    inline def setPrefixListId(value: String): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
+    inline def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
   }
 }

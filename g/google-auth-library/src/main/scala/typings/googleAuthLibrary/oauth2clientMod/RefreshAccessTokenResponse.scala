@@ -14,22 +14,17 @@ trait RefreshAccessTokenResponse extends StObject {
 }
 object RefreshAccessTokenResponse {
   
-  @scala.inline
-  def apply(credentials: Credentials): RefreshAccessTokenResponse = {
+  inline def apply(credentials: Credentials): RefreshAccessTokenResponse = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], res = null)
     __obj.asInstanceOf[RefreshAccessTokenResponse]
   }
   
-  @scala.inline
-  implicit class RefreshAccessTokenResponseMutableBuilder[Self <: RefreshAccessTokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshAccessTokenResponse](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: GaxiosResponse[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: GaxiosResponse[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResNull: Self = StObject.set(x, "res", null)
+    inline def setResNull: Self = StObject.set(x, "res", null)
   }
 }

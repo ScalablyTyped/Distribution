@@ -14,22 +14,17 @@ trait FacebookConfig extends StObject {
 }
 object FacebookConfig {
   
-  @scala.inline
-  def apply(appId: String, playerId: String, version: String): FacebookConfig = {
+  inline def apply(appId: String, playerId: String, version: String): FacebookConfig = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], playerId = playerId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[FacebookConfig]
   }
   
-  @scala.inline
-  implicit class FacebookConfigMutableBuilder[Self <: FacebookConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FacebookConfig](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerId(value: String): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
+    inline def setPlayerId(value: String): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

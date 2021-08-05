@@ -14,8 +14,6 @@ object mod {
   @js.native
   val all: js.Array[String] = js.native
   
-  @scala.inline
-  def random(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[String]
-  @scala.inline
-  def random(number: Double): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(number.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def random(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[String]
+  inline def random(number: Double): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(number.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

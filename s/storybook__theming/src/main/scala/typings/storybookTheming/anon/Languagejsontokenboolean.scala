@@ -21,8 +21,7 @@ trait Languagejsontokenboolean extends StObject {
 }
 object Languagejsontokenboolean {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `language-json DottokenDotboolean`: Color,
     `language-json DottokenDotnumber`: Color,
     `language-json DottokenDotproperty`: Color,
@@ -36,22 +35,16 @@ object Languagejsontokenboolean {
     __obj.asInstanceOf[Languagejsontokenboolean]
   }
   
-  @scala.inline
-  implicit class LanguagejsontokenbooleanMutableBuilder[Self <: Languagejsontokenboolean] (val x: Self) extends AnyVal {
+  extension [Self <: Languagejsontokenboolean](x: Self) {
     
-    @scala.inline
-    def `setLanguage-json DottokenDotboolean`(value: Color): Self = StObject.set(x, "language-json .token.boolean", value.asInstanceOf[js.Any])
+    inline def `setLanguage-json DottokenDotboolean`(value: Color): Self = StObject.set(x, "language-json .token.boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLanguage-json DottokenDotnumber`(value: Color): Self = StObject.set(x, "language-json .token.number", value.asInstanceOf[js.Any])
+    inline def `setLanguage-json DottokenDotnumber`(value: Color): Self = StObject.set(x, "language-json .token.number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLanguage-json DottokenDotproperty`(value: Color): Self = StObject.set(x, "language-json .token.property", value.asInstanceOf[js.Any])
+    inline def `setLanguage-json DottokenDotproperty`(value: Color): Self = StObject.set(x, "language-json .token.property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Opacity): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Opacity): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: Atrule): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: Atrule): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

@@ -25,25 +25,19 @@ trait ParamsResourceAccountsContainersWorkspacesZonesGet
 }
 object ParamsResourceAccountsContainersWorkspacesZonesGet {
   
-  @scala.inline
-  def apply(): ParamsResourceAccountsContainersWorkspacesZonesGet = {
+  inline def apply(): ParamsResourceAccountsContainersWorkspacesZonesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAccountsContainersWorkspacesZonesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAccountsContainersWorkspacesZonesGetMutableBuilder[Self <: ParamsResourceAccountsContainersWorkspacesZonesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAccountsContainersWorkspacesZonesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

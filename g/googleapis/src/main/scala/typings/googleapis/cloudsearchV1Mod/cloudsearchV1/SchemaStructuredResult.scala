@@ -16,19 +16,15 @@ trait SchemaStructuredResult extends StObject {
 }
 object SchemaStructuredResult {
   
-  @scala.inline
-  def apply(): SchemaStructuredResult = {
+  inline def apply(): SchemaStructuredResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStructuredResult]
   }
   
-  @scala.inline
-  implicit class SchemaStructuredResultMutableBuilder[Self <: SchemaStructuredResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStructuredResult](x: Self) {
     
-    @scala.inline
-    def setPerson(value: SchemaPerson): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
+    inline def setPerson(value: SchemaPerson): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
+    inline def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
   }
 }

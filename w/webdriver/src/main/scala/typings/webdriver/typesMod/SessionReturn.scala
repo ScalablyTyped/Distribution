@@ -11,8 +11,7 @@ trait SessionReturn
      with ProtocolCommandResponse
 object SessionReturn {
   
-  @scala.inline
-  def apply(): SessionReturn = {
+  inline def apply(): SessionReturn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionReturn]
   }

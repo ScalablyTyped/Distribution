@@ -16,23 +16,18 @@ trait DataIdEvent extends StObject {
 }
 object DataIdEvent {
   
-  @scala.inline
-  def apply(data: Id): DataIdEvent = {
+  inline def apply(data: Id): DataIdEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "delete")
     __obj.updateDynamic("type")("channel")
     __obj.asInstanceOf[DataIdEvent]
   }
   
-  @scala.inline
-  implicit class DataIdEventMutableBuilder[Self <: DataIdEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DataIdEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: Id): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Id): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: delete): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: delete): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: channel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: channel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

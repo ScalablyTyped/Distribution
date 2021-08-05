@@ -13,19 +13,15 @@ trait ExtensionDataCollectionQuery extends StObject {
 }
 object ExtensionDataCollectionQuery {
   
-  @scala.inline
-  def apply(collections: js.Array[ExtensionDataCollection]): ExtensionDataCollectionQuery = {
+  inline def apply(collections: js.Array[ExtensionDataCollection]): ExtensionDataCollectionQuery = {
     val __obj = js.Dynamic.literal(collections = collections.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionDataCollectionQuery]
   }
   
-  @scala.inline
-  implicit class ExtensionDataCollectionQueryMutableBuilder[Self <: ExtensionDataCollectionQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionDataCollectionQuery](x: Self) {
     
-    @scala.inline
-    def setCollections(value: js.Array[ExtensionDataCollection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
+    inline def setCollections(value: js.Array[ExtensionDataCollection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionsVarargs(value: ExtensionDataCollection*): Self = StObject.set(x, "collections", js.Array(value :_*))
+    inline def setCollectionsVarargs(value: ExtensionDataCollection*): Self = StObject.set(x, "collections", js.Array(value :_*))
   }
 }

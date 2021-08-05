@@ -19,31 +19,31 @@ object deltaManagerMod {
        with IDeltaManager {
     def this(model: AbstractModel) = this()
     
-    var callErrorCallbacks: js.Any = js.native
+    /* private */ var callErrorCallbacks: js.Any = js.native
     
-    var callFlushCallbacks: js.Any = js.native
+    /* private */ var callFlushCallbacks: js.Any = js.native
     
-    var deltaProcessor: js.Any = js.native
+    /* private */ var deltaProcessor: js.Any = js.native
     
-    var deltaReverser: js.Any = js.native
+    /* private */ var deltaReverser: js.Any = js.native
     
-    var deltaSender: js.Any = js.native
+    /* private */ var deltaSender: js.Any = js.native
     
-    var errorCallbacks: js.Any = js.native
+    /* private */ var errorCallbacks: js.Any = js.native
     
-    var eventEmitter: js.Any = js.native
+    /* private */ var eventEmitter: js.Any = js.native
     
-    var flushCallbacks: js.Any = js.native
+    /* private */ var flushCallbacks: js.Any = js.native
     
-    var getReverseDelta: js.Any = js.native
+    /* private */ var getReverseDelta: js.Any = js.native
     
-    var handleTransactionCommited: js.Any = js.native
+    /* private */ var handleTransactionCommited: js.Any = js.native
     
-    var handleTransactionRollback: js.Any = js.native
+    /* private */ var handleTransactionRollback: js.Any = js.native
     
-    var model: js.Any = js.native
+    /* private */ var model: js.Any = js.native
     
-    var transactionManager: js.Any = js.native
+    /* private */ var transactionManager: js.Any = js.native
   }
   
   trait IDeltaChange extends StObject {
@@ -54,20 +54,16 @@ object deltaManagerMod {
   }
   object IDeltaChange {
     
-    @scala.inline
-    def apply(delta: Delta, reverseDelta: Delta | Error): IDeltaChange = {
+    inline def apply(delta: Delta, reverseDelta: Delta | Error): IDeltaChange = {
       val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], reverseDelta = reverseDelta.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDeltaChange]
     }
     
-    @scala.inline
-    implicit class IDeltaChangeMutableBuilder[Self <: IDeltaChange] (val x: Self) extends AnyVal {
+    extension [Self <: IDeltaChange](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Delta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Delta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseDelta(value: Delta | Error): Self = StObject.set(x, "reverseDelta", value.asInstanceOf[js.Any])
+      inline def setReverseDelta(value: Delta | Error): Self = StObject.set(x, "reverseDelta", value.asInstanceOf[js.Any])
     }
   }
   

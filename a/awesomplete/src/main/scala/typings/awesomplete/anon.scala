@@ -15,20 +15,16 @@ object anon {
   }
   object Label {
     
-    @scala.inline
-    def apply(label: String | js.Any, value: String | js.Any): Label = {
+    inline def apply(label: String | js.Any, value: String | js.Any): Label = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Label]
     }
     
-    @scala.inline
-    implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+    extension [Self <: Label](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String | js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String | js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String | js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,17 +34,14 @@ object anon {
   }
   object Replace {
     
-    @scala.inline
-    def apply(replace: (RegExp, String) => Unit): Replace = {
+    inline def apply(replace: (RegExp, String) => Unit): Replace = {
       val __obj = js.Dynamic.literal(replace = js.Any.fromFunction2(replace))
       __obj.asInstanceOf[Replace]
     }
     
-    @scala.inline
-    implicit class ReplaceMutableBuilder[Self <: Replace] (val x: Self) extends AnyVal {
+    extension [Self <: Replace](x: Self) {
       
-      @scala.inline
-      def setReplace(value: (RegExp, String) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+      inline def setReplace(value: (RegExp, String) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
     }
   }
   
@@ -60,20 +53,16 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply(label: String, value: js.Any): Value = {
+    inline def apply(label: String, value: js.Any): Value = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

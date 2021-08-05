@@ -27,25 +27,19 @@ trait SearchBellmanFordOptions extends StObject {
 }
 object SearchBellmanFordOptions {
   
-  @scala.inline
-  def apply(directed: Boolean, root: js.Any): SearchBellmanFordOptions = {
+  inline def apply(directed: Boolean, root: js.Any): SearchBellmanFordOptions = {
     val __obj = js.Dynamic.literal(directed = directed.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBellmanFordOptions]
   }
   
-  @scala.inline
-  implicit class SearchBellmanFordOptionsMutableBuilder[Self <: SearchBellmanFordOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchBellmanFordOptions](x: Self) {
     
-    @scala.inline
-    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+    inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: /* edge */ EdgeCollection => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
+    inline def setWeight(value: /* edge */ EdgeCollection => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

@@ -71,8 +71,7 @@ trait XEngine
 }
 object XEngine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Root: XInterface,
     acquire: () => Unit,
     addEngineListener: XEngineListener => Unit,
@@ -91,37 +90,26 @@ object XEngine {
     __obj.asInstanceOf[XEngine]
   }
   
-  @scala.inline
-  implicit class XEngineMutableBuilder[Self <: XEngine] (val x: Self) extends AnyVal {
+  extension [Self <: XEngine](x: Self) {
     
-    @scala.inline
-    def setAddEngineListener(value: XEngineListener => Unit): Self = StObject.set(x, "addEngineListener", js.Any.fromFunction1(value))
+    inline def setAddEngineListener(value: XEngineListener => Unit): Self = StObject.set(x, "addEngineListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompile(value: (String, String, Boolean) => Boolean): Self = StObject.set(x, "compile", js.Any.fromFunction3(value))
+    inline def setCompile(value: (String, String, Boolean) => Boolean): Self = StObject.set(x, "compile", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetRoot(value: () => XInterface): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
+    inline def setGetRoot(value: () => XInterface): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveEngineListener(value: XEngineListener => Unit): Self = StObject.set(x, "removeEngineListener", js.Any.fromFunction1(value))
+    inline def setRemoveEngineListener(value: XEngineListener => Unit): Self = StObject.set(x, "removeEngineListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRoot(value: XInterface): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: XInterface): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRun(value: (String, XInterface, SeqEquiv[js.Any]) => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
+    inline def setRun(value: (String, XInterface, SeqEquiv[js.Any]) => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRunAsync(value: (String, XInterface, SeqEquiv[js.Any], XEngineListener) => Unit): Self = StObject.set(x, "runAsync", js.Any.fromFunction4(value))
+    inline def setRunAsync(value: (String, XInterface, SeqEquiv[js.Any], XEngineListener) => Unit): Self = StObject.set(x, "runAsync", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSetLibraryAccess(value: XLibraryAccess => Unit): Self = StObject.set(x, "setLibraryAccess", js.Any.fromFunction1(value))
+    inline def setSetLibraryAccess(value: XLibraryAccess => Unit): Self = StObject.set(x, "setLibraryAccess", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRoot(value: XInterface => Unit): Self = StObject.set(x, "setRoot", js.Any.fromFunction1(value))
+    inline def setSetRoot(value: XInterface => Unit): Self = StObject.set(x, "setRoot", js.Any.fromFunction1(value))
   }
 }

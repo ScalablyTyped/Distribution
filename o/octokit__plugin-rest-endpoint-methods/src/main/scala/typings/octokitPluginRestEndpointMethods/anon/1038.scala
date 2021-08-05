@@ -23,8 +23,7 @@ trait `1038` extends StObject {
 }
 object `1038` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[TeamsAddOrUpdateMembershipForUserInOrgEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[
       TeamsAddOrUpdateMembershipForUserInOrgResponseData | TeamsAddOrUpdateMembershipForUserInOrgResponse422Data
@@ -34,16 +33,13 @@ object `1038` {
     __obj.asInstanceOf[`1038`]
   }
   
-  @scala.inline
-  implicit class `1038MutableBuilder`[Self <: `1038`] (val x: Self) extends AnyVal {
+  extension [Self <: `1038`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[TeamsAddOrUpdateMembershipForUserInOrgEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(
+    inline def setResponse(
       value: OctokitResponse[
           TeamsAddOrUpdateMembershipForUserInOrgResponseData | TeamsAddOrUpdateMembershipForUserInOrgResponse422Data
         ]

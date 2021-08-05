@@ -73,8 +73,7 @@ object packageMod {
   }
   object PackageInformation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appIds: js.Array[ApplicationId],
       author: String,
       dataSize: Double,
@@ -90,41 +89,29 @@ object packageMod {
       __obj.asInstanceOf[PackageInformation]
     }
     
-    @scala.inline
-    implicit class PackageInformationMutableBuilder[Self <: PackageInformation] (val x: Self) extends AnyVal {
+    extension [Self <: PackageInformation](x: Self) {
       
-      @scala.inline
-      def setAppIds(value: js.Array[ApplicationId]): Self = StObject.set(x, "appIds", value.asInstanceOf[js.Any])
+      inline def setAppIds(value: js.Array[ApplicationId]): Self = StObject.set(x, "appIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppIdsVarargs(value: ApplicationId*): Self = StObject.set(x, "appIds", js.Array(value :_*))
+      inline def setAppIdsVarargs(value: ApplicationId*): Self = StObject.set(x, "appIds", js.Array(value :_*))
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
+      inline def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconPath(value: String): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
+      inline def setIconPath(value: String): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: PackageId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: PackageId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+      inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,8 +139,7 @@ object packageMod {
   }
   object PackageInformationEventCallback {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       oninstalled: PackageInformation => Unit,
       onuninstalled: PackageId => Unit,
       onupdated: PackageInformation => Unit
@@ -162,17 +148,13 @@ object packageMod {
       __obj.asInstanceOf[PackageInformationEventCallback]
     }
     
-    @scala.inline
-    implicit class PackageInformationEventCallbackMutableBuilder[Self <: PackageInformationEventCallback] (val x: Self) extends AnyVal {
+    extension [Self <: PackageInformationEventCallback](x: Self) {
       
-      @scala.inline
-      def setOninstalled(value: PackageInformation => Unit): Self = StObject.set(x, "oninstalled", js.Any.fromFunction1(value))
+      inline def setOninstalled(value: PackageInformation => Unit): Self = StObject.set(x, "oninstalled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnuninstalled(value: PackageId => Unit): Self = StObject.set(x, "onuninstalled", js.Any.fromFunction1(value))
+      inline def setOnuninstalled(value: PackageId => Unit): Self = StObject.set(x, "onuninstalled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnupdated(value: PackageInformation => Unit): Self = StObject.set(x, "onupdated", js.Any.fromFunction1(value))
+      inline def setOnupdated(value: PackageInformation => Unit): Self = StObject.set(x, "onupdated", js.Any.fromFunction1(value))
     }
   }
   
@@ -315,20 +297,16 @@ object packageMod {
   }
   object PackageProgressCallback {
     
-    @scala.inline
-    def apply(oncomplete: PackageId => Unit, onprogress: (PackageId, Double) => Unit): PackageProgressCallback = {
+    inline def apply(oncomplete: PackageId => Unit, onprogress: (PackageId, Double) => Unit): PackageProgressCallback = {
       val __obj = js.Dynamic.literal(oncomplete = js.Any.fromFunction1(oncomplete), onprogress = js.Any.fromFunction2(onprogress))
       __obj.asInstanceOf[PackageProgressCallback]
     }
     
-    @scala.inline
-    implicit class PackageProgressCallbackMutableBuilder[Self <: PackageProgressCallback] (val x: Self) extends AnyVal {
+    extension [Self <: PackageProgressCallback](x: Self) {
       
-      @scala.inline
-      def setOncomplete(value: PackageId => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction1(value))
+      inline def setOncomplete(value: PackageId => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnprogress(value: (PackageId, Double) => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction2(value))
+      inline def setOnprogress(value: (PackageId, Double) => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction2(value))
     }
   }
 }

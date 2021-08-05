@@ -46,49 +46,35 @@ trait IGetBoundaryRequestOptions extends StObject {
 }
 object IGetBoundaryRequestOptions {
   
-  @scala.inline
-  def apply(): IGetBoundaryRequestOptions = {
+  inline def apply(): IGetBoundaryRequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGetBoundaryRequestOptions]
   }
   
-  @scala.inline
-  implicit class IGetBoundaryRequestOptionsMutableBuilder[Self <: IGetBoundaryRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IGetBoundaryRequestOptions](x: Self) {
     
-    @scala.inline
-    def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+    inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
+    inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
-    @scala.inline
-    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
+    inline def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
     
-    @scala.inline
-    def setGetAllPolygons(value: Boolean): Self = StObject.set(x, "getAllPolygons", value.asInstanceOf[js.Any])
+    inline def setGetAllPolygons(value: Boolean): Self = StObject.set(x, "getAllPolygons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAllPolygonsUndefined: Self = StObject.set(x, "getAllPolygons", js.undefined)
+    inline def setGetAllPolygonsUndefined: Self = StObject.set(x, "getAllPolygons", js.undefined)
     
-    @scala.inline
-    def setGetEntityMetadata(value: Boolean): Self = StObject.set(x, "getEntityMetadata", value.asInstanceOf[js.Any])
+    inline def setGetEntityMetadata(value: Boolean): Self = StObject.set(x, "getEntityMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEntityMetadataUndefined: Self = StObject.set(x, "getEntityMetadata", js.undefined)
+    inline def setGetEntityMetadataUndefined: Self = StObject.set(x, "getEntityMetadata", js.undefined)
     
-    @scala.inline
-    def setLod(value: Double): Self = StObject.set(x, "lod", value.asInstanceOf[js.Any])
+    inline def setLod(value: Double): Self = StObject.set(x, "lod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLodUndefined: Self = StObject.set(x, "lod", js.undefined)
+    inline def setLodUndefined: Self = StObject.set(x, "lod", js.undefined)
     
-    @scala.inline
-    def setUserRegion(value: String): Self = StObject.set(x, "userRegion", value.asInstanceOf[js.Any])
+    inline def setUserRegion(value: String): Self = StObject.set(x, "userRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserRegionUndefined: Self = StObject.set(x, "userRegion", js.undefined)
+    inline def setUserRegionUndefined: Self = StObject.set(x, "userRegion", js.undefined)
   }
 }

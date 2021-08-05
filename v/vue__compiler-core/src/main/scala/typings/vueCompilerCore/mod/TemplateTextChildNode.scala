@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TemplateTextChildNode extends StObject
 object TemplateTextChildNode {
   
-  @scala.inline
-  def CompoundExpressionNode(
+  inline def CompoundExpressionNode(
     children: js.Array[
       SimpleExpressionNode | typings.vueCompilerCore.mod.CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol
     ],
@@ -24,15 +23,13 @@ object TemplateTextChildNode {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.CompoundExpressionNode]
   }
   
-  @scala.inline
-  def InterpolationNode(content: ExpressionNode, loc: SourceLocation): typings.vueCompilerCore.mod.InterpolationNode = {
+  inline def InterpolationNode(content: ExpressionNode, loc: SourceLocation): typings.vueCompilerCore.mod.InterpolationNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(5)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.InterpolationNode]
   }
   
-  @scala.inline
-  def TextNode(content: String, loc: SourceLocation): typings.vueCompilerCore.mod.TextNode = {
+  inline def TextNode(content: String, loc: SourceLocation): typings.vueCompilerCore.mod.TextNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(2)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.TextNode]

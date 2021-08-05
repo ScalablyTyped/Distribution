@@ -21,10 +21,10 @@ class Pool[T] protected ()
   /* CompleteClass */
   override def freeAll(items: ArrayLike[T]): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var instantiator: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var items: js.Any = js.native
   
   /* CompleteClass */

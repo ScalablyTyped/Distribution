@@ -13,17 +13,14 @@ trait BaseLayout
 }
 object BaseLayout {
   
-  @scala.inline
-  def apply(): BaseLayout = {
+  inline def apply(): BaseLayout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("basic")
     __obj.asInstanceOf[BaseLayout]
   }
   
-  @scala.inline
-  implicit class BaseLayoutMutableBuilder[Self <: BaseLayout] (val x: Self) extends AnyVal {
+  extension [Self <: BaseLayout](x: Self) {
     
-    @scala.inline
-    def setType(value: basic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: basic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

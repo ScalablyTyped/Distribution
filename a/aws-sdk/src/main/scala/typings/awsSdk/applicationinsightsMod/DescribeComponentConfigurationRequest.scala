@@ -18,19 +18,15 @@ trait DescribeComponentConfigurationRequest extends StObject {
 }
 object DescribeComponentConfigurationRequest {
   
-  @scala.inline
-  def apply(ComponentName: ComponentName, ResourceGroupName: ResourceGroupName): DescribeComponentConfigurationRequest = {
+  inline def apply(ComponentName: ComponentName, ResourceGroupName: ResourceGroupName): DescribeComponentConfigurationRequest = {
     val __obj = js.Dynamic.literal(ComponentName = ComponentName.asInstanceOf[js.Any], ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeComponentConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeComponentConfigurationRequestMutableBuilder[Self <: DescribeComponentConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeComponentConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
+    inline def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
+    inline def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
   }
 }

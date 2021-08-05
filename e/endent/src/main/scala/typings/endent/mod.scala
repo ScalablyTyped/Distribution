@@ -9,8 +9,7 @@ object mod {
   
   object default {
     
-    @scala.inline
-    def apply(strings: TemplateStringsArray, values: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(strings: TemplateStringsArray, values: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("endent", JSImport.Default)
     @js.native
@@ -22,8 +21,7 @@ object mod {
         /* data */ js.UndefOr[String | Double | js.Object | Null], 
         js.UndefOr[String | Double | js.Object | Null]
       ] = js.native
-    @scala.inline
-    def pretty_=(
+    inline def pretty_=(
       x: js.Function1[
           /* data */ js.UndefOr[String | Double | js.Object | Null], 
           js.UndefOr[String | Double | js.Object | Null]

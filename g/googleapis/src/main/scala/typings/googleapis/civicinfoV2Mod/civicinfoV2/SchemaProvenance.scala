@@ -28,73 +28,51 @@ trait SchemaProvenance extends StObject {
 }
 object SchemaProvenance {
   
-  @scala.inline
-  def apply(): SchemaProvenance = {
+  inline def apply(): SchemaProvenance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProvenance]
   }
   
-  @scala.inline
-  implicit class SchemaProvenanceMutableBuilder[Self <: SchemaProvenance] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProvenance](x: Self) {
     
-    @scala.inline
-    def setCollidedSegmentSource(value: SchemaStreetSegmentList): Self = StObject.set(x, "collidedSegmentSource", value.asInstanceOf[js.Any])
+    inline def setCollidedSegmentSource(value: SchemaStreetSegmentList): Self = StObject.set(x, "collidedSegmentSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollidedSegmentSourceUndefined: Self = StObject.set(x, "collidedSegmentSource", js.undefined)
+    inline def setCollidedSegmentSourceUndefined: Self = StObject.set(x, "collidedSegmentSource", js.undefined)
     
-    @scala.inline
-    def setCtclContestUuid(value: String): Self = StObject.set(x, "ctclContestUuid", value.asInstanceOf[js.Any])
+    inline def setCtclContestUuid(value: String): Self = StObject.set(x, "ctclContestUuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtclContestUuidUndefined: Self = StObject.set(x, "ctclContestUuid", js.undefined)
+    inline def setCtclContestUuidUndefined: Self = StObject.set(x, "ctclContestUuid", js.undefined)
     
-    @scala.inline
-    def setCtclOfficeUuid(value: String): Self = StObject.set(x, "ctclOfficeUuid", value.asInstanceOf[js.Any])
+    inline def setCtclOfficeUuid(value: String): Self = StObject.set(x, "ctclOfficeUuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtclOfficeUuidUndefined: Self = StObject.set(x, "ctclOfficeUuid", js.undefined)
+    inline def setCtclOfficeUuidUndefined: Self = StObject.set(x, "ctclOfficeUuid", js.undefined)
     
-    @scala.inline
-    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
+    inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
+    inline def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
     
-    @scala.inline
-    def setPrecinctId(value: String): Self = StObject.set(x, "precinctId", value.asInstanceOf[js.Any])
+    inline def setPrecinctId(value: String): Self = StObject.set(x, "precinctId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecinctIdUndefined: Self = StObject.set(x, "precinctId", js.undefined)
+    inline def setPrecinctIdUndefined: Self = StObject.set(x, "precinctId", js.undefined)
     
-    @scala.inline
-    def setPrecinctSplitId(value: String): Self = StObject.set(x, "precinctSplitId", value.asInstanceOf[js.Any])
+    inline def setPrecinctSplitId(value: String): Self = StObject.set(x, "precinctSplitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecinctSplitIdUndefined: Self = StObject.set(x, "precinctSplitId", js.undefined)
+    inline def setPrecinctSplitIdUndefined: Self = StObject.set(x, "precinctSplitId", js.undefined)
     
-    @scala.inline
-    def setTsStreetSegmentId(value: String): Self = StObject.set(x, "tsStreetSegmentId", value.asInstanceOf[js.Any])
+    inline def setTsStreetSegmentId(value: String): Self = StObject.set(x, "tsStreetSegmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTsStreetSegmentIdUndefined: Self = StObject.set(x, "tsStreetSegmentId", js.undefined)
+    inline def setTsStreetSegmentIdUndefined: Self = StObject.set(x, "tsStreetSegmentId", js.undefined)
     
-    @scala.inline
-    def setVip5PrecinctId(value: String): Self = StObject.set(x, "vip5PrecinctId", value.asInstanceOf[js.Any])
+    inline def setVip5PrecinctId(value: String): Self = StObject.set(x, "vip5PrecinctId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVip5PrecinctIdUndefined: Self = StObject.set(x, "vip5PrecinctId", js.undefined)
+    inline def setVip5PrecinctIdUndefined: Self = StObject.set(x, "vip5PrecinctId", js.undefined)
     
-    @scala.inline
-    def setVip5StreetSegmentId(value: String): Self = StObject.set(x, "vip5StreetSegmentId", value.asInstanceOf[js.Any])
+    inline def setVip5StreetSegmentId(value: String): Self = StObject.set(x, "vip5StreetSegmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVip5StreetSegmentIdUndefined: Self = StObject.set(x, "vip5StreetSegmentId", js.undefined)
+    inline def setVip5StreetSegmentIdUndefined: Self = StObject.set(x, "vip5StreetSegmentId", js.undefined)
     
-    @scala.inline
-    def setVipStreetSegmentId(value: String): Self = StObject.set(x, "vipStreetSegmentId", value.asInstanceOf[js.Any])
+    inline def setVipStreetSegmentId(value: String): Self = StObject.set(x, "vipStreetSegmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVipStreetSegmentIdUndefined: Self = StObject.set(x, "vipStreetSegmentId", js.undefined)
+    inline def setVipStreetSegmentIdUndefined: Self = StObject.set(x, "vipStreetSegmentId", js.undefined)
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Global")
 @js.native
-class Global protected ()
+/* private */ class Global ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Global {
   
@@ -50,7 +50,7 @@ class Global protected ()
   /* CompleteClass */
   override val IsSandboxed: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Global_typekey")
   var PowerPointDotGlobal_typekey: typings.activexPowerpoint.PowerPoint.Global = js.native
   

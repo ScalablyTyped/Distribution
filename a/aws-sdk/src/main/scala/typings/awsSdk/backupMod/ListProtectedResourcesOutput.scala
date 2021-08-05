@@ -18,28 +18,21 @@ trait ListProtectedResourcesOutput extends StObject {
 }
 object ListProtectedResourcesOutput {
   
-  @scala.inline
-  def apply(): ListProtectedResourcesOutput = {
+  inline def apply(): ListProtectedResourcesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProtectedResourcesOutput]
   }
   
-  @scala.inline
-  implicit class ListProtectedResourcesOutputMutableBuilder[Self <: ListProtectedResourcesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListProtectedResourcesOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResults(value: ProtectedResourcesList): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
+    inline def setResults(value: ProtectedResourcesList): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: ProtectedResource*): Self = StObject.set(x, "Results", js.Array(value :_*))
+    inline def setResultsVarargs(value: ProtectedResource*): Self = StObject.set(x, "Results", js.Array(value :_*))
   }
 }

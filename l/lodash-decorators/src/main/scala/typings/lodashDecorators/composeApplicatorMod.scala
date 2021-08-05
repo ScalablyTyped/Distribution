@@ -13,7 +13,7 @@ object composeApplicatorMod {
   class ComposeApplicator () extends Applicator {
     def this(_config: Post) = this()
     
-    var _config: js.Any = js.native
+    /* private */ var _config: js.Any = js.native
     
     val post: Boolean = js.native
   }

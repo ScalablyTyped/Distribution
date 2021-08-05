@@ -13,16 +13,13 @@ trait StopMatchmakingInput extends StObject {
 }
 object StopMatchmakingInput {
   
-  @scala.inline
-  def apply(TicketId: MatchmakingIdStringModel): StopMatchmakingInput = {
+  inline def apply(TicketId: MatchmakingIdStringModel): StopMatchmakingInput = {
     val __obj = js.Dynamic.literal(TicketId = TicketId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopMatchmakingInput]
   }
   
-  @scala.inline
-  implicit class StopMatchmakingInputMutableBuilder[Self <: StopMatchmakingInput] (val x: Self) extends AnyVal {
+  extension [Self <: StopMatchmakingInput](x: Self) {
     
-    @scala.inline
-    def setTicketId(value: MatchmakingIdStringModel): Self = StObject.set(x, "TicketId", value.asInstanceOf[js.Any])
+    inline def setTicketId(value: MatchmakingIdStringModel): Self = StObject.set(x, "TicketId", value.asInstanceOf[js.Any])
   }
 }

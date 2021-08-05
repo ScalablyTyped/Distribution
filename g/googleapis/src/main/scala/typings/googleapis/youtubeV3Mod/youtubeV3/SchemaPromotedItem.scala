@@ -35,37 +35,27 @@ trait SchemaPromotedItem extends StObject {
 }
 object SchemaPromotedItem {
   
-  @scala.inline
-  def apply(): SchemaPromotedItem = {
+  inline def apply(): SchemaPromotedItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPromotedItem]
   }
   
-  @scala.inline
-  implicit class SchemaPromotedItemMutableBuilder[Self <: SchemaPromotedItem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPromotedItem](x: Self) {
     
-    @scala.inline
-    def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
+    inline def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
+    inline def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
     
-    @scala.inline
-    def setId(value: SchemaPromotedItemId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: SchemaPromotedItemId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPromotedByContentOwner(value: Boolean): Self = StObject.set(x, "promotedByContentOwner", value.asInstanceOf[js.Any])
+    inline def setPromotedByContentOwner(value: Boolean): Self = StObject.set(x, "promotedByContentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotedByContentOwnerUndefined: Self = StObject.set(x, "promotedByContentOwner", js.undefined)
+    inline def setPromotedByContentOwnerUndefined: Self = StObject.set(x, "promotedByContentOwner", js.undefined)
     
-    @scala.inline
-    def setTiming(value: SchemaInvideoTiming): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
+    inline def setTiming(value: SchemaInvideoTiming): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
+    inline def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
   }
 }

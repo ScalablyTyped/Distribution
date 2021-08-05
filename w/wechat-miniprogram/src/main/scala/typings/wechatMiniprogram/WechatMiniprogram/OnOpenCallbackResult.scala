@@ -18,19 +18,15 @@ trait OnOpenCallbackResult extends StObject {
 }
 object OnOpenCallbackResult {
   
-  @scala.inline
-  def apply(header: IAnyObject, profile: SocketProfile): OnOpenCallbackResult = {
+  inline def apply(header: IAnyObject, profile: SocketProfile): OnOpenCallbackResult = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnOpenCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnOpenCallbackResultMutableBuilder[Self <: OnOpenCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnOpenCallbackResult](x: Self) {
     
-    @scala.inline
-    def setHeader(value: IAnyObject): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: IAnyObject): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile(value: SocketProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: SocketProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
   }
 }

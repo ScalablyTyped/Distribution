@@ -8,11 +8,9 @@ object styledThemingStrings {
   
   @js.native
   sealed trait VariantMap extends StObject
-  @scala.inline
-  def VariantMap: VariantMap = "VariantMap".asInstanceOf[VariantMap]
+  inline def VariantMap: VariantMap = "VariantMap".asInstanceOf[VariantMap]
   
   @js.native
   sealed trait VariantSet extends StObject
-  @scala.inline
-  def VariantSet: VariantSet = "VariantSet".asInstanceOf[VariantSet]
+  inline def VariantSet: VariantSet = "VariantSet".asInstanceOf[VariantSet]
 }

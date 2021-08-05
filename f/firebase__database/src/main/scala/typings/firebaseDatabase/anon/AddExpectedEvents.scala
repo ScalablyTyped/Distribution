@@ -20,8 +20,7 @@ trait AddExpectedEvents extends StObject {
 }
 object AddExpectedEvents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addExpectedEvents: js.Any => Unit,
     initPromise: js.Promise[js.Any],
     promise: js.Promise[js.Any],
@@ -33,25 +32,18 @@ object AddExpectedEvents {
     __obj.asInstanceOf[AddExpectedEvents]
   }
   
-  @scala.inline
-  implicit class AddExpectedEventsMutableBuilder[Self <: AddExpectedEvents] (val x: Self) extends AnyVal {
+  extension [Self <: AddExpectedEvents](x: Self) {
     
-    @scala.inline
-    def setAddExpectedEvents(value: js.Any => Unit): Self = StObject.set(x, "addExpectedEvents", js.Any.fromFunction1(value))
+    inline def setAddExpectedEvents(value: js.Any => Unit): Self = StObject.set(x, "addExpectedEvents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "initPromise", value.asInstanceOf[js.Any])
+    inline def setInitPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "initPromise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnregister(value: () => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
+    inline def setUnregister(value: () => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWaiter(value: () => Boolean): Self = StObject.set(x, "waiter", js.Any.fromFunction0(value))
+    inline def setWaiter(value: () => Boolean): Self = StObject.set(x, "waiter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWatchesInitializedWaiter(value: () => Boolean): Self = StObject.set(x, "watchesInitializedWaiter", js.Any.fromFunction0(value))
+    inline def setWatchesInitializedWaiter(value: () => Boolean): Self = StObject.set(x, "watchesInitializedWaiter", js.Any.fromFunction0(value))
   }
 }

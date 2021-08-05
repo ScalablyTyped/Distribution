@@ -36,6 +36,6 @@ trait Fields extends StObject {
   
   def UpdateSource(): Unit = js.native
   
-  @JSName("Word.Fields_typekey")
+  /* private */ @JSName("Word.Fields_typekey")
   var WordDotFields_typekey: Fields = js.native
 }

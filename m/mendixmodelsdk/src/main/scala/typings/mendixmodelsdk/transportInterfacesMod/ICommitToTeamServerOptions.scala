@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ICommitToTeamServerOptions extends StObject
 object ICommitToTeamServerOptions {
   
-  @scala.inline
-  def ICommitToGitTeamServerOptions(
+  inline def ICommitToGitTeamServerOptions(
     authorEmail: String,
     authorName: String,
     commitMessage: String,
@@ -24,8 +23,7 @@ object ICommitToTeamServerOptions {
     __obj.asInstanceOf[typings.mendixmodelsdk.transportInterfacesMod.ICommitToGitTeamServerOptions]
   }
   
-  @scala.inline
-  def ICommitToSVNTeamServerOptions(
+  inline def ICommitToSVNTeamServerOptions(
     commitMessage: String,
     targetBranch: String,
     targetRevision: Double,

@@ -14,8 +14,7 @@ trait FileRandomAccessStream
 }
 object FileRandomAccessStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canRead: Boolean,
     canWrite: Boolean,
     cloneStream: () => IRandomAccessStream,
@@ -34,10 +33,8 @@ object FileRandomAccessStream {
     __obj.asInstanceOf[FileRandomAccessStream]
   }
   
-  @scala.inline
-  implicit class FileRandomAccessStreamMutableBuilder[Self <: FileRandomAccessStream] (val x: Self) extends AnyVal {
+  extension [Self <: FileRandomAccessStream](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

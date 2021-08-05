@@ -18,16 +18,13 @@ trait ASPxClientButtonEditClickEventArgs
 }
 object ASPxClientButtonEditClickEventArgs {
   
-  @scala.inline
-  def apply(buttonIndex: Double, processOnServer: Boolean): ASPxClientButtonEditClickEventArgs = {
+  inline def apply(buttonIndex: Double, processOnServer: Boolean): ASPxClientButtonEditClickEventArgs = {
     val __obj = js.Dynamic.literal(buttonIndex = buttonIndex.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientButtonEditClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientButtonEditClickEventArgsMutableBuilder[Self <: ASPxClientButtonEditClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientButtonEditClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setButtonIndex(value: Double): Self = StObject.set(x, "buttonIndex", value.asInstanceOf[js.Any])
+    inline def setButtonIndex(value: Double): Self = StObject.set(x, "buttonIndex", value.asInstanceOf[js.Any])
   }
 }

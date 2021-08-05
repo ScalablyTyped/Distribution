@@ -14,34 +14,25 @@ trait INavigationOptions extends StObject {
 }
 object INavigationOptions {
   
-  @scala.inline
-  def apply(): INavigationOptions = {
+  inline def apply(): INavigationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INavigationOptions]
   }
   
-  @scala.inline
-  implicit class INavigationOptionsMutableBuilder[Self <: INavigationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: INavigationOptions](x: Self) {
     
-    @scala.inline
-    def setDirections(value: /* params */ js.Any => js.Any): Self = StObject.set(x, "directions", js.Any.fromFunction1(value))
+    inline def setDirections(value: /* params */ js.Any => js.Any): Self = StObject.set(x, "directions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
+    inline def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String | Callback): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | Callback): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleFunction0(value: () => Unit): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
+    inline def setTitleFunction0(value: () => Unit): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

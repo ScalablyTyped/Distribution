@@ -13,19 +13,14 @@ object routeLoaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(assetPrefix: String): RouteLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(assetPrefix.asInstanceOf[js.Any]).asInstanceOf[RouteLoader]
+  inline def default(assetPrefix: String): RouteLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(assetPrefix.asInstanceOf[js.Any]).asInstanceOf[RouteLoader]
   
-  @scala.inline
-  def getClientBuildManifest(): js.Promise[ClientBuildManifest] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientBuildManifest")().asInstanceOf[js.Promise[ClientBuildManifest]]
+  inline def getClientBuildManifest(): js.Promise[ClientBuildManifest] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientBuildManifest")().asInstanceOf[js.Promise[ClientBuildManifest]]
   
-  @scala.inline
-  def isAssetError(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAssetError")().asInstanceOf[js.UndefOr[Boolean]]
-  @scala.inline
-  def isAssetError(err: Error): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAssetError")(err.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
+  inline def isAssetError(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAssetError")().asInstanceOf[js.UndefOr[Boolean]]
+  inline def isAssetError(err: Error): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAssetError")(err.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
   
-  @scala.inline
-  def markAssetError(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("markAssetError")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def markAssetError(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("markAssetError")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
   
   trait Future[V] extends StObject {
     
@@ -35,20 +30,16 @@ object routeLoaderMod {
   }
   object Future {
     
-    @scala.inline
-    def apply[V](future: js.Promise[V], resolve: V => Unit): Future[V] = {
+    inline def apply[V](future: js.Promise[V], resolve: V => Unit): Future[V] = {
       val __obj = js.Dynamic.literal(future = future.asInstanceOf[js.Any], resolve = js.Any.fromFunction1(resolve))
       __obj.asInstanceOf[Future[V]]
     }
     
-    @scala.inline
-    implicit class FutureMutableBuilder[Self <: Future[?], V] (val x: Self & Future[V]) extends AnyVal {
+    extension [Self <: Future[?], V](x: Self & Future[V]) {
       
-      @scala.inline
-      def setFuture(value: js.Promise[V]): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+      inline def setFuture(value: js.Promise[V]): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolve(value: V => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: V => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
   
@@ -60,17 +51,14 @@ object routeLoaderMod {
   }
   object LoadedEntrypointFailure {
     
-    @scala.inline
-    def apply(error: js.Any): LoadedEntrypointFailure = {
+    inline def apply(error: js.Any): LoadedEntrypointFailure = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadedEntrypointFailure]
     }
     
-    @scala.inline
-    implicit class LoadedEntrypointFailureMutableBuilder[Self <: LoadedEntrypointFailure] (val x: Self) extends AnyVal {
+    extension [Self <: LoadedEntrypointFailure](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,20 +72,16 @@ object routeLoaderMod {
   }
   object LoadedEntrypointSuccess {
     
-    @scala.inline
-    def apply(component: ComponentType[js.Object], exports: js.Any): LoadedEntrypointSuccess = {
+    inline def apply(component: ComponentType[js.Object], exports: js.Any): LoadedEntrypointSuccess = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadedEntrypointSuccess]
     }
     
-    @scala.inline
-    implicit class LoadedEntrypointSuccessMutableBuilder[Self <: LoadedEntrypointSuccess] (val x: Self) extends AnyVal {
+    extension [Self <: LoadedEntrypointSuccess](x: Self) {
       
-      @scala.inline
-      def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+      inline def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,17 +93,14 @@ object routeLoaderMod {
   }
   object LoadedRouteFailure {
     
-    @scala.inline
-    def apply(error: js.Any): LoadedRouteFailure = {
+    inline def apply(error: js.Any): LoadedRouteFailure = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadedRouteFailure]
     }
     
-    @scala.inline
-    implicit class LoadedRouteFailureMutableBuilder[Self <: LoadedRouteFailure] (val x: Self) extends AnyVal {
+    extension [Self <: LoadedRouteFailure](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,20 +113,16 @@ object routeLoaderMod {
   }
   object LoadedRouteSuccess {
     
-    @scala.inline
-    def apply(component: ComponentType[js.Object], exports: js.Any, styles: js.Array[RouteStyleSheet]): LoadedRouteSuccess = {
+    inline def apply(component: ComponentType[js.Object], exports: js.Any, styles: js.Array[RouteStyleSheet]): LoadedRouteSuccess = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadedRouteSuccess]
     }
     
-    @scala.inline
-    implicit class LoadedRouteSuccessMutableBuilder[Self <: LoadedRouteSuccess] (val x: Self) extends AnyVal {
+    extension [Self <: LoadedRouteSuccess](x: Self) {
       
-      @scala.inline
-      def setStyles(value: js.Array[RouteStyleSheet]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Array[RouteStyleSheet]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesVarargs(value: RouteStyleSheet*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: RouteStyleSheet*): Self = StObject.set(x, "styles", js.Array(value :_*))
     }
   }
   
@@ -156,14 +133,12 @@ object routeLoaderMod {
   trait RouteEntrypoint extends StObject
   object RouteEntrypoint {
     
-    @scala.inline
-    def LoadedEntrypointFailure(error: js.Any): typings.next.routeLoaderMod.LoadedEntrypointFailure = {
+    inline def LoadedEntrypointFailure(error: js.Any): typings.next.routeLoaderMod.LoadedEntrypointFailure = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.next.routeLoaderMod.LoadedEntrypointFailure]
     }
     
-    @scala.inline
-    def LoadedEntrypointSuccess(component: ComponentType[js.Object], exports: js.Any): typings.next.routeLoaderMod.LoadedEntrypointSuccess = {
+    inline def LoadedEntrypointSuccess(component: ComponentType[js.Object], exports: js.Any): typings.next.routeLoaderMod.LoadedEntrypointSuccess = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.next.routeLoaderMod.LoadedEntrypointSuccess]
     }
@@ -181,8 +156,7 @@ object routeLoaderMod {
   }
   object RouteLoader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       loadRoute: String => js.Promise[RouteLoaderEntry],
       onEntrypoint: (String, js.Function0[js.Any]) => Unit,
       prefetch: String => js.Promise[Unit],
@@ -192,20 +166,15 @@ object routeLoaderMod {
       __obj.asInstanceOf[RouteLoader]
     }
     
-    @scala.inline
-    implicit class RouteLoaderMutableBuilder[Self <: RouteLoader] (val x: Self) extends AnyVal {
+    extension [Self <: RouteLoader](x: Self) {
       
-      @scala.inline
-      def setLoadRoute(value: String => js.Promise[RouteLoaderEntry]): Self = StObject.set(x, "loadRoute", js.Any.fromFunction1(value))
+      inline def setLoadRoute(value: String => js.Promise[RouteLoaderEntry]): Self = StObject.set(x, "loadRoute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEntrypoint(value: (String, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "onEntrypoint", js.Any.fromFunction2(value))
+      inline def setOnEntrypoint(value: (String, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "onEntrypoint", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrefetch(value: String => js.Promise[Unit]): Self = StObject.set(x, "prefetch", js.Any.fromFunction1(value))
+      inline def setPrefetch(value: String => js.Promise[Unit]): Self = StObject.set(x, "prefetch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWhenEntrypoint(value: String => js.Promise[RouteEntrypoint]): Self = StObject.set(x, "whenEntrypoint", js.Any.fromFunction1(value))
+      inline def setWhenEntrypoint(value: String => js.Promise[RouteEntrypoint]): Self = StObject.set(x, "whenEntrypoint", js.Any.fromFunction1(value))
     }
   }
   
@@ -216,14 +185,12 @@ object routeLoaderMod {
   trait RouteLoaderEntry extends StObject
   object RouteLoaderEntry {
     
-    @scala.inline
-    def LoadedRouteFailure(error: js.Any): typings.next.routeLoaderMod.LoadedRouteFailure = {
+    inline def LoadedRouteFailure(error: js.Any): typings.next.routeLoaderMod.LoadedRouteFailure = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.next.routeLoaderMod.LoadedRouteFailure]
     }
     
-    @scala.inline
-    def LoadedRouteSuccess(component: ComponentType[js.Object], exports: js.Any, styles: js.Array[RouteStyleSheet]): typings.next.routeLoaderMod.LoadedRouteSuccess = {
+    inline def LoadedRouteSuccess(component: ComponentType[js.Object], exports: js.Any, styles: js.Array[RouteStyleSheet]): typings.next.routeLoaderMod.LoadedRouteSuccess = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.next.routeLoaderMod.LoadedRouteSuccess]
     }
@@ -237,20 +204,16 @@ object routeLoaderMod {
   }
   object RouteStyleSheet {
     
-    @scala.inline
-    def apply(content: String, href: String): RouteStyleSheet = {
+    inline def apply(content: String, href: String): RouteStyleSheet = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteStyleSheet]
     }
     
-    @scala.inline
-    implicit class RouteStyleSheetMutableBuilder[Self <: RouteStyleSheet] (val x: Self) extends AnyVal {
+    extension [Self <: RouteStyleSheet](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,26 +227,20 @@ object routeLoaderMod {
     }
     object Window {
       
-      @scala.inline
-      def apply(): Window = {
+      inline def apply(): Window = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def set__BUILD_MANIFEST(value: ClientBuildManifest): Self = StObject.set(x, "__BUILD_MANIFEST", value.asInstanceOf[js.Any])
+        inline def set__BUILD_MANIFEST(value: ClientBuildManifest): Self = StObject.set(x, "__BUILD_MANIFEST", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set__BUILD_MANIFESTUndefined: Self = StObject.set(x, "__BUILD_MANIFEST", js.undefined)
+        inline def set__BUILD_MANIFESTUndefined: Self = StObject.set(x, "__BUILD_MANIFEST", js.undefined)
         
-        @scala.inline
-        def set__BUILD_MANIFEST_CB(value: js.Function): Self = StObject.set(x, "__BUILD_MANIFEST_CB", value.asInstanceOf[js.Any])
+        inline def set__BUILD_MANIFEST_CB(value: js.Function): Self = StObject.set(x, "__BUILD_MANIFEST_CB", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set__BUILD_MANIFEST_CBUndefined: Self = StObject.set(x, "__BUILD_MANIFEST_CB", js.undefined)
+        inline def set__BUILD_MANIFEST_CBUndefined: Self = StObject.set(x, "__BUILD_MANIFEST_CB", js.undefined)
       }
     }
   }

@@ -18,25 +18,19 @@ trait AppInstanceUserMembershipSummary extends StObject {
 }
 object AppInstanceUserMembershipSummary {
   
-  @scala.inline
-  def apply(): AppInstanceUserMembershipSummary = {
+  inline def apply(): AppInstanceUserMembershipSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppInstanceUserMembershipSummary]
   }
   
-  @scala.inline
-  implicit class AppInstanceUserMembershipSummaryMutableBuilder[Self <: AppInstanceUserMembershipSummary] (val x: Self) extends AnyVal {
+  extension [Self <: AppInstanceUserMembershipSummary](x: Self) {
     
-    @scala.inline
-    def setReadMarkerTimestamp(value: Timestamp): Self = StObject.set(x, "ReadMarkerTimestamp", value.asInstanceOf[js.Any])
+    inline def setReadMarkerTimestamp(value: Timestamp): Self = StObject.set(x, "ReadMarkerTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadMarkerTimestampUndefined: Self = StObject.set(x, "ReadMarkerTimestamp", js.undefined)
+    inline def setReadMarkerTimestampUndefined: Self = StObject.set(x, "ReadMarkerTimestamp", js.undefined)
     
-    @scala.inline
-    def setType(value: ChannelMembershipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChannelMembershipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

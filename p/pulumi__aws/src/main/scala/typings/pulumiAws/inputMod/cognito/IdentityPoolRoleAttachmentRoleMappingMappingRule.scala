@@ -29,25 +29,19 @@ trait IdentityPoolRoleAttachmentRoleMappingMappingRule extends StObject {
 }
 object IdentityPoolRoleAttachmentRoleMappingMappingRule {
   
-  @scala.inline
-  def apply(claim: Input[String], matchType: Input[String], roleArn: Input[String], value: Input[String]): IdentityPoolRoleAttachmentRoleMappingMappingRule = {
+  inline def apply(claim: Input[String], matchType: Input[String], roleArn: Input[String], value: Input[String]): IdentityPoolRoleAttachmentRoleMappingMappingRule = {
     val __obj = js.Dynamic.literal(claim = claim.asInstanceOf[js.Any], matchType = matchType.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityPoolRoleAttachmentRoleMappingMappingRule]
   }
   
-  @scala.inline
-  implicit class IdentityPoolRoleAttachmentRoleMappingMappingRuleMutableBuilder[Self <: IdentityPoolRoleAttachmentRoleMappingMappingRule] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityPoolRoleAttachmentRoleMappingMappingRule](x: Self) {
     
-    @scala.inline
-    def setClaim(value: Input[String]): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
+    inline def setClaim(value: Input[String]): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchType(value: Input[String]): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
+    inline def setMatchType(value: Input[String]): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

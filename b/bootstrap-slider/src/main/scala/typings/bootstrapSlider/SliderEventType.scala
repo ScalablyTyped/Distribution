@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SliderEventType extends StObject
 object SliderEventType {
   
-  @scala.inline
-  def change: typings.bootstrapSlider.bootstrapSliderStrings.change = "change".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.change]
+  inline def change: typings.bootstrapSlider.bootstrapSliderStrings.change = "change".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.change]
   
-  @scala.inline
-  def slide: typings.bootstrapSlider.bootstrapSliderStrings.slide = "slide".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slide]
+  inline def slide: typings.bootstrapSlider.bootstrapSliderStrings.slide = "slide".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slide]
   
-  @scala.inline
-  def slideDisabled: typings.bootstrapSlider.bootstrapSliderStrings.slideDisabled = "slideDisabled".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slideDisabled]
+  inline def slideDisabled: typings.bootstrapSlider.bootstrapSliderStrings.slideDisabled = "slideDisabled".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slideDisabled]
   
-  @scala.inline
-  def slideEnabled: typings.bootstrapSlider.bootstrapSliderStrings.slideEnabled = "slideEnabled".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slideEnabled]
+  inline def slideEnabled: typings.bootstrapSlider.bootstrapSliderStrings.slideEnabled = "slideEnabled".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slideEnabled]
   
-  @scala.inline
-  def slideStart: typings.bootstrapSlider.bootstrapSliderStrings.slideStart = "slideStart".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slideStart]
+  inline def slideStart: typings.bootstrapSlider.bootstrapSliderStrings.slideStart = "slideStart".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slideStart]
   
-  @scala.inline
-  def slideStop: typings.bootstrapSlider.bootstrapSliderStrings.slideStop = "slideStop".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slideStop]
+  inline def slideStop: typings.bootstrapSlider.bootstrapSliderStrings.slideStop = "slideStop".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slideStop]
 }

@@ -20,14 +20,12 @@ object PullTypeEnclosingTypeWalker {
   @js.native
   def defaultEnclosingTypeWalkerState: js.Any = js.native
   
-  @scala.inline
-  def defaultEnclosingTypeWalkerState_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultEnclosingTypeWalkerState")(x.asInstanceOf[js.Any])
+  inline def defaultEnclosingTypeWalkerState_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultEnclosingTypeWalkerState")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("typescript-services", "PullTypeEnclosingTypeWalker._nonGenericEnclosingTypeWalkerState")
   @js.native
   def nonGenericEnclosingTypeWalkerState: js.Any = js.native
   
-  @scala.inline
-  def nonGenericEnclosingTypeWalkerState_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_nonGenericEnclosingTypeWalkerState")(x.asInstanceOf[js.Any])
+  inline def nonGenericEnclosingTypeWalkerState_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_nonGenericEnclosingTypeWalkerState")(x.asInstanceOf[js.Any])
 }

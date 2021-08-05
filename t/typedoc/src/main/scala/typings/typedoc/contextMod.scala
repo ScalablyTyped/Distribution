@@ -32,9 +32,9 @@ object contextMod {
     
     def expectSymbolAtLocation(node: Node): Symbol = js.native
     
-    var externalPattern: js.Any = js.native
+    /* private */ var externalPattern: js.Any = js.native
     
-    var extractTypeParameters: js.Any = js.native
+    /* private */ var extractTypeParameters: js.Any = js.native
     
     var fileNames: js.Array[String] = js.native
     

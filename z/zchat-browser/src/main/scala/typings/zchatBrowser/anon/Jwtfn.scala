@@ -10,19 +10,15 @@ trait Jwtfn extends StObject {
 }
 object Jwtfn {
   
-  @scala.inline
-  def apply(): Jwtfn = {
+  inline def apply(): Jwtfn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Jwtfn]
   }
   
-  @scala.inline
-  implicit class JwtfnMutableBuilder[Self <: Jwtfn] (val x: Self) extends AnyVal {
+  extension [Self <: Jwtfn](x: Self) {
     
-    @scala.inline
-    def setJwt_fn(value: /* callback */ js.Function1[/* jwt */ String, Unit] => Unit): Self = StObject.set(x, "jwt_fn", js.Any.fromFunction1(value))
+    inline def setJwt_fn(value: /* callback */ js.Function1[/* jwt */ String, Unit] => Unit): Self = StObject.set(x, "jwt_fn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJwt_fnUndefined: Self = StObject.set(x, "jwt_fn", js.undefined)
+    inline def setJwt_fnUndefined: Self = StObject.set(x, "jwt_fn", js.undefined)
   }
 }

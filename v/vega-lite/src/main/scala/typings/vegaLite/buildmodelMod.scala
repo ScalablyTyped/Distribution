@@ -15,8 +15,7 @@ object buildmodelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildModel(
+  inline def buildModel(
     spec: NormalizedSpec,
     parent: Model,
     parentGivenName: String,

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FindClosestByPathAlgorithm extends StObject
 object FindClosestByPathAlgorithm {
   
-  @scala.inline
-  def astar: typings.screeps.screepsStrings.astar = "astar".asInstanceOf[typings.screeps.screepsStrings.astar]
+  inline def astar: typings.screeps.screepsStrings.astar = "astar".asInstanceOf[typings.screeps.screepsStrings.astar]
   
-  @scala.inline
-  def dijkstra: typings.screeps.screepsStrings.dijkstra = "dijkstra".asInstanceOf[typings.screeps.screepsStrings.dijkstra]
+  inline def dijkstra: typings.screeps.screepsStrings.dijkstra = "dijkstra".asInstanceOf[typings.screeps.screepsStrings.dijkstra]
 }

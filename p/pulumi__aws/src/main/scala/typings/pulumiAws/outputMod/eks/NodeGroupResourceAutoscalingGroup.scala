@@ -13,16 +13,13 @@ trait NodeGroupResourceAutoscalingGroup extends StObject {
 }
 object NodeGroupResourceAutoscalingGroup {
   
-  @scala.inline
-  def apply(name: String): NodeGroupResourceAutoscalingGroup = {
+  inline def apply(name: String): NodeGroupResourceAutoscalingGroup = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeGroupResourceAutoscalingGroup]
   }
   
-  @scala.inline
-  implicit class NodeGroupResourceAutoscalingGroupMutableBuilder[Self <: NodeGroupResourceAutoscalingGroup] (val x: Self) extends AnyVal {
+  extension [Self <: NodeGroupResourceAutoscalingGroup](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

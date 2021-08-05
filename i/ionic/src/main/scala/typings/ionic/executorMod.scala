@@ -36,14 +36,11 @@ object executorMod {
   @js.native
   val VERSION_FLAGS: js.Array[String] = js.native
   
-  @scala.inline
-  def getFullCommandParts(location: NamespaceLocateResult): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullCommandParts")(location.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def getFullCommandParts(location: NamespaceLocateResult): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullCommandParts")(location.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def metadataToCmdOptsEnv(metadata: CommandMetadata, cmdNameParts: js.Array[String]): Map[CommandMetadataOption, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("metadataToCmdOptsEnv")(metadata.asInstanceOf[js.Any], cmdNameParts.asInstanceOf[js.Any])).asInstanceOf[Map[CommandMetadataOption, String]]
+  inline def metadataToCmdOptsEnv(metadata: CommandMetadata, cmdNameParts: js.Array[String]): Map[CommandMetadataOption, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("metadataToCmdOptsEnv")(metadata.asInstanceOf[js.Any], cmdNameParts.asInstanceOf[js.Any])).asInstanceOf[Map[CommandMetadataOption, String]]
   
-  @scala.inline
-  def runCommand(runinfo: CommandInstanceInfo, argv: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runCommand")(runinfo.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def runCommand(runinfo: CommandInstanceInfo, argv: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runCommand")(runinfo.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait ExecutorDeps extends StObject {
     
@@ -51,17 +48,14 @@ object executorMod {
   }
   object ExecutorDeps {
     
-    @scala.inline
-    def apply(namespace: INamespace): ExecutorDeps = {
+    inline def apply(namespace: INamespace): ExecutorDeps = {
       val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExecutorDeps]
     }
     
-    @scala.inline
-    implicit class ExecutorDepsMutableBuilder[Self <: ExecutorDeps] (val x: Self) extends AnyVal {
+    extension [Self <: ExecutorDeps](x: Self) {
       
-      @scala.inline
-      def setNamespace(value: INamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: INamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     }
   }
 }

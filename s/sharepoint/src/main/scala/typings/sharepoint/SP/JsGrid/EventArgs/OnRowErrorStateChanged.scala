@@ -23,8 +23,7 @@ trait OnRowErrorStateChanged
 }
 object OnRowErrorStateChanged {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bAddingError: Boolean,
     bErrorCurrentlyInRow: Boolean,
     bRowHadError: Boolean,
@@ -36,25 +35,18 @@ object OnRowErrorStateChanged {
     __obj.asInstanceOf[OnRowErrorStateChanged]
   }
   
-  @scala.inline
-  implicit class OnRowErrorStateChangedMutableBuilder[Self <: OnRowErrorStateChanged] (val x: Self) extends AnyVal {
+  extension [Self <: OnRowErrorStateChanged](x: Self) {
     
-    @scala.inline
-    def setBAddingError(value: Boolean): Self = StObject.set(x, "bAddingError", value.asInstanceOf[js.Any])
+    inline def setBAddingError(value: Boolean): Self = StObject.set(x, "bAddingError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBErrorCurrentlyInRow(value: Boolean): Self = StObject.set(x, "bErrorCurrentlyInRow", value.asInstanceOf[js.Any])
+    inline def setBErrorCurrentlyInRow(value: Boolean): Self = StObject.set(x, "bErrorCurrentlyInRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBRowHadError(value: Boolean): Self = StObject.set(x, "bRowHadError", value.asInstanceOf[js.Any])
+    inline def setBRowHadError(value: Boolean): Self = StObject.set(x, "bRowHadError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorId(value: Double): Self = StObject.set(x, "errorId", value.asInstanceOf[js.Any])
+    inline def setErrorId(value: Double): Self = StObject.set(x, "errorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
+    inline def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
   }
 }

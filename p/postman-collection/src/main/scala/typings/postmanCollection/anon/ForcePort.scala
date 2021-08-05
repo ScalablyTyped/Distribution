@@ -10,16 +10,13 @@ trait ForcePort extends StObject {
 }
 object ForcePort {
   
-  @scala.inline
-  def apply(forcePort: Boolean): ForcePort = {
+  inline def apply(forcePort: Boolean): ForcePort = {
     val __obj = js.Dynamic.literal(forcePort = forcePort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForcePort]
   }
   
-  @scala.inline
-  implicit class ForcePortMutableBuilder[Self <: ForcePort] (val x: Self) extends AnyVal {
+  extension [Self <: ForcePort](x: Self) {
     
-    @scala.inline
-    def setForcePort(value: Boolean): Self = StObject.set(x, "forcePort", value.asInstanceOf[js.Any])
+    inline def setForcePort(value: Boolean): Self = StObject.set(x, "forcePort", value.asInstanceOf[js.Any])
   }
 }

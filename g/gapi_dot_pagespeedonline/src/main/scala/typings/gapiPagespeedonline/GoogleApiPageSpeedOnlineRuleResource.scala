@@ -29,28 +29,21 @@ trait GoogleApiPageSpeedOnlineRuleResource extends StObject {
 }
 object GoogleApiPageSpeedOnlineRuleResource {
   
-  @scala.inline
-  def apply(localizedRuleName: String, ruleImpact: Double, ruleScore: Double, urlBlocks: js.Array[Header]): GoogleApiPageSpeedOnlineRuleResource = {
+  inline def apply(localizedRuleName: String, ruleImpact: Double, ruleScore: Double, urlBlocks: js.Array[Header]): GoogleApiPageSpeedOnlineRuleResource = {
     val __obj = js.Dynamic.literal(localizedRuleName = localizedRuleName.asInstanceOf[js.Any], ruleImpact = ruleImpact.asInstanceOf[js.Any], ruleScore = ruleScore.asInstanceOf[js.Any], urlBlocks = urlBlocks.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiPageSpeedOnlineRuleResource]
   }
   
-  @scala.inline
-  implicit class GoogleApiPageSpeedOnlineRuleResourceMutableBuilder[Self <: GoogleApiPageSpeedOnlineRuleResource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiPageSpeedOnlineRuleResource](x: Self) {
     
-    @scala.inline
-    def setLocalizedRuleName(value: String): Self = StObject.set(x, "localizedRuleName", value.asInstanceOf[js.Any])
+    inline def setLocalizedRuleName(value: String): Self = StObject.set(x, "localizedRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleImpact(value: Double): Self = StObject.set(x, "ruleImpact", value.asInstanceOf[js.Any])
+    inline def setRuleImpact(value: Double): Self = StObject.set(x, "ruleImpact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleScore(value: Double): Self = StObject.set(x, "ruleScore", value.asInstanceOf[js.Any])
+    inline def setRuleScore(value: Double): Self = StObject.set(x, "ruleScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlBlocks(value: js.Array[Header]): Self = StObject.set(x, "urlBlocks", value.asInstanceOf[js.Any])
+    inline def setUrlBlocks(value: js.Array[Header]): Self = StObject.set(x, "urlBlocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlBlocksVarargs(value: Header*): Self = StObject.set(x, "urlBlocks", js.Array(value :_*))
+    inline def setUrlBlocksVarargs(value: Header*): Self = StObject.set(x, "urlBlocks", js.Array(value :_*))
   }
 }

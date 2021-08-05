@@ -15,19 +15,15 @@ trait SchemaProjectsListXpnHostsRequest extends StObject {
 }
 object SchemaProjectsListXpnHostsRequest {
   
-  @scala.inline
-  def apply(): SchemaProjectsListXpnHostsRequest = {
+  inline def apply(): SchemaProjectsListXpnHostsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProjectsListXpnHostsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaProjectsListXpnHostsRequestMutableBuilder[Self <: SchemaProjectsListXpnHostsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProjectsListXpnHostsRequest](x: Self) {
     
-    @scala.inline
-    def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
+    inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
   }
 }

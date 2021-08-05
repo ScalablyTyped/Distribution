@@ -183,223 +183,151 @@ trait SauceConnectOptions extends StObject {
 }
 object SauceConnectOptions {
   
-  @scala.inline
-  def apply(): SauceConnectOptions = {
+  inline def apply(): SauceConnectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SauceConnectOptions]
   }
   
-  @scala.inline
-  implicit class SauceConnectOptionsMutableBuilder[Self <: SauceConnectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SauceConnectOptions](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCainfo(value: String): Self = StObject.set(x, "cainfo", value.asInstanceOf[js.Any])
+    inline def setCainfo(value: String): Self = StObject.set(x, "cainfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCainfoUndefined: Self = StObject.set(x, "cainfo", js.undefined)
+    inline def setCainfoUndefined: Self = StObject.set(x, "cainfo", js.undefined)
     
-    @scala.inline
-    def setCapath(value: String): Self = StObject.set(x, "capath", value.asInstanceOf[js.Any])
+    inline def setCapath(value: String): Self = StObject.set(x, "capath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapathUndefined: Self = StObject.set(x, "capath", js.undefined)
+    inline def setCapathUndefined: Self = StObject.set(x, "capath", js.undefined)
     
-    @scala.inline
-    def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
+    inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
+    inline def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
     
-    @scala.inline
-    def setDirectDomains(value: String): Self = StObject.set(x, "directDomains", value.asInstanceOf[js.Any])
+    inline def setDirectDomains(value: String): Self = StObject.set(x, "directDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectDomainsUndefined: Self = StObject.set(x, "directDomains", js.undefined)
+    inline def setDirectDomainsUndefined: Self = StObject.set(x, "directDomains", js.undefined)
     
-    @scala.inline
-    def setDns(value: String): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
+    inline def setDns(value: String): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsUndefined: Self = StObject.set(x, "dns", js.undefined)
+    inline def setDnsUndefined: Self = StObject.set(x, "dns", js.undefined)
     
-    @scala.inline
-    def setDoctor(value: Boolean): Self = StObject.set(x, "doctor", value.asInstanceOf[js.Any])
+    inline def setDoctor(value: Boolean): Self = StObject.set(x, "doctor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoctorUndefined: Self = StObject.set(x, "doctor", js.undefined)
+    inline def setDoctorUndefined: Self = StObject.set(x, "doctor", js.undefined)
     
-    @scala.inline
-    def setFastFailRegexps(value: String): Self = StObject.set(x, "fastFailRegexps", value.asInstanceOf[js.Any])
+    inline def setFastFailRegexps(value: String): Self = StObject.set(x, "fastFailRegexps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFastFailRegexpsUndefined: Self = StObject.set(x, "fastFailRegexps", js.undefined)
+    inline def setFastFailRegexpsUndefined: Self = StObject.set(x, "fastFailRegexps", js.undefined)
     
-    @scala.inline
-    def setLogStats(value: Double): Self = StObject.set(x, "logStats", value.asInstanceOf[js.Any])
+    inline def setLogStats(value: Double): Self = StObject.set(x, "logStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStatsUndefined: Self = StObject.set(x, "logStats", js.undefined)
+    inline def setLogStatsUndefined: Self = StObject.set(x, "logStats", js.undefined)
     
-    @scala.inline
-    def setLogfile(value: String): Self = StObject.set(x, "logfile", value.asInstanceOf[js.Any])
+    inline def setLogfile(value: String): Self = StObject.set(x, "logfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogfileUndefined: Self = StObject.set(x, "logfile", js.undefined)
+    inline def setLogfileUndefined: Self = StObject.set(x, "logfile", js.undefined)
     
-    @scala.inline
-    def setLogger(value: /* output */ String => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
+    inline def setLogger(value: /* output */ String => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
-    @scala.inline
-    def setMaxLogsize(value: Double): Self = StObject.set(x, "maxLogsize", value.asInstanceOf[js.Any])
+    inline def setMaxLogsize(value: Double): Self = StObject.set(x, "maxLogsize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLogsizeUndefined: Self = StObject.set(x, "maxLogsize", js.undefined)
+    inline def setMaxLogsizeUndefined: Self = StObject.set(x, "maxLogsize", js.undefined)
     
-    @scala.inline
-    def setMaxMissedAcks(value: Double): Self = StObject.set(x, "maxMissedAcks", value.asInstanceOf[js.Any])
+    inline def setMaxMissedAcks(value: Double): Self = StObject.set(x, "maxMissedAcks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMissedAcksUndefined: Self = StObject.set(x, "maxMissedAcks", js.undefined)
+    inline def setMaxMissedAcksUndefined: Self = StObject.set(x, "maxMissedAcks", js.undefined)
     
-    @scala.inline
-    def setMetricsAddress(value: String): Self = StObject.set(x, "metricsAddress", value.asInstanceOf[js.Any])
+    inline def setMetricsAddress(value: String): Self = StObject.set(x, "metricsAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsAddressUndefined: Self = StObject.set(x, "metricsAddress", js.undefined)
+    inline def setMetricsAddressUndefined: Self = StObject.set(x, "metricsAddress", js.undefined)
     
-    @scala.inline
-    def setNoAutodetect(value: Boolean): Self = StObject.set(x, "noAutodetect", value.asInstanceOf[js.Any])
+    inline def setNoAutodetect(value: Boolean): Self = StObject.set(x, "noAutodetect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoAutodetectUndefined: Self = StObject.set(x, "noAutodetect", js.undefined)
+    inline def setNoAutodetectUndefined: Self = StObject.set(x, "noAutodetect", js.undefined)
     
-    @scala.inline
-    def setNoProxyCaching(value: Boolean): Self = StObject.set(x, "noProxyCaching", value.asInstanceOf[js.Any])
+    inline def setNoProxyCaching(value: Boolean): Self = StObject.set(x, "noProxyCaching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoProxyCachingUndefined: Self = StObject.set(x, "noProxyCaching", js.undefined)
+    inline def setNoProxyCachingUndefined: Self = StObject.set(x, "noProxyCaching", js.undefined)
     
-    @scala.inline
-    def setNoRemoveCollidingTunnels(value: Boolean): Self = StObject.set(x, "noRemoveCollidingTunnels", value.asInstanceOf[js.Any])
+    inline def setNoRemoveCollidingTunnels(value: Boolean): Self = StObject.set(x, "noRemoveCollidingTunnels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoRemoveCollidingTunnelsUndefined: Self = StObject.set(x, "noRemoveCollidingTunnels", js.undefined)
+    inline def setNoRemoveCollidingTunnelsUndefined: Self = StObject.set(x, "noRemoveCollidingTunnels", js.undefined)
     
-    @scala.inline
-    def setNoSslBumpDomains(value: String): Self = StObject.set(x, "noSslBumpDomains", value.asInstanceOf[js.Any])
+    inline def setNoSslBumpDomains(value: String): Self = StObject.set(x, "noSslBumpDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSslBumpDomainsUndefined: Self = StObject.set(x, "noSslBumpDomains", js.undefined)
+    inline def setNoSslBumpDomainsUndefined: Self = StObject.set(x, "noSslBumpDomains", js.undefined)
     
-    @scala.inline
-    def setPac(value: String): Self = StObject.set(x, "pac", value.asInstanceOf[js.Any])
+    inline def setPac(value: String): Self = StObject.set(x, "pac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacUndefined: Self = StObject.set(x, "pac", js.undefined)
+    inline def setPacUndefined: Self = StObject.set(x, "pac", js.undefined)
     
-    @scala.inline
-    def setPidfile(value: String): Self = StObject.set(x, "pidfile", value.asInstanceOf[js.Any])
+    inline def setPidfile(value: String): Self = StObject.set(x, "pidfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPidfileUndefined: Self = StObject.set(x, "pidfile", js.undefined)
+    inline def setPidfileUndefined: Self = StObject.set(x, "pidfile", js.undefined)
     
-    @scala.inline
-    def setProxyTunnel(value: Boolean): Self = StObject.set(x, "proxyTunnel", value.asInstanceOf[js.Any])
+    inline def setProxyTunnel(value: Boolean): Self = StObject.set(x, "proxyTunnel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyTunnelUndefined: Self = StObject.set(x, "proxyTunnel", js.undefined)
+    inline def setProxyTunnelUndefined: Self = StObject.set(x, "proxyTunnel", js.undefined)
     
-    @scala.inline
-    def setProxyUserpwd(value: String): Self = StObject.set(x, "proxyUserpwd", value.asInstanceOf[js.Any])
+    inline def setProxyUserpwd(value: String): Self = StObject.set(x, "proxyUserpwd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUserpwdUndefined: Self = StObject.set(x, "proxyUserpwd", js.undefined)
+    inline def setProxyUserpwdUndefined: Self = StObject.set(x, "proxyUserpwd", js.undefined)
     
-    @scala.inline
-    def setReadyfile(value: String): Self = StObject.set(x, "readyfile", value.asInstanceOf[js.Any])
+    inline def setReadyfile(value: String): Self = StObject.set(x, "readyfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyfileUndefined: Self = StObject.set(x, "readyfile", js.undefined)
+    inline def setReadyfileUndefined: Self = StObject.set(x, "readyfile", js.undefined)
     
-    @scala.inline
-    def setRestUrl(value: String): Self = StObject.set(x, "restUrl", value.asInstanceOf[js.Any])
+    inline def setRestUrl(value: String): Self = StObject.set(x, "restUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestUrlUndefined: Self = StObject.set(x, "restUrl", js.undefined)
+    inline def setRestUrlUndefined: Self = StObject.set(x, "restUrl", js.undefined)
     
-    @scala.inline
-    def setScVersion(value: String): Self = StObject.set(x, "scVersion", value.asInstanceOf[js.Any])
+    inline def setScVersion(value: String): Self = StObject.set(x, "scVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScVersionUndefined: Self = StObject.set(x, "scVersion", js.undefined)
+    inline def setScVersionUndefined: Self = StObject.set(x, "scVersion", js.undefined)
     
-    @scala.inline
-    def setScproxyPort(value: String): Self = StObject.set(x, "scproxyPort", value.asInstanceOf[js.Any])
+    inline def setScproxyPort(value: String): Self = StObject.set(x, "scproxyPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScproxyPortUndefined: Self = StObject.set(x, "scproxyPort", js.undefined)
+    inline def setScproxyPortUndefined: Self = StObject.set(x, "scproxyPort", js.undefined)
     
-    @scala.inline
-    def setScproxyReadLimit(value: String): Self = StObject.set(x, "scproxyReadLimit", value.asInstanceOf[js.Any])
+    inline def setScproxyReadLimit(value: String): Self = StObject.set(x, "scproxyReadLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScproxyReadLimitUndefined: Self = StObject.set(x, "scproxyReadLimit", js.undefined)
+    inline def setScproxyReadLimitUndefined: Self = StObject.set(x, "scproxyReadLimit", js.undefined)
     
-    @scala.inline
-    def setScproxyWriteLimit(value: String): Self = StObject.set(x, "scproxyWriteLimit", value.asInstanceOf[js.Any])
+    inline def setScproxyWriteLimit(value: String): Self = StObject.set(x, "scproxyWriteLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScproxyWriteLimitUndefined: Self = StObject.set(x, "scproxyWriteLimit", js.undefined)
+    inline def setScproxyWriteLimitUndefined: Self = StObject.set(x, "scproxyWriteLimit", js.undefined)
     
-    @scala.inline
-    def setSePort(value: Double): Self = StObject.set(x, "sePort", value.asInstanceOf[js.Any])
+    inline def setSePort(value: Double): Self = StObject.set(x, "sePort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSePortUndefined: Self = StObject.set(x, "sePort", js.undefined)
+    inline def setSePortUndefined: Self = StObject.set(x, "sePort", js.undefined)
     
-    @scala.inline
-    def setSharedTunnel(value: Boolean): Self = StObject.set(x, "sharedTunnel", value.asInstanceOf[js.Any])
+    inline def setSharedTunnel(value: Boolean): Self = StObject.set(x, "sharedTunnel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedTunnelUndefined: Self = StObject.set(x, "sharedTunnel", js.undefined)
+    inline def setSharedTunnelUndefined: Self = StObject.set(x, "sharedTunnel", js.undefined)
     
-    @scala.inline
-    def setTunnelCainfo(value: String): Self = StObject.set(x, "tunnelCainfo", value.asInstanceOf[js.Any])
+    inline def setTunnelCainfo(value: String): Self = StObject.set(x, "tunnelCainfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelCainfoUndefined: Self = StObject.set(x, "tunnelCainfo", js.undefined)
+    inline def setTunnelCainfoUndefined: Self = StObject.set(x, "tunnelCainfo", js.undefined)
     
-    @scala.inline
-    def setTunnelCapath(value: String): Self = StObject.set(x, "tunnelCapath", value.asInstanceOf[js.Any])
+    inline def setTunnelCapath(value: String): Self = StObject.set(x, "tunnelCapath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelCapathUndefined: Self = StObject.set(x, "tunnelCapath", js.undefined)
+    inline def setTunnelCapathUndefined: Self = StObject.set(x, "tunnelCapath", js.undefined)
     
-    @scala.inline
-    def setTunnelCert(value: String): Self = StObject.set(x, "tunnelCert", value.asInstanceOf[js.Any])
+    inline def setTunnelCert(value: String): Self = StObject.set(x, "tunnelCert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelCertUndefined: Self = StObject.set(x, "tunnelCert", js.undefined)
+    inline def setTunnelCertUndefined: Self = StObject.set(x, "tunnelCert", js.undefined)
     
-    @scala.inline
-    def setTunnelDomains(value: String): Self = StObject.set(x, "tunnelDomains", value.asInstanceOf[js.Any])
+    inline def setTunnelDomains(value: String): Self = StObject.set(x, "tunnelDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelDomainsUndefined: Self = StObject.set(x, "tunnelDomains", js.undefined)
+    inline def setTunnelDomainsUndefined: Self = StObject.set(x, "tunnelDomains", js.undefined)
     
-    @scala.inline
-    def setTunnelIdentifier(value: String): Self = StObject.set(x, "tunnelIdentifier", value.asInstanceOf[js.Any])
+    inline def setTunnelIdentifier(value: String): Self = StObject.set(x, "tunnelIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelIdentifierUndefined: Self = StObject.set(x, "tunnelIdentifier", js.undefined)
+    inline def setTunnelIdentifierUndefined: Self = StObject.set(x, "tunnelIdentifier", js.undefined)
   }
 }

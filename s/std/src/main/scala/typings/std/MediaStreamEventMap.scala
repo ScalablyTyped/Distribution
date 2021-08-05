@@ -12,19 +12,15 @@ trait MediaStreamEventMap extends StObject {
 }
 object MediaStreamEventMap {
   
-  @scala.inline
-  def apply(addtrack: MediaStreamTrackEvent, removetrack: MediaStreamTrackEvent): MediaStreamEventMap = {
+  inline def apply(addtrack: MediaStreamTrackEvent, removetrack: MediaStreamTrackEvent): MediaStreamEventMap = {
     val __obj = js.Dynamic.literal(addtrack = addtrack.asInstanceOf[js.Any], removetrack = removetrack.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamEventMap]
   }
   
-  @scala.inline
-  implicit class MediaStreamEventMapMutableBuilder[Self <: MediaStreamEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamEventMap](x: Self) {
     
-    @scala.inline
-    def setAddtrack(value: MediaStreamTrackEvent): Self = StObject.set(x, "addtrack", value.asInstanceOf[js.Any])
+    inline def setAddtrack(value: MediaStreamTrackEvent): Self = StObject.set(x, "addtrack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovetrack(value: MediaStreamTrackEvent): Self = StObject.set(x, "removetrack", value.asInstanceOf[js.Any])
+    inline def setRemovetrack(value: MediaStreamTrackEvent): Self = StObject.set(x, "removetrack", value.asInstanceOf[js.Any])
   }
 }

@@ -31,25 +31,19 @@ trait PlusWebviewWebviewAnimationStyles extends StObject {
 }
 object PlusWebviewWebviewAnimationStyles {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewAnimationStyles = {
+  inline def apply(): PlusWebviewWebviewAnimationStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewAnimationStyles]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewAnimationStylesMutableBuilder[Self <: PlusWebviewWebviewAnimationStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewAnimationStyles](x: Self) {
     
-    @scala.inline
-    def setFromLeft(value: String): Self = StObject.set(x, "fromLeft", value.asInstanceOf[js.Any])
+    inline def setFromLeft(value: String): Self = StObject.set(x, "fromLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromLeftUndefined: Self = StObject.set(x, "fromLeft", js.undefined)
+    inline def setFromLeftUndefined: Self = StObject.set(x, "fromLeft", js.undefined)
     
-    @scala.inline
-    def setToLeft(value: String): Self = StObject.set(x, "toLeft", value.asInstanceOf[js.Any])
+    inline def setToLeft(value: String): Self = StObject.set(x, "toLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToLeftUndefined: Self = StObject.set(x, "toLeft", js.undefined)
+    inline def setToLeftUndefined: Self = StObject.set(x, "toLeft", js.undefined)
   }
 }

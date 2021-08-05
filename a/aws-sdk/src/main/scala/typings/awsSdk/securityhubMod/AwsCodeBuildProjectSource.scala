@@ -28,37 +28,27 @@ trait AwsCodeBuildProjectSource extends StObject {
 }
 object AwsCodeBuildProjectSource {
   
-  @scala.inline
-  def apply(): AwsCodeBuildProjectSource = {
+  inline def apply(): AwsCodeBuildProjectSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCodeBuildProjectSource]
   }
   
-  @scala.inline
-  implicit class AwsCodeBuildProjectSourceMutableBuilder[Self <: AwsCodeBuildProjectSource] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCodeBuildProjectSource](x: Self) {
     
-    @scala.inline
-    def setGitCloneDepth(value: Integer): Self = StObject.set(x, "GitCloneDepth", value.asInstanceOf[js.Any])
+    inline def setGitCloneDepth(value: Integer): Self = StObject.set(x, "GitCloneDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitCloneDepthUndefined: Self = StObject.set(x, "GitCloneDepth", js.undefined)
+    inline def setGitCloneDepthUndefined: Self = StObject.set(x, "GitCloneDepth", js.undefined)
     
-    @scala.inline
-    def setInsecureSsl(value: Boolean): Self = StObject.set(x, "InsecureSsl", value.asInstanceOf[js.Any])
+    inline def setInsecureSsl(value: Boolean): Self = StObject.set(x, "InsecureSsl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsecureSslUndefined: Self = StObject.set(x, "InsecureSsl", js.undefined)
+    inline def setInsecureSslUndefined: Self = StObject.set(x, "InsecureSsl", js.undefined)
     
-    @scala.inline
-    def setLocation(value: NonEmptyString): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: NonEmptyString): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
-    @scala.inline
-    def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

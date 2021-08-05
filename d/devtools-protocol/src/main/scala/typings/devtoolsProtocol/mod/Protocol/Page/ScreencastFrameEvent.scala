@@ -24,22 +24,17 @@ trait ScreencastFrameEvent extends StObject {
 }
 object ScreencastFrameEvent {
   
-  @scala.inline
-  def apply(data: String, metadata: ScreencastFrameMetadata, sessionId: integer): ScreencastFrameEvent = {
+  inline def apply(data: String, metadata: ScreencastFrameMetadata, sessionId: integer): ScreencastFrameEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreencastFrameEvent]
   }
   
-  @scala.inline
-  implicit class ScreencastFrameEventMutableBuilder[Self <: ScreencastFrameEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ScreencastFrameEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ScreencastFrameMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ScreencastFrameMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionId(value: integer): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: integer): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

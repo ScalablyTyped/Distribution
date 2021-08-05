@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "github-slugger"
-version := "1.3-dt-20200623Z-b571a4"
+version := "1.3-dt-20200623Z-d1549b"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

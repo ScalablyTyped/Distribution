@@ -42,49 +42,35 @@ trait GitCreateCommitEndpoint extends StObject {
 }
 object GitCreateCommitEndpoint {
   
-  @scala.inline
-  def apply(message: String, owner: String, parents: js.Array[String], repo: String, tree: String): GitCreateCommitEndpoint = {
+  inline def apply(message: String, owner: String, parents: js.Array[String], repo: String, tree: String): GitCreateCommitEndpoint = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitCreateCommitEndpoint]
   }
   
-  @scala.inline
-  implicit class GitCreateCommitEndpointMutableBuilder[Self <: GitCreateCommitEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: GitCreateCommitEndpoint](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: GitCreateCommitParamsAuthor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: GitCreateCommitParamsAuthor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    @scala.inline
-    def setCommitter(value: GitCreateCommitParamsCommitter): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    inline def setCommitter(value: GitCreateCommitParamsCommitter): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitterUndefined: Self = StObject.set(x, "committer", js.undefined)
+    inline def setCommitterUndefined: Self = StObject.set(x, "committer", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParents(value: js.Array[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+    inline def setParents(value: js.Array[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
+    inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
-    @scala.inline
-    def setTree(value: String): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: String): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
   }
 }

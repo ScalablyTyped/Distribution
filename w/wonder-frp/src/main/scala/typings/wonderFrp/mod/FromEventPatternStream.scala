@@ -17,6 +17,5 @@ object FromEventPatternStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(addHandler: js.Function, removeHandler: js.Function): typings.wonderFrp.fromEventPatternStreamMod.FromEventPatternStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.fromEventPatternStreamMod.FromEventPatternStream]
+  inline def create(addHandler: js.Function, removeHandler: js.Function): typings.wonderFrp.fromEventPatternStreamMod.FromEventPatternStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.fromEventPatternStreamMod.FromEventPatternStream]
 }

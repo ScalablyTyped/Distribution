@@ -50,88 +50,61 @@ trait Invitation
 }
 object Invitation {
   
-  @scala.inline
-  def apply(): Invitation = {
+  inline def apply(): Invitation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Invitation]
   }
   
-  @scala.inline
-  implicit class InvitationMutableBuilder[Self <: Invitation] (val x: Self) extends AnyVal {
+  extension [Self <: Invitation](x: Self) {
     
-    @scala.inline
-    def setInviteRedeemUrl(value: NullableOption[String]): Self = StObject.set(x, "inviteRedeemUrl", value.asInstanceOf[js.Any])
+    inline def setInviteRedeemUrl(value: NullableOption[String]): Self = StObject.set(x, "inviteRedeemUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInviteRedeemUrlNull: Self = StObject.set(x, "inviteRedeemUrl", null)
+    inline def setInviteRedeemUrlNull: Self = StObject.set(x, "inviteRedeemUrl", null)
     
-    @scala.inline
-    def setInviteRedeemUrlUndefined: Self = StObject.set(x, "inviteRedeemUrl", js.undefined)
+    inline def setInviteRedeemUrlUndefined: Self = StObject.set(x, "inviteRedeemUrl", js.undefined)
     
-    @scala.inline
-    def setInviteRedirectUrl(value: String): Self = StObject.set(x, "inviteRedirectUrl", value.asInstanceOf[js.Any])
+    inline def setInviteRedirectUrl(value: String): Self = StObject.set(x, "inviteRedirectUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInviteRedirectUrlUndefined: Self = StObject.set(x, "inviteRedirectUrl", js.undefined)
+    inline def setInviteRedirectUrlUndefined: Self = StObject.set(x, "inviteRedirectUrl", js.undefined)
     
-    @scala.inline
-    def setInvitedUser(value: NullableOption[User]): Self = StObject.set(x, "invitedUser", value.asInstanceOf[js.Any])
+    inline def setInvitedUser(value: NullableOption[User]): Self = StObject.set(x, "invitedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedUserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "invitedUserDisplayName", value.asInstanceOf[js.Any])
+    inline def setInvitedUserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "invitedUserDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedUserDisplayNameNull: Self = StObject.set(x, "invitedUserDisplayName", null)
+    inline def setInvitedUserDisplayNameNull: Self = StObject.set(x, "invitedUserDisplayName", null)
     
-    @scala.inline
-    def setInvitedUserDisplayNameUndefined: Self = StObject.set(x, "invitedUserDisplayName", js.undefined)
+    inline def setInvitedUserDisplayNameUndefined: Self = StObject.set(x, "invitedUserDisplayName", js.undefined)
     
-    @scala.inline
-    def setInvitedUserEmailAddress(value: String): Self = StObject.set(x, "invitedUserEmailAddress", value.asInstanceOf[js.Any])
+    inline def setInvitedUserEmailAddress(value: String): Self = StObject.set(x, "invitedUserEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedUserEmailAddressUndefined: Self = StObject.set(x, "invitedUserEmailAddress", js.undefined)
+    inline def setInvitedUserEmailAddressUndefined: Self = StObject.set(x, "invitedUserEmailAddress", js.undefined)
     
-    @scala.inline
-    def setInvitedUserMessageInfo(value: NullableOption[InvitedUserMessageInfo]): Self = StObject.set(x, "invitedUserMessageInfo", value.asInstanceOf[js.Any])
+    inline def setInvitedUserMessageInfo(value: NullableOption[InvitedUserMessageInfo]): Self = StObject.set(x, "invitedUserMessageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedUserMessageInfoNull: Self = StObject.set(x, "invitedUserMessageInfo", null)
+    inline def setInvitedUserMessageInfoNull: Self = StObject.set(x, "invitedUserMessageInfo", null)
     
-    @scala.inline
-    def setInvitedUserMessageInfoUndefined: Self = StObject.set(x, "invitedUserMessageInfo", js.undefined)
+    inline def setInvitedUserMessageInfoUndefined: Self = StObject.set(x, "invitedUserMessageInfo", js.undefined)
     
-    @scala.inline
-    def setInvitedUserNull: Self = StObject.set(x, "invitedUser", null)
+    inline def setInvitedUserNull: Self = StObject.set(x, "invitedUser", null)
     
-    @scala.inline
-    def setInvitedUserType(value: NullableOption[String]): Self = StObject.set(x, "invitedUserType", value.asInstanceOf[js.Any])
+    inline def setInvitedUserType(value: NullableOption[String]): Self = StObject.set(x, "invitedUserType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedUserTypeNull: Self = StObject.set(x, "invitedUserType", null)
+    inline def setInvitedUserTypeNull: Self = StObject.set(x, "invitedUserType", null)
     
-    @scala.inline
-    def setInvitedUserTypeUndefined: Self = StObject.set(x, "invitedUserType", js.undefined)
+    inline def setInvitedUserTypeUndefined: Self = StObject.set(x, "invitedUserType", js.undefined)
     
-    @scala.inline
-    def setInvitedUserUndefined: Self = StObject.set(x, "invitedUser", js.undefined)
+    inline def setInvitedUserUndefined: Self = StObject.set(x, "invitedUser", js.undefined)
     
-    @scala.inline
-    def setSendInvitationMessage(value: NullableOption[Boolean]): Self = StObject.set(x, "sendInvitationMessage", value.asInstanceOf[js.Any])
+    inline def setSendInvitationMessage(value: NullableOption[Boolean]): Self = StObject.set(x, "sendInvitationMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendInvitationMessageNull: Self = StObject.set(x, "sendInvitationMessage", null)
+    inline def setSendInvitationMessageNull: Self = StObject.set(x, "sendInvitationMessage", null)
     
-    @scala.inline
-    def setSendInvitationMessageUndefined: Self = StObject.set(x, "sendInvitationMessage", js.undefined)
+    inline def setSendInvitationMessageUndefined: Self = StObject.set(x, "sendInvitationMessage", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NullableOption[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NullableOption[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

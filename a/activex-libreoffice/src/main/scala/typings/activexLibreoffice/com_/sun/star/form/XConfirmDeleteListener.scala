@@ -25,8 +25,7 @@ trait XConfirmDeleteListener
 }
 object XConfirmDeleteListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     confirmDelete: RowChangeEvent => Boolean,
     disposing: EventObject => Unit,
@@ -37,10 +36,8 @@ object XConfirmDeleteListener {
     __obj.asInstanceOf[XConfirmDeleteListener]
   }
   
-  @scala.inline
-  implicit class XConfirmDeleteListenerMutableBuilder[Self <: XConfirmDeleteListener] (val x: Self) extends AnyVal {
+  extension [Self <: XConfirmDeleteListener](x: Self) {
     
-    @scala.inline
-    def setConfirmDelete(value: RowChangeEvent => Boolean): Self = StObject.set(x, "confirmDelete", js.Any.fromFunction1(value))
+    inline def setConfirmDelete(value: RowChangeEvent => Boolean): Self = StObject.set(x, "confirmDelete", js.Any.fromFunction1(value))
   }
 }

@@ -38,49 +38,35 @@ trait PhoneNumberCapabilities extends StObject {
 }
 object PhoneNumberCapabilities {
   
-  @scala.inline
-  def apply(): PhoneNumberCapabilities = {
+  inline def apply(): PhoneNumberCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PhoneNumberCapabilities]
   }
   
-  @scala.inline
-  implicit class PhoneNumberCapabilitiesMutableBuilder[Self <: PhoneNumberCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneNumberCapabilities](x: Self) {
     
-    @scala.inline
-    def setInboundCall(value: NullableBoolean): Self = StObject.set(x, "InboundCall", value.asInstanceOf[js.Any])
+    inline def setInboundCall(value: NullableBoolean): Self = StObject.set(x, "InboundCall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundCallUndefined: Self = StObject.set(x, "InboundCall", js.undefined)
+    inline def setInboundCallUndefined: Self = StObject.set(x, "InboundCall", js.undefined)
     
-    @scala.inline
-    def setInboundMMS(value: NullableBoolean): Self = StObject.set(x, "InboundMMS", value.asInstanceOf[js.Any])
+    inline def setInboundMMS(value: NullableBoolean): Self = StObject.set(x, "InboundMMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundMMSUndefined: Self = StObject.set(x, "InboundMMS", js.undefined)
+    inline def setInboundMMSUndefined: Self = StObject.set(x, "InboundMMS", js.undefined)
     
-    @scala.inline
-    def setInboundSMS(value: NullableBoolean): Self = StObject.set(x, "InboundSMS", value.asInstanceOf[js.Any])
+    inline def setInboundSMS(value: NullableBoolean): Self = StObject.set(x, "InboundSMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundSMSUndefined: Self = StObject.set(x, "InboundSMS", js.undefined)
+    inline def setInboundSMSUndefined: Self = StObject.set(x, "InboundSMS", js.undefined)
     
-    @scala.inline
-    def setOutboundCall(value: NullableBoolean): Self = StObject.set(x, "OutboundCall", value.asInstanceOf[js.Any])
+    inline def setOutboundCall(value: NullableBoolean): Self = StObject.set(x, "OutboundCall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundCallUndefined: Self = StObject.set(x, "OutboundCall", js.undefined)
+    inline def setOutboundCallUndefined: Self = StObject.set(x, "OutboundCall", js.undefined)
     
-    @scala.inline
-    def setOutboundMMS(value: NullableBoolean): Self = StObject.set(x, "OutboundMMS", value.asInstanceOf[js.Any])
+    inline def setOutboundMMS(value: NullableBoolean): Self = StObject.set(x, "OutboundMMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundMMSUndefined: Self = StObject.set(x, "OutboundMMS", js.undefined)
+    inline def setOutboundMMSUndefined: Self = StObject.set(x, "OutboundMMS", js.undefined)
     
-    @scala.inline
-    def setOutboundSMS(value: NullableBoolean): Self = StObject.set(x, "OutboundSMS", value.asInstanceOf[js.Any])
+    inline def setOutboundSMS(value: NullableBoolean): Self = StObject.set(x, "OutboundSMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundSMSUndefined: Self = StObject.set(x, "OutboundSMS", js.undefined)
+    inline def setOutboundSMSUndefined: Self = StObject.set(x, "OutboundSMS", js.undefined)
   }
 }

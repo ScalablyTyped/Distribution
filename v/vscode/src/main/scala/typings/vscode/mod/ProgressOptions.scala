@@ -28,28 +28,21 @@ trait ProgressOptions extends StObject {
 }
 object ProgressOptions {
   
-  @scala.inline
-  def apply(location: ProgressLocation | ViewId): ProgressOptions = {
+  inline def apply(location: ProgressLocation | ViewId): ProgressOptions = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressOptions]
   }
   
-  @scala.inline
-  implicit class ProgressOptionsMutableBuilder[Self <: ProgressOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressOptions](x: Self) {
     
-    @scala.inline
-    def setCancellable(value: Boolean): Self = StObject.set(x, "cancellable", value.asInstanceOf[js.Any])
+    inline def setCancellable(value: Boolean): Self = StObject.set(x, "cancellable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancellableUndefined: Self = StObject.set(x, "cancellable", js.undefined)
+    inline def setCancellableUndefined: Self = StObject.set(x, "cancellable", js.undefined)
     
-    @scala.inline
-    def setLocation(value: ProgressLocation | ViewId): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: ProgressLocation | ViewId): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

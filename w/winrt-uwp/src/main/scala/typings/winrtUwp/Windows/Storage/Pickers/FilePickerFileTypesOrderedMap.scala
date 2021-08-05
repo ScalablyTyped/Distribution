@@ -59,8 +59,7 @@ trait FilePickerFileTypesOrderedMap extends StObject {
 }
 object FilePickerFileTypesOrderedMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
     getView: () => IMapView[String, IVector[String]],
@@ -74,31 +73,22 @@ object FilePickerFileTypesOrderedMap {
     __obj.asInstanceOf[FilePickerFileTypesOrderedMap]
   }
   
-  @scala.inline
-  implicit class FilePickerFileTypesOrderedMapMutableBuilder[Self <: FilePickerFileTypesOrderedMap] (val x: Self) extends AnyVal {
+  extension [Self <: FilePickerFileTypesOrderedMap](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetView(value: () => IMapView[String, IVector[String]]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
+    inline def setGetView(value: () => IMapView[String, IVector[String]]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
+    inline def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsert(value: (String, IVector[String]) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (String, IVector[String]) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLookup(value: String => IVector[String]): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+    inline def setLookup(value: String => IVector[String]): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

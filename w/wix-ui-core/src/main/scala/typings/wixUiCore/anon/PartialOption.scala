@@ -20,43 +20,31 @@ trait PartialOption extends StObject {
 }
 object PartialOption {
   
-  @scala.inline
-  def apply(): PartialOption = {
+  inline def apply(): PartialOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialOption]
   }
   
-  @scala.inline
-  implicit class PartialOptionMutableBuilder[Self <: PartialOption] (val x: Self) extends AnyVal {
+  extension [Self <: PartialOption](x: Self) {
     
-    @scala.inline
-    def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+    inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
+    inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
     
-    @scala.inline
-    def setIsSelectable(value: Boolean): Self = StObject.set(x, "isSelectable", value.asInstanceOf[js.Any])
+    inline def setIsSelectable(value: Boolean): Self = StObject.set(x, "isSelectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSelectableUndefined: Self = StObject.set(x, "isSelectable", js.undefined)
+    inline def setIsSelectableUndefined: Self = StObject.set(x, "isSelectable", js.undefined)
     
-    @scala.inline
-    def setRender(value: /* value */ ReactNode => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: /* value */ ReactNode => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

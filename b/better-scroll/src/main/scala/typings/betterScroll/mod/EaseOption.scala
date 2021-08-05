@@ -15,31 +15,23 @@ trait EaseOption extends StObject {
 }
 object EaseOption {
   
-  @scala.inline
-  def apply(): EaseOption = {
+  inline def apply(): EaseOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EaseOption]
   }
   
-  @scala.inline
-  implicit class EaseOptionMutableBuilder[Self <: EaseOption] (val x: Self) extends AnyVal {
+  extension [Self <: EaseOption](x: Self) {
     
-    @scala.inline
-    def setBounce(value: Fn): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
+    inline def setBounce(value: Fn): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
+    inline def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
     
-    @scala.inline
-    def setSwipe(value: Fn): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
+    inline def setSwipe(value: Fn): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeBounce(value: Fn): Self = StObject.set(x, "swipeBounce", value.asInstanceOf[js.Any])
+    inline def setSwipeBounce(value: Fn): Self = StObject.set(x, "swipeBounce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeBounceUndefined: Self = StObject.set(x, "swipeBounce", js.undefined)
+    inline def setSwipeBounceUndefined: Self = StObject.set(x, "swipeBounce", js.undefined)
     
-    @scala.inline
-    def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
+    inline def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
   }
 }

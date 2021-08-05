@@ -10,16 +10,13 @@ trait hasMobilePreferredBuilder[B] extends StObject {
 }
 object hasMobilePreferredBuilder {
   
-  @scala.inline
-  def apply[B](withMobilePreferred: () => B): hasMobilePreferredBuilder[B] = {
+  inline def apply[B](withMobilePreferred: () => B): hasMobilePreferredBuilder[B] = {
     val __obj = js.Dynamic.literal(withMobilePreferred = js.Any.fromFunction0(withMobilePreferred))
     __obj.asInstanceOf[hasMobilePreferredBuilder[B]]
   }
   
-  @scala.inline
-  implicit class hasMobilePreferredBuilderMutableBuilder[Self <: hasMobilePreferredBuilder[?], B] (val x: Self & hasMobilePreferredBuilder[B]) extends AnyVal {
+  extension [Self <: hasMobilePreferredBuilder[?], B](x: Self & hasMobilePreferredBuilder[B]) {
     
-    @scala.inline
-    def setWithMobilePreferred(value: () => B): Self = StObject.set(x, "withMobilePreferred", js.Any.fromFunction0(value))
+    inline def setWithMobilePreferred(value: () => B): Self = StObject.set(x, "withMobilePreferred", js.Any.fromFunction0(value))
   }
 }

@@ -11,9 +11,7 @@ object queryparamsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getQueryParam(key: String): String | (js.Array[ParsedQs | String]) | ParsedQs = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryParam")(key.asInstanceOf[js.Any]).asInstanceOf[String | (js.Array[ParsedQs | String]) | ParsedQs]
+  inline def getQueryParam(key: String): String | (js.Array[ParsedQs | String]) | ParsedQs = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryParam")(key.asInstanceOf[js.Any]).asInstanceOf[String | (js.Array[ParsedQs | String]) | ParsedQs]
   
-  @scala.inline
-  def getQueryParams(): ParsedQs = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryParams")().asInstanceOf[ParsedQs]
+  inline def getQueryParams(): ParsedQs = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryParams")().asInstanceOf[ParsedQs]
 }

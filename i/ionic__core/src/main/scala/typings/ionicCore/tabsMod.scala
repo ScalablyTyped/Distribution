@@ -53,11 +53,11 @@ object tabsMod {
       */
     var ionTabsWillChange: EventEmitter[Tab] = js.native
     
-    var leavingTab: js.Any = js.native
+    /* private */ var leavingTab: js.Any = js.native
     
-    var notifyRouter: js.Any = js.native
+    /* private */ var notifyRouter: js.Any = js.native
     
-    var onTabClicked: js.Any = js.native
+    /* private */ var onTabClicked: js.Any = js.native
     
     def render(): js.Any = js.native
     
@@ -71,18 +71,18 @@ object tabsMod {
     
     var selectedTab: js.UndefOr[HTMLIonTabElement] = js.native
     
-    var setActive: js.Any = js.native
+    /* private */ var setActive: js.Any = js.native
     
     /** @internal */
     def setRouteId(id: String): js.Promise[RouteWrite] = js.native
     
-    var shouldSwitch: js.Any = js.native
+    /* private */ var shouldSwitch: js.Any = js.native
     
-    var tabSwitch: js.Any = js.native
+    /* private */ var tabSwitch: js.Any = js.native
     
     /* private */ def tabs: js.Any = js.native
     
-    var transitioning: js.Any = js.native
+    /* private */ var transitioning: js.Any = js.native
     
     /** @internal */
     var useRouter: Boolean = js.native

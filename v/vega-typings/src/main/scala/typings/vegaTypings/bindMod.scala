@@ -22,38 +22,28 @@ object bindMod {
   }
   object BaseBinding {
     
-    @scala.inline
-    def apply(): BaseBinding = {
+    inline def apply(): BaseBinding = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseBinding]
     }
     
-    @scala.inline
-    implicit class BaseBindingMutableBuilder[Self <: BaseBinding] (val x: Self) extends AnyVal {
+    extension [Self <: BaseBinding](x: Self) {
       
-      @scala.inline
-      def setDebounce(value: Double): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
+      inline def setDebounce(value: Double): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
+      inline def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
       
-      @scala.inline
-      def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -66,17 +56,14 @@ object bindMod {
   }
   object BindCheckbox {
     
-    @scala.inline
-    def apply(): BindCheckbox = {
+    inline def apply(): BindCheckbox = {
       val __obj = js.Dynamic.literal(input = "checkbox")
       __obj.asInstanceOf[BindCheckbox]
     }
     
-    @scala.inline
-    implicit class BindCheckboxMutableBuilder[Self <: BindCheckbox] (val x: Self) extends AnyVal {
+    extension [Self <: BindCheckbox](x: Self) {
       
-      @scala.inline
-      def setInput(value: checkbox): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: checkbox): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,32 +80,24 @@ object bindMod {
   }
   object BindRadioSelect {
     
-    @scala.inline
-    def apply(input: radio | select, options: js.Array[js.Any]): BindRadioSelect = {
+    inline def apply(input: radio | select, options: js.Array[js.Any]): BindRadioSelect = {
       val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[BindRadioSelect]
     }
     
-    @scala.inline
-    implicit class BindRadioSelectMutableBuilder[Self <: BindRadioSelect] (val x: Self) extends AnyVal {
+    extension [Self <: BindRadioSelect](x: Self) {
       
-      @scala.inline
-      def setInput(value: radio | select): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: radio | select): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
     }
   }
   
@@ -137,35 +116,26 @@ object bindMod {
   }
   object BindRange {
     
-    @scala.inline
-    def apply(): BindRange = {
+    inline def apply(): BindRange = {
       val __obj = js.Dynamic.literal(input = "range")
       __obj.asInstanceOf[BindRange]
     }
     
-    @scala.inline
-    implicit class BindRangeMutableBuilder[Self <: BindRange] (val x: Self) extends AnyVal {
+    extension [Self <: BindRange](x: Self) {
       
-      @scala.inline
-      def setInput(value: range): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: range): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     }
   }
   
@@ -178,26 +148,22 @@ object bindMod {
   trait Binding extends StObject
   object Binding {
     
-    @scala.inline
-    def BindCheckbox(): typings.vegaTypings.bindMod.BindCheckbox = {
+    inline def BindCheckbox(): typings.vegaTypings.bindMod.BindCheckbox = {
       val __obj = js.Dynamic.literal(input = "checkbox")
       __obj.asInstanceOf[typings.vegaTypings.bindMod.BindCheckbox]
     }
     
-    @scala.inline
-    def BindRadioSelect(input: radio | select, options: js.Array[js.Any]): typings.vegaTypings.bindMod.BindRadioSelect = {
+    inline def BindRadioSelect(input: radio | select, options: js.Array[js.Any]): typings.vegaTypings.bindMod.BindRadioSelect = {
       val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaTypings.bindMod.BindRadioSelect]
     }
     
-    @scala.inline
-    def BindRange(): typings.vegaTypings.bindMod.BindRange = {
+    inline def BindRange(): typings.vegaTypings.bindMod.BindRange = {
       val __obj = js.Dynamic.literal(input = "range")
       __obj.asInstanceOf[typings.vegaTypings.bindMod.BindRange]
     }
     
-    @scala.inline
-    def InputBinding(): typings.vegaTypings.bindMod.InputBinding = {
+    inline def InputBinding(): typings.vegaTypings.bindMod.InputBinding = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vegaTypings.bindMod.InputBinding]
     }
@@ -218,32 +184,24 @@ object bindMod {
   }
   object InputBinding {
     
-    @scala.inline
-    def apply(): InputBinding = {
+    inline def apply(): InputBinding = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputBinding]
     }
     
-    @scala.inline
-    implicit class InputBindingMutableBuilder[Self <: InputBinding] (val x: Self) extends AnyVal {
+    extension [Self <: InputBinding](x: Self) {
       
-      @scala.inline
-      def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
+      inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
+      inline def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
       
-      @scala.inline
-      def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     }
   }
 }

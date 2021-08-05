@@ -12,31 +12,23 @@ trait Expand extends StObject {
 }
 object Expand {
   
-  @scala.inline
-  def apply(): Expand = {
+  inline def apply(): Expand = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Expand]
   }
   
-  @scala.inline
-  implicit class ExpandMutableBuilder[Self <: Expand] (val x: Self) extends AnyVal {
+  extension [Self <: Expand](x: Self) {
     
-    @scala.inline
-    def setExpand(value: String | js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: String | js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
+    inline def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
     
-    @scala.inline
-    def setSelect(value: String | js.Array[String]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: String | js.Array[String]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setSelectVarargs(value: String*): Self = StObject.set(x, "select", js.Array(value :_*))
+    inline def setSelectVarargs(value: String*): Self = StObject.set(x, "select", js.Array(value :_*))
   }
 }

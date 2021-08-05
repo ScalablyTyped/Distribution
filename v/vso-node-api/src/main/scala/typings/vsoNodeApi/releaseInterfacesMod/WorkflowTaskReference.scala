@@ -14,22 +14,17 @@ trait WorkflowTaskReference extends StObject {
 }
 object WorkflowTaskReference {
   
-  @scala.inline
-  def apply(id: String, name: String, version: String): WorkflowTaskReference = {
+  inline def apply(id: String, name: String, version: String): WorkflowTaskReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowTaskReference]
   }
   
-  @scala.inline
-  implicit class WorkflowTaskReferenceMutableBuilder[Self <: WorkflowTaskReference] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowTaskReference](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

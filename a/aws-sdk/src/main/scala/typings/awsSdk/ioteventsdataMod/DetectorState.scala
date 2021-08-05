@@ -23,28 +23,21 @@ trait DetectorState extends StObject {
 }
 object DetectorState {
   
-  @scala.inline
-  def apply(stateName: StateName, timers: Timers, variables: Variables): DetectorState = {
+  inline def apply(stateName: StateName, timers: Timers, variables: Variables): DetectorState = {
     val __obj = js.Dynamic.literal(stateName = stateName.asInstanceOf[js.Any], timers = timers.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectorState]
   }
   
-  @scala.inline
-  implicit class DetectorStateMutableBuilder[Self <: DetectorState] (val x: Self) extends AnyVal {
+  extension [Self <: DetectorState](x: Self) {
     
-    @scala.inline
-    def setStateName(value: StateName): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
+    inline def setStateName(value: StateName): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimers(value: Timers): Self = StObject.set(x, "timers", value.asInstanceOf[js.Any])
+    inline def setTimers(value: Timers): Self = StObject.set(x, "timers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimersVarargs(value: Timer*): Self = StObject.set(x, "timers", js.Array(value :_*))
+    inline def setTimersVarargs(value: Timer*): Self = StObject.set(x, "timers", js.Array(value :_*))
     
-    @scala.inline
-    def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

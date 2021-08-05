@@ -28,25 +28,19 @@ trait ConsentExceptData
 }
 object ConsentExceptData {
   
-  @scala.inline
-  def apply(meaning: code, reference: Reference): ConsentExceptData = {
+  inline def apply(meaning: code, reference: Reference): ConsentExceptData = {
     val __obj = js.Dynamic.literal(meaning = meaning.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsentExceptData]
   }
   
-  @scala.inline
-  implicit class ConsentExceptDataMutableBuilder[Self <: ConsentExceptData] (val x: Self) extends AnyVal {
+  extension [Self <: ConsentExceptData](x: Self) {
     
-    @scala.inline
-    def setMeaning(value: code): Self = StObject.set(x, "meaning", value.asInstanceOf[js.Any])
+    inline def setMeaning(value: code): Self = StObject.set(x, "meaning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_meaning(value: Element): Self = StObject.set(x, "_meaning", value.asInstanceOf[js.Any])
+    inline def set_meaning(value: Element): Self = StObject.set(x, "_meaning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_meaningUndefined: Self = StObject.set(x, "_meaning", js.undefined)
+    inline def set_meaningUndefined: Self = StObject.set(x, "_meaning", js.undefined)
   }
 }

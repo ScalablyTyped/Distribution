@@ -78,8 +78,7 @@ object TouchBar {
     /* options */ TouchBarButtonConstructorOptions, 
     typings.electron.Electron.TouchBarButton
   ] = js.native
-  @scala.inline
-  def TouchBarButton_=(
+  inline def TouchBarButton_=(
     x: Instantiable1[
       /* options */ TouchBarButtonConstructorOptions, 
       typings.electron.Electron.TouchBarButton
@@ -105,8 +104,7 @@ object TouchBar {
     /* options */ TouchBarColorPickerConstructorOptions, 
     typings.electron.Electron.TouchBarColorPicker
   ] = js.native
-  @scala.inline
-  def TouchBarColorPicker_=(
+  inline def TouchBarColorPicker_=(
     x: Instantiable1[
       /* options */ TouchBarColorPickerConstructorOptions, 
       typings.electron.Electron.TouchBarColorPicker
@@ -131,8 +129,7 @@ object TouchBar {
     /* options */ TouchBarGroupConstructorOptions, 
     typings.electron.Electron.TouchBarGroup
   ] = js.native
-  @scala.inline
-  def TouchBarGroup_=(
+  inline def TouchBarGroup_=(
     x: Instantiable1[
       /* options */ TouchBarGroupConstructorOptions, 
       typings.electron.Electron.TouchBarGroup
@@ -158,8 +155,7 @@ object TouchBar {
     /* options */ TouchBarLabelConstructorOptions, 
     typings.electron.Electron.TouchBarLabel
   ] = js.native
-  @scala.inline
-  def TouchBarLabel_=(
+  inline def TouchBarLabel_=(
     x: Instantiable1[
       /* options */ TouchBarLabelConstructorOptions, 
       typings.electron.Electron.TouchBarLabel
@@ -179,8 +175,7 @@ object TouchBar {
   @JSGlobal("Electron.TouchBar.TouchBarOtherItemsProxy")
   @js.native
   def TouchBarOtherItemsProxy: Instantiable0[typings.electron.Electron.TouchBarOtherItemsProxy] = js.native
-  @scala.inline
-  def TouchBarOtherItemsProxy_=(x: Instantiable0[typings.electron.Electron.TouchBarOtherItemsProxy]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TouchBarOtherItemsProxy")(x.asInstanceOf[js.Any])
+  inline def TouchBarOtherItemsProxy_=(x: Instantiable0[typings.electron.Electron.TouchBarOtherItemsProxy]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TouchBarOtherItemsProxy")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Electron.TouchBar.TouchBarPopover")
@@ -201,8 +196,7 @@ object TouchBar {
     /* options */ TouchBarPopoverConstructorOptions, 
     typings.electron.Electron.TouchBarPopover
   ] = js.native
-  @scala.inline
-  def TouchBarPopover_=(
+  inline def TouchBarPopover_=(
     x: Instantiable1[
       /* options */ TouchBarPopoverConstructorOptions, 
       typings.electron.Electron.TouchBarPopover
@@ -228,8 +222,7 @@ object TouchBar {
     /* options */ TouchBarScrubberConstructorOptions, 
     typings.electron.Electron.TouchBarScrubber
   ] = js.native
-  @scala.inline
-  def TouchBarScrubber_=(
+  inline def TouchBarScrubber_=(
     x: Instantiable1[
       /* options */ TouchBarScrubberConstructorOptions, 
       typings.electron.Electron.TouchBarScrubber
@@ -255,8 +248,7 @@ object TouchBar {
     /* options */ TouchBarSegmentedControlConstructorOptions, 
     typings.electron.Electron.TouchBarSegmentedControl
   ] = js.native
-  @scala.inline
-  def TouchBarSegmentedControl_=(
+  inline def TouchBarSegmentedControl_=(
     x: Instantiable1[
       /* options */ TouchBarSegmentedControlConstructorOptions, 
       typings.electron.Electron.TouchBarSegmentedControl
@@ -282,8 +274,7 @@ object TouchBar {
     /* options */ TouchBarSliderConstructorOptions, 
     typings.electron.Electron.TouchBarSlider
   ] = js.native
-  @scala.inline
-  def TouchBarSlider_=(
+  inline def TouchBarSlider_=(
     x: Instantiable1[
       /* options */ TouchBarSliderConstructorOptions, 
       typings.electron.Electron.TouchBarSlider
@@ -309,8 +300,7 @@ object TouchBar {
     /* options */ TouchBarSpacerConstructorOptions, 
     typings.electron.Electron.TouchBarSpacer
   ] = js.native
-  @scala.inline
-  def TouchBarSpacer_=(
+  inline def TouchBarSpacer_=(
     x: Instantiable1[
       /* options */ TouchBarSpacerConstructorOptions, 
       typings.electron.Electron.TouchBarSpacer

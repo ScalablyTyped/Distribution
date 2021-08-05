@@ -14,20 +14,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setCloseModal(value: Boolean): Self = StObject.set(x, "closeModal", value.asInstanceOf[js.Any])
+      inline def setCloseModal(value: Boolean): Self = StObject.set(x, "closeModal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseModalUndefined: Self = StObject.set(x, "closeModal", js.undefined)
+      inline def setCloseModalUndefined: Self = StObject.set(x, "closeModal", js.undefined)
     }
   }
   
@@ -39,26 +35,20 @@ object anon {
   }
   object CloseModal {
     
-    @scala.inline
-    def apply(): CloseModal = {
+    inline def apply(): CloseModal = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CloseModal]
     }
     
-    @scala.inline
-    implicit class CloseModalMutableBuilder[Self <: CloseModal] (val x: Self) extends AnyVal {
+    extension [Self <: CloseModal](x: Self) {
       
-      @scala.inline
-      def setCloseModal(value: Boolean): Self = StObject.set(x, "closeModal", value.asInstanceOf[js.Any])
+      inline def setCloseModal(value: Boolean): Self = StObject.set(x, "closeModal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseModalUndefined: Self = StObject.set(x, "closeModal", js.undefined)
+      inline def setCloseModalUndefined: Self = StObject.set(x, "closeModal", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -87,77 +77,54 @@ object anon {
   }
   object PartialSwalOptions {
     
-    @scala.inline
-    def apply(): PartialSwalOptions = {
+    inline def apply(): PartialSwalOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSwalOptions]
     }
     
-    @scala.inline
-    implicit class PartialSwalOptionsMutableBuilder[Self <: PartialSwalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSwalOptions](x: Self) {
       
-      @scala.inline
-      def setButtons(value: ButtonList | (js.Array[String | Boolean])): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: ButtonList | (js.Array[String | Boolean])): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+      inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      @scala.inline
-      def setButtonsVarargs(value: (String | Boolean)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: (String | Boolean)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCloseOnClickOutside(value: Boolean): Self = StObject.set(x, "closeOnClickOutside", value.asInstanceOf[js.Any])
+      inline def setCloseOnClickOutside(value: Boolean): Self = StObject.set(x, "closeOnClickOutside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnClickOutsideUndefined: Self = StObject.set(x, "closeOnClickOutside", js.undefined)
+      inline def setCloseOnClickOutsideUndefined: Self = StObject.set(x, "closeOnClickOutside", js.undefined)
       
-      @scala.inline
-      def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
+      inline def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
+      inline def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
       
-      @scala.inline
-      def setContent(value: ContentOptions): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ContentOptions): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDangerMode(value: Boolean): Self = StObject.set(x, "dangerMode", value.asInstanceOf[js.Any])
+      inline def setDangerMode(value: Boolean): Self = StObject.set(x, "dangerMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerModeUndefined: Self = StObject.set(x, "dangerMode", js.undefined)
+      inline def setDangerModeUndefined: Self = StObject.set(x, "dangerMode", js.undefined)
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
+      inline def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimerUndefined: Self = StObject.set(x, "timer", js.undefined)
+      inline def setTimerUndefined: Self = StObject.set(x, "timer", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -169,26 +136,20 @@ object anon {
   }
   object Reject {
     
-    @scala.inline
-    def apply(): Reject = {
+    inline def apply(): Reject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Reject]
     }
     
-    @scala.inline
-    implicit class RejectMutableBuilder[Self <: Reject] (val x: Self) extends AnyVal {
+    extension [Self <: Reject](x: Self) {
       
-      @scala.inline
-      def setReject(value: () => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction0(value))
+      inline def setReject(value: () => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
+      inline def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
       
-      @scala.inline
-      def setResolve(value: /* value */ String => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: /* value */ String => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     }
   }
   
@@ -200,26 +161,20 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply(): Value = {
+    inline def apply(): Value = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setCloseModal(value: Boolean): Self = StObject.set(x, "closeModal", value.asInstanceOf[js.Any])
+      inline def setCloseModal(value: Boolean): Self = StObject.set(x, "closeModal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseModalUndefined: Self = StObject.set(x, "closeModal", js.undefined)
+      inline def setCloseModalUndefined: Self = StObject.set(x, "closeModal", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

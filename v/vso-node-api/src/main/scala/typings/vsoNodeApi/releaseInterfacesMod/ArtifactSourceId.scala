@@ -12,22 +12,17 @@ trait ArtifactSourceId extends StObject {
 }
 object ArtifactSourceId {
   
-  @scala.inline
-  def apply(artifactTypeId: String, sourceIdInputs: js.Array[SourceIdInput]): ArtifactSourceId = {
+  inline def apply(artifactTypeId: String, sourceIdInputs: js.Array[SourceIdInput]): ArtifactSourceId = {
     val __obj = js.Dynamic.literal(artifactTypeId = artifactTypeId.asInstanceOf[js.Any], sourceIdInputs = sourceIdInputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactSourceId]
   }
   
-  @scala.inline
-  implicit class ArtifactSourceIdMutableBuilder[Self <: ArtifactSourceId] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactSourceId](x: Self) {
     
-    @scala.inline
-    def setArtifactTypeId(value: String): Self = StObject.set(x, "artifactTypeId", value.asInstanceOf[js.Any])
+    inline def setArtifactTypeId(value: String): Self = StObject.set(x, "artifactTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIdInputs(value: js.Array[SourceIdInput]): Self = StObject.set(x, "sourceIdInputs", value.asInstanceOf[js.Any])
+    inline def setSourceIdInputs(value: js.Array[SourceIdInput]): Self = StObject.set(x, "sourceIdInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIdInputsVarargs(value: SourceIdInput*): Self = StObject.set(x, "sourceIdInputs", js.Array(value :_*))
+    inline def setSourceIdInputsVarargs(value: SourceIdInput*): Self = StObject.set(x, "sourceIdInputs", js.Array(value :_*))
   }
 }

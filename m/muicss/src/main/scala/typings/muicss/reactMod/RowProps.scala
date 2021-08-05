@@ -20,37 +20,27 @@ trait RowProps
 }
 object RowProps {
   
-  @scala.inline
-  def apply(): RowProps = {
+  inline def apply(): RowProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowProps]
   }
   
-  @scala.inline
-  implicit class RowPropsMutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
+  extension [Self <: RowProps](x: Self) {
     
-    @scala.inline
-    def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+    inline def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
+    inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
     
-    @scala.inline
-    def setMd(value: Double): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+    inline def setMd(value: Double): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+    inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
     
-    @scala.inline
-    def setSm(value: Double): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+    inline def setSm(value: Double): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
+    inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
     
-    @scala.inline
-    def setXs(value: Double): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+    inline def setXs(value: Double): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+    inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
   }
 }

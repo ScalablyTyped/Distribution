@@ -19,16 +19,12 @@ object IndexType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CLUSTERED: `1` = 1.asInstanceOf[`1`]
+    inline def CLUSTERED: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def HASHED: `2` = 2.asInstanceOf[`2`]
+    inline def HASHED: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def OTHER: `3` = 3.asInstanceOf[`3`]
+    inline def OTHER: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def STATISTIC: `0` = 0.asInstanceOf[`0`]
+    inline def STATISTIC: `0` = 0.asInstanceOf[`0`]
   }
 }

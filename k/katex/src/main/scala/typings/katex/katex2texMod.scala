@@ -17,10 +17,8 @@ object katex2texMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(fragment: DocumentFragment): DocumentFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fragment.asInstanceOf[js.Any]).asInstanceOf[DocumentFragment]
-  @scala.inline
-  def default(fragment: DocumentFragment, copyDelimiters: CopyDelimiters): DocumentFragment = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fragment.asInstanceOf[js.Any], copyDelimiters.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
+  inline def default(fragment: DocumentFragment): DocumentFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fragment.asInstanceOf[js.Any]).asInstanceOf[DocumentFragment]
+  inline def default(fragment: DocumentFragment, copyDelimiters: CopyDelimiters): DocumentFragment = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fragment.asInstanceOf[js.Any], copyDelimiters.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
   
   trait CopyDelimiters extends StObject {
     
@@ -30,8 +28,7 @@ object katex2texMod {
   }
   object CopyDelimiters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       display: js.Tuple2[DollarDollar | `[`, DollarDollar | `]`],
       `inline`: js.Tuple2[$ | Leftparenthesis, $ | Rightparenthesis]
     ): CopyDelimiters = {
@@ -40,14 +37,11 @@ object katex2texMod {
       __obj.asInstanceOf[CopyDelimiters]
     }
     
-    @scala.inline
-    implicit class CopyDelimitersMutableBuilder[Self <: CopyDelimiters] (val x: Self) extends AnyVal {
+    extension [Self <: CopyDelimiters](x: Self) {
       
-      @scala.inline
-      def setDisplay(value: js.Tuple2[DollarDollar | `[`, DollarDollar | `]`]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: js.Tuple2[DollarDollar | `[`, DollarDollar | `]`]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInline(value: js.Tuple2[$ | Leftparenthesis, $ | Rightparenthesis]): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: js.Tuple2[$ | Leftparenthesis, $ | Rightparenthesis]): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     }
   }
 }

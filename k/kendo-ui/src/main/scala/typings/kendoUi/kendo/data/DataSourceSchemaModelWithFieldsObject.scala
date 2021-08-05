@@ -13,19 +13,15 @@ trait DataSourceSchemaModelWithFieldsObject
 }
 object DataSourceSchemaModelWithFieldsObject {
   
-  @scala.inline
-  def apply(): DataSourceSchemaModelWithFieldsObject = {
+  inline def apply(): DataSourceSchemaModelWithFieldsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceSchemaModelWithFieldsObject]
   }
   
-  @scala.inline
-  implicit class DataSourceSchemaModelWithFieldsObjectMutableBuilder[Self <: DataSourceSchemaModelWithFieldsObject] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSchemaModelWithFieldsObject](x: Self) {
     
-    @scala.inline
-    def setFields(value: DataSourceSchemaModelFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: DataSourceSchemaModelFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
   }
 }

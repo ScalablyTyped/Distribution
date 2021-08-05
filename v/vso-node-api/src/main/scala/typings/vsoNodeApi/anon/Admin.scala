@@ -32,8 +32,7 @@ trait Admin extends StObject {
 }
 object Admin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     admin: scala.Double,
     createPublisher: scala.Double,
     deleteExtension: scala.Double,
@@ -51,43 +50,30 @@ object Admin {
     __obj.asInstanceOf[Admin]
   }
   
-  @scala.inline
-  implicit class AdminMutableBuilder[Self <: Admin] (val x: Self) extends AnyVal {
+  extension [Self <: Admin](x: Self) {
     
-    @scala.inline
-    def setAdmin(value: scala.Double): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+    inline def setAdmin(value: scala.Double): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatePublisher(value: scala.Double): Self = StObject.set(x, "createPublisher", value.asInstanceOf[js.Any])
+    inline def setCreatePublisher(value: scala.Double): Self = StObject.set(x, "createPublisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteExtension(value: scala.Double): Self = StObject.set(x, "deleteExtension", value.asInstanceOf[js.Any])
+    inline def setDeleteExtension(value: scala.Double): Self = StObject.set(x, "deleteExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletePublisher(value: scala.Double): Self = StObject.set(x, "deletePublisher", value.asInstanceOf[js.Any])
+    inline def setDeletePublisher(value: scala.Double): Self = StObject.set(x, "deletePublisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditSettings(value: scala.Double): Self = StObject.set(x, "editSettings", value.asInstanceOf[js.Any])
+    inline def setEditSettings(value: scala.Double): Self = StObject.set(x, "editSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagePermissions(value: scala.Double): Self = StObject.set(x, "managePermissions", value.asInstanceOf[js.Any])
+    inline def setManagePermissions(value: scala.Double): Self = StObject.set(x, "managePermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateRead(value: scala.Double): Self = StObject.set(x, "privateRead", value.asInstanceOf[js.Any])
+    inline def setPrivateRead(value: scala.Double): Self = StObject.set(x, "privateRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishExtension(value: scala.Double): Self = StObject.set(x, "publishExtension", value.asInstanceOf[js.Any])
+    inline def setPublishExtension(value: scala.Double): Self = StObject.set(x, "publishExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: scala.Double): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: scala.Double): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustedPartner(value: scala.Double): Self = StObject.set(x, "trustedPartner", value.asInstanceOf[js.Any])
+    inline def setTrustedPartner(value: scala.Double): Self = StObject.set(x, "trustedPartner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateExtension(value: scala.Double): Self = StObject.set(x, "updateExtension", value.asInstanceOf[js.Any])
+    inline def setUpdateExtension(value: scala.Double): Self = StObject.set(x, "updateExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewPermissions(value: scala.Double): Self = StObject.set(x, "viewPermissions", value.asInstanceOf[js.Any])
+    inline def setViewPermissions(value: scala.Double): Self = StObject.set(x, "viewPermissions", value.asInstanceOf[js.Any])
   }
 }

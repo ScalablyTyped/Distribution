@@ -20,31 +20,23 @@ trait GetUserInfoOptions
 }
 object GetUserInfoOptions {
   
-  @scala.inline
-  def apply(): GetUserInfoOptions = {
+  inline def apply(): GetUserInfoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUserInfoOptions]
   }
   
-  @scala.inline
-  implicit class GetUserInfoOptionsMutableBuilder[Self <: GetUserInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserInfoOptions](x: Self) {
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* res */ UserInfoResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ UserInfoResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

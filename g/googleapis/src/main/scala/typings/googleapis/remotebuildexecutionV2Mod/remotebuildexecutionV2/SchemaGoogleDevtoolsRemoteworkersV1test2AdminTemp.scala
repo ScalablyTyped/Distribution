@@ -30,25 +30,19 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2AdminTemp extends StObject {
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2AdminTemp {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2AdminTemp = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2AdminTemp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteworkersV1test2AdminTemp]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2AdminTempMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2AdminTemp] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteworkersV1test2AdminTemp](x: Self) {
     
-    @scala.inline
-    def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
+    inline def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgUndefined: Self = StObject.set(x, "arg", js.undefined)
+    inline def setArgUndefined: Self = StObject.set(x, "arg", js.undefined)
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
   }
 }

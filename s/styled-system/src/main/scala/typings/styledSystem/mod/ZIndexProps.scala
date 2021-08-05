@@ -21,31 +21,25 @@ trait ZIndexProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObjec
 }
 object ZIndexProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): ZIndexProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): ZIndexProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZIndexProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class ZIndexPropsMutableBuilder[Self <: ZIndexProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & ZIndexProps[ThemeType]) extends AnyVal {
+  extension [Self <: ZIndexProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & ZIndexProps[ThemeType]) {
     
-    @scala.inline
-    def setZIndex(
+    inline def setZIndex(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexNull: Self = StObject.set(x, "zIndex", null)
+    inline def setZIndexNull: Self = StObject.set(x, "zIndex", null)
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
-    @scala.inline
-    def setZIndexVarargs(
+    inline def setZIndexVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | Null)*
     ): Self = StObject.set(x, "zIndex", js.Array(value :_*))
   }

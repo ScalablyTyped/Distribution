@@ -8,6 +8,5 @@ object expoConstantsStrings {
   
   @js.native
   sealed trait ExponentConstants extends StObject
-  @scala.inline
-  def ExponentConstants: ExponentConstants = "ExponentConstants".asInstanceOf[ExponentConstants]
+  inline def ExponentConstants: ExponentConstants = "ExponentConstants".asInstanceOf[ExponentConstants]
 }

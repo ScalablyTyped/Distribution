@@ -25,8 +25,7 @@ trait CopyDBParameterGroupMessage extends StObject {
 }
 object CopyDBParameterGroupMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SourceDBParameterGroupIdentifier: String,
     TargetDBParameterGroupDescription: String,
     TargetDBParameterGroupIdentifier: String
@@ -35,25 +34,18 @@ object CopyDBParameterGroupMessage {
     __obj.asInstanceOf[CopyDBParameterGroupMessage]
   }
   
-  @scala.inline
-  implicit class CopyDBParameterGroupMessageMutableBuilder[Self <: CopyDBParameterGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CopyDBParameterGroupMessage](x: Self) {
     
-    @scala.inline
-    def setSourceDBParameterGroupIdentifier(value: String): Self = StObject.set(x, "SourceDBParameterGroupIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceDBParameterGroupIdentifier(value: String): Self = StObject.set(x, "SourceDBParameterGroupIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetDBParameterGroupDescription(value: String): Self = StObject.set(x, "TargetDBParameterGroupDescription", value.asInstanceOf[js.Any])
+    inline def setTargetDBParameterGroupDescription(value: String): Self = StObject.set(x, "TargetDBParameterGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDBParameterGroupIdentifier(value: String): Self = StObject.set(x, "TargetDBParameterGroupIdentifier", value.asInstanceOf[js.Any])
+    inline def setTargetDBParameterGroupIdentifier(value: String): Self = StObject.set(x, "TargetDBParameterGroupIdentifier", value.asInstanceOf[js.Any])
   }
 }

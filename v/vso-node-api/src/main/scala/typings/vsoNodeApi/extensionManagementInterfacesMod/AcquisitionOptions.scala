@@ -33,8 +33,7 @@ trait AcquisitionOptions extends StObject {
 }
 object AcquisitionOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultOperation: AcquisitionOperation,
     itemId: String,
     operations: js.Array[AcquisitionOperation],
@@ -45,25 +44,18 @@ object AcquisitionOptions {
     __obj.asInstanceOf[AcquisitionOptions]
   }
   
-  @scala.inline
-  implicit class AcquisitionOptionsMutableBuilder[Self <: AcquisitionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AcquisitionOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultOperation(value: AcquisitionOperation): Self = StObject.set(x, "defaultOperation", value.asInstanceOf[js.Any])
+    inline def setDefaultOperation(value: AcquisitionOperation): Self = StObject.set(x, "defaultOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: js.Array[AcquisitionOperation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: js.Array[AcquisitionOperation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsVarargs(value: AcquisitionOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: AcquisitionOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

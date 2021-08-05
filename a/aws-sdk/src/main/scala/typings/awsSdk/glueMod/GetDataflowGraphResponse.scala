@@ -18,31 +18,23 @@ trait GetDataflowGraphResponse extends StObject {
 }
 object GetDataflowGraphResponse {
   
-  @scala.inline
-  def apply(): GetDataflowGraphResponse = {
+  inline def apply(): GetDataflowGraphResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDataflowGraphResponse]
   }
   
-  @scala.inline
-  implicit class GetDataflowGraphResponseMutableBuilder[Self <: GetDataflowGraphResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataflowGraphResponse](x: Self) {
     
-    @scala.inline
-    def setDagEdges(value: DagEdges): Self = StObject.set(x, "DagEdges", value.asInstanceOf[js.Any])
+    inline def setDagEdges(value: DagEdges): Self = StObject.set(x, "DagEdges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDagEdgesUndefined: Self = StObject.set(x, "DagEdges", js.undefined)
+    inline def setDagEdgesUndefined: Self = StObject.set(x, "DagEdges", js.undefined)
     
-    @scala.inline
-    def setDagEdgesVarargs(value: CodeGenEdge*): Self = StObject.set(x, "DagEdges", js.Array(value :_*))
+    inline def setDagEdgesVarargs(value: CodeGenEdge*): Self = StObject.set(x, "DagEdges", js.Array(value :_*))
     
-    @scala.inline
-    def setDagNodes(value: DagNodes): Self = StObject.set(x, "DagNodes", value.asInstanceOf[js.Any])
+    inline def setDagNodes(value: DagNodes): Self = StObject.set(x, "DagNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDagNodesUndefined: Self = StObject.set(x, "DagNodes", js.undefined)
+    inline def setDagNodesUndefined: Self = StObject.set(x, "DagNodes", js.undefined)
     
-    @scala.inline
-    def setDagNodesVarargs(value: CodeGenNode*): Self = StObject.set(x, "DagNodes", js.Array(value :_*))
+    inline def setDagNodesVarargs(value: CodeGenNode*): Self = StObject.set(x, "DagNodes", js.Array(value :_*))
   }
 }

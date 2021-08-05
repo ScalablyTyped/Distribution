@@ -23,8 +23,7 @@ trait SemanticTokens extends StObject {
 }
 object SemanticTokens {
   
-  @scala.inline
-  def apply(data: js.Array[Double]): SemanticTokens = {
+  inline def apply(data: js.Array[Double]): SemanticTokens = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticTokens]
   }
@@ -33,22 +32,16 @@ object SemanticTokens {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed.SemanticTokens */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed.SemanticTokens */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed.SemanticTokens */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed.SemanticTokens */ Boolean]
   
-  @scala.inline
-  implicit class SemanticTokensMutableBuilder[Self <: SemanticTokens] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticTokens](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setResultId(value: String): Self = StObject.set(x, "resultId", value.asInstanceOf[js.Any])
+    inline def setResultId(value: String): Self = StObject.set(x, "resultId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultIdUndefined: Self = StObject.set(x, "resultId", js.undefined)
+    inline def setResultIdUndefined: Self = StObject.set(x, "resultId", js.undefined)
   }
 }

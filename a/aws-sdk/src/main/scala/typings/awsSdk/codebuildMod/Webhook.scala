@@ -43,58 +43,41 @@ trait Webhook extends StObject {
 }
 object Webhook {
   
-  @scala.inline
-  def apply(): Webhook = {
+  inline def apply(): Webhook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Webhook]
   }
   
-  @scala.inline
-  implicit class WebhookMutableBuilder[Self <: Webhook] (val x: Self) extends AnyVal {
+  extension [Self <: Webhook](x: Self) {
     
-    @scala.inline
-    def setBranchFilter(value: String): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
+    inline def setBranchFilter(value: String): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchFilterUndefined: Self = StObject.set(x, "branchFilter", js.undefined)
+    inline def setBranchFilterUndefined: Self = StObject.set(x, "branchFilter", js.undefined)
     
-    @scala.inline
-    def setBuildType(value: WebhookBuildType): Self = StObject.set(x, "buildType", value.asInstanceOf[js.Any])
+    inline def setBuildType(value: WebhookBuildType): Self = StObject.set(x, "buildType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildTypeUndefined: Self = StObject.set(x, "buildType", js.undefined)
+    inline def setBuildTypeUndefined: Self = StObject.set(x, "buildType", js.undefined)
     
-    @scala.inline
-    def setFilterGroups(value: FilterGroups): Self = StObject.set(x, "filterGroups", value.asInstanceOf[js.Any])
+    inline def setFilterGroups(value: FilterGroups): Self = StObject.set(x, "filterGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterGroupsUndefined: Self = StObject.set(x, "filterGroups", js.undefined)
+    inline def setFilterGroupsUndefined: Self = StObject.set(x, "filterGroups", js.undefined)
     
-    @scala.inline
-    def setFilterGroupsVarargs(value: FilterGroup*): Self = StObject.set(x, "filterGroups", js.Array(value :_*))
+    inline def setFilterGroupsVarargs(value: FilterGroup*): Self = StObject.set(x, "filterGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setLastModifiedSecret(value: Timestamp): Self = StObject.set(x, "lastModifiedSecret", value.asInstanceOf[js.Any])
+    inline def setLastModifiedSecret(value: Timestamp): Self = StObject.set(x, "lastModifiedSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedSecretUndefined: Self = StObject.set(x, "lastModifiedSecret", js.undefined)
+    inline def setLastModifiedSecretUndefined: Self = StObject.set(x, "lastModifiedSecret", js.undefined)
     
-    @scala.inline
-    def setPayloadUrl(value: NonEmptyString): Self = StObject.set(x, "payloadUrl", value.asInstanceOf[js.Any])
+    inline def setPayloadUrl(value: NonEmptyString): Self = StObject.set(x, "payloadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUrlUndefined: Self = StObject.set(x, "payloadUrl", js.undefined)
+    inline def setPayloadUrlUndefined: Self = StObject.set(x, "payloadUrl", js.undefined)
     
-    @scala.inline
-    def setSecret(value: NonEmptyString): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: NonEmptyString): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
-    @scala.inline
-    def setUrl(value: NonEmptyString): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: NonEmptyString): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

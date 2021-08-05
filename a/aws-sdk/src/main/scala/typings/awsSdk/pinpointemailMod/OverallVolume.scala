@@ -23,34 +23,25 @@ trait OverallVolume extends StObject {
 }
 object OverallVolume {
   
-  @scala.inline
-  def apply(): OverallVolume = {
+  inline def apply(): OverallVolume = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OverallVolume]
   }
   
-  @scala.inline
-  implicit class OverallVolumeMutableBuilder[Self <: OverallVolume] (val x: Self) extends AnyVal {
+  extension [Self <: OverallVolume](x: Self) {
     
-    @scala.inline
-    def setDomainIspPlacements(value: DomainIspPlacements): Self = StObject.set(x, "DomainIspPlacements", value.asInstanceOf[js.Any])
+    inline def setDomainIspPlacements(value: DomainIspPlacements): Self = StObject.set(x, "DomainIspPlacements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainIspPlacementsUndefined: Self = StObject.set(x, "DomainIspPlacements", js.undefined)
+    inline def setDomainIspPlacementsUndefined: Self = StObject.set(x, "DomainIspPlacements", js.undefined)
     
-    @scala.inline
-    def setDomainIspPlacementsVarargs(value: DomainIspPlacement*): Self = StObject.set(x, "DomainIspPlacements", js.Array(value :_*))
+    inline def setDomainIspPlacementsVarargs(value: DomainIspPlacement*): Self = StObject.set(x, "DomainIspPlacements", js.Array(value :_*))
     
-    @scala.inline
-    def setReadRatePercent(value: Percentage): Self = StObject.set(x, "ReadRatePercent", value.asInstanceOf[js.Any])
+    inline def setReadRatePercent(value: Percentage): Self = StObject.set(x, "ReadRatePercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadRatePercentUndefined: Self = StObject.set(x, "ReadRatePercent", js.undefined)
+    inline def setReadRatePercentUndefined: Self = StObject.set(x, "ReadRatePercent", js.undefined)
     
-    @scala.inline
-    def setVolumeStatistics(value: VolumeStatistics): Self = StObject.set(x, "VolumeStatistics", value.asInstanceOf[js.Any])
+    inline def setVolumeStatistics(value: VolumeStatistics): Self = StObject.set(x, "VolumeStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeStatisticsUndefined: Self = StObject.set(x, "VolumeStatistics", js.undefined)
+    inline def setVolumeStatisticsUndefined: Self = StObject.set(x, "VolumeStatistics", js.undefined)
   }
 }

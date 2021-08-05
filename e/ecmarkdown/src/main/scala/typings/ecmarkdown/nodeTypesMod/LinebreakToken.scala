@@ -17,22 +17,17 @@ trait LinebreakToken
 }
 object LinebreakToken {
   
-  @scala.inline
-  def apply(contents: String, location: LocationRange): LinebreakToken = {
+  inline def apply(contents: String, location: LocationRange): LinebreakToken = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "linebreak")
     __obj.asInstanceOf[LinebreakToken]
   }
   
-  @scala.inline
-  implicit class LinebreakTokenMutableBuilder[Self <: LinebreakToken] (val x: Self) extends AnyVal {
+  extension [Self <: LinebreakToken](x: Self) {
     
-    @scala.inline
-    def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: linebreak): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: linebreak): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

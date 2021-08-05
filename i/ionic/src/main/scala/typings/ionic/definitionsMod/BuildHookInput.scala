@@ -16,8 +16,7 @@ trait BuildHookInput
 }
 object BuildHookInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: AngularBuildOptions | IonicAngularBuildOptions | Ionic1BuildOptions,
     name: buildColonbefore | buildColonafter
   ): BuildHookInput = {
@@ -25,13 +24,10 @@ object BuildHookInput {
     __obj.asInstanceOf[BuildHookInput]
   }
   
-  @scala.inline
-  implicit class BuildHookInputMutableBuilder[Self <: BuildHookInput] (val x: Self) extends AnyVal {
+  extension [Self <: BuildHookInput](x: Self) {
     
-    @scala.inline
-    def setBuild(value: AngularBuildOptions | IonicAngularBuildOptions | Ionic1BuildOptions): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: AngularBuildOptions | IonicAngularBuildOptions | Ionic1BuildOptions): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: buildColonbefore | buildColonafter): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: buildColonbefore | buildColonafter): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

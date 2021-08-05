@@ -18,25 +18,19 @@ trait GetCommentReactionsOutput extends StObject {
 }
 object GetCommentReactionsOutput {
   
-  @scala.inline
-  def apply(reactionsForComment: ReactionsForCommentList): GetCommentReactionsOutput = {
+  inline def apply(reactionsForComment: ReactionsForCommentList): GetCommentReactionsOutput = {
     val __obj = js.Dynamic.literal(reactionsForComment = reactionsForComment.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCommentReactionsOutput]
   }
   
-  @scala.inline
-  implicit class GetCommentReactionsOutputMutableBuilder[Self <: GetCommentReactionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetCommentReactionsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setReactionsForComment(value: ReactionsForCommentList): Self = StObject.set(x, "reactionsForComment", value.asInstanceOf[js.Any])
+    inline def setReactionsForComment(value: ReactionsForCommentList): Self = StObject.set(x, "reactionsForComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactionsForCommentVarargs(value: ReactionForComment*): Self = StObject.set(x, "reactionsForComment", js.Array(value :_*))
+    inline def setReactionsForCommentVarargs(value: ReactionForComment*): Self = StObject.set(x, "reactionsForComment", js.Array(value :_*))
   }
 }

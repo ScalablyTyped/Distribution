@@ -13,16 +13,13 @@ trait Y
 }
 object Y {
   
-  @scala.inline
-  def apply(y: Boolean): Y = {
+  inline def apply(y: Boolean): Y = {
     val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Y]
   }
   
-  @scala.inline
-  implicit class YMutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
+  extension [Self <: Y](x: Self) {
     
-    @scala.inline
-    def setY(value: Boolean): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Boolean): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

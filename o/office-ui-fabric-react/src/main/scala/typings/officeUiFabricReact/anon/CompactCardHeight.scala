@@ -14,22 +14,17 @@ trait CompactCardHeight extends StObject {
 }
 object CompactCardHeight {
   
-  @scala.inline
-  def apply(compactCardHeight: Double, directionalHintFixed: Boolean, expandedCardHeight: Double): CompactCardHeight = {
+  inline def apply(compactCardHeight: Double, directionalHintFixed: Boolean, expandedCardHeight: Double): CompactCardHeight = {
     val __obj = js.Dynamic.literal(compactCardHeight = compactCardHeight.asInstanceOf[js.Any], directionalHintFixed = directionalHintFixed.asInstanceOf[js.Any], expandedCardHeight = expandedCardHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompactCardHeight]
   }
   
-  @scala.inline
-  implicit class CompactCardHeightMutableBuilder[Self <: CompactCardHeight] (val x: Self) extends AnyVal {
+  extension [Self <: CompactCardHeight](x: Self) {
     
-    @scala.inline
-    def setCompactCardHeight(value: Double): Self = StObject.set(x, "compactCardHeight", value.asInstanceOf[js.Any])
+    inline def setCompactCardHeight(value: Double): Self = StObject.set(x, "compactCardHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionalHintFixed(value: Boolean): Self = StObject.set(x, "directionalHintFixed", value.asInstanceOf[js.Any])
+    inline def setDirectionalHintFixed(value: Boolean): Self = StObject.set(x, "directionalHintFixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedCardHeight(value: Double): Self = StObject.set(x, "expandedCardHeight", value.asInstanceOf[js.Any])
+    inline def setExpandedCardHeight(value: Double): Self = StObject.set(x, "expandedCardHeight", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait ProductViewAggregationValue extends StObject {
 }
 object ProductViewAggregationValue {
   
-  @scala.inline
-  def apply(): ProductViewAggregationValue = {
+  inline def apply(): ProductViewAggregationValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductViewAggregationValue]
   }
   
-  @scala.inline
-  implicit class ProductViewAggregationValueMutableBuilder[Self <: ProductViewAggregationValue] (val x: Self) extends AnyVal {
+  extension [Self <: ProductViewAggregationValue](x: Self) {
     
-    @scala.inline
-    def setApproximateCount(value: ApproximateCount): Self = StObject.set(x, "ApproximateCount", value.asInstanceOf[js.Any])
+    inline def setApproximateCount(value: ApproximateCount): Self = StObject.set(x, "ApproximateCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproximateCountUndefined: Self = StObject.set(x, "ApproximateCount", js.undefined)
+    inline def setApproximateCountUndefined: Self = StObject.set(x, "ApproximateCount", js.undefined)
     
-    @scala.inline
-    def setValue(value: AttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: AttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

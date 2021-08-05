@@ -23,37 +23,27 @@ trait ListGroupResourcesOutput extends StObject {
 }
 object ListGroupResourcesOutput {
   
-  @scala.inline
-  def apply(): ListGroupResourcesOutput = {
+  inline def apply(): ListGroupResourcesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGroupResourcesOutput]
   }
   
-  @scala.inline
-  implicit class ListGroupResourcesOutputMutableBuilder[Self <: ListGroupResourcesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListGroupResourcesOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setQueryErrors(value: QueryErrorList): Self = StObject.set(x, "QueryErrors", value.asInstanceOf[js.Any])
+    inline def setQueryErrors(value: QueryErrorList): Self = StObject.set(x, "QueryErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryErrorsUndefined: Self = StObject.set(x, "QueryErrors", js.undefined)
+    inline def setQueryErrorsUndefined: Self = StObject.set(x, "QueryErrors", js.undefined)
     
-    @scala.inline
-    def setQueryErrorsVarargs(value: QueryError*): Self = StObject.set(x, "QueryErrors", js.Array(value :_*))
+    inline def setQueryErrorsVarargs(value: QueryError*): Self = StObject.set(x, "QueryErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceIdentifiers(value: ResourceIdentifierList): Self = StObject.set(x, "ResourceIdentifiers", value.asInstanceOf[js.Any])
+    inline def setResourceIdentifiers(value: ResourceIdentifierList): Self = StObject.set(x, "ResourceIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifiersUndefined: Self = StObject.set(x, "ResourceIdentifiers", js.undefined)
+    inline def setResourceIdentifiersUndefined: Self = StObject.set(x, "ResourceIdentifiers", js.undefined)
     
-    @scala.inline
-    def setResourceIdentifiersVarargs(value: ResourceIdentifier*): Self = StObject.set(x, "ResourceIdentifiers", js.Array(value :_*))
+    inline def setResourceIdentifiersVarargs(value: ResourceIdentifier*): Self = StObject.set(x, "ResourceIdentifiers", js.Array(value :_*))
   }
 }

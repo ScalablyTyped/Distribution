@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Cell")
 @js.native
-class Cell protected ()
+/* private */ class Cell ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Cell {
   
@@ -22,7 +22,7 @@ class Cell protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Cell_typekey")
   var PowerPointDotCell_typekey: typings.activexPowerpoint.PowerPoint.Cell = js.native
   

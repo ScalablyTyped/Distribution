@@ -33,8 +33,7 @@ trait AggregateResourceIdentifier extends StObject {
 }
 object AggregateResourceIdentifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ResourceId: ResourceId,
     ResourceType: ResourceType,
     SourceAccountId: AccountId,
@@ -44,25 +43,18 @@ object AggregateResourceIdentifier {
     __obj.asInstanceOf[AggregateResourceIdentifier]
   }
   
-  @scala.inline
-  implicit class AggregateResourceIdentifierMutableBuilder[Self <: AggregateResourceIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: AggregateResourceIdentifier](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: ResourceName): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAccountId(value: AccountId): Self = StObject.set(x, "SourceAccountId", value.asInstanceOf[js.Any])
+    inline def setSourceAccountId(value: AccountId): Self = StObject.set(x, "SourceAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRegion(value: AwsRegion): Self = StObject.set(x, "SourceRegion", value.asInstanceOf[js.Any])
+    inline def setSourceRegion(value: AwsRegion): Self = StObject.set(x, "SourceRegion", value.asInstanceOf[js.Any])
   }
 }

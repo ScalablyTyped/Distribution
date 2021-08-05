@@ -11,22 +11,17 @@ trait BatchCreatePerfSamplesRequest extends StObject {
 }
 object BatchCreatePerfSamplesRequest {
   
-  @scala.inline
-  def apply(): BatchCreatePerfSamplesRequest = {
+  inline def apply(): BatchCreatePerfSamplesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchCreatePerfSamplesRequest]
   }
   
-  @scala.inline
-  implicit class BatchCreatePerfSamplesRequestMutableBuilder[Self <: BatchCreatePerfSamplesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchCreatePerfSamplesRequest](x: Self) {
     
-    @scala.inline
-    def setPerfSamples(value: js.Array[PerfSample]): Self = StObject.set(x, "perfSamples", value.asInstanceOf[js.Any])
+    inline def setPerfSamples(value: js.Array[PerfSample]): Self = StObject.set(x, "perfSamples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerfSamplesUndefined: Self = StObject.set(x, "perfSamples", js.undefined)
+    inline def setPerfSamplesUndefined: Self = StObject.set(x, "perfSamples", js.undefined)
     
-    @scala.inline
-    def setPerfSamplesVarargs(value: PerfSample*): Self = StObject.set(x, "perfSamples", js.Array(value :_*))
+    inline def setPerfSamplesVarargs(value: PerfSample*): Self = StObject.set(x, "perfSamples", js.Array(value :_*))
   }
 }

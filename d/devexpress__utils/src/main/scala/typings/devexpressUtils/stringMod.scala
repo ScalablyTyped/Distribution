@@ -13,14 +13,14 @@ object stringMod {
   class StringFormatter protected () extends StObject {
     def this(dateFormatter: DateFormatter, numberFormatter: NumberFormatter) = this()
     
-    var activeDateFormat: js.Any = js.native
+    /* private */ var activeDateFormat: js.Any = js.native
     
-    val dateFormatter: js.Any = js.native
+    /* private */ val dateFormatter: js.Any = js.native
     
     def format(pattern: String, args: js.Any*): String = js.native
     
-    val numberFormatter: js.Any = js.native
+    /* private */ val numberFormatter: js.Any = js.native
     
-    var parseSpec: js.Any = js.native
+    /* private */ var parseSpec: js.Any = js.native
   }
 }

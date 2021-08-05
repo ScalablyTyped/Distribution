@@ -17,37 +17,27 @@ trait ModelSelectedItem[T] extends StObject {
 }
 object ModelSelectedItem {
   
-  @scala.inline
-  def apply[T](): ModelSelectedItem[T] = {
+  inline def apply[T](): ModelSelectedItem[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelSelectedItem[T]]
   }
   
-  @scala.inline
-  implicit class ModelSelectedItemMutableBuilder[Self <: ModelSelectedItem[?], T] (val x: Self & ModelSelectedItem[T]) extends AnyVal {
+  extension [Self <: ModelSelectedItem[?], T](x: Self & ModelSelectedItem[T]) {
     
-    @scala.inline
-    def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setSelectedItem(value: js.Any): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+    inline def setSelectedItem(value: js.Any): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
   }
 }

@@ -13,6 +13,5 @@ class DocumentationReference ()
   extends typings.xadesjs.xmlMod.DocumentationReference
 object DocumentationReference {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.DocumentationReference] = ^.asInstanceOf[js.Dynamic].selectDynamic("DocumentationReference").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.DocumentationReference]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.DocumentationReference] = ^.asInstanceOf[js.Dynamic].selectDynamic("DocumentationReference").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.DocumentationReference]]
 }

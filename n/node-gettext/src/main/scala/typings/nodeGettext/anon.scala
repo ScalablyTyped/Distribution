@@ -14,26 +14,20 @@ object anon {
   }
   object Debug {
     
-    @scala.inline
-    def apply(): Debug = {
+    inline def apply(): Debug = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Debug]
     }
     
-    @scala.inline
-    implicit class DebugMutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
+    extension [Self <: Debug](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setSourceLocale(value: String): Self = StObject.set(x, "sourceLocale", value.asInstanceOf[js.Any])
+      inline def setSourceLocale(value: String): Self = StObject.set(x, "sourceLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceLocaleUndefined: Self = StObject.set(x, "sourceLocale", js.undefined)
+      inline def setSourceLocaleUndefined: Self = StObject.set(x, "sourceLocale", js.undefined)
     }
   }
 }

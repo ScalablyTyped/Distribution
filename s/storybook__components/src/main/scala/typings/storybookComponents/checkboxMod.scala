@@ -23,17 +23,14 @@ object checkboxMod {
   }
   object CheckboxConfig {
     
-    @scala.inline
-    def apply(isInline: Boolean, options: OptionsObject): CheckboxConfig = {
+    inline def apply(isInline: Boolean, options: OptionsObject): CheckboxConfig = {
       val __obj = js.Dynamic.literal(isInline = isInline.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckboxConfig]
     }
     
-    @scala.inline
-    implicit class CheckboxConfigMutableBuilder[Self <: CheckboxConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxConfig](x: Self) {
       
-      @scala.inline
-      def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
+      inline def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     }
   }
   

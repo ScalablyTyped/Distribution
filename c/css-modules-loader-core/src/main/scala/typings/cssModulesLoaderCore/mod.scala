@@ -24,36 +24,31 @@ object mod {
   @JSImport("css-modules-loader-core", "defaultPlugins")
   @js.native
   def defaultPlugins: js.Array[Plugin_[js.Object]] = js.native
-  @scala.inline
-  def defaultPlugins_=(x: js.Array[Plugin_[js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultPlugins")(x.asInstanceOf[js.Any])
+  inline def defaultPlugins_=(x: js.Array[Plugin_[js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultPlugins")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("css-modules-loader-core", "extractImports")
   @js.native
   def extractImports: Plugin_[js.Object] = js.native
-  @scala.inline
-  def extractImports_=(x: Plugin_[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extractImports")(x.asInstanceOf[js.Any])
+  inline def extractImports_=(x: Plugin_[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extractImports")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("css-modules-loader-core", "localByDefault")
   @js.native
   def localByDefault: Plugin_[js.Object] = js.native
-  @scala.inline
-  def localByDefault_=(x: Plugin_[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localByDefault")(x.asInstanceOf[js.Any])
+  inline def localByDefault_=(x: Plugin_[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localByDefault")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("css-modules-loader-core", "scope")
   @js.native
   def scope: Plugin_[js.Object] = js.native
-  @scala.inline
-  def scope_=(x: Plugin_[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scope")(x.asInstanceOf[js.Any])
+  inline def scope_=(x: Plugin_[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scope")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("css-modules-loader-core", "values")
   @js.native
   def values: Plugin_[js.Object] = js.native
-  @scala.inline
-  def values_=(x: Plugin_[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("values")(x.asInstanceOf[js.Any])
+  inline def values_=(x: Plugin_[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("values")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Core extends StObject {
@@ -80,20 +75,16 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(exportTokens: ExportTokens, injectableSource: String): Result = {
+    inline def apply(exportTokens: ExportTokens, injectableSource: String): Result = {
       val __obj = js.Dynamic.literal(exportTokens = exportTokens.asInstanceOf[js.Any], injectableSource = injectableSource.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setExportTokens(value: ExportTokens): Self = StObject.set(x, "exportTokens", value.asInstanceOf[js.Any])
+      inline def setExportTokens(value: ExportTokens): Self = StObject.set(x, "exportTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectableSource(value: String): Self = StObject.set(x, "injectableSource", value.asInstanceOf[js.Any])
+      inline def setInjectableSource(value: String): Self = StObject.set(x, "injectableSource", value.asInstanceOf[js.Any])
     }
   }
   

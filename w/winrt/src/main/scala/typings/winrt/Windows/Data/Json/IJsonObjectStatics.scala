@@ -13,19 +13,15 @@ trait IJsonObjectStatics extends StObject {
 }
 object IJsonObjectStatics {
   
-  @scala.inline
-  def apply(parse: String => JsonObject, tryParse: String => Succeeded): IJsonObjectStatics = {
+  inline def apply(parse: String => JsonObject, tryParse: String => Succeeded): IJsonObjectStatics = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), tryParse = js.Any.fromFunction1(tryParse))
     __obj.asInstanceOf[IJsonObjectStatics]
   }
   
-  @scala.inline
-  implicit class IJsonObjectStaticsMutableBuilder[Self <: IJsonObjectStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IJsonObjectStatics](x: Self) {
     
-    @scala.inline
-    def setParse(value: String => JsonObject): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: String => JsonObject): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTryParse(value: String => Succeeded): Self = StObject.set(x, "tryParse", js.Any.fromFunction1(value))
+    inline def setTryParse(value: String => Succeeded): Self = StObject.set(x, "tryParse", js.Any.fromFunction1(value))
   }
 }

@@ -11,6 +11,5 @@ object getFreshSideObjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): SideObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[SideObject]
+  inline def default(): SideObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[SideObject]
 }

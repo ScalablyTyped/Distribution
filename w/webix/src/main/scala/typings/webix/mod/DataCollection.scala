@@ -174,6 +174,5 @@ trait DataCollection extends StObject {
 }
 object DataCollection {
   
-  @scala.inline
-  def apply: DataCollectionFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataCollection").asInstanceOf[DataCollectionFactory]
+  inline def apply: DataCollectionFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataCollection").asInstanceOf[DataCollectionFactory]
 }

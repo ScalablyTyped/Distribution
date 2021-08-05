@@ -12,14 +12,11 @@ object segmentUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def collectGatherOpShapeInfo(x: Tensor[Rank], indices: Tensor[Rank], axis: Double): GatherOpShapeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("collectGatherOpShapeInfo")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[GatherOpShapeInfo]
+  inline def collectGatherOpShapeInfo(x: Tensor[Rank], indices: Tensor[Rank], axis: Double): GatherOpShapeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("collectGatherOpShapeInfo")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[GatherOpShapeInfo]
   
-  @scala.inline
-  def computeOutShape(aShape: js.Array[Double], axis: Double, numSegments: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeOutShape")(aShape.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def computeOutShape(aShape: js.Array[Double], axis: Double, numSegments: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeOutShape")(aShape.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def segOpComputeOptimalWindowSize(inSize: Double, numSegments: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("segOpComputeOptimalWindowSize")(inSize.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def segOpComputeOptimalWindowSize(inSize: Double, numSegments: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("segOpComputeOptimalWindowSize")(inSize.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   trait GatherOpShapeInfo extends StObject {
     
@@ -33,29 +30,22 @@ object segmentUtilMod {
   }
   object GatherOpShapeInfo {
     
-    @scala.inline
-    def apply(batchSize: Double, dimSize: Double, outputShape: js.Array[Double], sliceSize: Double): GatherOpShapeInfo = {
+    inline def apply(batchSize: Double, dimSize: Double, outputShape: js.Array[Double], sliceSize: Double): GatherOpShapeInfo = {
       val __obj = js.Dynamic.literal(batchSize = batchSize.asInstanceOf[js.Any], dimSize = dimSize.asInstanceOf[js.Any], outputShape = outputShape.asInstanceOf[js.Any], sliceSize = sliceSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[GatherOpShapeInfo]
     }
     
-    @scala.inline
-    implicit class GatherOpShapeInfoMutableBuilder[Self <: GatherOpShapeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: GatherOpShapeInfo](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimSize(value: Double): Self = StObject.set(x, "dimSize", value.asInstanceOf[js.Any])
+      inline def setDimSize(value: Double): Self = StObject.set(x, "dimSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputShape(value: js.Array[Double]): Self = StObject.set(x, "outputShape", value.asInstanceOf[js.Any])
+      inline def setOutputShape(value: js.Array[Double]): Self = StObject.set(x, "outputShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputShapeVarargs(value: Double*): Self = StObject.set(x, "outputShape", js.Array(value :_*))
+      inline def setOutputShapeVarargs(value: Double*): Self = StObject.set(x, "outputShape", js.Array(value :_*))
       
-      @scala.inline
-      def setSliceSize(value: Double): Self = StObject.set(x, "sliceSize", value.asInstanceOf[js.Any])
+      inline def setSliceSize(value: Double): Self = StObject.set(x, "sliceSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,26 +61,20 @@ object segmentUtilMod {
   }
   object SegOpInfo {
     
-    @scala.inline
-    def apply(batchSize: Double, inSize: Double, numSegments: Double, windowSize: Double): SegOpInfo = {
+    inline def apply(batchSize: Double, inSize: Double, numSegments: Double, windowSize: Double): SegOpInfo = {
       val __obj = js.Dynamic.literal(batchSize = batchSize.asInstanceOf[js.Any], inSize = inSize.asInstanceOf[js.Any], numSegments = numSegments.asInstanceOf[js.Any], windowSize = windowSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[SegOpInfo]
     }
     
-    @scala.inline
-    implicit class SegOpInfoMutableBuilder[Self <: SegOpInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SegOpInfo](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInSize(value: Double): Self = StObject.set(x, "inSize", value.asInstanceOf[js.Any])
+      inline def setInSize(value: Double): Self = StObject.set(x, "inSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumSegments(value: Double): Self = StObject.set(x, "numSegments", value.asInstanceOf[js.Any])
+      inline def setNumSegments(value: Double): Self = StObject.set(x, "numSegments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowSize(value: Double): Self = StObject.set(x, "windowSize", value.asInstanceOf[js.Any])
+      inline def setWindowSize(value: Double): Self = StObject.set(x, "windowSize", value.asInstanceOf[js.Any])
     }
   }
 }

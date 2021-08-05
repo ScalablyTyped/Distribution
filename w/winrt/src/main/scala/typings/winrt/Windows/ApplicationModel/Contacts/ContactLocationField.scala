@@ -9,8 +9,7 @@ trait ContactLocationField
      with IContactLocationField
 object ContactLocationField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     category: ContactFieldCategory,
     city: String,
     country: String,

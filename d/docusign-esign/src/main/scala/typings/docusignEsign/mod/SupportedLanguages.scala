@@ -43,27 +43,22 @@ trait SupportedLanguages extends StObject {
 }
 object SupportedLanguages {
   
-  @scala.inline
-  def apply(): SupportedLanguages = {
+  inline def apply(): SupportedLanguages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SupportedLanguages]
   }
   
-  @scala.inline
-  implicit class SupportedLanguagesMutableBuilder[Self <: SupportedLanguages] (val x: Self) extends AnyVal {
+  extension [Self <: SupportedLanguages](x: Self) {
     
-    @scala.inline
-    def setLanguages(
+    inline def setLanguages(
       value: js.Array[
           /* A name-value pair that describes an item and provides a value for the item. */ NameValue
         ]
     ): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+    inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    @scala.inline
-    def setLanguagesVarargs(
+    inline def setLanguagesVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
     ): Self = StObject.set(x, "languages", js.Array(value :_*))
   }

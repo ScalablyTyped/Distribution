@@ -71,21 +71,16 @@ object tapePoolMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TapePool]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TapePool]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TapePoolState): TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TapePool]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TapePoolState, opts: CustomResourceOptions): TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TapePool]
+    inline def get(name: String, id: Input[ID]): TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TapePool]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TapePool]
+    inline def get(name: String, id: Input[ID], state: TapePoolState): TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TapePool]
+    inline def get(name: String, id: Input[ID], state: TapePoolState, opts: CustomResourceOptions): TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TapePool]
     
     /**
       * Returns true if the given object is an instance of TapePool.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/tapePool.TapePool */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/tapePool.TapePool */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/tapePool.TapePool */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/tapePool.TapePool */ Boolean]
   }
   
   trait TapePoolArgs extends StObject {
@@ -117,38 +112,28 @@ object tapePoolMod {
   }
   object TapePoolArgs {
     
-    @scala.inline
-    def apply(poolName: Input[String], storageClass: Input[String]): TapePoolArgs = {
+    inline def apply(poolName: Input[String], storageClass: Input[String]): TapePoolArgs = {
       val __obj = js.Dynamic.literal(poolName = poolName.asInstanceOf[js.Any], storageClass = storageClass.asInstanceOf[js.Any])
       __obj.asInstanceOf[TapePoolArgs]
     }
     
-    @scala.inline
-    implicit class TapePoolArgsMutableBuilder[Self <: TapePoolArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TapePoolArgs](x: Self) {
       
-      @scala.inline
-      def setPoolName(value: Input[String]): Self = StObject.set(x, "poolName", value.asInstanceOf[js.Any])
+      inline def setPoolName(value: Input[String]): Self = StObject.set(x, "poolName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetentionLockTimeInDays(value: Input[Double]): Self = StObject.set(x, "retentionLockTimeInDays", value.asInstanceOf[js.Any])
+      inline def setRetentionLockTimeInDays(value: Input[Double]): Self = StObject.set(x, "retentionLockTimeInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetentionLockTimeInDaysUndefined: Self = StObject.set(x, "retentionLockTimeInDays", js.undefined)
+      inline def setRetentionLockTimeInDaysUndefined: Self = StObject.set(x, "retentionLockTimeInDays", js.undefined)
       
-      @scala.inline
-      def setRetentionLockType(value: Input[String]): Self = StObject.set(x, "retentionLockType", value.asInstanceOf[js.Any])
+      inline def setRetentionLockType(value: Input[String]): Self = StObject.set(x, "retentionLockType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetentionLockTypeUndefined: Self = StObject.set(x, "retentionLockType", js.undefined)
+      inline def setRetentionLockTypeUndefined: Self = StObject.set(x, "retentionLockType", js.undefined)
       
-      @scala.inline
-      def setStorageClass(value: Input[String]): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+      inline def setStorageClass(value: Input[String]): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -186,50 +171,36 @@ object tapePoolMod {
   }
   object TapePoolState {
     
-    @scala.inline
-    def apply(): TapePoolState = {
+    inline def apply(): TapePoolState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TapePoolState]
     }
     
-    @scala.inline
-    implicit class TapePoolStateMutableBuilder[Self <: TapePoolState] (val x: Self) extends AnyVal {
+    extension [Self <: TapePoolState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setPoolName(value: Input[String]): Self = StObject.set(x, "poolName", value.asInstanceOf[js.Any])
+      inline def setPoolName(value: Input[String]): Self = StObject.set(x, "poolName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolNameUndefined: Self = StObject.set(x, "poolName", js.undefined)
+      inline def setPoolNameUndefined: Self = StObject.set(x, "poolName", js.undefined)
       
-      @scala.inline
-      def setRetentionLockTimeInDays(value: Input[Double]): Self = StObject.set(x, "retentionLockTimeInDays", value.asInstanceOf[js.Any])
+      inline def setRetentionLockTimeInDays(value: Input[Double]): Self = StObject.set(x, "retentionLockTimeInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetentionLockTimeInDaysUndefined: Self = StObject.set(x, "retentionLockTimeInDays", js.undefined)
+      inline def setRetentionLockTimeInDaysUndefined: Self = StObject.set(x, "retentionLockTimeInDays", js.undefined)
       
-      @scala.inline
-      def setRetentionLockType(value: Input[String]): Self = StObject.set(x, "retentionLockType", value.asInstanceOf[js.Any])
+      inline def setRetentionLockType(value: Input[String]): Self = StObject.set(x, "retentionLockType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetentionLockTypeUndefined: Self = StObject.set(x, "retentionLockType", js.undefined)
+      inline def setRetentionLockTypeUndefined: Self = StObject.set(x, "retentionLockType", js.undefined)
       
-      @scala.inline
-      def setStorageClass(value: Input[String]): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+      inline def setStorageClass(value: Input[String]): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
+      inline def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

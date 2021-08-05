@@ -27,34 +27,25 @@ trait SchemaTargetableRemarketingListsListResponse extends StObject {
 }
 object SchemaTargetableRemarketingListsListResponse {
   
-  @scala.inline
-  def apply(): SchemaTargetableRemarketingListsListResponse = {
+  inline def apply(): SchemaTargetableRemarketingListsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTargetableRemarketingListsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaTargetableRemarketingListsListResponseMutableBuilder[Self <: SchemaTargetableRemarketingListsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTargetableRemarketingListsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTargetableRemarketingLists(value: js.Array[SchemaTargetableRemarketingList]): Self = StObject.set(x, "targetableRemarketingLists", value.asInstanceOf[js.Any])
+    inline def setTargetableRemarketingLists(value: js.Array[SchemaTargetableRemarketingList]): Self = StObject.set(x, "targetableRemarketingLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetableRemarketingListsUndefined: Self = StObject.set(x, "targetableRemarketingLists", js.undefined)
+    inline def setTargetableRemarketingListsUndefined: Self = StObject.set(x, "targetableRemarketingLists", js.undefined)
     
-    @scala.inline
-    def setTargetableRemarketingListsVarargs(value: SchemaTargetableRemarketingList*): Self = StObject.set(x, "targetableRemarketingLists", js.Array(value :_*))
+    inline def setTargetableRemarketingListsVarargs(value: SchemaTargetableRemarketingList*): Self = StObject.set(x, "targetableRemarketingLists", js.Array(value :_*))
   }
 }

@@ -33,8 +33,7 @@ trait UpdateDetectorModelRequest extends StObject {
 }
 object UpdateDetectorModelRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     detectorModelDefinition: DetectorModelDefinition,
     detectorModelName: DetectorModelName,
     roleArn: AmazonResourceName
@@ -43,28 +42,20 @@ object UpdateDetectorModelRequest {
     __obj.asInstanceOf[UpdateDetectorModelRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDetectorModelRequestMutableBuilder[Self <: UpdateDetectorModelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDetectorModelRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorModelDefinition(value: DetectorModelDefinition): Self = StObject.set(x, "detectorModelDefinition", value.asInstanceOf[js.Any])
+    inline def setDetectorModelDefinition(value: DetectorModelDefinition): Self = StObject.set(x, "detectorModelDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorModelDescription(value: DetectorModelDescription): Self = StObject.set(x, "detectorModelDescription", value.asInstanceOf[js.Any])
+    inline def setDetectorModelDescription(value: DetectorModelDescription): Self = StObject.set(x, "detectorModelDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorModelDescriptionUndefined: Self = StObject.set(x, "detectorModelDescription", js.undefined)
+    inline def setDetectorModelDescriptionUndefined: Self = StObject.set(x, "detectorModelDescription", js.undefined)
     
-    @scala.inline
-    def setDetectorModelName(value: DetectorModelName): Self = StObject.set(x, "detectorModelName", value.asInstanceOf[js.Any])
+    inline def setDetectorModelName(value: DetectorModelName): Self = StObject.set(x, "detectorModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationMethod(value: EvaluationMethod): Self = StObject.set(x, "evaluationMethod", value.asInstanceOf[js.Any])
+    inline def setEvaluationMethod(value: EvaluationMethod): Self = StObject.set(x, "evaluationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationMethodUndefined: Self = StObject.set(x, "evaluationMethod", js.undefined)
+    inline def setEvaluationMethodUndefined: Self = StObject.set(x, "evaluationMethod", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: AmazonResourceName): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AmazonResourceName): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

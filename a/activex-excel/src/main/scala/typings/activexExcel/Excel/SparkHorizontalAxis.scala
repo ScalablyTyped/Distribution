@@ -12,7 +12,7 @@ trait SparkHorizontalAxis extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.SparkHorizontalAxis_typekey")
+  /* private */ @JSName("Excel.SparkHorizontalAxis_typekey")
   var ExcelDotSparkHorizontalAxis_typekey: SparkHorizontalAxis
   
   val IsDateAxis: Boolean
@@ -23,8 +23,7 @@ trait SparkHorizontalAxis extends StObject {
 }
 object SparkHorizontalAxis {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Axis: SparkColor,
     Creator: XlCreator,
@@ -38,28 +37,20 @@ object SparkHorizontalAxis {
     __obj.asInstanceOf[SparkHorizontalAxis]
   }
   
-  @scala.inline
-  implicit class SparkHorizontalAxisMutableBuilder[Self <: SparkHorizontalAxis] (val x: Self) extends AnyVal {
+  extension [Self <: SparkHorizontalAxis](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxis(value: SparkColor): Self = StObject.set(x, "Axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: SparkColor): Self = StObject.set(x, "Axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotSparkHorizontalAxis_typekey(value: SparkHorizontalAxis): Self = StObject.set(x, "Excel.SparkHorizontalAxis_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotSparkHorizontalAxis_typekey(value: SparkHorizontalAxis): Self = StObject.set(x, "Excel.SparkHorizontalAxis_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDateAxis(value: Boolean): Self = StObject.set(x, "IsDateAxis", value.asInstanceOf[js.Any])
+    inline def setIsDateAxis(value: Boolean): Self = StObject.set(x, "IsDateAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightToLeftPlotOrder(value: Boolean): Self = StObject.set(x, "RightToLeftPlotOrder", value.asInstanceOf[js.Any])
+    inline def setRightToLeftPlotOrder(value: Boolean): Self = StObject.set(x, "RightToLeftPlotOrder", value.asInstanceOf[js.Any])
   }
 }

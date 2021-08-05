@@ -81,8 +81,7 @@ object ColorBrewer {
   }
   object Base {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Accent: EightColorScheme,
       Blues: NineColorScheme,
       BrBG: ElevenColorScheme,
@@ -123,113 +122,77 @@ object ColorBrewer {
       __obj.asInstanceOf[Base]
     }
     
-    @scala.inline
-    implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+    extension [Self <: Base](x: Self) {
       
-      @scala.inline
-      def setAccent(value: EightColorScheme): Self = StObject.set(x, "Accent", value.asInstanceOf[js.Any])
+      inline def setAccent(value: EightColorScheme): Self = StObject.set(x, "Accent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlues(value: NineColorScheme): Self = StObject.set(x, "Blues", value.asInstanceOf[js.Any])
+      inline def setBlues(value: NineColorScheme): Self = StObject.set(x, "Blues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrBG(value: ElevenColorScheme): Self = StObject.set(x, "BrBG", value.asInstanceOf[js.Any])
+      inline def setBrBG(value: ElevenColorScheme): Self = StObject.set(x, "BrBG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuGn(value: NineColorScheme): Self = StObject.set(x, "BuGn", value.asInstanceOf[js.Any])
+      inline def setBuGn(value: NineColorScheme): Self = StObject.set(x, "BuGn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuPu(value: NineColorScheme): Self = StObject.set(x, "BuPu", value.asInstanceOf[js.Any])
+      inline def setBuPu(value: NineColorScheme): Self = StObject.set(x, "BuPu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDark2(value: EightColorScheme): Self = StObject.set(x, "Dark2", value.asInstanceOf[js.Any])
+      inline def setDark2(value: EightColorScheme): Self = StObject.set(x, "Dark2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGnBu(value: NineColorScheme): Self = StObject.set(x, "GnBu", value.asInstanceOf[js.Any])
+      inline def setGnBu(value: NineColorScheme): Self = StObject.set(x, "GnBu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreens(value: NineColorScheme): Self = StObject.set(x, "Greens", value.asInstanceOf[js.Any])
+      inline def setGreens(value: NineColorScheme): Self = StObject.set(x, "Greens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreys(value: NineColorScheme): Self = StObject.set(x, "Greys", value.asInstanceOf[js.Any])
+      inline def setGreys(value: NineColorScheme): Self = StObject.set(x, "Greys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrRd(value: NineColorScheme): Self = StObject.set(x, "OrRd", value.asInstanceOf[js.Any])
+      inline def setOrRd(value: NineColorScheme): Self = StObject.set(x, "OrRd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOranges(value: NineColorScheme): Self = StObject.set(x, "Oranges", value.asInstanceOf[js.Any])
+      inline def setOranges(value: NineColorScheme): Self = StObject.set(x, "Oranges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRGn(value: ElevenColorScheme): Self = StObject.set(x, "PRGn", value.asInstanceOf[js.Any])
+      inline def setPRGn(value: ElevenColorScheme): Self = StObject.set(x, "PRGn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaired(value: TwelveColorScheme): Self = StObject.set(x, "Paired", value.asInstanceOf[js.Any])
+      inline def setPaired(value: TwelveColorScheme): Self = StObject.set(x, "Paired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPastel1(value: NineColorScheme): Self = StObject.set(x, "Pastel1", value.asInstanceOf[js.Any])
+      inline def setPastel1(value: NineColorScheme): Self = StObject.set(x, "Pastel1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPastel2(value: EightColorScheme): Self = StObject.set(x, "Pastel2", value.asInstanceOf[js.Any])
+      inline def setPastel2(value: EightColorScheme): Self = StObject.set(x, "Pastel2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPiYG(value: ElevenColorScheme): Self = StObject.set(x, "PiYG", value.asInstanceOf[js.Any])
+      inline def setPiYG(value: ElevenColorScheme): Self = StObject.set(x, "PiYG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuBu(value: NineColorScheme): Self = StObject.set(x, "PuBu", value.asInstanceOf[js.Any])
+      inline def setPuBu(value: NineColorScheme): Self = StObject.set(x, "PuBu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuBuGn(value: NineColorScheme): Self = StObject.set(x, "PuBuGn", value.asInstanceOf[js.Any])
+      inline def setPuBuGn(value: NineColorScheme): Self = StObject.set(x, "PuBuGn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuOr(value: ElevenColorScheme): Self = StObject.set(x, "PuOr", value.asInstanceOf[js.Any])
+      inline def setPuOr(value: ElevenColorScheme): Self = StObject.set(x, "PuOr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuRd(value: NineColorScheme): Self = StObject.set(x, "PuRd", value.asInstanceOf[js.Any])
+      inline def setPuRd(value: NineColorScheme): Self = StObject.set(x, "PuRd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurples(value: NineColorScheme): Self = StObject.set(x, "Purples", value.asInstanceOf[js.Any])
+      inline def setPurples(value: NineColorScheme): Self = StObject.set(x, "Purples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdBu(value: ElevenColorScheme): Self = StObject.set(x, "RdBu", value.asInstanceOf[js.Any])
+      inline def setRdBu(value: ElevenColorScheme): Self = StObject.set(x, "RdBu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdGy(value: ElevenColorScheme): Self = StObject.set(x, "RdGy", value.asInstanceOf[js.Any])
+      inline def setRdGy(value: ElevenColorScheme): Self = StObject.set(x, "RdGy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdPu(value: NineColorScheme): Self = StObject.set(x, "RdPu", value.asInstanceOf[js.Any])
+      inline def setRdPu(value: NineColorScheme): Self = StObject.set(x, "RdPu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdYlBu(value: ElevenColorScheme): Self = StObject.set(x, "RdYlBu", value.asInstanceOf[js.Any])
+      inline def setRdYlBu(value: ElevenColorScheme): Self = StObject.set(x, "RdYlBu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdYlGn(value: ElevenColorScheme): Self = StObject.set(x, "RdYlGn", value.asInstanceOf[js.Any])
+      inline def setRdYlGn(value: ElevenColorScheme): Self = StObject.set(x, "RdYlGn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReds(value: NineColorScheme): Self = StObject.set(x, "Reds", value.asInstanceOf[js.Any])
+      inline def setReds(value: NineColorScheme): Self = StObject.set(x, "Reds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet1(value: NineColorScheme): Self = StObject.set(x, "Set1", value.asInstanceOf[js.Any])
+      inline def setSet1(value: NineColorScheme): Self = StObject.set(x, "Set1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet2(value: EightColorScheme): Self = StObject.set(x, "Set2", value.asInstanceOf[js.Any])
+      inline def setSet2(value: EightColorScheme): Self = StObject.set(x, "Set2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet3(value: TwelveColorScheme): Self = StObject.set(x, "Set3", value.asInstanceOf[js.Any])
+      inline def setSet3(value: TwelveColorScheme): Self = StObject.set(x, "Set3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpectral(value: ElevenColorScheme): Self = StObject.set(x, "Spectral", value.asInstanceOf[js.Any])
+      inline def setSpectral(value: ElevenColorScheme): Self = StObject.set(x, "Spectral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYlGn(value: NineColorScheme): Self = StObject.set(x, "YlGn", value.asInstanceOf[js.Any])
+      inline def setYlGn(value: NineColorScheme): Self = StObject.set(x, "YlGn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYlGnBu(value: NineColorScheme): Self = StObject.set(x, "YlGnBu", value.asInstanceOf[js.Any])
+      inline def setYlGnBu(value: NineColorScheme): Self = StObject.set(x, "YlGnBu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYlOrBr(value: NineColorScheme): Self = StObject.set(x, "YlOrBr", value.asInstanceOf[js.Any])
+      inline def setYlOrBr(value: NineColorScheme): Self = StObject.set(x, "YlOrBr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYlOrRd(value: NineColorScheme): Self = StObject.set(x, "YlOrRd", value.asInstanceOf[js.Any])
+      inline def setYlOrRd(value: NineColorScheme): Self = StObject.set(x, "YlOrRd", value.asInstanceOf[js.Any])
     }
   }
   
@@ -253,8 +216,7 @@ object ColorBrewer {
   }
   object EightColorScheme {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `3`: js.Tuple3[String, String, String],
       `4`: js.Tuple4[String, String, String, String],
       `5`: js.Tuple5[String, String, String, String, String],
@@ -272,26 +234,19 @@ object ColorBrewer {
       __obj.asInstanceOf[EightColorScheme]
     }
     
-    @scala.inline
-    implicit class EightColorSchemeMutableBuilder[Self <: EightColorScheme] (val x: Self) extends AnyVal {
+    extension [Self <: EightColorScheme](x: Self) {
       
-      @scala.inline
-      def set3(value: js.Tuple3[String, String, String]): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+      inline def set3(value: js.Tuple3[String, String, String]): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4(value: js.Tuple4[String, String, String, String]): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+      inline def set4(value: js.Tuple4[String, String, String, String]): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5(value: js.Tuple5[String, String, String, String, String]): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+      inline def set5(value: js.Tuple5[String, String, String, String, String]): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set6(value: js.Tuple6[String, String, String, String, String, String]): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+      inline def set6(value: js.Tuple6[String, String, String, String, String, String]): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set7(value: js.Tuple7[String, String, String, String, String, String, String]): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
+      inline def set7(value: js.Tuple7[String, String, String, String, String, String, String]): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set8(value: js.Tuple8[String, String, String, String, String, String, String, String]): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
+      inline def set8(value: js.Tuple8[String, String, String, String, String, String, String, String]): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
     }
   }
   
@@ -305,8 +260,7 @@ object ColorBrewer {
   }
   object ElevenColorScheme {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `10`: js.Tuple10[String, String, String, String, String, String, String, String, String, String],
       `11`: js.Tuple11[String, String, String, String, String, String, String, String, String, String, String],
       `3`: js.Tuple3[String, String, String],
@@ -330,14 +284,11 @@ object ColorBrewer {
       __obj.asInstanceOf[ElevenColorScheme]
     }
     
-    @scala.inline
-    implicit class ElevenColorSchemeMutableBuilder[Self <: ElevenColorScheme] (val x: Self) extends AnyVal {
+    extension [Self <: ElevenColorScheme](x: Self) {
       
-      @scala.inline
-      def set10(value: js.Tuple10[String, String, String, String, String, String, String, String, String, String]): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
+      inline def set10(value: js.Tuple10[String, String, String, String, String, String, String, String, String, String]): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set11(
+      inline def set11(
         value: js.Tuple11[String, String, String, String, String, String, String, String, String, String, String]
       ): Self = StObject.set(x, "11", value.asInstanceOf[js.Any])
     }
@@ -351,8 +302,7 @@ object ColorBrewer {
   }
   object NineColorScheme {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `3`: js.Tuple3[String, String, String],
       `4`: js.Tuple4[String, String, String, String],
       `5`: js.Tuple5[String, String, String, String, String],
@@ -372,11 +322,9 @@ object ColorBrewer {
       __obj.asInstanceOf[NineColorScheme]
     }
     
-    @scala.inline
-    implicit class NineColorSchemeMutableBuilder[Self <: NineColorScheme] (val x: Self) extends AnyVal {
+    extension [Self <: NineColorScheme](x: Self) {
       
-      @scala.inline
-      def set9(value: js.Tuple9[String, String, String, String, String, String, String, String, String]): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
+      inline def set9(value: js.Tuple9[String, String, String, String, String, String, String, String, String]): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
     }
   }
   
@@ -388,8 +336,7 @@ object ColorBrewer {
   }
   object TwelveColorScheme {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `10`: js.Tuple10[String, String, String, String, String, String, String, String, String, String],
       `11`: js.Tuple11[String, String, String, String, String, String, String, String, String, String, String],
       `12`: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String],
@@ -415,11 +362,9 @@ object ColorBrewer {
       __obj.asInstanceOf[TwelveColorScheme]
     }
     
-    @scala.inline
-    implicit class TwelveColorSchemeMutableBuilder[Self <: TwelveColorScheme] (val x: Self) extends AnyVal {
+    extension [Self <: TwelveColorScheme](x: Self) {
       
-      @scala.inline
-      def set12(
+      inline def set12(
         value: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
       ): Self = StObject.set(x, "12", value.asInstanceOf[js.Any])
     }

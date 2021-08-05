@@ -14,13 +14,13 @@ object iframesManagerIframesManagerMod {
   @js.native
   class IframesManager () extends StObject {
     
-    val _iframeMap: js.Any = js.native
+    /* private */ val _iframeMap: js.Any = js.native
     
     def addIframe(hasApiKeyLangClientId: ApiKey): Window = js.native
     
-    var createGoogleMapsScript: js.Any = js.native
+    /* private */ var createGoogleMapsScript: js.Any = js.native
     
-    var createInitializationScript: js.Any = js.native
+    /* private */ var createInitializationScript: js.Any = js.native
     
     def getIframe(key: String, lang: String): Window = js.native
     
@@ -37,13 +37,11 @@ object iframesManagerIframesManagerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def generateUrl(hasApiKeyClientIdLang: ClientId): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUrl")(hasApiKeyClientIdLang.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def generateUrl(hasApiKeyClientIdLang: ClientId): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUrl")(hasApiKeyClientIdLang.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("wix-ui-core/dist/standalone/src/clients/GoogleMaps/IframesManager/IframesManager", "IframesManager.getKey")
     @js.native
     def getKey: js.Any = js.native
-    @scala.inline
-    def getKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getKey")(x.asInstanceOf[js.Any])
+    inline def getKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getKey")(x.asInstanceOf[js.Any])
   }
 }

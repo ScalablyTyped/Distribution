@@ -12,8 +12,7 @@ trait Checked extends StObject {
 }
 object Checked {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checked: js.Array[typings.rcTree.interfaceMod.Key],
     halfChecked: js.Array[typings.rcTree.interfaceMod.Key]
   ): Checked = {
@@ -21,19 +20,14 @@ object Checked {
     __obj.asInstanceOf[Checked]
   }
   
-  @scala.inline
-  implicit class CheckedMutableBuilder[Self <: Checked] (val x: Self) extends AnyVal {
+  extension [Self <: Checked](x: Self) {
     
-    @scala.inline
-    def setChecked(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "checked", js.Array(value :_*))
+    inline def setCheckedVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "checked", js.Array(value :_*))
     
-    @scala.inline
-    def setHalfChecked(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "halfChecked", value.asInstanceOf[js.Any])
+    inline def setHalfChecked(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "halfChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHalfCheckedVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "halfChecked", js.Array(value :_*))
+    inline def setHalfCheckedVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "halfChecked", js.Array(value :_*))
   }
 }

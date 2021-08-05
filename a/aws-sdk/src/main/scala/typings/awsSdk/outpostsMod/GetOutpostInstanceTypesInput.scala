@@ -14,28 +14,21 @@ trait GetOutpostInstanceTypesInput extends StObject {
 }
 object GetOutpostInstanceTypesInput {
   
-  @scala.inline
-  def apply(OutpostId: OutpostId): GetOutpostInstanceTypesInput = {
+  inline def apply(OutpostId: OutpostId): GetOutpostInstanceTypesInput = {
     val __obj = js.Dynamic.literal(OutpostId = OutpostId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOutpostInstanceTypesInput]
   }
   
-  @scala.inline
-  implicit class GetOutpostInstanceTypesInputMutableBuilder[Self <: GetOutpostInstanceTypesInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetOutpostInstanceTypesInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults1000): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults1000): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
+    inline def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
   }
 }

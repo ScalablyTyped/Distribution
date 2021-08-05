@@ -38,49 +38,35 @@ trait ContainerServicePower extends StObject {
 }
 object ContainerServicePower {
   
-  @scala.inline
-  def apply(): ContainerServicePower = {
+  inline def apply(): ContainerServicePower = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerServicePower]
   }
   
-  @scala.inline
-  implicit class ContainerServicePowerMutableBuilder[Self <: ContainerServicePower] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerServicePower](x: Self) {
     
-    @scala.inline
-    def setCpuCount(value: float): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
+    inline def setCpuCount(value: float): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuCountUndefined: Self = StObject.set(x, "cpuCount", js.undefined)
+    inline def setCpuCountUndefined: Self = StObject.set(x, "cpuCount", js.undefined)
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+    inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPowerId(value: String): Self = StObject.set(x, "powerId", value.asInstanceOf[js.Any])
+    inline def setPowerId(value: String): Self = StObject.set(x, "powerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerIdUndefined: Self = StObject.set(x, "powerId", js.undefined)
+    inline def setPowerIdUndefined: Self = StObject.set(x, "powerId", js.undefined)
     
-    @scala.inline
-    def setPrice(value: float): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: float): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
+    inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
-    @scala.inline
-    def setRamSizeInGb(value: float): Self = StObject.set(x, "ramSizeInGb", value.asInstanceOf[js.Any])
+    inline def setRamSizeInGb(value: float): Self = StObject.set(x, "ramSizeInGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRamSizeInGbUndefined: Self = StObject.set(x, "ramSizeInGb", js.undefined)
+    inline def setRamSizeInGbUndefined: Self = StObject.set(x, "ramSizeInGb", js.undefined)
   }
 }

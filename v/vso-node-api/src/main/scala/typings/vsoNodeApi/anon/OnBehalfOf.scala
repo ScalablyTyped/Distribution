@@ -12,19 +12,15 @@ trait OnBehalfOf extends StObject {
 }
 object OnBehalfOf {
   
-  @scala.inline
-  def apply(onBehalfOf: scala.Double, revalidateApproverIdentity: scala.Double): OnBehalfOf = {
+  inline def apply(onBehalfOf: scala.Double, revalidateApproverIdentity: scala.Double): OnBehalfOf = {
     val __obj = js.Dynamic.literal(onBehalfOf = onBehalfOf.asInstanceOf[js.Any], revalidateApproverIdentity = revalidateApproverIdentity.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBehalfOf]
   }
   
-  @scala.inline
-  implicit class OnBehalfOfMutableBuilder[Self <: OnBehalfOf] (val x: Self) extends AnyVal {
+  extension [Self <: OnBehalfOf](x: Self) {
     
-    @scala.inline
-    def setOnBehalfOf(value: scala.Double): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOf(value: scala.Double): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevalidateApproverIdentity(value: scala.Double): Self = StObject.set(x, "revalidateApproverIdentity", value.asInstanceOf[js.Any])
+    inline def setRevalidateApproverIdentity(value: scala.Double): Self = StObject.set(x, "revalidateApproverIdentity", value.asInstanceOf[js.Any])
   }
 }

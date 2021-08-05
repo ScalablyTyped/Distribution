@@ -24,15 +24,15 @@ object distMod {
     def this(iterable: Iterable[T], equaler: Equaler[T]) = this()
     def this(iterable: Iterable[T], equaler: EqualityComparison[T]) = this()
     
-    var _deleteNode: js.Any = js.native
+    /* private */ var _deleteNode: js.Any = js.native
     
-    var _equaler: js.Any = js.native
+    /* private */ var _equaler: js.Any = js.native
     
-    var _head: js.Any = js.native
+    /* private */ var _head: js.Any = js.native
     
-    var _insertNode: js.Any = js.native
+    /* private */ var _insertNode: js.Any = js.native
     
-    var _size: js.Any = js.native
+    /* private */ var _size: js.Any = js.native
     
     def clear(): Unit = js.native
     

@@ -13,22 +13,17 @@ trait ContactUpdateResponse extends StObject {
 }
 object ContactUpdateResponse {
   
-  @scala.inline
-  def apply(): ContactUpdateResponse = {
+  inline def apply(): ContactUpdateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContactUpdateResponse]
   }
   
-  @scala.inline
-  implicit class ContactUpdateResponseMutableBuilder[Self <: ContactUpdateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ContactUpdateResponse](x: Self) {
     
-    @scala.inline
-    def setContacts(value: js.Array[Contact]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
+    inline def setContacts(value: js.Array[Contact]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactsUndefined: Self = StObject.set(x, "contacts", js.undefined)
+    inline def setContactsUndefined: Self = StObject.set(x, "contacts", js.undefined)
     
-    @scala.inline
-    def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value :_*))
+    inline def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value :_*))
   }
 }

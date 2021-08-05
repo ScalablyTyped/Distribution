@@ -14,8 +14,7 @@ object dateBodyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[DateType](props: DateBodyProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[DateType](props: DateBodyProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait DateBodyPassProps[DateType] extends StObject {
     
@@ -29,38 +28,28 @@ object dateBodyMod {
   }
   object DateBodyPassProps {
     
-    @scala.inline
-    def apply[DateType](): DateBodyPassProps[DateType] = {
+    inline def apply[DateType](): DateBodyPassProps[DateType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateBodyPassProps[DateType]]
     }
     
-    @scala.inline
-    implicit class DateBodyPassPropsMutableBuilder[Self <: DateBodyPassProps[?], DateType] (val x: Self & DateBodyPassProps[DateType]) extends AnyVal {
+    extension [Self <: DateBodyPassProps[?], DateType](x: Self & DateBodyPassProps[DateType]) {
       
-      @scala.inline
-      def setDateRender(value: (DateType, DateType) => ReactNode): Self = StObject.set(x, "dateRender", js.Any.fromFunction2(value))
+      inline def setDateRender(value: (DateType, DateType) => ReactNode): Self = StObject.set(x, "dateRender", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDateRenderUndefined: Self = StObject.set(x, "dateRender", js.undefined)
+      inline def setDateRenderUndefined: Self = StObject.set(x, "dateRender", js.undefined)
       
-      @scala.inline
-      def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
+      inline def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
+      inline def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
       
-      @scala.inline
-      def setPrefixColumn(value: /* date */ DateType => ReactNode): Self = StObject.set(x, "prefixColumn", js.Any.fromFunction1(value))
+      inline def setPrefixColumn(value: /* date */ DateType => ReactNode): Self = StObject.set(x, "prefixColumn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrefixColumnUndefined: Self = StObject.set(x, "prefixColumn", js.undefined)
+      inline def setPrefixColumnUndefined: Self = StObject.set(x, "prefixColumn", js.undefined)
       
-      @scala.inline
-      def setRowClassName(value: /* date */ DateType => String): Self = StObject.set(x, "rowClassName", js.Any.fromFunction1(value))
+      inline def setRowClassName(value: /* date */ DateType => String): Self = StObject.set(x, "rowClassName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRowClassNameUndefined: Self = StObject.set(x, "rowClassName", js.undefined)
+      inline def setRowClassNameUndefined: Self = StObject.set(x, "rowClassName", js.undefined)
     }
   }
   
@@ -84,8 +73,7 @@ object dateBodyMod {
   }
   object DateBodyProps {
     
-    @scala.inline
-    def apply[DateType](
+    inline def apply[DateType](
       generateConfig: GenerateConfig[DateType],
       locale: Locale,
       onSelect: DateType => Unit,
@@ -97,35 +85,25 @@ object dateBodyMod {
       __obj.asInstanceOf[DateBodyProps[DateType]]
     }
     
-    @scala.inline
-    implicit class DateBodyPropsMutableBuilder[Self <: DateBodyProps[?], DateType] (val x: Self & DateBodyProps[DateType]) extends AnyVal {
+    extension [Self <: DateBodyProps[?], DateType](x: Self & DateBodyProps[DateType]) {
       
-      @scala.inline
-      def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSelect(value: DateType => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: DateType => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+      inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: DateType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: DateType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setViewDate(value: DateType): Self = StObject.set(x, "viewDate", value.asInstanceOf[js.Any])
+      inline def setViewDate(value: DateType): Self = StObject.set(x, "viewDate", value.asInstanceOf[js.Any])
     }
   }
   

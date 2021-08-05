@@ -15,20 +15,16 @@ object commonPropsMod {
   }
   object AutoFocus {
     
-    @scala.inline
-    def apply(): AutoFocus = {
+    inline def apply(): AutoFocus = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoFocus]
     }
     
-    @scala.inline
-    implicit class AutoFocusMutableBuilder[Self <: AutoFocus] (val x: Self) extends AnyVal {
+    extension [Self <: AutoFocus](x: Self) {
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     }
   }
   
@@ -44,20 +40,16 @@ object commonPropsMod {
   }
   object ReactWidgetsCommonDropdownProps {
     
-    @scala.inline
-    def apply(): ReactWidgetsCommonDropdownProps = {
+    inline def apply(): ReactWidgetsCommonDropdownProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactWidgetsCommonDropdownProps]
     }
     
-    @scala.inline
-    implicit class ReactWidgetsCommonDropdownPropsMutableBuilder[Self <: ReactWidgetsCommonDropdownProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactWidgetsCommonDropdownProps](x: Self) {
       
-      @scala.inline
-      def setDropUp(value: Boolean): Self = StObject.set(x, "dropUp", value.asInstanceOf[js.Any])
+      inline def setDropUp(value: Boolean): Self = StObject.set(x, "dropUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropUpUndefined: Self = StObject.set(x, "dropUp", js.undefined)
+      inline def setDropUpUndefined: Self = StObject.set(x, "dropUp", js.undefined)
     }
   }
   
@@ -91,44 +83,32 @@ object commonPropsMod {
   }
   object ReactWidgetsCommonProps {
     
-    @scala.inline
-    def apply(): ReactWidgetsCommonProps = {
+    inline def apply(): ReactWidgetsCommonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactWidgetsCommonProps]
     }
     
-    @scala.inline
-    implicit class ReactWidgetsCommonPropsMutableBuilder[Self <: ReactWidgetsCommonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactWidgetsCommonProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDisabledVarargs(value: js.Any*): Self = StObject.set(x, "disabled", js.Array(value :_*))
+      inline def setDisabledVarargs(value: js.Any*): Self = StObject.set(x, "disabled", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIsRtl(value: Boolean): Self = StObject.set(x, "isRtl", value.asInstanceOf[js.Any])
+      inline def setIsRtl(value: Boolean): Self = StObject.set(x, "isRtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRtlUndefined: Self = StObject.set(x, "isRtl", js.undefined)
+      inline def setIsRtlUndefined: Self = StObject.set(x, "isRtl", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setReadOnlyVarargs(value: js.Any*): Self = StObject.set(x, "readOnly", js.Array(value :_*))
+      inline def setReadOnlyVarargs(value: js.Any*): Self = StObject.set(x, "readOnly", js.Array(value :_*))
     }
   }
 }

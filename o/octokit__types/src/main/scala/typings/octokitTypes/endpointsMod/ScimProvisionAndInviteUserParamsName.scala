@@ -12,19 +12,15 @@ trait ScimProvisionAndInviteUserParamsName extends StObject {
 }
 object ScimProvisionAndInviteUserParamsName {
   
-  @scala.inline
-  def apply(familyName: String, givenName: String): ScimProvisionAndInviteUserParamsName = {
+  inline def apply(familyName: String, givenName: String): ScimProvisionAndInviteUserParamsName = {
     val __obj = js.Dynamic.literal(familyName = familyName.asInstanceOf[js.Any], givenName = givenName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScimProvisionAndInviteUserParamsName]
   }
   
-  @scala.inline
-  implicit class ScimProvisionAndInviteUserParamsNameMutableBuilder[Self <: ScimProvisionAndInviteUserParamsName] (val x: Self) extends AnyVal {
+  extension [Self <: ScimProvisionAndInviteUserParamsName](x: Self) {
     
-    @scala.inline
-    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+    inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+    inline def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
   }
 }

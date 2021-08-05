@@ -38,23 +38,18 @@ object timezonepickerMod {
   }
   object Timezone {
     
-    @scala.inline
-    def apply(id: String, label: String, offset: Double): Timezone = {
+    inline def apply(id: String, label: String, offset: Double): Timezone = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Timezone]
     }
     
-    @scala.inline
-    implicit class TimezoneMutableBuilder[Self <: Timezone] (val x: Self) extends AnyVal {
+    extension [Self <: Timezone](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,22 +61,18 @@ object timezonepickerMod {
   }
   object TimezoneOverrides {
     
-    @scala.inline
-    def apply(): TimezoneOverrides = {
+    inline def apply(): TimezoneOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimezoneOverrides]
     }
     
-    @scala.inline
-    implicit class TimezoneOverridesMutableBuilder[Self <: TimezoneOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: TimezoneOverrides](x: Self) {
       
-      @scala.inline
-      def setSelect(
+      inline def setSelect(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "Select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "Select", js.undefined)
     }
   }
   
@@ -107,68 +98,48 @@ object timezonepickerMod {
   }
   object TimezonePickerProps {
     
-    @scala.inline
-    def apply(): TimezonePickerProps = {
+    inline def apply(): TimezonePickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimezonePickerProps]
     }
     
-    @scala.inline
-    implicit class TimezonePickerPropsMutableBuilder[Self <: TimezonePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: TimezonePickerProps](x: Self) {
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setMapLabels(value: /* args */ Option => ReactNode): Self = StObject.set(x, "mapLabels", js.Any.fromFunction1(value))
+      inline def setMapLabels(value: /* args */ Option => ReactNode): Self = StObject.set(x, "mapLabels", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapLabelsUndefined: Self = StObject.set(x, "mapLabels", js.undefined)
+      inline def setMapLabelsUndefined: Self = StObject.set(x, "mapLabels", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* value */ Timezone => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ Timezone => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: TimezoneOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: TimezoneOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setPositive(value: Boolean): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
+      inline def setPositive(value: Boolean): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositiveUndefined: Self = StObject.set(x, "positive", js.undefined)
+      inline def setPositiveUndefined: Self = StObject.set(x, "positive", js.undefined)
       
-      @scala.inline
-      def setSize(value: mini | default_ | compact | large_): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: mini | default_ | compact | large_): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -180,26 +151,20 @@ object timezonepickerMod {
   }
   object TimezonePickerState {
     
-    @scala.inline
-    def apply(timezones: js.Array[Option]): TimezonePickerState = {
+    inline def apply(timezones: js.Array[Option]): TimezonePickerState = {
       val __obj = js.Dynamic.literal(timezones = timezones.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimezonePickerState]
     }
     
-    @scala.inline
-    implicit class TimezonePickerStateMutableBuilder[Self <: TimezonePickerState] (val x: Self) extends AnyVal {
+    extension [Self <: TimezonePickerState](x: Self) {
       
-      @scala.inline
-      def setTimezones(value: js.Array[Option]): Self = StObject.set(x, "timezones", value.asInstanceOf[js.Any])
+      inline def setTimezones(value: js.Array[Option]): Self = StObject.set(x, "timezones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezonesVarargs(value: Option*): Self = StObject.set(x, "timezones", js.Array(value :_*))
+      inline def setTimezonesVarargs(value: Option*): Self = StObject.set(x, "timezones", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

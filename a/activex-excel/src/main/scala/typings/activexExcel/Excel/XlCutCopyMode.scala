@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCutCopyMode extends StObject
 object XlCutCopyMode {
   
-  @scala.inline
-  def xlCopy: `1` = 1.asInstanceOf[`1`]
+  inline def xlCopy: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlCut: `2` = 2.asInstanceOf[`2`]
+  inline def xlCut: `2` = 2.asInstanceOf[`2`]
 }

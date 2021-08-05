@@ -20,19 +20,15 @@ trait IColumnDragDropDetails extends StObject {
 }
 object IColumnDragDropDetails {
   
-  @scala.inline
-  def apply(draggedIndex: Double, targetIndex: Double): IColumnDragDropDetails = {
+  inline def apply(draggedIndex: Double, targetIndex: Double): IColumnDragDropDetails = {
     val __obj = js.Dynamic.literal(draggedIndex = draggedIndex.asInstanceOf[js.Any], targetIndex = targetIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnDragDropDetails]
   }
   
-  @scala.inline
-  implicit class IColumnDragDropDetailsMutableBuilder[Self <: IColumnDragDropDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IColumnDragDropDetails](x: Self) {
     
-    @scala.inline
-    def setDraggedIndex(value: Double): Self = StObject.set(x, "draggedIndex", value.asInstanceOf[js.Any])
+    inline def setDraggedIndex(value: Double): Self = StObject.set(x, "draggedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIndex(value: Double): Self = StObject.set(x, "targetIndex", value.asInstanceOf[js.Any])
+    inline def setTargetIndex(value: Double): Self = StObject.set(x, "targetIndex", value.asInstanceOf[js.Any])
   }
 }

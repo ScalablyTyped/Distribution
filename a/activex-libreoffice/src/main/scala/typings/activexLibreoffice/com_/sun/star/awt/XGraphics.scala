@@ -163,8 +163,7 @@ trait XGraphics
 }
 object XGraphics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Device: XDevice,
     FontMetric: SimpleFontMetric,
     acquire: () => Unit,
@@ -204,100 +203,68 @@ object XGraphics {
     __obj.asInstanceOf[XGraphics]
   }
   
-  @scala.inline
-  implicit class XGraphicsMutableBuilder[Self <: XGraphics] (val x: Self) extends AnyVal {
+  extension [Self <: XGraphics](x: Self) {
     
-    @scala.inline
-    def setCopy(value: (XDevice, Double, Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction9(value))
+    inline def setCopy(value: (XDevice, Double, Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction9(value))
     
-    @scala.inline
-    def setDevice(value: XDevice): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: XDevice): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraw(value: (XDisplayBitmap, Double, Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction9(value))
+    inline def setDraw(value: (XDisplayBitmap, Double, Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction9(value))
     
-    @scala.inline
-    def setDrawArc(value: (Double, Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawArc", js.Any.fromFunction8(value))
+    inline def setDrawArc(value: (Double, Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawArc", js.Any.fromFunction8(value))
     
-    @scala.inline
-    def setDrawChord(value: (Double, Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawChord", js.Any.fromFunction8(value))
+    inline def setDrawChord(value: (Double, Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawChord", js.Any.fromFunction8(value))
     
-    @scala.inline
-    def setDrawEllipse(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawEllipse", js.Any.fromFunction4(value))
+    inline def setDrawEllipse(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawEllipse", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDrawGradient(value: (Double, Double, Double, Double, Gradient) => Unit): Self = StObject.set(x, "drawGradient", js.Any.fromFunction5(value))
+    inline def setDrawGradient(value: (Double, Double, Double, Double, Gradient) => Unit): Self = StObject.set(x, "drawGradient", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setDrawLine(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawLine", js.Any.fromFunction4(value))
+    inline def setDrawLine(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawLine", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDrawPie(value: (Double, Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawPie", js.Any.fromFunction8(value))
+    inline def setDrawPie(value: (Double, Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawPie", js.Any.fromFunction8(value))
     
-    @scala.inline
-    def setDrawPixel(value: (Double, Double) => Unit): Self = StObject.set(x, "drawPixel", js.Any.fromFunction2(value))
+    inline def setDrawPixel(value: (Double, Double) => Unit): Self = StObject.set(x, "drawPixel", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDrawPolyLine(value: (SeqEquiv[Double], SeqEquiv[Double]) => Unit): Self = StObject.set(x, "drawPolyLine", js.Any.fromFunction2(value))
+    inline def setDrawPolyLine(value: (SeqEquiv[Double], SeqEquiv[Double]) => Unit): Self = StObject.set(x, "drawPolyLine", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDrawPolyPolygon(value: (SeqEquiv[SeqEquiv[Double]], SeqEquiv[SeqEquiv[Double]]) => Unit): Self = StObject.set(x, "drawPolyPolygon", js.Any.fromFunction2(value))
+    inline def setDrawPolyPolygon(value: (SeqEquiv[SeqEquiv[Double]], SeqEquiv[SeqEquiv[Double]]) => Unit): Self = StObject.set(x, "drawPolyPolygon", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDrawPolygon(value: (SeqEquiv[Double], SeqEquiv[Double]) => Unit): Self = StObject.set(x, "drawPolygon", js.Any.fromFunction2(value))
+    inline def setDrawPolygon(value: (SeqEquiv[Double], SeqEquiv[Double]) => Unit): Self = StObject.set(x, "drawPolygon", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDrawRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawRect", js.Any.fromFunction4(value))
+    inline def setDrawRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawRect", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDrawRoundedRect(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawRoundedRect", js.Any.fromFunction6(value))
+    inline def setDrawRoundedRect(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "drawRoundedRect", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setDrawText(value: (Double, Double, String) => Unit): Self = StObject.set(x, "drawText", js.Any.fromFunction3(value))
+    inline def setDrawText(value: (Double, Double, String) => Unit): Self = StObject.set(x, "drawText", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDrawTextArray(value: (Double, Double, String, SeqEquiv[Double]) => Unit): Self = StObject.set(x, "drawTextArray", js.Any.fromFunction4(value))
+    inline def setDrawTextArray(value: (Double, Double, String, SeqEquiv[Double]) => Unit): Self = StObject.set(x, "drawTextArray", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFontMetric(value: SimpleFontMetric): Self = StObject.set(x, "FontMetric", value.asInstanceOf[js.Any])
+    inline def setFontMetric(value: SimpleFontMetric): Self = StObject.set(x, "FontMetric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDevice(value: () => XDevice): Self = StObject.set(x, "getDevice", js.Any.fromFunction0(value))
+    inline def setGetDevice(value: () => XDevice): Self = StObject.set(x, "getDevice", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFontMetric(value: () => SimpleFontMetric): Self = StObject.set(x, "getFontMetric", js.Any.fromFunction0(value))
+    inline def setGetFontMetric(value: () => SimpleFontMetric): Self = StObject.set(x, "getFontMetric", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIntersectClipRegion(value: XRegion => Unit): Self = StObject.set(x, "intersectClipRegion", js.Any.fromFunction1(value))
+    inline def setIntersectClipRegion(value: XRegion => Unit): Self = StObject.set(x, "intersectClipRegion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+    inline def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPush(value: () => Unit): Self = StObject.set(x, "push", js.Any.fromFunction0(value))
+    inline def setPush(value: () => Unit): Self = StObject.set(x, "push", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectFont(value: FontDescriptor => Unit): Self = StObject.set(x, "selectFont", js.Any.fromFunction1(value))
+    inline def setSelectFont(value: FontDescriptor => Unit): Self = StObject.set(x, "selectFont", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetClipRegion(value: XRegion => Unit): Self = StObject.set(x, "setClipRegion", js.Any.fromFunction1(value))
+    inline def setSetClipRegion(value: XRegion => Unit): Self = StObject.set(x, "setClipRegion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFillColor(value: Color => Unit): Self = StObject.set(x, "setFillColor", js.Any.fromFunction1(value))
+    inline def setSetFillColor(value: Color => Unit): Self = StObject.set(x, "setFillColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFont(value: XFont => Unit): Self = StObject.set(x, "setFont", js.Any.fromFunction1(value))
+    inline def setSetFont(value: XFont => Unit): Self = StObject.set(x, "setFont", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLineColor(value: Color => Unit): Self = StObject.set(x, "setLineColor", js.Any.fromFunction1(value))
+    inline def setSetLineColor(value: Color => Unit): Self = StObject.set(x, "setLineColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRasterOp(value: RasterOperation => Unit): Self = StObject.set(x, "setRasterOp", js.Any.fromFunction1(value))
+    inline def setSetRasterOp(value: RasterOperation => Unit): Self = StObject.set(x, "setRasterOp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTextColor(value: Color => Unit): Self = StObject.set(x, "setTextColor", js.Any.fromFunction1(value))
+    inline def setSetTextColor(value: Color => Unit): Self = StObject.set(x, "setTextColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTextFillColor(value: Color => Unit): Self = StObject.set(x, "setTextFillColor", js.Any.fromFunction1(value))
+    inline def setSetTextFillColor(value: Color => Unit): Self = StObject.set(x, "setTextFillColor", js.Any.fromFunction1(value))
   }
 }

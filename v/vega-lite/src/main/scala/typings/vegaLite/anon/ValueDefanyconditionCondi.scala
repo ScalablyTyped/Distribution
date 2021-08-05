@@ -18,22 +18,17 @@ trait ValueDefanyconditionCondi extends StObject {
 }
 object ValueDefanyconditionCondi {
   
-  @scala.inline
-  def apply(condition: Conditional[ValueDef[js.Any]] | js.Array[Conditional[ValueDef[js.Any]]], value: js.Any): ValueDefanyconditionCondi = {
+  inline def apply(condition: Conditional[ValueDef[js.Any]] | js.Array[Conditional[ValueDef[js.Any]]], value: js.Any): ValueDefanyconditionCondi = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueDefanyconditionCondi]
   }
   
-  @scala.inline
-  implicit class ValueDefanyconditionCondiMutableBuilder[Self <: ValueDefanyconditionCondi] (val x: Self) extends AnyVal {
+  extension [Self <: ValueDefanyconditionCondi](x: Self) {
     
-    @scala.inline
-    def setCondition(value: Conditional[ValueDef[js.Any]] | js.Array[Conditional[ValueDef[js.Any]]]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Conditional[ValueDef[js.Any]] | js.Array[Conditional[ValueDef[js.Any]]]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionVarargs(value: Conditional[ValueDef[js.Any]]*): Self = StObject.set(x, "condition", js.Array(value :_*))
+    inline def setConditionVarargs(value: Conditional[ValueDef[js.Any]]*): Self = StObject.set(x, "condition", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

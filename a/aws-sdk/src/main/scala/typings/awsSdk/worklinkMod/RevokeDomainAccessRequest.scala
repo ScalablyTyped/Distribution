@@ -18,19 +18,15 @@ trait RevokeDomainAccessRequest extends StObject {
 }
 object RevokeDomainAccessRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName, FleetArn: FleetArn): RevokeDomainAccessRequest = {
+  inline def apply(DomainName: DomainName, FleetArn: FleetArn): RevokeDomainAccessRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], FleetArn = FleetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeDomainAccessRequest]
   }
   
-  @scala.inline
-  implicit class RevokeDomainAccessRequestMutableBuilder[Self <: RevokeDomainAccessRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeDomainAccessRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
   }
 }

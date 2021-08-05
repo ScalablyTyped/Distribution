@@ -33,8 +33,7 @@ trait AreaMeasurement2DViewModelMeasurement
 }
 object AreaMeasurement2DViewModelMeasurement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     area: Double,
     constructor: js.Function,
     geometry: js.Any,
@@ -46,16 +45,12 @@ object AreaMeasurement2DViewModelMeasurement {
     __obj.asInstanceOf[AreaMeasurement2DViewModelMeasurement]
   }
   
-  @scala.inline
-  implicit class AreaMeasurement2DViewModelMeasurementMutableBuilder[Self <: AreaMeasurement2DViewModelMeasurement] (val x: Self) extends AnyVal {
+  extension [Self <: AreaMeasurement2DViewModelMeasurement](x: Self) {
     
-    @scala.inline
-    def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: js.Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: js.Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerimeter(value: Double): Self = StObject.set(x, "perimeter", value.asInstanceOf[js.Any])
+    inline def setPerimeter(value: Double): Self = StObject.set(x, "perimeter", value.asInstanceOf[js.Any])
   }
 }

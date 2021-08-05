@@ -26,20 +26,16 @@ object errorsMod {
   }
   object ErrorsProps {
     
-    @scala.inline
-    def apply(errors: js.Array[SupportedErrorEvent]): ErrorsProps = {
+    inline def apply(errors: js.Array[SupportedErrorEvent]): ErrorsProps = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorsProps]
     }
     
-    @scala.inline
-    implicit class ErrorsPropsMutableBuilder[Self <: ErrorsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorsProps](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[SupportedErrorEvent]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[SupportedErrorEvent]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: SupportedErrorEvent*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: SupportedErrorEvent*): Self = StObject.set(x, "errors", js.Array(value :_*))
     }
   }
   
@@ -55,29 +51,22 @@ object errorsMod {
   }
   object ReadyRuntimeError {
     
-    @scala.inline
-    def apply(error: Error, frames: js.Array[OriginalStackFrame], id: Double): ReadyRuntimeError = {
+    inline def apply(error: Error, frames: js.Array[OriginalStackFrame], id: Double): ReadyRuntimeError = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], runtime = true)
       __obj.asInstanceOf[ReadyRuntimeError]
     }
     
-    @scala.inline
-    implicit class ReadyRuntimeErrorMutableBuilder[Self <: ReadyRuntimeError] (val x: Self) extends AnyVal {
+    extension [Self <: ReadyRuntimeError](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrames(value: js.Array[OriginalStackFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: js.Array[OriginalStackFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesVarargs(value: OriginalStackFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: OriginalStackFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntime(value: `true`): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: `true`): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,20 +78,16 @@ object errorsMod {
   }
   object SupportedErrorEvent {
     
-    @scala.inline
-    def apply(event: UnhandledError | UnhandledRejection, id: Double): SupportedErrorEvent = {
+    inline def apply(event: UnhandledError | UnhandledRejection, id: Double): SupportedErrorEvent = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[SupportedErrorEvent]
     }
     
-    @scala.inline
-    implicit class SupportedErrorEventMutableBuilder[Self <: SupportedErrorEvent] (val x: Self) extends AnyVal {
+    extension [Self <: SupportedErrorEvent](x: Self) {
       
-      @scala.inline
-      def setEvent(value: UnhandledError | UnhandledRejection): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: UnhandledError | UnhandledRejection): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

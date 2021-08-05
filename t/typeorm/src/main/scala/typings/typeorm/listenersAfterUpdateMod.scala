@@ -11,6 +11,5 @@ object listenersAfterUpdateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def AfterUpdate(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterUpdate")().asInstanceOf[PropertyDecorator]
+  inline def AfterUpdate(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterUpdate")().asInstanceOf[PropertyDecorator]
 }

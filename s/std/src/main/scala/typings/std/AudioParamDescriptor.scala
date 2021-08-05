@@ -18,40 +18,29 @@ trait AudioParamDescriptor extends StObject {
 }
 object AudioParamDescriptor {
   
-  @scala.inline
-  def apply(name: java.lang.String): AudioParamDescriptor = {
+  inline def apply(name: java.lang.String): AudioParamDescriptor = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioParamDescriptor]
   }
   
-  @scala.inline
-  implicit class AudioParamDescriptorMutableBuilder[Self <: AudioParamDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: AudioParamDescriptor](x: Self) {
     
-    @scala.inline
-    def setAutomationRate(value: AutomationRate): Self = StObject.set(x, "automationRate", value.asInstanceOf[js.Any])
+    inline def setAutomationRate(value: AutomationRate): Self = StObject.set(x, "automationRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomationRateUndefined: Self = StObject.set(x, "automationRate", js.undefined)
+    inline def setAutomationRateUndefined: Self = StObject.set(x, "automationRate", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

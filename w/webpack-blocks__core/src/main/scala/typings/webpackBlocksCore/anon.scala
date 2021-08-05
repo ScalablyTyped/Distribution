@@ -13,20 +13,16 @@ object anon {
   }
   object Test {
     
-    @scala.inline
-    def apply(test: RegExp | js.Array[RegExp]): Test = {
+    inline def apply(test: RegExp | js.Array[RegExp]): Test = {
       val __obj = js.Dynamic.literal(test = test.asInstanceOf[js.Any])
       __obj.asInstanceOf[Test]
     }
     
-    @scala.inline
-    implicit class TestMutableBuilder[Self <: Test] (val x: Self) extends AnyVal {
+    extension [Self <: Test](x: Self) {
       
-      @scala.inline
-      def setTest(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestVarargs(value: RegExp*): Self = StObject.set(x, "test", js.Array(value :_*))
+      inline def setTestVarargs(value: RegExp*): Self = StObject.set(x, "test", js.Array(value :_*))
     }
   }
 }

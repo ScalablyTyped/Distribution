@@ -25,8 +25,7 @@ trait XExecutableDialog
 }
 object XExecutableDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     execute: () => Double,
     queryInterface: `type` => js.Any,
@@ -37,13 +36,10 @@ object XExecutableDialog {
     __obj.asInstanceOf[XExecutableDialog]
   }
   
-  @scala.inline
-  implicit class XExecutableDialogMutableBuilder[Self <: XExecutableDialog] (val x: Self) extends AnyVal {
+  extension [Self <: XExecutableDialog](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Double): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Double): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
   }
 }

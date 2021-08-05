@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CanvasFillRule extends StObject
 object CanvasFillRule {
   
-  @scala.inline
-  def evenodd: typings.std.stdStrings.evenodd = "evenodd".asInstanceOf[typings.std.stdStrings.evenodd]
+  inline def evenodd: typings.std.stdStrings.evenodd = "evenodd".asInstanceOf[typings.std.stdStrings.evenodd]
   
-  @scala.inline
-  def nonzero: typings.std.stdStrings.nonzero = "nonzero".asInstanceOf[typings.std.stdStrings.nonzero]
+  inline def nonzero: typings.std.stdStrings.nonzero = "nonzero".asInstanceOf[typings.std.stdStrings.nonzero]
 }

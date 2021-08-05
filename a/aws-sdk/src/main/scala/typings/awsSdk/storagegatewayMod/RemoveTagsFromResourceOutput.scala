@@ -13,19 +13,15 @@ trait RemoveTagsFromResourceOutput extends StObject {
 }
 object RemoveTagsFromResourceOutput {
   
-  @scala.inline
-  def apply(): RemoveTagsFromResourceOutput = {
+  inline def apply(): RemoveTagsFromResourceOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveTagsFromResourceOutput]
   }
   
-  @scala.inline
-  implicit class RemoveTagsFromResourceOutputMutableBuilder[Self <: RemoveTagsFromResourceOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveTagsFromResourceOutput](x: Self) {
     
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
+    inline def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
   }
 }

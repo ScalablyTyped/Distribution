@@ -12,22 +12,17 @@ trait GitCommitChanges extends StObject {
 }
 object GitCommitChanges {
   
-  @scala.inline
-  def apply(changeCounts: ChangeCountDictionary, changes: js.Array[GitChange]): GitCommitChanges = {
+  inline def apply(changeCounts: ChangeCountDictionary, changes: js.Array[GitChange]): GitCommitChanges = {
     val __obj = js.Dynamic.literal(changeCounts = changeCounts.asInstanceOf[js.Any], changes = changes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitCommitChanges]
   }
   
-  @scala.inline
-  implicit class GitCommitChangesMutableBuilder[Self <: GitCommitChanges] (val x: Self) extends AnyVal {
+  extension [Self <: GitCommitChanges](x: Self) {
     
-    @scala.inline
-    def setChangeCounts(value: ChangeCountDictionary): Self = StObject.set(x, "changeCounts", value.asInstanceOf[js.Any])
+    inline def setChangeCounts(value: ChangeCountDictionary): Self = StObject.set(x, "changeCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChanges(value: js.Array[GitChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[GitChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesVarargs(value: GitChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: GitChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
   }
 }

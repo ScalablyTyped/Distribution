@@ -18,25 +18,19 @@ trait InternalRequestOptions
 }
 object InternalRequestOptions {
   
-  @scala.inline
-  def apply(): InternalRequestOptions = {
+  inline def apply(): InternalRequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InternalRequestOptions]
   }
   
-  @scala.inline
-  implicit class InternalRequestOptionsMutableBuilder[Self <: InternalRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InternalRequestOptions](x: Self) {
     
-    @scala.inline
-    def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+    inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+    inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

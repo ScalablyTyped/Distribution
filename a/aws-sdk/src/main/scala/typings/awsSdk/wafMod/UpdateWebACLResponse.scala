@@ -13,19 +13,15 @@ trait UpdateWebACLResponse extends StObject {
 }
 object UpdateWebACLResponse {
   
-  @scala.inline
-  def apply(): UpdateWebACLResponse = {
+  inline def apply(): UpdateWebACLResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateWebACLResponse]
   }
   
-  @scala.inline
-  implicit class UpdateWebACLResponseMutableBuilder[Self <: UpdateWebACLResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateWebACLResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

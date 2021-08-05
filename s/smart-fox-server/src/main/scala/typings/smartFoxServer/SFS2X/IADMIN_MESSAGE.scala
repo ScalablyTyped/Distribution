@@ -15,22 +15,17 @@ trait IADMIN_MESSAGE extends StObject {
 }
 object IADMIN_MESSAGE {
   
-  @scala.inline
-  def apply(data: js.Object, message: String, sender: SFSUser): IADMIN_MESSAGE = {
+  inline def apply(data: js.Object, message: String, sender: SFSUser): IADMIN_MESSAGE = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[IADMIN_MESSAGE]
   }
   
-  @scala.inline
-  implicit class IADMIN_MESSAGEMutableBuilder[Self <: IADMIN_MESSAGE] (val x: Self) extends AnyVal {
+  extension [Self <: IADMIN_MESSAGE](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: SFSUser): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: SFSUser): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

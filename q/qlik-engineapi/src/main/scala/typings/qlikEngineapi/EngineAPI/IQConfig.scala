@@ -17,25 +17,19 @@ trait IQConfig extends StObject {
 }
 object IQConfig {
   
-  @scala.inline
-  def apply(qFeatures: QIsDesktop, qServices: js.Array[QUrl], qSystemProperties: QPathSeparator): IQConfig = {
+  inline def apply(qFeatures: QIsDesktop, qServices: js.Array[QUrl], qSystemProperties: QPathSeparator): IQConfig = {
     val __obj = js.Dynamic.literal(qFeatures = qFeatures.asInstanceOf[js.Any], qServices = qServices.asInstanceOf[js.Any], qSystemProperties = qSystemProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQConfig]
   }
   
-  @scala.inline
-  implicit class IQConfigMutableBuilder[Self <: IQConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IQConfig](x: Self) {
     
-    @scala.inline
-    def setQFeatures(value: QIsDesktop): Self = StObject.set(x, "qFeatures", value.asInstanceOf[js.Any])
+    inline def setQFeatures(value: QIsDesktop): Self = StObject.set(x, "qFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQServices(value: js.Array[QUrl]): Self = StObject.set(x, "qServices", value.asInstanceOf[js.Any])
+    inline def setQServices(value: js.Array[QUrl]): Self = StObject.set(x, "qServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQServicesVarargs(value: QUrl*): Self = StObject.set(x, "qServices", js.Array(value :_*))
+    inline def setQServicesVarargs(value: QUrl*): Self = StObject.set(x, "qServices", js.Array(value :_*))
     
-    @scala.inline
-    def setQSystemProperties(value: QPathSeparator): Self = StObject.set(x, "qSystemProperties", value.asInstanceOf[js.Any])
+    inline def setQSystemProperties(value: QPathSeparator): Self = StObject.set(x, "qSystemProperties", value.asInstanceOf[js.Any])
   }
 }

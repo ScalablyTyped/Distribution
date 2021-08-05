@@ -12,11 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decrypt(arg: Arguments, cb: js.Function2[/* err */ Error | Null, /* buff */ Buffer | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(arg.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decrypt(arg: Arguments, cb: js.Function2[/* err */ Error | Null, /* buff */ Buffer | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(arg.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def encrypt(arg: Arguments, cb: js.Function2[/* err */ Error | Null, /* buff */ Buffer | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(arg.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def encrypt(arg: Arguments, cb: js.Function2[/* err */ Error | Null, /* buff */ Buffer | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(arg.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object prng {
     
@@ -24,8 +22,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def generate(n: Double, cb: js.Function1[/* words */ WordArray, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(n.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def generate(n: Double, cb: js.Function1[/* words */ WordArray, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(n.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   trait Arguments extends StObject {
@@ -38,26 +35,20 @@ object mod {
   }
   object Arguments {
     
-    @scala.inline
-    def apply(data: Buffer, key: Buffer): Arguments = {
+    inline def apply(data: Buffer, key: Buffer): Arguments = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Arguments]
     }
     
-    @scala.inline
-    implicit class ArgumentsMutableBuilder[Self <: Arguments] (val x: Self) extends AnyVal {
+    extension [Self <: Arguments](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress_hook(value: /* progress */ Progress => Unit): Self = StObject.set(x, "progress_hook", js.Any.fromFunction1(value))
+      inline def setProgress_hook(value: /* progress */ Progress => Unit): Self = StObject.set(x, "progress_hook", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProgress_hookUndefined: Self = StObject.set(x, "progress_hook", js.undefined)
+      inline def setProgress_hookUndefined: Self = StObject.set(x, "progress_hook", js.undefined)
     }
   }
   
@@ -71,23 +62,18 @@ object mod {
   }
   object Progress {
     
-    @scala.inline
-    def apply(i: Double, total: Double, what: String): Progress = {
+    inline def apply(i: Double, total: Double, what: String): Progress = {
       val __obj = js.Dynamic.literal(i = i.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], what = what.asInstanceOf[js.Any])
       __obj.asInstanceOf[Progress]
     }
     
-    @scala.inline
-    implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+    extension [Self <: Progress](x: Self) {
       
-      @scala.inline
-      def setI(value: Double): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+      inline def setI(value: Double): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhat(value: String): Self = StObject.set(x, "what", value.asInstanceOf[js.Any])
+      inline def setWhat(value: String): Self = StObject.set(x, "what", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,26 +87,20 @@ object mod {
   }
   object WordArray {
     
-    @scala.inline
-    def apply(sigBytes: Double, to_hex: () => String, words: js.Array[Double]): WordArray = {
+    inline def apply(sigBytes: Double, to_hex: () => String, words: js.Array[Double]): WordArray = {
       val __obj = js.Dynamic.literal(sigBytes = sigBytes.asInstanceOf[js.Any], to_hex = js.Any.fromFunction0(to_hex), words = words.asInstanceOf[js.Any])
       __obj.asInstanceOf[WordArray]
     }
     
-    @scala.inline
-    implicit class WordArrayMutableBuilder[Self <: WordArray] (val x: Self) extends AnyVal {
+    extension [Self <: WordArray](x: Self) {
       
-      @scala.inline
-      def setSigBytes(value: Double): Self = StObject.set(x, "sigBytes", value.asInstanceOf[js.Any])
+      inline def setSigBytes(value: Double): Self = StObject.set(x, "sigBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo_hex(value: () => String): Self = StObject.set(x, "to_hex", js.Any.fromFunction0(value))
+      inline def setTo_hex(value: () => String): Self = StObject.set(x, "to_hex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWords(value: js.Array[Double]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: js.Array[Double]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsVarargs(value: Double*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: Double*): Self = StObject.set(x, "words", js.Array(value :_*))
     }
   }
 }

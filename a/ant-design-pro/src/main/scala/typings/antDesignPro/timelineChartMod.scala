@@ -29,41 +29,30 @@ object timelineChartMod {
   }
   object ITimelineChartProps {
     
-    @scala.inline
-    def apply(data: js.Array[Y1], titleMap: Y2): ITimelineChartProps = {
+    inline def apply(data: js.Array[Y1], titleMap: Y2): ITimelineChartProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], titleMap = titleMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITimelineChartProps]
     }
     
-    @scala.inline
-    implicit class ITimelineChartPropsMutableBuilder[Self <: ITimelineChartProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITimelineChartProps](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[Y1]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Y1]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: Y1*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Y1*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setPadding(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTitleMap(value: Y2): Self = StObject.set(x, "titleMap", value.asInstanceOf[js.Any])
+      inline def setTitleMap(value: Y2): Self = StObject.set(x, "titleMap", value.asInstanceOf[js.Any])
     }
   }
   

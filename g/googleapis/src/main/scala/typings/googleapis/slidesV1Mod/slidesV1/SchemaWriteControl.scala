@@ -19,19 +19,15 @@ trait SchemaWriteControl extends StObject {
 }
 object SchemaWriteControl {
   
-  @scala.inline
-  def apply(): SchemaWriteControl = {
+  inline def apply(): SchemaWriteControl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWriteControl]
   }
   
-  @scala.inline
-  implicit class SchemaWriteControlMutableBuilder[Self <: SchemaWriteControl] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWriteControl](x: Self) {
     
-    @scala.inline
-    def setRequiredRevisionId(value: String): Self = StObject.set(x, "requiredRevisionId", value.asInstanceOf[js.Any])
+    inline def setRequiredRevisionId(value: String): Self = StObject.set(x, "requiredRevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredRevisionIdUndefined: Self = StObject.set(x, "requiredRevisionId", js.undefined)
+    inline def setRequiredRevisionIdUndefined: Self = StObject.set(x, "requiredRevisionId", js.undefined)
   }
 }

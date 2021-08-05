@@ -43,8 +43,7 @@ trait HttpResponseMessage extends StObject {
 }
 object HttpResponseMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     content: IHttpContent,
     ensureSuccessStatusCode: () => HttpResponseMessage,
@@ -60,37 +59,26 @@ object HttpResponseMessage {
     __obj.asInstanceOf[HttpResponseMessage]
   }
   
-  @scala.inline
-  implicit class HttpResponseMessageMutableBuilder[Self <: HttpResponseMessage] (val x: Self) extends AnyVal {
+  extension [Self <: HttpResponseMessage](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContent(value: IHttpContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: IHttpContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnsureSuccessStatusCode(value: () => HttpResponseMessage): Self = StObject.set(x, "ensureSuccessStatusCode", js.Any.fromFunction0(value))
+    inline def setEnsureSuccessStatusCode(value: () => HttpResponseMessage): Self = StObject.set(x, "ensureSuccessStatusCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeaders(value: HttpResponseHeaderCollection): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: HttpResponseHeaderCollection): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSuccessStatusCode(value: Boolean): Self = StObject.set(x, "isSuccessStatusCode", value.asInstanceOf[js.Any])
+    inline def setIsSuccessStatusCode(value: Boolean): Self = StObject.set(x, "isSuccessStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonPhrase(value: String): Self = StObject.set(x, "reasonPhrase", value.asInstanceOf[js.Any])
+    inline def setReasonPhrase(value: String): Self = StObject.set(x, "reasonPhrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestMessage(value: HttpRequestMessage): Self = StObject.set(x, "requestMessage", value.asInstanceOf[js.Any])
+    inline def setRequestMessage(value: HttpRequestMessage): Self = StObject.set(x, "requestMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: HttpResponseMessageSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: HttpResponseMessageSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: HttpStatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: HttpStatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: HttpVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: HttpVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

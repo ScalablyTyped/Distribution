@@ -18,25 +18,19 @@ trait Cipher extends StObject {
 }
 object Cipher {
   
-  @scala.inline
-  def apply(): Cipher = {
+  inline def apply(): Cipher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cipher]
   }
   
-  @scala.inline
-  implicit class CipherMutableBuilder[Self <: Cipher] (val x: Self) extends AnyVal {
+  extension [Self <: Cipher](x: Self) {
     
-    @scala.inline
-    def setName(value: CipherName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CipherName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setPriority(value: CipherPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: CipherPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
   }
 }

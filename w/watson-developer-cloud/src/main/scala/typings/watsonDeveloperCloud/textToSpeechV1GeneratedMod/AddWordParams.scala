@@ -26,40 +26,29 @@ trait AddWordParams extends StObject {
 }
 object AddWordParams {
   
-  @scala.inline
-  def apply(customization_id: String, translation: String, word: String): AddWordParams = {
+  inline def apply(customization_id: String, translation: String, word: String): AddWordParams = {
     val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any], translation = translation.asInstanceOf[js.Any], word = word.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddWordParams]
   }
   
-  @scala.inline
-  implicit class AddWordParamsMutableBuilder[Self <: AddWordParams] (val x: Self) extends AnyVal {
+  extension [Self <: AddWordParams](x: Self) {
     
-    @scala.inline
-    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
+    inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setPart_of_speech(value: PartOfSpeech | String): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
+    inline def setPart_of_speech(value: PartOfSpeech | String): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPart_of_speechUndefined: Self = StObject.set(x, "part_of_speech", js.undefined)
+    inline def setPart_of_speechUndefined: Self = StObject.set(x, "part_of_speech", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setTranslation(value: String): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
+    inline def setTranslation(value: String): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
   }
 }

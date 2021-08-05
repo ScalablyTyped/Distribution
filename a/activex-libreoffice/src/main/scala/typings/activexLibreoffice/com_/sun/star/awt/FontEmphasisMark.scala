@@ -25,25 +25,18 @@ object FontEmphasisMark {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ABOVE: `4096` = 4096.asInstanceOf[`4096`]
+    inline def ABOVE: `4096` = 4096.asInstanceOf[`4096`]
     
-    @scala.inline
-    def ACCENT: `4` = 4.asInstanceOf[`4`]
+    inline def ACCENT: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def BELOW: `8192` = 8192.asInstanceOf[`8192`]
+    inline def BELOW: `8192` = 8192.asInstanceOf[`8192`]
     
-    @scala.inline
-    def CIRCLE: `2` = 2.asInstanceOf[`2`]
+    inline def CIRCLE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def DISC: `3` = 3.asInstanceOf[`3`]
+    inline def DISC: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def DOT: `1` = 1.asInstanceOf[`1`]
+    inline def DOT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
   }
 }

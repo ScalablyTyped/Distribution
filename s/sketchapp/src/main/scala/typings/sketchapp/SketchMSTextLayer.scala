@@ -16,8 +16,7 @@ trait SketchMSTextLayer
 }
 object SketchMSTextLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributedString: SketchMSAttributedString,
     booleanOperation: SketchMSLayerBooleanOperation,
     clippingMaskMode: SketchMSLayerClippingMaskMode,
@@ -44,13 +43,10 @@ object SketchMSTextLayer {
     __obj.asInstanceOf[SketchMSTextLayer]
   }
   
-  @scala.inline
-  implicit class SketchMSTextLayerMutableBuilder[Self <: SketchMSTextLayer] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSTextLayer](x: Self) {
     
-    @scala.inline
-    def setAttributedString(value: SketchMSAttributedString): Self = StObject.set(x, "attributedString", value.asInstanceOf[js.Any])
+    inline def setAttributedString(value: SketchMSAttributedString): Self = StObject.set(x, "attributedString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: text): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: text): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

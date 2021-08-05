@@ -23,25 +23,19 @@ trait DisassociateVPCFromHostedZoneRequest extends StObject {
 }
 object DisassociateVPCFromHostedZoneRequest {
   
-  @scala.inline
-  def apply(HostedZoneId: ResourceId, VPC: VPC): DisassociateVPCFromHostedZoneRequest = {
+  inline def apply(HostedZoneId: ResourceId, VPC: VPC): DisassociateVPCFromHostedZoneRequest = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], VPC = VPC.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateVPCFromHostedZoneRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateVPCFromHostedZoneRequestMutableBuilder[Self <: DisassociateVPCFromHostedZoneRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateVPCFromHostedZoneRequest](x: Self) {
     
-    @scala.inline
-    def setComment(value: DisassociateVPCComment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: DisassociateVPCComment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPC(value: VPC): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
+    inline def setVPC(value: VPC): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
   }
 }

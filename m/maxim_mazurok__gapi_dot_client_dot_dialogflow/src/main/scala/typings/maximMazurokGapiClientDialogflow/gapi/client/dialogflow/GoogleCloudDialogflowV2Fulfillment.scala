@@ -23,46 +23,33 @@ trait GoogleCloudDialogflowV2Fulfillment extends StObject {
 }
 object GoogleCloudDialogflowV2Fulfillment {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2Fulfillment = {
+  inline def apply(): GoogleCloudDialogflowV2Fulfillment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2Fulfillment]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2FulfillmentMutableBuilder[Self <: GoogleCloudDialogflowV2Fulfillment] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2Fulfillment](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setFeatures(value: js.Array[GoogleCloudDialogflowV2FulfillmentFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[GoogleCloudDialogflowV2FulfillmentFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setFeaturesVarargs(value: GoogleCloudDialogflowV2FulfillmentFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: GoogleCloudDialogflowV2FulfillmentFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def setGenericWebService(value: GoogleCloudDialogflowV2FulfillmentGenericWebService): Self = StObject.set(x, "genericWebService", value.asInstanceOf[js.Any])
+    inline def setGenericWebService(value: GoogleCloudDialogflowV2FulfillmentGenericWebService): Self = StObject.set(x, "genericWebService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenericWebServiceUndefined: Self = StObject.set(x, "genericWebService", js.undefined)
+    inline def setGenericWebServiceUndefined: Self = StObject.set(x, "genericWebService", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

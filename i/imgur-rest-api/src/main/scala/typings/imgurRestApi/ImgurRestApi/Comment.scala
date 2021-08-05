@@ -38,8 +38,7 @@ trait Comment extends StObject {
 }
 object Comment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     album_cover: String,
     author: String,
     author_id: Double,
@@ -59,58 +58,40 @@ object Comment {
     __obj.asInstanceOf[Comment]
   }
   
-  @scala.inline
-  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+  extension [Self <: Comment](x: Self) {
     
-    @scala.inline
-    def setAlbum_cover(value: String): Self = StObject.set(x, "album_cover", value.asInstanceOf[js.Any])
+    inline def setAlbum_cover(value: String): Self = StObject.set(x, "album_cover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthor_id(value: Double): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
+    inline def setAuthor_id(value: Double): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: js.Array[Comment]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Comment]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: Comment*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Comment*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatetime(value: Double): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+    inline def setDatetime(value: Double): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDowns(value: Double): Self = StObject.set(x, "downs", value.asInstanceOf[js.Any])
+    inline def setDowns(value: Double): Self = StObject.set(x, "downs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage_id(value: String): Self = StObject.set(x, "image_id", value.asInstanceOf[js.Any])
+    inline def setImage_id(value: String): Self = StObject.set(x, "image_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn_album(value: Boolean): Self = StObject.set(x, "on_album", value.asInstanceOf[js.Any])
+    inline def setOn_album(value: Boolean): Self = StObject.set(x, "on_album", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent_id(value: Double): Self = StObject.set(x, "parent_id", value.asInstanceOf[js.Any])
+    inline def setParent_id(value: Double): Self = StObject.set(x, "parent_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUps(value: Double): Self = StObject.set(x, "ups", value.asInstanceOf[js.Any])
+    inline def setUps(value: Double): Self = StObject.set(x, "ups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVote(value: String): Self = StObject.set(x, "vote", value.asInstanceOf[js.Any])
+    inline def setVote(value: String): Self = StObject.set(x, "vote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoteUndefined: Self = StObject.set(x, "vote", js.undefined)
+    inline def setVoteUndefined: Self = StObject.set(x, "vote", js.undefined)
   }
 }

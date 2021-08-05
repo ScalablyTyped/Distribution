@@ -38,8 +38,7 @@ trait ASPxClientDashboardItemUnderlyingData extends StObject {
 }
 object ASPxClientDashboardItemUnderlyingData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetDataMembers: () => js.Array[String],
     GetRequestDataError: () => String,
     GetRowCount: () => Double,
@@ -50,22 +49,16 @@ object ASPxClientDashboardItemUnderlyingData {
     __obj.asInstanceOf[ASPxClientDashboardItemUnderlyingData]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemUnderlyingDataMutableBuilder[Self <: ASPxClientDashboardItemUnderlyingData] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemUnderlyingData](x: Self) {
     
-    @scala.inline
-    def setGetDataMembers(value: () => js.Array[String]): Self = StObject.set(x, "GetDataMembers", js.Any.fromFunction0(value))
+    inline def setGetDataMembers(value: () => js.Array[String]): Self = StObject.set(x, "GetDataMembers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRequestDataError(value: () => String): Self = StObject.set(x, "GetRequestDataError", js.Any.fromFunction0(value))
+    inline def setGetRequestDataError(value: () => String): Self = StObject.set(x, "GetRequestDataError", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRowCount(value: () => Double): Self = StObject.set(x, "GetRowCount", js.Any.fromFunction0(value))
+    inline def setGetRowCount(value: () => Double): Self = StObject.set(x, "GetRowCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRowValue(value: (Double, String) => js.Any): Self = StObject.set(x, "GetRowValue", js.Any.fromFunction2(value))
+    inline def setGetRowValue(value: (Double, String) => js.Any): Self = StObject.set(x, "GetRowValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsDataReceived(value: () => Boolean): Self = StObject.set(x, "IsDataReceived", js.Any.fromFunction0(value))
+    inline def setIsDataReceived(value: () => Boolean): Self = StObject.set(x, "IsDataReceived", js.Any.fromFunction0(value))
   }
 }

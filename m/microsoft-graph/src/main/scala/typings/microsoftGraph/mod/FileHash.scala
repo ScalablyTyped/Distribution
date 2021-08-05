@@ -14,31 +14,23 @@ trait FileHash extends StObject {
 }
 object FileHash {
   
-  @scala.inline
-  def apply(): FileHash = {
+  inline def apply(): FileHash = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileHash]
   }
   
-  @scala.inline
-  implicit class FileHashMutableBuilder[Self <: FileHash] (val x: Self) extends AnyVal {
+  extension [Self <: FileHash](x: Self) {
     
-    @scala.inline
-    def setHashType(value: NullableOption[FileHashType]): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
+    inline def setHashType(value: NullableOption[FileHashType]): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashTypeNull: Self = StObject.set(x, "hashType", null)
+    inline def setHashTypeNull: Self = StObject.set(x, "hashType", null)
     
-    @scala.inline
-    def setHashTypeUndefined: Self = StObject.set(x, "hashType", js.undefined)
+    inline def setHashTypeUndefined: Self = StObject.set(x, "hashType", js.undefined)
     
-    @scala.inline
-    def setHashValue(value: NullableOption[String]): Self = StObject.set(x, "hashValue", value.asInstanceOf[js.Any])
+    inline def setHashValue(value: NullableOption[String]): Self = StObject.set(x, "hashValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashValueNull: Self = StObject.set(x, "hashValue", null)
+    inline def setHashValueNull: Self = StObject.set(x, "hashValue", null)
     
-    @scala.inline
-    def setHashValueUndefined: Self = StObject.set(x, "hashValue", js.undefined)
+    inline def setHashValueUndefined: Self = StObject.set(x, "hashValue", js.undefined)
   }
 }

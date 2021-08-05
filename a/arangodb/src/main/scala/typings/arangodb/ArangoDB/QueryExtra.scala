@@ -13,22 +13,17 @@ trait QueryExtra extends StObject {
 }
 object QueryExtra {
   
-  @scala.inline
-  def apply(stats: ExecutionTime, warnings: js.Array[String]): QueryExtra = {
+  inline def apply(stats: ExecutionTime, warnings: js.Array[String]): QueryExtra = {
     val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryExtra]
   }
   
-  @scala.inline
-  implicit class QueryExtraMutableBuilder[Self <: QueryExtra] (val x: Self) extends AnyVal {
+  extension [Self <: QueryExtra](x: Self) {
     
-    @scala.inline
-    def setStats(value: ExecutionTime): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: ExecutionTime): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

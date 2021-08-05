@@ -11,22 +11,17 @@ trait DisjunctiveMatchStatement extends StObject {
 }
 object DisjunctiveMatchStatement {
   
-  @scala.inline
-  def apply(): DisjunctiveMatchStatement = {
+  inline def apply(): DisjunctiveMatchStatement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisjunctiveMatchStatement]
   }
   
-  @scala.inline
-  implicit class DisjunctiveMatchStatementMutableBuilder[Self <: DisjunctiveMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: DisjunctiveMatchStatement](x: Self) {
     
-    @scala.inline
-    def setEventFilters(value: js.Array[EventFilter]): Self = StObject.set(x, "eventFilters", value.asInstanceOf[js.Any])
+    inline def setEventFilters(value: js.Array[EventFilter]): Self = StObject.set(x, "eventFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventFiltersUndefined: Self = StObject.set(x, "eventFilters", js.undefined)
+    inline def setEventFiltersUndefined: Self = StObject.set(x, "eventFilters", js.undefined)
     
-    @scala.inline
-    def setEventFiltersVarargs(value: EventFilter*): Self = StObject.set(x, "eventFilters", js.Array(value :_*))
+    inline def setEventFiltersVarargs(value: EventFilter*): Self = StObject.set(x, "eventFilters", js.Array(value :_*))
   }
 }

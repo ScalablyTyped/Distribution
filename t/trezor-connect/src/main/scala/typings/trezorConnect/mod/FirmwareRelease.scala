@@ -28,8 +28,7 @@ trait FirmwareRelease extends StObject {
 }
 object FirmwareRelease {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bootloader_version: js.Array[Double],
     changelog: String,
     channel: String,
@@ -45,52 +44,36 @@ object FirmwareRelease {
     __obj.asInstanceOf[FirmwareRelease]
   }
   
-  @scala.inline
-  implicit class FirmwareReleaseMutableBuilder[Self <: FirmwareRelease] (val x: Self) extends AnyVal {
+  extension [Self <: FirmwareRelease](x: Self) {
     
-    @scala.inline
-    def setBootloader_version(value: js.Array[Double]): Self = StObject.set(x, "bootloader_version", value.asInstanceOf[js.Any])
+    inline def setBootloader_version(value: js.Array[Double]): Self = StObject.set(x, "bootloader_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootloader_versionVarargs(value: Double*): Self = StObject.set(x, "bootloader_version", js.Array(value :_*))
+    inline def setBootloader_versionVarargs(value: Double*): Self = StObject.set(x, "bootloader_version", js.Array(value :_*))
     
-    @scala.inline
-    def setChangelog(value: String): Self = StObject.set(x, "changelog", value.asInstanceOf[js.Any])
+    inline def setChangelog(value: String): Self = StObject.set(x, "changelog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_bootloader_version(value: js.Array[Double]): Self = StObject.set(x, "min_bootloader_version", value.asInstanceOf[js.Any])
+    inline def setMin_bootloader_version(value: js.Array[Double]): Self = StObject.set(x, "min_bootloader_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_bootloader_versionVarargs(value: Double*): Self = StObject.set(x, "min_bootloader_version", js.Array(value :_*))
+    inline def setMin_bootloader_versionVarargs(value: Double*): Self = StObject.set(x, "min_bootloader_version", js.Array(value :_*))
     
-    @scala.inline
-    def setMin_bridge_version(value: js.Array[Double]): Self = StObject.set(x, "min_bridge_version", value.asInstanceOf[js.Any])
+    inline def setMin_bridge_version(value: js.Array[Double]): Self = StObject.set(x, "min_bridge_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_bridge_versionVarargs(value: Double*): Self = StObject.set(x, "min_bridge_version", js.Array(value :_*))
+    inline def setMin_bridge_versionVarargs(value: Double*): Self = StObject.set(x, "min_bridge_version", js.Array(value :_*))
     
-    @scala.inline
-    def setMin_firmware_version(value: js.Array[Double]): Self = StObject.set(x, "min_firmware_version", value.asInstanceOf[js.Any])
+    inline def setMin_firmware_version(value: js.Array[Double]): Self = StObject.set(x, "min_firmware_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_firmware_versionVarargs(value: Double*): Self = StObject.set(x, "min_firmware_version", js.Array(value :_*))
+    inline def setMin_firmware_versionVarargs(value: Double*): Self = StObject.set(x, "min_firmware_version", js.Array(value :_*))
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: js.Array[Double]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: js.Array[Double]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionVarargs(value: Double*): Self = StObject.set(x, "version", js.Array(value :_*))
+    inline def setVersionVarargs(value: Double*): Self = StObject.set(x, "version", js.Array(value :_*))
   }
 }

@@ -20,8 +20,7 @@ trait ServicesData extends StObject {
 }
 object ServicesData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String,
     pcpu: Double,
     pids: js.Array[Double],
@@ -33,28 +32,20 @@ object ServicesData {
     __obj.asInstanceOf[ServicesData]
   }
   
-  @scala.inline
-  implicit class ServicesDataMutableBuilder[Self <: ServicesData] (val x: Self) extends AnyVal {
+  extension [Self <: ServicesData](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPcpu(value: Double): Self = StObject.set(x, "pcpu", value.asInstanceOf[js.Any])
+    inline def setPcpu(value: Double): Self = StObject.set(x, "pcpu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPids(value: js.Array[Double]): Self = StObject.set(x, "pids", value.asInstanceOf[js.Any])
+    inline def setPids(value: js.Array[Double]): Self = StObject.set(x, "pids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPidsVarargs(value: Double*): Self = StObject.set(x, "pids", js.Array(value :_*))
+    inline def setPidsVarargs(value: Double*): Self = StObject.set(x, "pids", js.Array(value :_*))
     
-    @scala.inline
-    def setPmem(value: Double): Self = StObject.set(x, "pmem", value.asInstanceOf[js.Any])
+    inline def setPmem(value: Double): Self = StObject.set(x, "pmem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+    inline def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartmode(value: String): Self = StObject.set(x, "startmode", value.asInstanceOf[js.Any])
+    inline def setStartmode(value: String): Self = StObject.set(x, "startmode", value.asInstanceOf[js.Any])
   }
 }

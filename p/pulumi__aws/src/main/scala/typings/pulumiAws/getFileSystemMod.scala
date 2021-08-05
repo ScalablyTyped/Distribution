@@ -13,14 +13,10 @@ object getFileSystemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFileSystem(): js.Promise[GetFileSystemResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")().asInstanceOf[js.Promise[GetFileSystemResult]]
-  @scala.inline
-  def getFileSystem(args: Unit, opts: InvokeOptions): js.Promise[GetFileSystemResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetFileSystemResult]]
-  @scala.inline
-  def getFileSystem(args: GetFileSystemArgs): js.Promise[GetFileSystemResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetFileSystemResult]]
-  @scala.inline
-  def getFileSystem(args: GetFileSystemArgs, opts: InvokeOptions): js.Promise[GetFileSystemResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetFileSystemResult]]
+  inline def getFileSystem(): js.Promise[GetFileSystemResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")().asInstanceOf[js.Promise[GetFileSystemResult]]
+  inline def getFileSystem(args: Unit, opts: InvokeOptions): js.Promise[GetFileSystemResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetFileSystemResult]]
+  inline def getFileSystem(args: GetFileSystemArgs): js.Promise[GetFileSystemResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetFileSystemResult]]
+  inline def getFileSystem(args: GetFileSystemArgs, opts: InvokeOptions): js.Promise[GetFileSystemResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetFileSystemResult]]
   
   trait GetFileSystemArgs extends StObject {
     
@@ -38,32 +34,24 @@ object getFileSystemMod {
   }
   object GetFileSystemArgs {
     
-    @scala.inline
-    def apply(): GetFileSystemArgs = {
+    inline def apply(): GetFileSystemArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetFileSystemArgs]
     }
     
-    @scala.inline
-    implicit class GetFileSystemArgsMutableBuilder[Self <: GetFileSystemArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetFileSystemArgs](x: Self) {
       
-      @scala.inline
-      def setCreationToken(value: String): Self = StObject.set(x, "creationToken", value.asInstanceOf[js.Any])
+      inline def setCreationToken(value: String): Self = StObject.set(x, "creationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationTokenUndefined: Self = StObject.set(x, "creationToken", js.undefined)
+      inline def setCreationTokenUndefined: Self = StObject.set(x, "creationToken", js.undefined)
       
-      @scala.inline
-      def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+      inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemIdUndefined: Self = StObject.set(x, "fileSystemId", js.undefined)
+      inline def setFileSystemIdUndefined: Self = StObject.set(x, "fileSystemId", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -128,8 +116,7 @@ object getFileSystemMod {
   }
   object GetFileSystemResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       creationToken: String,
       dnsName: String,
@@ -148,47 +135,33 @@ object getFileSystemMod {
       __obj.asInstanceOf[GetFileSystemResult]
     }
     
-    @scala.inline
-    implicit class GetFileSystemResultMutableBuilder[Self <: GetFileSystemResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetFileSystemResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationToken(value: String): Self = StObject.set(x, "creationToken", value.asInstanceOf[js.Any])
+      inline def setCreationToken(value: String): Self = StObject.set(x, "creationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsName(value: String): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
+      inline def setDnsName(value: String): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+      inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+      inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifecyclePolicy(value: GetFileSystemLifecyclePolicy): Self = StObject.set(x, "lifecyclePolicy", value.asInstanceOf[js.Any])
+      inline def setLifecyclePolicy(value: GetFileSystemLifecyclePolicy): Self = StObject.set(x, "lifecyclePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerformanceMode(value: String): Self = StObject.set(x, "performanceMode", value.asInstanceOf[js.Any])
+      inline def setPerformanceMode(value: String): Self = StObject.set(x, "performanceMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputInMibps(value: Double): Self = StObject.set(x, "provisionedThroughputInMibps", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughputInMibps(value: Double): Self = StObject.set(x, "provisionedThroughputInMibps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeInBytes(value: Double): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
+      inline def setSizeInBytes(value: Double): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThroughputMode(value: String): Self = StObject.set(x, "throughputMode", value.asInstanceOf[js.Any])
+      inline def setThroughputMode(value: String): Self = StObject.set(x, "throughputMode", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -37,6 +37,5 @@ object documentScan {
     * @param options Object containing scan parameters.
     * @param callback Called with the result and data from the scan.
     */
-  @scala.inline
-  def scan(options: DocumentScanOptions, callback: js.Function1[/* result */ DocumentScanCallbackArg, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scan(options: DocumentScanOptions, callback: js.Function1[/* result */ DocumentScanCallbackArg, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

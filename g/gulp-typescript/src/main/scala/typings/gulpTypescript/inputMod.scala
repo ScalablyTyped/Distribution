@@ -27,8 +27,7 @@ object inputMod {
   }
   object File {
     
-    @scala.inline
-    def apply(content: String, fileNameNormalized: String, fileNameOriginal: String, kind: FileKind): File = {
+    inline def apply(content: String, fileNameNormalized: String, fileNameOriginal: String, kind: FileKind): File = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], fileNameNormalized = fileNameNormalized.asInstanceOf[js.Any], fileNameOriginal = fileNameOriginal.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
     }
@@ -37,44 +36,31 @@ object inputMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def equal(a: File, b: File): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equal(a: File, b: File): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def fromContent(caseSensitive: Boolean, fileName: String, content: String): File = (^.asInstanceOf[js.Dynamic].applyDynamic("fromContent")(caseSensitive.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[File]
+    inline def fromContent(caseSensitive: Boolean, fileName: String, content: String): File = (^.asInstanceOf[js.Dynamic].applyDynamic("fromContent")(caseSensitive.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[File]
     
-    @scala.inline
-    def fromGulp(caseSensitive: Boolean, file: VinylFile): File = (^.asInstanceOf[js.Dynamic].applyDynamic("fromGulp")(caseSensitive.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[File]
+    inline def fromGulp(caseSensitive: Boolean, file: VinylFile): File = (^.asInstanceOf[js.Dynamic].applyDynamic("fromGulp")(caseSensitive.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[File]
     
-    @scala.inline
-    def getChangeState(previous: File, current: File): FileChangeState = (^.asInstanceOf[js.Dynamic].applyDynamic("getChangeState")(previous.asInstanceOf[js.Any], current.asInstanceOf[js.Any])).asInstanceOf[FileChangeState]
+    inline def getChangeState(previous: File, current: File): FileChangeState = (^.asInstanceOf[js.Dynamic].applyDynamic("getChangeState")(previous.asInstanceOf[js.Any], current.asInstanceOf[js.Any])).asInstanceOf[FileChangeState]
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameNormalized(value: String): Self = StObject.set(x, "fileNameNormalized", value.asInstanceOf[js.Any])
+      inline def setFileNameNormalized(value: String): Self = StObject.set(x, "fileNameNormalized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameOriginal(value: String): Self = StObject.set(x, "fileNameOriginal", value.asInstanceOf[js.Any])
+      inline def setFileNameOriginal(value: String): Self = StObject.set(x, "fileNameOriginal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGulp(value: VinylFile): Self = StObject.set(x, "gulp", value.asInstanceOf[js.Any])
+      inline def setGulp(value: VinylFile): Self = StObject.set(x, "gulp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGulpUndefined: Self = StObject.set(x, "gulp", js.undefined)
+      inline def setGulpUndefined: Self = StObject.set(x, "gulp", js.undefined)
       
-      @scala.inline
-      def setKind(value: FileKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: FileKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTs(value: SourceFile): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
+      inline def setTs(value: SourceFile): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
+      inline def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
     }
   }
   
@@ -93,7 +79,7 @@ object inputMod {
     
     var commonSourceDirectory: String = js.native
     
-    var createDictionary: js.Any = js.native
+    /* private */ var createDictionary: js.Any = js.native
     
     var current: FileDictionary = js.native
     
@@ -106,7 +92,7 @@ object inputMod {
     def getFileNames(): js.Array[String] = js.native
     def getFileNames(onlyGulp: Boolean): js.Array[String] = js.native
     
-    var initTypeScriptSourceFile: js.Any = js.native
+    /* private */ var initTypeScriptSourceFile: js.Any = js.native
     
     def isChanged(): Boolean = js.native
     def isChanged(onlyGulp: Boolean): Boolean = js.native
@@ -171,7 +157,7 @@ object inputMod {
     
     def addContent(fileName: String, content: String): File = js.native
     
-    var addFile: js.Any = js.native
+    /* private */ var addFile: js.Any = js.native
     
     def addGulp(gFile: VinylFile): File = js.native
     
@@ -190,7 +176,7 @@ object inputMod {
     def getFileNames(): js.Array[String] = js.native
     def getFileNames(onlyGulp: Boolean): js.Array[String] = js.native
     
-    var getSourceFileNames: js.Any = js.native
+    /* private */ var getSourceFileNames: js.Any = js.native
     
     def initTypeScriptSourceFile(file: File): Unit = js.native
     
@@ -229,23 +215,18 @@ object inputMod {
   }
   object FileChange {
     
-    @scala.inline
-    def apply(current: File, previous: File, state: FileChangeState): FileChange = {
+    inline def apply(current: File, previous: File, state: FileChangeState): FileChange = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileChange]
     }
     
-    @scala.inline
-    implicit class FileChangeMutableBuilder[Self <: FileChange] (val x: Self) extends AnyVal {
+    extension [Self <: FileChange](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: File): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: File): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevious(value: File): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: File): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: FileChangeState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: FileChangeState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

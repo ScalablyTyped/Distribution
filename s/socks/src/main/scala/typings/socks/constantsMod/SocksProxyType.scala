@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SocksProxyType extends StObject
 object SocksProxyType {
   
-  @scala.inline
-  def `4`: typings.socks.socksNumbers.`4` = 4.asInstanceOf[typings.socks.socksNumbers.`4`]
+  inline def `4`: typings.socks.socksNumbers.`4` = 4.asInstanceOf[typings.socks.socksNumbers.`4`]
   
-  @scala.inline
-  def `5`: typings.socks.socksNumbers.`5` = 5.asInstanceOf[typings.socks.socksNumbers.`5`]
+  inline def `5`: typings.socks.socksNumbers.`5` = 5.asInstanceOf[typings.socks.socksNumbers.`5`]
 }

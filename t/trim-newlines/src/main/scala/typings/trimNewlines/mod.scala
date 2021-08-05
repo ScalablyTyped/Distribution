@@ -15,8 +15,7 @@ object mod {
   	//=> '🦄'
   	```
   	*/
-  @scala.inline
-  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("trim-newlines", JSImport.Namespace)
   @js.native
@@ -31,8 +30,7 @@ object mod {
   	//=> '\n🦄'
   	```
   	*/
-  @scala.inline
-  def end(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("end")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def end(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("end")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
   	Trim from the start of a string.
@@ -43,6 +41,5 @@ object mod {
   	//=> '🦄\r\n'
   	```
   	*/
-  @scala.inline
-  def start(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def start(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(string.asInstanceOf[js.Any]).asInstanceOf[String]
 }

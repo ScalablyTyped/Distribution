@@ -93,82 +93,57 @@ trait NotificationConstructorOptions extends StObject {
 }
 object NotificationConstructorOptions {
   
-  @scala.inline
-  def apply(body: String, title: String): NotificationConstructorOptions = {
+  inline def apply(body: String, title: String): NotificationConstructorOptions = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationConstructorOptions]
   }
   
-  @scala.inline
-  implicit class NotificationConstructorOptionsMutableBuilder[Self <: NotificationConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[NotificationAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[NotificationAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: NotificationAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: NotificationAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseButtonText(value: String): Self = StObject.set(x, "closeButtonText", value.asInstanceOf[js.Any])
+    inline def setCloseButtonText(value: String): Self = StObject.set(x, "closeButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseButtonTextUndefined: Self = StObject.set(x, "closeButtonText", js.undefined)
+    inline def setCloseButtonTextUndefined: Self = StObject.set(x, "closeButtonText", js.undefined)
     
-    @scala.inline
-    def setHasReply(value: Boolean): Self = StObject.set(x, "hasReply", value.asInstanceOf[js.Any])
+    inline def setHasReply(value: Boolean): Self = StObject.set(x, "hasReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasReplyUndefined: Self = StObject.set(x, "hasReply", js.undefined)
+    inline def setHasReplyUndefined: Self = StObject.set(x, "hasReply", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String | NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String | NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setReplyPlaceholder(value: String): Self = StObject.set(x, "replyPlaceholder", value.asInstanceOf[js.Any])
+    inline def setReplyPlaceholder(value: String): Self = StObject.set(x, "replyPlaceholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyPlaceholderUndefined: Self = StObject.set(x, "replyPlaceholder", js.undefined)
+    inline def setReplyPlaceholderUndefined: Self = StObject.set(x, "replyPlaceholder", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    @scala.inline
-    def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    inline def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+    inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    @scala.inline
-    def setTimeoutType(value: default | never): Self = StObject.set(x, "timeoutType", value.asInstanceOf[js.Any])
+    inline def setTimeoutType(value: default | never): Self = StObject.set(x, "timeoutType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutTypeUndefined: Self = StObject.set(x, "timeoutType", js.undefined)
+    inline def setTimeoutTypeUndefined: Self = StObject.set(x, "timeoutType", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrgency(value: normal | critical | low): Self = StObject.set(x, "urgency", value.asInstanceOf[js.Any])
+    inline def setUrgency(value: normal | critical | low): Self = StObject.set(x, "urgency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrgencyUndefined: Self = StObject.set(x, "urgency", js.undefined)
+    inline def setUrgencyUndefined: Self = StObject.set(x, "urgency", js.undefined)
   }
 }

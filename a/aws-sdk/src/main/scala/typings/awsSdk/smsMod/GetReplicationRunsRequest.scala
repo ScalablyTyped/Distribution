@@ -23,28 +23,21 @@ trait GetReplicationRunsRequest extends StObject {
 }
 object GetReplicationRunsRequest {
   
-  @scala.inline
-  def apply(replicationJobId: ReplicationJobId): GetReplicationRunsRequest = {
+  inline def apply(replicationJobId: ReplicationJobId): GetReplicationRunsRequest = {
     val __obj = js.Dynamic.literal(replicationJobId = replicationJobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReplicationRunsRequest]
   }
   
-  @scala.inline
-  implicit class GetReplicationRunsRequestMutableBuilder[Self <: GetReplicationRunsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetReplicationRunsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setReplicationJobId(value: ReplicationJobId): Self = StObject.set(x, "replicationJobId", value.asInstanceOf[js.Any])
+    inline def setReplicationJobId(value: ReplicationJobId): Self = StObject.set(x, "replicationJobId", value.asInstanceOf[js.Any])
   }
 }

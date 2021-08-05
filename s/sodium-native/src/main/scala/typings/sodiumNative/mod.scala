@@ -19,13 +19,10 @@ object mod {
   @js.native
   val cryptoAeadXchacha20poly1305IetfABYTES: Double = js.native
   
-  @scala.inline
-  def cryptoAeadXchacha20poly1305IetfDecrypt(message: Buffer, nullValue: Null, ciphertext: Buffer, ad: Null, npub: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(message.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], npub.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoAeadXchacha20poly1305IetfDecrypt(message: Buffer, nullValue: Null, ciphertext: Buffer, ad: Buffer, npub: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(message.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], npub.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoAeadXchacha20poly1305IetfDecrypt(message: Buffer, nullValue: Null, ciphertext: Buffer, ad: Null, npub: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(message.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], npub.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoAeadXchacha20poly1305IetfDecrypt(message: Buffer, nullValue: Null, ciphertext: Buffer, ad: Buffer, npub: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(message.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], npub.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoAeadXchacha20poly1305IetfDecryptDetached(
+  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
     message: Buffer,
     nullValue: Null,
     ciphertext: Buffer,
@@ -34,8 +31,7 @@ object mod {
     npub: Buffer,
     key: Buffer
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(message.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], npub.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoAeadXchacha20poly1305IetfDecryptDetached(
+  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
     message: Buffer,
     nullValue: Null,
     ciphertext: Buffer,
@@ -45,13 +41,10 @@ object mod {
     key: Buffer
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(message.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], npub.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoAeadXchacha20poly1305IetfEncrypt(ciphertext: Buffer, message: Buffer, ad: Null, nullValue: Null, npub: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any], npub.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoAeadXchacha20poly1305IetfEncrypt(ciphertext: Buffer, message: Buffer, ad: Buffer, nullValue: Null, npub: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any], npub.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoAeadXchacha20poly1305IetfEncrypt(ciphertext: Buffer, message: Buffer, ad: Null, nullValue: Null, npub: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any], npub.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoAeadXchacha20poly1305IetfEncrypt(ciphertext: Buffer, message: Buffer, ad: Buffer, nullValue: Null, npub: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any], npub.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoAeadXchacha20poly1305IetfEncryptDetached(
+  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
     ciphertext: Buffer,
     mac: Buffer,
     message: Buffer,
@@ -60,8 +53,7 @@ object mod {
     npub: Buffer,
     key: Buffer
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], message.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any], npub.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoAeadXchacha20poly1305IetfEncryptDetached(
+  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
     ciphertext: Buffer,
     mac: Buffer,
     message: Buffer,
@@ -75,8 +67,7 @@ object mod {
   @js.native
   val cryptoAeadXchacha20poly1305IetfKEYBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoAeadXchacha20poly1305IetfKeygen(key: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_keygen")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cryptoAeadXchacha20poly1305IetfKeygen(key: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_keygen")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_aead_xchacha20poly1305_ietf_MESSAGEBYTES_MAX")
   @js.native
@@ -90,8 +81,7 @@ object mod {
   @js.native
   val cryptoAeadXchacha20poly1305IetfNSECBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoAuth(output: Buffer, input: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoAuth(output: Buffer, input: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_auth_BYTES")
   @js.native
@@ -105,11 +95,9 @@ object mod {
   @js.native
   val cryptoAuthPRIMITIVE: String = js.native
   
-  @scala.inline
-  def cryptoAuthVerify(output: Buffer, input: Buffer, key: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_verify")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoAuthVerify(output: Buffer, input: Buffer, key: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_verify")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def cryptoBoxDetached(
+  inline def cryptoBoxDetached(
     ciphertext: Buffer,
     mac: Buffer,
     message: Buffer,
@@ -118,11 +106,9 @@ object mod {
     secretKey: Buffer
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoBoxEasy(ciphertext: Buffer, message: Buffer, nonce: Buffer, publicKey: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoBoxEasy(ciphertext: Buffer, message: Buffer, nonce: Buffer, publicKey: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoBoxKeypair(publicKey: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoBoxKeypair(publicKey: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_box_MACBYTES")
   @js.native
@@ -132,8 +118,7 @@ object mod {
   @js.native
   val cryptoBoxNONCEBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoBoxOpenDetached(
+  inline def cryptoBoxOpenDetached(
     message: Buffer,
     ciphertext: Buffer,
     mac: Buffer,
@@ -142,8 +127,7 @@ object mod {
     secretKey: Buffer
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_detached")(message.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def cryptoBoxOpenEasy(message: Buffer, ciphertext: Buffer, nonce: Buffer, publicKey: Buffer, secretKey: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy")(message.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoBoxOpenEasy(message: Buffer, ciphertext: Buffer, nonce: Buffer, publicKey: Buffer, secretKey: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy")(message.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("sodium-native", "crypto_box_PRIMITIVE")
   @js.native
@@ -165,27 +149,21 @@ object mod {
   @js.native
   val cryptoBoxSEEDBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoBoxSeal(ciphertext: Buffer, message: Buffer, publicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoBoxSeal(ciphertext: Buffer, message: Buffer, publicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoBoxSealOpen(message: Buffer, ciphertext: Buffer, publicKey: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal_open")(message.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoBoxSealOpen(message: Buffer, ciphertext: Buffer, publicKey: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal_open")(message.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoBoxSeedKeypair(publicKey: Buffer, secretKey: Buffer, seed: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seed_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoBoxSeedKeypair(publicKey: Buffer, secretKey: Buffer, seed: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seed_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoCoreEd25519Add(r: Buffer, p: Buffer, q: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_add")(r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoCoreEd25519Add(r: Buffer, p: Buffer, q: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_add")(r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_core_ed25519_BYTES")
   @js.native
   val cryptoCoreEd25519BYTES: Double = js.native
   
-  @scala.inline
-  def cryptoCoreEd25519FromUniform(p: Buffer, r: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_uniform")(p.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoCoreEd25519FromUniform(p: Buffer, r: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_uniform")(p.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoCoreEd25519IsValidPoint(p: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_is_valid_point")(p.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def cryptoCoreEd25519IsValidPoint(p: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_is_valid_point")(p.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("sodium-native", "crypto_core_ed25519_NONREDUCEDSCALARBYTES")
   @js.native
@@ -195,38 +173,28 @@ object mod {
   @js.native
   val cryptoCoreEd25519SCALARBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoCoreEd25519ScalarAdd(z: Buffer, x: Buffer, y: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_add")(z.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoCoreEd25519ScalarAdd(z: Buffer, x: Buffer, y: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_add")(z.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoCoreEd25519ScalarComplement(comp: Buffer, s: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_complement")(comp.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoCoreEd25519ScalarComplement(comp: Buffer, s: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_complement")(comp.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoCoreEd25519ScalarInvert(recip: Buffer, s: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_invert")(recip.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoCoreEd25519ScalarInvert(recip: Buffer, s: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_invert")(recip.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoCoreEd25519ScalarNegate(neg: Buffer, s: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_negate")(neg.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoCoreEd25519ScalarNegate(neg: Buffer, s: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_negate")(neg.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoCoreEd25519ScalarRandom(r: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_random")(r.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cryptoCoreEd25519ScalarRandom(r: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_random")(r.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoCoreEd25519ScalarReduce(r: Buffer, s: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_reduce")(r.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoCoreEd25519ScalarReduce(r: Buffer, s: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_reduce")(r.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoCoreEd25519ScalarSub(z: Buffer, x: Buffer, y: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_sub")(z.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoCoreEd25519ScalarSub(z: Buffer, x: Buffer, y: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_sub")(z.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoCoreEd25519Sub(r: Buffer, p: Buffer, q: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_sub")(r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoCoreEd25519Sub(r: Buffer, p: Buffer, q: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_sub")(r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_core_ed25519_UNIFORMBYTES")
   @js.native
   val cryptoCoreEd25519UNIFORMBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoGenerichash(output: Buffer, input: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoGenerichash(output: Buffer, input: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoGenerichash(output: Buffer, input: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoGenerichash(output: Buffer, input: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_generichash_BYTES")
   @js.native
@@ -240,19 +208,13 @@ object mod {
   @js.native
   val cryptoGenerichashBYTESMIN: Double = js.native
   
-  @scala.inline
-  def cryptoGenerichashBatch(output: Buffer, inputArray: js.Array[Buffer]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_batch")(output.asInstanceOf[js.Any], inputArray.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoGenerichashBatch(output: Buffer, inputArray: js.Array[Buffer], key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_batch")(output.asInstanceOf[js.Any], inputArray.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoGenerichashBatch(output: Buffer, inputArray: js.Array[Buffer]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_batch")(output.asInstanceOf[js.Any], inputArray.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoGenerichashBatch(output: Buffer, inputArray: js.Array[Buffer], key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_batch")(output.asInstanceOf[js.Any], inputArray.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoGenerichashInstance(): CryptoGenericHashWrap = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_instance")().asInstanceOf[CryptoGenericHashWrap]
-  @scala.inline
-  def cryptoGenerichashInstance(key: Unit, outputLength: Double): CryptoGenericHashWrap = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_instance")(key.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any])).asInstanceOf[CryptoGenericHashWrap]
-  @scala.inline
-  def cryptoGenerichashInstance(key: Buffer): CryptoGenericHashWrap = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_instance")(key.asInstanceOf[js.Any]).asInstanceOf[CryptoGenericHashWrap]
-  @scala.inline
-  def cryptoGenerichashInstance(key: Buffer, outputLength: Double): CryptoGenericHashWrap = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_instance")(key.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any])).asInstanceOf[CryptoGenericHashWrap]
+  inline def cryptoGenerichashInstance(): CryptoGenericHashWrap = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_instance")().asInstanceOf[CryptoGenericHashWrap]
+  inline def cryptoGenerichashInstance(key: Unit, outputLength: Double): CryptoGenericHashWrap = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_instance")(key.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any])).asInstanceOf[CryptoGenericHashWrap]
+  inline def cryptoGenerichashInstance(key: Buffer): CryptoGenericHashWrap = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_instance")(key.asInstanceOf[js.Any]).asInstanceOf[CryptoGenericHashWrap]
+  inline def cryptoGenerichashInstance(key: Buffer, outputLength: Double): CryptoGenericHashWrap = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_instance")(key.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any])).asInstanceOf[CryptoGenericHashWrap]
   
   @JSImport("sodium-native", "crypto_generichash_KEYBYTES")
   @js.native
@@ -282,29 +244,25 @@ object mod {
   @js.native
   val cryptoHashPRIMITIVE: String = js.native
   
-  @scala.inline
-  def cryptoHashSha256(output: Buffer, input: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoHashSha256(output: Buffer, input: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_hash_sha256_BYTES")
   @js.native
   val cryptoHashSha256BYTES: Double = js.native
   
-  @scala.inline
-  def cryptoHashSha256Instance(): CryptoHashSha256Wrap = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256_instance")().asInstanceOf[CryptoHashSha256Wrap]
+  inline def cryptoHashSha256Instance(): CryptoHashSha256Wrap = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256_instance")().asInstanceOf[CryptoHashSha256Wrap]
   
   @JSImport("sodium-native", "crypto_hash_sha256_STATEBYTES")
   @js.native
   val cryptoHashSha256STATEBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoHashSha512(output: Buffer, input: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoHashSha512(output: Buffer, input: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_hash_sha512_BYTES")
   @js.native
   val cryptoHashSha512BYTES: Double = js.native
   
-  @scala.inline
-  def cryptoHashSha512Instance(): CryptoHashSha512Wrap = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512_instance")().asInstanceOf[CryptoHashSha512Wrap]
+  inline def cryptoHashSha512Instance(): CryptoHashSha512Wrap = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512_instance")().asInstanceOf[CryptoHashSha512Wrap]
   
   @JSImport("sodium-native", "crypto_hash_sha512_STATEBYTES")
   @js.native
@@ -322,31 +280,24 @@ object mod {
   @js.native
   val cryptoKdfCONTEXTBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoKdfDeriveFromKey(subkey: Buffer, subkeyId: Double, context: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_derive_from_key")(subkey.asInstanceOf[js.Any], subkeyId.asInstanceOf[js.Any], context.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoKdfDeriveFromKey(subkey: Buffer, subkeyId: Double, context: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_derive_from_key")(subkey.asInstanceOf[js.Any], subkeyId.asInstanceOf[js.Any], context.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_kdf_KEYBYTES")
   @js.native
   val cryptoKdfKEYBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoKdfKeygen(key: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_keygen")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cryptoKdfKeygen(key: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_keygen")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_kdf_PRIMITIVE")
   @js.native
   val cryptoKdfPRIMITIVE: String = js.native
   
-  @scala.inline
-  def cryptoKxClientSessionKeys(rx: Null, tx: Null, clientPublicKey: Buffer, clientSecretKey: Buffer, serverPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_client_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any], clientSecretKey.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoKxClientSessionKeys(rx: Null, tx: Buffer, clientPublicKey: Buffer, clientSecretKey: Buffer, serverPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_client_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any], clientSecretKey.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoKxClientSessionKeys(rx: Buffer, tx: Null, clientPublicKey: Buffer, clientSecretKey: Buffer, serverPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_client_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any], clientSecretKey.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoKxClientSessionKeys(rx: Buffer, tx: Buffer, clientPublicKey: Buffer, clientSecretKey: Buffer, serverPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_client_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any], clientSecretKey.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoKxClientSessionKeys(rx: Null, tx: Null, clientPublicKey: Buffer, clientSecretKey: Buffer, serverPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_client_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any], clientSecretKey.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoKxClientSessionKeys(rx: Null, tx: Buffer, clientPublicKey: Buffer, clientSecretKey: Buffer, serverPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_client_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any], clientSecretKey.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoKxClientSessionKeys(rx: Buffer, tx: Null, clientPublicKey: Buffer, clientSecretKey: Buffer, serverPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_client_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any], clientSecretKey.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoKxClientSessionKeys(rx: Buffer, tx: Buffer, clientPublicKey: Buffer, clientSecretKey: Buffer, serverPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_client_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any], clientSecretKey.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoKxKeypair(publicKey: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoKxKeypair(publicKey: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_kx_PRIMITIVE")
   @js.native
@@ -368,27 +319,20 @@ object mod {
   @js.native
   val cryptoKxSESSIONKEYBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoKxSeedKeypair(publicKey: Buffer, secretKey: Buffer, seed: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_seed_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoKxSeedKeypair(publicKey: Buffer, secretKey: Buffer, seed: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_seed_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoKxServerSessionKeys(rx: Null, tx: Null, serverPublicKey: Buffer, serverSecretKey: Buffer, clientPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_server_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any], serverSecretKey.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoKxServerSessionKeys(rx: Null, tx: Buffer, serverPublicKey: Buffer, serverSecretKey: Buffer, clientPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_server_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any], serverSecretKey.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoKxServerSessionKeys(rx: Buffer, tx: Null, serverPublicKey: Buffer, serverSecretKey: Buffer, clientPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_server_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any], serverSecretKey.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoKxServerSessionKeys(rx: Buffer, tx: Buffer, serverPublicKey: Buffer, serverSecretKey: Buffer, clientPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_server_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any], serverSecretKey.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoKxServerSessionKeys(rx: Null, tx: Null, serverPublicKey: Buffer, serverSecretKey: Buffer, clientPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_server_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any], serverSecretKey.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoKxServerSessionKeys(rx: Null, tx: Buffer, serverPublicKey: Buffer, serverSecretKey: Buffer, clientPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_server_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any], serverSecretKey.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoKxServerSessionKeys(rx: Buffer, tx: Null, serverPublicKey: Buffer, serverSecretKey: Buffer, clientPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_server_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any], serverSecretKey.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoKxServerSessionKeys(rx: Buffer, tx: Buffer, serverPublicKey: Buffer, serverSecretKey: Buffer, clientPublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_server_session_keys")(rx.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any], serverSecretKey.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoOnetimeauth(output: Buffer, input: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoOnetimeauth(output: Buffer, input: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_onetimeauth_BYTES")
   @js.native
   val cryptoOnetimeauthBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoOnetimeauthInstance(key: Buffer): CryptoOneTimeAuthWrap = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_instance")(key.asInstanceOf[js.Any]).asInstanceOf[CryptoOneTimeAuthWrap]
+  inline def cryptoOnetimeauthInstance(key: Buffer): CryptoOneTimeAuthWrap = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_instance")(key.asInstanceOf[js.Any]).asInstanceOf[CryptoOneTimeAuthWrap]
   
   @JSImport("sodium-native", "crypto_onetimeauth_KEYBYTES")
   @js.native
@@ -402,11 +346,9 @@ object mod {
   @js.native
   val cryptoOnetimeauthSTATEBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoOnetimeauthVerify(output: Buffer, input: Buffer, key: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_verify")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoOnetimeauthVerify(output: Buffer, input: Buffer, key: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_verify")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def cryptoPwhash(
+  inline def cryptoPwhash(
     output: Buffer,
     password: Buffer,
     salt: Buffer,
@@ -427,8 +369,7 @@ object mod {
   @js.native
   val cryptoPwhashALGDEFAULT: Double = js.native
   
-  @scala.inline
-  def cryptoPwhashAsync(
+  inline def cryptoPwhashAsync(
     output: Buffer,
     password: Buffer,
     salt: Buffer,
@@ -570,11 +511,9 @@ object mod {
   @js.native
   val cryptoPwhashScryptsalsa208sha256STRPREFIX: String = js.native
   
-  @scala.inline
-  def cryptoPwhashStr(output: Buffer, password: Buffer, opslimit: Double, memlimit: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str")(output.asInstanceOf[js.Any], password.asInstanceOf[js.Any], opslimit.asInstanceOf[js.Any], memlimit.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoPwhashStr(output: Buffer, password: Buffer, opslimit: Double, memlimit: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str")(output.asInstanceOf[js.Any], password.asInstanceOf[js.Any], opslimit.asInstanceOf[js.Any], memlimit.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoPwhashStrAsync(
+  inline def cryptoPwhashStrAsync(
     output: Buffer,
     password: Buffer,
     opslimit: Double,
@@ -582,44 +521,35 @@ object mod {
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_async")(output.asInstanceOf[js.Any], password.asInstanceOf[js.Any], opslimit.asInstanceOf[js.Any], memlimit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoPwhashStrNeedsRehash(hash: Buffer, opslimit: Double, memlimit: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_needs_rehash")(hash.asInstanceOf[js.Any], opslimit.asInstanceOf[js.Any], memlimit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoPwhashStrNeedsRehash(hash: Buffer, opslimit: Double, memlimit: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_needs_rehash")(hash.asInstanceOf[js.Any], opslimit.asInstanceOf[js.Any], memlimit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def cryptoPwhashStrVerify(str: Buffer, password: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_verify")(str.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoPwhashStrVerify(str: Buffer, password: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_verify")(str.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def cryptoPwhashStrVerifyAsync(
+  inline def cryptoPwhashStrVerifyAsync(
     str: Buffer,
     password: Buffer,
     callback: js.Function2[/* err */ Error | Null, /* bool */ Boolean, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_verify_async")(str.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoScalarmult(sharedSecret: Buffer, secretKey: Buffer, remotePublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult")(sharedSecret.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], remotePublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoScalarmult(sharedSecret: Buffer, secretKey: Buffer, remotePublicKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult")(sharedSecret.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], remotePublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_scalarmult_BYTES")
   @js.native
   val cryptoScalarmultBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoScalarmultBase(publicKey: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_base")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoScalarmultBase(publicKey: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_base")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoScalarmultEd25519(q: Buffer, n: Buffer, p: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519")(q.asInstanceOf[js.Any], n.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoScalarmultEd25519(q: Buffer, n: Buffer, p: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519")(q.asInstanceOf[js.Any], n.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_scalarmult_ed25519_BYTES")
   @js.native
   val cryptoScalarmultEd25519BYTES: Double = js.native
   
-  @scala.inline
-  def cryptoScalarmultEd25519Base(q: Buffer, n: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_base")(q.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoScalarmultEd25519Base(q: Buffer, n: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_base")(q.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoScalarmultEd25519BaseNoclamp(q: Buffer, n: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_base_noclamp")(q.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoScalarmultEd25519BaseNoclamp(q: Buffer, n: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_base_noclamp")(q.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoScalarmultEd25519Noclamp(q: Buffer, n: Buffer, p: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_noclamp")(q.asInstanceOf[js.Any], n.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoScalarmultEd25519Noclamp(q: Buffer, n: Buffer, p: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_noclamp")(q.asInstanceOf[js.Any], n.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_scalarmult_ed25519_SCALARBYTES")
   @js.native
@@ -633,11 +563,9 @@ object mod {
   @js.native
   val cryptoScalarmultSCALARBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoSecretboxDetached(ciphertext: Buffer, mac: Buffer, message: Buffer, nonce: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSecretboxDetached(ciphertext: Buffer, mac: Buffer, message: Buffer, nonce: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoSecretboxEasy(ciphertext: Buffer, message: Buffer, nonce: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSecretboxEasy(ciphertext: Buffer, message: Buffer, nonce: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_secretbox_KEYBYTES")
   @js.native
@@ -651,11 +579,9 @@ object mod {
   @js.native
   val cryptoSecretboxNONCEBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoSecretboxOpenDetached(message: Buffer, ciphertext: Buffer, mac: Buffer, nonce: Buffer, secretKey: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_detached")(message.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoSecretboxOpenDetached(message: Buffer, ciphertext: Buffer, mac: Buffer, nonce: Buffer, secretKey: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_detached")(message.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def cryptoSecretboxOpenEasy(message: Buffer, ciphertext: Buffer, nonce: Buffer, secretKey: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(message.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoSecretboxOpenEasy(message: Buffer, ciphertext: Buffer, nonce: Buffer, secretKey: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(message.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("sodium-native", "crypto_secretbox_PRIMITIVE")
   @js.native
@@ -669,11 +595,9 @@ object mod {
   @js.native
   val cryptoSecretstreamXchacha20poly1305HEADERBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoSecretstreamXchacha20poly1305InitPull(state: Xchacha20poly1305State, header: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_init_pull")(state.asInstanceOf[js.Any], header.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSecretstreamXchacha20poly1305InitPull(state: Xchacha20poly1305State, header: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_init_pull")(state.asInstanceOf[js.Any], header.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoSecretstreamXchacha20poly1305InitPush(state: Xchacha20poly1305State, header: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_init_push")(state.asInstanceOf[js.Any], header.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSecretstreamXchacha20poly1305InitPush(state: Xchacha20poly1305State, header: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_init_push")(state.asInstanceOf[js.Any], header.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_secretstream_xchacha20poly1305_KEYBYTES")
   @js.native
@@ -683,21 +607,15 @@ object mod {
   @js.native
   val cryptoSecretstreamXchacha20poly1305MESSAGEBYTESMAX: Double = js.native
   
-  @scala.inline
-  def cryptoSecretstreamXchacha20poly1305Pull(state: Xchacha20poly1305State, message: Buffer, tag: Buffer, ciphertext: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state.asInstanceOf[js.Any], message.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoSecretstreamXchacha20poly1305Pull(state: Xchacha20poly1305State, message: Buffer, tag: Buffer, ciphertext: Buffer, ad: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state.asInstanceOf[js.Any], message.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], ad.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(state: Xchacha20poly1305State, message: Buffer, tag: Buffer, ciphertext: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state.asInstanceOf[js.Any], message.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(state: Xchacha20poly1305State, message: Buffer, tag: Buffer, ciphertext: Buffer, ad: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state.asInstanceOf[js.Any], message.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], ad.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoSecretstreamXchacha20poly1305Push(state: Xchacha20poly1305State, ciphertext: Buffer, message: Buffer, ad: Null, tag: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cryptoSecretstreamXchacha20poly1305Push(state: Xchacha20poly1305State, ciphertext: Buffer, message: Buffer, ad: Buffer, tag: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSecretstreamXchacha20poly1305Push(state: Xchacha20poly1305State, ciphertext: Buffer, message: Buffer, ad: Null, tag: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSecretstreamXchacha20poly1305Push(state: Xchacha20poly1305State, ciphertext: Buffer, message: Buffer, ad: Buffer, tag: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoSecretstreamXchacha20poly1305Rekey(state: Xchacha20poly1305State): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_rekey")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cryptoSecretstreamXchacha20poly1305Rekey(state: Xchacha20poly1305State): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_rekey")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoSecretstreamXchacha20poly1305StateNew(): Xchacha20poly1305State = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_state_new")().asInstanceOf[Xchacha20poly1305State]
+  inline def cryptoSecretstreamXchacha20poly1305StateNew(): Xchacha20poly1305State = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_state_new")().asInstanceOf[Xchacha20poly1305State]
   
   @JSImport("sodium-native", "crypto_secretstream_xchacha20poly1305_TAGBYTES")
   @js.native
@@ -719,8 +637,7 @@ object mod {
   @js.native
   val cryptoSecretstreamXchacha20poly1305TAGREKEY: Buffer = js.native
   
-  @scala.inline
-  def cryptoShorthash(output: Buffer, input: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoShorthash(output: Buffer, input: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(output.asInstanceOf[js.Any], input.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_shorthash_BYTES")
   @js.native
@@ -734,30 +651,23 @@ object mod {
   @js.native
   val cryptoShorthashPRIMITIVE: String = js.native
   
-  @scala.inline
-  def cryptoSign(signedMessage: Buffer, message: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(signedMessage.asInstanceOf[js.Any], message.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSign(signedMessage: Buffer, message: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(signedMessage.asInstanceOf[js.Any], message.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_sign_BYTES")
   @js.native
   val cryptoSignBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoSignDetached(signature: Buffer, message: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(signature.asInstanceOf[js.Any], message.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSignDetached(signature: Buffer, message: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(signature.asInstanceOf[js.Any], message.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoSignEd25519PkToCurve25519(curve_pk: Buffer, ed_pk: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_pk_to_curve25519")(curve_pk.asInstanceOf[js.Any], ed_pk.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSignEd25519PkToCurve25519(curve_pk: Buffer, ed_pk: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_pk_to_curve25519")(curve_pk.asInstanceOf[js.Any], ed_pk.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoSignEd25519SkToCurve25519(curve_sk: Buffer, ed_sk: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_curve25519")(curve_sk.asInstanceOf[js.Any], ed_sk.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSignEd25519SkToCurve25519(curve_sk: Buffer, ed_sk: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_curve25519")(curve_sk.asInstanceOf[js.Any], ed_sk.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoSignEd25519SkToPk(pk: Buffer, sk: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_pk")(pk.asInstanceOf[js.Any], sk.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSignEd25519SkToPk(pk: Buffer, sk: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_pk")(pk.asInstanceOf[js.Any], sk.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoSignKeypair(publicKey: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSignKeypair(publicKey: Buffer, secretKey: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoSignOpen(message: Buffer, signedMessage: Buffer, publicKey: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(message.asInstanceOf[js.Any], signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoSignOpen(message: Buffer, signedMessage: Buffer, publicKey: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(message.asInstanceOf[js.Any], signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("sodium-native", "crypto_sign_PUBLICKEYBYTES")
   @js.native
@@ -771,14 +681,11 @@ object mod {
   @js.native
   val cryptoSignSEEDBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoSignSeedKeypair(publicKey: Buffer, secretKey: Buffer, seed: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_seed_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSignSeedKeypair(publicKey: Buffer, secretKey: Buffer, seed: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_seed_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoSignVerifyDetached(signature: Buffer, message: Buffer, publicKey: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_verify_detached")(signature.asInstanceOf[js.Any], message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoSignVerifyDetached(signature: Buffer, message: Buffer, publicKey: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_verify_detached")(signature.asInstanceOf[js.Any], message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def cryptoStream(ciphertext: Buffer, nonce: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoStream(ciphertext: Buffer, nonce: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sodium-native", "crypto_stream_chacha20_KEYBYTES")
   @js.native
@@ -788,11 +695,9 @@ object mod {
   @js.native
   val cryptoStreamChacha20NONCEBYTES: Double = js.native
   
-  @scala.inline
-  def cryptoStreamChacha20Xor(ciphertext: Buffer, message: Buffer, nonce: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoStreamChacha20Xor(ciphertext: Buffer, message: Buffer, nonce: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoStreamChacha20XorInstance(nonce: Buffer, key: Buffer): CryptoStreamChacha20XorWrap = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor_instance")(nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[CryptoStreamChacha20XorWrap]
+  inline def cryptoStreamChacha20XorInstance(nonce: Buffer, key: Buffer): CryptoStreamChacha20XorWrap = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor_instance")(nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[CryptoStreamChacha20XorWrap]
   
   @JSImport("sodium-native", "crypto_stream_chacha20_xor_STATEBYTES")
   @js.native
@@ -810,76 +715,55 @@ object mod {
   @js.native
   val cryptoStreamPRIMITIVE: String = js.native
   
-  @scala.inline
-  def cryptoStreamXor(ciphertext: Buffer, message: Buffer, nonce: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xor")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoStreamXor(ciphertext: Buffer, message: Buffer, nonce: Buffer, key: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xor")(ciphertext.asInstanceOf[js.Any], message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cryptoStreamXorInstance(nonce: Buffer, key: Buffer): CryptoStreamChacha20XorWrap = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xor_instance")(nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[CryptoStreamChacha20XorWrap]
+  inline def cryptoStreamXorInstance(nonce: Buffer, key: Buffer): CryptoStreamChacha20XorWrap = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xor_instance")(nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[CryptoStreamChacha20XorWrap]
   
   @JSImport("sodium-native", "crypto_stream_xor_STATEBYTES")
   @js.native
   val cryptoStreamXorSTATEBYTES: Double = js.native
   
-  @scala.inline
-  def randombytesBuf(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def randombytesBuf(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def randombytesBufDeterministic(buffer: Buffer, seed: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf_deterministic")(buffer.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def randombytesBufDeterministic(buffer: Buffer, seed: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf_deterministic")(buffer.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def randombytesRandom(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_random")().asInstanceOf[Double]
+  inline def randombytesRandom(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_random")().asInstanceOf[Double]
   
   @JSImport("sodium-native", "randombytes_SEEDBYTES")
   @js.native
   val randombytesSEEDBYTES: Double = js.native
   
-  @scala.inline
-  def randombytesUniform(upper_bound: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_uniform")(upper_bound.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def randombytesUniform(upper_bound: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_uniform")(upper_bound.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def sodiumAdd(a: Buffer, b: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sodiumAdd(a: Buffer, b: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def sodiumCompare(b1: Buffer, b2: Buffer): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_compare")(b1.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  inline def sodiumCompare(b1: Buffer, b2: Buffer): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_compare")(b1.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
   
-  @scala.inline
-  def sodiumIncrement(buf: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_increment")(buf.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sodiumIncrement(buf: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_increment")(buf.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def sodiumIsZero(buf: Buffer, len: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_is_zero")(buf.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def sodiumIsZero(buf: Buffer, len: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_is_zero")(buf.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def sodiumMalloc(size: Double): SecureBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_malloc")(size.asInstanceOf[js.Any]).asInstanceOf[SecureBuffer]
+  inline def sodiumMalloc(size: Double): SecureBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_malloc")(size.asInstanceOf[js.Any]).asInstanceOf[SecureBuffer]
   
-  @scala.inline
-  def sodiumMemcmp(b1: Buffer, b2: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_memcmp")(b1.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def sodiumMemcmp(b1: Buffer, b2: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_memcmp")(b1.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def sodiumMemzero(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_memzero")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sodiumMemzero(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_memzero")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def sodiumMlock(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_mlock")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sodiumMlock(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_mlock")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def sodiumMprotectNoaccess(buffer: SecureBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_mprotect_noaccess")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sodiumMprotectNoaccess(buffer: SecureBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_mprotect_noaccess")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def sodiumMprotectReadonly(buffer: SecureBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_mprotect_readonly")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sodiumMprotectReadonly(buffer: SecureBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_mprotect_readonly")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def sodiumMprotectReadwrite(buffer: SecureBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_mprotect_readwrite")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sodiumMprotectReadwrite(buffer: SecureBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_mprotect_readwrite")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def sodiumMunlock(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_munlock")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sodiumMunlock(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sodium_munlock")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def sodiumPad(buf: Buffer, unpaddedLength: Double, blocksize: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_pad")(buf.asInstanceOf[js.Any], unpaddedLength.asInstanceOf[js.Any], blocksize.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def sodiumPad(buf: Buffer, unpaddedLength: Double, blocksize: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_pad")(buf.asInstanceOf[js.Any], unpaddedLength.asInstanceOf[js.Any], blocksize.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def sodiumSub(a: Buffer, b: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sodiumSub(a: Buffer, b: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def sodiumUnpad(buf: Buffer, paddedLength: Double, blocksize: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_unpad")(buf.asInstanceOf[js.Any], paddedLength.asInstanceOf[js.Any], blocksize.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def sodiumUnpad(buf: Buffer, paddedLength: Double, blocksize: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sodium_unpad")(buf.asInstanceOf[js.Any], paddedLength.asInstanceOf[js.Any], blocksize.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   trait CryptoGenericHashWrap extends StObject {
     
@@ -901,21 +785,17 @@ object mod {
   }
   object CryptoGenericHashWrap {
     
-    @scala.inline
-    def apply(`final`: Buffer => Unit, update: Buffer => Unit): CryptoGenericHashWrap = {
+    inline def apply(`final`: Buffer => Unit, update: Buffer => Unit): CryptoGenericHashWrap = {
       val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
       __obj.updateDynamic("final")(js.Any.fromFunction1(`final`))
       __obj.asInstanceOf[CryptoGenericHashWrap]
     }
     
-    @scala.inline
-    implicit class CryptoGenericHashWrapMutableBuilder[Self <: CryptoGenericHashWrap] (val x: Self) extends AnyVal {
+    extension [Self <: CryptoGenericHashWrap](x: Self) {
       
-      @scala.inline
-      def setFinal(value: Buffer => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
+      inline def setFinal(value: Buffer => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: Buffer => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: Buffer => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -939,21 +819,17 @@ object mod {
   }
   object CryptoHashSha256Wrap {
     
-    @scala.inline
-    def apply(`final`: Buffer => Unit, update: Buffer => Unit): CryptoHashSha256Wrap = {
+    inline def apply(`final`: Buffer => Unit, update: Buffer => Unit): CryptoHashSha256Wrap = {
       val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
       __obj.updateDynamic("final")(js.Any.fromFunction1(`final`))
       __obj.asInstanceOf[CryptoHashSha256Wrap]
     }
     
-    @scala.inline
-    implicit class CryptoHashSha256WrapMutableBuilder[Self <: CryptoHashSha256Wrap] (val x: Self) extends AnyVal {
+    extension [Self <: CryptoHashSha256Wrap](x: Self) {
       
-      @scala.inline
-      def setFinal(value: Buffer => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
+      inline def setFinal(value: Buffer => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: Buffer => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: Buffer => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -977,21 +853,17 @@ object mod {
   }
   object CryptoHashSha512Wrap {
     
-    @scala.inline
-    def apply(`final`: Buffer => Unit, update: Buffer => Unit): CryptoHashSha512Wrap = {
+    inline def apply(`final`: Buffer => Unit, update: Buffer => Unit): CryptoHashSha512Wrap = {
       val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
       __obj.updateDynamic("final")(js.Any.fromFunction1(`final`))
       __obj.asInstanceOf[CryptoHashSha512Wrap]
     }
     
-    @scala.inline
-    implicit class CryptoHashSha512WrapMutableBuilder[Self <: CryptoHashSha512Wrap] (val x: Self) extends AnyVal {
+    extension [Self <: CryptoHashSha512Wrap](x: Self) {
       
-      @scala.inline
-      def setFinal(value: Buffer => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
+      inline def setFinal(value: Buffer => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: Buffer => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: Buffer => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -1015,21 +887,17 @@ object mod {
   }
   object CryptoOneTimeAuthWrap {
     
-    @scala.inline
-    def apply(`final`: Buffer => Unit, update: Buffer => Unit): CryptoOneTimeAuthWrap = {
+    inline def apply(`final`: Buffer => Unit, update: Buffer => Unit): CryptoOneTimeAuthWrap = {
       val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
       __obj.updateDynamic("final")(js.Any.fromFunction1(`final`))
       __obj.asInstanceOf[CryptoOneTimeAuthWrap]
     }
     
-    @scala.inline
-    implicit class CryptoOneTimeAuthWrapMutableBuilder[Self <: CryptoOneTimeAuthWrap] (val x: Self) extends AnyVal {
+    extension [Self <: CryptoOneTimeAuthWrap](x: Self) {
       
-      @scala.inline
-      def setFinal(value: Buffer => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
+      inline def setFinal(value: Buffer => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: Buffer => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: Buffer => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -1047,21 +915,17 @@ object mod {
   }
   object CryptoStreamChacha20XorWrap {
     
-    @scala.inline
-    def apply(`final`: () => Unit, update: (Buffer, Buffer) => Unit): CryptoStreamChacha20XorWrap = {
+    inline def apply(`final`: () => Unit, update: (Buffer, Buffer) => Unit): CryptoStreamChacha20XorWrap = {
       val __obj = js.Dynamic.literal(update = js.Any.fromFunction2(update))
       __obj.updateDynamic("final")(js.Any.fromFunction0(`final`))
       __obj.asInstanceOf[CryptoStreamChacha20XorWrap]
     }
     
-    @scala.inline
-    implicit class CryptoStreamChacha20XorWrapMutableBuilder[Self <: CryptoStreamChacha20XorWrap] (val x: Self) extends AnyVal {
+    extension [Self <: CryptoStreamChacha20XorWrap](x: Self) {
       
-      @scala.inline
-      def setFinal(value: () => Unit): Self = StObject.set(x, "final", js.Any.fromFunction0(value))
+      inline def setFinal(value: () => Unit): Self = StObject.set(x, "final", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: (Buffer, Buffer) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (Buffer, Buffer) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     }
   }
   
@@ -1086,23 +950,18 @@ object mod {
   }
   object Xchacha20poly1305State {
     
-    @scala.inline
-    def apply(_pad: Buffer, k: Buffer, nonce: Buffer): Xchacha20poly1305State = {
+    inline def apply(_pad: Buffer, k: Buffer, nonce: Buffer): Xchacha20poly1305State = {
       val __obj = js.Dynamic.literal(_pad = _pad.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
       __obj.asInstanceOf[Xchacha20poly1305State]
     }
     
-    @scala.inline
-    implicit class Xchacha20poly1305StateMutableBuilder[Self <: Xchacha20poly1305State] (val x: Self) extends AnyVal {
+    extension [Self <: Xchacha20poly1305State](x: Self) {
       
-      @scala.inline
-      def setK(value: Buffer): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+      inline def setK(value: Buffer): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: Buffer): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: Buffer): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_pad(value: Buffer): Self = StObject.set(x, "_pad", value.asInstanceOf[js.Any])
+      inline def set_pad(value: Buffer): Self = StObject.set(x, "_pad", value.asInstanceOf[js.Any])
     }
   }
 }

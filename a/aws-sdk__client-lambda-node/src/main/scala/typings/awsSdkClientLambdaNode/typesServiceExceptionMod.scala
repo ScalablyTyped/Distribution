@@ -73,17 +73,14 @@ object typesServiceExceptionMod {
   }
   object ServiceException {
     
-    @scala.inline
-    def apply(): ServiceException = {
+    inline def apply(): ServiceException = {
       val __obj = js.Dynamic.literal(name = "ServiceException")
       __obj.asInstanceOf[ServiceException]
     }
     
-    @scala.inline
-    implicit class ServiceExceptionMutableBuilder[Self <: ServiceException] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ServiceException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ServiceException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,26 +98,20 @@ object typesServiceExceptionMod {
   }
   object ServiceExceptionDetails {
     
-    @scala.inline
-    def apply(): ServiceExceptionDetails = {
+    inline def apply(): ServiceExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ServiceExceptionDetailsMutableBuilder[Self <: ServiceExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
 }

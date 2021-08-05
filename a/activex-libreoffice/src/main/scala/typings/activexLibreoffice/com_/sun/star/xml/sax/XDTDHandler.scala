@@ -27,8 +27,7 @@ trait XDTDHandler
 }
 object XDTDHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     notationDecl: (String, String, String) => Unit,
     queryInterface: `type` => js.Any,
@@ -39,13 +38,10 @@ object XDTDHandler {
     __obj.asInstanceOf[XDTDHandler]
   }
   
-  @scala.inline
-  implicit class XDTDHandlerMutableBuilder[Self <: XDTDHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XDTDHandler](x: Self) {
     
-    @scala.inline
-    def setNotationDecl(value: (String, String, String) => Unit): Self = StObject.set(x, "notationDecl", js.Any.fromFunction3(value))
+    inline def setNotationDecl(value: (String, String, String) => Unit): Self = StObject.set(x, "notationDecl", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUnparsedEntityDecl(value: (String, String, String, String) => Unit): Self = StObject.set(x, "unparsedEntityDecl", js.Any.fromFunction4(value))
+    inline def setUnparsedEntityDecl(value: (String, String, String, String) => Unit): Self = StObject.set(x, "unparsedEntityDecl", js.Any.fromFunction4(value))
   }
 }

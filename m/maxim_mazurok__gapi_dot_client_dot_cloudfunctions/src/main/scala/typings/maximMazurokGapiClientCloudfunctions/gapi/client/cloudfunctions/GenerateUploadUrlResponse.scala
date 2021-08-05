@@ -11,19 +11,15 @@ trait GenerateUploadUrlResponse extends StObject {
 }
 object GenerateUploadUrlResponse {
   
-  @scala.inline
-  def apply(): GenerateUploadUrlResponse = {
+  inline def apply(): GenerateUploadUrlResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateUploadUrlResponse]
   }
   
-  @scala.inline
-  implicit class GenerateUploadUrlResponseMutableBuilder[Self <: GenerateUploadUrlResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateUploadUrlResponse](x: Self) {
     
-    @scala.inline
-    def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
+    inline def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
+    inline def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
   }
 }

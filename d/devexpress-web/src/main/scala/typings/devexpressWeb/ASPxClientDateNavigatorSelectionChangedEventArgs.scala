@@ -19,19 +19,15 @@ trait ASPxClientDateNavigatorSelectionChangedEventArgs
 }
 object ASPxClientDateNavigatorSelectionChangedEventArgs {
   
-  @scala.inline
-  def apply(selectedDates: js.Array[Date]): ASPxClientDateNavigatorSelectionChangedEventArgs = {
+  inline def apply(selectedDates: js.Array[Date]): ASPxClientDateNavigatorSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(selectedDates = selectedDates.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDateNavigatorSelectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDateNavigatorSelectionChangedEventArgsMutableBuilder[Self <: ASPxClientDateNavigatorSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDateNavigatorSelectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSelectedDates(value: js.Array[Date]): Self = StObject.set(x, "selectedDates", value.asInstanceOf[js.Any])
+    inline def setSelectedDates(value: js.Array[Date]): Self = StObject.set(x, "selectedDates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedDatesVarargs(value: Date*): Self = StObject.set(x, "selectedDates", js.Array(value :_*))
+    inline def setSelectedDatesVarargs(value: Date*): Self = StObject.set(x, "selectedDates", js.Array(value :_*))
   }
 }

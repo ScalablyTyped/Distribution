@@ -43,8 +43,7 @@ trait EditFlags extends StObject {
 }
 object EditFlags {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canCopy: Boolean,
     canCut: Boolean,
     canDelete: Boolean,
@@ -57,28 +56,20 @@ object EditFlags {
     __obj.asInstanceOf[EditFlags]
   }
   
-  @scala.inline
-  implicit class EditFlagsMutableBuilder[Self <: EditFlags] (val x: Self) extends AnyVal {
+  extension [Self <: EditFlags](x: Self) {
     
-    @scala.inline
-    def setCanCopy(value: Boolean): Self = StObject.set(x, "canCopy", value.asInstanceOf[js.Any])
+    inline def setCanCopy(value: Boolean): Self = StObject.set(x, "canCopy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanCut(value: Boolean): Self = StObject.set(x, "canCut", value.asInstanceOf[js.Any])
+    inline def setCanCut(value: Boolean): Self = StObject.set(x, "canCut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanDelete(value: Boolean): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
+    inline def setCanDelete(value: Boolean): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanPaste(value: Boolean): Self = StObject.set(x, "canPaste", value.asInstanceOf[js.Any])
+    inline def setCanPaste(value: Boolean): Self = StObject.set(x, "canPaste", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanRedo(value: Boolean): Self = StObject.set(x, "canRedo", value.asInstanceOf[js.Any])
+    inline def setCanRedo(value: Boolean): Self = StObject.set(x, "canRedo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanSelectAll(value: Boolean): Self = StObject.set(x, "canSelectAll", value.asInstanceOf[js.Any])
+    inline def setCanSelectAll(value: Boolean): Self = StObject.set(x, "canSelectAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanUndo(value: Boolean): Self = StObject.set(x, "canUndo", value.asInstanceOf[js.Any])
+    inline def setCanUndo(value: Boolean): Self = StObject.set(x, "canUndo", value.asInstanceOf[js.Any])
   }
 }

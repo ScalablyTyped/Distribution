@@ -31,7 +31,7 @@ object parserMod {
   class Parser protected () extends StObject {
     def this(program: Program, opts: ParserOptions) = this()
     
-    var checker: js.Any = js.native
+    /* private */ var checker: js.Any = js.native
     
     def extractDefaultPropsFromComponent(symbol: Symbol, source: SourceFile): js.Object = js.native
     
@@ -45,7 +45,7 @@ object parserMod {
     
     def getCallSignature(symbol: Symbol): Signature = js.native
     
-    var getComponentFromExpression: js.Any = js.native
+    /* private */ var getComponentFromExpression: js.Any = js.native
     
     def getComponentInfo(exp: Symbol, source: SourceFile): ComponentDoc | Null = js.native
     def getComponentInfo(exp: Symbol, source: SourceFile, componentNameResolver: ComponentNameResolver): ComponentDoc | Null = js.native
@@ -77,19 +77,19 @@ object parserMod {
     
     def getReturnDescription(symbol: Symbol): String | Null = js.native
     
-    var getValuesFromUnionType: js.Any = js.native
+    /* private */ var getValuesFromUnionType: js.Any = js.native
     
     def isTaggedPublic(symbol: Symbol): Boolean = js.native
     
-    var propFilter: js.Any = js.native
+    /* private */ var propFilter: js.Any = js.native
     
-    var savePropValueAsString: js.Any = js.native
+    /* private */ var savePropValueAsString: js.Any = js.native
     
-    var shouldExtractLiteralValuesFromEnum: js.Any = js.native
+    /* private */ var shouldExtractLiteralValuesFromEnum: js.Any = js.native
     
-    var shouldExtractValuesFromUnion: js.Any = js.native
+    /* private */ var shouldExtractValuesFromUnion: js.Any = js.native
     
-    var shouldRemoveUndefinedFromOptional: js.Any = js.native
+    /* private */ var shouldRemoveUndefinedFromOptional: js.Any = js.native
   }
   
   @JSImport("react-docgen-typescript/lib/parser", "defaultOptions")
@@ -100,30 +100,20 @@ object parserMod {
   @js.native
   val defaultParserOpts: ParserOptions = js.native
   
-  @scala.inline
-  def getDefaultExportForFile(source: SourceFile): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultExportForFile")(source.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDefaultExportForFile(source: SourceFile): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultExportForFile")(source.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def parse(filePathOrPaths: String): js.Array[ComponentDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComponentDoc]]
-  @scala.inline
-  def parse(filePathOrPaths: String, parserOpts: ParserOptions): js.Array[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComponentDoc]]
-  @scala.inline
-  def parse(filePathOrPaths: js.Array[String]): js.Array[ComponentDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComponentDoc]]
-  @scala.inline
-  def parse(filePathOrPaths: js.Array[String], parserOpts: ParserOptions): js.Array[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComponentDoc]]
+  inline def parse(filePathOrPaths: String): js.Array[ComponentDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComponentDoc]]
+  inline def parse(filePathOrPaths: String, parserOpts: ParserOptions): js.Array[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComponentDoc]]
+  inline def parse(filePathOrPaths: js.Array[String]): js.Array[ComponentDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComponentDoc]]
+  inline def parse(filePathOrPaths: js.Array[String], parserOpts: ParserOptions): js.Array[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComponentDoc]]
   
-  @scala.inline
-  def withCompilerOptions(compilerOptions: CompilerOptions): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withCompilerOptions")(compilerOptions.asInstanceOf[js.Any]).asInstanceOf[FileParser]
-  @scala.inline
-  def withCompilerOptions(compilerOptions: CompilerOptions, parserOpts: ParserOptions): FileParser = (^.asInstanceOf[js.Dynamic].applyDynamic("withCompilerOptions")(compilerOptions.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[FileParser]
+  inline def withCompilerOptions(compilerOptions: CompilerOptions): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withCompilerOptions")(compilerOptions.asInstanceOf[js.Any]).asInstanceOf[FileParser]
+  inline def withCompilerOptions(compilerOptions: CompilerOptions, parserOpts: ParserOptions): FileParser = (^.asInstanceOf[js.Dynamic].applyDynamic("withCompilerOptions")(compilerOptions.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[FileParser]
   
-  @scala.inline
-  def withCustomConfig(tsconfigPath: String, parserOpts: ParserOptions): FileParser = (^.asInstanceOf[js.Dynamic].applyDynamic("withCustomConfig")(tsconfigPath.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[FileParser]
+  inline def withCustomConfig(tsconfigPath: String, parserOpts: ParserOptions): FileParser = (^.asInstanceOf[js.Dynamic].applyDynamic("withCustomConfig")(tsconfigPath.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[FileParser]
   
-  @scala.inline
-  def withDefaultConfig(): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withDefaultConfig")().asInstanceOf[FileParser]
-  @scala.inline
-  def withDefaultConfig(parserOpts: ParserOptions): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withDefaultConfig")(parserOpts.asInstanceOf[js.Any]).asInstanceOf[FileParser]
+  inline def withDefaultConfig(): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withDefaultConfig")().asInstanceOf[FileParser]
+  inline def withDefaultConfig(parserOpts: ParserOptions): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withDefaultConfig")(parserOpts.asInstanceOf[js.Any]).asInstanceOf[FileParser]
   
   trait Component extends StObject {
     
@@ -131,17 +121,14 @@ object parserMod {
   }
   object Component {
     
-    @scala.inline
-    def apply(name: String): Component = {
+    inline def apply(name: String): Component = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Component]
     }
     
-    @scala.inline
-    implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
+    extension [Self <: Component](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,29 +144,22 @@ object parserMod {
   }
   object ComponentDoc {
     
-    @scala.inline
-    def apply(description: String, displayName: String, methods: js.Array[Method], props: Props): ComponentDoc = {
+    inline def apply(description: String, displayName: String, methods: js.Array[Method], props: Props): ComponentDoc = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentDoc]
     }
     
-    @scala.inline
-    implicit class ComponentDocMutableBuilder[Self <: ComponentDoc] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentDoc](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethods(value: js.Array[Method]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[Method]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsVarargs(value: Method*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: Method*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
-      @scala.inline
-      def setProps(value: Props): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Props): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   
@@ -207,23 +187,18 @@ object parserMod {
   }
   object JSDoc {
     
-    @scala.inline
-    def apply(description: String, fullComment: String, tags: StringIndexedObject[String]): JSDoc = {
+    inline def apply(description: String, fullComment: String, tags: StringIndexedObject[String]): JSDoc = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], fullComment = fullComment.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSDoc]
     }
     
-    @scala.inline
-    implicit class JSDocMutableBuilder[Self <: JSDoc] (val x: Self) extends AnyVal {
+    extension [Self <: JSDoc](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullComment(value: String): Self = StObject.set(x, "fullComment", value.asInstanceOf[js.Any])
+      inline def setFullComment(value: String): Self = StObject.set(x, "fullComment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringIndexedObject[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringIndexedObject[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -243,8 +218,7 @@ object parserMod {
   }
   object Method {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       docblock: String,
       modifiers: js.Array[String],
@@ -255,38 +229,27 @@ object parserMod {
       __obj.asInstanceOf[Method]
     }
     
-    @scala.inline
-    implicit class MethodMutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
+    extension [Self <: Method](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocblock(value: String): Self = StObject.set(x, "docblock", value.asInstanceOf[js.Any])
+      inline def setDocblock(value: String): Self = StObject.set(x, "docblock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiers(value: js.Array[String]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: js.Array[String]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiersVarargs(value: String*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+      inline def setModifiersVarargs(value: String*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Array[MethodParameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[MethodParameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsVarargs(value: MethodParameter*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: MethodParameter*): Self = StObject.set(x, "params", js.Array(value :_*))
       
-      @scala.inline
-      def setReturns(value: Description): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
+      inline def setReturns(value: Description): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnsNull: Self = StObject.set(x, "returns", null)
+      inline def setReturnsNull: Self = StObject.set(x, "returns", null)
       
-      @scala.inline
-      def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
+      inline def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
     }
   }
   
@@ -300,30 +263,23 @@ object parserMod {
   }
   object MethodParameter {
     
-    @scala.inline
-    def apply(name: String, `type`: MethodParameterType): MethodParameter = {
+    inline def apply(name: String, `type`: MethodParameterType): MethodParameter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MethodParameter]
     }
     
-    @scala.inline
-    implicit class MethodParameterMutableBuilder[Self <: MethodParameter] (val x: Self) extends AnyVal {
+    extension [Self <: MethodParameter](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionNull: Self = StObject.set(x, "description", null)
+      inline def setDescriptionNull: Self = StObject.set(x, "description", null)
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: MethodParameterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: MethodParameterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -333,17 +289,14 @@ object parserMod {
   }
   object MethodParameterType {
     
-    @scala.inline
-    def apply(name: String): MethodParameterType = {
+    inline def apply(name: String): MethodParameterType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[MethodParameterType]
     }
     
-    @scala.inline
-    implicit class MethodParameterTypeMutableBuilder[Self <: MethodParameterType] (val x: Self) extends AnyVal {
+    extension [Self <: MethodParameterType](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -355,20 +308,16 @@ object parserMod {
   }
   object ParentType {
     
-    @scala.inline
-    def apply(fileName: String, name: String): ParentType = {
+    inline def apply(fileName: String, name: String): ParentType = {
       val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParentType]
     }
     
-    @scala.inline
-    implicit class ParentTypeMutableBuilder[Self <: ParentType] (val x: Self) extends AnyVal {
+    extension [Self <: ParentType](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -388,53 +337,38 @@ object parserMod {
   }
   object ParserOptions {
     
-    @scala.inline
-    def apply(): ParserOptions = {
+    inline def apply(): ParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserOptions]
     }
     
-    @scala.inline
-    implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParserOptions](x: Self) {
       
-      @scala.inline
-      def setComponentNameResolver(value: (/* exp */ Symbol, /* source */ SourceFile) => js.UndefOr[String | Null | `false`]): Self = StObject.set(x, "componentNameResolver", js.Any.fromFunction2(value))
+      inline def setComponentNameResolver(value: (/* exp */ Symbol, /* source */ SourceFile) => js.UndefOr[String | Null | `false`]): Self = StObject.set(x, "componentNameResolver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setComponentNameResolverUndefined: Self = StObject.set(x, "componentNameResolver", js.undefined)
+      inline def setComponentNameResolverUndefined: Self = StObject.set(x, "componentNameResolver", js.undefined)
       
-      @scala.inline
-      def setPropFilter(value: StaticPropFilter | PropFilter): Self = StObject.set(x, "propFilter", value.asInstanceOf[js.Any])
+      inline def setPropFilter(value: StaticPropFilter | PropFilter): Self = StObject.set(x, "propFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropFilterFunction2(value: (/* props */ PropItem, /* component */ Component) => Boolean): Self = StObject.set(x, "propFilter", js.Any.fromFunction2(value))
+      inline def setPropFilterFunction2(value: (/* props */ PropItem, /* component */ Component) => Boolean): Self = StObject.set(x, "propFilter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPropFilterUndefined: Self = StObject.set(x, "propFilter", js.undefined)
+      inline def setPropFilterUndefined: Self = StObject.set(x, "propFilter", js.undefined)
       
-      @scala.inline
-      def setSavePropValueAsString(value: Boolean): Self = StObject.set(x, "savePropValueAsString", value.asInstanceOf[js.Any])
+      inline def setSavePropValueAsString(value: Boolean): Self = StObject.set(x, "savePropValueAsString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavePropValueAsStringUndefined: Self = StObject.set(x, "savePropValueAsString", js.undefined)
+      inline def setSavePropValueAsStringUndefined: Self = StObject.set(x, "savePropValueAsString", js.undefined)
       
-      @scala.inline
-      def setShouldExtractLiteralValuesFromEnum(value: Boolean): Self = StObject.set(x, "shouldExtractLiteralValuesFromEnum", value.asInstanceOf[js.Any])
+      inline def setShouldExtractLiteralValuesFromEnum(value: Boolean): Self = StObject.set(x, "shouldExtractLiteralValuesFromEnum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldExtractLiteralValuesFromEnumUndefined: Self = StObject.set(x, "shouldExtractLiteralValuesFromEnum", js.undefined)
+      inline def setShouldExtractLiteralValuesFromEnumUndefined: Self = StObject.set(x, "shouldExtractLiteralValuesFromEnum", js.undefined)
       
-      @scala.inline
-      def setShouldExtractValuesFromUnion(value: Boolean): Self = StObject.set(x, "shouldExtractValuesFromUnion", value.asInstanceOf[js.Any])
+      inline def setShouldExtractValuesFromUnion(value: Boolean): Self = StObject.set(x, "shouldExtractValuesFromUnion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldExtractValuesFromUnionUndefined: Self = StObject.set(x, "shouldExtractValuesFromUnion", js.undefined)
+      inline def setShouldExtractValuesFromUnionUndefined: Self = StObject.set(x, "shouldExtractValuesFromUnion", js.undefined)
       
-      @scala.inline
-      def setShouldRemoveUndefinedFromOptional(value: Boolean): Self = StObject.set(x, "shouldRemoveUndefinedFromOptional", value.asInstanceOf[js.Any])
+      inline def setShouldRemoveUndefinedFromOptional(value: Boolean): Self = StObject.set(x, "shouldRemoveUndefinedFromOptional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldRemoveUndefinedFromOptionalUndefined: Self = StObject.set(x, "shouldRemoveUndefinedFromOptional", js.undefined)
+      inline def setShouldRemoveUndefinedFromOptionalUndefined: Self = StObject.set(x, "shouldRemoveUndefinedFromOptional", js.undefined)
     }
   }
   
@@ -456,36 +390,27 @@ object parserMod {
   }
   object PropItem {
     
-    @scala.inline
-    def apply(defaultValue: js.Any, description: String, name: String, required: Boolean, `type`: PropItemType): PropItem = {
+    inline def apply(defaultValue: js.Any, description: String, name: String, required: Boolean, `type`: PropItemType): PropItem = {
       val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropItem]
     }
     
-    @scala.inline
-    implicit class PropItemMutableBuilder[Self <: PropItem] (val x: Self) extends AnyVal {
+    extension [Self <: PropItem](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: ParentType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: ParentType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: PropItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PropItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -499,29 +424,22 @@ object parserMod {
   }
   object PropItemType {
     
-    @scala.inline
-    def apply(name: String): PropItemType = {
+    inline def apply(name: String): PropItemType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropItemType]
     }
     
-    @scala.inline
-    implicit class PropItemTypeMutableBuilder[Self <: PropItemType] (val x: Self) extends AnyVal {
+    extension [Self <: PropItemType](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -535,29 +453,22 @@ object parserMod {
   }
   object StaticPropFilter {
     
-    @scala.inline
-    def apply(): StaticPropFilter = {
+    inline def apply(): StaticPropFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StaticPropFilter]
     }
     
-    @scala.inline
-    implicit class StaticPropFilterMutableBuilder[Self <: StaticPropFilter] (val x: Self) extends AnyVal {
+    extension [Self <: StaticPropFilter](x: Self) {
       
-      @scala.inline
-      def setSkipPropsWithName(value: js.Array[String] | String): Self = StObject.set(x, "skipPropsWithName", value.asInstanceOf[js.Any])
+      inline def setSkipPropsWithName(value: js.Array[String] | String): Self = StObject.set(x, "skipPropsWithName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipPropsWithNameUndefined: Self = StObject.set(x, "skipPropsWithName", js.undefined)
+      inline def setSkipPropsWithNameUndefined: Self = StObject.set(x, "skipPropsWithName", js.undefined)
       
-      @scala.inline
-      def setSkipPropsWithNameVarargs(value: String*): Self = StObject.set(x, "skipPropsWithName", js.Array(value :_*))
+      inline def setSkipPropsWithNameVarargs(value: String*): Self = StObject.set(x, "skipPropsWithName", js.Array(value :_*))
       
-      @scala.inline
-      def setSkipPropsWithoutDoc(value: Boolean): Self = StObject.set(x, "skipPropsWithoutDoc", value.asInstanceOf[js.Any])
+      inline def setSkipPropsWithoutDoc(value: Boolean): Self = StObject.set(x, "skipPropsWithoutDoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipPropsWithoutDocUndefined: Self = StObject.set(x, "skipPropsWithoutDoc", js.undefined)
+      inline def setSkipPropsWithoutDocUndefined: Self = StObject.set(x, "skipPropsWithoutDoc", js.undefined)
     }
   }
   

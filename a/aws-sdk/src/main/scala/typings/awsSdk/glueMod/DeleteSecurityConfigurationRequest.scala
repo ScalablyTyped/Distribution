@@ -13,16 +13,13 @@ trait DeleteSecurityConfigurationRequest extends StObject {
 }
 object DeleteSecurityConfigurationRequest {
   
-  @scala.inline
-  def apply(Name: NameString): DeleteSecurityConfigurationRequest = {
+  inline def apply(Name: NameString): DeleteSecurityConfigurationRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSecurityConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSecurityConfigurationRequestMutableBuilder[Self <: DeleteSecurityConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSecurityConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

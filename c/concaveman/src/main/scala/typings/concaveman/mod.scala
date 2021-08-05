@@ -20,14 +20,10 @@ object mod {
     *
     * //=hull
     */
-  @scala.inline
-  def apply(points: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].apply(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Double]]]
-  @scala.inline
-  def apply(points: js.Array[js.Array[Double]], concavity: Double): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].apply(points.asInstanceOf[js.Any], concavity.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
-  @scala.inline
-  def apply(points: js.Array[js.Array[Double]], concavity: Double, lengthThreshold: Double): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].apply(points.asInstanceOf[js.Any], concavity.asInstanceOf[js.Any], lengthThreshold.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
-  @scala.inline
-  def apply(points: js.Array[js.Array[Double]], concavity: Unit, lengthThreshold: Double): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].apply(points.asInstanceOf[js.Any], concavity.asInstanceOf[js.Any], lengthThreshold.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
+  inline def apply(points: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].apply(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Double]]]
+  inline def apply(points: js.Array[js.Array[Double]], concavity: Double): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].apply(points.asInstanceOf[js.Any], concavity.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
+  inline def apply(points: js.Array[js.Array[Double]], concavity: Double, lengthThreshold: Double): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].apply(points.asInstanceOf[js.Any], concavity.asInstanceOf[js.Any], lengthThreshold.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
+  inline def apply(points: js.Array[js.Array[Double]], concavity: Unit, lengthThreshold: Double): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].apply(points.asInstanceOf[js.Any], concavity.asInstanceOf[js.Any], lengthThreshold.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
   
   @JSImport("concaveman", JSImport.Namespace)
   @js.native

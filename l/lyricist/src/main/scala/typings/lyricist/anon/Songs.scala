@@ -12,23 +12,18 @@ trait Songs extends StObject {
 }
 object Songs {
   
-  @scala.inline
-  def apply(songs: js.Array[js.Any], `type`: String): Songs = {
+  inline def apply(songs: js.Array[js.Any], `type`: String): Songs = {
     val __obj = js.Dynamic.literal(songs = songs.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Songs]
   }
   
-  @scala.inline
-  implicit class SongsMutableBuilder[Self <: Songs] (val x: Self) extends AnyVal {
+  extension [Self <: Songs](x: Self) {
     
-    @scala.inline
-    def setSongs(value: js.Array[js.Any]): Self = StObject.set(x, "songs", value.asInstanceOf[js.Any])
+    inline def setSongs(value: js.Array[js.Any]): Self = StObject.set(x, "songs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSongsVarargs(value: js.Any*): Self = StObject.set(x, "songs", js.Array(value :_*))
+    inline def setSongsVarargs(value: js.Any*): Self = StObject.set(x, "songs", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

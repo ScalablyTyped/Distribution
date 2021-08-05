@@ -26,8 +26,7 @@ trait Attached extends StObject {
 }
 object Attached {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attached: Boolean,
     checkAlways: Boolean,
     creationMode: Boolean,
@@ -42,34 +41,24 @@ object Attached {
     __obj.asInstanceOf[Attached]
   }
   
-  @scala.inline
-  implicit class AttachedMutableBuilder[Self <: Attached] (val x: Self) extends AnyVal {
+  extension [Self <: Attached](x: Self) {
     
-    @scala.inline
-    def setAttached(value: Boolean): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+    inline def setAttached(value: Boolean): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckAlways(value: Boolean): Self = StObject.set(x, "checkAlways", value.asInstanceOf[js.Any])
+    inline def setCheckAlways(value: Boolean): Self = StObject.set(x, "checkAlways", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationMode(value: Boolean): Self = StObject.set(x, "creationMode", value.asInstanceOf[js.Any])
+    inline def setCreationMode(value: Boolean): Self = StObject.set(x, "creationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+    inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+    inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstViewPass(value: Boolean): Self = StObject.set(x, "firstViewPass", value.asInstanceOf[js.Any])
+    inline def setFirstViewPass(value: Boolean): Self = StObject.set(x, "firstViewPass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexWithinInitPhase(value: Double): Self = StObject.set(x, "indexWithinInitPhase", value.asInstanceOf[js.Any])
+    inline def setIndexWithinInitPhase(value: Double): Self = StObject.set(x, "indexWithinInitPhase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitPhaseState(value: Double): Self = StObject.set(x, "initPhaseState", value.asInstanceOf[js.Any])
+    inline def setInitPhaseState(value: Double): Self = StObject.set(x, "initPhaseState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
+    inline def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
   }
 }

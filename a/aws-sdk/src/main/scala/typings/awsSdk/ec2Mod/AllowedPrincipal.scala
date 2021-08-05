@@ -18,25 +18,19 @@ trait AllowedPrincipal extends StObject {
 }
 object AllowedPrincipal {
   
-  @scala.inline
-  def apply(): AllowedPrincipal = {
+  inline def apply(): AllowedPrincipal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowedPrincipal]
   }
   
-  @scala.inline
-  implicit class AllowedPrincipalMutableBuilder[Self <: AllowedPrincipal] (val x: Self) extends AnyVal {
+  extension [Self <: AllowedPrincipal](x: Self) {
     
-    @scala.inline
-    def setPrincipal(value: String): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: String): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalType(value: PrincipalType): Self = StObject.set(x, "PrincipalType", value.asInstanceOf[js.Any])
+    inline def setPrincipalType(value: PrincipalType): Self = StObject.set(x, "PrincipalType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalTypeUndefined: Self = StObject.set(x, "PrincipalType", js.undefined)
+    inline def setPrincipalTypeUndefined: Self = StObject.set(x, "PrincipalType", js.undefined)
     
-    @scala.inline
-    def setPrincipalUndefined: Self = StObject.set(x, "Principal", js.undefined)
+    inline def setPrincipalUndefined: Self = StObject.set(x, "Principal", js.undefined)
   }
 }

@@ -34,26 +34,20 @@ object appBarTitleMod {
   }
   object AppBarTitleProps {
     
-    @scala.inline
-    def apply(): AppBarTitleProps = {
+    inline def apply(): AppBarTitleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppBarTitleProps]
     }
     
-    @scala.inline
-    implicit class AppBarTitlePropsMutableBuilder[Self <: AppBarTitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: AppBarTitleProps](x: Self) {
       
-      @scala.inline
-      def setKeyline(value: Boolean): Self = StObject.set(x, "keyline", value.asInstanceOf[js.Any])
+      inline def setKeyline(value: Boolean): Self = StObject.set(x, "keyline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeylineUndefined: Self = StObject.set(x, "keyline", js.undefined)
+      inline def setKeylineUndefined: Self = StObject.set(x, "keyline", js.undefined)
       
-      @scala.inline
-      def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
+      inline def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
+      inline def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
     }
   }
 }

@@ -15,34 +15,25 @@ trait IConsensusStateGetRequest extends StObject {
 }
 object IConsensusStateGetRequest {
   
-  @scala.inline
-  def apply(): IConsensusStateGetRequest = {
+  inline def apply(): IConsensusStateGetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusStateGetRequest]
   }
   
-  @scala.inline
-  implicit class IConsensusStateGetRequestMutableBuilder[Self <: IConsensusStateGetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusStateGetRequest](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesNull: Self = StObject.set(x, "addresses", null)
+    inline def setAddressesNull: Self = StObject.set(x, "addresses", null)
     
-    @scala.inline
-    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
+    inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    @scala.inline
-    def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
+    inline def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIdNull: Self = StObject.set(x, "blockId", null)
+    inline def setBlockIdNull: Self = StObject.set(x, "blockId", null)
     
-    @scala.inline
-    def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
+    inline def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait TimeBasedCanary extends StObject {
 }
 object TimeBasedCanary {
   
-  @scala.inline
-  def apply(): TimeBasedCanary = {
+  inline def apply(): TimeBasedCanary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeBasedCanary]
   }
   
-  @scala.inline
-  implicit class TimeBasedCanaryMutableBuilder[Self <: TimeBasedCanary] (val x: Self) extends AnyVal {
+  extension [Self <: TimeBasedCanary](x: Self) {
     
-    @scala.inline
-    def setCanaryInterval(value: WaitTimeInMins): Self = StObject.set(x, "canaryInterval", value.asInstanceOf[js.Any])
+    inline def setCanaryInterval(value: WaitTimeInMins): Self = StObject.set(x, "canaryInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanaryIntervalUndefined: Self = StObject.set(x, "canaryInterval", js.undefined)
+    inline def setCanaryIntervalUndefined: Self = StObject.set(x, "canaryInterval", js.undefined)
     
-    @scala.inline
-    def setCanaryPercentage(value: Percentage): Self = StObject.set(x, "canaryPercentage", value.asInstanceOf[js.Any])
+    inline def setCanaryPercentage(value: Percentage): Self = StObject.set(x, "canaryPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanaryPercentageUndefined: Self = StObject.set(x, "canaryPercentage", js.undefined)
+    inline def setCanaryPercentageUndefined: Self = StObject.set(x, "canaryPercentage", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait RestoreDBInstanceFromDBSnapshotResult extends StObject {
 }
 object RestoreDBInstanceFromDBSnapshotResult {
   
-  @scala.inline
-  def apply(): RestoreDBInstanceFromDBSnapshotResult = {
+  inline def apply(): RestoreDBInstanceFromDBSnapshotResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreDBInstanceFromDBSnapshotResult]
   }
   
-  @scala.inline
-  implicit class RestoreDBInstanceFromDBSnapshotResultMutableBuilder[Self <: RestoreDBInstanceFromDBSnapshotResult] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreDBInstanceFromDBSnapshotResult](x: Self) {
     
-    @scala.inline
-    def setDBInstance(value: DBInstance): Self = StObject.set(x, "DBInstance", value.asInstanceOf[js.Any])
+    inline def setDBInstance(value: DBInstance): Self = StObject.set(x, "DBInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBInstanceUndefined: Self = StObject.set(x, "DBInstance", js.undefined)
+    inline def setDBInstanceUndefined: Self = StObject.set(x, "DBInstance", js.undefined)
   }
 }

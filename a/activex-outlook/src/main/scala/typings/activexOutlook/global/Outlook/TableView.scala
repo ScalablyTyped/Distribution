@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.TableView")
 @js.native
-class TableView protected ()
+/* private */ class TableView ()
   extends StObject
      with typings.activexOutlook.Outlook.TableView {
   
@@ -96,7 +96,7 @@ class TableView protected ()
   /* CompleteClass */
   var Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.TableView_typekey")
   var OutlookDotTableView_typekey: typings.activexOutlook.Outlook.TableView = js.native
   

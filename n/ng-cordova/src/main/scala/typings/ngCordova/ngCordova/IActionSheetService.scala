@@ -13,19 +13,15 @@ trait IActionSheetService extends StObject {
 }
 object IActionSheetService {
   
-  @scala.inline
-  def apply(hide: () => IPromise[Unit], show: ShowOptions => IPromise[Double]): IActionSheetService = {
+  inline def apply(hide: () => IPromise[Unit], show: ShowOptions => IPromise[Double]): IActionSheetService = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction1(show))
     __obj.asInstanceOf[IActionSheetService]
   }
   
-  @scala.inline
-  implicit class IActionSheetServiceMutableBuilder[Self <: IActionSheetService] (val x: Self) extends AnyVal {
+  extension [Self <: IActionSheetService](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => IPromise[Unit]): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => IPromise[Unit]): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: ShowOptions => IPromise[Double]): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: ShowOptions => IPromise[Double]): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
   }
 }

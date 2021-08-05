@@ -37,65 +37,47 @@ trait GameServerConfig extends StObject {
 }
 object GameServerConfig {
   
-  @scala.inline
-  def apply(): GameServerConfig = {
+  inline def apply(): GameServerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GameServerConfig]
   }
   
-  @scala.inline
-  implicit class GameServerConfigMutableBuilder[Self <: GameServerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GameServerConfig](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFleetConfigs(value: js.Array[FleetConfig]): Self = StObject.set(x, "fleetConfigs", value.asInstanceOf[js.Any])
+    inline def setFleetConfigs(value: js.Array[FleetConfig]): Self = StObject.set(x, "fleetConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetConfigsUndefined: Self = StObject.set(x, "fleetConfigs", js.undefined)
+    inline def setFleetConfigsUndefined: Self = StObject.set(x, "fleetConfigs", js.undefined)
     
-    @scala.inline
-    def setFleetConfigsVarargs(value: FleetConfig*): Self = StObject.set(x, "fleetConfigs", js.Array(value :_*))
+    inline def setFleetConfigsVarargs(value: FleetConfig*): Self = StObject.set(x, "fleetConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.GameServerConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setScalingConfigs(value: js.Array[ScalingConfig]): Self = StObject.set(x, "scalingConfigs", value.asInstanceOf[js.Any])
+    inline def setScalingConfigs(value: js.Array[ScalingConfig]): Self = StObject.set(x, "scalingConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingConfigsUndefined: Self = StObject.set(x, "scalingConfigs", js.undefined)
+    inline def setScalingConfigsUndefined: Self = StObject.set(x, "scalingConfigs", js.undefined)
     
-    @scala.inline
-    def setScalingConfigsVarargs(value: ScalingConfig*): Self = StObject.set(x, "scalingConfigs", js.Array(value :_*))
+    inline def setScalingConfigsVarargs(value: ScalingConfig*): Self = StObject.set(x, "scalingConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

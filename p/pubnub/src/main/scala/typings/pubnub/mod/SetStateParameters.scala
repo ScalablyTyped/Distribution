@@ -15,37 +15,27 @@ trait SetStateParameters extends StObject {
 }
 object SetStateParameters {
   
-  @scala.inline
-  def apply(): SetStateParameters = {
+  inline def apply(): SetStateParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetStateParameters]
   }
   
-  @scala.inline
-  implicit class SetStateParametersMutableBuilder[Self <: SetStateParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SetStateParameters](x: Self) {
     
-    @scala.inline
-    def setChannelGroups(value: js.Array[String]): Self = StObject.set(x, "channelGroups", value.asInstanceOf[js.Any])
+    inline def setChannelGroups(value: js.Array[String]): Self = StObject.set(x, "channelGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelGroupsUndefined: Self = StObject.set(x, "channelGroups", js.undefined)
+    inline def setChannelGroupsUndefined: Self = StObject.set(x, "channelGroups", js.undefined)
     
-    @scala.inline
-    def setChannelGroupsVarargs(value: String*): Self = StObject.set(x, "channelGroups", js.Array(value :_*))
+    inline def setChannelGroupsVarargs(value: String*): Self = StObject.set(x, "channelGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    @scala.inline
-    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

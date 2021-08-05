@@ -6,19 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(fn: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
+  inline def apply(fn: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
   
   @JSImport("deasync", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def loopWhile(pred: js.Function0[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loopWhile")(pred.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def loopWhile(pred: js.Function0[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loopWhile")(pred.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def runLoopOnce(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runLoopOnce")().asInstanceOf[Unit]
+  inline def runLoopOnce(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runLoopOnce")().asInstanceOf[Unit]
   
-  @scala.inline
-  def sleep(ms: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(ms.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sleep(ms: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(ms.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

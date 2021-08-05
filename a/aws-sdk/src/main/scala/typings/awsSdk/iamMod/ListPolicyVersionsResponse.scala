@@ -23,34 +23,25 @@ trait ListPolicyVersionsResponse extends StObject {
 }
 object ListPolicyVersionsResponse {
   
-  @scala.inline
-  def apply(): ListPolicyVersionsResponse = {
+  inline def apply(): ListPolicyVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPolicyVersionsResponse]
   }
   
-  @scala.inline
-  implicit class ListPolicyVersionsResponseMutableBuilder[Self <: ListPolicyVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPolicyVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setVersions(value: policyDocumentVersionListType): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: policyDocumentVersionListType): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: PolicyVersion*): Self = StObject.set(x, "Versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: PolicyVersion*): Self = StObject.set(x, "Versions", js.Array(value :_*))
   }
 }

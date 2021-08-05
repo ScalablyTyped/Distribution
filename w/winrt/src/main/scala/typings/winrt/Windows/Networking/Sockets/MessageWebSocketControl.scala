@@ -11,8 +11,7 @@ trait MessageWebSocketControl
      with IMessageWebSocketControl
 object MessageWebSocketControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     maxMessageSize: Double,
     messageType: SocketMessageType,
     outboundBufferSizeInBytes: Double,

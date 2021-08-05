@@ -23,31 +23,23 @@ trait InstanceStateChange extends StObject {
 }
 object InstanceStateChange {
   
-  @scala.inline
-  def apply(): InstanceStateChange = {
+  inline def apply(): InstanceStateChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceStateChange]
   }
   
-  @scala.inline
-  implicit class InstanceStateChangeMutableBuilder[Self <: InstanceStateChange] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceStateChange](x: Self) {
     
-    @scala.inline
-    def setCurrentState(value: InstanceState): Self = StObject.set(x, "CurrentState", value.asInstanceOf[js.Any])
+    inline def setCurrentState(value: InstanceState): Self = StObject.set(x, "CurrentState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentStateUndefined: Self = StObject.set(x, "CurrentState", js.undefined)
+    inline def setCurrentStateUndefined: Self = StObject.set(x, "CurrentState", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setPreviousState(value: InstanceState): Self = StObject.set(x, "PreviousState", value.asInstanceOf[js.Any])
+    inline def setPreviousState(value: InstanceState): Self = StObject.set(x, "PreviousState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousStateUndefined: Self = StObject.set(x, "PreviousState", js.undefined)
+    inline def setPreviousStateUndefined: Self = StObject.set(x, "PreviousState", js.undefined)
   }
 }

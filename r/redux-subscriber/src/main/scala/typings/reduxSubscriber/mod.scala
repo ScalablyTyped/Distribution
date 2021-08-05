@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(store: js.Any): Subscribe_ = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any]).asInstanceOf[Subscribe_]
+  inline def default(store: js.Any): Subscribe_ = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any]).asInstanceOf[Subscribe_]
   
   @JSImport("redux-subscriber", "subscribe")
   @js.native

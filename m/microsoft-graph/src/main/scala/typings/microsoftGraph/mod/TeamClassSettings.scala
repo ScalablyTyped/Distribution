@@ -14,22 +14,17 @@ trait TeamClassSettings extends StObject {
 }
 object TeamClassSettings {
   
-  @scala.inline
-  def apply(): TeamClassSettings = {
+  inline def apply(): TeamClassSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TeamClassSettings]
   }
   
-  @scala.inline
-  implicit class TeamClassSettingsMutableBuilder[Self <: TeamClassSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TeamClassSettings](x: Self) {
     
-    @scala.inline
-    def setNotifyGuardiansAboutAssignments(value: NullableOption[Boolean]): Self = StObject.set(x, "notifyGuardiansAboutAssignments", value.asInstanceOf[js.Any])
+    inline def setNotifyGuardiansAboutAssignments(value: NullableOption[Boolean]): Self = StObject.set(x, "notifyGuardiansAboutAssignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyGuardiansAboutAssignmentsNull: Self = StObject.set(x, "notifyGuardiansAboutAssignments", null)
+    inline def setNotifyGuardiansAboutAssignmentsNull: Self = StObject.set(x, "notifyGuardiansAboutAssignments", null)
     
-    @scala.inline
-    def setNotifyGuardiansAboutAssignmentsUndefined: Self = StObject.set(x, "notifyGuardiansAboutAssignments", js.undefined)
+    inline def setNotifyGuardiansAboutAssignmentsUndefined: Self = StObject.set(x, "notifyGuardiansAboutAssignments", js.undefined)
   }
 }

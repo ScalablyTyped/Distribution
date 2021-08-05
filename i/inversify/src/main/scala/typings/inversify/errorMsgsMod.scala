@@ -14,8 +14,7 @@ object errorMsgsMod {
   @js.native
   val AMBIGUOUS_MATCH: /* "Ambiguous match found for serviceIdentifier:" */ String = js.native
   
-  @scala.inline
-  def ARGUMENTS_LENGTH_MISMATCH(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ARGUMENTS_LENGTH_MISMATCH")(values.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ARGUMENTS_LENGTH_MISMATCH(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ARGUMENTS_LENGTH_MISMATCH")(values.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("inversify/dts/constants/error_msgs", "CANNOT_UNBIND")
   @js.native
@@ -25,8 +24,7 @@ object errorMsgsMod {
   @js.native
   val CIRCULAR_DEPENDENCY: /* "Circular dependency found:" */ String = js.native
   
-  @scala.inline
-  def CIRCULAR_DEPENDENCY_IN_FACTORY(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CIRCULAR_DEPENDENCY_IN_FACTORY")(values.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def CIRCULAR_DEPENDENCY_IN_FACTORY(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CIRCULAR_DEPENDENCY_IN_FACTORY")(values.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("inversify/dts/constants/error_msgs", "CONTAINER_OPTIONS_INVALID_AUTO_BIND_INJECTABLE")
   @js.native
@@ -104,13 +102,11 @@ object errorMsgsMod {
   @js.native
   val NULL_ARGUMENT: /* "NULL argument" */ String = js.native
   
-  @scala.inline
-  def POST_CONSTRUCT_ERROR(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("POST_CONSTRUCT_ERROR")(values.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def POST_CONSTRUCT_ERROR(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("POST_CONSTRUCT_ERROR")(values.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("inversify/dts/constants/error_msgs", "STACK_OVERFLOW")
   @js.native
   val STACK_OVERFLOW: /* "Maximum call stack size exceeded" */ String = js.native
   
-  @scala.inline
-  def UNDEFINED_INJECT_ANNOTATION(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNDEFINED_INJECT_ANNOTATION")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def UNDEFINED_INJECT_ANNOTATION(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNDEFINED_INJECT_ANNOTATION")(name.asInstanceOf[js.Any]).asInstanceOf[String]
 }

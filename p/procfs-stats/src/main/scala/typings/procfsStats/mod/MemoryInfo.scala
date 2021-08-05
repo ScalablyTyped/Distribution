@@ -97,8 +97,7 @@ trait MemoryInfo extends StObject {
 }
 object MemoryInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Active: String,
     ActiveLeftparenthesisanonRightparenthesis: String,
     ActiveLeftparenthesisfileRightparenthesis: String,
@@ -149,133 +148,90 @@ object MemoryInfo {
     __obj.asInstanceOf[MemoryInfo]
   }
   
-  @scala.inline
-  implicit class MemoryInfoMutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryInfo](x: Self) {
     
-    @scala.inline
-    def setActive(value: String): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+    inline def setActive(value: String): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveLeftparenthesisanonRightparenthesis(value: String): Self = StObject.set(x, "Active(anon)", value.asInstanceOf[js.Any])
+    inline def setActiveLeftparenthesisanonRightparenthesis(value: String): Self = StObject.set(x, "Active(anon)", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveLeftparenthesisfileRightparenthesis(value: String): Self = StObject.set(x, "Active(file)", value.asInstanceOf[js.Any])
+    inline def setActiveLeftparenthesisfileRightparenthesis(value: String): Self = StObject.set(x, "Active(file)", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnonHugePages(value: String): Self = StObject.set(x, "AnonHugePages", value.asInstanceOf[js.Any])
+    inline def setAnonHugePages(value: String): Self = StObject.set(x, "AnonHugePages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnonPages(value: String): Self = StObject.set(x, "AnonPages", value.asInstanceOf[js.Any])
+    inline def setAnonPages(value: String): Self = StObject.set(x, "AnonPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBounce(value: String): Self = StObject.set(x, "Bounce", value.asInstanceOf[js.Any])
+    inline def setBounce(value: String): Self = StObject.set(x, "Bounce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuffers(value: String): Self = StObject.set(x, "Buffers", value.asInstanceOf[js.Any])
+    inline def setBuffers(value: String): Self = StObject.set(x, "Buffers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCached(value: String): Self = StObject.set(x, "Cached", value.asInstanceOf[js.Any])
+    inline def setCached(value: String): Self = StObject.set(x, "Cached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitLimit(value: String): Self = StObject.set(x, "CommitLimit", value.asInstanceOf[js.Any])
+    inline def setCommitLimit(value: String): Self = StObject.set(x, "CommitLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitted_AS(value: String): Self = StObject.set(x, "Committed_AS", value.asInstanceOf[js.Any])
+    inline def setCommitted_AS(value: String): Self = StObject.set(x, "Committed_AS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectMap2M(value: String): Self = StObject.set(x, "DirectMap2M", value.asInstanceOf[js.Any])
+    inline def setDirectMap2M(value: String): Self = StObject.set(x, "DirectMap2M", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectMap4k(value: String): Self = StObject.set(x, "DirectMap4k", value.asInstanceOf[js.Any])
+    inline def setDirectMap4k(value: String): Self = StObject.set(x, "DirectMap4k", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirty(value: String): Self = StObject.set(x, "Dirty", value.asInstanceOf[js.Any])
+    inline def setDirty(value: String): Self = StObject.set(x, "Dirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHugePages_Free(value: String): Self = StObject.set(x, "HugePages_Free", value.asInstanceOf[js.Any])
+    inline def setHugePages_Free(value: String): Self = StObject.set(x, "HugePages_Free", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHugePages_Rsvd(value: String): Self = StObject.set(x, "HugePages_Rsvd", value.asInstanceOf[js.Any])
+    inline def setHugePages_Rsvd(value: String): Self = StObject.set(x, "HugePages_Rsvd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHugePages_Surp(value: String): Self = StObject.set(x, "HugePages_Surp", value.asInstanceOf[js.Any])
+    inline def setHugePages_Surp(value: String): Self = StObject.set(x, "HugePages_Surp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHugePages_Total(value: String): Self = StObject.set(x, "HugePages_Total", value.asInstanceOf[js.Any])
+    inline def setHugePages_Total(value: String): Self = StObject.set(x, "HugePages_Total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHugepagesize(value: String): Self = StObject.set(x, "Hugepagesize", value.asInstanceOf[js.Any])
+    inline def setHugepagesize(value: String): Self = StObject.set(x, "Hugepagesize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactive(value: `136524`): Self = StObject.set(x, "Inactive", value.asInstanceOf[js.Any])
+    inline def setInactive(value: `136524`): Self = StObject.set(x, "Inactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveLeftparenthesisanonRightparenthesis(value: String): Self = StObject.set(x, "Inactive(anon)", value.asInstanceOf[js.Any])
+    inline def setInactiveLeftparenthesisanonRightparenthesis(value: String): Self = StObject.set(x, "Inactive(anon)", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveLeftparenthesisfileRightparenthesis(value: String): Self = StObject.set(x, "Inactive(file)", value.asInstanceOf[js.Any])
+    inline def setInactiveLeftparenthesisfileRightparenthesis(value: String): Self = StObject.set(x, "Inactive(file)", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelStack(value: String): Self = StObject.set(x, "KernelStack", value.asInstanceOf[js.Any])
+    inline def setKernelStack(value: String): Self = StObject.set(x, "KernelStack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapped(value: String): Self = StObject.set(x, "Mapped", value.asInstanceOf[js.Any])
+    inline def setMapped(value: String): Self = StObject.set(x, "Mapped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemAvailable(value: String): Self = StObject.set(x, "MemAvailable", value.asInstanceOf[js.Any])
+    inline def setMemAvailable(value: String): Self = StObject.set(x, "MemAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemFree(value: String): Self = StObject.set(x, "MemFree", value.asInstanceOf[js.Any])
+    inline def setMemFree(value: String): Self = StObject.set(x, "MemFree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemTotal(value: String): Self = StObject.set(x, "MemTotal", value.asInstanceOf[js.Any])
+    inline def setMemTotal(value: String): Self = StObject.set(x, "MemTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMlocked(value: String): Self = StObject.set(x, "Mlocked", value.asInstanceOf[js.Any])
+    inline def setMlocked(value: String): Self = StObject.set(x, "Mlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNFS_Unstable(value: String): Self = StObject.set(x, "NFS_Unstable", value.asInstanceOf[js.Any])
+    inline def setNFS_Unstable(value: String): Self = StObject.set(x, "NFS_Unstable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTables(value: String): Self = StObject.set(x, "PageTables", value.asInstanceOf[js.Any])
+    inline def setPageTables(value: String): Self = StObject.set(x, "PageTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSReclaimable(value: String): Self = StObject.set(x, "SReclaimable", value.asInstanceOf[js.Any])
+    inline def setSReclaimable(value: String): Self = StObject.set(x, "SReclaimable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSUnreclaim(value: String): Self = StObject.set(x, "SUnreclaim", value.asInstanceOf[js.Any])
+    inline def setSUnreclaim(value: String): Self = StObject.set(x, "SUnreclaim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShmem(value: String): Self = StObject.set(x, "Shmem", value.asInstanceOf[js.Any])
+    inline def setShmem(value: String): Self = StObject.set(x, "Shmem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlab(value: String): Self = StObject.set(x, "Slab", value.asInstanceOf[js.Any])
+    inline def setSlab(value: String): Self = StObject.set(x, "Slab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapCached(value: String): Self = StObject.set(x, "SwapCached", value.asInstanceOf[js.Any])
+    inline def setSwapCached(value: String): Self = StObject.set(x, "SwapCached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapFree(value: String): Self = StObject.set(x, "SwapFree", value.asInstanceOf[js.Any])
+    inline def setSwapFree(value: String): Self = StObject.set(x, "SwapFree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapTotal(value: String): Self = StObject.set(x, "SwapTotal", value.asInstanceOf[js.Any])
+    inline def setSwapTotal(value: String): Self = StObject.set(x, "SwapTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnevictable(value: String): Self = StObject.set(x, "Unevictable", value.asInstanceOf[js.Any])
+    inline def setUnevictable(value: String): Self = StObject.set(x, "Unevictable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmallocChunk(value: String): Self = StObject.set(x, "VmallocChunk", value.asInstanceOf[js.Any])
+    inline def setVmallocChunk(value: String): Self = StObject.set(x, "VmallocChunk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmallocTotal(value: String): Self = StObject.set(x, "VmallocTotal", value.asInstanceOf[js.Any])
+    inline def setVmallocTotal(value: String): Self = StObject.set(x, "VmallocTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmallocUsed(value: String): Self = StObject.set(x, "VmallocUsed", value.asInstanceOf[js.Any])
+    inline def setVmallocUsed(value: String): Self = StObject.set(x, "VmallocUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteback(value: String): Self = StObject.set(x, "Writeback", value.asInstanceOf[js.Any])
+    inline def setWriteback(value: String): Self = StObject.set(x, "Writeback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritebackTmp(value: String): Self = StObject.set(x, "WritebackTmp", value.asInstanceOf[js.Any])
+    inline def setWritebackTmp(value: String): Self = StObject.set(x, "WritebackTmp", value.asInstanceOf[js.Any])
   }
 }

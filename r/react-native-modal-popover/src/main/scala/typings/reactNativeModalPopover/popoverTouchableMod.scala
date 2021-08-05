@@ -21,17 +21,17 @@ object popoverTouchableMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MPopoverTouchable(): Unit = js.native
     
-    var onClosePopover: js.Any = js.native
+    /* private */ var onClosePopover: js.Any = js.native
     
-    var onOrientationChange: js.Any = js.native
+    /* private */ var onOrientationChange: js.Any = js.native
     
-    var onPress: js.Any = js.native
+    /* private */ var onPress: js.Any = js.native
     
-    var onTouchableMeasured: js.Any = js.native
+    /* private */ var onTouchableMeasured: js.Any = js.native
     
-    var setRef: js.Any = js.native
+    /* private */ var setRef: js.Any = js.native
     
-    var touchable: js.Any = js.native
+    /* private */ var touchable: js.Any = js.native
   }
   /* static members */
   object PopoverTouchable {
@@ -43,8 +43,7 @@ object popoverTouchableMod {
     @JSImport("react-native-modal-popover/lib/PopoverTouchable", "PopoverTouchable.propTypes")
     @js.native
     def propTypes: OnPopoverDisplayed = js.native
-    @scala.inline
-    def propTypes_=(x: OnPopoverDisplayed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: OnPopoverDisplayed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait Props extends StObject {
@@ -53,20 +52,16 @@ object popoverTouchableMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setOnPopoverDisplayed(value: () => js.Any): Self = StObject.set(x, "onPopoverDisplayed", js.Any.fromFunction0(value))
+      inline def setOnPopoverDisplayed(value: () => js.Any): Self = StObject.set(x, "onPopoverDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPopoverDisplayedUndefined: Self = StObject.set(x, "onPopoverDisplayed", js.undefined)
+      inline def setOnPopoverDisplayedUndefined: Self = StObject.set(x, "onPopoverDisplayed", js.undefined)
     }
   }
   
@@ -78,20 +73,16 @@ object popoverTouchableMod {
   }
   object State {
     
-    @scala.inline
-    def apply(popoverAnchor: Rect, showPopover: Boolean): State = {
+    inline def apply(popoverAnchor: Rect, showPopover: Boolean): State = {
       val __obj = js.Dynamic.literal(popoverAnchor = popoverAnchor.asInstanceOf[js.Any], showPopover = showPopover.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setPopoverAnchor(value: Rect): Self = StObject.set(x, "popoverAnchor", value.asInstanceOf[js.Any])
+      inline def setPopoverAnchor(value: Rect): Self = StObject.set(x, "popoverAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPopover(value: Boolean): Self = StObject.set(x, "showPopover", value.asInstanceOf[js.Any])
+      inline def setShowPopover(value: Boolean): Self = StObject.set(x, "showPopover", value.asInstanceOf[js.Any])
     }
   }
 }

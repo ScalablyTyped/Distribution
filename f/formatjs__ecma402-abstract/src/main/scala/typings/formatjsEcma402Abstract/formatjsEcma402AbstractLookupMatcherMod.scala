@@ -12,8 +12,7 @@ object formatjsEcma402AbstractLookupMatcherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def LookupMatcher(
+  inline def LookupMatcher(
     availableLocales: Set[String],
     requestedLocales: js.Array[String],
     getDefaultLocale: js.Function0[String]

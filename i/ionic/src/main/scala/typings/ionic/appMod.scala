@@ -50,8 +50,7 @@ object appMod {
     val token: String = js.native
   }
   
-  @scala.inline
-  def formatName(app: PickAppnameorg): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatName")(app.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatName(app: PickAppnameorg): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatName")(app.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait AppClientDeps extends StObject {
     
@@ -59,17 +58,14 @@ object appMod {
   }
   object AppClientDeps {
     
-    @scala.inline
-    def apply(client: IClient): AppClientDeps = {
+    inline def apply(client: IClient): AppClientDeps = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppClientDeps]
     }
     
-    @scala.inline
-    implicit class AppClientDepsMutableBuilder[Self <: AppClientDeps] (val x: Self) extends AnyVal {
+    extension [Self <: AppClientDeps](x: Self) {
       
-      @scala.inline
-      def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,23 +77,18 @@ object appMod {
   }
   object AppCreateDetails {
     
-    @scala.inline
-    def apply(name: String): AppCreateDetails = {
+    inline def apply(name: String): AppCreateDetails = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppCreateDetails]
     }
     
-    @scala.inline
-    implicit class AppCreateDetailsMutableBuilder[Self <: AppCreateDetails] (val x: Self) extends AnyVal {
+    extension [Self <: AppCreateDetails](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrg_id(value: String): Self = StObject.set(x, "org_id", value.asInstanceOf[js.Any])
+      inline def setOrg_id(value: String): Self = StObject.set(x, "org_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrg_idUndefined: Self = StObject.set(x, "org_id", js.undefined)
+      inline def setOrg_idUndefined: Self = StObject.set(x, "org_id", js.undefined)
     }
   }
 }

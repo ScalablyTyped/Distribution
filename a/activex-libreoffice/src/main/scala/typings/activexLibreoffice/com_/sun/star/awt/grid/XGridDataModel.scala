@@ -63,8 +63,7 @@ trait XGridDataModel
 }
 object XGridDataModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnCount: Double,
     RowCount: Double,
     acquire: () => Unit,
@@ -83,25 +82,18 @@ object XGridDataModel {
     __obj.asInstanceOf[XGridDataModel]
   }
   
-  @scala.inline
-  implicit class XGridDataModelMutableBuilder[Self <: XGridDataModel] (val x: Self) extends AnyVal {
+  extension [Self <: XGridDataModel](x: Self) {
     
-    @scala.inline
-    def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCellData(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellData", js.Any.fromFunction2(value))
+    inline def setGetCellData(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCellToolTip(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellToolTip", js.Any.fromFunction2(value))
+    inline def setGetCellToolTip(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellToolTip", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetRowData(value: Double => SafeArray[js.Any]): Self = StObject.set(x, "getRowData", js.Any.fromFunction1(value))
+    inline def setGetRowData(value: Double => SafeArray[js.Any]): Self = StObject.set(x, "getRowData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRowHeading(value: Double => js.Any): Self = StObject.set(x, "getRowHeading", js.Any.fromFunction1(value))
+    inline def setGetRowHeading(value: Double => js.Any): Self = StObject.set(x, "getRowHeading", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
   }
 }

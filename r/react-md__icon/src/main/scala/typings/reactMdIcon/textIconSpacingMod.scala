@@ -10,8 +10,7 @@ object textIconSpacingMod {
   
   object TextIconSpacing {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasClassNamePropIconChildrenStackedIconAfterForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName: TextIconSpacingProps
     ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasClassNamePropIconChildrenStackedIconAfterForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
@@ -28,44 +27,37 @@ object textIconSpacingMod {
       @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.aboveClassName")
       @js.native
       def aboveClassName: js.Any = js.native
-      @scala.inline
-      def aboveClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aboveClassName")(x.asInstanceOf[js.Any])
+      inline def aboveClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aboveClassName")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.afterClassName")
       @js.native
       def afterClassName: js.Any = js.native
-      @scala.inline
-      def afterClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterClassName")(x.asInstanceOf[js.Any])
+      inline def afterClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterClassName")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.beforeClassName")
       @js.native
       def beforeClassName: js.Any = js.native
-      @scala.inline
-      def beforeClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeClassName")(x.asInstanceOf[js.Any])
+      inline def beforeClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeClassName")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.belowClassName")
       @js.native
       def belowClassName: js.Any = js.native
-      @scala.inline
-      def belowClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("belowClassName")(x.asInstanceOf[js.Any])
+      inline def belowClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("belowClassName")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.className")
       @js.native
       def className: js.Any = js.native
-      @scala.inline
-      def className_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+      inline def className_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.forceIconWrap")
       @js.native
       def forceIconWrap: js.Any = js.native
-      @scala.inline
-      def forceIconWrap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceIconWrap")(x.asInstanceOf[js.Any])
+      inline def forceIconWrap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceIconWrap")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.icon")
       @js.native
@@ -74,17 +66,14 @@ object textIconSpacingMod {
       @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.iconAfter")
       @js.native
       def iconAfter: js.Any = js.native
-      @scala.inline
-      def iconAfter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iconAfter")(x.asInstanceOf[js.Any])
+      inline def iconAfter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iconAfter")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def icon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon")(x.asInstanceOf[js.Any])
+      inline def icon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.stacked")
       @js.native
       def stacked: js.Any = js.native
-      @scala.inline
-      def stacked_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stacked")(x.asInstanceOf[js.Any])
+      inline def stacked_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stacked")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -161,74 +150,52 @@ object textIconSpacingMod {
   }
   object TextIconSpacingProps {
     
-    @scala.inline
-    def apply(): TextIconSpacingProps = {
+    inline def apply(): TextIconSpacingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextIconSpacingProps]
     }
     
-    @scala.inline
-    implicit class TextIconSpacingPropsMutableBuilder[Self <: TextIconSpacingProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextIconSpacingProps](x: Self) {
       
-      @scala.inline
-      def setAboveClassName(value: String): Self = StObject.set(x, "aboveClassName", value.asInstanceOf[js.Any])
+      inline def setAboveClassName(value: String): Self = StObject.set(x, "aboveClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAboveClassNameUndefined: Self = StObject.set(x, "aboveClassName", js.undefined)
+      inline def setAboveClassNameUndefined: Self = StObject.set(x, "aboveClassName", js.undefined)
       
-      @scala.inline
-      def setAfterClassName(value: String): Self = StObject.set(x, "afterClassName", value.asInstanceOf[js.Any])
+      inline def setAfterClassName(value: String): Self = StObject.set(x, "afterClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterClassNameUndefined: Self = StObject.set(x, "afterClassName", js.undefined)
+      inline def setAfterClassNameUndefined: Self = StObject.set(x, "afterClassName", js.undefined)
       
-      @scala.inline
-      def setBeforeClassName(value: String): Self = StObject.set(x, "beforeClassName", value.asInstanceOf[js.Any])
+      inline def setBeforeClassName(value: String): Self = StObject.set(x, "beforeClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeClassNameUndefined: Self = StObject.set(x, "beforeClassName", js.undefined)
+      inline def setBeforeClassNameUndefined: Self = StObject.set(x, "beforeClassName", js.undefined)
       
-      @scala.inline
-      def setBelowClassName(value: String): Self = StObject.set(x, "belowClassName", value.asInstanceOf[js.Any])
+      inline def setBelowClassName(value: String): Self = StObject.set(x, "belowClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBelowClassNameUndefined: Self = StObject.set(x, "belowClassName", js.undefined)
+      inline def setBelowClassNameUndefined: Self = StObject.set(x, "belowClassName", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setForceIconWrap(value: Boolean): Self = StObject.set(x, "forceIconWrap", value.asInstanceOf[js.Any])
+      inline def setForceIconWrap(value: Boolean): Self = StObject.set(x, "forceIconWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceIconWrapUndefined: Self = StObject.set(x, "forceIconWrap", js.undefined)
+      inline def setForceIconWrapUndefined: Self = StObject.set(x, "forceIconWrap", js.undefined)
       
-      @scala.inline
-      def setIcon(value: ReactElement | ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactElement | ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconAfter(value: Boolean): Self = StObject.set(x, "iconAfter", value.asInstanceOf[js.Any])
+      inline def setIconAfter(value: Boolean): Self = StObject.set(x, "iconAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconAfterUndefined: Self = StObject.set(x, "iconAfter", js.undefined)
+      inline def setIconAfterUndefined: Self = StObject.set(x, "iconAfter", js.undefined)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
+      inline def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
+      inline def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
     }
   }
 }

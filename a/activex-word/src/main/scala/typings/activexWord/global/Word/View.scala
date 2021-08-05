@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.View")
 @js.native
-class View protected ()
+/* private */ class View ()
   extends StObject
      with typings.activexWord.Word.View

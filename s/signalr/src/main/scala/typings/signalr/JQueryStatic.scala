@@ -50,8 +50,7 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connection: SignalR,
     hubConnection: (/* url */ js.UndefOr[String], /* options */ js.UndefOr[Options]) => typings.signalr.SignalR.Hub.Connection,
     signalR: SignalR
@@ -60,18 +59,14 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setConnection(value: SignalR): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: SignalR): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHubConnection(
+    inline def setHubConnection(
       value: (/* url */ js.UndefOr[String], /* options */ js.UndefOr[Options]) => typings.signalr.SignalR.Hub.Connection
     ): Self = StObject.set(x, "hubConnection", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSignalR(value: SignalR): Self = StObject.set(x, "signalR", value.asInstanceOf[js.Any])
+    inline def setSignalR(value: SignalR): Self = StObject.set(x, "signalR", value.asInstanceOf[js.Any])
   }
 }

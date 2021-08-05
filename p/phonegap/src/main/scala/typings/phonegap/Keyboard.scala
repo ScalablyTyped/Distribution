@@ -26,8 +26,7 @@ trait Keyboard extends StObject {
 }
 object Keyboard {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     automaticScrollToTopOnHiding: Boolean,
     disableScrollingInShrinkView: Boolean => Unit,
     hideFormAccessoryBar: Boolean => Unit,
@@ -42,34 +41,24 @@ object Keyboard {
     __obj.asInstanceOf[Keyboard]
   }
   
-  @scala.inline
-  implicit class KeyboardMutableBuilder[Self <: Keyboard] (val x: Self) extends AnyVal {
+  extension [Self <: Keyboard](x: Self) {
     
-    @scala.inline
-    def setAutomaticScrollToTopOnHiding(value: Boolean): Self = StObject.set(x, "automaticScrollToTopOnHiding", value.asInstanceOf[js.Any])
+    inline def setAutomaticScrollToTopOnHiding(value: Boolean): Self = StObject.set(x, "automaticScrollToTopOnHiding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableScrollingInShrinkView(value: Boolean => Unit): Self = StObject.set(x, "disableScrollingInShrinkView", js.Any.fromFunction1(value))
+    inline def setDisableScrollingInShrinkView(value: Boolean => Unit): Self = StObject.set(x, "disableScrollingInShrinkView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHideFormAccessoryBar(value: Boolean => Unit): Self = StObject.set(x, "hideFormAccessoryBar", js.Any.fromFunction1(value))
+    inline def setHideFormAccessoryBar(value: Boolean => Unit): Self = StObject.set(x, "hideFormAccessoryBar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnhide(value: js.Function): Self = StObject.set(x, "onhide", value.asInstanceOf[js.Any])
+    inline def setOnhide(value: js.Function): Self = StObject.set(x, "onhide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnhiding(value: js.Function): Self = StObject.set(x, "onhiding", value.asInstanceOf[js.Any])
+    inline def setOnhiding(value: js.Function): Self = StObject.set(x, "onhiding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnshow(value: js.Function): Self = StObject.set(x, "onshow", value.asInstanceOf[js.Any])
+    inline def setOnshow(value: js.Function): Self = StObject.set(x, "onshow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnshowing(value: js.Function): Self = StObject.set(x, "onshowing", value.asInstanceOf[js.Any])
+    inline def setOnshowing(value: js.Function): Self = StObject.set(x, "onshowing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrinkView(value: Boolean => Unit): Self = StObject.set(x, "shrinkView", js.Any.fromFunction1(value))
+    inline def setShrinkView(value: Boolean => Unit): Self = StObject.set(x, "shrinkView", js.Any.fromFunction1(value))
   }
 }

@@ -71,7 +71,7 @@ object compoundWriteMod {
       */
     def removeWrite(path: Path): CompoundWrite = js.native
     
-    var writeTree_ : js.Any = js.native
+    /* private */ var writeTree_ : js.Any = js.native
   }
   /* static members */
   object CompoundWrite {
@@ -83,7 +83,6 @@ object compoundWriteMod {
     @JSImport("@firebase/database/dist/src/core/CompoundWrite", "CompoundWrite.Empty")
     @js.native
     def Empty: CompoundWrite = js.native
-    @scala.inline
-    def Empty_=(x: CompoundWrite): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
+    inline def Empty_=(x: CompoundWrite): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
   }
 }

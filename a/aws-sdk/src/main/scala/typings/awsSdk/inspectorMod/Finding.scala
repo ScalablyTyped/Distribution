@@ -98,8 +98,7 @@ trait Finding extends StObject {
 }
 object Finding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arn: Arn,
     attributes: AttributeList,
     createdAt: Timestamp,
@@ -110,106 +109,72 @@ object Finding {
     __obj.asInstanceOf[Finding]
   }
   
-  @scala.inline
-  implicit class FindingMutableBuilder[Self <: Finding] (val x: Self) extends AnyVal {
+  extension [Self <: Finding](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetAttributes(value: AssetAttributes): Self = StObject.set(x, "assetAttributes", value.asInstanceOf[js.Any])
+    inline def setAssetAttributes(value: AssetAttributes): Self = StObject.set(x, "assetAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetAttributesUndefined: Self = StObject.set(x, "assetAttributes", js.undefined)
+    inline def setAssetAttributesUndefined: Self = StObject.set(x, "assetAttributes", js.undefined)
     
-    @scala.inline
-    def setAssetType(value: AssetType): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
+    inline def setAssetType(value: AssetType): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
+    inline def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
     
-    @scala.inline
-    def setAttributes(value: AttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setConfidence(value: IocConfidence): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: IocConfidence): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Text): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Text): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: FindingId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: FindingId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIndicatorOfCompromise(value: Bool): Self = StObject.set(x, "indicatorOfCompromise", value.asInstanceOf[js.Any])
+    inline def setIndicatorOfCompromise(value: Bool): Self = StObject.set(x, "indicatorOfCompromise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorOfCompromiseUndefined: Self = StObject.set(x, "indicatorOfCompromise", js.undefined)
+    inline def setIndicatorOfCompromiseUndefined: Self = StObject.set(x, "indicatorOfCompromise", js.undefined)
     
-    @scala.inline
-    def setNumericSeverity(value: NumericSeverity): Self = StObject.set(x, "numericSeverity", value.asInstanceOf[js.Any])
+    inline def setNumericSeverity(value: NumericSeverity): Self = StObject.set(x, "numericSeverity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericSeverityUndefined: Self = StObject.set(x, "numericSeverity", js.undefined)
+    inline def setNumericSeverityUndefined: Self = StObject.set(x, "numericSeverity", js.undefined)
     
-    @scala.inline
-    def setRecommendation(value: Text): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
+    inline def setRecommendation(value: Text): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationUndefined: Self = StObject.set(x, "recommendation", js.undefined)
+    inline def setRecommendationUndefined: Self = StObject.set(x, "recommendation", js.undefined)
     
-    @scala.inline
-    def setSchemaVersion(value: NumericVersion): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
+    inline def setSchemaVersion(value: NumericVersion): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
+    inline def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
     
-    @scala.inline
-    def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAttributes(value: InspectorServiceAttributes): Self = StObject.set(x, "serviceAttributes", value.asInstanceOf[js.Any])
+    inline def setServiceAttributes(value: InspectorServiceAttributes): Self = StObject.set(x, "serviceAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAttributesUndefined: Self = StObject.set(x, "serviceAttributes", js.undefined)
+    inline def setServiceAttributesUndefined: Self = StObject.set(x, "serviceAttributes", js.undefined)
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setTitle(value: Text): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Text): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAttributes(value: UserAttributeList): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
+    inline def setUserAttributes(value: UserAttributeList): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAttributesVarargs(value: Attribute*): Self = StObject.set(x, "userAttributes", js.Array(value :_*))
+    inline def setUserAttributesVarargs(value: Attribute*): Self = StObject.set(x, "userAttributes", js.Array(value :_*))
   }
 }

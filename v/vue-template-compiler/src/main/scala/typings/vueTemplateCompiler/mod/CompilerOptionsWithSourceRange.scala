@@ -14,16 +14,13 @@ trait CompilerOptionsWithSourceRange
 }
 object CompilerOptionsWithSourceRange {
   
-  @scala.inline
-  def apply(): CompilerOptionsWithSourceRange = {
+  inline def apply(): CompilerOptionsWithSourceRange = {
     val __obj = js.Dynamic.literal(outputSourceRange = true)
     __obj.asInstanceOf[CompilerOptionsWithSourceRange]
   }
   
-  @scala.inline
-  implicit class CompilerOptionsWithSourceRangeMutableBuilder[Self <: CompilerOptionsWithSourceRange] (val x: Self) extends AnyVal {
+  extension [Self <: CompilerOptionsWithSourceRange](x: Self) {
     
-    @scala.inline
-    def setOutputSourceRange(value: `true`): Self = StObject.set(x, "outputSourceRange", value.asInstanceOf[js.Any])
+    inline def setOutputSourceRange(value: `true`): Self = StObject.set(x, "outputSourceRange", value.asInstanceOf[js.Any])
   }
 }

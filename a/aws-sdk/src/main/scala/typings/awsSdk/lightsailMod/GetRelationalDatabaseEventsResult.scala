@@ -18,28 +18,21 @@ trait GetRelationalDatabaseEventsResult extends StObject {
 }
 object GetRelationalDatabaseEventsResult {
   
-  @scala.inline
-  def apply(): GetRelationalDatabaseEventsResult = {
+  inline def apply(): GetRelationalDatabaseEventsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRelationalDatabaseEventsResult]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseEventsResultMutableBuilder[Self <: GetRelationalDatabaseEventsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseEventsResult](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseEvents(value: RelationalDatabaseEventList): Self = StObject.set(x, "relationalDatabaseEvents", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseEvents(value: RelationalDatabaseEventList): Self = StObject.set(x, "relationalDatabaseEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabaseEventsUndefined: Self = StObject.set(x, "relationalDatabaseEvents", js.undefined)
+    inline def setRelationalDatabaseEventsUndefined: Self = StObject.set(x, "relationalDatabaseEvents", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseEventsVarargs(value: RelationalDatabaseEvent*): Self = StObject.set(x, "relationalDatabaseEvents", js.Array(value :_*))
+    inline def setRelationalDatabaseEventsVarargs(value: RelationalDatabaseEvent*): Self = StObject.set(x, "relationalDatabaseEvents", js.Array(value :_*))
   }
 }

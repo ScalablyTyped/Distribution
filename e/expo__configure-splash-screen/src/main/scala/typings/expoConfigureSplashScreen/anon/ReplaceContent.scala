@@ -13,19 +13,15 @@ trait ReplaceContent extends StObject {
 }
 object ReplaceContent {
   
-  @scala.inline
-  def apply(replaceContent: String, replacePattern: String | RegExp): ReplaceContent = {
+  inline def apply(replaceContent: String, replacePattern: String | RegExp): ReplaceContent = {
     val __obj = js.Dynamic.literal(replaceContent = replaceContent.asInstanceOf[js.Any], replacePattern = replacePattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceContent]
   }
   
-  @scala.inline
-  implicit class ReplaceContentMutableBuilder[Self <: ReplaceContent] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceContent](x: Self) {
     
-    @scala.inline
-    def setReplaceContent(value: String): Self = StObject.set(x, "replaceContent", value.asInstanceOf[js.Any])
+    inline def setReplaceContent(value: String): Self = StObject.set(x, "replaceContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacePattern(value: String | RegExp): Self = StObject.set(x, "replacePattern", value.asInstanceOf[js.Any])
+    inline def setReplacePattern(value: String | RegExp): Self = StObject.set(x, "replacePattern", value.asInstanceOf[js.Any])
   }
 }

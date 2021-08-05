@@ -12,19 +12,15 @@ trait PartialStyleRulesMenuClas extends StObject {
 }
 object PartialStyleRulesMenuClas {
   
-  @scala.inline
-  def apply(): PartialStyleRulesMenuClas = {
+  inline def apply(): PartialStyleRulesMenuClas = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesMenuClas]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesMenuClasMutableBuilder[Self <: PartialStyleRulesMenuClas] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesMenuClas](x: Self) {
     
-    @scala.inline
-    def setPaper(value: CSSProperties): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
+    inline def setPaper(value: CSSProperties): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
+    inline def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
   }
 }

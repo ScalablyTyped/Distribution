@@ -123,246 +123,160 @@ object messageMod {
   @js.native
   val SCALE_BINDINGS_CONTINUOUS: /* "Scale bindings are currently only supported for scales with unbinned, continuous domains." */ String = js.native
   
-  @scala.inline
-  def cannotApplySizeToNonOrientedMark(mark: Mark): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotApplySizeToNonOrientedMark")(mark.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cannotApplySizeToNonOrientedMark(mark: Mark): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotApplySizeToNonOrientedMark")(mark.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def cannotProjectAggregate(channel: Channel, aggregate: Aggregate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cannotProjectAggregate")(channel.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def cannotProjectAggregate(channel: Channel, aggregate: HiddenCompositeAggregate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cannotProjectAggregate")(channel.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cannotProjectAggregate(channel: Channel, aggregate: Aggregate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cannotProjectAggregate")(channel.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cannotProjectAggregate(channel: Channel, aggregate: HiddenCompositeAggregate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cannotProjectAggregate")(channel.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def cannotProjectOnChannelWithoutField(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotProjectOnChannelWithoutField")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cannotProjectOnChannelWithoutField(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotProjectOnChannelWithoutField")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def cannotStackNonLinearScale(scaleType: ScaleType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotStackNonLinearScale")(scaleType.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cannotStackNonLinearScale(scaleType: ScaleType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotStackNonLinearScale")(scaleType.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def cannotStackRangedMark(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotStackRangedMark")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cannotStackRangedMark(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotStackRangedMark")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def cannotUseScalePropertyWithNonColor(prop: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotUseScalePropertyWithNonColor")(prop.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cannotUseScalePropertyWithNonColor(prop: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotUseScalePropertyWithNonColor")(prop.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def channelRequiredForBinned(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("channelRequiredForBinned")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def channelRequiredForBinned(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("channelRequiredForBinned")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def channelShouldNotBeUsedForBinned(channel: ExtendedChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("channelShouldNotBeUsedForBinned")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def channelShouldNotBeUsedForBinned(channel: ExtendedChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("channelShouldNotBeUsedForBinned")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def columnsNotSupportByRowCol_facet(`type`: facet): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnsNotSupportByRowCol")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def columnsNotSupportByRowCol_facet(`type`: facet): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnsNotSupportByRowCol")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def columnsNotSupportByRowCol_repeat(`type`: repeat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnsNotSupportByRowCol")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def columnsNotSupportByRowCol_repeat(`type`: repeat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnsNotSupportByRowCol")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def containerSizeNonSingle_height(name: height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNonSingle")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def containerSizeNonSingle_height(name: height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNonSingle")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def containerSizeNonSingle_width(name: width): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNonSingle")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def containerSizeNonSingle_width(name: width): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNonSingle")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def containerSizeNotCompatibleWithAutosize_height(name: height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNotCompatibleWithAutosize")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def containerSizeNotCompatibleWithAutosize_height(name: height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNotCompatibleWithAutosize")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def containerSizeNotCompatibleWithAutosize_width(name: width): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNotCompatibleWithAutosize")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def containerSizeNotCompatibleWithAutosize_width(name: width): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNotCompatibleWithAutosize")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def customFormatTypeNotAllowed(channel: ExtendedChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("customFormatTypeNotAllowed")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def customFormatTypeNotAllowed(channel: ExtendedChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("customFormatTypeNotAllowed")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def differentParse(field: String, local: String, ancestor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("differentParse")(field.asInstanceOf[js.Any], local.asInstanceOf[js.Any], ancestor.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def differentParse(field: String, local: String, ancestor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("differentParse")(field.asInstanceOf[js.Any], local.asInstanceOf[js.Any], ancestor.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def discreteChannelCannotEncode(channel: Channel, `type`: Type): String = (^.asInstanceOf[js.Dynamic].applyDynamic("discreteChannelCannotEncode")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def discreteChannelCannotEncode(channel: Channel, `type`: Type): String = (^.asInstanceOf[js.Dynamic].applyDynamic("discreteChannelCannotEncode")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def domainRequiredForThresholdScale(channel: ScaleChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("domainRequiredForThresholdScale")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def domainRequiredForThresholdScale(channel: ScaleChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("domainRequiredForThresholdScale")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def domainSortDropped(sort: SortField): String = ^.asInstanceOf[js.Dynamic].applyDynamic("domainSortDropped")(sort.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def domainSortDropped(sort: SortField): String = ^.asInstanceOf[js.Dynamic].applyDynamic("domainSortDropped")(sort.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def droppedDay(d: DateTime): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppedDay")(d.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def droppedDay(d: DateTimeExpr): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppedDay")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def droppedDay(d: DateTime): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppedDay")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def droppedDay(d: DateTimeExpr): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppedDay")(d.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def droppingColor_encoding(`type`: encoding, opt: Fill): String = (^.asInstanceOf[js.Dynamic].applyDynamic("droppingColor")(`type`.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def droppingColor_encoding(`type`: encoding, opt: Fill): String = (^.asInstanceOf[js.Dynamic].applyDynamic("droppingColor")(`type`.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def droppingColor_property(`type`: property, opt: Fill): String = (^.asInstanceOf[js.Dynamic].applyDynamic("droppingColor")(`type`.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def droppingColor_property(`type`: property, opt: Fill): String = (^.asInstanceOf[js.Dynamic].applyDynamic("droppingColor")(`type`.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def droppingFit(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppingFit")().asInstanceOf[String]
-  @scala.inline
-  def droppingFit(channel: PositionScaleChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppingFit")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def droppingFit(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppingFit")().asInstanceOf[String]
+  inline def droppingFit(channel: PositionScaleChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppingFit")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def emptyFieldDef(fieldDef: js.Any, channel: ExtendedChannel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyFieldDef")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def emptyFieldDef(fieldDef: js.Any, channel: ExtendedChannel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyFieldDef")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def errorBand1DNotSupport_interpolate(property: interpolate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("errorBand1DNotSupport")(property.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def errorBand1DNotSupport_interpolate(property: interpolate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("errorBand1DNotSupport")(property.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def errorBand1DNotSupport_tension(property: tension): String = ^.asInstanceOf[js.Dynamic].applyDynamic("errorBand1DNotSupport")(property.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def errorBand1DNotSupport_tension(property: tension): String = ^.asInstanceOf[js.Dynamic].applyDynamic("errorBand1DNotSupport")(property.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def errorBarCenterAndExtentAreNotNeeded(center: ErrorBarCenter, extent: ErrorBarExtent): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarCenterAndExtentAreNotNeeded")(center.asInstanceOf[js.Any], extent.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def errorBarCenterAndExtentAreNotNeeded(center: ErrorBarCenter, extent: ErrorBarExtent): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarCenterAndExtentAreNotNeeded")(center.asInstanceOf[js.Any], extent.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def errorBarCenterIsUsedWithWrongExtent_errorband(center: ErrorBarCenter, extent: ErrorBarExtent, mark: errorband): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarCenterIsUsedWithWrongExtent")(center.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def errorBarCenterIsUsedWithWrongExtent_errorband(center: ErrorBarCenter, extent: ErrorBarExtent, mark: errorband): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarCenterIsUsedWithWrongExtent")(center.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def errorBarCenterIsUsedWithWrongExtent_errorbar(center: ErrorBarCenter, extent: ErrorBarExtent, mark: errorbar): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarCenterIsUsedWithWrongExtent")(center.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def errorBarCenterIsUsedWithWrongExtent_errorbar(center: ErrorBarCenter, extent: ErrorBarExtent, mark: errorbar): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarCenterIsUsedWithWrongExtent")(center.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def errorBarContinuousAxisHasCustomizedAggregate(aggregate: String, compositeMark: CompositeMark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarContinuousAxisHasCustomizedAggregate")(aggregate.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def errorBarContinuousAxisHasCustomizedAggregate(aggregate: Aggregate, compositeMark: CompositeMark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarContinuousAxisHasCustomizedAggregate")(aggregate.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def errorBarContinuousAxisHasCustomizedAggregate(aggregate: String, compositeMark: CompositeMark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarContinuousAxisHasCustomizedAggregate")(aggregate.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def errorBarContinuousAxisHasCustomizedAggregate(aggregate: Aggregate, compositeMark: CompositeMark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarContinuousAxisHasCustomizedAggregate")(aggregate.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def facetChannelDropped(channels: js.Array[FacetChannel]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("facetChannelDropped")(channels.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def facetChannelDropped(channels: js.Array[FacetChannel]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("facetChannelDropped")(channels.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def facetChannelShouldBeDiscrete(channel: FacetChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("facetChannelShouldBeDiscrete")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def facetChannelShouldBeDiscrete(channel: FacetChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("facetChannelShouldBeDiscrete")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def incompatibleChannel(channel: ExtendedChannel, markOrFacet: CompositeMark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def incompatibleChannel(channel: ExtendedChannel, markOrFacet: CompositeMark, when: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any], when.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def incompatibleChannel(channel: ExtendedChannel, markOrFacet: Mark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def incompatibleChannel(channel: ExtendedChannel, markOrFacet: Mark, when: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any], when.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def incompatibleChannel(channel: ExtendedChannel, markOrFacet: CompositeMark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def incompatibleChannel(channel: ExtendedChannel, markOrFacet: CompositeMark, when: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any], when.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def incompatibleChannel(channel: ExtendedChannel, markOrFacet: Mark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def incompatibleChannel(channel: ExtendedChannel, markOrFacet: Mark, when: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any], when.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def incompatibleChannel_facet(channel: ExtendedChannel, markOrFacet: facet): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def incompatibleChannel_facet(channel: ExtendedChannel, markOrFacet: facet, when: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any], when.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def incompatibleChannel_facet(channel: ExtendedChannel, markOrFacet: facet): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def incompatibleChannel_facet(channel: ExtendedChannel, markOrFacet: facet, when: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any], when.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def independentScaleMeansIndependentGuide(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("independentScaleMeansIndependentGuide")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def independentScaleMeansIndependentGuide(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("independentScaleMeansIndependentGuide")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def invalidAggregate(aggregate: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def invalidAggregate(aggregate: AggregateOp): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def invalidAggregate(aggregate: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def invalidAggregate(aggregate: AggregateOp): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def invalidEncodingChannel(channel: ExtendedChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidEncodingChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def invalidEncodingChannel(channel: ExtendedChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidEncodingChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def invalidFieldType(`type`: Type): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidFieldType")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def invalidFieldType(`type`: Type): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidFieldType")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def invalidFieldTypeForCountAggregate(`type`: Type, aggregate: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidFieldTypeForCountAggregate")(`type`.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def invalidFieldTypeForCountAggregate(`type`: Type, aggregate: Aggregate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidFieldTypeForCountAggregate")(`type`.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def invalidFieldTypeForCountAggregate(`type`: Type, aggregate: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidFieldTypeForCountAggregate")(`type`.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def invalidFieldTypeForCountAggregate(`type`: Type, aggregate: Aggregate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidFieldTypeForCountAggregate")(`type`.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def invalidSpec(spec: GenericSpec[js.Any, js.Any, js.Any, js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def invalidSpec(spec: GenericSpec[js.Any, js.Any, js.Any, js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def invalidTimeUnit(unitName: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidTimeUnit")(unitName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def invalidTimeUnit(unitName: String, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidTimeUnit")(unitName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def invalidTimeUnit(unitName: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidTimeUnit")(unitName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def invalidTimeUnit(unitName: String, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidTimeUnit")(unitName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def invalidTransformIgnored(transform: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidTransformIgnored")(transform.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def invalidTransformIgnored(transform: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidTransformIgnored")(transform.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def latLongDeprecated(channel: Channel, `type`: Type, newChannel: GeoPositionChannel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("latLongDeprecated")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], newChannel.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def latLongDeprecated(channel: Channel, `type`: Type, newChannel: GeoPositionChannel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("latLongDeprecated")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], newChannel.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def lineWithRange(hasX2: Boolean, hasY2: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lineWithRange")(hasX2.asInstanceOf[js.Any], hasY2.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def lineWithRange(hasX2: Boolean, hasY2: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lineWithRange")(hasX2.asInstanceOf[js.Any], hasY2.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def mergeConflictingDomainProperty_domains[T](property: domains, propertyOf: SplitParentProperty, v1: T, v2: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeConflictingDomainProperty")(property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def mergeConflictingDomainProperty_domains[T](property: domains, propertyOf: SplitParentProperty, v1: T, v2: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeConflictingDomainProperty")(property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def mergeConflictingProperty[T](property: String, propertyOf: SplitParentProperty, v1: T, v2: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeConflictingProperty")(property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def mergeConflictingProperty[T](property: js.Symbol, propertyOf: SplitParentProperty, v1: T, v2: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeConflictingProperty")(property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def mergeConflictingProperty[T](property: Double, propertyOf: SplitParentProperty, v1: T, v2: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeConflictingProperty")(property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def mergeConflictingProperty[T](property: String, propertyOf: SplitParentProperty, v1: T, v2: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeConflictingProperty")(property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def mergeConflictingProperty[T](property: js.Symbol, propertyOf: SplitParentProperty, v1: T, v2: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeConflictingProperty")(property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def mergeConflictingProperty[T](property: Double, propertyOf: SplitParentProperty, v1: T, v2: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeConflictingProperty")(property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def missingFieldType(channel: Channel, newType: Type): String = (^.asInstanceOf[js.Dynamic].applyDynamic("missingFieldType")(channel.asInstanceOf[js.Any], newType.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def missingFieldType(channel: Channel, newType: Type): String = (^.asInstanceOf[js.Dynamic].applyDynamic("missingFieldType")(channel.asInstanceOf[js.Any], newType.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def nearestNotSupportForContinuous(mark: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nearestNotSupportForContinuous")(mark.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def nearestNotSupportForContinuous(mark: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nearestNotSupportForContinuous")(mark.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def noSameUnitLookup(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("noSameUnitLookup")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def noSameUnitLookup(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("noSameUnitLookup")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def noSuchRepeatedValue(field: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("noSuchRepeatedValue")(field.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def noSuchRepeatedValue(field: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("noSuchRepeatedValue")(field.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def orientOverridden(original: String, actual: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("orientOverridden")(original.asInstanceOf[js.Any], actual.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def orientOverridden(original: String, actual: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("orientOverridden")(original.asInstanceOf[js.Any], actual.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def primitiveChannelDef_boolean(channel: ExtendedChannel, `type`: boolean, value: Exclude[Value[ExprRef | SignalRef], Null]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("primitiveChannelDef")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def primitiveChannelDef_boolean(channel: ExtendedChannel, `type`: boolean, value: Exclude[Value[ExprRef | SignalRef], Null]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("primitiveChannelDef")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def primitiveChannelDef_number(channel: ExtendedChannel, `type`: number, value: Exclude[Value[ExprRef | SignalRef], Null]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("primitiveChannelDef")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def primitiveChannelDef_number(channel: ExtendedChannel, `type`: number, value: Exclude[Value[ExprRef | SignalRef], Null]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("primitiveChannelDef")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def primitiveChannelDef_string(channel: ExtendedChannel, `type`: string, value: Exclude[Value[ExprRef | SignalRef], Null]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("primitiveChannelDef")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def primitiveChannelDef_string(channel: ExtendedChannel, `type`: string, value: Exclude[Value[ExprRef | SignalRef], Null]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("primitiveChannelDef")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def projectionOverridden(opt: ParentProjection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("projectionOverridden")(opt.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def projectionOverridden(opt: ParentProjection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("projectionOverridden")(opt.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def rangeMarkAlignmentCannotBeExpression_align(align: align): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeMarkAlignmentCannotBeExpression")(align.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def rangeMarkAlignmentCannotBeExpression_align(align: align): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeMarkAlignmentCannotBeExpression")(align.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def rangeMarkAlignmentCannotBeExpression_baseline(align: baseline): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeMarkAlignmentCannotBeExpression")(align.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def rangeMarkAlignmentCannotBeExpression_baseline(align: baseline): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeMarkAlignmentCannotBeExpression")(align.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def scalePropertyNotWorkWithScaleType(scaleType: ScaleType, propName: String, channel: Channel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePropertyNotWorkWithScaleType")(scaleType.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def scalePropertyNotWorkWithScaleType(scaleType: ScaleType, propName: String, channel: Channel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePropertyNotWorkWithScaleType")(scaleType.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def scaleTypeNotWorkWithChannel(channel: Channel, scaleType: ScaleType, defaultScaleType: ScaleType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeNotWorkWithChannel")(channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], defaultScaleType.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def scaleTypeNotWorkWithChannel(channel: Channel, scaleType: ScaleType, defaultScaleType: ScaleType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeNotWorkWithChannel")(channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], defaultScaleType.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def scaleTypeNotWorkWithFieldDef(scaleType: ScaleType, defaultScaleType: ScaleType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeNotWorkWithFieldDef")(scaleType.asInstanceOf[js.Any], defaultScaleType.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def scaleTypeNotWorkWithFieldDef(scaleType: ScaleType, defaultScaleType: ScaleType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeNotWorkWithFieldDef")(scaleType.asInstanceOf[js.Any], defaultScaleType.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def scaleTypeNotWorkWithMark(mark: Mark, scaleType: ScaleType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeNotWorkWithMark")(mark.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def scaleTypeNotWorkWithMark(mark: Mark, scaleType: ScaleType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeNotWorkWithMark")(mark.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def selectionNotFound(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("selectionNotFound")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def selectionNotFound(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("selectionNotFound")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def selectionNotSupported(mark: CompositeMark): String = ^.asInstanceOf[js.Dynamic].applyDynamic("selectionNotSupported")(mark.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def selectionNotSupported(mark: CompositeMark): String = ^.asInstanceOf[js.Dynamic].applyDynamic("selectionNotSupported")(mark.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def stackNonSummativeAggregate(aggregate: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stackNonSummativeAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def stackNonSummativeAggregate(aggregate: Aggregate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stackNonSummativeAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stackNonSummativeAggregate(aggregate: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stackNonSummativeAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stackNonSummativeAggregate(aggregate: Aggregate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stackNonSummativeAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def stepDropped_height(channel: height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stepDropped")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stepDropped_height(channel: height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stepDropped")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def stepDropped_width(channel: width): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stepDropped")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stepDropped_width(channel: width): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stepDropped")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def unaggregateDomainHasNoEffectForRawField_binned(fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregateDomainHasNoEffectForRawField")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unaggregateDomainHasNoEffectForRawField_binned(fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregateDomainHasNoEffectForRawField")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def unaggregateDomainWithNonSharedDomainOp(aggregate: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregateDomainWithNonSharedDomainOp")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def unaggregateDomainWithNonSharedDomainOp(aggregate: Aggregate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregateDomainWithNonSharedDomainOp")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unaggregateDomainWithNonSharedDomainOp(aggregate: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregateDomainWithNonSharedDomainOp")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unaggregateDomainWithNonSharedDomainOp(aggregate: Aggregate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregateDomainWithNonSharedDomainOp")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def unaggregatedDomainWithLogScale_binned(fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregatedDomainWithLogScale")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unaggregatedDomainWithLogScale_binned(fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregatedDomainWithLogScale")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def unknownField(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unknownField")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unknownField(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unknownField")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def unrecognizedParse(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unrecognizedParse")(p.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unrecognizedParse(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unrecognizedParse")(p.asInstanceOf[js.Any]).asInstanceOf[String]
 }

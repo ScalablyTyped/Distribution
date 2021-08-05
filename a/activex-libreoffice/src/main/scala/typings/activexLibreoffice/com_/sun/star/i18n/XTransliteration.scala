@@ -159,8 +159,7 @@ trait XTransliteration
 }
 object XTransliteration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     Type: Double,
     acquire: () => Unit,
@@ -185,54 +184,38 @@ object XTransliteration {
     __obj.asInstanceOf[XTransliteration]
   }
   
-  @scala.inline
-  implicit class XTransliterationMutableBuilder[Self <: XTransliteration] (val x: Self) extends AnyVal {
+  extension [Self <: XTransliteration](x: Self) {
     
-    @scala.inline
-    def setCompareString(value: (String, String) => Double): Self = StObject.set(x, "compareString", js.Any.fromFunction2(value))
+    inline def setCompareString(value: (String, String) => Double): Self = StObject.set(x, "compareString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCompareSubstring(value: (String, Double, Double, String, Double, Double) => Double): Self = StObject.set(x, "compareSubstring", js.Any.fromFunction6(value))
+    inline def setCompareSubstring(value: (String, Double, Double, String, Double, Double) => Double): Self = StObject.set(x, "compareSubstring", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setEquals_(
+    inline def setEquals_(
       value: (String, Double, Double, js.Array[Double], String, Double, Double, js.Array[Double]) => Boolean
     ): Self = StObject.set(x, "equals", js.Any.fromFunction8(value))
     
-    @scala.inline
-    def setFolding(value: (String, Double, Double, js.Array[SeqEquiv[Double]]) => String): Self = StObject.set(x, "folding", js.Any.fromFunction4(value))
+    inline def setFolding(value: (String, Double, Double, js.Array[SeqEquiv[Double]]) => String): Self = StObject.set(x, "folding", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetAvailableModules(value: (Locale, Double) => SafeArray[String]): Self = StObject.set(x, "getAvailableModules", js.Any.fromFunction2(value))
+    inline def setGetAvailableModules(value: (Locale, Double) => SafeArray[String]): Self = StObject.set(x, "getAvailableModules", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadModule(value: (TransliterationModules, Locale) => Unit): Self = StObject.set(x, "loadModule", js.Any.fromFunction2(value))
+    inline def setLoadModule(value: (TransliterationModules, Locale) => Unit): Self = StObject.set(x, "loadModule", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadModuleByImplName(value: (String, Locale) => Unit): Self = StObject.set(x, "loadModuleByImplName", js.Any.fromFunction2(value))
+    inline def setLoadModuleByImplName(value: (String, Locale) => Unit): Self = StObject.set(x, "loadModuleByImplName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadModuleNew(value: (SeqEquiv[TransliterationModulesNew], Locale) => Unit): Self = StObject.set(x, "loadModuleNew", js.Any.fromFunction2(value))
+    inline def setLoadModuleNew(value: (SeqEquiv[TransliterationModulesNew], Locale) => Unit): Self = StObject.set(x, "loadModuleNew", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadModulesByImplNames(value: (SeqEquiv[String], Locale) => Unit): Self = StObject.set(x, "loadModulesByImplNames", js.Any.fromFunction2(value))
+    inline def setLoadModulesByImplNames(value: (SeqEquiv[String], Locale) => Unit): Self = StObject.set(x, "loadModulesByImplNames", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransliterate(value: (String, Double, Double, js.Array[SeqEquiv[Double]]) => String): Self = StObject.set(x, "transliterate", js.Any.fromFunction4(value))
+    inline def setTransliterate(value: (String, Double, Double, js.Array[SeqEquiv[Double]]) => String): Self = StObject.set(x, "transliterate", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setTransliterateRange(value: (String, String) => SafeArray[String]): Self = StObject.set(x, "transliterateRange", js.Any.fromFunction2(value))
+    inline def setTransliterateRange(value: (String, String) => SafeArray[String]): Self = StObject.set(x, "transliterateRange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

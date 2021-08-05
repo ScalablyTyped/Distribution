@@ -12,8 +12,7 @@ trait IUnaryExpressionSyntax
 }
 object IUnaryExpressionSyntax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: ISyntaxVisitor => js.Any,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
@@ -43,10 +42,8 @@ object IUnaryExpressionSyntax {
     __obj.asInstanceOf[IUnaryExpressionSyntax]
   }
   
-  @scala.inline
-  implicit class IUnaryExpressionSyntaxMutableBuilder[Self <: IUnaryExpressionSyntax] (val x: Self) extends AnyVal {
+  extension [Self <: IUnaryExpressionSyntax](x: Self) {
     
-    @scala.inline
-    def setIsUnaryExpression(value: () => Boolean): Self = StObject.set(x, "isUnaryExpression", js.Any.fromFunction0(value))
+    inline def setIsUnaryExpression(value: () => Boolean): Self = StObject.set(x, "isUnaryExpression", js.Any.fromFunction0(value))
   }
 }

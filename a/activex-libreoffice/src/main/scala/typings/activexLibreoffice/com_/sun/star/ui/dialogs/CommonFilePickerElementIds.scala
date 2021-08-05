@@ -25,25 +25,18 @@ object CommonFilePickerElementIds {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CONTROL_FILEVIEW: `4` = 4.asInstanceOf[`4`]
+    inline def CONTROL_FILEVIEW: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def EDIT_FILEURL: `5` = 5.asInstanceOf[`5`]
+    inline def EDIT_FILEURL: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def EDIT_FILEURL_LABEL: `7` = 7.asInstanceOf[`7`]
+    inline def EDIT_FILEURL_LABEL: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def LISTBOX_FILTER: `3` = 3.asInstanceOf[`3`]
+    inline def LISTBOX_FILTER: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def LISTBOX_FILTER_LABEL: `6` = 6.asInstanceOf[`6`]
+    inline def LISTBOX_FILTER_LABEL: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def PUSHBUTTON_CANCEL: `2` = 2.asInstanceOf[`2`]
+    inline def PUSHBUTTON_CANCEL: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def PUSHBUTTON_OK: `1` = 1.asInstanceOf[`1`]
+    inline def PUSHBUTTON_OK: `1` = 1.asInstanceOf[`1`]
   }
 }

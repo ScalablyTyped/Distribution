@@ -46,8 +46,7 @@ object TextEdit {
     * @param range A range.
     * @return A new text edit object.
     */
-  @scala.inline
-  def delete(range: Range): TextEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(range.asInstanceOf[js.Any]).asInstanceOf[TextEdit]
+  inline def delete(range: Range): TextEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(range.asInstanceOf[js.Any]).asInstanceOf[TextEdit]
   
   /**
     * Utility to create an insert edit.
@@ -56,8 +55,7 @@ object TextEdit {
     * @param newText A string.
     * @return A new text edit object.
     */
-  @scala.inline
-  def insert(position: Position, newText: String): TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(position.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[TextEdit]
+  inline def insert(position: Position, newText: String): TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(position.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[TextEdit]
   
   /**
     * Utility to create a replace edit.
@@ -66,8 +64,7 @@ object TextEdit {
     * @param newText A string.
     * @return A new text edit object.
     */
-  @scala.inline
-  def replace(range: Range, newText: String): TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(range.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[TextEdit]
+  inline def replace(range: Range, newText: String): TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(range.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[TextEdit]
   
   /**
     * Utility to create an eol-edit.
@@ -75,6 +72,5 @@ object TextEdit {
     * @param eol An eol-sequence
     * @return A new text edit object.
     */
-  @scala.inline
-  def setEndOfLine(eol: EndOfLine): TextEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEndOfLine")(eol.asInstanceOf[js.Any]).asInstanceOf[TextEdit]
+  inline def setEndOfLine(eol: EndOfLine): TextEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEndOfLine")(eol.asInstanceOf[js.Any]).asInstanceOf[TextEdit]
 }

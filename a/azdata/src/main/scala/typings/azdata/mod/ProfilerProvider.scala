@@ -31,8 +31,7 @@ trait ProfilerProvider
 }
 object ProfilerProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectSession: String => Thenable[Boolean],
     createSession: (String, String, ProfilerSessionTemplate) => Thenable[Boolean],
     disconnectSession: String => Thenable[Boolean],
@@ -49,37 +48,26 @@ object ProfilerProvider {
     __obj.asInstanceOf[ProfilerProvider]
   }
   
-  @scala.inline
-  implicit class ProfilerProviderMutableBuilder[Self <: ProfilerProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ProfilerProvider](x: Self) {
     
-    @scala.inline
-    def setConnectSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "connectSession", js.Any.fromFunction1(value))
+    inline def setConnectSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "connectSession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateSession(value: (String, String, ProfilerSessionTemplate) => Thenable[Boolean]): Self = StObject.set(x, "createSession", js.Any.fromFunction3(value))
+    inline def setCreateSession(value: (String, String, ProfilerSessionTemplate) => Thenable[Boolean]): Self = StObject.set(x, "createSession", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDisconnectSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "disconnectSession", js.Any.fromFunction1(value))
+    inline def setDisconnectSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "disconnectSession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetXEventSessions(value: String => Thenable[js.Array[String]]): Self = StObject.set(x, "getXEventSessions", js.Any.fromFunction1(value))
+    inline def setGetXEventSessions(value: String => Thenable[js.Array[String]]): Self = StObject.set(x, "getXEventSessions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPauseSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "pauseSession", js.Any.fromFunction1(value))
+    inline def setPauseSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "pauseSession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnProfilerSessionCreated(value: js.Function1[/* response */ ProfilerSessionCreatedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnProfilerSessionCreated", js.Any.fromFunction1(value))
+    inline def setRegisterOnProfilerSessionCreated(value: js.Function1[/* response */ ProfilerSessionCreatedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnProfilerSessionCreated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnSessionEventsAvailable(value: js.Function1[/* response */ ProfilerSessionEvents, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionEventsAvailable", js.Any.fromFunction1(value))
+    inline def setRegisterOnSessionEventsAvailable(value: js.Function1[/* response */ ProfilerSessionEvents, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionEventsAvailable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnSessionStopped(value: js.Function1[/* response */ ProfilerSessionStoppedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionStopped", js.Any.fromFunction1(value))
+    inline def setRegisterOnSessionStopped(value: js.Function1[/* response */ ProfilerSessionStoppedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionStopped", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartSession(value: (String, String) => Thenable[Boolean]): Self = StObject.set(x, "startSession", js.Any.fromFunction2(value))
+    inline def setStartSession(value: (String, String) => Thenable[Boolean]): Self = StObject.set(x, "startSession", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStopSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "stopSession", js.Any.fromFunction1(value))
+    inline def setStopSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "stopSession", js.Any.fromFunction1(value))
   }
 }

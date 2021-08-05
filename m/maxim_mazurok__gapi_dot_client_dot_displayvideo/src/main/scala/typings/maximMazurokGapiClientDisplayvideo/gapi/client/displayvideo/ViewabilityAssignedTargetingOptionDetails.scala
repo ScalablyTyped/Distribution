@@ -14,25 +14,19 @@ trait ViewabilityAssignedTargetingOptionDetails extends StObject {
 }
 object ViewabilityAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): ViewabilityAssignedTargetingOptionDetails = {
+  inline def apply(): ViewabilityAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewabilityAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class ViewabilityAssignedTargetingOptionDetailsMutableBuilder[Self <: ViewabilityAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ViewabilityAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
+    inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
+    inline def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
     
-    @scala.inline
-    def setViewability(value: String): Self = StObject.set(x, "viewability", value.asInstanceOf[js.Any])
+    inline def setViewability(value: String): Self = StObject.set(x, "viewability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewabilityUndefined: Self = StObject.set(x, "viewability", js.undefined)
+    inline def setViewabilityUndefined: Self = StObject.set(x, "viewability", js.undefined)
   }
 }

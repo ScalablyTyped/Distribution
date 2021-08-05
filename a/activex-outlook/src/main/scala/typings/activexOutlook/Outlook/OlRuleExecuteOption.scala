@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlRuleExecuteOption extends StObject
 object OlRuleExecuteOption {
   
-  @scala.inline
-  def olRuleExecuteAllMessages: `0` = 0.asInstanceOf[`0`]
+  inline def olRuleExecuteAllMessages: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olRuleExecuteReadMessages: `1` = 1.asInstanceOf[`1`]
+  inline def olRuleExecuteReadMessages: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olRuleExecuteUnreadMessages: `2` = 2.asInstanceOf[`2`]
+  inline def olRuleExecuteUnreadMessages: `2` = 2.asInstanceOf[`2`]
 }

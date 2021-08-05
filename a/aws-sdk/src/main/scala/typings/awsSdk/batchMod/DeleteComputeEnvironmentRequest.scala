@@ -13,16 +13,13 @@ trait DeleteComputeEnvironmentRequest extends StObject {
 }
 object DeleteComputeEnvironmentRequest {
   
-  @scala.inline
-  def apply(computeEnvironment: String): DeleteComputeEnvironmentRequest = {
+  inline def apply(computeEnvironment: String): DeleteComputeEnvironmentRequest = {
     val __obj = js.Dynamic.literal(computeEnvironment = computeEnvironment.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteComputeEnvironmentRequest]
   }
   
-  @scala.inline
-  implicit class DeleteComputeEnvironmentRequestMutableBuilder[Self <: DeleteComputeEnvironmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteComputeEnvironmentRequest](x: Self) {
     
-    @scala.inline
-    def setComputeEnvironment(value: String): Self = StObject.set(x, "computeEnvironment", value.asInstanceOf[js.Any])
+    inline def setComputeEnvironment(value: String): Self = StObject.set(x, "computeEnvironment", value.asInstanceOf[js.Any])
   }
 }

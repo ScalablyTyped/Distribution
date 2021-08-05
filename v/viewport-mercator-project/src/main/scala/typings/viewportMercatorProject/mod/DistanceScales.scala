@@ -16,8 +16,7 @@ trait DistanceScales extends StObject {
 }
 object DistanceScales {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     degreesPerPixel: js.Tuple3[Double, Double, Double],
     metersPerPixel: js.Tuple3[Double, Double, Double],
     pixelsPerDegree: js.Tuple3[Double, Double, Double],
@@ -27,19 +26,14 @@ object DistanceScales {
     __obj.asInstanceOf[DistanceScales]
   }
   
-  @scala.inline
-  implicit class DistanceScalesMutableBuilder[Self <: DistanceScales] (val x: Self) extends AnyVal {
+  extension [Self <: DistanceScales](x: Self) {
     
-    @scala.inline
-    def setDegreesPerPixel(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "degreesPerPixel", value.asInstanceOf[js.Any])
+    inline def setDegreesPerPixel(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "degreesPerPixel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetersPerPixel(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "metersPerPixel", value.asInstanceOf[js.Any])
+    inline def setMetersPerPixel(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "metersPerPixel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelsPerDegree(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "pixelsPerDegree", value.asInstanceOf[js.Any])
+    inline def setPixelsPerDegree(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "pixelsPerDegree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelsPerMeter(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "pixelsPerMeter", value.asInstanceOf[js.Any])
+    inline def setPixelsPerMeter(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "pixelsPerMeter", value.asInstanceOf[js.Any])
   }
 }

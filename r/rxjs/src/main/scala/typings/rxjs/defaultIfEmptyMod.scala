@@ -12,13 +12,9 @@ object defaultIfEmptyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultIfEmpty[T](): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")().asInstanceOf[MonoTypeOperatorFunction[T]]
-  @scala.inline
-  def defaultIfEmpty[T](defaultValue: T): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def defaultIfEmpty[T](): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")().asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def defaultIfEmpty[T](defaultValue: T): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
   
-  @scala.inline
-  def defaultIfEmpty_TR_OperatorFunction[T, R](): OperatorFunction[T, T | R] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")().asInstanceOf[OperatorFunction[T, T | R]]
-  @scala.inline
-  def defaultIfEmpty_TR_OperatorFunction[T, R](defaultValue: R): OperatorFunction[T, T | R] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, T | R]]
+  inline def defaultIfEmpty_TR_OperatorFunction[T, R](): OperatorFunction[T, T | R] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")().asInstanceOf[OperatorFunction[T, T | R]]
+  inline def defaultIfEmpty_TR_OperatorFunction[T, R](defaultValue: R): OperatorFunction[T, T | R] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, T | R]]
 }

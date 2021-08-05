@@ -18,19 +18,15 @@ trait CreateTestGridUrlRequest extends StObject {
 }
 object CreateTestGridUrlRequest {
   
-  @scala.inline
-  def apply(expiresInSeconds: TestGridUrlExpiresInSecondsInput, projectArn: DeviceFarmArn): CreateTestGridUrlRequest = {
+  inline def apply(expiresInSeconds: TestGridUrlExpiresInSecondsInput, projectArn: DeviceFarmArn): CreateTestGridUrlRequest = {
     val __obj = js.Dynamic.literal(expiresInSeconds = expiresInSeconds.asInstanceOf[js.Any], projectArn = projectArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTestGridUrlRequest]
   }
   
-  @scala.inline
-  implicit class CreateTestGridUrlRequestMutableBuilder[Self <: CreateTestGridUrlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTestGridUrlRequest](x: Self) {
     
-    @scala.inline
-    def setExpiresInSeconds(value: TestGridUrlExpiresInSecondsInput): Self = StObject.set(x, "expiresInSeconds", value.asInstanceOf[js.Any])
+    inline def setExpiresInSeconds(value: TestGridUrlExpiresInSecondsInput): Self = StObject.set(x, "expiresInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
+    inline def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
   }
 }

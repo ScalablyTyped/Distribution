@@ -12,16 +12,13 @@ trait NotificationThis
 }
 object NotificationThis {
   
-  @scala.inline
-  def apply(id: String): NotificationThis = {
+  inline def apply(id: String): NotificationThis = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationThis]
   }
   
-  @scala.inline
-  implicit class NotificationThisMutableBuilder[Self <: NotificationThis] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationThis](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

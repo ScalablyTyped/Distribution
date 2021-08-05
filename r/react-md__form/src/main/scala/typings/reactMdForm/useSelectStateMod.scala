@@ -10,8 +10,7 @@ object useSelectStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useSelectState[T /* <: String */](defaultValue: DefaultValue[T]): ReturnValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSelectState")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[T]]
+  inline def useSelectState[T /* <: String */](defaultValue: DefaultValue[T]): ReturnValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSelectState")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[T]]
   
   type DefaultValue[T /* <: String */] = T | js.Function0[T]
   

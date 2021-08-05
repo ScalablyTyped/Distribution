@@ -14,25 +14,19 @@ trait CalendarDot extends StObject {
 }
 object CalendarDot {
   
-  @scala.inline
-  def apply(color: String, key: String): CalendarDot = {
+  inline def apply(color: String, key: String): CalendarDot = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarDot]
   }
   
-  @scala.inline
-  implicit class CalendarDotMutableBuilder[Self <: CalendarDot] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarDot](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedDotColor(value: String): Self = StObject.set(x, "selectedDotColor", value.asInstanceOf[js.Any])
+    inline def setSelectedDotColor(value: String): Self = StObject.set(x, "selectedDotColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedDotColorUndefined: Self = StObject.set(x, "selectedDotColor", js.undefined)
+    inline def setSelectedDotColorUndefined: Self = StObject.set(x, "selectedDotColor", js.undefined)
   }
 }

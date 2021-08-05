@@ -13,19 +13,15 @@ trait OwnershipControls extends StObject {
 }
 object OwnershipControls {
   
-  @scala.inline
-  def apply(Rules: OwnershipControlsRules): OwnershipControls = {
+  inline def apply(Rules: OwnershipControlsRules): OwnershipControls = {
     val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[OwnershipControls]
   }
   
-  @scala.inline
-  implicit class OwnershipControlsMutableBuilder[Self <: OwnershipControls] (val x: Self) extends AnyVal {
+  extension [Self <: OwnershipControls](x: Self) {
     
-    @scala.inline
-    def setRules(value: OwnershipControlsRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: OwnershipControlsRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: OwnershipControlsRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: OwnershipControlsRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

@@ -8,6 +8,5 @@ object domSerializerStrings {
   
   @js.native
   sealed trait foreign extends StObject
-  @scala.inline
-  def foreign: foreign = "foreign".asInstanceOf[foreign]
+  inline def foreign: foreign = "foreign".asInstanceOf[foreign]
 }

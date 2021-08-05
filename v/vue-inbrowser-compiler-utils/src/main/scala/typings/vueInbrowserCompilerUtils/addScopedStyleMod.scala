@@ -10,6 +10,5 @@ object addScopedStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(css: String, suffix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(css.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(css: String, suffix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(css.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -13,19 +13,15 @@ trait GetSakSuccessCallbackResult extends StObject {
 }
 object GetSakSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, sak: Double): GetSakSuccessCallbackResult = {
+  inline def apply(errMsg: String, sak: Double): GetSakSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], sak = sak.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSakSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetSakSuccessCallbackResultMutableBuilder[Self <: GetSakSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetSakSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSak(value: Double): Self = StObject.set(x, "sak", value.asInstanceOf[js.Any])
+    inline def setSak(value: Double): Self = StObject.set(x, "sak", value.asInstanceOf[js.Any])
   }
 }

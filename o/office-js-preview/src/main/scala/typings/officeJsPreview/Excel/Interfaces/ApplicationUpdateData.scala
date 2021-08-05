@@ -31,25 +31,19 @@ trait ApplicationUpdateData extends StObject {
 }
 object ApplicationUpdateData {
   
-  @scala.inline
-  def apply(): ApplicationUpdateData = {
+  inline def apply(): ApplicationUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationUpdateData]
   }
   
-  @scala.inline
-  implicit class ApplicationUpdateDataMutableBuilder[Self <: ApplicationUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationUpdateData](x: Self) {
     
-    @scala.inline
-    def setCalculationMode(value: CalculationMode | Automatic | AutomaticExceptTables | Manual): Self = StObject.set(x, "calculationMode", value.asInstanceOf[js.Any])
+    inline def setCalculationMode(value: CalculationMode | Automatic | AutomaticExceptTables | Manual): Self = StObject.set(x, "calculationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculationModeUndefined: Self = StObject.set(x, "calculationMode", js.undefined)
+    inline def setCalculationModeUndefined: Self = StObject.set(x, "calculationMode", js.undefined)
     
-    @scala.inline
-    def setIterativeCalculation(value: IterativeCalculationUpdateData): Self = StObject.set(x, "iterativeCalculation", value.asInstanceOf[js.Any])
+    inline def setIterativeCalculation(value: IterativeCalculationUpdateData): Self = StObject.set(x, "iterativeCalculation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterativeCalculationUndefined: Self = StObject.set(x, "iterativeCalculation", js.undefined)
+    inline def setIterativeCalculationUndefined: Self = StObject.set(x, "iterativeCalculation", js.undefined)
   }
 }

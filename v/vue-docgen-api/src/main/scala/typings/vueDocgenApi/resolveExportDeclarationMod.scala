@@ -11,6 +11,5 @@ object resolveExportDeclarationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(path: NodePath[js.Any, js.Any]): typings.tsMap.mod.default[String, NodePath[js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[typings.tsMap.mod.default[String, NodePath[js.Any, js.Any]]]
+  inline def default(path: NodePath[js.Any, js.Any]): typings.tsMap.mod.default[String, NodePath[js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[typings.tsMap.mod.default[String, NodePath[js.Any, js.Any]]]
 }

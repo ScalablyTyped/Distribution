@@ -14,16 +14,13 @@ trait GEPhotoOverlayViewer extends StObject {
 }
 object GEPhotoOverlayViewer {
   
-  @scala.inline
-  def apply(setPhotoOverlay: KmlPhotoOverlay => Unit): GEPhotoOverlayViewer = {
+  inline def apply(setPhotoOverlay: KmlPhotoOverlay => Unit): GEPhotoOverlayViewer = {
     val __obj = js.Dynamic.literal(setPhotoOverlay = js.Any.fromFunction1(setPhotoOverlay))
     __obj.asInstanceOf[GEPhotoOverlayViewer]
   }
   
-  @scala.inline
-  implicit class GEPhotoOverlayViewerMutableBuilder[Self <: GEPhotoOverlayViewer] (val x: Self) extends AnyVal {
+  extension [Self <: GEPhotoOverlayViewer](x: Self) {
     
-    @scala.inline
-    def setSetPhotoOverlay(value: KmlPhotoOverlay => Unit): Self = StObject.set(x, "setPhotoOverlay", js.Any.fromFunction1(value))
+    inline def setSetPhotoOverlay(value: KmlPhotoOverlay => Unit): Self = StObject.set(x, "setPhotoOverlay", js.Any.fromFunction1(value))
   }
 }

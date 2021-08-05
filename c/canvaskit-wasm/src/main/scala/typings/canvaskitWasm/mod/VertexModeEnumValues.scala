@@ -16,8 +16,7 @@ trait VertexModeEnumValues
 }
 object VertexModeEnumValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TriangleFan: VertexMode,
     Triangles: VertexMode,
     TrianglesStrip: VertexMode,
@@ -27,16 +26,12 @@ object VertexModeEnumValues {
     __obj.asInstanceOf[VertexModeEnumValues]
   }
   
-  @scala.inline
-  implicit class VertexModeEnumValuesMutableBuilder[Self <: VertexModeEnumValues] (val x: Self) extends AnyVal {
+  extension [Self <: VertexModeEnumValues](x: Self) {
     
-    @scala.inline
-    def setTriangleFan(value: VertexMode): Self = StObject.set(x, "TriangleFan", value.asInstanceOf[js.Any])
+    inline def setTriangleFan(value: VertexMode): Self = StObject.set(x, "TriangleFan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangles(value: VertexMode): Self = StObject.set(x, "Triangles", value.asInstanceOf[js.Any])
+    inline def setTriangles(value: VertexMode): Self = StObject.set(x, "Triangles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrianglesStrip(value: VertexMode): Self = StObject.set(x, "TrianglesStrip", value.asInstanceOf[js.Any])
+    inline def setTrianglesStrip(value: VertexMode): Self = StObject.set(x, "TrianglesStrip", value.asInstanceOf[js.Any])
   }
 }

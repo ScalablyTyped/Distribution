@@ -11,16 +11,13 @@ trait CreditCardVerificationGateway extends StObject {
 }
 object CreditCardVerificationGateway {
   
-  @scala.inline
-  def apply(search: js.Any => Readable): CreditCardVerificationGateway = {
+  inline def apply(search: js.Any => Readable): CreditCardVerificationGateway = {
     val __obj = js.Dynamic.literal(search = js.Any.fromFunction1(search))
     __obj.asInstanceOf[CreditCardVerificationGateway]
   }
   
-  @scala.inline
-  implicit class CreditCardVerificationGatewayMutableBuilder[Self <: CreditCardVerificationGateway] (val x: Self) extends AnyVal {
+  extension [Self <: CreditCardVerificationGateway](x: Self) {
     
-    @scala.inline
-    def setSearch(value: js.Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+    inline def setSearch(value: js.Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
   }
 }

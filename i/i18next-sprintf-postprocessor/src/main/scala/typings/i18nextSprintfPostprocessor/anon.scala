@@ -15,23 +15,18 @@ object anon {
   }
   object PostProcess {
     
-    @scala.inline
-    def apply(sprintf: js.Array[String]): PostProcess = {
+    inline def apply(sprintf: js.Array[String]): PostProcess = {
       val __obj = js.Dynamic.literal(postProcess = "sprintf", sprintf = sprintf.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostProcess]
     }
     
-    @scala.inline
-    implicit class PostProcessMutableBuilder[Self <: PostProcess] (val x: Self) extends AnyVal {
+    extension [Self <: PostProcess](x: Self) {
       
-      @scala.inline
-      def setPostProcess(value: sprintf): Self = StObject.set(x, "postProcess", value.asInstanceOf[js.Any])
+      inline def setPostProcess(value: sprintf): Self = StObject.set(x, "postProcess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSprintf(value: js.Array[String]): Self = StObject.set(x, "sprintf", value.asInstanceOf[js.Any])
+      inline def setSprintf(value: js.Array[String]): Self = StObject.set(x, "sprintf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSprintfVarargs(value: String*): Self = StObject.set(x, "sprintf", js.Array(value :_*))
+      inline def setSprintfVarargs(value: String*): Self = StObject.set(x, "sprintf", js.Array(value :_*))
     }
   }
 }

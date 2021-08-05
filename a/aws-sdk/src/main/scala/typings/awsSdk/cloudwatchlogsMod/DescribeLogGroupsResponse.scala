@@ -15,28 +15,21 @@ trait DescribeLogGroupsResponse extends StObject {
 }
 object DescribeLogGroupsResponse {
   
-  @scala.inline
-  def apply(): DescribeLogGroupsResponse = {
+  inline def apply(): DescribeLogGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLogGroupsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeLogGroupsResponseMutableBuilder[Self <: DescribeLogGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLogGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setLogGroups(value: LogGroups): Self = StObject.set(x, "logGroups", value.asInstanceOf[js.Any])
+    inline def setLogGroups(value: LogGroups): Self = StObject.set(x, "logGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupsUndefined: Self = StObject.set(x, "logGroups", js.undefined)
+    inline def setLogGroupsUndefined: Self = StObject.set(x, "logGroups", js.undefined)
     
-    @scala.inline
-    def setLogGroupsVarargs(value: LogGroup*): Self = StObject.set(x, "logGroups", js.Array(value :_*))
+    inline def setLogGroupsVarargs(value: LogGroup*): Self = StObject.set(x, "logGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

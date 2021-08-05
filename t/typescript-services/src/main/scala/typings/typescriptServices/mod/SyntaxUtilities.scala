@@ -19,26 +19,20 @@ object SyntaxUtilities {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def containsToken(list: ISyntaxList, kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsToken")(list.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def containsToken(list: ISyntaxList, kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsToken")(list.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def getExportKeyword(moduleElement: IModuleElementSyntax): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("getExportKeyword")(moduleElement.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
+  inline def getExportKeyword(moduleElement: IModuleElementSyntax): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("getExportKeyword")(moduleElement.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
   
   /* static member */
-  @scala.inline
-  def getToken(list: ISyntaxList, kind: typings.typescriptServices.TypeScript.SyntaxKind): ISyntaxToken = (^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(list.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[ISyntaxToken]
+  inline def getToken(list: ISyntaxList, kind: typings.typescriptServices.TypeScript.SyntaxKind): ISyntaxToken = (^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(list.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[ISyntaxToken]
   
   /* static member */
-  @scala.inline
-  def hasExportKeyword(moduleElement: IModuleElementSyntax): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasExportKeyword")(moduleElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasExportKeyword(moduleElement: IModuleElementSyntax): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasExportKeyword")(moduleElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def isAmbientDeclarationSyntax(positionNode: typings.typescriptServices.TypeScript.PositionedNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAmbientDeclarationSyntax")(positionNode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAmbientDeclarationSyntax(positionNode: typings.typescriptServices.TypeScript.PositionedNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAmbientDeclarationSyntax")(positionNode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def isAngleBracket(positionedElement: typings.typescriptServices.TypeScript.PositionedElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAngleBracket")(positionedElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAngleBracket(positionedElement: typings.typescriptServices.TypeScript.PositionedElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAngleBracket")(positionedElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

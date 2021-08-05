@@ -21,8 +21,7 @@ trait KeyColumnDescriptor
 }
 object KeyColumnDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     PropertySetInfo: XPropertySetInfo,
     RelatedColumn: String,
@@ -41,10 +40,8 @@ object KeyColumnDescriptor {
     __obj.asInstanceOf[KeyColumnDescriptor]
   }
   
-  @scala.inline
-  implicit class KeyColumnDescriptorMutableBuilder[Self <: KeyColumnDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: KeyColumnDescriptor](x: Self) {
     
-    @scala.inline
-    def setRelatedColumn(value: String): Self = StObject.set(x, "RelatedColumn", value.asInstanceOf[js.Any])
+    inline def setRelatedColumn(value: String): Self = StObject.set(x, "RelatedColumn", value.asInstanceOf[js.Any])
   }
 }

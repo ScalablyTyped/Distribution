@@ -18,25 +18,19 @@ trait PortOverride extends StObject {
 }
 object PortOverride {
   
-  @scala.inline
-  def apply(): PortOverride = {
+  inline def apply(): PortOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortOverride]
   }
   
-  @scala.inline
-  implicit class PortOverrideMutableBuilder[Self <: PortOverride] (val x: Self) extends AnyVal {
+  extension [Self <: PortOverride](x: Self) {
     
-    @scala.inline
-    def setEndpointPort(value: PortNumber): Self = StObject.set(x, "EndpointPort", value.asInstanceOf[js.Any])
+    inline def setEndpointPort(value: PortNumber): Self = StObject.set(x, "EndpointPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointPortUndefined: Self = StObject.set(x, "EndpointPort", js.undefined)
+    inline def setEndpointPortUndefined: Self = StObject.set(x, "EndpointPort", js.undefined)
     
-    @scala.inline
-    def setListenerPort(value: PortNumber): Self = StObject.set(x, "ListenerPort", value.asInstanceOf[js.Any])
+    inline def setListenerPort(value: PortNumber): Self = StObject.set(x, "ListenerPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerPortUndefined: Self = StObject.set(x, "ListenerPort", js.undefined)
+    inline def setListenerPortUndefined: Self = StObject.set(x, "ListenerPort", js.undefined)
   }
 }

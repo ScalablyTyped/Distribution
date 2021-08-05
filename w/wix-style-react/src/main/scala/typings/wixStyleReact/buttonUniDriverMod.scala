@@ -12,8 +12,7 @@ object buttonUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buttonDriverFactory(base: BaseUniDriver): ButtonUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ButtonUniDriver]
+  inline def buttonDriverFactory(base: BaseUniDriver): ButtonUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ButtonUniDriver]
   
   trait ButtonUniDriver
     extends StObject
@@ -29,8 +28,7 @@ object buttonUniDriverMod {
   }
   object ButtonUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -43,20 +41,15 @@ object buttonUniDriverMod {
       __obj.asInstanceOf[ButtonUniDriver]
     }
     
-    @scala.inline
-    implicit class ButtonUniDriverMutableBuilder[Self <: ButtonUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetButtonTextContent(value: () => js.Promise[String]): Self = StObject.set(x, "getButtonTextContent", js.Any.fromFunction0(value))
+      inline def setGetButtonTextContent(value: () => js.Promise[String]): Self = StObject.set(x, "getButtonTextContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasSkin(value: ButtonSkin => js.Promise[Boolean]): Self = StObject.set(x, "hasSkin", js.Any.fromFunction1(value))
+      inline def setHasSkin(value: ButtonSkin => js.Promise[Boolean]): Self = StObject.set(x, "hasSkin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsButtonDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isButtonDisabled", js.Any.fromFunction0(value))
+      inline def setIsButtonDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isButtonDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFocused(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
+      inline def setIsFocused(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
     }
   }
 }

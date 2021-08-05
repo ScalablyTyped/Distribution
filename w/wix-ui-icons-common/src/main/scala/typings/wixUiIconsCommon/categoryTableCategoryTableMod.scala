@@ -26,8 +26,7 @@ object categoryTableCategoryTableMod extends Shortcut {
   }
   object CategoryTableProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       iconsMetadata: js.Array[IconMetadata],
       mapIconToRow: IconMetadata => CategoryTableRow,
       tableHeaderTitles: js.Array[String],
@@ -37,26 +36,19 @@ object categoryTableCategoryTableMod extends Shortcut {
       __obj.asInstanceOf[CategoryTableProps]
     }
     
-    @scala.inline
-    implicit class CategoryTablePropsMutableBuilder[Self <: CategoryTableProps] (val x: Self) extends AnyVal {
+    extension [Self <: CategoryTableProps](x: Self) {
       
-      @scala.inline
-      def setIconsMetadata(value: js.Array[IconMetadata]): Self = StObject.set(x, "iconsMetadata", value.asInstanceOf[js.Any])
+      inline def setIconsMetadata(value: js.Array[IconMetadata]): Self = StObject.set(x, "iconsMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconsMetadataVarargs(value: IconMetadata*): Self = StObject.set(x, "iconsMetadata", js.Array(value :_*))
+      inline def setIconsMetadataVarargs(value: IconMetadata*): Self = StObject.set(x, "iconsMetadata", js.Array(value :_*))
       
-      @scala.inline
-      def setMapIconToRow(value: IconMetadata => CategoryTableRow): Self = StObject.set(x, "mapIconToRow", js.Any.fromFunction1(value))
+      inline def setMapIconToRow(value: IconMetadata => CategoryTableRow): Self = StObject.set(x, "mapIconToRow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTableHeaderTitles(value: js.Array[String]): Self = StObject.set(x, "tableHeaderTitles", value.asInstanceOf[js.Any])
+      inline def setTableHeaderTitles(value: js.Array[String]): Self = StObject.set(x, "tableHeaderTitles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableHeaderTitlesVarargs(value: String*): Self = StObject.set(x, "tableHeaderTitles", js.Array(value :_*))
+      inline def setTableHeaderTitlesVarargs(value: String*): Self = StObject.set(x, "tableHeaderTitles", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   

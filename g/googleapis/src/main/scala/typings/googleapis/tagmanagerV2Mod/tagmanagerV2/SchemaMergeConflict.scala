@@ -25,25 +25,19 @@ trait SchemaMergeConflict extends StObject {
 }
 object SchemaMergeConflict {
   
-  @scala.inline
-  def apply(): SchemaMergeConflict = {
+  inline def apply(): SchemaMergeConflict = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMergeConflict]
   }
   
-  @scala.inline
-  implicit class SchemaMergeConflictMutableBuilder[Self <: SchemaMergeConflict] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMergeConflict](x: Self) {
     
-    @scala.inline
-    def setEntityInBaseVersion(value: SchemaEntity): Self = StObject.set(x, "entityInBaseVersion", value.asInstanceOf[js.Any])
+    inline def setEntityInBaseVersion(value: SchemaEntity): Self = StObject.set(x, "entityInBaseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityInBaseVersionUndefined: Self = StObject.set(x, "entityInBaseVersion", js.undefined)
+    inline def setEntityInBaseVersionUndefined: Self = StObject.set(x, "entityInBaseVersion", js.undefined)
     
-    @scala.inline
-    def setEntityInWorkspace(value: SchemaEntity): Self = StObject.set(x, "entityInWorkspace", value.asInstanceOf[js.Any])
+    inline def setEntityInWorkspace(value: SchemaEntity): Self = StObject.set(x, "entityInWorkspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityInWorkspaceUndefined: Self = StObject.set(x, "entityInWorkspace", js.undefined)
+    inline def setEntityInWorkspaceUndefined: Self = StObject.set(x, "entityInWorkspace", js.undefined)
   }
 }

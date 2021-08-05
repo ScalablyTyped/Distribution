@@ -96,70 +96,49 @@ trait PlusGalleryGalleryOptions extends StObject {
 }
 object PlusGalleryGalleryOptions {
   
-  @scala.inline
-  def apply(): PlusGalleryGalleryOptions = {
+  inline def apply(): PlusGalleryGalleryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusGalleryGalleryOptions]
   }
   
-  @scala.inline
-  implicit class PlusGalleryGalleryOptionsMutableBuilder[Self <: PlusGalleryGalleryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusGalleryGalleryOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setFilter(value: image | video | none): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: image | video | none): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
-    @scala.inline
-    def setOnmaxed(value: () => Unit): Self = StObject.set(x, "onmaxed", js.Any.fromFunction0(value))
+    inline def setOnmaxed(value: () => Unit): Self = StObject.set(x, "onmaxed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnmaxedUndefined: Self = StObject.set(x, "onmaxed", js.undefined)
+    inline def setOnmaxedUndefined: Self = StObject.set(x, "onmaxed", js.undefined)
     
-    @scala.inline
-    def setPopover(value: PlusGalleryPopPosition): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
+    inline def setPopover(value: PlusGalleryPopPosition): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
+    inline def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
     
-    @scala.inline
-    def setSelected(value: js.Array[js.Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: js.Array[js.Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    @scala.inline
-    def setSelectedVarargs(value: js.Any*): Self = StObject.set(x, "selected", js.Array(value :_*))
+    inline def setSelectedVarargs(value: js.Any*): Self = StObject.set(x, "selected", js.Array(value :_*))
     
-    @scala.inline
-    def setSystem(value: Boolean): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: Boolean): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+    inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
   }
 }

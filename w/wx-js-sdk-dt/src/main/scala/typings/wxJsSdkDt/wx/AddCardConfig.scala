@@ -13,25 +13,19 @@ trait AddCardConfig extends StObject {
 }
 object AddCardConfig {
   
-  @scala.inline
-  def apply(cardList: js.Array[Card]): AddCardConfig = {
+  inline def apply(cardList: js.Array[Card]): AddCardConfig = {
     val __obj = js.Dynamic.literal(cardList = cardList.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCardConfig]
   }
   
-  @scala.inline
-  implicit class AddCardConfigMutableBuilder[Self <: AddCardConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AddCardConfig](x: Self) {
     
-    @scala.inline
-    def setCardList(value: js.Array[Card]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
+    inline def setCardList(value: js.Array[Card]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardListVarargs(value: Card*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+    inline def setCardListVarargs(value: Card*): Self = StObject.set(x, "cardList", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: /* res */ CardList => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ CardList => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

@@ -16,34 +16,25 @@ trait plugin extends StObject {
 }
 object plugin {
   
-  @scala.inline
-  def apply(init: plotOptions => js.Any): plugin = {
+  inline def apply(init: plotOptions => js.Any): plugin = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
     __obj.asInstanceOf[plugin]
   }
   
-  @scala.inline
-  implicit class pluginMutableBuilder[Self <: plugin] (val x: Self) extends AnyVal {
+  extension [Self <: plugin](x: Self) {
     
-    @scala.inline
-    def setInit(value: plotOptions => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: plotOptions => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

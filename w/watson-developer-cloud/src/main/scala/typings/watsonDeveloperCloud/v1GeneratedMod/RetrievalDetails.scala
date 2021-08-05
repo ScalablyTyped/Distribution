@@ -12,19 +12,15 @@ trait RetrievalDetails extends StObject {
 }
 object RetrievalDetails {
   
-  @scala.inline
-  def apply(): RetrievalDetails = {
+  inline def apply(): RetrievalDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetrievalDetails]
   }
   
-  @scala.inline
-  implicit class RetrievalDetailsMutableBuilder[Self <: RetrievalDetails] (val x: Self) extends AnyVal {
+  extension [Self <: RetrievalDetails](x: Self) {
     
-    @scala.inline
-    def setDocument_retrieval_strategy(value: String): Self = StObject.set(x, "document_retrieval_strategy", value.asInstanceOf[js.Any])
+    inline def setDocument_retrieval_strategy(value: String): Self = StObject.set(x, "document_retrieval_strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument_retrieval_strategyUndefined: Self = StObject.set(x, "document_retrieval_strategy", js.undefined)
+    inline def setDocument_retrieval_strategyUndefined: Self = StObject.set(x, "document_retrieval_strategy", js.undefined)
   }
 }

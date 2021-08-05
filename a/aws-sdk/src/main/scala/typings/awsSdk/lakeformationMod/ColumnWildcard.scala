@@ -13,22 +13,17 @@ trait ColumnWildcard extends StObject {
 }
 object ColumnWildcard {
   
-  @scala.inline
-  def apply(): ColumnWildcard = {
+  inline def apply(): ColumnWildcard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnWildcard]
   }
   
-  @scala.inline
-  implicit class ColumnWildcardMutableBuilder[Self <: ColumnWildcard] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnWildcard](x: Self) {
     
-    @scala.inline
-    def setExcludedColumnNames(value: ColumnNames): Self = StObject.set(x, "ExcludedColumnNames", value.asInstanceOf[js.Any])
+    inline def setExcludedColumnNames(value: ColumnNames): Self = StObject.set(x, "ExcludedColumnNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedColumnNamesUndefined: Self = StObject.set(x, "ExcludedColumnNames", js.undefined)
+    inline def setExcludedColumnNamesUndefined: Self = StObject.set(x, "ExcludedColumnNames", js.undefined)
     
-    @scala.inline
-    def setExcludedColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "ExcludedColumnNames", js.Array(value :_*))
+    inline def setExcludedColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "ExcludedColumnNames", js.Array(value :_*))
   }
 }

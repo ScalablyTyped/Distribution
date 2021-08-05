@@ -18,28 +18,21 @@ trait DescribeLaunchTemplateVersionsResult extends StObject {
 }
 object DescribeLaunchTemplateVersionsResult {
   
-  @scala.inline
-  def apply(): DescribeLaunchTemplateVersionsResult = {
+  inline def apply(): DescribeLaunchTemplateVersionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLaunchTemplateVersionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeLaunchTemplateVersionsResultMutableBuilder[Self <: DescribeLaunchTemplateVersionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLaunchTemplateVersionsResult](x: Self) {
     
-    @scala.inline
-    def setLaunchTemplateVersions(value: LaunchTemplateVersionSet): Self = StObject.set(x, "LaunchTemplateVersions", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateVersions(value: LaunchTemplateVersionSet): Self = StObject.set(x, "LaunchTemplateVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateVersionsUndefined: Self = StObject.set(x, "LaunchTemplateVersions", js.undefined)
+    inline def setLaunchTemplateVersionsUndefined: Self = StObject.set(x, "LaunchTemplateVersions", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplateVersionsVarargs(value: LaunchTemplateVersion*): Self = StObject.set(x, "LaunchTemplateVersions", js.Array(value :_*))
+    inline def setLaunchTemplateVersionsVarargs(value: LaunchTemplateVersion*): Self = StObject.set(x, "LaunchTemplateVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

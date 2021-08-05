@@ -50,6 +50,5 @@ object bootstrapRmMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintAllPeerTimeout: All): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintAllPeerTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintAllPeerTimeout: All): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintAllPeerTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

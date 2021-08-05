@@ -54,8 +54,7 @@ object healthcareMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare
       ] = js.native
-    @scala.inline
-    def v1alpha2_=(
+    inline def v1alpha2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -63,8 +62,7 @@ object healthcareMod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1alpha2")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def v1alpha_=(
+    inline def v1alpha_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Healthcare]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1alpha")(x.asInstanceOf[js.Any])
     
@@ -83,8 +81,7 @@ object healthcareMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -126,8 +123,7 @@ object healthcareMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -171,19 +167,13 @@ object healthcareMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def healthcare(options: Options): typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare]
-  @scala.inline
-  def healthcare(options: typings.googleapis.healthcareV1alphaMod.healthcareV1alpha.Options): Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(options.asInstanceOf[js.Any]).asInstanceOf[Healthcare]
-  @scala.inline
-  def healthcare(options: typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Options): typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare]
+  inline def healthcare(options: Options): typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare]
+  inline def healthcare(options: typings.googleapis.healthcareV1alphaMod.healthcareV1alpha.Options): Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(options.asInstanceOf[js.Any]).asInstanceOf[Healthcare]
+  inline def healthcare(options: typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Options): typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare]
   
-  @scala.inline
-  def healthcare_v1alpha(version: v1alpha): Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(version.asInstanceOf[js.Any]).asInstanceOf[Healthcare]
+  inline def healthcare_v1alpha(version: v1alpha): Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(version.asInstanceOf[js.Any]).asInstanceOf[Healthcare]
   
-  @scala.inline
-  def healthcare_v1alpha2(version: v1alpha2): typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare]
+  inline def healthcare_v1alpha2(version: v1alpha2): typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare]
   
-  @scala.inline
-  def healthcare_v1beta1(version: v1beta1): typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare]
+  inline def healthcare_v1beta1(version: v1beta1): typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare]
 }

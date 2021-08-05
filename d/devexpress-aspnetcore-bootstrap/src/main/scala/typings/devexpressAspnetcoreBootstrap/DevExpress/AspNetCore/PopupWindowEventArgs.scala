@@ -12,16 +12,13 @@ trait PopupWindowEventArgs
 }
 object PopupWindowEventArgs {
   
-  @scala.inline
-  def apply(sender: Control, window: BootstrapPopupWindow): PopupWindowEventArgs = {
+  inline def apply(sender: Control, window: BootstrapPopupWindow): PopupWindowEventArgs = {
     val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupWindowEventArgs]
   }
   
-  @scala.inline
-  implicit class PopupWindowEventArgsMutableBuilder[Self <: PopupWindowEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PopupWindowEventArgs](x: Self) {
     
-    @scala.inline
-    def setWindow(value: BootstrapPopupWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: BootstrapPopupWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }
 }

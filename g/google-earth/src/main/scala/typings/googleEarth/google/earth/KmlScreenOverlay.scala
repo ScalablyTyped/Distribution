@@ -60,8 +60,7 @@ trait KmlScreenOverlay
 }
 object KmlScreenOverlay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -123,25 +122,18 @@ object KmlScreenOverlay {
     __obj.asInstanceOf[KmlScreenOverlay]
   }
   
-  @scala.inline
-  implicit class KmlScreenOverlayMutableBuilder[Self <: KmlScreenOverlay] (val x: Self) extends AnyVal {
+  extension [Self <: KmlScreenOverlay](x: Self) {
     
-    @scala.inline
-    def setGetOverlayXY(value: () => KmlVec2): Self = StObject.set(x, "getOverlayXY", js.Any.fromFunction0(value))
+    inline def setGetOverlayXY(value: () => KmlVec2): Self = StObject.set(x, "getOverlayXY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRotation(value: () => Double): Self = StObject.set(x, "getRotation", js.Any.fromFunction0(value))
+    inline def setGetRotation(value: () => Double): Self = StObject.set(x, "getRotation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRotationXY(value: () => KmlVec2): Self = StObject.set(x, "getRotationXY", js.Any.fromFunction0(value))
+    inline def setGetRotationXY(value: () => KmlVec2): Self = StObject.set(x, "getRotationXY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScreenXY(value: () => KmlVec2): Self = StObject.set(x, "getScreenXY", js.Any.fromFunction0(value))
+    inline def setGetScreenXY(value: () => KmlVec2): Self = StObject.set(x, "getScreenXY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSize(value: () => KmlVec2): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+    inline def setGetSize(value: () => KmlVec2): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetRotation(value: Double => Unit): Self = StObject.set(x, "setRotation", js.Any.fromFunction1(value))
+    inline def setSetRotation(value: Double => Unit): Self = StObject.set(x, "setRotation", js.Any.fromFunction1(value))
   }
 }

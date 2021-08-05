@@ -37,8 +37,7 @@ trait TransientDocumentsStreamContent
      with XChild
 object TransientDocumentsStreamContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     Parent: XInterface,

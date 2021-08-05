@@ -13,16 +13,13 @@ trait CacheStorageListUpdatedEvent extends StObject {
 }
 object CacheStorageListUpdatedEvent {
   
-  @scala.inline
-  def apply(origin: String): CacheStorageListUpdatedEvent = {
+  inline def apply(origin: String): CacheStorageListUpdatedEvent = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheStorageListUpdatedEvent]
   }
   
-  @scala.inline
-  implicit class CacheStorageListUpdatedEventMutableBuilder[Self <: CacheStorageListUpdatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CacheStorageListUpdatedEvent](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

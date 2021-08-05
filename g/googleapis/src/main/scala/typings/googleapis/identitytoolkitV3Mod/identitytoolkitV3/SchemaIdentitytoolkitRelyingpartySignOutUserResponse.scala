@@ -16,19 +16,15 @@ trait SchemaIdentitytoolkitRelyingpartySignOutUserResponse extends StObject {
 }
 object SchemaIdentitytoolkitRelyingpartySignOutUserResponse {
   
-  @scala.inline
-  def apply(): SchemaIdentitytoolkitRelyingpartySignOutUserResponse = {
+  inline def apply(): SchemaIdentitytoolkitRelyingpartySignOutUserResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartySignOutUserResponse]
   }
   
-  @scala.inline
-  implicit class SchemaIdentitytoolkitRelyingpartySignOutUserResponseMutableBuilder[Self <: SchemaIdentitytoolkitRelyingpartySignOutUserResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIdentitytoolkitRelyingpartySignOutUserResponse](x: Self) {
     
-    @scala.inline
-    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
+    inline def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
   }
 }

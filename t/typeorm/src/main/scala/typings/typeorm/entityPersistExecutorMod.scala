@@ -27,21 +27,21 @@ object entityPersistExecutorMod {
       options: js.UndefOr[SaveOptions & RemoveOptions]
     ) = this()
     
-    var connection: Connection = js.native
+    /* protected */ var connection: Connection = js.native
     
-    var entity: ObjectLiteral | js.Array[ObjectLiteral] = js.native
+    /* protected */ var entity: ObjectLiteral | js.Array[ObjectLiteral] = js.native
     
     /**
       * Executes persistence operation ob given entity or entities.
       */
     def execute(): js.Promise[Unit] = js.native
     
-    var mode: save | remove | `soft-remove` | recover = js.native
+    /* protected */ var mode: save | remove | `soft-remove` | recover = js.native
     
-    var options: js.UndefOr[SaveOptions & RemoveOptions] = js.native
+    /* protected */ var options: js.UndefOr[SaveOptions & RemoveOptions] = js.native
     
-    var queryRunner: js.UndefOr[QueryRunner] = js.native
+    /* protected */ var queryRunner: js.UndefOr[QueryRunner] = js.native
     
-    var target: js.UndefOr[js.Function | String] = js.native
+    /* protected */ var target: js.UndefOr[js.Function | String] = js.native
   }
 }

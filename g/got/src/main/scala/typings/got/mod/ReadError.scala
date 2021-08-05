@@ -19,10 +19,8 @@ object ReadError {
   @js.native
   val ^ : Instantiable0[ReadError] = js.native
   
-  @scala.inline
-  implicit class ReadErrorMutableBuilder[Self <: ReadError] (val x: Self) extends AnyVal {
+  extension [Self <: ReadError](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.got.gotStrings.ReadError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.got.gotStrings.ReadError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

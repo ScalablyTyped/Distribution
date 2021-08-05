@@ -21,43 +21,31 @@ trait PublishParameters extends StObject {
 }
 object PublishParameters {
   
-  @scala.inline
-  def apply(channel: String, message: js.Any): PublishParameters = {
+  inline def apply(channel: String, message: js.Any): PublishParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishParameters]
   }
   
-  @scala.inline
-  implicit class PublishParametersMutableBuilder[Self <: PublishParameters] (val x: Self) extends AnyVal {
+  extension [Self <: PublishParameters](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setSendByPost(value: Boolean): Self = StObject.set(x, "sendByPost", value.asInstanceOf[js.Any])
+    inline def setSendByPost(value: Boolean): Self = StObject.set(x, "sendByPost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendByPostUndefined: Self = StObject.set(x, "sendByPost", js.undefined)
+    inline def setSendByPostUndefined: Self = StObject.set(x, "sendByPost", js.undefined)
     
-    @scala.inline
-    def setStoreInHistory(value: Boolean): Self = StObject.set(x, "storeInHistory", value.asInstanceOf[js.Any])
+    inline def setStoreInHistory(value: Boolean): Self = StObject.set(x, "storeInHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreInHistoryUndefined: Self = StObject.set(x, "storeInHistory", js.undefined)
+    inline def setStoreInHistoryUndefined: Self = StObject.set(x, "storeInHistory", js.undefined)
     
-    @scala.inline
-    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object safeDecodeUriMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def safeDecodeURI(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeDecodeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def safeDecodeURI(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeDecodeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
 }

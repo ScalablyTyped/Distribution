@@ -18,28 +18,21 @@ trait DescribeMovingAddressesResult extends StObject {
 }
 object DescribeMovingAddressesResult {
   
-  @scala.inline
-  def apply(): DescribeMovingAddressesResult = {
+  inline def apply(): DescribeMovingAddressesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMovingAddressesResult]
   }
   
-  @scala.inline
-  implicit class DescribeMovingAddressesResultMutableBuilder[Self <: DescribeMovingAddressesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMovingAddressesResult](x: Self) {
     
-    @scala.inline
-    def setMovingAddressStatuses(value: MovingAddressStatusSet): Self = StObject.set(x, "MovingAddressStatuses", value.asInstanceOf[js.Any])
+    inline def setMovingAddressStatuses(value: MovingAddressStatusSet): Self = StObject.set(x, "MovingAddressStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovingAddressStatusesUndefined: Self = StObject.set(x, "MovingAddressStatuses", js.undefined)
+    inline def setMovingAddressStatusesUndefined: Self = StObject.set(x, "MovingAddressStatuses", js.undefined)
     
-    @scala.inline
-    def setMovingAddressStatusesVarargs(value: MovingAddressStatus*): Self = StObject.set(x, "MovingAddressStatuses", js.Array(value :_*))
+    inline def setMovingAddressStatusesVarargs(value: MovingAddressStatus*): Self = StObject.set(x, "MovingAddressStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

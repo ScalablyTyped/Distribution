@@ -18,19 +18,15 @@ trait UpdateHITTypeOfHITRequest extends StObject {
 }
 object UpdateHITTypeOfHITRequest {
   
-  @scala.inline
-  def apply(HITId: EntityId, HITTypeId: EntityId): UpdateHITTypeOfHITRequest = {
+  inline def apply(HITId: EntityId, HITTypeId: EntityId): UpdateHITTypeOfHITRequest = {
     val __obj = js.Dynamic.literal(HITId = HITId.asInstanceOf[js.Any], HITTypeId = HITTypeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateHITTypeOfHITRequest]
   }
   
-  @scala.inline
-  implicit class UpdateHITTypeOfHITRequestMutableBuilder[Self <: UpdateHITTypeOfHITRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateHITTypeOfHITRequest](x: Self) {
     
-    @scala.inline
-    def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
+    inline def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHITTypeId(value: EntityId): Self = StObject.set(x, "HITTypeId", value.asInstanceOf[js.Any])
+    inline def setHITTypeId(value: EntityId): Self = StObject.set(x, "HITTypeId", value.asInstanceOf[js.Any])
   }
 }

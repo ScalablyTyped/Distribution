@@ -14,17 +14,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(reversible = true)
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setReversible(value: `true`): Self = StObject.set(x, "reversible", value.asInstanceOf[js.Any])
+      inline def setReversible(value: `true`): Self = StObject.set(x, "reversible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -34,17 +31,14 @@ object anon {
   }
   object Reversible {
     
-    @scala.inline
-    def apply(): Reversible = {
+    inline def apply(): Reversible = {
       val __obj = js.Dynamic.literal(reversible = false)
       __obj.asInstanceOf[Reversible]
     }
     
-    @scala.inline
-    implicit class ReversibleMutableBuilder[Self <: Reversible] (val x: Self) extends AnyVal {
+    extension [Self <: Reversible](x: Self) {
       
-      @scala.inline
-      def setReversible(value: `false`): Self = StObject.set(x, "reversible", value.asInstanceOf[js.Any])
+      inline def setReversible(value: `false`): Self = StObject.set(x, "reversible", value.asInstanceOf[js.Any])
     }
   }
 }

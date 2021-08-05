@@ -13,25 +13,19 @@ trait PartialuseDisplayedColumn extends StObject {
 }
 object PartialuseDisplayedColumn {
   
-  @scala.inline
-  def apply(): PartialuseDisplayedColumn = {
+  inline def apply(): PartialuseDisplayedColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialuseDisplayedColumn]
   }
   
-  @scala.inline
-  implicit class PartialuseDisplayedColumnMutableBuilder[Self <: PartialuseDisplayedColumn] (val x: Self) extends AnyVal {
+  extension [Self <: PartialuseDisplayedColumn](x: Self) {
     
-    @scala.inline
-    def setUseDisplayedColumnsOnly(value: Boolean): Self = StObject.set(x, "useDisplayedColumnsOnly", value.asInstanceOf[js.Any])
+    inline def setUseDisplayedColumnsOnly(value: Boolean): Self = StObject.set(x, "useDisplayedColumnsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDisplayedColumnsOnlyUndefined: Self = StObject.set(x, "useDisplayedColumnsOnly", js.undefined)
+    inline def setUseDisplayedColumnsOnlyUndefined: Self = StObject.set(x, "useDisplayedColumnsOnly", js.undefined)
     
-    @scala.inline
-    def setUseDisplayedRowsOnly(value: Boolean): Self = StObject.set(x, "useDisplayedRowsOnly", value.asInstanceOf[js.Any])
+    inline def setUseDisplayedRowsOnly(value: Boolean): Self = StObject.set(x, "useDisplayedRowsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDisplayedRowsOnlyUndefined: Self = StObject.set(x, "useDisplayedRowsOnly", js.undefined)
+    inline def setUseDisplayedRowsOnlyUndefined: Self = StObject.set(x, "useDisplayedRowsOnly", js.undefined)
   }
 }

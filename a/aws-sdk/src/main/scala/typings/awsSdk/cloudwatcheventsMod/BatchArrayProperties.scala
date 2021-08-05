@@ -13,19 +13,15 @@ trait BatchArrayProperties extends StObject {
 }
 object BatchArrayProperties {
   
-  @scala.inline
-  def apply(): BatchArrayProperties = {
+  inline def apply(): BatchArrayProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchArrayProperties]
   }
   
-  @scala.inline
-  implicit class BatchArrayPropertiesMutableBuilder[Self <: BatchArrayProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BatchArrayProperties](x: Self) {
     
-    @scala.inline
-    def setSize(value: Integer): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Integer): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
   }
 }

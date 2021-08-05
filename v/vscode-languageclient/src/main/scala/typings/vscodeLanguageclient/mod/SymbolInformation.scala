@@ -19,29 +19,25 @@ object SymbolInformation {
     * @param uri The resource of the location of symbol, defaults to the current document.
     * @param containerName The name of the symbol containing the symbol.
     */
-  @scala.inline
-  def create(
+  inline def create(
     name: String,
     kind: typings.vscodeLanguageserverTypes.mod.SymbolKind,
     range: typings.vscodeLanguageserverTypes.mod.Range
   ): typings.vscodeLanguageserverTypes.mod.SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.SymbolInformation]
-  @scala.inline
-  def create(
+  inline def create(
     name: String,
     kind: typings.vscodeLanguageserverTypes.mod.SymbolKind,
     range: typings.vscodeLanguageserverTypes.mod.Range,
     uri: String
   ): typings.vscodeLanguageserverTypes.mod.SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.SymbolInformation]
-  @scala.inline
-  def create(
+  inline def create(
     name: String,
     kind: typings.vscodeLanguageserverTypes.mod.SymbolKind,
     range: typings.vscodeLanguageserverTypes.mod.Range,
     uri: String,
     containerName: String
   ): typings.vscodeLanguageserverTypes.mod.SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.SymbolInformation]
-  @scala.inline
-  def create(
+  inline def create(
     name: String,
     kind: typings.vscodeLanguageserverTypes.mod.SymbolKind,
     range: typings.vscodeLanguageserverTypes.mod.Range,

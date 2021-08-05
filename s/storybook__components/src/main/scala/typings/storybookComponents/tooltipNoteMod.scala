@@ -17,17 +17,14 @@ object tooltipNoteMod {
   }
   object TooltipNoteProps {
     
-    @scala.inline
-    def apply(note: String): TooltipNoteProps = {
+    inline def apply(note: String): TooltipNoteProps = {
       val __obj = js.Dynamic.literal(note = note.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipNoteProps]
     }
     
-    @scala.inline
-    implicit class TooltipNotePropsMutableBuilder[Self <: TooltipNoteProps] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipNoteProps](x: Self) {
       
-      @scala.inline
-      def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+      inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     }
   }
 }

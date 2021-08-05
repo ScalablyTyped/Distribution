@@ -20,23 +20,18 @@ object resourcegroups {
   }
   object GroupResourceQuery {
     
-    @scala.inline
-    def apply(query: String): GroupResourceQuery = {
+    inline def apply(query: String): GroupResourceQuery = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[GroupResourceQuery]
     }
     
-    @scala.inline
-    implicit class GroupResourceQueryMutableBuilder[Self <: GroupResourceQuery] (val x: Self) extends AnyVal {
+    extension [Self <: GroupResourceQuery](x: Self) {
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

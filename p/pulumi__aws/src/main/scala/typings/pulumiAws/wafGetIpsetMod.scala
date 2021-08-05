@@ -11,10 +11,8 @@ object wafGetIpsetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getIpset(args: GetIpsetArgs): js.Promise[GetIpsetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIpset")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetIpsetResult]]
-  @scala.inline
-  def getIpset(args: GetIpsetArgs, opts: InvokeOptions): js.Promise[GetIpsetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIpset")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIpsetResult]]
+  inline def getIpset(args: GetIpsetArgs): js.Promise[GetIpsetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIpset")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetIpsetResult]]
+  inline def getIpset(args: GetIpsetArgs, opts: InvokeOptions): js.Promise[GetIpsetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIpset")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIpsetResult]]
   
   trait GetIpsetArgs extends StObject {
     
@@ -25,17 +23,14 @@ object wafGetIpsetMod {
   }
   object GetIpsetArgs {
     
-    @scala.inline
-    def apply(name: String): GetIpsetArgs = {
+    inline def apply(name: String): GetIpsetArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetIpsetArgs]
     }
     
-    @scala.inline
-    implicit class GetIpsetArgsMutableBuilder[Self <: GetIpsetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetIpsetArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,20 +45,16 @@ object wafGetIpsetMod {
   }
   object GetIpsetResult {
     
-    @scala.inline
-    def apply(id: String, name: String): GetIpsetResult = {
+    inline def apply(id: String, name: String): GetIpsetResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetIpsetResult]
     }
     
-    @scala.inline
-    implicit class GetIpsetResultMutableBuilder[Self <: GetIpsetResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetIpsetResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

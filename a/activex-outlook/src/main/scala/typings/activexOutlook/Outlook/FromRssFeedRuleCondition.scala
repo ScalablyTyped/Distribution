@@ -16,7 +16,7 @@ trait FromRssFeedRuleCondition extends StObject {
   
   var FromRssFeed: js.Any
   
-  @JSName("Outlook.FromRssFeedRuleCondition_typekey")
+  /* private */ @JSName("Outlook.FromRssFeedRuleCondition_typekey")
   var OutlookDotFromRssFeedRuleCondition_typekey: FromRssFeedRuleCondition
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait FromRssFeedRuleCondition extends StObject {
 }
 object FromRssFeedRuleCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     ConditionType: OlRuleConditionType,
@@ -41,31 +40,22 @@ object FromRssFeedRuleCondition {
     __obj.asInstanceOf[FromRssFeedRuleCondition]
   }
   
-  @scala.inline
-  implicit class FromRssFeedRuleConditionMutableBuilder[Self <: FromRssFeedRuleCondition] (val x: Self) extends AnyVal {
+  extension [Self <: FromRssFeedRuleCondition](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
+    inline def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromRssFeed(value: js.Any): Self = StObject.set(x, "FromRssFeed", value.asInstanceOf[js.Any])
+    inline def setFromRssFeed(value: js.Any): Self = StObject.set(x, "FromRssFeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotFromRssFeedRuleCondition_typekey(value: FromRssFeedRuleCondition): Self = StObject.set(x, "Outlook.FromRssFeedRuleCondition_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotFromRssFeedRuleCondition_typekey(value: FromRssFeedRuleCondition): Self = StObject.set(x, "Outlook.FromRssFeedRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

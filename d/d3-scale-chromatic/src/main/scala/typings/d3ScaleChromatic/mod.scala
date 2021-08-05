@@ -10,119 +10,81 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def interpolateBlues(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBlues")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateBlues(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBlues")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateBrBG(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBrBG")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateBrBG(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBrBG")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateBuGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBuGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateBuGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBuGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateBuPu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBuPu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateBuPu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBuPu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateCividis(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCividis")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateCividis(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCividis")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateCool(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCool")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateCool(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCool")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateCubehelixDefault(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCubehelixDefault")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateCubehelixDefault(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCubehelixDefault")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateGnBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateGnBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateGnBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateGnBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateGreens(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateGreens")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateGreens(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateGreens")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateGreys(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateGreys")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateGreys(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateGreys")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateInferno(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateInferno")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateInferno(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateInferno")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateMagma(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateMagma")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateMagma(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateMagma")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateOrRd(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateOrRd")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateOrRd(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateOrRd")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateOranges(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateOranges")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateOranges(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateOranges")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolatePRGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePRGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolatePRGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePRGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolatePiYG(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePiYG")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolatePiYG(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePiYG")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolatePlasma(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePlasma")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolatePlasma(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePlasma")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolatePuBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolatePuBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolatePuBuGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuBuGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolatePuBuGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuBuGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolatePuOr(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuOr")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolatePuOr(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuOr")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolatePuRd(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuRd")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolatePuRd(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuRd")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolatePurples(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePurples")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolatePurples(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePurples")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateRainbow(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRainbow")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateRainbow(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRainbow")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateRdBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateRdBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateRdGy(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdGy")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateRdGy(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdGy")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateRdPu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdPu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateRdPu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdPu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateRdYlBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdYlBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateRdYlBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdYlBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateRdYlGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdYlGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateRdYlGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdYlGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateReds(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateReds")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateReds(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateReds")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateSinebow(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateSinebow")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateSinebow(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateSinebow")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateSpectral(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateSpectral")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateSpectral(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateSpectral")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateTurbo(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateTurbo")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateTurbo(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateTurbo")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateViridis(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateViridis")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateViridis(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateViridis")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateWarm(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateWarm")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateWarm(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateWarm")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateYlGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateYlGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateYlGnBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlGnBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateYlGnBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlGnBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateYlOrBr(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlOrBr")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateYlOrBr(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlOrBr")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def interpolateYlOrRd(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlOrRd")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interpolateYlOrRd(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlOrRd")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("d3-scale-chromatic", "schemeAccent")
   @js.native

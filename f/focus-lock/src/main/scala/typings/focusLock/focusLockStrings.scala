@@ -8,6 +8,5 @@ object focusLockStrings {
   
   @js.native
   sealed trait NEW_FOCUS extends StObject
-  @scala.inline
-  def NEW_FOCUS: NEW_FOCUS = "NEW_FOCUS".asInstanceOf[NEW_FOCUS]
+  inline def NEW_FOCUS: NEW_FOCUS = "NEW_FOCUS".asInstanceOf[NEW_FOCUS]
 }

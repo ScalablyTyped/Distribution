@@ -12,8 +12,7 @@ trait AppLicense
 }
 object AppLicense {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -25,10 +24,8 @@ object AppLicense {
     __obj.asInstanceOf[AppLicense]
   }
   
-  @scala.inline
-  implicit class AppLicenseMutableBuilder[Self <: AppLicense] (val x: Self) extends AnyVal {
+  extension [Self <: AppLicense](x: Self) {
     
-    @scala.inline
-    def setGet_rawXMLLicenseToken(value: () => String): Self = StObject.set(x, "get_rawXMLLicenseToken", js.Any.fromFunction0(value))
+    inline def setGet_rawXMLLicenseToken(value: () => String): Self = StObject.set(x, "get_rawXMLLicenseToken", js.Any.fromFunction0(value))
   }
 }

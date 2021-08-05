@@ -12,19 +12,15 @@ trait OverscanIndexRange extends StObject {
 }
 object OverscanIndexRange {
   
-  @scala.inline
-  def apply(overscanStartIndex: Double, overscanStopIndex: Double): OverscanIndexRange = {
+  inline def apply(overscanStartIndex: Double, overscanStopIndex: Double): OverscanIndexRange = {
     val __obj = js.Dynamic.literal(overscanStartIndex = overscanStartIndex.asInstanceOf[js.Any], overscanStopIndex = overscanStopIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverscanIndexRange]
   }
   
-  @scala.inline
-  implicit class OverscanIndexRangeMutableBuilder[Self <: OverscanIndexRange] (val x: Self) extends AnyVal {
+  extension [Self <: OverscanIndexRange](x: Self) {
     
-    @scala.inline
-    def setOverscanStartIndex(value: Double): Self = StObject.set(x, "overscanStartIndex", value.asInstanceOf[js.Any])
+    inline def setOverscanStartIndex(value: Double): Self = StObject.set(x, "overscanStartIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverscanStopIndex(value: Double): Self = StObject.set(x, "overscanStopIndex", value.asInstanceOf[js.Any])
+    inline def setOverscanStopIndex(value: Double): Self = StObject.set(x, "overscanStopIndex", value.asInstanceOf[js.Any])
   }
 }

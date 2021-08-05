@@ -18,28 +18,21 @@ trait DescribeProvisionedProductOutput extends StObject {
 }
 object DescribeProvisionedProductOutput {
   
-  @scala.inline
-  def apply(): DescribeProvisionedProductOutput = {
+  inline def apply(): DescribeProvisionedProductOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeProvisionedProductOutput]
   }
   
-  @scala.inline
-  implicit class DescribeProvisionedProductOutputMutableBuilder[Self <: DescribeProvisionedProductOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProvisionedProductOutput](x: Self) {
     
-    @scala.inline
-    def setCloudWatchDashboards(value: CloudWatchDashboards): Self = StObject.set(x, "CloudWatchDashboards", value.asInstanceOf[js.Any])
+    inline def setCloudWatchDashboards(value: CloudWatchDashboards): Self = StObject.set(x, "CloudWatchDashboards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchDashboardsUndefined: Self = StObject.set(x, "CloudWatchDashboards", js.undefined)
+    inline def setCloudWatchDashboardsUndefined: Self = StObject.set(x, "CloudWatchDashboards", js.undefined)
     
-    @scala.inline
-    def setCloudWatchDashboardsVarargs(value: CloudWatchDashboard*): Self = StObject.set(x, "CloudWatchDashboards", js.Array(value :_*))
+    inline def setCloudWatchDashboardsVarargs(value: CloudWatchDashboard*): Self = StObject.set(x, "CloudWatchDashboards", js.Array(value :_*))
     
-    @scala.inline
-    def setProvisionedProductDetail(value: ProvisionedProductDetail): Self = StObject.set(x, "ProvisionedProductDetail", value.asInstanceOf[js.Any])
+    inline def setProvisionedProductDetail(value: ProvisionedProductDetail): Self = StObject.set(x, "ProvisionedProductDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductDetailUndefined: Self = StObject.set(x, "ProvisionedProductDetail", js.undefined)
+    inline def setProvisionedProductDetailUndefined: Self = StObject.set(x, "ProvisionedProductDetail", js.undefined)
   }
 }

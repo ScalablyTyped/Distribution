@@ -33,43 +33,31 @@ trait OperationDefinitionOverload
 }
 object OperationDefinitionOverload {
   
-  @scala.inline
-  def apply(): OperationDefinitionOverload = {
+  inline def apply(): OperationDefinitionOverload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OperationDefinitionOverload]
   }
   
-  @scala.inline
-  implicit class OperationDefinitionOverloadMutableBuilder[Self <: OperationDefinitionOverload] (val x: Self) extends AnyVal {
+  extension [Self <: OperationDefinitionOverload](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setParameterName(value: js.Array[String]): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: js.Array[String]): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterNameUndefined: Self = StObject.set(x, "parameterName", js.undefined)
+    inline def setParameterNameUndefined: Self = StObject.set(x, "parameterName", js.undefined)
     
-    @scala.inline
-    def setParameterNameVarargs(value: String*): Self = StObject.set(x, "parameterName", js.Array(value :_*))
+    inline def setParameterNameVarargs(value: String*): Self = StObject.set(x, "parameterName", js.Array(value :_*))
     
-    @scala.inline
-    def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
+    inline def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
+    inline def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
     
-    @scala.inline
-    def set_parameterName(value: js.Array[Element]): Self = StObject.set(x, "_parameterName", value.asInstanceOf[js.Any])
+    inline def set_parameterName(value: js.Array[Element]): Self = StObject.set(x, "_parameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_parameterNameUndefined: Self = StObject.set(x, "_parameterName", js.undefined)
+    inline def set_parameterNameUndefined: Self = StObject.set(x, "_parameterName", js.undefined)
     
-    @scala.inline
-    def set_parameterNameVarargs(value: Element*): Self = StObject.set(x, "_parameterName", js.Array(value :_*))
+    inline def set_parameterNameVarargs(value: Element*): Self = StObject.set(x, "_parameterName", js.Array(value :_*))
   }
 }

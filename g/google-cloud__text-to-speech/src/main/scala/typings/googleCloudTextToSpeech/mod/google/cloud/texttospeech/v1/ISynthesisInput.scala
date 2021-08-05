@@ -15,31 +15,23 @@ trait ISynthesisInput extends StObject {
 }
 object ISynthesisInput {
   
-  @scala.inline
-  def apply(): ISynthesisInput = {
+  inline def apply(): ISynthesisInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISynthesisInput]
   }
   
-  @scala.inline
-  implicit class ISynthesisInputMutableBuilder[Self <: ISynthesisInput] (val x: Self) extends AnyVal {
+  extension [Self <: ISynthesisInput](x: Self) {
     
-    @scala.inline
-    def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
+    inline def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsmlNull: Self = StObject.set(x, "ssml", null)
+    inline def setSsmlNull: Self = StObject.set(x, "ssml", null)
     
-    @scala.inline
-    def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
+    inline def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextNull: Self = StObject.set(x, "text", null)
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

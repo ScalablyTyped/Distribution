@@ -44,8 +44,7 @@ trait ChatRoomMessageRemoved
 }
 object ChatRoomMessageRemoved {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     from: String,
     message_id: String,
     private_message: String,
@@ -57,25 +56,18 @@ object ChatRoomMessageRemoved {
     __obj.asInstanceOf[ChatRoomMessageRemoved]
   }
   
-  @scala.inline
-  implicit class ChatRoomMessageRemovedMutableBuilder[Self <: ChatRoomMessageRemoved] (val x: Self) extends AnyVal {
+  extension [Self <: ChatRoomMessageRemoved](x: Self) {
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage_id(value: String): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
+    inline def setMessage_id(value: String): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate_message(value: String): Self = StObject.set(x, "private_message", value.asInstanceOf[js.Any])
+    inline def setPrivate_message(value: String): Self = StObject.set(x, "private_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ trait XUniqueIDFactory
 }
 object XUniqueIDFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createUniqueID: () => String,
     queryInterface: `type` => js.Any,
@@ -26,10 +25,8 @@ object XUniqueIDFactory {
     __obj.asInstanceOf[XUniqueIDFactory]
   }
   
-  @scala.inline
-  implicit class XUniqueIDFactoryMutableBuilder[Self <: XUniqueIDFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XUniqueIDFactory](x: Self) {
     
-    @scala.inline
-    def setCreateUniqueID(value: () => String): Self = StObject.set(x, "createUniqueID", js.Any.fromFunction0(value))
+    inline def setCreateUniqueID(value: () => String): Self = StObject.set(x, "createUniqueID", js.Any.fromFunction0(value))
   }
 }

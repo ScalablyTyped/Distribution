@@ -14,53 +14,40 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hashElement(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def hashElement(path: String, dir: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hashElement(
+  inline def hashElement(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def hashElement(path: String, dir: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hashElement(
     path: String,
     dir: String,
     options: Unit,
     callback: js.Function2[/* error */ js.UndefOr[Error], /* result */ js.UndefOr[HashElementNode], js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hashElement(path: String, dir: String, options: HashElementOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hashElement(
+  inline def hashElement(path: String, dir: String, options: HashElementOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hashElement(
     path: String,
     dir: String,
     options: HashElementOptions,
     callback: js.Function2[/* error */ js.UndefOr[Error], /* result */ js.UndefOr[HashElementNode], js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hashElement(
+  inline def hashElement(
     path: String,
     dir: Unit,
     options: Unit,
     callback: js.Function2[/* error */ js.UndefOr[Error], /* result */ js.UndefOr[HashElementNode], js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hashElement(path: String, dir: Unit, options: HashElementOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hashElement(
+  inline def hashElement(path: String, dir: Unit, options: HashElementOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hashElement(
     path: String,
     dir: Unit,
     options: HashElementOptions,
     callback: js.Function2[/* error */ js.UndefOr[Error], /* result */ js.UndefOr[HashElementNode], js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hashElement(path: String, options: HashElementOptions): js.Promise[HashElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HashElementNode]]
+  inline def hashElement(path: String, options: HashElementOptions): js.Promise[HashElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HashElementNode]]
   
-  @scala.inline
-  def hashElement_Promise(path: String): js.Promise[HashElementNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HashElementNode]]
-  @scala.inline
-  def hashElement_Promise(path: String, dir: String): js.Promise[HashElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HashElementNode]]
-  @scala.inline
-  def hashElement_Promise(path: String, dir: String, options: HashElementOptions): js.Promise[HashElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HashElementNode]]
-  @scala.inline
-  def hashElement_Promise(path: String, dir: Unit, options: HashElementOptions): js.Promise[HashElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HashElementNode]]
+  inline def hashElement_Promise(path: String): js.Promise[HashElementNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HashElementNode]]
+  inline def hashElement_Promise(path: String, dir: String): js.Promise[HashElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HashElementNode]]
+  inline def hashElement_Promise(path: String, dir: String, options: HashElementOptions): js.Promise[HashElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HashElementNode]]
+  inline def hashElement_Promise(path: String, dir: Unit, options: HashElementOptions): js.Promise[HashElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HashElementNode]]
   
   trait FolderAndFileOptions extends StObject {
     
@@ -78,62 +65,44 @@ object mod {
   }
   object FolderAndFileOptions {
     
-    @scala.inline
-    def apply(): FolderAndFileOptions = {
+    inline def apply(): FolderAndFileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FolderAndFileOptions]
     }
     
-    @scala.inline
-    implicit class FolderAndFileOptionsMutableBuilder[Self <: FolderAndFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FolderAndFileOptions](x: Self) {
       
-      @scala.inline
-      def setExclude(value: js.Array[String] | PathGlobFunction): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String] | PathGlobFunction): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeFunction0(value: () => js.Array[String]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
+      inline def setExcludeFunction0(value: () => js.Array[String]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreBasename(value: Boolean): Self = StObject.set(x, "ignoreBasename", value.asInstanceOf[js.Any])
+      inline def setIgnoreBasename(value: Boolean): Self = StObject.set(x, "ignoreBasename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreBasenameUndefined: Self = StObject.set(x, "ignoreBasename", js.undefined)
+      inline def setIgnoreBasenameUndefined: Self = StObject.set(x, "ignoreBasename", js.undefined)
       
-      @scala.inline
-      def setIgnoreRootName(value: Boolean): Self = StObject.set(x, "ignoreRootName", value.asInstanceOf[js.Any])
+      inline def setIgnoreRootName(value: Boolean): Self = StObject.set(x, "ignoreRootName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreRootNameUndefined: Self = StObject.set(x, "ignoreRootName", js.undefined)
+      inline def setIgnoreRootNameUndefined: Self = StObject.set(x, "ignoreRootName", js.undefined)
       
-      @scala.inline
-      def setInclude(value: js.Array[String] | PathGlobFunction): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[String] | PathGlobFunction): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeFunction0(value: () => js.Array[String]): Self = StObject.set(x, "include", js.Any.fromFunction0(value))
+      inline def setIncludeFunction0(value: () => js.Array[String]): Self = StObject.set(x, "include", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setMatchBasename(value: Boolean): Self = StObject.set(x, "matchBasename", value.asInstanceOf[js.Any])
+      inline def setMatchBasename(value: Boolean): Self = StObject.set(x, "matchBasename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchBasenameUndefined: Self = StObject.set(x, "matchBasename", js.undefined)
+      inline def setMatchBasenameUndefined: Self = StObject.set(x, "matchBasename", js.undefined)
       
-      @scala.inline
-      def setMatchPath(value: Boolean): Self = StObject.set(x, "matchPath", value.asInstanceOf[js.Any])
+      inline def setMatchPath(value: Boolean): Self = StObject.set(x, "matchPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchPathUndefined: Self = StObject.set(x, "matchPath", js.undefined)
+      inline def setMatchPathUndefined: Self = StObject.set(x, "matchPath", js.undefined)
     }
   }
   
@@ -147,26 +116,20 @@ object mod {
   }
   object HashElementNode {
     
-    @scala.inline
-    def apply(children: js.Array[HashElementNode], hash: String, name: String): HashElementNode = {
+    inline def apply(children: js.Array[HashElementNode], hash: String, name: String): HashElementNode = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[HashElementNode]
     }
     
-    @scala.inline
-    implicit class HashElementNodeMutableBuilder[Self <: HashElementNode] (val x: Self) extends AnyVal {
+    extension [Self <: HashElementNode](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[HashElementNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[HashElementNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: HashElementNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: HashElementNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,38 +148,28 @@ object mod {
   }
   object HashElementOptions {
     
-    @scala.inline
-    def apply(): HashElementOptions = {
+    inline def apply(): HashElementOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HashElementOptions]
     }
     
-    @scala.inline
-    implicit class HashElementOptionsMutableBuilder[Self <: HashElementOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HashElementOptions](x: Self) {
       
-      @scala.inline
-      def setAlgo(value: String): Self = StObject.set(x, "algo", value.asInstanceOf[js.Any])
+      inline def setAlgo(value: String): Self = StObject.set(x, "algo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgoUndefined: Self = StObject.set(x, "algo", js.undefined)
+      inline def setAlgoUndefined: Self = StObject.set(x, "algo", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: base64 | hex | binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: base64 | hex | binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFiles(value: FolderAndFileOptions): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: FolderAndFileOptions): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFolders(value: FolderAndFileOptions): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
+      inline def setFolders(value: FolderAndFileOptions): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
+      inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     }
   }
   

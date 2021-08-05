@@ -42,8 +42,7 @@ object defaultModulesMod {
        with IPreviewAPI
   object IPlayer {
     
-    @scala.inline
-    def apply(): IPlayer = {
+    inline def apply(): IPlayer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPlayer]
     }

@@ -17,8 +17,7 @@ trait XPropertyChangeListener
 }
 object XPropertyChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     propertyChange: PropertyChangeEvent => Unit,
@@ -29,10 +28,8 @@ object XPropertyChangeListener {
     __obj.asInstanceOf[XPropertyChangeListener]
   }
   
-  @scala.inline
-  implicit class XPropertyChangeListenerMutableBuilder[Self <: XPropertyChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertyChangeListener](x: Self) {
     
-    @scala.inline
-    def setPropertyChange(value: PropertyChangeEvent => Unit): Self = StObject.set(x, "propertyChange", js.Any.fromFunction1(value))
+    inline def setPropertyChange(value: PropertyChangeEvent => Unit): Self = StObject.set(x, "propertyChange", js.Any.fromFunction1(value))
   }
 }

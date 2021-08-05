@@ -11,19 +11,15 @@ trait CourseWorkChangesInfo extends StObject {
 }
 object CourseWorkChangesInfo {
   
-  @scala.inline
-  def apply(): CourseWorkChangesInfo = {
+  inline def apply(): CourseWorkChangesInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CourseWorkChangesInfo]
   }
   
-  @scala.inline
-  implicit class CourseWorkChangesInfoMutableBuilder[Self <: CourseWorkChangesInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CourseWorkChangesInfo](x: Self) {
     
-    @scala.inline
-    def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
+    inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
+    inline def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
   }
 }

@@ -21,12 +21,9 @@ object mod {
     * Creates a new Keycloak client instance.
     * @param config A configuration object or path to a JSON config file.
     */
-  @scala.inline
-  def apply(): KeycloakInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[KeycloakInstance]
-  @scala.inline
-  def apply(config: String): KeycloakInstance = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[KeycloakInstance]
-  @scala.inline
-  def apply(config: KeycloakConfig): KeycloakInstance = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[KeycloakInstance]
+  inline def apply(): KeycloakInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[KeycloakInstance]
+  inline def apply(config: String): KeycloakInstance = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[KeycloakInstance]
+  inline def apply(config: KeycloakConfig): KeycloakInstance = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[KeycloakInstance]
   
   @JSImport("keycloak-js", JSImport.Namespace)
   @js.native
@@ -68,26 +65,20 @@ object mod {
   }
   object KeycloakConfig {
     
-    @scala.inline
-    def apply(clientId: String, realm: String): KeycloakConfig = {
+    inline def apply(clientId: String, realm: String): KeycloakConfig = {
       val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], realm = realm.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeycloakConfig]
     }
     
-    @scala.inline
-    implicit class KeycloakConfigMutableBuilder[Self <: KeycloakConfig] (val x: Self) extends AnyVal {
+    extension [Self <: KeycloakConfig](x: Self) {
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+      inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -99,20 +90,16 @@ object mod {
   }
   object KeycloakError {
     
-    @scala.inline
-    def apply(error: String, error_description: String): KeycloakError = {
+    inline def apply(error: String, error_description: String): KeycloakError = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], error_description = error_description.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeycloakError]
     }
     
-    @scala.inline
-    implicit class KeycloakErrorMutableBuilder[Self <: KeycloakError] (val x: Self) extends AnyVal {
+    extension [Self <: KeycloakError](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError_description(value: String): Self = StObject.set(x, "error_description", value.asInstanceOf[js.Any])
+      inline def setError_description(value: String): Self = StObject.set(x, "error_description", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,14 +111,11 @@ object mod {
   trait KeycloakFlow extends StObject
   object KeycloakFlow {
     
-    @scala.inline
-    def hybrid: typings.keycloakJs.keycloakJsStrings.hybrid = "hybrid".asInstanceOf[typings.keycloakJs.keycloakJsStrings.hybrid]
+    inline def hybrid: typings.keycloakJs.keycloakJsStrings.hybrid = "hybrid".asInstanceOf[typings.keycloakJs.keycloakJsStrings.hybrid]
     
-    @scala.inline
-    def `implicit`: typings.keycloakJs.keycloakJsStrings.`implicit` = "implicit".asInstanceOf[typings.keycloakJs.keycloakJsStrings.`implicit`]
+    inline def `implicit`: typings.keycloakJs.keycloakJsStrings.`implicit` = "implicit".asInstanceOf[typings.keycloakJs.keycloakJsStrings.`implicit`]
     
-    @scala.inline
-    def standard: typings.keycloakJs.keycloakJsStrings.standard = "standard".asInstanceOf[typings.keycloakJs.keycloakJsStrings.standard]
+    inline def standard: typings.keycloakJs.keycloakJsStrings.standard = "standard".asInstanceOf[typings.keycloakJs.keycloakJsStrings.standard]
   }
   
   trait KeycloakInitOptions extends StObject {
@@ -266,110 +250,76 @@ object mod {
   }
   object KeycloakInitOptions {
     
-    @scala.inline
-    def apply(): KeycloakInitOptions = {
+    inline def apply(): KeycloakInitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeycloakInitOptions]
     }
     
-    @scala.inline
-    implicit class KeycloakInitOptionsMutableBuilder[Self <: KeycloakInitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KeycloakInitOptions](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: default | cordova | `cordova-native` | KeycloakAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: default | cordova | `cordova-native` | KeycloakAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
+      inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
       
-      @scala.inline
-      def setCheckLoginIframe(value: Boolean): Self = StObject.set(x, "checkLoginIframe", value.asInstanceOf[js.Any])
+      inline def setCheckLoginIframe(value: Boolean): Self = StObject.set(x, "checkLoginIframe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckLoginIframeInterval(value: Double): Self = StObject.set(x, "checkLoginIframeInterval", value.asInstanceOf[js.Any])
+      inline def setCheckLoginIframeInterval(value: Double): Self = StObject.set(x, "checkLoginIframeInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckLoginIframeIntervalUndefined: Self = StObject.set(x, "checkLoginIframeInterval", js.undefined)
+      inline def setCheckLoginIframeIntervalUndefined: Self = StObject.set(x, "checkLoginIframeInterval", js.undefined)
       
-      @scala.inline
-      def setCheckLoginIframeUndefined: Self = StObject.set(x, "checkLoginIframe", js.undefined)
+      inline def setCheckLoginIframeUndefined: Self = StObject.set(x, "checkLoginIframe", js.undefined)
       
-      @scala.inline
-      def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
+      inline def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
+      inline def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
       
-      @scala.inline
-      def setFlow(value: KeycloakFlow): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+      inline def setFlow(value: KeycloakFlow): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowUndefined: Self = StObject.set(x, "flow", js.undefined)
+      inline def setFlowUndefined: Self = StObject.set(x, "flow", js.undefined)
       
-      @scala.inline
-      def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+      inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
+      inline def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: KeycloakOnLoad): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
+      inline def setOnLoad(value: KeycloakOnLoad): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setPkceMethod(value: KeycloakPkceMethod): Self = StObject.set(x, "pkceMethod", value.asInstanceOf[js.Any])
+      inline def setPkceMethod(value: KeycloakPkceMethod): Self = StObject.set(x, "pkceMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPkceMethodUndefined: Self = StObject.set(x, "pkceMethod", js.undefined)
+      inline def setPkceMethodUndefined: Self = StObject.set(x, "pkceMethod", js.undefined)
       
-      @scala.inline
-      def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+      inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+      inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
       
-      @scala.inline
-      def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+      inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
+      inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
       
-      @scala.inline
-      def setResponseMode(value: KeycloakResponseMode): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
+      inline def setResponseMode(value: KeycloakResponseMode): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
+      inline def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
       
-      @scala.inline
-      def setSilentCheckSsoFallback(value: Boolean): Self = StObject.set(x, "silentCheckSsoFallback", value.asInstanceOf[js.Any])
+      inline def setSilentCheckSsoFallback(value: Boolean): Self = StObject.set(x, "silentCheckSsoFallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentCheckSsoFallbackUndefined: Self = StObject.set(x, "silentCheckSsoFallback", js.undefined)
+      inline def setSilentCheckSsoFallbackUndefined: Self = StObject.set(x, "silentCheckSsoFallback", js.undefined)
       
-      @scala.inline
-      def setSilentCheckSsoRedirectUri(value: String): Self = StObject.set(x, "silentCheckSsoRedirectUri", value.asInstanceOf[js.Any])
+      inline def setSilentCheckSsoRedirectUri(value: String): Self = StObject.set(x, "silentCheckSsoRedirectUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentCheckSsoRedirectUriUndefined: Self = StObject.set(x, "silentCheckSsoRedirectUri", js.undefined)
+      inline def setSilentCheckSsoRedirectUriUndefined: Self = StObject.set(x, "silentCheckSsoRedirectUri", js.undefined)
       
-      @scala.inline
-      def setTimeSkew(value: Double): Self = StObject.set(x, "timeSkew", value.asInstanceOf[js.Any])
+      inline def setTimeSkew(value: Double): Self = StObject.set(x, "timeSkew", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeSkewUndefined: Self = StObject.set(x, "timeSkew", js.undefined)
+      inline def setTimeSkewUndefined: Self = StObject.set(x, "timeSkew", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setUseNonce(value: Boolean): Self = StObject.set(x, "useNonce", value.asInstanceOf[js.Any])
+      inline def setUseNonce(value: Boolean): Self = StObject.set(x, "useNonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNonceUndefined: Self = StObject.set(x, "useNonce", js.undefined)
+      inline def setUseNonceUndefined: Self = StObject.set(x, "useNonce", js.undefined)
     }
   }
   
@@ -727,68 +677,48 @@ object mod {
   }
   object KeycloakLoginOptions {
     
-    @scala.inline
-    def apply(): KeycloakLoginOptions = {
+    inline def apply(): KeycloakLoginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeycloakLoginOptions]
     }
     
-    @scala.inline
-    implicit class KeycloakLoginOptionsMutableBuilder[Self <: KeycloakLoginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KeycloakLoginOptions](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setCordovaOptions(value: StringDictionary[String]): Self = StObject.set(x, "cordovaOptions", value.asInstanceOf[js.Any])
+      inline def setCordovaOptions(value: StringDictionary[String]): Self = StObject.set(x, "cordovaOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCordovaOptionsUndefined: Self = StObject.set(x, "cordovaOptions", js.undefined)
+      inline def setCordovaOptionsUndefined: Self = StObject.set(x, "cordovaOptions", js.undefined)
       
-      @scala.inline
-      def setIdpHint(value: String): Self = StObject.set(x, "idpHint", value.asInstanceOf[js.Any])
+      inline def setIdpHint(value: String): Self = StObject.set(x, "idpHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdpHintUndefined: Self = StObject.set(x, "idpHint", js.undefined)
+      inline def setIdpHintUndefined: Self = StObject.set(x, "idpHint", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setLoginHint(value: String): Self = StObject.set(x, "loginHint", value.asInstanceOf[js.Any])
+      inline def setLoginHint(value: String): Self = StObject.set(x, "loginHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoginHintUndefined: Self = StObject.set(x, "loginHint", js.undefined)
+      inline def setLoginHintUndefined: Self = StObject.set(x, "loginHint", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setPrompt(value: none | login): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: none | login): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+      inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
       
-      @scala.inline
-      def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+      inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+      inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
   
@@ -801,20 +731,16 @@ object mod {
   }
   object KeycloakLogoutOptions {
     
-    @scala.inline
-    def apply(): KeycloakLogoutOptions = {
+    inline def apply(): KeycloakLogoutOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeycloakLogoutOptions]
     }
     
-    @scala.inline
-    implicit class KeycloakLogoutOptionsMutableBuilder[Self <: KeycloakLogoutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KeycloakLogoutOptions](x: Self) {
       
-      @scala.inline
-      def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+      inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+      inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
     }
   }
   
@@ -825,11 +751,9 @@ object mod {
   trait KeycloakOnLoad extends StObject
   object KeycloakOnLoad {
     
-    @scala.inline
-    def `check-sso`: typings.keycloakJs.keycloakJsStrings.`check-sso` = "check-sso".asInstanceOf[typings.keycloakJs.keycloakJsStrings.`check-sso`]
+    inline def `check-sso`: typings.keycloakJs.keycloakJsStrings.`check-sso` = "check-sso".asInstanceOf[typings.keycloakJs.keycloakJsStrings.`check-sso`]
     
-    @scala.inline
-    def `login-required`: typings.keycloakJs.keycloakJsStrings.`login-required` = "login-required".asInstanceOf[typings.keycloakJs.keycloakJsStrings.`login-required`]
+    inline def `login-required`: typings.keycloakJs.keycloakJsStrings.`login-required` = "login-required".asInstanceOf[typings.keycloakJs.keycloakJsStrings.`login-required`]
   }
   
   type KeycloakPkceMethod = S256
@@ -856,68 +780,48 @@ object mod {
   }
   object KeycloakProfile {
     
-    @scala.inline
-    def apply(): KeycloakProfile = {
+    inline def apply(): KeycloakProfile = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeycloakProfile]
     }
     
-    @scala.inline
-    implicit class KeycloakProfileMutableBuilder[Self <: KeycloakProfile] (val x: Self) extends AnyVal {
+    extension [Self <: KeycloakProfile](x: Self) {
       
-      @scala.inline
-      def setCreatedTimestamp(value: Double): Self = StObject.set(x, "createdTimestamp", value.asInstanceOf[js.Any])
+      inline def setCreatedTimestamp(value: Double): Self = StObject.set(x, "createdTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedTimestampUndefined: Self = StObject.set(x, "createdTimestamp", js.undefined)
+      inline def setCreatedTimestampUndefined: Self = StObject.set(x, "createdTimestamp", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setEmailVerified(value: Boolean): Self = StObject.set(x, "emailVerified", value.asInstanceOf[js.Any])
+      inline def setEmailVerified(value: Boolean): Self = StObject.set(x, "emailVerified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailVerifiedUndefined: Self = StObject.set(x, "emailVerified", js.undefined)
+      inline def setEmailVerifiedUndefined: Self = StObject.set(x, "emailVerified", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+      inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
+      inline def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+      inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
+      inline def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
       
-      @scala.inline
-      def setTotp(value: Boolean): Self = StObject.set(x, "totp", value.asInstanceOf[js.Any])
+      inline def setTotp(value: Boolean): Self = StObject.set(x, "totp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotpUndefined: Self = StObject.set(x, "totp", js.undefined)
+      inline def setTotpUndefined: Self = StObject.set(x, "totp", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -963,62 +867,44 @@ object mod {
   }
   object KeycloakRegisterOptions {
     
-    @scala.inline
-    def apply(): KeycloakRegisterOptions = {
+    inline def apply(): KeycloakRegisterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeycloakRegisterOptions]
     }
     
-    @scala.inline
-    implicit class KeycloakRegisterOptionsMutableBuilder[Self <: KeycloakRegisterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KeycloakRegisterOptions](x: Self) {
       
-      @scala.inline
-      def setCordovaOptions(value: StringDictionary[String]): Self = StObject.set(x, "cordovaOptions", value.asInstanceOf[js.Any])
+      inline def setCordovaOptions(value: StringDictionary[String]): Self = StObject.set(x, "cordovaOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCordovaOptionsUndefined: Self = StObject.set(x, "cordovaOptions", js.undefined)
+      inline def setCordovaOptionsUndefined: Self = StObject.set(x, "cordovaOptions", js.undefined)
       
-      @scala.inline
-      def setIdpHint(value: String): Self = StObject.set(x, "idpHint", value.asInstanceOf[js.Any])
+      inline def setIdpHint(value: String): Self = StObject.set(x, "idpHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdpHintUndefined: Self = StObject.set(x, "idpHint", js.undefined)
+      inline def setIdpHintUndefined: Self = StObject.set(x, "idpHint", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setLoginHint(value: String): Self = StObject.set(x, "loginHint", value.asInstanceOf[js.Any])
+      inline def setLoginHint(value: String): Self = StObject.set(x, "loginHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoginHintUndefined: Self = StObject.set(x, "loginHint", js.undefined)
+      inline def setLoginHintUndefined: Self = StObject.set(x, "loginHint", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setPrompt(value: none | login): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: none | login): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+      inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
       
-      @scala.inline
-      def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+      inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+      inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
   
@@ -1031,11 +917,9 @@ object mod {
   trait KeycloakResponseMode extends StObject
   object KeycloakResponseMode {
     
-    @scala.inline
-    def fragment: typings.keycloakJs.keycloakJsStrings.fragment = "fragment".asInstanceOf[typings.keycloakJs.keycloakJsStrings.fragment]
+    inline def fragment: typings.keycloakJs.keycloakJsStrings.fragment = "fragment".asInstanceOf[typings.keycloakJs.keycloakJsStrings.fragment]
     
-    @scala.inline
-    def query: typings.keycloakJs.keycloakJsStrings.query = "query".asInstanceOf[typings.keycloakJs.keycloakJsStrings.query]
+    inline def query: typings.keycloakJs.keycloakJsStrings.query = "query".asInstanceOf[typings.keycloakJs.keycloakJsStrings.query]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -1046,14 +930,11 @@ object mod {
   trait KeycloakResponseType extends StObject
   object KeycloakResponseType {
     
-    @scala.inline
-    def code: typings.keycloakJs.keycloakJsStrings.code = "code".asInstanceOf[typings.keycloakJs.keycloakJsStrings.code]
+    inline def code: typings.keycloakJs.keycloakJsStrings.code = "code".asInstanceOf[typings.keycloakJs.keycloakJsStrings.code]
     
-    @scala.inline
-    def `code id_token token`: typings.keycloakJs.keycloakJsStrings.`code id_token token` = ("code id_token token").asInstanceOf[typings.keycloakJs.keycloakJsStrings.`code id_token token`]
+    inline def `code id_token token`: typings.keycloakJs.keycloakJsStrings.`code id_token token` = ("code id_token token").asInstanceOf[typings.keycloakJs.keycloakJsStrings.`code id_token token`]
     
-    @scala.inline
-    def `id_token token`: typings.keycloakJs.keycloakJsStrings.`id_token token` = ("id_token token").asInstanceOf[typings.keycloakJs.keycloakJsStrings.`id_token token`]
+    inline def `id_token token`: typings.keycloakJs.keycloakJsStrings.`id_token token` = ("id_token token").asInstanceOf[typings.keycloakJs.keycloakJsStrings.`id_token token`]
   }
   
   trait KeycloakRoles extends StObject {
@@ -1062,20 +943,16 @@ object mod {
   }
   object KeycloakRoles {
     
-    @scala.inline
-    def apply(roles: js.Array[String]): KeycloakRoles = {
+    inline def apply(roles: js.Array[String]): KeycloakRoles = {
       val __obj = js.Dynamic.literal(roles = roles.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeycloakRoles]
     }
     
-    @scala.inline
-    implicit class KeycloakRolesMutableBuilder[Self <: KeycloakRoles] (val x: Self) extends AnyVal {
+    extension [Self <: KeycloakRoles](x: Self) {
       
-      @scala.inline
-      def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
     }
   }
   
@@ -1097,56 +974,40 @@ object mod {
   }
   object KeycloakTokenParsed {
     
-    @scala.inline
-    def apply(): KeycloakTokenParsed = {
+    inline def apply(): KeycloakTokenParsed = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeycloakTokenParsed]
     }
     
-    @scala.inline
-    implicit class KeycloakTokenParsedMutableBuilder[Self <: KeycloakTokenParsed] (val x: Self) extends AnyVal {
+    extension [Self <: KeycloakTokenParsed](x: Self) {
       
-      @scala.inline
-      def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+      inline def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
+      inline def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
       
-      @scala.inline
-      def setIat(value: Double): Self = StObject.set(x, "iat", value.asInstanceOf[js.Any])
+      inline def setIat(value: Double): Self = StObject.set(x, "iat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIatUndefined: Self = StObject.set(x, "iat", js.undefined)
+      inline def setIatUndefined: Self = StObject.set(x, "iat", js.undefined)
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setRealm_access(value: KeycloakRoles): Self = StObject.set(x, "realm_access", value.asInstanceOf[js.Any])
+      inline def setRealm_access(value: KeycloakRoles): Self = StObject.set(x, "realm_access", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealm_accessUndefined: Self = StObject.set(x, "realm_access", js.undefined)
+      inline def setRealm_accessUndefined: Self = StObject.set(x, "realm_access", js.undefined)
       
-      @scala.inline
-      def setResource_access(value: KeycloakResourceAccess): Self = StObject.set(x, "resource_access", value.asInstanceOf[js.Any])
+      inline def setResource_access(value: KeycloakResourceAccess): Self = StObject.set(x, "resource_access", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource_accessUndefined: Self = StObject.set(x, "resource_access", js.undefined)
+      inline def setResource_accessUndefined: Self = StObject.set(x, "resource_access", js.undefined)
       
-      @scala.inline
-      def setSession_state(value: String): Self = StObject.set(x, "session_state", value.asInstanceOf[js.Any])
+      inline def setSession_state(value: String): Self = StObject.set(x, "session_state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession_stateUndefined: Self = StObject.set(x, "session_state", js.undefined)
+      inline def setSession_stateUndefined: Self = StObject.set(x, "session_state", js.undefined)
       
-      @scala.inline
-      def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
     }
   }
 }

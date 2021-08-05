@@ -13,19 +13,15 @@ trait IonButtons extends StObject {
 }
 object IonButtons {
   
-  @scala.inline
-  def apply(): IonButtons = {
+  inline def apply(): IonButtons = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonButtons]
   }
   
-  @scala.inline
-  implicit class IonButtonsMutableBuilder[Self <: IonButtons] (val x: Self) extends AnyVal {
+  extension [Self <: IonButtons](x: Self) {
     
-    @scala.inline
-    def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
+    inline def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
   }
 }

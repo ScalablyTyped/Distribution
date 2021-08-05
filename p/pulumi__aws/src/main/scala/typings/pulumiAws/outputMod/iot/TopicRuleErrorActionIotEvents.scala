@@ -23,25 +23,19 @@ trait TopicRuleErrorActionIotEvents extends StObject {
 }
 object TopicRuleErrorActionIotEvents {
   
-  @scala.inline
-  def apply(inputName: String, roleArn: String): TopicRuleErrorActionIotEvents = {
+  inline def apply(inputName: String, roleArn: String): TopicRuleErrorActionIotEvents = {
     val __obj = js.Dynamic.literal(inputName = inputName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleErrorActionIotEvents]
   }
   
-  @scala.inline
-  implicit class TopicRuleErrorActionIotEventsMutableBuilder[Self <: TopicRuleErrorActionIotEvents] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleErrorActionIotEvents](x: Self) {
     
-    @scala.inline
-    def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+    inline def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

@@ -23,43 +23,31 @@ trait ChatMessagePolicyViolationPolicyTip extends StObject {
 }
 object ChatMessagePolicyViolationPolicyTip {
   
-  @scala.inline
-  def apply(): ChatMessagePolicyViolationPolicyTip = {
+  inline def apply(): ChatMessagePolicyViolationPolicyTip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChatMessagePolicyViolationPolicyTip]
   }
   
-  @scala.inline
-  implicit class ChatMessagePolicyViolationPolicyTipMutableBuilder[Self <: ChatMessagePolicyViolationPolicyTip] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessagePolicyViolationPolicyTip](x: Self) {
     
-    @scala.inline
-    def setComplianceUrl(value: NullableOption[String]): Self = StObject.set(x, "complianceUrl", value.asInstanceOf[js.Any])
+    inline def setComplianceUrl(value: NullableOption[String]): Self = StObject.set(x, "complianceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceUrlNull: Self = StObject.set(x, "complianceUrl", null)
+    inline def setComplianceUrlNull: Self = StObject.set(x, "complianceUrl", null)
     
-    @scala.inline
-    def setComplianceUrlUndefined: Self = StObject.set(x, "complianceUrl", js.undefined)
+    inline def setComplianceUrlUndefined: Self = StObject.set(x, "complianceUrl", js.undefined)
     
-    @scala.inline
-    def setGeneralText(value: NullableOption[String]): Self = StObject.set(x, "generalText", value.asInstanceOf[js.Any])
+    inline def setGeneralText(value: NullableOption[String]): Self = StObject.set(x, "generalText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneralTextNull: Self = StObject.set(x, "generalText", null)
+    inline def setGeneralTextNull: Self = StObject.set(x, "generalText", null)
     
-    @scala.inline
-    def setGeneralTextUndefined: Self = StObject.set(x, "generalText", js.undefined)
+    inline def setGeneralTextUndefined: Self = StObject.set(x, "generalText", js.undefined)
     
-    @scala.inline
-    def setMatchedConditionDescriptions(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "matchedConditionDescriptions", value.asInstanceOf[js.Any])
+    inline def setMatchedConditionDescriptions(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "matchedConditionDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedConditionDescriptionsNull: Self = StObject.set(x, "matchedConditionDescriptions", null)
+    inline def setMatchedConditionDescriptionsNull: Self = StObject.set(x, "matchedConditionDescriptions", null)
     
-    @scala.inline
-    def setMatchedConditionDescriptionsUndefined: Self = StObject.set(x, "matchedConditionDescriptions", js.undefined)
+    inline def setMatchedConditionDescriptionsUndefined: Self = StObject.set(x, "matchedConditionDescriptions", js.undefined)
     
-    @scala.inline
-    def setMatchedConditionDescriptionsVarargs(value: String*): Self = StObject.set(x, "matchedConditionDescriptions", js.Array(value :_*))
+    inline def setMatchedConditionDescriptionsVarargs(value: String*): Self = StObject.set(x, "matchedConditionDescriptions", js.Array(value :_*))
   }
 }

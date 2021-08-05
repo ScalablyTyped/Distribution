@@ -12,16 +12,13 @@ trait InclinometerReadingChangedEventArgs extends StObject {
 }
 object InclinometerReadingChangedEventArgs {
   
-  @scala.inline
-  def apply(reading: InclinometerReading): InclinometerReadingChangedEventArgs = {
+  inline def apply(reading: InclinometerReading): InclinometerReadingChangedEventArgs = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[InclinometerReadingChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class InclinometerReadingChangedEventArgsMutableBuilder[Self <: InclinometerReadingChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: InclinometerReadingChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReading(value: InclinometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: InclinometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }
 }

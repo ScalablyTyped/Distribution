@@ -20,38 +20,29 @@ trait SignatureHelpProvider extends StObject {
 }
 object SignatureHelpProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideSignatureHelp: (ITextModel, Position, CancellationToken, SignatureHelpContext) => ProviderResult[SignatureHelpResult]
   ): SignatureHelpProvider = {
     val __obj = js.Dynamic.literal(provideSignatureHelp = js.Any.fromFunction4(provideSignatureHelp))
     __obj.asInstanceOf[SignatureHelpProvider]
   }
   
-  @scala.inline
-  implicit class SignatureHelpProviderMutableBuilder[Self <: SignatureHelpProvider] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureHelpProvider](x: Self) {
     
-    @scala.inline
-    def setProvideSignatureHelp(
+    inline def setProvideSignatureHelp(
       value: (ITextModel, Position, CancellationToken, SignatureHelpContext) => ProviderResult[SignatureHelpResult]
     ): Self = StObject.set(x, "provideSignatureHelp", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSignatureHelpRetriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "signatureHelpRetriggerCharacters", value.asInstanceOf[js.Any])
+    inline def setSignatureHelpRetriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "signatureHelpRetriggerCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureHelpRetriggerCharactersUndefined: Self = StObject.set(x, "signatureHelpRetriggerCharacters", js.undefined)
+    inline def setSignatureHelpRetriggerCharactersUndefined: Self = StObject.set(x, "signatureHelpRetriggerCharacters", js.undefined)
     
-    @scala.inline
-    def setSignatureHelpRetriggerCharactersVarargs(value: String*): Self = StObject.set(x, "signatureHelpRetriggerCharacters", js.Array(value :_*))
+    inline def setSignatureHelpRetriggerCharactersVarargs(value: String*): Self = StObject.set(x, "signatureHelpRetriggerCharacters", js.Array(value :_*))
     
-    @scala.inline
-    def setSignatureHelpTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "signatureHelpTriggerCharacters", value.asInstanceOf[js.Any])
+    inline def setSignatureHelpTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "signatureHelpTriggerCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureHelpTriggerCharactersUndefined: Self = StObject.set(x, "signatureHelpTriggerCharacters", js.undefined)
+    inline def setSignatureHelpTriggerCharactersUndefined: Self = StObject.set(x, "signatureHelpTriggerCharacters", js.undefined)
     
-    @scala.inline
-    def setSignatureHelpTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "signatureHelpTriggerCharacters", js.Array(value :_*))
+    inline def setSignatureHelpTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "signatureHelpTriggerCharacters", js.Array(value :_*))
   }
 }

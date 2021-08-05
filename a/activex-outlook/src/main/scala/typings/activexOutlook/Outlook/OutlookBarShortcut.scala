@@ -12,7 +12,7 @@ trait OutlookBarShortcut extends StObject {
   
   var Name: String
   
-  @JSName("Outlook.OutlookBarShortcut_typekey")
+  /* private */ @JSName("Outlook.OutlookBarShortcut_typekey")
   var OutlookDotOutlookBarShortcut_typekey: OutlookBarShortcut
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait OutlookBarShortcut extends StObject {
 }
 object OutlookBarShortcut {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     Name: String,
@@ -41,31 +40,22 @@ object OutlookBarShortcut {
     __obj.asInstanceOf[OutlookBarShortcut]
   }
   
-  @scala.inline
-  implicit class OutlookBarShortcutMutableBuilder[Self <: OutlookBarShortcut] (val x: Self) extends AnyVal {
+  extension [Self <: OutlookBarShortcut](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotOutlookBarShortcut_typekey(value: OutlookBarShortcut): Self = StObject.set(x, "Outlook.OutlookBarShortcut_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotOutlookBarShortcut_typekey(value: OutlookBarShortcut): Self = StObject.set(x, "Outlook.OutlookBarShortcut_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetIcon(value: js.Any => Unit): Self = StObject.set(x, "SetIcon", js.Any.fromFunction1(value))
+    inline def setSetIcon(value: js.Any => Unit): Self = StObject.set(x, "SetIcon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

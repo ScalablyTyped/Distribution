@@ -11,6 +11,5 @@ object wonkaSourceMakeSubjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeSubject[A](): Subject[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSubject")().asInstanceOf[Subject[A]]
+  inline def makeSubject[A](): Subject[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSubject")().asInstanceOf[Subject[A]]
 }

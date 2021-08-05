@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Function = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function]
+  inline def apply(): js.Function = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function]
   
   @JSImport("ejs-locals", JSImport.Namespace)
   @js.native

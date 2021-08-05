@@ -13,6 +13,5 @@ object deferMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defer[R /* <: ObservableInput[js.Any] | Unit */](observableFactory: js.Function0[R]): Observable[ObservedValueOf[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(observableFactory.asInstanceOf[js.Any]).asInstanceOf[Observable[ObservedValueOf[R]]]
+  inline def defer[R /* <: ObservableInput[js.Any] | Unit */](observableFactory: js.Function0[R]): Observable[ObservedValueOf[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(observableFactory.asInstanceOf[js.Any]).asInstanceOf[Observable[ObservedValueOf[R]]]
 }

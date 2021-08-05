@@ -73,8 +73,7 @@ object cards {
   }
   object ICard {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       brand: Visa | (`American Express`) | MasterCard | Discover | JCB | (`Diners Club`) | Unknown,
       country: String,
       cvc_check: pass | fail | unavailable | unchecked,
@@ -90,41 +89,29 @@ object cards {
       __obj.asInstanceOf[typings.stripe.mod.cards.ICard]
     }
     
-    @scala.inline
-    implicit class ICardMutableBuilder[Self <: typings.stripe.mod.cards.ICard] (val x: Self) extends AnyVal {
+    extension [Self <: typings.stripe.mod.cards.ICard](x: Self) {
       
-      @scala.inline
-      def setAccount(value: String | IAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+      inline def setAccount(value: String | IAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+      inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setCustomer(value: String | ICustomer): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String | ICustomer): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerNull: Self = StObject.set(x, "customer", null)
+      inline def setCustomerNull: Self = StObject.set(x, "customer", null)
       
-      @scala.inline
-      def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+      inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
       
-      @scala.inline
-      def setDefault_for_currency(value: Boolean): Self = StObject.set(x, "default_for_currency", value.asInstanceOf[js.Any])
+      inline def setDefault_for_currency(value: Boolean): Self = StObject.set(x, "default_for_currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_for_currencyUndefined: Self = StObject.set(x, "default_for_currency", js.undefined)
+      inline def setDefault_for_currencyUndefined: Self = StObject.set(x, "default_for_currency", js.undefined)
       
-      @scala.inline
-      def setRecipient(value: String | IRecipient): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+      inline def setRecipient(value: String | IRecipient): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
+      inline def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
     }
   }
   
@@ -144,8 +131,7 @@ object cards {
   }
   object ICardHash {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       brand: Visa | (`American Express`) | MasterCard | Discover | JCB | (`Diners Club`) | Unknown,
       country: String,
       cvc_check: pass | fail | unavailable | unchecked,
@@ -161,11 +147,9 @@ object cards {
       __obj.asInstanceOf[ICardHash]
     }
     
-    @scala.inline
-    implicit class ICardHashMutableBuilder[Self <: ICardHash] (val x: Self) extends AnyVal {
+    extension [Self <: ICardHash](x: Self) {
       
-      @scala.inline
-      def setObject(value: card): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: card): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }
   }
   
@@ -219,81 +203,57 @@ object cards {
   }
   object ICardSourceCreationOptions {
     
-    @scala.inline
-    def apply(exp_month: Double, exp_year: Double, number: String): ICardSourceCreationOptions = {
+    inline def apply(exp_month: Double, exp_year: Double, number: String): ICardSourceCreationOptions = {
       val __obj = js.Dynamic.literal(exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
       __obj.updateDynamic("object")("card")
       __obj.asInstanceOf[ICardSourceCreationOptions]
     }
     
-    @scala.inline
-    implicit class ICardSourceCreationOptionsMutableBuilder[Self <: ICardSourceCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICardSourceCreationOptions](x: Self) {
       
-      @scala.inline
-      def setAddress_city(value: String): Self = StObject.set(x, "address_city", value.asInstanceOf[js.Any])
+      inline def setAddress_city(value: String): Self = StObject.set(x, "address_city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_cityUndefined: Self = StObject.set(x, "address_city", js.undefined)
+      inline def setAddress_cityUndefined: Self = StObject.set(x, "address_city", js.undefined)
       
-      @scala.inline
-      def setAddress_country(value: String): Self = StObject.set(x, "address_country", value.asInstanceOf[js.Any])
+      inline def setAddress_country(value: String): Self = StObject.set(x, "address_country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_countryUndefined: Self = StObject.set(x, "address_country", js.undefined)
+      inline def setAddress_countryUndefined: Self = StObject.set(x, "address_country", js.undefined)
       
-      @scala.inline
-      def setAddress_line1(value: String): Self = StObject.set(x, "address_line1", value.asInstanceOf[js.Any])
+      inline def setAddress_line1(value: String): Self = StObject.set(x, "address_line1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_line1Undefined: Self = StObject.set(x, "address_line1", js.undefined)
+      inline def setAddress_line1Undefined: Self = StObject.set(x, "address_line1", js.undefined)
       
-      @scala.inline
-      def setAddress_line2(value: String): Self = StObject.set(x, "address_line2", value.asInstanceOf[js.Any])
+      inline def setAddress_line2(value: String): Self = StObject.set(x, "address_line2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_line2Undefined: Self = StObject.set(x, "address_line2", js.undefined)
+      inline def setAddress_line2Undefined: Self = StObject.set(x, "address_line2", js.undefined)
       
-      @scala.inline
-      def setAddress_state(value: String): Self = StObject.set(x, "address_state", value.asInstanceOf[js.Any])
+      inline def setAddress_state(value: String): Self = StObject.set(x, "address_state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_stateUndefined: Self = StObject.set(x, "address_state", js.undefined)
+      inline def setAddress_stateUndefined: Self = StObject.set(x, "address_state", js.undefined)
       
-      @scala.inline
-      def setAddress_zip(value: String): Self = StObject.set(x, "address_zip", value.asInstanceOf[js.Any])
+      inline def setAddress_zip(value: String): Self = StObject.set(x, "address_zip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_zipUndefined: Self = StObject.set(x, "address_zip", js.undefined)
+      inline def setAddress_zipUndefined: Self = StObject.set(x, "address_zip", js.undefined)
       
-      @scala.inline
-      def setCvc(value: String): Self = StObject.set(x, "cvc", value.asInstanceOf[js.Any])
+      inline def setCvc(value: String): Self = StObject.set(x, "cvc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCvcUndefined: Self = StObject.set(x, "cvc", js.undefined)
+      inline def setCvcUndefined: Self = StObject.set(x, "cvc", js.undefined)
       
-      @scala.inline
-      def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
+      inline def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
+      inline def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: card): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: card): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }
   }
   
@@ -323,27 +283,21 @@ object cards {
   }
   object ICardSourceCreationOptionsExtended {
     
-    @scala.inline
-    def apply(exp_month: Double, exp_year: Double, number: String): ICardSourceCreationOptionsExtended = {
+    inline def apply(exp_month: Double, exp_year: Double, number: String): ICardSourceCreationOptionsExtended = {
       val __obj = js.Dynamic.literal(exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
       __obj.updateDynamic("object")("card")
       __obj.asInstanceOf[ICardSourceCreationOptionsExtended]
     }
     
-    @scala.inline
-    implicit class ICardSourceCreationOptionsExtendedMutableBuilder[Self <: ICardSourceCreationOptionsExtended] (val x: Self) extends AnyVal {
+    extension [Self <: ICardSourceCreationOptionsExtended](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setDefault_for_currency(value: Boolean): Self = StObject.set(x, "default_for_currency", value.asInstanceOf[js.Any])
+      inline def setDefault_for_currency(value: Boolean): Self = StObject.set(x, "default_for_currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_for_currencyUndefined: Self = StObject.set(x, "default_for_currency", js.undefined)
+      inline def setDefault_for_currencyUndefined: Self = StObject.set(x, "default_for_currency", js.undefined)
     }
   }
   
@@ -383,74 +337,52 @@ object cards {
   }
   object ICardUpdateOptions {
     
-    @scala.inline
-    def apply(): ICardUpdateOptions = {
+    inline def apply(): ICardUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICardUpdateOptions]
     }
     
-    @scala.inline
-    implicit class ICardUpdateOptionsMutableBuilder[Self <: ICardUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICardUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setAddress_city(value: String): Self = StObject.set(x, "address_city", value.asInstanceOf[js.Any])
+      inline def setAddress_city(value: String): Self = StObject.set(x, "address_city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_cityUndefined: Self = StObject.set(x, "address_city", js.undefined)
+      inline def setAddress_cityUndefined: Self = StObject.set(x, "address_city", js.undefined)
       
-      @scala.inline
-      def setAddress_country(value: String): Self = StObject.set(x, "address_country", value.asInstanceOf[js.Any])
+      inline def setAddress_country(value: String): Self = StObject.set(x, "address_country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_countryUndefined: Self = StObject.set(x, "address_country", js.undefined)
+      inline def setAddress_countryUndefined: Self = StObject.set(x, "address_country", js.undefined)
       
-      @scala.inline
-      def setAddress_line1(value: String): Self = StObject.set(x, "address_line1", value.asInstanceOf[js.Any])
+      inline def setAddress_line1(value: String): Self = StObject.set(x, "address_line1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_line1Undefined: Self = StObject.set(x, "address_line1", js.undefined)
+      inline def setAddress_line1Undefined: Self = StObject.set(x, "address_line1", js.undefined)
       
-      @scala.inline
-      def setAddress_line2(value: String): Self = StObject.set(x, "address_line2", value.asInstanceOf[js.Any])
+      inline def setAddress_line2(value: String): Self = StObject.set(x, "address_line2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_line2Undefined: Self = StObject.set(x, "address_line2", js.undefined)
+      inline def setAddress_line2Undefined: Self = StObject.set(x, "address_line2", js.undefined)
       
-      @scala.inline
-      def setAddress_state(value: String): Self = StObject.set(x, "address_state", value.asInstanceOf[js.Any])
+      inline def setAddress_state(value: String): Self = StObject.set(x, "address_state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_stateUndefined: Self = StObject.set(x, "address_state", js.undefined)
+      inline def setAddress_stateUndefined: Self = StObject.set(x, "address_state", js.undefined)
       
-      @scala.inline
-      def setAddress_zip(value: String): Self = StObject.set(x, "address_zip", value.asInstanceOf[js.Any])
+      inline def setAddress_zip(value: String): Self = StObject.set(x, "address_zip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_zipUndefined: Self = StObject.set(x, "address_zip", js.undefined)
+      inline def setAddress_zipUndefined: Self = StObject.set(x, "address_zip", js.undefined)
       
-      @scala.inline
-      def setDefault_for_currency(value: Boolean): Self = StObject.set(x, "default_for_currency", value.asInstanceOf[js.Any])
+      inline def setDefault_for_currency(value: Boolean): Self = StObject.set(x, "default_for_currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_for_currencyUndefined: Self = StObject.set(x, "default_for_currency", js.undefined)
+      inline def setDefault_for_currencyUndefined: Self = StObject.set(x, "default_for_currency", js.undefined)
       
-      @scala.inline
-      def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
+      inline def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExp_monthUndefined: Self = StObject.set(x, "exp_month", js.undefined)
+      inline def setExp_monthUndefined: Self = StObject.set(x, "exp_month", js.undefined)
       
-      @scala.inline
-      def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
+      inline def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExp_yearUndefined: Self = StObject.set(x, "exp_year", js.undefined)
+      inline def setExp_yearUndefined: Self = StObject.set(x, "exp_year", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

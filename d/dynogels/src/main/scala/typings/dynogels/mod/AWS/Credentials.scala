@@ -35,6 +35,5 @@ object Credentials {
   @JSImport("dynogels", "AWS.Credentials.expiryWindow")
   @js.native
   def expiryWindow: Double = js.native
-  @scala.inline
-  def expiryWindow_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expiryWindow")(x.asInstanceOf[js.Any])
+  inline def expiryWindow_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expiryWindow")(x.asInstanceOf[js.Any])
 }

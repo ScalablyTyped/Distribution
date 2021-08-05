@@ -17,31 +17,23 @@ trait GooglePrivacyDlpV2DeidentifyConfig extends StObject {
 }
 object GooglePrivacyDlpV2DeidentifyConfig {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2DeidentifyConfig = {
+  inline def apply(): GooglePrivacyDlpV2DeidentifyConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2DeidentifyConfig]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2DeidentifyConfigMutableBuilder[Self <: GooglePrivacyDlpV2DeidentifyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2DeidentifyConfig](x: Self) {
     
-    @scala.inline
-    def setInfoTypeTransformations(value: GooglePrivacyDlpV2InfoTypeTransformations): Self = StObject.set(x, "infoTypeTransformations", value.asInstanceOf[js.Any])
+    inline def setInfoTypeTransformations(value: GooglePrivacyDlpV2InfoTypeTransformations): Self = StObject.set(x, "infoTypeTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypeTransformationsUndefined: Self = StObject.set(x, "infoTypeTransformations", js.undefined)
+    inline def setInfoTypeTransformationsUndefined: Self = StObject.set(x, "infoTypeTransformations", js.undefined)
     
-    @scala.inline
-    def setRecordTransformations(value: GooglePrivacyDlpV2RecordTransformations): Self = StObject.set(x, "recordTransformations", value.asInstanceOf[js.Any])
+    inline def setRecordTransformations(value: GooglePrivacyDlpV2RecordTransformations): Self = StObject.set(x, "recordTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordTransformationsUndefined: Self = StObject.set(x, "recordTransformations", js.undefined)
+    inline def setRecordTransformationsUndefined: Self = StObject.set(x, "recordTransformations", js.undefined)
     
-    @scala.inline
-    def setTransformationErrorHandling(value: GooglePrivacyDlpV2TransformationErrorHandling): Self = StObject.set(x, "transformationErrorHandling", value.asInstanceOf[js.Any])
+    inline def setTransformationErrorHandling(value: GooglePrivacyDlpV2TransformationErrorHandling): Self = StObject.set(x, "transformationErrorHandling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformationErrorHandlingUndefined: Self = StObject.set(x, "transformationErrorHandling", js.undefined)
+    inline def setTransformationErrorHandlingUndefined: Self = StObject.set(x, "transformationErrorHandling", js.undefined)
   }
 }

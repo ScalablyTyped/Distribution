@@ -31,8 +31,7 @@ object srcComponentsNavStepperNavStepperMod {
     @JSImport("wix-ui-core/src/components/nav-stepper/NavStepper", "NavStepper.Step")
     @js.native
     def Step: ComponentClass[ExternalNavStepProps, ComponentState] = js.native
-    @scala.inline
-    def Step_=(x: ComponentClass[ExternalNavStepProps, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
+    inline def Step_=(x: ComponentClass[ExternalNavStepProps, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
   }
   
   trait NavStepperProps extends StObject {
@@ -48,35 +47,26 @@ object srcComponentsNavStepperNavStepperMod {
   }
   object NavStepperProps {
     
-    @scala.inline
-    def apply(activeStep: Double): NavStepperProps = {
+    inline def apply(activeStep: Double): NavStepperProps = {
       val __obj = js.Dynamic.literal(activeStep = activeStep.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavStepperProps]
     }
     
-    @scala.inline
-    implicit class NavStepperPropsMutableBuilder[Self <: NavStepperProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavStepperProps](x: Self) {
       
-      @scala.inline
-      def setActiveStep(value: Double): Self = StObject.set(x, "activeStep", value.asInstanceOf[js.Any])
+      inline def setActiveStep(value: Double): Self = StObject.set(x, "activeStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+      inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
+      inline def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
       
-      @scala.inline
-      def setOnStepClick(value: (/* stepIndex */ Double, /* e */ js.Any) => Unit): Self = StObject.set(x, "onStepClick", js.Any.fromFunction2(value))
+      inline def setOnStepClick(value: (/* stepIndex */ Double, /* e */ js.Any) => Unit): Self = StObject.set(x, "onStepClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnStepClickUndefined: Self = StObject.set(x, "onStepClick", js.undefined)
+      inline def setOnStepClickUndefined: Self = StObject.set(x, "onStepClick", js.undefined)
     }
   }
 }

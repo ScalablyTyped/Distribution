@@ -18,22 +18,17 @@ trait RegisterThingRequest extends StObject {
 }
 object RegisterThingRequest {
   
-  @scala.inline
-  def apply(templateBody: TemplateBody): RegisterThingRequest = {
+  inline def apply(templateBody: TemplateBody): RegisterThingRequest = {
     val __obj = js.Dynamic.literal(templateBody = templateBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterThingRequest]
   }
   
-  @scala.inline
-  implicit class RegisterThingRequestMutableBuilder[Self <: RegisterThingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterThingRequest](x: Self) {
     
-    @scala.inline
-    def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
   }
 }

@@ -48,52 +48,37 @@ trait SchemaTemplate extends StObject {
 }
 object SchemaTemplate {
   
-  @scala.inline
-  def apply(): SchemaTemplate = {
+  inline def apply(): SchemaTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTemplate]
   }
   
-  @scala.inline
-  implicit class SchemaTemplateMutableBuilder[Self <: SchemaTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTemplate](x: Self) {
     
-    @scala.inline
-    def setAutomaticColumnNames(value: js.Array[String]): Self = StObject.set(x, "automaticColumnNames", value.asInstanceOf[js.Any])
+    inline def setAutomaticColumnNames(value: js.Array[String]): Self = StObject.set(x, "automaticColumnNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticColumnNamesUndefined: Self = StObject.set(x, "automaticColumnNames", js.undefined)
+    inline def setAutomaticColumnNamesUndefined: Self = StObject.set(x, "automaticColumnNames", js.undefined)
     
-    @scala.inline
-    def setAutomaticColumnNamesVarargs(value: String*): Self = StObject.set(x, "automaticColumnNames", js.Array(value :_*))
+    inline def setAutomaticColumnNamesVarargs(value: String*): Self = StObject.set(x, "automaticColumnNames", js.Array(value :_*))
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
     
-    @scala.inline
-    def setTemplateId(value: Double): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: Double): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
   }
 }

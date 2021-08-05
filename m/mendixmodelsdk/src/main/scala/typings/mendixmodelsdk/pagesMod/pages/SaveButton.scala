@@ -53,8 +53,7 @@ object SaveButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def create(model: IModel): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -65,8 +64,7 @@ object SaveButton {
     *  6.7.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidget(container: DataView): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInDataViewUnderFooterWidget(container: DataView): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -77,8 +75,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidget(container: DataView): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInDataViewUnderWidget(container: DataView): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -89,8 +86,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidget(container: DivContainer): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInDivContainerUnderWidget(container: DivContainer): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -101,8 +97,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidget(container: GroupBox): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInGroupBoxUnderWidget(container: GroupBox): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -113,8 +108,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidget(container: Header): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInHeaderUnderLeftWidget(container: Header): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -125,8 +119,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidget(container: Header): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInHeaderUnderRightWidget(container: Header): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -137,8 +130,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -149,8 +141,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -161,8 +152,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidget(container: Layout): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInLayoutUnderWidget(container: Layout): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -173,8 +163,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -185,8 +174,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidget(container: ListView): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInListViewUnderWidget(container: ListView): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -197,8 +185,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInNavigationListItemUnderWidget(container: NavigationListItem): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -209,8 +196,7 @@ object SaveButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderParameterWidget(container: ReportPane): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInReportPaneUnderParameterWidget(container: ReportPane): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -221,8 +207,7 @@ object SaveButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderReportWidget(container: ReportPane): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInReportPaneUnderReportWidget(container: ReportPane): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -233,8 +218,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -245,8 +229,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidget(container: Snippet): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInSnippetUnderWidget(container: Snippet): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -257,8 +240,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInSplitPaneUnderFirstWidget(container: SplitPane): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -269,8 +251,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInSplitPaneUnderSecondWidget(container: SplitPane): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -281,8 +262,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidget(container: TabPage): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInTabPageUnderWidget(container: TabPage): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -293,8 +273,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidget(container: TableCell): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInTableCellUnderWidget(container: TableCell): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -305,8 +284,7 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -317,20 +295,17 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
+  inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

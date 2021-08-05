@@ -32,8 +32,7 @@ trait DatabaseAccessDataSource
 }
 object DatabaseAccessDataSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LoginTimeout: Double,
     PasswordMode: RememberAuthentication,
     PropertySetInfo: XPropertySetInfo,
@@ -57,13 +56,10 @@ object DatabaseAccessDataSource {
     __obj.asInstanceOf[DatabaseAccessDataSource]
   }
   
-  @scala.inline
-  implicit class DatabaseAccessDataSourceMutableBuilder[Self <: DatabaseAccessDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseAccessDataSource](x: Self) {
     
-    @scala.inline
-    def setPasswordMode(value: RememberAuthentication): Self = StObject.set(x, "PasswordMode", value.asInstanceOf[js.Any])
+    inline def setPasswordMode(value: RememberAuthentication): Self = StObject.set(x, "PasswordMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

@@ -44,17 +44,14 @@ object logMod {
   }
   object Logger_ {
     
-    @scala.inline
-    def apply(log: (String, js.Any) => Unit): Logger_ = {
+    inline def apply(log: (String, js.Any) => Unit): Logger_ = {
       val __obj = js.Dynamic.literal(log = js.Any.fromFunction2(log))
       __obj.asInstanceOf[Logger_]
     }
     
-    @scala.inline
-    implicit class Logger_MutableBuilder[Self <: Logger_] (val x: Self) extends AnyVal {
+    extension [Self <: Logger_](x: Self) {
       
-      @scala.inline
-      def setLog(value: (String, js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(value: (String, js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     }
   }
 }

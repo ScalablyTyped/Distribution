@@ -53,8 +53,7 @@ trait NodeCollectionMetadata extends StObject {
 }
 object NodeCollectionMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     maxDegree: Boolean => Double,
     maxIndegree: Boolean => Double,
     maxOutdegree: Boolean => Double,
@@ -67,28 +66,20 @@ object NodeCollectionMetadata {
     __obj.asInstanceOf[NodeCollectionMetadata]
   }
   
-  @scala.inline
-  implicit class NodeCollectionMetadataMutableBuilder[Self <: NodeCollectionMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: NodeCollectionMetadata](x: Self) {
     
-    @scala.inline
-    def setMaxDegree(value: Boolean => Double): Self = StObject.set(x, "maxDegree", js.Any.fromFunction1(value))
+    inline def setMaxDegree(value: Boolean => Double): Self = StObject.set(x, "maxDegree", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaxIndegree(value: Boolean => Double): Self = StObject.set(x, "maxIndegree", js.Any.fromFunction1(value))
+    inline def setMaxIndegree(value: Boolean => Double): Self = StObject.set(x, "maxIndegree", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaxOutdegree(value: Boolean => Double): Self = StObject.set(x, "maxOutdegree", js.Any.fromFunction1(value))
+    inline def setMaxOutdegree(value: Boolean => Double): Self = StObject.set(x, "maxOutdegree", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMinDegree(value: Boolean => Double): Self = StObject.set(x, "minDegree", js.Any.fromFunction1(value))
+    inline def setMinDegree(value: Boolean => Double): Self = StObject.set(x, "minDegree", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMinIndegree(value: Boolean => Double): Self = StObject.set(x, "minIndegree", js.Any.fromFunction1(value))
+    inline def setMinIndegree(value: Boolean => Double): Self = StObject.set(x, "minIndegree", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMinOutdegree(value: Boolean => Double): Self = StObject.set(x, "minOutdegree", js.Any.fromFunction1(value))
+    inline def setMinOutdegree(value: Boolean => Double): Self = StObject.set(x, "minOutdegree", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTotalDegree(value: Boolean => Double): Self = StObject.set(x, "totalDegree", js.Any.fromFunction1(value))
+    inline def setTotalDegree(value: Boolean => Double): Self = StObject.set(x, "totalDegree", js.Any.fromFunction1(value))
   }
 }

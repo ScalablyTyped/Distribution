@@ -14,22 +14,17 @@ trait BoardFields extends StObject {
 }
 object BoardFields {
   
-  @scala.inline
-  def apply(columnField: FieldReference, doneField: FieldReference, rowField: FieldReference): BoardFields = {
+  inline def apply(columnField: FieldReference, doneField: FieldReference, rowField: FieldReference): BoardFields = {
     val __obj = js.Dynamic.literal(columnField = columnField.asInstanceOf[js.Any], doneField = doneField.asInstanceOf[js.Any], rowField = rowField.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoardFields]
   }
   
-  @scala.inline
-  implicit class BoardFieldsMutableBuilder[Self <: BoardFields] (val x: Self) extends AnyVal {
+  extension [Self <: BoardFields](x: Self) {
     
-    @scala.inline
-    def setColumnField(value: FieldReference): Self = StObject.set(x, "columnField", value.asInstanceOf[js.Any])
+    inline def setColumnField(value: FieldReference): Self = StObject.set(x, "columnField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoneField(value: FieldReference): Self = StObject.set(x, "doneField", value.asInstanceOf[js.Any])
+    inline def setDoneField(value: FieldReference): Self = StObject.set(x, "doneField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowField(value: FieldReference): Self = StObject.set(x, "rowField", value.asInstanceOf[js.Any])
+    inline def setRowField(value: FieldReference): Self = StObject.set(x, "rowField", value.asInstanceOf[js.Any])
   }
 }

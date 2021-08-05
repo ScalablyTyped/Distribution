@@ -14,25 +14,19 @@ trait SourceSplitShard extends StObject {
 }
 object SourceSplitShard {
   
-  @scala.inline
-  def apply(): SourceSplitShard = {
+  inline def apply(): SourceSplitShard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceSplitShard]
   }
   
-  @scala.inline
-  implicit class SourceSplitShardMutableBuilder[Self <: SourceSplitShard] (val x: Self) extends AnyVal {
+  extension [Self <: SourceSplitShard](x: Self) {
     
-    @scala.inline
-    def setDerivationMode(value: String): Self = StObject.set(x, "derivationMode", value.asInstanceOf[js.Any])
+    inline def setDerivationMode(value: String): Self = StObject.set(x, "derivationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDerivationModeUndefined: Self = StObject.set(x, "derivationMode", js.undefined)
+    inline def setDerivationModeUndefined: Self = StObject.set(x, "derivationMode", js.undefined)
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

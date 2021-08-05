@@ -46,7 +46,7 @@ object serviceMod {
     
     var baseUrl: String = js.native
     
-    var getCredentials: js.Any = js.native
+    /* private */ var getCredentials: js.Any = js.native
     
     /**
       * Get and update the Service's project ID.
@@ -63,7 +63,7 @@ object serviceMod {
       */
     def getRequestInterceptors(): js.Array[js.Function] = js.native
     
-    var globalInterceptors: js.Any = js.native
+    /* private */ var globalInterceptors: js.Any = js.native
     
     var interceptors: js.Array[Interceptor] = js.native
     
@@ -75,11 +75,11 @@ object serviceMod {
     @JSName("makeAuthenticatedRequest")
     def makeAuthenticatedRequest_Union(reqOpts: DecorateRequestOptions): Unit | Abortable = js.native
     
-    var packageJson: js.Any = js.native
+    /* private */ var packageJson: js.Any = js.native
     
     var projectId: String = js.native
     
-    var projectIdRequired: js.Any = js.native
+    /* private */ var projectIdRequired: js.Any = js.native
     
     var providedUserAgent: js.UndefOr[String] = js.native
     
@@ -109,7 +109,7 @@ object serviceMod {
       * @param {string} reqOpts.uri - A URI relative to the baseUrl.
       * @param {function} callback - The callback function passed to `request`.
       */
-    var request_ : js.Any = js.native
+    /* private */ var request_ : js.Any = js.native
     
     var timeout: js.UndefOr[Double] = js.native
   }
@@ -143,41 +143,30 @@ object serviceMod {
   }
   object ServiceConfig {
     
-    @scala.inline
-    def apply(apiEndpoint: String, baseUrl: String, packageJson: PackageJson, scopes: js.Array[String]): ServiceConfig = {
+    inline def apply(apiEndpoint: String, baseUrl: String, packageJson: PackageJson, scopes: js.Array[String]): ServiceConfig = {
       val __obj = js.Dynamic.literal(apiEndpoint = apiEndpoint.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any], packageJson = packageJson.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceConfig]
     }
     
-    @scala.inline
-    implicit class ServiceConfigMutableBuilder[Self <: ServiceConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceConfig](x: Self) {
       
-      @scala.inline
-      def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
+      inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthClient(value: GoogleAuth): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
+      inline def setAuthClient(value: GoogleAuth): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthClientUndefined: Self = StObject.set(x, "authClient", js.undefined)
+      inline def setAuthClientUndefined: Self = StObject.set(x, "authClient", js.undefined)
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageJson(value: PackageJson): Self = StObject.set(x, "packageJson", value.asInstanceOf[js.Any])
+      inline def setPackageJson(value: PackageJson): Self = StObject.set(x, "packageJson", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdRequired(value: Boolean): Self = StObject.set(x, "projectIdRequired", value.asInstanceOf[js.Any])
+      inline def setProjectIdRequired(value: Boolean): Self = StObject.set(x, "projectIdRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdRequiredUndefined: Self = StObject.set(x, "projectIdRequired", js.undefined)
+      inline def setProjectIdRequiredUndefined: Self = StObject.set(x, "projectIdRequired", js.undefined)
       
-      @scala.inline
-      def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     }
   }
   
@@ -199,53 +188,38 @@ object serviceMod {
   }
   object ServiceOptions {
     
-    @scala.inline
-    def apply(): ServiceOptions = {
+    inline def apply(): ServiceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceOptions]
     }
     
-    @scala.inline
-    implicit class ServiceOptionsMutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceOptions](x: Self) {
       
-      @scala.inline
-      def setAuthClient(value: GoogleAuth): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
+      inline def setAuthClient(value: GoogleAuth): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthClientUndefined: Self = StObject.set(x, "authClient", js.undefined)
+      inline def setAuthClientUndefined: Self = StObject.set(x, "authClient", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setInterceptors_(value: js.Array[Interceptor]): Self = StObject.set(x, "interceptors_", value.asInstanceOf[js.Any])
+      inline def setInterceptors_(value: js.Array[Interceptor]): Self = StObject.set(x, "interceptors_", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterceptors_Undefined: Self = StObject.set(x, "interceptors_", js.undefined)
+      inline def setInterceptors_Undefined: Self = StObject.set(x, "interceptors_", js.undefined)
       
-      @scala.inline
-      def setInterceptors_Varargs(value: Interceptor*): Self = StObject.set(x, "interceptors_", js.Array(value :_*))
+      inline def setInterceptors_Varargs(value: Interceptor*): Self = StObject.set(x, "interceptors_", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     }
   }
   
@@ -258,17 +232,14 @@ object serviceMod {
   }
   object StreamRequestOptions {
     
-    @scala.inline
-    def apply(uri: String): StreamRequestOptions = {
+    inline def apply(uri: String): StreamRequestOptions = {
       val __obj = js.Dynamic.literal(shouldReturnStream = true, uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamRequestOptions]
     }
     
-    @scala.inline
-    implicit class StreamRequestOptionsMutableBuilder[Self <: StreamRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StreamRequestOptions](x: Self) {
       
-      @scala.inline
-      def setShouldReturnStream(value: `true`): Self = StObject.set(x, "shouldReturnStream", value.asInstanceOf[js.Any])
+      inline def setShouldReturnStream(value: `true`): Self = StObject.set(x, "shouldReturnStream", value.asInstanceOf[js.Any])
     }
   }
 }

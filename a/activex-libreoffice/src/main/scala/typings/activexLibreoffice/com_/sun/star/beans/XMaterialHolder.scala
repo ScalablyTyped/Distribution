@@ -32,8 +32,7 @@ trait XMaterialHolder
 }
 object XMaterialHolder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Material: js.Any,
     acquire: () => Unit,
     getMaterial: () => js.Any,
@@ -44,13 +43,10 @@ object XMaterialHolder {
     __obj.asInstanceOf[XMaterialHolder]
   }
   
-  @scala.inline
-  implicit class XMaterialHolderMutableBuilder[Self <: XMaterialHolder] (val x: Self) extends AnyVal {
+  extension [Self <: XMaterialHolder](x: Self) {
     
-    @scala.inline
-    def setGetMaterial(value: () => js.Any): Self = StObject.set(x, "getMaterial", js.Any.fromFunction0(value))
+    inline def setGetMaterial(value: () => js.Any): Self = StObject.set(x, "getMaterial", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMaterial(value: js.Any): Self = StObject.set(x, "Material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: js.Any): Self = StObject.set(x, "Material", value.asInstanceOf[js.Any])
   }
 }

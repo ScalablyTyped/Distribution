@@ -18,22 +18,17 @@ trait DeleteDhcpOptionsRequest extends StObject {
 }
 object DeleteDhcpOptionsRequest {
   
-  @scala.inline
-  def apply(DhcpOptionsId: DhcpOptionsId): DeleteDhcpOptionsRequest = {
+  inline def apply(DhcpOptionsId: DhcpOptionsId): DeleteDhcpOptionsRequest = {
     val __obj = js.Dynamic.literal(DhcpOptionsId = DhcpOptionsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDhcpOptionsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDhcpOptionsRequestMutableBuilder[Self <: DeleteDhcpOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDhcpOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setDhcpOptionsId(value: DhcpOptionsId): Self = StObject.set(x, "DhcpOptionsId", value.asInstanceOf[js.Any])
+    inline def setDhcpOptionsId(value: DhcpOptionsId): Self = StObject.set(x, "DhcpOptionsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

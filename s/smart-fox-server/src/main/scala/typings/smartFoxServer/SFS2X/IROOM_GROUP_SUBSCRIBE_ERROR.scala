@@ -12,19 +12,15 @@ trait IROOM_GROUP_SUBSCRIBE_ERROR extends StObject {
 }
 object IROOM_GROUP_SUBSCRIBE_ERROR {
   
-  @scala.inline
-  def apply(errorCode: Double, errorMessage: String): IROOM_GROUP_SUBSCRIBE_ERROR = {
+  inline def apply(errorCode: Double, errorMessage: String): IROOM_GROUP_SUBSCRIBE_ERROR = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[IROOM_GROUP_SUBSCRIBE_ERROR]
   }
   
-  @scala.inline
-  implicit class IROOM_GROUP_SUBSCRIBE_ERRORMutableBuilder[Self <: IROOM_GROUP_SUBSCRIBE_ERROR] (val x: Self) extends AnyVal {
+  extension [Self <: IROOM_GROUP_SUBSCRIBE_ERROR](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
   }
 }

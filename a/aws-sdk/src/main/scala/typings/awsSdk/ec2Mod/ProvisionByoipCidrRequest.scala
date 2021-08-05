@@ -38,49 +38,35 @@ trait ProvisionByoipCidrRequest extends StObject {
 }
 object ProvisionByoipCidrRequest {
   
-  @scala.inline
-  def apply(Cidr: String): ProvisionByoipCidrRequest = {
+  inline def apply(Cidr: String): ProvisionByoipCidrRequest = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionByoipCidrRequest]
   }
   
-  @scala.inline
-  implicit class ProvisionByoipCidrRequestMutableBuilder[Self <: ProvisionByoipCidrRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisionByoipCidrRequest](x: Self) {
     
-    @scala.inline
-    def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrAuthorizationContext(value: CidrAuthorizationContext): Self = StObject.set(x, "CidrAuthorizationContext", value.asInstanceOf[js.Any])
+    inline def setCidrAuthorizationContext(value: CidrAuthorizationContext): Self = StObject.set(x, "CidrAuthorizationContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrAuthorizationContextUndefined: Self = StObject.set(x, "CidrAuthorizationContext", js.undefined)
+    inline def setCidrAuthorizationContextUndefined: Self = StObject.set(x, "CidrAuthorizationContext", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setPoolTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "PoolTagSpecifications", value.asInstanceOf[js.Any])
+    inline def setPoolTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "PoolTagSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolTagSpecificationsUndefined: Self = StObject.set(x, "PoolTagSpecifications", js.undefined)
+    inline def setPoolTagSpecificationsUndefined: Self = StObject.set(x, "PoolTagSpecifications", js.undefined)
     
-    @scala.inline
-    def setPoolTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "PoolTagSpecifications", js.Array(value :_*))
+    inline def setPoolTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "PoolTagSpecifications", js.Array(value :_*))
     
-    @scala.inline
-    def setPubliclyAdvertisable(value: Boolean): Self = StObject.set(x, "PubliclyAdvertisable", value.asInstanceOf[js.Any])
+    inline def setPubliclyAdvertisable(value: Boolean): Self = StObject.set(x, "PubliclyAdvertisable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubliclyAdvertisableUndefined: Self = StObject.set(x, "PubliclyAdvertisable", js.undefined)
+    inline def setPubliclyAdvertisableUndefined: Self = StObject.set(x, "PubliclyAdvertisable", js.undefined)
   }
 }

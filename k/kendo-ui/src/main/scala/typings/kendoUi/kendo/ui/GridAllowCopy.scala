@@ -10,19 +10,15 @@ trait GridAllowCopy extends StObject {
 }
 object GridAllowCopy {
   
-  @scala.inline
-  def apply(): GridAllowCopy = {
+  inline def apply(): GridAllowCopy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridAllowCopy]
   }
   
-  @scala.inline
-  implicit class GridAllowCopyMutableBuilder[Self <: GridAllowCopy] (val x: Self) extends AnyVal {
+  extension [Self <: GridAllowCopy](x: Self) {
     
-    @scala.inline
-    def setDelimeter(value: String | js.Any): Self = StObject.set(x, "delimeter", value.asInstanceOf[js.Any])
+    inline def setDelimeter(value: String | js.Any): Self = StObject.set(x, "delimeter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimeterUndefined: Self = StObject.set(x, "delimeter", js.undefined)
+    inline def setDelimeterUndefined: Self = StObject.set(x, "delimeter", js.undefined)
   }
 }

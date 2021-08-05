@@ -23,25 +23,19 @@ trait CreateBackupSelectionInput extends StObject {
 }
 object CreateBackupSelectionInput {
   
-  @scala.inline
-  def apply(BackupPlanId: String, BackupSelection: BackupSelection): CreateBackupSelectionInput = {
+  inline def apply(BackupPlanId: String, BackupSelection: BackupSelection): CreateBackupSelectionInput = {
     val __obj = js.Dynamic.literal(BackupPlanId = BackupPlanId.asInstanceOf[js.Any], BackupSelection = BackupSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBackupSelectionInput]
   }
   
-  @scala.inline
-  implicit class CreateBackupSelectionInputMutableBuilder[Self <: CreateBackupSelectionInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBackupSelectionInput](x: Self) {
     
-    @scala.inline
-    def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
+    inline def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupSelection(value: BackupSelection): Self = StObject.set(x, "BackupSelection", value.asInstanceOf[js.Any])
+    inline def setBackupSelection(value: BackupSelection): Self = StObject.set(x, "BackupSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorRequestId(value: String): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
+    inline def setCreatorRequestId(value: String): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
+    inline def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
   }
 }

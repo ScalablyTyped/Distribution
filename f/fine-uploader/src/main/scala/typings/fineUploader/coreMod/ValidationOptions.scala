@@ -59,58 +59,41 @@ trait ValidationOptions extends StObject {
 }
 object ValidationOptions {
   
-  @scala.inline
-  def apply(): ValidationOptions = {
+  inline def apply(): ValidationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidationOptions]
   }
   
-  @scala.inline
-  implicit class ValidationOptionsMutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationOptions](x: Self) {
     
-    @scala.inline
-    def setAcceptFiles(value: js.Any): Self = StObject.set(x, "acceptFiles", value.asInstanceOf[js.Any])
+    inline def setAcceptFiles(value: js.Any): Self = StObject.set(x, "acceptFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptFilesUndefined: Self = StObject.set(x, "acceptFiles", js.undefined)
+    inline def setAcceptFilesUndefined: Self = StObject.set(x, "acceptFiles", js.undefined)
     
-    @scala.inline
-    def setAllowedExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedExtensions", value.asInstanceOf[js.Any])
+    inline def setAllowedExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedExtensionsUndefined: Self = StObject.set(x, "allowedExtensions", js.undefined)
+    inline def setAllowedExtensionsUndefined: Self = StObject.set(x, "allowedExtensions", js.undefined)
     
-    @scala.inline
-    def setAllowedExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedExtensions", js.Array(value :_*))
+    inline def setAllowedExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedExtensions", js.Array(value :_*))
     
-    @scala.inline
-    def setImage(value: ImageOptions): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageOptions): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setItemLimit(value: Double): Self = StObject.set(x, "itemLimit", value.asInstanceOf[js.Any])
+    inline def setItemLimit(value: Double): Self = StObject.set(x, "itemLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemLimitUndefined: Self = StObject.set(x, "itemLimit", js.undefined)
+    inline def setItemLimitUndefined: Self = StObject.set(x, "itemLimit", js.undefined)
     
-    @scala.inline
-    def setMinSizeLimit(value: Double): Self = StObject.set(x, "minSizeLimit", value.asInstanceOf[js.Any])
+    inline def setMinSizeLimit(value: Double): Self = StObject.set(x, "minSizeLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSizeLimitUndefined: Self = StObject.set(x, "minSizeLimit", js.undefined)
+    inline def setMinSizeLimitUndefined: Self = StObject.set(x, "minSizeLimit", js.undefined)
     
-    @scala.inline
-    def setSizeLimit(value: Double): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
+    inline def setSizeLimit(value: Double): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
+    inline def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
     
-    @scala.inline
-    def setStopOnFirstInvalidFile(value: Boolean): Self = StObject.set(x, "stopOnFirstInvalidFile", value.asInstanceOf[js.Any])
+    inline def setStopOnFirstInvalidFile(value: Boolean): Self = StObject.set(x, "stopOnFirstInvalidFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopOnFirstInvalidFileUndefined: Self = StObject.set(x, "stopOnFirstInvalidFile", js.undefined)
+    inline def setStopOnFirstInvalidFileUndefined: Self = StObject.set(x, "stopOnFirstInvalidFile", js.undefined)
   }
 }

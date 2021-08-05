@@ -46,26 +46,20 @@ object layoutLayoutMod extends Shortcut {
   }
   object BasicProps {
     
-    @scala.inline
-    def apply(): BasicProps = {
+    inline def apply(): BasicProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BasicProps]
     }
     
-    @scala.inline
-    implicit class BasicPropsMutableBuilder[Self <: BasicProps] (val x: Self) extends AnyVal {
+    extension [Self <: BasicProps](x: Self) {
       
-      @scala.inline
-      def setHasSider(value: Boolean): Self = StObject.set(x, "hasSider", value.asInstanceOf[js.Any])
+      inline def setHasSider(value: Boolean): Self = StObject.set(x, "hasSider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasSiderUndefined: Self = StObject.set(x, "hasSider", js.undefined)
+      inline def setHasSiderUndefined: Self = StObject.set(x, "hasSider", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     }
   }
   
@@ -79,23 +73,18 @@ object layoutLayoutMod extends Shortcut {
   }
   object GeneratorProps {
     
-    @scala.inline
-    def apply(displayName: String, suffixCls: String, tagName: header | footer | main | section): GeneratorProps = {
+    inline def apply(displayName: String, suffixCls: String, tagName: header | footer | main | section): GeneratorProps = {
       val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], suffixCls = suffixCls.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeneratorProps]
     }
     
-    @scala.inline
-    implicit class GeneratorPropsMutableBuilder[Self <: GeneratorProps] (val x: Self) extends AnyVal {
+    extension [Self <: GeneratorProps](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixCls(value: String): Self = StObject.set(x, "suffixCls", value.asInstanceOf[js.Any])
+      inline def setSuffixCls(value: String): Self = StObject.set(x, "suffixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagName(value: header | footer | main | section): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: header | footer | main | section): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,17 +94,14 @@ object layoutLayoutMod extends Shortcut {
   }
   object LayoutContextProps {
     
-    @scala.inline
-    def apply(siderHook: AddSider): LayoutContextProps = {
+    inline def apply(siderHook: AddSider): LayoutContextProps = {
       val __obj = js.Dynamic.literal(siderHook = siderHook.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayoutContextProps]
     }
     
-    @scala.inline
-    implicit class LayoutContextPropsMutableBuilder[Self <: LayoutContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutContextProps](x: Self) {
       
-      @scala.inline
-      def setSiderHook(value: AddSider): Self = StObject.set(x, "siderHook", value.asInstanceOf[js.Any])
+      inline def setSiderHook(value: AddSider): Self = StObject.set(x, "siderHook", value.asInstanceOf[js.Any])
     }
   }
   

@@ -17,37 +17,27 @@ trait DraggableEvents extends StObject {
 }
 object DraggableEvents {
   
-  @scala.inline
-  def apply(): DraggableEvents = {
+  inline def apply(): DraggableEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DraggableEvents]
   }
   
-  @scala.inline
-  implicit class DraggableEventsMutableBuilder[Self <: DraggableEvents] (val x: Self) extends AnyVal {
+  extension [Self <: DraggableEvents](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setDrag(value: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction2(value))
+    inline def setDrag(value: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+    inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
-    @scala.inline
-    def setStart(value: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+    inline def setStart(value: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setStop(value: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction2(value))
+    inline def setStop(value: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
   }
 }

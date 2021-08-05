@@ -8,11 +8,9 @@ object quadstoreStrings {
   
   @js.native
   sealed trait Quad extends StObject
-  @scala.inline
-  def Quad: Quad = "Quad".asInstanceOf[Quad]
+  inline def Quad: Quad = "Quad".asInstanceOf[Quad]
   
   @js.native
   sealed trait graph extends StObject
-  @scala.inline
-  def graph: graph = "graph".asInstanceOf[graph]
+  inline def graph: graph = "graph".asInstanceOf[graph]
 }

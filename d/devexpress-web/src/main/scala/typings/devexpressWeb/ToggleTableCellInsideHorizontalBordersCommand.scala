@@ -18,16 +18,13 @@ trait ToggleTableCellInsideHorizontalBordersCommand
 }
 object ToggleTableCellInsideHorizontalBordersCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): ToggleTableCellInsideHorizontalBordersCommand = {
+  inline def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): ToggleTableCellInsideHorizontalBordersCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ToggleTableCellInsideHorizontalBordersCommand]
   }
   
-  @scala.inline
-  implicit class ToggleTableCellInsideHorizontalBordersCommandMutableBuilder[Self <: ToggleTableCellInsideHorizontalBordersCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ToggleTableCellInsideHorizontalBordersCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

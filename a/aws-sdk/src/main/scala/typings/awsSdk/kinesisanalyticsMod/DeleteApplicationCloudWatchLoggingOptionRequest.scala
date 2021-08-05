@@ -23,8 +23,7 @@ trait DeleteApplicationCloudWatchLoggingOptionRequest extends StObject {
 }
 object DeleteApplicationCloudWatchLoggingOptionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationName: ApplicationName,
     CloudWatchLoggingOptionId: Id,
     CurrentApplicationVersionId: ApplicationVersionId
@@ -33,16 +32,12 @@ object DeleteApplicationCloudWatchLoggingOptionRequest {
     __obj.asInstanceOf[DeleteApplicationCloudWatchLoggingOptionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteApplicationCloudWatchLoggingOptionRequestMutableBuilder[Self <: DeleteApplicationCloudWatchLoggingOptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteApplicationCloudWatchLoggingOptionRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchLoggingOptionId(value: Id): Self = StObject.set(x, "CloudWatchLoggingOptionId", value.asInstanceOf[js.Any])
+    inline def setCloudWatchLoggingOptionId(value: Id): Self = StObject.set(x, "CloudWatchLoggingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
   }
 }

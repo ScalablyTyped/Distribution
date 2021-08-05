@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Layout extends StObject
 object Layout {
   
-  @scala.inline
-  def horizontal: typings.reactWindow.reactWindowStrings.horizontal = "horizontal".asInstanceOf[typings.reactWindow.reactWindowStrings.horizontal]
+  inline def horizontal: typings.reactWindow.reactWindowStrings.horizontal = "horizontal".asInstanceOf[typings.reactWindow.reactWindowStrings.horizontal]
   
-  @scala.inline
-  def vertical: typings.reactWindow.reactWindowStrings.vertical = "vertical".asInstanceOf[typings.reactWindow.reactWindowStrings.vertical]
+  inline def vertical: typings.reactWindow.reactWindowStrings.vertical = "vertical".asInstanceOf[typings.reactWindow.reactWindowStrings.vertical]
 }

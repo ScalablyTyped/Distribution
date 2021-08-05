@@ -12,19 +12,15 @@ trait MultiCacheQueryOptions
 }
 object MultiCacheQueryOptions {
   
-  @scala.inline
-  def apply(): MultiCacheQueryOptions = {
+  inline def apply(): MultiCacheQueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiCacheQueryOptions]
   }
   
-  @scala.inline
-  implicit class MultiCacheQueryOptionsMutableBuilder[Self <: MultiCacheQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MultiCacheQueryOptions](x: Self) {
     
-    @scala.inline
-    def setCacheName(value: java.lang.String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
+    inline def setCacheName(value: java.lang.String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
+    inline def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
   }
 }

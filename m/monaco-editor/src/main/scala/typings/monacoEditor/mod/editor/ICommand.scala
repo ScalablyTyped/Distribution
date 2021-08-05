@@ -24,8 +24,7 @@ trait ICommand extends StObject {
 }
 object ICommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     computeCursorState: (ITextModel, ICursorStateComputerData) => Selection,
     getEditOperations: (ITextModel, IEditOperationBuilder) => Unit
   ): ICommand = {
@@ -33,13 +32,10 @@ object ICommand {
     __obj.asInstanceOf[ICommand]
   }
   
-  @scala.inline
-  implicit class ICommandMutableBuilder[Self <: ICommand] (val x: Self) extends AnyVal {
+  extension [Self <: ICommand](x: Self) {
     
-    @scala.inline
-    def setComputeCursorState(value: (ITextModel, ICursorStateComputerData) => Selection): Self = StObject.set(x, "computeCursorState", js.Any.fromFunction2(value))
+    inline def setComputeCursorState(value: (ITextModel, ICursorStateComputerData) => Selection): Self = StObject.set(x, "computeCursorState", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetEditOperations(value: (ITextModel, IEditOperationBuilder) => Unit): Self = StObject.set(x, "getEditOperations", js.Any.fromFunction2(value))
+    inline def setGetEditOperations(value: (ITextModel, IEditOperationBuilder) => Unit): Self = StObject.set(x, "getEditOperations", js.Any.fromFunction2(value))
   }
 }

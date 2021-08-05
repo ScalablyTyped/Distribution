@@ -34,7 +34,7 @@ object leafNodeMod {
       * @return {!number}
       * @private
       */
-    var compareToLeafNode_ : js.Any = js.native
+    /* private */ var compareToLeafNode_ : js.Any = js.native
     
     /** @inheritDoc */
     def getPredecessorChildName(childName: String, childNode: Node): Null = js.native
@@ -55,11 +55,11 @@ object leafNodeMod {
       */
     def isIndexed(): Boolean = js.native
     
-    var lazyHash_ : js.Any = js.native
+    /* private */ var lazyHash_ : js.Any = js.native
     
-    var priorityNode_ : js.Any = js.native
+    /* private */ var priorityNode_ : js.Any = js.native
     
-    val value_ : js.Any = js.native
+    /* private */ val value_ : js.Any = js.native
     
     /**
       * @inheritDoc
@@ -82,7 +82,6 @@ object leafNodeMod {
     @JSImport("@firebase/database/dist/src/core/snap/LeafNode", "LeafNode.VALUE_TYPE_ORDER")
     @js.native
     def VALUE_TYPE_ORDER: js.Array[String] = js.native
-    @scala.inline
-    def VALUE_TYPE_ORDER_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE_TYPE_ORDER")(x.asInstanceOf[js.Any])
+    inline def VALUE_TYPE_ORDER_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE_TYPE_ORDER")(x.asInstanceOf[js.Any])
   }
 }

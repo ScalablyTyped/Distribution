@@ -10,9 +10,7 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useDeprecated(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useDeprecated")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useDeprecated(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useDeprecated")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def useForceUpdate(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForceUpdate")().asInstanceOf[js.Function0[Unit]]
+  inline def useForceUpdate(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForceUpdate")().asInstanceOf[js.Function0[Unit]]
 }

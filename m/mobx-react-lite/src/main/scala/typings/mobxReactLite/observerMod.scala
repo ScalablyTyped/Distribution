@@ -18,16 +18,11 @@ object observerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P]): FunctionComponent[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any]).asInstanceOf[FunctionComponent[P]]
-  @scala.inline
-  def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P], options: IObserverOptions): FunctionComponent[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[P]]
-  @scala.inline
-  def observer[C /* <: FunctionComponent[js.Any] | (RefForwardingComponent[js.Any, js.Object]) */, Options /* <: IObserverOptions */](baseComponent: C): (C & DisplayName) | (C & (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[js.Any] & RefAttributes[js.Any]]])) = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any]).asInstanceOf[(C & DisplayName) | (C & (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[js.Any] & RefAttributes[js.Any]]]))]
-  @scala.inline
-  def observer[C /* <: FunctionComponent[js.Any] | (RefForwardingComponent[js.Any, js.Object]) */, Options /* <: IObserverOptions */](baseComponent: C, options: Options): (C & DisplayName) | (C & (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[js.Any] & RefAttributes[js.Any]]])) = (^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(C & DisplayName) | (C & (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[js.Any] & RefAttributes[js.Any]]]))]
-  @scala.inline
-  def observer[P /* <: js.Object */, TRef](baseComponent: RefForwardingComponent[TRef, P], options: IObserverOptionsforwardRe): MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[TRef]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[TRef]]]]
+  inline def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P]): FunctionComponent[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any]).asInstanceOf[FunctionComponent[P]]
+  inline def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P], options: IObserverOptions): FunctionComponent[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[P]]
+  inline def observer[C /* <: FunctionComponent[js.Any] | (RefForwardingComponent[js.Any, js.Object]) */, Options /* <: IObserverOptions */](baseComponent: C): (C & DisplayName) | (C & (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[js.Any] & RefAttributes[js.Any]]])) = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any]).asInstanceOf[(C & DisplayName) | (C & (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[js.Any] & RefAttributes[js.Any]]]))]
+  inline def observer[C /* <: FunctionComponent[js.Any] | (RefForwardingComponent[js.Any, js.Object]) */, Options /* <: IObserverOptions */](baseComponent: C, options: Options): (C & DisplayName) | (C & (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[js.Any] & RefAttributes[js.Any]]])) = (^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(C & DisplayName) | (C & (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[js.Any] & RefAttributes[js.Any]]]))]
+  inline def observer[P /* <: js.Object */, TRef](baseComponent: RefForwardingComponent[TRef, P], options: IObserverOptionsforwardRe): MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[TRef]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[TRef]]]]
   
   trait IObserverOptions extends StObject {
     
@@ -35,20 +30,16 @@ object observerMod {
   }
   object IObserverOptions {
     
-    @scala.inline
-    def apply(): IObserverOptions = {
+    inline def apply(): IObserverOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IObserverOptions]
     }
     
-    @scala.inline
-    implicit class IObserverOptionsMutableBuilder[Self <: IObserverOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IObserverOptions](x: Self) {
       
-      @scala.inline
-      def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
+      inline def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForwardRefUndefined: Self = StObject.set(x, "forwardRef", js.undefined)
+      inline def setForwardRefUndefined: Self = StObject.set(x, "forwardRef", js.undefined)
     }
   }
 }

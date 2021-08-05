@@ -33,11 +33,9 @@ object SelectionZone {
   @JSImport("office-ui-fabric-react", "SelectionZone.defaultProps")
   @js.native
   def defaultProps: IsSelectedOnFocus = js.native
-  @scala.inline
-  def defaultProps_=(x: IsSelectedOnFocus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IsSelectedOnFocus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def getDerivedStateFromProps(
+  inline def getDerivedStateFromProps(
     nextProps: typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps,
     prevState: typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState
   ): typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState]

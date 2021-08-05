@@ -13,17 +13,14 @@ trait IKlarnaPaymentMethodDetails
 }
 object IKlarnaPaymentMethodDetails {
   
-  @scala.inline
-  def apply(): IKlarnaPaymentMethodDetails = {
+  inline def apply(): IKlarnaPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("klarna")
     __obj.asInstanceOf[IKlarnaPaymentMethodDetails]
   }
   
-  @scala.inline
-  implicit class IKlarnaPaymentMethodDetailsMutableBuilder[Self <: IKlarnaPaymentMethodDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IKlarnaPaymentMethodDetails](x: Self) {
     
-    @scala.inline
-    def setType(value: klarna): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: klarna): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -23,34 +23,25 @@ trait Issue extends StObject {
 }
 object Issue {
   
-  @scala.inline
-  def apply(): Issue = {
+  inline def apply(): Issue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Issue]
   }
   
-  @scala.inline
-  implicit class IssueMutableBuilder[Self <: Issue] (val x: Self) extends AnyVal {
+  extension [Self <: Issue](x: Self) {
     
-    @scala.inline
-    def setCode(value: NodegroupIssueCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: NodegroupIssueCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setResourceIds(value: StringList): Self = StObject.set(x, "resourceIds", value.asInstanceOf[js.Any])
+    inline def setResourceIds(value: StringList): Self = StObject.set(x, "resourceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdsUndefined: Self = StObject.set(x, "resourceIds", js.undefined)
+    inline def setResourceIdsUndefined: Self = StObject.set(x, "resourceIds", js.undefined)
     
-    @scala.inline
-    def setResourceIdsVarargs(value: String*): Self = StObject.set(x, "resourceIds", js.Array(value :_*))
+    inline def setResourceIdsVarargs(value: String*): Self = StObject.set(x, "resourceIds", js.Array(value :_*))
   }
 }

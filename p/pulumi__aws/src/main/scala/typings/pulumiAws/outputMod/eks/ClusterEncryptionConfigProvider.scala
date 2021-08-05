@@ -13,16 +13,13 @@ trait ClusterEncryptionConfigProvider extends StObject {
 }
 object ClusterEncryptionConfigProvider {
   
-  @scala.inline
-  def apply(keyArn: String): ClusterEncryptionConfigProvider = {
+  inline def apply(keyArn: String): ClusterEncryptionConfigProvider = {
     val __obj = js.Dynamic.literal(keyArn = keyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterEncryptionConfigProvider]
   }
   
-  @scala.inline
-  implicit class ClusterEncryptionConfigProviderMutableBuilder[Self <: ClusterEncryptionConfigProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterEncryptionConfigProvider](x: Self) {
     
-    @scala.inline
-    def setKeyArn(value: String): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
+    inline def setKeyArn(value: String): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Bmp = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Bmp]
+  inline def default(): Bmp = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Bmp]
   
   trait Bmp extends StObject {
     
@@ -29,26 +28,20 @@ object mod {
   }
   object Bmp {
     
-    @scala.inline
-    def apply(constants: MIMEBMP, decoders: Imagexmsbmp, encoders: ImagebmpImagexmsbmp, mime: Imagebmp): Bmp = {
+    inline def apply(constants: MIMEBMP, decoders: Imagexmsbmp, encoders: ImagebmpImagexmsbmp, mime: Imagebmp): Bmp = {
       val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any], decoders = decoders.asInstanceOf[js.Any], encoders = encoders.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bmp]
     }
     
-    @scala.inline
-    implicit class BmpMutableBuilder[Self <: Bmp] (val x: Self) extends AnyVal {
+    extension [Self <: Bmp](x: Self) {
       
-      @scala.inline
-      def setConstants(value: MIMEBMP): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+      inline def setConstants(value: MIMEBMP): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecoders(value: Imagexmsbmp): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
+      inline def setDecoders(value: Imagexmsbmp): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoders(value: ImagebmpImagexmsbmp): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
+      inline def setEncoders(value: ImagebmpImagexmsbmp): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMime(value: Imagebmp): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: Imagebmp): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     }
   }
 }

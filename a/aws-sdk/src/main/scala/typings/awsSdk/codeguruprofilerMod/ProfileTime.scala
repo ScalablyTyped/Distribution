@@ -13,19 +13,15 @@ trait ProfileTime extends StObject {
 }
 object ProfileTime {
   
-  @scala.inline
-  def apply(): ProfileTime = {
+  inline def apply(): ProfileTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProfileTime]
   }
   
-  @scala.inline
-  implicit class ProfileTimeMutableBuilder[Self <: ProfileTime] (val x: Self) extends AnyVal {
+  extension [Self <: ProfileTime](x: Self) {
     
-    @scala.inline
-    def setStart(value: Timestamp): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Timestamp): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

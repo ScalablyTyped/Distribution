@@ -28,37 +28,27 @@ trait CounterOptions extends StObject {
 }
 object CounterOptions {
   
-  @scala.inline
-  def apply(): CounterOptions = {
+  inline def apply(): CounterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CounterOptions]
   }
   
-  @scala.inline
-  implicit class CounterOptionsMutableBuilder[Self <: CounterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CounterOptions](x: Self) {
     
-    @scala.inline
-    def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
+    inline def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
+    inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
     
-    @scala.inline
-    def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+    inline def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+    inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
-    @scala.inline
-    def setPersist_to(value: Double): Self = StObject.set(x, "persist_to", value.asInstanceOf[js.Any])
+    inline def setPersist_to(value: Double): Self = StObject.set(x, "persist_to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersist_toUndefined: Self = StObject.set(x, "persist_to", js.undefined)
+    inline def setPersist_toUndefined: Self = StObject.set(x, "persist_to", js.undefined)
     
-    @scala.inline
-    def setReplicate_to(value: Double): Self = StObject.set(x, "replicate_to", value.asInstanceOf[js.Any])
+    inline def setReplicate_to(value: Double): Self = StObject.set(x, "replicate_to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicate_toUndefined: Self = StObject.set(x, "replicate_to", js.undefined)
+    inline def setReplicate_toUndefined: Self = StObject.set(x, "replicate_to", js.undefined)
   }
 }

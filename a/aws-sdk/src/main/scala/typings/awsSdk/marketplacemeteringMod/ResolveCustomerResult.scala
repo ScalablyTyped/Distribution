@@ -18,25 +18,19 @@ trait ResolveCustomerResult extends StObject {
 }
 object ResolveCustomerResult {
   
-  @scala.inline
-  def apply(): ResolveCustomerResult = {
+  inline def apply(): ResolveCustomerResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolveCustomerResult]
   }
   
-  @scala.inline
-  implicit class ResolveCustomerResultMutableBuilder[Self <: ResolveCustomerResult] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveCustomerResult](x: Self) {
     
-    @scala.inline
-    def setCustomerIdentifier(value: CustomerIdentifier): Self = StObject.set(x, "CustomerIdentifier", value.asInstanceOf[js.Any])
+    inline def setCustomerIdentifier(value: CustomerIdentifier): Self = StObject.set(x, "CustomerIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdentifierUndefined: Self = StObject.set(x, "CustomerIdentifier", js.undefined)
+    inline def setCustomerIdentifierUndefined: Self = StObject.set(x, "CustomerIdentifier", js.undefined)
     
-    @scala.inline
-    def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
+    inline def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductCodeUndefined: Self = StObject.set(x, "ProductCode", js.undefined)
+    inline def setProductCodeUndefined: Self = StObject.set(x, "ProductCode", js.undefined)
   }
 }

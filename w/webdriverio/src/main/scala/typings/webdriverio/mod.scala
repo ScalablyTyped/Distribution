@@ -28,13 +28,11 @@ object mod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def attach(
+  inline def attach(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.AttachSessionOptions */ js.Any
   ): BrowserObject = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(options.asInstanceOf[js.Any]).asInstanceOf[BrowserObject]
   
-  @scala.inline
-  def multiremote(
+  inline def multiremote(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultiRemoteOptions */ js.Any
   ): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultiRemoteBrowserObject */ js.Any
@@ -42,17 +40,13 @@ object mod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultiRemoteBrowserObject */ js.Any
   ]]
   
-  @scala.inline
-  def remote(): js.Promise[BrowserObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("remote")().asInstanceOf[js.Promise[BrowserObject]]
-  @scala.inline
-  def remote(
+  inline def remote(): js.Promise[BrowserObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("remote")().asInstanceOf[js.Promise[BrowserObject]]
+  inline def remote(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RemoteOptions */ js.Any
   ): js.Promise[BrowserObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("remote")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BrowserObject]]
-  @scala.inline
-  def remote(
+  inline def remote(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RemoteOptions */ js.Any,
     modifier: js.Function1[/* repeated */ js.Any, js.Any]
   ): js.Promise[BrowserObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("remote")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BrowserObject]]
-  @scala.inline
-  def remote(options: Unit, modifier: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[BrowserObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("remote")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BrowserObject]]
+  inline def remote(options: Unit, modifier: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[BrowserObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("remote")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BrowserObject]]
 }

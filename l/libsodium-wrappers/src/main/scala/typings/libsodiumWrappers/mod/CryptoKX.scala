@@ -13,19 +13,15 @@ trait CryptoKX extends StObject {
 }
 object CryptoKX {
   
-  @scala.inline
-  def apply(sharedRx: Uint8Array, sharedTx: Uint8Array): CryptoKX = {
+  inline def apply(sharedRx: Uint8Array, sharedTx: Uint8Array): CryptoKX = {
     val __obj = js.Dynamic.literal(sharedRx = sharedRx.asInstanceOf[js.Any], sharedTx = sharedTx.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptoKX]
   }
   
-  @scala.inline
-  implicit class CryptoKXMutableBuilder[Self <: CryptoKX] (val x: Self) extends AnyVal {
+  extension [Self <: CryptoKX](x: Self) {
     
-    @scala.inline
-    def setSharedRx(value: Uint8Array): Self = StObject.set(x, "sharedRx", value.asInstanceOf[js.Any])
+    inline def setSharedRx(value: Uint8Array): Self = StObject.set(x, "sharedRx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedTx(value: Uint8Array): Self = StObject.set(x, "sharedTx", value.asInstanceOf[js.Any])
+    inline def setSharedTx(value: Uint8Array): Self = StObject.set(x, "sharedTx", value.asInstanceOf[js.Any])
   }
 }

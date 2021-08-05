@@ -9,8 +9,7 @@ trait DeleteSegmentInput
      with typings.awsSdkClientPinpointBrowser.typesDeleteSegmentInputMod.DeleteSegmentInput
 object DeleteSegmentInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, SegmentId: String): DeleteSegmentInput = {
+  inline def apply(ApplicationId: String, SegmentId: String): DeleteSegmentInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSegmentInput]
   }

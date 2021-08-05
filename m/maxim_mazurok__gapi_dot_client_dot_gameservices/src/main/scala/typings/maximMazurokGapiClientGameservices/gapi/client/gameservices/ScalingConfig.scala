@@ -23,43 +23,31 @@ trait ScalingConfig extends StObject {
 }
 object ScalingConfig {
   
-  @scala.inline
-  def apply(): ScalingConfig = {
+  inline def apply(): ScalingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScalingConfig]
   }
   
-  @scala.inline
-  implicit class ScalingConfigMutableBuilder[Self <: ScalingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ScalingConfig](x: Self) {
     
-    @scala.inline
-    def setFleetAutoscalerSpec(value: String): Self = StObject.set(x, "fleetAutoscalerSpec", value.asInstanceOf[js.Any])
+    inline def setFleetAutoscalerSpec(value: String): Self = StObject.set(x, "fleetAutoscalerSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetAutoscalerSpecUndefined: Self = StObject.set(x, "fleetAutoscalerSpec", js.undefined)
+    inline def setFleetAutoscalerSpecUndefined: Self = StObject.set(x, "fleetAutoscalerSpec", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSchedules(value: js.Array[Schedule]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
+    inline def setSchedules(value: js.Array[Schedule]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedulesUndefined: Self = StObject.set(x, "schedules", js.undefined)
+    inline def setSchedulesUndefined: Self = StObject.set(x, "schedules", js.undefined)
     
-    @scala.inline
-    def setSchedulesVarargs(value: Schedule*): Self = StObject.set(x, "schedules", js.Array(value :_*))
+    inline def setSchedulesVarargs(value: Schedule*): Self = StObject.set(x, "schedules", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectors(value: js.Array[LabelSelector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    inline def setSelectors(value: js.Array[LabelSelector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+    inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
-    @scala.inline
-    def setSelectorsVarargs(value: LabelSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: LabelSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
   }
 }

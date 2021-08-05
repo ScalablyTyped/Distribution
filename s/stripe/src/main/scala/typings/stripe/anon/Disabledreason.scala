@@ -39,34 +39,25 @@ trait Disabledreason extends StObject {
 }
 object Disabledreason {
   
-  @scala.inline
-  def apply(disabled_reason: String, due_by: Double, fields_needed: js.Array[String]): Disabledreason = {
+  inline def apply(disabled_reason: String, due_by: Double, fields_needed: js.Array[String]): Disabledreason = {
     val __obj = js.Dynamic.literal(disabled_reason = disabled_reason.asInstanceOf[js.Any], due_by = due_by.asInstanceOf[js.Any], fields_needed = fields_needed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Disabledreason]
   }
   
-  @scala.inline
-  implicit class DisabledreasonMutableBuilder[Self <: Disabledreason] (val x: Self) extends AnyVal {
+  extension [Self <: Disabledreason](x: Self) {
     
-    @scala.inline
-    def setDisabled_reason(value: String): Self = StObject.set(x, "disabled_reason", value.asInstanceOf[js.Any])
+    inline def setDisabled_reason(value: String): Self = StObject.set(x, "disabled_reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDue_by(value: Double): Self = StObject.set(x, "due_by", value.asInstanceOf[js.Any])
+    inline def setDue_by(value: Double): Self = StObject.set(x, "due_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields_needed(value: js.Array[String]): Self = StObject.set(x, "fields_needed", value.asInstanceOf[js.Any])
+    inline def setFields_needed(value: js.Array[String]): Self = StObject.set(x, "fields_needed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields_neededVarargs(value: String*): Self = StObject.set(x, "fields_needed", js.Array(value :_*))
+    inline def setFields_neededVarargs(value: String*): Self = StObject.set(x, "fields_needed", js.Array(value :_*))
     
-    @scala.inline
-    def setRequested_capabilities(value: js.Array[String]): Self = StObject.set(x, "requested_capabilities", value.asInstanceOf[js.Any])
+    inline def setRequested_capabilities(value: js.Array[String]): Self = StObject.set(x, "requested_capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequested_capabilitiesUndefined: Self = StObject.set(x, "requested_capabilities", js.undefined)
+    inline def setRequested_capabilitiesUndefined: Self = StObject.set(x, "requested_capabilities", js.undefined)
     
-    @scala.inline
-    def setRequested_capabilitiesVarargs(value: String*): Self = StObject.set(x, "requested_capabilities", js.Array(value :_*))
+    inline def setRequested_capabilitiesVarargs(value: String*): Self = StObject.set(x, "requested_capabilities", js.Array(value :_*))
   }
 }

@@ -19,40 +19,29 @@ trait ManagedZoneDnsSecConfig extends StObject {
 }
 object ManagedZoneDnsSecConfig {
   
-  @scala.inline
-  def apply(): ManagedZoneDnsSecConfig = {
+  inline def apply(): ManagedZoneDnsSecConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedZoneDnsSecConfig]
   }
   
-  @scala.inline
-  implicit class ManagedZoneDnsSecConfigMutableBuilder[Self <: ManagedZoneDnsSecConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedZoneDnsSecConfig](x: Self) {
     
-    @scala.inline
-    def setDefaultKeySpecs(value: js.Array[DnsKeySpec]): Self = StObject.set(x, "defaultKeySpecs", value.asInstanceOf[js.Any])
+    inline def setDefaultKeySpecs(value: js.Array[DnsKeySpec]): Self = StObject.set(x, "defaultKeySpecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultKeySpecsUndefined: Self = StObject.set(x, "defaultKeySpecs", js.undefined)
+    inline def setDefaultKeySpecsUndefined: Self = StObject.set(x, "defaultKeySpecs", js.undefined)
     
-    @scala.inline
-    def setDefaultKeySpecsVarargs(value: DnsKeySpec*): Self = StObject.set(x, "defaultKeySpecs", js.Array(value :_*))
+    inline def setDefaultKeySpecsVarargs(value: DnsKeySpec*): Self = StObject.set(x, "defaultKeySpecs", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNonExistence(value: String): Self = StObject.set(x, "nonExistence", value.asInstanceOf[js.Any])
+    inline def setNonExistence(value: String): Self = StObject.set(x, "nonExistence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonExistenceUndefined: Self = StObject.set(x, "nonExistence", js.undefined)
+    inline def setNonExistenceUndefined: Self = StObject.set(x, "nonExistence", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

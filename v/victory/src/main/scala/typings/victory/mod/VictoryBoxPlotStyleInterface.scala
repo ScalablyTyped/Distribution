@@ -30,73 +30,51 @@ trait VictoryBoxPlotStyleInterface
 }
 object VictoryBoxPlotStyleInterface {
   
-  @scala.inline
-  def apply(): VictoryBoxPlotStyleInterface = {
+  inline def apply(): VictoryBoxPlotStyleInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryBoxPlotStyleInterface]
   }
   
-  @scala.inline
-  implicit class VictoryBoxPlotStyleInterfaceMutableBuilder[Self <: VictoryBoxPlotStyleInterface] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryBoxPlotStyleInterface](x: Self) {
     
-    @scala.inline
-    def setMax(value: VictoryStyleObject): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: VictoryStyleObject): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLabels(value: VictoryStyleObject): Self = StObject.set(x, "maxLabels", value.asInstanceOf[js.Any])
+    inline def setMaxLabels(value: VictoryStyleObject): Self = StObject.set(x, "maxLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLabelsUndefined: Self = StObject.set(x, "maxLabels", js.undefined)
+    inline def setMaxLabelsUndefined: Self = StObject.set(x, "maxLabels", js.undefined)
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMedian(value: VictoryStyleObject): Self = StObject.set(x, "median", value.asInstanceOf[js.Any])
+    inline def setMedian(value: VictoryStyleObject): Self = StObject.set(x, "median", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedianLabels(value: VictoryStyleObject): Self = StObject.set(x, "medianLabels", value.asInstanceOf[js.Any])
+    inline def setMedianLabels(value: VictoryStyleObject): Self = StObject.set(x, "medianLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedianLabelsUndefined: Self = StObject.set(x, "medianLabels", js.undefined)
+    inline def setMedianLabelsUndefined: Self = StObject.set(x, "medianLabels", js.undefined)
     
-    @scala.inline
-    def setMedianUndefined: Self = StObject.set(x, "median", js.undefined)
+    inline def setMedianUndefined: Self = StObject.set(x, "median", js.undefined)
     
-    @scala.inline
-    def setMin(value: VictoryStyleObject): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: VictoryStyleObject): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLabels(value: VictoryStyleObject): Self = StObject.set(x, "minLabels", value.asInstanceOf[js.Any])
+    inline def setMinLabels(value: VictoryStyleObject): Self = StObject.set(x, "minLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLabelsUndefined: Self = StObject.set(x, "minLabels", js.undefined)
+    inline def setMinLabelsUndefined: Self = StObject.set(x, "minLabels", js.undefined)
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setQ1(value: VictoryStyleObject): Self = StObject.set(x, "q1", value.asInstanceOf[js.Any])
+    inline def setQ1(value: VictoryStyleObject): Self = StObject.set(x, "q1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ1Labels(value: VictoryStyleObject): Self = StObject.set(x, "q1Labels", value.asInstanceOf[js.Any])
+    inline def setQ1Labels(value: VictoryStyleObject): Self = StObject.set(x, "q1Labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ1LabelsUndefined: Self = StObject.set(x, "q1Labels", js.undefined)
+    inline def setQ1LabelsUndefined: Self = StObject.set(x, "q1Labels", js.undefined)
     
-    @scala.inline
-    def setQ1Undefined: Self = StObject.set(x, "q1", js.undefined)
+    inline def setQ1Undefined: Self = StObject.set(x, "q1", js.undefined)
     
-    @scala.inline
-    def setQ3(value: VictoryStyleObject): Self = StObject.set(x, "q3", value.asInstanceOf[js.Any])
+    inline def setQ3(value: VictoryStyleObject): Self = StObject.set(x, "q3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ3Labels(value: VictoryStyleObject): Self = StObject.set(x, "q3Labels", value.asInstanceOf[js.Any])
+    inline def setQ3Labels(value: VictoryStyleObject): Self = StObject.set(x, "q3Labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ3LabelsUndefined: Self = StObject.set(x, "q3Labels", js.undefined)
+    inline def setQ3LabelsUndefined: Self = StObject.set(x, "q3Labels", js.undefined)
     
-    @scala.inline
-    def setQ3Undefined: Self = StObject.set(x, "q3", js.undefined)
+    inline def setQ3Undefined: Self = StObject.set(x, "q3", js.undefined)
   }
 }

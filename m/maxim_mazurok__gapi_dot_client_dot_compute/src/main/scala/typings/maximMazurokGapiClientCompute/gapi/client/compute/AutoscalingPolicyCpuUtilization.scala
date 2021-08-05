@@ -19,19 +19,15 @@ trait AutoscalingPolicyCpuUtilization extends StObject {
 }
 object AutoscalingPolicyCpuUtilization {
   
-  @scala.inline
-  def apply(): AutoscalingPolicyCpuUtilization = {
+  inline def apply(): AutoscalingPolicyCpuUtilization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoscalingPolicyCpuUtilization]
   }
   
-  @scala.inline
-  implicit class AutoscalingPolicyCpuUtilizationMutableBuilder[Self <: AutoscalingPolicyCpuUtilization] (val x: Self) extends AnyVal {
+  extension [Self <: AutoscalingPolicyCpuUtilization](x: Self) {
     
-    @scala.inline
-    def setUtilizationTarget(value: Double): Self = StObject.set(x, "utilizationTarget", value.asInstanceOf[js.Any])
+    inline def setUtilizationTarget(value: Double): Self = StObject.set(x, "utilizationTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilizationTargetUndefined: Self = StObject.set(x, "utilizationTarget", js.undefined)
+    inline def setUtilizationTargetUndefined: Self = StObject.set(x, "utilizationTarget", js.undefined)
   }
 }

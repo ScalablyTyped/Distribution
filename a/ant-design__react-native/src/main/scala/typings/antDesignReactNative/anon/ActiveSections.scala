@@ -10,19 +10,15 @@ trait ActiveSections extends StObject {
 }
 object ActiveSections {
   
-  @scala.inline
-  def apply(activeSections: js.Array[Double]): ActiveSections = {
+  inline def apply(activeSections: js.Array[Double]): ActiveSections = {
     val __obj = js.Dynamic.literal(activeSections = activeSections.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveSections]
   }
   
-  @scala.inline
-  implicit class ActiveSectionsMutableBuilder[Self <: ActiveSections] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveSections](x: Self) {
     
-    @scala.inline
-    def setActiveSections(value: js.Array[Double]): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])
+    inline def setActiveSections(value: js.Array[Double]): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveSectionsVarargs(value: Double*): Self = StObject.set(x, "activeSections", js.Array(value :_*))
+    inline def setActiveSectionsVarargs(value: Double*): Self = StObject.set(x, "activeSections", js.Array(value :_*))
   }
 }

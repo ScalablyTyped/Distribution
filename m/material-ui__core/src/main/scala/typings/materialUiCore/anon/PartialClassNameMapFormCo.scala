@@ -17,37 +17,27 @@ trait PartialClassNameMapFormCo extends StObject {
 }
 object PartialClassNameMapFormCo {
   
-  @scala.inline
-  def apply(): PartialClassNameMapFormCo = {
+  inline def apply(): PartialClassNameMapFormCo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapFormCo]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapFormCoMutableBuilder[Self <: PartialClassNameMapFormCo] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapFormCo](x: Self) {
     
-    @scala.inline
-    def setFullWidth(value: String): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+    inline def setFullWidth(value: String): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+    inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
-    @scala.inline
-    def setMarginDense(value: String): Self = StObject.set(x, "marginDense", value.asInstanceOf[js.Any])
+    inline def setMarginDense(value: String): Self = StObject.set(x, "marginDense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginDenseUndefined: Self = StObject.set(x, "marginDense", js.undefined)
+    inline def setMarginDenseUndefined: Self = StObject.set(x, "marginDense", js.undefined)
     
-    @scala.inline
-    def setMarginNormal(value: String): Self = StObject.set(x, "marginNormal", value.asInstanceOf[js.Any])
+    inline def setMarginNormal(value: String): Self = StObject.set(x, "marginNormal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginNormalUndefined: Self = StObject.set(x, "marginNormal", js.undefined)
+    inline def setMarginNormalUndefined: Self = StObject.set(x, "marginNormal", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait SchemaProvidedSoftwareCatalog extends StObject {
 }
 object SchemaProvidedSoftwareCatalog {
   
-  @scala.inline
-  def apply(): SchemaProvidedSoftwareCatalog = {
+  inline def apply(): SchemaProvidedSoftwareCatalog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProvidedSoftwareCatalog]
   }
   
-  @scala.inline
-  implicit class SchemaProvidedSoftwareCatalogMutableBuilder[Self <: SchemaProvidedSoftwareCatalog] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProvidedSoftwareCatalog](x: Self) {
     
-    @scala.inline
-    def setOrchestratorVersion(value: String): Self = StObject.set(x, "orchestratorVersion", value.asInstanceOf[js.Any])
+    inline def setOrchestratorVersion(value: String): Self = StObject.set(x, "orchestratorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrchestratorVersionUndefined: Self = StObject.set(x, "orchestratorVersion", js.undefined)
+    inline def setOrchestratorVersionUndefined: Self = StObject.set(x, "orchestratorVersion", js.undefined)
   }
 }

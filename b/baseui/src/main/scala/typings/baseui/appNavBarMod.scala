@@ -40,21 +40,16 @@ object appNavBarMod {
     @js.native
     val ^ : POSITION = js.native
     
-    @scala.inline
-    implicit class POSITIONMutableBuilder[Self <: POSITION] (val x: Self) extends AnyVal {
+    extension [Self <: POSITION](x: Self) {
       
-      @scala.inline
-      def setHorizontal(value: horizontal): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: horizontal): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertical(value: vertical): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: vertical): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  def setItemActive(items: js.Array[NavItemT], item: NavItemT): js.Array[NavItemT] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItemActive")(items.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[NavItemT]]
-  @scala.inline
-  def setItemActive(
+  inline def setItemActive(items: js.Array[NavItemT], item: NavItemT): js.Array[NavItemT] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItemActive")(items.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[NavItemT]]
+  inline def setItemActive(
     items: js.Array[NavItemT],
     item: NavItemT,
     getUniqueueIdentifier: js.Function1[/* currentItem */ NavItemT, String | Double]
@@ -81,49 +76,36 @@ object appNavBarMod {
   }
   object AppNavBarPropsT {
     
-    @scala.inline
-    def apply(): AppNavBarPropsT = {
+    inline def apply(): AppNavBarPropsT = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppNavBarPropsT]
     }
     
-    @scala.inline
-    implicit class AppNavBarPropsTMutableBuilder[Self <: AppNavBarPropsT] (val x: Self) extends AnyVal {
+    extension [Self <: AppNavBarPropsT](x: Self) {
       
-      @scala.inline
-      def setIsMainItemActive(value: /* item */ NavItemT => Boolean): Self = StObject.set(x, "isMainItemActive", js.Any.fromFunction1(value))
+      inline def setIsMainItemActive(value: /* item */ NavItemT => Boolean): Self = StObject.set(x, "isMainItemActive", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsMainItemActiveUndefined: Self = StObject.set(x, "isMainItemActive", js.undefined)
+      inline def setIsMainItemActiveUndefined: Self = StObject.set(x, "isMainItemActive", js.undefined)
       
-      @scala.inline
-      def setMainItems(value: js.Array[NavItemT]): Self = StObject.set(x, "mainItems", value.asInstanceOf[js.Any])
+      inline def setMainItems(value: js.Array[NavItemT]): Self = StObject.set(x, "mainItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainItemsUndefined: Self = StObject.set(x, "mainItems", js.undefined)
+      inline def setMainItemsUndefined: Self = StObject.set(x, "mainItems", js.undefined)
       
-      @scala.inline
-      def setMainItemsVarargs(value: NavItemT*): Self = StObject.set(x, "mainItems", js.Array(value :_*))
+      inline def setMainItemsVarargs(value: NavItemT*): Self = StObject.set(x, "mainItems", js.Array(value :_*))
       
-      @scala.inline
-      def setMapItemToNode(value: /* item */ NavItemT => ReactNode): Self = StObject.set(x, "mapItemToNode", js.Any.fromFunction1(value))
+      inline def setMapItemToNode(value: /* item */ NavItemT => ReactNode): Self = StObject.set(x, "mapItemToNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapItemToNodeUndefined: Self = StObject.set(x, "mapItemToNode", js.undefined)
+      inline def setMapItemToNodeUndefined: Self = StObject.set(x, "mapItemToNode", js.undefined)
       
-      @scala.inline
-      def setOnMainItemSelect(
+      inline def setOnMainItemSelect(
         value: /* item */ NavItemT => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ js.Any
       ): Self = StObject.set(x, "onMainItemSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMainItemSelectUndefined: Self = StObject.set(x, "onMainItemSelect", js.undefined)
+      inline def setOnMainItemSelectUndefined: Self = StObject.set(x, "onMainItemSelect", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -145,56 +127,40 @@ object appNavBarMod {
   }
   object NavItemT {
     
-    @scala.inline
-    def apply(label: String): NavItemT = {
+    inline def apply(label: String): NavItemT = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavItemT]
     }
     
-    @scala.inline
-    implicit class NavItemTMutableBuilder[Self <: NavItemT] (val x: Self) extends AnyVal {
+    extension [Self <: NavItemT](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setChildren(value: js.Array[NavItemT]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[NavItemT]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: NavItemT*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: NavItemT*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setIcon(value: ComponentType[js.Any]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ComponentType[js.Any]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavExitIcon(value: ComponentType[js.Any]): Self = StObject.set(x, "navExitIcon", value.asInstanceOf[js.Any])
+      inline def setNavExitIcon(value: ComponentType[js.Any]): Self = StObject.set(x, "navExitIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavExitIconUndefined: Self = StObject.set(x, "navExitIcon", js.undefined)
+      inline def setNavExitIconUndefined: Self = StObject.set(x, "navExitIcon", js.undefined)
       
-      @scala.inline
-      def setNavPosition(value: Desktop): Self = StObject.set(x, "navPosition", value.asInstanceOf[js.Any])
+      inline def setNavPosition(value: Desktop): Self = StObject.set(x, "navPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavPositionUndefined: Self = StObject.set(x, "navPosition", js.undefined)
+      inline def setNavPositionUndefined: Self = StObject.set(x, "navPosition", js.undefined)
     }
   }
   
@@ -217,49 +183,36 @@ object appNavBarMod {
   }
   object UserMenuPropsT {
     
-    @scala.inline
-    def apply(): UserMenuPropsT = {
+    inline def apply(): UserMenuPropsT = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserMenuPropsT]
     }
     
-    @scala.inline
-    implicit class UserMenuPropsTMutableBuilder[Self <: UserMenuPropsT] (val x: Self) extends AnyVal {
+    extension [Self <: UserMenuPropsT](x: Self) {
       
-      @scala.inline
-      def setOnUserItemSelect(
+      inline def setOnUserItemSelect(
         value: /* item */ NavItemT => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ js.Any
       ): Self = StObject.set(x, "onUserItemSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUserItemSelectUndefined: Self = StObject.set(x, "onUserItemSelect", js.undefined)
+      inline def setOnUserItemSelectUndefined: Self = StObject.set(x, "onUserItemSelect", js.undefined)
       
-      @scala.inline
-      def setUserImgUrl(value: String): Self = StObject.set(x, "userImgUrl", value.asInstanceOf[js.Any])
+      inline def setUserImgUrl(value: String): Self = StObject.set(x, "userImgUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserImgUrlUndefined: Self = StObject.set(x, "userImgUrl", js.undefined)
+      inline def setUserImgUrlUndefined: Self = StObject.set(x, "userImgUrl", js.undefined)
       
-      @scala.inline
-      def setUserItems(value: js.Array[NavItemT]): Self = StObject.set(x, "userItems", value.asInstanceOf[js.Any])
+      inline def setUserItems(value: js.Array[NavItemT]): Self = StObject.set(x, "userItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserItemsUndefined: Self = StObject.set(x, "userItems", js.undefined)
+      inline def setUserItemsUndefined: Self = StObject.set(x, "userItems", js.undefined)
       
-      @scala.inline
-      def setUserItemsVarargs(value: NavItemT*): Self = StObject.set(x, "userItems", js.Array(value :_*))
+      inline def setUserItemsVarargs(value: NavItemT*): Self = StObject.set(x, "userItems", js.Array(value :_*))
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameSubtitle(value: ReactNode): Self = StObject.set(x, "usernameSubtitle", value.asInstanceOf[js.Any])
+      inline def setUsernameSubtitle(value: ReactNode): Self = StObject.set(x, "usernameSubtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameSubtitleUndefined: Self = StObject.set(x, "usernameSubtitle", js.undefined)
+      inline def setUsernameSubtitleUndefined: Self = StObject.set(x, "usernameSubtitle", js.undefined)
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
 }

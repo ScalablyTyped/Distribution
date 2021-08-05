@@ -24,20 +24,16 @@ object sideNavItemMod extends Shortcut {
   }
   object SideNavItemProps {
     
-    @scala.inline
-    def apply(): SideNavItemProps = {
+    inline def apply(): SideNavItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SideNavItemProps]
     }
     
-    @scala.inline
-    implicit class SideNavItemPropsMutableBuilder[Self <: SideNavItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: SideNavItemProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
   

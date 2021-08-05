@@ -13,19 +13,15 @@ trait RegisterTaskWithMaintenanceWindowResult extends StObject {
 }
 object RegisterTaskWithMaintenanceWindowResult {
   
-  @scala.inline
-  def apply(): RegisterTaskWithMaintenanceWindowResult = {
+  inline def apply(): RegisterTaskWithMaintenanceWindowResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterTaskWithMaintenanceWindowResult]
   }
   
-  @scala.inline
-  implicit class RegisterTaskWithMaintenanceWindowResultMutableBuilder[Self <: RegisterTaskWithMaintenanceWindowResult] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterTaskWithMaintenanceWindowResult](x: Self) {
     
-    @scala.inline
-    def setWindowTaskId(value: MaintenanceWindowTaskId): Self = StObject.set(x, "WindowTaskId", value.asInstanceOf[js.Any])
+    inline def setWindowTaskId(value: MaintenanceWindowTaskId): Self = StObject.set(x, "WindowTaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowTaskIdUndefined: Self = StObject.set(x, "WindowTaskId", js.undefined)
+    inline def setWindowTaskIdUndefined: Self = StObject.set(x, "WindowTaskId", js.undefined)
   }
 }

@@ -24,8 +24,7 @@ object typesMod {
   }
   object NavigationStackScreenProps {
     
-    @scala.inline
-    def apply[Params, ScreenProps](
+    inline def apply[Params, ScreenProps](
       navigation: StackNavigationProp[NavigationRoute[NavigationParams], Params],
       screenProps: ScreenProps,
       theme: SupportedThemes
@@ -34,17 +33,13 @@ object typesMod {
       __obj.asInstanceOf[NavigationStackScreenProps[Params, ScreenProps]]
     }
     
-    @scala.inline
-    implicit class NavigationStackScreenPropsMutableBuilder[Self <: NavigationStackScreenProps[?, ?], Params, ScreenProps] (val x: Self & (NavigationStackScreenProps[Params, ScreenProps])) extends AnyVal {
+    extension [Self <: NavigationStackScreenProps[?, ?], Params, ScreenProps](x: Self & (NavigationStackScreenProps[Params, ScreenProps])) {
       
-      @scala.inline
-      def setNavigation(value: StackNavigationProp[NavigationRoute[NavigationParams], Params]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: StackNavigationProp[NavigationRoute[NavigationParams], Params]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+      inline def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: SupportedThemes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: SupportedThemes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
 }

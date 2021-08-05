@@ -20,34 +20,25 @@ trait TurnServerConfig extends StObject {
 }
 object TurnServerConfig {
   
-  @scala.inline
-  def apply(url: String): TurnServerConfig = {
+  inline def apply(url: String): TurnServerConfig = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TurnServerConfig]
   }
   
-  @scala.inline
-  implicit class TurnServerConfigMutableBuilder[Self <: TurnServerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TurnServerConfig](x: Self) {
     
-    @scala.inline
-    def setCredential(value: String | RTCOAuthCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: String | RTCOAuthCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialType(value: RTCIceCredentialType): Self = StObject.set(x, "credentialType", value.asInstanceOf[js.Any])
+    inline def setCredentialType(value: RTCIceCredentialType): Self = StObject.set(x, "credentialType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialTypeUndefined: Self = StObject.set(x, "credentialType", js.undefined)
+    inline def setCredentialTypeUndefined: Self = StObject.set(x, "credentialType", js.undefined)
     
-    @scala.inline
-    def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
+    inline def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

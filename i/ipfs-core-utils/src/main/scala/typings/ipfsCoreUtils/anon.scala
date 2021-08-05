@@ -15,26 +15,20 @@ object anon {
   }
   object Base {
     
-    @scala.inline
-    def apply(): Base = {
+    inline def apply(): Base = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Base]
     }
     
-    @scala.inline
-    implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+    extension [Self <: Base](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
+      inline def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpgradeUndefined: Self = StObject.set(x, "upgrade", js.undefined)
+      inline def setUpgradeUndefined: Self = StObject.set(x, "upgrade", js.undefined)
     }
   }
   
@@ -46,23 +40,18 @@ object anon {
   }
   object Cid {
     
-    @scala.inline
-    def apply(cid: ^): Cid = {
+    inline def apply(cid: ^): Cid = {
       val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cid]
     }
     
-    @scala.inline
-    implicit class CidMutableBuilder[Self <: Cid] (val x: Self) extends AnyVal {
+    extension [Self <: Cid](x: Self) {
       
-      @scala.inline
-      def setCid(value: ^): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: ^): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
 }

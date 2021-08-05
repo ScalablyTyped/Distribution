@@ -16,17 +16,14 @@ trait PredefinedArchiveLayoutOptions
 }
 object PredefinedArchiveLayoutOptions {
   
-  @scala.inline
-  def apply(`type`: bestFit | pip | verticalPresentation | horizontalPresentation): PredefinedArchiveLayoutOptions = {
+  inline def apply(`type`: bestFit | pip | verticalPresentation | horizontalPresentation): PredefinedArchiveLayoutOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredefinedArchiveLayoutOptions]
   }
   
-  @scala.inline
-  implicit class PredefinedArchiveLayoutOptionsMutableBuilder[Self <: PredefinedArchiveLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PredefinedArchiveLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setType(value: bestFit | pip | verticalPresentation | horizontalPresentation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: bestFit | pip | verticalPresentation | horizontalPresentation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

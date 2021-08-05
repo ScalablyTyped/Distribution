@@ -19,8 +19,7 @@ trait MeshOffsetParams
 }
 object MeshOffsetParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object MeshOffsetParams {
     __obj.asInstanceOf[MeshOffsetParams]
   }
   
-  @scala.inline
-  implicit class MeshOffsetParamsMutableBuilder[Self <: MeshOffsetParams] (val x: Self) extends AnyVal {
+  extension [Self <: MeshOffsetParams](x: Self) {
     
-    @scala.inline
-    def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
+    inline def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
+    inline def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
   }
 }

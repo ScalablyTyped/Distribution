@@ -15,19 +15,15 @@ trait Concurrency
 }
 object Concurrency {
   
-  @scala.inline
-  def apply(concurrency: StringDictionary[OrgTeamConcurrencyValues], timestamp: Double): Concurrency = {
+  inline def apply(concurrency: StringDictionary[OrgTeamConcurrencyValues], timestamp: Double): Concurrency = {
     val __obj = js.Dynamic.literal(concurrency = concurrency.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Concurrency]
   }
   
-  @scala.inline
-  implicit class ConcurrencyMutableBuilder[Self <: Concurrency] (val x: Self) extends AnyVal {
+  extension [Self <: Concurrency](x: Self) {
     
-    @scala.inline
-    def setConcurrency(value: StringDictionary[OrgTeamConcurrencyValues]): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+    inline def setConcurrency(value: StringDictionary[OrgTeamConcurrencyValues]): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

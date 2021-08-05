@@ -23,31 +23,23 @@ trait MaintenanceWindowTaskTaskInvocationParametersLambdaParameters extends StOb
 }
 object MaintenanceWindowTaskTaskInvocationParametersLambdaParameters {
   
-  @scala.inline
-  def apply(): MaintenanceWindowTaskTaskInvocationParametersLambdaParameters = {
+  inline def apply(): MaintenanceWindowTaskTaskInvocationParametersLambdaParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaintenanceWindowTaskTaskInvocationParametersLambdaParameters]
   }
   
-  @scala.inline
-  implicit class MaintenanceWindowTaskTaskInvocationParametersLambdaParametersMutableBuilder[Self <: MaintenanceWindowTaskTaskInvocationParametersLambdaParameters] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceWindowTaskTaskInvocationParametersLambdaParameters](x: Self) {
     
-    @scala.inline
-    def setClientContext(value: String): Self = StObject.set(x, "clientContext", value.asInstanceOf[js.Any])
+    inline def setClientContext(value: String): Self = StObject.set(x, "clientContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientContextUndefined: Self = StObject.set(x, "clientContext", js.undefined)
+    inline def setClientContextUndefined: Self = StObject.set(x, "clientContext", js.undefined)
     
-    @scala.inline
-    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
+    inline def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
   }
 }

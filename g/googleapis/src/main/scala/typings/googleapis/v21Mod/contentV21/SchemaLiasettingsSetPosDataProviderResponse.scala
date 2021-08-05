@@ -14,19 +14,15 @@ trait SchemaLiasettingsSetPosDataProviderResponse extends StObject {
 }
 object SchemaLiasettingsSetPosDataProviderResponse {
   
-  @scala.inline
-  def apply(): SchemaLiasettingsSetPosDataProviderResponse = {
+  inline def apply(): SchemaLiasettingsSetPosDataProviderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiasettingsSetPosDataProviderResponse]
   }
   
-  @scala.inline
-  implicit class SchemaLiasettingsSetPosDataProviderResponseMutableBuilder[Self <: SchemaLiasettingsSetPosDataProviderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiasettingsSetPosDataProviderResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

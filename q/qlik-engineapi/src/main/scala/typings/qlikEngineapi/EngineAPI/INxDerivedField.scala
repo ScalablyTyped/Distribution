@@ -44,31 +44,23 @@ trait INxDerivedField extends StObject {
 }
 object INxDerivedField {
   
-  @scala.inline
-  def apply(qExpr: String, qId: String, qMethod: String, qName: String, qTags: js.Array[String]): INxDerivedField = {
+  inline def apply(qExpr: String, qId: String, qMethod: String, qName: String, qTags: js.Array[String]): INxDerivedField = {
     val __obj = js.Dynamic.literal(qExpr = qExpr.asInstanceOf[js.Any], qId = qId.asInstanceOf[js.Any], qMethod = qMethod.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxDerivedField]
   }
   
-  @scala.inline
-  implicit class INxDerivedFieldMutableBuilder[Self <: INxDerivedField] (val x: Self) extends AnyVal {
+  extension [Self <: INxDerivedField](x: Self) {
     
-    @scala.inline
-    def setQExpr(value: String): Self = StObject.set(x, "qExpr", value.asInstanceOf[js.Any])
+    inline def setQExpr(value: String): Self = StObject.set(x, "qExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
+    inline def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMethod(value: String): Self = StObject.set(x, "qMethod", value.asInstanceOf[js.Any])
+    inline def setQMethod(value: String): Self = StObject.set(x, "qMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
+    inline def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
   }
 }

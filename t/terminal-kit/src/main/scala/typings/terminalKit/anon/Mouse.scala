@@ -15,25 +15,19 @@ trait Mouse extends StObject {
 }
 object Mouse {
   
-  @scala.inline
-  def apply(): Mouse = {
+  inline def apply(): Mouse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mouse]
   }
   
-  @scala.inline
-  implicit class MouseMutableBuilder[Self <: Mouse] (val x: Self) extends AnyVal {
+  extension [Self <: Mouse](x: Self) {
     
-    @scala.inline
-    def setMouse(value: button | drag | motion): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
+    inline def setMouse(value: button | drag | motion): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
+    inline def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
     
-    @scala.inline
-    def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
+    inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
+    inline def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
   }
 }

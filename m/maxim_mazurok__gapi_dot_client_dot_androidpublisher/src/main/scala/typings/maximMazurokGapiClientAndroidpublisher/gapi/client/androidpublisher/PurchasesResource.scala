@@ -14,8 +14,7 @@ trait PurchasesResource extends StObject {
 }
 object PurchasesResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     products: ProductsResource,
     subscriptions: SubscriptionsResource,
     voidedpurchases: VoidedpurchasesResource
@@ -24,16 +23,12 @@ object PurchasesResource {
     __obj.asInstanceOf[PurchasesResource]
   }
   
-  @scala.inline
-  implicit class PurchasesResourceMutableBuilder[Self <: PurchasesResource] (val x: Self) extends AnyVal {
+  extension [Self <: PurchasesResource](x: Self) {
     
-    @scala.inline
-    def setProducts(value: ProductsResource): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    inline def setProducts(value: ProductsResource): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptions(value: SubscriptionsResource): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+    inline def setSubscriptions(value: SubscriptionsResource): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoidedpurchases(value: VoidedpurchasesResource): Self = StObject.set(x, "voidedpurchases", value.asInstanceOf[js.Any])
+    inline def setVoidedpurchases(value: VoidedpurchasesResource): Self = StObject.set(x, "voidedpurchases", value.asInstanceOf[js.Any])
   }
 }

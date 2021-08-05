@@ -51,55 +51,39 @@ trait SyncOptions extends StObject {
 }
 object SyncOptions {
   
-  @scala.inline
-  def apply(): SyncOptions = {
+  inline def apply(): SyncOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyncOptions]
   }
   
-  @scala.inline
-  implicit class SyncOptionsMutableBuilder[Self <: SyncOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SyncOptions](x: Self) {
     
-    @scala.inline
-    def setAlter(value: Boolean): Self = StObject.set(x, "alter", value.asInstanceOf[js.Any])
+    inline def setAlter(value: Boolean): Self = StObject.set(x, "alter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlterUndefined: Self = StObject.set(x, "alter", js.undefined)
+    inline def setAlterUndefined: Self = StObject.set(x, "alter", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setHooks(value: Boolean): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: Boolean): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
-    @scala.inline
-    def setLogging(value: js.Function | Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: js.Function | Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
-    @scala.inline
-    def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
-    @scala.inline
-    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setSearchPath(value: String): Self = StObject.set(x, "searchPath", value.asInstanceOf[js.Any])
+    inline def setSearchPath(value: String): Self = StObject.set(x, "searchPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchPathUndefined: Self = StObject.set(x, "searchPath", js.undefined)
+    inline def setSearchPathUndefined: Self = StObject.set(x, "searchPath", js.undefined)
   }
 }

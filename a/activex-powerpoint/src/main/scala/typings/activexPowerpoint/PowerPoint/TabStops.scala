@@ -18,13 +18,12 @@ trait TabStops extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.TabStops_typekey")
+  /* private */ @JSName("PowerPoint.TabStops_typekey")
   var PowerPointDotTabStops_typekey: TabStops
 }
 object TabStops {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (PpTabStopType, Double) => TabStop,
     Application: Application,
     Count: Double,
@@ -38,28 +37,20 @@ object TabStops {
     __obj.asInstanceOf[TabStops]
   }
   
-  @scala.inline
-  implicit class TabStopsMutableBuilder[Self <: TabStops] (val x: Self) extends AnyVal {
+  extension [Self <: TabStops](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (PpTabStopType, Double) => TabStop): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (PpTabStopType, Double) => TabStop): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSpacing(value: Double): Self = StObject.set(x, "DefaultSpacing", value.asInstanceOf[js.Any])
+    inline def setDefaultSpacing(value: Double): Self = StObject.set(x, "DefaultSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => TabStop): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => TabStop): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotTabStops_typekey(value: TabStops): Self = StObject.set(x, "PowerPoint.TabStops_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotTabStops_typekey(value: TabStops): Self = StObject.set(x, "PowerPoint.TabStops_typekey", value.asInstanceOf[js.Any])
   }
 }

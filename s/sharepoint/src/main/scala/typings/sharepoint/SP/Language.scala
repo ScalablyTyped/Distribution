@@ -16,8 +16,7 @@ trait Language
 }
 object Language {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -31,16 +30,12 @@ object Language {
     __obj.asInstanceOf[Language]
   }
   
-  @scala.inline
-  implicit class LanguageMutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
+  extension [Self <: Language](x: Self) {
     
-    @scala.inline
-    def setGet_displayName(value: () => String): Self = StObject.set(x, "get_displayName", js.Any.fromFunction0(value))
+    inline def setGet_displayName(value: () => String): Self = StObject.set(x, "get_displayName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_languageTag(value: () => String): Self = StObject.set(x, "get_languageTag", js.Any.fromFunction0(value))
+    inline def setGet_languageTag(value: () => String): Self = StObject.set(x, "get_languageTag", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_lcid(value: () => Double): Self = StObject.set(x, "get_lcid", js.Any.fromFunction0(value))
+    inline def setGet_lcid(value: () => Double): Self = StObject.set(x, "get_lcid", js.Any.fromFunction0(value))
   }
 }

@@ -51,8 +51,7 @@ trait BridgeBlindTransfer
 }
 object BridgeBlindTransfer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     application: String,
     bridge: Bridge,
     channel: Channel,
@@ -68,37 +67,26 @@ object BridgeBlindTransfer {
     __obj.asInstanceOf[BridgeBlindTransfer]
   }
   
-  @scala.inline
-  implicit class BridgeBlindTransferMutableBuilder[Self <: BridgeBlindTransfer] (val x: Self) extends AnyVal {
+  extension [Self <: BridgeBlindTransfer](x: Self) {
     
-    @scala.inline
-    def setBridge(value: Bridge): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
+    inline def setBridge(value: Bridge): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExten(value: String): Self = StObject.set(x, "exten", value.asInstanceOf[js.Any])
+    inline def setExten(value: String): Self = StObject.set(x, "exten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_external(value: Boolean): Self = StObject.set(x, "is_external", value.asInstanceOf[js.Any])
+    inline def setIs_external(value: Boolean): Self = StObject.set(x, "is_external", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace_channel(value: Channel): Self = StObject.set(x, "replace_channel", value.asInstanceOf[js.Any])
+    inline def setReplace_channel(value: Channel): Self = StObject.set(x, "replace_channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace_channelUndefined: Self = StObject.set(x, "replace_channel", js.undefined)
+    inline def setReplace_channelUndefined: Self = StObject.set(x, "replace_channel", js.undefined)
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferee(value: Channel): Self = StObject.set(x, "transferee", value.asInstanceOf[js.Any])
+    inline def setTransferee(value: Channel): Self = StObject.set(x, "transferee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransfereeUndefined: Self = StObject.set(x, "transferee", js.undefined)
+    inline def setTransfereeUndefined: Self = StObject.set(x, "transferee", js.undefined)
   }
 }

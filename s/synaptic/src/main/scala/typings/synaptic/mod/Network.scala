@@ -140,15 +140,13 @@ object Network {
   /**
     * Rebuild a network that has been stored in a json using the method toJSON().
     */
-  @scala.inline
-  def fromJSON(exported: js.Any): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(exported.asInstanceOf[js.Any]).asInstanceOf[Network]
+  inline def fromJSON(exported: js.Any): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(exported.asInstanceOf[js.Any]).asInstanceOf[Network]
   
   /**
     * Creates a static String to store the source code of the functions that are identical for all the workers (train, _trainSet, test).
     * @returns Source code that can train a network inside a worker.
     */
-  @scala.inline
-  def getWorkerSharedFunctions(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkerSharedFunctions")().asInstanceOf[String]
+  inline def getWorkerSharedFunctions(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkerSharedFunctions")().asInstanceOf[String]
   
   trait Optimized extends StObject {
     
@@ -158,20 +156,16 @@ object Network {
   }
   object Optimized {
     
-    @scala.inline
-    def apply(memory: Float64Array, ownership: Float64Array => Unit): Optimized = {
+    inline def apply(memory: Float64Array, ownership: Float64Array => Unit): Optimized = {
       val __obj = js.Dynamic.literal(memory = memory.asInstanceOf[js.Any], ownership = js.Any.fromFunction1(ownership))
       __obj.asInstanceOf[Optimized]
     }
     
-    @scala.inline
-    implicit class OptimizedMutableBuilder[Self <: Optimized] (val x: Self) extends AnyVal {
+    extension [Self <: Optimized](x: Self) {
       
-      @scala.inline
-      def setMemory(value: Float64Array): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Float64Array): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnership(value: Float64Array => Unit): Self = StObject.set(x, "ownership", js.Any.fromFunction1(value))
+      inline def setOwnership(value: Float64Array => Unit): Self = StObject.set(x, "ownership", js.Any.fromFunction1(value))
     }
   }
   
@@ -185,26 +179,20 @@ object Network {
   }
   object Options {
     
-    @scala.inline
-    def apply(hidden: js.Array[Layer], input: Layer, output: Layer): Options = {
+    inline def apply(hidden: js.Array[Layer], input: Layer, output: Layer): Options = {
       val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHidden(value: js.Array[Layer]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: js.Array[Layer]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenVarargs(value: Layer*): Self = StObject.set(x, "hidden", js.Array(value :_*))
+      inline def setHiddenVarargs(value: Layer*): Self = StObject.set(x, "hidden", js.Array(value :_*))
       
-      @scala.inline
-      def setInput(value: Layer): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: Layer): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: Layer): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: Layer): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
 }

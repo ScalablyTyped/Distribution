@@ -29,31 +29,23 @@ trait InitialViewPropertiesProperties extends StObject {
 }
 object InitialViewPropertiesProperties {
   
-  @scala.inline
-  def apply(): InitialViewPropertiesProperties = {
+  inline def apply(): InitialViewPropertiesProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitialViewPropertiesProperties]
   }
   
-  @scala.inline
-  implicit class InitialViewPropertiesPropertiesMutableBuilder[Self <: InitialViewPropertiesProperties] (val x: Self) extends AnyVal {
+  extension [Self <: InitialViewPropertiesProperties](x: Self) {
     
-    @scala.inline
-    def setBackground(value: ColorBackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: ColorBackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    @scala.inline
-    def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
+    inline def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
+    inline def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object config {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setValue_promise(key: promise, promise: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(key.asInstanceOf[js.Any], promise.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setValue_promise(key: promise, promise: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(key.asInstanceOf[js.Any], promise.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

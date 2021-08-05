@@ -18,25 +18,19 @@ trait Region extends StObject {
 }
 object Region {
   
-  @scala.inline
-  def apply(height: Double, width: Double): Region = {
+  inline def apply(height: Double, width: Double): Region = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = 0, y = 0)
     __obj.asInstanceOf[Region]
   }
   
-  @scala.inline
-  implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
+  extension [Self <: Region](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: `0`): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: `0`): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: `0`): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: `0`): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -22,20 +22,16 @@ object databaseSmallMod extends Shortcut {
   }
   object DatabaseSmallProps {
     
-    @scala.inline
-    def apply(): DatabaseSmallProps = {
+    inline def apply(): DatabaseSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DatabaseSmallProps]
     }
     
-    @scala.inline
-    implicit class DatabaseSmallPropsMutableBuilder[Self <: DatabaseSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: DatabaseSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -220,50 +220,37 @@ object nameMod {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def fromImplicitSha256Digest(digest: Blob): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImplicitSha256Digest")(digest.asInstanceOf[js.Any]).asInstanceOf[Component]
+      inline def fromImplicitSha256Digest(digest: Blob): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImplicitSha256Digest")(digest.asInstanceOf[js.Any]).asInstanceOf[Component]
       
       /* static member */
-      @scala.inline
-      def fromNumber(number: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[Component]
-      @scala.inline
-      def fromNumber(number: Double, `type`: Unit, otherTypeCode: Double): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], otherTypeCode.asInstanceOf[js.Any])).asInstanceOf[Component]
-      @scala.inline
-      def fromNumber(number: Double, `type`: ComponentType): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Component]
-      @scala.inline
-      def fromNumber(number: Double, `type`: ComponentType, otherTypeCode: Double): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], otherTypeCode.asInstanceOf[js.Any])).asInstanceOf[Component]
+      inline def fromNumber(number: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[Component]
+      inline def fromNumber(number: Double, `type`: Unit, otherTypeCode: Double): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], otherTypeCode.asInstanceOf[js.Any])).asInstanceOf[Component]
+      inline def fromNumber(number: Double, `type`: ComponentType): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Component]
+      inline def fromNumber(number: Double, `type`: ComponentType, otherTypeCode: Double): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], otherTypeCode.asInstanceOf[js.Any])).asInstanceOf[Component]
       
       /* static member */
-      @scala.inline
-      def fromNumberWithMarker(number: Double, marker: Double): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumberWithMarker")(number.asInstanceOf[js.Any], marker.asInstanceOf[js.Any])).asInstanceOf[Component]
+      inline def fromNumberWithMarker(number: Double, marker: Double): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumberWithMarker")(number.asInstanceOf[js.Any], marker.asInstanceOf[js.Any])).asInstanceOf[Component]
       
       /* static member */
-      @scala.inline
-      def fromParametersSha256Digest(digest: Blob): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParametersSha256Digest")(digest.asInstanceOf[js.Any]).asInstanceOf[Component]
+      inline def fromParametersSha256Digest(digest: Blob): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParametersSha256Digest")(digest.asInstanceOf[js.Any]).asInstanceOf[Component]
       
       /* static member */
-      @scala.inline
-      def fromSegment(segment: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegment")(segment.asInstanceOf[js.Any]).asInstanceOf[Component]
+      inline def fromSegment(segment: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegment")(segment.asInstanceOf[js.Any]).asInstanceOf[Component]
       
       /* static member */
-      @scala.inline
-      def fromSegmentOffset(segmentOffset: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegmentOffset")(segmentOffset.asInstanceOf[js.Any]).asInstanceOf[Component]
+      inline def fromSegmentOffset(segmentOffset: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegmentOffset")(segmentOffset.asInstanceOf[js.Any]).asInstanceOf[Component]
       
       /* static member */
-      @scala.inline
-      def fromSequenceNumber(sequenceNumber: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSequenceNumber")(sequenceNumber.asInstanceOf[js.Any]).asInstanceOf[Component]
+      inline def fromSequenceNumber(sequenceNumber: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSequenceNumber")(sequenceNumber.asInstanceOf[js.Any]).asInstanceOf[Component]
       
       /* static member */
-      @scala.inline
-      def fromTimestamp(timestamp: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTimestamp")(timestamp.asInstanceOf[js.Any]).asInstanceOf[Component]
+      inline def fromTimestamp(timestamp: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTimestamp")(timestamp.asInstanceOf[js.Any]).asInstanceOf[Component]
       
       /* static member */
-      @scala.inline
-      def fromVersion(version: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Component]
+      inline def fromVersion(version: Double): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Component]
     }
     
-    @scala.inline
-    def fromEscapedString(uri: String): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEscapedString")(uri.asInstanceOf[js.Any]).asInstanceOf[Name]
+    inline def fromEscapedString(uri: String): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEscapedString")(uri.asInstanceOf[js.Any]).asInstanceOf[Name]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -274,13 +261,10 @@ object nameMod {
   trait CompareResult extends StObject
   object CompareResult {
     
-    @scala.inline
-    def `-1`: typings.ndnJs.ndnJsNumbers.`-1` = -1.asInstanceOf[typings.ndnJs.ndnJsNumbers.`-1`]
+    inline def `-1`: typings.ndnJs.ndnJsNumbers.`-1` = -1.asInstanceOf[typings.ndnJs.ndnJsNumbers.`-1`]
     
-    @scala.inline
-    def `0`: typings.ndnJs.ndnJsNumbers.`0` = 0.asInstanceOf[typings.ndnJs.ndnJsNumbers.`0`]
+    inline def `0`: typings.ndnJs.ndnJsNumbers.`0` = 0.asInstanceOf[typings.ndnJs.ndnJsNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.ndnJs.ndnJsNumbers.`1` = 1.asInstanceOf[typings.ndnJs.ndnJsNumbers.`1`]
+    inline def `1`: typings.ndnJs.ndnJsNumbers.`1` = 1.asInstanceOf[typings.ndnJs.ndnJsNumbers.`1`]
   }
 }

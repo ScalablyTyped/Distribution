@@ -15,20 +15,16 @@ object anon {
   }
   object DictotherOptions {
     
-    @scala.inline
-    def apply(): DictotherOptions = {
+    inline def apply(): DictotherOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DictotherOptions]
     }
     
-    @scala.inline
-    implicit class DictotherOptionsMutableBuilder[Self <: DictotherOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DictotherOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     }
   }
 }

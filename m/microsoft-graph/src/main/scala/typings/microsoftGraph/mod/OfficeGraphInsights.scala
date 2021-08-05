@@ -31,49 +31,35 @@ trait OfficeGraphInsights
 }
 object OfficeGraphInsights {
   
-  @scala.inline
-  def apply(): OfficeGraphInsights = {
+  inline def apply(): OfficeGraphInsights = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OfficeGraphInsights]
   }
   
-  @scala.inline
-  implicit class OfficeGraphInsightsMutableBuilder[Self <: OfficeGraphInsights] (val x: Self) extends AnyVal {
+  extension [Self <: OfficeGraphInsights](x: Self) {
     
-    @scala.inline
-    def setShared(value: NullableOption[js.Array[SharedInsight]]): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
+    inline def setShared(value: NullableOption[js.Array[SharedInsight]]): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedNull: Self = StObject.set(x, "shared", null)
+    inline def setSharedNull: Self = StObject.set(x, "shared", null)
     
-    @scala.inline
-    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
+    inline def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
     
-    @scala.inline
-    def setSharedVarargs(value: SharedInsight*): Self = StObject.set(x, "shared", js.Array(value :_*))
+    inline def setSharedVarargs(value: SharedInsight*): Self = StObject.set(x, "shared", js.Array(value :_*))
     
-    @scala.inline
-    def setTrending(value: NullableOption[js.Array[Trending]]): Self = StObject.set(x, "trending", value.asInstanceOf[js.Any])
+    inline def setTrending(value: NullableOption[js.Array[Trending]]): Self = StObject.set(x, "trending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrendingNull: Self = StObject.set(x, "trending", null)
+    inline def setTrendingNull: Self = StObject.set(x, "trending", null)
     
-    @scala.inline
-    def setTrendingUndefined: Self = StObject.set(x, "trending", js.undefined)
+    inline def setTrendingUndefined: Self = StObject.set(x, "trending", js.undefined)
     
-    @scala.inline
-    def setTrendingVarargs(value: Trending*): Self = StObject.set(x, "trending", js.Array(value :_*))
+    inline def setTrendingVarargs(value: Trending*): Self = StObject.set(x, "trending", js.Array(value :_*))
     
-    @scala.inline
-    def setUsed(value: NullableOption[js.Array[UsedInsight]]): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
+    inline def setUsed(value: NullableOption[js.Array[UsedInsight]]): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedNull: Self = StObject.set(x, "used", null)
+    inline def setUsedNull: Self = StObject.set(x, "used", null)
     
-    @scala.inline
-    def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
+    inline def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
     
-    @scala.inline
-    def setUsedVarargs(value: UsedInsight*): Self = StObject.set(x, "used", js.Array(value :_*))
+    inline def setUsedVarargs(value: UsedInsight*): Self = StObject.set(x, "used", js.Array(value :_*))
   }
 }

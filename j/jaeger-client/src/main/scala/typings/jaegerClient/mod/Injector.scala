@@ -11,16 +11,13 @@ trait Injector extends StObject {
 }
 object Injector {
   
-  @scala.inline
-  def apply(inject: (SpanContext, js.Any) => Unit): Injector = {
+  inline def apply(inject: (SpanContext, js.Any) => Unit): Injector = {
     val __obj = js.Dynamic.literal(inject = js.Any.fromFunction2(inject))
     __obj.asInstanceOf[Injector]
   }
   
-  @scala.inline
-  implicit class InjectorMutableBuilder[Self <: Injector] (val x: Self) extends AnyVal {
+  extension [Self <: Injector](x: Self) {
     
-    @scala.inline
-    def setInject(value: (SpanContext, js.Any) => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction2(value))
+    inline def setInject(value: (SpanContext, js.Any) => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction2(value))
   }
 }

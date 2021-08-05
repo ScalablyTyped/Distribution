@@ -27,8 +27,7 @@ trait BlockValue
 }
 object BlockValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chomping: CLIP | KEEP | STRIP,
     hasComment: Boolean,
     hasProps: Boolean,
@@ -43,28 +42,20 @@ object BlockValue {
     __obj.asInstanceOf[BlockValue]
   }
   
-  @scala.inline
-  implicit class BlockValueMutableBuilder[Self <: BlockValue] (val x: Self) extends AnyVal {
+  extension [Self <: BlockValue](x: Self) {
     
-    @scala.inline
-    def setBlockIndent(value: Double): Self = StObject.set(x, "blockIndent", value.asInstanceOf[js.Any])
+    inline def setBlockIndent(value: Double): Self = StObject.set(x, "blockIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIndentNull: Self = StObject.set(x, "blockIndent", null)
+    inline def setBlockIndentNull: Self = StObject.set(x, "blockIndent", null)
     
-    @scala.inline
-    def setChomping(value: CLIP | KEEP | STRIP): Self = StObject.set(x, "chomping", value.asInstanceOf[js.Any])
+    inline def setChomping(value: CLIP | KEEP | STRIP): Self = StObject.set(x, "chomping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: Range): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Range): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrValue(value: String): Self = StObject.set(x, "strValue", value.asInstanceOf[js.Any])
+    inline def setStrValue(value: String): Self = StObject.set(x, "strValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrValueNull: Self = StObject.set(x, "strValue", null)
+    inline def setStrValueNull: Self = StObject.set(x, "strValue", null)
     
-    @scala.inline
-    def setType(value: BLOCK_FOLDED | BLOCK_LITERAL): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BLOCK_FOLDED | BLOCK_LITERAL): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

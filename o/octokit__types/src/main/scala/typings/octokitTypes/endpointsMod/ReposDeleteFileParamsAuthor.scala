@@ -12,25 +12,19 @@ trait ReposDeleteFileParamsAuthor extends StObject {
 }
 object ReposDeleteFileParamsAuthor {
   
-  @scala.inline
-  def apply(): ReposDeleteFileParamsAuthor = {
+  inline def apply(): ReposDeleteFileParamsAuthor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReposDeleteFileParamsAuthor]
   }
   
-  @scala.inline
-  implicit class ReposDeleteFileParamsAuthorMutableBuilder[Self <: ReposDeleteFileParamsAuthor] (val x: Self) extends AnyVal {
+  extension [Self <: ReposDeleteFileParamsAuthor](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

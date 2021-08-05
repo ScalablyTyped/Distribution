@@ -63,79 +63,55 @@ trait NielsenNonLinearWatermarkSettings extends StObject {
 }
 object NielsenNonLinearWatermarkSettings {
   
-  @scala.inline
-  def apply(): NielsenNonLinearWatermarkSettings = {
+  inline def apply(): NielsenNonLinearWatermarkSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NielsenNonLinearWatermarkSettings]
   }
   
-  @scala.inline
-  implicit class NielsenNonLinearWatermarkSettingsMutableBuilder[Self <: NielsenNonLinearWatermarkSettings] (val x: Self) extends AnyVal {
+  extension [Self <: NielsenNonLinearWatermarkSettings](x: Self) {
     
-    @scala.inline
-    def setActiveWatermarkProcess(value: NielsenActiveWatermarkProcessType): Self = StObject.set(x, "ActiveWatermarkProcess", value.asInstanceOf[js.Any])
+    inline def setActiveWatermarkProcess(value: NielsenActiveWatermarkProcessType): Self = StObject.set(x, "ActiveWatermarkProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveWatermarkProcessUndefined: Self = StObject.set(x, "ActiveWatermarkProcess", js.undefined)
+    inline def setActiveWatermarkProcessUndefined: Self = StObject.set(x, "ActiveWatermarkProcess", js.undefined)
     
-    @scala.inline
-    def setAdiFilename(value: stringPatternS3): Self = StObject.set(x, "AdiFilename", value.asInstanceOf[js.Any])
+    inline def setAdiFilename(value: stringPatternS3): Self = StObject.set(x, "AdiFilename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdiFilenameUndefined: Self = StObject.set(x, "AdiFilename", js.undefined)
+    inline def setAdiFilenameUndefined: Self = StObject.set(x, "AdiFilename", js.undefined)
     
-    @scala.inline
-    def setAssetId(value: stringMin1Max20): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: stringMin1Max20): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetIdUndefined: Self = StObject.set(x, "AssetId", js.undefined)
+    inline def setAssetIdUndefined: Self = StObject.set(x, "AssetId", js.undefined)
     
-    @scala.inline
-    def setAssetName(value: stringMin1Max50): Self = StObject.set(x, "AssetName", value.asInstanceOf[js.Any])
+    inline def setAssetName(value: stringMin1Max50): Self = StObject.set(x, "AssetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetNameUndefined: Self = StObject.set(x, "AssetName", js.undefined)
+    inline def setAssetNameUndefined: Self = StObject.set(x, "AssetName", js.undefined)
     
-    @scala.inline
-    def setCbetSourceId(value: stringPattern0xAFaF0908190908): Self = StObject.set(x, "CbetSourceId", value.asInstanceOf[js.Any])
+    inline def setCbetSourceId(value: stringPattern0xAFaF0908190908): Self = StObject.set(x, "CbetSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCbetSourceIdUndefined: Self = StObject.set(x, "CbetSourceId", js.undefined)
+    inline def setCbetSourceIdUndefined: Self = StObject.set(x, "CbetSourceId", js.undefined)
     
-    @scala.inline
-    def setEpisodeId(value: stringMin1Max20): Self = StObject.set(x, "EpisodeId", value.asInstanceOf[js.Any])
+    inline def setEpisodeId(value: stringMin1Max20): Self = StObject.set(x, "EpisodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpisodeIdUndefined: Self = StObject.set(x, "EpisodeId", js.undefined)
+    inline def setEpisodeIdUndefined: Self = StObject.set(x, "EpisodeId", js.undefined)
     
-    @scala.inline
-    def setMetadataDestination(value: stringPatternS3): Self = StObject.set(x, "MetadataDestination", value.asInstanceOf[js.Any])
+    inline def setMetadataDestination(value: stringPatternS3): Self = StObject.set(x, "MetadataDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataDestinationUndefined: Self = StObject.set(x, "MetadataDestination", js.undefined)
+    inline def setMetadataDestinationUndefined: Self = StObject.set(x, "MetadataDestination", js.undefined)
     
-    @scala.inline
-    def setSourceId(value: integerMin0Max65534): Self = StObject.set(x, "SourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: integerMin0Max65534): Self = StObject.set(x, "SourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
+    inline def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
     
-    @scala.inline
-    def setSourceWatermarkStatus(value: NielsenSourceWatermarkStatusType): Self = StObject.set(x, "SourceWatermarkStatus", value.asInstanceOf[js.Any])
+    inline def setSourceWatermarkStatus(value: NielsenSourceWatermarkStatusType): Self = StObject.set(x, "SourceWatermarkStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceWatermarkStatusUndefined: Self = StObject.set(x, "SourceWatermarkStatus", js.undefined)
+    inline def setSourceWatermarkStatusUndefined: Self = StObject.set(x, "SourceWatermarkStatus", js.undefined)
     
-    @scala.inline
-    def setTicServerUrl(value: stringPatternHttps): Self = StObject.set(x, "TicServerUrl", value.asInstanceOf[js.Any])
+    inline def setTicServerUrl(value: stringPatternHttps): Self = StObject.set(x, "TicServerUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicServerUrlUndefined: Self = StObject.set(x, "TicServerUrl", js.undefined)
+    inline def setTicServerUrlUndefined: Self = StObject.set(x, "TicServerUrl", js.undefined)
     
-    @scala.inline
-    def setUniqueTicPerAudioTrack(value: NielsenUniqueTicPerAudioTrackType): Self = StObject.set(x, "UniqueTicPerAudioTrack", value.asInstanceOf[js.Any])
+    inline def setUniqueTicPerAudioTrack(value: NielsenUniqueTicPerAudioTrackType): Self = StObject.set(x, "UniqueTicPerAudioTrack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueTicPerAudioTrackUndefined: Self = StObject.set(x, "UniqueTicPerAudioTrack", js.undefined)
+    inline def setUniqueTicPerAudioTrackUndefined: Self = StObject.set(x, "UniqueTicPerAudioTrack", js.undefined)
   }
 }

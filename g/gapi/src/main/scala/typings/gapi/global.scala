@@ -32,23 +32,17 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def authorize(params: Clientid, callback: js.Function1[/* token */ GoogleApiOAuth2TokenObject, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def authorize(params: Clientid, callback: js.Function1[/* token */ GoogleApiOAuth2TokenObject, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @scala.inline
-      def getToken(): GoogleApiOAuth2TokenObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")().asInstanceOf[GoogleApiOAuth2TokenObject]
+      inline def getToken(): GoogleApiOAuth2TokenObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")().asInstanceOf[GoogleApiOAuth2TokenObject]
       
-      @scala.inline
-      def init(callback: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def init(callback: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @scala.inline
-      def setToken(token: GoogleApiOAuth2TokenObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setToken")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setToken(token: GoogleApiOAuth2TokenObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setToken")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @scala.inline
-      def signIn(params: Apppackagename): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("signIn")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def signIn(params: Apppackagename): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("signIn")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @scala.inline
-      def signOut(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("signOut")().asInstanceOf[Unit]
+      inline def signOut(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("signOut")().asInstanceOf[Unit]
     }
     
     object client {
@@ -93,41 +87,27 @@ object global {
         override def callback(callback: js.Function2[/* jsonResp */ js.Any, /* rawResp */ String, Unit]): Unit = js.native
       }
       
-      @scala.inline
-      def getToken(): GoogleApiOAuth2TokenObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")().asInstanceOf[GoogleApiOAuth2TokenObject]
+      inline def getToken(): GoogleApiOAuth2TokenObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")().asInstanceOf[GoogleApiOAuth2TokenObject]
       
-      @scala.inline
-      def init(args: ApiKey): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+      inline def init(args: ApiKey): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
       
-      @scala.inline
-      def load(name: String, version: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-      @scala.inline
-      def load(name: String, version: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def load(name: String, version: String, callback: js.Function0[js.Any], url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(name: String, version: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+      inline def load(name: String, version: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(name: String, version: String, callback: js.Function0[js.Any], url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @scala.inline
-      def request(args: RequestOptions): typings.gapi.gapi.client.HttpRequest[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(args.asInstanceOf[js.Any]).asInstanceOf[typings.gapi.gapi.client.HttpRequest[js.Any]]
+      inline def request(args: RequestOptions): typings.gapi.gapi.client.HttpRequest[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(args.asInstanceOf[js.Any]).asInstanceOf[typings.gapi.gapi.client.HttpRequest[js.Any]]
       
-      @scala.inline
-      def rpcRequest(method: String): RpcRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("rpcRequest")(method.asInstanceOf[js.Any]).asInstanceOf[RpcRequest]
-      @scala.inline
-      def rpcRequest(method: String, version: String): RpcRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("rpcRequest")(method.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[RpcRequest]
-      @scala.inline
-      def rpcRequest(method: String, version: String, rpcParams: js.Any): RpcRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("rpcRequest")(method.asInstanceOf[js.Any], version.asInstanceOf[js.Any], rpcParams.asInstanceOf[js.Any])).asInstanceOf[RpcRequest]
-      @scala.inline
-      def rpcRequest(method: String, version: Unit, rpcParams: js.Any): RpcRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("rpcRequest")(method.asInstanceOf[js.Any], version.asInstanceOf[js.Any], rpcParams.asInstanceOf[js.Any])).asInstanceOf[RpcRequest]
+      inline def rpcRequest(method: String): RpcRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("rpcRequest")(method.asInstanceOf[js.Any]).asInstanceOf[RpcRequest]
+      inline def rpcRequest(method: String, version: String): RpcRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("rpcRequest")(method.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[RpcRequest]
+      inline def rpcRequest(method: String, version: String, rpcParams: js.Any): RpcRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("rpcRequest")(method.asInstanceOf[js.Any], version.asInstanceOf[js.Any], rpcParams.asInstanceOf[js.Any])).asInstanceOf[RpcRequest]
+      inline def rpcRequest(method: String, version: Unit, rpcParams: js.Any): RpcRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("rpcRequest")(method.asInstanceOf[js.Any], version.asInstanceOf[js.Any], rpcParams.asInstanceOf[js.Any])).asInstanceOf[RpcRequest]
       
-      @scala.inline
-      def setApiKey(apiKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setApiKey(apiKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @scala.inline
-      def setToken(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setToken")().asInstanceOf[Unit]
-      @scala.inline
-      def setToken(token: TokenObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setToken")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setToken(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setToken")().asInstanceOf[Unit]
+      inline def setToken(token: TokenObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setToken")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
-    @scala.inline
-    def load(apiName: String, callback: CallbackOrConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(apiName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def load(apiName: String, callback: CallbackOrConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(apiName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

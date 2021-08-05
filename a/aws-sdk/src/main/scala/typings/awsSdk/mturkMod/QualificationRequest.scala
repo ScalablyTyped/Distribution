@@ -38,49 +38,35 @@ trait QualificationRequest extends StObject {
 }
 object QualificationRequest {
   
-  @scala.inline
-  def apply(): QualificationRequest = {
+  inline def apply(): QualificationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QualificationRequest]
   }
   
-  @scala.inline
-  implicit class QualificationRequestMutableBuilder[Self <: QualificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: QualificationRequest](x: Self) {
     
-    @scala.inline
-    def setAnswer(value: String): Self = StObject.set(x, "Answer", value.asInstanceOf[js.Any])
+    inline def setAnswer(value: String): Self = StObject.set(x, "Answer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnswerUndefined: Self = StObject.set(x, "Answer", js.undefined)
+    inline def setAnswerUndefined: Self = StObject.set(x, "Answer", js.undefined)
     
-    @scala.inline
-    def setQualificationRequestId(value: String): Self = StObject.set(x, "QualificationRequestId", value.asInstanceOf[js.Any])
+    inline def setQualificationRequestId(value: String): Self = StObject.set(x, "QualificationRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualificationRequestIdUndefined: Self = StObject.set(x, "QualificationRequestId", js.undefined)
+    inline def setQualificationRequestIdUndefined: Self = StObject.set(x, "QualificationRequestId", js.undefined)
     
-    @scala.inline
-    def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
+    inline def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualificationTypeIdUndefined: Self = StObject.set(x, "QualificationTypeId", js.undefined)
+    inline def setQualificationTypeIdUndefined: Self = StObject.set(x, "QualificationTypeId", js.undefined)
     
-    @scala.inline
-    def setSubmitTime(value: Timestamp): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
+    inline def setSubmitTime(value: Timestamp): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
+    inline def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
     
-    @scala.inline
-    def setTest(value: String): Self = StObject.set(x, "Test", value.asInstanceOf[js.Any])
+    inline def setTest(value: String): Self = StObject.set(x, "Test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestUndefined: Self = StObject.set(x, "Test", js.undefined)
+    inline def setTestUndefined: Self = StObject.set(x, "Test", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIdUndefined: Self = StObject.set(x, "WorkerId", js.undefined)
+    inline def setWorkerIdUndefined: Self = StObject.set(x, "WorkerId", js.undefined)
   }
 }

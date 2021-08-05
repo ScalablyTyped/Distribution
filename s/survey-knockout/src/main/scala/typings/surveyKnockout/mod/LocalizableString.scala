@@ -68,12 +68,10 @@ object LocalizableString {
   @JSImport("survey-knockout", "LocalizableString.SerializeAsObject")
   @js.native
   def SerializeAsObject: Boolean = js.native
-  @scala.inline
-  def SerializeAsObject_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SerializeAsObject")(x.asInstanceOf[js.Any])
+  inline def SerializeAsObject_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SerializeAsObject")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "LocalizableString.defaultLocale")
   @js.native
   def defaultLocale: String = js.native
-  @scala.inline
-  def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
+  inline def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
 }

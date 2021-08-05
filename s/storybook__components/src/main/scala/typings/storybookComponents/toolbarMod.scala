@@ -17,20 +17,16 @@ object toolbarMod {
   }
   object BarProps {
     
-    @scala.inline
-    def apply(): BarProps = {
+    inline def apply(): BarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BarProps]
     }
     
-    @scala.inline
-    implicit class BarPropsMutableBuilder[Self <: BarProps] (val x: Self) extends AnyVal {
+    extension [Self <: BarProps](x: Self) {
       
-      @scala.inline
-      def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+      inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     }
   }
   
@@ -42,26 +38,20 @@ object toolbarMod {
   }
   object EjectProps {
     
-    @scala.inline
-    def apply(): EjectProps = {
+    inline def apply(): EjectProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EjectProps]
     }
     
-    @scala.inline
-    implicit class EjectPropsMutableBuilder[Self <: EjectProps] (val x: Self) extends AnyVal {
+    extension [Self <: EjectProps](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
+      inline def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoryIdUndefined: Self = StObject.set(x, "storyId", js.undefined)
+      inline def setStoryIdUndefined: Self = StObject.set(x, "storyId", js.undefined)
     }
   }
   
@@ -72,8 +62,7 @@ object toolbarMod {
        with EjectProps
   object ToolbarProps {
     
-    @scala.inline
-    def apply(resetZoom: () => Unit, zoom: Double => Unit): ToolbarProps = {
+    inline def apply(resetZoom: () => Unit, zoom: Double => Unit): ToolbarProps = {
       val __obj = js.Dynamic.literal(resetZoom = js.Any.fromFunction0(resetZoom), zoom = js.Any.fromFunction1(zoom))
       __obj.asInstanceOf[ToolbarProps]
     }
@@ -87,20 +76,16 @@ object toolbarMod {
   }
   object ZoomProps {
     
-    @scala.inline
-    def apply(resetZoom: () => Unit, zoom: Double => Unit): ZoomProps = {
+    inline def apply(resetZoom: () => Unit, zoom: Double => Unit): ZoomProps = {
       val __obj = js.Dynamic.literal(resetZoom = js.Any.fromFunction0(resetZoom), zoom = js.Any.fromFunction1(zoom))
       __obj.asInstanceOf[ZoomProps]
     }
     
-    @scala.inline
-    implicit class ZoomPropsMutableBuilder[Self <: ZoomProps] (val x: Self) extends AnyVal {
+    extension [Self <: ZoomProps](x: Self) {
       
-      @scala.inline
-      def setResetZoom(value: () => Unit): Self = StObject.set(x, "resetZoom", js.Any.fromFunction0(value))
+      inline def setResetZoom(value: () => Unit): Self = StObject.set(x, "resetZoom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setZoom(value: Double => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
+      inline def setZoom(value: Double => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
     }
   }
 }

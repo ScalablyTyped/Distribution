@@ -15,31 +15,23 @@ trait SparseToDenseInputs extends StObject {
 }
 object SparseToDenseInputs {
   
-  @scala.inline
-  def apply(): SparseToDenseInputs = {
+  inline def apply(): SparseToDenseInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SparseToDenseInputs]
   }
   
-  @scala.inline
-  implicit class SparseToDenseInputsMutableBuilder[Self <: SparseToDenseInputs] (val x: Self) extends AnyVal {
+  extension [Self <: SparseToDenseInputs](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setSparseIndices(value: js.Any): Self = StObject.set(x, "sparseIndices", value.asInstanceOf[js.Any])
+    inline def setSparseIndices(value: js.Any): Self = StObject.set(x, "sparseIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSparseIndicesUndefined: Self = StObject.set(x, "sparseIndices", js.undefined)
+    inline def setSparseIndicesUndefined: Self = StObject.set(x, "sparseIndices", js.undefined)
     
-    @scala.inline
-    def setSparseValues(value: js.Any): Self = StObject.set(x, "sparseValues", value.asInstanceOf[js.Any])
+    inline def setSparseValues(value: js.Any): Self = StObject.set(x, "sparseValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSparseValuesUndefined: Self = StObject.set(x, "sparseValues", js.undefined)
+    inline def setSparseValuesUndefined: Self = StObject.set(x, "sparseValues", js.undefined)
   }
 }

@@ -22,20 +22,16 @@ object listSmallMod extends Shortcut {
   }
   object ListSmallProps {
     
-    @scala.inline
-    def apply(): ListSmallProps = {
+    inline def apply(): ListSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListSmallProps]
     }
     
-    @scala.inline
-    implicit class ListSmallPropsMutableBuilder[Self <: ListSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

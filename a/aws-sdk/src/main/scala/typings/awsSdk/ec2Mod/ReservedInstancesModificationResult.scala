@@ -18,25 +18,19 @@ trait ReservedInstancesModificationResult extends StObject {
 }
 object ReservedInstancesModificationResult {
   
-  @scala.inline
-  def apply(): ReservedInstancesModificationResult = {
+  inline def apply(): ReservedInstancesModificationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservedInstancesModificationResult]
   }
   
-  @scala.inline
-  implicit class ReservedInstancesModificationResultMutableBuilder[Self <: ReservedInstancesModificationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReservedInstancesModificationResult](x: Self) {
     
-    @scala.inline
-    def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesIdUndefined: Self = StObject.set(x, "ReservedInstancesId", js.undefined)
+    inline def setReservedInstancesIdUndefined: Self = StObject.set(x, "ReservedInstancesId", js.undefined)
     
-    @scala.inline
-    def setTargetConfiguration(value: ReservedInstancesConfiguration): Self = StObject.set(x, "TargetConfiguration", value.asInstanceOf[js.Any])
+    inline def setTargetConfiguration(value: ReservedInstancesConfiguration): Self = StObject.set(x, "TargetConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetConfigurationUndefined: Self = StObject.set(x, "TargetConfiguration", js.undefined)
+    inline def setTargetConfigurationUndefined: Self = StObject.set(x, "TargetConfiguration", js.undefined)
   }
 }

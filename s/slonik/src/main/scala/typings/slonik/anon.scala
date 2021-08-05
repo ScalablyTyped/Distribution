@@ -15,23 +15,18 @@ object anon {
   }
   object Format {
     
-    @scala.inline
-    def apply(format: String): Format = {
+    inline def apply(format: String): Format = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[Format]
     }
     
-    @scala.inline
-    implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+    extension [Self <: Format](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest(value: /* field */ FieldType => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+      inline def setTest(value: /* field */ FieldType => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     }
   }
   
@@ -41,20 +36,16 @@ object anon {
   }
   object StripComments {
     
-    @scala.inline
-    def apply(): StripComments = {
+    inline def apply(): StripComments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StripComments]
     }
     
-    @scala.inline
-    implicit class StripCommentsMutableBuilder[Self <: StripComments] (val x: Self) extends AnyVal {
+    extension [Self <: StripComments](x: Self) {
       
-      @scala.inline
-      def setStripComments(value: Boolean): Self = StObject.set(x, "stripComments", value.asInstanceOf[js.Any])
+      inline def setStripComments(value: Boolean): Self = StObject.set(x, "stripComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripCommentsUndefined: Self = StObject.set(x, "stripComments", js.undefined)
+      inline def setStripCommentsUndefined: Self = StObject.set(x, "stripComments", js.undefined)
     }
   }
 }

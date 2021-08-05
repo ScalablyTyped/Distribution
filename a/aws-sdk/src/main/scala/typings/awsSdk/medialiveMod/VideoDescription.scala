@@ -46,52 +46,37 @@ trait VideoDescription extends StObject {
 }
 object VideoDescription {
   
-  @scala.inline
-  def apply(Name: string): VideoDescription = {
+  inline def apply(Name: string): VideoDescription = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoDescription]
   }
   
-  @scala.inline
-  implicit class VideoDescriptionMutableBuilder[Self <: VideoDescription] (val x: Self) extends AnyVal {
+  extension [Self <: VideoDescription](x: Self) {
     
-    @scala.inline
-    def setCodecSettings(value: VideoCodecSettings): Self = StObject.set(x, "CodecSettings", value.asInstanceOf[js.Any])
+    inline def setCodecSettings(value: VideoCodecSettings): Self = StObject.set(x, "CodecSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecSettingsUndefined: Self = StObject.set(x, "CodecSettings", js.undefined)
+    inline def setCodecSettingsUndefined: Self = StObject.set(x, "CodecSettings", js.undefined)
     
-    @scala.inline
-    def setHeight(value: integer): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: integer): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRespondToAfd(value: VideoDescriptionRespondToAfd): Self = StObject.set(x, "RespondToAfd", value.asInstanceOf[js.Any])
+    inline def setRespondToAfd(value: VideoDescriptionRespondToAfd): Self = StObject.set(x, "RespondToAfd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRespondToAfdUndefined: Self = StObject.set(x, "RespondToAfd", js.undefined)
+    inline def setRespondToAfdUndefined: Self = StObject.set(x, "RespondToAfd", js.undefined)
     
-    @scala.inline
-    def setScalingBehavior(value: VideoDescriptionScalingBehavior): Self = StObject.set(x, "ScalingBehavior", value.asInstanceOf[js.Any])
+    inline def setScalingBehavior(value: VideoDescriptionScalingBehavior): Self = StObject.set(x, "ScalingBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingBehaviorUndefined: Self = StObject.set(x, "ScalingBehavior", js.undefined)
+    inline def setScalingBehaviorUndefined: Self = StObject.set(x, "ScalingBehavior", js.undefined)
     
-    @scala.inline
-    def setSharpness(value: integerMin0Max100): Self = StObject.set(x, "Sharpness", value.asInstanceOf[js.Any])
+    inline def setSharpness(value: integerMin0Max100): Self = StObject.set(x, "Sharpness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharpnessUndefined: Self = StObject.set(x, "Sharpness", js.undefined)
+    inline def setSharpnessUndefined: Self = StObject.set(x, "Sharpness", js.undefined)
     
-    @scala.inline
-    def setWidth(value: integer): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: integer): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
   }
 }

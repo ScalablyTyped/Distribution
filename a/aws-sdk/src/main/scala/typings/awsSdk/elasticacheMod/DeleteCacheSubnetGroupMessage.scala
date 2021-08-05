@@ -13,16 +13,13 @@ trait DeleteCacheSubnetGroupMessage extends StObject {
 }
 object DeleteCacheSubnetGroupMessage {
   
-  @scala.inline
-  def apply(CacheSubnetGroupName: String): DeleteCacheSubnetGroupMessage = {
+  inline def apply(CacheSubnetGroupName: String): DeleteCacheSubnetGroupMessage = {
     val __obj = js.Dynamic.literal(CacheSubnetGroupName = CacheSubnetGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCacheSubnetGroupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteCacheSubnetGroupMessageMutableBuilder[Self <: DeleteCacheSubnetGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCacheSubnetGroupMessage](x: Self) {
     
-    @scala.inline
-    def setCacheSubnetGroupName(value: String): Self = StObject.set(x, "CacheSubnetGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheSubnetGroupName(value: String): Self = StObject.set(x, "CacheSubnetGroupName", value.asInstanceOf[js.Any])
   }
 }

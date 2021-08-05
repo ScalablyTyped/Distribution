@@ -57,21 +57,17 @@ object mod {
   }
   object PseudoAudioParamEvent {
     
-    @scala.inline
-    def apply(time: Double, `type`: String): PseudoAudioParamEvent = {
+    inline def apply(time: Double, `type`: String): PseudoAudioParamEvent = {
       val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PseudoAudioParamEvent]
     }
     
-    @scala.inline
-    implicit class PseudoAudioParamEventMutableBuilder[Self <: PseudoAudioParamEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PseudoAudioParamEvent](x: Self) {
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

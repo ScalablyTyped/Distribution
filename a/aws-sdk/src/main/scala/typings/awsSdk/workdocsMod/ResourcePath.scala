@@ -13,22 +13,17 @@ trait ResourcePath extends StObject {
 }
 object ResourcePath {
   
-  @scala.inline
-  def apply(): ResourcePath = {
+  inline def apply(): ResourcePath = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourcePath]
   }
   
-  @scala.inline
-  implicit class ResourcePathMutableBuilder[Self <: ResourcePath] (val x: Self) extends AnyVal {
+  extension [Self <: ResourcePath](x: Self) {
     
-    @scala.inline
-    def setComponents(value: ResourcePathComponentList): Self = StObject.set(x, "Components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: ResourcePathComponentList): Self = StObject.set(x, "Components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsUndefined: Self = StObject.set(x, "Components", js.undefined)
+    inline def setComponentsUndefined: Self = StObject.set(x, "Components", js.undefined)
     
-    @scala.inline
-    def setComponentsVarargs(value: ResourcePathComponent*): Self = StObject.set(x, "Components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: ResourcePathComponent*): Self = StObject.set(x, "Components", js.Array(value :_*))
   }
 }

@@ -28,28 +28,21 @@ trait S3Action extends StObject {
 }
 object S3Action {
   
-  @scala.inline
-  def apply(bucketName: BucketName, key: Key, roleArn: AwsArn): S3Action = {
+  inline def apply(bucketName: BucketName, key: Key, roleArn: AwsArn): S3Action = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Action]
   }
   
-  @scala.inline
-  implicit class S3ActionMutableBuilder[Self <: S3Action] (val x: Self) extends AnyVal {
+  extension [Self <: S3Action](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCannedAcl(value: CannedAccessControlList): Self = StObject.set(x, "cannedAcl", value.asInstanceOf[js.Any])
+    inline def setCannedAcl(value: CannedAccessControlList): Self = StObject.set(x, "cannedAcl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCannedAclUndefined: Self = StObject.set(x, "cannedAcl", js.undefined)
+    inline def setCannedAclUndefined: Self = StObject.set(x, "cannedAcl", js.undefined)
     
-    @scala.inline
-    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

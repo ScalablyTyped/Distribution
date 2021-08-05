@@ -18,25 +18,19 @@ trait GenerateTemplateRequest extends StObject {
 }
 object GenerateTemplateRequest {
   
-  @scala.inline
-  def apply(): GenerateTemplateRequest = {
+  inline def apply(): GenerateTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateTemplateRequest]
   }
   
-  @scala.inline
-  implicit class GenerateTemplateRequestMutableBuilder[Self <: GenerateTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    @scala.inline
-    def setTemplateFormat(value: OutputFormat): Self = StObject.set(x, "templateFormat", value.asInstanceOf[js.Any])
+    inline def setTemplateFormat(value: OutputFormat): Self = StObject.set(x, "templateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateFormatUndefined: Self = StObject.set(x, "templateFormat", js.undefined)
+    inline def setTemplateFormatUndefined: Self = StObject.set(x, "templateFormat", js.undefined)
   }
 }

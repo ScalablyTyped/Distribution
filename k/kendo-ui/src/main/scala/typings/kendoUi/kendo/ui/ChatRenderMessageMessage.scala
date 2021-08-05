@@ -12,25 +12,19 @@ trait ChatRenderMessageMessage extends StObject {
 }
 object ChatRenderMessageMessage {
   
-  @scala.inline
-  def apply(): ChatRenderMessageMessage = {
+  inline def apply(): ChatRenderMessageMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChatRenderMessageMessage]
   }
   
-  @scala.inline
-  implicit class ChatRenderMessageMessageMutableBuilder[Self <: ChatRenderMessageMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ChatRenderMessageMessage](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

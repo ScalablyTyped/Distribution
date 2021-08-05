@@ -31,25 +31,19 @@ trait IItemStack
 }
 object IItemStack {
   
-  @scala.inline
-  def apply(__identifier__ : String, count: Double, item: String): IItemStack = {
+  inline def apply(__identifier__ : String, count: Double, item: String): IItemStack = {
     val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = "item_stack", count = count.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemStack]
   }
   
-  @scala.inline
-  implicit class IItemStackMutableBuilder[Self <: IItemStack] (val x: Self) extends AnyVal {
+  extension [Self <: IItemStack](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__identifier__(value: String): Self = StObject.set(x, "__identifier__", value.asInstanceOf[js.Any])
+    inline def set__identifier__(value: String): Self = StObject.set(x, "__identifier__", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type__(value: item_stack): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
+    inline def set__type__(value: item_stack): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
   }
 }

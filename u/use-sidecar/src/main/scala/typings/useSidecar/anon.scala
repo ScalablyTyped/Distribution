@@ -18,17 +18,14 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply[T /* <: js.Array[js.Any] */](children: T => js.Any): Children[T] = {
+    inline def apply[T /* <: js.Array[js.Any] */](children: T => js.Any): Children[T] = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[Children[T]]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children[?], T /* <: js.Array[js.Any] */] (val x: Self & Children[T]) extends AnyVal {
+    extension [Self <: Children[?], T /* <: js.Array[js.Any] */](x: Self & Children[T]) {
       
-      @scala.inline
-      def setChildren(value: T => js.Any): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: T => js.Any): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
@@ -38,17 +35,14 @@ object anon {
   }
   object Default {
     
-    @scala.inline
-    def apply[T](default: T): Default[T] = {
+    inline def apply[T](default: T): Default[T] = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
       __obj.asInstanceOf[Default[T]]
     }
     
-    @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default[?], T] (val x: Self & Default[T]) extends AnyVal {
+    extension [Self <: Default[?], T](x: Self & Default[T]) {
       
-      @scala.inline
-      def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,20 +53,16 @@ object anon {
   }
   object PartialIConfig {
     
-    @scala.inline
-    def apply(): PartialIConfig = {
+    inline def apply(): PartialIConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialIConfig]
     }
     
-    @scala.inline
-    implicit class PartialIConfigMutableBuilder[Self <: PartialIConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PartialIConfig](x: Self) {
       
-      @scala.inline
-      def setOnError(value: /* e */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* e */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     }
   }
   
@@ -91,8 +81,7 @@ object anon {
   }
   object ReadonlySideCarMedium {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       assignMedium: /* handler */ MediumCallback[ComponentType[js.Object]] => Unit,
       assignSyncMedium: /* handler */ MediumCallback[ComponentType[js.Object]] => Unit,
       read: () => js.UndefOr[ComponentType[js.Object]],
@@ -102,26 +91,19 @@ object anon {
       __obj.asInstanceOf[ReadonlySideCarMedium]
     }
     
-    @scala.inline
-    implicit class ReadonlySideCarMediumMutableBuilder[Self <: ReadonlySideCarMedium] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlySideCarMedium](x: Self) {
       
-      @scala.inline
-      def setAssignMedium(value: /* handler */ MediumCallback[ComponentType[js.Object]] => Unit): Self = StObject.set(x, "assignMedium", js.Any.fromFunction1(value))
+      inline def setAssignMedium(value: /* handler */ MediumCallback[ComponentType[js.Object]] => Unit): Self = StObject.set(x, "assignMedium", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAssignSyncMedium(value: /* handler */ MediumCallback[ComponentType[js.Object]] => Unit): Self = StObject.set(x, "assignSyncMedium", js.Any.fromFunction1(value))
+      inline def setAssignSyncMedium(value: /* handler */ MediumCallback[ComponentType[js.Object]] => Unit): Self = StObject.set(x, "assignSyncMedium", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setRead(value: () => js.UndefOr[ComponentType[js.Object]]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+      inline def setRead(value: () => js.UndefOr[ComponentType[js.Object]]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUseMedium(value: /* effect */ ComponentType[js.Object] => removeCb): Self = StObject.set(x, "useMedium", js.Any.fromFunction1(value))
+      inline def setUseMedium(value: /* effect */ ComponentType[js.Object] => removeCb): Self = StObject.set(x, "useMedium", js.Any.fromFunction1(value))
     }
   }
 }

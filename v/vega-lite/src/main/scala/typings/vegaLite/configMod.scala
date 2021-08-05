@@ -20,45 +20,38 @@ object configMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAxisConfig(
+  inline def getAxisConfig(
     property: /* keyof vega-lite.vega-lite/build/src/axis.AxisConfig<vega-typings.vega-typings/types/spec/signal.SignalRef> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 79 */ js.Any,
     styleConfigIndex: StyleConfigIndex[SignalRef],
     style: String
   ): ConfigFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("getAxisConfig")(property.asInstanceOf[js.Any], styleConfigIndex.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[ConfigFrom]
-  @scala.inline
-  def getAxisConfig(
+  inline def getAxisConfig(
     property: /* keyof vega-lite.vega-lite/build/src/axis.AxisConfig<vega-typings.vega-typings/types/spec/signal.SignalRef> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 79 */ js.Any,
     styleConfigIndex: StyleConfigIndex[SignalRef],
     style: String,
     axisConfigs: Partial[AxisConfigs]
   ): ConfigFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("getAxisConfig")(property.asInstanceOf[js.Any], styleConfigIndex.asInstanceOf[js.Any], style.asInstanceOf[js.Any], axisConfigs.asInstanceOf[js.Any])).asInstanceOf[ConfigFrom]
-  @scala.inline
-  def getAxisConfig(
+  inline def getAxisConfig(
     property: /* keyof vega-lite.vega-lite/build/src/axis.AxisConfig<vega-typings.vega-typings/types/spec/signal.SignalRef> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 79 */ js.Any,
     styleConfigIndex: StyleConfigIndex[SignalRef],
     style: js.Array[String]
   ): ConfigFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("getAxisConfig")(property.asInstanceOf[js.Any], styleConfigIndex.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[ConfigFrom]
-  @scala.inline
-  def getAxisConfig(
+  inline def getAxisConfig(
     property: /* keyof vega-lite.vega-lite/build/src/axis.AxisConfig<vega-typings.vega-typings/types/spec/signal.SignalRef> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 79 */ js.Any,
     styleConfigIndex: StyleConfigIndex[SignalRef],
     style: js.Array[String],
     axisConfigs: Partial[AxisConfigs]
   ): ConfigFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("getAxisConfig")(property.asInstanceOf[js.Any], styleConfigIndex.asInstanceOf[js.Any], style.asInstanceOf[js.Any], axisConfigs.asInstanceOf[js.Any])).asInstanceOf[ConfigFrom]
   
-  @scala.inline
-  def getAxisConfigStyle(axisConfigTypes: js.Array[String], config: Config[ExprRef | SignalRef]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAxisConfigStyle")(axisConfigTypes.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getAxisConfigStyle(axisConfigTypes: js.Array[String], config: Config[ExprRef | SignalRef]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAxisConfigStyle")(axisConfigTypes.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getAxisConfigs(
+  inline def getAxisConfigs(
     channel: PositionScaleChannel,
     scaleType: ScaleType,
     orient: String,
     config: Config[ExprRef | SignalRef]
   ): AxisConfigStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getAxisConfigs")(channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[AxisConfigStyle]
-  @scala.inline
-  def getAxisConfigs(
+  inline def getAxisConfigs(
     channel: PositionScaleChannel,
     scaleType: ScaleType,
     orient: SignalRef,

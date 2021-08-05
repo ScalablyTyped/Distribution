@@ -18,25 +18,19 @@ trait AdminAccount extends StObject {
 }
 object AdminAccount {
   
-  @scala.inline
-  def apply(): AdminAccount = {
+  inline def apply(): AdminAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdminAccount]
   }
   
-  @scala.inline
-  implicit class AdminAccountMutableBuilder[Self <: AdminAccount] (val x: Self) extends AnyVal {
+  extension [Self <: AdminAccount](x: Self) {
     
-    @scala.inline
-    def setAdminAccountId(value: String): Self = StObject.set(x, "AdminAccountId", value.asInstanceOf[js.Any])
+    inline def setAdminAccountId(value: String): Self = StObject.set(x, "AdminAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminAccountIdUndefined: Self = StObject.set(x, "AdminAccountId", js.undefined)
+    inline def setAdminAccountIdUndefined: Self = StObject.set(x, "AdminAccountId", js.undefined)
     
-    @scala.inline
-    def setAdminStatus(value: AdminStatus): Self = StObject.set(x, "AdminStatus", value.asInstanceOf[js.Any])
+    inline def setAdminStatus(value: AdminStatus): Self = StObject.set(x, "AdminStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminStatusUndefined: Self = StObject.set(x, "AdminStatus", js.undefined)
+    inline def setAdminStatusUndefined: Self = StObject.set(x, "AdminStatus", js.undefined)
   }
 }

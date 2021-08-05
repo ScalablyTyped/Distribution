@@ -20,8 +20,7 @@ trait XElement extends StObject {
 }
 object XElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get_attributes: () => js.Any,
     get_children: () => js.Any,
     get_name: () => String,
@@ -33,25 +32,18 @@ object XElement {
     __obj.asInstanceOf[XElement]
   }
   
-  @scala.inline
-  implicit class XElementMutableBuilder[Self <: XElement] (val x: Self) extends AnyVal {
+  extension [Self <: XElement](x: Self) {
     
-    @scala.inline
-    def setGet_attributes(value: () => js.Any): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
+    inline def setGet_attributes(value: () => js.Any): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_children(value: () => js.Any): Self = StObject.set(x, "get_children", js.Any.fromFunction0(value))
+    inline def setGet_children(value: () => js.Any): Self = StObject.set(x, "get_children", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
+    inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_attributes(value: js.Any => Unit): Self = StObject.set(x, "set_attributes", js.Any.fromFunction1(value))
+    inline def setSet_attributes(value: js.Any => Unit): Self = StObject.set(x, "set_attributes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_children(value: js.Any => Unit): Self = StObject.set(x, "set_children", js.Any.fromFunction1(value))
+    inline def setSet_children(value: js.Any => Unit): Self = StObject.set(x, "set_children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
+    inline def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
   }
 }

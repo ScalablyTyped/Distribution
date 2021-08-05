@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(originalAssert: js.Any, formatter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(originalAssert.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(originalAssert: js.Any, formatter: js.Any, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(originalAssert.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(originalAssert: js.Any, formatter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(originalAssert.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(originalAssert: js.Any, formatter: js.Any, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(originalAssert.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("empower", JSImport.Namespace)
   @js.native
@@ -27,41 +25,30 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDestructive(value: Boolean): Self = StObject.set(x, "destructive", value.asInstanceOf[js.Any])
+      inline def setDestructive(value: Boolean): Self = StObject.set(x, "destructive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructiveUndefined: Self = StObject.set(x, "destructive", js.undefined)
+      inline def setDestructiveUndefined: Self = StObject.set(x, "destructive", js.undefined)
       
-      @scala.inline
-      def setModifyMessageOnRethrow(value: Boolean): Self = StObject.set(x, "modifyMessageOnRethrow", value.asInstanceOf[js.Any])
+      inline def setModifyMessageOnRethrow(value: Boolean): Self = StObject.set(x, "modifyMessageOnRethrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifyMessageOnRethrowUndefined: Self = StObject.set(x, "modifyMessageOnRethrow", js.undefined)
+      inline def setModifyMessageOnRethrowUndefined: Self = StObject.set(x, "modifyMessageOnRethrow", js.undefined)
       
-      @scala.inline
-      def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
+      inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
       
-      @scala.inline
-      def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
       
-      @scala.inline
-      def setSaveContextOnRethrow(value: Boolean): Self = StObject.set(x, "saveContextOnRethrow", value.asInstanceOf[js.Any])
+      inline def setSaveContextOnRethrow(value: Boolean): Self = StObject.set(x, "saveContextOnRethrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveContextOnRethrowUndefined: Self = StObject.set(x, "saveContextOnRethrow", js.undefined)
+      inline def setSaveContextOnRethrowUndefined: Self = StObject.set(x, "saveContextOnRethrow", js.undefined)
     }
   }
 }

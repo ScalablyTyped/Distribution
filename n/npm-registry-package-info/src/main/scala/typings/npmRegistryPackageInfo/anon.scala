@@ -16,23 +16,18 @@ object anon {
   }
   object Failure {
     
-    @scala.inline
-    def apply(failure: Double, success: Double, total: Double): Failure = {
+    inline def apply(failure: Double, success: Double, total: Double): Failure = {
       val __obj = js.Dynamic.literal(failure = failure.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Failure]
     }
     
-    @scala.inline
-    implicit class FailureMutableBuilder[Self <: Failure] (val x: Self) extends AnyVal {
+    extension [Self <: Failure](x: Self) {
       
-      @scala.inline
-      def setFailure(value: Double): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+      inline def setFailure(value: Double): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Double): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Double): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
 }

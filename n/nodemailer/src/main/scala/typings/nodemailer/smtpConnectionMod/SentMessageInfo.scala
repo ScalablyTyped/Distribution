@@ -29,8 +29,7 @@ trait SentMessageInfo extends StObject {
 }
 object SentMessageInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accepted: js.Array[String],
     envelopeTime: Double,
     messageSize: Double,
@@ -42,40 +41,28 @@ object SentMessageInfo {
     __obj.asInstanceOf[SentMessageInfo]
   }
   
-  @scala.inline
-  implicit class SentMessageInfoMutableBuilder[Self <: SentMessageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SentMessageInfo](x: Self) {
     
-    @scala.inline
-    def setAccepted(value: js.Array[String]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
+    inline def setAccepted(value: js.Array[String]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptedVarargs(value: String*): Self = StObject.set(x, "accepted", js.Array(value :_*))
+    inline def setAcceptedVarargs(value: String*): Self = StObject.set(x, "accepted", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvelopeTime(value: Double): Self = StObject.set(x, "envelopeTime", value.asInstanceOf[js.Any])
+    inline def setEnvelopeTime(value: Double): Self = StObject.set(x, "envelopeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageSize(value: Double): Self = StObject.set(x, "messageSize", value.asInstanceOf[js.Any])
+    inline def setMessageSize(value: Double): Self = StObject.set(x, "messageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTime(value: Double): Self = StObject.set(x, "messageTime", value.asInstanceOf[js.Any])
+    inline def setMessageTime(value: Double): Self = StObject.set(x, "messageTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejected(value: js.Array[String]): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+    inline def setRejected(value: js.Array[String]): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectedErrors(value: js.Array[SMTPError]): Self = StObject.set(x, "rejectedErrors", value.asInstanceOf[js.Any])
+    inline def setRejectedErrors(value: js.Array[SMTPError]): Self = StObject.set(x, "rejectedErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectedErrorsUndefined: Self = StObject.set(x, "rejectedErrors", js.undefined)
+    inline def setRejectedErrorsUndefined: Self = StObject.set(x, "rejectedErrors", js.undefined)
     
-    @scala.inline
-    def setRejectedErrorsVarargs(value: SMTPError*): Self = StObject.set(x, "rejectedErrors", js.Array(value :_*))
+    inline def setRejectedErrorsVarargs(value: SMTPError*): Self = StObject.set(x, "rejectedErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setRejectedVarargs(value: String*): Self = StObject.set(x, "rejected", js.Array(value :_*))
+    inline def setRejectedVarargs(value: String*): Self = StObject.set(x, "rejected", js.Array(value :_*))
     
-    @scala.inline
-    def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -70,21 +70,16 @@ object smsChannelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): SmsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SmsChannel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SmsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SmsChannel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SmsChannelState): SmsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SmsChannel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SmsChannelState, opts: CustomResourceOptions): SmsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SmsChannel]
+    inline def get(name: String, id: Input[ID]): SmsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SmsChannel]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SmsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SmsChannel]
+    inline def get(name: String, id: Input[ID], state: SmsChannelState): SmsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SmsChannel]
+    inline def get(name: String, id: Input[ID], state: SmsChannelState, opts: CustomResourceOptions): SmsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SmsChannel]
     
     /**
       * Returns true if the given object is an instance of SmsChannel.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/smsChannel.SmsChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/smsChannel.SmsChannel */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/smsChannel.SmsChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/smsChannel.SmsChannel */ Boolean]
   }
   
   trait SmsChannelArgs extends StObject {
@@ -111,35 +106,26 @@ object smsChannelMod {
   }
   object SmsChannelArgs {
     
-    @scala.inline
-    def apply(applicationId: Input[String]): SmsChannelArgs = {
+    inline def apply(applicationId: Input[String]): SmsChannelArgs = {
       val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SmsChannelArgs]
     }
     
-    @scala.inline
-    implicit class SmsChannelArgsMutableBuilder[Self <: SmsChannelArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SmsChannelArgs](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setSenderId(value: Input[String]): Self = StObject.set(x, "senderId", value.asInstanceOf[js.Any])
+      inline def setSenderId(value: Input[String]): Self = StObject.set(x, "senderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenderIdUndefined: Self = StObject.set(x, "senderId", js.undefined)
+      inline def setSenderIdUndefined: Self = StObject.set(x, "senderId", js.undefined)
       
-      @scala.inline
-      def setShortCode(value: Input[String]): Self = StObject.set(x, "shortCode", value.asInstanceOf[js.Any])
+      inline def setShortCode(value: Input[String]): Self = StObject.set(x, "shortCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortCodeUndefined: Self = StObject.set(x, "shortCode", js.undefined)
+      inline def setShortCodeUndefined: Self = StObject.set(x, "shortCode", js.undefined)
     }
   }
   
@@ -177,50 +163,36 @@ object smsChannelMod {
   }
   object SmsChannelState {
     
-    @scala.inline
-    def apply(): SmsChannelState = {
+    inline def apply(): SmsChannelState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SmsChannelState]
     }
     
-    @scala.inline
-    implicit class SmsChannelStateMutableBuilder[Self <: SmsChannelState] (val x: Self) extends AnyVal {
+    extension [Self <: SmsChannelState](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setPromotionalMessagesPerSecond(value: Input[Double]): Self = StObject.set(x, "promotionalMessagesPerSecond", value.asInstanceOf[js.Any])
+      inline def setPromotionalMessagesPerSecond(value: Input[Double]): Self = StObject.set(x, "promotionalMessagesPerSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromotionalMessagesPerSecondUndefined: Self = StObject.set(x, "promotionalMessagesPerSecond", js.undefined)
+      inline def setPromotionalMessagesPerSecondUndefined: Self = StObject.set(x, "promotionalMessagesPerSecond", js.undefined)
       
-      @scala.inline
-      def setSenderId(value: Input[String]): Self = StObject.set(x, "senderId", value.asInstanceOf[js.Any])
+      inline def setSenderId(value: Input[String]): Self = StObject.set(x, "senderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenderIdUndefined: Self = StObject.set(x, "senderId", js.undefined)
+      inline def setSenderIdUndefined: Self = StObject.set(x, "senderId", js.undefined)
       
-      @scala.inline
-      def setShortCode(value: Input[String]): Self = StObject.set(x, "shortCode", value.asInstanceOf[js.Any])
+      inline def setShortCode(value: Input[String]): Self = StObject.set(x, "shortCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortCodeUndefined: Self = StObject.set(x, "shortCode", js.undefined)
+      inline def setShortCodeUndefined: Self = StObject.set(x, "shortCode", js.undefined)
       
-      @scala.inline
-      def setTransactionalMessagesPerSecond(value: Input[Double]): Self = StObject.set(x, "transactionalMessagesPerSecond", value.asInstanceOf[js.Any])
+      inline def setTransactionalMessagesPerSecond(value: Input[Double]): Self = StObject.set(x, "transactionalMessagesPerSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionalMessagesPerSecondUndefined: Self = StObject.set(x, "transactionalMessagesPerSecond", js.undefined)
+      inline def setTransactionalMessagesPerSecondUndefined: Self = StObject.set(x, "transactionalMessagesPerSecond", js.undefined)
     }
   }
 }

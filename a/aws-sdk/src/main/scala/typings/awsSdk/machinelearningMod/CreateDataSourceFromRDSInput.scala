@@ -33,34 +33,25 @@ trait CreateDataSourceFromRDSInput extends StObject {
 }
 object CreateDataSourceFromRDSInput {
   
-  @scala.inline
-  def apply(DataSourceId: EntityId, RDSData: RDSDataSpec, RoleARN: RoleARN): CreateDataSourceFromRDSInput = {
+  inline def apply(DataSourceId: EntityId, RDSData: RDSDataSpec, RoleARN: RoleARN): CreateDataSourceFromRDSInput = {
     val __obj = js.Dynamic.literal(DataSourceId = DataSourceId.asInstanceOf[js.Any], RDSData = RDSData.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDataSourceFromRDSInput]
   }
   
-  @scala.inline
-  implicit class CreateDataSourceFromRDSInputMutableBuilder[Self <: CreateDataSourceFromRDSInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDataSourceFromRDSInput](x: Self) {
     
-    @scala.inline
-    def setComputeStatistics(value: ComputeStatistics): Self = StObject.set(x, "ComputeStatistics", value.asInstanceOf[js.Any])
+    inline def setComputeStatistics(value: ComputeStatistics): Self = StObject.set(x, "ComputeStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeStatisticsUndefined: Self = StObject.set(x, "ComputeStatistics", js.undefined)
+    inline def setComputeStatisticsUndefined: Self = StObject.set(x, "ComputeStatistics", js.undefined)
     
-    @scala.inline
-    def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceName(value: EntityName): Self = StObject.set(x, "DataSourceName", value.asInstanceOf[js.Any])
+    inline def setDataSourceName(value: EntityName): Self = StObject.set(x, "DataSourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceNameUndefined: Self = StObject.set(x, "DataSourceName", js.undefined)
+    inline def setDataSourceNameUndefined: Self = StObject.set(x, "DataSourceName", js.undefined)
     
-    @scala.inline
-    def setRDSData(value: RDSDataSpec): Self = StObject.set(x, "RDSData", value.asInstanceOf[js.Any])
+    inline def setRDSData(value: RDSDataSpec): Self = StObject.set(x, "RDSData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
   }
 }

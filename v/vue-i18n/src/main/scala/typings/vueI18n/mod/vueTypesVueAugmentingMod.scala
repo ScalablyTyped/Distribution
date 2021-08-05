@@ -109,8 +109,7 @@ object vueTypesVueAugmentingMod {
   }
   object Vue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $d: FnCallValueKeyLocale,
       $i18n: VueI18n & IVueI18n,
       $n: Fn0,
@@ -122,26 +121,19 @@ object vueTypesVueAugmentingMod {
       __obj.asInstanceOf[Vue]
     }
     
-    @scala.inline
-    implicit class VueMutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
+    extension [Self <: Vue](x: Self) {
       
-      @scala.inline
-      def set$d(value: FnCallValueKeyLocale): Self = StObject.set(x, "$d", value.asInstanceOf[js.Any])
+      inline def set$d(value: FnCallValueKeyLocale): Self = StObject.set(x, "$d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$i18n(value: VueI18n & IVueI18n): Self = StObject.set(x, "$i18n", value.asInstanceOf[js.Any])
+      inline def set$i18n(value: VueI18n & IVueI18n): Self = StObject.set(x, "$i18n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$n(value: Fn0): Self = StObject.set(x, "$n", value.asInstanceOf[js.Any])
+      inline def set$n(value: Fn0): Self = StObject.set(x, "$n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$t(value: FnCall): Self = StObject.set(x, "$t", value.asInstanceOf[js.Any])
+      inline def set$t(value: FnCall): Self = StObject.set(x, "$t", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$tc(value: FnCallKeyChoiceLocaleValues): Self = StObject.set(x, "$tc", value.asInstanceOf[js.Any])
+      inline def set$tc(value: FnCallKeyChoiceLocaleValues): Self = StObject.set(x, "$tc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$te(
+      inline def set$te(
         value: (/* key */ typings.vueI18n.mod.VueI18n.Path, /* locale */ js.UndefOr[typings.vueI18n.mod.VueI18n.Locale]) => Boolean
       ): Self = StObject.set(x, "$te", js.Any.fromFunction2(value))
     }

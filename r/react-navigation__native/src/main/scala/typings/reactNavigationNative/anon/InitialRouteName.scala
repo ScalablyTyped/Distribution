@@ -13,22 +13,17 @@ trait InitialRouteName extends StObject {
 }
 object InitialRouteName {
   
-  @scala.inline
-  def apply(screens: PathConfigMap): InitialRouteName = {
+  inline def apply(screens: PathConfigMap): InitialRouteName = {
     val __obj = js.Dynamic.literal(screens = screens.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitialRouteName]
   }
   
-  @scala.inline
-  implicit class InitialRouteNameMutableBuilder[Self <: InitialRouteName] (val x: Self) extends AnyVal {
+  extension [Self <: InitialRouteName](x: Self) {
     
-    @scala.inline
-    def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
+    inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
+    inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
     
-    @scala.inline
-    def setScreens(value: PathConfigMap): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
+    inline def setScreens(value: PathConfigMap): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
   }
 }

@@ -103,8 +103,7 @@ object anon {
   }
   object AbyssalSire {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `Abyssal Sire`: RankScoreObject,
       `Alchemical Hydra`: RankScoreObject,
       `Barrows Chests`: RankScoreObject,
@@ -181,137 +180,93 @@ object anon {
       __obj.asInstanceOf[AbyssalSire]
     }
     
-    @scala.inline
-    implicit class AbyssalSireMutableBuilder[Self <: AbyssalSire] (val x: Self) extends AnyVal {
+    extension [Self <: AbyssalSire](x: Self) {
       
-      @scala.inline
-      def `setAbyssal Sire`(value: RankScoreObject): Self = StObject.set(x, "Abyssal Sire", value.asInstanceOf[js.Any])
+      inline def `setAbyssal Sire`(value: RankScoreObject): Self = StObject.set(x, "Abyssal Sire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAlchemical Hydra`(value: RankScoreObject): Self = StObject.set(x, "Alchemical Hydra", value.asInstanceOf[js.Any])
+      inline def `setAlchemical Hydra`(value: RankScoreObject): Self = StObject.set(x, "Alchemical Hydra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBarrows Chests`(value: RankScoreObject): Self = StObject.set(x, "Barrows Chests", value.asInstanceOf[js.Any])
+      inline def `setBarrows Chests`(value: RankScoreObject): Self = StObject.set(x, "Barrows Chests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBryophyta(value: RankScoreObject): Self = StObject.set(x, "Bryophyta", value.asInstanceOf[js.Any])
+      inline def setBryophyta(value: RankScoreObject): Self = StObject.set(x, "Bryophyta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallisto(value: RankScoreObject): Self = StObject.set(x, "Callisto", value.asInstanceOf[js.Any])
+      inline def setCallisto(value: RankScoreObject): Self = StObject.set(x, "Callisto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCerberus(value: RankScoreObject): Self = StObject.set(x, "Cerberus", value.asInstanceOf[js.Any])
+      inline def setCerberus(value: RankScoreObject): Self = StObject.set(x, "Cerberus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setChambers of Xeric`(value: RankScoreObject): Self = StObject.set(x, "Chambers of Xeric", value.asInstanceOf[js.Any])
+      inline def `setChambers of Xeric`(value: RankScoreObject): Self = StObject.set(x, "Chambers of Xeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setChambers of XericColon Challenge Mode`(value: RankScoreObject): Self = StObject.set(x, "Chambers of Xeric: Challenge Mode", value.asInstanceOf[js.Any])
+      inline def `setChambers of XericColon Challenge Mode`(value: RankScoreObject): Self = StObject.set(x, "Chambers of Xeric: Challenge Mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setChaos Elemental`(value: RankScoreObject): Self = StObject.set(x, "Chaos Elemental", value.asInstanceOf[js.Any])
+      inline def `setChaos Elemental`(value: RankScoreObject): Self = StObject.set(x, "Chaos Elemental", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setChaos Fanatic`(value: RankScoreObject): Self = StObject.set(x, "Chaos Fanatic", value.asInstanceOf[js.Any])
+      inline def `setChaos Fanatic`(value: RankScoreObject): Self = StObject.set(x, "Chaos Fanatic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCommander Zilyana`(value: RankScoreObject): Self = StObject.set(x, "Commander Zilyana", value.asInstanceOf[js.Any])
+      inline def `setCommander Zilyana`(value: RankScoreObject): Self = StObject.set(x, "Commander Zilyana", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCorporeal Beast`(value: RankScoreObject): Self = StObject.set(x, "Corporeal Beast", value.asInstanceOf[js.Any])
+      inline def `setCorporeal Beast`(value: RankScoreObject): Self = StObject.set(x, "Corporeal Beast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCrazy Archaeologist`(value: RankScoreObject): Self = StObject.set(x, "Crazy Archaeologist", value.asInstanceOf[js.Any])
+      inline def `setCrazy Archaeologist`(value: RankScoreObject): Self = StObject.set(x, "Crazy Archaeologist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDagannoth Prime`(value: RankScoreObject): Self = StObject.set(x, "Dagannoth Prime", value.asInstanceOf[js.Any])
+      inline def `setDagannoth Prime`(value: RankScoreObject): Self = StObject.set(x, "Dagannoth Prime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDagannoth Rex`(value: RankScoreObject): Self = StObject.set(x, "Dagannoth Rex", value.asInstanceOf[js.Any])
+      inline def `setDagannoth Rex`(value: RankScoreObject): Self = StObject.set(x, "Dagannoth Rex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDagannoth Supreme`(value: RankScoreObject): Self = StObject.set(x, "Dagannoth Supreme", value.asInstanceOf[js.Any])
+      inline def `setDagannoth Supreme`(value: RankScoreObject): Self = StObject.set(x, "Dagannoth Supreme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDeranged Archaeologist`(value: RankScoreObject): Self = StObject.set(x, "Deranged Archaeologist", value.asInstanceOf[js.Any])
+      inline def `setDeranged Archaeologist`(value: RankScoreObject): Self = StObject.set(x, "Deranged Archaeologist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGeneral Graardor`(value: RankScoreObject): Self = StObject.set(x, "General Graardor", value.asInstanceOf[js.Any])
+      inline def `setGeneral Graardor`(value: RankScoreObject): Self = StObject.set(x, "General Graardor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGiant Mole`(value: RankScoreObject): Self = StObject.set(x, "Giant Mole", value.asInstanceOf[js.Any])
+      inline def `setGiant Mole`(value: RankScoreObject): Self = StObject.set(x, "Giant Mole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGrotesque Guardians`(value: RankScoreObject): Self = StObject.set(x, "Grotesque Guardians", value.asInstanceOf[js.Any])
+      inline def `setGrotesque Guardians`(value: RankScoreObject): Self = StObject.set(x, "Grotesque Guardians", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHespori(value: RankScoreObject): Self = StObject.set(x, "Hespori", value.asInstanceOf[js.Any])
+      inline def setHespori(value: RankScoreObject): Self = StObject.set(x, "Hespori", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setKApostropheril Tsutsaroth`(value: RankScoreObject): Self = StObject.set(x, "K'ril Tsutsaroth", value.asInstanceOf[js.Any])
+      inline def `setKApostropheril Tsutsaroth`(value: RankScoreObject): Self = StObject.set(x, "K'ril Tsutsaroth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setKalphite Queen`(value: RankScoreObject): Self = StObject.set(x, "Kalphite Queen", value.asInstanceOf[js.Any])
+      inline def `setKalphite Queen`(value: RankScoreObject): Self = StObject.set(x, "Kalphite Queen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setKing Black Dragon`(value: RankScoreObject): Self = StObject.set(x, "King Black Dragon", value.asInstanceOf[js.Any])
+      inline def `setKing Black Dragon`(value: RankScoreObject): Self = StObject.set(x, "King Black Dragon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKraken(value: RankScoreObject): Self = StObject.set(x, "Kraken", value.asInstanceOf[js.Any])
+      inline def setKraken(value: RankScoreObject): Self = StObject.set(x, "Kraken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKreeApostropheArra(value: RankScoreObject): Self = StObject.set(x, "Kree'Arra", value.asInstanceOf[js.Any])
+      inline def setKreeApostropheArra(value: RankScoreObject): Self = StObject.set(x, "Kree'Arra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimic(value: RankScoreObject): Self = StObject.set(x, "Mimic", value.asInstanceOf[js.Any])
+      inline def setMimic(value: RankScoreObject): Self = StObject.set(x, "Mimic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObor(value: RankScoreObject): Self = StObject.set(x, "Obor", value.asInstanceOf[js.Any])
+      inline def setObor(value: RankScoreObject): Self = StObject.set(x, "Obor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSarachnis(value: RankScoreObject): Self = StObject.set(x, "Sarachnis", value.asInstanceOf[js.Any])
+      inline def setSarachnis(value: RankScoreObject): Self = StObject.set(x, "Sarachnis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScorpia(value: RankScoreObject): Self = StObject.set(x, "Scorpia", value.asInstanceOf[js.Any])
+      inline def setScorpia(value: RankScoreObject): Self = StObject.set(x, "Scorpia", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkotizo(value: RankScoreObject): Self = StObject.set(x, "Skotizo", value.asInstanceOf[js.Any])
+      inline def setSkotizo(value: RankScoreObject): Self = StObject.set(x, "Skotizo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setThe Corrupted Gauntlet`(value: RankScoreObject): Self = StObject.set(x, "The Corrupted Gauntlet", value.asInstanceOf[js.Any])
+      inline def `setThe Corrupted Gauntlet`(value: RankScoreObject): Self = StObject.set(x, "The Corrupted Gauntlet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setThe Gauntlet`(value: RankScoreObject): Self = StObject.set(x, "The Gauntlet", value.asInstanceOf[js.Any])
+      inline def `setThe Gauntlet`(value: RankScoreObject): Self = StObject.set(x, "The Gauntlet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTheatre of Blood`(value: RankScoreObject): Self = StObject.set(x, "Theatre of Blood", value.asInstanceOf[js.Any])
+      inline def `setTheatre of Blood`(value: RankScoreObject): Self = StObject.set(x, "Theatre of Blood", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setThermonuclear Smoke Devil`(value: RankScoreObject): Self = StObject.set(x, "Thermonuclear Smoke Devil", value.asInstanceOf[js.Any])
+      inline def `setThermonuclear Smoke Devil`(value: RankScoreObject): Self = StObject.set(x, "Thermonuclear Smoke Devil", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTzKal-Zuk`(value: RankScoreObject): Self = StObject.set(x, "TzKal-Zuk", value.asInstanceOf[js.Any])
+      inline def `setTzKal-Zuk`(value: RankScoreObject): Self = StObject.set(x, "TzKal-Zuk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTzTok-Jad`(value: RankScoreObject): Self = StObject.set(x, "TzTok-Jad", value.asInstanceOf[js.Any])
+      inline def `setTzTok-Jad`(value: RankScoreObject): Self = StObject.set(x, "TzTok-Jad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVenenatis(value: RankScoreObject): Self = StObject.set(x, "Venenatis", value.asInstanceOf[js.Any])
+      inline def setVenenatis(value: RankScoreObject): Self = StObject.set(x, "Venenatis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVetApostropheion(value: RankScoreObject): Self = StObject.set(x, "Vet'ion", value.asInstanceOf[js.Any])
+      inline def setVetApostropheion(value: RankScoreObject): Self = StObject.set(x, "Vet'ion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVorkath(value: RankScoreObject): Self = StObject.set(x, "Vorkath", value.asInstanceOf[js.Any])
+      inline def setVorkath(value: RankScoreObject): Self = StObject.set(x, "Vorkath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWintertodt(value: RankScoreObject): Self = StObject.set(x, "Wintertodt", value.asInstanceOf[js.Any])
+      inline def setWintertodt(value: RankScoreObject): Self = StObject.set(x, "Wintertodt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZalcano(value: RankScoreObject): Self = StObject.set(x, "Zalcano", value.asInstanceOf[js.Any])
+      inline def setZalcano(value: RankScoreObject): Self = StObject.set(x, "Zalcano", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZulrah(value: RankScoreObject): Self = StObject.set(x, "Zulrah", value.asInstanceOf[js.Any])
+      inline def setZulrah(value: RankScoreObject): Self = StObject.set(x, "Zulrah", value.asInstanceOf[js.Any])
     }
   }
   
@@ -367,8 +322,7 @@ object anon {
   }
   object Agility {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       agility: RankLevelXpObject,
       attack: RankLevelXpObject,
       construction: RankLevelXpObject,
@@ -398,80 +352,55 @@ object anon {
       __obj.asInstanceOf[Agility]
     }
     
-    @scala.inline
-    implicit class AgilityMutableBuilder[Self <: Agility] (val x: Self) extends AnyVal {
+    extension [Self <: Agility](x: Self) {
       
-      @scala.inline
-      def setAgility(value: RankLevelXpObject): Self = StObject.set(x, "agility", value.asInstanceOf[js.Any])
+      inline def setAgility(value: RankLevelXpObject): Self = StObject.set(x, "agility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttack(value: RankLevelXpObject): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
+      inline def setAttack(value: RankLevelXpObject): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstruction(value: RankLevelXpObject): Self = StObject.set(x, "construction", value.asInstanceOf[js.Any])
+      inline def setConstruction(value: RankLevelXpObject): Self = StObject.set(x, "construction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCooking(value: RankLevelXpObject): Self = StObject.set(x, "cooking", value.asInstanceOf[js.Any])
+      inline def setCooking(value: RankLevelXpObject): Self = StObject.set(x, "cooking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrafting(value: RankLevelXpObject): Self = StObject.set(x, "crafting", value.asInstanceOf[js.Any])
+      inline def setCrafting(value: RankLevelXpObject): Self = StObject.set(x, "crafting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefence(value: RankLevelXpObject): Self = StObject.set(x, "defence", value.asInstanceOf[js.Any])
+      inline def setDefence(value: RankLevelXpObject): Self = StObject.set(x, "defence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFarming(value: RankLevelXpObject): Self = StObject.set(x, "farming", value.asInstanceOf[js.Any])
+      inline def setFarming(value: RankLevelXpObject): Self = StObject.set(x, "farming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiremaking(value: RankLevelXpObject): Self = StObject.set(x, "firemaking", value.asInstanceOf[js.Any])
+      inline def setFiremaking(value: RankLevelXpObject): Self = StObject.set(x, "firemaking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFishing(value: RankLevelXpObject): Self = StObject.set(x, "fishing", value.asInstanceOf[js.Any])
+      inline def setFishing(value: RankLevelXpObject): Self = StObject.set(x, "fishing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFletching(value: RankLevelXpObject): Self = StObject.set(x, "fletching", value.asInstanceOf[js.Any])
+      inline def setFletching(value: RankLevelXpObject): Self = StObject.set(x, "fletching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHerblore(value: RankLevelXpObject): Self = StObject.set(x, "herblore", value.asInstanceOf[js.Any])
+      inline def setHerblore(value: RankLevelXpObject): Self = StObject.set(x, "herblore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitpoints(value: RankLevelXpObject): Self = StObject.set(x, "hitpoints", value.asInstanceOf[js.Any])
+      inline def setHitpoints(value: RankLevelXpObject): Self = StObject.set(x, "hitpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHunter(value: RankLevelXpObject): Self = StObject.set(x, "hunter", value.asInstanceOf[js.Any])
+      inline def setHunter(value: RankLevelXpObject): Self = StObject.set(x, "hunter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagic(value: RankLevelXpObject): Self = StObject.set(x, "magic", value.asInstanceOf[js.Any])
+      inline def setMagic(value: RankLevelXpObject): Self = StObject.set(x, "magic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMining(value: RankLevelXpObject): Self = StObject.set(x, "mining", value.asInstanceOf[js.Any])
+      inline def setMining(value: RankLevelXpObject): Self = StObject.set(x, "mining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverall(value: RankLevelXpObject): Self = StObject.set(x, "overall", value.asInstanceOf[js.Any])
+      inline def setOverall(value: RankLevelXpObject): Self = StObject.set(x, "overall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrayer(value: RankLevelXpObject): Self = StObject.set(x, "prayer", value.asInstanceOf[js.Any])
+      inline def setPrayer(value: RankLevelXpObject): Self = StObject.set(x, "prayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRanged(value: RankLevelXpObject): Self = StObject.set(x, "ranged", value.asInstanceOf[js.Any])
+      inline def setRanged(value: RankLevelXpObject): Self = StObject.set(x, "ranged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunecraft(value: RankLevelXpObject): Self = StObject.set(x, "runecraft", value.asInstanceOf[js.Any])
+      inline def setRunecraft(value: RankLevelXpObject): Self = StObject.set(x, "runecraft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlayer(value: RankLevelXpObject): Self = StObject.set(x, "slayer", value.asInstanceOf[js.Any])
+      inline def setSlayer(value: RankLevelXpObject): Self = StObject.set(x, "slayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmithing(value: RankLevelXpObject): Self = StObject.set(x, "smithing", value.asInstanceOf[js.Any])
+      inline def setSmithing(value: RankLevelXpObject): Self = StObject.set(x, "smithing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrength(value: RankLevelXpObject): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
+      inline def setStrength(value: RankLevelXpObject): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThieving(value: RankLevelXpObject): Self = StObject.set(x, "thieving", value.asInstanceOf[js.Any])
+      inline def setThieving(value: RankLevelXpObject): Self = StObject.set(x, "thieving", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWoodcutting(value: RankLevelXpObject): Self = StObject.set(x, "woodcutting", value.asInstanceOf[js.Any])
+      inline def setWoodcutting(value: RankLevelXpObject): Self = StObject.set(x, "woodcutting", value.asInstanceOf[js.Any])
     }
   }
   
@@ -493,8 +422,7 @@ object anon {
   }
   object All {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       all: RankScoreObject,
       beginner: RankScoreObject,
       easy: RankScoreObject,
@@ -507,29 +435,21 @@ object anon {
       __obj.asInstanceOf[All]
     }
     
-    @scala.inline
-    implicit class AllMutableBuilder[Self <: All] (val x: Self) extends AnyVal {
+    extension [Self <: All](x: Self) {
       
-      @scala.inline
-      def setAll(value: RankScoreObject): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: RankScoreObject): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeginner(value: RankScoreObject): Self = StObject.set(x, "beginner", value.asInstanceOf[js.Any])
+      inline def setBeginner(value: RankScoreObject): Self = StObject.set(x, "beginner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasy(value: RankScoreObject): Self = StObject.set(x, "easy", value.asInstanceOf[js.Any])
+      inline def setEasy(value: RankScoreObject): Self = StObject.set(x, "easy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElite(value: RankScoreObject): Self = StObject.set(x, "elite", value.asInstanceOf[js.Any])
+      inline def setElite(value: RankScoreObject): Self = StObject.set(x, "elite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHard(value: RankScoreObject): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
+      inline def setHard(value: RankScoreObject): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaster(value: RankScoreObject): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
+      inline def setMaster(value: RankScoreObject): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedium(value: RankScoreObject): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+      inline def setMedium(value: RankScoreObject): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     }
   }
   
@@ -563,8 +483,7 @@ object anon {
   }
   object Current {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current: TrendPriceObject,
       day180: TrendPriceObject,
       day30: TrendPriceObject,
@@ -584,47 +503,33 @@ object anon {
       __obj.asInstanceOf[Current]
     }
     
-    @scala.inline
-    implicit class CurrentMutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
+    extension [Self <: Current](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: TrendPriceObject): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: TrendPriceObject): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDay180(value: TrendPriceObject): Self = StObject.set(x, "day180", value.asInstanceOf[js.Any])
+      inline def setDay180(value: TrendPriceObject): Self = StObject.set(x, "day180", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDay30(value: TrendPriceObject): Self = StObject.set(x, "day30", value.asInstanceOf[js.Any])
+      inline def setDay30(value: TrendPriceObject): Self = StObject.set(x, "day30", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDay90(value: TrendPriceObject): Self = StObject.set(x, "day90", value.asInstanceOf[js.Any])
+      inline def setDay90(value: TrendPriceObject): Self = StObject.set(x, "day90", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon_large(value: String): Self = StObject.set(x, "icon_large", value.asInstanceOf[js.Any])
+      inline def setIcon_large(value: String): Self = StObject.set(x, "icon_large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers(value: Boolean): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: Boolean): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToday(value: TrendPriceObject): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+      inline def setToday(value: TrendPriceObject): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeIcon(value: String): Self = StObject.set(x, "typeIcon", value.asInstanceOf[js.Any])
+      inline def setTypeIcon(value: String): Self = StObject.set(x, "typeIcon", value.asInstanceOf[js.Any])
     }
   }
   
@@ -636,20 +541,16 @@ object anon {
   }
   object Hunter {
     
-    @scala.inline
-    def apply(hunter: RankScoreObject, rogue: RankScoreObject): Hunter = {
+    inline def apply(hunter: RankScoreObject, rogue: RankScoreObject): Hunter = {
       val __obj = js.Dynamic.literal(hunter = hunter.asInstanceOf[js.Any], rogue = rogue.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hunter]
     }
     
-    @scala.inline
-    implicit class HunterMutableBuilder[Self <: Hunter] (val x: Self) extends AnyVal {
+    extension [Self <: Hunter](x: Self) {
       
-      @scala.inline
-      def setHunter(value: RankScoreObject): Self = StObject.set(x, "hunter", value.asInstanceOf[js.Any])
+      inline def setHunter(value: RankScoreObject): Self = StObject.set(x, "hunter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRogue(value: RankScoreObject): Self = StObject.set(x, "rogue", value.asInstanceOf[js.Any])
+      inline def setRogue(value: RankScoreObject): Self = StObject.set(x, "rogue", value.asInstanceOf[js.Any])
     }
   }
 }

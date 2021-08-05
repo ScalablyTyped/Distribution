@@ -14,17 +14,14 @@ object Geo {
   }
   object Circle {
     
-    @scala.inline
-    def apply(latitute: Double, longitude: Double, radius: Double): Circle = {
+    inline def apply(latitute: Double, longitude: Double, radius: Double): Circle = {
       val __obj = js.Dynamic.literal(latitute = latitute.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
       __obj.asInstanceOf[Circle]
     }
     
-    @scala.inline
-    implicit class CircleMutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
+    extension [Self <: Circle](x: Self) {
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,20 +33,16 @@ object Geo {
   }
   object Coordinate {
     
-    @scala.inline
-    def apply(latitute: Double, longitude: Double): Coordinate = {
+    inline def apply(latitute: Double, longitude: Double): Coordinate = {
       val __obj = js.Dynamic.literal(latitute = latitute.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
       __obj.asInstanceOf[Coordinate]
     }
     
-    @scala.inline
-    implicit class CoordinateMutableBuilder[Self <: Coordinate] (val x: Self) extends AnyVal {
+    extension [Self <: Coordinate](x: Self) {
       
-      @scala.inline
-      def setLatitute(value: Double): Self = StObject.set(x, "latitute", value.asInstanceOf[js.Any])
+      inline def setLatitute(value: Double): Self = StObject.set(x, "latitute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,17 +52,14 @@ object Geo {
   }
   object DistanceOptions {
     
-    @scala.inline
-    def apply(bufferZoneWidth: Double): DistanceOptions = {
+    inline def apply(bufferZoneWidth: Double): DistanceOptions = {
       val __obj = js.Dynamic.literal(bufferZoneWidth = bufferZoneWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[DistanceOptions]
     }
     
-    @scala.inline
-    implicit class DistanceOptionsMutableBuilder[Self <: DistanceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DistanceOptions](x: Self) {
       
-      @scala.inline
-      def setBufferZoneWidth(value: Double): Self = StObject.set(x, "bufferZoneWidth", value.asInstanceOf[js.Any])
+      inline def setBufferZoneWidth(value: Double): Self = StObject.set(x, "bufferZoneWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,17 +72,14 @@ object Geo {
   }
   object InsideOutsideOptions {
     
-    @scala.inline
-    def apply(confidenceLevel: String): InsideOutsideOptions = {
+    inline def apply(confidenceLevel: String): InsideOutsideOptions = {
       val __obj = js.Dynamic.literal(confidenceLevel = confidenceLevel.asInstanceOf[js.Any])
       __obj.asInstanceOf[InsideOutsideOptions]
     }
     
-    @scala.inline
-    implicit class InsideOutsideOptionsMutableBuilder[Self <: InsideOutsideOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InsideOutsideOptions](x: Self) {
       
-      @scala.inline
-      def setConfidenceLevel(value: String): Self = StObject.set(x, "confidenceLevel", value.asInstanceOf[js.Any])
+      inline def setConfidenceLevel(value: String): Self = StObject.set(x, "confidenceLevel", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,19 +14,15 @@ trait ResolveMixins extends StObject {
 }
 object ResolveMixins {
   
-  @scala.inline
-  def apply(): ResolveMixins = {
+  inline def apply(): ResolveMixins = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolveMixins]
   }
   
-  @scala.inline
-  implicit class ResolveMixinsMutableBuilder[Self <: ResolveMixins] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveMixins](x: Self) {
     
-    @scala.inline
-    def setResolve(value: Resolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+    inline def setResolve(value: Resolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+    inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
   }
 }

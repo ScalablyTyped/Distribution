@@ -22,8 +22,7 @@ trait ICommitToGitTeamServerOptions
 }
 object ICommitToGitTeamServerOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authorEmail: String,
     authorName: String,
     commitMessage: String,
@@ -35,22 +34,16 @@ object ICommitToGitTeamServerOptions {
     __obj.asInstanceOf[ICommitToGitTeamServerOptions]
   }
   
-  @scala.inline
-  implicit class ICommitToGitTeamServerOptionsMutableBuilder[Self <: ICommitToGitTeamServerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ICommitToGitTeamServerOptions](x: Self) {
     
-    @scala.inline
-    def setAuthorEmail(value: String): Self = StObject.set(x, "authorEmail", value.asInstanceOf[js.Any])
+    inline def setAuthorEmail(value: String): Self = StObject.set(x, "authorEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorName(value: String): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
+    inline def setAuthorName(value: String): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryType(value: git): Self = StObject.set(x, "repositoryType", value.asInstanceOf[js.Any])
+    inline def setRepositoryType(value: git): Self = StObject.set(x, "repositoryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCommitId(value: String): Self = StObject.set(x, "targetCommitId", value.asInstanceOf[js.Any])
+    inline def setTargetCommitId(value: String): Self = StObject.set(x, "targetCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamServerGitUrl(value: String): Self = StObject.set(x, "teamServerGitUrl", value.asInstanceOf[js.Any])
+    inline def setTeamServerGitUrl(value: String): Self = StObject.set(x, "teamServerGitUrl", value.asInstanceOf[js.Any])
   }
 }

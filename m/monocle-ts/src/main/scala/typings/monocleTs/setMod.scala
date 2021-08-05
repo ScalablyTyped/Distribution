@@ -13,6 +13,5 @@ object setMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def atSet[A](E: Eq[A]): At_[Set[A], A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("atSet")(E.asInstanceOf[js.Any]).asInstanceOf[At_[Set[A], A, Boolean]]
+  inline def atSet[A](E: Eq[A]): At_[Set[A], A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("atSet")(E.asInstanceOf[js.Any]).asInstanceOf[At_[Set[A], A, Boolean]]
 }

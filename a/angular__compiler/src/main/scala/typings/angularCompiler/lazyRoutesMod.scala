@@ -13,13 +13,10 @@ object lazyRoutesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def listLazyRoutes(moduleMeta: CompileNgModuleMetadata, reflector: StaticReflector): js.Array[LazyRoute] = (^.asInstanceOf[js.Dynamic].applyDynamic("listLazyRoutes")(moduleMeta.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[js.Array[LazyRoute]]
+  inline def listLazyRoutes(moduleMeta: CompileNgModuleMetadata, reflector: StaticReflector): js.Array[LazyRoute] = (^.asInstanceOf[js.Dynamic].applyDynamic("listLazyRoutes")(moduleMeta.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[js.Array[LazyRoute]]
   
-  @scala.inline
-  def parseLazyRoute(route: String, reflector: StaticReflector): LazyRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("parseLazyRoute")(route.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[LazyRoute]
-  @scala.inline
-  def parseLazyRoute(route: String, reflector: StaticReflector, module: StaticSymbol): LazyRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("parseLazyRoute")(route.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[LazyRoute]
+  inline def parseLazyRoute(route: String, reflector: StaticReflector): LazyRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("parseLazyRoute")(route.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[LazyRoute]
+  inline def parseLazyRoute(route: String, reflector: StaticReflector, module: StaticSymbol): LazyRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("parseLazyRoute")(route.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[LazyRoute]
   
   trait LazyRoute extends StObject {
     
@@ -31,23 +28,18 @@ object lazyRoutesMod {
   }
   object LazyRoute {
     
-    @scala.inline
-    def apply(module: StaticSymbol, referencedModule: StaticSymbol, route: String): LazyRoute = {
+    inline def apply(module: StaticSymbol, referencedModule: StaticSymbol, route: String): LazyRoute = {
       val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], referencedModule = referencedModule.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[LazyRoute]
     }
     
-    @scala.inline
-    implicit class LazyRouteMutableBuilder[Self <: LazyRoute] (val x: Self) extends AnyVal {
+    extension [Self <: LazyRoute](x: Self) {
       
-      @scala.inline
-      def setModule(value: StaticSymbol): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: StaticSymbol): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencedModule(value: StaticSymbol): Self = StObject.set(x, "referencedModule", value.asInstanceOf[js.Any])
+      inline def setReferencedModule(value: StaticSymbol): Self = StObject.set(x, "referencedModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
 }

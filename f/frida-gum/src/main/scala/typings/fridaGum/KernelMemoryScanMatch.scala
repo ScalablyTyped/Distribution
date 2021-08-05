@@ -18,19 +18,15 @@ trait KernelMemoryScanMatch extends StObject {
 }
 object KernelMemoryScanMatch {
   
-  @scala.inline
-  def apply(address: UInt64, size: Double): KernelMemoryScanMatch = {
+  inline def apply(address: UInt64, size: Double): KernelMemoryScanMatch = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[KernelMemoryScanMatch]
   }
   
-  @scala.inline
-  implicit class KernelMemoryScanMatchMutableBuilder[Self <: KernelMemoryScanMatch] (val x: Self) extends AnyVal {
+  extension [Self <: KernelMemoryScanMatch](x: Self) {
     
-    @scala.inline
-    def setAddress(value: UInt64): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: UInt64): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

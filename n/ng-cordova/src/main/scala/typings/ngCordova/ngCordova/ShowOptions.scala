@@ -20,52 +20,37 @@ trait ShowOptions extends StObject {
 }
 object ShowOptions {
   
-  @scala.inline
-  def apply(): ShowOptions = {
+  inline def apply(): ShowOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShowOptions]
   }
   
-  @scala.inline
-  implicit class ShowOptionsMutableBuilder[Self <: ShowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShowOptions](x: Self) {
     
-    @scala.inline
-    def setAddCancelButtonWithLabel(value: String): Self = StObject.set(x, "addCancelButtonWithLabel", value.asInstanceOf[js.Any])
+    inline def setAddCancelButtonWithLabel(value: String): Self = StObject.set(x, "addCancelButtonWithLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddCancelButtonWithLabelUndefined: Self = StObject.set(x, "addCancelButtonWithLabel", js.undefined)
+    inline def setAddCancelButtonWithLabelUndefined: Self = StObject.set(x, "addCancelButtonWithLabel", js.undefined)
     
-    @scala.inline
-    def setAddDestructiveButtonWithLabel(value: String): Self = StObject.set(x, "addDestructiveButtonWithLabel", value.asInstanceOf[js.Any])
+    inline def setAddDestructiveButtonWithLabel(value: String): Self = StObject.set(x, "addDestructiveButtonWithLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddDestructiveButtonWithLabelUndefined: Self = StObject.set(x, "addDestructiveButtonWithLabel", js.undefined)
+    inline def setAddDestructiveButtonWithLabelUndefined: Self = StObject.set(x, "addDestructiveButtonWithLabel", js.undefined)
     
-    @scala.inline
-    def setAndroidEnableCancelButton(value: Boolean): Self = StObject.set(x, "androidEnableCancelButton", value.asInstanceOf[js.Any])
+    inline def setAndroidEnableCancelButton(value: Boolean): Self = StObject.set(x, "androidEnableCancelButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidEnableCancelButtonUndefined: Self = StObject.set(x, "androidEnableCancelButton", js.undefined)
+    inline def setAndroidEnableCancelButtonUndefined: Self = StObject.set(x, "androidEnableCancelButton", js.undefined)
     
-    @scala.inline
-    def setButtonLabels(value: js.Array[String]): Self = StObject.set(x, "buttonLabels", value.asInstanceOf[js.Any])
+    inline def setButtonLabels(value: js.Array[String]): Self = StObject.set(x, "buttonLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonLabelsUndefined: Self = StObject.set(x, "buttonLabels", js.undefined)
+    inline def setButtonLabelsUndefined: Self = StObject.set(x, "buttonLabels", js.undefined)
     
-    @scala.inline
-    def setButtonLabelsVarargs(value: String*): Self = StObject.set(x, "buttonLabels", js.Array(value :_*))
+    inline def setButtonLabelsVarargs(value: String*): Self = StObject.set(x, "buttonLabels", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setWinphoneEnableCancelButton(value: Boolean): Self = StObject.set(x, "winphoneEnableCancelButton", value.asInstanceOf[js.Any])
+    inline def setWinphoneEnableCancelButton(value: Boolean): Self = StObject.set(x, "winphoneEnableCancelButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWinphoneEnableCancelButtonUndefined: Self = StObject.set(x, "winphoneEnableCancelButton", js.undefined)
+    inline def setWinphoneEnableCancelButtonUndefined: Self = StObject.set(x, "winphoneEnableCancelButton", js.undefined)
   }
 }

@@ -11,34 +11,29 @@ object dropboxChooserNumbers {
   sealed trait `1280`
     extends StObject
        with ChooserFileBoundingBox
-  @scala.inline
-  def `1280`: `1280` = 1280.asInstanceOf[`1280`]
+  inline def `1280`: `1280` = 1280.asInstanceOf[`1280`]
   
   @js.native
   sealed trait `2048`
     extends StObject
        with ChooserFileBoundingBox
-  @scala.inline
-  def `2048`: `2048` = 2048.asInstanceOf[`2048`]
+  inline def `2048`: `2048` = 2048.asInstanceOf[`2048`]
   
   @js.native
   sealed trait `256`
     extends StObject
        with ChooserFileBoundingBox
-  @scala.inline
-  def `256`: `256` = 256.asInstanceOf[`256`]
+  inline def `256`: `256` = 256.asInstanceOf[`256`]
   
   @js.native
   sealed trait `75`
     extends StObject
        with ChooserFileBoundingBox
-  @scala.inline
-  def `75`: `75` = 75.asInstanceOf[`75`]
+  inline def `75`: `75` = 75.asInstanceOf[`75`]
   
   @js.native
   sealed trait `800`
     extends StObject
        with ChooserFileBoundingBox
-  @scala.inline
-  def `800`: `800` = 800.asInstanceOf[`800`]
+  inline def `800`: `800` = 800.asInstanceOf[`800`]
 }

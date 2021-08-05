@@ -31,26 +31,20 @@ object mod extends Shortcut {
   }
   object CallbackAsyncValue {
     
-    @scala.inline
-    def apply(before: String, fragment: Double, line: String, reply: js.Promise[Choices] => Unit): CallbackAsyncValue = {
+    inline def apply(before: String, fragment: Double, line: String, reply: js.Promise[Choices] => Unit): CallbackAsyncValue = {
       val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], reply = js.Any.fromFunction1(reply))
       __obj.asInstanceOf[CallbackAsyncValue]
     }
     
-    @scala.inline
-    implicit class CallbackAsyncValueMutableBuilder[Self <: CallbackAsyncValue] (val x: Self) extends AnyVal {
+    extension [Self <: CallbackAsyncValue](x: Self) {
       
-      @scala.inline
-      def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragment(value: Double): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+      inline def setFragment(value: Double): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReply(value: js.Promise[Choices] => Unit): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
+      inline def setReply(value: js.Promise[Choices] => Unit): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
     }
   }
   
@@ -68,26 +62,20 @@ object mod extends Shortcut {
   }
   object CallbackValue {
     
-    @scala.inline
-    def apply(before: String, fragment: Double, line: String, reply: Choices => Unit): CallbackValue = {
+    inline def apply(before: String, fragment: Double, line: String, reply: Choices => Unit): CallbackValue = {
       val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], reply = js.Any.fromFunction1(reply))
       __obj.asInstanceOf[CallbackValue]
     }
     
-    @scala.inline
-    implicit class CallbackValueMutableBuilder[Self <: CallbackValue] (val x: Self) extends AnyVal {
+    extension [Self <: CallbackValue](x: Self) {
       
-      @scala.inline
-      def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragment(value: Double): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+      inline def setFragment(value: Double): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReply(value: Choices => Unit): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
+      inline def setReply(value: Choices => Unit): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
     }
   }
   

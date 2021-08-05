@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NodeStatusFill extends StObject
 object NodeStatusFill {
   
-  @scala.inline
-  def blue: typings.nodeRedRegistry.nodeRedRegistryStrings.blue = "blue".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.blue]
+  inline def blue: typings.nodeRedRegistry.nodeRedRegistryStrings.blue = "blue".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.blue]
   
-  @scala.inline
-  def green: typings.nodeRedRegistry.nodeRedRegistryStrings.green = "green".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.green]
+  inline def green: typings.nodeRedRegistry.nodeRedRegistryStrings.green = "green".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.green]
   
-  @scala.inline
-  def grey: typings.nodeRedRegistry.nodeRedRegistryStrings.grey = "grey".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.grey]
+  inline def grey: typings.nodeRedRegistry.nodeRedRegistryStrings.grey = "grey".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.grey]
   
-  @scala.inline
-  def red: typings.nodeRedRegistry.nodeRedRegistryStrings.red = "red".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.red]
+  inline def red: typings.nodeRedRegistry.nodeRedRegistryStrings.red = "red".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.red]
   
-  @scala.inline
-  def yellow: typings.nodeRedRegistry.nodeRedRegistryStrings.yellow = "yellow".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.yellow]
+  inline def yellow: typings.nodeRedRegistry.nodeRedRegistryStrings.yellow = "yellow".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.yellow]
 }

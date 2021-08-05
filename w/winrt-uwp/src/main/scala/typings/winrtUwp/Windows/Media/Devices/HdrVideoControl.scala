@@ -19,22 +19,17 @@ trait HdrVideoControl extends StObject {
 }
 object HdrVideoControl {
   
-  @scala.inline
-  def apply(mode: HdrVideoMode, supported: Boolean, supportedModes: IVectorView[HdrVideoMode]): HdrVideoControl = {
+  inline def apply(mode: HdrVideoMode, supported: Boolean, supportedModes: IVectorView[HdrVideoMode]): HdrVideoControl = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any], supportedModes = supportedModes.asInstanceOf[js.Any])
     __obj.asInstanceOf[HdrVideoControl]
   }
   
-  @scala.inline
-  implicit class HdrVideoControlMutableBuilder[Self <: HdrVideoControl] (val x: Self) extends AnyVal {
+  extension [Self <: HdrVideoControl](x: Self) {
     
-    @scala.inline
-    def setMode(value: HdrVideoMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: HdrVideoMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedModes(value: IVectorView[HdrVideoMode]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
+    inline def setSupportedModes(value: IVectorView[HdrVideoMode]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
   }
 }

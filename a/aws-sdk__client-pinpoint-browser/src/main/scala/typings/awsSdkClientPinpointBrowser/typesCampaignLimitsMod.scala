@@ -30,38 +30,28 @@ object typesCampaignLimitsMod {
   }
   object CampaignLimits {
     
-    @scala.inline
-    def apply(): CampaignLimits = {
+    inline def apply(): CampaignLimits = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CampaignLimits]
     }
     
-    @scala.inline
-    implicit class CampaignLimitsMutableBuilder[Self <: CampaignLimits] (val x: Self) extends AnyVal {
+    extension [Self <: CampaignLimits](x: Self) {
       
-      @scala.inline
-      def setDaily(value: Double): Self = StObject.set(x, "Daily", value.asInstanceOf[js.Any])
+      inline def setDaily(value: Double): Self = StObject.set(x, "Daily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDailyUndefined: Self = StObject.set(x, "Daily", js.undefined)
+      inline def setDailyUndefined: Self = StObject.set(x, "Daily", js.undefined)
       
-      @scala.inline
-      def setMaximumDuration(value: Double): Self = StObject.set(x, "MaximumDuration", value.asInstanceOf[js.Any])
+      inline def setMaximumDuration(value: Double): Self = StObject.set(x, "MaximumDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumDurationUndefined: Self = StObject.set(x, "MaximumDuration", js.undefined)
+      inline def setMaximumDurationUndefined: Self = StObject.set(x, "MaximumDuration", js.undefined)
       
-      @scala.inline
-      def setMessagesPerSecond(value: Double): Self = StObject.set(x, "MessagesPerSecond", value.asInstanceOf[js.Any])
+      inline def setMessagesPerSecond(value: Double): Self = StObject.set(x, "MessagesPerSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesPerSecondUndefined: Self = StObject.set(x, "MessagesPerSecond", js.undefined)
+      inline def setMessagesPerSecondUndefined: Self = StObject.set(x, "MessagesPerSecond", js.undefined)
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
+      inline def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
     }
   }
   

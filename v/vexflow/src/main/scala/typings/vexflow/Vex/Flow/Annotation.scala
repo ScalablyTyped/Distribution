@@ -22,8 +22,7 @@ trait Annotation
 }
 object Annotation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignSubNotesWithNote: (js.Array[Note], Note) => Unit,
     draw: () => Unit,
     getCategory: () => String,
@@ -105,19 +104,14 @@ object Annotation {
          with VerticalJustify
   }
   
-  @scala.inline
-  implicit class AnnotationMutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
+  extension [Self <: Annotation](x: Self) {
     
-    @scala.inline
-    def setGetJustification(value: () => Justify): Self = StObject.set(x, "getJustification", js.Any.fromFunction0(value))
+    inline def setGetJustification(value: () => Justify): Self = StObject.set(x, "getJustification", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFont(value: (String, Double, String) => Annotation): Self = StObject.set(x, "setFont", js.Any.fromFunction3(value))
+    inline def setSetFont(value: (String, Double, String) => Annotation): Self = StObject.set(x, "setFont", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetJustification(value: Justify => Annotation): Self = StObject.set(x, "setJustification", js.Any.fromFunction1(value))
+    inline def setSetJustification(value: Justify => Annotation): Self = StObject.set(x, "setJustification", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVerticalJustification(value: VerticalJustify => Annotation): Self = StObject.set(x, "setVerticalJustification", js.Any.fromFunction1(value))
+    inline def setSetVerticalJustification(value: VerticalJustify => Annotation): Self = StObject.set(x, "setVerticalJustification", js.Any.fromFunction1(value))
   }
 }

@@ -12,19 +12,15 @@ trait CreateLoginResponse extends StObject {
 }
 object CreateLoginResponse {
   
-  @scala.inline
-  def apply(result: Boolean, taskId: Double): CreateLoginResponse = {
+  inline def apply(result: Boolean, taskId: Double): CreateLoginResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLoginResponse]
   }
   
-  @scala.inline
-  implicit class CreateLoginResponseMutableBuilder[Self <: CreateLoginResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLoginResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskId(value: Double): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: Double): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

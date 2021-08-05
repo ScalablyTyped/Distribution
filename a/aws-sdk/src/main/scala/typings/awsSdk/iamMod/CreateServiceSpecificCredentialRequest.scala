@@ -18,19 +18,15 @@ trait CreateServiceSpecificCredentialRequest extends StObject {
 }
 object CreateServiceSpecificCredentialRequest {
   
-  @scala.inline
-  def apply(ServiceName: serviceName, UserName: userNameType): CreateServiceSpecificCredentialRequest = {
+  inline def apply(ServiceName: serviceName, UserName: userNameType): CreateServiceSpecificCredentialRequest = {
     val __obj = js.Dynamic.literal(ServiceName = ServiceName.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateServiceSpecificCredentialRequest]
   }
   
-  @scala.inline
-  implicit class CreateServiceSpecificCredentialRequestMutableBuilder[Self <: CreateServiceSpecificCredentialRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateServiceSpecificCredentialRequest](x: Self) {
     
-    @scala.inline
-    def setServiceName(value: serviceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: serviceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

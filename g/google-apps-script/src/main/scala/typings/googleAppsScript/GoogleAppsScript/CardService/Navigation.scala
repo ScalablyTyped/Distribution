@@ -23,8 +23,7 @@ trait Navigation extends StObject {
 }
 object Navigation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     popCard: () => Navigation,
     popToNamedCard: String => Navigation,
     popToRoot: () => Navigation,
@@ -36,25 +35,18 @@ object Navigation {
     __obj.asInstanceOf[Navigation]
   }
   
-  @scala.inline
-  implicit class NavigationMutableBuilder[Self <: Navigation] (val x: Self) extends AnyVal {
+  extension [Self <: Navigation](x: Self) {
     
-    @scala.inline
-    def setPopCard(value: () => Navigation): Self = StObject.set(x, "popCard", js.Any.fromFunction0(value))
+    inline def setPopCard(value: () => Navigation): Self = StObject.set(x, "popCard", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPopToNamedCard(value: String => Navigation): Self = StObject.set(x, "popToNamedCard", js.Any.fromFunction1(value))
+    inline def setPopToNamedCard(value: String => Navigation): Self = StObject.set(x, "popToNamedCard", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPopToRoot(value: () => Navigation): Self = StObject.set(x, "popToRoot", js.Any.fromFunction0(value))
+    inline def setPopToRoot(value: () => Navigation): Self = StObject.set(x, "popToRoot", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPushCard(value: Card => Navigation): Self = StObject.set(x, "pushCard", js.Any.fromFunction1(value))
+    inline def setPushCard(value: Card => Navigation): Self = StObject.set(x, "pushCard", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateCard(value: Card => Navigation): Self = StObject.set(x, "updateCard", js.Any.fromFunction1(value))
+    inline def setUpdateCard(value: Card => Navigation): Self = StObject.set(x, "updateCard", js.Any.fromFunction1(value))
   }
 }

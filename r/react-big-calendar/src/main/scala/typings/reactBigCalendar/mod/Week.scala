@@ -24,12 +24,9 @@ object Week {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def navigate(date: Date, action: NavigateAction): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(date.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def navigate(date: Date, action: NavigateAction): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(date.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @scala.inline
-  def range(date: Date): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  inline def range(date: Date): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
   
-  @scala.inline
-  def title(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("title")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def title(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("title")(date.asInstanceOf[js.Any]).asInstanceOf[String]
 }

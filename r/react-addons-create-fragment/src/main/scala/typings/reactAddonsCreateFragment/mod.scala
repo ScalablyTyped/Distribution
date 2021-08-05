@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(`object`: StringDictionary[ReactNode]): ReactFragment = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[ReactFragment]
+  inline def apply(`object`: StringDictionary[ReactNode]): ReactFragment = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[ReactFragment]
   
   @JSImport("react-addons-create-fragment", JSImport.Namespace)
   @js.native

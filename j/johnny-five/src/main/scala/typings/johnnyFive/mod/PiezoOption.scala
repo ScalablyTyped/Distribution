@@ -10,16 +10,13 @@ trait PiezoOption extends StObject {
 }
 object PiezoOption {
   
-  @scala.inline
-  def apply(pin: Double): PiezoOption = {
+  inline def apply(pin: Double): PiezoOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     __obj.asInstanceOf[PiezoOption]
   }
   
-  @scala.inline
-  implicit class PiezoOptionMutableBuilder[Self <: PiezoOption] (val x: Self) extends AnyVal {
+  extension [Self <: PiezoOption](x: Self) {
     
-    @scala.inline
-    def setPin(value: Double): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: Double): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
   }
 }

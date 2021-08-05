@@ -18,25 +18,19 @@ trait DescribeStacksInput extends StObject {
 }
 object DescribeStacksInput {
   
-  @scala.inline
-  def apply(): DescribeStacksInput = {
+  inline def apply(): DescribeStacksInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeStacksInput]
   }
   
-  @scala.inline
-  implicit class DescribeStacksInputMutableBuilder[Self <: DescribeStacksInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStacksInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
+    inline def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
   }
 }

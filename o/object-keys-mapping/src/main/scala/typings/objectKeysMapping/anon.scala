@@ -12,20 +12,16 @@ object anon {
   }
   object Camelcase {
     
-    @scala.inline
-    def apply(): Camelcase = {
+    inline def apply(): Camelcase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Camelcase]
     }
     
-    @scala.inline
-    implicit class CamelcaseMutableBuilder[Self <: Camelcase] (val x: Self) extends AnyVal {
+    extension [Self <: Camelcase](x: Self) {
       
-      @scala.inline
-      def setCamelcase(value: Boolean): Self = StObject.set(x, "camelcase", value.asInstanceOf[js.Any])
+      inline def setCamelcase(value: Boolean): Self = StObject.set(x, "camelcase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamelcaseUndefined: Self = StObject.set(x, "camelcase", js.undefined)
+      inline def setCamelcaseUndefined: Self = StObject.set(x, "camelcase", js.undefined)
     }
   }
 }

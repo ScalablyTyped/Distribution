@@ -18,32 +18,24 @@ object anon {
   }
   object RequiredInput {
     
-    @scala.inline
-    def apply(columns: js.Array[js.Array[Double]], content: js.Array[State], rows: js.Array[js.Array[Double]]): RequiredInput = {
+    inline def apply(columns: js.Array[js.Array[Double]], content: js.Array[State], rows: js.Array[js.Array[Double]]): RequiredInput = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredInput]
     }
     
-    @scala.inline
-    implicit class RequiredInputMutableBuilder[Self <: RequiredInput] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredInput](x: Self) {
       
-      @scala.inline
-      def setColumns(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setContent(value: js.Array[State]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Array[State]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentVarargs(value: State*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: State*): Self = StObject.set(x, "content", js.Array(value :_*))
       
-      @scala.inline
-      def setRows(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     }
   }
 }

@@ -29,76 +29,53 @@ trait DeviceDetail extends StObject {
 }
 object DeviceDetail {
   
-  @scala.inline
-  def apply(): DeviceDetail = {
+  inline def apply(): DeviceDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceDetail]
   }
   
-  @scala.inline
-  implicit class DeviceDetailMutableBuilder[Self <: DeviceDetail] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceDetail](x: Self) {
     
-    @scala.inline
-    def setBrowser(value: NullableOption[String]): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: NullableOption[String]): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserNull: Self = StObject.set(x, "browser", null)
+    inline def setBrowserNull: Self = StObject.set(x, "browser", null)
     
-    @scala.inline
-    def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+    inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
     
-    @scala.inline
-    def setDeviceId(value: NullableOption[String]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: NullableOption[String]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
+    inline def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setIsCompliant(value: NullableOption[Boolean]): Self = StObject.set(x, "isCompliant", value.asInstanceOf[js.Any])
+    inline def setIsCompliant(value: NullableOption[Boolean]): Self = StObject.set(x, "isCompliant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCompliantNull: Self = StObject.set(x, "isCompliant", null)
+    inline def setIsCompliantNull: Self = StObject.set(x, "isCompliant", null)
     
-    @scala.inline
-    def setIsCompliantUndefined: Self = StObject.set(x, "isCompliant", js.undefined)
+    inline def setIsCompliantUndefined: Self = StObject.set(x, "isCompliant", js.undefined)
     
-    @scala.inline
-    def setIsManaged(value: NullableOption[Boolean]): Self = StObject.set(x, "isManaged", value.asInstanceOf[js.Any])
+    inline def setIsManaged(value: NullableOption[Boolean]): Self = StObject.set(x, "isManaged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsManagedNull: Self = StObject.set(x, "isManaged", null)
+    inline def setIsManagedNull: Self = StObject.set(x, "isManaged", null)
     
-    @scala.inline
-    def setIsManagedUndefined: Self = StObject.set(x, "isManaged", js.undefined)
+    inline def setIsManagedUndefined: Self = StObject.set(x, "isManaged", js.undefined)
     
-    @scala.inline
-    def setOperatingSystem(value: NullableOption[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: NullableOption[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemNull: Self = StObject.set(x, "operatingSystem", null)
+    inline def setOperatingSystemNull: Self = StObject.set(x, "operatingSystem", null)
     
-    @scala.inline
-    def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
+    inline def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
     
-    @scala.inline
-    def setTrustType(value: NullableOption[String]): Self = StObject.set(x, "trustType", value.asInstanceOf[js.Any])
+    inline def setTrustType(value: NullableOption[String]): Self = StObject.set(x, "trustType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustTypeNull: Self = StObject.set(x, "trustType", null)
+    inline def setTrustTypeNull: Self = StObject.set(x, "trustType", null)
     
-    @scala.inline
-    def setTrustTypeUndefined: Self = StObject.set(x, "trustType", js.undefined)
+    inline def setTrustTypeUndefined: Self = StObject.set(x, "trustType", js.undefined)
   }
 }

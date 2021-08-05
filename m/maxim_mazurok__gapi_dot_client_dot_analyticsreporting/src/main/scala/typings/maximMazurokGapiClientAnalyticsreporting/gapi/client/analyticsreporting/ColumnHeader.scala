@@ -14,28 +14,21 @@ trait ColumnHeader extends StObject {
 }
 object ColumnHeader {
   
-  @scala.inline
-  def apply(): ColumnHeader = {
+  inline def apply(): ColumnHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnHeader]
   }
   
-  @scala.inline
-  implicit class ColumnHeaderMutableBuilder[Self <: ColumnHeader] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnHeader](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricHeader(value: MetricHeader): Self = StObject.set(x, "metricHeader", value.asInstanceOf[js.Any])
+    inline def setMetricHeader(value: MetricHeader): Self = StObject.set(x, "metricHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricHeaderUndefined: Self = StObject.set(x, "metricHeader", js.undefined)
+    inline def setMetricHeaderUndefined: Self = StObject.set(x, "metricHeader", js.undefined)
   }
 }

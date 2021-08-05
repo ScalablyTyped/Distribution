@@ -30,8 +30,7 @@ trait UploadData extends StObject {
 }
 object UploadData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     c: Category,
     description: String,
     hidden: Boolean,
@@ -48,43 +47,30 @@ object UploadData {
     __obj.asInstanceOf[UploadData]
   }
   
-  @scala.inline
-  implicit class UploadDataMutableBuilder[Self <: UploadData] (val x: Self) extends AnyVal {
+  extension [Self <: UploadData](x: Self) {
     
-    @scala.inline
-    def setC(value: Category): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: Category): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
     
-    @scala.inline
-    def setMagnet(value: String): Self = StObject.set(x, "magnet", value.asInstanceOf[js.Any])
+    inline def setMagnet(value: String): Self = StObject.set(x, "magnet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemake(value: Boolean): Self = StObject.set(x, "remake", value.asInstanceOf[js.Any])
+    inline def setRemake(value: Boolean): Self = StObject.set(x, "remake", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTorrent(value: String): Self = StObject.set(x, "torrent", value.asInstanceOf[js.Any])
+    inline def setTorrent(value: String): Self = StObject.set(x, "torrent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsite_link(value: String): Self = StObject.set(x, "website_link", value.asInstanceOf[js.Any])
+    inline def setWebsite_link(value: String): Self = StObject.set(x, "website_link", value.asInstanceOf[js.Any])
   }
 }

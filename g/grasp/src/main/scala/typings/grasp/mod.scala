@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Args): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(options: Args): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("grasp", JSImport.Namespace)
   @js.native
@@ -20,24 +19,17 @@ object mod {
   @js.native
   val VERSION: String = js.native
   
-  @scala.inline
-  def replace(engine: QueryEngineType): GraspReplaceWithQueryEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(engine.asInstanceOf[js.Any]).asInstanceOf[GraspReplaceWithQueryEngine]
-  @scala.inline
-  def replace(engine: QueryEngineType, selector: String): GraspReplaceWithSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[GraspReplaceWithSelector]
-  @scala.inline
-  def replace(engine: QueryEngineType, selector: String, replacement: Replacement): js.Function1[/* input */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* input */ String, String]]
-  @scala.inline
-  def replace(engine: QueryEngineType, selector: String, replacement: Replacement, input: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def replace(engine: QueryEngineType): GraspReplaceWithQueryEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(engine.asInstanceOf[js.Any]).asInstanceOf[GraspReplaceWithQueryEngine]
+  inline def replace(engine: QueryEngineType, selector: String): GraspReplaceWithSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[GraspReplaceWithSelector]
+  inline def replace(engine: QueryEngineType, selector: String, replacement: Replacement): js.Function1[/* input */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* input */ String, String]]
+  inline def replace(engine: QueryEngineType, selector: String, replacement: Replacement, input: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def search(engine: QueryEngineType): GraspSearchWithQueryEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(engine.asInstanceOf[js.Any]).asInstanceOf[GraspSearchWithQueryEngine]
-  @scala.inline
-  def search(engine: QueryEngineType, selector: String): js.Function1[/* input */ String, js.Array[Node]] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* input */ String, js.Array[Node]]]
+  inline def search(engine: QueryEngineType): GraspSearchWithQueryEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(engine.asInstanceOf[js.Any]).asInstanceOf[GraspSearchWithQueryEngine]
+  inline def search(engine: QueryEngineType, selector: String): js.Function1[/* input */ String, js.Array[Node]] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* input */ String, js.Array[Node]]]
   // Both the search and replace functions are curryable, which leads to quite
   // a bit of noise. Using generic currying will discard variable name
   // information, so we hand-roll it here
-  @scala.inline
-  def search(engine: QueryEngineType, selector: String, input: String): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
+  inline def search(engine: QueryEngineType, selector: String, input: String): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
   
   type GraspReplaceWithQueryEngine = (js.Function1[/* selector */ String, GraspReplaceWithSelector]) & (js.Function2[
     /* selector */ String, 
@@ -56,11 +48,9 @@ object mod {
   trait QueryEngineType extends StObject
   object QueryEngineType {
     
-    @scala.inline
-    def equery: typings.grasp.graspStrings.equery = "equery".asInstanceOf[typings.grasp.graspStrings.equery]
+    inline def equery: typings.grasp.graspStrings.equery = "equery".asInstanceOf[typings.grasp.graspStrings.equery]
     
-    @scala.inline
-    def squery: typings.grasp.graspStrings.squery = "squery".asInstanceOf[typings.grasp.graspStrings.squery]
+    inline def squery: typings.grasp.graspStrings.squery = "squery".asInstanceOf[typings.grasp.graspStrings.squery]
   }
   
   type Replacement = String | (js.Function4[

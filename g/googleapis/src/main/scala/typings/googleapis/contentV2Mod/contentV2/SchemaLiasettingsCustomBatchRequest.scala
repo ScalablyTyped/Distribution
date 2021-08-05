@@ -13,22 +13,17 @@ trait SchemaLiasettingsCustomBatchRequest extends StObject {
 }
 object SchemaLiasettingsCustomBatchRequest {
   
-  @scala.inline
-  def apply(): SchemaLiasettingsCustomBatchRequest = {
+  inline def apply(): SchemaLiasettingsCustomBatchRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiasettingsCustomBatchRequest]
   }
   
-  @scala.inline
-  implicit class SchemaLiasettingsCustomBatchRequestMutableBuilder[Self <: SchemaLiasettingsCustomBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiasettingsCustomBatchRequest](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[SchemaLiasettingsCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[SchemaLiasettingsCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: SchemaLiasettingsCustomBatchRequestEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: SchemaLiasettingsCustomBatchRequestEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

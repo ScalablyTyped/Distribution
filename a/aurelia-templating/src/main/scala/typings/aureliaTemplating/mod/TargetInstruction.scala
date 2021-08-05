@@ -56,10 +56,8 @@ object TargetInstruction {
     * @param expression The binding expression.
     * @return The created instruction.
     */
-  @scala.inline
-  def contentExpression(): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("contentExpression")().asInstanceOf[TargetInstruction]
-  @scala.inline
-  def contentExpression(expression: js.Any): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("contentExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[TargetInstruction]
+  inline def contentExpression(): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("contentExpression")().asInstanceOf[TargetInstruction]
+  inline def contentExpression(expression: js.Any): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("contentExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[TargetInstruction]
   
   /**
     * Creates an instruction that represents an element with behaviors and bindings.
@@ -71,8 +69,7 @@ object TargetInstruction {
     * @param elementInstruction The element behavior for this element.
     * @return The created instruction.
     */
-  @scala.inline
-  def letElement(expressions: js.Array[js.Object]): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("letElement")(expressions.asInstanceOf[js.Any]).asInstanceOf[TargetInstruction]
+  inline def letElement(expressions: js.Array[js.Object]): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("letElement")(expressions.asInstanceOf[js.Any]).asInstanceOf[TargetInstruction]
   
   /**
     * Creates an instruction that represents content that was lifted out of the DOM and into a ViewFactory.
@@ -80,8 +77,7 @@ object TargetInstruction {
     * @param liftingInstruction The behavior instruction of the lifting behavior.
     * @return The created instruction.
     */
-  @scala.inline
-  def lifting(parentInjectorId: Double, liftingInstruction: BehaviorInstruction): TargetInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("lifting")(parentInjectorId.asInstanceOf[js.Any], liftingInstruction.asInstanceOf[js.Any])).asInstanceOf[TargetInstruction]
+  inline def lifting(parentInjectorId: Double, liftingInstruction: BehaviorInstruction): TargetInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("lifting")(parentInjectorId.asInstanceOf[js.Any], liftingInstruction.asInstanceOf[js.Any])).asInstanceOf[TargetInstruction]
   
   /**
     * An empty array used to represent a target with no binding expressions.
@@ -89,8 +85,7 @@ object TargetInstruction {
   @JSImport("aurelia-templating", "TargetInstruction.noExpressions")
   @js.native
   def noExpressions: js.Any = js.native
-  @scala.inline
-  def noExpressions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noExpressions")(x.asInstanceOf[js.Any])
+  inline def noExpressions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noExpressions")(x.asInstanceOf[js.Any])
   
   /**
     * Creates an instruction that represents an element with behaviors and bindings.
@@ -102,8 +97,7 @@ object TargetInstruction {
     * @param elementInstruction The element behavior for this element.
     * @return The created instruction.
     */
-  @scala.inline
-  def normal(
+  inline def normal(
     injectorId: Double,
     parentInjectorId: Double,
     providers: js.Array[js.Function],
@@ -117,8 +111,7 @@ object TargetInstruction {
     * @param parentInjectorId The id of the parent dependency injection container.
     * @return The created instruction.
     */
-  @scala.inline
-  def shadowSlot(parentInjectorId: Double): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("shadowSlot")(parentInjectorId.asInstanceOf[js.Any]).asInstanceOf[TargetInstruction]
+  inline def shadowSlot(parentInjectorId: Double): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("shadowSlot")(parentInjectorId.asInstanceOf[js.Any]).asInstanceOf[TargetInstruction]
   
   /**
     * Creates an instruction that represents the surrogate behaviors and bindings for an element.
@@ -128,8 +121,7 @@ object TargetInstruction {
     * @param values A key/value lookup of attributes to transplant.
     * @return The created instruction.
     */
-  @scala.inline
-  def surrogate(
+  inline def surrogate(
     providers: js.Array[js.Function],
     behaviorInstructions: js.Array[BehaviorInstruction],
     expressions: js.Array[js.Object],

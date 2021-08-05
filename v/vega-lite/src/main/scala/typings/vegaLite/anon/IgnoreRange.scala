@@ -10,19 +10,15 @@ trait IgnoreRange extends StObject {
 }
 object IgnoreRange {
   
-  @scala.inline
-  def apply(): IgnoreRange = {
+  inline def apply(): IgnoreRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgnoreRange]
   }
   
-  @scala.inline
-  implicit class IgnoreRangeMutableBuilder[Self <: IgnoreRange] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreRange](x: Self) {
     
-    @scala.inline
-    def setIgnoreRange(value: Boolean): Self = StObject.set(x, "ignoreRange", value.asInstanceOf[js.Any])
+    inline def setIgnoreRange(value: Boolean): Self = StObject.set(x, "ignoreRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreRangeUndefined: Self = StObject.set(x, "ignoreRange", js.undefined)
+    inline def setIgnoreRangeUndefined: Self = StObject.set(x, "ignoreRange", js.undefined)
   }
 }

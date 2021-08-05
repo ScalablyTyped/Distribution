@@ -15,31 +15,23 @@ trait ClientQueryOptions extends StObject {
 }
 object ClientQueryOptions {
   
-  @scala.inline
-  def apply(): ClientQueryOptions = {
+  inline def apply(): ClientQueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientQueryOptions]
   }
   
-  @scala.inline
-  implicit class ClientQueryOptionsMutableBuilder[Self <: ClientQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientQueryOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeReserved(value: Boolean): Self = StObject.set(x, "includeReserved", value.asInstanceOf[js.Any])
+    inline def setIncludeReserved(value: Boolean): Self = StObject.set(x, "includeReserved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeReservedUndefined: Self = StObject.set(x, "includeReserved", js.undefined)
+    inline def setIncludeReservedUndefined: Self = StObject.set(x, "includeReserved", js.undefined)
     
-    @scala.inline
-    def setIncludeUncontrolled(value: Boolean): Self = StObject.set(x, "includeUncontrolled", value.asInstanceOf[js.Any])
+    inline def setIncludeUncontrolled(value: Boolean): Self = StObject.set(x, "includeUncontrolled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUncontrolledUndefined: Self = StObject.set(x, "includeUncontrolled", js.undefined)
+    inline def setIncludeUncontrolledUndefined: Self = StObject.set(x, "includeUncontrolled", js.undefined)
     
-    @scala.inline
-    def setType(value: ClientTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ClientTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

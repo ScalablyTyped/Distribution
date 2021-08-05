@@ -31,25 +31,19 @@ trait baseResponseArgs
 }
 object baseResponseArgs {
   
-  @scala.inline
-  def apply(client: client, clientId: String, meta: js.Any, timestamp: Date): baseResponseArgs = {
+  inline def apply(client: client, clientId: String, meta: js.Any, timestamp: Date): baseResponseArgs = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[baseResponseArgs]
   }
   
-  @scala.inline
-  implicit class baseResponseArgsMutableBuilder[Self <: baseResponseArgs] (val x: Self) extends AnyVal {
+  extension [Self <: baseResponseArgs](x: Self) {
     
-    @scala.inline
-    def setClient(value: client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

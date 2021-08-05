@@ -28,34 +28,25 @@ trait CreateScheduleRequest extends StObject {
 }
 object CreateScheduleRequest {
   
-  @scala.inline
-  def apply(CronExpression: CronExpression, Name: ScheduleName): CreateScheduleRequest = {
+  inline def apply(CronExpression: CronExpression, Name: ScheduleName): CreateScheduleRequest = {
     val __obj = js.Dynamic.literal(CronExpression = CronExpression.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateScheduleRequest]
   }
   
-  @scala.inline
-  implicit class CreateScheduleRequestMutableBuilder[Self <: CreateScheduleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateScheduleRequest](x: Self) {
     
-    @scala.inline
-    def setCronExpression(value: CronExpression): Self = StObject.set(x, "CronExpression", value.asInstanceOf[js.Any])
+    inline def setCronExpression(value: CronExpression): Self = StObject.set(x, "CronExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNames(value: JobNameList): Self = StObject.set(x, "JobNames", value.asInstanceOf[js.Any])
+    inline def setJobNames(value: JobNameList): Self = StObject.set(x, "JobNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNamesUndefined: Self = StObject.set(x, "JobNames", js.undefined)
+    inline def setJobNamesUndefined: Self = StObject.set(x, "JobNames", js.undefined)
     
-    @scala.inline
-    def setJobNamesVarargs(value: JobName*): Self = StObject.set(x, "JobNames", js.Array(value :_*))
+    inline def setJobNamesVarargs(value: JobName*): Self = StObject.set(x, "JobNames", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: ScheduleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ScheduleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

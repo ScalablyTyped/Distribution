@@ -17,31 +17,23 @@ trait PurgeProductsRequest extends StObject {
 }
 object PurgeProductsRequest {
   
-  @scala.inline
-  def apply(): PurgeProductsRequest = {
+  inline def apply(): PurgeProductsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PurgeProductsRequest]
   }
   
-  @scala.inline
-  implicit class PurgeProductsRequestMutableBuilder[Self <: PurgeProductsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PurgeProductsRequest](x: Self) {
     
-    @scala.inline
-    def setDeleteOrphanProducts(value: Boolean): Self = StObject.set(x, "deleteOrphanProducts", value.asInstanceOf[js.Any])
+    inline def setDeleteOrphanProducts(value: Boolean): Self = StObject.set(x, "deleteOrphanProducts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteOrphanProductsUndefined: Self = StObject.set(x, "deleteOrphanProducts", js.undefined)
+    inline def setDeleteOrphanProductsUndefined: Self = StObject.set(x, "deleteOrphanProducts", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setProductSetPurgeConfig(value: ProductSetPurgeConfig): Self = StObject.set(x, "productSetPurgeConfig", value.asInstanceOf[js.Any])
+    inline def setProductSetPurgeConfig(value: ProductSetPurgeConfig): Self = StObject.set(x, "productSetPurgeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductSetPurgeConfigUndefined: Self = StObject.set(x, "productSetPurgeConfig", js.undefined)
+    inline def setProductSetPurgeConfigUndefined: Self = StObject.set(x, "productSetPurgeConfig", js.undefined)
   }
 }

@@ -105,12 +105,12 @@ object checkboxMod {
     /**
       * Gets or sets an object for paginating the content.
       */
-    var paginator: typings.inquirer.paginatorMod.^ = js.native
+    /* protected */ var paginator: typings.inquirer.paginatorMod.^ = js.native
     
     /**
       * Gets or sets the index of the currently focused choice.
       */
-    var pointer: Double = js.native
+    /* protected */ var pointer: Double = js.native
     
     /**
       * Renders the prompt.

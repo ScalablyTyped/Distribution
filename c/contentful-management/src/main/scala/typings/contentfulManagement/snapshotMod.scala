@@ -15,11 +15,9 @@ object snapshotMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapSnapshot[T](_http: AxiosInstance, data: SnapshotProps[T]): Snapshot[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSnapshot")(_http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Snapshot[T]]
+  inline def wrapSnapshot[T](_http: AxiosInstance, data: SnapshotProps[T]): Snapshot[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSnapshot")(_http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Snapshot[T]]
   
-  @scala.inline
-  def wrapSnapshotCollection[T](http: AxiosInstance, data: CollectionProp[SnapshotProps[T]]): Collection[Snapshot[T], SnapshotProps[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSnapshotCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Snapshot[T], SnapshotProps[T]]]
+  inline def wrapSnapshotCollection[T](http: AxiosInstance, data: CollectionProp[SnapshotProps[T]]): Collection[Snapshot[T], SnapshotProps[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSnapshotCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Snapshot[T], SnapshotProps[T]]]
   
   trait Snapshot[T]
     extends StObject
@@ -27,8 +25,7 @@ object snapshotMod {
        with DefaultElements[SnapshotProps[T]]
   object Snapshot {
     
-    @scala.inline
-    def apply[T](snapshot: T, sys: MetaSysPropssnapshotTypes, toPlainObject: () => SnapshotProps[T]): Snapshot[T] = {
+    inline def apply[T](snapshot: T, sys: MetaSysPropssnapshotTypes, toPlainObject: () => SnapshotProps[T]): Snapshot[T] = {
       val __obj = js.Dynamic.literal(snapshot = snapshot.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any], toPlainObject = js.Any.fromFunction0(toPlainObject))
       __obj.asInstanceOf[Snapshot[T]]
     }
@@ -42,20 +39,16 @@ object snapshotMod {
   }
   object SnapshotProps {
     
-    @scala.inline
-    def apply[T](snapshot: T, sys: MetaSysPropssnapshotTypes): SnapshotProps[T] = {
+    inline def apply[T](snapshot: T, sys: MetaSysPropssnapshotTypes): SnapshotProps[T] = {
       val __obj = js.Dynamic.literal(snapshot = snapshot.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[SnapshotProps[T]]
     }
     
-    @scala.inline
-    implicit class SnapshotPropsMutableBuilder[Self <: SnapshotProps[?], T] (val x: Self & SnapshotProps[T]) extends AnyVal {
+    extension [Self <: SnapshotProps[?], T](x: Self & SnapshotProps[T]) {
       
-      @scala.inline
-      def setSnapshot(value: T): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+      inline def setSnapshot(value: T): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysPropssnapshotTypes): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysPropssnapshotTypes): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

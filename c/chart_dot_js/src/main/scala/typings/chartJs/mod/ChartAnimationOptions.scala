@@ -20,49 +20,35 @@ trait ChartAnimationOptions extends StObject {
 }
 object ChartAnimationOptions {
   
-  @scala.inline
-  def apply(): ChartAnimationOptions = {
+  inline def apply(): ChartAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartAnimationOptions]
   }
   
-  @scala.inline
-  implicit class ChartAnimationOptionsMutableBuilder[Self <: ChartAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setAnimateRotate(value: Boolean): Self = StObject.set(x, "animateRotate", value.asInstanceOf[js.Any])
+    inline def setAnimateRotate(value: Boolean): Self = StObject.set(x, "animateRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateRotateUndefined: Self = StObject.set(x, "animateRotate", js.undefined)
+    inline def setAnimateRotateUndefined: Self = StObject.set(x, "animateRotate", js.undefined)
     
-    @scala.inline
-    def setAnimateScale(value: Boolean): Self = StObject.set(x, "animateScale", value.asInstanceOf[js.Any])
+    inline def setAnimateScale(value: Boolean): Self = StObject.set(x, "animateScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateScaleUndefined: Self = StObject.set(x, "animateScale", js.undefined)
+    inline def setAnimateScaleUndefined: Self = StObject.set(x, "animateScale", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setOnComplete(value: /* chart */ js.Any => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+    inline def setOnComplete(value: /* chart */ js.Any => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+    inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
-    @scala.inline
-    def setOnProgress(value: /* chart */ js.Any => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+    inline def setOnProgress(value: /* chart */ js.Any => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+    inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
   }
 }

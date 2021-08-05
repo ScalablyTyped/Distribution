@@ -26,31 +26,23 @@ trait DatafeedFormat extends StObject {
 }
 object DatafeedFormat {
   
-  @scala.inline
-  def apply(): DatafeedFormat = {
+  inline def apply(): DatafeedFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatafeedFormat]
   }
   
-  @scala.inline
-  implicit class DatafeedFormatMutableBuilder[Self <: DatafeedFormat] (val x: Self) extends AnyVal {
+  extension [Self <: DatafeedFormat](x: Self) {
     
-    @scala.inline
-    def setColumnDelimiter(value: String): Self = StObject.set(x, "columnDelimiter", value.asInstanceOf[js.Any])
+    inline def setColumnDelimiter(value: String): Self = StObject.set(x, "columnDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnDelimiterUndefined: Self = StObject.set(x, "columnDelimiter", js.undefined)
+    inline def setColumnDelimiterUndefined: Self = StObject.set(x, "columnDelimiter", js.undefined)
     
-    @scala.inline
-    def setFileEncoding(value: String): Self = StObject.set(x, "fileEncoding", value.asInstanceOf[js.Any])
+    inline def setFileEncoding(value: String): Self = StObject.set(x, "fileEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileEncodingUndefined: Self = StObject.set(x, "fileEncoding", js.undefined)
+    inline def setFileEncodingUndefined: Self = StObject.set(x, "fileEncoding", js.undefined)
     
-    @scala.inline
-    def setQuotingMode(value: String): Self = StObject.set(x, "quotingMode", value.asInstanceOf[js.Any])
+    inline def setQuotingMode(value: String): Self = StObject.set(x, "quotingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotingModeUndefined: Self = StObject.set(x, "quotingMode", js.undefined)
+    inline def setQuotingModeUndefined: Self = StObject.set(x, "quotingMode", js.undefined)
   }
 }

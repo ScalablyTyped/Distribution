@@ -20,16 +20,12 @@ object EnumSymbolBody {
   @js.native
   val ^ : Type[EnumSymbolBody] = js.native
   
-  @scala.inline
-  implicit class EnumSymbolBodyMutableBuilder[Self <: EnumSymbolBody] (val x: Self) extends AnyVal {
+  extension [Self <: EnumSymbolBody](x: Self) {
     
-    @scala.inline
-    def setMembers(value: js.Array[EnumDefaultedMemberKind]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[EnumDefaultedMemberKind]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: EnumDefaultedMemberKind*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: EnumDefaultedMemberKind*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.astTypes.astTypesStrings.EnumSymbolBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.astTypes.astTypesStrings.EnumSymbolBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

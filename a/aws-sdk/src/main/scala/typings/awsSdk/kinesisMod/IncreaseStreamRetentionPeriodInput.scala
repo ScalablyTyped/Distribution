@@ -18,19 +18,15 @@ trait IncreaseStreamRetentionPeriodInput extends StObject {
 }
 object IncreaseStreamRetentionPeriodInput {
   
-  @scala.inline
-  def apply(RetentionPeriodHours: RetentionPeriodHours, StreamName: StreamName): IncreaseStreamRetentionPeriodInput = {
+  inline def apply(RetentionPeriodHours: RetentionPeriodHours, StreamName: StreamName): IncreaseStreamRetentionPeriodInput = {
     val __obj = js.Dynamic.literal(RetentionPeriodHours = RetentionPeriodHours.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncreaseStreamRetentionPeriodInput]
   }
   
-  @scala.inline
-  implicit class IncreaseStreamRetentionPeriodInputMutableBuilder[Self <: IncreaseStreamRetentionPeriodInput] (val x: Self) extends AnyVal {
+  extension [Self <: IncreaseStreamRetentionPeriodInput](x: Self) {
     
-    @scala.inline
-    def setRetentionPeriodHours(value: RetentionPeriodHours): Self = StObject.set(x, "RetentionPeriodHours", value.asInstanceOf[js.Any])
+    inline def setRetentionPeriodHours(value: RetentionPeriodHours): Self = StObject.set(x, "RetentionPeriodHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
   }
 }

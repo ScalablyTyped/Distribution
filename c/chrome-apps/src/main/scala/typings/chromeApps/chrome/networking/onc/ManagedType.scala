@@ -40,61 +40,43 @@ trait ManagedType[T] extends StObject {
 }
 object ManagedType {
   
-  @scala.inline
-  def apply[T](): ManagedType[T] = {
+  inline def apply[T](): ManagedType[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedType[T]]
   }
   
-  @scala.inline
-  implicit class ManagedTypeMutableBuilder[Self <: ManagedType[?], T] (val x: Self & ManagedType[T]) extends AnyVal {
+  extension [Self <: ManagedType[?], T](x: Self & ManagedType[T]) {
     
-    @scala.inline
-    def setActive(value: T): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+    inline def setActive(value: T): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
     
-    @scala.inline
-    def setDeviceEditable(value: Boolean): Self = StObject.set(x, "DeviceEditable", value.asInstanceOf[js.Any])
+    inline def setDeviceEditable(value: Boolean): Self = StObject.set(x, "DeviceEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceEditableUndefined: Self = StObject.set(x, "DeviceEditable", js.undefined)
+    inline def setDeviceEditableUndefined: Self = StObject.set(x, "DeviceEditable", js.undefined)
     
-    @scala.inline
-    def setDevicePolicy(value: T): Self = StObject.set(x, "DevicePolicy", value.asInstanceOf[js.Any])
+    inline def setDevicePolicy(value: T): Self = StObject.set(x, "DevicePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicePolicyUndefined: Self = StObject.set(x, "DevicePolicy", js.undefined)
+    inline def setDevicePolicyUndefined: Self = StObject.set(x, "DevicePolicy", js.undefined)
     
-    @scala.inline
-    def setEffective(value: String): Self = StObject.set(x, "Effective", value.asInstanceOf[js.Any])
+    inline def setEffective(value: String): Self = StObject.set(x, "Effective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveUndefined: Self = StObject.set(x, "Effective", js.undefined)
+    inline def setEffectiveUndefined: Self = StObject.set(x, "Effective", js.undefined)
     
-    @scala.inline
-    def setSharedSetting(value: T): Self = StObject.set(x, "SharedSetting", value.asInstanceOf[js.Any])
+    inline def setSharedSetting(value: T): Self = StObject.set(x, "SharedSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedSettingUndefined: Self = StObject.set(x, "SharedSetting", js.undefined)
+    inline def setSharedSettingUndefined: Self = StObject.set(x, "SharedSetting", js.undefined)
     
-    @scala.inline
-    def setUserEditable(value: Boolean): Self = StObject.set(x, "UserEditable", value.asInstanceOf[js.Any])
+    inline def setUserEditable(value: Boolean): Self = StObject.set(x, "UserEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEditableUndefined: Self = StObject.set(x, "UserEditable", js.undefined)
+    inline def setUserEditableUndefined: Self = StObject.set(x, "UserEditable", js.undefined)
     
-    @scala.inline
-    def setUserPolicy(value: T): Self = StObject.set(x, "UserPolicy", value.asInstanceOf[js.Any])
+    inline def setUserPolicy(value: T): Self = StObject.set(x, "UserPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPolicyUndefined: Self = StObject.set(x, "UserPolicy", js.undefined)
+    inline def setUserPolicyUndefined: Self = StObject.set(x, "UserPolicy", js.undefined)
     
-    @scala.inline
-    def setUserSetting(value: T): Self = StObject.set(x, "UserSetting", value.asInstanceOf[js.Any])
+    inline def setUserSetting(value: T): Self = StObject.set(x, "UserSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSettingUndefined: Self = StObject.set(x, "UserSetting", js.undefined)
+    inline def setUserSettingUndefined: Self = StObject.set(x, "UserSetting", js.undefined)
   }
 }

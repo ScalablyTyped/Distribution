@@ -12,25 +12,19 @@ trait IPageLangItems extends StObject {
 }
 object IPageLangItems {
   
-  @scala.inline
-  def apply(): IPageLangItems = {
+  inline def apply(): IPageLangItems = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPageLangItems]
   }
   
-  @scala.inline
-  implicit class IPageLangItemsMutableBuilder[Self <: IPageLangItems] (val x: Self) extends AnyVal {
+  extension [Self <: IPageLangItems](x: Self) {
     
-    @scala.inline
-    def setEn(value: IPageLabels): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
+    inline def setEn(value: IPageLabels): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnUndefined: Self = StObject.set(x, "en", js.undefined)
+    inline def setEnUndefined: Self = StObject.set(x, "en", js.undefined)
     
-    @scala.inline
-    def setHu(value: IPageLabels): Self = StObject.set(x, "hu", value.asInstanceOf[js.Any])
+    inline def setHu(value: IPageLabels): Self = StObject.set(x, "hu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHuUndefined: Self = StObject.set(x, "hu", js.undefined)
+    inline def setHuUndefined: Self = StObject.set(x, "hu", js.undefined)
   }
 }

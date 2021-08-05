@@ -25,32 +25,24 @@ object typesSubModuleMod {
   }
   object SubModule {
     
-    @scala.inline
-    def apply(): SubModule = {
+    inline def apply(): SubModule = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubModule]
     }
     
-    @scala.inline
-    implicit class SubModuleMutableBuilder[Self <: SubModule] (val x: Self) extends AnyVal {
+    extension [Self <: SubModule](x: Self) {
       
-      @scala.inline
-      def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
+      inline def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
+      inline def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
       
-      @scala.inline
-      def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+      inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
+      inline def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
       
-      @scala.inline
-      def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+      inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
+      inline def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
     }
   }
   

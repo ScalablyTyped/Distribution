@@ -39,40 +39,29 @@ trait SchemaWorkerHealthReport extends StObject {
 }
 object SchemaWorkerHealthReport {
   
-  @scala.inline
-  def apply(): SchemaWorkerHealthReport = {
+  inline def apply(): SchemaWorkerHealthReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWorkerHealthReport]
   }
   
-  @scala.inline
-  implicit class SchemaWorkerHealthReportMutableBuilder[Self <: SchemaWorkerHealthReport] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWorkerHealthReport](x: Self) {
     
-    @scala.inline
-    def setPods(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "pods", value.asInstanceOf[js.Any])
+    inline def setPods(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "pods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodsUndefined: Self = StObject.set(x, "pods", js.undefined)
+    inline def setPodsUndefined: Self = StObject.set(x, "pods", js.undefined)
     
-    @scala.inline
-    def setPodsVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "pods", js.Array(value :_*))
+    inline def setPodsVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "pods", js.Array(value :_*))
     
-    @scala.inline
-    def setReportInterval(value: String): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
+    inline def setReportInterval(value: String): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportIntervalUndefined: Self = StObject.set(x, "reportInterval", js.undefined)
+    inline def setReportIntervalUndefined: Self = StObject.set(x, "reportInterval", js.undefined)
     
-    @scala.inline
-    def setVmIsHealthy(value: Boolean): Self = StObject.set(x, "vmIsHealthy", value.asInstanceOf[js.Any])
+    inline def setVmIsHealthy(value: Boolean): Self = StObject.set(x, "vmIsHealthy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmIsHealthyUndefined: Self = StObject.set(x, "vmIsHealthy", js.undefined)
+    inline def setVmIsHealthyUndefined: Self = StObject.set(x, "vmIsHealthy", js.undefined)
     
-    @scala.inline
-    def setVmStartupTime(value: String): Self = StObject.set(x, "vmStartupTime", value.asInstanceOf[js.Any])
+    inline def setVmStartupTime(value: String): Self = StObject.set(x, "vmStartupTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmStartupTimeUndefined: Self = StObject.set(x, "vmStartupTime", js.undefined)
+    inline def setVmStartupTimeUndefined: Self = StObject.set(x, "vmStartupTime", js.undefined)
   }
 }

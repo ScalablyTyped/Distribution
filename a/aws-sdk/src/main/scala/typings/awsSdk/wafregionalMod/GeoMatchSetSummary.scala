@@ -18,19 +18,15 @@ trait GeoMatchSetSummary extends StObject {
 }
 object GeoMatchSetSummary {
   
-  @scala.inline
-  def apply(GeoMatchSetId: ResourceId, Name: ResourceName): GeoMatchSetSummary = {
+  inline def apply(GeoMatchSetId: ResourceId, Name: ResourceName): GeoMatchSetSummary = {
     val __obj = js.Dynamic.literal(GeoMatchSetId = GeoMatchSetId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoMatchSetSummary]
   }
   
-  @scala.inline
-  implicit class GeoMatchSetSummaryMutableBuilder[Self <: GeoMatchSetSummary] (val x: Self) extends AnyVal {
+  extension [Self <: GeoMatchSetSummary](x: Self) {
     
-    @scala.inline
-    def setGeoMatchSetId(value: ResourceId): Self = StObject.set(x, "GeoMatchSetId", value.asInstanceOf[js.Any])
+    inline def setGeoMatchSetId(value: ResourceId): Self = StObject.set(x, "GeoMatchSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

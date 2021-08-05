@@ -10,16 +10,13 @@ trait Overwrite extends StObject {
 }
 object Overwrite {
   
-  @scala.inline
-  def apply(overwrite: Boolean): Overwrite = {
+  inline def apply(overwrite: Boolean): Overwrite = {
     val __obj = js.Dynamic.literal(overwrite = overwrite.asInstanceOf[js.Any])
     __obj.asInstanceOf[Overwrite]
   }
   
-  @scala.inline
-  implicit class OverwriteMutableBuilder[Self <: Overwrite] (val x: Self) extends AnyVal {
+  extension [Self <: Overwrite](x: Self) {
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
   }
 }

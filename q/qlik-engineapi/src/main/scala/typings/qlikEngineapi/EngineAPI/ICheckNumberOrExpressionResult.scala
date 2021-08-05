@@ -15,16 +15,13 @@ trait ICheckNumberOrExpressionResult
 }
 object ICheckNumberOrExpressionResult {
   
-  @scala.inline
-  def apply(qBadFieldNames: js.Array[INxRange], qErrorMsg: String): ICheckNumberOrExpressionResult = {
+  inline def apply(qBadFieldNames: js.Array[INxRange], qErrorMsg: String): ICheckNumberOrExpressionResult = {
     val __obj = js.Dynamic.literal(qBadFieldNames = qBadFieldNames.asInstanceOf[js.Any], qErrorMsg = qErrorMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckNumberOrExpressionResult]
   }
   
-  @scala.inline
-  implicit class ICheckNumberOrExpressionResultMutableBuilder[Self <: ICheckNumberOrExpressionResult] (val x: Self) extends AnyVal {
+  extension [Self <: ICheckNumberOrExpressionResult](x: Self) {
     
-    @scala.inline
-    def setQErrorMsg(value: String): Self = StObject.set(x, "qErrorMsg", value.asInstanceOf[js.Any])
+    inline def setQErrorMsg(value: String): Self = StObject.set(x, "qErrorMsg", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DetectPHIRequest extends StObject {
 }
 object DetectPHIRequest {
   
-  @scala.inline
-  def apply(Text: BoundedLengthString): DetectPHIRequest = {
+  inline def apply(Text: BoundedLengthString): DetectPHIRequest = {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectPHIRequest]
   }
   
-  @scala.inline
-  implicit class DetectPHIRequestMutableBuilder[Self <: DetectPHIRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectPHIRequest](x: Self) {
     
-    @scala.inline
-    def setText(value: BoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: BoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

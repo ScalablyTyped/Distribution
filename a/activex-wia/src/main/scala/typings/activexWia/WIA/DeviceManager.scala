@@ -65,6 +65,6 @@ trait DeviceManager extends StObject {
     DeviceID: String
   ): Unit = js.native
   
-  @JSName("WIA.DeviceManager_typekey")
+  /* private */ @JSName("WIA.DeviceManager_typekey")
   var WIADotDeviceManager_typekey: DeviceManager = js.native
 }

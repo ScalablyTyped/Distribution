@@ -16,8 +16,7 @@ trait subscribeFailureArgs
 }
 object subscribeFailureArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     client: client,
     clientId: String,
     error: String,
@@ -29,10 +28,8 @@ object subscribeFailureArgs {
     __obj.asInstanceOf[subscribeFailureArgs]
   }
   
-  @scala.inline
-  implicit class subscribeFailureArgsMutableBuilder[Self <: subscribeFailureArgs] (val x: Self) extends AnyVal {
+  extension [Self <: subscribeFailureArgs](x: Self) {
     
-    @scala.inline
-    def setIsResubscribe(value: Boolean): Self = StObject.set(x, "isResubscribe", value.asInstanceOf[js.Any])
+    inline def setIsResubscribe(value: Boolean): Self = StObject.set(x, "isResubscribe", value.asInstanceOf[js.Any])
   }
 }

@@ -19,22 +19,17 @@ trait AnalyticsConfigurationStorageClassAnalysisDataExport extends StObject {
 }
 object AnalyticsConfigurationStorageClassAnalysisDataExport {
   
-  @scala.inline
-  def apply(destination: Input[AnalyticsConfigurationStorageClassAnalysisDataExportDestination]): AnalyticsConfigurationStorageClassAnalysisDataExport = {
+  inline def apply(destination: Input[AnalyticsConfigurationStorageClassAnalysisDataExportDestination]): AnalyticsConfigurationStorageClassAnalysisDataExport = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsConfigurationStorageClassAnalysisDataExport]
   }
   
-  @scala.inline
-  implicit class AnalyticsConfigurationStorageClassAnalysisDataExportMutableBuilder[Self <: AnalyticsConfigurationStorageClassAnalysisDataExport] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsConfigurationStorageClassAnalysisDataExport](x: Self) {
     
-    @scala.inline
-    def setDestination(value: Input[AnalyticsConfigurationStorageClassAnalysisDataExportDestination]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Input[AnalyticsConfigurationStorageClassAnalysisDataExportDestination]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSchemaVersion(value: Input[String]): Self = StObject.set(x, "outputSchemaVersion", value.asInstanceOf[js.Any])
+    inline def setOutputSchemaVersion(value: Input[String]): Self = StObject.set(x, "outputSchemaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSchemaVersionUndefined: Self = StObject.set(x, "outputSchemaVersion", js.undefined)
+    inline def setOutputSchemaVersionUndefined: Self = StObject.set(x, "outputSchemaVersion", js.undefined)
   }
 }

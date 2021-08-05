@@ -11,16 +11,13 @@ trait FileSystemManagerGetFileInfoSuccessCallbackResult extends StObject {
 }
 object FileSystemManagerGetFileInfoSuccessCallbackResult {
   
-  @scala.inline
-  def apply(size: Double): FileSystemManagerGetFileInfoSuccessCallbackResult = {
+  inline def apply(size: Double): FileSystemManagerGetFileInfoSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemManagerGetFileInfoSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class FileSystemManagerGetFileInfoSuccessCallbackResultMutableBuilder[Self <: FileSystemManagerGetFileInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemManagerGetFileInfoSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

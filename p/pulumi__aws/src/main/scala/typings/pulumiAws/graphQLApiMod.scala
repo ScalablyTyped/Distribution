@@ -100,21 +100,16 @@ object graphQLApiMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): GraphQLApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GraphQLApi]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GraphQLApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GraphQLApi]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GraphQLApiState): GraphQLApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GraphQLApi]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GraphQLApiState, opts: CustomResourceOptions): GraphQLApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GraphQLApi]
+    inline def get(name: String, id: Input[ID]): GraphQLApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GraphQLApi]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GraphQLApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GraphQLApi]
+    inline def get(name: String, id: Input[ID], state: GraphQLApiState): GraphQLApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GraphQLApi]
+    inline def get(name: String, id: Input[ID], state: GraphQLApiState, opts: CustomResourceOptions): GraphQLApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GraphQLApi]
     
     /**
       * Returns true if the given object is an instance of GraphQLApi.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/graphQLApi.GraphQLApi */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appsync/graphQLApi.GraphQLApi */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/graphQLApi.GraphQLApi */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appsync/graphQLApi.GraphQLApi */ Boolean]
   }
   
   trait GraphQLApiArgs extends StObject {
@@ -172,17 +167,14 @@ object graphQLApiMod {
   }
   object GraphQLApiArgs {
     
-    @scala.inline
-    def apply(authenticationType: Input[String]): GraphQLApiArgs = {
+    inline def apply(authenticationType: Input[String]): GraphQLApiArgs = {
       val __obj = js.Dynamic.literal(authenticationType = authenticationType.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLApiArgs]
     }
     
-    @scala.inline
-    implicit class GraphQLApiArgsMutableBuilder[Self <: GraphQLApiArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQLApiArgs](x: Self) {
       
-      @scala.inline
-      def setAdditionalAuthenticationProviders(
+      inline def setAdditionalAuthenticationProviders(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.appsync.GraphQLApiAdditionalAuthenticationProvider]
@@ -190,56 +182,39 @@ object graphQLApiMod {
             ]
       ): Self = StObject.set(x, "additionalAuthenticationProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalAuthenticationProvidersUndefined: Self = StObject.set(x, "additionalAuthenticationProviders", js.undefined)
+      inline def setAdditionalAuthenticationProvidersUndefined: Self = StObject.set(x, "additionalAuthenticationProviders", js.undefined)
       
-      @scala.inline
-      def setAdditionalAuthenticationProvidersVarargs(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiAdditionalAuthenticationProvider]*): Self = StObject.set(x, "additionalAuthenticationProviders", js.Array(value :_*))
+      inline def setAdditionalAuthenticationProvidersVarargs(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiAdditionalAuthenticationProvider]*): Self = StObject.set(x, "additionalAuthenticationProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setAuthenticationType(value: Input[String]): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+      inline def setAuthenticationType(value: Input[String]): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogConfig(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiLogConfig]): Self = StObject.set(x, "logConfig", value.asInstanceOf[js.Any])
+      inline def setLogConfig(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiLogConfig]): Self = StObject.set(x, "logConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogConfigUndefined: Self = StObject.set(x, "logConfig", js.undefined)
+      inline def setLogConfigUndefined: Self = StObject.set(x, "logConfig", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOpenidConnectConfig(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiOpenidConnectConfig]): Self = StObject.set(x, "openidConnectConfig", value.asInstanceOf[js.Any])
+      inline def setOpenidConnectConfig(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiOpenidConnectConfig]): Self = StObject.set(x, "openidConnectConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenidConnectConfigUndefined: Self = StObject.set(x, "openidConnectConfig", js.undefined)
+      inline def setOpenidConnectConfigUndefined: Self = StObject.set(x, "openidConnectConfig", js.undefined)
       
-      @scala.inline
-      def setSchema(value: Input[String]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: Input[String]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUserPoolConfig(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiUserPoolConfig]): Self = StObject.set(x, "userPoolConfig", value.asInstanceOf[js.Any])
+      inline def setUserPoolConfig(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiUserPoolConfig]): Self = StObject.set(x, "userPoolConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolConfigUndefined: Self = StObject.set(x, "userPoolConfig", js.undefined)
+      inline def setUserPoolConfigUndefined: Self = StObject.set(x, "userPoolConfig", js.undefined)
       
-      @scala.inline
-      def setXrayEnabled(value: Input[Boolean]): Self = StObject.set(x, "xrayEnabled", value.asInstanceOf[js.Any])
+      inline def setXrayEnabled(value: Input[Boolean]): Self = StObject.set(x, "xrayEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXrayEnabledUndefined: Self = StObject.set(x, "xrayEnabled", js.undefined)
+      inline def setXrayEnabledUndefined: Self = StObject.set(x, "xrayEnabled", js.undefined)
     }
   }
   
@@ -308,17 +283,14 @@ object graphQLApiMod {
   }
   object GraphQLApiState {
     
-    @scala.inline
-    def apply(): GraphQLApiState = {
+    inline def apply(): GraphQLApiState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GraphQLApiState]
     }
     
-    @scala.inline
-    implicit class GraphQLApiStateMutableBuilder[Self <: GraphQLApiState] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQLApiState](x: Self) {
       
-      @scala.inline
-      def setAdditionalAuthenticationProviders(
+      inline def setAdditionalAuthenticationProviders(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.appsync.GraphQLApiAdditionalAuthenticationProvider]
@@ -326,71 +298,49 @@ object graphQLApiMod {
             ]
       ): Self = StObject.set(x, "additionalAuthenticationProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalAuthenticationProvidersUndefined: Self = StObject.set(x, "additionalAuthenticationProviders", js.undefined)
+      inline def setAdditionalAuthenticationProvidersUndefined: Self = StObject.set(x, "additionalAuthenticationProviders", js.undefined)
       
-      @scala.inline
-      def setAdditionalAuthenticationProvidersVarargs(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiAdditionalAuthenticationProvider]*): Self = StObject.set(x, "additionalAuthenticationProviders", js.Array(value :_*))
+      inline def setAdditionalAuthenticationProvidersVarargs(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiAdditionalAuthenticationProvider]*): Self = StObject.set(x, "additionalAuthenticationProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAuthenticationType(value: Input[String]): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+      inline def setAuthenticationType(value: Input[String]): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
+      inline def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
       
-      @scala.inline
-      def setLogConfig(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiLogConfig]): Self = StObject.set(x, "logConfig", value.asInstanceOf[js.Any])
+      inline def setLogConfig(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiLogConfig]): Self = StObject.set(x, "logConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogConfigUndefined: Self = StObject.set(x, "logConfig", js.undefined)
+      inline def setLogConfigUndefined: Self = StObject.set(x, "logConfig", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOpenidConnectConfig(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiOpenidConnectConfig]): Self = StObject.set(x, "openidConnectConfig", value.asInstanceOf[js.Any])
+      inline def setOpenidConnectConfig(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiOpenidConnectConfig]): Self = StObject.set(x, "openidConnectConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenidConnectConfigUndefined: Self = StObject.set(x, "openidConnectConfig", js.undefined)
+      inline def setOpenidConnectConfigUndefined: Self = StObject.set(x, "openidConnectConfig", js.undefined)
       
-      @scala.inline
-      def setSchema(value: Input[String]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: Input[String]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUris(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
+      inline def setUris(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
+      inline def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
       
-      @scala.inline
-      def setUserPoolConfig(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiUserPoolConfig]): Self = StObject.set(x, "userPoolConfig", value.asInstanceOf[js.Any])
+      inline def setUserPoolConfig(value: Input[typings.pulumiAws.inputMod.appsync.GraphQLApiUserPoolConfig]): Self = StObject.set(x, "userPoolConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolConfigUndefined: Self = StObject.set(x, "userPoolConfig", js.undefined)
+      inline def setUserPoolConfigUndefined: Self = StObject.set(x, "userPoolConfig", js.undefined)
       
-      @scala.inline
-      def setXrayEnabled(value: Input[Boolean]): Self = StObject.set(x, "xrayEnabled", value.asInstanceOf[js.Any])
+      inline def setXrayEnabled(value: Input[Boolean]): Self = StObject.set(x, "xrayEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXrayEnabledUndefined: Self = StObject.set(x, "xrayEnabled", js.undefined)
+      inline def setXrayEnabledUndefined: Self = StObject.set(x, "xrayEnabled", js.undefined)
     }
   }
 }

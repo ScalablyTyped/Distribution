@@ -11,6 +11,5 @@ object configureMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def configure(options: ComputedConfigurable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configure(options: ComputedConfigurable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

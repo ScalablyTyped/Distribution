@@ -13,19 +13,15 @@ trait GpuDeviceMemoryInfo extends StObject {
 }
 object GpuDeviceMemoryInfo {
   
-  @scala.inline
-  def apply(): GpuDeviceMemoryInfo = {
+  inline def apply(): GpuDeviceMemoryInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GpuDeviceMemoryInfo]
   }
   
-  @scala.inline
-  implicit class GpuDeviceMemoryInfoMutableBuilder[Self <: GpuDeviceMemoryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GpuDeviceMemoryInfo](x: Self) {
     
-    @scala.inline
-    def setSizeInMiB(value: GpuDeviceMemorySize): Self = StObject.set(x, "SizeInMiB", value.asInstanceOf[js.Any])
+    inline def setSizeInMiB(value: GpuDeviceMemorySize): Self = StObject.set(x, "SizeInMiB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInMiBUndefined: Self = StObject.set(x, "SizeInMiB", js.undefined)
+    inline def setSizeInMiBUndefined: Self = StObject.set(x, "SizeInMiB", js.undefined)
   }
 }

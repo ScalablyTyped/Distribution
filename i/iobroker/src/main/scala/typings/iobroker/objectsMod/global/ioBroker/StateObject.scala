@@ -22,26 +22,20 @@ trait StateObject
 }
 object StateObject {
   
-  @scala.inline
-  def apply(_id: String, common: StateCommon, native: Record[String, js.Any]): StateObject = {
+  inline def apply(_id: String, common: StateCommon, native: Record[String, js.Any]): StateObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("state")
     __obj.asInstanceOf[StateObject]
   }
   
-  @scala.inline
-  implicit class StateObjectMutableBuilder[Self <: StateObject] (val x: Self) extends AnyVal {
+  extension [Self <: StateObject](x: Self) {
     
-    @scala.inline
-    def setAcl(value: StateACL): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+    inline def setAcl(value: StateACL): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
+    inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
     
-    @scala.inline
-    def setCommon(value: StateCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: StateCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: state): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: state): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

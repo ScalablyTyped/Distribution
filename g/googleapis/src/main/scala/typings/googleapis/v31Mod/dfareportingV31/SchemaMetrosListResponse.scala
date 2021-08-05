@@ -22,28 +22,21 @@ trait SchemaMetrosListResponse extends StObject {
 }
 object SchemaMetrosListResponse {
   
-  @scala.inline
-  def apply(): SchemaMetrosListResponse = {
+  inline def apply(): SchemaMetrosListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMetrosListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaMetrosListResponseMutableBuilder[Self <: SchemaMetrosListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMetrosListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMetros(value: js.Array[SchemaMetro]): Self = StObject.set(x, "metros", value.asInstanceOf[js.Any])
+    inline def setMetros(value: js.Array[SchemaMetro]): Self = StObject.set(x, "metros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetrosUndefined: Self = StObject.set(x, "metros", js.undefined)
+    inline def setMetrosUndefined: Self = StObject.set(x, "metros", js.undefined)
     
-    @scala.inline
-    def setMetrosVarargs(value: SchemaMetro*): Self = StObject.set(x, "metros", js.Array(value :_*))
+    inline def setMetrosVarargs(value: SchemaMetro*): Self = StObject.set(x, "metros", js.Array(value :_*))
   }
 }

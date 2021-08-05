@@ -27,24 +27,19 @@ object mod {
   }
   object GeometryCollection {
     
-    @scala.inline
-    def apply[P /* <: Properties */](geometries: js.Array[GeometryObject[P]]): GeometryCollection[P] = {
+    inline def apply[P /* <: Properties */](geometries: js.Array[GeometryObject[P]]): GeometryCollection[P] = {
       val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("GeometryCollection")
       __obj.asInstanceOf[GeometryCollection[P]]
     }
     
-    @scala.inline
-    implicit class GeometryCollectionMutableBuilder[Self <: GeometryCollection[?], P /* <: Properties */] (val x: Self & GeometryCollection[P]) extends AnyVal {
+    extension [Self <: GeometryCollection[?], P /* <: Properties */](x: Self & GeometryCollection[P]) {
       
-      @scala.inline
-      def setGeometries(value: js.Array[GeometryObject[P]]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+      inline def setGeometries(value: js.Array[GeometryObject[P]]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometriesVarargs(value: GeometryObject[P]*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+      inline def setGeometriesVarargs(value: GeometryObject[P]*): Self = StObject.set(x, "geometries", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.GeometryCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.GeometryCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,57 +56,49 @@ object mod {
   trait GeometryObject[P /* <: Properties */] extends StObject
   object GeometryObject {
     
-    @scala.inline
-    def GeometryCollection[P /* <: Properties */](geometries: js.Array[GeometryObject[P]]): typings.topojsonSpecification.mod.GeometryCollection[P] = {
+    inline def GeometryCollection[P /* <: Properties */](geometries: js.Array[GeometryObject[P]]): typings.topojsonSpecification.mod.GeometryCollection[P] = {
       val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("GeometryCollection")
       __obj.asInstanceOf[typings.topojsonSpecification.mod.GeometryCollection[P]]
     }
     
-    @scala.inline
-    def LineString[P /* <: Properties */](arcs: ArcIndexes): typings.topojsonSpecification.mod.LineString[P] = {
+    inline def LineString[P /* <: Properties */](arcs: ArcIndexes): typings.topojsonSpecification.mod.LineString[P] = {
       val __obj = js.Dynamic.literal(arcs = arcs.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("LineString")
       __obj.asInstanceOf[typings.topojsonSpecification.mod.LineString[P]]
     }
     
-    @scala.inline
-    def MultiLineString[P /* <: Properties */](arcs: js.Array[ArcIndexes]): typings.topojsonSpecification.mod.MultiLineString[P] = {
+    inline def MultiLineString[P /* <: Properties */](arcs: js.Array[ArcIndexes]): typings.topojsonSpecification.mod.MultiLineString[P] = {
       val __obj = js.Dynamic.literal(arcs = arcs.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("MultiLineString")
       __obj.asInstanceOf[typings.topojsonSpecification.mod.MultiLineString[P]]
     }
     
-    @scala.inline
-    def MultiPoint[P /* <: Properties */](coordinates: js.Array[Positions]): typings.topojsonSpecification.mod.MultiPoint[P] = {
+    inline def MultiPoint[P /* <: Properties */](coordinates: js.Array[Positions]): typings.topojsonSpecification.mod.MultiPoint[P] = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("MultiPoint")
       __obj.asInstanceOf[typings.topojsonSpecification.mod.MultiPoint[P]]
     }
     
-    @scala.inline
-    def MultiPolygon[P /* <: Properties */](arcs: js.Array[js.Array[ArcIndexes]]): typings.topojsonSpecification.mod.MultiPolygon[P] = {
+    inline def MultiPolygon[P /* <: Properties */](arcs: js.Array[js.Array[ArcIndexes]]): typings.topojsonSpecification.mod.MultiPolygon[P] = {
       val __obj = js.Dynamic.literal(arcs = arcs.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("MultiPolygon")
       __obj.asInstanceOf[typings.topojsonSpecification.mod.MultiPolygon[P]]
     }
     
-    @scala.inline
-    def NullObject(`type`: Null): typings.topojsonSpecification.mod.NullObject = {
+    inline def NullObject(`type`: Null): typings.topojsonSpecification.mod.NullObject = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.topojsonSpecification.mod.NullObject]
     }
     
-    @scala.inline
-    def Point[P /* <: Properties */](coordinates: Positions): typings.topojsonSpecification.mod.Point[P] = {
+    inline def Point[P /* <: Properties */](coordinates: Positions): typings.topojsonSpecification.mod.Point[P] = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Point")
       __obj.asInstanceOf[typings.topojsonSpecification.mod.Point[P]]
     }
     
-    @scala.inline
-    def Polygon[P /* <: Properties */](arcs: js.Array[ArcIndexes]): typings.topojsonSpecification.mod.Polygon[P] = {
+    inline def Polygon[P /* <: Properties */](arcs: js.Array[ArcIndexes]): typings.topojsonSpecification.mod.Polygon[P] = {
       val __obj = js.Dynamic.literal(arcs = arcs.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Polygon")
       __obj.asInstanceOf[typings.topojsonSpecification.mod.Polygon[P]]
@@ -131,33 +118,25 @@ object mod {
   }
   object GeometryObjectA {
     
-    @scala.inline
-    def apply[P /* <: Properties */](): GeometryObjectA[P] = {
+    inline def apply[P /* <: Properties */](): GeometryObjectA[P] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(null)
       __obj.asInstanceOf[GeometryObjectA[P]]
     }
     
-    @scala.inline
-    implicit class GeometryObjectAMutableBuilder[Self <: GeometryObjectA[?], P /* <: Properties */] (val x: Self & GeometryObjectA[P]) extends AnyVal {
+    extension [Self <: GeometryObjectA[?], P /* <: Properties */](x: Self & GeometryObjectA[P]) {
       
-      @scala.inline
-      def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setProperties(value: P): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: P): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setType(value: GeoJsonGeometryTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: GeoJsonGeometryTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
     }
   }
   
@@ -173,24 +152,19 @@ object mod {
   }
   object LineString {
     
-    @scala.inline
-    def apply[P /* <: Properties */](arcs: ArcIndexes): LineString[P] = {
+    inline def apply[P /* <: Properties */](arcs: ArcIndexes): LineString[P] = {
       val __obj = js.Dynamic.literal(arcs = arcs.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("LineString")
       __obj.asInstanceOf[LineString[P]]
     }
     
-    @scala.inline
-    implicit class LineStringMutableBuilder[Self <: LineString[?], P /* <: Properties */] (val x: Self & LineString[P]) extends AnyVal {
+    extension [Self <: LineString[?], P /* <: Properties */](x: Self & LineString[P]) {
       
-      @scala.inline
-      def setArcs(value: ArcIndexes): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
+      inline def setArcs(value: ArcIndexes): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArcsVarargs(value: Double*): Self = StObject.set(x, "arcs", js.Array(value :_*))
+      inline def setArcsVarargs(value: Double*): Self = StObject.set(x, "arcs", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.LineString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.LineString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,24 +180,19 @@ object mod {
   }
   object MultiLineString {
     
-    @scala.inline
-    def apply[P /* <: Properties */](arcs: js.Array[ArcIndexes]): MultiLineString[P] = {
+    inline def apply[P /* <: Properties */](arcs: js.Array[ArcIndexes]): MultiLineString[P] = {
       val __obj = js.Dynamic.literal(arcs = arcs.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("MultiLineString")
       __obj.asInstanceOf[MultiLineString[P]]
     }
     
-    @scala.inline
-    implicit class MultiLineStringMutableBuilder[Self <: MultiLineString[?], P /* <: Properties */] (val x: Self & MultiLineString[P]) extends AnyVal {
+    extension [Self <: MultiLineString[?], P /* <: Properties */](x: Self & MultiLineString[P]) {
       
-      @scala.inline
-      def setArcs(value: js.Array[ArcIndexes]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
+      inline def setArcs(value: js.Array[ArcIndexes]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArcsVarargs(value: ArcIndexes*): Self = StObject.set(x, "arcs", js.Array(value :_*))
+      inline def setArcsVarargs(value: ArcIndexes*): Self = StObject.set(x, "arcs", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.MultiLineString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.MultiLineString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,24 +208,19 @@ object mod {
   }
   object MultiPoint {
     
-    @scala.inline
-    def apply[P /* <: Properties */](coordinates: js.Array[Positions]): MultiPoint[P] = {
+    inline def apply[P /* <: Properties */](coordinates: js.Array[Positions]): MultiPoint[P] = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("MultiPoint")
       __obj.asInstanceOf[MultiPoint[P]]
     }
     
-    @scala.inline
-    implicit class MultiPointMutableBuilder[Self <: MultiPoint[?], P /* <: Properties */] (val x: Self & MultiPoint[P]) extends AnyVal {
+    extension [Self <: MultiPoint[?], P /* <: Properties */](x: Self & MultiPoint[P]) {
       
-      @scala.inline
-      def setCoordinates(value: js.Array[Positions]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      inline def setCoordinates(value: js.Array[Positions]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordinatesVarargs(value: Positions*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+      inline def setCoordinatesVarargs(value: Positions*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.MultiPoint): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.MultiPoint): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,24 +236,19 @@ object mod {
   }
   object MultiPolygon {
     
-    @scala.inline
-    def apply[P /* <: Properties */](arcs: js.Array[js.Array[ArcIndexes]]): MultiPolygon[P] = {
+    inline def apply[P /* <: Properties */](arcs: js.Array[js.Array[ArcIndexes]]): MultiPolygon[P] = {
       val __obj = js.Dynamic.literal(arcs = arcs.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("MultiPolygon")
       __obj.asInstanceOf[MultiPolygon[P]]
     }
     
-    @scala.inline
-    implicit class MultiPolygonMutableBuilder[Self <: MultiPolygon[?], P /* <: Properties */] (val x: Self & MultiPolygon[P]) extends AnyVal {
+    extension [Self <: MultiPolygon[?], P /* <: Properties */](x: Self & MultiPolygon[P]) {
       
-      @scala.inline
-      def setArcs(value: js.Array[js.Array[ArcIndexes]]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
+      inline def setArcs(value: js.Array[js.Array[ArcIndexes]]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArcsVarargs(value: js.Array[ArcIndexes]*): Self = StObject.set(x, "arcs", js.Array(value :_*))
+      inline def setArcsVarargs(value: js.Array[ArcIndexes]*): Self = StObject.set(x, "arcs", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.MultiPolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.MultiPolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -303,18 +262,15 @@ object mod {
   }
   object NullObject {
     
-    @scala.inline
-    def apply(`type`: Null): NullObject = {
+    inline def apply(`type`: Null): NullObject = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NullObject]
     }
     
-    @scala.inline
-    implicit class NullObjectMutableBuilder[Self <: NullObject] (val x: Self) extends AnyVal {
+    extension [Self <: NullObject](x: Self) {
       
-      @scala.inline
-      def setType(value: Null): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Null): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -336,24 +292,19 @@ object mod {
   }
   object Point {
     
-    @scala.inline
-    def apply[P /* <: Properties */](coordinates: Positions): Point[P] = {
+    inline def apply[P /* <: Properties */](coordinates: Positions): Point[P] = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Point")
       __obj.asInstanceOf[Point[P]]
     }
     
-    @scala.inline
-    implicit class PointMutableBuilder[Self <: Point[?], P /* <: Properties */] (val x: Self & Point[P]) extends AnyVal {
+    extension [Self <: Point[?], P /* <: Properties */](x: Self & Point[P]) {
       
-      @scala.inline
-      def setCoordinates(value: Positions): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      inline def setCoordinates(value: Positions): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+      inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.Point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.Point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -369,24 +320,19 @@ object mod {
   }
   object Polygon {
     
-    @scala.inline
-    def apply[P /* <: Properties */](arcs: js.Array[ArcIndexes]): Polygon[P] = {
+    inline def apply[P /* <: Properties */](arcs: js.Array[ArcIndexes]): Polygon[P] = {
       val __obj = js.Dynamic.literal(arcs = arcs.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Polygon")
       __obj.asInstanceOf[Polygon[P]]
     }
     
-    @scala.inline
-    implicit class PolygonMutableBuilder[Self <: Polygon[?], P /* <: Properties */] (val x: Self & Polygon[P]) extends AnyVal {
+    extension [Self <: Polygon[?], P /* <: Properties */](x: Self & Polygon[P]) {
       
-      @scala.inline
-      def setArcs(value: js.Array[ArcIndexes]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
+      inline def setArcs(value: js.Array[ArcIndexes]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArcsVarargs(value: ArcIndexes*): Self = StObject.set(x, "arcs", js.Array(value :_*))
+      inline def setArcsVarargs(value: ArcIndexes*): Self = StObject.set(x, "arcs", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.Polygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.Polygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -402,27 +348,21 @@ object mod {
   }
   object TopoJSON {
     
-    @scala.inline
-    def apply(): TopoJSON = {
+    inline def apply(): TopoJSON = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(null)
       __obj.asInstanceOf[TopoJSON]
     }
     
-    @scala.inline
-    implicit class TopoJSONMutableBuilder[Self <: TopoJSON] (val x: Self) extends AnyVal {
+    extension [Self <: TopoJSON](x: Self) {
       
-      @scala.inline
-      def setBbox(value: BBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: BBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
+      inline def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
       
-      @scala.inline
-      def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.Topology | GeoJsonGeometryTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.Topology | GeoJsonGeometryTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
     }
   }
   
@@ -441,33 +381,25 @@ object mod {
   }
   object Topology {
     
-    @scala.inline
-    def apply[T /* <: Objects[Properties] */](arcs: js.Array[Arc], objects: T): Topology[T] = {
+    inline def apply[T /* <: Objects[Properties] */](arcs: js.Array[Arc], objects: T): Topology[T] = {
       val __obj = js.Dynamic.literal(arcs = arcs.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Topology")
       __obj.asInstanceOf[Topology[T]]
     }
     
-    @scala.inline
-    implicit class TopologyMutableBuilder[Self <: Topology[?], T /* <: Objects[Properties] */] (val x: Self & Topology[T]) extends AnyVal {
+    extension [Self <: Topology[?], T /* <: Objects[Properties] */](x: Self & Topology[T]) {
       
-      @scala.inline
-      def setArcs(value: js.Array[Arc]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
+      inline def setArcs(value: js.Array[Arc]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArcsVarargs(value: Arc*): Self = StObject.set(x, "arcs", js.Array(value :_*))
+      inline def setArcsVarargs(value: Arc*): Self = StObject.set(x, "arcs", js.Array(value :_*))
       
-      @scala.inline
-      def setObjects(value: T): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: T): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.Topology): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.Topology): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -479,20 +411,16 @@ object mod {
   }
   object Transform {
     
-    @scala.inline
-    def apply(scale: js.Tuple2[Double, Double], translate: js.Tuple2[Double, Double]): Transform = {
+    inline def apply(scale: js.Tuple2[Double, Double], translate: js.Tuple2[Double, Double]): Transform = {
       val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any])
       __obj.asInstanceOf[Transform]
     }
     
-    @scala.inline
-    implicit class TransformMutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
+    extension [Self <: Transform](x: Self) {
       
-      @scala.inline
-      def setScale(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslate(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     }
   }
 }

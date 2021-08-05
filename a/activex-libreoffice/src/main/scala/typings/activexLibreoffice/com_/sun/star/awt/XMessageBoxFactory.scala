@@ -24,8 +24,7 @@ trait XMessageBoxFactory
 }
 object XMessageBoxFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createMessageBox: (XWindowPeer, MessageBoxType, Double, String, String) => XMessageBox,
     queryInterface: `type` => js.Any,
@@ -35,10 +34,8 @@ object XMessageBoxFactory {
     __obj.asInstanceOf[XMessageBoxFactory]
   }
   
-  @scala.inline
-  implicit class XMessageBoxFactoryMutableBuilder[Self <: XMessageBoxFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XMessageBoxFactory](x: Self) {
     
-    @scala.inline
-    def setCreateMessageBox(value: (XWindowPeer, MessageBoxType, Double, String, String) => XMessageBox): Self = StObject.set(x, "createMessageBox", js.Any.fromFunction5(value))
+    inline def setCreateMessageBox(value: (XWindowPeer, MessageBoxType, Double, String, String) => XMessageBox): Self = StObject.set(x, "createMessageBox", js.Any.fromFunction5(value))
   }
 }

@@ -23,43 +23,31 @@ trait Country extends StObject {
 }
 object Country {
   
-  @scala.inline
-  def apply(): Country = {
+  inline def apply(): Country = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Country]
   }
   
-  @scala.inline
-  implicit class CountryMutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
+  extension [Self <: Country](x: Self) {
     
-    @scala.inline
-    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+    inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
-    @scala.inline
-    def setDartId(value: String): Self = StObject.set(x, "dartId", value.asInstanceOf[js.Any])
+    inline def setDartId(value: String): Self = StObject.set(x, "dartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDartIdUndefined: Self = StObject.set(x, "dartId", js.undefined)
+    inline def setDartIdUndefined: Self = StObject.set(x, "dartId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSslEnabled(value: Boolean): Self = StObject.set(x, "sslEnabled", value.asInstanceOf[js.Any])
+    inline def setSslEnabled(value: Boolean): Self = StObject.set(x, "sslEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslEnabledUndefined: Self = StObject.set(x, "sslEnabled", js.undefined)
+    inline def setSslEnabledUndefined: Self = StObject.set(x, "sslEnabled", js.undefined)
   }
 }

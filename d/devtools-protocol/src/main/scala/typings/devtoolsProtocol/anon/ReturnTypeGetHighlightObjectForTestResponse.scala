@@ -14,8 +14,7 @@ trait ReturnTypeGetHighlightObjectForTestResponse extends StObject {
 }
 object ReturnTypeGetHighlightObjectForTestResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     paramsType: js.Array[GetHighlightObjectForTestRequest],
     returnType: GetHighlightObjectForTestResponse
   ): ReturnTypeGetHighlightObjectForTestResponse = {
@@ -23,16 +22,12 @@ object ReturnTypeGetHighlightObjectForTestResponse {
     __obj.asInstanceOf[ReturnTypeGetHighlightObjectForTestResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetHighlightObjectForTestResponseMutableBuilder[Self <: ReturnTypeGetHighlightObjectForTestResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetHighlightObjectForTestResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetHighlightObjectForTestRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetHighlightObjectForTestRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetHighlightObjectForTestRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetHighlightObjectForTestRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetHighlightObjectForTestResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetHighlightObjectForTestResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

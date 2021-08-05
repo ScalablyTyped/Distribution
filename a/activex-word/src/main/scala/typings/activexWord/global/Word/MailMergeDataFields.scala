@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.MailMergeDataFields")
 @js.native
-class MailMergeDataFields protected ()
+/* private */ class MailMergeDataFields ()
   extends StObject
      with typings.activexWord.Word.MailMergeDataFields {
   
@@ -25,7 +25,7 @@ class MailMergeDataFields protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.MailMergeDataFields_typekey")
   var WordDotMailMergeDataFields_typekey: typings.activexWord.Word.MailMergeDataFields = js.native
 }

@@ -23,28 +23,21 @@ trait InventoryFilter extends StObject {
 }
 object InventoryFilter {
   
-  @scala.inline
-  def apply(Key: InventoryFilterKey, Values: InventoryFilterValueList): InventoryFilter = {
+  inline def apply(Key: InventoryFilterKey, Values: InventoryFilterValueList): InventoryFilter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryFilter]
   }
   
-  @scala.inline
-  implicit class InventoryFilterMutableBuilder[Self <: InventoryFilter] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: InventoryFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: InventoryFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: InventoryQueryOperatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: InventoryQueryOperatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValues(value: InventoryFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: InventoryFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: InventoryFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: InventoryFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

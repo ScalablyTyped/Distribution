@@ -21,28 +21,21 @@ trait SchemaTextProperty extends StObject {
 }
 object SchemaTextProperty {
   
-  @scala.inline
-  def apply(): SchemaTextProperty = {
+  inline def apply(): SchemaTextProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTextProperty]
   }
   
-  @scala.inline
-  implicit class SchemaTextPropertyMutableBuilder[Self <: SchemaTextProperty] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTextProperty](x: Self) {
     
-    @scala.inline
-    def setDetectedBreak(value: SchemaDetectedBreak): Self = StObject.set(x, "detectedBreak", value.asInstanceOf[js.Any])
+    inline def setDetectedBreak(value: SchemaDetectedBreak): Self = StObject.set(x, "detectedBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedBreakUndefined: Self = StObject.set(x, "detectedBreak", js.undefined)
+    inline def setDetectedBreakUndefined: Self = StObject.set(x, "detectedBreak", js.undefined)
     
-    @scala.inline
-    def setDetectedLanguages(value: js.Array[SchemaDetectedLanguage]): Self = StObject.set(x, "detectedLanguages", value.asInstanceOf[js.Any])
+    inline def setDetectedLanguages(value: js.Array[SchemaDetectedLanguage]): Self = StObject.set(x, "detectedLanguages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
+    inline def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
     
-    @scala.inline
-    def setDetectedLanguagesVarargs(value: SchemaDetectedLanguage*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
+    inline def setDetectedLanguagesVarargs(value: SchemaDetectedLanguage*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
   }
 }

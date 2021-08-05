@@ -13,25 +13,19 @@ trait DeleteMultiOptions extends StObject {
 }
 object DeleteMultiOptions {
   
-  @scala.inline
-  def apply(): DeleteMultiOptions = {
+  inline def apply(): DeleteMultiOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteMultiOptions]
   }
   
-  @scala.inline
-  implicit class DeleteMultiOptionsMutableBuilder[Self <: DeleteMultiOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMultiOptions](x: Self) {
     
-    @scala.inline
-    def setQuite(value: Boolean): Self = StObject.set(x, "quite", value.asInstanceOf[js.Any])
+    inline def setQuite(value: Boolean): Self = StObject.set(x, "quite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuiteUndefined: Self = StObject.set(x, "quite", js.undefined)
+    inline def setQuiteUndefined: Self = StObject.set(x, "quite", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

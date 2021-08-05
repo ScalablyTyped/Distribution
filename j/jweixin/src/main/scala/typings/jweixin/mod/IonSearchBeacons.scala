@@ -14,16 +14,13 @@ trait IonSearchBeacons
 }
 object IonSearchBeacons {
   
-  @scala.inline
-  def apply(complete: js.Any => Unit): IonSearchBeacons = {
+  inline def apply(complete: js.Any => Unit): IonSearchBeacons = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
     __obj.asInstanceOf[IonSearchBeacons]
   }
   
-  @scala.inline
-  implicit class IonSearchBeaconsMutableBuilder[Self <: IonSearchBeacons] (val x: Self) extends AnyVal {
+  extension [Self <: IonSearchBeacons](x: Self) {
     
-    @scala.inline
-    def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
   }
 }

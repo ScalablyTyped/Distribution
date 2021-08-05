@@ -31,6 +31,5 @@ class SystemFunction protected ()
 }
 object SystemFunction {
   
-  @scala.inline
-  def apply: SystemFunctionConstructor = js.Dynamic.global.selectDynamic("SystemFunction").asInstanceOf[SystemFunctionConstructor]
+  inline def apply: SystemFunctionConstructor = js.Dynamic.global.selectDynamic("SystemFunction").asInstanceOf[SystemFunctionConstructor]
 }

@@ -34,8 +34,7 @@ object tabBarIndicatorMod {
   }
   object Props {
     
-    @scala.inline
-    def apply[T /* <: Route */](
+    inline def apply[T /* <: Route */](
       getTabWidth: /* index */ Double => Double,
       jumpTo: String => Unit,
       layout: Layout,
@@ -47,26 +46,19 @@ object tabBarIndicatorMod {
       __obj.asInstanceOf[Props[T]]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[?], T /* <: Route */] (val x: Self & Props[T]) extends AnyVal {
+    extension [Self <: Props[?], T /* <: Route */](x: Self & Props[T]) {
       
-      @scala.inline
-      def setGetTabWidth(value: /* index */ Double => Double): Self = StObject.set(x, "getTabWidth", js.Any.fromFunction1(value))
+      inline def setGetTabWidth(value: /* index */ Double => Double): Self = StObject.set(x, "getTabWidth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNavigationState(value: NavigationState[T]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
+      inline def setNavigationState(value: NavigationState[T]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,14 +72,14 @@ object tabBarIndicatorMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MTabBarIndicator(): Unit = js.native
     
-    var fadeInIndicator: js.Any = js.native
+    /* private */ var fadeInIndicator: js.Any = js.native
     
-    var getTranslateX: js.Any = js.native
+    /* private */ var getTranslateX: js.Any = js.native
     
-    var getWidth: js.Any = js.native
+    /* private */ var getWidth: js.Any = js.native
     
-    var isIndicatorShown: js.Any = js.native
+    /* private */ var isIndicatorShown: js.Any = js.native
     
-    var opacity: js.Any = js.native
+    /* private */ var opacity: js.Any = js.native
   }
 }

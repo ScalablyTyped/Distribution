@@ -10,6 +10,5 @@ object areInputsEqualMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(newInputs: js.Array[js.Any], lastInputs: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(newInputs.asInstanceOf[js.Any], lastInputs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(newInputs: js.Array[js.Any], lastInputs: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(newInputs.asInstanceOf[js.Any], lastInputs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

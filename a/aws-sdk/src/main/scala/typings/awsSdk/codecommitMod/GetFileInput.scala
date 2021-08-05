@@ -23,25 +23,19 @@ trait GetFileInput extends StObject {
 }
 object GetFileInput {
   
-  @scala.inline
-  def apply(filePath: Path, repositoryName: RepositoryName): GetFileInput = {
+  inline def apply(filePath: Path, repositoryName: RepositoryName): GetFileInput = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFileInput]
   }
   
-  @scala.inline
-  implicit class GetFileInputMutableBuilder[Self <: GetFileInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetFileInput](x: Self) {
     
-    @scala.inline
-    def setCommitSpecifier(value: CommitName): Self = StObject.set(x, "commitSpecifier", value.asInstanceOf[js.Any])
+    inline def setCommitSpecifier(value: CommitName): Self = StObject.set(x, "commitSpecifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitSpecifierUndefined: Self = StObject.set(x, "commitSpecifier", js.undefined)
+    inline def setCommitSpecifierUndefined: Self = StObject.set(x, "commitSpecifier", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

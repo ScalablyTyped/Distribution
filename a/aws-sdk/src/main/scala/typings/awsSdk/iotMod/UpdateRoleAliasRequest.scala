@@ -23,28 +23,21 @@ trait UpdateRoleAliasRequest extends StObject {
 }
 object UpdateRoleAliasRequest {
   
-  @scala.inline
-  def apply(roleAlias: RoleAlias): UpdateRoleAliasRequest = {
+  inline def apply(roleAlias: RoleAlias): UpdateRoleAliasRequest = {
     val __obj = js.Dynamic.literal(roleAlias = roleAlias.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRoleAliasRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRoleAliasRequestMutableBuilder[Self <: UpdateRoleAliasRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRoleAliasRequest](x: Self) {
     
-    @scala.inline
-    def setCredentialDurationSeconds(value: CredentialDurationSeconds): Self = StObject.set(x, "credentialDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setCredentialDurationSeconds(value: CredentialDurationSeconds): Self = StObject.set(x, "credentialDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialDurationSecondsUndefined: Self = StObject.set(x, "credentialDurationSeconds", js.undefined)
+    inline def setCredentialDurationSecondsUndefined: Self = StObject.set(x, "credentialDurationSeconds", js.undefined)
     
-    @scala.inline
-    def setRoleAlias(value: RoleAlias): Self = StObject.set(x, "roleAlias", value.asInstanceOf[js.Any])
+    inline def setRoleAlias(value: RoleAlias): Self = StObject.set(x, "roleAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

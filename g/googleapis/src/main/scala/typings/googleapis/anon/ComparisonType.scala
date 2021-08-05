@@ -18,43 +18,31 @@ trait ComparisonType extends StObject {
 }
 object ComparisonType {
   
-  @scala.inline
-  def apply(): ComparisonType = {
+  inline def apply(): ComparisonType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComparisonType]
   }
   
-  @scala.inline
-  implicit class ComparisonTypeMutableBuilder[Self <: ComparisonType] (val x: Self) extends AnyVal {
+  extension [Self <: ComparisonType](x: Self) {
     
-    @scala.inline
-    def setComparisonType(value: String): Self = StObject.set(x, "comparisonType", value.asInstanceOf[js.Any])
+    inline def setComparisonType(value: String): Self = StObject.set(x, "comparisonType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonTypeUndefined: Self = StObject.set(x, "comparisonType", js.undefined)
+    inline def setComparisonTypeUndefined: Self = StObject.set(x, "comparisonType", js.undefined)
     
-    @scala.inline
-    def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
+    inline def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
+    inline def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
+    inline def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
+    inline def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

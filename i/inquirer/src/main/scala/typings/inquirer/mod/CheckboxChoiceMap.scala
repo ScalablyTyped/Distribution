@@ -18,8 +18,7 @@ trait CheckboxChoiceMap[T /* <: Answers */]
 }
 object CheckboxChoiceMap {
   
-  @scala.inline
-  def apply[T /* <: Answers */](
+  inline def apply[T /* <: Answers */](
     CheckboxChoiceOptions: CheckboxChoiceOptions[T],
     Choice: typings.inquirer.choiceMod.^[T],
     ChoiceOptions: ChoiceOptions[T],
@@ -30,10 +29,8 @@ object CheckboxChoiceMap {
     __obj.asInstanceOf[CheckboxChoiceMap[T]]
   }
   
-  @scala.inline
-  implicit class CheckboxChoiceMapMutableBuilder[Self <: CheckboxChoiceMap[?], T /* <: Answers */] (val x: Self & CheckboxChoiceMap[T]) extends AnyVal {
+  extension [Self <: CheckboxChoiceMap[?], T /* <: Answers */](x: Self & CheckboxChoiceMap[T]) {
     
-    @scala.inline
-    def setCheckboxChoiceOptions(value: CheckboxChoiceOptions[T]): Self = StObject.set(x, "CheckboxChoiceOptions", value.asInstanceOf[js.Any])
+    inline def setCheckboxChoiceOptions(value: CheckboxChoiceOptions[T]): Self = StObject.set(x, "CheckboxChoiceOptions", value.asInstanceOf[js.Any])
   }
 }

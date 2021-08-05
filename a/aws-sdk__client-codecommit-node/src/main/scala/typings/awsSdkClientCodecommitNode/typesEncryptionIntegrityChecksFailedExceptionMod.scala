@@ -76,17 +76,14 @@ object typesEncryptionIntegrityChecksFailedExceptionMod {
   }
   object EncryptionIntegrityChecksFailedException {
     
-    @scala.inline
-    def apply(): EncryptionIntegrityChecksFailedException = {
+    inline def apply(): EncryptionIntegrityChecksFailedException = {
       val __obj = js.Dynamic.literal(name = "EncryptionIntegrityChecksFailedException")
       __obj.asInstanceOf[EncryptionIntegrityChecksFailedException]
     }
     
-    @scala.inline
-    implicit class EncryptionIntegrityChecksFailedExceptionMutableBuilder[Self <: EncryptionIntegrityChecksFailedException] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptionIntegrityChecksFailedException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionIntegrityChecksFailedException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

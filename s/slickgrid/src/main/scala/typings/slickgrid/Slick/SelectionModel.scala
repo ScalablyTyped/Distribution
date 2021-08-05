@@ -20,22 +20,17 @@ trait SelectionModel[T /* <: SlickData */, E] extends StObject {
 }
 object SelectionModel {
   
-  @scala.inline
-  def apply[T /* <: SlickData */, E](destroy: () => Unit, init: Grid[T] => Unit, onSelectedRangesChanged: Event[E]): SelectionModel[T, E] = {
+  inline def apply[T /* <: SlickData */, E](destroy: () => Unit, init: Grid[T] => Unit, onSelectedRangesChanged: Event[E]): SelectionModel[T, E] = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction1(init), onSelectedRangesChanged = onSelectedRangesChanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionModel[T, E]]
   }
   
-  @scala.inline
-  implicit class SelectionModelMutableBuilder[Self <: SelectionModel[?, ?], T /* <: SlickData */, E] (val x: Self & (SelectionModel[T, E])) extends AnyVal {
+  extension [Self <: SelectionModel[?, ?], T /* <: SlickData */, E](x: Self & (SelectionModel[T, E])) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInit(value: Grid[T] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: Grid[T] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSelectedRangesChanged(value: Event[E]): Self = StObject.set(x, "onSelectedRangesChanged", value.asInstanceOf[js.Any])
+    inline def setOnSelectedRangesChanged(value: Event[E]): Self = StObject.set(x, "onSelectedRangesChanged", value.asInstanceOf[js.Any])
   }
 }

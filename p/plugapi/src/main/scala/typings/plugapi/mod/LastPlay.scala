@@ -15,22 +15,17 @@ trait LastPlay extends StObject {
 }
 object LastPlay {
   
-  @scala.inline
-  def apply(dj: DJ, media: Media, score: Score): LastPlay = {
+  inline def apply(dj: DJ, media: Media, score: Score): LastPlay = {
     val __obj = js.Dynamic.literal(dj = dj.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
     __obj.asInstanceOf[LastPlay]
   }
   
-  @scala.inline
-  implicit class LastPlayMutableBuilder[Self <: LastPlay] (val x: Self) extends AnyVal {
+  extension [Self <: LastPlay](x: Self) {
     
-    @scala.inline
-    def setDj(value: DJ): Self = StObject.set(x, "dj", value.asInstanceOf[js.Any])
+    inline def setDj(value: DJ): Self = StObject.set(x, "dj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: Score): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Score): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
   }
 }

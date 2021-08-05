@@ -11,6 +11,5 @@ object renameShapeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def renameShape(model: ApiModel, currentName: String, newName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renameShape")(model.asInstanceOf[js.Any], currentName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renameShape(model: ApiModel, currentName: String, newName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renameShape")(model.asInstanceOf[js.Any], currentName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -30,8 +30,7 @@ object mod {
     @JSImport("node-xmpp-client", "Client.Stanza")
     @js.native
     def Stanza: typings.nodeXmppClient.mod.Stanza = js.native
-    @scala.inline
-    def Stanza_=(x: Stanza): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stanza")(x.asInstanceOf[js.Any])
+    inline def Stanza_=(x: Stanza): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stanza")(x.asInstanceOf[js.Any])
   }
   
   trait Bosh extends StObject {
@@ -42,26 +41,20 @@ object mod {
   }
   object Bosh {
     
-    @scala.inline
-    def apply(): Bosh = {
+    inline def apply(): Bosh = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Bosh]
     }
     
-    @scala.inline
-    implicit class BoshMutableBuilder[Self <: Bosh] (val x: Self) extends AnyVal {
+    extension [Self <: Bosh](x: Self) {
       
-      @scala.inline
-      def setPrebind(value: (/* error */ js.Any, /* data */ js.Any) => Unit): Self = StObject.set(x, "prebind", js.Any.fromFunction2(value))
+      inline def setPrebind(value: (/* error */ js.Any, /* data */ js.Any) => Unit): Self = StObject.set(x, "prebind", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrebindUndefined: Self = StObject.set(x, "prebind", js.undefined)
+      inline def setPrebindUndefined: Self = StObject.set(x, "prebind", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -153,86 +146,60 @@ object mod {
   }
   object XmppOptions {
     
-    @scala.inline
-    def apply(jid: String, password: String): XmppOptions = {
+    inline def apply(jid: String, password: String): XmppOptions = {
       val __obj = js.Dynamic.literal(jid = jid.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[XmppOptions]
     }
     
-    @scala.inline
-    implicit class XmppOptionsMutableBuilder[Self <: XmppOptions] (val x: Self) extends AnyVal {
+    extension [Self <: XmppOptions](x: Self) {
       
-      @scala.inline
-      def setActAs(value: String): Self = StObject.set(x, "actAs", value.asInstanceOf[js.Any])
+      inline def setActAs(value: String): Self = StObject.set(x, "actAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActAsUndefined: Self = StObject.set(x, "actAs", js.undefined)
+      inline def setActAsUndefined: Self = StObject.set(x, "actAs", js.undefined)
       
-      @scala.inline
-      def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
+      inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
+      inline def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
       
-      @scala.inline
-      def setBosh(value: Bosh): Self = StObject.set(x, "bosh", value.asInstanceOf[js.Any])
+      inline def setBosh(value: Bosh): Self = StObject.set(x, "bosh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoshUndefined: Self = StObject.set(x, "bosh", js.undefined)
+      inline def setBoshUndefined: Self = StObject.set(x, "bosh", js.undefined)
       
-      @scala.inline
-      def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setDisallowTLS(value: Boolean): Self = StObject.set(x, "disallowTLS", value.asInstanceOf[js.Any])
+      inline def setDisallowTLS(value: Boolean): Self = StObject.set(x, "disallowTLS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallowTLSUndefined: Self = StObject.set(x, "disallowTLS", js.undefined)
+      inline def setDisallowTLSUndefined: Self = StObject.set(x, "disallowTLS", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setJid(value: String): Self = StObject.set(x, "jid", value.asInstanceOf[js.Any])
+      inline def setJid(value: String): Self = StObject.set(x, "jid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegacySSL(value: Boolean): Self = StObject.set(x, "legacySSL", value.asInstanceOf[js.Any])
+      inline def setLegacySSL(value: Boolean): Self = StObject.set(x, "legacySSL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegacySSLUndefined: Self = StObject.set(x, "legacySSL", js.undefined)
+      inline def setLegacySSLUndefined: Self = StObject.set(x, "legacySSL", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setPreferred(value: String): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
+      inline def setPreferred(value: String): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
+      inline def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
       
-      @scala.inline
-      def setReconnect(value: Boolean): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
+      inline def setReconnect(value: Boolean): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
+      inline def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
       
-      @scala.inline
-      def setRegister(value: Boolean): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+      inline def setRegister(value: Boolean): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
+      inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
     }
   }
 }

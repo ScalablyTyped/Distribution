@@ -23,31 +23,23 @@ trait CaptionFormat extends StObject {
 }
 object CaptionFormat {
   
-  @scala.inline
-  def apply(): CaptionFormat = {
+  inline def apply(): CaptionFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaptionFormat]
   }
   
-  @scala.inline
-  implicit class CaptionFormatMutableBuilder[Self <: CaptionFormat] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionFormat](x: Self) {
     
-    @scala.inline
-    def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setFormat(value: CaptionFormatFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: CaptionFormatFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setPattern(value: CaptionFormatPattern): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: CaptionFormatPattern): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "Pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "Pattern", js.undefined)
   }
 }

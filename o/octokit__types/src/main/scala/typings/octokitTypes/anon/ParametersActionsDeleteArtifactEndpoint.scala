@@ -17,8 +17,7 @@ trait ParametersActionsDeleteArtifactEndpoint extends StObject {
 }
 object ParametersActionsDeleteArtifactEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsDeleteArtifactEndpoint,
     request: ActionsDeleteArtifactRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersActionsDeleteArtifactEndpoint {
     __obj.asInstanceOf[ParametersActionsDeleteArtifactEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsDeleteArtifactEndpointMutableBuilder[Self <: ParametersActionsDeleteArtifactEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsDeleteArtifactEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsDeleteArtifactEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsDeleteArtifactEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActionsDeleteArtifactRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActionsDeleteArtifactRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

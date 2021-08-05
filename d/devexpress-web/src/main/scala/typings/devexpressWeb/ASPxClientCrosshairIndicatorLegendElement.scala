@@ -18,8 +18,7 @@ trait ASPxClientCrosshairIndicatorLegendElement
 }
 object ASPxClientCrosshairIndicatorLegendElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AxisLabelElement: ASPxClientCrosshairAxisLabelElement,
     Indicator: ASPxClientIndicator,
     LineElement: ASPxClientCrosshairLineElement,
@@ -30,10 +29,8 @@ object ASPxClientCrosshairIndicatorLegendElement {
     __obj.asInstanceOf[ASPxClientCrosshairIndicatorLegendElement]
   }
   
-  @scala.inline
-  implicit class ASPxClientCrosshairIndicatorLegendElementMutableBuilder[Self <: ASPxClientCrosshairIndicatorLegendElement] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCrosshairIndicatorLegendElement](x: Self) {
     
-    @scala.inline
-    def setIndicator(value: ASPxClientIndicator): Self = StObject.set(x, "Indicator", value.asInstanceOf[js.Any])
+    inline def setIndicator(value: ASPxClientIndicator): Self = StObject.set(x, "Indicator", value.asInstanceOf[js.Any])
   }
 }

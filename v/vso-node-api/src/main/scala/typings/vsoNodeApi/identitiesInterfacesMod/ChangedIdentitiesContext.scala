@@ -18,19 +18,15 @@ trait ChangedIdentitiesContext extends StObject {
 }
 object ChangedIdentitiesContext {
   
-  @scala.inline
-  def apply(groupSequenceId: Double, identitySequenceId: Double): ChangedIdentitiesContext = {
+  inline def apply(groupSequenceId: Double, identitySequenceId: Double): ChangedIdentitiesContext = {
     val __obj = js.Dynamic.literal(groupSequenceId = groupSequenceId.asInstanceOf[js.Any], identitySequenceId = identitySequenceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangedIdentitiesContext]
   }
   
-  @scala.inline
-  implicit class ChangedIdentitiesContextMutableBuilder[Self <: ChangedIdentitiesContext] (val x: Self) extends AnyVal {
+  extension [Self <: ChangedIdentitiesContext](x: Self) {
     
-    @scala.inline
-    def setGroupSequenceId(value: Double): Self = StObject.set(x, "groupSequenceId", value.asInstanceOf[js.Any])
+    inline def setGroupSequenceId(value: Double): Self = StObject.set(x, "groupSequenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentitySequenceId(value: Double): Self = StObject.set(x, "identitySequenceId", value.asInstanceOf[js.Any])
+    inline def setIdentitySequenceId(value: Double): Self = StObject.set(x, "identitySequenceId", value.asInstanceOf[js.Any])
   }
 }

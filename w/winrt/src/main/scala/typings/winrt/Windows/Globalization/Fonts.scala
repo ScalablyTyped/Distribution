@@ -23,8 +23,7 @@ object Fonts {
   }
   object ILanguageFont {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fontFamily: String,
       fontStretch: FontStretch,
       fontStyle: FontStyle,
@@ -35,23 +34,17 @@ object Fonts {
       __obj.asInstanceOf[ILanguageFont]
     }
     
-    @scala.inline
-    implicit class ILanguageFontMutableBuilder[Self <: ILanguageFont] (val x: Self) extends AnyVal {
+    extension [Self <: ILanguageFont](x: Self) {
       
-      @scala.inline
-      def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStretch(value: FontStretch): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
+      inline def setFontStretch(value: FontStretch): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+      inline def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeight(value: FontWeight): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: FontWeight): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+      inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,8 +74,7 @@ object Fonts {
   }
   object ILanguageFontGroup {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       documentAlternate1Font: LanguageFont,
       documentAlternate2Font: LanguageFont,
       documentHeadingFont: LanguageFont,
@@ -99,41 +91,29 @@ object Fonts {
       __obj.asInstanceOf[ILanguageFontGroup]
     }
     
-    @scala.inline
-    implicit class ILanguageFontGroupMutableBuilder[Self <: ILanguageFontGroup] (val x: Self) extends AnyVal {
+    extension [Self <: ILanguageFontGroup](x: Self) {
       
-      @scala.inline
-      def setDocumentAlternate1Font(value: LanguageFont): Self = StObject.set(x, "documentAlternate1Font", value.asInstanceOf[js.Any])
+      inline def setDocumentAlternate1Font(value: LanguageFont): Self = StObject.set(x, "documentAlternate1Font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentAlternate2Font(value: LanguageFont): Self = StObject.set(x, "documentAlternate2Font", value.asInstanceOf[js.Any])
+      inline def setDocumentAlternate2Font(value: LanguageFont): Self = StObject.set(x, "documentAlternate2Font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentHeadingFont(value: LanguageFont): Self = StObject.set(x, "documentHeadingFont", value.asInstanceOf[js.Any])
+      inline def setDocumentHeadingFont(value: LanguageFont): Self = StObject.set(x, "documentHeadingFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedWidthTextFont(value: LanguageFont): Self = StObject.set(x, "fixedWidthTextFont", value.asInstanceOf[js.Any])
+      inline def setFixedWidthTextFont(value: LanguageFont): Self = StObject.set(x, "fixedWidthTextFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModernDocumentFont(value: LanguageFont): Self = StObject.set(x, "modernDocumentFont", value.asInstanceOf[js.Any])
+      inline def setModernDocumentFont(value: LanguageFont): Self = StObject.set(x, "modernDocumentFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraditionalDocumentFont(value: LanguageFont): Self = StObject.set(x, "traditionalDocumentFont", value.asInstanceOf[js.Any])
+      inline def setTraditionalDocumentFont(value: LanguageFont): Self = StObject.set(x, "traditionalDocumentFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUICaptionFont(value: LanguageFont): Self = StObject.set(x, "uICaptionFont", value.asInstanceOf[js.Any])
+      inline def setUICaptionFont(value: LanguageFont): Self = StObject.set(x, "uICaptionFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUIHeadingFont(value: LanguageFont): Self = StObject.set(x, "uIHeadingFont", value.asInstanceOf[js.Any])
+      inline def setUIHeadingFont(value: LanguageFont): Self = StObject.set(x, "uIHeadingFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUINotificationHeadingFont(value: LanguageFont): Self = StObject.set(x, "uINotificationHeadingFont", value.asInstanceOf[js.Any])
+      inline def setUINotificationHeadingFont(value: LanguageFont): Self = StObject.set(x, "uINotificationHeadingFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUITextFont(value: LanguageFont): Self = StObject.set(x, "uITextFont", value.asInstanceOf[js.Any])
+      inline def setUITextFont(value: LanguageFont): Self = StObject.set(x, "uITextFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUITitleFont(value: LanguageFont): Self = StObject.set(x, "uITitleFont", value.asInstanceOf[js.Any])
+      inline def setUITitleFont(value: LanguageFont): Self = StObject.set(x, "uITitleFont", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,17 +123,14 @@ object Fonts {
   }
   object ILanguageFontGroupFactory {
     
-    @scala.inline
-    def apply(createLanguageFontGroup: String => LanguageFontGroup): ILanguageFontGroupFactory = {
+    inline def apply(createLanguageFontGroup: String => LanguageFontGroup): ILanguageFontGroupFactory = {
       val __obj = js.Dynamic.literal(createLanguageFontGroup = js.Any.fromFunction1(createLanguageFontGroup))
       __obj.asInstanceOf[ILanguageFontGroupFactory]
     }
     
-    @scala.inline
-    implicit class ILanguageFontGroupFactoryMutableBuilder[Self <: ILanguageFontGroupFactory] (val x: Self) extends AnyVal {
+    extension [Self <: ILanguageFontGroupFactory](x: Self) {
       
-      @scala.inline
-      def setCreateLanguageFontGroup(value: String => LanguageFontGroup): Self = StObject.set(x, "createLanguageFontGroup", js.Any.fromFunction1(value))
+      inline def setCreateLanguageFontGroup(value: String => LanguageFontGroup): Self = StObject.set(x, "createLanguageFontGroup", js.Any.fromFunction1(value))
     }
   }
   
@@ -162,8 +139,7 @@ object Fonts {
        with ILanguageFont
   object LanguageFont {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fontFamily: String,
       fontStretch: FontStretch,
       fontStyle: FontStyle,
@@ -180,8 +156,7 @@ object Fonts {
        with ILanguageFontGroup
   object LanguageFontGroup {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       documentAlternate1Font: LanguageFont,
       documentAlternate2Font: LanguageFont,
       documentHeadingFont: LanguageFont,

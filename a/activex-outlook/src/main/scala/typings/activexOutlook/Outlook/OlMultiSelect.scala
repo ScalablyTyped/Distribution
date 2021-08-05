@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlMultiSelect extends StObject
 object OlMultiSelect {
   
-  @scala.inline
-  def olMultiSelectExtended: `2` = 2.asInstanceOf[`2`]
+  inline def olMultiSelectExtended: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olMultiSelectMulti: `1` = 1.asInstanceOf[`1`]
+  inline def olMultiSelectMulti: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olMultiSelectSingle: `0` = 0.asInstanceOf[`0`]
+  inline def olMultiSelectSingle: `0` = 0.asInstanceOf[`0`]
 }

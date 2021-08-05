@@ -23,8 +23,7 @@ trait XMissionTaker
 }
 object XMissionTaker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     endMission: () => Boolean,
     queryInterface: `type` => js.Any,
@@ -34,10 +33,8 @@ object XMissionTaker {
     __obj.asInstanceOf[XMissionTaker]
   }
   
-  @scala.inline
-  implicit class XMissionTakerMutableBuilder[Self <: XMissionTaker] (val x: Self) extends AnyVal {
+  extension [Self <: XMissionTaker](x: Self) {
     
-    @scala.inline
-    def setEndMission(value: () => Boolean): Self = StObject.set(x, "endMission", js.Any.fromFunction0(value))
+    inline def setEndMission(value: () => Boolean): Self = StObject.set(x, "endMission", js.Any.fromFunction0(value))
   }
 }

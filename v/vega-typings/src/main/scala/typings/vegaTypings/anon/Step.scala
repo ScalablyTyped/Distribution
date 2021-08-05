@@ -14,16 +14,13 @@ trait Step
 }
 object Step {
   
-  @scala.inline
-  def apply(step: Double | SignalRef): Step = {
+  inline def apply(step: Double | SignalRef): Step = {
     val __obj = js.Dynamic.literal(step = step.asInstanceOf[js.Any])
     __obj.asInstanceOf[Step]
   }
   
-  @scala.inline
-  implicit class StepMutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
+  extension [Self <: Step](x: Self) {
     
-    @scala.inline
-    def setStep(value: Double | SignalRef): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double | SignalRef): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

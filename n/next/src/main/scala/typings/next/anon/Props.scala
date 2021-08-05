@@ -15,22 +15,17 @@ trait Props[P]
 }
 object Props {
   
-  @scala.inline
-  def apply[P](props: P): Props[P] = {
+  inline def apply[P](props: P): Props[P] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props[P]]
   }
   
-  @scala.inline
-  implicit class PropsMutableBuilder[Self <: Props[?], P] (val x: Self & Props[P]) extends AnyVal {
+  extension [Self <: Props[?], P](x: Self & Props[P]) {
     
-    @scala.inline
-    def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevalidate(value: Double | Boolean): Self = StObject.set(x, "revalidate", value.asInstanceOf[js.Any])
+    inline def setRevalidate(value: Double | Boolean): Self = StObject.set(x, "revalidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevalidateUndefined: Self = StObject.set(x, "revalidate", js.undefined)
+    inline def setRevalidateUndefined: Self = StObject.set(x, "revalidate", js.undefined)
   }
 }

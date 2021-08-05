@@ -18,25 +18,19 @@ trait RangeAttrs extends StObject {
 }
 object RangeAttrs {
   
-  @scala.inline
-  def apply(dtype: float32 | int32, start: Double, step: Double, stop: Double): RangeAttrs = {
+  inline def apply(dtype: float32 | int32, start: Double, step: Double, stop: Double): RangeAttrs = {
     val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeAttrs]
   }
   
-  @scala.inline
-  implicit class RangeAttrsMutableBuilder[Self <: RangeAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: RangeAttrs](x: Self) {
     
-    @scala.inline
-    def setDtype(value: float32 | int32): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+    inline def setDtype(value: float32 | int32): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
   }
 }

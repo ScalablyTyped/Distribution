@@ -16,8 +16,7 @@ trait WebRequestDetails
 }
 object WebRequestDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     frameId: integer,
     method: String,
     parentFrameId: integer,
@@ -32,10 +31,8 @@ object WebRequestDetails {
     __obj.asInstanceOf[WebRequestDetails]
   }
   
-  @scala.inline
-  implicit class WebRequestDetailsMutableBuilder[Self <: WebRequestDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WebRequestDetails](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
   }
 }

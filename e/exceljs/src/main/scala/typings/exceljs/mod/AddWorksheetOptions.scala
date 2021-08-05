@@ -22,8 +22,7 @@ trait AddWorksheetOptions extends StObject {
 }
 object AddWorksheetOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headerFooter: PartialHeaderFooter,
     pageSetup: PartialPageSetup,
     properties: PartialWorksheetPropertie,
@@ -34,25 +33,18 @@ object AddWorksheetOptions {
     __obj.asInstanceOf[AddWorksheetOptions]
   }
   
-  @scala.inline
-  implicit class AddWorksheetOptionsMutableBuilder[Self <: AddWorksheetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddWorksheetOptions](x: Self) {
     
-    @scala.inline
-    def setHeaderFooter(value: PartialHeaderFooter): Self = StObject.set(x, "headerFooter", value.asInstanceOf[js.Any])
+    inline def setHeaderFooter(value: PartialHeaderFooter): Self = StObject.set(x, "headerFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSetup(value: PartialPageSetup): Self = StObject.set(x, "pageSetup", value.asInstanceOf[js.Any])
+    inline def setPageSetup(value: PartialPageSetup): Self = StObject.set(x, "pageSetup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: PartialWorksheetPropertie): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PartialWorksheetPropertie): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: WorksheetState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: WorksheetState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViews(value: js.Array[Partial[WorksheetView]]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    inline def setViews(value: js.Array[Partial[WorksheetView]]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewsVarargs(value: Partial[WorksheetView]*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: Partial[WorksheetView]*): Self = StObject.set(x, "views", js.Array(value :_*))
   }
 }

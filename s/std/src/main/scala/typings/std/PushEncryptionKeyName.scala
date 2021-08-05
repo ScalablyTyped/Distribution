@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PushEncryptionKeyName extends StObject
 object PushEncryptionKeyName {
   
-  @scala.inline
-  def auth: typings.std.stdStrings.auth = "auth".asInstanceOf[typings.std.stdStrings.auth]
+  inline def auth: typings.std.stdStrings.auth = "auth".asInstanceOf[typings.std.stdStrings.auth]
   
-  @scala.inline
-  def p256dh: typings.std.stdStrings.p256dh = "p256dh".asInstanceOf[typings.std.stdStrings.p256dh]
+  inline def p256dh: typings.std.stdStrings.p256dh = "p256dh".asInstanceOf[typings.std.stdStrings.p256dh]
 }

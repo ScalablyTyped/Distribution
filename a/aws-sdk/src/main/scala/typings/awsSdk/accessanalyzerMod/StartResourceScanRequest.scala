@@ -18,19 +18,15 @@ trait StartResourceScanRequest extends StObject {
 }
 object StartResourceScanRequest {
   
-  @scala.inline
-  def apply(analyzerArn: AnalyzerArn, resourceArn: ResourceArn): StartResourceScanRequest = {
+  inline def apply(analyzerArn: AnalyzerArn, resourceArn: ResourceArn): StartResourceScanRequest = {
     val __obj = js.Dynamic.literal(analyzerArn = analyzerArn.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartResourceScanRequest]
   }
   
-  @scala.inline
-  implicit class StartResourceScanRequestMutableBuilder[Self <: StartResourceScanRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartResourceScanRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyzerArn(value: AnalyzerArn): Self = StObject.set(x, "analyzerArn", value.asInstanceOf[js.Any])
+    inline def setAnalyzerArn(value: AnalyzerArn): Self = StObject.set(x, "analyzerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
   }
 }

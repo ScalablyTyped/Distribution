@@ -46,16 +46,12 @@ object mod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def getServers(): js.Array[ChildProcess] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServers")().asInstanceOf[js.Array[ChildProcess]]
+  inline def getServers(): js.Array[ChildProcess] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServers")().asInstanceOf[js.Array[ChildProcess]]
   
-  @scala.inline
-  def setup(options: js.Array[JestDevServerOptions]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def setup(options: JestDevServerOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def setup(options: js.Array[JestDevServerOptions]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def setup(options: JestDevServerOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def teardown(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("teardown")().asInstanceOf[js.Promise[Unit]]
+  inline def teardown(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("teardown")().asInstanceOf[js.Promise[Unit]]
   
   trait JestDevServerOptions extends StObject {
     
@@ -170,59 +166,42 @@ object mod {
   }
   object JestDevServerOptions {
     
-    @scala.inline
-    def apply(command: String): JestDevServerOptions = {
+    inline def apply(command: String): JestDevServerOptions = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
       __obj.asInstanceOf[JestDevServerOptions]
     }
     
-    @scala.inline
-    implicit class JestDevServerOptionsMutableBuilder[Self <: JestDevServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JestDevServerOptions](x: Self) {
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setLaunchTimeout(value: Double): Self = StObject.set(x, "launchTimeout", value.asInstanceOf[js.Any])
+      inline def setLaunchTimeout(value: Double): Self = StObject.set(x, "launchTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchTimeoutUndefined: Self = StObject.set(x, "launchTimeout", js.undefined)
+      inline def setLaunchTimeoutUndefined: Self = StObject.set(x, "launchTimeout", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: https | http | tcp | socket): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: https | http | tcp | socket): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setUsedPortAction(value: ask | error | ignore | kill): Self = StObject.set(x, "usedPortAction", value.asInstanceOf[js.Any])
+      inline def setUsedPortAction(value: ask | error | ignore | kill): Self = StObject.set(x, "usedPortAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsedPortActionUndefined: Self = StObject.set(x, "usedPortAction", js.undefined)
+      inline def setUsedPortActionUndefined: Self = StObject.set(x, "usedPortAction", js.undefined)
       
-      @scala.inline
-      def setWaitOnScheme(value: PartialWaitOnOptions): Self = StObject.set(x, "waitOnScheme", value.asInstanceOf[js.Any])
+      inline def setWaitOnScheme(value: PartialWaitOnOptions): Self = StObject.set(x, "waitOnScheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitOnSchemeUndefined: Self = StObject.set(x, "waitOnScheme", js.undefined)
+      inline def setWaitOnSchemeUndefined: Self = StObject.set(x, "waitOnScheme", js.undefined)
     }
   }
 }

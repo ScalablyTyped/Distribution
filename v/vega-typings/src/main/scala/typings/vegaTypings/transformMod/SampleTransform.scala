@@ -16,20 +16,16 @@ trait SampleTransform
 }
 object SampleTransform {
   
-  @scala.inline
-  def apply(size: Double | SignalRef): SampleTransform = {
+  inline def apply(size: Double | SignalRef): SampleTransform = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("sample")
     __obj.asInstanceOf[SampleTransform]
   }
   
-  @scala.inline
-  implicit class SampleTransformMutableBuilder[Self <: SampleTransform] (val x: Self) extends AnyVal {
+  extension [Self <: SampleTransform](x: Self) {
     
-    @scala.inline
-    def setSize(value: Double | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: sample): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: sample): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

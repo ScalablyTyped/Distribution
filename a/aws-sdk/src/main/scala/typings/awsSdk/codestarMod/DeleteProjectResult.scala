@@ -18,25 +18,19 @@ trait DeleteProjectResult extends StObject {
 }
 object DeleteProjectResult {
   
-  @scala.inline
-  def apply(): DeleteProjectResult = {
+  inline def apply(): DeleteProjectResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteProjectResult]
   }
   
-  @scala.inline
-  implicit class DeleteProjectResultMutableBuilder[Self <: DeleteProjectResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProjectResult](x: Self) {
     
-    @scala.inline
-    def setProjectArn(value: ProjectArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
+    inline def setProjectArn(value: ProjectArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectArnUndefined: Self = StObject.set(x, "projectArn", js.undefined)
+    inline def setProjectArnUndefined: Self = StObject.set(x, "projectArn", js.undefined)
     
-    @scala.inline
-    def setStackId(value: StackId): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: StackId): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
   }
 }

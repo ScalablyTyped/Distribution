@@ -20,49 +20,35 @@ trait ImageEditorMessagesPanesCrop extends StObject {
 }
 object ImageEditorMessagesPanesCrop {
   
-  @scala.inline
-  def apply(): ImageEditorMessagesPanesCrop = {
+  inline def apply(): ImageEditorMessagesPanesCrop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageEditorMessagesPanesCrop]
   }
   
-  @scala.inline
-  implicit class ImageEditorMessagesPanesCropMutableBuilder[Self <: ImageEditorMessagesPanesCrop] (val x: Self) extends AnyVal {
+  extension [Self <: ImageEditorMessagesPanesCrop](x: Self) {
     
-    @scala.inline
-    def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+    inline def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectRatioItems(value: ImageEditorMessagesPanesCropAspectRatioItems): Self = StObject.set(x, "aspectRatioItems", value.asInstanceOf[js.Any])
+    inline def setAspectRatioItems(value: ImageEditorMessagesPanesCropAspectRatioItems): Self = StObject.set(x, "aspectRatioItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectRatioItemsUndefined: Self = StObject.set(x, "aspectRatioItems", js.undefined)
+    inline def setAspectRatioItemsUndefined: Self = StObject.set(x, "aspectRatioItems", js.undefined)
     
-    @scala.inline
-    def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+    inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
-    @scala.inline
-    def setLandscape(value: String): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
+    inline def setLandscape(value: String): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
+    inline def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setPortrait(value: String): Self = StObject.set(x, "portrait", value.asInstanceOf[js.Any])
+    inline def setPortrait(value: String): Self = StObject.set(x, "portrait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortraitUndefined: Self = StObject.set(x, "portrait", js.undefined)
+    inline def setPortraitUndefined: Self = StObject.set(x, "portrait", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

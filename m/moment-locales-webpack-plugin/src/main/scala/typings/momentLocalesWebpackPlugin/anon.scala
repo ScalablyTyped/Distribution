@@ -16,29 +16,22 @@ object anon {
   }
   object IgnoreInvalidLocales {
     
-    @scala.inline
-    def apply(): IgnoreInvalidLocales = {
+    inline def apply(): IgnoreInvalidLocales = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IgnoreInvalidLocales]
     }
     
-    @scala.inline
-    implicit class IgnoreInvalidLocalesMutableBuilder[Self <: IgnoreInvalidLocales] (val x: Self) extends AnyVal {
+    extension [Self <: IgnoreInvalidLocales](x: Self) {
       
-      @scala.inline
-      def setIgnoreInvalidLocales(value: Boolean): Self = StObject.set(x, "ignoreInvalidLocales", value.asInstanceOf[js.Any])
+      inline def setIgnoreInvalidLocales(value: Boolean): Self = StObject.set(x, "ignoreInvalidLocales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreInvalidLocalesUndefined: Self = StObject.set(x, "ignoreInvalidLocales", js.undefined)
+      inline def setIgnoreInvalidLocalesUndefined: Self = StObject.set(x, "ignoreInvalidLocales", js.undefined)
       
-      @scala.inline
-      def setLocalesToKeep(value: js.Array[String]): Self = StObject.set(x, "localesToKeep", value.asInstanceOf[js.Any])
+      inline def setLocalesToKeep(value: js.Array[String]): Self = StObject.set(x, "localesToKeep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalesToKeepUndefined: Self = StObject.set(x, "localesToKeep", js.undefined)
+      inline def setLocalesToKeepUndefined: Self = StObject.set(x, "localesToKeep", js.undefined)
       
-      @scala.inline
-      def setLocalesToKeepVarargs(value: String*): Self = StObject.set(x, "localesToKeep", js.Array(value :_*))
+      inline def setLocalesToKeepVarargs(value: String*): Self = StObject.set(x, "localesToKeep", js.Array(value :_*))
     }
   }
 }

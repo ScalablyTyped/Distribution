@@ -22,25 +22,19 @@ trait JsonOptions
 }
 object JsonOptions {
   
-  @scala.inline
-  def apply(): JsonOptions = {
+  inline def apply(): JsonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JsonOptions]
   }
   
-  @scala.inline
-  implicit class JsonOptionsMutableBuilder[Self <: JsonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JsonOptions](x: Self) {
     
-    @scala.inline
-    def setStringifyReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "stringifyReplacer", js.Any.fromFunction2(value))
+    inline def setStringifyReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "stringifyReplacer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStringifyReplacerUndefined: Self = StObject.set(x, "stringifyReplacer", js.undefined)
+    inline def setStringifyReplacerUndefined: Self = StObject.set(x, "stringifyReplacer", js.undefined)
     
-    @scala.inline
-    def setUndefinedReplacement(value: js.Any): Self = StObject.set(x, "undefinedReplacement", value.asInstanceOf[js.Any])
+    inline def setUndefinedReplacement(value: js.Any): Self = StObject.set(x, "undefinedReplacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefinedReplacementUndefined: Self = StObject.set(x, "undefinedReplacement", js.undefined)
+    inline def setUndefinedReplacementUndefined: Self = StObject.set(x, "undefinedReplacement", js.undefined)
   }
 }

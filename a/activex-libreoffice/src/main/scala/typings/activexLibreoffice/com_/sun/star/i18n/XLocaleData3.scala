@@ -23,8 +23,7 @@ trait XLocaleData3
 }
 object XLocaleData3 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllInstalledLocaleNames: SafeArray[Locale],
     acquire: () => Unit,
     getAllCalendars: Locale => SafeArray[Calendar],
@@ -48,10 +47,8 @@ object XLocaleData3 {
     __obj.asInstanceOf[XLocaleData3]
   }
   
-  @scala.inline
-  implicit class XLocaleData3MutableBuilder[Self <: XLocaleData3] (val x: Self) extends AnyVal {
+  extension [Self <: XLocaleData3](x: Self) {
     
-    @scala.inline
-    def setGetAllCalendars2(value: Locale => SafeArray[Calendar2]): Self = StObject.set(x, "getAllCalendars2", js.Any.fromFunction1(value))
+    inline def setGetAllCalendars2(value: Locale => SafeArray[Calendar2]): Self = StObject.set(x, "getAllCalendars2", js.Any.fromFunction1(value))
   }
 }

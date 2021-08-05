@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.PlotArea")
 @js.native
-class PlotArea protected ()
+/* private */ class PlotArea ()
   extends StObject
      with typings.activexWord.Word.PlotArea {
   
@@ -68,7 +68,7 @@ class PlotArea protected ()
   /* CompleteClass */
   var Width: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.PlotArea_typekey")
   var WordDotPlotArea_typekey: typings.activexWord.Word.PlotArea = js.native
 }

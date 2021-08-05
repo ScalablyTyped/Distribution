@@ -253,23 +253,18 @@ object ImageKit {
   }
   object BulkDeleteFilesError {
     
-    @scala.inline
-    def apply(help: String, message: String, missingFileIds: js.Array[String], name: String): BulkDeleteFilesError = {
+    inline def apply(help: String, message: String, missingFileIds: js.Array[String], name: String): BulkDeleteFilesError = {
       val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], missingFileIds = missingFileIds.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BulkDeleteFilesError]
     }
     
-    @scala.inline
-    implicit class BulkDeleteFilesErrorMutableBuilder[Self <: BulkDeleteFilesError] (val x: Self) extends AnyVal {
+    extension [Self <: BulkDeleteFilesError](x: Self) {
       
-      @scala.inline
-      def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingFileIds(value: js.Array[String]): Self = StObject.set(x, "missingFileIds", value.asInstanceOf[js.Any])
+      inline def setMissingFileIds(value: js.Array[String]): Self = StObject.set(x, "missingFileIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingFileIdsVarargs(value: String*): Self = StObject.set(x, "missingFileIds", js.Array(value :_*))
+      inline def setMissingFileIdsVarargs(value: String*): Self = StObject.set(x, "missingFileIds", js.Array(value :_*))
     }
   }
   
@@ -287,20 +282,16 @@ object ImageKit {
   }
   object BulkDeleteFilesResponse {
     
-    @scala.inline
-    def apply(successfullyDeletedFileIds: js.Array[String]): BulkDeleteFilesResponse = {
+    inline def apply(successfullyDeletedFileIds: js.Array[String]): BulkDeleteFilesResponse = {
       val __obj = js.Dynamic.literal(successfullyDeletedFileIds = successfullyDeletedFileIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[BulkDeleteFilesResponse]
     }
     
-    @scala.inline
-    implicit class BulkDeleteFilesResponseMutableBuilder[Self <: BulkDeleteFilesResponse] (val x: Self) extends AnyVal {
+    extension [Self <: BulkDeleteFilesResponse](x: Self) {
       
-      @scala.inline
-      def setSuccessfullyDeletedFileIds(value: js.Array[String]): Self = StObject.set(x, "successfullyDeletedFileIds", value.asInstanceOf[js.Any])
+      inline def setSuccessfullyDeletedFileIds(value: js.Array[String]): Self = StObject.set(x, "successfullyDeletedFileIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessfullyDeletedFileIdsVarargs(value: String*): Self = StObject.set(x, "successfullyDeletedFileIds", js.Array(value :_*))
+      inline def setSuccessfullyDeletedFileIdsVarargs(value: String*): Self = StObject.set(x, "successfullyDeletedFileIds", js.Array(value :_*))
     }
   }
   
@@ -326,29 +317,22 @@ object ImageKit {
   }
   object FileDetailsOptions {
     
-    @scala.inline
-    def apply(): FileDetailsOptions = {
+    inline def apply(): FileDetailsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileDetailsOptions]
     }
     
-    @scala.inline
-    implicit class FileDetailsOptionsMutableBuilder[Self <: FileDetailsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FileDetailsOptions](x: Self) {
       
-      @scala.inline
-      def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
+      inline def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomCoordinatesUndefined: Self = StObject.set(x, "customCoordinates", js.undefined)
+      inline def setCustomCoordinatesUndefined: Self = StObject.set(x, "customCoordinates", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   
@@ -415,8 +399,7 @@ object ImageKit {
   }
   object FileDetailsResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fileId: String,
       filePath: String,
       fileType: FileType,
@@ -431,47 +414,33 @@ object ImageKit {
       __obj.asInstanceOf[FileDetailsResponse]
     }
     
-    @scala.inline
-    implicit class FileDetailsResponseMutableBuilder[Self <: FileDetailsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: FileDetailsResponse](x: Self) {
       
-      @scala.inline
-      def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
+      inline def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomCoordinatesNull: Self = StObject.set(x, "customCoordinates", null)
+      inline def setCustomCoordinatesNull: Self = StObject.set(x, "customCoordinates", null)
       
-      @scala.inline
-      def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+      inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileType(value: FileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+      inline def setFileType(value: FileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPrivateFile(value: Boolean): Self = StObject.set(x, "isPrivateFile", value.asInstanceOf[js.Any])
+      inline def setIsPrivateFile(value: Boolean): Self = StObject.set(x, "isPrivateFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsNull: Self = StObject.set(x, "tags", null)
+      inline def setTagsNull: Self = StObject.set(x, "tags", null)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Item): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Item): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -533,8 +502,7 @@ object ImageKit {
   }
   object FileMetadataResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       density: Double,
       exif: Exif,
       format: FileFormat,
@@ -550,38 +518,27 @@ object ImageKit {
       __obj.asInstanceOf[FileMetadataResponse]
     }
     
-    @scala.inline
-    implicit class FileMetadataResponseMutableBuilder[Self <: FileMetadataResponse] (val x: Self) extends AnyVal {
+    extension [Self <: FileMetadataResponse](x: Self) {
       
-      @scala.inline
-      def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+      inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExif(value: Exif): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
+      inline def setExif(value: Exif): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: FileFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: FileFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasColorProfile(value: Boolean): Self = StObject.set(x, "hasColorProfile", value.asInstanceOf[js.Any])
+      inline def setHasColorProfile(value: Boolean): Self = StObject.set(x, "hasColorProfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasTransparency(value: Boolean): Self = StObject.set(x, "hasTransparency", value.asInstanceOf[js.Any])
+      inline def setHasTransparency(value: Boolean): Self = StObject.set(x, "hasTransparency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPHash(value: String): Self = StObject.set(x, "pHash", value.asInstanceOf[js.Any])
+      inline def setPHash(value: String): Self = StObject.set(x, "pHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -601,14 +558,11 @@ object ImageKit {
   trait FileType extends StObject
   object FileType {
     
-    @scala.inline
-    def all: typings.imagekit.imagekitStrings.all = "all".asInstanceOf[typings.imagekit.imagekitStrings.all]
+    inline def all: typings.imagekit.imagekitStrings.all = "all".asInstanceOf[typings.imagekit.imagekitStrings.all]
     
-    @scala.inline
-    def image: typings.imagekit.imagekitStrings.image = "image".asInstanceOf[typings.imagekit.imagekitStrings.image]
+    inline def image: typings.imagekit.imagekitStrings.image = "image".asInstanceOf[typings.imagekit.imagekitStrings.image]
     
-    @scala.inline
-    def `non-image`: typings.imagekit.imagekitStrings.`non-image` = "non-image".asInstanceOf[typings.imagekit.imagekitStrings.`non-image`]
+    inline def `non-image`: typings.imagekit.imagekitStrings.`non-image` = "non-image".asInstanceOf[typings.imagekit.imagekitStrings.`non-image`]
   }
   
   /**
@@ -621,11 +575,9 @@ object ImageKit {
   trait Item extends StObject
   object Item {
     
-    @scala.inline
-    def file: typings.imagekit.imagekitStrings.file = "file".asInstanceOf[typings.imagekit.imagekitStrings.file]
+    inline def file: typings.imagekit.imagekitStrings.file = "file".asInstanceOf[typings.imagekit.imagekitStrings.file]
     
-    @scala.inline
-    def folder: typings.imagekit.imagekitStrings.folder = "folder".asInstanceOf[typings.imagekit.imagekitStrings.folder]
+    inline def folder: typings.imagekit.imagekitStrings.folder = "folder".asInstanceOf[typings.imagekit.imagekitStrings.folder]
   }
   
   /**
@@ -681,56 +633,40 @@ object ImageKit {
   }
   object ListFileOptions {
     
-    @scala.inline
-    def apply(): ListFileOptions = {
+    inline def apply(): ListFileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListFileOptions]
     }
     
-    @scala.inline
-    implicit class ListFileOptionsMutableBuilder[Self <: ListFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ListFileOptions](x: Self) {
       
-      @scala.inline
-      def setFileType(value: FileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+      inline def setFileType(value: FileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+      inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
       
-      @scala.inline
-      def setIncludeFolder(value: Boolean): Self = StObject.set(x, "includeFolder", value.asInstanceOf[js.Any])
+      inline def setIncludeFolder(value: Boolean): Self = StObject.set(x, "includeFolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeFolderUndefined: Self = StObject.set(x, "includeFolder", js.undefined)
+      inline def setIncludeFolderUndefined: Self = StObject.set(x, "includeFolder", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -800,8 +736,7 @@ object ImageKit {
   }
   object ListFileResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createdAt: String,
       fileId: String,
       filePath: String,
@@ -817,50 +752,35 @@ object ImageKit {
       __obj.asInstanceOf[ListFileResponse]
     }
     
-    @scala.inline
-    implicit class ListFileResponseMutableBuilder[Self <: ListFileResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ListFileResponse](x: Self) {
       
-      @scala.inline
-      def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
+      inline def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomCoordinatesNull: Self = StObject.set(x, "customCoordinates", null)
+      inline def setCustomCoordinatesNull: Self = StObject.set(x, "customCoordinates", null)
       
-      @scala.inline
-      def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+      inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileType(value: FileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+      inline def setFileType(value: FileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPrivateFile(value: Boolean): Self = StObject.set(x, "isPrivateFile", value.asInstanceOf[js.Any])
+      inline def setIsPrivateFile(value: Boolean): Self = StObject.set(x, "isPrivateFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsNull: Self = StObject.set(x, "tags", null)
+      inline def setTagsNull: Self = StObject.set(x, "tags", null)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Item): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Item): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -878,17 +798,14 @@ object ImageKit {
   }
   object PurgeCacheResponse {
     
-    @scala.inline
-    def apply(requestId: String): PurgeCacheResponse = {
+    inline def apply(requestId: String): PurgeCacheResponse = {
       val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PurgeCacheResponse]
     }
     
-    @scala.inline
-    implicit class PurgeCacheResponseMutableBuilder[Self <: PurgeCacheResponse] (val x: Self) extends AnyVal {
+    extension [Self <: PurgeCacheResponse](x: Self) {
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -908,17 +825,14 @@ object ImageKit {
   }
   object PurgeCacheStatusResponse {
     
-    @scala.inline
-    def apply(status: Pending | Completed): PurgeCacheStatusResponse = {
+    inline def apply(status: Pending | Completed): PurgeCacheStatusResponse = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[PurgeCacheStatusResponse]
     }
     
-    @scala.inline
-    implicit class PurgeCacheStatusResponseMutableBuilder[Self <: PurgeCacheStatusResponse] (val x: Self) extends AnyVal {
+    extension [Self <: PurgeCacheStatusResponse](x: Self) {
       
-      @scala.inline
-      def setStatus(value: Pending | Completed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Pending | Completed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1134,260 +1048,176 @@ object ImageKit {
   }
   object Transformation {
     
-    @scala.inline
-    def apply(): Transformation = {
+    inline def apply(): Transformation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Transformation]
     }
     
-    @scala.inline
-    implicit class TransformationMutableBuilder[Self <: Transformation] (val x: Self) extends AnyVal {
+    extension [Self <: Transformation](x: Self) {
       
-      @scala.inline
-      def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      inline def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+      inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setBlur(value: String): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+      inline def setBlur(value: String): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+      inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
       
-      @scala.inline
-      def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+      inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      @scala.inline
-      def setColorProfile(value: String): Self = StObject.set(x, "colorProfile", value.asInstanceOf[js.Any])
+      inline def setColorProfile(value: String): Self = StObject.set(x, "colorProfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorProfileUndefined: Self = StObject.set(x, "colorProfile", js.undefined)
+      inline def setColorProfileUndefined: Self = StObject.set(x, "colorProfile", js.undefined)
       
-      @scala.inline
-      def setCrop(value: String): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+      inline def setCrop(value: String): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropMode(value: String): Self = StObject.set(x, "cropMode", value.asInstanceOf[js.Any])
+      inline def setCropMode(value: String): Self = StObject.set(x, "cropMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropModeUndefined: Self = StObject.set(x, "cropMode", js.undefined)
+      inline def setCropModeUndefined: Self = StObject.set(x, "cropMode", js.undefined)
       
-      @scala.inline
-      def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+      inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
       
-      @scala.inline
-      def setDefaultImage(value: String): Self = StObject.set(x, "defaultImage", value.asInstanceOf[js.Any])
+      inline def setDefaultImage(value: String): Self = StObject.set(x, "defaultImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultImageUndefined: Self = StObject.set(x, "defaultImage", js.undefined)
+      inline def setDefaultImageUndefined: Self = StObject.set(x, "defaultImage", js.undefined)
       
-      @scala.inline
-      def setDpr(value: String): Self = StObject.set(x, "dpr", value.asInstanceOf[js.Any])
+      inline def setDpr(value: String): Self = StObject.set(x, "dpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDprUndefined: Self = StObject.set(x, "dpr", js.undefined)
+      inline def setDprUndefined: Self = StObject.set(x, "dpr", js.undefined)
       
-      @scala.inline
-      def setEffectContrast(value: String): Self = StObject.set(x, "effectContrast", value.asInstanceOf[js.Any])
+      inline def setEffectContrast(value: String): Self = StObject.set(x, "effectContrast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectContrastUndefined: Self = StObject.set(x, "effectContrast", js.undefined)
+      inline def setEffectContrastUndefined: Self = StObject.set(x, "effectContrast", js.undefined)
       
-      @scala.inline
-      def setEffectGray(value: String): Self = StObject.set(x, "effectGray", value.asInstanceOf[js.Any])
+      inline def setEffectGray(value: String): Self = StObject.set(x, "effectGray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectGrayUndefined: Self = StObject.set(x, "effectGray", js.undefined)
+      inline def setEffectGrayUndefined: Self = StObject.set(x, "effectGray", js.undefined)
       
-      @scala.inline
-      def setEffectSharpen(value: String): Self = StObject.set(x, "effectSharpen", value.asInstanceOf[js.Any])
+      inline def setEffectSharpen(value: String): Self = StObject.set(x, "effectSharpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectSharpenUndefined: Self = StObject.set(x, "effectSharpen", js.undefined)
+      inline def setEffectSharpenUndefined: Self = StObject.set(x, "effectSharpen", js.undefined)
       
-      @scala.inline
-      def setEffectUSM(value: String): Self = StObject.set(x, "effectUSM", value.asInstanceOf[js.Any])
+      inline def setEffectUSM(value: String): Self = StObject.set(x, "effectUSM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectUSMUndefined: Self = StObject.set(x, "effectUSM", js.undefined)
+      inline def setEffectUSMUndefined: Self = StObject.set(x, "effectUSM", js.undefined)
       
-      @scala.inline
-      def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+      inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLossless(value: String): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
+      inline def setLossless(value: String): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLosslessUndefined: Self = StObject.set(x, "lossless", js.undefined)
+      inline def setLosslessUndefined: Self = StObject.set(x, "lossless", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setNamed(value: String): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
+      inline def setNamed(value: String): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedUndefined: Self = StObject.set(x, "named", js.undefined)
+      inline def setNamedUndefined: Self = StObject.set(x, "named", js.undefined)
       
-      @scala.inline
-      def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+      inline def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
+      inline def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
       
-      @scala.inline
-      def setOverlayAlpha(value: String): Self = StObject.set(x, "overlayAlpha", value.asInstanceOf[js.Any])
+      inline def setOverlayAlpha(value: String): Self = StObject.set(x, "overlayAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayAlphaUndefined: Self = StObject.set(x, "overlayAlpha", js.undefined)
+      inline def setOverlayAlphaUndefined: Self = StObject.set(x, "overlayAlpha", js.undefined)
       
-      @scala.inline
-      def setOverlayBackground(value: String): Self = StObject.set(x, "overlayBackground", value.asInstanceOf[js.Any])
+      inline def setOverlayBackground(value: String): Self = StObject.set(x, "overlayBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayBackgroundUndefined: Self = StObject.set(x, "overlayBackground", js.undefined)
+      inline def setOverlayBackgroundUndefined: Self = StObject.set(x, "overlayBackground", js.undefined)
       
-      @scala.inline
-      def setOverlayFocus(value: String): Self = StObject.set(x, "overlayFocus", value.asInstanceOf[js.Any])
+      inline def setOverlayFocus(value: String): Self = StObject.set(x, "overlayFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayFocusUndefined: Self = StObject.set(x, "overlayFocus", js.undefined)
+      inline def setOverlayFocusUndefined: Self = StObject.set(x, "overlayFocus", js.undefined)
       
-      @scala.inline
-      def setOverlayHeight(value: String): Self = StObject.set(x, "overlayHeight", value.asInstanceOf[js.Any])
+      inline def setOverlayHeight(value: String): Self = StObject.set(x, "overlayHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayHeightUndefined: Self = StObject.set(x, "overlayHeight", js.undefined)
+      inline def setOverlayHeightUndefined: Self = StObject.set(x, "overlayHeight", js.undefined)
       
-      @scala.inline
-      def setOverlayImage(value: String): Self = StObject.set(x, "overlayImage", value.asInstanceOf[js.Any])
+      inline def setOverlayImage(value: String): Self = StObject.set(x, "overlayImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayImageTrim(value: String): Self = StObject.set(x, "overlayImageTrim", value.asInstanceOf[js.Any])
+      inline def setOverlayImageTrim(value: String): Self = StObject.set(x, "overlayImageTrim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayImageTrimUndefined: Self = StObject.set(x, "overlayImageTrim", js.undefined)
+      inline def setOverlayImageTrimUndefined: Self = StObject.set(x, "overlayImageTrim", js.undefined)
       
-      @scala.inline
-      def setOverlayImageUndefined: Self = StObject.set(x, "overlayImage", js.undefined)
+      inline def setOverlayImageUndefined: Self = StObject.set(x, "overlayImage", js.undefined)
       
-      @scala.inline
-      def setOverlayText(value: String): Self = StObject.set(x, "overlayText", value.asInstanceOf[js.Any])
+      inline def setOverlayText(value: String): Self = StObject.set(x, "overlayText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayTextColor(value: String): Self = StObject.set(x, "overlayTextColor", value.asInstanceOf[js.Any])
+      inline def setOverlayTextColor(value: String): Self = StObject.set(x, "overlayTextColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayTextColorUndefined: Self = StObject.set(x, "overlayTextColor", js.undefined)
+      inline def setOverlayTextColorUndefined: Self = StObject.set(x, "overlayTextColor", js.undefined)
       
-      @scala.inline
-      def setOverlayTextFontSize(value: String): Self = StObject.set(x, "overlayTextFontSize", value.asInstanceOf[js.Any])
+      inline def setOverlayTextFontSize(value: String): Self = StObject.set(x, "overlayTextFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayTextFontSizeUndefined: Self = StObject.set(x, "overlayTextFontSize", js.undefined)
+      inline def setOverlayTextFontSizeUndefined: Self = StObject.set(x, "overlayTextFontSize", js.undefined)
       
-      @scala.inline
-      def setOverlayTextTypography(value: String): Self = StObject.set(x, "overlayTextTypography", value.asInstanceOf[js.Any])
+      inline def setOverlayTextTypography(value: String): Self = StObject.set(x, "overlayTextTypography", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayTextTypographyUndefined: Self = StObject.set(x, "overlayTextTypography", js.undefined)
+      inline def setOverlayTextTypographyUndefined: Self = StObject.set(x, "overlayTextTypography", js.undefined)
       
-      @scala.inline
-      def setOverlayTextUndefined: Self = StObject.set(x, "overlayText", js.undefined)
+      inline def setOverlayTextUndefined: Self = StObject.set(x, "overlayText", js.undefined)
       
-      @scala.inline
-      def setOverlayWidth(value: String): Self = StObject.set(x, "overlayWidth", value.asInstanceOf[js.Any])
+      inline def setOverlayWidth(value: String): Self = StObject.set(x, "overlayWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayWidthUndefined: Self = StObject.set(x, "overlayWidth", js.undefined)
+      inline def setOverlayWidthUndefined: Self = StObject.set(x, "overlayWidth", js.undefined)
       
-      @scala.inline
-      def setOverlayX(value: String): Self = StObject.set(x, "overlayX", value.asInstanceOf[js.Any])
+      inline def setOverlayX(value: String): Self = StObject.set(x, "overlayX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayXUndefined: Self = StObject.set(x, "overlayX", js.undefined)
+      inline def setOverlayXUndefined: Self = StObject.set(x, "overlayX", js.undefined)
       
-      @scala.inline
-      def setOverlayY(value: String): Self = StObject.set(x, "overlayY", value.asInstanceOf[js.Any])
+      inline def setOverlayY(value: String): Self = StObject.set(x, "overlayY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayYUndefined: Self = StObject.set(x, "overlayY", js.undefined)
+      inline def setOverlayYUndefined: Self = StObject.set(x, "overlayY", js.undefined)
       
-      @scala.inline
-      def setProgressive(value: String): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
+      inline def setProgressive(value: String): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
+      inline def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
       
-      @scala.inline
-      def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+      inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
       
-      @scala.inline
-      def setTrim(value: String): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: String): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -1398,11 +1228,9 @@ object ImageKit {
   trait TransformationPosition extends StObject
   object TransformationPosition {
     
-    @scala.inline
-    def path: typings.imagekit.imagekitStrings.path = "path".asInstanceOf[typings.imagekit.imagekitStrings.path]
+    inline def path: typings.imagekit.imagekitStrings.path = "path".asInstanceOf[typings.imagekit.imagekitStrings.path]
     
-    @scala.inline
-    def query: typings.imagekit.imagekitStrings.query = "query".asInstanceOf[typings.imagekit.imagekitStrings.query]
+    inline def query: typings.imagekit.imagekitStrings.query = "query".asInstanceOf[typings.imagekit.imagekitStrings.query]
   }
   
   /**
@@ -1485,56 +1313,40 @@ object ImageKit {
   }
   object UploadOptions {
     
-    @scala.inline
-    def apply(file: String | Buffer, fileName: String): UploadOptions = {
+    inline def apply(file: String | Buffer, fileName: String): UploadOptions = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadOptions]
     }
     
-    @scala.inline
-    implicit class UploadOptionsMutableBuilder[Self <: UploadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UploadOptions](x: Self) {
       
-      @scala.inline
-      def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
+      inline def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomCoordinatesUndefined: Self = StObject.set(x, "customCoordinates", js.undefined)
+      inline def setCustomCoordinatesUndefined: Self = StObject.set(x, "customCoordinates", js.undefined)
       
-      @scala.inline
-      def setFile(value: String | Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String | Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+      inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
       
-      @scala.inline
-      def setIsPrivateFile(value: Boolean): Self = StObject.set(x, "isPrivateFile", value.asInstanceOf[js.Any])
+      inline def setIsPrivateFile(value: Boolean): Self = StObject.set(x, "isPrivateFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPrivateFileUndefined: Self = StObject.set(x, "isPrivateFile", js.undefined)
+      inline def setIsPrivateFileUndefined: Self = StObject.set(x, "isPrivateFile", js.undefined)
       
-      @scala.inline
-      def setResponseFields(value: String): Self = StObject.set(x, "responseFields", value.asInstanceOf[js.Any])
+      inline def setResponseFields(value: String): Self = StObject.set(x, "responseFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseFieldsUndefined: Self = StObject.set(x, "responseFields", js.undefined)
+      inline def setResponseFieldsUndefined: Self = StObject.set(x, "responseFields", js.undefined)
       
-      @scala.inline
-      def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUseUniqueFileName(value: Boolean): Self = StObject.set(x, "useUniqueFileName", value.asInstanceOf[js.Any])
+      inline def setUseUniqueFileName(value: Boolean): Self = StObject.set(x, "useUniqueFileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUniqueFileNameUndefined: Self = StObject.set(x, "useUniqueFileName", js.undefined)
+      inline def setUseUniqueFileNameUndefined: Self = StObject.set(x, "useUniqueFileName", js.undefined)
     }
   }
   
@@ -1612,8 +1424,7 @@ object ImageKit {
   }
   object UploadResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fileId: String,
       filePath: String,
       fileType: FileType,
@@ -1629,59 +1440,41 @@ object ImageKit {
       __obj.asInstanceOf[UploadResponse]
     }
     
-    @scala.inline
-    implicit class UploadResponseMutableBuilder[Self <: UploadResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UploadResponse](x: Self) {
       
-      @scala.inline
-      def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
+      inline def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomCoordinatesNull: Self = StObject.set(x, "customCoordinates", null)
+      inline def setCustomCoordinatesNull: Self = StObject.set(x, "customCoordinates", null)
       
-      @scala.inline
-      def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+      inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileType(value: FileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+      inline def setFileType(value: FileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPrivateFile(value: Boolean): Self = StObject.set(x, "isPrivateFile", value.asInstanceOf[js.Any])
+      inline def setIsPrivateFile(value: Boolean): Self = StObject.set(x, "isPrivateFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
+      inline def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1697,14 +1490,12 @@ object ImageKit {
   trait UrlOptions extends StObject
   object UrlOptions {
     
-    @scala.inline
-    def UrlOptionsPath(path: String): typings.imagekit.mod.global.ImageKit.UrlOptionsPath = {
+    inline def UrlOptionsPath(path: String): typings.imagekit.mod.global.ImageKit.UrlOptionsPath = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.imagekit.mod.global.ImageKit.UrlOptionsPath]
     }
     
-    @scala.inline
-    def UrlOptionsSrc(src: String): typings.imagekit.mod.global.ImageKit.UrlOptionsSrc = {
+    inline def UrlOptionsSrc(src: String): typings.imagekit.mod.global.ImageKit.UrlOptionsSrc = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.imagekit.mod.global.ImageKit.UrlOptionsSrc]
     }
@@ -1754,53 +1545,38 @@ object ImageKit {
   }
   object UrlOptionsBase {
     
-    @scala.inline
-    def apply(): UrlOptionsBase = {
+    inline def apply(): UrlOptionsBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UrlOptionsBase]
     }
     
-    @scala.inline
-    implicit class UrlOptionsBaseMutableBuilder[Self <: UrlOptionsBase] (val x: Self) extends AnyVal {
+    extension [Self <: UrlOptionsBase](x: Self) {
       
-      @scala.inline
-      def setExpireSeconds(value: Double): Self = StObject.set(x, "expireSeconds", value.asInstanceOf[js.Any])
+      inline def setExpireSeconds(value: Double): Self = StObject.set(x, "expireSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpireSecondsUndefined: Self = StObject.set(x, "expireSeconds", js.undefined)
+      inline def setExpireSecondsUndefined: Self = StObject.set(x, "expireSeconds", js.undefined)
       
-      @scala.inline
-      def setQueryParameters(value: StringDictionary[String | Double]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+      inline def setQueryParameters(value: StringDictionary[String | Double]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
+      inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
       
-      @scala.inline
-      def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
+      inline def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
+      inline def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
       
-      @scala.inline
-      def setTransformation(value: js.Array[Transformation]): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
+      inline def setTransformation(value: js.Array[Transformation]): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformationPosition(value: TransformationPosition): Self = StObject.set(x, "transformationPosition", value.asInstanceOf[js.Any])
+      inline def setTransformationPosition(value: TransformationPosition): Self = StObject.set(x, "transformationPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformationPositionUndefined: Self = StObject.set(x, "transformationPosition", js.undefined)
+      inline def setTransformationPositionUndefined: Self = StObject.set(x, "transformationPosition", js.undefined)
       
-      @scala.inline
-      def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
+      inline def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
       
-      @scala.inline
-      def setTransformationVarargs(value: Transformation*): Self = StObject.set(x, "transformation", js.Array(value :_*))
+      inline def setTransformationVarargs(value: Transformation*): Self = StObject.set(x, "transformation", js.Array(value :_*))
       
-      @scala.inline
-      def setUrlEndpoint(value: String): Self = StObject.set(x, "urlEndpoint", value.asInstanceOf[js.Any])
+      inline def setUrlEndpoint(value: String): Self = StObject.set(x, "urlEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlEndpointUndefined: Self = StObject.set(x, "urlEndpoint", js.undefined)
+      inline def setUrlEndpointUndefined: Self = StObject.set(x, "urlEndpoint", js.undefined)
     }
   }
   
@@ -1819,17 +1595,14 @@ object ImageKit {
   }
   object UrlOptionsPath {
     
-    @scala.inline
-    def apply(path: String): UrlOptionsPath = {
+    inline def apply(path: String): UrlOptionsPath = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[UrlOptionsPath]
     }
     
-    @scala.inline
-    implicit class UrlOptionsPathMutableBuilder[Self <: UrlOptionsPath] (val x: Self) extends AnyVal {
+    extension [Self <: UrlOptionsPath](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1849,17 +1622,14 @@ object ImageKit {
   }
   object UrlOptionsSrc {
     
-    @scala.inline
-    def apply(src: String): UrlOptionsSrc = {
+    inline def apply(src: String): UrlOptionsSrc = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[UrlOptionsSrc]
     }
     
-    @scala.inline
-    implicit class UrlOptionsSrcMutableBuilder[Self <: UrlOptionsSrc] (val x: Self) extends AnyVal {
+    extension [Self <: UrlOptionsSrc](x: Self) {
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
   

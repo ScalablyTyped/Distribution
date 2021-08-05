@@ -15,22 +15,17 @@ trait EntityMentionCollection extends StObject {
 }
 object EntityMentionCollection {
   
-  @scala.inline
-  def apply(examples: js.Array[EntityMention], pagination: Pagination): EntityMentionCollection = {
+  inline def apply(examples: js.Array[EntityMention], pagination: Pagination): EntityMentionCollection = {
     val __obj = js.Dynamic.literal(examples = examples.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityMentionCollection]
   }
   
-  @scala.inline
-  implicit class EntityMentionCollectionMutableBuilder[Self <: EntityMentionCollection] (val x: Self) extends AnyVal {
+  extension [Self <: EntityMentionCollection](x: Self) {
     
-    @scala.inline
-    def setExamples(value: js.Array[EntityMention]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+    inline def setExamples(value: js.Array[EntityMention]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExamplesVarargs(value: EntityMention*): Self = StObject.set(x, "examples", js.Array(value :_*))
+    inline def setExamplesVarargs(value: EntityMention*): Self = StObject.set(x, "examples", js.Array(value :_*))
     
-    @scala.inline
-    def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
   }
 }

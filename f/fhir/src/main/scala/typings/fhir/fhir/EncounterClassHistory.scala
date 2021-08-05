@@ -23,20 +23,16 @@ trait EncounterClassHistory
 }
 object EncounterClassHistory {
   
-  @scala.inline
-  def apply(`class`: Coding, period: Period): EncounterClassHistory = {
+  inline def apply(`class`: Coding, period: Period): EncounterClassHistory = {
     val __obj = js.Dynamic.literal(period = period.asInstanceOf[js.Any])
     __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncounterClassHistory]
   }
   
-  @scala.inline
-  implicit class EncounterClassHistoryMutableBuilder[Self <: EncounterClassHistory] (val x: Self) extends AnyVal {
+  extension [Self <: EncounterClassHistory](x: Self) {
     
-    @scala.inline
-    def setClass(value: Coding): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: Coding): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
   }
 }

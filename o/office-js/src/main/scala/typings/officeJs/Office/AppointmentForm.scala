@@ -188,8 +188,7 @@ trait AppointmentForm extends StObject {
 }
 object AppointmentForm {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: Body | String,
     end: Time | Date,
     location: Location | String,
@@ -203,40 +202,28 @@ object AppointmentForm {
     __obj.asInstanceOf[AppointmentForm]
   }
   
-  @scala.inline
-  implicit class AppointmentFormMutableBuilder[Self <: AppointmentForm] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentForm](x: Self) {
     
-    @scala.inline
-    def setBody(value: Body | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Body | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: Time | Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Time | Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location | String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location | String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalAttendees(value: js.Array[EmailAddressDetails | Recipients]): Self = StObject.set(x, "optionalAttendees", value.asInstanceOf[js.Any])
+    inline def setOptionalAttendees(value: js.Array[EmailAddressDetails | Recipients]): Self = StObject.set(x, "optionalAttendees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalAttendeesVarargs(value: (EmailAddressDetails | Recipients)*): Self = StObject.set(x, "optionalAttendees", js.Array(value :_*))
+    inline def setOptionalAttendeesVarargs(value: (EmailAddressDetails | Recipients)*): Self = StObject.set(x, "optionalAttendees", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiredAttendees(value: js.Array[EmailAddressDetails | Recipients]): Self = StObject.set(x, "requiredAttendees", value.asInstanceOf[js.Any])
+    inline def setRequiredAttendees(value: js.Array[EmailAddressDetails | Recipients]): Self = StObject.set(x, "requiredAttendees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredAttendeesVarargs(value: (EmailAddressDetails | Recipients)*): Self = StObject.set(x, "requiredAttendees", js.Array(value :_*))
+    inline def setRequiredAttendeesVarargs(value: (EmailAddressDetails | Recipients)*): Self = StObject.set(x, "requiredAttendees", js.Array(value :_*))
     
-    @scala.inline
-    def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: Time | Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Time | Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: Subject | String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: Subject | String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
   }
 }

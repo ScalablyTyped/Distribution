@@ -13,19 +13,15 @@ trait MinWidth extends StObject {
 }
 object MinWidth {
   
-  @scala.inline
-  def apply(): MinWidth = {
+  inline def apply(): MinWidth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MinWidth]
   }
   
-  @scala.inline
-  implicit class MinWidthMutableBuilder[Self <: MinWidth] (val x: Self) extends AnyVal {
+  extension [Self <: MinWidth](x: Self) {
     
-    @scala.inline
-    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
   }
 }

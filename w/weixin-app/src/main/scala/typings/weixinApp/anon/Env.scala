@@ -10,16 +10,13 @@ trait Env extends StObject {
 }
 object Env {
   
-  @scala.inline
-  def apply(env: String): Env = {
+  inline def apply(env: String): Env = {
     val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any])
     __obj.asInstanceOf[Env]
   }
   
-  @scala.inline
-  implicit class EnvMutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
+  extension [Self <: Env](x: Self) {
     
-    @scala.inline
-    def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
   }
 }

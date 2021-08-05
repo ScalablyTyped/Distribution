@@ -13,19 +13,15 @@ trait EventTriggerDefinition extends StObject {
 }
 object EventTriggerDefinition {
   
-  @scala.inline
-  def apply(): EventTriggerDefinition = {
+  inline def apply(): EventTriggerDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventTriggerDefinition]
   }
   
-  @scala.inline
-  implicit class EventTriggerDefinitionMutableBuilder[Self <: EventTriggerDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: EventTriggerDefinition](x: Self) {
     
-    @scala.inline
-    def setEventResourceARN(value: ResourceARN): Self = StObject.set(x, "EventResourceARN", value.asInstanceOf[js.Any])
+    inline def setEventResourceARN(value: ResourceARN): Self = StObject.set(x, "EventResourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventResourceARNUndefined: Self = StObject.set(x, "EventResourceARN", js.undefined)
+    inline def setEventResourceARNUndefined: Self = StObject.set(x, "EventResourceARN", js.undefined)
   }
 }

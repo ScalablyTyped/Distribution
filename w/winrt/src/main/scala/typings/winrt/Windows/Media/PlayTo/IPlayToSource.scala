@@ -14,22 +14,17 @@ trait IPlayToSource extends StObject {
 }
 object IPlayToSource {
   
-  @scala.inline
-  def apply(connection: PlayToConnection, next: PlayToSource, playNext: () => Unit): IPlayToSource = {
+  inline def apply(connection: PlayToConnection, next: PlayToSource, playNext: () => Unit): IPlayToSource = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], playNext = js.Any.fromFunction0(playNext))
     __obj.asInstanceOf[IPlayToSource]
   }
   
-  @scala.inline
-  implicit class IPlayToSourceMutableBuilder[Self <: IPlayToSource] (val x: Self) extends AnyVal {
+  extension [Self <: IPlayToSource](x: Self) {
     
-    @scala.inline
-    def setConnection(value: PlayToConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: PlayToConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: PlayToSource): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: PlayToSource): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayNext(value: () => Unit): Self = StObject.set(x, "playNext", js.Any.fromFunction0(value))
+    inline def setPlayNext(value: () => Unit): Self = StObject.set(x, "playNext", js.Any.fromFunction0(value))
   }
 }

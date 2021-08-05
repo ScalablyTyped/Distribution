@@ -18,25 +18,19 @@ trait CreateEventTrackerResponse extends StObject {
 }
 object CreateEventTrackerResponse {
   
-  @scala.inline
-  def apply(): CreateEventTrackerResponse = {
+  inline def apply(): CreateEventTrackerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateEventTrackerResponse]
   }
   
-  @scala.inline
-  implicit class CreateEventTrackerResponseMutableBuilder[Self <: CreateEventTrackerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEventTrackerResponse](x: Self) {
     
-    @scala.inline
-    def setEventTrackerArn(value: Arn): Self = StObject.set(x, "eventTrackerArn", value.asInstanceOf[js.Any])
+    inline def setEventTrackerArn(value: Arn): Self = StObject.set(x, "eventTrackerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTrackerArnUndefined: Self = StObject.set(x, "eventTrackerArn", js.undefined)
+    inline def setEventTrackerArnUndefined: Self = StObject.set(x, "eventTrackerArn", js.undefined)
     
-    @scala.inline
-    def setTrackingId(value: TrackingId): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
+    inline def setTrackingId(value: TrackingId): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingIdUndefined: Self = StObject.set(x, "trackingId", js.undefined)
+    inline def setTrackingIdUndefined: Self = StObject.set(x, "trackingId", js.undefined)
   }
 }

@@ -43,8 +43,7 @@ trait PodDisruptionBudgetStatus extends StObject {
 }
 object PodDisruptionBudgetStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentHealthy: Input[Double],
     desiredHealthy: Input[Double],
     disruptionsAllowed: Input[Double],
@@ -54,31 +53,22 @@ object PodDisruptionBudgetStatus {
     __obj.asInstanceOf[PodDisruptionBudgetStatus]
   }
   
-  @scala.inline
-  implicit class PodDisruptionBudgetStatusMutableBuilder[Self <: PodDisruptionBudgetStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PodDisruptionBudgetStatus](x: Self) {
     
-    @scala.inline
-    def setCurrentHealthy(value: Input[Double]): Self = StObject.set(x, "currentHealthy", value.asInstanceOf[js.Any])
+    inline def setCurrentHealthy(value: Input[Double]): Self = StObject.set(x, "currentHealthy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredHealthy(value: Input[Double]): Self = StObject.set(x, "desiredHealthy", value.asInstanceOf[js.Any])
+    inline def setDesiredHealthy(value: Input[Double]): Self = StObject.set(x, "desiredHealthy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisruptedPods(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "disruptedPods", value.asInstanceOf[js.Any])
+    inline def setDisruptedPods(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "disruptedPods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisruptedPodsUndefined: Self = StObject.set(x, "disruptedPods", js.undefined)
+    inline def setDisruptedPodsUndefined: Self = StObject.set(x, "disruptedPods", js.undefined)
     
-    @scala.inline
-    def setDisruptionsAllowed(value: Input[Double]): Self = StObject.set(x, "disruptionsAllowed", value.asInstanceOf[js.Any])
+    inline def setDisruptionsAllowed(value: Input[Double]): Self = StObject.set(x, "disruptionsAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedPods(value: Input[Double]): Self = StObject.set(x, "expectedPods", value.asInstanceOf[js.Any])
+    inline def setExpectedPods(value: Input[Double]): Self = StObject.set(x, "expectedPods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObservedGeneration(value: Input[Double]): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
+    inline def setObservedGeneration(value: Input[Double]): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
+    inline def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
   }
 }

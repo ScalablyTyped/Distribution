@@ -10,8 +10,6 @@ object easterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def easter(y: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("easter")(y.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def easter(y: Double, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("easter")(y.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def easter(y: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("easter")(y.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def easter(y: Double, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("easter")(y.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

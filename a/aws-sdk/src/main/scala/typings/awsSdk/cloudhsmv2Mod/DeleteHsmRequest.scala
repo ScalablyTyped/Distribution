@@ -28,34 +28,25 @@ trait DeleteHsmRequest extends StObject {
 }
 object DeleteHsmRequest {
   
-  @scala.inline
-  def apply(ClusterId: ClusterId): DeleteHsmRequest = {
+  inline def apply(ClusterId: ClusterId): DeleteHsmRequest = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteHsmRequest]
   }
   
-  @scala.inline
-  implicit class DeleteHsmRequestMutableBuilder[Self <: DeleteHsmRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteHsmRequest](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEniId(value: EniId): Self = StObject.set(x, "EniId", value.asInstanceOf[js.Any])
+    inline def setEniId(value: EniId): Self = StObject.set(x, "EniId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEniIdUndefined: Self = StObject.set(x, "EniId", js.undefined)
+    inline def setEniIdUndefined: Self = StObject.set(x, "EniId", js.undefined)
     
-    @scala.inline
-    def setEniIp(value: IpAddress): Self = StObject.set(x, "EniIp", value.asInstanceOf[js.Any])
+    inline def setEniIp(value: IpAddress): Self = StObject.set(x, "EniIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEniIpUndefined: Self = StObject.set(x, "EniIp", js.undefined)
+    inline def setEniIpUndefined: Self = StObject.set(x, "EniIp", js.undefined)
     
-    @scala.inline
-    def setHsmId(value: HsmId): Self = StObject.set(x, "HsmId", value.asInstanceOf[js.Any])
+    inline def setHsmId(value: HsmId): Self = StObject.set(x, "HsmId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmIdUndefined: Self = StObject.set(x, "HsmId", js.undefined)
+    inline def setHsmIdUndefined: Self = StObject.set(x, "HsmId", js.undefined)
   }
 }

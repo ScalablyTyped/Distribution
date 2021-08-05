@@ -21,22 +21,17 @@ trait IBitmapFontDataKerning extends StObject {
 }
 object IBitmapFontDataKerning {
   
-  @scala.inline
-  def apply(amount: Double, first: Double, second: Double): IBitmapFontDataKerning = {
+  inline def apply(amount: Double, first: Double, second: Double): IBitmapFontDataKerning = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBitmapFontDataKerning]
   }
   
-  @scala.inline
-  implicit class IBitmapFontDataKerningMutableBuilder[Self <: IBitmapFontDataKerning] (val x: Self) extends AnyVal {
+  extension [Self <: IBitmapFontDataKerning](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
   }
 }

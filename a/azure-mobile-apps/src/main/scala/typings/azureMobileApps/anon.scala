@@ -12,17 +12,14 @@ object anon {
   }
   object Encrypt {
     
-    @scala.inline
-    def apply(encrypt: Boolean): Encrypt = {
+    inline def apply(encrypt: Boolean): Encrypt = {
       val __obj = js.Dynamic.literal(encrypt = encrypt.asInstanceOf[js.Any])
       __obj.asInstanceOf[Encrypt]
     }
     
-    @scala.inline
-    implicit class EncryptMutableBuilder[Self <: Encrypt] (val x: Self) extends AnyVal {
+    extension [Self <: Encrypt](x: Self) {
       
-      @scala.inline
-      def setEncrypt(value: Boolean): Self = StObject.set(x, "encrypt", value.asInstanceOf[js.Any])
+      inline def setEncrypt(value: Boolean): Self = StObject.set(x, "encrypt", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,22 +18,17 @@ trait BlockedCookieWithReason extends StObject {
 }
 object BlockedCookieWithReason {
   
-  @scala.inline
-  def apply(blockedReasons: js.Array[CookieBlockedReason], cookie: Cookie): BlockedCookieWithReason = {
+  inline def apply(blockedReasons: js.Array[CookieBlockedReason], cookie: Cookie): BlockedCookieWithReason = {
     val __obj = js.Dynamic.literal(blockedReasons = blockedReasons.asInstanceOf[js.Any], cookie = cookie.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockedCookieWithReason]
   }
   
-  @scala.inline
-  implicit class BlockedCookieWithReasonMutableBuilder[Self <: BlockedCookieWithReason] (val x: Self) extends AnyVal {
+  extension [Self <: BlockedCookieWithReason](x: Self) {
     
-    @scala.inline
-    def setBlockedReasons(value: js.Array[CookieBlockedReason]): Self = StObject.set(x, "blockedReasons", value.asInstanceOf[js.Any])
+    inline def setBlockedReasons(value: js.Array[CookieBlockedReason]): Self = StObject.set(x, "blockedReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockedReasonsVarargs(value: CookieBlockedReason*): Self = StObject.set(x, "blockedReasons", js.Array(value :_*))
+    inline def setBlockedReasonsVarargs(value: CookieBlockedReason*): Self = StObject.set(x, "blockedReasons", js.Array(value :_*))
     
-    @scala.inline
-    def setCookie(value: Cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    inline def setCookie(value: Cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
   }
 }

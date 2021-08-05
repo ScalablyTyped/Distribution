@@ -67,8 +67,7 @@ trait GENavigationControl extends StObject {
 }
 object GENavigationControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getControlType: () => GENavigationControlEnum,
     getScreenXY: () => KmlVec2,
     getStreetViewEnabled: () => Boolean,
@@ -81,28 +80,20 @@ object GENavigationControl {
     __obj.asInstanceOf[GENavigationControl]
   }
   
-  @scala.inline
-  implicit class GENavigationControlMutableBuilder[Self <: GENavigationControl] (val x: Self) extends AnyVal {
+  extension [Self <: GENavigationControl](x: Self) {
     
-    @scala.inline
-    def setGetControlType(value: () => GENavigationControlEnum): Self = StObject.set(x, "getControlType", js.Any.fromFunction0(value))
+    inline def setGetControlType(value: () => GENavigationControlEnum): Self = StObject.set(x, "getControlType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScreenXY(value: () => KmlVec2): Self = StObject.set(x, "getScreenXY", js.Any.fromFunction0(value))
+    inline def setGetScreenXY(value: () => KmlVec2): Self = StObject.set(x, "getScreenXY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStreetViewEnabled(value: () => Boolean): Self = StObject.set(x, "getStreetViewEnabled", js.Any.fromFunction0(value))
+    inline def setGetStreetViewEnabled(value: () => Boolean): Self = StObject.set(x, "getStreetViewEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisibility(value: () => GEVisibilityEnum): Self = StObject.set(x, "getVisibility", js.Any.fromFunction0(value))
+    inline def setGetVisibility(value: () => GEVisibilityEnum): Self = StObject.set(x, "getVisibility", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetControlType(value: GENavigationControlEnum => Unit): Self = StObject.set(x, "setControlType", js.Any.fromFunction1(value))
+    inline def setSetControlType(value: GENavigationControlEnum => Unit): Self = StObject.set(x, "setControlType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStreetViewEnabled(value: Boolean => Unit): Self = StObject.set(x, "setStreetViewEnabled", js.Any.fromFunction1(value))
+    inline def setSetStreetViewEnabled(value: Boolean => Unit): Self = StObject.set(x, "setStreetViewEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisibility(value: GEVisibilityEnum => Unit): Self = StObject.set(x, "setVisibility", js.Any.fromFunction1(value))
+    inline def setSetVisibility(value: GEVisibilityEnum => Unit): Self = StObject.set(x, "setVisibility", js.Any.fromFunction1(value))
   }
 }

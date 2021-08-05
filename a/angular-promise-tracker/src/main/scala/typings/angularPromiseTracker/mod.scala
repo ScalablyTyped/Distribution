@@ -16,23 +16,18 @@ object mod {
   }
   object IRequestShortcutConfig {
     
-    @scala.inline
-    def apply(): IRequestShortcutConfig = {
+    inline def apply(): IRequestShortcutConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRequestShortcutConfig]
     }
     
-    @scala.inline
-    implicit class IRequestShortcutConfigMutableBuilder[Self <: IRequestShortcutConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IRequestShortcutConfig](x: Self) {
       
-      @scala.inline
-      def setTracker(value: PromiseTracker | js.Array[PromiseTracker]): Self = StObject.set(x, "tracker", value.asInstanceOf[js.Any])
+      inline def setTracker(value: PromiseTracker | js.Array[PromiseTracker]): Self = StObject.set(x, "tracker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackerUndefined: Self = StObject.set(x, "tracker", js.undefined)
+      inline def setTrackerUndefined: Self = StObject.set(x, "tracker", js.undefined)
       
-      @scala.inline
-      def setTrackerVarargs(value: PromiseTracker*): Self = StObject.set(x, "tracker", js.Array(value :_*))
+      inline def setTrackerVarargs(value: PromiseTracker*): Self = StObject.set(x, "tracker", js.Array(value :_*))
     }
   }
   
@@ -54,8 +49,7 @@ object mod {
     }
     object PromiseTracker {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         active: () => Boolean,
         addPromise: IPromise[js.Any] => IDeferred[Unit],
         cancel: () => Unit,
@@ -67,26 +61,19 @@ object mod {
         __obj.asInstanceOf[PromiseTracker]
       }
       
-      @scala.inline
-      implicit class PromiseTrackerMutableBuilder[Self <: PromiseTracker] (val x: Self) extends AnyVal {
+      extension [Self <: PromiseTracker](x: Self) {
         
-        @scala.inline
-        def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
+        inline def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAddPromise(value: IPromise[js.Any] => IDeferred[Unit]): Self = StObject.set(x, "addPromise", js.Any.fromFunction1(value))
+        inline def setAddPromise(value: IPromise[js.Any] => IDeferred[Unit]): Self = StObject.set(x, "addPromise", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+        inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setCreatePromise(value: () => IDeferred[Unit]): Self = StObject.set(x, "createPromise", js.Any.fromFunction0(value))
+        inline def setCreatePromise(value: () => IDeferred[Unit]): Self = StObject.set(x, "createPromise", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setTracking(value: () => Boolean): Self = StObject.set(x, "tracking", js.Any.fromFunction0(value))
+        inline def setTracking(value: () => Boolean): Self = StObject.set(x, "tracking", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setTrackingCount(value: () => Double): Self = StObject.set(x, "trackingCount", js.Any.fromFunction0(value))
+        inline def setTrackingCount(value: () => Double): Self = StObject.set(x, "trackingCount", js.Any.fromFunction0(value))
       }
     }
     
@@ -98,26 +85,20 @@ object mod {
     }
     object PromiseTrackerOptions {
       
-      @scala.inline
-      def apply(): PromiseTrackerOptions = {
+      inline def apply(): PromiseTrackerOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PromiseTrackerOptions]
       }
       
-      @scala.inline
-      implicit class PromiseTrackerOptionsMutableBuilder[Self <: PromiseTrackerOptions] (val x: Self) extends AnyVal {
+      extension [Self <: PromiseTrackerOptions](x: Self) {
         
-        @scala.inline
-        def setActivationDelay(value: Double): Self = StObject.set(x, "activationDelay", value.asInstanceOf[js.Any])
+        inline def setActivationDelay(value: Double): Self = StObject.set(x, "activationDelay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActivationDelayUndefined: Self = StObject.set(x, "activationDelay", js.undefined)
+        inline def setActivationDelayUndefined: Self = StObject.set(x, "activationDelay", js.undefined)
         
-        @scala.inline
-        def setMinDuration(value: Double): Self = StObject.set(x, "minDuration", value.asInstanceOf[js.Any])
+        inline def setMinDuration(value: Double): Self = StObject.set(x, "minDuration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinDurationUndefined: Self = StObject.set(x, "minDuration", js.undefined)
+        inline def setMinDurationUndefined: Self = StObject.set(x, "minDuration", js.undefined)
       }
     }
     

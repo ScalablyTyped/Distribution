@@ -18,19 +18,15 @@ trait UpdateSchemaRequest extends StObject {
 }
 object UpdateSchemaRequest {
   
-  @scala.inline
-  def apply(Name: SchemaName, SchemaArn: Arn): UpdateSchemaRequest = {
+  inline def apply(Name: SchemaName, SchemaArn: Arn): UpdateSchemaRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSchemaRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSchemaRequestMutableBuilder[Self <: UpdateSchemaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSchemaRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: SchemaName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SchemaName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
   }
 }

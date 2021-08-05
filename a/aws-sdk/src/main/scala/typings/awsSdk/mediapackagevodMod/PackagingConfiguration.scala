@@ -33,61 +33,43 @@ trait PackagingConfiguration extends StObject {
 }
 object PackagingConfiguration {
   
-  @scala.inline
-  def apply(): PackagingConfiguration = {
+  inline def apply(): PackagingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PackagingConfiguration]
   }
   
-  @scala.inline
-  implicit class PackagingConfigurationMutableBuilder[Self <: PackagingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: PackagingConfiguration](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCmafPackage(value: CmafPackage): Self = StObject.set(x, "CmafPackage", value.asInstanceOf[js.Any])
+    inline def setCmafPackage(value: CmafPackage): Self = StObject.set(x, "CmafPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmafPackageUndefined: Self = StObject.set(x, "CmafPackage", js.undefined)
+    inline def setCmafPackageUndefined: Self = StObject.set(x, "CmafPackage", js.undefined)
     
-    @scala.inline
-    def setDashPackage(value: DashPackage): Self = StObject.set(x, "DashPackage", value.asInstanceOf[js.Any])
+    inline def setDashPackage(value: DashPackage): Self = StObject.set(x, "DashPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashPackageUndefined: Self = StObject.set(x, "DashPackage", js.undefined)
+    inline def setDashPackageUndefined: Self = StObject.set(x, "DashPackage", js.undefined)
     
-    @scala.inline
-    def setHlsPackage(value: HlsPackage): Self = StObject.set(x, "HlsPackage", value.asInstanceOf[js.Any])
+    inline def setHlsPackage(value: HlsPackage): Self = StObject.set(x, "HlsPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsPackageUndefined: Self = StObject.set(x, "HlsPackage", js.undefined)
+    inline def setHlsPackageUndefined: Self = StObject.set(x, "HlsPackage", js.undefined)
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setMssPackage(value: MssPackage): Self = StObject.set(x, "MssPackage", value.asInstanceOf[js.Any])
+    inline def setMssPackage(value: MssPackage): Self = StObject.set(x, "MssPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMssPackageUndefined: Self = StObject.set(x, "MssPackage", js.undefined)
+    inline def setMssPackageUndefined: Self = StObject.set(x, "MssPackage", js.undefined)
     
-    @scala.inline
-    def setPackagingGroupId(value: string): Self = StObject.set(x, "PackagingGroupId", value.asInstanceOf[js.Any])
+    inline def setPackagingGroupId(value: string): Self = StObject.set(x, "PackagingGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackagingGroupIdUndefined: Self = StObject.set(x, "PackagingGroupId", js.undefined)
+    inline def setPackagingGroupIdUndefined: Self = StObject.set(x, "PackagingGroupId", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

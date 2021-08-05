@@ -23,17 +23,13 @@ object mod extends Shortcut {
   trait EDGE extends StObject
   object EDGE {
     
-    @scala.inline
-    def both: typings.rpiGpio.rpiGpioStrings.both = "both".asInstanceOf[typings.rpiGpio.rpiGpioStrings.both]
+    inline def both: typings.rpiGpio.rpiGpioStrings.both = "both".asInstanceOf[typings.rpiGpio.rpiGpioStrings.both]
     
-    @scala.inline
-    def falling: typings.rpiGpio.rpiGpioStrings.falling = "falling".asInstanceOf[typings.rpiGpio.rpiGpioStrings.falling]
+    inline def falling: typings.rpiGpio.rpiGpioStrings.falling = "falling".asInstanceOf[typings.rpiGpio.rpiGpioStrings.falling]
     
-    @scala.inline
-    def none: typings.rpiGpio.rpiGpioStrings.none = "none".asInstanceOf[typings.rpiGpio.rpiGpioStrings.none]
+    inline def none: typings.rpiGpio.rpiGpioStrings.none = "none".asInstanceOf[typings.rpiGpio.rpiGpioStrings.none]
     
-    @scala.inline
-    def rising: typings.rpiGpio.rpiGpioStrings.rising = "rising".asInstanceOf[typings.rpiGpio.rpiGpioStrings.rising]
+    inline def rising: typings.rpiGpio.rpiGpioStrings.rising = "rising".asInstanceOf[typings.rpiGpio.rpiGpioStrings.rising]
   }
   
   type ErrorCallback = js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
@@ -146,11 +142,9 @@ object mod extends Shortcut {
   trait MODE extends StObject
   object MODE {
     
-    @scala.inline
-    def mode_bcm: typings.rpiGpio.rpiGpioStrings.mode_bcm = "mode_bcm".asInstanceOf[typings.rpiGpio.rpiGpioStrings.mode_bcm]
+    inline def mode_bcm: typings.rpiGpio.rpiGpioStrings.mode_bcm = "mode_bcm".asInstanceOf[typings.rpiGpio.rpiGpioStrings.mode_bcm]
     
-    @scala.inline
-    def mode_rpi: typings.rpiGpio.rpiGpioStrings.mode_rpi = "mode_rpi".asInstanceOf[typings.rpiGpio.rpiGpioStrings.mode_rpi]
+    inline def mode_rpi: typings.rpiGpio.rpiGpioStrings.mode_rpi = "mode_rpi".asInstanceOf[typings.rpiGpio.rpiGpioStrings.mode_rpi]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -162,17 +156,13 @@ object mod extends Shortcut {
   trait PinDirection extends StObject
   object PinDirection {
     
-    @scala.inline
-    def high: typings.rpiGpio.rpiGpioStrings.high = "high".asInstanceOf[typings.rpiGpio.rpiGpioStrings.high]
+    inline def high: typings.rpiGpio.rpiGpioStrings.high = "high".asInstanceOf[typings.rpiGpio.rpiGpioStrings.high]
     
-    @scala.inline
-    def in: typings.rpiGpio.rpiGpioStrings.in = "in".asInstanceOf[typings.rpiGpio.rpiGpioStrings.in]
+    inline def in: typings.rpiGpio.rpiGpioStrings.in = "in".asInstanceOf[typings.rpiGpio.rpiGpioStrings.in]
     
-    @scala.inline
-    def low: typings.rpiGpio.rpiGpioStrings.low = "low".asInstanceOf[typings.rpiGpio.rpiGpioStrings.low]
+    inline def low: typings.rpiGpio.rpiGpioStrings.low = "low".asInstanceOf[typings.rpiGpio.rpiGpioStrings.low]
     
-    @scala.inline
-    def out: typings.rpiGpio.rpiGpioStrings.out = "out".asInstanceOf[typings.rpiGpio.rpiGpioStrings.out]
+    inline def out: typings.rpiGpio.rpiGpioStrings.out = "out".asInstanceOf[typings.rpiGpio.rpiGpioStrings.out]
   }
   
   type ValueCallback[T] = js.Function2[/* err */ js.UndefOr[Error | Null], /* value */ js.UndefOr[T], Unit]

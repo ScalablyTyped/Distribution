@@ -23,31 +23,23 @@ trait UserIdentityInfo extends StObject {
 }
 object UserIdentityInfo {
   
-  @scala.inline
-  def apply(): UserIdentityInfo = {
+  inline def apply(): UserIdentityInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserIdentityInfo]
   }
   
-  @scala.inline
-  implicit class UserIdentityInfoMutableBuilder[Self <: UserIdentityInfo] (val x: Self) extends AnyVal {
+  extension [Self <: UserIdentityInfo](x: Self) {
     
-    @scala.inline
-    def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
-    @scala.inline
-    def setFirstName(value: AgentFirstName): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
+    inline def setFirstName(value: AgentFirstName): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstNameUndefined: Self = StObject.set(x, "FirstName", js.undefined)
+    inline def setFirstNameUndefined: Self = StObject.set(x, "FirstName", js.undefined)
     
-    @scala.inline
-    def setLastName(value: AgentLastName): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
+    inline def setLastName(value: AgentLastName): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastNameUndefined: Self = StObject.set(x, "LastName", js.undefined)
+    inline def setLastNameUndefined: Self = StObject.set(x, "LastName", js.undefined)
   }
 }

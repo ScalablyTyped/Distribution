@@ -17,34 +17,25 @@ trait PricePerBuyer extends StObject {
 }
 object PricePerBuyer {
   
-  @scala.inline
-  def apply(): PricePerBuyer = {
+  inline def apply(): PricePerBuyer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PricePerBuyer]
   }
   
-  @scala.inline
-  implicit class PricePerBuyerMutableBuilder[Self <: PricePerBuyer] (val x: Self) extends AnyVal {
+  extension [Self <: PricePerBuyer](x: Self) {
     
-    @scala.inline
-    def setAdvertiserIds(value: js.Array[String]): Self = StObject.set(x, "advertiserIds", value.asInstanceOf[js.Any])
+    inline def setAdvertiserIds(value: js.Array[String]): Self = StObject.set(x, "advertiserIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserIdsUndefined: Self = StObject.set(x, "advertiserIds", js.undefined)
+    inline def setAdvertiserIdsUndefined: Self = StObject.set(x, "advertiserIds", js.undefined)
     
-    @scala.inline
-    def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value :_*))
+    inline def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value :_*))
     
-    @scala.inline
-    def setBuyer(value: Buyer): Self = StObject.set(x, "buyer", value.asInstanceOf[js.Any])
+    inline def setBuyer(value: Buyer): Self = StObject.set(x, "buyer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuyerUndefined: Self = StObject.set(x, "buyer", js.undefined)
+    inline def setBuyerUndefined: Self = StObject.set(x, "buyer", js.undefined)
     
-    @scala.inline
-    def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
+    inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
   }
 }

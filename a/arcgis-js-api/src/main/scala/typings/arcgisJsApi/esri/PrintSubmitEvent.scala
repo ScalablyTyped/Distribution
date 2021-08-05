@@ -10,16 +10,13 @@ trait PrintSubmitEvent extends StObject {
 }
 object PrintSubmitEvent {
   
-  @scala.inline
-  def apply(results: PrintSubmitEventResults): PrintSubmitEvent = {
+  inline def apply(results: PrintSubmitEventResults): PrintSubmitEvent = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintSubmitEvent]
   }
   
-  @scala.inline
-  implicit class PrintSubmitEventMutableBuilder[Self <: PrintSubmitEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PrintSubmitEvent](x: Self) {
     
-    @scala.inline
-    def setResults(value: PrintSubmitEventResults): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: PrintSubmitEventResults): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
   }
 }

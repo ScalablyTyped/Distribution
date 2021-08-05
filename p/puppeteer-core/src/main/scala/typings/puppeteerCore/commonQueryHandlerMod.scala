@@ -18,20 +18,15 @@ object commonQueryHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clearCustomQueryHandlers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCustomQueryHandlers")().asInstanceOf[Unit]
+  inline def clearCustomQueryHandlers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCustomQueryHandlers")().asInstanceOf[Unit]
   
-  @scala.inline
-  def customQueryHandlerNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("customQueryHandlerNames")().asInstanceOf[js.Array[String]]
+  inline def customQueryHandlerNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("customQueryHandlerNames")().asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def getQueryHandlerAndSelector(selector: String): UpdatedSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryHandlerAndSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[UpdatedSelector]
+  inline def getQueryHandlerAndSelector(selector: String): UpdatedSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryHandlerAndSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[UpdatedSelector]
   
-  @scala.inline
-  def registerCustomQueryHandler(name: String, handler: CustomQueryHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCustomQueryHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerCustomQueryHandler(name: String, handler: CustomQueryHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCustomQueryHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def unregisterCustomQueryHandler(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterCustomQueryHandler")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unregisterCustomQueryHandler(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterCustomQueryHandler")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait CustomQueryHandler extends StObject {
     
@@ -49,28 +44,22 @@ object commonQueryHandlerMod {
   }
   object CustomQueryHandler {
     
-    @scala.inline
-    def apply(): CustomQueryHandler = {
+    inline def apply(): CustomQueryHandler = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomQueryHandler]
     }
     
-    @scala.inline
-    implicit class CustomQueryHandlerMutableBuilder[Self <: CustomQueryHandler] (val x: Self) extends AnyVal {
+    extension [Self <: CustomQueryHandler](x: Self) {
       
-      @scala.inline
-      def setQueryAll(
+      inline def setQueryAll(
         value: (/* element */ Element | Document, /* selector */ String) => js.Array[Element] | NodeListOf[Element]
       ): Self = StObject.set(x, "queryAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQueryAllUndefined: Self = StObject.set(x, "queryAll", js.undefined)
+      inline def setQueryAllUndefined: Self = StObject.set(x, "queryAll", js.undefined)
       
-      @scala.inline
-      def setQueryOne(value: (/* element */ Element | Document, /* selector */ String) => Element | Null): Self = StObject.set(x, "queryOne", js.Any.fromFunction2(value))
+      inline def setQueryOne(value: (/* element */ Element | Document, /* selector */ String) => Element | Null): Self = StObject.set(x, "queryOne", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQueryOneUndefined: Self = StObject.set(x, "queryOne", js.undefined)
+      inline def setQueryOneUndefined: Self = StObject.set(x, "queryOne", js.undefined)
     }
   }
   
@@ -107,44 +96,34 @@ object commonQueryHandlerMod {
   }
   object InternalQueryHandler {
     
-    @scala.inline
-    def apply(): InternalQueryHandler = {
+    inline def apply(): InternalQueryHandler = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InternalQueryHandler]
     }
     
-    @scala.inline
-    implicit class InternalQueryHandlerMutableBuilder[Self <: InternalQueryHandler] (val x: Self) extends AnyVal {
+    extension [Self <: InternalQueryHandler](x: Self) {
       
-      @scala.inline
-      def setQueryAll(
+      inline def setQueryAll(
         value: (/* element */ ElementHandle[Element], /* selector */ String) => js.Promise[js.Array[ElementHandle[Element]]]
       ): Self = StObject.set(x, "queryAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQueryAllArray(value: (/* element */ ElementHandle[Element], /* selector */ String) => js.Promise[JSHandle]): Self = StObject.set(x, "queryAllArray", js.Any.fromFunction2(value))
+      inline def setQueryAllArray(value: (/* element */ ElementHandle[Element], /* selector */ String) => js.Promise[JSHandle]): Self = StObject.set(x, "queryAllArray", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQueryAllArrayUndefined: Self = StObject.set(x, "queryAllArray", js.undefined)
+      inline def setQueryAllArrayUndefined: Self = StObject.set(x, "queryAllArray", js.undefined)
       
-      @scala.inline
-      def setQueryAllUndefined: Self = StObject.set(x, "queryAll", js.undefined)
+      inline def setQueryAllUndefined: Self = StObject.set(x, "queryAll", js.undefined)
       
-      @scala.inline
-      def setQueryOne(
+      inline def setQueryOne(
         value: (/* element */ ElementHandle[Element], /* selector */ String) => js.Promise[ElementHandle[Element] | Null]
       ): Self = StObject.set(x, "queryOne", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQueryOneUndefined: Self = StObject.set(x, "queryOne", js.undefined)
+      inline def setQueryOneUndefined: Self = StObject.set(x, "queryOne", js.undefined)
       
-      @scala.inline
-      def setWaitFor(
+      inline def setWaitFor(
         value: (/* domWorld */ DOMWorld, /* selector */ String, /* options */ WaitForSelectorOptions) => js.Promise[ElementHandle[Element] | Null]
       ): Self = StObject.set(x, "waitFor", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setWaitForUndefined: Self = StObject.set(x, "waitFor", js.undefined)
+      inline def setWaitForUndefined: Self = StObject.set(x, "waitFor", js.undefined)
     }
   }
 }

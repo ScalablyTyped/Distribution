@@ -19,8 +19,7 @@ trait WebRequestBodyDetails
 }
 object WebRequestBodyDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     frameId: integer,
     method: String,
     parentFrameId: integer,
@@ -36,10 +35,8 @@ object WebRequestBodyDetails {
     __obj.asInstanceOf[WebRequestBodyDetails]
   }
   
-  @scala.inline
-  implicit class WebRequestBodyDetailsMutableBuilder[Self <: WebRequestBodyDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WebRequestBodyDetails](x: Self) {
     
-    @scala.inline
-    def setRequestBody(value: WebRequestBody): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: WebRequestBody): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
   }
 }

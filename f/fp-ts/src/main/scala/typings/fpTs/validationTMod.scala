@@ -19,12 +19,9 @@ object validationTMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getValidationM[E, M](S: Semigroup[E], M: Monad[M]): ValidationM[M, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationM")(S.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[ValidationM[M, E]]
-  @scala.inline
-  def getValidationM[E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](S: Semigroup[E], M: Monad1[M]): ValidationM1[M, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationM")(S.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[ValidationM1[M, E]]
-  @scala.inline
-  def getValidationM[E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](S: Semigroup[E], M: Monad2[M]): ValidationM2[M, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationM")(S.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[ValidationM2[M, E]]
+  inline def getValidationM[E, M](S: Semigroup[E], M: Monad[M]): ValidationM[M, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationM")(S.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[ValidationM[M, E]]
+  inline def getValidationM[E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](S: Semigroup[E], M: Monad1[M]): ValidationM1[M, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationM")(S.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[ValidationM1[M, E]]
+  inline def getValidationM[E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](S: Semigroup[E], M: Monad2[M]): ValidationM2[M, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationM")(S.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[ValidationM2[M, E]]
   
   trait ValidationM[M, E]
     extends StObject
@@ -36,8 +33,7 @@ object validationTMod {
   }
   object ValidationM {
     
-    @scala.inline
-    def apply[M, E](
+    inline def apply[M, E](
       alt: (ValidationT[M, E, js.Any], Lazy[ValidationT[M, E, js.Any]]) => ValidationT[M, E, js.Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, A>> */ js.Any) => js.Any,
       chain: (ValidationT[M, E, js.Any], js.Function1[js.Any, ValidationT[M, E, js.Any]]) => ValidationT[M, E, js.Any],
@@ -48,14 +44,11 @@ object validationTMod {
       __obj.asInstanceOf[ValidationM[M, E]]
     }
     
-    @scala.inline
-    implicit class ValidationMMutableBuilder[Self <: ValidationM[?, ?], M, E] (val x: Self & (ValidationM[M, E])) extends AnyVal {
+    extension [Self <: ValidationM[?, ?], M, E](x: Self & (ValidationM[M, E])) {
       
-      @scala.inline
-      def setAlt(value: (ValidationT[M, E, js.Any], Lazy[ValidationT[M, E, js.Any]]) => ValidationT[M, E, js.Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (ValidationT[M, E, js.Any], Lazy[ValidationT[M, E, js.Any]]) => ValidationT[M, E, js.Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (ValidationT[M, E, js.Any], js.Function1[js.Any, ValidationT[M, E, js.Any]]) => ValidationT[M, E, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     }
@@ -71,8 +64,7 @@ object validationTMod {
   }
   object ValidationM1 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, E](
       alt: (ValidationT1[M, E, js.Any], Lazy[ValidationT1[M, E, js.Any]]) => ValidationT1[M, E, js.Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, A>> */ js.Any) => js.Any,
       chain: (ValidationT1[M, E, js.Any], js.Function1[js.Any, ValidationT1[M, E, js.Any]]) => ValidationT1[M, E, js.Any],
@@ -83,16 +75,13 @@ object validationTMod {
       __obj.asInstanceOf[ValidationM1[M, E]]
     }
     
-    @scala.inline
-    implicit class ValidationM1MutableBuilder[Self <: ValidationM1[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, E] (val x: Self & (ValidationM1[M, E])) extends AnyVal {
+    extension [Self <: ValidationM1[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, E](x: Self & (ValidationM1[M, E])) {
       
-      @scala.inline
-      def setAlt(
+      inline def setAlt(
         value: (ValidationT1[M, E, js.Any], Lazy[ValidationT1[M, E, js.Any]]) => ValidationT1[M, E, js.Any]
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (ValidationT1[M, E, js.Any], js.Function1[js.Any, ValidationT1[M, E, js.Any]]) => ValidationT1[M, E, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     }
@@ -108,8 +97,7 @@ object validationTMod {
   }
   object ValidationM2 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       alt: (ValidationT2[M, js.Any, E, js.Any], Lazy[ValidationT2[M, js.Any, E, js.Any]]) => ValidationT2[M, js.Any, E, js.Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, E, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, E, A>> */ js.Any) => js.Any,
       chain: (ValidationT2[M, js.Any, E, js.Any], js.Function1[js.Any, ValidationT2[M, js.Any, E, js.Any]]) => ValidationT2[M, js.Any, E, js.Any],
@@ -120,16 +108,13 @@ object validationTMod {
       __obj.asInstanceOf[ValidationM2[M, E]]
     }
     
-    @scala.inline
-    implicit class ValidationM2MutableBuilder[Self <: ValidationM2[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (ValidationM2[M, E])) extends AnyVal {
+    extension [Self <: ValidationM2[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (ValidationM2[M, E])) {
       
-      @scala.inline
-      def setAlt(
+      inline def setAlt(
         value: (ValidationT2[M, js.Any, E, js.Any], Lazy[ValidationT2[M, js.Any, E, js.Any]]) => ValidationT2[M, js.Any, E, js.Any]
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (ValidationT2[M, js.Any, E, js.Any], js.Function1[js.Any, ValidationT2[M, js.Any, E, js.Any]]) => ValidationT2[M, js.Any, E, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     }

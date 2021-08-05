@@ -52,46 +52,33 @@ trait OffsetParametersProperties extends StObject {
 }
 object OffsetParametersProperties {
   
-  @scala.inline
-  def apply(): OffsetParametersProperties = {
+  inline def apply(): OffsetParametersProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OffsetParametersProperties]
   }
   
-  @scala.inline
-  implicit class OffsetParametersPropertiesMutableBuilder[Self <: OffsetParametersProperties] (val x: Self) extends AnyVal {
+  extension [Self <: OffsetParametersProperties](x: Self) {
     
-    @scala.inline
-    def setBevelRatio(value: Double): Self = StObject.set(x, "bevelRatio", value.asInstanceOf[js.Any])
+    inline def setBevelRatio(value: Double): Self = StObject.set(x, "bevelRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBevelRatioUndefined: Self = StObject.set(x, "bevelRatio", js.undefined)
+    inline def setBevelRatioUndefined: Self = StObject.set(x, "bevelRatio", js.undefined)
     
-    @scala.inline
-    def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    inline def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
+    inline def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
-    @scala.inline
-    def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+    inline def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
     
-    @scala.inline
-    def setOffsetDistance(value: Double): Self = StObject.set(x, "offsetDistance", value.asInstanceOf[js.Any])
+    inline def setOffsetDistance(value: Double): Self = StObject.set(x, "offsetDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetDistanceUndefined: Self = StObject.set(x, "offsetDistance", js.undefined)
+    inline def setOffsetDistanceUndefined: Self = StObject.set(x, "offsetDistance", js.undefined)
     
-    @scala.inline
-    def setOffsetHow(value: bevelled | mitered | rounded): Self = StObject.set(x, "offsetHow", value.asInstanceOf[js.Any])
+    inline def setOffsetHow(value: bevelled | mitered | rounded): Self = StObject.set(x, "offsetHow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetHowUndefined: Self = StObject.set(x, "offsetHow", js.undefined)
+    inline def setOffsetHowUndefined: Self = StObject.set(x, "offsetHow", js.undefined)
     
-    @scala.inline
-    def setOffsetUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "offsetUnit", value.asInstanceOf[js.Any])
+    inline def setOffsetUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "offsetUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUnitUndefined: Self = StObject.set(x, "offsetUnit", js.undefined)
+    inline def setOffsetUnitUndefined: Self = StObject.set(x, "offsetUnit", js.undefined)
   }
 }

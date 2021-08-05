@@ -15,7 +15,7 @@ object gridrouterMod {
     def this(originalnodes: js.Array[Node], accessor: NodeAccessor[Node]) = this()
     def this(originalnodes: js.Array[Node], accessor: NodeAccessor[Node], groupPadding: Double) = this()
     
-    var avg: js.Any = js.native
+    /* private */ var avg: js.Any = js.native
     
     var backToFront: js.Any = js.native
     
@@ -23,13 +23,13 @@ object gridrouterMod {
     
     var edges: js.Any = js.native
     
-    var findAncestorPathBetween: js.Any = js.native
+    /* private */ var findAncestorPathBetween: js.Any = js.native
     
-    var findLineage: js.Any = js.native
+    /* private */ var findLineage: js.Any = js.native
     
-    var getDepth: js.Any = js.native
+    /* private */ var getDepth: js.Any = js.native
     
-    var getGridLines: js.Any = js.native
+    /* private */ var getGridLines: js.Any = js.native
     
     var groupPadding: Double = js.native
     
@@ -37,7 +37,7 @@ object gridrouterMod {
     
     var leaves: js.Array[NodeWrapper] = js.native
     
-    var midPoints: js.Any = js.native
+    /* private */ var midPoints: js.Any = js.native
     
     var nodes: js.Array[NodeWrapper] = js.native
     
@@ -71,32 +71,25 @@ object gridrouterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def angleBetween2Lines(line1: js.Array[Point], line2: js.Array[Point]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angleBetween2Lines")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def angleBetween2Lines(line1: js.Array[Point], line2: js.Array[Point]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angleBetween2Lines")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     @JSImport("webcola/dist/src/gridrouter", "GridRouter.getOrder")
     @js.native
     def getOrder: js.Any = js.native
-    @scala.inline
-    def getOrder_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrder")(x.asInstanceOf[js.Any])
+    inline def getOrder_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrder")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getRoutePath(route: js.Array[js.Array[Point]], cornerradius: Double, arrowwidth: Double, arrowheight: Double): Arrowpath = (^.asInstanceOf[js.Dynamic].applyDynamic("getRoutePath")(route.asInstanceOf[js.Any], cornerradius.asInstanceOf[js.Any], arrowwidth.asInstanceOf[js.Any], arrowheight.asInstanceOf[js.Any])).asInstanceOf[Arrowpath]
+    inline def getRoutePath(route: js.Array[js.Array[Point]], cornerradius: Double, arrowwidth: Double, arrowheight: Double): Arrowpath = (^.asInstanceOf[js.Dynamic].applyDynamic("getRoutePath")(route.asInstanceOf[js.Any], cornerradius.asInstanceOf[js.Any], arrowwidth.asInstanceOf[js.Any], arrowheight.asInstanceOf[js.Any])).asInstanceOf[Arrowpath]
     
-    @scala.inline
-    def getSegmentSets(routes: js.Any, x: js.Any, y: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSegmentSets")(routes.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def getSegmentSets(routes: js.Any, x: js.Any, y: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSegmentSets")(routes.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     @JSImport("webcola/dist/src/gridrouter", "GridRouter.isLeft")
     @js.native
     def isLeft: js.Any = js.native
-    @scala.inline
-    def isLeft_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isLeft")(x.asInstanceOf[js.Any])
+    inline def isLeft_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isLeft")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def makeSegments(path: js.Array[Point]): js.Array[js.Array[Point]] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSegments")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Point]]]
+    inline def makeSegments(path: js.Array[Point]): js.Array[js.Array[Point]] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSegments")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Point]]]
     
-    @scala.inline
-    def nudgeSegments(
+    inline def nudgeSegments(
       routes: js.Any,
       x: String,
       y: String,
@@ -104,14 +97,11 @@ object gridrouterMod {
       gap: Double
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nudgeSegments")(routes.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], leftOf.asInstanceOf[js.Any], gap.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def nudgeSegs(x: String, y: String, routes: js.Any, segments: js.Any, leftOf: js.Any, gap: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nudgeSegs")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], routes.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], leftOf.asInstanceOf[js.Any], gap.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def nudgeSegs(x: String, y: String, routes: js.Any, segments: js.Any, leftOf: js.Any, gap: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nudgeSegs")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], routes.asInstanceOf[js.Any], segments.asInstanceOf[js.Any], leftOf.asInstanceOf[js.Any], gap.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def orderEdges(edges: js.Any): js.Function2[/* l */ Double, /* r */ Double, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("orderEdges")(edges.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* l */ Double, /* r */ Double, Boolean]]
+    inline def orderEdges(edges: js.Any): js.Function2[/* l */ Double, /* r */ Double, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("orderEdges")(edges.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* l */ Double, /* r */ Double, Boolean]]
     
-    @scala.inline
-    def unreverseEdges(routes: js.Any, routePaths: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unreverseEdges")(routes.asInstanceOf[js.Any], routePaths.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def unreverseEdges(routes: js.Any, routePaths: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unreverseEdges")(routes.asInstanceOf[js.Any], routePaths.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("webcola/dist/src/gridrouter", "LongestCommonSubsequence")
@@ -143,8 +133,7 @@ object gridrouterMod {
     @JSImport("webcola/dist/src/gridrouter", "LongestCommonSubsequence.findMatch")
     @js.native
     def findMatch: js.Any = js.native
-    @scala.inline
-    def findMatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findMatch")(x.asInstanceOf[js.Any])
+    inline def findMatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findMatch")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("webcola/dist/src/gridrouter", "NodeWrapper")
@@ -192,23 +181,18 @@ object gridrouterMod {
   }
   object GridLine {
     
-    @scala.inline
-    def apply(nodes: js.Array[NodeWrapper], pos: Double): GridLine = {
+    inline def apply(nodes: js.Array[NodeWrapper], pos: Double): GridLine = {
       val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
       __obj.asInstanceOf[GridLine]
     }
     
-    @scala.inline
-    implicit class GridLineMutableBuilder[Self <: GridLine] (val x: Self) extends AnyVal {
+    extension [Self <: GridLine](x: Self) {
       
-      @scala.inline
-      def setNodes(value: js.Array[NodeWrapper]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[NodeWrapper]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: NodeWrapper*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: NodeWrapper*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       
-      @scala.inline
-      def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -220,20 +204,16 @@ object gridrouterMod {
   }
   object NodeAccessor {
     
-    @scala.inline
-    def apply[Node](getBounds: Node => Rectangle, getChildren: Node => js.Array[Double]): NodeAccessor[Node] = {
+    inline def apply[Node](getBounds: Node => Rectangle, getChildren: Node => js.Array[Double]): NodeAccessor[Node] = {
       val __obj = js.Dynamic.literal(getBounds = js.Any.fromFunction1(getBounds), getChildren = js.Any.fromFunction1(getChildren))
       __obj.asInstanceOf[NodeAccessor[Node]]
     }
     
-    @scala.inline
-    implicit class NodeAccessorMutableBuilder[Self <: NodeAccessor[?], Node] (val x: Self & NodeAccessor[Node]) extends AnyVal {
+    extension [Self <: NodeAccessor[?], Node](x: Self & NodeAccessor[Node]) {
       
-      @scala.inline
-      def setGetBounds(value: Node => Rectangle): Self = StObject.set(x, "getBounds", js.Any.fromFunction1(value))
+      inline def setGetBounds(value: Node => Rectangle): Self = StObject.set(x, "getBounds", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetChildren(value: Node => js.Array[Double]): Self = StObject.set(x, "getChildren", js.Any.fromFunction1(value))
+      inline def setGetChildren(value: Node => js.Array[Double]): Self = StObject.set(x, "getChildren", js.Any.fromFunction1(value))
     }
   }
 }

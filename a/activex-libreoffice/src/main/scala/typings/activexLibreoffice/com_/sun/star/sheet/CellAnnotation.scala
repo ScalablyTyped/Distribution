@@ -25,8 +25,7 @@ trait CellAnnotation
      with XSheetAnnotationShapeSupplier
 object CellAnnotation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AnnotationShape: XShape,
     Author: String,
     Date: String,

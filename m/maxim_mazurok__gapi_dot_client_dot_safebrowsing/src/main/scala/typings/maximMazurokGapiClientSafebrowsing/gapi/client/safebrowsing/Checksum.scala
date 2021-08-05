@@ -11,19 +11,15 @@ trait Checksum extends StObject {
 }
 object Checksum {
   
-  @scala.inline
-  def apply(): Checksum = {
+  inline def apply(): Checksum = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Checksum]
   }
   
-  @scala.inline
-  implicit class ChecksumMutableBuilder[Self <: Checksum] (val x: Self) extends AnyVal {
+  extension [Self <: Checksum](x: Self) {
     
-    @scala.inline
-    def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+    inline def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
+    inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
   }
 }

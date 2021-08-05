@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait strokeLineJoinType extends StObject
 object strokeLineJoinType {
   
-  @scala.inline
-  def bevel: typings.navermaps.navermapsStrings.bevel = "bevel".asInstanceOf[typings.navermaps.navermapsStrings.bevel]
+  inline def bevel: typings.navermaps.navermapsStrings.bevel = "bevel".asInstanceOf[typings.navermaps.navermapsStrings.bevel]
   
-  @scala.inline
-  def miter: typings.navermaps.navermapsStrings.miter = "miter".asInstanceOf[typings.navermaps.navermapsStrings.miter]
+  inline def miter: typings.navermaps.navermapsStrings.miter = "miter".asInstanceOf[typings.navermaps.navermapsStrings.miter]
   
-  @scala.inline
-  def `round `: typings.navermaps.navermapsStrings.`round ` = ("round ").asInstanceOf[typings.navermaps.navermapsStrings.`round `]
+  inline def `round `: typings.navermaps.navermapsStrings.`round ` = ("round ").asInstanceOf[typings.navermaps.navermapsStrings.`round `]
 }

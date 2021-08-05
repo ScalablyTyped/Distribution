@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScrollDirection extends StObject
 object ScrollDirection {
   
-  @scala.inline
-  def FORWARD: typings.scrollmagic.scrollmagicStrings.FORWARD = "FORWARD".asInstanceOf[typings.scrollmagic.scrollmagicStrings.FORWARD]
+  inline def FORWARD: typings.scrollmagic.scrollmagicStrings.FORWARD = "FORWARD".asInstanceOf[typings.scrollmagic.scrollmagicStrings.FORWARD]
   
-  @scala.inline
-  def PAUSED: typings.scrollmagic.scrollmagicStrings.PAUSED = "PAUSED".asInstanceOf[typings.scrollmagic.scrollmagicStrings.PAUSED]
+  inline def PAUSED: typings.scrollmagic.scrollmagicStrings.PAUSED = "PAUSED".asInstanceOf[typings.scrollmagic.scrollmagicStrings.PAUSED]
   
-  @scala.inline
-  def REVERSE: typings.scrollmagic.scrollmagicStrings.REVERSE = "REVERSE".asInstanceOf[typings.scrollmagic.scrollmagicStrings.REVERSE]
+  inline def REVERSE: typings.scrollmagic.scrollmagicStrings.REVERSE = "REVERSE".asInstanceOf[typings.scrollmagic.scrollmagicStrings.REVERSE]
 }

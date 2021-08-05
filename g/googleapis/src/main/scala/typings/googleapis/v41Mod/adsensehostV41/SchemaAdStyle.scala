@@ -33,37 +33,27 @@ trait SchemaAdStyle extends StObject {
 }
 object SchemaAdStyle {
   
-  @scala.inline
-  def apply(): SchemaAdStyle = {
+  inline def apply(): SchemaAdStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAdStyle]
   }
   
-  @scala.inline
-  implicit class SchemaAdStyleMutableBuilder[Self <: SchemaAdStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAdStyle](x: Self) {
     
-    @scala.inline
-    def setColors(value: Background): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: Background): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setCorners(value: String): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
+    inline def setCorners(value: String): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
+    inline def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
     
-    @scala.inline
-    def setFont(value: Size): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Size): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait popoverAirOptionsFont extends StObject
 object popoverAirOptionsFont {
   
-  @scala.inline
-  def bold: typings.summernote.summernoteStrings.bold = "bold".asInstanceOf[typings.summernote.summernoteStrings.bold]
+  inline def bold: typings.summernote.summernoteStrings.bold = "bold".asInstanceOf[typings.summernote.summernoteStrings.bold]
   
-  @scala.inline
-  def clear: typings.summernote.summernoteStrings.clear = "clear".asInstanceOf[typings.summernote.summernoteStrings.clear]
+  inline def clear: typings.summernote.summernoteStrings.clear = "clear".asInstanceOf[typings.summernote.summernoteStrings.clear]
   
-  @scala.inline
-  def underline: typings.summernote.summernoteStrings.underline = "underline".asInstanceOf[typings.summernote.summernoteStrings.underline]
+  inline def underline: typings.summernote.summernoteStrings.underline = "underline".asInstanceOf[typings.summernote.summernoteStrings.underline]
 }

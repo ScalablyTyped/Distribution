@@ -12,17 +12,14 @@ object anon {
   }
   object Prevent {
     
-    @scala.inline
-    def apply(prevent: Boolean): Prevent = {
+    inline def apply(prevent: Boolean): Prevent = {
       val __obj = js.Dynamic.literal(prevent = prevent.asInstanceOf[js.Any])
       __obj.asInstanceOf[Prevent]
     }
     
-    @scala.inline
-    implicit class PreventMutableBuilder[Self <: Prevent] (val x: Self) extends AnyVal {
+    extension [Self <: Prevent](x: Self) {
       
-      @scala.inline
-      def setPrevent(value: Boolean): Self = StObject.set(x, "prevent", value.asInstanceOf[js.Any])
+      inline def setPrevent(value: Boolean): Self = StObject.set(x, "prevent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -34,20 +31,16 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(x: Double, y: Double): X = {
+    inline def apply(x: Double, y: Double): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

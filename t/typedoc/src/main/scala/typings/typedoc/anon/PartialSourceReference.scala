@@ -17,40 +17,29 @@ trait PartialSourceReference extends StObject {
 }
 object PartialSourceReference {
   
-  @scala.inline
-  def apply(): PartialSourceReference = {
+  inline def apply(): PartialSourceReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialSourceReference]
   }
   
-  @scala.inline
-  implicit class PartialSourceReferenceMutableBuilder[Self <: PartialSourceReference] (val x: Self) extends AnyVal {
+  extension [Self <: PartialSourceReference](x: Self) {
     
-    @scala.inline
-    def setCharacter(value: ModelToObject[Double] | Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+    inline def setCharacter(value: ModelToObject[Double] | Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterUndefined: Self = StObject.set(x, "character", js.undefined)
+    inline def setCharacterUndefined: Self = StObject.set(x, "character", js.undefined)
     
-    @scala.inline
-    def setCharacterVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "character", js.Array(value :_*))
+    inline def setCharacterVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "character", js.Array(value :_*))
     
-    @scala.inline
-    def setFileName(value: ModelToObject[String] | String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: ModelToObject[String] | String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setFileNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "fileName", js.Array(value :_*))
+    inline def setFileNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "fileName", js.Array(value :_*))
     
-    @scala.inline
-    def setLine(value: ModelToObject[Double] | Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: ModelToObject[Double] | Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setLineVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "line", js.Array(value :_*))
+    inline def setLineVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "line", js.Array(value :_*))
   }
 }

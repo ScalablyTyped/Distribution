@@ -10,19 +10,15 @@ trait IMapMarginOptions extends StObject {
 }
 object IMapMarginOptions {
   
-  @scala.inline
-  def apply(): IMapMarginOptions = {
+  inline def apply(): IMapMarginOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMapMarginOptions]
   }
   
-  @scala.inline
-  implicit class IMapMarginOptionsMutableBuilder[Self <: IMapMarginOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IMapMarginOptions](x: Self) {
     
-    @scala.inline
-    def setUseMapMargin(value: Boolean): Self = StObject.set(x, "useMapMargin", value.asInstanceOf[js.Any])
+    inline def setUseMapMargin(value: Boolean): Self = StObject.set(x, "useMapMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMapMarginUndefined: Self = StObject.set(x, "useMapMargin", js.undefined)
+    inline def setUseMapMarginUndefined: Self = StObject.set(x, "useMapMargin", js.undefined)
   }
 }

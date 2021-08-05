@@ -15,19 +15,15 @@ trait MathConfig extends StObject {
 }
 object MathConfig {
   
-  @scala.inline
-  def apply(config: String, mathjax: String): MathConfig = {
+  inline def apply(config: String, mathjax: String): MathConfig = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], mathjax = mathjax.asInstanceOf[js.Any])
     __obj.asInstanceOf[MathConfig]
   }
   
-  @scala.inline
-  implicit class MathConfigMutableBuilder[Self <: MathConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MathConfig](x: Self) {
     
-    @scala.inline
-    def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMathjax(value: String): Self = StObject.set(x, "mathjax", value.asInstanceOf[js.Any])
+    inline def setMathjax(value: String): Self = StObject.set(x, "mathjax", value.asInstanceOf[js.Any])
   }
 }

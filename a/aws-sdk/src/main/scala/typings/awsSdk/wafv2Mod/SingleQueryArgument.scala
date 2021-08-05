@@ -13,16 +13,13 @@ trait SingleQueryArgument extends StObject {
 }
 object SingleQueryArgument {
   
-  @scala.inline
-  def apply(Name: FieldToMatchData): SingleQueryArgument = {
+  inline def apply(Name: FieldToMatchData): SingleQueryArgument = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleQueryArgument]
   }
   
-  @scala.inline
-  implicit class SingleQueryArgumentMutableBuilder[Self <: SingleQueryArgument] (val x: Self) extends AnyVal {
+  extension [Self <: SingleQueryArgument](x: Self) {
     
-    @scala.inline
-    def setName(value: FieldToMatchData): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: FieldToMatchData): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

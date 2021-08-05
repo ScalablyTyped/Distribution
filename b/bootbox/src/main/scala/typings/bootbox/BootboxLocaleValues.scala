@@ -14,22 +14,17 @@ trait BootboxLocaleValues extends StObject {
 }
 object BootboxLocaleValues {
   
-  @scala.inline
-  def apply(CANCEL: String, CONFIRM: String, OK: String): BootboxLocaleValues = {
+  inline def apply(CANCEL: String, CONFIRM: String, OK: String): BootboxLocaleValues = {
     val __obj = js.Dynamic.literal(CANCEL = CANCEL.asInstanceOf[js.Any], CONFIRM = CONFIRM.asInstanceOf[js.Any], OK = OK.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxLocaleValues]
   }
   
-  @scala.inline
-  implicit class BootboxLocaleValuesMutableBuilder[Self <: BootboxLocaleValues] (val x: Self) extends AnyVal {
+  extension [Self <: BootboxLocaleValues](x: Self) {
     
-    @scala.inline
-    def setCANCEL(value: String): Self = StObject.set(x, "CANCEL", value.asInstanceOf[js.Any])
+    inline def setCANCEL(value: String): Self = StObject.set(x, "CANCEL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCONFIRM(value: String): Self = StObject.set(x, "CONFIRM", value.asInstanceOf[js.Any])
+    inline def setCONFIRM(value: String): Self = StObject.set(x, "CONFIRM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOK(value: String): Self = StObject.set(x, "OK", value.asInstanceOf[js.Any])
+    inline def setOK(value: String): Self = StObject.set(x, "OK", value.asInstanceOf[js.Any])
   }
 }

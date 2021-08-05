@@ -15,19 +15,15 @@ trait PanControlOptions extends StObject {
 }
 object PanControlOptions {
   
-  @scala.inline
-  def apply(): PanControlOptions = {
+  inline def apply(): PanControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PanControlOptions]
   }
   
-  @scala.inline
-  implicit class PanControlOptionsMutableBuilder[Self <: PanControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PanControlOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

@@ -61,11 +61,9 @@ object mod {
   @js.native
   val CacheProvider: Provider[EmotionCache] = js.native
   
-  @scala.inline
-  def ClassNames[Theme](props: ClassNamesProps[Theme]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ClassNames")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def ClassNames[Theme](props: ClassNamesProps[Theme]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ClassNames")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def Global[Theme](props: GlobalProps[Theme]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Global")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Global[Theme](props: GlobalProps[Theme]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Global")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@storybook/theming", "ThemeContext")
   @js.native
@@ -80,56 +78,47 @@ object mod {
     @JSImport("@storybook/theming", "background.app")
     @js.native
     def app: String = js.native
-    @scala.inline
-    def app_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("app")(x.asInstanceOf[js.Any])
+    inline def app_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("app")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "background.bar")
     @js.native
     def bar: String = js.native
-    @scala.inline
-    def bar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bar")(x.asInstanceOf[js.Any])
+    inline def bar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bar")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "background.content")
     @js.native
     def content: String = js.native
-    @scala.inline
-    def content_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("content")(x.asInstanceOf[js.Any])
+    inline def content_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("content")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "background.critical")
     @js.native
     def critical: String = js.native
-    @scala.inline
-    def critical_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("critical")(x.asInstanceOf[js.Any])
+    inline def critical_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("critical")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "background.gridCellSize")
     @js.native
     def gridCellSize: Double = js.native
-    @scala.inline
-    def gridCellSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gridCellSize")(x.asInstanceOf[js.Any])
+    inline def gridCellSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gridCellSize")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "background.hoverable")
     @js.native
     def hoverable: String = js.native
-    @scala.inline
-    def hoverable_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hoverable")(x.asInstanceOf[js.Any])
+    inline def hoverable_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hoverable")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "background.negative")
     @js.native
     def negative: String = js.native
-    @scala.inline
-    def negative_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("negative")(x.asInstanceOf[js.Any])
+    inline def negative_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("negative")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "background.positive")
     @js.native
     def positive: String = js.native
-    @scala.inline
-    def positive_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("positive")(x.asInstanceOf[js.Any])
+    inline def positive_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("positive")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "background.warning")
     @js.native
     def warning: String = js.native
-    @scala.inline
-    def warning_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
+    inline def warning_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
   }
   
   object color {
@@ -141,309 +130,237 @@ object mod {
     @JSImport("@storybook/theming", "color.ancillary")
     @js.native
     def ancillary: String = js.native
-    @scala.inline
-    def ancillary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ancillary")(x.asInstanceOf[js.Any])
+    inline def ancillary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ancillary")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.border")
     @js.native
     def border: String = js.native
-    @scala.inline
-    def border_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("border")(x.asInstanceOf[js.Any])
+    inline def border_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("border")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.critical")
     @js.native
     def critical: String = js.native
-    @scala.inline
-    def critical_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("critical")(x.asInstanceOf[js.Any])
+    inline def critical_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("critical")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.dark")
     @js.native
     def dark: String = js.native
-    @scala.inline
-    def dark_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dark")(x.asInstanceOf[js.Any])
+    inline def dark_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dark")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.darker")
     @js.native
     def darker: String = js.native
-    @scala.inline
-    def darker_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darker")(x.asInstanceOf[js.Any])
+    inline def darker_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darker")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.darkest")
     @js.native
     def darkest: String = js.native
-    @scala.inline
-    def darkest_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkest")(x.asInstanceOf[js.Any])
+    inline def darkest_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkest")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.defaultText")
     @js.native
     def defaultText: String = js.native
-    @scala.inline
-    def defaultText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultText")(x.asInstanceOf[js.Any])
+    inline def defaultText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultText")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.gold")
     @js.native
     def gold: String = js.native
-    @scala.inline
-    def gold_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gold")(x.asInstanceOf[js.Any])
+    inline def gold_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gold")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.green")
     @js.native
     def green: String = js.native
-    @scala.inline
-    def green_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("green")(x.asInstanceOf[js.Any])
+    inline def green_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("green")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.inverseText")
     @js.native
     def inverseText: String = js.native
-    @scala.inline
-    def inverseText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inverseText")(x.asInstanceOf[js.Any])
+    inline def inverseText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inverseText")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.light")
     @js.native
     def light: String = js.native
-    @scala.inline
-    def light_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("light")(x.asInstanceOf[js.Any])
+    inline def light_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("light")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.lighter")
     @js.native
     def lighter: String = js.native
-    @scala.inline
-    def lighter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lighter")(x.asInstanceOf[js.Any])
+    inline def lighter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lighter")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.lightest")
     @js.native
     def lightest: String = js.native
-    @scala.inline
-    def lightest_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightest")(x.asInstanceOf[js.Any])
+    inline def lightest_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightest")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.medium")
     @js.native
     def medium: String = js.native
-    @scala.inline
-    def medium_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("medium")(x.asInstanceOf[js.Any])
+    inline def medium_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("medium")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.mediumdark")
     @js.native
     def mediumdark: String = js.native
-    @scala.inline
-    def mediumdark_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mediumdark")(x.asInstanceOf[js.Any])
+    inline def mediumdark_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mediumdark")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.mediumlight")
     @js.native
     def mediumlight: String = js.native
-    @scala.inline
-    def mediumlight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mediumlight")(x.asInstanceOf[js.Any])
+    inline def mediumlight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mediumlight")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.negative")
     @js.native
     def negative: String = js.native
-    @scala.inline
-    def negative_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("negative")(x.asInstanceOf[js.Any])
+    inline def negative_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("negative")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.orange")
     @js.native
     def orange: String = js.native
-    @scala.inline
-    def orange_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orange")(x.asInstanceOf[js.Any])
+    inline def orange_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orange")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.positive")
     @js.native
     def positive: String = js.native
-    @scala.inline
-    def positive_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("positive")(x.asInstanceOf[js.Any])
+    inline def positive_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("positive")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.primary")
     @js.native
     def primary: String = js.native
-    @scala.inline
-    def primary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primary")(x.asInstanceOf[js.Any])
+    inline def primary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primary")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.purple")
     @js.native
     def purple: String = js.native
-    @scala.inline
-    def purple_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("purple")(x.asInstanceOf[js.Any])
+    inline def purple_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("purple")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.seafoam")
     @js.native
     def seafoam: String = js.native
-    @scala.inline
-    def seafoam_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seafoam")(x.asInstanceOf[js.Any])
+    inline def seafoam_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seafoam")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.secondary")
     @js.native
     def secondary: String = js.native
-    @scala.inline
-    def secondary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondary")(x.asInstanceOf[js.Any])
+    inline def secondary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondary")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.tertiary")
     @js.native
     def tertiary: String = js.native
-    @scala.inline
-    def tertiary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tertiary")(x.asInstanceOf[js.Any])
+    inline def tertiary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tertiary")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.ultraviolet")
     @js.native
     def ultraviolet: String = js.native
-    @scala.inline
-    def ultraviolet_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ultraviolet")(x.asInstanceOf[js.Any])
+    inline def ultraviolet_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ultraviolet")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "color.warning")
     @js.native
     def warning: String = js.native
-    @scala.inline
-    def warning_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
+    inline def warning_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def convert(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")().asInstanceOf[Theme]
-  @scala.inline
-  def convert(inherit: ThemeVars): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(inherit.asInstanceOf[js.Any]).asInstanceOf[Theme]
+  inline def convert(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")().asInstanceOf[Theme]
+  inline def convert(inherit: ThemeVars): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(inherit.asInstanceOf[js.Any]).asInstanceOf[Theme]
   
-  @scala.inline
-  def create(): ThemeVars = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ThemeVars]
-  @scala.inline
-  def create(vars: Unit, rest: Rest): ThemeVars = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(vars.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[ThemeVars]
-  @scala.inline
-  def create(vars: ThemeVars): ThemeVars = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(vars.asInstanceOf[js.Any]).asInstanceOf[ThemeVars]
-  @scala.inline
-  def create(vars: ThemeVars, rest: Rest): ThemeVars = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(vars.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[ThemeVars]
+  inline def create(): ThemeVars = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ThemeVars]
+  inline def create(vars: Unit, rest: Rest): ThemeVars = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(vars.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[ThemeVars]
+  inline def create(vars: ThemeVars): ThemeVars = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(vars.asInstanceOf[js.Any]).asInstanceOf[ThemeVars]
+  inline def create(vars: ThemeVars, rest: Rest): ThemeVars = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(vars.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[ThemeVars]
   
-  @scala.inline
-  def createGlobal(hasColorBackgroundTypography: Background): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createGlobal")(hasColorBackgroundTypography.asInstanceOf[js.Any]).asInstanceOf[Return]
+  inline def createGlobal(hasColorBackgroundTypography: Background): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createGlobal")(hasColorBackgroundTypography.asInstanceOf[js.Any]).asInstanceOf[Return]
   
-  @scala.inline
-  def createReset(hasTypography: Typography): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createReset")(hasTypography.asInstanceOf[js.Any]).asInstanceOf[Return]
+  inline def createReset(hasTypography: Typography): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createReset")(hasTypography.asInstanceOf[js.Any]).asInstanceOf[Return]
   
-  @scala.inline
-  def css(args: Interpolation[Unit]*): SerializedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[js.Any]).asInstanceOf[SerializedStyles]
-  @scala.inline
-  def css(template: TemplateStringsArray, args: Interpolation[Unit]*): SerializedStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("css")(template.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SerializedStyles]
+  inline def css(args: Interpolation[Unit]*): SerializedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[js.Any]).asInstanceOf[SerializedStyles]
+  inline def css(template: TemplateStringsArray, args: Interpolation[Unit]*): SerializedStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("css")(template.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SerializedStyles]
   
-  @scala.inline
-  def darken(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("darken")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def darken(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("darken")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def ensure(input: ThemeVars): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("ensure")(input.asInstanceOf[js.Any]).asInstanceOf[Theme]
+  inline def ensure(input: ThemeVars): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("ensure")(input.asInstanceOf[js.Any]).asInstanceOf[Theme]
   
   @JSImport("@storybook/theming", "ignoreSsrWarning")
   @js.native
   val ignoreSsrWarning: /* "/ * emotion-disable-server-rendering-unsafe-selector-warning-please-do-not-use-this-the-warning-exists-for-a-reason * /" */ String = js.native
   
-  @scala.inline
-  def isPropValid(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPropValid")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPropValid(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPropValid")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def jsx(
+  inline def jsx(
     `type`: input,
     props: InputHTMLAttributes[HTMLInputElement] & ClassAttributes[HTMLInputElement],
     children: ReactNode*
   ): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
-  @scala.inline
-  def jsx(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
-  @scala.inline
-  def jsx(`type`: input, props: Unit, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
-  @scala.inline
-  def jsx[P /* <: js.Object */](`type`: String, props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  @scala.inline
-  def jsx[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  @scala.inline
-  def jsx[P /* <: js.Object */](`type`: String, props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  @scala.inline
-  def jsx[P /* <: js.Object */](
+  inline def jsx(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+  inline def jsx(`type`: input, props: Unit, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+  inline def jsx[P /* <: js.Object */](`type`: String, props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def jsx[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def jsx[P /* <: js.Object */](`type`: String, props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def jsx[P /* <: js.Object */](
     `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
     props: (ClassAttributes[ClassicComponent[P, ComponentState]]) & P,
     children: ReactNode*
   ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
-  @scala.inline
-  def jsx[P /* <: js.Object */](
+  inline def jsx[P /* <: js.Object */](
     `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
     props: Null,
     children: ReactNode*
   ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
-  @scala.inline
-  def jsx[P /* <: js.Object */](
+  inline def jsx[P /* <: js.Object */](
     `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
     props: Unit,
     children: ReactNode*
   ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
-  @scala.inline
-  def jsx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  @scala.inline
-  def jsx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  @scala.inline
-  def jsx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  @scala.inline
-  def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
-  @scala.inline
-  def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
-  @scala.inline
-  def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
-  @scala.inline
-  def jsx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+  inline def jsx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def jsx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def jsx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+  inline def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+  inline def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+  inline def jsx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
     `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
     props: ClassAttributes[T] & P,
     children: ReactNode*
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
-  @scala.inline
-  def jsx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+  inline def jsx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
     `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
     props: Null,
     children: ReactNode*
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
-  @scala.inline
-  def jsx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+  inline def jsx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
     `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
     props: Unit,
     children: ReactNode*
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
-  @scala.inline
-  def jsx[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] & P, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
-  @scala.inline
-  def jsx[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
-  @scala.inline
-  def jsx[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Unit, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
+  inline def jsx[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] & P, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
+  inline def jsx[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
+  inline def jsx[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Unit, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
   
-  @scala.inline
-  def jsx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
-  @scala.inline
-  def jsx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Null, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
-  @scala.inline
-  def jsx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
+  inline def jsx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
+  inline def jsx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Null, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
+  inline def jsx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
   
-  @scala.inline
-  def jsx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+  inline def jsx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
     `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
     props: ClassAttributes[T] & P,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
-  @scala.inline
-  def jsx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+  inline def jsx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
     `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
     props: Null,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
-  @scala.inline
-  def jsx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+  inline def jsx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
     `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
     props: Unit,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
   
-  @scala.inline
-  def jsx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  @scala.inline
-  def jsx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  @scala.inline
-  def jsx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def jsx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def jsx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def jsx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def keyframes(args: Interpolation[Unit]*): Keyframes = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(args.asInstanceOf[js.Any]).asInstanceOf[Keyframes]
-  @scala.inline
-  def keyframes(template: TemplateStringsArray, args: Interpolation[Unit]*): Keyframes = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(template.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Keyframes]
+  inline def keyframes(args: Interpolation[Unit]*): Keyframes = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(args.asInstanceOf[js.Any]).asInstanceOf[Keyframes]
+  inline def keyframes(template: TemplateStringsArray, args: Interpolation[Unit]*): Keyframes = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(template.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Keyframes]
   
-  @scala.inline
-  def lighten(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def lighten(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@storybook/theming", "styled")
   @js.native
@@ -458,20 +375,17 @@ object mod {
     @JSImport("@storybook/theming", "themes.dark")
     @js.native
     def dark: ThemeVars = js.native
-    @scala.inline
-    def dark_=(x: ThemeVars): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dark")(x.asInstanceOf[js.Any])
+    inline def dark_=(x: ThemeVars): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dark")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "themes.light")
     @js.native
     def light: ThemeVars = js.native
-    @scala.inline
-    def light_=(x: ThemeVars): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("light")(x.asInstanceOf[js.Any])
+    inline def light_=(x: ThemeVars): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("light")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "themes.normal")
     @js.native
     def normal: ThemeVars = js.native
-    @scala.inline
-    def normal_=(x: ThemeVars): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal")(x.asInstanceOf[js.Any])
+    inline def normal_=(x: ThemeVars): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal")(x.asInstanceOf[js.Any])
   }
   
   object typography {
@@ -483,24 +397,20 @@ object mod {
     @JSImport("@storybook/theming", "typography.fonts")
     @js.native
     def fonts: Base = js.native
-    @scala.inline
-    def fonts_=(x: Base): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fonts")(x.asInstanceOf[js.Any])
+    inline def fonts_=(x: Base): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fonts")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "typography.size")
     @js.native
     def size: Code = js.native
-    @scala.inline
-    def size_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
+    inline def size_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/theming", "typography.weight")
     @js.native
     def weight: Black = js.native
-    @scala.inline
-    def weight_=(x: Black): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("weight")(x.asInstanceOf[js.Any])
+    inline def weight_=(x: Black): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("weight")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def withEmotionCache[Props, RefType](
+  inline def withEmotionCache[Props, RefType](
     func: js.Function3[/* props */ Props, /* context */ EmotionCache, /* ref */ Ref[RefType], ReactNode]
   ): SFC[Props & ClassAttributes[RefType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withEmotionCache")(func.asInstanceOf[js.Any]).asInstanceOf[SFC[Props & ClassAttributes[RefType]]]
   
@@ -513,26 +423,20 @@ object mod {
     }
     object DOMAttributes {
       
-      @scala.inline
-      def apply[T](): typings.storybookTheming.mod.reactAugmentingMod.DOMAttributes[T] = {
+      inline def apply[T](): typings.storybookTheming.mod.reactAugmentingMod.DOMAttributes[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.storybookTheming.mod.reactAugmentingMod.DOMAttributes[T]]
       }
       
-      @scala.inline
-      implicit class DOMAttributesMutableBuilder[Self <: typings.storybookTheming.mod.reactAugmentingMod.DOMAttributes[?], T] (val x: Self & typings.storybookTheming.mod.reactAugmentingMod.DOMAttributes[T]) extends AnyVal {
+      extension [Self <: typings.storybookTheming.mod.reactAugmentingMod.DOMAttributes[?], T](x: Self & typings.storybookTheming.mod.reactAugmentingMod.DOMAttributes[T]) {
         
-        @scala.inline
-        def setCss(value: InterpolationWithTheme[js.Any]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+        inline def setCss(value: InterpolationWithTheme[js.Any]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCssFunction1(value: js.Any => Interpolation[Unit]): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
+        inline def setCssFunction1(value: js.Any => Interpolation[Unit]): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCssNull: Self = StObject.set(x, "css", null)
+        inline def setCssNull: Self = StObject.set(x, "css", null)
         
-        @scala.inline
-        def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+        inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       }
     }
   }

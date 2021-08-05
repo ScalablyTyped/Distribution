@@ -15,19 +15,15 @@ trait ReaderRootArgument
 }
 object ReaderRootArgument {
   
-  @scala.inline
-  def apply(kind: String, name: String): ReaderRootArgument = {
+  inline def apply(kind: String, name: String): ReaderRootArgument = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderRootArgument]
   }
   
-  @scala.inline
-  implicit class ReaderRootArgumentMutableBuilder[Self <: ReaderRootArgument] (val x: Self) extends AnyVal {
+  extension [Self <: ReaderRootArgument](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

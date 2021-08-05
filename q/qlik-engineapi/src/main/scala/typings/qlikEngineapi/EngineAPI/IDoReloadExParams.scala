@@ -36,31 +36,23 @@ trait IDoReloadExParams extends StObject {
 }
 object IDoReloadExParams {
   
-  @scala.inline
-  def apply(): IDoReloadExParams = {
+  inline def apply(): IDoReloadExParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDoReloadExParams]
   }
   
-  @scala.inline
-  implicit class IDoReloadExParamsMutableBuilder[Self <: IDoReloadExParams] (val x: Self) extends AnyVal {
+  extension [Self <: IDoReloadExParams](x: Self) {
     
-    @scala.inline
-    def setQDebug(value: Boolean): Self = StObject.set(x, "qDebug", value.asInstanceOf[js.Any])
+    inline def setQDebug(value: Boolean): Self = StObject.set(x, "qDebug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDebugUndefined: Self = StObject.set(x, "qDebug", js.undefined)
+    inline def setQDebugUndefined: Self = StObject.set(x, "qDebug", js.undefined)
     
-    @scala.inline
-    def setQMode(value: Double): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
+    inline def setQMode(value: Double): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQModeUndefined: Self = StObject.set(x, "qMode", js.undefined)
+    inline def setQModeUndefined: Self = StObject.set(x, "qMode", js.undefined)
     
-    @scala.inline
-    def setQPartial(value: Boolean): Self = StObject.set(x, "qPartial", value.asInstanceOf[js.Any])
+    inline def setQPartial(value: Boolean): Self = StObject.set(x, "qPartial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPartialUndefined: Self = StObject.set(x, "qPartial", js.undefined)
+    inline def setQPartialUndefined: Self = StObject.set(x, "qPartial", js.undefined)
   }
 }

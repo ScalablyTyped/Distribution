@@ -87,14 +87,11 @@ object Uri {
     *
     * @param path A file system path (see `Uri#fsPath`)
     */
-  @scala.inline
-  def file(path: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  inline def file(path: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[Uri]
   
-  @scala.inline
-  def from(components: Fragment): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(components.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  inline def from(components: Fragment): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(components.asInstanceOf[js.Any]).asInstanceOf[Uri]
   
-  @scala.inline
-  def isUri(thing: js.Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUri")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.Uri */ Boolean]
+  inline def isUri(thing: js.Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUri")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.Uri */ Boolean]
   
   /**
     * Join a Uri path with path fragments and normalizes the resulting path.
@@ -103,8 +100,7 @@ object Uri {
     * @param pathFragment The path fragment to add to the Uri path.
     * @returns The resulting Uri.
     */
-  @scala.inline
-  def joinPath(uri: Uri, pathFragment: String*): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(uri.asInstanceOf[js.Any], pathFragment.asInstanceOf[js.Any])).asInstanceOf[Uri]
+  inline def joinPath(uri: Uri, pathFragment: String*): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(uri.asInstanceOf[js.Any], pathFragment.asInstanceOf[js.Any])).asInstanceOf[Uri]
   
   /**
     * Creates a new Uri from a string, e.g. `http://www.msft.com/some/path`,
@@ -112,20 +108,13 @@ object Uri {
     *
     * @param value A string which represents an Uri (see `Uri#toString`).
     */
-  @scala.inline
-  def parse(value: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Uri]
-  @scala.inline
-  def parse(value: String, _strict: Boolean): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any], _strict.asInstanceOf[js.Any])).asInstanceOf[Uri]
+  inline def parse(value: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  inline def parse(value: String, _strict: Boolean): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any], _strict.asInstanceOf[js.Any])).asInstanceOf[Uri]
   
-  @scala.inline
-  def revive(): js.UndefOr[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")().asInstanceOf[js.UndefOr[Uri]]
-  @scala.inline
-  def revive(data: Uri): js.UndefOr[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Uri]]
-  @scala.inline
-  def revive(data: UriComponents): js.UndefOr[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Uri]]
+  inline def revive(): js.UndefOr[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")().asInstanceOf[js.UndefOr[Uri]]
+  inline def revive(data: Uri): js.UndefOr[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Uri]]
+  inline def revive(data: UriComponents): js.UndefOr[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Uri]]
   
-  @scala.inline
-  def revive_Uri(data: Uri): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[Uri]
-  @scala.inline
-  def revive_Uri(data: UriComponents): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  inline def revive_Uri(data: Uri): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  inline def revive_Uri(data: UriComponents): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[Uri]
 }

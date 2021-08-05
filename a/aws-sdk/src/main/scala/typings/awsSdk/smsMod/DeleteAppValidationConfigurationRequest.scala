@@ -13,16 +13,13 @@ trait DeleteAppValidationConfigurationRequest extends StObject {
 }
 object DeleteAppValidationConfigurationRequest {
   
-  @scala.inline
-  def apply(appId: AppIdWithValidation): DeleteAppValidationConfigurationRequest = {
+  inline def apply(appId: AppIdWithValidation): DeleteAppValidationConfigurationRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAppValidationConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAppValidationConfigurationRequestMutableBuilder[Self <: DeleteAppValidationConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAppValidationConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppIdWithValidation): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppIdWithValidation): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
   }
 }

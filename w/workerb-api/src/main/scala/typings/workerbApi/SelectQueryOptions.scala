@@ -26,22 +26,17 @@ trait SelectQueryOptions
 }
 object SelectQueryOptions {
   
-  @scala.inline
-  def apply(selectBy: String): SelectQueryOptions = {
+  inline def apply(selectBy: String): SelectQueryOptions = {
     val __obj = js.Dynamic.literal(selectBy = selectBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectQueryOptions]
   }
   
-  @scala.inline
-  implicit class SelectQueryOptionsMutableBuilder[Self <: SelectQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SelectQueryOptions](x: Self) {
     
-    @scala.inline
-    def setMethod(value: clickQueryMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: clickQueryMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setSelectBy(value: String): Self = StObject.set(x, "selectBy", value.asInstanceOf[js.Any])
+    inline def setSelectBy(value: String): Self = StObject.set(x, "selectBy", value.asInstanceOf[js.Any])
   }
 }

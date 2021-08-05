@@ -16,8 +16,7 @@ trait IAccessControlListComponentContainer extends StObject {
 }
 object IAccessControlListComponentContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     At: IAccessControlListComponentKey => IAccessControlListComponent,
     Count: Double,
     GetKeys: () => IAccessControlListComponentKeys,
@@ -27,19 +26,14 @@ object IAccessControlListComponentContainer {
     __obj.asInstanceOf[IAccessControlListComponentContainer]
   }
   
-  @scala.inline
-  implicit class IAccessControlListComponentContainerMutableBuilder[Self <: IAccessControlListComponentContainer] (val x: Self) extends AnyVal {
+  extension [Self <: IAccessControlListComponentContainer](x: Self) {
     
-    @scala.inline
-    def setAt(value: IAccessControlListComponentKey => IAccessControlListComponent): Self = StObject.set(x, "At", js.Any.fromFunction1(value))
+    inline def setAt(value: IAccessControlListComponentKey => IAccessControlListComponent): Self = StObject.set(x, "At", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetKeys(value: () => IAccessControlListComponentKeys): Self = StObject.set(x, "GetKeys", js.Any.fromFunction0(value))
+    inline def setGetKeys(value: () => IAccessControlListComponentKeys): Self = StObject.set(x, "GetKeys", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasKey(value: IAccessControlListComponentKey => Boolean): Self = StObject.set(x, "HasKey", js.Any.fromFunction1(value))
+    inline def setHasKey(value: IAccessControlListComponentKey => Boolean): Self = StObject.set(x, "HasKey", js.Any.fromFunction1(value))
   }
 }

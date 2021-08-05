@@ -10,8 +10,7 @@ trait CopyObjectOutput
      with typings.awsSdkClientS3Browser.typesCopyObjectOutputMod.CopyObjectOutput
 object CopyObjectOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): CopyObjectOutput = {
+  inline def apply($metadata: ResponseMetadata): CopyObjectOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyObjectOutput]
   }

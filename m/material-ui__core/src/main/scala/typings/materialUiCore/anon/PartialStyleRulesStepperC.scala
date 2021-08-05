@@ -18,37 +18,27 @@ trait PartialStyleRulesStepperC extends StObject {
 }
 object PartialStyleRulesStepperC {
   
-  @scala.inline
-  def apply(): PartialStyleRulesStepperC = {
+  inline def apply(): PartialStyleRulesStepperC = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesStepperC]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesStepperCMutableBuilder[Self <: PartialStyleRulesStepperC] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesStepperC](x: Self) {
     
-    @scala.inline
-    def setAlternativeLabel(value: CSSProperties): Self = StObject.set(x, "alternativeLabel", value.asInstanceOf[js.Any])
+    inline def setAlternativeLabel(value: CSSProperties): Self = StObject.set(x, "alternativeLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativeLabelUndefined: Self = StObject.set(x, "alternativeLabel", js.undefined)
+    inline def setAlternativeLabelUndefined: Self = StObject.set(x, "alternativeLabel", js.undefined)
     
-    @scala.inline
-    def setHorizontal(value: CSSProperties): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: CSSProperties): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setVertical(value: CSSProperties): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: CSSProperties): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

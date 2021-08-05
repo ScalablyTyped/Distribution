@@ -12,19 +12,15 @@ trait OnValueChange extends StObject {
 }
 object OnValueChange {
   
-  @scala.inline
-  def apply(onValueChange: () => Unit, prefixCls: String): OnValueChange = {
+  inline def apply(onValueChange: () => Unit, prefixCls: String): OnValueChange = {
     val __obj = js.Dynamic.literal(onValueChange = js.Any.fromFunction0(onValueChange), prefixCls = prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnValueChange]
   }
   
-  @scala.inline
-  implicit class OnValueChangeMutableBuilder[Self <: OnValueChange] (val x: Self) extends AnyVal {
+  extension [Self <: OnValueChange](x: Self) {
     
-    @scala.inline
-    def setOnValueChange(value: () => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction0(value))
+    inline def setOnValueChange(value: () => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
   }
 }

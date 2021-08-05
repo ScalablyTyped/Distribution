@@ -11,8 +11,7 @@ trait RightTappedEventArgs
      with IRightTappedEventArgs
 object RightTappedEventArgs {
   
-  @scala.inline
-  def apply(pointerDeviceType: PointerDeviceType, position: Point): RightTappedEventArgs = {
+  inline def apply(pointerDeviceType: PointerDeviceType, position: Point): RightTappedEventArgs = {
     val __obj = js.Dynamic.literal(pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[RightTappedEventArgs]
   }

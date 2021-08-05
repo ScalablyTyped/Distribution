@@ -17,31 +17,23 @@ trait LabelValue extends StObject {
 }
 object LabelValue {
   
-  @scala.inline
-  def apply(): LabelValue = {
+  inline def apply(): LabelValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelValue]
   }
   
-  @scala.inline
-  implicit class LabelValueMutableBuilder[Self <: LabelValue] (val x: Self) extends AnyVal {
+  extension [Self <: LabelValue](x: Self) {
     
-    @scala.inline
-    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
+    inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
+    inline def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
-    @scala.inline
-    def setInt64Value(value: String): Self = StObject.set(x, "int64Value", value.asInstanceOf[js.Any])
+    inline def setInt64Value(value: String): Self = StObject.set(x, "int64Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInt64ValueUndefined: Self = StObject.set(x, "int64Value", js.undefined)
+    inline def setInt64ValueUndefined: Self = StObject.set(x, "int64Value", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

@@ -16,32 +16,24 @@ object CollectionHooks {
   }
   object GlobalHookOptions {
     
-    @scala.inline
-    def apply(): GlobalHookOptions = {
+    inline def apply(): GlobalHookOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalHookOptions]
     }
     
-    @scala.inline
-    implicit class GlobalHookOptionsMutableBuilder[Self <: GlobalHookOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalHookOptions](x: Self) {
       
-      @scala.inline
-      def setAfter(value: LocalHookOptions): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: LocalHookOptions): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setAll(value: LocalHookOptions): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: LocalHookOptions): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
-      @scala.inline
-      def setBefore(value: LocalHookOptions): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: LocalHookOptions): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     }
   }
   
@@ -51,20 +43,16 @@ object CollectionHooks {
   }
   object HookOptionValue {
     
-    @scala.inline
-    def apply(): HookOptionValue = {
+    inline def apply(): HookOptionValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HookOptionValue]
     }
     
-    @scala.inline
-    implicit class HookOptionValueMutableBuilder[Self <: HookOptionValue] (val x: Self) extends AnyVal {
+    extension [Self <: HookOptionValue](x: Self) {
       
-      @scala.inline
-      def setFetchPrevious(value: Boolean): Self = StObject.set(x, "fetchPrevious", value.asInstanceOf[js.Any])
+      inline def setFetchPrevious(value: Boolean): Self = StObject.set(x, "fetchPrevious", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchPreviousUndefined: Self = StObject.set(x, "fetchPrevious", js.undefined)
+      inline def setFetchPreviousUndefined: Self = StObject.set(x, "fetchPrevious", js.undefined)
     }
   }
   
@@ -86,56 +74,40 @@ object CollectionHooks {
   }
   object LocalHookOptions {
     
-    @scala.inline
-    def apply(): LocalHookOptions = {
+    inline def apply(): LocalHookOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocalHookOptions]
     }
     
-    @scala.inline
-    implicit class LocalHookOptionsMutableBuilder[Self <: LocalHookOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LocalHookOptions](x: Self) {
       
-      @scala.inline
-      def setAll(value: HookOptionValue): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: HookOptionValue): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
-      @scala.inline
-      def setFind(value: HookOptionValue): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
+      inline def setFind(value: HookOptionValue): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindOne(value: HookOptionValue): Self = StObject.set(x, "findOne", value.asInstanceOf[js.Any])
+      inline def setFindOne(value: HookOptionValue): Self = StObject.set(x, "findOne", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindOneUndefined: Self = StObject.set(x, "findOne", js.undefined)
+      inline def setFindOneUndefined: Self = StObject.set(x, "findOne", js.undefined)
       
-      @scala.inline
-      def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
+      inline def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
       
-      @scala.inline
-      def setInsert(value: HookOptionValue): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+      inline def setInsert(value: HookOptionValue): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+      inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
       
-      @scala.inline
-      def setRemove(value: HookOptionValue): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: HookOptionValue): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: HookOptionValue): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: HookOptionValue): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
       
-      @scala.inline
-      def setUpsert(value: HookOptionValue): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+      inline def setUpsert(value: HookOptionValue): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+      inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
     }
   }
   
@@ -147,26 +119,20 @@ object CollectionHooks {
   }
   object ModifierOptions {
     
-    @scala.inline
-    def apply(): ModifierOptions = {
+    inline def apply(): ModifierOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModifierOptions]
     }
     
-    @scala.inline
-    implicit class ModifierOptionsMutableBuilder[Self <: ModifierOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ModifierOptions](x: Self) {
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
       
-      @scala.inline
-      def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+      inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+      inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
     }
   }
 }

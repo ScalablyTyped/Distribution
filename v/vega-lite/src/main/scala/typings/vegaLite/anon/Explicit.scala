@@ -13,22 +13,17 @@ trait Explicit extends StObject {
 }
 object Explicit {
   
-  @scala.inline
-  def apply(explicit: Boolean, value: String | js.Array[String] | SignalRef): Explicit = {
+  inline def apply(explicit: Boolean, value: String | js.Array[String] | SignalRef): Explicit = {
     val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Explicit]
   }
   
-  @scala.inline
-  implicit class ExplicitMutableBuilder[Self <: Explicit] (val x: Self) extends AnyVal {
+  extension [Self <: Explicit](x: Self) {
     
-    @scala.inline
-    def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
+    inline def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String | js.Array[String] | SignalRef): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | js.Array[String] | SignalRef): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

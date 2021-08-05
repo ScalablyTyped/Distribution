@@ -23,37 +23,27 @@ trait UpdateAppResponse extends StObject {
 }
 object UpdateAppResponse {
   
-  @scala.inline
-  def apply(): UpdateAppResponse = {
+  inline def apply(): UpdateAppResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateAppResponse]
   }
   
-  @scala.inline
-  implicit class UpdateAppResponseMutableBuilder[Self <: UpdateAppResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAppResponse](x: Self) {
     
-    @scala.inline
-    def setAppSummary(value: AppSummary): Self = StObject.set(x, "appSummary", value.asInstanceOf[js.Any])
+    inline def setAppSummary(value: AppSummary): Self = StObject.set(x, "appSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppSummaryUndefined: Self = StObject.set(x, "appSummary", js.undefined)
+    inline def setAppSummaryUndefined: Self = StObject.set(x, "appSummary", js.undefined)
     
-    @scala.inline
-    def setServerGroups(value: ServerGroups): Self = StObject.set(x, "serverGroups", value.asInstanceOf[js.Any])
+    inline def setServerGroups(value: ServerGroups): Self = StObject.set(x, "serverGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerGroupsUndefined: Self = StObject.set(x, "serverGroups", js.undefined)
+    inline def setServerGroupsUndefined: Self = StObject.set(x, "serverGroups", js.undefined)
     
-    @scala.inline
-    def setServerGroupsVarargs(value: ServerGroup*): Self = StObject.set(x, "serverGroups", js.Array(value :_*))
+    inline def setServerGroupsVarargs(value: ServerGroup*): Self = StObject.set(x, "serverGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

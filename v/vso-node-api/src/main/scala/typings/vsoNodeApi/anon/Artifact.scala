@@ -16,8 +16,7 @@ trait Artifact extends StObject {
 }
 object Artifact {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     artifact: scala.Double,
     environmentState: scala.Double,
     event: scala.Double,
@@ -27,19 +26,14 @@ object Artifact {
     __obj.asInstanceOf[Artifact]
   }
   
-  @scala.inline
-  implicit class ArtifactMutableBuilder[Self <: Artifact] (val x: Self) extends AnyVal {
+  extension [Self <: Artifact](x: Self) {
     
-    @scala.inline
-    def setArtifact(value: scala.Double): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
+    inline def setArtifact(value: scala.Double): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentState(value: scala.Double): Self = StObject.set(x, "environmentState", value.asInstanceOf[js.Any])
+    inline def setEnvironmentState(value: scala.Double): Self = StObject.set(x, "environmentState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: scala.Double): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: scala.Double): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+    inline def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
   }
 }

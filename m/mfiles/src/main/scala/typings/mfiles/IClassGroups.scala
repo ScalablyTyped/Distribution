@@ -14,22 +14,17 @@ trait IClassGroups extends StObject {
 }
 object IClassGroups {
   
-  @scala.inline
-  def apply(Clone: () => IClassGroups, Count: Double, Item: Double => IClassGroup): IClassGroups = {
+  inline def apply(Clone: () => IClassGroups, Count: Double, Item: Double => IClassGroup): IClassGroups = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[IClassGroups]
   }
   
-  @scala.inline
-  implicit class IClassGroupsMutableBuilder[Self <: IClassGroups] (val x: Self) extends AnyVal {
+  extension [Self <: IClassGroups](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IClassGroups): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IClassGroups): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IClassGroup): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IClassGroup): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

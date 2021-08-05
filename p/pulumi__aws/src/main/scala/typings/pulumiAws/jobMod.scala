@@ -134,21 +134,16 @@ object jobMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Job]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Job]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: JobState): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Job]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: JobState, opts: CustomResourceOptions): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Job]
+    inline def get(name: String, id: Input[ID]): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Job]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Job]
+    inline def get(name: String, id: Input[ID], state: JobState): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Job]
+    inline def get(name: String, id: Input[ID], state: JobState, opts: CustomResourceOptions): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Job]
     
     /**
       * Returns true if the given object is an instance of Job.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/job.Job */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/job.Job */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/job.Job */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/job.Job */ Boolean]
   }
   
   trait JobArgs extends StObject {
@@ -240,113 +235,78 @@ object jobMod {
   }
   object JobArgs {
     
-    @scala.inline
-    def apply(command: Input[typings.pulumiAws.inputMod.glue.JobCommand], roleArn: Input[String]): JobArgs = {
+    inline def apply(command: Input[typings.pulumiAws.inputMod.glue.JobCommand], roleArn: Input[String]): JobArgs = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[JobArgs]
     }
     
-    @scala.inline
-    implicit class JobArgsMutableBuilder[Self <: JobArgs] (val x: Self) extends AnyVal {
+    extension [Self <: JobArgs](x: Self) {
       
-      @scala.inline
-      def setCommand(value: Input[typings.pulumiAws.inputMod.glue.JobCommand]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: Input[typings.pulumiAws.inputMod.glue.JobCommand]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnections(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+      inline def setConnections(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
+      inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
       
-      @scala.inline
-      def setConnectionsVarargs(value: Input[String]*): Self = StObject.set(x, "connections", js.Array(value :_*))
+      inline def setConnectionsVarargs(value: Input[String]*): Self = StObject.set(x, "connections", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultArguments(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "defaultArguments", value.asInstanceOf[js.Any])
+      inline def setDefaultArguments(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "defaultArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultArgumentsUndefined: Self = StObject.set(x, "defaultArguments", js.undefined)
+      inline def setDefaultArgumentsUndefined: Self = StObject.set(x, "defaultArguments", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExecutionProperty(value: Input[typings.pulumiAws.inputMod.glue.JobExecutionProperty]): Self = StObject.set(x, "executionProperty", value.asInstanceOf[js.Any])
+      inline def setExecutionProperty(value: Input[typings.pulumiAws.inputMod.glue.JobExecutionProperty]): Self = StObject.set(x, "executionProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionPropertyUndefined: Self = StObject.set(x, "executionProperty", js.undefined)
+      inline def setExecutionPropertyUndefined: Self = StObject.set(x, "executionProperty", js.undefined)
       
-      @scala.inline
-      def setGlueVersion(value: Input[String]): Self = StObject.set(x, "glueVersion", value.asInstanceOf[js.Any])
+      inline def setGlueVersion(value: Input[String]): Self = StObject.set(x, "glueVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlueVersionUndefined: Self = StObject.set(x, "glueVersion", js.undefined)
+      inline def setGlueVersionUndefined: Self = StObject.set(x, "glueVersion", js.undefined)
       
-      @scala.inline
-      def setMaxCapacity(value: Input[Double]): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
+      inline def setMaxCapacity(value: Input[Double]): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCapacityUndefined: Self = StObject.set(x, "maxCapacity", js.undefined)
+      inline def setMaxCapacityUndefined: Self = StObject.set(x, "maxCapacity", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Input[Double]): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Input[Double]): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNonOverridableArguments(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "nonOverridableArguments", value.asInstanceOf[js.Any])
+      inline def setNonOverridableArguments(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "nonOverridableArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonOverridableArgumentsUndefined: Self = StObject.set(x, "nonOverridableArguments", js.undefined)
+      inline def setNonOverridableArgumentsUndefined: Self = StObject.set(x, "nonOverridableArguments", js.undefined)
       
-      @scala.inline
-      def setNotificationProperty(value: Input[typings.pulumiAws.inputMod.glue.JobNotificationProperty]): Self = StObject.set(x, "notificationProperty", value.asInstanceOf[js.Any])
+      inline def setNotificationProperty(value: Input[typings.pulumiAws.inputMod.glue.JobNotificationProperty]): Self = StObject.set(x, "notificationProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationPropertyUndefined: Self = StObject.set(x, "notificationProperty", js.undefined)
+      inline def setNotificationPropertyUndefined: Self = StObject.set(x, "notificationProperty", js.undefined)
       
-      @scala.inline
-      def setNumberOfWorkers(value: Input[Double]): Self = StObject.set(x, "numberOfWorkers", value.asInstanceOf[js.Any])
+      inline def setNumberOfWorkers(value: Input[Double]): Self = StObject.set(x, "numberOfWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfWorkersUndefined: Self = StObject.set(x, "numberOfWorkers", js.undefined)
+      inline def setNumberOfWorkersUndefined: Self = StObject.set(x, "numberOfWorkers", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityConfiguration(value: Input[String]): Self = StObject.set(x, "securityConfiguration", value.asInstanceOf[js.Any])
+      inline def setSecurityConfiguration(value: Input[String]): Self = StObject.set(x, "securityConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityConfigurationUndefined: Self = StObject.set(x, "securityConfiguration", js.undefined)
+      inline def setSecurityConfigurationUndefined: Self = StObject.set(x, "securityConfiguration", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWorkerType(value: Input[String]): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
+      inline def setWorkerType(value: Input[String]): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
+      inline def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
     }
   }
   
@@ -444,125 +404,86 @@ object jobMod {
   }
   object JobState {
     
-    @scala.inline
-    def apply(): JobState = {
+    inline def apply(): JobState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JobState]
     }
     
-    @scala.inline
-    implicit class JobStateMutableBuilder[Self <: JobState] (val x: Self) extends AnyVal {
+    extension [Self <: JobState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCommand(value: Input[typings.pulumiAws.inputMod.glue.JobCommand]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: Input[typings.pulumiAws.inputMod.glue.JobCommand]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+      inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
       
-      @scala.inline
-      def setConnections(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+      inline def setConnections(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
+      inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
       
-      @scala.inline
-      def setConnectionsVarargs(value: Input[String]*): Self = StObject.set(x, "connections", js.Array(value :_*))
+      inline def setConnectionsVarargs(value: Input[String]*): Self = StObject.set(x, "connections", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultArguments(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "defaultArguments", value.asInstanceOf[js.Any])
+      inline def setDefaultArguments(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "defaultArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultArgumentsUndefined: Self = StObject.set(x, "defaultArguments", js.undefined)
+      inline def setDefaultArgumentsUndefined: Self = StObject.set(x, "defaultArguments", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExecutionProperty(value: Input[typings.pulumiAws.inputMod.glue.JobExecutionProperty]): Self = StObject.set(x, "executionProperty", value.asInstanceOf[js.Any])
+      inline def setExecutionProperty(value: Input[typings.pulumiAws.inputMod.glue.JobExecutionProperty]): Self = StObject.set(x, "executionProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionPropertyUndefined: Self = StObject.set(x, "executionProperty", js.undefined)
+      inline def setExecutionPropertyUndefined: Self = StObject.set(x, "executionProperty", js.undefined)
       
-      @scala.inline
-      def setGlueVersion(value: Input[String]): Self = StObject.set(x, "glueVersion", value.asInstanceOf[js.Any])
+      inline def setGlueVersion(value: Input[String]): Self = StObject.set(x, "glueVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlueVersionUndefined: Self = StObject.set(x, "glueVersion", js.undefined)
+      inline def setGlueVersionUndefined: Self = StObject.set(x, "glueVersion", js.undefined)
       
-      @scala.inline
-      def setMaxCapacity(value: Input[Double]): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
+      inline def setMaxCapacity(value: Input[Double]): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCapacityUndefined: Self = StObject.set(x, "maxCapacity", js.undefined)
+      inline def setMaxCapacityUndefined: Self = StObject.set(x, "maxCapacity", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Input[Double]): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Input[Double]): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNonOverridableArguments(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "nonOverridableArguments", value.asInstanceOf[js.Any])
+      inline def setNonOverridableArguments(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "nonOverridableArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonOverridableArgumentsUndefined: Self = StObject.set(x, "nonOverridableArguments", js.undefined)
+      inline def setNonOverridableArgumentsUndefined: Self = StObject.set(x, "nonOverridableArguments", js.undefined)
       
-      @scala.inline
-      def setNotificationProperty(value: Input[typings.pulumiAws.inputMod.glue.JobNotificationProperty]): Self = StObject.set(x, "notificationProperty", value.asInstanceOf[js.Any])
+      inline def setNotificationProperty(value: Input[typings.pulumiAws.inputMod.glue.JobNotificationProperty]): Self = StObject.set(x, "notificationProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationPropertyUndefined: Self = StObject.set(x, "notificationProperty", js.undefined)
+      inline def setNotificationPropertyUndefined: Self = StObject.set(x, "notificationProperty", js.undefined)
       
-      @scala.inline
-      def setNumberOfWorkers(value: Input[Double]): Self = StObject.set(x, "numberOfWorkers", value.asInstanceOf[js.Any])
+      inline def setNumberOfWorkers(value: Input[Double]): Self = StObject.set(x, "numberOfWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfWorkersUndefined: Self = StObject.set(x, "numberOfWorkers", js.undefined)
+      inline def setNumberOfWorkersUndefined: Self = StObject.set(x, "numberOfWorkers", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
       
-      @scala.inline
-      def setSecurityConfiguration(value: Input[String]): Self = StObject.set(x, "securityConfiguration", value.asInstanceOf[js.Any])
+      inline def setSecurityConfiguration(value: Input[String]): Self = StObject.set(x, "securityConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityConfigurationUndefined: Self = StObject.set(x, "securityConfiguration", js.undefined)
+      inline def setSecurityConfigurationUndefined: Self = StObject.set(x, "securityConfiguration", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWorkerType(value: Input[String]): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
+      inline def setWorkerType(value: Input[String]): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
+      inline def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
     }
   }
 }

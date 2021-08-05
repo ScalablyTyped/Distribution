@@ -22,43 +22,31 @@ trait CreateReadStreamOptions extends StObject {
 }
 object CreateReadStreamOptions {
   
-  @scala.inline
-  def apply(): CreateReadStreamOptions = {
+  inline def apply(): CreateReadStreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateReadStreamOptions]
   }
   
-  @scala.inline
-  implicit class CreateReadStreamOptionsMutableBuilder[Self <: CreateReadStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReadStreamOptions](x: Self) {
     
-    @scala.inline
-    def setDecompress(value: Boolean): Self = StObject.set(x, "decompress", value.asInstanceOf[js.Any])
+    inline def setDecompress(value: Boolean): Self = StObject.set(x, "decompress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecompressUndefined: Self = StObject.set(x, "decompress", js.undefined)
+    inline def setDecompressUndefined: Self = StObject.set(x, "decompress", js.undefined)
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     
-    @scala.inline
-    def setValidation(value: md5 | crc32c | `false` | `true`): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: md5 | crc32c | `false` | `true`): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
   }
 }

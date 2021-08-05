@@ -14,20 +14,16 @@ object anon {
   }
   object ClearAll {
     
-    @scala.inline
-    def apply(clearAll: () => Unit, getAll: () => js.Array[js.Object]): ClearAll = {
+    inline def apply(clearAll: () => Unit, getAll: () => js.Array[js.Object]): ClearAll = {
       val __obj = js.Dynamic.literal(clearAll = js.Any.fromFunction0(clearAll), getAll = js.Any.fromFunction0(getAll))
       __obj.asInstanceOf[ClearAll]
     }
     
-    @scala.inline
-    implicit class ClearAllMutableBuilder[Self <: ClearAll] (val x: Self) extends AnyVal {
+    extension [Self <: ClearAll](x: Self) {
       
-      @scala.inline
-      def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
+      inline def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAll(value: () => js.Array[js.Object]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
+      inline def setGetAll(value: () => js.Array[js.Object]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
     }
   }
 }

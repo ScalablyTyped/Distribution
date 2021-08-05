@@ -104,8 +104,7 @@ object angularScenario {
   }
   object Expect {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       not: () => CustomMatchers,
       toBe: js.Any => Unit,
       toBeDefined: () => Unit,
@@ -122,11 +121,9 @@ object angularScenario {
       __obj.asInstanceOf[Expect]
     }
     
-    @scala.inline
-    implicit class ExpectMutableBuilder[Self <: Expect] (val x: Self) extends AnyVal {
+    extension [Self <: Expect](x: Self) {
       
-      @scala.inline
-      def setNot(value: () => CustomMatchers): Self = StObject.set(x, "not", js.Any.fromFunction0(value))
+      inline def setNot(value: () => CustomMatchers): Self = StObject.set(x, "not", js.Any.fromFunction0(value))
     }
   }
   
@@ -144,27 +141,21 @@ object angularScenario {
   }
   object Input {
     
-    @scala.inline
-    def apply(check: () => js.Any, enter: js.Any => js.Any, select: js.Any => js.Any, `val`: () => Future): Input = {
+    inline def apply(check: () => js.Any, enter: js.Any => js.Any, select: js.Any => js.Any, `val`: () => Future): Input = {
       val __obj = js.Dynamic.literal(check = js.Any.fromFunction0(check), enter = js.Any.fromFunction1(enter), select = js.Any.fromFunction1(select))
       __obj.updateDynamic("val")(js.Any.fromFunction0(`val`))
       __obj.asInstanceOf[Input]
     }
     
-    @scala.inline
-    implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
+    extension [Self <: Input](x: Self) {
       
-      @scala.inline
-      def setCheck(value: () => js.Any): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
+      inline def setCheck(value: () => js.Any): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnter(value: js.Any => js.Any): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
+      inline def setEnter(value: js.Any => js.Any): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelect(value: js.Any => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: js.Any => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVal(value: () => Future): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
+      inline def setVal(value: () => Future): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
     }
   }
   
@@ -192,8 +183,7 @@ object angularScenario {
   }
   object Matchers {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       toBe: js.Any => Unit,
       toBeDefined: () => Unit,
       toBeFalsy: () => Unit,
@@ -209,38 +199,27 @@ object angularScenario {
       __obj.asInstanceOf[Matchers]
     }
     
-    @scala.inline
-    implicit class MatchersMutableBuilder[Self <: Matchers] (val x: Self) extends AnyVal {
+    extension [Self <: Matchers](x: Self) {
       
-      @scala.inline
-      def setToBe(value: js.Any => Unit): Self = StObject.set(x, "toBe", js.Any.fromFunction1(value))
+      inline def setToBe(value: js.Any => Unit): Self = StObject.set(x, "toBe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToBeDefined(value: () => Unit): Self = StObject.set(x, "toBeDefined", js.Any.fromFunction0(value))
+      inline def setToBeDefined(value: () => Unit): Self = StObject.set(x, "toBeDefined", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBeFalsy(value: () => Unit): Self = StObject.set(x, "toBeFalsy", js.Any.fromFunction0(value))
+      inline def setToBeFalsy(value: () => Unit): Self = StObject.set(x, "toBeFalsy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBeGreaterThan(value: js.Any => Unit): Self = StObject.set(x, "toBeGreaterThan", js.Any.fromFunction1(value))
+      inline def setToBeGreaterThan(value: js.Any => Unit): Self = StObject.set(x, "toBeGreaterThan", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToBeLessThan(value: js.Any => Unit): Self = StObject.set(x, "toBeLessThan", js.Any.fromFunction1(value))
+      inline def setToBeLessThan(value: js.Any => Unit): Self = StObject.set(x, "toBeLessThan", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToBeNull(value: () => Unit): Self = StObject.set(x, "toBeNull", js.Any.fromFunction0(value))
+      inline def setToBeNull(value: () => Unit): Self = StObject.set(x, "toBeNull", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBeTruthy(value: () => Unit): Self = StObject.set(x, "toBeTruthy", js.Any.fromFunction0(value))
+      inline def setToBeTruthy(value: () => Unit): Self = StObject.set(x, "toBeTruthy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToContain(value: js.Any => Unit): Self = StObject.set(x, "toContain", js.Any.fromFunction1(value))
+      inline def setToContain(value: js.Any => Unit): Self = StObject.set(x, "toContain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToEqual(value: js.Any => Unit): Self = StObject.set(x, "toEqual", js.Any.fromFunction1(value))
+      inline def setToEqual(value: js.Any => Unit): Self = StObject.set(x, "toEqual", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToMatch(value: js.Any => Unit): Self = StObject.set(x, "toMatch", js.Any.fromFunction1(value))
+      inline def setToMatch(value: js.Any => Unit): Self = StObject.set(x, "toMatch", js.Any.fromFunction1(value))
     }
   }
   
@@ -256,23 +235,18 @@ object angularScenario {
   }
   object Repeater {
     
-    @scala.inline
-    def apply(column: String => Future, count: () => Future, row: Double => Future): Repeater = {
+    inline def apply(column: String => Future, count: () => Future, row: Double => Future): Repeater = {
       val __obj = js.Dynamic.literal(column = js.Any.fromFunction1(column), count = js.Any.fromFunction0(count), row = js.Any.fromFunction1(row))
       __obj.asInstanceOf[Repeater]
     }
     
-    @scala.inline
-    implicit class RepeaterMutableBuilder[Self <: Repeater] (val x: Self) extends AnyVal {
+    extension [Self <: Repeater](x: Self) {
       
-      @scala.inline
-      def setColumn(value: String => Future): Self = StObject.set(x, "column", js.Any.fromFunction1(value))
+      inline def setColumn(value: String => Future): Self = StObject.set(x, "column", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCount(value: () => Future): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+      inline def setCount(value: () => Future): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRow(value: Double => Future): Self = StObject.set(x, "row", js.Any.fromFunction1(value))
+      inline def setRow(value: Double => Future): Self = StObject.set(x, "row", js.Any.fromFunction1(value))
     }
   }
   
@@ -303,26 +277,20 @@ object angularScenario {
   }
   object testLocation {
     
-    @scala.inline
-    def apply(hash: () => Future, path: () => Future, search: () => Future, url: () => Future): testLocation = {
+    inline def apply(hash: () => Future, path: () => Future, search: () => Future, url: () => Future): testLocation = {
       val __obj = js.Dynamic.literal(hash = js.Any.fromFunction0(hash), path = js.Any.fromFunction0(path), search = js.Any.fromFunction0(search), url = js.Any.fromFunction0(url))
       __obj.asInstanceOf[testLocation]
     }
     
-    @scala.inline
-    implicit class testLocationMutableBuilder[Self <: testLocation] (val x: Self) extends AnyVal {
+    extension [Self <: testLocation](x: Self) {
       
-      @scala.inline
-      def setHash(value: () => Future): Self = StObject.set(x, "hash", js.Any.fromFunction0(value))
+      inline def setHash(value: () => Future): Self = StObject.set(x, "hash", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPath(value: () => Future): Self = StObject.set(x, "path", js.Any.fromFunction0(value))
+      inline def setPath(value: () => Future): Self = StObject.set(x, "path", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSearch(value: () => Future): Self = StObject.set(x, "search", js.Any.fromFunction0(value))
+      inline def setSearch(value: () => Future): Self = StObject.set(x, "search", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUrl(value: () => Future): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
+      inline def setUrl(value: () => Future): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
     }
   }
   
@@ -338,26 +306,20 @@ object angularScenario {
   }
   object testWindow {
     
-    @scala.inline
-    def apply(hash: () => Future, href: () => Future, path: () => Future, search: () => Future): testWindow = {
+    inline def apply(hash: () => Future, href: () => Future, path: () => Future, search: () => Future): testWindow = {
       val __obj = js.Dynamic.literal(hash = js.Any.fromFunction0(hash), href = js.Any.fromFunction0(href), path = js.Any.fromFunction0(path), search = js.Any.fromFunction0(search))
       __obj.asInstanceOf[testWindow]
     }
     
-    @scala.inline
-    implicit class testWindowMutableBuilder[Self <: testWindow] (val x: Self) extends AnyVal {
+    extension [Self <: testWindow](x: Self) {
       
-      @scala.inline
-      def setHash(value: () => Future): Self = StObject.set(x, "hash", js.Any.fromFunction0(value))
+      inline def setHash(value: () => Future): Self = StObject.set(x, "hash", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHref(value: () => Future): Self = StObject.set(x, "href", js.Any.fromFunction0(value))
+      inline def setHref(value: () => Future): Self = StObject.set(x, "href", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPath(value: () => Future): Self = StObject.set(x, "path", js.Any.fromFunction0(value))
+      inline def setPath(value: () => Future): Self = StObject.set(x, "path", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSearch(value: () => Future): Self = StObject.set(x, "search", js.Any.fromFunction0(value))
+      inline def setSearch(value: () => Future): Self = StObject.set(x, "search", js.Any.fromFunction0(value))
     }
   }
 }

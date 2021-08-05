@@ -13,20 +13,16 @@ trait SlotFunctionExpression
 }
 object SlotFunctionExpression {
   
-  @scala.inline
-  def apply(isSlot: Boolean, loc: SourceLocation, newline: Boolean, returns: js.Array[TemplateChildNode]): SlotFunctionExpression = {
+  inline def apply(isSlot: Boolean, loc: SourceLocation, newline: Boolean, returns: js.Array[TemplateChildNode]): SlotFunctionExpression = {
     val __obj = js.Dynamic.literal(isSlot = isSlot.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], newline = newline.asInstanceOf[js.Any], returns = returns.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(18)
     __obj.asInstanceOf[SlotFunctionExpression]
   }
   
-  @scala.inline
-  implicit class SlotFunctionExpressionMutableBuilder[Self <: SlotFunctionExpression] (val x: Self) extends AnyVal {
+  extension [Self <: SlotFunctionExpression](x: Self) {
     
-    @scala.inline
-    def setReturns(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
+    inline def setReturns(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnsVarargs(value: TemplateChildNode*): Self = StObject.set(x, "returns", js.Array(value :_*))
+    inline def setReturnsVarargs(value: TemplateChildNode*): Self = StObject.set(x, "returns", js.Array(value :_*))
   }
 }

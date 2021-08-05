@@ -17,16 +17,13 @@ trait DelegateType
 }
 object DelegateType {
   
-  @scala.inline
-  def apply(delegateType: String): DelegateType = {
+  inline def apply(delegateType: String): DelegateType = {
     val __obj = js.Dynamic.literal(delegateType = delegateType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DelegateType]
   }
   
-  @scala.inline
-  implicit class DelegateTypeMutableBuilder[Self <: DelegateType] (val x: Self) extends AnyVal {
+  extension [Self <: DelegateType](x: Self) {
     
-    @scala.inline
-    def setDelegateType(value: String): Self = StObject.set(x, "delegateType", value.asInstanceOf[js.Any])
+    inline def setDelegateType(value: String): Self = StObject.set(x, "delegateType", value.asInstanceOf[js.Any])
   }
 }

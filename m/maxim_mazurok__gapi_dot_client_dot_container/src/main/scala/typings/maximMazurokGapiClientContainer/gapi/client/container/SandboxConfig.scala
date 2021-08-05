@@ -11,19 +11,15 @@ trait SandboxConfig extends StObject {
 }
 object SandboxConfig {
   
-  @scala.inline
-  def apply(): SandboxConfig = {
+  inline def apply(): SandboxConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SandboxConfig]
   }
   
-  @scala.inline
-  implicit class SandboxConfigMutableBuilder[Self <: SandboxConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SandboxConfig](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

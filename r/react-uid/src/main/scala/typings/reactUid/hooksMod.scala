@@ -10,11 +10,9 @@ object hooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useUID")().asInstanceOf[String]
+  inline def useUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useUID")().asInstanceOf[String]
   
-  @scala.inline
-  def useUIDSeed(): SeedGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useUIDSeed")().asInstanceOf[SeedGenerator]
+  inline def useUIDSeed(): SeedGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useUIDSeed")().asInstanceOf[SeedGenerator]
   
   type SeedGenerator = js.Function1[/* id */ js.Any, String]
 }

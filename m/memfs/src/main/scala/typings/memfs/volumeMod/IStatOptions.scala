@@ -10,19 +10,15 @@ trait IStatOptions extends StObject {
 }
 object IStatOptions {
   
-  @scala.inline
-  def apply(): IStatOptions = {
+  inline def apply(): IStatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStatOptions]
   }
   
-  @scala.inline
-  implicit class IStatOptionsMutableBuilder[Self <: IStatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IStatOptions](x: Self) {
     
-    @scala.inline
-    def setBigint(value: Boolean): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+    inline def setBigint(value: Boolean): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigintUndefined: Self = StObject.set(x, "bigint", js.undefined)
+    inline def setBigintUndefined: Self = StObject.set(x, "bigint", js.undefined)
   }
 }

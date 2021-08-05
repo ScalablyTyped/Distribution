@@ -22,34 +22,25 @@ trait TopicConfiguration extends StObject {
 }
 object TopicConfiguration {
   
-  @scala.inline
-  def apply(Events: EventList, TopicArn: TopicArn): TopicConfiguration = {
+  inline def apply(Events: EventList, TopicArn: TopicArn): TopicConfiguration = {
     val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicConfiguration]
   }
   
-  @scala.inline
-  implicit class TopicConfigurationMutableBuilder[Self <: TopicConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: TopicConfiguration](x: Self) {
     
-    @scala.inline
-    def setEvents(value: EventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: EventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsVarargs(value: Event*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "Events", js.Array(value :_*))
     
-    @scala.inline
-    def setFilter(value: NotificationConfigurationFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: NotificationConfigurationFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setId(value: NotificationId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: NotificationId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setTopicArn(value: TopicArn): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: TopicArn): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }
 }

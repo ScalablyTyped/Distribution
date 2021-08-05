@@ -14,26 +14,20 @@ object anon {
   }
   object Audio {
     
-    @scala.inline
-    def apply(): Audio = {
+    inline def apply(): Audio = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Audio]
     }
     
-    @scala.inline
-    implicit class AudioMutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
+    extension [Self <: Audio](x: Self) {
       
-      @scala.inline
-      def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      @scala.inline
-      def setCamera(value: Boolean): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+      inline def setCamera(value: Boolean): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+      inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     }
   }
 }

@@ -13,19 +13,15 @@ trait GetCanaryResponse extends StObject {
 }
 object GetCanaryResponse {
   
-  @scala.inline
-  def apply(): GetCanaryResponse = {
+  inline def apply(): GetCanaryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCanaryResponse]
   }
   
-  @scala.inline
-  implicit class GetCanaryResponseMutableBuilder[Self <: GetCanaryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCanaryResponse](x: Self) {
     
-    @scala.inline
-    def setCanary(value: Canary): Self = StObject.set(x, "Canary", value.asInstanceOf[js.Any])
+    inline def setCanary(value: Canary): Self = StObject.set(x, "Canary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanaryUndefined: Self = StObject.set(x, "Canary", js.undefined)
+    inline def setCanaryUndefined: Self = StObject.set(x, "Canary", js.undefined)
   }
 }

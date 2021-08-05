@@ -33,31 +33,23 @@ trait SchemaWorkerLifecycleEvent extends StObject {
 }
 object SchemaWorkerLifecycleEvent {
   
-  @scala.inline
-  def apply(): SchemaWorkerLifecycleEvent = {
+  inline def apply(): SchemaWorkerLifecycleEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWorkerLifecycleEvent]
   }
   
-  @scala.inline
-  implicit class SchemaWorkerLifecycleEventMutableBuilder[Self <: SchemaWorkerLifecycleEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWorkerLifecycleEvent](x: Self) {
     
-    @scala.inline
-    def setContainerStartTime(value: String): Self = StObject.set(x, "containerStartTime", value.asInstanceOf[js.Any])
+    inline def setContainerStartTime(value: String): Self = StObject.set(x, "containerStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStartTimeUndefined: Self = StObject.set(x, "containerStartTime", js.undefined)
+    inline def setContainerStartTimeUndefined: Self = StObject.set(x, "containerStartTime", js.undefined)
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

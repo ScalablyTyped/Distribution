@@ -104,6 +104,5 @@ object WhileStatementSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(condition: IExpressionSyntax, statement: IStatementSyntax): typings.typescriptServices.TypeScript.WhileStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(condition.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.WhileStatementSyntax]
+  inline def create1(condition: IExpressionSyntax, statement: IStatementSyntax): typings.typescriptServices.TypeScript.WhileStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(condition.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.WhileStatementSyntax]
 }

@@ -18,19 +18,15 @@ trait UserSetting extends StObject {
 }
 object UserSetting {
   
-  @scala.inline
-  def apply(Action: Action, Permission: Permission): UserSetting = {
+  inline def apply(Action: Action, Permission: Permission): UserSetting = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Permission = Permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserSetting]
   }
   
-  @scala.inline
-  implicit class UserSettingMutableBuilder[Self <: UserSetting] (val x: Self) extends AnyVal {
+  extension [Self <: UserSetting](x: Self) {
     
-    @scala.inline
-    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermission(value: Permission): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: Permission): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
   }
 }

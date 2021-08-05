@@ -52,55 +52,39 @@ trait ParamsResourceOrderreportsListtransactions
 }
 object ParamsResourceOrderreportsListtransactions {
   
-  @scala.inline
-  def apply(): ParamsResourceOrderreportsListtransactions = {
+  inline def apply(): ParamsResourceOrderreportsListtransactions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceOrderreportsListtransactions]
   }
   
-  @scala.inline
-  implicit class ParamsResourceOrderreportsListtransactionsMutableBuilder[Self <: ParamsResourceOrderreportsListtransactions] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceOrderreportsListtransactions](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDisbursementId(value: String): Self = StObject.set(x, "disbursementId", value.asInstanceOf[js.Any])
+    inline def setDisbursementId(value: String): Self = StObject.set(x, "disbursementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisbursementIdUndefined: Self = StObject.set(x, "disbursementId", js.undefined)
+    inline def setDisbursementIdUndefined: Self = StObject.set(x, "disbursementId", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setTransactionEndDate(value: String): Self = StObject.set(x, "transactionEndDate", value.asInstanceOf[js.Any])
+    inline def setTransactionEndDate(value: String): Self = StObject.set(x, "transactionEndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionEndDateUndefined: Self = StObject.set(x, "transactionEndDate", js.undefined)
+    inline def setTransactionEndDateUndefined: Self = StObject.set(x, "transactionEndDate", js.undefined)
     
-    @scala.inline
-    def setTransactionStartDate(value: String): Self = StObject.set(x, "transactionStartDate", value.asInstanceOf[js.Any])
+    inline def setTransactionStartDate(value: String): Self = StObject.set(x, "transactionStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionStartDateUndefined: Self = StObject.set(x, "transactionStartDate", js.undefined)
+    inline def setTransactionStartDateUndefined: Self = StObject.set(x, "transactionStartDate", js.undefined)
   }
 }

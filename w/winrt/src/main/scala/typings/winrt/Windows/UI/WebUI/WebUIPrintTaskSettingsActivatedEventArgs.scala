@@ -15,8 +15,7 @@ trait WebUIPrintTaskSettingsActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUIPrintTaskSettingsActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     configuration: PrintTaskConfiguration,
     kind: ActivationKind,

@@ -14,8 +14,7 @@ trait Credentials extends StObject {
 }
 object Credentials {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getPassword: (String, User) => String | Null,
     removePassword: (String, User) => Null,
     setPassword: (String, User, String) => Null
@@ -24,16 +23,12 @@ object Credentials {
     __obj.asInstanceOf[Credentials]
   }
   
-  @scala.inline
-  implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+  extension [Self <: Credentials](x: Self) {
     
-    @scala.inline
-    def setGetPassword(value: (String, User) => String | Null): Self = StObject.set(x, "getPassword", js.Any.fromFunction2(value))
+    inline def setGetPassword(value: (String, User) => String | Null): Self = StObject.set(x, "getPassword", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemovePassword(value: (String, User) => Null): Self = StObject.set(x, "removePassword", js.Any.fromFunction2(value))
+    inline def setRemovePassword(value: (String, User) => Null): Self = StObject.set(x, "removePassword", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetPassword(value: (String, User, String) => Null): Self = StObject.set(x, "setPassword", js.Any.fromFunction3(value))
+    inline def setSetPassword(value: (String, User, String) => Null): Self = StObject.set(x, "setPassword", js.Any.fromFunction3(value))
   }
 }

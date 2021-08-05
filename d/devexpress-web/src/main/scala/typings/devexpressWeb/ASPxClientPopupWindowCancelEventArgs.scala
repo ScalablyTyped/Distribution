@@ -23,19 +23,15 @@ trait ASPxClientPopupWindowCancelEventArgs
 }
 object ASPxClientPopupWindowCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, closeReason: ASPxClientPopupControlCloseReason, window: ASPxClientPopupWindow): ASPxClientPopupWindowCancelEventArgs = {
+  inline def apply(cancel: Boolean, closeReason: ASPxClientPopupControlCloseReason, window: ASPxClientPopupWindow): ASPxClientPopupWindowCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], closeReason = closeReason.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientPopupWindowCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientPopupWindowCancelEventArgsMutableBuilder[Self <: ASPxClientPopupWindowCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientPopupWindowCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setCloseReason(value: ASPxClientPopupControlCloseReason): Self = StObject.set(x, "closeReason", value.asInstanceOf[js.Any])
+    inline def setCloseReason(value: ASPxClientPopupControlCloseReason): Self = StObject.set(x, "closeReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow(value: ASPxClientPopupWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: ASPxClientPopupWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }
 }

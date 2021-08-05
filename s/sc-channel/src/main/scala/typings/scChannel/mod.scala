@@ -28,14 +28,11 @@ object mod {
   trait ChannelState extends StObject
   object ChannelState {
     
-    @scala.inline
-    def pending: typings.scChannel.scChannelStrings.pending = "pending".asInstanceOf[typings.scChannel.scChannelStrings.pending]
+    inline def pending: typings.scChannel.scChannelStrings.pending = "pending".asInstanceOf[typings.scChannel.scChannelStrings.pending]
     
-    @scala.inline
-    def subscribed: typings.scChannel.scChannelStrings.subscribed = "subscribed".asInstanceOf[typings.scChannel.scChannelStrings.subscribed]
+    inline def subscribed: typings.scChannel.scChannelStrings.subscribed = "subscribed".asInstanceOf[typings.scChannel.scChannelStrings.subscribed]
     
-    @scala.inline
-    def unsubscribed: typings.scChannel.scChannelStrings.unsubscribed = "unsubscribed".asInstanceOf[typings.scChannel.scChannelStrings.unsubscribed]
+    inline def unsubscribed: typings.scChannel.scChannelStrings.unsubscribed = "unsubscribed".asInstanceOf[typings.scChannel.scChannelStrings.unsubscribed]
   }
   
   @js.native

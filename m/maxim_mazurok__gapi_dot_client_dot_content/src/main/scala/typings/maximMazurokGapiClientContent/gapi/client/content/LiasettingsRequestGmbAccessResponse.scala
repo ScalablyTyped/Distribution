@@ -11,19 +11,15 @@ trait LiasettingsRequestGmbAccessResponse extends StObject {
 }
 object LiasettingsRequestGmbAccessResponse {
   
-  @scala.inline
-  def apply(): LiasettingsRequestGmbAccessResponse = {
+  inline def apply(): LiasettingsRequestGmbAccessResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiasettingsRequestGmbAccessResponse]
   }
   
-  @scala.inline
-  implicit class LiasettingsRequestGmbAccessResponseMutableBuilder[Self <: LiasettingsRequestGmbAccessResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LiasettingsRequestGmbAccessResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

@@ -24,8 +24,7 @@ trait MetricEvent
 }
 object MetricEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mediaType: video | audio | fragmentedText,
     metric: MetricType,
     `type`: metricAdded | metricUpdated,
@@ -36,19 +35,14 @@ object MetricEvent {
     __obj.asInstanceOf[MetricEvent]
   }
   
-  @scala.inline
-  implicit class MetricEventMutableBuilder[Self <: MetricEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MetricEvent](x: Self) {
     
-    @scala.inline
-    def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetric(value: MetricType): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: MetricType): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: metricAdded | metricUpdated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: metricAdded | metricUpdated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

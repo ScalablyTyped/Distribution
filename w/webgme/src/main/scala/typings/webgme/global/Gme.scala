@@ -24,7 +24,6 @@ object Gme {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isConnection(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConnection")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isConnection(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConnection")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

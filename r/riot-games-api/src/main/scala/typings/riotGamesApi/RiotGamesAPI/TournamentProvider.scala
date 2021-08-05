@@ -19,23 +19,18 @@ object TournamentProvider {
   }
   object LobbyEventDto {
     
-    @scala.inline
-    def apply(eventType: String, summonerId: String, timestamp: String): LobbyEventDto = {
+    inline def apply(eventType: String, summonerId: String, timestamp: String): LobbyEventDto = {
       val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], summonerId = summonerId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[LobbyEventDto]
     }
     
-    @scala.inline
-    implicit class LobbyEventDtoMutableBuilder[Self <: LobbyEventDto] (val x: Self) extends AnyVal {
+    extension [Self <: LobbyEventDto](x: Self) {
       
-      @scala.inline
-      def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+      inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummonerId(value: String): Self = StObject.set(x, "summonerId", value.asInstanceOf[js.Any])
+      inline def setSummonerId(value: String): Self = StObject.set(x, "summonerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,20 +40,16 @@ object TournamentProvider {
   }
   object LobbyEventDtoWrapper {
     
-    @scala.inline
-    def apply(eventList: js.Array[LobbyEventDto]): LobbyEventDtoWrapper = {
+    inline def apply(eventList: js.Array[LobbyEventDto]): LobbyEventDtoWrapper = {
       val __obj = js.Dynamic.literal(eventList = eventList.asInstanceOf[js.Any])
       __obj.asInstanceOf[LobbyEventDtoWrapper]
     }
     
-    @scala.inline
-    implicit class LobbyEventDtoWrapperMutableBuilder[Self <: LobbyEventDtoWrapper] (val x: Self) extends AnyVal {
+    extension [Self <: LobbyEventDtoWrapper](x: Self) {
       
-      @scala.inline
-      def setEventList(value: js.Array[LobbyEventDto]): Self = StObject.set(x, "eventList", value.asInstanceOf[js.Any])
+      inline def setEventList(value: js.Array[LobbyEventDto]): Self = StObject.set(x, "eventList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventListVarargs(value: LobbyEventDto*): Self = StObject.set(x, "eventList", js.Array(value :_*))
+      inline def setEventListVarargs(value: LobbyEventDto*): Self = StObject.set(x, "eventList", js.Array(value :_*))
     }
   }
   
@@ -70,20 +61,16 @@ object TournamentProvider {
   }
   object ProviderRegistrationParameters {
     
-    @scala.inline
-    def apply(region: String, url: String): ProviderRegistrationParameters = {
+    inline def apply(region: String, url: String): ProviderRegistrationParameters = {
       val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProviderRegistrationParameters]
     }
     
-    @scala.inline
-    implicit class ProviderRegistrationParametersMutableBuilder[Self <: ProviderRegistrationParameters] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderRegistrationParameters](x: Self) {
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,20 +80,16 @@ object TournamentProvider {
   }
   object SummonerIdParams {
     
-    @scala.inline
-    def apply(participants: js.Array[Double]): SummonerIdParams = {
+    inline def apply(participants: js.Array[Double]): SummonerIdParams = {
       val __obj = js.Dynamic.literal(participants = participants.asInstanceOf[js.Any])
       __obj.asInstanceOf[SummonerIdParams]
     }
     
-    @scala.inline
-    implicit class SummonerIdParamsMutableBuilder[Self <: SummonerIdParams] (val x: Self) extends AnyVal {
+    extension [Self <: SummonerIdParams](x: Self) {
       
-      @scala.inline
-      def setParticipants(value: js.Array[Double]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+      inline def setParticipants(value: js.Array[Double]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParticipantsVarargs(value: Double*): Self = StObject.set(x, "participants", js.Array(value :_*))
+      inline def setParticipantsVarargs(value: Double*): Self = StObject.set(x, "participants", js.Array(value :_*))
     }
   }
   
@@ -140,8 +123,7 @@ object TournamentProvider {
   }
   object TournamentCodeDto {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       code: String,
       id: Double,
       lobbyName: String,
@@ -160,50 +142,35 @@ object TournamentProvider {
       __obj.asInstanceOf[TournamentCodeDto]
     }
     
-    @scala.inline
-    implicit class TournamentCodeDtoMutableBuilder[Self <: TournamentCodeDto] (val x: Self) extends AnyVal {
+    extension [Self <: TournamentCodeDto](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLobbyName(value: String): Self = StObject.set(x, "lobbyName", value.asInstanceOf[js.Any])
+      inline def setLobbyName(value: String): Self = StObject.set(x, "lobbyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaData(value: String): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+      inline def setMetaData(value: String): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParticipants(value: js.Array[Double]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+      inline def setParticipants(value: js.Array[Double]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParticipantsVarargs(value: Double*): Self = StObject.set(x, "participants", js.Array(value :_*))
+      inline def setParticipantsVarargs(value: Double*): Self = StObject.set(x, "participants", js.Array(value :_*))
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickType(value: String): Self = StObject.set(x, "pickType", value.asInstanceOf[js.Any])
+      inline def setPickType(value: String): Self = StObject.set(x, "pickType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderId(value: Double): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+      inline def setProviderId(value: Double): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpectators(value: String): Self = StObject.set(x, "spectators", value.asInstanceOf[js.Any])
+      inline def setSpectators(value: String): Self = StObject.set(x, "spectators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamSize(value: Double): Self = StObject.set(x, "teamSize", value.asInstanceOf[js.Any])
+      inline def setTeamSize(value: Double): Self = StObject.set(x, "teamSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTournamentId(value: Double): Self = StObject.set(x, "tournamentId", value.asInstanceOf[js.Any])
+      inline def setTournamentId(value: Double): Self = StObject.set(x, "tournamentId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,8 +190,7 @@ object TournamentProvider {
   }
   object TournamentCodeParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowedSummonerIds: SummonerIdParams,
       mapType: String,
       metadata: String,
@@ -236,26 +202,19 @@ object TournamentProvider {
       __obj.asInstanceOf[TournamentCodeParameters]
     }
     
-    @scala.inline
-    implicit class TournamentCodeParametersMutableBuilder[Self <: TournamentCodeParameters] (val x: Self) extends AnyVal {
+    extension [Self <: TournamentCodeParameters](x: Self) {
       
-      @scala.inline
-      def setAllowedSummonerIds(value: SummonerIdParams): Self = StObject.set(x, "allowedSummonerIds", value.asInstanceOf[js.Any])
+      inline def setAllowedSummonerIds(value: SummonerIdParams): Self = StObject.set(x, "allowedSummonerIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapType(value: String): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
+      inline def setMapType(value: String): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickType(value: String): Self = StObject.set(x, "pickType", value.asInstanceOf[js.Any])
+      inline def setPickType(value: String): Self = StObject.set(x, "pickType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpectatorType(value: String): Self = StObject.set(x, "spectatorType", value.asInstanceOf[js.Any])
+      inline def setSpectatorType(value: String): Self = StObject.set(x, "spectatorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamSize(value: Double): Self = StObject.set(x, "teamSize", value.asInstanceOf[js.Any])
+      inline def setTeamSize(value: Double): Self = StObject.set(x, "teamSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -271,26 +230,20 @@ object TournamentProvider {
   }
   object TournamentCodeUpdateParameters {
     
-    @scala.inline
-    def apply(allowedParticipants: String, mapType: String, pickType: String, spectatorType: String): TournamentCodeUpdateParameters = {
+    inline def apply(allowedParticipants: String, mapType: String, pickType: String, spectatorType: String): TournamentCodeUpdateParameters = {
       val __obj = js.Dynamic.literal(allowedParticipants = allowedParticipants.asInstanceOf[js.Any], mapType = mapType.asInstanceOf[js.Any], pickType = pickType.asInstanceOf[js.Any], spectatorType = spectatorType.asInstanceOf[js.Any])
       __obj.asInstanceOf[TournamentCodeUpdateParameters]
     }
     
-    @scala.inline
-    implicit class TournamentCodeUpdateParametersMutableBuilder[Self <: TournamentCodeUpdateParameters] (val x: Self) extends AnyVal {
+    extension [Self <: TournamentCodeUpdateParameters](x: Self) {
       
-      @scala.inline
-      def setAllowedParticipants(value: String): Self = StObject.set(x, "allowedParticipants", value.asInstanceOf[js.Any])
+      inline def setAllowedParticipants(value: String): Self = StObject.set(x, "allowedParticipants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapType(value: String): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
+      inline def setMapType(value: String): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickType(value: String): Self = StObject.set(x, "pickType", value.asInstanceOf[js.Any])
+      inline def setPickType(value: String): Self = StObject.set(x, "pickType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpectatorType(value: String): Self = StObject.set(x, "spectatorType", value.asInstanceOf[js.Any])
+      inline def setSpectatorType(value: String): Self = StObject.set(x, "spectatorType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -302,20 +255,16 @@ object TournamentProvider {
   }
   object TournamentRegistrationParameters {
     
-    @scala.inline
-    def apply(name: String, providerId: Double): TournamentRegistrationParameters = {
+    inline def apply(name: String, providerId: Double): TournamentRegistrationParameters = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], providerId = providerId.asInstanceOf[js.Any])
       __obj.asInstanceOf[TournamentRegistrationParameters]
     }
     
-    @scala.inline
-    implicit class TournamentRegistrationParametersMutableBuilder[Self <: TournamentRegistrationParameters] (val x: Self) extends AnyVal {
+    extension [Self <: TournamentRegistrationParameters](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderId(value: Double): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+      inline def setProviderId(value: Double): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     }
   }
 }

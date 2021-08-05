@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object unifyMod {
   
-  @scala.inline
-  def apply(emitter1: Emitter, emitter2: Emitter): Emitter = (^.asInstanceOf[js.Dynamic].apply(emitter1.asInstanceOf[js.Any], emitter2.asInstanceOf[js.Any])).asInstanceOf[Emitter]
+  inline def apply(emitter1: Emitter, emitter2: Emitter): Emitter = (^.asInstanceOf[js.Dynamic].apply(emitter1.asInstanceOf[js.Any], emitter2.asInstanceOf[js.Any])).asInstanceOf[Emitter]
   
   @JSImport("event-emitter/unify", JSImport.Namespace)
   @js.native

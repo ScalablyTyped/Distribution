@@ -51,8 +51,7 @@ object mod {
   }
   object Adapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connect: () => Unit,
       disconnect: () => Unit,
       options: StringDictionary[js.Any],
@@ -62,20 +61,15 @@ object mod {
       __obj.asInstanceOf[Adapter]
     }
     
-    @scala.inline
-    implicit class AdapterMutableBuilder[Self <: Adapter] (val x: Self) extends AnyVal {
+    extension [Self <: Adapter](x: Self) {
       
-      @scala.inline
-      def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+      inline def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassthroughRequest(value: Request => js.Promise[Body]): Self = StObject.set(x, "passthroughRequest", js.Any.fromFunction1(value))
+      inline def setPassthroughRequest(value: Request => js.Promise[Body]): Self = StObject.set(x, "passthroughRequest", js.Any.fromFunction1(value))
     }
   }
 }

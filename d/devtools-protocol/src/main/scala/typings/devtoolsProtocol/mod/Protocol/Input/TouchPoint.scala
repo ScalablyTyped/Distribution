@@ -44,49 +44,35 @@ trait TouchPoint extends StObject {
 }
 object TouchPoint {
   
-  @scala.inline
-  def apply(x: Double, y: Double): TouchPoint = {
+  inline def apply(x: Double, y: Double): TouchPoint = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchPoint]
   }
   
-  @scala.inline
-  implicit class TouchPointMutableBuilder[Self <: TouchPoint] (val x: Self) extends AnyVal {
+  extension [Self <: TouchPoint](x: Self) {
     
-    @scala.inline
-    def setForce(value: Double): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Double): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setRadiusX(value: Double): Self = StObject.set(x, "radiusX", value.asInstanceOf[js.Any])
+    inline def setRadiusX(value: Double): Self = StObject.set(x, "radiusX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusXUndefined: Self = StObject.set(x, "radiusX", js.undefined)
+    inline def setRadiusXUndefined: Self = StObject.set(x, "radiusX", js.undefined)
     
-    @scala.inline
-    def setRadiusY(value: Double): Self = StObject.set(x, "radiusY", value.asInstanceOf[js.Any])
+    inline def setRadiusY(value: Double): Self = StObject.set(x, "radiusY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusYUndefined: Self = StObject.set(x, "radiusY", js.undefined)
+    inline def setRadiusYUndefined: Self = StObject.set(x, "radiusY", js.undefined)
     
-    @scala.inline
-    def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
+    inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationAngleUndefined: Self = StObject.set(x, "rotationAngle", js.undefined)
+    inline def setRotationAngleUndefined: Self = StObject.set(x, "rotationAngle", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

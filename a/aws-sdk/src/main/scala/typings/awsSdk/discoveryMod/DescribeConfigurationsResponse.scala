@@ -13,22 +13,17 @@ trait DescribeConfigurationsResponse extends StObject {
 }
 object DescribeConfigurationsResponse {
   
-  @scala.inline
-  def apply(): DescribeConfigurationsResponse = {
+  inline def apply(): DescribeConfigurationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConfigurationsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeConfigurationsResponseMutableBuilder[Self <: DescribeConfigurationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigurationsResponse](x: Self) {
     
-    @scala.inline
-    def setConfigurations(value: DescribeConfigurationsAttributes): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
+    inline def setConfigurations(value: DescribeConfigurationsAttributes): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
+    inline def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
     
-    @scala.inline
-    def setConfigurationsVarargs(value: DescribeConfigurationsAttribute*): Self = StObject.set(x, "configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: DescribeConfigurationsAttribute*): Self = StObject.set(x, "configurations", js.Array(value :_*))
   }
 }

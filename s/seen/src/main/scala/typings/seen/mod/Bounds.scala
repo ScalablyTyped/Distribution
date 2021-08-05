@@ -49,12 +49,9 @@ object Bounds {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def points(points: js.Array[Point]): Bounds = ^.asInstanceOf[js.Dynamic].applyDynamic("points")(points.asInstanceOf[js.Any]).asInstanceOf[Bounds]
+  inline def points(points: js.Array[Point]): Bounds = ^.asInstanceOf[js.Dynamic].applyDynamic("points")(points.asInstanceOf[js.Any]).asInstanceOf[Bounds]
   
-  @scala.inline
-  def xywh(x: Double, y: Double, w: Double, h: Double): Bounds = (^.asInstanceOf[js.Dynamic].applyDynamic("xywh")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Bounds]
+  inline def xywh(x: Double, y: Double, w: Double, h: Double): Bounds = (^.asInstanceOf[js.Dynamic].applyDynamic("xywh")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Bounds]
   
-  @scala.inline
-  def xyzwhd(x: Double, y: Double, z: Double, w: Double, h: Double, d: Double): Bounds = (^.asInstanceOf[js.Dynamic].applyDynamic("xyzwhd")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Bounds]
+  inline def xyzwhd(x: Double, y: Double, z: Double, w: Double, h: Double, d: Double): Bounds = (^.asInstanceOf[js.Dynamic].applyDynamic("xyzwhd")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Bounds]
 }

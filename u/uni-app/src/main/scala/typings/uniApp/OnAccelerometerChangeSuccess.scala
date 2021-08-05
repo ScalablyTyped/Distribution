@@ -23,31 +23,23 @@ trait OnAccelerometerChangeSuccess extends StObject {
 }
 object OnAccelerometerChangeSuccess {
   
-  @scala.inline
-  def apply(): OnAccelerometerChangeSuccess = {
+  inline def apply(): OnAccelerometerChangeSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnAccelerometerChangeSuccess]
   }
   
-  @scala.inline
-  implicit class OnAccelerometerChangeSuccessMutableBuilder[Self <: OnAccelerometerChangeSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: OnAccelerometerChangeSuccess](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+    inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
   }
 }

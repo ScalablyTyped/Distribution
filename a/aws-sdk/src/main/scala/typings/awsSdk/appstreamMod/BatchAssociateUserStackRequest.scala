@@ -13,19 +13,15 @@ trait BatchAssociateUserStackRequest extends StObject {
 }
 object BatchAssociateUserStackRequest {
   
-  @scala.inline
-  def apply(UserStackAssociations: UserStackAssociationList): BatchAssociateUserStackRequest = {
+  inline def apply(UserStackAssociations: UserStackAssociationList): BatchAssociateUserStackRequest = {
     val __obj = js.Dynamic.literal(UserStackAssociations = UserStackAssociations.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchAssociateUserStackRequest]
   }
   
-  @scala.inline
-  implicit class BatchAssociateUserStackRequestMutableBuilder[Self <: BatchAssociateUserStackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchAssociateUserStackRequest](x: Self) {
     
-    @scala.inline
-    def setUserStackAssociations(value: UserStackAssociationList): Self = StObject.set(x, "UserStackAssociations", value.asInstanceOf[js.Any])
+    inline def setUserStackAssociations(value: UserStackAssociationList): Self = StObject.set(x, "UserStackAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserStackAssociationsVarargs(value: UserStackAssociation*): Self = StObject.set(x, "UserStackAssociations", js.Array(value :_*))
+    inline def setUserStackAssociationsVarargs(value: UserStackAssociation*): Self = StObject.set(x, "UserStackAssociations", js.Array(value :_*))
   }
 }

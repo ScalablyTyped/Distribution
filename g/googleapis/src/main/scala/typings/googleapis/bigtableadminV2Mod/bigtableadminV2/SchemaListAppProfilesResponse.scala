@@ -31,37 +31,27 @@ trait SchemaListAppProfilesResponse extends StObject {
 }
 object SchemaListAppProfilesResponse {
   
-  @scala.inline
-  def apply(): SchemaListAppProfilesResponse = {
+  inline def apply(): SchemaListAppProfilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListAppProfilesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListAppProfilesResponseMutableBuilder[Self <: SchemaListAppProfilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListAppProfilesResponse](x: Self) {
     
-    @scala.inline
-    def setAppProfiles(value: js.Array[SchemaAppProfile]): Self = StObject.set(x, "appProfiles", value.asInstanceOf[js.Any])
+    inline def setAppProfiles(value: js.Array[SchemaAppProfile]): Self = StObject.set(x, "appProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppProfilesUndefined: Self = StObject.set(x, "appProfiles", js.undefined)
+    inline def setAppProfilesUndefined: Self = StObject.set(x, "appProfiles", js.undefined)
     
-    @scala.inline
-    def setAppProfilesVarargs(value: SchemaAppProfile*): Self = StObject.set(x, "appProfiles", js.Array(value :_*))
+    inline def setAppProfilesVarargs(value: SchemaAppProfile*): Self = StObject.set(x, "appProfiles", js.Array(value :_*))
     
-    @scala.inline
-    def setFailedLocations(value: js.Array[String]): Self = StObject.set(x, "failedLocations", value.asInstanceOf[js.Any])
+    inline def setFailedLocations(value: js.Array[String]): Self = StObject.set(x, "failedLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedLocationsUndefined: Self = StObject.set(x, "failedLocations", js.undefined)
+    inline def setFailedLocationsUndefined: Self = StObject.set(x, "failedLocations", js.undefined)
     
-    @scala.inline
-    def setFailedLocationsVarargs(value: String*): Self = StObject.set(x, "failedLocations", js.Array(value :_*))
+    inline def setFailedLocationsVarargs(value: String*): Self = StObject.set(x, "failedLocations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

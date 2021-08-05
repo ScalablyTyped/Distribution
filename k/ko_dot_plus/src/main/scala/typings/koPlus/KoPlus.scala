@@ -59,29 +59,22 @@ object KoPlus {
   }
   object CommandOptions {
     
-    @scala.inline
-    def apply(action: js.Function): CommandOptions = {
+    inline def apply(action: js.Function): CommandOptions = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandOptions]
     }
     
-    @scala.inline
-    implicit class CommandOptionsMutableBuilder[Self <: CommandOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommandOptions](x: Self) {
       
-      @scala.inline
-      def setAction(value: js.Function): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: js.Function): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanExecute(value: () => Boolean): Self = StObject.set(x, "canExecute", js.Any.fromFunction0(value))
+      inline def setCanExecute(value: () => Boolean): Self = StObject.set(x, "canExecute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCanExecuteUndefined: Self = StObject.set(x, "canExecute", js.undefined)
+      inline def setCanExecuteUndefined: Self = StObject.set(x, "canExecute", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     }
   }
   
@@ -91,8 +84,7 @@ object KoPlus {
        with EditableFunctions
   object Editable {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       beginEdit: () => Unit,
       cancelEdit: () => Unit,
       endEdit: () => Unit,
@@ -110,8 +102,7 @@ object KoPlus {
        with EditableFunctions
   object EditableArray {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       beginEdit: () => Unit,
       cancelEdit: () => Unit,
       endEdit: () => Unit,
@@ -150,8 +141,7 @@ object KoPlus {
   }
   object EditableFunctions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       beginEdit: () => Unit,
       cancelEdit: () => Unit,
       endEdit: () => Unit,
@@ -162,25 +152,19 @@ object KoPlus {
       __obj.asInstanceOf[EditableFunctions]
     }
     
-    @scala.inline
-    implicit class EditableFunctionsMutableBuilder[Self <: EditableFunctions] (val x: Self) extends AnyVal {
+    extension [Self <: EditableFunctions](x: Self) {
       
-      @scala.inline
-      def setBeginEdit(value: () => Unit): Self = StObject.set(x, "beginEdit", js.Any.fromFunction0(value))
+      inline def setBeginEdit(value: () => Unit): Self = StObject.set(x, "beginEdit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCancelEdit(value: () => Unit): Self = StObject.set(x, "cancelEdit", js.Any.fromFunction0(value))
+      inline def setCancelEdit(value: () => Unit): Self = StObject.set(x, "cancelEdit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEndEdit(value: () => Unit): Self = StObject.set(x, "endEdit", js.Any.fromFunction0(value))
+      inline def setEndEdit(value: () => Unit): Self = StObject.set(x, "endEdit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEditing(
+      inline def setIsEditing(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
       ): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollback(value: () => Unit): Self = StObject.set(x, "rollback", js.Any.fromFunction0(value))
+      inline def setRollback(value: () => Unit): Self = StObject.set(x, "rollback", js.Any.fromFunction0(value))
     }
   }
   

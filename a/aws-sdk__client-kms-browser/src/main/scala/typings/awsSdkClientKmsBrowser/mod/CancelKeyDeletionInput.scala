@@ -9,8 +9,7 @@ trait CancelKeyDeletionInput
      with typings.awsSdkClientKmsBrowser.typesCancelKeyDeletionInputMod.CancelKeyDeletionInput
 object CancelKeyDeletionInput {
   
-  @scala.inline
-  def apply(KeyId: String): CancelKeyDeletionInput = {
+  inline def apply(KeyId: String): CancelKeyDeletionInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelKeyDeletionInput]
   }

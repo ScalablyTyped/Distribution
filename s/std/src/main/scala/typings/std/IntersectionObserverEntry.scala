@@ -23,8 +23,7 @@ trait IntersectionObserverEntry extends StObject {
 }
 object IntersectionObserverEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingClientRect: DOMRectReadOnly,
     intersectionRatio: Double,
     intersectionRect: DOMRectReadOnly,
@@ -36,31 +35,22 @@ object IntersectionObserverEntry {
     __obj.asInstanceOf[IntersectionObserverEntry]
   }
   
-  @scala.inline
-  implicit class IntersectionObserverEntryMutableBuilder[Self <: IntersectionObserverEntry] (val x: Self) extends AnyVal {
+  extension [Self <: IntersectionObserverEntry](x: Self) {
     
-    @scala.inline
-    def setBoundingClientRect(value: DOMRectReadOnly): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
+    inline def setBoundingClientRect(value: DOMRectReadOnly): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionRatio(value: Double): Self = StObject.set(x, "intersectionRatio", value.asInstanceOf[js.Any])
+    inline def setIntersectionRatio(value: Double): Self = StObject.set(x, "intersectionRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionRect(value: DOMRectReadOnly): Self = StObject.set(x, "intersectionRect", value.asInstanceOf[js.Any])
+    inline def setIntersectionRect(value: DOMRectReadOnly): Self = StObject.set(x, "intersectionRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIntersecting(value: scala.Boolean): Self = StObject.set(x, "isIntersecting", value.asInstanceOf[js.Any])
+    inline def setIsIntersecting(value: scala.Boolean): Self = StObject.set(x, "isIntersecting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootBounds(value: DOMRectReadOnly): Self = StObject.set(x, "rootBounds", value.asInstanceOf[js.Any])
+    inline def setRootBounds(value: DOMRectReadOnly): Self = StObject.set(x, "rootBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootBoundsNull: Self = StObject.set(x, "rootBounds", null)
+    inline def setRootBoundsNull: Self = StObject.set(x, "rootBounds", null)
     
-    @scala.inline
-    def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

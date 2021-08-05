@@ -16,14 +16,11 @@ object typesMod {
   trait ComponentType extends StObject
   object ComponentType {
     
-    @scala.inline
-    def PRIVATE: typings.firebaseComponent.firebaseComponentStrings.PRIVATE = "PRIVATE".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.PRIVATE]
+    inline def PRIVATE: typings.firebaseComponent.firebaseComponentStrings.PRIVATE = "PRIVATE".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.PRIVATE]
     
-    @scala.inline
-    def PUBLIC: typings.firebaseComponent.firebaseComponentStrings.PUBLIC = "PUBLIC".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.PUBLIC]
+    inline def PUBLIC: typings.firebaseComponent.firebaseComponentStrings.PUBLIC = "PUBLIC".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.PUBLIC]
     
-    @scala.inline
-    def VERSION: typings.firebaseComponent.firebaseComponentStrings.VERSION = "VERSION".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.VERSION]
+    inline def VERSION: typings.firebaseComponent.firebaseComponentStrings.VERSION = "VERSION".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.VERSION]
   }
   
   type Dictionary = StringDictionary[js.Any]
@@ -41,11 +38,9 @@ object typesMod {
   trait InstantiationMode extends StObject
   object InstantiationMode {
     
-    @scala.inline
-    def EAGER: typings.firebaseComponent.firebaseComponentStrings.EAGER = "EAGER".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.EAGER]
+    inline def EAGER: typings.firebaseComponent.firebaseComponentStrings.EAGER = "EAGER".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.EAGER]
     
-    @scala.inline
-    def LAZY: typings.firebaseComponent.firebaseComponentStrings.LAZY = "LAZY".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.LAZY]
+    inline def LAZY: typings.firebaseComponent.firebaseComponentStrings.LAZY = "LAZY".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.LAZY]
   }
   
   /* Rewritten from type alias, can be one of: 

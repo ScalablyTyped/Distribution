@@ -12,8 +12,7 @@ trait ReferencedSymbolDefinitionInfo
 }
 object ReferencedSymbolDefinitionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containerKind: ScriptElementKind,
     containerName: java.lang.String,
     displayParts: js.Array[SymbolDisplayPart],
@@ -26,13 +25,10 @@ object ReferencedSymbolDefinitionInfo {
     __obj.asInstanceOf[ReferencedSymbolDefinitionInfo]
   }
   
-  @scala.inline
-  implicit class ReferencedSymbolDefinitionInfoMutableBuilder[Self <: ReferencedSymbolDefinitionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ReferencedSymbolDefinitionInfo](x: Self) {
     
-    @scala.inline
-    def setDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "displayParts", value.asInstanceOf[js.Any])
+    inline def setDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "displayParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "displayParts", js.Array(value :_*))
+    inline def setDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "displayParts", js.Array(value :_*))
   }
 }

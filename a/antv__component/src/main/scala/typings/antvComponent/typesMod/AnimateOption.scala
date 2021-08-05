@@ -22,49 +22,35 @@ trait AnimateOption extends StObject {
 }
 object AnimateOption {
   
-  @scala.inline
-  def apply(): AnimateOption = {
+  inline def apply(): AnimateOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimateOption]
   }
   
-  @scala.inline
-  implicit class AnimateOptionMutableBuilder[Self <: AnimateOption] (val x: Self) extends AnyVal {
+  extension [Self <: AnimateOption](x: Self) {
     
-    @scala.inline
-    def setAppear(value: AnimateCfg | `false`): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
+    inline def setAppear(value: AnimateCfg | `false`): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppearNull: Self = StObject.set(x, "appear", null)
+    inline def setAppearNull: Self = StObject.set(x, "appear", null)
     
-    @scala.inline
-    def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
+    inline def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
     
-    @scala.inline
-    def setEnter(value: AnimateCfg | `false`): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+    inline def setEnter(value: AnimateCfg | `false`): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterNull: Self = StObject.set(x, "enter", null)
+    inline def setEnterNull: Self = StObject.set(x, "enter", null)
     
-    @scala.inline
-    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+    inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
-    @scala.inline
-    def setLeave(value: AnimateCfg | `false`): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
+    inline def setLeave(value: AnimateCfg | `false`): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaveNull: Self = StObject.set(x, "leave", null)
+    inline def setLeaveNull: Self = StObject.set(x, "leave", null)
     
-    @scala.inline
-    def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
+    inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: AnimateCfg | `false`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: AnimateCfg | `false`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateNull: Self = StObject.set(x, "update", null)
+    inline def setUpdateNull: Self = StObject.set(x, "update", null)
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

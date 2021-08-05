@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object nanoidMod {
   
-  @scala.inline
-  def apply(random: js.Function1[/* bytes */ Double, js.Array[Double]], alphabet: String, size: Double): String = (^.asInstanceOf[js.Dynamic].apply(random.asInstanceOf[js.Any], alphabet.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(random: js.Function1[/* bytes */ Double, js.Array[Double]], alphabet: String, size: Double): String = (^.asInstanceOf[js.Dynamic].apply(random.asInstanceOf[js.Any], alphabet.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("nanoid/format", JSImport.Namespace)
   @js.native

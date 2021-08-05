@@ -26,8 +26,7 @@ trait HitTestResultResults
 }
 object HitTestResultResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     graphic: Graphic,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object HitTestResultResults {
     __obj.asInstanceOf[HitTestResultResults]
   }
   
-  @scala.inline
-  implicit class HitTestResultResultsMutableBuilder[Self <: HitTestResultResults] (val x: Self) extends AnyVal {
+  extension [Self <: HitTestResultResults](x: Self) {
     
-    @scala.inline
-    def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapPoint(value: Point): Self = StObject.set(x, "mapPoint", value.asInstanceOf[js.Any])
+    inline def setMapPoint(value: Point): Self = StObject.set(x, "mapPoint", value.asInstanceOf[js.Any])
   }
 }

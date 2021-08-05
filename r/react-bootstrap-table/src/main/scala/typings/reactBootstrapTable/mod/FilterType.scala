@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilterType extends StObject
 object FilterType {
   
-  @scala.inline
-  def ArrayFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.ArrayFilter = "ArrayFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.ArrayFilter]
+  inline def ArrayFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.ArrayFilter = "ArrayFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.ArrayFilter]
   
-  @scala.inline
-  def CustomFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter = "CustomFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter]
+  inline def CustomFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter = "CustomFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter]
   
-  @scala.inline
-  def DateFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter = "DateFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter]
+  inline def DateFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter = "DateFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter]
   
-  @scala.inline
-  def NumberFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter = "NumberFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter]
+  inline def NumberFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter = "NumberFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter]
   
-  @scala.inline
-  def RegexFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter = "RegexFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter]
+  inline def RegexFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter = "RegexFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter]
   
-  @scala.inline
-  def SelectFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter = "SelectFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter]
+  inline def SelectFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter = "SelectFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter]
   
-  @scala.inline
-  def TextFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.TextFilter = "TextFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.TextFilter]
+  inline def TextFilter: typings.reactBootstrapTable.reactBootstrapTableStrings.TextFilter = "TextFilter".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.TextFilter]
 }

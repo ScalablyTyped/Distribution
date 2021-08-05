@@ -23,23 +23,18 @@ object smsMod {
   }
   object SmsProps {
     
-    @scala.inline
-    def apply(phone: String): SmsProps = {
+    inline def apply(phone: String): SmsProps = {
       val __obj = js.Dynamic.literal(phone = phone.asInstanceOf[js.Any])
       __obj.asInstanceOf[SmsProps]
     }
     
-    @scala.inline
-    implicit class SmsPropsMutableBuilder[Self <: SmsProps] (val x: Self) extends AnyVal {
+    extension [Self <: SmsProps](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     }
   }
 }

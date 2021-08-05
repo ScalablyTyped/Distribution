@@ -13,9 +13,9 @@ object axisManagerMod {
   class AxisManager protected () extends StObject {
     def this(axis: js.Any, options: AxesOption) = this()
     
-    var _pos: js.Any = js.native
+    /* private */ var _pos: js.Any = js.native
     
-    var axis: js.Any = js.native
+    /* private */ var axis: js.Any = js.native
     
     def every(
       pos: Axis,
@@ -43,7 +43,7 @@ object axisManagerMod {
     
     def moveTo(pos: Axis): StringDictionary[Axis] = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     def set(pos: Axis): Unit = js.native
   }
@@ -54,8 +54,7 @@ object axisManagerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def equal(target: Axis, base: Axis): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(target.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equal(target: Axis, base: Axis): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(target.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   type Axis = StringDictionary[Double]
@@ -70,41 +69,30 @@ object axisManagerMod {
   }
   object AxisOption {
     
-    @scala.inline
-    def apply(): AxisOption = {
+    inline def apply(): AxisOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AxisOption]
     }
     
-    @scala.inline
-    implicit class AxisOptionMutableBuilder[Self <: AxisOption] (val x: Self) extends AnyVal {
+    extension [Self <: AxisOption](x: Self) {
       
-      @scala.inline
-      def setBounce(value: Double | js.Array[Double]): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
+      inline def setBounce(value: Double | js.Array[Double]): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
+      inline def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
       
-      @scala.inline
-      def setBounceVarargs(value: Double*): Self = StObject.set(x, "bounce", js.Array(value :_*))
+      inline def setBounceVarargs(value: Double*): Self = StObject.set(x, "bounce", js.Array(value :_*))
       
-      @scala.inline
-      def setCircular(value: Boolean | js.Array[Boolean]): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
+      inline def setCircular(value: Boolean | js.Array[Boolean]): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
+      inline def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
       
-      @scala.inline
-      def setCircularVarargs(value: Boolean*): Self = StObject.set(x, "circular", js.Array(value :_*))
+      inline def setCircularVarargs(value: Boolean*): Self = StObject.set(x, "circular", js.Array(value :_*))
       
-      @scala.inline
-      def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
     }
   }
 }

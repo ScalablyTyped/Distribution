@@ -27,8 +27,7 @@ trait SubscriptionTracking extends StObject {
 }
 object SubscriptionTracking {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEnable: () => Boolean,
     getHtml: () => String,
     getSubstitutionTag: () => String,
@@ -43,34 +42,24 @@ object SubscriptionTracking {
     __obj.asInstanceOf[SubscriptionTracking]
   }
   
-  @scala.inline
-  implicit class SubscriptionTrackingMutableBuilder[Self <: SubscriptionTracking] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionTracking](x: Self) {
     
-    @scala.inline
-    def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
+    inline def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHtml(value: () => String): Self = StObject.set(x, "getHtml", js.Any.fromFunction0(value))
+    inline def setGetHtml(value: () => String): Self = StObject.set(x, "getHtml", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubstitutionTag(value: () => String): Self = StObject.set(x, "getSubstitutionTag", js.Any.fromFunction0(value))
+    inline def setGetSubstitutionTag(value: () => String): Self = StObject.set(x, "getSubstitutionTag", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
+    inline def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHtml(value: String => Unit): Self = StObject.set(x, "setHtml", js.Any.fromFunction1(value))
+    inline def setSetHtml(value: String => Unit): Self = StObject.set(x, "setHtml", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSubstitutionTag(value: String => Unit): Self = StObject.set(x, "setSubstitutionTag", js.Any.fromFunction1(value))
+    inline def setSetSubstitutionTag(value: String => Unit): Self = StObject.set(x, "setSubstitutionTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => Html): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Html): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

@@ -29,34 +29,25 @@ trait VirtualNodeSpecListener extends StObject {
 }
 object VirtualNodeSpecListener {
   
-  @scala.inline
-  def apply(portMapping: Input[VirtualNodeSpecListenerPortMapping]): VirtualNodeSpecListener = {
+  inline def apply(portMapping: Input[VirtualNodeSpecListenerPortMapping]): VirtualNodeSpecListener = {
     val __obj = js.Dynamic.literal(portMapping = portMapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecListener]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecListenerMutableBuilder[Self <: VirtualNodeSpecListener] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecListener](x: Self) {
     
-    @scala.inline
-    def setHealthCheck(value: Input[VirtualNodeSpecListenerHealthCheck]): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+    inline def setHealthCheck(value: Input[VirtualNodeSpecListenerHealthCheck]): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
+    inline def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
     
-    @scala.inline
-    def setPortMapping(value: Input[VirtualNodeSpecListenerPortMapping]): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
+    inline def setPortMapping(value: Input[VirtualNodeSpecListenerPortMapping]): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Input[VirtualNodeSpecListenerTimeout]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Input[VirtualNodeSpecListenerTimeout]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setTls(value: Input[VirtualNodeSpecListenerTls]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: Input[VirtualNodeSpecListenerTls]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+    inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
   }
 }

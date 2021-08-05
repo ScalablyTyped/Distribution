@@ -28,8 +28,7 @@ trait OptimisticUpdater extends StObject {
 }
 object OptimisticUpdater {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     optimisticUpdater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit,
     updater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit
   ): OptimisticUpdater = {
@@ -37,13 +36,10 @@ object OptimisticUpdater {
     __obj.asInstanceOf[OptimisticUpdater]
   }
   
-  @scala.inline
-  implicit class OptimisticUpdaterMutableBuilder[Self <: OptimisticUpdater] (val x: Self) extends AnyVal {
+  extension [Self <: OptimisticUpdater](x: Self) {
     
-    @scala.inline
-    def setOptimisticUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "optimisticUpdater", js.Any.fromFunction2(value))
+    inline def setOptimisticUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "optimisticUpdater", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
+    inline def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
   }
 }

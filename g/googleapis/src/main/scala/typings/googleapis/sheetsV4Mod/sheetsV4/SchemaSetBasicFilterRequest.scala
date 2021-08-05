@@ -16,19 +16,15 @@ trait SchemaSetBasicFilterRequest extends StObject {
 }
 object SchemaSetBasicFilterRequest {
   
-  @scala.inline
-  def apply(): SchemaSetBasicFilterRequest = {
+  inline def apply(): SchemaSetBasicFilterRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSetBasicFilterRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSetBasicFilterRequestMutableBuilder[Self <: SchemaSetBasicFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSetBasicFilterRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: SchemaBasicFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: SchemaBasicFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

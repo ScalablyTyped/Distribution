@@ -27,34 +27,25 @@ trait SchemaGooglePrivacyDlpV2Result extends StObject {
 }
 object SchemaGooglePrivacyDlpV2Result {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2Result = {
+  inline def apply(): SchemaGooglePrivacyDlpV2Result = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Result]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ResultMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Result] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2Result](x: Self) {
     
-    @scala.inline
-    def setInfoTypeStats(value: js.Array[SchemaGooglePrivacyDlpV2InfoTypeStats]): Self = StObject.set(x, "infoTypeStats", value.asInstanceOf[js.Any])
+    inline def setInfoTypeStats(value: js.Array[SchemaGooglePrivacyDlpV2InfoTypeStats]): Self = StObject.set(x, "infoTypeStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypeStatsUndefined: Self = StObject.set(x, "infoTypeStats", js.undefined)
+    inline def setInfoTypeStatsUndefined: Self = StObject.set(x, "infoTypeStats", js.undefined)
     
-    @scala.inline
-    def setInfoTypeStatsVarargs(value: SchemaGooglePrivacyDlpV2InfoTypeStats*): Self = StObject.set(x, "infoTypeStats", js.Array(value :_*))
+    inline def setInfoTypeStatsVarargs(value: SchemaGooglePrivacyDlpV2InfoTypeStats*): Self = StObject.set(x, "infoTypeStats", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessedBytes(value: String): Self = StObject.set(x, "processedBytes", value.asInstanceOf[js.Any])
+    inline def setProcessedBytes(value: String): Self = StObject.set(x, "processedBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessedBytesUndefined: Self = StObject.set(x, "processedBytes", js.undefined)
+    inline def setProcessedBytesUndefined: Self = StObject.set(x, "processedBytes", js.undefined)
     
-    @scala.inline
-    def setTotalEstimatedBytes(value: String): Self = StObject.set(x, "totalEstimatedBytes", value.asInstanceOf[js.Any])
+    inline def setTotalEstimatedBytes(value: String): Self = StObject.set(x, "totalEstimatedBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalEstimatedBytesUndefined: Self = StObject.set(x, "totalEstimatedBytes", js.undefined)
+    inline def setTotalEstimatedBytesUndefined: Self = StObject.set(x, "totalEstimatedBytes", js.undefined)
   }
 }

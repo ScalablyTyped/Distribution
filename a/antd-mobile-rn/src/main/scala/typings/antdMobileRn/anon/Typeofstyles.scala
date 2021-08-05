@@ -25,8 +25,7 @@ trait Typeofstyles extends StObject {
 }
 object Typeofstyles {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     container: Double & RegisteredStyleBrand,
     disabledStepTextColor: Double & RegisteredStyleBrand,
     highlightStepBorderColor: Double & RegisteredStyleBrand,
@@ -40,31 +39,22 @@ object Typeofstyles {
     __obj.asInstanceOf[Typeofstyles]
   }
   
-  @scala.inline
-  implicit class TypeofstylesMutableBuilder[Self <: Typeofstyles] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofstyles](x: Self) {
     
-    @scala.inline
-    def setContainer(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledStepTextColor(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "disabledStepTextColor", value.asInstanceOf[js.Any])
+    inline def setDisabledStepTextColor(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "disabledStepTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightStepBorderColor(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "highlightStepBorderColor", value.asInstanceOf[js.Any])
+    inline def setHighlightStepBorderColor(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "highlightStepBorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightStepTextColor(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "highlightStepTextColor", value.asInstanceOf[js.Any])
+    inline def setHighlightStepTextColor(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "highlightStepTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepDisabled(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "stepDisabled", value.asInstanceOf[js.Any])
+    inline def setStepDisabled(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "stepDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepText(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "stepText", value.asInstanceOf[js.Any])
+    inline def setStepText(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "stepText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepWrap(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "stepWrap", value.asInstanceOf[js.Any])
+    inline def setStepWrap(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "stepWrap", value.asInstanceOf[js.Any])
   }
 }

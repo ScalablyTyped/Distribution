@@ -12,20 +12,16 @@ trait Action[Payload] extends StObject {
 }
 object Action {
   
-  @scala.inline
-  def apply[Payload](payload: Payload, `type`: Identifier): Action[Payload] = {
+  inline def apply[Payload](payload: Payload, `type`: Identifier): Action[Payload] = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action[Payload]]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action[?], Payload] (val x: Self & Action[Payload]) extends AnyVal {
+  extension [Self <: Action[?], Payload](x: Self & Action[Payload]) {
     
-    @scala.inline
-    def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

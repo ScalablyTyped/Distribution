@@ -22,6 +22,5 @@ object TableIndex {
   /**
     * Creates index from the index metadata object.
     */
-  @scala.inline
-  def create(indexMetadata: IndexMetadata): typings.typeorm.tableIndexMod.TableIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(indexMetadata.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.tableIndexMod.TableIndex]
+  inline def create(indexMetadata: IndexMetadata): typings.typeorm.tableIndexMod.TableIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(indexMetadata.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.tableIndexMod.TableIndex]
 }

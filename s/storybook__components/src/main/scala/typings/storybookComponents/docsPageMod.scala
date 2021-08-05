@@ -54,23 +54,18 @@ object docsPageMod {
   }
   object DocsPageProps {
     
-    @scala.inline
-    def apply(title: String): DocsPageProps = {
+    inline def apply(title: String): DocsPageProps = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocsPageProps]
     }
     
-    @scala.inline
-    implicit class DocsPagePropsMutableBuilder[Self <: DocsPageProps] (val x: Self) extends AnyVal {
+    extension [Self <: DocsPageProps](x: Self) {
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -39,14 +39,12 @@ object mod {
     
     //***************************************接口回调***************************************
     //连接状态
-    @scala.inline
-    def addConnectEventListener(callback: Callback[ConnectEnable]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConnectEventListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addConnectEventListener(callback: Callback[ConnectEnable]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConnectEventListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 自定义消息事件
       */
-    @scala.inline
-    def addCustomMessagegListener(callback: Callback[ContentExtras]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomMessagegListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addCustomMessagegListener(callback: Callback[ContentExtras]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomMessagegListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //***************************************本地通知***************************************
     /**
@@ -61,90 +59,77 @@ object mod {
       * extras:对应“附加内容”字段
       *
       */
-    @scala.inline
-    def addLocalNotification(params: Content): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocalNotification")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addLocalNotification(params: Content): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocalNotification")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 本地通知事件
       *
       * 注意：应用在存活状态下点击通知不会有跳转行为,应用在被杀死状态下点击通知会启动应用
       */
-    @scala.inline
-    def addLocalNotificationListener(callback: Callback[Extras]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocalNotificationListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addLocalNotificationListener(callback: Callback[Extras]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocalNotificationListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 手机号码事件
       */
-    @scala.inline
-    def addMobileNumberListener(callback: Callback[codenumberSequence]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMobileNumberListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addMobileNumberListener(callback: Callback[codenumberSequence]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMobileNumberListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 通知事件
       *
       * 注意：应用在存活状态下点击通知不会有跳转行为,应用在被杀死状态下点击通知会启动应用
       */
-    @scala.inline
-    def addNotificationListener(callback: Callback[Badge]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addNotificationListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addNotificationListener(callback: Callback[Badge]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addNotificationListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * tag alias事件
       */
-    @scala.inline
-    def addTagAliasListener(callback: Callback[Code & Sequence & (Tags | Alias | TagtagEnableboolean)]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTagAliasListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addTagAliasListener(callback: Callback[Code & Sequence & (Tags | Alias | TagtagEnableboolean)]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTagAliasListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 新增标签
       *
       * 这个接口是增加逻辑,而不是覆盖逻辑
       */
-    @scala.inline
-    def addTags(params: Sequence & Tags): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTags")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addTags(params: Sequence & Tags): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTags")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 清除所有 JPush 展现的通知（不包括非 JPush SDK 展现的）
       *
       */
-    @scala.inline
-    def clearAllNotifications(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllNotifications")().asInstanceOf[Unit]
+    inline def clearAllNotifications(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllNotifications")().asInstanceOf[Unit]
     
     /**
       * 移除所有的本地通知
       *
       */
-    @scala.inline
-    def clearLocalNotifications(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearLocalNotifications")().asInstanceOf[Unit]
+    inline def clearLocalNotifications(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearLocalNotifications")().asInstanceOf[Unit]
     
     /**
       * 删除指定的通知
       * */
-    @scala.inline
-    def clearNotificationById(params: NotificationId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearNotificationById")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def clearNotificationById(params: NotificationId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearNotificationById")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 删除别名
       */
-    @scala.inline
-    def deleteAlias(params: Sequence): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAlias")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def deleteAlias(params: Sequence): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAlias")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 删除指定id的地理围栏
       *
       */
-    @scala.inline
-    def deleteGeofence(params: GeoFenceID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteGeofence")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def deleteGeofence(params: GeoFenceID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteGeofence")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 删除指定标签
       *
       */
-    @scala.inline
-    def deleteTag(params: Sequence & Tags): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTag")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def deleteTag(params: Sequence & Tags): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTag")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 清除所有标签
       */
-    @scala.inline
-    def deleteTags(params: Sequence): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTags")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def deleteTags(params: Sequence): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTags")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取 RegistrationID
@@ -153,8 +138,7 @@ object mod {
       * 只有当应用程序成功注册到 JPush 的服务器时才返回对应的值,否则返回空字符串
       *
       */
-    @scala.inline
-    def getRegistrationID(callback: Callback[RegisterID]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegistrationID")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getRegistrationID(callback: Callback[RegisterID]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegistrationID")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 初始化推送服务
@@ -162,59 +146,50 @@ object mod {
       * 请在componentDidMount()调用init,否则会影响通知点击事件的回调
       *
       */
-    @scala.inline
-    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
     
     /**
       * 开启 CrashLog 上报
       *
       */
-    @scala.inline
-    def initCrashHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initCrashHandler")().asInstanceOf[Unit]
+    inline def initCrashHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initCrashHandler")().asInstanceOf[Unit]
     
     /**
       * 检查当前应用的通知开关是否开启
       * */
-    @scala.inline
-    def isNotificationEnabled(callback: Callback[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotificationEnabled")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def isNotificationEnabled(callback: Callback[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotificationEnabled")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 用来检查 Push Service 是否已经被停止
       *
       * @platform Android
       */
-    @scala.inline
-    def isPushStopped(callback: Callback[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isPushStopped")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def isPushStopped(callback: Callback[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isPushStopped")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 查询别名
       */
-    @scala.inline
-    def queryAlias(params: Sequence): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAlias")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def queryAlias(params: Sequence): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAlias")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 查询指定 tag 与当前用户绑定的状态
       */
-    @scala.inline
-    def queryTag(params: Sequence & Tag): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queryTag")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def queryTag(params: Sequence & Tag): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queryTag")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 查询所有标签
       */
-    @scala.inline
-    def queryTags(params: Sequence): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queryTags")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def queryTags(params: Sequence): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queryTags")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //移除事件
-    @scala.inline
-    def removeListener(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeListener(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 移除指定的本地通知
       *
       * messageID:唯一标识通知消息的ID,可用于移除消息
       */
-    @scala.inline
-    def removeLocalNotification(params: MessageID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeLocalNotification")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeLocalNotification(params: MessageID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeLocalNotification")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //***************************************Android Only***************************************
     /**
@@ -227,23 +202,20 @@ object mod {
       *
       * @platform Android
       */
-    @scala.inline
-    def requestPermission(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")().asInstanceOf[Unit]
+    inline def requestPermission(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")().asInstanceOf[Unit]
     
     /**
       * 恢复推送服务
       *
       * @platform Android
       */
-    @scala.inline
-    def resumePush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resumePush")().asInstanceOf[Unit]
+    inline def resumePush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resumePush")().asInstanceOf[Unit]
     
     /**
       * 设置别名
       * 需要理解的是,这个接口是覆盖逻辑,而不是增量逻辑。即新的调用会覆盖之前的设置
       */
-    @scala.inline
-    def setAlias(params: Sequence & Alias): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAlias")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setAlias(params: Sequence & Alias): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAlias")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //***************************************iOS Only***************************************
     /**
@@ -251,16 +223,14 @@ object mod {
       *
       * @platform iOS
       */
-    @scala.inline
-    def setBadge(params: AppBadge): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBadge")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setBadge(params: AppBadge): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBadge")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 动态配置 channel,优先级比 AndroidManifest 里配置的高
       *
       * @platform Android
       */
-    @scala.inline
-    def setChannel(params: Channel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setChannel")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setChannel(params: Channel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setChannel")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 设置保留最近通知条数
@@ -273,8 +243,7 @@ object mod {
       *
       * @platform Android
       */
-    @scala.inline
-    def setLatestNotificationNumber(params: NotificationMaxNumber): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLatestNotificationNumber")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setLatestNotificationNumber(params: NotificationMaxNumber): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLatestNotificationNumber")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 设置调试模式,默认关闭状态
@@ -283,8 +252,7 @@ object mod {
       * @param {boolean} enable
       *
       */
-    @scala.inline
-    def setLoggerEnable(enable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoggerEnable")(enable.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setLoggerEnable(enable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoggerEnable")(enable.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //***************************************地理围栏***************************************
     /**
@@ -292,21 +260,18 @@ object mod {
       * 默认数量为10个,允许设置最小1个,最大100个。
       *
       */
-    @scala.inline
-    def setMaxGeofenceNumber(params: GeoFenceMaxNumber): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxGeofenceNumber")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setMaxGeofenceNumber(params: GeoFenceMaxNumber): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxGeofenceNumber")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //***************************************统计***************************************
     /**
       * 设置手机号码。该接口会控制调用频率,频率为 10s 之内最多 3 次
       */
-    @scala.inline
-    def setMobileNumber(params: mobileNumberstringSequenc): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMobileNumber")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setMobileNumber(params: mobileNumberstringSequenc): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMobileNumber")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * JPush SDK 开启和关闭省电模式，默认为关闭。
       */
-    @scala.inline
-    def setPowerSaveMode(enable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPowerSaveMode")(enable.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setPowerSaveMode(enable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPowerSaveMode")(enable.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 设置允许推送时间
@@ -320,8 +285,7 @@ object mod {
       *
       * @platform Android
       */
-    @scala.inline
-    def setPushTime(params: PushTimeDays): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPushTime")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setPushTime(params: PushTimeDays): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPushTime")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 设置通知静默时间
@@ -332,24 +296,21 @@ object mod {
       *
       * @platform Android
       */
-    @scala.inline
-    def setSilenceTime(params: SilenceTimeEndHour): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSilenceTime")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setSilenceTime(params: SilenceTimeEndHour): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSilenceTime")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 停止推送服务
       *
       * @platform Android
       */
-    @scala.inline
-    def stopPush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPush")().asInstanceOf[Unit]
+    inline def stopPush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPush")().asInstanceOf[Unit]
     
     /**
       * 覆盖标签
       *
       * 需要理解的是,这个接口是覆盖逻辑,而不是增量逻辑。即新的调用会覆盖之前的设置
       */
-    @scala.inline
-    def updateTags(params: Sequence & Tags): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateTags")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def updateTags(params: Sequence & Tags): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateTags")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   trait Alias extends StObject {
@@ -362,17 +323,14 @@ object mod {
   }
   object Alias {
     
-    @scala.inline
-    def apply(alias: String): Alias = {
+    inline def apply(alias: String): Alias = {
       val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any])
       __obj.asInstanceOf[Alias]
     }
     
-    @scala.inline
-    implicit class AliasMutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
+    extension [Self <: Alias](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     }
   }
   
@@ -391,17 +349,14 @@ object mod {
   }
   object NotificationId {
     
-    @scala.inline
-    def apply(notificationId: String): NotificationId = {
+    inline def apply(notificationId: String): NotificationId = {
       val __obj = js.Dynamic.literal(notificationId = notificationId.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationId]
     }
     
-    @scala.inline
-    implicit class NotificationIdMutableBuilder[Self <: NotificationId] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationId](x: Self) {
       
-      @scala.inline
-      def setNotificationId(value: String): Self = StObject.set(x, "notificationId", value.asInstanceOf[js.Any])
+      inline def setNotificationId(value: String): Self = StObject.set(x, "notificationId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -414,17 +369,14 @@ object mod {
   }
   object Sequence {
     
-    @scala.inline
-    def apply(sequence: Double): Sequence = {
+    inline def apply(sequence: Double): Sequence = {
       val __obj = js.Dynamic.literal(sequence = sequence.asInstanceOf[js.Any])
       __obj.asInstanceOf[Sequence]
     }
     
-    @scala.inline
-    implicit class SequenceMutableBuilder[Self <: Sequence] (val x: Self) extends AnyVal {
+    extension [Self <: Sequence](x: Self) {
       
-      @scala.inline
-      def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+      inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     }
   }
   
@@ -439,17 +391,14 @@ object mod {
   }
   object Tag {
     
-    @scala.inline
-    def apply(tag: String): Tag = {
+    inline def apply(tag: String): Tag = {
       val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tag]
     }
     
-    @scala.inline
-    implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+    extension [Self <: Tag](x: Self) {
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -464,20 +413,16 @@ object mod {
   }
   object Tags {
     
-    @scala.inline
-    def apply(tags: js.Array[String]): Tags = {
+    inline def apply(tags: js.Array[String]): Tags = {
       val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tags]
     }
     
-    @scala.inline
-    implicit class TagsMutableBuilder[Self <: Tags] (val x: Self) extends AnyVal {
+    extension [Self <: Tags](x: Self) {
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
 }

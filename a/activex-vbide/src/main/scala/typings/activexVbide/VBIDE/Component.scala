@@ -16,13 +16,12 @@ trait Component extends StObject {
   @JSName("Parent")
   val Parent_Original: Components
   
-  @JSName("VBIDE.Component_typekey")
+  /* private */ @JSName("VBIDE.Component_typekey")
   var VBIDEDotComponent_typekey: Component
 }
 object Component {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     IsDirty: Boolean,
     Name: String,
@@ -34,22 +33,16 @@ object Component {
     __obj.asInstanceOf[Component]
   }
   
-  @scala.inline
-  implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
+  extension [Self <: Component](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDirty(value: Boolean): Self = StObject.set(x, "IsDirty", value.asInstanceOf[js.Any])
+    inline def setIsDirty(value: Boolean): Self = StObject.set(x, "IsDirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Components): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Components): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBIDEDotComponent_typekey(value: Component): Self = StObject.set(x, "VBIDE.Component_typekey", value.asInstanceOf[js.Any])
+    inline def setVBIDEDotComponent_typekey(value: Component): Self = StObject.set(x, "VBIDE.Component_typekey", value.asInstanceOf[js.Any])
   }
 }

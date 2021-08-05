@@ -79,8 +79,7 @@ object UI {
        with ICredentialPickerOptions
   object CredentialPickerOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alwaysDisplayDialog: Boolean,
       authenticationProtocol: AuthenticationProtocol,
       callerSavesCredential: Boolean,
@@ -102,8 +101,7 @@ object UI {
        with ICredentialPickerResults
   object CredentialPickerResults {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       credential: IBuffer,
       credentialDomainName: String,
       credentialPassword: String,
@@ -141,8 +139,7 @@ object UI {
   }
   object ICredentialPickerOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alwaysDisplayDialog: Boolean,
       authenticationProtocol: AuthenticationProtocol,
       callerSavesCredential: Boolean,
@@ -158,38 +155,27 @@ object UI {
       __obj.asInstanceOf[ICredentialPickerOptions]
     }
     
-    @scala.inline
-    implicit class ICredentialPickerOptionsMutableBuilder[Self <: ICredentialPickerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICredentialPickerOptions](x: Self) {
       
-      @scala.inline
-      def setAlwaysDisplayDialog(value: Boolean): Self = StObject.set(x, "alwaysDisplayDialog", value.asInstanceOf[js.Any])
+      inline def setAlwaysDisplayDialog(value: Boolean): Self = StObject.set(x, "alwaysDisplayDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticationProtocol(value: AuthenticationProtocol): Self = StObject.set(x, "authenticationProtocol", value.asInstanceOf[js.Any])
+      inline def setAuthenticationProtocol(value: AuthenticationProtocol): Self = StObject.set(x, "authenticationProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallerSavesCredential(value: Boolean): Self = StObject.set(x, "callerSavesCredential", value.asInstanceOf[js.Any])
+      inline def setCallerSavesCredential(value: Boolean): Self = StObject.set(x, "callerSavesCredential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialSaveOption(value: CredentialSaveOption): Self = StObject.set(x, "credentialSaveOption", value.asInstanceOf[js.Any])
+      inline def setCredentialSaveOption(value: CredentialSaveOption): Self = StObject.set(x, "credentialSaveOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomAuthenticationProtocol(value: String): Self = StObject.set(x, "customAuthenticationProtocol", value.asInstanceOf[js.Any])
+      inline def setCustomAuthenticationProtocol(value: String): Self = StObject.set(x, "customAuthenticationProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousCredential(value: IBuffer): Self = StObject.set(x, "previousCredential", value.asInstanceOf[js.Any])
+      inline def setPreviousCredential(value: IBuffer): Self = StObject.set(x, "previousCredential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
+      inline def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,8 +197,7 @@ object UI {
   }
   object ICredentialPickerResults {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       credential: IBuffer,
       credentialDomainName: String,
       credentialPassword: String,
@@ -225,29 +210,21 @@ object UI {
       __obj.asInstanceOf[ICredentialPickerResults]
     }
     
-    @scala.inline
-    implicit class ICredentialPickerResultsMutableBuilder[Self <: ICredentialPickerResults] (val x: Self) extends AnyVal {
+    extension [Self <: ICredentialPickerResults](x: Self) {
       
-      @scala.inline
-      def setCredential(value: IBuffer): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+      inline def setCredential(value: IBuffer): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialDomainName(value: String): Self = StObject.set(x, "credentialDomainName", value.asInstanceOf[js.Any])
+      inline def setCredentialDomainName(value: String): Self = StObject.set(x, "credentialDomainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialPassword(value: String): Self = StObject.set(x, "credentialPassword", value.asInstanceOf[js.Any])
+      inline def setCredentialPassword(value: String): Self = StObject.set(x, "credentialPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialSaveOption(value: CredentialSaveOption): Self = StObject.set(x, "credentialSaveOption", value.asInstanceOf[js.Any])
+      inline def setCredentialSaveOption(value: CredentialSaveOption): Self = StObject.set(x, "credentialSaveOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialSaved(value: Boolean): Self = StObject.set(x, "credentialSaved", value.asInstanceOf[js.Any])
+      inline def setCredentialSaved(value: Boolean): Self = StObject.set(x, "credentialSaved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialUserName(value: String): Self = StObject.set(x, "credentialUserName", value.asInstanceOf[js.Any])
+      inline def setCredentialUserName(value: String): Self = StObject.set(x, "credentialUserName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     }
   }
   

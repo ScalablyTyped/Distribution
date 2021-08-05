@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def logOperationInfoMiddleware[Input /* <: js.Object */, Output /* <: MetadataBearer */](next: Handler[Input, Output], hasLoggerModel: HandlerExecutionContext): js.Function1[
+  inline def logOperationInfoMiddleware[Input /* <: js.Object */, Output /* <: MetadataBearer */](next: Handler[Input, Output], hasLoggerModel: HandlerExecutionContext): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HandlerArguments<Input> */ /* args */ js.Any, 
     js.Promise[Output]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("logOperationInfoMiddleware")(next.asInstanceOf[js.Any], hasLoggerModel.asInstanceOf[js.Any])).asInstanceOf[js.Function1[

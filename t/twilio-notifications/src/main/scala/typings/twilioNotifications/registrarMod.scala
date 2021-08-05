@@ -20,7 +20,7 @@ object registrarMod {
       */
     def this(productId: String, transport: js.Any, twilsock: js.Any, config: js.Any) = this()
     
-    val config: js.Any = js.native
+    /* private */ val config: js.Any = js.native
     
     /**
       * @param {String} type Channel type
@@ -28,12 +28,12 @@ object registrarMod {
       */
     def connector(`type`: ChannelType): Connector = js.native
     
-    val connectors: js.Any = js.native
+    /* private */ val connectors: js.Any = js.native
     
     /**
       * Returns platform string limited to max 128 chars
       */
-    var detectPlatform: js.Any = js.native
+    /* private */ var detectPlatform: js.Any = js.native
     
     /**
       *  Sets notification ID.

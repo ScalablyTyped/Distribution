@@ -24,25 +24,19 @@ trait ExecuteWasmEvaluatorRequest extends StObject {
 }
 object ExecuteWasmEvaluatorRequest {
   
-  @scala.inline
-  def apply(callFrameId: CallFrameId, evaluator: String): ExecuteWasmEvaluatorRequest = {
+  inline def apply(callFrameId: CallFrameId, evaluator: String): ExecuteWasmEvaluatorRequest = {
     val __obj = js.Dynamic.literal(callFrameId = callFrameId.asInstanceOf[js.Any], evaluator = evaluator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteWasmEvaluatorRequest]
   }
   
-  @scala.inline
-  implicit class ExecuteWasmEvaluatorRequestMutableBuilder[Self <: ExecuteWasmEvaluatorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteWasmEvaluatorRequest](x: Self) {
     
-    @scala.inline
-    def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
+    inline def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluator(value: String): Self = StObject.set(x, "evaluator", value.asInstanceOf[js.Any])
+    inline def setEvaluator(value: String): Self = StObject.set(x, "evaluator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: TimeDelta): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: TimeDelta): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

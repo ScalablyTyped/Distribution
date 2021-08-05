@@ -18,19 +18,15 @@ trait UndeprecateWorkflowTypeInput extends StObject {
 }
 object UndeprecateWorkflowTypeInput {
   
-  @scala.inline
-  def apply(domain: DomainName, workflowType: WorkflowType): UndeprecateWorkflowTypeInput = {
+  inline def apply(domain: DomainName, workflowType: WorkflowType): UndeprecateWorkflowTypeInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UndeprecateWorkflowTypeInput]
   }
   
-  @scala.inline
-  implicit class UndeprecateWorkflowTypeInputMutableBuilder[Self <: UndeprecateWorkflowTypeInput] (val x: Self) extends AnyVal {
+  extension [Self <: UndeprecateWorkflowTypeInput](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
+    inline def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
   }
 }

@@ -15,17 +15,14 @@ object DataTables {
   }
   object Api {
     
-    @scala.inline
-    def apply(rowGroup: () => RowGroupApi): Api = {
+    inline def apply(rowGroup: () => RowGroupApi): Api = {
       val __obj = js.Dynamic.literal(rowGroup = js.Any.fromFunction0(rowGroup))
       __obj.asInstanceOf[Api]
     }
     
-    @scala.inline
-    implicit class ApiMutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
+    extension [Self <: Api](x: Self) {
       
-      @scala.inline
-      def setRowGroup(value: () => RowGroupApi): Self = StObject.set(x, "rowGroup", js.Any.fromFunction0(value))
+      inline def setRowGroup(value: () => RowGroupApi): Self = StObject.set(x, "rowGroup", js.Any.fromFunction0(value))
     }
   }
   
@@ -91,50 +88,36 @@ object DataTables {
   }
   object RowGroupSettings {
     
-    @scala.inline
-    def apply(): RowGroupSettings = {
+    inline def apply(): RowGroupSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RowGroupSettings]
     }
     
-    @scala.inline
-    implicit class RowGroupSettingsMutableBuilder[Self <: RowGroupSettings] (val x: Self) extends AnyVal {
+    extension [Self <: RowGroupSettings](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataSrc(value: Double | String): Self = StObject.set(x, "dataSrc", value.asInstanceOf[js.Any])
+      inline def setDataSrc(value: Double | String): Self = StObject.set(x, "dataSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSrcUndefined: Self = StObject.set(x, "dataSrc", js.undefined)
+      inline def setDataSrcUndefined: Self = StObject.set(x, "dataSrc", js.undefined)
       
-      @scala.inline
-      def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+      inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+      inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      @scala.inline
-      def setEndClassName(value: String): Self = StObject.set(x, "endClassName", value.asInstanceOf[js.Any])
+      inline def setEndClassName(value: String): Self = StObject.set(x, "endClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndClassNameUndefined: Self = StObject.set(x, "endClassName", js.undefined)
+      inline def setEndClassNameUndefined: Self = StObject.set(x, "endClassName", js.undefined)
       
-      @scala.inline
-      def setEndRender(value: (/* rows */ Api, /* group */ String) => String | HTMLElement | JQuery): Self = StObject.set(x, "endRender", js.Any.fromFunction2(value))
+      inline def setEndRender(value: (/* rows */ Api, /* group */ String) => String | HTMLElement | JQuery): Self = StObject.set(x, "endRender", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEndRenderUndefined: Self = StObject.set(x, "endRender", js.undefined)
+      inline def setEndRenderUndefined: Self = StObject.set(x, "endRender", js.undefined)
       
-      @scala.inline
-      def setStartRender(value: (/* rows */ Api, /* group */ String) => String | HTMLElement | JQuery): Self = StObject.set(x, "startRender", js.Any.fromFunction2(value))
+      inline def setStartRender(value: (/* rows */ Api, /* group */ String) => String | HTMLElement | JQuery): Self = StObject.set(x, "startRender", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStartRenderUndefined: Self = StObject.set(x, "startRender", js.undefined)
+      inline def setStartRenderUndefined: Self = StObject.set(x, "startRender", js.undefined)
     }
   }
   
@@ -157,20 +140,16 @@ object DataTables {
   }
   object Settings {
     
-    @scala.inline
-    def apply(): Settings = {
+    inline def apply(): Settings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setRowGroup(value: Boolean | RowGroupSettings): Self = StObject.set(x, "rowGroup", value.asInstanceOf[js.Any])
+      inline def setRowGroup(value: Boolean | RowGroupSettings): Self = StObject.set(x, "rowGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowGroupUndefined: Self = StObject.set(x, "rowGroup", js.undefined)
+      inline def setRowGroupUndefined: Self = StObject.set(x, "rowGroup", js.undefined)
     }
   }
   
@@ -180,17 +159,14 @@ object DataTables {
   }
   object StaticFunctions {
     
-    @scala.inline
-    def apply(RowGroup: RowGroupStaticFunctions): StaticFunctions = {
+    inline def apply(RowGroup: RowGroupStaticFunctions): StaticFunctions = {
       val __obj = js.Dynamic.literal(RowGroup = RowGroup.asInstanceOf[js.Any])
       __obj.asInstanceOf[StaticFunctions]
     }
     
-    @scala.inline
-    implicit class StaticFunctionsMutableBuilder[Self <: StaticFunctions] (val x: Self) extends AnyVal {
+    extension [Self <: StaticFunctions](x: Self) {
       
-      @scala.inline
-      def setRowGroup(value: RowGroupStaticFunctions): Self = StObject.set(x, "RowGroup", value.asInstanceOf[js.Any])
+      inline def setRowGroup(value: RowGroupStaticFunctions): Self = StObject.set(x, "RowGroup", value.asInstanceOf[js.Any])
     }
   }
 }

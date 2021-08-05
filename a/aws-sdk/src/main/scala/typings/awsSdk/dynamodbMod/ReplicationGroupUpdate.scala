@@ -23,31 +23,23 @@ trait ReplicationGroupUpdate extends StObject {
 }
 object ReplicationGroupUpdate {
   
-  @scala.inline
-  def apply(): ReplicationGroupUpdate = {
+  inline def apply(): ReplicationGroupUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationGroupUpdate]
   }
   
-  @scala.inline
-  implicit class ReplicationGroupUpdateMutableBuilder[Self <: ReplicationGroupUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationGroupUpdate](x: Self) {
     
-    @scala.inline
-    def setCreate(value: CreateReplicationGroupMemberAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: CreateReplicationGroupMemberAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
     
-    @scala.inline
-    def setDelete(value: DeleteReplicationGroupMemberAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: DeleteReplicationGroupMemberAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
+    inline def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: UpdateReplicationGroupMemberAction): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: UpdateReplicationGroupMemberAction): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
   }
 }

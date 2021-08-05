@@ -18,25 +18,19 @@ trait GoogleActionsV2UserNotification extends StObject {
 }
 object GoogleActionsV2UserNotification {
   
-  @scala.inline
-  def apply(): GoogleActionsV2UserNotification = {
+  inline def apply(): GoogleActionsV2UserNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2UserNotification]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2UserNotificationMutableBuilder[Self <: GoogleActionsV2UserNotification] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2UserNotification](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

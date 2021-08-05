@@ -50,49 +50,35 @@ trait ParamNamesOptions extends StObject {
 }
 object ParamNamesOptions {
   
-  @scala.inline
-  def apply(): ParamNamesOptions = {
+  inline def apply(): ParamNamesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamNamesOptions]
   }
   
-  @scala.inline
-  implicit class ParamNamesOptionsMutableBuilder[Self <: ParamNamesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ParamNamesOptions](x: Self) {
     
-    @scala.inline
-    def setChunkSize(value: String): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+    inline def setChunkSize(value: String): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+    inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
-    @scala.inline
-    def setPartByteOffset(value: String): Self = StObject.set(x, "partByteOffset", value.asInstanceOf[js.Any])
+    inline def setPartByteOffset(value: String): Self = StObject.set(x, "partByteOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartByteOffsetUndefined: Self = StObject.set(x, "partByteOffset", js.undefined)
+    inline def setPartByteOffsetUndefined: Self = StObject.set(x, "partByteOffset", js.undefined)
     
-    @scala.inline
-    def setPartIndex(value: String): Self = StObject.set(x, "partIndex", value.asInstanceOf[js.Any])
+    inline def setPartIndex(value: String): Self = StObject.set(x, "partIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartIndexUndefined: Self = StObject.set(x, "partIndex", js.undefined)
+    inline def setPartIndexUndefined: Self = StObject.set(x, "partIndex", js.undefined)
     
-    @scala.inline
-    def setResuming(value: String): Self = StObject.set(x, "resuming", value.asInstanceOf[js.Any])
+    inline def setResuming(value: String): Self = StObject.set(x, "resuming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumingUndefined: Self = StObject.set(x, "resuming", js.undefined)
+    inline def setResumingUndefined: Self = StObject.set(x, "resuming", js.undefined)
     
-    @scala.inline
-    def setTotalFileSize(value: String): Self = StObject.set(x, "totalFileSize", value.asInstanceOf[js.Any])
+    inline def setTotalFileSize(value: String): Self = StObject.set(x, "totalFileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalFileSizeUndefined: Self = StObject.set(x, "totalFileSize", js.undefined)
+    inline def setTotalFileSizeUndefined: Self = StObject.set(x, "totalFileSize", js.undefined)
     
-    @scala.inline
-    def setTotalParts(value: String): Self = StObject.set(x, "totalParts", value.asInstanceOf[js.Any])
+    inline def setTotalParts(value: String): Self = StObject.set(x, "totalParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPartsUndefined: Self = StObject.set(x, "totalParts", js.undefined)
+    inline def setTotalPartsUndefined: Self = StObject.set(x, "totalParts", js.undefined)
   }
 }

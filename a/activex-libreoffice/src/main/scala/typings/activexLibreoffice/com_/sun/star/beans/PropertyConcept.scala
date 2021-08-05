@@ -21,19 +21,14 @@ object PropertyConcept {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ALL: `-1` = -1.asInstanceOf[`-1`]
+    inline def ALL: `-1` = -1.asInstanceOf[`-1`]
     
-    @scala.inline
-    def ATTRIBUTES: `4` = 4.asInstanceOf[`4`]
+    inline def ATTRIBUTES: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def DANGEROUS: `1` = 1.asInstanceOf[`1`]
+    inline def DANGEROUS: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def METHODS: `8` = 8.asInstanceOf[`8`]
+    inline def METHODS: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def PROPERTYSET: `2` = 2.asInstanceOf[`2`]
+    inline def PROPERTYSET: `2` = 2.asInstanceOf[`2`]
   }
 }

@@ -17,40 +17,29 @@ trait PipelineDescription extends StObject {
 }
 object PipelineDescription {
   
-  @scala.inline
-  def apply(): PipelineDescription = {
+  inline def apply(): PipelineDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PipelineDescription]
   }
   
-  @scala.inline
-  implicit class PipelineDescriptionMutableBuilder[Self <: PipelineDescription] (val x: Self) extends AnyVal {
+  extension [Self <: PipelineDescription](x: Self) {
     
-    @scala.inline
-    def setDisplayData(value: js.Array[DisplayData]): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
+    inline def setDisplayData(value: js.Array[DisplayData]): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayDataUndefined: Self = StObject.set(x, "displayData", js.undefined)
+    inline def setDisplayDataUndefined: Self = StObject.set(x, "displayData", js.undefined)
     
-    @scala.inline
-    def setDisplayDataVarargs(value: DisplayData*): Self = StObject.set(x, "displayData", js.Array(value :_*))
+    inline def setDisplayDataVarargs(value: DisplayData*): Self = StObject.set(x, "displayData", js.Array(value :_*))
     
-    @scala.inline
-    def setExecutionPipelineStage(value: js.Array[ExecutionStageSummary]): Self = StObject.set(x, "executionPipelineStage", value.asInstanceOf[js.Any])
+    inline def setExecutionPipelineStage(value: js.Array[ExecutionStageSummary]): Self = StObject.set(x, "executionPipelineStage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionPipelineStageUndefined: Self = StObject.set(x, "executionPipelineStage", js.undefined)
+    inline def setExecutionPipelineStageUndefined: Self = StObject.set(x, "executionPipelineStage", js.undefined)
     
-    @scala.inline
-    def setExecutionPipelineStageVarargs(value: ExecutionStageSummary*): Self = StObject.set(x, "executionPipelineStage", js.Array(value :_*))
+    inline def setExecutionPipelineStageVarargs(value: ExecutionStageSummary*): Self = StObject.set(x, "executionPipelineStage", js.Array(value :_*))
     
-    @scala.inline
-    def setOriginalPipelineTransform(value: js.Array[TransformSummary]): Self = StObject.set(x, "originalPipelineTransform", value.asInstanceOf[js.Any])
+    inline def setOriginalPipelineTransform(value: js.Array[TransformSummary]): Self = StObject.set(x, "originalPipelineTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalPipelineTransformUndefined: Self = StObject.set(x, "originalPipelineTransform", js.undefined)
+    inline def setOriginalPipelineTransformUndefined: Self = StObject.set(x, "originalPipelineTransform", js.undefined)
     
-    @scala.inline
-    def setOriginalPipelineTransformVarargs(value: TransformSummary*): Self = StObject.set(x, "originalPipelineTransform", js.Array(value :_*))
+    inline def setOriginalPipelineTransformVarargs(value: TransformSummary*): Self = StObject.set(x, "originalPipelineTransform", js.Array(value :_*))
   }
 }

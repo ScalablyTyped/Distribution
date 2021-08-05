@@ -17,22 +17,17 @@ trait BindingCalledEvent extends StObject {
 }
 object BindingCalledEvent {
   
-  @scala.inline
-  def apply(executionContextId: ExecutionContextId, name: String, payload: String): BindingCalledEvent = {
+  inline def apply(executionContextId: ExecutionContextId, name: String, payload: String): BindingCalledEvent = {
     val __obj = js.Dynamic.literal(executionContextId = executionContextId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingCalledEvent]
   }
   
-  @scala.inline
-  implicit class BindingCalledEventMutableBuilder[Self <: BindingCalledEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BindingCalledEvent](x: Self) {
     
-    @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
+    inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
   }
 }

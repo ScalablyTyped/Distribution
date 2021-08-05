@@ -18,22 +18,17 @@ trait GCMChannelRequest extends StObject {
 }
 object GCMChannelRequest {
   
-  @scala.inline
-  def apply(ApiKey: string): GCMChannelRequest = {
+  inline def apply(ApiKey: string): GCMChannelRequest = {
     val __obj = js.Dynamic.literal(ApiKey = ApiKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GCMChannelRequest]
   }
   
-  @scala.inline
-  implicit class GCMChannelRequestMutableBuilder[Self <: GCMChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GCMChannelRequest](x: Self) {
     
-    @scala.inline
-    def setApiKey(value: string): Self = StObject.set(x, "ApiKey", value.asInstanceOf[js.Any])
+    inline def setApiKey(value: string): Self = StObject.set(x, "ApiKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

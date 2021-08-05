@@ -15,7 +15,7 @@ object clientTransactionMod {
   @JSImport("sip.js/lib/core/transactions/client-transaction", "ClientTransaction")
   @js.native
   abstract class ClientTransaction protected () extends Transaction {
-    protected def this(
+    /* protected */ def this(
       _request: OutgoingRequestMessage,
       transport: Transport,
       user: ClientTransactionUser,
@@ -23,7 +23,7 @@ object clientTransactionMod {
       loggerCategory: String
     ) = this()
     
-    var _request: js.Any = js.native
+    /* private */ var _request: js.Any = js.native
     
     /**
       * A 408 to non-INVITE will always arrive too late to be useful ([3]),
@@ -47,7 +47,7 @@ object clientTransactionMod {
     /** The outgoing request the transaction handling. */
     def request: OutgoingRequestMessage = js.native
     
-    var user: ClientTransactionUser = js.native
+    /* protected */ var user: ClientTransactionUser = js.native
   }
   /* static members */
   object ClientTransaction {
@@ -59,7 +59,6 @@ object clientTransactionMod {
     @JSImport("sip.js/lib/core/transactions/client-transaction", "ClientTransaction.makeId")
     @js.native
     def makeId: js.Any = js.native
-    @scala.inline
-    def makeId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
+    inline def makeId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
   }
 }

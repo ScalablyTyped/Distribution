@@ -15,26 +15,20 @@ object anon {
   }
   object Bold {
     
-    @scala.inline
-    def apply(): Bold = {
+    inline def apply(): Bold = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Bold]
     }
     
-    @scala.inline
-    implicit class BoldMutableBuilder[Self <: Bold] (val x: Self) extends AnyVal {
+    extension [Self <: Bold](x: Self) {
       
-      @scala.inline
-      def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+      inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
       
-      @scala.inline
-      def setRegular(value: String): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
+      inline def setRegular(value: String): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegularUndefined: Self = StObject.set(x, "regular", js.undefined)
+      inline def setRegularUndefined: Self = StObject.set(x, "regular", js.undefined)
     }
   }
   
@@ -48,29 +42,22 @@ object anon {
   }
   object Disabled {
     
-    @scala.inline
-    def apply(value: String): Disabled = {
+    inline def apply(value: String): Disabled = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Disabled]
     }
     
-    @scala.inline
-    implicit class DisabledMutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
+    extension [Self <: Disabled](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String | ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String | ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,20 +69,16 @@ object anon {
   }
   object Label {
     
-    @scala.inline
-    def apply(label: String, value: String): Label = {
+    inline def apply(label: String, value: String): Label = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Label]
     }
     
-    @scala.inline
-    implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+    extension [Self <: Label](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,23 +90,18 @@ object anon {
   }
   object LabelValue {
     
-    @scala.inline
-    def apply(value: String): LabelValue = {
+    inline def apply(value: String): LabelValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[LabelValue]
     }
     
-    @scala.inline
-    implicit class LabelValueMutableBuilder[Self <: LabelValue] (val x: Self) extends AnyVal {
+    extension [Self <: LabelValue](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String | ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String | ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,26 +113,20 @@ object anon {
   }
   object Primary {
     
-    @scala.inline
-    def apply(): Primary = {
+    inline def apply(): Primary = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Primary]
     }
     
-    @scala.inline
-    implicit class PrimaryMutableBuilder[Self <: Primary] (val x: Self) extends AnyVal {
+    extension [Self <: Primary](x: Self) {
       
-      @scala.inline
-      def setPrimary(value: Bold): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: Bold): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+      inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
       
-      @scala.inline
-      def setSecondary(value: Bold): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+      inline def setSecondary(value: Bold): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+      inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     }
   }
   
@@ -168,32 +140,24 @@ object anon {
   }
   object PrimaryDark {
     
-    @scala.inline
-    def apply(): PrimaryDark = {
+    inline def apply(): PrimaryDark = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrimaryDark]
     }
     
-    @scala.inline
-    implicit class PrimaryDarkMutableBuilder[Self <: PrimaryDark] (val x: Self) extends AnyVal {
+    extension [Self <: PrimaryDark](x: Self) {
       
-      @scala.inline
-      def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryDark(value: String): Self = StObject.set(x, "primaryDark", value.asInstanceOf[js.Any])
+      inline def setPrimaryDark(value: String): Self = StObject.set(x, "primaryDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryDarkUndefined: Self = StObject.set(x, "primaryDark", js.undefined)
+      inline def setPrimaryDarkUndefined: Self = StObject.set(x, "primaryDark", js.undefined)
       
-      @scala.inline
-      def setPrimaryLight(value: String): Self = StObject.set(x, "primaryLight", value.asInstanceOf[js.Any])
+      inline def setPrimaryLight(value: String): Self = StObject.set(x, "primaryLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryLightUndefined: Self = StObject.set(x, "primaryLight", js.undefined)
+      inline def setPrimaryLightUndefined: Self = StObject.set(x, "primaryLight", js.undefined)
       
-      @scala.inline
-      def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+      inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     }
   }
   
@@ -205,26 +169,20 @@ object anon {
   }
   object Regular {
     
-    @scala.inline
-    def apply(): Regular = {
+    inline def apply(): Regular = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Regular]
     }
     
-    @scala.inline
-    implicit class RegularMutableBuilder[Self <: Regular] (val x: Self) extends AnyVal {
+    extension [Self <: Regular](x: Self) {
       
-      @scala.inline
-      def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+      inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
       
-      @scala.inline
-      def setRegular(value: String): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
+      inline def setRegular(value: String): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegularUndefined: Self = StObject.set(x, "regular", js.undefined)
+      inline def setRegularUndefined: Self = StObject.set(x, "regular", js.undefined)
     }
   }
   
@@ -236,20 +194,16 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply(label: js.Any, value: String): Value = {
+    inline def apply(label: js.Any, value: String): Value = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

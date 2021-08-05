@@ -62,8 +62,7 @@ object oscmdMod {
   }
   object OsCmd {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       diskUsage: () => js.Promise[String],
       ifconfig: () => js.Promise[String],
       openPorts: () => js.Promise[String],
@@ -78,35 +77,25 @@ object oscmdMod {
       __obj.asInstanceOf[OsCmd]
     }
     
-    @scala.inline
-    implicit class OsCmdMutableBuilder[Self <: OsCmd] (val x: Self) extends AnyVal {
+    extension [Self <: OsCmd](x: Self) {
       
-      @scala.inline
-      def setDiskUsage(value: () => js.Promise[String]): Self = StObject.set(x, "diskUsage", js.Any.fromFunction0(value))
+      inline def setDiskUsage(value: () => js.Promise[String]): Self = StObject.set(x, "diskUsage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIfconfig(value: () => js.Promise[String]): Self = StObject.set(x, "ifconfig", js.Any.fromFunction0(value))
+      inline def setIfconfig(value: () => js.Promise[String]): Self = StObject.set(x, "ifconfig", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpenPorts(value: () => js.Promise[String]): Self = StObject.set(x, "openPorts", js.Any.fromFunction0(value))
+      inline def setOpenPorts(value: () => js.Promise[String]): Self = StObject.set(x, "openPorts", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProcessesUsers(value: () => js.Promise[String]): Self = StObject.set(x, "processesUsers", js.Any.fromFunction0(value))
+      inline def setProcessesUsers(value: () => js.Promise[String]): Self = StObject.set(x, "processesUsers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTopCpu(value: () => js.Function0[js.Promise[String]]): Self = StObject.set(x, "topCpu", js.Any.fromFunction0(value))
+      inline def setTopCpu(value: () => js.Function0[js.Promise[String]]): Self = StObject.set(x, "topCpu", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTopMem(value: () => js.Promise[String]): Self = StObject.set(x, "topMem", js.Any.fromFunction0(value))
+      inline def setTopMem(value: () => js.Promise[String]): Self = StObject.set(x, "topMem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVmstats(value: () => js.Promise[String]): Self = StObject.set(x, "vmstats", js.Any.fromFunction0(value))
+      inline def setVmstats(value: () => js.Promise[String]): Self = StObject.set(x, "vmstats", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWho(value: () => js.Promise[String]): Self = StObject.set(x, "who", js.Any.fromFunction0(value))
+      inline def setWho(value: () => js.Promise[String]): Self = StObject.set(x, "who", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWhoami(value: () => js.Promise[String]): Self = StObject.set(x, "whoami", js.Any.fromFunction0(value))
+      inline def setWhoami(value: () => js.Promise[String]): Self = StObject.set(x, "whoami", js.Any.fromFunction0(value))
     }
   }
 }

@@ -26,49 +26,35 @@ trait PosCustomBatchResponseEntry extends StObject {
 }
 object PosCustomBatchResponseEntry {
   
-  @scala.inline
-  def apply(): PosCustomBatchResponseEntry = {
+  inline def apply(): PosCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PosCustomBatchResponseEntry]
   }
   
-  @scala.inline
-  implicit class PosCustomBatchResponseEntryMutableBuilder[Self <: PosCustomBatchResponseEntry] (val x: Self) extends AnyVal {
+  extension [Self <: PosCustomBatchResponseEntry](x: Self) {
     
-    @scala.inline
-    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setInventory(value: PosInventory): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
+    inline def setInventory(value: PosInventory): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventoryUndefined: Self = StObject.set(x, "inventory", js.undefined)
+    inline def setInventoryUndefined: Self = StObject.set(x, "inventory", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSale(value: PosSale): Self = StObject.set(x, "sale", value.asInstanceOf[js.Any])
+    inline def setSale(value: PosSale): Self = StObject.set(x, "sale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaleUndefined: Self = StObject.set(x, "sale", js.undefined)
+    inline def setSaleUndefined: Self = StObject.set(x, "sale", js.undefined)
     
-    @scala.inline
-    def setStore(value: PosStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: PosStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+    inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
   }
 }

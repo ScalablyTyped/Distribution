@@ -6,6 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  @scala.inline
-  def Chain[T](param: T): T = js.Dynamic.global.applyDynamic("Chain")(param.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def Chain[T](param: T): T = js.Dynamic.global.applyDynamic("Chain")(param.asInstanceOf[js.Any]).asInstanceOf[T]
 }

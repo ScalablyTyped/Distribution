@@ -40,43 +40,31 @@ trait Hook extends StObject {
 }
 object Hook {
   
-  @scala.inline
-  def apply(): Hook = {
+  inline def apply(): Hook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hook]
   }
   
-  @scala.inline
-  implicit class HookMutableBuilder[Self <: Hook] (val x: Self) extends AnyVal {
+  extension [Self <: Hook](x: Self) {
     
-    @scala.inline
-    def setHook(value: String): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+    inline def setHook(value: String): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)
+    inline def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)
     
-    @scala.inline
-    def `setOffset-x`(value: Double): Self = StObject.set(x, "offset-x", value.asInstanceOf[js.Any])
+    inline def `setOffset-x`(value: Double): Self = StObject.set(x, "offset-x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOffset-xUndefined`: Self = StObject.set(x, "offset-x", js.undefined)
+    inline def `setOffset-xUndefined`: Self = StObject.set(x, "offset-x", js.undefined)
     
-    @scala.inline
-    def `setOffset-y`(value: Double): Self = StObject.set(x, "offset-y", value.asInstanceOf[js.Any])
+    inline def `setOffset-y`(value: Double): Self = StObject.set(x, "offset-y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOffset-yUndefined`: Self = StObject.set(x, "offset-y", js.undefined)
+    inline def `setOffset-yUndefined`: Self = StObject.set(x, "offset-y", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

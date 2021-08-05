@@ -17,25 +17,19 @@ trait UpdateSpreadsheetPropertiesRequest extends StObject {
 }
 object UpdateSpreadsheetPropertiesRequest {
   
-  @scala.inline
-  def apply(): UpdateSpreadsheetPropertiesRequest = {
+  inline def apply(): UpdateSpreadsheetPropertiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSpreadsheetPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSpreadsheetPropertiesRequestMutableBuilder[Self <: UpdateSpreadsheetPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSpreadsheetPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setProperties(value: SpreadsheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SpreadsheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

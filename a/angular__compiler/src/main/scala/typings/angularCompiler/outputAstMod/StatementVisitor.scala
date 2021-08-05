@@ -24,8 +24,7 @@ trait StatementVisitor extends StObject {
 }
 object StatementVisitor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     visitDeclareClassStmt: (ClassStmt, js.Any) => js.Any,
     visitDeclareFunctionStmt: (DeclareFunctionStmt, js.Any) => js.Any,
     visitDeclareVarStmt: (DeclareVarStmt, js.Any) => js.Any,
@@ -39,31 +38,22 @@ object StatementVisitor {
     __obj.asInstanceOf[StatementVisitor]
   }
   
-  @scala.inline
-  implicit class StatementVisitorMutableBuilder[Self <: StatementVisitor] (val x: Self) extends AnyVal {
+  extension [Self <: StatementVisitor](x: Self) {
     
-    @scala.inline
-    def setVisitDeclareClassStmt(value: (ClassStmt, js.Any) => js.Any): Self = StObject.set(x, "visitDeclareClassStmt", js.Any.fromFunction2(value))
+    inline def setVisitDeclareClassStmt(value: (ClassStmt, js.Any) => js.Any): Self = StObject.set(x, "visitDeclareClassStmt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVisitDeclareFunctionStmt(value: (DeclareFunctionStmt, js.Any) => js.Any): Self = StObject.set(x, "visitDeclareFunctionStmt", js.Any.fromFunction2(value))
+    inline def setVisitDeclareFunctionStmt(value: (DeclareFunctionStmt, js.Any) => js.Any): Self = StObject.set(x, "visitDeclareFunctionStmt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVisitDeclareVarStmt(value: (DeclareVarStmt, js.Any) => js.Any): Self = StObject.set(x, "visitDeclareVarStmt", js.Any.fromFunction2(value))
+    inline def setVisitDeclareVarStmt(value: (DeclareVarStmt, js.Any) => js.Any): Self = StObject.set(x, "visitDeclareVarStmt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVisitExpressionStmt(value: (ExpressionStatement, js.Any) => js.Any): Self = StObject.set(x, "visitExpressionStmt", js.Any.fromFunction2(value))
+    inline def setVisitExpressionStmt(value: (ExpressionStatement, js.Any) => js.Any): Self = StObject.set(x, "visitExpressionStmt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVisitIfStmt(value: (IfStmt_, js.Any) => js.Any): Self = StObject.set(x, "visitIfStmt", js.Any.fromFunction2(value))
+    inline def setVisitIfStmt(value: (IfStmt_, js.Any) => js.Any): Self = StObject.set(x, "visitIfStmt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVisitReturnStmt(value: (ReturnStatement, js.Any) => js.Any): Self = StObject.set(x, "visitReturnStmt", js.Any.fromFunction2(value))
+    inline def setVisitReturnStmt(value: (ReturnStatement, js.Any) => js.Any): Self = StObject.set(x, "visitReturnStmt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVisitThrowStmt(value: (ThrowStmt, js.Any) => js.Any): Self = StObject.set(x, "visitThrowStmt", js.Any.fromFunction2(value))
+    inline def setVisitThrowStmt(value: (ThrowStmt, js.Any) => js.Any): Self = StObject.set(x, "visitThrowStmt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVisitTryCatchStmt(value: (TryCatchStmt, js.Any) => js.Any): Self = StObject.set(x, "visitTryCatchStmt", js.Any.fromFunction2(value))
+    inline def setVisitTryCatchStmt(value: (TryCatchStmt, js.Any) => js.Any): Self = StObject.set(x, "visitTryCatchStmt", js.Any.fromFunction2(value))
   }
 }

@@ -15,15 +15,13 @@ object queryHelpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildQueries[Arguments /* <: js.Array[js.Any] */](
+  inline def buildQueries[Arguments /* <: js.Array[js.Any] */](
     queryByAll: GetAllBy[Arguments],
     getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],
     getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
   ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryByAll.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
   
-  @scala.inline
-  def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
   
   @JSImport("@testing-library/dom/types/query-helpers", "queryAllByAttribute")
   @js.native
@@ -95,20 +93,16 @@ object queryHelpersMod {
   }
   object SelectorMatcherOptions {
     
-    @scala.inline
-    def apply(): SelectorMatcherOptions = {
+    inline def apply(): SelectorMatcherOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectorMatcherOptions]
     }
     
-    @scala.inline
-    implicit class SelectorMatcherOptionsMutableBuilder[Self <: SelectorMatcherOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SelectorMatcherOptions](x: Self) {
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     }
   }
 }

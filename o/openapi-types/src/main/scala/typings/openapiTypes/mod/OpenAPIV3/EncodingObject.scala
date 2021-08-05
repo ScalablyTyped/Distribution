@@ -19,43 +19,31 @@ trait EncodingObject extends StObject {
 }
 object EncodingObject {
   
-  @scala.inline
-  def apply(): EncodingObject = {
+  inline def apply(): EncodingObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncodingObject]
   }
   
-  @scala.inline
-  implicit class EncodingObjectMutableBuilder[Self <: EncodingObject] (val x: Self) extends AnyVal {
+  extension [Self <: EncodingObject](x: Self) {
     
-    @scala.inline
-    def setAllowReserved(value: Boolean): Self = StObject.set(x, "allowReserved", value.asInstanceOf[js.Any])
+    inline def setAllowReserved(value: Boolean): Self = StObject.set(x, "allowReserved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowReservedUndefined: Self = StObject.set(x, "allowReserved", js.undefined)
+    inline def setAllowReservedUndefined: Self = StObject.set(x, "allowReserved", js.undefined)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setExplode(value: Boolean): Self = StObject.set(x, "explode", value.asInstanceOf[js.Any])
+    inline def setExplode(value: Boolean): Self = StObject.set(x, "explode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplodeUndefined: Self = StObject.set(x, "explode", js.undefined)
+    inline def setExplodeUndefined: Self = StObject.set(x, "explode", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[ReferenceObject | HeaderObject]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[ReferenceObject | HeaderObject]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -28,31 +28,23 @@ trait UpdateRevisionRequest extends StObject {
 }
 object UpdateRevisionRequest {
   
-  @scala.inline
-  def apply(DataSetId: string, RevisionId: string): UpdateRevisionRequest = {
+  inline def apply(DataSetId: string, RevisionId: string): UpdateRevisionRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRevisionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRevisionRequestMutableBuilder[Self <: UpdateRevisionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRevisionRequest](x: Self) {
     
-    @scala.inline
-    def setComment(value: stringMin0Max16384): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: stringMin0Max16384): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalized(value: boolean): Self = StObject.set(x, "Finalized", value.asInstanceOf[js.Any])
+    inline def setFinalized(value: boolean): Self = StObject.set(x, "Finalized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalizedUndefined: Self = StObject.set(x, "Finalized", js.undefined)
+    inline def setFinalizedUndefined: Self = StObject.set(x, "Finalized", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: string): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: string): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
   }
 }

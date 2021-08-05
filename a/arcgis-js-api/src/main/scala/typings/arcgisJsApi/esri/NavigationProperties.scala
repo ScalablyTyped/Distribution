@@ -36,37 +36,27 @@ trait NavigationProperties extends StObject {
 }
 object NavigationProperties {
   
-  @scala.inline
-  def apply(): NavigationProperties = {
+  inline def apply(): NavigationProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationProperties]
   }
   
-  @scala.inline
-  implicit class NavigationPropertiesMutableBuilder[Self <: NavigationProperties] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationProperties](x: Self) {
     
-    @scala.inline
-    def setBrowserTouchPanEnabled(value: Boolean): Self = StObject.set(x, "browserTouchPanEnabled", value.asInstanceOf[js.Any])
+    inline def setBrowserTouchPanEnabled(value: Boolean): Self = StObject.set(x, "browserTouchPanEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserTouchPanEnabledUndefined: Self = StObject.set(x, "browserTouchPanEnabled", js.undefined)
+    inline def setBrowserTouchPanEnabledUndefined: Self = StObject.set(x, "browserTouchPanEnabled", js.undefined)
     
-    @scala.inline
-    def setGamepad(value: gamepadGamepadSettingsProperties): Self = StObject.set(x, "gamepad", value.asInstanceOf[js.Any])
+    inline def setGamepad(value: gamepadGamepadSettingsProperties): Self = StObject.set(x, "gamepad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGamepadUndefined: Self = StObject.set(x, "gamepad", js.undefined)
+    inline def setGamepadUndefined: Self = StObject.set(x, "gamepad", js.undefined)
     
-    @scala.inline
-    def setMomentumEnabled(value: Boolean): Self = StObject.set(x, "momentumEnabled", value.asInstanceOf[js.Any])
+    inline def setMomentumEnabled(value: Boolean): Self = StObject.set(x, "momentumEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMomentumEnabledUndefined: Self = StObject.set(x, "momentumEnabled", js.undefined)
+    inline def setMomentumEnabledUndefined: Self = StObject.set(x, "momentumEnabled", js.undefined)
     
-    @scala.inline
-    def setMouseWheelZoomEnabled(value: Boolean): Self = StObject.set(x, "mouseWheelZoomEnabled", value.asInstanceOf[js.Any])
+    inline def setMouseWheelZoomEnabled(value: Boolean): Self = StObject.set(x, "mouseWheelZoomEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseWheelZoomEnabledUndefined: Self = StObject.set(x, "mouseWheelZoomEnabled", js.undefined)
+    inline def setMouseWheelZoomEnabledUndefined: Self = StObject.set(x, "mouseWheelZoomEnabled", js.undefined)
   }
 }

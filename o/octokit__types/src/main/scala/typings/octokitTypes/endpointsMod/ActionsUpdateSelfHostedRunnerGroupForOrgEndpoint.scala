@@ -29,32 +29,24 @@ trait ActionsUpdateSelfHostedRunnerGroupForOrgEndpoint extends StObject {
 }
 object ActionsUpdateSelfHostedRunnerGroupForOrgEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, runner_group_id: Double): ActionsUpdateSelfHostedRunnerGroupForOrgEndpoint = {
+  inline def apply(org_ : String, runner_group_id: Double): ActionsUpdateSelfHostedRunnerGroupForOrgEndpoint = {
     val __obj = js.Dynamic.literal(runner_group_id = runner_group_id.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsUpdateSelfHostedRunnerGroupForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsUpdateSelfHostedRunnerGroupForOrgEndpointMutableBuilder[Self <: ActionsUpdateSelfHostedRunnerGroupForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsUpdateSelfHostedRunnerGroupForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
+    inline def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(value: selected | all | `private`): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: selected | all | `private`): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

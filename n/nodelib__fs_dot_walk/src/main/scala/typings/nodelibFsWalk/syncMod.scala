@@ -14,13 +14,13 @@ object syncMod {
        with SyncProvider {
     def this(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default) = this()
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val _reader: typings.nodelibFsWalk.readersSyncMod.default = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _root: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _settings: js.Any = js.native
     
     /* CompleteClass */
@@ -29,18 +29,17 @@ object syncMod {
   
   trait SyncProvider extends StObject {
     
-    val _reader: typings.nodelibFsWalk.readersSyncMod.default
+    /* protected */ val _reader: typings.nodelibFsWalk.readersSyncMod.default
     
-    val _root: js.Any
+    /* private */ val _root: js.Any
     
-    val _settings: js.Any
+    /* private */ val _settings: js.Any
     
     def read(): js.Array[Entry]
   }
   object SyncProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _reader: typings.nodelibFsWalk.readersSyncMod.default,
       _root: js.Any,
       _settings: js.Any,
@@ -50,20 +49,15 @@ object syncMod {
       __obj.asInstanceOf[SyncProvider]
     }
     
-    @scala.inline
-    implicit class SyncProviderMutableBuilder[Self <: SyncProvider] (val x: Self) extends AnyVal {
+    extension [Self <: SyncProvider](x: Self) {
       
-      @scala.inline
-      def setRead(value: () => js.Array[Entry]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+      inline def setRead(value: () => js.Array[Entry]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_reader(value: typings.nodelibFsWalk.readersSyncMod.default): Self = StObject.set(x, "_reader", value.asInstanceOf[js.Any])
+      inline def set_reader(value: typings.nodelibFsWalk.readersSyncMod.default): Self = StObject.set(x, "_reader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_root(value: js.Any): Self = StObject.set(x, "_root", value.asInstanceOf[js.Any])
+      inline def set_root(value: js.Any): Self = StObject.set(x, "_root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
+      inline def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
     }
   }
 }

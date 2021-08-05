@@ -14,16 +14,13 @@ trait ScrollTo
 }
 object ScrollTo {
   
-  @scala.inline
-  def apply(scrollTo: ScrollOptions => Unit): ScrollTo = {
+  inline def apply(scrollTo: ScrollOptions => Unit): ScrollTo = {
     val __obj = js.Dynamic.literal(scrollTo = js.Any.fromFunction1(scrollTo))
     __obj.asInstanceOf[ScrollTo]
   }
   
-  @scala.inline
-  implicit class ScrollToMutableBuilder[Self <: ScrollTo] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollTo](x: Self) {
     
-    @scala.inline
-    def setScrollTo(value: ScrollOptions => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
+    inline def setScrollTo(value: ScrollOptions => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
   }
 }

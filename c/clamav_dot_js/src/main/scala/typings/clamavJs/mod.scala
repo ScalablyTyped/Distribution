@@ -24,24 +24,21 @@ object mod {
     def _transform(chunk: Double, encoding: js.Any, callback: js.Function0[js.Any]): Unit = js.native
   }
   
-  @scala.inline
-  def clamavfilescan(
+  inline def clamavfilescan(
     port: Double,
     host: String,
     filename: String,
     callback: js.Function3[/* error */ Error, /* object */ js.Any, /* result */ String, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clamavfilescan")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def clamavpathscan(
+  inline def clamavpathscan(
     port: Double,
     host: String,
     pathname: String,
     callback: js.Function3[/* error */ Error, /* object */ js.Any, /* result */ String, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clamavpathscan")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def clamavstreamscan(
+  inline def clamavstreamscan(
     port: Double,
     host: String,
     stream: ReadStream,
@@ -49,8 +46,7 @@ object mod {
     `object`: js.Any,
     callback: js.Function3[/* error */ Error, /* object */ js.Any, /* result */ String, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clamavstreamscan")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], stream.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def clamavstreamscan(
+  inline def clamavstreamscan(
     port: Double,
     host: String,
     stream: Stream,
@@ -59,19 +55,16 @@ object mod {
     callback: js.Function3[/* error */ Error, /* object */ js.Any, /* result */ String, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clamavstreamscan")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], stream.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createScanner(port: Double, host: String): ClamScanner = (^.asInstanceOf[js.Dynamic].applyDynamic("createScanner")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[ClamScanner]
+  inline def createScanner(port: Double, host: String): ClamScanner = (^.asInstanceOf[js.Dynamic].applyDynamic("createScanner")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[ClamScanner]
   
-  @scala.inline
-  def ping(
+  inline def ping(
     port: Double,
     host: String,
     timeout: Double,
     callback: js.Function1[/* error */ js.UndefOr[Error], js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ping")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def version(
+  inline def version(
     port: Double,
     host: String,
     timeout: Double,

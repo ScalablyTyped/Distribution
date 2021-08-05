@@ -13,10 +13,8 @@ object schedulerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def next(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("next")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def next(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("next")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def schedule(id: String): js.Promise[Disposer] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Disposer]]
+    inline def schedule(id: String): js.Promise[Disposer] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Disposer]]
   }
 }

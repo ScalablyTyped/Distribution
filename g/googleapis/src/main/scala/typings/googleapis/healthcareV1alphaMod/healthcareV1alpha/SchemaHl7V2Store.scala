@@ -30,31 +30,23 @@ trait SchemaHl7V2Store extends StObject {
 }
 object SchemaHl7V2Store {
   
-  @scala.inline
-  def apply(): SchemaHl7V2Store = {
+  inline def apply(): SchemaHl7V2Store = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHl7V2Store]
   }
   
-  @scala.inline
-  implicit class SchemaHl7V2StoreMutableBuilder[Self <: SchemaHl7V2Store] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHl7V2Store](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotificationConfig(value: SchemaNotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
+    inline def setNotificationConfig(value: SchemaNotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
+    inline def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
     
-    @scala.inline
-    def setParserConfig(value: SchemaParserConfig): Self = StObject.set(x, "parserConfig", value.asInstanceOf[js.Any])
+    inline def setParserConfig(value: SchemaParserConfig): Self = StObject.set(x, "parserConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParserConfigUndefined: Self = StObject.set(x, "parserConfig", js.undefined)
+    inline def setParserConfigUndefined: Self = StObject.set(x, "parserConfig", js.undefined)
   }
 }

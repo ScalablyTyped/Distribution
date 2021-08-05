@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object toStreamMod {
   
-  @scala.inline
-  def apply[Q /* <: BaseQuad */](dataset: DatasetCore[Q, Q]): Stream[Q] = ^.asInstanceOf[js.Dynamic].apply(dataset.asInstanceOf[js.Any]).asInstanceOf[Stream[Q]]
+  inline def apply[Q /* <: BaseQuad */](dataset: DatasetCore[Q, Q]): Stream[Q] = ^.asInstanceOf[js.Dynamic].apply(dataset.asInstanceOf[js.Any]).asInstanceOf[Stream[Q]]
   
   @JSImport("rdf-dataset-ext/toStream", JSImport.Namespace)
   @js.native

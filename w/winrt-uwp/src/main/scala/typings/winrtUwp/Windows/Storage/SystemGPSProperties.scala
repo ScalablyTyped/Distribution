@@ -15,19 +15,15 @@ trait SystemGPSProperties extends StObject {
 }
 object SystemGPSProperties {
   
-  @scala.inline
-  def apply(latitudeDecimal: String, longitudeDecimal: String): SystemGPSProperties = {
+  inline def apply(latitudeDecimal: String, longitudeDecimal: String): SystemGPSProperties = {
     val __obj = js.Dynamic.literal(latitudeDecimal = latitudeDecimal.asInstanceOf[js.Any], longitudeDecimal = longitudeDecimal.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemGPSProperties]
   }
   
-  @scala.inline
-  implicit class SystemGPSPropertiesMutableBuilder[Self <: SystemGPSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SystemGPSProperties](x: Self) {
     
-    @scala.inline
-    def setLatitudeDecimal(value: String): Self = StObject.set(x, "latitudeDecimal", value.asInstanceOf[js.Any])
+    inline def setLatitudeDecimal(value: String): Self = StObject.set(x, "latitudeDecimal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitudeDecimal(value: String): Self = StObject.set(x, "longitudeDecimal", value.asInstanceOf[js.Any])
+    inline def setLongitudeDecimal(value: String): Self = StObject.set(x, "longitudeDecimal", value.asInstanceOf[js.Any])
   }
 }

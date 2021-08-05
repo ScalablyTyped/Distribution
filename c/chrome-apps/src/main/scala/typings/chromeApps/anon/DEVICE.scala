@@ -20,25 +20,19 @@ trait DEVICE extends StObject {
 }
 object DEVICE {
   
-  @scala.inline
-  def apply(): DEVICE = {
+  inline def apply(): DEVICE = {
     val __obj = js.Dynamic.literal(DEVICE = "device", ENDPOINT = "endpoint", INTERFACE = "interface", OTHER = "other")
     __obj.asInstanceOf[DEVICE]
   }
   
-  @scala.inline
-  implicit class DEVICEMutableBuilder[Self <: DEVICE] (val x: Self) extends AnyVal {
+  extension [Self <: DEVICE](x: Self) {
     
-    @scala.inline
-    def setDEVICE(value: device__): Self = StObject.set(x, "DEVICE", value.asInstanceOf[js.Any])
+    inline def setDEVICE(value: device__): Self = StObject.set(x, "DEVICE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setENDPOINT(value: endpoint_): Self = StObject.set(x, "ENDPOINT", value.asInstanceOf[js.Any])
+    inline def setENDPOINT(value: endpoint_): Self = StObject.set(x, "ENDPOINT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINTERFACE(value: interface_): Self = StObject.set(x, "INTERFACE", value.asInstanceOf[js.Any])
+    inline def setINTERFACE(value: interface_): Self = StObject.set(x, "INTERFACE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOTHER(value: other_): Self = StObject.set(x, "OTHER", value.asInstanceOf[js.Any])
+    inline def setOTHER(value: other_): Self = StObject.set(x, "OTHER", value.asInstanceOf[js.Any])
   }
 }

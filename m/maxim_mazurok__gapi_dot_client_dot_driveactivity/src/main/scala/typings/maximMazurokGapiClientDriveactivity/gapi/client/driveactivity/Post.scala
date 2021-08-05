@@ -11,19 +11,15 @@ trait Post extends StObject {
 }
 object Post {
   
-  @scala.inline
-  def apply(): Post = {
+  inline def apply(): Post = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Post]
   }
   
-  @scala.inline
-  implicit class PostMutableBuilder[Self <: Post] (val x: Self) extends AnyVal {
+  extension [Self <: Post](x: Self) {
     
-    @scala.inline
-    def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+    inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
+    inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
   }
 }

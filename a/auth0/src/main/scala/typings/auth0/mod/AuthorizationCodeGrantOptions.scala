@@ -12,19 +12,15 @@ trait AuthorizationCodeGrantOptions extends StObject {
 }
 object AuthorizationCodeGrantOptions {
   
-  @scala.inline
-  def apply(code: String, redirect_uri: String): AuthorizationCodeGrantOptions = {
+  inline def apply(code: String, redirect_uri: String): AuthorizationCodeGrantOptions = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], redirect_uri = redirect_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationCodeGrantOptions]
   }
   
-  @scala.inline
-  implicit class AuthorizationCodeGrantOptionsMutableBuilder[Self <: AuthorizationCodeGrantOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizationCodeGrantOptions](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
+    inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
   }
 }

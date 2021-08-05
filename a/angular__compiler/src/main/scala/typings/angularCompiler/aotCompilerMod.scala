@@ -54,73 +54,73 @@ object aotCompilerMod {
       _symbolResolver: StaticSymbolResolver
     ) = this()
     
-    var _analyzeFile: js.Any = js.native
+    /* private */ var _analyzeFile: js.Any = js.native
     
-    var _analyzeFileForInjectables: js.Any = js.native
+    /* private */ var _analyzeFileForInjectables: js.Any = js.native
     
-    var _analyzedFiles: js.Any = js.native
+    /* private */ var _analyzedFiles: js.Any = js.native
     
-    var _analyzedFilesForInjectables: js.Any = js.native
+    /* private */ var _analyzedFilesForInjectables: js.Any = js.native
     
-    var _codegenSourceModule: js.Any = js.native
+    /* private */ var _codegenSourceModule: js.Any = js.native
     
-    var _codegenStyles: js.Any = js.native
+    /* private */ var _codegenStyles: js.Any = js.native
     
-    var _compileComponent: js.Any = js.native
+    /* private */ var _compileComponent: js.Any = js.native
     
-    var _compileComponentFactory: js.Any = js.native
+    /* private */ var _compileComponentFactory: js.Any = js.native
     
-    var _compileImplFile: js.Any = js.native
+    /* private */ var _compileImplFile: js.Any = js.native
     
-    var _compileModule: js.Any = js.native
+    /* private */ var _compileModule: js.Any = js.native
     
-    var _compilePartialModule: js.Any = js.native
+    /* private */ var _compilePartialModule: js.Any = js.native
     
-    var _compileShallowModules: js.Any = js.native
+    /* private */ var _compileShallowModules: js.Any = js.native
     
-    var _config: js.Any = js.native
+    /* private */ var _config: js.Any = js.native
     
-    var _createNgFactoryStub: js.Any = js.native
+    /* private */ var _createNgFactoryStub: js.Any = js.native
     
-    var _createOutputContext: js.Any = js.native
+    /* private */ var _createOutputContext: js.Any = js.native
     
-    var _createSummary: js.Any = js.native
+    /* private */ var _createSummary: js.Any = js.native
     
-    var _createTypeCheckBlock: js.Any = js.native
+    /* private */ var _createTypeCheckBlock: js.Any = js.native
     
-    var _emitPartialModule2: js.Any = js.native
+    /* private */ var _emitPartialModule2: js.Any = js.native
     
-    var _externalIdentifierReferences: js.Any = js.native
+    /* private */ var _externalIdentifierReferences: js.Any = js.native
     
-    var _fileNameToModuleName: js.Any = js.native
+    /* private */ var _fileNameToModuleName: js.Any = js.native
     
-    var _host: js.Any = js.native
+    /* private */ var _host: js.Any = js.native
     
-    var _injectableCompiler: js.Any = js.native
+    /* private */ var _injectableCompiler: js.Any = js.native
     
-    var _metadataResolver: js.Any = js.native
+    /* private */ var _metadataResolver: js.Any = js.native
     
-    var _ngModuleCompiler: js.Any = js.native
+    /* private */ var _ngModuleCompiler: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _outputEmitter: js.Any = js.native
+    /* private */ var _outputEmitter: js.Any = js.native
     
-    var _parseTemplate: js.Any = js.native
+    /* private */ var _parseTemplate: js.Any = js.native
     
-    var _styleCompiler: js.Any = js.native
+    /* private */ var _styleCompiler: js.Any = js.native
     
-    var _summaryResolver: js.Any = js.native
+    /* private */ var _summaryResolver: js.Any = js.native
     
-    var _symbolResolver: js.Any = js.native
+    /* private */ var _symbolResolver: js.Any = js.native
     
-    var _templateAstCache: js.Any = js.native
+    /* private */ var _templateAstCache: js.Any = js.native
     
-    var _templateParser: js.Any = js.native
+    /* private */ var _templateParser: js.Any = js.native
     
-    var _typeCheckCompiler: js.Any = js.native
+    /* private */ var _typeCheckCompiler: js.Any = js.native
     
-    var _viewCompiler: js.Any = js.native
+    /* private */ var _viewCompiler: js.Any = js.native
     
     def analyzeModulesAsync(rootFiles: js.Array[String]): js.Promise[NgAnalyzedModules] = js.native
     
@@ -159,40 +159,35 @@ object aotCompilerMod {
     val reflector: StaticReflector = js.native
   }
   
-  @scala.inline
-  def analyzeAndValidateNgModules(
+  inline def analyzeAndValidateNgModules(
     fileNames: js.Array[String],
     host: NgAnalyzeModulesHost,
     staticSymbolResolver: StaticSymbolResolver,
     metadataResolver: CompileMetadataResolver
   ): NgAnalyzedModules = (^.asInstanceOf[js.Dynamic].applyDynamic("analyzeAndValidateNgModules")(fileNames.asInstanceOf[js.Any], host.asInstanceOf[js.Any], staticSymbolResolver.asInstanceOf[js.Any], metadataResolver.asInstanceOf[js.Any])).asInstanceOf[NgAnalyzedModules]
   
-  @scala.inline
-  def analyzeFile(
+  inline def analyzeFile(
     host: NgAnalyzeModulesHost,
     staticSymbolResolver: StaticSymbolResolver,
     metadataResolver: CompileMetadataResolver,
     fileName: String
   ): NgAnalyzedFile = (^.asInstanceOf[js.Dynamic].applyDynamic("analyzeFile")(host.asInstanceOf[js.Any], staticSymbolResolver.asInstanceOf[js.Any], metadataResolver.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[NgAnalyzedFile]
   
-  @scala.inline
-  def analyzeFileForInjectables(
+  inline def analyzeFileForInjectables(
     host: NgAnalyzeModulesHost,
     staticSymbolResolver: StaticSymbolResolver,
     metadataResolver: CompileMetadataResolver,
     fileName: String
   ): NgAnalyzedFileWithInjectables = (^.asInstanceOf[js.Dynamic].applyDynamic("analyzeFileForInjectables")(host.asInstanceOf[js.Any], staticSymbolResolver.asInstanceOf[js.Any], metadataResolver.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[NgAnalyzedFileWithInjectables]
   
-  @scala.inline
-  def analyzeNgModules(
+  inline def analyzeNgModules(
     fileNames: js.Array[String],
     host: NgAnalyzeModulesHost,
     staticSymbolResolver: StaticSymbolResolver,
     metadataResolver: CompileMetadataResolver
   ): NgAnalyzedModules = (^.asInstanceOf[js.Dynamic].applyDynamic("analyzeNgModules")(fileNames.asInstanceOf[js.Any], host.asInstanceOf[js.Any], staticSymbolResolver.asInstanceOf[js.Any], metadataResolver.asInstanceOf[js.Any])).asInstanceOf[NgAnalyzedModules]
   
-  @scala.inline
-  def mergeAnalyzedFiles(analyzedFiles: js.Array[NgAnalyzedFile]): NgAnalyzedModules = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAnalyzedFiles")(analyzedFiles.asInstanceOf[js.Any]).asInstanceOf[NgAnalyzedModules]
+  inline def mergeAnalyzedFiles(analyzedFiles: js.Array[NgAnalyzedFile]): NgAnalyzedModules = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAnalyzedFiles")(analyzedFiles.asInstanceOf[js.Any]).asInstanceOf[NgAnalyzedModules]
   
   trait NgAnalyzeModulesHost extends StObject {
     
@@ -200,17 +195,14 @@ object aotCompilerMod {
   }
   object NgAnalyzeModulesHost {
     
-    @scala.inline
-    def apply(isSourceFile: String => Boolean): NgAnalyzeModulesHost = {
+    inline def apply(isSourceFile: String => Boolean): NgAnalyzeModulesHost = {
       val __obj = js.Dynamic.literal(isSourceFile = js.Any.fromFunction1(isSourceFile))
       __obj.asInstanceOf[NgAnalyzeModulesHost]
     }
     
-    @scala.inline
-    implicit class NgAnalyzeModulesHostMutableBuilder[Self <: NgAnalyzeModulesHost] (val x: Self) extends AnyVal {
+    extension [Self <: NgAnalyzeModulesHost](x: Self) {
       
-      @scala.inline
-      def setIsSourceFile(value: String => Boolean): Self = StObject.set(x, "isSourceFile", js.Any.fromFunction1(value))
+      inline def setIsSourceFile(value: String => Boolean): Self = StObject.set(x, "isSourceFile", js.Any.fromFunction1(value))
     }
   }
   
@@ -232,8 +224,7 @@ object aotCompilerMod {
   }
   object NgAnalyzedFile {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abstractDirectives: js.Array[StaticSymbol],
       directives: js.Array[StaticSymbol],
       exportsNonSourceFiles: Boolean,
@@ -246,44 +237,31 @@ object aotCompilerMod {
       __obj.asInstanceOf[NgAnalyzedFile]
     }
     
-    @scala.inline
-    implicit class NgAnalyzedFileMutableBuilder[Self <: NgAnalyzedFile] (val x: Self) extends AnyVal {
+    extension [Self <: NgAnalyzedFile](x: Self) {
       
-      @scala.inline
-      def setAbstractDirectives(value: js.Array[StaticSymbol]): Self = StObject.set(x, "abstractDirectives", value.asInstanceOf[js.Any])
+      inline def setAbstractDirectives(value: js.Array[StaticSymbol]): Self = StObject.set(x, "abstractDirectives", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbstractDirectivesVarargs(value: StaticSymbol*): Self = StObject.set(x, "abstractDirectives", js.Array(value :_*))
+      inline def setAbstractDirectivesVarargs(value: StaticSymbol*): Self = StObject.set(x, "abstractDirectives", js.Array(value :_*))
       
-      @scala.inline
-      def setDirectives(value: js.Array[StaticSymbol]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+      inline def setDirectives(value: js.Array[StaticSymbol]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectivesVarargs(value: StaticSymbol*): Self = StObject.set(x, "directives", js.Array(value :_*))
+      inline def setDirectivesVarargs(value: StaticSymbol*): Self = StObject.set(x, "directives", js.Array(value :_*))
       
-      @scala.inline
-      def setExportsNonSourceFiles(value: Boolean): Self = StObject.set(x, "exportsNonSourceFiles", value.asInstanceOf[js.Any])
+      inline def setExportsNonSourceFiles(value: Boolean): Self = StObject.set(x, "exportsNonSourceFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectables(value: js.Array[CompileInjectableMetadata]): Self = StObject.set(x, "injectables", value.asInstanceOf[js.Any])
+      inline def setInjectables(value: js.Array[CompileInjectableMetadata]): Self = StObject.set(x, "injectables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectablesVarargs(value: CompileInjectableMetadata*): Self = StObject.set(x, "injectables", js.Array(value :_*))
+      inline def setInjectablesVarargs(value: CompileInjectableMetadata*): Self = StObject.set(x, "injectables", js.Array(value :_*))
       
-      @scala.inline
-      def setNgModules(value: js.Array[CompileNgModuleMetadata]): Self = StObject.set(x, "ngModules", value.asInstanceOf[js.Any])
+      inline def setNgModules(value: js.Array[CompileNgModuleMetadata]): Self = StObject.set(x, "ngModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNgModulesVarargs(value: CompileNgModuleMetadata*): Self = StObject.set(x, "ngModules", js.Array(value :_*))
+      inline def setNgModulesVarargs(value: CompileNgModuleMetadata*): Self = StObject.set(x, "ngModules", js.Array(value :_*))
       
-      @scala.inline
-      def setPipes(value: js.Array[StaticSymbol]): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
+      inline def setPipes(value: js.Array[StaticSymbol]): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPipesVarargs(value: StaticSymbol*): Self = StObject.set(x, "pipes", js.Array(value :_*))
+      inline def setPipesVarargs(value: StaticSymbol*): Self = StObject.set(x, "pipes", js.Array(value :_*))
     }
   }
   
@@ -297,8 +275,7 @@ object aotCompilerMod {
   }
   object NgAnalyzedFileWithInjectables {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fileName: String,
       injectables: js.Array[CompileInjectableMetadata],
       shallowModules: js.Array[CompileShallowModuleMetadata]
@@ -307,23 +284,17 @@ object aotCompilerMod {
       __obj.asInstanceOf[NgAnalyzedFileWithInjectables]
     }
     
-    @scala.inline
-    implicit class NgAnalyzedFileWithInjectablesMutableBuilder[Self <: NgAnalyzedFileWithInjectables] (val x: Self) extends AnyVal {
+    extension [Self <: NgAnalyzedFileWithInjectables](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectables(value: js.Array[CompileInjectableMetadata]): Self = StObject.set(x, "injectables", value.asInstanceOf[js.Any])
+      inline def setInjectables(value: js.Array[CompileInjectableMetadata]): Self = StObject.set(x, "injectables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectablesVarargs(value: CompileInjectableMetadata*): Self = StObject.set(x, "injectables", js.Array(value :_*))
+      inline def setInjectablesVarargs(value: CompileInjectableMetadata*): Self = StObject.set(x, "injectables", js.Array(value :_*))
       
-      @scala.inline
-      def setShallowModules(value: js.Array[CompileShallowModuleMetadata]): Self = StObject.set(x, "shallowModules", value.asInstanceOf[js.Any])
+      inline def setShallowModules(value: js.Array[CompileShallowModuleMetadata]): Self = StObject.set(x, "shallowModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShallowModulesVarargs(value: CompileShallowModuleMetadata*): Self = StObject.set(x, "shallowModules", js.Array(value :_*))
+      inline def setShallowModulesVarargs(value: CompileShallowModuleMetadata*): Self = StObject.set(x, "shallowModules", js.Array(value :_*))
     }
   }
   
@@ -339,8 +310,7 @@ object aotCompilerMod {
   }
   object NgAnalyzedModules {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       files: js.Array[NgAnalyzedFile],
       ngModuleByPipeOrDirective: Map[StaticSymbol, CompileNgModuleMetadata],
       ngModules: js.Array[CompileNgModuleMetadata]
@@ -349,32 +319,23 @@ object aotCompilerMod {
       __obj.asInstanceOf[NgAnalyzedModules]
     }
     
-    @scala.inline
-    implicit class NgAnalyzedModulesMutableBuilder[Self <: NgAnalyzedModules] (val x: Self) extends AnyVal {
+    extension [Self <: NgAnalyzedModules](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[NgAnalyzedFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[NgAnalyzedFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: NgAnalyzedFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: NgAnalyzedFile*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setNgModuleByPipeOrDirective(value: Map[StaticSymbol, CompileNgModuleMetadata]): Self = StObject.set(x, "ngModuleByPipeOrDirective", value.asInstanceOf[js.Any])
+      inline def setNgModuleByPipeOrDirective(value: Map[StaticSymbol, CompileNgModuleMetadata]): Self = StObject.set(x, "ngModuleByPipeOrDirective", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNgModules(value: js.Array[CompileNgModuleMetadata]): Self = StObject.set(x, "ngModules", value.asInstanceOf[js.Any])
+      inline def setNgModules(value: js.Array[CompileNgModuleMetadata]): Self = StObject.set(x, "ngModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNgModulesVarargs(value: CompileNgModuleMetadata*): Self = StObject.set(x, "ngModules", js.Array(value :_*))
+      inline def setNgModulesVarargs(value: CompileNgModuleMetadata*): Self = StObject.set(x, "ngModules", js.Array(value :_*))
       
-      @scala.inline
-      def setSymbolsMissingModule(value: js.Array[StaticSymbol]): Self = StObject.set(x, "symbolsMissingModule", value.asInstanceOf[js.Any])
+      inline def setSymbolsMissingModule(value: js.Array[StaticSymbol]): Self = StObject.set(x, "symbolsMissingModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolsMissingModuleUndefined: Self = StObject.set(x, "symbolsMissingModule", js.undefined)
+      inline def setSymbolsMissingModuleUndefined: Self = StObject.set(x, "symbolsMissingModule", js.undefined)
       
-      @scala.inline
-      def setSymbolsMissingModuleVarargs(value: StaticSymbol*): Self = StObject.set(x, "symbolsMissingModule", js.Array(value :_*))
+      inline def setSymbolsMissingModuleVarargs(value: StaticSymbol*): Self = StObject.set(x, "symbolsMissingModule", js.Array(value :_*))
     }
   }
 }

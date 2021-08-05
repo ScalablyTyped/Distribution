@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "jasmine-jquery"
-version := "1.5.8-dt-20201002Z-cceb91"
+version := "1.5.8-dt-20201002Z-3d7bf9"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jasmine" % "3.6-dt-20201119Z-637b51",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20201028Z-b9c3f6",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20201002Z-27ba00",
-  "org.scalablytyped" %%% "std" % "4.1-044efb")
+  "org.scalablytyped" %%% "jasmine" % "3.6-dt-20201119Z-0b1ba4",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20201028Z-87319b",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20201002Z-1b62ce",
+  "org.scalablytyped" %%% "std" % "4.1-2f6855")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

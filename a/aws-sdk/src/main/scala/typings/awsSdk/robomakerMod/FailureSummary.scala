@@ -18,28 +18,21 @@ trait FailureSummary extends StObject {
 }
 object FailureSummary {
   
-  @scala.inline
-  def apply(): FailureSummary = {
+  inline def apply(): FailureSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailureSummary]
   }
   
-  @scala.inline
-  implicit class FailureSummaryMutableBuilder[Self <: FailureSummary] (val x: Self) extends AnyVal {
+  extension [Self <: FailureSummary](x: Self) {
     
-    @scala.inline
-    def setFailures(value: WorldFailures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: WorldFailures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: WorldFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: WorldFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalFailureCount(value: Integer): Self = StObject.set(x, "totalFailureCount", value.asInstanceOf[js.Any])
+    inline def setTotalFailureCount(value: Integer): Self = StObject.set(x, "totalFailureCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalFailureCountUndefined: Self = StObject.set(x, "totalFailureCount", js.undefined)
+    inline def setTotalFailureCountUndefined: Self = StObject.set(x, "totalFailureCount", js.undefined)
   }
 }

@@ -11,8 +11,7 @@ trait HtmlSpanProps
      with /* key */ StringDictionary[js.Any]
 object HtmlSpanProps {
   
-  @scala.inline
-  def apply(): HtmlSpanProps = {
+  inline def apply(): HtmlSpanProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HtmlSpanProps]
   }

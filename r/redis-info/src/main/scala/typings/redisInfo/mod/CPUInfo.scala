@@ -16,8 +16,7 @@ trait CPUInfo extends StObject {
 }
 object CPUInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     used_cpu_sys: String,
     used_cpu_sys_children: String,
     used_cpu_user: String,
@@ -27,19 +26,14 @@ object CPUInfo {
     __obj.asInstanceOf[CPUInfo]
   }
   
-  @scala.inline
-  implicit class CPUInfoMutableBuilder[Self <: CPUInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CPUInfo](x: Self) {
     
-    @scala.inline
-    def setUsed_cpu_sys(value: String): Self = StObject.set(x, "used_cpu_sys", value.asInstanceOf[js.Any])
+    inline def setUsed_cpu_sys(value: String): Self = StObject.set(x, "used_cpu_sys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_cpu_sys_children(value: String): Self = StObject.set(x, "used_cpu_sys_children", value.asInstanceOf[js.Any])
+    inline def setUsed_cpu_sys_children(value: String): Self = StObject.set(x, "used_cpu_sys_children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_cpu_user(value: String): Self = StObject.set(x, "used_cpu_user", value.asInstanceOf[js.Any])
+    inline def setUsed_cpu_user(value: String): Self = StObject.set(x, "used_cpu_user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_cpu_user_children(value: String): Self = StObject.set(x, "used_cpu_user_children", value.asInstanceOf[js.Any])
+    inline def setUsed_cpu_user_children(value: String): Self = StObject.set(x, "used_cpu_user_children", value.asInstanceOf[js.Any])
   }
 }

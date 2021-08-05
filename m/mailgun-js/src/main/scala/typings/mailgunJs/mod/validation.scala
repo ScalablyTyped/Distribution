@@ -18,26 +18,20 @@ object validation {
   }
   object ParseResponse {
     
-    @scala.inline
-    def apply(parsed: js.Array[String], unparseable: js.Array[String]): ParseResponse = {
+    inline def apply(parsed: js.Array[String], unparseable: js.Array[String]): ParseResponse = {
       val __obj = js.Dynamic.literal(parsed = parsed.asInstanceOf[js.Any], unparseable = unparseable.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseResponse]
     }
     
-    @scala.inline
-    implicit class ParseResponseMutableBuilder[Self <: ParseResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ParseResponse](x: Self) {
       
-      @scala.inline
-      def setParsed(value: js.Array[String]): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+      inline def setParsed(value: js.Array[String]): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsedVarargs(value: String*): Self = StObject.set(x, "parsed", js.Array(value :_*))
+      inline def setParsedVarargs(value: String*): Self = StObject.set(x, "parsed", js.Array(value :_*))
       
-      @scala.inline
-      def setUnparseable(value: js.Array[String]): Self = StObject.set(x, "unparseable", value.asInstanceOf[js.Any])
+      inline def setUnparseable(value: js.Array[String]): Self = StObject.set(x, "unparseable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnparseableVarargs(value: String*): Self = StObject.set(x, "unparseable", js.Array(value :_*))
+      inline def setUnparseableVarargs(value: String*): Self = StObject.set(x, "unparseable", js.Array(value :_*))
     }
   }
   
@@ -59,8 +53,7 @@ object validation {
   }
   object ValidateResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       is_disposable_address: Boolean,
       is_role_address: Boolean,
@@ -71,35 +64,25 @@ object validation {
       __obj.asInstanceOf[ValidateResponse]
     }
     
-    @scala.inline
-    implicit class ValidateResponseMutableBuilder[Self <: ValidateResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ValidateResponse](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDid_you_mean(value: String): Self = StObject.set(x, "did_you_mean", value.asInstanceOf[js.Any])
+      inline def setDid_you_mean(value: String): Self = StObject.set(x, "did_you_mean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDid_you_meanNull: Self = StObject.set(x, "did_you_mean", null)
+      inline def setDid_you_meanNull: Self = StObject.set(x, "did_you_mean", null)
       
-      @scala.inline
-      def setIs_disposable_address(value: Boolean): Self = StObject.set(x, "is_disposable_address", value.asInstanceOf[js.Any])
+      inline def setIs_disposable_address(value: Boolean): Self = StObject.set(x, "is_disposable_address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_role_address(value: Boolean): Self = StObject.set(x, "is_role_address", value.asInstanceOf[js.Any])
+      inline def setIs_role_address(value: Boolean): Self = StObject.set(x, "is_role_address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_valid(value: Boolean): Self = StObject.set(x, "is_valid", value.asInstanceOf[js.Any])
+      inline def setIs_valid(value: Boolean): Self = StObject.set(x, "is_valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMailbox_verification(value: true_ | false_ | unknown): Self = StObject.set(x, "mailbox_verification", value.asInstanceOf[js.Any])
+      inline def setMailbox_verification(value: true_ | false_ | unknown): Self = StObject.set(x, "mailbox_verification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMailbox_verificationNull: Self = StObject.set(x, "mailbox_verification", null)
+      inline def setMailbox_verificationNull: Self = StObject.set(x, "mailbox_verification", null)
       
-      @scala.inline
-      def setParts(value: Displayname): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: Displayname): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,20 +94,16 @@ object validation {
   }
   object ValidationOptionsPrivate {
     
-    @scala.inline
-    def apply(): ValidationOptionsPrivate = {
+    inline def apply(): ValidationOptionsPrivate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidationOptionsPrivate]
     }
     
-    @scala.inline
-    implicit class ValidationOptionsPrivateMutableBuilder[Self <: ValidationOptionsPrivate] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationOptionsPrivate](x: Self) {
       
-      @scala.inline
-      def setMailbox_verification(value: Boolean): Self = StObject.set(x, "mailbox_verification", value.asInstanceOf[js.Any])
+      inline def setMailbox_verification(value: Boolean): Self = StObject.set(x, "mailbox_verification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMailbox_verificationUndefined: Self = StObject.set(x, "mailbox_verification", js.undefined)
+      inline def setMailbox_verificationUndefined: Self = StObject.set(x, "mailbox_verification", js.undefined)
     }
   }
   
@@ -136,26 +115,20 @@ object validation {
   }
   object ValidationOptionsPublic {
     
-    @scala.inline
-    def apply(): ValidationOptionsPublic = {
+    inline def apply(): ValidationOptionsPublic = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidationOptionsPublic]
     }
     
-    @scala.inline
-    implicit class ValidationOptionsPublicMutableBuilder[Self <: ValidationOptionsPublic] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationOptionsPublic](x: Self) {
       
-      @scala.inline
-      def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
+      inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi_keyUndefined: Self = StObject.set(x, "api_key", js.undefined)
+      inline def setApi_keyUndefined: Self = StObject.set(x, "api_key", js.undefined)
       
-      @scala.inline
-      def setMailbox_verification(value: Boolean): Self = StObject.set(x, "mailbox_verification", value.asInstanceOf[js.Any])
+      inline def setMailbox_verification(value: Boolean): Self = StObject.set(x, "mailbox_verification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMailbox_verificationUndefined: Self = StObject.set(x, "mailbox_verification", js.undefined)
+      inline def setMailbox_verificationUndefined: Self = StObject.set(x, "mailbox_verification", js.undefined)
     }
   }
 }

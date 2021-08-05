@@ -13,8 +13,6 @@ object createMockFunctionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(method: String, url: String, mock: Mock): MockFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], mock.asInstanceOf[js.Any])).asInstanceOf[MockFunction]
-  @scala.inline
-  def default(method: String, url: RegExp, mock: Mock): MockFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], mock.asInstanceOf[js.Any])).asInstanceOf[MockFunction]
+  inline def default(method: String, url: String, mock: Mock): MockFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], mock.asInstanceOf[js.Any])).asInstanceOf[MockFunction]
+  inline def default(method: String, url: RegExp, mock: Mock): MockFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], mock.asInstanceOf[js.Any])).asInstanceOf[MockFunction]
 }

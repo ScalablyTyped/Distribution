@@ -12,19 +12,15 @@ trait CharRange extends StObject {
 }
 object CharRange {
   
-  @scala.inline
-  def apply(qCharCount: Double, qCharPos: Double): CharRange = {
+  inline def apply(qCharCount: Double, qCharPos: Double): CharRange = {
     val __obj = js.Dynamic.literal(qCharCount = qCharCount.asInstanceOf[js.Any], qCharPos = qCharPos.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharRange]
   }
   
-  @scala.inline
-  implicit class CharRangeMutableBuilder[Self <: CharRange] (val x: Self) extends AnyVal {
+  extension [Self <: CharRange](x: Self) {
     
-    @scala.inline
-    def setQCharCount(value: Double): Self = StObject.set(x, "qCharCount", value.asInstanceOf[js.Any])
+    inline def setQCharCount(value: Double): Self = StObject.set(x, "qCharCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQCharPos(value: Double): Self = StObject.set(x, "qCharPos", value.asInstanceOf[js.Any])
+    inline def setQCharPos(value: Double): Self = StObject.set(x, "qCharPos", value.asInstanceOf[js.Any])
   }
 }

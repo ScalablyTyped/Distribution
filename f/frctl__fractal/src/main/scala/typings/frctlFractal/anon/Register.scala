@@ -13,16 +13,13 @@ trait Register[T /* <: Entity */, TEngine] extends StObject {
 }
 object Register {
   
-  @scala.inline
-  def apply[T /* <: Entity */, TEngine](register: (EntitySource[T, js.Any], js.Any) => Adapter[TEngine]): Register[T, TEngine] = {
+  inline def apply[T /* <: Entity */, TEngine](register: (EntitySource[T, js.Any], js.Any) => Adapter[TEngine]): Register[T, TEngine] = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
     __obj.asInstanceOf[Register[T, TEngine]]
   }
   
-  @scala.inline
-  implicit class RegisterMutableBuilder[Self <: Register[?, ?], T /* <: Entity */, TEngine] (val x: Self & (Register[T, TEngine])) extends AnyVal {
+  extension [Self <: Register[?, ?], T /* <: Entity */, TEngine](x: Self & (Register[T, TEngine])) {
     
-    @scala.inline
-    def setRegister(value: (EntitySource[T, js.Any], js.Any) => Adapter[TEngine]): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+    inline def setRegister(value: (EntitySource[T, js.Any], js.Any) => Adapter[TEngine]): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
   }
 }

@@ -13,19 +13,15 @@ trait GetPlatformFontsForNodeResponse extends StObject {
 }
 object GetPlatformFontsForNodeResponse {
   
-  @scala.inline
-  def apply(fonts: js.Array[PlatformFontUsage]): GetPlatformFontsForNodeResponse = {
+  inline def apply(fonts: js.Array[PlatformFontUsage]): GetPlatformFontsForNodeResponse = {
     val __obj = js.Dynamic.literal(fonts = fonts.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPlatformFontsForNodeResponse]
   }
   
-  @scala.inline
-  implicit class GetPlatformFontsForNodeResponseMutableBuilder[Self <: GetPlatformFontsForNodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPlatformFontsForNodeResponse](x: Self) {
     
-    @scala.inline
-    def setFonts(value: js.Array[PlatformFontUsage]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+    inline def setFonts(value: js.Array[PlatformFontUsage]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontsVarargs(value: PlatformFontUsage*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+    inline def setFontsVarargs(value: PlatformFontUsage*): Self = StObject.set(x, "fonts", js.Array(value :_*))
   }
 }

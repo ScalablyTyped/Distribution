@@ -27,46 +27,33 @@ trait SocksClientOptions extends StObject {
 }
 object SocksClientOptions {
   
-  @scala.inline
-  def apply(command: SocksCommandOption, destination: SocksRemoteHost, proxy: SocksProxy): SocksClientOptions = {
+  inline def apply(command: SocksCommandOption, destination: SocksRemoteHost, proxy: SocksProxy): SocksClientOptions = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocksClientOptions]
   }
   
-  @scala.inline
-  implicit class SocksClientOptionsMutableBuilder[Self <: SocksClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SocksClientOptions](x: Self) {
     
-    @scala.inline
-    def setCommand(value: SocksCommandOption): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: SocksCommandOption): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestination(value: SocksRemoteHost): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: SocksRemoteHost): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExisting_socket(value: Duplex): Self = StObject.set(x, "existing_socket", value.asInstanceOf[js.Any])
+    inline def setExisting_socket(value: Duplex): Self = StObject.set(x, "existing_socket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExisting_socketUndefined: Self = StObject.set(x, "existing_socket", js.undefined)
+    inline def setExisting_socketUndefined: Self = StObject.set(x, "existing_socket", js.undefined)
     
-    @scala.inline
-    def setProxy(value: SocksProxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: SocksProxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet_tcp_nodelay(value: Boolean): Self = StObject.set(x, "set_tcp_nodelay", value.asInstanceOf[js.Any])
+    inline def setSet_tcp_nodelay(value: Boolean): Self = StObject.set(x, "set_tcp_nodelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet_tcp_nodelayUndefined: Self = StObject.set(x, "set_tcp_nodelay", js.undefined)
+    inline def setSet_tcp_nodelayUndefined: Self = StObject.set(x, "set_tcp_nodelay", js.undefined)
     
-    @scala.inline
-    def setSocket_options(value: SocketConnectOpts): Self = StObject.set(x, "socket_options", value.asInstanceOf[js.Any])
+    inline def setSocket_options(value: SocketConnectOpts): Self = StObject.set(x, "socket_options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocket_optionsUndefined: Self = StObject.set(x, "socket_options", js.undefined)
+    inline def setSocket_optionsUndefined: Self = StObject.set(x, "socket_options", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

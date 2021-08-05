@@ -28,8 +28,7 @@ trait Shop extends StObject {
 }
 object Shop {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     moneyFormat: String,
     name: String,
@@ -43,31 +42,22 @@ object Shop {
     __obj.asInstanceOf[Shop]
   }
   
-  @scala.inline
-  implicit class ShopMutableBuilder[Self <: Shop] (val x: Self) extends AnyVal {
+  extension [Self <: Shop](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoneyFormat(value: String): Self = StObject.set(x, "moneyFormat", value.asInstanceOf[js.Any])
+    inline def setMoneyFormat(value: String): Self = StObject.set(x, "moneyFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentSettings(value: js.Any): Self = StObject.set(x, "paymentSettings", value.asInstanceOf[js.Any])
+    inline def setPaymentSettings(value: js.Any): Self = StObject.set(x, "paymentSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryDomain(value: js.Any): Self = StObject.set(x, "primaryDomain", value.asInstanceOf[js.Any])
+    inline def setPrimaryDomain(value: js.Any): Self = StObject.set(x, "primaryDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyPolicy(value: js.Any): Self = StObject.set(x, "privacyPolicy", value.asInstanceOf[js.Any])
+    inline def setPrivacyPolicy(value: js.Any): Self = StObject.set(x, "privacyPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefundPolicy(value: js.Any): Self = StObject.set(x, "refundPolicy", value.asInstanceOf[js.Any])
+    inline def setRefundPolicy(value: js.Any): Self = StObject.set(x, "refundPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsOfService(value: js.Any): Self = StObject.set(x, "termsOfService", value.asInstanceOf[js.Any])
+    inline def setTermsOfService(value: js.Any): Self = StObject.set(x, "termsOfService", value.asInstanceOf[js.Any])
   }
 }

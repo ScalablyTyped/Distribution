@@ -13,19 +13,15 @@ trait ConversationRetentionSettings extends StObject {
 }
 object ConversationRetentionSettings {
   
-  @scala.inline
-  def apply(): ConversationRetentionSettings = {
+  inline def apply(): ConversationRetentionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConversationRetentionSettings]
   }
   
-  @scala.inline
-  implicit class ConversationRetentionSettingsMutableBuilder[Self <: ConversationRetentionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ConversationRetentionSettings](x: Self) {
     
-    @scala.inline
-    def setRetentionDays(value: RetentionDays): Self = StObject.set(x, "RetentionDays", value.asInstanceOf[js.Any])
+    inline def setRetentionDays(value: RetentionDays): Self = StObject.set(x, "RetentionDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionDaysUndefined: Self = StObject.set(x, "RetentionDays", js.undefined)
+    inline def setRetentionDaysUndefined: Self = StObject.set(x, "RetentionDays", js.undefined)
   }
 }

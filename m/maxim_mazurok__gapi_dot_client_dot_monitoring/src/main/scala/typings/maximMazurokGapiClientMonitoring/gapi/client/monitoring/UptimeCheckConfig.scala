@@ -69,94 +69,65 @@ trait UptimeCheckConfig extends StObject {
 }
 object UptimeCheckConfig {
   
-  @scala.inline
-  def apply(): UptimeCheckConfig = {
+  inline def apply(): UptimeCheckConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UptimeCheckConfig]
   }
   
-  @scala.inline
-  implicit class UptimeCheckConfigMutableBuilder[Self <: UptimeCheckConfig] (val x: Self) extends AnyVal {
+  extension [Self <: UptimeCheckConfig](x: Self) {
     
-    @scala.inline
-    def setContentMatchers(value: js.Array[ContentMatcher]): Self = StObject.set(x, "contentMatchers", value.asInstanceOf[js.Any])
+    inline def setContentMatchers(value: js.Array[ContentMatcher]): Self = StObject.set(x, "contentMatchers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMatchersUndefined: Self = StObject.set(x, "contentMatchers", js.undefined)
+    inline def setContentMatchersUndefined: Self = StObject.set(x, "contentMatchers", js.undefined)
     
-    @scala.inline
-    def setContentMatchersVarargs(value: ContentMatcher*): Self = StObject.set(x, "contentMatchers", js.Array(value :_*))
+    inline def setContentMatchersVarargs(value: ContentMatcher*): Self = StObject.set(x, "contentMatchers", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setHttpCheck(value: HttpCheck): Self = StObject.set(x, "httpCheck", value.asInstanceOf[js.Any])
+    inline def setHttpCheck(value: HttpCheck): Self = StObject.set(x, "httpCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpCheckUndefined: Self = StObject.set(x, "httpCheck", js.undefined)
+    inline def setHttpCheckUndefined: Self = StObject.set(x, "httpCheck", js.undefined)
     
-    @scala.inline
-    def setInternalCheckers(value: js.Array[InternalChecker]): Self = StObject.set(x, "internalCheckers", value.asInstanceOf[js.Any])
+    inline def setInternalCheckers(value: js.Array[InternalChecker]): Self = StObject.set(x, "internalCheckers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalCheckersUndefined: Self = StObject.set(x, "internalCheckers", js.undefined)
+    inline def setInternalCheckersUndefined: Self = StObject.set(x, "internalCheckers", js.undefined)
     
-    @scala.inline
-    def setInternalCheckersVarargs(value: InternalChecker*): Self = StObject.set(x, "internalCheckers", js.Array(value :_*))
+    inline def setInternalCheckersVarargs(value: InternalChecker*): Self = StObject.set(x, "internalCheckers", js.Array(value :_*))
     
-    @scala.inline
-    def setIsInternal(value: Boolean): Self = StObject.set(x, "isInternal", value.asInstanceOf[js.Any])
+    inline def setIsInternal(value: Boolean): Self = StObject.set(x, "isInternal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInternalUndefined: Self = StObject.set(x, "isInternal", js.undefined)
+    inline def setIsInternalUndefined: Self = StObject.set(x, "isInternal", js.undefined)
     
-    @scala.inline
-    def setMonitoredResource(value: MonitoredResource): Self = StObject.set(x, "monitoredResource", value.asInstanceOf[js.Any])
+    inline def setMonitoredResource(value: MonitoredResource): Self = StObject.set(x, "monitoredResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoredResourceUndefined: Self = StObject.set(x, "monitoredResource", js.undefined)
+    inline def setMonitoredResourceUndefined: Self = StObject.set(x, "monitoredResource", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setResourceGroup(value: ResourceGroup): Self = StObject.set(x, "resourceGroup", value.asInstanceOf[js.Any])
+    inline def setResourceGroup(value: ResourceGroup): Self = StObject.set(x, "resourceGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupUndefined: Self = StObject.set(x, "resourceGroup", js.undefined)
+    inline def setResourceGroupUndefined: Self = StObject.set(x, "resourceGroup", js.undefined)
     
-    @scala.inline
-    def setSelectedRegions(value: js.Array[String]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
+    inline def setSelectedRegions(value: js.Array[String]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedRegionsUndefined: Self = StObject.set(x, "selectedRegions", js.undefined)
+    inline def setSelectedRegionsUndefined: Self = StObject.set(x, "selectedRegions", js.undefined)
     
-    @scala.inline
-    def setSelectedRegionsVarargs(value: String*): Self = StObject.set(x, "selectedRegions", js.Array(value :_*))
+    inline def setSelectedRegionsVarargs(value: String*): Self = StObject.set(x, "selectedRegions", js.Array(value :_*))
     
-    @scala.inline
-    def setTcpCheck(value: TcpCheck): Self = StObject.set(x, "tcpCheck", value.asInstanceOf[js.Any])
+    inline def setTcpCheck(value: TcpCheck): Self = StObject.set(x, "tcpCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcpCheckUndefined: Self = StObject.set(x, "tcpCheck", js.undefined)
+    inline def setTcpCheckUndefined: Self = StObject.set(x, "tcpCheck", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

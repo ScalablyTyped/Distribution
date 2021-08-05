@@ -35,26 +35,20 @@ trait ContextObject extends StObject {
 }
 object ContextObject {
   
-  @scala.inline
-  def apply(external_urls: ExternalUrlObject, href: String, `type`: artist | playlist | album, uri: String): ContextObject = {
+  inline def apply(external_urls: ExternalUrlObject, href: String, `type`: artist | playlist | album, uri: String): ContextObject = {
     val __obj = js.Dynamic.literal(external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextObject]
   }
   
-  @scala.inline
-  implicit class ContextObjectMutableBuilder[Self <: ContextObject] (val x: Self) extends AnyVal {
+  extension [Self <: ContextObject](x: Self) {
     
-    @scala.inline
-    def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
+    inline def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: artist | playlist | album): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: artist | playlist | album): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

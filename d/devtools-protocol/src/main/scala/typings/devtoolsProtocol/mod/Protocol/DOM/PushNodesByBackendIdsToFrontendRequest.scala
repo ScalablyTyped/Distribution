@@ -13,19 +13,15 @@ trait PushNodesByBackendIdsToFrontendRequest extends StObject {
 }
 object PushNodesByBackendIdsToFrontendRequest {
   
-  @scala.inline
-  def apply(backendNodeIds: js.Array[BackendNodeId]): PushNodesByBackendIdsToFrontendRequest = {
+  inline def apply(backendNodeIds: js.Array[BackendNodeId]): PushNodesByBackendIdsToFrontendRequest = {
     val __obj = js.Dynamic.literal(backendNodeIds = backendNodeIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushNodesByBackendIdsToFrontendRequest]
   }
   
-  @scala.inline
-  implicit class PushNodesByBackendIdsToFrontendRequestMutableBuilder[Self <: PushNodesByBackendIdsToFrontendRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PushNodesByBackendIdsToFrontendRequest](x: Self) {
     
-    @scala.inline
-    def setBackendNodeIds(value: js.Array[BackendNodeId]): Self = StObject.set(x, "backendNodeIds", value.asInstanceOf[js.Any])
+    inline def setBackendNodeIds(value: js.Array[BackendNodeId]): Self = StObject.set(x, "backendNodeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendNodeIdsVarargs(value: BackendNodeId*): Self = StObject.set(x, "backendNodeIds", js.Array(value :_*))
+    inline def setBackendNodeIdsVarargs(value: BackendNodeId*): Self = StObject.set(x, "backendNodeIds", js.Array(value :_*))
   }
 }

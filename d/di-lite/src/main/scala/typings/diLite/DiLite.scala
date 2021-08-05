@@ -50,8 +50,7 @@ object DiLite {
   }
   object DiLiteStatic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createContext: () => CreateContext,
       dependencyExpression: String => String,
       entry: (String, CreateContext) => js.Any,
@@ -64,29 +63,21 @@ object DiLite {
       __obj.asInstanceOf[DiLiteStatic]
     }
     
-    @scala.inline
-    implicit class DiLiteStaticMutableBuilder[Self <: DiLiteStatic] (val x: Self) extends AnyVal {
+    extension [Self <: DiLiteStatic](x: Self) {
       
-      @scala.inline
-      def setCreateContext(value: () => CreateContext): Self = StObject.set(x, "createContext", js.Any.fromFunction0(value))
+      inline def setCreateContext(value: () => CreateContext): Self = StObject.set(x, "createContext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDependencyExpression(value: String => String): Self = StObject.set(x, "dependencyExpression", js.Any.fromFunction1(value))
+      inline def setDependencyExpression(value: String => String): Self = StObject.set(x, "dependencyExpression", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntry(value: (String, CreateContext) => js.Any): Self = StObject.set(x, "entry", js.Any.fromFunction2(value))
+      inline def setEntry(value: (String, CreateContext) => js.Any): Self = StObject.set(x, "entry", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFactory(value: FactoryEnum): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+      inline def setFactory(value: FactoryEnum): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategy(value: StrategyEnum): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: StrategyEnum): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtils(value: Utils): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+      inline def setUtils(value: Utils): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,17 +113,14 @@ object DiLite {
   }
   object FactoryEnum {
     
-    @scala.inline
-    def apply(func: (js.Any, js.Any) => js.Any): FactoryEnum = {
+    inline def apply(func: (js.Any, js.Any) => js.Any): FactoryEnum = {
       val __obj = js.Dynamic.literal(func = js.Any.fromFunction2(func))
       __obj.asInstanceOf[FactoryEnum]
     }
     
-    @scala.inline
-    implicit class FactoryEnumMutableBuilder[Self <: FactoryEnum] (val x: Self) extends AnyVal {
+    extension [Self <: FactoryEnum](x: Self) {
       
-      @scala.inline
-      def setFunc(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "func", js.Any.fromFunction2(value))
+      inline def setFunc(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "func", js.Any.fromFunction2(value))
     }
   }
   
@@ -167,17 +155,14 @@ object DiLite {
   }
   object Utils {
     
-    @scala.inline
-    def apply(invokeStmt: (js.Any, String) => String): Utils = {
+    inline def apply(invokeStmt: (js.Any, String) => String): Utils = {
       val __obj = js.Dynamic.literal(invokeStmt = js.Any.fromFunction2(invokeStmt))
       __obj.asInstanceOf[Utils]
     }
     
-    @scala.inline
-    implicit class UtilsMutableBuilder[Self <: Utils] (val x: Self) extends AnyVal {
+    extension [Self <: Utils](x: Self) {
       
-      @scala.inline
-      def setInvokeStmt(value: (js.Any, String) => String): Self = StObject.set(x, "invokeStmt", js.Any.fromFunction2(value))
+      inline def setInvokeStmt(value: (js.Any, String) => String): Self = StObject.set(x, "invokeStmt", js.Any.fromFunction2(value))
     }
   }
 }

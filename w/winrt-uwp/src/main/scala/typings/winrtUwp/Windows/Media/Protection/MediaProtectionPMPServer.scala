@@ -13,16 +13,13 @@ trait MediaProtectionPMPServer extends StObject {
 }
 object MediaProtectionPMPServer {
   
-  @scala.inline
-  def apply(properties: IPropertySet): MediaProtectionPMPServer = {
+  inline def apply(properties: IPropertySet): MediaProtectionPMPServer = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaProtectionPMPServer]
   }
   
-  @scala.inline
-  implicit class MediaProtectionPMPServerMutableBuilder[Self <: MediaProtectionPMPServer] (val x: Self) extends AnyVal {
+  extension [Self <: MediaProtectionPMPServer](x: Self) {
     
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

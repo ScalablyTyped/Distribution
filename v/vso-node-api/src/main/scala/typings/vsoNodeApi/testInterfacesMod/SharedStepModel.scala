@@ -12,19 +12,15 @@ trait SharedStepModel extends StObject {
 }
 object SharedStepModel {
   
-  @scala.inline
-  def apply(id: Double, revision: Double): SharedStepModel = {
+  inline def apply(id: Double, revision: Double): SharedStepModel = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedStepModel]
   }
   
-  @scala.inline
-  implicit class SharedStepModelMutableBuilder[Self <: SharedStepModel] (val x: Self) extends AnyVal {
+  extension [Self <: SharedStepModel](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

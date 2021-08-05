@@ -33,38 +33,28 @@ object mod extends Shortcut {
   }
   object FailReason {
     
-    @scala.inline
-    def apply(): FailReason = {
+    inline def apply(): FailReason = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FailReason]
     }
     
-    @scala.inline
-    implicit class FailReasonMutableBuilder[Self <: FailReason] (val x: Self) extends AnyVal {
+    extension [Self <: FailReason](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setJsonBody(value: js.Object): Self = StObject.set(x, "jsonBody", value.asInstanceOf[js.Any])
+      inline def setJsonBody(value: js.Object): Self = StObject.set(x, "jsonBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonBodyUndefined: Self = StObject.set(x, "jsonBody", js.undefined)
+      inline def setJsonBodyUndefined: Self = StObject.set(x, "jsonBody", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
       
-      @scala.inline
-      def setThrown(value: Error): Self = StObject.set(x, "thrown", value.asInstanceOf[js.Any])
+      inline def setThrown(value: Error): Self = StObject.set(x, "thrown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrownUndefined: Self = StObject.set(x, "thrown", js.undefined)
+      inline def setThrownUndefined: Self = StObject.set(x, "thrown", js.undefined)
     }
   }
   
@@ -121,47 +111,34 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(url: String): Options = {
+    inline def apply(url: String): Options = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCached(value: Boolean): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
+      inline def setCached(value: Boolean): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachedUndefined: Self = StObject.set(x, "cached", js.undefined)
+      inline def setCachedUndefined: Self = StObject.set(x, "cached", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+      inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     }
   }
   

@@ -25,25 +25,18 @@ object DataPilotFieldGroupBy {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DAYS: `8` = 8.asInstanceOf[`8`]
+    inline def DAYS: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def HOURS: `4` = 4.asInstanceOf[`4`]
+    inline def HOURS: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def MINUTES: `2` = 2.asInstanceOf[`2`]
+    inline def MINUTES: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def MONTHS: `16` = 16.asInstanceOf[`16`]
+    inline def MONTHS: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def QUARTERS: `32` = 32.asInstanceOf[`32`]
+    inline def QUARTERS: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def SECONDS: `1` = 1.asInstanceOf[`1`]
+    inline def SECONDS: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def YEARS: `64` = 64.asInstanceOf[`64`]
+    inline def YEARS: `64` = 64.asInstanceOf[`64`]
   }
 }

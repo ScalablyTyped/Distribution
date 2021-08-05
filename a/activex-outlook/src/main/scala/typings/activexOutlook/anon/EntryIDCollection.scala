@@ -10,16 +10,13 @@ trait EntryIDCollection extends StObject {
 }
 object EntryIDCollection {
   
-  @scala.inline
-  def apply(EntryIDCollection: String): EntryIDCollection = {
+  inline def apply(EntryIDCollection: String): EntryIDCollection = {
     val __obj = js.Dynamic.literal(EntryIDCollection = EntryIDCollection.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntryIDCollection]
   }
   
-  @scala.inline
-  implicit class EntryIDCollectionMutableBuilder[Self <: EntryIDCollection] (val x: Self) extends AnyVal {
+  extension [Self <: EntryIDCollection](x: Self) {
     
-    @scala.inline
-    def setEntryIDCollection(value: String): Self = StObject.set(x, "EntryIDCollection", value.asInstanceOf[js.Any])
+    inline def setEntryIDCollection(value: String): Self = StObject.set(x, "EntryIDCollection", value.asInstanceOf[js.Any])
   }
 }

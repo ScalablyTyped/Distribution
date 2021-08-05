@@ -17,25 +17,19 @@ trait Tr extends StObject {
 }
 object Tr {
   
-  @scala.inline
-  def apply(bl: Point, br: Point, tl: Point, tr: Point): Tr = {
+  inline def apply(bl: Point, br: Point, tl: Point, tr: Point): Tr = {
     val __obj = js.Dynamic.literal(bl = bl.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], tl = tl.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tr]
   }
   
-  @scala.inline
-  implicit class TrMutableBuilder[Self <: Tr] (val x: Self) extends AnyVal {
+  extension [Self <: Tr](x: Self) {
     
-    @scala.inline
-    def setBl(value: Point): Self = StObject.set(x, "bl", value.asInstanceOf[js.Any])
+    inline def setBl(value: Point): Self = StObject.set(x, "bl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBr(value: Point): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+    inline def setBr(value: Point): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTl(value: Point): Self = StObject.set(x, "tl", value.asInstanceOf[js.Any])
+    inline def setTl(value: Point): Self = StObject.set(x, "tl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTr(value: Point): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+    inline def setTr(value: Point): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
   }
 }

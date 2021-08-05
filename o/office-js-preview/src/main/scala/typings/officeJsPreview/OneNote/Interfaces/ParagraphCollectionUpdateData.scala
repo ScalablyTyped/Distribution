@@ -11,22 +11,17 @@ trait ParagraphCollectionUpdateData extends StObject {
 }
 object ParagraphCollectionUpdateData {
   
-  @scala.inline
-  def apply(): ParagraphCollectionUpdateData = {
+  inline def apply(): ParagraphCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParagraphCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class ParagraphCollectionUpdateDataMutableBuilder[Self <: ParagraphCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[ParagraphData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ParagraphData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: ParagraphData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ParagraphData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

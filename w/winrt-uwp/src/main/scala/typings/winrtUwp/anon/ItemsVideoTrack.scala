@@ -13,19 +13,15 @@ trait ItemsVideoTrack extends StObject {
 }
 object ItemsVideoTrack {
   
-  @scala.inline
-  def apply(items: VideoTrack, returnValue: Double): ItemsVideoTrack = {
+  inline def apply(items: VideoTrack, returnValue: Double): ItemsVideoTrack = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsVideoTrack]
   }
   
-  @scala.inline
-  implicit class ItemsVideoTrackMutableBuilder[Self <: ItemsVideoTrack] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsVideoTrack](x: Self) {
     
-    @scala.inline
-    def setItems(value: VideoTrack): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: VideoTrack): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

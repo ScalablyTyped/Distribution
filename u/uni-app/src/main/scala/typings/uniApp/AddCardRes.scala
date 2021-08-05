@@ -13,22 +13,17 @@ trait AddCardRes extends StObject {
 }
 object AddCardRes {
   
-  @scala.inline
-  def apply(): AddCardRes = {
+  inline def apply(): AddCardRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddCardRes]
   }
   
-  @scala.inline
-  implicit class AddCardResMutableBuilder[Self <: AddCardRes] (val x: Self) extends AnyVal {
+  extension [Self <: AddCardRes](x: Self) {
     
-    @scala.inline
-    def setCardList(value: js.Array[CardData]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
+    inline def setCardList(value: js.Array[CardData]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardListUndefined: Self = StObject.set(x, "cardList", js.undefined)
+    inline def setCardListUndefined: Self = StObject.set(x, "cardList", js.undefined)
     
-    @scala.inline
-    def setCardListVarargs(value: CardData*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+    inline def setCardListVarargs(value: CardData*): Self = StObject.set(x, "cardList", js.Array(value :_*))
   }
 }

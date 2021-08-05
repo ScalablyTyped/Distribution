@@ -10,16 +10,13 @@ trait ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint extends StObject
 }
 object ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(thread_id: Double): ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint = {
+  inline def apply(thread_id: Double): ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal(thread_id = thread_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ActivityGetThreadSubscriptionForAuthenticatedUserEndpointMutableBuilder[Self <: ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setThread_id(value: Double): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
+    inline def setThread_id(value: Double): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
   }
 }

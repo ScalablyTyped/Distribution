@@ -18,28 +18,21 @@ trait ListCommandInvocationsResult extends StObject {
 }
 object ListCommandInvocationsResult {
   
-  @scala.inline
-  def apply(): ListCommandInvocationsResult = {
+  inline def apply(): ListCommandInvocationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCommandInvocationsResult]
   }
   
-  @scala.inline
-  implicit class ListCommandInvocationsResultMutableBuilder[Self <: ListCommandInvocationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListCommandInvocationsResult](x: Self) {
     
-    @scala.inline
-    def setCommandInvocations(value: CommandInvocationList): Self = StObject.set(x, "CommandInvocations", value.asInstanceOf[js.Any])
+    inline def setCommandInvocations(value: CommandInvocationList): Self = StObject.set(x, "CommandInvocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandInvocationsUndefined: Self = StObject.set(x, "CommandInvocations", js.undefined)
+    inline def setCommandInvocationsUndefined: Self = StObject.set(x, "CommandInvocations", js.undefined)
     
-    @scala.inline
-    def setCommandInvocationsVarargs(value: CommandInvocation*): Self = StObject.set(x, "CommandInvocations", js.Array(value :_*))
+    inline def setCommandInvocationsVarargs(value: CommandInvocation*): Self = StObject.set(x, "CommandInvocations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

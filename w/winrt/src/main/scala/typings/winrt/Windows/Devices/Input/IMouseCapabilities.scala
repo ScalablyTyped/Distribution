@@ -18,8 +18,7 @@ trait IMouseCapabilities extends StObject {
 }
 object IMouseCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     horizontalWheelPresent: Double,
     mousePresent: Double,
     numberOfButtons: Double,
@@ -30,22 +29,16 @@ object IMouseCapabilities {
     __obj.asInstanceOf[IMouseCapabilities]
   }
   
-  @scala.inline
-  implicit class IMouseCapabilitiesMutableBuilder[Self <: IMouseCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: IMouseCapabilities](x: Self) {
     
-    @scala.inline
-    def setHorizontalWheelPresent(value: Double): Self = StObject.set(x, "horizontalWheelPresent", value.asInstanceOf[js.Any])
+    inline def setHorizontalWheelPresent(value: Double): Self = StObject.set(x, "horizontalWheelPresent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousePresent(value: Double): Self = StObject.set(x, "mousePresent", value.asInstanceOf[js.Any])
+    inline def setMousePresent(value: Double): Self = StObject.set(x, "mousePresent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfButtons(value: Double): Self = StObject.set(x, "numberOfButtons", value.asInstanceOf[js.Any])
+    inline def setNumberOfButtons(value: Double): Self = StObject.set(x, "numberOfButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapButtons(value: Double): Self = StObject.set(x, "swapButtons", value.asInstanceOf[js.Any])
+    inline def setSwapButtons(value: Double): Self = StObject.set(x, "swapButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalWheelPresent(value: Double): Self = StObject.set(x, "verticalWheelPresent", value.asInstanceOf[js.Any])
+    inline def setVerticalWheelPresent(value: Double): Self = StObject.set(x, "verticalWheelPresent", value.asInstanceOf[js.Any])
   }
 }

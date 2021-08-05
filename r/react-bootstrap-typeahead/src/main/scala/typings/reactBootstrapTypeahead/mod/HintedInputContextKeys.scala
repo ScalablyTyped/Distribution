@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HintedInputContextKeys extends StObject
 object HintedInputContextKeys {
   
-  @scala.inline
-  def hintText: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.hintText = "hintText".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.hintText]
+  inline def hintText: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.hintText = "hintText".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.hintText]
   
-  @scala.inline
-  def initialItem: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.initialItem = "initialItem".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.initialItem]
+  inline def initialItem: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.initialItem = "initialItem".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.initialItem]
   
-  @scala.inline
-  def onAdd: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onAdd = "onAdd".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onAdd]
+  inline def onAdd: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onAdd = "onAdd".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onAdd]
   
-  @scala.inline
-  def selectHintOnEnter: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selectHintOnEnter = "selectHintOnEnter".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selectHintOnEnter]
+  inline def selectHintOnEnter: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selectHintOnEnter = "selectHintOnEnter".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selectHintOnEnter]
 }

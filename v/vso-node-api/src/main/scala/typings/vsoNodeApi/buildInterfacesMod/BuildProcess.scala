@@ -13,17 +13,14 @@ trait BuildProcess extends StObject {
 }
 object BuildProcess {
   
-  @scala.inline
-  def apply(`type`: Double): BuildProcess = {
+  inline def apply(`type`: Double): BuildProcess = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildProcess]
   }
   
-  @scala.inline
-  implicit class BuildProcessMutableBuilder[Self <: BuildProcess] (val x: Self) extends AnyVal {
+  extension [Self <: BuildProcess](x: Self) {
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

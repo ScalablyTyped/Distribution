@@ -21,17 +21,14 @@ object typesMod {
   }
   object MDCTabBarActivatedEventDetail {
     
-    @scala.inline
-    def apply(index: Double): MDCTabBarActivatedEventDetail = {
+    inline def apply(index: Double): MDCTabBarActivatedEventDetail = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCTabBarActivatedEventDetail]
     }
     
-    @scala.inline
-    implicit class MDCTabBarActivatedEventDetailMutableBuilder[Self <: MDCTabBarActivatedEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTabBarActivatedEventDetail](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
 }

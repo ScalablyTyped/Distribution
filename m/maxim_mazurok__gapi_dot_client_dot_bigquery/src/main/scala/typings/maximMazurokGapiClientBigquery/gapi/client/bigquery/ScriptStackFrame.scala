@@ -26,49 +26,35 @@ trait ScriptStackFrame extends StObject {
 }
 object ScriptStackFrame {
   
-  @scala.inline
-  def apply(): ScriptStackFrame = {
+  inline def apply(): ScriptStackFrame = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScriptStackFrame]
   }
   
-  @scala.inline
-  implicit class ScriptStackFrameMutableBuilder[Self <: ScriptStackFrame] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptStackFrame](x: Self) {
     
-    @scala.inline
-    def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
+    inline def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndColumnUndefined: Self = StObject.set(x, "endColumn", js.undefined)
+    inline def setEndColumnUndefined: Self = StObject.set(x, "endColumn", js.undefined)
     
-    @scala.inline
-    def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
+    inline def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndLineUndefined: Self = StObject.set(x, "endLine", js.undefined)
+    inline def setEndLineUndefined: Self = StObject.set(x, "endLine", js.undefined)
     
-    @scala.inline
-    def setProcedureId(value: String): Self = StObject.set(x, "procedureId", value.asInstanceOf[js.Any])
+    inline def setProcedureId(value: String): Self = StObject.set(x, "procedureId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcedureIdUndefined: Self = StObject.set(x, "procedureId", js.undefined)
+    inline def setProcedureIdUndefined: Self = StObject.set(x, "procedureId", js.undefined)
     
-    @scala.inline
-    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
+    inline def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartColumnUndefined: Self = StObject.set(x, "startColumn", js.undefined)
+    inline def setStartColumnUndefined: Self = StObject.set(x, "startColumn", js.undefined)
     
-    @scala.inline
-    def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
+    inline def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
+    inline def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

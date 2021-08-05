@@ -28,34 +28,25 @@ trait SourceRevision extends StObject {
 }
 object SourceRevision {
   
-  @scala.inline
-  def apply(actionName: ActionName): SourceRevision = {
+  inline def apply(actionName: ActionName): SourceRevision = {
     val __obj = js.Dynamic.literal(actionName = actionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceRevision]
   }
   
-  @scala.inline
-  implicit class SourceRevisionMutableBuilder[Self <: SourceRevision] (val x: Self) extends AnyVal {
+  extension [Self <: SourceRevision](x: Self) {
     
-    @scala.inline
-    def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: Revision): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: Revision): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
     
-    @scala.inline
-    def setRevisionSummary(value: RevisionSummary): Self = StObject.set(x, "revisionSummary", value.asInstanceOf[js.Any])
+    inline def setRevisionSummary(value: RevisionSummary): Self = StObject.set(x, "revisionSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionSummaryUndefined: Self = StObject.set(x, "revisionSummary", js.undefined)
+    inline def setRevisionSummaryUndefined: Self = StObject.set(x, "revisionSummary", js.undefined)
     
-    @scala.inline
-    def setRevisionUrl(value: Url): Self = StObject.set(x, "revisionUrl", value.asInstanceOf[js.Any])
+    inline def setRevisionUrl(value: Url): Self = StObject.set(x, "revisionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUrlUndefined: Self = StObject.set(x, "revisionUrl", js.undefined)
+    inline def setRevisionUrlUndefined: Self = StObject.set(x, "revisionUrl", js.undefined)
   }
 }

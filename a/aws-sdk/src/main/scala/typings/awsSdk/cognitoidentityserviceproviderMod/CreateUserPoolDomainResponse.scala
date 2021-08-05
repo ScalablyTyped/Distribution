@@ -13,19 +13,15 @@ trait CreateUserPoolDomainResponse extends StObject {
 }
 object CreateUserPoolDomainResponse {
   
-  @scala.inline
-  def apply(): CreateUserPoolDomainResponse = {
+  inline def apply(): CreateUserPoolDomainResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateUserPoolDomainResponse]
   }
   
-  @scala.inline
-  implicit class CreateUserPoolDomainResponseMutableBuilder[Self <: CreateUserPoolDomainResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateUserPoolDomainResponse](x: Self) {
     
-    @scala.inline
-    def setCloudFrontDomain(value: DomainType): Self = StObject.set(x, "CloudFrontDomain", value.asInstanceOf[js.Any])
+    inline def setCloudFrontDomain(value: DomainType): Self = StObject.set(x, "CloudFrontDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudFrontDomainUndefined: Self = StObject.set(x, "CloudFrontDomain", js.undefined)
+    inline def setCloudFrontDomainUndefined: Self = StObject.set(x, "CloudFrontDomain", js.undefined)
   }
 }

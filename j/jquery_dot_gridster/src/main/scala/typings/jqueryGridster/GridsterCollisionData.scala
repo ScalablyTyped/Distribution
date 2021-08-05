@@ -21,8 +21,7 @@ trait GridsterCollisionData extends StObject {
 }
 object GridsterCollisionData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     area: Double,
     area_coords: GridsterCoords,
     coords: GridsterCoords,
@@ -34,25 +33,18 @@ object GridsterCollisionData {
     __obj.asInstanceOf[GridsterCollisionData]
   }
   
-  @scala.inline
-  implicit class GridsterCollisionDataMutableBuilder[Self <: GridsterCollisionData] (val x: Self) extends AnyVal {
+  extension [Self <: GridsterCollisionData](x: Self) {
     
-    @scala.inline
-    def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArea_coords(value: GridsterCoords): Self = StObject.set(x, "area_coords", value.asInstanceOf[js.Any])
+    inline def setArea_coords(value: GridsterCoords): Self = StObject.set(x, "area_coords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoords(value: GridsterCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: GridsterCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayer_coords(value: GridsterCoords): Self = StObject.set(x, "player_coords", value.asInstanceOf[js.Any])
+    inline def setPlayer_coords(value: GridsterCoords): Self = StObject.set(x, "player_coords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
   }
 }

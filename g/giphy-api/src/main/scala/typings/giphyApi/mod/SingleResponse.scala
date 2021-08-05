@@ -14,16 +14,13 @@ trait SingleResponse
 }
 object SingleResponse {
   
-  @scala.inline
-  def apply(data: GIFObject, meta: Msg, pagination: Count): SingleResponse = {
+  inline def apply(data: GIFObject, meta: Msg, pagination: Count): SingleResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleResponse]
   }
   
-  @scala.inline
-  implicit class SingleResponseMutableBuilder[Self <: SingleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SingleResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: GIFObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: GIFObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

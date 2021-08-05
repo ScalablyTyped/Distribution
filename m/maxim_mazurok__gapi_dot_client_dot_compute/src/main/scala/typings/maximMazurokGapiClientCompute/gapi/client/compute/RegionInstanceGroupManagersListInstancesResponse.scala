@@ -17,28 +17,21 @@ trait RegionInstanceGroupManagersListInstancesResponse extends StObject {
 }
 object RegionInstanceGroupManagersListInstancesResponse {
   
-  @scala.inline
-  def apply(): RegionInstanceGroupManagersListInstancesResponse = {
+  inline def apply(): RegionInstanceGroupManagersListInstancesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionInstanceGroupManagersListInstancesResponse]
   }
   
-  @scala.inline
-  implicit class RegionInstanceGroupManagersListInstancesResponseMutableBuilder[Self <: RegionInstanceGroupManagersListInstancesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegionInstanceGroupManagersListInstancesResponse](x: Self) {
     
-    @scala.inline
-    def setManagedInstances(value: js.Array[ManagedInstance]): Self = StObject.set(x, "managedInstances", value.asInstanceOf[js.Any])
+    inline def setManagedInstances(value: js.Array[ManagedInstance]): Self = StObject.set(x, "managedInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedInstancesUndefined: Self = StObject.set(x, "managedInstances", js.undefined)
+    inline def setManagedInstancesUndefined: Self = StObject.set(x, "managedInstances", js.undefined)
     
-    @scala.inline
-    def setManagedInstancesVarargs(value: ManagedInstance*): Self = StObject.set(x, "managedInstances", js.Array(value :_*))
+    inline def setManagedInstancesVarargs(value: ManagedInstance*): Self = StObject.set(x, "managedInstances", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

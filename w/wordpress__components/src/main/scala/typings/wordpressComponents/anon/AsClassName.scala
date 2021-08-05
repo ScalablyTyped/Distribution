@@ -18,25 +18,19 @@ trait AsClassName[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was u
 }
 object AsClassName {
   
-  @scala.inline
-  def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](): AsClassName[T] = {
+  inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](): AsClassName[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsClassName[T]]
   }
   
-  @scala.inline
-  implicit class AsClassNameMutableBuilder[Self <: AsClassName[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] (val x: Self & AsClassName[T]) extends AnyVal {
+  extension [Self <: AsClassName[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](x: Self & AsClassName[T]) {
     
-    @scala.inline
-    def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
   }
 }

@@ -32,8 +32,7 @@ trait XRegressionCurveContainer
 }
 object XRegressionCurveContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RegressionCurves: SafeArray[XRegressionCurve],
     acquire: () => Unit,
     addRegressionCurve: XRegressionCurve => Unit,
@@ -47,22 +46,16 @@ object XRegressionCurveContainer {
     __obj.asInstanceOf[XRegressionCurveContainer]
   }
   
-  @scala.inline
-  implicit class XRegressionCurveContainerMutableBuilder[Self <: XRegressionCurveContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XRegressionCurveContainer](x: Self) {
     
-    @scala.inline
-    def setAddRegressionCurve(value: XRegressionCurve => Unit): Self = StObject.set(x, "addRegressionCurve", js.Any.fromFunction1(value))
+    inline def setAddRegressionCurve(value: XRegressionCurve => Unit): Self = StObject.set(x, "addRegressionCurve", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRegressionCurves(value: () => SafeArray[XRegressionCurve]): Self = StObject.set(x, "getRegressionCurves", js.Any.fromFunction0(value))
+    inline def setGetRegressionCurves(value: () => SafeArray[XRegressionCurve]): Self = StObject.set(x, "getRegressionCurves", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRegressionCurves(value: SafeArray[XRegressionCurve]): Self = StObject.set(x, "RegressionCurves", value.asInstanceOf[js.Any])
+    inline def setRegressionCurves(value: SafeArray[XRegressionCurve]): Self = StObject.set(x, "RegressionCurves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveRegressionCurve(value: XRegressionCurve => Unit): Self = StObject.set(x, "removeRegressionCurve", js.Any.fromFunction1(value))
+    inline def setRemoveRegressionCurve(value: XRegressionCurve => Unit): Self = StObject.set(x, "removeRegressionCurve", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRegressionCurves(value: SeqEquiv[XRegressionCurve] => Unit): Self = StObject.set(x, "setRegressionCurves", js.Any.fromFunction1(value))
+    inline def setSetRegressionCurves(value: SeqEquiv[XRegressionCurve] => Unit): Self = StObject.set(x, "setRegressionCurves", js.Any.fromFunction1(value))
   }
 }

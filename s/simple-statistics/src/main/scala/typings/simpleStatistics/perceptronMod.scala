@@ -37,8 +37,7 @@ object perceptronMod {
   }
   object PerceptronModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bias: Double,
       predict: js.Array[Double] => Double,
       train: (js.Array[Double], Double) => PerceptronModel,
@@ -48,23 +47,17 @@ object perceptronMod {
       __obj.asInstanceOf[PerceptronModel]
     }
     
-    @scala.inline
-    implicit class PerceptronModelMutableBuilder[Self <: PerceptronModel] (val x: Self) extends AnyVal {
+    extension [Self <: PerceptronModel](x: Self) {
       
-      @scala.inline
-      def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
+      inline def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredict(value: js.Array[Double] => Double): Self = StObject.set(x, "predict", js.Any.fromFunction1(value))
+      inline def setPredict(value: js.Array[Double] => Double): Self = StObject.set(x, "predict", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrain(value: (js.Array[Double], Double) => PerceptronModel): Self = StObject.set(x, "train", js.Any.fromFunction2(value))
+      inline def setTrain(value: (js.Array[Double], Double) => PerceptronModel): Self = StObject.set(x, "train", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWeights(value: js.Array[Double]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
+      inline def setWeights(value: js.Array[Double]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightsVarargs(value: Double*): Self = StObject.set(x, "weights", js.Array(value :_*))
+      inline def setWeightsVarargs(value: Double*): Self = StObject.set(x, "weights", js.Array(value :_*))
     }
   }
 }

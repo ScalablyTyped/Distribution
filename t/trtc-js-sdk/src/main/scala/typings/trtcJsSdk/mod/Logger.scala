@@ -47,36 +47,27 @@ object Logger {
     @js.native
     val ^ : LogLevel = js.native
     
-    @scala.inline
-    implicit class LogLevelMutableBuilder[Self <: LogLevel] (val x: Self) extends AnyVal {
+    extension [Self <: LogLevel](x: Self) {
       
-      @scala.inline
-      def setDEBUG(value: `1`): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
+      inline def setDEBUG(value: `1`): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERROR(value: `4`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+      inline def setERROR(value: `4`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINFO(value: `2`): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
+      inline def setINFO(value: `2`): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNONE(value: `5`): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+      inline def setNONE(value: `5`): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRACE(value: `0`): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
+      inline def setTRACE(value: `0`): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWARN(value: `3`): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
+      inline def setWARN(value: `3`): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
     }
   }
   
   /** 关闭日志上传 */
-  @scala.inline
-  def disableUploadLog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableUploadLog")().asInstanceOf[Unit]
+  inline def disableUploadLog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableUploadLog")().asInstanceOf[Unit]
   
   /** 打开日志上传 */
-  @scala.inline
-  def enableUploadLog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableUploadLog")().asInstanceOf[Unit]
+  inline def enableUploadLog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableUploadLog")().asInstanceOf[Unit]
   
   /**
     * 设置日志输出等级
@@ -86,24 +77,17 @@ object Logger {
     * TRTC.Logger.setLogLevel(TRTC.Logger.LogLevel.INFO);
     * ```
     */
-  @scala.inline
-  def setLogLevel_0(level: `0`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogLevel_0(level: `0`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLogLevel_1(level: `1`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogLevel_1(level: `1`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLogLevel_2(level: `2`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogLevel_2(level: `2`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLogLevel_3(level: `3`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogLevel_3(level: `3`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLogLevel_4(level: `4`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogLevel_4(level: `4`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLogLevel_5(level: `5`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogLevel_5(level: `5`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLogLevel_6(level: `6`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogLevel_6(level: `6`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

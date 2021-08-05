@@ -18,22 +18,17 @@ trait ChipData extends StObject {
 }
 object ChipData {
   
-  @scala.inline
-  def apply(tag: String): ChipData = {
+  inline def apply(tag: String): ChipData = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChipData]
   }
   
-  @scala.inline
-  implicit class ChipDataMutableBuilder[Self <: ChipData] (val x: Self) extends AnyVal {
+  extension [Self <: ChipData](x: Self) {
     
-    @scala.inline
-    def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+    inline def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
+    inline def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

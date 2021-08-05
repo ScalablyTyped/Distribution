@@ -37,17 +37,14 @@ object parserMod {
   }
   object ParserOptions {
     
-    @scala.inline
-    def apply(): ParserOptions = {
+    inline def apply(): ParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserOptions]
     }
     
-    @scala.inline
-    implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParserOptions](x: Self) {
       
-      @scala.inline
-      def setElement(
+      inline def setElement(
         value: Instantiable2[
               /* name */ String, 
               /* attrs */ js.UndefOr[String | StringDictionary[js.Any]], 
@@ -55,14 +52,11 @@ object parserMod {
             ]
       ): Self = StObject.set(x, "Element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "Element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "Element", js.undefined)
       
-      @scala.inline
-      def setParser(value: Instantiable1[/* options */ js.UndefOr[ParserOptions], Parser]): Self = StObject.set(x, "Parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: Instantiable1[/* options */ js.UndefOr[ParserOptions], Parser]): Self = StObject.set(x, "Parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserUndefined: Self = StObject.set(x, "Parser", js.undefined)
+      inline def setParserUndefined: Self = StObject.set(x, "Parser", js.undefined)
     }
   }
 }

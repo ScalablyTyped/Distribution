@@ -33,44 +33,33 @@ trait WriteRequest extends StObject {
 }
 object WriteRequest {
   
-  @scala.inline
-  def apply(): WriteRequest = {
+  inline def apply(): WriteRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WriteRequest]
   }
   
-  @scala.inline
-  implicit class WriteRequestMutableBuilder[Self <: WriteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: WriteRequest](x: Self) {
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.WriteRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
+    inline def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
     
-    @scala.inline
-    def setStreamToken(value: String): Self = StObject.set(x, "streamToken", value.asInstanceOf[js.Any])
+    inline def setStreamToken(value: String): Self = StObject.set(x, "streamToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamTokenUndefined: Self = StObject.set(x, "streamToken", js.undefined)
+    inline def setStreamTokenUndefined: Self = StObject.set(x, "streamToken", js.undefined)
     
-    @scala.inline
-    def setWrites(value: js.Array[Write]): Self = StObject.set(x, "writes", value.asInstanceOf[js.Any])
+    inline def setWrites(value: js.Array[Write]): Self = StObject.set(x, "writes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritesUndefined: Self = StObject.set(x, "writes", js.undefined)
+    inline def setWritesUndefined: Self = StObject.set(x, "writes", js.undefined)
     
-    @scala.inline
-    def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value :_*))
+    inline def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value :_*))
   }
 }

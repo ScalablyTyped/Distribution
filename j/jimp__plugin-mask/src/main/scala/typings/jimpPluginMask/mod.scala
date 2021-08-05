@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Mask = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Mask]
+  inline def default(): Mask = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Mask]
   
   @js.native
   trait Mask extends StObject {

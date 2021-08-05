@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ACLType extends StObject
 object ACLType {
   
-  @scala.inline
-  def `private`: typings.aliOss.aliOssStrings.`private` = "private".asInstanceOf[typings.aliOss.aliOssStrings.`private`]
+  inline def `private`: typings.aliOss.aliOssStrings.`private` = "private".asInstanceOf[typings.aliOss.aliOssStrings.`private`]
   
-  @scala.inline
-  def `public-read`: typings.aliOss.aliOssStrings.`public-read` = "public-read".asInstanceOf[typings.aliOss.aliOssStrings.`public-read`]
+  inline def `public-read`: typings.aliOss.aliOssStrings.`public-read` = "public-read".asInstanceOf[typings.aliOss.aliOssStrings.`public-read`]
   
-  @scala.inline
-  def `public-read-write`: typings.aliOss.aliOssStrings.`public-read-write` = "public-read-write".asInstanceOf[typings.aliOss.aliOssStrings.`public-read-write`]
+  inline def `public-read-write`: typings.aliOss.aliOssStrings.`public-read-write` = "public-read-write".asInstanceOf[typings.aliOss.aliOssStrings.`public-read-write`]
 }

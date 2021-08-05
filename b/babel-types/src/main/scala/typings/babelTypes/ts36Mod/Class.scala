@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Class extends StObject
 object Class {
   
-  @scala.inline
-  def ClassDeclaration_(
+  inline def ClassDeclaration_(
     body: ClassBody_,
     end: Double,
     id: Identifier_,
@@ -25,8 +24,7 @@ object Class {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ClassDeclaration_]
   }
   
-  @scala.inline
-  def ClassExpression_(
+  inline def ClassExpression_(
     body: ClassBody_,
     end: Double,
     id: Identifier_,

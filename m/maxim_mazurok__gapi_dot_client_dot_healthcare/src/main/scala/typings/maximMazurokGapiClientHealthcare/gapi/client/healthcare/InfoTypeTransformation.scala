@@ -26,52 +26,37 @@ trait InfoTypeTransformation extends StObject {
 }
 object InfoTypeTransformation {
   
-  @scala.inline
-  def apply(): InfoTypeTransformation = {
+  inline def apply(): InfoTypeTransformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InfoTypeTransformation]
   }
   
-  @scala.inline
-  implicit class InfoTypeTransformationMutableBuilder[Self <: InfoTypeTransformation] (val x: Self) extends AnyVal {
+  extension [Self <: InfoTypeTransformation](x: Self) {
     
-    @scala.inline
-    def setCharacterMaskConfig(value: CharacterMaskConfig): Self = StObject.set(x, "characterMaskConfig", value.asInstanceOf[js.Any])
+    inline def setCharacterMaskConfig(value: CharacterMaskConfig): Self = StObject.set(x, "characterMaskConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterMaskConfigUndefined: Self = StObject.set(x, "characterMaskConfig", js.undefined)
+    inline def setCharacterMaskConfigUndefined: Self = StObject.set(x, "characterMaskConfig", js.undefined)
     
-    @scala.inline
-    def setCryptoHashConfig(value: CryptoHashConfig): Self = StObject.set(x, "cryptoHashConfig", value.asInstanceOf[js.Any])
+    inline def setCryptoHashConfig(value: CryptoHashConfig): Self = StObject.set(x, "cryptoHashConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCryptoHashConfigUndefined: Self = StObject.set(x, "cryptoHashConfig", js.undefined)
+    inline def setCryptoHashConfigUndefined: Self = StObject.set(x, "cryptoHashConfig", js.undefined)
     
-    @scala.inline
-    def setDateShiftConfig(value: DateShiftConfig): Self = StObject.set(x, "dateShiftConfig", value.asInstanceOf[js.Any])
+    inline def setDateShiftConfig(value: DateShiftConfig): Self = StObject.set(x, "dateShiftConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateShiftConfigUndefined: Self = StObject.set(x, "dateShiftConfig", js.undefined)
+    inline def setDateShiftConfigUndefined: Self = StObject.set(x, "dateShiftConfig", js.undefined)
     
-    @scala.inline
-    def setInfoTypes(value: js.Array[String]): Self = StObject.set(x, "infoTypes", value.asInstanceOf[js.Any])
+    inline def setInfoTypes(value: js.Array[String]): Self = StObject.set(x, "infoTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
+    inline def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
     
-    @scala.inline
-    def setInfoTypesVarargs(value: String*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
+    inline def setInfoTypesVarargs(value: String*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setRedactConfig(value: js.Any): Self = StObject.set(x, "redactConfig", value.asInstanceOf[js.Any])
+    inline def setRedactConfig(value: js.Any): Self = StObject.set(x, "redactConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactConfigUndefined: Self = StObject.set(x, "redactConfig", js.undefined)
+    inline def setRedactConfigUndefined: Self = StObject.set(x, "redactConfig", js.undefined)
     
-    @scala.inline
-    def setReplaceWithInfoTypeConfig(value: js.Any): Self = StObject.set(x, "replaceWithInfoTypeConfig", value.asInstanceOf[js.Any])
+    inline def setReplaceWithInfoTypeConfig(value: js.Any): Self = StObject.set(x, "replaceWithInfoTypeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceWithInfoTypeConfigUndefined: Self = StObject.set(x, "replaceWithInfoTypeConfig", js.undefined)
+    inline def setReplaceWithInfoTypeConfigUndefined: Self = StObject.set(x, "replaceWithInfoTypeConfig", js.undefined)
   }
 }

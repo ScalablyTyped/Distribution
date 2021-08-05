@@ -113,67 +113,51 @@ trait IDropZone
 }
 object IDropZone {
   
-  @scala.inline
-  def apply(): IDropZone = {
+  inline def apply(): IDropZone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDropZone]
   }
   
-  @scala.inline
-  implicit class IDropZoneMutableBuilder[Self <: IDropZone] (val x: Self) extends AnyVal {
+  extension [Self <: IDropZone](x: Self) {
     
-    @scala.inline
-    def setGetTargetFromEvent(value: /* e */ js.UndefOr[Event] => js.Any): Self = StObject.set(x, "getTargetFromEvent", js.Any.fromFunction1(value))
+    inline def setGetTargetFromEvent(value: /* e */ js.UndefOr[Event] => js.Any): Self = StObject.set(x, "getTargetFromEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTargetFromEventUndefined: Self = StObject.set(x, "getTargetFromEvent", js.undefined)
+    inline def setGetTargetFromEventUndefined: Self = StObject.set(x, "getTargetFromEvent", js.undefined)
     
-    @scala.inline
-    def setOnContainerDrop(
+    inline def setOnContainerDrop(
       value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean
     ): Self = StObject.set(x, "onContainerDrop", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnContainerDropUndefined: Self = StObject.set(x, "onContainerDrop", js.undefined)
+    inline def setOnContainerDropUndefined: Self = StObject.set(x, "onContainerDrop", js.undefined)
     
-    @scala.inline
-    def setOnContainerOver(
+    inline def setOnContainerOver(
       value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String
     ): Self = StObject.set(x, "onContainerOver", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnContainerOverUndefined: Self = StObject.set(x, "onContainerOver", js.undefined)
+    inline def setOnContainerOverUndefined: Self = StObject.set(x, "onContainerOver", js.undefined)
     
-    @scala.inline
-    def setOnNodeDrop(
+    inline def setOnNodeDrop(
       value: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean
     ): Self = StObject.set(x, "onNodeDrop", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnNodeDropUndefined: Self = StObject.set(x, "onNodeDrop", js.undefined)
+    inline def setOnNodeDropUndefined: Self = StObject.set(x, "onNodeDrop", js.undefined)
     
-    @scala.inline
-    def setOnNodeEnter(
+    inline def setOnNodeEnter(
       value: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "onNodeEnter", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnNodeEnterUndefined: Self = StObject.set(x, "onNodeEnter", js.undefined)
+    inline def setOnNodeEnterUndefined: Self = StObject.set(x, "onNodeEnter", js.undefined)
     
-    @scala.inline
-    def setOnNodeOut(
+    inline def setOnNodeOut(
       value: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "onNodeOut", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnNodeOutUndefined: Self = StObject.set(x, "onNodeOut", js.undefined)
+    inline def setOnNodeOutUndefined: Self = StObject.set(x, "onNodeOut", js.undefined)
     
-    @scala.inline
-    def setOnNodeOver(
+    inline def setOnNodeOver(
       value: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String
     ): Self = StObject.set(x, "onNodeOver", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnNodeOverUndefined: Self = StObject.set(x, "onNodeOver", js.undefined)
+    inline def setOnNodeOverUndefined: Self = StObject.set(x, "onNodeOver", js.undefined)
   }
 }

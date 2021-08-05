@@ -13,57 +13,49 @@ object searchParamsStrings {
   sealed trait default
     extends StObject
        with nullFormat
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait brackets
     extends StObject
        with arrayFormat
-  @scala.inline
-  def brackets: brackets = "brackets".asInstanceOf[brackets]
+  inline def brackets: brackets = "brackets".asInstanceOf[brackets]
   
   @js.native
   sealed trait `empty-true`
     extends StObject
        with booleanFormat
-  @scala.inline
-  def `empty-true`: `empty-true` = "empty-true".asInstanceOf[`empty-true`]
+  inline def `empty-true`: `empty-true` = "empty-true".asInstanceOf[`empty-true`]
   
   @js.native
   sealed trait hidden
     extends StObject
        with nullFormat
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
   sealed trait index
     extends StObject
        with arrayFormat
-  @scala.inline
-  def index: index = "index".asInstanceOf[index]
+  inline def index: index = "index".asInstanceOf[index]
   
   @js.native
   sealed trait none
     extends StObject
        with arrayFormat
        with booleanFormat
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait string
     extends StObject
        with booleanFormat
        with nullFormat
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait unicode
     extends StObject
        with booleanFormat
-  @scala.inline
-  def unicode: unicode = "unicode".asInstanceOf[unicode]
+  inline def unicode: unicode = "unicode".asInstanceOf[unicode]
 }

@@ -26,31 +26,23 @@ trait SchemaDicomConfig extends StObject {
 }
 object SchemaDicomConfig {
   
-  @scala.inline
-  def apply(): SchemaDicomConfig = {
+  inline def apply(): SchemaDicomConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDicomConfig]
   }
   
-  @scala.inline
-  implicit class SchemaDicomConfigMutableBuilder[Self <: SchemaDicomConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDicomConfig](x: Self) {
     
-    @scala.inline
-    def setFilterProfile(value: String): Self = StObject.set(x, "filterProfile", value.asInstanceOf[js.Any])
+    inline def setFilterProfile(value: String): Self = StObject.set(x, "filterProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterProfileUndefined: Self = StObject.set(x, "filterProfile", js.undefined)
+    inline def setFilterProfileUndefined: Self = StObject.set(x, "filterProfile", js.undefined)
     
-    @scala.inline
-    def setKeepList(value: SchemaTagFilterList): Self = StObject.set(x, "keepList", value.asInstanceOf[js.Any])
+    inline def setKeepList(value: SchemaTagFilterList): Self = StObject.set(x, "keepList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepListUndefined: Self = StObject.set(x, "keepList", js.undefined)
+    inline def setKeepListUndefined: Self = StObject.set(x, "keepList", js.undefined)
     
-    @scala.inline
-    def setRemoveList(value: SchemaTagFilterList): Self = StObject.set(x, "removeList", value.asInstanceOf[js.Any])
+    inline def setRemoveList(value: SchemaTagFilterList): Self = StObject.set(x, "removeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveListUndefined: Self = StObject.set(x, "removeList", js.undefined)
+    inline def setRemoveListUndefined: Self = StObject.set(x, "removeList", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DescribeResizeMessage extends StObject {
 }
 object DescribeResizeMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String): DescribeResizeMessage = {
+  inline def apply(ClusterIdentifier: String): DescribeResizeMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeResizeMessage]
   }
   
-  @scala.inline
-  implicit class DescribeResizeMessageMutableBuilder[Self <: DescribeResizeMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeResizeMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcFormatBarLimits extends StObject
 object AcFormatBarLimits {
   
-  @scala.inline
-  def acAutomatic: `0` = 0.asInstanceOf[`0`]
+  inline def acAutomatic: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acNumber: `1` = 1.asInstanceOf[`1`]
+  inline def acNumber: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acPercent: `2` = 2.asInstanceOf[`2`]
+  inline def acPercent: `2` = 2.asInstanceOf[`2`]
 }

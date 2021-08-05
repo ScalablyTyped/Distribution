@@ -50,21 +50,16 @@ object logServiceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LogService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogService]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogService]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LogServiceState): LogService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogService]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LogServiceState, opts: CustomResourceOptions): LogService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogService]
+    inline def get(name: String, id: Input[ID]): LogService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogService]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogService]
+    inline def get(name: String, id: Input[ID], state: LogServiceState): LogService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogService]
+    inline def get(name: String, id: Input[ID], state: LogServiceState, opts: CustomResourceOptions): LogService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogService]
     
     /**
       * Returns true if the given object is an instance of LogService.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/logService.LogService */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directoryservice/logService.LogService */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/logService.LogService */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directoryservice/logService.LogService */ Boolean]
   }
   
   trait LogServiceArgs extends StObject {
@@ -81,20 +76,16 @@ object logServiceMod {
   }
   object LogServiceArgs {
     
-    @scala.inline
-    def apply(directoryId: Input[String], logGroupName: Input[String]): LogServiceArgs = {
+    inline def apply(directoryId: Input[String], logGroupName: Input[String]): LogServiceArgs = {
       val __obj = js.Dynamic.literal(directoryId = directoryId.asInstanceOf[js.Any], logGroupName = logGroupName.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogServiceArgs]
     }
     
-    @scala.inline
-    implicit class LogServiceArgsMutableBuilder[Self <: LogServiceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LogServiceArgs](x: Self) {
       
-      @scala.inline
-      def setDirectoryId(value: Input[String]): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
+      inline def setDirectoryId(value: Input[String]): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+      inline def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object logServiceMod {
   }
   object LogServiceState {
     
-    @scala.inline
-    def apply(): LogServiceState = {
+    inline def apply(): LogServiceState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogServiceState]
     }
     
-    @scala.inline
-    implicit class LogServiceStateMutableBuilder[Self <: LogServiceState] (val x: Self) extends AnyVal {
+    extension [Self <: LogServiceState](x: Self) {
       
-      @scala.inline
-      def setDirectoryId(value: Input[String]): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
+      inline def setDirectoryId(value: Input[String]): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryIdUndefined: Self = StObject.set(x, "directoryId", js.undefined)
+      inline def setDirectoryIdUndefined: Self = StObject.set(x, "directoryId", js.undefined)
       
-      @scala.inline
-      def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+      inline def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
+      inline def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
     }
   }
 }

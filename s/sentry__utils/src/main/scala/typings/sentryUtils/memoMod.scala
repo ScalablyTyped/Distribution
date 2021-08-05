@@ -11,10 +11,10 @@ object memoMod {
   class Memo () extends StObject {
     
     /** Determines if WeakSet is available */
-    val _hasWeakSet: js.Any = js.native
+    /* private */ val _hasWeakSet: js.Any = js.native
     
     /** Either WeakSet or Array */
-    val _inner: js.Any = js.native
+    /* private */ val _inner: js.Any = js.native
     
     /**
       * Sets obj to remember.

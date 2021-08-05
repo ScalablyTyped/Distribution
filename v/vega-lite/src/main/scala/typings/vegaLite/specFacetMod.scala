@@ -31,16 +31,12 @@ object specFacetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isFacetFieldDef[F /* <: Field */](channelDef: ChannelDef[F]): /* is vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, any> */ Boolean]
+  inline def isFacetFieldDef[F /* <: Field */](channelDef: ChannelDef[F]): /* is vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, any> */ Boolean]
   
-  @scala.inline
-  def isFacetMapping[F /* <: Field */, ES /* <: ExprRef | SignalRef */](f: FacetFieldDef[F, ES]): /* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetMapping")(f.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean]
-  @scala.inline
-  def isFacetMapping[F /* <: Field */, ES /* <: ExprRef | SignalRef */](f: FacetMapping[F, FacetFieldDef[F, ExprRef | SignalRef]]): /* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetMapping")(f.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean]
+  inline def isFacetMapping[F /* <: Field */, ES /* <: ExprRef | SignalRef */](f: FacetFieldDef[F, ES]): /* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetMapping")(f.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean]
+  inline def isFacetMapping[F /* <: Field */, ES /* <: ExprRef | SignalRef */](f: FacetMapping[F, FacetFieldDef[F, ExprRef | SignalRef]]): /* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetMapping")(f.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean]
   
-  @scala.inline
-  def isFacetSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<any, any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<any, any, any> */ Boolean]
+  inline def isFacetSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<any, any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<any, any, any> */ Boolean]
   
   trait EncodingFacetMapping[F /* <: Field */, ES /* <: ExprRef | SignalRef */]
     extends StObject
@@ -55,20 +51,16 @@ object specFacetMod {
   }
   object EncodingFacetMapping {
     
-    @scala.inline
-    def apply[F /* <: Field */, ES /* <: ExprRef | SignalRef */](): EncodingFacetMapping[F, ES] = {
+    inline def apply[F /* <: Field */, ES /* <: ExprRef | SignalRef */](): EncodingFacetMapping[F, ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncodingFacetMapping[F, ES]]
     }
     
-    @scala.inline
-    implicit class EncodingFacetMappingMutableBuilder[Self <: EncodingFacetMapping[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */] (val x: Self & (EncodingFacetMapping[F, ES])) extends AnyVal {
+    extension [Self <: EncodingFacetMapping[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */](x: Self & (EncodingFacetMapping[F, ES])) {
       
-      @scala.inline
-      def setFacet(value: FacetEncodingFieldDef[F, ES]): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
+      inline def setFacet(value: FacetEncodingFieldDef[F, ES]): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetUndefined: Self = StObject.set(x, "facet", js.undefined)
+      inline def setFacetUndefined: Self = StObject.set(x, "facet", js.undefined)
     }
   }
   
@@ -102,32 +94,24 @@ object specFacetMod {
   }
   object FacetFieldDef {
     
-    @scala.inline
-    def apply[F /* <: Field */, ES /* <: ExprRef | SignalRef */](): FacetFieldDef[F, ES] = {
+    inline def apply[F /* <: Field */, ES /* <: ExprRef | SignalRef */](): FacetFieldDef[F, ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FacetFieldDef[F, ES]]
     }
     
-    @scala.inline
-    implicit class FacetFieldDefMutableBuilder[Self <: FacetFieldDef[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */] (val x: Self & (FacetFieldDef[F, ES])) extends AnyVal {
+    extension [Self <: FacetFieldDef[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */](x: Self & (FacetFieldDef[F, ES])) {
       
-      @scala.inline
-      def setHeader(value: Header[ES]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Header[ES]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setSort(value: SortArray | SortOrder | EncodingSortField[F]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: SortArray | SortOrder | EncodingSortField[F]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortNull: Self = StObject.set(x, "sort", null)
+      inline def setSortNull: Self = StObject.set(x, "sort", null)
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      @scala.inline
-      def setSortVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "sort", js.Array(value :_*))
+      inline def setSortVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "sort", js.Array(value :_*))
     }
   }
   
@@ -145,26 +129,20 @@ object specFacetMod {
   }
   object FacetMapping {
     
-    @scala.inline
-    def apply[F /* <: Field */, FD /* <: FacetFieldDef[F, ExprRef | SignalRef] */](): FacetMapping[F, FD] = {
+    inline def apply[F /* <: Field */, FD /* <: FacetFieldDef[F, ExprRef | SignalRef] */](): FacetMapping[F, FD] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FacetMapping[F, FD]]
     }
     
-    @scala.inline
-    implicit class FacetMappingMutableBuilder[Self <: FacetMapping[?, ?], F /* <: Field */, FD /* <: FacetFieldDef[F, ExprRef | SignalRef] */] (val x: Self & (FacetMapping[F, FD])) extends AnyVal {
+    extension [Self <: FacetMapping[?, ?], F /* <: Field */, FD /* <: FacetFieldDef[F, ExprRef | SignalRef] */](x: Self & (FacetMapping[F, FD])) {
       
-      @scala.inline
-      def setColumn(value: FD): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: FD): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setRow(value: FD): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: FD): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     }
   }
   
@@ -188,8 +166,7 @@ object specFacetMod {
   }
   object GenericFacetSpec {
     
-    @scala.inline
-    def apply[U /* <: GenericUnitSpec[js.Any, js.Any] */, L /* <: GenericLayerSpec[js.Any] */, F /* <: Field */](
+    inline def apply[U /* <: GenericUnitSpec[js.Any, js.Any] */, L /* <: GenericLayerSpec[js.Any] */, F /* <: Field */](
       facet: (FacetFieldDef[F, ExprRef | SignalRef]) | (FacetMapping[F, FacetFieldDef[F, ExprRef | SignalRef]]),
       spec: L | U
     ): GenericFacetSpec[U, L, F] = {
@@ -197,16 +174,13 @@ object specFacetMod {
       __obj.asInstanceOf[GenericFacetSpec[U, L, F]]
     }
     
-    @scala.inline
-    implicit class GenericFacetSpecMutableBuilder[Self <: GenericFacetSpec[?, ?, ?], U /* <: GenericUnitSpec[js.Any, js.Any] */, L /* <: GenericLayerSpec[js.Any] */, F /* <: Field */] (val x: Self & (GenericFacetSpec[U, L, F])) extends AnyVal {
+    extension [Self <: GenericFacetSpec[?, ?, ?], U /* <: GenericUnitSpec[js.Any, js.Any] */, L /* <: GenericLayerSpec[js.Any] */, F /* <: Field */](x: Self & (GenericFacetSpec[U, L, F])) {
       
-      @scala.inline
-      def setFacet(
+      inline def setFacet(
         value: (FacetFieldDef[F, ExprRef | SignalRef]) | (FacetMapping[F, FacetFieldDef[F, ExprRef | SignalRef]])
       ): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpec(value: L | U): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: L | U): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     }
   }
   
@@ -244,32 +218,24 @@ object specFacetMod {
   }
   object RowColumnEncodingFieldDef {
     
-    @scala.inline
-    def apply[F /* <: Field */, ES /* <: ExprRef | SignalRef */](): RowColumnEncodingFieldDef[F, ES] = {
+    inline def apply[F /* <: Field */, ES /* <: ExprRef | SignalRef */](): RowColumnEncodingFieldDef[F, ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RowColumnEncodingFieldDef[F, ES]]
     }
     
-    @scala.inline
-    implicit class RowColumnEncodingFieldDefMutableBuilder[Self <: RowColumnEncodingFieldDef[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */] (val x: Self & (RowColumnEncodingFieldDef[F, ES])) extends AnyVal {
+    extension [Self <: RowColumnEncodingFieldDef[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */](x: Self & (RowColumnEncodingFieldDef[F, ES])) {
       
-      @scala.inline
-      def setAlign(value: LayoutAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: LayoutAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+      inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+      inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     }
   }
 }

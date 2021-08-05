@@ -23,31 +23,23 @@ trait SSMLMessageType extends StObject {
 }
 object SSMLMessageType {
   
-  @scala.inline
-  def apply(): SSMLMessageType = {
+  inline def apply(): SSMLMessageType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SSMLMessageType]
   }
   
-  @scala.inline
-  implicit class SSMLMessageTypeMutableBuilder[Self <: SSMLMessageType] (val x: Self) extends AnyVal {
+  extension [Self <: SSMLMessageType](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    @scala.inline
-    def setText(value: NonEmptyString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: NonEmptyString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
     
-    @scala.inline
-    def setVoiceId(value: String): Self = StObject.set(x, "VoiceId", value.asInstanceOf[js.Any])
+    inline def setVoiceId(value: String): Self = StObject.set(x, "VoiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceIdUndefined: Self = StObject.set(x, "VoiceId", js.undefined)
+    inline def setVoiceIdUndefined: Self = StObject.set(x, "VoiceId", js.undefined)
   }
 }

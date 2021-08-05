@@ -13,16 +13,13 @@ trait OnOpenCallbackResult extends StObject {
 }
 object OnOpenCallbackResult {
   
-  @scala.inline
-  def apply(header: js.Object): OnOpenCallbackResult = {
+  inline def apply(header: js.Object): OnOpenCallbackResult = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnOpenCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnOpenCallbackResultMutableBuilder[Self <: OnOpenCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnOpenCallbackResult](x: Self) {
     
-    @scala.inline
-    def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }
 }

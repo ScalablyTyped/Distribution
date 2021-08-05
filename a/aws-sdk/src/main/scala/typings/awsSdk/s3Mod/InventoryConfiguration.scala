@@ -43,8 +43,7 @@ trait InventoryConfiguration extends StObject {
 }
 object InventoryConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Destination: InventoryDestination,
     Id: InventoryId,
     IncludedObjectVersions: InventoryIncludedObjectVersions,
@@ -55,37 +54,26 @@ object InventoryConfiguration {
     __obj.asInstanceOf[InventoryConfiguration]
   }
   
-  @scala.inline
-  implicit class InventoryConfigurationMutableBuilder[Self <: InventoryConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryConfiguration](x: Self) {
     
-    @scala.inline
-    def setDestination(value: InventoryDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: InventoryDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: InventoryFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: InventoryFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setId(value: InventoryId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: InventoryId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedObjectVersions(value: InventoryIncludedObjectVersions): Self = StObject.set(x, "IncludedObjectVersions", value.asInstanceOf[js.Any])
+    inline def setIncludedObjectVersions(value: InventoryIncludedObjectVersions): Self = StObject.set(x, "IncludedObjectVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: IsEnabled): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: IsEnabled): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalFields(value: InventoryOptionalFields): Self = StObject.set(x, "OptionalFields", value.asInstanceOf[js.Any])
+    inline def setOptionalFields(value: InventoryOptionalFields): Self = StObject.set(x, "OptionalFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalFieldsUndefined: Self = StObject.set(x, "OptionalFields", js.undefined)
+    inline def setOptionalFieldsUndefined: Self = StObject.set(x, "OptionalFields", js.undefined)
     
-    @scala.inline
-    def setOptionalFieldsVarargs(value: InventoryOptionalField*): Self = StObject.set(x, "OptionalFields", js.Array(value :_*))
+    inline def setOptionalFieldsVarargs(value: InventoryOptionalField*): Self = StObject.set(x, "OptionalFields", js.Array(value :_*))
     
-    @scala.inline
-    def setSchedule(value: InventorySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: InventorySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
   }
 }

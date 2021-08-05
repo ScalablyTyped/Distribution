@@ -17,11 +17,9 @@ object ellipsisMod {
   class default ()
     extends Component[EllipsisProps, js.Any, js.Any]
   
-  @scala.inline
-  def cutStrByFullLength(str: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cutStrByFullLength")(str.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cutStrByFullLength(str: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cutStrByFullLength")(str.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getStrFullLength(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrFullLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getStrFullLength(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrFullLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   type Ellipsis = Component[EllipsisProps, js.Any, js.Any]
   
@@ -41,50 +39,36 @@ object ellipsisMod {
   }
   object EllipsisProps {
     
-    @scala.inline
-    def apply(): EllipsisProps = {
+    inline def apply(): EllipsisProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EllipsisProps]
     }
     
-    @scala.inline
-    implicit class EllipsisPropsMutableBuilder[Self <: EllipsisProps] (val x: Self) extends AnyVal {
+    extension [Self <: EllipsisProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setFullWidthRecognition(value: Boolean): Self = StObject.set(x, "fullWidthRecognition", value.asInstanceOf[js.Any])
+      inline def setFullWidthRecognition(value: Boolean): Self = StObject.set(x, "fullWidthRecognition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullWidthRecognitionUndefined: Self = StObject.set(x, "fullWidthRecognition", js.undefined)
+      inline def setFullWidthRecognitionUndefined: Self = StObject.set(x, "fullWidthRecognition", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+      inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: Boolean | EllipsisTooltipProps): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Boolean | EllipsisTooltipProps): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     }
   }
   
@@ -97,20 +81,16 @@ object ellipsisMod {
   }
   object EllipsisTooltipProps {
     
-    @scala.inline
-    def apply(overlayStyle: Unit, title: Unit): EllipsisTooltipProps = {
+    inline def apply(overlayStyle: Unit, title: Unit): EllipsisTooltipProps = {
       val __obj = js.Dynamic.literal(overlayStyle = overlayStyle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[EllipsisTooltipProps]
     }
     
-    @scala.inline
-    implicit class EllipsisTooltipPropsMutableBuilder[Self <: EllipsisTooltipProps] (val x: Self) extends AnyVal {
+    extension [Self <: EllipsisTooltipProps](x: Self) {
       
-      @scala.inline
-      def setOverlayStyle(value: Unit): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
+      inline def setOverlayStyle(value: Unit): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: Unit): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: Unit): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

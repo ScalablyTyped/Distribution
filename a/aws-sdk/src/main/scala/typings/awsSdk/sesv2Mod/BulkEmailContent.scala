@@ -13,19 +13,15 @@ trait BulkEmailContent extends StObject {
 }
 object BulkEmailContent {
   
-  @scala.inline
-  def apply(): BulkEmailContent = {
+  inline def apply(): BulkEmailContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkEmailContent]
   }
   
-  @scala.inline
-  implicit class BulkEmailContentMutableBuilder[Self <: BulkEmailContent] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEmailContent](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: Template): Self = StObject.set(x, "Template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Template): Self = StObject.set(x, "Template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "Template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "Template", js.undefined)
   }
 }

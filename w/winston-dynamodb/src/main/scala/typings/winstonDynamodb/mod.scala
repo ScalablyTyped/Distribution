@@ -61,50 +61,36 @@ object mod {
   }
   object DynamoDBTransportOptions {
     
-    @scala.inline
-    def apply(level: String, tableName: String): DynamoDBTransportOptions = {
+    inline def apply(level: String, tableName: String): DynamoDBTransportOptions = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DynamoDBTransportOptions]
     }
     
-    @scala.inline
-    implicit class DynamoDBTransportOptionsMutableBuilder[Self <: DynamoDBTransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DynamoDBTransportOptions](x: Self) {
       
-      @scala.inline
-      def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+      inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
+      inline def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
       
-      @scala.inline
-      def setDynamoDoc(value: Boolean): Self = StObject.set(x, "dynamoDoc", value.asInstanceOf[js.Any])
+      inline def setDynamoDoc(value: Boolean): Self = StObject.set(x, "dynamoDoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamoDocUndefined: Self = StObject.set(x, "dynamoDoc", js.undefined)
+      inline def setDynamoDocUndefined: Self = StObject.set(x, "dynamoDoc", js.undefined)
       
-      @scala.inline
-      def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
+      inline def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
+      inline def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseEnvironment(value: Boolean): Self = StObject.set(x, "useEnvironment", value.asInstanceOf[js.Any])
+      inline def setUseEnvironment(value: Boolean): Self = StObject.set(x, "useEnvironment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseEnvironmentUndefined: Self = StObject.set(x, "useEnvironment", js.undefined)
+      inline def setUseEnvironmentUndefined: Self = StObject.set(x, "useEnvironment", js.undefined)
     }
   }
   
@@ -117,17 +103,14 @@ object mod {
     }
     object Transports {
       
-      @scala.inline
-      def apply(DynamoDB: DynamoDB): Transports = {
+      inline def apply(DynamoDB: DynamoDB): Transports = {
         val __obj = js.Dynamic.literal(DynamoDB = DynamoDB.asInstanceOf[js.Any])
         __obj.asInstanceOf[Transports]
       }
       
-      @scala.inline
-      implicit class TransportsMutableBuilder[Self <: Transports] (val x: Self) extends AnyVal {
+      extension [Self <: Transports](x: Self) {
         
-        @scala.inline
-        def setDynamoDB(value: DynamoDB): Self = StObject.set(x, "DynamoDB", value.asInstanceOf[js.Any])
+        inline def setDynamoDB(value: DynamoDB): Self = StObject.set(x, "DynamoDB", value.asInstanceOf[js.Any])
       }
     }
   }

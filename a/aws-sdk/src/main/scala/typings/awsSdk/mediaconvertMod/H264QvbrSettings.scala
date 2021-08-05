@@ -23,31 +23,23 @@ trait H264QvbrSettings extends StObject {
 }
 object H264QvbrSettings {
   
-  @scala.inline
-  def apply(): H264QvbrSettings = {
+  inline def apply(): H264QvbrSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[H264QvbrSettings]
   }
   
-  @scala.inline
-  implicit class H264QvbrSettingsMutableBuilder[Self <: H264QvbrSettings] (val x: Self) extends AnyVal {
+  extension [Self <: H264QvbrSettings](x: Self) {
     
-    @scala.inline
-    def setMaxAverageBitrate(value: integerMin1000Max1152000000): Self = StObject.set(x, "MaxAverageBitrate", value.asInstanceOf[js.Any])
+    inline def setMaxAverageBitrate(value: integerMin1000Max1152000000): Self = StObject.set(x, "MaxAverageBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAverageBitrateUndefined: Self = StObject.set(x, "MaxAverageBitrate", js.undefined)
+    inline def setMaxAverageBitrateUndefined: Self = StObject.set(x, "MaxAverageBitrate", js.undefined)
     
-    @scala.inline
-    def setQvbrQualityLevel(value: integerMin1Max10): Self = StObject.set(x, "QvbrQualityLevel", value.asInstanceOf[js.Any])
+    inline def setQvbrQualityLevel(value: integerMin1Max10): Self = StObject.set(x, "QvbrQualityLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQvbrQualityLevelFineTune(value: doubleMin0Max1): Self = StObject.set(x, "QvbrQualityLevelFineTune", value.asInstanceOf[js.Any])
+    inline def setQvbrQualityLevelFineTune(value: doubleMin0Max1): Self = StObject.set(x, "QvbrQualityLevelFineTune", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQvbrQualityLevelFineTuneUndefined: Self = StObject.set(x, "QvbrQualityLevelFineTune", js.undefined)
+    inline def setQvbrQualityLevelFineTuneUndefined: Self = StObject.set(x, "QvbrQualityLevelFineTune", js.undefined)
     
-    @scala.inline
-    def setQvbrQualityLevelUndefined: Self = StObject.set(x, "QvbrQualityLevel", js.undefined)
+    inline def setQvbrQualityLevelUndefined: Self = StObject.set(x, "QvbrQualityLevel", js.undefined)
   }
 }

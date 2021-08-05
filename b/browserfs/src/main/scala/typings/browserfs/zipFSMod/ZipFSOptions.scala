@@ -13,22 +13,17 @@ trait ZipFSOptions extends StObject {
 }
 object ZipFSOptions {
   
-  @scala.inline
-  def apply(zipData: Buffer): ZipFSOptions = {
+  inline def apply(zipData: Buffer): ZipFSOptions = {
     val __obj = js.Dynamic.literal(zipData = zipData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZipFSOptions]
   }
   
-  @scala.inline
-  implicit class ZipFSOptionsMutableBuilder[Self <: ZipFSOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ZipFSOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setZipData(value: Buffer): Self = StObject.set(x, "zipData", value.asInstanceOf[js.Any])
+    inline def setZipData(value: Buffer): Self = StObject.set(x, "zipData", value.asInstanceOf[js.Any])
   }
 }

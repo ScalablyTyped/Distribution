@@ -16,25 +16,19 @@ trait ObjectReplaceOp
 }
 object ObjectReplaceOp {
   
-  @scala.inline
-  def apply(od: js.Any, oi: js.Any, p: Path): ObjectReplaceOp = {
+  inline def apply(od: js.Any, oi: js.Any, p: Path): ObjectReplaceOp = {
     val __obj = js.Dynamic.literal(od = od.asInstanceOf[js.Any], oi = oi.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectReplaceOp]
   }
   
-  @scala.inline
-  implicit class ObjectReplaceOpMutableBuilder[Self <: ObjectReplaceOp] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectReplaceOp](x: Self) {
     
-    @scala.inline
-    def setOd(value: js.Any): Self = StObject.set(x, "od", value.asInstanceOf[js.Any])
+    inline def setOd(value: js.Any): Self = StObject.set(x, "od", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOi(value: js.Any): Self = StObject.set(x, "oi", value.asInstanceOf[js.Any])
+    inline def setOi(value: js.Any): Self = StObject.set(x, "oi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
+    inline def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
   }
 }

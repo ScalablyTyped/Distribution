@@ -18,22 +18,17 @@ trait RTCRtpParameters extends StObject {
 }
 object RTCRtpParameters {
   
-  @scala.inline
-  def apply(transactionId: String): RTCRtpParameters = {
+  inline def apply(transactionId: String): RTCRtpParameters = {
     val __obj = js.Dynamic.literal(transactionId = transactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpParameters]
   }
   
-  @scala.inline
-  implicit class RTCRtpParametersMutableBuilder[Self <: RTCRtpParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpParameters](x: Self) {
     
-    @scala.inline
-    def setDegradationPreference(value: RTCDegradationPreference): Self = StObject.set(x, "degradationPreference", value.asInstanceOf[js.Any])
+    inline def setDegradationPreference(value: RTCDegradationPreference): Self = StObject.set(x, "degradationPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDegradationPreferenceUndefined: Self = StObject.set(x, "degradationPreference", js.undefined)
+    inline def setDegradationPreferenceUndefined: Self = StObject.set(x, "degradationPreference", js.undefined)
     
-    @scala.inline
-    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
   }
 }

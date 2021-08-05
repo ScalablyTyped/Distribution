@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsUnitValue extends StObject
 object OptionsUnitValue {
   
-  @scala.inline
-  def percentage: typings.highcharts.highchartsStrings.percentage = "percentage".asInstanceOf[typings.highcharts.highchartsStrings.percentage]
+  inline def percentage: typings.highcharts.highchartsStrings.percentage = "percentage".asInstanceOf[typings.highcharts.highchartsStrings.percentage]
   
-  @scala.inline
-  def pixels: typings.highcharts.highchartsStrings.pixels = "pixels".asInstanceOf[typings.highcharts.highchartsStrings.pixels]
+  inline def pixels: typings.highcharts.highchartsStrings.pixels = "pixels".asInstanceOf[typings.highcharts.highchartsStrings.pixels]
   
-  @scala.inline
-  def weight: typings.highcharts.highchartsStrings.weight = "weight".asInstanceOf[typings.highcharts.highchartsStrings.weight]
+  inline def weight: typings.highcharts.highchartsStrings.weight = "weight".asInstanceOf[typings.highcharts.highchartsStrings.weight]
 }

@@ -17,13 +17,10 @@ object Deferrability {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def INITIALLY_DEFERRED: `5` = 5.asInstanceOf[`5`]
+    inline def INITIALLY_DEFERRED: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def INITIALLY_IMMEDIATE: `6` = 6.asInstanceOf[`6`]
+    inline def INITIALLY_IMMEDIATE: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def NONE: `7` = 7.asInstanceOf[`7`]
+    inline def NONE: `7` = 7.asInstanceOf[`7`]
   }
 }

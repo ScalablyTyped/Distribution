@@ -56,91 +56,63 @@ trait ITime
 }
 object ITime {
   
-  @scala.inline
-  def apply(): ITime = {
+  inline def apply(): ITime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITime]
   }
   
-  @scala.inline
-  implicit class ITimeMutableBuilder[Self <: ITime] (val x: Self) extends AnyVal {
+  extension [Self <: ITime](x: Self) {
     
-    @scala.inline
-    def setAltFormats(value: String): Self = StObject.set(x, "altFormats", value.asInstanceOf[js.Any])
+    inline def setAltFormats(value: String): Self = StObject.set(x, "altFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltFormatsUndefined: Self = StObject.set(x, "altFormats", js.undefined)
+    inline def setAltFormatsUndefined: Self = StObject.set(x, "altFormats", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
+    inline def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
+    inline def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
     
-    @scala.inline
-    def setMaxText(value: String): Self = StObject.set(x, "maxText", value.asInstanceOf[js.Any])
+    inline def setMaxText(value: String): Self = StObject.set(x, "maxText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTextUndefined: Self = StObject.set(x, "maxText", js.undefined)
+    inline def setMaxTextUndefined: Self = StObject.set(x, "maxText", js.undefined)
     
-    @scala.inline
-    def setMaxValue(value: js.Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: js.Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinText(value: String): Self = StObject.set(x, "minText", value.asInstanceOf[js.Any])
+    inline def setMinText(value: String): Self = StObject.set(x, "minText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinTextUndefined: Self = StObject.set(x, "minText", js.undefined)
+    inline def setMinTextUndefined: Self = StObject.set(x, "minText", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: js.Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: js.Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setPickerMaxHeight(value: Double): Self = StObject.set(x, "pickerMaxHeight", value.asInstanceOf[js.Any])
+    inline def setPickerMaxHeight(value: Double): Self = StObject.set(x, "pickerMaxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerMaxHeightUndefined: Self = StObject.set(x, "pickerMaxHeight", js.undefined)
+    inline def setPickerMaxHeightUndefined: Self = StObject.set(x, "pickerMaxHeight", js.undefined)
     
-    @scala.inline
-    def setSetMaxValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
+    inline def setSetMaxValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
+    inline def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
     
-    @scala.inline
-    def setSetMinValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
+    inline def setSetMinValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
+    inline def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
     
-    @scala.inline
-    def setSetValue(value: () => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction0(value))
+    inline def setSetValue(value: () => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
-    @scala.inline
-    def setSnapToIncrement(value: Boolean): Self = StObject.set(x, "snapToIncrement", value.asInstanceOf[js.Any])
+    inline def setSnapToIncrement(value: Boolean): Self = StObject.set(x, "snapToIncrement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapToIncrementUndefined: Self = StObject.set(x, "snapToIncrement", js.undefined)
+    inline def setSnapToIncrementUndefined: Self = StObject.set(x, "snapToIncrement", js.undefined)
     
-    @scala.inline
-    def setSubmitFormat(value: String): Self = StObject.set(x, "submitFormat", value.asInstanceOf[js.Any])
+    inline def setSubmitFormat(value: String): Self = StObject.set(x, "submitFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitFormatUndefined: Self = StObject.set(x, "submitFormat", js.undefined)
+    inline def setSubmitFormatUndefined: Self = StObject.set(x, "submitFormat", js.undefined)
   }
 }

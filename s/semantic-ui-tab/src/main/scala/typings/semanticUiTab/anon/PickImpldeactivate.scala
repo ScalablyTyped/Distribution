@@ -13,16 +13,13 @@ trait PickImpldeactivate extends StObject {
 }
 object PickImpldeactivate {
   
-  @scala.inline
-  def apply(deactivate: siblings | all): PickImpldeactivate = {
+  inline def apply(deactivate: siblings | all): PickImpldeactivate = {
     val __obj = js.Dynamic.literal(deactivate = deactivate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldeactivate]
   }
   
-  @scala.inline
-  implicit class PickImpldeactivateMutableBuilder[Self <: PickImpldeactivate] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldeactivate](x: Self) {
     
-    @scala.inline
-    def setDeactivate(value: siblings | all): Self = StObject.set(x, "deactivate", value.asInstanceOf[js.Any])
+    inline def setDeactivate(value: siblings | all): Self = StObject.set(x, "deactivate", value.asInstanceOf[js.Any])
   }
 }

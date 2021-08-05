@@ -42,8 +42,7 @@ trait GridRowsUpdatedEvent[T] extends StObject {
 }
 object GridRowsUpdatedEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     action: cellUpdate | cellDrag | columnFill | copyPaste,
     cellKey: String,
     fromRow: Double,
@@ -54,22 +53,16 @@ object GridRowsUpdatedEvent {
     __obj.asInstanceOf[GridRowsUpdatedEvent[T]]
   }
   
-  @scala.inline
-  implicit class GridRowsUpdatedEventMutableBuilder[Self <: GridRowsUpdatedEvent[?], T] (val x: Self & GridRowsUpdatedEvent[T]) extends AnyVal {
+  extension [Self <: GridRowsUpdatedEvent[?], T](x: Self & GridRowsUpdatedEvent[T]) {
     
-    @scala.inline
-    def setAction(value: cellUpdate | cellDrag | columnFill | copyPaste): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: cellUpdate | cellDrag | columnFill | copyPaste): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
+    inline def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
+    inline def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
+    inline def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated(value: T): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: T): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }
 }

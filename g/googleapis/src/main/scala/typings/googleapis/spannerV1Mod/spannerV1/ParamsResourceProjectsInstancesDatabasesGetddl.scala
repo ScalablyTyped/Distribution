@@ -24,25 +24,19 @@ trait ParamsResourceProjectsInstancesDatabasesGetddl
 }
 object ParamsResourceProjectsInstancesDatabasesGetddl {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsInstancesDatabasesGetddl = {
+  inline def apply(): ParamsResourceProjectsInstancesDatabasesGetddl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsInstancesDatabasesGetddl]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsInstancesDatabasesGetddlMutableBuilder[Self <: ParamsResourceProjectsInstancesDatabasesGetddl] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsInstancesDatabasesGetddl](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
   }
 }

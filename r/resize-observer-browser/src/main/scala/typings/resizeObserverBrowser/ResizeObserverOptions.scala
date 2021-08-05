@@ -18,19 +18,15 @@ trait ResizeObserverOptions extends StObject {
 }
 object ResizeObserverOptions {
   
-  @scala.inline
-  def apply(): ResizeObserverOptions = {
+  inline def apply(): ResizeObserverOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResizeObserverOptions]
   }
   
-  @scala.inline
-  implicit class ResizeObserverOptionsMutableBuilder[Self <: ResizeObserverOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResizeObserverOptions](x: Self) {
     
-    @scala.inline
-    def setBox(value: `content-box` | `border-box`): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
+    inline def setBox(value: `content-box` | `border-box`): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
+    inline def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
   }
 }

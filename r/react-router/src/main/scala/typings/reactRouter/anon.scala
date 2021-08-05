@@ -22,24 +22,20 @@ object anon {
   }
   object History {
     
-    @scala.inline
-    def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    inline def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
       */ typings.reactRouter.reactRouterStrings.History & TopLevel[js.Any] */](history: typings.history.mod.History[LocationState], route: Location[Params]): History[Params] = {
       val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[History[Params]]
     }
     
-    @scala.inline
-    implicit class HistoryMutableBuilder[Self <: History[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    extension [Self <: History[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reactRouter.reactRouterStrings.History & TopLevel[js.Any] */] (val x: Self & History[Params]) extends AnyVal {
+      */ typings.reactRouter.reactRouterStrings.History & TopLevel[js.Any] */](x: Self & History[Params]) {
       
-      @scala.inline
-      def setHistory(value: typings.history.mod.History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: typings.history.mod.History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: Location[Params]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: Location[Params]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,8 +49,7 @@ object anon {
   }
   object Location {
     
-    @scala.inline
-    def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    inline def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
       */ typings.reactRouter.reactRouterStrings.Location & TopLevel[js.Any] */](location: typings.history.mod.Location[LocationState], `match`: `match`[Params]): Location[Params] = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
@@ -62,16 +57,13 @@ object anon {
       __obj.asInstanceOf[Location[Params]]
     }
     
-    @scala.inline
-    implicit class LocationMutableBuilder[Self <: Location[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    extension [Self <: Location[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reactRouter.reactRouterStrings.Location & TopLevel[js.Any] */] (val x: Self & Location[Params]) extends AnyVal {
+      */ typings.reactRouter.reactRouterStrings.Location & TopLevel[js.Any] */](x: Self & Location[Params]) {
       
-      @scala.inline
-      def setLocation(value: typings.history.mod.Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: typings.history.mod.Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch(value: `match`[Params]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: `match`[Params]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,26 +73,20 @@ object anon {
   }
   object WrappedComponentRef {
     
-    @scala.inline
-    def apply[C /* <: ComponentType[js.Any] */](): WrappedComponentRef[C] = {
+    inline def apply[C /* <: ComponentType[js.Any] */](): WrappedComponentRef[C] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WrappedComponentRef[C]]
     }
     
-    @scala.inline
-    implicit class WrappedComponentRefMutableBuilder[Self <: WrappedComponentRef[?], C /* <: ComponentType[js.Any] */] (val x: Self & WrappedComponentRef[C]) extends AnyVal {
+    extension [Self <: WrappedComponentRef[?], C /* <: ComponentType[js.Any] */](x: Self & WrappedComponentRef[C]) {
       
-      @scala.inline
-      def setWrappedComponentRef(value: Ref[InstanceType[C]]): Self = StObject.set(x, "wrappedComponentRef", value.asInstanceOf[js.Any])
+      inline def setWrappedComponentRef(value: Ref[InstanceType[C]]): Self = StObject.set(x, "wrappedComponentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrappedComponentRefFunction1(value: /* instance */ InstanceType[C] | Null => Unit): Self = StObject.set(x, "wrappedComponentRef", js.Any.fromFunction1(value))
+      inline def setWrappedComponentRefFunction1(value: /* instance */ InstanceType[C] | Null => Unit): Self = StObject.set(x, "wrappedComponentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrappedComponentRefNull: Self = StObject.set(x, "wrappedComponentRef", null)
+      inline def setWrappedComponentRefNull: Self = StObject.set(x, "wrappedComponentRef", null)
       
-      @scala.inline
-      def setWrappedComponentRefUndefined: Self = StObject.set(x, "wrappedComponentRef", js.undefined)
+      inline def setWrappedComponentRefUndefined: Self = StObject.set(x, "wrappedComponentRef", js.undefined)
     }
   }
 }

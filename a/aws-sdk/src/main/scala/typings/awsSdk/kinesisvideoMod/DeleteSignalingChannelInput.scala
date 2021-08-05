@@ -18,22 +18,17 @@ trait DeleteSignalingChannelInput extends StObject {
 }
 object DeleteSignalingChannelInput {
   
-  @scala.inline
-  def apply(ChannelARN: ResourceARN): DeleteSignalingChannelInput = {
+  inline def apply(ChannelARN: ResourceARN): DeleteSignalingChannelInput = {
     val __obj = js.Dynamic.literal(ChannelARN = ChannelARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSignalingChannelInput]
   }
   
-  @scala.inline
-  implicit class DeleteSignalingChannelInputMutableBuilder[Self <: DeleteSignalingChannelInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSignalingChannelInput](x: Self) {
     
-    @scala.inline
-    def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
+    inline def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersionUndefined: Self = StObject.set(x, "CurrentVersion", js.undefined)
+    inline def setCurrentVersionUndefined: Self = StObject.set(x, "CurrentVersion", js.undefined)
   }
 }

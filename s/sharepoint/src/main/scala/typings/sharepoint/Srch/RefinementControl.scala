@@ -28,8 +28,7 @@ trait RefinementControl extends StObject {
 }
 object RefinementControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternateRenderContext: js.Any,
     alternateRenderer: js.Any,
     containerId: String,
@@ -45,37 +44,26 @@ object RefinementControl {
     __obj.asInstanceOf[RefinementControl]
   }
   
-  @scala.inline
-  implicit class RefinementControlMutableBuilder[Self <: RefinementControl] (val x: Self) extends AnyVal {
+  extension [Self <: RefinementControl](x: Self) {
     
-    @scala.inline
-    def setAlternateRenderContext(value: js.Any): Self = StObject.set(x, "alternateRenderContext", value.asInstanceOf[js.Any])
+    inline def setAlternateRenderContext(value: js.Any): Self = StObject.set(x, "alternateRenderContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateRenderer(value: js.Any): Self = StObject.set(x, "alternateRenderer", value.asInstanceOf[js.Any])
+    inline def setAlternateRenderer(value: js.Any): Self = StObject.set(x, "alternateRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountDisplay(value: String): Self = StObject.set(x, "countDisplay", value.asInstanceOf[js.Any])
+    inline def setCountDisplay(value: String): Self = StObject.set(x, "countDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeepHits(value: Double): Self = StObject.set(x, "deepHits", value.asInstanceOf[js.Any])
+    inline def setDeepHits(value: Double): Self = StObject.set(x, "deepHits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideDisplayName(value: String): Self = StObject.set(x, "overrideDisplayName", value.asInstanceOf[js.Any])
+    inline def setOverrideDisplayName(value: String): Self = StObject.set(x, "overrideDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderTemplateId(value: String): Self = StObject.set(x, "renderTemplateId", value.asInstanceOf[js.Any])
+    inline def setRenderTemplateId(value: String): Self = StObject.set(x, "renderTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: String): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: String): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDefaultDateIntervals(value: Boolean): Self = StObject.set(x, "useDefaultDateIntervals", value.asInstanceOf[js.Any])
+    inline def setUseDefaultDateIntervals(value: Boolean): Self = StObject.set(x, "useDefaultDateIntervals", value.asInstanceOf[js.Any])
   }
 }

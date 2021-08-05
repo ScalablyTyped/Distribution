@@ -32,8 +32,7 @@ object tabBarMod {
       @JSImport("@ant-design/react-native/lib/tab-bar", "default.Item.defaultProps")
       @js.native
       def defaultProps: `0` = js.native
-      @scala.inline
-      def defaultProps_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+      inline def defaultProps_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     }
     
     /* static member */
@@ -46,20 +45,17 @@ object tabBarMod {
       @JSImport("@ant-design/react-native/lib/tab-bar", "default.defaultProps.barTintColor")
       @js.native
       def barTintColor: String = js.native
-      @scala.inline
-      def barTintColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("barTintColor")(x.asInstanceOf[js.Any])
+      inline def barTintColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("barTintColor")(x.asInstanceOf[js.Any])
       
       @JSImport("@ant-design/react-native/lib/tab-bar", "default.defaultProps.tintColor")
       @js.native
       def tintColor: String = js.native
-      @scala.inline
-      def tintColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tintColor")(x.asInstanceOf[js.Any])
+      inline def tintColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tintColor")(x.asInstanceOf[js.Any])
       
       @JSImport("@ant-design/react-native/lib/tab-bar", "default.defaultProps.unselectedTintColor")
       @js.native
       def unselectedTintColor: String = js.native
-      @scala.inline
-      def unselectedTintColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unselectedTintColor")(x.asInstanceOf[js.Any])
+      inline def unselectedTintColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unselectedTintColor")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -83,20 +79,16 @@ object tabBarMod {
   }
   object TabBarNativeProps {
     
-    @scala.inline
-    def apply(): TabBarNativeProps = {
+    inline def apply(): TabBarNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabBarNativeProps]
     }
     
-    @scala.inline
-    implicit class TabBarNativePropsMutableBuilder[Self <: TabBarNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabBarNativeProps](x: Self) {
       
-      @scala.inline
-      def setStyles(value: TabBarStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: TabBarStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
 }

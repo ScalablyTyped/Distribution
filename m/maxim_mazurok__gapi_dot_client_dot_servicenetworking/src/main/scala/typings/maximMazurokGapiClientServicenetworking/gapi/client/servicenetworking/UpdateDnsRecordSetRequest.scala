@@ -23,37 +23,27 @@ trait UpdateDnsRecordSetRequest extends StObject {
 }
 object UpdateDnsRecordSetRequest {
   
-  @scala.inline
-  def apply(): UpdateDnsRecordSetRequest = {
+  inline def apply(): UpdateDnsRecordSetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDnsRecordSetRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDnsRecordSetRequestMutableBuilder[Self <: UpdateDnsRecordSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDnsRecordSetRequest](x: Self) {
     
-    @scala.inline
-    def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
+    inline def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
+    inline def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
     
-    @scala.inline
-    def setExistingDnsRecordSet(value: DnsRecordSet): Self = StObject.set(x, "existingDnsRecordSet", value.asInstanceOf[js.Any])
+    inline def setExistingDnsRecordSet(value: DnsRecordSet): Self = StObject.set(x, "existingDnsRecordSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistingDnsRecordSetUndefined: Self = StObject.set(x, "existingDnsRecordSet", js.undefined)
+    inline def setExistingDnsRecordSetUndefined: Self = StObject.set(x, "existingDnsRecordSet", js.undefined)
     
-    @scala.inline
-    def setNewDnsRecordSet(value: DnsRecordSet): Self = StObject.set(x, "newDnsRecordSet", value.asInstanceOf[js.Any])
+    inline def setNewDnsRecordSet(value: DnsRecordSet): Self = StObject.set(x, "newDnsRecordSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewDnsRecordSetUndefined: Self = StObject.set(x, "newDnsRecordSet", js.undefined)
+    inline def setNewDnsRecordSetUndefined: Self = StObject.set(x, "newDnsRecordSet", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

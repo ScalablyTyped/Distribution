@@ -25,6 +25,6 @@ object baseMod {
        with AsyncIterableIterator[T] {
     def this(core: AsyncIterableIterator[T]) = this()
     
-    val core: js.Any = js.native
+    /* private */ val core: js.Any = js.native
   }
 }

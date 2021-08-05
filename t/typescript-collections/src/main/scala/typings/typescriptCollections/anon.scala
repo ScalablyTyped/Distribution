@@ -15,23 +15,18 @@ object anon {
   }
   object Nodes {
     
-    @scala.inline
-    def apply(nodes: StringDictionary[js.Array[String]], rootIds: js.Array[String]): Nodes = {
+    inline def apply(nodes: StringDictionary[js.Array[String]], rootIds: js.Array[String]): Nodes = {
       val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], rootIds = rootIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[Nodes]
     }
     
-    @scala.inline
-    implicit class NodesMutableBuilder[Self <: Nodes] (val x: Self) extends AnyVal {
+    extension [Self <: Nodes](x: Self) {
       
-      @scala.inline
-      def setNodes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootIds(value: js.Array[String]): Self = StObject.set(x, "rootIds", value.asInstanceOf[js.Any])
+      inline def setRootIds(value: js.Array[String]): Self = StObject.set(x, "rootIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootIdsVarargs(value: String*): Self = StObject.set(x, "rootIds", js.Array(value :_*))
+      inline def setRootIdsVarargs(value: String*): Self = StObject.set(x, "rootIds", js.Array(value :_*))
     }
   }
 }

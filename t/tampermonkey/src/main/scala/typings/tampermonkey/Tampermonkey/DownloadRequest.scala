@@ -37,61 +37,43 @@ trait DownloadRequest extends StObject {
 }
 object DownloadRequest {
   
-  @scala.inline
-  def apply(name: String, url: String): DownloadRequest = {
+  inline def apply(name: String, url: String): DownloadRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadRequest]
   }
   
-  @scala.inline
-  implicit class DownloadRequestMutableBuilder[Self <: DownloadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadRequest](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnerror(value: RequestEventListener[DownloadErrorResponse]): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+    inline def setOnerror(value: RequestEventListener[DownloadErrorResponse]): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+    inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
-    @scala.inline
-    def setOnload(value: () => Unit): Self = StObject.set(x, "onload", js.Any.fromFunction0(value))
+    inline def setOnload(value: () => Unit): Self = StObject.set(x, "onload", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
+    inline def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
     
-    @scala.inline
-    def setOnprogress(value: RequestEventListener[DownloadProgressResponse]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
+    inline def setOnprogress(value: RequestEventListener[DownloadProgressResponse]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
+    inline def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
     
-    @scala.inline
-    def setOntimeout(value: () => Unit): Self = StObject.set(x, "ontimeout", js.Any.fromFunction0(value))
+    inline def setOntimeout(value: () => Unit): Self = StObject.set(x, "ontimeout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOntimeoutUndefined: Self = StObject.set(x, "ontimeout", js.undefined)
+    inline def setOntimeoutUndefined: Self = StObject.set(x, "ontimeout", js.undefined)
     
-    @scala.inline
-    def setSaveAs(value: Boolean): Self = StObject.set(x, "saveAs", value.asInstanceOf[js.Any])
+    inline def setSaveAs(value: Boolean): Self = StObject.set(x, "saveAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveAsUndefined: Self = StObject.set(x, "saveAs", js.undefined)
+    inline def setSaveAsUndefined: Self = StObject.set(x, "saveAs", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

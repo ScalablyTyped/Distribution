@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeserializeOptions extends StObject
 object DeserializeOptions {
   
-  @scala.inline
-  def Delimited(): typings.lokijs.anon.Delimited = {
+  inline def Delimited(): typings.lokijs.anon.Delimited = {
     val __obj = js.Dynamic.literal(delimited = false)
     __obj.asInstanceOf[typings.lokijs.anon.Delimited]
   }
   
-  @scala.inline
-  def Delimiter(delimiter: String): typings.lokijs.anon.Delimiter = {
+  inline def Delimiter(delimiter: String): typings.lokijs.anon.Delimiter = {
     val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.lokijs.anon.Delimiter]
   }

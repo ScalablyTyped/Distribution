@@ -16,16 +16,13 @@ trait FancyBoxImageOption extends StObject {
 }
 object FancyBoxImageOption {
   
-  @scala.inline
-  def apply(preload: Boolean): FancyBoxImageOption = {
+  inline def apply(preload: Boolean): FancyBoxImageOption = {
     val __obj = js.Dynamic.literal(preload = preload.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxImageOption]
   }
   
-  @scala.inline
-  implicit class FancyBoxImageOptionMutableBuilder[Self <: FancyBoxImageOption] (val x: Self) extends AnyVal {
+  extension [Self <: FancyBoxImageOption](x: Self) {
     
-    @scala.inline
-    def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    inline def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
   }
 }

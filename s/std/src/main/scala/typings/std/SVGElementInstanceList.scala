@@ -14,19 +14,15 @@ trait SVGElementInstanceList extends StObject {
 }
 object SVGElementInstanceList {
   
-  @scala.inline
-  def apply(item: Double => SVGElementInstance, length: Double): SVGElementInstanceList = {
+  inline def apply(item: Double => SVGElementInstance, length: Double): SVGElementInstanceList = {
     val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGElementInstanceList]
   }
   
-  @scala.inline
-  implicit class SVGElementInstanceListMutableBuilder[Self <: SVGElementInstanceList] (val x: Self) extends AnyVal {
+  extension [Self <: SVGElementInstanceList](x: Self) {
     
-    @scala.inline
-    def setItem(value: Double => SVGElementInstance): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => SVGElementInstance): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

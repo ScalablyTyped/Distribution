@@ -13,19 +13,15 @@ trait GetEbsDefaultKmsKeyIdResult extends StObject {
 }
 object GetEbsDefaultKmsKeyIdResult {
   
-  @scala.inline
-  def apply(): GetEbsDefaultKmsKeyIdResult = {
+  inline def apply(): GetEbsDefaultKmsKeyIdResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEbsDefaultKmsKeyIdResult]
   }
   
-  @scala.inline
-  implicit class GetEbsDefaultKmsKeyIdResultMutableBuilder[Self <: GetEbsDefaultKmsKeyIdResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetEbsDefaultKmsKeyIdResult](x: Self) {
     
-    @scala.inline
-    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
   }
 }

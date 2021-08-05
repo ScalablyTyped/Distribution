@@ -13,22 +13,17 @@ trait DescribeBundleTasksResult extends StObject {
 }
 object DescribeBundleTasksResult {
   
-  @scala.inline
-  def apply(): DescribeBundleTasksResult = {
+  inline def apply(): DescribeBundleTasksResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBundleTasksResult]
   }
   
-  @scala.inline
-  implicit class DescribeBundleTasksResultMutableBuilder[Self <: DescribeBundleTasksResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBundleTasksResult](x: Self) {
     
-    @scala.inline
-    def setBundleTasks(value: BundleTaskList): Self = StObject.set(x, "BundleTasks", value.asInstanceOf[js.Any])
+    inline def setBundleTasks(value: BundleTaskList): Self = StObject.set(x, "BundleTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleTasksUndefined: Self = StObject.set(x, "BundleTasks", js.undefined)
+    inline def setBundleTasksUndefined: Self = StObject.set(x, "BundleTasks", js.undefined)
     
-    @scala.inline
-    def setBundleTasksVarargs(value: BundleTask*): Self = StObject.set(x, "BundleTasks", js.Array(value :_*))
+    inline def setBundleTasksVarargs(value: BundleTask*): Self = StObject.set(x, "BundleTasks", js.Array(value :_*))
   }
 }

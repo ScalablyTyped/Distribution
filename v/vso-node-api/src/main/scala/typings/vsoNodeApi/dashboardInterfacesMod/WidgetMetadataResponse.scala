@@ -12,19 +12,15 @@ trait WidgetMetadataResponse extends StObject {
 }
 object WidgetMetadataResponse {
   
-  @scala.inline
-  def apply(uri: String, widgetMetadata: WidgetMetadata): WidgetMetadataResponse = {
+  inline def apply(uri: String, widgetMetadata: WidgetMetadata): WidgetMetadataResponse = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any], widgetMetadata = widgetMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidgetMetadataResponse]
   }
   
-  @scala.inline
-  implicit class WidgetMetadataResponseMutableBuilder[Self <: WidgetMetadataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: WidgetMetadataResponse](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidgetMetadata(value: WidgetMetadata): Self = StObject.set(x, "widgetMetadata", value.asInstanceOf[js.Any])
+    inline def setWidgetMetadata(value: WidgetMetadata): Self = StObject.set(x, "widgetMetadata", value.asInstanceOf[js.Any])
   }
 }

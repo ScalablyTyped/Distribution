@@ -308,8 +308,7 @@ object chartScrollbarSettingsMod {
   }
   object ChartScrollbarSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoGridCount: Boolean,
       backgroundAlpha: Double,
       backgroundColor: String,
@@ -340,83 +339,57 @@ object chartScrollbarSettingsMod {
       __obj.asInstanceOf[ChartScrollbarSettings]
     }
     
-    @scala.inline
-    implicit class ChartScrollbarSettingsMutableBuilder[Self <: ChartScrollbarSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ChartScrollbarSettings](x: Self) {
       
-      @scala.inline
-      def setAutoGridCount(value: Boolean): Self = StObject.set(x, "autoGridCount", value.asInstanceOf[js.Any])
+      inline def setAutoGridCount(value: Boolean): Self = StObject.set(x, "autoGridCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundAlpha(value: Double): Self = StObject.set(x, "backgroundAlpha", value.asInstanceOf[js.Any])
+      inline def setBackgroundAlpha(value: Double): Self = StObject.set(x, "backgroundAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraph(value: typings.amcharts.amGraphMod.default): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+      inline def setGraph(value: typings.amcharts.amGraphMod.default): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphFillAlpha(value: Double): Self = StObject.set(x, "graphFillAlpha", value.asInstanceOf[js.Any])
+      inline def setGraphFillAlpha(value: Double): Self = StObject.set(x, "graphFillAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphFillColor(value: String): Self = StObject.set(x, "graphFillColor", value.asInstanceOf[js.Any])
+      inline def setGraphFillColor(value: String): Self = StObject.set(x, "graphFillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphLineAlpha(value: Double): Self = StObject.set(x, "graphLineAlpha", value.asInstanceOf[js.Any])
+      inline def setGraphLineAlpha(value: Double): Self = StObject.set(x, "graphLineAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphLineColor(value: String): Self = StObject.set(x, "graphLineColor", value.asInstanceOf[js.Any])
+      inline def setGraphLineColor(value: String): Self = StObject.set(x, "graphLineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphType(value: String): Self = StObject.set(x, "graphType", value.asInstanceOf[js.Any])
+      inline def setGraphType(value: String): Self = StObject.set(x, "graphType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridAlpha(value: Double): Self = StObject.set(x, "gridAlpha", value.asInstanceOf[js.Any])
+      inline def setGridAlpha(value: Double): Self = StObject.set(x, "gridAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridColor(value: String): Self = StObject.set(x, "gridColor", value.asInstanceOf[js.Any])
+      inline def setGridColor(value: String): Self = StObject.set(x, "gridColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridCount(value: Double): Self = StObject.set(x, "gridCount", value.asInstanceOf[js.Any])
+      inline def setGridCount(value: Double): Self = StObject.set(x, "gridCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideResizeGrips(value: Boolean): Self = StObject.set(x, "hideResizeGrips", value.asInstanceOf[js.Any])
+      inline def setHideResizeGrips(value: Boolean): Self = StObject.set(x, "hideResizeGrips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
+      inline def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedBackgroundAlpha(value: Double): Self = StObject.set(x, "selectedBackgroundAlpha", value.asInstanceOf[js.Any])
+      inline def setSelectedBackgroundAlpha(value: Double): Self = StObject.set(x, "selectedBackgroundAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedBackgroundColor(value: String): Self = StObject.set(x, "selectedBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setSelectedBackgroundColor(value: String): Self = StObject.set(x, "selectedBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedGraphFillAlpha(value: Double): Self = StObject.set(x, "selectedGraphFillAlpha", value.asInstanceOf[js.Any])
+      inline def setSelectedGraphFillAlpha(value: Double): Self = StObject.set(x, "selectedGraphFillAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedGraphFillColor(value: String): Self = StObject.set(x, "selectedGraphFillColor", value.asInstanceOf[js.Any])
+      inline def setSelectedGraphFillColor(value: String): Self = StObject.set(x, "selectedGraphFillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedGraphLineAlpha(value: Double): Self = StObject.set(x, "selectedGraphLineAlpha", value.asInstanceOf[js.Any])
+      inline def setSelectedGraphLineAlpha(value: Double): Self = StObject.set(x, "selectedGraphLineAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedGraphLineColor(value: String): Self = StObject.set(x, "selectedGraphLineColor", value.asInstanceOf[js.Any])
+      inline def setSelectedGraphLineColor(value: String): Self = StObject.set(x, "selectedGraphLineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateOnReleaseOnly(value: Boolean): Self = StObject.set(x, "updateOnReleaseOnly", value.asInstanceOf[js.Any])
+      inline def setUpdateOnReleaseOnly(value: Boolean): Self = StObject.set(x, "updateOnReleaseOnly", value.asInstanceOf[js.Any])
     }
   }
 }

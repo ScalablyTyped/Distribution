@@ -21,7 +21,6 @@ object webGLRendererMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): WebGLRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[WebGLRenderer]
+    inline def create(): WebGLRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[WebGLRenderer]
   }
 }

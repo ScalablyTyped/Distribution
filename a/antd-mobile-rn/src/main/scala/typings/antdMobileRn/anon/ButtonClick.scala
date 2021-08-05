@@ -16,22 +16,17 @@ trait ButtonClick extends StObject {
 }
 object ButtonClick {
   
-  @scala.inline
-  def apply(buttonClick: () => Unit, buttonType: String, styles: StringDictionary[RegisteredStyle[js.Any]]): ButtonClick = {
+  inline def apply(buttonClick: () => Unit, buttonType: String, styles: StringDictionary[RegisteredStyle[js.Any]]): ButtonClick = {
     val __obj = js.Dynamic.literal(buttonClick = js.Any.fromFunction0(buttonClick), buttonType = buttonType.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonClick]
   }
   
-  @scala.inline
-  implicit class ButtonClickMutableBuilder[Self <: ButtonClick] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonClick](x: Self) {
     
-    @scala.inline
-    def setButtonClick(value: () => Unit): Self = StObject.set(x, "buttonClick", js.Any.fromFunction0(value))
+    inline def setButtonClick(value: () => Unit): Self = StObject.set(x, "buttonClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setButtonType(value: String): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
+    inline def setButtonType(value: String): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

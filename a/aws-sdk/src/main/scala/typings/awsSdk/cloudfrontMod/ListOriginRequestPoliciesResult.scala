@@ -13,19 +13,15 @@ trait ListOriginRequestPoliciesResult extends StObject {
 }
 object ListOriginRequestPoliciesResult {
   
-  @scala.inline
-  def apply(): ListOriginRequestPoliciesResult = {
+  inline def apply(): ListOriginRequestPoliciesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOriginRequestPoliciesResult]
   }
   
-  @scala.inline
-  implicit class ListOriginRequestPoliciesResultMutableBuilder[Self <: ListOriginRequestPoliciesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListOriginRequestPoliciesResult](x: Self) {
     
-    @scala.inline
-    def setOriginRequestPolicyList(value: OriginRequestPolicyList): Self = StObject.set(x, "OriginRequestPolicyList", value.asInstanceOf[js.Any])
+    inline def setOriginRequestPolicyList(value: OriginRequestPolicyList): Self = StObject.set(x, "OriginRequestPolicyList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginRequestPolicyListUndefined: Self = StObject.set(x, "OriginRequestPolicyList", js.undefined)
+    inline def setOriginRequestPolicyListUndefined: Self = StObject.set(x, "OriginRequestPolicyList", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait VisualizationCommon extends StObject {
 }
 object VisualizationCommon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     footnote: String,
     qHyperCubeDef: HyperCubeDef,
     showTitles: Boolean,
@@ -30,22 +29,16 @@ object VisualizationCommon {
     __obj.asInstanceOf[VisualizationCommon]
   }
   
-  @scala.inline
-  implicit class VisualizationCommonMutableBuilder[Self <: VisualizationCommon] (val x: Self) extends AnyVal {
+  extension [Self <: VisualizationCommon](x: Self) {
     
-    @scala.inline
-    def setFootnote(value: String): Self = StObject.set(x, "footnote", value.asInstanceOf[js.Any])
+    inline def setFootnote(value: String): Self = StObject.set(x, "footnote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQHyperCubeDef(value: HyperCubeDef): Self = StObject.set(x, "qHyperCubeDef", value.asInstanceOf[js.Any])
+    inline def setQHyperCubeDef(value: HyperCubeDef): Self = StObject.set(x, "qHyperCubeDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTitles(value: Boolean): Self = StObject.set(x, "showTitles", value.asInstanceOf[js.Any])
+    inline def setShowTitles(value: Boolean): Self = StObject.set(x, "showTitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

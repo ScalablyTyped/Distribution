@@ -18,8 +18,7 @@ trait FunctionCoverage extends StObject {
 }
 object FunctionCoverage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `class`: String,
     name: String,
     namespace: String,
@@ -31,22 +30,16 @@ object FunctionCoverage {
     __obj.asInstanceOf[FunctionCoverage]
   }
   
-  @scala.inline
-  implicit class FunctionCoverageMutableBuilder[Self <: FunctionCoverage] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionCoverage](x: Self) {
     
-    @scala.inline
-    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
+    inline def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistics(value: CoverageStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: CoverageStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
   }
 }

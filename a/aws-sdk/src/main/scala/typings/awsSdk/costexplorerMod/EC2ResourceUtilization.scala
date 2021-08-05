@@ -28,37 +28,27 @@ trait EC2ResourceUtilization extends StObject {
 }
 object EC2ResourceUtilization {
   
-  @scala.inline
-  def apply(): EC2ResourceUtilization = {
+  inline def apply(): EC2ResourceUtilization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EC2ResourceUtilization]
   }
   
-  @scala.inline
-  implicit class EC2ResourceUtilizationMutableBuilder[Self <: EC2ResourceUtilization] (val x: Self) extends AnyVal {
+  extension [Self <: EC2ResourceUtilization](x: Self) {
     
-    @scala.inline
-    def setEBSResourceUtilization(value: EBSResourceUtilization): Self = StObject.set(x, "EBSResourceUtilization", value.asInstanceOf[js.Any])
+    inline def setEBSResourceUtilization(value: EBSResourceUtilization): Self = StObject.set(x, "EBSResourceUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEBSResourceUtilizationUndefined: Self = StObject.set(x, "EBSResourceUtilization", js.undefined)
+    inline def setEBSResourceUtilizationUndefined: Self = StObject.set(x, "EBSResourceUtilization", js.undefined)
     
-    @scala.inline
-    def setMaxCpuUtilizationPercentage(value: GenericString): Self = StObject.set(x, "MaxCpuUtilizationPercentage", value.asInstanceOf[js.Any])
+    inline def setMaxCpuUtilizationPercentage(value: GenericString): Self = StObject.set(x, "MaxCpuUtilizationPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCpuUtilizationPercentageUndefined: Self = StObject.set(x, "MaxCpuUtilizationPercentage", js.undefined)
+    inline def setMaxCpuUtilizationPercentageUndefined: Self = StObject.set(x, "MaxCpuUtilizationPercentage", js.undefined)
     
-    @scala.inline
-    def setMaxMemoryUtilizationPercentage(value: GenericString): Self = StObject.set(x, "MaxMemoryUtilizationPercentage", value.asInstanceOf[js.Any])
+    inline def setMaxMemoryUtilizationPercentage(value: GenericString): Self = StObject.set(x, "MaxMemoryUtilizationPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMemoryUtilizationPercentageUndefined: Self = StObject.set(x, "MaxMemoryUtilizationPercentage", js.undefined)
+    inline def setMaxMemoryUtilizationPercentageUndefined: Self = StObject.set(x, "MaxMemoryUtilizationPercentage", js.undefined)
     
-    @scala.inline
-    def setMaxStorageUtilizationPercentage(value: GenericString): Self = StObject.set(x, "MaxStorageUtilizationPercentage", value.asInstanceOf[js.Any])
+    inline def setMaxStorageUtilizationPercentage(value: GenericString): Self = StObject.set(x, "MaxStorageUtilizationPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxStorageUtilizationPercentageUndefined: Self = StObject.set(x, "MaxStorageUtilizationPercentage", js.undefined)
+    inline def setMaxStorageUtilizationPercentageUndefined: Self = StObject.set(x, "MaxStorageUtilizationPercentage", js.undefined)
   }
 }

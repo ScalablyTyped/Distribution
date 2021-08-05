@@ -18,19 +18,15 @@ trait DeleteJobTaggingRequest extends StObject {
 }
 object DeleteJobTaggingRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, JobId: JobId): DeleteJobTaggingRequest = {
+  inline def apply(AccountId: AccountId, JobId: JobId): DeleteJobTaggingRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteJobTaggingRequest]
   }
   
-  @scala.inline
-  implicit class DeleteJobTaggingRequestMutableBuilder[Self <: DeleteJobTaggingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteJobTaggingRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

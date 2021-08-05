@@ -13,19 +13,15 @@ trait Clip extends StObject {
 }
 object Clip {
   
-  @scala.inline
-  def apply(): Clip = {
+  inline def apply(): Clip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Clip]
   }
   
-  @scala.inline
-  implicit class ClipMutableBuilder[Self <: Clip] (val x: Self) extends AnyVal {
+  extension [Self <: Clip](x: Self) {
     
-    @scala.inline
-    def setTimeSpan(value: TimeSpan): Self = StObject.set(x, "TimeSpan", value.asInstanceOf[js.Any])
+    inline def setTimeSpan(value: TimeSpan): Self = StObject.set(x, "TimeSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSpanUndefined: Self = StObject.set(x, "TimeSpan", js.undefined)
+    inline def setTimeSpanUndefined: Self = StObject.set(x, "TimeSpan", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait InstanceLimits extends StObject {
 }
 object InstanceLimits {
   
-  @scala.inline
-  def apply(): InstanceLimits = {
+  inline def apply(): InstanceLimits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceLimits]
   }
   
-  @scala.inline
-  implicit class InstanceLimitsMutableBuilder[Self <: InstanceLimits] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceLimits](x: Self) {
     
-    @scala.inline
-    def setInstanceCountLimits(value: InstanceCountLimits): Self = StObject.set(x, "InstanceCountLimits", value.asInstanceOf[js.Any])
+    inline def setInstanceCountLimits(value: InstanceCountLimits): Self = StObject.set(x, "InstanceCountLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCountLimitsUndefined: Self = StObject.set(x, "InstanceCountLimits", js.undefined)
+    inline def setInstanceCountLimitsUndefined: Self = StObject.set(x, "InstanceCountLimits", js.undefined)
   }
 }

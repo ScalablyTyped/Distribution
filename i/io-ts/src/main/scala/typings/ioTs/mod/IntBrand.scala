@@ -10,16 +10,13 @@ trait IntBrand extends StObject {
 }
 object IntBrand {
   
-  @scala.inline
-  def apply(Int: js.Symbol): IntBrand = {
+  inline def apply(Int: js.Symbol): IntBrand = {
     val __obj = js.Dynamic.literal(Int = Int.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntBrand]
   }
   
-  @scala.inline
-  implicit class IntBrandMutableBuilder[Self <: IntBrand] (val x: Self) extends AnyVal {
+  extension [Self <: IntBrand](x: Self) {
     
-    @scala.inline
-    def setInt(value: js.Symbol): Self = StObject.set(x, "Int", value.asInstanceOf[js.Any])
+    inline def setInt(value: js.Symbol): Self = StObject.set(x, "Int", value.asInstanceOf[js.Any])
   }
 }

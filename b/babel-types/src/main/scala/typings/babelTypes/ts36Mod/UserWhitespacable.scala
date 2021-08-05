@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UserWhitespacable extends StObject
 object UserWhitespacable {
   
-  @scala.inline
-  def ObjectMethod_(
+  inline def ObjectMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -38,8 +37,7 @@ object UserWhitespacable {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ObjectMethod_]
   }
   
-  @scala.inline
-  def ObjectProperty_(
+  inline def ObjectProperty_(
     computed: Boolean,
     end: Double,
     key: Expression,
@@ -53,15 +51,13 @@ object UserWhitespacable {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ObjectProperty_]
   }
   
-  @scala.inline
-  def ObjectTypeCallProperty_(end: Double, loc: SourceLocation, start: Double, value: FlowTypeAnnotation): typings.babelTypes.ts36Mod.ObjectTypeCallProperty_ = {
+  inline def ObjectTypeCallProperty_(end: Double, loc: SourceLocation, start: Double, value: FlowTypeAnnotation): typings.babelTypes.ts36Mod.ObjectTypeCallProperty_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ObjectTypeCallProperty")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ObjectTypeCallProperty_]
   }
   
-  @scala.inline
-  def ObjectTypeIndexer_(
+  inline def ObjectTypeIndexer_(
     end: Double,
     id: Expression,
     key: FlowTypeAnnotation,
@@ -74,8 +70,7 @@ object UserWhitespacable {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ObjectTypeIndexer_]
   }
   
-  @scala.inline
-  def ObjectTypeProperty_(end: Double, key: Expression, loc: SourceLocation, start: Double, value: FlowTypeAnnotation): typings.babelTypes.ts36Mod.ObjectTypeProperty_ = {
+  inline def ObjectTypeProperty_(end: Double, key: Expression, loc: SourceLocation, start: Double, value: FlowTypeAnnotation): typings.babelTypes.ts36Mod.ObjectTypeProperty_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ObjectTypeProperty")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ObjectTypeProperty_]

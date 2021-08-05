@@ -11,39 +11,33 @@ object workboxWebpackPluginStrings {
   sealed trait CacheFirst
     extends StObject
        with CacheStrategy
-  @scala.inline
-  def CacheFirst: CacheFirst = "CacheFirst".asInstanceOf[CacheFirst]
+  inline def CacheFirst: CacheFirst = "CacheFirst".asInstanceOf[CacheFirst]
   
   @js.native
   sealed trait CacheOnly
     extends StObject
        with CacheStrategy
-  @scala.inline
-  def CacheOnly: CacheOnly = "CacheOnly".asInstanceOf[CacheOnly]
+  inline def CacheOnly: CacheOnly = "CacheOnly".asInstanceOf[CacheOnly]
   
   @js.native
   sealed trait NetworkFirst
     extends StObject
        with CacheStrategy
-  @scala.inline
-  def NetworkFirst: NetworkFirst = "NetworkFirst".asInstanceOf[NetworkFirst]
+  inline def NetworkFirst: NetworkFirst = "NetworkFirst".asInstanceOf[NetworkFirst]
   
   @js.native
   sealed trait NetworkOnly
     extends StObject
        with CacheStrategy
-  @scala.inline
-  def NetworkOnly: NetworkOnly = "NetworkOnly".asInstanceOf[NetworkOnly]
+  inline def NetworkOnly: NetworkOnly = "NetworkOnly".asInstanceOf[NetworkOnly]
   
   @js.native
   sealed trait StaleWhileRevalidate
     extends StObject
        with CacheStrategy
-  @scala.inline
-  def StaleWhileRevalidate: StaleWhileRevalidate = "StaleWhileRevalidate".asInstanceOf[StaleWhileRevalidate]
+  inline def StaleWhileRevalidate: StaleWhileRevalidate = "StaleWhileRevalidate".asInstanceOf[StaleWhileRevalidate]
   
   @js.native
   sealed trait production extends StObject
-  @scala.inline
-  def production: production = "production".asInstanceOf[production]
+  inline def production: production = "production".asInstanceOf[production]
 }

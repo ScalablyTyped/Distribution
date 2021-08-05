@@ -15,7 +15,6 @@ object global {
     @JSGlobal("Meteor.isDevelopment")
     @js.native
     def isDevelopment: Boolean = js.native
-    @scala.inline
-    def isDevelopment_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDevelopment")(x.asInstanceOf[js.Any])
+    inline def isDevelopment_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDevelopment")(x.asInstanceOf[js.Any])
   }
 }

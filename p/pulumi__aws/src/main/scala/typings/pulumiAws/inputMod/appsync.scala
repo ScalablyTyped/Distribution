@@ -26,29 +26,22 @@ object appsync {
   }
   object DataSourceDynamodbConfig {
     
-    @scala.inline
-    def apply(tableName: Input[String]): DataSourceDynamodbConfig = {
+    inline def apply(tableName: Input[String]): DataSourceDynamodbConfig = {
       val __obj = js.Dynamic.literal(tableName = tableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataSourceDynamodbConfig]
     }
     
-    @scala.inline
-    implicit class DataSourceDynamodbConfigMutableBuilder[Self <: DataSourceDynamodbConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DataSourceDynamodbConfig](x: Self) {
       
-      @scala.inline
-      def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCallerCredentials(value: Input[Boolean]): Self = StObject.set(x, "useCallerCredentials", value.asInstanceOf[js.Any])
+      inline def setUseCallerCredentials(value: Input[Boolean]): Self = StObject.set(x, "useCallerCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCallerCredentialsUndefined: Self = StObject.set(x, "useCallerCredentials", js.undefined)
+      inline def setUseCallerCredentialsUndefined: Self = StObject.set(x, "useCallerCredentials", js.undefined)
     }
   }
   
@@ -66,23 +59,18 @@ object appsync {
   }
   object DataSourceElasticsearchConfig {
     
-    @scala.inline
-    def apply(endpoint: Input[String]): DataSourceElasticsearchConfig = {
+    inline def apply(endpoint: Input[String]): DataSourceElasticsearchConfig = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataSourceElasticsearchConfig]
     }
     
-    @scala.inline
-    implicit class DataSourceElasticsearchConfigMutableBuilder[Self <: DataSourceElasticsearchConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DataSourceElasticsearchConfig](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     }
   }
   
@@ -95,17 +83,14 @@ object appsync {
   }
   object DataSourceHttpConfig {
     
-    @scala.inline
-    def apply(endpoint: Input[String]): DataSourceHttpConfig = {
+    inline def apply(endpoint: Input[String]): DataSourceHttpConfig = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataSourceHttpConfig]
     }
     
-    @scala.inline
-    implicit class DataSourceHttpConfigMutableBuilder[Self <: DataSourceHttpConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DataSourceHttpConfig](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,17 +103,14 @@ object appsync {
   }
   object DataSourceLambdaConfig {
     
-    @scala.inline
-    def apply(functionArn: Input[String]): DataSourceLambdaConfig = {
+    inline def apply(functionArn: Input[String]): DataSourceLambdaConfig = {
       val __obj = js.Dynamic.literal(functionArn = functionArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataSourceLambdaConfig]
     }
     
-    @scala.inline
-    implicit class DataSourceLambdaConfigMutableBuilder[Self <: DataSourceLambdaConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DataSourceLambdaConfig](x: Self) {
       
-      @scala.inline
-      def setFunctionArn(value: Input[String]): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
+      inline def setFunctionArn(value: Input[String]): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,29 +133,22 @@ object appsync {
   }
   object GraphQLApiAdditionalAuthenticationProvider {
     
-    @scala.inline
-    def apply(authenticationType: Input[String]): GraphQLApiAdditionalAuthenticationProvider = {
+    inline def apply(authenticationType: Input[String]): GraphQLApiAdditionalAuthenticationProvider = {
       val __obj = js.Dynamic.literal(authenticationType = authenticationType.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLApiAdditionalAuthenticationProvider]
     }
     
-    @scala.inline
-    implicit class GraphQLApiAdditionalAuthenticationProviderMutableBuilder[Self <: GraphQLApiAdditionalAuthenticationProvider] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQLApiAdditionalAuthenticationProvider](x: Self) {
       
-      @scala.inline
-      def setAuthenticationType(value: Input[String]): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+      inline def setAuthenticationType(value: Input[String]): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenidConnectConfig(value: Input[GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig]): Self = StObject.set(x, "openidConnectConfig", value.asInstanceOf[js.Any])
+      inline def setOpenidConnectConfig(value: Input[GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig]): Self = StObject.set(x, "openidConnectConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenidConnectConfigUndefined: Self = StObject.set(x, "openidConnectConfig", js.undefined)
+      inline def setOpenidConnectConfigUndefined: Self = StObject.set(x, "openidConnectConfig", js.undefined)
       
-      @scala.inline
-      def setUserPoolConfig(value: Input[GraphQLApiAdditionalAuthenticationProviderUserPoolConfig]): Self = StObject.set(x, "userPoolConfig", value.asInstanceOf[js.Any])
+      inline def setUserPoolConfig(value: Input[GraphQLApiAdditionalAuthenticationProviderUserPoolConfig]): Self = StObject.set(x, "userPoolConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolConfigUndefined: Self = StObject.set(x, "userPoolConfig", js.undefined)
+      inline def setUserPoolConfigUndefined: Self = StObject.set(x, "userPoolConfig", js.undefined)
     }
   }
   
@@ -201,35 +176,26 @@ object appsync {
   }
   object GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig {
     
-    @scala.inline
-    def apply(issuer: Input[String]): GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig = {
+    inline def apply(issuer: Input[String]): GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig = {
       val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig]
     }
     
-    @scala.inline
-    implicit class GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfigMutableBuilder[Self <: GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig](x: Self) {
       
-      @scala.inline
-      def setAuthTtl(value: Input[Double]): Self = StObject.set(x, "authTtl", value.asInstanceOf[js.Any])
+      inline def setAuthTtl(value: Input[Double]): Self = StObject.set(x, "authTtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthTtlUndefined: Self = StObject.set(x, "authTtl", js.undefined)
+      inline def setAuthTtlUndefined: Self = StObject.set(x, "authTtl", js.undefined)
       
-      @scala.inline
-      def setClientId(value: Input[String]): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: Input[String]): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+      inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
       
-      @scala.inline
-      def setIatTtl(value: Input[Double]): Self = StObject.set(x, "iatTtl", value.asInstanceOf[js.Any])
+      inline def setIatTtl(value: Input[Double]): Self = StObject.set(x, "iatTtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIatTtlUndefined: Self = StObject.set(x, "iatTtl", js.undefined)
+      inline def setIatTtlUndefined: Self = StObject.set(x, "iatTtl", js.undefined)
       
-      @scala.inline
-      def setIssuer(value: Input[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: Input[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -252,29 +218,22 @@ object appsync {
   }
   object GraphQLApiAdditionalAuthenticationProviderUserPoolConfig {
     
-    @scala.inline
-    def apply(userPoolId: Input[String]): GraphQLApiAdditionalAuthenticationProviderUserPoolConfig = {
+    inline def apply(userPoolId: Input[String]): GraphQLApiAdditionalAuthenticationProviderUserPoolConfig = {
       val __obj = js.Dynamic.literal(userPoolId = userPoolId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLApiAdditionalAuthenticationProviderUserPoolConfig]
     }
     
-    @scala.inline
-    implicit class GraphQLApiAdditionalAuthenticationProviderUserPoolConfigMutableBuilder[Self <: GraphQLApiAdditionalAuthenticationProviderUserPoolConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQLApiAdditionalAuthenticationProviderUserPoolConfig](x: Self) {
       
-      @scala.inline
-      def setAppIdClientRegex(value: Input[String]): Self = StObject.set(x, "appIdClientRegex", value.asInstanceOf[js.Any])
+      inline def setAppIdClientRegex(value: Input[String]): Self = StObject.set(x, "appIdClientRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppIdClientRegexUndefined: Self = StObject.set(x, "appIdClientRegex", js.undefined)
+      inline def setAppIdClientRegexUndefined: Self = StObject.set(x, "appIdClientRegex", js.undefined)
       
-      @scala.inline
-      def setAwsRegion(value: Input[String]): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+      inline def setAwsRegion(value: Input[String]): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
+      inline def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
       
-      @scala.inline
-      def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -297,26 +256,20 @@ object appsync {
   }
   object GraphQLApiLogConfig {
     
-    @scala.inline
-    def apply(cloudwatchLogsRoleArn: Input[String], fieldLogLevel: Input[String]): GraphQLApiLogConfig = {
+    inline def apply(cloudwatchLogsRoleArn: Input[String], fieldLogLevel: Input[String]): GraphQLApiLogConfig = {
       val __obj = js.Dynamic.literal(cloudwatchLogsRoleArn = cloudwatchLogsRoleArn.asInstanceOf[js.Any], fieldLogLevel = fieldLogLevel.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLApiLogConfig]
     }
     
-    @scala.inline
-    implicit class GraphQLApiLogConfigMutableBuilder[Self <: GraphQLApiLogConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQLApiLogConfig](x: Self) {
       
-      @scala.inline
-      def setCloudwatchLogsRoleArn(value: Input[String]): Self = StObject.set(x, "cloudwatchLogsRoleArn", value.asInstanceOf[js.Any])
+      inline def setCloudwatchLogsRoleArn(value: Input[String]): Self = StObject.set(x, "cloudwatchLogsRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeVerboseContent(value: Input[Boolean]): Self = StObject.set(x, "excludeVerboseContent", value.asInstanceOf[js.Any])
+      inline def setExcludeVerboseContent(value: Input[Boolean]): Self = StObject.set(x, "excludeVerboseContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeVerboseContentUndefined: Self = StObject.set(x, "excludeVerboseContent", js.undefined)
+      inline def setExcludeVerboseContentUndefined: Self = StObject.set(x, "excludeVerboseContent", js.undefined)
       
-      @scala.inline
-      def setFieldLogLevel(value: Input[String]): Self = StObject.set(x, "fieldLogLevel", value.asInstanceOf[js.Any])
+      inline def setFieldLogLevel(value: Input[String]): Self = StObject.set(x, "fieldLogLevel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -344,35 +297,26 @@ object appsync {
   }
   object GraphQLApiOpenidConnectConfig {
     
-    @scala.inline
-    def apply(issuer: Input[String]): GraphQLApiOpenidConnectConfig = {
+    inline def apply(issuer: Input[String]): GraphQLApiOpenidConnectConfig = {
       val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLApiOpenidConnectConfig]
     }
     
-    @scala.inline
-    implicit class GraphQLApiOpenidConnectConfigMutableBuilder[Self <: GraphQLApiOpenidConnectConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQLApiOpenidConnectConfig](x: Self) {
       
-      @scala.inline
-      def setAuthTtl(value: Input[Double]): Self = StObject.set(x, "authTtl", value.asInstanceOf[js.Any])
+      inline def setAuthTtl(value: Input[Double]): Self = StObject.set(x, "authTtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthTtlUndefined: Self = StObject.set(x, "authTtl", js.undefined)
+      inline def setAuthTtlUndefined: Self = StObject.set(x, "authTtl", js.undefined)
       
-      @scala.inline
-      def setClientId(value: Input[String]): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: Input[String]): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+      inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
       
-      @scala.inline
-      def setIatTtl(value: Input[Double]): Self = StObject.set(x, "iatTtl", value.asInstanceOf[js.Any])
+      inline def setIatTtl(value: Input[Double]): Self = StObject.set(x, "iatTtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIatTtlUndefined: Self = StObject.set(x, "iatTtl", js.undefined)
+      inline def setIatTtlUndefined: Self = StObject.set(x, "iatTtl", js.undefined)
       
-      @scala.inline
-      def setIssuer(value: Input[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: Input[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -400,32 +344,24 @@ object appsync {
   }
   object GraphQLApiUserPoolConfig {
     
-    @scala.inline
-    def apply(defaultAction: Input[String], userPoolId: Input[String]): GraphQLApiUserPoolConfig = {
+    inline def apply(defaultAction: Input[String], userPoolId: Input[String]): GraphQLApiUserPoolConfig = {
       val __obj = js.Dynamic.literal(defaultAction = defaultAction.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLApiUserPoolConfig]
     }
     
-    @scala.inline
-    implicit class GraphQLApiUserPoolConfigMutableBuilder[Self <: GraphQLApiUserPoolConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQLApiUserPoolConfig](x: Self) {
       
-      @scala.inline
-      def setAppIdClientRegex(value: Input[String]): Self = StObject.set(x, "appIdClientRegex", value.asInstanceOf[js.Any])
+      inline def setAppIdClientRegex(value: Input[String]): Self = StObject.set(x, "appIdClientRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppIdClientRegexUndefined: Self = StObject.set(x, "appIdClientRegex", js.undefined)
+      inline def setAppIdClientRegexUndefined: Self = StObject.set(x, "appIdClientRegex", js.undefined)
       
-      @scala.inline
-      def setAwsRegion(value: Input[String]): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+      inline def setAwsRegion(value: Input[String]): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
+      inline def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
       
-      @scala.inline
-      def setDefaultAction(value: Input[String]): Self = StObject.set(x, "defaultAction", value.asInstanceOf[js.Any])
+      inline def setDefaultAction(value: Input[String]): Self = StObject.set(x, "defaultAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -443,29 +379,22 @@ object appsync {
   }
   object ResolverCachingConfig {
     
-    @scala.inline
-    def apply(): ResolverCachingConfig = {
+    inline def apply(): ResolverCachingConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResolverCachingConfig]
     }
     
-    @scala.inline
-    implicit class ResolverCachingConfigMutableBuilder[Self <: ResolverCachingConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ResolverCachingConfig](x: Self) {
       
-      @scala.inline
-      def setCachingKeys(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "cachingKeys", value.asInstanceOf[js.Any])
+      inline def setCachingKeys(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "cachingKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachingKeysUndefined: Self = StObject.set(x, "cachingKeys", js.undefined)
+      inline def setCachingKeysUndefined: Self = StObject.set(x, "cachingKeys", js.undefined)
       
-      @scala.inline
-      def setCachingKeysVarargs(value: Input[String]*): Self = StObject.set(x, "cachingKeys", js.Array(value :_*))
+      inline def setCachingKeysVarargs(value: Input[String]*): Self = StObject.set(x, "cachingKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setTtl(value: Input[Double]): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Input[Double]): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
   
@@ -478,23 +407,18 @@ object appsync {
   }
   object ResolverPipelineConfig {
     
-    @scala.inline
-    def apply(): ResolverPipelineConfig = {
+    inline def apply(): ResolverPipelineConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResolverPipelineConfig]
     }
     
-    @scala.inline
-    implicit class ResolverPipelineConfigMutableBuilder[Self <: ResolverPipelineConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ResolverPipelineConfig](x: Self) {
       
-      @scala.inline
-      def setFunctions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      inline def setFunctions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
       
-      @scala.inline
-      def setFunctionsVarargs(value: Input[String]*): Self = StObject.set(x, "functions", js.Array(value :_*))
+      inline def setFunctionsVarargs(value: Input[String]*): Self = StObject.set(x, "functions", js.Array(value :_*))
     }
   }
 }

@@ -18,19 +18,15 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(format: (String, /* repeated */ String) => String, validator: ValidatorStatic): JQueryStatic = {
+  inline def apply(format: (String, /* repeated */ String) => String, validator: ValidatorStatic): JQueryStatic = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), validator = validator.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setFormat(value: (String, /* repeated */ String) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+    inline def setFormat(value: (String, /* repeated */ String) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValidator(value: ValidatorStatic): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+    inline def setValidator(value: ValidatorStatic): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
   }
 }

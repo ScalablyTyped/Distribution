@@ -22,26 +22,20 @@ object interfacesMod {
   }
   object IColor {
     
-    @scala.inline
-    def apply(b: Double, g: Double, h: Double, hex: String, r: Double, s: Double, str: String, v: Double): IColor = {
+    inline def apply(b: Double, g: Double, h: Double, hex: String, r: Double, s: Double, str: String, v: Double): IColor = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], str = str.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[IColor]
     }
     
-    @scala.inline
-    implicit class IColorMutableBuilder[Self <: IColor] (val x: Self) extends AnyVal {
+    extension [Self <: IColor](x: Self) {
       
-      @scala.inline
-      def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
+      inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTUndefined: Self = StObject.set(x, "t", js.undefined)
+      inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
     }
   }
   
@@ -58,23 +52,18 @@ object interfacesMod {
   }
   object IHSL {
     
-    @scala.inline
-    def apply(h: Double, l: Double, s: Double): IHSL = {
+    inline def apply(h: Double, l: Double, s: Double): IHSL = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHSL]
     }
     
-    @scala.inline
-    implicit class IHSLMutableBuilder[Self <: IHSL] (val x: Self) extends AnyVal {
+    extension [Self <: IHSL](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+      inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,23 +80,18 @@ object interfacesMod {
   }
   object IHSV {
     
-    @scala.inline
-    def apply(h: Double, s: Double, v: Double): IHSV = {
+    inline def apply(h: Double, s: Double, v: Double): IHSV = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHSV]
     }
     
-    @scala.inline
-    implicit class IHSVMutableBuilder[Self <: IHSV] (val x: Self) extends AnyVal {
+    extension [Self <: IHSV](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,29 +111,22 @@ object interfacesMod {
   }
   object IRGB {
     
-    @scala.inline
-    def apply(b: Double, g: Double, r: Double): IRGB = {
+    inline def apply(b: Double, g: Double, r: Double): IRGB = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRGB]
     }
     
-    @scala.inline
-    implicit class IRGBMutableBuilder[Self <: IRGB] (val x: Self) extends AnyVal {
+    extension [Self <: IRGB](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+      inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
 }

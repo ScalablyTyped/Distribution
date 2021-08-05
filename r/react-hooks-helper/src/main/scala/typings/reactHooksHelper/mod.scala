@@ -15,11 +15,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useForm[T](defaultFormConfig: T): js.Tuple2[T, SetForm] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForm")(defaultFormConfig.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, SetForm]]
+  inline def useForm[T](defaultFormConfig: T): js.Tuple2[T, SetForm] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForm")(defaultFormConfig.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, SetForm]]
   
-  @scala.inline
-  def useStep(params: UseStepParams): UseStepResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("useStep")(params.asInstanceOf[js.Any]).asInstanceOf[UseStepResponse]
+  inline def useStep(params: UseStepParams): UseStepResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("useStep")(params.asInstanceOf[js.Any]).asInstanceOf[UseStepResponse]
   
   trait FormTarget extends StObject {
     
@@ -27,17 +25,14 @@ object mod {
   }
   object FormTarget {
     
-    @scala.inline
-    def apply(target: Checked): FormTarget = {
+    inline def apply(target: Checked): FormTarget = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormTarget]
     }
     
-    @scala.inline
-    implicit class FormTargetMutableBuilder[Self <: FormTarget] (val x: Self) extends AnyVal {
+    extension [Self <: FormTarget](x: Self) {
       
-      @scala.inline
-      def setTarget(value: Checked): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Checked): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,41 +50,30 @@ object mod {
   }
   object NavigationProps {
     
-    @scala.inline
-    def apply(next: () => Unit): NavigationProps = {
+    inline def apply(next: () => Unit): NavigationProps = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
       __obj.asInstanceOf[NavigationProps]
     }
     
-    @scala.inline
-    implicit class NavigationPropsMutableBuilder[Self <: NavigationProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationProps](x: Self) {
       
-      @scala.inline
-      def setGo(value: /* step */ Double | String => Unit): Self = StObject.set(x, "go", js.Any.fromFunction1(value))
+      inline def setGo(value: /* step */ Double | String => Unit): Self = StObject.set(x, "go", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGoUndefined: Self = StObject.set(x, "go", js.undefined)
+      inline def setGoUndefined: Self = StObject.set(x, "go", js.undefined)
       
-      @scala.inline
-      def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
+      inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
       
-      @scala.inline
-      def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+      inline def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
+      inline def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
       
-      @scala.inline
-      def setPrevious(value: () => Unit): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
+      inline def setPrevious(value: () => Unit): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     }
   }
   
@@ -108,32 +92,24 @@ object mod {
   }
   object UseStepParams {
     
-    @scala.inline
-    def apply(steps: js.Array[String] | Double): UseStepParams = {
+    inline def apply(steps: js.Array[String] | Double): UseStepParams = {
       val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any])
       __obj.asInstanceOf[UseStepParams]
     }
     
-    @scala.inline
-    implicit class UseStepParamsMutableBuilder[Self <: UseStepParams] (val x: Self) extends AnyVal {
+    extension [Self <: UseStepParams](x: Self) {
       
-      @scala.inline
-      def setAutoAdvanceDuration(value: Double): Self = StObject.set(x, "autoAdvanceDuration", value.asInstanceOf[js.Any])
+      inline def setAutoAdvanceDuration(value: Double): Self = StObject.set(x, "autoAdvanceDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoAdvanceDurationUndefined: Self = StObject.set(x, "autoAdvanceDuration", js.undefined)
+      inline def setAutoAdvanceDurationUndefined: Self = StObject.set(x, "autoAdvanceDuration", js.undefined)
       
-      @scala.inline
-      def setInitialStep(value: Double): Self = StObject.set(x, "initialStep", value.asInstanceOf[js.Any])
+      inline def setInitialStep(value: Double): Self = StObject.set(x, "initialStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStepUndefined: Self = StObject.set(x, "initialStep", js.undefined)
+      inline def setInitialStepUndefined: Self = StObject.set(x, "initialStep", js.undefined)
       
-      @scala.inline
-      def setSteps(value: js.Array[String] | Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[String] | Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsVarargs(value: String*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: String*): Self = StObject.set(x, "steps", js.Array(value :_*))
     }
   }
   
@@ -151,8 +127,7 @@ object mod {
   }
   object UseStepResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoAdvanceDuration: Double,
       index: Double,
       isPaused: Boolean,
@@ -163,23 +138,17 @@ object mod {
       __obj.asInstanceOf[UseStepResponse]
     }
     
-    @scala.inline
-    implicit class UseStepResponseMutableBuilder[Self <: UseStepResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UseStepResponse](x: Self) {
       
-      @scala.inline
-      def setAutoAdvanceDuration(value: Double): Self = StObject.set(x, "autoAdvanceDuration", value.asInstanceOf[js.Any])
+      inline def setAutoAdvanceDuration(value: Double): Self = StObject.set(x, "autoAdvanceDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
+      inline def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigation(value: NavigationProps): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: NavigationProps): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     }
   }
 }

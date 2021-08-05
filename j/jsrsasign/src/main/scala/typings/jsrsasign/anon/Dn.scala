@@ -13,16 +13,13 @@ trait Dn
 }
 object Dn {
   
-  @scala.inline
-  def apply(dn: String): Dn = {
+  inline def apply(dn: String): Dn = {
     val __obj = js.Dynamic.literal(dn = dn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dn]
   }
   
-  @scala.inline
-  implicit class DnMutableBuilder[Self <: Dn] (val x: Self) extends AnyVal {
+  extension [Self <: Dn](x: Self) {
     
-    @scala.inline
-    def setDn(value: String): Self = StObject.set(x, "dn", value.asInstanceOf[js.Any])
+    inline def setDn(value: String): Self = StObject.set(x, "dn", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait EncryptedCredentials extends StObject {
 }
 object EncryptedCredentials {
   
-  @scala.inline
-  def apply(data: String, hash: String, secret: String): EncryptedCredentials = {
+  inline def apply(data: String, hash: String, secret: String): EncryptedCredentials = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptedCredentials]
   }
   
-  @scala.inline
-  implicit class EncryptedCredentialsMutableBuilder[Self <: EncryptedCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptedCredentials](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
   }
 }

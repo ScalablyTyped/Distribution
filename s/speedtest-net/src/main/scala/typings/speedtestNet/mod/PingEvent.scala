@@ -24,26 +24,20 @@ trait PingEvent
 }
 object PingEvent {
   
-  @scala.inline
-  def apply(ping: PingData, progress: Double, timestamp: Date): PingEvent = {
+  inline def apply(ping: PingData, progress: Double, timestamp: Date): PingEvent = {
     val __obj = js.Dynamic.literal(ping = ping.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ping")
     __obj.asInstanceOf[PingEvent]
   }
   
-  @scala.inline
-  implicit class PingEventMutableBuilder[Self <: PingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PingEvent](x: Self) {
     
-    @scala.inline
-    def setPing(value: PingData): Self = StObject.set(x, "ping", value.asInstanceOf[js.Any])
+    inline def setPing(value: PingData): Self = StObject.set(x, "ping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ping): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ping): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

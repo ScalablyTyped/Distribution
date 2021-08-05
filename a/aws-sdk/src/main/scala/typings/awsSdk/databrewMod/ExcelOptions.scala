@@ -18,31 +18,23 @@ trait ExcelOptions extends StObject {
 }
 object ExcelOptions {
   
-  @scala.inline
-  def apply(): ExcelOptions = {
+  inline def apply(): ExcelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExcelOptions]
   }
   
-  @scala.inline
-  implicit class ExcelOptionsMutableBuilder[Self <: ExcelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExcelOptions](x: Self) {
     
-    @scala.inline
-    def setSheetIndexes(value: SheetIndexList): Self = StObject.set(x, "SheetIndexes", value.asInstanceOf[js.Any])
+    inline def setSheetIndexes(value: SheetIndexList): Self = StObject.set(x, "SheetIndexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetIndexesUndefined: Self = StObject.set(x, "SheetIndexes", js.undefined)
+    inline def setSheetIndexesUndefined: Self = StObject.set(x, "SheetIndexes", js.undefined)
     
-    @scala.inline
-    def setSheetIndexesVarargs(value: SheetIndex*): Self = StObject.set(x, "SheetIndexes", js.Array(value :_*))
+    inline def setSheetIndexesVarargs(value: SheetIndex*): Self = StObject.set(x, "SheetIndexes", js.Array(value :_*))
     
-    @scala.inline
-    def setSheetNames(value: SheetNameList): Self = StObject.set(x, "SheetNames", value.asInstanceOf[js.Any])
+    inline def setSheetNames(value: SheetNameList): Self = StObject.set(x, "SheetNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetNamesUndefined: Self = StObject.set(x, "SheetNames", js.undefined)
+    inline def setSheetNamesUndefined: Self = StObject.set(x, "SheetNames", js.undefined)
     
-    @scala.inline
-    def setSheetNamesVarargs(value: SheetName*): Self = StObject.set(x, "SheetNames", js.Array(value :_*))
+    inline def setSheetNamesVarargs(value: SheetName*): Self = StObject.set(x, "SheetNames", js.Array(value :_*))
   }
 }

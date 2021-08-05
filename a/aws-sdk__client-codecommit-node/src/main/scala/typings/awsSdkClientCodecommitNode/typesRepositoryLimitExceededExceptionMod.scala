@@ -16,17 +16,14 @@ object typesRepositoryLimitExceededExceptionMod {
   }
   object RepositoryLimitExceededException {
     
-    @scala.inline
-    def apply(): RepositoryLimitExceededException = {
+    inline def apply(): RepositoryLimitExceededException = {
       val __obj = js.Dynamic.literal(name = "RepositoryLimitExceededException")
       __obj.asInstanceOf[RepositoryLimitExceededException]
     }
     
-    @scala.inline
-    implicit class RepositoryLimitExceededExceptionMutableBuilder[Self <: RepositoryLimitExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryLimitExceededException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryLimitExceededException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

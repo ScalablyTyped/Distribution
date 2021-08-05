@@ -31,32 +31,24 @@ object typesListShardsOutputMod {
   }
   object ListShardsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListShardsOutput = {
+    inline def apply($metadata: ResponseMetadata): ListShardsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListShardsOutput]
     }
     
-    @scala.inline
-    implicit class ListShardsOutputMutableBuilder[Self <: ListShardsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListShardsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setShards(value: js.Array[UnmarshalledShard]): Self = StObject.set(x, "Shards", value.asInstanceOf[js.Any])
+      inline def setShards(value: js.Array[UnmarshalledShard]): Self = StObject.set(x, "Shards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardsUndefined: Self = StObject.set(x, "Shards", js.undefined)
+      inline def setShardsUndefined: Self = StObject.set(x, "Shards", js.undefined)
       
-      @scala.inline
-      def setShardsVarargs(value: UnmarshalledShard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
+      inline def setShardsVarargs(value: UnmarshalledShard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
     }
   }
 }

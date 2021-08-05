@@ -15,25 +15,19 @@ trait PartialBooleanTypeProps extends StObject {
 }
 object PartialBooleanTypeProps {
   
-  @scala.inline
-  def apply(): PartialBooleanTypeProps = {
+  inline def apply(): PartialBooleanTypeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialBooleanTypeProps]
   }
   
-  @scala.inline
-  implicit class PartialBooleanTypePropsMutableBuilder[Self <: PartialBooleanTypeProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialBooleanTypeProps](x: Self) {
     
-    @scala.inline
-    def setKnob(value: BooleanTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: BooleanTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
+    inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: /* value */ BooleanTypeKnobValue => BooleanTypeKnobValue): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* value */ BooleanTypeKnobValue => BooleanTypeKnobValue): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }
 }

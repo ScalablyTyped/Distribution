@@ -11,19 +11,15 @@ trait DriveExportOptions extends StObject {
 }
 object DriveExportOptions {
   
-  @scala.inline
-  def apply(): DriveExportOptions = {
+  inline def apply(): DriveExportOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DriveExportOptions]
   }
   
-  @scala.inline
-  implicit class DriveExportOptionsMutableBuilder[Self <: DriveExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DriveExportOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeAccessInfo(value: Boolean): Self = StObject.set(x, "includeAccessInfo", value.asInstanceOf[js.Any])
+    inline def setIncludeAccessInfo(value: Boolean): Self = StObject.set(x, "includeAccessInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeAccessInfoUndefined: Self = StObject.set(x, "includeAccessInfo", js.undefined)
+    inline def setIncludeAccessInfoUndefined: Self = StObject.set(x, "includeAccessInfo", js.undefined)
   }
 }

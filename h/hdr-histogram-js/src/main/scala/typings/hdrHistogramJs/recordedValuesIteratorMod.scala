@@ -30,7 +30,7 @@ object recordedValuesIteratorMod {
   trait RecordedValuesIterator
     extends typings.hdrHistogramJs.abstractHistogramIteratorMod.default {
     
-    var doReset: js.Any = js.native
+    /* private */ var doReset: js.Any = js.native
     
     /**
       * Reset iterator for re-use in a fresh iteration over the same histogram data set.

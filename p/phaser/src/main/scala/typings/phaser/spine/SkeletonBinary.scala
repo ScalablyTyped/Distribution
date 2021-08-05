@@ -9,23 +9,23 @@ trait SkeletonBinary extends StObject {
   
   var attachmentLoader: AttachmentLoader
   
-  var linkedMeshes: js.Any
+  /* private */ var linkedMeshes: js.Any
   
-  var readAnimation: js.Any
+  /* private */ var readAnimation: js.Any
   
-  var readAttachment: js.Any
+  /* private */ var readAttachment: js.Any
   
-  var readCurve: js.Any
+  /* private */ var readCurve: js.Any
   
-  var readFloatArray: js.Any
+  /* private */ var readFloatArray: js.Any
   
-  var readShortArray: js.Any
+  /* private */ var readShortArray: js.Any
   
   def readSkeletonData(binary: Uint8Array): SkeletonData
   
-  var readSkin: js.Any
+  /* private */ var readSkin: js.Any
   
-  var readVertices: js.Any
+  /* private */ var readVertices: js.Any
   
   var scale: Double
   
@@ -33,8 +33,7 @@ trait SkeletonBinary extends StObject {
 }
 object SkeletonBinary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachmentLoader: AttachmentLoader,
     linkedMeshes: js.Any,
     readAnimation: js.Any,
@@ -52,43 +51,30 @@ object SkeletonBinary {
     __obj.asInstanceOf[SkeletonBinary]
   }
   
-  @scala.inline
-  implicit class SkeletonBinaryMutableBuilder[Self <: SkeletonBinary] (val x: Self) extends AnyVal {
+  extension [Self <: SkeletonBinary](x: Self) {
     
-    @scala.inline
-    def setAttachmentLoader(value: AttachmentLoader): Self = StObject.set(x, "attachmentLoader", value.asInstanceOf[js.Any])
+    inline def setAttachmentLoader(value: AttachmentLoader): Self = StObject.set(x, "attachmentLoader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedMeshes(value: js.Any): Self = StObject.set(x, "linkedMeshes", value.asInstanceOf[js.Any])
+    inline def setLinkedMeshes(value: js.Any): Self = StObject.set(x, "linkedMeshes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadAnimation(value: js.Any): Self = StObject.set(x, "readAnimation", value.asInstanceOf[js.Any])
+    inline def setReadAnimation(value: js.Any): Self = StObject.set(x, "readAnimation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadAttachment(value: js.Any): Self = StObject.set(x, "readAttachment", value.asInstanceOf[js.Any])
+    inline def setReadAttachment(value: js.Any): Self = StObject.set(x, "readAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadCurve(value: js.Any): Self = StObject.set(x, "readCurve", value.asInstanceOf[js.Any])
+    inline def setReadCurve(value: js.Any): Self = StObject.set(x, "readCurve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadFloatArray(value: js.Any): Self = StObject.set(x, "readFloatArray", value.asInstanceOf[js.Any])
+    inline def setReadFloatArray(value: js.Any): Self = StObject.set(x, "readFloatArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadShortArray(value: js.Any): Self = StObject.set(x, "readShortArray", value.asInstanceOf[js.Any])
+    inline def setReadShortArray(value: js.Any): Self = StObject.set(x, "readShortArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadSkeletonData(value: Uint8Array => SkeletonData): Self = StObject.set(x, "readSkeletonData", js.Any.fromFunction1(value))
+    inline def setReadSkeletonData(value: Uint8Array => SkeletonData): Self = StObject.set(x, "readSkeletonData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadSkin(value: js.Any): Self = StObject.set(x, "readSkin", value.asInstanceOf[js.Any])
+    inline def setReadSkin(value: js.Any): Self = StObject.set(x, "readSkin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadVertices(value: js.Any): Self = StObject.set(x, "readVertices", value.asInstanceOf[js.Any])
+    inline def setReadVertices(value: js.Any): Self = StObject.set(x, "readVertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetCurve(value: (CurveTimeline, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setCurve", js.Any.fromFunction6(value))
+    inline def setSetCurve(value: (CurveTimeline, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setCurve", js.Any.fromFunction6(value))
   }
 }

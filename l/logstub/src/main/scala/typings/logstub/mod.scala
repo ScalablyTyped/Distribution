@@ -149,8 +149,7 @@ object mod {
   }
   object LogStub {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       all: /* repeated */ js.Any => Unit,
       assert: /* repeated */ js.Any => Unit,
       child: /* repeated */ js.Any => Pickthisdebuginfowarnerro,
@@ -182,86 +181,59 @@ object mod {
       __obj.asInstanceOf[LogStub]
     }
     
-    @scala.inline
-    implicit class LogStubMutableBuilder[Self <: LogStub] (val x: Self) extends AnyVal {
+    extension [Self <: LogStub](x: Self) {
       
-      @scala.inline
-      def setAll(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
+      inline def setAll(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAssert(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "assert", js.Any.fromFunction1(value))
+      inline def setAssert(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "assert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChild(value: /* repeated */ js.Any => Pickthisdebuginfowarnerro): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+      inline def setChild(value: /* repeated */ js.Any => Pickthisdebuginfowarnerro): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClear(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+      inline def setClear(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCount(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "count", js.Any.fromFunction1(value))
+      inline def setCount(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "count", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCountReset(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "countReset", js.Any.fromFunction1(value))
+      inline def setCountReset(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "countReset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCritical(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "critical", js.Any.fromFunction1(value))
+      inline def setCritical(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "critical", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDir(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "dir", js.Any.fromFunction1(value))
+      inline def setDir(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "dir", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDirxml(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "dirxml", js.Any.fromFunction1(value))
+      inline def setDirxml(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "dirxml", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFatal(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
+      inline def setFatal(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGroup(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
+      inline def setGroup(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGroupCollapsed(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "groupCollapsed", js.Any.fromFunction1(value))
+      inline def setGroupCollapsed(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "groupCollapsed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGroupEnd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "groupEnd", js.Any.fromFunction1(value))
+      inline def setGroupEnd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "groupEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLevel(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "level", js.Any.fromFunction1(value))
+      inline def setLevel(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "level", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSilly(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "silly", js.Any.fromFunction1(value))
+      inline def setSilly(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "silly", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTable(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "table", js.Any.fromFunction1(value))
+      inline def setTable(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "table", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTime(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "time", js.Any.fromFunction1(value))
+      inline def setTime(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "time", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimeEnd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "timeEnd", js.Any.fromFunction1(value))
+      inline def setTimeEnd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "timeEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimeLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "timeLog", js.Any.fromFunction1(value))
+      inline def setTimeLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "timeLog", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrace(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+      inline def setTrace(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerbose(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "verbose", js.Any.fromFunction1(value))
+      inline def setVerbose(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "verbose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
 }

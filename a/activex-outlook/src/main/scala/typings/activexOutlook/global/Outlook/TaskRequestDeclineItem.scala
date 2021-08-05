@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.TaskRequestDeclineItem")
 @js.native
-class TaskRequestDeclineItem protected ()
+/* private */ class TaskRequestDeclineItem ()
   extends StObject
      with typings.activexOutlook.Outlook.TaskRequestDeclineItem

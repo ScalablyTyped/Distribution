@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OnRestartRequiredReason extends StObject
 object OnRestartRequiredReason {
   
-  @scala.inline
-  def app_update: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.app_update = "app_update".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.app_update]
+  inline def app_update: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.app_update = "app_update".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.app_update]
   
-  @scala.inline
-  def os_update: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.os_update = "os_update".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.os_update]
+  inline def os_update: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.os_update = "os_update".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.os_update]
   
-  @scala.inline
-  def periodic: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.periodic = "periodic".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.periodic]
+  inline def periodic: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.periodic = "periodic".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.periodic]
 }

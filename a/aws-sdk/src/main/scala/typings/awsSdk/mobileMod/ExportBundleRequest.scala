@@ -23,28 +23,21 @@ trait ExportBundleRequest extends StObject {
 }
 object ExportBundleRequest {
   
-  @scala.inline
-  def apply(bundleId: BundleId): ExportBundleRequest = {
+  inline def apply(bundleId: BundleId): ExportBundleRequest = {
     val __obj = js.Dynamic.literal(bundleId = bundleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportBundleRequest]
   }
   
-  @scala.inline
-  implicit class ExportBundleRequestMutableBuilder[Self <: ExportBundleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExportBundleRequest](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: BundleId): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: BundleId): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait ValueChangeEnd extends StObject {
 }
 object ValueChangeEnd {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Cancel: Boolean,
     Sh: Worksheet,
     TargetPivotTable: PivotTable,
@@ -32,22 +31,16 @@ object ValueChangeEnd {
     __obj.asInstanceOf[ValueChangeEnd]
   }
   
-  @scala.inline
-  implicit class ValueChangeEndMutableBuilder[Self <: ValueChangeEnd] (val x: Self) extends AnyVal {
+  extension [Self <: ValueChangeEnd](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSh(value: Worksheet): Self = StObject.set(x, "Sh", value.asInstanceOf[js.Any])
+    inline def setSh(value: Worksheet): Self = StObject.set(x, "Sh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPivotTable(value: PivotTable): Self = StObject.set(x, "TargetPivotTable", value.asInstanceOf[js.Any])
+    inline def setTargetPivotTable(value: PivotTable): Self = StObject.set(x, "TargetPivotTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueChangeEnd(value: Double): Self = StObject.set(x, "ValueChangeEnd", value.asInstanceOf[js.Any])
+    inline def setValueChangeEnd(value: Double): Self = StObject.set(x, "ValueChangeEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueChangeStart(value: Double): Self = StObject.set(x, "ValueChangeStart", value.asInstanceOf[js.Any])
+    inline def setValueChangeStart(value: Double): Self = StObject.set(x, "ValueChangeStart", value.asInstanceOf[js.Any])
   }
 }

@@ -12,28 +12,21 @@ trait ListBoxProperties extends StObject {
 }
 object ListBoxProperties {
   
-  @scala.inline
-  def apply(): ListBoxProperties = {
+  inline def apply(): ListBoxProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBoxProperties]
   }
   
-  @scala.inline
-  implicit class ListBoxPropertiesMutableBuilder[Self <: ListBoxProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ListBoxProperties](x: Self) {
     
-    @scala.inline
-    def setSelectedRow(value: Double): Self = StObject.set(x, "selectedRow", value.asInstanceOf[js.Any])
+    inline def setSelectedRow(value: Double): Self = StObject.set(x, "selectedRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedRowUndefined: Self = StObject.set(x, "selectedRow", js.undefined)
+    inline def setSelectedRowUndefined: Self = StObject.set(x, "selectedRow", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

@@ -15,25 +15,19 @@ trait ProxyLocation extends StObject {
 }
 object ProxyLocation {
   
-  @scala.inline
-  def apply(): ProxyLocation = {
+  inline def apply(): ProxyLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProxyLocation]
   }
   
-  @scala.inline
-  implicit class ProxyLocationMutableBuilder[Self <: ProxyLocation] (val x: Self) extends AnyVal {
+  extension [Self <: ProxyLocation](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
     
-    @scala.inline
-    def setPort(value: integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
   }
 }

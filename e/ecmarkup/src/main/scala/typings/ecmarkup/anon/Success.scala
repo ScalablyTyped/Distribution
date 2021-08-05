@@ -14,16 +14,13 @@ trait Success
 }
 object Success {
   
-  @scala.inline
-  def apply(): Success = {
+  inline def apply(): Success = {
     val __obj = js.Dynamic.literal(success = false)
     __obj.asInstanceOf[Success]
   }
   
-  @scala.inline
-  implicit class SuccessMutableBuilder[Self <: Success] (val x: Self) extends AnyVal {
+  extension [Self <: Success](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: `false`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: `false`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

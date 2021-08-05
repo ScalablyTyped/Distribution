@@ -17,7 +17,7 @@ object writableMockMod {
   @js.native
   trait WritableMock extends IWritableMock {
     
-    var _writableState: js.Any = js.native
+    /* private */ var _writableState: js.Any = js.native
     
     @JSName("data")
     var data_WritableMock: js.Array[js.Any] = js.native

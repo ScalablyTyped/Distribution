@@ -16,8 +16,7 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Account: ModelTypeORMAccountModel,
     Session: ModelTypeORMSessionModel,
     User: ModelTypeORMUserModel,
@@ -27,19 +26,14 @@ object User {
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setAccount(value: ModelTypeORMAccountModel): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: ModelTypeORMAccountModel): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: ModelTypeORMSessionModel): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: ModelTypeORMSessionModel): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: ModelTypeORMUserModel): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: ModelTypeORMUserModel): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationRequest(value: ModelTypeORMVerificationRequestModel): Self = StObject.set(x, "VerificationRequest", value.asInstanceOf[js.Any])
+    inline def setVerificationRequest(value: ModelTypeORMVerificationRequestModel): Self = StObject.set(x, "VerificationRequest", value.asInstanceOf[js.Any])
   }
 }

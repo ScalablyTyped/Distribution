@@ -27,25 +27,19 @@ trait SchemaBackendServiceLogConfig extends StObject {
 }
 object SchemaBackendServiceLogConfig {
   
-  @scala.inline
-  def apply(): SchemaBackendServiceLogConfig = {
+  inline def apply(): SchemaBackendServiceLogConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBackendServiceLogConfig]
   }
   
-  @scala.inline
-  implicit class SchemaBackendServiceLogConfigMutableBuilder[Self <: SchemaBackendServiceLogConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBackendServiceLogConfig](x: Self) {
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
   }
 }

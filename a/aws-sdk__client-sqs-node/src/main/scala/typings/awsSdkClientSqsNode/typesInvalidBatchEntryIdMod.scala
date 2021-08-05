@@ -20,17 +20,14 @@ object typesInvalidBatchEntryIdMod {
   }
   object InvalidBatchEntryId {
     
-    @scala.inline
-    def apply(): InvalidBatchEntryId = {
+    inline def apply(): InvalidBatchEntryId = {
       val __obj = js.Dynamic.literal(name = "InvalidBatchEntryId")
       __obj.asInstanceOf[InvalidBatchEntryId]
     }
     
-    @scala.inline
-    implicit class InvalidBatchEntryIdMutableBuilder[Self <: InvalidBatchEntryId] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidBatchEntryId](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidBatchEntryId): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidBatchEntryId): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

@@ -53,69 +53,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdRevisionType extends StObject
 object WdRevisionType {
   
-  @scala.inline
-  def wdNoRevision: `0` = 0.asInstanceOf[`0`]
+  inline def wdNoRevision: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdRevisionCellDeletion: `17` = 17.asInstanceOf[`17`]
+  inline def wdRevisionCellDeletion: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def wdRevisionCellInsertion: `16` = 16.asInstanceOf[`16`]
+  inline def wdRevisionCellInsertion: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def wdRevisionCellMerge: `18` = 18.asInstanceOf[`18`]
+  inline def wdRevisionCellMerge: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def wdRevisionCellSplit: `19` = 19.asInstanceOf[`19`]
+  inline def wdRevisionCellSplit: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def wdRevisionConflict: `7` = 7.asInstanceOf[`7`]
+  inline def wdRevisionConflict: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def wdRevisionConflictDelete: `21` = 21.asInstanceOf[`21`]
+  inline def wdRevisionConflictDelete: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def wdRevisionConflictInsert: `20` = 20.asInstanceOf[`20`]
+  inline def wdRevisionConflictInsert: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def wdRevisionDelete: `2` = 2.asInstanceOf[`2`]
+  inline def wdRevisionDelete: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdRevisionDisplayField: `5` = 5.asInstanceOf[`5`]
+  inline def wdRevisionDisplayField: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdRevisionInsert: `1` = 1.asInstanceOf[`1`]
+  inline def wdRevisionInsert: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdRevisionMovedFrom: `14` = 14.asInstanceOf[`14`]
+  inline def wdRevisionMovedFrom: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def wdRevisionMovedTo: `15` = 15.asInstanceOf[`15`]
+  inline def wdRevisionMovedTo: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def wdRevisionParagraphNumber: `4` = 4.asInstanceOf[`4`]
+  inline def wdRevisionParagraphNumber: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdRevisionParagraphProperty: `10` = 10.asInstanceOf[`10`]
+  inline def wdRevisionParagraphProperty: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def wdRevisionProperty: `3` = 3.asInstanceOf[`3`]
+  inline def wdRevisionProperty: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdRevisionReconcile: `6` = 6.asInstanceOf[`6`]
+  inline def wdRevisionReconcile: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdRevisionReplace: `9` = 9.asInstanceOf[`9`]
+  inline def wdRevisionReplace: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def wdRevisionSectionProperty: `12` = 12.asInstanceOf[`12`]
+  inline def wdRevisionSectionProperty: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def wdRevisionStyle: `8` = 8.asInstanceOf[`8`]
+  inline def wdRevisionStyle: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def wdRevisionStyleDefinition: `13` = 13.asInstanceOf[`13`]
+  inline def wdRevisionStyleDefinition: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def wdRevisionTableProperty: `11` = 11.asInstanceOf[`11`]
+  inline def wdRevisionTableProperty: `11` = 11.asInstanceOf[`11`]
 }

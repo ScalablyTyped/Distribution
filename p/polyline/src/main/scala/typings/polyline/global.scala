@@ -9,6 +9,5 @@ object global {
   @JSGlobal("polyline")
   @js.native
   def polyline: Polyline = js.native
-  @scala.inline
-  def polyline_=(x: Polyline): Unit = js.Dynamic.global.updateDynamic("polyline")(x.asInstanceOf[js.Any])
+  inline def polyline_=(x: Polyline): Unit = js.Dynamic.global.updateDynamic("polyline")(x.asInstanceOf[js.Any])
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileChooserOpenedEventMode extends StObject
 object FileChooserOpenedEventMode {
   
-  @scala.inline
-  def SelectMultiple: selectMultiple = "selectMultiple".asInstanceOf[selectMultiple]
+  inline def SelectMultiple: selectMultiple = "selectMultiple".asInstanceOf[selectMultiple]
   
-  @scala.inline
-  def SelectSingle: selectSingle = "selectSingle".asInstanceOf[selectSingle]
+  inline def SelectSingle: selectSingle = "selectSingle".asInstanceOf[selectSingle]
 }

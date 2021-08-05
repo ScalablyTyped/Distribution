@@ -24,20 +24,16 @@ object tagPickerTypesMod {
   }
   object ITag {
     
-    @scala.inline
-    def apply(key: String | Double, name: String): ITag = {
+    inline def apply(key: String | Double, name: String): ITag = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITag]
     }
     
-    @scala.inline
-    implicit class ITagMutableBuilder[Self <: ITag] (val x: Self) extends AnyVal {
+    extension [Self <: ITag](x: Self) {
       
-      @scala.inline
-      def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,36 +55,27 @@ object tagPickerTypesMod {
   }
   object ITagItemProps {
     
-    @scala.inline
-    def apply(IPickerItemProps: IPickerItemProps[ITag]): ITagItemProps = {
+    inline def apply(IPickerItemProps: IPickerItemProps[ITag]): ITagItemProps = {
       val __obj = js.Dynamic.literal()
       js.Dynamic.global.Object.assign(__obj, IPickerItemProps)
       __obj.asInstanceOf[ITagItemProps]
     }
     
-    @scala.inline
-    implicit class ITagItemPropsMutableBuilder[Self <: ITagItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITagItemProps](x: Self) {
       
-      @scala.inline
-      def setEnableTagFocusInDisabledPicker(value: Boolean): Self = StObject.set(x, "enableTagFocusInDisabledPicker", value.asInstanceOf[js.Any])
+      inline def setEnableTagFocusInDisabledPicker(value: Boolean): Self = StObject.set(x, "enableTagFocusInDisabledPicker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableTagFocusInDisabledPickerUndefined: Self = StObject.set(x, "enableTagFocusInDisabledPicker", js.undefined)
+      inline def setEnableTagFocusInDisabledPickerUndefined: Self = StObject.set(x, "enableTagFocusInDisabledPicker", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[ITagItemStyleProps, ITagItemStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[ITagItemStyleProps, ITagItemStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: ITagItemStyleProps => DeepPartial[ITagItemStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: ITagItemStyleProps => DeepPartial[ITagItemStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -105,35 +92,26 @@ object tagPickerTypesMod {
   }
   object ITagItemStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): ITagItemStyleProps = {
+    inline def apply(theme: ITheme): ITagItemStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITagItemStyleProps]
     }
     
-    @scala.inline
-    implicit class ITagItemStylePropsMutableBuilder[Self <: ITagItemStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITagItemStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,41 +128,30 @@ object tagPickerTypesMod {
   }
   object ITagItemStyles {
     
-    @scala.inline
-    def apply(): ITagItemStyles = {
+    inline def apply(): ITagItemStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITagItemStyles]
     }
     
-    @scala.inline
-    implicit class ITagItemStylesMutableBuilder[Self <: ITagItemStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ITagItemStyles](x: Self) {
       
-      @scala.inline
-      def setClose(value: IStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: IStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseNull: Self = StObject.set(x, "close", null)
+      inline def setCloseNull: Self = StObject.set(x, "close", null)
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setText(value: IStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: IStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextNull: Self = StObject.set(x, "text", null)
+      inline def setTextNull: Self = StObject.set(x, "text", null)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -200,29 +167,22 @@ object tagPickerTypesMod {
   }
   object ITagItemSuggestionProps {
     
-    @scala.inline
-    def apply(): ITagItemSuggestionProps = {
+    inline def apply(): ITagItemSuggestionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITagItemSuggestionProps]
     }
     
-    @scala.inline
-    implicit class ITagItemSuggestionPropsMutableBuilder[Self <: ITagItemSuggestionProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITagItemSuggestionProps](x: Self) {
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[ITagItemSuggestionStyleProps, ITagItemSuggestionStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[ITagItemSuggestionStyleProps, ITagItemSuggestionStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: ITagItemSuggestionStyleProps => DeepPartial[ITagItemSuggestionStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: ITagItemSuggestionStyleProps => DeepPartial[ITagItemSuggestionStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -235,23 +195,18 @@ object tagPickerTypesMod {
   }
   object ITagItemSuggestionStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): ITagItemSuggestionStyleProps = {
+    inline def apply(theme: ITheme): ITagItemSuggestionStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITagItemSuggestionStyleProps]
     }
     
-    @scala.inline
-    implicit class ITagItemSuggestionStylePropsMutableBuilder[Self <: ITagItemSuggestionStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITagItemSuggestionStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -262,23 +217,18 @@ object tagPickerTypesMod {
   }
   object ITagItemSuggestionStyles {
     
-    @scala.inline
-    def apply(): ITagItemSuggestionStyles = {
+    inline def apply(): ITagItemSuggestionStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITagItemSuggestionStyles]
     }
     
-    @scala.inline
-    implicit class ITagItemSuggestionStylesMutableBuilder[Self <: ITagItemSuggestionStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ITagItemSuggestionStyles](x: Self) {
       
-      @scala.inline
-      def setSuggestionTextOverflow(value: IStyle): Self = StObject.set(x, "suggestionTextOverflow", value.asInstanceOf[js.Any])
+      inline def setSuggestionTextOverflow(value: IStyle): Self = StObject.set(x, "suggestionTextOverflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionTextOverflowNull: Self = StObject.set(x, "suggestionTextOverflow", null)
+      inline def setSuggestionTextOverflowNull: Self = StObject.set(x, "suggestionTextOverflow", null)
       
-      @scala.inline
-      def setSuggestionTextOverflowUndefined: Self = StObject.set(x, "suggestionTextOverflow", js.undefined)
+      inline def setSuggestionTextOverflowUndefined: Self = StObject.set(x, "suggestionTextOverflow", js.undefined)
     }
   }
   

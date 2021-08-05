@@ -12,22 +12,17 @@ trait RsaPublicKey extends StObject {
 }
 object RsaPublicKey {
   
-  @scala.inline
-  def apply(key: KeyLike): RsaPublicKey = {
+  inline def apply(key: KeyLike): RsaPublicKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[RsaPublicKey]
   }
   
-  @scala.inline
-  implicit class RsaPublicKeyMutableBuilder[Self <: RsaPublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: RsaPublicKey](x: Self) {
     
-    @scala.inline
-    def setKey(value: KeyLike): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: KeyLike): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

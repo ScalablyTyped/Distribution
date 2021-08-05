@@ -18,7 +18,7 @@ object outputMod {
        with RedrawLine {
     def this(hasStreamColors: LogUpdateOutputStrategyOptions) = this()
     
-    val colors: Colors = js.native
+    /* protected */ val colors: Colors = js.native
     
     /* CompleteClass */
     override def createTaskChain(): TaskChain = js.native
@@ -44,7 +44,7 @@ object outputMod {
     		```
     		*/
     /* protected */ def logUpdate(text: String*): Unit = js.native
-    @JSName("logUpdate")
+    /* protected */ @JSName("logUpdate")
     val logUpdate_Original: LogUpdate = js.native
     
     /* CompleteClass */
@@ -58,7 +58,7 @@ object outputMod {
        with OutputStrategy {
     def this(hasStreamColors: StreamOutputStrategyOptions) = this()
     
-    val colors: Colors = js.native
+    /* protected */ val colors: Colors = js.native
     
     /* CompleteClass */
     override def createTaskChain(): TaskChain = js.native
@@ -75,26 +75,20 @@ object outputMod {
   }
   object LogUpdateOutputStrategyOptions {
     
-    @scala.inline
-    def apply(): LogUpdateOutputStrategyOptions = {
+    inline def apply(): LogUpdateOutputStrategyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogUpdateOutputStrategyOptions]
     }
     
-    @scala.inline
-    implicit class LogUpdateOutputStrategyOptionsMutableBuilder[Self <: LogUpdateOutputStrategyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LogUpdateOutputStrategyOptions](x: Self) {
       
-      @scala.inline
-      def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     }
   }
   
@@ -106,20 +100,16 @@ object outputMod {
   }
   object OutputStrategy {
     
-    @scala.inline
-    def apply(createTaskChain: () => TaskChain, stream: WritableStream): OutputStrategy = {
+    inline def apply(createTaskChain: () => TaskChain, stream: WritableStream): OutputStrategy = {
       val __obj = js.Dynamic.literal(createTaskChain = js.Any.fromFunction0(createTaskChain), stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutputStrategy]
     }
     
-    @scala.inline
-    implicit class OutputStrategyMutableBuilder[Self <: OutputStrategy] (val x: Self) extends AnyVal {
+    extension [Self <: OutputStrategy](x: Self) {
       
-      @scala.inline
-      def setCreateTaskChain(value: () => TaskChain): Self = StObject.set(x, "createTaskChain", js.Any.fromFunction0(value))
+      inline def setCreateTaskChain(value: () => TaskChain): Self = StObject.set(x, "createTaskChain", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,23 +128,18 @@ object outputMod {
   }
   object StreamOutputStrategyOptions {
     
-    @scala.inline
-    def apply(stream: WritableStream): StreamOutputStrategyOptions = {
+    inline def apply(stream: WritableStream): StreamOutputStrategyOptions = {
       val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamOutputStrategyOptions]
     }
     
-    @scala.inline
-    implicit class StreamOutputStrategyOptionsMutableBuilder[Self <: StreamOutputStrategyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StreamOutputStrategyOptions](x: Self) {
       
-      @scala.inline
-      def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
 }

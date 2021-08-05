@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InspectorProps extends StObject
 object InspectorProps {
   
-  @scala.inline
-  def InspectorAsTableProps(): typings.reactInspector.mod.InspectorAsTableProps = {
+  inline def InspectorAsTableProps(): typings.reactInspector.mod.InspectorAsTableProps = {
     val __obj = js.Dynamic.literal(table = true)
     __obj.asInstanceOf[typings.reactInspector.mod.InspectorAsTableProps]
   }
   
-  @scala.inline
-  def InspectorAsTreeProps(): typings.reactInspector.mod.InspectorAsTreeProps = {
+  inline def InspectorAsTreeProps(): typings.reactInspector.mod.InspectorAsTreeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.reactInspector.mod.InspectorAsTreeProps]
   }

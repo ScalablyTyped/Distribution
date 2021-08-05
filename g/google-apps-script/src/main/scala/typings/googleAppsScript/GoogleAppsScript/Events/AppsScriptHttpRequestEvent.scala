@@ -18,8 +18,7 @@ trait AppsScriptHttpRequestEvent extends StObject {
 }
 object AppsScriptHttpRequestEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentLength: Double,
     contextPath: String,
     parameter: js.Object,
@@ -30,22 +29,16 @@ object AppsScriptHttpRequestEvent {
     __obj.asInstanceOf[AppsScriptHttpRequestEvent]
   }
   
-  @scala.inline
-  implicit class AppsScriptHttpRequestEventMutableBuilder[Self <: AppsScriptHttpRequestEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AppsScriptHttpRequestEvent](x: Self) {
     
-    @scala.inline
-    def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
+    inline def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextPath(value: String): Self = StObject.set(x, "contextPath", value.asInstanceOf[js.Any])
+    inline def setContextPath(value: String): Self = StObject.set(x, "contextPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameter(value: js.Object): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: js.Object): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
   }
 }

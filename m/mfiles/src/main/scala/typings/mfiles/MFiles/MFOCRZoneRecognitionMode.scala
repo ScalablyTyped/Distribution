@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFOCRZoneRecognitionMode extends StObject
 object MFOCRZoneRecognitionMode {
   
-  @scala.inline
-  def AutoDetectZones: `2` = 2.asInstanceOf[`2`]
+  inline def AutoDetectZones: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def NoZoneRecognition: `0` = 0.asInstanceOf[`0`]
+  inline def NoZoneRecognition: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def RecognizeSpecifiedZones: `1` = 1.asInstanceOf[`1`]
+  inline def RecognizeSpecifiedZones: `1` = 1.asInstanceOf[`1`]
 }

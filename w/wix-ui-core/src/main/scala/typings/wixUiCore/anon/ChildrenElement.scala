@@ -10,16 +10,13 @@ trait ChildrenElement extends StObject {
 }
 object ChildrenElement {
   
-  @scala.inline
-  def apply(children: typings.react.mod.global.JSX.Element): ChildrenElement = {
+  inline def apply(children: typings.react.mod.global.JSX.Element): ChildrenElement = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildrenElement]
   }
   
-  @scala.inline
-  implicit class ChildrenElementMutableBuilder[Self <: ChildrenElement] (val x: Self) extends AnyVal {
+  extension [Self <: ChildrenElement](x: Self) {
     
-    @scala.inline
-    def setChildren(value: typings.react.mod.global.JSX.Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: typings.react.mod.global.JSX.Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

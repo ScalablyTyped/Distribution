@@ -15,19 +15,15 @@ trait TypeofChart extends StObject {
 }
 object TypeofChart {
   
-  @scala.inline
-  def apply(extend: js.Object => Chart, fn: Chart): TypeofChart = {
+  inline def apply(extend: js.Object => Chart, fn: Chart): TypeofChart = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofChart]
   }
   
-  @scala.inline
-  implicit class TypeofChartMutableBuilder[Self <: TypeofChart] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofChart](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Chart): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Chart): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Chart): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Chart): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

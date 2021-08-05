@@ -30,34 +30,25 @@ trait SchemaListActiveBreakpointsResponse extends StObject {
 }
 object SchemaListActiveBreakpointsResponse {
   
-  @scala.inline
-  def apply(): SchemaListActiveBreakpointsResponse = {
+  inline def apply(): SchemaListActiveBreakpointsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListActiveBreakpointsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListActiveBreakpointsResponseMutableBuilder[Self <: SchemaListActiveBreakpointsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListActiveBreakpointsResponse](x: Self) {
     
-    @scala.inline
-    def setBreakpoints(value: js.Array[SchemaBreakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setBreakpoints(value: js.Array[SchemaBreakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
+    inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
     
-    @scala.inline
-    def setBreakpointsVarargs(value: SchemaBreakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+    inline def setBreakpointsVarargs(value: SchemaBreakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setNextWaitToken(value: String): Self = StObject.set(x, "nextWaitToken", value.asInstanceOf[js.Any])
+    inline def setNextWaitToken(value: String): Self = StObject.set(x, "nextWaitToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextWaitTokenUndefined: Self = StObject.set(x, "nextWaitToken", js.undefined)
+    inline def setNextWaitTokenUndefined: Self = StObject.set(x, "nextWaitToken", js.undefined)
     
-    @scala.inline
-    def setWaitExpired(value: Boolean): Self = StObject.set(x, "waitExpired", value.asInstanceOf[js.Any])
+    inline def setWaitExpired(value: Boolean): Self = StObject.set(x, "waitExpired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitExpiredUndefined: Self = StObject.set(x, "waitExpired", js.undefined)
+    inline def setWaitExpiredUndefined: Self = StObject.set(x, "waitExpired", js.undefined)
   }
 }

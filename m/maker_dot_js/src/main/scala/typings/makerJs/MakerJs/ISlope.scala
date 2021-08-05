@@ -31,31 +31,23 @@ trait ISlope extends StObject {
 }
 object ISlope {
   
-  @scala.inline
-  def apply(hasSlope: Boolean, line: IPathLine): ISlope = {
+  inline def apply(hasSlope: Boolean, line: IPathLine): ISlope = {
     val __obj = js.Dynamic.literal(hasSlope = hasSlope.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISlope]
   }
   
-  @scala.inline
-  implicit class ISlopeMutableBuilder[Self <: ISlope] (val x: Self) extends AnyVal {
+  extension [Self <: ISlope](x: Self) {
     
-    @scala.inline
-    def setHasSlope(value: Boolean): Self = StObject.set(x, "hasSlope", value.asInstanceOf[js.Any])
+    inline def setHasSlope(value: Boolean): Self = StObject.set(x, "hasSlope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: IPathLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: IPathLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlope(value: Double): Self = StObject.set(x, "slope", value.asInstanceOf[js.Any])
+    inline def setSlope(value: Double): Self = StObject.set(x, "slope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlopeUndefined: Self = StObject.set(x, "slope", js.undefined)
+    inline def setSlopeUndefined: Self = StObject.set(x, "slope", js.undefined)
     
-    @scala.inline
-    def setYIntercept(value: Double): Self = StObject.set(x, "yIntercept", value.asInstanceOf[js.Any])
+    inline def setYIntercept(value: Double): Self = StObject.set(x, "yIntercept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYInterceptUndefined: Self = StObject.set(x, "yIntercept", js.undefined)
+    inline def setYInterceptUndefined: Self = StObject.set(x, "yIntercept", js.undefined)
   }
 }

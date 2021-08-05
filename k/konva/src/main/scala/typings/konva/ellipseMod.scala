@@ -52,20 +52,16 @@ object ellipseMod {
   }
   object EllipseConfig {
     
-    @scala.inline
-    def apply(radiusX: Double, radiusY: Double): EllipseConfig = {
+    inline def apply(radiusX: Double, radiusY: Double): EllipseConfig = {
       val __obj = js.Dynamic.literal(radiusX = radiusX.asInstanceOf[js.Any], radiusY = radiusY.asInstanceOf[js.Any])
       __obj.asInstanceOf[EllipseConfig]
     }
     
-    @scala.inline
-    implicit class EllipseConfigMutableBuilder[Self <: EllipseConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EllipseConfig](x: Self) {
       
-      @scala.inline
-      def setRadiusX(value: Double): Self = StObject.set(x, "radiusX", value.asInstanceOf[js.Any])
+      inline def setRadiusX(value: Double): Self = StObject.set(x, "radiusX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusY(value: Double): Self = StObject.set(x, "radiusY", value.asInstanceOf[js.Any])
+      inline def setRadiusY(value: Double): Self = StObject.set(x, "radiusY", value.asInstanceOf[js.Any])
     }
   }
 }

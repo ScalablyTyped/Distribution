@@ -13,22 +13,17 @@ trait `158` extends StObject {
 }
 object `158` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[SetLifecycleEventsEnabledRequest], returnType: Unit): `158` = {
+  inline def apply(paramsType: js.Array[SetLifecycleEventsEnabledRequest], returnType: Unit): `158` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`158`]
   }
   
-  @scala.inline
-  implicit class `158MutableBuilder`[Self <: `158`] (val x: Self) extends AnyVal {
+  extension [Self <: `158`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[SetLifecycleEventsEnabledRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SetLifecycleEventsEnabledRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: SetLifecycleEventsEnabledRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetLifecycleEventsEnabledRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

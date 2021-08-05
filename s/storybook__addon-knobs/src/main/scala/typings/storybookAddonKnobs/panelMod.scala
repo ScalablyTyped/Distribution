@@ -25,14 +25,12 @@ object panelMod {
     @JSImport("@storybook/addon-knobs/dist/components/Panel", "default.defaultProps")
     @js.native
     def defaultProps: KnobPanelProps = js.native
-    @scala.inline
-    def defaultProps_=(x: KnobPanelProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: KnobPanelProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/Panel", "default.propTypes")
     @js.native
     def propTypes: Active = js.native
-    @scala.inline
-    def propTypes_=(x: Active): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: Active): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@storybook/addon-knobs/dist/components/Panel", "DEFAULT_GROUP_ID")
@@ -84,20 +82,16 @@ object panelMod {
   }
   object KnobPanelOptions {
     
-    @scala.inline
-    def apply(): KnobPanelOptions = {
+    inline def apply(): KnobPanelOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KnobPanelOptions]
     }
     
-    @scala.inline
-    implicit class KnobPanelOptionsMutableBuilder[Self <: KnobPanelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KnobPanelOptions](x: Self) {
       
-      @scala.inline
-      def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
+      inline def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
+      inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
     }
   }
   
@@ -111,26 +105,20 @@ object panelMod {
   }
   object KnobPanelProps {
     
-    @scala.inline
-    def apply(active: Boolean, api: PickAPIonoffemitgetQueryP): KnobPanelProps = {
+    inline def apply(active: Boolean, api: PickAPIonoffemitgetQueryP): KnobPanelProps = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any])
       __obj.asInstanceOf[KnobPanelProps]
     }
     
-    @scala.inline
-    implicit class KnobPanelPropsMutableBuilder[Self <: KnobPanelProps] (val x: Self) extends AnyVal {
+    extension [Self <: KnobPanelProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi(value: PickAPIonoffemitgetQueryP): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: PickAPIonoffemitgetQueryP): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnReset(value: js.Object): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
+      inline def setOnReset(value: js.Object): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     }
   }
   
@@ -140,17 +128,14 @@ object panelMod {
   }
   object KnobPanelState {
     
-    @scala.inline
-    def apply(knobs: Record[String, KnobStoreKnob]): KnobPanelState = {
+    inline def apply(knobs: Record[String, KnobStoreKnob]): KnobPanelState = {
       val __obj = js.Dynamic.literal(knobs = knobs.asInstanceOf[js.Any])
       __obj.asInstanceOf[KnobPanelState]
     }
     
-    @scala.inline
-    implicit class KnobPanelStateMutableBuilder[Self <: KnobPanelState] (val x: Self) extends AnyVal {
+    extension [Self <: KnobPanelState](x: Self) {
       
-      @scala.inline
-      def setKnobs(value: Record[String, KnobStoreKnob]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
+      inline def setKnobs(value: Record[String, KnobStoreKnob]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
     }
   }
 }

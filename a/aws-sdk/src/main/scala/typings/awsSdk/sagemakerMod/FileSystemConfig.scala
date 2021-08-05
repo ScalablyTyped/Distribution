@@ -23,31 +23,23 @@ trait FileSystemConfig extends StObject {
 }
 object FileSystemConfig {
   
-  @scala.inline
-  def apply(): FileSystemConfig = {
+  inline def apply(): FileSystemConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileSystemConfig]
   }
   
-  @scala.inline
-  implicit class FileSystemConfigMutableBuilder[Self <: FileSystemConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemConfig](x: Self) {
     
-    @scala.inline
-    def setDefaultGid(value: DefaultGid): Self = StObject.set(x, "DefaultGid", value.asInstanceOf[js.Any])
+    inline def setDefaultGid(value: DefaultGid): Self = StObject.set(x, "DefaultGid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultGidUndefined: Self = StObject.set(x, "DefaultGid", js.undefined)
+    inline def setDefaultGidUndefined: Self = StObject.set(x, "DefaultGid", js.undefined)
     
-    @scala.inline
-    def setDefaultUid(value: DefaultUid): Self = StObject.set(x, "DefaultUid", value.asInstanceOf[js.Any])
+    inline def setDefaultUid(value: DefaultUid): Self = StObject.set(x, "DefaultUid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUidUndefined: Self = StObject.set(x, "DefaultUid", js.undefined)
+    inline def setDefaultUidUndefined: Self = StObject.set(x, "DefaultUid", js.undefined)
     
-    @scala.inline
-    def setMountPath(value: MountPath): Self = StObject.set(x, "MountPath", value.asInstanceOf[js.Any])
+    inline def setMountPath(value: MountPath): Self = StObject.set(x, "MountPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountPathUndefined: Self = StObject.set(x, "MountPath", js.undefined)
+    inline def setMountPathUndefined: Self = StObject.set(x, "MountPath", js.undefined)
   }
 }

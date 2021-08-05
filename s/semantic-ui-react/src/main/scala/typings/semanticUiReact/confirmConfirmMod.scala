@@ -39,8 +39,7 @@ object confirmConfirmMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object ConfirmProps {
     
-    @scala.inline
-    def apply(): ConfirmProps = {
+    inline def apply(): ConfirmProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfirmProps]
     }
@@ -86,52 +85,40 @@ object confirmConfirmMod extends Shortcut {
   }
   object StrictConfirmProps {
     
-    @scala.inline
-    def apply(): StrictConfirmProps = {
+    inline def apply(): StrictConfirmProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictConfirmProps]
     }
     
-    @scala.inline
-    implicit class StrictConfirmPropsMutableBuilder[Self <: StrictConfirmProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictConfirmProps](x: Self) {
       
-      @scala.inline
-      def setCancelButton(value: SemanticShorthandItem[ButtonProps]): Self = StObject.set(x, "cancelButton", value.asInstanceOf[js.Any])
+      inline def setCancelButton(value: SemanticShorthandItem[ButtonProps]): Self = StObject.set(x, "cancelButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelButtonFunction3(
+      inline def setCancelButtonFunction3(
         value: (/* component */ ElementType[ButtonProps], ButtonProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "cancelButton", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCancelButtonUndefined: Self = StObject.set(x, "cancelButton", js.undefined)
+      inline def setCancelButtonUndefined: Self = StObject.set(x, "cancelButton", js.undefined)
       
-      @scala.inline
-      def setConfirmButton(value: SemanticShorthandItem[ButtonProps]): Self = StObject.set(x, "confirmButton", value.asInstanceOf[js.Any])
+      inline def setConfirmButton(value: SemanticShorthandItem[ButtonProps]): Self = StObject.set(x, "confirmButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmButtonFunction3(
+      inline def setConfirmButtonFunction3(
         value: (/* component */ ElementType[ButtonProps], ButtonProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "confirmButton", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setConfirmButtonUndefined: Self = StObject.set(x, "confirmButton", js.undefined)
+      inline def setConfirmButtonUndefined: Self = StObject.set(x, "confirmButton", js.undefined)
       
-      @scala.inline
-      def setOnCancel(
+      inline def setOnCancel(
         value: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* data */ ConfirmProps) => Unit
       ): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnConfirm(
+      inline def setOnConfirm(
         value: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* data */ ConfirmProps) => Unit
       ): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
+      inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     }
   }
   

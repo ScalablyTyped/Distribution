@@ -13,22 +13,17 @@ trait LoggerDefinitionVersion extends StObject {
 }
 object LoggerDefinitionVersion {
   
-  @scala.inline
-  def apply(): LoggerDefinitionVersion = {
+  inline def apply(): LoggerDefinitionVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoggerDefinitionVersion]
   }
   
-  @scala.inline
-  implicit class LoggerDefinitionVersionMutableBuilder[Self <: LoggerDefinitionVersion] (val x: Self) extends AnyVal {
+  extension [Self <: LoggerDefinitionVersion](x: Self) {
     
-    @scala.inline
-    def setLoggers(value: listOfLogger): Self = StObject.set(x, "Loggers", value.asInstanceOf[js.Any])
+    inline def setLoggers(value: listOfLogger): Self = StObject.set(x, "Loggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggersUndefined: Self = StObject.set(x, "Loggers", js.undefined)
+    inline def setLoggersUndefined: Self = StObject.set(x, "Loggers", js.undefined)
     
-    @scala.inline
-    def setLoggersVarargs(value: Logger*): Self = StObject.set(x, "Loggers", js.Array(value :_*))
+    inline def setLoggersVarargs(value: Logger*): Self = StObject.set(x, "Loggers", js.Array(value :_*))
   }
 }

@@ -14,19 +14,15 @@ trait IDirectionsErrorEventArgs extends StObject {
 }
 object IDirectionsErrorEventArgs {
   
-  @scala.inline
-  def apply(message: String, responseCode: RouteResponseCode): IDirectionsErrorEventArgs = {
+  inline def apply(message: String, responseCode: RouteResponseCode): IDirectionsErrorEventArgs = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], responseCode = responseCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDirectionsErrorEventArgs]
   }
   
-  @scala.inline
-  implicit class IDirectionsErrorEventArgsMutableBuilder[Self <: IDirectionsErrorEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IDirectionsErrorEventArgs](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCode(value: RouteResponseCode): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
+    inline def setResponseCode(value: RouteResponseCode): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
   }
 }

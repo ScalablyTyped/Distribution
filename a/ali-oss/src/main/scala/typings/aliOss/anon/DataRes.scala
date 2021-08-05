@@ -14,19 +14,15 @@ trait DataRes extends StObject {
 }
 object DataRes {
   
-  @scala.inline
-  def apply(data: StyleData, res: NormalSuccessResponse): DataRes = {
+  inline def apply(data: StyleData, res: NormalSuccessResponse): DataRes = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRes]
   }
   
-  @scala.inline
-  implicit class DataResMutableBuilder[Self <: DataRes] (val x: Self) extends AnyVal {
+  extension [Self <: DataRes](x: Self) {
     
-    @scala.inline
-    def setData(value: StyleData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StyleData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

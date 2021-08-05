@@ -28,8 +28,7 @@ trait UpdateProxySessionRequest extends StObject {
 }
 object UpdateProxySessionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Capabilities: CapabilityList,
     ProxySessionId: NonEmptyString128,
     VoiceConnectorId: NonEmptyString128
@@ -38,25 +37,18 @@ object UpdateProxySessionRequest {
     __obj.asInstanceOf[UpdateProxySessionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateProxySessionRequestMutableBuilder[Self <: UpdateProxySessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateProxySessionRequest](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: CapabilityList): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: CapabilityList): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
     
-    @scala.inline
-    def setExpiryMinutes(value: PositiveInteger): Self = StObject.set(x, "ExpiryMinutes", value.asInstanceOf[js.Any])
+    inline def setExpiryMinutes(value: PositiveInteger): Self = StObject.set(x, "ExpiryMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryMinutesUndefined: Self = StObject.set(x, "ExpiryMinutes", js.undefined)
+    inline def setExpiryMinutesUndefined: Self = StObject.set(x, "ExpiryMinutes", js.undefined)
     
-    @scala.inline
-    def setProxySessionId(value: NonEmptyString128): Self = StObject.set(x, "ProxySessionId", value.asInstanceOf[js.Any])
+    inline def setProxySessionId(value: NonEmptyString128): Self = StObject.set(x, "ProxySessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString128): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectorId(value: NonEmptyString128): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }
 }

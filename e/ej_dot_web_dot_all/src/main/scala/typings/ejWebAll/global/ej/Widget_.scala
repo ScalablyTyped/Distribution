@@ -18,13 +18,11 @@ object Widget_ {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(widget: typings.ejWebAll.ej.Widget_): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(widget.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def extend(widget: typings.ejWebAll.ej.Widget_): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(widget.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
   @JSGlobal("ej.Widget.fn")
   @js.native
   def fn: typings.ejWebAll.ej.Widget_ = js.native
-  @scala.inline
-  def fn_=(x: typings.ejWebAll.ej.Widget_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.ejWebAll.ej.Widget_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

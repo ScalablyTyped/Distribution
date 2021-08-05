@@ -12,13 +12,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[ValueType](
+  inline def default[ValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     testFunction: js.Function2[/* element */ ValueType, /* index */ Double, Boolean | js.Thenable[Boolean]]
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], testFunction.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def default[ValueType](
+  inline def default[ValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     testFunction: js.Function2[/* element */ ValueType, /* index */ Double, Boolean | js.Thenable[Boolean]],
     options: Options

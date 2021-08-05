@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServerExtType extends StObject
 object ServerExtType {
   
-  @scala.inline
-  def onPostStart: typings.hapiHapi.hapiHapiStrings.onPostStart = "onPostStart".asInstanceOf[typings.hapiHapi.hapiHapiStrings.onPostStart]
+  inline def onPostStart: typings.hapiHapi.hapiHapiStrings.onPostStart = "onPostStart".asInstanceOf[typings.hapiHapi.hapiHapiStrings.onPostStart]
   
-  @scala.inline
-  def onPostStop: typings.hapiHapi.hapiHapiStrings.onPostStop = "onPostStop".asInstanceOf[typings.hapiHapi.hapiHapiStrings.onPostStop]
+  inline def onPostStop: typings.hapiHapi.hapiHapiStrings.onPostStop = "onPostStop".asInstanceOf[typings.hapiHapi.hapiHapiStrings.onPostStop]
   
-  @scala.inline
-  def onPreStart: typings.hapiHapi.hapiHapiStrings.onPreStart = "onPreStart".asInstanceOf[typings.hapiHapi.hapiHapiStrings.onPreStart]
+  inline def onPreStart: typings.hapiHapi.hapiHapiStrings.onPreStart = "onPreStart".asInstanceOf[typings.hapiHapi.hapiHapiStrings.onPreStart]
   
-  @scala.inline
-  def onPreStop: typings.hapiHapi.hapiHapiStrings.onPreStop = "onPreStop".asInstanceOf[typings.hapiHapi.hapiHapiStrings.onPreStop]
+  inline def onPreStop: typings.hapiHapi.hapiHapiStrings.onPreStop = "onPreStop".asInstanceOf[typings.hapiHapi.hapiHapiStrings.onPreStop]
 }

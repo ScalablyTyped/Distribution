@@ -14,7 +14,7 @@ object mod {
   @js.native
   class CssSelectorParser () extends StObject {
     
-    var attrEqualityMods: StringDictionary[`true`] = js.native
+    /* protected */ var attrEqualityMods: StringDictionary[`true`] = js.native
     
     def disableSubstitutes(): this.type = js.native
     
@@ -22,7 +22,7 @@ object mod {
     
     def parse(str: String): Selector = js.native
     
-    var pseudos: StringDictionary[PseudoSelectorType] = js.native
+    /* protected */ var pseudos: StringDictionary[PseudoSelectorType] = js.native
     
     def registerAttrEqualityMods(mods: String*): this.type = js.native
     
@@ -34,9 +34,9 @@ object mod {
     
     def render(path: Selector): String = js.native
     
-    var ruleNestingOperators: StringDictionary[`true`] = js.native
+    /* protected */ var ruleNestingOperators: StringDictionary[`true`] = js.native
     
-    var substitutesEnabled: Boolean = js.native
+    /* protected */ var substitutesEnabled: Boolean = js.native
     
     def unregisterAttrEqualityMods(mods: String*): this.type = js.native
     

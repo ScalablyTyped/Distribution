@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableChangeType extends StObject
 object TableChangeType {
   
-  @scala.inline
-  def cellEdit: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.cellEdit = "cellEdit".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.cellEdit]
+  inline def cellEdit: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.cellEdit = "cellEdit".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.cellEdit]
   
-  @scala.inline
-  def filter: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.filter = "filter".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.filter]
+  inline def filter: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.filter = "filter".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.filter]
   
-  @scala.inline
-  def pagination: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.pagination = "pagination".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.pagination]
+  inline def pagination: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.pagination = "pagination".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.pagination]
   
-  @scala.inline
-  def sort: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.sort = "sort".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.sort]
+  inline def sort: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.sort = "sort".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.sort]
 }

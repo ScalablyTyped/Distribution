@@ -24,21 +24,17 @@ object applications {
   }
   object IApplication {
     
-    @scala.inline
-    def apply(id: String, name: String): IApplication = {
+    inline def apply(id: String, name: String): IApplication = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("object")("application")
       __obj.asInstanceOf[IApplication]
     }
     
-    @scala.inline
-    implicit class IApplicationMutableBuilder[Self <: IApplication] (val x: Self) extends AnyVal {
+    extension [Self <: IApplication](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: application): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: application): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }
   }
 }

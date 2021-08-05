@@ -11,22 +11,17 @@ trait DynamicLinkStats extends StObject {
 }
 object DynamicLinkStats {
   
-  @scala.inline
-  def apply(): DynamicLinkStats = {
+  inline def apply(): DynamicLinkStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynamicLinkStats]
   }
   
-  @scala.inline
-  implicit class DynamicLinkStatsMutableBuilder[Self <: DynamicLinkStats] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicLinkStats](x: Self) {
     
-    @scala.inline
-    def setLinkEventStats(value: js.Array[DynamicLinkEventStat]): Self = StObject.set(x, "linkEventStats", value.asInstanceOf[js.Any])
+    inline def setLinkEventStats(value: js.Array[DynamicLinkEventStat]): Self = StObject.set(x, "linkEventStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkEventStatsUndefined: Self = StObject.set(x, "linkEventStats", js.undefined)
+    inline def setLinkEventStatsUndefined: Self = StObject.set(x, "linkEventStats", js.undefined)
     
-    @scala.inline
-    def setLinkEventStatsVarargs(value: DynamicLinkEventStat*): Self = StObject.set(x, "linkEventStats", js.Array(value :_*))
+    inline def setLinkEventStatsVarargs(value: DynamicLinkEventStat*): Self = StObject.set(x, "linkEventStats", js.Array(value :_*))
   }
 }

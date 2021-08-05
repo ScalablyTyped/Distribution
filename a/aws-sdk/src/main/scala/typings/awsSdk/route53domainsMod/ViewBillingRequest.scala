@@ -28,37 +28,27 @@ trait ViewBillingRequest extends StObject {
 }
 object ViewBillingRequest {
   
-  @scala.inline
-  def apply(): ViewBillingRequest = {
+  inline def apply(): ViewBillingRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewBillingRequest]
   }
   
-  @scala.inline
-  implicit class ViewBillingRequestMutableBuilder[Self <: ViewBillingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ViewBillingRequest](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Timestamp): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Timestamp): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
     
-    @scala.inline
-    def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setStart(value: Timestamp): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Timestamp): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
   }
 }

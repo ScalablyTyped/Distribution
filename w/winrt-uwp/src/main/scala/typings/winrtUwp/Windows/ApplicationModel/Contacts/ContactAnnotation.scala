@@ -31,8 +31,7 @@ trait ContactAnnotation extends StObject {
 }
 object ContactAnnotation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotationListId: String,
     contactId: String,
     id: String,
@@ -45,28 +44,20 @@ object ContactAnnotation {
     __obj.asInstanceOf[ContactAnnotation]
   }
   
-  @scala.inline
-  implicit class ContactAnnotationMutableBuilder[Self <: ContactAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: ContactAnnotation](x: Self) {
     
-    @scala.inline
-    def setAnnotationListId(value: String): Self = StObject.set(x, "annotationListId", value.asInstanceOf[js.Any])
+    inline def setAnnotationListId(value: String): Self = StObject.set(x, "annotationListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
+    inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+    inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderProperties(value: ValueSet): Self = StObject.set(x, "providerProperties", value.asInstanceOf[js.Any])
+    inline def setProviderProperties(value: ValueSet): Self = StObject.set(x, "providerProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteId(value: String): Self = StObject.set(x, "remoteId", value.asInstanceOf[js.Any])
+    inline def setRemoteId(value: String): Self = StObject.set(x, "remoteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedOperations(value: ContactAnnotationOperations): Self = StObject.set(x, "supportedOperations", value.asInstanceOf[js.Any])
+    inline def setSupportedOperations(value: ContactAnnotationOperations): Self = StObject.set(x, "supportedOperations", value.asInstanceOf[js.Any])
   }
 }

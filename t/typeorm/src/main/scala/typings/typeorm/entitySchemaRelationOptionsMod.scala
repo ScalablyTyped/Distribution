@@ -112,117 +112,81 @@ object entitySchemaRelationOptionsMod {
   }
   object EntitySchemaRelationOptions {
     
-    @scala.inline
-    def apply(target: js.Function | String, `type`: RelationType): EntitySchemaRelationOptions = {
+    inline def apply(target: js.Function | String, `type`: RelationType): EntitySchemaRelationOptions = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntitySchemaRelationOptions]
     }
     
-    @scala.inline
-    implicit class EntitySchemaRelationOptionsMutableBuilder[Self <: EntitySchemaRelationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EntitySchemaRelationOptions](x: Self) {
       
-      @scala.inline
-      def setCascade(value: Boolean | (js.Array[insert | update | remove | `soft-remove` | recover])): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
+      inline def setCascade(value: Boolean | (js.Array[insert | update | remove | `soft-remove` | recover])): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
+      inline def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
       
-      @scala.inline
-      def setCascadeVarargs(value: (insert | update | remove | `soft-remove` | recover)*): Self = StObject.set(x, "cascade", js.Array(value :_*))
+      inline def setCascadeVarargs(value: (insert | update | remove | `soft-remove` | recover)*): Self = StObject.set(x, "cascade", js.Array(value :_*))
       
-      @scala.inline
-      def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDeferrable(value: DeferrableType): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
+      inline def setDeferrable(value: DeferrableType): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
+      inline def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
       
-      @scala.inline
-      def setEager(value: Boolean): Self = StObject.set(x, "eager", value.asInstanceOf[js.Any])
+      inline def setEager(value: Boolean): Self = StObject.set(x, "eager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEagerUndefined: Self = StObject.set(x, "eager", js.undefined)
+      inline def setEagerUndefined: Self = StObject.set(x, "eager", js.undefined)
       
-      @scala.inline
-      def setInverseSide(value: String): Self = StObject.set(x, "inverseSide", value.asInstanceOf[js.Any])
+      inline def setInverseSide(value: String): Self = StObject.set(x, "inverseSide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseSideUndefined: Self = StObject.set(x, "inverseSide", js.undefined)
+      inline def setInverseSideUndefined: Self = StObject.set(x, "inverseSide", js.undefined)
       
-      @scala.inline
-      def setJoinColumn(value: Boolean | JoinColumnOptions | js.Array[JoinColumnOptions]): Self = StObject.set(x, "joinColumn", value.asInstanceOf[js.Any])
+      inline def setJoinColumn(value: Boolean | JoinColumnOptions | js.Array[JoinColumnOptions]): Self = StObject.set(x, "joinColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoinColumnUndefined: Self = StObject.set(x, "joinColumn", js.undefined)
+      inline def setJoinColumnUndefined: Self = StObject.set(x, "joinColumn", js.undefined)
       
-      @scala.inline
-      def setJoinColumnVarargs(value: JoinColumnOptions*): Self = StObject.set(x, "joinColumn", js.Array(value :_*))
+      inline def setJoinColumnVarargs(value: JoinColumnOptions*): Self = StObject.set(x, "joinColumn", js.Array(value :_*))
       
-      @scala.inline
-      def setJoinTable(value: Boolean | JoinTableOptions | JoinTableMultipleColumnsOptions): Self = StObject.set(x, "joinTable", value.asInstanceOf[js.Any])
+      inline def setJoinTable(value: Boolean | JoinTableOptions | JoinTableMultipleColumnsOptions): Self = StObject.set(x, "joinTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoinTableUndefined: Self = StObject.set(x, "joinTable", js.undefined)
+      inline def setJoinTableUndefined: Self = StObject.set(x, "joinTable", js.undefined)
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
-      @scala.inline
-      def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+      inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
+      inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
       
-      @scala.inline
-      def setOnDelete(value: OnDeleteType): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
+      inline def setOnDelete(value: OnDeleteType): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
+      inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: OnUpdateType): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: OnUpdateType): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setPersistence(value: Boolean): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
+      inline def setPersistence(value: Boolean): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistenceUndefined: Self = StObject.set(x, "persistence", js.undefined)
+      inline def setPersistenceUndefined: Self = StObject.set(x, "persistence", js.undefined)
       
-      @scala.inline
-      def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+      inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeChildren(value: Boolean): Self = StObject.set(x, "treeChildren", value.asInstanceOf[js.Any])
+      inline def setTreeChildren(value: Boolean): Self = StObject.set(x, "treeChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeChildrenUndefined: Self = StObject.set(x, "treeChildren", js.undefined)
+      inline def setTreeChildrenUndefined: Self = StObject.set(x, "treeChildren", js.undefined)
       
-      @scala.inline
-      def setTreeParent(value: Boolean): Self = StObject.set(x, "treeParent", value.asInstanceOf[js.Any])
+      inline def setTreeParent(value: Boolean): Self = StObject.set(x, "treeParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeParentUndefined: Self = StObject.set(x, "treeParent", js.undefined)
+      inline def setTreeParentUndefined: Self = StObject.set(x, "treeParent", js.undefined)
       
-      @scala.inline
-      def setType(value: RelationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: RelationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

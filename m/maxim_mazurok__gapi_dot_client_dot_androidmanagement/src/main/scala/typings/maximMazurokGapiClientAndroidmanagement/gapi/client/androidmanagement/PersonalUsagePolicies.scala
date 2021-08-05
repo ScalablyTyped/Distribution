@@ -26,55 +26,39 @@ trait PersonalUsagePolicies extends StObject {
 }
 object PersonalUsagePolicies {
   
-  @scala.inline
-  def apply(): PersonalUsagePolicies = {
+  inline def apply(): PersonalUsagePolicies = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersonalUsagePolicies]
   }
   
-  @scala.inline
-  implicit class PersonalUsagePoliciesMutableBuilder[Self <: PersonalUsagePolicies] (val x: Self) extends AnyVal {
+  extension [Self <: PersonalUsagePolicies](x: Self) {
     
-    @scala.inline
-    def setAccountTypesWithManagementDisabled(value: js.Array[String]): Self = StObject.set(x, "accountTypesWithManagementDisabled", value.asInstanceOf[js.Any])
+    inline def setAccountTypesWithManagementDisabled(value: js.Array[String]): Self = StObject.set(x, "accountTypesWithManagementDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountTypesWithManagementDisabledUndefined: Self = StObject.set(x, "accountTypesWithManagementDisabled", js.undefined)
+    inline def setAccountTypesWithManagementDisabledUndefined: Self = StObject.set(x, "accountTypesWithManagementDisabled", js.undefined)
     
-    @scala.inline
-    def setAccountTypesWithManagementDisabledVarargs(value: String*): Self = StObject.set(x, "accountTypesWithManagementDisabled", js.Array(value :_*))
+    inline def setAccountTypesWithManagementDisabledVarargs(value: String*): Self = StObject.set(x, "accountTypesWithManagementDisabled", js.Array(value :_*))
     
-    @scala.inline
-    def setCameraDisabled(value: Boolean): Self = StObject.set(x, "cameraDisabled", value.asInstanceOf[js.Any])
+    inline def setCameraDisabled(value: Boolean): Self = StObject.set(x, "cameraDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraDisabledUndefined: Self = StObject.set(x, "cameraDisabled", js.undefined)
+    inline def setCameraDisabledUndefined: Self = StObject.set(x, "cameraDisabled", js.undefined)
     
-    @scala.inline
-    def setMaxDaysWithWorkOff(value: Double): Self = StObject.set(x, "maxDaysWithWorkOff", value.asInstanceOf[js.Any])
+    inline def setMaxDaysWithWorkOff(value: Double): Self = StObject.set(x, "maxDaysWithWorkOff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDaysWithWorkOffUndefined: Self = StObject.set(x, "maxDaysWithWorkOff", js.undefined)
+    inline def setMaxDaysWithWorkOffUndefined: Self = StObject.set(x, "maxDaysWithWorkOff", js.undefined)
     
-    @scala.inline
-    def setPersonalApplications(value: js.Array[PersonalApplicationPolicy]): Self = StObject.set(x, "personalApplications", value.asInstanceOf[js.Any])
+    inline def setPersonalApplications(value: js.Array[PersonalApplicationPolicy]): Self = StObject.set(x, "personalApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonalApplicationsUndefined: Self = StObject.set(x, "personalApplications", js.undefined)
+    inline def setPersonalApplicationsUndefined: Self = StObject.set(x, "personalApplications", js.undefined)
     
-    @scala.inline
-    def setPersonalApplicationsVarargs(value: PersonalApplicationPolicy*): Self = StObject.set(x, "personalApplications", js.Array(value :_*))
+    inline def setPersonalApplicationsVarargs(value: PersonalApplicationPolicy*): Self = StObject.set(x, "personalApplications", js.Array(value :_*))
     
-    @scala.inline
-    def setPersonalPlayStoreMode(value: String): Self = StObject.set(x, "personalPlayStoreMode", value.asInstanceOf[js.Any])
+    inline def setPersonalPlayStoreMode(value: String): Self = StObject.set(x, "personalPlayStoreMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonalPlayStoreModeUndefined: Self = StObject.set(x, "personalPlayStoreMode", js.undefined)
+    inline def setPersonalPlayStoreModeUndefined: Self = StObject.set(x, "personalPlayStoreMode", js.undefined)
     
-    @scala.inline
-    def setScreenCaptureDisabled(value: Boolean): Self = StObject.set(x, "screenCaptureDisabled", value.asInstanceOf[js.Any])
+    inline def setScreenCaptureDisabled(value: Boolean): Self = StObject.set(x, "screenCaptureDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenCaptureDisabledUndefined: Self = StObject.set(x, "screenCaptureDisabled", js.undefined)
+    inline def setScreenCaptureDisabledUndefined: Self = StObject.set(x, "screenCaptureDisabled", js.undefined)
   }
 }

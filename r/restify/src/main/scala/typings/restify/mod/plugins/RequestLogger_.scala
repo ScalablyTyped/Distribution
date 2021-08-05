@@ -16,37 +16,27 @@ trait RequestLogger_ extends StObject {
 }
 object RequestLogger_ {
   
-  @scala.inline
-  def apply(): RequestLogger_ = {
+  inline def apply(): RequestLogger_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestLogger_]
   }
   
-  @scala.inline
-  implicit class RequestLogger_MutableBuilder[Self <: RequestLogger_] (val x: Self) extends AnyVal {
+  extension [Self <: RequestLogger_](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setSerializers(value: js.Any): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
+    inline def setSerializers(value: js.Any): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
+    inline def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
   }
 }

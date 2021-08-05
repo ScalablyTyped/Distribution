@@ -10,16 +10,13 @@ trait CanPullDown extends StObject {
 }
 object CanPullDown {
   
-  @scala.inline
-  def apply(canPullDown: Boolean): CanPullDown = {
+  inline def apply(canPullDown: Boolean): CanPullDown = {
     val __obj = js.Dynamic.literal(canPullDown = canPullDown.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanPullDown]
   }
   
-  @scala.inline
-  implicit class CanPullDownMutableBuilder[Self <: CanPullDown] (val x: Self) extends AnyVal {
+  extension [Self <: CanPullDown](x: Self) {
     
-    @scala.inline
-    def setCanPullDown(value: Boolean): Self = StObject.set(x, "canPullDown", value.asInstanceOf[js.Any])
+    inline def setCanPullDown(value: Boolean): Self = StObject.set(x, "canPullDown", value.asInstanceOf[js.Any])
   }
 }

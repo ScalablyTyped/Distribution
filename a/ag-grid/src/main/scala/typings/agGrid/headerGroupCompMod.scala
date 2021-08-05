@@ -26,18 +26,18 @@ object headerGroupCompMod {
     
     /* private */ def addTouchAndClickListeners(eElement: js.Any, action: js.Any): js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var eCloseIcon: js.Any = js.native
+    /* private */ var eCloseIcon: js.Any = js.native
     
-    var eOpenIcon: js.Any = js.native
+    /* private */ var eOpenIcon: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     @JSName("init")
     def init_MHeaderGroupComp(params: IHeaderGroupParams): Unit = js.native
     
-    var params: js.Any = js.native
+    /* private */ var params: js.Any = js.native
     
     /* private */ def setupExpandIcons(): js.Any = js.native
     
@@ -55,8 +55,7 @@ object headerGroupCompMod {
     @JSImport("ag-grid/dist/lib/headerRendering/headerGroup/headerGroupComp", "HeaderGroupComp.TEMPLATE")
     @js.native
     def TEMPLATE: String = js.native
-    @scala.inline
-    def TEMPLATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def TEMPLATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
   trait IHeaderGroup extends StObject
@@ -67,8 +66,7 @@ object headerGroupCompMod {
        with IComponent[IHeaderGroupParams]
   object IHeaderGroupComp {
     
-    @scala.inline
-    def apply(getGui: () => HTMLElement): IHeaderGroupComp = {
+    inline def apply(getGui: () => HTMLElement): IHeaderGroupComp = {
       val __obj = js.Dynamic.literal(getGui = js.Any.fromFunction0(getGui))
       __obj.asInstanceOf[IHeaderGroupComp]
     }
@@ -90,8 +88,7 @@ object headerGroupCompMod {
   }
   object IHeaderGroupParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       api: GridApi,
       columnApi: ColumnApi,
       columnGroup: ColumnGroup,
@@ -103,26 +100,19 @@ object headerGroupCompMod {
       __obj.asInstanceOf[IHeaderGroupParams]
     }
     
-    @scala.inline
-    implicit class IHeaderGroupParamsMutableBuilder[Self <: IHeaderGroupParams] (val x: Self) extends AnyVal {
+    extension [Self <: IHeaderGroupParams](x: Self) {
       
-      @scala.inline
-      def setApi(value: GridApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: GridApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnApi(value: ColumnApi): Self = StObject.set(x, "columnApi", value.asInstanceOf[js.Any])
+      inline def setColumnApi(value: ColumnApi): Self = StObject.set(x, "columnApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnGroup(value: ColumnGroup): Self = StObject.set(x, "columnGroup", value.asInstanceOf[js.Any])
+      inline def setColumnGroup(value: ColumnGroup): Self = StObject.set(x, "columnGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetExpanded(value: Boolean => Unit): Self = StObject.set(x, "setExpanded", js.Any.fromFunction1(value))
+      inline def setSetExpanded(value: Boolean => Unit): Self = StObject.set(x, "setExpanded", js.Any.fromFunction1(value))
     }
   }
 }

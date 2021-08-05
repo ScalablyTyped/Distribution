@@ -10,19 +10,15 @@ trait ModifyClusterMaintenanceResult extends StObject {
 }
 object ModifyClusterMaintenanceResult {
   
-  @scala.inline
-  def apply(): ModifyClusterMaintenanceResult = {
+  inline def apply(): ModifyClusterMaintenanceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyClusterMaintenanceResult]
   }
   
-  @scala.inline
-  implicit class ModifyClusterMaintenanceResultMutableBuilder[Self <: ModifyClusterMaintenanceResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyClusterMaintenanceResult](x: Self) {
     
-    @scala.inline
-    def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
   }
 }

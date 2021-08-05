@@ -25,6 +25,5 @@ object GoogleAuth {
   @JSImport("google-gax", "GoogleAuth.DefaultTransporter")
   @js.native
   def DefaultTransporter: TypeofDefaultTransporter = js.native
-  @scala.inline
-  def DefaultTransporter_=(x: TypeofDefaultTransporter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTransporter")(x.asInstanceOf[js.Any])
+  inline def DefaultTransporter_=(x: TypeofDefaultTransporter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTransporter")(x.asInstanceOf[js.Any])
 }

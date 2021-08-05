@@ -39,46 +39,33 @@ trait SchemaDeepLink extends StObject {
 }
 object SchemaDeepLink {
   
-  @scala.inline
-  def apply(): SchemaDeepLink = {
+  inline def apply(): SchemaDeepLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeepLink]
   }
   
-  @scala.inline
-  implicit class SchemaDeepLinkMutableBuilder[Self <: SchemaDeepLink] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeepLink](x: Self) {
     
-    @scala.inline
-    def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
+    inline def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppUrlUndefined: Self = StObject.set(x, "appUrl", js.undefined)
+    inline def setAppUrlUndefined: Self = StObject.set(x, "appUrl", js.undefined)
     
-    @scala.inline
-    def setFallbackUrl(value: String): Self = StObject.set(x, "fallbackUrl", value.asInstanceOf[js.Any])
+    inline def setFallbackUrl(value: String): Self = StObject.set(x, "fallbackUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackUrlUndefined: Self = StObject.set(x, "fallbackUrl", js.undefined)
+    inline def setFallbackUrlUndefined: Self = StObject.set(x, "fallbackUrl", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMobileApp(value: SchemaMobileApp): Self = StObject.set(x, "mobileApp", value.asInstanceOf[js.Any])
+    inline def setMobileApp(value: SchemaMobileApp): Self = StObject.set(x, "mobileApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileAppUndefined: Self = StObject.set(x, "mobileApp", js.undefined)
+    inline def setMobileAppUndefined: Self = StObject.set(x, "mobileApp", js.undefined)
     
-    @scala.inline
-    def setRemarketingListIds(value: js.Array[String]): Self = StObject.set(x, "remarketingListIds", value.asInstanceOf[js.Any])
+    inline def setRemarketingListIds(value: js.Array[String]): Self = StObject.set(x, "remarketingListIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemarketingListIdsUndefined: Self = StObject.set(x, "remarketingListIds", js.undefined)
+    inline def setRemarketingListIdsUndefined: Self = StObject.set(x, "remarketingListIds", js.undefined)
     
-    @scala.inline
-    def setRemarketingListIdsVarargs(value: String*): Self = StObject.set(x, "remarketingListIds", js.Array(value :_*))
+    inline def setRemarketingListIdsVarargs(value: String*): Self = StObject.set(x, "remarketingListIds", js.Array(value :_*))
   }
 }

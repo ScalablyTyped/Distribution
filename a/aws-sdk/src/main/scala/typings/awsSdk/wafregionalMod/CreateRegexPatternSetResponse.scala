@@ -18,25 +18,19 @@ trait CreateRegexPatternSetResponse extends StObject {
 }
 object CreateRegexPatternSetResponse {
   
-  @scala.inline
-  def apply(): CreateRegexPatternSetResponse = {
+  inline def apply(): CreateRegexPatternSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRegexPatternSetResponse]
   }
   
-  @scala.inline
-  implicit class CreateRegexPatternSetResponseMutableBuilder[Self <: CreateRegexPatternSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRegexPatternSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
     
-    @scala.inline
-    def setRegexPatternSet(value: RegexPatternSet): Self = StObject.set(x, "RegexPatternSet", value.asInstanceOf[js.Any])
+    inline def setRegexPatternSet(value: RegexPatternSet): Self = StObject.set(x, "RegexPatternSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexPatternSetUndefined: Self = StObject.set(x, "RegexPatternSet", js.undefined)
+    inline def setRegexPatternSetUndefined: Self = StObject.set(x, "RegexPatternSet", js.undefined)
   }
 }

@@ -14,16 +14,13 @@ trait BacklogFields extends StObject {
 }
 object BacklogFields {
   
-  @scala.inline
-  def apply(typeFields: StringDictionary[String]): BacklogFields = {
+  inline def apply(typeFields: StringDictionary[String]): BacklogFields = {
     val __obj = js.Dynamic.literal(typeFields = typeFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[BacklogFields]
   }
   
-  @scala.inline
-  implicit class BacklogFieldsMutableBuilder[Self <: BacklogFields] (val x: Self) extends AnyVal {
+  extension [Self <: BacklogFields](x: Self) {
     
-    @scala.inline
-    def setTypeFields(value: StringDictionary[String]): Self = StObject.set(x, "typeFields", value.asInstanceOf[js.Any])
+    inline def setTypeFields(value: StringDictionary[String]): Self = StObject.set(x, "typeFields", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait ZipkinB3TextMapCodecOptions extends StObject {
 }
 object ZipkinB3TextMapCodecOptions {
   
-  @scala.inline
-  def apply(): ZipkinB3TextMapCodecOptions = {
+  inline def apply(): ZipkinB3TextMapCodecOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZipkinB3TextMapCodecOptions]
   }
   
-  @scala.inline
-  implicit class ZipkinB3TextMapCodecOptionsMutableBuilder[Self <: ZipkinB3TextMapCodecOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ZipkinB3TextMapCodecOptions](x: Self) {
     
-    @scala.inline
-    def setBaggagePrefix(value: String): Self = StObject.set(x, "baggagePrefix", value.asInstanceOf[js.Any])
+    inline def setBaggagePrefix(value: String): Self = StObject.set(x, "baggagePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaggagePrefixUndefined: Self = StObject.set(x, "baggagePrefix", js.undefined)
+    inline def setBaggagePrefixUndefined: Self = StObject.set(x, "baggagePrefix", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: MetricsFactory): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: MetricsFactory): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setUrlEncoding(value: Boolean): Self = StObject.set(x, "urlEncoding", value.asInstanceOf[js.Any])
+    inline def setUrlEncoding(value: Boolean): Self = StObject.set(x, "urlEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlEncodingUndefined: Self = StObject.set(x, "urlEncoding", js.undefined)
+    inline def setUrlEncodingUndefined: Self = StObject.set(x, "urlEncoding", js.undefined)
   }
 }

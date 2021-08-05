@@ -27,8 +27,7 @@ trait ContentManager extends StObject {
 }
 object ContentManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getNotebookContents: Uri => Thenable[INotebookContents],
     save: (Uri, INotebookContents) => Thenable[INotebookContents]
   ): ContentManager = {
@@ -36,13 +35,10 @@ object ContentManager {
     __obj.asInstanceOf[ContentManager]
   }
   
-  @scala.inline
-  implicit class ContentManagerMutableBuilder[Self <: ContentManager] (val x: Self) extends AnyVal {
+  extension [Self <: ContentManager](x: Self) {
     
-    @scala.inline
-    def setGetNotebookContents(value: Uri => Thenable[INotebookContents]): Self = StObject.set(x, "getNotebookContents", js.Any.fromFunction1(value))
+    inline def setGetNotebookContents(value: Uri => Thenable[INotebookContents]): Self = StObject.set(x, "getNotebookContents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSave(value: (Uri, INotebookContents) => Thenable[INotebookContents]): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
+    inline def setSave(value: (Uri, INotebookContents) => Thenable[INotebookContents]): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
   }
 }

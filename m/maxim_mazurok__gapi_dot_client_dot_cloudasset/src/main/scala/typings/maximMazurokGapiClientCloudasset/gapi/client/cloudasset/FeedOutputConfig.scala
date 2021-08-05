@@ -11,19 +11,15 @@ trait FeedOutputConfig extends StObject {
 }
 object FeedOutputConfig {
   
-  @scala.inline
-  def apply(): FeedOutputConfig = {
+  inline def apply(): FeedOutputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeedOutputConfig]
   }
   
-  @scala.inline
-  implicit class FeedOutputConfigMutableBuilder[Self <: FeedOutputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FeedOutputConfig](x: Self) {
     
-    @scala.inline
-    def setPubsubDestination(value: PubsubDestination): Self = StObject.set(x, "pubsubDestination", value.asInstanceOf[js.Any])
+    inline def setPubsubDestination(value: PubsubDestination): Self = StObject.set(x, "pubsubDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsubDestinationUndefined: Self = StObject.set(x, "pubsubDestination", js.undefined)
+    inline def setPubsubDestinationUndefined: Self = StObject.set(x, "pubsubDestination", js.undefined)
   }
 }

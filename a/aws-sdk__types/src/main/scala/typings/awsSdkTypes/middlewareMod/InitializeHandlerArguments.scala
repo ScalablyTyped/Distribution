@@ -14,16 +14,13 @@ trait InitializeHandlerArguments[Input /* <: js.Object */] extends StObject {
 }
 object InitializeHandlerArguments {
   
-  @scala.inline
-  def apply[Input /* <: js.Object */](input: Input): InitializeHandlerArguments[Input] = {
+  inline def apply[Input /* <: js.Object */](input: Input): InitializeHandlerArguments[Input] = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializeHandlerArguments[Input]]
   }
   
-  @scala.inline
-  implicit class InitializeHandlerArgumentsMutableBuilder[Self <: InitializeHandlerArguments[?], Input /* <: js.Object */] (val x: Self & InitializeHandlerArguments[Input]) extends AnyVal {
+  extension [Self <: InitializeHandlerArguments[?], Input /* <: js.Object */](x: Self & InitializeHandlerArguments[Input]) {
     
-    @scala.inline
-    def setInput(value: Input): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Input): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
   }
 }

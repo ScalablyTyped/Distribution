@@ -18,16 +18,13 @@ trait ASPxClientFileManagerCustomCommandEventArgs
 }
 object ASPxClientFileManagerCustomCommandEventArgs {
   
-  @scala.inline
-  def apply(commandName: String): ASPxClientFileManagerCustomCommandEventArgs = {
+  inline def apply(commandName: String): ASPxClientFileManagerCustomCommandEventArgs = {
     val __obj = js.Dynamic.literal(commandName = commandName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFileManagerCustomCommandEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFileManagerCustomCommandEventArgsMutableBuilder[Self <: ASPxClientFileManagerCustomCommandEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFileManagerCustomCommandEventArgs](x: Self) {
     
-    @scala.inline
-    def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
+    inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
   }
 }

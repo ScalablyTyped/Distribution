@@ -15,16 +15,13 @@ trait SystemInfoNetProxyNetwork
 }
 object SystemInfoNetProxyNetwork {
   
-  @scala.inline
-  def apply(status: String): SystemInfoNetProxyNetwork = {
+  inline def apply(status: String): SystemInfoNetProxyNetwork = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInfoNetProxyNetwork]
   }
   
-  @scala.inline
-  implicit class SystemInfoNetProxyNetworkMutableBuilder[Self <: SystemInfoNetProxyNetwork] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoNetProxyNetwork](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

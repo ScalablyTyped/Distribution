@@ -15,19 +15,15 @@ trait ClusterOperationStepInfo extends StObject {
 }
 object ClusterOperationStepInfo {
   
-  @scala.inline
-  def apply(): ClusterOperationStepInfo = {
+  inline def apply(): ClusterOperationStepInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterOperationStepInfo]
   }
   
-  @scala.inline
-  implicit class ClusterOperationStepInfoMutableBuilder[Self <: ClusterOperationStepInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterOperationStepInfo](x: Self) {
     
-    @scala.inline
-    def setStepStatus(value: string): Self = StObject.set(x, "StepStatus", value.asInstanceOf[js.Any])
+    inline def setStepStatus(value: string): Self = StObject.set(x, "StepStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepStatusUndefined: Self = StObject.set(x, "StepStatus", js.undefined)
+    inline def setStepStatusUndefined: Self = StObject.set(x, "StepStatus", js.undefined)
   }
 }

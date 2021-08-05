@@ -13,19 +13,15 @@ trait CipherSuite extends StObject {
 }
 object CipherSuite {
   
-  @scala.inline
-  def apply(id: js.Tuple2[Byte, Byte], name: String): CipherSuite = {
+  inline def apply(id: js.Tuple2[Byte, Byte], name: String): CipherSuite = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CipherSuite]
   }
   
-  @scala.inline
-  implicit class CipherSuiteMutableBuilder[Self <: CipherSuite] (val x: Self) extends AnyVal {
+  extension [Self <: CipherSuite](x: Self) {
     
-    @scala.inline
-    def setId(value: js.Tuple2[Byte, Byte]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Tuple2[Byte, Byte]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

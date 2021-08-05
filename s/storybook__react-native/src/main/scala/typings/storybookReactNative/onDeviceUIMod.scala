@@ -46,47 +46,34 @@ object onDeviceUIMod {
   }
   object OnDeviceUIProps {
     
-    @scala.inline
-    def apply(stories: js.Any): OnDeviceUIProps = {
+    inline def apply(stories: js.Any): OnDeviceUIProps = {
       val __obj = js.Dynamic.literal(stories = stories.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnDeviceUIProps]
     }
     
-    @scala.inline
-    implicit class OnDeviceUIPropsMutableBuilder[Self <: OnDeviceUIProps] (val x: Self) extends AnyVal {
+    extension [Self <: OnDeviceUIProps](x: Self) {
       
-      @scala.inline
-      def setIsUIHidden(value: Boolean): Self = StObject.set(x, "isUIHidden", value.asInstanceOf[js.Any])
+      inline def setIsUIHidden(value: Boolean): Self = StObject.set(x, "isUIHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUIHiddenUndefined: Self = StObject.set(x, "isUIHidden", js.undefined)
+      inline def setIsUIHiddenUndefined: Self = StObject.set(x, "isUIHidden", js.undefined)
       
-      @scala.inline
-      def setKeyboardAvoidingViewVerticalOffset(value: Double): Self = StObject.set(x, "keyboardAvoidingViewVerticalOffset", value.asInstanceOf[js.Any])
+      inline def setKeyboardAvoidingViewVerticalOffset(value: Double): Self = StObject.set(x, "keyboardAvoidingViewVerticalOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardAvoidingViewVerticalOffsetUndefined: Self = StObject.set(x, "keyboardAvoidingViewVerticalOffset", js.undefined)
+      inline def setKeyboardAvoidingViewVerticalOffsetUndefined: Self = StObject.set(x, "keyboardAvoidingViewVerticalOffset", js.undefined)
       
-      @scala.inline
-      def setShouldDisableKeyboardAvoidingView(value: Boolean): Self = StObject.set(x, "shouldDisableKeyboardAvoidingView", value.asInstanceOf[js.Any])
+      inline def setShouldDisableKeyboardAvoidingView(value: Boolean): Self = StObject.set(x, "shouldDisableKeyboardAvoidingView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldDisableKeyboardAvoidingViewUndefined: Self = StObject.set(x, "shouldDisableKeyboardAvoidingView", js.undefined)
+      inline def setShouldDisableKeyboardAvoidingViewUndefined: Self = StObject.set(x, "shouldDisableKeyboardAvoidingView", js.undefined)
       
-      @scala.inline
-      def setStories(value: js.Any): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
+      inline def setStories(value: js.Any): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabOpen(value: Double): Self = StObject.set(x, "tabOpen", value.asInstanceOf[js.Any])
+      inline def setTabOpen(value: Double): Self = StObject.set(x, "tabOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabOpenUndefined: Self = StObject.set(x, "tabOpen", js.undefined)
+      inline def setTabOpenUndefined: Self = StObject.set(x, "tabOpen", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -102,26 +89,20 @@ object onDeviceUIMod {
   }
   object OnDeviceUIState {
     
-    @scala.inline
-    def apply(previewHeight: Double, previewWidth: Double, slideBetweenAnimation: Boolean, tabOpen: Double): OnDeviceUIState = {
+    inline def apply(previewHeight: Double, previewWidth: Double, slideBetweenAnimation: Boolean, tabOpen: Double): OnDeviceUIState = {
       val __obj = js.Dynamic.literal(previewHeight = previewHeight.asInstanceOf[js.Any], previewWidth = previewWidth.asInstanceOf[js.Any], slideBetweenAnimation = slideBetweenAnimation.asInstanceOf[js.Any], tabOpen = tabOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnDeviceUIState]
     }
     
-    @scala.inline
-    implicit class OnDeviceUIStateMutableBuilder[Self <: OnDeviceUIState] (val x: Self) extends AnyVal {
+    extension [Self <: OnDeviceUIState](x: Self) {
       
-      @scala.inline
-      def setPreviewHeight(value: Double): Self = StObject.set(x, "previewHeight", value.asInstanceOf[js.Any])
+      inline def setPreviewHeight(value: Double): Self = StObject.set(x, "previewHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewWidth(value: Double): Self = StObject.set(x, "previewWidth", value.asInstanceOf[js.Any])
+      inline def setPreviewWidth(value: Double): Self = StObject.set(x, "previewWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideBetweenAnimation(value: Boolean): Self = StObject.set(x, "slideBetweenAnimation", value.asInstanceOf[js.Any])
+      inline def setSlideBetweenAnimation(value: Boolean): Self = StObject.set(x, "slideBetweenAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabOpen(value: Double): Self = StObject.set(x, "tabOpen", value.asInstanceOf[js.Any])
+      inline def setTabOpen(value: Double): Self = StObject.set(x, "tabOpen", value.asInstanceOf[js.Any])
     }
   }
 }

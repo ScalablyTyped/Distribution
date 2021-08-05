@@ -8,11 +8,9 @@ object timmStrings {
   
   @js.native
   sealed trait FnCallObjKeyVal extends StObject
-  @scala.inline
-  def FnCallObjKeyVal: FnCallObjKeyVal = "FnCallObjKeyVal".asInstanceOf[FnCallObjKeyVal]
+  inline def FnCallObjKeyVal: FnCallObjKeyVal = "FnCallObjKeyVal".asInstanceOf[FnCallObjKeyVal]
   
   @js.native
   sealed trait set extends StObject
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
+  inline def set: set = "set".asInstanceOf[set]
 }

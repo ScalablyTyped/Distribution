@@ -13,16 +13,13 @@ trait GetVocabularyFilterRequest extends StObject {
 }
 object GetVocabularyFilterRequest {
   
-  @scala.inline
-  def apply(VocabularyFilterName: VocabularyFilterName): GetVocabularyFilterRequest = {
+  inline def apply(VocabularyFilterName: VocabularyFilterName): GetVocabularyFilterRequest = {
     val __obj = js.Dynamic.literal(VocabularyFilterName = VocabularyFilterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVocabularyFilterRequest]
   }
   
-  @scala.inline
-  implicit class GetVocabularyFilterRequestMutableBuilder[Self <: GetVocabularyFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetVocabularyFilterRequest](x: Self) {
     
-    @scala.inline
-    def setVocabularyFilterName(value: VocabularyFilterName): Self = StObject.set(x, "VocabularyFilterName", value.asInstanceOf[js.Any])
+    inline def setVocabularyFilterName(value: VocabularyFilterName): Self = StObject.set(x, "VocabularyFilterName", value.asInstanceOf[js.Any])
   }
 }

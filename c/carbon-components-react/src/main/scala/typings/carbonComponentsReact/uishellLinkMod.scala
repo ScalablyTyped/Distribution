@@ -18,8 +18,7 @@ object uishellLinkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[P /* <: js.Object */, R](props: ForwardRefProps[R, LinkProps[P, P]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default[P /* <: js.Object */, R](props: ForwardRefProps[R, LinkProps[P, P]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   type InnerElementProps[P] = Omit[P, element]
   
@@ -33,23 +32,18 @@ object uishellLinkMod {
   }
   object LinkPropsBase {
     
-    @scala.inline
-    def apply[P](): LinkPropsBase[P] = {
+    inline def apply[P](): LinkPropsBase[P] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkPropsBase[P]]
     }
     
-    @scala.inline
-    implicit class LinkPropsBaseMutableBuilder[Self <: LinkPropsBase[?], P] (val x: Self & LinkPropsBase[P]) extends AnyVal {
+    extension [Self <: LinkPropsBase[?], P](x: Self & LinkPropsBase[P]) {
       
-      @scala.inline
-      def setElement(value: String | JSXElementConstructor[InnerElementProps[P]]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: String | JSXElementConstructor[InnerElementProps[P]]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementFunction1(value: InnerElementProps[P] => ReactElement | Null): Self = StObject.set(x, "element", js.Any.fromFunction1(value))
+      inline def setElementFunction1(value: InnerElementProps[P] => ReactElement | Null): Self = StObject.set(x, "element", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
   }
 }

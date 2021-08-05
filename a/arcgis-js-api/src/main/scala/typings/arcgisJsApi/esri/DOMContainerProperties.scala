@@ -30,31 +30,23 @@ trait DOMContainerProperties extends StObject {
 }
 object DOMContainerProperties {
   
-  @scala.inline
-  def apply(): DOMContainerProperties = {
+  inline def apply(): DOMContainerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DOMContainerProperties]
   }
   
-  @scala.inline
-  implicit class DOMContainerPropertiesMutableBuilder[Self <: DOMContainerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DOMContainerProperties](x: Self) {
     
-    @scala.inline
-    def setContainer(value: HTMLDivElement | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: HTMLDivElement | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setPopup(value: PopupProperties): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: PopupProperties): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+    inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
-    @scala.inline
-    def setUi(value: DefaultUIProperties): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    inline def setUi(value: DefaultUIProperties): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
+    inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait MigrateWorkspaceRequest extends StObject {
 }
 object MigrateWorkspaceRequest {
   
-  @scala.inline
-  def apply(BundleId: BundleId, SourceWorkspaceId: WorkspaceId): MigrateWorkspaceRequest = {
+  inline def apply(BundleId: BundleId, SourceWorkspaceId: WorkspaceId): MigrateWorkspaceRequest = {
     val __obj = js.Dynamic.literal(BundleId = BundleId.asInstanceOf[js.Any], SourceWorkspaceId = SourceWorkspaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrateWorkspaceRequest]
   }
   
-  @scala.inline
-  implicit class MigrateWorkspaceRequestMutableBuilder[Self <: MigrateWorkspaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MigrateWorkspaceRequest](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: BundleId): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: BundleId): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "SourceWorkspaceId", value.asInstanceOf[js.Any])
+    inline def setSourceWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "SourceWorkspaceId", value.asInstanceOf[js.Any])
   }
 }

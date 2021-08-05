@@ -24,8 +24,7 @@ trait ReposGetCombinedStatusForRefResponseData extends StObject {
 }
 object ReposGetCombinedStatusForRefResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commit_url: String,
     repository: Archiveurl,
     sha: String,
@@ -38,31 +37,22 @@ object ReposGetCombinedStatusForRefResponseData {
     __obj.asInstanceOf[ReposGetCombinedStatusForRefResponseData]
   }
   
-  @scala.inline
-  implicit class ReposGetCombinedStatusForRefResponseDataMutableBuilder[Self <: ReposGetCombinedStatusForRefResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetCombinedStatusForRefResponseData](x: Self) {
     
-    @scala.inline
-    def setCommit_url(value: String): Self = StObject.set(x, "commit_url", value.asInstanceOf[js.Any])
+    inline def setCommit_url(value: String): Self = StObject.set(x, "commit_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository(value: Archiveurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Archiveurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatuses(value: js.Array[Context]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
+    inline def setStatuses(value: js.Array[Context]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusesVarargs(value: Context*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: Context*): Self = StObject.set(x, "statuses", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

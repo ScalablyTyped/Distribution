@@ -33,8 +33,7 @@ trait AgeExpressionsResult
 }
 object AgeExpressionsResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     histogramQuery: js.Any,
@@ -46,16 +45,12 @@ object AgeExpressionsResult {
     __obj.asInstanceOf[AgeExpressionsResult]
   }
   
-  @scala.inline
-  implicit class AgeExpressionsResultMutableBuilder[Self <: AgeExpressionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: AgeExpressionsResult](x: Self) {
     
-    @scala.inline
-    def setHistogramQuery(value: js.Any): Self = StObject.set(x, "histogramQuery", value.asInstanceOf[js.Any])
+    inline def setHistogramQuery(value: js.Any): Self = StObject.set(x, "histogramQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsQuery(value: js.Any): Self = StObject.set(x, "statisticsQuery", value.asInstanceOf[js.Any])
+    inline def setStatisticsQuery(value: js.Any): Self = StObject.set(x, "statisticsQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
+    inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
   }
 }

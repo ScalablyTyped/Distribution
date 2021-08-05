@@ -18,19 +18,15 @@ trait ShTarget extends StObject {
 }
 object ShTarget {
   
-  @scala.inline
-  def apply(Sh: Worksheet, Target: Range): ShTarget = {
+  inline def apply(Sh: Worksheet, Target: Range): ShTarget = {
     val __obj = js.Dynamic.literal(Sh = Sh.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShTarget]
   }
   
-  @scala.inline
-  implicit class ShTargetMutableBuilder[Self <: ShTarget] (val x: Self) extends AnyVal {
+  extension [Self <: ShTarget](x: Self) {
     
-    @scala.inline
-    def setSh(value: Worksheet): Self = StObject.set(x, "Sh", value.asInstanceOf[js.Any])
+    inline def setSh(value: Worksheet): Self = StObject.set(x, "Sh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Range): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Range): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

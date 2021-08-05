@@ -23,8 +23,7 @@ trait ApplicationSummary extends StObject {
 }
 object ApplicationSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationARN: ResourceARN,
     ApplicationName: ApplicationName,
     ApplicationStatus: ApplicationStatus
@@ -33,16 +32,12 @@ object ApplicationSummary {
     __obj.asInstanceOf[ApplicationSummary]
   }
   
-  @scala.inline
-  implicit class ApplicationSummaryMutableBuilder[Self <: ApplicationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationSummary](x: Self) {
     
-    @scala.inline
-    def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
+    inline def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationStatus(value: ApplicationStatus): Self = StObject.set(x, "ApplicationStatus", value.asInstanceOf[js.Any])
+    inline def setApplicationStatus(value: ApplicationStatus): Self = StObject.set(x, "ApplicationStatus", value.asInstanceOf[js.Any])
   }
 }

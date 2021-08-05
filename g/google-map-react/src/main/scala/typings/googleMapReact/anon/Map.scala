@@ -15,25 +15,19 @@ trait Map extends StObject {
 }
 object Map {
   
-  @scala.inline
-  def apply(map: js.Any, maps: js.Any): Map = {
+  inline def apply(map: js.Any, maps: js.Any): Map = {
     val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], maps = maps.asInstanceOf[js.Any], ref = null)
     __obj.asInstanceOf[Map]
   }
   
-  @scala.inline
-  implicit class MapMutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
+  extension [Self <: Map](x: Self) {
     
-    @scala.inline
-    def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaps(value: js.Any): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
+    inline def setMaps(value: js.Any): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: Element): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: Element): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefNull: Self = StObject.set(x, "ref", null)
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
   }
 }

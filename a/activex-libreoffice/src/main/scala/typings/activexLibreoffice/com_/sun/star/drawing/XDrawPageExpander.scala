@@ -23,8 +23,7 @@ trait XDrawPageExpander
 }
 object XDrawPageExpander {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     expand: XDrawPage => XDrawPages,
     queryInterface: `type` => js.Any,
@@ -34,10 +33,8 @@ object XDrawPageExpander {
     __obj.asInstanceOf[XDrawPageExpander]
   }
   
-  @scala.inline
-  implicit class XDrawPageExpanderMutableBuilder[Self <: XDrawPageExpander] (val x: Self) extends AnyVal {
+  extension [Self <: XDrawPageExpander](x: Self) {
     
-    @scala.inline
-    def setExpand(value: XDrawPage => XDrawPages): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+    inline def setExpand(value: XDrawPage => XDrawPages): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
   }
 }

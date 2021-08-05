@@ -13,8 +13,7 @@ trait UploadOperation
      with IUploadOperation
 object UploadOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachAsync: () => IAsyncOperationWithProgress[UploadOperation, UploadOperation],
     costPolicy: BackgroundTransferCostPolicy,
     getResponseInformation: () => ResponseInformation,

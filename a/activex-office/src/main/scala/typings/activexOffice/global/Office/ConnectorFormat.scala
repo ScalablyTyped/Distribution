@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ConnectorFormat")
 @js.native
-class ConnectorFormat protected ()
+/* private */ class ConnectorFormat ()
   extends StObject
      with typings.activexOffice.Office.ConnectorFormat {
   
@@ -48,7 +48,7 @@ class ConnectorFormat protected ()
   /* CompleteClass */
   override def EndDisconnect(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.ConnectorFormat_typekey")
   var OfficeDotConnectorFormat_typekey: typings.activexOffice.Office.ConnectorFormat = js.native
   

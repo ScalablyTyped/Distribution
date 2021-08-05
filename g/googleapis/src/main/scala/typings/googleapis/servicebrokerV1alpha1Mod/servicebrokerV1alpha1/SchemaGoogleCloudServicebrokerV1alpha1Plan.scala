@@ -52,55 +52,39 @@ trait SchemaGoogleCloudServicebrokerV1alpha1Plan extends StObject {
 }
 object SchemaGoogleCloudServicebrokerV1alpha1Plan {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudServicebrokerV1alpha1Plan = {
+  inline def apply(): SchemaGoogleCloudServicebrokerV1alpha1Plan = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1alpha1Plan]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudServicebrokerV1alpha1PlanMutableBuilder[Self <: SchemaGoogleCloudServicebrokerV1alpha1Plan] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudServicebrokerV1alpha1Plan](x: Self) {
     
-    @scala.inline
-    def setBindable(value: Boolean): Self = StObject.set(x, "bindable", value.asInstanceOf[js.Any])
+    inline def setBindable(value: Boolean): Self = StObject.set(x, "bindable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindableUndefined: Self = StObject.set(x, "bindable", js.undefined)
+    inline def setBindableUndefined: Self = StObject.set(x, "bindable", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFree(value: Boolean): Self = StObject.set(x, "free", value.asInstanceOf[js.Any])
+    inline def setFree(value: Boolean): Self = StObject.set(x, "free", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreeUndefined: Self = StObject.set(x, "free", js.undefined)
+    inline def setFreeUndefined: Self = StObject.set(x, "free", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSchemas(value: StringDictionary[js.Any]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: StringDictionary[js.Any]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
+    inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
   }
 }

@@ -42,8 +42,7 @@ trait DistributionOriginCustomOriginConfig extends StObject {
 }
 object DistributionOriginCustomOriginConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     httpPort: Input[Double],
     httpsPort: Input[Double],
     originProtocolPolicy: Input[String],
@@ -53,34 +52,24 @@ object DistributionOriginCustomOriginConfig {
     __obj.asInstanceOf[DistributionOriginCustomOriginConfig]
   }
   
-  @scala.inline
-  implicit class DistributionOriginCustomOriginConfigMutableBuilder[Self <: DistributionOriginCustomOriginConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionOriginCustomOriginConfig](x: Self) {
     
-    @scala.inline
-    def setHttpPort(value: Input[Double]): Self = StObject.set(x, "httpPort", value.asInstanceOf[js.Any])
+    inline def setHttpPort(value: Input[Double]): Self = StObject.set(x, "httpPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpsPort(value: Input[Double]): Self = StObject.set(x, "httpsPort", value.asInstanceOf[js.Any])
+    inline def setHttpsPort(value: Input[Double]): Self = StObject.set(x, "httpsPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginKeepaliveTimeout(value: Input[Double]): Self = StObject.set(x, "originKeepaliveTimeout", value.asInstanceOf[js.Any])
+    inline def setOriginKeepaliveTimeout(value: Input[Double]): Self = StObject.set(x, "originKeepaliveTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginKeepaliveTimeoutUndefined: Self = StObject.set(x, "originKeepaliveTimeout", js.undefined)
+    inline def setOriginKeepaliveTimeoutUndefined: Self = StObject.set(x, "originKeepaliveTimeout", js.undefined)
     
-    @scala.inline
-    def setOriginProtocolPolicy(value: Input[String]): Self = StObject.set(x, "originProtocolPolicy", value.asInstanceOf[js.Any])
+    inline def setOriginProtocolPolicy(value: Input[String]): Self = StObject.set(x, "originProtocolPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginReadTimeout(value: Input[Double]): Self = StObject.set(x, "originReadTimeout", value.asInstanceOf[js.Any])
+    inline def setOriginReadTimeout(value: Input[Double]): Self = StObject.set(x, "originReadTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginReadTimeoutUndefined: Self = StObject.set(x, "originReadTimeout", js.undefined)
+    inline def setOriginReadTimeoutUndefined: Self = StObject.set(x, "originReadTimeout", js.undefined)
     
-    @scala.inline
-    def setOriginSslProtocols(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "originSslProtocols", value.asInstanceOf[js.Any])
+    inline def setOriginSslProtocols(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "originSslProtocols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginSslProtocolsVarargs(value: Input[String]*): Self = StObject.set(x, "originSslProtocols", js.Array(value :_*))
+    inline def setOriginSslProtocolsVarargs(value: Input[String]*): Self = StObject.set(x, "originSslProtocols", js.Array(value :_*))
   }
 }

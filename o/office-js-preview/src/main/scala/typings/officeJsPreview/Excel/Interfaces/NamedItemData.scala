@@ -85,63 +85,45 @@ trait NamedItemData extends StObject {
 }
 object NamedItemData {
   
-  @scala.inline
-  def apply(): NamedItemData = {
+  inline def apply(): NamedItemData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamedItemData]
   }
   
-  @scala.inline
-  implicit class NamedItemDataMutableBuilder[Self <: NamedItemData] (val x: Self) extends AnyVal {
+  extension [Self <: NamedItemData](x: Self) {
     
-    @scala.inline
-    def setArrayValues(value: NamedItemArrayValuesData): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
+    inline def setArrayValues(value: NamedItemArrayValuesData): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayValuesUndefined: Self = StObject.set(x, "arrayValues", js.undefined)
+    inline def setArrayValuesUndefined: Self = StObject.set(x, "arrayValues", js.undefined)
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setFormula(value: js.Any): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: js.Any): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setScope(value: NamedItemScope | Worksheet | Workbook): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: NamedItemScope | Worksheet | Workbook): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: NamedItemType | typings.officeJsPreview.officeJsPreviewStrings.String | Integer | Double | Boolean | Range | Error | Array
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setVisible(value: scala.Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: scala.Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

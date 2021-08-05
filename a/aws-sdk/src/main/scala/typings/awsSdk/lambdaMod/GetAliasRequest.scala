@@ -18,19 +18,15 @@ trait GetAliasRequest extends StObject {
 }
 object GetAliasRequest {
   
-  @scala.inline
-  def apply(FunctionName: FunctionName, Name: Alias): GetAliasRequest = {
+  inline def apply(FunctionName: FunctionName, Name: Alias): GetAliasRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAliasRequest]
   }
   
-  @scala.inline
-  implicit class GetAliasRequestMutableBuilder[Self <: GetAliasRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAliasRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Alias): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Alias): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -16,25 +16,19 @@ trait ISourceObjectFile extends StObject {
 }
 object ISourceObjectFile {
   
-  @scala.inline
-  def apply(Clone: () => ISourceObjectFile, Extension: String, SourceFilePath: String, Title: String): ISourceObjectFile = {
+  inline def apply(Clone: () => ISourceObjectFile, Extension: String, SourceFilePath: String, Title: String): ISourceObjectFile = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Extension = Extension.asInstanceOf[js.Any], SourceFilePath = SourceFilePath.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISourceObjectFile]
   }
   
-  @scala.inline
-  implicit class ISourceObjectFileMutableBuilder[Self <: ISourceObjectFile] (val x: Self) extends AnyVal {
+  extension [Self <: ISourceObjectFile](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => ISourceObjectFile): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ISourceObjectFile): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFilePath(value: String): Self = StObject.set(x, "SourceFilePath", value.asInstanceOf[js.Any])
+    inline def setSourceFilePath(value: String): Self = StObject.set(x, "SourceFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

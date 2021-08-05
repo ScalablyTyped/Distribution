@@ -83,10 +83,8 @@ object Articulation {
   @JSGlobal("Vex.Flow.Articulation.DEBUG")
   @js.native
   def DEBUG: Boolean = js.native
-  @scala.inline
-  def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+  inline def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def format(articulations: js.Array[typings.vexflow.Vex.Flow.Articulation], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(articulations.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def format(articulations: js.Array[typings.vexflow.Vex.Flow.Articulation], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(articulations.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

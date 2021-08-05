@@ -32,8 +32,7 @@ object DotNet {
   }
   object DotNetObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       invokeMethod: (String, /* repeated */ js.Any) => js.Any,
       invokeMethodAsync: (String, /* repeated */ js.Any) => js.Promise[js.Any]
     ): DotNetObject = {
@@ -41,14 +40,11 @@ object DotNet {
       __obj.asInstanceOf[DotNetObject]
     }
     
-    @scala.inline
-    implicit class DotNetObjectMutableBuilder[Self <: DotNetObject] (val x: Self) extends AnyVal {
+    extension [Self <: DotNetObject](x: Self) {
       
-      @scala.inline
-      def setInvokeMethod(value: (String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "invokeMethod", js.Any.fromFunction2(value))
+      inline def setInvokeMethod(value: (String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "invokeMethod", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInvokeMethodAsync(value: (String, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "invokeMethodAsync", js.Any.fromFunction2(value))
+      inline def setInvokeMethodAsync(value: (String, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "invokeMethodAsync", js.Any.fromFunction2(value))
     }
   }
 }

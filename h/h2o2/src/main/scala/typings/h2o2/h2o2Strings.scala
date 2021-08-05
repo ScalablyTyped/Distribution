@@ -8,16 +8,13 @@ object h2o2Strings {
   
   @js.native
   sealed trait http extends StObject
-  @scala.inline
-  def http: http = "http".asInstanceOf[http]
+  inline def http: http = "http".asInstanceOf[http]
   
   @js.native
   sealed trait https extends StObject
-  @scala.inline
-  def https: https = "https".asInstanceOf[https]
+  inline def https: https = "https".asInstanceOf[https]
   
   @js.native
   sealed trait upstream extends StObject
-  @scala.inline
-  def upstream: upstream = "upstream".asInstanceOf[upstream]
+  inline def upstream: upstream = "upstream".asInstanceOf[upstream]
 }

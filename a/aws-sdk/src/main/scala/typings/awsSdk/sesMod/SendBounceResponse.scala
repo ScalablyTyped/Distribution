@@ -13,19 +13,15 @@ trait SendBounceResponse extends StObject {
 }
 object SendBounceResponse {
   
-  @scala.inline
-  def apply(): SendBounceResponse = {
+  inline def apply(): SendBounceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendBounceResponse]
   }
   
-  @scala.inline
-  implicit class SendBounceResponseMutableBuilder[Self <: SendBounceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendBounceResponse](x: Self) {
     
-    @scala.inline
-    def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
   }
 }

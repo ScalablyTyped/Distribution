@@ -23,34 +23,25 @@ trait ListFacesResponse extends StObject {
 }
 object ListFacesResponse {
   
-  @scala.inline
-  def apply(): ListFacesResponse = {
+  inline def apply(): ListFacesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFacesResponse]
   }
   
-  @scala.inline
-  implicit class ListFacesResponseMutableBuilder[Self <: ListFacesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFacesResponse](x: Self) {
     
-    @scala.inline
-    def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
+    inline def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
+    inline def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
     
-    @scala.inline
-    def setFaces(value: FaceList): Self = StObject.set(x, "Faces", value.asInstanceOf[js.Any])
+    inline def setFaces(value: FaceList): Self = StObject.set(x, "Faces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacesUndefined: Self = StObject.set(x, "Faces", js.undefined)
+    inline def setFacesUndefined: Self = StObject.set(x, "Faces", js.undefined)
     
-    @scala.inline
-    def setFacesVarargs(value: Face*): Self = StObject.set(x, "Faces", js.Array(value :_*))
+    inline def setFacesVarargs(value: Face*): Self = StObject.set(x, "Faces", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

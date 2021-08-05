@@ -28,31 +28,23 @@ trait DataCatalogInputDefinition extends StObject {
 }
 object DataCatalogInputDefinition {
   
-  @scala.inline
-  def apply(DatabaseName: DatabaseName, TableName: TableName): DataCatalogInputDefinition = {
+  inline def apply(DatabaseName: DatabaseName, TableName: TableName): DataCatalogInputDefinition = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataCatalogInputDefinition]
   }
   
-  @scala.inline
-  implicit class DataCatalogInputDefinitionMutableBuilder[Self <: DataCatalogInputDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: DataCatalogInputDefinition](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogId): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogId): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: DatabaseName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: DatabaseName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempDirectory(value: S3Location): Self = StObject.set(x, "TempDirectory", value.asInstanceOf[js.Any])
+    inline def setTempDirectory(value: S3Location): Self = StObject.set(x, "TempDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempDirectoryUndefined: Self = StObject.set(x, "TempDirectory", js.undefined)
+    inline def setTempDirectoryUndefined: Self = StObject.set(x, "TempDirectory", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait ColumnChartMediaInfo
 }
 object ColumnChartMediaInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     altText: String,
     caption: String,
     title: String,
@@ -33,10 +32,8 @@ object ColumnChartMediaInfo {
     __obj.asInstanceOf[ColumnChartMediaInfo]
   }
   
-  @scala.inline
-  implicit class ColumnChartMediaInfoMutableBuilder[Self <: ColumnChartMediaInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnChartMediaInfo](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

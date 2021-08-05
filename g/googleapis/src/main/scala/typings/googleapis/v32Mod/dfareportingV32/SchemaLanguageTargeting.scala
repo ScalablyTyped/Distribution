@@ -18,22 +18,17 @@ trait SchemaLanguageTargeting extends StObject {
 }
 object SchemaLanguageTargeting {
   
-  @scala.inline
-  def apply(): SchemaLanguageTargeting = {
+  inline def apply(): SchemaLanguageTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLanguageTargeting]
   }
   
-  @scala.inline
-  implicit class SchemaLanguageTargetingMutableBuilder[Self <: SchemaLanguageTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLanguageTargeting](x: Self) {
     
-    @scala.inline
-    def setLanguages(value: js.Array[SchemaLanguage]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: js.Array[SchemaLanguage]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+    inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    @scala.inline
-    def setLanguagesVarargs(value: SchemaLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: SchemaLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
   }
 }

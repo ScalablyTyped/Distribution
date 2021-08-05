@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViewportUserZoomProperty extends StObject
 object ViewportUserZoomProperty {
   
-  @scala.inline
-  def `-ms-zoom`: typings.preact.preactStrings.`-ms-zoom` = "-ms-zoom".asInstanceOf[typings.preact.preactStrings.`-ms-zoom`]
+  inline def `-ms-zoom`: typings.preact.preactStrings.`-ms-zoom` = "-ms-zoom".asInstanceOf[typings.preact.preactStrings.`-ms-zoom`]
   
-  @scala.inline
-  def fixed: typings.preact.preactStrings.fixed = "fixed".asInstanceOf[typings.preact.preactStrings.fixed]
+  inline def fixed: typings.preact.preactStrings.fixed = "fixed".asInstanceOf[typings.preact.preactStrings.fixed]
   
-  @scala.inline
-  def zoom: typings.preact.preactStrings.zoom = "zoom".asInstanceOf[typings.preact.preactStrings.zoom]
+  inline def zoom: typings.preact.preactStrings.zoom = "zoom".asInstanceOf[typings.preact.preactStrings.zoom]
 }

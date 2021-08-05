@@ -45,20 +45,15 @@ object URLFetch {
   trait HttpMethod extends StObject
   object HttpMethod {
     
-    @scala.inline
-    def delete: typings.googleAppsScript.googleAppsScriptStrings.delete = "delete".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.delete]
+    inline def delete: typings.googleAppsScript.googleAppsScriptStrings.delete = "delete".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.delete]
     
-    @scala.inline
-    def get: typings.googleAppsScript.googleAppsScriptStrings.get = "get".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.get]
+    inline def get: typings.googleAppsScript.googleAppsScriptStrings.get = "get".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.get]
     
-    @scala.inline
-    def patch: typings.googleAppsScript.googleAppsScriptStrings.patch = "patch".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.patch]
+    inline def patch: typings.googleAppsScript.googleAppsScriptStrings.patch = "patch".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.patch]
     
-    @scala.inline
-    def post: typings.googleAppsScript.googleAppsScriptStrings.post = "post".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.post]
+    inline def post: typings.googleAppsScript.googleAppsScriptStrings.post = "post".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.post]
     
-    @scala.inline
-    def put: typings.googleAppsScript.googleAppsScriptStrings.put = "put".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.put]
+    inline def put: typings.googleAppsScript.googleAppsScriptStrings.put = "put".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.put]
   }
   
   type Payload = String | StringDictionary[js.Any] | Blob
@@ -71,17 +66,14 @@ object URLFetch {
   }
   object URLFetchRequest {
     
-    @scala.inline
-    def apply(url: String): URLFetchRequest = {
+    inline def apply(url: String): URLFetchRequest = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[URLFetchRequest]
     }
     
-    @scala.inline
-    implicit class URLFetchRequestMutableBuilder[Self <: URLFetchRequest] (val x: Self) extends AnyVal {
+    extension [Self <: URLFetchRequest](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,68 +133,48 @@ object URLFetch {
   }
   object URLFetchRequestOptions {
     
-    @scala.inline
-    def apply(): URLFetchRequestOptions = {
+    inline def apply(): URLFetchRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[URLFetchRequestOptions]
     }
     
-    @scala.inline
-    implicit class URLFetchRequestOptionsMutableBuilder[Self <: URLFetchRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: URLFetchRequestOptions](x: Self) {
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setEscaping(value: Boolean): Self = StObject.set(x, "escaping", value.asInstanceOf[js.Any])
+      inline def setEscaping(value: Boolean): Self = StObject.set(x, "escaping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapingUndefined: Self = StObject.set(x, "escaping", js.undefined)
+      inline def setEscapingUndefined: Self = StObject.set(x, "escaping", js.undefined)
       
-      @scala.inline
-      def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
+      inline def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowRedirectsUndefined: Self = StObject.set(x, "followRedirects", js.undefined)
+      inline def setFollowRedirectsUndefined: Self = StObject.set(x, "followRedirects", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setMuteHttpExceptions(value: Boolean): Self = StObject.set(x, "muteHttpExceptions", value.asInstanceOf[js.Any])
+      inline def setMuteHttpExceptions(value: Boolean): Self = StObject.set(x, "muteHttpExceptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuteHttpExceptionsUndefined: Self = StObject.set(x, "muteHttpExceptions", js.undefined)
+      inline def setMuteHttpExceptionsUndefined: Self = StObject.set(x, "muteHttpExceptions", js.undefined)
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setUseIntranet(value: Boolean): Self = StObject.set(x, "useIntranet", value.asInstanceOf[js.Any])
+      inline def setUseIntranet(value: Boolean): Self = StObject.set(x, "useIntranet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseIntranetUndefined: Self = StObject.set(x, "useIntranet", js.undefined)
+      inline def setUseIntranetUndefined: Self = StObject.set(x, "useIntranet", js.undefined)
       
-      @scala.inline
-      def setValidateHttpsCertificates(value: Boolean): Self = StObject.set(x, "validateHttpsCertificates", value.asInstanceOf[js.Any])
+      inline def setValidateHttpsCertificates(value: Boolean): Self = StObject.set(x, "validateHttpsCertificates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateHttpsCertificatesUndefined: Self = StObject.set(x, "validateHttpsCertificates", js.undefined)
+      inline def setValidateHttpsCertificatesUndefined: Self = StObject.set(x, "validateHttpsCertificates", js.undefined)
     }
   }
   

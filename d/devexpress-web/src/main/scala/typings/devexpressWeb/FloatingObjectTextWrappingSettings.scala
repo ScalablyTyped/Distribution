@@ -41,8 +41,7 @@ trait FloatingObjectTextWrappingSettings extends StObject {
 }
 object FloatingObjectTextWrappingSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bottomDistance: Double,
     floatingObjectTextWrapSide: FloatingObjectTextWrapSide,
     floatingObjectTextWrapType: FloatingObjectTextWrapType,
@@ -54,25 +53,18 @@ object FloatingObjectTextWrappingSettings {
     __obj.asInstanceOf[FloatingObjectTextWrappingSettings]
   }
   
-  @scala.inline
-  implicit class FloatingObjectTextWrappingSettingsMutableBuilder[Self <: FloatingObjectTextWrappingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FloatingObjectTextWrappingSettings](x: Self) {
     
-    @scala.inline
-    def setBottomDistance(value: Double): Self = StObject.set(x, "bottomDistance", value.asInstanceOf[js.Any])
+    inline def setBottomDistance(value: Double): Self = StObject.set(x, "bottomDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatingObjectTextWrapSide(value: FloatingObjectTextWrapSide): Self = StObject.set(x, "floatingObjectTextWrapSide", value.asInstanceOf[js.Any])
+    inline def setFloatingObjectTextWrapSide(value: FloatingObjectTextWrapSide): Self = StObject.set(x, "floatingObjectTextWrapSide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatingObjectTextWrapType(value: FloatingObjectTextWrapType): Self = StObject.set(x, "floatingObjectTextWrapType", value.asInstanceOf[js.Any])
+    inline def setFloatingObjectTextWrapType(value: FloatingObjectTextWrapType): Self = StObject.set(x, "floatingObjectTextWrapType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftDistance(value: Double): Self = StObject.set(x, "leftDistance", value.asInstanceOf[js.Any])
+    inline def setLeftDistance(value: Double): Self = StObject.set(x, "leftDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightDistance(value: Double): Self = StObject.set(x, "rightDistance", value.asInstanceOf[js.Any])
+    inline def setRightDistance(value: Double): Self = StObject.set(x, "rightDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopDistance(value: Double): Self = StObject.set(x, "topDistance", value.asInstanceOf[js.Any])
+    inline def setTopDistance(value: Double): Self = StObject.set(x, "topDistance", value.asInstanceOf[js.Any])
   }
 }

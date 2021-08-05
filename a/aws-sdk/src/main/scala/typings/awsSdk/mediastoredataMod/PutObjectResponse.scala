@@ -23,31 +23,23 @@ trait PutObjectResponse extends StObject {
 }
 object PutObjectResponse {
   
-  @scala.inline
-  def apply(): PutObjectResponse = {
+  inline def apply(): PutObjectResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutObjectResponse]
   }
   
-  @scala.inline
-  implicit class PutObjectResponseMutableBuilder[Self <: PutObjectResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutObjectResponse](x: Self) {
     
-    @scala.inline
-    def setContentSHA256(value: SHA256Hash): Self = StObject.set(x, "ContentSHA256", value.asInstanceOf[js.Any])
+    inline def setContentSHA256(value: SHA256Hash): Self = StObject.set(x, "ContentSHA256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentSHA256Undefined: Self = StObject.set(x, "ContentSHA256", js.undefined)
+    inline def setContentSHA256Undefined: Self = StObject.set(x, "ContentSHA256", js.undefined)
     
-    @scala.inline
-    def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setStorageClass(value: StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
+    inline def setStorageClass(value: StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
+    inline def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
   }
 }

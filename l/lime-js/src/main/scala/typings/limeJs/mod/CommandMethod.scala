@@ -17,34 +17,29 @@ object CommandMethod {
   @JSImport("lime-js", "CommandMethod.delete")
   @js.native
   def delete: String = js.native
-  @scala.inline
-  def delete_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delete")(x.asInstanceOf[js.Any])
+  inline def delete_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delete")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("lime-js", "CommandMethod.get")
   @js.native
   def get: String = js.native
-  @scala.inline
-  def get_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
+  inline def get_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("lime-js", "CommandMethod.observe")
   @js.native
   def observe: String = js.native
-  @scala.inline
-  def observe_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("observe")(x.asInstanceOf[js.Any])
+  inline def observe_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("observe")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("lime-js", "CommandMethod.set")
   @js.native
   def set: String = js.native
-  @scala.inline
-  def set_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("set")(x.asInstanceOf[js.Any])
+  inline def set_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("set")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("lime-js", "CommandMethod.subscribe")
   @js.native
   def subscribe: String = js.native
-  @scala.inline
-  def subscribe_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscribe")(x.asInstanceOf[js.Any])
+  inline def subscribe_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscribe")(x.asInstanceOf[js.Any])
 }

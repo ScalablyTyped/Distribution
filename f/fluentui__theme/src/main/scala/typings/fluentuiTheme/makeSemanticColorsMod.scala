@@ -16,38 +16,22 @@ object makeSemanticColorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSemanticColors[TResult](p: Unit, e: Unit, s: Unit, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: Unit, e: Unit, s: Unit, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: Unit, e: Unit, s: PartialISemanticColors, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: Unit, e: Unit, s: PartialISemanticColors, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: Unit, e: PartialIEffects, s: Unit, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: Unit, e: PartialIEffects, s: Unit, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: Unit, e: PartialIEffects, s: PartialISemanticColors, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: Unit, e: PartialIEffects, s: PartialISemanticColors, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: PartialIPalette, e: Unit, s: Unit, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: PartialIPalette, e: Unit, s: Unit, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: PartialIPalette, e: Unit, s: PartialISemanticColors, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: PartialIPalette, e: Unit, s: PartialISemanticColors, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: PartialIPalette, e: PartialIEffects, s: Unit, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: PartialIPalette, e: PartialIEffects, s: Unit, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](p: PartialIPalette, e: PartialIEffects, s: PartialISemanticColors, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
-  @scala.inline
-  def getSemanticColors[TResult](
+  inline def getSemanticColors[TResult](p: Unit, e: Unit, s: Unit, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: Unit, e: Unit, s: Unit, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: Unit, e: Unit, s: PartialISemanticColors, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: Unit, e: Unit, s: PartialISemanticColors, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: Unit, e: PartialIEffects, s: Unit, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: Unit, e: PartialIEffects, s: Unit, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: Unit, e: PartialIEffects, s: PartialISemanticColors, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: Unit, e: PartialIEffects, s: PartialISemanticColors, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: PartialIPalette, e: Unit, s: Unit, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: PartialIPalette, e: Unit, s: Unit, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: PartialIPalette, e: Unit, s: PartialISemanticColors, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: PartialIPalette, e: Unit, s: PartialISemanticColors, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: PartialIPalette, e: PartialIEffects, s: Unit, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: PartialIPalette, e: PartialIEffects, s: Unit, isInverted: Boolean, depComments: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](p: PartialIPalette, e: PartialIEffects, s: PartialISemanticColors, isInverted: Boolean): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def getSemanticColors[TResult](
     p: PartialIPalette,
     e: PartialIEffects,
     s: PartialISemanticColors,
@@ -55,12 +39,8 @@ object makeSemanticColorsMod {
     depComments: Boolean
   ): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[TResult]
   
-  @scala.inline
-  def makeSemanticColors(p: IPalette, e: IEffects, s: Unit, isInverted: Boolean): ISemanticColors = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[ISemanticColors]
-  @scala.inline
-  def makeSemanticColors(p: IPalette, e: IEffects, s: Unit, isInverted: Boolean, depComments: Boolean): ISemanticColors = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[ISemanticColors]
-  @scala.inline
-  def makeSemanticColors(p: IPalette, e: IEffects, s: PartialISemanticColors, isInverted: Boolean): ISemanticColors = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[ISemanticColors]
-  @scala.inline
-  def makeSemanticColors(p: IPalette, e: IEffects, s: PartialISemanticColors, isInverted: Boolean, depComments: Boolean): ISemanticColors = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[ISemanticColors]
+  inline def makeSemanticColors(p: IPalette, e: IEffects, s: Unit, isInverted: Boolean): ISemanticColors = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[ISemanticColors]
+  inline def makeSemanticColors(p: IPalette, e: IEffects, s: Unit, isInverted: Boolean, depComments: Boolean): ISemanticColors = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[ISemanticColors]
+  inline def makeSemanticColors(p: IPalette, e: IEffects, s: PartialISemanticColors, isInverted: Boolean): ISemanticColors = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[ISemanticColors]
+  inline def makeSemanticColors(p: IPalette, e: IEffects, s: PartialISemanticColors, isInverted: Boolean, depComments: Boolean): ISemanticColors = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSemanticColors")(p.asInstanceOf[js.Any], e.asInstanceOf[js.Any], s.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[ISemanticColors]
 }

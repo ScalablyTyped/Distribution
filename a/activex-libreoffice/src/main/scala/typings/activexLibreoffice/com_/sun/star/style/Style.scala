@@ -102,8 +102,7 @@ trait Style
 }
 object Style {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DisplayName: String,
     FollowStyle: String,
     Hidden: Boolean,
@@ -145,34 +144,24 @@ object Style {
     __obj.asInstanceOf[Style]
   }
   
-  @scala.inline
-  implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+  extension [Self <: Style](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowStyle(value: String): Self = StObject.set(x, "FollowStyle", value.asInstanceOf[js.Any])
+    inline def setFollowStyle(value: String): Self = StObject.set(x, "FollowStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutoUpdate(value: String): Self = StObject.set(x, "IsAutoUpdate", value.asInstanceOf[js.Any])
+    inline def setIsAutoUpdate(value: String): Self = StObject.set(x, "IsAutoUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPhysical(value: Boolean): Self = StObject.set(x, "IsPhysical", value.asInstanceOf[js.Any])
+    inline def setIsPhysical(value: Boolean): Self = StObject.set(x, "IsPhysical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParaStyleConditions(value: SafeArray[NamedValue]): Self = StObject.set(x, "ParaStyleConditions", value.asInstanceOf[js.Any])
+    inline def setParaStyleConditions(value: SafeArray[NamedValue]): Self = StObject.set(x, "ParaStyleConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
+    inline def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleInteropGrabBag(value: SafeArray[PropertyValue]): Self = StObject.set(x, "StyleInteropGrabBag", value.asInstanceOf[js.Any])
+    inline def setStyleInteropGrabBag(value: SafeArray[PropertyValue]): Self = StObject.set(x, "StyleInteropGrabBag", value.asInstanceOf[js.Any])
   }
 }

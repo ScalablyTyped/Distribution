@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ChartCharacters")
 @js.native
-class ChartCharacters protected ()
+/* private */ class ChartCharacters ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ChartCharacters {
   
@@ -37,7 +37,7 @@ class ChartCharacters protected ()
   /* CompleteClass */
   var PhoneticCharacters: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ChartCharacters_typekey")
   var PowerPointDotChartCharacters_typekey: typings.activexPowerpoint.PowerPoint.ChartCharacters = js.native
   

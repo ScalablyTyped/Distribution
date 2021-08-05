@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetDownloadBehaviorRequestBehavior extends StObject
 object SetDownloadBehaviorRequestBehavior {
   
-  @scala.inline
-  def Allow: allow = "allow".asInstanceOf[allow]
+  inline def Allow: allow = "allow".asInstanceOf[allow]
   
-  @scala.inline
-  def Default: default_ = "default".asInstanceOf[default_]
+  inline def Default: default_ = "default".asInstanceOf[default_]
   
-  @scala.inline
-  def Deny: deny = "deny".asInstanceOf[deny]
+  inline def Deny: deny = "deny".asInstanceOf[deny]
 }

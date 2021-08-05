@@ -18,25 +18,19 @@ trait ChooseImageSuccessCallbackResultFile extends StObject {
 }
 object ChooseImageSuccessCallbackResultFile {
   
-  @scala.inline
-  def apply(): ChooseImageSuccessCallbackResultFile = {
+  inline def apply(): ChooseImageSuccessCallbackResultFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChooseImageSuccessCallbackResultFile]
   }
   
-  @scala.inline
-  implicit class ChooseImageSuccessCallbackResultFileMutableBuilder[Self <: ChooseImageSuccessCallbackResultFile] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseImageSuccessCallbackResultFile](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -16,37 +16,27 @@ trait NullableMappedPosition extends StObject {
 }
 object NullableMappedPosition {
   
-  @scala.inline
-  def apply(): NullableMappedPosition = {
+  inline def apply(): NullableMappedPosition = {
     val __obj = js.Dynamic.literal(column = null, line = null, name = null, source = null)
     __obj.asInstanceOf[NullableMappedPosition]
   }
   
-  @scala.inline
-  implicit class NullableMappedPositionMutableBuilder[Self <: NullableMappedPosition] (val x: Self) extends AnyVal {
+  extension [Self <: NullableMappedPosition](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNull: Self = StObject.set(x, "column", null)
+    inline def setColumnNull: Self = StObject.set(x, "column", null)
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNull: Self = StObject.set(x, "line", null)
+    inline def setLineNull: Self = StObject.set(x, "line", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNull: Self = StObject.set(x, "source", null)
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
   }
 }

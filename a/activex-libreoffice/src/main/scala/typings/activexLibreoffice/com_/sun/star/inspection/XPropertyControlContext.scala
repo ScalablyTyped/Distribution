@@ -21,8 +21,7 @@ trait XPropertyControlContext
 }
 object XPropertyControlContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activateNextControl: XPropertyControl => Unit,
     focusGained: XPropertyControl => Unit,
     valueChanged: XPropertyControl => Unit
@@ -31,10 +30,8 @@ object XPropertyControlContext {
     __obj.asInstanceOf[XPropertyControlContext]
   }
   
-  @scala.inline
-  implicit class XPropertyControlContextMutableBuilder[Self <: XPropertyControlContext] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertyControlContext](x: Self) {
     
-    @scala.inline
-    def setActivateNextControl(value: XPropertyControl => Unit): Self = StObject.set(x, "activateNextControl", js.Any.fromFunction1(value))
+    inline def setActivateNextControl(value: XPropertyControl => Unit): Self = StObject.set(x, "activateNextControl", js.Any.fromFunction1(value))
   }
 }

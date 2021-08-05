@@ -23,28 +23,21 @@ trait ListDataSetRevisionsRequest extends StObject {
 }
 object ListDataSetRevisionsRequest {
   
-  @scala.inline
-  def apply(DataSetId: string): ListDataSetRevisionsRequest = {
+  inline def apply(DataSetId: string): ListDataSetRevisionsRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataSetRevisionsRequest]
   }
   
-  @scala.inline
-  implicit class ListDataSetRevisionsRequestMutableBuilder[Self <: ListDataSetRevisionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDataSetRevisionsRequest](x: Self) {
     
-    @scala.inline
-    def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

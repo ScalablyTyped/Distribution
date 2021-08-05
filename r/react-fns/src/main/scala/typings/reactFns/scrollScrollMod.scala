@@ -38,8 +38,7 @@ object scrollScrollMod {
     @JSImport("react-fns/dist/Scroll/Scroll", "Scroll.defaultProps")
     @js.native
     def defaultProps: PartialScrollConfig = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialScrollConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialScrollConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait ScrollConfig extends StObject {
@@ -48,20 +47,16 @@ object scrollScrollMod {
   }
   object ScrollConfig {
     
-    @scala.inline
-    def apply(): ScrollConfig = {
+    inline def apply(): ScrollConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScrollConfig]
     }
     
-    @scala.inline
-    implicit class ScrollConfigMutableBuilder[Self <: ScrollConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollConfig](x: Self) {
       
-      @scala.inline
-      def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+      inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
+      inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
     }
   }
   
@@ -73,20 +68,16 @@ object scrollScrollMod {
   }
   object ScrollProps {
     
-    @scala.inline
-    def apply(x: Double, y: Double): ScrollProps = {
+    inline def apply(x: Double, y: Double): ScrollProps = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollProps]
     }
     
-    @scala.inline
-    implicit class ScrollPropsMutableBuilder[Self <: ScrollProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollProps](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

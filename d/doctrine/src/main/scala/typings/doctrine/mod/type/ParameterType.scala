@@ -17,23 +17,18 @@ trait ParameterType
 }
 object ParameterType {
   
-  @scala.inline
-  def apply(expression: Type_, name: String): ParameterType = {
+  inline def apply(expression: Type_, name: String): ParameterType = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ParameterType")
     __obj.asInstanceOf[ParameterType]
   }
   
-  @scala.inline
-  implicit class ParameterTypeMutableBuilder[Self <: ParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterType](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.doctrine.doctrineStrings.ParameterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.doctrine.doctrineStrings.ParameterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

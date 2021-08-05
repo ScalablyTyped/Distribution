@@ -18,16 +18,13 @@ trait ASPxClientTabControlTabEventArgs
 }
 object ASPxClientTabControlTabEventArgs {
   
-  @scala.inline
-  def apply(tab: ASPxClientTab): ASPxClientTabControlTabEventArgs = {
+  inline def apply(tab: ASPxClientTab): ASPxClientTabControlTabEventArgs = {
     val __obj = js.Dynamic.literal(tab = tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTabControlTabEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTabControlTabEventArgsMutableBuilder[Self <: ASPxClientTabControlTabEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTabControlTabEventArgs](x: Self) {
     
-    @scala.inline
-    def setTab(value: ASPxClientTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: ASPxClientTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

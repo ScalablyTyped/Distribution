@@ -15,13 +15,10 @@ object mod {
   @JSImport("hi-base32", "decode")
   @js.native
   def decode: Decode_ = js.native
-  @scala.inline
-  def decode_=(x: Decode_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decode")(x.asInstanceOf[js.Any])
+  inline def decode_=(x: Decode_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decode")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def encode(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def encode(input: Input, asciiOnly: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any], asciiOnly.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(input: Input, asciiOnly: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any], asciiOnly.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native
   trait Decode_ extends StObject {

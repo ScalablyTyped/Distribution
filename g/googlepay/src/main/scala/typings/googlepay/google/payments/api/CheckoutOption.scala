@@ -31,9 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CheckoutOption extends StObject
 object CheckoutOption {
   
-  @scala.inline
-  def COMPLETE_IMMEDIATE_PURCHASE: typings.googlepay.googlepayStrings.COMPLETE_IMMEDIATE_PURCHASE = "COMPLETE_IMMEDIATE_PURCHASE".asInstanceOf[typings.googlepay.googlepayStrings.COMPLETE_IMMEDIATE_PURCHASE]
+  inline def COMPLETE_IMMEDIATE_PURCHASE: typings.googlepay.googlepayStrings.COMPLETE_IMMEDIATE_PURCHASE = "COMPLETE_IMMEDIATE_PURCHASE".asInstanceOf[typings.googlepay.googlepayStrings.COMPLETE_IMMEDIATE_PURCHASE]
   
-  @scala.inline
-  def DEFAULT: typings.googlepay.googlepayStrings.DEFAULT = "DEFAULT".asInstanceOf[typings.googlepay.googlepayStrings.DEFAULT]
+  inline def DEFAULT: typings.googlepay.googlepayStrings.DEFAULT = "DEFAULT".asInstanceOf[typings.googlepay.googlepayStrings.DEFAULT]
 }

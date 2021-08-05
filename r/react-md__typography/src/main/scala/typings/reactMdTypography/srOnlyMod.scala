@@ -27,20 +27,16 @@ object srOnlyMod {
   }
   object SrOnlyProps {
     
-    @scala.inline
-    def apply(): SrOnlyProps = {
+    inline def apply(): SrOnlyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SrOnlyProps]
     }
     
-    @scala.inline
-    implicit class SrOnlyPropsMutableBuilder[Self <: SrOnlyProps] (val x: Self) extends AnyVal {
+    extension [Self <: SrOnlyProps](x: Self) {
       
-      @scala.inline
-      def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+      inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
+      inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     }
   }
 }

@@ -15,26 +15,22 @@ object localeMod {
     @JSImport("timezonecomplete/dist/lib/locale", "DAY_PERIODS_ABBREVIATED.am")
     @js.native
     def am: String = js.native
-    @scala.inline
-    def am_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("am")(x.asInstanceOf[js.Any])
+    inline def am_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("am")(x.asInstanceOf[js.Any])
     
     @JSImport("timezonecomplete/dist/lib/locale", "DAY_PERIODS_ABBREVIATED.midnight")
     @js.native
     def midnight: String = js.native
-    @scala.inline
-    def midnight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("midnight")(x.asInstanceOf[js.Any])
+    inline def midnight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("midnight")(x.asInstanceOf[js.Any])
     
     @JSImport("timezonecomplete/dist/lib/locale", "DAY_PERIODS_ABBREVIATED.noon")
     @js.native
     def noon: String = js.native
-    @scala.inline
-    def noon_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noon")(x.asInstanceOf[js.Any])
+    inline def noon_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noon")(x.asInstanceOf[js.Any])
     
     @JSImport("timezonecomplete/dist/lib/locale", "DAY_PERIODS_ABBREVIATED.pm")
     @js.native
     def pm: String = js.native
-    @scala.inline
-    def pm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pm")(x.asInstanceOf[js.Any])
+    inline def pm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pm")(x.asInstanceOf[js.Any])
   }
   
   object DAY_PERIODS_NARROW {
@@ -46,26 +42,22 @@ object localeMod {
     @JSImport("timezonecomplete/dist/lib/locale", "DAY_PERIODS_NARROW.am")
     @js.native
     def am: String = js.native
-    @scala.inline
-    def am_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("am")(x.asInstanceOf[js.Any])
+    inline def am_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("am")(x.asInstanceOf[js.Any])
     
     @JSImport("timezonecomplete/dist/lib/locale", "DAY_PERIODS_NARROW.midnight")
     @js.native
     def midnight: String = js.native
-    @scala.inline
-    def midnight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("midnight")(x.asInstanceOf[js.Any])
+    inline def midnight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("midnight")(x.asInstanceOf[js.Any])
     
     @JSImport("timezonecomplete/dist/lib/locale", "DAY_PERIODS_NARROW.noon")
     @js.native
     def noon: String = js.native
-    @scala.inline
-    def noon_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noon")(x.asInstanceOf[js.Any])
+    inline def noon_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noon")(x.asInstanceOf[js.Any])
     
     @JSImport("timezonecomplete/dist/lib/locale", "DAY_PERIODS_NARROW.pm")
     @js.native
     def pm: String = js.native
-    @scala.inline
-    def pm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pm")(x.asInstanceOf[js.Any])
+    inline def pm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pm")(x.asInstanceOf[js.Any])
   }
   
   object DAY_PERIODS_WIDE {
@@ -77,26 +69,22 @@ object localeMod {
     @JSImport("timezonecomplete/dist/lib/locale", "DAY_PERIODS_WIDE.am")
     @js.native
     def am: String = js.native
-    @scala.inline
-    def am_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("am")(x.asInstanceOf[js.Any])
+    inline def am_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("am")(x.asInstanceOf[js.Any])
     
     @JSImport("timezonecomplete/dist/lib/locale", "DAY_PERIODS_WIDE.midnight")
     @js.native
     def midnight: String = js.native
-    @scala.inline
-    def midnight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("midnight")(x.asInstanceOf[js.Any])
+    inline def midnight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("midnight")(x.asInstanceOf[js.Any])
     
     @JSImport("timezonecomplete/dist/lib/locale", "DAY_PERIODS_WIDE.noon")
     @js.native
     def noon: String = js.native
-    @scala.inline
-    def noon_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noon")(x.asInstanceOf[js.Any])
+    inline def noon_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noon")(x.asInstanceOf[js.Any])
     
     @JSImport("timezonecomplete/dist/lib/locale", "DAY_PERIODS_WIDE.pm")
     @js.native
     def pm: String = js.native
-    @scala.inline
-    def pm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pm")(x.asInstanceOf[js.Any])
+    inline def pm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pm")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("timezonecomplete/dist/lib/locale", "DEFAULT_LOCALE")
@@ -191,26 +179,20 @@ object localeMod {
   }
   object DayPeriod {
     
-    @scala.inline
-    def apply(am: String, midnight: String, noon: String, pm: String): DayPeriod = {
+    inline def apply(am: String, midnight: String, noon: String, pm: String): DayPeriod = {
       val __obj = js.Dynamic.literal(am = am.asInstanceOf[js.Any], midnight = midnight.asInstanceOf[js.Any], noon = noon.asInstanceOf[js.Any], pm = pm.asInstanceOf[js.Any])
       __obj.asInstanceOf[DayPeriod]
     }
     
-    @scala.inline
-    implicit class DayPeriodMutableBuilder[Self <: DayPeriod] (val x: Self) extends AnyVal {
+    extension [Self <: DayPeriod](x: Self) {
       
-      @scala.inline
-      def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
+      inline def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMidnight(value: String): Self = StObject.set(x, "midnight", value.asInstanceOf[js.Any])
+      inline def setMidnight(value: String): Self = StObject.set(x, "midnight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoon(value: String): Self = StObject.set(x, "noon", value.asInstanceOf[js.Any])
+      inline def setNoon(value: String): Self = StObject.set(x, "noon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPm(value: String): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
+      inline def setPm(value: String): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
     }
   }
   
@@ -295,8 +277,7 @@ object localeMod {
   }
   object Locale {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dayPeriodAbbreviated: DayPeriod,
       dayPeriodNarrow: DayPeriod,
       dayPeriodWide: DayPeriod,
@@ -324,110 +305,75 @@ object localeMod {
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setDayPeriodAbbreviated(value: DayPeriod): Self = StObject.set(x, "dayPeriodAbbreviated", value.asInstanceOf[js.Any])
+      inline def setDayPeriodAbbreviated(value: DayPeriod): Self = StObject.set(x, "dayPeriodAbbreviated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayPeriodNarrow(value: DayPeriod): Self = StObject.set(x, "dayPeriodNarrow", value.asInstanceOf[js.Any])
+      inline def setDayPeriodNarrow(value: DayPeriod): Self = StObject.set(x, "dayPeriodNarrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayPeriodWide(value: DayPeriod): Self = StObject.set(x, "dayPeriodWide", value.asInstanceOf[js.Any])
+      inline def setDayPeriodWide(value: DayPeriod): Self = StObject.set(x, "dayPeriodWide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEraAbbreviated(value: js.Tuple2[String, String]): Self = StObject.set(x, "eraAbbreviated", value.asInstanceOf[js.Any])
+      inline def setEraAbbreviated(value: js.Tuple2[String, String]): Self = StObject.set(x, "eraAbbreviated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEraNarrow(value: js.Tuple2[String, String]): Self = StObject.set(x, "eraNarrow", value.asInstanceOf[js.Any])
+      inline def setEraNarrow(value: js.Tuple2[String, String]): Self = StObject.set(x, "eraNarrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEraWide(value: js.Tuple2[String, String]): Self = StObject.set(x, "eraWide", value.asInstanceOf[js.Any])
+      inline def setEraWide(value: js.Tuple2[String, String]): Self = StObject.set(x, "eraWide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "longMonthNames", value.asInstanceOf[js.Any])
+      inline def setLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "longMonthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "longMonthNames", js.Array(value :_*))
+      inline def setLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "longMonthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setLongWeekdayNames(value: js.Array[String]): Self = StObject.set(x, "longWeekdayNames", value.asInstanceOf[js.Any])
+      inline def setLongWeekdayNames(value: js.Array[String]): Self = StObject.set(x, "longWeekdayNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "longWeekdayNames", js.Array(value :_*))
+      inline def setLongWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "longWeekdayNames", js.Array(value :_*))
       
-      @scala.inline
-      def setMonthLetters(value: js.Array[String]): Self = StObject.set(x, "monthLetters", value.asInstanceOf[js.Any])
+      inline def setMonthLetters(value: js.Array[String]): Self = StObject.set(x, "monthLetters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthLettersVarargs(value: String*): Self = StObject.set(x, "monthLetters", js.Array(value :_*))
+      inline def setMonthLettersVarargs(value: String*): Self = StObject.set(x, "monthLetters", js.Array(value :_*))
       
-      @scala.inline
-      def setQuarterAbbreviations(value: js.Array[String]): Self = StObject.set(x, "quarterAbbreviations", value.asInstanceOf[js.Any])
+      inline def setQuarterAbbreviations(value: js.Array[String]): Self = StObject.set(x, "quarterAbbreviations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "quarterAbbreviations", js.Array(value :_*))
+      inline def setQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "quarterAbbreviations", js.Array(value :_*))
       
-      @scala.inline
-      def setQuarterLetter(value: String): Self = StObject.set(x, "quarterLetter", value.asInstanceOf[js.Any])
+      inline def setQuarterLetter(value: String): Self = StObject.set(x, "quarterLetter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuarterWord(value: String): Self = StObject.set(x, "quarterWord", value.asInstanceOf[js.Any])
+      inline def setQuarterWord(value: String): Self = StObject.set(x, "quarterWord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortMonthNames(value: js.Array[String]): Self = StObject.set(x, "shortMonthNames", value.asInstanceOf[js.Any])
+      inline def setShortMonthNames(value: js.Array[String]): Self = StObject.set(x, "shortMonthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "shortMonthNames", js.Array(value :_*))
+      inline def setShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "shortMonthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setShortWeekdayNames(value: js.Array[String]): Self = StObject.set(x, "shortWeekdayNames", value.asInstanceOf[js.Any])
+      inline def setShortWeekdayNames(value: js.Array[String]): Self = StObject.set(x, "shortWeekdayNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "shortWeekdayNames", js.Array(value :_*))
+      inline def setShortWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "shortWeekdayNames", js.Array(value :_*))
       
-      @scala.inline
-      def setStandAloneLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "standAloneLongMonthNames", value.asInstanceOf[js.Any])
+      inline def setStandAloneLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "standAloneLongMonthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandAloneLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneLongMonthNames", js.Array(value :_*))
+      inline def setStandAloneLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneLongMonthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setStandAloneMonthLetters(value: js.Array[String]): Self = StObject.set(x, "standAloneMonthLetters", value.asInstanceOf[js.Any])
+      inline def setStandAloneMonthLetters(value: js.Array[String]): Self = StObject.set(x, "standAloneMonthLetters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandAloneMonthLettersVarargs(value: String*): Self = StObject.set(x, "standAloneMonthLetters", js.Array(value :_*))
+      inline def setStandAloneMonthLettersVarargs(value: String*): Self = StObject.set(x, "standAloneMonthLetters", js.Array(value :_*))
       
-      @scala.inline
-      def setStandAloneQuarterAbbreviations(value: js.Array[String]): Self = StObject.set(x, "standAloneQuarterAbbreviations", value.asInstanceOf[js.Any])
+      inline def setStandAloneQuarterAbbreviations(value: js.Array[String]): Self = StObject.set(x, "standAloneQuarterAbbreviations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandAloneQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "standAloneQuarterAbbreviations", js.Array(value :_*))
+      inline def setStandAloneQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "standAloneQuarterAbbreviations", js.Array(value :_*))
       
-      @scala.inline
-      def setStandAloneQuarterLetter(value: String): Self = StObject.set(x, "standAloneQuarterLetter", value.asInstanceOf[js.Any])
+      inline def setStandAloneQuarterLetter(value: String): Self = StObject.set(x, "standAloneQuarterLetter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandAloneQuarterWord(value: String): Self = StObject.set(x, "standAloneQuarterWord", value.asInstanceOf[js.Any])
+      inline def setStandAloneQuarterWord(value: String): Self = StObject.set(x, "standAloneQuarterWord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandAloneShortMonthNames(value: js.Array[String]): Self = StObject.set(x, "standAloneShortMonthNames", value.asInstanceOf[js.Any])
+      inline def setStandAloneShortMonthNames(value: js.Array[String]): Self = StObject.set(x, "standAloneShortMonthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandAloneShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneShortMonthNames", js.Array(value :_*))
+      inline def setStandAloneShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneShortMonthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setWeekdayLetters(value: js.Array[String]): Self = StObject.set(x, "weekdayLetters", value.asInstanceOf[js.Any])
+      inline def setWeekdayLetters(value: js.Array[String]): Self = StObject.set(x, "weekdayLetters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdayLettersVarargs(value: String*): Self = StObject.set(x, "weekdayLetters", js.Array(value :_*))
+      inline def setWeekdayLettersVarargs(value: String*): Self = StObject.set(x, "weekdayLetters", js.Array(value :_*))
       
-      @scala.inline
-      def setWeekdayTwoLetters(value: js.Array[String]): Self = StObject.set(x, "weekdayTwoLetters", value.asInstanceOf[js.Any])
+      inline def setWeekdayTwoLetters(value: js.Array[String]): Self = StObject.set(x, "weekdayTwoLetters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdayTwoLettersVarargs(value: String*): Self = StObject.set(x, "weekdayTwoLetters", js.Array(value :_*))
+      inline def setWeekdayTwoLettersVarargs(value: String*): Self = StObject.set(x, "weekdayTwoLetters", js.Array(value :_*))
     }
   }
   
@@ -512,182 +458,124 @@ object localeMod {
   }
   object PartialLocale {
     
-    @scala.inline
-    def apply(): PartialLocale = {
+    inline def apply(): PartialLocale = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialLocale]
     }
     
-    @scala.inline
-    implicit class PartialLocaleMutableBuilder[Self <: PartialLocale] (val x: Self) extends AnyVal {
+    extension [Self <: PartialLocale](x: Self) {
       
-      @scala.inline
-      def setDayPeriodAbbreviated(value: DayPeriod): Self = StObject.set(x, "dayPeriodAbbreviated", value.asInstanceOf[js.Any])
+      inline def setDayPeriodAbbreviated(value: DayPeriod): Self = StObject.set(x, "dayPeriodAbbreviated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayPeriodAbbreviatedUndefined: Self = StObject.set(x, "dayPeriodAbbreviated", js.undefined)
+      inline def setDayPeriodAbbreviatedUndefined: Self = StObject.set(x, "dayPeriodAbbreviated", js.undefined)
       
-      @scala.inline
-      def setDayPeriodNarrow(value: DayPeriod): Self = StObject.set(x, "dayPeriodNarrow", value.asInstanceOf[js.Any])
+      inline def setDayPeriodNarrow(value: DayPeriod): Self = StObject.set(x, "dayPeriodNarrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayPeriodNarrowUndefined: Self = StObject.set(x, "dayPeriodNarrow", js.undefined)
+      inline def setDayPeriodNarrowUndefined: Self = StObject.set(x, "dayPeriodNarrow", js.undefined)
       
-      @scala.inline
-      def setDayPeriodWide(value: DayPeriod): Self = StObject.set(x, "dayPeriodWide", value.asInstanceOf[js.Any])
+      inline def setDayPeriodWide(value: DayPeriod): Self = StObject.set(x, "dayPeriodWide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayPeriodWideUndefined: Self = StObject.set(x, "dayPeriodWide", js.undefined)
+      inline def setDayPeriodWideUndefined: Self = StObject.set(x, "dayPeriodWide", js.undefined)
       
-      @scala.inline
-      def setEraAbbreviated(value: js.Tuple2[String, String]): Self = StObject.set(x, "eraAbbreviated", value.asInstanceOf[js.Any])
+      inline def setEraAbbreviated(value: js.Tuple2[String, String]): Self = StObject.set(x, "eraAbbreviated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEraAbbreviatedUndefined: Self = StObject.set(x, "eraAbbreviated", js.undefined)
+      inline def setEraAbbreviatedUndefined: Self = StObject.set(x, "eraAbbreviated", js.undefined)
       
-      @scala.inline
-      def setEraNarrow(value: js.Tuple2[String, String]): Self = StObject.set(x, "eraNarrow", value.asInstanceOf[js.Any])
+      inline def setEraNarrow(value: js.Tuple2[String, String]): Self = StObject.set(x, "eraNarrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEraNarrowUndefined: Self = StObject.set(x, "eraNarrow", js.undefined)
+      inline def setEraNarrowUndefined: Self = StObject.set(x, "eraNarrow", js.undefined)
       
-      @scala.inline
-      def setEraWide(value: js.Tuple2[String, String]): Self = StObject.set(x, "eraWide", value.asInstanceOf[js.Any])
+      inline def setEraWide(value: js.Tuple2[String, String]): Self = StObject.set(x, "eraWide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEraWideUndefined: Self = StObject.set(x, "eraWide", js.undefined)
+      inline def setEraWideUndefined: Self = StObject.set(x, "eraWide", js.undefined)
       
-      @scala.inline
-      def setLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "longMonthNames", value.asInstanceOf[js.Any])
+      inline def setLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "longMonthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongMonthNamesUndefined: Self = StObject.set(x, "longMonthNames", js.undefined)
+      inline def setLongMonthNamesUndefined: Self = StObject.set(x, "longMonthNames", js.undefined)
       
-      @scala.inline
-      def setLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "longMonthNames", js.Array(value :_*))
+      inline def setLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "longMonthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setLongWeekdayNames(value: js.Array[String]): Self = StObject.set(x, "longWeekdayNames", value.asInstanceOf[js.Any])
+      inline def setLongWeekdayNames(value: js.Array[String]): Self = StObject.set(x, "longWeekdayNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongWeekdayNamesUndefined: Self = StObject.set(x, "longWeekdayNames", js.undefined)
+      inline def setLongWeekdayNamesUndefined: Self = StObject.set(x, "longWeekdayNames", js.undefined)
       
-      @scala.inline
-      def setLongWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "longWeekdayNames", js.Array(value :_*))
+      inline def setLongWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "longWeekdayNames", js.Array(value :_*))
       
-      @scala.inline
-      def setMonthLetters(value: js.Array[String]): Self = StObject.set(x, "monthLetters", value.asInstanceOf[js.Any])
+      inline def setMonthLetters(value: js.Array[String]): Self = StObject.set(x, "monthLetters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthLettersUndefined: Self = StObject.set(x, "monthLetters", js.undefined)
+      inline def setMonthLettersUndefined: Self = StObject.set(x, "monthLetters", js.undefined)
       
-      @scala.inline
-      def setMonthLettersVarargs(value: String*): Self = StObject.set(x, "monthLetters", js.Array(value :_*))
+      inline def setMonthLettersVarargs(value: String*): Self = StObject.set(x, "monthLetters", js.Array(value :_*))
       
-      @scala.inline
-      def setQuarterAbbreviations(value: js.Array[String]): Self = StObject.set(x, "quarterAbbreviations", value.asInstanceOf[js.Any])
+      inline def setQuarterAbbreviations(value: js.Array[String]): Self = StObject.set(x, "quarterAbbreviations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuarterAbbreviationsUndefined: Self = StObject.set(x, "quarterAbbreviations", js.undefined)
+      inline def setQuarterAbbreviationsUndefined: Self = StObject.set(x, "quarterAbbreviations", js.undefined)
       
-      @scala.inline
-      def setQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "quarterAbbreviations", js.Array(value :_*))
+      inline def setQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "quarterAbbreviations", js.Array(value :_*))
       
-      @scala.inline
-      def setQuarterLetter(value: String): Self = StObject.set(x, "quarterLetter", value.asInstanceOf[js.Any])
+      inline def setQuarterLetter(value: String): Self = StObject.set(x, "quarterLetter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuarterLetterUndefined: Self = StObject.set(x, "quarterLetter", js.undefined)
+      inline def setQuarterLetterUndefined: Self = StObject.set(x, "quarterLetter", js.undefined)
       
-      @scala.inline
-      def setQuarterWord(value: String): Self = StObject.set(x, "quarterWord", value.asInstanceOf[js.Any])
+      inline def setQuarterWord(value: String): Self = StObject.set(x, "quarterWord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuarterWordUndefined: Self = StObject.set(x, "quarterWord", js.undefined)
+      inline def setQuarterWordUndefined: Self = StObject.set(x, "quarterWord", js.undefined)
       
-      @scala.inline
-      def setShortMonthNames(value: js.Array[String]): Self = StObject.set(x, "shortMonthNames", value.asInstanceOf[js.Any])
+      inline def setShortMonthNames(value: js.Array[String]): Self = StObject.set(x, "shortMonthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortMonthNamesUndefined: Self = StObject.set(x, "shortMonthNames", js.undefined)
+      inline def setShortMonthNamesUndefined: Self = StObject.set(x, "shortMonthNames", js.undefined)
       
-      @scala.inline
-      def setShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "shortMonthNames", js.Array(value :_*))
+      inline def setShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "shortMonthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setShortWeekdayNames(value: js.Array[String]): Self = StObject.set(x, "shortWeekdayNames", value.asInstanceOf[js.Any])
+      inline def setShortWeekdayNames(value: js.Array[String]): Self = StObject.set(x, "shortWeekdayNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortWeekdayNamesUndefined: Self = StObject.set(x, "shortWeekdayNames", js.undefined)
+      inline def setShortWeekdayNamesUndefined: Self = StObject.set(x, "shortWeekdayNames", js.undefined)
       
-      @scala.inline
-      def setShortWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "shortWeekdayNames", js.Array(value :_*))
+      inline def setShortWeekdayNamesVarargs(value: String*): Self = StObject.set(x, "shortWeekdayNames", js.Array(value :_*))
       
-      @scala.inline
-      def setStandAloneLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "standAloneLongMonthNames", value.asInstanceOf[js.Any])
+      inline def setStandAloneLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "standAloneLongMonthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandAloneLongMonthNamesUndefined: Self = StObject.set(x, "standAloneLongMonthNames", js.undefined)
+      inline def setStandAloneLongMonthNamesUndefined: Self = StObject.set(x, "standAloneLongMonthNames", js.undefined)
       
-      @scala.inline
-      def setStandAloneLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneLongMonthNames", js.Array(value :_*))
+      inline def setStandAloneLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneLongMonthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setStandAloneMonthLetters(value: js.Array[String]): Self = StObject.set(x, "standAloneMonthLetters", value.asInstanceOf[js.Any])
+      inline def setStandAloneMonthLetters(value: js.Array[String]): Self = StObject.set(x, "standAloneMonthLetters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandAloneMonthLettersUndefined: Self = StObject.set(x, "standAloneMonthLetters", js.undefined)
+      inline def setStandAloneMonthLettersUndefined: Self = StObject.set(x, "standAloneMonthLetters", js.undefined)
       
-      @scala.inline
-      def setStandAloneMonthLettersVarargs(value: String*): Self = StObject.set(x, "standAloneMonthLetters", js.Array(value :_*))
+      inline def setStandAloneMonthLettersVarargs(value: String*): Self = StObject.set(x, "standAloneMonthLetters", js.Array(value :_*))
       
-      @scala.inline
-      def setStandAloneQuarterAbbreviations(value: js.Array[String]): Self = StObject.set(x, "standAloneQuarterAbbreviations", value.asInstanceOf[js.Any])
+      inline def setStandAloneQuarterAbbreviations(value: js.Array[String]): Self = StObject.set(x, "standAloneQuarterAbbreviations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandAloneQuarterAbbreviationsUndefined: Self = StObject.set(x, "standAloneQuarterAbbreviations", js.undefined)
+      inline def setStandAloneQuarterAbbreviationsUndefined: Self = StObject.set(x, "standAloneQuarterAbbreviations", js.undefined)
       
-      @scala.inline
-      def setStandAloneQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "standAloneQuarterAbbreviations", js.Array(value :_*))
+      inline def setStandAloneQuarterAbbreviationsVarargs(value: String*): Self = StObject.set(x, "standAloneQuarterAbbreviations", js.Array(value :_*))
       
-      @scala.inline
-      def setStandAloneQuarterLetter(value: String): Self = StObject.set(x, "standAloneQuarterLetter", value.asInstanceOf[js.Any])
+      inline def setStandAloneQuarterLetter(value: String): Self = StObject.set(x, "standAloneQuarterLetter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandAloneQuarterLetterUndefined: Self = StObject.set(x, "standAloneQuarterLetter", js.undefined)
+      inline def setStandAloneQuarterLetterUndefined: Self = StObject.set(x, "standAloneQuarterLetter", js.undefined)
       
-      @scala.inline
-      def setStandAloneQuarterWord(value: String): Self = StObject.set(x, "standAloneQuarterWord", value.asInstanceOf[js.Any])
+      inline def setStandAloneQuarterWord(value: String): Self = StObject.set(x, "standAloneQuarterWord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandAloneQuarterWordUndefined: Self = StObject.set(x, "standAloneQuarterWord", js.undefined)
+      inline def setStandAloneQuarterWordUndefined: Self = StObject.set(x, "standAloneQuarterWord", js.undefined)
       
-      @scala.inline
-      def setStandAloneShortMonthNames(value: js.Array[String]): Self = StObject.set(x, "standAloneShortMonthNames", value.asInstanceOf[js.Any])
+      inline def setStandAloneShortMonthNames(value: js.Array[String]): Self = StObject.set(x, "standAloneShortMonthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandAloneShortMonthNamesUndefined: Self = StObject.set(x, "standAloneShortMonthNames", js.undefined)
+      inline def setStandAloneShortMonthNamesUndefined: Self = StObject.set(x, "standAloneShortMonthNames", js.undefined)
       
-      @scala.inline
-      def setStandAloneShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneShortMonthNames", js.Array(value :_*))
+      inline def setStandAloneShortMonthNamesVarargs(value: String*): Self = StObject.set(x, "standAloneShortMonthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setWeekdayLetters(value: js.Array[String]): Self = StObject.set(x, "weekdayLetters", value.asInstanceOf[js.Any])
+      inline def setWeekdayLetters(value: js.Array[String]): Self = StObject.set(x, "weekdayLetters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdayLettersUndefined: Self = StObject.set(x, "weekdayLetters", js.undefined)
+      inline def setWeekdayLettersUndefined: Self = StObject.set(x, "weekdayLetters", js.undefined)
       
-      @scala.inline
-      def setWeekdayLettersVarargs(value: String*): Self = StObject.set(x, "weekdayLetters", js.Array(value :_*))
+      inline def setWeekdayLettersVarargs(value: String*): Self = StObject.set(x, "weekdayLetters", js.Array(value :_*))
       
-      @scala.inline
-      def setWeekdayTwoLetters(value: js.Array[String]): Self = StObject.set(x, "weekdayTwoLetters", value.asInstanceOf[js.Any])
+      inline def setWeekdayTwoLetters(value: js.Array[String]): Self = StObject.set(x, "weekdayTwoLetters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdayTwoLettersUndefined: Self = StObject.set(x, "weekdayTwoLetters", js.undefined)
+      inline def setWeekdayTwoLettersUndefined: Self = StObject.set(x, "weekdayTwoLetters", js.undefined)
       
-      @scala.inline
-      def setWeekdayTwoLettersVarargs(value: String*): Self = StObject.set(x, "weekdayTwoLetters", js.Array(value :_*))
+      inline def setWeekdayTwoLettersVarargs(value: String*): Self = StObject.set(x, "weekdayTwoLetters", js.Array(value :_*))
     }
   }
 }

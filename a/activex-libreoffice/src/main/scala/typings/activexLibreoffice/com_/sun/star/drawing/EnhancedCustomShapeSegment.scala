@@ -12,19 +12,15 @@ trait EnhancedCustomShapeSegment extends StObject {
 }
 object EnhancedCustomShapeSegment {
   
-  @scala.inline
-  def apply(Command: Double, Count: Double): EnhancedCustomShapeSegment = {
+  inline def apply(Command: Double, Count: Double): EnhancedCustomShapeSegment = {
     val __obj = js.Dynamic.literal(Command = Command.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnhancedCustomShapeSegment]
   }
   
-  @scala.inline
-  implicit class EnhancedCustomShapeSegmentMutableBuilder[Self <: EnhancedCustomShapeSegment] (val x: Self) extends AnyVal {
+  extension [Self <: EnhancedCustomShapeSegment](x: Self) {
     
-    @scala.inline
-    def setCommand(value: Double): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Double): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
   }
 }

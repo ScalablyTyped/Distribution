@@ -43,8 +43,7 @@ trait ISearchPage extends StObject {
 }
 object ISearchPage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qCount: Double,
     qGroupItemOptions: js.Array[ISearchGroupItemOptions],
     qGroupOptions: js.Array[ISearchGroupOptions],
@@ -55,28 +54,20 @@ object ISearchPage {
     __obj.asInstanceOf[ISearchPage]
   }
   
-  @scala.inline
-  implicit class ISearchPageMutableBuilder[Self <: ISearchPage] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchPage](x: Self) {
     
-    @scala.inline
-    def setQCount(value: Double): Self = StObject.set(x, "qCount", value.asInstanceOf[js.Any])
+    inline def setQCount(value: Double): Self = StObject.set(x, "qCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGroupItemOptions(value: js.Array[ISearchGroupItemOptions]): Self = StObject.set(x, "qGroupItemOptions", value.asInstanceOf[js.Any])
+    inline def setQGroupItemOptions(value: js.Array[ISearchGroupItemOptions]): Self = StObject.set(x, "qGroupItemOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGroupItemOptionsVarargs(value: ISearchGroupItemOptions*): Self = StObject.set(x, "qGroupItemOptions", js.Array(value :_*))
+    inline def setQGroupItemOptionsVarargs(value: ISearchGroupItemOptions*): Self = StObject.set(x, "qGroupItemOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setQGroupOptions(value: js.Array[ISearchGroupOptions]): Self = StObject.set(x, "qGroupOptions", value.asInstanceOf[js.Any])
+    inline def setQGroupOptions(value: js.Array[ISearchGroupOptions]): Self = StObject.set(x, "qGroupOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGroupOptionsVarargs(value: ISearchGroupOptions*): Self = StObject.set(x, "qGroupOptions", js.Array(value :_*))
+    inline def setQGroupOptionsVarargs(value: ISearchGroupOptions*): Self = StObject.set(x, "qGroupOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setQMaxNbrFieldMatches(value: Double): Self = StObject.set(x, "qMaxNbrFieldMatches", value.asInstanceOf[js.Any])
+    inline def setQMaxNbrFieldMatches(value: Double): Self = StObject.set(x, "qMaxNbrFieldMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOffset(value: Double): Self = StObject.set(x, "qOffset", value.asInstanceOf[js.Any])
+    inline def setQOffset(value: Double): Self = StObject.set(x, "qOffset", value.asInstanceOf[js.Any])
   }
 }

@@ -20,20 +20,16 @@ object typesMod {
   }
   object AfterHookParam {
     
-    @scala.inline
-    def apply[T](afterFn: js.Function, afterFnArgs: T => js.Tuple2[js.Any, T]): AfterHookParam[T] = {
+    inline def apply[T](afterFn: js.Function, afterFnArgs: T => js.Tuple2[js.Any, T]): AfterHookParam[T] = {
       val __obj = js.Dynamic.literal(afterFn = afterFn.asInstanceOf[js.Any], afterFnArgs = js.Any.fromFunction1(afterFnArgs))
       __obj.asInstanceOf[AfterHookParam[T]]
     }
     
-    @scala.inline
-    implicit class AfterHookParamMutableBuilder[Self <: AfterHookParam[?], T] (val x: Self & AfterHookParam[T]) extends AnyVal {
+    extension [Self <: AfterHookParam[?], T](x: Self & AfterHookParam[T]) {
       
-      @scala.inline
-      def setAfterFn(value: js.Function): Self = StObject.set(x, "afterFn", value.asInstanceOf[js.Any])
+      inline def setAfterFn(value: js.Function): Self = StObject.set(x, "afterFn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterFnArgs(value: T => js.Tuple2[js.Any, T]): Self = StObject.set(x, "afterFnArgs", js.Any.fromFunction1(value))
+      inline def setAfterFnArgs(value: T => js.Tuple2[js.Any, T]): Self = StObject.set(x, "afterFnArgs", js.Any.fromFunction1(value))
     }
   }
   
@@ -47,20 +43,16 @@ object typesMod {
   }
   object BeforeHookParam {
     
-    @scala.inline
-    def apply[T](beforeFn: js.Function, beforeFnArgs: T => js.Tuple2[js.Any, T]): BeforeHookParam[T] = {
+    inline def apply[T](beforeFn: js.Function, beforeFnArgs: T => js.Tuple2[js.Any, T]): BeforeHookParam[T] = {
       val __obj = js.Dynamic.literal(beforeFn = beforeFn.asInstanceOf[js.Any], beforeFnArgs = js.Any.fromFunction1(beforeFnArgs))
       __obj.asInstanceOf[BeforeHookParam[T]]
     }
     
-    @scala.inline
-    implicit class BeforeHookParamMutableBuilder[Self <: BeforeHookParam[?], T] (val x: Self & BeforeHookParam[T]) extends AnyVal {
+    extension [Self <: BeforeHookParam[?], T](x: Self & BeforeHookParam[T]) {
       
-      @scala.inline
-      def setBeforeFn(value: js.Function): Self = StObject.set(x, "beforeFn", value.asInstanceOf[js.Any])
+      inline def setBeforeFn(value: js.Function): Self = StObject.set(x, "beforeFn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeFnArgs(value: T => js.Tuple2[js.Any, T]): Self = StObject.set(x, "beforeFnArgs", js.Any.fromFunction1(value))
+      inline def setBeforeFnArgs(value: T => js.Tuple2[js.Any, T]): Self = StObject.set(x, "beforeFnArgs", js.Any.fromFunction1(value))
     }
   }
   
@@ -72,20 +64,16 @@ object typesMod {
   }
   object JasmineContext {
     
-    @scala.inline
-    def apply(failedExpectations: js.Array[Record[String, js.Any]]): JasmineContext = {
+    inline def apply(failedExpectations: js.Array[Record[String, js.Any]]): JasmineContext = {
       val __obj = js.Dynamic.literal(failedExpectations = failedExpectations.asInstanceOf[js.Any])
       __obj.asInstanceOf[JasmineContext]
     }
     
-    @scala.inline
-    implicit class JasmineContextMutableBuilder[Self <: JasmineContext] (val x: Self) extends AnyVal {
+    extension [Self <: JasmineContext](x: Self) {
       
-      @scala.inline
-      def setFailedExpectations(value: js.Array[Record[String, js.Any]]): Self = StObject.set(x, "failedExpectations", value.asInstanceOf[js.Any])
+      inline def setFailedExpectations(value: js.Array[Record[String, js.Any]]): Self = StObject.set(x, "failedExpectations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedExpectationsVarargs(value: (Record[String, js.Any])*): Self = StObject.set(x, "failedExpectations", js.Array(value :_*))
+      inline def setFailedExpectationsVarargs(value: (Record[String, js.Any])*): Self = StObject.set(x, "failedExpectations", js.Array(value :_*))
     }
   }
   
@@ -99,23 +87,18 @@ object typesMod {
   }
   object SpecFunction {
     
-    @scala.inline
-    def apply(specFn: js.Function, specFnArgs: js.Array[js.Any]): SpecFunction = {
+    inline def apply(specFn: js.Function, specFnArgs: js.Array[js.Any]): SpecFunction = {
       val __obj = js.Dynamic.literal(specFn = specFn.asInstanceOf[js.Any], specFnArgs = specFnArgs.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpecFunction]
     }
     
-    @scala.inline
-    implicit class SpecFunctionMutableBuilder[Self <: SpecFunction] (val x: Self) extends AnyVal {
+    extension [Self <: SpecFunction](x: Self) {
       
-      @scala.inline
-      def setSpecFn(value: js.Function): Self = StObject.set(x, "specFn", value.asInstanceOf[js.Any])
+      inline def setSpecFn(value: js.Function): Self = StObject.set(x, "specFn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecFnArgs(value: js.Array[js.Any]): Self = StObject.set(x, "specFnArgs", value.asInstanceOf[js.Any])
+      inline def setSpecFnArgs(value: js.Array[js.Any]): Self = StObject.set(x, "specFnArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecFnArgsVarargs(value: js.Any*): Self = StObject.set(x, "specFnArgs", js.Array(value :_*))
+      inline def setSpecFnArgsVarargs(value: js.Any*): Self = StObject.set(x, "specFnArgs", js.Array(value :_*))
     }
   }
   
@@ -156,8 +139,7 @@ object typesMod {
   }
   object WrapperMethods {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       executeAsync: js.ThisFunction3[
           /* this */ js.Any, 
           /* fn */ js.Function, 
@@ -178,11 +160,9 @@ object typesMod {
       __obj.asInstanceOf[WrapperMethods]
     }
     
-    @scala.inline
-    implicit class WrapperMethodsMutableBuilder[Self <: WrapperMethods] (val x: Self) extends AnyVal {
+    extension [Self <: WrapperMethods](x: Self) {
       
-      @scala.inline
-      def setExecuteAsync(
+      inline def setExecuteAsync(
         value: js.ThisFunction3[
               /* this */ js.Any, 
               /* fn */ js.Function, 
@@ -192,11 +172,9 @@ object typesMod {
             ]
       ): Self = StObject.set(x, "executeAsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecuteHooksWithArgs(value: FnCall): Self = StObject.set(x, "executeHooksWithArgs", value.asInstanceOf[js.Any])
+      inline def setExecuteHooksWithArgs(value: FnCall): Self = StObject.set(x, "executeHooksWithArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunSync(
+      inline def setRunSync(
         value: js.ThisFunction3[
               /* this */ js.Any, 
               /* fn */ js.Function, 

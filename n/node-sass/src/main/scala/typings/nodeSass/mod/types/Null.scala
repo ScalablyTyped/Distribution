@@ -24,10 +24,8 @@ object Null {
   @js.native
   val ^ : NullConstructor = js.native
   
-  @scala.inline
-  implicit class NullMutableBuilder[Self <: Null] (val x: Self) extends AnyVal {
+  extension [Self <: Null](x: Self) {
     
-    @scala.inline
-    def set___NULL___(value: js.Symbol): Self = StObject.set(x, "___NULL___", value.asInstanceOf[js.Any])
+    inline def set___NULL___(value: js.Symbol): Self = StObject.set(x, "___NULL___", value.asInstanceOf[js.Any])
   }
 }

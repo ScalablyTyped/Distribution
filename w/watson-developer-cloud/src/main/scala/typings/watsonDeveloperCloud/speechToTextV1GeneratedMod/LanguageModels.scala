@@ -12,19 +12,15 @@ trait LanguageModels extends StObject {
 }
 object LanguageModels {
   
-  @scala.inline
-  def apply(customizations: js.Array[LanguageModel]): LanguageModels = {
+  inline def apply(customizations: js.Array[LanguageModel]): LanguageModels = {
     val __obj = js.Dynamic.literal(customizations = customizations.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageModels]
   }
   
-  @scala.inline
-  implicit class LanguageModelsMutableBuilder[Self <: LanguageModels] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageModels](x: Self) {
     
-    @scala.inline
-    def setCustomizations(value: js.Array[LanguageModel]): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
+    inline def setCustomizations(value: js.Array[LanguageModel]): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomizationsVarargs(value: LanguageModel*): Self = StObject.set(x, "customizations", js.Array(value :_*))
+    inline def setCustomizationsVarargs(value: LanguageModel*): Self = StObject.set(x, "customizations", js.Array(value :_*))
   }
 }

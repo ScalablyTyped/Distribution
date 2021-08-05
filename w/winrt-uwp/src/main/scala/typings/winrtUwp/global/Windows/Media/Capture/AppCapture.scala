@@ -40,6 +40,5 @@ object AppCapture {
   @JSGlobal("Windows.Media.Capture.AppCapture.getForCurrentView")
   @js.native
   def getForCurrentView: js.Any = js.native
-  @scala.inline
-  def getForCurrentView_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
+  inline def getForCurrentView_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
 }

@@ -23,8 +23,7 @@ trait ServeDetails extends StObject {
 }
 object ServeDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     custom: Boolean,
     externalAddress: String,
     externalNetworkInterfaces: js.Array[NetworkInterface],
@@ -37,31 +36,22 @@ object ServeDetails {
     __obj.asInstanceOf[ServeDetails]
   }
   
-  @scala.inline
-  implicit class ServeDetailsMutableBuilder[Self <: ServeDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ServeDetails](x: Self) {
     
-    @scala.inline
-    def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalAddress(value: String): Self = StObject.set(x, "externalAddress", value.asInstanceOf[js.Any])
+    inline def setExternalAddress(value: String): Self = StObject.set(x, "externalAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalNetworkInterfaces(value: js.Array[NetworkInterface]): Self = StObject.set(x, "externalNetworkInterfaces", value.asInstanceOf[js.Any])
+    inline def setExternalNetworkInterfaces(value: js.Array[NetworkInterface]): Self = StObject.set(x, "externalNetworkInterfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "externalNetworkInterfaces", js.Array(value :_*))
+    inline def setExternalNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "externalNetworkInterfaces", js.Array(value :_*))
     
-    @scala.inline
-    def setExternallyAccessible(value: Boolean): Self = StObject.set(x, "externallyAccessible", value.asInstanceOf[js.Any])
+    inline def setExternallyAccessible(value: Boolean): Self = StObject.set(x, "externallyAccessible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+    inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

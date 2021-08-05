@@ -328,8 +328,7 @@ trait StylesProps extends StObject {
 }
 object StylesProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignContent: styleFn,
     alignItems: styleFn,
     alignSelf: styleFn,
@@ -413,241 +412,162 @@ object StylesProps {
     __obj.asInstanceOf[StylesProps]
   }
   
-  @scala.inline
-  implicit class StylesPropsMutableBuilder[Self <: StylesProps] (val x: Self) extends AnyVal {
+  extension [Self <: StylesProps](x: Self) {
     
-    @scala.inline
-    def setAlignContent(value: styleFn): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
+    inline def setAlignContent(value: styleFn): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignItems(value: styleFn): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: styleFn): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignSelf(value: styleFn): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+    inline def setAlignSelf(value: styleFn): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackground(value: styleFn): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: styleFn): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColor(value: styleFn): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: styleFn): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImage(value: styleFn): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
+    inline def setBackgroundImage(value: styleFn): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundPosition(value: styleFn): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
+    inline def setBackgroundPosition(value: styleFn): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundRepeat(value: styleFn): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
+    inline def setBackgroundRepeat(value: styleFn): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundSize(value: styleFn): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
+    inline def setBackgroundSize(value: styleFn): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: styleFn): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: styleFn): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottom(value: styleFn): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+    inline def setBorderBottom(value: styleFn): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColor(value: styleFn): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: styleFn): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderLeft(value: styleFn): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+    inline def setBorderLeft(value: styleFn): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadius(value: styleFn): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: styleFn): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRight(value: styleFn): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+    inline def setBorderRight(value: styleFn): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTop(value: styleFn): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+    inline def setBorderTop(value: styleFn): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorders(value: styleFn): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
+    inline def setBorders(value: styleFn): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottom(value: styleFn): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: styleFn): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxShadow(value: styleFn): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
+    inline def setBoxShadow(value: styleFn): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonStyle(value: styleFn): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
+    inline def setButtonStyle(value: styleFn): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: styleFn): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: styleFn): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorStyle(value: styleFn): Self = StObject.set(x, "colorStyle", value.asInstanceOf[js.Any])
+    inline def setColorStyle(value: styleFn): Self = StObject.set(x, "colorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay(value: styleFn): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: styleFn): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlex(value: styleFn): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    inline def setFlex(value: styleFn): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexBasis(value: styleFn): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
+    inline def setFlexBasis(value: styleFn): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexDirection(value: styleFn): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: styleFn): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexWrap(value: styleFn): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
+    inline def setFlexWrap(value: styleFn): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamily(value: styleFn): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: styleFn): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: styleFn): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: styleFn): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStyle(value: styleFn): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: styleFn): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeight(value: styleFn): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: styleFn): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridArea(value: styleFn): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
+    inline def setGridArea(value: styleFn): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAutoColumns(value: styleFn): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
+    inline def setGridAutoColumns(value: styleFn): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAutoFlow(value: styleFn): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
+    inline def setGridAutoFlow(value: styleFn): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAutoRows(value: styleFn): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
+    inline def setGridAutoRows(value: styleFn): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridColumn(value: styleFn): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
+    inline def setGridColumn(value: styleFn): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridColumnGap(value: styleFn): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
+    inline def setGridColumnGap(value: styleFn): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridGap(value: styleFn): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
+    inline def setGridGap(value: styleFn): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridRow(value: styleFn): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
+    inline def setGridRow(value: styleFn): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridRowGap(value: styleFn): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
+    inline def setGridRowGap(value: styleFn): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridTemplateAreas(value: styleFn): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
+    inline def setGridTemplateAreas(value: styleFn): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridTemplateColumns(value: styleFn): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
+    inline def setGridTemplateColumns(value: styleFn): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridTemplateRows(value: styleFn): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
+    inline def setGridTemplateRows(value: styleFn): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: styleFn): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: styleFn): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustifyContent(value: styleFn): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+    inline def setJustifyContent(value: styleFn): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustifyItems(value: styleFn): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
+    inline def setJustifyItems(value: styleFn): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustifySelf(value: styleFn): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
+    inline def setJustifySelf(value: styleFn): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: styleFn): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: styleFn): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterSpacing(value: styleFn): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: styleFn): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeight(value: styleFn): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: styleFn): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMargin(value: styleFn): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: styleFn): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginBottom(value: styleFn): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+    inline def setMarginBottom(value: styleFn): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeft(value: styleFn): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: styleFn): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginRight(value: styleFn): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+    inline def setMarginRight(value: styleFn): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTop(value: styleFn): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: styleFn): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeight(value: styleFn): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: styleFn): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidth(value: styleFn): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: styleFn): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinHeight(value: styleFn): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    inline def setMinHeight(value: styleFn): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidth(value: styleFn): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: styleFn): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: styleFn): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: styleFn): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: styleFn): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: styleFn): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflow(value: styleFn): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: styleFn): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: styleFn): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: styleFn): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingBottom(value: styleFn): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+    inline def setPaddingBottom(value: styleFn): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingLeft(value: styleFn): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+    inline def setPaddingLeft(value: styleFn): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingRight(value: styleFn): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+    inline def setPaddingRight(value: styleFn): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingTop(value: styleFn): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+    inline def setPaddingTop(value: styleFn): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: styleFn): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: styleFn): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: styleFn): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: styleFn): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: styleFn): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: styleFn): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpace(value: styleFn): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: styleFn): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlign(value: styleFn): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: styleFn): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor(value: styleFn): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: styleFn): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyle(value: styleFn): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: styleFn): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: styleFn): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: styleFn): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlign(value: styleFn): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: styleFn): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: styleFn): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: styleFn): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndex(value: styleFn): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: styleFn): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
   }
 }

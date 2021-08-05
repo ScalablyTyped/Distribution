@@ -15,22 +15,17 @@ trait Handle extends StObject {
 }
 object Handle {
   
-  @scala.inline
-  def apply(handle: HTMLElement, scrollbar: HTMLElement, track: HTMLElement): Handle = {
+  inline def apply(handle: HTMLElement, scrollbar: HTMLElement, track: HTMLElement): Handle = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], scrollbar = scrollbar.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[Handle]
   }
   
-  @scala.inline
-  implicit class HandleMutableBuilder[Self <: Handle] (val x: Self) extends AnyVal {
+  extension [Self <: Handle](x: Self) {
     
-    @scala.inline
-    def setHandle(value: HTMLElement): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: HTMLElement): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollbar(value: HTMLElement): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
+    inline def setScrollbar(value: HTMLElement): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack(value: HTMLElement): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: HTMLElement): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
   }
 }

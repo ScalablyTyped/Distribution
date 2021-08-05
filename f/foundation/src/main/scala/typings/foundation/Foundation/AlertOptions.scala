@@ -11,19 +11,15 @@ trait AlertOptions extends StObject {
 }
 object AlertOptions {
   
-  @scala.inline
-  def apply(): AlertOptions = {
+  inline def apply(): AlertOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AlertOptions]
   }
   
-  @scala.inline
-  implicit class AlertOptionsMutableBuilder[Self <: AlertOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AlertOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
   }
 }

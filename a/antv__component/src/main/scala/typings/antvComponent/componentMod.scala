@@ -92,7 +92,7 @@ object componentMod {
       */
     def init(): Unit = js.native
     
-    var initCfg: js.Any = js.native
+    /* private */ var initCfg: js.Any = js.native
     
     def isList(): Boolean = js.native
     

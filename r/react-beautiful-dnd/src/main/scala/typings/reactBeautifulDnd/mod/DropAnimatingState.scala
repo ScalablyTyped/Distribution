@@ -22,8 +22,7 @@ trait DropAnimatingState
 }
 object DropAnimatingState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     completed: CompletedDrag,
     dimensions: DimensionMap,
     dropDuration: Double,
@@ -33,22 +32,16 @@ object DropAnimatingState {
     __obj.asInstanceOf[DropAnimatingState]
   }
   
-  @scala.inline
-  implicit class DropAnimatingStateMutableBuilder[Self <: DropAnimatingState] (val x: Self) extends AnyVal {
+  extension [Self <: DropAnimatingState](x: Self) {
     
-    @scala.inline
-    def setCompleted(value: CompletedDrag): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: CompletedDrag): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensions(value: DimensionMap): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: DimensionMap): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropDuration(value: Double): Self = StObject.set(x, "dropDuration", value.asInstanceOf[js.Any])
+    inline def setDropDuration(value: Double): Self = StObject.set(x, "dropDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewHomeClientOffset(value: Position): Self = StObject.set(x, "newHomeClientOffset", value.asInstanceOf[js.Any])
+    inline def setNewHomeClientOffset(value: Position): Self = StObject.set(x, "newHomeClientOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhase(value: DROP_ANIMATING): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: DROP_ANIMATING): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
   }
 }

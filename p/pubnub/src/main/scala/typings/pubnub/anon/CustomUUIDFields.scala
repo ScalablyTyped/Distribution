@@ -16,37 +16,27 @@ trait CustomUUIDFields extends StObject {
 }
 object CustomUUIDFields {
   
-  @scala.inline
-  def apply(): CustomUUIDFields = {
+  inline def apply(): CustomUUIDFields = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomUUIDFields]
   }
   
-  @scala.inline
-  implicit class CustomUUIDFieldsMutableBuilder[Self <: CustomUUIDFields] (val x: Self) extends AnyVal {
+  extension [Self <: CustomUUIDFields](x: Self) {
     
-    @scala.inline
-    def setCustomFields(value: Boolean): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    inline def setCustomFields(value: Boolean): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
+    inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
-    @scala.inline
-    def setCustomUUIDFields(value: Boolean): Self = StObject.set(x, "customUUIDFields", value.asInstanceOf[js.Any])
+    inline def setCustomUUIDFields(value: Boolean): Self = StObject.set(x, "customUUIDFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUUIDFieldsUndefined: Self = StObject.set(x, "customUUIDFields", js.undefined)
+    inline def setCustomUUIDFieldsUndefined: Self = StObject.set(x, "customUUIDFields", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: Boolean): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Boolean): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
     
-    @scala.inline
-    def setUUIDFields(value: Boolean): Self = StObject.set(x, "UUIDFields", value.asInstanceOf[js.Any])
+    inline def setUUIDFields(value: Boolean): Self = StObject.set(x, "UUIDFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUUIDFieldsUndefined: Self = StObject.set(x, "UUIDFields", js.undefined)
+    inline def setUUIDFieldsUndefined: Self = StObject.set(x, "UUIDFields", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait DescribeScalingPlanResourcesResponse extends StObject {
 }
 object DescribeScalingPlanResourcesResponse {
   
-  @scala.inline
-  def apply(): DescribeScalingPlanResourcesResponse = {
+  inline def apply(): DescribeScalingPlanResourcesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeScalingPlanResourcesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeScalingPlanResourcesResponseMutableBuilder[Self <: DescribeScalingPlanResourcesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeScalingPlanResourcesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setScalingPlanResources(value: ScalingPlanResources): Self = StObject.set(x, "ScalingPlanResources", value.asInstanceOf[js.Any])
+    inline def setScalingPlanResources(value: ScalingPlanResources): Self = StObject.set(x, "ScalingPlanResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingPlanResourcesUndefined: Self = StObject.set(x, "ScalingPlanResources", js.undefined)
+    inline def setScalingPlanResourcesUndefined: Self = StObject.set(x, "ScalingPlanResources", js.undefined)
     
-    @scala.inline
-    def setScalingPlanResourcesVarargs(value: ScalingPlanResource*): Self = StObject.set(x, "ScalingPlanResources", js.Array(value :_*))
+    inline def setScalingPlanResourcesVarargs(value: ScalingPlanResource*): Self = StObject.set(x, "ScalingPlanResources", js.Array(value :_*))
   }
 }

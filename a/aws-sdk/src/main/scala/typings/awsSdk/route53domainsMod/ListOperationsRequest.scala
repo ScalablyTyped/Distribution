@@ -23,31 +23,23 @@ trait ListOperationsRequest extends StObject {
 }
 object ListOperationsRequest {
   
-  @scala.inline
-  def apply(): ListOperationsRequest = {
+  inline def apply(): ListOperationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOperationsRequest]
   }
   
-  @scala.inline
-  implicit class ListOperationsRequestMutableBuilder[Self <: ListOperationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListOperationsRequest](x: Self) {
     
-    @scala.inline
-    def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setSubmittedSince(value: Timestamp): Self = StObject.set(x, "SubmittedSince", value.asInstanceOf[js.Any])
+    inline def setSubmittedSince(value: Timestamp): Self = StObject.set(x, "SubmittedSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmittedSinceUndefined: Self = StObject.set(x, "SubmittedSince", js.undefined)
+    inline def setSubmittedSinceUndefined: Self = StObject.set(x, "SubmittedSince", js.undefined)
   }
 }

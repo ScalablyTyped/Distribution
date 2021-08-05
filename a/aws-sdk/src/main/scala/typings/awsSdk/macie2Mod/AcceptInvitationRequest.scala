@@ -18,19 +18,15 @@ trait AcceptInvitationRequest extends StObject {
 }
 object AcceptInvitationRequest {
   
-  @scala.inline
-  def apply(invitationId: string, masterAccount: string): AcceptInvitationRequest = {
+  inline def apply(invitationId: string, masterAccount: string): AcceptInvitationRequest = {
     val __obj = js.Dynamic.literal(invitationId = invitationId.asInstanceOf[js.Any], masterAccount = masterAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptInvitationRequest]
   }
   
-  @scala.inline
-  implicit class AcceptInvitationRequestMutableBuilder[Self <: AcceptInvitationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptInvitationRequest](x: Self) {
     
-    @scala.inline
-    def setInvitationId(value: string): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
+    inline def setInvitationId(value: string): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterAccount(value: string): Self = StObject.set(x, "masterAccount", value.asInstanceOf[js.Any])
+    inline def setMasterAccount(value: string): Self = StObject.set(x, "masterAccount", value.asInstanceOf[js.Any])
   }
 }

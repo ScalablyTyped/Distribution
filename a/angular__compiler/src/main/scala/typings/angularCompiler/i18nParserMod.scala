@@ -13,8 +13,7 @@ object i18nParserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createI18nMessageFactory(interpolationConfig: InterpolationConfig): I18nMessageFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createI18nMessageFactory")(interpolationConfig.asInstanceOf[js.Any]).asInstanceOf[I18nMessageFactory]
+  inline def createI18nMessageFactory(interpolationConfig: InterpolationConfig): I18nMessageFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createI18nMessageFactory")(interpolationConfig.asInstanceOf[js.Any]).asInstanceOf[I18nMessageFactory]
   
   type I18nMessageFactory = js.Function5[
     /* nodes */ js.Array[Node], 

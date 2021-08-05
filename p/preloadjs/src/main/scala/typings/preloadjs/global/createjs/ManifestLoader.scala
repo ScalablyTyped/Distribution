@@ -19,9 +19,7 @@ object ManifestLoader {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def canLoadItem(item: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canLoadItem")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def canLoadItem(item: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canLoadItem")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   // methods
-  @scala.inline
-  def canLoadItem(item: typings.preloadjs.createjs.LoadItem): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canLoadItem")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def canLoadItem(item: typings.preloadjs.createjs.LoadItem): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canLoadItem")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -29,55 +29,39 @@ trait Glossary extends StObject {
 }
 object Glossary {
   
-  @scala.inline
-  def apply(): Glossary = {
+  inline def apply(): Glossary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Glossary]
   }
   
-  @scala.inline
-  implicit class GlossaryMutableBuilder[Self <: Glossary] (val x: Self) extends AnyVal {
+  extension [Self <: Glossary](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setEntryCount(value: Double): Self = StObject.set(x, "entryCount", value.asInstanceOf[js.Any])
+    inline def setEntryCount(value: Double): Self = StObject.set(x, "entryCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryCountUndefined: Self = StObject.set(x, "entryCount", js.undefined)
+    inline def setEntryCountUndefined: Self = StObject.set(x, "entryCount", js.undefined)
     
-    @scala.inline
-    def setInputConfig(value: GlossaryInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
+    inline def setInputConfig(value: GlossaryInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
+    inline def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
-    @scala.inline
-    def setLanguageCodesSet(value: LanguageCodesSet): Self = StObject.set(x, "languageCodesSet", value.asInstanceOf[js.Any])
+    inline def setLanguageCodesSet(value: LanguageCodesSet): Self = StObject.set(x, "languageCodesSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodesSetUndefined: Self = StObject.set(x, "languageCodesSet", js.undefined)
+    inline def setLanguageCodesSetUndefined: Self = StObject.set(x, "languageCodesSet", js.undefined)
     
-    @scala.inline
-    def setLanguagePair(value: LanguageCodePair): Self = StObject.set(x, "languagePair", value.asInstanceOf[js.Any])
+    inline def setLanguagePair(value: LanguageCodePair): Self = StObject.set(x, "languagePair", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagePairUndefined: Self = StObject.set(x, "languagePair", js.undefined)
+    inline def setLanguagePairUndefined: Self = StObject.set(x, "languagePair", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSubmitTime(value: String): Self = StObject.set(x, "submitTime", value.asInstanceOf[js.Any])
+    inline def setSubmitTime(value: String): Self = StObject.set(x, "submitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitTimeUndefined: Self = StObject.set(x, "submitTime", js.undefined)
+    inline def setSubmitTimeUndefined: Self = StObject.set(x, "submitTime", js.undefined)
   }
 }

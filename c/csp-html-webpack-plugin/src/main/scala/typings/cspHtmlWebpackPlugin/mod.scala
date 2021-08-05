@@ -85,41 +85,30 @@ object mod {
   }
   object AdditionalOptions {
     
-    @scala.inline
-    def apply(): AdditionalOptions = {
+    inline def apply(): AdditionalOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdditionalOptions]
     }
     
-    @scala.inline
-    implicit class AdditionalOptionsMutableBuilder[Self <: AdditionalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AdditionalOptions](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean | (js.Function1[/* htmlPluginData */ HtmlPluginData, Boolean])): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean | (js.Function1[/* htmlPluginData */ HtmlPluginData, Boolean])): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledFunction1(value: /* htmlPluginData */ HtmlPluginData => Boolean): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
+      inline def setEnabledFunction1(value: /* htmlPluginData */ HtmlPluginData => Boolean): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setHashEnabled(value: StringDictionary[Boolean]): Self = StObject.set(x, "hashEnabled", value.asInstanceOf[js.Any])
+      inline def setHashEnabled(value: StringDictionary[Boolean]): Self = StObject.set(x, "hashEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashEnabledUndefined: Self = StObject.set(x, "hashEnabled", js.undefined)
+      inline def setHashEnabledUndefined: Self = StObject.set(x, "hashEnabled", js.undefined)
       
-      @scala.inline
-      def setHashingMethod(value: sha256 | sha384 | sha512): Self = StObject.set(x, "hashingMethod", value.asInstanceOf[js.Any])
+      inline def setHashingMethod(value: sha256 | sha384 | sha512): Self = StObject.set(x, "hashingMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashingMethodUndefined: Self = StObject.set(x, "hashingMethod", js.undefined)
+      inline def setHashingMethodUndefined: Self = StObject.set(x, "hashingMethod", js.undefined)
       
-      @scala.inline
-      def setNonceEnabled(value: StringDictionary[Boolean]): Self = StObject.set(x, "nonceEnabled", value.asInstanceOf[js.Any])
+      inline def setNonceEnabled(value: StringDictionary[Boolean]): Self = StObject.set(x, "nonceEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceEnabledUndefined: Self = StObject.set(x, "nonceEnabled", js.undefined)
+      inline def setNonceEnabledUndefined: Self = StObject.set(x, "nonceEnabled", js.undefined)
     }
   }
   
@@ -132,19 +121,16 @@ object mod {
   }
   object CspHtmlWebpackPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackCompiler */ js.Any => Unit
     ): CspHtmlWebpackPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[CspHtmlWebpackPlugin]
     }
     
-    @scala.inline
-    implicit class CspHtmlWebpackPluginMutableBuilder[Self <: CspHtmlWebpackPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: CspHtmlWebpackPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(
+      inline def setApply(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackCompiler */ js.Any => Unit
       ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -162,17 +148,14 @@ object mod {
   }
   object HtmlPluginDataHookV3 {
     
-    @scala.inline
-    def apply[T](htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): HtmlPluginDataHookV3[T] = {
+    inline def apply[T](htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): HtmlPluginDataHookV3[T] = {
       val __obj = js.Dynamic.literal(htmlWebpackPluginAfterHtmlProcessing = htmlWebpackPluginAfterHtmlProcessing.asInstanceOf[js.Any])
       __obj.asInstanceOf[HtmlPluginDataHookV3[T]]
     }
     
-    @scala.inline
-    implicit class HtmlPluginDataHookV3MutableBuilder[Self <: HtmlPluginDataHookV3[?], T] (val x: Self & HtmlPluginDataHookV3[T]) extends AnyVal {
+    extension [Self <: HtmlPluginDataHookV3[?], T](x: Self & HtmlPluginDataHookV3[T]) {
       
-      @scala.inline
-      def setHtmlWebpackPluginAfterHtmlProcessing(value: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): Self = StObject.set(x, "htmlWebpackPluginAfterHtmlProcessing", value.asInstanceOf[js.Any])
+      inline def setHtmlWebpackPluginAfterHtmlProcessing(value: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): Self = StObject.set(x, "htmlWebpackPluginAfterHtmlProcessing", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,17 +165,14 @@ object mod {
   }
   object HtmlPluginDataHookV4 {
     
-    @scala.inline
-    def apply[T](beforeEmit: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): HtmlPluginDataHookV4[T] = {
+    inline def apply[T](beforeEmit: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): HtmlPluginDataHookV4[T] = {
       val __obj = js.Dynamic.literal(beforeEmit = beforeEmit.asInstanceOf[js.Any])
       __obj.asInstanceOf[HtmlPluginDataHookV4[T]]
     }
     
-    @scala.inline
-    implicit class HtmlPluginDataHookV4MutableBuilder[Self <: HtmlPluginDataHookV4[?], T] (val x: Self & HtmlPluginDataHookV4[T]) extends AnyVal {
+    extension [Self <: HtmlPluginDataHookV4[?], T](x: Self & HtmlPluginDataHookV4[T]) {
       
-      @scala.inline
-      def setBeforeEmit(value: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): Self = StObject.set(x, "beforeEmit", value.asInstanceOf[js.Any])
+      inline def setBeforeEmit(value: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): Self = StObject.set(x, "beforeEmit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,20 +202,16 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setCspPlugin(value: AdditionalOptionspolicyPo): Self = StObject.set(x, "cspPlugin", value.asInstanceOf[js.Any])
+        inline def setCspPlugin(value: AdditionalOptionspolicyPo): Self = StObject.set(x, "cspPlugin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCspPluginUndefined: Self = StObject.set(x, "cspPlugin", js.undefined)
+        inline def setCspPluginUndefined: Self = StObject.set(x, "cspPlugin", js.undefined)
       }
     }
   }

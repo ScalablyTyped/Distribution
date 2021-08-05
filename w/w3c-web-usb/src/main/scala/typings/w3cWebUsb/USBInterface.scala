@@ -16,8 +16,7 @@ trait USBInterface extends StObject {
 }
 object USBInterface {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternate: USBAlternateInterface,
     alternates: js.Array[USBAlternateInterface],
     claimed: Boolean,
@@ -27,22 +26,16 @@ object USBInterface {
     __obj.asInstanceOf[USBInterface]
   }
   
-  @scala.inline
-  implicit class USBInterfaceMutableBuilder[Self <: USBInterface] (val x: Self) extends AnyVal {
+  extension [Self <: USBInterface](x: Self) {
     
-    @scala.inline
-    def setAlternate(value: USBAlternateInterface): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
+    inline def setAlternate(value: USBAlternateInterface): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternates(value: js.Array[USBAlternateInterface]): Self = StObject.set(x, "alternates", value.asInstanceOf[js.Any])
+    inline def setAlternates(value: js.Array[USBAlternateInterface]): Self = StObject.set(x, "alternates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternatesVarargs(value: USBAlternateInterface*): Self = StObject.set(x, "alternates", js.Array(value :_*))
+    inline def setAlternatesVarargs(value: USBAlternateInterface*): Self = StObject.set(x, "alternates", js.Array(value :_*))
     
-    @scala.inline
-    def setClaimed(value: Boolean): Self = StObject.set(x, "claimed", value.asInstanceOf[js.Any])
+    inline def setClaimed(value: Boolean): Self = StObject.set(x, "claimed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceNumber(value: Double): Self = StObject.set(x, "interfaceNumber", value.asInstanceOf[js.Any])
+    inline def setInterfaceNumber(value: Double): Self = StObject.set(x, "interfaceNumber", value.asInstanceOf[js.Any])
   }
 }

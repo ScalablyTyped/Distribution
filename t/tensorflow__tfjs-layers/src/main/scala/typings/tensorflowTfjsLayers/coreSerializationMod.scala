@@ -33,17 +33,14 @@ object coreSerializationMod {
   }
   object ActivationLayerConfig {
     
-    @scala.inline
-    def apply(activation: ActivationSerialization): ActivationLayerConfig = {
+    inline def apply(activation: ActivationSerialization): ActivationLayerConfig = {
       val __obj = js.Dynamic.literal(activation = activation.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActivationLayerConfig]
     }
     
-    @scala.inline
-    implicit class ActivationLayerConfigMutableBuilder[Self <: ActivationLayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ActivationLayerConfig](x: Self) {
       
-      @scala.inline
-      def setActivation(value: ActivationSerialization): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+      inline def setActivation(value: ActivationSerialization): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,29 +60,21 @@ object coreSerializationMod {
   trait CoreLayerClassName extends StObject
   object CoreLayerClassName {
     
-    @scala.inline
-    def Activation: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Activation = "Activation".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Activation]
+    inline def Activation: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Activation = "Activation".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Activation]
     
-    @scala.inline
-    def Dense: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dense = "Dense".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dense]
+    inline def Dense: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dense = "Dense".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dense]
     
-    @scala.inline
-    def Dropout: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dropout = "Dropout".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dropout]
+    inline def Dropout: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dropout = "Dropout".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dropout]
     
-    @scala.inline
-    def Flatten: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Flatten = "Flatten".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Flatten]
+    inline def Flatten: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Flatten = "Flatten".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Flatten]
     
-    @scala.inline
-    def Masking: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Masking = "Masking".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Masking]
+    inline def Masking: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Masking = "Masking".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Masking]
     
-    @scala.inline
-    def Permute: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Permute = "Permute".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Permute]
+    inline def Permute: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Permute = "Permute".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Permute]
     
-    @scala.inline
-    def RepeatVector: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RepeatVector = "RepeatVector".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RepeatVector]
+    inline def RepeatVector: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RepeatVector = "RepeatVector".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RepeatVector]
     
-    @scala.inline
-    def Reshape: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Reshape = "Reshape".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Reshape]
+    inline def Reshape: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Reshape = "Reshape".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Reshape]
   }
   
   type CoreLayerSerialization = DropoutLayerSerialization | DenseLayerSerialization | FlattenLayerSerialization | ActivationLayerSerialization | RepeatVectorLayerSerialization | ReshapeLayerSerialization | PermuteLayerSerialization | MaskingLayerSerialization
@@ -118,77 +107,54 @@ object coreSerializationMod {
   }
   object DenseLayerConfig {
     
-    @scala.inline
-    def apply(units: Double): DenseLayerConfig = {
+    inline def apply(units: Double): DenseLayerConfig = {
       val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any])
       __obj.asInstanceOf[DenseLayerConfig]
     }
     
-    @scala.inline
-    implicit class DenseLayerConfigMutableBuilder[Self <: DenseLayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DenseLayerConfig](x: Self) {
       
-      @scala.inline
-      def setActivation(value: ActivationSerialization): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+      inline def setActivation(value: ActivationSerialization): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
+      inline def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
       
-      @scala.inline
-      def setActivity_regularizer(value: RegularizerSerialization): Self = StObject.set(x, "activity_regularizer", value.asInstanceOf[js.Any])
+      inline def setActivity_regularizer(value: RegularizerSerialization): Self = StObject.set(x, "activity_regularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivity_regularizerUndefined: Self = StObject.set(x, "activity_regularizer", js.undefined)
+      inline def setActivity_regularizerUndefined: Self = StObject.set(x, "activity_regularizer", js.undefined)
       
-      @scala.inline
-      def setBias_constraint(value: ConstraintSerialization): Self = StObject.set(x, "bias_constraint", value.asInstanceOf[js.Any])
+      inline def setBias_constraint(value: ConstraintSerialization): Self = StObject.set(x, "bias_constraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBias_constraintUndefined: Self = StObject.set(x, "bias_constraint", js.undefined)
+      inline def setBias_constraintUndefined: Self = StObject.set(x, "bias_constraint", js.undefined)
       
-      @scala.inline
-      def setBias_initializer(value: InitializerSerialization): Self = StObject.set(x, "bias_initializer", value.asInstanceOf[js.Any])
+      inline def setBias_initializer(value: InitializerSerialization): Self = StObject.set(x, "bias_initializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBias_initializerUndefined: Self = StObject.set(x, "bias_initializer", js.undefined)
+      inline def setBias_initializerUndefined: Self = StObject.set(x, "bias_initializer", js.undefined)
       
-      @scala.inline
-      def setBias_regularizer(value: RegularizerSerialization): Self = StObject.set(x, "bias_regularizer", value.asInstanceOf[js.Any])
+      inline def setBias_regularizer(value: RegularizerSerialization): Self = StObject.set(x, "bias_regularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBias_regularizerUndefined: Self = StObject.set(x, "bias_regularizer", js.undefined)
+      inline def setBias_regularizerUndefined: Self = StObject.set(x, "bias_regularizer", js.undefined)
       
-      @scala.inline
-      def setInput_dim(value: Double): Self = StObject.set(x, "input_dim", value.asInstanceOf[js.Any])
+      inline def setInput_dim(value: Double): Self = StObject.set(x, "input_dim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput_dimUndefined: Self = StObject.set(x, "input_dim", js.undefined)
+      inline def setInput_dimUndefined: Self = StObject.set(x, "input_dim", js.undefined)
       
-      @scala.inline
-      def setKernel_constraint(value: ConstraintSerialization): Self = StObject.set(x, "kernel_constraint", value.asInstanceOf[js.Any])
+      inline def setKernel_constraint(value: ConstraintSerialization): Self = StObject.set(x, "kernel_constraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernel_constraintUndefined: Self = StObject.set(x, "kernel_constraint", js.undefined)
+      inline def setKernel_constraintUndefined: Self = StObject.set(x, "kernel_constraint", js.undefined)
       
-      @scala.inline
-      def setKernel_initializer(value: InitializerSerialization): Self = StObject.set(x, "kernel_initializer", value.asInstanceOf[js.Any])
+      inline def setKernel_initializer(value: InitializerSerialization): Self = StObject.set(x, "kernel_initializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernel_initializerUndefined: Self = StObject.set(x, "kernel_initializer", js.undefined)
+      inline def setKernel_initializerUndefined: Self = StObject.set(x, "kernel_initializer", js.undefined)
       
-      @scala.inline
-      def setKernel_regularizer(value: RegularizerSerialization): Self = StObject.set(x, "kernel_regularizer", value.asInstanceOf[js.Any])
+      inline def setKernel_regularizer(value: RegularizerSerialization): Self = StObject.set(x, "kernel_regularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernel_regularizerUndefined: Self = StObject.set(x, "kernel_regularizer", js.undefined)
+      inline def setKernel_regularizerUndefined: Self = StObject.set(x, "kernel_regularizer", js.undefined)
       
-      @scala.inline
-      def setUnits(value: Double): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+      inline def setUnits(value: Double): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse_bias(value: Boolean): Self = StObject.set(x, "use_bias", value.asInstanceOf[js.Any])
+      inline def setUse_bias(value: Boolean): Self = StObject.set(x, "use_bias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse_biasUndefined: Self = StObject.set(x, "use_bias", js.undefined)
+      inline def setUse_biasUndefined: Self = StObject.set(x, "use_bias", js.undefined)
     }
   }
   
@@ -206,32 +172,24 @@ object coreSerializationMod {
   }
   object DropoutLayerConfig {
     
-    @scala.inline
-    def apply(rate: Double): DropoutLayerConfig = {
+    inline def apply(rate: Double): DropoutLayerConfig = {
       val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropoutLayerConfig]
     }
     
-    @scala.inline
-    implicit class DropoutLayerConfigMutableBuilder[Self <: DropoutLayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DropoutLayerConfig](x: Self) {
       
-      @scala.inline
-      def setNoise_shape(value: js.Array[Double]): Self = StObject.set(x, "noise_shape", value.asInstanceOf[js.Any])
+      inline def setNoise_shape(value: js.Array[Double]): Self = StObject.set(x, "noise_shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoise_shapeUndefined: Self = StObject.set(x, "noise_shape", js.undefined)
+      inline def setNoise_shapeUndefined: Self = StObject.set(x, "noise_shape", js.undefined)
       
-      @scala.inline
-      def setNoise_shapeVarargs(value: Double*): Self = StObject.set(x, "noise_shape", js.Array(value :_*))
+      inline def setNoise_shapeVarargs(value: Double*): Self = StObject.set(x, "noise_shape", js.Array(value :_*))
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     }
   }
   
@@ -247,17 +205,14 @@ object coreSerializationMod {
   }
   object MaskingLayerConfig {
     
-    @scala.inline
-    def apply(maskValue: Double): MaskingLayerConfig = {
+    inline def apply(maskValue: Double): MaskingLayerConfig = {
       val __obj = js.Dynamic.literal(maskValue = maskValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaskingLayerConfig]
     }
     
-    @scala.inline
-    implicit class MaskingLayerConfigMutableBuilder[Self <: MaskingLayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MaskingLayerConfig](x: Self) {
       
-      @scala.inline
-      def setMaskValue(value: Double): Self = StObject.set(x, "maskValue", value.asInstanceOf[js.Any])
+      inline def setMaskValue(value: Double): Self = StObject.set(x, "maskValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -271,20 +226,16 @@ object coreSerializationMod {
   }
   object PermuteLayerConfig {
     
-    @scala.inline
-    def apply(dims: js.Array[Double]): PermuteLayerConfig = {
+    inline def apply(dims: js.Array[Double]): PermuteLayerConfig = {
       val __obj = js.Dynamic.literal(dims = dims.asInstanceOf[js.Any])
       __obj.asInstanceOf[PermuteLayerConfig]
     }
     
-    @scala.inline
-    implicit class PermuteLayerConfigMutableBuilder[Self <: PermuteLayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PermuteLayerConfig](x: Self) {
       
-      @scala.inline
-      def setDims(value: js.Array[Double]): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
+      inline def setDims(value: js.Array[Double]): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimsVarargs(value: Double*): Self = StObject.set(x, "dims", js.Array(value :_*))
+      inline def setDimsVarargs(value: Double*): Self = StObject.set(x, "dims", js.Array(value :_*))
     }
   }
   
@@ -298,17 +249,14 @@ object coreSerializationMod {
   }
   object RepeatVectorLayerConfig {
     
-    @scala.inline
-    def apply(n: Double): RepeatVectorLayerConfig = {
+    inline def apply(n: Double): RepeatVectorLayerConfig = {
       val __obj = js.Dynamic.literal(n = n.asInstanceOf[js.Any])
       __obj.asInstanceOf[RepeatVectorLayerConfig]
     }
     
-    @scala.inline
-    implicit class RepeatVectorLayerConfigMutableBuilder[Self <: RepeatVectorLayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RepeatVectorLayerConfig](x: Self) {
       
-      @scala.inline
-      def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     }
   }
   
@@ -322,20 +270,16 @@ object coreSerializationMod {
   }
   object ReshapeLayerConfig {
     
-    @scala.inline
-    def apply(target_shape: Shape): ReshapeLayerConfig = {
+    inline def apply(target_shape: Shape): ReshapeLayerConfig = {
       val __obj = js.Dynamic.literal(target_shape = target_shape.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReshapeLayerConfig]
     }
     
-    @scala.inline
-    implicit class ReshapeLayerConfigMutableBuilder[Self <: ReshapeLayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ReshapeLayerConfig](x: Self) {
       
-      @scala.inline
-      def setTarget_shape(value: Shape): Self = StObject.set(x, "target_shape", value.asInstanceOf[js.Any])
+      inline def setTarget_shape(value: Shape): Self = StObject.set(x, "target_shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget_shapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "target_shape", js.Array(value :_*))
+      inline def setTarget_shapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "target_shape", js.Array(value :_*))
     }
   }
   

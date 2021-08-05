@@ -43,8 +43,7 @@ trait XCsvLogFormatter
 }
 object XCsvLogFormatter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Columnnames: SafeArray[String],
     Head: String,
     LogEventNo: Boolean,
@@ -61,25 +60,18 @@ object XCsvLogFormatter {
     __obj.asInstanceOf[XCsvLogFormatter]
   }
   
-  @scala.inline
-  implicit class XCsvLogFormatterMutableBuilder[Self <: XCsvLogFormatter] (val x: Self) extends AnyVal {
+  extension [Self <: XCsvLogFormatter](x: Self) {
     
-    @scala.inline
-    def setColumnnames(value: SafeArray[String]): Self = StObject.set(x, "Columnnames", value.asInstanceOf[js.Any])
+    inline def setColumnnames(value: SafeArray[String]): Self = StObject.set(x, "Columnnames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatMultiColumn(value: SeqEquiv[String] => String): Self = StObject.set(x, "formatMultiColumn", js.Any.fromFunction1(value))
+    inline def setFormatMultiColumn(value: SeqEquiv[String] => String): Self = StObject.set(x, "formatMultiColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLogEventNo(value: Boolean): Self = StObject.set(x, "LogEventNo", value.asInstanceOf[js.Any])
+    inline def setLogEventNo(value: Boolean): Self = StObject.set(x, "LogEventNo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogSource(value: Boolean): Self = StObject.set(x, "LogSource", value.asInstanceOf[js.Any])
+    inline def setLogSource(value: Boolean): Self = StObject.set(x, "LogSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogThread(value: Boolean): Self = StObject.set(x, "LogThread", value.asInstanceOf[js.Any])
+    inline def setLogThread(value: Boolean): Self = StObject.set(x, "LogThread", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogTimestamp(value: Boolean): Self = StObject.set(x, "LogTimestamp", value.asInstanceOf[js.Any])
+    inline def setLogTimestamp(value: Boolean): Self = StObject.set(x, "LogTimestamp", value.asInstanceOf[js.Any])
   }
 }

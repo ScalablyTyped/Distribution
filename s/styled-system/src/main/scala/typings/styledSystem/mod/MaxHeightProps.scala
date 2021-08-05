@@ -16,25 +16,19 @@ trait MaxHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extend
 }
 object MaxHeightProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): MaxHeightProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): MaxHeightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxHeightProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class MaxHeightPropsMutableBuilder[Self <: MaxHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (MaxHeightProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: MaxHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (MaxHeightProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setMaxHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
+    inline def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
+    inline def setMaxHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
   }
 }

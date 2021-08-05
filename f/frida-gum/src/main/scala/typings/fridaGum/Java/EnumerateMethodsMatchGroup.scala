@@ -25,22 +25,17 @@ trait EnumerateMethodsMatchGroup extends StObject {
 }
 object EnumerateMethodsMatchGroup {
   
-  @scala.inline
-  def apply(classes: Array[EnumerateMethodsMatchClass]): EnumerateMethodsMatchGroup = {
+  inline def apply(classes: Array[EnumerateMethodsMatchClass]): EnumerateMethodsMatchGroup = {
     val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], loader = null)
     __obj.asInstanceOf[EnumerateMethodsMatchGroup]
   }
   
-  @scala.inline
-  implicit class EnumerateMethodsMatchGroupMutableBuilder[Self <: EnumerateMethodsMatchGroup] (val x: Self) extends AnyVal {
+  extension [Self <: EnumerateMethodsMatchGroup](x: Self) {
     
-    @scala.inline
-    def setClasses(value: Array[EnumerateMethodsMatchClass]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: Array[EnumerateMethodsMatchClass]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoader(value: typings.fridaGum.anon.Wrapper): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+    inline def setLoader(value: typings.fridaGum.anon.Wrapper): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaderNull: Self = StObject.set(x, "loader", null)
+    inline def setLoaderNull: Self = StObject.set(x, "loader", null)
   }
 }

@@ -19,6 +19,5 @@ object ApplicationData {
   @JSGlobal("Windows.Storage.ApplicationData.current")
   @js.native
   def current: typings.winrt.Windows.Storage.ApplicationData = js.native
-  @scala.inline
-  def current_=(x: typings.winrt.Windows.Storage.ApplicationData): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
+  inline def current_=(x: typings.winrt.Windows.Storage.ApplicationData): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
 }

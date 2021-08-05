@@ -19,20 +19,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ArrayTypeAnnotation_ {
   
-  @scala.inline
-  def apply(elementType: FlowType): ArrayTypeAnnotation_ = {
+  inline def apply(elementType: FlowType): ArrayTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ArrayTypeAnnotation")
     __obj.asInstanceOf[ArrayTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class ArrayTypeAnnotation_MutableBuilder[Self <: ArrayTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setElementType(value: FlowType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: FlowType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ArrayTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ArrayTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

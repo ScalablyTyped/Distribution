@@ -24,55 +24,39 @@ trait PartialStyleRulesSelectCl extends StObject {
 }
 object PartialStyleRulesSelectCl {
   
-  @scala.inline
-  def apply(): PartialStyleRulesSelectCl = {
+  inline def apply(): PartialStyleRulesSelectCl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesSelectCl]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesSelectClMutableBuilder[Self <: PartialStyleRulesSelectCl] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesSelectCl](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setFilled(value: CSSProperties): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
+    inline def setFilled(value: CSSProperties): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
+    inline def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
     
-    @scala.inline
-    def setIcon(value: CSSProperties): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: CSSProperties): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setOutlined(value: CSSProperties): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
+    inline def setOutlined(value: CSSProperties): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
+    inline def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSelect(value: CSSProperties): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: CSSProperties): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectMenu(value: CSSProperties): Self = StObject.set(x, "selectMenu", value.asInstanceOf[js.Any])
+    inline def setSelectMenu(value: CSSProperties): Self = StObject.set(x, "selectMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectMenuUndefined: Self = StObject.set(x, "selectMenu", js.undefined)
+    inline def setSelectMenuUndefined: Self = StObject.set(x, "selectMenu", js.undefined)
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

@@ -21,25 +21,19 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton extends StObject
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButtonMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton](x: Self) {
     
-    @scala.inline
-    def setPostback(value: String): Self = StObject.set(x, "postback", value.asInstanceOf[js.Any])
+    inline def setPostback(value: String): Self = StObject.set(x, "postback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostbackUndefined: Self = StObject.set(x, "postback", js.undefined)
+    inline def setPostbackUndefined: Self = StObject.set(x, "postback", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

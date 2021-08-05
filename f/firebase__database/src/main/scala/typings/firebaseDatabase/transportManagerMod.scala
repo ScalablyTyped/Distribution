@@ -20,7 +20,7 @@ object transportManagerMod {
       * @param {!RepoInfo} repoInfo
       * @private
       */
-    var initTransports_ : js.Any = js.native
+    /* private */ var initTransports_ : js.Any = js.native
     
     /**
       * @return {function(new:Transport, !string, !RepoInfo, string=, string=)} The constructor for the
@@ -28,7 +28,7 @@ object transportManagerMod {
       */
     def initialTransport(): TransportConstructor = js.native
     
-    var transports_ : js.Any = js.native
+    /* private */ var transports_ : js.Any = js.native
     
     /**
       * @return {?function(new:Transport, function(),function(), string=)} The constructor for the next

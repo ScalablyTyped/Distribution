@@ -12,69 +12,59 @@ object humanSignalsStrings {
   sealed trait ansi
     extends StObject
        with SignalStandard
-  @scala.inline
-  def ansi: ansi = "ansi".asInstanceOf[ansi]
+  inline def ansi: ansi = "ansi".asInstanceOf[ansi]
   
   @js.native
   sealed trait bsd
     extends StObject
        with SignalStandard
-  @scala.inline
-  def bsd: bsd = "bsd".asInstanceOf[bsd]
+  inline def bsd: bsd = "bsd".asInstanceOf[bsd]
   
   @js.native
   sealed trait core
     extends StObject
        with SignalAction
-  @scala.inline
-  def core: core = "core".asInstanceOf[core]
+  inline def core: core = "core".asInstanceOf[core]
   
   @js.native
   sealed trait ignore
     extends StObject
        with SignalAction
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
   sealed trait other
     extends StObject
        with SignalStandard
-  @scala.inline
-  def other: other = "other".asInstanceOf[other]
+  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
   sealed trait pause
     extends StObject
        with SignalAction
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
   sealed trait posix
     extends StObject
        with SignalStandard
-  @scala.inline
-  def posix: posix = "posix".asInstanceOf[posix]
+  inline def posix: posix = "posix".asInstanceOf[posix]
   
   @js.native
   sealed trait systemv
     extends StObject
        with SignalStandard
-  @scala.inline
-  def systemv: systemv = "systemv".asInstanceOf[systemv]
+  inline def systemv: systemv = "systemv".asInstanceOf[systemv]
   
   @js.native
   sealed trait terminate
     extends StObject
        with SignalAction
-  @scala.inline
-  def terminate: terminate = "terminate".asInstanceOf[terminate]
+  inline def terminate: terminate = "terminate".asInstanceOf[terminate]
   
   @js.native
   sealed trait unpause
     extends StObject
        with SignalAction
-  @scala.inline
-  def unpause: unpause = "unpause".asInstanceOf[unpause]
+  inline def unpause: unpause = "unpause".asInstanceOf[unpause]
 }

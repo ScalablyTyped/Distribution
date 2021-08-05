@@ -18,25 +18,19 @@ trait ProductCode extends StObject {
 }
 object ProductCode {
   
-  @scala.inline
-  def apply(): ProductCode = {
+  inline def apply(): ProductCode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductCode]
   }
   
-  @scala.inline
-  implicit class ProductCodeMutableBuilder[Self <: ProductCode] (val x: Self) extends AnyVal {
+  extension [Self <: ProductCode](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setProductType(value: String): Self = StObject.set(x, "ProductType", value.asInstanceOf[js.Any])
+    inline def setProductType(value: String): Self = StObject.set(x, "ProductType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductTypeUndefined: Self = StObject.set(x, "ProductType", js.undefined)
+    inline def setProductTypeUndefined: Self = StObject.set(x, "ProductType", js.undefined)
   }
 }

@@ -24,8 +24,7 @@ trait IServerScheduledJobManagementOperations extends StObject {
 }
 object IServerScheduledJobManagementOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddScheduledJob: IScheduledJob => Double,
     CancelScheduledJob: Double => Unit,
     GetScheduledJob: Double => IScheduledJob,
@@ -39,31 +38,22 @@ object IServerScheduledJobManagementOperations {
     __obj.asInstanceOf[IServerScheduledJobManagementOperations]
   }
   
-  @scala.inline
-  implicit class IServerScheduledJobManagementOperationsMutableBuilder[Self <: IServerScheduledJobManagementOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IServerScheduledJobManagementOperations](x: Self) {
     
-    @scala.inline
-    def setAddScheduledJob(value: IScheduledJob => Double): Self = StObject.set(x, "AddScheduledJob", js.Any.fromFunction1(value))
+    inline def setAddScheduledJob(value: IScheduledJob => Double): Self = StObject.set(x, "AddScheduledJob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCancelScheduledJob(value: Double => Unit): Self = StObject.set(x, "CancelScheduledJob", js.Any.fromFunction1(value))
+    inline def setCancelScheduledJob(value: Double => Unit): Self = StObject.set(x, "CancelScheduledJob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScheduledJob(value: Double => IScheduledJob): Self = StObject.set(x, "GetScheduledJob", js.Any.fromFunction1(value))
+    inline def setGetScheduledJob(value: Double => IScheduledJob): Self = StObject.set(x, "GetScheduledJob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScheduledJobRunInfo(value: Double => IScheduledJobRunInfo): Self = StObject.set(x, "GetScheduledJobRunInfo", js.Any.fromFunction1(value))
+    inline def setGetScheduledJobRunInfo(value: Double => IScheduledJobRunInfo): Self = StObject.set(x, "GetScheduledJobRunInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScheduledJobs(value: () => IScheduledJobs): Self = StObject.set(x, "GetScheduledJobs", js.Any.fromFunction0(value))
+    inline def setGetScheduledJobs(value: () => IScheduledJobs): Self = StObject.set(x, "GetScheduledJobs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setModifyScheduledJob(value: IScheduledJob => Unit): Self = StObject.set(x, "ModifyScheduledJob", js.Any.fromFunction1(value))
+    inline def setModifyScheduledJob(value: IScheduledJob => Unit): Self = StObject.set(x, "ModifyScheduledJob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveScheduledJob(value: Double => Unit): Self = StObject.set(x, "RemoveScheduledJob", js.Any.fromFunction1(value))
+    inline def setRemoveScheduledJob(value: Double => Unit): Self = StObject.set(x, "RemoveScheduledJob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartScheduledJob(value: Double => Unit): Self = StObject.set(x, "StartScheduledJob", js.Any.fromFunction1(value))
+    inline def setStartScheduledJob(value: Double => Unit): Self = StObject.set(x, "StartScheduledJob", js.Any.fromFunction1(value))
   }
 }

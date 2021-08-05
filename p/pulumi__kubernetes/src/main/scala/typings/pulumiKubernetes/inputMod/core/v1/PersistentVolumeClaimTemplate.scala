@@ -23,22 +23,17 @@ trait PersistentVolumeClaimTemplate extends StObject {
 }
 object PersistentVolumeClaimTemplate {
   
-  @scala.inline
-  def apply(spec: Input[PersistentVolumeClaimSpec]): PersistentVolumeClaimTemplate = {
+  inline def apply(spec: Input[PersistentVolumeClaimSpec]): PersistentVolumeClaimTemplate = {
     val __obj = js.Dynamic.literal(spec = spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistentVolumeClaimTemplate]
   }
   
-  @scala.inline
-  implicit class PersistentVolumeClaimTemplateMutableBuilder[Self <: PersistentVolumeClaimTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentVolumeClaimTemplate](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setSpec(value: Input[PersistentVolumeClaimSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: Input[PersistentVolumeClaimSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
   }
 }

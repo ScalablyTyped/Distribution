@@ -24,41 +24,30 @@ trait ParameterRuleArray
 }
 object ParameterRuleArray {
   
-  @scala.inline
-  def apply(`type`: array | arrayQuestionmark): ParameterRuleArray = {
+  inline def apply(`type`: array | arrayQuestionmark): ParameterRuleArray = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterRuleArray]
   }
   
-  @scala.inline
-  implicit class ParameterRuleArrayMutableBuilder[Self <: ParameterRuleArray] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterRuleArray](x: Self) {
     
-    @scala.inline
-    def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+    inline def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
+    inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setRule(value: ParameterRules): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: ParameterRules): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
-    @scala.inline
-    def setType(value: array | arrayQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: array | arrayQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

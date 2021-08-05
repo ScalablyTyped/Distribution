@@ -8,26 +8,21 @@ object ghPagesStrings {
   
   @js.native
   sealed trait AsteriskAsteriskSlashAsterisk extends StObject
-  @scala.inline
-  def AsteriskAsteriskSlashAsterisk: AsteriskAsteriskSlashAsterisk = "**/*".asInstanceOf[AsteriskAsteriskSlashAsterisk]
+  inline def AsteriskAsteriskSlashAsterisk: AsteriskAsteriskSlashAsterisk = "**/*".asInstanceOf[AsteriskAsteriskSlashAsterisk]
   
   @js.native
   sealed trait Dot extends StObject
-  @scala.inline
-  def Dot: Dot = ".".asInstanceOf[Dot]
+  inline def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
   sealed trait Updates extends StObject
-  @scala.inline
-  def Updates: Updates = "Updates".asInstanceOf[Updates]
+  inline def Updates: Updates = "Updates".asInstanceOf[Updates]
   
   @js.native
   sealed trait `gh-pages` extends StObject
-  @scala.inline
-  def `gh-pages`: `gh-pages` = "gh-pages".asInstanceOf[`gh-pages`]
+  inline def `gh-pages`: `gh-pages` = "gh-pages".asInstanceOf[`gh-pages`]
   
   @js.native
   sealed trait git extends StObject
-  @scala.inline
-  def git: git = "git".asInstanceOf[git]
+  inline def git: git = "git".asInstanceOf[git]
 }

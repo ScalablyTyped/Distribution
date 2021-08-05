@@ -23,40 +23,29 @@ trait EditorChange extends StObject {
 }
 object EditorChange {
   
-  @scala.inline
-  def apply(from: Position, text: js.Array[String], to: Position): EditorChange = {
+  inline def apply(from: Position, text: js.Array[String], to: Position): EditorChange = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorChange]
   }
   
-  @scala.inline
-  implicit class EditorChangeMutableBuilder[Self <: EditorChange] (val x: Self) extends AnyVal {
+  extension [Self <: EditorChange](x: Self) {
     
-    @scala.inline
-    def setFrom(value: Position): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Position): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setRemoved(value: js.Array[String]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: js.Array[String]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
     
-    @scala.inline
-    def setRemovedVarargs(value: String*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: String*): Self = StObject.set(x, "removed", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
     
-    @scala.inline
-    def setTo(value: Position): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Position): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

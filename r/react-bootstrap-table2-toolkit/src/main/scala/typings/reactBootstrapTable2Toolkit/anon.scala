@@ -22,35 +22,26 @@ object anon {
   }
   object Bootstrap4 {
     
-    @scala.inline
-    def apply(columns: js.Array[ColumnDescription[js.Any, js.Any]], data: js.Array[js.Any], keyField: js.Any): Bootstrap4 = {
+    inline def apply(columns: js.Array[ColumnDescription[js.Any, js.Any]], data: js.Array[js.Any], keyField: js.Any): Bootstrap4 = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], keyField = keyField.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bootstrap4]
     }
     
-    @scala.inline
-    implicit class Bootstrap4MutableBuilder[Self <: Bootstrap4] (val x: Self) extends AnyVal {
+    extension [Self <: Bootstrap4](x: Self) {
       
-      @scala.inline
-      def setBootstrap4(value: Boolean): Self = StObject.set(x, "bootstrap4", value.asInstanceOf[js.Any])
+      inline def setBootstrap4(value: Boolean): Self = StObject.set(x, "bootstrap4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootstrap4Undefined: Self = StObject.set(x, "bootstrap4", js.undefined)
+      inline def setBootstrap4Undefined: Self = StObject.set(x, "bootstrap4", js.undefined)
       
-      @scala.inline
-      def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setKeyField(value: js.Any): Self = StObject.set(x, "keyField", value.asInstanceOf[js.Any])
+      inline def setKeyField(value: js.Any): Self = StObject.set(x, "keyField", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,8 +58,7 @@ object anon {
   }
   object Columns {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       columns: js.Array[ColumnDescription[js.Any, js.Any]],
       onColumnToggle: String => Unit,
       toggles: js.Array[Boolean]
@@ -77,23 +67,17 @@ object anon {
       __obj.asInstanceOf[Columns]
     }
     
-    @scala.inline
-    implicit class ColumnsMutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
+    extension [Self <: Columns](x: Self) {
       
-      @scala.inline
-      def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setOnColumnToggle(value: String => Unit): Self = StObject.set(x, "onColumnToggle", js.Any.fromFunction1(value))
+      inline def setOnColumnToggle(value: String => Unit): Self = StObject.set(x, "onColumnToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToggles(value: js.Array[Boolean]): Self = StObject.set(x, "toggles", value.asInstanceOf[js.Any])
+      inline def setToggles(value: js.Array[Boolean]): Self = StObject.set(x, "toggles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTogglesVarargs(value: Boolean*): Self = StObject.set(x, "toggles", js.Array(value :_*))
+      inline def setTogglesVarargs(value: Boolean*): Self = StObject.set(x, "toggles", js.Array(value :_*))
     }
   }
   
@@ -103,17 +87,14 @@ object anon {
   }
   object OnExport {
     
-    @scala.inline
-    def apply(onExport: () => Unit): OnExport = {
+    inline def apply(onExport: () => Unit): OnExport = {
       val __obj = js.Dynamic.literal(onExport = js.Any.fromFunction0(onExport))
       __obj.asInstanceOf[OnExport]
     }
     
-    @scala.inline
-    implicit class OnExportMutableBuilder[Self <: OnExport] (val x: Self) extends AnyVal {
+    extension [Self <: OnExport](x: Self) {
       
-      @scala.inline
-      def setOnExport(value: () => Unit): Self = StObject.set(x, "onExport", js.Any.fromFunction0(value))
+      inline def setOnExport(value: () => Unit): Self = StObject.set(x, "onExport", js.Any.fromFunction0(value))
     }
   }
 }

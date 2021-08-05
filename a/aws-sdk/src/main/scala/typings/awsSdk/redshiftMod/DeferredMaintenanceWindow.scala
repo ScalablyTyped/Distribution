@@ -23,31 +23,23 @@ trait DeferredMaintenanceWindow extends StObject {
 }
 object DeferredMaintenanceWindow {
   
-  @scala.inline
-  def apply(): DeferredMaintenanceWindow = {
+  inline def apply(): DeferredMaintenanceWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeferredMaintenanceWindow]
   }
   
-  @scala.inline
-  implicit class DeferredMaintenanceWindowMutableBuilder[Self <: DeferredMaintenanceWindow] (val x: Self) extends AnyVal {
+  extension [Self <: DeferredMaintenanceWindow](x: Self) {
     
-    @scala.inline
-    def setDeferMaintenanceEndTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceEndTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferMaintenanceEndTimeUndefined: Self = StObject.set(x, "DeferMaintenanceEndTime", js.undefined)
+    inline def setDeferMaintenanceEndTimeUndefined: Self = StObject.set(x, "DeferMaintenanceEndTime", js.undefined)
     
-    @scala.inline
-    def setDeferMaintenanceIdentifier(value: String): Self = StObject.set(x, "DeferMaintenanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceIdentifier(value: String): Self = StObject.set(x, "DeferMaintenanceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferMaintenanceIdentifierUndefined: Self = StObject.set(x, "DeferMaintenanceIdentifier", js.undefined)
+    inline def setDeferMaintenanceIdentifierUndefined: Self = StObject.set(x, "DeferMaintenanceIdentifier", js.undefined)
     
-    @scala.inline
-    def setDeferMaintenanceStartTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceStartTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferMaintenanceStartTimeUndefined: Self = StObject.set(x, "DeferMaintenanceStartTime", js.undefined)
+    inline def setDeferMaintenanceStartTimeUndefined: Self = StObject.set(x, "DeferMaintenanceStartTime", js.undefined)
   }
 }

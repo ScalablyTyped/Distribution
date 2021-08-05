@@ -37,8 +37,7 @@ object composerMod {
     @JSImport("googleapis/build/src/apis/composer", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Composer] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Composer]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
@@ -57,8 +56,7 @@ object composerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.composerV1beta1Mod.composerV1beta1.Composer
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -100,8 +98,7 @@ object composerMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -145,14 +142,10 @@ object composerMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def composer(options: Options): Composer = ^.asInstanceOf[js.Dynamic].applyDynamic("composer")(options.asInstanceOf[js.Any]).asInstanceOf[Composer]
-  @scala.inline
-  def composer(options: typings.googleapis.composerV1beta1Mod.composerV1beta1.Options): typings.googleapis.composerV1beta1Mod.composerV1beta1.Composer = ^.asInstanceOf[js.Dynamic].applyDynamic("composer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.composerV1beta1Mod.composerV1beta1.Composer]
+  inline def composer(options: Options): Composer = ^.asInstanceOf[js.Dynamic].applyDynamic("composer")(options.asInstanceOf[js.Any]).asInstanceOf[Composer]
+  inline def composer(options: typings.googleapis.composerV1beta1Mod.composerV1beta1.Options): typings.googleapis.composerV1beta1Mod.composerV1beta1.Composer = ^.asInstanceOf[js.Dynamic].applyDynamic("composer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.composerV1beta1Mod.composerV1beta1.Composer]
   
-  @scala.inline
-  def composer_v1(version: v1): Composer = ^.asInstanceOf[js.Dynamic].applyDynamic("composer")(version.asInstanceOf[js.Any]).asInstanceOf[Composer]
+  inline def composer_v1(version: v1): Composer = ^.asInstanceOf[js.Dynamic].applyDynamic("composer")(version.asInstanceOf[js.Any]).asInstanceOf[Composer]
   
-  @scala.inline
-  def composer_v1beta1(version: v1beta1): typings.googleapis.composerV1beta1Mod.composerV1beta1.Composer = ^.asInstanceOf[js.Dynamic].applyDynamic("composer")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.composerV1beta1Mod.composerV1beta1.Composer]
+  inline def composer_v1beta1(version: v1beta1): typings.googleapis.composerV1beta1Mod.composerV1beta1.Composer = ^.asInstanceOf[js.Dynamic].applyDynamic("composer")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.composerV1beta1Mod.composerV1beta1.Composer]
 }

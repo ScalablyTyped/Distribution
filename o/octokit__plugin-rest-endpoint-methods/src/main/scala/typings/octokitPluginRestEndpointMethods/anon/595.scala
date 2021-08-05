@@ -23,8 +23,7 @@ trait `595` extends StObject {
 }
 object `595` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[
       ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint, 
       baseUrl | headers | mediaType
@@ -35,18 +34,15 @@ object `595` {
     __obj.asInstanceOf[`595`]
   }
   
-  @scala.inline
-  implicit class `595MutableBuilder`[Self <: `595`] (val x: Self) extends AnyVal {
+  extension [Self <: `595`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[
           ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint, 
           baseUrl | headers | mediaType
         ])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActivityGetThreadSubscriptionForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActivityGetThreadSubscriptionForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

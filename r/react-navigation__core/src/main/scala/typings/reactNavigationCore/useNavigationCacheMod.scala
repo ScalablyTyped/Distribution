@@ -20,8 +20,7 @@ object useNavigationCacheMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */](hasStateGetStateNavigationSetOptionsRouterEmitter: Options[State]): NavigationCache[State, ScreenOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStateGetStateNavigationSetOptionsRouterEmitter.asInstanceOf[js.Any]).asInstanceOf[NavigationCache[State, ScreenOptions]]
+  inline def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */](hasStateGetStateNavigationSetOptionsRouterEmitter: Options[State]): NavigationCache[State, ScreenOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStateGetStateNavigationSetOptionsRouterEmitter.asInstanceOf[js.Any]).asInstanceOf[NavigationCache[State, ScreenOptions]]
   
   type NavigationCache[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */] = StringDictionary[NavigationProp[ParamListBase, String, State, ScreenOptions, js.Object]]
   
@@ -41,8 +40,7 @@ object useNavigationCacheMod {
   }
   object Options {
     
-    @scala.inline
-    def apply[State /* <: NavigationState[ParamListBase] */](
+    inline def apply[State /* <: NavigationState[ParamListBase] */](
       emitter: NavigationEventEmitter[EventMapBase],
       getState: () => State,
       navigation: NavigationHelpersParamLis,
@@ -54,26 +52,19 @@ object useNavigationCacheMod {
       __obj.asInstanceOf[Options[State]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & Options[State]) extends AnyVal {
+    extension [Self <: Options[?], State /* <: NavigationState[ParamListBase] */](x: Self & Options[State]) {
       
-      @scala.inline
-      def setEmitter(value: NavigationEventEmitter[EventMapBase]): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
+      inline def setEmitter(value: NavigationEventEmitter[EventMapBase]): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetState(value: () => State): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => State): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNavigation(value: NavigationHelpersParamLis): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: NavigationHelpersParamLis): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouter(value: Router[State, NavigationAction]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+      inline def setRouter(value: Router[State, NavigationAction]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetOptions(value: js.Function1[/* options */ Record[String, js.Object], Record[String, js.Object]] => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+      inline def setSetOptions(value: js.Function1[/* options */ Record[String, js.Object], Record[String, js.Object]] => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

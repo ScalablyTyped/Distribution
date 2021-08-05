@@ -44,47 +44,34 @@ object ConfigLoader {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setPackageKey(value: String): Self = StObject.set(x, "packageKey", value.asInstanceOf[js.Any])
+      inline def setPackageKey(value: String): Self = StObject.set(x, "packageKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageKeyUndefined: Self = StObject.set(x, "packageKey", js.undefined)
+      inline def setPackageKeyUndefined: Self = StObject.set(x, "packageKey", js.undefined)
       
-      @scala.inline
-      def setParseJSON(value: /* str */ String => js.Any): Self = StObject.set(x, "parseJSON", js.Any.fromFunction1(value))
+      inline def setParseJSON(value: /* str */ String => js.Any): Self = StObject.set(x, "parseJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParseJSONUndefined: Self = StObject.set(x, "parseJSON", js.undefined)
+      inline def setParseJSONUndefined: Self = StObject.set(x, "parseJSON", js.undefined)
       
-      @scala.inline
-      def setStopDir(value: String): Self = StObject.set(x, "stopDir", value.asInstanceOf[js.Any])
+      inline def setStopDir(value: String): Self = StObject.set(x, "stopDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopDirUndefined: Self = StObject.set(x, "stopDir", js.undefined)
+      inline def setStopDirUndefined: Self = StObject.set(x, "stopDir", js.undefined)
     }
   }
 }

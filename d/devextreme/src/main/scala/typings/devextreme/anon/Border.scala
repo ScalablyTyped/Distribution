@@ -12,25 +12,19 @@ trait Border extends StObject {
 }
 object Border {
   
-  @scala.inline
-  def apply(): Border = {
+  inline def apply(): Border = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Border]
   }
   
-  @scala.inline
-  implicit class BorderMutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
+  extension [Self <: Border](x: Self) {
     
-    @scala.inline
-    def setBorder(value: ColorVisible): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: ColorVisible): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setHatching(value: Step): Self = StObject.set(x, "hatching", value.asInstanceOf[js.Any])
+    inline def setHatching(value: Step): Self = StObject.set(x, "hatching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHatchingUndefined: Self = StObject.set(x, "hatching", js.undefined)
+    inline def setHatchingUndefined: Self = StObject.set(x, "hatching", js.undefined)
   }
 }

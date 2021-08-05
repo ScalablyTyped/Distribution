@@ -9,8 +9,7 @@ trait SmsMessageReceivedEventArgs
      with ISmsMessageReceivedEventArgs
 object SmsMessageReceivedEventArgs {
   
-  @scala.inline
-  def apply(binaryMessage: SmsBinaryMessage, textMessage: SmsTextMessage): SmsMessageReceivedEventArgs = {
+  inline def apply(binaryMessage: SmsBinaryMessage, textMessage: SmsTextMessage): SmsMessageReceivedEventArgs = {
     val __obj = js.Dynamic.literal(binaryMessage = binaryMessage.asInstanceOf[js.Any], textMessage = textMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmsMessageReceivedEventArgs]
   }

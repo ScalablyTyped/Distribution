@@ -26,6 +26,5 @@ object LocalHexBlock {
     * @memberOf LocalHexBlockMixin
     */
   /* static member */
-  @scala.inline
-  def blockName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("blockName")().asInstanceOf[String]
+  inline def blockName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("blockName")().asInstanceOf[String]
 }

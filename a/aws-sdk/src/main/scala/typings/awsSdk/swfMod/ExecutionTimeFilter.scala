@@ -18,22 +18,17 @@ trait ExecutionTimeFilter extends StObject {
 }
 object ExecutionTimeFilter {
   
-  @scala.inline
-  def apply(oldestDate: Timestamp): ExecutionTimeFilter = {
+  inline def apply(oldestDate: Timestamp): ExecutionTimeFilter = {
     val __obj = js.Dynamic.literal(oldestDate = oldestDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionTimeFilter]
   }
   
-  @scala.inline
-  implicit class ExecutionTimeFilterMutableBuilder[Self <: ExecutionTimeFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionTimeFilter](x: Self) {
     
-    @scala.inline
-    def setLatestDate(value: Timestamp): Self = StObject.set(x, "latestDate", value.asInstanceOf[js.Any])
+    inline def setLatestDate(value: Timestamp): Self = StObject.set(x, "latestDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestDateUndefined: Self = StObject.set(x, "latestDate", js.undefined)
+    inline def setLatestDateUndefined: Self = StObject.set(x, "latestDate", js.undefined)
     
-    @scala.inline
-    def setOldestDate(value: Timestamp): Self = StObject.set(x, "oldestDate", value.asInstanceOf[js.Any])
+    inline def setOldestDate(value: Timestamp): Self = StObject.set(x, "oldestDate", value.asInstanceOf[js.Any])
   }
 }

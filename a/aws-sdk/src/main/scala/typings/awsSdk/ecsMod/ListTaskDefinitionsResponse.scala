@@ -18,28 +18,21 @@ trait ListTaskDefinitionsResponse extends StObject {
 }
 object ListTaskDefinitionsResponse {
   
-  @scala.inline
-  def apply(): ListTaskDefinitionsResponse = {
+  inline def apply(): ListTaskDefinitionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTaskDefinitionsResponse]
   }
   
-  @scala.inline
-  implicit class ListTaskDefinitionsResponseMutableBuilder[Self <: ListTaskDefinitionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTaskDefinitionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTaskDefinitionArns(value: StringList): Self = StObject.set(x, "taskDefinitionArns", value.asInstanceOf[js.Any])
+    inline def setTaskDefinitionArns(value: StringList): Self = StObject.set(x, "taskDefinitionArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskDefinitionArnsUndefined: Self = StObject.set(x, "taskDefinitionArns", js.undefined)
+    inline def setTaskDefinitionArnsUndefined: Self = StObject.set(x, "taskDefinitionArns", js.undefined)
     
-    @scala.inline
-    def setTaskDefinitionArnsVarargs(value: String*): Self = StObject.set(x, "taskDefinitionArns", js.Array(value :_*))
+    inline def setTaskDefinitionArnsVarargs(value: String*): Self = StObject.set(x, "taskDefinitionArns", js.Array(value :_*))
   }
 }

@@ -23,22 +23,17 @@ trait HeavyAdIssueDetails extends StObject {
 }
 object HeavyAdIssueDetails {
   
-  @scala.inline
-  def apply(frame: AffectedFrame, reason: HeavyAdReason, resolution: HeavyAdResolutionStatus): HeavyAdIssueDetails = {
+  inline def apply(frame: AffectedFrame, reason: HeavyAdReason, resolution: HeavyAdResolutionStatus): HeavyAdIssueDetails = {
     val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeavyAdIssueDetails]
   }
   
-  @scala.inline
-  implicit class HeavyAdIssueDetailsMutableBuilder[Self <: HeavyAdIssueDetails] (val x: Self) extends AnyVal {
+  extension [Self <: HeavyAdIssueDetails](x: Self) {
     
-    @scala.inline
-    def setFrame(value: AffectedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: AffectedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: HeavyAdReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: HeavyAdReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolution(value: HeavyAdResolutionStatus): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: HeavyAdResolutionStatus): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait PropertyReference extends StObject {
 }
 object PropertyReference {
   
-  @scala.inline
-  def apply(): PropertyReference = {
+  inline def apply(): PropertyReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyReference]
   }
   
-  @scala.inline
-  implicit class PropertyReferenceMutableBuilder[Self <: PropertyReference] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyReference](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

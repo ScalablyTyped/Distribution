@@ -23,20 +23,16 @@ object thumbnailProtractorDriverMod {
   }
   object ThumbnailDriver {
     
-    @scala.inline
-    def apply(click: () => js.Promise[Unit], element: () => ElementFinder, mouseEnter: () => js.Promise[Unit]): ThumbnailDriver = {
+    inline def apply(click: () => js.Promise[Unit], element: () => ElementFinder, mouseEnter: () => js.Promise[Unit]): ThumbnailDriver = {
       val __obj = js.Dynamic.literal(click = js.Any.fromFunction0(click), element = js.Any.fromFunction0(element), mouseEnter = js.Any.fromFunction0(mouseEnter))
       __obj.asInstanceOf[ThumbnailDriver]
     }
     
-    @scala.inline
-    implicit class ThumbnailDriverMutableBuilder[Self <: ThumbnailDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ThumbnailDriver](x: Self) {
       
-      @scala.inline
-      def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMouseEnter(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
+      inline def setMouseEnter(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
     }
   }
 }

@@ -16,19 +16,15 @@ trait AddPageTabDialogParams
 }
 object AddPageTabDialogParams {
   
-  @scala.inline
-  def apply(redirect_uri: String): AddPageTabDialogParams = {
+  inline def apply(redirect_uri: String): AddPageTabDialogParams = {
     val __obj = js.Dynamic.literal(method = "pagetab", redirect_uri = redirect_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPageTabDialogParams]
   }
   
-  @scala.inline
-  implicit class AddPageTabDialogParamsMutableBuilder[Self <: AddPageTabDialogParams] (val x: Self) extends AnyVal {
+  extension [Self <: AddPageTabDialogParams](x: Self) {
     
-    @scala.inline
-    def setMethod(value: pagetab): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: pagetab): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
+    inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
   }
 }

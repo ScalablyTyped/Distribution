@@ -11,16 +11,13 @@ trait PickImplprecision extends StObject {
 }
 object PickImplprecision {
   
-  @scala.inline
-  def apply(precision: Double): PickImplprecision = {
+  inline def apply(precision: Double): PickImplprecision = {
     val __obj = js.Dynamic.literal(precision = precision.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplprecision]
   }
   
-  @scala.inline
-  implicit class PickImplprecisionMutableBuilder[Self <: PickImplprecision] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplprecision](x: Self) {
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,5 @@ object jsonFilePlusStrings {
   
   @js.native
   sealed trait Charactertabulation extends StObject
-  @scala.inline
-  def Charactertabulation: Charactertabulation = "\t".asInstanceOf[Charactertabulation]
+  inline def Charactertabulation: Charactertabulation = "\t".asInstanceOf[Charactertabulation]
 }

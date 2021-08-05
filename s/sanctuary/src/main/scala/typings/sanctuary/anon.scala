@@ -28,23 +28,18 @@ object anon {
   }
   object CheckTypes {
     
-    @scala.inline
-    def apply(checkTypes: Boolean, env: js.Array[js.Any]): CheckTypes = {
+    inline def apply(checkTypes: Boolean, env: js.Array[js.Any]): CheckTypes = {
       val __obj = js.Dynamic.literal(checkTypes = checkTypes.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckTypes]
     }
     
-    @scala.inline
-    implicit class CheckTypesMutableBuilder[Self <: CheckTypes] (val x: Self) extends AnyVal {
+    extension [Self <: CheckTypes](x: Self) {
       
-      @scala.inline
-      def setCheckTypes(value: Boolean): Self = StObject.set(x, "checkTypes", value.asInstanceOf[js.Any])
+      inline def setCheckTypes(value: Boolean): Self = StObject.set(x, "checkTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnv(value: js.Array[js.Any]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: js.Array[js.Any]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvVarargs(value: js.Any*): Self = StObject.set(x, "env", js.Array(value :_*))
+      inline def setEnvVarargs(value: js.Any*): Self = StObject.set(x, "env", js.Array(value :_*))
     }
   }
   
@@ -130,23 +125,18 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, namespace: Maybe[String], version: NonNegativeInteger): Name = {
+    inline def apply(name: String, namespace: Maybe[String], version: NonNegativeInteger): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: Maybe[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Maybe[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: NonNegativeInteger): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: NonNegativeInteger): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

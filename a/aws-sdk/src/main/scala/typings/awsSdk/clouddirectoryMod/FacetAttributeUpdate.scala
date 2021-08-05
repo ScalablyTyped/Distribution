@@ -18,25 +18,19 @@ trait FacetAttributeUpdate extends StObject {
 }
 object FacetAttributeUpdate {
   
-  @scala.inline
-  def apply(): FacetAttributeUpdate = {
+  inline def apply(): FacetAttributeUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FacetAttributeUpdate]
   }
   
-  @scala.inline
-  implicit class FacetAttributeUpdateMutableBuilder[Self <: FacetAttributeUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: FacetAttributeUpdate](x: Self) {
     
-    @scala.inline
-    def setAction(value: UpdateActionType): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: UpdateActionType): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    @scala.inline
-    def setAttribute(value: FacetAttribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: FacetAttribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
   }
 }

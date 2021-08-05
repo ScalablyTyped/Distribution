@@ -22,6 +22,5 @@ object RoleDefinitionBindingCollection {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def newObject(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.RoleDefinitionBindingCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.RoleDefinitionBindingCollection]
+  inline def newObject(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.RoleDefinitionBindingCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.RoleDefinitionBindingCollection]
 }

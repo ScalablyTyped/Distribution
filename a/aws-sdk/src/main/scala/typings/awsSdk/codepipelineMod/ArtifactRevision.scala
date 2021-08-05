@@ -38,49 +38,35 @@ trait ArtifactRevision extends StObject {
 }
 object ArtifactRevision {
   
-  @scala.inline
-  def apply(): ArtifactRevision = {
+  inline def apply(): ArtifactRevision = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArtifactRevision]
   }
   
-  @scala.inline
-  implicit class ArtifactRevisionMutableBuilder[Self <: ArtifactRevision] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactRevision](x: Self) {
     
-    @scala.inline
-    def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setName(value: ArtifactName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ArtifactName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRevisionChangeIdentifier(value: RevisionChangeIdentifier): Self = StObject.set(x, "revisionChangeIdentifier", value.asInstanceOf[js.Any])
+    inline def setRevisionChangeIdentifier(value: RevisionChangeIdentifier): Self = StObject.set(x, "revisionChangeIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionChangeIdentifierUndefined: Self = StObject.set(x, "revisionChangeIdentifier", js.undefined)
+    inline def setRevisionChangeIdentifierUndefined: Self = StObject.set(x, "revisionChangeIdentifier", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: Revision): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: Revision): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
     
-    @scala.inline
-    def setRevisionSummary(value: RevisionSummary): Self = StObject.set(x, "revisionSummary", value.asInstanceOf[js.Any])
+    inline def setRevisionSummary(value: RevisionSummary): Self = StObject.set(x, "revisionSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionSummaryUndefined: Self = StObject.set(x, "revisionSummary", js.undefined)
+    inline def setRevisionSummaryUndefined: Self = StObject.set(x, "revisionSummary", js.undefined)
     
-    @scala.inline
-    def setRevisionUrl(value: Url): Self = StObject.set(x, "revisionUrl", value.asInstanceOf[js.Any])
+    inline def setRevisionUrl(value: Url): Self = StObject.set(x, "revisionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUrlUndefined: Self = StObject.set(x, "revisionUrl", js.undefined)
+    inline def setRevisionUrlUndefined: Self = StObject.set(x, "revisionUrl", js.undefined)
   }
 }

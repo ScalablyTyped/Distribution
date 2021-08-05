@@ -22,8 +22,7 @@ trait TileFlyoutUpdater extends StObject {
 }
 object TileFlyoutUpdater {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: js.Any,
     setting: js.Any,
     startPeriodicUpdate: js.Any,
@@ -34,22 +33,16 @@ object TileFlyoutUpdater {
     __obj.asInstanceOf[TileFlyoutUpdater]
   }
   
-  @scala.inline
-  implicit class TileFlyoutUpdaterMutableBuilder[Self <: TileFlyoutUpdater] (val x: Self) extends AnyVal {
+  extension [Self <: TileFlyoutUpdater](x: Self) {
     
-    @scala.inline
-    def setClear(value: js.Any): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: js.Any): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetting(value: js.Any): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: js.Any): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPeriodicUpdate(value: js.Any): Self = StObject.set(x, "startPeriodicUpdate", value.asInstanceOf[js.Any])
+    inline def setStartPeriodicUpdate(value: js.Any): Self = StObject.set(x, "startPeriodicUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPeriodicUpdate(value: js.Any): Self = StObject.set(x, "stopPeriodicUpdate", value.asInstanceOf[js.Any])
+    inline def setStopPeriodicUpdate(value: js.Any): Self = StObject.set(x, "stopPeriodicUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: js.Any): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: js.Any): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

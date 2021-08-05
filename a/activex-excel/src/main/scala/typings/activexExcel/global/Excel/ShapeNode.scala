@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ShapeNode")
 @js.native
-class ShapeNode protected ()
+/* private */ class ShapeNode ()
   extends StObject
      with typings.activexExcel.Excel.ShapeNode {
   
@@ -22,7 +22,7 @@ class ShapeNode protected ()
   /* CompleteClass */
   override val EditingType: MsoEditingType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.ShapeNode_typekey")
   var ExcelDotShapeNode_typekey: typings.activexExcel.Excel.ShapeNode = js.native
   

@@ -14,8 +14,7 @@ trait MasteryTreeDto extends StObject {
 }
 object MasteryTreeDto {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Defense: js.Array[MasteryTreeListDto],
     Offense: js.Array[MasteryTreeListDto],
     Utility: js.Array[MasteryTreeListDto]
@@ -24,25 +23,18 @@ object MasteryTreeDto {
     __obj.asInstanceOf[MasteryTreeDto]
   }
   
-  @scala.inline
-  implicit class MasteryTreeDtoMutableBuilder[Self <: MasteryTreeDto] (val x: Self) extends AnyVal {
+  extension [Self <: MasteryTreeDto](x: Self) {
     
-    @scala.inline
-    def setDefense(value: js.Array[MasteryTreeListDto]): Self = StObject.set(x, "Defense", value.asInstanceOf[js.Any])
+    inline def setDefense(value: js.Array[MasteryTreeListDto]): Self = StObject.set(x, "Defense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefenseVarargs(value: MasteryTreeListDto*): Self = StObject.set(x, "Defense", js.Array(value :_*))
+    inline def setDefenseVarargs(value: MasteryTreeListDto*): Self = StObject.set(x, "Defense", js.Array(value :_*))
     
-    @scala.inline
-    def setOffense(value: js.Array[MasteryTreeListDto]): Self = StObject.set(x, "Offense", value.asInstanceOf[js.Any])
+    inline def setOffense(value: js.Array[MasteryTreeListDto]): Self = StObject.set(x, "Offense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffenseVarargs(value: MasteryTreeListDto*): Self = StObject.set(x, "Offense", js.Array(value :_*))
+    inline def setOffenseVarargs(value: MasteryTreeListDto*): Self = StObject.set(x, "Offense", js.Array(value :_*))
     
-    @scala.inline
-    def setUtility(value: js.Array[MasteryTreeListDto]): Self = StObject.set(x, "Utility", value.asInstanceOf[js.Any])
+    inline def setUtility(value: js.Array[MasteryTreeListDto]): Self = StObject.set(x, "Utility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilityVarargs(value: MasteryTreeListDto*): Self = StObject.set(x, "Utility", js.Array(value :_*))
+    inline def setUtilityVarargs(value: MasteryTreeListDto*): Self = StObject.set(x, "Utility", js.Array(value :_*))
   }
 }

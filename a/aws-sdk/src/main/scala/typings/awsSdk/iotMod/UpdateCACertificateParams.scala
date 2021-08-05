@@ -13,16 +13,13 @@ trait UpdateCACertificateParams extends StObject {
 }
 object UpdateCACertificateParams {
   
-  @scala.inline
-  def apply(action: CACertificateUpdateAction): UpdateCACertificateParams = {
+  inline def apply(action: CACertificateUpdateAction): UpdateCACertificateParams = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCACertificateParams]
   }
   
-  @scala.inline
-  implicit class UpdateCACertificateParamsMutableBuilder[Self <: UpdateCACertificateParams] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCACertificateParams](x: Self) {
     
-    @scala.inline
-    def setAction(value: CACertificateUpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: CACertificateUpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

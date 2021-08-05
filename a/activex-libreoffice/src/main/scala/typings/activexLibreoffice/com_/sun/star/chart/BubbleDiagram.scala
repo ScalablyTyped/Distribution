@@ -26,8 +26,7 @@ trait BubbleDiagram
      with ChartStatistics
 object BubbleDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutomaticPosition: Boolean,
     AutomaticSize: Boolean,
     ConstantErrorHigh: Double,

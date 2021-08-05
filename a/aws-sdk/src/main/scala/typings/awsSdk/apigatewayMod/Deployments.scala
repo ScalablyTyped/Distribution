@@ -15,28 +15,21 @@ trait Deployments extends StObject {
 }
 object Deployments {
   
-  @scala.inline
-  def apply(): Deployments = {
+  inline def apply(): Deployments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Deployments]
   }
   
-  @scala.inline
-  implicit class DeploymentsMutableBuilder[Self <: Deployments] (val x: Self) extends AnyVal {
+  extension [Self <: Deployments](x: Self) {
     
-    @scala.inline
-    def setItems(value: ListOfDeployment): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ListOfDeployment): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: Deployment*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Deployment*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

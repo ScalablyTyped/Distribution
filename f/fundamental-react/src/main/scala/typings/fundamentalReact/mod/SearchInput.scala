@@ -18,6 +18,5 @@ object SearchInput {
   @JSImport("fundamental-react", "SearchInput.displayName")
   @js.native
   def displayName: typings.fundamentalReact.fundamentalReactStrings.SearchInput = js.native
-  @scala.inline
-  def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.SearchInput): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.SearchInput): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

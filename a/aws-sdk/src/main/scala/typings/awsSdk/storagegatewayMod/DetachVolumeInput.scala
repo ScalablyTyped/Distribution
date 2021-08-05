@@ -18,22 +18,17 @@ trait DetachVolumeInput extends StObject {
 }
 object DetachVolumeInput {
   
-  @scala.inline
-  def apply(VolumeARN: VolumeARN): DetachVolumeInput = {
+  inline def apply(VolumeARN: VolumeARN): DetachVolumeInput = {
     val __obj = js.Dynamic.literal(VolumeARN = VolumeARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachVolumeInput]
   }
   
-  @scala.inline
-  implicit class DetachVolumeInputMutableBuilder[Self <: DetachVolumeInput] (val x: Self) extends AnyVal {
+  extension [Self <: DetachVolumeInput](x: Self) {
     
-    @scala.inline
-    def setForceDetach(value: Boolean): Self = StObject.set(x, "ForceDetach", value.asInstanceOf[js.Any])
+    inline def setForceDetach(value: Boolean): Self = StObject.set(x, "ForceDetach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDetachUndefined: Self = StObject.set(x, "ForceDetach", js.undefined)
+    inline def setForceDetachUndefined: Self = StObject.set(x, "ForceDetach", js.undefined)
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
   }
 }

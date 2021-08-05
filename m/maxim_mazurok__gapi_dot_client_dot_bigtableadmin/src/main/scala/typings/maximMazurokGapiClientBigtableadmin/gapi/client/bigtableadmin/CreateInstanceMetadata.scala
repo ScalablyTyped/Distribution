@@ -17,31 +17,23 @@ trait CreateInstanceMetadata extends StObject {
 }
 object CreateInstanceMetadata {
   
-  @scala.inline
-  def apply(): CreateInstanceMetadata = {
+  inline def apply(): CreateInstanceMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateInstanceMetadata]
   }
   
-  @scala.inline
-  implicit class CreateInstanceMetadataMutableBuilder[Self <: CreateInstanceMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInstanceMetadata](x: Self) {
     
-    @scala.inline
-    def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishTimeUndefined: Self = StObject.set(x, "finishTime", js.undefined)
+    inline def setFinishTimeUndefined: Self = StObject.set(x, "finishTime", js.undefined)
     
-    @scala.inline
-    def setOriginalRequest(value: CreateInstanceRequest): Self = StObject.set(x, "originalRequest", value.asInstanceOf[js.Any])
+    inline def setOriginalRequest(value: CreateInstanceRequest): Self = StObject.set(x, "originalRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalRequestUndefined: Self = StObject.set(x, "originalRequest", js.undefined)
+    inline def setOriginalRequestUndefined: Self = StObject.set(x, "originalRequest", js.undefined)
     
-    @scala.inline
-    def setRequestTime(value: String): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
+    inline def setRequestTime(value: String): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTimeUndefined: Self = StObject.set(x, "requestTime", js.undefined)
+    inline def setRequestTimeUndefined: Self = StObject.set(x, "requestTime", js.undefined)
   }
 }

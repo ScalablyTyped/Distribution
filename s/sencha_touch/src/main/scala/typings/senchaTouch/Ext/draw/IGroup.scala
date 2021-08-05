@@ -95,103 +95,71 @@ trait IGroup
 }
 object IGroup {
   
-  @scala.inline
-  def apply(): IGroup = {
+  inline def apply(): IGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGroup]
   }
   
-  @scala.inline
-  implicit class IGroupMutableBuilder[Self <: IGroup] (val x: Self) extends AnyVal {
+  extension [Self <: IGroup](x: Self) {
     
-    @scala.inline
-    def setAdd(value: /* sprite */ js.UndefOr[ISprite] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* sprite */ js.UndefOr[ISprite] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddAll(value: /* sprites */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
+    inline def setAddAll(value: /* sprites */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddAllUndefined: Self = StObject.set(x, "addAll", js.undefined)
+    inline def setAddAllUndefined: Self = StObject.set(x, "addAll", js.undefined)
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setClear(value: /* destroySprite */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: /* destroySprite */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setEach(value: /* fn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
+    inline def setEach(value: /* fn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+    inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    @scala.inline
-    def setGet(value: /* id */ js.UndefOr[js.Any] => ISprite): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* id */ js.UndefOr[js.Any] => ISprite): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAt(value: /* index */ js.UndefOr[Double] => ISprite): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
+    inline def setGetAt(value: /* index */ js.UndefOr[Double] => ISprite): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAtUndefined: Self = StObject.set(x, "getAt", js.undefined)
+    inline def setGetAtUndefined: Self = StObject.set(x, "getAt", js.undefined)
     
-    @scala.inline
-    def setGetBBox(value: /* isWithTransform */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getBBox", js.Any.fromFunction1(value))
+    inline def setGetBBox(value: /* isWithTransform */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getBBox", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
+    inline def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
     
-    @scala.inline
-    def setGetSurface(value: () => js.Any): Self = StObject.set(x, "getSurface", js.Any.fromFunction0(value))
+    inline def setGetSurface(value: () => js.Any): Self = StObject.set(x, "getSurface", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSurfaceUndefined: Self = StObject.set(x, "getSurface", js.undefined)
+    inline def setGetSurfaceUndefined: Self = StObject.set(x, "getSurface", js.undefined)
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setHide(value: /* o */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+    inline def setHide(value: /* o */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+    inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
-    @scala.inline
-    def setRemove(value: (/* sprite */ js.UndefOr[ISprite], /* destroySprite */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+    inline def setRemove(value: (/* sprite */ js.UndefOr[ISprite], /* destroySprite */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setSetAttributes(value: /* o */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAttributes", js.Any.fromFunction1(value))
+    inline def setSetAttributes(value: /* o */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAttributes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAttributesUndefined: Self = StObject.set(x, "setAttributes", js.undefined)
+    inline def setSetAttributesUndefined: Self = StObject.set(x, "setAttributes", js.undefined)
     
-    @scala.inline
-    def setSetDirty(value: () => Unit): Self = StObject.set(x, "setDirty", js.Any.fromFunction0(value))
+    inline def setSetDirty(value: () => Unit): Self = StObject.set(x, "setDirty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDirtyUndefined: Self = StObject.set(x, "setDirty", js.undefined)
+    inline def setSetDirtyUndefined: Self = StObject.set(x, "setDirty", js.undefined)
     
-    @scala.inline
-    def setSetSurface(value: /* surface */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSurface", js.Any.fromFunction1(value))
+    inline def setSetSurface(value: /* surface */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSurface", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSurfaceUndefined: Self = StObject.set(x, "setSurface", js.undefined)
+    inline def setSetSurfaceUndefined: Self = StObject.set(x, "setSurface", js.undefined)
     
-    @scala.inline
-    def setShow(value: /* o */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: /* o */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

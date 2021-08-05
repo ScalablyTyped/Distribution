@@ -25,61 +25,43 @@ trait MagellanOptions extends StObject {
 }
 object MagellanOptions {
   
-  @scala.inline
-  def apply(): MagellanOptions = {
+  inline def apply(): MagellanOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MagellanOptions]
   }
   
-  @scala.inline
-  implicit class MagellanOptionsMutableBuilder[Self <: MagellanOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MagellanOptions](x: Self) {
     
-    @scala.inline
-    def setActive_class(value: String): Self = StObject.set(x, "active_class", value.asInstanceOf[js.Any])
+    inline def setActive_class(value: String): Self = StObject.set(x, "active_class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActive_classUndefined: Self = StObject.set(x, "active_class", js.undefined)
+    inline def setActive_classUndefined: Self = StObject.set(x, "active_class", js.undefined)
     
-    @scala.inline
-    def setDestination_threshold(value: Double): Self = StObject.set(x, "destination_threshold", value.asInstanceOf[js.Any])
+    inline def setDestination_threshold(value: Double): Self = StObject.set(x, "destination_threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestination_thresholdUndefined: Self = StObject.set(x, "destination_threshold", js.undefined)
+    inline def setDestination_thresholdUndefined: Self = StObject.set(x, "destination_threshold", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setFixed_top(value: Double): Self = StObject.set(x, "fixed_top", value.asInstanceOf[js.Any])
+    inline def setFixed_top(value: Double): Self = StObject.set(x, "fixed_top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixed_topUndefined: Self = StObject.set(x, "fixed_top", js.undefined)
+    inline def setFixed_topUndefined: Self = StObject.set(x, "fixed_top", js.undefined)
     
-    @scala.inline
-    def setOffset_by_height(value: Boolean): Self = StObject.set(x, "offset_by_height", value.asInstanceOf[js.Any])
+    inline def setOffset_by_height(value: Boolean): Self = StObject.set(x, "offset_by_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset_by_heightUndefined: Self = StObject.set(x, "offset_by_height", js.undefined)
+    inline def setOffset_by_heightUndefined: Self = StObject.set(x, "offset_by_height", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
-    @scala.inline
-    def setThrottle_delay(value: Double): Self = StObject.set(x, "throttle_delay", value.asInstanceOf[js.Any])
+    inline def setThrottle_delay(value: Double): Self = StObject.set(x, "throttle_delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottle_delayUndefined: Self = StObject.set(x, "throttle_delay", js.undefined)
+    inline def setThrottle_delayUndefined: Self = StObject.set(x, "throttle_delay", js.undefined)
   }
 }

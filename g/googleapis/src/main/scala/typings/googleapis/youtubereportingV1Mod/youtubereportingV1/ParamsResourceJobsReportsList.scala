@@ -60,61 +60,43 @@ trait ParamsResourceJobsReportsList
 }
 object ParamsResourceJobsReportsList {
   
-  @scala.inline
-  def apply(): ParamsResourceJobsReportsList = {
+  inline def apply(): ParamsResourceJobsReportsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceJobsReportsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceJobsReportsListMutableBuilder[Self <: ParamsResourceJobsReportsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceJobsReportsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCreatedAfter(value: String): Self = StObject.set(x, "createdAfter", value.asInstanceOf[js.Any])
+    inline def setCreatedAfter(value: String): Self = StObject.set(x, "createdAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAfterUndefined: Self = StObject.set(x, "createdAfter", js.undefined)
+    inline def setCreatedAfterUndefined: Self = StObject.set(x, "createdAfter", js.undefined)
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
+    inline def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setStartTimeAtOrAfter(value: String): Self = StObject.set(x, "startTimeAtOrAfter", value.asInstanceOf[js.Any])
+    inline def setStartTimeAtOrAfter(value: String): Self = StObject.set(x, "startTimeAtOrAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeAtOrAfterUndefined: Self = StObject.set(x, "startTimeAtOrAfter", js.undefined)
+    inline def setStartTimeAtOrAfterUndefined: Self = StObject.set(x, "startTimeAtOrAfter", js.undefined)
     
-    @scala.inline
-    def setStartTimeBefore(value: String): Self = StObject.set(x, "startTimeBefore", value.asInstanceOf[js.Any])
+    inline def setStartTimeBefore(value: String): Self = StObject.set(x, "startTimeBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeBeforeUndefined: Self = StObject.set(x, "startTimeBefore", js.undefined)
+    inline def setStartTimeBeforeUndefined: Self = StObject.set(x, "startTimeBefore", js.undefined)
   }
 }

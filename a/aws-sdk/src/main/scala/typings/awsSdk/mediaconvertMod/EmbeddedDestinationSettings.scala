@@ -18,25 +18,19 @@ trait EmbeddedDestinationSettings extends StObject {
 }
 object EmbeddedDestinationSettings {
   
-  @scala.inline
-  def apply(): EmbeddedDestinationSettings = {
+  inline def apply(): EmbeddedDestinationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmbeddedDestinationSettings]
   }
   
-  @scala.inline
-  implicit class EmbeddedDestinationSettingsMutableBuilder[Self <: EmbeddedDestinationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: EmbeddedDestinationSettings](x: Self) {
     
-    @scala.inline
-    def setDestination608ChannelNumber(value: integerMin1Max4): Self = StObject.set(x, "Destination608ChannelNumber", value.asInstanceOf[js.Any])
+    inline def setDestination608ChannelNumber(value: integerMin1Max4): Self = StObject.set(x, "Destination608ChannelNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestination608ChannelNumberUndefined: Self = StObject.set(x, "Destination608ChannelNumber", js.undefined)
+    inline def setDestination608ChannelNumberUndefined: Self = StObject.set(x, "Destination608ChannelNumber", js.undefined)
     
-    @scala.inline
-    def setDestination708ServiceNumber(value: integerMin1Max6): Self = StObject.set(x, "Destination708ServiceNumber", value.asInstanceOf[js.Any])
+    inline def setDestination708ServiceNumber(value: integerMin1Max6): Self = StObject.set(x, "Destination708ServiceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestination708ServiceNumberUndefined: Self = StObject.set(x, "Destination708ServiceNumber", js.undefined)
+    inline def setDestination708ServiceNumberUndefined: Self = StObject.set(x, "Destination708ServiceNumber", js.undefined)
   }
 }

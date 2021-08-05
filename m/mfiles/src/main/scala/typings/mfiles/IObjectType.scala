@@ -60,8 +60,7 @@ trait IObjectType extends StObject {
 }
 object IObjectType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessControlList: IAccessControlList,
     AllowAdding: Boolean,
     AllowedAsGroupingLevel: Boolean,
@@ -93,88 +92,60 @@ object IObjectType {
     __obj.asInstanceOf[IObjectType]
   }
   
-  @scala.inline
-  implicit class IObjectTypeMutableBuilder[Self <: IObjectType] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectType](x: Self) {
     
-    @scala.inline
-    def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
+    inline def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAdding(value: Boolean): Self = StObject.set(x, "AllowAdding", value.asInstanceOf[js.Any])
+    inline def setAllowAdding(value: Boolean): Self = StObject.set(x, "AllowAdding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedAsGroupingLevel(value: Boolean): Self = StObject.set(x, "AllowedAsGroupingLevel", value.asInstanceOf[js.Any])
+    inline def setAllowedAsGroupingLevel(value: Boolean): Self = StObject.set(x, "AllowedAsGroupingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanHaveFiles(value: Boolean): Self = StObject.set(x, "CanHaveFiles", value.asInstanceOf[js.Any])
+    inline def setCanHaveFiles(value: Boolean): Self = StObject.set(x, "CanHaveFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanHaveItemIcons(value: () => Boolean): Self = StObject.set(x, "CanHaveItemIcons", js.Any.fromFunction0(value))
+    inline def setCanHaveItemIcons(value: () => Boolean): Self = StObject.set(x, "CanHaveItemIcons", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClone(value: () => IObjectType): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IObjectType): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDefaultAccessControlList(value: IAccessControlList): Self = StObject.set(x, "DefaultAccessControlList", value.asInstanceOf[js.Any])
+    inline def setDefaultAccessControlList(value: IAccessControlList): Self = StObject.set(x, "DefaultAccessControlList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPropertyDef(value: Double): Self = StObject.set(x, "DefaultPropertyDef", value.asInstanceOf[js.Any])
+    inline def setDefaultPropertyDef(value: Double): Self = StObject.set(x, "DefaultPropertyDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternal(value: Boolean): Self = StObject.set(x, "External", value.asInstanceOf[js.Any])
+    inline def setExternal(value: Boolean): Self = StObject.set(x, "External", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
+    inline def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetIconAsPNG(value: (Double, Double) => js.Array[Double]): Self = StObject.set(x, "GetIconAsPNG", js.Any.fromFunction2(value))
+    inline def setGetIconAsPNG(value: (Double, Double) => js.Array[Double]): Self = StObject.set(x, "GetIconAsPNG", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHasOwnerType(value: Boolean): Self = StObject.set(x, "HasOwnerType", value.asInstanceOf[js.Any])
+    inline def setHasOwnerType(value: Boolean): Self = StObject.set(x, "HasOwnerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchical(value: Boolean): Self = StObject.set(x, "Hierarchical", value.asInstanceOf[js.Any])
+    inline def setHierarchical(value: Boolean): Self = StObject.set(x, "Hierarchical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: js.Array[Double]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: js.Array[Double]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconVarargs(value: Double*): Self = StObject.set(x, "Icon", js.Array(value :_*))
+    inline def setIconVarargs(value: Double*): Self = StObject.set(x, "Icon", js.Array(value :_*))
     
-    @scala.inline
-    def setIsAddingAllowedForUser(value: ISessionInfo => Boolean): Self = StObject.set(x, "IsAddingAllowedForUser", js.Any.fromFunction1(value))
+    inline def setIsAddingAllowedForUser(value: ISessionInfo => Boolean): Self = StObject.set(x, "IsAddingAllowedForUser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNamePlural(value: String): Self = StObject.set(x, "NamePlural", value.asInstanceOf[js.Any])
+    inline def setNamePlural(value: String): Self = StObject.set(x, "NamePlural", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameSingular(value: String): Self = StObject.set(x, "NameSingular", value.asInstanceOf[js.Any])
+    inline def setNameSingular(value: String): Self = StObject.set(x, "NameSingular", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeTargetsForBrowsing(value: IObjectTypeTargetsForBrowsing): Self = StObject.set(x, "ObjectTypeTargetsForBrowsing", value.asInstanceOf[js.Any])
+    inline def setObjectTypeTargetsForBrowsing(value: IObjectTypeTargetsForBrowsing): Self = StObject.set(x, "ObjectTypeTargetsForBrowsing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerPropertyDef(value: Double): Self = StObject.set(x, "OwnerPropertyDef", value.asInstanceOf[js.Any])
+    inline def setOwnerPropertyDef(value: Double): Self = StObject.set(x, "OwnerPropertyDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerType(value: Double): Self = StObject.set(x, "OwnerType", value.asInstanceOf[js.Any])
+    inline def setOwnerType(value: Double): Self = StObject.set(x, "OwnerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyPropertiesDuringInsert(value: IIDs): Self = StObject.set(x, "ReadOnlyPropertiesDuringInsert", value.asInstanceOf[js.Any])
+    inline def setReadOnlyPropertiesDuringInsert(value: IIDs): Self = StObject.set(x, "ReadOnlyPropertiesDuringInsert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyPropertiesDuringUpdate(value: IIDs): Self = StObject.set(x, "ReadOnlyPropertiesDuringUpdate", value.asInstanceOf[js.Any])
+    inline def setReadOnlyPropertiesDuringUpdate(value: IIDs): Self = StObject.set(x, "ReadOnlyPropertiesDuringUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealObjectType(value: Boolean): Self = StObject.set(x, "RealObjectType", value.asInstanceOf[js.Any])
+    inline def setRealObjectType(value: Boolean): Self = StObject.set(x, "RealObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCreationCommandInTaskPane(value: Boolean): Self = StObject.set(x, "ShowCreationCommandInTaskPane", value.asInstanceOf[js.Any])
+    inline def setShowCreationCommandInTaskPane(value: Boolean): Self = StObject.set(x, "ShowCreationCommandInTaskPane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslatable(value: Boolean): Self = StObject.set(x, "Translatable", value.asInstanceOf[js.Any])
+    inline def setTranslatable(value: Boolean): Self = StObject.set(x, "Translatable", value.asInstanceOf[js.Any])
   }
 }

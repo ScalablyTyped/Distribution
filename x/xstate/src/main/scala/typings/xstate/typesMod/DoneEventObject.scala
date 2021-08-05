@@ -12,20 +12,16 @@ trait DoneEventObject
 }
 object DoneEventObject {
   
-  @scala.inline
-  def apply(`type`: String): DoneEventObject = {
+  inline def apply(`type`: String): DoneEventObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DoneEventObject]
   }
   
-  @scala.inline
-  implicit class DoneEventObjectMutableBuilder[Self <: DoneEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: DoneEventObject](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

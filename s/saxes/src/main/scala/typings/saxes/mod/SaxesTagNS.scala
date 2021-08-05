@@ -26,8 +26,7 @@ trait SaxesTagNS
 }
 object SaxesTagNS {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributes: (Record[String, SaxesAttributeNS | String]) & (Record[String, SaxesAttributeNS]),
     isSelfClosing: Boolean,
     local: String,
@@ -40,28 +39,20 @@ object SaxesTagNS {
     __obj.asInstanceOf[SaxesTagNS]
   }
   
-  @scala.inline
-  implicit class SaxesTagNSMutableBuilder[Self <: SaxesTagNS] (val x: Self) extends AnyVal {
+  extension [Self <: SaxesTagNS](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: (Record[String, SaxesAttributeNS | String]) & (Record[String, SaxesAttributeNS])): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: (Record[String, SaxesAttributeNS | String]) & (Record[String, SaxesAttributeNS])): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSelfClosing(value: Boolean): Self = StObject.set(x, "isSelfClosing", value.asInstanceOf[js.Any])
+    inline def setIsSelfClosing(value: Boolean): Self = StObject.set(x, "isSelfClosing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNs(value: Record[String, String]): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+    inline def setNs(value: Record[String, String]): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

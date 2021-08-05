@@ -13,16 +13,13 @@ trait HumanLoopInput extends StObject {
 }
 object HumanLoopInput {
   
-  @scala.inline
-  def apply(InputContent: InputContent): HumanLoopInput = {
+  inline def apply(InputContent: InputContent): HumanLoopInput = {
     val __obj = js.Dynamic.literal(InputContent = InputContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[HumanLoopInput]
   }
   
-  @scala.inline
-  implicit class HumanLoopInputMutableBuilder[Self <: HumanLoopInput] (val x: Self) extends AnyVal {
+  extension [Self <: HumanLoopInput](x: Self) {
     
-    @scala.inline
-    def setInputContent(value: InputContent): Self = StObject.set(x, "InputContent", value.asInstanceOf[js.Any])
+    inline def setInputContent(value: InputContent): Self = StObject.set(x, "InputContent", value.asInstanceOf[js.Any])
   }
 }

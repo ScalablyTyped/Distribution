@@ -37,31 +37,23 @@ trait SchemaRedirect extends StObject {
 }
 object SchemaRedirect {
   
-  @scala.inline
-  def apply(): SchemaRedirect = {
+  inline def apply(): SchemaRedirect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRedirect]
   }
   
-  @scala.inline
-  implicit class SchemaRedirectMutableBuilder[Self <: SchemaRedirect] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRedirect](x: Self) {
     
-    @scala.inline
-    def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
+    inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
+    inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

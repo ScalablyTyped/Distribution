@@ -77,80 +77,56 @@ object mod {
   }
   object IdyllDocumentProps {
     
-    @scala.inline
-    def apply(components: js.Any): IdyllDocumentProps = {
+    inline def apply(components: js.Any): IdyllDocumentProps = {
       val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdyllDocumentProps]
     }
     
-    @scala.inline
-    implicit class IdyllDocumentPropsMutableBuilder[Self <: IdyllDocumentProps] (val x: Self) extends AnyVal {
+    extension [Self <: IdyllDocumentProps](x: Self) {
       
-      @scala.inline
-      def setAst(value: AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
+      inline def setAst(value: AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
+      inline def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
       
-      @scala.inline
-      def setAstVarargs(value: Node*): Self = StObject.set(x, "ast", js.Array(value :_*))
+      inline def setAstVarargs(value: Node*): Self = StObject.set(x, "ast", js.Array(value :_*))
       
-      @scala.inline
-      def setCompilerOptions(value: Options): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
+      inline def setCompilerOptions(value: Options): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerOptionsUndefined: Self = StObject.set(x, "compilerOptions", js.undefined)
+      inline def setCompilerOptionsUndefined: Self = StObject.set(x, "compilerOptions", js.undefined)
       
-      @scala.inline
-      def setComponents(value: js.Any): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: js.Any): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: /* context */ js.Any => Unit): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
+      inline def setContext(value: /* context */ js.Any => Unit): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDatasets(value: js.Object): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
+      inline def setDatasets(value: js.Object): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
+      inline def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
       
-      @scala.inline
-      def setErrorComponent(value: ReactType[Children]): Self = StObject.set(x, "errorComponent", value.asInstanceOf[js.Any])
+      inline def setErrorComponent(value: ReactType[Children]): Self = StObject.set(x, "errorComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorComponentUndefined: Self = StObject.set(x, "errorComponent", js.undefined)
+      inline def setErrorComponentUndefined: Self = StObject.set(x, "errorComponent", js.undefined)
       
-      @scala.inline
-      def setInitialState(value: js.Any): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: js.Any): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setMarkup(value: String): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
+      inline def setMarkup(value: String): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
+      inline def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* err */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* err */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

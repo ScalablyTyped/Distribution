@@ -32,64 +32,45 @@ trait InstanceInfo extends StObject {
 }
 object InstanceInfo {
   
-  @scala.inline
-  def apply(): InstanceInfo = {
+  inline def apply(): InstanceInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceInfo]
   }
   
-  @scala.inline
-  implicit class InstanceInfoMutableBuilder[Self <: InstanceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceInfo](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setExternalIp(value: String): Self = StObject.set(x, "externalIp", value.asInstanceOf[js.Any])
+    inline def setExternalIp(value: String): Self = StObject.set(x, "externalIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIpUndefined: Self = StObject.set(x, "externalIp", js.undefined)
+    inline def setExternalIpUndefined: Self = StObject.set(x, "externalIp", js.undefined)
     
-    @scala.inline
-    def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
+    inline def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
+    inline def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
     
-    @scala.inline
-    def setInternalIp(value: String): Self = StObject.set(x, "internalIp", value.asInstanceOf[js.Any])
+    inline def setInternalIp(value: String): Self = StObject.set(x, "internalIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalIpUndefined: Self = StObject.set(x, "internalIp", js.undefined)
+    inline def setInternalIpUndefined: Self = StObject.set(x, "internalIp", js.undefined)
     
-    @scala.inline
-    def setNetworkTags(value: js.Array[String]): Self = StObject.set(x, "networkTags", value.asInstanceOf[js.Any])
+    inline def setNetworkTags(value: js.Array[String]): Self = StObject.set(x, "networkTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkTagsUndefined: Self = StObject.set(x, "networkTags", js.undefined)
+    inline def setNetworkTagsUndefined: Self = StObject.set(x, "networkTags", js.undefined)
     
-    @scala.inline
-    def setNetworkTagsVarargs(value: String*): Self = StObject.set(x, "networkTags", js.Array(value :_*))
+    inline def setNetworkTagsVarargs(value: String*): Self = StObject.set(x, "networkTags", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
+    inline def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
+    inline def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
     
-    @scala.inline
-    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

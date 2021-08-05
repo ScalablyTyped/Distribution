@@ -11,19 +11,15 @@ trait GoogleCloudDialogflowV2IntentMessageTableCardCell extends StObject {
 }
 object GoogleCloudDialogflowV2IntentMessageTableCardCell {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2IntentMessageTableCardCell = {
+  inline def apply(): GoogleCloudDialogflowV2IntentMessageTableCardCell = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageTableCardCell]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2IntentMessageTableCardCellMutableBuilder[Self <: GoogleCloudDialogflowV2IntentMessageTableCardCell] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2IntentMessageTableCardCell](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

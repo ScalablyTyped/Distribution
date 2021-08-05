@@ -14,16 +14,13 @@ trait MouselockSetDetails
 }
 object MouselockSetDetails {
   
-  @scala.inline
-  def apply(primaryPattern: String): MouselockSetDetails = {
+  inline def apply(primaryPattern: String): MouselockSetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = "allow")
     __obj.asInstanceOf[MouselockSetDetails]
   }
   
-  @scala.inline
-  implicit class MouselockSetDetailsMutableBuilder[Self <: MouselockSetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MouselockSetDetails](x: Self) {
     
-    @scala.inline
-    def setSetting(value: allow): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: allow): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

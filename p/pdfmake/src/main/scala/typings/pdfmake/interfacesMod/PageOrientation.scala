@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PageOrientation extends StObject
 object PageOrientation {
   
-  @scala.inline
-  def landscape: typings.pdfmake.pdfmakeStrings.landscape = "landscape".asInstanceOf[typings.pdfmake.pdfmakeStrings.landscape]
+  inline def landscape: typings.pdfmake.pdfmakeStrings.landscape = "landscape".asInstanceOf[typings.pdfmake.pdfmakeStrings.landscape]
   
-  @scala.inline
-  def portrait: typings.pdfmake.pdfmakeStrings.portrait = "portrait".asInstanceOf[typings.pdfmake.pdfmakeStrings.portrait]
+  inline def portrait: typings.pdfmake.pdfmakeStrings.portrait = "portrait".asInstanceOf[typings.pdfmake.pdfmakeStrings.portrait]
 }

@@ -14,28 +14,21 @@ trait ListPatchDeploymentsResponse extends StObject {
 }
 object ListPatchDeploymentsResponse {
   
-  @scala.inline
-  def apply(): ListPatchDeploymentsResponse = {
+  inline def apply(): ListPatchDeploymentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPatchDeploymentsResponse]
   }
   
-  @scala.inline
-  implicit class ListPatchDeploymentsResponseMutableBuilder[Self <: ListPatchDeploymentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPatchDeploymentsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPatchDeployments(value: js.Array[PatchDeployment]): Self = StObject.set(x, "patchDeployments", value.asInstanceOf[js.Any])
+    inline def setPatchDeployments(value: js.Array[PatchDeployment]): Self = StObject.set(x, "patchDeployments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchDeploymentsUndefined: Self = StObject.set(x, "patchDeployments", js.undefined)
+    inline def setPatchDeploymentsUndefined: Self = StObject.set(x, "patchDeployments", js.undefined)
     
-    @scala.inline
-    def setPatchDeploymentsVarargs(value: PatchDeployment*): Self = StObject.set(x, "patchDeployments", js.Array(value :_*))
+    inline def setPatchDeploymentsVarargs(value: PatchDeployment*): Self = StObject.set(x, "patchDeployments", js.Array(value :_*))
   }
 }

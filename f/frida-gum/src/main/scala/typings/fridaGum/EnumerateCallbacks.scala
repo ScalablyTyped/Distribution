@@ -12,19 +12,15 @@ trait EnumerateCallbacks[T] extends StObject {
 }
 object EnumerateCallbacks {
   
-  @scala.inline
-  def apply[T](onComplete: () => Unit, onMatch: T => Unit | EnumerateAction): EnumerateCallbacks[T] = {
+  inline def apply[T](onComplete: () => Unit, onMatch: T => Unit | EnumerateAction): EnumerateCallbacks[T] = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onMatch = js.Any.fromFunction1(onMatch))
     __obj.asInstanceOf[EnumerateCallbacks[T]]
   }
   
-  @scala.inline
-  implicit class EnumerateCallbacksMutableBuilder[Self <: EnumerateCallbacks[?], T] (val x: Self & EnumerateCallbacks[T]) extends AnyVal {
+  extension [Self <: EnumerateCallbacks[?], T](x: Self & EnumerateCallbacks[T]) {
     
-    @scala.inline
-    def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
+    inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMatch(value: T => Unit | EnumerateAction): Self = StObject.set(x, "onMatch", js.Any.fromFunction1(value))
+    inline def setOnMatch(value: T => Unit | EnumerateAction): Self = StObject.set(x, "onMatch", js.Any.fromFunction1(value))
   }
 }

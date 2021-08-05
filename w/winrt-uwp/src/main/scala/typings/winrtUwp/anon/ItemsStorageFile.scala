@@ -13,19 +13,15 @@ trait ItemsStorageFile extends StObject {
 }
 object ItemsStorageFile {
   
-  @scala.inline
-  def apply(items: StorageFile, returnValue: Double): ItemsStorageFile = {
+  inline def apply(items: StorageFile, returnValue: Double): ItemsStorageFile = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsStorageFile]
   }
   
-  @scala.inline
-  implicit class ItemsStorageFileMutableBuilder[Self <: ItemsStorageFile] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsStorageFile](x: Self) {
     
-    @scala.inline
-    def setItems(value: StorageFile): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: StorageFile): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

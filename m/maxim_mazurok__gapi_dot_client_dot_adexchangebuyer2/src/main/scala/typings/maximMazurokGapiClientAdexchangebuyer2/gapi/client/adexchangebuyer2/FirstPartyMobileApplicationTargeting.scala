@@ -14,31 +14,23 @@ trait FirstPartyMobileApplicationTargeting extends StObject {
 }
 object FirstPartyMobileApplicationTargeting {
   
-  @scala.inline
-  def apply(): FirstPartyMobileApplicationTargeting = {
+  inline def apply(): FirstPartyMobileApplicationTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirstPartyMobileApplicationTargeting]
   }
   
-  @scala.inline
-  implicit class FirstPartyMobileApplicationTargetingMutableBuilder[Self <: FirstPartyMobileApplicationTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: FirstPartyMobileApplicationTargeting](x: Self) {
     
-    @scala.inline
-    def setExcludedAppIds(value: js.Array[String]): Self = StObject.set(x, "excludedAppIds", value.asInstanceOf[js.Any])
+    inline def setExcludedAppIds(value: js.Array[String]): Self = StObject.set(x, "excludedAppIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedAppIdsUndefined: Self = StObject.set(x, "excludedAppIds", js.undefined)
+    inline def setExcludedAppIdsUndefined: Self = StObject.set(x, "excludedAppIds", js.undefined)
     
-    @scala.inline
-    def setExcludedAppIdsVarargs(value: String*): Self = StObject.set(x, "excludedAppIds", js.Array(value :_*))
+    inline def setExcludedAppIdsVarargs(value: String*): Self = StObject.set(x, "excludedAppIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetedAppIds(value: js.Array[String]): Self = StObject.set(x, "targetedAppIds", value.asInstanceOf[js.Any])
+    inline def setTargetedAppIds(value: js.Array[String]): Self = StObject.set(x, "targetedAppIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetedAppIdsUndefined: Self = StObject.set(x, "targetedAppIds", js.undefined)
+    inline def setTargetedAppIdsUndefined: Self = StObject.set(x, "targetedAppIds", js.undefined)
     
-    @scala.inline
-    def setTargetedAppIdsVarargs(value: String*): Self = StObject.set(x, "targetedAppIds", js.Array(value :_*))
+    inline def setTargetedAppIdsVarargs(value: String*): Self = StObject.set(x, "targetedAppIds", js.Array(value :_*))
   }
 }

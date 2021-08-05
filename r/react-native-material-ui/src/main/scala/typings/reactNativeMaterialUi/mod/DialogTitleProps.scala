@@ -14,22 +14,17 @@ trait DialogTitleProps extends StObject {
 }
 object DialogTitleProps {
   
-  @scala.inline
-  def apply(children: Element): DialogTitleProps = {
+  inline def apply(children: Element): DialogTitleProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogTitleProps]
   }
   
-  @scala.inline
-  implicit class DialogTitlePropsMutableBuilder[Self <: DialogTitleProps] (val x: Self) extends AnyVal {
+  extension [Self <: DialogTitleProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: TitleContainer): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: TitleContainer): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -23,47 +23,37 @@ trait PaddingRightProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends S
 }
 object PaddingRightProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): PaddingRightProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): PaddingRightProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaddingRightProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class PaddingRightPropsMutableBuilder[Self <: PaddingRightProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & PaddingRightProps[ThemeType]) extends AnyVal {
+  extension [Self <: PaddingRightProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & PaddingRightProps[ThemeType]) {
     
-    @scala.inline
-    def setPaddingRight(
+    inline def setPaddingRight(
       value: ResponsiveValue[
           ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
+    inline def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
     
-    @scala.inline
-    def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
+    inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
-    @scala.inline
-    def setPaddingRightVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
+    inline def setPaddingRightVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
     
-    @scala.inline
-    def setPr(
+    inline def setPr(
       value: ResponsiveValue[
           ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrNull: Self = StObject.set(x, "pr", null)
+    inline def setPrNull: Self = StObject.set(x, "pr", null)
     
-    @scala.inline
-    def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
+    inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
     
-    @scala.inline
-    def setPrVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value :_*))
+    inline def setPrVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value :_*))
   }
 }

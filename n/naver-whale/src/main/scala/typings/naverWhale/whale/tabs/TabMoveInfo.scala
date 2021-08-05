@@ -14,22 +14,17 @@ trait TabMoveInfo extends StObject {
 }
 object TabMoveInfo {
   
-  @scala.inline
-  def apply(fromIndex: Double, toIndex: Double, windowId: Double): TabMoveInfo = {
+  inline def apply(fromIndex: Double, toIndex: Double, windowId: Double): TabMoveInfo = {
     val __obj = js.Dynamic.literal(fromIndex = fromIndex.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabMoveInfo]
   }
   
-  @scala.inline
-  implicit class TabMoveInfoMutableBuilder[Self <: TabMoveInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TabMoveInfo](x: Self) {
     
-    @scala.inline
-    def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
+    inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
+    inline def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+    inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
   }
 }

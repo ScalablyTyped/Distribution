@@ -18,22 +18,17 @@ trait CreateFlowTemplateRequest extends StObject {
 }
 object CreateFlowTemplateRequest {
   
-  @scala.inline
-  def apply(definition: DefinitionDocument): CreateFlowTemplateRequest = {
+  inline def apply(definition: DefinitionDocument): CreateFlowTemplateRequest = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFlowTemplateRequest]
   }
   
-  @scala.inline
-  implicit class CreateFlowTemplateRequestMutableBuilder[Self <: CreateFlowTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFlowTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setCompatibleNamespaceVersion(value: Version): Self = StObject.set(x, "compatibleNamespaceVersion", value.asInstanceOf[js.Any])
+    inline def setCompatibleNamespaceVersion(value: Version): Self = StObject.set(x, "compatibleNamespaceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibleNamespaceVersionUndefined: Self = StObject.set(x, "compatibleNamespaceVersion", js.undefined)
+    inline def setCompatibleNamespaceVersionUndefined: Self = StObject.set(x, "compatibleNamespaceVersion", js.undefined)
     
-    @scala.inline
-    def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
   }
 }

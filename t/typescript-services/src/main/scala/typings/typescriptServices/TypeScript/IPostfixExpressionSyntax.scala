@@ -12,8 +12,7 @@ trait IPostfixExpressionSyntax
 }
 object IPostfixExpressionSyntax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: ISyntaxVisitor => js.Any,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
@@ -44,10 +43,8 @@ object IPostfixExpressionSyntax {
     __obj.asInstanceOf[IPostfixExpressionSyntax]
   }
   
-  @scala.inline
-  implicit class IPostfixExpressionSyntaxMutableBuilder[Self <: IPostfixExpressionSyntax] (val x: Self) extends AnyVal {
+  extension [Self <: IPostfixExpressionSyntax](x: Self) {
     
-    @scala.inline
-    def setIsPostfixExpression(value: () => Boolean): Self = StObject.set(x, "isPostfixExpression", js.Any.fromFunction0(value))
+    inline def setIsPostfixExpression(value: () => Boolean): Self = StObject.set(x, "isPostfixExpression", js.Any.fromFunction0(value))
   }
 }

@@ -96,8 +96,7 @@ object global {
             * @returns An XML string.
             */
           /* static member */
-          @scala.inline
-          def toXml(records: js.Array[js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(records.asInstanceOf[js.Any]).asInstanceOf[String]
+          inline def toXml(records: js.Array[js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(records.asInstanceOf[js.Any]).asInstanceOf[String]
         }
         
         /**
@@ -193,33 +192,24 @@ object global {
         @JSGlobal("dymo.label.framework.VERSION")
         @js.native
         def VERSION: String = js.native
-        @scala.inline
-        def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+        inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
         
         /**
           * Undocumented, removed, see http://developers.dymo.com/2013/08/14/dymo-sdk-qa/#comment-27119
           */
-        @scala.inline
-        def addPrinterUri(printerUri: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any]).asInstanceOf[Unit]
-        @scala.inline
-        def addPrinterUri(printerUri: String, location: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        @scala.inline
-        def addPrinterUri(printerUri: String, location: String, successCallback: Unit, errorCallback: AddPrinterUriCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any], location.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        @scala.inline
-        def addPrinterUri(printerUri: String, location: String, successCallback: AddPrinterUriCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any], location.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        @scala.inline
-        def addPrinterUri(
+        inline def addPrinterUri(printerUri: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        inline def addPrinterUri(printerUri: String, location: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        inline def addPrinterUri(printerUri: String, location: String, successCallback: Unit, errorCallback: AddPrinterUriCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any], location.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        inline def addPrinterUri(printerUri: String, location: String, successCallback: AddPrinterUriCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any], location.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        inline def addPrinterUri(
           printerUri: String,
           location: String,
           successCallback: AddPrinterUriCallback,
           errorCallback: AddPrinterUriCallback
         ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any], location.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        @scala.inline
-        def addPrinterUri(printerUri: String, location: Unit, successCallback: Unit, errorCallback: AddPrinterUriCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any], location.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        @scala.inline
-        def addPrinterUri(printerUri: String, location: Unit, successCallback: AddPrinterUriCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any], location.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        @scala.inline
-        def addPrinterUri(
+        inline def addPrinterUri(printerUri: String, location: Unit, successCallback: Unit, errorCallback: AddPrinterUriCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any], location.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        inline def addPrinterUri(printerUri: String, location: Unit, successCallback: AddPrinterUriCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any], location.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        inline def addPrinterUri(
           printerUri: String,
           location: Unit,
           successCallback: AddPrinterUriCallback,
@@ -227,8 +217,7 @@ object global {
         ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrinterUri")(printerUri.asInstanceOf[js.Any], location.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
         
         /** Checks that the browser enviroment is suitable for the Framework. */
-        @scala.inline
-        def checkEnvironment(): ErrorDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("checkEnvironment")().asInstanceOf[ErrorDetails]
+        inline def checkEnvironment(): ErrorDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("checkEnvironment")().asInstanceOf[ErrorDetails]
         
         /**
           * Creates an XML string suitable to pass to the dymo.label.framework.renderLabel function
@@ -237,8 +226,7 @@ object global {
           * @param params A JavaScript object with the following properties
           *   (not all properties must be defined; if a property is not defined, a default value is used)
           */
-        @scala.inline
-        def createLabelRenderParamsXml(params: CreateLabelRenderParamsXmlParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createLabelRenderParamsXml")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+        inline def createLabelRenderParamsXml(params: CreateLabelRenderParamsXmlParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createLabelRenderParamsXml")(params.asInstanceOf[js.Any]).asInstanceOf[String]
         
         /**
           * Creates an XML string suitable to to pass to the dymo.label.framework.printLabel function
@@ -248,8 +236,7 @@ object global {
           * @param params A JavaScript object with the following properties
           *   (not all properties must be defined; if a property is not defined, a default value is used)
           */
-        @scala.inline
-        def createLabelWriterPrintParamsXml(params: CreateLabelWriterPrintParamsXmlParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createLabelWriterPrintParamsXml")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+        inline def createLabelWriterPrintParamsXml(params: CreateLabelWriterPrintParamsXmlParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createLabelWriterPrintParamsXml")(params.asInstanceOf[js.Any]).asInstanceOf[String]
         
         /**
           * Creates an XML string suitable to pass to the dymo.label.framework.printLabel function as printParamsXml parameter. Created print parameters are for printing to Tape printers.
@@ -258,14 +245,12 @@ object global {
           * @param params A JavaScript object with the following properties
           *   (not all properties must be defined; if a property is not defined, a default value is used)
           */
-        @scala.inline
-        def createTapePrintParamsXml(params: CreateTapePrintParamsXmlParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createTapePrintParamsXml")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+        inline def createTapePrintParamsXml(params: CreateTapePrintParamsXmlParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createTapePrintParamsXml")(params.asInstanceOf[js.Any]).asInstanceOf[String]
         
         /**
           * Convenience method (overload of getPrinters) to get a list of all printers of type "LabelWriterPrinter".
           */
-        @scala.inline
-        def getLabelWriterPrinters(): js.Array[PrinterInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLabelWriterPrinters")().asInstanceOf[js.Array[PrinterInfo]]
+        inline def getLabelWriterPrinters(): js.Array[PrinterInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLabelWriterPrinters")().asInstanceOf[js.Array[PrinterInfo]]
         
         /**
           * Gets a list of all printers supported by the DYMO Label Framework.
@@ -273,14 +258,12 @@ object global {
           * Each item is of the type dymo.label.framework.PrinterInfo.
           * In addition, items can be accessed by printer name.
           */
-        @scala.inline
-        def getPrinters(): js.Array[PrinterInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrinters")().asInstanceOf[js.Array[PrinterInfo]]
+        inline def getPrinters(): js.Array[PrinterInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrinters")().asInstanceOf[js.Array[PrinterInfo]]
         
         /**
           * Convenience method (overload of getPrinters) to get a list of all printers of type "TapePrinter".
           */
-        @scala.inline
-        def getTapePrinters(): js.Array[PrinterInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTapePrinters")().asInstanceOf[js.Array[PrinterInfo]]
+        inline def getTapePrinters(): js.Array[PrinterInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTapePrinters")().asInstanceOf[js.Array[PrinterInfo]]
         
         /**
           * Loads an image from a URL or file and returns it as a base64-encoded PNG stream.
@@ -293,8 +276,7 @@ object global {
           *
           * @returns A base64-encoded PNG stream.
           */
-        @scala.inline
-        def loadImageAsPngBase64(imageUri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loadImageAsPngBase64")(imageUri.asInstanceOf[js.Any]).asInstanceOf[String]
+        inline def loadImageAsPngBase64(imageUri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loadImageAsPngBase64")(imageUri.asInstanceOf[js.Any]).asInstanceOf[String]
         
         /**
           * Loads label content from a file or URL.
@@ -313,8 +295,7 @@ object global {
           * 
           * @returns Returns Label object; provides label manipulation methods.
           */
-        @scala.inline
-        def openLabelFile(fileName: String): ILabel = ^.asInstanceOf[js.Dynamic].applyDynamic("openLabelFile")(fileName.asInstanceOf[js.Any]).asInstanceOf[ILabel]
+        inline def openLabelFile(fileName: String): ILabel = ^.asInstanceOf[js.Dynamic].applyDynamic("openLabelFile")(fileName.asInstanceOf[js.Any]).asInstanceOf[ILabel]
         
         /**
           * Loads label content from an XML stream/string.
@@ -324,8 +305,7 @@ object global {
           * @param labelXml The label definition as an XML string.
           * @returns Label object.
           */
-        @scala.inline
-        def openLabelXml(labelXml: String): ILabel = ^.asInstanceOf[js.Dynamic].applyDynamic("openLabelXml")(labelXml.asInstanceOf[js.Any]).asInstanceOf[ILabel]
+        inline def openLabelXml(labelXml: String): ILabel = ^.asInstanceOf[js.Dynamic].applyDynamic("openLabelXml")(labelXml.asInstanceOf[js.Any]).asInstanceOf[ILabel]
         
         /**
           * Prints one or more labels.
@@ -340,8 +320,7 @@ object global {
           *   create a LabelSet, or construct XML manualy according to
           *   [LabelSet.xsd]{@link http://labelwriter.com/software/dls/sdk/LabelSet.xsd}.
           */
-        @scala.inline
-        def printLabel(printerName: String, printParamsXml: String, labelXml: String, labelSetXml: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printLabel")(printerName.asInstanceOf[js.Any], printParamsXml.asInstanceOf[js.Any], labelXml.asInstanceOf[js.Any], labelSetXml.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        inline def printLabel(printerName: String, printParamsXml: String, labelXml: String, labelSetXml: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printLabel")(printerName.asInstanceOf[js.Any], printParamsXml.asInstanceOf[js.Any], labelXml.asInstanceOf[js.Any], labelSetXml.asInstanceOf[js.Any])).asInstanceOf[Unit]
         
         /**
           * Prints a label and returns a print job object
@@ -353,8 +332,7 @@ object global {
           *   LabelSet to print. LabelSet is used to print multiple labels with same layout but different data, e.g. multiple addresses.
           *   Use LabelSetBuilder to create a LabelSet or construct xml manualy according to [LabelSet.xsd]{@link http://labelwriter.com/software/dls/sdk/LabelSet.xsd}.
           */
-        @scala.inline
-        def printLabel2(printerName: String, printParamsXml: String, labelXml: String, labelSetXml: String): PrintJob = (^.asInstanceOf[js.Dynamic].applyDynamic("printLabel2")(printerName.asInstanceOf[js.Any], printParamsXml.asInstanceOf[js.Any], labelXml.asInstanceOf[js.Any], labelSetXml.asInstanceOf[js.Any])).asInstanceOf[PrintJob]
+        inline def printLabel2(printerName: String, printParamsXml: String, labelXml: String, labelSetXml: String): PrintJob = (^.asInstanceOf[js.Dynamic].applyDynamic("printLabel2")(printerName.asInstanceOf[js.Any], printParamsXml.asInstanceOf[js.Any], labelXml.asInstanceOf[js.Any], labelSetXml.asInstanceOf[js.Any])).asInstanceOf[PrintJob]
         
         /**
           * Prints a label and runs status checking in a loop
@@ -372,8 +350,7 @@ object global {
           *   To continue polling the status the function should return true, false otherwise.
           * @param pollInterval Polling interval in milliseconds
           */
-        @scala.inline
-        def printLabelAndPollStatus(
+        inline def printLabelAndPollStatus(
           printerName: String,
           printParamsXml: String,
           labelXml: String,
@@ -385,14 +362,12 @@ object global {
         /**
           * Undocumented, removed, see http://developers.dymo.com/2013/08/14/dymo-sdk-qa/#comment-27119
           */
-        @scala.inline
-        def removeAllPrinterUri(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllPrinterUri")().asInstanceOf[Unit]
+        inline def removeAllPrinterUri(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllPrinterUri")().asInstanceOf[Unit]
         
         /**
           * Undocumented, removed, see http://developers.dymo.com/2013/08/14/dymo-sdk-qa/#comment-27119
           */
-        @scala.inline
-        def removePrinterUri(printerUri: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removePrinterUri")(printerUri.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        inline def removePrinterUri(printerUri: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removePrinterUri")(printerUri.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
         /**
           * Creates a label raster image that can be used for label previewing.
@@ -410,8 +385,7 @@ object global {
           *
           * @returns A base64-encoded PNG stream of the label image.
           */
-        @scala.inline
-        def renderLabel(labelXml: String, renderParamsXml: String, printerName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderLabel")(labelXml.asInstanceOf[js.Any], renderParamsXml.asInstanceOf[js.Any], printerName.asInstanceOf[js.Any])).asInstanceOf[String]
+        inline def renderLabel(labelXml: String, renderParamsXml: String, printerName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderLabel")(labelXml.asInstanceOf[js.Any], renderParamsXml.asInstanceOf[js.Any], printerName.asInstanceOf[js.Any])).asInstanceOf[String]
       }
     }
   }

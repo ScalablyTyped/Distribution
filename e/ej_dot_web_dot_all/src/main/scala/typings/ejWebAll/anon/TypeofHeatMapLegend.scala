@@ -15,19 +15,15 @@ trait TypeofHeatMapLegend extends StObject {
 }
 object TypeofHeatMapLegend {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: HeatMapLegend): TypeofHeatMapLegend = {
+  inline def apply(Locale: js.Any, fn: HeatMapLegend): TypeofHeatMapLegend = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofHeatMapLegend]
   }
   
-  @scala.inline
-  implicit class TypeofHeatMapLegendMutableBuilder[Self <: TypeofHeatMapLegend] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofHeatMapLegend](x: Self) {
     
-    @scala.inline
-    def setFn(value: HeatMapLegend): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: HeatMapLegend): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

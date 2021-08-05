@@ -47,8 +47,7 @@ trait TouchEvent extends StObject {
 }
 object TouchEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changedTouches: js.Array[Touch],
     element: Element,
     event: TouchEvent,
@@ -59,28 +58,20 @@ object TouchEvent {
     __obj.asInstanceOf[TouchEvent]
   }
   
-  @scala.inline
-  implicit class TouchEventMutableBuilder[Self <: TouchEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TouchEvent](x: Self) {
     
-    @scala.inline
-    def setChangedTouches(value: js.Array[Touch]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+    inline def setChangedTouches(value: js.Array[Touch]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedTouchesVarargs(value: Touch*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
+    inline def setChangedTouchesVarargs(value: Touch*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
     
-    @scala.inline
-    def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: TouchEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: TouchEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTouchById(value: (Double, js.Array[Touch]) => Touch): Self = StObject.set(x, "getTouchById", js.Any.fromFunction2(value))
+    inline def setGetTouchById(value: (Double, js.Array[Touch]) => Touch): Self = StObject.set(x, "getTouchById", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTouches(value: js.Array[Touch]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+    inline def setTouches(value: js.Array[Touch]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchesVarargs(value: Touch*): Self = StObject.set(x, "touches", js.Array(value :_*))
+    inline def setTouchesVarargs(value: Touch*): Self = StObject.set(x, "touches", js.Array(value :_*))
   }
 }

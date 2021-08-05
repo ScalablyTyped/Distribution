@@ -38,40 +38,29 @@ trait ValueSetComposeIncludeConceptDesignation
 }
 object ValueSetComposeIncludeConceptDesignation {
   
-  @scala.inline
-  def apply(value: String): ValueSetComposeIncludeConceptDesignation = {
+  inline def apply(value: String): ValueSetComposeIncludeConceptDesignation = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueSetComposeIncludeConceptDesignation]
   }
   
-  @scala.inline
-  implicit class ValueSetComposeIncludeConceptDesignationMutableBuilder[Self <: ValueSetComposeIncludeConceptDesignation] (val x: Self) extends AnyVal {
+  extension [Self <: ValueSetComposeIncludeConceptDesignation](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: code): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: code): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setUse(value: Coding): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: Coding): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+    inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
+    inline def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
+    inline def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
     
-    @scala.inline
-    def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+    inline def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
+    inline def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

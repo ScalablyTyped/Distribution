@@ -40,65 +40,47 @@ trait RepoSource extends StObject {
 }
 object RepoSource {
   
-  @scala.inline
-  def apply(): RepoSource = {
+  inline def apply(): RepoSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RepoSource]
   }
   
-  @scala.inline
-  implicit class RepoSourceMutableBuilder[Self <: RepoSource] (val x: Self) extends AnyVal {
+  extension [Self <: RepoSource](x: Self) {
     
-    @scala.inline
-    def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchNameUndefined: Self = StObject.set(x, "branchName", js.undefined)
+    inline def setBranchNameUndefined: Self = StObject.set(x, "branchName", js.undefined)
     
-    @scala.inline
-    def setCommitSha(value: String): Self = StObject.set(x, "commitSha", value.asInstanceOf[js.Any])
+    inline def setCommitSha(value: String): Self = StObject.set(x, "commitSha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitShaUndefined: Self = StObject.set(x, "commitSha", js.undefined)
+    inline def setCommitShaUndefined: Self = StObject.set(x, "commitSha", js.undefined)
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setInvertRegex(value: Boolean): Self = StObject.set(x, "invertRegex", value.asInstanceOf[js.Any])
+    inline def setInvertRegex(value: Boolean): Self = StObject.set(x, "invertRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertRegexUndefined: Self = StObject.set(x, "invertRegex", js.undefined)
+    inline def setInvertRegexUndefined: Self = StObject.set(x, "invertRegex", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setRepoName(value: String): Self = StObject.set(x, "repoName", value.asInstanceOf[js.Any])
+    inline def setRepoName(value: String): Self = StObject.set(x, "repoName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepoNameUndefined: Self = StObject.set(x, "repoName", js.undefined)
+    inline def setRepoNameUndefined: Self = StObject.set(x, "repoName", js.undefined)
     
-    @scala.inline
-    def setSubstitutions(
+    inline def setSubstitutions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.RepoSource & TopLevel[js.Any]
     ): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstitutionsUndefined: Self = StObject.set(x, "substitutions", js.undefined)
+    inline def setSubstitutionsUndefined: Self = StObject.set(x, "substitutions", js.undefined)
     
-    @scala.inline
-    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+    inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
   }
 }

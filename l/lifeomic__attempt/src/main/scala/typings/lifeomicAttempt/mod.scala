@@ -10,16 +10,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultCalculateDelay[T](context: AttemptContext, options: AttemptOptions[T]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultCalculateDelay")(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def defaultCalculateDelay[T](context: AttemptContext, options: AttemptOptions[T]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultCalculateDelay")(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def retry[T](attemptFunc: AttemptFunction[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("retry")(attemptFunc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  @scala.inline
-  def retry[T](attemptFunc: AttemptFunction[T], attemptOptions: PartialAttemptOptions[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("retry")(attemptFunc.asInstanceOf[js.Any], attemptOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def retry[T](attemptFunc: AttemptFunction[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("retry")(attemptFunc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def retry[T](attemptFunc: AttemptFunction[T], attemptOptions: PartialAttemptOptions[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("retry")(attemptFunc.asInstanceOf[js.Any], attemptOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @scala.inline
-  def sleep(delay: Double): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(delay.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  inline def sleep(delay: Double): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(delay.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
   trait AttemptContext extends StObject {
     
@@ -33,26 +29,20 @@ object mod {
   }
   object AttemptContext {
     
-    @scala.inline
-    def apply(abort: () => Unit, aborted: Boolean, attemptNum: Double, attemptsRemaining: Double): AttemptContext = {
+    inline def apply(abort: () => Unit, aborted: Boolean, attemptNum: Double, attemptsRemaining: Double): AttemptContext = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), aborted = aborted.asInstanceOf[js.Any], attemptNum = attemptNum.asInstanceOf[js.Any], attemptsRemaining = attemptsRemaining.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttemptContext]
     }
     
-    @scala.inline
-    implicit class AttemptContextMutableBuilder[Self <: AttemptContext] (val x: Self) extends AnyVal {
+    extension [Self <: AttemptContext](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
+      inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttemptNum(value: Double): Self = StObject.set(x, "attemptNum", value.asInstanceOf[js.Any])
+      inline def setAttemptNum(value: Double): Self = StObject.set(x, "attemptNum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttemptsRemaining(value: Double): Self = StObject.set(x, "attemptsRemaining", value.asInstanceOf[js.Any])
+      inline def setAttemptsRemaining(value: Double): Self = StObject.set(x, "attemptsRemaining", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,8 +76,7 @@ object mod {
   }
   object AttemptOptions {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       delay: Double,
       factor: Double,
       initialDelay: Double,
@@ -101,56 +90,39 @@ object mod {
       __obj.asInstanceOf[AttemptOptions[T]]
     }
     
-    @scala.inline
-    implicit class AttemptOptionsMutableBuilder[Self <: AttemptOptions[?], T] (val x: Self & AttemptOptions[T]) extends AnyVal {
+    extension [Self <: AttemptOptions[?], T](x: Self & AttemptOptions[T]) {
       
-      @scala.inline
-      def setBeforeAttempt(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "beforeAttempt", js.Any.fromFunction2(value))
+      inline def setBeforeAttempt(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "beforeAttempt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeAttemptNull: Self = StObject.set(x, "beforeAttempt", null)
+      inline def setBeforeAttemptNull: Self = StObject.set(x, "beforeAttempt", null)
       
-      @scala.inline
-      def setCalculateDelay(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Double): Self = StObject.set(x, "calculateDelay", js.Any.fromFunction2(value))
+      inline def setCalculateDelay(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Double): Self = StObject.set(x, "calculateDelay", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCalculateDelayNull: Self = StObject.set(x, "calculateDelay", null)
+      inline def setCalculateDelayNull: Self = StObject.set(x, "calculateDelay", null)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+      inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleError(value: (/* err */ js.Any, /* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "handleError", js.Any.fromFunction3(value))
+      inline def setHandleError(value: (/* err */ js.Any, /* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "handleError", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHandleErrorNull: Self = StObject.set(x, "handleError", null)
+      inline def setHandleErrorNull: Self = StObject.set(x, "handleError", null)
       
-      @scala.inline
-      def setHandleTimeout(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => js.Promise[T]): Self = StObject.set(x, "handleTimeout", js.Any.fromFunction2(value))
+      inline def setHandleTimeout(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => js.Promise[T]): Self = StObject.set(x, "handleTimeout", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHandleTimeoutNull: Self = StObject.set(x, "handleTimeout", null)
+      inline def setHandleTimeoutNull: Self = StObject.set(x, "handleTimeout", null)
       
-      @scala.inline
-      def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
+      inline def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJitter(value: Boolean): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
+      inline def setJitter(value: Boolean): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
+      inline def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDelay(value: Double): Self = StObject.set(x, "minDelay", value.asInstanceOf[js.Any])
+      inline def setMinDelay(value: Double): Self = StObject.set(x, "minDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,98 +163,68 @@ object mod {
   }
   object PartialAttemptOptions {
     
-    @scala.inline
-    def apply[T](): PartialAttemptOptions[T] = {
+    inline def apply[T](): PartialAttemptOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialAttemptOptions[T]]
     }
     
-    @scala.inline
-    implicit class PartialAttemptOptionsMutableBuilder[Self <: PartialAttemptOptions[?], T] (val x: Self & PartialAttemptOptions[T]) extends AnyVal {
+    extension [Self <: PartialAttemptOptions[?], T](x: Self & PartialAttemptOptions[T]) {
       
-      @scala.inline
-      def setBeforeAttempt(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "beforeAttempt", js.Any.fromFunction2(value))
+      inline def setBeforeAttempt(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "beforeAttempt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeAttemptNull: Self = StObject.set(x, "beforeAttempt", null)
+      inline def setBeforeAttemptNull: Self = StObject.set(x, "beforeAttempt", null)
       
-      @scala.inline
-      def setBeforeAttemptUndefined: Self = StObject.set(x, "beforeAttempt", js.undefined)
+      inline def setBeforeAttemptUndefined: Self = StObject.set(x, "beforeAttempt", js.undefined)
       
-      @scala.inline
-      def setCalculateDelay(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Double): Self = StObject.set(x, "calculateDelay", js.Any.fromFunction2(value))
+      inline def setCalculateDelay(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Double): Self = StObject.set(x, "calculateDelay", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCalculateDelayNull: Self = StObject.set(x, "calculateDelay", null)
+      inline def setCalculateDelayNull: Self = StObject.set(x, "calculateDelay", null)
       
-      @scala.inline
-      def setCalculateDelayUndefined: Self = StObject.set(x, "calculateDelay", js.undefined)
+      inline def setCalculateDelayUndefined: Self = StObject.set(x, "calculateDelay", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+      inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+      inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
       
-      @scala.inline
-      def setHandleError(value: (/* err */ js.Any, /* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "handleError", js.Any.fromFunction3(value))
+      inline def setHandleError(value: (/* err */ js.Any, /* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "handleError", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHandleErrorNull: Self = StObject.set(x, "handleError", null)
+      inline def setHandleErrorNull: Self = StObject.set(x, "handleError", null)
       
-      @scala.inline
-      def setHandleErrorUndefined: Self = StObject.set(x, "handleError", js.undefined)
+      inline def setHandleErrorUndefined: Self = StObject.set(x, "handleError", js.undefined)
       
-      @scala.inline
-      def setHandleTimeout(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => js.Promise[T]): Self = StObject.set(x, "handleTimeout", js.Any.fromFunction2(value))
+      inline def setHandleTimeout(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => js.Promise[T]): Self = StObject.set(x, "handleTimeout", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHandleTimeoutNull: Self = StObject.set(x, "handleTimeout", null)
+      inline def setHandleTimeoutNull: Self = StObject.set(x, "handleTimeout", null)
       
-      @scala.inline
-      def setHandleTimeoutUndefined: Self = StObject.set(x, "handleTimeout", js.undefined)
+      inline def setHandleTimeoutUndefined: Self = StObject.set(x, "handleTimeout", js.undefined)
       
-      @scala.inline
-      def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
+      inline def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialDelayUndefined: Self = StObject.set(x, "initialDelay", js.undefined)
+      inline def setInitialDelayUndefined: Self = StObject.set(x, "initialDelay", js.undefined)
       
-      @scala.inline
-      def setJitter(value: Boolean): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
+      inline def setJitter(value: Boolean): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJitterUndefined: Self = StObject.set(x, "jitter", js.undefined)
+      inline def setJitterUndefined: Self = StObject.set(x, "jitter", js.undefined)
       
-      @scala.inline
-      def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
+      inline def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
       
-      @scala.inline
-      def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
+      inline def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDelayUndefined: Self = StObject.set(x, "maxDelay", js.undefined)
+      inline def setMaxDelayUndefined: Self = StObject.set(x, "maxDelay", js.undefined)
       
-      @scala.inline
-      def setMinDelay(value: Double): Self = StObject.set(x, "minDelay", value.asInstanceOf[js.Any])
+      inline def setMinDelay(value: Double): Self = StObject.set(x, "minDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDelayUndefined: Self = StObject.set(x, "minDelay", js.undefined)
+      inline def setMinDelayUndefined: Self = StObject.set(x, "minDelay", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

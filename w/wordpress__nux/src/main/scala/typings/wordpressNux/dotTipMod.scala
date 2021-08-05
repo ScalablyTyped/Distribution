@@ -40,23 +40,18 @@ object dotTipMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(tipId: String): Props = {
+      inline def apply(tipId: String): Props = {
         val __obj = js.Dynamic.literal(tipId = tipId.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setTipId(value: String): Self = StObject.set(x, "tipId", value.asInstanceOf[js.Any])
+        inline def setTipId(value: String): Self = StObject.set(x, "tipId", value.asInstanceOf[js.Any])
       }
     }
   }

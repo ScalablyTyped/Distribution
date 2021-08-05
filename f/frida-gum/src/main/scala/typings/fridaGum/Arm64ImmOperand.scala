@@ -16,20 +16,16 @@ trait Arm64ImmOperand
 }
 object Arm64ImmOperand {
   
-  @scala.inline
-  def apply(value: Int64): Arm64ImmOperand = {
+  inline def apply(value: Int64): Arm64ImmOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("imm")
     __obj.asInstanceOf[Arm64ImmOperand]
   }
   
-  @scala.inline
-  implicit class Arm64ImmOperandMutableBuilder[Self <: Arm64ImmOperand] (val x: Self) extends AnyVal {
+  extension [Self <: Arm64ImmOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: imm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: imm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Int64): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Int64): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

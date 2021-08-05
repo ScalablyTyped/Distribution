@@ -75,7 +75,7 @@ trait CommandBar extends StObject {
   
   var NameLocal: String = js.native
   
-  @JSName("Office.CommandBar_typekey")
+  /* private */ @JSName("Office.CommandBar_typekey")
   var OfficeDotCommandBar_typekey: CommandBar = js.native
   
   val Parent: js.Any = js.native

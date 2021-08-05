@@ -29,31 +29,23 @@ trait ParamsResourcePagesDelete
 }
 object ParamsResourcePagesDelete {
   
-  @scala.inline
-  def apply(): ParamsResourcePagesDelete = {
+  inline def apply(): ParamsResourcePagesDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePagesDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePagesDeleteMutableBuilder[Self <: ParamsResourcePagesDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePagesDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
+    inline def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
+    inline def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
     
-    @scala.inline
-    def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
+    inline def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIdUndefined: Self = StObject.set(x, "pageId", js.undefined)
+    inline def setPageIdUndefined: Self = StObject.set(x, "pageId", js.undefined)
   }
 }

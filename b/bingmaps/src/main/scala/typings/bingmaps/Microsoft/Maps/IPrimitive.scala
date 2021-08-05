@@ -29,28 +29,21 @@ trait IPrimitive extends StObject {
 }
 object IPrimitive {
   
-  @scala.inline
-  def apply(getCursor: () => String, getVisible: () => Boolean, setOptions: IPrimitiveOptions => Unit): IPrimitive = {
+  inline def apply(getCursor: () => String, getVisible: () => Boolean, setOptions: IPrimitiveOptions => Unit): IPrimitive = {
     val __obj = js.Dynamic.literal(getCursor = js.Any.fromFunction0(getCursor), getVisible = js.Any.fromFunction0(getVisible), setOptions = js.Any.fromFunction1(setOptions))
     __obj.asInstanceOf[IPrimitive]
   }
   
-  @scala.inline
-  implicit class IPrimitiveMutableBuilder[Self <: IPrimitive] (val x: Self) extends AnyVal {
+  extension [Self <: IPrimitive](x: Self) {
     
-    @scala.inline
-    def setGetCursor(value: () => String): Self = StObject.set(x, "getCursor", js.Any.fromFunction0(value))
+    inline def setGetCursor(value: () => String): Self = StObject.set(x, "getCursor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
+    inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setSetOptions(value: IPrimitiveOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: IPrimitiveOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

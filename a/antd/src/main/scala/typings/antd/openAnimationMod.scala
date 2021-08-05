@@ -13,13 +13,10 @@ object openAnimationMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def appear(node: HTMLElement, done: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("appear")(node.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def appear(node: HTMLElement, done: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("appear")(node.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def enter(node: HTMLElement, done: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enter")(node.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def enter(node: HTMLElement, done: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enter")(node.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def leave(node: HTMLElement, done: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("leave")(node.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def leave(node: HTMLElement, done: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("leave")(node.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

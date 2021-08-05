@@ -12,25 +12,19 @@ trait THBTWD extends StObject {
 }
 object THBTWD {
   
-  @scala.inline
-  def apply(THB: js.Array[String], TWD: js.Array[String]): THBTWD = {
+  inline def apply(THB: js.Array[String], TWD: js.Array[String]): THBTWD = {
     val __obj = js.Dynamic.literal(THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any])
     __obj.asInstanceOf[THBTWD]
   }
   
-  @scala.inline
-  implicit class THBTWDMutableBuilder[Self <: THBTWD] (val x: Self) extends AnyVal {
+  extension [Self <: THBTWD](x: Self) {
     
-    @scala.inline
-    def setTHB(value: js.Array[String]): Self = StObject.set(x, "THB", value.asInstanceOf[js.Any])
+    inline def setTHB(value: js.Array[String]): Self = StObject.set(x, "THB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value :_*))
+    inline def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value :_*))
     
-    @scala.inline
-    def setTWD(value: js.Array[String]): Self = StObject.set(x, "TWD", value.asInstanceOf[js.Any])
+    inline def setTWD(value: js.Array[String]): Self = StObject.set(x, "TWD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTWDVarargs(value: String*): Self = StObject.set(x, "TWD", js.Array(value :_*))
+    inline def setTWDVarargs(value: String*): Self = StObject.set(x, "TWD", js.Array(value :_*))
   }
 }

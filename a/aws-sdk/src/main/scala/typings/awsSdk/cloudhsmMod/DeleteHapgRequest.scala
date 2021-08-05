@@ -13,16 +13,13 @@ trait DeleteHapgRequest extends StObject {
 }
 object DeleteHapgRequest {
   
-  @scala.inline
-  def apply(HapgArn: HapgArn): DeleteHapgRequest = {
+  inline def apply(HapgArn: HapgArn): DeleteHapgRequest = {
     val __obj = js.Dynamic.literal(HapgArn = HapgArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteHapgRequest]
   }
   
-  @scala.inline
-  implicit class DeleteHapgRequestMutableBuilder[Self <: DeleteHapgRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteHapgRequest](x: Self) {
     
-    @scala.inline
-    def setHapgArn(value: HapgArn): Self = StObject.set(x, "HapgArn", value.asInstanceOf[js.Any])
+    inline def setHapgArn(value: HapgArn): Self = StObject.set(x, "HapgArn", value.asInstanceOf[js.Any])
   }
 }

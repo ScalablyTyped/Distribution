@@ -42,49 +42,38 @@ object mod {
       @JSImport("@atlaskit/tree", "default.defaultProps.isDragEnabled")
       @js.native
       def isDragEnabled: `false` = js.native
-      @scala.inline
-      def isDragEnabled_=(x: `false`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDragEnabled")(x.asInstanceOf[js.Any])
+      inline def isDragEnabled_=(x: `false`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDragEnabled")(x.asInstanceOf[js.Any])
       
       @JSImport("@atlaskit/tree", "default.defaultProps.isNestingEnabled")
       @js.native
       def isNestingEnabled: `false` = js.native
-      @scala.inline
-      def isNestingEnabled_=(x: `false`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isNestingEnabled")(x.asInstanceOf[js.Any])
+      inline def isNestingEnabled_=(x: `false`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isNestingEnabled")(x.asInstanceOf[js.Any])
       
       @JSImport("@atlaskit/tree", "default.defaultProps.offsetPerLevel")
       @js.native
       def offsetPerLevel: `35` = js.native
-      @scala.inline
-      def offsetPerLevel_=(x: `35`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("offsetPerLevel")(x.asInstanceOf[js.Any])
+      inline def offsetPerLevel_=(x: `35`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("offsetPerLevel")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def onCollapse(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCollapse")().asInstanceOf[Unit]
+      inline def onCollapse(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCollapse")().asInstanceOf[Unit]
       
-      @scala.inline
-      def onDragEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragEnd")().asInstanceOf[Unit]
+      inline def onDragEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragEnd")().asInstanceOf[Unit]
       
-      @scala.inline
-      def onDragStart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragStart")().asInstanceOf[Unit]
+      inline def onDragStart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragStart")().asInstanceOf[Unit]
       
-      @scala.inline
-      def onExpand(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onExpand")().asInstanceOf[Unit]
+      inline def onExpand(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onExpand")().asInstanceOf[Unit]
       
-      @scala.inline
-      def renderItem(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderItem")().asInstanceOf[Unit]
+      inline def renderItem(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderItem")().asInstanceOf[Unit]
       
       @JSImport("@atlaskit/tree", "default.defaultProps.tree")
       @js.native
       def tree: Children = js.native
-      @scala.inline
-      def tree_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tree")(x.asInstanceOf[js.Any])
+      inline def tree_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tree")(x.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  def moveItemOnTree(tree: TreeData, from: TreeSourcePosition, to: TreeDestinationPosition): TreeData = (^.asInstanceOf[js.Dynamic].applyDynamic("moveItemOnTree")(tree.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[TreeData]
+  inline def moveItemOnTree(tree: TreeData, from: TreeSourcePosition, to: TreeDestinationPosition): TreeData = (^.asInstanceOf[js.Dynamic].applyDynamic("moveItemOnTree")(tree.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[TreeData]
   
-  @scala.inline
-  def mutateTree(tree: TreeData, itemId: ItemId, mutation: TreeItemMutation): TreeData = (^.asInstanceOf[js.Dynamic].applyDynamic("mutateTree")(tree.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any], mutation.asInstanceOf[js.Any])).asInstanceOf[TreeData]
+  inline def mutateTree(tree: TreeData, itemId: ItemId, mutation: TreeItemMutation): TreeData = (^.asInstanceOf[js.Dynamic].applyDynamic("mutateTree")(tree.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any], mutation.asInstanceOf[js.Any])).asInstanceOf[TreeData]
   
   trait FlattenedItem extends StObject {
     
@@ -94,23 +83,18 @@ object mod {
   }
   object FlattenedItem {
     
-    @scala.inline
-    def apply(item: TreeItem, path: Path): FlattenedItem = {
+    inline def apply(item: TreeItem, path: Path): FlattenedItem = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[FlattenedItem]
     }
     
-    @scala.inline
-    implicit class FlattenedItemMutableBuilder[Self <: FlattenedItem] (val x: Self) extends AnyVal {
+    extension [Self <: FlattenedItem](x: Self) {
       
-      @scala.inline
-      def setItem(value: TreeItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: TreeItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
     }
   }
   
@@ -138,8 +122,7 @@ object mod {
   }
   object RenderItemParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       depth: Double,
       item: TreeItem,
       onCollapse: ItemId => Unit,
@@ -151,26 +134,19 @@ object mod {
       __obj.asInstanceOf[RenderItemParams]
     }
     
-    @scala.inline
-    implicit class RenderItemParamsMutableBuilder[Self <: RenderItemParams] (val x: Self) extends AnyVal {
+    extension [Self <: RenderItemParams](x: Self) {
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: TreeItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: TreeItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCollapse(value: ItemId => Unit): Self = StObject.set(x, "onCollapse", js.Any.fromFunction1(value))
+      inline def setOnCollapse(value: ItemId => Unit): Self = StObject.set(x, "onCollapse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExpand(value: ItemId => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
+      inline def setOnExpand(value: ItemId => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProvided(value: TreeDraggableProvided): Self = StObject.set(x, "provided", value.asInstanceOf[js.Any])
+      inline def setProvided(value: TreeDraggableProvided): Self = StObject.set(x, "provided", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshot(value: DraggableStateSnapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+      inline def setSnapshot(value: DraggableStateSnapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,20 +160,16 @@ object mod {
   }
   object TreeData {
     
-    @scala.inline
-    def apply(items: StringDictionary[TreeItem] & NumberDictionary[TreeItem], rootId: ItemId): TreeData = {
+    inline def apply(items: StringDictionary[TreeItem] & NumberDictionary[TreeItem], rootId: ItemId): TreeData = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], rootId = rootId.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeData]
     }
     
-    @scala.inline
-    implicit class TreeDataMutableBuilder[Self <: TreeData] (val x: Self) extends AnyVal {
+    extension [Self <: TreeData](x: Self) {
       
-      @scala.inline
-      def setItems(value: StringDictionary[TreeItem] & NumberDictionary[TreeItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: StringDictionary[TreeItem] & NumberDictionary[TreeItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootId(value: ItemId): Self = StObject.set(x, "rootId", value.asInstanceOf[js.Any])
+      inline def setRootId(value: ItemId): Self = StObject.set(x, "rootId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -209,23 +181,18 @@ object mod {
   }
   object TreeDestinationPosition {
     
-    @scala.inline
-    def apply(parentId: ItemId): TreeDestinationPosition = {
+    inline def apply(parentId: ItemId): TreeDestinationPosition = {
       val __obj = js.Dynamic.literal(parentId = parentId.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeDestinationPosition]
     }
     
-    @scala.inline
-    implicit class TreeDestinationPositionMutableBuilder[Self <: TreeDestinationPosition] (val x: Self) extends AnyVal {
+    extension [Self <: TreeDestinationPosition](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setParentId(value: ItemId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: ItemId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -240,24 +207,19 @@ object mod {
   }
   object TreeDraggableProps {
     
-    @scala.inline
-    def apply(`data-react-beautiful-dnd-draggable`: String): TreeDraggableProps = {
+    inline def apply(`data-react-beautiful-dnd-draggable`: String): TreeDraggableProps = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("data-react-beautiful-dnd-draggable")(`data-react-beautiful-dnd-draggable`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeDraggableProps]
     }
     
-    @scala.inline
-    implicit class TreeDraggablePropsMutableBuilder[Self <: TreeDraggableProps] (val x: Self) extends AnyVal {
+    extension [Self <: TreeDraggableProps](x: Self) {
       
-      @scala.inline
-      def `setData-react-beautiful-dnd-draggable`(value: String): Self = StObject.set(x, "data-react-beautiful-dnd-draggable", value.asInstanceOf[js.Any])
+      inline def `setData-react-beautiful-dnd-draggable`(value: String): Self = StObject.set(x, "data-react-beautiful-dnd-draggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: TreeDraggableStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: TreeDraggableStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -305,8 +267,7 @@ object mod {
   }
   object TreeDraggingStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       height: Double,
       left: Double,
       paddingLeft: Double,
@@ -319,50 +280,35 @@ object mod {
       __obj.asInstanceOf[TreeDraggingStyle]
     }
     
-    @scala.inline
-    implicit class TreeDraggingStyleMutableBuilder[Self <: TreeDraggingStyle] (val x: Self) extends AnyVal {
+    extension [Self <: TreeDraggingStyle](x: Self) {
       
-      @scala.inline
-      def setBoxSizing(value: `border-box`): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
+      inline def setBoxSizing(value: `border-box`): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      inline def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerEvents(value: none): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+      inline def setPointerEvents(value: none): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: fixed): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: fixed): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setTransition(value: none | String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: none | String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -382,47 +328,34 @@ object mod {
   }
   object TreeItem {
     
-    @scala.inline
-    def apply(children: js.Array[ItemId], id: ItemId): TreeItem = {
+    inline def apply(children: js.Array[ItemId], id: ItemId): TreeItem = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeItem]
     }
     
-    @scala.inline
-    implicit class TreeItemMutableBuilder[Self <: TreeItem] (val x: Self) extends AnyVal {
+    extension [Self <: TreeItem](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ItemId]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ItemId]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: ItemId*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ItemId*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: TreeItemData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: TreeItemData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHasChildren(value: Boolean): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
+      inline def setHasChildren(value: Boolean): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasChildrenUndefined: Self = StObject.set(x, "hasChildren", js.undefined)
+      inline def setHasChildrenUndefined: Self = StObject.set(x, "hasChildren", js.undefined)
       
-      @scala.inline
-      def setId(value: ItemId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: ItemId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsChildrenLoading(value: Boolean): Self = StObject.set(x, "isChildrenLoading", value.asInstanceOf[js.Any])
+      inline def setIsChildrenLoading(value: Boolean): Self = StObject.set(x, "isChildrenLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsChildrenLoadingUndefined: Self = StObject.set(x, "isChildrenLoading", js.undefined)
+      inline def setIsChildrenLoadingUndefined: Self = StObject.set(x, "isChildrenLoading", js.undefined)
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
     }
   }
   
@@ -444,53 +377,38 @@ object mod {
   }
   object TreeItemMutation {
     
-    @scala.inline
-    def apply(): TreeItemMutation = {
+    inline def apply(): TreeItemMutation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreeItemMutation]
     }
     
-    @scala.inline
-    implicit class TreeItemMutationMutableBuilder[Self <: TreeItemMutation] (val x: Self) extends AnyVal {
+    extension [Self <: TreeItemMutation](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ItemId]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ItemId]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ItemId*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ItemId*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: TreeItemData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: TreeItemData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHasChildren(value: Boolean): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
+      inline def setHasChildren(value: Boolean): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasChildrenUndefined: Self = StObject.set(x, "hasChildren", js.undefined)
+      inline def setHasChildrenUndefined: Self = StObject.set(x, "hasChildren", js.undefined)
       
-      @scala.inline
-      def setId(value: ItemId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: ItemId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIsChildrenLoading(value: Boolean): Self = StObject.set(x, "isChildrenLoading", value.asInstanceOf[js.Any])
+      inline def setIsChildrenLoading(value: Boolean): Self = StObject.set(x, "isChildrenLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsChildrenLoadingUndefined: Self = StObject.set(x, "isChildrenLoading", js.undefined)
+      inline def setIsChildrenLoadingUndefined: Self = StObject.set(x, "isChildrenLoading", js.undefined)
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
     }
   }
   
@@ -534,20 +452,16 @@ object mod {
   }
   object TreeSourcePosition {
     
-    @scala.inline
-    def apply(index: Double, parentId: ItemId): TreeSourcePosition = {
+    inline def apply(index: Double, parentId: ItemId): TreeSourcePosition = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeSourcePosition]
     }
     
-    @scala.inline
-    implicit class TreeSourcePositionMutableBuilder[Self <: TreeSourcePosition] (val x: Self) extends AnyVal {
+    extension [Self <: TreeSourcePosition](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentId(value: ItemId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: ItemId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -561,23 +475,18 @@ object mod {
   }
   object TreeState {
     
-    @scala.inline
-    def apply(draggedItemId: ItemId, flattenedTree: FlattenedTree): TreeState = {
+    inline def apply(draggedItemId: ItemId, flattenedTree: FlattenedTree): TreeState = {
       val __obj = js.Dynamic.literal(draggedItemId = draggedItemId.asInstanceOf[js.Any], flattenedTree = flattenedTree.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeState]
     }
     
-    @scala.inline
-    implicit class TreeStateMutableBuilder[Self <: TreeState] (val x: Self) extends AnyVal {
+    extension [Self <: TreeState](x: Self) {
       
-      @scala.inline
-      def setDraggedItemId(value: ItemId): Self = StObject.set(x, "draggedItemId", value.asInstanceOf[js.Any])
+      inline def setDraggedItemId(value: ItemId): Self = StObject.set(x, "draggedItemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlattenedTree(value: FlattenedTree): Self = StObject.set(x, "flattenedTree", value.asInstanceOf[js.Any])
+      inline def setFlattenedTree(value: FlattenedTree): Self = StObject.set(x, "flattenedTree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlattenedTreeVarargs(value: FlattenedItem*): Self = StObject.set(x, "flattenedTree", js.Array(value :_*))
+      inline def setFlattenedTreeVarargs(value: FlattenedItem*): Self = StObject.set(x, "flattenedTree", js.Array(value :_*))
     }
   }
 }

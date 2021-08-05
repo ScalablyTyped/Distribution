@@ -26,8 +26,7 @@ trait BinaryFile
      with File
 object BinaryFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     bytesLoaded: Double,
     bytesTotal: Double,

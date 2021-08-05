@@ -38,29 +38,22 @@ object iconRotatorMod {
   }
   object IconRotatorBaseProps {
     
-    @scala.inline
-    def apply(rotated: Boolean): IconRotatorBaseProps = {
+    inline def apply(rotated: Boolean): IconRotatorBaseProps = {
       val __obj = js.Dynamic.literal(rotated = rotated.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconRotatorBaseProps]
     }
     
-    @scala.inline
-    implicit class IconRotatorBasePropsMutableBuilder[Self <: IconRotatorBaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconRotatorBaseProps](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setForceIconWrap(value: Boolean): Self = StObject.set(x, "forceIconWrap", value.asInstanceOf[js.Any])
+      inline def setForceIconWrap(value: Boolean): Self = StObject.set(x, "forceIconWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceIconWrapUndefined: Self = StObject.set(x, "forceIconWrap", js.undefined)
+      inline def setForceIconWrapUndefined: Self = StObject.set(x, "forceIconWrap", js.undefined)
       
-      @scala.inline
-      def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
+      inline def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,20 +71,16 @@ object iconRotatorMod {
   }
   object IconRotatorProps {
     
-    @scala.inline
-    def apply(rotated: Boolean): IconRotatorProps = {
+    inline def apply(rotated: Boolean): IconRotatorProps = {
       val __obj = js.Dynamic.literal(rotated = rotated.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconRotatorProps]
     }
     
-    @scala.inline
-    implicit class IconRotatorPropsMutableBuilder[Self <: IconRotatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconRotatorProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

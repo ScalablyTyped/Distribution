@@ -13,16 +13,13 @@ trait GetResponseBodyRequest extends StObject {
 }
 object GetResponseBodyRequest {
   
-  @scala.inline
-  def apply(requestId: RequestId): GetResponseBodyRequest = {
+  inline def apply(requestId: RequestId): GetResponseBodyRequest = {
     val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponseBodyRequest]
   }
   
-  @scala.inline
-  implicit class GetResponseBodyRequestMutableBuilder[Self <: GetResponseBodyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResponseBodyRequest](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

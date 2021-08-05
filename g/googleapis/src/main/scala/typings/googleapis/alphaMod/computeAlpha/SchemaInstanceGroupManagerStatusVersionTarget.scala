@@ -16,19 +16,15 @@ trait SchemaInstanceGroupManagerStatusVersionTarget extends StObject {
 }
 object SchemaInstanceGroupManagerStatusVersionTarget {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagerStatusVersionTarget = {
+  inline def apply(): SchemaInstanceGroupManagerStatusVersionTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagerStatusVersionTarget]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagerStatusVersionTargetMutableBuilder[Self <: SchemaInstanceGroupManagerStatusVersionTarget] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagerStatusVersionTarget](x: Self) {
     
-    @scala.inline
-    def setIsReached(value: Boolean): Self = StObject.set(x, "isReached", value.asInstanceOf[js.Any])
+    inline def setIsReached(value: Boolean): Self = StObject.set(x, "isReached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReachedUndefined: Self = StObject.set(x, "isReached", js.undefined)
+    inline def setIsReachedUndefined: Self = StObject.set(x, "isReached", js.undefined)
   }
 }

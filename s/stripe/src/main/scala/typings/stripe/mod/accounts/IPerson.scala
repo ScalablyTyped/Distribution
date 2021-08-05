@@ -56,8 +56,7 @@ trait IPerson
 }
 object IPerson {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     created: Double,
     id: String,
     id_number_provided: Boolean,
@@ -71,31 +70,22 @@ object IPerson {
     __obj.asInstanceOf[IPerson]
   }
   
-  @scala.inline
-  implicit class IPersonMutableBuilder[Self <: IPerson] (val x: Self) extends AnyVal {
+  extension [Self <: IPerson](x: Self) {
     
-    @scala.inline
-    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId_number_provided(value: Boolean): Self = StObject.set(x, "id_number_provided", value.asInstanceOf[js.Any])
+    inline def setId_number_provided(value: Boolean): Self = StObject.set(x, "id_number_provided", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: person): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: person): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequirements(value: Currentlydue): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
+    inline def setRequirements(value: Currentlydue): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsn_last_4_provided(value: Boolean): Self = StObject.set(x, "ssn_last_4_provided", value.asInstanceOf[js.Any])
+    inline def setSsn_last_4_provided(value: Boolean): Self = StObject.set(x, "ssn_last_4_provided", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerification(value: Additionaldocument): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+    inline def setVerification(value: Additionaldocument): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
   }
 }

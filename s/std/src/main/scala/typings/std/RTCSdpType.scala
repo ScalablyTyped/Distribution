@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCSdpType extends StObject
 object RTCSdpType {
   
-  @scala.inline
-  def answer: typings.std.stdStrings.answer = "answer".asInstanceOf[typings.std.stdStrings.answer]
+  inline def answer: typings.std.stdStrings.answer = "answer".asInstanceOf[typings.std.stdStrings.answer]
   
-  @scala.inline
-  def offer: typings.std.stdStrings.offer = "offer".asInstanceOf[typings.std.stdStrings.offer]
+  inline def offer: typings.std.stdStrings.offer = "offer".asInstanceOf[typings.std.stdStrings.offer]
   
-  @scala.inline
-  def pranswer: typings.std.stdStrings.pranswer = "pranswer".asInstanceOf[typings.std.stdStrings.pranswer]
+  inline def pranswer: typings.std.stdStrings.pranswer = "pranswer".asInstanceOf[typings.std.stdStrings.pranswer]
   
-  @scala.inline
-  def rollback: typings.std.stdStrings.rollback = "rollback".asInstanceOf[typings.std.stdStrings.rollback]
+  inline def rollback: typings.std.stdStrings.rollback = "rollback".asInstanceOf[typings.std.stdStrings.rollback]
 }

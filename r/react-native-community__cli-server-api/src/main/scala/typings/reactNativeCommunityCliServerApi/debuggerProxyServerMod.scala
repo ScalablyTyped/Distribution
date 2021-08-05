@@ -16,8 +16,7 @@ object debuggerProxyServerMod {
     @JSImport("@react-native-community/cli-server-api/build/websocket/debuggerProxyServer", "default.attachToServer")
     @js.native
     def attachToServer: js.Function2[/* server */ Server, /* path */ String, IsDebuggerConnected] = js.native
-    @scala.inline
-    def attachToServer_=(x: js.Function2[/* server */ Server, /* path */ String, IsDebuggerConnected]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attachToServer")(x.asInstanceOf[js.Any])
+    inline def attachToServer_=(x: js.Function2[/* server */ Server, /* path */ String, IsDebuggerConnected]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attachToServer")(x.asInstanceOf[js.Any])
   }
   
   type Server = typings.node.httpMod.Server | typings.node.httpsMod.Server

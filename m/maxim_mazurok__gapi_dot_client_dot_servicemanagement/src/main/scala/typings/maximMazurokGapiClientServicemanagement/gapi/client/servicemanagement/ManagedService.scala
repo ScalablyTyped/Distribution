@@ -14,25 +14,19 @@ trait ManagedService extends StObject {
 }
 object ManagedService {
   
-  @scala.inline
-  def apply(): ManagedService = {
+  inline def apply(): ManagedService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedService]
   }
   
-  @scala.inline
-  implicit class ManagedServiceMutableBuilder[Self <: ManagedService] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedService](x: Self) {
     
-    @scala.inline
-    def setProducerProjectId(value: String): Self = StObject.set(x, "producerProjectId", value.asInstanceOf[js.Any])
+    inline def setProducerProjectId(value: String): Self = StObject.set(x, "producerProjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducerProjectIdUndefined: Self = StObject.set(x, "producerProjectId", js.undefined)
+    inline def setProducerProjectIdUndefined: Self = StObject.set(x, "producerProjectId", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

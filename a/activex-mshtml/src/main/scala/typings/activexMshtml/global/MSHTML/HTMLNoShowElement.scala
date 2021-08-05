@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLNoShowElement")
 @js.native
-class HTMLNoShowElement protected ()
+/* private */ class HTMLNoShowElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLNoShowElement

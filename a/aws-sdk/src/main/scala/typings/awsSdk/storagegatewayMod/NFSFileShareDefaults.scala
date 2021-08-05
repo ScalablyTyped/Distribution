@@ -28,37 +28,27 @@ trait NFSFileShareDefaults extends StObject {
 }
 object NFSFileShareDefaults {
   
-  @scala.inline
-  def apply(): NFSFileShareDefaults = {
+  inline def apply(): NFSFileShareDefaults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NFSFileShareDefaults]
   }
   
-  @scala.inline
-  implicit class NFSFileShareDefaultsMutableBuilder[Self <: NFSFileShareDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: NFSFileShareDefaults](x: Self) {
     
-    @scala.inline
-    def setDirectoryMode(value: PermissionMode): Self = StObject.set(x, "DirectoryMode", value.asInstanceOf[js.Any])
+    inline def setDirectoryMode(value: PermissionMode): Self = StObject.set(x, "DirectoryMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryModeUndefined: Self = StObject.set(x, "DirectoryMode", js.undefined)
+    inline def setDirectoryModeUndefined: Self = StObject.set(x, "DirectoryMode", js.undefined)
     
-    @scala.inline
-    def setFileMode(value: PermissionMode): Self = StObject.set(x, "FileMode", value.asInstanceOf[js.Any])
+    inline def setFileMode(value: PermissionMode): Self = StObject.set(x, "FileMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileModeUndefined: Self = StObject.set(x, "FileMode", js.undefined)
+    inline def setFileModeUndefined: Self = StObject.set(x, "FileMode", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: PermissionId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: PermissionId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
-    @scala.inline
-    def setOwnerId(value: PermissionId): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: PermissionId): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
   }
 }

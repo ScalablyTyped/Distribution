@@ -12,8 +12,7 @@ trait AtlasAttachmentLoader
 }
 object AtlasAttachmentLoader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     atlas: TextureAtlas,
     newBoundingBoxAttachment: (Skin, String) => BoundingBoxAttachment,
     newClippingAttachment: (Skin, String) => ClippingAttachment,
@@ -26,10 +25,8 @@ object AtlasAttachmentLoader {
     __obj.asInstanceOf[AtlasAttachmentLoader]
   }
   
-  @scala.inline
-  implicit class AtlasAttachmentLoaderMutableBuilder[Self <: AtlasAttachmentLoader] (val x: Self) extends AnyVal {
+  extension [Self <: AtlasAttachmentLoader](x: Self) {
     
-    @scala.inline
-    def setAtlas(value: TextureAtlas): Self = StObject.set(x, "atlas", value.asInstanceOf[js.Any])
+    inline def setAtlas(value: TextureAtlas): Self = StObject.set(x, "atlas", value.asInstanceOf[js.Any])
   }
 }

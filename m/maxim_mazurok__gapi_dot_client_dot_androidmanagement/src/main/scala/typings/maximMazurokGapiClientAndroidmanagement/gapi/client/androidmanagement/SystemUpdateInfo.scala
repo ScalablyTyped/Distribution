@@ -17,25 +17,19 @@ trait SystemUpdateInfo extends StObject {
 }
 object SystemUpdateInfo {
   
-  @scala.inline
-  def apply(): SystemUpdateInfo = {
+  inline def apply(): SystemUpdateInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystemUpdateInfo]
   }
   
-  @scala.inline
-  implicit class SystemUpdateInfoMutableBuilder[Self <: SystemUpdateInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SystemUpdateInfo](x: Self) {
     
-    @scala.inline
-    def setUpdateReceivedTime(value: String): Self = StObject.set(x, "updateReceivedTime", value.asInstanceOf[js.Any])
+    inline def setUpdateReceivedTime(value: String): Self = StObject.set(x, "updateReceivedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateReceivedTimeUndefined: Self = StObject.set(x, "updateReceivedTime", js.undefined)
+    inline def setUpdateReceivedTimeUndefined: Self = StObject.set(x, "updateReceivedTime", js.undefined)
     
-    @scala.inline
-    def setUpdateStatus(value: String): Self = StObject.set(x, "updateStatus", value.asInstanceOf[js.Any])
+    inline def setUpdateStatus(value: String): Self = StObject.set(x, "updateStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateStatusUndefined: Self = StObject.set(x, "updateStatus", js.undefined)
+    inline def setUpdateStatusUndefined: Self = StObject.set(x, "updateStatus", js.undefined)
   }
 }

@@ -13,8 +13,7 @@ object generateAuthTokenRequestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateAuthTokenRequest(
+  inline def generateAuthTokenRequest(
     hasAppConfigPlatformLoggerProvider: FirebaseDependencies,
     installationEntry: RegisteredInstallationEntry
   ): js.Promise[CompletedAuthToken] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthTokenRequest")(hasAppConfigPlatformLoggerProvider.asInstanceOf[js.Any], installationEntry.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CompletedAuthToken]]

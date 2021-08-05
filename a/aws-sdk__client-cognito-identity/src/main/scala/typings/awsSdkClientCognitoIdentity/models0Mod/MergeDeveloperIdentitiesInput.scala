@@ -34,8 +34,7 @@ trait MergeDeveloperIdentitiesInput extends StObject {
 }
 object MergeDeveloperIdentitiesInput {
   
-  @scala.inline
-  def apply(): MergeDeveloperIdentitiesInput = {
+  inline def apply(): MergeDeveloperIdentitiesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergeDeveloperIdentitiesInput]
   }
@@ -44,34 +43,24 @@ object MergeDeveloperIdentitiesInput {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: MergeDeveloperIdentitiesInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: MergeDeveloperIdentitiesInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class MergeDeveloperIdentitiesInputMutableBuilder[Self <: MergeDeveloperIdentitiesInput] (val x: Self) extends AnyVal {
+  extension [Self <: MergeDeveloperIdentitiesInput](x: Self) {
     
-    @scala.inline
-    def setDestinationUserIdentifier(value: String): Self = StObject.set(x, "DestinationUserIdentifier", value.asInstanceOf[js.Any])
+    inline def setDestinationUserIdentifier(value: String): Self = StObject.set(x, "DestinationUserIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUserIdentifierUndefined: Self = StObject.set(x, "DestinationUserIdentifier", js.undefined)
+    inline def setDestinationUserIdentifierUndefined: Self = StObject.set(x, "DestinationUserIdentifier", js.undefined)
     
-    @scala.inline
-    def setDeveloperProviderName(value: String): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
+    inline def setDeveloperProviderName(value: String): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperProviderNameUndefined: Self = StObject.set(x, "DeveloperProviderName", js.undefined)
+    inline def setDeveloperProviderNameUndefined: Self = StObject.set(x, "DeveloperProviderName", js.undefined)
     
-    @scala.inline
-    def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+    inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
     
-    @scala.inline
-    def setSourceUserIdentifier(value: String): Self = StObject.set(x, "SourceUserIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceUserIdentifier(value: String): Self = StObject.set(x, "SourceUserIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUserIdentifierUndefined: Self = StObject.set(x, "SourceUserIdentifier", js.undefined)
+    inline def setSourceUserIdentifierUndefined: Self = StObject.set(x, "SourceUserIdentifier", js.undefined)
   }
 }

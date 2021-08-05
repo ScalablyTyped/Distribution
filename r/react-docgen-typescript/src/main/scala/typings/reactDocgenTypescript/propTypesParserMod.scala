@@ -11,6 +11,5 @@ object propTypesParserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(fileName: String): js.Array[ComponentDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(fileName.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComponentDoc]]
+  inline def parse(fileName: String): js.Array[ComponentDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(fileName.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComponentDoc]]
 }

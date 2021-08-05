@@ -21,8 +21,7 @@ trait Parser[T] extends StObject {
 }
 object Parser {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     astFormat: String,
     locEnd: T => Double,
     locStart: T => Double,
@@ -32,31 +31,22 @@ object Parser {
     __obj.asInstanceOf[Parser[T]]
   }
   
-  @scala.inline
-  implicit class ParserMutableBuilder[Self <: Parser[?], T] (val x: Self & Parser[T]) extends AnyVal {
+  extension [Self <: Parser[?], T](x: Self & Parser[T]) {
     
-    @scala.inline
-    def setAstFormat(value: String): Self = StObject.set(x, "astFormat", value.asInstanceOf[js.Any])
+    inline def setAstFormat(value: String): Self = StObject.set(x, "astFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasPragma(value: /* text */ String => Boolean): Self = StObject.set(x, "hasPragma", js.Any.fromFunction1(value))
+    inline def setHasPragma(value: /* text */ String => Boolean): Self = StObject.set(x, "hasPragma", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasPragmaUndefined: Self = StObject.set(x, "hasPragma", js.undefined)
+    inline def setHasPragmaUndefined: Self = StObject.set(x, "hasPragma", js.undefined)
     
-    @scala.inline
-    def setLocEnd(value: T => Double): Self = StObject.set(x, "locEnd", js.Any.fromFunction1(value))
+    inline def setLocEnd(value: T => Double): Self = StObject.set(x, "locEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocStart(value: T => Double): Self = StObject.set(x, "locStart", js.Any.fromFunction1(value))
+    inline def setLocStart(value: T => Double): Self = StObject.set(x, "locStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParse(value: (String, StringDictionary[Parser[js.Any]], ParserOptions[T]) => T): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
+    inline def setParse(value: (String, StringDictionary[Parser[js.Any]], ParserOptions[T]) => T): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPreprocess(value: (/* text */ String, /* options */ ParserOptions[T]) => String): Self = StObject.set(x, "preprocess", js.Any.fromFunction2(value))
+    inline def setPreprocess(value: (/* text */ String, /* options */ ParserOptions[T]) => String): Self = StObject.set(x, "preprocess", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
+    inline def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
   }
 }

@@ -22,25 +22,19 @@ trait DeploymentConfigMinimumHealthyHosts extends StObject {
 }
 object DeploymentConfigMinimumHealthyHosts {
   
-  @scala.inline
-  def apply(): DeploymentConfigMinimumHealthyHosts = {
+  inline def apply(): DeploymentConfigMinimumHealthyHosts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentConfigMinimumHealthyHosts]
   }
   
-  @scala.inline
-  implicit class DeploymentConfigMinimumHealthyHostsMutableBuilder[Self <: DeploymentConfigMinimumHealthyHosts] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentConfigMinimumHealthyHosts](x: Self) {
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: Input[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Input[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

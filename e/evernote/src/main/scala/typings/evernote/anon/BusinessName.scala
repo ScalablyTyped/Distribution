@@ -20,43 +20,31 @@ trait BusinessName extends StObject {
 }
 object BusinessName {
   
-  @scala.inline
-  def apply(): BusinessName = {
+  inline def apply(): BusinessName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BusinessName]
   }
   
-  @scala.inline
-  implicit class BusinessNameMutableBuilder[Self <: BusinessName] (val x: Self) extends AnyVal {
+  extension [Self <: BusinessName](x: Self) {
     
-    @scala.inline
-    def setBusinessId(value: Double): Self = StObject.set(x, "businessId", value.asInstanceOf[js.Any])
+    inline def setBusinessId(value: Double): Self = StObject.set(x, "businessId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusinessIdUndefined: Self = StObject.set(x, "businessId", js.undefined)
+    inline def setBusinessIdUndefined: Self = StObject.set(x, "businessId", js.undefined)
     
-    @scala.inline
-    def setBusinessName(value: String): Self = StObject.set(x, "businessName", value.asInstanceOf[js.Any])
+    inline def setBusinessName(value: String): Self = StObject.set(x, "businessName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusinessNameUndefined: Self = StObject.set(x, "businessName", js.undefined)
+    inline def setBusinessNameUndefined: Self = StObject.set(x, "businessName", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setRole(value: BusinessUserRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: BusinessUserRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

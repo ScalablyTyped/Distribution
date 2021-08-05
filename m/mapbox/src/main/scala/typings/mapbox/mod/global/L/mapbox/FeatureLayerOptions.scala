@@ -12,25 +12,19 @@ trait FeatureLayerOptions extends StObject {
 }
 object FeatureLayerOptions {
   
-  @scala.inline
-  def apply(): FeatureLayerOptions = {
+  inline def apply(): FeatureLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureLayerOptions]
   }
   
-  @scala.inline
-  implicit class FeatureLayerOptionsMutableBuilder[Self <: FeatureLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureLayerOptions](x: Self) {
     
-    @scala.inline
-    def setFilter(value: /* feature */ js.Any => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: /* feature */ js.Any => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setSanitizer(value: /* template */ String => String): Self = StObject.set(x, "sanitizer", js.Any.fromFunction1(value))
+    inline def setSanitizer(value: /* template */ String => String): Self = StObject.set(x, "sanitizer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
+    inline def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
   }
 }

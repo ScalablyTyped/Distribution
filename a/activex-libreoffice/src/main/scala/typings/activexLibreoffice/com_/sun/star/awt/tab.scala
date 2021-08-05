@@ -36,17 +36,14 @@ object tab {
   }
   object TabPageActivatedEvent {
     
-    @scala.inline
-    def apply(Source: XInterface, TabPageID: Double): TabPageActivatedEvent = {
+    inline def apply(Source: XInterface, TabPageID: Double): TabPageActivatedEvent = {
       val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], TabPageID = TabPageID.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabPageActivatedEvent]
     }
     
-    @scala.inline
-    implicit class TabPageActivatedEventMutableBuilder[Self <: TabPageActivatedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TabPageActivatedEvent](x: Self) {
       
-      @scala.inline
-      def setTabPageID(value: Double): Self = StObject.set(x, "TabPageID", value.asInstanceOf[js.Any])
+      inline def setTabPageID(value: Double): Self = StObject.set(x, "TabPageID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,8 +57,7 @@ object tab {
        with UnoControlContainer
   object UnoControlTabPage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccessibleContext: XAccessibleContext,
       Context: XInterface,
       Controls: SafeArray[XControl],
@@ -138,8 +134,7 @@ object tab {
        with XTabPageContainer
   object UnoControlTabPageContainer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccessibleContext: XAccessibleContext,
       ActiveTabPageID: Double,
       Context: XInterface,
@@ -219,8 +214,7 @@ object tab {
   }
   object UnoControlTabPageContainerModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Count: Double,
       DefaultControl: String,
       ElementType: `type`,
@@ -272,11 +266,9 @@ object tab {
       __obj.asInstanceOf[UnoControlTabPageContainerModel]
     }
     
-    @scala.inline
-    implicit class UnoControlTabPageContainerModelMutableBuilder[Self <: UnoControlTabPageContainerModel] (val x: Self) extends AnyVal {
+    extension [Self <: UnoControlTabPageContainerModel](x: Self) {
       
-      @scala.inline
-      def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+      inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     }
   }
   
@@ -350,8 +342,7 @@ object tab {
   }
   object XTabPageContainer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActiveTabPageID: Double,
       TabPageCount: Double,
       addTabPageContainerListener: XTabPageContainerListener => Unit,
@@ -365,32 +356,23 @@ object tab {
       __obj.asInstanceOf[XTabPageContainer]
     }
     
-    @scala.inline
-    implicit class XTabPageContainerMutableBuilder[Self <: XTabPageContainer] (val x: Self) extends AnyVal {
+    extension [Self <: XTabPageContainer](x: Self) {
       
-      @scala.inline
-      def setActiveTabPageID(value: Double): Self = StObject.set(x, "ActiveTabPageID", value.asInstanceOf[js.Any])
+      inline def setActiveTabPageID(value: Double): Self = StObject.set(x, "ActiveTabPageID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddTabPageContainerListener(value: XTabPageContainerListener => Unit): Self = StObject.set(x, "addTabPageContainerListener", js.Any.fromFunction1(value))
+      inline def setAddTabPageContainerListener(value: XTabPageContainerListener => Unit): Self = StObject.set(x, "addTabPageContainerListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTabPage(value: Double => XTabPage): Self = StObject.set(x, "getTabPage", js.Any.fromFunction1(value))
+      inline def setGetTabPage(value: Double => XTabPage): Self = StObject.set(x, "getTabPage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTabPageByID(value: Double => XTabPage): Self = StObject.set(x, "getTabPageByID", js.Any.fromFunction1(value))
+      inline def setGetTabPageByID(value: Double => XTabPage): Self = StObject.set(x, "getTabPageByID", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTabPageCount(value: () => Double): Self = StObject.set(x, "getTabPageCount", js.Any.fromFunction0(value))
+      inline def setGetTabPageCount(value: () => Double): Self = StObject.set(x, "getTabPageCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTabPageActive(value: Double => Boolean): Self = StObject.set(x, "isTabPageActive", js.Any.fromFunction1(value))
+      inline def setIsTabPageActive(value: Double => Boolean): Self = StObject.set(x, "isTabPageActive", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveTabPageContainerListener(value: XTabPageContainerListener => Unit): Self = StObject.set(x, "removeTabPageContainerListener", js.Any.fromFunction1(value))
+      inline def setRemoveTabPageContainerListener(value: XTabPageContainerListener => Unit): Self = StObject.set(x, "removeTabPageContainerListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTabPageCount(value: Double): Self = StObject.set(x, "TabPageCount", value.asInstanceOf[js.Any])
+      inline def setTabPageCount(value: Double): Self = StObject.set(x, "TabPageCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -407,8 +389,7 @@ object tab {
   }
   object XTabPageContainerListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       disposing: EventObject => Unit,
       queryInterface: `type` => js.Any,
@@ -419,11 +400,9 @@ object tab {
       __obj.asInstanceOf[XTabPageContainerListener]
     }
     
-    @scala.inline
-    implicit class XTabPageContainerListenerMutableBuilder[Self <: XTabPageContainerListener] (val x: Self) extends AnyVal {
+    extension [Self <: XTabPageContainerListener](x: Self) {
       
-      @scala.inline
-      def setTabPageActivated(value: TabPageActivatedEvent => Unit): Self = StObject.set(x, "tabPageActivated", js.Any.fromFunction1(value))
+      inline def setTabPageActivated(value: TabPageActivatedEvent => Unit): Self = StObject.set(x, "tabPageActivated", js.Any.fromFunction1(value))
     }
   }
   
@@ -451,8 +430,7 @@ object tab {
   }
   object XTabPageContainerModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Count: Double,
       ElementType: `type`,
       acquire: () => Unit,
@@ -474,14 +452,11 @@ object tab {
       __obj.asInstanceOf[XTabPageContainerModel]
     }
     
-    @scala.inline
-    implicit class XTabPageContainerModelMutableBuilder[Self <: XTabPageContainerModel] (val x: Self) extends AnyVal {
+    extension [Self <: XTabPageContainerModel](x: Self) {
       
-      @scala.inline
-      def setCreateTabPage(value: Double => XTabPageModel): Self = StObject.set(x, "createTabPage", js.Any.fromFunction1(value))
+      inline def setCreateTabPage(value: Double => XTabPageModel): Self = StObject.set(x, "createTabPage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadTabPage(value: (Double, String) => XTabPageModel): Self = StObject.set(x, "loadTabPage", js.Any.fromFunction2(value))
+      inline def setLoadTabPage(value: (Double, String) => XTabPageModel): Self = StObject.set(x, "loadTabPage", js.Any.fromFunction2(value))
     }
   }
   
@@ -508,29 +483,22 @@ object tab {
   }
   object XTabPageModel {
     
-    @scala.inline
-    def apply(Enabled: Boolean, ImageURL: String, TabPageID: Double, Title: String, ToolTip: String): XTabPageModel = {
+    inline def apply(Enabled: Boolean, ImageURL: String, TabPageID: Double, Title: String, ToolTip: String): XTabPageModel = {
       val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any], ImageURL = ImageURL.asInstanceOf[js.Any], TabPageID = TabPageID.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], ToolTip = ToolTip.asInstanceOf[js.Any])
       __obj.asInstanceOf[XTabPageModel]
     }
     
-    @scala.inline
-    implicit class XTabPageModelMutableBuilder[Self <: XTabPageModel] (val x: Self) extends AnyVal {
+    extension [Self <: XTabPageModel](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageURL(value: String): Self = StObject.set(x, "ImageURL", value.asInstanceOf[js.Any])
+      inline def setImageURL(value: String): Self = StObject.set(x, "ImageURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabPageID(value: Double): Self = StObject.set(x, "TabPageID", value.asInstanceOf[js.Any])
+      inline def setTabPageID(value: Double): Self = StObject.set(x, "TabPageID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolTip(value: String): Self = StObject.set(x, "ToolTip", value.asInstanceOf[js.Any])
+      inline def setToolTip(value: String): Self = StObject.set(x, "ToolTip", value.asInstanceOf[js.Any])
     }
   }
 }

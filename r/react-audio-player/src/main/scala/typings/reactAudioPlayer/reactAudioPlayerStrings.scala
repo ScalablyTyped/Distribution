@@ -11,27 +11,23 @@ object reactAudioPlayerStrings {
   sealed trait _empty
     extends StObject
        with Preload
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait auto
     extends StObject
        with Preload
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait metadata
     extends StObject
        with Preload
-  @scala.inline
-  def metadata: metadata = "metadata".asInstanceOf[metadata]
+  inline def metadata: metadata = "metadata".asInstanceOf[metadata]
   
   @js.native
   sealed trait none
     extends StObject
        with Preload
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
 }

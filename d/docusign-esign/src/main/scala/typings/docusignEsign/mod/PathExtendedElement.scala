@@ -14,31 +14,23 @@ trait PathExtendedElement extends StObject {
 }
 object PathExtendedElement {
   
-  @scala.inline
-  def apply(): PathExtendedElement = {
+  inline def apply(): PathExtendedElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PathExtendedElement]
   }
   
-  @scala.inline
-  implicit class PathExtendedElementMutableBuilder[Self <: PathExtendedElement] (val x: Self) extends AnyVal {
+  extension [Self <: PathExtendedElement](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNameUndefined: Self = StObject.set(x, "typeName", js.undefined)
+    inline def setTypeNameUndefined: Self = StObject.set(x, "typeName", js.undefined)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait CaptureGroup extends StObject {
 }
 object CaptureGroup {
   
-  @scala.inline
-  def apply(group: String): CaptureGroup = {
+  inline def apply(group: String): CaptureGroup = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureGroup]
   }
   
-  @scala.inline
-  implicit class CaptureGroupMutableBuilder[Self <: CaptureGroup] (val x: Self) extends AnyVal {
+  extension [Self <: CaptureGroup](x: Self) {
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
   }
 }

@@ -22,28 +22,21 @@ trait SchemaListSavedQueriesResponse extends StObject {
 }
 object SchemaListSavedQueriesResponse {
   
-  @scala.inline
-  def apply(): SchemaListSavedQueriesResponse = {
+  inline def apply(): SchemaListSavedQueriesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListSavedQueriesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListSavedQueriesResponseMutableBuilder[Self <: SchemaListSavedQueriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListSavedQueriesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSavedQueries(value: js.Array[SchemaSavedQuery]): Self = StObject.set(x, "savedQueries", value.asInstanceOf[js.Any])
+    inline def setSavedQueries(value: js.Array[SchemaSavedQuery]): Self = StObject.set(x, "savedQueries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedQueriesUndefined: Self = StObject.set(x, "savedQueries", js.undefined)
+    inline def setSavedQueriesUndefined: Self = StObject.set(x, "savedQueries", js.undefined)
     
-    @scala.inline
-    def setSavedQueriesVarargs(value: SchemaSavedQuery*): Self = StObject.set(x, "savedQueries", js.Array(value :_*))
+    inline def setSavedQueriesVarargs(value: SchemaSavedQuery*): Self = StObject.set(x, "savedQueries", js.Array(value :_*))
   }
 }

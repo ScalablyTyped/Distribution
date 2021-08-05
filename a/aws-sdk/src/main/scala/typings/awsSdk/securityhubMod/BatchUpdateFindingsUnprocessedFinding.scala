@@ -23,8 +23,7 @@ trait BatchUpdateFindingsUnprocessedFinding extends StObject {
 }
 object BatchUpdateFindingsUnprocessedFinding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ErrorCode: NonEmptyString,
     ErrorMessage: NonEmptyString,
     FindingIdentifier: AwsSecurityFindingIdentifier
@@ -33,16 +32,12 @@ object BatchUpdateFindingsUnprocessedFinding {
     __obj.asInstanceOf[BatchUpdateFindingsUnprocessedFinding]
   }
   
-  @scala.inline
-  implicit class BatchUpdateFindingsUnprocessedFindingMutableBuilder[Self <: BatchUpdateFindingsUnprocessedFinding] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdateFindingsUnprocessedFinding](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: NonEmptyString): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: NonEmptyString): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: NonEmptyString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: NonEmptyString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingIdentifier(value: AwsSecurityFindingIdentifier): Self = StObject.set(x, "FindingIdentifier", value.asInstanceOf[js.Any])
+    inline def setFindingIdentifier(value: AwsSecurityFindingIdentifier): Self = StObject.set(x, "FindingIdentifier", value.asInstanceOf[js.Any])
   }
 }

@@ -22,9 +22,9 @@ object methodStubVerificatorMod {
     
     def calledBefore(method: js.Any): Unit = js.native
     
-    var methodCallToStringConverter: js.Any = js.native
+    /* private */ var methodCallToStringConverter: js.Any = js.native
     
-    var methodToVerify: js.Any = js.native
+    /* private */ var methodToVerify: js.Any = js.native
     
     def never(): Unit = js.native
     

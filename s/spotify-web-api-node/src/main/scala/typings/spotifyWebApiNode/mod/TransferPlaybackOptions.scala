@@ -12,25 +12,19 @@ trait TransferPlaybackOptions extends StObject {
 }
 object TransferPlaybackOptions {
   
-  @scala.inline
-  def apply(device_ids: js.Array[String]): TransferPlaybackOptions = {
+  inline def apply(device_ids: js.Array[String]): TransferPlaybackOptions = {
     val __obj = js.Dynamic.literal(device_ids = device_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferPlaybackOptions]
   }
   
-  @scala.inline
-  implicit class TransferPlaybackOptionsMutableBuilder[Self <: TransferPlaybackOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TransferPlaybackOptions](x: Self) {
     
-    @scala.inline
-    def setDevice_ids(value: js.Array[String]): Self = StObject.set(x, "device_ids", value.asInstanceOf[js.Any])
+    inline def setDevice_ids(value: js.Array[String]): Self = StObject.set(x, "device_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice_idsVarargs(value: String*): Self = StObject.set(x, "device_ids", js.Array(value :_*))
+    inline def setDevice_idsVarargs(value: String*): Self = StObject.set(x, "device_ids", js.Array(value :_*))
     
-    @scala.inline
-    def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+    inline def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
+    inline def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
   }
 }

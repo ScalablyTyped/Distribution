@@ -15,31 +15,23 @@ trait Partialdurationnumberstri extends StObject {
 }
 object Partialdurationnumberstri {
   
-  @scala.inline
-  def apply(): Partialdurationnumberstri = {
+  inline def apply(): Partialdurationnumberstri = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Partialdurationnumberstri]
   }
   
-  @scala.inline
-  implicit class PartialdurationnumberstriMutableBuilder[Self <: Partialdurationnumberstri] (val x: Self) extends AnyVal {
+  extension [Self <: Partialdurationnumberstri](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double | String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double | String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double | String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double | String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteEmailIdentityRequest extends StObject {
 }
 object DeleteEmailIdentityRequest {
   
-  @scala.inline
-  def apply(EmailIdentity: Identity): DeleteEmailIdentityRequest = {
+  inline def apply(EmailIdentity: Identity): DeleteEmailIdentityRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEmailIdentityRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEmailIdentityRequestMutableBuilder[Self <: DeleteEmailIdentityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEmailIdentityRequest](x: Self) {
     
-    @scala.inline
-    def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
+    inline def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DeregisterOnPremisesInstanceInput extends StObject {
 }
 object DeregisterOnPremisesInstanceInput {
   
-  @scala.inline
-  def apply(instanceName: InstanceName): DeregisterOnPremisesInstanceInput = {
+  inline def apply(instanceName: InstanceName): DeregisterOnPremisesInstanceInput = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterOnPremisesInstanceInput]
   }
   
-  @scala.inline
-  implicit class DeregisterOnPremisesInstanceInputMutableBuilder[Self <: DeregisterOnPremisesInstanceInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterOnPremisesInstanceInput](x: Self) {
     
-    @scala.inline
-    def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }
 }

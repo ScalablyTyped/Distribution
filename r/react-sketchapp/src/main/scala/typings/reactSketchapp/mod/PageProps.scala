@@ -13,28 +13,21 @@ trait PageProps extends StObject {
 }
 object PageProps {
   
-  @scala.inline
-  def apply(): PageProps = {
+  inline def apply(): PageProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageProps]
   }
   
-  @scala.inline
-  implicit class PagePropsMutableBuilder[Self <: PageProps] (val x: Self) extends AnyVal {
+  extension [Self <: PageProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

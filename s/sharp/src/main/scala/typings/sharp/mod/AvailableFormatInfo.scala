@@ -15,22 +15,17 @@ trait AvailableFormatInfo extends StObject {
 }
 object AvailableFormatInfo {
   
-  @scala.inline
-  def apply(id: String, input: Buffer, output: Buffer): AvailableFormatInfo = {
+  inline def apply(id: String, input: Buffer, output: Buffer): AvailableFormatInfo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvailableFormatInfo]
   }
   
-  @scala.inline
-  implicit class AvailableFormatInfoMutableBuilder[Self <: AvailableFormatInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AvailableFormatInfo](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: Buffer): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Buffer): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput(value: Buffer): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: Buffer): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
   }
 }

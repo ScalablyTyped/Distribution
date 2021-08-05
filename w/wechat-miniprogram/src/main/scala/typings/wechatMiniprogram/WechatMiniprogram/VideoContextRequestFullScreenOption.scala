@@ -21,19 +21,15 @@ trait VideoContextRequestFullScreenOption extends StObject {
 }
 object VideoContextRequestFullScreenOption {
   
-  @scala.inline
-  def apply(): VideoContextRequestFullScreenOption = {
+  inline def apply(): VideoContextRequestFullScreenOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoContextRequestFullScreenOption]
   }
   
-  @scala.inline
-  implicit class VideoContextRequestFullScreenOptionMutableBuilder[Self <: VideoContextRequestFullScreenOption] (val x: Self) extends AnyVal {
+  extension [Self <: VideoContextRequestFullScreenOption](x: Self) {
     
-    @scala.inline
-    def setDirection(value: `0` | `90` | `-90`): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: `0` | `90` | `-90`): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
   }
 }

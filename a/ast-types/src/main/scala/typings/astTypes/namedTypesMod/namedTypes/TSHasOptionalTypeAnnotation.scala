@@ -16,16 +16,12 @@ object TSHasOptionalTypeAnnotation {
   @js.native
   val ^ : Type[TSHasOptionalTypeAnnotation] = js.native
   
-  @scala.inline
-  implicit class TSHasOptionalTypeAnnotationMutableBuilder[Self <: TSHasOptionalTypeAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: TSHasOptionalTypeAnnotation](x: Self) {
     
-    @scala.inline
-    def setTypeAnnotation(value: TSTypeAnnotationKind): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TSTypeAnnotationKind): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
+    inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
     
-    @scala.inline
-    def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
+    inline def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
   }
 }

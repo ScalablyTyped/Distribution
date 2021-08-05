@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionSetting extends StObject
 object DirectionSetting {
   
-  @scala.inline
-  def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
+  inline def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
   
-  @scala.inline
-  def lr: typings.std.stdStrings.lr = "lr".asInstanceOf[typings.std.stdStrings.lr]
+  inline def lr: typings.std.stdStrings.lr = "lr".asInstanceOf[typings.std.stdStrings.lr]
   
-  @scala.inline
-  def rl: typings.std.stdStrings.rl = "rl".asInstanceOf[typings.std.stdStrings.rl]
+  inline def rl: typings.std.stdStrings.rl = "rl".asInstanceOf[typings.std.stdStrings.rl]
 }

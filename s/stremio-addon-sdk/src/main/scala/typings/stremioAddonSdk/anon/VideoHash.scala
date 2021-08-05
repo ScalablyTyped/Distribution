@@ -18,19 +18,15 @@ trait VideoHash extends StObject {
 }
 object VideoHash {
   
-  @scala.inline
-  def apply(videoHash: String, videoSize: String): VideoHash = {
+  inline def apply(videoHash: String, videoSize: String): VideoHash = {
     val __obj = js.Dynamic.literal(videoHash = videoHash.asInstanceOf[js.Any], videoSize = videoSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoHash]
   }
   
-  @scala.inline
-  implicit class VideoHashMutableBuilder[Self <: VideoHash] (val x: Self) extends AnyVal {
+  extension [Self <: VideoHash](x: Self) {
     
-    @scala.inline
-    def setVideoHash(value: String): Self = StObject.set(x, "videoHash", value.asInstanceOf[js.Any])
+    inline def setVideoHash(value: String): Self = StObject.set(x, "videoHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSize(value: String): Self = StObject.set(x, "videoSize", value.asInstanceOf[js.Any])
+    inline def setVideoSize(value: String): Self = StObject.set(x, "videoSize", value.asInstanceOf[js.Any])
   }
 }

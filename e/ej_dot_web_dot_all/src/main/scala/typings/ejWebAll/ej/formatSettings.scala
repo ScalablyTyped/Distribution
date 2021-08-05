@@ -18,8 +18,7 @@ trait formatSettings extends StObject {
 }
 object formatSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currency: currencySettings,
     decimals: Double,
     groupSizes: js.Array[Double],
@@ -30,28 +29,20 @@ object formatSettings {
     __obj.asInstanceOf[formatSettings]
   }
   
-  @scala.inline
-  implicit class formatSettingsMutableBuilder[Self <: formatSettings] (val x: Self) extends AnyVal {
+  extension [Self <: formatSettings](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: currencySettings): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: currencySettings): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+    inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupSizes(value: js.Array[Double]): Self = StObject.set(x, "groupSizes", value.asInstanceOf[js.Any])
+    inline def setGroupSizes(value: js.Array[Double]): Self = StObject.set(x, "groupSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupSizesVarargs(value: Double*): Self = StObject.set(x, "groupSizes", js.Array(value :_*))
+    inline def setGroupSizesVarargs(value: Double*): Self = StObject.set(x, "groupSizes", js.Array(value :_*))
     
-    @scala.inline
-    def setPattern(value: js.Array[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: js.Array[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
+    inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
     
-    @scala.inline
-    def setPercent(value: percentSettings): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: percentSettings): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
   }
 }

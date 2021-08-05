@@ -12,9 +12,9 @@ object relationCountMetadataToAttributeTransformerMod {
   class RelationCountMetadataToAttributeTransformer protected () extends StObject {
     def this(expressionMap: QueryExpressionMap) = this()
     
-    var expressionMap: QueryExpressionMap = js.native
+    /* protected */ var expressionMap: QueryExpressionMap = js.native
     
-    var metadataToAttribute: js.Any = js.native
+    /* private */ var metadataToAttribute: js.Any = js.native
     
     def transform(): Unit = js.native
   }

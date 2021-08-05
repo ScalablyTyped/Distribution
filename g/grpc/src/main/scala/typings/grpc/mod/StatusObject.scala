@@ -23,22 +23,17 @@ trait StatusObject extends StObject {
 }
 object StatusObject {
   
-  @scala.inline
-  def apply(code: status, details: String, metadata: Metadata): StatusObject = {
+  inline def apply(code: status, details: String, metadata: Metadata): StatusObject = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusObject]
   }
   
-  @scala.inline
-  implicit class StatusObjectMutableBuilder[Self <: StatusObject] (val x: Self) extends AnyVal {
+  extension [Self <: StatusObject](x: Self) {
     
-    @scala.inline
-    def setCode(value: status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

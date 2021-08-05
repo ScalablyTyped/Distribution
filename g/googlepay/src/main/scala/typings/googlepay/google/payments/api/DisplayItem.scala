@@ -43,29 +43,22 @@ trait DisplayItem extends StObject {
 }
 object DisplayItem {
   
-  @scala.inline
-  def apply(label: String, price: String, `type`: DisplayItemType): DisplayItem = {
+  inline def apply(label: String, price: String, `type`: DisplayItemType): DisplayItem = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayItem]
   }
   
-  @scala.inline
-  implicit class DisplayItemMutableBuilder[Self <: DisplayItem] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayItem](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: DisplayItemStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DisplayItemStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setType(value: DisplayItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DisplayItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

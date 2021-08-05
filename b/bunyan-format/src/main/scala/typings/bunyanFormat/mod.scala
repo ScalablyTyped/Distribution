@@ -63,44 +63,32 @@ object mod extends Shortcut {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorFromLevel(value: ColorFromLevel): Self = StObject.set(x, "colorFromLevel", value.asInstanceOf[js.Any])
+        inline def setColorFromLevel(value: ColorFromLevel): Self = StObject.set(x, "colorFromLevel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorFromLevelUndefined: Self = StObject.set(x, "colorFromLevel", js.undefined)
+        inline def setColorFromLevelUndefined: Self = StObject.set(x, "colorFromLevel", js.undefined)
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setJsonIndent(value: String | Double): Self = StObject.set(x, "jsonIndent", value.asInstanceOf[js.Any])
+        inline def setJsonIndent(value: String | Double): Self = StObject.set(x, "jsonIndent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJsonIndentUndefined: Self = StObject.set(x, "jsonIndent", js.undefined)
+        inline def setJsonIndentUndefined: Self = StObject.set(x, "jsonIndent", js.undefined)
         
-        @scala.inline
-        def setLevelInString(value: Boolean): Self = StObject.set(x, "levelInString", value.asInstanceOf[js.Any])
+        inline def setLevelInString(value: Boolean): Self = StObject.set(x, "levelInString", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLevelInStringUndefined: Self = StObject.set(x, "levelInString", js.undefined)
+        inline def setLevelInStringUndefined: Self = StObject.set(x, "levelInString", js.undefined)
         
-        @scala.inline
-        def setOutputMode(value: short | long | simple | json | bunyan): Self = StObject.set(x, "outputMode", value.asInstanceOf[js.Any])
+        inline def setOutputMode(value: short | long | simple | json | bunyan): Self = StObject.set(x, "outputMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutputModeUndefined: Self = StObject.set(x, "outputMode", js.undefined)
+        inline def setOutputModeUndefined: Self = StObject.set(x, "outputMode", js.undefined)
       }
     }
   }

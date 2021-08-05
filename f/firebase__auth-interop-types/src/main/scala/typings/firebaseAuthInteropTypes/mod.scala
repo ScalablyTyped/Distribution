@@ -28,17 +28,14 @@ object mod {
   }
   object FirebaseAuthTokenData {
     
-    @scala.inline
-    def apply(accessToken: String): FirebaseAuthTokenData = {
+    inline def apply(accessToken: String): FirebaseAuthTokenData = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[FirebaseAuthTokenData]
     }
     
-    @scala.inline
-    implicit class FirebaseAuthTokenDataMutableBuilder[Self <: FirebaseAuthTokenData] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseAuthTokenData](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,18 +47,15 @@ object mod {
     }
     object NameServiceMapping {
       
-      @scala.inline
-      def apply(`auth-internal`: FirebaseAuthInternal): NameServiceMapping = {
+      inline def apply(`auth-internal`: FirebaseAuthInternal): NameServiceMapping = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("auth-internal")(`auth-internal`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      @scala.inline
-      implicit class NameServiceMappingMutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
+      extension [Self <: NameServiceMapping](x: Self) {
         
-        @scala.inline
-        def `setAuth-internal`(value: FirebaseAuthInternal): Self = StObject.set(x, "auth-internal", value.asInstanceOf[js.Any])
+        inline def `setAuth-internal`(value: FirebaseAuthInternal): Self = StObject.set(x, "auth-internal", value.asInstanceOf[js.Any])
       }
     }
   }

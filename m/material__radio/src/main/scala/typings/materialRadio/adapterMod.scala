@@ -16,23 +16,18 @@ object adapterMod {
   }
   object MDCRadioAdapter {
     
-    @scala.inline
-    def apply(addClass: String => Unit, removeClass: String => Unit, setNativeControlDisabled: Boolean => Unit): MDCRadioAdapter = {
+    inline def apply(addClass: String => Unit, removeClass: String => Unit, setNativeControlDisabled: Boolean => Unit): MDCRadioAdapter = {
       val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), removeClass = js.Any.fromFunction1(removeClass), setNativeControlDisabled = js.Any.fromFunction1(setNativeControlDisabled))
       __obj.asInstanceOf[MDCRadioAdapter]
     }
     
-    @scala.inline
-    implicit class MDCRadioAdapterMutableBuilder[Self <: MDCRadioAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCRadioAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetNativeControlDisabled(value: Boolean => Unit): Self = StObject.set(x, "setNativeControlDisabled", js.Any.fromFunction1(value))
+      inline def setSetNativeControlDisabled(value: Boolean => Unit): Self = StObject.set(x, "setNativeControlDisabled", js.Any.fromFunction1(value))
     }
   }
 }

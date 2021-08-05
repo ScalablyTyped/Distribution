@@ -15,21 +15,17 @@ object global {
     /**
       * @since 1.0.44
       */
-    @scala.inline
-    def disableHook(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableHook")().asInstanceOf[Unit]
+    inline def disableHook(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableHook")().asInstanceOf[Unit]
   }
   
   /**
     * @since 1.0.44
     */
-  @scala.inline
-  def notification(title: String, content: String, url: String): Unit = (js.Dynamic.global.applyDynamic("notification")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def notification(title: String, content: String, url: String, status: String): Unit = (js.Dynamic.global.applyDynamic("notification")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notification(title: String, content: String, url: String): Unit = (js.Dynamic.global.applyDynamic("notification")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notification(title: String, content: String, url: String, status: String): Unit = (js.Dynamic.global.applyDynamic("notification")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @since 1.0.44
     */
-  @scala.inline
-  def toast(message: js.Any): Unit = js.Dynamic.global.applyDynamic("toast")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def toast(message: js.Any): Unit = js.Dynamic.global.applyDynamic("toast")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

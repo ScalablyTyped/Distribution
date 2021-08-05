@@ -76,6 +76,5 @@ object ActionSheet {
     * the given JSX element from `any` to an actual ActionSheet.
     * @param actionSheet The action sheet to open
     */
-  @scala.inline
-  def open(actionSheet: ActionSheet): ActionSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(actionSheet.asInstanceOf[js.Any]).asInstanceOf[ActionSheet]
+  inline def open(actionSheet: ActionSheet): ActionSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(actionSheet.asInstanceOf[js.Any]).asInstanceOf[ActionSheet]
 }

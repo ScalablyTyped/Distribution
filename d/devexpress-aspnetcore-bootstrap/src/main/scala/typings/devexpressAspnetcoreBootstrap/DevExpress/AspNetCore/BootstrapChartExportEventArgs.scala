@@ -18,8 +18,7 @@ trait BootstrapChartExportEventArgs
 }
 object BootstrapChartExportEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     component: js.Any,
     data: js.Any,
@@ -32,19 +31,14 @@ object BootstrapChartExportEventArgs {
     __obj.asInstanceOf[BootstrapChartExportEventArgs]
   }
   
-  @scala.inline
-  implicit class BootstrapChartExportEventArgsMutableBuilder[Self <: BootstrapChartExportEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapChartExportEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

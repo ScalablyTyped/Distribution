@@ -29,44 +29,32 @@ object formLabelMod extends Shortcut {
   }
   object FormLabelProps {
     
-    @scala.inline
-    def apply(): FormLabelProps = {
+    inline def apply(): FormLabelProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormLabelProps]
     }
     
-    @scala.inline
-    implicit class FormLabelPropsMutableBuilder[Self <: FormLabelProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormLabelProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIsInlineHelp(value: Boolean): Self = StObject.set(x, "isInlineHelp", value.asInstanceOf[js.Any])
+      inline def setIsInlineHelp(value: Boolean): Self = StObject.set(x, "isInlineHelp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInlineHelpUndefined: Self = StObject.set(x, "isInlineHelp", js.undefined)
+      inline def setIsInlineHelpUndefined: Self = StObject.set(x, "isInlineHelp", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     }
   }
   

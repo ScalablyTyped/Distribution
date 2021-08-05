@@ -20,9 +20,9 @@ object asyncTaskManagerMod {
     
     def cancelTasks(): Unit = js.native
     
-    val cancellationToken: js.Any = js.native
+    /* private */ val cancellationToken: js.Any = js.native
     
-    val errors: js.Any = js.native
+    /* private */ val errors: js.Any = js.native
     
     val tasks: js.Array[js.Promise[js.Any]] = js.native
   }

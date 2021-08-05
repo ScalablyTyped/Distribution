@@ -15,16 +15,13 @@ trait OnPlaybackRateChangeEvent
 }
 object OnPlaybackRateChangeEvent {
   
-  @scala.inline
-  def apply(data: Double, target: Player): OnPlaybackRateChangeEvent = {
+  inline def apply(data: Double, target: Player): OnPlaybackRateChangeEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnPlaybackRateChangeEvent]
   }
   
-  @scala.inline
-  implicit class OnPlaybackRateChangeEventMutableBuilder[Self <: OnPlaybackRateChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: OnPlaybackRateChangeEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

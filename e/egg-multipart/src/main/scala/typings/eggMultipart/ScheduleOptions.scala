@@ -23,58 +23,41 @@ trait ScheduleOptions extends StObject {
 }
 object ScheduleOptions {
   
-  @scala.inline
-  def apply(): ScheduleOptions = {
+  inline def apply(): ScheduleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduleOptions]
   }
   
-  @scala.inline
-  implicit class ScheduleOptionsMutableBuilder[Self <: ScheduleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduleOptions](x: Self) {
     
-    @scala.inline
-    def setCron(value: String): Self = StObject.set(x, "cron", value.asInstanceOf[js.Any])
+    inline def setCron(value: String): Self = StObject.set(x, "cron", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCronOptions(value: CurrentDate): Self = StObject.set(x, "cronOptions", value.asInstanceOf[js.Any])
+    inline def setCronOptions(value: CurrentDate): Self = StObject.set(x, "cronOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCronOptionsUndefined: Self = StObject.set(x, "cronOptions", js.undefined)
+    inline def setCronOptionsUndefined: Self = StObject.set(x, "cronOptions", js.undefined)
     
-    @scala.inline
-    def setCronUndefined: Self = StObject.set(x, "cron", js.undefined)
+    inline def setCronUndefined: Self = StObject.set(x, "cron", js.undefined)
     
-    @scala.inline
-    def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+    inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    @scala.inline
-    def setEnv(value: js.Array[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: js.Array[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    @scala.inline
-    def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
     
-    @scala.inline
-    def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+    inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
+    inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double | String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double | String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

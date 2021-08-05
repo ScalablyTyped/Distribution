@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait ShadowMapType extends StObject
 object ShadowMapType {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[ShadowMapType & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("ShadowMapType")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ShadowMapType & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[ShadowMapType & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("ShadowMapType")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ShadowMapType & scala.Nothing]]
 }

@@ -29,24 +29,19 @@ trait TextDocumentContentProvider extends StObject {
 }
 object TextDocumentContentProvider {
   
-  @scala.inline
-  def apply(provideTextDocumentContent: (Uri, CancellationToken) => ProviderResult[String]): TextDocumentContentProvider = {
+  inline def apply(provideTextDocumentContent: (Uri, CancellationToken) => ProviderResult[String]): TextDocumentContentProvider = {
     val __obj = js.Dynamic.literal(provideTextDocumentContent = js.Any.fromFunction2(provideTextDocumentContent))
     __obj.asInstanceOf[TextDocumentContentProvider]
   }
   
-  @scala.inline
-  implicit class TextDocumentContentProviderMutableBuilder[Self <: TextDocumentContentProvider] (val x: Self) extends AnyVal {
+  extension [Self <: TextDocumentContentProvider](x: Self) {
     
-    @scala.inline
-    def setOnDidChange(
+    inline def setOnDidChange(
       value: (/* listener */ js.Function1[Uri, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
     ): Self = StObject.set(x, "onDidChange", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnDidChangeUndefined: Self = StObject.set(x, "onDidChange", js.undefined)
+    inline def setOnDidChangeUndefined: Self = StObject.set(x, "onDidChange", js.undefined)
     
-    @scala.inline
-    def setProvideTextDocumentContent(value: (Uri, CancellationToken) => ProviderResult[String]): Self = StObject.set(x, "provideTextDocumentContent", js.Any.fromFunction2(value))
+    inline def setProvideTextDocumentContent(value: (Uri, CancellationToken) => ProviderResult[String]): Self = StObject.set(x, "provideTextDocumentContent", js.Any.fromFunction2(value))
   }
 }

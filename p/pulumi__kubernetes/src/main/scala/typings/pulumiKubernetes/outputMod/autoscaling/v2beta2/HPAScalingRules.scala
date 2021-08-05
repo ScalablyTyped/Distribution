@@ -26,25 +26,19 @@ trait HPAScalingRules extends StObject {
 }
 object HPAScalingRules {
   
-  @scala.inline
-  def apply(policies: js.Array[HPAScalingPolicy], selectPolicy: String, stabilizationWindowSeconds: Double): HPAScalingRules = {
+  inline def apply(policies: js.Array[HPAScalingPolicy], selectPolicy: String, stabilizationWindowSeconds: Double): HPAScalingRules = {
     val __obj = js.Dynamic.literal(policies = policies.asInstanceOf[js.Any], selectPolicy = selectPolicy.asInstanceOf[js.Any], stabilizationWindowSeconds = stabilizationWindowSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[HPAScalingRules]
   }
   
-  @scala.inline
-  implicit class HPAScalingRulesMutableBuilder[Self <: HPAScalingRules] (val x: Self) extends AnyVal {
+  extension [Self <: HPAScalingRules](x: Self) {
     
-    @scala.inline
-    def setPolicies(value: js.Array[HPAScalingPolicy]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
+    inline def setPolicies(value: js.Array[HPAScalingPolicy]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesVarargs(value: HPAScalingPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: HPAScalingPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectPolicy(value: String): Self = StObject.set(x, "selectPolicy", value.asInstanceOf[js.Any])
+    inline def setSelectPolicy(value: String): Self = StObject.set(x, "selectPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStabilizationWindowSeconds(value: Double): Self = StObject.set(x, "stabilizationWindowSeconds", value.asInstanceOf[js.Any])
+    inline def setStabilizationWindowSeconds(value: Double): Self = StObject.set(x, "stabilizationWindowSeconds", value.asInstanceOf[js.Any])
   }
 }

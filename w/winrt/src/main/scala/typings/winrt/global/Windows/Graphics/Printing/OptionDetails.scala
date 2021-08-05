@@ -476,7 +476,6 @@ object OptionDetails {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getFromPrintTaskOptions(printTaskOptions: typings.winrt.Windows.Graphics.Printing.PrintTaskOptions): typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("getFromPrintTaskOptions")(printTaskOptions.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails]
+    inline def getFromPrintTaskOptions(printTaskOptions: typings.winrt.Windows.Graphics.Printing.PrintTaskOptions): typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("getFromPrintTaskOptions")(printTaskOptions.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails]
   }
 }

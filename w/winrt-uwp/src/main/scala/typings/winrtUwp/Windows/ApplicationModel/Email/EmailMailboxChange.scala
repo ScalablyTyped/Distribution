@@ -22,8 +22,7 @@ trait EmailMailboxChange extends StObject {
 }
 object EmailMailboxChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeType: EmailMailboxChangeType,
     folder: EmailFolder,
     mailboxActions: IVector[EmailMailboxAction],
@@ -33,19 +32,14 @@ object EmailMailboxChange {
     __obj.asInstanceOf[EmailMailboxChange]
   }
   
-  @scala.inline
-  implicit class EmailMailboxChangeMutableBuilder[Self <: EmailMailboxChange] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMailboxChange](x: Self) {
     
-    @scala.inline
-    def setChangeType(value: EmailMailboxChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: EmailMailboxChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolder(value: EmailFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: EmailFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailboxActions(value: IVector[EmailMailboxAction]): Self = StObject.set(x, "mailboxActions", value.asInstanceOf[js.Any])
+    inline def setMailboxActions(value: IVector[EmailMailboxAction]): Self = StObject.set(x, "mailboxActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: EmailMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: EmailMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

@@ -21,15 +21,13 @@ object DatabaseConstraintOperator {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraintOperator.Contains")
   @js.native
   def Contains: DatabaseConstraintOperator = js.native
-  @scala.inline
-  def Contains_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Contains")(x.asInstanceOf[js.Any])
+  inline def Contains_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Contains")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraintOperator.Equals")
   @js.native
   def Equals: DatabaseConstraintOperator = js.native
-  @scala.inline
-  def Equals_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Equals")(x.asInstanceOf[js.Any])
+  inline def Equals_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Equals")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraintOperator.GreaterThan")
@@ -40,11 +38,9 @@ object DatabaseConstraintOperator {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraintOperator.GreaterThanOrEquals")
   @js.native
   def GreaterThanOrEquals: DatabaseConstraintOperator = js.native
-  @scala.inline
-  def GreaterThanOrEquals_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GreaterThanOrEquals")(x.asInstanceOf[js.Any])
+  inline def GreaterThanOrEquals_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GreaterThanOrEquals")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def GreaterThan_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GreaterThan")(x.asInstanceOf[js.Any])
+  inline def GreaterThan_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GreaterThan")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraintOperator.LessThan")
@@ -55,23 +51,19 @@ object DatabaseConstraintOperator {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraintOperator.LessThanOrEquals")
   @js.native
   def LessThanOrEquals: DatabaseConstraintOperator = js.native
-  @scala.inline
-  def LessThanOrEquals_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LessThanOrEquals")(x.asInstanceOf[js.Any])
+  inline def LessThanOrEquals_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LessThanOrEquals")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def LessThan_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LessThan")(x.asInstanceOf[js.Any])
+  inline def LessThan_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LessThan")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraintOperator.NotContains")
   @js.native
   def NotContains: DatabaseConstraintOperator = js.native
-  @scala.inline
-  def NotContains_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotContains")(x.asInstanceOf[js.Any])
+  inline def NotContains_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotContains")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraintOperator.NotEquals")
   @js.native
   def NotEquals: DatabaseConstraintOperator = js.native
-  @scala.inline
-  def NotEquals_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotEquals")(x.asInstanceOf[js.Any])
+  inline def NotEquals_=(x: DatabaseConstraintOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotEquals")(x.asInstanceOf[js.Any])
 }

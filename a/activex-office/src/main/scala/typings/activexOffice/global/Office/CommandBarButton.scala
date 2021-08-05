@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.CommandBarButton")
 @js.native
-class CommandBarButton protected ()
+/* private */ class CommandBarButton ()
   extends StObject
      with typings.activexOffice.Office.CommandBarButton

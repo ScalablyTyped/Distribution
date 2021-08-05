@@ -65,8 +65,7 @@ object anon {
   }
   object Index {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       index: Double,
       keys: js.Array[String],
       obj: js.Object,
@@ -77,26 +76,19 @@ object anon {
       __obj.asInstanceOf[Index[T]]
     }
     
-    @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index[?], T] (val x: Self & Index[T]) extends AnyVal {
+    extension [Self <: Index[?], T](x: Self & Index[T]) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
       
-      @scala.inline
-      def setObj(value: js.Object): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
+      inline def setObj(value: js.Object): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriber(value: Subscriber[js.Tuple2[String, T]]): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
+      inline def setSubscriber(value: Subscriber[js.Tuple2[String, T]]): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscription(value: Subscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+      inline def setSubscription(value: Subscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,17 +108,14 @@ object anon {
   }
   object Selector {
     
-    @scala.inline
-    def apply[T](selector: Response => ObservableInput[T]): Selector[T] = {
+    inline def apply[T](selector: Response => ObservableInput[T]): Selector[T] = {
       val __obj = js.Dynamic.literal(selector = js.Any.fromFunction1(selector))
       __obj.asInstanceOf[Selector[T]]
     }
     
-    @scala.inline
-    implicit class SelectorMutableBuilder[Self <: Selector[?], T] (val x: Self & Selector[T]) extends AnyVal {
+    extension [Self <: Selector[?], T](x: Self & Selector[T]) {
       
-      @scala.inline
-      def setSelector(value: Response => ObservableInput[T]): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
+      inline def setSelector(value: Response => ObservableInput[T]): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
     }
   }
   
@@ -141,19 +130,16 @@ object anon {
   }
   object ToBe {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       toBe: (/* marbles */ String, /* values */ js.UndefOr[js.Any], /* errorValue */ js.UndefOr[js.Any]) => Unit
     ): ToBe = {
       val __obj = js.Dynamic.literal(toBe = js.Any.fromFunction3(toBe))
       __obj.asInstanceOf[ToBe]
     }
     
-    @scala.inline
-    implicit class ToBeMutableBuilder[Self <: ToBe] (val x: Self) extends AnyVal {
+    extension [Self <: ToBe](x: Self) {
       
-      @scala.inline
-      def setToBe(
+      inline def setToBe(
         value: (/* marbles */ String, /* values */ js.UndefOr[js.Any], /* errorValue */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "toBe", js.Any.fromFunction3(value))
     }
@@ -168,17 +154,14 @@ object anon {
   }
   object ToBeSubscriptionLogsToBeFn {
     
-    @scala.inline
-    def apply(toBe: /* marbles */ String | js.Array[String] => Unit): ToBeSubscriptionLogsToBeFn = {
+    inline def apply(toBe: /* marbles */ String | js.Array[String] => Unit): ToBeSubscriptionLogsToBeFn = {
       val __obj = js.Dynamic.literal(toBe = js.Any.fromFunction1(toBe))
       __obj.asInstanceOf[ToBeSubscriptionLogsToBeFn]
     }
     
-    @scala.inline
-    implicit class ToBeSubscriptionLogsToBeFnMutableBuilder[Self <: ToBeSubscriptionLogsToBeFn] (val x: Self) extends AnyVal {
+    extension [Self <: ToBeSubscriptionLogsToBeFn](x: Self) {
       
-      @scala.inline
-      def setToBe(value: /* marbles */ String | js.Array[String] => Unit): Self = StObject.set(x, "toBe", js.Any.fromFunction1(value))
+      inline def setToBe(value: /* marbles */ String | js.Array[String] => Unit): Self = StObject.set(x, "toBe", js.Any.fromFunction1(value))
     }
   }
 }

@@ -32,22 +32,17 @@ trait LeaderboardPlayer extends StObject {
 }
 object LeaderboardPlayer {
   
-  @scala.inline
-  def apply(getID: () => String | Null, getName: () => String, getPhoto: () => String | Null): LeaderboardPlayer = {
+  inline def apply(getID: () => String | Null, getName: () => String, getPhoto: () => String | Null): LeaderboardPlayer = {
     val __obj = js.Dynamic.literal(getID = js.Any.fromFunction0(getID), getName = js.Any.fromFunction0(getName), getPhoto = js.Any.fromFunction0(getPhoto))
     __obj.asInstanceOf[LeaderboardPlayer]
   }
   
-  @scala.inline
-  implicit class LeaderboardPlayerMutableBuilder[Self <: LeaderboardPlayer] (val x: Self) extends AnyVal {
+  extension [Self <: LeaderboardPlayer](x: Self) {
     
-    @scala.inline
-    def setGetID(value: () => String | Null): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
+    inline def setGetID(value: () => String | Null): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPhoto(value: () => String | Null): Self = StObject.set(x, "getPhoto", js.Any.fromFunction0(value))
+    inline def setGetPhoto(value: () => String | Null): Self = StObject.set(x, "getPhoto", js.Any.fromFunction0(value))
   }
 }

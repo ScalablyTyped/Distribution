@@ -33,43 +33,31 @@ trait IFieldSet
 }
 object IFieldSet {
   
-  @scala.inline
-  def apply(): IFieldSet = {
+  inline def apply(): IFieldSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFieldSet]
   }
   
-  @scala.inline
-  implicit class IFieldSetMutableBuilder[Self <: IFieldSet] (val x: Self) extends AnyVal {
+  extension [Self <: IFieldSet](x: Self) {
     
-    @scala.inline
-    def setDoSetDisabled(value: /* newDisabled */ js.UndefOr[js.Any] => IFieldSet): Self = StObject.set(x, "doSetDisabled", js.Any.fromFunction1(value))
+    inline def setDoSetDisabled(value: /* newDisabled */ js.UndefOr[js.Any] => IFieldSet): Self = StObject.set(x, "doSetDisabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDoSetDisabledUndefined: Self = StObject.set(x, "doSetDisabled", js.undefined)
+    inline def setDoSetDisabledUndefined: Self = StObject.set(x, "doSetDisabled", js.undefined)
     
-    @scala.inline
-    def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+    inline def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
+    inline def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
     
-    @scala.inline
-    def setSetInstructions(value: /* instructions */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setInstructions", js.Any.fromFunction1(value))
+    inline def setSetInstructions(value: /* instructions */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setInstructions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetInstructionsUndefined: Self = StObject.set(x, "setInstructions", js.undefined)
+    inline def setSetInstructionsUndefined: Self = StObject.set(x, "setInstructions", js.undefined)
     
-    @scala.inline
-    def setSetTitle(value: /* title */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: /* title */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
+    inline def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait RemoveMembersParameters
 }
 object RemoveMembersParameters {
   
-  @scala.inline
-  def apply(spaceId: String, users: js.Array[String]): RemoveMembersParameters = {
+  inline def apply(spaceId: String, users: js.Array[String]): RemoveMembersParameters = {
     val __obj = js.Dynamic.literal(spaceId = spaceId.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveMembersParameters]
   }
   
-  @scala.inline
-  implicit class RemoveMembersParametersMutableBuilder[Self <: RemoveMembersParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveMembersParameters](x: Self) {
     
-    @scala.inline
-    def setSpaceId(value: String): Self = StObject.set(x, "spaceId", value.asInstanceOf[js.Any])
+    inline def setSpaceId(value: String): Self = StObject.set(x, "spaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsers(value: js.Array[String]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[String]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

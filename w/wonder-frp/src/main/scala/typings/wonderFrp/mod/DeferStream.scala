@@ -17,6 +17,5 @@ object DeferStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(buildStreamFunc: js.Function): typings.wonderFrp.deferStreamMod.DeferStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buildStreamFunc.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.deferStreamMod.DeferStream]
+  inline def create(buildStreamFunc: js.Function): typings.wonderFrp.deferStreamMod.DeferStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buildStreamFunc.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.deferStreamMod.DeferStream]
 }

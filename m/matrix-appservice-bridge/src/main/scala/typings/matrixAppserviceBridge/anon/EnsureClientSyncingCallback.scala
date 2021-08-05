@@ -15,8 +15,7 @@ trait EnsureClientSyncingCallback extends StObject {
 }
 object EnsureClientSyncingCallback {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ensureClientSyncingCallback: () => js.Promise[Unit],
     sessionCreatedCallback: ClientEncryptionSession => js.Promise[Unit],
     sessionPromise: js.Promise[ClientEncryptionSession | Null]
@@ -25,16 +24,12 @@ object EnsureClientSyncingCallback {
     __obj.asInstanceOf[EnsureClientSyncingCallback]
   }
   
-  @scala.inline
-  implicit class EnsureClientSyncingCallbackMutableBuilder[Self <: EnsureClientSyncingCallback] (val x: Self) extends AnyVal {
+  extension [Self <: EnsureClientSyncingCallback](x: Self) {
     
-    @scala.inline
-    def setEnsureClientSyncingCallback(value: () => js.Promise[Unit]): Self = StObject.set(x, "ensureClientSyncingCallback", js.Any.fromFunction0(value))
+    inline def setEnsureClientSyncingCallback(value: () => js.Promise[Unit]): Self = StObject.set(x, "ensureClientSyncingCallback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSessionCreatedCallback(value: ClientEncryptionSession => js.Promise[Unit]): Self = StObject.set(x, "sessionCreatedCallback", js.Any.fromFunction1(value))
+    inline def setSessionCreatedCallback(value: ClientEncryptionSession => js.Promise[Unit]): Self = StObject.set(x, "sessionCreatedCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSessionPromise(value: js.Promise[ClientEncryptionSession | Null]): Self = StObject.set(x, "sessionPromise", value.asInstanceOf[js.Any])
+    inline def setSessionPromise(value: js.Promise[ClientEncryptionSession | Null]): Self = StObject.set(x, "sessionPromise", value.asInstanceOf[js.Any])
   }
 }

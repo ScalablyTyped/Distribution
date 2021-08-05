@@ -11,19 +11,15 @@ trait PickCarouselprev extends StObject {
 }
 object PickCarouselprev {
   
-  @scala.inline
-  def apply(): PickCarouselprev = {
+  inline def apply(): PickCarouselprev = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickCarouselprev]
   }
   
-  @scala.inline
-  implicit class PickCarouselprevMutableBuilder[Self <: PickCarouselprev] (val x: Self) extends AnyVal {
+  extension [Self <: PickCarouselprev](x: Self) {
     
-    @scala.inline
-    def setPrev(value: js.Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: js.Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+    inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
   }
 }

@@ -66,71 +66,55 @@ trait RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatch 
 }
 object RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatch {
   
-  @scala.inline
-  def apply(): RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatch = {
+  inline def apply(): RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatch]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchMutableBuilder[Self <: RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatch] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatch](x: Self) {
     
-    @scala.inline
-    def setAllQueryArguments(
+    inline def setAllQueryArguments(
       value: Input[
           RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchAllQueryArguments
         ]
     ): Self = StObject.set(x, "allQueryArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllQueryArgumentsUndefined: Self = StObject.set(x, "allQueryArguments", js.undefined)
+    inline def setAllQueryArgumentsUndefined: Self = StObject.set(x, "allQueryArguments", js.undefined)
     
-    @scala.inline
-    def setBody(value: Input[RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchBody]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Input[RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchBody]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setMethod(value: Input[RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchMethod]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: Input[RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchMethod]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setQueryString(
+    inline def setQueryString(
       value: Input[
           RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchQueryString
         ]
     ): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
+    inline def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
     
-    @scala.inline
-    def setSingleHeader(
+    inline def setSingleHeader(
       value: Input[
           RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchSingleHeader
         ]
     ): Self = StObject.set(x, "singleHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleHeaderUndefined: Self = StObject.set(x, "singleHeader", js.undefined)
+    inline def setSingleHeaderUndefined: Self = StObject.set(x, "singleHeader", js.undefined)
     
-    @scala.inline
-    def setSingleQueryArgument(
+    inline def setSingleQueryArgument(
       value: Input[
           RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument
         ]
     ): Self = StObject.set(x, "singleQueryArgument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleQueryArgumentUndefined: Self = StObject.set(x, "singleQueryArgument", js.undefined)
+    inline def setSingleQueryArgumentUndefined: Self = StObject.set(x, "singleQueryArgument", js.undefined)
     
-    @scala.inline
-    def setUriPath(value: Input[RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchUriPath]): Self = StObject.set(x, "uriPath", value.asInstanceOf[js.Any])
+    inline def setUriPath(value: Input[RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchUriPath]): Self = StObject.set(x, "uriPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriPathUndefined: Self = StObject.set(x, "uriPath", js.undefined)
+    inline def setUriPathUndefined: Self = StObject.set(x, "uriPath", js.undefined)
   }
 }

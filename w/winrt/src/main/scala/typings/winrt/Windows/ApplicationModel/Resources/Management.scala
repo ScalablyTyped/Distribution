@@ -43,8 +43,7 @@ object Management {
   }
   object IIndexedResourceCandidate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getQualifierValue: String => String,
       metadata: IMapView[String, String],
       qualifiers: IVectorView[IndexedResourceQualifier],
@@ -57,26 +56,19 @@ object Management {
       __obj.asInstanceOf[IIndexedResourceCandidate]
     }
     
-    @scala.inline
-    implicit class IIndexedResourceCandidateMutableBuilder[Self <: IIndexedResourceCandidate] (val x: Self) extends AnyVal {
+    extension [Self <: IIndexedResourceCandidate](x: Self) {
       
-      @scala.inline
-      def setGetQualifierValue(value: String => String): Self = StObject.set(x, "getQualifierValue", js.Any.fromFunction1(value))
+      inline def setGetQualifierValue(value: String => String): Self = StObject.set(x, "getQualifierValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMetadata(value: IMapView[String, String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMapView[String, String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifiers(value: IVectorView[IndexedResourceQualifier]): Self = StObject.set(x, "qualifiers", value.asInstanceOf[js.Any])
+      inline def setQualifiers(value: IVectorView[IndexedResourceQualifier]): Self = StObject.set(x, "qualifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: IndexedResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: IndexedResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueAsString(value: String): Self = StObject.set(x, "valueAsString", value.asInstanceOf[js.Any])
+      inline def setValueAsString(value: String): Self = StObject.set(x, "valueAsString", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,20 +80,16 @@ object Management {
   }
   object IIndexedResourceQualifier {
     
-    @scala.inline
-    def apply(qualifierName: String, qualifierValue: String): IIndexedResourceQualifier = {
+    inline def apply(qualifierName: String, qualifierValue: String): IIndexedResourceQualifier = {
       val __obj = js.Dynamic.literal(qualifierName = qualifierName.asInstanceOf[js.Any], qualifierValue = qualifierValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIndexedResourceQualifier]
     }
     
-    @scala.inline
-    implicit class IIndexedResourceQualifierMutableBuilder[Self <: IIndexedResourceQualifier] (val x: Self) extends AnyVal {
+    extension [Self <: IIndexedResourceQualifier](x: Self) {
       
-      @scala.inline
-      def setQualifierName(value: String): Self = StObject.set(x, "qualifierName", value.asInstanceOf[js.Any])
+      inline def setQualifierName(value: String): Self = StObject.set(x, "qualifierName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierValue(value: String): Self = StObject.set(x, "qualifierValue", value.asInstanceOf[js.Any])
+      inline def setQualifierValue(value: String): Self = StObject.set(x, "qualifierValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,8 +101,7 @@ object Management {
   }
   object IResourceIndexer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       indexFileContentsAsync: Uri => IAsyncOperation[IVectorView[IndexedResourceCandidate]],
       indexFilePath: Uri => IndexedResourceCandidate
     ): IResourceIndexer = {
@@ -122,14 +109,11 @@ object Management {
       __obj.asInstanceOf[IResourceIndexer]
     }
     
-    @scala.inline
-    implicit class IResourceIndexerMutableBuilder[Self <: IResourceIndexer] (val x: Self) extends AnyVal {
+    extension [Self <: IResourceIndexer](x: Self) {
       
-      @scala.inline
-      def setIndexFileContentsAsync(value: Uri => IAsyncOperation[IVectorView[IndexedResourceCandidate]]): Self = StObject.set(x, "indexFileContentsAsync", js.Any.fromFunction1(value))
+      inline def setIndexFileContentsAsync(value: Uri => IAsyncOperation[IVectorView[IndexedResourceCandidate]]): Self = StObject.set(x, "indexFileContentsAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndexFilePath(value: Uri => IndexedResourceCandidate): Self = StObject.set(x, "indexFilePath", js.Any.fromFunction1(value))
+      inline def setIndexFilePath(value: Uri => IndexedResourceCandidate): Self = StObject.set(x, "indexFilePath", js.Any.fromFunction1(value))
     }
   }
   
@@ -139,17 +123,14 @@ object Management {
   }
   object IResourceIndexerFactory {
     
-    @scala.inline
-    def apply(createResourceIndexer: Uri => ResourceIndexer): IResourceIndexerFactory = {
+    inline def apply(createResourceIndexer: Uri => ResourceIndexer): IResourceIndexerFactory = {
       val __obj = js.Dynamic.literal(createResourceIndexer = js.Any.fromFunction1(createResourceIndexer))
       __obj.asInstanceOf[IResourceIndexerFactory]
     }
     
-    @scala.inline
-    implicit class IResourceIndexerFactoryMutableBuilder[Self <: IResourceIndexerFactory] (val x: Self) extends AnyVal {
+    extension [Self <: IResourceIndexerFactory](x: Self) {
       
-      @scala.inline
-      def setCreateResourceIndexer(value: Uri => ResourceIndexer): Self = StObject.set(x, "createResourceIndexer", js.Any.fromFunction1(value))
+      inline def setCreateResourceIndexer(value: Uri => ResourceIndexer): Self = StObject.set(x, "createResourceIndexer", js.Any.fromFunction1(value))
     }
   }
   
@@ -158,8 +139,7 @@ object Management {
        with IIndexedResourceCandidate
   object IndexedResourceCandidate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getQualifierValue: String => String,
       metadata: IMapView[String, String],
       qualifiers: IVectorView[IndexedResourceQualifier],
@@ -178,8 +158,7 @@ object Management {
        with IIndexedResourceQualifier
   object IndexedResourceQualifier {
     
-    @scala.inline
-    def apply(qualifierName: String, qualifierValue: String): IndexedResourceQualifier = {
+    inline def apply(qualifierName: String, qualifierValue: String): IndexedResourceQualifier = {
       val __obj = js.Dynamic.literal(qualifierName = qualifierName.asInstanceOf[js.Any], qualifierValue = qualifierValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[IndexedResourceQualifier]
     }
@@ -190,8 +169,7 @@ object Management {
        with IResourceIndexer
   object ResourceIndexer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       indexFileContentsAsync: Uri => IAsyncOperation[IVectorView[IndexedResourceCandidate]],
       indexFilePath: Uri => IndexedResourceCandidate
     ): ResourceIndexer = {

@@ -21,10 +21,8 @@ object idle {
   trait IdleState extends StObject
   object IdleState {
     
-    @scala.inline
-    def active: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.active = "active".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.active]
+    inline def active: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.active = "active".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.active]
     
-    @scala.inline
-    def idle: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.idle = "idle".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.idle]
+    inline def idle: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.idle = "idle".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.idle]
   }
 }

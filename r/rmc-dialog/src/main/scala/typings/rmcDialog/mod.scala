@@ -24,8 +24,7 @@ object mod {
     @JSImport("rmc-dialog", "default.defaultProps")
     @js.native
     def defaultProps: OnClose = js.native
-    @scala.inline
-    def defaultProps_=(x: OnClose): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: OnClose): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

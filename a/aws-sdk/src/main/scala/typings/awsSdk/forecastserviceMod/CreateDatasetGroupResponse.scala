@@ -13,19 +13,15 @@ trait CreateDatasetGroupResponse extends StObject {
 }
 object CreateDatasetGroupResponse {
   
-  @scala.inline
-  def apply(): CreateDatasetGroupResponse = {
+  inline def apply(): CreateDatasetGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDatasetGroupResponse]
   }
   
-  @scala.inline
-  implicit class CreateDatasetGroupResponseMutableBuilder[Self <: CreateDatasetGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDatasetGroupResponse](x: Self) {
     
-    @scala.inline
-    def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "DatasetGroupArn", value.asInstanceOf[js.Any])
+    inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "DatasetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetGroupArnUndefined: Self = StObject.set(x, "DatasetGroupArn", js.undefined)
+    inline def setDatasetGroupArnUndefined: Self = StObject.set(x, "DatasetGroupArn", js.undefined)
   }
 }

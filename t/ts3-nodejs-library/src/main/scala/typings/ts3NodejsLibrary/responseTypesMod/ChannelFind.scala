@@ -15,19 +15,15 @@ trait ChannelFind
 }
 object ChannelFind {
   
-  @scala.inline
-  def apply(channelName: String, cid: String): ChannelFind = {
+  inline def apply(channelName: String, cid: String): ChannelFind = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelFind]
   }
   
-  @scala.inline
-  implicit class ChannelFindMutableBuilder[Self <: ChannelFind] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelFind](x: Self) {
     
-    @scala.inline
-    def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+    inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
   }
 }

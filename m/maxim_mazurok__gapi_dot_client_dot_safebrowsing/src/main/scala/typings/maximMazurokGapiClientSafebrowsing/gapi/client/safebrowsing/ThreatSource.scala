@@ -20,37 +20,27 @@ trait ThreatSource extends StObject {
 }
 object ThreatSource {
   
-  @scala.inline
-  def apply(): ThreatSource = {
+  inline def apply(): ThreatSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThreatSource]
   }
   
-  @scala.inline
-  implicit class ThreatSourceMutableBuilder[Self <: ThreatSource] (val x: Self) extends AnyVal {
+  extension [Self <: ThreatSource](x: Self) {
     
-    @scala.inline
-    def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+    inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
+    inline def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
     
-    @scala.inline
-    def setRemoteIp(value: String): Self = StObject.set(x, "remoteIp", value.asInstanceOf[js.Any])
+    inline def setRemoteIp(value: String): Self = StObject.set(x, "remoteIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteIpUndefined: Self = StObject.set(x, "remoteIp", js.undefined)
+    inline def setRemoteIpUndefined: Self = StObject.set(x, "remoteIp", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

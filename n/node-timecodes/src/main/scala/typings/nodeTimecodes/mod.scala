@@ -20,28 +20,21 @@ object mod {
     @JSImport("node-timecodes", "default.constants")
     @js.native
     def constants: Framerate = js.native
-    @scala.inline
-    def constants_=(x: Framerate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("constants")(x.asInstanceOf[js.Any])
+    inline def constants_=(x: Framerate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("constants")(x.asInstanceOf[js.Any])
     
     @JSImport("node-timecodes", "default.fromSeconds")
     @js.native
     def fromSeconds: js.Function2[/* seconds */ Double, /* option */ js.UndefOr[TimecodeOptions], String] = js.native
-    @scala.inline
-    def fromSeconds(seconds: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def fromSeconds(seconds: Double, option: TimecodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def fromSeconds_=(x: js.Function2[/* seconds */ Double, /* option */ js.UndefOr[TimecodeOptions], String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromSeconds")(x.asInstanceOf[js.Any])
+    inline def fromSeconds(seconds: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def fromSeconds(seconds: Double, option: TimecodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def fromSeconds_=(x: js.Function2[/* seconds */ Double, /* option */ js.UndefOr[TimecodeOptions], String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromSeconds")(x.asInstanceOf[js.Any])
     
     @JSImport("node-timecodes", "default.toSeconds")
     @js.native
     def toSeconds: js.Function2[/* timecode */ String, /* frameRate */ js.UndefOr[Double], Double] = js.native
-    @scala.inline
-    def toSeconds(timecode: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(timecode.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def toSeconds(timecode: String, frameRate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def toSeconds_=(x: js.Function2[/* timecode */ String, /* frameRate */ js.UndefOr[Double], Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toSeconds")(x.asInstanceOf[js.Any])
+    inline def toSeconds(timecode: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(timecode.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def toSeconds(timecode: String, frameRate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def toSeconds_=(x: js.Function2[/* timecode */ String, /* frameRate */ js.UndefOr[Double], Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toSeconds")(x.asInstanceOf[js.Any])
   }
   
   object constants {
@@ -53,19 +46,14 @@ object mod {
     @JSImport("node-timecodes", "constants.framerate")
     @js.native
     def framerate: Double = js.native
-    @scala.inline
-    def framerate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("framerate")(x.asInstanceOf[js.Any])
+    inline def framerate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("framerate")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def fromSeconds(seconds: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def fromSeconds(seconds: Double, option: TimecodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def fromSeconds(seconds: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromSeconds(seconds: Double, option: TimecodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toSeconds(timecode: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(timecode.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def toSeconds(timecode: String, frameRate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def toSeconds(timecode: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(timecode.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def toSeconds(timecode: String, frameRate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   trait TimecodeOptions extends StObject {
     
@@ -75,26 +63,20 @@ object mod {
   }
   object TimecodeOptions {
     
-    @scala.inline
-    def apply(): TimecodeOptions = {
+    inline def apply(): TimecodeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimecodeOptions]
     }
     
-    @scala.inline
-    implicit class TimecodeOptionsMutableBuilder[Self <: TimecodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TimecodeOptions](x: Self) {
       
-      @scala.inline
-      def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+      inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+      inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
       
-      @scala.inline
-      def setMs(value: Boolean): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
+      inline def setMs(value: Boolean): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsUndefined: Self = StObject.set(x, "ms", js.undefined)
+      inline def setMsUndefined: Self = StObject.set(x, "ms", js.undefined)
     }
   }
 }

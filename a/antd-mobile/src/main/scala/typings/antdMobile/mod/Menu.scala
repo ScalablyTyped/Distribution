@@ -23,12 +23,10 @@ object Menu {
   @JSImport("antd-mobile", "Menu.contextTypes")
   @js.native
   def contextTypes: AntLocale = js.native
-  @scala.inline
-  def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("antd-mobile", "Menu.defaultProps")
   @js.native
   def defaultProps: Data = js.native
-  @scala.inline
-  def defaultProps_=(x: Data): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Data): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

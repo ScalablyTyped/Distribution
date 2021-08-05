@@ -14,25 +14,19 @@ trait DimensionOrderBy extends StObject {
 }
 object DimensionOrderBy {
   
-  @scala.inline
-  def apply(): DimensionOrderBy = {
+  inline def apply(): DimensionOrderBy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DimensionOrderBy]
   }
   
-  @scala.inline
-  implicit class DimensionOrderByMutableBuilder[Self <: DimensionOrderBy] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionOrderBy](x: Self) {
     
-    @scala.inline
-    def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
+    inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
+    inline def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
     
-    @scala.inline
-    def setOrderType(value: String): Self = StObject.set(x, "orderType", value.asInstanceOf[js.Any])
+    inline def setOrderType(value: String): Self = StObject.set(x, "orderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderTypeUndefined: Self = StObject.set(x, "orderType", js.undefined)
+    inline def setOrderTypeUndefined: Self = StObject.set(x, "orderType", js.undefined)
   }
 }

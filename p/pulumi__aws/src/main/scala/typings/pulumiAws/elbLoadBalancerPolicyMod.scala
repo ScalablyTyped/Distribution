@@ -61,21 +61,16 @@ object elbLoadBalancerPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LoadBalancerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LoadBalancerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LoadBalancerPolicyState): LoadBalancerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LoadBalancerPolicyState, opts: CustomResourceOptions): LoadBalancerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerPolicy]
+    inline def get(name: String, id: Input[ID]): LoadBalancerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LoadBalancerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerPolicy]
+    inline def get(name: String, id: Input[ID], state: LoadBalancerPolicyState): LoadBalancerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerPolicy]
+    inline def get(name: String, id: Input[ID], state: LoadBalancerPolicyState, opts: CustomResourceOptions): LoadBalancerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerPolicy]
     
     /**
       * Returns true if the given object is an instance of LoadBalancerPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/loadBalancerPolicy.LoadBalancerPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elb/loadBalancerPolicy.LoadBalancerPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/loadBalancerPolicy.LoadBalancerPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elb/loadBalancerPolicy.LoadBalancerPolicy */ Boolean]
   }
   
   trait LoadBalancerPolicyArgs extends StObject {
@@ -106,36 +101,28 @@ object elbLoadBalancerPolicyMod {
   }
   object LoadBalancerPolicyArgs {
     
-    @scala.inline
-    def apply(loadBalancerName: Input[String], policyName: Input[String], policyTypeName: Input[String]): LoadBalancerPolicyArgs = {
+    inline def apply(loadBalancerName: Input[String], policyName: Input[String], policyTypeName: Input[String]): LoadBalancerPolicyArgs = {
       val __obj = js.Dynamic.literal(loadBalancerName = loadBalancerName.asInstanceOf[js.Any], policyName = policyName.asInstanceOf[js.Any], policyTypeName = policyTypeName.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadBalancerPolicyArgs]
     }
     
-    @scala.inline
-    implicit class LoadBalancerPolicyArgsMutableBuilder[Self <: LoadBalancerPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LoadBalancerPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setLoadBalancerName(value: Input[String]): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
+      inline def setLoadBalancerName(value: Input[String]): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyAttributes(
+      inline def setPolicyAttributes(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.elb.LoadBalancerPolicyPolicyAttribute]]
             ]
       ): Self = StObject.set(x, "policyAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyAttributesUndefined: Self = StObject.set(x, "policyAttributes", js.undefined)
+      inline def setPolicyAttributesUndefined: Self = StObject.set(x, "policyAttributes", js.undefined)
       
-      @scala.inline
-      def setPolicyAttributesVarargs(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerPolicyPolicyAttribute]*): Self = StObject.set(x, "policyAttributes", js.Array(value :_*))
+      inline def setPolicyAttributesVarargs(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerPolicyPolicyAttribute]*): Self = StObject.set(x, "policyAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setPolicyName(value: Input[String]): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+      inline def setPolicyName(value: Input[String]): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyTypeName(value: Input[String]): Self = StObject.set(x, "policyTypeName", value.asInstanceOf[js.Any])
+      inline def setPolicyTypeName(value: Input[String]): Self = StObject.set(x, "policyTypeName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -167,45 +154,34 @@ object elbLoadBalancerPolicyMod {
   }
   object LoadBalancerPolicyState {
     
-    @scala.inline
-    def apply(): LoadBalancerPolicyState = {
+    inline def apply(): LoadBalancerPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoadBalancerPolicyState]
     }
     
-    @scala.inline
-    implicit class LoadBalancerPolicyStateMutableBuilder[Self <: LoadBalancerPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: LoadBalancerPolicyState](x: Self) {
       
-      @scala.inline
-      def setLoadBalancerName(value: Input[String]): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
+      inline def setLoadBalancerName(value: Input[String]): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancerNameUndefined: Self = StObject.set(x, "loadBalancerName", js.undefined)
+      inline def setLoadBalancerNameUndefined: Self = StObject.set(x, "loadBalancerName", js.undefined)
       
-      @scala.inline
-      def setPolicyAttributes(
+      inline def setPolicyAttributes(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.elb.LoadBalancerPolicyPolicyAttribute]]
             ]
       ): Self = StObject.set(x, "policyAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyAttributesUndefined: Self = StObject.set(x, "policyAttributes", js.undefined)
+      inline def setPolicyAttributesUndefined: Self = StObject.set(x, "policyAttributes", js.undefined)
       
-      @scala.inline
-      def setPolicyAttributesVarargs(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerPolicyPolicyAttribute]*): Self = StObject.set(x, "policyAttributes", js.Array(value :_*))
+      inline def setPolicyAttributesVarargs(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerPolicyPolicyAttribute]*): Self = StObject.set(x, "policyAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setPolicyName(value: Input[String]): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+      inline def setPolicyName(value: Input[String]): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
+      inline def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
       
-      @scala.inline
-      def setPolicyTypeName(value: Input[String]): Self = StObject.set(x, "policyTypeName", value.asInstanceOf[js.Any])
+      inline def setPolicyTypeName(value: Input[String]): Self = StObject.set(x, "policyTypeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyTypeNameUndefined: Self = StObject.set(x, "policyTypeName", js.undefined)
+      inline def setPolicyTypeNameUndefined: Self = StObject.set(x, "policyTypeName", js.undefined)
     }
   }
 }

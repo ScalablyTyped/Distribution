@@ -30,31 +30,23 @@ trait ParamsResourceGrouplicenseusersList
 }
 object ParamsResourceGrouplicenseusersList {
   
-  @scala.inline
-  def apply(): ParamsResourceGrouplicenseusersList = {
+  inline def apply(): ParamsResourceGrouplicenseusersList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceGrouplicenseusersList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceGrouplicenseusersListMutableBuilder[Self <: ParamsResourceGrouplicenseusersList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceGrouplicenseusersList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
+    inline def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
+    inline def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
     
-    @scala.inline
-    def setGroupLicenseId(value: String): Self = StObject.set(x, "groupLicenseId", value.asInstanceOf[js.Any])
+    inline def setGroupLicenseId(value: String): Self = StObject.set(x, "groupLicenseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupLicenseIdUndefined: Self = StObject.set(x, "groupLicenseId", js.undefined)
+    inline def setGroupLicenseIdUndefined: Self = StObject.set(x, "groupLicenseId", js.undefined)
   }
 }

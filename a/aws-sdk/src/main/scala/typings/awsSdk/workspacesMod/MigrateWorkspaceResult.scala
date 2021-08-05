@@ -18,25 +18,19 @@ trait MigrateWorkspaceResult extends StObject {
 }
 object MigrateWorkspaceResult {
   
-  @scala.inline
-  def apply(): MigrateWorkspaceResult = {
+  inline def apply(): MigrateWorkspaceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MigrateWorkspaceResult]
   }
   
-  @scala.inline
-  implicit class MigrateWorkspaceResultMutableBuilder[Self <: MigrateWorkspaceResult] (val x: Self) extends AnyVal {
+  extension [Self <: MigrateWorkspaceResult](x: Self) {
     
-    @scala.inline
-    def setSourceWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "SourceWorkspaceId", value.asInstanceOf[js.Any])
+    inline def setSourceWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "SourceWorkspaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceWorkspaceIdUndefined: Self = StObject.set(x, "SourceWorkspaceId", js.undefined)
+    inline def setSourceWorkspaceIdUndefined: Self = StObject.set(x, "SourceWorkspaceId", js.undefined)
     
-    @scala.inline
-    def setTargetWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "TargetWorkspaceId", value.asInstanceOf[js.Any])
+    inline def setTargetWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "TargetWorkspaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetWorkspaceIdUndefined: Self = StObject.set(x, "TargetWorkspaceId", js.undefined)
+    inline def setTargetWorkspaceIdUndefined: Self = StObject.set(x, "TargetWorkspaceId", js.undefined)
   }
 }

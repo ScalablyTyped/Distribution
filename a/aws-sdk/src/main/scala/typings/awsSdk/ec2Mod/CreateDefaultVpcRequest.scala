@@ -13,19 +13,15 @@ trait CreateDefaultVpcRequest extends StObject {
 }
 object CreateDefaultVpcRequest {
   
-  @scala.inline
-  def apply(): CreateDefaultVpcRequest = {
+  inline def apply(): CreateDefaultVpcRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDefaultVpcRequest]
   }
   
-  @scala.inline
-  implicit class CreateDefaultVpcRequestMutableBuilder[Self <: CreateDefaultVpcRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDefaultVpcRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

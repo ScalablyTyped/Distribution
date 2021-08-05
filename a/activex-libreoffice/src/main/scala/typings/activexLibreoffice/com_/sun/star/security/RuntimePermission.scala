@@ -16,16 +16,13 @@ trait RuntimePermission extends StObject {
 }
 object RuntimePermission {
   
-  @scala.inline
-  def apply(Name: String): RuntimePermission = {
+  inline def apply(Name: String): RuntimePermission = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimePermission]
   }
   
-  @scala.inline
-  implicit class RuntimePermissionMutableBuilder[Self <: RuntimePermission] (val x: Self) extends AnyVal {
+  extension [Self <: RuntimePermission](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

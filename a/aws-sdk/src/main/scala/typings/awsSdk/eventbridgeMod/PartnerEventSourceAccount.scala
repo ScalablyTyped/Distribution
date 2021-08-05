@@ -28,37 +28,27 @@ trait PartnerEventSourceAccount extends StObject {
 }
 object PartnerEventSourceAccount {
   
-  @scala.inline
-  def apply(): PartnerEventSourceAccount = {
+  inline def apply(): PartnerEventSourceAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartnerEventSourceAccount]
   }
   
-  @scala.inline
-  implicit class PartnerEventSourceAccountMutableBuilder[Self <: PartnerEventSourceAccount] (val x: Self) extends AnyVal {
+  extension [Self <: PartnerEventSourceAccount](x: Self) {
     
-    @scala.inline
-    def setAccount(value: AccountId): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: AccountId): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setExpirationTime(value: Timestamp): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: Timestamp): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
+    inline def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
     
-    @scala.inline
-    def setState(value: EventSourceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: EventSourceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

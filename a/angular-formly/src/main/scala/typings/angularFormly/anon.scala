@@ -22,38 +22,28 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(): Dictkey = {
+    inline def apply(): Dictkey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setAttribute(value: js.Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: js.Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      @scala.inline
-      def setBound(value: js.Any): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
+      inline def setBound(value: js.Any): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundUndefined: Self = StObject.set(x, "bound", js.undefined)
+      inline def setBoundUndefined: Self = StObject.set(x, "bound", js.undefined)
       
-      @scala.inline
-      def setExpression(value: js.Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: js.Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+      inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -82,32 +72,24 @@ object anon {
   }
   object ErrorExistsAndShouldBeVisible {
     
-    @scala.inline
-    def apply(): ErrorExistsAndShouldBeVisible = {
+    inline def apply(): ErrorExistsAndShouldBeVisible = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorExistsAndShouldBeVisible]
     }
     
-    @scala.inline
-    implicit class ErrorExistsAndShouldBeVisibleMutableBuilder[Self <: ErrorExistsAndShouldBeVisible] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorExistsAndShouldBeVisible](x: Self) {
       
-      @scala.inline
-      def setErrorExistsAndShouldBeVisible(value: Boolean): Self = StObject.set(x, "errorExistsAndShouldBeVisible", value.asInstanceOf[js.Any])
+      inline def setErrorExistsAndShouldBeVisible(value: Boolean): Self = StObject.set(x, "errorExistsAndShouldBeVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorExistsAndShouldBeVisibleUndefined: Self = StObject.set(x, "errorExistsAndShouldBeVisible", js.undefined)
+      inline def setErrorExistsAndShouldBeVisibleUndefined: Self = StObject.set(x, "errorExistsAndShouldBeVisible", js.undefined)
       
-      @scala.inline
-      def setMessages(value: StringDictionary[IExpressionFunction | String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: StringDictionary[IExpressionFunction | String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     }
   }
 }

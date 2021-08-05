@@ -14,13 +14,13 @@ object rowTransformerValidatorMod {
   @js.native
   class RowTransformerValidator[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */] () extends StObject {
     
-    var _rowTransform: js.Any = js.native
+    /* private */ var _rowTransform: js.Any = js.native
     
-    var _rowValidator: js.Any = js.native
+    /* private */ var _rowValidator: js.Any = js.native
     
-    var callTransformer: js.Any = js.native
+    /* private */ var callTransformer: js.Any = js.native
     
-    var callValidator: js.Any = js.native
+    /* private */ var callValidator: js.Any = js.native
     
     def rowTransform_=(transformFunction: RowTransformFunction[I, O]): Unit = js.native
     
@@ -38,13 +38,11 @@ object rowTransformerValidatorMod {
     @JSImport("@fast-csv/parse/build/src/transforms/RowTransformerValidator", "RowTransformerValidator.createTransform")
     @js.native
     def createTransform: js.Any = js.native
-    @scala.inline
-    def createTransform_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTransform")(x.asInstanceOf[js.Any])
+    inline def createTransform_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTransform")(x.asInstanceOf[js.Any])
     
     @JSImport("@fast-csv/parse/build/src/transforms/RowTransformerValidator", "RowTransformerValidator.createValidator")
     @js.native
     def createValidator: js.Any = js.native
-    @scala.inline
-    def createValidator_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createValidator")(x.asInstanceOf[js.Any])
+    inline def createValidator_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createValidator")(x.asInstanceOf[js.Any])
   }
 }

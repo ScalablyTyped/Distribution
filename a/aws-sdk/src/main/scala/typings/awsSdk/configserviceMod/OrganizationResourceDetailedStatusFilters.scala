@@ -18,25 +18,19 @@ trait OrganizationResourceDetailedStatusFilters extends StObject {
 }
 object OrganizationResourceDetailedStatusFilters {
   
-  @scala.inline
-  def apply(): OrganizationResourceDetailedStatusFilters = {
+  inline def apply(): OrganizationResourceDetailedStatusFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrganizationResourceDetailedStatusFilters]
   }
   
-  @scala.inline
-  implicit class OrganizationResourceDetailedStatusFiltersMutableBuilder[Self <: OrganizationResourceDetailedStatusFilters] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationResourceDetailedStatusFilters](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: OrganizationResourceDetailedStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OrganizationResourceDetailedStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

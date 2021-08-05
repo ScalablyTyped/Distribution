@@ -11,19 +11,15 @@ trait PickTimepickershowView extends StObject {
 }
 object PickTimepickershowView {
   
-  @scala.inline
-  def apply(): PickTimepickershowView = {
+  inline def apply(): PickTimepickershowView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickTimepickershowView]
   }
   
-  @scala.inline
-  implicit class PickTimepickershowViewMutableBuilder[Self <: PickTimepickershowView] (val x: Self) extends AnyVal {
+  extension [Self <: PickTimepickershowView](x: Self) {
     
-    @scala.inline
-    def setShowView(value: js.Any): Self = StObject.set(x, "showView", value.asInstanceOf[js.Any])
+    inline def setShowView(value: js.Any): Self = StObject.set(x, "showView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowViewUndefined: Self = StObject.set(x, "showView", js.undefined)
+    inline def setShowViewUndefined: Self = StObject.set(x, "showView", js.undefined)
   }
 }

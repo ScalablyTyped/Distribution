@@ -15,19 +15,15 @@ trait Plugin extends StObject {
 }
 object Plugin {
   
-  @scala.inline
-  def apply(appId: String, version: String): Plugin = {
+  inline def apply(appId: String, version: String): Plugin = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plugin]
   }
   
-  @scala.inline
-  implicit class PluginMutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
+  extension [Self <: Plugin](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -22,19 +22,15 @@ trait ResourceRequirements extends StObject {
 }
 object ResourceRequirements {
   
-  @scala.inline
-  def apply(limits: StringDictionary[String], requests: StringDictionary[String]): ResourceRequirements = {
+  inline def apply(limits: StringDictionary[String], requests: StringDictionary[String]): ResourceRequirements = {
     val __obj = js.Dynamic.literal(limits = limits.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceRequirements]
   }
   
-  @scala.inline
-  implicit class ResourceRequirementsMutableBuilder[Self <: ResourceRequirements] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceRequirements](x: Self) {
     
-    @scala.inline
-    def setLimits(value: StringDictionary[String]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: StringDictionary[String]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequests(value: StringDictionary[String]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: StringDictionary[String]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
   }
 }

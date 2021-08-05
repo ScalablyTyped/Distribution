@@ -103,73 +103,51 @@ trait VictoryScatterProps
 }
 object VictoryScatterProps {
   
-  @scala.inline
-  def apply(): VictoryScatterProps = {
+  inline def apply(): VictoryScatterProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryScatterProps]
   }
   
-  @scala.inline
-  implicit class VictoryScatterPropsMutableBuilder[Self <: VictoryScatterProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryScatterProps](x: Self) {
     
-    @scala.inline
-    def setBubbleProperty(value: String): Self = StObject.set(x, "bubbleProperty", value.asInstanceOf[js.Any])
+    inline def setBubbleProperty(value: String): Self = StObject.set(x, "bubbleProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBubblePropertyUndefined: Self = StObject.set(x, "bubbleProperty", js.undefined)
+    inline def setBubblePropertyUndefined: Self = StObject.set(x, "bubbleProperty", js.undefined)
     
-    @scala.inline
-    def setEventKey(value: StringOrNumberOrCallback): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+    inline def setEventKey(value: StringOrNumberOrCallback): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "eventKey", js.Any.fromFunction1(value))
+    inline def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "eventKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
+    inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
     
-    @scala.inline
-    def setEvents(value: js.Array[EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback])*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback])*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxBubbleSize(value: Double): Self = StObject.set(x, "maxBubbleSize", value.asInstanceOf[js.Any])
+    inline def setMaxBubbleSize(value: Double): Self = StObject.set(x, "maxBubbleSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBubbleSizeUndefined: Self = StObject.set(x, "maxBubbleSize", js.undefined)
+    inline def setMaxBubbleSizeUndefined: Self = StObject.set(x, "maxBubbleSize", js.undefined)
     
-    @scala.inline
-    def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
+    inline def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
+    inline def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double | (js.Function1[/* data */ js.Any, Double])): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double | (js.Function1[/* data */ js.Any, Double])): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeFunction1(value: /* data */ js.Any => Double): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
+    inline def setSizeFunction1(value: /* data */ js.Any => Double): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStyle(value: VictoryStyleInterface): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: VictoryStyleInterface): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: ScatterSymbolType | (js.Function1[/* data */ js.Any, ScatterSymbolType])): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: ScatterSymbolType | (js.Function1[/* data */ js.Any, ScatterSymbolType])): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolFunction1(value: /* data */ js.Any => ScatterSymbolType): Self = StObject.set(x, "symbol", js.Any.fromFunction1(value))
+    inline def setSymbolFunction1(value: /* data */ js.Any => ScatterSymbolType): Self = StObject.set(x, "symbol", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

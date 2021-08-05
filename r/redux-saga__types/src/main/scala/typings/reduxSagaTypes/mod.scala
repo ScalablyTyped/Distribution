@@ -50,26 +50,20 @@ object mod {
   }
   object Buffer {
     
-    @scala.inline
-    def apply[T](flush: () => js.Array[T], isEmpty: () => Boolean, put: T => Unit, take: () => js.UndefOr[T]): Buffer[T] = {
+    inline def apply[T](flush: () => js.Array[T], isEmpty: () => Boolean, put: T => Unit, take: () => js.UndefOr[T]): Buffer[T] = {
       val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), isEmpty = js.Any.fromFunction0(isEmpty), put = js.Any.fromFunction1(put), take = js.Any.fromFunction0(take))
       __obj.asInstanceOf[Buffer[T]]
     }
     
-    @scala.inline
-    implicit class BufferMutableBuilder[Self <: Buffer[?], T] (val x: Self & Buffer[T]) extends AnyVal {
+    extension [Self <: Buffer[?], T](x: Self & Buffer[T]) {
       
-      @scala.inline
-      def setFlush(value: () => js.Array[T]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => js.Array[T]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPut(value: T => Unit): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
+      inline def setPut(value: T => Unit): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTake(value: () => js.UndefOr[T]): Self = StObject.set(x, "take", js.Any.fromFunction0(value))
+      inline def setTake(value: () => js.UndefOr[T]): Self = StObject.set(x, "take", js.Any.fromFunction0(value))
     }
   }
   
@@ -130,31 +124,24 @@ object mod {
   }
   object CombinatorEffect {
     
-    @scala.inline
-    def apply[T, E](payload: CombinatorEffectDescriptor[E], `type`: T): CombinatorEffect[T, E] = {
+    inline def apply[T, E](payload: CombinatorEffectDescriptor[E], `type`: T): CombinatorEffect[T, E] = {
       val __obj = js.Dynamic.literal(combinator = true, payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("@@redux-saga/IO")(true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CombinatorEffect[T, E]]
     }
     
-    @scala.inline
-    implicit class CombinatorEffectMutableBuilder[Self <: CombinatorEffect[?, ?], T, E] (val x: Self & (CombinatorEffect[T, E])) extends AnyVal {
+    extension [Self <: CombinatorEffect[?, ?], T, E](x: Self & (CombinatorEffect[T, E])) {
       
-      @scala.inline
-      def `set@@redux-sagaSlashIO`(value: `true`): Self = StObject.set(x, "@@redux-saga/IO", value.asInstanceOf[js.Any])
+      inline def `set@@redux-sagaSlashIO`(value: `true`): Self = StObject.set(x, "@@redux-saga/IO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCombinator(value: `true`): Self = StObject.set(x, "combinator", value.asInstanceOf[js.Any])
+      inline def setCombinator(value: `true`): Self = StObject.set(x, "combinator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: CombinatorEffectDescriptor[E]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: CombinatorEffectDescriptor[E]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadVarargs(value: E*): Self = StObject.set(x, "payload", js.Array(value :_*))
+      inline def setPayloadVarargs(value: E*): Self = StObject.set(x, "payload", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,18 +153,15 @@ object mod {
   }
   object END {
     
-    @scala.inline
-    def apply(): END = {
+    inline def apply(): END = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("@@redux-saga/CHANNEL_END")
       __obj.asInstanceOf[END]
     }
     
-    @scala.inline
-    implicit class ENDMutableBuilder[Self <: END] (val x: Self) extends AnyVal {
+    extension [Self <: END](x: Self) {
       
-      @scala.inline
-      def setType(value: `@@redux-sagaSlashCHANNEL_END`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `@@redux-sagaSlashCHANNEL_END`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,28 +190,22 @@ object mod {
   }
   object SimpleEffect {
     
-    @scala.inline
-    def apply[T, P](payload: P, `type`: T): SimpleEffect[T, P] = {
+    inline def apply[T, P](payload: P, `type`: T): SimpleEffect[T, P] = {
       val __obj = js.Dynamic.literal(combinator = false, payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("@@redux-saga/IO")(true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SimpleEffect[T, P]]
     }
     
-    @scala.inline
-    implicit class SimpleEffectMutableBuilder[Self <: SimpleEffect[?, ?], T, P] (val x: Self & (SimpleEffect[T, P])) extends AnyVal {
+    extension [Self <: SimpleEffect[?, ?], T, P](x: Self & (SimpleEffect[T, P])) {
       
-      @scala.inline
-      def `set@@redux-sagaSlashIO`(value: `true`): Self = StObject.set(x, "@@redux-saga/IO", value.asInstanceOf[js.Any])
+      inline def `set@@redux-sagaSlashIO`(value: `true`): Self = StObject.set(x, "@@redux-saga/IO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCombinator(value: `false`): Self = StObject.set(x, "combinator", value.asInstanceOf[js.Any])
+      inline def setCombinator(value: `false`): Self = StObject.set(x, "combinator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: P): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: P): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -236,8 +214,7 @@ object mod {
        with CombinatorEffect[T, StrictEffect[T]]
   object StrictCombinatorEffect {
     
-    @scala.inline
-    def apply[T](payload: CombinatorEffectDescriptor[StrictEffect[T]], `type`: T): StrictCombinatorEffect[T] = {
+    inline def apply[T](payload: CombinatorEffectDescriptor[StrictEffect[T]], `type`: T): StrictCombinatorEffect[T] = {
       val __obj = js.Dynamic.literal(combinator = true, payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("@@redux-saga/IO")(true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -293,8 +270,7 @@ object mod {
   }
   object Task {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancel: () => Unit,
       error: () => js.UndefOr[js.Any],
       isCancelled: () => Boolean,
@@ -307,29 +283,21 @@ object mod {
       __obj.asInstanceOf[Task]
     }
     
-    @scala.inline
-    implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
+    extension [Self <: Task](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
+      inline def setError(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCancelled(value: () => Boolean): Self = StObject.set(x, "isCancelled", js.Any.fromFunction0(value))
+      inline def setIsCancelled(value: () => Boolean): Self = StObject.set(x, "isCancelled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRunning(value: () => Boolean): Self = StObject.set(x, "isRunning", js.Any.fromFunction0(value))
+      inline def setIsRunning(value: () => Boolean): Self = StObject.set(x, "isRunning", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResult(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "result", js.Any.fromFunction0(value))
+      inline def setResult(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "result", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetContext(value: Partial[js.Any] => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+      inline def setSetContext(value: Partial[js.Any] => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToPromise(value: () => js.Promise[js.Any]): Self = StObject.set(x, "toPromise", js.Any.fromFunction0(value))
+      inline def setToPromise(value: () => js.Promise[js.Any]): Self = StObject.set(x, "toPromise", js.Any.fromFunction0(value))
     }
   }
 }

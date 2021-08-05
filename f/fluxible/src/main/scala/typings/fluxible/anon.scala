@@ -66,8 +66,7 @@ object anon {
   }
   object Create {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       create: (String, js.Any, js.Any, js.Function2[/* error */ Error, /* data */ js.Any, Unit]) => Unit,
       delete: (String, js.Any, js.Function2[/* error */ Error, /* data */ js.Any, Unit]) => Unit,
       read: (String, js.Any, js.Function2[/* error */ Error, /* data */ js.Any, Unit]) => Unit,
@@ -77,20 +76,15 @@ object anon {
       __obj.asInstanceOf[Create]
     }
     
-    @scala.inline
-    implicit class CreateMutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
+    extension [Self <: Create](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (String, js.Any, js.Any, js.Function2[/* error */ Error, /* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
+      inline def setCreate(value: (String, js.Any, js.Any, js.Function2[/* error */ Error, /* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setDelete(value: (String, js.Any, js.Function2[/* error */ Error, /* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction3(value))
+      inline def setDelete(value: (String, js.Any, js.Function2[/* error */ Error, /* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRead(value: (String, js.Any, js.Function2[/* error */ Error, /* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
+      inline def setRead(value: (String, js.Any, js.Function2[/* error */ Error, /* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUpdate(value: (String, js.Any, js.Any, js.Function2[/* error */ Error, /* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
+      inline def setUpdate(value: (String, js.Any, js.Any, js.Function2[/* error */ Error, /* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
     }
   }
   

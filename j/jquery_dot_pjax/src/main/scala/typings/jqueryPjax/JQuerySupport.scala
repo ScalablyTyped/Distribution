@@ -13,16 +13,13 @@ trait JQuerySupport extends StObject {
 }
 object JQuerySupport {
   
-  @scala.inline
-  def apply(pjax: Boolean): JQuerySupport = {
+  inline def apply(pjax: Boolean): JQuerySupport = {
     val __obj = js.Dynamic.literal(pjax = pjax.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuerySupport]
   }
   
-  @scala.inline
-  implicit class JQuerySupportMutableBuilder[Self <: JQuerySupport] (val x: Self) extends AnyVal {
+  extension [Self <: JQuerySupport](x: Self) {
     
-    @scala.inline
-    def setPjax(value: Boolean): Self = StObject.set(x, "pjax", value.asInstanceOf[js.Any])
+    inline def setPjax(value: Boolean): Self = StObject.set(x, "pjax", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ trait Map[E, M /* <: /* import warning: transforms.QualifyReferences#resolveType
 }
 object Map {
   
-  @scala.inline
-  def apply[E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+  inline def apply[E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
     _E: E,
     ap: (TheseT2[M, js.Any, E, js.Function1[js.Any, js.Any]], TheseT2[M, js.Any, E, js.Any]) => TheseT2[M, js.Any, E, js.Any],
     chain: (TheseT2[M, js.Any, E, js.Any], js.Function1[js.Any, TheseT2[M, js.Any, E, js.Any]]) => TheseT2[M, js.Any, E, js.Any],
@@ -31,28 +30,22 @@ object Map {
     __obj.asInstanceOf[Map[E, M]]
   }
   
-  @scala.inline
-  implicit class MapMutableBuilder[Self <: Map[?, ?], E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & (Map[E, M])) extends AnyVal {
+  extension [Self <: Map[?, ?], E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & (Map[E, M])) {
     
-    @scala.inline
-    def setAp(
+    inline def setAp(
       value: (TheseT2[M, js.Any, E, js.Function1[js.Any, js.Any]], TheseT2[M, js.Any, E, js.Any]) => TheseT2[M, js.Any, E, js.Any]
     ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChain(
+    inline def setChain(
       value: (TheseT2[M, js.Any, E, js.Any], js.Function1[js.Any, TheseT2[M, js.Any, E, js.Any]]) => TheseT2[M, js.Any, E, js.Any]
     ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMap(
+    inline def setMap(
       value: (TheseT2[M, js.Any, E, js.Any], js.Function1[js.Any, js.Any]) => TheseT2[M, js.Any, E, js.Any]
     ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOf(value: js.Any => TheseT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+    inline def setOf(value: js.Any => TheseT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_E(value: E): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
+    inline def set_E(value: E): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
   }
 }

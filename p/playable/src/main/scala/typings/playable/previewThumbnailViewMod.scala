@@ -17,21 +17,21 @@ object previewThumbnailViewMod {
   trait PreviewThumbnailView
     extends typings.playable.viewMod.default[IPreviewThumbnailViewStyles] {
     
-    @JSName("_$highQualityThumb")
+    /* private */ @JSName("_$highQualityThumb")
     var _$highQualityThumb: js.Any = js.native
     
-    @JSName("_$lowQualityThumb")
+    /* private */ @JSName("_$lowQualityThumb")
     var _$lowQualityThumb: js.Any = js.native
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    @JSName("_$timeText")
+    /* private */ @JSName("_$timeText")
     var _$timeText: js.Any = js.native
     
-    var _applyQualityToThumbElement: js.Any = js.native
+    /* private */ var _applyQualityToThumbElement: js.Any = js.native
     
-    var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: js.Any = js.native
     
     def clearHighQualityPreview(): Unit = js.native
     

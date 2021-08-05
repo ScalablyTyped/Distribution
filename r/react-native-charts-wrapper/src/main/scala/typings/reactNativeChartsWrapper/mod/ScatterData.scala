@@ -10,19 +10,15 @@ trait ScatterData extends StObject {
 }
 object ScatterData {
   
-  @scala.inline
-  def apply(dataSets: js.Array[ScatterDataset]): ScatterData = {
+  inline def apply(dataSets: js.Array[ScatterDataset]): ScatterData = {
     val __obj = js.Dynamic.literal(dataSets = dataSets.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScatterData]
   }
   
-  @scala.inline
-  implicit class ScatterDataMutableBuilder[Self <: ScatterData] (val x: Self) extends AnyVal {
+  extension [Self <: ScatterData](x: Self) {
     
-    @scala.inline
-    def setDataSets(value: js.Array[ScatterDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
+    inline def setDataSets(value: js.Array[ScatterDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetsVarargs(value: ScatterDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+    inline def setDataSetsVarargs(value: ScatterDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
   }
 }

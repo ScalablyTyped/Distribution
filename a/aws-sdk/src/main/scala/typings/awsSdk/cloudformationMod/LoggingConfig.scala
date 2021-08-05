@@ -18,19 +18,15 @@ trait LoggingConfig extends StObject {
 }
 object LoggingConfig {
   
-  @scala.inline
-  def apply(LogGroupName: LogGroupName, LogRoleArn: RoleArn): LoggingConfig = {
+  inline def apply(LogGroupName: LogGroupName, LogRoleArn: RoleArn): LoggingConfig = {
     val __obj = js.Dynamic.literal(LogGroupName = LogGroupName.asInstanceOf[js.Any], LogRoleArn = LogRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingConfig]
   }
   
-  @scala.inline
-  implicit class LoggingConfigMutableBuilder[Self <: LoggingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingConfig](x: Self) {
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogRoleArn(value: RoleArn): Self = StObject.set(x, "LogRoleArn", value.asInstanceOf[js.Any])
+    inline def setLogRoleArn(value: RoleArn): Self = StObject.set(x, "LogRoleArn", value.asInstanceOf[js.Any])
   }
 }

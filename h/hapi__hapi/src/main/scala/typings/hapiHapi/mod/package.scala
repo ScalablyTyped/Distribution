@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def server(): typings.hapiHapi.mod.Server_ = typings.hapiHapi.mod.^.asInstanceOf[js.Dynamic].applyDynamic("server")().asInstanceOf[typings.hapiHapi.mod.Server_]
-@scala.inline
-def server(opts: typings.hapiHapi.mod.ServerOptions): typings.hapiHapi.mod.Server_ = typings.hapiHapi.mod.^.asInstanceOf[js.Dynamic].applyDynamic("server")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.hapiHapi.mod.Server_]
+inline def server(): typings.hapiHapi.mod.Server_ = typings.hapiHapi.mod.^.asInstanceOf[js.Dynamic].applyDynamic("server")().asInstanceOf[typings.hapiHapi.mod.Server_]
+inline def server(opts: typings.hapiHapi.mod.ServerOptions): typings.hapiHapi.mod.Server_ = typings.hapiHapi.mod.^.asInstanceOf[js.Dynamic].applyDynamic("server")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.hapiHapi.mod.Server_]
 
 type CachePolicyOptions[T] = typings.hapiCatbox.mod.PolicyOptionVariants[T] & typings.hapiHapi.anon.Cache
 

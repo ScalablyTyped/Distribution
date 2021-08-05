@@ -12,8 +12,7 @@ object scaleTransitionMod {
   
   object ScaleTransition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasVisibleChildrenPropClassNamesVerticalTimeoutPortalPortalIntoPortalIntoIdMountOnEnterUnmountOnExitProps: ScaleTransitionProps
     ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasVisibleChildrenPropClassNamesVerticalTimeoutPortalPortalIntoPortalIntoIdMountOnEnterUnmountOnExitProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
@@ -30,20 +29,17 @@ object scaleTransitionMod {
       @JSImport("@react-md/transition/types/ScaleTransition", "ScaleTransition.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition/types/ScaleTransition", "ScaleTransition.propTypes.classNames")
       @js.native
       def classNames: js.Any = js.native
-      @scala.inline
-      def classNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classNames")(x.asInstanceOf[js.Any])
+      inline def classNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classNames")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition/types/ScaleTransition", "ScaleTransition.propTypes.mountOnEnter")
       @js.native
       def mountOnEnter: js.Any = js.native
-      @scala.inline
-      def mountOnEnter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mountOnEnter")(x.asInstanceOf[js.Any])
+      inline def mountOnEnter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mountOnEnter")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition/types/ScaleTransition", "ScaleTransition.propTypes.portal")
       @js.native
@@ -56,38 +52,31 @@ object scaleTransitionMod {
       @JSImport("@react-md/transition/types/ScaleTransition", "ScaleTransition.propTypes.portalIntoId")
       @js.native
       def portalIntoId: js.Any = js.native
-      @scala.inline
-      def portalIntoId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalIntoId")(x.asInstanceOf[js.Any])
+      inline def portalIntoId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalIntoId")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def portalInto_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalInto")(x.asInstanceOf[js.Any])
+      inline def portalInto_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalInto")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def portal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portal")(x.asInstanceOf[js.Any])
+      inline def portal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portal")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition/types/ScaleTransition", "ScaleTransition.propTypes.timeout")
       @js.native
       def timeout: js.Any = js.native
-      @scala.inline
-      def timeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+      inline def timeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition/types/ScaleTransition", "ScaleTransition.propTypes.unmountOnExit")
       @js.native
       def unmountOnExit: js.Any = js.native
-      @scala.inline
-      def unmountOnExit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unmountOnExit")(x.asInstanceOf[js.Any])
+      inline def unmountOnExit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unmountOnExit")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition/types/ScaleTransition", "ScaleTransition.propTypes.vertical")
       @js.native
       def vertical: js.Any = js.native
-      @scala.inline
-      def vertical_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vertical")(x.asInstanceOf[js.Any])
+      inline def vertical_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vertical")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition/types/ScaleTransition", "ScaleTransition.propTypes.visible")
       @js.native
       def visible: js.Any = js.native
-      @scala.inline
-      def visible_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("visible")(x.asInstanceOf[js.Any])
+      inline def visible_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("visible")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -116,29 +105,22 @@ object scaleTransitionMod {
   }
   object ScaleTransitionProps {
     
-    @scala.inline
-    def apply(visible: Boolean): ScaleTransitionProps = {
+    inline def apply(visible: Boolean): ScaleTransitionProps = {
       val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScaleTransitionProps]
     }
     
-    @scala.inline
-    implicit class ScaleTransitionPropsMutableBuilder[Self <: ScaleTransitionProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScaleTransitionProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -44,8 +44,7 @@ trait Logger extends StObject {
 }
 object Logger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     debug: (String, /* repeated */ js.Any) => LogEntry,
     download: () => Unit,
     error: (String, /* repeated */ js.Any) => LogEntry,
@@ -56,22 +55,16 @@ object Logger {
     __obj.asInstanceOf[Logger]
   }
   
-  @scala.inline
-  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+  extension [Self <: Logger](x: Self) {
     
-    @scala.inline
-    def setDebug(value: (String, /* repeated */ js.Any) => LogEntry): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
+    inline def setDebug(value: (String, /* repeated */ js.Any) => LogEntry): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDownload(value: () => Unit): Self = StObject.set(x, "download", js.Any.fromFunction0(value))
+    inline def setDownload(value: () => Unit): Self = StObject.set(x, "download", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setError(value: (String, /* repeated */ js.Any) => LogEntry): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+    inline def setError(value: (String, /* repeated */ js.Any) => LogEntry): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInfo(value: (String, /* repeated */ js.Any) => LogEntry): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+    inline def setInfo(value: (String, /* repeated */ js.Any) => LogEntry): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWarn(value: (String, /* repeated */ js.Any) => LogEntry): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
+    inline def setWarn(value: (String, /* repeated */ js.Any) => LogEntry): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
   }
 }

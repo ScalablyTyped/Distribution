@@ -23,43 +23,31 @@ trait IosTest extends StObject {
 }
 object IosTest {
   
-  @scala.inline
-  def apply(): IosTest = {
+  inline def apply(): IosTest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosTest]
   }
   
-  @scala.inline
-  implicit class IosTestMutableBuilder[Self <: IosTest] (val x: Self) extends AnyVal {
+  extension [Self <: IosTest](x: Self) {
     
-    @scala.inline
-    def setIosAppInfo(value: IosAppInfo): Self = StObject.set(x, "iosAppInfo", value.asInstanceOf[js.Any])
+    inline def setIosAppInfo(value: IosAppInfo): Self = StObject.set(x, "iosAppInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosAppInfoUndefined: Self = StObject.set(x, "iosAppInfo", js.undefined)
+    inline def setIosAppInfoUndefined: Self = StObject.set(x, "iosAppInfo", js.undefined)
     
-    @scala.inline
-    def setIosRoboTest(value: js.Any): Self = StObject.set(x, "iosRoboTest", value.asInstanceOf[js.Any])
+    inline def setIosRoboTest(value: js.Any): Self = StObject.set(x, "iosRoboTest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosRoboTestUndefined: Self = StObject.set(x, "iosRoboTest", js.undefined)
+    inline def setIosRoboTestUndefined: Self = StObject.set(x, "iosRoboTest", js.undefined)
     
-    @scala.inline
-    def setIosTestLoop(value: IosTestLoop): Self = StObject.set(x, "iosTestLoop", value.asInstanceOf[js.Any])
+    inline def setIosTestLoop(value: IosTestLoop): Self = StObject.set(x, "iosTestLoop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosTestLoopUndefined: Self = StObject.set(x, "iosTestLoop", js.undefined)
+    inline def setIosTestLoopUndefined: Self = StObject.set(x, "iosTestLoop", js.undefined)
     
-    @scala.inline
-    def setIosXcTest(value: IosXcTest): Self = StObject.set(x, "iosXcTest", value.asInstanceOf[js.Any])
+    inline def setIosXcTest(value: IosXcTest): Self = StObject.set(x, "iosXcTest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosXcTestUndefined: Self = StObject.set(x, "iosXcTest", js.undefined)
+    inline def setIosXcTestUndefined: Self = StObject.set(x, "iosXcTest", js.undefined)
     
-    @scala.inline
-    def setTestTimeout(value: Duration): Self = StObject.set(x, "testTimeout", value.asInstanceOf[js.Any])
+    inline def setTestTimeout(value: Duration): Self = StObject.set(x, "testTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestTimeoutUndefined: Self = StObject.set(x, "testTimeout", js.undefined)
+    inline def setTestTimeoutUndefined: Self = StObject.set(x, "testTimeout", js.undefined)
   }
 }

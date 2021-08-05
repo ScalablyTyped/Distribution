@@ -13,19 +13,15 @@ trait RegisterCertificateResult extends StObject {
 }
 object RegisterCertificateResult {
   
-  @scala.inline
-  def apply(): RegisterCertificateResult = {
+  inline def apply(): RegisterCertificateResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterCertificateResult]
   }
   
-  @scala.inline
-  implicit class RegisterCertificateResultMutableBuilder[Self <: RegisterCertificateResult] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterCertificateResult](x: Self) {
     
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateIdUndefined: Self = StObject.set(x, "CertificateId", js.undefined)
+    inline def setCertificateIdUndefined: Self = StObject.set(x, "CertificateId", js.undefined)
   }
 }

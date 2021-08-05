@@ -30,37 +30,27 @@ trait GoogleActionsV2OrdersLineItemUpdate extends StObject {
 }
 object GoogleActionsV2OrdersLineItemUpdate {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersLineItemUpdate = {
+  inline def apply(): GoogleActionsV2OrdersLineItemUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersLineItemUpdate]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersLineItemUpdateMutableBuilder[Self <: GoogleActionsV2OrdersLineItemUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersLineItemUpdate](x: Self) {
     
-    @scala.inline
-    def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setOrderState(value: GoogleActionsV2OrdersOrderState): Self = StObject.set(x, "orderState", value.asInstanceOf[js.Any])
+    inline def setOrderState(value: GoogleActionsV2OrdersOrderState): Self = StObject.set(x, "orderState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderStateUndefined: Self = StObject.set(x, "orderState", js.undefined)
+    inline def setOrderStateUndefined: Self = StObject.set(x, "orderState", js.undefined)
     
-    @scala.inline
-    def setPrice(value: GoogleActionsV2OrdersPrice): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: GoogleActionsV2OrdersPrice): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
+    inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

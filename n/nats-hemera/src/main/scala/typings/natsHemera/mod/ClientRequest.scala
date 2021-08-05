@@ -18,25 +18,19 @@ trait ClientRequest extends StObject {
 }
 object ClientRequest {
   
-  @scala.inline
-  def apply(error: Error, pattern: ClientPattern, payload: HemeraMessagePayload, transport: ExpectedMessages): ClientRequest = {
+  inline def apply(error: Error, pattern: ClientPattern, payload: HemeraMessagePayload, transport: ExpectedMessages): ClientRequest = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientRequest]
   }
   
-  @scala.inline
-  implicit class ClientRequestMutableBuilder[Self <: ClientRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ClientRequest](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: ClientPattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: ClientPattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: HemeraMessagePayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: HemeraMessagePayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransport(value: ExpectedMessages): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+    inline def setTransport(value: ExpectedMessages): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
   }
 }

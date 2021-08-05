@@ -28,61 +28,43 @@ trait DiagnosticInfo extends StObject {
 }
 object DiagnosticInfo {
   
-  @scala.inline
-  def apply(code: Double, diagnosticIndex: Double, message: String, pos: Double, warning: Boolean): DiagnosticInfo = {
+  inline def apply(code: Double, diagnosticIndex: Double, message: String, pos: Double, warning: Boolean): DiagnosticInfo = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], diagnosticIndex = diagnosticIndex.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticInfo]
   }
   
-  @scala.inline
-  implicit class DiagnosticInfoMutableBuilder[Self <: DiagnosticInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DiagnosticInfo](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticIndex(value: Double): Self = StObject.set(x, "diagnosticIndex", value.asInstanceOf[js.Any])
+    inline def setDiagnosticIndex(value: Double): Self = StObject.set(x, "diagnosticIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedMessage(value: String): Self = StObject.set(x, "formattedMessage", value.asInstanceOf[js.Any])
+    inline def setFormattedMessage(value: String): Self = StObject.set(x, "formattedMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedMessageUndefined: Self = StObject.set(x, "formattedMessage", js.undefined)
+    inline def setFormattedMessageUndefined: Self = StObject.set(x, "formattedMessage", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageArguments(value: js.Array[js.Any]): Self = StObject.set(x, "messageArguments", value.asInstanceOf[js.Any])
+    inline def setMessageArguments(value: js.Array[js.Any]): Self = StObject.set(x, "messageArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageArgumentsUndefined: Self = StObject.set(x, "messageArguments", js.undefined)
+    inline def setMessageArgumentsUndefined: Self = StObject.set(x, "messageArguments", js.undefined)
     
-    @scala.inline
-    def setMessageArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "messageArguments", js.Array(value :_*))
+    inline def setMessageArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "messageArguments", js.Array(value :_*))
     
-    @scala.inline
-    def setNode(value: Node2[SyntaxKind]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Node2[SyntaxKind]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    @scala.inline
-    def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range2): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range2): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setSourceFile(value: SourceFile): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
+    inline def setSourceFile(value: SourceFile): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFileUndefined: Self = StObject.set(x, "sourceFile", js.undefined)
+    inline def setSourceFileUndefined: Self = StObject.set(x, "sourceFile", js.undefined)
     
-    @scala.inline
-    def setWarning(value: Boolean): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Boolean): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
   }
 }

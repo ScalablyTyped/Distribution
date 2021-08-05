@@ -56,8 +56,7 @@ trait XCloseable
 }
 object XCloseable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addCloseListener: XCloseListener => Unit,
     close: Boolean => Unit,
@@ -69,10 +68,8 @@ object XCloseable {
     __obj.asInstanceOf[XCloseable]
   }
   
-  @scala.inline
-  implicit class XCloseableMutableBuilder[Self <: XCloseable] (val x: Self) extends AnyVal {
+  extension [Self <: XCloseable](x: Self) {
     
-    @scala.inline
-    def setClose(value: Boolean => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    inline def setClose(value: Boolean => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
   }
 }

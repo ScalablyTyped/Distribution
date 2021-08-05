@@ -16,25 +16,19 @@ trait Dur extends StObject {
 }
 object Dur {
   
-  @scala.inline
-  def apply(circles: Double, dur: Double, elmDuration: Boolean, fn: () => Cx): Dur = {
+  inline def apply(circles: Double, dur: Double, elmDuration: Boolean, fn: () => Cx): Dur = {
     val __obj = js.Dynamic.literal(circles = circles.asInstanceOf[js.Any], dur = dur.asInstanceOf[js.Any], elmDuration = elmDuration.asInstanceOf[js.Any], fn = js.Any.fromFunction0(fn))
     __obj.asInstanceOf[Dur]
   }
   
-  @scala.inline
-  implicit class DurMutableBuilder[Self <: Dur] (val x: Self) extends AnyVal {
+  extension [Self <: Dur](x: Self) {
     
-    @scala.inline
-    def setCircles(value: Double): Self = StObject.set(x, "circles", value.asInstanceOf[js.Any])
+    inline def setCircles(value: Double): Self = StObject.set(x, "circles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDur(value: Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
+    inline def setDur(value: Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElmDuration(value: Boolean): Self = StObject.set(x, "elmDuration", value.asInstanceOf[js.Any])
+    inline def setElmDuration(value: Boolean): Self = StObject.set(x, "elmDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFn(value: () => Cx): Self = StObject.set(x, "fn", js.Any.fromFunction0(value))
+    inline def setFn(value: () => Cx): Self = StObject.set(x, "fn", js.Any.fromFunction0(value))
   }
 }

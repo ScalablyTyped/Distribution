@@ -10,19 +10,15 @@ trait AnnotationsFibonacciTypeLineOptions extends StObject {
 }
 object AnnotationsFibonacciTypeLineOptions {
   
-  @scala.inline
-  def apply(): AnnotationsFibonacciTypeLineOptions = {
+  inline def apply(): AnnotationsFibonacciTypeLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsFibonacciTypeLineOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsFibonacciTypeLineOptionsMutableBuilder[Self <: AnnotationsFibonacciTypeLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsFibonacciTypeLineOptions](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

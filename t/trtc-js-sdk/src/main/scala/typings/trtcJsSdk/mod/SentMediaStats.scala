@@ -14,19 +14,15 @@ trait SentMediaStats extends StObject {
 }
 object SentMediaStats {
   
-  @scala.inline
-  def apply(bytesSent: Double, packetsSent: Double): SentMediaStats = {
+  inline def apply(bytesSent: Double, packetsSent: Double): SentMediaStats = {
     val __obj = js.Dynamic.literal(bytesSent = bytesSent.asInstanceOf[js.Any], packetsSent = packetsSent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SentMediaStats]
   }
   
-  @scala.inline
-  implicit class SentMediaStatsMutableBuilder[Self <: SentMediaStats] (val x: Self) extends AnyVal {
+  extension [Self <: SentMediaStats](x: Self) {
     
-    @scala.inline
-    def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
+    inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketsSent(value: Double): Self = StObject.set(x, "packetsSent", value.asInstanceOf[js.Any])
+    inline def setPacketsSent(value: Double): Self = StObject.set(x, "packetsSent", value.asInstanceOf[js.Any])
   }
 }

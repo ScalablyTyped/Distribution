@@ -10,8 +10,7 @@ trait PoolConfig
      with ConnectionConfig
 object PoolConfig {
   
-  @scala.inline
-  def apply(): PoolConfig = {
+  inline def apply(): PoolConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PoolConfig]
   }

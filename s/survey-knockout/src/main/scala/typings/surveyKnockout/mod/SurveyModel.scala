@@ -2290,6 +2290,5 @@ object SurveyModel {
   @JSImport("survey-knockout", "SurveyModel.platform")
   @js.native
   def platform: String = js.native
-  @scala.inline
-  def platform_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("platform")(x.asInstanceOf[js.Any])
+  inline def platform_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("platform")(x.asInstanceOf[js.Any])
 }

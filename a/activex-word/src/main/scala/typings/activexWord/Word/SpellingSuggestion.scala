@@ -14,13 +14,12 @@ trait SpellingSuggestion extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.SpellingSuggestion_typekey")
+  /* private */ @JSName("Word.SpellingSuggestion_typekey")
   var WordDotSpellingSuggestion_typekey: SpellingSuggestion
 }
 object SpellingSuggestion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Name: String,
@@ -32,22 +31,16 @@ object SpellingSuggestion {
     __obj.asInstanceOf[SpellingSuggestion]
   }
   
-  @scala.inline
-  implicit class SpellingSuggestionMutableBuilder[Self <: SpellingSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: SpellingSuggestion](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotSpellingSuggestion_typekey(value: SpellingSuggestion): Self = StObject.set(x, "Word.SpellingSuggestion_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotSpellingSuggestion_typekey(value: SpellingSuggestion): Self = StObject.set(x, "Word.SpellingSuggestion_typekey", value.asInstanceOf[js.Any])
   }
 }

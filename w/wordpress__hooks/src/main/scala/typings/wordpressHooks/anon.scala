@@ -113,8 +113,7 @@ object anon {
   }
   object Actions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actions: HookMap[ActionCallback],
       addAction: (/* hookName */ String, /* namespace */ String, /* callback */ js.Function1[/* repeated */ js.Any, Unit], /* priority */ js.UndefOr[Double]) => Unit,
       addFilter: FnCall,
@@ -138,64 +137,45 @@ object anon {
       __obj.asInstanceOf[Actions]
     }
     
-    @scala.inline
-    implicit class ActionsMutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
+    extension [Self <: Actions](x: Self) {
       
-      @scala.inline
-      def setActions(value: HookMap[ActionCallback]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: HookMap[ActionCallback]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddAction(
+      inline def setAddAction(
         value: (/* hookName */ String, /* namespace */ String, /* callback */ js.Function1[/* repeated */ js.Any, Unit], /* priority */ js.UndefOr[Double]) => Unit
       ): Self = StObject.set(x, "addAction", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setAddFilter(value: FnCall): Self = StObject.set(x, "addFilter", value.asInstanceOf[js.Any])
+      inline def setAddFilter(value: FnCall): Self = StObject.set(x, "addFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyFilters(value: RunHook): Self = StObject.set(x, "applyFilters", value.asInstanceOf[js.Any])
+      inline def setApplyFilters(value: RunHook): Self = StObject.set(x, "applyFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentAction(value: () => String | Null): Self = StObject.set(x, "currentAction", js.Any.fromFunction0(value))
+      inline def setCurrentAction(value: () => String | Null): Self = StObject.set(x, "currentAction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCurrentFilter(value: () => String | Null): Self = StObject.set(x, "currentFilter", js.Any.fromFunction0(value))
+      inline def setCurrentFilter(value: () => String | Null): Self = StObject.set(x, "currentFilter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDidAction(value: /* hookName */ String => Double): Self = StObject.set(x, "didAction", js.Any.fromFunction1(value))
+      inline def setDidAction(value: /* hookName */ String => Double): Self = StObject.set(x, "didAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDidFilter(value: /* hookName */ String => Double): Self = StObject.set(x, "didFilter", js.Any.fromFunction1(value))
+      inline def setDidFilter(value: /* hookName */ String => Double): Self = StObject.set(x, "didFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDoAction(value: RunHook): Self = StObject.set(x, "doAction", value.asInstanceOf[js.Any])
+      inline def setDoAction(value: RunHook): Self = StObject.set(x, "doAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoingAction(value: /* hookName */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "doingAction", js.Any.fromFunction1(value))
+      inline def setDoingAction(value: /* hookName */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "doingAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDoingFilter(value: /* hookName */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "doingFilter", js.Any.fromFunction1(value))
+      inline def setDoingFilter(value: /* hookName */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "doingFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilters(value: HookMap[FilterCallback]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: HookMap[FilterCallback]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasAction(value: /* hookName */ String => Boolean): Self = StObject.set(x, "hasAction", js.Any.fromFunction1(value))
+      inline def setHasAction(value: /* hookName */ String => Boolean): Self = StObject.set(x, "hasAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasFilter(value: /* hookName */ String => Boolean): Self = StObject.set(x, "hasFilter", js.Any.fromFunction1(value))
+      inline def setHasFilter(value: /* hookName */ String => Boolean): Self = StObject.set(x, "hasFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveAction(value: (/* hookName */ String, /* namespace */ String) => Double): Self = StObject.set(x, "removeAction", js.Any.fromFunction2(value))
+      inline def setRemoveAction(value: (/* hookName */ String, /* namespace */ String) => Double): Self = StObject.set(x, "removeAction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveAllActions(value: (/* hookName */ String, /* namespace */ String) => Double): Self = StObject.set(x, "removeAllActions", js.Any.fromFunction2(value))
+      inline def setRemoveAllActions(value: (/* hookName */ String, /* namespace */ String) => Double): Self = StObject.set(x, "removeAllActions", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveAllFilters(value: (/* hookName */ String, /* namespace */ String) => Double): Self = StObject.set(x, "removeAllFilters", js.Any.fromFunction2(value))
+      inline def setRemoveAllFilters(value: (/* hookName */ String, /* namespace */ String) => Double): Self = StObject.set(x, "removeAllFilters", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveFilter(value: (/* hookName */ String, /* namespace */ String) => Double): Self = StObject.set(x, "removeFilter", js.Any.fromFunction2(value))
+      inline def setRemoveFilter(value: (/* hookName */ String, /* namespace */ String) => Double): Self = StObject.set(x, "removeFilter", js.Any.fromFunction2(value))
     }
   }
   
@@ -205,20 +185,16 @@ object anon {
   }
   object Current {
     
-    @scala.inline
-    def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](__current: js.Array[T]): Current[T] = {
+    inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](__current: js.Array[T]): Current[T] = {
       val __obj = js.Dynamic.literal(__current = __current.asInstanceOf[js.Any])
       __obj.asInstanceOf[Current[T]]
     }
     
-    @scala.inline
-    implicit class CurrentMutableBuilder[Self <: Current[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & Current[T]) extends AnyVal {
+    extension [Self <: Current[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & Current[T]) {
       
-      @scala.inline
-      def set__current(value: js.Array[T]): Self = StObject.set(x, "__current", value.asInstanceOf[js.Any])
+      inline def set__current(value: js.Array[T]): Self = StObject.set(x, "__current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__currentVarargs(value: T*): Self = StObject.set(x, "__current", js.Array(value :_*))
+      inline def set__currentVarargs(value: T*): Self = StObject.set(x, "__current", js.Array(value :_*))
     }
   }
   

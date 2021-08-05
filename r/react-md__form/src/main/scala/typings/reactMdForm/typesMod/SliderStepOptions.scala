@@ -17,19 +17,15 @@ trait SliderStepOptions
 }
 object SliderStepOptions {
   
-  @scala.inline
-  def apply(): SliderStepOptions = {
+  inline def apply(): SliderStepOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SliderStepOptions]
   }
   
-  @scala.inline
-  implicit class SliderStepOptionsMutableBuilder[Self <: SliderStepOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SliderStepOptions](x: Self) {
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

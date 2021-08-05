@@ -27,67 +27,67 @@ object componentMod {
     /**
       * Place more objects just behind this Component's Content by appending them to the _backgroundContainer.
       */
-    var _backgroundContainer: js.Any = js.native
+    /* private */ var _backgroundContainer: js.Any = js.native
     
     /**
       * Container for the visual content that this Component displays. Subclasses should attach
       * elements onto the _content. Located in between the background and the foreground.
       */
-    var _content: js.Any = js.native
+    /* private */ var _content: js.Any = js.native
     
-    var _cssClasses: js.Any = js.native
+    /* private */ var _cssClasses: js.Any = js.native
     
     /**
       * If .destroy() has been called on this Component.
       */
-    var _destroyed: js.Any = js.native
+    /* private */ var _destroyed: js.Any = js.native
     
     /**
       * Holds all the DOM associated with this component. A direct child of the element we're
       * anchored to.
       */
-    var _element: js.Any = js.native
+    /* private */ var _element: js.Any = js.native
     
     /**
       * Place more objects just in front of this Component's Content by appending them to the _foregroundContainer.
       */
-    var _foregroundContainer: js.Any = js.native
+    /* private */ var _foregroundContainer: js.Any = js.native
     
     /**
       * height of the Component as computed in computeLayout. Used to size the hitbox, bounding box, etc
       */
-    var _height: js.Any = js.native
+    /* private */ var _height: js.Any = js.native
     
-    var _isAnchored: Boolean = js.native
+    /* protected */ var _isAnchored: Boolean = js.native
     
-    var _isSetup: Boolean = js.native
+    /* protected */ var _isSetup: Boolean = js.native
     
-    var _onAnchorCallbacks: js.Any = js.native
+    /* private */ var _onAnchorCallbacks: js.Any = js.native
     
-    var _onDetachCallbacks: js.Any = js.native
+    /* private */ var _onDetachCallbacks: js.Any = js.native
     
     /**
       * Origin of this Component relative to its parent.
       */
-    var _origin: js.Any = js.native
+    /* private */ var _origin: js.Any = js.native
     
     /**
       * Subclasses should set this to true in their constructor to prevent content from overflowing.
       */
-    var _overflowHidden: Boolean = js.native
+    /* protected */ var _overflowHidden: Boolean = js.native
     
     /**
       * The ComponentContainer that holds this Component in its children, or null, if this
       * Component is top-level.
       */
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
-    var _resizeHandler: js.Any = js.native
+    /* private */ var _resizeHandler: js.Any = js.native
     
     /**
       * If we're the root Component (top-level), this is the HTMLElement we've anchored to (user-supplied).
       */
-    var _rootElement: js.Any = js.native
+    /* private */ var _rootElement: js.Any = js.native
     
     /* private */ def _scheduleComputeLayout(): js.Any = js.native
     
@@ -103,11 +103,11 @@ object componentMod {
     /**
       * width of the Component as computed in computeLayout. Used to size the hitbox, bounding box, etc
       */
-    var _width: js.Any = js.native
+    /* private */ var _width: js.Any = js.native
     
-    var _xAlignment: js.Any = js.native
+    /* private */ var _xAlignment: js.Any = js.native
     
-    var _yAlignment: js.Any = js.native
+    /* private */ var _yAlignment: js.Any = js.native
     
     /**
       * Adds a given CSS class to the Component.
@@ -422,14 +422,12 @@ object componentMod {
     @JSImport("plottable/build/src/components/component", "Component._xAlignToProportion")
     @js.native
     def _xAlignToProportion: js.Any = js.native
-    @scala.inline
-    def _xAlignToProportion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_xAlignToProportion")(x.asInstanceOf[js.Any])
+    inline def _xAlignToProportion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_xAlignToProportion")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/components/component", "Component._yAlignToProportion")
     @js.native
     def _yAlignToProportion: js.Any = js.native
-    @scala.inline
-    def _yAlignToProportion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_yAlignToProportion")(x.asInstanceOf[js.Any])
+    inline def _yAlignToProportion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_yAlignToProportion")(x.asInstanceOf[js.Any])
   }
   
   /* keyof plottable.anon.Center */ /* Rewritten from type alias, can be one of: 
@@ -447,20 +445,17 @@ object componentMod {
     @JSImport("plottable/build/src/components/component", "XAlignment.center")
     @js.native
     def center: typings.plottable.plottableStrings.center = js.native
-    @scala.inline
-    def center_=(x: center): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("center")(x.asInstanceOf[js.Any])
+    inline def center_=(x: center): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("center")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/components/component", "XAlignment.left")
     @js.native
     def left: typings.plottable.plottableStrings.left = js.native
-    @scala.inline
-    def left_=(x: left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
+    inline def left_=(x: left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/components/component", "XAlignment.right")
     @js.native
     def right: typings.plottable.plottableStrings.right = js.native
-    @scala.inline
-    def right_=(x: right): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
+    inline def right_=(x: right): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
   }
   
   /* keyof plottable.anon.BottomCenter */ /* Rewritten from type alias, can be one of: 
@@ -478,20 +473,17 @@ object componentMod {
     @JSImport("plottable/build/src/components/component", "YAlignment.bottom")
     @js.native
     def bottom: typings.plottable.plottableStrings.bottom = js.native
-    @scala.inline
-    def bottom_=(x: bottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
+    inline def bottom_=(x: bottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/components/component", "YAlignment.center")
     @js.native
     def center: typings.plottable.plottableStrings.center = js.native
-    @scala.inline
-    def center_=(x: center): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("center")(x.asInstanceOf[js.Any])
+    inline def center_=(x: center): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("center")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/components/component", "YAlignment.top")
     @js.native
     def top: typings.plottable.plottableStrings.top = js.native
-    @scala.inline
-    def top_=(x: top): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
+    inline def top_=(x: top): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
   }
   
   type ComponentCallback = js.Function1[/* component */ Component, Unit]

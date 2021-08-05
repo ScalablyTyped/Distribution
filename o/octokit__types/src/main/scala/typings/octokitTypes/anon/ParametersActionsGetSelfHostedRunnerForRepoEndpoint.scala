@@ -18,8 +18,7 @@ trait ParametersActionsGetSelfHostedRunnerForRepoEndpoint extends StObject {
 }
 object ParametersActionsGetSelfHostedRunnerForRepoEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsGetSelfHostedRunnerForRepoEndpoint,
     request: ActionsGetSelfHostedRunnerForRepoRequestOptions,
     response: OctokitResponse[ActionsGetSelfHostedRunnerForRepoResponseData]
@@ -28,16 +27,12 @@ object ParametersActionsGetSelfHostedRunnerForRepoEndpoint {
     __obj.asInstanceOf[ParametersActionsGetSelfHostedRunnerForRepoEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsGetSelfHostedRunnerForRepoEndpointMutableBuilder[Self <: ParametersActionsGetSelfHostedRunnerForRepoEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsGetSelfHostedRunnerForRepoEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsGetSelfHostedRunnerForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsGetSelfHostedRunnerForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActionsGetSelfHostedRunnerForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActionsGetSelfHostedRunnerForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsGetSelfHostedRunnerForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActionsGetSelfHostedRunnerForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ object ftpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(parsed: UrlWithStringQuery, opts: FTPOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parsed.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
+  inline def default(parsed: UrlWithStringQuery, opts: FTPOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parsed.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
   
   trait FTPOptions
     extends StObject
@@ -28,20 +27,16 @@ object ftpMod {
   }
   object FTPOptions {
     
-    @scala.inline
-    def apply(): FTPOptions = {
+    inline def apply(): FTPOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FTPOptions]
     }
     
-    @scala.inline
-    implicit class FTPOptionsMutableBuilder[Self <: FTPOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FTPOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: FTPReadable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: FTPReadable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     }
   }
   

@@ -23,31 +23,23 @@ trait FailedCreateWorkspaceRequest extends StObject {
 }
 object FailedCreateWorkspaceRequest {
   
-  @scala.inline
-  def apply(): FailedCreateWorkspaceRequest = {
+  inline def apply(): FailedCreateWorkspaceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailedCreateWorkspaceRequest]
   }
   
-  @scala.inline
-  implicit class FailedCreateWorkspaceRequestMutableBuilder[Self <: FailedCreateWorkspaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FailedCreateWorkspaceRequest](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: ErrorType): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorType): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: Description): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: Description): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setWorkspaceRequest(value: WorkspaceRequest): Self = StObject.set(x, "WorkspaceRequest", value.asInstanceOf[js.Any])
+    inline def setWorkspaceRequest(value: WorkspaceRequest): Self = StObject.set(x, "WorkspaceRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceRequestUndefined: Self = StObject.set(x, "WorkspaceRequest", js.undefined)
+    inline def setWorkspaceRequestUndefined: Self = StObject.set(x, "WorkspaceRequest", js.undefined)
   }
 }

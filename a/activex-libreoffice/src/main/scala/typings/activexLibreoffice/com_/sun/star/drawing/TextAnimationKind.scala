@@ -21,12 +21,10 @@ trait TextAnimationKind extends StObject
 object TextAnimationKind {
   
   /** Scroll the text from one side to the other and back. */
-  @scala.inline
-  def ALTERNATE: `3` = 3.asInstanceOf[`3`]
+  inline def ALTERNATE: `3` = 3.asInstanceOf[`3`]
   
   /** Let this text switch its state from visible to invisible continuously. */
-  @scala.inline
-  def BLINK: `1` = 1.asInstanceOf[`1`]
+  inline def BLINK: `1` = 1.asInstanceOf[`1`]
   
   /**
     * the area is not filled.
@@ -41,14 +39,11 @@ object TextAnimationKind {
     *
     * the text size is only defined by the font properties
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /** Let this text scroll. */
-  @scala.inline
-  def SCROLL: `2` = 2.asInstanceOf[`2`]
+  inline def SCROLL: `2` = 2.asInstanceOf[`2`]
   
   /** Scroll the text from one side to the final position and stop there. */
-  @scala.inline
-  def SLIDE: `4` = 4.asInstanceOf[`4`]
+  inline def SLIDE: `4` = 4.asInstanceOf[`4`]
 }

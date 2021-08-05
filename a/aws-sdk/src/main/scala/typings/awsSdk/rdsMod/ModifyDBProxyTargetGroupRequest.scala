@@ -28,31 +28,23 @@ trait ModifyDBProxyTargetGroupRequest extends StObject {
 }
 object ModifyDBProxyTargetGroupRequest {
   
-  @scala.inline
-  def apply(DBProxyName: String, TargetGroupName: String): ModifyDBProxyTargetGroupRequest = {
+  inline def apply(DBProxyName: String, TargetGroupName: String): ModifyDBProxyTargetGroupRequest = {
     val __obj = js.Dynamic.literal(DBProxyName = DBProxyName.asInstanceOf[js.Any], TargetGroupName = TargetGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyDBProxyTargetGroupRequest]
   }
   
-  @scala.inline
-  implicit class ModifyDBProxyTargetGroupRequestMutableBuilder[Self <: ModifyDBProxyTargetGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyDBProxyTargetGroupRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionPoolConfig(value: ConnectionPoolConfiguration): Self = StObject.set(x, "ConnectionPoolConfig", value.asInstanceOf[js.Any])
+    inline def setConnectionPoolConfig(value: ConnectionPoolConfiguration): Self = StObject.set(x, "ConnectionPoolConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionPoolConfigUndefined: Self = StObject.set(x, "ConnectionPoolConfig", js.undefined)
+    inline def setConnectionPoolConfigUndefined: Self = StObject.set(x, "ConnectionPoolConfig", js.undefined)
     
-    @scala.inline
-    def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
+    inline def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewName(value: String): Self = StObject.set(x, "NewName", value.asInstanceOf[js.Any])
+    inline def setNewName(value: String): Self = StObject.set(x, "NewName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewNameUndefined: Self = StObject.set(x, "NewName", js.undefined)
+    inline def setNewNameUndefined: Self = StObject.set(x, "NewName", js.undefined)
     
-    @scala.inline
-    def setTargetGroupName(value: String): Self = StObject.set(x, "TargetGroupName", value.asInstanceOf[js.Any])
+    inline def setTargetGroupName(value: String): Self = StObject.set(x, "TargetGroupName", value.asInstanceOf[js.Any])
   }
 }

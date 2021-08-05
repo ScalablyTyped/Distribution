@@ -13,19 +13,15 @@ trait RevokeClientVpnIngressResult extends StObject {
 }
 object RevokeClientVpnIngressResult {
   
-  @scala.inline
-  def apply(): RevokeClientVpnIngressResult = {
+  inline def apply(): RevokeClientVpnIngressResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevokeClientVpnIngressResult]
   }
   
-  @scala.inline
-  implicit class RevokeClientVpnIngressResultMutableBuilder[Self <: RevokeClientVpnIngressResult] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeClientVpnIngressResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: ClientVpnAuthorizationRuleStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ClientVpnAuthorizationRuleStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

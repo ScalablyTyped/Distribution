@@ -275,8 +275,7 @@ trait Docs extends StObject {
 }
 object Docs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newAutoText: () => AutoText,
     newBackground: () => Background,
     newBatchUpdateDocumentRequest: () => BatchUpdateDocumentRequest,
@@ -384,212 +383,143 @@ object Docs {
     }
   }
   
-  @scala.inline
-  implicit class DocsMutableBuilder[Self <: Docs] (val x: Self) extends AnyVal {
+  extension [Self <: Docs](x: Self) {
     
-    @scala.inline
-    def setDocuments(value: DocumentsCollection): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: DocumentsCollection): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsUndefined: Self = StObject.set(x, "Documents", js.undefined)
+    inline def setDocumentsUndefined: Self = StObject.set(x, "Documents", js.undefined)
     
-    @scala.inline
-    def setNewAutoText(value: () => AutoText): Self = StObject.set(x, "newAutoText", js.Any.fromFunction0(value))
+    inline def setNewAutoText(value: () => AutoText): Self = StObject.set(x, "newAutoText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewBackground(value: () => Background): Self = StObject.set(x, "newBackground", js.Any.fromFunction0(value))
+    inline def setNewBackground(value: () => Background): Self = StObject.set(x, "newBackground", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewBatchUpdateDocumentRequest(value: () => BatchUpdateDocumentRequest): Self = StObject.set(x, "newBatchUpdateDocumentRequest", js.Any.fromFunction0(value))
+    inline def setNewBatchUpdateDocumentRequest(value: () => BatchUpdateDocumentRequest): Self = StObject.set(x, "newBatchUpdateDocumentRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewBody(value: () => Body): Self = StObject.set(x, "newBody", js.Any.fromFunction0(value))
+    inline def setNewBody(value: () => Body): Self = StObject.set(x, "newBody", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewBullet(value: () => Bullet): Self = StObject.set(x, "newBullet", js.Any.fromFunction0(value))
+    inline def setNewBullet(value: () => Bullet): Self = StObject.set(x, "newBullet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewColor(value: () => Color): Self = StObject.set(x, "newColor", js.Any.fromFunction0(value))
+    inline def setNewColor(value: () => Color): Self = StObject.set(x, "newColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewColumnBreak(value: () => ColumnBreak): Self = StObject.set(x, "newColumnBreak", js.Any.fromFunction0(value))
+    inline def setNewColumnBreak(value: () => ColumnBreak): Self = StObject.set(x, "newColumnBreak", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCreateNamedRangeRequest(value: () => CreateNamedRangeRequest): Self = StObject.set(x, "newCreateNamedRangeRequest", js.Any.fromFunction0(value))
+    inline def setNewCreateNamedRangeRequest(value: () => CreateNamedRangeRequest): Self = StObject.set(x, "newCreateNamedRangeRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCreateParagraphBulletsRequest(value: () => CreateParagraphBulletsRequest): Self = StObject.set(x, "newCreateParagraphBulletsRequest", js.Any.fromFunction0(value))
+    inline def setNewCreateParagraphBulletsRequest(value: () => CreateParagraphBulletsRequest): Self = StObject.set(x, "newCreateParagraphBulletsRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDeleteContentRangeRequest(value: () => DeleteContentRangeRequest): Self = StObject.set(x, "newDeleteContentRangeRequest", js.Any.fromFunction0(value))
+    inline def setNewDeleteContentRangeRequest(value: () => DeleteContentRangeRequest): Self = StObject.set(x, "newDeleteContentRangeRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDeleteNamedRangeRequest(value: () => DeleteNamedRangeRequest): Self = StObject.set(x, "newDeleteNamedRangeRequest", js.Any.fromFunction0(value))
+    inline def setNewDeleteNamedRangeRequest(value: () => DeleteNamedRangeRequest): Self = StObject.set(x, "newDeleteNamedRangeRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDeleteParagraphBulletsRequest(value: () => DeleteParagraphBulletsRequest): Self = StObject.set(x, "newDeleteParagraphBulletsRequest", js.Any.fromFunction0(value))
+    inline def setNewDeleteParagraphBulletsRequest(value: () => DeleteParagraphBulletsRequest): Self = StObject.set(x, "newDeleteParagraphBulletsRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDeletePositionedObjectRequest(value: () => DeletePositionedObjectRequest): Self = StObject.set(x, "newDeletePositionedObjectRequest", js.Any.fromFunction0(value))
+    inline def setNewDeletePositionedObjectRequest(value: () => DeletePositionedObjectRequest): Self = StObject.set(x, "newDeletePositionedObjectRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDeleteTableColumnRequest(value: () => DeleteTableColumnRequest): Self = StObject.set(x, "newDeleteTableColumnRequest", js.Any.fromFunction0(value))
+    inline def setNewDeleteTableColumnRequest(value: () => DeleteTableColumnRequest): Self = StObject.set(x, "newDeleteTableColumnRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDeleteTableRowRequest(value: () => DeleteTableRowRequest): Self = StObject.set(x, "newDeleteTableRowRequest", js.Any.fromFunction0(value))
+    inline def setNewDeleteTableRowRequest(value: () => DeleteTableRowRequest): Self = StObject.set(x, "newDeleteTableRowRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDimension(value: () => Dimension): Self = StObject.set(x, "newDimension", js.Any.fromFunction0(value))
+    inline def setNewDimension(value: () => Dimension): Self = StObject.set(x, "newDimension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDocument(value: () => typings.googleAppsScript.GoogleAppsScript.Docs.Schema.Document): Self = StObject.set(x, "newDocument", js.Any.fromFunction0(value))
+    inline def setNewDocument(value: () => typings.googleAppsScript.GoogleAppsScript.Docs.Schema.Document): Self = StObject.set(x, "newDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDocumentStyle(value: () => DocumentStyle): Self = StObject.set(x, "newDocumentStyle", js.Any.fromFunction0(value))
+    inline def setNewDocumentStyle(value: () => DocumentStyle): Self = StObject.set(x, "newDocumentStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewEndOfSegmentLocation(value: () => EndOfSegmentLocation): Self = StObject.set(x, "newEndOfSegmentLocation", js.Any.fromFunction0(value))
+    inline def setNewEndOfSegmentLocation(value: () => EndOfSegmentLocation): Self = StObject.set(x, "newEndOfSegmentLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewEquation(value: () => Equation): Self = StObject.set(x, "newEquation", js.Any.fromFunction0(value))
+    inline def setNewEquation(value: () => Equation): Self = StObject.set(x, "newEquation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewFootnoteReference(value: () => FootnoteReference): Self = StObject.set(x, "newFootnoteReference", js.Any.fromFunction0(value))
+    inline def setNewFootnoteReference(value: () => FootnoteReference): Self = StObject.set(x, "newFootnoteReference", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewHorizontalRule(value: () => HorizontalRule): Self = StObject.set(x, "newHorizontalRule", js.Any.fromFunction0(value))
+    inline def setNewHorizontalRule(value: () => HorizontalRule): Self = StObject.set(x, "newHorizontalRule", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewInlineObjectElement(value: () => InlineObjectElement): Self = StObject.set(x, "newInlineObjectElement", js.Any.fromFunction0(value))
+    inline def setNewInlineObjectElement(value: () => InlineObjectElement): Self = StObject.set(x, "newInlineObjectElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewInsertInlineImageRequest(value: () => InsertInlineImageRequest): Self = StObject.set(x, "newInsertInlineImageRequest", js.Any.fromFunction0(value))
+    inline def setNewInsertInlineImageRequest(value: () => InsertInlineImageRequest): Self = StObject.set(x, "newInsertInlineImageRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewInsertPageBreakRequest(value: () => InsertPageBreakRequest): Self = StObject.set(x, "newInsertPageBreakRequest", js.Any.fromFunction0(value))
+    inline def setNewInsertPageBreakRequest(value: () => InsertPageBreakRequest): Self = StObject.set(x, "newInsertPageBreakRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewInsertTableRequest(value: () => InsertTableRequest): Self = StObject.set(x, "newInsertTableRequest", js.Any.fromFunction0(value))
+    inline def setNewInsertTableRequest(value: () => InsertTableRequest): Self = StObject.set(x, "newInsertTableRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewInsertTableRowRequest(value: () => InsertTableRowRequest): Self = StObject.set(x, "newInsertTableRowRequest", js.Any.fromFunction0(value))
+    inline def setNewInsertTableRowRequest(value: () => InsertTableRowRequest): Self = StObject.set(x, "newInsertTableRowRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewInsertTextRequest(value: () => InsertTextRequest): Self = StObject.set(x, "newInsertTextRequest", js.Any.fromFunction0(value))
+    inline def setNewInsertTextRequest(value: () => InsertTextRequest): Self = StObject.set(x, "newInsertTextRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLink(value: () => Link): Self = StObject.set(x, "newLink", js.Any.fromFunction0(value))
+    inline def setNewLink(value: () => Link): Self = StObject.set(x, "newLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLocation(value: () => Location): Self = StObject.set(x, "newLocation", js.Any.fromFunction0(value))
+    inline def setNewLocation(value: () => Location): Self = StObject.set(x, "newLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewNamedStyle(value: () => NamedStyle): Self = StObject.set(x, "newNamedStyle", js.Any.fromFunction0(value))
+    inline def setNewNamedStyle(value: () => NamedStyle): Self = StObject.set(x, "newNamedStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewNamedStyles(value: () => NamedStyles): Self = StObject.set(x, "newNamedStyles", js.Any.fromFunction0(value))
+    inline def setNewNamedStyles(value: () => NamedStyles): Self = StObject.set(x, "newNamedStyles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewOptionalColor(value: () => OptionalColor): Self = StObject.set(x, "newOptionalColor", js.Any.fromFunction0(value))
+    inline def setNewOptionalColor(value: () => OptionalColor): Self = StObject.set(x, "newOptionalColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPageBreak(value: () => PageBreak): Self = StObject.set(x, "newPageBreak", js.Any.fromFunction0(value))
+    inline def setNewPageBreak(value: () => PageBreak): Self = StObject.set(x, "newPageBreak", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewParagraph(value: () => Paragraph): Self = StObject.set(x, "newParagraph", js.Any.fromFunction0(value))
+    inline def setNewParagraph(value: () => Paragraph): Self = StObject.set(x, "newParagraph", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewParagraphBorder(value: () => ParagraphBorder): Self = StObject.set(x, "newParagraphBorder", js.Any.fromFunction0(value))
+    inline def setNewParagraphBorder(value: () => ParagraphBorder): Self = StObject.set(x, "newParagraphBorder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewParagraphElement(value: () => ParagraphElement): Self = StObject.set(x, "newParagraphElement", js.Any.fromFunction0(value))
+    inline def setNewParagraphElement(value: () => ParagraphElement): Self = StObject.set(x, "newParagraphElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewParagraphStyle(value: () => ParagraphStyle): Self = StObject.set(x, "newParagraphStyle", js.Any.fromFunction0(value))
+    inline def setNewParagraphStyle(value: () => ParagraphStyle): Self = StObject.set(x, "newParagraphStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewRange(value: () => Range): Self = StObject.set(x, "newRange", js.Any.fromFunction0(value))
+    inline def setNewRange(value: () => Range): Self = StObject.set(x, "newRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewReplaceAllTextRequest(value: () => ReplaceAllTextRequest): Self = StObject.set(x, "newReplaceAllTextRequest", js.Any.fromFunction0(value))
+    inline def setNewReplaceAllTextRequest(value: () => ReplaceAllTextRequest): Self = StObject.set(x, "newReplaceAllTextRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewRequest(value: () => Request): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
+    inline def setNewRequest(value: () => Request): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewRgbColor(value: () => RgbColor): Self = StObject.set(x, "newRgbColor", js.Any.fromFunction0(value))
+    inline def setNewRgbColor(value: () => RgbColor): Self = StObject.set(x, "newRgbColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSectionBreak(value: () => SectionBreak): Self = StObject.set(x, "newSectionBreak", js.Any.fromFunction0(value))
+    inline def setNewSectionBreak(value: () => SectionBreak): Self = StObject.set(x, "newSectionBreak", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSectionColumnProperties(value: () => SectionColumnProperties): Self = StObject.set(x, "newSectionColumnProperties", js.Any.fromFunction0(value))
+    inline def setNewSectionColumnProperties(value: () => SectionColumnProperties): Self = StObject.set(x, "newSectionColumnProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSectionStyle(value: () => SectionStyle): Self = StObject.set(x, "newSectionStyle", js.Any.fromFunction0(value))
+    inline def setNewSectionStyle(value: () => SectionStyle): Self = StObject.set(x, "newSectionStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewShading(value: () => Shading): Self = StObject.set(x, "newShading", js.Any.fromFunction0(value))
+    inline def setNewShading(value: () => Shading): Self = StObject.set(x, "newShading", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSize(value: () => Size): Self = StObject.set(x, "newSize", js.Any.fromFunction0(value))
+    inline def setNewSize(value: () => Size): Self = StObject.set(x, "newSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewStructuralElement(value: () => StructuralElement): Self = StObject.set(x, "newStructuralElement", js.Any.fromFunction0(value))
+    inline def setNewStructuralElement(value: () => StructuralElement): Self = StObject.set(x, "newStructuralElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSubstringMatchCriteria(value: () => SubstringMatchCriteria): Self = StObject.set(x, "newSubstringMatchCriteria", js.Any.fromFunction0(value))
+    inline def setNewSubstringMatchCriteria(value: () => SubstringMatchCriteria): Self = StObject.set(x, "newSubstringMatchCriteria", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTabStop(value: () => TabStop): Self = StObject.set(x, "newTabStop", js.Any.fromFunction0(value))
+    inline def setNewTabStop(value: () => TabStop): Self = StObject.set(x, "newTabStop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTable(value: () => Table): Self = StObject.set(x, "newTable", js.Any.fromFunction0(value))
+    inline def setNewTable(value: () => Table): Self = StObject.set(x, "newTable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableCell(value: () => TableCell): Self = StObject.set(x, "newTableCell", js.Any.fromFunction0(value))
+    inline def setNewTableCell(value: () => TableCell): Self = StObject.set(x, "newTableCell", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableCellBorder(value: () => TableCellBorder): Self = StObject.set(x, "newTableCellBorder", js.Any.fromFunction0(value))
+    inline def setNewTableCellBorder(value: () => TableCellBorder): Self = StObject.set(x, "newTableCellBorder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableCellLocation(value: () => TableCellLocation): Self = StObject.set(x, "newTableCellLocation", js.Any.fromFunction0(value))
+    inline def setNewTableCellLocation(value: () => TableCellLocation): Self = StObject.set(x, "newTableCellLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableCellStyle(value: () => TableCellStyle): Self = StObject.set(x, "newTableCellStyle", js.Any.fromFunction0(value))
+    inline def setNewTableCellStyle(value: () => TableCellStyle): Self = StObject.set(x, "newTableCellStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableColumnProperties(value: () => TableColumnProperties): Self = StObject.set(x, "newTableColumnProperties", js.Any.fromFunction0(value))
+    inline def setNewTableColumnProperties(value: () => TableColumnProperties): Self = StObject.set(x, "newTableColumnProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableOfContents(value: () => TableOfContents): Self = StObject.set(x, "newTableOfContents", js.Any.fromFunction0(value))
+    inline def setNewTableOfContents(value: () => TableOfContents): Self = StObject.set(x, "newTableOfContents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableRow(value: () => TableRow): Self = StObject.set(x, "newTableRow", js.Any.fromFunction0(value))
+    inline def setNewTableRow(value: () => TableRow): Self = StObject.set(x, "newTableRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableRowStyle(value: () => TableRowStyle): Self = StObject.set(x, "newTableRowStyle", js.Any.fromFunction0(value))
+    inline def setNewTableRowStyle(value: () => TableRowStyle): Self = StObject.set(x, "newTableRowStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableStyle(value: () => TableStyle): Self = StObject.set(x, "newTableStyle", js.Any.fromFunction0(value))
+    inline def setNewTableStyle(value: () => TableStyle): Self = StObject.set(x, "newTableStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTextRun(value: () => TextRun): Self = StObject.set(x, "newTextRun", js.Any.fromFunction0(value))
+    inline def setNewTextRun(value: () => TextRun): Self = StObject.set(x, "newTextRun", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTextStyle(value: () => TextStyle): Self = StObject.set(x, "newTextStyle", js.Any.fromFunction0(value))
+    inline def setNewTextStyle(value: () => TextStyle): Self = StObject.set(x, "newTextStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateParagraphStyleRequest(value: () => UpdateParagraphStyleRequest): Self = StObject.set(x, "newUpdateParagraphStyleRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateParagraphStyleRequest(value: () => UpdateParagraphStyleRequest): Self = StObject.set(x, "newUpdateParagraphStyleRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateTextStyleRequest(value: () => UpdateTextStyleRequest): Self = StObject.set(x, "newUpdateTextStyleRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateTextStyleRequest(value: () => UpdateTextStyleRequest): Self = StObject.set(x, "newUpdateTextStyleRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewWeightedFontFamily(value: () => WeightedFontFamily): Self = StObject.set(x, "newWeightedFontFamily", js.Any.fromFunction0(value))
+    inline def setNewWeightedFontFamily(value: () => WeightedFontFamily): Self = StObject.set(x, "newWeightedFontFamily", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewWriteControl(value: () => WriteControl): Self = StObject.set(x, "newWriteControl", js.Any.fromFunction0(value))
+    inline def setNewWriteControl(value: () => WriteControl): Self = StObject.set(x, "newWriteControl", js.Any.fromFunction0(value))
   }
   
   object Schema {
@@ -608,50 +538,36 @@ object Docs {
     }
     object AutoText {
       
-      @scala.inline
-      def apply(): AutoText = {
+      inline def apply(): AutoText = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AutoText]
       }
       
-      @scala.inline
-      implicit class AutoTextMutableBuilder[Self <: AutoText] (val x: Self) extends AnyVal {
+      extension [Self <: AutoText](x: Self) {
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
+        inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
+        inline def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
         
-        @scala.inline
-        def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+        inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+        inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -661,20 +577,16 @@ object Docs {
     }
     object Background {
       
-      @scala.inline
-      def apply(): Background = {
+      inline def apply(): Background = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Background]
       }
       
-      @scala.inline
-      implicit class BackgroundMutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
+      extension [Self <: Background](x: Self) {
         
-        @scala.inline
-        def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       }
     }
     
@@ -684,20 +596,16 @@ object Docs {
     }
     object BackgroundSuggestionState {
       
-      @scala.inline
-      def apply(): BackgroundSuggestionState = {
+      inline def apply(): BackgroundSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BackgroundSuggestionState]
       }
       
-      @scala.inline
-      implicit class BackgroundSuggestionStateMutableBuilder[Self <: BackgroundSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: BackgroundSuggestionState](x: Self) {
         
-        @scala.inline
-        def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
+        inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
+        inline def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
       }
     }
     
@@ -709,29 +617,22 @@ object Docs {
     }
     object BatchUpdateDocumentRequest {
       
-      @scala.inline
-      def apply(): BatchUpdateDocumentRequest = {
+      inline def apply(): BatchUpdateDocumentRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BatchUpdateDocumentRequest]
       }
       
-      @scala.inline
-      implicit class BatchUpdateDocumentRequestMutableBuilder[Self <: BatchUpdateDocumentRequest] (val x: Self) extends AnyVal {
+      extension [Self <: BatchUpdateDocumentRequest](x: Self) {
         
-        @scala.inline
-        def setRequests(value: js.Array[Request]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+        inline def setRequests(value: js.Array[Request]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+        inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
         
-        @scala.inline
-        def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value :_*))
+        inline def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value :_*))
         
-        @scala.inline
-        def setWriteControl(value: WriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
+        inline def setWriteControl(value: WriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
+        inline def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
       }
     }
     
@@ -745,35 +646,26 @@ object Docs {
     }
     object BatchUpdateDocumentResponse {
       
-      @scala.inline
-      def apply(): BatchUpdateDocumentResponse = {
+      inline def apply(): BatchUpdateDocumentResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BatchUpdateDocumentResponse]
       }
       
-      @scala.inline
-      implicit class BatchUpdateDocumentResponseMutableBuilder[Self <: BatchUpdateDocumentResponse] (val x: Self) extends AnyVal {
+      extension [Self <: BatchUpdateDocumentResponse](x: Self) {
         
-        @scala.inline
-        def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+        inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+        inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
         
-        @scala.inline
-        def setReplies(value: js.Array[Response]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
+        inline def setReplies(value: js.Array[Response]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
+        inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
         
-        @scala.inline
-        def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value :_*))
+        inline def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value :_*))
         
-        @scala.inline
-        def setWriteControl(value: WriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
+        inline def setWriteControl(value: WriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
+        inline def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
       }
     }
     
@@ -783,23 +675,18 @@ object Docs {
     }
     object Body {
       
-      @scala.inline
-      def apply(): Body = {
+      inline def apply(): Body = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Body]
       }
       
-      @scala.inline
-      implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+      extension [Self <: Body](x: Self) {
         
-        @scala.inline
-        def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
       }
     }
     
@@ -813,32 +700,24 @@ object Docs {
     }
     object Bullet {
       
-      @scala.inline
-      def apply(): Bullet = {
+      inline def apply(): Bullet = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Bullet]
       }
       
-      @scala.inline
-      implicit class BulletMutableBuilder[Self <: Bullet] (val x: Self) extends AnyVal {
+      extension [Self <: Bullet](x: Self) {
         
-        @scala.inline
-        def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+        inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
+        inline def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
         
-        @scala.inline
-        def setNestingLevel(value: Double): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
+        inline def setNestingLevel(value: Double): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
+        inline def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
         
-        @scala.inline
-        def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+        inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+        inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       }
     }
     
@@ -852,32 +731,24 @@ object Docs {
     }
     object BulletSuggestionState {
       
-      @scala.inline
-      def apply(): BulletSuggestionState = {
+      inline def apply(): BulletSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BulletSuggestionState]
       }
       
-      @scala.inline
-      implicit class BulletSuggestionStateMutableBuilder[Self <: BulletSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: BulletSuggestionState](x: Self) {
         
-        @scala.inline
-        def setListIdSuggested(value: Boolean): Self = StObject.set(x, "listIdSuggested", value.asInstanceOf[js.Any])
+        inline def setListIdSuggested(value: Boolean): Self = StObject.set(x, "listIdSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListIdSuggestedUndefined: Self = StObject.set(x, "listIdSuggested", js.undefined)
+        inline def setListIdSuggestedUndefined: Self = StObject.set(x, "listIdSuggested", js.undefined)
         
-        @scala.inline
-        def setNestingLevelSuggested(value: Boolean): Self = StObject.set(x, "nestingLevelSuggested", value.asInstanceOf[js.Any])
+        inline def setNestingLevelSuggested(value: Boolean): Self = StObject.set(x, "nestingLevelSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNestingLevelSuggestedUndefined: Self = StObject.set(x, "nestingLevelSuggested", js.undefined)
+        inline def setNestingLevelSuggestedUndefined: Self = StObject.set(x, "nestingLevelSuggested", js.undefined)
         
-        @scala.inline
-        def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
+        inline def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
+        inline def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
       }
     }
     
@@ -887,20 +758,16 @@ object Docs {
     }
     object Color {
       
-      @scala.inline
-      def apply(): Color = {
+      inline def apply(): Color = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Color]
       }
       
-      @scala.inline
-      implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+      extension [Self <: Color](x: Self) {
         
-        @scala.inline
-        def setRgbColor(value: RgbColor): Self = StObject.set(x, "rgbColor", value.asInstanceOf[js.Any])
+        inline def setRgbColor(value: RgbColor): Self = StObject.set(x, "rgbColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRgbColorUndefined: Self = StObject.set(x, "rgbColor", js.undefined)
+        inline def setRgbColorUndefined: Self = StObject.set(x, "rgbColor", js.undefined)
       }
     }
     
@@ -916,44 +783,32 @@ object Docs {
     }
     object ColumnBreak {
       
-      @scala.inline
-      def apply(): ColumnBreak = {
+      inline def apply(): ColumnBreak = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ColumnBreak]
       }
       
-      @scala.inline
-      implicit class ColumnBreakMutableBuilder[Self <: ColumnBreak] (val x: Self) extends AnyVal {
+      extension [Self <: ColumnBreak](x: Self) {
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
+        inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
+        inline def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
         
-        @scala.inline
-        def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+        inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+        inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       }
     }
     
@@ -965,26 +820,20 @@ object Docs {
     }
     object CreateNamedRangeRequest {
       
-      @scala.inline
-      def apply(): CreateNamedRangeRequest = {
+      inline def apply(): CreateNamedRangeRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateNamedRangeRequest]
       }
       
-      @scala.inline
-      implicit class CreateNamedRangeRequestMutableBuilder[Self <: CreateNamedRangeRequest] (val x: Self) extends AnyVal {
+      extension [Self <: CreateNamedRangeRequest](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+        inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+        inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       }
     }
     
@@ -994,20 +843,16 @@ object Docs {
     }
     object CreateNamedRangeResponse {
       
-      @scala.inline
-      def apply(): CreateNamedRangeResponse = {
+      inline def apply(): CreateNamedRangeResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateNamedRangeResponse]
       }
       
-      @scala.inline
-      implicit class CreateNamedRangeResponseMutableBuilder[Self <: CreateNamedRangeResponse] (val x: Self) extends AnyVal {
+      extension [Self <: CreateNamedRangeResponse](x: Self) {
         
-        @scala.inline
-        def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
+        inline def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
+        inline def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
       }
     }
     
@@ -1019,26 +864,20 @@ object Docs {
     }
     object CreateParagraphBulletsRequest {
       
-      @scala.inline
-      def apply(): CreateParagraphBulletsRequest = {
+      inline def apply(): CreateParagraphBulletsRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateParagraphBulletsRequest]
       }
       
-      @scala.inline
-      implicit class CreateParagraphBulletsRequestMutableBuilder[Self <: CreateParagraphBulletsRequest] (val x: Self) extends AnyVal {
+      extension [Self <: CreateParagraphBulletsRequest](x: Self) {
         
-        @scala.inline
-        def setBulletPreset(value: String): Self = StObject.set(x, "bulletPreset", value.asInstanceOf[js.Any])
+        inline def setBulletPreset(value: String): Self = StObject.set(x, "bulletPreset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBulletPresetUndefined: Self = StObject.set(x, "bulletPreset", js.undefined)
+        inline def setBulletPresetUndefined: Self = StObject.set(x, "bulletPreset", js.undefined)
         
-        @scala.inline
-        def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+        inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+        inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       }
     }
     
@@ -1056,44 +895,32 @@ object Docs {
     }
     object CropProperties {
       
-      @scala.inline
-      def apply(): CropProperties = {
+      inline def apply(): CropProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CropProperties]
       }
       
-      @scala.inline
-      implicit class CropPropertiesMutableBuilder[Self <: CropProperties] (val x: Self) extends AnyVal {
+      extension [Self <: CropProperties](x: Self) {
         
-        @scala.inline
-        def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+        inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+        inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
         
-        @scala.inline
-        def setOffsetBottom(value: Double): Self = StObject.set(x, "offsetBottom", value.asInstanceOf[js.Any])
+        inline def setOffsetBottom(value: Double): Self = StObject.set(x, "offsetBottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetBottomUndefined: Self = StObject.set(x, "offsetBottom", js.undefined)
+        inline def setOffsetBottomUndefined: Self = StObject.set(x, "offsetBottom", js.undefined)
         
-        @scala.inline
-        def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
+        inline def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetLeftUndefined: Self = StObject.set(x, "offsetLeft", js.undefined)
+        inline def setOffsetLeftUndefined: Self = StObject.set(x, "offsetLeft", js.undefined)
         
-        @scala.inline
-        def setOffsetRight(value: Double): Self = StObject.set(x, "offsetRight", value.asInstanceOf[js.Any])
+        inline def setOffsetRight(value: Double): Self = StObject.set(x, "offsetRight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetRightUndefined: Self = StObject.set(x, "offsetRight", js.undefined)
+        inline def setOffsetRightUndefined: Self = StObject.set(x, "offsetRight", js.undefined)
         
-        @scala.inline
-        def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
+        inline def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
+        inline def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
       }
     }
     
@@ -1111,44 +938,32 @@ object Docs {
     }
     object CropPropertiesSuggestionState {
       
-      @scala.inline
-      def apply(): CropPropertiesSuggestionState = {
+      inline def apply(): CropPropertiesSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CropPropertiesSuggestionState]
       }
       
-      @scala.inline
-      implicit class CropPropertiesSuggestionStateMutableBuilder[Self <: CropPropertiesSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: CropPropertiesSuggestionState](x: Self) {
         
-        @scala.inline
-        def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
+        inline def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAngleSuggestedUndefined: Self = StObject.set(x, "angleSuggested", js.undefined)
+        inline def setAngleSuggestedUndefined: Self = StObject.set(x, "angleSuggested", js.undefined)
         
-        @scala.inline
-        def setOffsetBottomSuggested(value: Boolean): Self = StObject.set(x, "offsetBottomSuggested", value.asInstanceOf[js.Any])
+        inline def setOffsetBottomSuggested(value: Boolean): Self = StObject.set(x, "offsetBottomSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetBottomSuggestedUndefined: Self = StObject.set(x, "offsetBottomSuggested", js.undefined)
+        inline def setOffsetBottomSuggestedUndefined: Self = StObject.set(x, "offsetBottomSuggested", js.undefined)
         
-        @scala.inline
-        def setOffsetLeftSuggested(value: Boolean): Self = StObject.set(x, "offsetLeftSuggested", value.asInstanceOf[js.Any])
+        inline def setOffsetLeftSuggested(value: Boolean): Self = StObject.set(x, "offsetLeftSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetLeftSuggestedUndefined: Self = StObject.set(x, "offsetLeftSuggested", js.undefined)
+        inline def setOffsetLeftSuggestedUndefined: Self = StObject.set(x, "offsetLeftSuggested", js.undefined)
         
-        @scala.inline
-        def setOffsetRightSuggested(value: Boolean): Self = StObject.set(x, "offsetRightSuggested", value.asInstanceOf[js.Any])
+        inline def setOffsetRightSuggested(value: Boolean): Self = StObject.set(x, "offsetRightSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetRightSuggestedUndefined: Self = StObject.set(x, "offsetRightSuggested", js.undefined)
+        inline def setOffsetRightSuggestedUndefined: Self = StObject.set(x, "offsetRightSuggested", js.undefined)
         
-        @scala.inline
-        def setOffsetTopSuggested(value: Boolean): Self = StObject.set(x, "offsetTopSuggested", value.asInstanceOf[js.Any])
+        inline def setOffsetTopSuggested(value: Boolean): Self = StObject.set(x, "offsetTopSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetTopSuggestedUndefined: Self = StObject.set(x, "offsetTopSuggested", js.undefined)
+        inline def setOffsetTopSuggestedUndefined: Self = StObject.set(x, "offsetTopSuggested", js.undefined)
       }
     }
     
@@ -1158,20 +973,16 @@ object Docs {
     }
     object DeleteContentRangeRequest {
       
-      @scala.inline
-      def apply(): DeleteContentRangeRequest = {
+      inline def apply(): DeleteContentRangeRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DeleteContentRangeRequest]
       }
       
-      @scala.inline
-      implicit class DeleteContentRangeRequestMutableBuilder[Self <: DeleteContentRangeRequest] (val x: Self) extends AnyVal {
+      extension [Self <: DeleteContentRangeRequest](x: Self) {
         
-        @scala.inline
-        def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+        inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+        inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       }
     }
     
@@ -1183,26 +994,20 @@ object Docs {
     }
     object DeleteNamedRangeRequest {
       
-      @scala.inline
-      def apply(): DeleteNamedRangeRequest = {
+      inline def apply(): DeleteNamedRangeRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DeleteNamedRangeRequest]
       }
       
-      @scala.inline
-      implicit class DeleteNamedRangeRequestMutableBuilder[Self <: DeleteNamedRangeRequest] (val x: Self) extends AnyVal {
+      extension [Self <: DeleteNamedRangeRequest](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
+        inline def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
+        inline def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
       }
     }
     
@@ -1212,20 +1017,16 @@ object Docs {
     }
     object DeleteParagraphBulletsRequest {
       
-      @scala.inline
-      def apply(): DeleteParagraphBulletsRequest = {
+      inline def apply(): DeleteParagraphBulletsRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DeleteParagraphBulletsRequest]
       }
       
-      @scala.inline
-      implicit class DeleteParagraphBulletsRequestMutableBuilder[Self <: DeleteParagraphBulletsRequest] (val x: Self) extends AnyVal {
+      extension [Self <: DeleteParagraphBulletsRequest](x: Self) {
         
-        @scala.inline
-        def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+        inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+        inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       }
     }
     
@@ -1235,20 +1036,16 @@ object Docs {
     }
     object DeletePositionedObjectRequest {
       
-      @scala.inline
-      def apply(): DeletePositionedObjectRequest = {
+      inline def apply(): DeletePositionedObjectRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DeletePositionedObjectRequest]
       }
       
-      @scala.inline
-      implicit class DeletePositionedObjectRequestMutableBuilder[Self <: DeletePositionedObjectRequest] (val x: Self) extends AnyVal {
+      extension [Self <: DeletePositionedObjectRequest](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -1258,20 +1055,16 @@ object Docs {
     }
     object DeleteTableColumnRequest {
       
-      @scala.inline
-      def apply(): DeleteTableColumnRequest = {
+      inline def apply(): DeleteTableColumnRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DeleteTableColumnRequest]
       }
       
-      @scala.inline
-      implicit class DeleteTableColumnRequestMutableBuilder[Self <: DeleteTableColumnRequest] (val x: Self) extends AnyVal {
+      extension [Self <: DeleteTableColumnRequest](x: Self) {
         
-        @scala.inline
-        def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
+        inline def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
+        inline def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
       }
     }
     
@@ -1281,20 +1074,16 @@ object Docs {
     }
     object DeleteTableRowRequest {
       
-      @scala.inline
-      def apply(): DeleteTableRowRequest = {
+      inline def apply(): DeleteTableRowRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DeleteTableRowRequest]
       }
       
-      @scala.inline
-      implicit class DeleteTableRowRequestMutableBuilder[Self <: DeleteTableRowRequest] (val x: Self) extends AnyVal {
+      extension [Self <: DeleteTableRowRequest](x: Self) {
         
-        @scala.inline
-        def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
+        inline def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
+        inline def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
       }
     }
     
@@ -1306,26 +1095,20 @@ object Docs {
     }
     object Dimension {
       
-      @scala.inline
-      def apply(): Dimension = {
+      inline def apply(): Dimension = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Dimension]
       }
       
-      @scala.inline
-      implicit class DimensionMutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
+      extension [Self <: Dimension](x: Self) {
         
-        @scala.inline
-        def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
+        inline def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMagnitudeUndefined: Self = StObject.set(x, "magnitude", js.undefined)
+        inline def setMagnitudeUndefined: Self = StObject.set(x, "magnitude", js.undefined)
         
-        @scala.inline
-        def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+        inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+        inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
       }
     }
     
@@ -1365,110 +1148,76 @@ object Docs {
     }
     object Document {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Docs.Schema.Document = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Docs.Schema.Document = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Docs.Schema.Document]
       }
       
-      @scala.inline
-      implicit class DocumentMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Docs.Schema.Document] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Docs.Schema.Document](x: Self) {
         
-        @scala.inline
-        def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+        inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
         
-        @scala.inline
-        def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+        inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+        inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
         
-        @scala.inline
-        def setDocumentStyle(value: DocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
+        inline def setDocumentStyle(value: DocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDocumentStyleUndefined: Self = StObject.set(x, "documentStyle", js.undefined)
+        inline def setDocumentStyleUndefined: Self = StObject.set(x, "documentStyle", js.undefined)
         
-        @scala.inline
-        def setFooters(value: js.Object): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
+        inline def setFooters(value: js.Object): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFootersUndefined: Self = StObject.set(x, "footers", js.undefined)
+        inline def setFootersUndefined: Self = StObject.set(x, "footers", js.undefined)
         
-        @scala.inline
-        def setFootnotes(value: js.Object): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
+        inline def setFootnotes(value: js.Object): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFootnotesUndefined: Self = StObject.set(x, "footnotes", js.undefined)
+        inline def setFootnotesUndefined: Self = StObject.set(x, "footnotes", js.undefined)
         
-        @scala.inline
-        def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+        inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
         
-        @scala.inline
-        def setInlineObjects(value: js.Object): Self = StObject.set(x, "inlineObjects", value.asInstanceOf[js.Any])
+        inline def setInlineObjects(value: js.Object): Self = StObject.set(x, "inlineObjects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInlineObjectsUndefined: Self = StObject.set(x, "inlineObjects", js.undefined)
+        inline def setInlineObjectsUndefined: Self = StObject.set(x, "inlineObjects", js.undefined)
         
-        @scala.inline
-        def setLists(value: js.Object): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
+        inline def setLists(value: js.Object): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
+        inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
         
-        @scala.inline
-        def setNamedRanges(value: js.Object): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
+        inline def setNamedRanges(value: js.Object): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
+        inline def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
         
-        @scala.inline
-        def setNamedStyles(value: NamedStyles): Self = StObject.set(x, "namedStyles", value.asInstanceOf[js.Any])
+        inline def setNamedStyles(value: NamedStyles): Self = StObject.set(x, "namedStyles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamedStylesUndefined: Self = StObject.set(x, "namedStyles", js.undefined)
+        inline def setNamedStylesUndefined: Self = StObject.set(x, "namedStyles", js.undefined)
         
-        @scala.inline
-        def setPositionedObjects(value: js.Object): Self = StObject.set(x, "positionedObjects", value.asInstanceOf[js.Any])
+        inline def setPositionedObjects(value: js.Object): Self = StObject.set(x, "positionedObjects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionedObjectsUndefined: Self = StObject.set(x, "positionedObjects", js.undefined)
+        inline def setPositionedObjectsUndefined: Self = StObject.set(x, "positionedObjects", js.undefined)
         
-        @scala.inline
-        def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+        inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+        inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
         
-        @scala.inline
-        def setSuggestedDocumentStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedDocumentStyleChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedDocumentStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedDocumentStyleChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDocumentStyleChangesUndefined: Self = StObject.set(x, "suggestedDocumentStyleChanges", js.undefined)
+        inline def setSuggestedDocumentStyleChangesUndefined: Self = StObject.set(x, "suggestedDocumentStyleChanges", js.undefined)
         
-        @scala.inline
-        def setSuggestedNamedStylesChanges(value: js.Object): Self = StObject.set(x, "suggestedNamedStylesChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedNamedStylesChanges(value: js.Object): Self = StObject.set(x, "suggestedNamedStylesChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedNamedStylesChangesUndefined: Self = StObject.set(x, "suggestedNamedStylesChanges", js.undefined)
+        inline def setSuggestedNamedStylesChangesUndefined: Self = StObject.set(x, "suggestedNamedStylesChanges", js.undefined)
         
-        @scala.inline
-        def setSuggestionsViewMode(value: String): Self = StObject.set(x, "suggestionsViewMode", value.asInstanceOf[js.Any])
+        inline def setSuggestionsViewMode(value: String): Self = StObject.set(x, "suggestionsViewMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestionsViewModeUndefined: Self = StObject.set(x, "suggestionsViewMode", js.undefined)
+        inline def setSuggestionsViewModeUndefined: Self = StObject.set(x, "suggestionsViewMode", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -1506,104 +1255,72 @@ object Docs {
     }
     object DocumentStyle {
       
-      @scala.inline
-      def apply(): DocumentStyle = {
+      inline def apply(): DocumentStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DocumentStyle]
       }
       
-      @scala.inline
-      implicit class DocumentStyleMutableBuilder[Self <: DocumentStyle] (val x: Self) extends AnyVal {
+      extension [Self <: DocumentStyle](x: Self) {
         
-        @scala.inline
-        def setBackground(value: Background): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+        inline def setBackground(value: Background): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+        inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
         
-        @scala.inline
-        def setDefaultFooterId(value: String): Self = StObject.set(x, "defaultFooterId", value.asInstanceOf[js.Any])
+        inline def setDefaultFooterId(value: String): Self = StObject.set(x, "defaultFooterId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultFooterIdUndefined: Self = StObject.set(x, "defaultFooterId", js.undefined)
+        inline def setDefaultFooterIdUndefined: Self = StObject.set(x, "defaultFooterId", js.undefined)
         
-        @scala.inline
-        def setDefaultHeaderId(value: String): Self = StObject.set(x, "defaultHeaderId", value.asInstanceOf[js.Any])
+        inline def setDefaultHeaderId(value: String): Self = StObject.set(x, "defaultHeaderId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultHeaderIdUndefined: Self = StObject.set(x, "defaultHeaderId", js.undefined)
+        inline def setDefaultHeaderIdUndefined: Self = StObject.set(x, "defaultHeaderId", js.undefined)
         
-        @scala.inline
-        def setEvenPageFooterId(value: String): Self = StObject.set(x, "evenPageFooterId", value.asInstanceOf[js.Any])
+        inline def setEvenPageFooterId(value: String): Self = StObject.set(x, "evenPageFooterId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEvenPageFooterIdUndefined: Self = StObject.set(x, "evenPageFooterId", js.undefined)
+        inline def setEvenPageFooterIdUndefined: Self = StObject.set(x, "evenPageFooterId", js.undefined)
         
-        @scala.inline
-        def setEvenPageHeaderId(value: String): Self = StObject.set(x, "evenPageHeaderId", value.asInstanceOf[js.Any])
+        inline def setEvenPageHeaderId(value: String): Self = StObject.set(x, "evenPageHeaderId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEvenPageHeaderIdUndefined: Self = StObject.set(x, "evenPageHeaderId", js.undefined)
+        inline def setEvenPageHeaderIdUndefined: Self = StObject.set(x, "evenPageHeaderId", js.undefined)
         
-        @scala.inline
-        def setFirstPageFooterId(value: String): Self = StObject.set(x, "firstPageFooterId", value.asInstanceOf[js.Any])
+        inline def setFirstPageFooterId(value: String): Self = StObject.set(x, "firstPageFooterId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFirstPageFooterIdUndefined: Self = StObject.set(x, "firstPageFooterId", js.undefined)
+        inline def setFirstPageFooterIdUndefined: Self = StObject.set(x, "firstPageFooterId", js.undefined)
         
-        @scala.inline
-        def setFirstPageHeaderId(value: String): Self = StObject.set(x, "firstPageHeaderId", value.asInstanceOf[js.Any])
+        inline def setFirstPageHeaderId(value: String): Self = StObject.set(x, "firstPageHeaderId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFirstPageHeaderIdUndefined: Self = StObject.set(x, "firstPageHeaderId", js.undefined)
+        inline def setFirstPageHeaderIdUndefined: Self = StObject.set(x, "firstPageHeaderId", js.undefined)
         
-        @scala.inline
-        def setMarginBottom(value: Dimension): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+        inline def setMarginBottom(value: Dimension): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+        inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
         
-        @scala.inline
-        def setMarginLeft(value: Dimension): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+        inline def setMarginLeft(value: Dimension): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+        inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
         
-        @scala.inline
-        def setMarginRight(value: Dimension): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+        inline def setMarginRight(value: Dimension): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+        inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
         
-        @scala.inline
-        def setMarginTop(value: Dimension): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+        inline def setMarginTop(value: Dimension): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+        inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
         
-        @scala.inline
-        def setPageNumberStart(value: Double): Self = StObject.set(x, "pageNumberStart", value.asInstanceOf[js.Any])
+        inline def setPageNumberStart(value: Double): Self = StObject.set(x, "pageNumberStart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageNumberStartUndefined: Self = StObject.set(x, "pageNumberStart", js.undefined)
+        inline def setPageNumberStartUndefined: Self = StObject.set(x, "pageNumberStart", js.undefined)
         
-        @scala.inline
-        def setPageSize(value: Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+        inline def setPageSize(value: Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+        inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
         
-        @scala.inline
-        def setUseEvenPageHeaderFooter(value: Boolean): Self = StObject.set(x, "useEvenPageHeaderFooter", value.asInstanceOf[js.Any])
+        inline def setUseEvenPageHeaderFooter(value: Boolean): Self = StObject.set(x, "useEvenPageHeaderFooter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseEvenPageHeaderFooterUndefined: Self = StObject.set(x, "useEvenPageHeaderFooter", js.undefined)
+        inline def setUseEvenPageHeaderFooterUndefined: Self = StObject.set(x, "useEvenPageHeaderFooter", js.undefined)
         
-        @scala.inline
-        def setUseFirstPageHeaderFooter(value: Boolean): Self = StObject.set(x, "useFirstPageHeaderFooter", value.asInstanceOf[js.Any])
+        inline def setUseFirstPageHeaderFooter(value: Boolean): Self = StObject.set(x, "useFirstPageHeaderFooter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseFirstPageHeaderFooterUndefined: Self = StObject.set(x, "useFirstPageHeaderFooter", js.undefined)
+        inline def setUseFirstPageHeaderFooterUndefined: Self = StObject.set(x, "useFirstPageHeaderFooter", js.undefined)
       }
     }
     
@@ -1641,104 +1358,72 @@ object Docs {
     }
     object DocumentStyleSuggestionState {
       
-      @scala.inline
-      def apply(): DocumentStyleSuggestionState = {
+      inline def apply(): DocumentStyleSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DocumentStyleSuggestionState]
       }
       
-      @scala.inline
-      implicit class DocumentStyleSuggestionStateMutableBuilder[Self <: DocumentStyleSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: DocumentStyleSuggestionState](x: Self) {
         
-        @scala.inline
-        def setBackgroundSuggestionState(value: BackgroundSuggestionState): Self = StObject.set(x, "backgroundSuggestionState", value.asInstanceOf[js.Any])
+        inline def setBackgroundSuggestionState(value: BackgroundSuggestionState): Self = StObject.set(x, "backgroundSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundSuggestionStateUndefined: Self = StObject.set(x, "backgroundSuggestionState", js.undefined)
+        inline def setBackgroundSuggestionStateUndefined: Self = StObject.set(x, "backgroundSuggestionState", js.undefined)
         
-        @scala.inline
-        def setDefaultFooterIdSuggested(value: Boolean): Self = StObject.set(x, "defaultFooterIdSuggested", value.asInstanceOf[js.Any])
+        inline def setDefaultFooterIdSuggested(value: Boolean): Self = StObject.set(x, "defaultFooterIdSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultFooterIdSuggestedUndefined: Self = StObject.set(x, "defaultFooterIdSuggested", js.undefined)
+        inline def setDefaultFooterIdSuggestedUndefined: Self = StObject.set(x, "defaultFooterIdSuggested", js.undefined)
         
-        @scala.inline
-        def setDefaultHeaderIdSuggested(value: Boolean): Self = StObject.set(x, "defaultHeaderIdSuggested", value.asInstanceOf[js.Any])
+        inline def setDefaultHeaderIdSuggested(value: Boolean): Self = StObject.set(x, "defaultHeaderIdSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultHeaderIdSuggestedUndefined: Self = StObject.set(x, "defaultHeaderIdSuggested", js.undefined)
+        inline def setDefaultHeaderIdSuggestedUndefined: Self = StObject.set(x, "defaultHeaderIdSuggested", js.undefined)
         
-        @scala.inline
-        def setEvenPageFooterIdSuggested(value: Boolean): Self = StObject.set(x, "evenPageFooterIdSuggested", value.asInstanceOf[js.Any])
+        inline def setEvenPageFooterIdSuggested(value: Boolean): Self = StObject.set(x, "evenPageFooterIdSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEvenPageFooterIdSuggestedUndefined: Self = StObject.set(x, "evenPageFooterIdSuggested", js.undefined)
+        inline def setEvenPageFooterIdSuggestedUndefined: Self = StObject.set(x, "evenPageFooterIdSuggested", js.undefined)
         
-        @scala.inline
-        def setEvenPageHeaderIdSuggested(value: Boolean): Self = StObject.set(x, "evenPageHeaderIdSuggested", value.asInstanceOf[js.Any])
+        inline def setEvenPageHeaderIdSuggested(value: Boolean): Self = StObject.set(x, "evenPageHeaderIdSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEvenPageHeaderIdSuggestedUndefined: Self = StObject.set(x, "evenPageHeaderIdSuggested", js.undefined)
+        inline def setEvenPageHeaderIdSuggestedUndefined: Self = StObject.set(x, "evenPageHeaderIdSuggested", js.undefined)
         
-        @scala.inline
-        def setFirstPageFooterIdSuggested(value: Boolean): Self = StObject.set(x, "firstPageFooterIdSuggested", value.asInstanceOf[js.Any])
+        inline def setFirstPageFooterIdSuggested(value: Boolean): Self = StObject.set(x, "firstPageFooterIdSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFirstPageFooterIdSuggestedUndefined: Self = StObject.set(x, "firstPageFooterIdSuggested", js.undefined)
+        inline def setFirstPageFooterIdSuggestedUndefined: Self = StObject.set(x, "firstPageFooterIdSuggested", js.undefined)
         
-        @scala.inline
-        def setFirstPageHeaderIdSuggested(value: Boolean): Self = StObject.set(x, "firstPageHeaderIdSuggested", value.asInstanceOf[js.Any])
+        inline def setFirstPageHeaderIdSuggested(value: Boolean): Self = StObject.set(x, "firstPageHeaderIdSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFirstPageHeaderIdSuggestedUndefined: Self = StObject.set(x, "firstPageHeaderIdSuggested", js.undefined)
+        inline def setFirstPageHeaderIdSuggestedUndefined: Self = StObject.set(x, "firstPageHeaderIdSuggested", js.undefined)
         
-        @scala.inline
-        def setMarginBottomSuggested(value: Boolean): Self = StObject.set(x, "marginBottomSuggested", value.asInstanceOf[js.Any])
+        inline def setMarginBottomSuggested(value: Boolean): Self = StObject.set(x, "marginBottomSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginBottomSuggestedUndefined: Self = StObject.set(x, "marginBottomSuggested", js.undefined)
+        inline def setMarginBottomSuggestedUndefined: Self = StObject.set(x, "marginBottomSuggested", js.undefined)
         
-        @scala.inline
-        def setMarginLeftSuggested(value: Boolean): Self = StObject.set(x, "marginLeftSuggested", value.asInstanceOf[js.Any])
+        inline def setMarginLeftSuggested(value: Boolean): Self = StObject.set(x, "marginLeftSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginLeftSuggestedUndefined: Self = StObject.set(x, "marginLeftSuggested", js.undefined)
+        inline def setMarginLeftSuggestedUndefined: Self = StObject.set(x, "marginLeftSuggested", js.undefined)
         
-        @scala.inline
-        def setMarginRightSuggested(value: Boolean): Self = StObject.set(x, "marginRightSuggested", value.asInstanceOf[js.Any])
+        inline def setMarginRightSuggested(value: Boolean): Self = StObject.set(x, "marginRightSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginRightSuggestedUndefined: Self = StObject.set(x, "marginRightSuggested", js.undefined)
+        inline def setMarginRightSuggestedUndefined: Self = StObject.set(x, "marginRightSuggested", js.undefined)
         
-        @scala.inline
-        def setMarginTopSuggested(value: Boolean): Self = StObject.set(x, "marginTopSuggested", value.asInstanceOf[js.Any])
+        inline def setMarginTopSuggested(value: Boolean): Self = StObject.set(x, "marginTopSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginTopSuggestedUndefined: Self = StObject.set(x, "marginTopSuggested", js.undefined)
+        inline def setMarginTopSuggestedUndefined: Self = StObject.set(x, "marginTopSuggested", js.undefined)
         
-        @scala.inline
-        def setPageNumberStartSuggested(value: Boolean): Self = StObject.set(x, "pageNumberStartSuggested", value.asInstanceOf[js.Any])
+        inline def setPageNumberStartSuggested(value: Boolean): Self = StObject.set(x, "pageNumberStartSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageNumberStartSuggestedUndefined: Self = StObject.set(x, "pageNumberStartSuggested", js.undefined)
+        inline def setPageNumberStartSuggestedUndefined: Self = StObject.set(x, "pageNumberStartSuggested", js.undefined)
         
-        @scala.inline
-        def setPageSizeSuggestionState(value: SizeSuggestionState): Self = StObject.set(x, "pageSizeSuggestionState", value.asInstanceOf[js.Any])
+        inline def setPageSizeSuggestionState(value: SizeSuggestionState): Self = StObject.set(x, "pageSizeSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageSizeSuggestionStateUndefined: Self = StObject.set(x, "pageSizeSuggestionState", js.undefined)
+        inline def setPageSizeSuggestionStateUndefined: Self = StObject.set(x, "pageSizeSuggestionState", js.undefined)
         
-        @scala.inline
-        def setUseEvenPageHeaderFooterSuggested(value: Boolean): Self = StObject.set(x, "useEvenPageHeaderFooterSuggested", value.asInstanceOf[js.Any])
+        inline def setUseEvenPageHeaderFooterSuggested(value: Boolean): Self = StObject.set(x, "useEvenPageHeaderFooterSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseEvenPageHeaderFooterSuggestedUndefined: Self = StObject.set(x, "useEvenPageHeaderFooterSuggested", js.undefined)
+        inline def setUseEvenPageHeaderFooterSuggestedUndefined: Self = StObject.set(x, "useEvenPageHeaderFooterSuggested", js.undefined)
         
-        @scala.inline
-        def setUseFirstPageHeaderFooterSuggested(value: Boolean): Self = StObject.set(x, "useFirstPageHeaderFooterSuggested", value.asInstanceOf[js.Any])
+        inline def setUseFirstPageHeaderFooterSuggested(value: Boolean): Self = StObject.set(x, "useFirstPageHeaderFooterSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseFirstPageHeaderFooterSuggestedUndefined: Self = StObject.set(x, "useFirstPageHeaderFooterSuggested", js.undefined)
+        inline def setUseFirstPageHeaderFooterSuggestedUndefined: Self = StObject.set(x, "useFirstPageHeaderFooterSuggested", js.undefined)
       }
     }
     
@@ -1768,80 +1453,56 @@ object Docs {
     }
     object EmbeddedObject {
       
-      @scala.inline
-      def apply(): EmbeddedObject = {
+      inline def apply(): EmbeddedObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[EmbeddedObject]
       }
       
-      @scala.inline
-      implicit class EmbeddedObjectMutableBuilder[Self <: EmbeddedObject] (val x: Self) extends AnyVal {
+      extension [Self <: EmbeddedObject](x: Self) {
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setEmbeddedDrawingProperties(value: js.Any): Self = StObject.set(x, "embeddedDrawingProperties", value.asInstanceOf[js.Any])
+        inline def setEmbeddedDrawingProperties(value: js.Any): Self = StObject.set(x, "embeddedDrawingProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmbeddedDrawingPropertiesUndefined: Self = StObject.set(x, "embeddedDrawingProperties", js.undefined)
+        inline def setEmbeddedDrawingPropertiesUndefined: Self = StObject.set(x, "embeddedDrawingProperties", js.undefined)
         
-        @scala.inline
-        def setEmbeddedObjectBorder(value: EmbeddedObjectBorder): Self = StObject.set(x, "embeddedObjectBorder", value.asInstanceOf[js.Any])
+        inline def setEmbeddedObjectBorder(value: EmbeddedObjectBorder): Self = StObject.set(x, "embeddedObjectBorder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmbeddedObjectBorderUndefined: Self = StObject.set(x, "embeddedObjectBorder", js.undefined)
+        inline def setEmbeddedObjectBorderUndefined: Self = StObject.set(x, "embeddedObjectBorder", js.undefined)
         
-        @scala.inline
-        def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
+        inline def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
+        inline def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
         
-        @scala.inline
-        def setLinkedContentReference(value: LinkedContentReference): Self = StObject.set(x, "linkedContentReference", value.asInstanceOf[js.Any])
+        inline def setLinkedContentReference(value: LinkedContentReference): Self = StObject.set(x, "linkedContentReference", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkedContentReferenceUndefined: Self = StObject.set(x, "linkedContentReference", js.undefined)
+        inline def setLinkedContentReferenceUndefined: Self = StObject.set(x, "linkedContentReference", js.undefined)
         
-        @scala.inline
-        def setMarginBottom(value: Dimension): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+        inline def setMarginBottom(value: Dimension): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+        inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
         
-        @scala.inline
-        def setMarginLeft(value: Dimension): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+        inline def setMarginLeft(value: Dimension): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+        inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
         
-        @scala.inline
-        def setMarginRight(value: Dimension): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+        inline def setMarginRight(value: Dimension): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+        inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
         
-        @scala.inline
-        def setMarginTop(value: Dimension): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+        inline def setMarginTop(value: Dimension): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+        inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
         
-        @scala.inline
-        def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+        inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -1857,38 +1518,28 @@ object Docs {
     }
     object EmbeddedObjectBorder {
       
-      @scala.inline
-      def apply(): EmbeddedObjectBorder = {
+      inline def apply(): EmbeddedObjectBorder = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[EmbeddedObjectBorder]
       }
       
-      @scala.inline
-      implicit class EmbeddedObjectBorderMutableBuilder[Self <: EmbeddedObjectBorder] (val x: Self) extends AnyVal {
+      extension [Self <: EmbeddedObjectBorder](x: Self) {
         
-        @scala.inline
-        def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+        inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+        inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
         
-        @scala.inline
-        def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
+        inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
+        inline def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
         
-        @scala.inline
-        def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       }
     }
     
@@ -1904,38 +1555,28 @@ object Docs {
     }
     object EmbeddedObjectBorderSuggestionState {
       
-      @scala.inline
-      def apply(): EmbeddedObjectBorderSuggestionState = {
+      inline def apply(): EmbeddedObjectBorderSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[EmbeddedObjectBorderSuggestionState]
       }
       
-      @scala.inline
-      implicit class EmbeddedObjectBorderSuggestionStateMutableBuilder[Self <: EmbeddedObjectBorderSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: EmbeddedObjectBorderSuggestionState](x: Self) {
         
-        @scala.inline
-        def setColorSuggested(value: Boolean): Self = StObject.set(x, "colorSuggested", value.asInstanceOf[js.Any])
+        inline def setColorSuggested(value: Boolean): Self = StObject.set(x, "colorSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorSuggestedUndefined: Self = StObject.set(x, "colorSuggested", js.undefined)
+        inline def setColorSuggestedUndefined: Self = StObject.set(x, "colorSuggested", js.undefined)
         
-        @scala.inline
-        def setDashStyleSuggested(value: Boolean): Self = StObject.set(x, "dashStyleSuggested", value.asInstanceOf[js.Any])
+        inline def setDashStyleSuggested(value: Boolean): Self = StObject.set(x, "dashStyleSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDashStyleSuggestedUndefined: Self = StObject.set(x, "dashStyleSuggested", js.undefined)
+        inline def setDashStyleSuggestedUndefined: Self = StObject.set(x, "dashStyleSuggested", js.undefined)
         
-        @scala.inline
-        def setPropertyStateSuggested(value: Boolean): Self = StObject.set(x, "propertyStateSuggested", value.asInstanceOf[js.Any])
+        inline def setPropertyStateSuggested(value: Boolean): Self = StObject.set(x, "propertyStateSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPropertyStateSuggestedUndefined: Self = StObject.set(x, "propertyStateSuggested", js.undefined)
+        inline def setPropertyStateSuggestedUndefined: Self = StObject.set(x, "propertyStateSuggested", js.undefined)
         
-        @scala.inline
-        def setWidthSuggested(value: Boolean): Self = StObject.set(x, "widthSuggested", value.asInstanceOf[js.Any])
+        inline def setWidthSuggested(value: Boolean): Self = StObject.set(x, "widthSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthSuggestedUndefined: Self = StObject.set(x, "widthSuggested", js.undefined)
+        inline def setWidthSuggestedUndefined: Self = StObject.set(x, "widthSuggested", js.undefined)
       }
     }
     
@@ -1965,80 +1606,56 @@ object Docs {
     }
     object EmbeddedObjectSuggestionState {
       
-      @scala.inline
-      def apply(): EmbeddedObjectSuggestionState = {
+      inline def apply(): EmbeddedObjectSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[EmbeddedObjectSuggestionState]
       }
       
-      @scala.inline
-      implicit class EmbeddedObjectSuggestionStateMutableBuilder[Self <: EmbeddedObjectSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: EmbeddedObjectSuggestionState](x: Self) {
         
-        @scala.inline
-        def setDescriptionSuggested(value: Boolean): Self = StObject.set(x, "descriptionSuggested", value.asInstanceOf[js.Any])
+        inline def setDescriptionSuggested(value: Boolean): Self = StObject.set(x, "descriptionSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionSuggestedUndefined: Self = StObject.set(x, "descriptionSuggested", js.undefined)
+        inline def setDescriptionSuggestedUndefined: Self = StObject.set(x, "descriptionSuggested", js.undefined)
         
-        @scala.inline
-        def setEmbeddedDrawingPropertiesSuggestionState(value: js.Any): Self = StObject.set(x, "embeddedDrawingPropertiesSuggestionState", value.asInstanceOf[js.Any])
+        inline def setEmbeddedDrawingPropertiesSuggestionState(value: js.Any): Self = StObject.set(x, "embeddedDrawingPropertiesSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmbeddedDrawingPropertiesSuggestionStateUndefined: Self = StObject.set(x, "embeddedDrawingPropertiesSuggestionState", js.undefined)
+        inline def setEmbeddedDrawingPropertiesSuggestionStateUndefined: Self = StObject.set(x, "embeddedDrawingPropertiesSuggestionState", js.undefined)
         
-        @scala.inline
-        def setEmbeddedObjectBorderSuggestionState(value: EmbeddedObjectBorderSuggestionState): Self = StObject.set(x, "embeddedObjectBorderSuggestionState", value.asInstanceOf[js.Any])
+        inline def setEmbeddedObjectBorderSuggestionState(value: EmbeddedObjectBorderSuggestionState): Self = StObject.set(x, "embeddedObjectBorderSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmbeddedObjectBorderSuggestionStateUndefined: Self = StObject.set(x, "embeddedObjectBorderSuggestionState", js.undefined)
+        inline def setEmbeddedObjectBorderSuggestionStateUndefined: Self = StObject.set(x, "embeddedObjectBorderSuggestionState", js.undefined)
         
-        @scala.inline
-        def setImagePropertiesSuggestionState(value: ImagePropertiesSuggestionState): Self = StObject.set(x, "imagePropertiesSuggestionState", value.asInstanceOf[js.Any])
+        inline def setImagePropertiesSuggestionState(value: ImagePropertiesSuggestionState): Self = StObject.set(x, "imagePropertiesSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImagePropertiesSuggestionStateUndefined: Self = StObject.set(x, "imagePropertiesSuggestionState", js.undefined)
+        inline def setImagePropertiesSuggestionStateUndefined: Self = StObject.set(x, "imagePropertiesSuggestionState", js.undefined)
         
-        @scala.inline
-        def setLinkedContentReferenceSuggestionState(value: LinkedContentReferenceSuggestionState): Self = StObject.set(x, "linkedContentReferenceSuggestionState", value.asInstanceOf[js.Any])
+        inline def setLinkedContentReferenceSuggestionState(value: LinkedContentReferenceSuggestionState): Self = StObject.set(x, "linkedContentReferenceSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkedContentReferenceSuggestionStateUndefined: Self = StObject.set(x, "linkedContentReferenceSuggestionState", js.undefined)
+        inline def setLinkedContentReferenceSuggestionStateUndefined: Self = StObject.set(x, "linkedContentReferenceSuggestionState", js.undefined)
         
-        @scala.inline
-        def setMarginBottomSuggested(value: Boolean): Self = StObject.set(x, "marginBottomSuggested", value.asInstanceOf[js.Any])
+        inline def setMarginBottomSuggested(value: Boolean): Self = StObject.set(x, "marginBottomSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginBottomSuggestedUndefined: Self = StObject.set(x, "marginBottomSuggested", js.undefined)
+        inline def setMarginBottomSuggestedUndefined: Self = StObject.set(x, "marginBottomSuggested", js.undefined)
         
-        @scala.inline
-        def setMarginLeftSuggested(value: Boolean): Self = StObject.set(x, "marginLeftSuggested", value.asInstanceOf[js.Any])
+        inline def setMarginLeftSuggested(value: Boolean): Self = StObject.set(x, "marginLeftSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginLeftSuggestedUndefined: Self = StObject.set(x, "marginLeftSuggested", js.undefined)
+        inline def setMarginLeftSuggestedUndefined: Self = StObject.set(x, "marginLeftSuggested", js.undefined)
         
-        @scala.inline
-        def setMarginRightSuggested(value: Boolean): Self = StObject.set(x, "marginRightSuggested", value.asInstanceOf[js.Any])
+        inline def setMarginRightSuggested(value: Boolean): Self = StObject.set(x, "marginRightSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginRightSuggestedUndefined: Self = StObject.set(x, "marginRightSuggested", js.undefined)
+        inline def setMarginRightSuggestedUndefined: Self = StObject.set(x, "marginRightSuggested", js.undefined)
         
-        @scala.inline
-        def setMarginTopSuggested(value: Boolean): Self = StObject.set(x, "marginTopSuggested", value.asInstanceOf[js.Any])
+        inline def setMarginTopSuggested(value: Boolean): Self = StObject.set(x, "marginTopSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginTopSuggestedUndefined: Self = StObject.set(x, "marginTopSuggested", js.undefined)
+        inline def setMarginTopSuggestedUndefined: Self = StObject.set(x, "marginTopSuggested", js.undefined)
         
-        @scala.inline
-        def setSizeSuggestionState(value: SizeSuggestionState): Self = StObject.set(x, "sizeSuggestionState", value.asInstanceOf[js.Any])
+        inline def setSizeSuggestionState(value: SizeSuggestionState): Self = StObject.set(x, "sizeSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeSuggestionStateUndefined: Self = StObject.set(x, "sizeSuggestionState", js.undefined)
+        inline def setSizeSuggestionStateUndefined: Self = StObject.set(x, "sizeSuggestionState", js.undefined)
         
-        @scala.inline
-        def setTitleSuggested(value: Boolean): Self = StObject.set(x, "titleSuggested", value.asInstanceOf[js.Any])
+        inline def setTitleSuggested(value: Boolean): Self = StObject.set(x, "titleSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleSuggestedUndefined: Self = StObject.set(x, "titleSuggested", js.undefined)
+        inline def setTitleSuggestedUndefined: Self = StObject.set(x, "titleSuggested", js.undefined)
       }
     }
     
@@ -2048,20 +1665,16 @@ object Docs {
     }
     object EndOfSegmentLocation {
       
-      @scala.inline
-      def apply(): EndOfSegmentLocation = {
+      inline def apply(): EndOfSegmentLocation = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[EndOfSegmentLocation]
       }
       
-      @scala.inline
-      implicit class EndOfSegmentLocationMutableBuilder[Self <: EndOfSegmentLocation] (val x: Self) extends AnyVal {
+      extension [Self <: EndOfSegmentLocation](x: Self) {
         
-        @scala.inline
-        def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
+        inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
+        inline def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
       }
     }
     
@@ -2073,32 +1686,24 @@ object Docs {
     }
     object Equation {
       
-      @scala.inline
-      def apply(): Equation = {
+      inline def apply(): Equation = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Equation]
       }
       
-      @scala.inline
-      implicit class EquationMutableBuilder[Self <: Equation] (val x: Self) extends AnyVal {
+      extension [Self <: Equation](x: Self) {
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
+        inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
       }
     }
     
@@ -2110,29 +1715,22 @@ object Docs {
     }
     object Footer {
       
-      @scala.inline
-      def apply(): Footer = {
+      inline def apply(): Footer = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Footer]
       }
       
-      @scala.inline
-      implicit class FooterMutableBuilder[Self <: Footer] (val x: Self) extends AnyVal {
+      extension [Self <: Footer](x: Self) {
         
-        @scala.inline
-        def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
         
-        @scala.inline
-        def setFooterId(value: String): Self = StObject.set(x, "footerId", value.asInstanceOf[js.Any])
+        inline def setFooterId(value: String): Self = StObject.set(x, "footerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFooterIdUndefined: Self = StObject.set(x, "footerId", js.undefined)
+        inline def setFooterIdUndefined: Self = StObject.set(x, "footerId", js.undefined)
       }
     }
     
@@ -2144,29 +1742,22 @@ object Docs {
     }
     object Footnote {
       
-      @scala.inline
-      def apply(): Footnote = {
+      inline def apply(): Footnote = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Footnote]
       }
       
-      @scala.inline
-      implicit class FootnoteMutableBuilder[Self <: Footnote] (val x: Self) extends AnyVal {
+      extension [Self <: Footnote](x: Self) {
         
-        @scala.inline
-        def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
         
-        @scala.inline
-        def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
+        inline def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFootnoteIdUndefined: Self = StObject.set(x, "footnoteId", js.undefined)
+        inline def setFootnoteIdUndefined: Self = StObject.set(x, "footnoteId", js.undefined)
       }
     }
     
@@ -2186,56 +1777,40 @@ object Docs {
     }
     object FootnoteReference {
       
-      @scala.inline
-      def apply(): FootnoteReference = {
+      inline def apply(): FootnoteReference = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FootnoteReference]
       }
       
-      @scala.inline
-      implicit class FootnoteReferenceMutableBuilder[Self <: FootnoteReference] (val x: Self) extends AnyVal {
+      extension [Self <: FootnoteReference](x: Self) {
         
-        @scala.inline
-        def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
+        inline def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFootnoteIdUndefined: Self = StObject.set(x, "footnoteId", js.undefined)
+        inline def setFootnoteIdUndefined: Self = StObject.set(x, "footnoteId", js.undefined)
         
-        @scala.inline
-        def setFootnoteNumber(value: String): Self = StObject.set(x, "footnoteNumber", value.asInstanceOf[js.Any])
+        inline def setFootnoteNumber(value: String): Self = StObject.set(x, "footnoteNumber", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFootnoteNumberUndefined: Self = StObject.set(x, "footnoteNumber", js.undefined)
+        inline def setFootnoteNumberUndefined: Self = StObject.set(x, "footnoteNumber", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
+        inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
+        inline def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
         
-        @scala.inline
-        def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+        inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+        inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       }
     }
     
@@ -2247,29 +1822,22 @@ object Docs {
     }
     object Header {
       
-      @scala.inline
-      def apply(): Header = {
+      inline def apply(): Header = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Header]
       }
       
-      @scala.inline
-      implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+      extension [Self <: Header](x: Self) {
         
-        @scala.inline
-        def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
         
-        @scala.inline
-        def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
+        inline def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderIdUndefined: Self = StObject.set(x, "headerId", js.undefined)
+        inline def setHeaderIdUndefined: Self = StObject.set(x, "headerId", js.undefined)
       }
     }
     
@@ -2285,44 +1853,32 @@ object Docs {
     }
     object HorizontalRule {
       
-      @scala.inline
-      def apply(): HorizontalRule = {
+      inline def apply(): HorizontalRule = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HorizontalRule]
       }
       
-      @scala.inline
-      implicit class HorizontalRuleMutableBuilder[Self <: HorizontalRule] (val x: Self) extends AnyVal {
+      extension [Self <: HorizontalRule](x: Self) {
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
+        inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
+        inline def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
         
-        @scala.inline
-        def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+        inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+        inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       }
     }
     
@@ -2344,56 +1900,40 @@ object Docs {
     }
     object ImageProperties {
       
-      @scala.inline
-      def apply(): ImageProperties = {
+      inline def apply(): ImageProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ImageProperties]
       }
       
-      @scala.inline
-      implicit class ImagePropertiesMutableBuilder[Self <: ImageProperties] (val x: Self) extends AnyVal {
+      extension [Self <: ImageProperties](x: Self) {
         
-        @scala.inline
-        def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+        inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+        inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
         
-        @scala.inline
-        def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
+        inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
+        inline def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
         
-        @scala.inline
-        def setContentUri(value: String): Self = StObject.set(x, "contentUri", value.asInstanceOf[js.Any])
+        inline def setContentUri(value: String): Self = StObject.set(x, "contentUri", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUriUndefined: Self = StObject.set(x, "contentUri", js.undefined)
+        inline def setContentUriUndefined: Self = StObject.set(x, "contentUri", js.undefined)
         
-        @scala.inline
-        def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
+        inline def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
+        inline def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
         
-        @scala.inline
-        def setCropProperties(value: CropProperties): Self = StObject.set(x, "cropProperties", value.asInstanceOf[js.Any])
+        inline def setCropProperties(value: CropProperties): Self = StObject.set(x, "cropProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCropPropertiesUndefined: Self = StObject.set(x, "cropProperties", js.undefined)
+        inline def setCropPropertiesUndefined: Self = StObject.set(x, "cropProperties", js.undefined)
         
-        @scala.inline
-        def setSourceUri(value: String): Self = StObject.set(x, "sourceUri", value.asInstanceOf[js.Any])
+        inline def setSourceUri(value: String): Self = StObject.set(x, "sourceUri", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceUriUndefined: Self = StObject.set(x, "sourceUri", js.undefined)
+        inline def setSourceUriUndefined: Self = StObject.set(x, "sourceUri", js.undefined)
         
-        @scala.inline
-        def setTransparency(value: Double): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
+        inline def setTransparency(value: Double): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
+        inline def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
       }
     }
     
@@ -2415,56 +1955,40 @@ object Docs {
     }
     object ImagePropertiesSuggestionState {
       
-      @scala.inline
-      def apply(): ImagePropertiesSuggestionState = {
+      inline def apply(): ImagePropertiesSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ImagePropertiesSuggestionState]
       }
       
-      @scala.inline
-      implicit class ImagePropertiesSuggestionStateMutableBuilder[Self <: ImagePropertiesSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: ImagePropertiesSuggestionState](x: Self) {
         
-        @scala.inline
-        def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
+        inline def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAngleSuggestedUndefined: Self = StObject.set(x, "angleSuggested", js.undefined)
+        inline def setAngleSuggestedUndefined: Self = StObject.set(x, "angleSuggested", js.undefined)
         
-        @scala.inline
-        def setBrightnessSuggested(value: Boolean): Self = StObject.set(x, "brightnessSuggested", value.asInstanceOf[js.Any])
+        inline def setBrightnessSuggested(value: Boolean): Self = StObject.set(x, "brightnessSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrightnessSuggestedUndefined: Self = StObject.set(x, "brightnessSuggested", js.undefined)
+        inline def setBrightnessSuggestedUndefined: Self = StObject.set(x, "brightnessSuggested", js.undefined)
         
-        @scala.inline
-        def setContentUriSuggested(value: Boolean): Self = StObject.set(x, "contentUriSuggested", value.asInstanceOf[js.Any])
+        inline def setContentUriSuggested(value: Boolean): Self = StObject.set(x, "contentUriSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUriSuggestedUndefined: Self = StObject.set(x, "contentUriSuggested", js.undefined)
+        inline def setContentUriSuggestedUndefined: Self = StObject.set(x, "contentUriSuggested", js.undefined)
         
-        @scala.inline
-        def setContrastSuggested(value: Boolean): Self = StObject.set(x, "contrastSuggested", value.asInstanceOf[js.Any])
+        inline def setContrastSuggested(value: Boolean): Self = StObject.set(x, "contrastSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContrastSuggestedUndefined: Self = StObject.set(x, "contrastSuggested", js.undefined)
+        inline def setContrastSuggestedUndefined: Self = StObject.set(x, "contrastSuggested", js.undefined)
         
-        @scala.inline
-        def setCropPropertiesSuggestionState(value: CropPropertiesSuggestionState): Self = StObject.set(x, "cropPropertiesSuggestionState", value.asInstanceOf[js.Any])
+        inline def setCropPropertiesSuggestionState(value: CropPropertiesSuggestionState): Self = StObject.set(x, "cropPropertiesSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCropPropertiesSuggestionStateUndefined: Self = StObject.set(x, "cropPropertiesSuggestionState", js.undefined)
+        inline def setCropPropertiesSuggestionStateUndefined: Self = StObject.set(x, "cropPropertiesSuggestionState", js.undefined)
         
-        @scala.inline
-        def setSourceUriSuggested(value: Boolean): Self = StObject.set(x, "sourceUriSuggested", value.asInstanceOf[js.Any])
+        inline def setSourceUriSuggested(value: Boolean): Self = StObject.set(x, "sourceUriSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceUriSuggestedUndefined: Self = StObject.set(x, "sourceUriSuggested", js.undefined)
+        inline def setSourceUriSuggestedUndefined: Self = StObject.set(x, "sourceUriSuggested", js.undefined)
         
-        @scala.inline
-        def setTransparencySuggested(value: Boolean): Self = StObject.set(x, "transparencySuggested", value.asInstanceOf[js.Any])
+        inline def setTransparencySuggested(value: Boolean): Self = StObject.set(x, "transparencySuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransparencySuggestedUndefined: Self = StObject.set(x, "transparencySuggested", js.undefined)
+        inline def setTransparencySuggestedUndefined: Self = StObject.set(x, "transparencySuggested", js.undefined)
       }
     }
     
@@ -2482,47 +2006,34 @@ object Docs {
     }
     object InlineObject {
       
-      @scala.inline
-      def apply(): InlineObject = {
+      inline def apply(): InlineObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InlineObject]
       }
       
-      @scala.inline
-      implicit class InlineObjectMutableBuilder[Self <: InlineObject] (val x: Self) extends AnyVal {
+      extension [Self <: InlineObject](x: Self) {
         
-        @scala.inline
-        def setInlineObjectProperties(value: InlineObjectProperties): Self = StObject.set(x, "inlineObjectProperties", value.asInstanceOf[js.Any])
+        inline def setInlineObjectProperties(value: InlineObjectProperties): Self = StObject.set(x, "inlineObjectProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInlineObjectPropertiesUndefined: Self = StObject.set(x, "inlineObjectProperties", js.undefined)
+        inline def setInlineObjectPropertiesUndefined: Self = StObject.set(x, "inlineObjectProperties", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInlineObjectPropertiesChanges(value: js.Object): Self = StObject.set(x, "suggestedInlineObjectPropertiesChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedInlineObjectPropertiesChanges(value: js.Object): Self = StObject.set(x, "suggestedInlineObjectPropertiesChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInlineObjectPropertiesChangesUndefined: Self = StObject.set(x, "suggestedInlineObjectPropertiesChanges", js.undefined)
+        inline def setSuggestedInlineObjectPropertiesChangesUndefined: Self = StObject.set(x, "suggestedInlineObjectPropertiesChanges", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdUndefined: Self = StObject.set(x, "suggestedInsertionId", js.undefined)
+        inline def setSuggestedInsertionIdUndefined: Self = StObject.set(x, "suggestedInsertionId", js.undefined)
       }
     }
     
@@ -2540,50 +2051,36 @@ object Docs {
     }
     object InlineObjectElement {
       
-      @scala.inline
-      def apply(): InlineObjectElement = {
+      inline def apply(): InlineObjectElement = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InlineObjectElement]
       }
       
-      @scala.inline
-      implicit class InlineObjectElementMutableBuilder[Self <: InlineObjectElement] (val x: Self) extends AnyVal {
+      extension [Self <: InlineObjectElement](x: Self) {
         
-        @scala.inline
-        def setInlineObjectId(value: String): Self = StObject.set(x, "inlineObjectId", value.asInstanceOf[js.Any])
+        inline def setInlineObjectId(value: String): Self = StObject.set(x, "inlineObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInlineObjectIdUndefined: Self = StObject.set(x, "inlineObjectId", js.undefined)
+        inline def setInlineObjectIdUndefined: Self = StObject.set(x, "inlineObjectId", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
+        inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
+        inline def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
         
-        @scala.inline
-        def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+        inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+        inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       }
     }
     
@@ -2593,20 +2090,16 @@ object Docs {
     }
     object InlineObjectProperties {
       
-      @scala.inline
-      def apply(): InlineObjectProperties = {
+      inline def apply(): InlineObjectProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InlineObjectProperties]
       }
       
-      @scala.inline
-      implicit class InlineObjectPropertiesMutableBuilder[Self <: InlineObjectProperties] (val x: Self) extends AnyVal {
+      extension [Self <: InlineObjectProperties](x: Self) {
         
-        @scala.inline
-        def setEmbeddedObject(value: EmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
+        inline def setEmbeddedObject(value: EmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmbeddedObjectUndefined: Self = StObject.set(x, "embeddedObject", js.undefined)
+        inline def setEmbeddedObjectUndefined: Self = StObject.set(x, "embeddedObject", js.undefined)
       }
     }
     
@@ -2616,20 +2109,16 @@ object Docs {
     }
     object InlineObjectPropertiesSuggestionState {
       
-      @scala.inline
-      def apply(): InlineObjectPropertiesSuggestionState = {
+      inline def apply(): InlineObjectPropertiesSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InlineObjectPropertiesSuggestionState]
       }
       
-      @scala.inline
-      implicit class InlineObjectPropertiesSuggestionStateMutableBuilder[Self <: InlineObjectPropertiesSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: InlineObjectPropertiesSuggestionState](x: Self) {
         
-        @scala.inline
-        def setEmbeddedObjectSuggestionState(value: EmbeddedObjectSuggestionState): Self = StObject.set(x, "embeddedObjectSuggestionState", value.asInstanceOf[js.Any])
+        inline def setEmbeddedObjectSuggestionState(value: EmbeddedObjectSuggestionState): Self = StObject.set(x, "embeddedObjectSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmbeddedObjectSuggestionStateUndefined: Self = StObject.set(x, "embeddedObjectSuggestionState", js.undefined)
+        inline def setEmbeddedObjectSuggestionStateUndefined: Self = StObject.set(x, "embeddedObjectSuggestionState", js.undefined)
       }
     }
     
@@ -2645,38 +2134,28 @@ object Docs {
     }
     object InsertInlineImageRequest {
       
-      @scala.inline
-      def apply(): InsertInlineImageRequest = {
+      inline def apply(): InsertInlineImageRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InsertInlineImageRequest]
       }
       
-      @scala.inline
-      implicit class InsertInlineImageRequestMutableBuilder[Self <: InsertInlineImageRequest] (val x: Self) extends AnyVal {
+      extension [Self <: InsertInlineImageRequest](x: Self) {
         
-        @scala.inline
-        def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
+        inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
+        inline def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
         
-        @scala.inline
-        def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+        inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
         
-        @scala.inline
-        def setObjectSize(value: Size): Self = StObject.set(x, "objectSize", value.asInstanceOf[js.Any])
+        inline def setObjectSize(value: Size): Self = StObject.set(x, "objectSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectSizeUndefined: Self = StObject.set(x, "objectSize", js.undefined)
+        inline def setObjectSizeUndefined: Self = StObject.set(x, "objectSize", js.undefined)
         
-        @scala.inline
-        def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+        inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+        inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
       }
     }
     
@@ -2686,20 +2165,16 @@ object Docs {
     }
     object InsertInlineImageResponse {
       
-      @scala.inline
-      def apply(): InsertInlineImageResponse = {
+      inline def apply(): InsertInlineImageResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InsertInlineImageResponse]
       }
       
-      @scala.inline
-      implicit class InsertInlineImageResponseMutableBuilder[Self <: InsertInlineImageResponse] (val x: Self) extends AnyVal {
+      extension [Self <: InsertInlineImageResponse](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -2709,20 +2184,16 @@ object Docs {
     }
     object InsertInlineSheetsChartResponse {
       
-      @scala.inline
-      def apply(): InsertInlineSheetsChartResponse = {
+      inline def apply(): InsertInlineSheetsChartResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InsertInlineSheetsChartResponse]
       }
       
-      @scala.inline
-      implicit class InsertInlineSheetsChartResponseMutableBuilder[Self <: InsertInlineSheetsChartResponse] (val x: Self) extends AnyVal {
+      extension [Self <: InsertInlineSheetsChartResponse](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -2734,26 +2205,20 @@ object Docs {
     }
     object InsertPageBreakRequest {
       
-      @scala.inline
-      def apply(): InsertPageBreakRequest = {
+      inline def apply(): InsertPageBreakRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InsertPageBreakRequest]
       }
       
-      @scala.inline
-      implicit class InsertPageBreakRequestMutableBuilder[Self <: InsertPageBreakRequest] (val x: Self) extends AnyVal {
+      extension [Self <: InsertPageBreakRequest](x: Self) {
         
-        @scala.inline
-        def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
+        inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
+        inline def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
         
-        @scala.inline
-        def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+        inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       }
     }
     
@@ -2769,38 +2234,28 @@ object Docs {
     }
     object InsertTableRequest {
       
-      @scala.inline
-      def apply(): InsertTableRequest = {
+      inline def apply(): InsertTableRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InsertTableRequest]
       }
       
-      @scala.inline
-      implicit class InsertTableRequestMutableBuilder[Self <: InsertTableRequest] (val x: Self) extends AnyVal {
+      extension [Self <: InsertTableRequest](x: Self) {
         
-        @scala.inline
-        def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+        inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+        inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
         
-        @scala.inline
-        def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
+        inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
+        inline def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
         
-        @scala.inline
-        def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+        inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
         
-        @scala.inline
-        def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+        inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+        inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       }
     }
     
@@ -2812,26 +2267,20 @@ object Docs {
     }
     object InsertTableRowRequest {
       
-      @scala.inline
-      def apply(): InsertTableRowRequest = {
+      inline def apply(): InsertTableRowRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InsertTableRowRequest]
       }
       
-      @scala.inline
-      implicit class InsertTableRowRequestMutableBuilder[Self <: InsertTableRowRequest] (val x: Self) extends AnyVal {
+      extension [Self <: InsertTableRowRequest](x: Self) {
         
-        @scala.inline
-        def setInsertBelow(value: Boolean): Self = StObject.set(x, "insertBelow", value.asInstanceOf[js.Any])
+        inline def setInsertBelow(value: Boolean): Self = StObject.set(x, "insertBelow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertBelowUndefined: Self = StObject.set(x, "insertBelow", js.undefined)
+        inline def setInsertBelowUndefined: Self = StObject.set(x, "insertBelow", js.undefined)
         
-        @scala.inline
-        def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
+        inline def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
+        inline def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
       }
     }
     
@@ -2845,32 +2294,24 @@ object Docs {
     }
     object InsertTextRequest {
       
-      @scala.inline
-      def apply(): InsertTextRequest = {
+      inline def apply(): InsertTextRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InsertTextRequest]
       }
       
-      @scala.inline
-      implicit class InsertTextRequestMutableBuilder[Self <: InsertTextRequest] (val x: Self) extends AnyVal {
+      extension [Self <: InsertTextRequest](x: Self) {
         
-        @scala.inline
-        def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
+        inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
+        inline def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
         
-        @scala.inline
-        def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+        inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+        inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       }
     }
     
@@ -2884,32 +2325,24 @@ object Docs {
     }
     object Link {
       
-      @scala.inline
-      def apply(): Link = {
+      inline def apply(): Link = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Link]
       }
       
-      @scala.inline
-      implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+      extension [Self <: Link](x: Self) {
         
-        @scala.inline
-        def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
+        inline def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBookmarkIdUndefined: Self = StObject.set(x, "bookmarkId", js.undefined)
+        inline def setBookmarkIdUndefined: Self = StObject.set(x, "bookmarkId", js.undefined)
         
-        @scala.inline
-        def setHeadingId(value: String): Self = StObject.set(x, "headingId", value.asInstanceOf[js.Any])
+        inline def setHeadingId(value: String): Self = StObject.set(x, "headingId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadingIdUndefined: Self = StObject.set(x, "headingId", js.undefined)
+        inline def setHeadingIdUndefined: Self = StObject.set(x, "headingId", js.undefined)
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+        inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       }
     }
     
@@ -2919,20 +2352,16 @@ object Docs {
     }
     object LinkedContentReference {
       
-      @scala.inline
-      def apply(): LinkedContentReference = {
+      inline def apply(): LinkedContentReference = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LinkedContentReference]
       }
       
-      @scala.inline
-      implicit class LinkedContentReferenceMutableBuilder[Self <: LinkedContentReference] (val x: Self) extends AnyVal {
+      extension [Self <: LinkedContentReference](x: Self) {
         
-        @scala.inline
-        def setSheetsChartReference(value: SheetsChartReference): Self = StObject.set(x, "sheetsChartReference", value.asInstanceOf[js.Any])
+        inline def setSheetsChartReference(value: SheetsChartReference): Self = StObject.set(x, "sheetsChartReference", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSheetsChartReferenceUndefined: Self = StObject.set(x, "sheetsChartReference", js.undefined)
+        inline def setSheetsChartReferenceUndefined: Self = StObject.set(x, "sheetsChartReference", js.undefined)
       }
     }
     
@@ -2942,20 +2371,16 @@ object Docs {
     }
     object LinkedContentReferenceSuggestionState {
       
-      @scala.inline
-      def apply(): LinkedContentReferenceSuggestionState = {
+      inline def apply(): LinkedContentReferenceSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LinkedContentReferenceSuggestionState]
       }
       
-      @scala.inline
-      implicit class LinkedContentReferenceSuggestionStateMutableBuilder[Self <: LinkedContentReferenceSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: LinkedContentReferenceSuggestionState](x: Self) {
         
-        @scala.inline
-        def setSheetsChartReferenceSuggestionState(value: SheetsChartReferenceSuggestionState): Self = StObject.set(x, "sheetsChartReferenceSuggestionState", value.asInstanceOf[js.Any])
+        inline def setSheetsChartReferenceSuggestionState(value: SheetsChartReferenceSuggestionState): Self = StObject.set(x, "sheetsChartReferenceSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSheetsChartReferenceSuggestionStateUndefined: Self = StObject.set(x, "sheetsChartReferenceSuggestionState", js.undefined)
+        inline def setSheetsChartReferenceSuggestionStateUndefined: Self = StObject.set(x, "sheetsChartReferenceSuggestionState", js.undefined)
       }
     }
     
@@ -2971,41 +2396,30 @@ object Docs {
     }
     object List {
       
-      @scala.inline
-      def apply(): List = {
+      inline def apply(): List = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[List]
       }
       
-      @scala.inline
-      implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
+      extension [Self <: List](x: Self) {
         
-        @scala.inline
-        def setListProperties(value: ListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
+        inline def setListProperties(value: ListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListPropertiesUndefined: Self = StObject.set(x, "listProperties", js.undefined)
+        inline def setListPropertiesUndefined: Self = StObject.set(x, "listProperties", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdUndefined: Self = StObject.set(x, "suggestedInsertionId", js.undefined)
+        inline def setSuggestedInsertionIdUndefined: Self = StObject.set(x, "suggestedInsertionId", js.undefined)
         
-        @scala.inline
-        def setSuggestedListPropertiesChanges(value: js.Object): Self = StObject.set(x, "suggestedListPropertiesChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedListPropertiesChanges(value: js.Object): Self = StObject.set(x, "suggestedListPropertiesChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedListPropertiesChangesUndefined: Self = StObject.set(x, "suggestedListPropertiesChanges", js.undefined)
+        inline def setSuggestedListPropertiesChangesUndefined: Self = StObject.set(x, "suggestedListPropertiesChanges", js.undefined)
       }
     }
     
@@ -3015,23 +2429,18 @@ object Docs {
     }
     object ListProperties {
       
-      @scala.inline
-      def apply(): ListProperties = {
+      inline def apply(): ListProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListProperties]
       }
       
-      @scala.inline
-      implicit class ListPropertiesMutableBuilder[Self <: ListProperties] (val x: Self) extends AnyVal {
+      extension [Self <: ListProperties](x: Self) {
         
-        @scala.inline
-        def setNestingLevels(value: js.Array[NestingLevel]): Self = StObject.set(x, "nestingLevels", value.asInstanceOf[js.Any])
+        inline def setNestingLevels(value: js.Array[NestingLevel]): Self = StObject.set(x, "nestingLevels", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNestingLevelsUndefined: Self = StObject.set(x, "nestingLevels", js.undefined)
+        inline def setNestingLevelsUndefined: Self = StObject.set(x, "nestingLevels", js.undefined)
         
-        @scala.inline
-        def setNestingLevelsVarargs(value: NestingLevel*): Self = StObject.set(x, "nestingLevels", js.Array(value :_*))
+        inline def setNestingLevelsVarargs(value: NestingLevel*): Self = StObject.set(x, "nestingLevels", js.Array(value :_*))
       }
     }
     
@@ -3041,23 +2450,18 @@ object Docs {
     }
     object ListPropertiesSuggestionState {
       
-      @scala.inline
-      def apply(): ListPropertiesSuggestionState = {
+      inline def apply(): ListPropertiesSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListPropertiesSuggestionState]
       }
       
-      @scala.inline
-      implicit class ListPropertiesSuggestionStateMutableBuilder[Self <: ListPropertiesSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: ListPropertiesSuggestionState](x: Self) {
         
-        @scala.inline
-        def setNestingLevelsSuggestionStates(value: js.Array[NestingLevelSuggestionState]): Self = StObject.set(x, "nestingLevelsSuggestionStates", value.asInstanceOf[js.Any])
+        inline def setNestingLevelsSuggestionStates(value: js.Array[NestingLevelSuggestionState]): Self = StObject.set(x, "nestingLevelsSuggestionStates", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNestingLevelsSuggestionStatesUndefined: Self = StObject.set(x, "nestingLevelsSuggestionStates", js.undefined)
+        inline def setNestingLevelsSuggestionStatesUndefined: Self = StObject.set(x, "nestingLevelsSuggestionStates", js.undefined)
         
-        @scala.inline
-        def setNestingLevelsSuggestionStatesVarargs(value: NestingLevelSuggestionState*): Self = StObject.set(x, "nestingLevelsSuggestionStates", js.Array(value :_*))
+        inline def setNestingLevelsSuggestionStatesVarargs(value: NestingLevelSuggestionState*): Self = StObject.set(x, "nestingLevelsSuggestionStates", js.Array(value :_*))
       }
     }
     
@@ -3069,26 +2473,20 @@ object Docs {
     }
     object Location {
       
-      @scala.inline
-      def apply(): Location = {
+      inline def apply(): Location = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Location]
       }
       
-      @scala.inline
-      implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+      extension [Self <: Location](x: Self) {
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+        inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
         
-        @scala.inline
-        def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
+        inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
+        inline def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
       }
     }
     
@@ -3102,35 +2500,26 @@ object Docs {
     }
     object NamedRange {
       
-      @scala.inline
-      def apply(): NamedRange = {
+      inline def apply(): NamedRange = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NamedRange]
       }
       
-      @scala.inline
-      implicit class NamedRangeMutableBuilder[Self <: NamedRange] (val x: Self) extends AnyVal {
+      extension [Self <: NamedRange](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
+        inline def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
+        inline def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
         
-        @scala.inline
-        def setRanges(value: js.Array[Range]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+        inline def setRanges(value: js.Array[Range]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+        inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
         
-        @scala.inline
-        def setRangesVarargs(value: Range*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+        inline def setRangesVarargs(value: Range*): Self = StObject.set(x, "ranges", js.Array(value :_*))
       }
     }
     
@@ -3142,29 +2531,22 @@ object Docs {
     }
     object NamedRanges {
       
-      @scala.inline
-      def apply(): NamedRanges = {
+      inline def apply(): NamedRanges = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NamedRanges]
       }
       
-      @scala.inline
-      implicit class NamedRangesMutableBuilder[Self <: NamedRanges] (val x: Self) extends AnyVal {
+      extension [Self <: NamedRanges](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNamedRanges(value: js.Array[NamedRange]): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
+        inline def setNamedRanges(value: js.Array[NamedRange]): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
+        inline def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
         
-        @scala.inline
-        def setNamedRangesVarargs(value: NamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value :_*))
+        inline def setNamedRangesVarargs(value: NamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value :_*))
       }
     }
     
@@ -3178,32 +2560,24 @@ object Docs {
     }
     object NamedStyle {
       
-      @scala.inline
-      def apply(): NamedStyle = {
+      inline def apply(): NamedStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NamedStyle]
       }
       
-      @scala.inline
-      implicit class NamedStyleMutableBuilder[Self <: NamedStyle] (val x: Self) extends AnyVal {
+      extension [Self <: NamedStyle](x: Self) {
         
-        @scala.inline
-        def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
+        inline def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
+        inline def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
         
-        @scala.inline
-        def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
+        inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
+        inline def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
         
-        @scala.inline
-        def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+        inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+        inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       }
     }
     
@@ -3217,32 +2591,24 @@ object Docs {
     }
     object NamedStyleSuggestionState {
       
-      @scala.inline
-      def apply(): NamedStyleSuggestionState = {
+      inline def apply(): NamedStyleSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NamedStyleSuggestionState]
       }
       
-      @scala.inline
-      implicit class NamedStyleSuggestionStateMutableBuilder[Self <: NamedStyleSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: NamedStyleSuggestionState](x: Self) {
         
-        @scala.inline
-        def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
+        inline def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
+        inline def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
         
-        @scala.inline
-        def setParagraphStyleSuggestionState(value: ParagraphStyleSuggestionState): Self = StObject.set(x, "paragraphStyleSuggestionState", value.asInstanceOf[js.Any])
+        inline def setParagraphStyleSuggestionState(value: ParagraphStyleSuggestionState): Self = StObject.set(x, "paragraphStyleSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParagraphStyleSuggestionStateUndefined: Self = StObject.set(x, "paragraphStyleSuggestionState", js.undefined)
+        inline def setParagraphStyleSuggestionStateUndefined: Self = StObject.set(x, "paragraphStyleSuggestionState", js.undefined)
         
-        @scala.inline
-        def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
+        inline def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
+        inline def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
       }
     }
     
@@ -3252,23 +2618,18 @@ object Docs {
     }
     object NamedStyles {
       
-      @scala.inline
-      def apply(): NamedStyles = {
+      inline def apply(): NamedStyles = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NamedStyles]
       }
       
-      @scala.inline
-      implicit class NamedStylesMutableBuilder[Self <: NamedStyles] (val x: Self) extends AnyVal {
+      extension [Self <: NamedStyles](x: Self) {
         
-        @scala.inline
-        def setStyles(value: js.Array[NamedStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+        inline def setStyles(value: js.Array[NamedStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+        inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
         
-        @scala.inline
-        def setStylesVarargs(value: NamedStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+        inline def setStylesVarargs(value: NamedStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
       }
     }
     
@@ -3278,23 +2639,18 @@ object Docs {
     }
     object NamedStylesSuggestionState {
       
-      @scala.inline
-      def apply(): NamedStylesSuggestionState = {
+      inline def apply(): NamedStylesSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NamedStylesSuggestionState]
       }
       
-      @scala.inline
-      implicit class NamedStylesSuggestionStateMutableBuilder[Self <: NamedStylesSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: NamedStylesSuggestionState](x: Self) {
         
-        @scala.inline
-        def setStylesSuggestionStates(value: js.Array[NamedStyleSuggestionState]): Self = StObject.set(x, "stylesSuggestionStates", value.asInstanceOf[js.Any])
+        inline def setStylesSuggestionStates(value: js.Array[NamedStyleSuggestionState]): Self = StObject.set(x, "stylesSuggestionStates", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStylesSuggestionStatesUndefined: Self = StObject.set(x, "stylesSuggestionStates", js.undefined)
+        inline def setStylesSuggestionStatesUndefined: Self = StObject.set(x, "stylesSuggestionStates", js.undefined)
         
-        @scala.inline
-        def setStylesSuggestionStatesVarargs(value: NamedStyleSuggestionState*): Self = StObject.set(x, "stylesSuggestionStates", js.Array(value :_*))
+        inline def setStylesSuggestionStatesVarargs(value: NamedStyleSuggestionState*): Self = StObject.set(x, "stylesSuggestionStates", js.Array(value :_*))
       }
     }
     
@@ -3318,62 +2674,44 @@ object Docs {
     }
     object NestingLevel {
       
-      @scala.inline
-      def apply(): NestingLevel = {
+      inline def apply(): NestingLevel = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NestingLevel]
       }
       
-      @scala.inline
-      implicit class NestingLevelMutableBuilder[Self <: NestingLevel] (val x: Self) extends AnyVal {
+      extension [Self <: NestingLevel](x: Self) {
         
-        @scala.inline
-        def setBulletAlignment(value: String): Self = StObject.set(x, "bulletAlignment", value.asInstanceOf[js.Any])
+        inline def setBulletAlignment(value: String): Self = StObject.set(x, "bulletAlignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBulletAlignmentUndefined: Self = StObject.set(x, "bulletAlignment", js.undefined)
+        inline def setBulletAlignmentUndefined: Self = StObject.set(x, "bulletAlignment", js.undefined)
         
-        @scala.inline
-        def setGlyphFormat(value: String): Self = StObject.set(x, "glyphFormat", value.asInstanceOf[js.Any])
+        inline def setGlyphFormat(value: String): Self = StObject.set(x, "glyphFormat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGlyphFormatUndefined: Self = StObject.set(x, "glyphFormat", js.undefined)
+        inline def setGlyphFormatUndefined: Self = StObject.set(x, "glyphFormat", js.undefined)
         
-        @scala.inline
-        def setGlyphSymbol(value: String): Self = StObject.set(x, "glyphSymbol", value.asInstanceOf[js.Any])
+        inline def setGlyphSymbol(value: String): Self = StObject.set(x, "glyphSymbol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGlyphSymbolUndefined: Self = StObject.set(x, "glyphSymbol", js.undefined)
+        inline def setGlyphSymbolUndefined: Self = StObject.set(x, "glyphSymbol", js.undefined)
         
-        @scala.inline
-        def setGlyphType(value: String): Self = StObject.set(x, "glyphType", value.asInstanceOf[js.Any])
+        inline def setGlyphType(value: String): Self = StObject.set(x, "glyphType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGlyphTypeUndefined: Self = StObject.set(x, "glyphType", js.undefined)
+        inline def setGlyphTypeUndefined: Self = StObject.set(x, "glyphType", js.undefined)
         
-        @scala.inline
-        def setIndentFirstLine(value: Dimension): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
+        inline def setIndentFirstLine(value: Dimension): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
+        inline def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
         
-        @scala.inline
-        def setIndentStart(value: Dimension): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
+        inline def setIndentStart(value: Dimension): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentStartUndefined: Self = StObject.set(x, "indentStart", js.undefined)
+        inline def setIndentStartUndefined: Self = StObject.set(x, "indentStart", js.undefined)
         
-        @scala.inline
-        def setStartNumber(value: Double): Self = StObject.set(x, "startNumber", value.asInstanceOf[js.Any])
+        inline def setStartNumber(value: Double): Self = StObject.set(x, "startNumber", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartNumberUndefined: Self = StObject.set(x, "startNumber", js.undefined)
+        inline def setStartNumberUndefined: Self = StObject.set(x, "startNumber", js.undefined)
         
-        @scala.inline
-        def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+        inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+        inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       }
     }
     
@@ -3397,62 +2735,44 @@ object Docs {
     }
     object NestingLevelSuggestionState {
       
-      @scala.inline
-      def apply(): NestingLevelSuggestionState = {
+      inline def apply(): NestingLevelSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NestingLevelSuggestionState]
       }
       
-      @scala.inline
-      implicit class NestingLevelSuggestionStateMutableBuilder[Self <: NestingLevelSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: NestingLevelSuggestionState](x: Self) {
         
-        @scala.inline
-        def setBulletAlignmentSuggested(value: Boolean): Self = StObject.set(x, "bulletAlignmentSuggested", value.asInstanceOf[js.Any])
+        inline def setBulletAlignmentSuggested(value: Boolean): Self = StObject.set(x, "bulletAlignmentSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBulletAlignmentSuggestedUndefined: Self = StObject.set(x, "bulletAlignmentSuggested", js.undefined)
+        inline def setBulletAlignmentSuggestedUndefined: Self = StObject.set(x, "bulletAlignmentSuggested", js.undefined)
         
-        @scala.inline
-        def setGlyphFormatSuggested(value: Boolean): Self = StObject.set(x, "glyphFormatSuggested", value.asInstanceOf[js.Any])
+        inline def setGlyphFormatSuggested(value: Boolean): Self = StObject.set(x, "glyphFormatSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGlyphFormatSuggestedUndefined: Self = StObject.set(x, "glyphFormatSuggested", js.undefined)
+        inline def setGlyphFormatSuggestedUndefined: Self = StObject.set(x, "glyphFormatSuggested", js.undefined)
         
-        @scala.inline
-        def setGlyphSymbolSuggested(value: Boolean): Self = StObject.set(x, "glyphSymbolSuggested", value.asInstanceOf[js.Any])
+        inline def setGlyphSymbolSuggested(value: Boolean): Self = StObject.set(x, "glyphSymbolSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGlyphSymbolSuggestedUndefined: Self = StObject.set(x, "glyphSymbolSuggested", js.undefined)
+        inline def setGlyphSymbolSuggestedUndefined: Self = StObject.set(x, "glyphSymbolSuggested", js.undefined)
         
-        @scala.inline
-        def setGlyphTypeSuggested(value: Boolean): Self = StObject.set(x, "glyphTypeSuggested", value.asInstanceOf[js.Any])
+        inline def setGlyphTypeSuggested(value: Boolean): Self = StObject.set(x, "glyphTypeSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGlyphTypeSuggestedUndefined: Self = StObject.set(x, "glyphTypeSuggested", js.undefined)
+        inline def setGlyphTypeSuggestedUndefined: Self = StObject.set(x, "glyphTypeSuggested", js.undefined)
         
-        @scala.inline
-        def setIndentFirstLineSuggested(value: Boolean): Self = StObject.set(x, "indentFirstLineSuggested", value.asInstanceOf[js.Any])
+        inline def setIndentFirstLineSuggested(value: Boolean): Self = StObject.set(x, "indentFirstLineSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentFirstLineSuggestedUndefined: Self = StObject.set(x, "indentFirstLineSuggested", js.undefined)
+        inline def setIndentFirstLineSuggestedUndefined: Self = StObject.set(x, "indentFirstLineSuggested", js.undefined)
         
-        @scala.inline
-        def setIndentStartSuggested(value: Boolean): Self = StObject.set(x, "indentStartSuggested", value.asInstanceOf[js.Any])
+        inline def setIndentStartSuggested(value: Boolean): Self = StObject.set(x, "indentStartSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentStartSuggestedUndefined: Self = StObject.set(x, "indentStartSuggested", js.undefined)
+        inline def setIndentStartSuggestedUndefined: Self = StObject.set(x, "indentStartSuggested", js.undefined)
         
-        @scala.inline
-        def setStartNumberSuggested(value: Boolean): Self = StObject.set(x, "startNumberSuggested", value.asInstanceOf[js.Any])
+        inline def setStartNumberSuggested(value: Boolean): Self = StObject.set(x, "startNumberSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartNumberSuggestedUndefined: Self = StObject.set(x, "startNumberSuggested", js.undefined)
+        inline def setStartNumberSuggestedUndefined: Self = StObject.set(x, "startNumberSuggested", js.undefined)
         
-        @scala.inline
-        def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
+        inline def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
+        inline def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
       }
     }
     
@@ -3462,23 +2782,18 @@ object Docs {
     }
     object ObjectReferences {
       
-      @scala.inline
-      def apply(): ObjectReferences = {
+      inline def apply(): ObjectReferences = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ObjectReferences]
       }
       
-      @scala.inline
-      implicit class ObjectReferencesMutableBuilder[Self <: ObjectReferences] (val x: Self) extends AnyVal {
+      extension [Self <: ObjectReferences](x: Self) {
         
-        @scala.inline
-        def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
+        inline def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
+        inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
         
-        @scala.inline
-        def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+        inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
       }
     }
     
@@ -3488,20 +2803,16 @@ object Docs {
     }
     object OptionalColor {
       
-      @scala.inline
-      def apply(): OptionalColor = {
+      inline def apply(): OptionalColor = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[OptionalColor]
       }
       
-      @scala.inline
-      implicit class OptionalColorMutableBuilder[Self <: OptionalColor] (val x: Self) extends AnyVal {
+      extension [Self <: OptionalColor](x: Self) {
         
-        @scala.inline
-        def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       }
     }
     
@@ -3517,44 +2828,32 @@ object Docs {
     }
     object PageBreak {
       
-      @scala.inline
-      def apply(): PageBreak = {
+      inline def apply(): PageBreak = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PageBreak]
       }
       
-      @scala.inline
-      implicit class PageBreakMutableBuilder[Self <: PageBreak] (val x: Self) extends AnyVal {
+      extension [Self <: PageBreak](x: Self) {
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
+        inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
+        inline def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
         
-        @scala.inline
-        def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+        inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+        inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       }
     }
     
@@ -3576,62 +2875,44 @@ object Docs {
     }
     object Paragraph {
       
-      @scala.inline
-      def apply(): Paragraph = {
+      inline def apply(): Paragraph = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Paragraph]
       }
       
-      @scala.inline
-      implicit class ParagraphMutableBuilder[Self <: Paragraph] (val x: Self) extends AnyVal {
+      extension [Self <: Paragraph](x: Self) {
         
-        @scala.inline
-        def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+        inline def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
+        inline def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
         
-        @scala.inline
-        def setElements(value: js.Array[ParagraphElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+        inline def setElements(value: js.Array[ParagraphElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+        inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
         
-        @scala.inline
-        def setElementsVarargs(value: ParagraphElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
+        inline def setElementsVarargs(value: ParagraphElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
         
-        @scala.inline
-        def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
+        inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
+        inline def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
         
-        @scala.inline
-        def setPositionedObjectIds(value: js.Array[String]): Self = StObject.set(x, "positionedObjectIds", value.asInstanceOf[js.Any])
+        inline def setPositionedObjectIds(value: js.Array[String]): Self = StObject.set(x, "positionedObjectIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionedObjectIdsUndefined: Self = StObject.set(x, "positionedObjectIds", js.undefined)
+        inline def setPositionedObjectIdsUndefined: Self = StObject.set(x, "positionedObjectIds", js.undefined)
         
-        @scala.inline
-        def setPositionedObjectIdsVarargs(value: String*): Self = StObject.set(x, "positionedObjectIds", js.Array(value :_*))
+        inline def setPositionedObjectIdsVarargs(value: String*): Self = StObject.set(x, "positionedObjectIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedBulletChanges(value: js.Object): Self = StObject.set(x, "suggestedBulletChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedBulletChanges(value: js.Object): Self = StObject.set(x, "suggestedBulletChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedBulletChangesUndefined: Self = StObject.set(x, "suggestedBulletChanges", js.undefined)
+        inline def setSuggestedBulletChangesUndefined: Self = StObject.set(x, "suggestedBulletChanges", js.undefined)
         
-        @scala.inline
-        def setSuggestedParagraphStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedParagraphStyleChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedParagraphStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedParagraphStyleChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedParagraphStyleChangesUndefined: Self = StObject.set(x, "suggestedParagraphStyleChanges", js.undefined)
+        inline def setSuggestedParagraphStyleChangesUndefined: Self = StObject.set(x, "suggestedParagraphStyleChanges", js.undefined)
         
-        @scala.inline
-        def setSuggestedPositionedObjectIds(value: js.Object): Self = StObject.set(x, "suggestedPositionedObjectIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedPositionedObjectIds(value: js.Object): Self = StObject.set(x, "suggestedPositionedObjectIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedPositionedObjectIdsUndefined: Self = StObject.set(x, "suggestedPositionedObjectIds", js.undefined)
+        inline def setSuggestedPositionedObjectIdsUndefined: Self = StObject.set(x, "suggestedPositionedObjectIds", js.undefined)
       }
     }
     
@@ -3647,38 +2928,28 @@ object Docs {
     }
     object ParagraphBorder {
       
-      @scala.inline
-      def apply(): ParagraphBorder = {
+      inline def apply(): ParagraphBorder = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParagraphBorder]
       }
       
-      @scala.inline
-      implicit class ParagraphBorderMutableBuilder[Self <: ParagraphBorder] (val x: Self) extends AnyVal {
+      extension [Self <: ParagraphBorder](x: Self) {
         
-        @scala.inline
-        def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+        inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+        inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
         
-        @scala.inline
-        def setPadding(value: Dimension): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+        inline def setPadding(value: Dimension): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+        inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
         
-        @scala.inline
-        def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       }
     }
     
@@ -3706,74 +2977,52 @@ object Docs {
     }
     object ParagraphElement {
       
-      @scala.inline
-      def apply(): ParagraphElement = {
+      inline def apply(): ParagraphElement = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParagraphElement]
       }
       
-      @scala.inline
-      implicit class ParagraphElementMutableBuilder[Self <: ParagraphElement] (val x: Self) extends AnyVal {
+      extension [Self <: ParagraphElement](x: Self) {
         
-        @scala.inline
-        def setAutoText(value: AutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
+        inline def setAutoText(value: AutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
+        inline def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
         
-        @scala.inline
-        def setColumnBreak(value: ColumnBreak): Self = StObject.set(x, "columnBreak", value.asInstanceOf[js.Any])
+        inline def setColumnBreak(value: ColumnBreak): Self = StObject.set(x, "columnBreak", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnBreakUndefined: Self = StObject.set(x, "columnBreak", js.undefined)
+        inline def setColumnBreakUndefined: Self = StObject.set(x, "columnBreak", js.undefined)
         
-        @scala.inline
-        def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+        inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+        inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
         
-        @scala.inline
-        def setEquation(value: Equation): Self = StObject.set(x, "equation", value.asInstanceOf[js.Any])
+        inline def setEquation(value: Equation): Self = StObject.set(x, "equation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEquationUndefined: Self = StObject.set(x, "equation", js.undefined)
+        inline def setEquationUndefined: Self = StObject.set(x, "equation", js.undefined)
         
-        @scala.inline
-        def setFootnoteReference(value: FootnoteReference): Self = StObject.set(x, "footnoteReference", value.asInstanceOf[js.Any])
+        inline def setFootnoteReference(value: FootnoteReference): Self = StObject.set(x, "footnoteReference", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFootnoteReferenceUndefined: Self = StObject.set(x, "footnoteReference", js.undefined)
+        inline def setFootnoteReferenceUndefined: Self = StObject.set(x, "footnoteReference", js.undefined)
         
-        @scala.inline
-        def setHorizontalRule(value: HorizontalRule): Self = StObject.set(x, "horizontalRule", value.asInstanceOf[js.Any])
+        inline def setHorizontalRule(value: HorizontalRule): Self = StObject.set(x, "horizontalRule", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHorizontalRuleUndefined: Self = StObject.set(x, "horizontalRule", js.undefined)
+        inline def setHorizontalRuleUndefined: Self = StObject.set(x, "horizontalRule", js.undefined)
         
-        @scala.inline
-        def setInlineObjectElement(value: InlineObjectElement): Self = StObject.set(x, "inlineObjectElement", value.asInstanceOf[js.Any])
+        inline def setInlineObjectElement(value: InlineObjectElement): Self = StObject.set(x, "inlineObjectElement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInlineObjectElementUndefined: Self = StObject.set(x, "inlineObjectElement", js.undefined)
+        inline def setInlineObjectElementUndefined: Self = StObject.set(x, "inlineObjectElement", js.undefined)
         
-        @scala.inline
-        def setPageBreak(value: PageBreak): Self = StObject.set(x, "pageBreak", value.asInstanceOf[js.Any])
+        inline def setPageBreak(value: PageBreak): Self = StObject.set(x, "pageBreak", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageBreakUndefined: Self = StObject.set(x, "pageBreak", js.undefined)
+        inline def setPageBreakUndefined: Self = StObject.set(x, "pageBreak", js.undefined)
         
-        @scala.inline
-        def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+        inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+        inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
         
-        @scala.inline
-        def setTextRun(value: TextRun): Self = StObject.set(x, "textRun", value.asInstanceOf[js.Any])
+        inline def setTextRun(value: TextRun): Self = StObject.set(x, "textRun", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextRunUndefined: Self = StObject.set(x, "textRun", js.undefined)
+        inline def setTextRunUndefined: Self = StObject.set(x, "textRun", js.undefined)
       }
     }
     
@@ -3823,143 +3072,98 @@ object Docs {
     }
     object ParagraphStyle {
       
-      @scala.inline
-      def apply(): ParagraphStyle = {
+      inline def apply(): ParagraphStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParagraphStyle]
       }
       
-      @scala.inline
-      implicit class ParagraphStyleMutableBuilder[Self <: ParagraphStyle] (val x: Self) extends AnyVal {
+      extension [Self <: ParagraphStyle](x: Self) {
         
-        @scala.inline
-        def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+        inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+        inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
         
-        @scala.inline
-        def setAvoidWidowAndOrphan(value: Boolean): Self = StObject.set(x, "avoidWidowAndOrphan", value.asInstanceOf[js.Any])
+        inline def setAvoidWidowAndOrphan(value: Boolean): Self = StObject.set(x, "avoidWidowAndOrphan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAvoidWidowAndOrphanUndefined: Self = StObject.set(x, "avoidWidowAndOrphan", js.undefined)
+        inline def setAvoidWidowAndOrphanUndefined: Self = StObject.set(x, "avoidWidowAndOrphan", js.undefined)
         
-        @scala.inline
-        def setBorderBetween(value: ParagraphBorder): Self = StObject.set(x, "borderBetween", value.asInstanceOf[js.Any])
+        inline def setBorderBetween(value: ParagraphBorder): Self = StObject.set(x, "borderBetween", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderBetweenUndefined: Self = StObject.set(x, "borderBetween", js.undefined)
+        inline def setBorderBetweenUndefined: Self = StObject.set(x, "borderBetween", js.undefined)
         
-        @scala.inline
-        def setBorderBottom(value: ParagraphBorder): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+        inline def setBorderBottom(value: ParagraphBorder): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+        inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
         
-        @scala.inline
-        def setBorderLeft(value: ParagraphBorder): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+        inline def setBorderLeft(value: ParagraphBorder): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
+        inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
         
-        @scala.inline
-        def setBorderRight(value: ParagraphBorder): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+        inline def setBorderRight(value: ParagraphBorder): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
+        inline def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
         
-        @scala.inline
-        def setBorderTop(value: ParagraphBorder): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+        inline def setBorderTop(value: ParagraphBorder): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
+        inline def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
         
-        @scala.inline
-        def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+        inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+        inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
         
-        @scala.inline
-        def setHeadingId(value: String): Self = StObject.set(x, "headingId", value.asInstanceOf[js.Any])
+        inline def setHeadingId(value: String): Self = StObject.set(x, "headingId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadingIdUndefined: Self = StObject.set(x, "headingId", js.undefined)
+        inline def setHeadingIdUndefined: Self = StObject.set(x, "headingId", js.undefined)
         
-        @scala.inline
-        def setIndentEnd(value: Dimension): Self = StObject.set(x, "indentEnd", value.asInstanceOf[js.Any])
+        inline def setIndentEnd(value: Dimension): Self = StObject.set(x, "indentEnd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentEndUndefined: Self = StObject.set(x, "indentEnd", js.undefined)
+        inline def setIndentEndUndefined: Self = StObject.set(x, "indentEnd", js.undefined)
         
-        @scala.inline
-        def setIndentFirstLine(value: Dimension): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
+        inline def setIndentFirstLine(value: Dimension): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
+        inline def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
         
-        @scala.inline
-        def setIndentStart(value: Dimension): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
+        inline def setIndentStart(value: Dimension): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentStartUndefined: Self = StObject.set(x, "indentStart", js.undefined)
+        inline def setIndentStartUndefined: Self = StObject.set(x, "indentStart", js.undefined)
         
-        @scala.inline
-        def setKeepLinesTogether(value: Boolean): Self = StObject.set(x, "keepLinesTogether", value.asInstanceOf[js.Any])
+        inline def setKeepLinesTogether(value: Boolean): Self = StObject.set(x, "keepLinesTogether", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeepLinesTogetherUndefined: Self = StObject.set(x, "keepLinesTogether", js.undefined)
+        inline def setKeepLinesTogetherUndefined: Self = StObject.set(x, "keepLinesTogether", js.undefined)
         
-        @scala.inline
-        def setKeepWithNext(value: Boolean): Self = StObject.set(x, "keepWithNext", value.asInstanceOf[js.Any])
+        inline def setKeepWithNext(value: Boolean): Self = StObject.set(x, "keepWithNext", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeepWithNextUndefined: Self = StObject.set(x, "keepWithNext", js.undefined)
+        inline def setKeepWithNextUndefined: Self = StObject.set(x, "keepWithNext", js.undefined)
         
-        @scala.inline
-        def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
+        inline def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
+        inline def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
         
-        @scala.inline
-        def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
+        inline def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
+        inline def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
         
-        @scala.inline
-        def setShading(value: Shading): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
+        inline def setShading(value: Shading): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
+        inline def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
         
-        @scala.inline
-        def setSpaceAbove(value: Dimension): Self = StObject.set(x, "spaceAbove", value.asInstanceOf[js.Any])
+        inline def setSpaceAbove(value: Dimension): Self = StObject.set(x, "spaceAbove", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpaceAboveUndefined: Self = StObject.set(x, "spaceAbove", js.undefined)
+        inline def setSpaceAboveUndefined: Self = StObject.set(x, "spaceAbove", js.undefined)
         
-        @scala.inline
-        def setSpaceBelow(value: Dimension): Self = StObject.set(x, "spaceBelow", value.asInstanceOf[js.Any])
+        inline def setSpaceBelow(value: Dimension): Self = StObject.set(x, "spaceBelow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpaceBelowUndefined: Self = StObject.set(x, "spaceBelow", js.undefined)
+        inline def setSpaceBelowUndefined: Self = StObject.set(x, "spaceBelow", js.undefined)
         
-        @scala.inline
-        def setSpacingMode(value: String): Self = StObject.set(x, "spacingMode", value.asInstanceOf[js.Any])
+        inline def setSpacingMode(value: String): Self = StObject.set(x, "spacingMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpacingModeUndefined: Self = StObject.set(x, "spacingMode", js.undefined)
+        inline def setSpacingModeUndefined: Self = StObject.set(x, "spacingMode", js.undefined)
         
-        @scala.inline
-        def setTabStops(value: js.Array[TabStop]): Self = StObject.set(x, "tabStops", value.asInstanceOf[js.Any])
+        inline def setTabStops(value: js.Array[TabStop]): Self = StObject.set(x, "tabStops", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTabStopsUndefined: Self = StObject.set(x, "tabStops", js.undefined)
+        inline def setTabStopsUndefined: Self = StObject.set(x, "tabStops", js.undefined)
         
-        @scala.inline
-        def setTabStopsVarargs(value: TabStop*): Self = StObject.set(x, "tabStops", js.Array(value :_*))
+        inline def setTabStopsVarargs(value: TabStop*): Self = StObject.set(x, "tabStops", js.Array(value :_*))
       }
     }
     
@@ -4007,134 +3211,92 @@ object Docs {
     }
     object ParagraphStyleSuggestionState {
       
-      @scala.inline
-      def apply(): ParagraphStyleSuggestionState = {
+      inline def apply(): ParagraphStyleSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParagraphStyleSuggestionState]
       }
       
-      @scala.inline
-      implicit class ParagraphStyleSuggestionStateMutableBuilder[Self <: ParagraphStyleSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: ParagraphStyleSuggestionState](x: Self) {
         
-        @scala.inline
-        def setAlignmentSuggested(value: Boolean): Self = StObject.set(x, "alignmentSuggested", value.asInstanceOf[js.Any])
+        inline def setAlignmentSuggested(value: Boolean): Self = StObject.set(x, "alignmentSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlignmentSuggestedUndefined: Self = StObject.set(x, "alignmentSuggested", js.undefined)
+        inline def setAlignmentSuggestedUndefined: Self = StObject.set(x, "alignmentSuggested", js.undefined)
         
-        @scala.inline
-        def setAvoidWidowAndOrphanSuggested(value: Boolean): Self = StObject.set(x, "avoidWidowAndOrphanSuggested", value.asInstanceOf[js.Any])
+        inline def setAvoidWidowAndOrphanSuggested(value: Boolean): Self = StObject.set(x, "avoidWidowAndOrphanSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAvoidWidowAndOrphanSuggestedUndefined: Self = StObject.set(x, "avoidWidowAndOrphanSuggested", js.undefined)
+        inline def setAvoidWidowAndOrphanSuggestedUndefined: Self = StObject.set(x, "avoidWidowAndOrphanSuggested", js.undefined)
         
-        @scala.inline
-        def setBorderBetweenSuggested(value: Boolean): Self = StObject.set(x, "borderBetweenSuggested", value.asInstanceOf[js.Any])
+        inline def setBorderBetweenSuggested(value: Boolean): Self = StObject.set(x, "borderBetweenSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderBetweenSuggestedUndefined: Self = StObject.set(x, "borderBetweenSuggested", js.undefined)
+        inline def setBorderBetweenSuggestedUndefined: Self = StObject.set(x, "borderBetweenSuggested", js.undefined)
         
-        @scala.inline
-        def setBorderBottomSuggested(value: Boolean): Self = StObject.set(x, "borderBottomSuggested", value.asInstanceOf[js.Any])
+        inline def setBorderBottomSuggested(value: Boolean): Self = StObject.set(x, "borderBottomSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderBottomSuggestedUndefined: Self = StObject.set(x, "borderBottomSuggested", js.undefined)
+        inline def setBorderBottomSuggestedUndefined: Self = StObject.set(x, "borderBottomSuggested", js.undefined)
         
-        @scala.inline
-        def setBorderLeftSuggested(value: Boolean): Self = StObject.set(x, "borderLeftSuggested", value.asInstanceOf[js.Any])
+        inline def setBorderLeftSuggested(value: Boolean): Self = StObject.set(x, "borderLeftSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderLeftSuggestedUndefined: Self = StObject.set(x, "borderLeftSuggested", js.undefined)
+        inline def setBorderLeftSuggestedUndefined: Self = StObject.set(x, "borderLeftSuggested", js.undefined)
         
-        @scala.inline
-        def setBorderRightSuggested(value: Boolean): Self = StObject.set(x, "borderRightSuggested", value.asInstanceOf[js.Any])
+        inline def setBorderRightSuggested(value: Boolean): Self = StObject.set(x, "borderRightSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderRightSuggestedUndefined: Self = StObject.set(x, "borderRightSuggested", js.undefined)
+        inline def setBorderRightSuggestedUndefined: Self = StObject.set(x, "borderRightSuggested", js.undefined)
         
-        @scala.inline
-        def setBorderTopSuggested(value: Boolean): Self = StObject.set(x, "borderTopSuggested", value.asInstanceOf[js.Any])
+        inline def setBorderTopSuggested(value: Boolean): Self = StObject.set(x, "borderTopSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderTopSuggestedUndefined: Self = StObject.set(x, "borderTopSuggested", js.undefined)
+        inline def setBorderTopSuggestedUndefined: Self = StObject.set(x, "borderTopSuggested", js.undefined)
         
-        @scala.inline
-        def setDirectionSuggested(value: Boolean): Self = StObject.set(x, "directionSuggested", value.asInstanceOf[js.Any])
+        inline def setDirectionSuggested(value: Boolean): Self = StObject.set(x, "directionSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDirectionSuggestedUndefined: Self = StObject.set(x, "directionSuggested", js.undefined)
+        inline def setDirectionSuggestedUndefined: Self = StObject.set(x, "directionSuggested", js.undefined)
         
-        @scala.inline
-        def setHeadingIdSuggested(value: Boolean): Self = StObject.set(x, "headingIdSuggested", value.asInstanceOf[js.Any])
+        inline def setHeadingIdSuggested(value: Boolean): Self = StObject.set(x, "headingIdSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadingIdSuggestedUndefined: Self = StObject.set(x, "headingIdSuggested", js.undefined)
+        inline def setHeadingIdSuggestedUndefined: Self = StObject.set(x, "headingIdSuggested", js.undefined)
         
-        @scala.inline
-        def setIndentEndSuggested(value: Boolean): Self = StObject.set(x, "indentEndSuggested", value.asInstanceOf[js.Any])
+        inline def setIndentEndSuggested(value: Boolean): Self = StObject.set(x, "indentEndSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentEndSuggestedUndefined: Self = StObject.set(x, "indentEndSuggested", js.undefined)
+        inline def setIndentEndSuggestedUndefined: Self = StObject.set(x, "indentEndSuggested", js.undefined)
         
-        @scala.inline
-        def setIndentFirstLineSuggested(value: Boolean): Self = StObject.set(x, "indentFirstLineSuggested", value.asInstanceOf[js.Any])
+        inline def setIndentFirstLineSuggested(value: Boolean): Self = StObject.set(x, "indentFirstLineSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentFirstLineSuggestedUndefined: Self = StObject.set(x, "indentFirstLineSuggested", js.undefined)
+        inline def setIndentFirstLineSuggestedUndefined: Self = StObject.set(x, "indentFirstLineSuggested", js.undefined)
         
-        @scala.inline
-        def setIndentStartSuggested(value: Boolean): Self = StObject.set(x, "indentStartSuggested", value.asInstanceOf[js.Any])
+        inline def setIndentStartSuggested(value: Boolean): Self = StObject.set(x, "indentStartSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentStartSuggestedUndefined: Self = StObject.set(x, "indentStartSuggested", js.undefined)
+        inline def setIndentStartSuggestedUndefined: Self = StObject.set(x, "indentStartSuggested", js.undefined)
         
-        @scala.inline
-        def setKeepLinesTogetherSuggested(value: Boolean): Self = StObject.set(x, "keepLinesTogetherSuggested", value.asInstanceOf[js.Any])
+        inline def setKeepLinesTogetherSuggested(value: Boolean): Self = StObject.set(x, "keepLinesTogetherSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeepLinesTogetherSuggestedUndefined: Self = StObject.set(x, "keepLinesTogetherSuggested", js.undefined)
+        inline def setKeepLinesTogetherSuggestedUndefined: Self = StObject.set(x, "keepLinesTogetherSuggested", js.undefined)
         
-        @scala.inline
-        def setKeepWithNextSuggested(value: Boolean): Self = StObject.set(x, "keepWithNextSuggested", value.asInstanceOf[js.Any])
+        inline def setKeepWithNextSuggested(value: Boolean): Self = StObject.set(x, "keepWithNextSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeepWithNextSuggestedUndefined: Self = StObject.set(x, "keepWithNextSuggested", js.undefined)
+        inline def setKeepWithNextSuggestedUndefined: Self = StObject.set(x, "keepWithNextSuggested", js.undefined)
         
-        @scala.inline
-        def setLineSpacingSuggested(value: Boolean): Self = StObject.set(x, "lineSpacingSuggested", value.asInstanceOf[js.Any])
+        inline def setLineSpacingSuggested(value: Boolean): Self = StObject.set(x, "lineSpacingSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineSpacingSuggestedUndefined: Self = StObject.set(x, "lineSpacingSuggested", js.undefined)
+        inline def setLineSpacingSuggestedUndefined: Self = StObject.set(x, "lineSpacingSuggested", js.undefined)
         
-        @scala.inline
-        def setNamedStyleTypeSuggested(value: Boolean): Self = StObject.set(x, "namedStyleTypeSuggested", value.asInstanceOf[js.Any])
+        inline def setNamedStyleTypeSuggested(value: Boolean): Self = StObject.set(x, "namedStyleTypeSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamedStyleTypeSuggestedUndefined: Self = StObject.set(x, "namedStyleTypeSuggested", js.undefined)
+        inline def setNamedStyleTypeSuggestedUndefined: Self = StObject.set(x, "namedStyleTypeSuggested", js.undefined)
         
-        @scala.inline
-        def setShadingSuggestionState(value: ShadingSuggestionState): Self = StObject.set(x, "shadingSuggestionState", value.asInstanceOf[js.Any])
+        inline def setShadingSuggestionState(value: ShadingSuggestionState): Self = StObject.set(x, "shadingSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShadingSuggestionStateUndefined: Self = StObject.set(x, "shadingSuggestionState", js.undefined)
+        inline def setShadingSuggestionStateUndefined: Self = StObject.set(x, "shadingSuggestionState", js.undefined)
         
-        @scala.inline
-        def setSpaceAboveSuggested(value: Boolean): Self = StObject.set(x, "spaceAboveSuggested", value.asInstanceOf[js.Any])
+        inline def setSpaceAboveSuggested(value: Boolean): Self = StObject.set(x, "spaceAboveSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpaceAboveSuggestedUndefined: Self = StObject.set(x, "spaceAboveSuggested", js.undefined)
+        inline def setSpaceAboveSuggestedUndefined: Self = StObject.set(x, "spaceAboveSuggested", js.undefined)
         
-        @scala.inline
-        def setSpaceBelowSuggested(value: Boolean): Self = StObject.set(x, "spaceBelowSuggested", value.asInstanceOf[js.Any])
+        inline def setSpaceBelowSuggested(value: Boolean): Self = StObject.set(x, "spaceBelowSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpaceBelowSuggestedUndefined: Self = StObject.set(x, "spaceBelowSuggested", js.undefined)
+        inline def setSpaceBelowSuggestedUndefined: Self = StObject.set(x, "spaceBelowSuggested", js.undefined)
         
-        @scala.inline
-        def setSpacingModeSuggested(value: Boolean): Self = StObject.set(x, "spacingModeSuggested", value.asInstanceOf[js.Any])
+        inline def setSpacingModeSuggested(value: Boolean): Self = StObject.set(x, "spacingModeSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpacingModeSuggestedUndefined: Self = StObject.set(x, "spacingModeSuggested", js.undefined)
+        inline def setSpacingModeSuggestedUndefined: Self = StObject.set(x, "spacingModeSuggested", js.undefined)
       }
     }
     
@@ -4152,47 +3314,34 @@ object Docs {
     }
     object PositionedObject {
       
-      @scala.inline
-      def apply(): PositionedObject = {
+      inline def apply(): PositionedObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PositionedObject]
       }
       
-      @scala.inline
-      implicit class PositionedObjectMutableBuilder[Self <: PositionedObject] (val x: Self) extends AnyVal {
+      extension [Self <: PositionedObject](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setPositionedObjectProperties(value: PositionedObjectProperties): Self = StObject.set(x, "positionedObjectProperties", value.asInstanceOf[js.Any])
+        inline def setPositionedObjectProperties(value: PositionedObjectProperties): Self = StObject.set(x, "positionedObjectProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionedObjectPropertiesUndefined: Self = StObject.set(x, "positionedObjectProperties", js.undefined)
+        inline def setPositionedObjectPropertiesUndefined: Self = StObject.set(x, "positionedObjectProperties", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdUndefined: Self = StObject.set(x, "suggestedInsertionId", js.undefined)
+        inline def setSuggestedInsertionIdUndefined: Self = StObject.set(x, "suggestedInsertionId", js.undefined)
         
-        @scala.inline
-        def setSuggestedPositionedObjectPropertiesChanges(value: js.Object): Self = StObject.set(x, "suggestedPositionedObjectPropertiesChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedPositionedObjectPropertiesChanges(value: js.Object): Self = StObject.set(x, "suggestedPositionedObjectPropertiesChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedPositionedObjectPropertiesChangesUndefined: Self = StObject.set(x, "suggestedPositionedObjectPropertiesChanges", js.undefined)
+        inline def setSuggestedPositionedObjectPropertiesChangesUndefined: Self = StObject.set(x, "suggestedPositionedObjectPropertiesChanges", js.undefined)
       }
     }
     
@@ -4206,32 +3355,24 @@ object Docs {
     }
     object PositionedObjectPositioning {
       
-      @scala.inline
-      def apply(): PositionedObjectPositioning = {
+      inline def apply(): PositionedObjectPositioning = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PositionedObjectPositioning]
       }
       
-      @scala.inline
-      implicit class PositionedObjectPositioningMutableBuilder[Self <: PositionedObjectPositioning] (val x: Self) extends AnyVal {
+      extension [Self <: PositionedObjectPositioning](x: Self) {
         
-        @scala.inline
-        def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+        inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+        inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
         
-        @scala.inline
-        def setLeftOffset(value: Dimension): Self = StObject.set(x, "leftOffset", value.asInstanceOf[js.Any])
+        inline def setLeftOffset(value: Dimension): Self = StObject.set(x, "leftOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeftOffsetUndefined: Self = StObject.set(x, "leftOffset", js.undefined)
+        inline def setLeftOffsetUndefined: Self = StObject.set(x, "leftOffset", js.undefined)
         
-        @scala.inline
-        def setTopOffset(value: Dimension): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
+        inline def setTopOffset(value: Dimension): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
+        inline def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
       }
     }
     
@@ -4245,32 +3386,24 @@ object Docs {
     }
     object PositionedObjectPositioningSuggestionState {
       
-      @scala.inline
-      def apply(): PositionedObjectPositioningSuggestionState = {
+      inline def apply(): PositionedObjectPositioningSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PositionedObjectPositioningSuggestionState]
       }
       
-      @scala.inline
-      implicit class PositionedObjectPositioningSuggestionStateMutableBuilder[Self <: PositionedObjectPositioningSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: PositionedObjectPositioningSuggestionState](x: Self) {
         
-        @scala.inline
-        def setLayoutSuggested(value: Boolean): Self = StObject.set(x, "layoutSuggested", value.asInstanceOf[js.Any])
+        inline def setLayoutSuggested(value: Boolean): Self = StObject.set(x, "layoutSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutSuggestedUndefined: Self = StObject.set(x, "layoutSuggested", js.undefined)
+        inline def setLayoutSuggestedUndefined: Self = StObject.set(x, "layoutSuggested", js.undefined)
         
-        @scala.inline
-        def setLeftOffsetSuggested(value: Boolean): Self = StObject.set(x, "leftOffsetSuggested", value.asInstanceOf[js.Any])
+        inline def setLeftOffsetSuggested(value: Boolean): Self = StObject.set(x, "leftOffsetSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeftOffsetSuggestedUndefined: Self = StObject.set(x, "leftOffsetSuggested", js.undefined)
+        inline def setLeftOffsetSuggestedUndefined: Self = StObject.set(x, "leftOffsetSuggested", js.undefined)
         
-        @scala.inline
-        def setTopOffsetSuggested(value: Boolean): Self = StObject.set(x, "topOffsetSuggested", value.asInstanceOf[js.Any])
+        inline def setTopOffsetSuggested(value: Boolean): Self = StObject.set(x, "topOffsetSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopOffsetSuggestedUndefined: Self = StObject.set(x, "topOffsetSuggested", js.undefined)
+        inline def setTopOffsetSuggestedUndefined: Self = StObject.set(x, "topOffsetSuggested", js.undefined)
       }
     }
     
@@ -4282,26 +3415,20 @@ object Docs {
     }
     object PositionedObjectProperties {
       
-      @scala.inline
-      def apply(): PositionedObjectProperties = {
+      inline def apply(): PositionedObjectProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PositionedObjectProperties]
       }
       
-      @scala.inline
-      implicit class PositionedObjectPropertiesMutableBuilder[Self <: PositionedObjectProperties] (val x: Self) extends AnyVal {
+      extension [Self <: PositionedObjectProperties](x: Self) {
         
-        @scala.inline
-        def setEmbeddedObject(value: EmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
+        inline def setEmbeddedObject(value: EmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmbeddedObjectUndefined: Self = StObject.set(x, "embeddedObject", js.undefined)
+        inline def setEmbeddedObjectUndefined: Self = StObject.set(x, "embeddedObject", js.undefined)
         
-        @scala.inline
-        def setPositioning(value: PositionedObjectPositioning): Self = StObject.set(x, "positioning", value.asInstanceOf[js.Any])
+        inline def setPositioning(value: PositionedObjectPositioning): Self = StObject.set(x, "positioning", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositioningUndefined: Self = StObject.set(x, "positioning", js.undefined)
+        inline def setPositioningUndefined: Self = StObject.set(x, "positioning", js.undefined)
       }
     }
     
@@ -4313,26 +3440,20 @@ object Docs {
     }
     object PositionedObjectPropertiesSuggestionState {
       
-      @scala.inline
-      def apply(): PositionedObjectPropertiesSuggestionState = {
+      inline def apply(): PositionedObjectPropertiesSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PositionedObjectPropertiesSuggestionState]
       }
       
-      @scala.inline
-      implicit class PositionedObjectPropertiesSuggestionStateMutableBuilder[Self <: PositionedObjectPropertiesSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: PositionedObjectPropertiesSuggestionState](x: Self) {
         
-        @scala.inline
-        def setEmbeddedObjectSuggestionState(value: EmbeddedObjectSuggestionState): Self = StObject.set(x, "embeddedObjectSuggestionState", value.asInstanceOf[js.Any])
+        inline def setEmbeddedObjectSuggestionState(value: EmbeddedObjectSuggestionState): Self = StObject.set(x, "embeddedObjectSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmbeddedObjectSuggestionStateUndefined: Self = StObject.set(x, "embeddedObjectSuggestionState", js.undefined)
+        inline def setEmbeddedObjectSuggestionStateUndefined: Self = StObject.set(x, "embeddedObjectSuggestionState", js.undefined)
         
-        @scala.inline
-        def setPositioningSuggestionState(value: PositionedObjectPositioningSuggestionState): Self = StObject.set(x, "positioningSuggestionState", value.asInstanceOf[js.Any])
+        inline def setPositioningSuggestionState(value: PositionedObjectPositioningSuggestionState): Self = StObject.set(x, "positioningSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositioningSuggestionStateUndefined: Self = StObject.set(x, "positioningSuggestionState", js.undefined)
+        inline def setPositioningSuggestionStateUndefined: Self = StObject.set(x, "positioningSuggestionState", js.undefined)
       }
     }
     
@@ -4346,32 +3467,24 @@ object Docs {
     }
     object Range {
       
-      @scala.inline
-      def apply(): Range = {
+      inline def apply(): Range = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Range]
       }
       
-      @scala.inline
-      implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+      extension [Self <: Range](x: Self) {
         
-        @scala.inline
-        def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+        inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+        inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
         
-        @scala.inline
-        def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
+        inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
+        inline def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
         
-        @scala.inline
-        def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+        inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+        inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
       }
     }
     
@@ -4383,26 +3496,20 @@ object Docs {
     }
     object ReplaceAllTextRequest {
       
-      @scala.inline
-      def apply(): ReplaceAllTextRequest = {
+      inline def apply(): ReplaceAllTextRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReplaceAllTextRequest]
       }
       
-      @scala.inline
-      implicit class ReplaceAllTextRequestMutableBuilder[Self <: ReplaceAllTextRequest] (val x: Self) extends AnyVal {
+      extension [Self <: ReplaceAllTextRequest](x: Self) {
         
-        @scala.inline
-        def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
+        inline def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
+        inline def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
         
-        @scala.inline
-        def setReplaceText(value: String): Self = StObject.set(x, "replaceText", value.asInstanceOf[js.Any])
+        inline def setReplaceText(value: String): Self = StObject.set(x, "replaceText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceTextUndefined: Self = StObject.set(x, "replaceText", js.undefined)
+        inline def setReplaceTextUndefined: Self = StObject.set(x, "replaceText", js.undefined)
       }
     }
     
@@ -4412,20 +3519,16 @@ object Docs {
     }
     object ReplaceAllTextResponse {
       
-      @scala.inline
-      def apply(): ReplaceAllTextResponse = {
+      inline def apply(): ReplaceAllTextResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReplaceAllTextResponse]
       }
       
-      @scala.inline
-      implicit class ReplaceAllTextResponseMutableBuilder[Self <: ReplaceAllTextResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ReplaceAllTextResponse](x: Self) {
         
-        @scala.inline
-        def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
+        inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
+        inline def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
       }
     }
     
@@ -4465,110 +3568,76 @@ object Docs {
     }
     object Request {
       
-      @scala.inline
-      def apply(): Request = {
+      inline def apply(): Request = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setCreateNamedRange(value: CreateNamedRangeRequest): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
+        inline def setCreateNamedRange(value: CreateNamedRangeRequest): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateNamedRangeUndefined: Self = StObject.set(x, "createNamedRange", js.undefined)
+        inline def setCreateNamedRangeUndefined: Self = StObject.set(x, "createNamedRange", js.undefined)
         
-        @scala.inline
-        def setCreateParagraphBullets(value: CreateParagraphBulletsRequest): Self = StObject.set(x, "createParagraphBullets", value.asInstanceOf[js.Any])
+        inline def setCreateParagraphBullets(value: CreateParagraphBulletsRequest): Self = StObject.set(x, "createParagraphBullets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateParagraphBulletsUndefined: Self = StObject.set(x, "createParagraphBullets", js.undefined)
+        inline def setCreateParagraphBulletsUndefined: Self = StObject.set(x, "createParagraphBullets", js.undefined)
         
-        @scala.inline
-        def setDeleteContentRange(value: DeleteContentRangeRequest): Self = StObject.set(x, "deleteContentRange", value.asInstanceOf[js.Any])
+        inline def setDeleteContentRange(value: DeleteContentRangeRequest): Self = StObject.set(x, "deleteContentRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteContentRangeUndefined: Self = StObject.set(x, "deleteContentRange", js.undefined)
+        inline def setDeleteContentRangeUndefined: Self = StObject.set(x, "deleteContentRange", js.undefined)
         
-        @scala.inline
-        def setDeleteNamedRange(value: DeleteNamedRangeRequest): Self = StObject.set(x, "deleteNamedRange", value.asInstanceOf[js.Any])
+        inline def setDeleteNamedRange(value: DeleteNamedRangeRequest): Self = StObject.set(x, "deleteNamedRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteNamedRangeUndefined: Self = StObject.set(x, "deleteNamedRange", js.undefined)
+        inline def setDeleteNamedRangeUndefined: Self = StObject.set(x, "deleteNamedRange", js.undefined)
         
-        @scala.inline
-        def setDeleteParagraphBullets(value: DeleteParagraphBulletsRequest): Self = StObject.set(x, "deleteParagraphBullets", value.asInstanceOf[js.Any])
+        inline def setDeleteParagraphBullets(value: DeleteParagraphBulletsRequest): Self = StObject.set(x, "deleteParagraphBullets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteParagraphBulletsUndefined: Self = StObject.set(x, "deleteParagraphBullets", js.undefined)
+        inline def setDeleteParagraphBulletsUndefined: Self = StObject.set(x, "deleteParagraphBullets", js.undefined)
         
-        @scala.inline
-        def setDeletePositionedObject(value: DeletePositionedObjectRequest): Self = StObject.set(x, "deletePositionedObject", value.asInstanceOf[js.Any])
+        inline def setDeletePositionedObject(value: DeletePositionedObjectRequest): Self = StObject.set(x, "deletePositionedObject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeletePositionedObjectUndefined: Self = StObject.set(x, "deletePositionedObject", js.undefined)
+        inline def setDeletePositionedObjectUndefined: Self = StObject.set(x, "deletePositionedObject", js.undefined)
         
-        @scala.inline
-        def setDeleteTableColumn(value: DeleteTableColumnRequest): Self = StObject.set(x, "deleteTableColumn", value.asInstanceOf[js.Any])
+        inline def setDeleteTableColumn(value: DeleteTableColumnRequest): Self = StObject.set(x, "deleteTableColumn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteTableColumnUndefined: Self = StObject.set(x, "deleteTableColumn", js.undefined)
+        inline def setDeleteTableColumnUndefined: Self = StObject.set(x, "deleteTableColumn", js.undefined)
         
-        @scala.inline
-        def setDeleteTableRow(value: DeleteTableRowRequest): Self = StObject.set(x, "deleteTableRow", value.asInstanceOf[js.Any])
+        inline def setDeleteTableRow(value: DeleteTableRowRequest): Self = StObject.set(x, "deleteTableRow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteTableRowUndefined: Self = StObject.set(x, "deleteTableRow", js.undefined)
+        inline def setDeleteTableRowUndefined: Self = StObject.set(x, "deleteTableRow", js.undefined)
         
-        @scala.inline
-        def setInsertInlineImage(value: InsertInlineImageRequest): Self = StObject.set(x, "insertInlineImage", value.asInstanceOf[js.Any])
+        inline def setInsertInlineImage(value: InsertInlineImageRequest): Self = StObject.set(x, "insertInlineImage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertInlineImageUndefined: Self = StObject.set(x, "insertInlineImage", js.undefined)
+        inline def setInsertInlineImageUndefined: Self = StObject.set(x, "insertInlineImage", js.undefined)
         
-        @scala.inline
-        def setInsertPageBreak(value: InsertPageBreakRequest): Self = StObject.set(x, "insertPageBreak", value.asInstanceOf[js.Any])
+        inline def setInsertPageBreak(value: InsertPageBreakRequest): Self = StObject.set(x, "insertPageBreak", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertPageBreakUndefined: Self = StObject.set(x, "insertPageBreak", js.undefined)
+        inline def setInsertPageBreakUndefined: Self = StObject.set(x, "insertPageBreak", js.undefined)
         
-        @scala.inline
-        def setInsertTable(value: InsertTableRequest): Self = StObject.set(x, "insertTable", value.asInstanceOf[js.Any])
+        inline def setInsertTable(value: InsertTableRequest): Self = StObject.set(x, "insertTable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertTableRow(value: InsertTableRowRequest): Self = StObject.set(x, "insertTableRow", value.asInstanceOf[js.Any])
+        inline def setInsertTableRow(value: InsertTableRowRequest): Self = StObject.set(x, "insertTableRow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertTableRowUndefined: Self = StObject.set(x, "insertTableRow", js.undefined)
+        inline def setInsertTableRowUndefined: Self = StObject.set(x, "insertTableRow", js.undefined)
         
-        @scala.inline
-        def setInsertTableUndefined: Self = StObject.set(x, "insertTable", js.undefined)
+        inline def setInsertTableUndefined: Self = StObject.set(x, "insertTable", js.undefined)
         
-        @scala.inline
-        def setInsertText(value: InsertTextRequest): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
+        inline def setInsertText(value: InsertTextRequest): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
+        inline def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
         
-        @scala.inline
-        def setReplaceAllText(value: ReplaceAllTextRequest): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
+        inline def setReplaceAllText(value: ReplaceAllTextRequest): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
+        inline def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
         
-        @scala.inline
-        def setUpdateParagraphStyle(value: UpdateParagraphStyleRequest): Self = StObject.set(x, "updateParagraphStyle", value.asInstanceOf[js.Any])
+        inline def setUpdateParagraphStyle(value: UpdateParagraphStyleRequest): Self = StObject.set(x, "updateParagraphStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateParagraphStyleUndefined: Self = StObject.set(x, "updateParagraphStyle", js.undefined)
+        inline def setUpdateParagraphStyleUndefined: Self = StObject.set(x, "updateParagraphStyle", js.undefined)
         
-        @scala.inline
-        def setUpdateTextStyle(value: UpdateTextStyleRequest): Self = StObject.set(x, "updateTextStyle", value.asInstanceOf[js.Any])
+        inline def setUpdateTextStyle(value: UpdateTextStyleRequest): Self = StObject.set(x, "updateTextStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateTextStyleUndefined: Self = StObject.set(x, "updateTextStyle", js.undefined)
+        inline def setUpdateTextStyleUndefined: Self = StObject.set(x, "updateTextStyle", js.undefined)
       }
     }
     
@@ -4584,38 +3653,28 @@ object Docs {
     }
     object Response {
       
-      @scala.inline
-      def apply(): Response = {
+      inline def apply(): Response = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Response]
       }
       
-      @scala.inline
-      implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+      extension [Self <: Response](x: Self) {
         
-        @scala.inline
-        def setCreateNamedRange(value: CreateNamedRangeResponse): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
+        inline def setCreateNamedRange(value: CreateNamedRangeResponse): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateNamedRangeUndefined: Self = StObject.set(x, "createNamedRange", js.undefined)
+        inline def setCreateNamedRangeUndefined: Self = StObject.set(x, "createNamedRange", js.undefined)
         
-        @scala.inline
-        def setInsertInlineImage(value: InsertInlineImageResponse): Self = StObject.set(x, "insertInlineImage", value.asInstanceOf[js.Any])
+        inline def setInsertInlineImage(value: InsertInlineImageResponse): Self = StObject.set(x, "insertInlineImage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertInlineImageUndefined: Self = StObject.set(x, "insertInlineImage", js.undefined)
+        inline def setInsertInlineImageUndefined: Self = StObject.set(x, "insertInlineImage", js.undefined)
         
-        @scala.inline
-        def setInsertInlineSheetsChart(value: InsertInlineSheetsChartResponse): Self = StObject.set(x, "insertInlineSheetsChart", value.asInstanceOf[js.Any])
+        inline def setInsertInlineSheetsChart(value: InsertInlineSheetsChartResponse): Self = StObject.set(x, "insertInlineSheetsChart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertInlineSheetsChartUndefined: Self = StObject.set(x, "insertInlineSheetsChart", js.undefined)
+        inline def setInsertInlineSheetsChartUndefined: Self = StObject.set(x, "insertInlineSheetsChart", js.undefined)
         
-        @scala.inline
-        def setReplaceAllText(value: ReplaceAllTextResponse): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
+        inline def setReplaceAllText(value: ReplaceAllTextResponse): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
+        inline def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
       }
     }
     
@@ -4629,32 +3688,24 @@ object Docs {
     }
     object RgbColor {
       
-      @scala.inline
-      def apply(): RgbColor = {
+      inline def apply(): RgbColor = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RgbColor]
       }
       
-      @scala.inline
-      implicit class RgbColorMutableBuilder[Self <: RgbColor] (val x: Self) extends AnyVal {
+      extension [Self <: RgbColor](x: Self) {
         
-        @scala.inline
-        def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+        inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlueUndefined: Self = StObject.set(x, "blue", js.undefined)
+        inline def setBlueUndefined: Self = StObject.set(x, "blue", js.undefined)
         
-        @scala.inline
-        def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+        inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
+        inline def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
         
-        @scala.inline
-        def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+        inline def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
+        inline def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
       }
     }
     
@@ -4668,38 +3719,28 @@ object Docs {
     }
     object SectionBreak {
       
-      @scala.inline
-      def apply(): SectionBreak = {
+      inline def apply(): SectionBreak = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SectionBreak]
       }
       
-      @scala.inline
-      implicit class SectionBreakMutableBuilder[Self <: SectionBreak] (val x: Self) extends AnyVal {
+      extension [Self <: SectionBreak](x: Self) {
         
-        @scala.inline
-        def setSectionStyle(value: SectionStyle): Self = StObject.set(x, "sectionStyle", value.asInstanceOf[js.Any])
+        inline def setSectionStyle(value: SectionStyle): Self = StObject.set(x, "sectionStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSectionStyleUndefined: Self = StObject.set(x, "sectionStyle", js.undefined)
+        inline def setSectionStyleUndefined: Self = StObject.set(x, "sectionStyle", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
+        inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
       }
     }
     
@@ -4711,26 +3752,20 @@ object Docs {
     }
     object SectionColumnProperties {
       
-      @scala.inline
-      def apply(): SectionColumnProperties = {
+      inline def apply(): SectionColumnProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SectionColumnProperties]
       }
       
-      @scala.inline
-      implicit class SectionColumnPropertiesMutableBuilder[Self <: SectionColumnProperties] (val x: Self) extends AnyVal {
+      extension [Self <: SectionColumnProperties](x: Self) {
         
-        @scala.inline
-        def setPaddingEnd(value: Dimension): Self = StObject.set(x, "paddingEnd", value.asInstanceOf[js.Any])
+        inline def setPaddingEnd(value: Dimension): Self = StObject.set(x, "paddingEnd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingEndUndefined: Self = StObject.set(x, "paddingEnd", js.undefined)
+        inline def setPaddingEndUndefined: Self = StObject.set(x, "paddingEnd", js.undefined)
         
-        @scala.inline
-        def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       }
     }
     
@@ -4744,35 +3779,26 @@ object Docs {
     }
     object SectionStyle {
       
-      @scala.inline
-      def apply(): SectionStyle = {
+      inline def apply(): SectionStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SectionStyle]
       }
       
-      @scala.inline
-      implicit class SectionStyleMutableBuilder[Self <: SectionStyle] (val x: Self) extends AnyVal {
+      extension [Self <: SectionStyle](x: Self) {
         
-        @scala.inline
-        def setColumnProperties(value: js.Array[SectionColumnProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
+        inline def setColumnProperties(value: js.Array[SectionColumnProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
+        inline def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
         
-        @scala.inline
-        def setColumnPropertiesVarargs(value: SectionColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
+        inline def setColumnPropertiesVarargs(value: SectionColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
         
-        @scala.inline
-        def setColumnSeparatorStyle(value: String): Self = StObject.set(x, "columnSeparatorStyle", value.asInstanceOf[js.Any])
+        inline def setColumnSeparatorStyle(value: String): Self = StObject.set(x, "columnSeparatorStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnSeparatorStyleUndefined: Self = StObject.set(x, "columnSeparatorStyle", js.undefined)
+        inline def setColumnSeparatorStyleUndefined: Self = StObject.set(x, "columnSeparatorStyle", js.undefined)
         
-        @scala.inline
-        def setContentDirection(value: String): Self = StObject.set(x, "contentDirection", value.asInstanceOf[js.Any])
+        inline def setContentDirection(value: String): Self = StObject.set(x, "contentDirection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentDirectionUndefined: Self = StObject.set(x, "contentDirection", js.undefined)
+        inline def setContentDirectionUndefined: Self = StObject.set(x, "contentDirection", js.undefined)
       }
     }
     
@@ -4782,20 +3808,16 @@ object Docs {
     }
     object Shading {
       
-      @scala.inline
-      def apply(): Shading = {
+      inline def apply(): Shading = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Shading]
       }
       
-      @scala.inline
-      implicit class ShadingMutableBuilder[Self <: Shading] (val x: Self) extends AnyVal {
+      extension [Self <: Shading](x: Self) {
         
-        @scala.inline
-        def setBackgroundColor(value: OptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+        inline def setBackgroundColor(value: OptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+        inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       }
     }
     
@@ -4805,20 +3827,16 @@ object Docs {
     }
     object ShadingSuggestionState {
       
-      @scala.inline
-      def apply(): ShadingSuggestionState = {
+      inline def apply(): ShadingSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ShadingSuggestionState]
       }
       
-      @scala.inline
-      implicit class ShadingSuggestionStateMutableBuilder[Self <: ShadingSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: ShadingSuggestionState](x: Self) {
         
-        @scala.inline
-        def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
+        inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
+        inline def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
       }
     }
     
@@ -4830,26 +3848,20 @@ object Docs {
     }
     object SheetsChartReference {
       
-      @scala.inline
-      def apply(): SheetsChartReference = {
+      inline def apply(): SheetsChartReference = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SheetsChartReference]
       }
       
-      @scala.inline
-      implicit class SheetsChartReferenceMutableBuilder[Self <: SheetsChartReference] (val x: Self) extends AnyVal {
+      extension [Self <: SheetsChartReference](x: Self) {
         
-        @scala.inline
-        def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
+        inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
+        inline def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
         
-        @scala.inline
-        def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
+        inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
+        inline def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
       }
     }
     
@@ -4861,26 +3873,20 @@ object Docs {
     }
     object SheetsChartReferenceSuggestionState {
       
-      @scala.inline
-      def apply(): SheetsChartReferenceSuggestionState = {
+      inline def apply(): SheetsChartReferenceSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SheetsChartReferenceSuggestionState]
       }
       
-      @scala.inline
-      implicit class SheetsChartReferenceSuggestionStateMutableBuilder[Self <: SheetsChartReferenceSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: SheetsChartReferenceSuggestionState](x: Self) {
         
-        @scala.inline
-        def setChartIdSuggested(value: Boolean): Self = StObject.set(x, "chartIdSuggested", value.asInstanceOf[js.Any])
+        inline def setChartIdSuggested(value: Boolean): Self = StObject.set(x, "chartIdSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChartIdSuggestedUndefined: Self = StObject.set(x, "chartIdSuggested", js.undefined)
+        inline def setChartIdSuggestedUndefined: Self = StObject.set(x, "chartIdSuggested", js.undefined)
         
-        @scala.inline
-        def setSpreadsheetIdSuggested(value: Boolean): Self = StObject.set(x, "spreadsheetIdSuggested", value.asInstanceOf[js.Any])
+        inline def setSpreadsheetIdSuggested(value: Boolean): Self = StObject.set(x, "spreadsheetIdSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpreadsheetIdSuggestedUndefined: Self = StObject.set(x, "spreadsheetIdSuggested", js.undefined)
+        inline def setSpreadsheetIdSuggestedUndefined: Self = StObject.set(x, "spreadsheetIdSuggested", js.undefined)
       }
     }
     
@@ -4892,26 +3898,20 @@ object Docs {
     }
     object Size {
       
-      @scala.inline
-      def apply(): Size = {
+      inline def apply(): Size = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Size]
       }
       
-      @scala.inline
-      implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+      extension [Self <: Size](x: Self) {
         
-        @scala.inline
-        def setHeight(value: Dimension): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Dimension): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+        inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
         
-        @scala.inline
-        def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       }
     }
     
@@ -4923,26 +3923,20 @@ object Docs {
     }
     object SizeSuggestionState {
       
-      @scala.inline
-      def apply(): SizeSuggestionState = {
+      inline def apply(): SizeSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SizeSuggestionState]
       }
       
-      @scala.inline
-      implicit class SizeSuggestionStateMutableBuilder[Self <: SizeSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: SizeSuggestionState](x: Self) {
         
-        @scala.inline
-        def setHeightSuggested(value: Boolean): Self = StObject.set(x, "heightSuggested", value.asInstanceOf[js.Any])
+        inline def setHeightSuggested(value: Boolean): Self = StObject.set(x, "heightSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeightSuggestedUndefined: Self = StObject.set(x, "heightSuggested", js.undefined)
+        inline def setHeightSuggestedUndefined: Self = StObject.set(x, "heightSuggested", js.undefined)
         
-        @scala.inline
-        def setWidthSuggested(value: Boolean): Self = StObject.set(x, "widthSuggested", value.asInstanceOf[js.Any])
+        inline def setWidthSuggested(value: Boolean): Self = StObject.set(x, "widthSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthSuggestedUndefined: Self = StObject.set(x, "widthSuggested", js.undefined)
+        inline def setWidthSuggestedUndefined: Self = StObject.set(x, "widthSuggested", js.undefined)
       }
     }
     
@@ -4962,50 +3956,36 @@ object Docs {
     }
     object StructuralElement {
       
-      @scala.inline
-      def apply(): StructuralElement = {
+      inline def apply(): StructuralElement = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StructuralElement]
       }
       
-      @scala.inline
-      implicit class StructuralElementMutableBuilder[Self <: StructuralElement] (val x: Self) extends AnyVal {
+      extension [Self <: StructuralElement](x: Self) {
         
-        @scala.inline
-        def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+        inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+        inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
         
-        @scala.inline
-        def setParagraph(value: Paragraph): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+        inline def setParagraph(value: Paragraph): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
+        inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
         
-        @scala.inline
-        def setSectionBreak(value: SectionBreak): Self = StObject.set(x, "sectionBreak", value.asInstanceOf[js.Any])
+        inline def setSectionBreak(value: SectionBreak): Self = StObject.set(x, "sectionBreak", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSectionBreakUndefined: Self = StObject.set(x, "sectionBreak", js.undefined)
+        inline def setSectionBreakUndefined: Self = StObject.set(x, "sectionBreak", js.undefined)
         
-        @scala.inline
-        def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+        inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+        inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
         
-        @scala.inline
-        def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+        inline def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableOfContents(value: TableOfContents): Self = StObject.set(x, "tableOfContents", value.asInstanceOf[js.Any])
+        inline def setTableOfContents(value: TableOfContents): Self = StObject.set(x, "tableOfContents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableOfContentsUndefined: Self = StObject.set(x, "tableOfContents", js.undefined)
+        inline def setTableOfContentsUndefined: Self = StObject.set(x, "tableOfContents", js.undefined)
         
-        @scala.inline
-        def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+        inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       }
     }
     
@@ -5017,26 +3997,20 @@ object Docs {
     }
     object SubstringMatchCriteria {
       
-      @scala.inline
-      def apply(): SubstringMatchCriteria = {
+      inline def apply(): SubstringMatchCriteria = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SubstringMatchCriteria]
       }
       
-      @scala.inline
-      implicit class SubstringMatchCriteriaMutableBuilder[Self <: SubstringMatchCriteria] (val x: Self) extends AnyVal {
+      extension [Self <: SubstringMatchCriteria](x: Self) {
         
-        @scala.inline
-        def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+        inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+        inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+        inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       }
     }
     
@@ -5048,26 +4022,20 @@ object Docs {
     }
     object SuggestedBullet {
       
-      @scala.inline
-      def apply(): SuggestedBullet = {
+      inline def apply(): SuggestedBullet = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SuggestedBullet]
       }
       
-      @scala.inline
-      implicit class SuggestedBulletMutableBuilder[Self <: SuggestedBullet] (val x: Self) extends AnyVal {
+      extension [Self <: SuggestedBullet](x: Self) {
         
-        @scala.inline
-        def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+        inline def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBulletSuggestionState(value: BulletSuggestionState): Self = StObject.set(x, "bulletSuggestionState", value.asInstanceOf[js.Any])
+        inline def setBulletSuggestionState(value: BulletSuggestionState): Self = StObject.set(x, "bulletSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBulletSuggestionStateUndefined: Self = StObject.set(x, "bulletSuggestionState", js.undefined)
+        inline def setBulletSuggestionStateUndefined: Self = StObject.set(x, "bulletSuggestionState", js.undefined)
         
-        @scala.inline
-        def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
+        inline def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
       }
     }
     
@@ -5079,26 +4047,20 @@ object Docs {
     }
     object SuggestedDocumentStyle {
       
-      @scala.inline
-      def apply(): SuggestedDocumentStyle = {
+      inline def apply(): SuggestedDocumentStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SuggestedDocumentStyle]
       }
       
-      @scala.inline
-      implicit class SuggestedDocumentStyleMutableBuilder[Self <: SuggestedDocumentStyle] (val x: Self) extends AnyVal {
+      extension [Self <: SuggestedDocumentStyle](x: Self) {
         
-        @scala.inline
-        def setDocumentStyle(value: DocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
+        inline def setDocumentStyle(value: DocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDocumentStyleSuggestionState(value: DocumentStyleSuggestionState): Self = StObject.set(x, "documentStyleSuggestionState", value.asInstanceOf[js.Any])
+        inline def setDocumentStyleSuggestionState(value: DocumentStyleSuggestionState): Self = StObject.set(x, "documentStyleSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDocumentStyleSuggestionStateUndefined: Self = StObject.set(x, "documentStyleSuggestionState", js.undefined)
+        inline def setDocumentStyleSuggestionStateUndefined: Self = StObject.set(x, "documentStyleSuggestionState", js.undefined)
         
-        @scala.inline
-        def setDocumentStyleUndefined: Self = StObject.set(x, "documentStyle", js.undefined)
+        inline def setDocumentStyleUndefined: Self = StObject.set(x, "documentStyle", js.undefined)
       }
     }
     
@@ -5110,26 +4072,20 @@ object Docs {
     }
     object SuggestedInlineObjectProperties {
       
-      @scala.inline
-      def apply(): SuggestedInlineObjectProperties = {
+      inline def apply(): SuggestedInlineObjectProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SuggestedInlineObjectProperties]
       }
       
-      @scala.inline
-      implicit class SuggestedInlineObjectPropertiesMutableBuilder[Self <: SuggestedInlineObjectProperties] (val x: Self) extends AnyVal {
+      extension [Self <: SuggestedInlineObjectProperties](x: Self) {
         
-        @scala.inline
-        def setInlineObjectProperties(value: InlineObjectProperties): Self = StObject.set(x, "inlineObjectProperties", value.asInstanceOf[js.Any])
+        inline def setInlineObjectProperties(value: InlineObjectProperties): Self = StObject.set(x, "inlineObjectProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInlineObjectPropertiesSuggestionState(value: InlineObjectPropertiesSuggestionState): Self = StObject.set(x, "inlineObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
+        inline def setInlineObjectPropertiesSuggestionState(value: InlineObjectPropertiesSuggestionState): Self = StObject.set(x, "inlineObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInlineObjectPropertiesSuggestionStateUndefined: Self = StObject.set(x, "inlineObjectPropertiesSuggestionState", js.undefined)
+        inline def setInlineObjectPropertiesSuggestionStateUndefined: Self = StObject.set(x, "inlineObjectPropertiesSuggestionState", js.undefined)
         
-        @scala.inline
-        def setInlineObjectPropertiesUndefined: Self = StObject.set(x, "inlineObjectProperties", js.undefined)
+        inline def setInlineObjectPropertiesUndefined: Self = StObject.set(x, "inlineObjectProperties", js.undefined)
       }
     }
     
@@ -5141,26 +4097,20 @@ object Docs {
     }
     object SuggestedListProperties {
       
-      @scala.inline
-      def apply(): SuggestedListProperties = {
+      inline def apply(): SuggestedListProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SuggestedListProperties]
       }
       
-      @scala.inline
-      implicit class SuggestedListPropertiesMutableBuilder[Self <: SuggestedListProperties] (val x: Self) extends AnyVal {
+      extension [Self <: SuggestedListProperties](x: Self) {
         
-        @scala.inline
-        def setListProperties(value: ListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
+        inline def setListProperties(value: ListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListPropertiesSuggestionState(value: ListPropertiesSuggestionState): Self = StObject.set(x, "listPropertiesSuggestionState", value.asInstanceOf[js.Any])
+        inline def setListPropertiesSuggestionState(value: ListPropertiesSuggestionState): Self = StObject.set(x, "listPropertiesSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListPropertiesSuggestionStateUndefined: Self = StObject.set(x, "listPropertiesSuggestionState", js.undefined)
+        inline def setListPropertiesSuggestionStateUndefined: Self = StObject.set(x, "listPropertiesSuggestionState", js.undefined)
         
-        @scala.inline
-        def setListPropertiesUndefined: Self = StObject.set(x, "listProperties", js.undefined)
+        inline def setListPropertiesUndefined: Self = StObject.set(x, "listProperties", js.undefined)
       }
     }
     
@@ -5172,26 +4122,20 @@ object Docs {
     }
     object SuggestedNamedStyles {
       
-      @scala.inline
-      def apply(): SuggestedNamedStyles = {
+      inline def apply(): SuggestedNamedStyles = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SuggestedNamedStyles]
       }
       
-      @scala.inline
-      implicit class SuggestedNamedStylesMutableBuilder[Self <: SuggestedNamedStyles] (val x: Self) extends AnyVal {
+      extension [Self <: SuggestedNamedStyles](x: Self) {
         
-        @scala.inline
-        def setNamedStyles(value: NamedStyles): Self = StObject.set(x, "namedStyles", value.asInstanceOf[js.Any])
+        inline def setNamedStyles(value: NamedStyles): Self = StObject.set(x, "namedStyles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamedStylesSuggestionState(value: NamedStylesSuggestionState): Self = StObject.set(x, "namedStylesSuggestionState", value.asInstanceOf[js.Any])
+        inline def setNamedStylesSuggestionState(value: NamedStylesSuggestionState): Self = StObject.set(x, "namedStylesSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamedStylesSuggestionStateUndefined: Self = StObject.set(x, "namedStylesSuggestionState", js.undefined)
+        inline def setNamedStylesSuggestionStateUndefined: Self = StObject.set(x, "namedStylesSuggestionState", js.undefined)
         
-        @scala.inline
-        def setNamedStylesUndefined: Self = StObject.set(x, "namedStyles", js.undefined)
+        inline def setNamedStylesUndefined: Self = StObject.set(x, "namedStyles", js.undefined)
       }
     }
     
@@ -5203,26 +4147,20 @@ object Docs {
     }
     object SuggestedParagraphStyle {
       
-      @scala.inline
-      def apply(): SuggestedParagraphStyle = {
+      inline def apply(): SuggestedParagraphStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SuggestedParagraphStyle]
       }
       
-      @scala.inline
-      implicit class SuggestedParagraphStyleMutableBuilder[Self <: SuggestedParagraphStyle] (val x: Self) extends AnyVal {
+      extension [Self <: SuggestedParagraphStyle](x: Self) {
         
-        @scala.inline
-        def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
+        inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParagraphStyleSuggestionState(value: ParagraphStyleSuggestionState): Self = StObject.set(x, "paragraphStyleSuggestionState", value.asInstanceOf[js.Any])
+        inline def setParagraphStyleSuggestionState(value: ParagraphStyleSuggestionState): Self = StObject.set(x, "paragraphStyleSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParagraphStyleSuggestionStateUndefined: Self = StObject.set(x, "paragraphStyleSuggestionState", js.undefined)
+        inline def setParagraphStyleSuggestionStateUndefined: Self = StObject.set(x, "paragraphStyleSuggestionState", js.undefined)
         
-        @scala.inline
-        def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
+        inline def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
       }
     }
     
@@ -5234,26 +4172,20 @@ object Docs {
     }
     object SuggestedPositionedObjectProperties {
       
-      @scala.inline
-      def apply(): SuggestedPositionedObjectProperties = {
+      inline def apply(): SuggestedPositionedObjectProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SuggestedPositionedObjectProperties]
       }
       
-      @scala.inline
-      implicit class SuggestedPositionedObjectPropertiesMutableBuilder[Self <: SuggestedPositionedObjectProperties] (val x: Self) extends AnyVal {
+      extension [Self <: SuggestedPositionedObjectProperties](x: Self) {
         
-        @scala.inline
-        def setPositionedObjectProperties(value: PositionedObjectProperties): Self = StObject.set(x, "positionedObjectProperties", value.asInstanceOf[js.Any])
+        inline def setPositionedObjectProperties(value: PositionedObjectProperties): Self = StObject.set(x, "positionedObjectProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionedObjectPropertiesSuggestionState(value: PositionedObjectPropertiesSuggestionState): Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
+        inline def setPositionedObjectPropertiesSuggestionState(value: PositionedObjectPropertiesSuggestionState): Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionedObjectPropertiesSuggestionStateUndefined: Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", js.undefined)
+        inline def setPositionedObjectPropertiesSuggestionStateUndefined: Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", js.undefined)
         
-        @scala.inline
-        def setPositionedObjectPropertiesUndefined: Self = StObject.set(x, "positionedObjectProperties", js.undefined)
+        inline def setPositionedObjectPropertiesUndefined: Self = StObject.set(x, "positionedObjectProperties", js.undefined)
       }
     }
     
@@ -5265,26 +4197,20 @@ object Docs {
     }
     object SuggestedTableCellStyle {
       
-      @scala.inline
-      def apply(): SuggestedTableCellStyle = {
+      inline def apply(): SuggestedTableCellStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SuggestedTableCellStyle]
       }
       
-      @scala.inline
-      implicit class SuggestedTableCellStyleMutableBuilder[Self <: SuggestedTableCellStyle] (val x: Self) extends AnyVal {
+      extension [Self <: SuggestedTableCellStyle](x: Self) {
         
-        @scala.inline
-        def setTableCellStyle(value: TableCellStyle): Self = StObject.set(x, "tableCellStyle", value.asInstanceOf[js.Any])
+        inline def setTableCellStyle(value: TableCellStyle): Self = StObject.set(x, "tableCellStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableCellStyleSuggestionState(value: TableCellStyleSuggestionState): Self = StObject.set(x, "tableCellStyleSuggestionState", value.asInstanceOf[js.Any])
+        inline def setTableCellStyleSuggestionState(value: TableCellStyleSuggestionState): Self = StObject.set(x, "tableCellStyleSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableCellStyleSuggestionStateUndefined: Self = StObject.set(x, "tableCellStyleSuggestionState", js.undefined)
+        inline def setTableCellStyleSuggestionStateUndefined: Self = StObject.set(x, "tableCellStyleSuggestionState", js.undefined)
         
-        @scala.inline
-        def setTableCellStyleUndefined: Self = StObject.set(x, "tableCellStyle", js.undefined)
+        inline def setTableCellStyleUndefined: Self = StObject.set(x, "tableCellStyle", js.undefined)
       }
     }
     
@@ -5296,26 +4222,20 @@ object Docs {
     }
     object SuggestedTableRowStyle {
       
-      @scala.inline
-      def apply(): SuggestedTableRowStyle = {
+      inline def apply(): SuggestedTableRowStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SuggestedTableRowStyle]
       }
       
-      @scala.inline
-      implicit class SuggestedTableRowStyleMutableBuilder[Self <: SuggestedTableRowStyle] (val x: Self) extends AnyVal {
+      extension [Self <: SuggestedTableRowStyle](x: Self) {
         
-        @scala.inline
-        def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
+        inline def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableRowStyleSuggestionState(value: TableRowStyleSuggestionState): Self = StObject.set(x, "tableRowStyleSuggestionState", value.asInstanceOf[js.Any])
+        inline def setTableRowStyleSuggestionState(value: TableRowStyleSuggestionState): Self = StObject.set(x, "tableRowStyleSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableRowStyleSuggestionStateUndefined: Self = StObject.set(x, "tableRowStyleSuggestionState", js.undefined)
+        inline def setTableRowStyleSuggestionStateUndefined: Self = StObject.set(x, "tableRowStyleSuggestionState", js.undefined)
         
-        @scala.inline
-        def setTableRowStyleUndefined: Self = StObject.set(x, "tableRowStyle", js.undefined)
+        inline def setTableRowStyleUndefined: Self = StObject.set(x, "tableRowStyle", js.undefined)
       }
     }
     
@@ -5327,26 +4247,20 @@ object Docs {
     }
     object SuggestedTextStyle {
       
-      @scala.inline
-      def apply(): SuggestedTextStyle = {
+      inline def apply(): SuggestedTextStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SuggestedTextStyle]
       }
       
-      @scala.inline
-      implicit class SuggestedTextStyleMutableBuilder[Self <: SuggestedTextStyle] (val x: Self) extends AnyVal {
+      extension [Self <: SuggestedTextStyle](x: Self) {
         
-        @scala.inline
-        def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+        inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
+        inline def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
+        inline def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
         
-        @scala.inline
-        def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+        inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       }
     }
     
@@ -5358,26 +4272,20 @@ object Docs {
     }
     object TabStop {
       
-      @scala.inline
-      def apply(): TabStop = {
+      inline def apply(): TabStop = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TabStop]
       }
       
-      @scala.inline
-      implicit class TabStopMutableBuilder[Self <: TabStop] (val x: Self) extends AnyVal {
+      extension [Self <: TabStop](x: Self) {
         
-        @scala.inline
-        def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+        inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+        inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
         
-        @scala.inline
-        def setOffset(value: Dimension): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Dimension): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+        inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       }
     }
     
@@ -5397,59 +4305,42 @@ object Docs {
     }
     object Table {
       
-      @scala.inline
-      def apply(): Table = {
+      inline def apply(): Table = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Table]
       }
       
-      @scala.inline
-      implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
+      extension [Self <: Table](x: Self) {
         
-        @scala.inline
-        def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+        inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+        inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
         
-        @scala.inline
-        def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+        inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+        inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
+        inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setTableRows(value: js.Array[TableRow]): Self = StObject.set(x, "tableRows", value.asInstanceOf[js.Any])
+        inline def setTableRows(value: js.Array[TableRow]): Self = StObject.set(x, "tableRows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
+        inline def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
         
-        @scala.inline
-        def setTableRowsVarargs(value: TableRow*): Self = StObject.set(x, "tableRows", js.Array(value :_*))
+        inline def setTableRowsVarargs(value: TableRow*): Self = StObject.set(x, "tableRows", js.Array(value :_*))
         
-        @scala.inline
-        def setTableStyle(value: TableStyle): Self = StObject.set(x, "tableStyle", value.asInstanceOf[js.Any])
+        inline def setTableStyle(value: TableStyle): Self = StObject.set(x, "tableStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableStyleUndefined: Self = StObject.set(x, "tableStyle", js.undefined)
+        inline def setTableStyleUndefined: Self = StObject.set(x, "tableStyle", js.undefined)
       }
     }
     
@@ -5471,65 +4362,46 @@ object Docs {
     }
     object TableCell {
       
-      @scala.inline
-      def apply(): TableCell = {
+      inline def apply(): TableCell = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableCell]
       }
       
-      @scala.inline
-      implicit class TableCellMutableBuilder[Self <: TableCell] (val x: Self) extends AnyVal {
+      extension [Self <: TableCell](x: Self) {
         
-        @scala.inline
-        def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
         
-        @scala.inline
-        def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+        inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+        inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
         
-        @scala.inline
-        def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+        inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+        inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
+        inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedTableCellStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTableCellStyleChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedTableCellStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTableCellStyleChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedTableCellStyleChangesUndefined: Self = StObject.set(x, "suggestedTableCellStyleChanges", js.undefined)
+        inline def setSuggestedTableCellStyleChangesUndefined: Self = StObject.set(x, "suggestedTableCellStyleChanges", js.undefined)
         
-        @scala.inline
-        def setTableCellStyle(value: TableCellStyle): Self = StObject.set(x, "tableCellStyle", value.asInstanceOf[js.Any])
+        inline def setTableCellStyle(value: TableCellStyle): Self = StObject.set(x, "tableCellStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableCellStyleUndefined: Self = StObject.set(x, "tableCellStyle", js.undefined)
+        inline def setTableCellStyleUndefined: Self = StObject.set(x, "tableCellStyle", js.undefined)
       }
     }
     
@@ -5543,32 +4415,24 @@ object Docs {
     }
     object TableCellBorder {
       
-      @scala.inline
-      def apply(): TableCellBorder = {
+      inline def apply(): TableCellBorder = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableCellBorder]
       }
       
-      @scala.inline
-      implicit class TableCellBorderMutableBuilder[Self <: TableCellBorder] (val x: Self) extends AnyVal {
+      extension [Self <: TableCellBorder](x: Self) {
         
-        @scala.inline
-        def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+        inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+        inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
         
-        @scala.inline
-        def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       }
     }
     
@@ -5582,32 +4446,24 @@ object Docs {
     }
     object TableCellLocation {
       
-      @scala.inline
-      def apply(): TableCellLocation = {
+      inline def apply(): TableCellLocation = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableCellLocation]
       }
       
-      @scala.inline
-      implicit class TableCellLocationMutableBuilder[Self <: TableCellLocation] (val x: Self) extends AnyVal {
+      extension [Self <: TableCellLocation](x: Self) {
         
-        @scala.inline
-        def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+        inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+        inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
         
-        @scala.inline
-        def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+        inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+        inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
         
-        @scala.inline
-        def setTableStartLocation(value: Location): Self = StObject.set(x, "tableStartLocation", value.asInstanceOf[js.Any])
+        inline def setTableStartLocation(value: Location): Self = StObject.set(x, "tableStartLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableStartLocationUndefined: Self = StObject.set(x, "tableStartLocation", js.undefined)
+        inline def setTableStartLocationUndefined: Self = StObject.set(x, "tableStartLocation", js.undefined)
       }
     }
     
@@ -5639,86 +4495,60 @@ object Docs {
     }
     object TableCellStyle {
       
-      @scala.inline
-      def apply(): TableCellStyle = {
+      inline def apply(): TableCellStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableCellStyle]
       }
       
-      @scala.inline
-      implicit class TableCellStyleMutableBuilder[Self <: TableCellStyle] (val x: Self) extends AnyVal {
+      extension [Self <: TableCellStyle](x: Self) {
         
-        @scala.inline
-        def setBackgroundColor(value: OptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+        inline def setBackgroundColor(value: OptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+        inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
         
-        @scala.inline
-        def setBorderBottom(value: TableCellBorder): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+        inline def setBorderBottom(value: TableCellBorder): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+        inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
         
-        @scala.inline
-        def setBorderLeft(value: TableCellBorder): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+        inline def setBorderLeft(value: TableCellBorder): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
+        inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
         
-        @scala.inline
-        def setBorderRight(value: TableCellBorder): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+        inline def setBorderRight(value: TableCellBorder): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
+        inline def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
         
-        @scala.inline
-        def setBorderTop(value: TableCellBorder): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+        inline def setBorderTop(value: TableCellBorder): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
+        inline def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
         
-        @scala.inline
-        def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
+        inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
+        inline def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
         
-        @scala.inline
-        def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
+        inline def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
+        inline def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
         
-        @scala.inline
-        def setPaddingBottom(value: Dimension): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+        inline def setPaddingBottom(value: Dimension): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
+        inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
         
-        @scala.inline
-        def setPaddingLeft(value: Dimension): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+        inline def setPaddingLeft(value: Dimension): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
+        inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
         
-        @scala.inline
-        def setPaddingRight(value: Dimension): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+        inline def setPaddingRight(value: Dimension): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
+        inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
         
-        @scala.inline
-        def setPaddingTop(value: Dimension): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+        inline def setPaddingTop(value: Dimension): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
+        inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
         
-        @scala.inline
-        def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+        inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+        inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
       }
     }
     
@@ -5750,86 +4580,60 @@ object Docs {
     }
     object TableCellStyleSuggestionState {
       
-      @scala.inline
-      def apply(): TableCellStyleSuggestionState = {
+      inline def apply(): TableCellStyleSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableCellStyleSuggestionState]
       }
       
-      @scala.inline
-      implicit class TableCellStyleSuggestionStateMutableBuilder[Self <: TableCellStyleSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: TableCellStyleSuggestionState](x: Self) {
         
-        @scala.inline
-        def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
+        inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
+        inline def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
         
-        @scala.inline
-        def setBorderBottomSuggested(value: Boolean): Self = StObject.set(x, "borderBottomSuggested", value.asInstanceOf[js.Any])
+        inline def setBorderBottomSuggested(value: Boolean): Self = StObject.set(x, "borderBottomSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderBottomSuggestedUndefined: Self = StObject.set(x, "borderBottomSuggested", js.undefined)
+        inline def setBorderBottomSuggestedUndefined: Self = StObject.set(x, "borderBottomSuggested", js.undefined)
         
-        @scala.inline
-        def setBorderLeftSuggested(value: Boolean): Self = StObject.set(x, "borderLeftSuggested", value.asInstanceOf[js.Any])
+        inline def setBorderLeftSuggested(value: Boolean): Self = StObject.set(x, "borderLeftSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderLeftSuggestedUndefined: Self = StObject.set(x, "borderLeftSuggested", js.undefined)
+        inline def setBorderLeftSuggestedUndefined: Self = StObject.set(x, "borderLeftSuggested", js.undefined)
         
-        @scala.inline
-        def setBorderRightSuggested(value: Boolean): Self = StObject.set(x, "borderRightSuggested", value.asInstanceOf[js.Any])
+        inline def setBorderRightSuggested(value: Boolean): Self = StObject.set(x, "borderRightSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderRightSuggestedUndefined: Self = StObject.set(x, "borderRightSuggested", js.undefined)
+        inline def setBorderRightSuggestedUndefined: Self = StObject.set(x, "borderRightSuggested", js.undefined)
         
-        @scala.inline
-        def setBorderTopSuggested(value: Boolean): Self = StObject.set(x, "borderTopSuggested", value.asInstanceOf[js.Any])
+        inline def setBorderTopSuggested(value: Boolean): Self = StObject.set(x, "borderTopSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderTopSuggestedUndefined: Self = StObject.set(x, "borderTopSuggested", js.undefined)
+        inline def setBorderTopSuggestedUndefined: Self = StObject.set(x, "borderTopSuggested", js.undefined)
         
-        @scala.inline
-        def setColumnSpanSuggested(value: Boolean): Self = StObject.set(x, "columnSpanSuggested", value.asInstanceOf[js.Any])
+        inline def setColumnSpanSuggested(value: Boolean): Self = StObject.set(x, "columnSpanSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnSpanSuggestedUndefined: Self = StObject.set(x, "columnSpanSuggested", js.undefined)
+        inline def setColumnSpanSuggestedUndefined: Self = StObject.set(x, "columnSpanSuggested", js.undefined)
         
-        @scala.inline
-        def setContentAlignmentSuggested(value: Boolean): Self = StObject.set(x, "contentAlignmentSuggested", value.asInstanceOf[js.Any])
+        inline def setContentAlignmentSuggested(value: Boolean): Self = StObject.set(x, "contentAlignmentSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentAlignmentSuggestedUndefined: Self = StObject.set(x, "contentAlignmentSuggested", js.undefined)
+        inline def setContentAlignmentSuggestedUndefined: Self = StObject.set(x, "contentAlignmentSuggested", js.undefined)
         
-        @scala.inline
-        def setPaddingBottomSuggested(value: Boolean): Self = StObject.set(x, "paddingBottomSuggested", value.asInstanceOf[js.Any])
+        inline def setPaddingBottomSuggested(value: Boolean): Self = StObject.set(x, "paddingBottomSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingBottomSuggestedUndefined: Self = StObject.set(x, "paddingBottomSuggested", js.undefined)
+        inline def setPaddingBottomSuggestedUndefined: Self = StObject.set(x, "paddingBottomSuggested", js.undefined)
         
-        @scala.inline
-        def setPaddingLeftSuggested(value: Boolean): Self = StObject.set(x, "paddingLeftSuggested", value.asInstanceOf[js.Any])
+        inline def setPaddingLeftSuggested(value: Boolean): Self = StObject.set(x, "paddingLeftSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingLeftSuggestedUndefined: Self = StObject.set(x, "paddingLeftSuggested", js.undefined)
+        inline def setPaddingLeftSuggestedUndefined: Self = StObject.set(x, "paddingLeftSuggested", js.undefined)
         
-        @scala.inline
-        def setPaddingRightSuggested(value: Boolean): Self = StObject.set(x, "paddingRightSuggested", value.asInstanceOf[js.Any])
+        inline def setPaddingRightSuggested(value: Boolean): Self = StObject.set(x, "paddingRightSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingRightSuggestedUndefined: Self = StObject.set(x, "paddingRightSuggested", js.undefined)
+        inline def setPaddingRightSuggestedUndefined: Self = StObject.set(x, "paddingRightSuggested", js.undefined)
         
-        @scala.inline
-        def setPaddingTopSuggested(value: Boolean): Self = StObject.set(x, "paddingTopSuggested", value.asInstanceOf[js.Any])
+        inline def setPaddingTopSuggested(value: Boolean): Self = StObject.set(x, "paddingTopSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingTopSuggestedUndefined: Self = StObject.set(x, "paddingTopSuggested", js.undefined)
+        inline def setPaddingTopSuggestedUndefined: Self = StObject.set(x, "paddingTopSuggested", js.undefined)
         
-        @scala.inline
-        def setRowSpanSuggested(value: Boolean): Self = StObject.set(x, "rowSpanSuggested", value.asInstanceOf[js.Any])
+        inline def setRowSpanSuggested(value: Boolean): Self = StObject.set(x, "rowSpanSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowSpanSuggestedUndefined: Self = StObject.set(x, "rowSpanSuggested", js.undefined)
+        inline def setRowSpanSuggestedUndefined: Self = StObject.set(x, "rowSpanSuggested", js.undefined)
       }
     }
     
@@ -5841,26 +4645,20 @@ object Docs {
     }
     object TableColumnProperties {
       
-      @scala.inline
-      def apply(): TableColumnProperties = {
+      inline def apply(): TableColumnProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableColumnProperties]
       }
       
-      @scala.inline
-      implicit class TableColumnPropertiesMutableBuilder[Self <: TableColumnProperties] (val x: Self) extends AnyVal {
+      extension [Self <: TableColumnProperties](x: Self) {
         
-        @scala.inline
-        def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthType(value: String): Self = StObject.set(x, "widthType", value.asInstanceOf[js.Any])
+        inline def setWidthType(value: String): Self = StObject.set(x, "widthType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthTypeUndefined: Self = StObject.set(x, "widthType", js.undefined)
+        inline def setWidthTypeUndefined: Self = StObject.set(x, "widthType", js.undefined)
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       }
     }
     
@@ -5874,41 +4672,30 @@ object Docs {
     }
     object TableOfContents {
       
-      @scala.inline
-      def apply(): TableOfContents = {
+      inline def apply(): TableOfContents = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableOfContents]
       }
       
-      @scala.inline
-      implicit class TableOfContentsMutableBuilder[Self <: TableOfContents] (val x: Self) extends AnyVal {
+      extension [Self <: TableOfContents](x: Self) {
         
-        @scala.inline
-        def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
+        inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
       }
     }
     
@@ -5930,65 +4717,46 @@ object Docs {
     }
     object TableRow {
       
-      @scala.inline
-      def apply(): TableRow = {
+      inline def apply(): TableRow = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableRow]
       }
       
-      @scala.inline
-      implicit class TableRowMutableBuilder[Self <: TableRow] (val x: Self) extends AnyVal {
+      extension [Self <: TableRow](x: Self) {
         
-        @scala.inline
-        def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+        inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+        inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
         
-        @scala.inline
-        def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+        inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+        inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
+        inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedTableRowStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTableRowStyleChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedTableRowStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTableRowStyleChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedTableRowStyleChangesUndefined: Self = StObject.set(x, "suggestedTableRowStyleChanges", js.undefined)
+        inline def setSuggestedTableRowStyleChangesUndefined: Self = StObject.set(x, "suggestedTableRowStyleChanges", js.undefined)
         
-        @scala.inline
-        def setTableCells(value: js.Array[TableCell]): Self = StObject.set(x, "tableCells", value.asInstanceOf[js.Any])
+        inline def setTableCells(value: js.Array[TableCell]): Self = StObject.set(x, "tableCells", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableCellsUndefined: Self = StObject.set(x, "tableCells", js.undefined)
+        inline def setTableCellsUndefined: Self = StObject.set(x, "tableCells", js.undefined)
         
-        @scala.inline
-        def setTableCellsVarargs(value: TableCell*): Self = StObject.set(x, "tableCells", js.Array(value :_*))
+        inline def setTableCellsVarargs(value: TableCell*): Self = StObject.set(x, "tableCells", js.Array(value :_*))
         
-        @scala.inline
-        def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
+        inline def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableRowStyleUndefined: Self = StObject.set(x, "tableRowStyle", js.undefined)
+        inline def setTableRowStyleUndefined: Self = StObject.set(x, "tableRowStyle", js.undefined)
       }
     }
     
@@ -5998,20 +4766,16 @@ object Docs {
     }
     object TableRowStyle {
       
-      @scala.inline
-      def apply(): TableRowStyle = {
+      inline def apply(): TableRowStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableRowStyle]
       }
       
-      @scala.inline
-      implicit class TableRowStyleMutableBuilder[Self <: TableRowStyle] (val x: Self) extends AnyVal {
+      extension [Self <: TableRowStyle](x: Self) {
         
-        @scala.inline
-        def setMinRowHeight(value: Dimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
+        inline def setMinRowHeight(value: Dimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinRowHeightUndefined: Self = StObject.set(x, "minRowHeight", js.undefined)
+        inline def setMinRowHeightUndefined: Self = StObject.set(x, "minRowHeight", js.undefined)
       }
     }
     
@@ -6021,20 +4785,16 @@ object Docs {
     }
     object TableRowStyleSuggestionState {
       
-      @scala.inline
-      def apply(): TableRowStyleSuggestionState = {
+      inline def apply(): TableRowStyleSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableRowStyleSuggestionState]
       }
       
-      @scala.inline
-      implicit class TableRowStyleSuggestionStateMutableBuilder[Self <: TableRowStyleSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: TableRowStyleSuggestionState](x: Self) {
         
-        @scala.inline
-        def setMinRowHeightSuggested(value: Boolean): Self = StObject.set(x, "minRowHeightSuggested", value.asInstanceOf[js.Any])
+        inline def setMinRowHeightSuggested(value: Boolean): Self = StObject.set(x, "minRowHeightSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinRowHeightSuggestedUndefined: Self = StObject.set(x, "minRowHeightSuggested", js.undefined)
+        inline def setMinRowHeightSuggestedUndefined: Self = StObject.set(x, "minRowHeightSuggested", js.undefined)
       }
     }
     
@@ -6044,23 +4804,18 @@ object Docs {
     }
     object TableStyle {
       
-      @scala.inline
-      def apply(): TableStyle = {
+      inline def apply(): TableStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableStyle]
       }
       
-      @scala.inline
-      implicit class TableStyleMutableBuilder[Self <: TableStyle] (val x: Self) extends AnyVal {
+      extension [Self <: TableStyle](x: Self) {
         
-        @scala.inline
-        def setTableColumnProperties(value: js.Array[TableColumnProperties]): Self = StObject.set(x, "tableColumnProperties", value.asInstanceOf[js.Any])
+        inline def setTableColumnProperties(value: js.Array[TableColumnProperties]): Self = StObject.set(x, "tableColumnProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableColumnPropertiesUndefined: Self = StObject.set(x, "tableColumnProperties", js.undefined)
+        inline def setTableColumnPropertiesUndefined: Self = StObject.set(x, "tableColumnProperties", js.undefined)
         
-        @scala.inline
-        def setTableColumnPropertiesVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumnProperties", js.Array(value :_*))
+        inline def setTableColumnPropertiesVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumnProperties", js.Array(value :_*))
       }
     }
     
@@ -6078,50 +4833,36 @@ object Docs {
     }
     object TextRun {
       
-      @scala.inline
-      def apply(): TextRun = {
+      inline def apply(): TextRun = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TextRun]
       }
       
-      @scala.inline
-      implicit class TextRunMutableBuilder[Self <: TextRun] (val x: Self) extends AnyVal {
+      extension [Self <: TextRun](x: Self) {
         
-        @scala.inline
-        def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+        inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
+        inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
+        inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        @scala.inline
-        def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
+        inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
+        inline def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
         
-        @scala.inline
-        def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+        inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+        inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       }
     }
     
@@ -6151,80 +4892,56 @@ object Docs {
     }
     object TextStyle {
       
-      @scala.inline
-      def apply(): TextStyle = {
+      inline def apply(): TextStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TextStyle]
       }
       
-      @scala.inline
-      implicit class TextStyleMutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
+      extension [Self <: TextStyle](x: Self) {
         
-        @scala.inline
-        def setBackgroundColor(value: OptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+        inline def setBackgroundColor(value: OptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+        inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
         
-        @scala.inline
-        def setBaselineOffset(value: String): Self = StObject.set(x, "baselineOffset", value.asInstanceOf[js.Any])
+        inline def setBaselineOffset(value: String): Self = StObject.set(x, "baselineOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBaselineOffsetUndefined: Self = StObject.set(x, "baselineOffset", js.undefined)
+        inline def setBaselineOffsetUndefined: Self = StObject.set(x, "baselineOffset", js.undefined)
         
-        @scala.inline
-        def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+        inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+        inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
         
-        @scala.inline
-        def setFontSize(value: Dimension): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+        inline def setFontSize(value: Dimension): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+        inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
         
-        @scala.inline
-        def setForegroundColor(value: OptionalColor): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+        inline def setForegroundColor(value: OptionalColor): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
+        inline def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
         
-        @scala.inline
-        def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+        inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+        inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
         
-        @scala.inline
-        def setLink(value: Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+        inline def setLink(value: Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+        inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
         
-        @scala.inline
-        def setSmallCaps(value: Boolean): Self = StObject.set(x, "smallCaps", value.asInstanceOf[js.Any])
+        inline def setSmallCaps(value: Boolean): Self = StObject.set(x, "smallCaps", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSmallCapsUndefined: Self = StObject.set(x, "smallCaps", js.undefined)
+        inline def setSmallCapsUndefined: Self = StObject.set(x, "smallCaps", js.undefined)
         
-        @scala.inline
-        def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+        inline def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
+        inline def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
         
-        @scala.inline
-        def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+        inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+        inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
         
-        @scala.inline
-        def setWeightedFontFamily(value: WeightedFontFamily): Self = StObject.set(x, "weightedFontFamily", value.asInstanceOf[js.Any])
+        inline def setWeightedFontFamily(value: WeightedFontFamily): Self = StObject.set(x, "weightedFontFamily", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeightedFontFamilyUndefined: Self = StObject.set(x, "weightedFontFamily", js.undefined)
+        inline def setWeightedFontFamilyUndefined: Self = StObject.set(x, "weightedFontFamily", js.undefined)
       }
     }
     
@@ -6254,80 +4971,56 @@ object Docs {
     }
     object TextStyleSuggestionState {
       
-      @scala.inline
-      def apply(): TextStyleSuggestionState = {
+      inline def apply(): TextStyleSuggestionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TextStyleSuggestionState]
       }
       
-      @scala.inline
-      implicit class TextStyleSuggestionStateMutableBuilder[Self <: TextStyleSuggestionState] (val x: Self) extends AnyVal {
+      extension [Self <: TextStyleSuggestionState](x: Self) {
         
-        @scala.inline
-        def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
+        inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
+        inline def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
         
-        @scala.inline
-        def setBaselineOffsetSuggested(value: Boolean): Self = StObject.set(x, "baselineOffsetSuggested", value.asInstanceOf[js.Any])
+        inline def setBaselineOffsetSuggested(value: Boolean): Self = StObject.set(x, "baselineOffsetSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBaselineOffsetSuggestedUndefined: Self = StObject.set(x, "baselineOffsetSuggested", js.undefined)
+        inline def setBaselineOffsetSuggestedUndefined: Self = StObject.set(x, "baselineOffsetSuggested", js.undefined)
         
-        @scala.inline
-        def setBoldSuggested(value: Boolean): Self = StObject.set(x, "boldSuggested", value.asInstanceOf[js.Any])
+        inline def setBoldSuggested(value: Boolean): Self = StObject.set(x, "boldSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoldSuggestedUndefined: Self = StObject.set(x, "boldSuggested", js.undefined)
+        inline def setBoldSuggestedUndefined: Self = StObject.set(x, "boldSuggested", js.undefined)
         
-        @scala.inline
-        def setFontSizeSuggested(value: Boolean): Self = StObject.set(x, "fontSizeSuggested", value.asInstanceOf[js.Any])
+        inline def setFontSizeSuggested(value: Boolean): Self = StObject.set(x, "fontSizeSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontSizeSuggestedUndefined: Self = StObject.set(x, "fontSizeSuggested", js.undefined)
+        inline def setFontSizeSuggestedUndefined: Self = StObject.set(x, "fontSizeSuggested", js.undefined)
         
-        @scala.inline
-        def setForegroundColorSuggested(value: Boolean): Self = StObject.set(x, "foregroundColorSuggested", value.asInstanceOf[js.Any])
+        inline def setForegroundColorSuggested(value: Boolean): Self = StObject.set(x, "foregroundColorSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForegroundColorSuggestedUndefined: Self = StObject.set(x, "foregroundColorSuggested", js.undefined)
+        inline def setForegroundColorSuggestedUndefined: Self = StObject.set(x, "foregroundColorSuggested", js.undefined)
         
-        @scala.inline
-        def setItalicSuggested(value: Boolean): Self = StObject.set(x, "italicSuggested", value.asInstanceOf[js.Any])
+        inline def setItalicSuggested(value: Boolean): Self = StObject.set(x, "italicSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItalicSuggestedUndefined: Self = StObject.set(x, "italicSuggested", js.undefined)
+        inline def setItalicSuggestedUndefined: Self = StObject.set(x, "italicSuggested", js.undefined)
         
-        @scala.inline
-        def setLinkSuggested(value: Boolean): Self = StObject.set(x, "linkSuggested", value.asInstanceOf[js.Any])
+        inline def setLinkSuggested(value: Boolean): Self = StObject.set(x, "linkSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkSuggestedUndefined: Self = StObject.set(x, "linkSuggested", js.undefined)
+        inline def setLinkSuggestedUndefined: Self = StObject.set(x, "linkSuggested", js.undefined)
         
-        @scala.inline
-        def setSmallCapsSuggested(value: Boolean): Self = StObject.set(x, "smallCapsSuggested", value.asInstanceOf[js.Any])
+        inline def setSmallCapsSuggested(value: Boolean): Self = StObject.set(x, "smallCapsSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSmallCapsSuggestedUndefined: Self = StObject.set(x, "smallCapsSuggested", js.undefined)
+        inline def setSmallCapsSuggestedUndefined: Self = StObject.set(x, "smallCapsSuggested", js.undefined)
         
-        @scala.inline
-        def setStrikethroughSuggested(value: Boolean): Self = StObject.set(x, "strikethroughSuggested", value.asInstanceOf[js.Any])
+        inline def setStrikethroughSuggested(value: Boolean): Self = StObject.set(x, "strikethroughSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStrikethroughSuggestedUndefined: Self = StObject.set(x, "strikethroughSuggested", js.undefined)
+        inline def setStrikethroughSuggestedUndefined: Self = StObject.set(x, "strikethroughSuggested", js.undefined)
         
-        @scala.inline
-        def setUnderlineSuggested(value: Boolean): Self = StObject.set(x, "underlineSuggested", value.asInstanceOf[js.Any])
+        inline def setUnderlineSuggested(value: Boolean): Self = StObject.set(x, "underlineSuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnderlineSuggestedUndefined: Self = StObject.set(x, "underlineSuggested", js.undefined)
+        inline def setUnderlineSuggestedUndefined: Self = StObject.set(x, "underlineSuggested", js.undefined)
         
-        @scala.inline
-        def setWeightedFontFamilySuggested(value: Boolean): Self = StObject.set(x, "weightedFontFamilySuggested", value.asInstanceOf[js.Any])
+        inline def setWeightedFontFamilySuggested(value: Boolean): Self = StObject.set(x, "weightedFontFamilySuggested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeightedFontFamilySuggestedUndefined: Self = StObject.set(x, "weightedFontFamilySuggested", js.undefined)
+        inline def setWeightedFontFamilySuggestedUndefined: Self = StObject.set(x, "weightedFontFamilySuggested", js.undefined)
       }
     }
     
@@ -6341,32 +5034,24 @@ object Docs {
     }
     object UpdateParagraphStyleRequest {
       
-      @scala.inline
-      def apply(): UpdateParagraphStyleRequest = {
+      inline def apply(): UpdateParagraphStyleRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateParagraphStyleRequest]
       }
       
-      @scala.inline
-      implicit class UpdateParagraphStyleRequestMutableBuilder[Self <: UpdateParagraphStyleRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateParagraphStyleRequest](x: Self) {
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
+        inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
+        inline def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
         
-        @scala.inline
-        def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+        inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+        inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       }
     }
     
@@ -6380,32 +5065,24 @@ object Docs {
     }
     object UpdateTextStyleRequest {
       
-      @scala.inline
-      def apply(): UpdateTextStyleRequest = {
+      inline def apply(): UpdateTextStyleRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateTextStyleRequest]
       }
       
-      @scala.inline
-      implicit class UpdateTextStyleRequestMutableBuilder[Self <: UpdateTextStyleRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateTextStyleRequest](x: Self) {
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+        inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+        inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
         
-        @scala.inline
-        def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+        inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+        inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       }
     }
     
@@ -6417,26 +5094,20 @@ object Docs {
     }
     object WeightedFontFamily {
       
-      @scala.inline
-      def apply(): WeightedFontFamily = {
+      inline def apply(): WeightedFontFamily = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[WeightedFontFamily]
       }
       
-      @scala.inline
-      implicit class WeightedFontFamilyMutableBuilder[Self <: WeightedFontFamily] (val x: Self) extends AnyVal {
+      extension [Self <: WeightedFontFamily](x: Self) {
         
-        @scala.inline
-        def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+        inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+        inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
         
-        @scala.inline
-        def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+        inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+        inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
       }
     }
     
@@ -6448,26 +5119,20 @@ object Docs {
     }
     object WriteControl {
       
-      @scala.inline
-      def apply(): WriteControl = {
+      inline def apply(): WriteControl = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[WriteControl]
       }
       
-      @scala.inline
-      implicit class WriteControlMutableBuilder[Self <: WriteControl] (val x: Self) extends AnyVal {
+      extension [Self <: WriteControl](x: Self) {
         
-        @scala.inline
-        def setRequiredRevisionId(value: String): Self = StObject.set(x, "requiredRevisionId", value.asInstanceOf[js.Any])
+        inline def setRequiredRevisionId(value: String): Self = StObject.set(x, "requiredRevisionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequiredRevisionIdUndefined: Self = StObject.set(x, "requiredRevisionId", js.undefined)
+        inline def setRequiredRevisionIdUndefined: Self = StObject.set(x, "requiredRevisionId", js.undefined)
         
-        @scala.inline
-        def setTargetRevisionId(value: String): Self = StObject.set(x, "targetRevisionId", value.asInstanceOf[js.Any])
+        inline def setTargetRevisionId(value: String): Self = StObject.set(x, "targetRevisionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetRevisionIdUndefined: Self = StObject.set(x, "targetRevisionId", js.undefined)
+        inline def setTargetRevisionIdUndefined: Self = StObject.set(x, "targetRevisionId", js.undefined)
       }
     }
   }

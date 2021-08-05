@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Panes")
 @js.native
-class Panes protected ()
+/* private */ class Panes ()
   extends StObject
      with typings.activexOutlook.Outlook.Panes {
   
@@ -23,7 +23,7 @@ class Panes protected ()
   /* CompleteClass */
   override def Item(Index: js.Any): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Panes_typekey")
   var OutlookDotPanes_typekey: typings.activexOutlook.Outlook.Panes = js.native
   

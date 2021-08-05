@@ -43,7 +43,7 @@ object contextChannelsMod {
   @JSImport("openfin/_v2/fdc3/contextChannels", "ChannelBase")
   @js.native
   abstract class ChannelBase protected () extends StObject {
-    protected def this(id: String, `type`: String) = this()
+    /* protected */ def this(id: String, `type`: String) = this()
     
     /**
       * Event that is fired whenever a window broadcasts on this channel.
@@ -191,19 +191,14 @@ object contextChannelsMod {
   @js.native
   val defaultChannel: DefaultChannel_ = js.native
   
-  @scala.inline
-  def getChannelById(channelId: ChannelId): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChannelById")(channelId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Channel]]
+  inline def getChannelById(channelId: ChannelId): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChannelById")(channelId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Channel]]
   
-  @scala.inline
-  def getCurrentChannel(): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")().asInstanceOf[js.Promise[Channel]]
-  @scala.inline
-  def getCurrentChannel(identity: Identity): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")(identity.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Channel]]
+  inline def getCurrentChannel(): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")().asInstanceOf[js.Promise[Channel]]
+  inline def getCurrentChannel(identity: Identity): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")(identity.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Channel]]
   
-  @scala.inline
-  def getOrCreateAppChannel(name: String): js.Promise[AppChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateAppChannel")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AppChannel]]
+  inline def getOrCreateAppChannel(name: String): js.Promise[AppChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateAppChannel")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AppChannel]]
   
-  @scala.inline
-  def getSystemChannels(): js.Promise[js.Array[SystemChannel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemChannels")().asInstanceOf[js.Promise[js.Array[SystemChannel]]]
+  inline def getSystemChannels(): js.Promise[js.Array[SystemChannel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemChannels")().asInstanceOf[js.Promise[js.Array[SystemChannel]]]
   
   trait AppChannelTransport
     extends StObject
@@ -216,21 +211,17 @@ object contextChannelsMod {
   }
   object AppChannelTransport {
     
-    @scala.inline
-    def apply(id: ChannelId, name: String): AppChannelTransport = {
+    inline def apply(id: ChannelId, name: String): AppChannelTransport = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("app")
       __obj.asInstanceOf[AppChannelTransport]
     }
     
-    @scala.inline
-    implicit class AppChannelTransportMutableBuilder[Self <: AppChannelTransport] (val x: Self) extends AnyVal {
+    extension [Self <: AppChannelTransport](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: app): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: app): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -267,33 +258,25 @@ object contextChannelsMod {
   }
   object ChannelChangedEvent {
     
-    @scala.inline
-    def apply(identity: Identity): ChannelChangedEvent = {
+    inline def apply(identity: Identity): ChannelChangedEvent = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], channel = null, previousChannel = null)
       __obj.updateDynamic("type")("channel-changed")
       __obj.asInstanceOf[ChannelChangedEvent]
     }
     
-    @scala.inline
-    implicit class ChannelChangedEventMutableBuilder[Self <: ChannelChangedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelChangedEvent](x: Self) {
       
-      @scala.inline
-      def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelNull: Self = StObject.set(x, "channel", null)
+      inline def setChannelNull: Self = StObject.set(x, "channel", null)
       
-      @scala.inline
-      def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousChannel(value: Channel): Self = StObject.set(x, "previousChannel", value.asInstanceOf[js.Any])
+      inline def setPreviousChannel(value: Channel): Self = StObject.set(x, "previousChannel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousChannelNull: Self = StObject.set(x, "previousChannel", null)
+      inline def setPreviousChannelNull: Self = StObject.set(x, "previousChannel", null)
       
-      @scala.inline
-      def setType(value: `channel-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `channel-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -311,17 +294,14 @@ object contextChannelsMod {
   }
   object ChannelContextListener {
     
-    @scala.inline
-    def apply(channel: Channel, handler: Context => Unit, unsubscribe: () => Unit): ChannelContextListener = {
+    inline def apply(channel: Channel, handler: Context => Unit, unsubscribe: () => Unit): ChannelContextListener = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], handler = js.Any.fromFunction1(handler), unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[ChannelContextListener]
     }
     
-    @scala.inline
-    implicit class ChannelContextListenerMutableBuilder[Self <: ChannelContextListener] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelContextListener](x: Self) {
       
-      @scala.inline
-      def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -335,21 +315,17 @@ object contextChannelsMod {
   }
   object ChannelTransport {
     
-    @scala.inline
-    def apply(id: ChannelId, `type`: String): ChannelTransport = {
+    inline def apply(id: ChannelId, `type`: String): ChannelTransport = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelTransport]
     }
     
-    @scala.inline
-    implicit class ChannelTransportMutableBuilder[Self <: ChannelTransport] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelTransport](x: Self) {
       
-      @scala.inline
-      def setId(value: ChannelId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: ChannelId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -377,30 +353,23 @@ object contextChannelsMod {
   }
   object ChannelWindowAddedEvent {
     
-    @scala.inline
-    def apply(channel: Channel, identity: Identity): ChannelWindowAddedEvent = {
+    inline def apply(channel: Channel, identity: Identity): ChannelWindowAddedEvent = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], previousChannel = null)
       __obj.updateDynamic("type")("window-added")
       __obj.asInstanceOf[ChannelWindowAddedEvent]
     }
     
-    @scala.inline
-    implicit class ChannelWindowAddedEventMutableBuilder[Self <: ChannelWindowAddedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelWindowAddedEvent](x: Self) {
       
-      @scala.inline
-      def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousChannel(value: Channel): Self = StObject.set(x, "previousChannel", value.asInstanceOf[js.Any])
+      inline def setPreviousChannel(value: Channel): Self = StObject.set(x, "previousChannel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousChannelNull: Self = StObject.set(x, "previousChannel", null)
+      inline def setPreviousChannelNull: Self = StObject.set(x, "previousChannel", null)
       
-      @scala.inline
-      def setType(value: `window-added`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `window-added`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -428,30 +397,23 @@ object contextChannelsMod {
   }
   object ChannelWindowRemovedEvent {
     
-    @scala.inline
-    def apply(identity: Identity, previousChannel: Channel): ChannelWindowRemovedEvent = {
+    inline def apply(identity: Identity, previousChannel: Channel): ChannelWindowRemovedEvent = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], previousChannel = previousChannel.asInstanceOf[js.Any], channel = null)
       __obj.updateDynamic("type")("window-removed")
       __obj.asInstanceOf[ChannelWindowRemovedEvent]
     }
     
-    @scala.inline
-    implicit class ChannelWindowRemovedEventMutableBuilder[Self <: ChannelWindowRemovedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelWindowRemovedEvent](x: Self) {
       
-      @scala.inline
-      def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelNull: Self = StObject.set(x, "channel", null)
+      inline def setChannelNull: Self = StObject.set(x, "channel", null)
       
-      @scala.inline
-      def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousChannel(value: Channel): Self = StObject.set(x, "previousChannel", value.asInstanceOf[js.Any])
+      inline def setPreviousChannel(value: Channel): Self = StObject.set(x, "previousChannel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: `window-removed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `window-removed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -474,23 +436,18 @@ object contextChannelsMod {
   }
   object DisplayMetadata {
     
-    @scala.inline
-    def apply(color: String, glyph: String, name: String): DisplayMetadata = {
+    inline def apply(color: String, glyph: String, name: String): DisplayMetadata = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], glyph = glyph.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayMetadata]
     }
     
-    @scala.inline
-    implicit class DisplayMetadataMutableBuilder[Self <: DisplayMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayMetadata](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+      inline def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -505,21 +462,17 @@ object contextChannelsMod {
   }
   object SystemChannelTransport {
     
-    @scala.inline
-    def apply(id: ChannelId, visualIdentity: DisplayMetadata): SystemChannelTransport = {
+    inline def apply(id: ChannelId, visualIdentity: DisplayMetadata): SystemChannelTransport = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], visualIdentity = visualIdentity.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("system")
       __obj.asInstanceOf[SystemChannelTransport]
     }
     
-    @scala.inline
-    implicit class SystemChannelTransportMutableBuilder[Self <: SystemChannelTransport] (val x: Self) extends AnyVal {
+    extension [Self <: SystemChannelTransport](x: Self) {
       
-      @scala.inline
-      def setType(value: system): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: system): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisualIdentity(value: DisplayMetadata): Self = StObject.set(x, "visualIdentity", value.asInstanceOf[js.Any])
+      inline def setVisualIdentity(value: DisplayMetadata): Self = StObject.set(x, "visualIdentity", value.asInstanceOf[js.Any])
     }
   }
 }

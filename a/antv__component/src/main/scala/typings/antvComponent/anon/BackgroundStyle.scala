@@ -16,8 +16,7 @@ trait BackgroundStyle extends StObject {
 }
 object BackgroundStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundStyle: FillStringOpacityNumber,
     foregroundStyle: CursorFill,
     handlerStyle: Width,
@@ -27,19 +26,14 @@ object BackgroundStyle {
     __obj.asInstanceOf[BackgroundStyle]
   }
   
-  @scala.inline
-  implicit class BackgroundStyleMutableBuilder[Self <: BackgroundStyle] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundStyle](x: Self) {
     
-    @scala.inline
-    def setBackgroundStyle(value: FillStringOpacityNumber): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
+    inline def setBackgroundStyle(value: FillStringOpacityNumber): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundStyle(value: CursorFill): Self = StObject.set(x, "foregroundStyle", value.asInstanceOf[js.Any])
+    inline def setForegroundStyle(value: CursorFill): Self = StObject.set(x, "foregroundStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlerStyle(value: Width): Self = StObject.set(x, "handlerStyle", value.asInstanceOf[js.Any])
+    inline def setHandlerStyle(value: Width): Self = StObject.set(x, "handlerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyle(value: OpacityTextBaseline): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: OpacityTextBaseline): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
   }
 }

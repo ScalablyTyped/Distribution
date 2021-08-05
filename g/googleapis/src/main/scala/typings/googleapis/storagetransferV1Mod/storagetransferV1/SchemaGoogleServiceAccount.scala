@@ -16,19 +16,15 @@ trait SchemaGoogleServiceAccount extends StObject {
 }
 object SchemaGoogleServiceAccount {
   
-  @scala.inline
-  def apply(): SchemaGoogleServiceAccount = {
+  inline def apply(): SchemaGoogleServiceAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleServiceAccount]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleServiceAccountMutableBuilder[Self <: SchemaGoogleServiceAccount] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleServiceAccount](x: Self) {
     
-    @scala.inline
-    def setAccountEmail(value: String): Self = StObject.set(x, "accountEmail", value.asInstanceOf[js.Any])
+    inline def setAccountEmail(value: String): Self = StObject.set(x, "accountEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountEmailUndefined: Self = StObject.set(x, "accountEmail", js.undefined)
+    inline def setAccountEmailUndefined: Self = StObject.set(x, "accountEmail", js.undefined)
   }
 }

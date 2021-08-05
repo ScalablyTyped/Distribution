@@ -11,6 +11,5 @@ object requiredCaptchaSubmissionExampleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def RequiredCaptchaSubmissionExample(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RequiredCaptchaSubmissionExample")().asInstanceOf[Element]
+  inline def RequiredCaptchaSubmissionExample(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RequiredCaptchaSubmissionExample")().asInstanceOf[Element]
 }

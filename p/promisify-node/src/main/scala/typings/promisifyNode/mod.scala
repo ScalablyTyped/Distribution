@@ -14,30 +14,18 @@ object mod {
     * @param {Boolean} noMutate - Optional set to true to avoid mutating the target.
     * @returns {*} exports - The resolved value from require or passed in value.
     */
-  @scala.inline
-  def apply(name: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: String, test: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: String, test: js.Function, noMutate: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: String, test: Unit, noMutate: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: js.Function): js.Any = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: js.Function, test: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: js.Function, test: js.Function, noMutate: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: js.Function, test: Unit, noMutate: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: js.Object, test: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: js.Object, test: js.Function, noMutate: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(name: js.Object, test: Unit, noMutate: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(name: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(name: String, test: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(name: String, test: js.Function, noMutate: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(name: String, test: Unit, noMutate: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(name: js.Function): js.Any = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(name: js.Function, test: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(name: js.Function, test: js.Function, noMutate: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(name: js.Function, test: Unit, noMutate: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(name: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(name: js.Object, test: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(name: js.Object, test: js.Function, noMutate: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(name: js.Object, test: Unit, noMutate: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("promisify-node", JSImport.Namespace)
   @js.native

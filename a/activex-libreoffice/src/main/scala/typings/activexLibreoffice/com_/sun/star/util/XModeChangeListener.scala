@@ -21,8 +21,7 @@ trait XModeChangeListener
 }
 object XModeChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     modeChanged: ModeChangeEvent => Unit,
@@ -33,10 +32,8 @@ object XModeChangeListener {
     __obj.asInstanceOf[XModeChangeListener]
   }
   
-  @scala.inline
-  implicit class XModeChangeListenerMutableBuilder[Self <: XModeChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XModeChangeListener](x: Self) {
     
-    @scala.inline
-    def setModeChanged(value: ModeChangeEvent => Unit): Self = StObject.set(x, "modeChanged", js.Any.fromFunction1(value))
+    inline def setModeChanged(value: ModeChangeEvent => Unit): Self = StObject.set(x, "modeChanged", js.Any.fromFunction1(value))
   }
 }

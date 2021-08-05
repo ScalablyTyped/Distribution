@@ -17,19 +17,15 @@ trait Prefix extends StObject {
 }
 object Prefix {
   
-  @scala.inline
-  def apply(prefix: String, vhost: String): Prefix = {
+  inline def apply(prefix: String, vhost: String): Prefix = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], vhost = vhost.asInstanceOf[js.Any])
     __obj.asInstanceOf[Prefix]
   }
   
-  @scala.inline
-  implicit class PrefixMutableBuilder[Self <: Prefix] (val x: Self) extends AnyVal {
+  extension [Self <: Prefix](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVhost(value: String): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
+    inline def setVhost(value: String): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
   }
 }

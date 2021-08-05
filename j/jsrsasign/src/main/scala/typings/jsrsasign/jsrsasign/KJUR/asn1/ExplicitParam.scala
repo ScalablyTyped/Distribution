@@ -10,16 +10,13 @@ trait ExplicitParam extends StObject {
 }
 object ExplicitParam {
   
-  @scala.inline
-  def apply(explicit: Boolean): ExplicitParam = {
+  inline def apply(explicit: Boolean): ExplicitParam = {
     val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplicitParam]
   }
   
-  @scala.inline
-  implicit class ExplicitParamMutableBuilder[Self <: ExplicitParam] (val x: Self) extends AnyVal {
+  extension [Self <: ExplicitParam](x: Self) {
     
-    @scala.inline
-    def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
+    inline def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
   }
 }

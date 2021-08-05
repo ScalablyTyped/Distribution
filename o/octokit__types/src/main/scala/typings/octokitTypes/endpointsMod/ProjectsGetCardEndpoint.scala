@@ -14,16 +14,13 @@ trait ProjectsGetCardEndpoint
 }
 object ProjectsGetCardEndpoint {
   
-  @scala.inline
-  def apply(card_id: Double, mediaType: `0`[inertia]): ProjectsGetCardEndpoint = {
+  inline def apply(card_id: Double, mediaType: `0`[inertia]): ProjectsGetCardEndpoint = {
     val __obj = js.Dynamic.literal(card_id = card_id.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsGetCardEndpoint]
   }
   
-  @scala.inline
-  implicit class ProjectsGetCardEndpointMutableBuilder[Self <: ProjectsGetCardEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsGetCardEndpoint](x: Self) {
     
-    @scala.inline
-    def setCard_id(value: Double): Self = StObject.set(x, "card_id", value.asInstanceOf[js.Any])
+    inline def setCard_id(value: Double): Self = StObject.set(x, "card_id", value.asInstanceOf[js.Any])
   }
 }

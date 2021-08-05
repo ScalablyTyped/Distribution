@@ -41,46 +41,33 @@ trait InstrumentOptionsObject extends StObject {
 }
 object InstrumentOptionsObject {
   
-  @scala.inline
-  def apply(): InstrumentOptionsObject = {
+  inline def apply(): InstrumentOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstrumentOptionsObject]
   }
   
-  @scala.inline
-  implicit class InstrumentOptionsObjectMutableBuilder[Self <: InstrumentOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: InstrumentOptionsObject](x: Self) {
     
-    @scala.inline
-    def setAllowedFrequencies(value: js.Array[Double]): Self = StObject.set(x, "allowedFrequencies", value.asInstanceOf[js.Any])
+    inline def setAllowedFrequencies(value: js.Array[Double]): Self = StObject.set(x, "allowedFrequencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedFrequenciesUndefined: Self = StObject.set(x, "allowedFrequencies", js.undefined)
+    inline def setAllowedFrequenciesUndefined: Self = StObject.set(x, "allowedFrequencies", js.undefined)
     
-    @scala.inline
-    def setAllowedFrequenciesVarargs(value: Double*): Self = StObject.set(x, "allowedFrequencies", js.Array(value :_*))
+    inline def setAllowedFrequenciesVarargs(value: Double*): Self = StObject.set(x, "allowedFrequencies", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOscillator(value: OscillatorOptionsObject): Self = StObject.set(x, "oscillator", value.asInstanceOf[js.Any])
+    inline def setOscillator(value: OscillatorOptionsObject): Self = StObject.set(x, "oscillator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOscillatorUndefined: Self = StObject.set(x, "oscillator", js.undefined)
+    inline def setOscillatorUndefined: Self = StObject.set(x, "oscillator", js.undefined)
     
-    @scala.inline
-    def setPlayCallbackInterval(value: Double): Self = StObject.set(x, "playCallbackInterval", value.asInstanceOf[js.Any])
+    inline def setPlayCallbackInterval(value: Double): Self = StObject.set(x, "playCallbackInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayCallbackIntervalUndefined: Self = StObject.set(x, "playCallbackInterval", js.undefined)
+    inline def setPlayCallbackIntervalUndefined: Self = StObject.set(x, "playCallbackInterval", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

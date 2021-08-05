@@ -26,8 +26,7 @@ trait SourceMapSpan extends StObject {
 }
 object SourceMapSpan {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     emittedColumn: Double,
     emittedLine: Double,
     sourceColumn: Double,
@@ -38,28 +37,20 @@ object SourceMapSpan {
     __obj.asInstanceOf[SourceMapSpan]
   }
   
-  @scala.inline
-  implicit class SourceMapSpanMutableBuilder[Self <: SourceMapSpan] (val x: Self) extends AnyVal {
+  extension [Self <: SourceMapSpan](x: Self) {
     
-    @scala.inline
-    def setEmittedColumn(value: Double): Self = StObject.set(x, "emittedColumn", value.asInstanceOf[js.Any])
+    inline def setEmittedColumn(value: Double): Self = StObject.set(x, "emittedColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmittedLine(value: Double): Self = StObject.set(x, "emittedLine", value.asInstanceOf[js.Any])
+    inline def setEmittedLine(value: Double): Self = StObject.set(x, "emittedLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameIndex(value: Double): Self = StObject.set(x, "nameIndex", value.asInstanceOf[js.Any])
+    inline def setNameIndex(value: Double): Self = StObject.set(x, "nameIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameIndexUndefined: Self = StObject.set(x, "nameIndex", js.undefined)
+    inline def setNameIndexUndefined: Self = StObject.set(x, "nameIndex", js.undefined)
     
-    @scala.inline
-    def setSourceColumn(value: Double): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
+    inline def setSourceColumn(value: Double): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
+    inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLine(value: Double): Self = StObject.set(x, "sourceLine", value.asInstanceOf[js.Any])
+    inline def setSourceLine(value: Double): Self = StObject.set(x, "sourceLine", value.asInstanceOf[js.Any])
   }
 }

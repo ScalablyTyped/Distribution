@@ -28,28 +28,21 @@ trait CreateCampaignRequest extends StObject {
 }
 object CreateCampaignRequest {
   
-  @scala.inline
-  def apply(minProvisionedTPS: TransactionsPerSecond, name: Name, solutionVersionArn: Arn): CreateCampaignRequest = {
+  inline def apply(minProvisionedTPS: TransactionsPerSecond, name: Name, solutionVersionArn: Arn): CreateCampaignRequest = {
     val __obj = js.Dynamic.literal(minProvisionedTPS = minProvisionedTPS.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], solutionVersionArn = solutionVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCampaignRequest]
   }
   
-  @scala.inline
-  implicit class CreateCampaignRequestMutableBuilder[Self <: CreateCampaignRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCampaignRequest](x: Self) {
     
-    @scala.inline
-    def setCampaignConfig(value: CampaignConfig): Self = StObject.set(x, "campaignConfig", value.asInstanceOf[js.Any])
+    inline def setCampaignConfig(value: CampaignConfig): Self = StObject.set(x, "campaignConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignConfigUndefined: Self = StObject.set(x, "campaignConfig", js.undefined)
+    inline def setCampaignConfigUndefined: Self = StObject.set(x, "campaignConfig", js.undefined)
     
-    @scala.inline
-    def setMinProvisionedTPS(value: TransactionsPerSecond): Self = StObject.set(x, "minProvisionedTPS", value.asInstanceOf[js.Any])
+    inline def setMinProvisionedTPS(value: TransactionsPerSecond): Self = StObject.set(x, "minProvisionedTPS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
+    inline def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
   }
 }

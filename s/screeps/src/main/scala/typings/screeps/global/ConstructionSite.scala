@@ -74,6 +74,5 @@ class ConstructionSite protected ()
 }
 object ConstructionSite {
   
-  @scala.inline
-  def apply: ConstructionSiteConstructor = js.Dynamic.global.selectDynamic("ConstructionSite").asInstanceOf[ConstructionSiteConstructor]
+  inline def apply: ConstructionSiteConstructor = js.Dynamic.global.selectDynamic("ConstructionSite").asInstanceOf[ConstructionSiteConstructor]
 }

@@ -16,22 +16,17 @@ trait Type[ResourceType]
 }
 object Type {
   
-  @scala.inline
-  def apply[ResourceType](validator: js.Any => /* is ResourceType */ Boolean): Type[ResourceType] = {
+  inline def apply[ResourceType](validator: js.Any => /* is ResourceType */ Boolean): Type[ResourceType] = {
     val __obj = js.Dynamic.literal(validator = js.Any.fromFunction1(validator))
     __obj.asInstanceOf[Type[ResourceType]]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type[?], ResourceType] (val x: Self & Type[ResourceType]) extends AnyVal {
+  extension [Self <: Type[?], ResourceType](x: Self & Type[ResourceType]) {
     
-    @scala.inline
-    def setType(value: Constructor[ResourceType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Constructor[ResourceType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValidator(value: js.Any => /* is ResourceType */ Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
+    inline def setValidator(value: js.Any => /* is ResourceType */ Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
   }
 }

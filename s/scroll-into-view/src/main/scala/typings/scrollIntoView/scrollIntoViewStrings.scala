@@ -11,13 +11,11 @@ object scrollIntoViewStrings {
   sealed trait canceled
     extends StObject
        with callbackParameterType
-  @scala.inline
-  def canceled: canceled = "canceled".asInstanceOf[canceled]
+  inline def canceled: canceled = "canceled".asInstanceOf[canceled]
   
   @js.native
   sealed trait complete
     extends StObject
        with callbackParameterType
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
+  inline def complete: complete = "complete".asInstanceOf[complete]
 }

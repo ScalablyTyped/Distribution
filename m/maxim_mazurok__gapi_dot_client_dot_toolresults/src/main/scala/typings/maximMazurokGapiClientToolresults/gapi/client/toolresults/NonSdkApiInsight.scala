@@ -20,40 +20,29 @@ trait NonSdkApiInsight extends StObject {
 }
 object NonSdkApiInsight {
   
-  @scala.inline
-  def apply(): NonSdkApiInsight = {
+  inline def apply(): NonSdkApiInsight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NonSdkApiInsight]
   }
   
-  @scala.inline
-  implicit class NonSdkApiInsightMutableBuilder[Self <: NonSdkApiInsight] (val x: Self) extends AnyVal {
+  extension [Self <: NonSdkApiInsight](x: Self) {
     
-    @scala.inline
-    def setExampleTraceMessages(value: js.Array[String]): Self = StObject.set(x, "exampleTraceMessages", value.asInstanceOf[js.Any])
+    inline def setExampleTraceMessages(value: js.Array[String]): Self = StObject.set(x, "exampleTraceMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExampleTraceMessagesUndefined: Self = StObject.set(x, "exampleTraceMessages", js.undefined)
+    inline def setExampleTraceMessagesUndefined: Self = StObject.set(x, "exampleTraceMessages", js.undefined)
     
-    @scala.inline
-    def setExampleTraceMessagesVarargs(value: String*): Self = StObject.set(x, "exampleTraceMessages", js.Array(value :_*))
+    inline def setExampleTraceMessagesVarargs(value: String*): Self = StObject.set(x, "exampleTraceMessages", js.Array(value :_*))
     
-    @scala.inline
-    def setMatcherId(value: String): Self = StObject.set(x, "matcherId", value.asInstanceOf[js.Any])
+    inline def setMatcherId(value: String): Self = StObject.set(x, "matcherId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatcherIdUndefined: Self = StObject.set(x, "matcherId", js.undefined)
+    inline def setMatcherIdUndefined: Self = StObject.set(x, "matcherId", js.undefined)
     
-    @scala.inline
-    def setPendingGoogleUpdateInsight(value: PendingGoogleUpdateInsight): Self = StObject.set(x, "pendingGoogleUpdateInsight", value.asInstanceOf[js.Any])
+    inline def setPendingGoogleUpdateInsight(value: PendingGoogleUpdateInsight): Self = StObject.set(x, "pendingGoogleUpdateInsight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingGoogleUpdateInsightUndefined: Self = StObject.set(x, "pendingGoogleUpdateInsight", js.undefined)
+    inline def setPendingGoogleUpdateInsightUndefined: Self = StObject.set(x, "pendingGoogleUpdateInsight", js.undefined)
     
-    @scala.inline
-    def setUpgradeInsight(value: UpgradeInsight): Self = StObject.set(x, "upgradeInsight", value.asInstanceOf[js.Any])
+    inline def setUpgradeInsight(value: UpgradeInsight): Self = StObject.set(x, "upgradeInsight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeInsightUndefined: Self = StObject.set(x, "upgradeInsight", js.undefined)
+    inline def setUpgradeInsightUndefined: Self = StObject.set(x, "upgradeInsight", js.undefined)
   }
 }

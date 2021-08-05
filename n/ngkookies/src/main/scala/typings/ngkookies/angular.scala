@@ -17,26 +17,20 @@ object angular {
     }
     object Config {
       
-      @scala.inline
-      def apply(): Config = {
+      inline def apply(): Config = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Config]
       }
       
-      @scala.inline
-      implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+      extension [Self <: Config](x: Self) {
         
-        @scala.inline
-        def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+        inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+        inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
         
-        @scala.inline
-        def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+        inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+        inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       }
     }
     
@@ -52,26 +46,20 @@ object angular {
     }
     object IKookiesProvider {
       
-      @scala.inline
-      def apply(config: Config, defaults: Options, setConfig: Config => Unit, setDefaults: Options => Unit): IKookiesProvider = {
+      inline def apply(config: Config, defaults: Options, setConfig: Config => Unit, setDefaults: Options => Unit): IKookiesProvider = {
         val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], setConfig = js.Any.fromFunction1(setConfig), setDefaults = js.Any.fromFunction1(setDefaults))
         __obj.asInstanceOf[IKookiesProvider]
       }
       
-      @scala.inline
-      implicit class IKookiesProviderMutableBuilder[Self <: IKookiesProvider] (val x: Self) extends AnyVal {
+      extension [Self <: IKookiesProvider](x: Self) {
         
-        @scala.inline
-        def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+        inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaults(value: Options): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+        inline def setDefaults(value: Options): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetConfig(value: Config => Unit): Self = StObject.set(x, "setConfig", js.Any.fromFunction1(value))
+        inline def setSetConfig(value: Config => Unit): Self = StObject.set(x, "setConfig", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetDefaults(value: Options => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
+        inline def setSetDefaults(value: Options => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
       }
     }
     
@@ -103,38 +91,28 @@ object angular {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+        inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+        inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
         
-        @scala.inline
-        def setExpires(value: Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+        inline def setExpires(value: Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+        inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+        inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+        inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       }
     }
   }

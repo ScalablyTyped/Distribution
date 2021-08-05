@@ -103,8 +103,7 @@ trait MapEventType extends StObject {
 }
 object MapEventType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boxzoomcancel: MapBoxZoomEvent,
     boxzoomend: MapBoxZoomEvent,
     boxzoomstart: MapBoxZoomEvent,
@@ -156,145 +155,98 @@ object MapEventType {
     __obj.asInstanceOf[MapEventType]
   }
   
-  @scala.inline
-  implicit class MapEventTypeMutableBuilder[Self <: MapEventType] (val x: Self) extends AnyVal {
+  extension [Self <: MapEventType](x: Self) {
     
-    @scala.inline
-    def setBoxzoomcancel(value: MapBoxZoomEvent): Self = StObject.set(x, "boxzoomcancel", value.asInstanceOf[js.Any])
+    inline def setBoxzoomcancel(value: MapBoxZoomEvent): Self = StObject.set(x, "boxzoomcancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxzoomend(value: MapBoxZoomEvent): Self = StObject.set(x, "boxzoomend", value.asInstanceOf[js.Any])
+    inline def setBoxzoomend(value: MapBoxZoomEvent): Self = StObject.set(x, "boxzoomend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxzoomstart(value: MapBoxZoomEvent): Self = StObject.set(x, "boxzoomstart", value.asInstanceOf[js.Any])
+    inline def setBoxzoomstart(value: MapBoxZoomEvent): Self = StObject.set(x, "boxzoomstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClick(value: MapMouseEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    inline def setClick(value: MapMouseEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextmenu(value: MapMouseEvent): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
+    inline def setContextmenu(value: MapMouseEvent): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: MapDataEvent): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: MapDataEvent): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataloading(value: MapDataEvent): Self = StObject.set(x, "dataloading", value.asInstanceOf[js.Any])
+    inline def setDataloading(value: MapDataEvent): Self = StObject.set(x, "dataloading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDblclick(value: MapMouseEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
+    inline def setDblclick(value: MapMouseEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrag(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
+    inline def setDrag(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragend(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
+    inline def setDragend(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragstart(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
+    inline def setDragstart(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdle(value: MapboxEvent[Unit]): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+    inline def setIdle(value: MapboxEvent[Unit]): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad(value: MapboxEvent[Unit]): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: MapboxEvent[Unit]): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousedown(value: MapMouseEvent): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
+    inline def setMousedown(value: MapMouseEvent): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousemove(value: MapMouseEvent): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
+    inline def setMousemove(value: MapMouseEvent): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseout(value: MapMouseEvent): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
+    inline def setMouseout(value: MapMouseEvent): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseover(value: MapMouseEvent): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
+    inline def setMouseover(value: MapMouseEvent): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseup(value: MapMouseEvent): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
+    inline def setMouseup(value: MapMouseEvent): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMove(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+    inline def setMove(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveend(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]): Self = StObject.set(x, "moveend", value.asInstanceOf[js.Any])
+    inline def setMoveend(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]): Self = StObject.set(x, "moveend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovestart(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]): Self = StObject.set(x, "movestart", value.asInstanceOf[js.Any])
+    inline def setMovestart(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]): Self = StObject.set(x, "movestart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitch(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitchend(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "pitchend", value.asInstanceOf[js.Any])
+    inline def setPitchend(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "pitchend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitchstart(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "pitchstart", value.asInstanceOf[js.Any])
+    inline def setPitchstart(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "pitchstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: MapboxEvent[Unit]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: MapboxEvent[Unit]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRender(value: MapboxEvent[Unit]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: MapboxEvent[Unit]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResize(value: MapboxEvent[Unit]): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    inline def setResize(value: MapboxEvent[Unit]): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotate(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateend(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "rotateend", value.asInstanceOf[js.Any])
+    inline def setRotateend(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "rotateend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotatestart(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "rotatestart", value.asInstanceOf[js.Any])
+    inline def setRotatestart(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]): Self = StObject.set(x, "rotatestart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcedata(value: MapSourceDataEvent): Self = StObject.set(x, "sourcedata", value.asInstanceOf[js.Any])
+    inline def setSourcedata(value: MapSourceDataEvent): Self = StObject.set(x, "sourcedata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcedataloading(value: MapSourceDataEvent): Self = StObject.set(x, "sourcedataloading", value.asInstanceOf[js.Any])
+    inline def setSourcedataloading(value: MapSourceDataEvent): Self = StObject.set(x, "sourcedataloading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyledata(value: MapStyleDataEvent): Self = StObject.set(x, "styledata", value.asInstanceOf[js.Any])
+    inline def setStyledata(value: MapStyleDataEvent): Self = StObject.set(x, "styledata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyledataloading(value: MapStyleDataEvent): Self = StObject.set(x, "styledataloading", value.asInstanceOf[js.Any])
+    inline def setStyledataloading(value: MapStyleDataEvent): Self = StObject.set(x, "styledataloading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiledataloading(value: MapDataEvent): Self = StObject.set(x, "tiledataloading", value.asInstanceOf[js.Any])
+    inline def setTiledataloading(value: MapDataEvent): Self = StObject.set(x, "tiledataloading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchcancel(value: MapTouchEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
+    inline def setTouchcancel(value: MapTouchEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchend(value: MapTouchEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
+    inline def setTouchend(value: MapTouchEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchmove(value: MapTouchEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
+    inline def setTouchmove(value: MapTouchEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchstart(value: MapTouchEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
+    inline def setTouchstart(value: MapTouchEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebglcontextlost(value: MapContextEvent): Self = StObject.set(x, "webglcontextlost", value.asInstanceOf[js.Any])
+    inline def setWebglcontextlost(value: MapContextEvent): Self = StObject.set(x, "webglcontextlost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebglcontextrestored(value: MapContextEvent): Self = StObject.set(x, "webglcontextrestored", value.asInstanceOf[js.Any])
+    inline def setWebglcontextrestored(value: MapContextEvent): Self = StObject.set(x, "webglcontextrestored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWheel(value: MapWheelEvent): Self = StObject.set(x, "wheel", value.asInstanceOf[js.Any])
+    inline def setWheel(value: MapWheelEvent): Self = StObject.set(x, "wheel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomend(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]): Self = StObject.set(x, "zoomend", value.asInstanceOf[js.Any])
+    inline def setZoomend(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]): Self = StObject.set(x, "zoomend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomstart(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]): Self = StObject.set(x, "zoomstart", value.asInstanceOf[js.Any])
+    inline def setZoomstart(value: MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]): Self = StObject.set(x, "zoomstart", value.asInstanceOf[js.Any])
   }
 }

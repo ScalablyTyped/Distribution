@@ -44,8 +44,7 @@ object mod {
     @JSImport("react-sortable-pane", "Pane.defaultProps")
     @js.native
     def defaultProps: ClassName = js.native
-    @scala.inline
-    def defaultProps_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-sortable-pane", "SortablePane")
@@ -187,68 +186,53 @@ object mod {
       @JSImport("react-sortable-pane", "SortablePane.defaultProps.children")
       @js.native
       def children: js.Array[scala.Nothing] = js.native
-      @scala.inline
-      def children_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("react-sortable-pane", "SortablePane.defaultProps.className")
       @js.native
       def className: String = js.native
-      @scala.inline
-      def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+      inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
       
       @JSImport("react-sortable-pane", "SortablePane.defaultProps.direction")
       @js.native
       def direction: String = js.native
-      @scala.inline
-      def direction_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("direction")(x.asInstanceOf[js.Any])
+      inline def direction_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("direction")(x.asInstanceOf[js.Any])
       
       @JSImport("react-sortable-pane", "SortablePane.defaultProps.disableEffect")
       @js.native
       def disableEffect: Boolean = js.native
-      @scala.inline
-      def disableEffect_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableEffect")(x.asInstanceOf[js.Any])
+      inline def disableEffect_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableEffect")(x.asInstanceOf[js.Any])
       
       @JSImport("react-sortable-pane", "SortablePane.defaultProps.isSortable")
       @js.native
       def isSortable: Boolean = js.native
-      @scala.inline
-      def isSortable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSortable")(x.asInstanceOf[js.Any])
+      inline def isSortable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSortable")(x.asInstanceOf[js.Any])
       
       @JSImport("react-sortable-pane", "SortablePane.defaultProps.margin")
       @js.native
       def margin: Double = js.native
-      @scala.inline
-      def margin_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("margin")(x.asInstanceOf[js.Any])
+      inline def margin_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("margin")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def onClick(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onClick")().asInstanceOf[Null]
+      inline def onClick(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onClick")().asInstanceOf[Null]
       
-      @scala.inline
-      def onDragStart(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragStart")().asInstanceOf[Null]
+      inline def onDragStart(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragStart")().asInstanceOf[Null]
       
-      @scala.inline
-      def onDragStop(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragStop")().asInstanceOf[Null]
+      inline def onDragStop(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragStop")().asInstanceOf[Null]
       
-      @scala.inline
-      def onOrderChange(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onOrderChange")().asInstanceOf[Null]
+      inline def onOrderChange(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onOrderChange")().asInstanceOf[Null]
       
-      @scala.inline
-      def onResize(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onResize")().asInstanceOf[Null]
+      inline def onResize(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onResize")().asInstanceOf[Null]
       
-      @scala.inline
-      def onResizeStart(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onResizeStart")().asInstanceOf[Null]
+      inline def onResizeStart(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onResizeStart")().asInstanceOf[Null]
       
-      @scala.inline
-      def onResizeStop(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onResizeStop")().asInstanceOf[Null]
+      inline def onResizeStop(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onResizeStop")().asInstanceOf[Null]
       
-      @scala.inline
-      def onTouchStart(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onTouchStart")().asInstanceOf[Null]
+      inline def onTouchStart(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onTouchStart")().asInstanceOf[Null]
       
       @JSImport("react-sortable-pane", "SortablePane.defaultProps.springConfig")
       @js.native
       def springConfig: SpringHelperConfig = js.native
-      @scala.inline
-      def springConfig_=(x: SpringHelperConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("springConfig")(x.asInstanceOf[js.Any])
+      inline def springConfig_=(x: SpringHelperConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("springConfig")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -259,11 +243,9 @@ object mod {
   trait PaneDirection extends StObject
   object PaneDirection {
     
-    @scala.inline
-    def horizontal: typings.reactSortablePane.reactSortablePaneStrings.horizontal = "horizontal".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.horizontal]
+    inline def horizontal: typings.reactSortablePane.reactSortablePaneStrings.horizontal = "horizontal".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.horizontal]
     
-    @scala.inline
-    def vertical: typings.reactSortablePane.reactSortablePaneStrings.vertical = "vertical".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.vertical]
+    inline def vertical: typings.reactSortablePane.reactSortablePaneStrings.vertical = "vertical".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.vertical]
   }
   
   type PaneKey = String | Double | Null
@@ -275,11 +257,9 @@ object mod {
   trait PaneMode extends StObject
   object PaneMode {
     
-    @scala.inline
-    def add: typings.reactSortablePane.reactSortablePaneStrings.add = "add".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.add]
+    inline def add: typings.reactSortablePane.reactSortablePaneStrings.add = "add".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.add]
     
-    @scala.inline
-    def remove: typings.reactSortablePane.reactSortablePaneStrings.remove = "remove".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.remove]
+    inline def remove: typings.reactSortablePane.reactSortablePaneStrings.remove = "remove".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.remove]
   }
   
   trait PaneProperty extends StObject {
@@ -290,26 +270,20 @@ object mod {
   }
   object PaneProperty {
     
-    @scala.inline
-    def apply(): PaneProperty = {
+    inline def apply(): PaneProperty = {
       val __obj = js.Dynamic.literal(key = null, ref = null)
       __obj.asInstanceOf[PaneProperty]
     }
     
-    @scala.inline
-    implicit class PanePropertyMutableBuilder[Self <: PaneProperty] (val x: Self) extends AnyVal {
+    extension [Self <: PaneProperty](x: Self) {
       
-      @scala.inline
-      def setKey(value: PaneKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: PaneKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyNull: Self = StObject.set(x, "key", null)
+      inline def setKeyNull: Self = StObject.set(x, "key", null)
       
-      @scala.inline
-      def setRef(value: typings.std.Element): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: typings.std.Element): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
     }
   }
   
@@ -321,14 +295,11 @@ object mod {
   trait PaneResizeDirection extends StObject
   object PaneResizeDirection {
     
-    @scala.inline
-    def x: typings.reactSortablePane.reactSortablePaneStrings.x = "x".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.x]
+    inline def x: typings.reactSortablePane.reactSortablePaneStrings.x = "x".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.x]
     
-    @scala.inline
-    def xy: typings.reactSortablePane.reactSortablePaneStrings.xy = "xy".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.xy]
+    inline def xy: typings.reactSortablePane.reactSortablePaneStrings.xy = "xy".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.xy]
     
-    @scala.inline
-    def y: typings.reactSortablePane.reactSortablePaneStrings.y = "y".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.y]
+    inline def y: typings.reactSortablePane.reactSortablePaneStrings.y = "y".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.y]
   }
   
   trait PaneSize extends StObject {
@@ -339,20 +310,16 @@ object mod {
   }
   object PaneSize {
     
-    @scala.inline
-    def apply(height: Double, width: Double): PaneSize = {
+    inline def apply(height: Double, width: Double): PaneSize = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaneSize]
     }
     
-    @scala.inline
-    implicit class PaneSizeMutableBuilder[Self <: PaneSize] (val x: Self) extends AnyVal {
+    extension [Self <: PaneSize](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -434,132 +401,94 @@ object mod {
   }
   object SortablePaneProps {
     
-    @scala.inline
-    def apply(children: js.Array[ReactElement]): SortablePaneProps = {
+    inline def apply(children: js.Array[ReactElement]): SortablePaneProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[SortablePaneProps]
     }
     
-    @scala.inline
-    implicit class SortablePanePropsMutableBuilder[Self <: SortablePaneProps] (val x: Self) extends AnyVal {
+    extension [Self <: SortablePaneProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDefaultOrder(value: js.Array[String]): Self = StObject.set(x, "defaultOrder", value.asInstanceOf[js.Any])
+      inline def setDefaultOrder(value: js.Array[String]): Self = StObject.set(x, "defaultOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOrderUndefined: Self = StObject.set(x, "defaultOrder", js.undefined)
+      inline def setDefaultOrderUndefined: Self = StObject.set(x, "defaultOrder", js.undefined)
       
-      @scala.inline
-      def setDefaultOrderVarargs(value: String*): Self = StObject.set(x, "defaultOrder", js.Array(value :_*))
+      inline def setDefaultOrderVarargs(value: String*): Self = StObject.set(x, "defaultOrder", js.Array(value :_*))
       
-      @scala.inline
-      def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDisableEffect(value: Boolean): Self = StObject.set(x, "disableEffect", value.asInstanceOf[js.Any])
+      inline def setDisableEffect(value: Boolean): Self = StObject.set(x, "disableEffect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableEffectUndefined: Self = StObject.set(x, "disableEffect", js.undefined)
+      inline def setDisableEffectUndefined: Self = StObject.set(x, "disableEffect", js.undefined)
       
-      @scala.inline
-      def setDragHandleClassName(value: String): Self = StObject.set(x, "dragHandleClassName", value.asInstanceOf[js.Any])
+      inline def setDragHandleClassName(value: String): Self = StObject.set(x, "dragHandleClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragHandleClassNameUndefined: Self = StObject.set(x, "dragHandleClassName", js.undefined)
+      inline def setDragHandleClassNameUndefined: Self = StObject.set(x, "dragHandleClassName", js.undefined)
       
-      @scala.inline
-      def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
+      inline def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
+      inline def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
       
-      @scala.inline
-      def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(
+      inline def setOnDragStart(
         value: (/* e */ (MouseEvent[HTMLElement, NativeMouseEvent]) | TouchEvent[HTMLElement], /* key */ PaneKey, /* elementRef */ HTMLElement) => Unit
       ): Self = StObject.set(x, "onDragStart", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnDragStop(
+      inline def setOnDragStop(
         value: (/* e */ typings.std.MouseEvent | typings.std.TouchEvent, /* key */ PaneKey, /* elementRef */ HTMLElement, /* order */ js.Array[String]) => Unit
       ): Self = StObject.set(x, "onDragStop", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnDragStopUndefined: Self = StObject.set(x, "onDragStop", js.undefined)
+      inline def setOnDragStopUndefined: Self = StObject.set(x, "onDragStop", js.undefined)
       
-      @scala.inline
-      def setOnOrderChange(value: /* order */ js.Array[String] => Unit): Self = StObject.set(x, "onOrderChange", js.Any.fromFunction1(value))
+      inline def setOnOrderChange(value: /* order */ js.Array[String] => Unit): Self = StObject.set(x, "onOrderChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOrderChangeUndefined: Self = StObject.set(x, "onOrderChange", js.undefined)
+      inline def setOnOrderChangeUndefined: Self = StObject.set(x, "onOrderChange", js.undefined)
       
-      @scala.inline
-      def setOnResize(
+      inline def setOnResize(
         value: (/* e */ typings.std.MouseEvent | typings.std.TouchEvent, /* key */ PaneKey, /* dir */ PaneResizeDirection, /* elementRef */ HTMLElement, /* delta */ PaneSize) => Unit
       ): Self = StObject.set(x, "onResize", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setOnResizeStart(
+      inline def setOnResizeStart(
         value: (/* e */ (MouseEvent[HTMLElement, NativeMouseEvent]) | TouchEvent[HTMLElement], /* key */ PaneKey, /* dir */ PaneResizeDirection) => Unit
       ): Self = StObject.set(x, "onResizeStart", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnResizeStartUndefined: Self = StObject.set(x, "onResizeStart", js.undefined)
+      inline def setOnResizeStartUndefined: Self = StObject.set(x, "onResizeStart", js.undefined)
       
-      @scala.inline
-      def setOnResizeStop(
+      inline def setOnResizeStop(
         value: (/* e */ typings.std.MouseEvent | typings.std.TouchEvent, /* key */ PaneKey, /* dir */ PaneResizeDirection, /* elementRef */ HTMLElement, /* delta */ PaneSize) => Unit
       ): Self = StObject.set(x, "onResizeStop", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setOnResizeStopUndefined: Self = StObject.set(x, "onResizeStop", js.undefined)
+      inline def setOnResizeStopUndefined: Self = StObject.set(x, "onResizeStop", js.undefined)
       
-      @scala.inline
-      def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
-      @scala.inline
-      def setOrder(value: js.Array[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: js.Array[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
       
-      @scala.inline
-      def setSpringConfig(value: SpringHelperConfig): Self = StObject.set(x, "springConfig", value.asInstanceOf[js.Any])
+      inline def setSpringConfig(value: SpringHelperConfig): Self = StObject.set(x, "springConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpringConfigUndefined: Self = StObject.set(x, "springConfig", js.undefined)
+      inline def setSpringConfigUndefined: Self = StObject.set(x, "springConfig", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -579,8 +508,7 @@ object mod {
   }
   object State {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delta: Double,
       isPressed: Boolean,
       isResizing: Boolean,
@@ -592,29 +520,21 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPressed(value: Boolean): Self = StObject.set(x, "isPressed", value.asInstanceOf[js.Any])
+      inline def setIsPressed(value: Boolean): Self = StObject.set(x, "isPressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsResizing(value: Boolean): Self = StObject.set(x, "isResizing", value.asInstanceOf[js.Any])
+      inline def setIsResizing(value: Boolean): Self = StObject.set(x, "isResizing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastPressed(value: Double): Self = StObject.set(x, "lastPressed", value.asInstanceOf[js.Any])
+      inline def setLastPressed(value: Double): Self = StObject.set(x, "lastPressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouse(value: Double): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
+      inline def setMouse(value: Double): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanes(value: js.Array[PaneProperty]): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
+      inline def setPanes(value: js.Array[PaneProperty]): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanesVarargs(value: PaneProperty*): Self = StObject.set(x, "panes", js.Array(value :_*))
+      inline def setPanesVarargs(value: PaneProperty*): Self = StObject.set(x, "panes", js.Array(value :_*))
     }
   }
   
@@ -626,17 +546,14 @@ object mod {
     }
     object Window {
       
-      @scala.inline
-      def apply(TouchEvent: typings.std.TouchEvent): Window = {
+      inline def apply(TouchEvent: typings.std.TouchEvent): Window = {
         val __obj = js.Dynamic.literal(TouchEvent = TouchEvent.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setTouchEvent(value: typings.std.TouchEvent): Self = StObject.set(x, "TouchEvent", value.asInstanceOf[js.Any])
+        inline def setTouchEvent(value: typings.std.TouchEvent): Self = StObject.set(x, "TouchEvent", value.asInstanceOf[js.Any])
       }
     }
   }

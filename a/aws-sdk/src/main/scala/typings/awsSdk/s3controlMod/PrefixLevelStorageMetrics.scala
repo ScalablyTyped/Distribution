@@ -15,25 +15,19 @@ trait PrefixLevelStorageMetrics extends StObject {
 }
 object PrefixLevelStorageMetrics {
   
-  @scala.inline
-  def apply(): PrefixLevelStorageMetrics = {
+  inline def apply(): PrefixLevelStorageMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrefixLevelStorageMetrics]
   }
   
-  @scala.inline
-  implicit class PrefixLevelStorageMetricsMutableBuilder[Self <: PrefixLevelStorageMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: PrefixLevelStorageMetrics](x: Self) {
     
-    @scala.inline
-    def setIsEnabled(value: IsEnabled): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: IsEnabled): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabledUndefined: Self = StObject.set(x, "IsEnabled", js.undefined)
+    inline def setIsEnabledUndefined: Self = StObject.set(x, "IsEnabled", js.undefined)
     
-    @scala.inline
-    def setSelectionCriteria(value: SelectionCriteria): Self = StObject.set(x, "SelectionCriteria", value.asInstanceOf[js.Any])
+    inline def setSelectionCriteria(value: SelectionCriteria): Self = StObject.set(x, "SelectionCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionCriteriaUndefined: Self = StObject.set(x, "SelectionCriteria", js.undefined)
+    inline def setSelectionCriteriaUndefined: Self = StObject.set(x, "SelectionCriteria", js.undefined)
   }
 }

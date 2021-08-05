@@ -11,19 +11,15 @@ trait InstanceGroupManagerStatusStatefulPerInstanceConfigs extends StObject {
 }
 object InstanceGroupManagerStatusStatefulPerInstanceConfigs {
   
-  @scala.inline
-  def apply(): InstanceGroupManagerStatusStatefulPerInstanceConfigs = {
+  inline def apply(): InstanceGroupManagerStatusStatefulPerInstanceConfigs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroupManagerStatusStatefulPerInstanceConfigs]
   }
   
-  @scala.inline
-  implicit class InstanceGroupManagerStatusStatefulPerInstanceConfigsMutableBuilder[Self <: InstanceGroupManagerStatusStatefulPerInstanceConfigs] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupManagerStatusStatefulPerInstanceConfigs](x: Self) {
     
-    @scala.inline
-    def setAllEffective(value: Boolean): Self = StObject.set(x, "allEffective", value.asInstanceOf[js.Any])
+    inline def setAllEffective(value: Boolean): Self = StObject.set(x, "allEffective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllEffectiveUndefined: Self = StObject.set(x, "allEffective", js.undefined)
+    inline def setAllEffectiveUndefined: Self = StObject.set(x, "allEffective", js.undefined)
   }
 }

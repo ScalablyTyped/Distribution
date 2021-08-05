@@ -26,8 +26,7 @@ trait DotDensitySchemeOutline
 }
 object DotDensitySchemeOutline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object DotDensitySchemeOutline {
     __obj.asInstanceOf[DotDensitySchemeOutline]
   }
   
-  @scala.inline
-  implicit class DotDensitySchemeOutlineMutableBuilder[Self <: DotDensitySchemeOutline] (val x: Self) extends AnyVal {
+  extension [Self <: DotDensitySchemeOutline](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

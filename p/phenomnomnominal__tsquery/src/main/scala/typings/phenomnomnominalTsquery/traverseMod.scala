@@ -13,16 +13,12 @@ object traverseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getProperties(node: Node): TSQueryProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("getProperties")(node.asInstanceOf[js.Any]).asInstanceOf[TSQueryProperties]
+  inline def getProperties(node: Node): TSQueryProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("getProperties")(node.asInstanceOf[js.Any]).asInstanceOf[TSQueryProperties]
   
-  @scala.inline
-  def getVisitorKeys(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisitorKeys")().asInstanceOf[js.Array[String]]
-  @scala.inline
-  def getVisitorKeys(node: Node): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisitorKeys")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def getVisitorKeys(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisitorKeys")().asInstanceOf[js.Array[String]]
+  inline def getVisitorKeys(node: Node): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisitorKeys")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def traverseChildren(
+  inline def traverseChildren(
     node: Node,
     iterator: js.Function2[/* childNode */ Node, /* ancestors */ js.Array[Node], Unit],
     options: TSQueryOptions

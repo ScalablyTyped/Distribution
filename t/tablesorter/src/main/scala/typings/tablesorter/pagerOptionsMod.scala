@@ -157,31 +157,24 @@ object pagerOptionsMod {
   }
   object PagerOptions {
     
-    @scala.inline
-    def apply[TElement](): PagerOptions[TElement] = {
+    inline def apply[TElement](): PagerOptions[TElement] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PagerOptions[TElement]]
     }
     
-    @scala.inline
-    implicit class PagerOptionsMutableBuilder[Self <: PagerOptions[?], TElement] (val x: Self & PagerOptions[TElement]) extends AnyVal {
+    extension [Self <: PagerOptions[?], TElement](x: Self & PagerOptions[TElement]) {
       
-      @scala.inline
-      def setPager_ajaxError(
+      inline def setPager_ajaxError(
         value: (/* config */ TablesorterConfigurationStore[TElement], /* request */ jqXHR[js.Any], /* ajaxSettings */ AjaxSettings[js.Any], /* thrownError */ String) => String
       ): Self = StObject.set(x, "pager_ajaxError", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPager_ajaxErrorUndefined: Self = StObject.set(x, "pager_ajaxError", js.undefined)
+      inline def setPager_ajaxErrorUndefined: Self = StObject.set(x, "pager_ajaxError", js.undefined)
       
-      @scala.inline
-      def setPager_ajaxObject(value: JQueryAjaxSettings): Self = StObject.set(x, "pager_ajaxObject", value.asInstanceOf[js.Any])
+      inline def setPager_ajaxObject(value: JQueryAjaxSettings): Self = StObject.set(x, "pager_ajaxObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_ajaxObjectUndefined: Self = StObject.set(x, "pager_ajaxObject", js.undefined)
+      inline def setPager_ajaxObjectUndefined: Self = StObject.set(x, "pager_ajaxObject", js.undefined)
       
-      @scala.inline
-      def setPager_ajaxProcessing(
+      inline def setPager_ajaxProcessing(
         value: (/* data */ js.Any, TElement, /* request */ jqXHR[js.Any]) => PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[
               Double, 
               JQuery[HTMLElement] | js.Array[js.Array[js.Any]], 
@@ -189,107 +182,73 @@ object pagerOptionsMod {
             ])
       ): Self = StObject.set(x, "pager_ajaxProcessing", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPager_ajaxProcessingUndefined: Self = StObject.set(x, "pager_ajaxProcessing", js.undefined)
+      inline def setPager_ajaxProcessingUndefined: Self = StObject.set(x, "pager_ajaxProcessing", js.undefined)
       
-      @scala.inline
-      def setPager_ajaxUrl(value: String): Self = StObject.set(x, "pager_ajaxUrl", value.asInstanceOf[js.Any])
+      inline def setPager_ajaxUrl(value: String): Self = StObject.set(x, "pager_ajaxUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_ajaxUrlUndefined: Self = StObject.set(x, "pager_ajaxUrl", js.undefined)
+      inline def setPager_ajaxUrlUndefined: Self = StObject.set(x, "pager_ajaxUrl", js.undefined)
       
-      @scala.inline
-      def setPager_countChildRows(value: Boolean): Self = StObject.set(x, "pager_countChildRows", value.asInstanceOf[js.Any])
+      inline def setPager_countChildRows(value: Boolean): Self = StObject.set(x, "pager_countChildRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_countChildRowsUndefined: Self = StObject.set(x, "pager_countChildRows", js.undefined)
+      inline def setPager_countChildRowsUndefined: Self = StObject.set(x, "pager_countChildRows", js.undefined)
       
-      @scala.inline
-      def setPager_css(value: PagerClasses): Self = StObject.set(x, "pager_css", value.asInstanceOf[js.Any])
+      inline def setPager_css(value: PagerClasses): Self = StObject.set(x, "pager_css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_cssUndefined: Self = StObject.set(x, "pager_css", js.undefined)
+      inline def setPager_cssUndefined: Self = StObject.set(x, "pager_css", js.undefined)
       
-      @scala.inline
-      def setPager_customAjaxUrl(value: (TElement, /* url */ String) => String): Self = StObject.set(x, "pager_customAjaxUrl", js.Any.fromFunction2(value))
+      inline def setPager_customAjaxUrl(value: (TElement, /* url */ String) => String): Self = StObject.set(x, "pager_customAjaxUrl", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPager_customAjaxUrlUndefined: Self = StObject.set(x, "pager_customAjaxUrl", js.undefined)
+      inline def setPager_customAjaxUrlUndefined: Self = StObject.set(x, "pager_customAjaxUrl", js.undefined)
       
-      @scala.inline
-      def setPager_fixedHeight(value: Boolean): Self = StObject.set(x, "pager_fixedHeight", value.asInstanceOf[js.Any])
+      inline def setPager_fixedHeight(value: Boolean): Self = StObject.set(x, "pager_fixedHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_fixedHeightUndefined: Self = StObject.set(x, "pager_fixedHeight", js.undefined)
+      inline def setPager_fixedHeightUndefined: Self = StObject.set(x, "pager_fixedHeight", js.undefined)
       
-      @scala.inline
-      def setPager_initialRows(value: PagerInitialRows): Self = StObject.set(x, "pager_initialRows", value.asInstanceOf[js.Any])
+      inline def setPager_initialRows(value: PagerInitialRows): Self = StObject.set(x, "pager_initialRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_initialRowsUndefined: Self = StObject.set(x, "pager_initialRows", js.undefined)
+      inline def setPager_initialRowsUndefined: Self = StObject.set(x, "pager_initialRows", js.undefined)
       
-      @scala.inline
-      def setPager_output(value: String | PagerOutputProcessor[TElement]): Self = StObject.set(x, "pager_output", value.asInstanceOf[js.Any])
+      inline def setPager_output(value: String | PagerOutputProcessor[TElement]): Self = StObject.set(x, "pager_output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_outputFunction2(value: (TElement, /* pager */ js.Any) => String): Self = StObject.set(x, "pager_output", js.Any.fromFunction2(value))
+      inline def setPager_outputFunction2(value: (TElement, /* pager */ js.Any) => String): Self = StObject.set(x, "pager_output", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPager_outputUndefined: Self = StObject.set(x, "pager_output", js.undefined)
+      inline def setPager_outputUndefined: Self = StObject.set(x, "pager_output", js.undefined)
       
-      @scala.inline
-      def setPager_pageReset(value: Double | Boolean): Self = StObject.set(x, "pager_pageReset", value.asInstanceOf[js.Any])
+      inline def setPager_pageReset(value: Double | Boolean): Self = StObject.set(x, "pager_pageReset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_pageResetUndefined: Self = StObject.set(x, "pager_pageReset", js.undefined)
+      inline def setPager_pageResetUndefined: Self = StObject.set(x, "pager_pageReset", js.undefined)
       
-      @scala.inline
-      def setPager_processAjaxOnInit(value: Boolean): Self = StObject.set(x, "pager_processAjaxOnInit", value.asInstanceOf[js.Any])
+      inline def setPager_processAjaxOnInit(value: Boolean): Self = StObject.set(x, "pager_processAjaxOnInit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_processAjaxOnInitUndefined: Self = StObject.set(x, "pager_processAjaxOnInit", js.undefined)
+      inline def setPager_processAjaxOnInitUndefined: Self = StObject.set(x, "pager_processAjaxOnInit", js.undefined)
       
-      @scala.inline
-      def setPager_removeRows(value: Boolean): Self = StObject.set(x, "pager_removeRows", value.asInstanceOf[js.Any])
+      inline def setPager_removeRows(value: Boolean): Self = StObject.set(x, "pager_removeRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_removeRowsUndefined: Self = StObject.set(x, "pager_removeRows", js.undefined)
+      inline def setPager_removeRowsUndefined: Self = StObject.set(x, "pager_removeRows", js.undefined)
       
-      @scala.inline
-      def setPager_savePages(value: Boolean): Self = StObject.set(x, "pager_savePages", value.asInstanceOf[js.Any])
+      inline def setPager_savePages(value: Boolean): Self = StObject.set(x, "pager_savePages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_savePagesUndefined: Self = StObject.set(x, "pager_savePages", js.undefined)
+      inline def setPager_savePagesUndefined: Self = StObject.set(x, "pager_savePages", js.undefined)
       
-      @scala.inline
-      def setPager_selectors(value: PagerSelectors): Self = StObject.set(x, "pager_selectors", value.asInstanceOf[js.Any])
+      inline def setPager_selectors(value: PagerSelectors): Self = StObject.set(x, "pager_selectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_selectorsUndefined: Self = StObject.set(x, "pager_selectors", js.undefined)
+      inline def setPager_selectorsUndefined: Self = StObject.set(x, "pager_selectors", js.undefined)
       
-      @scala.inline
-      def setPager_size(value: PageSize): Self = StObject.set(x, "pager_size", value.asInstanceOf[js.Any])
+      inline def setPager_size(value: PageSize): Self = StObject.set(x, "pager_size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_sizeUndefined: Self = StObject.set(x, "pager_size", js.undefined)
+      inline def setPager_sizeUndefined: Self = StObject.set(x, "pager_size", js.undefined)
       
-      @scala.inline
-      def setPager_startPage(value: Double): Self = StObject.set(x, "pager_startPage", value.asInstanceOf[js.Any])
+      inline def setPager_startPage(value: Double): Self = StObject.set(x, "pager_startPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_startPageUndefined: Self = StObject.set(x, "pager_startPage", js.undefined)
+      inline def setPager_startPageUndefined: Self = StObject.set(x, "pager_startPage", js.undefined)
       
-      @scala.inline
-      def setPager_storageKey(value: String): Self = StObject.set(x, "pager_storageKey", value.asInstanceOf[js.Any])
+      inline def setPager_storageKey(value: String): Self = StObject.set(x, "pager_storageKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_storageKeyUndefined: Self = StObject.set(x, "pager_storageKey", js.undefined)
+      inline def setPager_storageKeyUndefined: Self = StObject.set(x, "pager_storageKey", js.undefined)
       
-      @scala.inline
-      def setPager_updateArrows(value: Boolean): Self = StObject.set(x, "pager_updateArrows", value.asInstanceOf[js.Any])
+      inline def setPager_updateArrows(value: Boolean): Self = StObject.set(x, "pager_updateArrows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPager_updateArrowsUndefined: Self = StObject.set(x, "pager_updateArrows", js.undefined)
+      inline def setPager_updateArrowsUndefined: Self = StObject.set(x, "pager_updateArrows", js.undefined)
     }
   }
 }

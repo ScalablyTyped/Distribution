@@ -30,22 +30,17 @@ trait MiniProgram extends StObject {
 }
 object MiniProgram {
   
-  @scala.inline
-  def apply(appId: String, envVersion: develop | trial | release, version: String): MiniProgram = {
+  inline def apply(appId: String, envVersion: develop | trial | release, version: String): MiniProgram = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], envVersion = envVersion.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[MiniProgram]
   }
   
-  @scala.inline
-  implicit class MiniProgramMutableBuilder[Self <: MiniProgram] (val x: Self) extends AnyVal {
+  extension [Self <: MiniProgram](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvVersion(value: develop | trial | release): Self = StObject.set(x, "envVersion", value.asInstanceOf[js.Any])
+    inline def setEnvVersion(value: develop | trial | release): Self = StObject.set(x, "envVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

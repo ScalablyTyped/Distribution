@@ -14,8 +14,7 @@ trait ScriptTask
 }
 object ScriptTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -45,13 +44,10 @@ object ScriptTask {
     __obj.asInstanceOf[ScriptTask]
   }
   
-  @scala.inline
-  implicit class ScriptTaskMutableBuilder[Self <: ScriptTask] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptTask](x: Self) {
     
-    @scala.inline
-    def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptFormat(value: String): Self = StObject.set(x, "scriptFormat", value.asInstanceOf[js.Any])
+    inline def setScriptFormat(value: String): Self = StObject.set(x, "scriptFormat", value.asInstanceOf[js.Any])
   }
 }

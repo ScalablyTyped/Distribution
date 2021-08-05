@@ -18,25 +18,19 @@ trait AccessLogSettings extends StObject {
 }
 object AccessLogSettings {
   
-  @scala.inline
-  def apply(): AccessLogSettings = {
+  inline def apply(): AccessLogSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessLogSettings]
   }
   
-  @scala.inline
-  implicit class AccessLogSettingsMutableBuilder[Self <: AccessLogSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AccessLogSettings](x: Self) {
     
-    @scala.inline
-    def setDestinationArn(value: String): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
+    inline def setDestinationArn(value: String): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationArnUndefined: Self = StObject.set(x, "destinationArn", js.undefined)
+    inline def setDestinationArnUndefined: Self = StObject.set(x, "destinationArn", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

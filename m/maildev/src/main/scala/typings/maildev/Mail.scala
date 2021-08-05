@@ -21,25 +21,19 @@ trait Mail extends StObject {
 }
 object Mail {
   
-  @scala.inline
-  def apply(): Mail = {
+  inline def apply(): Mail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mail]
   }
   
-  @scala.inline
-  implicit class MailMutableBuilder[Self <: Mail] (val x: Self) extends AnyVal {
+  extension [Self <: Mail](x: Self) {
     
-    @scala.inline
-    def setEnvelope(value: js.Object): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
+    inline def setEnvelope(value: js.Object): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeUndefined: Self = StObject.set(x, "envelope", js.undefined)
+    inline def setEnvelopeUndefined: Self = StObject.set(x, "envelope", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

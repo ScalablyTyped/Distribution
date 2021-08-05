@@ -23,31 +23,23 @@ trait LabelLabelLine extends StObject {
 }
 object LabelLabelLine {
   
-  @scala.inline
-  def apply(): LabelLabelLine = {
+  inline def apply(): LabelLabelLine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelLabelLine]
   }
   
-  @scala.inline
-  implicit class LabelLabelLineMutableBuilder[Self <: LabelLabelLine] (val x: Self) extends AnyVal {
+  extension [Self <: LabelLabelLine](x: Self) {
     
-    @scala.inline
-    def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    @scala.inline
-    def setLabel(value: LineHeight): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: LineHeight): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelLine(value: Length): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
+    inline def setLabelLine(value: Length): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelLineUndefined: Self = StObject.set(x, "labelLine", js.undefined)
+    inline def setLabelLineUndefined: Self = StObject.set(x, "labelLine", js.undefined)
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

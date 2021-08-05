@@ -52,110 +52,76 @@ object themeProviderMod {
   }
   object ThemeInterface {
     
-    @scala.inline
-    def apply(): ThemeInterface = {
+    inline def apply(): ThemeInterface = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThemeInterface]
     }
     
-    @scala.inline
-    implicit class ThemeInterfaceMutableBuilder[Self <: ThemeInterface] (val x: Self) extends AnyVal {
+    extension [Self <: ThemeInterface](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColor00(value: ColorProperty): Self = StObject.set(x, "color00", value.asInstanceOf[js.Any])
+      inline def setColor00(value: ColorProperty): Self = StObject.set(x, "color00", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor00Undefined: Self = StObject.set(x, "color00", js.undefined)
+      inline def setColor00Undefined: Self = StObject.set(x, "color00", js.undefined)
       
-      @scala.inline
-      def setColor05(value: ColorProperty): Self = StObject.set(x, "color05", value.asInstanceOf[js.Any])
+      inline def setColor05(value: ColorProperty): Self = StObject.set(x, "color05", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor05Undefined: Self = StObject.set(x, "color05", js.undefined)
+      inline def setColor05Undefined: Self = StObject.set(x, "color05", js.undefined)
       
-      @scala.inline
-      def setColor10(value: ColorProperty): Self = StObject.set(x, "color10", value.asInstanceOf[js.Any])
+      inline def setColor10(value: ColorProperty): Self = StObject.set(x, "color10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor10Undefined: Self = StObject.set(x, "color10", js.undefined)
+      inline def setColor10Undefined: Self = StObject.set(x, "color10", js.undefined)
       
-      @scala.inline
-      def setColor20(value: ColorProperty): Self = StObject.set(x, "color20", value.asInstanceOf[js.Any])
+      inline def setColor20(value: ColorProperty): Self = StObject.set(x, "color20", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor20Undefined: Self = StObject.set(x, "color20", js.undefined)
+      inline def setColor20Undefined: Self = StObject.set(x, "color20", js.undefined)
       
-      @scala.inline
-      def setColor30(value: ColorProperty): Self = StObject.set(x, "color30", value.asInstanceOf[js.Any])
+      inline def setColor30(value: ColorProperty): Self = StObject.set(x, "color30", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor30Undefined: Self = StObject.set(x, "color30", js.undefined)
+      inline def setColor30Undefined: Self = StObject.set(x, "color30", js.undefined)
       
-      @scala.inline
-      def setColor40(value: ColorProperty): Self = StObject.set(x, "color40", value.asInstanceOf[js.Any])
+      inline def setColor40(value: ColorProperty): Self = StObject.set(x, "color40", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor40Undefined: Self = StObject.set(x, "color40", js.undefined)
+      inline def setColor40Undefined: Self = StObject.set(x, "color40", js.undefined)
       
-      @scala.inline
-      def setColor50(value: ColorProperty): Self = StObject.set(x, "color50", value.asInstanceOf[js.Any])
+      inline def setColor50(value: ColorProperty): Self = StObject.set(x, "color50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor50Undefined: Self = StObject.set(x, "color50", js.undefined)
+      inline def setColor50Undefined: Self = StObject.set(x, "color50", js.undefined)
       
-      @scala.inline
-      def setColor60(value: ColorProperty): Self = StObject.set(x, "color60", value.asInstanceOf[js.Any])
+      inline def setColor60(value: ColorProperty): Self = StObject.set(x, "color60", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor60Undefined: Self = StObject.set(x, "color60", js.undefined)
+      inline def setColor60Undefined: Self = StObject.set(x, "color60", js.undefined)
       
-      @scala.inline
-      def setComponentWrapper(value: /* hasChildren */ Children => ReactNode): Self = StObject.set(x, "componentWrapper", js.Any.fromFunction1(value))
+      inline def setComponentWrapper(value: /* hasChildren */ Children => ReactNode): Self = StObject.set(x, "componentWrapper", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentWrapperUndefined: Self = StObject.set(x, "componentWrapper", js.undefined)
+      inline def setComponentWrapperUndefined: Self = StObject.set(x, "componentWrapper", js.undefined)
       
-      @scala.inline
-      def setDividerColor(value: ColorProperty): Self = StObject.set(x, "dividerColor", value.asInstanceOf[js.Any])
+      inline def setDividerColor(value: ColorProperty): Self = StObject.set(x, "dividerColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerColorUndefined: Self = StObject.set(x, "dividerColor", js.undefined)
+      inline def setDividerColorUndefined: Self = StObject.set(x, "dividerColor", js.undefined)
       
-      @scala.inline
-      def setIcons(value: AddItemButton): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: AddItemButton): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+      inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
-      @scala.inline
-      def setTextColorPrimary(value: ColorProperty): Self = StObject.set(x, "textColorPrimary", value.asInstanceOf[js.Any])
+      inline def setTextColorPrimary(value: ColorProperty): Self = StObject.set(x, "textColorPrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColorPrimaryLight(value: ColorProperty): Self = StObject.set(x, "textColorPrimaryLight", value.asInstanceOf[js.Any])
+      inline def setTextColorPrimaryLight(value: ColorProperty): Self = StObject.set(x, "textColorPrimaryLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColorPrimaryLightUndefined: Self = StObject.set(x, "textColorPrimaryLight", js.undefined)
+      inline def setTextColorPrimaryLightUndefined: Self = StObject.set(x, "textColorPrimaryLight", js.undefined)
       
-      @scala.inline
-      def setTextColorPrimaryUndefined: Self = StObject.set(x, "textColorPrimary", js.undefined)
+      inline def setTextColorPrimaryUndefined: Self = StObject.set(x, "textColorPrimary", js.undefined)
       
-      @scala.inline
-      def setTextColorSecondary(value: ColorProperty): Self = StObject.set(x, "textColorSecondary", value.asInstanceOf[js.Any])
+      inline def setTextColorSecondary(value: ColorProperty): Self = StObject.set(x, "textColorSecondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColorSecondaryLight(value: ColorProperty): Self = StObject.set(x, "textColorSecondaryLight", value.asInstanceOf[js.Any])
+      inline def setTextColorSecondaryLight(value: ColorProperty): Self = StObject.set(x, "textColorSecondaryLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColorSecondaryLightUndefined: Self = StObject.set(x, "textColorSecondaryLight", js.undefined)
+      inline def setTextColorSecondaryLightUndefined: Self = StObject.set(x, "textColorSecondaryLight", js.undefined)
       
-      @scala.inline
-      def setTextColorSecondaryUndefined: Self = StObject.set(x, "textColorSecondary", js.undefined)
+      inline def setTextColorSecondaryUndefined: Self = StObject.set(x, "textColorSecondary", js.undefined)
     }
   }
   
@@ -169,26 +135,20 @@ object themeProviderMod {
   }
   object ThemeProviderProps {
     
-    @scala.inline
-    def apply(): ThemeProviderProps = {
+    inline def apply(): ThemeProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThemeProviderProps]
     }
     
-    @scala.inline
-    implicit class ThemeProviderPropsMutableBuilder[Self <: ThemeProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ThemeProviderProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ThemeInterface): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ThemeInterface): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

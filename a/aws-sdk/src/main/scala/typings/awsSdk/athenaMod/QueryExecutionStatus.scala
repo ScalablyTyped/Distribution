@@ -28,37 +28,27 @@ trait QueryExecutionStatus extends StObject {
 }
 object QueryExecutionStatus {
   
-  @scala.inline
-  def apply(): QueryExecutionStatus = {
+  inline def apply(): QueryExecutionStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryExecutionStatus]
   }
   
-  @scala.inline
-  implicit class QueryExecutionStatusMutableBuilder[Self <: QueryExecutionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: QueryExecutionStatus](x: Self) {
     
-    @scala.inline
-    def setCompletionDateTime(value: Date): Self = StObject.set(x, "CompletionDateTime", value.asInstanceOf[js.Any])
+    inline def setCompletionDateTime(value: Date): Self = StObject.set(x, "CompletionDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionDateTimeUndefined: Self = StObject.set(x, "CompletionDateTime", js.undefined)
+    inline def setCompletionDateTimeUndefined: Self = StObject.set(x, "CompletionDateTime", js.undefined)
     
-    @scala.inline
-    def setState(value: QueryExecutionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: QueryExecutionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeReason(value: String): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
+    inline def setStateChangeReason(value: String): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
+    inline def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setSubmissionDateTime(value: Date): Self = StObject.set(x, "SubmissionDateTime", value.asInstanceOf[js.Any])
+    inline def setSubmissionDateTime(value: Date): Self = StObject.set(x, "SubmissionDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmissionDateTimeUndefined: Self = StObject.set(x, "SubmissionDateTime", js.undefined)
+    inline def setSubmissionDateTimeUndefined: Self = StObject.set(x, "SubmissionDateTime", js.undefined)
   }
 }

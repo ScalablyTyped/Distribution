@@ -14,25 +14,19 @@ trait Denoise extends StObject {
 }
 object Denoise {
   
-  @scala.inline
-  def apply(): Denoise = {
+  inline def apply(): Denoise = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Denoise]
   }
   
-  @scala.inline
-  implicit class DenoiseMutableBuilder[Self <: Denoise] (val x: Self) extends AnyVal {
+  extension [Self <: Denoise](x: Self) {
     
-    @scala.inline
-    def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
+    inline def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
     
-    @scala.inline
-    def setTune(value: String): Self = StObject.set(x, "tune", value.asInstanceOf[js.Any])
+    inline def setTune(value: String): Self = StObject.set(x, "tune", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuneUndefined: Self = StObject.set(x, "tune", js.undefined)
+    inline def setTuneUndefined: Self = StObject.set(x, "tune", js.undefined)
   }
 }

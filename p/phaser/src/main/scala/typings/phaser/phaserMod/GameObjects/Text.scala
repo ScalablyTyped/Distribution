@@ -268,14 +268,12 @@ object Text {
     * @param lines The lines of text to calculate the size from.
     */
   /* static member */
-  @scala.inline
-  def GetTextSize(text: typings.phaser.Phaser.GameObjects.Text, size: TextMetrics, lines: js.Array[js.Any]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTextSize")(text.asInstanceOf[js.Any], size.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def GetTextSize(text: typings.phaser.Phaser.GameObjects.Text, size: TextMetrics, lines: js.Array[js.Any]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTextSize")(text.asInstanceOf[js.Any], size.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   /**
     * Calculates the ascent, descent and fontSize of a given font style.
     * @param textStyle The TextStyle object to measure.
     */
   /* static member */
-  @scala.inline
-  def MeasureText(textStyle: typings.phaser.Phaser.GameObjects.TextStyle): TextMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("MeasureText")(textStyle.asInstanceOf[js.Any]).asInstanceOf[TextMetrics]
+  inline def MeasureText(textStyle: typings.phaser.Phaser.GameObjects.TextStyle): TextMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("MeasureText")(textStyle.asInstanceOf[js.Any]).asInstanceOf[TextMetrics]
 }

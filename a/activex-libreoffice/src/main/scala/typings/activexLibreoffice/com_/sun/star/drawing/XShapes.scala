@@ -30,8 +30,7 @@ trait XShapes
 }
 object XShapes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -48,13 +47,10 @@ object XShapes {
     __obj.asInstanceOf[XShapes]
   }
   
-  @scala.inline
-  implicit class XShapesMutableBuilder[Self <: XShapes] (val x: Self) extends AnyVal {
+  extension [Self <: XShapes](x: Self) {
     
-    @scala.inline
-    def setAdd(value: XShape => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: XShape => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: XShape => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: XShape => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

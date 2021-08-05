@@ -37,43 +37,31 @@ trait ICheckboxGroup
 }
 object ICheckboxGroup {
   
-  @scala.inline
-  def apply(): ICheckboxGroup = {
+  inline def apply(): ICheckboxGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICheckboxGroup]
   }
   
-  @scala.inline
-  implicit class ICheckboxGroupMutableBuilder[Self <: ICheckboxGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ICheckboxGroup](x: Self) {
     
-    @scala.inline
-    def setAutoFlex(value: Boolean): Self = StObject.set(x, "autoFlex", value.asInstanceOf[js.Any])
+    inline def setAutoFlex(value: Boolean): Self = StObject.set(x, "autoFlex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFlexUndefined: Self = StObject.set(x, "autoFlex", js.undefined)
+    inline def setAutoFlexUndefined: Self = StObject.set(x, "autoFlex", js.undefined)
     
-    @scala.inline
-    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
+    inline def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
+    inline def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
-    @scala.inline
-    def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
+    inline def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
+    inline def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
     
-    @scala.inline
-    def setIsValidParent(value: () => Unit): Self = StObject.set(x, "isValidParent", js.Any.fromFunction0(value))
+    inline def setIsValidParent(value: () => Unit): Self = StObject.set(x, "isValidParent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValidParentUndefined: Self = StObject.set(x, "isValidParent", js.undefined)
+    inline def setIsValidParentUndefined: Self = StObject.set(x, "isValidParent", js.undefined)
     
-    @scala.inline
-    def setRenderItems(value: /* items */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "renderItems", js.Any.fromFunction1(value))
+    inline def setRenderItems(value: /* items */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "renderItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderItemsUndefined: Self = StObject.set(x, "renderItems", js.undefined)
+    inline def setRenderItemsUndefined: Self = StObject.set(x, "renderItems", js.undefined)
   }
 }

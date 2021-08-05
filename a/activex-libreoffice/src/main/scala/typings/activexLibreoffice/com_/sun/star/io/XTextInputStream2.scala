@@ -16,8 +16,7 @@ trait XTextInputStream2
      with XActiveDataSink
 object XTextInputStream2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InputStream: XInputStream,
     acquire: () => Unit,
     available: () => Double,

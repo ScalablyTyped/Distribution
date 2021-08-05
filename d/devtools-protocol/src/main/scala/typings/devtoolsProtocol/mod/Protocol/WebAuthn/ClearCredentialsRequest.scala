@@ -10,16 +10,13 @@ trait ClearCredentialsRequest extends StObject {
 }
 object ClearCredentialsRequest {
   
-  @scala.inline
-  def apply(authenticatorId: AuthenticatorId): ClearCredentialsRequest = {
+  inline def apply(authenticatorId: AuthenticatorId): ClearCredentialsRequest = {
     val __obj = js.Dynamic.literal(authenticatorId = authenticatorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearCredentialsRequest]
   }
   
-  @scala.inline
-  implicit class ClearCredentialsRequestMutableBuilder[Self <: ClearCredentialsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ClearCredentialsRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
+    inline def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
   }
 }

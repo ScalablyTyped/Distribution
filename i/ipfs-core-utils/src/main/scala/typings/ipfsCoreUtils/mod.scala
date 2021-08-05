@@ -12,16 +12,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cidToString(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cidToString")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def cidToString(input: String, options: Base): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cidToString")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def cidToString(input: typings.cids.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cidToString")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def cidToString(input: typings.cids.mod.^, options: Base): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cidToString")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def cidToString(input: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cidToString")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def cidToString(input: Uint8Array, options: Base): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cidToString")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cidToString(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cidToString")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cidToString(input: String, options: Base): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cidToString")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cidToString(input: typings.cids.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cidToString")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cidToString(input: typings.cids.mod.^, options: Base): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cidToString")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cidToString(input: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cidToString")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cidToString(input: Uint8Array, options: Base): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cidToString")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

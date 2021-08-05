@@ -18,19 +18,15 @@ trait SparkParameters extends StObject {
 }
 object SparkParameters {
   
-  @scala.inline
-  def apply(Host: Host, Port: Port): SparkParameters = {
+  inline def apply(Host: Host, Port: Port): SparkParameters = {
     val __obj = js.Dynamic.literal(Host = Host.asInstanceOf[js.Any], Port = Port.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparkParameters]
   }
   
-  @scala.inline
-  implicit class SparkParametersMutableBuilder[Self <: SparkParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SparkParameters](x: Self) {
     
-    @scala.inline
-    def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
   }
 }

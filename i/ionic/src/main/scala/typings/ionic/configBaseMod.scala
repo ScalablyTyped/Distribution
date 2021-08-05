@@ -37,17 +37,13 @@ object configBaseMod {
     def jsonStringify(v: js.Any): String = js.native
   }
   
-  @scala.inline
-  def getConfig(ctx: ConfigContext): FlexibleConfigFile = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(ctx.asInstanceOf[js.Any]).asInstanceOf[FlexibleConfigFile]
+  inline def getConfig(ctx: ConfigContext): FlexibleConfigFile = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(ctx.asInstanceOf[js.Any]).asInstanceOf[FlexibleConfigFile]
   
-  @scala.inline
-  def getConfigValue(ctx: ConfigContext): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfigValue")(ctx.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getConfigValue(ctx: ConfigContext): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfigValue")(ctx.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def setConfigValue(ctx: ConfigContext & OriginalValue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfigValue")(ctx.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setConfigValue(ctx: ConfigContext & OriginalValue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfigValue")(ctx.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def unsetConfigValue(ctx: ConfigContext & Property): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unsetConfigValue")(ctx.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unsetConfigValue(ctx: ConfigContext & Property): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unsetConfigValue")(ctx.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait BaseConfigContext extends StObject {
     
@@ -63,35 +59,26 @@ object configBaseMod {
   }
   object BaseConfigContext {
     
-    @scala.inline
-    def apply(force: Boolean, json: Boolean, root: Boolean): BaseConfigContext = {
+    inline def apply(force: Boolean, json: Boolean, root: Boolean): BaseConfigContext = {
       val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseConfigContext]
     }
     
-    @scala.inline
-    implicit class BaseConfigContextMutableBuilder[Self <: BaseConfigContext] (val x: Self) extends AnyVal {
+    extension [Self <: BaseConfigContext](x: Self) {
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      @scala.inline
-      def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -102,14 +89,12 @@ object configBaseMod {
   trait ConfigContext extends StObject
   object ConfigContext {
     
-    @scala.inline
-    def GlobalConfigContext(config: IConfig, force: Boolean, json: Boolean, root: Boolean): typings.ionic.configBaseMod.GlobalConfigContext = {
+    inline def GlobalConfigContext(config: IConfig, force: Boolean, json: Boolean, root: Boolean): typings.ionic.configBaseMod.GlobalConfigContext = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = true, json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ionic.configBaseMod.GlobalConfigContext]
     }
     
-    @scala.inline
-    def ProjectConfigContext(config: BaseConfig[IProjectConfig], force: Boolean, json: Boolean, root: Boolean): typings.ionic.configBaseMod.ProjectConfigContext = {
+    inline def ProjectConfigContext(config: BaseConfig[IProjectConfig], force: Boolean, json: Boolean, root: Boolean): typings.ionic.configBaseMod.ProjectConfigContext = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = false, json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ionic.configBaseMod.ProjectConfigContext]
     }
@@ -128,20 +113,16 @@ object configBaseMod {
   }
   object GlobalConfigContext {
     
-    @scala.inline
-    def apply(config: IConfig, force: Boolean, json: Boolean, root: Boolean): GlobalConfigContext = {
+    inline def apply(config: IConfig, force: Boolean, json: Boolean, root: Boolean): GlobalConfigContext = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = true, json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalConfigContext]
     }
     
-    @scala.inline
-    implicit class GlobalConfigContextMutableBuilder[Self <: GlobalConfigContext] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalConfigContext](x: Self) {
       
-      @scala.inline
-      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobal(value: `true`): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: `true`): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     }
   }
   
@@ -156,20 +137,16 @@ object configBaseMod {
   }
   object ProjectConfigContext {
     
-    @scala.inline
-    def apply(config: BaseConfig[IProjectConfig], force: Boolean, json: Boolean, root: Boolean): ProjectConfigContext = {
+    inline def apply(config: BaseConfig[IProjectConfig], force: Boolean, json: Boolean, root: Boolean): ProjectConfigContext = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = false, json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProjectConfigContext]
     }
     
-    @scala.inline
-    implicit class ProjectConfigContextMutableBuilder[Self <: ProjectConfigContext] (val x: Self) extends AnyVal {
+    extension [Self <: ProjectConfigContext](x: Self) {
       
-      @scala.inline
-      def setConfig(value: BaseConfig[IProjectConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: BaseConfig[IProjectConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobal(value: `false`): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: `false`): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     }
   }
 }

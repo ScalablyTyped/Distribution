@@ -29,8 +29,7 @@ trait DocumentProperties
 }
 object DocumentProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Author: String,
     AutoloadSecs: Double,
     AutoloadURL: String,
@@ -65,10 +64,8 @@ object DocumentProperties {
     __obj.asInstanceOf[DocumentProperties]
   }
   
-  @scala.inline
-  implicit class DocumentPropertiesMutableBuilder[Self <: DocumentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentProperties](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
   }
 }

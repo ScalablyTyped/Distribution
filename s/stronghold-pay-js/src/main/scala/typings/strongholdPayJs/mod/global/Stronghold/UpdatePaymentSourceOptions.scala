@@ -14,22 +14,17 @@ trait UpdatePaymentSourceOptions
 }
 object UpdatePaymentSourceOptions {
   
-  @scala.inline
-  def apply(paymentSourceId: String): UpdatePaymentSourceOptions = {
+  inline def apply(paymentSourceId: String): UpdatePaymentSourceOptions = {
     val __obj = js.Dynamic.literal(paymentSourceId = paymentSourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePaymentSourceOptions]
   }
   
-  @scala.inline
-  implicit class UpdatePaymentSourceOptionsMutableBuilder[Self <: UpdatePaymentSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePaymentSourceOptions](x: Self) {
     
-    @scala.inline
-    def setOnSuccess(value: /* paymentSource */ PaymentSource => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+    inline def setOnSuccess(value: /* paymentSource */ PaymentSource => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
     
-    @scala.inline
-    def setPaymentSourceId(value: String): Self = StObject.set(x, "paymentSourceId", value.asInstanceOf[js.Any])
+    inline def setPaymentSourceId(value: String): Self = StObject.set(x, "paymentSourceId", value.asInstanceOf[js.Any])
   }
 }

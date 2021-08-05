@@ -8,7 +8,7 @@ trait Scriptlet extends StObject {
   
   def AboutBox(): Unit
   
-  @JSName("MSHTML.Scriptlet_typekey")
+  /* private */ @JSName("MSHTML.Scriptlet_typekey")
   var MSHTMLDotScriptlet_typekey: Scriptlet
   
   var Scrollbar: Boolean
@@ -23,8 +23,7 @@ trait Scriptlet extends StObject {
 }
 object Scriptlet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AboutBox: () => Unit,
     MSHTMLDotScriptlet_typekey: Scriptlet,
     Scrollbar: Boolean,
@@ -38,28 +37,20 @@ object Scriptlet {
     __obj.asInstanceOf[Scriptlet]
   }
   
-  @scala.inline
-  implicit class ScriptletMutableBuilder[Self <: Scriptlet] (val x: Self) extends AnyVal {
+  extension [Self <: Scriptlet](x: Self) {
     
-    @scala.inline
-    def setAboutBox(value: () => Unit): Self = StObject.set(x, "AboutBox", js.Any.fromFunction0(value))
+    inline def setAboutBox(value: () => Unit): Self = StObject.set(x, "AboutBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEmbed(value: Boolean): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
+    inline def setEmbed(value: Boolean): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotScriptlet_typekey(value: Scriptlet): Self = StObject.set(x, "MSHTML.Scriptlet_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotScriptlet_typekey(value: Scriptlet): Self = StObject.set(x, "MSHTML.Scriptlet_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
+    inline def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollbar(value: Boolean): Self = StObject.set(x, "Scrollbar", value.asInstanceOf[js.Any])
+    inline def setScrollbar(value: Boolean): Self = StObject.set(x, "Scrollbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

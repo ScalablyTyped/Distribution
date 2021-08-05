@@ -12,19 +12,15 @@ trait InsightsServiceAccountResponseOrganic extends StObject {
 }
 object InsightsServiceAccountResponseOrganic {
   
-  @scala.inline
-  def apply(status: String, value: Double): InsightsServiceAccountResponseOrganic = {
+  inline def apply(status: String, value: Double): InsightsServiceAccountResponseOrganic = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServiceAccountResponseOrganic]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseOrganicMutableBuilder[Self <: InsightsServiceAccountResponseOrganic] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseOrganic](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -17,31 +17,23 @@ trait ApproximateProgress extends StObject {
 }
 object ApproximateProgress {
   
-  @scala.inline
-  def apply(): ApproximateProgress = {
+  inline def apply(): ApproximateProgress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApproximateProgress]
   }
   
-  @scala.inline
-  implicit class ApproximateProgressMutableBuilder[Self <: ApproximateProgress] (val x: Self) extends AnyVal {
+  extension [Self <: ApproximateProgress](x: Self) {
     
-    @scala.inline
-    def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
+    inline def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
+    inline def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setRemainingTime(value: String): Self = StObject.set(x, "remainingTime", value.asInstanceOf[js.Any])
+    inline def setRemainingTime(value: String): Self = StObject.set(x, "remainingTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingTimeUndefined: Self = StObject.set(x, "remainingTime", js.undefined)
+    inline def setRemainingTimeUndefined: Self = StObject.set(x, "remainingTime", js.undefined)
   }
 }

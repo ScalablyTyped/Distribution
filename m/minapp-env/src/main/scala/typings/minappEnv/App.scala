@@ -51,44 +51,32 @@ object App {
   }
   object AppInstance {
     
-    @scala.inline
-    def apply[T /* <: IAnyObject */](): AppInstance[T] = {
+    inline def apply[T /* <: IAnyObject */](): AppInstance[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppInstance[T]]
     }
     
-    @scala.inline
-    implicit class AppInstanceMutableBuilder[Self <: AppInstance[?], T /* <: IAnyObject */] (val x: Self & AppInstance[T]) extends AnyVal {
+    extension [Self <: AppInstance[?], T /* <: IAnyObject */](x: Self & AppInstance[T]) {
       
-      @scala.inline
-      def setOnError(value: /* error */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+      inline def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      @scala.inline
-      def setOnLaunch(value: /* options */ js.UndefOr[ILaunchShowOption] => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
+      inline def setOnLaunch(value: /* options */ js.UndefOr[ILaunchShowOption] => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLaunchUndefined: Self = StObject.set(x, "onLaunch", js.undefined)
+      inline def setOnLaunchUndefined: Self = StObject.set(x, "onLaunch", js.undefined)
       
-      @scala.inline
-      def setOnPageNotFound(value: /* options */ js.UndefOr[IPageNotFoundOption] => Unit): Self = StObject.set(x, "onPageNotFound", js.Any.fromFunction1(value))
+      inline def setOnPageNotFound(value: /* options */ js.UndefOr[IPageNotFoundOption] => Unit): Self = StObject.set(x, "onPageNotFound", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageNotFoundUndefined: Self = StObject.set(x, "onPageNotFound", js.undefined)
+      inline def setOnPageNotFoundUndefined: Self = StObject.set(x, "onPageNotFound", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: /* options */ js.UndefOr[ILaunchShowOption] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+      inline def setOnShow(value: /* options */ js.UndefOr[ILaunchShowOption] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     }
   }
   
@@ -104,17 +92,14 @@ object App {
   }
   object IGetAppOption {
     
-    @scala.inline
-    def apply(allowDefault: scala.Boolean): IGetAppOption = {
+    inline def apply(allowDefault: scala.Boolean): IGetAppOption = {
       val __obj = js.Dynamic.literal(allowDefault = allowDefault.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGetAppOption]
     }
     
-    @scala.inline
-    implicit class IGetAppOptionMutableBuilder[Self <: IGetAppOption] (val x: Self) extends AnyVal {
+    extension [Self <: IGetAppOption](x: Self) {
       
-      @scala.inline
-      def setAllowDefault(value: scala.Boolean): Self = StObject.set(x, "allowDefault", value.asInstanceOf[js.Any])
+      inline def setAllowDefault(value: scala.Boolean): Self = StObject.set(x, "allowDefault", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,17 +109,14 @@ object App {
   }
   object ILaunchOptions {
     
-    @scala.inline
-    def apply(query: Double): ILaunchOptions = {
+    inline def apply(query: Double): ILaunchOptions = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILaunchOptions]
     }
     
-    @scala.inline
-    implicit class ILaunchOptionsMutableBuilder[Self <: ILaunchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ILaunchOptions](x: Self) {
       
-      @scala.inline
-      def setQuery(value: Double): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Double): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
   
@@ -227,32 +209,24 @@ object App {
   }
   object ILaunchShowOption {
     
-    @scala.inline
-    def apply(path: java.lang.String, query: IAnyObject, scene: SceneValues, shareTicket: java.lang.String): ILaunchShowOption = {
+    inline def apply(path: java.lang.String, query: IAnyObject, scene: SceneValues, shareTicket: java.lang.String): ILaunchShowOption = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILaunchShowOption]
     }
     
-    @scala.inline
-    implicit class ILaunchShowOptionMutableBuilder[Self <: ILaunchShowOption] (val x: Self) extends AnyVal {
+    extension [Self <: ILaunchShowOption](x: Self) {
       
-      @scala.inline
-      def setPath(value: java.lang.String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: java.lang.String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: IAnyObject): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: IAnyObject): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrerInfo(value: IReferrerInfo): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
+      inline def setReferrerInfo(value: IReferrerInfo): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrerInfoUndefined: Self = StObject.set(x, "referrerInfo", js.undefined)
+      inline def setReferrerInfoUndefined: Self = StObject.set(x, "referrerInfo", js.undefined)
       
-      @scala.inline
-      def setScene(value: SceneValues): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+      inline def setScene(value: SceneValues): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShareTicket(value: java.lang.String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
+      inline def setShareTicket(value: java.lang.String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
     }
   }
   
@@ -269,23 +243,18 @@ object App {
   }
   object IPageNotFoundOption {
     
-    @scala.inline
-    def apply(isEntryPage: scala.Boolean, path: java.lang.String, query: IAnyObject): IPageNotFoundOption = {
+    inline def apply(isEntryPage: scala.Boolean, path: java.lang.String, query: IAnyObject): IPageNotFoundOption = {
       val __obj = js.Dynamic.literal(isEntryPage = isEntryPage.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPageNotFoundOption]
     }
     
-    @scala.inline
-    implicit class IPageNotFoundOptionMutableBuilder[Self <: IPageNotFoundOption] (val x: Self) extends AnyVal {
+    extension [Self <: IPageNotFoundOption](x: Self) {
       
-      @scala.inline
-      def setIsEntryPage(value: scala.Boolean): Self = StObject.set(x, "isEntryPage", value.asInstanceOf[js.Any])
+      inline def setIsEntryPage(value: scala.Boolean): Self = StObject.set(x, "isEntryPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: java.lang.String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: java.lang.String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: IAnyObject): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: IAnyObject): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
   
@@ -308,23 +277,18 @@ object App {
   }
   object IReferrerInfo {
     
-    @scala.inline
-    def apply(appId: java.lang.String): IReferrerInfo = {
+    inline def apply(appId: java.lang.String): IReferrerInfo = {
       val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
       __obj.asInstanceOf[IReferrerInfo]
     }
     
-    @scala.inline
-    implicit class IReferrerInfoMutableBuilder[Self <: IReferrerInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IReferrerInfo](x: Self) {
       
-      @scala.inline
-      def setAppId(value: java.lang.String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: java.lang.String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+      inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
+      inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     }
   }
   

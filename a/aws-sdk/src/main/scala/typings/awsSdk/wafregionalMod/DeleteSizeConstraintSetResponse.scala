@@ -13,19 +13,15 @@ trait DeleteSizeConstraintSetResponse extends StObject {
 }
 object DeleteSizeConstraintSetResponse {
   
-  @scala.inline
-  def apply(): DeleteSizeConstraintSetResponse = {
+  inline def apply(): DeleteSizeConstraintSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSizeConstraintSetResponse]
   }
   
-  @scala.inline
-  implicit class DeleteSizeConstraintSetResponseMutableBuilder[Self <: DeleteSizeConstraintSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSizeConstraintSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

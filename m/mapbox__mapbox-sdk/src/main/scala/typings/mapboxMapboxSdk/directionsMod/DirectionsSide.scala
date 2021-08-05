@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionsSide extends StObject
 object DirectionsSide {
   
-  @scala.inline
-  def left: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.left = "left".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.left]
+  inline def left: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.left = "left".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.left]
   
-  @scala.inline
-  def right: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.right = "right".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.right]
+  inline def right: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.right = "right".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.right]
 }

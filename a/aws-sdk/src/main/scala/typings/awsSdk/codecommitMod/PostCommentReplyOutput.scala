@@ -13,19 +13,15 @@ trait PostCommentReplyOutput extends StObject {
 }
 object PostCommentReplyOutput {
   
-  @scala.inline
-  def apply(): PostCommentReplyOutput = {
+  inline def apply(): PostCommentReplyOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PostCommentReplyOutput]
   }
   
-  @scala.inline
-  implicit class PostCommentReplyOutputMutableBuilder[Self <: PostCommentReplyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PostCommentReplyOutput](x: Self) {
     
-    @scala.inline
-    def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
   }
 }

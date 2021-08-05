@@ -15,8 +15,7 @@ object global {
     @JSGlobal("safari.application")
     @js.native
     def application: SafariApplication = js.native
-    @scala.inline
-    def application_=(x: SafariApplication): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("application")(x.asInstanceOf[js.Any])
+    inline def application_=(x: SafariApplication): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("application")(x.asInstanceOf[js.Any])
     
     @JSGlobal("safari.extension")
     @js.native
@@ -25,7 +24,6 @@ object global {
     @JSGlobal("safari.self")
     @js.native
     def self: SafariExtensionGlobalPage | SafariExtensionBar = js.native
-    @scala.inline
-    def self_=(x: SafariExtensionGlobalPage | SafariExtensionBar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("self")(x.asInstanceOf[js.Any])
+    inline def self_=(x: SafariExtensionGlobalPage | SafariExtensionBar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("self")(x.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait SchemaDealServingMetadata extends StObject {
 }
 object SchemaDealServingMetadata {
   
-  @scala.inline
-  def apply(): SchemaDealServingMetadata = {
+  inline def apply(): SchemaDealServingMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDealServingMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaDealServingMetadataMutableBuilder[Self <: SchemaDealServingMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDealServingMetadata](x: Self) {
     
-    @scala.inline
-    def setDealPauseStatus(value: SchemaDealPauseStatus): Self = StObject.set(x, "dealPauseStatus", value.asInstanceOf[js.Any])
+    inline def setDealPauseStatus(value: SchemaDealPauseStatus): Self = StObject.set(x, "dealPauseStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealPauseStatusUndefined: Self = StObject.set(x, "dealPauseStatus", js.undefined)
+    inline def setDealPauseStatusUndefined: Self = StObject.set(x, "dealPauseStatus", js.undefined)
   }
 }

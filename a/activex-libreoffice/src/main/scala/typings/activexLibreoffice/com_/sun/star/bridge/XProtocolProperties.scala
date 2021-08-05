@@ -57,8 +57,7 @@ trait XProtocolProperties
 }
 object XProtocolProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Properties: SafeArray[ProtocolProperty],
     acquire: () => Unit,
     commitChange: SeqEquiv[ProtocolProperty] => Unit,
@@ -71,19 +70,14 @@ object XProtocolProperties {
     __obj.asInstanceOf[XProtocolProperties]
   }
   
-  @scala.inline
-  implicit class XProtocolPropertiesMutableBuilder[Self <: XProtocolProperties] (val x: Self) extends AnyVal {
+  extension [Self <: XProtocolProperties](x: Self) {
     
-    @scala.inline
-    def setCommitChange(value: SeqEquiv[ProtocolProperty] => Unit): Self = StObject.set(x, "commitChange", js.Any.fromFunction1(value))
+    inline def setCommitChange(value: SeqEquiv[ProtocolProperty] => Unit): Self = StObject.set(x, "commitChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProperties(value: () => SafeArray[ProtocolProperty]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
+    inline def setGetProperties(value: () => SafeArray[ProtocolProperty]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProperties(value: SafeArray[ProtocolProperty]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SafeArray[ProtocolProperty]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestChange(value: Double => Double): Self = StObject.set(x, "requestChange", js.Any.fromFunction1(value))
+    inline def setRequestChange(value: Double => Double): Self = StObject.set(x, "requestChange", js.Any.fromFunction1(value))
   }
 }

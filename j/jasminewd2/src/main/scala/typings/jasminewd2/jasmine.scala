@@ -47,23 +47,18 @@ object jasmine {
   }
   object AsyncCustomMatcherResult {
     
-    @scala.inline
-    def apply(pass: Boolean | js.Promise[Boolean]): AsyncCustomMatcherResult = {
+    inline def apply(pass: Boolean | js.Promise[Boolean]): AsyncCustomMatcherResult = {
       val __obj = js.Dynamic.literal(pass = pass.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsyncCustomMatcherResult]
     }
     
-    @scala.inline
-    implicit class AsyncCustomMatcherResultMutableBuilder[Self <: AsyncCustomMatcherResult] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncCustomMatcherResult](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setPass(value: Boolean | js.Promise[Boolean]): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: Boolean | js.Promise[Boolean]): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,17 +68,14 @@ object jasmine {
   }
   object Env {
     
-    @scala.inline
-    def apply(addMatchers: AsyncCustomMatcherFactories => Unit): Env = {
+    inline def apply(addMatchers: AsyncCustomMatcherFactories => Unit): Env = {
       val __obj = js.Dynamic.literal(addMatchers = js.Any.fromFunction1(addMatchers))
       __obj.asInstanceOf[Env]
     }
     
-    @scala.inline
-    implicit class EnvMutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
+    extension [Self <: Env](x: Self) {
       
-      @scala.inline
-      def setAddMatchers(value: AsyncCustomMatcherFactories => Unit): Self = StObject.set(x, "addMatchers", js.Any.fromFunction1(value))
+      inline def setAddMatchers(value: AsyncCustomMatcherFactories => Unit): Self = StObject.set(x, "addMatchers", js.Any.fromFunction1(value))
     }
   }
   
@@ -216,17 +208,14 @@ object jasmine {
   }
   object Spec {
     
-    @scala.inline
-    def apply(addMatchers: AsyncCustomMatcherFactories => Unit): Spec = {
+    inline def apply(addMatchers: AsyncCustomMatcherFactories => Unit): Spec = {
       val __obj = js.Dynamic.literal(addMatchers = js.Any.fromFunction1(addMatchers))
       __obj.asInstanceOf[Spec]
     }
     
-    @scala.inline
-    implicit class SpecMutableBuilder[Self <: Spec] (val x: Self) extends AnyVal {
+    extension [Self <: Spec](x: Self) {
       
-      @scala.inline
-      def setAddMatchers(value: AsyncCustomMatcherFactories => Unit): Self = StObject.set(x, "addMatchers", js.Any.fromFunction1(value))
+      inline def setAddMatchers(value: AsyncCustomMatcherFactories => Unit): Self = StObject.set(x, "addMatchers", js.Any.fromFunction1(value))
     }
   }
 }

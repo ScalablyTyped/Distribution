@@ -23,10 +23,8 @@ object pathMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createPath[T /* <: Record[String, js.Any] */](path: String): Path[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any]).asInstanceOf[Path[T]]
-    @scala.inline
-    def createPath[T /* <: Record[String, js.Any] */](path: String, options: PathOptions): Path[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Path[T]]
+    inline def createPath[T /* <: Record[String, js.Any] */](path: String): Path[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any]).asInstanceOf[Path[T]]
+    inline def createPath[T /* <: Record[String, js.Any] */](path: String, options: PathOptions): Path[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Path[T]]
   }
   
   @JSImport("path-parser/dist/Path", "Path")
@@ -40,7 +38,7 @@ object pathMod {
     def build(params: T, opts: PathBuildOptions): String = js.native
     def build(params: Unit, opts: PathBuildOptions): String = js.native
     
-    var getParams: js.Any = js.native
+    /* private */ var getParams: js.Any = js.native
     
     var hasMatrixParams: Boolean = js.native
     
@@ -76,7 +74,7 @@ object pathMod {
     
     var urlParams: js.Array[String] = js.native
     
-    var urlTest: js.Any = js.native
+    /* private */ var urlTest: js.Any = js.native
   }
   /* static members */
   object Path {
@@ -85,10 +83,8 @@ object pathMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createPath[T /* <: Record[String, js.Any] */](path: String): Path[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any]).asInstanceOf[Path[T]]
-    @scala.inline
-    def createPath[T /* <: Record[String, js.Any] */](path: String, options: PathOptions): Path[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Path[T]]
+    inline def createPath[T /* <: Record[String, js.Any] */](path: String): Path[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any]).asInstanceOf[Path[T]]
+    inline def createPath[T /* <: Record[String, js.Any] */](path: String, options: PathOptions): Path[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Path[T]]
   }
   
   trait InternalPathOptions extends StObject {
@@ -99,23 +95,18 @@ object pathMod {
   }
   object InternalPathOptions {
     
-    @scala.inline
-    def apply(urlParamsEncoding: URLParamsEncodingType): InternalPathOptions = {
+    inline def apply(urlParamsEncoding: URLParamsEncodingType): InternalPathOptions = {
       val __obj = js.Dynamic.literal(urlParamsEncoding = urlParamsEncoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[InternalPathOptions]
     }
     
-    @scala.inline
-    implicit class InternalPathOptionsMutableBuilder[Self <: InternalPathOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InternalPathOptions](x: Self) {
       
-      @scala.inline
-      def setQueryParams(value: IOptions): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: IOptions): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+      inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
       
-      @scala.inline
-      def setUrlParamsEncoding(value: URLParamsEncodingType): Self = StObject.set(x, "urlParamsEncoding", value.asInstanceOf[js.Any])
+      inline def setUrlParamsEncoding(value: URLParamsEncodingType): Self = StObject.set(x, "urlParamsEncoding", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,26 +120,20 @@ object pathMod {
   }
   object PathBuildOptions {
     
-    @scala.inline
-    def apply(): PathBuildOptions = {
+    inline def apply(): PathBuildOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathBuildOptions]
     }
     
-    @scala.inline
-    implicit class PathBuildOptionsMutableBuilder[Self <: PathBuildOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PathBuildOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreConstraints(value: Boolean): Self = StObject.set(x, "ignoreConstraints", value.asInstanceOf[js.Any])
+      inline def setIgnoreConstraints(value: Boolean): Self = StObject.set(x, "ignoreConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreConstraintsUndefined: Self = StObject.set(x, "ignoreConstraints", js.undefined)
+      inline def setIgnoreConstraintsUndefined: Self = StObject.set(x, "ignoreConstraints", js.undefined)
       
-      @scala.inline
-      def setIgnoreSearch(value: Boolean): Self = StObject.set(x, "ignoreSearch", value.asInstanceOf[js.Any])
+      inline def setIgnoreSearch(value: Boolean): Self = StObject.set(x, "ignoreSearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreSearchUndefined: Self = StObject.set(x, "ignoreSearch", js.undefined)
+      inline def setIgnoreSearchUndefined: Self = StObject.set(x, "ignoreSearch", js.undefined)
     }
   }
   
@@ -177,26 +162,20 @@ object pathMod {
   }
   object PathOptions {
     
-    @scala.inline
-    def apply(): PathOptions = {
+    inline def apply(): PathOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathOptions]
     }
     
-    @scala.inline
-    implicit class PathOptionsMutableBuilder[Self <: PathOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PathOptions](x: Self) {
       
-      @scala.inline
-      def setQueryParams(value: IOptions): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: IOptions): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+      inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
       
-      @scala.inline
-      def setUrlParamsEncoding(value: URLParamsEncodingType): Self = StObject.set(x, "urlParamsEncoding", value.asInstanceOf[js.Any])
+      inline def setUrlParamsEncoding(value: URLParamsEncodingType): Self = StObject.set(x, "urlParamsEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlParamsEncodingUndefined: Self = StObject.set(x, "urlParamsEncoding", js.undefined)
+      inline def setUrlParamsEncodingUndefined: Self = StObject.set(x, "urlParamsEncoding", js.undefined)
     }
   }
   
@@ -210,26 +189,20 @@ object pathMod {
   }
   object PathPartialTestOptions {
     
-    @scala.inline
-    def apply(): PathPartialTestOptions = {
+    inline def apply(): PathPartialTestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathPartialTestOptions]
     }
     
-    @scala.inline
-    implicit class PathPartialTestOptionsMutableBuilder[Self <: PathPartialTestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PathPartialTestOptions](x: Self) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
-      @scala.inline
-      def setDelimited(value: Boolean): Self = StObject.set(x, "delimited", value.asInstanceOf[js.Any])
+      inline def setDelimited(value: Boolean): Self = StObject.set(x, "delimited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimitedUndefined: Self = StObject.set(x, "delimited", js.undefined)
+      inline def setDelimitedUndefined: Self = StObject.set(x, "delimited", js.undefined)
     }
   }
   
@@ -243,26 +216,20 @@ object pathMod {
   }
   object PathTestOptions {
     
-    @scala.inline
-    def apply(): PathTestOptions = {
+    inline def apply(): PathTestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathTestOptions]
     }
     
-    @scala.inline
-    implicit class PathTestOptionsMutableBuilder[Self <: PathTestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PathTestOptions](x: Self) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
-      @scala.inline
-      def setStrictTrailingSlash(value: Boolean): Self = StObject.set(x, "strictTrailingSlash", value.asInstanceOf[js.Any])
+      inline def setStrictTrailingSlash(value: Boolean): Self = StObject.set(x, "strictTrailingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictTrailingSlashUndefined: Self = StObject.set(x, "strictTrailingSlash", js.undefined)
+      inline def setStrictTrailingSlashUndefined: Self = StObject.set(x, "strictTrailingSlash", js.undefined)
     }
   }
   

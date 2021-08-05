@@ -12,17 +12,14 @@ object anon {
   }
   object ForeignKeySuffix {
     
-    @scala.inline
-    def apply(foreignKeySuffix: String): ForeignKeySuffix = {
+    inline def apply(foreignKeySuffix: String): ForeignKeySuffix = {
       val __obj = js.Dynamic.literal(foreignKeySuffix = foreignKeySuffix.asInstanceOf[js.Any])
       __obj.asInstanceOf[ForeignKeySuffix]
     }
     
-    @scala.inline
-    implicit class ForeignKeySuffixMutableBuilder[Self <: ForeignKeySuffix] (val x: Self) extends AnyVal {
+    extension [Self <: ForeignKeySuffix](x: Self) {
       
-      @scala.inline
-      def setForeignKeySuffix(value: String): Self = StObject.set(x, "foreignKeySuffix", value.asInstanceOf[js.Any])
+      inline def setForeignKeySuffix(value: String): Self = StObject.set(x, "foreignKeySuffix", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,22 +12,17 @@ trait Array extends StObject {
 }
 object Array {
   
-  @scala.inline
-  def apply(array: js.Array[String], hashalg: String): Array = {
+  inline def apply(array: js.Array[String], hashalg: String): Array = {
     val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], hashalg = hashalg.asInstanceOf[js.Any])
     __obj.asInstanceOf[Array]
   }
   
-  @scala.inline
-  implicit class ArrayMutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
+  extension [Self <: Array](x: Self) {
     
-    @scala.inline
-    def setArray(value: js.Array[String]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: js.Array[String]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayVarargs(value: String*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: String*): Self = StObject.set(x, "array", js.Array(value :_*))
     
-    @scala.inline
-    def setHashalg(value: String): Self = StObject.set(x, "hashalg", value.asInstanceOf[js.Any])
+    inline def setHashalg(value: String): Self = StObject.set(x, "hashalg", value.asInstanceOf[js.Any])
   }
 }

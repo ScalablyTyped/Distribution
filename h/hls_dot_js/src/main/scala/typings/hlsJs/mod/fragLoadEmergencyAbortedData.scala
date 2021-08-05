@@ -10,16 +10,13 @@ trait fragLoadEmergencyAbortedData extends StObject {
 }
 object fragLoadEmergencyAbortedData {
   
-  @scala.inline
-  def apply(frag: Fragment): fragLoadEmergencyAbortedData = {
+  inline def apply(frag: Fragment): fragLoadEmergencyAbortedData = {
     val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any])
     __obj.asInstanceOf[fragLoadEmergencyAbortedData]
   }
   
-  @scala.inline
-  implicit class fragLoadEmergencyAbortedDataMutableBuilder[Self <: fragLoadEmergencyAbortedData] (val x: Self) extends AnyVal {
+  extension [Self <: fragLoadEmergencyAbortedData](x: Self) {
     
-    @scala.inline
-    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
+    inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait GetRoomSkillParameterResponse extends StObject {
 }
 object GetRoomSkillParameterResponse {
   
-  @scala.inline
-  def apply(): GetRoomSkillParameterResponse = {
+  inline def apply(): GetRoomSkillParameterResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRoomSkillParameterResponse]
   }
   
-  @scala.inline
-  implicit class GetRoomSkillParameterResponseMutableBuilder[Self <: GetRoomSkillParameterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetRoomSkillParameterResponse](x: Self) {
     
-    @scala.inline
-    def setRoomSkillParameter(value: RoomSkillParameter): Self = StObject.set(x, "RoomSkillParameter", value.asInstanceOf[js.Any])
+    inline def setRoomSkillParameter(value: RoomSkillParameter): Self = StObject.set(x, "RoomSkillParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomSkillParameterUndefined: Self = StObject.set(x, "RoomSkillParameter", js.undefined)
+    inline def setRoomSkillParameterUndefined: Self = StObject.set(x, "RoomSkillParameter", js.undefined)
   }
 }

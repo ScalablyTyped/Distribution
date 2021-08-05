@@ -64,8 +64,7 @@ object mod {
       * The ID must match between the client and server versions of the app.
       * @returns The reconfigured `BrowserModule` to import into the app's root `AppModule`.
       */
-    @scala.inline
-    def withServerTransition(params: AppId): ModuleWithProviders[BrowserModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withServerTransition")(params.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[BrowserModule]]
+    inline def withServerTransition(params: AppId): ModuleWithProviders[BrowserModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withServerTransition")(params.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[BrowserModule]]
   }
   
   @JSImport("@angular/platform-browser", "BrowserTransferStateModule")
@@ -90,8 +89,7 @@ object mod {
       *
       * {@example platform-browser/dom/debug/ts/by/by.ts region='by_all'}
       */
-    @scala.inline
-    def all(): Predicate[DebugNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[Predicate[DebugNode]]
+    inline def all(): Predicate[DebugNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[Predicate[DebugNode]]
     
     /**
       * Match elements by the given CSS selector.
@@ -101,8 +99,7 @@ object mod {
       *
       * {@example platform-browser/dom/debug/ts/by/by.ts region='by_css'}
       */
-    @scala.inline
-    def css(selector: String): Predicate[DebugElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(selector.asInstanceOf[js.Any]).asInstanceOf[Predicate[DebugElement]]
+    inline def css(selector: String): Predicate[DebugElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(selector.asInstanceOf[js.Any]).asInstanceOf[Predicate[DebugElement]]
     
     /**
       * Match nodes that have the given directive present.
@@ -112,8 +109,7 @@ object mod {
       *
       * {@example platform-browser/dom/debug/ts/by/by.ts region='by_directive'}
       */
-    @scala.inline
-    def directive(`type`: Type[js.Any]): Predicate[DebugNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("directive")(`type`.asInstanceOf[js.Any]).asInstanceOf[Predicate[DebugNode]]
+    inline def directive(`type`: Type[js.Any]): Predicate[DebugNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("directive")(`type`.asInstanceOf[js.Any]).asInstanceOf[Predicate[DebugNode]]
   }
   
   @JSImport("@angular/platform-browser", "DomSanitizer")
@@ -179,11 +175,11 @@ object mod {
       */
     def this(plugins: js.Array[ɵangularPackagesPlatformBrowserPlatformBrowserG], _zone: NgZone) = this()
     
-    var _eventNameToPlugin: js.Any = js.native
+    /* private */ var _eventNameToPlugin: js.Any = js.native
     
-    var _plugins: js.Any = js.native
+    /* private */ var _plugins: js.Any = js.native
     
-    var _zone: js.Any = js.native
+    /* private */ var _zone: js.Any = js.native
     
     /**
       * Registers a handler for a specific element and event.
@@ -277,17 +273,17 @@ object mod {
   class Meta protected () extends StObject {
     def this(_doc: js.Any) = this()
     
-    var _containsAttributes: js.Any = js.native
+    /* private */ var _containsAttributes: js.Any = js.native
     
-    var _doc: js.Any = js.native
+    /* private */ var _doc: js.Any = js.native
     
-    var _dom: js.Any = js.native
+    /* private */ var _dom: js.Any = js.native
     
-    var _getOrCreateElement: js.Any = js.native
+    /* private */ var _getOrCreateElement: js.Any = js.native
     
-    var _parseSelector: js.Any = js.native
+    /* private */ var _parseSelector: js.Any = js.native
     
-    var _setMetaElementAttributes: js.Any = js.native
+    /* private */ var _setMetaElementAttributes: js.Any = js.native
     
     /**
       * Retrieves or creates a specific `<meta>` tag element in the current HTML document.
@@ -360,7 +356,7 @@ object mod {
   class Title protected () extends StObject {
     def this(_doc: js.Any) = this()
     
-    var _doc: js.Any = js.native
+    /* private */ var _doc: js.Any = js.native
     
     /**
       * Get the title of the current HTML document.
@@ -393,7 +389,7 @@ object mod {
       */
     def onSerialize[T](key: StateKey[T], callback: js.Function0[T]): Unit = js.native
     
-    var onSerializeCallbacks: js.Any = js.native
+    /* private */ var onSerializeCallbacks: js.Any = js.native
     
     /**
       * Remove a key from the store.
@@ -405,7 +401,7 @@ object mod {
       */
     def set[T](key: StateKey[T], value: T): Unit = js.native
     
-    var store: js.Any = js.native
+    /* private */ var store: js.Any = js.native
     
     /**
       * Serialize the current state of the store to JSON.
@@ -417,19 +413,14 @@ object mod {
   @js.native
   val VERSION: Version = js.native
   
-  @scala.inline
-  def disableDebugTools(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableDebugTools")().asInstanceOf[Unit]
+  inline def disableDebugTools(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableDebugTools")().asInstanceOf[Unit]
   
-  @scala.inline
-  def enableDebugTools[T](ref: ComponentRef[T]): ComponentRef[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableDebugTools")(ref.asInstanceOf[js.Any]).asInstanceOf[ComponentRef[T]]
+  inline def enableDebugTools[T](ref: ComponentRef[T]): ComponentRef[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableDebugTools")(ref.asInstanceOf[js.Any]).asInstanceOf[ComponentRef[T]]
   
-  @scala.inline
-  def makeStateKey[T](key: String): StateKey[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStateKey")(key.asInstanceOf[js.Any]).asInstanceOf[StateKey[T]]
+  inline def makeStateKey[T](key: String): StateKey[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStateKey")(key.asInstanceOf[js.Any]).asInstanceOf[StateKey[T]]
   
-  @scala.inline
-  def platformBrowser(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowser")().asInstanceOf[PlatformRef]
-  @scala.inline
-  def platformBrowser(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowser")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
+  inline def platformBrowser(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowser")().asInstanceOf[PlatformRef]
+  inline def platformBrowser(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowser")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
   
   @JSImport("@angular/platform-browser", "\u0275BROWSER_SANITIZATION_PROVIDERS")
   @js.native
@@ -469,8 +460,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def makeCurrent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("makeCurrent")().asInstanceOf[Unit]
+    inline def makeCurrent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("makeCurrent")().asInstanceOf[Unit]
   }
   
   @JSImport("@angular/platform-browser", "\u0275BrowserGetTestability")
@@ -492,8 +482,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
   }
   
   @JSImport("@angular/platform-browser", "\u0275DomEventsPlugin")
@@ -509,21 +498,21 @@ object mod {
   class ɵDomRendererFactory2 protected () extends RendererFactory2 {
     def this(eventManager: EventManager, sharedStylesHost: ɵDomSharedStylesHost, appId: String) = this()
     
-    var appId: js.Any = js.native
+    /* private */ var appId: js.Any = js.native
     
     @JSName("begin")
     def begin_MɵDomRendererFactory2(): Unit = js.native
     
-    var defaultRenderer: js.Any = js.native
+    /* private */ var defaultRenderer: js.Any = js.native
     
     @JSName("end")
     def end_MɵDomRendererFactory2(): Unit = js.native
     
-    var eventManager: js.Any = js.native
+    /* private */ var eventManager: js.Any = js.native
     
-    var rendererByCompId: js.Any = js.native
+    /* private */ var rendererByCompId: js.Any = js.native
     
-    var sharedStylesHost: js.Any = js.native
+    /* private */ var sharedStylesHost: js.Any = js.native
   }
   
   @JSImport("@angular/platform-browser", "\u0275DomSanitizerImpl")
@@ -531,7 +520,7 @@ object mod {
   class ɵDomSanitizerImpl protected () extends DomSanitizer {
     def this(_doc: js.Any) = this()
     
-    var _doc: js.Any = js.native
+    /* private */ var _doc: js.Any = js.native
   }
   
   @JSImport("@angular/platform-browser", "\u0275DomSharedStylesHost")
@@ -541,13 +530,13 @@ object mod {
        with OnDestroy {
     def this(_doc: js.Any) = this()
     
-    var _addStylesToHost: js.Any = js.native
+    /* private */ var _addStylesToHost: js.Any = js.native
     
-    var _doc: js.Any = js.native
+    /* private */ var _doc: js.Any = js.native
     
-    var _hostNodes: js.Any = js.native
+    /* private */ var _hostNodes: js.Any = js.native
     
-    var _styleNodes: js.Any = js.native
+    /* private */ var _styleNodes: js.Any = js.native
     
     def addHost(hostNode: Node): Unit = js.native
     
@@ -579,13 +568,13 @@ object mod {
     def this(doc: js.Any, _config: HammerGestureConfig, console: ɵConsole) = this()
     def this(doc: js.Any, _config: HammerGestureConfig, console: ɵConsole, loader: HammerLoader) = this()
     
-    var _config: js.Any = js.native
+    /* private */ var _config: js.Any = js.native
     
-    var console: js.Any = js.native
+    /* private */ var console: js.Any = js.native
     
     def isCustomEvent(eventName: String): Boolean = js.native
     
-    var loader: js.Any = js.native
+    /* private */ var loader: js.Any = js.native
   }
   
   @JSImport("@angular/platform-browser", "\u0275INTERNAL_BROWSER_PLATFORM_PROVIDERS")
@@ -615,14 +604,11 @@ object mod {
       * @param zone The zone in which the event occurred.
       * @returns A callback function.
       */
-    @scala.inline
-    def eventCallback(fullKey: js.Any, handler: js.Function, zone: NgZone): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("eventCallback")(fullKey.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    inline def eventCallback(fullKey: js.Any, handler: js.Function, zone: NgZone): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("eventCallback")(fullKey.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
-    @scala.inline
-    def getEventFullKey(event: KeyboardEvent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventFullKey")(event.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getEventFullKey(event: KeyboardEvent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventFullKey")(event.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def parseEventName(eventName: String): DomEventName | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseEventName")(eventName.asInstanceOf[js.Any]).asInstanceOf[DomEventName | Null]
+    inline def parseEventName(eventName: String): DomEventName | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseEventName")(eventName.asInstanceOf[js.Any]).asInstanceOf[DomEventName | Null]
   }
   
   @JSImport("@angular/platform-browser", "\u0275SharedStylesHost")
@@ -640,31 +626,26 @@ object mod {
   @js.native
   val ɵTRANSITIONID: InjectionToken[js.Any] = js.native
   
-  @scala.inline
-  def ɵangularPackagesPlatformBrowserPlatformBrowserA(): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_a")().asInstanceOf[ErrorHandler]
+  inline def ɵangularPackagesPlatformBrowserPlatformBrowserA(): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_a")().asInstanceOf[ErrorHandler]
   
-  @scala.inline
-  def ɵangularPackagesPlatformBrowserPlatformBrowserB(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_b")().asInstanceOf[js.Any]
+  inline def ɵangularPackagesPlatformBrowserPlatformBrowserB(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_b")().asInstanceOf[js.Any]
   
   @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_c")
   @js.native
   val ɵangularPackagesPlatformBrowserPlatformBrowserC: js.Array[StaticProvider] = js.native
   
-  @scala.inline
-  def ɵangularPackagesPlatformBrowserPlatformBrowserD(): Meta = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_d")().asInstanceOf[Meta]
+  inline def ɵangularPackagesPlatformBrowserPlatformBrowserD(): Meta = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_d")().asInstanceOf[Meta]
   
-  @scala.inline
-  def ɵangularPackagesPlatformBrowserPlatformBrowserE(): Title = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_e")().asInstanceOf[Title]
+  inline def ɵangularPackagesPlatformBrowserPlatformBrowserE(): Title = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_e")().asInstanceOf[Title]
   
-  @scala.inline
-  def ɵangularPackagesPlatformBrowserPlatformBrowserF(doc: Document, appId: String): TransferState = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_f")(doc.asInstanceOf[js.Any], appId.asInstanceOf[js.Any])).asInstanceOf[TransferState]
+  inline def ɵangularPackagesPlatformBrowserPlatformBrowserF(doc: Document, appId: String): TransferState = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_f")(doc.asInstanceOf[js.Any], appId.asInstanceOf[js.Any])).asInstanceOf[TransferState]
   
   @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_g")
   @js.native
   abstract class ɵangularPackagesPlatformBrowserPlatformBrowserG protected () extends StObject {
     def this(_doc: js.Any) = this()
     
-    var _doc: js.Any = js.native
+    /* private */ var _doc: js.Any = js.native
     
     def addEventListener(element: HTMLElement, eventName: String, handler: js.Function): js.Function = js.native
     
@@ -683,18 +664,15 @@ object mod {
   @js.native
   val ɵangularPackagesPlatformBrowserPlatformBrowserI: js.Array[Provider] = js.native
   
-  @scala.inline
-  def ɵangularPackagesPlatformBrowserPlatformBrowserJ(injector: Injector): ɵDomSanitizerImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_j")(injector.asInstanceOf[js.Any]).asInstanceOf[ɵDomSanitizerImpl]
+  inline def ɵangularPackagesPlatformBrowserPlatformBrowserJ(injector: Injector): ɵDomSanitizerImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_j")(injector.asInstanceOf[js.Any]).asInstanceOf[ɵDomSanitizerImpl]
   
-  @scala.inline
-  def ɵangularPackagesPlatformBrowserPlatformBrowserK(transitionId: String, document: js.Any, injector: Injector): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_k")(transitionId.asInstanceOf[js.Any], document.asInstanceOf[js.Any], injector.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def ɵangularPackagesPlatformBrowserPlatformBrowserK(transitionId: String, document: js.Any, injector: Injector): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_k")(transitionId.asInstanceOf[js.Any], document.asInstanceOf[js.Any], injector.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_l")
   @js.native
   val ɵangularPackagesPlatformBrowserPlatformBrowserL: js.Array[StaticProvider] = js.native
   
-  @scala.inline
-  def ɵangularPackagesPlatformBrowserPlatformBrowserM(coreTokens: js.Array[NgProbeToken]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_m")(coreTokens.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def ɵangularPackagesPlatformBrowserPlatformBrowserM(coreTokens: js.Array[NgProbeToken]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_platform_browser_m")(coreTokens.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_n")
   @js.native
@@ -704,23 +682,17 @@ object mod {
   @js.native
   abstract class ɵangularPackagesPlatformBrowserPlatformBrowserO () extends ɵDomAdapter
   
-  @scala.inline
-  def ɵescapeHtml(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275escapeHtml")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ɵescapeHtml(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275escapeHtml")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def ɵflattenStyles(compId: String, styles: js.Array[js.Any | js.Array[js.Any]], target: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275flattenStyles")(compId.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def ɵflattenStyles(compId: String, styles: js.Array[js.Any | js.Array[js.Any]], target: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275flattenStyles")(compId.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def ɵgetDOM(): ɵDomAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDOM")().asInstanceOf[ɵDomAdapter]
+  inline def ɵgetDOM(): ɵDomAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDOM")().asInstanceOf[ɵDomAdapter]
   
-  @scala.inline
-  def ɵinitDomAdapter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275initDomAdapter")().asInstanceOf[Unit]
+  inline def ɵinitDomAdapter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275initDomAdapter")().asInstanceOf[Unit]
   
-  @scala.inline
-  def ɵshimContentAttribute(componentShortId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275shimContentAttribute")(componentShortId.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ɵshimContentAttribute(componentShortId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275shimContentAttribute")(componentShortId.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def ɵshimHostAttribute(componentShortId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275shimHostAttribute")(componentShortId.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ɵshimHostAttribute(componentShortId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275shimHostAttribute")(componentShortId.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait HammerInstance extends StObject {
@@ -760,68 +732,48 @@ object mod {
   }
   object MetaDefinition {
     
-    @scala.inline
-    def apply(): MetaDefinition = {
+    inline def apply(): MetaDefinition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MetaDefinition]
     }
     
-    @scala.inline
-    implicit class MetaDefinitionMutableBuilder[Self <: MetaDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: MetaDefinition](x: Self) {
       
-      @scala.inline
-      def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+      inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setHttpEquiv(value: String): Self = StObject.set(x, "httpEquiv", value.asInstanceOf[js.Any])
+      inline def setHttpEquiv(value: String): Self = StObject.set(x, "httpEquiv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpEquivUndefined: Self = StObject.set(x, "httpEquiv", js.undefined)
+      inline def setHttpEquivUndefined: Self = StObject.set(x, "httpEquiv", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setItemprop(value: String): Self = StObject.set(x, "itemprop", value.asInstanceOf[js.Any])
+      inline def setItemprop(value: String): Self = StObject.set(x, "itemprop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItempropUndefined: Self = StObject.set(x, "itemprop", js.undefined)
+      inline def setItempropUndefined: Self = StObject.set(x, "itemprop", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+      inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   

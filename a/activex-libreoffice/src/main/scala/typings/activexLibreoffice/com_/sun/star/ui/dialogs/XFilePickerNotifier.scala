@@ -25,8 +25,7 @@ trait XFilePickerNotifier
 }
 object XFilePickerNotifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addFilePickerListener: XFilePickerListener => Unit,
     queryInterface: `type` => js.Any,
@@ -37,13 +36,10 @@ object XFilePickerNotifier {
     __obj.asInstanceOf[XFilePickerNotifier]
   }
   
-  @scala.inline
-  implicit class XFilePickerNotifierMutableBuilder[Self <: XFilePickerNotifier] (val x: Self) extends AnyVal {
+  extension [Self <: XFilePickerNotifier](x: Self) {
     
-    @scala.inline
-    def setAddFilePickerListener(value: XFilePickerListener => Unit): Self = StObject.set(x, "addFilePickerListener", js.Any.fromFunction1(value))
+    inline def setAddFilePickerListener(value: XFilePickerListener => Unit): Self = StObject.set(x, "addFilePickerListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveFilePickerListener(value: XFilePickerListener => Unit): Self = StObject.set(x, "removeFilePickerListener", js.Any.fromFunction1(value))
+    inline def setRemoveFilePickerListener(value: XFilePickerListener => Unit): Self = StObject.set(x, "removeFilePickerListener", js.Any.fromFunction1(value))
   }
 }

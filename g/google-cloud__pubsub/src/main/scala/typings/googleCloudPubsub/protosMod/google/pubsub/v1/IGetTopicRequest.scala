@@ -12,22 +12,17 @@ trait IGetTopicRequest extends StObject {
 }
 object IGetTopicRequest {
   
-  @scala.inline
-  def apply(): IGetTopicRequest = {
+  inline def apply(): IGetTopicRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGetTopicRequest]
   }
   
-  @scala.inline
-  implicit class IGetTopicRequestMutableBuilder[Self <: IGetTopicRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IGetTopicRequest](x: Self) {
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNull: Self = StObject.set(x, "topic", null)
+    inline def setTopicNull: Self = StObject.set(x, "topic", null)
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

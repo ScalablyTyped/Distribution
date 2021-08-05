@@ -36,8 +36,7 @@ trait GetDataResponse extends StObject {
 }
 object GetDataResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addAllRows: js.Array[js.Array[String]] => GetDataResponse,
     addRow: js.Array[String] => GetDataResponse,
     build: () => js.Any,
@@ -48,22 +47,16 @@ object GetDataResponse {
     __obj.asInstanceOf[GetDataResponse]
   }
   
-  @scala.inline
-  implicit class GetDataResponseMutableBuilder[Self <: GetDataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataResponse](x: Self) {
     
-    @scala.inline
-    def setAddAllRows(value: js.Array[js.Array[String]] => GetDataResponse): Self = StObject.set(x, "addAllRows", js.Any.fromFunction1(value))
+    inline def setAddAllRows(value: js.Array[js.Array[String]] => GetDataResponse): Self = StObject.set(x, "addAllRows", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddRow(value: js.Array[String] => GetDataResponse): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
+    inline def setAddRow(value: js.Array[String] => GetDataResponse): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBuild(value: () => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFields(value: Fields => GetDataResponse): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
+    inline def setSetFields(value: Fields => GetDataResponse): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFiltersApplied(value: Boolean => GetDataResponse): Self = StObject.set(x, "setFiltersApplied", js.Any.fromFunction1(value))
+    inline def setSetFiltersApplied(value: Boolean => GetDataResponse): Self = StObject.set(x, "setFiltersApplied", js.Any.fromFunction1(value))
   }
 }

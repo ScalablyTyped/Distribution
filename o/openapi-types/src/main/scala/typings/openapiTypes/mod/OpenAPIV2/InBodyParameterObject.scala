@@ -13,16 +13,13 @@ trait InBodyParameterObject
 }
 object InBodyParameterObject {
   
-  @scala.inline
-  def apply(in: String, name: String, schema: Schema): InBodyParameterObject = {
+  inline def apply(in: String, name: String, schema: Schema): InBodyParameterObject = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[InBodyParameterObject]
   }
   
-  @scala.inline
-  implicit class InBodyParameterObjectMutableBuilder[Self <: InBodyParameterObject] (val x: Self) extends AnyVal {
+  extension [Self <: InBodyParameterObject](x: Self) {
     
-    @scala.inline
-    def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

@@ -45,8 +45,7 @@ trait EllipseShape
 }
 object EllipseShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CircleEndAngle: Double,
     CircleKind: CircleKind,
     CircleStartAngle: Double,
@@ -145,16 +144,12 @@ object EllipseShape {
     __obj.asInstanceOf[EllipseShape]
   }
   
-  @scala.inline
-  implicit class EllipseShapeMutableBuilder[Self <: EllipseShape] (val x: Self) extends AnyVal {
+  extension [Self <: EllipseShape](x: Self) {
     
-    @scala.inline
-    def setCircleEndAngle(value: Double): Self = StObject.set(x, "CircleEndAngle", value.asInstanceOf[js.Any])
+    inline def setCircleEndAngle(value: Double): Self = StObject.set(x, "CircleEndAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleKind(value: CircleKind): Self = StObject.set(x, "CircleKind", value.asInstanceOf[js.Any])
+    inline def setCircleKind(value: CircleKind): Self = StObject.set(x, "CircleKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleStartAngle(value: Double): Self = StObject.set(x, "CircleStartAngle", value.asInstanceOf[js.Any])
+    inline def setCircleStartAngle(value: Double): Self = StObject.set(x, "CircleStartAngle", value.asInstanceOf[js.Any])
   }
 }

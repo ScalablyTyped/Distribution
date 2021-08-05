@@ -20,25 +20,19 @@ trait CHECKBOX extends StObject {
 }
 object CHECKBOX {
   
-  @scala.inline
-  def apply(): CHECKBOX = {
+  inline def apply(): CHECKBOX = {
     val __obj = js.Dynamic.literal(CHECKBOX = "checkbox", NORMAL = "normal", RADIO = "radio", SEPARATOR = "separator")
     __obj.asInstanceOf[CHECKBOX]
   }
   
-  @scala.inline
-  implicit class CHECKBOXMutableBuilder[Self <: CHECKBOX] (val x: Self) extends AnyVal {
+  extension [Self <: CHECKBOX](x: Self) {
     
-    @scala.inline
-    def setCHECKBOX(value: checkbox_): Self = StObject.set(x, "CHECKBOX", value.asInstanceOf[js.Any])
+    inline def setCHECKBOX(value: checkbox_): Self = StObject.set(x, "CHECKBOX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNORMAL(value: normal_): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
+    inline def setNORMAL(value: normal_): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRADIO(value: radio_): Self = StObject.set(x, "RADIO", value.asInstanceOf[js.Any])
+    inline def setRADIO(value: radio_): Self = StObject.set(x, "RADIO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSEPARATOR(value: separator_): Self = StObject.set(x, "SEPARATOR", value.asInstanceOf[js.Any])
+    inline def setSEPARATOR(value: separator_): Self = StObject.set(x, "SEPARATOR", value.asInstanceOf[js.Any])
   }
 }

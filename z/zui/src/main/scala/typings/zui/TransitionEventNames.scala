@@ -10,16 +10,13 @@ trait TransitionEventNames extends StObject {
 }
 object TransitionEventNames {
   
-  @scala.inline
-  def apply(end: String): TransitionEventNames = {
+  inline def apply(end: String): TransitionEventNames = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionEventNames]
   }
   
-  @scala.inline
-  implicit class TransitionEventNamesMutableBuilder[Self <: TransitionEventNames] (val x: Self) extends AnyVal {
+  extension [Self <: TransitionEventNames](x: Self) {
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait TypeofnonWitnessUtxo extends StObject {
 }
 object TypeofnonWitnessUtxo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canAdd: (js.Any, js.Any) => Boolean,
     check: js.Any => /* is bip174.bip174/src/lib/interfaces.NonWitnessUtxo */ Boolean,
     decode: KeyValue => NonWitnessUtxo,
@@ -32,22 +31,16 @@ object TypeofnonWitnessUtxo {
     __obj.asInstanceOf[TypeofnonWitnessUtxo]
   }
   
-  @scala.inline
-  implicit class TypeofnonWitnessUtxoMutableBuilder[Self <: TypeofnonWitnessUtxo] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofnonWitnessUtxo](x: Self) {
     
-    @scala.inline
-    def setCanAdd(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
+    inline def setCanAdd(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.NonWitnessUtxo */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+    inline def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.NonWitnessUtxo */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecode(value: KeyValue => NonWitnessUtxo): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+    inline def setDecode(value: KeyValue => NonWitnessUtxo): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncode(value: NonWitnessUtxo => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    inline def setEncode(value: NonWitnessUtxo => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpected(value: /* "Buffer" */ String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: /* "Buffer" */ String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
   }
 }

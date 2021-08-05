@@ -35,49 +35,35 @@ trait CreateLocationS3Request extends StObject {
 }
 object CreateLocationS3Request {
   
-  @scala.inline
-  def apply(S3BucketArn: S3BucketArn, S3Config: S3Config): CreateLocationS3Request = {
+  inline def apply(S3BucketArn: S3BucketArn, S3Config: S3Config): CreateLocationS3Request = {
     val __obj = js.Dynamic.literal(S3BucketArn = S3BucketArn.asInstanceOf[js.Any], S3Config = S3Config.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLocationS3Request]
   }
   
-  @scala.inline
-  implicit class CreateLocationS3RequestMutableBuilder[Self <: CreateLocationS3Request] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLocationS3Request](x: Self) {
     
-    @scala.inline
-    def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
+    inline def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentArnsUndefined: Self = StObject.set(x, "AgentArns", js.undefined)
+    inline def setAgentArnsUndefined: Self = StObject.set(x, "AgentArns", js.undefined)
     
-    @scala.inline
-    def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
+    inline def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
     
-    @scala.inline
-    def setS3BucketArn(value: S3BucketArn): Self = StObject.set(x, "S3BucketArn", value.asInstanceOf[js.Any])
+    inline def setS3BucketArn(value: S3BucketArn): Self = StObject.set(x, "S3BucketArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Config(value: S3Config): Self = StObject.set(x, "S3Config", value.asInstanceOf[js.Any])
+    inline def setS3Config(value: S3Config): Self = StObject.set(x, "S3Config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3StorageClass(value: S3StorageClass): Self = StObject.set(x, "S3StorageClass", value.asInstanceOf[js.Any])
+    inline def setS3StorageClass(value: S3StorageClass): Self = StObject.set(x, "S3StorageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3StorageClassUndefined: Self = StObject.set(x, "S3StorageClass", js.undefined)
+    inline def setS3StorageClassUndefined: Self = StObject.set(x, "S3StorageClass", js.undefined)
     
-    @scala.inline
-    def setSubdirectory(value: S3Subdirectory): Self = StObject.set(x, "Subdirectory", value.asInstanceOf[js.Any])
+    inline def setSubdirectory(value: S3Subdirectory): Self = StObject.set(x, "Subdirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdirectoryUndefined: Self = StObject.set(x, "Subdirectory", js.undefined)
+    inline def setSubdirectoryUndefined: Self = StObject.set(x, "Subdirectory", js.undefined)
     
-    @scala.inline
-    def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

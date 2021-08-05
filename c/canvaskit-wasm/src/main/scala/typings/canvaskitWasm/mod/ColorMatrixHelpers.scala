@@ -48,8 +48,7 @@ trait ColorMatrixHelpers extends StObject {
 }
 object ColorMatrixHelpers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     concat: (SkColorMatrix, SkColorMatrix) => SkColorMatrix,
     identity: () => SkColorMatrix,
     postTranslate: (SkColorMatrix, Double, Double, Double, Double) => SkColorMatrix,
@@ -60,22 +59,16 @@ object ColorMatrixHelpers {
     __obj.asInstanceOf[ColorMatrixHelpers]
   }
   
-  @scala.inline
-  implicit class ColorMatrixHelpersMutableBuilder[Self <: ColorMatrixHelpers] (val x: Self) extends AnyVal {
+  extension [Self <: ColorMatrixHelpers](x: Self) {
     
-    @scala.inline
-    def setConcat(value: (SkColorMatrix, SkColorMatrix) => SkColorMatrix): Self = StObject.set(x, "concat", js.Any.fromFunction2(value))
+    inline def setConcat(value: (SkColorMatrix, SkColorMatrix) => SkColorMatrix): Self = StObject.set(x, "concat", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIdentity(value: () => SkColorMatrix): Self = StObject.set(x, "identity", js.Any.fromFunction0(value))
+    inline def setIdentity(value: () => SkColorMatrix): Self = StObject.set(x, "identity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPostTranslate(value: (SkColorMatrix, Double, Double, Double, Double) => SkColorMatrix): Self = StObject.set(x, "postTranslate", js.Any.fromFunction5(value))
+    inline def setPostTranslate(value: (SkColorMatrix, Double, Double, Double, Double) => SkColorMatrix): Self = StObject.set(x, "postTranslate", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setRotated(value: (Double, Double, Double) => SkColorMatrix): Self = StObject.set(x, "rotated", js.Any.fromFunction3(value))
+    inline def setRotated(value: (Double, Double, Double) => SkColorMatrix): Self = StObject.set(x, "rotated", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setScaled(value: (Double, Double, Double, Double) => SkColorMatrix): Self = StObject.set(x, "scaled", js.Any.fromFunction4(value))
+    inline def setScaled(value: (Double, Double, Double, Double) => SkColorMatrix): Self = StObject.set(x, "scaled", js.Any.fromFunction4(value))
   }
 }

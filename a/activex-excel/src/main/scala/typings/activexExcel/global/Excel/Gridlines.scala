@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Gridlines")
 @js.native
-class Gridlines protected ()
+/* private */ class Gridlines ()
   extends StObject
      with typings.activexExcel.Excel.Gridlines {
   
@@ -23,7 +23,7 @@ class Gridlines protected ()
   /* CompleteClass */
   override def Delete(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Gridlines_typekey")
   var ExcelDotGridlines_typekey: typings.activexExcel.Excel.Gridlines = js.native
   

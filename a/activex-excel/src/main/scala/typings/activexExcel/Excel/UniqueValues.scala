@@ -25,7 +25,7 @@ trait UniqueValues extends StObject {
   
   var DupeUnique: XlDupeUnique
   
-  @JSName("Excel.UniqueValues_typekey")
+  /* private */ @JSName("Excel.UniqueValues_typekey")
   var ExcelDotUniqueValues_typekey: UniqueValues
   
   val Font: typings.activexExcel.Excel.Font
@@ -54,8 +54,7 @@ trait UniqueValues extends StObject {
 }
 object UniqueValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     AppliesTo: Range,
     Borders: Borders,
@@ -80,64 +79,44 @@ object UniqueValues {
     __obj.asInstanceOf[UniqueValues]
   }
   
-  @scala.inline
-  implicit class UniqueValuesMutableBuilder[Self <: UniqueValues] (val x: Self) extends AnyVal {
+  extension [Self <: UniqueValues](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppliesTo(value: Range): Self = StObject.set(x, "AppliesTo", value.asInstanceOf[js.Any])
+    inline def setAppliesTo(value: Range): Self = StObject.set(x, "AppliesTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
+    inline def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDupeUnique(value: XlDupeUnique): Self = StObject.set(x, "DupeUnique", value.asInstanceOf[js.Any])
+    inline def setDupeUnique(value: XlDupeUnique): Self = StObject.set(x, "DupeUnique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotUniqueValues_typekey(value: UniqueValues): Self = StObject.set(x, "Excel.UniqueValues_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotUniqueValues_typekey(value: UniqueValues): Self = StObject.set(x, "Excel.UniqueValues_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
+    inline def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifyAppliesToRange(value: Range => Unit): Self = StObject.set(x, "ModifyAppliesToRange", js.Any.fromFunction1(value))
+    inline def setModifyAppliesToRange(value: Range => Unit): Self = StObject.set(x, "ModifyAppliesToRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNumberFormat(value: String): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: String): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPTCondition(value: Boolean): Self = StObject.set(x, "PTCondition", value.asInstanceOf[js.Any])
+    inline def setPTCondition(value: Boolean): Self = StObject.set(x, "PTCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeType(value: XlPivotConditionScope): Self = StObject.set(x, "ScopeType", value.asInstanceOf[js.Any])
+    inline def setScopeType(value: XlPivotConditionScope): Self = StObject.set(x, "ScopeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFirstPriority(value: () => Unit): Self = StObject.set(x, "SetFirstPriority", js.Any.fromFunction0(value))
+    inline def setSetFirstPriority(value: () => Unit): Self = StObject.set(x, "SetFirstPriority", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetLastPriority(value: () => Unit): Self = StObject.set(x, "SetLastPriority", js.Any.fromFunction0(value))
+    inline def setSetLastPriority(value: () => Unit): Self = StObject.set(x, "SetLastPriority", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopIfTrue(value: Boolean): Self = StObject.set(x, "StopIfTrue", value.asInstanceOf[js.Any])
+    inline def setStopIfTrue(value: Boolean): Self = StObject.set(x, "StopIfTrue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `8`): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: `8`): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

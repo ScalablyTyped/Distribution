@@ -17,23 +17,18 @@ trait Alter
 }
 object Alter {
   
-  @scala.inline
-  def apply(expr: js.Any, table: From): Alter = {
+  inline def apply(expr: js.Any, table: From): Alter = {
     val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("alter")
     __obj.asInstanceOf[Alter]
   }
   
-  @scala.inline
-  implicit class AlterMutableBuilder[Self <: Alter] (val x: Self) extends AnyVal {
+  extension [Self <: Alter](x: Self) {
     
-    @scala.inline
-    def setExpr(value: js.Any): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: js.Any): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTable(value: From): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: From): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: alter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: alter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -48,61 +48,43 @@ trait InstallationMedia extends StObject {
 }
 object InstallationMedia {
   
-  @scala.inline
-  def apply(): InstallationMedia = {
+  inline def apply(): InstallationMedia = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstallationMedia]
   }
   
-  @scala.inline
-  implicit class InstallationMediaMutableBuilder[Self <: InstallationMedia] (val x: Self) extends AnyVal {
+  extension [Self <: InstallationMedia](x: Self) {
     
-    @scala.inline
-    def setCustomAvailabilityZoneId(value: String): Self = StObject.set(x, "CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
+    inline def setCustomAvailabilityZoneId(value: String): Self = StObject.set(x, "CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomAvailabilityZoneIdUndefined: Self = StObject.set(x, "CustomAvailabilityZoneId", js.undefined)
+    inline def setCustomAvailabilityZoneIdUndefined: Self = StObject.set(x, "CustomAvailabilityZoneId", js.undefined)
     
-    @scala.inline
-    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineInstallationMediaPath(value: String): Self = StObject.set(x, "EngineInstallationMediaPath", value.asInstanceOf[js.Any])
+    inline def setEngineInstallationMediaPath(value: String): Self = StObject.set(x, "EngineInstallationMediaPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineInstallationMediaPathUndefined: Self = StObject.set(x, "EngineInstallationMediaPath", js.undefined)
+    inline def setEngineInstallationMediaPathUndefined: Self = StObject.set(x, "EngineInstallationMediaPath", js.undefined)
     
-    @scala.inline
-    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
+    inline def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
-    @scala.inline
-    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
+    inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
+    inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
-    @scala.inline
-    def setFailureCause(value: InstallationMediaFailureCause): Self = StObject.set(x, "FailureCause", value.asInstanceOf[js.Any])
+    inline def setFailureCause(value: InstallationMediaFailureCause): Self = StObject.set(x, "FailureCause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCauseUndefined: Self = StObject.set(x, "FailureCause", js.undefined)
+    inline def setFailureCauseUndefined: Self = StObject.set(x, "FailureCause", js.undefined)
     
-    @scala.inline
-    def setInstallationMediaId(value: String): Self = StObject.set(x, "InstallationMediaId", value.asInstanceOf[js.Any])
+    inline def setInstallationMediaId(value: String): Self = StObject.set(x, "InstallationMediaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationMediaIdUndefined: Self = StObject.set(x, "InstallationMediaId", js.undefined)
+    inline def setInstallationMediaIdUndefined: Self = StObject.set(x, "InstallationMediaId", js.undefined)
     
-    @scala.inline
-    def setOSInstallationMediaPath(value: String): Self = StObject.set(x, "OSInstallationMediaPath", value.asInstanceOf[js.Any])
+    inline def setOSInstallationMediaPath(value: String): Self = StObject.set(x, "OSInstallationMediaPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOSInstallationMediaPathUndefined: Self = StObject.set(x, "OSInstallationMediaPath", js.undefined)
+    inline def setOSInstallationMediaPathUndefined: Self = StObject.set(x, "OSInstallationMediaPath", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

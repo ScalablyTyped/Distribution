@@ -19,23 +19,18 @@ trait ImportAttribute_
 }
 object ImportAttribute_ {
   
-  @scala.inline
-  def apply(key: Identifier_ | StringLiteral_, value: StringLiteral_): ImportAttribute_ = {
+  inline def apply(key: Identifier_ | StringLiteral_, value: StringLiteral_): ImportAttribute_ = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ImportAttribute")
     __obj.asInstanceOf[ImportAttribute_]
   }
   
-  @scala.inline
-  implicit class ImportAttribute_MutableBuilder[Self <: ImportAttribute_] (val x: Self) extends AnyVal {
+  extension [Self <: ImportAttribute_](x: Self) {
     
-    @scala.inline
-    def setKey(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ImportAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ImportAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: StringLiteral_): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: StringLiteral_): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

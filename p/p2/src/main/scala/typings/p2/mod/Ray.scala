@@ -45,18 +45,15 @@ object Ray {
   @JSImport("p2", "Ray.ALL")
   @js.native
   def ALL: Double = js.native
-  @scala.inline
-  def ALL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
+  inline def ALL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Ray.ANY")
   @js.native
   def ANY: Double = js.native
-  @scala.inline
-  def ANY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANY")(x.asInstanceOf[js.Any])
+  inline def ANY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANY")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Ray.CLOSEST")
   @js.native
   def CLOSEST: Double = js.native
-  @scala.inline
-  def CLOSEST_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSEST")(x.asInstanceOf[js.Any])
+  inline def CLOSEST_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSEST")(x.asInstanceOf[js.Any])
 }

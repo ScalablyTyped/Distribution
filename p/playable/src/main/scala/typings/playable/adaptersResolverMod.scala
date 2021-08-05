@@ -12,6 +12,5 @@ object adaptersResolverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resolveAdapters(mediaStreams: js.Array[IPlayableSource], availableAdapters: js.Array[IPlaybackAdapter]): js.Array[IPlaybackAdapter] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAdapters")(mediaStreams.asInstanceOf[js.Any], availableAdapters.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPlaybackAdapter]]
+  inline def resolveAdapters(mediaStreams: js.Array[IPlayableSource], availableAdapters: js.Array[IPlaybackAdapter]): js.Array[IPlaybackAdapter] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAdapters")(mediaStreams.asInstanceOf[js.Any], availableAdapters.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPlaybackAdapter]]
 }

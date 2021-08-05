@@ -18,19 +18,15 @@ trait DeactivateMFADeviceRequest extends StObject {
 }
 object DeactivateMFADeviceRequest {
   
-  @scala.inline
-  def apply(SerialNumber: serialNumberType, UserName: existingUserNameType): DeactivateMFADeviceRequest = {
+  inline def apply(SerialNumber: serialNumberType, UserName: existingUserNameType): DeactivateMFADeviceRequest = {
     val __obj = js.Dynamic.literal(SerialNumber = SerialNumber.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeactivateMFADeviceRequest]
   }
   
-  @scala.inline
-  implicit class DeactivateMFADeviceRequestMutableBuilder[Self <: DeactivateMFADeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeactivateMFADeviceRequest](x: Self) {
     
-    @scala.inline
-    def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

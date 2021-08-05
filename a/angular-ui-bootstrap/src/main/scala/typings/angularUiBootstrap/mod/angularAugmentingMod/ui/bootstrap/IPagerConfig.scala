@@ -36,37 +36,27 @@ trait IPagerConfig extends StObject {
 }
 object IPagerConfig {
   
-  @scala.inline
-  def apply(): IPagerConfig = {
+  inline def apply(): IPagerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPagerConfig]
   }
   
-  @scala.inline
-  implicit class IPagerConfigMutableBuilder[Self <: IPagerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IPagerConfig](x: Self) {
     
-    @scala.inline
-    def setAlign(value: Boolean): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: Boolean): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
+    inline def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
+    inline def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
     
-    @scala.inline
-    def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
+    inline def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTextUndefined: Self = StObject.set(x, "nextText", js.undefined)
+    inline def setNextTextUndefined: Self = StObject.set(x, "nextText", js.undefined)
     
-    @scala.inline
-    def setPreviousText(value: String): Self = StObject.set(x, "previousText", value.asInstanceOf[js.Any])
+    inline def setPreviousText(value: String): Self = StObject.set(x, "previousText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousTextUndefined: Self = StObject.set(x, "previousText", js.undefined)
+    inline def setPreviousTextUndefined: Self = StObject.set(x, "previousText", js.undefined)
   }
 }

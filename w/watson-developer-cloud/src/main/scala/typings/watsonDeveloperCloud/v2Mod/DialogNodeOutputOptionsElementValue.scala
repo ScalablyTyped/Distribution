@@ -12,19 +12,15 @@ trait DialogNodeOutputOptionsElementValue extends StObject {
 }
 object DialogNodeOutputOptionsElementValue {
   
-  @scala.inline
-  def apply(): DialogNodeOutputOptionsElementValue = {
+  inline def apply(): DialogNodeOutputOptionsElementValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogNodeOutputOptionsElementValue]
   }
   
-  @scala.inline
-  implicit class DialogNodeOutputOptionsElementValueMutableBuilder[Self <: DialogNodeOutputOptionsElementValue] (val x: Self) extends AnyVal {
+  extension [Self <: DialogNodeOutputOptionsElementValue](x: Self) {
     
-    @scala.inline
-    def setInput(value: MessageInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: MessageInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
   }
 }

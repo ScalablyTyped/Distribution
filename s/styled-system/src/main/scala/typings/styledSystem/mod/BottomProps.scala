@@ -16,25 +16,19 @@ trait BottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends S
 }
 object BottomProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BottomProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BottomProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BottomProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class BottomPropsMutableBuilder[Self <: BottomProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BottomProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: BottomProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BottomProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setBottom(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomNull: Self = StObject.set(x, "bottom", null)
+    inline def setBottomNull: Self = StObject.set(x, "bottom", null)
     
-    @scala.inline
-    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    @scala.inline
-    def setBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "bottom", js.Array(value :_*))
+    inline def setBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "bottom", js.Array(value :_*))
   }
 }

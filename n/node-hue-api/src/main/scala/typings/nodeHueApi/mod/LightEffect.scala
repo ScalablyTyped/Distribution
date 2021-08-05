@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LightEffect extends StObject
 object LightEffect {
   
-  @scala.inline
-  def colorloop: typings.nodeHueApi.nodeHueApiStrings.colorloop = "colorloop".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.colorloop]
+  inline def colorloop: typings.nodeHueApi.nodeHueApiStrings.colorloop = "colorloop".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.colorloop]
   
-  @scala.inline
-  def none: typings.nodeHueApi.nodeHueApiStrings.none = "none".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.none]
+  inline def none: typings.nodeHueApi.nodeHueApiStrings.none = "none".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.none]
 }

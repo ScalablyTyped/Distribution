@@ -46,115 +46,79 @@ trait PartialListStyle extends StObject {
 }
 object PartialListStyle {
   
-  @scala.inline
-  def apply(): PartialListStyle = {
+  inline def apply(): PartialListStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialListStyle]
   }
   
-  @scala.inline
-  implicit class PartialListStyleMutableBuilder[Self <: PartialListStyle] (val x: Self) extends AnyVal {
+  extension [Self <: PartialListStyle](x: Self) {
     
-    @scala.inline
-    def setArrow(value: TextStyle): Self = StObject.set(x, "Arrow", value.asInstanceOf[js.Any])
+    inline def setArrow(value: TextStyle): Self = StObject.set(x, "Arrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowUndefined: Self = StObject.set(x, "Arrow", js.undefined)
+    inline def setArrowUndefined: Self = StObject.set(x, "Arrow", js.undefined)
     
-    @scala.inline
-    def setArrowV(value: TextStyle): Self = StObject.set(x, "ArrowV", value.asInstanceOf[js.Any])
+    inline def setArrowV(value: TextStyle): Self = StObject.set(x, "ArrowV", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowVUndefined: Self = StObject.set(x, "ArrowV", js.undefined)
+    inline def setArrowVUndefined: Self = StObject.set(x, "ArrowV", js.undefined)
     
-    @scala.inline
-    def setBody(value: ViewStyle): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: ViewStyle): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyBottomLine(value: ViewStyle): Self = StObject.set(x, "BodyBottomLine", value.asInstanceOf[js.Any])
+    inline def setBodyBottomLine(value: ViewStyle): Self = StObject.set(x, "BodyBottomLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyBottomLineUndefined: Self = StObject.set(x, "BodyBottomLine", js.undefined)
+    inline def setBodyBottomLineUndefined: Self = StObject.set(x, "BodyBottomLine", js.undefined)
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
-    @scala.inline
-    def setBrief(value: ViewStyle): Self = StObject.set(x, "Brief", value.asInstanceOf[js.Any])
+    inline def setBrief(value: ViewStyle): Self = StObject.set(x, "Brief", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBriefText(value: TextStyle): Self = StObject.set(x, "BriefText", value.asInstanceOf[js.Any])
+    inline def setBriefText(value: TextStyle): Self = StObject.set(x, "BriefText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBriefTextUndefined: Self = StObject.set(x, "BriefText", js.undefined)
+    inline def setBriefTextUndefined: Self = StObject.set(x, "BriefText", js.undefined)
     
-    @scala.inline
-    def setBriefUndefined: Self = StObject.set(x, "Brief", js.undefined)
+    inline def setBriefUndefined: Self = StObject.set(x, "Brief", js.undefined)
     
-    @scala.inline
-    def setColumn(value: ViewStyle): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: ViewStyle): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setContent(value: TextStyle): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: TextStyle): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    @scala.inline
-    def setExtra(value: TextStyle): Self = StObject.set(x, "Extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: TextStyle): Self = StObject.set(x, "Extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraUndefined: Self = StObject.set(x, "Extra", js.undefined)
+    inline def setExtraUndefined: Self = StObject.set(x, "Extra", js.undefined)
     
-    @scala.inline
-    def setFooter(value: TextStyle): Self = StObject.set(x, "Footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: TextStyle): Self = StObject.set(x, "Footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterUndefined: Self = StObject.set(x, "Footer", js.undefined)
+    inline def setFooterUndefined: Self = StObject.set(x, "Footer", js.undefined)
     
-    @scala.inline
-    def setHeader(value: TextStyle): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: TextStyle): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "Header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "Header", js.undefined)
     
-    @scala.inline
-    def setItem(value: ViewStyle): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ViewStyle): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
     
-    @scala.inline
-    def setLine(value: ViewStyle): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
+    inline def setLine(value: ViewStyle): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "Line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "Line", js.undefined)
     
-    @scala.inline
-    def setMultipleLine(value: ViewStyle): Self = StObject.set(x, "multipleLine", value.asInstanceOf[js.Any])
+    inline def setMultipleLine(value: ViewStyle): Self = StObject.set(x, "multipleLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleLineUndefined: Self = StObject.set(x, "multipleLine", js.undefined)
+    inline def setMultipleLineUndefined: Self = StObject.set(x, "multipleLine", js.undefined)
     
-    @scala.inline
-    def setMultipleThumb(value: ImageStyle): Self = StObject.set(x, "multipleThumb", value.asInstanceOf[js.Any])
+    inline def setMultipleThumb(value: ImageStyle): Self = StObject.set(x, "multipleThumb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleThumbUndefined: Self = StObject.set(x, "multipleThumb", js.undefined)
+    inline def setMultipleThumbUndefined: Self = StObject.set(x, "multipleThumb", js.undefined)
     
-    @scala.inline
-    def setThumb(value: ImageStyle): Self = StObject.set(x, "Thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: ImageStyle): Self = StObject.set(x, "Thumb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbUndefined: Self = StObject.set(x, "Thumb", js.undefined)
+    inline def setThumbUndefined: Self = StObject.set(x, "Thumb", js.undefined)
     
-    @scala.inline
-    def setUnderlayColor(value: ViewStyle): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
+    inline def setUnderlayColor(value: ViewStyle): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
+    inline def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
   }
 }

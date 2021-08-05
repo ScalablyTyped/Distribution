@@ -25,8 +25,7 @@ trait XErrorListener
 }
 object XErrorListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     errorOccured: ErrorEvent => Unit,
@@ -37,10 +36,8 @@ object XErrorListener {
     __obj.asInstanceOf[XErrorListener]
   }
   
-  @scala.inline
-  implicit class XErrorListenerMutableBuilder[Self <: XErrorListener] (val x: Self) extends AnyVal {
+  extension [Self <: XErrorListener](x: Self) {
     
-    @scala.inline
-    def setErrorOccured(value: ErrorEvent => Unit): Self = StObject.set(x, "errorOccured", js.Any.fromFunction1(value))
+    inline def setErrorOccured(value: ErrorEvent => Unit): Self = StObject.set(x, "errorOccured", js.Any.fromFunction1(value))
   }
 }

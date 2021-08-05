@@ -18,25 +18,19 @@ trait PartialSentenceOptions extends StObject {
 }
 object PartialSentenceOptions {
   
-  @scala.inline
-  def apply(): PartialSentenceOptions = {
+  inline def apply(): PartialSentenceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialSentenceOptions]
   }
   
-  @scala.inline
-  implicit class PartialSentenceOptionsMutableBuilder[Self <: PartialSentenceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialSentenceOptions](x: Self) {
     
-    @scala.inline
-    def setPunctuation(value: Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
+    inline def setPunctuation(value: Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPunctuationUndefined: Self = StObject.set(x, "punctuation", js.undefined)
+    inline def setPunctuationUndefined: Self = StObject.set(x, "punctuation", js.undefined)
     
-    @scala.inline
-    def setWords(value: Double): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: Double): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+    inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
   }
 }

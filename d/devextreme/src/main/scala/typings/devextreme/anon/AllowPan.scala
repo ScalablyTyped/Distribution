@@ -14,31 +14,23 @@ trait AllowPan extends StObject {
 }
 object AllowPan {
   
-  @scala.inline
-  def apply(): AllowPan = {
+  inline def apply(): AllowPan = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowPan]
   }
   
-  @scala.inline
-  implicit class AllowPanMutableBuilder[Self <: AllowPan] (val x: Self) extends AnyVal {
+  extension [Self <: AllowPan](x: Self) {
     
-    @scala.inline
-    def setAllowPan(value: Boolean): Self = StObject.set(x, "allowPan", value.asInstanceOf[js.Any])
+    inline def setAllowPan(value: Boolean): Self = StObject.set(x, "allowPan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPanUndefined: Self = StObject.set(x, "allowPan", js.undefined)
+    inline def setAllowPanUndefined: Self = StObject.set(x, "allowPan", js.undefined)
     
-    @scala.inline
-    def setAllowSelection(value: Boolean): Self = StObject.set(x, "allowSelection", value.asInstanceOf[js.Any])
+    inline def setAllowSelection(value: Boolean): Self = StObject.set(x, "allowSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSelectionUndefined: Self = StObject.set(x, "allowSelection", js.undefined)
+    inline def setAllowSelectionUndefined: Self = StObject.set(x, "allowSelection", js.undefined)
     
-    @scala.inline
-    def setAllowZoom(value: Boolean): Self = StObject.set(x, "allowZoom", value.asInstanceOf[js.Any])
+    inline def setAllowZoom(value: Boolean): Self = StObject.set(x, "allowZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowZoomUndefined: Self = StObject.set(x, "allowZoom", js.undefined)
+    inline def setAllowZoomUndefined: Self = StObject.set(x, "allowZoom", js.undefined)
   }
 }

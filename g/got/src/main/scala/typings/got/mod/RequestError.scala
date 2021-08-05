@@ -19,10 +19,8 @@ object RequestError {
   @js.native
   val ^ : Instantiable0[RequestError] = js.native
   
-  @scala.inline
-  implicit class RequestErrorMutableBuilder[Self <: RequestError] (val x: Self) extends AnyVal {
+  extension [Self <: RequestError](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.got.gotStrings.RequestError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.got.gotStrings.RequestError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

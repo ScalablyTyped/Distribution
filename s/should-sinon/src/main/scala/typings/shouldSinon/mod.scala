@@ -117,17 +117,14 @@ object mod {
   }
   object SinonSpyCallApi {
     
-    @scala.inline
-    def apply(should: ShouldSinonAssertion): SinonSpyCallApi = {
+    inline def apply(should: ShouldSinonAssertion): SinonSpyCallApi = {
       val __obj = js.Dynamic.literal(should = should.asInstanceOf[js.Any])
       __obj.asInstanceOf[SinonSpyCallApi]
     }
     
-    @scala.inline
-    implicit class SinonSpyCallApiMutableBuilder[Self <: SinonSpyCallApi] (val x: Self) extends AnyVal {
+    extension [Self <: SinonSpyCallApi](x: Self) {
       
-      @scala.inline
-      def setShould(value: ShouldSinonAssertion): Self = StObject.set(x, "should", value.asInstanceOf[js.Any])
+      inline def setShould(value: ShouldSinonAssertion): Self = StObject.set(x, "should", value.asInstanceOf[js.Any])
     }
   }
 }

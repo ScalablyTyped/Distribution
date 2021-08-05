@@ -10,6 +10,5 @@ object global {
   @JSGlobal("Please")
   @js.native
   def Please: typings.pleasejs.PleaseJS.Please = js.native
-  @scala.inline
-  def Please_=(x: Please): Unit = js.Dynamic.global.updateDynamic("Please")(x.asInstanceOf[js.Any])
+  inline def Please_=(x: Please): Unit = js.Dynamic.global.updateDynamic("Please")(x.asInstanceOf[js.Any])
 }

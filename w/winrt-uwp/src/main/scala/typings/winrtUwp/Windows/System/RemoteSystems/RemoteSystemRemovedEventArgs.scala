@@ -12,16 +12,13 @@ trait RemoteSystemRemovedEventArgs extends StObject {
 }
 object RemoteSystemRemovedEventArgs {
   
-  @scala.inline
-  def apply(remoteSystemId: String): RemoteSystemRemovedEventArgs = {
+  inline def apply(remoteSystemId: String): RemoteSystemRemovedEventArgs = {
     val __obj = js.Dynamic.literal(remoteSystemId = remoteSystemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteSystemRemovedEventArgs]
   }
   
-  @scala.inline
-  implicit class RemoteSystemRemovedEventArgsMutableBuilder[Self <: RemoteSystemRemovedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteSystemRemovedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRemoteSystemId(value: String): Self = StObject.set(x, "remoteSystemId", value.asInstanceOf[js.Any])
+    inline def setRemoteSystemId(value: String): Self = StObject.set(x, "remoteSystemId", value.asInstanceOf[js.Any])
   }
 }

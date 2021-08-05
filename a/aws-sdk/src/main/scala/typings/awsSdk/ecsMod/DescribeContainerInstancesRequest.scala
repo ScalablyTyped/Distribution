@@ -23,34 +23,25 @@ trait DescribeContainerInstancesRequest extends StObject {
 }
 object DescribeContainerInstancesRequest {
   
-  @scala.inline
-  def apply(containerInstances: StringList): DescribeContainerInstancesRequest = {
+  inline def apply(containerInstances: StringList): DescribeContainerInstancesRequest = {
     val __obj = js.Dynamic.literal(containerInstances = containerInstances.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeContainerInstancesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeContainerInstancesRequestMutableBuilder[Self <: DescribeContainerInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeContainerInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setContainerInstances(value: StringList): Self = StObject.set(x, "containerInstances", value.asInstanceOf[js.Any])
+    inline def setContainerInstances(value: StringList): Self = StObject.set(x, "containerInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerInstancesVarargs(value: String*): Self = StObject.set(x, "containerInstances", js.Array(value :_*))
+    inline def setContainerInstancesVarargs(value: String*): Self = StObject.set(x, "containerInstances", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: ContainerInstanceFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: ContainerInstanceFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: ContainerInstanceField*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: ContainerInstanceField*): Self = StObject.set(x, "include", js.Array(value :_*))
   }
 }

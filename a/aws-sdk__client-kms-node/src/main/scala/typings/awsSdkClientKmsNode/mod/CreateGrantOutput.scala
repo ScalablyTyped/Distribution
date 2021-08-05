@@ -10,8 +10,7 @@ trait CreateGrantOutput
      with typings.awsSdkClientKmsNode.typesCreateGrantOutputMod.CreateGrantOutput
 object CreateGrantOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): CreateGrantOutput = {
+  inline def apply($metadata: ResponseMetadata): CreateGrantOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGrantOutput]
   }

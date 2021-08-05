@@ -13,19 +13,15 @@ trait AddNotificationChannelsResponse extends StObject {
 }
 object AddNotificationChannelsResponse {
   
-  @scala.inline
-  def apply(): AddNotificationChannelsResponse = {
+  inline def apply(): AddNotificationChannelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddNotificationChannelsResponse]
   }
   
-  @scala.inline
-  implicit class AddNotificationChannelsResponseMutableBuilder[Self <: AddNotificationChannelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddNotificationChannelsResponse](x: Self) {
     
-    @scala.inline
-    def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "notificationConfiguration", value.asInstanceOf[js.Any])
+    inline def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "notificationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationConfigurationUndefined: Self = StObject.set(x, "notificationConfiguration", js.undefined)
+    inline def setNotificationConfigurationUndefined: Self = StObject.set(x, "notificationConfiguration", js.undefined)
   }
 }

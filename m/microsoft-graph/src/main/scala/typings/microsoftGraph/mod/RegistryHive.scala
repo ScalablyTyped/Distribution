@@ -19,30 +19,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RegistryHive extends StObject
 object RegistryHive {
   
-  @scala.inline
-  def currentConfig: typings.microsoftGraph.microsoftGraphStrings.currentConfig = "currentConfig".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.currentConfig]
+  inline def currentConfig: typings.microsoftGraph.microsoftGraphStrings.currentConfig = "currentConfig".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.currentConfig]
   
-  @scala.inline
-  def currentUser: typings.microsoftGraph.microsoftGraphStrings.currentUser = "currentUser".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.currentUser]
+  inline def currentUser: typings.microsoftGraph.microsoftGraphStrings.currentUser = "currentUser".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.currentUser]
   
-  @scala.inline
-  def localMachineSam: typings.microsoftGraph.microsoftGraphStrings.localMachineSam = "localMachineSam".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localMachineSam]
+  inline def localMachineSam: typings.microsoftGraph.microsoftGraphStrings.localMachineSam = "localMachineSam".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localMachineSam]
   
-  @scala.inline
-  def localMachineSecurity: typings.microsoftGraph.microsoftGraphStrings.localMachineSecurity = "localMachineSecurity".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localMachineSecurity]
+  inline def localMachineSecurity: typings.microsoftGraph.microsoftGraphStrings.localMachineSecurity = "localMachineSecurity".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localMachineSecurity]
   
-  @scala.inline
-  def localMachineSoftware: typings.microsoftGraph.microsoftGraphStrings.localMachineSoftware = "localMachineSoftware".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localMachineSoftware]
+  inline def localMachineSoftware: typings.microsoftGraph.microsoftGraphStrings.localMachineSoftware = "localMachineSoftware".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localMachineSoftware]
   
-  @scala.inline
-  def localMachineSystem: typings.microsoftGraph.microsoftGraphStrings.localMachineSystem = "localMachineSystem".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localMachineSystem]
+  inline def localMachineSystem: typings.microsoftGraph.microsoftGraphStrings.localMachineSystem = "localMachineSystem".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localMachineSystem]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
   
-  @scala.inline
-  def usersDefault: typings.microsoftGraph.microsoftGraphStrings.usersDefault = "usersDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.usersDefault]
+  inline def usersDefault: typings.microsoftGraph.microsoftGraphStrings.usersDefault = "usersDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.usersDefault]
 }

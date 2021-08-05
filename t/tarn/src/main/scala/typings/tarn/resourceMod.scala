@@ -12,7 +12,7 @@ object resourceMod {
   class Resource[T] protected () extends StObject {
     def this(resource: T) = this()
     
-    var deferred: Deferred[Unit] = js.native
+    /* protected */ var deferred: Deferred[Unit] = js.native
     
     def promise: js.Promise[Unit] = js.native
     

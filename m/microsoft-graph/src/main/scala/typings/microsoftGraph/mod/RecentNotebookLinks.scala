@@ -14,31 +14,23 @@ trait RecentNotebookLinks extends StObject {
 }
 object RecentNotebookLinks {
   
-  @scala.inline
-  def apply(): RecentNotebookLinks = {
+  inline def apply(): RecentNotebookLinks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecentNotebookLinks]
   }
   
-  @scala.inline
-  implicit class RecentNotebookLinksMutableBuilder[Self <: RecentNotebookLinks] (val x: Self) extends AnyVal {
+  extension [Self <: RecentNotebookLinks](x: Self) {
     
-    @scala.inline
-    def setOneNoteClientUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "oneNoteClientUrl", value.asInstanceOf[js.Any])
+    inline def setOneNoteClientUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "oneNoteClientUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneNoteClientUrlNull: Self = StObject.set(x, "oneNoteClientUrl", null)
+    inline def setOneNoteClientUrlNull: Self = StObject.set(x, "oneNoteClientUrl", null)
     
-    @scala.inline
-    def setOneNoteClientUrlUndefined: Self = StObject.set(x, "oneNoteClientUrl", js.undefined)
+    inline def setOneNoteClientUrlUndefined: Self = StObject.set(x, "oneNoteClientUrl", js.undefined)
     
-    @scala.inline
-    def setOneNoteWebUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "oneNoteWebUrl", value.asInstanceOf[js.Any])
+    inline def setOneNoteWebUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "oneNoteWebUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneNoteWebUrlNull: Self = StObject.set(x, "oneNoteWebUrl", null)
+    inline def setOneNoteWebUrlNull: Self = StObject.set(x, "oneNoteWebUrl", null)
     
-    @scala.inline
-    def setOneNoteWebUrlUndefined: Self = StObject.set(x, "oneNoteWebUrl", js.undefined)
+    inline def setOneNoteWebUrlUndefined: Self = StObject.set(x, "oneNoteWebUrl", js.undefined)
   }
 }

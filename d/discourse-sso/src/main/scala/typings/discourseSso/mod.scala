@@ -33,8 +33,7 @@ object mod {
   }
   object DiscourseSSO {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       buildLoginString: UserParams => String,
       getNonce: String => String,
       validate: (String, String) => Boolean
@@ -43,17 +42,13 @@ object mod {
       __obj.asInstanceOf[DiscourseSSO]
     }
     
-    @scala.inline
-    implicit class DiscourseSSOMutableBuilder[Self <: DiscourseSSO] (val x: Self) extends AnyVal {
+    extension [Self <: DiscourseSSO](x: Self) {
       
-      @scala.inline
-      def setBuildLoginString(value: UserParams => String): Self = StObject.set(x, "buildLoginString", js.Any.fromFunction1(value))
+      inline def setBuildLoginString(value: UserParams => String): Self = StObject.set(x, "buildLoginString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNonce(value: String => String): Self = StObject.set(x, "getNonce", js.Any.fromFunction1(value))
+      inline def setGetNonce(value: String => String): Self = StObject.set(x, "getNonce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidate(value: (String, String) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+      inline def setValidate(value: (String, String) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     }
   }
   
@@ -81,71 +76,50 @@ object mod {
   }
   object UserParams {
     
-    @scala.inline
-    def apply(email: String, external_id: String, nonce: String): UserParams = {
+    inline def apply(email: String, external_id: String, nonce: String): UserParams = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], external_id = external_id.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserParams]
     }
     
-    @scala.inline
-    implicit class UserParamsMutableBuilder[Self <: UserParams] (val x: Self) extends AnyVal {
+    extension [Self <: UserParams](x: Self) {
       
-      @scala.inline
-      def setAdd_groups(value: js.Array[String]): Self = StObject.set(x, "add_groups", value.asInstanceOf[js.Any])
+      inline def setAdd_groups(value: js.Array[String]): Self = StObject.set(x, "add_groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdd_groupsUndefined: Self = StObject.set(x, "add_groups", js.undefined)
+      inline def setAdd_groupsUndefined: Self = StObject.set(x, "add_groups", js.undefined)
       
-      @scala.inline
-      def setAdd_groupsVarargs(value: String*): Self = StObject.set(x, "add_groups", js.Array(value :_*))
+      inline def setAdd_groupsVarargs(value: String*): Self = StObject.set(x, "add_groups", js.Array(value :_*))
       
-      @scala.inline
-      def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+      inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
+      inline def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
       
-      @scala.inline
-      def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
+      inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatar_urlUndefined: Self = StObject.set(x, "avatar_url", js.undefined)
+      inline def setAvatar_urlUndefined: Self = StObject.set(x, "avatar_url", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
+      inline def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModerator(value: Boolean): Self = StObject.set(x, "moderator", value.asInstanceOf[js.Any])
+      inline def setModerator(value: Boolean): Self = StObject.set(x, "moderator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeratorUndefined: Self = StObject.set(x, "moderator", js.undefined)
+      inline def setModeratorUndefined: Self = StObject.set(x, "moderator", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove_groups(value: js.Array[String]): Self = StObject.set(x, "remove_groups", value.asInstanceOf[js.Any])
+      inline def setRemove_groups(value: js.Array[String]): Self = StObject.set(x, "remove_groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove_groupsUndefined: Self = StObject.set(x, "remove_groups", js.undefined)
+      inline def setRemove_groupsUndefined: Self = StObject.set(x, "remove_groups", js.undefined)
       
-      @scala.inline
-      def setRemove_groupsVarargs(value: String*): Self = StObject.set(x, "remove_groups", js.Array(value :_*))
+      inline def setRemove_groupsVarargs(value: String*): Self = StObject.set(x, "remove_groups", js.Array(value :_*))
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
 }

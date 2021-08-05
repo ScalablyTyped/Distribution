@@ -19,15 +19,11 @@ trait ContentDistribution
      with _PlaceContentProperty
 object ContentDistribution {
   
-  @scala.inline
-  def `space-around`: typings.csstype.csstypeStrings.`space-around` = "space-around".asInstanceOf[typings.csstype.csstypeStrings.`space-around`]
+  inline def `space-around`: typings.csstype.csstypeStrings.`space-around` = "space-around".asInstanceOf[typings.csstype.csstypeStrings.`space-around`]
   
-  @scala.inline
-  def `space-between`: typings.csstype.csstypeStrings.`space-between` = "space-between".asInstanceOf[typings.csstype.csstypeStrings.`space-between`]
+  inline def `space-between`: typings.csstype.csstypeStrings.`space-between` = "space-between".asInstanceOf[typings.csstype.csstypeStrings.`space-between`]
   
-  @scala.inline
-  def `space-evenly`: typings.csstype.csstypeStrings.`space-evenly` = "space-evenly".asInstanceOf[typings.csstype.csstypeStrings.`space-evenly`]
+  inline def `space-evenly`: typings.csstype.csstypeStrings.`space-evenly` = "space-evenly".asInstanceOf[typings.csstype.csstypeStrings.`space-evenly`]
   
-  @scala.inline
-  def stretch: typings.csstype.csstypeStrings.stretch = "stretch".asInstanceOf[typings.csstype.csstypeStrings.stretch]
+  inline def stretch: typings.csstype.csstypeStrings.stretch = "stretch".asInstanceOf[typings.csstype.csstypeStrings.stretch]
 }

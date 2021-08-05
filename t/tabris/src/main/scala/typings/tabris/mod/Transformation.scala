@@ -38,49 +38,35 @@ trait Transformation extends StObject {
 }
 object Transformation {
   
-  @scala.inline
-  def apply(): Transformation = {
+  inline def apply(): Transformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Transformation]
   }
   
-  @scala.inline
-  implicit class TransformationMutableBuilder[Self <: Transformation] (val x: Self) extends AnyVal {
+  extension [Self <: Transformation](x: Self) {
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    @scala.inline
-    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+    inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
-    @scala.inline
-    def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
+    inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
     
-    @scala.inline
-    def setTranslationX(value: Double): Self = StObject.set(x, "translationX", value.asInstanceOf[js.Any])
+    inline def setTranslationX(value: Double): Self = StObject.set(x, "translationX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationXUndefined: Self = StObject.set(x, "translationX", js.undefined)
+    inline def setTranslationXUndefined: Self = StObject.set(x, "translationX", js.undefined)
     
-    @scala.inline
-    def setTranslationY(value: Double): Self = StObject.set(x, "translationY", value.asInstanceOf[js.Any])
+    inline def setTranslationY(value: Double): Self = StObject.set(x, "translationY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationYUndefined: Self = StObject.set(x, "translationY", js.undefined)
+    inline def setTranslationYUndefined: Self = StObject.set(x, "translationY", js.undefined)
     
-    @scala.inline
-    def setTranslationZ(value: Double): Self = StObject.set(x, "translationZ", value.asInstanceOf[js.Any])
+    inline def setTranslationZ(value: Double): Self = StObject.set(x, "translationZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationZUndefined: Self = StObject.set(x, "translationZ", js.undefined)
+    inline def setTranslationZUndefined: Self = StObject.set(x, "translationZ", js.undefined)
   }
 }

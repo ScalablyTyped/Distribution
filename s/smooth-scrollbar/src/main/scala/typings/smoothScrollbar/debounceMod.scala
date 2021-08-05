@@ -12,6 +12,5 @@ object debounceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def debounce(options: js.Any*): js.Function3[/* _proto */ js.Any, /* key */ String, /* descriptor */ PropertyDescriptor, Get] = ^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* _proto */ js.Any, /* key */ String, /* descriptor */ PropertyDescriptor, Get]]
+  inline def debounce(options: js.Any*): js.Function3[/* _proto */ js.Any, /* key */ String, /* descriptor */ PropertyDescriptor, Get] = ^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* _proto */ js.Any, /* key */ String, /* descriptor */ PropertyDescriptor, Get]]
 }

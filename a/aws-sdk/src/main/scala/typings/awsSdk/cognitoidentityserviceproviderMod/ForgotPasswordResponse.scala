@@ -13,19 +13,15 @@ trait ForgotPasswordResponse extends StObject {
 }
 object ForgotPasswordResponse {
   
-  @scala.inline
-  def apply(): ForgotPasswordResponse = {
+  inline def apply(): ForgotPasswordResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForgotPasswordResponse]
   }
   
-  @scala.inline
-  implicit class ForgotPasswordResponseMutableBuilder[Self <: ForgotPasswordResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ForgotPasswordResponse](x: Self) {
     
-    @scala.inline
-    def setCodeDeliveryDetails(value: CodeDeliveryDetailsType): Self = StObject.set(x, "CodeDeliveryDetails", value.asInstanceOf[js.Any])
+    inline def setCodeDeliveryDetails(value: CodeDeliveryDetailsType): Self = StObject.set(x, "CodeDeliveryDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeDeliveryDetailsUndefined: Self = StObject.set(x, "CodeDeliveryDetails", js.undefined)
+    inline def setCodeDeliveryDetailsUndefined: Self = StObject.set(x, "CodeDeliveryDetails", js.undefined)
   }
 }

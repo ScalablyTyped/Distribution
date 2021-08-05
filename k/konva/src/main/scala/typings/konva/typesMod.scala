@@ -151,26 +151,20 @@ object typesMod {
   }
   object IFrame {
     
-    @scala.inline
-    def apply(frameRate: Double, lastTime: Double, time: Double, timeDiff: Double): IFrame = {
+    inline def apply(frameRate: Double, lastTime: Double, time: Double, timeDiff: Double): IFrame = {
       val __obj = js.Dynamic.literal(frameRate = frameRate.asInstanceOf[js.Any], lastTime = lastTime.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], timeDiff = timeDiff.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFrame]
     }
     
-    @scala.inline
-    implicit class IFrameMutableBuilder[Self <: IFrame] (val x: Self) extends AnyVal {
+    extension [Self <: IFrame](x: Self) {
       
-      @scala.inline
-      def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+      inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastTime(value: Double): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
+      inline def setLastTime(value: Double): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeDiff(value: Double): Self = StObject.set(x, "timeDiff", value.asInstanceOf[js.Any])
+      inline def setTimeDiff(value: Double): Self = StObject.set(x, "timeDiff", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,26 +180,20 @@ object typesMod {
   }
   object IRect {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): IRect = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): IRect = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRect]
     }
     
-    @scala.inline
-    implicit class IRectMutableBuilder[Self <: IRect] (val x: Self) extends AnyVal {
+    extension [Self <: IRect](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -219,23 +207,18 @@ object typesMod {
   }
   object RGB {
     
-    @scala.inline
-    def apply(b: Double, g: Double, r: Double): RGB = {
+    inline def apply(b: Double, g: Double, r: Double): RGB = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[RGB]
     }
     
-    @scala.inline
-    implicit class RGBMutableBuilder[Self <: RGB] (val x: Self) extends AnyVal {
+    extension [Self <: RGB](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -247,17 +230,14 @@ object typesMod {
   }
   object RGBA {
     
-    @scala.inline
-    def apply(a: Double, b: Double, g: Double, r: Double): RGBA = {
+    inline def apply(a: Double, b: Double, g: Double, r: Double): RGBA = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[RGBA]
     }
     
-    @scala.inline
-    implicit class RGBAMutableBuilder[Self <: RGBA] (val x: Self) extends AnyVal {
+    extension [Self <: RGBA](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     }
   }
   
@@ -269,20 +249,16 @@ object typesMod {
   }
   object Vector2d {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Vector2d = {
+    inline def apply(x: Double, y: Double): Vector2d = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vector2d]
     }
     
-    @scala.inline
-    implicit class Vector2dMutableBuilder[Self <: Vector2d] (val x: Self) extends AnyVal {
+    extension [Self <: Vector2d](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

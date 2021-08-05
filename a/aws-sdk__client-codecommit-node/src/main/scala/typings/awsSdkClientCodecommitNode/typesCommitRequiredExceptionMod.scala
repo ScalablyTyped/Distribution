@@ -18,17 +18,14 @@ object typesCommitRequiredExceptionMod {
   }
   object CommitRequiredException {
     
-    @scala.inline
-    def apply(): CommitRequiredException = {
+    inline def apply(): CommitRequiredException = {
       val __obj = js.Dynamic.literal(name = "CommitRequiredException")
       __obj.asInstanceOf[CommitRequiredException]
     }
     
-    @scala.inline
-    implicit class CommitRequiredExceptionMutableBuilder[Self <: CommitRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: CommitRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommitRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

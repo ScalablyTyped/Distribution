@@ -18,22 +18,17 @@ trait DisconnectParticipantRequest extends StObject {
 }
 object DisconnectParticipantRequest {
   
-  @scala.inline
-  def apply(ConnectionToken: ParticipantToken): DisconnectParticipantRequest = {
+  inline def apply(ConnectionToken: ParticipantToken): DisconnectParticipantRequest = {
     val __obj = js.Dynamic.literal(ConnectionToken = ConnectionToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisconnectParticipantRequest]
   }
   
-  @scala.inline
-  implicit class DisconnectParticipantRequestMutableBuilder[Self <: DisconnectParticipantRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisconnectParticipantRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setConnectionToken(value: ParticipantToken): Self = StObject.set(x, "ConnectionToken", value.asInstanceOf[js.Any])
+    inline def setConnectionToken(value: ParticipantToken): Self = StObject.set(x, "ConnectionToken", value.asInstanceOf[js.Any])
   }
 }

@@ -442,8 +442,7 @@ trait AddCollaborator extends StObject {
 }
 object AddCollaborator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCollaborator: `267`,
     createCard: `268`,
     createColumn: `269`,
@@ -474,82 +473,56 @@ object AddCollaborator {
     __obj.asInstanceOf[AddCollaborator]
   }
   
-  @scala.inline
-  implicit class AddCollaboratorMutableBuilder[Self <: AddCollaborator] (val x: Self) extends AnyVal {
+  extension [Self <: AddCollaborator](x: Self) {
     
-    @scala.inline
-    def setAddCollaborator(value: `267`): Self = StObject.set(x, "addCollaborator", value.asInstanceOf[js.Any])
+    inline def setAddCollaborator(value: `267`): Self = StObject.set(x, "addCollaborator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateCard(value: `268`): Self = StObject.set(x, "createCard", value.asInstanceOf[js.Any])
+    inline def setCreateCard(value: `268`): Self = StObject.set(x, "createCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateColumn(value: `269`): Self = StObject.set(x, "createColumn", value.asInstanceOf[js.Any])
+    inline def setCreateColumn(value: `269`): Self = StObject.set(x, "createColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateForAuthenticatedUser(value: `270`): Self = StObject.set(x, "createForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setCreateForAuthenticatedUser(value: `270`): Self = StObject.set(x, "createForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateForOrg(value: `271`): Self = StObject.set(x, "createForOrg", value.asInstanceOf[js.Any])
+    inline def setCreateForOrg(value: `271`): Self = StObject.set(x, "createForOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateForRepo(value: `272`): Self = StObject.set(x, "createForRepo", value.asInstanceOf[js.Any])
+    inline def setCreateForRepo(value: `272`): Self = StObject.set(x, "createForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: `273`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: `273`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteCard(value: `274`): Self = StObject.set(x, "deleteCard", value.asInstanceOf[js.Any])
+    inline def setDeleteCard(value: `274`): Self = StObject.set(x, "deleteCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteColumn(value: `275`): Self = StObject.set(x, "deleteColumn", value.asInstanceOf[js.Any])
+    inline def setDeleteColumn(value: `275`): Self = StObject.set(x, "deleteColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: `276`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `276`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCard(value: `277`): Self = StObject.set(x, "getCard", value.asInstanceOf[js.Any])
+    inline def setGetCard(value: `277`): Self = StObject.set(x, "getCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetColumn(value: `278`): Self = StObject.set(x, "getColumn", value.asInstanceOf[js.Any])
+    inline def setGetColumn(value: `278`): Self = StObject.set(x, "getColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPermissionForUser(value: `279`): Self = StObject.set(x, "getPermissionForUser", value.asInstanceOf[js.Any])
+    inline def setGetPermissionForUser(value: `279`): Self = StObject.set(x, "getPermissionForUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListCards(value: `280`): Self = StObject.set(x, "listCards", value.asInstanceOf[js.Any])
+    inline def setListCards(value: `280`): Self = StObject.set(x, "listCards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListCollaborators(value: `281`): Self = StObject.set(x, "listCollaborators", value.asInstanceOf[js.Any])
+    inline def setListCollaborators(value: `281`): Self = StObject.set(x, "listCollaborators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListColumns(value: `282`): Self = StObject.set(x, "listColumns", value.asInstanceOf[js.Any])
+    inline def setListColumns(value: `282`): Self = StObject.set(x, "listColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForOrg(value: `283`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
+    inline def setListForOrg(value: `283`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForRepo(value: `284`): Self = StObject.set(x, "listForRepo", value.asInstanceOf[js.Any])
+    inline def setListForRepo(value: `284`): Self = StObject.set(x, "listForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForUser(value: `285`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
+    inline def setListForUser(value: `285`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveCard(value: `286`): Self = StObject.set(x, "moveCard", value.asInstanceOf[js.Any])
+    inline def setMoveCard(value: `286`): Self = StObject.set(x, "moveCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveColumn(value: `287`): Self = StObject.set(x, "moveColumn", value.asInstanceOf[js.Any])
+    inline def setMoveColumn(value: `287`): Self = StObject.set(x, "moveColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveCollaborator(value: `288`): Self = StObject.set(x, "removeCollaborator", value.asInstanceOf[js.Any])
+    inline def setRemoveCollaborator(value: `288`): Self = StObject.set(x, "removeCollaborator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: `289`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: `289`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateCard(value: `290`): Self = StObject.set(x, "updateCard", value.asInstanceOf[js.Any])
+    inline def setUpdateCard(value: `290`): Self = StObject.set(x, "updateCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateColumn(value: `291`): Self = StObject.set(x, "updateColumn", value.asInstanceOf[js.Any])
+    inline def setUpdateColumn(value: `291`): Self = StObject.set(x, "updateColumn", value.asInstanceOf[js.Any])
   }
 }

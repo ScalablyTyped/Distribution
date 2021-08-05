@@ -13,16 +13,13 @@ trait ImportUsersFromJsonOptions
 }
 object ImportUsersFromJsonOptions {
   
-  @scala.inline
-  def apply(connection_id: String, users_json: String): ImportUsersFromJsonOptions = {
+  inline def apply(connection_id: String, users_json: String): ImportUsersFromJsonOptions = {
     val __obj = js.Dynamic.literal(connection_id = connection_id.asInstanceOf[js.Any], users_json = users_json.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportUsersFromJsonOptions]
   }
   
-  @scala.inline
-  implicit class ImportUsersFromJsonOptionsMutableBuilder[Self <: ImportUsersFromJsonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImportUsersFromJsonOptions](x: Self) {
     
-    @scala.inline
-    def setUsers_json(value: String): Self = StObject.set(x, "users_json", value.asInstanceOf[js.Any])
+    inline def setUsers_json(value: String): Self = StObject.set(x, "users_json", value.asInstanceOf[js.Any])
   }
 }

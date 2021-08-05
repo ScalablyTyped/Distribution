@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createState(): LeState = ^.asInstanceOf[js.Dynamic].applyDynamic("createState")().asInstanceOf[LeState]
-  @scala.inline
-  def createState(props: InitialState): LeState = ^.asInstanceOf[js.Dynamic].applyDynamic("createState")(props.asInstanceOf[js.Any]).asInstanceOf[LeState]
+  inline def createState(): LeState = ^.asInstanceOf[js.Dynamic].applyDynamic("createState")().asInstanceOf[LeState]
+  inline def createState(props: InitialState): LeState = ^.asInstanceOf[js.Dynamic].applyDynamic("createState")(props.asInstanceOf[js.Any]).asInstanceOf[LeState]
   
   trait LeState extends StObject {
     
@@ -32,8 +30,7 @@ object mod {
   }
   object LeState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createListener: Force => Unit,
       get: () => js.Any,
       getDescription: () => js.Object,
@@ -44,23 +41,17 @@ object mod {
       __obj.asInstanceOf[LeState]
     }
     
-    @scala.inline
-    implicit class LeStateMutableBuilder[Self <: LeState] (val x: Self) extends AnyVal {
+    extension [Self <: LeState](x: Self) {
       
-      @scala.inline
-      def setCreateListener(value: Force => Unit): Self = StObject.set(x, "createListener", js.Any.fromFunction1(value))
+      inline def setCreateListener(value: Force => Unit): Self = StObject.set(x, "createListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDescription(value: () => js.Object): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
+      inline def setGetDescription(value: () => js.Object): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInsert(value: js.Object => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+      inline def setInsert(value: js.Object => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: js.Object => js.Array[Id]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: js.Object => js.Array[Id]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     }
   }
 }

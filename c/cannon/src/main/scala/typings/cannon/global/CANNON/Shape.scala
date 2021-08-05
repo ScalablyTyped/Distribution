@@ -39,6 +39,5 @@ object Shape {
   @JSGlobal("CANNON.Shape.types")
   @js.native
   def types: BOX = js.native
-  @scala.inline
-  def types_=(x: BOX): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
+  inline def types_=(x: BOX): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
 }

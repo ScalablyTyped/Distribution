@@ -43,8 +43,7 @@ trait XMembersAccess
 }
 object XMembersAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     LocaleIndependentElementNames: SafeArray[String],
@@ -62,13 +61,10 @@ object XMembersAccess {
     __obj.asInstanceOf[XMembersAccess]
   }
   
-  @scala.inline
-  implicit class XMembersAccessMutableBuilder[Self <: XMembersAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XMembersAccess](x: Self) {
     
-    @scala.inline
-    def setGetLocaleIndependentElementNames(value: () => SafeArray[String]): Self = StObject.set(x, "getLocaleIndependentElementNames", js.Any.fromFunction0(value))
+    inline def setGetLocaleIndependentElementNames(value: () => SafeArray[String]): Self = StObject.set(x, "getLocaleIndependentElementNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLocaleIndependentElementNames(value: SafeArray[String]): Self = StObject.set(x, "LocaleIndependentElementNames", value.asInstanceOf[js.Any])
+    inline def setLocaleIndependentElementNames(value: SafeArray[String]): Self = StObject.set(x, "LocaleIndependentElementNames", value.asInstanceOf[js.Any])
   }
 }

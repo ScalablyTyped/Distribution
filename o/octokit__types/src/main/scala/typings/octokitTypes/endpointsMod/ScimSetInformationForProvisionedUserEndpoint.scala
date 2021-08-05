@@ -33,8 +33,7 @@ trait ScimSetInformationForProvisionedUserEndpoint extends StObject {
 }
 object ScimSetInformationForProvisionedUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     emails: js.Array[ScimSetInformationForProvisionedUserParamsEmails],
     name: ScimSetInformationForProvisionedUserParamsName,
     org_ : String,
@@ -47,31 +46,22 @@ object ScimSetInformationForProvisionedUserEndpoint {
     __obj.asInstanceOf[ScimSetInformationForProvisionedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ScimSetInformationForProvisionedUserEndpointMutableBuilder[Self <: ScimSetInformationForProvisionedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ScimSetInformationForProvisionedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setEmails(value: js.Array[ScimSetInformationForProvisionedUserParamsEmails]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: js.Array[ScimSetInformationForProvisionedUserParamsEmails]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailsVarargs(value: ScimSetInformationForProvisionedUserParamsEmails*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: ScimSetInformationForProvisionedUserParamsEmails*): Self = StObject.set(x, "emails", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: ScimSetInformationForProvisionedUserParamsName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ScimSetInformationForProvisionedUserParamsName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
-    @scala.inline
-    def setScim_user_id(value: String): Self = StObject.set(x, "scim_user_id", value.asInstanceOf[js.Any])
+    inline def setScim_user_id(value: String): Self = StObject.set(x, "scim_user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

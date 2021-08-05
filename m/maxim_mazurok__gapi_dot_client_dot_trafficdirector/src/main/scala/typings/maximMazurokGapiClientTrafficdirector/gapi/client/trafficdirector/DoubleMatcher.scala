@@ -14,25 +14,19 @@ trait DoubleMatcher extends StObject {
 }
 object DoubleMatcher {
   
-  @scala.inline
-  def apply(): DoubleMatcher = {
+  inline def apply(): DoubleMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoubleMatcher]
   }
   
-  @scala.inline
-  implicit class DoubleMatcherMutableBuilder[Self <: DoubleMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: DoubleMatcher](x: Self) {
     
-    @scala.inline
-    def setExact(value: Double): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    inline def setExact(value: Double): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+    inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
-    @scala.inline
-    def setRange(value: DoubleRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: DoubleRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

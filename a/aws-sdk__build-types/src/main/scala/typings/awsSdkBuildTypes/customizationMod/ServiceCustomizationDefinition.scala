@@ -20,8 +20,7 @@ trait ServiceCustomizationDefinition extends StObject {
 }
 object ServiceCustomizationDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     client: js.Array[CustomizationDefinition],
     commands: StringDictionary[js.Array[CustomizationDefinition]]
   ): ServiceCustomizationDefinition = {
@@ -29,16 +28,12 @@ object ServiceCustomizationDefinition {
     __obj.asInstanceOf[ServiceCustomizationDefinition]
   }
   
-  @scala.inline
-  implicit class ServiceCustomizationDefinitionMutableBuilder[Self <: ServiceCustomizationDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceCustomizationDefinition](x: Self) {
     
-    @scala.inline
-    def setClient(value: js.Array[CustomizationDefinition]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: js.Array[CustomizationDefinition]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientVarargs(value: CustomizationDefinition*): Self = StObject.set(x, "client", js.Array(value :_*))
+    inline def setClientVarargs(value: CustomizationDefinition*): Self = StObject.set(x, "client", js.Array(value :_*))
     
-    @scala.inline
-    def setCommands(value: StringDictionary[js.Array[CustomizationDefinition]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: StringDictionary[js.Array[CustomizationDefinition]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
   }
 }

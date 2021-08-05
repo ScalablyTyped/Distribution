@@ -10,7 +10,7 @@ class Event[T /* <: js.Function */, Options] () extends StObject {
   
   def add(func: T): Unit = js.native
   
-  var callbacks: js.Array[T] = js.native
+  /* protected */ var callbacks: js.Array[T] = js.native
   
   def clear(): Unit = js.native
   

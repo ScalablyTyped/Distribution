@@ -17,31 +17,23 @@ trait FrequencyCap extends StObject {
 }
 object FrequencyCap {
   
-  @scala.inline
-  def apply(): FrequencyCap = {
+  inline def apply(): FrequencyCap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FrequencyCap]
   }
   
-  @scala.inline
-  implicit class FrequencyCapMutableBuilder[Self <: FrequencyCap] (val x: Self) extends AnyVal {
+  extension [Self <: FrequencyCap](x: Self) {
     
-    @scala.inline
-    def setMaxImpressions(value: Double): Self = StObject.set(x, "maxImpressions", value.asInstanceOf[js.Any])
+    inline def setMaxImpressions(value: Double): Self = StObject.set(x, "maxImpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxImpressionsUndefined: Self = StObject.set(x, "maxImpressions", js.undefined)
+    inline def setMaxImpressionsUndefined: Self = StObject.set(x, "maxImpressions", js.undefined)
     
-    @scala.inline
-    def setNumTimeUnits(value: Double): Self = StObject.set(x, "numTimeUnits", value.asInstanceOf[js.Any])
+    inline def setNumTimeUnits(value: Double): Self = StObject.set(x, "numTimeUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumTimeUnitsUndefined: Self = StObject.set(x, "numTimeUnits", js.undefined)
+    inline def setNumTimeUnitsUndefined: Self = StObject.set(x, "numTimeUnits", js.undefined)
     
-    @scala.inline
-    def setTimeUnitType(value: String): Self = StObject.set(x, "timeUnitType", value.asInstanceOf[js.Any])
+    inline def setTimeUnitType(value: String): Self = StObject.set(x, "timeUnitType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnitTypeUndefined: Self = StObject.set(x, "timeUnitType", js.undefined)
+    inline def setTimeUnitTypeUndefined: Self = StObject.set(x, "timeUnitType", js.undefined)
   }
 }

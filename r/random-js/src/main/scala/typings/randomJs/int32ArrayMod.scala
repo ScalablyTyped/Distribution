@@ -32,6 +32,5 @@ object int32ArrayMod {
   @JSImport("random-js/dist/utils/Int32Array", "Int32Array")
   @js.native
   def Int32Array: Int32ArrayConstructor = js.native
-  @scala.inline
-  def Int32Array_=(x: Int32ArrayConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Int32Array")(x.asInstanceOf[js.Any])
+  inline def Int32Array_=(x: Int32ArrayConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Int32Array")(x.asInstanceOf[js.Any])
 }

@@ -17,34 +17,25 @@ trait Cluster extends StObject {
 }
 object Cluster {
   
-  @scala.inline
-  def apply(): Cluster = {
+  inline def apply(): Cluster = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cluster]
   }
   
-  @scala.inline
-  implicit class ClusterMutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
+  extension [Self <: Cluster](x: Self) {
     
-    @scala.inline
-    def setCentroidId(value: String): Self = StObject.set(x, "centroidId", value.asInstanceOf[js.Any])
+    inline def setCentroidId(value: String): Self = StObject.set(x, "centroidId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCentroidIdUndefined: Self = StObject.set(x, "centroidId", js.undefined)
+    inline def setCentroidIdUndefined: Self = StObject.set(x, "centroidId", js.undefined)
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setFeatureValues(value: js.Array[FeatureValue]): Self = StObject.set(x, "featureValues", value.asInstanceOf[js.Any])
+    inline def setFeatureValues(value: js.Array[FeatureValue]): Self = StObject.set(x, "featureValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureValuesUndefined: Self = StObject.set(x, "featureValues", js.undefined)
+    inline def setFeatureValuesUndefined: Self = StObject.set(x, "featureValues", js.undefined)
     
-    @scala.inline
-    def setFeatureValuesVarargs(value: FeatureValue*): Self = StObject.set(x, "featureValues", js.Array(value :_*))
+    inline def setFeatureValuesVarargs(value: FeatureValue*): Self = StObject.set(x, "featureValues", js.Array(value :_*))
   }
 }

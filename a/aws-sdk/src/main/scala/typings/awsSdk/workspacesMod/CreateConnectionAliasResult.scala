@@ -13,19 +13,15 @@ trait CreateConnectionAliasResult extends StObject {
 }
 object CreateConnectionAliasResult {
   
-  @scala.inline
-  def apply(): CreateConnectionAliasResult = {
+  inline def apply(): CreateConnectionAliasResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateConnectionAliasResult]
   }
   
-  @scala.inline
-  implicit class CreateConnectionAliasResultMutableBuilder[Self <: CreateConnectionAliasResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConnectionAliasResult](x: Self) {
     
-    @scala.inline
-    def setAliasId(value: ConnectionAliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
+    inline def setAliasId(value: ConnectionAliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasIdUndefined: Self = StObject.set(x, "AliasId", js.undefined)
+    inline def setAliasIdUndefined: Self = StObject.set(x, "AliasId", js.undefined)
   }
 }

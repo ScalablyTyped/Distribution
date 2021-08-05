@@ -27,7 +27,7 @@ object outputMod {
     /* CompleteClass */
     override def write(x: Double, y: Double, text: String, options: Transformers): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val writes: js.Any = js.native
   }
   
@@ -47,20 +47,16 @@ object outputMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Options = {
+    inline def apply(height: Double, width: Double): Options = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,12 +70,11 @@ object outputMod {
     
     def write(x: Double, y: Double, text: String, options: Transformers): Unit
     
-    val writes: js.Any
+    /* private */ val writes: js.Any
   }
   object Output {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       get: () => Height,
       height: Double,
       width: Double,
@@ -90,23 +85,17 @@ object outputMod {
       __obj.asInstanceOf[Output]
     }
     
-    @scala.inline
-    implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    extension [Self <: Output](x: Self) {
       
-      @scala.inline
-      def setGet(value: () => Height): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => Height): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrite(value: (Double, Double, String, Transformers) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction4(value))
+      inline def setWrite(value: (Double, Double, String, Transformers) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setWrites(value: js.Any): Self = StObject.set(x, "writes", value.asInstanceOf[js.Any])
+      inline def setWrites(value: js.Any): Self = StObject.set(x, "writes", value.asInstanceOf[js.Any])
     }
   }
 }

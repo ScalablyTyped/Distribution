@@ -18,22 +18,17 @@ trait DeleteProgressUpdateStreamRequest extends StObject {
 }
 object DeleteProgressUpdateStreamRequest {
   
-  @scala.inline
-  def apply(ProgressUpdateStreamName: ProgressUpdateStream): DeleteProgressUpdateStreamRequest = {
+  inline def apply(ProgressUpdateStreamName: ProgressUpdateStream): DeleteProgressUpdateStreamRequest = {
     val __obj = js.Dynamic.literal(ProgressUpdateStreamName = ProgressUpdateStreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProgressUpdateStreamRequest]
   }
   
-  @scala.inline
-  implicit class DeleteProgressUpdateStreamRequestMutableBuilder[Self <: DeleteProgressUpdateStreamRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProgressUpdateStreamRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setProgressUpdateStreamName(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStreamName", value.asInstanceOf[js.Any])
+    inline def setProgressUpdateStreamName(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStreamName", value.asInstanceOf[js.Any])
   }
 }

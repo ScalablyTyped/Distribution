@@ -28,37 +28,27 @@ trait ClassificationDetails extends StObject {
 }
 object ClassificationDetails {
   
-  @scala.inline
-  def apply(): ClassificationDetails = {
+  inline def apply(): ClassificationDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassificationDetails]
   }
   
-  @scala.inline
-  implicit class ClassificationDetailsMutableBuilder[Self <: ClassificationDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ClassificationDetails](x: Self) {
     
-    @scala.inline
-    def setDetailedResultsLocation(value: string): Self = StObject.set(x, "detailedResultsLocation", value.asInstanceOf[js.Any])
+    inline def setDetailedResultsLocation(value: string): Self = StObject.set(x, "detailedResultsLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedResultsLocationUndefined: Self = StObject.set(x, "detailedResultsLocation", js.undefined)
+    inline def setDetailedResultsLocationUndefined: Self = StObject.set(x, "detailedResultsLocation", js.undefined)
     
-    @scala.inline
-    def setJobArn(value: string): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
+    inline def setJobArn(value: string): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
+    inline def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
     
-    @scala.inline
-    def setJobId(value: string): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: string): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setResult(value: ClassificationResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: ClassificationResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

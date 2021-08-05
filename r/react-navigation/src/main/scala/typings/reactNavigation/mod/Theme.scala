@@ -22,8 +22,7 @@ trait Theme extends StObject {
 }
 object Theme {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: String,
     bodyBorder: String,
     bodyContent: String,
@@ -36,28 +35,20 @@ object Theme {
     __obj.asInstanceOf[Theme]
   }
   
-  @scala.inline
-  implicit class ThemeMutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
+  extension [Self <: Theme](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyBorder(value: String): Self = StObject.set(x, "bodyBorder", value.asInstanceOf[js.Any])
+    inline def setBodyBorder(value: String): Self = StObject.set(x, "bodyBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyContent(value: String): Self = StObject.set(x, "bodyContent", value.asInstanceOf[js.Any])
+    inline def setBodyContent(value: String): Self = StObject.set(x, "bodyContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyContentBorder(value: String): Self = StObject.set(x, "bodyContentBorder", value.asInstanceOf[js.Any])
+    inline def setBodyContentBorder(value: String): Self = StObject.set(x, "bodyContentBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderBorder(value: String): Self = StObject.set(x, "headerBorder", value.asInstanceOf[js.Any])
+    inline def setHeaderBorder(value: String): Self = StObject.set(x, "headerBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

@@ -14,17 +14,14 @@ object lifecycleMod {
   }
   object Lifecycle {
     
-    @scala.inline
-    def apply(resolve: (default, typings.forgeDi.contextMod.default, Arguments) => js.Any): Lifecycle = {
+    inline def apply(resolve: (default, typings.forgeDi.contextMod.default, Arguments) => js.Any): Lifecycle = {
       val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction3(resolve))
       __obj.asInstanceOf[Lifecycle]
     }
     
-    @scala.inline
-    implicit class LifecycleMutableBuilder[Self <: Lifecycle] (val x: Self) extends AnyVal {
+    extension [Self <: Lifecycle](x: Self) {
       
-      @scala.inline
-      def setResolve(value: (default, typings.forgeDi.contextMod.default, Arguments) => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
+      inline def setResolve(value: (default, typings.forgeDi.contextMod.default, Arguments) => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
     }
   }
 }

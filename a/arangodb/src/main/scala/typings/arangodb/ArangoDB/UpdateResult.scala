@@ -14,25 +14,19 @@ trait UpdateResult[T /* <: js.Object */]
 }
 object UpdateResult {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](_id: String, _key: String, _oldRev: String, _rev: String): UpdateResult[T] = {
+  inline def apply[T /* <: js.Object */](_id: String, _key: String, _oldRev: String, _rev: String): UpdateResult[T] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _key = _key.asInstanceOf[js.Any], _oldRev = _oldRev.asInstanceOf[js.Any], _rev = _rev.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateResult[T]]
   }
   
-  @scala.inline
-  implicit class UpdateResultMutableBuilder[Self <: UpdateResult[?], T /* <: js.Object */] (val x: Self & UpdateResult[T]) extends AnyVal {
+  extension [Self <: UpdateResult[?], T /* <: js.Object */](x: Self & UpdateResult[T]) {
     
-    @scala.inline
-    def setNew(value: Document[T]): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
+    inline def setNew(value: Document[T]): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
+    inline def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
     
-    @scala.inline
-    def setOld(value: Document[T]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
+    inline def setOld(value: Document[T]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
+    inline def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
   }
 }

@@ -24,23 +24,18 @@ object settingsMod {
   }
   object ListDefinition {
     
-    @scala.inline
-    def apply[T](label: String, list: Array[T]): ListDefinition[T] = {
+    inline def apply[T](label: String, list: Array[T]): ListDefinition[T] = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListDefinition[T]]
     }
     
-    @scala.inline
-    implicit class ListDefinitionMutableBuilder[Self <: ListDefinition[?], T] (val x: Self & ListDefinition[T]) extends AnyVal {
+    extension [Self <: ListDefinition[?], T](x: Self & ListDefinition[T]) {
       
-      @scala.inline
-      def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setList(value: Array[T]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: Array[T]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,29 +65,22 @@ object settingsMod {
   }
   object RangeDefinition {
     
-    @scala.inline
-    def apply(label: String, max: Double, min: Double, step: Double): RangeDefinition = {
+    inline def apply(label: String, max: Double, min: Double, step: Double): RangeDefinition = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
       __obj.asInstanceOf[RangeDefinition]
     }
     
-    @scala.inline
-    implicit class RangeDefinitionMutableBuilder[Self <: RangeDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: RangeDefinition](x: Self) {
       
-      @scala.inline
-      def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,35 +108,26 @@ object settingsMod {
   }
   object SettingDefinition {
     
-    @scala.inline
-    def apply(label: String): SettingDefinition = {
+    inline def apply(label: String): SettingDefinition = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[SettingDefinition]
     }
     
-    @scala.inline
-    implicit class SettingDefinitionMutableBuilder[Self <: SettingDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: SettingDefinition](x: Self) {
       
-      @scala.inline
-      def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+      inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+      inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+      inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnInit(value: () => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
+      inline def setOnInit(value: () => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
+      inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
     }
   }
   
@@ -312,20 +291,16 @@ object settingsMod {
   }
   object ToggleDefinition {
     
-    @scala.inline
-    def apply(label: String): ToggleDefinition = {
+    inline def apply(label: String): ToggleDefinition = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToggleDefinition]
     }
     
-    @scala.inline
-    implicit class ToggleDefinitionMutableBuilder[Self <: ToggleDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleDefinition](x: Self) {
       
-      @scala.inline
-      def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     }
   }
 }

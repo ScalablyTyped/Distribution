@@ -12,19 +12,15 @@ trait ISemanticAliases extends StObject {
 }
 object ISemanticAliases {
   
-  @scala.inline
-  def apply(Clone: () => ISemanticAliases, Value: String): ISemanticAliases = {
+  inline def apply(Clone: () => ISemanticAliases, Value: String): ISemanticAliases = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISemanticAliases]
   }
   
-  @scala.inline
-  implicit class ISemanticAliasesMutableBuilder[Self <: ISemanticAliases] (val x: Self) extends AnyVal {
+  extension [Self <: ISemanticAliases](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => ISemanticAliases): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ISemanticAliases): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

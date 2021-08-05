@@ -24,34 +24,25 @@ trait BulkSendingList extends StObject {
 }
 object BulkSendingList {
   
-  @scala.inline
-  def apply(): BulkSendingList = {
+  inline def apply(): BulkSendingList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkSendingList]
   }
   
-  @scala.inline
-  implicit class BulkSendingListMutableBuilder[Self <: BulkSendingList] (val x: Self) extends AnyVal {
+  extension [Self <: BulkSendingList](x: Self) {
     
-    @scala.inline
-    def setBulkCopies(value: js.Array[BulkSendingCopy]): Self = StObject.set(x, "bulkCopies", value.asInstanceOf[js.Any])
+    inline def setBulkCopies(value: js.Array[BulkSendingCopy]): Self = StObject.set(x, "bulkCopies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkCopiesUndefined: Self = StObject.set(x, "bulkCopies", js.undefined)
+    inline def setBulkCopiesUndefined: Self = StObject.set(x, "bulkCopies", js.undefined)
     
-    @scala.inline
-    def setBulkCopiesVarargs(value: BulkSendingCopy*): Self = StObject.set(x, "bulkCopies", js.Array(value :_*))
+    inline def setBulkCopiesVarargs(value: BulkSendingCopy*): Self = StObject.set(x, "bulkCopies", js.Array(value :_*))
     
-    @scala.inline
-    def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+    inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
+    inline def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

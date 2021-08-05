@@ -18,19 +18,15 @@ trait ByteMatchSetUpdate extends StObject {
 }
 object ByteMatchSetUpdate {
   
-  @scala.inline
-  def apply(Action: ChangeAction, ByteMatchTuple: ByteMatchTuple): ByteMatchSetUpdate = {
+  inline def apply(Action: ChangeAction, ByteMatchTuple: ByteMatchTuple): ByteMatchSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], ByteMatchTuple = ByteMatchTuple.asInstanceOf[js.Any])
     __obj.asInstanceOf[ByteMatchSetUpdate]
   }
   
-  @scala.inline
-  implicit class ByteMatchSetUpdateMutableBuilder[Self <: ByteMatchSetUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ByteMatchSetUpdate](x: Self) {
     
-    @scala.inline
-    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteMatchTuple(value: ByteMatchTuple): Self = StObject.set(x, "ByteMatchTuple", value.asInstanceOf[js.Any])
+    inline def setByteMatchTuple(value: ByteMatchTuple): Self = StObject.set(x, "ByteMatchTuple", value.asInstanceOf[js.Any])
   }
 }

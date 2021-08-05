@@ -35,70 +35,49 @@ trait WmxSitemap extends StObject {
 }
 object WmxSitemap {
   
-  @scala.inline
-  def apply(): WmxSitemap = {
+  inline def apply(): WmxSitemap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WmxSitemap]
   }
   
-  @scala.inline
-  implicit class WmxSitemapMutableBuilder[Self <: WmxSitemap] (val x: Self) extends AnyVal {
+  extension [Self <: WmxSitemap](x: Self) {
     
-    @scala.inline
-    def setContents(value: js.Array[WmxSitemapContent]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.Array[WmxSitemapContent]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+    inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
-    @scala.inline
-    def setContentsVarargs(value: WmxSitemapContent*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: WmxSitemapContent*): Self = StObject.set(x, "contents", js.Array(value :_*))
     
-    @scala.inline
-    def setErrors(value: String): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: String): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setIsPending(value: Boolean): Self = StObject.set(x, "isPending", value.asInstanceOf[js.Any])
+    inline def setIsPending(value: Boolean): Self = StObject.set(x, "isPending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPendingUndefined: Self = StObject.set(x, "isPending", js.undefined)
+    inline def setIsPendingUndefined: Self = StObject.set(x, "isPending", js.undefined)
     
-    @scala.inline
-    def setIsSitemapsIndex(value: Boolean): Self = StObject.set(x, "isSitemapsIndex", value.asInstanceOf[js.Any])
+    inline def setIsSitemapsIndex(value: Boolean): Self = StObject.set(x, "isSitemapsIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSitemapsIndexUndefined: Self = StObject.set(x, "isSitemapsIndex", js.undefined)
+    inline def setIsSitemapsIndexUndefined: Self = StObject.set(x, "isSitemapsIndex", js.undefined)
     
-    @scala.inline
-    def setLastDownloaded(value: String): Self = StObject.set(x, "lastDownloaded", value.asInstanceOf[js.Any])
+    inline def setLastDownloaded(value: String): Self = StObject.set(x, "lastDownloaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDownloadedUndefined: Self = StObject.set(x, "lastDownloaded", js.undefined)
+    inline def setLastDownloadedUndefined: Self = StObject.set(x, "lastDownloaded", js.undefined)
     
-    @scala.inline
-    def setLastSubmitted(value: String): Self = StObject.set(x, "lastSubmitted", value.asInstanceOf[js.Any])
+    inline def setLastSubmitted(value: String): Self = StObject.set(x, "lastSubmitted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSubmittedUndefined: Self = StObject.set(x, "lastSubmitted", js.undefined)
+    inline def setLastSubmittedUndefined: Self = StObject.set(x, "lastSubmitted", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWarnings(value: String): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: String): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
   }
 }

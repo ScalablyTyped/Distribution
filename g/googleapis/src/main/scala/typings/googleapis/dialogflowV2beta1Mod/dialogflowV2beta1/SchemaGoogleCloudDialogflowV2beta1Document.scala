@@ -61,58 +61,41 @@ trait SchemaGoogleCloudDialogflowV2beta1Document extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2beta1Document {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1Document = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1Document = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1Document]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1DocumentMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1Document] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1Document](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setContentUri(value: String): Self = StObject.set(x, "contentUri", value.asInstanceOf[js.Any])
+    inline def setContentUri(value: String): Self = StObject.set(x, "contentUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUriUndefined: Self = StObject.set(x, "contentUri", js.undefined)
+    inline def setContentUriUndefined: Self = StObject.set(x, "contentUri", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setKnowledgeTypes(value: js.Array[String]): Self = StObject.set(x, "knowledgeTypes", value.asInstanceOf[js.Any])
+    inline def setKnowledgeTypes(value: js.Array[String]): Self = StObject.set(x, "knowledgeTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnowledgeTypesUndefined: Self = StObject.set(x, "knowledgeTypes", js.undefined)
+    inline def setKnowledgeTypesUndefined: Self = StObject.set(x, "knowledgeTypes", js.undefined)
     
-    @scala.inline
-    def setKnowledgeTypesVarargs(value: String*): Self = StObject.set(x, "knowledgeTypes", js.Array(value :_*))
+    inline def setKnowledgeTypesVarargs(value: String*): Self = StObject.set(x, "knowledgeTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRawContent(value: String): Self = StObject.set(x, "rawContent", value.asInstanceOf[js.Any])
+    inline def setRawContent(value: String): Self = StObject.set(x, "rawContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawContentUndefined: Self = StObject.set(x, "rawContent", js.undefined)
+    inline def setRawContentUndefined: Self = StObject.set(x, "rawContent", js.undefined)
   }
 }

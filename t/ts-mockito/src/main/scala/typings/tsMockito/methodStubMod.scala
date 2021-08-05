@@ -18,8 +18,7 @@ object methodStubMod {
   }
   object MethodStub {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       execute: js.Array[js.Any] => Unit,
       getGroupIndex: () => Double,
       getValue: () => js.Any,
@@ -29,20 +28,15 @@ object methodStubMod {
       __obj.asInstanceOf[MethodStub]
     }
     
-    @scala.inline
-    implicit class MethodStubMutableBuilder[Self <: MethodStub] (val x: Self) extends AnyVal {
+    extension [Self <: MethodStub](x: Self) {
       
-      @scala.inline
-      def setExecute(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecute(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetGroupIndex(value: () => Double): Self = StObject.set(x, "getGroupIndex", js.Any.fromFunction0(value))
+      inline def setGetGroupIndex(value: () => Double): Self = StObject.set(x, "getGroupIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsApplicable(value: js.Array[js.Any] => Boolean): Self = StObject.set(x, "isApplicable", js.Any.fromFunction1(value))
+      inline def setIsApplicable(value: js.Array[js.Any] => Boolean): Self = StObject.set(x, "isApplicable", js.Any.fromFunction1(value))
     }
   }
 }

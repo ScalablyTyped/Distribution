@@ -24,22 +24,22 @@ object wrappersMod {
   class Bidirectional protected () extends Wrapper {
     def this(args: BidirectionalLayerArgs) = this()
     
-    var _trainable: js.Any = js.native
+    /* private */ var _trainable: js.Any = js.native
     
-    var backwardLayer: js.Any = js.native
+    /* private */ var backwardLayer: js.Any = js.native
     
-    var forwardLayer: js.Any = js.native
+    /* private */ var forwardLayer: js.Any = js.native
     
     var mergeMode: BidirectionalMergeMode = js.native
     
-    var numConstants: js.Any = js.native
+    /* private */ var numConstants: js.Any = js.native
     
     def resetStates(states: js.Array[Tensor[Rank]]): Unit = js.native
     def resetStates(states: Tensor[Rank]): Unit = js.native
     
-    var returnSequences: js.Any = js.native
+    /* private */ var returnSequences: js.Any = js.native
     
-    var returnState: js.Any = js.native
+    /* private */ var returnState: js.Any = js.native
   }
   /* static members */
   object Bidirectional {
@@ -52,12 +52,10 @@ object wrappersMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "Bidirectional.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "TimeDistributed")
@@ -76,8 +74,7 @@ object wrappersMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "TimeDistributed.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "Wrapper")
@@ -95,16 +92,12 @@ object wrappersMod {
     val ^ : js.Any = js.native
     
     /** @nocollapse */
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
-  @scala.inline
-  def checkBidirectionalMergeMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBidirectionalMergeMode")().asInstanceOf[Unit]
-  @scala.inline
-  def checkBidirectionalMergeMode(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBidirectionalMergeMode")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def checkBidirectionalMergeMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBidirectionalMergeMode")().asInstanceOf[Unit]
+  inline def checkBidirectionalMergeMode(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBidirectionalMergeMode")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait BidirectionalLayerArgs
     extends StObject
@@ -127,23 +120,18 @@ object wrappersMod {
   }
   object BidirectionalLayerArgs {
     
-    @scala.inline
-    def apply(layer: RNN_): BidirectionalLayerArgs = {
+    inline def apply(layer: RNN_): BidirectionalLayerArgs = {
       val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
       __obj.asInstanceOf[BidirectionalLayerArgs]
     }
     
-    @scala.inline
-    implicit class BidirectionalLayerArgsMutableBuilder[Self <: BidirectionalLayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BidirectionalLayerArgs](x: Self) {
       
-      @scala.inline
-      def setLayer(value: RNN_): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+      inline def setLayer(value: RNN_): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeMode(value: BidirectionalMergeMode): Self = StObject.set(x, "mergeMode", value.asInstanceOf[js.Any])
+      inline def setMergeMode(value: BidirectionalMergeMode): Self = StObject.set(x, "mergeMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeModeUndefined: Self = StObject.set(x, "mergeMode", js.undefined)
+      inline def setMergeModeUndefined: Self = StObject.set(x, "mergeMode", js.undefined)
     }
   }
   
@@ -158,17 +146,14 @@ object wrappersMod {
   }
   object WrapperLayerArgs {
     
-    @scala.inline
-    def apply(layer: Layer): WrapperLayerArgs = {
+    inline def apply(layer: Layer): WrapperLayerArgs = {
       val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrapperLayerArgs]
     }
     
-    @scala.inline
-    implicit class WrapperLayerArgsMutableBuilder[Self <: WrapperLayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WrapperLayerArgs](x: Self) {
       
-      @scala.inline
-      def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+      inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     }
   }
 }

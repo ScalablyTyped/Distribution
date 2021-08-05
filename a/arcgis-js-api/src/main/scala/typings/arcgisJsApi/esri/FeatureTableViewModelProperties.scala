@@ -57,61 +57,43 @@ trait FeatureTableViewModelProperties extends StObject {
 }
 object FeatureTableViewModelProperties {
   
-  @scala.inline
-  def apply(): FeatureTableViewModelProperties = {
+  inline def apply(): FeatureTableViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureTableViewModelProperties]
   }
   
-  @scala.inline
-  implicit class FeatureTableViewModelPropertiesMutableBuilder[Self <: FeatureTableViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureTableViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setAttachmentsEnabled(value: Boolean): Self = StObject.set(x, "attachmentsEnabled", value.asInstanceOf[js.Any])
+    inline def setAttachmentsEnabled(value: Boolean): Self = StObject.set(x, "attachmentsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsEnabledUndefined: Self = StObject.set(x, "attachmentsEnabled", js.undefined)
+    inline def setAttachmentsEnabledUndefined: Self = StObject.set(x, "attachmentsEnabled", js.undefined)
     
-    @scala.inline
-    def setEditingEnabled(value: Boolean): Self = StObject.set(x, "editingEnabled", value.asInstanceOf[js.Any])
+    inline def setEditingEnabled(value: Boolean): Self = StObject.set(x, "editingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditingEnabledUndefined: Self = StObject.set(x, "editingEnabled", js.undefined)
+    inline def setEditingEnabledUndefined: Self = StObject.set(x, "editingEnabled", js.undefined)
     
-    @scala.inline
-    def setFieldConfigs(value: js.Array[FieldColumnConfigProperties]): Self = StObject.set(x, "fieldConfigs", value.asInstanceOf[js.Any])
+    inline def setFieldConfigs(value: js.Array[FieldColumnConfigProperties]): Self = StObject.set(x, "fieldConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldConfigsUndefined: Self = StObject.set(x, "fieldConfigs", js.undefined)
+    inline def setFieldConfigsUndefined: Self = StObject.set(x, "fieldConfigs", js.undefined)
     
-    @scala.inline
-    def setFieldConfigsVarargs(value: FieldColumnConfigProperties*): Self = StObject.set(x, "fieldConfigs", js.Array(value :_*))
+    inline def setFieldConfigsVarargs(value: FieldColumnConfigProperties*): Self = StObject.set(x, "fieldConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setHiddenFields(value: CollectionProperties[String]): Self = StObject.set(x, "hiddenFields", value.asInstanceOf[js.Any])
+    inline def setHiddenFields(value: CollectionProperties[String]): Self = StObject.set(x, "hiddenFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenFieldsUndefined: Self = StObject.set(x, "hiddenFields", js.undefined)
+    inline def setHiddenFieldsUndefined: Self = StObject.set(x, "hiddenFields", js.undefined)
     
-    @scala.inline
-    def setHiddenFieldsVarargs(value: String*): Self = StObject.set(x, "hiddenFields", js.Array(value :_*))
+    inline def setHiddenFieldsVarargs(value: String*): Self = StObject.set(x, "hiddenFields", js.Array(value :_*))
     
-    @scala.inline
-    def setHighlightOnRowSelectEnabled(value: Boolean): Self = StObject.set(x, "highlightOnRowSelectEnabled", value.asInstanceOf[js.Any])
+    inline def setHighlightOnRowSelectEnabled(value: Boolean): Self = StObject.set(x, "highlightOnRowSelectEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightOnRowSelectEnabledUndefined: Self = StObject.set(x, "highlightOnRowSelectEnabled", js.undefined)
+    inline def setHighlightOnRowSelectEnabledUndefined: Self = StObject.set(x, "highlightOnRowSelectEnabled", js.undefined)
     
-    @scala.inline
-    def setLayer(value: FeatureLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

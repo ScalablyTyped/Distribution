@@ -42,8 +42,7 @@ trait CommsModule extends StObject {
 }
 object CommsModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addConnection: Client => js.Promise[Unit],
     removeConnection: Client => js.Promise[Unit],
     subscribe: Topic => js.Promise[Unit],
@@ -53,19 +52,14 @@ object CommsModule {
     __obj.asInstanceOf[CommsModule]
   }
   
-  @scala.inline
-  implicit class CommsModuleMutableBuilder[Self <: CommsModule] (val x: Self) extends AnyVal {
+  extension [Self <: CommsModule](x: Self) {
     
-    @scala.inline
-    def setAddConnection(value: Client => js.Promise[Unit]): Self = StObject.set(x, "addConnection", js.Any.fromFunction1(value))
+    inline def setAddConnection(value: Client => js.Promise[Unit]): Self = StObject.set(x, "addConnection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveConnection(value: Client => js.Promise[Unit]): Self = StObject.set(x, "removeConnection", js.Any.fromFunction1(value))
+    inline def setRemoveConnection(value: Client => js.Promise[Unit]): Self = StObject.set(x, "removeConnection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubscribe(value: Topic => js.Promise[Unit]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+    inline def setSubscribe(value: Topic => js.Promise[Unit]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnsubscribe(value: Topic => js.Promise[Unit]): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
+    inline def setUnsubscribe(value: Topic => js.Promise[Unit]): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
   }
 }

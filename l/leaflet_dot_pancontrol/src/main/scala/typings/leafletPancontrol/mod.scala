@@ -30,20 +30,16 @@ object mod {
     }
     object PanControlOptions {
       
-      @scala.inline
-      def apply(): PanControlOptions = {
+      inline def apply(): PanControlOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PanControlOptions]
       }
       
-      @scala.inline
-      implicit class PanControlOptionsMutableBuilder[Self <: PanControlOptions] (val x: Self) extends AnyVal {
+      extension [Self <: PanControlOptions](x: Self) {
         
-        @scala.inline
-        def setPanOffset(value: Double): Self = StObject.set(x, "panOffset", value.asInstanceOf[js.Any])
+        inline def setPanOffset(value: Double): Self = StObject.set(x, "panOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPanOffsetUndefined: Self = StObject.set(x, "panOffset", js.undefined)
+        inline def setPanOffsetUndefined: Self = StObject.set(x, "panOffset", js.undefined)
       }
     }
   }
@@ -54,10 +50,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def pan(): Pan = ^.asInstanceOf[js.Dynamic].applyDynamic("pan")().asInstanceOf[Pan]
-    @scala.inline
-    def pan(options: PanControlOptions): Pan = ^.asInstanceOf[js.Dynamic].applyDynamic("pan")(options.asInstanceOf[js.Any]).asInstanceOf[Pan]
+    inline def pan(): Pan = ^.asInstanceOf[js.Dynamic].applyDynamic("pan")().asInstanceOf[Pan]
+    inline def pan(options: PanControlOptions): Pan = ^.asInstanceOf[js.Dynamic].applyDynamic("pan")(options.asInstanceOf[js.Any]).asInstanceOf[Pan]
   }
   
   trait MapOptions extends StObject {
@@ -66,20 +60,16 @@ object mod {
   }
   object MapOptions {
     
-    @scala.inline
-    def apply(): MapOptions = {
+    inline def apply(): MapOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MapOptions]
     }
     
-    @scala.inline
-    implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MapOptions](x: Self) {
       
-      @scala.inline
-      def setPanControl(value: Boolean): Self = StObject.set(x, "panControl", value.asInstanceOf[js.Any])
+      inline def setPanControl(value: Boolean): Self = StObject.set(x, "panControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanControlUndefined: Self = StObject.set(x, "panControl", js.undefined)
+      inline def setPanControlUndefined: Self = StObject.set(x, "panControl", js.undefined)
     }
   }
 }

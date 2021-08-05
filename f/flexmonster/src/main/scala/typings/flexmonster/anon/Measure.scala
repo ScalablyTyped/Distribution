@@ -13,25 +13,19 @@ trait Measure extends StObject {
 }
 object Measure {
   
-  @scala.inline
-  def apply(tuple: js.Array[String]): Measure = {
+  inline def apply(tuple: js.Array[String]): Measure = {
     val __obj = js.Dynamic.literal(tuple = tuple.asInstanceOf[js.Any])
     __obj.asInstanceOf[Measure]
   }
   
-  @scala.inline
-  implicit class MeasureMutableBuilder[Self <: Measure] (val x: Self) extends AnyVal {
+  extension [Self <: Measure](x: Self) {
     
-    @scala.inline
-    def setMeasure(value: MeasureObject): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
+    inline def setMeasure(value: MeasureObject): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
+    inline def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
     
-    @scala.inline
-    def setTuple(value: js.Array[String]): Self = StObject.set(x, "tuple", value.asInstanceOf[js.Any])
+    inline def setTuple(value: js.Array[String]): Self = StObject.set(x, "tuple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTupleVarargs(value: String*): Self = StObject.set(x, "tuple", js.Array(value :_*))
+    inline def setTupleVarargs(value: String*): Self = StObject.set(x, "tuple", js.Array(value :_*))
   }
 }

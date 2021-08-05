@@ -12,8 +12,7 @@ object captchaTestComponentTestDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def CaptchaTestInstanceDriverFactory(base: UniDriver[js.Any]): CaptchaTestComponentDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("CaptchaTestInstanceDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[CaptchaTestComponentDriver]
+  inline def CaptchaTestInstanceDriverFactory(base: UniDriver[js.Any]): CaptchaTestComponentDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("CaptchaTestInstanceDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[CaptchaTestComponentDriver]
   
   trait CaptchaTestComponentDriver
     extends StObject
@@ -31,8 +30,7 @@ object captchaTestComponentTestDriverMod {
   }
   object CaptchaTestComponentDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickOnCaptcha: () => js.Promise[js.Any],
       element: () => js.Promise[js.Any],
@@ -46,23 +44,17 @@ object captchaTestComponentTestDriverMod {
       __obj.asInstanceOf[CaptchaTestComponentDriver]
     }
     
-    @scala.inline
-    implicit class CaptchaTestComponentDriverMutableBuilder[Self <: CaptchaTestComponentDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CaptchaTestComponentDriver](x: Self) {
       
-      @scala.inline
-      def setClickOnCaptcha(value: () => js.Promise[js.Any]): Self = StObject.set(x, "clickOnCaptcha", js.Any.fromFunction0(value))
+      inline def setClickOnCaptcha(value: () => js.Promise[js.Any]): Self = StObject.set(x, "clickOnCaptcha", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCaptchaRendered(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCaptchaRendered", js.Any.fromFunction0(value))
+      inline def setIsCaptchaRendered(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCaptchaRendered", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCaptchaResetted(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCaptchaResetted", js.Any.fromFunction0(value))
+      inline def setIsCaptchaResetted(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCaptchaResetted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCaptchaVerified(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCaptchaVerified", js.Any.fromFunction0(value))
+      inline def setIsCaptchaVerified(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCaptchaVerified", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResetCaptcha(value: () => js.Promise[js.Any]): Self = StObject.set(x, "resetCaptcha", js.Any.fromFunction0(value))
+      inline def setResetCaptcha(value: () => js.Promise[js.Any]): Self = StObject.set(x, "resetCaptcha", js.Any.fromFunction0(value))
     }
   }
 }

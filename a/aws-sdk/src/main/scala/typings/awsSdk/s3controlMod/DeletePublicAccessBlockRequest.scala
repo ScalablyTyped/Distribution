@@ -13,16 +13,13 @@ trait DeletePublicAccessBlockRequest extends StObject {
 }
 object DeletePublicAccessBlockRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId): DeletePublicAccessBlockRequest = {
+  inline def apply(AccountId: AccountId): DeletePublicAccessBlockRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePublicAccessBlockRequest]
   }
   
-  @scala.inline
-  implicit class DeletePublicAccessBlockRequestMutableBuilder[Self <: DeletePublicAccessBlockRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePublicAccessBlockRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
   }
 }

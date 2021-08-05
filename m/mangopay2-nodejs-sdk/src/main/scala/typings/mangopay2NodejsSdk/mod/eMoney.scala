@@ -28,8 +28,7 @@ object eMoney {
   }
   object EMoneyData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CreationDate: Double,
       CreditedEMoney: MoneyData,
       DebitedEMoney: MoneyData,
@@ -41,17 +40,13 @@ object eMoney {
       __obj.asInstanceOf[EMoneyData]
     }
     
-    @scala.inline
-    implicit class EMoneyDataMutableBuilder[Self <: EMoneyData] (val x: Self) extends AnyVal {
+    extension [Self <: EMoneyData](x: Self) {
       
-      @scala.inline
-      def setCreditedEMoney(value: MoneyData): Self = StObject.set(x, "CreditedEMoney", value.asInstanceOf[js.Any])
+      inline def setCreditedEMoney(value: MoneyData): Self = StObject.set(x, "CreditedEMoney", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebitedEMoney(value: MoneyData): Self = StObject.set(x, "DebitedEMoney", value.asInstanceOf[js.Any])
+      inline def setDebitedEMoney(value: MoneyData): Self = StObject.set(x, "DebitedEMoney", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     }
   }
 }

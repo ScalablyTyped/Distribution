@@ -13,25 +13,19 @@ trait InRange extends StObject {
 }
 object InRange {
   
-  @scala.inline
-  def apply(): InRange = {
+  inline def apply(): InRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InRange]
   }
   
-  @scala.inline
-  implicit class InRangeMutableBuilder[Self <: InRange] (val x: Self) extends AnyVal {
+  extension [Self <: InRange](x: Self) {
     
-    @scala.inline
-    def setInRange(value: RangeObject): Self = StObject.set(x, "inRange", value.asInstanceOf[js.Any])
+    inline def setInRange(value: RangeObject): Self = StObject.set(x, "inRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInRangeUndefined: Self = StObject.set(x, "inRange", js.undefined)
+    inline def setInRangeUndefined: Self = StObject.set(x, "inRange", js.undefined)
     
-    @scala.inline
-    def setOutOfRange(value: RangeObject): Self = StObject.set(x, "outOfRange", value.asInstanceOf[js.Any])
+    inline def setOutOfRange(value: RangeObject): Self = StObject.set(x, "outOfRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutOfRangeUndefined: Self = StObject.set(x, "outOfRange", js.undefined)
+    inline def setOutOfRangeUndefined: Self = StObject.set(x, "outOfRange", js.undefined)
   }
 }

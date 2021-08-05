@@ -16,8 +16,7 @@ trait Escalation
 }
 object Escalation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     escalationCode: String,
@@ -29,16 +28,12 @@ object Escalation {
     __obj.asInstanceOf[Escalation]
   }
   
-  @scala.inline
-  implicit class EscalationMutableBuilder[Self <: Escalation] (val x: Self) extends AnyVal {
+  extension [Self <: Escalation](x: Self) {
     
-    @scala.inline
-    def setEscalationCode(value: String): Self = StObject.set(x, "escalationCode", value.asInstanceOf[js.Any])
+    inline def setEscalationCode(value: String): Self = StObject.set(x, "escalationCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureRef(value: ItemDefinition): Self = StObject.set(x, "structureRef", value.asInstanceOf[js.Any])
+    inline def setStructureRef(value: ItemDefinition): Self = StObject.set(x, "structureRef", value.asInstanceOf[js.Any])
   }
 }

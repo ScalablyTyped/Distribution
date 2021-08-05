@@ -23,25 +23,19 @@ trait ITreePickerOptions extends StObject {
 }
 object ITreePickerOptions {
   
-  @scala.inline
-  def apply(callback: js.Function, multiPicker: Boolean, section: String, treeAlias: String): ITreePickerOptions = {
+  inline def apply(callback: js.Function, multiPicker: Boolean, section: String, treeAlias: String): ITreePickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], multiPicker = multiPicker.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], treeAlias = treeAlias.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITreePickerOptions]
   }
   
-  @scala.inline
-  implicit class ITreePickerOptionsMutableBuilder[Self <: ITreePickerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ITreePickerOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiPicker(value: Boolean): Self = StObject.set(x, "multiPicker", value.asInstanceOf[js.Any])
+    inline def setMultiPicker(value: Boolean): Self = StObject.set(x, "multiPicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    inline def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeAlias(value: String): Self = StObject.set(x, "treeAlias", value.asInstanceOf[js.Any])
+    inline def setTreeAlias(value: String): Self = StObject.set(x, "treeAlias", value.asInstanceOf[js.Any])
   }
 }

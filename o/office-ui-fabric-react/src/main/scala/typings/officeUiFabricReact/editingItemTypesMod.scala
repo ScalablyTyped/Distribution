@@ -26,35 +26,26 @@ object editingItemTypesMod {
   }
   object IEditingSelectedPeopleItemProps {
     
-    @scala.inline
-    def apply(onEditingComplete: (js.Any, js.Any) => Unit): IEditingSelectedPeopleItemProps = {
+    inline def apply(onEditingComplete: (js.Any, js.Any) => Unit): IEditingSelectedPeopleItemProps = {
       val __obj = js.Dynamic.literal(onEditingComplete = js.Any.fromFunction2(onEditingComplete))
       __obj.asInstanceOf[IEditingSelectedPeopleItemProps]
     }
     
-    @scala.inline
-    implicit class IEditingSelectedPeopleItemPropsMutableBuilder[Self <: IEditingSelectedPeopleItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: IEditingSelectedPeopleItemProps](x: Self) {
       
-      @scala.inline
-      def setFloatingPickerProps(value: IBaseFloatingPickerProps[IPersonaProps]): Self = StObject.set(x, "floatingPickerProps", value.asInstanceOf[js.Any])
+      inline def setFloatingPickerProps(value: IBaseFloatingPickerProps[IPersonaProps]): Self = StObject.set(x, "floatingPickerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatingPickerPropsUndefined: Self = StObject.set(x, "floatingPickerProps", js.undefined)
+      inline def setFloatingPickerPropsUndefined: Self = StObject.set(x, "floatingPickerProps", js.undefined)
       
-      @scala.inline
-      def setGetEditingItemText(value: /* item */ IExtendedPersonaProps => String): Self = StObject.set(x, "getEditingItemText", js.Any.fromFunction1(value))
+      inline def setGetEditingItemText(value: /* item */ IExtendedPersonaProps => String): Self = StObject.set(x, "getEditingItemText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetEditingItemTextUndefined: Self = StObject.set(x, "getEditingItemText", js.undefined)
+      inline def setGetEditingItemTextUndefined: Self = StObject.set(x, "getEditingItemText", js.undefined)
       
-      @scala.inline
-      def setOnEditingComplete(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "onEditingComplete", js.Any.fromFunction2(value))
+      inline def setOnEditingComplete(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "onEditingComplete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderFloatingPicker(value: ComponentType[IBaseFloatingPickerProps[IPersonaProps]]): Self = StObject.set(x, "onRenderFloatingPicker", value.asInstanceOf[js.Any])
+      inline def setOnRenderFloatingPicker(value: ComponentType[IBaseFloatingPickerProps[IPersonaProps]]): Self = StObject.set(x, "onRenderFloatingPicker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRenderFloatingPickerUndefined: Self = StObject.set(x, "onRenderFloatingPicker", js.undefined)
+      inline def setOnRenderFloatingPickerUndefined: Self = StObject.set(x, "onRenderFloatingPicker", js.undefined)
     }
   }
   
@@ -66,32 +57,24 @@ object editingItemTypesMod {
   }
   object IEditingSelectedPeopleItemStyles {
     
-    @scala.inline
-    def apply(): IEditingSelectedPeopleItemStyles = {
+    inline def apply(): IEditingSelectedPeopleItemStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEditingSelectedPeopleItemStyles]
     }
     
-    @scala.inline
-    implicit class IEditingSelectedPeopleItemStylesMutableBuilder[Self <: IEditingSelectedPeopleItemStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IEditingSelectedPeopleItemStyles](x: Self) {
       
-      @scala.inline
-      def setInput(value: IStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: IStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputNull: Self = StObject.set(x, "input", null)
+      inline def setInputNull: Self = StObject.set(x, "input", null)
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
   

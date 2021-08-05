@@ -11,8 +11,6 @@ object gmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
-  @scala.inline
-  def default(opt_options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opt_options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
+  inline def default(opt_options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opt_options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -18,25 +18,19 @@ trait TileLayoutStyle extends StObject {
 }
 object TileLayoutStyle {
   
-  @scala.inline
-  def apply(): TileLayoutStyle = {
+  inline def apply(): TileLayoutStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileLayoutStyle]
   }
   
-  @scala.inline
-  implicit class TileLayoutStyleMutableBuilder[Self <: TileLayoutStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TileLayoutStyle](x: Self) {
     
-    @scala.inline
-    def setGutter(value: GutterStyle): Self = StObject.set(x, "Gutter", value.asInstanceOf[js.Any])
+    inline def setGutter(value: GutterStyle): Self = StObject.set(x, "Gutter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGutterUndefined: Self = StObject.set(x, "Gutter", js.undefined)
+    inline def setGutterUndefined: Self = StObject.set(x, "Gutter", js.undefined)
     
-    @scala.inline
-    def setMargin(value: MarginStyle): Self = StObject.set(x, "Margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: MarginStyle): Self = StObject.set(x, "Margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "Margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "Margin", js.undefined)
   }
 }

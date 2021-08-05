@@ -28,28 +28,23 @@ object utilsMod {
   class StringIdGenerator () extends StObject {
     def this(chars: String) = this()
     
-    val chars: js.Any = js.native
+    /* private */ val chars: js.Any = js.native
     
-    var ids: js.Any = js.native
+    /* private */ var ids: js.Any = js.native
     
-    var increment: js.Any = js.native
+    /* private */ var increment: js.Any = js.native
     
     def next(): String = js.native
   }
   
-  @scala.inline
-  def applyType(`type`: Type): ColumnDefinition & FunctionParamType = ^.asInstanceOf[js.Dynamic].applyDynamic("applyType")(`type`.asInstanceOf[js.Any]).asInstanceOf[ColumnDefinition & FunctionParamType]
-  @scala.inline
-  def applyType(`type`: Type, extendingTypeShorthands: ColumnDefinitions): ColumnDefinition & FunctionParamType = (^.asInstanceOf[js.Dynamic].applyDynamic("applyType")(`type`.asInstanceOf[js.Any], extendingTypeShorthands.asInstanceOf[js.Any])).asInstanceOf[ColumnDefinition & FunctionParamType]
+  inline def applyType(`type`: Type): ColumnDefinition & FunctionParamType = ^.asInstanceOf[js.Dynamic].applyDynamic("applyType")(`type`.asInstanceOf[js.Any]).asInstanceOf[ColumnDefinition & FunctionParamType]
+  inline def applyType(`type`: Type, extendingTypeShorthands: ColumnDefinitions): ColumnDefinition & FunctionParamType = (^.asInstanceOf[js.Dynamic].applyDynamic("applyType")(`type`.asInstanceOf[js.Any], extendingTypeShorthands.asInstanceOf[js.Any])).asInstanceOf[ColumnDefinition & FunctionParamType]
   
-  @scala.inline
-  def applyTypeAdapters(`type`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("applyTypeAdapters")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def applyTypeAdapters(`type`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("applyTypeAdapters")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def createSchemalize(shouldDecamelize: Boolean, shouldQuote: Boolean): js.Function1[/* v */ Name, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSchemalize")(shouldDecamelize.asInstanceOf[js.Any], shouldQuote.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Name, String]]
+  inline def createSchemalize(shouldDecamelize: Boolean, shouldQuote: Boolean): js.Function1[/* v */ Name, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSchemalize")(shouldDecamelize.asInstanceOf[js.Any], shouldQuote.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Name, String]]
   
-  @scala.inline
-  def createTransformer(literal: Literal): js.Function2[
+  inline def createTransformer(literal: Literal): js.Function2[
     /* s */ String, 
     /* d */ js.UndefOr[
       StringDictionary[
@@ -67,35 +62,22 @@ object utilsMod {
     String
   ]]
   
-  @scala.inline
-  def escapeValue(`val`: Value): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[String | Double]
+  inline def escapeValue(`val`: Value): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[String | Double]
   
-  @scala.inline
-  def formatLines(lines: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLines")(lines.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def formatLines(lines: js.Array[String], replace: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLines")(lines.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def formatLines(lines: js.Array[String], replace: String, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLines")(lines.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def formatLines(lines: js.Array[String], replace: Unit, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLines")(lines.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatLines(lines: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLines")(lines.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatLines(lines: js.Array[String], replace: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLines")(lines.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatLines(lines: js.Array[String], replace: String, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLines")(lines.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatLines(lines: js.Array[String], replace: Unit, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLines")(lines.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def formatParams(params: js.Array[FunctionParam], mOptions: MigrationOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatParams")(params.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def formatParams(params: Unit, mOptions: MigrationOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatParams")(params.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatParams(params: js.Array[FunctionParam], mOptions: MigrationOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatParams")(params.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatParams(params: Unit, mOptions: MigrationOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatParams")(params.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getMigrationTableSchema(options: RunnerOption): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMigrationTableSchema")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getMigrationTableSchema(options: RunnerOption): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMigrationTableSchema")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getSchemas(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemas")().asInstanceOf[js.Array[String]]
-  @scala.inline
-  def getSchemas(schema: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemas")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def getSchemas(schema: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemas")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def getSchemas(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemas")().asInstanceOf[js.Array[String]]
+  inline def getSchemas(schema: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemas")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def getSchemas(schema: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemas")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def makeComment(`object`: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeComment")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def makeComment(`object`: String, name: String, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeComment")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def makeComment(`object`: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeComment")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def makeComment(`object`: String, name: String, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeComment")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
 }

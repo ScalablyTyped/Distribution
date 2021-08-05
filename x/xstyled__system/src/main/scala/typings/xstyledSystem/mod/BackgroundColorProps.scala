@@ -20,42 +20,34 @@ trait BackgroundColorProps[TLength] extends StObject {
 }
 object BackgroundColorProps {
   
-  @scala.inline
-  def apply[TLength](): BackgroundColorProps[TLength] = {
+  inline def apply[TLength](): BackgroundColorProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundColorProps[TLength]]
   }
   
-  @scala.inline
-  implicit class BackgroundColorPropsMutableBuilder[Self <: BackgroundColorProps[?], TLength] (val x: Self & BackgroundColorProps[TLength]) extends AnyVal {
+  extension [Self <: BackgroundColorProps[?], TLength](x: Self & BackgroundColorProps[TLength]) {
     
-    @scala.inline
-    def setBackgroundColor(
+    inline def setBackgroundColor(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBackgroundColorVarargs(
+    inline def setBackgroundColorVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any)*
     ): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
     
-    @scala.inline
-    def setBg(
+    inline def setBg(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
+    inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
     
-    @scala.inline
-    def setBgVarargs(
+    inline def setBgVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any)*
     ): Self = StObject.set(x, "bg", js.Array(value :_*))
   }

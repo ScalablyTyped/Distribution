@@ -24,7 +24,7 @@ class IonBackButton protected ()
   /* CompleteClass */
   var disabled: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * The type of the button.
@@ -32,5 +32,5 @@ class IonBackButton protected ()
   /* CompleteClass */
   var `type`: submit | reset | button = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

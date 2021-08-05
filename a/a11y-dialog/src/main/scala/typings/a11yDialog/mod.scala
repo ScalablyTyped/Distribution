@@ -57,17 +57,13 @@ object mod {
     trait EventType extends StObject
     object EventType {
       
-      @scala.inline
-      def create: typings.a11yDialog.a11yDialogStrings.create = "create".asInstanceOf[typings.a11yDialog.a11yDialogStrings.create]
+      inline def create: typings.a11yDialog.a11yDialogStrings.create = "create".asInstanceOf[typings.a11yDialog.a11yDialogStrings.create]
       
-      @scala.inline
-      def destroy: typings.a11yDialog.a11yDialogStrings.destroy = "destroy".asInstanceOf[typings.a11yDialog.a11yDialogStrings.destroy]
+      inline def destroy: typings.a11yDialog.a11yDialogStrings.destroy = "destroy".asInstanceOf[typings.a11yDialog.a11yDialogStrings.destroy]
       
-      @scala.inline
-      def hide: typings.a11yDialog.a11yDialogStrings.hide = "hide".asInstanceOf[typings.a11yDialog.a11yDialogStrings.hide]
+      inline def hide: typings.a11yDialog.a11yDialogStrings.hide = "hide".asInstanceOf[typings.a11yDialog.a11yDialogStrings.hide]
       
-      @scala.inline
-      def show: typings.a11yDialog.a11yDialogStrings.show = "show".asInstanceOf[typings.a11yDialog.a11yDialogStrings.show]
+      inline def show: typings.a11yDialog.a11yDialogStrings.show = "show".asInstanceOf[typings.a11yDialog.a11yDialogStrings.show]
     }
     
     type Targets = NodeList | Element | String

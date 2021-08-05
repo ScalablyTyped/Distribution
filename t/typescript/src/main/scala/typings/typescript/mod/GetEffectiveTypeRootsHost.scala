@@ -12,25 +12,19 @@ trait GetEffectiveTypeRootsHost extends StObject {
 }
 object GetEffectiveTypeRootsHost {
   
-  @scala.inline
-  def apply(): GetEffectiveTypeRootsHost = {
+  inline def apply(): GetEffectiveTypeRootsHost = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEffectiveTypeRootsHost]
   }
   
-  @scala.inline
-  implicit class GetEffectiveTypeRootsHostMutableBuilder[Self <: GetEffectiveTypeRootsHost] (val x: Self) extends AnyVal {
+  extension [Self <: GetEffectiveTypeRootsHost](x: Self) {
     
-    @scala.inline
-    def setDirectoryExists(value: /* directoryName */ java.lang.String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
+    inline def setDirectoryExists(value: /* directoryName */ java.lang.String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDirectoryExistsUndefined: Self = StObject.set(x, "directoryExists", js.undefined)
+    inline def setDirectoryExistsUndefined: Self = StObject.set(x, "directoryExists", js.undefined)
     
-    @scala.inline
-    def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
+    inline def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentDirectoryUndefined: Self = StObject.set(x, "getCurrentDirectory", js.undefined)
+    inline def setGetCurrentDirectoryUndefined: Self = StObject.set(x, "getCurrentDirectory", js.undefined)
   }
 }

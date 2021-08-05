@@ -31,8 +31,7 @@ trait XTextDocument
 }
 object XTextDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Args: SafeArray[PropertyValue],
     CurrentController: XController,
     CurrentSelection: XInterface,
@@ -62,16 +61,12 @@ object XTextDocument {
     __obj.asInstanceOf[XTextDocument]
   }
   
-  @scala.inline
-  implicit class XTextDocumentMutableBuilder[Self <: XTextDocument] (val x: Self) extends AnyVal {
+  extension [Self <: XTextDocument](x: Self) {
     
-    @scala.inline
-    def setGetText(value: () => XText): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => XText): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReformat(value: () => Unit): Self = StObject.set(x, "reformat", js.Any.fromFunction0(value))
+    inline def setReformat(value: () => Unit): Self = StObject.set(x, "reformat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setText(value: XText): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: XText): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

@@ -19,14 +19,11 @@ object localeMod {
   trait DefaultFormats extends StObject
   object DefaultFormats {
     
-    @scala.inline
-    def long: typings.javascriptTimeAgo.javascriptTimeAgoStrings.long = "long".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.long]
+    inline def long: typings.javascriptTimeAgo.javascriptTimeAgoStrings.long = "long".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.long]
     
-    @scala.inline
-    def narrow: typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow = "narrow".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow]
+    inline def narrow: typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow = "narrow".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow]
     
-    @scala.inline
-    def short: typings.javascriptTimeAgo.javascriptTimeAgoStrings.short = "short".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.short]
+    inline def short: typings.javascriptTimeAgo.javascriptTimeAgoStrings.short = "short".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.short]
   }
   
   trait Duration extends StObject {
@@ -51,8 +48,7 @@ object localeMod {
   }
   object Duration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       day: Tense,
       hour: Tense,
       minute: Tense,
@@ -66,38 +62,27 @@ object localeMod {
       __obj.asInstanceOf[Duration]
     }
     
-    @scala.inline
-    implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
+    extension [Self <: Duration](x: Self) {
       
-      @scala.inline
-      def setDay(value: Tense): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: Tense): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlavour(value: Formats): Self = StObject.set(x, "flavour", value.asInstanceOf[js.Any])
+      inline def setFlavour(value: Formats): Self = StObject.set(x, "flavour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlavourUndefined: Self = StObject.set(x, "flavour", js.undefined)
+      inline def setFlavourUndefined: Self = StObject.set(x, "flavour", js.undefined)
       
-      @scala.inline
-      def setHour(value: Tense): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: Tense): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinute(value: Tense): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: Tense): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: Tense): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: Tense): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuarter(value: Tense): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
+      inline def setQuarter(value: Tense): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecond(value: Tense): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: Tense): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeek(value: Tense): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+      inline def setWeek(value: Tense): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: Tense): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: Tense): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,20 +96,15 @@ object localeMod {
   trait ExtendedFormats extends StObject
   object ExtendedFormats {
     
-    @scala.inline
-    def `long-convenient`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-convenient` = "long-convenient".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-convenient`]
+    inline def `long-convenient`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-convenient` = "long-convenient".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-convenient`]
     
-    @scala.inline
-    def `long-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-time` = "long-time".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-time`]
+    inline def `long-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-time` = "long-time".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-time`]
     
-    @scala.inline
-    def `short-convenient`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-convenient` = "short-convenient".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-convenient`]
+    inline def `short-convenient`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-convenient` = "short-convenient".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-convenient`]
     
-    @scala.inline
-    def `short-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time` = "short-time".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time`]
+    inline def `short-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time` = "short-time".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time`]
     
-    @scala.inline
-    def tiny: typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny = "tiny".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny]
+    inline def tiny: typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny = "tiny".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -140,29 +120,21 @@ object localeMod {
   trait Formats extends StObject
   object Formats {
     
-    @scala.inline
-    def long: typings.javascriptTimeAgo.javascriptTimeAgoStrings.long = "long".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.long]
+    inline def long: typings.javascriptTimeAgo.javascriptTimeAgoStrings.long = "long".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.long]
     
-    @scala.inline
-    def `long-convenient`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-convenient` = "long-convenient".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-convenient`]
+    inline def `long-convenient`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-convenient` = "long-convenient".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-convenient`]
     
-    @scala.inline
-    def `long-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-time` = "long-time".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-time`]
+    inline def `long-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-time` = "long-time".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-time`]
     
-    @scala.inline
-    def narrow: typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow = "narrow".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow]
+    inline def narrow: typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow = "narrow".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow]
     
-    @scala.inline
-    def short: typings.javascriptTimeAgo.javascriptTimeAgoStrings.short = "short".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.short]
+    inline def short: typings.javascriptTimeAgo.javascriptTimeAgoStrings.short = "short".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.short]
     
-    @scala.inline
-    def `short-convenient`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-convenient` = "short-convenient".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-convenient`]
+    inline def `short-convenient`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-convenient` = "short-convenient".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-convenient`]
     
-    @scala.inline
-    def `short-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time` = "short-time".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time`]
+    inline def `short-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time` = "short-time".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time`]
     
-    @scala.inline
-    def tiny: typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny = "tiny".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny]
+    inline def tiny: typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny = "tiny".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny]
   }
   
   trait Locale extends StObject {
@@ -189,68 +161,48 @@ object localeMod {
   }
   object Locale {
     
-    @scala.inline
-    def apply(locale: String, quantify: Double => one | two | few | other): Locale = {
+    inline def apply(locale: String, quantify: Double => one | two | few | other): Locale = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], quantify = js.Any.fromFunction1(quantify))
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLong(value: Duration): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+      inline def setLong(value: Duration): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLong-convenient`(value: Duration): Self = StObject.set(x, "long-convenient", value.asInstanceOf[js.Any])
+      inline def `setLong-convenient`(value: Duration): Self = StObject.set(x, "long-convenient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLong-convenientUndefined`: Self = StObject.set(x, "long-convenient", js.undefined)
+      inline def `setLong-convenientUndefined`: Self = StObject.set(x, "long-convenient", js.undefined)
       
-      @scala.inline
-      def `setLong-time`(value: Duration): Self = StObject.set(x, "long-time", value.asInstanceOf[js.Any])
+      inline def `setLong-time`(value: Duration): Self = StObject.set(x, "long-time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLong-timeUndefined`: Self = StObject.set(x, "long-time", js.undefined)
+      inline def `setLong-timeUndefined`: Self = StObject.set(x, "long-time", js.undefined)
       
-      @scala.inline
-      def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
+      inline def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
       
-      @scala.inline
-      def setNarrow(value: Duration): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
+      inline def setNarrow(value: Duration): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNarrowUndefined: Self = StObject.set(x, "narrow", js.undefined)
+      inline def setNarrowUndefined: Self = StObject.set(x, "narrow", js.undefined)
       
-      @scala.inline
-      def setQuantify(value: Double => one | two | few | other): Self = StObject.set(x, "quantify", js.Any.fromFunction1(value))
+      inline def setQuantify(value: Double => one | two | few | other): Self = StObject.set(x, "quantify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShort(value: Duration): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      inline def setShort(value: Duration): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShort-convenient`(value: Duration): Self = StObject.set(x, "short-convenient", value.asInstanceOf[js.Any])
+      inline def `setShort-convenient`(value: Duration): Self = StObject.set(x, "short-convenient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShort-convenientUndefined`: Self = StObject.set(x, "short-convenient", js.undefined)
+      inline def `setShort-convenientUndefined`: Self = StObject.set(x, "short-convenient", js.undefined)
       
-      @scala.inline
-      def `setShort-time`(value: Duration): Self = StObject.set(x, "short-time", value.asInstanceOf[js.Any])
+      inline def `setShort-time`(value: Duration): Self = StObject.set(x, "short-time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShort-timeUndefined`: Self = StObject.set(x, "short-time", js.undefined)
+      inline def `setShort-timeUndefined`: Self = StObject.set(x, "short-time", js.undefined)
       
-      @scala.inline
-      def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
+      inline def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
       
-      @scala.inline
-      def setTiny(value: Duration): Self = StObject.set(x, "tiny", value.asInstanceOf[js.Any])
+      inline def setTiny(value: Duration): Self = StObject.set(x, "tiny", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTinyUndefined: Self = StObject.set(x, "tiny", js.undefined)
+      inline def setTinyUndefined: Self = StObject.set(x, "tiny", js.undefined)
     }
   }
   
@@ -266,32 +218,24 @@ object localeMod {
   }
   object QuantifyType {
     
-    @scala.inline
-    def apply(one: String, other: String): QuantifyType = {
+    inline def apply(one: String, other: String): QuantifyType = {
       val __obj = js.Dynamic.literal(one = one.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any])
       __obj.asInstanceOf[QuantifyType]
     }
     
-    @scala.inline
-    implicit class QuantifyTypeMutableBuilder[Self <: QuantifyType] (val x: Self) extends AnyVal {
+    extension [Self <: QuantifyType](x: Self) {
       
-      @scala.inline
-      def setFew(value: String): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
+      inline def setFew(value: String): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
+      inline def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
       
-      @scala.inline
-      def setOne(value: String): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
+      inline def setOne(value: String): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwo(value: String): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
+      inline def setTwo(value: String): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
+      inline def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
     }
   }
   
@@ -309,8 +253,7 @@ object localeMod {
   }
   object RTFFormatter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       locale: String,
       localeMatcher: String,
       numberFormat: StringDictionary[js.Any],
@@ -321,23 +264,17 @@ object localeMod {
       __obj.asInstanceOf[RTFFormatter]
     }
     
-    @scala.inline
-    implicit class RTFFormatterMutableBuilder[Self <: RTFFormatter] (val x: Self) extends AnyVal {
+    extension [Self <: RTFFormatter](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleMatcher(value: String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+      inline def setLocaleMatcher(value: String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberFormat(value: StringDictionary[js.Any]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+      inline def setNumberFormat(value: StringDictionary[js.Any]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumeric(value: String): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+      inline def setNumeric(value: String): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: DefaultFormats): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: DefaultFormats): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -355,44 +292,32 @@ object localeMod {
   }
   object Tense {
     
-    @scala.inline
-    def apply(): Tense = {
+    inline def apply(): Tense = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Tense]
     }
     
-    @scala.inline
-    implicit class TenseMutableBuilder[Self <: Tense] (val x: Self) extends AnyVal {
+    extension [Self <: Tense](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: QuantifyType | String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: QuantifyType | String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setFuture(value: QuantifyType | String): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+      inline def setFuture(value: QuantifyType | String): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFutureUndefined: Self = StObject.set(x, "future", js.undefined)
+      inline def setFutureUndefined: Self = StObject.set(x, "future", js.undefined)
       
-      @scala.inline
-      def setNext(value: QuantifyType | String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: QuantifyType | String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setPast(value: QuantifyType | String): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
+      inline def setPast(value: QuantifyType | String): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPastUndefined: Self = StObject.set(x, "past", js.undefined)
+      inline def setPastUndefined: Self = StObject.set(x, "past", js.undefined)
       
-      @scala.inline
-      def setPrevious(value: QuantifyType | String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: QuantifyType | String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     }
   }
   
@@ -410,31 +335,22 @@ object localeMod {
   trait TimeUnit extends StObject
   object TimeUnit {
     
-    @scala.inline
-    def day: typings.javascriptTimeAgo.javascriptTimeAgoStrings.day = "day".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.day]
+    inline def day: typings.javascriptTimeAgo.javascriptTimeAgoStrings.day = "day".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.day]
     
-    @scala.inline
-    def hour: typings.javascriptTimeAgo.javascriptTimeAgoStrings.hour = "hour".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.hour]
+    inline def hour: typings.javascriptTimeAgo.javascriptTimeAgoStrings.hour = "hour".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.hour]
     
-    @scala.inline
-    def minute: typings.javascriptTimeAgo.javascriptTimeAgoStrings.minute = "minute".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.minute]
+    inline def minute: typings.javascriptTimeAgo.javascriptTimeAgoStrings.minute = "minute".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.minute]
     
-    @scala.inline
-    def month: typings.javascriptTimeAgo.javascriptTimeAgoStrings.month = "month".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.month]
+    inline def month: typings.javascriptTimeAgo.javascriptTimeAgoStrings.month = "month".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.month]
     
-    @scala.inline
-    def now: typings.javascriptTimeAgo.javascriptTimeAgoStrings.now = "now".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.now]
+    inline def now: typings.javascriptTimeAgo.javascriptTimeAgoStrings.now = "now".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.now]
     
-    @scala.inline
-    def quarter: typings.javascriptTimeAgo.javascriptTimeAgoStrings.quarter = "quarter".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.quarter]
+    inline def quarter: typings.javascriptTimeAgo.javascriptTimeAgoStrings.quarter = "quarter".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.quarter]
     
-    @scala.inline
-    def second: typings.javascriptTimeAgo.javascriptTimeAgoStrings.second = "second".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.second]
+    inline def second: typings.javascriptTimeAgo.javascriptTimeAgoStrings.second = "second".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.second]
     
-    @scala.inline
-    def week: typings.javascriptTimeAgo.javascriptTimeAgoStrings.week = "week".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.week]
+    inline def week: typings.javascriptTimeAgo.javascriptTimeAgoStrings.week = "week".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.week]
     
-    @scala.inline
-    def year: typings.javascriptTimeAgo.javascriptTimeAgoStrings.year = "year".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.year]
+    inline def year: typings.javascriptTimeAgo.javascriptTimeAgoStrings.year = "year".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.year]
   }
 }

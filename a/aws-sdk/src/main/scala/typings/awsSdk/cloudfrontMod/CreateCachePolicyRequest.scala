@@ -13,16 +13,13 @@ trait CreateCachePolicyRequest extends StObject {
 }
 object CreateCachePolicyRequest {
   
-  @scala.inline
-  def apply(CachePolicyConfig: CachePolicyConfig): CreateCachePolicyRequest = {
+  inline def apply(CachePolicyConfig: CachePolicyConfig): CreateCachePolicyRequest = {
     val __obj = js.Dynamic.literal(CachePolicyConfig = CachePolicyConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCachePolicyRequest]
   }
   
-  @scala.inline
-  implicit class CreateCachePolicyRequestMutableBuilder[Self <: CreateCachePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCachePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setCachePolicyConfig(value: CachePolicyConfig): Self = StObject.set(x, "CachePolicyConfig", value.asInstanceOf[js.Any])
+    inline def setCachePolicyConfig(value: CachePolicyConfig): Self = StObject.set(x, "CachePolicyConfig", value.asInstanceOf[js.Any])
   }
 }

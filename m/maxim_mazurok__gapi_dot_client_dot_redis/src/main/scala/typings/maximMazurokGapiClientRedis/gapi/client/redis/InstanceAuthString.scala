@@ -11,19 +11,15 @@ trait InstanceAuthString extends StObject {
 }
 object InstanceAuthString {
   
-  @scala.inline
-  def apply(): InstanceAuthString = {
+  inline def apply(): InstanceAuthString = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceAuthString]
   }
   
-  @scala.inline
-  implicit class InstanceAuthStringMutableBuilder[Self <: InstanceAuthString] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceAuthString](x: Self) {
     
-    @scala.inline
-    def setAuthString(value: String): Self = StObject.set(x, "authString", value.asInstanceOf[js.Any])
+    inline def setAuthString(value: String): Self = StObject.set(x, "authString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthStringUndefined: Self = StObject.set(x, "authString", js.undefined)
+    inline def setAuthStringUndefined: Self = StObject.set(x, "authString", js.undefined)
   }
 }

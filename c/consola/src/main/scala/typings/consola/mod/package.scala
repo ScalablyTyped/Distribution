@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def default: typings.consola.mod.Consola = typings.consola.mod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.consola.mod.Consola]
+inline def default: typings.consola.mod.Consola = typings.consola.mod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.consola.mod.Consola]
 
 type BrowserReporterOptions = js.Object
 

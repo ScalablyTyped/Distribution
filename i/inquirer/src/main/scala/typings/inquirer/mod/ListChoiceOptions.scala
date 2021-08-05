@@ -21,22 +21,17 @@ trait ListChoiceOptions[T /* <: Answers */]
 }
 object ListChoiceOptions {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): ListChoiceOptions[T] = {
+  inline def apply[T /* <: Answers */](): ListChoiceOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListChoiceOptions[T]]
   }
   
-  @scala.inline
-  implicit class ListChoiceOptionsMutableBuilder[Self <: ListChoiceOptions[?], T /* <: Answers */] (val x: Self & ListChoiceOptions[T]) extends AnyVal {
+  extension [Self <: ListChoiceOptions[?], T /* <: Answers */](x: Self & ListChoiceOptions[T]) {
     
-    @scala.inline
-    def setDisabled(value: DynamicQuestionProperty[Boolean | String, T]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: DynamicQuestionProperty[Boolean | String, T]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledFunction1(value: T => Boolean | String): Self = StObject.set(x, "disabled", js.Any.fromFunction1(value))
+    inline def setDisabledFunction1(value: T => Boolean | String): Self = StObject.set(x, "disabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
   }
 }

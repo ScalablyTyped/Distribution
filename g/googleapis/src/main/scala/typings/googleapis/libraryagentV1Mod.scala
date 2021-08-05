@@ -274,17 +274,14 @@ object libraryagentV1Mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
     }
     
@@ -304,26 +301,20 @@ object libraryagentV1Mod {
     }
     object ParamsResourceShelvesBooksBorrow {
       
-      @scala.inline
-      def apply(): ParamsResourceShelvesBooksBorrow = {
+      inline def apply(): ParamsResourceShelvesBooksBorrow = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceShelvesBooksBorrow]
       }
       
-      @scala.inline
-      implicit class ParamsResourceShelvesBooksBorrowMutableBuilder[Self <: ParamsResourceShelvesBooksBorrow] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceShelvesBooksBorrow](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       }
     }
     
@@ -343,26 +334,20 @@ object libraryagentV1Mod {
     }
     object ParamsResourceShelvesBooksGet {
       
-      @scala.inline
-      def apply(): ParamsResourceShelvesBooksGet = {
+      inline def apply(): ParamsResourceShelvesBooksGet = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceShelvesBooksGet]
       }
       
-      @scala.inline
-      implicit class ParamsResourceShelvesBooksGetMutableBuilder[Self <: ParamsResourceShelvesBooksGet] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceShelvesBooksGet](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       }
     }
     
@@ -395,38 +380,28 @@ object libraryagentV1Mod {
     }
     object ParamsResourceShelvesBooksList {
       
-      @scala.inline
-      def apply(): ParamsResourceShelvesBooksList = {
+      inline def apply(): ParamsResourceShelvesBooksList = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceShelvesBooksList]
       }
       
-      @scala.inline
-      implicit class ParamsResourceShelvesBooksListMutableBuilder[Self <: ParamsResourceShelvesBooksList] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceShelvesBooksList](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+        inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+        inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
         
-        @scala.inline
-        def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+        inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+        inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
         
-        @scala.inline
-        def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+        inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       }
     }
     
@@ -446,26 +421,20 @@ object libraryagentV1Mod {
     }
     object ParamsResourceShelvesBooksReturn {
       
-      @scala.inline
-      def apply(): ParamsResourceShelvesBooksReturn = {
+      inline def apply(): ParamsResourceShelvesBooksReturn = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceShelvesBooksReturn]
       }
       
-      @scala.inline
-      implicit class ParamsResourceShelvesBooksReturnMutableBuilder[Self <: ParamsResourceShelvesBooksReturn] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceShelvesBooksReturn](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       }
     }
     
@@ -485,26 +454,20 @@ object libraryagentV1Mod {
     }
     object ParamsResourceShelvesGet {
       
-      @scala.inline
-      def apply(): ParamsResourceShelvesGet = {
+      inline def apply(): ParamsResourceShelvesGet = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceShelvesGet]
       }
       
-      @scala.inline
-      implicit class ParamsResourceShelvesGetMutableBuilder[Self <: ParamsResourceShelvesGet] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceShelvesGet](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       }
     }
     
@@ -532,32 +495,24 @@ object libraryagentV1Mod {
     }
     object ParamsResourceShelvesList {
       
-      @scala.inline
-      def apply(): ParamsResourceShelvesList = {
+      inline def apply(): ParamsResourceShelvesList = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceShelvesList]
       }
       
-      @scala.inline
-      implicit class ParamsResourceShelvesListMutableBuilder[Self <: ParamsResourceShelvesList] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceShelvesList](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+        inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+        inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
         
-        @scala.inline
-        def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+        inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+        inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
       }
     }
     
@@ -590,38 +545,28 @@ object libraryagentV1Mod {
     }
     object SchemaGoogleExampleLibraryagentV1Book {
       
-      @scala.inline
-      def apply(): SchemaGoogleExampleLibraryagentV1Book = {
+      inline def apply(): SchemaGoogleExampleLibraryagentV1Book = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaGoogleExampleLibraryagentV1Book]
       }
       
-      @scala.inline
-      implicit class SchemaGoogleExampleLibraryagentV1BookMutableBuilder[Self <: SchemaGoogleExampleLibraryagentV1Book] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaGoogleExampleLibraryagentV1Book](x: Self) {
         
-        @scala.inline
-        def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+        inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+        inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+        inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+        inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -644,29 +589,22 @@ object libraryagentV1Mod {
     }
     object SchemaGoogleExampleLibraryagentV1ListBooksResponse {
       
-      @scala.inline
-      def apply(): SchemaGoogleExampleLibraryagentV1ListBooksResponse = {
+      inline def apply(): SchemaGoogleExampleLibraryagentV1ListBooksResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaGoogleExampleLibraryagentV1ListBooksResponse]
       }
       
-      @scala.inline
-      implicit class SchemaGoogleExampleLibraryagentV1ListBooksResponseMutableBuilder[Self <: SchemaGoogleExampleLibraryagentV1ListBooksResponse] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaGoogleExampleLibraryagentV1ListBooksResponse](x: Self) {
         
-        @scala.inline
-        def setBooks(value: js.Array[SchemaGoogleExampleLibraryagentV1Book]): Self = StObject.set(x, "books", value.asInstanceOf[js.Any])
+        inline def setBooks(value: js.Array[SchemaGoogleExampleLibraryagentV1Book]): Self = StObject.set(x, "books", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBooksUndefined: Self = StObject.set(x, "books", js.undefined)
+        inline def setBooksUndefined: Self = StObject.set(x, "books", js.undefined)
         
-        @scala.inline
-        def setBooksVarargs(value: SchemaGoogleExampleLibraryagentV1Book*): Self = StObject.set(x, "books", js.Array(value :_*))
+        inline def setBooksVarargs(value: SchemaGoogleExampleLibraryagentV1Book*): Self = StObject.set(x, "books", js.Array(value :_*))
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -689,29 +627,22 @@ object libraryagentV1Mod {
     }
     object SchemaGoogleExampleLibraryagentV1ListShelvesResponse {
       
-      @scala.inline
-      def apply(): SchemaGoogleExampleLibraryagentV1ListShelvesResponse = {
+      inline def apply(): SchemaGoogleExampleLibraryagentV1ListShelvesResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaGoogleExampleLibraryagentV1ListShelvesResponse]
       }
       
-      @scala.inline
-      implicit class SchemaGoogleExampleLibraryagentV1ListShelvesResponseMutableBuilder[Self <: SchemaGoogleExampleLibraryagentV1ListShelvesResponse] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaGoogleExampleLibraryagentV1ListShelvesResponse](x: Self) {
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setShelves(value: js.Array[SchemaGoogleExampleLibraryagentV1Shelf]): Self = StObject.set(x, "shelves", value.asInstanceOf[js.Any])
+        inline def setShelves(value: js.Array[SchemaGoogleExampleLibraryagentV1Shelf]): Self = StObject.set(x, "shelves", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShelvesUndefined: Self = StObject.set(x, "shelves", js.undefined)
+        inline def setShelvesUndefined: Self = StObject.set(x, "shelves", js.undefined)
         
-        @scala.inline
-        def setShelvesVarargs(value: SchemaGoogleExampleLibraryagentV1Shelf*): Self = StObject.set(x, "shelves", js.Array(value :_*))
+        inline def setShelvesVarargs(value: SchemaGoogleExampleLibraryagentV1Shelf*): Self = StObject.set(x, "shelves", js.Array(value :_*))
       }
     }
     
@@ -733,26 +664,20 @@ object libraryagentV1Mod {
     }
     object SchemaGoogleExampleLibraryagentV1Shelf {
       
-      @scala.inline
-      def apply(): SchemaGoogleExampleLibraryagentV1Shelf = {
+      inline def apply(): SchemaGoogleExampleLibraryagentV1Shelf = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaGoogleExampleLibraryagentV1Shelf]
       }
       
-      @scala.inline
-      implicit class SchemaGoogleExampleLibraryagentV1ShelfMutableBuilder[Self <: SchemaGoogleExampleLibraryagentV1Shelf] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaGoogleExampleLibraryagentV1Shelf](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+        inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+        inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       }
     }
     
@@ -820,80 +745,56 @@ object libraryagentV1Mod {
     }
     object StandardParameters {
       
-      @scala.inline
-      def apply(): StandardParameters = {
+      inline def apply(): StandardParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StandardParameters]
       }
       
-      @scala.inline
-      implicit class StandardParametersMutableBuilder[Self <: StandardParameters] (val x: Self) extends AnyVal {
+      extension [Self <: StandardParameters](x: Self) {
         
-        @scala.inline
-        def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+        inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+        inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
         
-        @scala.inline
-        def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+        inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+        inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
         
-        @scala.inline
-        def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+        inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+        inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
         
-        @scala.inline
-        def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+        inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+        inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+        inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+        inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
         
-        @scala.inline
-        def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+        inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+        inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
         
-        @scala.inline
-        def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+        inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+        inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
         
-        @scala.inline
-        def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+        inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+        inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
         
-        @scala.inline
-        def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+        inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+        inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
       }
     }
   }

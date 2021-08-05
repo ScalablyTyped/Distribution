@@ -23,34 +23,25 @@ trait DescribeFleetCapacityInput extends StObject {
 }
 object DescribeFleetCapacityInput {
   
-  @scala.inline
-  def apply(): DescribeFleetCapacityInput = {
+  inline def apply(): DescribeFleetCapacityInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFleetCapacityInput]
   }
   
-  @scala.inline
-  implicit class DescribeFleetCapacityInputMutableBuilder[Self <: DescribeFleetCapacityInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFleetCapacityInput](x: Self) {
     
-    @scala.inline
-    def setFleetIds(value: FleetIdOrArnList): Self = StObject.set(x, "FleetIds", value.asInstanceOf[js.Any])
+    inline def setFleetIds(value: FleetIdOrArnList): Self = StObject.set(x, "FleetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdsUndefined: Self = StObject.set(x, "FleetIds", js.undefined)
+    inline def setFleetIdsUndefined: Self = StObject.set(x, "FleetIds", js.undefined)
     
-    @scala.inline
-    def setFleetIdsVarargs(value: FleetIdOrArn*): Self = StObject.set(x, "FleetIds", js.Array(value :_*))
+    inline def setFleetIdsVarargs(value: FleetIdOrArn*): Self = StObject.set(x, "FleetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

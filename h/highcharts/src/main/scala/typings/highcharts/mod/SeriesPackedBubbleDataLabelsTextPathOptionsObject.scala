@@ -14,19 +14,15 @@ trait SeriesPackedBubbleDataLabelsTextPathOptionsObject extends StObject {
 }
 object SeriesPackedBubbleDataLabelsTextPathOptionsObject {
   
-  @scala.inline
-  def apply(): SeriesPackedBubbleDataLabelsTextPathOptionsObject = {
+  inline def apply(): SeriesPackedBubbleDataLabelsTextPathOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesPackedBubbleDataLabelsTextPathOptionsObject]
   }
   
-  @scala.inline
-  implicit class SeriesPackedBubbleDataLabelsTextPathOptionsObjectMutableBuilder[Self <: SeriesPackedBubbleDataLabelsTextPathOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesPackedBubbleDataLabelsTextPathOptionsObject](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

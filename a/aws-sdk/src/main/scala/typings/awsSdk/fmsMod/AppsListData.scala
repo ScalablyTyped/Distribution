@@ -43,52 +43,37 @@ trait AppsListData extends StObject {
 }
 object AppsListData {
   
-  @scala.inline
-  def apply(AppsList: AppsList, ListName: ResourceName): AppsListData = {
+  inline def apply(AppsList: AppsList, ListName: ResourceName): AppsListData = {
     val __obj = js.Dynamic.literal(AppsList = AppsList.asInstanceOf[js.Any], ListName = ListName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsListData]
   }
   
-  @scala.inline
-  implicit class AppsListDataMutableBuilder[Self <: AppsListData] (val x: Self) extends AnyVal {
+  extension [Self <: AppsListData](x: Self) {
     
-    @scala.inline
-    def setAppsList(value: AppsList): Self = StObject.set(x, "AppsList", value.asInstanceOf[js.Any])
+    inline def setAppsList(value: AppsList): Self = StObject.set(x, "AppsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsListVarargs(value: App*): Self = StObject.set(x, "AppsList", js.Array(value :_*))
+    inline def setAppsListVarargs(value: App*): Self = StObject.set(x, "AppsList", js.Array(value :_*))
     
-    @scala.inline
-    def setCreateTime(value: TimeStamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: TimeStamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTime(value: TimeStamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: TimeStamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
+    inline def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIdUndefined: Self = StObject.set(x, "ListId", js.undefined)
+    inline def setListIdUndefined: Self = StObject.set(x, "ListId", js.undefined)
     
-    @scala.inline
-    def setListName(value: ResourceName): Self = StObject.set(x, "ListName", value.asInstanceOf[js.Any])
+    inline def setListName(value: ResourceName): Self = StObject.set(x, "ListName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUpdateToken(value: UpdateToken): Self = StObject.set(x, "ListUpdateToken", value.asInstanceOf[js.Any])
+    inline def setListUpdateToken(value: UpdateToken): Self = StObject.set(x, "ListUpdateToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUpdateTokenUndefined: Self = StObject.set(x, "ListUpdateToken", js.undefined)
+    inline def setListUpdateTokenUndefined: Self = StObject.set(x, "ListUpdateToken", js.undefined)
     
-    @scala.inline
-    def setPreviousAppsList(value: PreviousAppsList): Self = StObject.set(x, "PreviousAppsList", value.asInstanceOf[js.Any])
+    inline def setPreviousAppsList(value: PreviousAppsList): Self = StObject.set(x, "PreviousAppsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousAppsListUndefined: Self = StObject.set(x, "PreviousAppsList", js.undefined)
+    inline def setPreviousAppsListUndefined: Self = StObject.set(x, "PreviousAppsList", js.undefined)
   }
 }

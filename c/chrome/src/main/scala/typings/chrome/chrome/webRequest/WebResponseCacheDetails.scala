@@ -19,8 +19,7 @@ trait WebResponseCacheDetails
 }
 object WebResponseCacheDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     frameId: Double,
     fromCache: Boolean,
     method: String,
@@ -38,16 +37,12 @@ object WebResponseCacheDetails {
     __obj.asInstanceOf[WebResponseCacheDetails]
   }
   
-  @scala.inline
-  implicit class WebResponseCacheDetailsMutableBuilder[Self <: WebResponseCacheDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WebResponseCacheDetails](x: Self) {
     
-    @scala.inline
-    def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
+    inline def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+    inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
   }
 }

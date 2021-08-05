@@ -102,8 +102,7 @@ object global {
       * @param {Object} obj DOM element like object to add handler to.
       * @param {String} name Class name
       */
-    @scala.inline
-    def addClass(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def addClass(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Adds an event handler to the specified object and store reference to the handler
@@ -116,10 +115,8 @@ object global {
       * @param {Function} callback Function to call when event occurs.
       * @param {String} (optional) key that might be used to add specifity to the event record.
       */
-    @scala.inline
-    def addEvent(obj: js.Any, name: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def addEvent(obj: js.Any, name: String, callback: js.Function, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def addEvent(obj: js.Any, name: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def addEvent(obj: js.Any, name: String, callback: js.Function, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Registers a filter that will be executed for each file added to the queue.
@@ -133,8 +130,7 @@ object global {
       * @param {String} name Name of the filter by which it can be referenced in settings.filters
       * @param {String} cb Callback - the actual routine that every added file must pass
       */
-    @scala.inline
-    def addFileFilter(name: String, cb: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFileFilter")(name.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addFileFilter(name: String, cb: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFileFilter")(name.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Extends the language pack object with new items.
@@ -144,8 +140,7 @@ object global {
       * @param {Object} pack Language pack items to add.
       * @return {Object} Extended language pack object.
       */
-    @scala.inline
-    def addI18n(pack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addI18n")(pack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def addI18n(pack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addI18n")(pack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Builds a full url out of a base URL and an object with items to append as query string items.
@@ -156,8 +151,7 @@ object global {
       * @param {Object} items Name/value object to serialize as a querystring.
       * @return {String} String with url + serialized query string items.
       */
-    @scala.inline
-    def buildUrl(url: String, items: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildUrl")(url.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def buildUrl(url: String, items: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildUrl")(url.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Cleans the specified name from national characters (diacritics). The result will be a name with only a-z, 0-9 and _.
@@ -167,8 +161,7 @@ object global {
       * @param {String} s String to clean up.
       * @return {String} Cleaned string.
       */
-    @scala.inline
-    def cleanName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def cleanName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Utility methods **/
     /**
@@ -180,8 +173,7 @@ object global {
       * @param {Object} obj Object to iterate.
       * @param {function} callback Callback function to execute for each item.
       */
-    @scala.inline
-    def each(obj: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def each(obj: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Extends the specified object with another object.
@@ -192,8 +184,7 @@ object global {
       * @param {Object..} obj Multiple objects to extend with.
       * @return {Object} Same as target, the extended object.
       */
-    @scala.inline
-    def extend(target: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def extend(target: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Formats the specified number as a size string for example 1024 becomes 1 KB.
@@ -203,8 +194,7 @@ object global {
       * @param {Number} size Size to format as string.
       * @return {String} Formatted size string.
       */
-    @scala.inline
-    def formatSize(size: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSize")(size.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def formatSize(size: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSize")(size.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Returns the absolute x, y position of an Element. The position will be returned in a object with x, y fields.
@@ -215,8 +205,7 @@ object global {
       * @param {Element} root Optional root element to stop calculations at.
       * @return {object} Absolute position of the specified element object with x, y fields.
       */
-    @scala.inline
-    def getPos(node: Element, root: Element): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPos")(node.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getPos(node: Element, root: Element): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPos")(node.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Returns the size of the specified node in pixels.
@@ -226,8 +215,7 @@ object global {
       * @param {Node} node Node to get the size of.
       * @return {Object} Object with a w and h property.
       */
-    @scala.inline
-    def getSize(node: Node): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getSize(node: Node): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Returns a given computed style of a DOM element.
@@ -237,8 +225,7 @@ object global {
       * @param {Object} obj DOM element like object.
       * @param {String} name Style you want to get from the DOM element
       */
-    @scala.inline
-    def getStyle(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getStyle(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Generates an unique ID. This is 99.99% unique since it takes the current time and 5 random numbers.
@@ -251,8 +238,7 @@ object global {
       * @static
       * @return {String} Virtually unique id.
       */
-    @scala.inline
-    def guid(guid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("guid")(guid.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def guid(guid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("guid")(guid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Checks if specified DOM element has specified class.
@@ -262,8 +248,7 @@ object global {
       * @param {Object} obj DOM element like object to add handler to.
       * @param {String} name Class name
       */
-    @scala.inline
-    def hasClass(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def hasClass(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Find an element in array and return its index if present, otherwise return -1.
@@ -274,8 +259,7 @@ object global {
       * @param {Array} array
       * @return {Int} Index of the element, or -1 if not found
       */
-    @scala.inline
-    def inArray(needle: js.Any, array: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(needle.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def inArray(needle: js.Any, array: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(needle.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       Recieve an array of functions (usually async) to call in sequence, each  function
@@ -288,8 +272,7 @@ object global {
       @param {Array} queue Array of functions to call in sequence
       @param {Function} cb Main callback that is called in the end, or in case of error
       */
-    @scala.inline
-    def inSeries(queue: js.Array[js.Any], callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inSeries")(queue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def inSeries(queue: js.Array[js.Any], callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inSeries")(queue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Checks if object is empty.
@@ -299,15 +282,13 @@ object global {
       * @param {Object} obj Object to check.
       * @return {Boolean}
       */
-    @scala.inline
-    def isEmptyObj(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObj")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isEmptyObj(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObj")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSGlobal("plupload.mimeTypes")
     @js.native
     val mimeTypes: js.Any = js.native
     
-    @scala.inline
-    def parseSize(size: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSize")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def parseSize(size: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSize")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       * Parses the specified size string into a byte value. For example 10kb becomes 10240.
       *
@@ -316,8 +297,7 @@ object global {
       * @param {String|Number} size String to parse or number to just pass through.
       * @return {Number} Size in bytes.
       */
-    @scala.inline
-    def parseSize(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSize")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def parseSize(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSize")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * A way to predict what runtime will be choosen in the current environment with the
@@ -329,8 +309,7 @@ object global {
       * @param {String} [runtimes] Comma-separated list of runtimes to check against
       * @return {String} Type of compatible runtime
       */
-    @scala.inline
-    def predictRuntime(config: js.Any, runtimes: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("predictRuntime")(config.asInstanceOf[js.Any], runtimes.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def predictRuntime(config: js.Any, runtimes: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("predictRuntime")(config.asInstanceOf[js.Any], runtimes.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Remove all kind of events from the specified object
@@ -340,10 +319,8 @@ object global {
       * @param {Object} obj DOM element to remove event listeners from.
       * @param {String} (optional) unique key to match, when removing events.
       */
-    @scala.inline
-    def removeAllEvents(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEvents")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def removeAllEvents(obj: js.Any, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEvents")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def removeAllEvents(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEvents")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def removeAllEvents(obj: js.Any, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEvents")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Removes specified className from specified DOM element.
@@ -353,8 +330,7 @@ object global {
       * @param {Object} obj DOM element like object to add handler to.
       * @param {String} name Class name
       */
-    @scala.inline
-    def removeClass(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def removeClass(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Remove event handler from the specified object. If third argument (callback)
@@ -366,12 +342,9 @@ object global {
       * @param {String} name Name of event listener to remove.
       * @param {Function|String} (optional) might be a callback or unique key to match.
       */
-    @scala.inline
-    def removeEvent(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def removeEvent(obj: js.Any, name: String, optional: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def removeEvent(obj: js.Any, name: String, optional: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def removeEvent(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def removeEvent(obj: js.Any, name: String, optional: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def removeEvent(obj: js.Any, name: String, optional: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Pseudo sprintf implementation - simple way to replace tokens with specified values.
@@ -379,8 +352,7 @@ object global {
       * @param {String} str String with tokens
       * @return {String} String with replaced tokens
       */
-    @scala.inline
-    def sprintf(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sprintf")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def sprintf(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sprintf")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Forces anything into an array.
@@ -390,8 +362,7 @@ object global {
       * @param {Object} obj Object with length field.
       * @return {Array} Array object containing all items.
       */
-    @scala.inline
-    def toArray(obj: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def toArray(obj: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Translates the specified string by checking for the english string in the language pack lookup.
@@ -401,8 +372,7 @@ object global {
       * @param {String} str String to look for.
       * @return {String} Translated string or the input string if it wasn't found.
       */
-    @scala.inline
-    def translate(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def translate(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Gets the true type of the built-in object (better version of typeof).
@@ -413,8 +383,7 @@ object global {
       * @param {Object} o Object to check.
       * @return {String} Object [[Class]]
       */
-    @scala.inline
-    def typeOf(o: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("typeOf")(o.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def typeOf(o: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("typeOf")(o.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSGlobal("plupload.ua")
     @js.native
@@ -428,7 +397,6 @@ object global {
       * @param {String} s String to encode.
       * @return {String} Encoded string.
       */
-    @scala.inline
-    def xmlEncode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlEncode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def xmlEncode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlEncode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

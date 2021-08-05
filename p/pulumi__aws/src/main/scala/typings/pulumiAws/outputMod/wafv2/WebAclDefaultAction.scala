@@ -18,25 +18,19 @@ trait WebAclDefaultAction extends StObject {
 }
 object WebAclDefaultAction {
   
-  @scala.inline
-  def apply(): WebAclDefaultAction = {
+  inline def apply(): WebAclDefaultAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebAclDefaultAction]
   }
   
-  @scala.inline
-  implicit class WebAclDefaultActionMutableBuilder[Self <: WebAclDefaultAction] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclDefaultAction](x: Self) {
     
-    @scala.inline
-    def setAllow(value: WebAclDefaultActionAllow): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: WebAclDefaultActionAllow): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
+    inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
-    @scala.inline
-    def setBlock(value: WebAclDefaultActionBlock): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: WebAclDefaultActionBlock): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+    inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
   }
 }

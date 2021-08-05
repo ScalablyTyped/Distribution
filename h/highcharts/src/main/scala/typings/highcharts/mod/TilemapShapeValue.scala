@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TilemapShapeValue extends StObject
 object TilemapShapeValue {
   
-  @scala.inline
-  def circle: typings.highcharts.highchartsStrings.circle = "circle".asInstanceOf[typings.highcharts.highchartsStrings.circle]
+  inline def circle: typings.highcharts.highchartsStrings.circle = "circle".asInstanceOf[typings.highcharts.highchartsStrings.circle]
   
-  @scala.inline
-  def diamond: typings.highcharts.highchartsStrings.diamond = "diamond".asInstanceOf[typings.highcharts.highchartsStrings.diamond]
+  inline def diamond: typings.highcharts.highchartsStrings.diamond = "diamond".asInstanceOf[typings.highcharts.highchartsStrings.diamond]
   
-  @scala.inline
-  def hexagon: typings.highcharts.highchartsStrings.hexagon = "hexagon".asInstanceOf[typings.highcharts.highchartsStrings.hexagon]
+  inline def hexagon: typings.highcharts.highchartsStrings.hexagon = "hexagon".asInstanceOf[typings.highcharts.highchartsStrings.hexagon]
   
-  @scala.inline
-  def square: typings.highcharts.highchartsStrings.square = "square".asInstanceOf[typings.highcharts.highchartsStrings.square]
+  inline def square: typings.highcharts.highchartsStrings.square = "square".asInstanceOf[typings.highcharts.highchartsStrings.square]
 }

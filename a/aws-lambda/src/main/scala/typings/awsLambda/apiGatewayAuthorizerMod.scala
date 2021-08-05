@@ -27,8 +27,7 @@ object apiGatewayAuthorizerMod {
   trait APIGatewayAuthorizerEvent extends StObject
   object APIGatewayAuthorizerEvent {
     
-    @scala.inline
-    def APIGatewayRequestAuthorizerEvent(
+    inline def APIGatewayRequestAuthorizerEvent(
       httpMethod: String,
       methodArn: String,
       path: String,
@@ -40,8 +39,7 @@ object apiGatewayAuthorizerMod {
       __obj.asInstanceOf[typings.awsLambda.apiGatewayAuthorizerMod.APIGatewayRequestAuthorizerEvent]
     }
     
-    @scala.inline
-    def APIGatewayTokenAuthorizerEvent(authorizationToken: String, methodArn: String): typings.awsLambda.apiGatewayAuthorizerMod.APIGatewayTokenAuthorizerEvent = {
+    inline def APIGatewayTokenAuthorizerEvent(authorizationToken: String, methodArn: String): typings.awsLambda.apiGatewayAuthorizerMod.APIGatewayTokenAuthorizerEvent = {
       val __obj = js.Dynamic.literal(authorizationToken = authorizationToken.asInstanceOf[js.Any], methodArn = methodArn.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("TOKEN")
       __obj.asInstanceOf[typings.awsLambda.apiGatewayAuthorizerMod.APIGatewayTokenAuthorizerEvent]
@@ -62,38 +60,28 @@ object apiGatewayAuthorizerMod {
   }
   object APIGatewayAuthorizerResult {
     
-    @scala.inline
-    def apply(policyDocument: PolicyDocument, principalId: String): APIGatewayAuthorizerResult = {
+    inline def apply(policyDocument: PolicyDocument, principalId: String): APIGatewayAuthorizerResult = {
       val __obj = js.Dynamic.literal(policyDocument = policyDocument.asInstanceOf[js.Any], principalId = principalId.asInstanceOf[js.Any])
       __obj.asInstanceOf[APIGatewayAuthorizerResult]
     }
     
-    @scala.inline
-    implicit class APIGatewayAuthorizerResultMutableBuilder[Self <: APIGatewayAuthorizerResult] (val x: Self) extends AnyVal {
+    extension [Self <: APIGatewayAuthorizerResult](x: Self) {
       
-      @scala.inline
-      def setContext(value: APIGatewayAuthorizerResultContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: APIGatewayAuthorizerResultContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextNull: Self = StObject.set(x, "context", null)
+      inline def setContextNull: Self = StObject.set(x, "context", null)
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
+      inline def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
+      inline def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageIdentifierKey(value: String): Self = StObject.set(x, "usageIdentifierKey", value.asInstanceOf[js.Any])
+      inline def setUsageIdentifierKey(value: String): Self = StObject.set(x, "usageIdentifierKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageIdentifierKeyNull: Self = StObject.set(x, "usageIdentifierKey", null)
+      inline def setUsageIdentifierKeyNull: Self = StObject.set(x, "usageIdentifierKey", null)
       
-      @scala.inline
-      def setUsageIdentifierKeyUndefined: Self = StObject.set(x, "usageIdentifierKey", js.undefined)
+      inline def setUsageIdentifierKeyUndefined: Self = StObject.set(x, "usageIdentifierKey", js.undefined)
     }
   }
   
@@ -116,32 +104,24 @@ object apiGatewayAuthorizerMod {
   }
   object APIGatewayAuthorizerWithContextResult {
     
-    @scala.inline
-    def apply[TAuthorizerContext /* <: APIGatewayAuthorizerResultContext */](context: TAuthorizerContext, policyDocument: PolicyDocument, principalId: String): APIGatewayAuthorizerWithContextResult[TAuthorizerContext] = {
+    inline def apply[TAuthorizerContext /* <: APIGatewayAuthorizerResultContext */](context: TAuthorizerContext, policyDocument: PolicyDocument, principalId: String): APIGatewayAuthorizerWithContextResult[TAuthorizerContext] = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], policyDocument = policyDocument.asInstanceOf[js.Any], principalId = principalId.asInstanceOf[js.Any])
       __obj.asInstanceOf[APIGatewayAuthorizerWithContextResult[TAuthorizerContext]]
     }
     
-    @scala.inline
-    implicit class APIGatewayAuthorizerWithContextResultMutableBuilder[Self <: APIGatewayAuthorizerWithContextResult[?], TAuthorizerContext /* <: APIGatewayAuthorizerResultContext */] (val x: Self & APIGatewayAuthorizerWithContextResult[TAuthorizerContext]) extends AnyVal {
+    extension [Self <: APIGatewayAuthorizerWithContextResult[?], TAuthorizerContext /* <: APIGatewayAuthorizerResultContext */](x: Self & APIGatewayAuthorizerWithContextResult[TAuthorizerContext]) {
       
-      @scala.inline
-      def setContext(value: TAuthorizerContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: TAuthorizerContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
+      inline def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
+      inline def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageIdentifierKey(value: String): Self = StObject.set(x, "usageIdentifierKey", value.asInstanceOf[js.Any])
+      inline def setUsageIdentifierKey(value: String): Self = StObject.set(x, "usageIdentifierKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageIdentifierKeyNull: Self = StObject.set(x, "usageIdentifierKey", null)
+      inline def setUsageIdentifierKeyNull: Self = StObject.set(x, "usageIdentifierKey", null)
       
-      @scala.inline
-      def setUsageIdentifierKeyUndefined: Self = StObject.set(x, "usageIdentifierKey", js.undefined)
+      inline def setUsageIdentifierKeyUndefined: Self = StObject.set(x, "usageIdentifierKey", js.undefined)
     }
   }
   
@@ -175,8 +155,7 @@ object apiGatewayAuthorizerMod {
   }
   object APIGatewayRequestAuthorizerEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       httpMethod: String,
       methodArn: String,
       path: String,
@@ -188,62 +167,43 @@ object apiGatewayAuthorizerMod {
       __obj.asInstanceOf[APIGatewayRequestAuthorizerEvent]
     }
     
-    @scala.inline
-    implicit class APIGatewayRequestAuthorizerEventMutableBuilder[Self <: APIGatewayRequestAuthorizerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: APIGatewayRequestAuthorizerEvent](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersNull: Self = StObject.set(x, "headers", null)
+      inline def setHeadersNull: Self = StObject.set(x, "headers", null)
       
-      @scala.inline
-      def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+      inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodArn(value: String): Self = StObject.set(x, "methodArn", value.asInstanceOf[js.Any])
+      inline def setMethodArn(value: String): Self = StObject.set(x, "methodArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiValueHeaders(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
+      inline def setMultiValueHeaders(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiValueHeadersNull: Self = StObject.set(x, "multiValueHeaders", null)
+      inline def setMultiValueHeadersNull: Self = StObject.set(x, "multiValueHeaders", null)
       
-      @scala.inline
-      def setMultiValueQueryStringParameters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueQueryStringParameters", value.asInstanceOf[js.Any])
+      inline def setMultiValueQueryStringParameters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueQueryStringParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiValueQueryStringParametersNull: Self = StObject.set(x, "multiValueQueryStringParameters", null)
+      inline def setMultiValueQueryStringParametersNull: Self = StObject.set(x, "multiValueQueryStringParameters", null)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParameters(value: StringDictionary[String]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
+      inline def setPathParameters(value: StringDictionary[String]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParametersNull: Self = StObject.set(x, "pathParameters", null)
+      inline def setPathParametersNull: Self = StObject.set(x, "pathParameters", null)
       
-      @scala.inline
-      def setQueryStringParameters(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
+      inline def setQueryStringParameters(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryStringParametersNull: Self = StObject.set(x, "queryStringParameters", null)
+      inline def setQueryStringParametersNull: Self = StObject.set(x, "queryStringParameters", null)
       
-      @scala.inline
-      def setRequestContext(value: APIGatewayEventRequestContextWithAuthorizer[Unit]): Self = StObject.set(x, "requestContext", value.asInstanceOf[js.Any])
+      inline def setRequestContext(value: APIGatewayEventRequestContextWithAuthorizer[Unit]): Self = StObject.set(x, "requestContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageVariables(value: StringDictionary[String]): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
+      inline def setStageVariables(value: StringDictionary[String]): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageVariablesNull: Self = StObject.set(x, "stageVariables", null)
+      inline def setStageVariablesNull: Self = StObject.set(x, "stageVariables", null)
       
-      @scala.inline
-      def setType(value: REQUEST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: REQUEST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -266,24 +226,19 @@ object apiGatewayAuthorizerMod {
   }
   object APIGatewayTokenAuthorizerEvent {
     
-    @scala.inline
-    def apply(authorizationToken: String, methodArn: String): APIGatewayTokenAuthorizerEvent = {
+    inline def apply(authorizationToken: String, methodArn: String): APIGatewayTokenAuthorizerEvent = {
       val __obj = js.Dynamic.literal(authorizationToken = authorizationToken.asInstanceOf[js.Any], methodArn = methodArn.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("TOKEN")
       __obj.asInstanceOf[APIGatewayTokenAuthorizerEvent]
     }
     
-    @scala.inline
-    implicit class APIGatewayTokenAuthorizerEventMutableBuilder[Self <: APIGatewayTokenAuthorizerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: APIGatewayTokenAuthorizerEvent](x: Self) {
       
-      @scala.inline
-      def setAuthorizationToken(value: String): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
+      inline def setAuthorizationToken(value: String): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodArn(value: String): Self = StObject.set(x, "methodArn", value.asInstanceOf[js.Any])
+      inline def setMethodArn(value: String): Self = StObject.set(x, "methodArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: TOKEN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TOKEN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -308,29 +263,22 @@ object apiGatewayAuthorizerMod {
   }
   object BaseStatement {
     
-    @scala.inline
-    def apply(Effect: String): BaseStatement = {
+    inline def apply(Effect: String): BaseStatement = {
       val __obj = js.Dynamic.literal(Effect = Effect.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseStatement]
     }
     
-    @scala.inline
-    implicit class BaseStatementMutableBuilder[Self <: BaseStatement] (val x: Self) extends AnyVal {
+    extension [Self <: BaseStatement](x: Self) {
       
-      @scala.inline
-      def setCondition(value: ConditionBlock): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: ConditionBlock): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
       
-      @scala.inline
-      def setEffect(value: String): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: String): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "Sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "Sid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSidUndefined: Self = StObject.set(x, "Sid", js.undefined)
+      inline def setSidUndefined: Self = StObject.set(x, "Sid", js.undefined)
     }
   }
   
@@ -376,108 +324,75 @@ object apiGatewayAuthorizerMod {
   }
   object CustomAuthorizerEvent {
     
-    @scala.inline
-    def apply(methodArn: String, `type`: String): CustomAuthorizerEvent = {
+    inline def apply(methodArn: String, `type`: String): CustomAuthorizerEvent = {
       val __obj = js.Dynamic.literal(methodArn = methodArn.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomAuthorizerEvent]
     }
     
-    @scala.inline
-    implicit class CustomAuthorizerEventMutableBuilder[Self <: CustomAuthorizerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CustomAuthorizerEvent](x: Self) {
       
-      @scala.inline
-      def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
+      inline def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
       
-      @scala.inline
-      def setAuthorizationToken(value: String): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
+      inline def setAuthorizationToken(value: String): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizationTokenUndefined: Self = StObject.set(x, "authorizationToken", js.undefined)
+      inline def setAuthorizationTokenUndefined: Self = StObject.set(x, "authorizationToken", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+      inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
+      inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
       
-      @scala.inline
-      def setMethodArn(value: String): Self = StObject.set(x, "methodArn", value.asInstanceOf[js.Any])
+      inline def setMethodArn(value: String): Self = StObject.set(x, "methodArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiValueHeaders(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
+      inline def setMultiValueHeaders(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiValueHeadersUndefined: Self = StObject.set(x, "multiValueHeaders", js.undefined)
+      inline def setMultiValueHeadersUndefined: Self = StObject.set(x, "multiValueHeaders", js.undefined)
       
-      @scala.inline
-      def setMultiValueQueryStringParameters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueQueryStringParameters", value.asInstanceOf[js.Any])
+      inline def setMultiValueQueryStringParameters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueQueryStringParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiValueQueryStringParametersNull: Self = StObject.set(x, "multiValueQueryStringParameters", null)
+      inline def setMultiValueQueryStringParametersNull: Self = StObject.set(x, "multiValueQueryStringParameters", null)
       
-      @scala.inline
-      def setMultiValueQueryStringParametersUndefined: Self = StObject.set(x, "multiValueQueryStringParameters", js.undefined)
+      inline def setMultiValueQueryStringParametersUndefined: Self = StObject.set(x, "multiValueQueryStringParameters", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParameters(value: StringDictionary[String]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
+      inline def setPathParameters(value: StringDictionary[String]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParametersNull: Self = StObject.set(x, "pathParameters", null)
+      inline def setPathParametersNull: Self = StObject.set(x, "pathParameters", null)
       
-      @scala.inline
-      def setPathParametersUndefined: Self = StObject.set(x, "pathParameters", js.undefined)
+      inline def setPathParametersUndefined: Self = StObject.set(x, "pathParameters", js.undefined)
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setQueryStringParameters(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
+      inline def setQueryStringParameters(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryStringParametersNull: Self = StObject.set(x, "queryStringParameters", null)
+      inline def setQueryStringParametersNull: Self = StObject.set(x, "queryStringParameters", null)
       
-      @scala.inline
-      def setQueryStringParametersUndefined: Self = StObject.set(x, "queryStringParameters", js.undefined)
+      inline def setQueryStringParametersUndefined: Self = StObject.set(x, "queryStringParameters", js.undefined)
       
-      @scala.inline
-      def setRequestContext(value: APIGatewayEventRequestContextWithAuthorizer[APIGatewayEventDefaultAuthorizerContext]): Self = StObject.set(x, "requestContext", value.asInstanceOf[js.Any])
+      inline def setRequestContext(value: APIGatewayEventRequestContextWithAuthorizer[APIGatewayEventDefaultAuthorizerContext]): Self = StObject.set(x, "requestContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestContextUndefined: Self = StObject.set(x, "requestContext", js.undefined)
+      inline def setRequestContextUndefined: Self = StObject.set(x, "requestContext", js.undefined)
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setStageVariables(value: StringDictionary[String]): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
+      inline def setStageVariables(value: StringDictionary[String]): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageVariablesUndefined: Self = StObject.set(x, "stageVariables", js.undefined)
+      inline def setStageVariablesUndefined: Self = StObject.set(x, "stageVariables", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -493,32 +408,24 @@ object apiGatewayAuthorizerMod {
   }
   object MaybeStatementPrincipal {
     
-    @scala.inline
-    def apply(): MaybeStatementPrincipal = {
+    inline def apply(): MaybeStatementPrincipal = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaybeStatementPrincipal]
     }
     
-    @scala.inline
-    implicit class MaybeStatementPrincipalMutableBuilder[Self <: MaybeStatementPrincipal] (val x: Self) extends AnyVal {
+    extension [Self <: MaybeStatementPrincipal](x: Self) {
       
-      @scala.inline
-      def setNotPrincipal(value: PrincipalValue): Self = StObject.set(x, "NotPrincipal", value.asInstanceOf[js.Any])
+      inline def setNotPrincipal(value: PrincipalValue): Self = StObject.set(x, "NotPrincipal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotPrincipalUndefined: Self = StObject.set(x, "NotPrincipal", js.undefined)
+      inline def setNotPrincipalUndefined: Self = StObject.set(x, "NotPrincipal", js.undefined)
       
-      @scala.inline
-      def setNotPrincipalVarargs(value: String*): Self = StObject.set(x, "NotPrincipal", js.Array(value :_*))
+      inline def setNotPrincipalVarargs(value: String*): Self = StObject.set(x, "NotPrincipal", js.Array(value :_*))
       
-      @scala.inline
-      def setPrincipal(value: PrincipalValue): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
+      inline def setPrincipal(value: PrincipalValue): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipalUndefined: Self = StObject.set(x, "Principal", js.undefined)
+      inline def setPrincipalUndefined: Self = StObject.set(x, "Principal", js.undefined)
       
-      @scala.inline
-      def setPrincipalVarargs(value: String*): Self = StObject.set(x, "Principal", js.Array(value :_*))
+      inline def setPrincipalVarargs(value: String*): Self = StObject.set(x, "Principal", js.Array(value :_*))
     }
   }
   
@@ -530,32 +437,24 @@ object apiGatewayAuthorizerMod {
   }
   object MaybeStatementResource {
     
-    @scala.inline
-    def apply(): MaybeStatementResource = {
+    inline def apply(): MaybeStatementResource = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaybeStatementResource]
     }
     
-    @scala.inline
-    implicit class MaybeStatementResourceMutableBuilder[Self <: MaybeStatementResource] (val x: Self) extends AnyVal {
+    extension [Self <: MaybeStatementResource](x: Self) {
       
-      @scala.inline
-      def setNotResource(value: String | js.Array[String]): Self = StObject.set(x, "NotResource", value.asInstanceOf[js.Any])
+      inline def setNotResource(value: String | js.Array[String]): Self = StObject.set(x, "NotResource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotResourceUndefined: Self = StObject.set(x, "NotResource", js.undefined)
+      inline def setNotResourceUndefined: Self = StObject.set(x, "NotResource", js.undefined)
       
-      @scala.inline
-      def setNotResourceVarargs(value: String*): Self = StObject.set(x, "NotResource", js.Array(value :_*))
+      inline def setNotResourceVarargs(value: String*): Self = StObject.set(x, "NotResource", js.Array(value :_*))
       
-      @scala.inline
-      def setResource(value: String | js.Array[String]): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String | js.Array[String]): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "Resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "Resource", js.undefined)
       
-      @scala.inline
-      def setResourceVarargs(value: String*): Self = StObject.set(x, "Resource", js.Array(value :_*))
+      inline def setResourceVarargs(value: String*): Self = StObject.set(x, "Resource", js.Array(value :_*))
     }
   }
   
@@ -569,29 +468,22 @@ object apiGatewayAuthorizerMod {
   }
   object PolicyDocument {
     
-    @scala.inline
-    def apply(Statement: js.Array[Statement], Version: String): PolicyDocument = {
+    inline def apply(Statement: js.Array[Statement], Version: String): PolicyDocument = {
       val __obj = js.Dynamic.literal(Statement = Statement.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyDocument]
     }
     
-    @scala.inline
-    implicit class PolicyDocumentMutableBuilder[Self <: PolicyDocument] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyDocument](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setStatement(value: js.Array[Statement]): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
+      inline def setStatement(value: js.Array[Statement]): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementVarargs(value: Statement*): Self = StObject.set(x, "Statement", js.Array(value :_*))
+      inline def setStatementVarargs(value: Statement*): Self = StObject.set(x, "Statement", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -606,14 +498,12 @@ object apiGatewayAuthorizerMod {
   trait StatementAction extends StObject
   object StatementAction {
     
-    @scala.inline
-    def `0`(Action: String | js.Array[String]): typings.awsLambda.anon.`0` = {
+    inline def `0`(Action: String | js.Array[String]): typings.awsLambda.anon.`0` = {
       val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsLambda.anon.`0`]
     }
     
-    @scala.inline
-    def NotAction(NotAction: String | js.Array[String]): typings.awsLambda.anon.NotAction = {
+    inline def NotAction(NotAction: String | js.Array[String]): typings.awsLambda.anon.NotAction = {
       val __obj = js.Dynamic.literal(NotAction = NotAction.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsLambda.anon.NotAction]
     }

@@ -9,8 +9,7 @@ object FilePreviewImageFormats {
   
   object Constants {
     
-    @scala.inline
-    def BITMAP: `1` = 1.asInstanceOf[`1`]
+    inline def BITMAP: `1` = 1.asInstanceOf[`1`]
   }
   type Constants = `1`
 }

@@ -21,8 +21,7 @@ trait ChangesReaderScope extends StObject {
 }
 object ChangesReaderScope {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: ChangesReaderOptions => EventEmitter,
     spool: ChangesReaderOptions => EventEmitter,
     start: ChangesReaderOptions => EventEmitter,
@@ -32,19 +31,14 @@ object ChangesReaderScope {
     __obj.asInstanceOf[ChangesReaderScope]
   }
   
-  @scala.inline
-  implicit class ChangesReaderScopeMutableBuilder[Self <: ChangesReaderScope] (val x: Self) extends AnyVal {
+  extension [Self <: ChangesReaderScope](x: Self) {
     
-    @scala.inline
-    def setGet(value: ChangesReaderOptions => EventEmitter): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: ChangesReaderOptions => EventEmitter): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSpool(value: ChangesReaderOptions => EventEmitter): Self = StObject.set(x, "spool", js.Any.fromFunction1(value))
+    inline def setSpool(value: ChangesReaderOptions => EventEmitter): Self = StObject.set(x, "spool", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStart(value: ChangesReaderOptions => EventEmitter): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: ChangesReaderOptions => EventEmitter): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

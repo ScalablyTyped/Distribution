@@ -32,7 +32,7 @@ object asyncActionMod {
     
     var id: js.Any = js.native
     
-    var pending: Boolean = js.native
+    /* protected */ var pending: Boolean = js.native
     
     /* protected */ def recycleAsyncId(scheduler: AsyncScheduler, id: js.Any): js.Any = js.native
     /* protected */ def recycleAsyncId(scheduler: AsyncScheduler, id: js.Any, delay: Double): js.Any = js.native
@@ -42,7 +42,7 @@ object asyncActionMod {
     /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: js.Any, delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: Unit, delay: Double): js.Any = js.native
     
-    var scheduler: AsyncScheduler = js.native
+    /* protected */ var scheduler: AsyncScheduler = js.native
     
     var state: T = js.native
     

@@ -10,19 +10,15 @@ trait EsriJSONOptions extends StObject {
 }
 object EsriJSONOptions {
   
-  @scala.inline
-  def apply(): EsriJSONOptions = {
+  inline def apply(): EsriJSONOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EsriJSONOptions]
   }
   
-  @scala.inline
-  implicit class EsriJSONOptionsMutableBuilder[Self <: EsriJSONOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EsriJSONOptions](x: Self) {
     
-    @scala.inline
-    def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
+    inline def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
+    inline def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
   }
 }

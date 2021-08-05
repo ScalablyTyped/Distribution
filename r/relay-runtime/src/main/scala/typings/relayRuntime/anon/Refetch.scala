@@ -14,25 +14,19 @@ trait Refetch extends StObject {
 }
 object Refetch {
   
-  @scala.inline
-  def apply(refetch: ReaderRefetchMetadata): Refetch = {
+  inline def apply(refetch: ReaderRefetchMetadata): Refetch = {
     val __obj = js.Dynamic.literal(refetch = refetch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Refetch]
   }
   
-  @scala.inline
-  implicit class RefetchMutableBuilder[Self <: Refetch] (val x: Self) extends AnyVal {
+  extension [Self <: Refetch](x: Self) {
     
-    @scala.inline
-    def setConnection(value: js.Array[ConnectionMetadata]): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: js.Array[ConnectionMetadata]): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    @scala.inline
-    def setConnectionVarargs(value: ConnectionMetadata*): Self = StObject.set(x, "connection", js.Array(value :_*))
+    inline def setConnectionVarargs(value: ConnectionMetadata*): Self = StObject.set(x, "connection", js.Array(value :_*))
     
-    @scala.inline
-    def setRefetch(value: ReaderRefetchMetadata): Self = StObject.set(x, "refetch", value.asInstanceOf[js.Any])
+    inline def setRefetch(value: ReaderRefetchMetadata): Self = StObject.set(x, "refetch", value.asInstanceOf[js.Any])
   }
 }

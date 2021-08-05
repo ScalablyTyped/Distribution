@@ -25,17 +25,14 @@ object internal {
   }
   object EntryPathRequestedEventOptions {
     
-    @scala.inline
-    def apply(entryPath: String, fileSystemId: String, requestId: integer): EntryPathRequestedEventOptions = {
+    inline def apply(entryPath: String, fileSystemId: String, requestId: integer): EntryPathRequestedEventOptions = {
       val __obj = js.Dynamic.literal(entryPath = entryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntryPathRequestedEventOptions]
     }
     
-    @scala.inline
-    implicit class EntryPathRequestedEventOptionsMutableBuilder[Self <: EntryPathRequestedEventOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EntryPathRequestedEventOptions](x: Self) {
       
-      @scala.inline
-      def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
+      inline def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,17 +49,14 @@ object internal {
   }
   object FilePathRequestedEventOptions {
     
-    @scala.inline
-    def apply(filePath: String, fileSystemId: String, requestId: integer): FilePathRequestedEventOptions = {
+    inline def apply(filePath: String, fileSystemId: String, requestId: integer): FilePathRequestedEventOptions = {
       val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilePathRequestedEventOptions]
     }
     
-    @scala.inline
-    implicit class FilePathRequestedEventOptionsMutableBuilder[Self <: FilePathRequestedEventOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FilePathRequestedEventOptions](x: Self) {
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,20 +74,16 @@ object internal {
   }
   object RequestedEventOptions {
     
-    @scala.inline
-    def apply(fileSystemId: String, requestId: integer): RequestedEventOptions = {
+    inline def apply(fileSystemId: String, requestId: integer): RequestedEventOptions = {
       val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestedEventOptions]
     }
     
-    @scala.inline
-    implicit class RequestedEventOptionsMutableBuilder[Self <: RequestedEventOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestedEventOptions](x: Self) {
       
-      @scala.inline
-      def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+      inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestId(value: integer): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: integer): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     }
   }
 }

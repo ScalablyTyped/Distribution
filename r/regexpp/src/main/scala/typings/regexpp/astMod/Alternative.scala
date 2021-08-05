@@ -19,8 +19,7 @@ trait Alternative
 }
 object Alternative {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     elements: js.Array[Element],
     end: Double,
     parent: Pattern | Group | CapturingGroup | LookaroundAssertion,
@@ -32,19 +31,14 @@ object Alternative {
     __obj.asInstanceOf[Alternative]
   }
   
-  @scala.inline
-  implicit class AlternativeMutableBuilder[Self <: Alternative] (val x: Self) extends AnyVal {
+  extension [Self <: Alternative](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: Pattern | Group | CapturingGroup | LookaroundAssertion): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Pattern | Group | CapturingGroup | LookaroundAssertion): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.Alternative): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.regexpp.regexppStrings.Alternative): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

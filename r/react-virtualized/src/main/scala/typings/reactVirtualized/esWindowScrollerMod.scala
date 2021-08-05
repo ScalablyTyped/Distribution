@@ -44,8 +44,7 @@ object esWindowScrollerMod {
     @JSImport("react-virtualized/dist/es/WindowScroller", "WindowScroller.defaultProps")
     @js.native
     def defaultProps: OnResize = js.native
-    @scala.inline
-    def defaultProps_=(x: OnResize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: OnResize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -107,53 +106,38 @@ object esWindowScrollerMod {
   }
   object WindowScrollerProps {
     
-    @scala.inline
-    def apply(children: WindowScrollerChildProps => ReactNode): WindowScrollerProps = {
+    inline def apply(children: WindowScrollerChildProps => ReactNode): WindowScrollerProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[WindowScrollerProps]
     }
     
-    @scala.inline
-    implicit class WindowScrollerPropsMutableBuilder[Self <: WindowScrollerProps] (val x: Self) extends AnyVal {
+    extension [Self <: WindowScrollerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: WindowScrollerChildProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: WindowScrollerChildProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResize(value: /* params */ Height => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: /* params */ Height => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
-      @scala.inline
-      def setOnScroll(value: /* params */ ScrollLeft => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: /* params */ ScrollLeft => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      @scala.inline
-      def setScrollElement(value: (Window & (/* globalThis */ js.Any)) | Element): Self = StObject.set(x, "scrollElement", value.asInstanceOf[js.Any])
+      inline def setScrollElement(value: (Window & (/* globalThis */ js.Any)) | Element): Self = StObject.set(x, "scrollElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollElementUndefined: Self = StObject.set(x, "scrollElement", js.undefined)
+      inline def setScrollElementUndefined: Self = StObject.set(x, "scrollElement", js.undefined)
       
-      @scala.inline
-      def setScrollingResetTimeInterval(value: Double): Self = StObject.set(x, "scrollingResetTimeInterval", value.asInstanceOf[js.Any])
+      inline def setScrollingResetTimeInterval(value: Double): Self = StObject.set(x, "scrollingResetTimeInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollingResetTimeIntervalUndefined: Self = StObject.set(x, "scrollingResetTimeInterval", js.undefined)
+      inline def setScrollingResetTimeIntervalUndefined: Self = StObject.set(x, "scrollingResetTimeInterval", js.undefined)
       
-      @scala.inline
-      def setServerHeight(value: Double): Self = StObject.set(x, "serverHeight", value.asInstanceOf[js.Any])
+      inline def setServerHeight(value: Double): Self = StObject.set(x, "serverHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerHeightUndefined: Self = StObject.set(x, "serverHeight", js.undefined)
+      inline def setServerHeightUndefined: Self = StObject.set(x, "serverHeight", js.undefined)
       
-      @scala.inline
-      def setServerWidth(value: Double): Self = StObject.set(x, "serverWidth", value.asInstanceOf[js.Any])
+      inline def setServerWidth(value: Double): Self = StObject.set(x, "serverWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerWidthUndefined: Self = StObject.set(x, "serverWidth", js.undefined)
+      inline def setServerWidthUndefined: Self = StObject.set(x, "serverWidth", js.undefined)
     }
   }
   
@@ -171,29 +155,22 @@ object esWindowScrollerMod {
   }
   object WindowScrollerState {
     
-    @scala.inline
-    def apply(height: Double, isScrolling: Boolean, scrollLeft: Double, scrollTop: Double, width: Double): WindowScrollerState = {
+    inline def apply(height: Double, isScrolling: Boolean, scrollLeft: Double, scrollTop: Double, width: Double): WindowScrollerState = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], isScrolling = isScrolling.asInstanceOf[js.Any], scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[WindowScrollerState]
     }
     
-    @scala.inline
-    implicit class WindowScrollerStateMutableBuilder[Self <: WindowScrollerState] (val x: Self) extends AnyVal {
+    extension [Self <: WindowScrollerState](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
+      inline def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+      inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+      inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

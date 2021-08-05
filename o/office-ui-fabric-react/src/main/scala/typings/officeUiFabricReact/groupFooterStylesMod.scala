@@ -12,6 +12,5 @@ object groupFooterStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IGroupFooterStyleProps): IGroupFooterStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IGroupFooterStyles]
+  inline def getStyles(props: IGroupFooterStyleProps): IGroupFooterStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IGroupFooterStyles]
 }

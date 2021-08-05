@@ -12,28 +12,21 @@ trait toolbarGroups extends StObject {
 }
 object toolbarGroups {
   
-  @scala.inline
-  def apply(): toolbarGroups = {
+  inline def apply(): toolbarGroups = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[toolbarGroups]
   }
   
-  @scala.inline
-  implicit class toolbarGroupsMutableBuilder[Self <: toolbarGroups] (val x: Self) extends AnyVal {
+  extension [Self <: toolbarGroups](x: Self) {
     
-    @scala.inline
-    def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait BuildBazelRemoteExecutionV2CommandEnvironmentVariable extends StObject {
 }
 object BuildBazelRemoteExecutionV2CommandEnvironmentVariable {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2CommandEnvironmentVariable = {
+  inline def apply(): BuildBazelRemoteExecutionV2CommandEnvironmentVariable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2CommandEnvironmentVariable]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2CommandEnvironmentVariableMutableBuilder[Self <: BuildBazelRemoteExecutionV2CommandEnvironmentVariable] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2CommandEnvironmentVariable](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

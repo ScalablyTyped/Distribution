@@ -13,20 +13,17 @@ object cleanupSemanticMod {
   @JSImport("jest-diff/build/cleanupSemantic", "DIFF_DELETE")
   @js.native
   def DIFF_DELETE: Double = js.native
-  @scala.inline
-  def DIFF_DELETE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIFF_DELETE")(x.asInstanceOf[js.Any])
+  inline def DIFF_DELETE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIFF_DELETE")(x.asInstanceOf[js.Any])
   
   @JSImport("jest-diff/build/cleanupSemantic", "DIFF_EQUAL")
   @js.native
   def DIFF_EQUAL: Double = js.native
-  @scala.inline
-  def DIFF_EQUAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIFF_EQUAL")(x.asInstanceOf[js.Any])
+  inline def DIFF_EQUAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIFF_EQUAL")(x.asInstanceOf[js.Any])
   
   @JSImport("jest-diff/build/cleanupSemantic", "DIFF_INSERT")
   @js.native
   def DIFF_INSERT: Double = js.native
-  @scala.inline
-  def DIFF_INSERT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIFF_INSERT")(x.asInstanceOf[js.Any])
+  inline def DIFF_INSERT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIFF_INSERT")(x.asInstanceOf[js.Any])
   
   /**
     * Class representing one diff tuple.
@@ -52,6 +49,5 @@ object cleanupSemanticMod {
   @JSImport("jest-diff/build/cleanupSemantic", "cleanupSemantic")
   @js.native
   def cleanupSemantic: js.Function1[/* diffs */ js.Array[Diff], Unit] = js.native
-  @scala.inline
-  def cleanupSemantic_=(x: js.Function1[/* diffs */ js.Array[Diff], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cleanupSemantic")(x.asInstanceOf[js.Any])
+  inline def cleanupSemantic_=(x: js.Function1[/* diffs */ js.Array[Diff], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cleanupSemantic")(x.asInstanceOf[js.Any])
 }

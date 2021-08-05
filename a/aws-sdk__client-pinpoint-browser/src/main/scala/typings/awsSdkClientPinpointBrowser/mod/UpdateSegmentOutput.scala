@@ -11,8 +11,7 @@ trait UpdateSegmentOutput
      with typings.awsSdkClientPinpointBrowser.typesUpdateSegmentOutputMod.UpdateSegmentOutput
 object UpdateSegmentOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, SegmentResponse: UnmarshalledSegmentResponse): UpdateSegmentOutput = {
+  inline def apply($metadata: ResponseMetadata, SegmentResponse: UnmarshalledSegmentResponse): UpdateSegmentOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SegmentResponse = SegmentResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSegmentOutput]
   }

@@ -63,7 +63,7 @@ object userAgentCoreUserAgentCoreMod {
     def invite(request: OutgoingRequestMessage): OutgoingInviteRequest = js.native
     def invite(request: OutgoingRequestMessage, delegate: OutgoingInviteRequestDelegate): OutgoingInviteRequest = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     /** Logger factory. */
     def loggerFactory: LoggerFactory = js.native
@@ -144,7 +144,7 @@ object userAgentCoreUserAgentCoreMod {
       * https://tools.ietf.org/html/rfc3261#section-12.2
       * @param message - Incoming request message.
       */
-    var receiveInsideDialogRequest: js.Any = js.native
+    /* private */ var receiveInsideDialogRequest: js.Any = js.native
     
     /**
       * Assuming all of the checks in the previous subsections are passed,
@@ -152,7 +152,7 @@ object userAgentCoreUserAgentCoreMod {
       *  https://tools.ietf.org/html/rfc3261#section-8.2.5
       * @param message - Incoming request message.
       */
-    var receiveOutsideDialogRequest: js.Any = js.native
+    /* private */ var receiveOutsideDialogRequest: js.Any = js.native
     
     /**
       * UAC and UAS procedures depend strongly on two factors.  First, based
@@ -163,7 +163,7 @@ object userAgentCoreUserAgentCoreMod {
       * as INVITE.
       * @param message - Incoming request message.
       */
-    var receiveRequest: js.Any = js.native
+    /* private */ var receiveRequest: js.Any = js.native
     
     /**
       * In Section 18.2.1, replace the last paragraph with:
@@ -177,7 +177,7 @@ object userAgentCoreUserAgentCoreMod {
       * https://tools.ietf.org/html/rfc6026#section-8.10
       * @param message - Incoming request message from transport layer.
       */
-    var receiveRequestFromTransport: js.Any = js.native
+    /* private */ var receiveRequestFromTransport: js.Any = js.native
     
     /**
       * Responses are first processed by the transport layer and then passed
@@ -188,7 +188,7 @@ object userAgentCoreUserAgentCoreMod {
       * https://tools.ietf.org/html/rfc3261#section-8.1.3
       * @param message - Incoming response message from transport layer.
       */
-    var receiveResponseFromTransport: js.Any = js.native
+    /* private */ var receiveResponseFromTransport: js.Any = js.native
     
     /**
       * Send REGISTER.

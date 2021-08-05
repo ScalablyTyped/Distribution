@@ -115,8 +115,7 @@ object semanticTokensProposedMod {
         * @param provider A document range semantic tokens provider.
         * @return A [disposable](#Disposable) that unregisters this provider when being disposed.
         */
-      @scala.inline
-      def registerDocumentRangeSemanticTokensProvider(
+      inline def registerDocumentRangeSemanticTokensProvider(
         selector: DocumentSelector,
         provider: DocumentRangeSemanticTokensProvider,
         legend: SemanticTokensLegend
@@ -133,8 +132,7 @@ object semanticTokensProposedMod {
         * @param provider A document semantic tokens provider.
         * @return A [disposable](#Disposable) that unregisters this provider when being disposed.
         */
-      @scala.inline
-      def registerDocumentSemanticTokensProvider(selector: DocumentSelector, provider: DocumentSemanticTokensProvider, legend: SemanticTokensLegend): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentSemanticTokensProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], legend.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+      inline def registerDocumentSemanticTokensProvider(selector: DocumentSelector, provider: DocumentSemanticTokensProvider, legend: SemanticTokensLegend): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentSemanticTokensProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], legend.asInstanceOf[js.Any])).asInstanceOf[Disposable]
     }
     
     /**
@@ -150,19 +148,16 @@ object semanticTokensProposedMod {
     }
     object DocumentRangeSemanticTokensProvider {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         provideDocumentRangeSemanticTokens: (TextDocument, Range, CancellationToken) => ProviderResult[SemanticTokens]
       ): DocumentRangeSemanticTokensProvider = {
         val __obj = js.Dynamic.literal(provideDocumentRangeSemanticTokens = js.Any.fromFunction3(provideDocumentRangeSemanticTokens))
         __obj.asInstanceOf[DocumentRangeSemanticTokensProvider]
       }
       
-      @scala.inline
-      implicit class DocumentRangeSemanticTokensProviderMutableBuilder[Self <: DocumentRangeSemanticTokensProvider] (val x: Self) extends AnyVal {
+      extension [Self <: DocumentRangeSemanticTokensProvider](x: Self) {
         
-        @scala.inline
-        def setProvideDocumentRangeSemanticTokens(value: (TextDocument, Range, CancellationToken) => ProviderResult[SemanticTokens]): Self = StObject.set(x, "provideDocumentRangeSemanticTokens", js.Any.fromFunction3(value))
+        inline def setProvideDocumentRangeSemanticTokens(value: (TextDocument, Range, CancellationToken) => ProviderResult[SemanticTokens]): Self = StObject.set(x, "provideDocumentRangeSemanticTokens", js.Any.fromFunction3(value))
       }
     }
     
@@ -296,25 +291,20 @@ object semanticTokensProposedMod {
     }
     object DocumentSemanticTokensProvider {
       
-      @scala.inline
-      def apply(provideDocumentSemanticTokens: (TextDocument, CancellationToken) => ProviderResult[SemanticTokens]): DocumentSemanticTokensProvider = {
+      inline def apply(provideDocumentSemanticTokens: (TextDocument, CancellationToken) => ProviderResult[SemanticTokens]): DocumentSemanticTokensProvider = {
         val __obj = js.Dynamic.literal(provideDocumentSemanticTokens = js.Any.fromFunction2(provideDocumentSemanticTokens))
         __obj.asInstanceOf[DocumentSemanticTokensProvider]
       }
       
-      @scala.inline
-      implicit class DocumentSemanticTokensProviderMutableBuilder[Self <: DocumentSemanticTokensProvider] (val x: Self) extends AnyVal {
+      extension [Self <: DocumentSemanticTokensProvider](x: Self) {
         
-        @scala.inline
-        def setProvideDocumentSemanticTokens(value: (TextDocument, CancellationToken) => ProviderResult[SemanticTokens]): Self = StObject.set(x, "provideDocumentSemanticTokens", js.Any.fromFunction2(value))
+        inline def setProvideDocumentSemanticTokens(value: (TextDocument, CancellationToken) => ProviderResult[SemanticTokens]): Self = StObject.set(x, "provideDocumentSemanticTokens", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setProvideDocumentSemanticTokensEdits(
+        inline def setProvideDocumentSemanticTokensEdits(
           value: (/* document */ TextDocument, /* previousResultId */ String, /* token */ CancellationToken) => ProviderResult[SemanticTokens | SemanticTokensEdits]
         ): Self = StObject.set(x, "provideDocumentSemanticTokensEdits", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setProvideDocumentSemanticTokensEditsUndefined: Self = StObject.set(x, "provideDocumentSemanticTokensEdits", js.undefined)
+        inline def setProvideDocumentSemanticTokensEditsUndefined: Self = StObject.set(x, "provideDocumentSemanticTokensEdits", js.undefined)
       }
     }
   }
@@ -378,17 +368,14 @@ object semanticTokensProposedMod {
   }
   object SemanticTokensMiddleware {
     
-    @scala.inline
-    def apply(): SemanticTokensMiddleware = {
+    inline def apply(): SemanticTokensMiddleware = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SemanticTokensMiddleware]
     }
     
-    @scala.inline
-    implicit class SemanticTokensMiddlewareMutableBuilder[Self <: SemanticTokensMiddleware] (val x: Self) extends AnyVal {
+    extension [Self <: SemanticTokensMiddleware](x: Self) {
       
-      @scala.inline
-      def setProvideDocumentRangeSemanticTokens(
+      inline def setProvideDocumentRangeSemanticTokens(
         value: js.ThisFunction4[
               /* this */ Unit, 
               /* document */ TextDocument, 
@@ -399,11 +386,9 @@ object semanticTokensProposedMod {
             ]
       ): Self = StObject.set(x, "provideDocumentRangeSemanticTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideDocumentRangeSemanticTokensUndefined: Self = StObject.set(x, "provideDocumentRangeSemanticTokens", js.undefined)
+      inline def setProvideDocumentRangeSemanticTokensUndefined: Self = StObject.set(x, "provideDocumentRangeSemanticTokens", js.undefined)
       
-      @scala.inline
-      def setProvideDocumentSemanticTokens(
+      inline def setProvideDocumentSemanticTokens(
         value: js.ThisFunction3[
               /* this */ Unit, 
               /* document */ TextDocument, 
@@ -413,8 +398,7 @@ object semanticTokensProposedMod {
             ]
       ): Self = StObject.set(x, "provideDocumentSemanticTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideDocumentSemanticTokensEdits(
+      inline def setProvideDocumentSemanticTokensEdits(
         value: js.ThisFunction4[
               /* this */ Unit, 
               /* document */ TextDocument, 
@@ -425,11 +409,9 @@ object semanticTokensProposedMod {
             ]
       ): Self = StObject.set(x, "provideDocumentSemanticTokensEdits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideDocumentSemanticTokensEditsUndefined: Self = StObject.set(x, "provideDocumentSemanticTokensEdits", js.undefined)
+      inline def setProvideDocumentSemanticTokensEditsUndefined: Self = StObject.set(x, "provideDocumentSemanticTokensEdits", js.undefined)
       
-      @scala.inline
-      def setProvideDocumentSemanticTokensUndefined: Self = StObject.set(x, "provideDocumentSemanticTokens", js.undefined)
+      inline def setProvideDocumentSemanticTokensUndefined: Self = StObject.set(x, "provideDocumentSemanticTokens", js.undefined)
     }
   }
   
@@ -441,23 +423,18 @@ object semanticTokensProposedMod {
   }
   object SemanticTokensProviders {
     
-    @scala.inline
-    def apply(document: DocumentSemanticTokensProvider): SemanticTokensProviders = {
+    inline def apply(document: DocumentSemanticTokensProvider): SemanticTokensProviders = {
       val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
       __obj.asInstanceOf[SemanticTokensProviders]
     }
     
-    @scala.inline
-    implicit class SemanticTokensProvidersMutableBuilder[Self <: SemanticTokensProviders] (val x: Self) extends AnyVal {
+    extension [Self <: SemanticTokensProviders](x: Self) {
       
-      @scala.inline
-      def setDocument(value: DocumentSemanticTokensProvider): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: DocumentSemanticTokensProvider): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: DocumentRangeSemanticTokensProvider): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: DocumentRangeSemanticTokensProvider): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     }
   }
 }

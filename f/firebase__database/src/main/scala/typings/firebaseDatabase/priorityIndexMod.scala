@@ -20,9 +20,7 @@ object priorityIndexMod {
   @js.native
   class PriorityIndex () extends Index
   
-  @scala.inline
-  def setMaxNode(`val`: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxNode")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMaxNode(`val`: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxNode")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setNodeFromJSON(`val`: js.Function1[/* a */ js.Any, Node]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNodeFromJSON")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setNodeFromJSON(`val`: js.Function1[/* a */ js.Any, Node]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNodeFromJSON")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

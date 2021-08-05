@@ -18,16 +18,13 @@ trait ASPxClientDashboardChangedEventArgs
 }
 object ASPxClientDashboardChangedEventArgs {
   
-  @scala.inline
-  def apply(DashboardId: String): ASPxClientDashboardChangedEventArgs = {
+  inline def apply(DashboardId: String): ASPxClientDashboardChangedEventArgs = {
     val __obj = js.Dynamic.literal(DashboardId = DashboardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardChangedEventArgsMutableBuilder[Self <: ASPxClientDashboardChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setDashboardId(value: String): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: String): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
   }
 }

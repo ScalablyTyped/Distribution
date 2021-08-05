@@ -66,8 +66,7 @@ object receiverBinary1Mod {
   }
   object Receiver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Spec: Instantiable0[typings.cloudeventsSdk.spec1Mod.^],
       allowedContentTypes: js.Array[js.Any],
       extensionsPrefix: js.Any,
@@ -82,38 +81,27 @@ object receiverBinary1Mod {
       __obj.asInstanceOf[Receiver]
     }
     
-    @scala.inline
-    implicit class ReceiverMutableBuilder[Self <: Receiver] (val x: Self) extends AnyVal {
+    extension [Self <: Receiver](x: Self) {
       
-      @scala.inline
-      def setAllowedContentTypes(value: js.Array[js.Any]): Self = StObject.set(x, "allowedContentTypes", value.asInstanceOf[js.Any])
+      inline def setAllowedContentTypes(value: js.Array[js.Any]): Self = StObject.set(x, "allowedContentTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedContentTypesVarargs(value: js.Any*): Self = StObject.set(x, "allowedContentTypes", js.Array(value :_*))
+      inline def setAllowedContentTypesVarargs(value: js.Any*): Self = StObject.set(x, "allowedContentTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensionsPrefix(value: js.Any): Self = StObject.set(x, "extensionsPrefix", value.asInstanceOf[js.Any])
+      inline def setExtensionsPrefix(value: js.Any): Self = StObject.set(x, "extensionsPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserByType(value: NumberDictionary[js.Any]): Self = StObject.set(x, "parserByType", value.asInstanceOf[js.Any])
+      inline def setParserByType(value: NumberDictionary[js.Any]): Self = StObject.set(x, "parserByType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsersByEncoding(value: Dictx): Self = StObject.set(x, "parsersByEncoding", value.asInstanceOf[js.Any])
+      inline def setParsersByEncoding(value: Dictx): Self = StObject.set(x, "parsersByEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "requiredHeaders", value.asInstanceOf[js.Any])
+      inline def setRequiredHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "requiredHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredHeadersVarargs(value: js.Any*): Self = StObject.set(x, "requiredHeaders", js.Array(value :_*))
+      inline def setRequiredHeadersVarargs(value: js.Any*): Self = StObject.set(x, "requiredHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setSetterByHeader(value: NumberDictionary[Name]): Self = StObject.set(x, "setterByHeader", value.asInstanceOf[js.Any])
+      inline def setSetterByHeader(value: NumberDictionary[Name]): Self = StObject.set(x, "setterByHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpec(value: Instantiable0[typings.cloudeventsSdk.spec1Mod.^]): Self = StObject.set(x, "Spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: Instantiable0[typings.cloudeventsSdk.spec1Mod.^]): Self = StObject.set(x, "Spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecversion(value: js.Any): Self = StObject.set(x, "specversion", value.asInstanceOf[js.Any])
+      inline def setSpecversion(value: js.Any): Self = StObject.set(x, "specversion", value.asInstanceOf[js.Any])
     }
   }
 }

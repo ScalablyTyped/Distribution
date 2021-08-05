@@ -32,19 +32,15 @@ trait SchemaOAuthRequirements extends StObject {
 }
 object SchemaOAuthRequirements {
   
-  @scala.inline
-  def apply(): SchemaOAuthRequirements = {
+  inline def apply(): SchemaOAuthRequirements = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOAuthRequirements]
   }
   
-  @scala.inline
-  implicit class SchemaOAuthRequirementsMutableBuilder[Self <: SchemaOAuthRequirements] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOAuthRequirements](x: Self) {
     
-    @scala.inline
-    def setCanonicalScopes(value: String): Self = StObject.set(x, "canonicalScopes", value.asInstanceOf[js.Any])
+    inline def setCanonicalScopes(value: String): Self = StObject.set(x, "canonicalScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanonicalScopesUndefined: Self = StObject.set(x, "canonicalScopes", js.undefined)
+    inline def setCanonicalScopesUndefined: Self = StObject.set(x, "canonicalScopes", js.undefined)
   }
 }

@@ -23,28 +23,21 @@ trait ListDistributionsByWebACLIdRequest extends StObject {
 }
 object ListDistributionsByWebACLIdRequest {
   
-  @scala.inline
-  def apply(WebACLId: String): ListDistributionsByWebACLIdRequest = {
+  inline def apply(WebACLId: String): ListDistributionsByWebACLIdRequest = {
     val __obj = js.Dynamic.literal(WebACLId = WebACLId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDistributionsByWebACLIdRequest]
   }
   
-  @scala.inline
-  implicit class ListDistributionsByWebACLIdRequestMutableBuilder[Self <: ListDistributionsByWebACLIdRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDistributionsByWebACLIdRequest](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: String): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: String): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setWebACLId(value: String): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
+    inline def setWebACLId(value: String): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
   }
 }

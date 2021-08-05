@@ -12,19 +12,15 @@ trait CanvasImageSmoothing extends StObject {
 }
 object CanvasImageSmoothing {
   
-  @scala.inline
-  def apply(imageSmoothingEnabled: scala.Boolean, imageSmoothingQuality: ImageSmoothingQuality): CanvasImageSmoothing = {
+  inline def apply(imageSmoothingEnabled: scala.Boolean, imageSmoothingQuality: ImageSmoothingQuality): CanvasImageSmoothing = {
     val __obj = js.Dynamic.literal(imageSmoothingEnabled = imageSmoothingEnabled.asInstanceOf[js.Any], imageSmoothingQuality = imageSmoothingQuality.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasImageSmoothing]
   }
   
-  @scala.inline
-  implicit class CanvasImageSmoothingMutableBuilder[Self <: CanvasImageSmoothing] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasImageSmoothing](x: Self) {
     
-    @scala.inline
-    def setImageSmoothingEnabled(value: scala.Boolean): Self = StObject.set(x, "imageSmoothingEnabled", value.asInstanceOf[js.Any])
+    inline def setImageSmoothingEnabled(value: scala.Boolean): Self = StObject.set(x, "imageSmoothingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageSmoothingQuality(value: ImageSmoothingQuality): Self = StObject.set(x, "imageSmoothingQuality", value.asInstanceOf[js.Any])
+    inline def setImageSmoothingQuality(value: ImageSmoothingQuality): Self = StObject.set(x, "imageSmoothingQuality", value.asInstanceOf[js.Any])
   }
 }

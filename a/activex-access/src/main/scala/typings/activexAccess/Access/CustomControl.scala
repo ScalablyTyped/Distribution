@@ -9,7 +9,7 @@ trait CustomControl extends StObject {
   
   var About: String = js.native
   
-  @JSName("Access.CustomControl_typekey")
+  /* private */ @JSName("Access.CustomControl_typekey")
   var AccessDotCustomControl_typekey: CustomControl = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native

@@ -16,19 +16,15 @@ trait SchemaMultipleChoiceSubmission extends StObject {
 }
 object SchemaMultipleChoiceSubmission {
   
-  @scala.inline
-  def apply(): SchemaMultipleChoiceSubmission = {
+  inline def apply(): SchemaMultipleChoiceSubmission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMultipleChoiceSubmission]
   }
   
-  @scala.inline
-  implicit class SchemaMultipleChoiceSubmissionMutableBuilder[Self <: SchemaMultipleChoiceSubmission] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMultipleChoiceSubmission](x: Self) {
     
-    @scala.inline
-    def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
+    inline def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnswerUndefined: Self = StObject.set(x, "answer", js.undefined)
+    inline def setAnswerUndefined: Self = StObject.set(x, "answer", js.undefined)
   }
 }

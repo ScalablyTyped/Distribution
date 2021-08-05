@@ -21,19 +21,15 @@ trait SearchFirstResult extends StObject {
 }
 object SearchFirstResult {
   
-  @scala.inline
-  def apply(found: NodeCollection, path: CollectionArgument): SearchFirstResult = {
+  inline def apply(found: NodeCollection, path: CollectionArgument): SearchFirstResult = {
     val __obj = js.Dynamic.literal(found = found.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchFirstResult]
   }
   
-  @scala.inline
-  implicit class SearchFirstResultMutableBuilder[Self <: SearchFirstResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchFirstResult](x: Self) {
     
-    @scala.inline
-    def setFound(value: NodeCollection): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+    inline def setFound(value: NodeCollection): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: CollectionArgument): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: CollectionArgument): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

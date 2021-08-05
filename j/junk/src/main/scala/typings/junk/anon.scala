@@ -40,23 +40,18 @@ object anon {
   }
   object Default {
     
-    @scala.inline
-    def apply(is: String => Boolean, not: String => Boolean, regex: RegExp): Default = {
+    inline def apply(is: String => Boolean, not: String => Boolean, regex: RegExp): Default = {
       val __obj = js.Dynamic.literal(is = js.Any.fromFunction1(is), not = js.Any.fromFunction1(not), regex = regex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Default]
     }
     
-    @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
+    extension [Self <: Default](x: Self) {
       
-      @scala.inline
-      def setIs(value: String => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
+      inline def setIs(value: String => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNot(value: String => Boolean): Self = StObject.set(x, "not", js.Any.fromFunction1(value))
+      inline def setNot(value: String => Boolean): Self = StObject.set(x, "not", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
   }
 }

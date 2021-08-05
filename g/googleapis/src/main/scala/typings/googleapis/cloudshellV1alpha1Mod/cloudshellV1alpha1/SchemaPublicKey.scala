@@ -32,31 +32,23 @@ trait SchemaPublicKey extends StObject {
 }
 object SchemaPublicKey {
   
-  @scala.inline
-  def apply(): SchemaPublicKey = {
+  inline def apply(): SchemaPublicKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPublicKey]
   }
   
-  @scala.inline
-  implicit class SchemaPublicKeyMutableBuilder[Self <: SchemaPublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPublicKey](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

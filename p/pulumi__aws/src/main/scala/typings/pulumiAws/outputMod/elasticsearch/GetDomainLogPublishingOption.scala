@@ -23,22 +23,17 @@ trait GetDomainLogPublishingOption extends StObject {
 }
 object GetDomainLogPublishingOption {
   
-  @scala.inline
-  def apply(cloudwatchLogGroupArn: String, enabled: Boolean, logType: String): GetDomainLogPublishingOption = {
+  inline def apply(cloudwatchLogGroupArn: String, enabled: Boolean, logType: String): GetDomainLogPublishingOption = {
     val __obj = js.Dynamic.literal(cloudwatchLogGroupArn = cloudwatchLogGroupArn.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], logType = logType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainLogPublishingOption]
   }
   
-  @scala.inline
-  implicit class GetDomainLogPublishingOptionMutableBuilder[Self <: GetDomainLogPublishingOption] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainLogPublishingOption](x: Self) {
     
-    @scala.inline
-    def setCloudwatchLogGroupArn(value: String): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
+    inline def setCloudwatchLogGroupArn(value: String): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogType(value: String): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
+    inline def setLogType(value: String): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
   }
 }

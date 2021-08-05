@@ -17,8 +17,7 @@ object pseudosMod {
   @js.native
   val pseudos: Record[String, Pseudo] = js.native
   
-  @scala.inline
-  def verifyPseudoArgs(func: Pseudo, name: String, subselect: DataType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyPseudoArgs")(func.asInstanceOf[js.Any], name.asInstanceOf[js.Any], subselect.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verifyPseudoArgs(func: Pseudo, name: String, subselect: DataType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyPseudoArgs")(func.asInstanceOf[js.Any], name.asInstanceOf[js.Any], subselect.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Pseudo = js.Function3[
     /* elem */ js.Any, 

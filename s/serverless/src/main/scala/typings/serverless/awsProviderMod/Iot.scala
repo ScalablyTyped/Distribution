@@ -18,34 +18,25 @@ trait Iot extends StObject {
 }
 object Iot {
   
-  @scala.inline
-  def apply(name: String, sql: String, sqlVersion: String): Iot = {
+  inline def apply(name: String, sql: String, sqlVersion: String): Iot = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any], sqlVersion = sqlVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Iot]
   }
   
-  @scala.inline
-  implicit class IotMutableBuilder[Self <: Iot] (val x: Self) extends AnyVal {
+  extension [Self <: Iot](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlVersion(value: String): Self = StObject.set(x, "sqlVersion", value.asInstanceOf[js.Any])
+    inline def setSqlVersion(value: String): Self = StObject.set(x, "sqlVersion", value.asInstanceOf[js.Any])
   }
 }

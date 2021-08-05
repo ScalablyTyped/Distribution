@@ -28,37 +28,27 @@ trait RuntimeVersion extends StObject {
 }
 object RuntimeVersion {
   
-  @scala.inline
-  def apply(): RuntimeVersion = {
+  inline def apply(): RuntimeVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuntimeVersion]
   }
   
-  @scala.inline
-  implicit class RuntimeVersionMutableBuilder[Self <: RuntimeVersion] (val x: Self) extends AnyVal {
+  extension [Self <: RuntimeVersion](x: Self) {
     
-    @scala.inline
-    def setDeprecationDate(value: Timestamp): Self = StObject.set(x, "DeprecationDate", value.asInstanceOf[js.Any])
+    inline def setDeprecationDate(value: Timestamp): Self = StObject.set(x, "DeprecationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecationDateUndefined: Self = StObject.set(x, "DeprecationDate", js.undefined)
+    inline def setDeprecationDateUndefined: Self = StObject.set(x, "DeprecationDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setReleaseDate(value: Timestamp): Self = StObject.set(x, "ReleaseDate", value.asInstanceOf[js.Any])
+    inline def setReleaseDate(value: Timestamp): Self = StObject.set(x, "ReleaseDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDateUndefined: Self = StObject.set(x, "ReleaseDate", js.undefined)
+    inline def setReleaseDateUndefined: Self = StObject.set(x, "ReleaseDate", js.undefined)
     
-    @scala.inline
-    def setVersionName(value: String): Self = StObject.set(x, "VersionName", value.asInstanceOf[js.Any])
+    inline def setVersionName(value: String): Self = StObject.set(x, "VersionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNameUndefined: Self = StObject.set(x, "VersionName", js.undefined)
+    inline def setVersionNameUndefined: Self = StObject.set(x, "VersionName", js.undefined)
   }
 }

@@ -27,31 +27,23 @@ trait GetSelectedDataOptions extends StObject {
 }
 object GetSelectedDataOptions {
   
-  @scala.inline
-  def apply(): GetSelectedDataOptions = {
+  inline def apply(): GetSelectedDataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSelectedDataOptions]
   }
   
-  @scala.inline
-  implicit class GetSelectedDataOptionsMutableBuilder[Self <: GetSelectedDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetSelectedDataOptions](x: Self) {
     
-    @scala.inline
-    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+    inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
-    @scala.inline
-    def setFilterType(value: FilterType | String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
+    inline def setFilterType(value: FilterType | String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
+    inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
-    @scala.inline
-    def setValueFormat(value: ValueFormat | String): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
+    inline def setValueFormat(value: ValueFormat | String): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
+    inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object defaultGraphMod {
   
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  @scala.inline
-  def apply(defaultGraph: DefaultGraph): String = ^.asInstanceOf[js.Dynamic].apply(defaultGraph.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(defaultGraph: DefaultGraph): String = ^.asInstanceOf[js.Dynamic].apply(defaultGraph.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@rdfjs/to-ntriples/lib/defaultGraph", JSImport.Namespace)
   @js.native

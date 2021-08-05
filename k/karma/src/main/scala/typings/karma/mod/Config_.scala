@@ -20,8 +20,7 @@ trait Config_ extends StObject {
 }
 object Config_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LOG_DEBUG: String,
     LOG_DISABLE: String,
     LOG_ERROR: String,
@@ -33,25 +32,18 @@ object Config_ {
     __obj.asInstanceOf[Config_]
   }
   
-  @scala.inline
-  implicit class Config_MutableBuilder[Self <: Config_] (val x: Self) extends AnyVal {
+  extension [Self <: Config_](x: Self) {
     
-    @scala.inline
-    def setLOG_DEBUG(value: String): Self = StObject.set(x, "LOG_DEBUG", value.asInstanceOf[js.Any])
+    inline def setLOG_DEBUG(value: String): Self = StObject.set(x, "LOG_DEBUG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLOG_DISABLE(value: String): Self = StObject.set(x, "LOG_DISABLE", value.asInstanceOf[js.Any])
+    inline def setLOG_DISABLE(value: String): Self = StObject.set(x, "LOG_DISABLE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLOG_ERROR(value: String): Self = StObject.set(x, "LOG_ERROR", value.asInstanceOf[js.Any])
+    inline def setLOG_ERROR(value: String): Self = StObject.set(x, "LOG_ERROR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLOG_INFO(value: String): Self = StObject.set(x, "LOG_INFO", value.asInstanceOf[js.Any])
+    inline def setLOG_INFO(value: String): Self = StObject.set(x, "LOG_INFO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLOG_WARN(value: String): Self = StObject.set(x, "LOG_WARN", value.asInstanceOf[js.Any])
+    inline def setLOG_WARN(value: String): Self = StObject.set(x, "LOG_WARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(value: ConfigOptions => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: ConfigOptions => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

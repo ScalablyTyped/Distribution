@@ -13,19 +13,15 @@ trait GoogleActionsV2TriggerContext extends StObject {
 }
 object GoogleActionsV2TriggerContext {
   
-  @scala.inline
-  def apply(): GoogleActionsV2TriggerContext = {
+  inline def apply(): GoogleActionsV2TriggerContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2TriggerContext]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2TriggerContextMutableBuilder[Self <: GoogleActionsV2TriggerContext] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2TriggerContext](x: Self) {
     
-    @scala.inline
-    def setTimeContext(value: GoogleActionsV2TriggerContextTimeContext): Self = StObject.set(x, "timeContext", value.asInstanceOf[js.Any])
+    inline def setTimeContext(value: GoogleActionsV2TriggerContextTimeContext): Self = StObject.set(x, "timeContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeContextUndefined: Self = StObject.set(x, "timeContext", js.undefined)
+    inline def setTimeContextUndefined: Self = StObject.set(x, "timeContext", js.undefined)
   }
 }

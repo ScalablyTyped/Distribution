@@ -26,50 +26,36 @@ object anon {
   }
   object Arbiter {
     
-    @scala.inline
-    def apply[T /* <: Contact */](): Arbiter[T] = {
+    inline def apply[T /* <: Contact */](): Arbiter[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Arbiter[T]]
     }
     
-    @scala.inline
-    implicit class ArbiterMutableBuilder[Self <: Arbiter[?], T /* <: Contact */] (val x: Self & Arbiter[T]) extends AnyVal {
+    extension [Self <: Arbiter[?], T /* <: Contact */](x: Self & Arbiter[T]) {
       
-      @scala.inline
-      def setArbiter(value: (T, T) => T): Self = StObject.set(x, "arbiter", js.Any.fromFunction2(value))
+      inline def setArbiter(value: (T, T) => T): Self = StObject.set(x, "arbiter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setArbiterUndefined: Self = StObject.set(x, "arbiter", js.undefined)
+      inline def setArbiterUndefined: Self = StObject.set(x, "arbiter", js.undefined)
       
-      @scala.inline
-      def setDistance(value: (/* firstId */ Uint8Array, /* secondId */ Uint8Array) => Double): Self = StObject.set(x, "distance", js.Any.fromFunction2(value))
+      inline def setDistance(value: (/* firstId */ Uint8Array, /* secondId */ Uint8Array) => Double): Self = StObject.set(x, "distance", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+      inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
       
-      @scala.inline
-      def setLocalNodeId(value: Uint8Array): Self = StObject.set(x, "localNodeId", value.asInstanceOf[js.Any])
+      inline def setLocalNodeId(value: Uint8Array): Self = StObject.set(x, "localNodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalNodeIdUndefined: Self = StObject.set(x, "localNodeId", js.undefined)
+      inline def setLocalNodeIdUndefined: Self = StObject.set(x, "localNodeId", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setNumberOfNodesPerKBucket(value: Double): Self = StObject.set(x, "numberOfNodesPerKBucket", value.asInstanceOf[js.Any])
+      inline def setNumberOfNodesPerKBucket(value: Double): Self = StObject.set(x, "numberOfNodesPerKBucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfNodesPerKBucketUndefined: Self = StObject.set(x, "numberOfNodesPerKBucket", js.undefined)
+      inline def setNumberOfNodesPerKBucketUndefined: Self = StObject.set(x, "numberOfNodesPerKBucket", js.undefined)
       
-      @scala.inline
-      def setNumberOfNodesToPing(value: Double): Self = StObject.set(x, "numberOfNodesToPing", value.asInstanceOf[js.Any])
+      inline def setNumberOfNodesToPing(value: Double): Self = StObject.set(x, "numberOfNodesToPing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfNodesToPingUndefined: Self = StObject.set(x, "numberOfNodesToPing", js.undefined)
+      inline def setNumberOfNodesToPingUndefined: Self = StObject.set(x, "numberOfNodesToPing", js.undefined)
     }
   }
 }

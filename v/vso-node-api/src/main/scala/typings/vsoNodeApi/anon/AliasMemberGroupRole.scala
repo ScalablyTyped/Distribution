@@ -32,8 +32,7 @@ trait AliasMemberGroupRole extends StObject {
 }
 object AliasMemberGroupRole {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aliasMemberGroupRole: scala.Double,
     directMember: scala.Double,
     directMemberGroupRole: scala.Double,
@@ -51,43 +50,30 @@ object AliasMemberGroupRole {
     __obj.asInstanceOf[AliasMemberGroupRole]
   }
   
-  @scala.inline
-  implicit class AliasMemberGroupRoleMutableBuilder[Self <: AliasMemberGroupRole] (val x: Self) extends AnyVal {
+  extension [Self <: AliasMemberGroupRole](x: Self) {
     
-    @scala.inline
-    def setAliasMemberGroupRole(value: scala.Double): Self = StObject.set(x, "aliasMemberGroupRole", value.asInstanceOf[js.Any])
+    inline def setAliasMemberGroupRole(value: scala.Double): Self = StObject.set(x, "aliasMemberGroupRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectMember(value: scala.Double): Self = StObject.set(x, "directMember", value.asInstanceOf[js.Any])
+    inline def setDirectMember(value: scala.Double): Self = StObject.set(x, "directMember", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectMemberGroupRole(value: scala.Double): Self = StObject.set(x, "directMemberGroupRole", value.asInstanceOf[js.Any])
+    inline def setDirectMemberGroupRole(value: scala.Double): Self = StObject.set(x, "directMemberGroupRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollows(value: scala.Double): Self = StObject.set(x, "follows", value.asInstanceOf[js.Any])
+    inline def setFollows(value: scala.Double): Self = StObject.set(x, "follows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupAlias(value: scala.Double): Self = StObject.set(x, "groupAlias", value.asInstanceOf[js.Any])
+    inline def setGroupAlias(value: scala.Double): Self = StObject.set(x, "groupAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInDirectMemberGroupRole(value: scala.Double): Self = StObject.set(x, "inDirectMemberGroupRole", value.asInstanceOf[js.Any])
+    inline def setInDirectMemberGroupRole(value: scala.Double): Self = StObject.set(x, "inDirectMemberGroupRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndirectMember(value: scala.Double): Self = StObject.set(x, "indirectMember", value.asInstanceOf[js.Any])
+    inline def setIndirectMember(value: scala.Double): Self = StObject.set(x, "indirectMember", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonal(value: scala.Double): Self = StObject.set(x, "personal", value.asInstanceOf[js.Any])
+    inline def setPersonal(value: scala.Double): Self = StObject.set(x, "personal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonalAlias(value: scala.Double): Self = StObject.set(x, "personalAlias", value.asInstanceOf[js.Any])
+    inline def setPersonalAlias(value: scala.Double): Self = StObject.set(x, "personalAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleRole(value: scala.Double): Self = StObject.set(x, "singleRole", value.asInstanceOf[js.Any])
+    inline def setSingleRole(value: scala.Double): Self = StObject.set(x, "singleRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionAlias(value: scala.Double): Self = StObject.set(x, "subscriptionAlias", value.asInstanceOf[js.Any])
+    inline def setSubscriptionAlias(value: scala.Double): Self = StObject.set(x, "subscriptionAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+    inline def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
   }
 }

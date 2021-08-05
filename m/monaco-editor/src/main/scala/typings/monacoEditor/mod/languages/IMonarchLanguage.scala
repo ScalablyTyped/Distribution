@@ -44,55 +44,39 @@ trait IMonarchLanguage extends StObject {
 }
 object IMonarchLanguage {
   
-  @scala.inline
-  def apply(tokenizer: StringDictionary[js.Array[IMonarchLanguageRule]]): IMonarchLanguage = {
+  inline def apply(tokenizer: StringDictionary[js.Array[IMonarchLanguageRule]]): IMonarchLanguage = {
     val __obj = js.Dynamic.literal(tokenizer = tokenizer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMonarchLanguage]
   }
   
-  @scala.inline
-  implicit class IMonarchLanguageMutableBuilder[Self <: IMonarchLanguage] (val x: Self) extends AnyVal {
+  extension [Self <: IMonarchLanguage](x: Self) {
     
-    @scala.inline
-    def setBrackets(value: js.Array[IMonarchLanguageBracket]): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
+    inline def setBrackets(value: js.Array[IMonarchLanguageBracket]): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
+    inline def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
     
-    @scala.inline
-    def setBracketsVarargs(value: IMonarchLanguageBracket*): Self = StObject.set(x, "brackets", js.Array(value :_*))
+    inline def setBracketsVarargs(value: IMonarchLanguageBracket*): Self = StObject.set(x, "brackets", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultToken(value: String): Self = StObject.set(x, "defaultToken", value.asInstanceOf[js.Any])
+    inline def setDefaultToken(value: String): Self = StObject.set(x, "defaultToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTokenUndefined: Self = StObject.set(x, "defaultToken", js.undefined)
+    inline def setDefaultTokenUndefined: Self = StObject.set(x, "defaultToken", js.undefined)
     
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setTokenPostfix(value: String): Self = StObject.set(x, "tokenPostfix", value.asInstanceOf[js.Any])
+    inline def setTokenPostfix(value: String): Self = StObject.set(x, "tokenPostfix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenPostfixUndefined: Self = StObject.set(x, "tokenPostfix", js.undefined)
+    inline def setTokenPostfixUndefined: Self = StObject.set(x, "tokenPostfix", js.undefined)
     
-    @scala.inline
-    def setTokenizer(value: StringDictionary[js.Array[IMonarchLanguageRule]]): Self = StObject.set(x, "tokenizer", value.asInstanceOf[js.Any])
+    inline def setTokenizer(value: StringDictionary[js.Array[IMonarchLanguageRule]]): Self = StObject.set(x, "tokenizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnicode(value: Boolean): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+    inline def setUnicode(value: Boolean): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
+    inline def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
   }
 }

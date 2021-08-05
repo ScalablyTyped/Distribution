@@ -18,25 +18,19 @@ trait GetDistributionsRequest extends StObject {
 }
 object GetDistributionsRequest {
   
-  @scala.inline
-  def apply(): GetDistributionsRequest = {
+  inline def apply(): GetDistributionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDistributionsRequest]
   }
   
-  @scala.inline
-  implicit class GetDistributionsRequestMutableBuilder[Self <: GetDistributionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDistributionsRequest](x: Self) {
     
-    @scala.inline
-    def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
+    inline def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionNameUndefined: Self = StObject.set(x, "distributionName", js.undefined)
+    inline def setDistributionNameUndefined: Self = StObject.set(x, "distributionName", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

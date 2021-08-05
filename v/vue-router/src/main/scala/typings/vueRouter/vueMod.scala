@@ -18,20 +18,16 @@ object vueMod {
   }
   object Vue {
     
-    @scala.inline
-    def apply($route: Route, $router: default): Vue = {
+    inline def apply($route: Route, $router: default): Vue = {
       val __obj = js.Dynamic.literal($route = $route.asInstanceOf[js.Any], $router = $router.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vue]
     }
     
-    @scala.inline
-    implicit class VueMutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
+    extension [Self <: Vue](x: Self) {
       
-      @scala.inline
-      def set$route(value: Route): Self = StObject.set(x, "$route", value.asInstanceOf[js.Any])
+      inline def set$route(value: Route): Self = StObject.set(x, "$route", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$router(value: default): Self = StObject.set(x, "$router", value.asInstanceOf[js.Any])
+      inline def set$router(value: default): Self = StObject.set(x, "$router", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,28 +14,21 @@ trait NotificationSet extends StObject {
 }
 object NotificationSet {
   
-  @scala.inline
-  def apply(): NotificationSet = {
+  inline def apply(): NotificationSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationSet]
   }
   
-  @scala.inline
-  implicit class NotificationSetMutableBuilder[Self <: NotificationSet] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationSet](x: Self) {
     
-    @scala.inline
-    def setNotification(value: js.Array[Notification]): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: js.Array[Notification]): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationSetId(value: String): Self = StObject.set(x, "notificationSetId", value.asInstanceOf[js.Any])
+    inline def setNotificationSetId(value: String): Self = StObject.set(x, "notificationSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationSetIdUndefined: Self = StObject.set(x, "notificationSetId", js.undefined)
+    inline def setNotificationSetIdUndefined: Self = StObject.set(x, "notificationSetId", js.undefined)
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    @scala.inline
-    def setNotificationVarargs(value: Notification*): Self = StObject.set(x, "notification", js.Array(value :_*))
+    inline def setNotificationVarargs(value: Notification*): Self = StObject.set(x, "notification", js.Array(value :_*))
   }
 }

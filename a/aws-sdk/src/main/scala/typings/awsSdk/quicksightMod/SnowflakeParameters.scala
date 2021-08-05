@@ -23,22 +23,17 @@ trait SnowflakeParameters extends StObject {
 }
 object SnowflakeParameters {
   
-  @scala.inline
-  def apply(Database: Database, Host: Host, Warehouse: Warehouse): SnowflakeParameters = {
+  inline def apply(Database: Database, Host: Host, Warehouse: Warehouse): SnowflakeParameters = {
     val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any], Host = Host.asInstanceOf[js.Any], Warehouse = Warehouse.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnowflakeParameters]
   }
   
-  @scala.inline
-  implicit class SnowflakeParametersMutableBuilder[Self <: SnowflakeParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SnowflakeParameters](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarehouse(value: Warehouse): Self = StObject.set(x, "Warehouse", value.asInstanceOf[js.Any])
+    inline def setWarehouse(value: Warehouse): Self = StObject.set(x, "Warehouse", value.asInstanceOf[js.Any])
   }
 }

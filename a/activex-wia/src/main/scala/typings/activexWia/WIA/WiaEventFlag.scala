@@ -17,9 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WiaEventFlag extends StObject
 object WiaEventFlag {
   
-  @scala.inline
-  def ActionEvent: `2` = 2.asInstanceOf[`2`]
+  inline def ActionEvent: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def NotificationEvent: `1` = 1.asInstanceOf[`1`]
+  inline def NotificationEvent: `1` = 1.asInstanceOf[`1`]
 }

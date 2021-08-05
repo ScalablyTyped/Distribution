@@ -11,22 +11,17 @@ trait WorkflowGraph extends StObject {
 }
 object WorkflowGraph {
   
-  @scala.inline
-  def apply(): WorkflowGraph = {
+  inline def apply(): WorkflowGraph = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkflowGraph]
   }
   
-  @scala.inline
-  implicit class WorkflowGraphMutableBuilder[Self <: WorkflowGraph] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowGraph](x: Self) {
     
-    @scala.inline
-    def setNodes(value: js.Array[WorkflowNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[WorkflowNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    @scala.inline
-    def setNodesVarargs(value: WorkflowNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: WorkflowNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

@@ -20,8 +20,7 @@ trait ObjectStat extends StObject {
 }
 object ObjectStat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BlockSize: Double,
     CumulativeSize: Double,
     DataSize: Double,
@@ -33,25 +32,18 @@ object ObjectStat {
     __obj.asInstanceOf[ObjectStat]
   }
   
-  @scala.inline
-  implicit class ObjectStatMutableBuilder[Self <: ObjectStat] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectStat](x: Self) {
     
-    @scala.inline
-    def setBlockSize(value: Double): Self = StObject.set(x, "BlockSize", value.asInstanceOf[js.Any])
+    inline def setBlockSize(value: Double): Self = StObject.set(x, "BlockSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCumulativeSize(value: Double): Self = StObject.set(x, "CumulativeSize", value.asInstanceOf[js.Any])
+    inline def setCumulativeSize(value: Double): Self = StObject.set(x, "CumulativeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSize(value: Double): Self = StObject.set(x, "DataSize", value.asInstanceOf[js.Any])
+    inline def setDataSize(value: Double): Self = StObject.set(x, "DataSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: Multihash): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: Multihash): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksSize(value: Double): Self = StObject.set(x, "LinksSize", value.asInstanceOf[js.Any])
+    inline def setLinksSize(value: Double): Self = StObject.set(x, "LinksSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumLinks(value: Double): Self = StObject.set(x, "NumLinks", value.asInstanceOf[js.Any])
+    inline def setNumLinks(value: Double): Self = StObject.set(x, "NumLinks", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait Block
 }
 object Block {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: Buffer,
     dataSize: Double,
     end: Double,
@@ -40,16 +39,12 @@ object Block {
     __obj.asInstanceOf[Block]
   }
   
-  @scala.inline
-  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+  extension [Self <: Block](x: Self) {
     
-    @scala.inline
-    def setPayload(value: Buffer): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Buffer): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack(value: Double): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: Double): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

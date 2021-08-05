@@ -11,6 +11,5 @@ object global {
   @JSGlobal("serial")
   @js.native
   def serial: Serial = js.native
-  @scala.inline
-  def serial_=(x: Serial): Unit = js.Dynamic.global.updateDynamic("serial")(x.asInstanceOf[js.Any])
+  inline def serial_=(x: Serial): Unit = js.Dynamic.global.updateDynamic("serial")(x.asInstanceOf[js.Any])
 }

@@ -14,25 +14,19 @@ trait EventCallType extends StObject {
 }
 object EventCallType {
   
-  @scala.inline
-  def apply(functionName: String): EventCallType = {
+  inline def apply(functionName: String): EventCallType = {
     val __obj = js.Dynamic.literal(functionName = functionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventCallType]
   }
   
-  @scala.inline
-  implicit class EventCallTypeMutableBuilder[Self <: EventCallType] (val x: Self) extends AnyVal {
+  extension [Self <: EventCallType](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParam(value: js.Array[EventCallTypeParam]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setParam(value: js.Array[EventCallTypeParam]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
+    inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
-    @scala.inline
-    def setParamVarargs(value: EventCallTypeParam*): Self = StObject.set(x, "param", js.Array(value :_*))
+    inline def setParamVarargs(value: EventCallTypeParam*): Self = StObject.set(x, "param", js.Array(value :_*))
   }
 }

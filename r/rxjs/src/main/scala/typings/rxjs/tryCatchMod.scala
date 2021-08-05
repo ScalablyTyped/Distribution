@@ -10,6 +10,5 @@ object tryCatchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tryCatch[T /* <: js.Function */](fn: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCatch")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def tryCatch[T /* <: js.Function */](fn: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCatch")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
 }

@@ -24,8 +24,7 @@ trait InstalledExtensionState extends StObject {
 }
 object InstalledExtensionState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: ExtensionStateFlags,
     installationIssues: js.Array[InstalledExtensionStateIssue],
     lastUpdated: Date
@@ -34,19 +33,14 @@ object InstalledExtensionState {
     __obj.asInstanceOf[InstalledExtensionState]
   }
   
-  @scala.inline
-  implicit class InstalledExtensionStateMutableBuilder[Self <: InstalledExtensionState] (val x: Self) extends AnyVal {
+  extension [Self <: InstalledExtensionState](x: Self) {
     
-    @scala.inline
-    def setFlags(value: ExtensionStateFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: ExtensionStateFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationIssues(value: js.Array[InstalledExtensionStateIssue]): Self = StObject.set(x, "installationIssues", value.asInstanceOf[js.Any])
+    inline def setInstallationIssues(value: js.Array[InstalledExtensionStateIssue]): Self = StObject.set(x, "installationIssues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationIssuesVarargs(value: InstalledExtensionStateIssue*): Self = StObject.set(x, "installationIssues", js.Array(value :_*))
+    inline def setInstallationIssuesVarargs(value: InstalledExtensionStateIssue*): Self = StObject.set(x, "installationIssues", js.Array(value :_*))
     
-    @scala.inline
-    def setLastUpdated(value: Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
   }
 }

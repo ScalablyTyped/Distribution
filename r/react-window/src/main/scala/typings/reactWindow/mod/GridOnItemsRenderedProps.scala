@@ -24,8 +24,7 @@ trait GridOnItemsRenderedProps extends StObject {
 }
 object GridOnItemsRenderedProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     overscanColumnStartIndex: Double,
     overscanColumnStopIndex: Double,
     overscanRowStartIndex: Double,
@@ -39,31 +38,22 @@ object GridOnItemsRenderedProps {
     __obj.asInstanceOf[GridOnItemsRenderedProps]
   }
   
-  @scala.inline
-  implicit class GridOnItemsRenderedPropsMutableBuilder[Self <: GridOnItemsRenderedProps] (val x: Self) extends AnyVal {
+  extension [Self <: GridOnItemsRenderedProps](x: Self) {
     
-    @scala.inline
-    def setOverscanColumnStartIndex(value: Double): Self = StObject.set(x, "overscanColumnStartIndex", value.asInstanceOf[js.Any])
+    inline def setOverscanColumnStartIndex(value: Double): Self = StObject.set(x, "overscanColumnStartIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverscanColumnStopIndex(value: Double): Self = StObject.set(x, "overscanColumnStopIndex", value.asInstanceOf[js.Any])
+    inline def setOverscanColumnStopIndex(value: Double): Self = StObject.set(x, "overscanColumnStopIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverscanRowStartIndex(value: Double): Self = StObject.set(x, "overscanRowStartIndex", value.asInstanceOf[js.Any])
+    inline def setOverscanRowStartIndex(value: Double): Self = StObject.set(x, "overscanRowStartIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverscanRowStopIndex(value: Double): Self = StObject.set(x, "overscanRowStopIndex", value.asInstanceOf[js.Any])
+    inline def setOverscanRowStopIndex(value: Double): Self = StObject.set(x, "overscanRowStopIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleColumnStartIndex(value: Double): Self = StObject.set(x, "visibleColumnStartIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleColumnStartIndex(value: Double): Self = StObject.set(x, "visibleColumnStartIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleColumnStopIndex(value: Double): Self = StObject.set(x, "visibleColumnStopIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleColumnStopIndex(value: Double): Self = StObject.set(x, "visibleColumnStopIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleRowStartIndex(value: Double): Self = StObject.set(x, "visibleRowStartIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleRowStartIndex(value: Double): Self = StObject.set(x, "visibleRowStartIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleRowStopIndex(value: Double): Self = StObject.set(x, "visibleRowStopIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleRowStopIndex(value: Double): Self = StObject.set(x, "visibleRowStopIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -82,8 +82,7 @@ trait SettingsModule extends StObject {
 }
 object SettingsModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     generateUserKey: Comment => js.Promise[String],
     getRuntimeSettings: `1` => js.Promise[js.Object],
     getUserKey: IdReqUser => js.Promise[String],
@@ -96,28 +95,20 @@ object SettingsModule {
     __obj.asInstanceOf[SettingsModule]
   }
   
-  @scala.inline
-  implicit class SettingsModuleMutableBuilder[Self <: SettingsModule] (val x: Self) extends AnyVal {
+  extension [Self <: SettingsModule](x: Self) {
     
-    @scala.inline
-    def setGenerateUserKey(value: Comment => js.Promise[String]): Self = StObject.set(x, "generateUserKey", js.Any.fromFunction1(value))
+    inline def setGenerateUserKey(value: Comment => js.Promise[String]): Self = StObject.set(x, "generateUserKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRuntimeSettings(value: `1` => js.Promise[js.Object]): Self = StObject.set(x, "getRuntimeSettings", js.Any.fromFunction1(value))
+    inline def setGetRuntimeSettings(value: `1` => js.Promise[js.Object]): Self = StObject.set(x, "getRuntimeSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUserKey(value: IdReqUser => js.Promise[String]): Self = StObject.set(x, "getUserKey", js.Any.fromFunction1(value))
+    inline def setGetUserKey(value: IdReqUser => js.Promise[String]): Self = StObject.set(x, "getUserKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUserKeys(value: `1` => js.Promise[js.Object]): Self = StObject.set(x, "getUserKeys", js.Any.fromFunction1(value))
+    inline def setGetUserKeys(value: `1` => js.Promise[js.Object]): Self = StObject.set(x, "getUserKeys", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUserSettings(value: `1` => js.Promise[js.Object]): Self = StObject.set(x, "getUserSettings", js.Any.fromFunction1(value))
+    inline def setGetUserSettings(value: `1` => js.Promise[js.Object]): Self = StObject.set(x, "getUserSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveUserKey(value: IdReqUser => js.Promise[Unit]): Self = StObject.set(x, "removeUserKey", js.Any.fromFunction1(value))
+    inline def setRemoveUserKey(value: IdReqUser => js.Promise[Unit]): Self = StObject.set(x, "removeUserKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateUserSettings(value: Settings => js.Promise[js.Object]): Self = StObject.set(x, "updateUserSettings", js.Any.fromFunction1(value))
+    inline def setUpdateUserSettings(value: Settings => js.Promise[js.Object]): Self = StObject.set(x, "updateUserSettings", js.Any.fromFunction1(value))
   }
 }

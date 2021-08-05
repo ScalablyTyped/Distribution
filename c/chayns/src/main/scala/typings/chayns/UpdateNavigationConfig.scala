@@ -13,25 +13,19 @@ trait UpdateNavigationConfig extends StObject {
 }
 object UpdateNavigationConfig {
   
-  @scala.inline
-  def apply(): UpdateNavigationConfig = {
+  inline def apply(): UpdateNavigationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateNavigationConfig]
   }
   
-  @scala.inline
-  implicit class UpdateNavigationConfigMutableBuilder[Self <: UpdateNavigationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateNavigationConfig](x: Self) {
     
-    @scala.inline
-    def setStateOnly(value: Boolean): Self = StObject.set(x, "stateOnly", value.asInstanceOf[js.Any])
+    inline def setStateOnly(value: Boolean): Self = StObject.set(x, "stateOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateOnlyUndefined: Self = StObject.set(x, "stateOnly", js.undefined)
+    inline def setStateOnlyUndefined: Self = StObject.set(x, "stateOnly", js.undefined)
     
-    @scala.inline
-    def setUpdateTapp(value: Boolean): Self = StObject.set(x, "updateTapp", value.asInstanceOf[js.Any])
+    inline def setUpdateTapp(value: Boolean): Self = StObject.set(x, "updateTapp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTappUndefined: Self = StObject.set(x, "updateTapp", js.undefined)
+    inline def setUpdateTappUndefined: Self = StObject.set(x, "updateTapp", js.undefined)
   }
 }

@@ -60,49 +60,35 @@ trait ScrollViewPropsAndroid extends StObject {
 }
 object ScrollViewPropsAndroid {
   
-  @scala.inline
-  def apply(): ScrollViewPropsAndroid = {
+  inline def apply(): ScrollViewPropsAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScrollViewPropsAndroid]
   }
   
-  @scala.inline
-  implicit class ScrollViewPropsAndroidMutableBuilder[Self <: ScrollViewPropsAndroid] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollViewPropsAndroid](x: Self) {
     
-    @scala.inline
-    def setEndFillColor(value: ColorValue): Self = StObject.set(x, "endFillColor", value.asInstanceOf[js.Any])
+    inline def setEndFillColor(value: ColorValue): Self = StObject.set(x, "endFillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndFillColorUndefined: Self = StObject.set(x, "endFillColor", js.undefined)
+    inline def setEndFillColorUndefined: Self = StObject.set(x, "endFillColor", js.undefined)
     
-    @scala.inline
-    def setFadingEdgeLength(value: Double): Self = StObject.set(x, "fadingEdgeLength", value.asInstanceOf[js.Any])
+    inline def setFadingEdgeLength(value: Double): Self = StObject.set(x, "fadingEdgeLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadingEdgeLengthUndefined: Self = StObject.set(x, "fadingEdgeLength", js.undefined)
+    inline def setFadingEdgeLengthUndefined: Self = StObject.set(x, "fadingEdgeLength", js.undefined)
     
-    @scala.inline
-    def setNestedScrollEnabled(value: Boolean): Self = StObject.set(x, "nestedScrollEnabled", value.asInstanceOf[js.Any])
+    inline def setNestedScrollEnabled(value: Boolean): Self = StObject.set(x, "nestedScrollEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestedScrollEnabledUndefined: Self = StObject.set(x, "nestedScrollEnabled", js.undefined)
+    inline def setNestedScrollEnabledUndefined: Self = StObject.set(x, "nestedScrollEnabled", js.undefined)
     
-    @scala.inline
-    def setOverScrollMode(value: auto | always | never): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
+    inline def setOverScrollMode(value: auto | always | never): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverScrollModeUndefined: Self = StObject.set(x, "overScrollMode", js.undefined)
+    inline def setOverScrollModeUndefined: Self = StObject.set(x, "overScrollMode", js.undefined)
     
-    @scala.inline
-    def setPersistentScrollbar(value: Boolean): Self = StObject.set(x, "persistentScrollbar", value.asInstanceOf[js.Any])
+    inline def setPersistentScrollbar(value: Boolean): Self = StObject.set(x, "persistentScrollbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentScrollbarUndefined: Self = StObject.set(x, "persistentScrollbar", js.undefined)
+    inline def setPersistentScrollbarUndefined: Self = StObject.set(x, "persistentScrollbar", js.undefined)
     
-    @scala.inline
-    def setScrollPerfTag(value: String): Self = StObject.set(x, "scrollPerfTag", value.asInstanceOf[js.Any])
+    inline def setScrollPerfTag(value: String): Self = StObject.set(x, "scrollPerfTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollPerfTagUndefined: Self = StObject.set(x, "scrollPerfTag", js.undefined)
+    inline def setScrollPerfTagUndefined: Self = StObject.set(x, "scrollPerfTag", js.undefined)
   }
 }

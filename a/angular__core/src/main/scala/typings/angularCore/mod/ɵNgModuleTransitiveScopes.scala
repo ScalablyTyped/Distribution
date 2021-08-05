@@ -15,28 +15,21 @@ trait ɵNgModuleTransitiveScopes extends StObject {
 }
 object ɵNgModuleTransitiveScopes {
   
-  @scala.inline
-  def apply(compilation: Directives, exported: Directives): ɵNgModuleTransitiveScopes = {
+  inline def apply(compilation: Directives, exported: Directives): ɵNgModuleTransitiveScopes = {
     val __obj = js.Dynamic.literal(compilation = compilation.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], schemas = null)
     __obj.asInstanceOf[ɵNgModuleTransitiveScopes]
   }
   
-  @scala.inline
-  implicit class ɵNgModuleTransitiveScopesMutableBuilder[Self <: ɵNgModuleTransitiveScopes] (val x: Self) extends AnyVal {
+  extension [Self <: ɵNgModuleTransitiveScopes](x: Self) {
     
-    @scala.inline
-    def setCompilation(value: Directives): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
+    inline def setCompilation(value: Directives): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExported(value: Directives): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
+    inline def setExported(value: Directives): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemas(value: js.Array[SchemaMetadata]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: js.Array[SchemaMetadata]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasNull: Self = StObject.set(x, "schemas", null)
+    inline def setSchemasNull: Self = StObject.set(x, "schemas", null)
     
-    @scala.inline
-    def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value :_*))
   }
 }

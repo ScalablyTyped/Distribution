@@ -21,20 +21,17 @@ object SidebarToggleMode {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleMode.PushContentAside")
   @js.native
   def PushContentAside: SidebarToggleMode = js.native
-  @scala.inline
-  def PushContentAside_=(x: SidebarToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PushContentAside")(x.asInstanceOf[js.Any])
+  inline def PushContentAside_=(x: SidebarToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PushContentAside")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleMode.ShrinkContent")
   @js.native
   def ShrinkContent: SidebarToggleMode = js.native
-  @scala.inline
-  def ShrinkContent_=(x: SidebarToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShrinkContent")(x.asInstanceOf[js.Any])
+  inline def ShrinkContent_=(x: SidebarToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShrinkContent")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleMode.SlideOverContent")
   @js.native
   def SlideOverContent: SidebarToggleMode = js.native
-  @scala.inline
-  def SlideOverContent_=(x: SidebarToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SlideOverContent")(x.asInstanceOf[js.Any])
+  inline def SlideOverContent_=(x: SidebarToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SlideOverContent")(x.asInstanceOf[js.Any])
 }

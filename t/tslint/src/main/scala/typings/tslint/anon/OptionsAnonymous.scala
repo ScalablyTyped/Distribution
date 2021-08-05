@@ -10,16 +10,13 @@ trait OptionsAnonymous extends StObject {
 }
 object OptionsAnonymous {
   
-  @scala.inline
-  def apply(options: Anonymous): OptionsAnonymous = {
+  inline def apply(options: Anonymous): OptionsAnonymous = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsAnonymous]
   }
   
-  @scala.inline
-  implicit class OptionsAnonymousMutableBuilder[Self <: OptionsAnonymous] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsAnonymous](x: Self) {
     
-    @scala.inline
-    def setOptions(value: Anonymous): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Anonymous): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

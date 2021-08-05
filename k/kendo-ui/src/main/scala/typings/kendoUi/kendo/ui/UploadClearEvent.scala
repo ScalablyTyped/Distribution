@@ -12,19 +12,15 @@ trait UploadClearEvent
 }
 object UploadClearEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Upload): UploadClearEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Upload): UploadClearEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadClearEvent]
   }
   
-  @scala.inline
-  implicit class UploadClearEventMutableBuilder[Self <: UploadClearEvent] (val x: Self) extends AnyVal {
+  extension [Self <: UploadClearEvent](x: Self) {
     
-    @scala.inline
-    def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEUndefined: Self = StObject.set(x, "e", js.undefined)
+    inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
   }
 }

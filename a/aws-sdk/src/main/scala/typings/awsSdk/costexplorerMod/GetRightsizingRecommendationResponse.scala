@@ -33,46 +33,33 @@ trait GetRightsizingRecommendationResponse extends StObject {
 }
 object GetRightsizingRecommendationResponse {
   
-  @scala.inline
-  def apply(): GetRightsizingRecommendationResponse = {
+  inline def apply(): GetRightsizingRecommendationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRightsizingRecommendationResponse]
   }
   
-  @scala.inline
-  implicit class GetRightsizingRecommendationResponseMutableBuilder[Self <: GetRightsizingRecommendationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetRightsizingRecommendationResponse](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: RightsizingRecommendationConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: RightsizingRecommendationConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: RightsizingRecommendationMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: RightsizingRecommendationMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setRightsizingRecommendations(value: RightsizingRecommendationList): Self = StObject.set(x, "RightsizingRecommendations", value.asInstanceOf[js.Any])
+    inline def setRightsizingRecommendations(value: RightsizingRecommendationList): Self = StObject.set(x, "RightsizingRecommendations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightsizingRecommendationsUndefined: Self = StObject.set(x, "RightsizingRecommendations", js.undefined)
+    inline def setRightsizingRecommendationsUndefined: Self = StObject.set(x, "RightsizingRecommendations", js.undefined)
     
-    @scala.inline
-    def setRightsizingRecommendationsVarargs(value: RightsizingRecommendation*): Self = StObject.set(x, "RightsizingRecommendations", js.Array(value :_*))
+    inline def setRightsizingRecommendationsVarargs(value: RightsizingRecommendation*): Self = StObject.set(x, "RightsizingRecommendations", js.Array(value :_*))
     
-    @scala.inline
-    def setSummary(value: RightsizingRecommendationSummary): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: RightsizingRecommendationSummary): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "Summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "Summary", js.undefined)
   }
 }

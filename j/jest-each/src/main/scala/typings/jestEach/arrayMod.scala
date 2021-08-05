@@ -12,6 +12,5 @@ object arrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(title: String, arrayTable: ArrayTable): EachTests = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], arrayTable.asInstanceOf[js.Any])).asInstanceOf[EachTests]
+  inline def default(title: String, arrayTable: ArrayTable): EachTests = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], arrayTable.asInstanceOf[js.Any])).asInstanceOf[EachTests]
 }

@@ -18,25 +18,19 @@ trait ListGatewaysRequest extends StObject {
 }
 object ListGatewaysRequest {
   
-  @scala.inline
-  def apply(): ListGatewaysRequest = {
+  inline def apply(): ListGatewaysRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGatewaysRequest]
   }
   
-  @scala.inline
-  implicit class ListGatewaysRequestMutableBuilder[Self <: ListGatewaysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListGatewaysRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

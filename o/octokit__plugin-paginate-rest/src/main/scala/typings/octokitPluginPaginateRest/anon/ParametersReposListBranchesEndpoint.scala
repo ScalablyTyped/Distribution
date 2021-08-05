@@ -15,19 +15,15 @@ trait ParametersReposListBranchesEndpoint extends StObject {
 }
 object ParametersReposListBranchesEndpoint {
   
-  @scala.inline
-  def apply(parameters: ReposListBranchesEndpoint, response: OctokitResponse[ReposListBranchesResponseData]): ParametersReposListBranchesEndpoint = {
+  inline def apply(parameters: ReposListBranchesEndpoint, response: OctokitResponse[ReposListBranchesResponseData]): ParametersReposListBranchesEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersReposListBranchesEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposListBranchesEndpointMutableBuilder[Self <: ParametersReposListBranchesEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposListBranchesEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposListBranchesEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposListBranchesEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposListBranchesResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposListBranchesResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

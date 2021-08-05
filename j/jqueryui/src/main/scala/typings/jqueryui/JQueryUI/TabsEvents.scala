@@ -19,43 +19,31 @@ trait TabsEvents extends StObject {
 }
 object TabsEvents {
   
-  @scala.inline
-  def apply(): TabsEvents = {
+  inline def apply(): TabsEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabsEvents]
   }
   
-  @scala.inline
-  implicit class TabsEventsMutableBuilder[Self <: TabsEvents] (val x: Self) extends AnyVal {
+  extension [Self <: TabsEvents](x: Self) {
     
-    @scala.inline
-    def setActivate(value: (/* event */ JQueryEventObject, TabsActivationUIParams) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
+    inline def setActivate(value: (/* event */ JQueryEventObject, TabsActivationUIParams) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
-    @scala.inline
-    def setBeforeActivate(value: (/* event */ JQueryEventObject, TabsActivationUIParams) => Unit): Self = StObject.set(x, "beforeActivate", js.Any.fromFunction2(value))
+    inline def setBeforeActivate(value: (/* event */ JQueryEventObject, TabsActivationUIParams) => Unit): Self = StObject.set(x, "beforeActivate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeActivateUndefined: Self = StObject.set(x, "beforeActivate", js.undefined)
+    inline def setBeforeActivateUndefined: Self = StObject.set(x, "beforeActivate", js.undefined)
     
-    @scala.inline
-    def setBeforeLoad(value: (/* event */ JQueryEventObject, TabsBeforeLoadUIParams) => Unit): Self = StObject.set(x, "beforeLoad", js.Any.fromFunction2(value))
+    inline def setBeforeLoad(value: (/* event */ JQueryEventObject, TabsBeforeLoadUIParams) => Unit): Self = StObject.set(x, "beforeLoad", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeLoadUndefined: Self = StObject.set(x, "beforeLoad", js.undefined)
+    inline def setBeforeLoadUndefined: Self = StObject.set(x, "beforeLoad", js.undefined)
     
-    @scala.inline
-    def setCreate(value: (/* event */ JQueryEventObject, TabsCreateOrLoadUIParams) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ JQueryEventObject, TabsCreateOrLoadUIParams) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setLoad(value: (/* event */ JQueryEventObject, TabsCreateOrLoadUIParams) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+    inline def setLoad(value: (/* event */ JQueryEventObject, TabsCreateOrLoadUIParams) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
   }
 }

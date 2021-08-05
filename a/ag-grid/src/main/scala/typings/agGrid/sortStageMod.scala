@@ -13,8 +13,8 @@ object sortStageMod {
     
     def execute(params: StageExecuteParams): Unit = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var sortService: js.Any = js.native
+    /* private */ var sortService: js.Any = js.native
   }
 }

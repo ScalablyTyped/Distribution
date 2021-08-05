@@ -11,8 +11,7 @@ trait SaxesOptions
      with XMLVersionOptions
 object SaxesOptions {
   
-  @scala.inline
-  def apply(): SaxesOptions = {
+  inline def apply(): SaxesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SaxesOptions]
   }

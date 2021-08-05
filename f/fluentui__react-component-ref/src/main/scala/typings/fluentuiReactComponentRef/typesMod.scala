@@ -27,26 +27,20 @@ object typesMod {
   }
   object RefProps {
     
-    @scala.inline
-    def apply(children: ReactElement): RefProps = {
+    inline def apply(children: ReactElement): RefProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], innerRef = null)
       __obj.asInstanceOf[RefProps]
     }
     
-    @scala.inline
-    implicit class RefPropsMutableBuilder[Self <: RefProps] (val x: Self) extends AnyVal {
+    extension [Self <: RefProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRef(value: Ref[HTMLElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[HTMLElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
     }
   }
 }

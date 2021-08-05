@@ -18,25 +18,19 @@ trait LogPublishingOptionsStatus extends StObject {
 }
 object LogPublishingOptionsStatus {
   
-  @scala.inline
-  def apply(): LogPublishingOptionsStatus = {
+  inline def apply(): LogPublishingOptionsStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogPublishingOptionsStatus]
   }
   
-  @scala.inline
-  implicit class LogPublishingOptionsStatusMutableBuilder[Self <: LogPublishingOptionsStatus] (val x: Self) extends AnyVal {
+  extension [Self <: LogPublishingOptionsStatus](x: Self) {
     
-    @scala.inline
-    def setOptions(value: LogPublishingOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: LogPublishingOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
-    @scala.inline
-    def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

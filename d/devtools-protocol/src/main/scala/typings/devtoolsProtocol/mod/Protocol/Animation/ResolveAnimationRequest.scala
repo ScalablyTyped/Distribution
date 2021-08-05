@@ -13,16 +13,13 @@ trait ResolveAnimationRequest extends StObject {
 }
 object ResolveAnimationRequest {
   
-  @scala.inline
-  def apply(animationId: String): ResolveAnimationRequest = {
+  inline def apply(animationId: String): ResolveAnimationRequest = {
     val __obj = js.Dynamic.literal(animationId = animationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveAnimationRequest]
   }
   
-  @scala.inline
-  implicit class ResolveAnimationRequestMutableBuilder[Self <: ResolveAnimationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveAnimationRequest](x: Self) {
     
-    @scala.inline
-    def setAnimationId(value: String): Self = StObject.set(x, "animationId", value.asInstanceOf[js.Any])
+    inline def setAnimationId(value: String): Self = StObject.set(x, "animationId", value.asInstanceOf[js.Any])
   }
 }

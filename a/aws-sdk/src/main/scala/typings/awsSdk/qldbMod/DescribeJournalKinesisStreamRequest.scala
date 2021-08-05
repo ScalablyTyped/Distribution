@@ -18,19 +18,15 @@ trait DescribeJournalKinesisStreamRequest extends StObject {
 }
 object DescribeJournalKinesisStreamRequest {
   
-  @scala.inline
-  def apply(LedgerName: LedgerName, StreamId: UniqueId): DescribeJournalKinesisStreamRequest = {
+  inline def apply(LedgerName: LedgerName, StreamId: UniqueId): DescribeJournalKinesisStreamRequest = {
     val __obj = js.Dynamic.literal(LedgerName = LedgerName.asInstanceOf[js.Any], StreamId = StreamId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeJournalKinesisStreamRequest]
   }
   
-  @scala.inline
-  implicit class DescribeJournalKinesisStreamRequestMutableBuilder[Self <: DescribeJournalKinesisStreamRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeJournalKinesisStreamRequest](x: Self) {
     
-    @scala.inline
-    def setLedgerName(value: LedgerName): Self = StObject.set(x, "LedgerName", value.asInstanceOf[js.Any])
+    inline def setLedgerName(value: LedgerName): Self = StObject.set(x, "LedgerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamId(value: UniqueId): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: UniqueId): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
   }
 }

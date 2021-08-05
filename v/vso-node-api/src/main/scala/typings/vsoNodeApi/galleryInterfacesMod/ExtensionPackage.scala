@@ -13,16 +13,13 @@ trait ExtensionPackage extends StObject {
 }
 object ExtensionPackage {
   
-  @scala.inline
-  def apply(extensionManifest: String): ExtensionPackage = {
+  inline def apply(extensionManifest: String): ExtensionPackage = {
     val __obj = js.Dynamic.literal(extensionManifest = extensionManifest.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionPackage]
   }
   
-  @scala.inline
-  implicit class ExtensionPackageMutableBuilder[Self <: ExtensionPackage] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionPackage](x: Self) {
     
-    @scala.inline
-    def setExtensionManifest(value: String): Self = StObject.set(x, "extensionManifest", value.asInstanceOf[js.Any])
+    inline def setExtensionManifest(value: String): Self = StObject.set(x, "extensionManifest", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait CodeActionList
 }
 object CodeActionList {
   
-  @scala.inline
-  def apply(actions: js.Array[CodeAction], dispose: () => Unit): CodeActionList = {
+  inline def apply(actions: js.Array[CodeAction], dispose: () => Unit): CodeActionList = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose))
     __obj.asInstanceOf[CodeActionList]
   }
   
-  @scala.inline
-  implicit class CodeActionListMutableBuilder[Self <: CodeActionList] (val x: Self) extends AnyVal {
+  extension [Self <: CodeActionList](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[CodeAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[CodeAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: CodeAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: CodeAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
   }
 }

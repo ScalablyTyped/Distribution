@@ -50,55 +50,39 @@ trait VerifyOptions extends StObject {
 }
 object VerifyOptions {
   
-  @scala.inline
-  def apply(): VerifyOptions = {
+  inline def apply(): VerifyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VerifyOptions]
   }
   
-  @scala.inline
-  implicit class VerifyOptionsMutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VerifyOptions](x: Self) {
     
-    @scala.inline
-    def setAbuse_at_token(value: String): Self = StObject.set(x, "abuse_at_token", value.asInstanceOf[js.Any])
+    inline def setAbuse_at_token(value: String): Self = StObject.set(x, "abuse_at_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbuse_at_tokenUndefined: Self = StObject.set(x, "abuse_at_token", js.undefined)
+    inline def setAbuse_at_tokenUndefined: Self = StObject.set(x, "abuse_at_token", js.undefined)
     
-    @scala.inline
-    def setAbuse_at_verify(value: Boolean): Self = StObject.set(x, "abuse_at_verify", value.asInstanceOf[js.Any])
+    inline def setAbuse_at_verify(value: Boolean): Self = StObject.set(x, "abuse_at_verify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbuse_at_verifyUndefined: Self = StObject.set(x, "abuse_at_verify", js.undefined)
+    inline def setAbuse_at_verifyUndefined: Self = StObject.set(x, "abuse_at_verify", js.undefined)
     
-    @scala.inline
-    def setCname_verify(value: Boolean): Self = StObject.set(x, "cname_verify", value.asInstanceOf[js.Any])
+    inline def setCname_verify(value: Boolean): Self = StObject.set(x, "cname_verify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCname_verifyUndefined: Self = StObject.set(x, "cname_verify", js.undefined)
+    inline def setCname_verifyUndefined: Self = StObject.set(x, "cname_verify", js.undefined)
     
-    @scala.inline
-    def setDkim_verify(value: Boolean): Self = StObject.set(x, "dkim_verify", value.asInstanceOf[js.Any])
+    inline def setDkim_verify(value: Boolean): Self = StObject.set(x, "dkim_verify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDkim_verifyUndefined: Self = StObject.set(x, "dkim_verify", js.undefined)
+    inline def setDkim_verifyUndefined: Self = StObject.set(x, "dkim_verify", js.undefined)
     
-    @scala.inline
-    def setPostmaster_at_token(value: String): Self = StObject.set(x, "postmaster_at_token", value.asInstanceOf[js.Any])
+    inline def setPostmaster_at_token(value: String): Self = StObject.set(x, "postmaster_at_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostmaster_at_tokenUndefined: Self = StObject.set(x, "postmaster_at_token", js.undefined)
+    inline def setPostmaster_at_tokenUndefined: Self = StObject.set(x, "postmaster_at_token", js.undefined)
     
-    @scala.inline
-    def setPostmaster_at_verify(value: Boolean): Self = StObject.set(x, "postmaster_at_verify", value.asInstanceOf[js.Any])
+    inline def setPostmaster_at_verify(value: Boolean): Self = StObject.set(x, "postmaster_at_verify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostmaster_at_verifyUndefined: Self = StObject.set(x, "postmaster_at_verify", js.undefined)
+    inline def setPostmaster_at_verifyUndefined: Self = StObject.set(x, "postmaster_at_verify", js.undefined)
     
-    @scala.inline
-    def setSpf_verify(value: Boolean): Self = StObject.set(x, "spf_verify", value.asInstanceOf[js.Any])
+    inline def setSpf_verify(value: Boolean): Self = StObject.set(x, "spf_verify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpf_verifyUndefined: Self = StObject.set(x, "spf_verify", js.undefined)
+    inline def setSpf_verifyUndefined: Self = StObject.set(x, "spf_verify", js.undefined)
   }
 }

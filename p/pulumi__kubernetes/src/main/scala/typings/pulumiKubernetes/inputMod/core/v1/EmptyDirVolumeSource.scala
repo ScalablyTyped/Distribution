@@ -22,25 +22,19 @@ trait EmptyDirVolumeSource extends StObject {
 }
 object EmptyDirVolumeSource {
   
-  @scala.inline
-  def apply(): EmptyDirVolumeSource = {
+  inline def apply(): EmptyDirVolumeSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmptyDirVolumeSource]
   }
   
-  @scala.inline
-  implicit class EmptyDirVolumeSourceMutableBuilder[Self <: EmptyDirVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: EmptyDirVolumeSource](x: Self) {
     
-    @scala.inline
-    def setMedium(value: Input[String]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: Input[String]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+    inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
-    @scala.inline
-    def setSizeLimit(value: Input[String]): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
+    inline def setSizeLimit(value: Input[String]): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
+    inline def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
   }
 }

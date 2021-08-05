@@ -16,26 +16,20 @@ trait Latestcommenturl extends StObject {
 }
 object Latestcommenturl {
   
-  @scala.inline
-  def apply(latest_comment_url: String, title: String, `type`: String, url: String): Latestcommenturl = {
+  inline def apply(latest_comment_url: String, title: String, `type`: String, url: String): Latestcommenturl = {
     val __obj = js.Dynamic.literal(latest_comment_url = latest_comment_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Latestcommenturl]
   }
   
-  @scala.inline
-  implicit class LatestcommenturlMutableBuilder[Self <: Latestcommenturl] (val x: Self) extends AnyVal {
+  extension [Self <: Latestcommenturl](x: Self) {
     
-    @scala.inline
-    def setLatest_comment_url(value: String): Self = StObject.set(x, "latest_comment_url", value.asInstanceOf[js.Any])
+    inline def setLatest_comment_url(value: String): Self = StObject.set(x, "latest_comment_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

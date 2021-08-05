@@ -13,8 +13,7 @@ object mod {
   /**
     * Expose `flash()` function on responses.
     */
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("express-flash-2", JSImport.Namespace)
   @js.native
@@ -32,20 +31,16 @@ object mod {
       }
       object Request {
         
-        @scala.inline
-        def apply(): Request = {
+        inline def apply(): Request = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Request]
         }
         
-        @scala.inline
-        implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+        extension [Self <: Request](x: Self) {
           
-          @scala.inline
-          def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+          inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+          inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
         }
       }
       
@@ -84,17 +79,14 @@ object mod {
       }
       object Session {
         
-        @scala.inline
-        def apply(flash: Flash): Session = {
+        inline def apply(flash: Flash): Session = {
           val __obj = js.Dynamic.literal(flash = flash.asInstanceOf[js.Any])
           __obj.asInstanceOf[Session]
         }
         
-        @scala.inline
-        implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+        extension [Self <: Session](x: Self) {
           
-          @scala.inline
-          def setFlash(value: Flash): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
+          inline def setFlash(value: Flash): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
         }
       }
     }

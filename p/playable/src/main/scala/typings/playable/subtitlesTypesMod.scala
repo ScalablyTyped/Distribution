@@ -16,29 +16,22 @@ object subtitlesTypesMod {
   }
   object ISubtitleConfig {
     
-    @scala.inline
-    def apply(src: String): ISubtitleConfig = {
+    inline def apply(src: String): ISubtitleConfig = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISubtitleConfig]
     }
     
-    @scala.inline
-    implicit class ISubtitleConfigMutableBuilder[Self <: ISubtitleConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ISubtitleConfig](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,44 +69,32 @@ object subtitlesTypesMod {
   }
   object ISubtitlesAPI {
     
-    @scala.inline
-    def apply(): ISubtitlesAPI = {
+    inline def apply(): ISubtitlesAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISubtitlesAPI]
     }
     
-    @scala.inline
-    implicit class ISubtitlesAPIMutableBuilder[Self <: ISubtitlesAPI] (val x: Self) extends AnyVal {
+    extension [Self <: ISubtitlesAPI](x: Self) {
       
-      @scala.inline
-      def setHideSubtitles(value: () => Unit): Self = StObject.set(x, "hideSubtitles", js.Any.fromFunction0(value))
+      inline def setHideSubtitles(value: () => Unit): Self = StObject.set(x, "hideSubtitles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideSubtitlesUndefined: Self = StObject.set(x, "hideSubtitles", js.undefined)
+      inline def setHideSubtitlesUndefined: Self = StObject.set(x, "hideSubtitles", js.undefined)
       
-      @scala.inline
-      def setRemoveSubtitles(value: () => Unit): Self = StObject.set(x, "removeSubtitles", js.Any.fromFunction0(value))
+      inline def setRemoveSubtitles(value: () => Unit): Self = StObject.set(x, "removeSubtitles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveSubtitlesUndefined: Self = StObject.set(x, "removeSubtitles", js.undefined)
+      inline def setRemoveSubtitlesUndefined: Self = StObject.set(x, "removeSubtitles", js.undefined)
       
-      @scala.inline
-      def setSetActiveSubtitle(value: /* index */ Double => Unit): Self = StObject.set(x, "setActiveSubtitle", js.Any.fromFunction1(value))
+      inline def setSetActiveSubtitle(value: /* index */ Double => Unit): Self = StObject.set(x, "setActiveSubtitle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetActiveSubtitleUndefined: Self = StObject.set(x, "setActiveSubtitle", js.undefined)
+      inline def setSetActiveSubtitleUndefined: Self = StObject.set(x, "setActiveSubtitle", js.undefined)
       
-      @scala.inline
-      def setSetSubtitles(value: /* subtitles */ String | ISubtitleConfig | js.Array[ISubtitleConfig] => Unit): Self = StObject.set(x, "setSubtitles", js.Any.fromFunction1(value))
+      inline def setSetSubtitles(value: /* subtitles */ String | ISubtitleConfig | js.Array[ISubtitleConfig] => Unit): Self = StObject.set(x, "setSubtitles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSubtitlesUndefined: Self = StObject.set(x, "setSubtitles", js.undefined)
+      inline def setSetSubtitlesUndefined: Self = StObject.set(x, "setSubtitles", js.undefined)
       
-      @scala.inline
-      def setShowSubtitles(value: () => Unit): Self = StObject.set(x, "showSubtitles", js.Any.fromFunction0(value))
+      inline def setShowSubtitles(value: () => Unit): Self = StObject.set(x, "showSubtitles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowSubtitlesUndefined: Self = StObject.set(x, "showSubtitles", js.undefined)
+      inline def setShowSubtitlesUndefined: Self = StObject.set(x, "showSubtitles", js.undefined)
     }
   }
   
@@ -131,8 +112,7 @@ object subtitlesTypesMod {
   }
   object ISubtitlesViewStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: String,
       controlsShown: String,
       hidden: String,
@@ -143,23 +123,17 @@ object subtitlesTypesMod {
       __obj.asInstanceOf[ISubtitlesViewStyles]
     }
     
-    @scala.inline
-    implicit class ISubtitlesViewStylesMutableBuilder[Self <: ISubtitlesViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ISubtitlesViewStyles](x: Self) {
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlsShown(value: String): Self = StObject.set(x, "controlsShown", value.asInstanceOf[js.Any])
+      inline def setControlsShown(value: String): Self = StObject.set(x, "controlsShown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitlesContainer(value: String): Self = StObject.set(x, "subtitlesContainer", value.asInstanceOf[js.Any])
+      inline def setSubtitlesContainer(value: String): Self = StObject.set(x, "subtitlesContainer", value.asInstanceOf[js.Any])
     }
   }
 }

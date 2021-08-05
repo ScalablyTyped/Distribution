@@ -10,19 +10,15 @@ trait ErrorHandlerOptions extends StObject {
 }
 object ErrorHandlerOptions {
   
-  @scala.inline
-  def apply(): ErrorHandlerOptions = {
+  inline def apply(): ErrorHandlerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorHandlerOptions]
   }
   
-  @scala.inline
-  implicit class ErrorHandlerOptionsMutableBuilder[Self <: ErrorHandlerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorHandlerOptions](x: Self) {
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

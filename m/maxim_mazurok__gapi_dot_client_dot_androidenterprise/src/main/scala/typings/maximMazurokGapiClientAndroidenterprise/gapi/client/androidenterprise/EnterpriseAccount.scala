@@ -11,19 +11,15 @@ trait EnterpriseAccount extends StObject {
 }
 object EnterpriseAccount {
   
-  @scala.inline
-  def apply(): EnterpriseAccount = {
+  inline def apply(): EnterpriseAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnterpriseAccount]
   }
   
-  @scala.inline
-  implicit class EnterpriseAccountMutableBuilder[Self <: EnterpriseAccount] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAccount](x: Self) {
     
-    @scala.inline
-    def setAccountEmail(value: String): Self = StObject.set(x, "accountEmail", value.asInstanceOf[js.Any])
+    inline def setAccountEmail(value: String): Self = StObject.set(x, "accountEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountEmailUndefined: Self = StObject.set(x, "accountEmail", js.undefined)
+    inline def setAccountEmailUndefined: Self = StObject.set(x, "accountEmail", js.undefined)
   }
 }

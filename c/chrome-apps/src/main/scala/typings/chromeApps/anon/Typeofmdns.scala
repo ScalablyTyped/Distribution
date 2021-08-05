@@ -47,8 +47,7 @@ trait Typeofmdns extends StObject {
 }
 object Typeofmdns {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MAX_SERVICE_INSTANCES_PER_EVENT: integer,
     forceDiscovery: js.Function0[Unit] => Unit,
     onServiceList: FilteredEvent[js.Function1[/* services */ js.Array[Service], Unit], ServiceTypes]
@@ -57,16 +56,12 @@ object Typeofmdns {
     __obj.asInstanceOf[Typeofmdns]
   }
   
-  @scala.inline
-  implicit class TypeofmdnsMutableBuilder[Self <: Typeofmdns] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofmdns](x: Self) {
     
-    @scala.inline
-    def setForceDiscovery(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "forceDiscovery", js.Any.fromFunction1(value))
+    inline def setForceDiscovery(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "forceDiscovery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMAX_SERVICE_INSTANCES_PER_EVENT(value: integer): Self = StObject.set(x, "MAX_SERVICE_INSTANCES_PER_EVENT", value.asInstanceOf[js.Any])
+    inline def setMAX_SERVICE_INSTANCES_PER_EVENT(value: integer): Self = StObject.set(x, "MAX_SERVICE_INSTANCES_PER_EVENT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnServiceList(value: FilteredEvent[js.Function1[/* services */ js.Array[Service], Unit], ServiceTypes]): Self = StObject.set(x, "onServiceList", value.asInstanceOf[js.Any])
+    inline def setOnServiceList(value: FilteredEvent[js.Function1[/* services */ js.Array[Service], Unit], ServiceTypes]): Self = StObject.set(x, "onServiceList", value.asInstanceOf[js.Any])
   }
 }

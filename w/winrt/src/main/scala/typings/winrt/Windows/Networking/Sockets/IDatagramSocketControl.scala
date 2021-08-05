@@ -12,19 +12,15 @@ trait IDatagramSocketControl extends StObject {
 }
 object IDatagramSocketControl {
   
-  @scala.inline
-  def apply(outboundUnicastHopLimit: Double, qualityOfService: SocketQualityOfService): IDatagramSocketControl = {
+  inline def apply(outboundUnicastHopLimit: Double, qualityOfService: SocketQualityOfService): IDatagramSocketControl = {
     val __obj = js.Dynamic.literal(outboundUnicastHopLimit = outboundUnicastHopLimit.asInstanceOf[js.Any], qualityOfService = qualityOfService.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatagramSocketControl]
   }
   
-  @scala.inline
-  implicit class IDatagramSocketControlMutableBuilder[Self <: IDatagramSocketControl] (val x: Self) extends AnyVal {
+  extension [Self <: IDatagramSocketControl](x: Self) {
     
-    @scala.inline
-    def setOutboundUnicastHopLimit(value: Double): Self = StObject.set(x, "outboundUnicastHopLimit", value.asInstanceOf[js.Any])
+    inline def setOutboundUnicastHopLimit(value: Double): Self = StObject.set(x, "outboundUnicastHopLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityOfService(value: SocketQualityOfService): Self = StObject.set(x, "qualityOfService", value.asInstanceOf[js.Any])
+    inline def setQualityOfService(value: SocketQualityOfService): Self = StObject.set(x, "qualityOfService", value.asInstanceOf[js.Any])
   }
 }

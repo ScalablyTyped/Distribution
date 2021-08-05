@@ -19,22 +19,17 @@ trait SchemaRecognizeResponse extends StObject {
 }
 object SchemaRecognizeResponse {
   
-  @scala.inline
-  def apply(): SchemaRecognizeResponse = {
+  inline def apply(): SchemaRecognizeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRecognizeResponse]
   }
   
-  @scala.inline
-  implicit class SchemaRecognizeResponseMutableBuilder[Self <: SchemaRecognizeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRecognizeResponse](x: Self) {
     
-    @scala.inline
-    def setResults(value: js.Array[SchemaSpeechRecognitionResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SchemaSpeechRecognitionResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: SchemaSpeechRecognitionResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaSpeechRecognitionResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

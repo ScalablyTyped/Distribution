@@ -31,8 +31,7 @@ trait OpacityAnimation extends StObject {
 }
 object OpacityAnimation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     control1: Point,
     control2: Point,
     delay: Double,
@@ -46,28 +45,20 @@ object OpacityAnimation {
     __obj.asInstanceOf[OpacityAnimation]
   }
   
-  @scala.inline
-  implicit class OpacityAnimationMutableBuilder[Self <: OpacityAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: OpacityAnimation](x: Self) {
     
-    @scala.inline
-    def setControl1(value: Point): Self = StObject.set(x, "control1", value.asInstanceOf[js.Any])
+    inline def setControl1(value: Point): Self = StObject.set(x, "control1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControl2(value: Point): Self = StObject.set(x, "control2", value.asInstanceOf[js.Any])
+    inline def setControl2(value: Point): Self = StObject.set(x, "control2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalOpacity(value: Double): Self = StObject.set(x, "finalOpacity", value.asInstanceOf[js.Any])
+    inline def setFinalOpacity(value: Double): Self = StObject.set(x, "finalOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialOpacity(value: Double): Self = StObject.set(x, "initialOpacity", value.asInstanceOf[js.Any])
+    inline def setInitialOpacity(value: Double): Self = StObject.set(x, "initialOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PropertyAnimationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PropertyAnimationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

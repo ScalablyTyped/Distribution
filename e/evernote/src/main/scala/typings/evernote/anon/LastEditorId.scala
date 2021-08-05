@@ -20,43 +20,31 @@ trait LastEditorId extends StObject {
 }
 object LastEditorId {
   
-  @scala.inline
-  def apply(): LastEditorId = {
+  inline def apply(): LastEditorId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LastEditorId]
   }
   
-  @scala.inline
-  implicit class LastEditorIdMutableBuilder[Self <: LastEditorId] (val x: Self) extends AnyVal {
+  extension [Self <: LastEditorId](x: Self) {
     
-    @scala.inline
-    def setLastEditorId(value: UserID): Self = StObject.set(x, "lastEditorId", value.asInstanceOf[js.Any])
+    inline def setLastEditorId(value: UserID): Self = StObject.set(x, "lastEditorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEditorIdUndefined: Self = StObject.set(x, "lastEditorId", js.undefined)
+    inline def setLastEditorIdUndefined: Self = StObject.set(x, "lastEditorId", js.undefined)
     
-    @scala.inline
-    def setSaved(value: Timestamp): Self = StObject.set(x, "saved", value.asInstanceOf[js.Any])
+    inline def setSaved(value: Timestamp): Self = StObject.set(x, "saved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedUndefined: Self = StObject.set(x, "saved", js.undefined)
+    inline def setSavedUndefined: Self = StObject.set(x, "saved", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
+    inline def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateSequenceNumUndefined: Self = StObject.set(x, "updateSequenceNum", js.undefined)
+    inline def setUpdateSequenceNumUndefined: Self = StObject.set(x, "updateSequenceNum", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

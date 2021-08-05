@@ -15,8 +15,7 @@ object unitConversionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertPositionalUnits(
+  inline def convertPositionalUnits(
     state: PoserState[
       Value, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.Action */ js.Any, 
@@ -35,8 +34,7 @@ object unitConversionMod {
     TransitionDefinition
   ]]
   
-  @scala.inline
-  def isPositional(
+  inline def isPositional(
     pose: Pose[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.Action */ js.Any, 
       TransitionDefinition

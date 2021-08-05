@@ -14,25 +14,19 @@ trait Interest extends StObject {
 }
 object Interest {
   
-  @scala.inline
-  def apply(): Interest = {
+  inline def apply(): Interest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Interest]
   }
   
-  @scala.inline
-  implicit class InterestMutableBuilder[Self <: Interest] (val x: Self) extends AnyVal {
+  extension [Self <: Interest](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

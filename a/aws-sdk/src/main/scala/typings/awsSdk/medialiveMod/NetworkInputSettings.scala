@@ -18,25 +18,19 @@ trait NetworkInputSettings extends StObject {
 }
 object NetworkInputSettings {
   
-  @scala.inline
-  def apply(): NetworkInputSettings = {
+  inline def apply(): NetworkInputSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkInputSettings]
   }
   
-  @scala.inline
-  implicit class NetworkInputSettingsMutableBuilder[Self <: NetworkInputSettings] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkInputSettings](x: Self) {
     
-    @scala.inline
-    def setHlsInputSettings(value: HlsInputSettings): Self = StObject.set(x, "HlsInputSettings", value.asInstanceOf[js.Any])
+    inline def setHlsInputSettings(value: HlsInputSettings): Self = StObject.set(x, "HlsInputSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsInputSettingsUndefined: Self = StObject.set(x, "HlsInputSettings", js.undefined)
+    inline def setHlsInputSettingsUndefined: Self = StObject.set(x, "HlsInputSettings", js.undefined)
     
-    @scala.inline
-    def setServerValidation(value: NetworkInputServerValidation): Self = StObject.set(x, "ServerValidation", value.asInstanceOf[js.Any])
+    inline def setServerValidation(value: NetworkInputServerValidation): Self = StObject.set(x, "ServerValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerValidationUndefined: Self = StObject.set(x, "ServerValidation", js.undefined)
+    inline def setServerValidationUndefined: Self = StObject.set(x, "ServerValidation", js.undefined)
   }
 }

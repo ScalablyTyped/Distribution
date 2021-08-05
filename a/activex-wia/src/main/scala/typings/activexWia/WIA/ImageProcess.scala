@@ -25,13 +25,12 @@ trait ImageProcess extends StObject {
   @JSName("Filters")
   val Filters_Original: Filters
   
-  @JSName("WIA.ImageProcess_typekey")
+  /* private */ @JSName("WIA.ImageProcess_typekey")
   var WIADotImageProcess_typekey: ImageProcess
 }
 object ImageProcess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Apply: ImageFile => ImageFile,
     FilterInfos: FilterInfos,
     Filters: Filters,
@@ -42,19 +41,14 @@ object ImageProcess {
     __obj.asInstanceOf[ImageProcess]
   }
   
-  @scala.inline
-  implicit class ImageProcessMutableBuilder[Self <: ImageProcess] (val x: Self) extends AnyVal {
+  extension [Self <: ImageProcess](x: Self) {
     
-    @scala.inline
-    def setApply(value: ImageFile => ImageFile): Self = StObject.set(x, "Apply", js.Any.fromFunction1(value))
+    inline def setApply(value: ImageFile => ImageFile): Self = StObject.set(x, "Apply", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilterInfos(value: FilterInfos): Self = StObject.set(x, "FilterInfos", value.asInstanceOf[js.Any])
+    inline def setFilterInfos(value: FilterInfos): Self = StObject.set(x, "FilterInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIADotImageProcess_typekey(value: ImageProcess): Self = StObject.set(x, "WIA.ImageProcess_typekey", value.asInstanceOf[js.Any])
+    inline def setWIADotImageProcess_typekey(value: ImageProcess): Self = StObject.set(x, "WIA.ImageProcess_typekey", value.asInstanceOf[js.Any])
   }
 }

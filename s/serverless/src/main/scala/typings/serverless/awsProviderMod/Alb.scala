@@ -12,25 +12,19 @@ trait Alb extends StObject {
 }
 object Alb {
   
-  @scala.inline
-  def apply(): Alb = {
+  inline def apply(): Alb = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Alb]
   }
   
-  @scala.inline
-  implicit class AlbMutableBuilder[Self <: Alb] (val x: Self) extends AnyVal {
+  extension [Self <: Alb](x: Self) {
     
-    @scala.inline
-    def setAuthorizers(value: Authorizers): Self = StObject.set(x, "authorizers", value.asInstanceOf[js.Any])
+    inline def setAuthorizers(value: Authorizers): Self = StObject.set(x, "authorizers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizersUndefined: Self = StObject.set(x, "authorizers", js.undefined)
+    inline def setAuthorizersUndefined: Self = StObject.set(x, "authorizers", js.undefined)
     
-    @scala.inline
-    def setTargetGroupPrefix(value: String): Self = StObject.set(x, "targetGroupPrefix", value.asInstanceOf[js.Any])
+    inline def setTargetGroupPrefix(value: String): Self = StObject.set(x, "targetGroupPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupPrefixUndefined: Self = StObject.set(x, "targetGroupPrefix", js.undefined)
+    inline def setTargetGroupPrefixUndefined: Self = StObject.set(x, "targetGroupPrefix", js.undefined)
   }
 }

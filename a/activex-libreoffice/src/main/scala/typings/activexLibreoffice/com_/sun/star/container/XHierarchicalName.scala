@@ -33,8 +33,7 @@ trait XHierarchicalName
 }
 object XHierarchicalName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HierarchicalName: String,
     acquire: () => Unit,
     composeHierarchicalName: String => String,
@@ -46,16 +45,12 @@ object XHierarchicalName {
     __obj.asInstanceOf[XHierarchicalName]
   }
   
-  @scala.inline
-  implicit class XHierarchicalNameMutableBuilder[Self <: XHierarchicalName] (val x: Self) extends AnyVal {
+  extension [Self <: XHierarchicalName](x: Self) {
     
-    @scala.inline
-    def setComposeHierarchicalName(value: String => String): Self = StObject.set(x, "composeHierarchicalName", js.Any.fromFunction1(value))
+    inline def setComposeHierarchicalName(value: String => String): Self = StObject.set(x, "composeHierarchicalName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHierarchicalName(value: () => String): Self = StObject.set(x, "getHierarchicalName", js.Any.fromFunction0(value))
+    inline def setGetHierarchicalName(value: () => String): Self = StObject.set(x, "getHierarchicalName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHierarchicalName(value: String): Self = StObject.set(x, "HierarchicalName", value.asInstanceOf[js.Any])
+    inline def setHierarchicalName(value: String): Self = StObject.set(x, "HierarchicalName", value.asInstanceOf[js.Any])
   }
 }

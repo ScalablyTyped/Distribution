@@ -32,50 +32,36 @@ object sidePanelHeaderMod {
   }
   object HeaderProps {
     
-    @scala.inline
-    def apply(): HeaderProps = {
+    inline def apply(): HeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderProps]
     }
     
-    @scala.inline
-    implicit class HeaderPropsMutableBuilder[Self <: HeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setInfoTooltipContent(value: String): Self = StObject.set(x, "infoTooltipContent", value.asInstanceOf[js.Any])
+      inline def setInfoTooltipContent(value: String): Self = StObject.set(x, "infoTooltipContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoTooltipContentUndefined: Self = StObject.set(x, "infoTooltipContent", js.undefined)
+      inline def setInfoTooltipContentUndefined: Self = StObject.set(x, "infoTooltipContent", js.undefined)
       
-      @scala.inline
-      def setInfoTooltipProps(value: TooltipCommonProps): Self = StObject.set(x, "infoTooltipProps", value.asInstanceOf[js.Any])
+      inline def setInfoTooltipProps(value: TooltipCommonProps): Self = StObject.set(x, "infoTooltipProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoTooltipPropsUndefined: Self = StObject.set(x, "infoTooltipProps", js.undefined)
+      inline def setInfoTooltipPropsUndefined: Self = StObject.set(x, "infoTooltipProps", js.undefined)
       
-      @scala.inline
-      def setShowDivider(value: Boolean): Self = StObject.set(x, "showDivider", value.asInstanceOf[js.Any])
+      inline def setShowDivider(value: Boolean): Self = StObject.set(x, "showDivider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDividerUndefined: Self = StObject.set(x, "showDivider", js.undefined)
+      inline def setShowDividerUndefined: Self = StObject.set(x, "showDivider", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String | ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

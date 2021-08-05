@@ -26,8 +26,7 @@ object preTokenGenerationMod {
   }
   object BasePreTokenGenerationTriggerEvent {
     
-    @scala.inline
-    def apply[T /* <: String */](
+    inline def apply[T /* <: String */](
       callerContext: AwsSdkVersion,
       region: String,
       request: GroupConfiguration,
@@ -41,14 +40,11 @@ object preTokenGenerationMod {
       __obj.asInstanceOf[BasePreTokenGenerationTriggerEvent[T]]
     }
     
-    @scala.inline
-    implicit class BasePreTokenGenerationTriggerEventMutableBuilder[Self <: BasePreTokenGenerationTriggerEvent[?], T /* <: String */] (val x: Self & BasePreTokenGenerationTriggerEvent[T]) extends AnyVal {
+    extension [Self <: BasePreTokenGenerationTriggerEvent[?], T /* <: String */](x: Self & BasePreTokenGenerationTriggerEvent[T]) {
       
-      @scala.inline
-      def setRequest(value: GroupConfiguration): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: GroupConfiguration): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: ClaimsOverrideDetails): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: ClaimsOverrideDetails): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,38 +58,28 @@ object preTokenGenerationMod {
   }
   object GroupOverrideDetails {
     
-    @scala.inline
-    def apply(): GroupOverrideDetails = {
+    inline def apply(): GroupOverrideDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GroupOverrideDetails]
     }
     
-    @scala.inline
-    implicit class GroupOverrideDetailsMutableBuilder[Self <: GroupOverrideDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GroupOverrideDetails](x: Self) {
       
-      @scala.inline
-      def setGroupsToOverride(value: js.Array[String]): Self = StObject.set(x, "groupsToOverride", value.asInstanceOf[js.Any])
+      inline def setGroupsToOverride(value: js.Array[String]): Self = StObject.set(x, "groupsToOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsToOverrideUndefined: Self = StObject.set(x, "groupsToOverride", js.undefined)
+      inline def setGroupsToOverrideUndefined: Self = StObject.set(x, "groupsToOverride", js.undefined)
       
-      @scala.inline
-      def setGroupsToOverrideVarargs(value: String*): Self = StObject.set(x, "groupsToOverride", js.Array(value :_*))
+      inline def setGroupsToOverrideVarargs(value: String*): Self = StObject.set(x, "groupsToOverride", js.Array(value :_*))
       
-      @scala.inline
-      def setIamRolesToOverride(value: js.Array[String]): Self = StObject.set(x, "iamRolesToOverride", value.asInstanceOf[js.Any])
+      inline def setIamRolesToOverride(value: js.Array[String]): Self = StObject.set(x, "iamRolesToOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamRolesToOverrideUndefined: Self = StObject.set(x, "iamRolesToOverride", js.undefined)
+      inline def setIamRolesToOverrideUndefined: Self = StObject.set(x, "iamRolesToOverride", js.undefined)
       
-      @scala.inline
-      def setIamRolesToOverrideVarargs(value: String*): Self = StObject.set(x, "iamRolesToOverride", js.Array(value :_*))
+      inline def setIamRolesToOverrideVarargs(value: String*): Self = StObject.set(x, "iamRolesToOverride", js.Array(value :_*))
       
-      @scala.inline
-      def setPreferredRole(value: String): Self = StObject.set(x, "preferredRole", value.asInstanceOf[js.Any])
+      inline def setPreferredRole(value: String): Self = StObject.set(x, "preferredRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredRoleUndefined: Self = StObject.set(x, "preferredRole", js.undefined)
+      inline def setPreferredRoleUndefined: Self = StObject.set(x, "preferredRole", js.undefined)
     }
   }
   

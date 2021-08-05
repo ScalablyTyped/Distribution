@@ -90,10 +90,8 @@ object SourceUnitSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(endOfFileToken: ISyntaxToken): typings.typescriptServices.TypeScript.SourceUnitSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(endOfFileToken.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SourceUnitSyntax]
+  inline def create(endOfFileToken: ISyntaxToken): typings.typescriptServices.TypeScript.SourceUnitSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(endOfFileToken.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SourceUnitSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(endOfFileToken: ISyntaxToken): typings.typescriptServices.TypeScript.SourceUnitSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(endOfFileToken.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SourceUnitSyntax]
+  inline def create1(endOfFileToken: ISyntaxToken): typings.typescriptServices.TypeScript.SourceUnitSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(endOfFileToken.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SourceUnitSyntax]
 }

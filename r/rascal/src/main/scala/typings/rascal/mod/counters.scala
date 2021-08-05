@@ -10,8 +10,7 @@ object counters {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inMemory(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inMemory")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def inMemory(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inMemory")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   object inMemoryCluster {
     
@@ -19,13 +18,10 @@ object counters {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def master(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("master")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def master(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("master")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def worker(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("worker")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def worker(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("worker")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @scala.inline
-  def stub(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stub")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def stub(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stub")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

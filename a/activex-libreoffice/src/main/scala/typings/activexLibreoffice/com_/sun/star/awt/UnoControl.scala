@@ -29,8 +29,7 @@ trait UnoControl
      with XAccessible
 object UnoControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     Context: XInterface,
     Graphics: XGraphics,

@@ -30,46 +30,34 @@ object snapMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+      inline def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
+      inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
       
-      @scala.inline
-      def setFeatures(
+      inline def setFeatures(
         value: typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
       ): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+      inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
       
-      @scala.inline
-      def setPixelTolerance(value: Double): Self = StObject.set(x, "pixelTolerance", value.asInstanceOf[js.Any])
+      inline def setPixelTolerance(value: Double): Self = StObject.set(x, "pixelTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelToleranceUndefined: Self = StObject.set(x, "pixelTolerance", js.undefined)
+      inline def setPixelToleranceUndefined: Self = StObject.set(x, "pixelTolerance", js.undefined)
       
-      @scala.inline
-      def setSource(value: typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setVertex(value: Boolean): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
+      inline def setVertex(value: Boolean): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexUndefined: Self = StObject.set(x, "vertex", js.undefined)
+      inline def setVertexUndefined: Self = StObject.set(x, "vertex", js.undefined)
     }
   }
   
@@ -83,29 +71,22 @@ object snapMod {
   }
   object Result {
     
-    @scala.inline
-    def apply(snapped: Boolean, vertex: Coordinate, vertexPixel: Pixel): Result = {
+    inline def apply(snapped: Boolean, vertex: Coordinate, vertexPixel: Pixel): Result = {
       val __obj = js.Dynamic.literal(snapped = snapped.asInstanceOf[js.Any], vertex = vertex.asInstanceOf[js.Any], vertexPixel = vertexPixel.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setSnapped(value: Boolean): Self = StObject.set(x, "snapped", value.asInstanceOf[js.Any])
+      inline def setSnapped(value: Boolean): Self = StObject.set(x, "snapped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertex(value: Coordinate): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
+      inline def setVertex(value: Coordinate): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexPixel(value: Pixel): Self = StObject.set(x, "vertexPixel", value.asInstanceOf[js.Any])
+      inline def setVertexPixel(value: Pixel): Self = StObject.set(x, "vertexPixel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexPixelVarargs(value: Double*): Self = StObject.set(x, "vertexPixel", js.Array(value :_*))
+      inline def setVertexPixelVarargs(value: Double*): Self = StObject.set(x, "vertexPixel", js.Array(value :_*))
       
-      @scala.inline
-      def setVertexVarargs(value: Double*): Self = StObject.set(x, "vertex", js.Array(value :_*))
+      inline def setVertexVarargs(value: Double*): Self = StObject.set(x, "vertex", js.Array(value :_*))
     }
   }
   
@@ -117,8 +98,7 @@ object snapMod {
   }
   object SegmentData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default],
       segment: js.Array[Coordinate]
     ): SegmentData = {
@@ -126,17 +106,13 @@ object snapMod {
       __obj.asInstanceOf[SegmentData]
     }
     
-    @scala.inline
-    implicit class SegmentDataMutableBuilder[Self <: SegmentData] (val x: Self) extends AnyVal {
+    extension [Self <: SegmentData](x: Self) {
       
-      @scala.inline
-      def setFeature(value: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegment(value: js.Array[Coordinate]): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+      inline def setSegment(value: js.Array[Coordinate]): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentVarargs(value: Coordinate*): Self = StObject.set(x, "segment", js.Array(value :_*))
+      inline def setSegmentVarargs(value: Coordinate*): Self = StObject.set(x, "segment", js.Array(value :_*))
     }
   }
   

@@ -13,19 +13,15 @@ trait BusinessCallingSettings extends StObject {
 }
 object BusinessCallingSettings {
   
-  @scala.inline
-  def apply(): BusinessCallingSettings = {
+  inline def apply(): BusinessCallingSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BusinessCallingSettings]
   }
   
-  @scala.inline
-  implicit class BusinessCallingSettingsMutableBuilder[Self <: BusinessCallingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: BusinessCallingSettings](x: Self) {
     
-    @scala.inline
-    def setCdrBucket(value: String): Self = StObject.set(x, "CdrBucket", value.asInstanceOf[js.Any])
+    inline def setCdrBucket(value: String): Self = StObject.set(x, "CdrBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCdrBucketUndefined: Self = StObject.set(x, "CdrBucket", js.undefined)
+    inline def setCdrBucketUndefined: Self = StObject.set(x, "CdrBucket", js.undefined)
   }
 }

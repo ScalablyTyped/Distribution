@@ -18,25 +18,19 @@ trait NielsenConfiguration extends StObject {
 }
 object NielsenConfiguration {
   
-  @scala.inline
-  def apply(): NielsenConfiguration = {
+  inline def apply(): NielsenConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NielsenConfiguration]
   }
   
-  @scala.inline
-  implicit class NielsenConfigurationMutableBuilder[Self <: NielsenConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: NielsenConfiguration](x: Self) {
     
-    @scala.inline
-    def setBreakoutCode(value: integerMin0Max0): Self = StObject.set(x, "BreakoutCode", value.asInstanceOf[js.Any])
+    inline def setBreakoutCode(value: integerMin0Max0): Self = StObject.set(x, "BreakoutCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakoutCodeUndefined: Self = StObject.set(x, "BreakoutCode", js.undefined)
+    inline def setBreakoutCodeUndefined: Self = StObject.set(x, "BreakoutCode", js.undefined)
     
-    @scala.inline
-    def setDistributorId(value: string): Self = StObject.set(x, "DistributorId", value.asInstanceOf[js.Any])
+    inline def setDistributorId(value: string): Self = StObject.set(x, "DistributorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributorIdUndefined: Self = StObject.set(x, "DistributorId", js.undefined)
+    inline def setDistributorIdUndefined: Self = StObject.set(x, "DistributorId", js.undefined)
   }
 }

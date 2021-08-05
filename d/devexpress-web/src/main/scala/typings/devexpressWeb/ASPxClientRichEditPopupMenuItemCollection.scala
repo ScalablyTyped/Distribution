@@ -58,8 +58,7 @@ trait ASPxClientRichEditPopupMenuItemCollection extends StObject {
 }
 object ASPxClientRichEditPopupMenuItemCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: ASPxClientRichEditPopupMenuItem => Unit,
     Clear: () => Unit,
     Get: Double => ASPxClientRichEditPopupMenuItem,
@@ -73,31 +72,22 @@ object ASPxClientRichEditPopupMenuItemCollection {
     __obj.asInstanceOf[ASPxClientRichEditPopupMenuItemCollection]
   }
   
-  @scala.inline
-  implicit class ASPxClientRichEditPopupMenuItemCollectionMutableBuilder[Self <: ASPxClientRichEditPopupMenuItemCollection] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRichEditPopupMenuItemCollection](x: Self) {
     
-    @scala.inline
-    def setAdd(value: ASPxClientRichEditPopupMenuItem => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: ASPxClientRichEditPopupMenuItem => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet(value: Double => ASPxClientRichEditPopupMenuItem): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
+    inline def setGet(value: Double => ASPxClientRichEditPopupMenuItem): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetByName(value: String => ASPxClientRichEditPopupMenuItem): Self = StObject.set(x, "GetByName", js.Any.fromFunction1(value))
+    inline def setGetByName(value: String => ASPxClientRichEditPopupMenuItem): Self = StObject.set(x, "GetByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCount(value: () => Double): Self = StObject.set(x, "GetCount", js.Any.fromFunction0(value))
+    inline def setGetCount(value: () => Double): Self = StObject.set(x, "GetCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsert(value: (Double, ASPxClientRichEditPopupMenuItem) => Unit): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (Double, ASPxClientRichEditPopupMenuItem) => Unit): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveByName(value: String => Unit): Self = StObject.set(x, "RemoveByName", js.Any.fromFunction1(value))
+    inline def setRemoveByName(value: String => Unit): Self = StObject.set(x, "RemoveByName", js.Any.fromFunction1(value))
   }
 }

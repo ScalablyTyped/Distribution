@@ -13,6 +13,5 @@ object devcertBooleans {
     extends StObject
        with IReturnCa[js.Any]
        with IReturnCaPath[js.Any]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

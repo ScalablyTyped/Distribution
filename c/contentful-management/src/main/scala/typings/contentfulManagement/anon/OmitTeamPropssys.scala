@@ -13,19 +13,15 @@ trait OmitTeamPropssys extends StObject {
 }
 object OmitTeamPropssys {
   
-  @scala.inline
-  def apply(description: String, name: String): OmitTeamPropssys = {
+  inline def apply(description: String, name: String): OmitTeamPropssys = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitTeamPropssys]
   }
   
-  @scala.inline
-  implicit class OmitTeamPropssysMutableBuilder[Self <: OmitTeamPropssys] (val x: Self) extends AnyVal {
+  extension [Self <: OmitTeamPropssys](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

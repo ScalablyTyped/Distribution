@@ -18,16 +18,13 @@ trait ASPxClientGridViewFocusEventArgs
 }
 object ASPxClientGridViewFocusEventArgs {
   
-  @scala.inline
-  def apply(isChangedOnServer: Boolean, processOnServer: Boolean): ASPxClientGridViewFocusEventArgs = {
+  inline def apply(isChangedOnServer: Boolean, processOnServer: Boolean): ASPxClientGridViewFocusEventArgs = {
     val __obj = js.Dynamic.literal(isChangedOnServer = isChangedOnServer.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientGridViewFocusEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientGridViewFocusEventArgsMutableBuilder[Self <: ASPxClientGridViewFocusEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGridViewFocusEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsChangedOnServer(value: Boolean): Self = StObject.set(x, "isChangedOnServer", value.asInstanceOf[js.Any])
+    inline def setIsChangedOnServer(value: Boolean): Self = StObject.set(x, "isChangedOnServer", value.asInstanceOf[js.Any])
   }
 }

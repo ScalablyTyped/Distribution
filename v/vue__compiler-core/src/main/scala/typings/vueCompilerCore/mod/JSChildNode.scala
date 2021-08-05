@@ -21,29 +21,25 @@ trait JSChildNode
      with CodegenNode
 object JSChildNode {
   
-  @scala.inline
-  def ArrayExpression(elements: js.Array[String | JSChildNode], loc: SourceLocation): typings.vueCompilerCore.mod.ArrayExpression = {
+  inline def ArrayExpression(elements: js.Array[String | JSChildNode], loc: SourceLocation): typings.vueCompilerCore.mod.ArrayExpression = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(17)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.ArrayExpression]
   }
   
-  @scala.inline
-  def AssignmentExpression(left: SimpleExpressionNode, loc: SourceLocation, right: JSChildNode): typings.vueCompilerCore.mod.AssignmentExpression = {
+  inline def AssignmentExpression(left: SimpleExpressionNode, loc: SourceLocation, right: JSChildNode): typings.vueCompilerCore.mod.AssignmentExpression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(24)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.AssignmentExpression]
   }
   
-  @scala.inline
-  def CacheExpression(index: Double, isVNode: Boolean, loc: SourceLocation, value: JSChildNode): typings.vueCompilerCore.mod.CacheExpression = {
+  inline def CacheExpression(index: Double, isVNode: Boolean, loc: SourceLocation, value: JSChildNode): typings.vueCompilerCore.mod.CacheExpression = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], isVNode = isVNode.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(20)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.CacheExpression]
   }
   
-  @scala.inline
-  def CallExpression(
+  inline def CallExpression(
     arguments: js.Array[
       String | js.Symbol | JSChildNode | SSRCodegenNode | TemplateChildNode | js.Array[TemplateChildNode]
     ],
@@ -55,8 +51,7 @@ object JSChildNode {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.CallExpression]
   }
   
-  @scala.inline
-  def CompoundExpressionNode(
+  inline def CompoundExpressionNode(
     children: js.Array[
       SimpleExpressionNode | typings.vueCompilerCore.mod.CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol
     ],
@@ -67,8 +62,7 @@ object JSChildNode {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.CompoundExpressionNode]
   }
   
-  @scala.inline
-  def ConditionalExpression(
+  inline def ConditionalExpression(
     alternate: JSChildNode,
     consequent: JSChildNode,
     loc: SourceLocation,
@@ -80,36 +74,31 @@ object JSChildNode {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.ConditionalExpression]
   }
   
-  @scala.inline
-  def FunctionExpression(isSlot: Boolean, loc: SourceLocation, newline: Boolean): typings.vueCompilerCore.mod.FunctionExpression = {
+  inline def FunctionExpression(isSlot: Boolean, loc: SourceLocation, newline: Boolean): typings.vueCompilerCore.mod.FunctionExpression = {
     val __obj = js.Dynamic.literal(isSlot = isSlot.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], newline = newline.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(18)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.FunctionExpression]
   }
   
-  @scala.inline
-  def ObjectExpression(loc: SourceLocation, properties: js.Array[Property]): typings.vueCompilerCore.mod.ObjectExpression = {
+  inline def ObjectExpression(loc: SourceLocation, properties: js.Array[Property]): typings.vueCompilerCore.mod.ObjectExpression = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(15)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.ObjectExpression]
   }
   
-  @scala.inline
-  def SequenceExpression(expressions: js.Array[JSChildNode], loc: SourceLocation): typings.vueCompilerCore.mod.SequenceExpression = {
+  inline def SequenceExpression(expressions: js.Array[JSChildNode], loc: SourceLocation): typings.vueCompilerCore.mod.SequenceExpression = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(25)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.SequenceExpression]
   }
   
-  @scala.inline
-  def SimpleExpressionNode(content: String, isConstant: Boolean, isStatic: Boolean, loc: SourceLocation): typings.vueCompilerCore.mod.SimpleExpressionNode = {
+  inline def SimpleExpressionNode(content: String, isConstant: Boolean, isStatic: Boolean, loc: SourceLocation): typings.vueCompilerCore.mod.SimpleExpressionNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isConstant = isConstant.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(4)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.SimpleExpressionNode]
   }
   
-  @scala.inline
-  def VNodeCall(
+  inline def VNodeCall(
     disableTracking: Boolean,
     isBlock: Boolean,
     loc: SourceLocation,

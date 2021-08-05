@@ -11,8 +11,7 @@ object skip2dMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def skip2d(
+  inline def skip2d(
     A: Matrix,
     hasStartRowEveryRowEndRow: js.Tuple3[Double, Double, Double],
     hasStartColEveryColEndCol: js.Tuple3[Double, Double, Double]

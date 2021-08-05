@@ -10,6 +10,5 @@ object useMediaQueryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

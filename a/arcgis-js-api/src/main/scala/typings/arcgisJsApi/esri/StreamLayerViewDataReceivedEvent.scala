@@ -12,19 +12,15 @@ trait StreamLayerViewDataReceivedEvent extends StObject {
 }
 object StreamLayerViewDataReceivedEvent {
   
-  @scala.inline
-  def apply(attributes: js.Any, geometry: js.Any): StreamLayerViewDataReceivedEvent = {
+  inline def apply(attributes: js.Any, geometry: js.Any): StreamLayerViewDataReceivedEvent = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamLayerViewDataReceivedEvent]
   }
   
-  @scala.inline
-  implicit class StreamLayerViewDataReceivedEventMutableBuilder[Self <: StreamLayerViewDataReceivedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StreamLayerViewDataReceivedEvent](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: js.Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: js.Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
   }
 }

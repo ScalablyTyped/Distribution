@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClientNavigationReason extends StObject
 object ClientNavigationReason {
   
-  @scala.inline
-  def anchorClick: typings.devtoolsProtocol.devtoolsProtocolStrings.anchorClick = "anchorClick".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.anchorClick]
+  inline def anchorClick: typings.devtoolsProtocol.devtoolsProtocolStrings.anchorClick = "anchorClick".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.anchorClick]
   
-  @scala.inline
-  def formSubmissionGet: typings.devtoolsProtocol.devtoolsProtocolStrings.formSubmissionGet = "formSubmissionGet".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.formSubmissionGet]
+  inline def formSubmissionGet: typings.devtoolsProtocol.devtoolsProtocolStrings.formSubmissionGet = "formSubmissionGet".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.formSubmissionGet]
   
-  @scala.inline
-  def formSubmissionPost: typings.devtoolsProtocol.devtoolsProtocolStrings.formSubmissionPost = "formSubmissionPost".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.formSubmissionPost]
+  inline def formSubmissionPost: typings.devtoolsProtocol.devtoolsProtocolStrings.formSubmissionPost = "formSubmissionPost".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.formSubmissionPost]
   
-  @scala.inline
-  def httpHeaderRefresh: typings.devtoolsProtocol.devtoolsProtocolStrings.httpHeaderRefresh = "httpHeaderRefresh".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.httpHeaderRefresh]
+  inline def httpHeaderRefresh: typings.devtoolsProtocol.devtoolsProtocolStrings.httpHeaderRefresh = "httpHeaderRefresh".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.httpHeaderRefresh]
   
-  @scala.inline
-  def metaTagRefresh: typings.devtoolsProtocol.devtoolsProtocolStrings.metaTagRefresh = "metaTagRefresh".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.metaTagRefresh]
+  inline def metaTagRefresh: typings.devtoolsProtocol.devtoolsProtocolStrings.metaTagRefresh = "metaTagRefresh".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.metaTagRefresh]
   
-  @scala.inline
-  def pageBlockInterstitial: typings.devtoolsProtocol.devtoolsProtocolStrings.pageBlockInterstitial = "pageBlockInterstitial".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.pageBlockInterstitial]
+  inline def pageBlockInterstitial: typings.devtoolsProtocol.devtoolsProtocolStrings.pageBlockInterstitial = "pageBlockInterstitial".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.pageBlockInterstitial]
   
-  @scala.inline
-  def reload: typings.devtoolsProtocol.devtoolsProtocolStrings.reload = "reload".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.reload]
+  inline def reload: typings.devtoolsProtocol.devtoolsProtocolStrings.reload = "reload".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.reload]
   
-  @scala.inline
-  def scriptInitiated: typings.devtoolsProtocol.devtoolsProtocolStrings.scriptInitiated = "scriptInitiated".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.scriptInitiated]
+  inline def scriptInitiated: typings.devtoolsProtocol.devtoolsProtocolStrings.scriptInitiated = "scriptInitiated".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.scriptInitiated]
 }

@@ -18,28 +18,21 @@ trait Animating extends StObject {
 }
 object Animating {
   
-  @scala.inline
-  def apply(animating: Boolean, panelColor: String, prefixCls: String, size: String, toast: Boolean): Animating = {
+  inline def apply(animating: Boolean, panelColor: String, prefixCls: String, size: String, toast: Boolean): Animating = {
     val __obj = js.Dynamic.literal(animating = animating.asInstanceOf[js.Any], panelColor = panelColor.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], toast = toast.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animating]
   }
   
-  @scala.inline
-  implicit class AnimatingMutableBuilder[Self <: Animating] (val x: Self) extends AnyVal {
+  extension [Self <: Animating](x: Self) {
     
-    @scala.inline
-    def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
+    inline def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelColor(value: String): Self = StObject.set(x, "panelColor", value.asInstanceOf[js.Any])
+    inline def setPanelColor(value: String): Self = StObject.set(x, "panelColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToast(value: Boolean): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
+    inline def setToast(value: Boolean): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
   }
 }

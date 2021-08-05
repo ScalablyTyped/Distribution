@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NativeManifest extends StObject
 object NativeManifest {
   
-  @scala.inline
-  def Allowedextensions(
+  inline def Allowedextensions(
     allowed_extensions: js.Array[ExtensionID],
     description: String,
     name: String,
@@ -28,8 +27,7 @@ object NativeManifest {
     __obj.asInstanceOf[typings.firefoxWebextBrowser.anon.Allowedextensions]
   }
   
-  @scala.inline
-  def Data(data: StringDictionary[js.Any], description: String, name: ExtensionID): typings.firefoxWebextBrowser.anon.Data = {
+  inline def Data(data: StringDictionary[js.Any], description: String, name: ExtensionID): typings.firefoxWebextBrowser.anon.Data = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("storage")
     __obj.asInstanceOf[typings.firefoxWebextBrowser.anon.Data]

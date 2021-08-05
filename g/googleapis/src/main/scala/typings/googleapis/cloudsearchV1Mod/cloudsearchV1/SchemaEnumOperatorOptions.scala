@@ -34,19 +34,15 @@ trait SchemaEnumOperatorOptions extends StObject {
 }
 object SchemaEnumOperatorOptions {
   
-  @scala.inline
-  def apply(): SchemaEnumOperatorOptions = {
+  inline def apply(): SchemaEnumOperatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEnumOperatorOptions]
   }
   
-  @scala.inline
-  implicit class SchemaEnumOperatorOptionsMutableBuilder[Self <: SchemaEnumOperatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEnumOperatorOptions](x: Self) {
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
   }
 }

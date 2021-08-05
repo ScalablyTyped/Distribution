@@ -13,16 +13,13 @@ trait BaseHighPrecisionDistanceScalesInput
 }
 object BaseHighPrecisionDistanceScalesInput {
   
-  @scala.inline
-  def apply(latitude: Double, longitude: Double): BaseHighPrecisionDistanceScalesInput = {
+  inline def apply(latitude: Double, longitude: Double): BaseHighPrecisionDistanceScalesInput = {
     val __obj = js.Dynamic.literal(highPrecision = true, latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseHighPrecisionDistanceScalesInput]
   }
   
-  @scala.inline
-  implicit class BaseHighPrecisionDistanceScalesInputMutableBuilder[Self <: BaseHighPrecisionDistanceScalesInput] (val x: Self) extends AnyVal {
+  extension [Self <: BaseHighPrecisionDistanceScalesInput](x: Self) {
     
-    @scala.inline
-    def setHighPrecision(value: `true`): Self = StObject.set(x, "highPrecision", value.asInstanceOf[js.Any])
+    inline def setHighPrecision(value: `true`): Self = StObject.set(x, "highPrecision", value.asInstanceOf[js.Any])
   }
 }

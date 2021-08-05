@@ -12,6 +12,5 @@ object tooltipStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: ITooltipStyleProps): ITooltipStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ITooltipStyles]
+  inline def getStyles(props: ITooltipStyleProps): ITooltipStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ITooltipStyles]
 }

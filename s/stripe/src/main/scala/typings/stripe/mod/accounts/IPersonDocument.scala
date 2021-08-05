@@ -26,25 +26,19 @@ trait IPersonDocument
 }
 object IPersonDocument {
   
-  @scala.inline
-  def apply(): IPersonDocument = {
+  inline def apply(): IPersonDocument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPersonDocument]
   }
   
-  @scala.inline
-  implicit class IPersonDocumentMutableBuilder[Self <: IPersonDocument] (val x: Self) extends AnyVal {
+  extension [Self <: IPersonDocument](x: Self) {
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setDetails_code(value: String): Self = StObject.set(x, "details_code", value.asInstanceOf[js.Any])
+    inline def setDetails_code(value: String): Self = StObject.set(x, "details_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails_codeUndefined: Self = StObject.set(x, "details_code", js.undefined)
+    inline def setDetails_codeUndefined: Self = StObject.set(x, "details_code", js.undefined)
   }
 }

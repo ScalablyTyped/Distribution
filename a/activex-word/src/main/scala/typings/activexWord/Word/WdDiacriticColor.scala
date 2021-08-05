@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdDiacriticColor extends StObject
 object WdDiacriticColor {
   
-  @scala.inline
-  def wdDiacriticColorBidi: `0` = 0.asInstanceOf[`0`]
+  inline def wdDiacriticColorBidi: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdDiacriticColorLatin: `1` = 1.asInstanceOf[`1`]
+  inline def wdDiacriticColorLatin: `1` = 1.asInstanceOf[`1`]
 }

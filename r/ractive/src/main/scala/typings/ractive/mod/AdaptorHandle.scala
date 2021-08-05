@@ -20,25 +20,19 @@ trait AdaptorHandle extends StObject {
 }
 object AdaptorHandle {
   
-  @scala.inline
-  def apply(get: () => js.Any, reset: js.Any => Unit, set: (String, js.Any) => Unit, teardown: () => Unit): AdaptorHandle = {
+  inline def apply(get: () => js.Any, reset: js.Any => Unit, set: (String, js.Any) => Unit, teardown: () => Unit): AdaptorHandle = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), reset = js.Any.fromFunction1(reset), set = js.Any.fromFunction2(set), teardown = js.Any.fromFunction0(teardown))
     __obj.asInstanceOf[AdaptorHandle]
   }
   
-  @scala.inline
-  implicit class AdaptorHandleMutableBuilder[Self <: AdaptorHandle] (val x: Self) extends AnyVal {
+  extension [Self <: AdaptorHandle](x: Self) {
     
-    @scala.inline
-    def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: js.Any => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+    inline def setReset(value: js.Any => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
+    inline def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
   }
 }

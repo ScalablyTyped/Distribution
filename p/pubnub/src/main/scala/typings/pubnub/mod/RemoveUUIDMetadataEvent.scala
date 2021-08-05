@@ -15,16 +15,13 @@ trait RemoveUUIDMetadataEvent
 }
 object RemoveUUIDMetadataEvent {
   
-  @scala.inline
-  def apply(channel: String, message: DataId, timetoken: Double): RemoveUUIDMetadataEvent = {
+  inline def apply(channel: String, message: DataId, timetoken: Double): RemoveUUIDMetadataEvent = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any], subscription = null)
     __obj.asInstanceOf[RemoveUUIDMetadataEvent]
   }
   
-  @scala.inline
-  implicit class RemoveUUIDMetadataEventMutableBuilder[Self <: RemoveUUIDMetadataEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveUUIDMetadataEvent](x: Self) {
     
-    @scala.inline
-    def setMessage(value: DataId): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: DataId): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

@@ -17,22 +17,17 @@ trait SchemaModifyAttachmentsRequest extends StObject {
 }
 object SchemaModifyAttachmentsRequest {
   
-  @scala.inline
-  def apply(): SchemaModifyAttachmentsRequest = {
+  inline def apply(): SchemaModifyAttachmentsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaModifyAttachmentsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaModifyAttachmentsRequestMutableBuilder[Self <: SchemaModifyAttachmentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaModifyAttachmentsRequest](x: Self) {
     
-    @scala.inline
-    def setAddAttachments(value: js.Array[SchemaAttachment]): Self = StObject.set(x, "addAttachments", value.asInstanceOf[js.Any])
+    inline def setAddAttachments(value: js.Array[SchemaAttachment]): Self = StObject.set(x, "addAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddAttachmentsUndefined: Self = StObject.set(x, "addAttachments", js.undefined)
+    inline def setAddAttachmentsUndefined: Self = StObject.set(x, "addAttachments", js.undefined)
     
-    @scala.inline
-    def setAddAttachmentsVarargs(value: SchemaAttachment*): Self = StObject.set(x, "addAttachments", js.Array(value :_*))
+    inline def setAddAttachmentsVarargs(value: SchemaAttachment*): Self = StObject.set(x, "addAttachments", js.Array(value :_*))
   }
 }

@@ -51,8 +51,7 @@ object notyfOptionsMod {
   }
   object INotyfIcon {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       className: String,
       color: String,
       tagName: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any,
@@ -62,22 +61,17 @@ object notyfOptionsMod {
       __obj.asInstanceOf[INotyfIcon]
     }
     
-    @scala.inline
-    implicit class INotyfIconMutableBuilder[Self <: INotyfIcon] (val x: Self) extends AnyVal {
+    extension [Self <: INotyfIcon](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagName(
+      inline def setTagName(
         value: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,8 +102,7 @@ object notyfOptionsMod {
   }
   object INotyfNotificationOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       background: String,
       backgroundColor: String,
       className: String,
@@ -126,38 +119,27 @@ object notyfOptionsMod {
       __obj.asInstanceOf[INotyfNotificationOptions]
     }
     
-    @scala.inline
-    implicit class INotyfNotificationOptionsMutableBuilder[Self <: INotyfNotificationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: INotyfNotificationOptions](x: Self) {
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissible(value: Boolean): Self = StObject.set(x, "dismissible", value.asInstanceOf[js.Any])
+      inline def setDismissible(value: Boolean): Self = StObject.set(x, "dismissible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: INotyfIcon | `false`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: INotyfIcon | `false`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: INotyfPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: INotyfPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRipple(value: Boolean): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
+      inline def setRipple(value: Boolean): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,8 +157,7 @@ object notyfOptionsMod {
   }
   object INotyfOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dismissible: Boolean,
       duration: Double,
       position: INotyfPosition,
@@ -187,26 +168,19 @@ object notyfOptionsMod {
       __obj.asInstanceOf[INotyfOptions]
     }
     
-    @scala.inline
-    implicit class INotyfOptionsMutableBuilder[Self <: INotyfOptions] (val x: Self) extends AnyVal {
+    extension [Self <: INotyfOptions](x: Self) {
       
-      @scala.inline
-      def setDismissible(value: Boolean): Self = StObject.set(x, "dismissible", value.asInstanceOf[js.Any])
+      inline def setDismissible(value: Boolean): Self = StObject.set(x, "dismissible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: INotyfPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: INotyfPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRipple(value: Boolean): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
+      inline def setRipple(value: Boolean): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypes(value: js.Array[DeepPartialINotyfNotifica]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[DeepPartialINotyfNotifica]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesVarargs(value: DeepPartialINotyfNotifica*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: DeepPartialINotyfNotifica*): Self = StObject.set(x, "types", js.Array(value :_*))
     }
   }
   
@@ -218,20 +192,16 @@ object notyfOptionsMod {
   }
   object INotyfPosition {
     
-    @scala.inline
-    def apply(x: NotyfHorizontalPosition, y: NotyfVerticalPosition): INotyfPosition = {
+    inline def apply(x: NotyfHorizontalPosition, y: NotyfVerticalPosition): INotyfPosition = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[INotyfPosition]
     }
     
-    @scala.inline
-    implicit class INotyfPositionMutableBuilder[Self <: INotyfPosition] (val x: Self) extends AnyVal {
+    extension [Self <: INotyfPosition](x: Self) {
       
-      @scala.inline
-      def setX(value: NotyfHorizontalPosition): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: NotyfHorizontalPosition): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: NotyfVerticalPosition): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: NotyfVerticalPosition): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -243,14 +213,11 @@ object notyfOptionsMod {
   trait NotyfHorizontalPosition extends StObject
   object NotyfHorizontalPosition {
     
-    @scala.inline
-    def center: typings.notyf.notyfStrings.center = "center".asInstanceOf[typings.notyf.notyfStrings.center]
+    inline def center: typings.notyf.notyfStrings.center = "center".asInstanceOf[typings.notyf.notyfStrings.center]
     
-    @scala.inline
-    def left: typings.notyf.notyfStrings.left = "left".asInstanceOf[typings.notyf.notyfStrings.left]
+    inline def left: typings.notyf.notyfStrings.left = "left".asInstanceOf[typings.notyf.notyfStrings.left]
     
-    @scala.inline
-    def right: typings.notyf.notyfStrings.right = "right".asInstanceOf[typings.notyf.notyfStrings.right]
+    inline def right: typings.notyf.notyfStrings.right = "right".asInstanceOf[typings.notyf.notyfStrings.right]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -261,13 +228,10 @@ object notyfOptionsMod {
   trait NotyfVerticalPosition extends StObject
   object NotyfVerticalPosition {
     
-    @scala.inline
-    def bottom: typings.notyf.notyfStrings.bottom = "bottom".asInstanceOf[typings.notyf.notyfStrings.bottom]
+    inline def bottom: typings.notyf.notyfStrings.bottom = "bottom".asInstanceOf[typings.notyf.notyfStrings.bottom]
     
-    @scala.inline
-    def center: typings.notyf.notyfStrings.center = "center".asInstanceOf[typings.notyf.notyfStrings.center]
+    inline def center: typings.notyf.notyfStrings.center = "center".asInstanceOf[typings.notyf.notyfStrings.center]
     
-    @scala.inline
-    def top: typings.notyf.notyfStrings.top = "top".asInstanceOf[typings.notyf.notyfStrings.top]
+    inline def top: typings.notyf.notyfStrings.top = "top".asInstanceOf[typings.notyf.notyfStrings.top]
   }
 }

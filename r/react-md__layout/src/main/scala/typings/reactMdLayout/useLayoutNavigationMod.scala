@@ -18,10 +18,8 @@ object useLayoutNavigationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useLayoutNavigation[T /* <: BaseTreeItem */](navItems: LayoutNavigationTree[T], pathname: String): LayoutNavigationState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutNavigation")(navItems.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any])).asInstanceOf[LayoutNavigationState[T]]
-  @scala.inline
-  def useLayoutNavigation[T /* <: BaseTreeItem */](navItems: LayoutNavigationTree[T], pathname: String, linkComponent: ElementType[js.Any]): LayoutNavigationState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutNavigation")(navItems.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], linkComponent.asInstanceOf[js.Any])).asInstanceOf[LayoutNavigationState[T]]
+  inline def useLayoutNavigation[T /* <: BaseTreeItem */](navItems: LayoutNavigationTree[T], pathname: String): LayoutNavigationState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutNavigation")(navItems.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any])).asInstanceOf[LayoutNavigationState[T]]
+  inline def useLayoutNavigation[T /* <: BaseTreeItem */](navItems: LayoutNavigationTree[T], pathname: String, linkComponent: ElementType[js.Any]): LayoutNavigationState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutNavigation")(navItems.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], linkComponent.asInstanceOf[js.Any])).asInstanceOf[LayoutNavigationState[T]]
   
   trait LayoutNavigationState[T /* <: BaseTreeItem */]
     extends StObject
@@ -43,8 +41,7 @@ object useLayoutNavigationMod {
   }
   object LayoutNavigationState {
     
-    @scala.inline
-    def apply[T /* <: BaseTreeItem */](
+    inline def apply[T /* <: BaseTreeItem */](
       expandedIds: ExpandedIds,
       linkComponent: ElementType[js.Any],
       navItems: LayoutNavigationTree[T],
@@ -58,14 +55,11 @@ object useLayoutNavigationMod {
       __obj.asInstanceOf[LayoutNavigationState[T]]
     }
     
-    @scala.inline
-    implicit class LayoutNavigationStateMutableBuilder[Self <: LayoutNavigationState[?], T /* <: BaseTreeItem */] (val x: Self & LayoutNavigationState[T]) extends AnyVal {
+    extension [Self <: LayoutNavigationState[?], T /* <: BaseTreeItem */](x: Self & LayoutNavigationState[T]) {
       
-      @scala.inline
-      def setLinkComponent(value: ElementType[js.Any]): Self = StObject.set(x, "linkComponent", value.asInstanceOf[js.Any])
+      inline def setLinkComponent(value: ElementType[js.Any]): Self = StObject.set(x, "linkComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavItems(value: LayoutNavigationTree[T]): Self = StObject.set(x, "navItems", value.asInstanceOf[js.Any])
+      inline def setNavItems(value: LayoutNavigationTree[T]): Self = StObject.set(x, "navItems", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,25 +12,19 @@ trait IPageResource extends StObject {
 }
 object IPageResource {
   
-  @scala.inline
-  def apply(): IPageResource = {
+  inline def apply(): IPageResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPageResource]
   }
   
-  @scala.inline
-  implicit class IPageResourceMutableBuilder[Self <: IPageResource] (val x: Self) extends AnyVal {
+  extension [Self <: IPageResource](x: Self) {
     
-    @scala.inline
-    def setLang(value: IPageLangItems): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: IPageLangItems): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    @scala.inline
-    def setSelectedLang(value: String): Self = StObject.set(x, "selectedLang", value.asInstanceOf[js.Any])
+    inline def setSelectedLang(value: String): Self = StObject.set(x, "selectedLang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedLangUndefined: Self = StObject.set(x, "selectedLang", js.undefined)
+    inline def setSelectedLangUndefined: Self = StObject.set(x, "selectedLang", js.undefined)
   }
 }

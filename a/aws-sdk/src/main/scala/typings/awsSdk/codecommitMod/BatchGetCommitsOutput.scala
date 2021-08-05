@@ -18,31 +18,23 @@ trait BatchGetCommitsOutput extends StObject {
 }
 object BatchGetCommitsOutput {
   
-  @scala.inline
-  def apply(): BatchGetCommitsOutput = {
+  inline def apply(): BatchGetCommitsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetCommitsOutput]
   }
   
-  @scala.inline
-  implicit class BatchGetCommitsOutputMutableBuilder[Self <: BatchGetCommitsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetCommitsOutput](x: Self) {
     
-    @scala.inline
-    def setCommits(value: CommitObjectsList): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+    inline def setCommits(value: CommitObjectsList): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitsUndefined: Self = StObject.set(x, "commits", js.undefined)
+    inline def setCommitsUndefined: Self = StObject.set(x, "commits", js.undefined)
     
-    @scala.inline
-    def setCommitsVarargs(value: Commit*): Self = StObject.set(x, "commits", js.Array(value :_*))
+    inline def setCommitsVarargs(value: Commit*): Self = StObject.set(x, "commits", js.Array(value :_*))
     
-    @scala.inline
-    def setErrors(value: BatchGetCommitsErrorsList): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: BatchGetCommitsErrorsList): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: BatchGetCommitsError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: BatchGetCommitsError*): Self = StObject.set(x, "errors", js.Array(value :_*))
   }
 }

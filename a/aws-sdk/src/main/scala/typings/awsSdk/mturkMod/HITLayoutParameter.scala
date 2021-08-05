@@ -18,19 +18,15 @@ trait HITLayoutParameter extends StObject {
 }
 object HITLayoutParameter {
   
-  @scala.inline
-  def apply(Name: String, Value: String): HITLayoutParameter = {
+  inline def apply(Name: String, Value: String): HITLayoutParameter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HITLayoutParameter]
   }
   
-  @scala.inline
-  implicit class HITLayoutParameterMutableBuilder[Self <: HITLayoutParameter] (val x: Self) extends AnyVal {
+  extension [Self <: HITLayoutParameter](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

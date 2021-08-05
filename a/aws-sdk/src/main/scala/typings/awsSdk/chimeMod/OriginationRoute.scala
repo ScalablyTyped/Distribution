@@ -33,43 +33,31 @@ trait OriginationRoute extends StObject {
 }
 object OriginationRoute {
   
-  @scala.inline
-  def apply(): OriginationRoute = {
+  inline def apply(): OriginationRoute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OriginationRoute]
   }
   
-  @scala.inline
-  implicit class OriginationRouteMutableBuilder[Self <: OriginationRoute] (val x: Self) extends AnyVal {
+  extension [Self <: OriginationRoute](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
     
-    @scala.inline
-    def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    @scala.inline
-    def setPriority(value: OriginationRoutePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: OriginationRoutePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: OriginationRouteProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: OriginationRouteProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
-    @scala.inline
-    def setWeight(value: OriginationRouteWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: OriginationRouteWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "Weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "Weight", js.undefined)
   }
 }

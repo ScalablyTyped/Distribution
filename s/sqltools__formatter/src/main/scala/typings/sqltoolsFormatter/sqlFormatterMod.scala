@@ -18,24 +18,16 @@ object sqlFormatterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def format(query: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(query.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def format(query: String, cfg: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(query.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def format(query: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def format(query: String, cfg: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(query.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def tokenize(query: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
-    @scala.inline
-    def tokenize(query: String, cfg: Config): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(query.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
+    inline def tokenize(query: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+    inline def tokenize(query: String, cfg: Config): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(query.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
   }
   
-  @scala.inline
-  def format(query: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(query.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def format(query: String, cfg: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(query.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(query: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(query: String, cfg: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(query.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def tokenize(query: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
-  @scala.inline
-  def tokenize(query: String, cfg: Config): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(query.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
+  inline def tokenize(query: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  inline def tokenize(query: String, cfg: Config): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(query.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
 }

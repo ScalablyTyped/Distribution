@@ -41,73 +41,51 @@ trait ImportJob extends StObject {
 }
 object ImportJob {
   
-  @scala.inline
-  def apply(): ImportJob = {
+  inline def apply(): ImportJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportJob]
   }
   
-  @scala.inline
-  implicit class ImportJobMutableBuilder[Self <: ImportJob] (val x: Self) extends AnyVal {
+  extension [Self <: ImportJob](x: Self) {
     
-    @scala.inline
-    def setAttestation(value: KeyOperationAttestation): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
+    inline def setAttestation(value: KeyOperationAttestation): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
+    inline def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setExpireEventTime(value: String): Self = StObject.set(x, "expireEventTime", value.asInstanceOf[js.Any])
+    inline def setExpireEventTime(value: String): Self = StObject.set(x, "expireEventTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireEventTimeUndefined: Self = StObject.set(x, "expireEventTime", js.undefined)
+    inline def setExpireEventTimeUndefined: Self = StObject.set(x, "expireEventTime", js.undefined)
     
-    @scala.inline
-    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
-    @scala.inline
-    def setGenerateTime(value: String): Self = StObject.set(x, "generateTime", value.asInstanceOf[js.Any])
+    inline def setGenerateTime(value: String): Self = StObject.set(x, "generateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerateTimeUndefined: Self = StObject.set(x, "generateTime", js.undefined)
+    inline def setGenerateTimeUndefined: Self = StObject.set(x, "generateTime", js.undefined)
     
-    @scala.inline
-    def setImportMethod(value: String): Self = StObject.set(x, "importMethod", value.asInstanceOf[js.Any])
+    inline def setImportMethod(value: String): Self = StObject.set(x, "importMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportMethodUndefined: Self = StObject.set(x, "importMethod", js.undefined)
+    inline def setImportMethodUndefined: Self = StObject.set(x, "importMethod", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProtectionLevel(value: String): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
+    inline def setProtectionLevel(value: String): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionLevelUndefined: Self = StObject.set(x, "protectionLevel", js.undefined)
+    inline def setProtectionLevelUndefined: Self = StObject.set(x, "protectionLevel", js.undefined)
     
-    @scala.inline
-    def setPublicKey(value: WrappingPublicKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: WrappingPublicKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

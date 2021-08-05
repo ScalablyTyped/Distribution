@@ -612,8 +612,7 @@ object mod extends Shortcut {
   }
   object ColorSpaces {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cmyk: js.Tuple4[Double, Double, Double, Double],
       gl: js.Tuple4[Double, Double, Double, Double],
       hcl: js.Tuple3[Double, Double, Double],
@@ -629,38 +628,27 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ColorSpaces]
     }
     
-    @scala.inline
-    implicit class ColorSpacesMutableBuilder[Self <: ColorSpaces] (val x: Self) extends AnyVal {
+    extension [Self <: ColorSpaces](x: Self) {
       
-      @scala.inline
-      def setCmyk(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "cmyk", value.asInstanceOf[js.Any])
+      inline def setCmyk(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "cmyk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGl(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
+      inline def setGl(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHcl(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "hcl", value.asInstanceOf[js.Any])
+      inline def setHcl(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "hcl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsi(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "hsi", value.asInstanceOf[js.Any])
+      inline def setHsi(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "hsi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsl(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "hsl", value.asInstanceOf[js.Any])
+      inline def setHsl(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "hsl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsv(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "hsv", value.asInstanceOf[js.Any])
+      inline def setHsv(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "hsv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLab(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "lab", value.asInstanceOf[js.Any])
+      inline def setLab(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "lab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLch(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "lch", value.asInstanceOf[js.Any])
+      inline def setLch(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "lch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRgb(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
+      inline def setRgb(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRgba(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
+      inline def setRgba(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
     }
   }
   
@@ -693,8 +681,7 @@ object mod extends Shortcut {
   }
   object Cubehelix {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       gamma: Double => Cubehelix,
       lightness: js.Array[Double] => Cubehelix,
       rotations: Double => Cubehelix,
@@ -705,23 +692,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Cubehelix]
     }
     
-    @scala.inline
-    implicit class CubehelixMutableBuilder[Self <: Cubehelix] (val x: Self) extends AnyVal {
+    extension [Self <: Cubehelix](x: Self) {
       
-      @scala.inline
-      def setGamma(value: Double => Cubehelix): Self = StObject.set(x, "gamma", js.Any.fromFunction1(value))
+      inline def setGamma(value: Double => Cubehelix): Self = StObject.set(x, "gamma", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLightness(value: js.Array[Double] => Cubehelix): Self = StObject.set(x, "lightness", js.Any.fromFunction1(value))
+      inline def setLightness(value: js.Array[Double] => Cubehelix): Self = StObject.set(x, "lightness", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRotations(value: Double => Cubehelix): Self = StObject.set(x, "rotations", js.Any.fromFunction1(value))
+      inline def setRotations(value: Double => Cubehelix): Self = StObject.set(x, "rotations", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScale(value: () => Scale[Color]): Self = StObject.set(x, "scale", js.Any.fromFunction0(value))
+      inline def setScale(value: () => Scale[Color]): Self = StObject.set(x, "scale", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: Double => Cubehelix): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+      inline def setStart(value: Double => Cubehelix): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     }
   }
   
@@ -738,29 +719,21 @@ object mod extends Shortcut {
   trait InterpolationMode extends StObject
   object InterpolationMode {
     
-    @scala.inline
-    def hcl: typings.chromaJs.chromaJsStrings.hcl = "hcl".asInstanceOf[typings.chromaJs.chromaJsStrings.hcl]
+    inline def hcl: typings.chromaJs.chromaJsStrings.hcl = "hcl".asInstanceOf[typings.chromaJs.chromaJsStrings.hcl]
     
-    @scala.inline
-    def hsi: typings.chromaJs.chromaJsStrings.hsi = "hsi".asInstanceOf[typings.chromaJs.chromaJsStrings.hsi]
+    inline def hsi: typings.chromaJs.chromaJsStrings.hsi = "hsi".asInstanceOf[typings.chromaJs.chromaJsStrings.hsi]
     
-    @scala.inline
-    def hsl: typings.chromaJs.chromaJsStrings.hsl = "hsl".asInstanceOf[typings.chromaJs.chromaJsStrings.hsl]
+    inline def hsl: typings.chromaJs.chromaJsStrings.hsl = "hsl".asInstanceOf[typings.chromaJs.chromaJsStrings.hsl]
     
-    @scala.inline
-    def hsv: typings.chromaJs.chromaJsStrings.hsv = "hsv".asInstanceOf[typings.chromaJs.chromaJsStrings.hsv]
+    inline def hsv: typings.chromaJs.chromaJsStrings.hsv = "hsv".asInstanceOf[typings.chromaJs.chromaJsStrings.hsv]
     
-    @scala.inline
-    def lab: typings.chromaJs.chromaJsStrings.lab = "lab".asInstanceOf[typings.chromaJs.chromaJsStrings.lab]
+    inline def lab: typings.chromaJs.chromaJsStrings.lab = "lab".asInstanceOf[typings.chromaJs.chromaJsStrings.lab]
     
-    @scala.inline
-    def lch: typings.chromaJs.chromaJsStrings.lch = "lch".asInstanceOf[typings.chromaJs.chromaJsStrings.lch]
+    inline def lch: typings.chromaJs.chromaJsStrings.lch = "lch".asInstanceOf[typings.chromaJs.chromaJsStrings.lch]
     
-    @scala.inline
-    def lrgb: typings.chromaJs.chromaJsStrings.lrgb = "lrgb".asInstanceOf[typings.chromaJs.chromaJsStrings.lrgb]
+    inline def lrgb: typings.chromaJs.chromaJsStrings.lrgb = "lrgb".asInstanceOf[typings.chromaJs.chromaJsStrings.lrgb]
     
-    @scala.inline
-    def rgb: typings.chromaJs.chromaJsStrings.rgb = "rgb".asInstanceOf[typings.chromaJs.chromaJsStrings.rgb]
+    inline def rgb: typings.chromaJs.chromaJsStrings.rgb = "rgb".asInstanceOf[typings.chromaJs.chromaJsStrings.rgb]
   }
   
   @js.native

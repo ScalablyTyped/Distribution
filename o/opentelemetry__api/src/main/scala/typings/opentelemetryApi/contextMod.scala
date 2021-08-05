@@ -12,9 +12,9 @@ object contextMod {
   @JSImport("@opentelemetry/api/build/src/api/context", "ContextAPI")
   @js.native
   /** Empty private constructor prevents end users from constructing a new instance of the API */
-  class ContextAPI protected () extends StObject {
+  /* private */ class ContextAPI () extends StObject {
     
-    var _getContextManager: js.Any = js.native
+    /* private */ var _getContextManager: js.Any = js.native
     
     /**
       * Get the currently active context
@@ -56,11 +56,9 @@ object contextMod {
     @JSImport("@opentelemetry/api/build/src/api/context", "ContextAPI._instance")
     @js.native
     def _instance: js.Any = js.native
-    @scala.inline
-    def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+    inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /** Get the singleton instance of the Context API */
-    @scala.inline
-    def getInstance(): ContextAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[ContextAPI]
+    inline def getInstance(): ContextAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[ContextAPI]
   }
 }

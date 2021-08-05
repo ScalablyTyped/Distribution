@@ -13,19 +13,15 @@ trait DisassociateLinkResponse extends StObject {
 }
 object DisassociateLinkResponse {
   
-  @scala.inline
-  def apply(): DisassociateLinkResponse = {
+  inline def apply(): DisassociateLinkResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateLinkResponse]
   }
   
-  @scala.inline
-  implicit class DisassociateLinkResponseMutableBuilder[Self <: DisassociateLinkResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateLinkResponse](x: Self) {
     
-    @scala.inline
-    def setLinkAssociation(value: LinkAssociation): Self = StObject.set(x, "LinkAssociation", value.asInstanceOf[js.Any])
+    inline def setLinkAssociation(value: LinkAssociation): Self = StObject.set(x, "LinkAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkAssociationUndefined: Self = StObject.set(x, "LinkAssociation", js.undefined)
+    inline def setLinkAssociationUndefined: Self = StObject.set(x, "LinkAssociation", js.undefined)
   }
 }

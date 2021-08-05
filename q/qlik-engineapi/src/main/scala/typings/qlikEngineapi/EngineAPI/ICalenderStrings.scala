@@ -31,8 +31,7 @@ trait ICalenderStrings extends StObject {
 }
 object ICalenderStrings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qDayNames: js.Array[String],
     qLongDayNames: js.Array[String],
     qLongMonthNames: js.Array[String],
@@ -42,31 +41,22 @@ object ICalenderStrings {
     __obj.asInstanceOf[ICalenderStrings]
   }
   
-  @scala.inline
-  implicit class ICalenderStringsMutableBuilder[Self <: ICalenderStrings] (val x: Self) extends AnyVal {
+  extension [Self <: ICalenderStrings](x: Self) {
     
-    @scala.inline
-    def setQDayNames(value: js.Array[String]): Self = StObject.set(x, "qDayNames", value.asInstanceOf[js.Any])
+    inline def setQDayNames(value: js.Array[String]): Self = StObject.set(x, "qDayNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDayNamesVarargs(value: String*): Self = StObject.set(x, "qDayNames", js.Array(value :_*))
+    inline def setQDayNamesVarargs(value: String*): Self = StObject.set(x, "qDayNames", js.Array(value :_*))
     
-    @scala.inline
-    def setQLongDayNames(value: js.Array[String]): Self = StObject.set(x, "qLongDayNames", value.asInstanceOf[js.Any])
+    inline def setQLongDayNames(value: js.Array[String]): Self = StObject.set(x, "qLongDayNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLongDayNamesVarargs(value: String*): Self = StObject.set(x, "qLongDayNames", js.Array(value :_*))
+    inline def setQLongDayNamesVarargs(value: String*): Self = StObject.set(x, "qLongDayNames", js.Array(value :_*))
     
-    @scala.inline
-    def setQLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "qLongMonthNames", value.asInstanceOf[js.Any])
+    inline def setQLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "qLongMonthNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "qLongMonthNames", js.Array(value :_*))
+    inline def setQLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "qLongMonthNames", js.Array(value :_*))
     
-    @scala.inline
-    def setQMonthNames(value: js.Array[String]): Self = StObject.set(x, "qMonthNames", value.asInstanceOf[js.Any])
+    inline def setQMonthNames(value: js.Array[String]): Self = StObject.set(x, "qMonthNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMonthNamesVarargs(value: String*): Self = StObject.set(x, "qMonthNames", js.Array(value :_*))
+    inline def setQMonthNamesVarargs(value: String*): Self = StObject.set(x, "qMonthNames", js.Array(value :_*))
   }
 }

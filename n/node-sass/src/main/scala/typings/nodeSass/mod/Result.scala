@@ -16,22 +16,17 @@ trait Result extends StObject {
 }
 object Result {
   
-  @scala.inline
-  def apply(css: Buffer, map: Buffer, stats: Duration): Result = {
+  inline def apply(css: Buffer, map: Buffer, stats: Duration): Result = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
   
-  @scala.inline
-  implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+  extension [Self <: Result](x: Self) {
     
-    @scala.inline
-    def setCss(value: Buffer): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Buffer): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: Buffer): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: Buffer): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStats(value: Duration): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Duration): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

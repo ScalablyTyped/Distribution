@@ -13,16 +13,13 @@ trait DeleteBotRequest extends StObject {
 }
 object DeleteBotRequest {
   
-  @scala.inline
-  def apply(name: BotName): DeleteBotRequest = {
+  inline def apply(name: BotName): DeleteBotRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBotRequest]
   }
   
-  @scala.inline
-  implicit class DeleteBotRequestMutableBuilder[Self <: DeleteBotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBotRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: BotName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: BotName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,5 @@ object d3ScaleStrings {
   
   @js.native
   sealed trait `implicit` extends StObject
-  @scala.inline
-  def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
+  inline def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
 }

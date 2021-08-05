@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(layer: js.Any): FastClickObject = ^.asInstanceOf[js.Dynamic].apply(layer.asInstanceOf[js.Any]).asInstanceOf[FastClickObject]
-  @scala.inline
-  def apply(layer: js.Any, options: FastClickOptions): FastClickObject = (^.asInstanceOf[js.Dynamic].apply(layer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FastClickObject]
+  inline def apply(layer: js.Any): FastClickObject = ^.asInstanceOf[js.Dynamic].apply(layer.asInstanceOf[js.Any]).asInstanceOf[FastClickObject]
+  inline def apply(layer: js.Any, options: FastClickOptions): FastClickObject = (^.asInstanceOf[js.Dynamic].apply(layer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FastClickObject]
   
   @JSImport("fastclick", JSImport.Namespace)
   @js.native
@@ -77,6 +75,5 @@ object mod {
   @JSImport("fastclick", "FastClick")
   @js.native
   def FastClick: FastClickStatic = js.native
-  @scala.inline
-  def FastClick_=(x: FastClickStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FastClick")(x.asInstanceOf[js.Any])
+  inline def FastClick_=(x: FastClickStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FastClick")(x.asInstanceOf[js.Any])
 }

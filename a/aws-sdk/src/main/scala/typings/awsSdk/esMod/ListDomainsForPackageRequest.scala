@@ -23,28 +23,21 @@ trait ListDomainsForPackageRequest extends StObject {
 }
 object ListDomainsForPackageRequest {
   
-  @scala.inline
-  def apply(PackageID: PackageID): ListDomainsForPackageRequest = {
+  inline def apply(PackageID: PackageID): ListDomainsForPackageRequest = {
     val __obj = js.Dynamic.literal(PackageID = PackageID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDomainsForPackageRequest]
   }
   
-  @scala.inline
-  implicit class ListDomainsForPackageRequestMutableBuilder[Self <: ListDomainsForPackageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDomainsForPackageRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
+    inline def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
   }
 }

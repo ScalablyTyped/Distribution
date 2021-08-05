@@ -13,16 +13,13 @@ trait ResizeOptions
 }
 object ResizeOptions {
   
-  @scala.inline
-  def apply(maxHeight: Double): ResizeOptions = {
+  inline def apply(maxHeight: Double): ResizeOptions = {
     val __obj = js.Dynamic.literal(maxHeight = maxHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeOptions]
   }
   
-  @scala.inline
-  implicit class ResizeOptionsMutableBuilder[Self <: ResizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResizeOptions](x: Self) {
     
-    @scala.inline
-    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
   }
 }

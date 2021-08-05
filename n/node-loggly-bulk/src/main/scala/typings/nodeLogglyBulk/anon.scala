@@ -14,20 +14,16 @@ object anon {
   }
   object RetriesInMilliSeconds {
     
-    @scala.inline
-    def apply(retriesInMilliSeconds: Double, size: Double): RetriesInMilliSeconds = {
+    inline def apply(retriesInMilliSeconds: Double, size: Double): RetriesInMilliSeconds = {
       val __obj = js.Dynamic.literal(retriesInMilliSeconds = retriesInMilliSeconds.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[RetriesInMilliSeconds]
     }
     
-    @scala.inline
-    implicit class RetriesInMilliSecondsMutableBuilder[Self <: RetriesInMilliSeconds] (val x: Self) extends AnyVal {
+    extension [Self <: RetriesInMilliSeconds](x: Self) {
       
-      @scala.inline
-      def setRetriesInMilliSeconds(value: Double): Self = StObject.set(x, "retriesInMilliSeconds", value.asInstanceOf[js.Any])
+      inline def setRetriesInMilliSeconds(value: Double): Self = StObject.set(x, "retriesInMilliSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

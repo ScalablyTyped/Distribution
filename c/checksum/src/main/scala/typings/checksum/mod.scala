@@ -13,10 +13,8 @@ object mod {
     * @param options    Allows to set the algorithm
     * @returns    Checksum
     */
-  @scala.inline
-  def apply(value: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(value: js.Any, options: ChecksumOptions): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(value: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(value: js.Any, options: ChecksumOptions): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("checksum", JSImport.Namespace)
   @js.native
@@ -27,16 +25,14 @@ object mod {
     * @param filename    The file name
     * @param callback    Callback which is called with the result or an error
     */
-  @scala.inline
-  def file(filename: String, callback: js.Function2[/* error */ Error, /* hash */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def file(filename: String, callback: js.Function2[/* error */ Error, /* hash */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Generate the checksum for a file on disk
     * @param filename    The file name
     * @param options    Options object to indicate hash algo
     * @param callback    Callback which is called with the result or an error
     */
-  @scala.inline
-  def file(
+  inline def file(
     filename: String,
     options: ChecksumOptions,
     callback: js.Function2[/* error */ Error, /* hash */ String, Unit]
@@ -55,20 +51,16 @@ object mod {
   }
   object ChecksumOptions {
     
-    @scala.inline
-    def apply(): ChecksumOptions = {
+    inline def apply(): ChecksumOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChecksumOptions]
     }
     
-    @scala.inline
-    implicit class ChecksumOptionsMutableBuilder[Self <: ChecksumOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChecksumOptions](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     }
   }
 }

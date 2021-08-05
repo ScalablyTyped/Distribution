@@ -10,1166 +10,630 @@ object phpStringsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addcslashes(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addcslashes")().asInstanceOf[js.Any]
-  @scala.inline
-  def addcslashes(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addcslashes")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def addcslashes(str: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addcslashes")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def addcslashes(str: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addcslashes")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def addslashes(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addslashes")().asInstanceOf[js.Any]
-  @scala.inline
-  def addslashes(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addslashes")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def bin2hex(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bin2hex")().asInstanceOf[js.Any]
-  @scala.inline
-  def bin2hex(s: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bin2hex")(s.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def chop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("chop")().asInstanceOf[js.Any]
-  @scala.inline
-  def chop(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("chop")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def chop(str: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chop")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def chop(str: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chop")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def chr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("chr")().asInstanceOf[js.Any]
-  @scala.inline
-  def chr(codePt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("chr")(codePt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def chunkSplit(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")().asInstanceOf[js.Any]
-  @scala.inline
-  def chunkSplit(body: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def chunkSplit(body: js.Any, chunklen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any], chunklen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def chunkSplit(body: js.Any, chunklen: js.Any, end: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any], chunklen.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def chunkSplit(body: js.Any, chunklen: Unit, end: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any], chunklen.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def chunkSplit(body: Unit, chunklen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any], chunklen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def chunkSplit(body: Unit, chunklen: js.Any, end: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any], chunklen.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def chunkSplit(body: Unit, chunklen: Unit, end: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any], chunklen.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def convertCyrString(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")().asInstanceOf[js.Any]
-  @scala.inline
-  def convertCyrString(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def convertCyrString(str: js.Any, from: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def convertCyrString(str: js.Any, from: js.Any, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def convertCyrString(str: js.Any, from: Unit, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def convertCyrString(str: Unit, from: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def convertCyrString(str: Unit, from: js.Any, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def convertCyrString(str: Unit, from: Unit, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def convertUuencode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convert_uuencode")().asInstanceOf[js.Any]
-  @scala.inline
-  def convertUuencode(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convert_uuencode")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def countChars(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("count_chars")().asInstanceOf[js.Any]
-  @scala.inline
-  def countChars(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("count_chars")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def countChars(str: js.Any, mode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("count_chars")(str.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def countChars(str: Unit, mode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("count_chars")(str.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def crc32(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("crc32")().asInstanceOf[js.Any]
-  @scala.inline
-  def crc32(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def echo(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("echo")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def explode(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def getHtmlTranslationTable(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_html_translation_table")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def hex2bin(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hex2bin")().asInstanceOf[js.Any]
-  @scala.inline
-  def hex2bin(s: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hex2bin")(s.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def htmlEntityDecode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("html_entity_decode")().asInstanceOf[js.Any]
-  @scala.inline
-  def htmlEntityDecode(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("html_entity_decode")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlEntityDecode(string: js.Any, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("html_entity_decode")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlEntityDecode(string: Unit, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("html_entity_decode")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def htmlentities(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")().asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: js.Any, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: js.Any, quoteStyle: js.Any, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: js.Any, quoteStyle: js.Any, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: js.Any, quoteStyle: js.Any, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: js.Any, quoteStyle: Unit, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: js.Any, quoteStyle: Unit, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: js.Any, quoteStyle: Unit, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: Unit, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: Unit, quoteStyle: js.Any, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: Unit, quoteStyle: js.Any, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: Unit, quoteStyle: js.Any, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: Unit, quoteStyle: Unit, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: Unit, quoteStyle: Unit, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlentities(string: Unit, quoteStyle: Unit, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def htmlspecialchars(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")().asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: js.Any, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: js.Any, quoteStyle: js.Any, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: js.Any, quoteStyle: js.Any, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: js.Any, quoteStyle: js.Any, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: js.Any, quoteStyle: Unit, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: js.Any, quoteStyle: Unit, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: js.Any, quoteStyle: Unit, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: Unit, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: Unit, quoteStyle: js.Any, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: Unit, quoteStyle: js.Any, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: Unit, quoteStyle: js.Any, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: Unit, quoteStyle: Unit, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: Unit, quoteStyle: Unit, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialchars(string: Unit, quoteStyle: Unit, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def htmlspecialcharsDecode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars_decode")().asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialcharsDecode(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars_decode")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialcharsDecode(string: js.Any, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars_decode")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def htmlspecialcharsDecode(string: Unit, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars_decode")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def implode(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implode")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def join(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("join")().asInstanceOf[js.Any]
-  @scala.inline
-  def join(glue: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(glue.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def join(glue: js.Any, pieces: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(glue.asInstanceOf[js.Any], pieces.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def join(glue: Unit, pieces: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(glue.asInstanceOf[js.Any], pieces.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def lcfirst(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("lcfirst")().asInstanceOf[js.Any]
-  @scala.inline
-  def lcfirst(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("lcfirst")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def levenshtein(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")().asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: js.Any, costIns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: js.Any, costIns: js.Any, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: js.Any, costIns: js.Any, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: js.Any, costIns: js.Any, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: js.Any, costIns: Unit, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: js.Any, costIns: Unit, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: js.Any, costIns: Unit, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: Unit, costIns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: Unit, costIns: js.Any, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: Unit, costIns: js.Any, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: Unit, costIns: js.Any, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: Unit, costIns: Unit, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: Unit, costIns: Unit, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: js.Any, s2: Unit, costIns: Unit, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: js.Any, costIns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: js.Any, costIns: js.Any, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: js.Any, costIns: js.Any, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: js.Any, costIns: js.Any, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: js.Any, costIns: Unit, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: js.Any, costIns: Unit, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: js.Any, costIns: Unit, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: Unit, costIns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: Unit, costIns: js.Any, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: Unit, costIns: js.Any, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: Unit, costIns: js.Any, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: Unit, costIns: Unit, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: Unit, costIns: Unit, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def levenshtein(s1: Unit, s2: Unit, costIns: Unit, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def localeconv(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("localeconv")().asInstanceOf[js.Any]
-  
-  @scala.inline
-  def ltrim(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")().asInstanceOf[js.Any]
-  @scala.inline
-  def ltrim(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def ltrim(str: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def ltrim(str: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def md5(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")().asInstanceOf[js.Any]
-  @scala.inline
-  def md5(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def md5File(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("md5_file")().asInstanceOf[js.Any]
-  @scala.inline
-  def md5File(str_filename: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("md5_file")(str_filename.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def metaphone(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("metaphone")().asInstanceOf[js.Any]
-  @scala.inline
-  def metaphone(word: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("metaphone")(word.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def metaphone(word: js.Any, maxPhonemes: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("metaphone")(word.asInstanceOf[js.Any], maxPhonemes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def metaphone(word: Unit, maxPhonemes: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("metaphone")(word.asInstanceOf[js.Any], maxPhonemes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def moneyFormat(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("money_format")().asInstanceOf[js.Any]
-  @scala.inline
-  def moneyFormat(format: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("money_format")(format.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def moneyFormat(format: js.Any, number: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("money_format")(format.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def moneyFormat(format: Unit, number: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("money_format")(format.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def nl2br(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("nl2br")().asInstanceOf[js.Any]
-  @scala.inline
-  def nl2br(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("nl2br")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def nl2br(str: js.Any, isXhtml: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("nl2br")(str.asInstanceOf[js.Any], isXhtml.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nl2br(str: Unit, isXhtml: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("nl2br")(str.asInstanceOf[js.Any], isXhtml.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def nlLanginfo(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("nl_langinfo")().asInstanceOf[js.Any]
-  @scala.inline
-  def nlLanginfo(item: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("nl_langinfo")(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def numberFormat(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("number_format")().asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: js.Any, decimals: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: js.Any, decimals: js.Any, decPoint: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: js.Any, decimals: js.Any, decPoint: js.Any, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: js.Any, decimals: js.Any, decPoint: Unit, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: js.Any, decimals: Unit, decPoint: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: js.Any, decimals: Unit, decPoint: js.Any, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: js.Any, decimals: Unit, decPoint: Unit, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: Unit, decimals: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: Unit, decimals: js.Any, decPoint: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: Unit, decimals: js.Any, decPoint: js.Any, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: Unit, decimals: js.Any, decPoint: Unit, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: Unit, decimals: Unit, decPoint: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: Unit, decimals: Unit, decPoint: js.Any, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def numberFormat(number: Unit, decimals: Unit, decPoint: Unit, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def ord(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ord")().asInstanceOf[js.Any]
-  @scala.inline
-  def ord(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ord")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def parseStr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse_str")().asInstanceOf[js.Any]
-  @scala.inline
-  def parseStr(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse_str")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def parseStr(str: js.Any, array: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse_str")(str.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def parseStr(str: Unit, array: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse_str")(str.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def printf(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def quotedPrintableDecode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("quoted_printable_decode")().asInstanceOf[js.Any]
-  @scala.inline
-  def quotedPrintableDecode(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("quoted_printable_decode")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def quotedPrintableEncode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("quoted_printable_encode")().asInstanceOf[js.Any]
-  @scala.inline
-  def quotedPrintableEncode(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("quoted_printable_encode")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def quotemeta(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("quotemeta")().asInstanceOf[js.Any]
-  @scala.inline
-  def quotemeta(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("quotemeta")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def rtrim(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")().asInstanceOf[js.Any]
-  @scala.inline
-  def rtrim(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def rtrim(str: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def rtrim(str: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def setlocale(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setlocale")().asInstanceOf[js.Any]
-  @scala.inline
-  def setlocale(category: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setlocale")(category.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def setlocale(category: js.Any, locale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setlocale")(category.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def setlocale(category: Unit, locale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setlocale")(category.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def sha1(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")().asInstanceOf[js.Any]
-  @scala.inline
-  def sha1(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def sha1File(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1_file")().asInstanceOf[js.Any]
-  @scala.inline
-  def sha1File(str_filename: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1_file")(str_filename.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def similarText(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")().asInstanceOf[js.Any]
-  @scala.inline
-  def similarText(first: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def similarText(first: js.Any, second: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def similarText(first: js.Any, second: js.Any, percent: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def similarText(first: js.Any, second: Unit, percent: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def similarText(first: Unit, second: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def similarText(first: Unit, second: js.Any, percent: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def similarText(first: Unit, second: Unit, percent: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def soundex(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("soundex")().asInstanceOf[js.Any]
-  @scala.inline
-  def soundex(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("soundex")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def split(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("split")().asInstanceOf[js.Any]
-  @scala.inline
-  def split(delimiter: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(delimiter.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def split(delimiter: js.Any, string: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(delimiter.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def split(delimiter: Unit, string: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(delimiter.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def sprintf(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sprintf")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def sscanf(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sscanf")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strGetcsv(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")().asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: js.Any, delimiter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: js.Any, delimiter: js.Any, enclosure: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: js.Any, delimiter: js.Any, enclosure: js.Any, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: js.Any, delimiter: js.Any, enclosure: Unit, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: js.Any, delimiter: Unit, enclosure: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: js.Any, delimiter: Unit, enclosure: js.Any, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: js.Any, delimiter: Unit, enclosure: Unit, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: Unit, delimiter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: Unit, delimiter: js.Any, enclosure: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: Unit, delimiter: js.Any, enclosure: js.Any, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: Unit, delimiter: js.Any, enclosure: Unit, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: Unit, delimiter: Unit, enclosure: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: Unit, delimiter: Unit, enclosure: js.Any, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strGetcsv(input: Unit, delimiter: Unit, enclosure: Unit, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strIreplace(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")().asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: js.Any, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: js.Any, replace: js.Any, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: js.Any, replace: js.Any, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: js.Any, replace: js.Any, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: js.Any, replace: Unit, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: js.Any, replace: Unit, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: js.Any, replace: Unit, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: Unit, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: Unit, replace: js.Any, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: Unit, replace: js.Any, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: Unit, replace: js.Any, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: Unit, replace: Unit, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: Unit, replace: Unit, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strIreplace(search: Unit, replace: Unit, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strPad(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")().asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: js.Any, padLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: js.Any, padLength: js.Any, padString: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: js.Any, padLength: js.Any, padString: js.Any, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: js.Any, padLength: js.Any, padString: Unit, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: js.Any, padLength: Unit, padString: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: js.Any, padLength: Unit, padString: js.Any, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: js.Any, padLength: Unit, padString: Unit, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: Unit, padLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: Unit, padLength: js.Any, padString: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: Unit, padLength: js.Any, padString: js.Any, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: Unit, padLength: js.Any, padString: Unit, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: Unit, padLength: Unit, padString: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: Unit, padLength: Unit, padString: js.Any, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strPad(input: Unit, padLength: Unit, padString: Unit, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strRepeat(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_repeat")().asInstanceOf[js.Any]
-  @scala.inline
-  def strRepeat(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_repeat")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strRepeat(input: js.Any, multiplier: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_repeat")(input.asInstanceOf[js.Any], multiplier.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strRepeat(input: Unit, multiplier: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_repeat")(input.asInstanceOf[js.Any], multiplier.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strReplace(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")().asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: js.Any, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: js.Any, replace: js.Any, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: js.Any, replace: js.Any, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: js.Any, replace: js.Any, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: js.Any, replace: Unit, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: js.Any, replace: Unit, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: js.Any, replace: Unit, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: Unit, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: Unit, replace: js.Any, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: Unit, replace: js.Any, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: Unit, replace: js.Any, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: Unit, replace: Unit, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: Unit, replace: Unit, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strReplace(search: Unit, replace: Unit, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strRot13(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_rot13")().asInstanceOf[js.Any]
-  @scala.inline
-  def strRot13(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_rot13")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strShuffle(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_shuffle")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strSplit(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_split")().asInstanceOf[js.Any]
-  @scala.inline
-  def strSplit(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_split")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strSplit(string: js.Any, splitLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_split")(string.asInstanceOf[js.Any], splitLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strSplit(string: Unit, splitLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_split")(string.asInstanceOf[js.Any], splitLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strWordCount(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")().asInstanceOf[js.Any]
-  @scala.inline
-  def strWordCount(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strWordCount(str: js.Any, format: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strWordCount(str: js.Any, format: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strWordCount(str: js.Any, format: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strWordCount(str: Unit, format: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strWordCount(str: Unit, format: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strWordCount(str: Unit, format: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strcasecmp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcasecmp")().asInstanceOf[js.Any]
-  @scala.inline
-  def strcasecmp(fString1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcasecmp")(fString1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strcasecmp(fString1: js.Any, fString2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcasecmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcasecmp(fString1: Unit, fString2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcasecmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strchr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strchr")().asInstanceOf[js.Any]
-  @scala.inline
-  def strchr(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strchr(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strchr(haystack: js.Any, needle: js.Any, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strchr(haystack: js.Any, needle: Unit, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strchr(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strchr(haystack: Unit, needle: js.Any, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strchr(haystack: Unit, needle: Unit, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strcmp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")().asInstanceOf[js.Any]
-  @scala.inline
-  def strcmp(str1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(str1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strcmp(str1: js.Any, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcmp(str1: Unit, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strcoll(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcoll")().asInstanceOf[js.Any]
-  @scala.inline
-  def strcoll(str1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcoll")(str1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strcoll(str1: js.Any, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcoll")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcoll(str1: Unit, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcoll")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strcspn(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")().asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: js.Any, mask: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: js.Any, mask: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: js.Any, mask: js.Any, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: js.Any, mask: js.Any, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: js.Any, mask: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: js.Any, mask: Unit, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: js.Any, mask: Unit, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: Unit, mask: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: Unit, mask: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: Unit, mask: js.Any, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: Unit, mask: js.Any, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: Unit, mask: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: Unit, mask: Unit, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strcspn(str: Unit, mask: Unit, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def stripTags(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strip_tags")().asInstanceOf[js.Any]
-  @scala.inline
-  def stripTags(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strip_tags")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def stripTags(input: js.Any, allowed: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strip_tags")(input.asInstanceOf[js.Any], allowed.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def stripTags(input: Unit, allowed: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strip_tags")(input.asInstanceOf[js.Any], allowed.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def stripos(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripos")().asInstanceOf[js.Any]
-  @scala.inline
-  def stripos(fHaystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def stripos(fHaystack: js.Any, fNeedle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def stripos(fHaystack: js.Any, fNeedle: js.Any, fOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def stripos(fHaystack: js.Any, fNeedle: Unit, fOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def stripos(fHaystack: Unit, fNeedle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def stripos(fHaystack: Unit, fNeedle: js.Any, fOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def stripos(fHaystack: Unit, fNeedle: Unit, fOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def stripslashes(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripslashes")().asInstanceOf[js.Any]
-  @scala.inline
-  def stripslashes(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripslashes")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def stristr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stristr")().asInstanceOf[js.Any]
-  @scala.inline
-  def stristr(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def stristr(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def stristr(haystack: js.Any, needle: js.Any, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def stristr(haystack: js.Any, needle: Unit, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def stristr(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def stristr(haystack: Unit, needle: js.Any, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def stristr(haystack: Unit, needle: Unit, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strlen(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strlen")().asInstanceOf[js.Any]
-  @scala.inline
-  def strlen(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strlen")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strnatcasecmp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strnatcasecmp")().asInstanceOf[js.Any]
-  @scala.inline
-  def strnatcasecmp(str1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strnatcasecmp")(str1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strnatcasecmp(str1: js.Any, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcasecmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strnatcasecmp(str1: Unit, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcasecmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strnatcmp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")().asInstanceOf[js.Any]
-  @scala.inline
-  def strnatcmp(fString1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strnatcmp(fString1: js.Any, fString2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strnatcmp(fString1: js.Any, fString2: js.Any, fVersion: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any], fVersion.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strnatcmp(fString1: js.Any, fString2: Unit, fVersion: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any], fVersion.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strnatcmp(fString1: Unit, fString2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strnatcmp(fString1: Unit, fString2: js.Any, fVersion: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any], fVersion.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strnatcmp(fString1: Unit, fString2: Unit, fVersion: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any], fVersion.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strncasecmp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")().asInstanceOf[js.Any]
-  @scala.inline
-  def strncasecmp(argStr1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strncasecmp(argStr1: js.Any, argStr2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strncasecmp(argStr1: js.Any, argStr2: js.Any, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strncasecmp(argStr1: js.Any, argStr2: Unit, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strncasecmp(argStr1: Unit, argStr2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strncasecmp(argStr1: Unit, argStr2: js.Any, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strncasecmp(argStr1: Unit, argStr2: Unit, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strncmp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")().asInstanceOf[js.Any]
-  @scala.inline
-  def strncmp(str1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strncmp(str1: js.Any, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strncmp(str1: js.Any, str2: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strncmp(str1: js.Any, str2: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strncmp(str1: Unit, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strncmp(str1: Unit, str2: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strncmp(str1: Unit, str2: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strpbrk(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strpbrk")().asInstanceOf[js.Any]
-  @scala.inline
-  def strpbrk(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strpbrk")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strpbrk(haystack: js.Any, charList: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpbrk")(haystack.asInstanceOf[js.Any], charList.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strpbrk(haystack: Unit, charList: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpbrk")(haystack.asInstanceOf[js.Any], charList.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strpos(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strpos")().asInstanceOf[js.Any]
-  @scala.inline
-  def strpos(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strpos(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strpos(haystack: js.Any, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strpos(haystack: js.Any, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strpos(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strpos(haystack: Unit, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strpos(haystack: Unit, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strrchr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strrchr")().asInstanceOf[js.Any]
-  @scala.inline
-  def strrchr(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strrchr")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strrchr(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strrchr(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strrev(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strrev")().asInstanceOf[js.Any]
-  @scala.inline
-  def strrev(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strrev")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strripos(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strripos")().asInstanceOf[js.Any]
-  @scala.inline
-  def strripos(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strripos(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strripos(haystack: js.Any, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strripos(haystack: js.Any, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strripos(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strripos(haystack: Unit, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strripos(haystack: Unit, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strrpos(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")().asInstanceOf[js.Any]
-  @scala.inline
-  def strrpos(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strrpos(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strrpos(haystack: js.Any, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strrpos(haystack: js.Any, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strrpos(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strrpos(haystack: Unit, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strrpos(haystack: Unit, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strspn(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strspn")().asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: js.Any, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: js.Any, str2: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: js.Any, str2: js.Any, start: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: js.Any, str2: js.Any, start: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: js.Any, str2: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: js.Any, str2: Unit, start: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: js.Any, str2: Unit, start: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: Unit, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: Unit, str2: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: Unit, str2: js.Any, start: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: Unit, str2: js.Any, start: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: Unit, str2: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: Unit, str2: Unit, start: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strspn(str1: Unit, str2: Unit, start: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strstr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strstr")().asInstanceOf[js.Any]
-  @scala.inline
-  def strstr(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strstr(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strstr(haystack: js.Any, needle: js.Any, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strstr(haystack: js.Any, needle: Unit, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strstr(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strstr(haystack: Unit, needle: js.Any, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strstr(haystack: Unit, needle: Unit, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strtok(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtok")().asInstanceOf[js.Any]
-  @scala.inline
-  def strtok(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtok")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strtok(str: js.Any, tokens: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtok")(str.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strtok(str: Unit, tokens: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtok")(str.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strtolower(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtolower")().asInstanceOf[js.Any]
-  @scala.inline
-  def strtolower(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtolower")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strtoupper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtoupper")().asInstanceOf[js.Any]
-  @scala.inline
-  def strtoupper(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtoupper")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def strtr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtr")().asInstanceOf[js.Any]
-  @scala.inline
-  def strtr(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def strtr(str: js.Any, trFrom: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any], trFrom.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strtr(str: js.Any, trFrom: js.Any, trTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any], trFrom.asInstanceOf[js.Any], trTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strtr(str: js.Any, trFrom: Unit, trTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any], trFrom.asInstanceOf[js.Any], trTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strtr(str: Unit, trFrom: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any], trFrom.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strtr(str: Unit, trFrom: js.Any, trTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any], trFrom.asInstanceOf[js.Any], trTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def strtr(str: Unit, trFrom: Unit, trTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any], trFrom.asInstanceOf[js.Any], trTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def substr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr")().asInstanceOf[js.Any]
-  @scala.inline
-  def substr(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def substr(str: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substr(str: js.Any, start: js.Any, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substr(str: js.Any, start: Unit, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substr(str: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substr(str: Unit, start: js.Any, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substr(str: Unit, start: Unit, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def substrCompare(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")().asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: js.Any, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: js.Any, offset: js.Any, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: js.Any, offset: js.Any, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: js.Any, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: js.Any, offset: Unit, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: js.Any, offset: Unit, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: Unit, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: Unit, offset: js.Any, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: Unit, offset: js.Any, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: Unit, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: Unit, offset: Unit, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: js.Any, str: Unit, offset: Unit, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: js.Any, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: js.Any, offset: js.Any, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: js.Any, offset: js.Any, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: js.Any, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: js.Any, offset: Unit, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: js.Any, offset: Unit, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: Unit, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: Unit, offset: js.Any, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: Unit, offset: js.Any, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: Unit, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: Unit, offset: Unit, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCompare(mainStr: Unit, str: Unit, offset: Unit, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def substrCount(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")().asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: js.Any, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: js.Any, needle: js.Any, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: js.Any, needle: js.Any, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: js.Any, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: js.Any, needle: Unit, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: js.Any, needle: Unit, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: Unit, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: Unit, needle: js.Any, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: Unit, needle: js.Any, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: Unit, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: Unit, needle: Unit, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrCount(haystack: Unit, needle: Unit, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def substrReplace(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")().asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: js.Any, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: js.Any, replace: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: js.Any, replace: js.Any, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: js.Any, replace: js.Any, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: js.Any, replace: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: js.Any, replace: Unit, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: js.Any, replace: Unit, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: Unit, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: Unit, replace: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: Unit, replace: js.Any, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: Unit, replace: js.Any, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: Unit, replace: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: Unit, replace: Unit, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def substrReplace(str: Unit, replace: Unit, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def trim(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")().asInstanceOf[js.Any]
-  @scala.inline
-  def trim(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def trim(str: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def trim(str: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def ucfirst(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ucfirst")().asInstanceOf[js.Any]
-  @scala.inline
-  def ucfirst(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ucfirst")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def ucwords(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ucwords")().asInstanceOf[js.Any]
-  @scala.inline
-  def ucwords(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ucwords")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def vprintf(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("vprintf")().asInstanceOf[js.Any]
-  @scala.inline
-  def vprintf(format: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("vprintf")(format.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def vprintf(format: js.Any, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("vprintf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def vprintf(format: Unit, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("vprintf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def vsprintf(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("vsprintf")().asInstanceOf[js.Any]
-  @scala.inline
-  def vsprintf(format: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("vsprintf")(format.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def vsprintf(format: js.Any, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("vsprintf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def vsprintf(format: Unit, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("vsprintf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  @scala.inline
-  def wordwrap(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wordwrap")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def addcslashes(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addcslashes")().asInstanceOf[js.Any]
+  inline def addcslashes(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addcslashes")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def addcslashes(str: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addcslashes")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def addcslashes(str: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addcslashes")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def addslashes(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addslashes")().asInstanceOf[js.Any]
+  inline def addslashes(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addslashes")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def bin2hex(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bin2hex")().asInstanceOf[js.Any]
+  inline def bin2hex(s: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bin2hex")(s.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def chop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("chop")().asInstanceOf[js.Any]
+  inline def chop(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("chop")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def chop(str: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chop")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def chop(str: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chop")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def chr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("chr")().asInstanceOf[js.Any]
+  inline def chr(codePt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("chr")(codePt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def chunkSplit(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")().asInstanceOf[js.Any]
+  inline def chunkSplit(body: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def chunkSplit(body: js.Any, chunklen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any], chunklen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def chunkSplit(body: js.Any, chunklen: js.Any, end: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any], chunklen.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def chunkSplit(body: js.Any, chunklen: Unit, end: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any], chunklen.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def chunkSplit(body: Unit, chunklen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any], chunklen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def chunkSplit(body: Unit, chunklen: js.Any, end: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any], chunklen.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def chunkSplit(body: Unit, chunklen: Unit, end: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("chunk_split")(body.asInstanceOf[js.Any], chunklen.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def convertCyrString(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")().asInstanceOf[js.Any]
+  inline def convertCyrString(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def convertCyrString(str: js.Any, from: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def convertCyrString(str: js.Any, from: js.Any, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def convertCyrString(str: js.Any, from: Unit, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def convertCyrString(str: Unit, from: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def convertCyrString(str: Unit, from: js.Any, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def convertCyrString(str: Unit, from: Unit, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert_cyr_string")(str.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def convertUuencode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convert_uuencode")().asInstanceOf[js.Any]
+  inline def convertUuencode(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convert_uuencode")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def countChars(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("count_chars")().asInstanceOf[js.Any]
+  inline def countChars(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("count_chars")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def countChars(str: js.Any, mode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("count_chars")(str.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def countChars(str: Unit, mode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("count_chars")(str.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def crc32(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("crc32")().asInstanceOf[js.Any]
+  inline def crc32(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def echo(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("echo")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def explode(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def getHtmlTranslationTable(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_html_translation_table")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def hex2bin(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hex2bin")().asInstanceOf[js.Any]
+  inline def hex2bin(s: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hex2bin")(s.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def htmlEntityDecode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("html_entity_decode")().asInstanceOf[js.Any]
+  inline def htmlEntityDecode(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("html_entity_decode")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def htmlEntityDecode(string: js.Any, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("html_entity_decode")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlEntityDecode(string: Unit, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("html_entity_decode")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def htmlentities(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")().asInstanceOf[js.Any]
+  inline def htmlentities(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def htmlentities(string: js.Any, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlentities(string: js.Any, quoteStyle: js.Any, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlentities(string: js.Any, quoteStyle: js.Any, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlentities(string: js.Any, quoteStyle: js.Any, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlentities(string: js.Any, quoteStyle: Unit, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlentities(string: js.Any, quoteStyle: Unit, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlentities(string: js.Any, quoteStyle: Unit, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlentities(string: Unit, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlentities(string: Unit, quoteStyle: js.Any, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlentities(string: Unit, quoteStyle: js.Any, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlentities(string: Unit, quoteStyle: js.Any, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlentities(string: Unit, quoteStyle: Unit, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlentities(string: Unit, quoteStyle: Unit, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlentities(string: Unit, quoteStyle: Unit, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlentities")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def htmlspecialchars(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")().asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: js.Any, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: js.Any, quoteStyle: js.Any, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: js.Any, quoteStyle: js.Any, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: js.Any, quoteStyle: js.Any, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: js.Any, quoteStyle: Unit, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: js.Any, quoteStyle: Unit, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: js.Any, quoteStyle: Unit, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: Unit, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: Unit, quoteStyle: js.Any, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: Unit, quoteStyle: js.Any, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: Unit, quoteStyle: js.Any, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: Unit, quoteStyle: Unit, charset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: Unit, quoteStyle: Unit, charset: js.Any, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialchars(string: Unit, quoteStyle: Unit, charset: Unit, doubleEncode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any], charset.asInstanceOf[js.Any], doubleEncode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def htmlspecialcharsDecode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars_decode")().asInstanceOf[js.Any]
+  inline def htmlspecialcharsDecode(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars_decode")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def htmlspecialcharsDecode(string: js.Any, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars_decode")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def htmlspecialcharsDecode(string: Unit, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlspecialchars_decode")(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def implode(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implode")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def join(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("join")().asInstanceOf[js.Any]
+  inline def join(glue: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(glue.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def join(glue: js.Any, pieces: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(glue.asInstanceOf[js.Any], pieces.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def join(glue: Unit, pieces: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(glue.asInstanceOf[js.Any], pieces.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def lcfirst(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("lcfirst")().asInstanceOf[js.Any]
+  inline def lcfirst(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("lcfirst")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def levenshtein(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")().asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: js.Any, costIns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: js.Any, costIns: js.Any, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: js.Any, costIns: js.Any, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: js.Any, costIns: js.Any, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: js.Any, costIns: Unit, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: js.Any, costIns: Unit, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: js.Any, costIns: Unit, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: Unit, costIns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: Unit, costIns: js.Any, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: Unit, costIns: js.Any, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: Unit, costIns: js.Any, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: Unit, costIns: Unit, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: Unit, costIns: Unit, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: js.Any, s2: Unit, costIns: Unit, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: js.Any, costIns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: js.Any, costIns: js.Any, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: js.Any, costIns: js.Any, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: js.Any, costIns: js.Any, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: js.Any, costIns: Unit, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: js.Any, costIns: Unit, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: js.Any, costIns: Unit, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: Unit, costIns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: Unit, costIns: js.Any, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: Unit, costIns: js.Any, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: Unit, costIns: js.Any, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: Unit, costIns: Unit, costRep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: Unit, costIns: Unit, costRep: js.Any, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def levenshtein(s1: Unit, s2: Unit, costIns: Unit, costRep: Unit, costDel: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], costIns.asInstanceOf[js.Any], costRep.asInstanceOf[js.Any], costDel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def localeconv(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("localeconv")().asInstanceOf[js.Any]
+  
+  inline def ltrim(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")().asInstanceOf[js.Any]
+  inline def ltrim(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def ltrim(str: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def ltrim(str: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def md5(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")().asInstanceOf[js.Any]
+  inline def md5(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def md5File(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("md5_file")().asInstanceOf[js.Any]
+  inline def md5File(str_filename: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("md5_file")(str_filename.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def metaphone(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("metaphone")().asInstanceOf[js.Any]
+  inline def metaphone(word: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("metaphone")(word.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def metaphone(word: js.Any, maxPhonemes: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("metaphone")(word.asInstanceOf[js.Any], maxPhonemes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def metaphone(word: Unit, maxPhonemes: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("metaphone")(word.asInstanceOf[js.Any], maxPhonemes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def moneyFormat(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("money_format")().asInstanceOf[js.Any]
+  inline def moneyFormat(format: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("money_format")(format.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def moneyFormat(format: js.Any, number: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("money_format")(format.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def moneyFormat(format: Unit, number: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("money_format")(format.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def nl2br(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("nl2br")().asInstanceOf[js.Any]
+  inline def nl2br(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("nl2br")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nl2br(str: js.Any, isXhtml: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("nl2br")(str.asInstanceOf[js.Any], isXhtml.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nl2br(str: Unit, isXhtml: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("nl2br")(str.asInstanceOf[js.Any], isXhtml.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def nlLanginfo(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("nl_langinfo")().asInstanceOf[js.Any]
+  inline def nlLanginfo(item: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("nl_langinfo")(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def numberFormat(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("number_format")().asInstanceOf[js.Any]
+  inline def numberFormat(number: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def numberFormat(number: js.Any, decimals: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def numberFormat(number: js.Any, decimals: js.Any, decPoint: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def numberFormat(number: js.Any, decimals: js.Any, decPoint: js.Any, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def numberFormat(number: js.Any, decimals: js.Any, decPoint: Unit, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def numberFormat(number: js.Any, decimals: Unit, decPoint: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def numberFormat(number: js.Any, decimals: Unit, decPoint: js.Any, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def numberFormat(number: js.Any, decimals: Unit, decPoint: Unit, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def numberFormat(number: Unit, decimals: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def numberFormat(number: Unit, decimals: js.Any, decPoint: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def numberFormat(number: Unit, decimals: js.Any, decPoint: js.Any, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def numberFormat(number: Unit, decimals: js.Any, decPoint: Unit, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def numberFormat(number: Unit, decimals: Unit, decPoint: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def numberFormat(number: Unit, decimals: Unit, decPoint: js.Any, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def numberFormat(number: Unit, decimals: Unit, decPoint: Unit, thousandsSep: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("number_format")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def ord(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ord")().asInstanceOf[js.Any]
+  inline def ord(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ord")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def parseStr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse_str")().asInstanceOf[js.Any]
+  inline def parseStr(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse_str")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parseStr(str: js.Any, array: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse_str")(str.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parseStr(str: Unit, array: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse_str")(str.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def printf(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def quotedPrintableDecode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("quoted_printable_decode")().asInstanceOf[js.Any]
+  inline def quotedPrintableDecode(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("quoted_printable_decode")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def quotedPrintableEncode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("quoted_printable_encode")().asInstanceOf[js.Any]
+  inline def quotedPrintableEncode(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("quoted_printable_encode")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def quotemeta(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("quotemeta")().asInstanceOf[js.Any]
+  inline def quotemeta(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("quotemeta")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def rtrim(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")().asInstanceOf[js.Any]
+  inline def rtrim(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def rtrim(str: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def rtrim(str: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def setlocale(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setlocale")().asInstanceOf[js.Any]
+  inline def setlocale(category: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setlocale")(category.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def setlocale(category: js.Any, locale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setlocale")(category.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def setlocale(category: Unit, locale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setlocale")(category.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def sha1(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")().asInstanceOf[js.Any]
+  inline def sha1(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def sha1File(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1_file")().asInstanceOf[js.Any]
+  inline def sha1File(str_filename: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1_file")(str_filename.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def similarText(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")().asInstanceOf[js.Any]
+  inline def similarText(first: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def similarText(first: js.Any, second: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def similarText(first: js.Any, second: js.Any, percent: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def similarText(first: js.Any, second: Unit, percent: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def similarText(first: Unit, second: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def similarText(first: Unit, second: js.Any, percent: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def similarText(first: Unit, second: Unit, percent: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("similar_text")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def soundex(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("soundex")().asInstanceOf[js.Any]
+  inline def soundex(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("soundex")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def split(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("split")().asInstanceOf[js.Any]
+  inline def split(delimiter: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(delimiter.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def split(delimiter: js.Any, string: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(delimiter.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def split(delimiter: Unit, string: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(delimiter.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def sprintf(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sprintf")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def sscanf(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sscanf")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def strGetcsv(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")().asInstanceOf[js.Any]
+  inline def strGetcsv(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strGetcsv(input: js.Any, delimiter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strGetcsv(input: js.Any, delimiter: js.Any, enclosure: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strGetcsv(input: js.Any, delimiter: js.Any, enclosure: js.Any, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strGetcsv(input: js.Any, delimiter: js.Any, enclosure: Unit, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strGetcsv(input: js.Any, delimiter: Unit, enclosure: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strGetcsv(input: js.Any, delimiter: Unit, enclosure: js.Any, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strGetcsv(input: js.Any, delimiter: Unit, enclosure: Unit, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strGetcsv(input: Unit, delimiter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strGetcsv(input: Unit, delimiter: js.Any, enclosure: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strGetcsv(input: Unit, delimiter: js.Any, enclosure: js.Any, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strGetcsv(input: Unit, delimiter: js.Any, enclosure: Unit, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strGetcsv(input: Unit, delimiter: Unit, enclosure: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strGetcsv(input: Unit, delimiter: Unit, enclosure: js.Any, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strGetcsv(input: Unit, delimiter: Unit, enclosure: Unit, escape: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_getcsv")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], enclosure.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strIreplace(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")().asInstanceOf[js.Any]
+  inline def strIreplace(search: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strIreplace(search: js.Any, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strIreplace(search: js.Any, replace: js.Any, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strIreplace(search: js.Any, replace: js.Any, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strIreplace(search: js.Any, replace: js.Any, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strIreplace(search: js.Any, replace: Unit, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strIreplace(search: js.Any, replace: Unit, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strIreplace(search: js.Any, replace: Unit, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strIreplace(search: Unit, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strIreplace(search: Unit, replace: js.Any, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strIreplace(search: Unit, replace: js.Any, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strIreplace(search: Unit, replace: js.Any, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strIreplace(search: Unit, replace: Unit, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strIreplace(search: Unit, replace: Unit, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strIreplace(search: Unit, replace: Unit, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_ireplace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strPad(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")().asInstanceOf[js.Any]
+  inline def strPad(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strPad(input: js.Any, padLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strPad(input: js.Any, padLength: js.Any, padString: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strPad(input: js.Any, padLength: js.Any, padString: js.Any, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strPad(input: js.Any, padLength: js.Any, padString: Unit, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strPad(input: js.Any, padLength: Unit, padString: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strPad(input: js.Any, padLength: Unit, padString: js.Any, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strPad(input: js.Any, padLength: Unit, padString: Unit, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strPad(input: Unit, padLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strPad(input: Unit, padLength: js.Any, padString: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strPad(input: Unit, padLength: js.Any, padString: js.Any, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strPad(input: Unit, padLength: js.Any, padString: Unit, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strPad(input: Unit, padLength: Unit, padString: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strPad(input: Unit, padLength: Unit, padString: js.Any, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strPad(input: Unit, padLength: Unit, padString: Unit, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_pad")(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strRepeat(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_repeat")().asInstanceOf[js.Any]
+  inline def strRepeat(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_repeat")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strRepeat(input: js.Any, multiplier: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_repeat")(input.asInstanceOf[js.Any], multiplier.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strRepeat(input: Unit, multiplier: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_repeat")(input.asInstanceOf[js.Any], multiplier.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strReplace(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")().asInstanceOf[js.Any]
+  inline def strReplace(search: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strReplace(search: js.Any, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strReplace(search: js.Any, replace: js.Any, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strReplace(search: js.Any, replace: js.Any, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strReplace(search: js.Any, replace: js.Any, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strReplace(search: js.Any, replace: Unit, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strReplace(search: js.Any, replace: Unit, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strReplace(search: js.Any, replace: Unit, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strReplace(search: Unit, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strReplace(search: Unit, replace: js.Any, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strReplace(search: Unit, replace: js.Any, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strReplace(search: Unit, replace: js.Any, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strReplace(search: Unit, replace: Unit, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strReplace(search: Unit, replace: Unit, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strReplace(search: Unit, replace: Unit, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_replace")(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strRot13(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_rot13")().asInstanceOf[js.Any]
+  inline def strRot13(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_rot13")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def strShuffle(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_shuffle")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def strSplit(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_split")().asInstanceOf[js.Any]
+  inline def strSplit(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_split")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strSplit(string: js.Any, splitLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_split")(string.asInstanceOf[js.Any], splitLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strSplit(string: Unit, splitLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_split")(string.asInstanceOf[js.Any], splitLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strWordCount(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")().asInstanceOf[js.Any]
+  inline def strWordCount(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strWordCount(str: js.Any, format: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strWordCount(str: js.Any, format: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strWordCount(str: js.Any, format: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strWordCount(str: Unit, format: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strWordCount(str: Unit, format: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strWordCount(str: Unit, format: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("str_word_count")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strcasecmp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcasecmp")().asInstanceOf[js.Any]
+  inline def strcasecmp(fString1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcasecmp")(fString1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strcasecmp(fString1: js.Any, fString2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcasecmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcasecmp(fString1: Unit, fString2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcasecmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strchr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strchr")().asInstanceOf[js.Any]
+  inline def strchr(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strchr(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strchr(haystack: js.Any, needle: js.Any, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strchr(haystack: js.Any, needle: Unit, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strchr(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strchr(haystack: Unit, needle: js.Any, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strchr(haystack: Unit, needle: Unit, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strcmp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")().asInstanceOf[js.Any]
+  inline def strcmp(str1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(str1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strcmp(str1: js.Any, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcmp(str1: Unit, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strcoll(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcoll")().asInstanceOf[js.Any]
+  inline def strcoll(str1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcoll")(str1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strcoll(str1: js.Any, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcoll")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcoll(str1: Unit, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcoll")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strcspn(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")().asInstanceOf[js.Any]
+  inline def strcspn(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strcspn(str: js.Any, mask: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcspn(str: js.Any, mask: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcspn(str: js.Any, mask: js.Any, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcspn(str: js.Any, mask: js.Any, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcspn(str: js.Any, mask: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcspn(str: js.Any, mask: Unit, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcspn(str: js.Any, mask: Unit, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcspn(str: Unit, mask: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcspn(str: Unit, mask: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcspn(str: Unit, mask: js.Any, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcspn(str: Unit, mask: js.Any, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcspn(str: Unit, mask: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcspn(str: Unit, mask: Unit, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strcspn(str: Unit, mask: Unit, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strcspn")(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def stripTags(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strip_tags")().asInstanceOf[js.Any]
+  inline def stripTags(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strip_tags")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def stripTags(input: js.Any, allowed: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strip_tags")(input.asInstanceOf[js.Any], allowed.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def stripTags(input: Unit, allowed: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strip_tags")(input.asInstanceOf[js.Any], allowed.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def stripos(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripos")().asInstanceOf[js.Any]
+  inline def stripos(fHaystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def stripos(fHaystack: js.Any, fNeedle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def stripos(fHaystack: js.Any, fNeedle: js.Any, fOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def stripos(fHaystack: js.Any, fNeedle: Unit, fOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def stripos(fHaystack: Unit, fNeedle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def stripos(fHaystack: Unit, fNeedle: js.Any, fOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def stripos(fHaystack: Unit, fNeedle: Unit, fOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripos")(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def stripslashes(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripslashes")().asInstanceOf[js.Any]
+  inline def stripslashes(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripslashes")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def stristr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stristr")().asInstanceOf[js.Any]
+  inline def stristr(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def stristr(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def stristr(haystack: js.Any, needle: js.Any, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def stristr(haystack: js.Any, needle: Unit, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def stristr(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def stristr(haystack: Unit, needle: js.Any, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def stristr(haystack: Unit, needle: Unit, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stristr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strlen(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strlen")().asInstanceOf[js.Any]
+  inline def strlen(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strlen")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def strnatcasecmp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strnatcasecmp")().asInstanceOf[js.Any]
+  inline def strnatcasecmp(str1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strnatcasecmp")(str1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strnatcasecmp(str1: js.Any, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcasecmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strnatcasecmp(str1: Unit, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcasecmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strnatcmp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")().asInstanceOf[js.Any]
+  inline def strnatcmp(fString1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strnatcmp(fString1: js.Any, fString2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strnatcmp(fString1: js.Any, fString2: js.Any, fVersion: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any], fVersion.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strnatcmp(fString1: js.Any, fString2: Unit, fVersion: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any], fVersion.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strnatcmp(fString1: Unit, fString2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strnatcmp(fString1: Unit, fString2: js.Any, fVersion: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any], fVersion.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strnatcmp(fString1: Unit, fString2: Unit, fVersion: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strnatcmp")(fString1.asInstanceOf[js.Any], fString2.asInstanceOf[js.Any], fVersion.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strncasecmp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")().asInstanceOf[js.Any]
+  inline def strncasecmp(argStr1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strncasecmp(argStr1: js.Any, argStr2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strncasecmp(argStr1: js.Any, argStr2: js.Any, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strncasecmp(argStr1: js.Any, argStr2: Unit, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strncasecmp(argStr1: Unit, argStr2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strncasecmp(argStr1: Unit, argStr2: js.Any, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strncasecmp(argStr1: Unit, argStr2: Unit, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncasecmp")(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strncmp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")().asInstanceOf[js.Any]
+  inline def strncmp(str1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strncmp(str1: js.Any, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strncmp(str1: js.Any, str2: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strncmp(str1: js.Any, str2: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strncmp(str1: Unit, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strncmp(str1: Unit, str2: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strncmp(str1: Unit, str2: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strncmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strpbrk(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strpbrk")().asInstanceOf[js.Any]
+  inline def strpbrk(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strpbrk")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strpbrk(haystack: js.Any, charList: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpbrk")(haystack.asInstanceOf[js.Any], charList.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strpbrk(haystack: Unit, charList: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpbrk")(haystack.asInstanceOf[js.Any], charList.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strpos(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strpos")().asInstanceOf[js.Any]
+  inline def strpos(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strpos(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strpos(haystack: js.Any, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strpos(haystack: js.Any, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strpos(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strpos(haystack: Unit, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strpos(haystack: Unit, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strrchr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strrchr")().asInstanceOf[js.Any]
+  inline def strrchr(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strrchr")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strrchr(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strrchr(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrchr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strrev(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strrev")().asInstanceOf[js.Any]
+  inline def strrev(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strrev")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def strripos(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strripos")().asInstanceOf[js.Any]
+  inline def strripos(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strripos(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strripos(haystack: js.Any, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strripos(haystack: js.Any, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strripos(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strripos(haystack: Unit, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strripos(haystack: Unit, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strripos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strrpos(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")().asInstanceOf[js.Any]
+  inline def strrpos(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strrpos(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strrpos(haystack: js.Any, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strrpos(haystack: js.Any, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strrpos(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strrpos(haystack: Unit, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strrpos(haystack: Unit, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strrpos")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strspn(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strspn")().asInstanceOf[js.Any]
+  inline def strspn(str1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strspn(str1: js.Any, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strspn(str1: js.Any, str2: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strspn(str1: js.Any, str2: js.Any, start: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strspn(str1: js.Any, str2: js.Any, start: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strspn(str1: js.Any, str2: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strspn(str1: js.Any, str2: Unit, start: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strspn(str1: js.Any, str2: Unit, start: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strspn(str1: Unit, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strspn(str1: Unit, str2: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strspn(str1: Unit, str2: js.Any, start: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strspn(str1: Unit, str2: js.Any, start: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strspn(str1: Unit, str2: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strspn(str1: Unit, str2: Unit, start: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strspn(str1: Unit, str2: Unit, start: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strspn")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], start.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strstr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strstr")().asInstanceOf[js.Any]
+  inline def strstr(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strstr(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strstr(haystack: js.Any, needle: js.Any, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strstr(haystack: js.Any, needle: Unit, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strstr(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strstr(haystack: Unit, needle: js.Any, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strstr(haystack: Unit, needle: Unit, bool: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strstr")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strtok(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtok")().asInstanceOf[js.Any]
+  inline def strtok(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtok")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strtok(str: js.Any, tokens: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtok")(str.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strtok(str: Unit, tokens: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtok")(str.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def strtolower(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtolower")().asInstanceOf[js.Any]
+  inline def strtolower(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtolower")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def strtoupper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtoupper")().asInstanceOf[js.Any]
+  inline def strtoupper(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtoupper")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def strtr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtr")().asInstanceOf[js.Any]
+  inline def strtr(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def strtr(str: js.Any, trFrom: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any], trFrom.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strtr(str: js.Any, trFrom: js.Any, trTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any], trFrom.asInstanceOf[js.Any], trTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strtr(str: js.Any, trFrom: Unit, trTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any], trFrom.asInstanceOf[js.Any], trTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strtr(str: Unit, trFrom: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any], trFrom.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strtr(str: Unit, trFrom: js.Any, trTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any], trFrom.asInstanceOf[js.Any], trTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def strtr(str: Unit, trFrom: Unit, trTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("strtr")(str.asInstanceOf[js.Any], trFrom.asInstanceOf[js.Any], trTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def substr(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr")().asInstanceOf[js.Any]
+  inline def substr(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def substr(str: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substr(str: js.Any, start: js.Any, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substr(str: js.Any, start: Unit, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substr(str: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substr(str: Unit, start: js.Any, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substr(str: Unit, start: Unit, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def substrCompare(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")().asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: js.Any, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: js.Any, offset: js.Any, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: js.Any, offset: js.Any, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: js.Any, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: js.Any, offset: Unit, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: js.Any, offset: Unit, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: Unit, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: Unit, offset: js.Any, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: Unit, offset: js.Any, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: Unit, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: Unit, offset: Unit, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: js.Any, str: Unit, offset: Unit, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: js.Any, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: js.Any, offset: js.Any, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: js.Any, offset: js.Any, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: js.Any, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: js.Any, offset: Unit, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: js.Any, offset: Unit, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: Unit, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: Unit, offset: js.Any, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: Unit, offset: js.Any, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: Unit, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: Unit, offset: Unit, length: js.Any, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCompare(mainStr: Unit, str: Unit, offset: Unit, length: Unit, caseInsensitivity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_compare")(mainStr.asInstanceOf[js.Any], str.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], caseInsensitivity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def substrCount(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")().asInstanceOf[js.Any]
+  inline def substrCount(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def substrCount(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCount(haystack: js.Any, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCount(haystack: js.Any, needle: js.Any, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCount(haystack: js.Any, needle: js.Any, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCount(haystack: js.Any, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCount(haystack: js.Any, needle: Unit, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCount(haystack: js.Any, needle: Unit, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCount(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCount(haystack: Unit, needle: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCount(haystack: Unit, needle: js.Any, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCount(haystack: Unit, needle: js.Any, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCount(haystack: Unit, needle: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCount(haystack: Unit, needle: Unit, offset: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrCount(haystack: Unit, needle: Unit, offset: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_count")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def substrReplace(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")().asInstanceOf[js.Any]
+  inline def substrReplace(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def substrReplace(str: js.Any, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrReplace(str: js.Any, replace: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrReplace(str: js.Any, replace: js.Any, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrReplace(str: js.Any, replace: js.Any, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrReplace(str: js.Any, replace: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrReplace(str: js.Any, replace: Unit, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrReplace(str: js.Any, replace: Unit, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrReplace(str: Unit, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrReplace(str: Unit, replace: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrReplace(str: Unit, replace: js.Any, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrReplace(str: Unit, replace: js.Any, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrReplace(str: Unit, replace: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrReplace(str: Unit, replace: Unit, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def substrReplace(str: Unit, replace: Unit, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("substr_replace")(str.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def trim(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")().asInstanceOf[js.Any]
+  inline def trim(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def trim(str: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def trim(str: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def ucfirst(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ucfirst")().asInstanceOf[js.Any]
+  inline def ucfirst(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ucfirst")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def ucwords(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ucwords")().asInstanceOf[js.Any]
+  inline def ucwords(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ucwords")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  inline def vprintf(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("vprintf")().asInstanceOf[js.Any]
+  inline def vprintf(format: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("vprintf")(format.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def vprintf(format: js.Any, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("vprintf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def vprintf(format: Unit, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("vprintf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def vsprintf(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("vsprintf")().asInstanceOf[js.Any]
+  inline def vsprintf(format: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("vsprintf")(format.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def vsprintf(format: js.Any, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("vsprintf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def vsprintf(format: Unit, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("vsprintf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  inline def wordwrap(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wordwrap")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

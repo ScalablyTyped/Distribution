@@ -12,19 +12,15 @@ trait ICONEVENT extends StObject {
 }
 object ICONEVENT {
   
-  @scala.inline
-  def apply(ICON_EVENT: String, ICON_ROLE: String): ICONEVENT = {
+  inline def apply(ICON_EVENT: String, ICON_ROLE: String): ICONEVENT = {
     val __obj = js.Dynamic.literal(ICON_EVENT = ICON_EVENT.asInstanceOf[js.Any], ICON_ROLE = ICON_ROLE.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICONEVENT]
   }
   
-  @scala.inline
-  implicit class ICONEVENTMutableBuilder[Self <: ICONEVENT] (val x: Self) extends AnyVal {
+  extension [Self <: ICONEVENT](x: Self) {
     
-    @scala.inline
-    def setICON_EVENT(value: String): Self = StObject.set(x, "ICON_EVENT", value.asInstanceOf[js.Any])
+    inline def setICON_EVENT(value: String): Self = StObject.set(x, "ICON_EVENT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setICON_ROLE(value: String): Self = StObject.set(x, "ICON_ROLE", value.asInstanceOf[js.Any])
+    inline def setICON_ROLE(value: String): Self = StObject.set(x, "ICON_ROLE", value.asInstanceOf[js.Any])
   }
 }

@@ -20,15 +20,11 @@ object Metrics {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def activities(config: Config, uuid: String): js.Promise[Entries[MetricsActivity]] = (^.asInstanceOf[js.Dynamic].applyDynamic("activities")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[MetricsActivity]]]
-    @scala.inline
-    def activities(config: Config, uuid: String, params: CursorParams): js.Promise[Entries[MetricsActivity]] = (^.asInstanceOf[js.Dynamic].applyDynamic("activities")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[MetricsActivity]]]
+    inline def activities(config: Config, uuid: String): js.Promise[Entries[MetricsActivity]] = (^.asInstanceOf[js.Dynamic].applyDynamic("activities")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[MetricsActivity]]]
+    inline def activities(config: Config, uuid: String, params: CursorParams): js.Promise[Entries[MetricsActivity]] = (^.asInstanceOf[js.Dynamic].applyDynamic("activities")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[MetricsActivity]]]
     
-    @scala.inline
-    def subscriptions(config: Config, uuid: String): js.Promise[Entries[MetricsSubscription]] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscriptions")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[MetricsSubscription]]]
-    @scala.inline
-    def subscriptions(config: Config, uuid: String, params: CursorParams): js.Promise[Entries[MetricsSubscription]] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscriptions")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[MetricsSubscription]]]
+    inline def subscriptions(config: Config, uuid: String): js.Promise[Entries[MetricsSubscription]] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscriptions")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[MetricsSubscription]]]
+    inline def subscriptions(config: Config, uuid: String, params: CursorParams): js.Promise[Entries[MetricsSubscription]] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscriptions")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[MetricsSubscription]]]
     
     trait MetricsActivity extends StObject {
       
@@ -52,8 +48,7 @@ object Metrics {
     }
     object MetricsActivity {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         `activity-arr`: Double,
         `activity-mrr`: Double,
         `activity-mrr-movement`: Double,
@@ -73,35 +68,25 @@ object Metrics {
         __obj.asInstanceOf[MetricsActivity]
       }
       
-      @scala.inline
-      implicit class MetricsActivityMutableBuilder[Self <: MetricsActivity] (val x: Self) extends AnyVal {
+      extension [Self <: MetricsActivity](x: Self) {
         
-        @scala.inline
-        def `setActivity-arr`(value: Double): Self = StObject.set(x, "activity-arr", value.asInstanceOf[js.Any])
+        inline def `setActivity-arr`(value: Double): Self = StObject.set(x, "activity-arr", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setActivity-mrr`(value: Double): Self = StObject.set(x, "activity-mrr", value.asInstanceOf[js.Any])
+        inline def `setActivity-mrr`(value: Double): Self = StObject.set(x, "activity-mrr", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setActivity-mrr-movement`(value: Double): Self = StObject.set(x, "activity-mrr-movement", value.asInstanceOf[js.Any])
+        inline def `setActivity-mrr-movement`(value: Double): Self = StObject.set(x, "activity-mrr-movement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setCurrency-sign`(value: String): Self = StObject.set(x, "currency-sign", value.asInstanceOf[js.Any])
+        inline def `setCurrency-sign`(value: String): Self = StObject.set(x, "currency-sign", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+        inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -135,8 +120,7 @@ object Metrics {
     }
     object MetricsSubscription {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         arr: Double,
         `billing-cycle`: String,
         `billing-cycle-count`: Double,
@@ -160,77 +144,54 @@ object Metrics {
         __obj.asInstanceOf[MetricsSubscription]
       }
       
-      @scala.inline
-      implicit class MetricsSubscriptionMutableBuilder[Self <: MetricsSubscription] (val x: Self) extends AnyVal {
+      extension [Self <: MetricsSubscription](x: Self) {
         
-        @scala.inline
-        def setArr(value: Double): Self = StObject.set(x, "arr", value.asInstanceOf[js.Any])
+        inline def setArr(value: Double): Self = StObject.set(x, "arr", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setBilling-cycle`(value: String): Self = StObject.set(x, "billing-cycle", value.asInstanceOf[js.Any])
+        inline def `setBilling-cycle`(value: String): Self = StObject.set(x, "billing-cycle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setBilling-cycle-count`(value: Double): Self = StObject.set(x, "billing-cycle-count", value.asInstanceOf[js.Any])
+        inline def `setBilling-cycle-count`(value: Double): Self = StObject.set(x, "billing-cycle-count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setCurrency-sign`(value: String): Self = StObject.set(x, "currency-sign", value.asInstanceOf[js.Any])
+        inline def `setCurrency-sign`(value: String): Self = StObject.set(x, "currency-sign", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setEnd-date`(value: String): Self = StObject.set(x, "end-date", value.asInstanceOf[js.Any])
+        inline def `setEnd-date`(value: String): Self = StObject.set(x, "end-date", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
+        inline def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMrr(value: Double): Self = StObject.set(x, "mrr", value.asInstanceOf[js.Any])
+        inline def setMrr(value: Double): Self = StObject.set(x, "mrr", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+        inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+        inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setStart-date`(value: String): Self = StObject.set(x, "start-date", value.asInstanceOf[js.Any])
+        inline def `setStart-date`(value: String): Self = StObject.set(x, "start-date", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       }
     }
   }
   
-  @scala.inline
-  def all(config: Config, params: Params): js.Promise[All_] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[All_]]
+  inline def all(config: Config, params: Params): js.Promise[All_] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[All_]]
   
-  @scala.inline
-  def arpa(config: Config, params: Params): js.Promise[EntriesSummary[ARPA_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("arpa")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[ARPA_]]]
+  inline def arpa(config: Config, params: Params): js.Promise[EntriesSummary[ARPA_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("arpa")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[ARPA_]]]
   
-  @scala.inline
-  def arr(config: Config, params: Params): js.Promise[EntriesSummary[ARR_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("arr")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[ARR_]]]
+  inline def arr(config: Config, params: Params): js.Promise[EntriesSummary[ARR_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("arr")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[ARR_]]]
   
-  @scala.inline
-  def asp(config: Config, params: Params): js.Promise[EntriesSummary[ASP_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asp")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[ASP_]]]
+  inline def asp(config: Config, params: Params): js.Promise[EntriesSummary[ASP_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asp")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[ASP_]]]
   
-  @scala.inline
-  def customerChurnRate(config: Config, params: ParamsNoInterval): js.Promise[EntriesSummary[CustomerChurnRate_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("customerChurnRate")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[CustomerChurnRate_]]]
+  inline def customerChurnRate(config: Config, params: ParamsNoInterval): js.Promise[EntriesSummary[CustomerChurnRate_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("customerChurnRate")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[CustomerChurnRate_]]]
   
-  @scala.inline
-  def customerCount(config: Config, params: Params): js.Promise[EntriesSummary[CustomerCount_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("customerCount")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[CustomerCount_]]]
+  inline def customerCount(config: Config, params: Params): js.Promise[EntriesSummary[CustomerCount_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("customerCount")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[CustomerCount_]]]
   
-  @scala.inline
-  def ltv(config: Config, params: ParamsNoInterval): js.Promise[EntriesSummary[LTV_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("ltv")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[LTV_]]]
+  inline def ltv(config: Config, params: ParamsNoInterval): js.Promise[EntriesSummary[LTV_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("ltv")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[LTV_]]]
   
-  @scala.inline
-  def mrr(config: Config, params: Params): js.Promise[EntriesSummary[MRR_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mrr")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[MRR_]]]
+  inline def mrr(config: Config, params: Params): js.Promise[EntriesSummary[MRR_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mrr")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[MRR_]]]
   
-  @scala.inline
-  def mrrChurnRate(config: Config, params: ParamsNoInterval): js.Promise[EntriesSummary[MRRChurnRate_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mrrChurnRate")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[MRRChurnRate_]]]
+  inline def mrrChurnRate(config: Config, params: ParamsNoInterval): js.Promise[EntriesSummary[MRRChurnRate_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mrrChurnRate")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[MRRChurnRate_]]]
   
   trait ARPA_ extends StObject {
     
@@ -240,20 +201,16 @@ object Metrics {
   }
   object ARPA_ {
     
-    @scala.inline
-    def apply(arpa: Double, date: String): ARPA_ = {
+    inline def apply(arpa: Double, date: String): ARPA_ = {
       val __obj = js.Dynamic.literal(arpa = arpa.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
       __obj.asInstanceOf[ARPA_]
     }
     
-    @scala.inline
-    implicit class ARPA_MutableBuilder[Self <: ARPA_] (val x: Self) extends AnyVal {
+    extension [Self <: ARPA_](x: Self) {
       
-      @scala.inline
-      def setArpa(value: Double): Self = StObject.set(x, "arpa", value.asInstanceOf[js.Any])
+      inline def setArpa(value: Double): Self = StObject.set(x, "arpa", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     }
   }
   
@@ -265,20 +222,16 @@ object Metrics {
   }
   object ARR_ {
     
-    @scala.inline
-    def apply(arr: Double, date: String): ARR_ = {
+    inline def apply(arr: Double, date: String): ARR_ = {
       val __obj = js.Dynamic.literal(arr = arr.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
       __obj.asInstanceOf[ARR_]
     }
     
-    @scala.inline
-    implicit class ARR_MutableBuilder[Self <: ARR_] (val x: Self) extends AnyVal {
+    extension [Self <: ARR_](x: Self) {
       
-      @scala.inline
-      def setArr(value: Double): Self = StObject.set(x, "arr", value.asInstanceOf[js.Any])
+      inline def setArr(value: Double): Self = StObject.set(x, "arr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     }
   }
   
@@ -290,20 +243,16 @@ object Metrics {
   }
   object ASP_ {
     
-    @scala.inline
-    def apply(asp: Double, date: String): ASP_ = {
+    inline def apply(asp: Double, date: String): ASP_ = {
       val __obj = js.Dynamic.literal(asp = asp.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
       __obj.asInstanceOf[ASP_]
     }
     
-    @scala.inline
-    implicit class ASP_MutableBuilder[Self <: ASP_] (val x: Self) extends AnyVal {
+    extension [Self <: ASP_](x: Self) {
       
-      @scala.inline
-      def setAsp(value: Double): Self = StObject.set(x, "asp", value.asInstanceOf[js.Any])
+      inline def setAsp(value: Double): Self = StObject.set(x, "asp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     }
   }
   
@@ -313,17 +262,14 @@ object Metrics {
   }
   object All_ {
     
-    @scala.inline
-    def apply(entries: Arpa): All_ = {
+    inline def apply(entries: Arpa): All_ = {
       val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
       __obj.asInstanceOf[All_]
     }
     
-    @scala.inline
-    implicit class All_MutableBuilder[Self <: All_] (val x: Self) extends AnyVal {
+    extension [Self <: All_](x: Self) {
       
-      @scala.inline
-      def setEntries(value: Arpa): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: Arpa): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     }
   }
   
@@ -335,21 +281,17 @@ object Metrics {
   }
   object CustomerChurnRate_ {
     
-    @scala.inline
-    def apply(`customer-churn-rate`: Double, date: String): CustomerChurnRate_ = {
+    inline def apply(`customer-churn-rate`: Double, date: String): CustomerChurnRate_ = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
       __obj.updateDynamic("customer-churn-rate")(`customer-churn-rate`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomerChurnRate_]
     }
     
-    @scala.inline
-    implicit class CustomerChurnRate_MutableBuilder[Self <: CustomerChurnRate_] (val x: Self) extends AnyVal {
+    extension [Self <: CustomerChurnRate_](x: Self) {
       
-      @scala.inline
-      def `setCustomer-churn-rate`(value: Double): Self = StObject.set(x, "customer-churn-rate", value.asInstanceOf[js.Any])
+      inline def `setCustomer-churn-rate`(value: Double): Self = StObject.set(x, "customer-churn-rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     }
   }
   
@@ -361,20 +303,16 @@ object Metrics {
   }
   object CustomerCount_ {
     
-    @scala.inline
-    def apply(customers: Double, date: String): CustomerCount_ = {
+    inline def apply(customers: Double, date: String): CustomerCount_ = {
       val __obj = js.Dynamic.literal(customers = customers.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomerCount_]
     }
     
-    @scala.inline
-    implicit class CustomerCount_MutableBuilder[Self <: CustomerCount_] (val x: Self) extends AnyVal {
+    extension [Self <: CustomerCount_](x: Self) {
       
-      @scala.inline
-      def setCustomers(value: Double): Self = StObject.set(x, "customers", value.asInstanceOf[js.Any])
+      inline def setCustomers(value: Double): Self = StObject.set(x, "customers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     }
   }
   
@@ -386,20 +324,16 @@ object Metrics {
   }
   object LTV_ {
     
-    @scala.inline
-    def apply(date: String, ltv: Double): LTV_ = {
+    inline def apply(date: String, ltv: Double): LTV_ = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], ltv = ltv.asInstanceOf[js.Any])
       __obj.asInstanceOf[LTV_]
     }
     
-    @scala.inline
-    implicit class LTV_MutableBuilder[Self <: LTV_] (val x: Self) extends AnyVal {
+    extension [Self <: LTV_](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLtv(value: Double): Self = StObject.set(x, "ltv", value.asInstanceOf[js.Any])
+      inline def setLtv(value: Double): Self = StObject.set(x, "ltv", value.asInstanceOf[js.Any])
     }
   }
   
@@ -411,21 +345,17 @@ object Metrics {
   }
   object MRRChurnRate_ {
     
-    @scala.inline
-    def apply(date: String, `mrr-churn-rate`: Double): MRRChurnRate_ = {
+    inline def apply(date: String, `mrr-churn-rate`: Double): MRRChurnRate_ = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
       __obj.updateDynamic("mrr-churn-rate")(`mrr-churn-rate`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MRRChurnRate_]
     }
     
-    @scala.inline
-    implicit class MRRChurnRate_MutableBuilder[Self <: MRRChurnRate_] (val x: Self) extends AnyVal {
+    extension [Self <: MRRChurnRate_](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMrr-churn-rate`(value: Double): Self = StObject.set(x, "mrr-churn-rate", value.asInstanceOf[js.Any])
+      inline def `setMrr-churn-rate`(value: Double): Self = StObject.set(x, "mrr-churn-rate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -447,8 +377,7 @@ object Metrics {
   }
   object MRR_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       date: String,
       mrr: Double,
       `mrr-churn`: Double,
@@ -466,29 +395,21 @@ object Metrics {
       __obj.asInstanceOf[MRR_]
     }
     
-    @scala.inline
-    implicit class MRR_MutableBuilder[Self <: MRR_] (val x: Self) extends AnyVal {
+    extension [Self <: MRR_](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMrr(value: Double): Self = StObject.set(x, "mrr", value.asInstanceOf[js.Any])
+      inline def setMrr(value: Double): Self = StObject.set(x, "mrr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMrr-churn`(value: Double): Self = StObject.set(x, "mrr-churn", value.asInstanceOf[js.Any])
+      inline def `setMrr-churn`(value: Double): Self = StObject.set(x, "mrr-churn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMrr-contraction`(value: Double): Self = StObject.set(x, "mrr-contraction", value.asInstanceOf[js.Any])
+      inline def `setMrr-contraction`(value: Double): Self = StObject.set(x, "mrr-contraction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMrr-expansion`(value: Double): Self = StObject.set(x, "mrr-expansion", value.asInstanceOf[js.Any])
+      inline def `setMrr-expansion`(value: Double): Self = StObject.set(x, "mrr-expansion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMrr-new-business`(value: Double): Self = StObject.set(x, "mrr-new-business", value.asInstanceOf[js.Any])
+      inline def `setMrr-new-business`(value: Double): Self = StObject.set(x, "mrr-new-business", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMrr-reactivation`(value: Double): Self = StObject.set(x, "mrr-reactivation", value.asInstanceOf[js.Any])
+      inline def `setMrr-reactivation`(value: Double): Self = StObject.set(x, "mrr-reactivation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -500,22 +421,18 @@ object Metrics {
   }
   object Params {
     
-    @scala.inline
-    def apply(`end-date`: String, `start-date`: String): Params = {
+    inline def apply(`end-date`: String, `start-date`: String): Params = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("end-date")(`end-date`.asInstanceOf[js.Any])
       __obj.updateDynamic("start-date")(`start-date`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params]
     }
     
-    @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+    extension [Self <: Params](x: Self) {
       
-      @scala.inline
-      def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     }
   }
   
@@ -531,34 +448,26 @@ object Metrics {
   }
   object ParamsNoInterval {
     
-    @scala.inline
-    def apply(`end-date`: String, `start-date`: String): ParamsNoInterval = {
+    inline def apply(`end-date`: String, `start-date`: String): ParamsNoInterval = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("end-date")(`end-date`.asInstanceOf[js.Any])
       __obj.updateDynamic("start-date")(`start-date`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParamsNoInterval]
     }
     
-    @scala.inline
-    implicit class ParamsNoIntervalMutableBuilder[Self <: ParamsNoInterval] (val x: Self) extends AnyVal {
+    extension [Self <: ParamsNoInterval](x: Self) {
       
-      @scala.inline
-      def `setEnd-date`(value: String): Self = StObject.set(x, "end-date", value.asInstanceOf[js.Any])
+      inline def `setEnd-date`(value: String): Self = StObject.set(x, "end-date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeo(value: String): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
+      inline def setGeo(value: String): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
+      inline def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
       
-      @scala.inline
-      def setPlans(value: String): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
+      inline def setPlans(value: String): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlansUndefined: Self = StObject.set(x, "plans", js.undefined)
+      inline def setPlansUndefined: Self = StObject.set(x, "plans", js.undefined)
       
-      @scala.inline
-      def `setStart-date`(value: String): Self = StObject.set(x, "start-date", value.asInstanceOf[js.Any])
+      inline def `setStart-date`(value: String): Self = StObject.set(x, "start-date", value.asInstanceOf[js.Any])
     }
   }
 }

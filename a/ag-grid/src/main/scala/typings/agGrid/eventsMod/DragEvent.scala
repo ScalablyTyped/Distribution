@@ -11,8 +11,7 @@ trait DragEvent
      with AgGridEvent
 object DragEvent {
   
-  @scala.inline
-  def apply(api: GridApi, columnApi: ColumnApi, `type`: String): DragEvent = {
+  inline def apply(api: GridApi, columnApi: ColumnApi, `type`: String): DragEvent = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragEvent]

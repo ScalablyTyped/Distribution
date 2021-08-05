@@ -34,31 +34,23 @@ trait IOdbcDsn extends StObject {
 }
 object IOdbcDsn {
   
-  @scala.inline
-  def apply(qDescription: String, qName: String): IOdbcDsn = {
+  inline def apply(qDescription: String, qName: String): IOdbcDsn = {
     val __obj = js.Dynamic.literal(qDescription = qDescription.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOdbcDsn]
   }
   
-  @scala.inline
-  implicit class IOdbcDsnMutableBuilder[Self <: IOdbcDsn] (val x: Self) extends AnyVal {
+  extension [Self <: IOdbcDsn](x: Self) {
     
-    @scala.inline
-    def setQBit32(value: Boolean): Self = StObject.set(x, "qBit32", value.asInstanceOf[js.Any])
+    inline def setQBit32(value: Boolean): Self = StObject.set(x, "qBit32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQBit32Undefined: Self = StObject.set(x, "qBit32", js.undefined)
+    inline def setQBit32Undefined: Self = StObject.set(x, "qBit32", js.undefined)
     
-    @scala.inline
-    def setQDescription(value: String): Self = StObject.set(x, "qDescription", value.asInstanceOf[js.Any])
+    inline def setQDescription(value: String): Self = StObject.set(x, "qDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUserOnly(value: Boolean): Self = StObject.set(x, "qUserOnly", value.asInstanceOf[js.Any])
+    inline def setQUserOnly(value: Boolean): Self = StObject.set(x, "qUserOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUserOnlyUndefined: Self = StObject.set(x, "qUserOnly", js.undefined)
+    inline def setQUserOnlyUndefined: Self = StObject.set(x, "qUserOnly", js.undefined)
   }
 }

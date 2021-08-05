@@ -12,19 +12,15 @@ trait YPadding extends StObject {
 }
 object YPadding {
   
-  @scala.inline
-  def apply(bottom: Double, top: Double): YPadding = {
+  inline def apply(bottom: Double, top: Double): YPadding = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[YPadding]
   }
   
-  @scala.inline
-  implicit class YPaddingMutableBuilder[Self <: YPadding] (val x: Self) extends AnyVal {
+  extension [Self <: YPadding](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

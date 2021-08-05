@@ -83,92 +83,64 @@ object globalization {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setGetCurrencyCode(value: () => String): Self = StObject.set(x, "getCurrencyCode", js.Any.fromFunction0(value))
+      inline def setGetCurrencyCode(value: () => String): Self = StObject.set(x, "getCurrencyCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrencyCodeUndefined: Self = StObject.set(x, "getCurrencyCode", js.undefined)
+      inline def setGetCurrencyCodeUndefined: Self = StObject.set(x, "getCurrencyCode", js.undefined)
       
-      @scala.inline
-      def setGetDateType(value: () => String): Self = StObject.set(x, "getDateType", js.Any.fromFunction0(value))
+      inline def setGetDateType(value: () => String): Self = StObject.set(x, "getDateType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDateTypeUndefined: Self = StObject.set(x, "getDateType", js.undefined)
+      inline def setGetDateTypeUndefined: Self = StObject.set(x, "getDateType", js.undefined)
       
-      @scala.inline
-      def setGetFormatLength(value: () => String): Self = StObject.set(x, "getFormatLength", js.Any.fromFunction0(value))
+      inline def setGetFormatLength(value: () => String): Self = StObject.set(x, "getFormatLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFormatLengthUndefined: Self = StObject.set(x, "getFormatLength", js.undefined)
+      inline def setGetFormatLengthUndefined: Self = StObject.set(x, "getFormatLength", js.undefined)
       
-      @scala.inline
-      def setGetItems(value: () => String): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
+      inline def setGetItems(value: () => String): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
+      inline def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
       
-      @scala.inline
-      def setGetNumberType(value: () => String): Self = StObject.set(x, "getNumberType", js.Any.fromFunction0(value))
+      inline def setGetNumberType(value: () => String): Self = StObject.set(x, "getNumberType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNumberTypeUndefined: Self = StObject.set(x, "getNumberType", js.undefined)
+      inline def setGetNumberTypeUndefined: Self = StObject.set(x, "getNumberType", js.undefined)
       
-      @scala.inline
-      def setGetSelector(value: () => String): Self = StObject.set(x, "getSelector", js.Any.fromFunction0(value))
+      inline def setGetSelector(value: () => String): Self = StObject.set(x, "getSelector", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSelectorUndefined: Self = StObject.set(x, "getSelector", js.undefined)
+      inline def setGetSelectorUndefined: Self = StObject.set(x, "getSelector", js.undefined)
       
-      @scala.inline
-      def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+      inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
-      @scala.inline
-      def setSetCurrencyCode(value: /* currencyCode */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCurrencyCode", js.Any.fromFunction1(value))
+      inline def setSetCurrencyCode(value: /* currencyCode */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCurrencyCode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCurrencyCodeUndefined: Self = StObject.set(x, "setCurrencyCode", js.undefined)
+      inline def setSetCurrencyCodeUndefined: Self = StObject.set(x, "setCurrencyCode", js.undefined)
       
-      @scala.inline
-      def setSetDateType(value: /* dateType */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDateType", js.Any.fromFunction1(value))
+      inline def setSetDateType(value: /* dateType */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDateType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDateTypeUndefined: Self = StObject.set(x, "setDateType", js.undefined)
+      inline def setSetDateTypeUndefined: Self = StObject.set(x, "setDateType", js.undefined)
       
-      @scala.inline
-      def setSetFormatLength(value: /* formatLength */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setFormatLength", js.Any.fromFunction1(value))
+      inline def setSetFormatLength(value: /* formatLength */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setFormatLength", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFormatLengthUndefined: Self = StObject.set(x, "setFormatLength", js.undefined)
+      inline def setSetFormatLengthUndefined: Self = StObject.set(x, "setFormatLength", js.undefined)
       
-      @scala.inline
-      def setSetItems(value: /* items */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
+      inline def setSetItems(value: /* items */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetItemsUndefined: Self = StObject.set(x, "setItems", js.undefined)
+      inline def setSetItemsUndefined: Self = StObject.set(x, "setItems", js.undefined)
       
-      @scala.inline
-      def setSetNumberType(value: /* numberType */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setNumberType", js.Any.fromFunction1(value))
+      inline def setSetNumberType(value: /* numberType */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setNumberType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetNumberTypeUndefined: Self = StObject.set(x, "setNumberType", js.undefined)
+      inline def setSetNumberTypeUndefined: Self = StObject.set(x, "setNumberType", js.undefined)
       
-      @scala.inline
-      def setSetSelector(value: /* selector */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setSelector", js.Any.fromFunction1(value))
+      inline def setSetSelector(value: /* selector */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setSelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSelectorUndefined: Self = StObject.set(x, "setSelector", js.undefined)
+      inline def setSetSelectorUndefined: Self = StObject.set(x, "setSelector", js.undefined)
     }
   }
   

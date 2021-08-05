@@ -21,7 +21,7 @@ trait OrderFields extends StObject {
   
   def Item(Index: js.Any): OrderField = js.native
   
-  @JSName("Outlook.OrderFields_typekey")
+  /* private */ @JSName("Outlook.OrderFields_typekey")
   var OutlookDotOrderFields_typekey: OrderFields = js.native
   
   val Parent: js.Any = js.native

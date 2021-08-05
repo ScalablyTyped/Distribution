@@ -13,19 +13,15 @@ trait SpatialManipulationUpdatedEventArgs extends StObject {
 }
 object SpatialManipulationUpdatedEventArgs {
   
-  @scala.inline
-  def apply(interactionSourceKind: js.Any, tryGetCumulativeDelta: js.Any): SpatialManipulationUpdatedEventArgs = {
+  inline def apply(interactionSourceKind: js.Any, tryGetCumulativeDelta: js.Any): SpatialManipulationUpdatedEventArgs = {
     val __obj = js.Dynamic.literal(interactionSourceKind = interactionSourceKind.asInstanceOf[js.Any], tryGetCumulativeDelta = tryGetCumulativeDelta.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialManipulationUpdatedEventArgs]
   }
   
-  @scala.inline
-  implicit class SpatialManipulationUpdatedEventArgsMutableBuilder[Self <: SpatialManipulationUpdatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialManipulationUpdatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
+    inline def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryGetCumulativeDelta(value: js.Any): Self = StObject.set(x, "tryGetCumulativeDelta", value.asInstanceOf[js.Any])
+    inline def setTryGetCumulativeDelta(value: js.Any): Self = StObject.set(x, "tryGetCumulativeDelta", value.asInstanceOf[js.Any])
   }
 }

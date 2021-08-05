@@ -15,22 +15,17 @@ trait Comparator extends StObject {
 }
 object Comparator {
   
-  @scala.inline
-  def apply(comparator: js.Any, filterVal: js.Any): Comparator = {
+  inline def apply(comparator: js.Any, filterVal: js.Any): Comparator = {
     val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], filterType = "TEXT", filterVal = filterVal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comparator]
   }
   
-  @scala.inline
-  implicit class ComparatorMutableBuilder[Self <: Comparator] (val x: Self) extends AnyVal {
+  extension [Self <: Comparator](x: Self) {
     
-    @scala.inline
-    def setComparator(value: js.Any): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+    inline def setComparator(value: js.Any): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterType(value: TEXT): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
+    inline def setFilterType(value: TEXT): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterVal(value: js.Any): Self = StObject.set(x, "filterVal", value.asInstanceOf[js.Any])
+    inline def setFilterVal(value: js.Any): Self = StObject.set(x, "filterVal", value.asInstanceOf[js.Any])
   }
 }

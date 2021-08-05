@@ -22,10 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[MethodName /* <: String */](): js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]]]
-  @scala.inline
-  def apply[MethodName /* <: String */](options: WithPaginationOptions[MethodName]): js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]]]
+  inline def apply[MethodName /* <: String */](): js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]]]
+  inline def apply[MethodName /* <: String */](options: WithPaginationOptions[MethodName]): js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]]]
   
   @JSImport("sequelize-cursor-pagination", JSImport.Namespace)
   @js.native
@@ -62,77 +60,54 @@ object mod {
     }
     object BasicPaginateOptions {
       
-      @scala.inline
-      def apply[T](): BasicPaginateOptions[T] = {
+      inline def apply[T](): BasicPaginateOptions[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BasicPaginateOptions[T]]
       }
       
-      @scala.inline
-      implicit class BasicPaginateOptionsMutableBuilder[Self <: BasicPaginateOptions[?], T] (val x: Self & BasicPaginateOptions[T]) extends AnyVal {
+      extension [Self <: BasicPaginateOptions[?], T](x: Self & BasicPaginateOptions[T]) {
         
-        @scala.inline
-        def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+        inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+        inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
         
-        @scala.inline
-        def setAttributes(value: FindOptionsAttributesArray | Exclude): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+        inline def setAttributes(value: FindOptionsAttributesArray | Exclude): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+        inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
         
-        @scala.inline
-        def setAttributesVarargs(value: (String | literal | (js.Tuple2[String | cast | fn | literal, String]) | fn | cast)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+        inline def setAttributesVarargs(value: (String | literal | (js.Tuple2[String | cast | fn | literal, String]) | fn | cast)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
         
-        @scala.inline
-        def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+        inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+        inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
         
-        @scala.inline
-        def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+        inline def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+        inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
         
-        @scala.inline
-        def setInclude(value: js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+        inline def setInclude(value: js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+        inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
         
-        @scala.inline
-        def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value :_*))
+        inline def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value :_*))
         
-        @scala.inline
-        def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+        inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+        inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
         
-        @scala.inline
-        def setPaginationField(value: String): Self = StObject.set(x, "paginationField", value.asInstanceOf[js.Any])
+        inline def setPaginationField(value: String): Self = StObject.set(x, "paginationField", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaginationFieldUndefined: Self = StObject.set(x, "paginationField", js.undefined)
+        inline def setPaginationFieldUndefined: Self = StObject.set(x, "paginationField", js.undefined)
         
-        @scala.inline
-        def setSubQuery(value: Boolean): Self = StObject.set(x, "subQuery", value.asInstanceOf[js.Any])
+        inline def setSubQuery(value: Boolean): Self = StObject.set(x, "subQuery", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubQueryUndefined: Self = StObject.set(x, "subQuery", js.undefined)
+        inline def setSubQueryUndefined: Self = StObject.set(x, "subQuery", js.undefined)
         
-        @scala.inline
-        def setWhere(value: WhereOptions[T] | where | fn | (js.Array[col | and | or | String])): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+        inline def setWhere(value: WhereOptions[T] | where | fn | (js.Array[col | and | or | String])): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+        inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
         
-        @scala.inline
-        def setWhereVarargs(value: (col | and | or | String)*): Self = StObject.set(x, "where", js.Array(value :_*))
+        inline def setWhereVarargs(value: (col | and | or | String)*): Self = StObject.set(x, "where", js.Array(value :_*))
       }
     }
     
@@ -148,32 +123,24 @@ object mod {
     }
     object Cursors {
       
-      @scala.inline
-      def apply(hasNext: Boolean, hasPrevious: Boolean): Cursors = {
+      inline def apply(hasNext: Boolean, hasPrevious: Boolean): Cursors = {
         val __obj = js.Dynamic.literal(hasNext = hasNext.asInstanceOf[js.Any], hasPrevious = hasPrevious.asInstanceOf[js.Any], after = null, before = null)
         __obj.asInstanceOf[Cursors]
       }
       
-      @scala.inline
-      implicit class CursorsMutableBuilder[Self <: Cursors] (val x: Self) extends AnyVal {
+      extension [Self <: Cursors](x: Self) {
         
-        @scala.inline
-        def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+        inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAfterNull: Self = StObject.set(x, "after", null)
+        inline def setAfterNull: Self = StObject.set(x, "after", null)
         
-        @scala.inline
-        def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+        inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBeforeNull: Self = StObject.set(x, "before", null)
+        inline def setBeforeNull: Self = StObject.set(x, "before", null)
         
-        @scala.inline
-        def setHasNext(value: Boolean): Self = StObject.set(x, "hasNext", value.asInstanceOf[js.Any])
+        inline def setHasNext(value: Boolean): Self = StObject.set(x, "hasNext", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHasPrevious(value: Boolean): Self = StObject.set(x, "hasPrevious", value.asInstanceOf[js.Any])
+        inline def setHasPrevious(value: Boolean): Self = StObject.set(x, "hasPrevious", value.asInstanceOf[js.Any])
       }
     }
     
@@ -185,20 +152,16 @@ object mod {
     }
     object PaginateInstOptions {
       
-      @scala.inline
-      def apply[T](): PaginateInstOptions[T] = {
+      inline def apply[T](): PaginateInstOptions[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PaginateInstOptions[T]]
       }
       
-      @scala.inline
-      implicit class PaginateInstOptionsMutableBuilder[Self <: PaginateInstOptions[?], T] (val x: Self & PaginateInstOptions[T]) extends AnyVal {
+      extension [Self <: PaginateInstOptions[?], T](x: Self & PaginateInstOptions[T]) {
         
-        @scala.inline
-        def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+        inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+        inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       }
     }
     
@@ -210,17 +173,14 @@ object mod {
     }
     object PaginateRawOptions {
       
-      @scala.inline
-      def apply[T](): PaginateRawOptions[T] = {
+      inline def apply[T](): PaginateRawOptions[T] = {
         val __obj = js.Dynamic.literal(raw = true)
         __obj.asInstanceOf[PaginateRawOptions[T]]
       }
       
-      @scala.inline
-      implicit class PaginateRawOptionsMutableBuilder[Self <: PaginateRawOptions[?], T] (val x: Self & PaginateRawOptions[T]) extends AnyVal {
+      extension [Self <: PaginateRawOptions[?], T](x: Self & PaginateRawOptions[T]) {
         
-        @scala.inline
-        def setRaw(value: `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+        inline def setRaw(value: `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       }
     }
     
@@ -235,26 +195,20 @@ object mod {
     }
     object WithPaginationOptions {
       
-      @scala.inline
-      def apply[MethodName /* <: String */](): WithPaginationOptions[MethodName] = {
+      inline def apply[MethodName /* <: String */](): WithPaginationOptions[MethodName] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[WithPaginationOptions[MethodName]]
       }
       
-      @scala.inline
-      implicit class WithPaginationOptionsMutableBuilder[Self <: WithPaginationOptions[?], MethodName /* <: String */] (val x: Self & WithPaginationOptions[MethodName]) extends AnyVal {
+      extension [Self <: WithPaginationOptions[?], MethodName /* <: String */](x: Self & WithPaginationOptions[MethodName]) {
         
-        @scala.inline
-        def setMethodName(value: MethodName): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+        inline def setMethodName(value: MethodName): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
+        inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
         
-        @scala.inline
-        def setPrimaryKeyField(value: String): Self = StObject.set(x, "primaryKeyField", value.asInstanceOf[js.Any])
+        inline def setPrimaryKeyField(value: String): Self = StObject.set(x, "primaryKeyField", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrimaryKeyFieldUndefined: Self = StObject.set(x, "primaryKeyField", js.undefined)
+        inline def setPrimaryKeyFieldUndefined: Self = StObject.set(x, "primaryKeyField", js.undefined)
       }
     }
   }

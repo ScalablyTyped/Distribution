@@ -16,31 +16,23 @@ trait TradePayArgs
 }
 object TradePayArgs {
   
-  @scala.inline
-  def apply(): TradePayArgs = {
+  inline def apply(): TradePayArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TradePayArgs]
   }
   
-  @scala.inline
-  implicit class TradePayArgsMutableBuilder[Self <: TradePayArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TradePayArgs](x: Self) {
     
-    @scala.inline
-    def setOrderStr(value: String): Self = StObject.set(x, "orderStr", value.asInstanceOf[js.Any])
+    inline def setOrderStr(value: String): Self = StObject.set(x, "orderStr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderStrUndefined: Self = StObject.set(x, "orderStr", js.undefined)
+    inline def setOrderStrUndefined: Self = StObject.set(x, "orderStr", js.undefined)
     
-    @scala.inline
-    def setPaymentUrl(value: String): Self = StObject.set(x, "paymentUrl", value.asInstanceOf[js.Any])
+    inline def setPaymentUrl(value: String): Self = StObject.set(x, "paymentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentUrlUndefined: Self = StObject.set(x, "paymentUrl", js.undefined)
+    inline def setPaymentUrlUndefined: Self = StObject.set(x, "paymentUrl", js.undefined)
     
-    @scala.inline
-    def setTradeNO(value: String): Self = StObject.set(x, "tradeNO", value.asInstanceOf[js.Any])
+    inline def setTradeNO(value: String): Self = StObject.set(x, "tradeNO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTradeNOUndefined: Self = StObject.set(x, "tradeNO", js.undefined)
+    inline def setTradeNOUndefined: Self = StObject.set(x, "tradeNO", js.undefined)
   }
 }

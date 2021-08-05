@@ -13,13 +13,13 @@ object manifestMod {
   class DeployManifestCommand protected () extends DeployCoreCommand {
     def this(namespace: INamespace) = this()
     
-    var getFileAndSizeAndHashForFile: js.Any = js.native
+    /* private */ var getFileAndSizeAndHashForFile: js.Any = js.native
     
-    var getFilesAndSizesAndHashesForGlobPattern: js.Any = js.native
+    /* private */ var getFilesAndSizesAndHashesForGlobPattern: js.Any = js.native
     
-    var getIntegrity: js.Any = js.native
+    /* private */ var getIntegrity: js.Any = js.native
     
-    var readFile: js.Any = js.native
+    /* private */ var readFile: js.Any = js.native
     
     def run(): js.Promise[Unit] = js.native
   }

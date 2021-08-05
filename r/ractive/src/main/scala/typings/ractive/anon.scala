@@ -159,32 +159,24 @@ object anon {
   }
   object Optional {
     
-    @scala.inline
-    def apply(): Optional = {
+    inline def apply(): Optional = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optional]
     }
     
-    @scala.inline
-    implicit class OptionalMutableBuilder[Self <: Optional] (val x: Self) extends AnyVal {
+    extension [Self <: Optional](x: Self) {
       
-      @scala.inline
-      def setOptional(value: js.Array[String]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: js.Array[String]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      @scala.inline
-      def setOptionalVarargs(value: String*): Self = StObject.set(x, "optional", js.Array(value :_*))
+      inline def setOptionalVarargs(value: String*): Self = StObject.set(x, "optional", js.Array(value :_*))
       
-      @scala.inline
-      def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
     }
   }
   
@@ -194,17 +186,14 @@ object anon {
   }
   object Teardown {
     
-    @scala.inline
-    def apply(teardown: () => Unit): Teardown = {
+    inline def apply(teardown: () => Unit): Teardown = {
       val __obj = js.Dynamic.literal(teardown = js.Any.fromFunction0(teardown))
       __obj.asInstanceOf[Teardown]
     }
     
-    @scala.inline
-    implicit class TeardownMutableBuilder[Self <: Teardown] (val x: Self) extends AnyVal {
+    extension [Self <: Teardown](x: Self) {
       
-      @scala.inline
-      def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
+      inline def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
     }
   }
   
@@ -222,32 +211,24 @@ object anon {
   }
   object TransitionOpts {
     
-    @scala.inline
-    def apply(): TransitionOpts = {
+    inline def apply(): TransitionOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransitionOpts]
     }
     
-    @scala.inline
-    implicit class TransitionOptsMutableBuilder[Self <: TransitionOpts] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionOpts](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double | slow | fast | String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double | slow | fast | String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     }
   }
 }

@@ -30,8 +30,7 @@ trait XContentProviderSupplier
 }
 object XContentProviderSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentProvider: XContentProvider,
     acquire: () => Unit,
     getContentProvider: () => XContentProvider,
@@ -42,13 +41,10 @@ object XContentProviderSupplier {
     __obj.asInstanceOf[XContentProviderSupplier]
   }
   
-  @scala.inline
-  implicit class XContentProviderSupplierMutableBuilder[Self <: XContentProviderSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XContentProviderSupplier](x: Self) {
     
-    @scala.inline
-    def setContentProvider(value: XContentProvider): Self = StObject.set(x, "ContentProvider", value.asInstanceOf[js.Any])
+    inline def setContentProvider(value: XContentProvider): Self = StObject.set(x, "ContentProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContentProvider(value: () => XContentProvider): Self = StObject.set(x, "getContentProvider", js.Any.fromFunction0(value))
+    inline def setGetContentProvider(value: () => XContentProvider): Self = StObject.set(x, "getContentProvider", js.Any.fromFunction0(value))
   }
 }

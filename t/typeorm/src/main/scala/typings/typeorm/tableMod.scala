@@ -164,7 +164,6 @@ object tableMod {
     /**
       * Creates table from a given entity metadata.
       */
-    @scala.inline
-    def create(entityMetadata: EntityMetadata, driver: Driver): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityMetadata.asInstanceOf[js.Any], driver.asInstanceOf[js.Any])).asInstanceOf[Table]
+    inline def create(entityMetadata: EntityMetadata, driver: Driver): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityMetadata.asInstanceOf[js.Any], driver.asInstanceOf[js.Any])).asInstanceOf[Table]
   }
 }

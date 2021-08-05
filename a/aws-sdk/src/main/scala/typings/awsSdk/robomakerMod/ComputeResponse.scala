@@ -13,19 +13,15 @@ trait ComputeResponse extends StObject {
 }
 object ComputeResponse {
   
-  @scala.inline
-  def apply(): ComputeResponse = {
+  inline def apply(): ComputeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComputeResponse]
   }
   
-  @scala.inline
-  implicit class ComputeResponseMutableBuilder[Self <: ComputeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ComputeResponse](x: Self) {
     
-    @scala.inline
-    def setSimulationUnitLimit(value: SimulationUnit): Self = StObject.set(x, "simulationUnitLimit", value.asInstanceOf[js.Any])
+    inline def setSimulationUnitLimit(value: SimulationUnit): Self = StObject.set(x, "simulationUnitLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimulationUnitLimitUndefined: Self = StObject.set(x, "simulationUnitLimit", js.undefined)
+    inline def setSimulationUnitLimitUndefined: Self = StObject.set(x, "simulationUnitLimit", js.undefined)
   }
 }

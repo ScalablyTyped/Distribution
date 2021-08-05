@@ -15,20 +15,16 @@ trait Base extends StObject {
 }
 object Base {
   
-  @scala.inline
-  def apply(CreatedAt: DateString, _underscore: Author): Base = {
+  inline def apply(CreatedAt: DateString, _underscore: Author): Base = {
     val __obj = js.Dynamic.literal(CreatedAt = CreatedAt.asInstanceOf[js.Any])
     __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
     __obj.asInstanceOf[Base]
   }
   
-  @scala.inline
-  implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+  extension [Self <: Base](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: DateString): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: DateString): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_underscore(value: Author): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+    inline def set_underscore(value: Author): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
   }
 }

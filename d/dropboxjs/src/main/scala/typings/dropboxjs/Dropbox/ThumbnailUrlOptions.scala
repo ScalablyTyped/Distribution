@@ -14,31 +14,23 @@ trait ThumbnailUrlOptions extends StObject {
 }
 object ThumbnailUrlOptions {
   
-  @scala.inline
-  def apply(): ThumbnailUrlOptions = {
+  inline def apply(): ThumbnailUrlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThumbnailUrlOptions]
   }
   
-  @scala.inline
-  implicit class ThumbnailUrlOptionsMutableBuilder[Self <: ThumbnailUrlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ThumbnailUrlOptions](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setPng(value: Boolean): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
+    inline def setPng(value: Boolean): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPngUndefined: Self = StObject.set(x, "png", js.undefined)
+    inline def setPngUndefined: Self = StObject.set(x, "png", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

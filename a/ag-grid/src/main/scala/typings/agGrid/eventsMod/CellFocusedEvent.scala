@@ -23,8 +23,7 @@ trait CellFocusedEvent
 }
 object CellFocusedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: GridApi,
     column: Column,
     columnApi: ColumnApi,
@@ -39,22 +38,16 @@ object CellFocusedEvent {
     __obj.asInstanceOf[CellFocusedEvent]
   }
   
-  @scala.inline
-  implicit class CellFocusedEventMutableBuilder[Self <: CellFocusedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CellFocusedEvent](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloating(value: String): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
+    inline def setFloating(value: String): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceBrowserFocus(value: Boolean): Self = StObject.set(x, "forceBrowserFocus", value.asInstanceOf[js.Any])
+    inline def setForceBrowserFocus(value: Boolean): Self = StObject.set(x, "forceBrowserFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowPinned(value: String): Self = StObject.set(x, "rowPinned", value.asInstanceOf[js.Any])
+    inline def setRowPinned(value: String): Self = StObject.set(x, "rowPinned", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait InfoCalendarOptions
 }
 object InfoCalendarOptions {
   
-  @scala.inline
-  def apply(): InfoCalendarOptions = {
+  inline def apply(): InfoCalendarOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InfoCalendarOptions]
   }
   
-  @scala.inline
-  implicit class InfoCalendarOptionsMutableBuilder[Self <: InfoCalendarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InfoCalendarOptions](x: Self) {
     
-    @scala.inline
-    def setOutputCalendar(value: CalendarSystem): Self = StObject.set(x, "outputCalendar", value.asInstanceOf[js.Any])
+    inline def setOutputCalendar(value: CalendarSystem): Self = StObject.set(x, "outputCalendar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputCalendarUndefined: Self = StObject.set(x, "outputCalendar", js.undefined)
+    inline def setOutputCalendarUndefined: Self = StObject.set(x, "outputCalendar", js.undefined)
   }
 }

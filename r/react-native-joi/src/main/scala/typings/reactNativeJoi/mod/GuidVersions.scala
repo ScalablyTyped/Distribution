@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GuidVersions extends StObject
 object GuidVersions {
   
-  @scala.inline
-  def uuidv1: typings.reactNativeJoi.reactNativeJoiStrings.uuidv1 = "uuidv1".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv1]
+  inline def uuidv1: typings.reactNativeJoi.reactNativeJoiStrings.uuidv1 = "uuidv1".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv1]
   
-  @scala.inline
-  def uuidv2: typings.reactNativeJoi.reactNativeJoiStrings.uuidv2 = "uuidv2".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv2]
+  inline def uuidv2: typings.reactNativeJoi.reactNativeJoiStrings.uuidv2 = "uuidv2".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv2]
   
-  @scala.inline
-  def uuidv3: typings.reactNativeJoi.reactNativeJoiStrings.uuidv3 = "uuidv3".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv3]
+  inline def uuidv3: typings.reactNativeJoi.reactNativeJoiStrings.uuidv3 = "uuidv3".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv3]
   
-  @scala.inline
-  def uuidv4: typings.reactNativeJoi.reactNativeJoiStrings.uuidv4 = "uuidv4".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv4]
+  inline def uuidv4: typings.reactNativeJoi.reactNativeJoiStrings.uuidv4 = "uuidv4".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv4]
   
-  @scala.inline
-  def uuidv5: typings.reactNativeJoi.reactNativeJoiStrings.uuidv5 = "uuidv5".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv5]
+  inline def uuidv5: typings.reactNativeJoi.reactNativeJoiStrings.uuidv5 = "uuidv5".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv5]
 }

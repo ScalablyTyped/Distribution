@@ -42,8 +42,7 @@ trait AggregateContactManager extends StObject {
 }
 object AggregateContactManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     findRawContactsAsync: Contact => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
     tryLinkContactsAsync: (Contact, Contact) => IPromiseWithIAsyncOperation[Contact],
     trySetPreferredSourceForPictureAsync: (Contact, Contact) => IPromiseWithIAsyncOperation[Boolean],
@@ -53,19 +52,14 @@ object AggregateContactManager {
     __obj.asInstanceOf[AggregateContactManager]
   }
   
-  @scala.inline
-  implicit class AggregateContactManagerMutableBuilder[Self <: AggregateContactManager] (val x: Self) extends AnyVal {
+  extension [Self <: AggregateContactManager](x: Self) {
     
-    @scala.inline
-    def setFindRawContactsAsync(value: Contact => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findRawContactsAsync", js.Any.fromFunction1(value))
+    inline def setFindRawContactsAsync(value: Contact => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findRawContactsAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTryLinkContactsAsync(value: (Contact, Contact) => IPromiseWithIAsyncOperation[Contact]): Self = StObject.set(x, "tryLinkContactsAsync", js.Any.fromFunction2(value))
+    inline def setTryLinkContactsAsync(value: (Contact, Contact) => IPromiseWithIAsyncOperation[Contact]): Self = StObject.set(x, "tryLinkContactsAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTrySetPreferredSourceForPictureAsync(value: (Contact, Contact) => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "trySetPreferredSourceForPictureAsync", js.Any.fromFunction2(value))
+    inline def setTrySetPreferredSourceForPictureAsync(value: (Contact, Contact) => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "trySetPreferredSourceForPictureAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnlinkRawContactAsync(value: Contact => IPromiseWithIAsyncAction): Self = StObject.set(x, "unlinkRawContactAsync", js.Any.fromFunction1(value))
+    inline def setUnlinkRawContactAsync(value: Contact => IPromiseWithIAsyncAction): Self = StObject.set(x, "unlinkRawContactAsync", js.Any.fromFunction1(value))
   }
 }

@@ -23,31 +23,23 @@ trait EventDetailsErrorItem extends StObject {
 }
 object EventDetailsErrorItem {
   
-  @scala.inline
-  def apply(): EventDetailsErrorItem = {
+  inline def apply(): EventDetailsErrorItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventDetailsErrorItem]
   }
   
-  @scala.inline
-  implicit class EventDetailsErrorItemMutableBuilder[Self <: EventDetailsErrorItem] (val x: Self) extends AnyVal {
+  extension [Self <: EventDetailsErrorItem](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setErrorName(value: String): Self = StObject.set(x, "errorName", value.asInstanceOf[js.Any])
+    inline def setErrorName(value: String): Self = StObject.set(x, "errorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorNameUndefined: Self = StObject.set(x, "errorName", js.undefined)
+    inline def setErrorNameUndefined: Self = StObject.set(x, "errorName", js.undefined)
     
-    @scala.inline
-    def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
+    inline def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventArnUndefined: Self = StObject.set(x, "eventArn", js.undefined)
+    inline def setEventArnUndefined: Self = StObject.set(x, "eventArn", js.undefined)
   }
 }

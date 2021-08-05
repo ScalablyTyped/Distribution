@@ -21,19 +21,14 @@ object KeyRule {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CASCADE: `0` = 0.asInstanceOf[`0`]
+    inline def CASCADE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def NO_ACTION: `3` = 3.asInstanceOf[`3`]
+    inline def NO_ACTION: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def RESTRICT: `1` = 1.asInstanceOf[`1`]
+    inline def RESTRICT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SET_DEFAULT: `4` = 4.asInstanceOf[`4`]
+    inline def SET_DEFAULT: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def SET_NULL: `2` = 2.asInstanceOf[`2`]
+    inline def SET_NULL: `2` = 2.asInstanceOf[`2`]
   }
 }

@@ -13,22 +13,17 @@ trait SchemaListPerfSampleSeriesResponse extends StObject {
 }
 object SchemaListPerfSampleSeriesResponse {
   
-  @scala.inline
-  def apply(): SchemaListPerfSampleSeriesResponse = {
+  inline def apply(): SchemaListPerfSampleSeriesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListPerfSampleSeriesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListPerfSampleSeriesResponseMutableBuilder[Self <: SchemaListPerfSampleSeriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListPerfSampleSeriesResponse](x: Self) {
     
-    @scala.inline
-    def setPerfSampleSeries(value: js.Array[SchemaPerfSampleSeries]): Self = StObject.set(x, "perfSampleSeries", value.asInstanceOf[js.Any])
+    inline def setPerfSampleSeries(value: js.Array[SchemaPerfSampleSeries]): Self = StObject.set(x, "perfSampleSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerfSampleSeriesUndefined: Self = StObject.set(x, "perfSampleSeries", js.undefined)
+    inline def setPerfSampleSeriesUndefined: Self = StObject.set(x, "perfSampleSeries", js.undefined)
     
-    @scala.inline
-    def setPerfSampleSeriesVarargs(value: SchemaPerfSampleSeries*): Self = StObject.set(x, "perfSampleSeries", js.Array(value :_*))
+    inline def setPerfSampleSeriesVarargs(value: SchemaPerfSampleSeries*): Self = StObject.set(x, "perfSampleSeries", js.Array(value :_*))
   }
 }

@@ -18,55 +18,36 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def entries(obj: js.Object): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
-  @scala.inline
-  def entries[T](obj: StringDictionary[T]): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key[T]]]
-  @scala.inline
-  def entries[T](obj: ArrayLike[T]): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key[T]]]
+  inline def entries(obj: js.Object): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
+  inline def entries[T](obj: StringDictionary[T]): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key[T]]]
+  inline def entries[T](obj: ArrayLike[T]): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key[T]]]
   
-  @scala.inline
-  def keys(obj: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def keys(obj: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def map(obj: js.Object): Map_[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any]).asInstanceOf[Map_[js.Any]]
-  @scala.inline
-  def map[T](): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[Map_[T]]
-  @scala.inline
-  def map[T](array: js.Array[T]): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any]).asInstanceOf[Map_[T]]
-  @scala.inline
-  def map[T](
+  inline def map(obj: js.Object): Map_[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any]).asInstanceOf[Map_[js.Any]]
+  inline def map[T](): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[Map_[T]]
+  inline def map[T](array: js.Array[T]): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any]).asInstanceOf[Map_[T]]
+  inline def map[T](
     array: js.Array[T],
     key: js.Function3[/* value */ T, /* i */ js.UndefOr[Double], /* array */ js.UndefOr[js.Array[T]], String]
   ): Map_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Map_[T]]
-  @scala.inline
-  def map[T](d3Map: Map_[T]): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(d3Map.asInstanceOf[js.Any]).asInstanceOf[Map_[T]]
-  @scala.inline
-  def map[T](obj: NumberDictionary[T]): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any]).asInstanceOf[Map_[T]]
-  @scala.inline
-  def map[T](obj: StringDictionary[T]): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any]).asInstanceOf[Map_[T]]
+  inline def map[T](d3Map: Map_[T]): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(d3Map.asInstanceOf[js.Any]).asInstanceOf[Map_[T]]
+  inline def map[T](obj: NumberDictionary[T]): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any]).asInstanceOf[Map_[T]]
+  inline def map[T](obj: StringDictionary[T]): Map_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any]).asInstanceOf[Map_[T]]
   
-  @scala.inline
-  def nest[Datum, RollupType](): Nest_[Datum, RollupType] = ^.asInstanceOf[js.Dynamic].applyDynamic("nest")().asInstanceOf[Nest_[Datum, RollupType]]
+  inline def nest[Datum, RollupType](): Nest_[Datum, RollupType] = ^.asInstanceOf[js.Dynamic].applyDynamic("nest")().asInstanceOf[Nest_[Datum, RollupType]]
   
-  @scala.inline
-  def set(): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")().asInstanceOf[Set_]
-  @scala.inline
-  def set(array: js.Array[String | Stringifiable]): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(array.asInstanceOf[js.Any]).asInstanceOf[Set_]
-  @scala.inline
-  def set(d3Set: Set_): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(d3Set.asInstanceOf[js.Any]).asInstanceOf[Set_]
-  @scala.inline
-  def set[T](
+  inline def set(): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")().asInstanceOf[Set_]
+  inline def set(array: js.Array[String | Stringifiable]): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(array.asInstanceOf[js.Any]).asInstanceOf[Set_]
+  inline def set(d3Set: Set_): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(d3Set.asInstanceOf[js.Any]).asInstanceOf[Set_]
+  inline def set[T](
     array: js.Array[T],
     key: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], String]
   ): Set_ = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(array.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Set_]
   
-  @scala.inline
-  def values(obj: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def values[T](obj: StringDictionary[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def values[T](obj: ArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def values(obj: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def values[T](obj: StringDictionary[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def values[T](obj: ArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   trait Map_[T] extends StObject {
     
@@ -147,8 +128,7 @@ object mod {
   }
   object Map_ {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       clear: () => Unit,
       each: js.Function3[/* value */ T, /* key */ String, /* map */ Map_[T], Unit] => Unit,
       empty: () => Boolean,
@@ -165,41 +145,29 @@ object mod {
       __obj.asInstanceOf[Map_[T]]
     }
     
-    @scala.inline
-    implicit class Map_MutableBuilder[Self <: Map_[?], T] (val x: Self & Map_[T]) extends AnyVal {
+    extension [Self <: Map_[?], T](x: Self & Map_[T]) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEach(value: js.Function3[/* value */ T, /* key */ String, /* map */ Map_[T], Unit] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
+      inline def setEach(value: js.Function3[/* value */ T, /* key */ String, /* map */ Map_[T], Unit] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmpty(value: () => Boolean): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
+      inline def setEmpty(value: () => Boolean): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEntries(value: () => js.Array[Key[T]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
+      inline def setEntries(value: () => js.Array[Key[T]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: String => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeys(value: () => js.Array[String]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+      inline def setKeys(value: () => js.Array[String]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: String => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: String => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, T) => Map_[T]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, T) => Map_[T]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValues(value: () => js.Array[T]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+      inline def setValues(value: () => js.Array[T]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
     }
   }
   
@@ -352,8 +320,7 @@ object mod {
   }
   object Nest_ {
     
-    @scala.inline
-    def apply[Datum, RollupType](
+    inline def apply[Datum, RollupType](
       entries: js.Array[Datum] => js.Array[KeyValue[RollupType]],
       key: js.Function1[/* datum */ Datum, String] => Nest_[Datum, RollupType],
       map: js.Array[Datum] => Map_[js.Any],
@@ -367,29 +334,21 @@ object mod {
       __obj.asInstanceOf[Nest_[Datum, RollupType]]
     }
     
-    @scala.inline
-    implicit class Nest_MutableBuilder[Self <: Nest_[?, ?], Datum, RollupType] (val x: Self & (Nest_[Datum, RollupType])) extends AnyVal {
+    extension [Self <: Nest_[?, ?], Datum, RollupType](x: Self & (Nest_[Datum, RollupType])) {
       
-      @scala.inline
-      def setEntries(value: js.Array[Datum] => js.Array[KeyValue[RollupType]]): Self = StObject.set(x, "entries", js.Any.fromFunction1(value))
+      inline def setEntries(value: js.Array[Datum] => js.Array[KeyValue[RollupType]]): Self = StObject.set(x, "entries", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKey(value: js.Function1[/* datum */ Datum, String] => Nest_[Datum, RollupType]): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+      inline def setKey(value: js.Function1[/* datum */ Datum, String] => Nest_[Datum, RollupType]): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(value: js.Array[Datum] => Map_[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Array[Datum] => Map_[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setObject(value: js.Array[Datum] => StringDictionary[js.Any]): Self = StObject.set(x, "object", js.Any.fromFunction1(value))
+      inline def setObject(value: js.Array[Datum] => StringDictionary[js.Any]): Self = StObject.set(x, "object", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRollup(value: js.Function1[/* values */ js.Array[Datum], RollupType] => Nest_[Datum, RollupType]): Self = StObject.set(x, "rollup", js.Any.fromFunction1(value))
+      inline def setRollup(value: js.Function1[/* values */ js.Array[Datum], RollupType] => Nest_[Datum, RollupType]): Self = StObject.set(x, "rollup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSortKeys(value: js.Function2[/* a */ String, /* b */ String, Double] => Nest_[Datum, RollupType]): Self = StObject.set(x, "sortKeys", js.Any.fromFunction1(value))
+      inline def setSortKeys(value: js.Function2[/* a */ String, /* b */ String, Double] => Nest_[Datum, RollupType]): Self = StObject.set(x, "sortKeys", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSortValues(value: js.Function2[/* a */ Datum, /* b */ Datum, Double] => Nest_[Datum, RollupType]): Self = StObject.set(x, "sortValues", js.Any.fromFunction1(value))
+      inline def setSortValues(value: js.Function2[/* a */ Datum, /* b */ Datum, Double] => Nest_[Datum, RollupType]): Self = StObject.set(x, "sortValues", js.Any.fromFunction1(value))
     }
   }
   
@@ -403,8 +362,7 @@ object mod {
        with Map_[(NestedMap[Datum, RollupType]) | js.Array[Datum] | RollupType]
   object NestedMap {
     
-    @scala.inline
-    def apply[Datum, RollupType](
+    inline def apply[Datum, RollupType](
       clear: () => Unit,
       each: js.Function3[
           (NestedMap[Datum, RollupType]) | js.Array[Datum] | RollupType, 
@@ -432,8 +390,7 @@ object mod {
        with /* key */ StringDictionary[(NestedObject[Datum, RollupType]) | js.Array[Datum] | RollupType]
   object NestedObject {
     
-    @scala.inline
-    def apply[Datum, RollupType](): NestedObject[Datum, RollupType] = {
+    inline def apply[Datum, RollupType](): NestedObject[Datum, RollupType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NestedObject[Datum, RollupType]]
     }

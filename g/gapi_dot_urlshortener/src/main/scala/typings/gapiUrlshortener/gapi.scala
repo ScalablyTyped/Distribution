@@ -33,8 +33,7 @@ object gapi {
       }
       object url {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           get: Fields => HttpRequest[GoogleApiUrlShortenerUrlResource],
           insert: RequestBody => HttpRequest[GoogleApiUrlShortenerUrlResource],
           list: Projection => HttpRequest[GoogleApiUrlShortenerUrlResource]
@@ -43,17 +42,13 @@ object gapi {
           __obj.asInstanceOf[url]
         }
         
-        @scala.inline
-        implicit class urlMutableBuilder[Self <: url] (val x: Self) extends AnyVal {
+        extension [Self <: url](x: Self) {
           
-          @scala.inline
-          def setGet(value: Fields => HttpRequest[GoogleApiUrlShortenerUrlResource]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+          inline def setGet(value: Fields => HttpRequest[GoogleApiUrlShortenerUrlResource]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setInsert(value: RequestBody => HttpRequest[GoogleApiUrlShortenerUrlResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+          inline def setInsert(value: RequestBody => HttpRequest[GoogleApiUrlShortenerUrlResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setList(value: Projection => HttpRequest[GoogleApiUrlShortenerUrlResource]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+          inline def setList(value: Projection => HttpRequest[GoogleApiUrlShortenerUrlResource]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
       }
     }

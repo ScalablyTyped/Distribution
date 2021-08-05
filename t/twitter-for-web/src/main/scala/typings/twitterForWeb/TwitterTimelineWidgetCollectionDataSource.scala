@@ -15,19 +15,15 @@ trait TwitterTimelineWidgetCollectionDataSource
 }
 object TwitterTimelineWidgetCollectionDataSource {
   
-  @scala.inline
-  def apply(id: String): TwitterTimelineWidgetCollectionDataSource = {
+  inline def apply(id: String): TwitterTimelineWidgetCollectionDataSource = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = "collection")
     __obj.asInstanceOf[TwitterTimelineWidgetCollectionDataSource]
   }
   
-  @scala.inline
-  implicit class TwitterTimelineWidgetCollectionDataSourceMutableBuilder[Self <: TwitterTimelineWidgetCollectionDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: TwitterTimelineWidgetCollectionDataSource](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceType(value: collection): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: collection): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait DescribeMatchmakingConfigurationsOutput extends StObject {
 }
 object DescribeMatchmakingConfigurationsOutput {
   
-  @scala.inline
-  def apply(): DescribeMatchmakingConfigurationsOutput = {
+  inline def apply(): DescribeMatchmakingConfigurationsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMatchmakingConfigurationsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeMatchmakingConfigurationsOutputMutableBuilder[Self <: DescribeMatchmakingConfigurationsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMatchmakingConfigurationsOutput](x: Self) {
     
-    @scala.inline
-    def setConfigurations(value: MatchmakingConfigurationList): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
+    inline def setConfigurations(value: MatchmakingConfigurationList): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
+    inline def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
-    @scala.inline
-    def setConfigurationsVarargs(value: MatchmakingConfiguration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: MatchmakingConfiguration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

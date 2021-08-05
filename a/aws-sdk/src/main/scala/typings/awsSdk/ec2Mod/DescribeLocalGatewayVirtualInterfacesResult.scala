@@ -18,28 +18,21 @@ trait DescribeLocalGatewayVirtualInterfacesResult extends StObject {
 }
 object DescribeLocalGatewayVirtualInterfacesResult {
   
-  @scala.inline
-  def apply(): DescribeLocalGatewayVirtualInterfacesResult = {
+  inline def apply(): DescribeLocalGatewayVirtualInterfacesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLocalGatewayVirtualInterfacesResult]
   }
   
-  @scala.inline
-  implicit class DescribeLocalGatewayVirtualInterfacesResultMutableBuilder[Self <: DescribeLocalGatewayVirtualInterfacesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLocalGatewayVirtualInterfacesResult](x: Self) {
     
-    @scala.inline
-    def setLocalGatewayVirtualInterfaces(value: LocalGatewayVirtualInterfaceSet): Self = StObject.set(x, "LocalGatewayVirtualInterfaces", value.asInstanceOf[js.Any])
+    inline def setLocalGatewayVirtualInterfaces(value: LocalGatewayVirtualInterfaceSet): Self = StObject.set(x, "LocalGatewayVirtualInterfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalGatewayVirtualInterfacesUndefined: Self = StObject.set(x, "LocalGatewayVirtualInterfaces", js.undefined)
+    inline def setLocalGatewayVirtualInterfacesUndefined: Self = StObject.set(x, "LocalGatewayVirtualInterfaces", js.undefined)
     
-    @scala.inline
-    def setLocalGatewayVirtualInterfacesVarargs(value: LocalGatewayVirtualInterface*): Self = StObject.set(x, "LocalGatewayVirtualInterfaces", js.Array(value :_*))
+    inline def setLocalGatewayVirtualInterfacesVarargs(value: LocalGatewayVirtualInterface*): Self = StObject.set(x, "LocalGatewayVirtualInterfaces", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -17,28 +17,21 @@ trait FirstDerivativeElevationGrid extends StObject {
 }
 object FirstDerivativeElevationGrid {
   
-  @scala.inline
-  def apply(): FirstDerivativeElevationGrid = {
+  inline def apply(): FirstDerivativeElevationGrid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirstDerivativeElevationGrid]
   }
   
-  @scala.inline
-  implicit class FirstDerivativeElevationGridMutableBuilder[Self <: FirstDerivativeElevationGrid] (val x: Self) extends AnyVal {
+  extension [Self <: FirstDerivativeElevationGrid](x: Self) {
     
-    @scala.inline
-    def setAltitudeMultiplier(value: Double): Self = StObject.set(x, "altitudeMultiplier", value.asInstanceOf[js.Any])
+    inline def setAltitudeMultiplier(value: Double): Self = StObject.set(x, "altitudeMultiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeMultiplierUndefined: Self = StObject.set(x, "altitudeMultiplier", js.undefined)
+    inline def setAltitudeMultiplierUndefined: Self = StObject.set(x, "altitudeMultiplier", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

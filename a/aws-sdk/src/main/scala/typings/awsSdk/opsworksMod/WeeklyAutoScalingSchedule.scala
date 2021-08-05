@@ -43,55 +43,39 @@ trait WeeklyAutoScalingSchedule extends StObject {
 }
 object WeeklyAutoScalingSchedule {
   
-  @scala.inline
-  def apply(): WeeklyAutoScalingSchedule = {
+  inline def apply(): WeeklyAutoScalingSchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeeklyAutoScalingSchedule]
   }
   
-  @scala.inline
-  implicit class WeeklyAutoScalingScheduleMutableBuilder[Self <: WeeklyAutoScalingSchedule] (val x: Self) extends AnyVal {
+  extension [Self <: WeeklyAutoScalingSchedule](x: Self) {
     
-    @scala.inline
-    def setFriday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Friday", value.asInstanceOf[js.Any])
+    inline def setFriday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Friday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFridayUndefined: Self = StObject.set(x, "Friday", js.undefined)
+    inline def setFridayUndefined: Self = StObject.set(x, "Friday", js.undefined)
     
-    @scala.inline
-    def setMonday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Monday", value.asInstanceOf[js.Any])
+    inline def setMonday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Monday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMondayUndefined: Self = StObject.set(x, "Monday", js.undefined)
+    inline def setMondayUndefined: Self = StObject.set(x, "Monday", js.undefined)
     
-    @scala.inline
-    def setSaturday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Saturday", value.asInstanceOf[js.Any])
+    inline def setSaturday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Saturday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaturdayUndefined: Self = StObject.set(x, "Saturday", js.undefined)
+    inline def setSaturdayUndefined: Self = StObject.set(x, "Saturday", js.undefined)
     
-    @scala.inline
-    def setSunday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Sunday", value.asInstanceOf[js.Any])
+    inline def setSunday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Sunday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSundayUndefined: Self = StObject.set(x, "Sunday", js.undefined)
+    inline def setSundayUndefined: Self = StObject.set(x, "Sunday", js.undefined)
     
-    @scala.inline
-    def setThursday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Thursday", value.asInstanceOf[js.Any])
+    inline def setThursday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Thursday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThursdayUndefined: Self = StObject.set(x, "Thursday", js.undefined)
+    inline def setThursdayUndefined: Self = StObject.set(x, "Thursday", js.undefined)
     
-    @scala.inline
-    def setTuesday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Tuesday", value.asInstanceOf[js.Any])
+    inline def setTuesday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Tuesday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuesdayUndefined: Self = StObject.set(x, "Tuesday", js.undefined)
+    inline def setTuesdayUndefined: Self = StObject.set(x, "Tuesday", js.undefined)
     
-    @scala.inline
-    def setWednesday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Wednesday", value.asInstanceOf[js.Any])
+    inline def setWednesday(value: DailyAutoScalingSchedule): Self = StObject.set(x, "Wednesday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWednesdayUndefined: Self = StObject.set(x, "Wednesday", js.undefined)
+    inline def setWednesdayUndefined: Self = StObject.set(x, "Wednesday", js.undefined)
   }
 }

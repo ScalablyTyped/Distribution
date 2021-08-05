@@ -13,17 +13,14 @@ object typesInvalidAttributeNameMod {
   }
   object InvalidAttributeName {
     
-    @scala.inline
-    def apply(): InvalidAttributeName = {
+    inline def apply(): InvalidAttributeName = {
       val __obj = js.Dynamic.literal(name = "InvalidAttributeName")
       __obj.asInstanceOf[InvalidAttributeName]
     }
     
-    @scala.inline
-    implicit class InvalidAttributeNameMutableBuilder[Self <: InvalidAttributeName] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidAttributeName](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidAttributeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidAttributeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

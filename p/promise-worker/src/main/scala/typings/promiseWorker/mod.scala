@@ -47,17 +47,14 @@ object mod {
   }
   object PromiseWorker {
     
-    @scala.inline
-    def apply(postMessage: js.Any => js.Promise[js.Any]): PromiseWorker = {
+    inline def apply(postMessage: js.Any => js.Promise[js.Any]): PromiseWorker = {
       val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction1(postMessage))
       __obj.asInstanceOf[PromiseWorker]
     }
     
-    @scala.inline
-    implicit class PromiseWorkerMutableBuilder[Self <: PromiseWorker] (val x: Self) extends AnyVal {
+    extension [Self <: PromiseWorker](x: Self) {
       
-      @scala.inline
-      def setPostMessage(value: js.Any => js.Promise[js.Any]): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
+      inline def setPostMessage(value: js.Any => js.Promise[js.Any]): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
     }
   }
 }

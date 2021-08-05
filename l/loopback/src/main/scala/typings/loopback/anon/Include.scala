@@ -12,31 +12,23 @@ trait Include extends StObject {
 }
 object Include {
   
-  @scala.inline
-  def apply(): Include = {
+  inline def apply(): Include = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Include]
   }
   
-  @scala.inline
-  implicit class IncludeMutableBuilder[Self <: Include] (val x: Self) extends AnyVal {
+  extension [Self <: Include](x: Self) {
     
-    @scala.inline
-    def setFields(value: String | js.Any | js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String | js.Any | js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: String | js.Any | js.Array[js.Any]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: String | js.Any | js.Array[js.Any]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: js.Any*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: js.Any*): Self = StObject.set(x, "include", js.Array(value :_*))
   }
 }

@@ -14,25 +14,19 @@ trait GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange extends
 }
 object GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRangeMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

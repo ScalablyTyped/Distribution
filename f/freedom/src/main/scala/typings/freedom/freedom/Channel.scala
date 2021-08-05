@@ -13,8 +13,7 @@ trait Channel
 }
 object Channel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     emit: (/* eventType */ String, /* value */ js.UndefOr[js.Any]) => Unit,
     on: (/* eventType */ String, /* handler */ js.Function1[js.Any, Unit]) => Unit
@@ -23,10 +22,8 @@ object Channel {
     __obj.asInstanceOf[Channel]
   }
   
-  @scala.inline
-  implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
+  extension [Self <: Channel](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

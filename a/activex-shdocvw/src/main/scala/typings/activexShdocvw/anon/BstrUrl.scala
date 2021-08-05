@@ -18,28 +18,21 @@ trait BstrUrl extends StObject {
 }
 object BstrUrl {
   
-  @scala.inline
-  def apply(Cancel: Boolean, bstrUrl: String, bstrUrlContext: String, dwFlags: Double, ppDisp: js.Any): BstrUrl = {
+  inline def apply(Cancel: Boolean, bstrUrl: String, bstrUrlContext: String, dwFlags: Double, ppDisp: js.Any): BstrUrl = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], bstrUrl = bstrUrl.asInstanceOf[js.Any], bstrUrlContext = bstrUrlContext.asInstanceOf[js.Any], dwFlags = dwFlags.asInstanceOf[js.Any], ppDisp = ppDisp.asInstanceOf[js.Any])
     __obj.asInstanceOf[BstrUrl]
   }
   
-  @scala.inline
-  implicit class BstrUrlMutableBuilder[Self <: BstrUrl] (val x: Self) extends AnyVal {
+  extension [Self <: BstrUrl](x: Self) {
     
-    @scala.inline
-    def setBstrUrl(value: String): Self = StObject.set(x, "bstrUrl", value.asInstanceOf[js.Any])
+    inline def setBstrUrl(value: String): Self = StObject.set(x, "bstrUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBstrUrlContext(value: String): Self = StObject.set(x, "bstrUrlContext", value.asInstanceOf[js.Any])
+    inline def setBstrUrlContext(value: String): Self = StObject.set(x, "bstrUrlContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDwFlags(value: Double): Self = StObject.set(x, "dwFlags", value.asInstanceOf[js.Any])
+    inline def setDwFlags(value: Double): Self = StObject.set(x, "dwFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPpDisp(value: js.Any): Self = StObject.set(x, "ppDisp", value.asInstanceOf[js.Any])
+    inline def setPpDisp(value: js.Any): Self = StObject.set(x, "ppDisp", value.asInstanceOf[js.Any])
   }
 }

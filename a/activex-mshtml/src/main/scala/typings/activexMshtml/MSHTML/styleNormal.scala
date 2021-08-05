@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleNormal extends StObject
 object styleNormal {
   
-  @scala.inline
-  def styleNormalNormal: `0` = 0.asInstanceOf[`0`]
+  inline def styleNormalNormal: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleNormal_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleNormal_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

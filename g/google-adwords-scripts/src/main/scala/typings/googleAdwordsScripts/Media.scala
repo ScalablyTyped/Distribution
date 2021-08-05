@@ -28,8 +28,7 @@ trait Media extends StObject {
 }
 object Media {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDimensions: () => MediaDimensions,
     getFileSize: () => Double,
     getId: () => Double,
@@ -45,37 +44,26 @@ object Media {
     __obj.asInstanceOf[Media]
   }
   
-  @scala.inline
-  implicit class MediaMutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
+  extension [Self <: Media](x: Self) {
     
-    @scala.inline
-    def setGetDimensions(value: () => MediaDimensions): Self = StObject.set(x, "getDimensions", js.Any.fromFunction0(value))
+    inline def setGetDimensions(value: () => MediaDimensions): Self = StObject.set(x, "getDimensions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFileSize(value: () => Double): Self = StObject.set(x, "getFileSize", js.Any.fromFunction0(value))
+    inline def setGetFileSize(value: () => Double): Self = StObject.set(x, "getFileSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMimeType(value: () => String): Self = StObject.set(x, "getMimeType", js.Any.fromFunction0(value))
+    inline def setGetMimeType(value: () => String): Self = StObject.set(x, "getMimeType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReferenceId(value: () => String): Self = StObject.set(x, "getReferenceId", js.Any.fromFunction0(value))
+    inline def setGetReferenceId(value: () => String): Self = StObject.set(x, "getReferenceId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSourceUrl(value: () => String): Self = StObject.set(x, "getSourceUrl", js.Any.fromFunction0(value))
+    inline def setGetSourceUrl(value: () => String): Self = StObject.set(x, "getSourceUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => MediaType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => MediaType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUrls(value: () => MediaUrls): Self = StObject.set(x, "getUrls", js.Any.fromFunction0(value))
+    inline def setGetUrls(value: () => MediaUrls): Self = StObject.set(x, "getUrls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetYouTubeVideoId(value: () => String | Unit): Self = StObject.set(x, "getYouTubeVideoId", js.Any.fromFunction0(value))
+    inline def setGetYouTubeVideoId(value: () => String | Unit): Self = StObject.set(x, "getYouTubeVideoId", js.Any.fromFunction0(value))
   }
 }

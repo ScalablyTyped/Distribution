@@ -8,8 +8,7 @@ object dateFnsFormatISODurationMod {
   
   object default {
     
-    @scala.inline
-    def apply(duration: typings.dateFns.mod.Duration): String = ^.asInstanceOf[js.Dynamic].apply(duration.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(duration: typings.dateFns.mod.Duration): String = ^.asInstanceOf[js.Dynamic].apply(duration.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("date-fns/formatISODuration", JSImport.Default)
     @js.native

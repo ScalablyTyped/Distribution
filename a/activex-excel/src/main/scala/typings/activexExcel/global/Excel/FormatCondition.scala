@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.FormatCondition")
 @js.native
-class FormatCondition protected ()
+/* private */ class FormatCondition ()
   extends StObject
      with typings.activexExcel.Excel.FormatCondition

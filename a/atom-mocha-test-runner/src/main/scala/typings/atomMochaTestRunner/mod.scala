@@ -32,47 +32,34 @@ object mod extends Shortcut {
   }
   object AtomMochaOptions {
     
-    @scala.inline
-    def apply(): AtomMochaOptions = {
+    inline def apply(): AtomMochaOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AtomMochaOptions]
     }
     
-    @scala.inline
-    implicit class AtomMochaOptionsMutableBuilder[Self <: AtomMochaOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AtomMochaOptions](x: Self) {
       
-      @scala.inline
-      def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setGlobalAtom(value: Boolean): Self = StObject.set(x, "globalAtom", value.asInstanceOf[js.Any])
+      inline def setGlobalAtom(value: Boolean): Self = StObject.set(x, "globalAtom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalAtomUndefined: Self = StObject.set(x, "globalAtom", js.undefined)
+      inline def setGlobalAtomUndefined: Self = StObject.set(x, "globalAtom", js.undefined)
       
-      @scala.inline
-      def setHtmlTitle(value: String): Self = StObject.set(x, "htmlTitle", value.asInstanceOf[js.Any])
+      inline def setHtmlTitle(value: String): Self = StObject.set(x, "htmlTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlTitleUndefined: Self = StObject.set(x, "htmlTitle", js.undefined)
+      inline def setHtmlTitleUndefined: Self = StObject.set(x, "htmlTitle", js.undefined)
       
-      @scala.inline
-      def setReporter(value: String): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+      inline def setReporter(value: String): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+      inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
       
-      @scala.inline
-      def setTestSuffixes(value: js.Array[String]): Self = StObject.set(x, "testSuffixes", value.asInstanceOf[js.Any])
+      inline def setTestSuffixes(value: js.Array[String]): Self = StObject.set(x, "testSuffixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestSuffixesUndefined: Self = StObject.set(x, "testSuffixes", js.undefined)
+      inline def setTestSuffixesUndefined: Self = StObject.set(x, "testSuffixes", js.undefined)
       
-      @scala.inline
-      def setTestSuffixesVarargs(value: String*): Self = StObject.set(x, "testSuffixes", js.Array(value :_*))
+      inline def setTestSuffixesVarargs(value: String*): Self = StObject.set(x, "testSuffixes", js.Array(value :_*))
     }
   }
   

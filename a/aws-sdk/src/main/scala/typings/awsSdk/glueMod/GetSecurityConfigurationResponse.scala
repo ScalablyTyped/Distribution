@@ -13,19 +13,15 @@ trait GetSecurityConfigurationResponse extends StObject {
 }
 object GetSecurityConfigurationResponse {
   
-  @scala.inline
-  def apply(): GetSecurityConfigurationResponse = {
+  inline def apply(): GetSecurityConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSecurityConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class GetSecurityConfigurationResponseMutableBuilder[Self <: GetSecurityConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSecurityConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setSecurityConfiguration(value: SecurityConfiguration): Self = StObject.set(x, "SecurityConfiguration", value.asInstanceOf[js.Any])
+    inline def setSecurityConfiguration(value: SecurityConfiguration): Self = StObject.set(x, "SecurityConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityConfigurationUndefined: Self = StObject.set(x, "SecurityConfiguration", js.undefined)
+    inline def setSecurityConfigurationUndefined: Self = StObject.set(x, "SecurityConfiguration", js.undefined)
   }
 }

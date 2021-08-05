@@ -14,14 +14,10 @@ object ioUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): DateSaved = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsInfoForJSON")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[DateSaved]
+  inline def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): DateSaved = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsInfoForJSON")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[DateSaved]
   
-  @scala.inline
-  def toArrayBuffer(buf: js.Array[Buffer]): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
-  @scala.inline
-  def toArrayBuffer(buf: Buffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def toArrayBuffer(buf: js.Array[Buffer]): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def toArrayBuffer(buf: Buffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
-  @scala.inline
-  def toBuffer(ab: ArrayBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ab.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def toBuffer(ab: ArrayBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ab.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

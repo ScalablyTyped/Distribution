@@ -11,6 +11,5 @@ object flatmapfirstMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V, V2](src: typings.baconjs.observableMod.default[V], f: SpawnerOrObservable[V, V2]): typings.baconjs.observableMod.default[V2] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[V2]]
+  inline def default[V, V2](src: typings.baconjs.observableMod.default[V], f: SpawnerOrObservable[V, V2]): typings.baconjs.observableMod.default[V2] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[V2]]
 }

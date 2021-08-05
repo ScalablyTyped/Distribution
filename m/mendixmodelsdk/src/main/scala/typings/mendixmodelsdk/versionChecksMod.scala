@@ -204,8 +204,7 @@ object versionChecksMod {
     @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "Version.memoisMap")
     @js.native
     def memoisMap: js.Any = js.native
-    @scala.inline
-    def memoisMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoisMap")(x.asInstanceOf[js.Any])
+    inline def memoisMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoisMap")(x.asInstanceOf[js.Any])
     
     /**
       * Parses and @returns the given string as a Version object.
@@ -213,8 +212,7 @@ object versionChecksMod {
       * This function is memoised to keep memory and time consumption low,
       * given that only a handful of versions exist at any time anyway.
       */
-    @scala.inline
-    def parse(versionString: String): Version = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(versionString.asInstanceOf[js.Any]).asInstanceOf[Version]
+    inline def parse(versionString: String): Version = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(versionString.asInstanceOf[js.Any]).asInstanceOf[Version]
   }
   
   @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "VersionInfo")
@@ -224,17 +222,13 @@ object versionChecksMod {
     def checkSameModelVersion(model: IAbstractModel, otherModel: IAbstractModel): Unit = js.native
   }
   
-  @scala.inline
-  def contains(range: IVersionRange, version: Version): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(range.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def contains(range: IVersionRange, version: Version): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(range.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def createInVersionCheck(model: IAbstractModel, structureTypeName: String, versionRange: IVersionRange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createInVersionCheck")(model.asInstanceOf[js.Any], structureTypeName.asInstanceOf[js.Any], versionRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createInVersionCheck(model: IAbstractModel, structureTypeName: String, versionRange: IVersionRange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createInVersionCheck")(model.asInstanceOf[js.Any], structureTypeName.asInstanceOf[js.Any], versionRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def isAtLeast(versionString: String, model: IAbstractModel): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAtLeast")(versionString.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isAtLeast(versionString: String, model: IAbstractModel): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAtLeast")(versionString.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parseAsNormalizedVersion(versionString: String): Version = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAsNormalizedVersion")(versionString.asInstanceOf[js.Any]).asInstanceOf[Version]
+  inline def parseAsNormalizedVersion(versionString: String): Version = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAsNormalizedVersion")(versionString.asInstanceOf[js.Any]).asInstanceOf[Version]
   
   trait ILifeCycle extends StObject {
     
@@ -250,50 +244,36 @@ object versionChecksMod {
   }
   object ILifeCycle {
     
-    @scala.inline
-    def apply(): ILifeCycle = {
+    inline def apply(): ILifeCycle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILifeCycle]
     }
     
-    @scala.inline
-    implicit class ILifeCycleMutableBuilder[Self <: ILifeCycle] (val x: Self) extends AnyVal {
+    extension [Self <: ILifeCycle](x: Self) {
       
-      @scala.inline
-      def setDeleted(value: String): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+      inline def setDeleted(value: String): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+      inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
       
-      @scala.inline
-      def setDeletionMessage(value: String): Self = StObject.set(x, "deletionMessage", value.asInstanceOf[js.Any])
+      inline def setDeletionMessage(value: String): Self = StObject.set(x, "deletionMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletionMessageNull: Self = StObject.set(x, "deletionMessage", null)
+      inline def setDeletionMessageNull: Self = StObject.set(x, "deletionMessage", null)
       
-      @scala.inline
-      def setDeletionMessageUndefined: Self = StObject.set(x, "deletionMessage", js.undefined)
+      inline def setDeletionMessageUndefined: Self = StObject.set(x, "deletionMessage", js.undefined)
       
-      @scala.inline
-      def setDeprecated(value: String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      inline def setDeprecated(value: String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+      inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
       
-      @scala.inline
-      def setDeprecationMessage(value: String): Self = StObject.set(x, "deprecationMessage", value.asInstanceOf[js.Any])
+      inline def setDeprecationMessage(value: String): Self = StObject.set(x, "deprecationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecationMessageNull: Self = StObject.set(x, "deprecationMessage", null)
+      inline def setDeprecationMessageNull: Self = StObject.set(x, "deprecationMessage", null)
       
-      @scala.inline
-      def setDeprecationMessageUndefined: Self = StObject.set(x, "deprecationMessage", js.undefined)
+      inline def setDeprecationMessageUndefined: Self = StObject.set(x, "deprecationMessage", js.undefined)
       
-      @scala.inline
-      def setIntroduced(value: String): Self = StObject.set(x, "introduced", value.asInstanceOf[js.Any])
+      inline def setIntroduced(value: String): Self = StObject.set(x, "introduced", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntroducedUndefined: Self = StObject.set(x, "introduced", js.undefined)
+      inline def setIntroducedUndefined: Self = StObject.set(x, "introduced", js.undefined)
     }
   }
   
@@ -306,26 +286,20 @@ object versionChecksMod {
   }
   object IModifierValueHistory {
     
-    @scala.inline
-    def apply(currentValue: Boolean): IModifierValueHistory = {
+    inline def apply(currentValue: Boolean): IModifierValueHistory = {
       val __obj = js.Dynamic.literal(currentValue = currentValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[IModifierValueHistory]
     }
     
-    @scala.inline
-    implicit class IModifierValueHistoryMutableBuilder[Self <: IModifierValueHistory] (val x: Self) extends AnyVal {
+    extension [Self <: IModifierValueHistory](x: Self) {
       
-      @scala.inline
-      def setChangedIn(value: js.Array[String]): Self = StObject.set(x, "changedIn", value.asInstanceOf[js.Any])
+      inline def setChangedIn(value: js.Array[String]): Self = StObject.set(x, "changedIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedInUndefined: Self = StObject.set(x, "changedIn", js.undefined)
+      inline def setChangedInUndefined: Self = StObject.set(x, "changedIn", js.undefined)
       
-      @scala.inline
-      def setChangedInVarargs(value: String*): Self = StObject.set(x, "changedIn", js.Array(value :_*))
+      inline def setChangedInVarargs(value: String*): Self = StObject.set(x, "changedIn", js.Array(value :_*))
       
-      @scala.inline
-      def setCurrentValue(value: Boolean): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
+      inline def setCurrentValue(value: Boolean): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -339,26 +313,20 @@ object versionChecksMod {
   }
   object IPropertyVersionInfo {
     
-    @scala.inline
-    def apply(): IPropertyVersionInfo = {
+    inline def apply(): IPropertyVersionInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPropertyVersionInfo]
     }
     
-    @scala.inline
-    implicit class IPropertyVersionInfoMutableBuilder[Self <: IPropertyVersionInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IPropertyVersionInfo](x: Self) {
       
-      @scala.inline
-      def setPublic(value: IModifierValueHistory): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: IModifierValueHistory): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
       
-      @scala.inline
-      def setRequired(value: IModifierValueHistory): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: IModifierValueHistory): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     }
   }
   
@@ -374,32 +342,24 @@ object versionChecksMod {
   }
   object IStructureVersionInfo {
     
-    @scala.inline
-    def apply(): IStructureVersionInfo = {
+    inline def apply(): IStructureVersionInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStructureVersionInfo]
     }
     
-    @scala.inline
-    implicit class IStructureVersionInfoMutableBuilder[Self <: IStructureVersionInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IStructureVersionInfo](x: Self) {
       
-      @scala.inline
-      def setExperimental(value: IModifierValueHistory): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+      inline def setExperimental(value: IModifierValueHistory): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
+      inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
       
-      @scala.inline
-      def setProperties(value: StringDictionary[IPropertyVersionInfo]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[IPropertyVersionInfo]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setPublic(value: IModifierValueHistory): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: IModifierValueHistory): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
     }
   }
   
@@ -411,26 +371,20 @@ object versionChecksMod {
   }
   object IVersionRange {
     
-    @scala.inline
-    def apply(): IVersionRange = {
+    inline def apply(): IVersionRange = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IVersionRange]
     }
     
-    @scala.inline
-    implicit class IVersionRangeMutableBuilder[Self <: IVersionRange] (val x: Self) extends AnyVal {
+    extension [Self <: IVersionRange](x: Self) {
       
-      @scala.inline
-      def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
 }

@@ -31,8 +31,7 @@ trait UpgradeInfo
 }
 object UpgradeInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -53,37 +52,26 @@ object UpgradeInfo {
     __obj.asInstanceOf[UpgradeInfo]
   }
   
-  @scala.inline
-  implicit class UpgradeInfoMutableBuilder[Self <: UpgradeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: UpgradeInfo](x: Self) {
     
-    @scala.inline
-    def setGet_errorFile(value: () => String): Self = StObject.set(x, "get_errorFile", js.Any.fromFunction0(value))
+    inline def setGet_errorFile(value: () => String): Self = StObject.set(x, "get_errorFile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_errors(value: () => Double): Self = StObject.set(x, "get_errors", js.Any.fromFunction0(value))
+    inline def setGet_errors(value: () => Double): Self = StObject.set(x, "get_errors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_lastUpdated(value: () => Date): Self = StObject.set(x, "get_lastUpdated", js.Any.fromFunction0(value))
+    inline def setGet_lastUpdated(value: () => Date): Self = StObject.set(x, "get_lastUpdated", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_logFile(value: () => String): Self = StObject.set(x, "get_logFile", js.Any.fromFunction0(value))
+    inline def setGet_logFile(value: () => String): Self = StObject.set(x, "get_logFile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_requestDate(value: () => Date): Self = StObject.set(x, "get_requestDate", js.Any.fromFunction0(value))
+    inline def setGet_requestDate(value: () => Date): Self = StObject.set(x, "get_requestDate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_retryCount(value: () => Double): Self = StObject.set(x, "get_retryCount", js.Any.fromFunction0(value))
+    inline def setGet_retryCount(value: () => Double): Self = StObject.set(x, "get_retryCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_startTime(value: () => Date): Self = StObject.set(x, "get_startTime", js.Any.fromFunction0(value))
+    inline def setGet_startTime(value: () => Date): Self = StObject.set(x, "get_startTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_status(value: () => UpgradeStatus): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
+    inline def setGet_status(value: () => UpgradeStatus): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_upgradeType(value: () => UpgradeType): Self = StObject.set(x, "get_upgradeType", js.Any.fromFunction0(value))
+    inline def setGet_upgradeType(value: () => UpgradeType): Self = StObject.set(x, "get_upgradeType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_warnings(value: () => Double): Self = StObject.set(x, "get_warnings", js.Any.fromFunction0(value))
+    inline def setGet_warnings(value: () => Double): Self = StObject.set(x, "get_warnings", js.Any.fromFunction0(value))
   }
 }

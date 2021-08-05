@@ -18,19 +18,15 @@ trait Authorization extends StObject {
 }
 object Authorization {
   
-  @scala.inline
-  def apply(CdnIdentifierSecret: string, SecretsRoleArn: string): Authorization = {
+  inline def apply(CdnIdentifierSecret: string, SecretsRoleArn: string): Authorization = {
     val __obj = js.Dynamic.literal(CdnIdentifierSecret = CdnIdentifierSecret.asInstanceOf[js.Any], SecretsRoleArn = SecretsRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Authorization]
   }
   
-  @scala.inline
-  implicit class AuthorizationMutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
+  extension [Self <: Authorization](x: Self) {
     
-    @scala.inline
-    def setCdnIdentifierSecret(value: string): Self = StObject.set(x, "CdnIdentifierSecret", value.asInstanceOf[js.Any])
+    inline def setCdnIdentifierSecret(value: string): Self = StObject.set(x, "CdnIdentifierSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretsRoleArn(value: string): Self = StObject.set(x, "SecretsRoleArn", value.asInstanceOf[js.Any])
+    inline def setSecretsRoleArn(value: string): Self = StObject.set(x, "SecretsRoleArn", value.asInstanceOf[js.Any])
   }
 }

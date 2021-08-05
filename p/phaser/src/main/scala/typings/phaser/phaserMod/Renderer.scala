@@ -45,8 +45,7 @@ object Renderer {
       * 
       * If the browser doesn't support a blend mode, it will default to the normal `source-over` blend mode.
       */
-    @scala.inline
-    def GetBlendModes(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetBlendModes")().asInstanceOf[js.Array[js.Any]]
+    inline def GetBlendModes(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetBlendModes")().asInstanceOf[js.Array[js.Any]]
     
     /**
       * Takes a reference to the Canvas Renderer, a Canvas Rendering Context, a Game Object, a Camera and a parent matrix
@@ -67,15 +66,13 @@ object Renderer {
       * @param camera The Camera that is rendering the Game Object.
       * @param parentMatrix A parent transform matrix to apply to the Game Object before rendering.
       */
-    @scala.inline
-    def SetTransform(
+    inline def SetTransform(
       renderer: typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer,
       ctx: CanvasRenderingContext2D,
       src: GameObject,
       camera: Camera
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTransform")(renderer.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], src.asInstanceOf[js.Any], camera.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def SetTransform(
+    inline def SetTransform(
       renderer: typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer,
       ctx: CanvasRenderingContext2D,
       src: GameObject,
@@ -98,8 +95,7 @@ object Renderer {
       * @param sourceCanvas The canvas to take a snapshot of.
       * @param config The snapshot configuration object.
       */
-    @scala.inline
-    def Canvas(sourceCanvas: HTMLCanvasElement, config: SnapshotState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Canvas")(sourceCanvas.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Canvas(sourceCanvas: HTMLCanvasElement, config: SnapshotState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Canvas")(sourceCanvas.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Takes a snapshot of an area from the current frame displayed by a WebGL canvas.
@@ -109,8 +105,7 @@ object Renderer {
       * @param sourceCanvas The canvas to take a snapshot of.
       * @param config The snapshot configuration object.
       */
-    @scala.inline
-    def WebGL(sourceCanvas: HTMLCanvasElement, config: SnapshotState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("WebGL")(sourceCanvas.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def WebGL(sourceCanvas: HTMLCanvasElement, config: SnapshotState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("WebGL")(sourceCanvas.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object WebGL {
@@ -1618,15 +1613,13 @@ object Renderer {
         * @param attributes Array of attributes
         * @param glContext WebGLContext used for check types
         */
-      @scala.inline
-      def getComponentCount(attributes: js.Array[js.Any], glContext: WebGLRenderingContext): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponentCount")(attributes.asInstanceOf[js.Any], glContext.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def getComponentCount(attributes: js.Array[js.Any], glContext: WebGLRenderingContext): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponentCount")(attributes.asInstanceOf[js.Any], glContext.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Unpacks a Uint24 RGB into an array of floats of ranges of 0.0 and 1.0
         * @param rgb RGB packed as a Uint24
         */
-      @scala.inline
-      def getFloatsFromUintRGB(rgb: Double): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloatsFromUintRGB")(rgb.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+      inline def getFloatsFromUintRGB(rgb: Double): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloatsFromUintRGB")(rgb.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
       
       /**
         * Packs a Uint24, representing RGB components, with a Float32, representing
@@ -1634,8 +1627,7 @@ object Renderer {
         * @param rgb Uint24 representing RGB components
         * @param a Float32 representing Alpha component
         */
-      @scala.inline
-      def getTintAppendFloatAlpha(rgb: Double, a: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTintAppendFloatAlpha")(rgb.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def getTintAppendFloatAlpha(rgb: Double, a: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTintAppendFloatAlpha")(rgb.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Packs a Uint24, representing RGB components, with a Float32, representing
@@ -1644,8 +1636,7 @@ object Renderer {
         * @param rgb Uint24 representing RGB components
         * @param a Float32 representing Alpha component
         */
-      @scala.inline
-      def getTintAppendFloatAlphaAndSwap(rgb: Double, a: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTintAppendFloatAlphaAndSwap")(rgb.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def getTintAppendFloatAlphaAndSwap(rgb: Double, a: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTintAppendFloatAlphaAndSwap")(rgb.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Packs four floats on a range from 0.0 to 1.0 into a single Uint32
@@ -1654,8 +1645,7 @@ object Renderer {
         * @param b Blue component in a range from 0.0 to 1.0
         * @param a Alpha component in a range from 0.0 to 1.0
         */
-      @scala.inline
-      def getTintFromFloats(r: Double, g: Double, b: Double, a: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTintFromFloats")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def getTintFromFloats(r: Double, g: Double, b: Double, a: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTintFromFloats")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Double]
     }
     
     /**

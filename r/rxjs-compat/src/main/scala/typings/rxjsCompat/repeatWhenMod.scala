@@ -10,8 +10,7 @@ object repeatWhenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def repeatWhen[T](
+  inline def repeatWhen[T](
     notifier: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* notifications */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any

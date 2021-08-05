@@ -28,40 +28,29 @@ trait ListAnalysesResponse extends StObject {
 }
 object ListAnalysesResponse {
   
-  @scala.inline
-  def apply(): ListAnalysesResponse = {
+  inline def apply(): ListAnalysesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAnalysesResponse]
   }
   
-  @scala.inline
-  implicit class ListAnalysesResponseMutableBuilder[Self <: ListAnalysesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAnalysesResponse](x: Self) {
     
-    @scala.inline
-    def setAnalysisSummaryList(value: AnalysisSummaryList): Self = StObject.set(x, "AnalysisSummaryList", value.asInstanceOf[js.Any])
+    inline def setAnalysisSummaryList(value: AnalysisSummaryList): Self = StObject.set(x, "AnalysisSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisSummaryListUndefined: Self = StObject.set(x, "AnalysisSummaryList", js.undefined)
+    inline def setAnalysisSummaryListUndefined: Self = StObject.set(x, "AnalysisSummaryList", js.undefined)
     
-    @scala.inline
-    def setAnalysisSummaryListVarargs(value: AnalysisSummary*): Self = StObject.set(x, "AnalysisSummaryList", js.Array(value :_*))
+    inline def setAnalysisSummaryListVarargs(value: AnalysisSummary*): Self = StObject.set(x, "AnalysisSummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

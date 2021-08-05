@@ -15,19 +15,15 @@ trait YTickConfiguration
 }
 object YTickConfiguration {
   
-  @scala.inline
-  def apply(): YTickConfiguration = {
+  inline def apply(): YTickConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[YTickConfiguration]
   }
   
-  @scala.inline
-  implicit class YTickConfigurationMutableBuilder[Self <: YTickConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: YTickConfiguration](x: Self) {
     
-    @scala.inline
-    def setFormat(value: /* x */ Double => String | Double): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormat(value: /* x */ Double => String | Double): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

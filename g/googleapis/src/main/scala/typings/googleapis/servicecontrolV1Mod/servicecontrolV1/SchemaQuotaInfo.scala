@@ -46,37 +46,27 @@ trait SchemaQuotaInfo extends StObject {
 }
 object SchemaQuotaInfo {
   
-  @scala.inline
-  def apply(): SchemaQuotaInfo = {
+  inline def apply(): SchemaQuotaInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQuotaInfo]
   }
   
-  @scala.inline
-  implicit class SchemaQuotaInfoMutableBuilder[Self <: SchemaQuotaInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQuotaInfo](x: Self) {
     
-    @scala.inline
-    def setLimitExceeded(value: js.Array[String]): Self = StObject.set(x, "limitExceeded", value.asInstanceOf[js.Any])
+    inline def setLimitExceeded(value: js.Array[String]): Self = StObject.set(x, "limitExceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitExceededUndefined: Self = StObject.set(x, "limitExceeded", js.undefined)
+    inline def setLimitExceededUndefined: Self = StObject.set(x, "limitExceeded", js.undefined)
     
-    @scala.inline
-    def setLimitExceededVarargs(value: String*): Self = StObject.set(x, "limitExceeded", js.Array(value :_*))
+    inline def setLimitExceededVarargs(value: String*): Self = StObject.set(x, "limitExceeded", js.Array(value :_*))
     
-    @scala.inline
-    def setQuotaConsumed(value: StringDictionary[Double]): Self = StObject.set(x, "quotaConsumed", value.asInstanceOf[js.Any])
+    inline def setQuotaConsumed(value: StringDictionary[Double]): Self = StObject.set(x, "quotaConsumed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaConsumedUndefined: Self = StObject.set(x, "quotaConsumed", js.undefined)
+    inline def setQuotaConsumedUndefined: Self = StObject.set(x, "quotaConsumed", js.undefined)
     
-    @scala.inline
-    def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = StObject.set(x, "quotaMetrics", value.asInstanceOf[js.Any])
+    inline def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = StObject.set(x, "quotaMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaMetricsUndefined: Self = StObject.set(x, "quotaMetrics", js.undefined)
+    inline def setQuotaMetricsUndefined: Self = StObject.set(x, "quotaMetrics", js.undefined)
     
-    @scala.inline
-    def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = StObject.set(x, "quotaMetrics", js.Array(value :_*))
+    inline def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = StObject.set(x, "quotaMetrics", js.Array(value :_*))
   }
 }

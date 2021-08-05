@@ -13,16 +13,13 @@ trait ProtectedAccessResumedEventArgs extends StObject {
 }
 object ProtectedAccessResumedEventArgs {
   
-  @scala.inline
-  def apply(identities: IVectorView[String]): ProtectedAccessResumedEventArgs = {
+  inline def apply(identities: IVectorView[String]): ProtectedAccessResumedEventArgs = {
     val __obj = js.Dynamic.literal(identities = identities.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtectedAccessResumedEventArgs]
   }
   
-  @scala.inline
-  implicit class ProtectedAccessResumedEventArgsMutableBuilder[Self <: ProtectedAccessResumedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectedAccessResumedEventArgs](x: Self) {
     
-    @scala.inline
-    def setIdentities(value: IVectorView[String]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
+    inline def setIdentities(value: IVectorView[String]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
   }
 }

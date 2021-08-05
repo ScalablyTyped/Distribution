@@ -16,8 +16,8 @@ trait DERAbstractTime
   extends StObject
      with ASN1Object {
   
-  @JSName("formatDate")
-  /* private */ def formatDate_gen(dateObject: Date, `type`: gen, withMillis: Boolean): String = js.native
+  /* private */ @JSName("formatDate")
+  def formatDate_gen(dateObject: Date, `type`: gen, withMillis: Boolean): String = js.native
   /**
     * format date string by Data object
     * @param type 'utc' or 'gen'
@@ -25,8 +25,8 @@ trait DERAbstractTime
     * @description
     * 'withMillis' flag is supported from asn1 1.0.6.
     */
-  @JSName("formatDate")
-  /* private */ def formatDate_utc(dateObject: Date, `type`: utc, withMillis: Boolean): String = js.native
+  /* private */ @JSName("formatDate")
+  def formatDate_utc(dateObject: Date, `type`: utc, withMillis: Boolean): String = js.native
   
   /**
     * get string value of this string object

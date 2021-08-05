@@ -46,55 +46,39 @@ trait UpsertOptionsreturningfal extends StObject {
 }
 object UpsertOptionsreturningfal {
   
-  @scala.inline
-  def apply(returning: js.UndefOr[Boolean] & js.UndefOr[`false`]): UpsertOptionsreturningfal = {
+  inline def apply(returning: js.UndefOr[Boolean] & js.UndefOr[`false`]): UpsertOptionsreturningfal = {
     val __obj = js.Dynamic.literal(returning = returning.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpsertOptionsreturningfal]
   }
   
-  @scala.inline
-  implicit class UpsertOptionsreturningfalMutableBuilder[Self <: UpsertOptionsreturningfal] (val x: Self) extends AnyVal {
+  extension [Self <: UpsertOptionsreturningfal](x: Self) {
     
-    @scala.inline
-    def setBenchmark(value: Boolean): Self = StObject.set(x, "benchmark", value.asInstanceOf[js.Any])
+    inline def setBenchmark(value: Boolean): Self = StObject.set(x, "benchmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBenchmarkUndefined: Self = StObject.set(x, "benchmark", js.undefined)
+    inline def setBenchmarkUndefined: Self = StObject.set(x, "benchmark", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
-    @scala.inline
-    def setReturning(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "returning", value.asInstanceOf[js.Any])
+    inline def setReturning(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "returning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchPath(value: String): Self = StObject.set(x, "searchPath", value.asInstanceOf[js.Any])
+    inline def setSearchPath(value: String): Self = StObject.set(x, "searchPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchPathUndefined: Self = StObject.set(x, "searchPath", js.undefined)
+    inline def setSearchPathUndefined: Self = StObject.set(x, "searchPath", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
     
-    @scala.inline
-    def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

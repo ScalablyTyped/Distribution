@@ -29,6 +29,5 @@ object disconnectMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasPrintIpfsIsDaemonAddressTimeout: Address): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasPrintIpfsIsDaemonAddressTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasPrintIpfsIsDaemonAddressTimeout: Address): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasPrintIpfsIsDaemonAddressTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

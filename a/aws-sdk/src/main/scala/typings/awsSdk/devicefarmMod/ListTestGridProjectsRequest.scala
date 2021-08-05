@@ -18,25 +18,19 @@ trait ListTestGridProjectsRequest extends StObject {
 }
 object ListTestGridProjectsRequest {
   
-  @scala.inline
-  def apply(): ListTestGridProjectsRequest = {
+  inline def apply(): ListTestGridProjectsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTestGridProjectsRequest]
   }
   
-  @scala.inline
-  implicit class ListTestGridProjectsRequestMutableBuilder[Self <: ListTestGridProjectsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTestGridProjectsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResult(value: MaxPageSize): Self = StObject.set(x, "maxResult", value.asInstanceOf[js.Any])
+    inline def setMaxResult(value: MaxPageSize): Self = StObject.set(x, "maxResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultUndefined: Self = StObject.set(x, "maxResult", js.undefined)
+    inline def setMaxResultUndefined: Self = StObject.set(x, "maxResult", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

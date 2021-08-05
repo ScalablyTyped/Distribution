@@ -20,31 +20,23 @@ trait IterableChangeRecord[V] extends StObject {
 }
 object IterableChangeRecord {
   
-  @scala.inline
-  def apply[V](item: V, trackById: js.Any): IterableChangeRecord[V] = {
+  inline def apply[V](item: V, trackById: js.Any): IterableChangeRecord[V] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], trackById = trackById.asInstanceOf[js.Any], currentIndex = null, previousIndex = null)
     __obj.asInstanceOf[IterableChangeRecord[V]]
   }
   
-  @scala.inline
-  implicit class IterableChangeRecordMutableBuilder[Self <: IterableChangeRecord[?], V] (val x: Self & IterableChangeRecord[V]) extends AnyVal {
+  extension [Self <: IterableChangeRecord[?], V](x: Self & IterableChangeRecord[V]) {
     
-    @scala.inline
-    def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+    inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentIndexNull: Self = StObject.set(x, "currentIndex", null)
+    inline def setCurrentIndexNull: Self = StObject.set(x, "currentIndex", null)
     
-    @scala.inline
-    def setItem(value: V): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: V): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousIndex(value: Double): Self = StObject.set(x, "previousIndex", value.asInstanceOf[js.Any])
+    inline def setPreviousIndex(value: Double): Self = StObject.set(x, "previousIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousIndexNull: Self = StObject.set(x, "previousIndex", null)
+    inline def setPreviousIndexNull: Self = StObject.set(x, "previousIndex", null)
     
-    @scala.inline
-    def setTrackById(value: js.Any): Self = StObject.set(x, "trackById", value.asInstanceOf[js.Any])
+    inline def setTrackById(value: js.Any): Self = StObject.set(x, "trackById", value.asInstanceOf[js.Any])
   }
 }

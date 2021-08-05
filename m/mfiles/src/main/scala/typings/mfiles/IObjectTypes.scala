@@ -14,22 +14,17 @@ trait IObjectTypes extends StObject {
 }
 object IObjectTypes {
   
-  @scala.inline
-  def apply(Clone: () => IObjectTypes, Count: Double, Item: Double => IObjectType): IObjectTypes = {
+  inline def apply(Clone: () => IObjectTypes, Count: Double, Item: Double => IObjectType): IObjectTypes = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[IObjectTypes]
   }
   
-  @scala.inline
-  implicit class IObjectTypesMutableBuilder[Self <: IObjectTypes] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectTypes](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IObjectTypes): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IObjectTypes): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IObjectType): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IObjectType): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

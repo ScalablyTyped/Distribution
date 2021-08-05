@@ -23,28 +23,21 @@ trait ListRecoveryPointsByResourceInput extends StObject {
 }
 object ListRecoveryPointsByResourceInput {
   
-  @scala.inline
-  def apply(ResourceArn: ARN): ListRecoveryPointsByResourceInput = {
+  inline def apply(ResourceArn: ARN): ListRecoveryPointsByResourceInput = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRecoveryPointsByResourceInput]
   }
   
-  @scala.inline
-  implicit class ListRecoveryPointsByResourceInputMutableBuilder[Self <: ListRecoveryPointsByResourceInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListRecoveryPointsByResourceInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: ARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

@@ -16,7 +16,7 @@ object codeCommitClientMod {
   class CodeCommitClient protected () extends StObject {
     def this(configuration: CodeCommitConfiguration) = this()
     
-    val config: CodeCommitResolvedConfiguration = js.native
+    /* protected */ val config: CodeCommitResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     

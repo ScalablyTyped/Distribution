@@ -12,16 +12,13 @@ trait Translation extends StObject {
 }
 object Translation {
   
-  @scala.inline
-  def apply(translation_output: String): Translation = {
+  inline def apply(translation_output: String): Translation = {
     val __obj = js.Dynamic.literal(translation_output = translation_output.asInstanceOf[js.Any])
     __obj.asInstanceOf[Translation]
   }
   
-  @scala.inline
-  implicit class TranslationMutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
+  extension [Self <: Translation](x: Self) {
     
-    @scala.inline
-    def setTranslation_output(value: String): Self = StObject.set(x, "translation_output", value.asInstanceOf[js.Any])
+    inline def setTranslation_output(value: String): Self = StObject.set(x, "translation_output", value.asInstanceOf[js.Any])
   }
 }

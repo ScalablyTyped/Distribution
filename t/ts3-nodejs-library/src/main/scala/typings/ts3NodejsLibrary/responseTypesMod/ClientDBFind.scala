@@ -13,16 +13,13 @@ trait ClientDBFind
 }
 object ClientDBFind {
   
-  @scala.inline
-  def apply(cldbid: String): ClientDBFind = {
+  inline def apply(cldbid: String): ClientDBFind = {
     val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientDBFind]
   }
   
-  @scala.inline
-  implicit class ClientDBFindMutableBuilder[Self <: ClientDBFind] (val x: Self) extends AnyVal {
+  extension [Self <: ClientDBFind](x: Self) {
     
-    @scala.inline
-    def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
+    inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
   }
 }

@@ -49,8 +49,7 @@ object mod extends Shortcut {
   }
   object Dopri {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       at: Vector => Vector | Matrix,
       f: Vector,
       iterations: Double,
@@ -63,50 +62,35 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Dopri]
     }
     
-    @scala.inline
-    implicit class DopriMutableBuilder[Self <: Dopri] (val x: Self) extends AnyVal {
+    extension [Self <: Dopri](x: Self) {
       
-      @scala.inline
-      def setAt(value: Vector => Vector | Matrix): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
+      inline def setAt(value: Vector => Vector | Matrix): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEvents(value: Boolean | VectorBoolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Boolean | VectorBoolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setEventsVarargs(value: Boolean*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Boolean*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setF(value: Vector): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+      inline def setF(value: Vector): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFVarargs(value: Double*): Self = StObject.set(x, "f", js.Array(value :_*))
+      inline def setFVarargs(value: Double*): Self = StObject.set(x, "f", js.Array(value :_*))
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Vector): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Vector): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value :_*))
+      inline def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value :_*))
       
-      @scala.inline
-      def setY(value: Vector): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Vector): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value :_*))
+      inline def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value :_*))
       
-      @scala.inline
-      def setYmid(value: Vector): Self = StObject.set(x, "ymid", value.asInstanceOf[js.Any])
+      inline def setYmid(value: Vector): Self = StObject.set(x, "ymid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYmidVarargs(value: Double*): Self = StObject.set(x, "ymid", js.Array(value :_*))
+      inline def setYmidVarargs(value: Double*): Self = StObject.set(x, "ymid", js.Array(value :_*))
     }
   }
   
@@ -118,26 +102,20 @@ object mod extends Shortcut {
   }
   object LU {
     
-    @scala.inline
-    def apply(L: Matrix, U: Matrix): LU = {
+    inline def apply(L: Matrix, U: Matrix): LU = {
       val __obj = js.Dynamic.literal(L = L.asInstanceOf[js.Any], U = U.asInstanceOf[js.Any])
       __obj.asInstanceOf[LU]
     }
     
-    @scala.inline
-    implicit class LUMutableBuilder[Self <: LU] (val x: Self) extends AnyVal {
+    extension [Self <: LU](x: Self) {
       
-      @scala.inline
-      def setL(value: Matrix): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
+      inline def setL(value: Matrix): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLVarargs(value: js.Array[Double]*): Self = StObject.set(x, "L", js.Array(value :_*))
+      inline def setLVarargs(value: js.Array[Double]*): Self = StObject.set(x, "L", js.Array(value :_*))
       
-      @scala.inline
-      def setU(value: Matrix): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
+      inline def setU(value: Matrix): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUVarargs(value: js.Array[Double]*): Self = StObject.set(x, "U", js.Array(value :_*))
+      inline def setUVarargs(value: js.Array[Double]*): Self = StObject.set(x, "U", js.Array(value :_*))
     }
   }
   
@@ -153,32 +131,24 @@ object mod extends Shortcut {
   }
   object LUPP {
     
-    @scala.inline
-    def apply(L: SparseMatrix, P: Vector, Pinv: Vector, U: SparseMatrix): LUPP = {
+    inline def apply(L: SparseMatrix, P: Vector, Pinv: Vector, U: SparseMatrix): LUPP = {
       val __obj = js.Dynamic.literal(L = L.asInstanceOf[js.Any], P = P.asInstanceOf[js.Any], Pinv = Pinv.asInstanceOf[js.Any], U = U.asInstanceOf[js.Any])
       __obj.asInstanceOf[LUPP]
     }
     
-    @scala.inline
-    implicit class LUPPMutableBuilder[Self <: LUPP] (val x: Self) extends AnyVal {
+    extension [Self <: LUPP](x: Self) {
       
-      @scala.inline
-      def setL(value: SparseMatrix): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
+      inline def setL(value: SparseMatrix): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP(value: Vector): Self = StObject.set(x, "P", value.asInstanceOf[js.Any])
+      inline def setP(value: Vector): Self = StObject.set(x, "P", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPVarargs(value: Double*): Self = StObject.set(x, "P", js.Array(value :_*))
+      inline def setPVarargs(value: Double*): Self = StObject.set(x, "P", js.Array(value :_*))
       
-      @scala.inline
-      def setPinv(value: Vector): Self = StObject.set(x, "Pinv", value.asInstanceOf[js.Any])
+      inline def setPinv(value: Vector): Self = StObject.set(x, "Pinv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinvVarargs(value: Double*): Self = StObject.set(x, "Pinv", js.Array(value :_*))
+      inline def setPinvVarargs(value: Double*): Self = StObject.set(x, "Pinv", js.Array(value :_*))
       
-      @scala.inline
-      def setU(value: SparseMatrix): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
+      inline def setU(value: SparseMatrix): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
     }
   }
   

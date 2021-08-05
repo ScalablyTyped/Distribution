@@ -24,25 +24,19 @@ trait SchemaProductPermission extends StObject {
 }
 object SchemaProductPermission {
   
-  @scala.inline
-  def apply(): SchemaProductPermission = {
+  inline def apply(): SchemaProductPermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductPermission]
   }
   
-  @scala.inline
-  implicit class SchemaProductPermissionMutableBuilder[Self <: SchemaProductPermission] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductPermission](x: Self) {
     
-    @scala.inline
-    def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
+    inline def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
+    inline def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait AlarmIdentifier extends StObject {
 }
 object AlarmIdentifier {
   
-  @scala.inline
-  def apply(Name: AlarmName, Region: CloudWatchRegion): AlarmIdentifier = {
+  inline def apply(Name: AlarmName, Region: CloudWatchRegion): AlarmIdentifier = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Region = Region.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlarmIdentifier]
   }
   
-  @scala.inline
-  implicit class AlarmIdentifierMutableBuilder[Self <: AlarmIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: AlarmIdentifier](x: Self) {
     
-    @scala.inline
-    def setName(value: AlarmName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AlarmName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: CloudWatchRegion): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: CloudWatchRegion): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
   }
 }

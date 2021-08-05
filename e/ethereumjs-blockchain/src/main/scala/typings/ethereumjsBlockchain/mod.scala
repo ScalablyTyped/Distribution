@@ -206,9 +206,9 @@ object mod {
       */
     var _staleHeads: js.Any = js.native
     
-    val _validateBlocks: js.Any = js.native
+    /* private */ val _validateBlocks: js.Any = js.native
     
-    val _validatePow: js.Any = js.native
+    /* private */ val _validatePow: js.Any = js.native
     
     var db: js.Any = js.native
     
@@ -420,59 +420,42 @@ object mod {
   }
   object BlockchainOptions {
     
-    @scala.inline
-    def apply(): BlockchainOptions = {
+    inline def apply(): BlockchainOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BlockchainOptions]
     }
     
-    @scala.inline
-    implicit class BlockchainOptionsMutableBuilder[Self <: BlockchainOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BlockchainOptions](x: Self) {
       
-      @scala.inline
-      def setChain(value: String | Double): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
+      inline def setChain(value: String | Double): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChainUndefined: Self = StObject.set(x, "chain", js.undefined)
+      inline def setChainUndefined: Self = StObject.set(x, "chain", js.undefined)
       
-      @scala.inline
-      def setCommon(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+      inline def setCommon(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
+      inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
       
-      @scala.inline
-      def setDb(value: js.Any): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: js.Any): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
+      inline def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
       
-      @scala.inline
-      def setHardfork(value: String): Self = StObject.set(x, "hardfork", value.asInstanceOf[js.Any])
+      inline def setHardfork(value: String): Self = StObject.set(x, "hardfork", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardforkNull: Self = StObject.set(x, "hardfork", null)
+      inline def setHardforkNull: Self = StObject.set(x, "hardfork", null)
       
-      @scala.inline
-      def setHardforkUndefined: Self = StObject.set(x, "hardfork", js.undefined)
+      inline def setHardforkUndefined: Self = StObject.set(x, "hardfork", js.undefined)
       
-      @scala.inline
-      def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateBlocks(value: Boolean): Self = StObject.set(x, "validateBlocks", value.asInstanceOf[js.Any])
+      inline def setValidateBlocks(value: Boolean): Self = StObject.set(x, "validateBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateBlocksUndefined: Self = StObject.set(x, "validateBlocks", js.undefined)
+      inline def setValidateBlocksUndefined: Self = StObject.set(x, "validateBlocks", js.undefined)
       
-      @scala.inline
-      def setValidatePow(value: Boolean): Self = StObject.set(x, "validatePow", value.asInstanceOf[js.Any])
+      inline def setValidatePow(value: Boolean): Self = StObject.set(x, "validatePow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidatePowUndefined: Self = StObject.set(x, "validatePow", js.undefined)
+      inline def setValidatePowUndefined: Self = StObject.set(x, "validatePow", js.undefined)
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
 }

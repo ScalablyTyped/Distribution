@@ -11,19 +11,15 @@ trait HangoutsChatExportOptions extends StObject {
 }
 object HangoutsChatExportOptions {
   
-  @scala.inline
-  def apply(): HangoutsChatExportOptions = {
+  inline def apply(): HangoutsChatExportOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HangoutsChatExportOptions]
   }
   
-  @scala.inline
-  implicit class HangoutsChatExportOptionsMutableBuilder[Self <: HangoutsChatExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HangoutsChatExportOptions](x: Self) {
     
-    @scala.inline
-    def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
+    inline def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
+    inline def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
   }
 }

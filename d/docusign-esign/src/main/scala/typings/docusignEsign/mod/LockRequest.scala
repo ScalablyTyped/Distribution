@@ -35,43 +35,31 @@ trait LockRequest extends StObject {
 }
 object LockRequest {
   
-  @scala.inline
-  def apply(): LockRequest = {
+  inline def apply(): LockRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LockRequest]
   }
   
-  @scala.inline
-  implicit class LockRequestMutableBuilder[Self <: LockRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LockRequest](x: Self) {
     
-    @scala.inline
-    def setLockDurationInSeconds(value: String): Self = StObject.set(x, "lockDurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setLockDurationInSeconds(value: String): Self = StObject.set(x, "lockDurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockDurationInSecondsUndefined: Self = StObject.set(x, "lockDurationInSeconds", js.undefined)
+    inline def setLockDurationInSecondsUndefined: Self = StObject.set(x, "lockDurationInSeconds", js.undefined)
     
-    @scala.inline
-    def setLockType(value: String): Self = StObject.set(x, "lockType", value.asInstanceOf[js.Any])
+    inline def setLockType(value: String): Self = StObject.set(x, "lockType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockTypeUndefined: Self = StObject.set(x, "lockType", js.undefined)
+    inline def setLockTypeUndefined: Self = StObject.set(x, "lockType", js.undefined)
     
-    @scala.inline
-    def setLockedByApp(value: String): Self = StObject.set(x, "lockedByApp", value.asInstanceOf[js.Any])
+    inline def setLockedByApp(value: String): Self = StObject.set(x, "lockedByApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedByAppUndefined: Self = StObject.set(x, "lockedByApp", js.undefined)
+    inline def setLockedByAppUndefined: Self = StObject.set(x, "lockedByApp", js.undefined)
     
-    @scala.inline
-    def setTemplatePassword(value: String): Self = StObject.set(x, "templatePassword", value.asInstanceOf[js.Any])
+    inline def setTemplatePassword(value: String): Self = StObject.set(x, "templatePassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplatePasswordUndefined: Self = StObject.set(x, "templatePassword", js.undefined)
+    inline def setTemplatePasswordUndefined: Self = StObject.set(x, "templatePassword", js.undefined)
     
-    @scala.inline
-    def setUseScratchPad(value: String): Self = StObject.set(x, "useScratchPad", value.asInstanceOf[js.Any])
+    inline def setUseScratchPad(value: String): Self = StObject.set(x, "useScratchPad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseScratchPadUndefined: Self = StObject.set(x, "useScratchPad", js.undefined)
+    inline def setUseScratchPadUndefined: Self = StObject.set(x, "useScratchPad", js.undefined)
   }
 }

@@ -17,22 +17,17 @@ trait DrawCanvasOptions extends StObject {
 }
 object DrawCanvasOptions {
   
-  @scala.inline
-  def apply(actions: js.Array[CanvasAction], canvasId: Double | String): DrawCanvasOptions = {
+  inline def apply(actions: js.Array[CanvasAction], canvasId: Double | String): DrawCanvasOptions = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], canvasId = canvasId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawCanvasOptions]
   }
   
-  @scala.inline
-  implicit class DrawCanvasOptionsMutableBuilder[Self <: DrawCanvasOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DrawCanvasOptions](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[CanvasAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[CanvasAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: CanvasAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: CanvasAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setCanvasId(value: Double | String): Self = StObject.set(x, "canvasId", value.asInstanceOf[js.Any])
+    inline def setCanvasId(value: Double | String): Self = StObject.set(x, "canvasId", value.asInstanceOf[js.Any])
   }
 }

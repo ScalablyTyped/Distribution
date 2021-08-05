@@ -13,16 +13,13 @@ trait ResponseBase extends StObject {
 }
 object ResponseBase {
   
-  @scala.inline
-  def apply(result: js.Any): ResponseBase = {
+  inline def apply(result: js.Any): ResponseBase = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseBase]
   }
   
-  @scala.inline
-  implicit class ResponseBaseMutableBuilder[Self <: ResponseBase] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseBase](x: Self) {
     
-    @scala.inline
-    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

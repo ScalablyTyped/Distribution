@@ -83,21 +83,16 @@ object vpcDhcpOptionsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptions]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptions]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpcDhcpOptionsState): VpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptions]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpcDhcpOptionsState, opts: CustomResourceOptions): VpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptions]
+    inline def get(name: String, id: Input[ID]): VpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptions]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptions]
+    inline def get(name: String, id: Input[ID], state: VpcDhcpOptionsState): VpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptions]
+    inline def get(name: String, id: Input[ID], state: VpcDhcpOptionsState, opts: CustomResourceOptions): VpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptions]
     
     /**
       * Returns true if the given object is an instance of VpcDhcpOptions.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptions.VpcDhcpOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptions.VpcDhcpOptions */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptions.VpcDhcpOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptions.VpcDhcpOptions */ Boolean]
   }
   
   trait VpcDhcpOptionsArgs extends StObject {
@@ -134,59 +129,42 @@ object vpcDhcpOptionsMod {
   }
   object VpcDhcpOptionsArgs {
     
-    @scala.inline
-    def apply(): VpcDhcpOptionsArgs = {
+    inline def apply(): VpcDhcpOptionsArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VpcDhcpOptionsArgs]
     }
     
-    @scala.inline
-    implicit class VpcDhcpOptionsArgsMutableBuilder[Self <: VpcDhcpOptionsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VpcDhcpOptionsArgs](x: Self) {
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "domainNameServers", value.asInstanceOf[js.Any])
+      inline def setDomainNameServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "domainNameServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameServersUndefined: Self = StObject.set(x, "domainNameServers", js.undefined)
+      inline def setDomainNameServersUndefined: Self = StObject.set(x, "domainNameServers", js.undefined)
       
-      @scala.inline
-      def setDomainNameServersVarargs(value: Input[String]*): Self = StObject.set(x, "domainNameServers", js.Array(value :_*))
+      inline def setDomainNameServersVarargs(value: Input[String]*): Self = StObject.set(x, "domainNameServers", js.Array(value :_*))
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setNetbiosNameServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "netbiosNameServers", value.asInstanceOf[js.Any])
+      inline def setNetbiosNameServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "netbiosNameServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetbiosNameServersUndefined: Self = StObject.set(x, "netbiosNameServers", js.undefined)
+      inline def setNetbiosNameServersUndefined: Self = StObject.set(x, "netbiosNameServers", js.undefined)
       
-      @scala.inline
-      def setNetbiosNameServersVarargs(value: Input[String]*): Self = StObject.set(x, "netbiosNameServers", js.Array(value :_*))
+      inline def setNetbiosNameServersVarargs(value: Input[String]*): Self = StObject.set(x, "netbiosNameServers", js.Array(value :_*))
       
-      @scala.inline
-      def setNetbiosNodeType(value: Input[String]): Self = StObject.set(x, "netbiosNodeType", value.asInstanceOf[js.Any])
+      inline def setNetbiosNodeType(value: Input[String]): Self = StObject.set(x, "netbiosNodeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetbiosNodeTypeUndefined: Self = StObject.set(x, "netbiosNodeType", js.undefined)
+      inline def setNetbiosNodeTypeUndefined: Self = StObject.set(x, "netbiosNodeType", js.undefined)
       
-      @scala.inline
-      def setNtpServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "ntpServers", value.asInstanceOf[js.Any])
+      inline def setNtpServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "ntpServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNtpServersUndefined: Self = StObject.set(x, "ntpServers", js.undefined)
+      inline def setNtpServersUndefined: Self = StObject.set(x, "ntpServers", js.undefined)
       
-      @scala.inline
-      def setNtpServersVarargs(value: Input[String]*): Self = StObject.set(x, "ntpServers", js.Array(value :_*))
+      inline def setNtpServersVarargs(value: Input[String]*): Self = StObject.set(x, "ntpServers", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -234,71 +212,50 @@ object vpcDhcpOptionsMod {
   }
   object VpcDhcpOptionsState {
     
-    @scala.inline
-    def apply(): VpcDhcpOptionsState = {
+    inline def apply(): VpcDhcpOptionsState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VpcDhcpOptionsState]
     }
     
-    @scala.inline
-    implicit class VpcDhcpOptionsStateMutableBuilder[Self <: VpcDhcpOptionsState] (val x: Self) extends AnyVal {
+    extension [Self <: VpcDhcpOptionsState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "domainNameServers", value.asInstanceOf[js.Any])
+      inline def setDomainNameServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "domainNameServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameServersUndefined: Self = StObject.set(x, "domainNameServers", js.undefined)
+      inline def setDomainNameServersUndefined: Self = StObject.set(x, "domainNameServers", js.undefined)
       
-      @scala.inline
-      def setDomainNameServersVarargs(value: Input[String]*): Self = StObject.set(x, "domainNameServers", js.Array(value :_*))
+      inline def setDomainNameServersVarargs(value: Input[String]*): Self = StObject.set(x, "domainNameServers", js.Array(value :_*))
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setNetbiosNameServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "netbiosNameServers", value.asInstanceOf[js.Any])
+      inline def setNetbiosNameServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "netbiosNameServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetbiosNameServersUndefined: Self = StObject.set(x, "netbiosNameServers", js.undefined)
+      inline def setNetbiosNameServersUndefined: Self = StObject.set(x, "netbiosNameServers", js.undefined)
       
-      @scala.inline
-      def setNetbiosNameServersVarargs(value: Input[String]*): Self = StObject.set(x, "netbiosNameServers", js.Array(value :_*))
+      inline def setNetbiosNameServersVarargs(value: Input[String]*): Self = StObject.set(x, "netbiosNameServers", js.Array(value :_*))
       
-      @scala.inline
-      def setNetbiosNodeType(value: Input[String]): Self = StObject.set(x, "netbiosNodeType", value.asInstanceOf[js.Any])
+      inline def setNetbiosNodeType(value: Input[String]): Self = StObject.set(x, "netbiosNodeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetbiosNodeTypeUndefined: Self = StObject.set(x, "netbiosNodeType", js.undefined)
+      inline def setNetbiosNodeTypeUndefined: Self = StObject.set(x, "netbiosNodeType", js.undefined)
       
-      @scala.inline
-      def setNtpServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "ntpServers", value.asInstanceOf[js.Any])
+      inline def setNtpServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "ntpServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNtpServersUndefined: Self = StObject.set(x, "ntpServers", js.undefined)
+      inline def setNtpServersUndefined: Self = StObject.set(x, "ntpServers", js.undefined)
       
-      @scala.inline
-      def setNtpServersVarargs(value: Input[String]*): Self = StObject.set(x, "ntpServers", js.Array(value :_*))
+      inline def setNtpServersVarargs(value: Input[String]*): Self = StObject.set(x, "ntpServers", js.Array(value :_*))
       
-      @scala.inline
-      def setOwnerId(value: Input[String]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: Input[String]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
+      inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

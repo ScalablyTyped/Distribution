@@ -21,13 +21,11 @@ object DropDownList {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.DropDownList = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.DropDownList]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.DropDownList = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.DropDownList]
   
   /* static member */
   @JSGlobal("kendo.ui.DropDownList.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.DropDownList = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.DropDownList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.DropDownList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

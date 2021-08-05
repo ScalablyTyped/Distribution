@@ -9,6 +9,5 @@ object global {
   @JSGlobal("hash")
   @js.native
   def hash: Hash = js.native
-  @scala.inline
-  def hash_=(x: Hash): Unit = js.Dynamic.global.updateDynamic("hash")(x.asInstanceOf[js.Any])
+  inline def hash_=(x: Hash): Unit = js.Dynamic.global.updateDynamic("hash")(x.asInstanceOf[js.Any])
 }

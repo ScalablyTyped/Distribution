@@ -12,28 +12,21 @@ trait PushSubscriptionOptionsInit extends StObject {
 }
 object PushSubscriptionOptionsInit {
   
-  @scala.inline
-  def apply(): PushSubscriptionOptionsInit = {
+  inline def apply(): PushSubscriptionOptionsInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PushSubscriptionOptionsInit]
   }
   
-  @scala.inline
-  implicit class PushSubscriptionOptionsInitMutableBuilder[Self <: PushSubscriptionOptionsInit] (val x: Self) extends AnyVal {
+  extension [Self <: PushSubscriptionOptionsInit](x: Self) {
     
-    @scala.inline
-    def setApplicationServerKey(value: BufferSource | java.lang.String): Self = StObject.set(x, "applicationServerKey", value.asInstanceOf[js.Any])
+    inline def setApplicationServerKey(value: BufferSource | java.lang.String): Self = StObject.set(x, "applicationServerKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationServerKeyNull: Self = StObject.set(x, "applicationServerKey", null)
+    inline def setApplicationServerKeyNull: Self = StObject.set(x, "applicationServerKey", null)
     
-    @scala.inline
-    def setApplicationServerKeyUndefined: Self = StObject.set(x, "applicationServerKey", js.undefined)
+    inline def setApplicationServerKeyUndefined: Self = StObject.set(x, "applicationServerKey", js.undefined)
     
-    @scala.inline
-    def setUserVisibleOnly(value: scala.Boolean): Self = StObject.set(x, "userVisibleOnly", value.asInstanceOf[js.Any])
+    inline def setUserVisibleOnly(value: scala.Boolean): Self = StObject.set(x, "userVisibleOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserVisibleOnlyUndefined: Self = StObject.set(x, "userVisibleOnly", js.undefined)
+    inline def setUserVisibleOnlyUndefined: Self = StObject.set(x, "userVisibleOnly", js.undefined)
   }
 }

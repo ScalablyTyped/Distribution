@@ -51,55 +51,39 @@ trait GraticuleParams extends StObject {
 }
 object GraticuleParams {
   
-  @scala.inline
-  def apply(): GraticuleParams = {
+  inline def apply(): GraticuleParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GraticuleParams]
   }
   
-  @scala.inline
-  implicit class GraticuleParamsMutableBuilder[Self <: GraticuleParams] (val x: Self) extends AnyVal {
+  extension [Self <: GraticuleParams](x: Self) {
     
-    @scala.inline
-    def setExtent(value: Vector2[Vector2[Double]]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: Vector2[Vector2[Double]]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtentMajor(value: Vector2[Vector2[Double]]): Self = StObject.set(x, "extentMajor", value.asInstanceOf[js.Any])
+    inline def setExtentMajor(value: Vector2[Vector2[Double]]): Self = StObject.set(x, "extentMajor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtentMajorUndefined: Self = StObject.set(x, "extentMajor", js.undefined)
+    inline def setExtentMajorUndefined: Self = StObject.set(x, "extentMajor", js.undefined)
     
-    @scala.inline
-    def setExtentMinor(value: Vector2[Vector2[Double]]): Self = StObject.set(x, "extentMinor", value.asInstanceOf[js.Any])
+    inline def setExtentMinor(value: Vector2[Vector2[Double]]): Self = StObject.set(x, "extentMinor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtentMinorUndefined: Self = StObject.set(x, "extentMinor", js.undefined)
+    inline def setExtentMinorUndefined: Self = StObject.set(x, "extentMinor", js.undefined)
     
-    @scala.inline
-    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    @scala.inline
-    def setStep(value: Vector2[Double]): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Vector2[Double]): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepMajor(value: Vector2[Double]): Self = StObject.set(x, "stepMajor", value.asInstanceOf[js.Any])
+    inline def setStepMajor(value: Vector2[Double]): Self = StObject.set(x, "stepMajor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepMajorUndefined: Self = StObject.set(x, "stepMajor", js.undefined)
+    inline def setStepMajorUndefined: Self = StObject.set(x, "stepMajor", js.undefined)
     
-    @scala.inline
-    def setStepMinor(value: Vector2[Double]): Self = StObject.set(x, "stepMinor", value.asInstanceOf[js.Any])
+    inline def setStepMinor(value: Vector2[Double]): Self = StObject.set(x, "stepMinor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepMinorUndefined: Self = StObject.set(x, "stepMinor", js.undefined)
+    inline def setStepMinorUndefined: Self = StObject.set(x, "stepMinor", js.undefined)
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

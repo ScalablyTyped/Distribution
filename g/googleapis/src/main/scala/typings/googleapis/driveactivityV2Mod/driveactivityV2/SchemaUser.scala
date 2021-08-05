@@ -26,31 +26,23 @@ trait SchemaUser extends StObject {
 }
 object SchemaUser {
   
-  @scala.inline
-  def apply(): SchemaUser = {
+  inline def apply(): SchemaUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUser]
   }
   
-  @scala.inline
-  implicit class SchemaUserMutableBuilder[Self <: SchemaUser] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUser](x: Self) {
     
-    @scala.inline
-    def setDeletedUser(value: SchemaDeletedUser): Self = StObject.set(x, "deletedUser", value.asInstanceOf[js.Any])
+    inline def setDeletedUser(value: SchemaDeletedUser): Self = StObject.set(x, "deletedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUserUndefined: Self = StObject.set(x, "deletedUser", js.undefined)
+    inline def setDeletedUserUndefined: Self = StObject.set(x, "deletedUser", js.undefined)
     
-    @scala.inline
-    def setKnownUser(value: SchemaKnownUser): Self = StObject.set(x, "knownUser", value.asInstanceOf[js.Any])
+    inline def setKnownUser(value: SchemaKnownUser): Self = StObject.set(x, "knownUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnownUserUndefined: Self = StObject.set(x, "knownUser", js.undefined)
+    inline def setKnownUserUndefined: Self = StObject.set(x, "knownUser", js.undefined)
     
-    @scala.inline
-    def setUnknownUser(value: SchemaUnknownUser): Self = StObject.set(x, "unknownUser", value.asInstanceOf[js.Any])
+    inline def setUnknownUser(value: SchemaUnknownUser): Self = StObject.set(x, "unknownUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownUserUndefined: Self = StObject.set(x, "unknownUser", js.undefined)
+    inline def setUnknownUserUndefined: Self = StObject.set(x, "unknownUser", js.undefined)
   }
 }

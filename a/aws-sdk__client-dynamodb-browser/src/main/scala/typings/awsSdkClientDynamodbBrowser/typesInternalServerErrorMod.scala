@@ -72,17 +72,14 @@ object typesInternalServerErrorMod {
   }
   object InternalServerError {
     
-    @scala.inline
-    def apply(): InternalServerError = {
+    inline def apply(): InternalServerError = {
       val __obj = js.Dynamic.literal(name = "InternalServerError")
       __obj.asInstanceOf[InternalServerError]
     }
     
-    @scala.inline
-    implicit class InternalServerErrorMutableBuilder[Self <: InternalServerError] (val x: Self) extends AnyVal {
+    extension [Self <: InternalServerError](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.InternalServerError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.InternalServerError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,20 +92,16 @@ object typesInternalServerErrorMod {
   }
   object InternalServerErrorDetails {
     
-    @scala.inline
-    def apply(): InternalServerErrorDetails = {
+    inline def apply(): InternalServerErrorDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InternalServerErrorDetails]
     }
     
-    @scala.inline
-    implicit class InternalServerErrorDetailsMutableBuilder[Self <: InternalServerErrorDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InternalServerErrorDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

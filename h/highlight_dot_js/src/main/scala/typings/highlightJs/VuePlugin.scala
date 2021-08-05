@@ -10,16 +10,13 @@ trait VuePlugin extends StObject {
 }
 object VuePlugin {
   
-  @scala.inline
-  def apply(install: js.Any => Unit): VuePlugin = {
+  inline def apply(install: js.Any => Unit): VuePlugin = {
     val __obj = js.Dynamic.literal(install = js.Any.fromFunction1(install))
     __obj.asInstanceOf[VuePlugin]
   }
   
-  @scala.inline
-  implicit class VuePluginMutableBuilder[Self <: VuePlugin] (val x: Self) extends AnyVal {
+  extension [Self <: VuePlugin](x: Self) {
     
-    @scala.inline
-    def setInstall(value: js.Any => Unit): Self = StObject.set(x, "install", js.Any.fromFunction1(value))
+    inline def setInstall(value: js.Any => Unit): Self = StObject.set(x, "install", js.Any.fromFunction1(value))
   }
 }

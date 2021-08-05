@@ -11,19 +11,15 @@ trait CreateAssetResponse extends StObject {
 }
 object CreateAssetResponse {
   
-  @scala.inline
-  def apply(): CreateAssetResponse = {
+  inline def apply(): CreateAssetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAssetResponse]
   }
   
-  @scala.inline
-  implicit class CreateAssetResponseMutableBuilder[Self <: CreateAssetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAssetResponse](x: Self) {
     
-    @scala.inline
-    def setAsset(value: Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
+    inline def setAsset(value: Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
+    inline def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
   }
 }

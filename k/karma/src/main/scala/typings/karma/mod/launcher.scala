@@ -32,7 +32,6 @@ object launcher {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
+    inline def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
   }
 }

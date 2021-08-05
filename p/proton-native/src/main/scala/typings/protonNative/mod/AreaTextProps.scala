@@ -10,8 +10,7 @@ trait AreaTextProps
      with AreaBaseProps
 object AreaTextProps {
   
-  @scala.inline
-  def apply(): AreaTextProps = {
+  inline def apply(): AreaTextProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AreaTextProps]
   }

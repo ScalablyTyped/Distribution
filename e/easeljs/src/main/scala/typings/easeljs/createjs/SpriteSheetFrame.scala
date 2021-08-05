@@ -14,19 +14,15 @@ trait SpriteSheetFrame extends StObject {
 }
 object SpriteSheetFrame {
   
-  @scala.inline
-  def apply(image: HTMLImageElement, rect: Rectangle): SpriteSheetFrame = {
+  inline def apply(image: HTMLImageElement, rect: Rectangle): SpriteSheetFrame = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpriteSheetFrame]
   }
   
-  @scala.inline
-  implicit class SpriteSheetFrameMutableBuilder[Self <: SpriteSheetFrame] (val x: Self) extends AnyVal {
+  extension [Self <: SpriteSheetFrame](x: Self) {
     
-    @scala.inline
-    def setImage(value: HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRect(value: Rectangle): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: Rectangle): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
   }
 }

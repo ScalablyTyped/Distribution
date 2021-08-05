@@ -16,13 +16,13 @@ object storageMod {
     def this(config: Configuration) = this()
     def this(config: Configuration, storage: StorageBackend) = this()
     
-    var _apply: js.Any = js.native
+    /* private */ var _apply: js.Any = js.native
     
-    var _read: js.Any = js.native
+    /* private */ var _read: js.Any = js.native
     
-    var _store: js.Any = js.native
+    /* private */ var _store: js.Any = js.native
     
-    val config: js.Any = js.native
+    /* private */ val config: js.Any = js.native
     
     /* private */ def isReady: js.Any = js.native
     
@@ -32,11 +32,11 @@ object storageMod {
     /* CompleteClass */
     override def remove(`type`: String, sid: String, uniqueName: String): js.Any = js.native
     
-    val storage: js.Any = js.native
+    /* private */ val storage: js.Any = js.native
     
-    var storageId: js.Any = js.native
+    /* private */ var storageId: js.Any = js.native
     
-    var storageKey: js.Any = js.native
+    /* private */ var storageKey: js.Any = js.native
     
     /* CompleteClass */
     override def store(`type`: String, id: String, value: js.Object): js.Any = js.native
@@ -58,23 +58,18 @@ object storageMod {
   }
   object StorageBackend {
     
-    @scala.inline
-    def apply(getItem: String => String, removeItem: String => Unit, setItem: (String, String) => Unit): StorageBackend = {
+    inline def apply(getItem: String => String, removeItem: String => Unit, setItem: (String, String) => Unit): StorageBackend = {
       val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
       __obj.asInstanceOf[StorageBackend]
     }
     
-    @scala.inline
-    implicit class StorageBackendMutableBuilder[Self <: StorageBackend] (val x: Self) extends AnyVal {
+    extension [Self <: StorageBackend](x: Self) {
       
-      @scala.inline
-      def setGetItem(value: String => String): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      inline def setGetItem(value: String => String): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveItem(value: String => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+      inline def setRemoveItem(value: String => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetItem(value: (String, String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+      inline def setSetItem(value: (String, String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
     }
   }
 }

@@ -28,31 +28,23 @@ trait WriteRecordsRequest extends StObject {
 }
 object WriteRecordsRequest {
   
-  @scala.inline
-  def apply(DatabaseName: ResourceName, Records: Records, TableName: ResourceName): WriteRecordsRequest = {
+  inline def apply(DatabaseName: ResourceName, Records: Records, TableName: ResourceName): WriteRecordsRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteRecordsRequest]
   }
   
-  @scala.inline
-  implicit class WriteRecordsRequestMutableBuilder[Self <: WriteRecordsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: WriteRecordsRequest](x: Self) {
     
-    @scala.inline
-    def setCommonAttributes(value: Record): Self = StObject.set(x, "CommonAttributes", value.asInstanceOf[js.Any])
+    inline def setCommonAttributes(value: Record): Self = StObject.set(x, "CommonAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonAttributesUndefined: Self = StObject.set(x, "CommonAttributes", js.undefined)
+    inline def setCommonAttributesUndefined: Self = StObject.set(x, "CommonAttributes", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecords(value: Records): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: Records): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
     
-    @scala.inline
-    def setTableName(value: ResourceName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: ResourceName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

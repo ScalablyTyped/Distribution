@@ -48,61 +48,43 @@ trait ECSTaskSet extends StObject {
 }
 object ECSTaskSet {
   
-  @scala.inline
-  def apply(): ECSTaskSet = {
+  inline def apply(): ECSTaskSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ECSTaskSet]
   }
   
-  @scala.inline
-  implicit class ECSTaskSetMutableBuilder[Self <: ECSTaskSet] (val x: Self) extends AnyVal {
+  extension [Self <: ECSTaskSet](x: Self) {
     
-    @scala.inline
-    def setDesiredCount(value: ECSTaskSetCount): Self = StObject.set(x, "desiredCount", value.asInstanceOf[js.Any])
+    inline def setDesiredCount(value: ECSTaskSetCount): Self = StObject.set(x, "desiredCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredCountUndefined: Self = StObject.set(x, "desiredCount", js.undefined)
+    inline def setDesiredCountUndefined: Self = StObject.set(x, "desiredCount", js.undefined)
     
-    @scala.inline
-    def setIdentifer(value: ECSTaskSetIdentifier): Self = StObject.set(x, "identifer", value.asInstanceOf[js.Any])
+    inline def setIdentifer(value: ECSTaskSetIdentifier): Self = StObject.set(x, "identifer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentiferUndefined: Self = StObject.set(x, "identifer", js.undefined)
+    inline def setIdentiferUndefined: Self = StObject.set(x, "identifer", js.undefined)
     
-    @scala.inline
-    def setPendingCount(value: ECSTaskSetCount): Self = StObject.set(x, "pendingCount", value.asInstanceOf[js.Any])
+    inline def setPendingCount(value: ECSTaskSetCount): Self = StObject.set(x, "pendingCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingCountUndefined: Self = StObject.set(x, "pendingCount", js.undefined)
+    inline def setPendingCountUndefined: Self = StObject.set(x, "pendingCount", js.undefined)
     
-    @scala.inline
-    def setRunningCount(value: ECSTaskSetCount): Self = StObject.set(x, "runningCount", value.asInstanceOf[js.Any])
+    inline def setRunningCount(value: ECSTaskSetCount): Self = StObject.set(x, "runningCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunningCountUndefined: Self = StObject.set(x, "runningCount", js.undefined)
+    inline def setRunningCountUndefined: Self = StObject.set(x, "runningCount", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ECSTaskSetStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ECSTaskSetStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTargetGroup(value: TargetGroupInfo): Self = StObject.set(x, "targetGroup", value.asInstanceOf[js.Any])
+    inline def setTargetGroup(value: TargetGroupInfo): Self = StObject.set(x, "targetGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupUndefined: Self = StObject.set(x, "targetGroup", js.undefined)
+    inline def setTargetGroupUndefined: Self = StObject.set(x, "targetGroup", js.undefined)
     
-    @scala.inline
-    def setTaskSetLabel(value: TargetLabel): Self = StObject.set(x, "taskSetLabel", value.asInstanceOf[js.Any])
+    inline def setTaskSetLabel(value: TargetLabel): Self = StObject.set(x, "taskSetLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskSetLabelUndefined: Self = StObject.set(x, "taskSetLabel", js.undefined)
+    inline def setTaskSetLabelUndefined: Self = StObject.set(x, "taskSetLabel", js.undefined)
     
-    @scala.inline
-    def setTrafficWeight(value: TrafficWeight): Self = StObject.set(x, "trafficWeight", value.asInstanceOf[js.Any])
+    inline def setTrafficWeight(value: TrafficWeight): Self = StObject.set(x, "trafficWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficWeightUndefined: Self = StObject.set(x, "trafficWeight", js.undefined)
+    inline def setTrafficWeightUndefined: Self = StObject.set(x, "trafficWeight", js.undefined)
   }
 }

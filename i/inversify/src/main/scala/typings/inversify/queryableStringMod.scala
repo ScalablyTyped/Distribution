@@ -25,7 +25,7 @@ object queryableStringMod {
     /* CompleteClass */
     override def startsWith(searchString: String): Boolean = js.native
     
-    var str: js.Any = js.native
+    /* private */ var str: js.Any = js.native
     
     /* CompleteClass */
     override def value(): String = js.native

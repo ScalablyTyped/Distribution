@@ -46,49 +46,35 @@ trait SchemaAutoscalingEvent extends StObject {
 }
 object SchemaAutoscalingEvent {
   
-  @scala.inline
-  def apply(): SchemaAutoscalingEvent = {
+  inline def apply(): SchemaAutoscalingEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAutoscalingEvent]
   }
   
-  @scala.inline
-  implicit class SchemaAutoscalingEventMutableBuilder[Self <: SchemaAutoscalingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAutoscalingEvent](x: Self) {
     
-    @scala.inline
-    def setCurrentNumWorkers(value: String): Self = StObject.set(x, "currentNumWorkers", value.asInstanceOf[js.Any])
+    inline def setCurrentNumWorkers(value: String): Self = StObject.set(x, "currentNumWorkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentNumWorkersUndefined: Self = StObject.set(x, "currentNumWorkers", js.undefined)
+    inline def setCurrentNumWorkersUndefined: Self = StObject.set(x, "currentNumWorkers", js.undefined)
     
-    @scala.inline
-    def setDescription(value: SchemaStructuredMessage): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: SchemaStructuredMessage): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
-    @scala.inline
-    def setTargetNumWorkers(value: String): Self = StObject.set(x, "targetNumWorkers", value.asInstanceOf[js.Any])
+    inline def setTargetNumWorkers(value: String): Self = StObject.set(x, "targetNumWorkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNumWorkersUndefined: Self = StObject.set(x, "targetNumWorkers", js.undefined)
+    inline def setTargetNumWorkersUndefined: Self = StObject.set(x, "targetNumWorkers", js.undefined)
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
-    @scala.inline
-    def setWorkerPool(value: String): Self = StObject.set(x, "workerPool", value.asInstanceOf[js.Any])
+    inline def setWorkerPool(value: String): Self = StObject.set(x, "workerPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerPoolUndefined: Self = StObject.set(x, "workerPool", js.undefined)
+    inline def setWorkerPoolUndefined: Self = StObject.set(x, "workerPool", js.undefined)
   }
 }

@@ -11,8 +11,7 @@ trait AllSearchResults[TDoc]
      with /* index */ StringDictionary[SearchResults[TDoc]]
 object AllSearchResults {
   
-  @scala.inline
-  def apply[TDoc](
+  inline def apply[TDoc](
     disjunctiveFacets: js.Array[js.Any],
     exhaustiveNbHits: Boolean,
     facets: js.Array[js.Any],

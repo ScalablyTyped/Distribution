@@ -45,8 +45,7 @@ trait WorksheetViewCommon extends StObject {
 }
 object WorksheetViewCommon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeCell: String,
     rightToLeft: Boolean,
     showGridLines: Boolean,
@@ -59,28 +58,20 @@ object WorksheetViewCommon {
     __obj.asInstanceOf[WorksheetViewCommon]
   }
   
-  @scala.inline
-  implicit class WorksheetViewCommonMutableBuilder[Self <: WorksheetViewCommon] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetViewCommon](x: Self) {
     
-    @scala.inline
-    def setActiveCell(value: String): Self = StObject.set(x, "activeCell", value.asInstanceOf[js.Any])
+    inline def setActiveCell(value: String): Self = StObject.set(x, "activeCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightToLeft(value: Boolean): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
+    inline def setRightToLeft(value: Boolean): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowGridLines(value: Boolean): Self = StObject.set(x, "showGridLines", value.asInstanceOf[js.Any])
+    inline def setShowGridLines(value: Boolean): Self = StObject.set(x, "showGridLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowRowColHeaders(value: Boolean): Self = StObject.set(x, "showRowColHeaders", value.asInstanceOf[js.Any])
+    inline def setShowRowColHeaders(value: Boolean): Self = StObject.set(x, "showRowColHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowRuler(value: Boolean): Self = StObject.set(x, "showRuler", value.asInstanceOf[js.Any])
+    inline def setShowRuler(value: Boolean): Self = StObject.set(x, "showRuler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomScale(value: Double): Self = StObject.set(x, "zoomScale", value.asInstanceOf[js.Any])
+    inline def setZoomScale(value: Double): Self = StObject.set(x, "zoomScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomScaleNormal(value: Double): Self = StObject.set(x, "zoomScaleNormal", value.asInstanceOf[js.Any])
+    inline def setZoomScaleNormal(value: Double): Self = StObject.set(x, "zoomScaleNormal", value.asInstanceOf[js.Any])
   }
 }

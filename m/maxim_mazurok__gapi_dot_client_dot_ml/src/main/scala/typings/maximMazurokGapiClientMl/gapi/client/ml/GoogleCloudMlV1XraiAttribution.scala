@@ -11,19 +11,15 @@ trait GoogleCloudMlV1XraiAttribution extends StObject {
 }
 object GoogleCloudMlV1XraiAttribution {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1XraiAttribution = {
+  inline def apply(): GoogleCloudMlV1XraiAttribution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1XraiAttribution]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1XraiAttributionMutableBuilder[Self <: GoogleCloudMlV1XraiAttribution] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1XraiAttribution](x: Self) {
     
-    @scala.inline
-    def setNumIntegralSteps(value: Double): Self = StObject.set(x, "numIntegralSteps", value.asInstanceOf[js.Any])
+    inline def setNumIntegralSteps(value: Double): Self = StObject.set(x, "numIntegralSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumIntegralStepsUndefined: Self = StObject.set(x, "numIntegralSteps", js.undefined)
+    inline def setNumIntegralStepsUndefined: Self = StObject.set(x, "numIntegralSteps", js.undefined)
   }
 }

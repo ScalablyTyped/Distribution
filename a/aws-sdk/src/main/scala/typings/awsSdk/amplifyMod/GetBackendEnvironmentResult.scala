@@ -13,16 +13,13 @@ trait GetBackendEnvironmentResult extends StObject {
 }
 object GetBackendEnvironmentResult {
   
-  @scala.inline
-  def apply(backendEnvironment: BackendEnvironment): GetBackendEnvironmentResult = {
+  inline def apply(backendEnvironment: BackendEnvironment): GetBackendEnvironmentResult = {
     val __obj = js.Dynamic.literal(backendEnvironment = backendEnvironment.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBackendEnvironmentResult]
   }
   
-  @scala.inline
-  implicit class GetBackendEnvironmentResultMutableBuilder[Self <: GetBackendEnvironmentResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackendEnvironmentResult](x: Self) {
     
-    @scala.inline
-    def setBackendEnvironment(value: BackendEnvironment): Self = StObject.set(x, "backendEnvironment", value.asInstanceOf[js.Any])
+    inline def setBackendEnvironment(value: BackendEnvironment): Self = StObject.set(x, "backendEnvironment", value.asInstanceOf[js.Any])
   }
 }

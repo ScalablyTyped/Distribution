@@ -23,38 +23,38 @@ object headerCompMod {
     
     /* private */ def addInIcon(iconName: js.Any, eParent: js.Any, column: js.Any): js.Any = js.native
     
-    var eFilter: js.Any = js.native
+    /* private */ var eFilter: js.Any = js.native
     
-    var eLabel: js.Any = js.native
+    /* private */ var eLabel: js.Any = js.native
     
-    var eMenu: js.Any = js.native
+    /* private */ var eMenu: js.Any = js.native
     
-    var eSortAsc: js.Any = js.native
+    /* private */ var eSortAsc: js.Any = js.native
     
-    var eSortDesc: js.Any = js.native
+    /* private */ var eSortDesc: js.Any = js.native
     
-    var eSortNone: js.Any = js.native
+    /* private */ var eSortNone: js.Any = js.native
     
-    var eSortOrder: js.Any = js.native
+    /* private */ var eSortOrder: js.Any = js.native
     
-    var eText: js.Any = js.native
+    /* private */ var eText: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     @JSName("init")
     def init_MHeaderComp(params: IHeaderParams): Unit = js.native
     
-    var lastMovingChanged: js.Any = js.native
+    /* private */ var lastMovingChanged: js.Any = js.native
     
-    var menuFactory: js.Any = js.native
+    /* private */ var menuFactory: js.Any = js.native
     
     /* private */ def onFilterChanged(): js.Any = js.native
     
     /* private */ def onSortChanged(): js.Any = js.native
     
-    var params: js.Any = js.native
+    /* private */ var params: js.Any = js.native
     
     /* private */ def removeSortIcons(): js.Any = js.native
     
@@ -74,7 +74,7 @@ object headerCompMod {
     
     def showMenu(eventSource: HTMLElement): Unit = js.native
     
-    var sortController: js.Any = js.native
+    /* private */ var sortController: js.Any = js.native
   }
   /* static members */
   object HeaderComp {
@@ -86,8 +86,7 @@ object headerCompMod {
     @JSImport("ag-grid/dist/lib/headerRendering/header/headerComp", "HeaderComp.TEMPLATE")
     @js.native
     def TEMPLATE: js.Any = js.native
-    @scala.inline
-    def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
   trait IHeader extends StObject
@@ -98,8 +97,7 @@ object headerCompMod {
        with IComponent[IHeaderParams]
   object IHeaderComp {
     
-    @scala.inline
-    def apply(getGui: () => HTMLElement): IHeaderComp = {
+    inline def apply(getGui: () => HTMLElement): IHeaderComp = {
       val __obj = js.Dynamic.literal(getGui = js.Any.fromFunction0(getGui))
       __obj.asInstanceOf[IHeaderComp]
     }

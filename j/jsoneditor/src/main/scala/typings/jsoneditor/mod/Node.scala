@@ -51,8 +51,7 @@ trait Node
 }
 object Node {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dom: StringDictionary[HTMLElement],
     editor: JSONEditor,
     field: String,
@@ -66,115 +65,78 @@ object Node {
     __obj.asInstanceOf[Node]
   }
   
-  @scala.inline
-  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+  extension [Self <: Node](x: Self) {
     
-    @scala.inline
-    def setAppend(value: BaseNode): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+    inline def setAppend(value: BaseNode): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+    inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
-    @scala.inline
-    def setChilds(value: js.Array[Node]): Self = StObject.set(x, "childs", value.asInstanceOf[js.Any])
+    inline def setChilds(value: js.Array[Node]): Self = StObject.set(x, "childs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildsUndefined: Self = StObject.set(x, "childs", js.undefined)
+    inline def setChildsUndefined: Self = StObject.set(x, "childs", js.undefined)
     
-    @scala.inline
-    def setChildsVarargs(value: Node*): Self = StObject.set(x, "childs", js.Array(value :_*))
+    inline def setChildsVarargs(value: Node*): Self = StObject.set(x, "childs", js.Array(value :_*))
     
-    @scala.inline
-    def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumNull: Self = StObject.set(x, "enum", null)
+    inline def setEnumNull: Self = StObject.set(x, "enum", null)
     
-    @scala.inline
-    def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+    inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    @scala.inline
-    def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
     
-    @scala.inline
-    def setError(value: ErrorObject): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorObject): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorChild(value: Node): Self = StObject.set(x, "errorChild", value.asInstanceOf[js.Any])
+    inline def setErrorChild(value: Node): Self = StObject.set(x, "errorChild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorChildUndefined: Self = StObject.set(x, "errorChild", js.undefined)
+    inline def setErrorChildUndefined: Self = StObject.set(x, "errorChild", js.undefined)
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldEditable(value: Boolean): Self = StObject.set(x, "fieldEditable", value.asInstanceOf[js.Any])
+    inline def setFieldEditable(value: Boolean): Self = StObject.set(x, "fieldEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldInnerText(value: String): Self = StObject.set(x, "fieldInnerText", value.asInstanceOf[js.Any])
+    inline def setFieldInnerText(value: String): Self = StObject.set(x, "fieldInnerText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldInnerTextUndefined: Self = StObject.set(x, "fieldInnerText", js.undefined)
+    inline def setFieldInnerTextUndefined: Self = StObject.set(x, "fieldInnerText", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPreviousField(value: String): Self = StObject.set(x, "previousField", value.asInstanceOf[js.Any])
+    inline def setPreviousField(value: String): Self = StObject.set(x, "previousField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousValue(value: NodeValue): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+    inline def setPreviousValue(value: NodeValue): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousValueNull: Self = StObject.set(x, "previousValue", null)
+    inline def setPreviousValueNull: Self = StObject.set(x, "previousValue", null)
     
-    @scala.inline
-    def setSchema(value: js.Object): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: js.Object): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setShowMore(value: BaseNode): Self = StObject.set(x, "showMore", value.asInstanceOf[js.Any])
+    inline def setShowMore(value: BaseNode): Self = StObject.set(x, "showMore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMoreUndefined: Self = StObject.set(x, "showMore", js.undefined)
+    inline def setShowMoreUndefined: Self = StObject.set(x, "showMore", js.undefined)
     
-    @scala.inline
-    def setType(value: NodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: NodeValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NodeValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFieldHTML(value: String): Self = StObject.set(x, "valueFieldHTML", value.asInstanceOf[js.Any])
+    inline def setValueFieldHTML(value: String): Self = StObject.set(x, "valueFieldHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFieldHTMLUndefined: Self = StObject.set(x, "valueFieldHTML", js.undefined)
+    inline def setValueFieldHTMLUndefined: Self = StObject.set(x, "valueFieldHTML", js.undefined)
     
-    @scala.inline
-    def setValueInnerText(value: String): Self = StObject.set(x, "valueInnerText", value.asInstanceOf[js.Any])
+    inline def setValueInnerText(value: String): Self = StObject.set(x, "valueInnerText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueInnerTextUndefined: Self = StObject.set(x, "valueInnerText", js.undefined)
+    inline def setValueInnerTextUndefined: Self = StObject.set(x, "valueInnerText", js.undefined)
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setVisibleChilds(value: Double): Self = StObject.set(x, "visibleChilds", value.asInstanceOf[js.Any])
+    inline def setVisibleChilds(value: Double): Self = StObject.set(x, "visibleChilds", value.asInstanceOf[js.Any])
   }
 }

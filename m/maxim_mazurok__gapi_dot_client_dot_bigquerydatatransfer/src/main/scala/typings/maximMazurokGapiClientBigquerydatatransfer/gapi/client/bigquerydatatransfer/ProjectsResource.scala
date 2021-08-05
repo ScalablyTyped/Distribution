@@ -14,8 +14,7 @@ trait ProjectsResource extends StObject {
 }
 object ProjectsResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataSources: DataSourcesResource,
     locations: LocationsResource,
     transferConfigs: TransferConfigsResource
@@ -24,16 +23,12 @@ object ProjectsResource {
     __obj.asInstanceOf[ProjectsResource]
   }
   
-  @scala.inline
-  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsResource](x: Self) {
     
-    @scala.inline
-    def setDataSources(value: DataSourcesResource): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
+    inline def setDataSources(value: DataSourcesResource): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferConfigs(value: TransferConfigsResource): Self = StObject.set(x, "transferConfigs", value.asInstanceOf[js.Any])
+    inline def setTransferConfigs(value: TransferConfigsResource): Self = StObject.set(x, "transferConfigs", value.asInstanceOf[js.Any])
   }
 }

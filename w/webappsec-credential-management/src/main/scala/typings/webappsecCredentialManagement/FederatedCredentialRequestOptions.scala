@@ -23,31 +23,23 @@ trait FederatedCredentialRequestOptions extends StObject {
 }
 object FederatedCredentialRequestOptions {
   
-  @scala.inline
-  def apply(): FederatedCredentialRequestOptions = {
+  inline def apply(): FederatedCredentialRequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FederatedCredentialRequestOptions]
   }
   
-  @scala.inline
-  implicit class FederatedCredentialRequestOptionsMutableBuilder[Self <: FederatedCredentialRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FederatedCredentialRequestOptions](x: Self) {
     
-    @scala.inline
-    def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+    inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+    inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
-    @scala.inline
-    def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
     
-    @scala.inline
-    def setProviders(value: js.Array[String]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[String]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+    inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    @scala.inline
-    def setProvidersVarargs(value: String*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: String*): Self = StObject.set(x, "providers", js.Array(value :_*))
   }
 }

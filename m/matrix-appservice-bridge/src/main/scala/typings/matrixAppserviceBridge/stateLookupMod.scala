@@ -28,13 +28,13 @@ object stateLookupMod {
       */
     def this(opts: StateLookupOpts) = this()
     
-    var _client: js.Any = js.native
+    /* private */ var _client: js.Any = js.native
     
-    var dict: js.Any = js.native
+    /* private */ var dict: js.Any = js.native
     
-    var eventTypes: js.Any = js.native
+    /* private */ var eventTypes: js.Any = js.native
     
-    var getInitialState: js.Any = js.native
+    /* private */ var getInitialState: js.Any = js.native
     
     /**
       * Get a stored state event.
@@ -48,9 +48,9 @@ object stateLookupMod {
     def getState(roomId: String, eventType: String): Null | StateLookupEvent | js.Array[StateLookupEvent] = js.native
     def getState(roomId: String, eventType: String, stateKey: String): Null | StateLookupEvent | js.Array[StateLookupEvent] = js.native
     
-    var insertEvent: js.Any = js.native
+    /* private */ var insertEvent: js.Any = js.native
     
-    var lookupQueue: js.Any = js.native
+    /* private */ var lookupQueue: js.Any = js.native
     
     /**
       * Update any state dictionaries with this event. If there is nothing tracking
@@ -59,7 +59,7 @@ object stateLookupMod {
       */
     def onEvent(event: StateLookupEvent): js.Promise[Unit] = js.native
     
-    var retryStateIn: js.Any = js.native
+    /* private */ var retryStateIn: js.Any = js.native
     
     /**
       * Track a given room. The client must have access to this room.
@@ -99,30 +99,23 @@ object stateLookupMod {
   }
   object StateLookupEvent {
     
-    @scala.inline
-    def apply(content: js.Any, event_id: String, room_id: String, state_key: String, `type`: String): StateLookupEvent = {
+    inline def apply(content: js.Any, event_id: String, room_id: String, state_key: String, `type`: String): StateLookupEvent = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], event_id = event_id.asInstanceOf[js.Any], room_id = room_id.asInstanceOf[js.Any], state_key = state_key.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateLookupEvent]
     }
     
-    @scala.inline
-    implicit class StateLookupEventMutableBuilder[Self <: StateLookupEvent] (val x: Self) extends AnyVal {
+    extension [Self <: StateLookupEvent](x: Self) {
       
-      @scala.inline
-      def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent_id(value: String): Self = StObject.set(x, "event_id", value.asInstanceOf[js.Any])
+      inline def setEvent_id(value: String): Self = StObject.set(x, "event_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoom_id(value: String): Self = StObject.set(x, "room_id", value.asInstanceOf[js.Any])
+      inline def setRoom_id(value: String): Self = StObject.set(x, "room_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState_key(value: String): Self = StObject.set(x, "state_key", value.asInstanceOf[js.Any])
+      inline def setState_key(value: String): Self = StObject.set(x, "state_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,38 +131,28 @@ object stateLookupMod {
   }
   object StateLookupOpts {
     
-    @scala.inline
-    def apply(client: js.Any): StateLookupOpts = {
+    inline def apply(client: js.Any): StateLookupOpts = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateLookupOpts]
     }
     
-    @scala.inline
-    implicit class StateLookupOptsMutableBuilder[Self <: StateLookupOpts] (val x: Self) extends AnyVal {
+    extension [Self <: StateLookupOpts](x: Self) {
       
-      @scala.inline
-      def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTypes(value: js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
+      inline def setEventTypes(value: js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
+      inline def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
       
-      @scala.inline
-      def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
+      inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setRetryStateInMs(value: Double): Self = StObject.set(x, "retryStateInMs", value.asInstanceOf[js.Any])
+      inline def setRetryStateInMs(value: Double): Self = StObject.set(x, "retryStateInMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryStateInMsUndefined: Self = StObject.set(x, "retryStateInMs", js.undefined)
+      inline def setRetryStateInMsUndefined: Self = StObject.set(x, "retryStateInMs", js.undefined)
       
-      @scala.inline
-      def setStateLookupConcurrency(value: Double): Self = StObject.set(x, "stateLookupConcurrency", value.asInstanceOf[js.Any])
+      inline def setStateLookupConcurrency(value: Double): Self = StObject.set(x, "stateLookupConcurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateLookupConcurrencyUndefined: Self = StObject.set(x, "stateLookupConcurrency", js.undefined)
+      inline def setStateLookupConcurrencyUndefined: Self = StObject.set(x, "stateLookupConcurrency", js.undefined)
     }
   }
   
@@ -183,8 +166,7 @@ object stateLookupMod {
   }
   object StateLookupRoom {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       events: StringDictionary[StringDictionary[StateLookupEvent]],
       syncPending: Boolean,
       syncPromise: js.Promise[StateLookupRoom]
@@ -193,17 +175,13 @@ object stateLookupMod {
       __obj.asInstanceOf[StateLookupRoom]
     }
     
-    @scala.inline
-    implicit class StateLookupRoomMutableBuilder[Self <: StateLookupRoom] (val x: Self) extends AnyVal {
+    extension [Self <: StateLookupRoom](x: Self) {
       
-      @scala.inline
-      def setEvents(value: StringDictionary[StringDictionary[StateLookupEvent]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: StringDictionary[StringDictionary[StateLookupEvent]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncPending(value: Boolean): Self = StObject.set(x, "syncPending", value.asInstanceOf[js.Any])
+      inline def setSyncPending(value: Boolean): Self = StObject.set(x, "syncPending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncPromise(value: js.Promise[StateLookupRoom]): Self = StObject.set(x, "syncPromise", value.asInstanceOf[js.Any])
+      inline def setSyncPromise(value: js.Promise[StateLookupRoom]): Self = StObject.set(x, "syncPromise", value.asInstanceOf[js.Any])
     }
   }
 }

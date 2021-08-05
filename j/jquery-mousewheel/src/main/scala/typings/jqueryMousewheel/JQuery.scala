@@ -22,8 +22,7 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mousewheel: js.Function2[/* eventObject */ JQueryMousewheelEventObject, /* repeated */ js.Any, js.Any] => JQuery,
     on: (mousewheel, js.Function2[/* eventObject */ JQueryMousewheelEventObject, /* repeated */ js.Any, js.Any]) => JQuery,
     unmousewheel: () => JQuery
@@ -32,20 +31,16 @@ object JQuery {
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setMousewheel(
+    inline def setMousewheel(
       value: js.Function2[/* eventObject */ JQueryMousewheelEventObject, /* repeated */ js.Any, js.Any] => JQuery
     ): Self = StObject.set(x, "mousewheel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOn(
+    inline def setOn(
       value: (mousewheel, js.Function2[/* eventObject */ JQueryMousewheelEventObject, /* repeated */ js.Any, js.Any]) => JQuery
     ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnmousewheel(value: () => JQuery): Self = StObject.set(x, "unmousewheel", js.Any.fromFunction0(value))
+    inline def setUnmousewheel(value: () => JQuery): Self = StObject.set(x, "unmousewheel", js.Any.fromFunction0(value))
   }
 }

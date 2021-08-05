@@ -16,19 +16,15 @@ trait IPropGridProperty
 }
 object IPropGridProperty {
   
-  @scala.inline
-  def apply(): IPropGridProperty = {
+  inline def apply(): IPropGridProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPropGridProperty]
   }
   
-  @scala.inline
-  implicit class IPropGridPropertyMutableBuilder[Self <: IPropGridProperty] (val x: Self) extends AnyVal {
+  extension [Self <: IPropGridProperty](x: Self) {
     
-    @scala.inline
-    def setFields(value: IMixedCollection): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: IMixedCollection): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait ParametersReposGetContributorsStatsEndpoint extends StObject {
 }
 object ParametersReposGetContributorsStatsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetContributorsStatsEndpoint,
     request: ReposGetContributorsStatsRequestOptions,
     response: OctokitResponse[ReposGetContributorsStatsResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetContributorsStatsEndpoint {
     __obj.asInstanceOf[ParametersReposGetContributorsStatsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetContributorsStatsEndpointMutableBuilder[Self <: ParametersReposGetContributorsStatsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetContributorsStatsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetContributorsStatsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetContributorsStatsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetContributorsStatsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetContributorsStatsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetContributorsStatsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetContributorsStatsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

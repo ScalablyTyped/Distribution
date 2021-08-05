@@ -18,19 +18,15 @@ trait GetCommitInput extends StObject {
 }
 object GetCommitInput {
   
-  @scala.inline
-  def apply(commitId: ObjectId, repositoryName: RepositoryName): GetCommitInput = {
+  inline def apply(commitId: ObjectId, repositoryName: RepositoryName): GetCommitInput = {
     val __obj = js.Dynamic.literal(commitId = commitId.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCommitInput]
   }
   
-  @scala.inline
-  implicit class GetCommitInputMutableBuilder[Self <: GetCommitInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetCommitInput](x: Self) {
     
-    @scala.inline
-    def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+    inline def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

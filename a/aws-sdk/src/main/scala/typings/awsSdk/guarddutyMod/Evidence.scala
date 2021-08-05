@@ -13,22 +13,17 @@ trait Evidence extends StObject {
 }
 object Evidence {
   
-  @scala.inline
-  def apply(): Evidence = {
+  inline def apply(): Evidence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Evidence]
   }
   
-  @scala.inline
-  implicit class EvidenceMutableBuilder[Self <: Evidence] (val x: Self) extends AnyVal {
+  extension [Self <: Evidence](x: Self) {
     
-    @scala.inline
-    def setThreatIntelligenceDetails(value: ThreatIntelligenceDetails): Self = StObject.set(x, "ThreatIntelligenceDetails", value.asInstanceOf[js.Any])
+    inline def setThreatIntelligenceDetails(value: ThreatIntelligenceDetails): Self = StObject.set(x, "ThreatIntelligenceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatIntelligenceDetailsUndefined: Self = StObject.set(x, "ThreatIntelligenceDetails", js.undefined)
+    inline def setThreatIntelligenceDetailsUndefined: Self = StObject.set(x, "ThreatIntelligenceDetails", js.undefined)
     
-    @scala.inline
-    def setThreatIntelligenceDetailsVarargs(value: ThreatIntelligenceDetail*): Self = StObject.set(x, "ThreatIntelligenceDetails", js.Array(value :_*))
+    inline def setThreatIntelligenceDetailsVarargs(value: ThreatIntelligenceDetail*): Self = StObject.set(x, "ThreatIntelligenceDetails", js.Array(value :_*))
   }
 }

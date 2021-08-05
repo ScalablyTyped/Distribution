@@ -23,55 +23,39 @@ trait LowLevelStyleFunctionArguments[N, S] extends StObject {
 }
 object LowLevelStyleFunctionArguments {
   
-  @scala.inline
-  def apply[N, S](prop: String): LowLevelStyleFunctionArguments[N, S] = {
+  inline def apply[N, S](prop: String): LowLevelStyleFunctionArguments[N, S] = {
     val __obj = js.Dynamic.literal(prop = prop.asInstanceOf[js.Any])
     __obj.asInstanceOf[LowLevelStyleFunctionArguments[N, S]]
   }
   
-  @scala.inline
-  implicit class LowLevelStyleFunctionArgumentsMutableBuilder[Self <: LowLevelStyleFunctionArguments[?, ?], N, S] (val x: Self & (LowLevelStyleFunctionArguments[N, S])) extends AnyVal {
+  extension [Self <: LowLevelStyleFunctionArguments[?, ?], N, S](x: Self & (LowLevelStyleFunctionArguments[N, S])) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setCssProperty(value: String): Self = StObject.set(x, "cssProperty", value.asInstanceOf[js.Any])
+    inline def setCssProperty(value: String): Self = StObject.set(x, "cssProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssPropertyUndefined: Self = StObject.set(x, "cssProperty", js.undefined)
+    inline def setCssPropertyUndefined: Self = StObject.set(x, "cssProperty", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+    inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setScale(value: S): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: S): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setTransformValue(value: (/* n */ N, /* scale */ js.UndefOr[S]) => js.Any): Self = StObject.set(x, "transformValue", js.Any.fromFunction2(value))
+    inline def setTransformValue(value: (/* n */ N, /* scale */ js.UndefOr[S]) => js.Any): Self = StObject.set(x, "transformValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTransformValueUndefined: Self = StObject.set(x, "transformValue", js.undefined)
+    inline def setTransformValueUndefined: Self = StObject.set(x, "transformValue", js.undefined)
   }
 }

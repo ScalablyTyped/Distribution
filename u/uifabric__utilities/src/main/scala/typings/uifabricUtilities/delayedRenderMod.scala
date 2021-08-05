@@ -15,7 +15,7 @@ object delayedRenderMod {
     extends Component[IDelayedRenderProps, IDelayedRenderState, js.Any] {
     def this(props: IDelayedRenderProps) = this()
     
-    var _timeoutId: js.Any = js.native
+    /* private */ var _timeoutId: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDelayedRender(): Unit = js.native
@@ -33,8 +33,7 @@ object delayedRenderMod {
     @JSImport("@uifabric/utilities/lib/DelayedRender", "DelayedRender.defaultProps")
     @js.native
     def defaultProps: Delay = js.native
-    @scala.inline
-    def defaultProps_=(x: Delay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Delay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IDelayedRenderProps
@@ -48,20 +47,16 @@ object delayedRenderMod {
   }
   object IDelayedRenderProps {
     
-    @scala.inline
-    def apply(): IDelayedRenderProps = {
+    inline def apply(): IDelayedRenderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDelayedRenderProps]
     }
     
-    @scala.inline
-    implicit class IDelayedRenderPropsMutableBuilder[Self <: IDelayedRenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDelayedRenderProps](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     }
   }
   
@@ -74,17 +69,14 @@ object delayedRenderMod {
   }
   object IDelayedRenderState {
     
-    @scala.inline
-    def apply(isRendered: Boolean): IDelayedRenderState = {
+    inline def apply(isRendered: Boolean): IDelayedRenderState = {
       val __obj = js.Dynamic.literal(isRendered = isRendered.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDelayedRenderState]
     }
     
-    @scala.inline
-    implicit class IDelayedRenderStateMutableBuilder[Self <: IDelayedRenderState] (val x: Self) extends AnyVal {
+    extension [Self <: IDelayedRenderState](x: Self) {
       
-      @scala.inline
-      def setIsRendered(value: Boolean): Self = StObject.set(x, "isRendered", value.asInstanceOf[js.Any])
+      inline def setIsRendered(value: Boolean): Self = StObject.set(x, "isRendered", value.asInstanceOf[js.Any])
     }
   }
 }

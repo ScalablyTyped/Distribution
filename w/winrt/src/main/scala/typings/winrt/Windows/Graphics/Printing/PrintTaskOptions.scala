@@ -12,8 +12,7 @@ trait PrintTaskOptions
      with IPrintTaskOptionsCoreUIConfiguration
 object PrintTaskOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     binding: PrintBinding,
     collation: PrintCollation,
     colorMode: PrintColorMode,

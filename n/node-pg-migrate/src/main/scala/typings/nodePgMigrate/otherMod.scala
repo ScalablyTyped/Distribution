@@ -12,6 +12,5 @@ object otherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sql(mOptions: MigrationOptions): Sql = ^.asInstanceOf[js.Dynamic].applyDynamic("sql")(mOptions.asInstanceOf[js.Any]).asInstanceOf[Sql]
+  inline def sql(mOptions: MigrationOptions): Sql = ^.asInstanceOf[js.Dynamic].applyDynamic("sql")(mOptions.asInstanceOf[js.Any]).asInstanceOf[Sql]
 }

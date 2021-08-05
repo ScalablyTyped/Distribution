@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Interior")
 @js.native
-class Interior protected ()
+/* private */ class Interior ()
   extends StObject
      with typings.activexWord.Word.Interior {
   
@@ -37,7 +37,7 @@ class Interior protected ()
   /* CompleteClass */
   var PatternColorIndex: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Interior_typekey")
   var WordDotInterior_typekey: typings.activexWord.Word.Interior = js.native
 }

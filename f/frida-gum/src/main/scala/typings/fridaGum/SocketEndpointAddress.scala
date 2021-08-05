@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SocketEndpointAddress extends StObject
 object SocketEndpointAddress {
   
-  @scala.inline
-  def TcpEndpointAddress(ip: String, port: Double): typings.fridaGum.TcpEndpointAddress = {
+  inline def TcpEndpointAddress(ip: String, port: Double): typings.fridaGum.TcpEndpointAddress = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fridaGum.TcpEndpointAddress]
   }
   
-  @scala.inline
-  def UnixEndpointAddress(path: String): typings.fridaGum.UnixEndpointAddress = {
+  inline def UnixEndpointAddress(path: String): typings.fridaGum.UnixEndpointAddress = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fridaGum.UnixEndpointAddress]
   }

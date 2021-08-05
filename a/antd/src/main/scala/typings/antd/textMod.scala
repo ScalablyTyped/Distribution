@@ -22,20 +22,16 @@ object textMod extends Shortcut {
   }
   object TextProps {
     
-    @scala.inline
-    def apply(): TextProps = {
+    inline def apply(): TextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextProps]
     }
     
-    @scala.inline
-    implicit class TextPropsMutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextProps](x: Self) {
       
-      @scala.inline
-      def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+      inline def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+      inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
     }
   }
   

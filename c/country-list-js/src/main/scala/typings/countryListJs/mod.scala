@@ -19,38 +19,27 @@ object mod {
   @js.native
   val cache: Cache_ = js.native
   
-  @scala.inline
-  def capitals(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("capitals")().asInstanceOf[js.Array[String]]
+  inline def capitals(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("capitals")().asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def continents(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("continents")().asInstanceOf[js.Array[String]]
+  inline def continents(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("continents")().asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def findByCapital(capital: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByCapital")(capital.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
+  inline def findByCapital(capital: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByCapital")(capital.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @scala.inline
-  def findByCurrency(currency: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByCurrency")(currency.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
+  inline def findByCurrency(currency: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByCurrency")(currency.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @scala.inline
-  def findByIso2(iso2: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByIso2")(iso2.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
+  inline def findByIso2(iso2: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByIso2")(iso2.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @scala.inline
-  def findByIso3(iso3: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByIso3")(iso3.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
+  inline def findByIso3(iso3: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByIso3")(iso3.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @scala.inline
-  def findByName(name: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByName")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
+  inline def findByName(name: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByName")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @scala.inline
-  def findByPhoneNbr(phone: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByPhoneNbr")(phone.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
+  inline def findByPhoneNbr(phone: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByPhoneNbr")(phone.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @scala.inline
-  def findByProvince(province: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByProvince")(province.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
+  inline def findByProvince(province: String): js.UndefOr[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByProvince")(province.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Country]]
   
-  @scala.inline
-  def ls(member: CountryRecordMember): js.Array[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ls")(member.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.UndefOr[String]]]
+  inline def ls(member: CountryRecordMember): js.Array[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ls")(member.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.UndefOr[String]]]
   
-  @scala.inline
-  def names(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("names")().asInstanceOf[js.Array[String]]
+  inline def names(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("names")().asInstanceOf[js.Array[String]]
   
   trait Cache_ extends StObject {
     
@@ -66,44 +55,32 @@ object mod {
   }
   object Cache_ {
     
-    @scala.inline
-    def apply(): Cache_ = {
+    inline def apply(): Cache_ = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cache_]
     }
     
-    @scala.inline
-    implicit class Cache_MutableBuilder[Self <: Cache_] (val x: Self) extends AnyVal {
+    extension [Self <: Cache_](x: Self) {
       
-      @scala.inline
-      def setCapital(value: CountriesMap): Self = StObject.set(x, "capital", value.asInstanceOf[js.Any])
+      inline def setCapital(value: CountriesMap): Self = StObject.set(x, "capital", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapitalUndefined: Self = StObject.set(x, "capital", js.undefined)
+      inline def setCapitalUndefined: Self = StObject.set(x, "capital", js.undefined)
       
-      @scala.inline
-      def setCurrency(value: CountriesMap): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: CountriesMap): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setIso3(value: CountriesMap): Self = StObject.set(x, "iso3", value.asInstanceOf[js.Any])
+      inline def setIso3(value: CountriesMap): Self = StObject.set(x, "iso3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIso3Undefined: Self = StObject.set(x, "iso3", js.undefined)
+      inline def setIso3Undefined: Self = StObject.set(x, "iso3", js.undefined)
       
-      @scala.inline
-      def setName(value: CountriesMap): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: CountriesMap): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProvince(value: CountriesMap): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+      inline def setProvince(value: CountriesMap): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvinceUndefined: Self = StObject.set(x, "province", js.undefined)
+      inline def setProvinceUndefined: Self = StObject.set(x, "province", js.undefined)
     }
   }
   
@@ -129,8 +106,7 @@ object mod {
   }
   object Country {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       capital: String,
       code: CountryCode,
       continent: String,
@@ -144,35 +120,25 @@ object mod {
       __obj.asInstanceOf[Country]
     }
     
-    @scala.inline
-    implicit class CountryMutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
+    extension [Self <: Country](x: Self) {
       
-      @scala.inline
-      def setCapital(value: String): Self = StObject.set(x, "capital", value.asInstanceOf[js.Any])
+      inline def setCapital(value: String): Self = StObject.set(x, "capital", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: CountryCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: CountryCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinent(value: String): Self = StObject.set(x, "continent", value.asInstanceOf[js.Any])
+      inline def setContinent(value: String): Self = StObject.set(x, "continent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: Currency): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: Currency): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialing_code(value: String): Self = StObject.set(x, "dialing_code", value.asInstanceOf[js.Any])
+      inline def setDialing_code(value: String): Self = StObject.set(x, "dialing_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvinces(value: js.Array[Province]): Self = StObject.set(x, "provinces", value.asInstanceOf[js.Any])
+      inline def setProvinces(value: js.Array[Province]): Self = StObject.set(x, "provinces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvincesVarargs(value: Province*): Self = StObject.set(x, "provinces", js.Array(value :_*))
+      inline def setProvincesVarargs(value: Province*): Self = StObject.set(x, "provinces", js.Array(value :_*))
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,20 +150,16 @@ object mod {
   }
   object CountryCode {
     
-    @scala.inline
-    def apply(iso2: String, iso3: String): CountryCode = {
+    inline def apply(iso2: String, iso3: String): CountryCode = {
       val __obj = js.Dynamic.literal(iso2 = iso2.asInstanceOf[js.Any], iso3 = iso3.asInstanceOf[js.Any])
       __obj.asInstanceOf[CountryCode]
     }
     
-    @scala.inline
-    implicit class CountryCodeMutableBuilder[Self <: CountryCode] (val x: Self) extends AnyVal {
+    extension [Self <: CountryCode](x: Self) {
       
-      @scala.inline
-      def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
+      inline def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIso3(value: String): Self = StObject.set(x, "iso3", value.asInstanceOf[js.Any])
+      inline def setIso3(value: String): Self = StObject.set(x, "iso3", value.asInstanceOf[js.Any])
     }
   }
   
@@ -214,29 +176,21 @@ object mod {
   trait CountryRecordMember extends StObject
   object CountryRecordMember {
     
-    @scala.inline
-    def capital: typings.countryListJs.countryListJsStrings.capital = "capital".asInstanceOf[typings.countryListJs.countryListJsStrings.capital]
+    inline def capital: typings.countryListJs.countryListJsStrings.capital = "capital".asInstanceOf[typings.countryListJs.countryListJsStrings.capital]
     
-    @scala.inline
-    def code: typings.countryListJs.countryListJsStrings.code = "code".asInstanceOf[typings.countryListJs.countryListJsStrings.code]
+    inline def code: typings.countryListJs.countryListJsStrings.code = "code".asInstanceOf[typings.countryListJs.countryListJsStrings.code]
     
-    @scala.inline
-    def continent: typings.countryListJs.countryListJsStrings.continent = "continent".asInstanceOf[typings.countryListJs.countryListJsStrings.continent]
+    inline def continent: typings.countryListJs.countryListJsStrings.continent = "continent".asInstanceOf[typings.countryListJs.countryListJsStrings.continent]
     
-    @scala.inline
-    def currency: typings.countryListJs.countryListJsStrings.currency = "currency".asInstanceOf[typings.countryListJs.countryListJsStrings.currency]
+    inline def currency: typings.countryListJs.countryListJsStrings.currency = "currency".asInstanceOf[typings.countryListJs.countryListJsStrings.currency]
     
-    @scala.inline
-    def dialing_code: typings.countryListJs.countryListJsStrings.dialing_code = "dialing_code".asInstanceOf[typings.countryListJs.countryListJsStrings.dialing_code]
+    inline def dialing_code: typings.countryListJs.countryListJsStrings.dialing_code = "dialing_code".asInstanceOf[typings.countryListJs.countryListJsStrings.dialing_code]
     
-    @scala.inline
-    def name: typings.countryListJs.countryListJsStrings.name = "name".asInstanceOf[typings.countryListJs.countryListJsStrings.name]
+    inline def name: typings.countryListJs.countryListJsStrings.name = "name".asInstanceOf[typings.countryListJs.countryListJsStrings.name]
     
-    @scala.inline
-    def provinces: typings.countryListJs.countryListJsStrings.provinces = "provinces".asInstanceOf[typings.countryListJs.countryListJsStrings.provinces]
+    inline def provinces: typings.countryListJs.countryListJsStrings.provinces = "provinces".asInstanceOf[typings.countryListJs.countryListJsStrings.provinces]
     
-    @scala.inline
-    def region: typings.countryListJs.countryListJsStrings.region = "region".asInstanceOf[typings.countryListJs.countryListJsStrings.region]
+    inline def region: typings.countryListJs.countryListJsStrings.region = "region".asInstanceOf[typings.countryListJs.countryListJsStrings.region]
   }
   
   trait Currency extends StObject {
@@ -249,23 +203,18 @@ object mod {
   }
   object Currency {
     
-    @scala.inline
-    def apply(code: String, decimal: String, symbol: String): Currency = {
+    inline def apply(code: String, decimal: String, symbol: String): Currency = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], decimal = decimal.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
       __obj.asInstanceOf[Currency]
     }
     
-    @scala.inline
-    implicit class CurrencyMutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
+    extension [Self <: Currency](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+      inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -281,38 +230,28 @@ object mod {
   }
   object Province {
     
-    @scala.inline
-    def apply(name: String): Province = {
+    inline def apply(name: String): Province = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], alias = null)
       __obj.asInstanceOf[Province]
     }
     
-    @scala.inline
-    implicit class ProvinceMutableBuilder[Self <: Province] (val x: Self) extends AnyVal {
+    extension [Self <: Province](x: Self) {
       
-      @scala.inline
-      def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasNull: Self = StObject.set(x, "alias", null)
+      inline def setAliasNull: Self = StObject.set(x, "alias", null)
       
-      @scala.inline
-      def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
+      inline def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
     }
   }
 }

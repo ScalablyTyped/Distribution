@@ -14,22 +14,17 @@ trait BackButtonEvent extends StObject {
 }
 object BackButtonEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: BackButton): BackButtonEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: BackButton): BackButtonEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackButtonEvent]
   }
   
-  @scala.inline
-  implicit class BackButtonEventMutableBuilder[Self <: BackButtonEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BackButtonEvent](x: Self) {
     
-    @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+    inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: BackButton): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: BackButton): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

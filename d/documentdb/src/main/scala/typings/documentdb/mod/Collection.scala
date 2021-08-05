@@ -25,31 +25,23 @@ trait Collection
 }
 object Collection {
   
-  @scala.inline
-  def apply(id: String): Collection = {
+  inline def apply(id: String): Collection = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collection]
   }
   
-  @scala.inline
-  implicit class CollectionMutableBuilder[Self <: Collection] (val x: Self) extends AnyVal {
+  extension [Self <: Collection](x: Self) {
     
-    @scala.inline
-    def setDefaultTtl(value: Double): Self = StObject.set(x, "defaultTtl", value.asInstanceOf[js.Any])
+    inline def setDefaultTtl(value: Double): Self = StObject.set(x, "defaultTtl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTtlUndefined: Self = StObject.set(x, "defaultTtl", js.undefined)
+    inline def setDefaultTtlUndefined: Self = StObject.set(x, "defaultTtl", js.undefined)
     
-    @scala.inline
-    def setIndexingPolicy(value: IndexingPolicy): Self = StObject.set(x, "indexingPolicy", value.asInstanceOf[js.Any])
+    inline def setIndexingPolicy(value: IndexingPolicy): Self = StObject.set(x, "indexingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexingPolicyUndefined: Self = StObject.set(x, "indexingPolicy", js.undefined)
+    inline def setIndexingPolicyUndefined: Self = StObject.set(x, "indexingPolicy", js.undefined)
     
-    @scala.inline
-    def setPartitionKey(value: CollectionPartitionKey): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+    inline def setPartitionKey(value: CollectionPartitionKey): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
+    inline def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
   }
 }

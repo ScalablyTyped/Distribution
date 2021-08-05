@@ -19,19 +19,15 @@ trait OvalArc
 }
 object OvalArc {
   
-  @scala.inline
-  def apply(models: IModelMap, paths: IPathMap): OvalArc = {
+  inline def apply(models: IModelMap, paths: IPathMap): OvalArc = {
     val __obj = js.Dynamic.literal(models = models.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[OvalArc]
   }
   
-  @scala.inline
-  implicit class OvalArcMutableBuilder[Self <: OvalArc] (val x: Self) extends AnyVal {
+  extension [Self <: OvalArc](x: Self) {
     
-    @scala.inline
-    def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }
 }

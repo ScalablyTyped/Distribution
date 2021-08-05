@@ -18,22 +18,17 @@ trait PollForThirdPartyJobsInput extends StObject {
 }
 object PollForThirdPartyJobsInput {
   
-  @scala.inline
-  def apply(actionTypeId: ActionTypeId): PollForThirdPartyJobsInput = {
+  inline def apply(actionTypeId: ActionTypeId): PollForThirdPartyJobsInput = {
     val __obj = js.Dynamic.literal(actionTypeId = actionTypeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PollForThirdPartyJobsInput]
   }
   
-  @scala.inline
-  implicit class PollForThirdPartyJobsInputMutableBuilder[Self <: PollForThirdPartyJobsInput] (val x: Self) extends AnyVal {
+  extension [Self <: PollForThirdPartyJobsInput](x: Self) {
     
-    @scala.inline
-    def setActionTypeId(value: ActionTypeId): Self = StObject.set(x, "actionTypeId", value.asInstanceOf[js.Any])
+    inline def setActionTypeId(value: ActionTypeId): Self = StObject.set(x, "actionTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBatchSize(value: MaxBatchSize): Self = StObject.set(x, "maxBatchSize", value.asInstanceOf[js.Any])
+    inline def setMaxBatchSize(value: MaxBatchSize): Self = StObject.set(x, "maxBatchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBatchSizeUndefined: Self = StObject.set(x, "maxBatchSize", js.undefined)
+    inline def setMaxBatchSizeUndefined: Self = StObject.set(x, "maxBatchSize", js.undefined)
   }
 }

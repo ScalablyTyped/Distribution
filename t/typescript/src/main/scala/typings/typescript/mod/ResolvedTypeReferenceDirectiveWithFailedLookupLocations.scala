@@ -12,25 +12,19 @@ trait ResolvedTypeReferenceDirectiveWithFailedLookupLocations extends StObject {
 }
 object ResolvedTypeReferenceDirectiveWithFailedLookupLocations {
   
-  @scala.inline
-  def apply(failedLookupLocations: js.Array[java.lang.String]): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = {
+  inline def apply(failedLookupLocations: js.Array[java.lang.String]): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = {
     val __obj = js.Dynamic.literal(failedLookupLocations = failedLookupLocations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
   }
   
-  @scala.inline
-  implicit class ResolvedTypeReferenceDirectiveWithFailedLookupLocationsMutableBuilder[Self <: ResolvedTypeReferenceDirectiveWithFailedLookupLocations] (val x: Self) extends AnyVal {
+  extension [Self <: ResolvedTypeReferenceDirectiveWithFailedLookupLocations](x: Self) {
     
-    @scala.inline
-    def setFailedLookupLocations(value: js.Array[java.lang.String]): Self = StObject.set(x, "failedLookupLocations", value.asInstanceOf[js.Any])
+    inline def setFailedLookupLocations(value: js.Array[java.lang.String]): Self = StObject.set(x, "failedLookupLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedLookupLocationsVarargs(value: java.lang.String*): Self = StObject.set(x, "failedLookupLocations", js.Array(value :_*))
+    inline def setFailedLookupLocationsVarargs(value: java.lang.String*): Self = StObject.set(x, "failedLookupLocations", js.Array(value :_*))
     
-    @scala.inline
-    def setResolvedTypeReferenceDirective(value: ResolvedTypeReferenceDirective): Self = StObject.set(x, "resolvedTypeReferenceDirective", value.asInstanceOf[js.Any])
+    inline def setResolvedTypeReferenceDirective(value: ResolvedTypeReferenceDirective): Self = StObject.set(x, "resolvedTypeReferenceDirective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedTypeReferenceDirectiveUndefined: Self = StObject.set(x, "resolvedTypeReferenceDirective", js.undefined)
+    inline def setResolvedTypeReferenceDirectiveUndefined: Self = StObject.set(x, "resolvedTypeReferenceDirective", js.undefined)
   }
 }

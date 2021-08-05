@@ -34,22 +34,18 @@ object typesGetBucketLocationOutputMod {
   }
   object GetBucketLocationOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketLocationOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketLocationOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketLocationOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketLocationOutputMutableBuilder[Self <: GetBucketLocationOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketLocationOutput](x: Self) {
       
-      @scala.inline
-      def setLocationConstraint(
+      inline def setLocationConstraint(
         value: EU | `eu-west-1` | `us-west-1` | `us-west-2` | `ap-south-1` | `ap-southeast-1` | `ap-southeast-2` | `ap-northeast-1` | `sa-east-1` | `cn-north-1` | `eu-central-1` | String
       ): Self = StObject.set(x, "LocationConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationConstraintUndefined: Self = StObject.set(x, "LocationConstraint", js.undefined)
+      inline def setLocationConstraintUndefined: Self = StObject.set(x, "LocationConstraint", js.undefined)
     }
   }
 }

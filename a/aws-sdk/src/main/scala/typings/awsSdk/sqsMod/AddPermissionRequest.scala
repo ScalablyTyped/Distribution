@@ -28,31 +28,23 @@ trait AddPermissionRequest extends StObject {
 }
 object AddPermissionRequest {
   
-  @scala.inline
-  def apply(AWSAccountIds: AWSAccountIdList, Actions: ActionNameList, Label: String, QueueUrl: String): AddPermissionRequest = {
+  inline def apply(AWSAccountIds: AWSAccountIdList, Actions: ActionNameList, Label: String, QueueUrl: String): AddPermissionRequest = {
     val __obj = js.Dynamic.literal(AWSAccountIds = AWSAccountIds.asInstanceOf[js.Any], Actions = Actions.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPermissionRequest]
   }
   
-  @scala.inline
-  implicit class AddPermissionRequestMutableBuilder[Self <: AddPermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddPermissionRequest](x: Self) {
     
-    @scala.inline
-    def setAWSAccountIds(value: AWSAccountIdList): Self = StObject.set(x, "AWSAccountIds", value.asInstanceOf[js.Any])
+    inline def setAWSAccountIds(value: AWSAccountIdList): Self = StObject.set(x, "AWSAccountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAWSAccountIdsVarargs(value: String*): Self = StObject.set(x, "AWSAccountIds", js.Array(value :_*))
+    inline def setAWSAccountIdsVarargs(value: String*): Self = StObject.set(x, "AWSAccountIds", js.Array(value :_*))
     
-    @scala.inline
-    def setActions(value: ActionNameList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: ActionNameList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: String*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
   }
 }

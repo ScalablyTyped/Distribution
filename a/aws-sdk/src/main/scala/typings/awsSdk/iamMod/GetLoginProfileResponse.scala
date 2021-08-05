@@ -13,16 +13,13 @@ trait GetLoginProfileResponse extends StObject {
 }
 object GetLoginProfileResponse {
   
-  @scala.inline
-  def apply(LoginProfile: LoginProfile): GetLoginProfileResponse = {
+  inline def apply(LoginProfile: LoginProfile): GetLoginProfileResponse = {
     val __obj = js.Dynamic.literal(LoginProfile = LoginProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLoginProfileResponse]
   }
   
-  @scala.inline
-  implicit class GetLoginProfileResponseMutableBuilder[Self <: GetLoginProfileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetLoginProfileResponse](x: Self) {
     
-    @scala.inline
-    def setLoginProfile(value: LoginProfile): Self = StObject.set(x, "LoginProfile", value.asInstanceOf[js.Any])
+    inline def setLoginProfile(value: LoginProfile): Self = StObject.set(x, "LoginProfile", value.asInstanceOf[js.Any])
   }
 }

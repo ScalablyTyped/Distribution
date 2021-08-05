@@ -23,31 +23,23 @@ trait OrganizationAggregationSource extends StObject {
 }
 object OrganizationAggregationSource {
   
-  @scala.inline
-  def apply(RoleArn: String): OrganizationAggregationSource = {
+  inline def apply(RoleArn: String): OrganizationAggregationSource = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationAggregationSource]
   }
   
-  @scala.inline
-  implicit class OrganizationAggregationSourceMutableBuilder[Self <: OrganizationAggregationSource] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationAggregationSource](x: Self) {
     
-    @scala.inline
-    def setAllAwsRegions(value: Boolean): Self = StObject.set(x, "AllAwsRegions", value.asInstanceOf[js.Any])
+    inline def setAllAwsRegions(value: Boolean): Self = StObject.set(x, "AllAwsRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllAwsRegionsUndefined: Self = StObject.set(x, "AllAwsRegions", js.undefined)
+    inline def setAllAwsRegionsUndefined: Self = StObject.set(x, "AllAwsRegions", js.undefined)
     
-    @scala.inline
-    def setAwsRegions(value: AggregatorRegionList): Self = StObject.set(x, "AwsRegions", value.asInstanceOf[js.Any])
+    inline def setAwsRegions(value: AggregatorRegionList): Self = StObject.set(x, "AwsRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsRegionsUndefined: Self = StObject.set(x, "AwsRegions", js.undefined)
+    inline def setAwsRegionsUndefined: Self = StObject.set(x, "AwsRegions", js.undefined)
     
-    @scala.inline
-    def setAwsRegionsVarargs(value: String*): Self = StObject.set(x, "AwsRegions", js.Array(value :_*))
+    inline def setAwsRegionsVarargs(value: String*): Self = StObject.set(x, "AwsRegions", js.Array(value :_*))
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }
 }

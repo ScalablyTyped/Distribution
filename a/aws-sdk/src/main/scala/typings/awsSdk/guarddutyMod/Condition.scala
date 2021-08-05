@@ -68,97 +68,67 @@ trait Condition extends StObject {
 }
 object Condition {
   
-  @scala.inline
-  def apply(): Condition = {
+  inline def apply(): Condition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Condition]
   }
   
-  @scala.inline
-  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+  extension [Self <: Condition](x: Self) {
     
-    @scala.inline
-    def setEq(value: Eq): Self = StObject.set(x, "Eq", value.asInstanceOf[js.Any])
+    inline def setEq(value: Eq): Self = StObject.set(x, "Eq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqUndefined: Self = StObject.set(x, "Eq", js.undefined)
+    inline def setEqUndefined: Self = StObject.set(x, "Eq", js.undefined)
     
-    @scala.inline
-    def setEqVarargs(value: String*): Self = StObject.set(x, "Eq", js.Array(value :_*))
+    inline def setEqVarargs(value: String*): Self = StObject.set(x, "Eq", js.Array(value :_*))
     
-    @scala.inline
-    def setEquals(value: Equals): Self = StObject.set(x, "Equals", value.asInstanceOf[js.Any])
+    inline def setEquals(value: Equals): Self = StObject.set(x, "Equals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqualsUndefined: Self = StObject.set(x, "Equals", js.undefined)
+    inline def setEqualsUndefined: Self = StObject.set(x, "Equals", js.undefined)
     
-    @scala.inline
-    def setEqualsVarargs(value: String*): Self = StObject.set(x, "Equals", js.Array(value :_*))
+    inline def setEqualsVarargs(value: String*): Self = StObject.set(x, "Equals", js.Array(value :_*))
     
-    @scala.inline
-    def setGreaterThan(value: Long): Self = StObject.set(x, "GreaterThan", value.asInstanceOf[js.Any])
+    inline def setGreaterThan(value: Long): Self = StObject.set(x, "GreaterThan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreaterThanOrEqual(value: Long): Self = StObject.set(x, "GreaterThanOrEqual", value.asInstanceOf[js.Any])
+    inline def setGreaterThanOrEqual(value: Long): Self = StObject.set(x, "GreaterThanOrEqual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreaterThanOrEqualUndefined: Self = StObject.set(x, "GreaterThanOrEqual", js.undefined)
+    inline def setGreaterThanOrEqualUndefined: Self = StObject.set(x, "GreaterThanOrEqual", js.undefined)
     
-    @scala.inline
-    def setGreaterThanUndefined: Self = StObject.set(x, "GreaterThan", js.undefined)
+    inline def setGreaterThanUndefined: Self = StObject.set(x, "GreaterThan", js.undefined)
     
-    @scala.inline
-    def setGt(value: Integer): Self = StObject.set(x, "Gt", value.asInstanceOf[js.Any])
+    inline def setGt(value: Integer): Self = StObject.set(x, "Gt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGtUndefined: Self = StObject.set(x, "Gt", js.undefined)
+    inline def setGtUndefined: Self = StObject.set(x, "Gt", js.undefined)
     
-    @scala.inline
-    def setGte(value: Integer): Self = StObject.set(x, "Gte", value.asInstanceOf[js.Any])
+    inline def setGte(value: Integer): Self = StObject.set(x, "Gte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGteUndefined: Self = StObject.set(x, "Gte", js.undefined)
+    inline def setGteUndefined: Self = StObject.set(x, "Gte", js.undefined)
     
-    @scala.inline
-    def setLessThan(value: Long): Self = StObject.set(x, "LessThan", value.asInstanceOf[js.Any])
+    inline def setLessThan(value: Long): Self = StObject.set(x, "LessThan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLessThanOrEqual(value: Long): Self = StObject.set(x, "LessThanOrEqual", value.asInstanceOf[js.Any])
+    inline def setLessThanOrEqual(value: Long): Self = StObject.set(x, "LessThanOrEqual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLessThanOrEqualUndefined: Self = StObject.set(x, "LessThanOrEqual", js.undefined)
+    inline def setLessThanOrEqualUndefined: Self = StObject.set(x, "LessThanOrEqual", js.undefined)
     
-    @scala.inline
-    def setLessThanUndefined: Self = StObject.set(x, "LessThan", js.undefined)
+    inline def setLessThanUndefined: Self = StObject.set(x, "LessThan", js.undefined)
     
-    @scala.inline
-    def setLt(value: Integer): Self = StObject.set(x, "Lt", value.asInstanceOf[js.Any])
+    inline def setLt(value: Integer): Self = StObject.set(x, "Lt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLtUndefined: Self = StObject.set(x, "Lt", js.undefined)
+    inline def setLtUndefined: Self = StObject.set(x, "Lt", js.undefined)
     
-    @scala.inline
-    def setLte(value: Integer): Self = StObject.set(x, "Lte", value.asInstanceOf[js.Any])
+    inline def setLte(value: Integer): Self = StObject.set(x, "Lte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLteUndefined: Self = StObject.set(x, "Lte", js.undefined)
+    inline def setLteUndefined: Self = StObject.set(x, "Lte", js.undefined)
     
-    @scala.inline
-    def setNeq(value: Neq): Self = StObject.set(x, "Neq", value.asInstanceOf[js.Any])
+    inline def setNeq(value: Neq): Self = StObject.set(x, "Neq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeqUndefined: Self = StObject.set(x, "Neq", js.undefined)
+    inline def setNeqUndefined: Self = StObject.set(x, "Neq", js.undefined)
     
-    @scala.inline
-    def setNeqVarargs(value: String*): Self = StObject.set(x, "Neq", js.Array(value :_*))
+    inline def setNeqVarargs(value: String*): Self = StObject.set(x, "Neq", js.Array(value :_*))
     
-    @scala.inline
-    def setNotEquals(value: NotEquals): Self = StObject.set(x, "NotEquals", value.asInstanceOf[js.Any])
+    inline def setNotEquals(value: NotEquals): Self = StObject.set(x, "NotEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotEqualsUndefined: Self = StObject.set(x, "NotEquals", js.undefined)
+    inline def setNotEqualsUndefined: Self = StObject.set(x, "NotEquals", js.undefined)
     
-    @scala.inline
-    def setNotEqualsVarargs(value: String*): Self = StObject.set(x, "NotEquals", js.Array(value :_*))
+    inline def setNotEqualsVarargs(value: String*): Self = StObject.set(x, "NotEquals", js.Array(value :_*))
   }
 }

@@ -13,19 +13,15 @@ trait GetNamespaceResponse extends StObject {
 }
 object GetNamespaceResponse {
   
-  @scala.inline
-  def apply(): GetNamespaceResponse = {
+  inline def apply(): GetNamespaceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetNamespaceResponse]
   }
   
-  @scala.inline
-  implicit class GetNamespaceResponseMutableBuilder[Self <: GetNamespaceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetNamespaceResponse](x: Self) {
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
   }
 }

@@ -25,52 +25,37 @@ trait ApplePushNotificationCertificate
 }
 object ApplePushNotificationCertificate {
   
-  @scala.inline
-  def apply(): ApplePushNotificationCertificate = {
+  inline def apply(): ApplePushNotificationCertificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplePushNotificationCertificate]
   }
   
-  @scala.inline
-  implicit class ApplePushNotificationCertificateMutableBuilder[Self <: ApplePushNotificationCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: ApplePushNotificationCertificate](x: Self) {
     
-    @scala.inline
-    def setAppleIdentifier(value: NullableOption[String]): Self = StObject.set(x, "appleIdentifier", value.asInstanceOf[js.Any])
+    inline def setAppleIdentifier(value: NullableOption[String]): Self = StObject.set(x, "appleIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppleIdentifierNull: Self = StObject.set(x, "appleIdentifier", null)
+    inline def setAppleIdentifierNull: Self = StObject.set(x, "appleIdentifier", null)
     
-    @scala.inline
-    def setAppleIdentifierUndefined: Self = StObject.set(x, "appleIdentifier", js.undefined)
+    inline def setAppleIdentifierUndefined: Self = StObject.set(x, "appleIdentifier", js.undefined)
     
-    @scala.inline
-    def setCertificate(value: NullableOption[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: NullableOption[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateNull: Self = StObject.set(x, "certificate", null)
+    inline def setCertificateNull: Self = StObject.set(x, "certificate", null)
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
-    @scala.inline
-    def setExpirationDateTime(value: String): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
+    inline def setExpirationDateTime(value: String): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
+    inline def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
-    @scala.inline
-    def setTopicIdentifier(value: NullableOption[String]): Self = StObject.set(x, "topicIdentifier", value.asInstanceOf[js.Any])
+    inline def setTopicIdentifier(value: NullableOption[String]): Self = StObject.set(x, "topicIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicIdentifierNull: Self = StObject.set(x, "topicIdentifier", null)
+    inline def setTopicIdentifierNull: Self = StObject.set(x, "topicIdentifier", null)
     
-    @scala.inline
-    def setTopicIdentifierUndefined: Self = StObject.set(x, "topicIdentifier", js.undefined)
+    inline def setTopicIdentifierUndefined: Self = StObject.set(x, "topicIdentifier", js.undefined)
   }
 }

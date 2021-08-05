@@ -36,32 +36,24 @@ object mod extends Shortcut {
   }
   object Color {
     
-    @scala.inline
-    def apply(name: String, value: String): Color = {
+    inline def apply(name: String, value: String): Color = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setCss(value: Boolean): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: Boolean): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVga(value: Boolean): Self = StObject.set(x, "vga", value.asInstanceOf[js.Any])
+      inline def setVga(value: Boolean): Self = StObject.set(x, "vga", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVgaUndefined: Self = StObject.set(x, "vga", js.undefined)
+      inline def setVgaUndefined: Self = StObject.set(x, "vga", js.undefined)
     }
   }
   

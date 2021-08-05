@@ -19,8 +19,7 @@ object Scenes {
   @JSImport("phaser", "Scenes.CREATING")
   @js.native
   def CREATING: integer = js.native
-  @scala.inline
-  def CREATING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CREATING")(x.asInstanceOf[js.Any])
+  inline def CREATING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CREATING")(x.asInstanceOf[js.Any])
   
   /**
     * Scene state.
@@ -28,8 +27,7 @@ object Scenes {
   @JSImport("phaser", "Scenes.DESTROYED")
   @js.native
   def DESTROYED: integer = js.native
-  @scala.inline
-  def DESTROYED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DESTROYED")(x.asInstanceOf[js.Any])
+  inline def DESTROYED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DESTROYED")(x.asInstanceOf[js.Any])
   
   object Events {
     
@@ -357,15 +355,13 @@ object Scenes {
     * Builds an array of which physics plugins should be activated for the given Scene.
     * @param sys The scene system to get the physics systems of.
     */
-  @scala.inline
-  def GetPhysicsPlugins(sys: typings.phaser.Phaser.Scenes.Systems): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetPhysicsPlugins")(sys.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def GetPhysicsPlugins(sys: typings.phaser.Phaser.Scenes.Systems): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetPhysicsPlugins")(sys.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
   /**
     * Builds an array of which plugins (not including physics plugins) should be activated for the given Scene.
     * @param sys The Scene Systems object to check for plugins.
     */
-  @scala.inline
-  def GetScenePlugins(sys: typings.phaser.Phaser.Scenes.Systems): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetScenePlugins")(sys.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def GetScenePlugins(sys: typings.phaser.Phaser.Scenes.Systems): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetScenePlugins")(sys.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
   /**
     * Scene state.
@@ -373,8 +369,7 @@ object Scenes {
   @JSImport("phaser", "Scenes.INIT")
   @js.native
   def INIT: integer = js.native
-  @scala.inline
-  def INIT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INIT")(x.asInstanceOf[js.Any])
+  inline def INIT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INIT")(x.asInstanceOf[js.Any])
   
   /**
     * Scene state.
@@ -382,8 +377,7 @@ object Scenes {
   @JSImport("phaser", "Scenes.LOADING")
   @js.native
   def LOADING: integer = js.native
-  @scala.inline
-  def LOADING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING")(x.asInstanceOf[js.Any])
+  inline def LOADING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING")(x.asInstanceOf[js.Any])
   
   /**
     * Scene state.
@@ -391,8 +385,7 @@ object Scenes {
   @JSImport("phaser", "Scenes.PAUSED")
   @js.native
   def PAUSED: integer = js.native
-  @scala.inline
-  def PAUSED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSED")(x.asInstanceOf[js.Any])
+  inline def PAUSED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSED")(x.asInstanceOf[js.Any])
   
   /**
     * Scene state.
@@ -400,8 +393,7 @@ object Scenes {
   @JSImport("phaser", "Scenes.PENDING")
   @js.native
   def PENDING: integer = js.native
-  @scala.inline
-  def PENDING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING")(x.asInstanceOf[js.Any])
+  inline def PENDING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING")(x.asInstanceOf[js.Any])
   
   /**
     * Scene state.
@@ -409,8 +401,7 @@ object Scenes {
   @JSImport("phaser", "Scenes.RUNNING")
   @js.native
   def RUNNING: integer = js.native
-  @scala.inline
-  def RUNNING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNNING")(x.asInstanceOf[js.Any])
+  inline def RUNNING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNNING")(x.asInstanceOf[js.Any])
   
   /**
     * Scene state.
@@ -418,8 +409,7 @@ object Scenes {
   @JSImport("phaser", "Scenes.SHUTDOWN")
   @js.native
   def SHUTDOWN: integer = js.native
-  @scala.inline
-  def SHUTDOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHUTDOWN")(x.asInstanceOf[js.Any])
+  inline def SHUTDOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHUTDOWN")(x.asInstanceOf[js.Any])
   
   /**
     * Scene state.
@@ -427,8 +417,7 @@ object Scenes {
   @JSImport("phaser", "Scenes.SLEEPING")
   @js.native
   def SLEEPING: integer = js.native
-  @scala.inline
-  def SLEEPING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLEEPING")(x.asInstanceOf[js.Any])
+  inline def SLEEPING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLEEPING")(x.asInstanceOf[js.Any])
   
   /**
     * Scene state.
@@ -436,8 +425,7 @@ object Scenes {
   @JSImport("phaser", "Scenes.START")
   @js.native
   def START: integer = js.native
-  @scala.inline
-  def START_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
+  inline def START_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
   
   /**
     * The Scene Manager.
@@ -483,10 +471,8 @@ object Scenes {
       * Takes a Scene configuration object and returns a fully formed System Settings object.
       * @param config The Scene configuration object used to create this Scene Settings.
       */
-    @scala.inline
-    def create(config: String): SettingsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[SettingsObject]
-    @scala.inline
-    def create(config: SettingsConfig): SettingsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[SettingsObject]
+    inline def create(config: String): SettingsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[SettingsObject]
+    inline def create(config: SettingsConfig): SettingsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[SettingsObject]
   }
   
   /**

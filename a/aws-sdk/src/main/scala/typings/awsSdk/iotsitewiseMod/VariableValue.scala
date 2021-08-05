@@ -18,22 +18,17 @@ trait VariableValue extends StObject {
 }
 object VariableValue {
   
-  @scala.inline
-  def apply(propertyId: Macro): VariableValue = {
+  inline def apply(propertyId: Macro): VariableValue = {
     val __obj = js.Dynamic.literal(propertyId = propertyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableValue]
   }
   
-  @scala.inline
-  implicit class VariableValueMutableBuilder[Self <: VariableValue] (val x: Self) extends AnyVal {
+  extension [Self <: VariableValue](x: Self) {
     
-    @scala.inline
-    def setHierarchyId(value: Macro): Self = StObject.set(x, "hierarchyId", value.asInstanceOf[js.Any])
+    inline def setHierarchyId(value: Macro): Self = StObject.set(x, "hierarchyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchyIdUndefined: Self = StObject.set(x, "hierarchyId", js.undefined)
+    inline def setHierarchyIdUndefined: Self = StObject.set(x, "hierarchyId", js.undefined)
     
-    @scala.inline
-    def setPropertyId(value: Macro): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
+    inline def setPropertyId(value: Macro): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
   }
 }

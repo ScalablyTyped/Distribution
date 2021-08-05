@@ -12,16 +12,13 @@ trait DeathZoneSource extends StObject {
 }
 object DeathZoneSource {
   
-  @scala.inline
-  def apply(contains: (/* x */ Double, /* y */ Double) => Unit): DeathZoneSource = {
+  inline def apply(contains: (/* x */ Double, /* y */ Double) => Unit): DeathZoneSource = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction2(contains))
     __obj.asInstanceOf[DeathZoneSource]
   }
   
-  @scala.inline
-  implicit class DeathZoneSourceMutableBuilder[Self <: DeathZoneSource] (val x: Self) extends AnyVal {
+  extension [Self <: DeathZoneSource](x: Self) {
     
-    @scala.inline
-    def setContains(value: (/* x */ Double, /* y */ Double) => Unit): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
+    inline def setContains(value: (/* x */ Double, /* y */ Double) => Unit): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
   }
 }

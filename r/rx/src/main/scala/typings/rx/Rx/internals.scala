@@ -29,8 +29,7 @@ object internals {
   }
   object AbstractObserver {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       completed: () => Unit,
       dispose: () => Unit,
       error: js.Any => Unit,
@@ -45,23 +44,17 @@ object internals {
       __obj.asInstanceOf[AbstractObserver[T]]
     }
     
-    @scala.inline
-    implicit class AbstractObserverMutableBuilder[Self <: AbstractObserver[?], T] (val x: Self & AbstractObserver[T]) extends AnyVal {
+    extension [Self <: AbstractObserver[?], T](x: Self & AbstractObserver[T]) {
       
-      @scala.inline
-      def setCompleted(value: () => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction0(value))
+      inline def setCompleted(value: () => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFail(value: js.Any => Boolean): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+      inline def setFail(value: js.Any => Boolean): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsStopped(value: Boolean): Self = StObject.set(x, "isStopped", value.asInstanceOf[js.Any])
+      inline def setIsStopped(value: Boolean): Self = StObject.set(x, "isStopped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
   }
   
@@ -75,8 +68,7 @@ object internals {
        with Error
   object ArgumentOutOfRangeError {
     
-    @scala.inline
-    def apply(message: String, name: String): ArgumentOutOfRangeError = {
+    inline def apply(message: String, name: String): ArgumentOutOfRangeError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArgumentOutOfRangeError]
     }
@@ -92,8 +84,7 @@ object internals {
        with Error
   object EmptyError {
     
-    @scala.inline
-    def apply(message: String, name: String): EmptyError = {
+    inline def apply(message: String, name: String): EmptyError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmptyError]
     }
@@ -109,8 +100,7 @@ object internals {
        with Error
   object NotImplementedError {
     
-    @scala.inline
-    def apply(message: String, name: String): NotImplementedError = {
+    inline def apply(message: String, name: String): NotImplementedError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotImplementedError]
     }
@@ -126,8 +116,7 @@ object internals {
        with Error
   object NotSupportedError {
     
-    @scala.inline
-    def apply(message: String, name: String): NotSupportedError = {
+    inline def apply(message: String, name: String): NotSupportedError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotSupportedError]
     }
@@ -143,8 +132,7 @@ object internals {
        with Error
   object ObjectDisposedError {
     
-    @scala.inline
-    def apply(message: String, name: String): ObjectDisposedError = {
+    inline def apply(message: String, name: String): ObjectDisposedError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjectDisposedError]
     }
@@ -181,8 +169,7 @@ object internals {
   }
   object PriorityQueue {
     
-    @scala.inline
-    def apply[TTime](
+    inline def apply[TTime](
       dequeue: () => js.Any,
       enqueue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ScheduledItem<TTime> */ js.Any => Unit,
       heapify: Double => Unit,
@@ -197,39 +184,29 @@ object internals {
       __obj.asInstanceOf[PriorityQueue[TTime]]
     }
     
-    @scala.inline
-    implicit class PriorityQueueMutableBuilder[Self <: PriorityQueue[?], TTime] (val x: Self & PriorityQueue[TTime]) extends AnyVal {
+    extension [Self <: PriorityQueue[?], TTime](x: Self & PriorityQueue[TTime]) {
       
-      @scala.inline
-      def setDequeue(value: () => js.Any): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
+      inline def setDequeue(value: () => js.Any): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnqueue(
+      inline def setEnqueue(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ScheduledItem<TTime> */ js.Any => Unit
       ): Self = StObject.set(x, "enqueue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeapify(value: Double => Unit): Self = StObject.set(x, "heapify", js.Any.fromFunction1(value))
+      inline def setHeapify(value: Double => Unit): Self = StObject.set(x, "heapify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsHigherPriority(value: (Double, Double) => Boolean): Self = StObject.set(x, "isHigherPriority", js.Any.fromFunction2(value))
+      inline def setIsHigherPriority(value: (Double, Double) => Boolean): Self = StObject.set(x, "isHigherPriority", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeek(value: () => js.Any): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
+      inline def setPeek(value: () => js.Any): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPercolate(value: Double => Unit): Self = StObject.set(x, "percolate", js.Any.fromFunction1(value))
+      inline def setPercolate(value: Double => Unit): Self = StObject.set(x, "percolate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(
+      inline def setRemove(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ScheduledItem<TTime> */ js.Any => Boolean
       ): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveAt(value: Double => Unit): Self = StObject.set(x, "removeAt", js.Any.fromFunction1(value))
+      inline def setRemoveAt(value: Double => Unit): Self = StObject.set(x, "removeAt", js.Any.fromFunction1(value))
     }
   }
   
@@ -247,17 +224,14 @@ object internals {
   }
   object SchedulePeriodicRecursive {
     
-    @scala.inline
-    def apply(start: () => IDisposable): SchedulePeriodicRecursive = {
+    inline def apply(start: () => IDisposable): SchedulePeriodicRecursive = {
       val __obj = js.Dynamic.literal(start = js.Any.fromFunction0(start))
       __obj.asInstanceOf[SchedulePeriodicRecursive]
     }
     
-    @scala.inline
-    implicit class SchedulePeriodicRecursiveMutableBuilder[Self <: SchedulePeriodicRecursive] (val x: Self) extends AnyVal {
+    extension [Self <: SchedulePeriodicRecursive](x: Self) {
       
-      @scala.inline
-      def setStart(value: () => IDisposable): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => IDisposable): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     }
   }
   
@@ -296,8 +270,7 @@ object internals {
   }
   object ScheduledItem {
     
-    @scala.inline
-    def apply[TTime](
+    inline def apply[TTime](
       action: (IScheduler, js.Any) => IDisposable,
       compareTo: ScheduledItem[TTime] => Double,
       comparer: (TTime, TTime) => Double,
@@ -313,38 +286,27 @@ object internals {
       __obj.asInstanceOf[ScheduledItem[TTime]]
     }
     
-    @scala.inline
-    implicit class ScheduledItemMutableBuilder[Self <: ScheduledItem[?], TTime] (val x: Self & ScheduledItem[TTime]) extends AnyVal {
+    extension [Self <: ScheduledItem[?], TTime](x: Self & ScheduledItem[TTime]) {
       
-      @scala.inline
-      def setAction(value: (IScheduler, js.Any) => IDisposable): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
+      inline def setAction(value: (IScheduler, js.Any) => IDisposable): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompareTo(value: ScheduledItem[TTime] => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
+      inline def setCompareTo(value: ScheduledItem[TTime] => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComparer(value: (TTime, TTime) => Double): Self = StObject.set(x, "comparer", js.Any.fromFunction2(value))
+      inline def setComparer(value: (TTime, TTime) => Double): Self = StObject.set(x, "comparer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDisposable(value: SingleAssignmentDisposable): Self = StObject.set(x, "disposable", value.asInstanceOf[js.Any])
+      inline def setDisposable(value: SingleAssignmentDisposable): Self = StObject.set(x, "disposable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDueTime(value: TTime): Self = StObject.set(x, "dueTime", value.asInstanceOf[js.Any])
+      inline def setDueTime(value: TTime): Self = StObject.set(x, "dueTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvoke(value: () => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction0(value))
+      inline def setInvoke(value: () => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInvokeCore(value: () => IDisposable): Self = StObject.set(x, "invokeCore", js.Any.fromFunction0(value))
+      inline def setInvokeCore(value: () => IDisposable): Self = StObject.set(x, "invokeCore", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCancelled(value: () => Boolean): Self = StObject.set(x, "isCancelled", js.Any.fromFunction0(value))
+      inline def setIsCancelled(value: () => Boolean): Self = StObject.set(x, "isCancelled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScheduler(value: IScheduler): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
+      inline def setScheduler(value: IScheduler): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: TTime): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: TTime): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -375,8 +337,7 @@ object internals {
   }
   object ScheduledObserver {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       asObserver: () => Observer[T],
       checked: () => CheckedObserver[T],
       ensureActive: () => Unit,
@@ -391,11 +352,9 @@ object internals {
       __obj.asInstanceOf[ScheduledObserver[T]]
     }
     
-    @scala.inline
-    implicit class ScheduledObserverMutableBuilder[Self <: ScheduledObserver[?], T] (val x: Self & ScheduledObserver[T]) extends AnyVal {
+    extension [Self <: ScheduledObserver[?], T](x: Self & ScheduledObserver[T]) {
       
-      @scala.inline
-      def setEnsureActive(value: () => Unit): Self = StObject.set(x, "ensureActive", js.Any.fromFunction0(value))
+      inline def setEnsureActive(value: () => Unit): Self = StObject.set(x, "ensureActive", js.Any.fromFunction0(value))
     }
   }
 }

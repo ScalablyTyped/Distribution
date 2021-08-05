@@ -68,88 +68,61 @@ trait GraphqlApi extends StObject {
 }
 object GraphqlApi {
   
-  @scala.inline
-  def apply(): GraphqlApi = {
+  inline def apply(): GraphqlApi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GraphqlApi]
   }
   
-  @scala.inline
-  implicit class GraphqlApiMutableBuilder[Self <: GraphqlApi] (val x: Self) extends AnyVal {
+  extension [Self <: GraphqlApi](x: Self) {
     
-    @scala.inline
-    def setAdditionalAuthenticationProviders(value: AdditionalAuthenticationProviders): Self = StObject.set(x, "additionalAuthenticationProviders", value.asInstanceOf[js.Any])
+    inline def setAdditionalAuthenticationProviders(value: AdditionalAuthenticationProviders): Self = StObject.set(x, "additionalAuthenticationProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalAuthenticationProvidersUndefined: Self = StObject.set(x, "additionalAuthenticationProviders", js.undefined)
+    inline def setAdditionalAuthenticationProvidersUndefined: Self = StObject.set(x, "additionalAuthenticationProviders", js.undefined)
     
-    @scala.inline
-    def setAdditionalAuthenticationProvidersVarargs(value: AdditionalAuthenticationProvider*): Self = StObject.set(x, "additionalAuthenticationProviders", js.Array(value :_*))
+    inline def setAdditionalAuthenticationProvidersVarargs(value: AdditionalAuthenticationProvider*): Self = StObject.set(x, "additionalAuthenticationProviders", js.Array(value :_*))
     
-    @scala.inline
-    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
+    inline def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+    inline def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
+    inline def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
     
-    @scala.inline
-    def setLogConfig(value: LogConfig): Self = StObject.set(x, "logConfig", value.asInstanceOf[js.Any])
+    inline def setLogConfig(value: LogConfig): Self = StObject.set(x, "logConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogConfigUndefined: Self = StObject.set(x, "logConfig", js.undefined)
+    inline def setLogConfigUndefined: Self = StObject.set(x, "logConfig", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOpenIDConnectConfig(value: OpenIDConnectConfig): Self = StObject.set(x, "openIDConnectConfig", value.asInstanceOf[js.Any])
+    inline def setOpenIDConnectConfig(value: OpenIDConnectConfig): Self = StObject.set(x, "openIDConnectConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenIDConnectConfigUndefined: Self = StObject.set(x, "openIDConnectConfig", js.undefined)
+    inline def setOpenIDConnectConfigUndefined: Self = StObject.set(x, "openIDConnectConfig", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setUris(value: MapOfStringToString): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
+    inline def setUris(value: MapOfStringToString): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
+    inline def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
     
-    @scala.inline
-    def setUserPoolConfig(value: UserPoolConfig): Self = StObject.set(x, "userPoolConfig", value.asInstanceOf[js.Any])
+    inline def setUserPoolConfig(value: UserPoolConfig): Self = StObject.set(x, "userPoolConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolConfigUndefined: Self = StObject.set(x, "userPoolConfig", js.undefined)
+    inline def setUserPoolConfigUndefined: Self = StObject.set(x, "userPoolConfig", js.undefined)
     
-    @scala.inline
-    def setWafWebAclArn(value: String): Self = StObject.set(x, "wafWebAclArn", value.asInstanceOf[js.Any])
+    inline def setWafWebAclArn(value: String): Self = StObject.set(x, "wafWebAclArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWafWebAclArnUndefined: Self = StObject.set(x, "wafWebAclArn", js.undefined)
+    inline def setWafWebAclArnUndefined: Self = StObject.set(x, "wafWebAclArn", js.undefined)
     
-    @scala.inline
-    def setXrayEnabled(value: Boolean): Self = StObject.set(x, "xrayEnabled", value.asInstanceOf[js.Any])
+    inline def setXrayEnabled(value: Boolean): Self = StObject.set(x, "xrayEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXrayEnabledUndefined: Self = StObject.set(x, "xrayEnabled", js.undefined)
+    inline def setXrayEnabledUndefined: Self = StObject.set(x, "xrayEnabled", js.undefined)
   }
 }

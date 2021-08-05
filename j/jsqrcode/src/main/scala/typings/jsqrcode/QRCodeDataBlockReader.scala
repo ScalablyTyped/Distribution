@@ -38,8 +38,7 @@ trait QRCodeDataBlockReader extends StObject {
 }
 object QRCodeDataBlockReader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataByte: js.Array[String | js.Array[Double]],
     NextMode: () => Double,
     bitPointer: Double,
@@ -60,58 +59,40 @@ object QRCodeDataBlockReader {
     __obj.asInstanceOf[QRCodeDataBlockReader]
   }
   
-  @scala.inline
-  implicit class QRCodeDataBlockReaderMutableBuilder[Self <: QRCodeDataBlockReader] (val x: Self) extends AnyVal {
+  extension [Self <: QRCodeDataBlockReader](x: Self) {
     
-    @scala.inline
-    def setBitPointer(value: Double): Self = StObject.set(x, "bitPointer", value.asInstanceOf[js.Any])
+    inline def setBitPointer(value: Double): Self = StObject.set(x, "bitPointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockPointer(value: Double): Self = StObject.set(x, "blockPointer", value.asInstanceOf[js.Any])
+    inline def setBlockPointer(value: Double): Self = StObject.set(x, "blockPointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocks(value: js.Array[Double]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+    inline def setBlocks(value: js.Array[Double]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocksVarargs(value: Double*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: Double*): Self = StObject.set(x, "blocks", js.Array(value :_*))
     
-    @scala.inline
-    def setDataByte(value: js.Array[String | js.Array[Double]]): Self = StObject.set(x, "DataByte", value.asInstanceOf[js.Any])
+    inline def setDataByte(value: js.Array[String | js.Array[Double]]): Self = StObject.set(x, "DataByte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataByteVarargs(value: (String | js.Array[Double])*): Self = StObject.set(x, "DataByte", js.Array(value :_*))
+    inline def setDataByteVarargs(value: (String | js.Array[Double])*): Self = StObject.set(x, "DataByte", js.Array(value :_*))
     
-    @scala.inline
-    def setDataLength(value: Double): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
+    inline def setDataLength(value: Double): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLengthMode(value: Double): Self = StObject.set(x, "dataLengthMode", value.asInstanceOf[js.Any])
+    inline def setDataLengthMode(value: Double): Self = StObject.set(x, "dataLengthMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet8bitByteArray(value: Double => js.Array[Double]): Self = StObject.set(x, "get8bitByteArray", js.Any.fromFunction1(value))
+    inline def setGet8bitByteArray(value: Double => js.Array[Double]): Self = StObject.set(x, "get8bitByteArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDataLength(value: Double => Double): Self = StObject.set(x, "getDataLength", js.Any.fromFunction1(value))
+    inline def setGetDataLength(value: Double => Double): Self = StObject.set(x, "getDataLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFigureString(value: Double => String): Self = StObject.set(x, "getFigureString", js.Any.fromFunction1(value))
+    inline def setGetFigureString(value: Double => String): Self = StObject.set(x, "getFigureString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetKanjiString(value: Double => String): Self = StObject.set(x, "getKanjiString", js.Any.fromFunction1(value))
+    inline def setGetKanjiString(value: Double => String): Self = StObject.set(x, "getKanjiString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNextBits(value: Double => Double): Self = StObject.set(x, "getNextBits", js.Any.fromFunction1(value))
+    inline def setGetNextBits(value: Double => Double): Self = StObject.set(x, "getNextBits", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRomanAndFigureString(value: Double => String): Self = StObject.set(x, "getRomanAndFigureString", js.Any.fromFunction1(value))
+    inline def setGetRomanAndFigureString(value: Double => String): Self = StObject.set(x, "getRomanAndFigureString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNextMode(value: () => Double): Self = StObject.set(x, "NextMode", js.Any.fromFunction0(value))
+    inline def setNextMode(value: () => Double): Self = StObject.set(x, "NextMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNumErrorCorrectionCode(value: Double): Self = StObject.set(x, "numErrorCorrectionCode", value.asInstanceOf[js.Any])
+    inline def setNumErrorCorrectionCode(value: Double): Self = StObject.set(x, "numErrorCorrectionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseECIValue(value: () => Double): Self = StObject.set(x, "parseECIValue", js.Any.fromFunction0(value))
+    inline def setParseECIValue(value: () => Double): Self = StObject.set(x, "parseECIValue", js.Any.fromFunction0(value))
   }
 }

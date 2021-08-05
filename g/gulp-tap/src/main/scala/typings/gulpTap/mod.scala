@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(tapFunction: js.Function2[/* file */ File, /* t */ js.UndefOr[js.Object], Unit]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(tapFunction.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(tapFunction: js.Function2[/* file */ File, /* t */ js.UndefOr[js.Object], Unit]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(tapFunction.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-tap", JSImport.Namespace)
   @js.native

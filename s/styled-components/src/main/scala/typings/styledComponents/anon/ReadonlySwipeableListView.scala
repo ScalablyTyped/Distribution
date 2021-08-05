@@ -21,8 +21,7 @@ trait ReadonlySwipeableListView extends StObject {
 }
 object ReadonlySwipeableListView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bounceFirstRowOnMount: Boolean,
     dataSource: SwipeableListViewDataSource,
     maxSwipeDistance: Double,
@@ -33,22 +32,16 @@ object ReadonlySwipeableListView {
     __obj.asInstanceOf[ReadonlySwipeableListView]
   }
   
-  @scala.inline
-  implicit class ReadonlySwipeableListViewMutableBuilder[Self <: ReadonlySwipeableListView] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlySwipeableListView](x: Self) {
     
-    @scala.inline
-    def setBounceFirstRowOnMount(value: Boolean): Self = StObject.set(x, "bounceFirstRowOnMount", value.asInstanceOf[js.Any])
+    inline def setBounceFirstRowOnMount(value: Boolean): Self = StObject.set(x, "bounceFirstRowOnMount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSource(value: SwipeableListViewDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: SwipeableListViewDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSwipeDistance(value: Double): Self = StObject.set(x, "maxSwipeDistance", value.asInstanceOf[js.Any])
+    inline def setMaxSwipeDistance(value: Double): Self = StObject.set(x, "maxSwipeDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderQuickActions(value: (/* rowData */ js.Any, /* sectionID */ String, /* rowID */ String) => ReactElement): Self = StObject.set(x, "renderQuickActions", js.Any.fromFunction3(value))
+    inline def setRenderQuickActions(value: (/* rowData */ js.Any, /* sectionID */ String, /* rowID */ String) => ReactElement): Self = StObject.set(x, "renderQuickActions", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRenderRow(value: (/* rowData */ js.Any, /* sectionID */ String, /* rowID */ String) => ReactElement): Self = StObject.set(x, "renderRow", js.Any.fromFunction3(value))
+    inline def setRenderRow(value: (/* rowData */ js.Any, /* sectionID */ String, /* rowID */ String) => ReactElement): Self = StObject.set(x, "renderRow", js.Any.fromFunction3(value))
   }
 }

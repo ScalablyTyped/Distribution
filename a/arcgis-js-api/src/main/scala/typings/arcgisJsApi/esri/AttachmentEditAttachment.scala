@@ -48,8 +48,7 @@ trait AttachmentEditAttachment
 }
 object AttachmentEditAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     globalId: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -59,34 +58,24 @@ object AttachmentEditAttachment {
     __obj.asInstanceOf[AttachmentEditAttachment]
   }
   
-  @scala.inline
-  implicit class AttachmentEditAttachmentMutableBuilder[Self <: AttachmentEditAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentEditAttachment](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setData(value: Blob | js.Any | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Blob | js.Any | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setGlobalId(value: String): Self = StObject.set(x, "globalId", value.asInstanceOf[js.Any])
+    inline def setGlobalId(value: String): Self = StObject.set(x, "globalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
+    inline def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
   }
 }

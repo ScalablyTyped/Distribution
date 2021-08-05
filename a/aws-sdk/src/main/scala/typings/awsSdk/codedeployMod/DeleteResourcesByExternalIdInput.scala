@@ -13,19 +13,15 @@ trait DeleteResourcesByExternalIdInput extends StObject {
 }
 object DeleteResourcesByExternalIdInput {
   
-  @scala.inline
-  def apply(): DeleteResourcesByExternalIdInput = {
+  inline def apply(): DeleteResourcesByExternalIdInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteResourcesByExternalIdInput]
   }
   
-  @scala.inline
-  implicit class DeleteResourcesByExternalIdInputMutableBuilder[Self <: DeleteResourcesByExternalIdInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteResourcesByExternalIdInput](x: Self) {
     
-    @scala.inline
-    def setExternalId(value: ExternalId): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: ExternalId): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
   }
 }

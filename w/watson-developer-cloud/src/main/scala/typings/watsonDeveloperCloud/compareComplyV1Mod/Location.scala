@@ -15,19 +15,15 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(begin: Double, end: Double): Location = {
+  inline def apply(begin: Double, end: Double): Location = {
     val __obj = js.Dynamic.literal(begin = begin.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setBegin(value: Double): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
+    inline def setBegin(value: Double): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
   }
 }

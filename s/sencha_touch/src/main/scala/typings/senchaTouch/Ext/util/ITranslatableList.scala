@@ -22,25 +22,19 @@ trait ITranslatableList
 }
 object ITranslatableList {
   
-  @scala.inline
-  def apply(): ITranslatableList = {
+  inline def apply(): ITranslatableList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITranslatableList]
   }
   
-  @scala.inline
-  implicit class ITranslatableListMutableBuilder[Self <: ITranslatableList] (val x: Self) extends AnyVal {
+  extension [Self <: ITranslatableList](x: Self) {
     
-    @scala.inline
-    def setGetItems(value: () => Array): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
+    inline def setGetItems(value: () => Array): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
+    inline def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
     
-    @scala.inline
-    def setSetItems(value: /* items */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
+    inline def setSetItems(value: /* items */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetItemsUndefined: Self = StObject.set(x, "setItems", js.undefined)
+    inline def setSetItemsUndefined: Self = StObject.set(x, "setItems", js.undefined)
   }
 }

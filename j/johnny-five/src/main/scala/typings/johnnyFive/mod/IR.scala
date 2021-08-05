@@ -46,29 +46,22 @@ object IR {
   }
   object ArrayOption {
     
-    @scala.inline
-    def apply(emitter: Double | String, pins: js.Array[Double | String]): ArrayOption = {
+    inline def apply(emitter: Double | String, pins: js.Array[Double | String]): ArrayOption = {
       val __obj = js.Dynamic.literal(emitter = emitter.asInstanceOf[js.Any], pins = pins.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArrayOption]
     }
     
-    @scala.inline
-    implicit class ArrayOptionMutableBuilder[Self <: ArrayOption] (val x: Self) extends AnyVal {
+    extension [Self <: ArrayOption](x: Self) {
       
-      @scala.inline
-      def setEmitter(value: Double | String): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
+      inline def setEmitter(value: Double | String): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
+      inline def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
+      inline def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
       
-      @scala.inline
-      def setPins(value: js.Array[Double | String]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+      inline def setPins(value: js.Array[Double | String]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinsVarargs(value: (Double | String)*): Self = StObject.set(x, "pins", js.Array(value :_*))
+      inline def setPinsVarargs(value: (Double | String)*): Self = StObject.set(x, "pins", js.Array(value :_*))
     }
   }
   
@@ -80,26 +73,20 @@ object IR {
   }
   object LoadCalibrationOption {
     
-    @scala.inline
-    def apply(max: js.Array[Double], min: js.Array[Double]): LoadCalibrationOption = {
+    inline def apply(max: js.Array[Double], min: js.Array[Double]): LoadCalibrationOption = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadCalibrationOption]
     }
     
-    @scala.inline
-    implicit class LoadCalibrationOptionMutableBuilder[Self <: LoadCalibrationOption] (val x: Self) extends AnyVal {
+    extension [Self <: LoadCalibrationOption](x: Self) {
       
-      @scala.inline
-      def setMax(value: js.Array[Double]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: js.Array[Double]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxVarargs(value: Double*): Self = StObject.set(x, "max", js.Array(value :_*))
+      inline def setMaxVarargs(value: Double*): Self = StObject.set(x, "max", js.Array(value :_*))
       
-      @scala.inline
-      def setMin(value: js.Array[Double]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: js.Array[Double]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinVarargs(value: Double*): Self = StObject.set(x, "min", js.Array(value :_*))
+      inline def setMinVarargs(value: Double*): Self = StObject.set(x, "min", js.Array(value :_*))
     }
   }
 }

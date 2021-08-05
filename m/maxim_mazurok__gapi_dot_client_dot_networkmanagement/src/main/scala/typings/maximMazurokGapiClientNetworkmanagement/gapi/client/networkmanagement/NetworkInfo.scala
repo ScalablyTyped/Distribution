@@ -17,31 +17,23 @@ trait NetworkInfo extends StObject {
 }
 object NetworkInfo {
   
-  @scala.inline
-  def apply(): NetworkInfo = {
+  inline def apply(): NetworkInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkInfo]
   }
   
-  @scala.inline
-  implicit class NetworkInfoMutableBuilder[Self <: NetworkInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkInfo](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setMatchedIpRange(value: String): Self = StObject.set(x, "matchedIpRange", value.asInstanceOf[js.Any])
+    inline def setMatchedIpRange(value: String): Self = StObject.set(x, "matchedIpRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedIpRangeUndefined: Self = StObject.set(x, "matchedIpRange", js.undefined)
+    inline def setMatchedIpRangeUndefined: Self = StObject.set(x, "matchedIpRange", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

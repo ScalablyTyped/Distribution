@@ -18,25 +18,19 @@ trait SmsMfaConfigType extends StObject {
 }
 object SmsMfaConfigType {
   
-  @scala.inline
-  def apply(): SmsMfaConfigType = {
+  inline def apply(): SmsMfaConfigType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SmsMfaConfigType]
   }
   
-  @scala.inline
-  implicit class SmsMfaConfigTypeMutableBuilder[Self <: SmsMfaConfigType] (val x: Self) extends AnyVal {
+  extension [Self <: SmsMfaConfigType](x: Self) {
     
-    @scala.inline
-    def setSmsAuthenticationMessage(value: SmsVerificationMessageType): Self = StObject.set(x, "SmsAuthenticationMessage", value.asInstanceOf[js.Any])
+    inline def setSmsAuthenticationMessage(value: SmsVerificationMessageType): Self = StObject.set(x, "SmsAuthenticationMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsAuthenticationMessageUndefined: Self = StObject.set(x, "SmsAuthenticationMessage", js.undefined)
+    inline def setSmsAuthenticationMessageUndefined: Self = StObject.set(x, "SmsAuthenticationMessage", js.undefined)
     
-    @scala.inline
-    def setSmsConfiguration(value: SmsConfigurationType): Self = StObject.set(x, "SmsConfiguration", value.asInstanceOf[js.Any])
+    inline def setSmsConfiguration(value: SmsConfigurationType): Self = StObject.set(x, "SmsConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsConfigurationUndefined: Self = StObject.set(x, "SmsConfiguration", js.undefined)
+    inline def setSmsConfigurationUndefined: Self = StObject.set(x, "SmsConfiguration", js.undefined)
   }
 }

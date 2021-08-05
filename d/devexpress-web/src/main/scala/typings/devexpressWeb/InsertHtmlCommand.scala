@@ -19,16 +19,13 @@ trait InsertHtmlCommand
 }
 object InsertHtmlCommand {
   
-  @scala.inline
-  def apply(execute: String => Boolean, getState: () => SimpleCommandState): InsertHtmlCommand = {
+  inline def apply(execute: String => Boolean, getState: () => SimpleCommandState): InsertHtmlCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[InsertHtmlCommand]
   }
   
-  @scala.inline
-  implicit class InsertHtmlCommandMutableBuilder[Self <: InsertHtmlCommand] (val x: Self) extends AnyVal {
+  extension [Self <: InsertHtmlCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

@@ -24,37 +24,27 @@ trait InstanceGroupManagerStatus extends StObject {
 }
 object InstanceGroupManagerStatus {
   
-  @scala.inline
-  def apply(): InstanceGroupManagerStatus = {
+  inline def apply(): InstanceGroupManagerStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroupManagerStatus]
   }
   
-  @scala.inline
-  implicit class InstanceGroupManagerStatusMutableBuilder[Self <: InstanceGroupManagerStatus] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupManagerStatus](x: Self) {
     
-    @scala.inline
-    def setAutoscaler(value: String): Self = StObject.set(x, "autoscaler", value.asInstanceOf[js.Any])
+    inline def setAutoscaler(value: String): Self = StObject.set(x, "autoscaler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscalerUndefined: Self = StObject.set(x, "autoscaler", js.undefined)
+    inline def setAutoscalerUndefined: Self = StObject.set(x, "autoscaler", js.undefined)
     
-    @scala.inline
-    def setIsStable(value: Boolean): Self = StObject.set(x, "isStable", value.asInstanceOf[js.Any])
+    inline def setIsStable(value: Boolean): Self = StObject.set(x, "isStable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStableUndefined: Self = StObject.set(x, "isStable", js.undefined)
+    inline def setIsStableUndefined: Self = StObject.set(x, "isStable", js.undefined)
     
-    @scala.inline
-    def setStateful(value: InstanceGroupManagerStatusStateful): Self = StObject.set(x, "stateful", value.asInstanceOf[js.Any])
+    inline def setStateful(value: InstanceGroupManagerStatusStateful): Self = StObject.set(x, "stateful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatefulUndefined: Self = StObject.set(x, "stateful", js.undefined)
+    inline def setStatefulUndefined: Self = StObject.set(x, "stateful", js.undefined)
     
-    @scala.inline
-    def setVersionTarget(value: InstanceGroupManagerStatusVersionTarget): Self = StObject.set(x, "versionTarget", value.asInstanceOf[js.Any])
+    inline def setVersionTarget(value: InstanceGroupManagerStatusVersionTarget): Self = StObject.set(x, "versionTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionTargetUndefined: Self = StObject.set(x, "versionTarget", js.undefined)
+    inline def setVersionTargetUndefined: Self = StObject.set(x, "versionTarget", js.undefined)
   }
 }

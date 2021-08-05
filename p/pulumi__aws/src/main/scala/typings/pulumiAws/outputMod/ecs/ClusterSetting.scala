@@ -18,19 +18,15 @@ trait ClusterSetting extends StObject {
 }
 object ClusterSetting {
   
-  @scala.inline
-  def apply(name: String, value: String): ClusterSetting = {
+  inline def apply(name: String, value: String): ClusterSetting = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterSetting]
   }
   
-  @scala.inline
-  implicit class ClusterSettingMutableBuilder[Self <: ClusterSetting] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterSetting](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

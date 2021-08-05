@@ -14,23 +14,18 @@ trait CommandSummary extends StObject {
 }
 object CommandSummary {
   
-  @scala.inline
-  def apply(code: String, raw: String, `type`: BuiltInCommand): CommandSummary = {
+  inline def apply(code: String, raw: String, `type`: BuiltInCommand): CommandSummary = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandSummary]
   }
   
-  @scala.inline
-  implicit class CommandSummaryMutableBuilder[Self <: CommandSummary] (val x: Self) extends AnyVal {
+  extension [Self <: CommandSummary](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: BuiltInCommand): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BuiltInCommand): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

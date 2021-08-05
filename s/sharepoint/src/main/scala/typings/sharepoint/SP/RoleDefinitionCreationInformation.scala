@@ -26,8 +26,7 @@ trait RoleDefinitionCreationInformation
 }
 object RoleDefinitionCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -46,31 +45,22 @@ object RoleDefinitionCreationInformation {
     __obj.asInstanceOf[RoleDefinitionCreationInformation]
   }
   
-  @scala.inline
-  implicit class RoleDefinitionCreationInformationMutableBuilder[Self <: RoleDefinitionCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: RoleDefinitionCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_basePermissions(value: () => BasePermissions): Self = StObject.set(x, "get_basePermissions", js.Any.fromFunction0(value))
+    inline def setGet_basePermissions(value: () => BasePermissions): Self = StObject.set(x, "get_basePermissions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
+    inline def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
+    inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_order(value: () => Double): Self = StObject.set(x, "get_order", js.Any.fromFunction0(value))
+    inline def setGet_order(value: () => Double): Self = StObject.set(x, "get_order", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_basePermissions(value: BasePermissions => Unit): Self = StObject.set(x, "set_basePermissions", js.Any.fromFunction1(value))
+    inline def setSet_basePermissions(value: BasePermissions => Unit): Self = StObject.set(x, "set_basePermissions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
+    inline def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
+    inline def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_order(value: Double => Unit): Self = StObject.set(x, "set_order", js.Any.fromFunction1(value))
+    inline def setSet_order(value: Double => Unit): Self = StObject.set(x, "set_order", js.Any.fromFunction1(value))
   }
 }

@@ -18,28 +18,21 @@ trait DescribeSubnetGroupsResponse extends StObject {
 }
 object DescribeSubnetGroupsResponse {
   
-  @scala.inline
-  def apply(): DescribeSubnetGroupsResponse = {
+  inline def apply(): DescribeSubnetGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSubnetGroupsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSubnetGroupsResponseMutableBuilder[Self <: DescribeSubnetGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSubnetGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSubnetGroups(value: SubnetGroupList): Self = StObject.set(x, "SubnetGroups", value.asInstanceOf[js.Any])
+    inline def setSubnetGroups(value: SubnetGroupList): Self = StObject.set(x, "SubnetGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetGroupsUndefined: Self = StObject.set(x, "SubnetGroups", js.undefined)
+    inline def setSubnetGroupsUndefined: Self = StObject.set(x, "SubnetGroups", js.undefined)
     
-    @scala.inline
-    def setSubnetGroupsVarargs(value: SubnetGroup*): Self = StObject.set(x, "SubnetGroups", js.Array(value :_*))
+    inline def setSubnetGroupsVarargs(value: SubnetGroup*): Self = StObject.set(x, "SubnetGroups", js.Array(value :_*))
   }
 }

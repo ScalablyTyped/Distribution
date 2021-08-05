@@ -13,19 +13,15 @@ trait DeleteSourceCredentialsOutput extends StObject {
 }
 object DeleteSourceCredentialsOutput {
   
-  @scala.inline
-  def apply(): DeleteSourceCredentialsOutput = {
+  inline def apply(): DeleteSourceCredentialsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSourceCredentialsOutput]
   }
   
-  @scala.inline
-  implicit class DeleteSourceCredentialsOutputMutableBuilder[Self <: DeleteSourceCredentialsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSourceCredentialsOutput](x: Self) {
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
   }
 }

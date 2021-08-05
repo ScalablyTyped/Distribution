@@ -10,19 +10,15 @@ trait RetryBuildOutput extends StObject {
 }
 object RetryBuildOutput {
   
-  @scala.inline
-  def apply(): RetryBuildOutput = {
+  inline def apply(): RetryBuildOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryBuildOutput]
   }
   
-  @scala.inline
-  implicit class RetryBuildOutputMutableBuilder[Self <: RetryBuildOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RetryBuildOutput](x: Self) {
     
-    @scala.inline
-    def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
   }
 }

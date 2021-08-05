@@ -11,6 +11,5 @@ object formatYearMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formatYear(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatYear")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatYear(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatYear")(date.asInstanceOf[js.Any]).asInstanceOf[String]
 }

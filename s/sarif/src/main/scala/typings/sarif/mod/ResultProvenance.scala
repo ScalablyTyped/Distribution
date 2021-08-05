@@ -49,58 +49,41 @@ trait ResultProvenance extends StObject {
 }
 object ResultProvenance {
   
-  @scala.inline
-  def apply(): ResultProvenance = {
+  inline def apply(): ResultProvenance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultProvenance]
   }
   
-  @scala.inline
-  implicit class ResultProvenanceMutableBuilder[Self <: ResultProvenance] (val x: Self) extends AnyVal {
+  extension [Self <: ResultProvenance](x: Self) {
     
-    @scala.inline
-    def setConversionSources(value: js.Array[PhysicalLocation]): Self = StObject.set(x, "conversionSources", value.asInstanceOf[js.Any])
+    inline def setConversionSources(value: js.Array[PhysicalLocation]): Self = StObject.set(x, "conversionSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionSourcesUndefined: Self = StObject.set(x, "conversionSources", js.undefined)
+    inline def setConversionSourcesUndefined: Self = StObject.set(x, "conversionSources", js.undefined)
     
-    @scala.inline
-    def setConversionSourcesVarargs(value: PhysicalLocation*): Self = StObject.set(x, "conversionSources", js.Array(value :_*))
+    inline def setConversionSourcesVarargs(value: PhysicalLocation*): Self = StObject.set(x, "conversionSources", js.Array(value :_*))
     
-    @scala.inline
-    def setFirstDetectionRunGuid(value: String): Self = StObject.set(x, "firstDetectionRunGuid", value.asInstanceOf[js.Any])
+    inline def setFirstDetectionRunGuid(value: String): Self = StObject.set(x, "firstDetectionRunGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstDetectionRunGuidUndefined: Self = StObject.set(x, "firstDetectionRunGuid", js.undefined)
+    inline def setFirstDetectionRunGuidUndefined: Self = StObject.set(x, "firstDetectionRunGuid", js.undefined)
     
-    @scala.inline
-    def setFirstDetectionTimeUtc(value: String): Self = StObject.set(x, "firstDetectionTimeUtc", value.asInstanceOf[js.Any])
+    inline def setFirstDetectionTimeUtc(value: String): Self = StObject.set(x, "firstDetectionTimeUtc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstDetectionTimeUtcUndefined: Self = StObject.set(x, "firstDetectionTimeUtc", js.undefined)
+    inline def setFirstDetectionTimeUtcUndefined: Self = StObject.set(x, "firstDetectionTimeUtc", js.undefined)
     
-    @scala.inline
-    def setInvocationIndex(value: Double): Self = StObject.set(x, "invocationIndex", value.asInstanceOf[js.Any])
+    inline def setInvocationIndex(value: Double): Self = StObject.set(x, "invocationIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationIndexUndefined: Self = StObject.set(x, "invocationIndex", js.undefined)
+    inline def setInvocationIndexUndefined: Self = StObject.set(x, "invocationIndex", js.undefined)
     
-    @scala.inline
-    def setLastDetectionRunGuid(value: String): Self = StObject.set(x, "lastDetectionRunGuid", value.asInstanceOf[js.Any])
+    inline def setLastDetectionRunGuid(value: String): Self = StObject.set(x, "lastDetectionRunGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDetectionRunGuidUndefined: Self = StObject.set(x, "lastDetectionRunGuid", js.undefined)
+    inline def setLastDetectionRunGuidUndefined: Self = StObject.set(x, "lastDetectionRunGuid", js.undefined)
     
-    @scala.inline
-    def setLastDetectionTimeUtc(value: String): Self = StObject.set(x, "lastDetectionTimeUtc", value.asInstanceOf[js.Any])
+    inline def setLastDetectionTimeUtc(value: String): Self = StObject.set(x, "lastDetectionTimeUtc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDetectionTimeUtcUndefined: Self = StObject.set(x, "lastDetectionTimeUtc", js.undefined)
+    inline def setLastDetectionTimeUtcUndefined: Self = StObject.set(x, "lastDetectionTimeUtc", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

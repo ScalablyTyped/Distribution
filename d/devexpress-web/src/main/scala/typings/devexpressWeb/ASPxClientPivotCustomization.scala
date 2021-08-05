@@ -34,8 +34,7 @@ trait ASPxClientPivotCustomization
 }
 object ASPxClientPivotCustomization {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
@@ -60,19 +59,14 @@ object ASPxClientPivotCustomization {
     __obj.asInstanceOf[ASPxClientPivotCustomization]
   }
   
-  @scala.inline
-  implicit class ASPxClientPivotCustomizationMutableBuilder[Self <: ASPxClientPivotCustomization] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientPivotCustomization](x: Self) {
     
-    @scala.inline
-    def setGetMainContainer(value: () => js.Any): Self = StObject.set(x, "GetMainContainer", js.Any.fromFunction0(value))
+    inline def setGetMainContainer(value: () => js.Any): Self = StObject.set(x, "GetMainContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPivotGrid(value: () => ASPxClientPivotGrid): Self = StObject.set(x, "GetPivotGrid", js.Any.fromFunction0(value))
+    inline def setGetPivotGrid(value: () => ASPxClientPivotGrid): Self = StObject.set(x, "GetPivotGrid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetLayout(value: String => Unit): Self = StObject.set(x, "SetLayout", js.Any.fromFunction1(value))
+    inline def setSetLayout(value: String => Unit): Self = StObject.set(x, "SetLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateHeight(value: () => Unit): Self = StObject.set(x, "UpdateHeight", js.Any.fromFunction0(value))
+    inline def setUpdateHeight(value: () => Unit): Self = StObject.set(x, "UpdateHeight", js.Any.fromFunction0(value))
   }
 }

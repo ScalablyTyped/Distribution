@@ -11,10 +11,8 @@ object getConfigurationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getConfiguration(args: GetConfigurationArgs): js.Promise[GetConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetConfigurationResult]]
-  @scala.inline
-  def getConfiguration(args: GetConfigurationArgs, opts: InvokeOptions): js.Promise[GetConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetConfigurationResult]]
+  inline def getConfiguration(args: GetConfigurationArgs): js.Promise[GetConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetConfigurationResult]]
+  inline def getConfiguration(args: GetConfigurationArgs, opts: InvokeOptions): js.Promise[GetConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetConfigurationResult]]
   
   trait GetConfigurationArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getConfigurationMod {
   }
   object GetConfigurationArgs {
     
-    @scala.inline
-    def apply(name: String): GetConfigurationArgs = {
+    inline def apply(name: String): GetConfigurationArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class GetConfigurationArgsMutableBuilder[Self <: GetConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,8 +70,7 @@ object getConfigurationMod {
   }
   object GetConfigurationResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       description: String,
       id: String,
@@ -89,32 +83,23 @@ object getConfigurationMod {
       __obj.asInstanceOf[GetConfigurationResult]
     }
     
-    @scala.inline
-    implicit class GetConfigurationResultMutableBuilder[Self <: GetConfigurationResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetConfigurationResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKafkaVersions(value: js.Array[String]): Self = StObject.set(x, "kafkaVersions", value.asInstanceOf[js.Any])
+      inline def setKafkaVersions(value: js.Array[String]): Self = StObject.set(x, "kafkaVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKafkaVersionsVarargs(value: String*): Self = StObject.set(x, "kafkaVersions", js.Array(value :_*))
+      inline def setKafkaVersionsVarargs(value: String*): Self = StObject.set(x, "kafkaVersions", js.Array(value :_*))
       
-      @scala.inline
-      def setLatestRevision(value: Double): Self = StObject.set(x, "latestRevision", value.asInstanceOf[js.Any])
+      inline def setLatestRevision(value: Double): Self = StObject.set(x, "latestRevision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerProperties(value: String): Self = StObject.set(x, "serverProperties", value.asInstanceOf[js.Any])
+      inline def setServerProperties(value: String): Self = StObject.set(x, "serverProperties", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -20,28 +20,21 @@ trait S3DestinationProperties extends StObject {
 }
 object S3DestinationProperties {
   
-  @scala.inline
-  def apply(bucketName: BucketName): S3DestinationProperties = {
+  inline def apply(bucketName: BucketName): S3DestinationProperties = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3DestinationProperties]
   }
   
-  @scala.inline
-  implicit class S3DestinationPropertiesMutableBuilder[Self <: S3DestinationProperties] (val x: Self) extends AnyVal {
+  extension [Self <: S3DestinationProperties](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
+    inline def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
+    inline def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
     
-    @scala.inline
-    def setS3OutputFormatConfig(value: S3OutputFormatConfig): Self = StObject.set(x, "s3OutputFormatConfig", value.asInstanceOf[js.Any])
+    inline def setS3OutputFormatConfig(value: S3OutputFormatConfig): Self = StObject.set(x, "s3OutputFormatConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3OutputFormatConfigUndefined: Self = StObject.set(x, "s3OutputFormatConfig", js.undefined)
+    inline def setS3OutputFormatConfigUndefined: Self = StObject.set(x, "s3OutputFormatConfig", js.undefined)
   }
 }

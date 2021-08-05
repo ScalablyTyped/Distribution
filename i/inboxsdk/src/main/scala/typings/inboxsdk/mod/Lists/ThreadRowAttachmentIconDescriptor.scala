@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ThreadRowAttachmentIconDescriptor extends StObject
 object ThreadRowAttachmentIconDescriptor {
   
-  @scala.inline
-  def ThreadRowAttachmentIconHtmlDescriptor(iconHtml: String): typings.inboxsdk.mod.Lists.ThreadRowAttachmentIconHtmlDescriptor = {
+  inline def ThreadRowAttachmentIconHtmlDescriptor(iconHtml: String): typings.inboxsdk.mod.Lists.ThreadRowAttachmentIconHtmlDescriptor = {
     val __obj = js.Dynamic.literal(iconHtml = iconHtml.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.inboxsdk.mod.Lists.ThreadRowAttachmentIconHtmlDescriptor]
   }
   
-  @scala.inline
-  def ThreadRowAttachmentIconUrlDescriptor(iconUrl: String): typings.inboxsdk.mod.Lists.ThreadRowAttachmentIconUrlDescriptor = {
+  inline def ThreadRowAttachmentIconUrlDescriptor(iconUrl: String): typings.inboxsdk.mod.Lists.ThreadRowAttachmentIconUrlDescriptor = {
     val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.inboxsdk.mod.Lists.ThreadRowAttachmentIconUrlDescriptor]
   }

@@ -26,20 +26,16 @@ object typesPhoneNumberValidateOutputMod {
   }
   object PhoneNumberValidateOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, NumberValidateResponse: UnmarshalledNumberValidateResponse): PhoneNumberValidateOutput = {
+    inline def apply($metadata: ResponseMetadata, NumberValidateResponse: UnmarshalledNumberValidateResponse): PhoneNumberValidateOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], NumberValidateResponse = NumberValidateResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhoneNumberValidateOutput]
     }
     
-    @scala.inline
-    implicit class PhoneNumberValidateOutputMutableBuilder[Self <: PhoneNumberValidateOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PhoneNumberValidateOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberValidateResponse(value: UnmarshalledNumberValidateResponse): Self = StObject.set(x, "NumberValidateResponse", value.asInstanceOf[js.Any])
+      inline def setNumberValidateResponse(value: UnmarshalledNumberValidateResponse): Self = StObject.set(x, "NumberValidateResponse", value.asInstanceOf[js.Any])
     }
   }
 }

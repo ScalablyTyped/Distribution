@@ -14,16 +14,13 @@ trait SodaRemoveResult extends StObject {
 }
 object SodaRemoveResult {
   
-  @scala.inline
-  def apply(count: Double): SodaRemoveResult = {
+  inline def apply(count: Double): SodaRemoveResult = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     __obj.asInstanceOf[SodaRemoveResult]
   }
   
-  @scala.inline
-  implicit class SodaRemoveResultMutableBuilder[Self <: SodaRemoveResult] (val x: Self) extends AnyVal {
+  extension [Self <: SodaRemoveResult](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }
 }

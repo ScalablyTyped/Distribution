@@ -13,8 +13,7 @@ trait IDragTool
 }
 object IDragTool {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     chart: IChart,
     clicked: IPoint => Boolean,
@@ -27,10 +26,8 @@ object IDragTool {
     __obj.asInstanceOf[IDragTool]
   }
   
-  @scala.inline
-  implicit class IDragToolMutableBuilder[Self <: IDragTool] (val x: Self) extends AnyVal {
+  extension [Self <: IDragTool](x: Self) {
     
-    @scala.inline
-    def setSeries(value: ISeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: ISeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
   }
 }

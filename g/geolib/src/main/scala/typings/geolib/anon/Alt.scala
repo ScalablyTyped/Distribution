@@ -14,19 +14,15 @@ trait Alt
 }
 object Alt {
   
-  @scala.inline
-  def apply(): Alt = {
+  inline def apply(): Alt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Alt]
   }
   
-  @scala.inline
-  implicit class AltMutableBuilder[Self <: Alt] (val x: Self) extends AnyVal {
+  extension [Self <: Alt](x: Self) {
     
-    @scala.inline
-    def setAlt(value: GeolibAltitudeInputValue): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: GeolibAltitudeInputValue): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
   }
 }

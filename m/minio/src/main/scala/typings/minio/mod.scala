@@ -468,8 +468,7 @@ object mod {
     def this(arn: String) = this()
   }
   
-  @scala.inline
-  def buildARN(partition: String, service: String, region: String, accountId: String, resource: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildARN")(partition.asInstanceOf[js.Any], service.asInstanceOf[js.Any], region.asInstanceOf[js.Any], accountId.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def buildARN(partition: String, service: String, region: String, accountId: String, resource: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildARN")(partition.asInstanceOf[js.Any], service.asInstanceOf[js.Any], region.asInstanceOf[js.Any], accountId.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait BucketItem extends StObject {
     
@@ -485,29 +484,22 @@ object mod {
   }
   object BucketItem {
     
-    @scala.inline
-    def apply(etag: String, lastModified: Date, name: String, prefix: String, size: Double): BucketItem = {
+    inline def apply(etag: String, lastModified: Date, name: String, prefix: String, size: Double): BucketItem = {
       val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketItem]
     }
     
-    @scala.inline
-    implicit class BucketItemMutableBuilder[Self <: BucketItem] (val x: Self) extends AnyVal {
+    extension [Self <: BucketItem](x: Self) {
       
-      @scala.inline
-      def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -519,20 +511,16 @@ object mod {
   }
   object BucketItemCopy {
     
-    @scala.inline
-    def apply(etag: String, lastModified: Date): BucketItemCopy = {
+    inline def apply(etag: String, lastModified: Date): BucketItemCopy = {
       val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketItemCopy]
     }
     
-    @scala.inline
-    implicit class BucketItemCopyMutableBuilder[Self <: BucketItemCopy] (val x: Self) extends AnyVal {
+    extension [Self <: BucketItemCopy](x: Self) {
       
-      @scala.inline
-      def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     }
   }
   
@@ -544,20 +532,16 @@ object mod {
   }
   object BucketItemFromList {
     
-    @scala.inline
-    def apply(creationDate: Date, name: String): BucketItemFromList = {
+    inline def apply(creationDate: Date, name: String): BucketItemFromList = {
       val __obj = js.Dynamic.literal(creationDate = creationDate.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketItemFromList]
     }
     
-    @scala.inline
-    implicit class BucketItemFromListMutableBuilder[Self <: BucketItemFromList] (val x: Self) extends AnyVal {
+    extension [Self <: BucketItemFromList](x: Self) {
       
-      @scala.inline
-      def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -573,26 +557,20 @@ object mod {
   }
   object BucketItemStat {
     
-    @scala.inline
-    def apply(etag: String, lastModified: Date, metaData: ItemBucketMetadata, size: Double): BucketItemStat = {
+    inline def apply(etag: String, lastModified: Date, metaData: ItemBucketMetadata, size: Double): BucketItemStat = {
       val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any], metaData = metaData.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketItemStat]
     }
     
-    @scala.inline
-    implicit class BucketItemStatMutableBuilder[Self <: BucketItemStat] (val x: Self) extends AnyVal {
+    extension [Self <: BucketItemStat](x: Self) {
       
-      @scala.inline
-      def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaData(value: ItemBucketMetadata): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+      inline def setMetaData(value: ItemBucketMetadata): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -637,59 +615,42 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(accessKey: String, endPoint: String, secretKey: String): ClientOptions = {
+    inline def apply(accessKey: String, endPoint: String, secretKey: String): ClientOptions = {
       val __obj = js.Dynamic.literal(accessKey = accessKey.asInstanceOf[js.Any], endPoint = endPoint.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndPoint(value: String): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
+      inline def setEndPoint(value: String): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
+      inline def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
+      inline def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+      inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
+      inline def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
       
-      @scala.inline
-      def setTransport(value: js.Any): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: js.Any): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
       
-      @scala.inline
-      def setUseSSL(value: Boolean): Self = StObject.set(x, "useSSL", value.asInstanceOf[js.Any])
+      inline def setUseSSL(value: Boolean): Self = StObject.set(x, "useSSL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSSLUndefined: Self = StObject.set(x, "useSSL", js.undefined)
+      inline def setUseSSLUndefined: Self = StObject.set(x, "useSSL", js.undefined)
     }
   }
   
@@ -703,23 +664,18 @@ object mod {
   }
   object IncompleteUploadedBucketItem {
     
-    @scala.inline
-    def apply(key: String, size: Double, uploadId: String): IncompleteUploadedBucketItem = {
+    inline def apply(key: String, size: Double, uploadId: String): IncompleteUploadedBucketItem = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any])
       __obj.asInstanceOf[IncompleteUploadedBucketItem]
     }
     
-    @scala.inline
-    implicit class IncompleteUploadedBucketItemMutableBuilder[Self <: IncompleteUploadedBucketItem] (val x: Self) extends AnyVal {
+    extension [Self <: IncompleteUploadedBucketItem](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+      inline def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -735,20 +691,16 @@ object mod {
   }
   object PostPolicyResult {
     
-    @scala.inline
-    def apply(formData: StringDictionary[js.Any], postURL: String): PostPolicyResult = {
+    inline def apply(formData: StringDictionary[js.Any], postURL: String): PostPolicyResult = {
       val __obj = js.Dynamic.literal(formData = formData.asInstanceOf[js.Any], postURL = postURL.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostPolicyResult]
     }
     
-    @scala.inline
-    implicit class PostPolicyResultMutableBuilder[Self <: PostPolicyResult] (val x: Self) extends AnyVal {
+    extension [Self <: PostPolicyResult](x: Self) {
       
-      @scala.inline
-      def setFormData(value: StringDictionary[js.Any]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+      inline def setFormData(value: StringDictionary[js.Any]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostURL(value: String): Self = StObject.set(x, "postURL", value.asInstanceOf[js.Any])
+      inline def setPostURL(value: String): Self = StObject.set(x, "postURL", value.asInstanceOf[js.Any])
     }
   }
   

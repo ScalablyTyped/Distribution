@@ -243,8 +243,7 @@ object mod extends Shortcut {
   }
   object Characteristic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       RESULT_ATTR_NOT_LONG: Double,
       RESULT_INVALID_ATTRIBUTE_LENGTH: Double,
       RESULT_INVALID_OFFSET: Double,
@@ -265,68 +264,47 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Characteristic]
     }
     
-    @scala.inline
-    implicit class CharacteristicMutableBuilder[Self <: Characteristic] (val x: Self) extends AnyVal {
+    extension [Self <: Characteristic](x: Self) {
       
-      @scala.inline
-      def setDescriptors(value: js.Array[Descriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+      inline def setDescriptors(value: js.Array[Descriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptorsVarargs(value: Descriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
+      inline def setDescriptorsVarargs(value: Descriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
       
-      @scala.inline
-      def setOnIndicate(value: () => Unit): Self = StObject.set(x, "onIndicate", js.Any.fromFunction0(value))
+      inline def setOnIndicate(value: () => Unit): Self = StObject.set(x, "onIndicate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnNotify(value: () => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction0(value))
+      inline def setOnNotify(value: () => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnReadRequest(value: (Double, js.Function2[/* result */ Double, /* data */ js.UndefOr[Buffer], Unit]) => Unit): Self = StObject.set(x, "onReadRequest", js.Any.fromFunction2(value))
+      inline def setOnReadRequest(value: (Double, js.Function2[/* result */ Double, /* data */ js.UndefOr[Buffer], Unit]) => Unit): Self = StObject.set(x, "onReadRequest", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSubscribe(value: (Double, js.Any) => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction2(value))
+      inline def setOnSubscribe(value: (Double, js.Any) => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUnsubscribe(value: () => Unit): Self = StObject.set(x, "onUnsubscribe", js.Any.fromFunction0(value))
+      inline def setOnUnsubscribe(value: () => Unit): Self = StObject.set(x, "onUnsubscribe", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnWriteRequest(value: (Buffer, Double, Boolean, js.Function1[/* result */ Double, Unit]) => Unit): Self = StObject.set(x, "onWriteRequest", js.Any.fromFunction4(value))
+      inline def setOnWriteRequest(value: (Buffer, Double, Boolean, js.Function1[/* result */ Double, Unit]) => Unit): Self = StObject.set(x, "onWriteRequest", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setProperties(value: js.Array[Property]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Array[Property]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
       
-      @scala.inline
-      def setRESULT_ATTR_NOT_LONG(value: Double): Self = StObject.set(x, "RESULT_ATTR_NOT_LONG", value.asInstanceOf[js.Any])
+      inline def setRESULT_ATTR_NOT_LONG(value: Double): Self = StObject.set(x, "RESULT_ATTR_NOT_LONG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESULT_INVALID_ATTRIBUTE_LENGTH(value: Double): Self = StObject.set(x, "RESULT_INVALID_ATTRIBUTE_LENGTH", value.asInstanceOf[js.Any])
+      inline def setRESULT_INVALID_ATTRIBUTE_LENGTH(value: Double): Self = StObject.set(x, "RESULT_INVALID_ATTRIBUTE_LENGTH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESULT_INVALID_OFFSET(value: Double): Self = StObject.set(x, "RESULT_INVALID_OFFSET", value.asInstanceOf[js.Any])
+      inline def setRESULT_INVALID_OFFSET(value: Double): Self = StObject.set(x, "RESULT_INVALID_OFFSET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESULT_SUCCESS(value: Double): Self = StObject.set(x, "RESULT_SUCCESS", value.asInstanceOf[js.Any])
+      inline def setRESULT_SUCCESS(value: Double): Self = StObject.set(x, "RESULT_SUCCESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESULT_UNLIKELY_ERROR(value: Double): Self = StObject.set(x, "RESULT_UNLIKELY_ERROR", value.asInstanceOf[js.Any])
+      inline def setRESULT_UNLIKELY_ERROR(value: Double): Self = StObject.set(x, "RESULT_UNLIKELY_ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecure(value: js.Array[Property]): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: js.Array[Property]): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureVarargs(value: Property*): Self = StObject.set(x, "secure", js.Array(value :_*))
+      inline def setSecureVarargs(value: Property*): Self = StObject.set(x, "secure", js.Array(value :_*))
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
     }
   }
   
@@ -372,120 +350,84 @@ object mod extends Shortcut {
   }
   object CharacteristicOptions {
     
-    @scala.inline
-    def apply(uuid: String): CharacteristicOptions = {
+    inline def apply(uuid: String): CharacteristicOptions = {
       val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[CharacteristicOptions]
     }
     
-    @scala.inline
-    implicit class CharacteristicOptionsMutableBuilder[Self <: CharacteristicOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CharacteristicOptions](x: Self) {
       
-      @scala.inline
-      def setDescriptors(value: js.Array[Descriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+      inline def setDescriptors(value: js.Array[Descriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptorsNull: Self = StObject.set(x, "descriptors", null)
+      inline def setDescriptorsNull: Self = StObject.set(x, "descriptors", null)
       
-      @scala.inline
-      def setDescriptorsUndefined: Self = StObject.set(x, "descriptors", js.undefined)
+      inline def setDescriptorsUndefined: Self = StObject.set(x, "descriptors", js.undefined)
       
-      @scala.inline
-      def setDescriptorsVarargs(value: Descriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
+      inline def setDescriptorsVarargs(value: Descriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
       
-      @scala.inline
-      def setOnIndicate(value: () => Unit): Self = StObject.set(x, "onIndicate", js.Any.fromFunction0(value))
+      inline def setOnIndicate(value: () => Unit): Self = StObject.set(x, "onIndicate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnIndicateNull: Self = StObject.set(x, "onIndicate", null)
+      inline def setOnIndicateNull: Self = StObject.set(x, "onIndicate", null)
       
-      @scala.inline
-      def setOnIndicateUndefined: Self = StObject.set(x, "onIndicate", js.undefined)
+      inline def setOnIndicateUndefined: Self = StObject.set(x, "onIndicate", js.undefined)
       
-      @scala.inline
-      def setOnNotify(value: () => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction0(value))
+      inline def setOnNotify(value: () => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnNotifyNull: Self = StObject.set(x, "onNotify", null)
+      inline def setOnNotifyNull: Self = StObject.set(x, "onNotify", null)
       
-      @scala.inline
-      def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
+      inline def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
       
-      @scala.inline
-      def setOnReadRequest(
+      inline def setOnReadRequest(
         value: (/* offset */ Double, /* callback */ js.Function2[/* result */ Double, /* data */ js.UndefOr[Buffer], Unit]) => Unit
       ): Self = StObject.set(x, "onReadRequest", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnReadRequestNull: Self = StObject.set(x, "onReadRequest", null)
+      inline def setOnReadRequestNull: Self = StObject.set(x, "onReadRequest", null)
       
-      @scala.inline
-      def setOnReadRequestUndefined: Self = StObject.set(x, "onReadRequest", js.undefined)
+      inline def setOnReadRequestUndefined: Self = StObject.set(x, "onReadRequest", js.undefined)
       
-      @scala.inline
-      def setOnSubscribe(value: (/* maxValueSize */ Double, /* updateValueCallback */ js.Any) => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction2(value))
+      inline def setOnSubscribe(value: (/* maxValueSize */ Double, /* updateValueCallback */ js.Any) => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSubscribeNull: Self = StObject.set(x, "onSubscribe", null)
+      inline def setOnSubscribeNull: Self = StObject.set(x, "onSubscribe", null)
       
-      @scala.inline
-      def setOnSubscribeUndefined: Self = StObject.set(x, "onSubscribe", js.undefined)
+      inline def setOnSubscribeUndefined: Self = StObject.set(x, "onSubscribe", js.undefined)
       
-      @scala.inline
-      def setOnUnsubscribe(value: () => Unit): Self = StObject.set(x, "onUnsubscribe", js.Any.fromFunction0(value))
+      inline def setOnUnsubscribe(value: () => Unit): Self = StObject.set(x, "onUnsubscribe", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUnsubscribeNull: Self = StObject.set(x, "onUnsubscribe", null)
+      inline def setOnUnsubscribeNull: Self = StObject.set(x, "onUnsubscribe", null)
       
-      @scala.inline
-      def setOnUnsubscribeUndefined: Self = StObject.set(x, "onUnsubscribe", js.undefined)
+      inline def setOnUnsubscribeUndefined: Self = StObject.set(x, "onUnsubscribe", js.undefined)
       
-      @scala.inline
-      def setOnWriteRequest(
+      inline def setOnWriteRequest(
         value: (/* data */ Buffer, /* offset */ Double, /* withoutResponse */ Boolean, /* callback */ js.Function1[/* result */ Double, Unit]) => Unit
       ): Self = StObject.set(x, "onWriteRequest", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnWriteRequestNull: Self = StObject.set(x, "onWriteRequest", null)
+      inline def setOnWriteRequestNull: Self = StObject.set(x, "onWriteRequest", null)
       
-      @scala.inline
-      def setOnWriteRequestUndefined: Self = StObject.set(x, "onWriteRequest", js.undefined)
+      inline def setOnWriteRequestUndefined: Self = StObject.set(x, "onWriteRequest", js.undefined)
       
-      @scala.inline
-      def setProperties(value: js.Array[Property]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Array[Property]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesNull: Self = StObject.set(x, "properties", null)
+      inline def setPropertiesNull: Self = StObject.set(x, "properties", null)
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
       
-      @scala.inline
-      def setSecure(value: js.Array[Property]): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: js.Array[Property]): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureNull: Self = StObject.set(x, "secure", null)
+      inline def setSecureNull: Self = StObject.set(x, "secure", null)
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      @scala.inline
-      def setSecureVarargs(value: Property*): Self = StObject.set(x, "secure", js.Array(value :_*))
+      inline def setSecureVarargs(value: Property*): Self = StObject.set(x, "secure", js.Array(value :_*))
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -497,20 +439,16 @@ object mod extends Shortcut {
   }
   object Descriptor {
     
-    @scala.inline
-    def apply(uuid: String, value: Buffer): Descriptor = {
+    inline def apply(uuid: String, value: Buffer): Descriptor = {
       val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Descriptor]
     }
     
-    @scala.inline
-    implicit class DescriptorMutableBuilder[Self <: Descriptor] (val x: Self) extends AnyVal {
+    extension [Self <: Descriptor](x: Self) {
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -522,26 +460,20 @@ object mod extends Shortcut {
   }
   object DescriptorOptions {
     
-    @scala.inline
-    def apply(uuid: String): DescriptorOptions = {
+    inline def apply(uuid: String): DescriptorOptions = {
       val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescriptorOptions]
     }
     
-    @scala.inline
-    implicit class DescriptorOptionsMutableBuilder[Self <: DescriptorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DescriptorOptions](x: Self) {
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Buffer | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Buffer | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -553,23 +485,18 @@ object mod extends Shortcut {
   }
   object PrimaryService {
     
-    @scala.inline
-    def apply(characteristics: js.Array[Characteristic], uuid: String): PrimaryService = {
+    inline def apply(characteristics: js.Array[Characteristic], uuid: String): PrimaryService = {
       val __obj = js.Dynamic.literal(characteristics = characteristics.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrimaryService]
     }
     
-    @scala.inline
-    implicit class PrimaryServiceMutableBuilder[Self <: PrimaryService] (val x: Self) extends AnyVal {
+    extension [Self <: PrimaryService](x: Self) {
       
-      @scala.inline
-      def setCharacteristics(value: js.Array[Characteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
+      inline def setCharacteristics(value: js.Array[Characteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharacteristicsVarargs(value: Characteristic*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
+      inline def setCharacteristicsVarargs(value: Characteristic*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -581,29 +508,22 @@ object mod extends Shortcut {
   }
   object PrimaryServiceOptions {
     
-    @scala.inline
-    def apply(uuid: String): PrimaryServiceOptions = {
+    inline def apply(uuid: String): PrimaryServiceOptions = {
       val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrimaryServiceOptions]
     }
     
-    @scala.inline
-    implicit class PrimaryServiceOptionsMutableBuilder[Self <: PrimaryServiceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrimaryServiceOptions](x: Self) {
       
-      @scala.inline
-      def setCharacteristics(value: js.Array[Characteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
+      inline def setCharacteristics(value: js.Array[Characteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharacteristicsNull: Self = StObject.set(x, "characteristics", null)
+      inline def setCharacteristicsNull: Self = StObject.set(x, "characteristics", null)
       
-      @scala.inline
-      def setCharacteristicsUndefined: Self = StObject.set(x, "characteristics", js.undefined)
+      inline def setCharacteristicsUndefined: Self = StObject.set(x, "characteristics", js.undefined)
       
-      @scala.inline
-      def setCharacteristicsVarargs(value: Characteristic*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
+      inline def setCharacteristicsVarargs(value: Characteristic*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -617,17 +537,13 @@ object mod extends Shortcut {
   trait Property extends StObject
   object Property {
     
-    @scala.inline
-    def indicate: typings.bleno.blenoStrings.indicate = "indicate".asInstanceOf[typings.bleno.blenoStrings.indicate]
+    inline def indicate: typings.bleno.blenoStrings.indicate = "indicate".asInstanceOf[typings.bleno.blenoStrings.indicate]
     
-    @scala.inline
-    def read: typings.bleno.blenoStrings.read = "read".asInstanceOf[typings.bleno.blenoStrings.read]
+    inline def read: typings.bleno.blenoStrings.read = "read".asInstanceOf[typings.bleno.blenoStrings.read]
     
-    @scala.inline
-    def write: typings.bleno.blenoStrings.write = "write".asInstanceOf[typings.bleno.blenoStrings.write]
+    inline def write: typings.bleno.blenoStrings.write = "write".asInstanceOf[typings.bleno.blenoStrings.write]
     
-    @scala.inline
-    def writeWithoutResponse: typings.bleno.blenoStrings.writeWithoutResponse = "writeWithoutResponse".asInstanceOf[typings.bleno.blenoStrings.writeWithoutResponse]
+    inline def writeWithoutResponse: typings.bleno.blenoStrings.writeWithoutResponse = "writeWithoutResponse".asInstanceOf[typings.bleno.blenoStrings.writeWithoutResponse]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -641,23 +557,17 @@ object mod extends Shortcut {
   trait State extends StObject
   object State {
     
-    @scala.inline
-    def poweredOff: typings.bleno.blenoStrings.poweredOff = "poweredOff".asInstanceOf[typings.bleno.blenoStrings.poweredOff]
+    inline def poweredOff: typings.bleno.blenoStrings.poweredOff = "poweredOff".asInstanceOf[typings.bleno.blenoStrings.poweredOff]
     
-    @scala.inline
-    def poweredOn: typings.bleno.blenoStrings.poweredOn = "poweredOn".asInstanceOf[typings.bleno.blenoStrings.poweredOn]
+    inline def poweredOn: typings.bleno.blenoStrings.poweredOn = "poweredOn".asInstanceOf[typings.bleno.blenoStrings.poweredOn]
     
-    @scala.inline
-    def resetting: typings.bleno.blenoStrings.resetting = "resetting".asInstanceOf[typings.bleno.blenoStrings.resetting]
+    inline def resetting: typings.bleno.blenoStrings.resetting = "resetting".asInstanceOf[typings.bleno.blenoStrings.resetting]
     
-    @scala.inline
-    def unauthorized: typings.bleno.blenoStrings.unauthorized = "unauthorized".asInstanceOf[typings.bleno.blenoStrings.unauthorized]
+    inline def unauthorized: typings.bleno.blenoStrings.unauthorized = "unauthorized".asInstanceOf[typings.bleno.blenoStrings.unauthorized]
     
-    @scala.inline
-    def unknown: typings.bleno.blenoStrings.unknown = "unknown".asInstanceOf[typings.bleno.blenoStrings.unknown]
+    inline def unknown: typings.bleno.blenoStrings.unknown = "unknown".asInstanceOf[typings.bleno.blenoStrings.unknown]
     
-    @scala.inline
-    def unsupported: typings.bleno.blenoStrings.unsupported = "unsupported".asInstanceOf[typings.bleno.blenoStrings.unsupported]
+    inline def unsupported: typings.bleno.blenoStrings.unsupported = "unsupported".asInstanceOf[typings.bleno.blenoStrings.unsupported]
   }
   
   type _To = Bleno

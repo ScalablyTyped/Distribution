@@ -14,25 +14,19 @@ trait RestoreInstanceRequest extends StObject {
 }
 object RestoreInstanceRequest {
   
-  @scala.inline
-  def apply(): RestoreInstanceRequest = {
+  inline def apply(): RestoreInstanceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreInstanceRequest]
   }
   
-  @scala.inline
-  implicit class RestoreInstanceRequestMutableBuilder[Self <: RestoreInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setFileShare(value: String): Self = StObject.set(x, "fileShare", value.asInstanceOf[js.Any])
+    inline def setFileShare(value: String): Self = StObject.set(x, "fileShare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileShareUndefined: Self = StObject.set(x, "fileShare", js.undefined)
+    inline def setFileShareUndefined: Self = StObject.set(x, "fileShare", js.undefined)
     
-    @scala.inline
-    def setSourceBackup(value: String): Self = StObject.set(x, "sourceBackup", value.asInstanceOf[js.Any])
+    inline def setSourceBackup(value: String): Self = StObject.set(x, "sourceBackup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBackupUndefined: Self = StObject.set(x, "sourceBackup", js.undefined)
+    inline def setSourceBackupUndefined: Self = StObject.set(x, "sourceBackup", js.undefined)
   }
 }

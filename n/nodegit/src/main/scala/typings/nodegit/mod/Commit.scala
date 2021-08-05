@@ -15,8 +15,7 @@ object Commit {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(
+  inline def create(
     repo: typings.nodegit.repositoryMod.Repository,
     updateRef: String,
     author: typings.nodegit.signatureMod.Signature,
@@ -28,8 +27,7 @@ object Commit {
     parents: js.Array[js.Any]
   ): typings.nodegit.oidMod.Oid = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], updateRef.asInstanceOf[js.Any], author.asInstanceOf[js.Any], committer.asInstanceOf[js.Any], messageEncoding.asInstanceOf[js.Any], message.asInstanceOf[js.Any], tree.asInstanceOf[js.Any], parentCount.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[typings.nodegit.oidMod.Oid]
   
-  @scala.inline
-  def createV(
+  inline def createV(
     id: typings.nodegit.oidMod.Oid,
     repo: typings.nodegit.repositoryMod.Repository,
     updateRef: String,
@@ -41,8 +39,7 @@ object Commit {
     parentCount: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("createV")(id.asInstanceOf[js.Any], repo.asInstanceOf[js.Any], updateRef.asInstanceOf[js.Any], author.asInstanceOf[js.Any], committer.asInstanceOf[js.Any], messageEncoding.asInstanceOf[js.Any], message.asInstanceOf[js.Any], tree.asInstanceOf[js.Any], parentCount.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def createWithSignature(
+  inline def createWithSignature(
     repo: typings.nodegit.repositoryMod.Repository,
     commitContent: String,
     signature: String,
@@ -54,13 +51,9 @@ object Commit {
     *
     *
     */
-  @scala.inline
-  def lookup(repo: typings.nodegit.repositoryMod.Repository, id: String): js.Promise[typings.nodegit.commitMod.Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.commitMod.Commit]]
-  @scala.inline
-  def lookup(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.commitMod.Commit): js.Promise[typings.nodegit.commitMod.Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.commitMod.Commit]]
-  @scala.inline
-  def lookup(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.oidMod.Oid): js.Promise[typings.nodegit.commitMod.Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.commitMod.Commit]]
+  inline def lookup(repo: typings.nodegit.repositoryMod.Repository, id: String): js.Promise[typings.nodegit.commitMod.Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.commitMod.Commit]]
+  inline def lookup(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.commitMod.Commit): js.Promise[typings.nodegit.commitMod.Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.commitMod.Commit]]
+  inline def lookup(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.oidMod.Oid): js.Promise[typings.nodegit.commitMod.Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.commitMod.Commit]]
   
-  @scala.inline
-  def lookupPrefix(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.oidMod.Oid, len: Double): js.Promise[typings.nodegit.commitMod.Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPrefix")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.commitMod.Commit]]
+  inline def lookupPrefix(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.oidMod.Oid, len: Double): js.Promise[typings.nodegit.commitMod.Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPrefix")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.commitMod.Commit]]
 }

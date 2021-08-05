@@ -14,25 +14,19 @@ trait Int64RangeMatch extends StObject {
 }
 object Int64RangeMatch {
   
-  @scala.inline
-  def apply(): Int64RangeMatch = {
+  inline def apply(): Int64RangeMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Int64RangeMatch]
   }
   
-  @scala.inline
-  implicit class Int64RangeMatchMutableBuilder[Self <: Int64RangeMatch] (val x: Self) extends AnyVal {
+  extension [Self <: Int64RangeMatch](x: Self) {
     
-    @scala.inline
-    def setRangeEnd(value: String): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
+    inline def setRangeEnd(value: String): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeEndUndefined: Self = StObject.set(x, "rangeEnd", js.undefined)
+    inline def setRangeEndUndefined: Self = StObject.set(x, "rangeEnd", js.undefined)
     
-    @scala.inline
-    def setRangeStart(value: String): Self = StObject.set(x, "rangeStart", value.asInstanceOf[js.Any])
+    inline def setRangeStart(value: String): Self = StObject.set(x, "rangeStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeStartUndefined: Self = StObject.set(x, "rangeStart", js.undefined)
+    inline def setRangeStartUndefined: Self = StObject.set(x, "rangeStart", js.undefined)
   }
 }

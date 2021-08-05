@@ -38,17 +38,14 @@ trait RowMetadata[T] extends StObject {
 }
 object RowMetadata {
   
-  @scala.inline
-  def apply[T](): RowMetadata[T] = {
+  inline def apply[T](): RowMetadata[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowMetadata[T]]
   }
   
-  @scala.inline
-  implicit class RowMetadataMutableBuilder[Self <: RowMetadata[?], T] (val x: Self & RowMetadata[T]) extends AnyVal {
+  extension [Self <: RowMetadata[?], T](x: Self & RowMetadata[T]) {
     
-    @scala.inline
-    def setColumns(
+    inline def setColumns(
       value: (/**
       * Metadata indexed by column id
       */
@@ -58,25 +55,18 @@ object RowMetadata {
     NumberDictionary[ColumnMetadata[T]])
     ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setCssClasses(value: String): Self = StObject.set(x, "cssClasses", value.asInstanceOf[js.Any])
+    inline def setCssClasses(value: String): Self = StObject.set(x, "cssClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassesUndefined: Self = StObject.set(x, "cssClasses", js.undefined)
+    inline def setCssClassesUndefined: Self = StObject.set(x, "cssClasses", js.undefined)
     
-    @scala.inline
-    def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+    inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
+    inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
-    @scala.inline
-    def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
   }
 }

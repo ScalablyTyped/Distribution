@@ -24,10 +24,8 @@ object Error {
   @js.native
   val ^ : ErrorConstructor = js.native
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def set___SASS_ERROR___(value: js.Symbol): Self = StObject.set(x, "___SASS_ERROR___", value.asInstanceOf[js.Any])
+    inline def set___SASS_ERROR___(value: js.Symbol): Self = StObject.set(x, "___SASS_ERROR___", value.asInstanceOf[js.Any])
   }
 }

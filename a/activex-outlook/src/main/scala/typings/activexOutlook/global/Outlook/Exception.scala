@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Exception")
 @js.native
-class Exception protected ()
+/* private */ class Exception ()
   extends StObject
      with typings.activexOutlook.Outlook.Exception {
   
@@ -30,7 +30,7 @@ class Exception protected ()
   /* CompleteClass */
   override val OriginalDate: VarDate = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Exception_typekey")
   var OutlookDotException_typekey: typings.activexOutlook.Outlook.Exception = js.native
   

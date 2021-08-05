@@ -14,25 +14,19 @@ trait OfflineAudioContextOptions extends StObject {
 }
 object OfflineAudioContextOptions {
   
-  @scala.inline
-  def apply(length: Double, sampleRate: Double): OfflineAudioContextOptions = {
+  inline def apply(length: Double, sampleRate: Double): OfflineAudioContextOptions = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], sampleRate = sampleRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfflineAudioContextOptions]
   }
   
-  @scala.inline
-  implicit class OfflineAudioContextOptionsMutableBuilder[Self <: OfflineAudioContextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OfflineAudioContextOptions](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfChannels(value: Double): Self = StObject.set(x, "numberOfChannels", value.asInstanceOf[js.Any])
+    inline def setNumberOfChannels(value: Double): Self = StObject.set(x, "numberOfChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfChannelsUndefined: Self = StObject.set(x, "numberOfChannels", js.undefined)
+    inline def setNumberOfChannelsUndefined: Self = StObject.set(x, "numberOfChannels", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
   }
 }

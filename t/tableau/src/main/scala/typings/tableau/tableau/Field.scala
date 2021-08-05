@@ -19,8 +19,7 @@ trait Field extends StObject {
 }
 object Field {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAggregation: () => FieldAggregationType,
     getDataSource: () => DataSource,
     getName: () => String,
@@ -30,19 +29,14 @@ object Field {
     __obj.asInstanceOf[Field]
   }
   
-  @scala.inline
-  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+  extension [Self <: Field](x: Self) {
     
-    @scala.inline
-    def setGetAggregation(value: () => FieldAggregationType): Self = StObject.set(x, "getAggregation", js.Any.fromFunction0(value))
+    inline def setGetAggregation(value: () => FieldAggregationType): Self = StObject.set(x, "getAggregation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDataSource(value: () => DataSource): Self = StObject.set(x, "getDataSource", js.Any.fromFunction0(value))
+    inline def setGetDataSource(value: () => DataSource): Self = StObject.set(x, "getDataSource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRole(value: () => FieldRoleType): Self = StObject.set(x, "getRole", js.Any.fromFunction0(value))
+    inline def setGetRole(value: () => FieldRoleType): Self = StObject.set(x, "getRole", js.Any.fromFunction0(value))
   }
 }

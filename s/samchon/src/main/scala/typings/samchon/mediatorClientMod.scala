@@ -59,12 +59,12 @@ object mediatorClientMod {
     /**
       * @hidden
       */
-    var ip: js.Any = js.native
+    /* private */ var ip: js.Any = js.native
     
     /**
       * @hidden
       */
-    var port: js.Any = js.native
+    /* private */ var port: js.Any = js.native
   }
   
   @JSImport("samchon/templates/parallel/derived/MediatorClient", "MediatorSharedWorkerClient")

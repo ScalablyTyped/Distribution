@@ -43,8 +43,7 @@ trait LogApi extends StObject {
 }
 object LogApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => js.Promise[Unit],
     disable: () => js.Promise[Unit],
     enable: () => js.Promise[Unit],
@@ -56,25 +55,18 @@ object LogApi {
     __obj.asInstanceOf[LogApi]
   }
   
-  @scala.inline
-  implicit class LogApiMutableBuilder[Self <: LogApi] (val x: Self) extends AnyVal {
+  extension [Self <: LogApi](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOn(value: (entryAdded, js.Function1[/* params */ EntryAddedEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (entryAdded, js.Function1[/* params */ EntryAddedEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartViolationsReport(value: StartViolationsReportRequest => js.Promise[Unit]): Self = StObject.set(x, "startViolationsReport", js.Any.fromFunction1(value))
+    inline def setStartViolationsReport(value: StartViolationsReportRequest => js.Promise[Unit]): Self = StObject.set(x, "startViolationsReport", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStopViolationsReport(value: () => js.Promise[Unit]): Self = StObject.set(x, "stopViolationsReport", js.Any.fromFunction0(value))
+    inline def setStopViolationsReport(value: () => js.Promise[Unit]): Self = StObject.set(x, "stopViolationsReport", js.Any.fromFunction0(value))
   }
 }

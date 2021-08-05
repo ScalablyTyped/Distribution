@@ -18,22 +18,17 @@ trait ConnectionDraining extends StObject {
 }
 object ConnectionDraining {
   
-  @scala.inline
-  def apply(Enabled: ConnectionDrainingEnabled): ConnectionDraining = {
+  inline def apply(Enabled: ConnectionDrainingEnabled): ConnectionDraining = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionDraining]
   }
   
-  @scala.inline
-  implicit class ConnectionDrainingMutableBuilder[Self <: ConnectionDraining] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionDraining](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: ConnectionDrainingEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: ConnectionDrainingEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: ConnectionDrainingTimeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: ConnectionDrainingTimeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
   }
 }

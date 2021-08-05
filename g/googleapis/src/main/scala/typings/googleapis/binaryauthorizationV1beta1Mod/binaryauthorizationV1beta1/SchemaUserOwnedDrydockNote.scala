@@ -43,34 +43,25 @@ trait SchemaUserOwnedDrydockNote extends StObject {
 }
 object SchemaUserOwnedDrydockNote {
   
-  @scala.inline
-  def apply(): SchemaUserOwnedDrydockNote = {
+  inline def apply(): SchemaUserOwnedDrydockNote = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserOwnedDrydockNote]
   }
   
-  @scala.inline
-  implicit class SchemaUserOwnedDrydockNoteMutableBuilder[Self <: SchemaUserOwnedDrydockNote] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserOwnedDrydockNote](x: Self) {
     
-    @scala.inline
-    def setDelegationServiceAccountEmail(value: String): Self = StObject.set(x, "delegationServiceAccountEmail", value.asInstanceOf[js.Any])
+    inline def setDelegationServiceAccountEmail(value: String): Self = StObject.set(x, "delegationServiceAccountEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegationServiceAccountEmailUndefined: Self = StObject.set(x, "delegationServiceAccountEmail", js.undefined)
+    inline def setDelegationServiceAccountEmailUndefined: Self = StObject.set(x, "delegationServiceAccountEmail", js.undefined)
     
-    @scala.inline
-    def setNoteReference(value: String): Self = StObject.set(x, "noteReference", value.asInstanceOf[js.Any])
+    inline def setNoteReference(value: String): Self = StObject.set(x, "noteReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteReferenceUndefined: Self = StObject.set(x, "noteReference", js.undefined)
+    inline def setNoteReferenceUndefined: Self = StObject.set(x, "noteReference", js.undefined)
     
-    @scala.inline
-    def setPublicKeys(value: js.Array[SchemaAttestorPublicKey]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
+    inline def setPublicKeys(value: js.Array[SchemaAttestorPublicKey]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
+    inline def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
     
-    @scala.inline
-    def setPublicKeysVarargs(value: SchemaAttestorPublicKey*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
+    inline def setPublicKeysVarargs(value: SchemaAttestorPublicKey*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
   }
 }

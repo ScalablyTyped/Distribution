@@ -33,43 +33,31 @@ trait ServiceStatistics extends StObject {
 }
 object ServiceStatistics {
   
-  @scala.inline
-  def apply(): ServiceStatistics = {
+  inline def apply(): ServiceStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceStatistics]
   }
   
-  @scala.inline
-  implicit class ServiceStatisticsMutableBuilder[Self <: ServiceStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceStatistics](x: Self) {
     
-    @scala.inline
-    def setErrorStatistics(value: ErrorStatistics): Self = StObject.set(x, "ErrorStatistics", value.asInstanceOf[js.Any])
+    inline def setErrorStatistics(value: ErrorStatistics): Self = StObject.set(x, "ErrorStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorStatisticsUndefined: Self = StObject.set(x, "ErrorStatistics", js.undefined)
+    inline def setErrorStatisticsUndefined: Self = StObject.set(x, "ErrorStatistics", js.undefined)
     
-    @scala.inline
-    def setFaultStatistics(value: FaultStatistics): Self = StObject.set(x, "FaultStatistics", value.asInstanceOf[js.Any])
+    inline def setFaultStatistics(value: FaultStatistics): Self = StObject.set(x, "FaultStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaultStatisticsUndefined: Self = StObject.set(x, "FaultStatistics", js.undefined)
+    inline def setFaultStatisticsUndefined: Self = StObject.set(x, "FaultStatistics", js.undefined)
     
-    @scala.inline
-    def setOkCount(value: NullableLong): Self = StObject.set(x, "OkCount", value.asInstanceOf[js.Any])
+    inline def setOkCount(value: NullableLong): Self = StObject.set(x, "OkCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkCountUndefined: Self = StObject.set(x, "OkCount", js.undefined)
+    inline def setOkCountUndefined: Self = StObject.set(x, "OkCount", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: NullableLong): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: NullableLong): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
     
-    @scala.inline
-    def setTotalResponseTime(value: NullableDouble): Self = StObject.set(x, "TotalResponseTime", value.asInstanceOf[js.Any])
+    inline def setTotalResponseTime(value: NullableDouble): Self = StObject.set(x, "TotalResponseTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalResponseTimeUndefined: Self = StObject.set(x, "TotalResponseTime", js.undefined)
+    inline def setTotalResponseTimeUndefined: Self = StObject.set(x, "TotalResponseTime", js.undefined)
   }
 }

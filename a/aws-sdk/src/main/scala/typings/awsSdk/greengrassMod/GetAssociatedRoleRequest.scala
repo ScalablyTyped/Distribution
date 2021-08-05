@@ -13,16 +13,13 @@ trait GetAssociatedRoleRequest extends StObject {
 }
 object GetAssociatedRoleRequest {
   
-  @scala.inline
-  def apply(GroupId: string): GetAssociatedRoleRequest = {
+  inline def apply(GroupId: string): GetAssociatedRoleRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssociatedRoleRequest]
   }
   
-  @scala.inline
-  implicit class GetAssociatedRoleRequestMutableBuilder[Self <: GetAssociatedRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssociatedRoleRequest](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
   }
 }

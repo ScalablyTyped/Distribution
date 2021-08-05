@@ -29,22 +29,17 @@ trait SetCredentialsResponse extends StObject {
 }
 object SetCredentialsResponse {
   
-  @scala.inline
-  def apply(build: () => js.Any, printJson: () => String, setIsValid: Boolean => SetCredentialsResponse): SetCredentialsResponse = {
+  inline def apply(build: () => js.Any, printJson: () => String, setIsValid: Boolean => SetCredentialsResponse): SetCredentialsResponse = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), printJson = js.Any.fromFunction0(printJson), setIsValid = js.Any.fromFunction1(setIsValid))
     __obj.asInstanceOf[SetCredentialsResponse]
   }
   
-  @scala.inline
-  implicit class SetCredentialsResponseMutableBuilder[Self <: SetCredentialsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SetCredentialsResponse](x: Self) {
     
-    @scala.inline
-    def setBuild(value: () => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetIsValid(value: Boolean => SetCredentialsResponse): Self = StObject.set(x, "setIsValid", js.Any.fromFunction1(value))
+    inline def setSetIsValid(value: Boolean => SetCredentialsResponse): Self = StObject.set(x, "setIsValid", js.Any.fromFunction1(value))
   }
 }

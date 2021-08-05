@@ -22,28 +22,21 @@ trait SchemaCreativeSpecification extends StObject {
 }
 object SchemaCreativeSpecification {
   
-  @scala.inline
-  def apply(): SchemaCreativeSpecification = {
+  inline def apply(): SchemaCreativeSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreativeSpecification]
   }
   
-  @scala.inline
-  implicit class SchemaCreativeSpecificationMutableBuilder[Self <: SchemaCreativeSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreativeSpecification](x: Self) {
     
-    @scala.inline
-    def setCreativeCompanionSizes(value: js.Array[SchemaAdSize]): Self = StObject.set(x, "creativeCompanionSizes", value.asInstanceOf[js.Any])
+    inline def setCreativeCompanionSizes(value: js.Array[SchemaAdSize]): Self = StObject.set(x, "creativeCompanionSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeCompanionSizesUndefined: Self = StObject.set(x, "creativeCompanionSizes", js.undefined)
+    inline def setCreativeCompanionSizesUndefined: Self = StObject.set(x, "creativeCompanionSizes", js.undefined)
     
-    @scala.inline
-    def setCreativeCompanionSizesVarargs(value: SchemaAdSize*): Self = StObject.set(x, "creativeCompanionSizes", js.Array(value :_*))
+    inline def setCreativeCompanionSizesVarargs(value: SchemaAdSize*): Self = StObject.set(x, "creativeCompanionSizes", js.Array(value :_*))
     
-    @scala.inline
-    def setCreativeSize(value: SchemaAdSize): Self = StObject.set(x, "creativeSize", value.asInstanceOf[js.Any])
+    inline def setCreativeSize(value: SchemaAdSize): Self = StObject.set(x, "creativeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeSizeUndefined: Self = StObject.set(x, "creativeSize", js.undefined)
+    inline def setCreativeSizeUndefined: Self = StObject.set(x, "creativeSize", js.undefined)
   }
 }

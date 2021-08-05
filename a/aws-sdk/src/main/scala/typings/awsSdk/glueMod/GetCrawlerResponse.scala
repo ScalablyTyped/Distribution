@@ -13,19 +13,15 @@ trait GetCrawlerResponse extends StObject {
 }
 object GetCrawlerResponse {
   
-  @scala.inline
-  def apply(): GetCrawlerResponse = {
+  inline def apply(): GetCrawlerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCrawlerResponse]
   }
   
-  @scala.inline
-  implicit class GetCrawlerResponseMutableBuilder[Self <: GetCrawlerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCrawlerResponse](x: Self) {
     
-    @scala.inline
-    def setCrawler(value: Crawler): Self = StObject.set(x, "Crawler", value.asInstanceOf[js.Any])
+    inline def setCrawler(value: Crawler): Self = StObject.set(x, "Crawler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlerUndefined: Self = StObject.set(x, "Crawler", js.undefined)
+    inline def setCrawlerUndefined: Self = StObject.set(x, "Crawler", js.undefined)
   }
 }

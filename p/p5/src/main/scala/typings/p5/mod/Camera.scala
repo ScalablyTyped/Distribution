@@ -76,8 +76,7 @@ trait Camera extends StObject {
 }
 object Camera {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     camera: () => Unit,
     lookAt: (Double, Double, Double) => Unit,
     move: (Double, Double, Double) => Unit,
@@ -91,31 +90,22 @@ object Camera {
     __obj.asInstanceOf[Camera]
   }
   
-  @scala.inline
-  implicit class CameraMutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
+  extension [Self <: Camera](x: Self) {
     
-    @scala.inline
-    def setCamera(value: () => Unit): Self = StObject.set(x, "camera", js.Any.fromFunction0(value))
+    inline def setCamera(value: () => Unit): Self = StObject.set(x, "camera", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLookAt(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "lookAt", js.Any.fromFunction3(value))
+    inline def setLookAt(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "lookAt", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMove(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
+    inline def setMove(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOrtho(value: () => Unit): Self = StObject.set(x, "ortho", js.Any.fromFunction0(value))
+    inline def setOrtho(value: () => Unit): Self = StObject.set(x, "ortho", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPan(value: Double => Unit): Self = StObject.set(x, "pan", js.Any.fromFunction1(value))
+    inline def setPan(value: Double => Unit): Self = StObject.set(x, "pan", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPerspective(value: () => Unit): Self = StObject.set(x, "perspective", js.Any.fromFunction0(value))
+    inline def setPerspective(value: () => Unit): Self = StObject.set(x, "perspective", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPosition(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction3(value))
+    inline def setSetPosition(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTilt(value: Double => Unit): Self = StObject.set(x, "tilt", js.Any.fromFunction1(value))
+    inline def setTilt(value: Double => Unit): Self = StObject.set(x, "tilt", js.Any.fromFunction1(value))
   }
 }

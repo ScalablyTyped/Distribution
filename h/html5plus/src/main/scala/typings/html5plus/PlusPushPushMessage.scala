@@ -42,37 +42,27 @@ trait PlusPushPushMessage extends StObject {
 }
 object PlusPushPushMessage {
   
-  @scala.inline
-  def apply(): PlusPushPushMessage = {
+  inline def apply(): PlusPushPushMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusPushPushMessage]
   }
   
-  @scala.inline
-  implicit class PlusPushPushMessageMutableBuilder[Self <: PlusPushPushMessage] (val x: Self) extends AnyVal {
+  extension [Self <: PlusPushPushMessage](x: Self) {
     
-    @scala.inline
-    def setAps(value: js.Any): Self = StObject.set(x, "aps", value.asInstanceOf[js.Any])
+    inline def setAps(value: js.Any): Self = StObject.set(x, "aps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApsUndefined: Self = StObject.set(x, "aps", js.undefined)
+    inline def setApsUndefined: Self = StObject.set(x, "aps", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

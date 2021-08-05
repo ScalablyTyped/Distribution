@@ -21,8 +21,7 @@ object serdePluginMod {
   @js.native
   val deserializerMiddlewareOption: DeserializeHandlerOptions = js.native
   
-  @scala.inline
-  def getSerdePlugin[InputType /* <: js.Object */, SerDeContext /* <: EndpointBearer */, OutputType /* <: MetadataBearer */](
+  inline def getSerdePlugin[InputType /* <: js.Object */, SerDeContext /* <: EndpointBearer */, OutputType /* <: MetadataBearer */](
     config: SerDeContext,
     serializer: RequestSerializer[js.Any, SerDeContext],
     deserializer: ResponseDeserializer[OutputType, js.Any, SerDeContext]

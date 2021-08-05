@@ -14,25 +14,19 @@ trait PartialUpdateInstanceRequest extends StObject {
 }
 object PartialUpdateInstanceRequest {
   
-  @scala.inline
-  def apply(): PartialUpdateInstanceRequest = {
+  inline def apply(): PartialUpdateInstanceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialUpdateInstanceRequest]
   }
   
-  @scala.inline
-  implicit class PartialUpdateInstanceRequestMutableBuilder[Self <: PartialUpdateInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PartialUpdateInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

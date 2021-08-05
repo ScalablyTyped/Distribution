@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DayOfWeekType extends StObject
 object DayOfWeekType {
   
-  @scala.inline
-  def FRI: typings.squareConnect.squareConnectStrings.FRI = "FRI".asInstanceOf[typings.squareConnect.squareConnectStrings.FRI]
+  inline def FRI: typings.squareConnect.squareConnectStrings.FRI = "FRI".asInstanceOf[typings.squareConnect.squareConnectStrings.FRI]
   
-  @scala.inline
-  def MON: typings.squareConnect.squareConnectStrings.MON = "MON".asInstanceOf[typings.squareConnect.squareConnectStrings.MON]
+  inline def MON: typings.squareConnect.squareConnectStrings.MON = "MON".asInstanceOf[typings.squareConnect.squareConnectStrings.MON]
   
-  @scala.inline
-  def SAT: typings.squareConnect.squareConnectStrings.SAT = "SAT".asInstanceOf[typings.squareConnect.squareConnectStrings.SAT]
+  inline def SAT: typings.squareConnect.squareConnectStrings.SAT = "SAT".asInstanceOf[typings.squareConnect.squareConnectStrings.SAT]
   
-  @scala.inline
-  def SUN: typings.squareConnect.squareConnectStrings.SUN = "SUN".asInstanceOf[typings.squareConnect.squareConnectStrings.SUN]
+  inline def SUN: typings.squareConnect.squareConnectStrings.SUN = "SUN".asInstanceOf[typings.squareConnect.squareConnectStrings.SUN]
   
-  @scala.inline
-  def THU: typings.squareConnect.squareConnectStrings.THU = "THU".asInstanceOf[typings.squareConnect.squareConnectStrings.THU]
+  inline def THU: typings.squareConnect.squareConnectStrings.THU = "THU".asInstanceOf[typings.squareConnect.squareConnectStrings.THU]
   
-  @scala.inline
-  def TUE: typings.squareConnect.squareConnectStrings.TUE = "TUE".asInstanceOf[typings.squareConnect.squareConnectStrings.TUE]
+  inline def TUE: typings.squareConnect.squareConnectStrings.TUE = "TUE".asInstanceOf[typings.squareConnect.squareConnectStrings.TUE]
   
-  @scala.inline
-  def WED: typings.squareConnect.squareConnectStrings.WED = "WED".asInstanceOf[typings.squareConnect.squareConnectStrings.WED]
+  inline def WED: typings.squareConnect.squareConnectStrings.WED = "WED".asInstanceOf[typings.squareConnect.squareConnectStrings.WED]
 }

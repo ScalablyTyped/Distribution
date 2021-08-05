@@ -18,22 +18,17 @@ trait ElasticInferenceAccelerator extends StObject {
 }
 object ElasticInferenceAccelerator {
   
-  @scala.inline
-  def apply(Type: String): ElasticInferenceAccelerator = {
+  inline def apply(Type: String): ElasticInferenceAccelerator = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticInferenceAccelerator]
   }
   
-  @scala.inline
-  implicit class ElasticInferenceAcceleratorMutableBuilder[Self <: ElasticInferenceAccelerator] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticInferenceAccelerator](x: Self) {
     
-    @scala.inline
-    def setCount(value: ElasticInferenceAcceleratorCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: ElasticInferenceAcceleratorCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

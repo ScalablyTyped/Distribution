@@ -23,25 +23,19 @@ trait SchemaBasicAutoscalingAlgorithm extends StObject {
 }
 object SchemaBasicAutoscalingAlgorithm {
   
-  @scala.inline
-  def apply(): SchemaBasicAutoscalingAlgorithm = {
+  inline def apply(): SchemaBasicAutoscalingAlgorithm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBasicAutoscalingAlgorithm]
   }
   
-  @scala.inline
-  implicit class SchemaBasicAutoscalingAlgorithmMutableBuilder[Self <: SchemaBasicAutoscalingAlgorithm] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBasicAutoscalingAlgorithm](x: Self) {
     
-    @scala.inline
-    def setCooldownPeriod(value: String): Self = StObject.set(x, "cooldownPeriod", value.asInstanceOf[js.Any])
+    inline def setCooldownPeriod(value: String): Self = StObject.set(x, "cooldownPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCooldownPeriodUndefined: Self = StObject.set(x, "cooldownPeriod", js.undefined)
+    inline def setCooldownPeriodUndefined: Self = StObject.set(x, "cooldownPeriod", js.undefined)
     
-    @scala.inline
-    def setYarnConfig(value: SchemaBasicYarnAutoscalingConfig): Self = StObject.set(x, "yarnConfig", value.asInstanceOf[js.Any])
+    inline def setYarnConfig(value: SchemaBasicYarnAutoscalingConfig): Self = StObject.set(x, "yarnConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYarnConfigUndefined: Self = StObject.set(x, "yarnConfig", js.undefined)
+    inline def setYarnConfigUndefined: Self = StObject.set(x, "yarnConfig", js.undefined)
   }
 }

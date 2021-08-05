@@ -31,7 +31,7 @@ object eventSetMod {
     /* CompleteClass */
     override def dispatchEvent(event: Event, dispatchAll: Boolean): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val handlers: js.Any = js.native
     
     /* CompleteClass */
@@ -57,7 +57,7 @@ object eventSetMod {
       */
     def dispatchEvent(event: Event, dispatchAll: Boolean): Unit
     
-    val handlers: js.Any
+    /* private */ val handlers: js.Any
     
     def hasHandlers(): Boolean
     
@@ -68,8 +68,7 @@ object eventSetMod {
   }
   object EventSet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addHandlers: EventListeners => EventSet,
       dispatchEvent: (Event, Boolean) => Unit,
       handlers: js.Any,
@@ -80,23 +79,17 @@ object eventSetMod {
       __obj.asInstanceOf[EventSet]
     }
     
-    @scala.inline
-    implicit class EventSetMutableBuilder[Self <: EventSet] (val x: Self) extends AnyVal {
+    extension [Self <: EventSet](x: Self) {
       
-      @scala.inline
-      def setAddHandlers(value: EventListeners => EventSet): Self = StObject.set(x, "addHandlers", js.Any.fromFunction1(value))
+      inline def setAddHandlers(value: EventListeners => EventSet): Self = StObject.set(x, "addHandlers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDispatchEvent(value: (Event, Boolean) => Unit): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction2(value))
+      inline def setDispatchEvent(value: (Event, Boolean) => Unit): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHandlers(value: js.Any): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: js.Any): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasHandlers(value: () => Boolean): Self = StObject.set(x, "hasHandlers", js.Any.fromFunction0(value))
+      inline def setHasHandlers(value: () => Boolean): Self = StObject.set(x, "hasHandlers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveHandlers(value: EventListeners => EventSet): Self = StObject.set(x, "removeHandlers", js.Any.fromFunction1(value))
+      inline def setRemoveHandlers(value: EventListeners => EventSet): Self = StObject.set(x, "removeHandlers", js.Any.fromFunction1(value))
     }
   }
 }

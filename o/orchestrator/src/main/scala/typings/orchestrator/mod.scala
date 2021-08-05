@@ -52,29 +52,21 @@ object mod {
   trait EventNames extends StObject
   object EventNames {
     
-    @scala.inline
-    def err: typings.orchestrator.orchestratorStrings.err = "err".asInstanceOf[typings.orchestrator.orchestratorStrings.err]
+    inline def err: typings.orchestrator.orchestratorStrings.err = "err".asInstanceOf[typings.orchestrator.orchestratorStrings.err]
     
-    @scala.inline
-    def start: typings.orchestrator.orchestratorStrings.start = "start".asInstanceOf[typings.orchestrator.orchestratorStrings.start]
+    inline def start: typings.orchestrator.orchestratorStrings.start = "start".asInstanceOf[typings.orchestrator.orchestratorStrings.start]
     
-    @scala.inline
-    def stop: typings.orchestrator.orchestratorStrings.stop = "stop".asInstanceOf[typings.orchestrator.orchestratorStrings.stop]
+    inline def stop: typings.orchestrator.orchestratorStrings.stop = "stop".asInstanceOf[typings.orchestrator.orchestratorStrings.stop]
     
-    @scala.inline
-    def task_err: typings.orchestrator.orchestratorStrings.task_err = "task_err".asInstanceOf[typings.orchestrator.orchestratorStrings.task_err]
+    inline def task_err: typings.orchestrator.orchestratorStrings.task_err = "task_err".asInstanceOf[typings.orchestrator.orchestratorStrings.task_err]
     
-    @scala.inline
-    def task_not_found: typings.orchestrator.orchestratorStrings.task_not_found = "task_not_found".asInstanceOf[typings.orchestrator.orchestratorStrings.task_not_found]
+    inline def task_not_found: typings.orchestrator.orchestratorStrings.task_not_found = "task_not_found".asInstanceOf[typings.orchestrator.orchestratorStrings.task_not_found]
     
-    @scala.inline
-    def task_recursion: typings.orchestrator.orchestratorStrings.task_recursion = "task_recursion".asInstanceOf[typings.orchestrator.orchestratorStrings.task_recursion]
+    inline def task_recursion: typings.orchestrator.orchestratorStrings.task_recursion = "task_recursion".asInstanceOf[typings.orchestrator.orchestratorStrings.task_recursion]
     
-    @scala.inline
-    def task_start: typings.orchestrator.orchestratorStrings.task_start = "task_start".asInstanceOf[typings.orchestrator.orchestratorStrings.task_start]
+    inline def task_start: typings.orchestrator.orchestratorStrings.task_start = "task_start".asInstanceOf[typings.orchestrator.orchestratorStrings.task_start]
     
-    @scala.inline
-    def task_stop: typings.orchestrator.orchestratorStrings.task_stop = "task_stop".asInstanceOf[typings.orchestrator.orchestratorStrings.task_stop]
+    inline def task_stop: typings.orchestrator.orchestratorStrings.task_stop = "task_stop".asInstanceOf[typings.orchestrator.orchestratorStrings.task_stop]
   }
   
   trait Meta extends StObject {
@@ -87,8 +79,7 @@ object mod {
   }
   object Meta {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       duration: Double,
       hrDuration: js.Tuple2[Double, Double],
       runMethod: callback | `catch` | promise | stream | sync
@@ -97,17 +88,13 @@ object mod {
       __obj.asInstanceOf[Meta]
     }
     
-    @scala.inline
-    implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
+    extension [Self <: Meta](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrDuration(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "hrDuration", value.asInstanceOf[js.Any])
+      inline def setHrDuration(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "hrDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunMethod(value: callback | `catch` | promise | stream | sync): Self = StObject.set(x, "runMethod", value.asInstanceOf[js.Any])
+      inline def setRunMethod(value: callback | `catch` | promise | stream | sync): Self = StObject.set(x, "runMethod", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,17 +106,14 @@ object mod {
   }
   object OnAllCallbackEvent {
     
-    @scala.inline
-    def apply(err: js.Any, message: String, src: String, task: String): OnAllCallbackEvent = {
+    inline def apply(err: js.Any, message: String, src: String, task: String): OnAllCallbackEvent = {
       val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnAllCallbackEvent]
     }
     
-    @scala.inline
-    implicit class OnAllCallbackEventMutableBuilder[Self <: OnAllCallbackEvent] (val x: Self) extends AnyVal {
+    extension [Self <: OnAllCallbackEvent](x: Self) {
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,29 +129,22 @@ object mod {
   }
   object OnCallbackEvent {
     
-    @scala.inline
-    def apply(err: js.Any, message: String, task: String): OnCallbackEvent = {
+    inline def apply(err: js.Any, message: String, task: String): OnCallbackEvent = {
       val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnCallbackEvent]
     }
     
-    @scala.inline
-    implicit class OnCallbackEventMutableBuilder[Self <: OnCallbackEvent] (val x: Self) extends AnyVal {
+    extension [Self <: OnCallbackEvent](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setErr(value: js.Any): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: js.Any): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+      inline def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     }
   }
   
@@ -394,8 +371,7 @@ object mod {
   }
   object Task {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dep: js.Array[String],
       fn: /* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Promise[js.Any] | Stream | js.Any,
       name: String
@@ -404,46 +380,33 @@ object mod {
       __obj.asInstanceOf[Task]
     }
     
-    @scala.inline
-    implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
+    extension [Self <: Task](x: Self) {
       
-      @scala.inline
-      def setDep(value: js.Array[String]): Self = StObject.set(x, "dep", value.asInstanceOf[js.Any])
+      inline def setDep(value: js.Array[String]): Self = StObject.set(x, "dep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepVarargs(value: String*): Self = StObject.set(x, "dep", js.Array(value :_*))
+      inline def setDepVarargs(value: String*): Self = StObject.set(x, "dep", js.Array(value :_*))
       
-      @scala.inline
-      def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+      inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setFn(
+      inline def setFn(
         value: /* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Promise[js.Any] | Stream | js.Any
       ): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHrDuration(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "hrDuration", value.asInstanceOf[js.Any])
+      inline def setHrDuration(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "hrDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrDurationUndefined: Self = StObject.set(x, "hrDuration", js.undefined)
+      inline def setHrDurationUndefined: Self = StObject.set(x, "hrDuration", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+      inline def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
+      inline def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
     }
   }
   

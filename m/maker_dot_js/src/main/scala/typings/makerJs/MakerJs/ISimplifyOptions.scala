@@ -21,25 +21,19 @@ trait ISimplifyOptions extends StObject {
 }
 object ISimplifyOptions {
   
-  @scala.inline
-  def apply(): ISimplifyOptions = {
+  inline def apply(): ISimplifyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISimplifyOptions]
   }
   
-  @scala.inline
-  implicit class ISimplifyOptionsMutableBuilder[Self <: ISimplifyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ISimplifyOptions](x: Self) {
     
-    @scala.inline
-    def setPointMatchingDistance(value: Double): Self = StObject.set(x, "pointMatchingDistance", value.asInstanceOf[js.Any])
+    inline def setPointMatchingDistance(value: Double): Self = StObject.set(x, "pointMatchingDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointMatchingDistanceUndefined: Self = StObject.set(x, "pointMatchingDistance", js.undefined)
+    inline def setPointMatchingDistanceUndefined: Self = StObject.set(x, "pointMatchingDistance", js.undefined)
     
-    @scala.inline
-    def setScalarMatchingDistance(value: Double): Self = StObject.set(x, "scalarMatchingDistance", value.asInstanceOf[js.Any])
+    inline def setScalarMatchingDistance(value: Double): Self = StObject.set(x, "scalarMatchingDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalarMatchingDistanceUndefined: Self = StObject.set(x, "scalarMatchingDistance", js.undefined)
+    inline def setScalarMatchingDistanceUndefined: Self = StObject.set(x, "scalarMatchingDistance", js.undefined)
   }
 }

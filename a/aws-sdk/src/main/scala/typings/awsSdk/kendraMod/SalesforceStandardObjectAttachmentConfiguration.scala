@@ -18,28 +18,21 @@ trait SalesforceStandardObjectAttachmentConfiguration extends StObject {
 }
 object SalesforceStandardObjectAttachmentConfiguration {
   
-  @scala.inline
-  def apply(): SalesforceStandardObjectAttachmentConfiguration = {
+  inline def apply(): SalesforceStandardObjectAttachmentConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SalesforceStandardObjectAttachmentConfiguration]
   }
   
-  @scala.inline
-  implicit class SalesforceStandardObjectAttachmentConfigurationMutableBuilder[Self <: SalesforceStandardObjectAttachmentConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SalesforceStandardObjectAttachmentConfiguration](x: Self) {
     
-    @scala.inline
-    def setDocumentTitleFieldName(value: DataSourceFieldName): Self = StObject.set(x, "DocumentTitleFieldName", value.asInstanceOf[js.Any])
+    inline def setDocumentTitleFieldName(value: DataSourceFieldName): Self = StObject.set(x, "DocumentTitleFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentTitleFieldNameUndefined: Self = StObject.set(x, "DocumentTitleFieldName", js.undefined)
+    inline def setDocumentTitleFieldNameUndefined: Self = StObject.set(x, "DocumentTitleFieldName", js.undefined)
     
-    @scala.inline
-    def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = StObject.set(x, "FieldMappings", value.asInstanceOf[js.Any])
+    inline def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = StObject.set(x, "FieldMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldMappingsUndefined: Self = StObject.set(x, "FieldMappings", js.undefined)
+    inline def setFieldMappingsUndefined: Self = StObject.set(x, "FieldMappings", js.undefined)
     
-    @scala.inline
-    def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value :_*))
+    inline def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value :_*))
   }
 }

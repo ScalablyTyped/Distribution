@@ -23,19 +23,15 @@ trait Date extends StObject {
 }
 object Date {
   
-  @scala.inline
-  def apply(format: java.lang.String => java.lang.String, localeFormat: java.lang.String => java.lang.String): Date = {
+  inline def apply(format: java.lang.String => java.lang.String, localeFormat: java.lang.String => java.lang.String): Date = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), localeFormat = js.Any.fromFunction1(localeFormat))
     __obj.asInstanceOf[Date]
   }
   
-  @scala.inline
-  implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+  extension [Self <: Date](x: Self) {
     
-    @scala.inline
-    def setFormat(value: java.lang.String => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormat(value: java.lang.String => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocaleFormat(value: java.lang.String => java.lang.String): Self = StObject.set(x, "localeFormat", js.Any.fromFunction1(value))
+    inline def setLocaleFormat(value: java.lang.String => java.lang.String): Self = StObject.set(x, "localeFormat", js.Any.fromFunction1(value))
   }
 }

@@ -19,22 +19,17 @@ trait VictorySingleLabableProps
 }
 object VictorySingleLabableProps {
   
-  @scala.inline
-  def apply(): VictorySingleLabableProps = {
+  inline def apply(): VictorySingleLabableProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictorySingleLabableProps]
   }
   
-  @scala.inline
-  implicit class VictorySingleLabablePropsMutableBuilder[Self <: VictorySingleLabableProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictorySingleLabableProps](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String | (js.Function1[/* data */ js.Any, String])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String | (js.Function1[/* data */ js.Any, String])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFunction1(value: /* data */ js.Any => String): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+    inline def setLabelFunction1(value: /* data */ js.Any => String): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

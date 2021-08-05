@@ -30,8 +30,7 @@ trait ISelectionProvider extends StObject {
 }
 object ISelectionProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChangeSelection: (js.Any, js.Any) => Unit,
     getSelection: js.Any => Double,
     getSelectionIndex: js.Any => Double,
@@ -48,45 +47,32 @@ object ISelectionProvider {
     __obj.asInstanceOf[ISelectionProvider]
   }
   
-  @scala.inline
-  implicit class ISelectionProviderMutableBuilder[Self <: ISelectionProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ISelectionProvider](x: Self) {
     
-    @scala.inline
-    def setChangeSelection(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "ChangeSelection", js.Any.fromFunction2(value))
+    inline def setChangeSelection(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "ChangeSelection", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSelection(value: js.Any => Double): Self = StObject.set(x, "getSelection", js.Any.fromFunction1(value))
+    inline def setGetSelection(value: js.Any => Double): Self = StObject.set(x, "getSelection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSelectionIndex(value: js.Any => Double): Self = StObject.set(x, "getSelectionIndex", js.Any.fromFunction1(value))
+    inline def setGetSelectionIndex(value: js.Any => Double): Self = StObject.set(x, "getSelectionIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIgnoreSelectedItemChanges(value: Boolean): Self = StObject.set(x, "ignoreSelectedItemChanges", value.asInstanceOf[js.Any])
+    inline def setIgnoreSelectedItemChanges(value: Boolean): Self = StObject.set(x, "ignoreSelectedItemChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastClickedRow(value: js.Any): Self = StObject.set(x, "lastClickedRow", value.asInstanceOf[js.Any])
+    inline def setLastClickedRow(value: js.Any): Self = StObject.set(x, "lastClickedRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+    inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPKeyParser(
+    inline def setPKeyParser(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ICompiledExpression */ js.Any
     ): Self = StObject.set(x, "pKeyParser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    inline def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
     
-    @scala.inline
-    def setSetSelection(value: (IRow, Boolean) => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction2(value))
+    inline def setSetSelection(value: (IRow, Boolean) => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToggleSelectAll(value: (Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "toggleSelectAll", js.Any.fromFunction3(value))
+    inline def setToggleSelectAll(value: (Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "toggleSelectAll", js.Any.fromFunction3(value))
   }
 }

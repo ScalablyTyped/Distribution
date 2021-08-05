@@ -14,25 +14,19 @@ trait GooglePrivacyDlpV2UpdateJobTriggerRequest extends StObject {
 }
 object GooglePrivacyDlpV2UpdateJobTriggerRequest {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2UpdateJobTriggerRequest = {
+  inline def apply(): GooglePrivacyDlpV2UpdateJobTriggerRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2UpdateJobTriggerRequest]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2UpdateJobTriggerRequestMutableBuilder[Self <: GooglePrivacyDlpV2UpdateJobTriggerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2UpdateJobTriggerRequest](x: Self) {
     
-    @scala.inline
-    def setJobTrigger(value: GooglePrivacyDlpV2JobTrigger): Self = StObject.set(x, "jobTrigger", value.asInstanceOf[js.Any])
+    inline def setJobTrigger(value: GooglePrivacyDlpV2JobTrigger): Self = StObject.set(x, "jobTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTriggerUndefined: Self = StObject.set(x, "jobTrigger", js.undefined)
+    inline def setJobTriggerUndefined: Self = StObject.set(x, "jobTrigger", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

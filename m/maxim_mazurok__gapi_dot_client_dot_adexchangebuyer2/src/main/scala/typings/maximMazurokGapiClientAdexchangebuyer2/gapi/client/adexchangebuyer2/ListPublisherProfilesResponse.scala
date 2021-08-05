@@ -14,28 +14,21 @@ trait ListPublisherProfilesResponse extends StObject {
 }
 object ListPublisherProfilesResponse {
   
-  @scala.inline
-  def apply(): ListPublisherProfilesResponse = {
+  inline def apply(): ListPublisherProfilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPublisherProfilesResponse]
   }
   
-  @scala.inline
-  implicit class ListPublisherProfilesResponseMutableBuilder[Self <: ListPublisherProfilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPublisherProfilesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPublisherProfiles(value: js.Array[PublisherProfile]): Self = StObject.set(x, "publisherProfiles", value.asInstanceOf[js.Any])
+    inline def setPublisherProfiles(value: js.Array[PublisherProfile]): Self = StObject.set(x, "publisherProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherProfilesUndefined: Self = StObject.set(x, "publisherProfiles", js.undefined)
+    inline def setPublisherProfilesUndefined: Self = StObject.set(x, "publisherProfiles", js.undefined)
     
-    @scala.inline
-    def setPublisherProfilesVarargs(value: PublisherProfile*): Self = StObject.set(x, "publisherProfiles", js.Array(value :_*))
+    inline def setPublisherProfilesVarargs(value: PublisherProfile*): Self = StObject.set(x, "publisherProfiles", js.Array(value :_*))
   }
 }

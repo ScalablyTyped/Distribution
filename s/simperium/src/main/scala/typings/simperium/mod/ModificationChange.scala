@@ -23,37 +23,27 @@ trait ModificationChange[T]
 }
 object ModificationChange {
   
-  @scala.inline
-  def apply[T](ccid: String, id: String, v: JSONDiff[T]): ModificationChange[T] = {
+  inline def apply[T](ccid: String, id: String, v: JSONDiff[T]): ModificationChange[T] = {
     val __obj = js.Dynamic.literal(ccid = ccid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], o = "M", v = v.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModificationChange[T]]
   }
   
-  @scala.inline
-  implicit class ModificationChangeMutableBuilder[Self <: ModificationChange[?], T] (val x: Self & ModificationChange[T]) extends AnyVal {
+  extension [Self <: ModificationChange[?], T](x: Self & ModificationChange[T]) {
     
-    @scala.inline
-    def setCcid(value: String): Self = StObject.set(x, "ccid", value.asInstanceOf[js.Any])
+    inline def setCcid(value: String): Self = StObject.set(x, "ccid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setD(value: T): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: T): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+    inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setO(value: M): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
+    inline def setO(value: M): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSv(value: Double): Self = StObject.set(x, "sv", value.asInstanceOf[js.Any])
+    inline def setSv(value: Double): Self = StObject.set(x, "sv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvUndefined: Self = StObject.set(x, "sv", js.undefined)
+    inline def setSvUndefined: Self = StObject.set(x, "sv", js.undefined)
     
-    @scala.inline
-    def setV(value: JSONDiff[T]): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: JSONDiff[T]): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

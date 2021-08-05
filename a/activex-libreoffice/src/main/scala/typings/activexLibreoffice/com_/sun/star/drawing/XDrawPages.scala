@@ -33,8 +33,7 @@ trait XDrawPages
 }
 object XDrawPages {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -51,13 +50,10 @@ object XDrawPages {
     __obj.asInstanceOf[XDrawPages]
   }
   
-  @scala.inline
-  implicit class XDrawPagesMutableBuilder[Self <: XDrawPages] (val x: Self) extends AnyVal {
+  extension [Self <: XDrawPages](x: Self) {
     
-    @scala.inline
-    def setInsertNewByIndex(value: Double => XDrawPage): Self = StObject.set(x, "insertNewByIndex", js.Any.fromFunction1(value))
+    inline def setInsertNewByIndex(value: Double => XDrawPage): Self = StObject.set(x, "insertNewByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: XDrawPage => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: XDrawPage => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

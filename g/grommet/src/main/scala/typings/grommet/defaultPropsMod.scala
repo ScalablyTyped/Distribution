@@ -11,6 +11,5 @@ object defaultPropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extendDefaultTheme(theme: ThemeType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendDefaultTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def extendDefaultTheme(theme: ThemeType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendDefaultTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

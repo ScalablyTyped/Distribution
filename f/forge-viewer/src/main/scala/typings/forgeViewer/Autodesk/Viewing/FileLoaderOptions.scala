@@ -15,25 +15,19 @@ trait FileLoaderOptions
 }
 object FileLoaderOptions {
   
-  @scala.inline
-  def apply(): FileLoaderOptions = {
+  inline def apply(): FileLoaderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileLoaderOptions]
   }
   
-  @scala.inline
-  implicit class FileLoaderOptionsMutableBuilder[Self <: FileLoaderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FileLoaderOptions](x: Self) {
     
-    @scala.inline
-    def setIds(value: String): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: String): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setSharedPropertyDbPath(value: String): Self = StObject.set(x, "sharedPropertyDbPath", value.asInstanceOf[js.Any])
+    inline def setSharedPropertyDbPath(value: String): Self = StObject.set(x, "sharedPropertyDbPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedPropertyDbPathUndefined: Self = StObject.set(x, "sharedPropertyDbPath", js.undefined)
+    inline def setSharedPropertyDbPathUndefined: Self = StObject.set(x, "sharedPropertyDbPath", js.undefined)
   }
 }

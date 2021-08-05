@@ -14,19 +14,15 @@ trait LineData extends StObject {
 }
 object LineData {
   
-  @scala.inline
-  def apply(bufferRow: Double, screenRow: Double): LineData = {
+  inline def apply(bufferRow: Double, screenRow: Double): LineData = {
     val __obj = js.Dynamic.literal(bufferRow = bufferRow.asInstanceOf[js.Any], screenRow = screenRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineData]
   }
   
-  @scala.inline
-  implicit class LineDataMutableBuilder[Self <: LineData] (val x: Self) extends AnyVal {
+  extension [Self <: LineData](x: Self) {
     
-    @scala.inline
-    def setBufferRow(value: Double): Self = StObject.set(x, "bufferRow", value.asInstanceOf[js.Any])
+    inline def setBufferRow(value: Double): Self = StObject.set(x, "bufferRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenRow(value: Double): Self = StObject.set(x, "screenRow", value.asInstanceOf[js.Any])
+    inline def setScreenRow(value: Double): Self = StObject.set(x, "screenRow", value.asInstanceOf[js.Any])
   }
 }

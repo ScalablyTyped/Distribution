@@ -14,13 +14,13 @@ object documentCardImageBaseMod {
     extends Component[IDocumentCardImageProps, IDocumentCardImageState, js.Any] {
     def this(props: IDocumentCardImageProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _onImageLoad: js.Any = js.native
+    /* private */ var _onImageLoad: js.Any = js.native
     
-    var _renderCenterIcon: js.Any = js.native
+    /* private */ var _renderCenterIcon: js.Any = js.native
     
-    var _renderCornerIcon: js.Any = js.native
+    /* private */ var _renderCornerIcon: js.Any = js.native
   }
   
   trait IDocumentCardImageState extends StObject {
@@ -29,17 +29,14 @@ object documentCardImageBaseMod {
   }
   object IDocumentCardImageState {
     
-    @scala.inline
-    def apply(imageHasLoaded: Boolean): IDocumentCardImageState = {
+    inline def apply(imageHasLoaded: Boolean): IDocumentCardImageState = {
       val __obj = js.Dynamic.literal(imageHasLoaded = imageHasLoaded.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDocumentCardImageState]
     }
     
-    @scala.inline
-    implicit class IDocumentCardImageStateMutableBuilder[Self <: IDocumentCardImageState] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCardImageState](x: Self) {
       
-      @scala.inline
-      def setImageHasLoaded(value: Boolean): Self = StObject.set(x, "imageHasLoaded", value.asInstanceOf[js.Any])
+      inline def setImageHasLoaded(value: Boolean): Self = StObject.set(x, "imageHasLoaded", value.asInstanceOf[js.Any])
     }
   }
 }

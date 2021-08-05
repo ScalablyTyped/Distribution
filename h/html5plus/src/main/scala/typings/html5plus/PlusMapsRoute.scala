@@ -59,52 +59,37 @@ trait PlusMapsRoute extends StObject {
 }
 object PlusMapsRoute {
   
-  @scala.inline
-  def apply(): PlusMapsRoute = {
+  inline def apply(): PlusMapsRoute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusMapsRoute]
   }
   
-  @scala.inline
-  implicit class PlusMapsRouteMutableBuilder[Self <: PlusMapsRoute] (val x: Self) extends AnyVal {
+  extension [Self <: PlusMapsRoute](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setEndPoint(value: PlusMapsPoint): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
+    inline def setEndPoint(value: PlusMapsPoint): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPointUndefined: Self = StObject.set(x, "endPoint", js.undefined)
+    inline def setEndPointUndefined: Self = StObject.set(x, "endPoint", js.undefined)
     
-    @scala.inline
-    def setPointCount(value: PlusMapsPoint): Self = StObject.set(x, "pointCount", value.asInstanceOf[js.Any])
+    inline def setPointCount(value: PlusMapsPoint): Self = StObject.set(x, "pointCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointCountUndefined: Self = StObject.set(x, "pointCount", js.undefined)
+    inline def setPointCountUndefined: Self = StObject.set(x, "pointCount", js.undefined)
     
-    @scala.inline
-    def setPointList(value: js.Array[js.Any]): Self = StObject.set(x, "pointList", value.asInstanceOf[js.Any])
+    inline def setPointList(value: js.Array[js.Any]): Self = StObject.set(x, "pointList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointListUndefined: Self = StObject.set(x, "pointList", js.undefined)
+    inline def setPointListUndefined: Self = StObject.set(x, "pointList", js.undefined)
     
-    @scala.inline
-    def setPointListVarargs(value: js.Any*): Self = StObject.set(x, "pointList", js.Array(value :_*))
+    inline def setPointListVarargs(value: js.Any*): Self = StObject.set(x, "pointList", js.Array(value :_*))
     
-    @scala.inline
-    def setRouteTip(value: String): Self = StObject.set(x, "routeTip", value.asInstanceOf[js.Any])
+    inline def setRouteTip(value: String): Self = StObject.set(x, "routeTip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteTipUndefined: Self = StObject.set(x, "routeTip", js.undefined)
+    inline def setRouteTipUndefined: Self = StObject.set(x, "routeTip", js.undefined)
     
-    @scala.inline
-    def setStartPoint(value: PlusMapsPoint): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
+    inline def setStartPoint(value: PlusMapsPoint): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPointUndefined: Self = StObject.set(x, "startPoint", js.undefined)
+    inline def setStartPointUndefined: Self = StObject.set(x, "startPoint", js.undefined)
   }
 }

@@ -22,12 +22,12 @@ object importManagerMod {
       * Determines the full end of a given node. By default the end position of a node is
       * before all trailing comments. This could mean that generated imports shift comments.
       */
-    var _getEndPositionOfNode: js.Any = js.native
+    /* private */ var _getEndPositionOfNode: js.Any = js.native
     
     /** Gets an unique identifier with a base name for the given source file. */
-    var _getUniqueIdentifier: js.Any = js.native
+    /* private */ var _getUniqueIdentifier: js.Any = js.native
     
-    var _recordUsedIdentifier: js.Any = js.native
+    /* private */ var _recordUsedIdentifier: js.Any = js.native
     
     /**
       * Adds an import to the given source-file and returns the TypeScript
@@ -38,21 +38,21 @@ object importManagerMod {
     def addImportToSourceFile(sourceFile: SourceFile, symbolName: Null, moduleName: String): Expression = js.native
     def addImportToSourceFile(sourceFile: SourceFile, symbolName: Null, moduleName: String, typeImport: Boolean): Expression = js.native
     
-    var getUpdateRecorder: js.Any = js.native
+    /* private */ var getUpdateRecorder: js.Any = js.native
     
     /**
       * Array of previously resolved symbol imports. Cache can be re-used to return
       * the same identifier without checking the source-file again.
       */
-    var importCache: js.Any = js.native
+    /* private */ var importCache: js.Any = js.native
     
     /**
       * Checks whether the specified identifier name is used within the given
       * source file.
       */
-    var isUniqueIdentifierName: js.Any = js.native
+    /* private */ var isUniqueIdentifierName: js.Any = js.native
     
-    var printer: js.Any = js.native
+    /* private */ var printer: js.Any = js.native
     
     /**
       * Stores the collected import changes within the appropriate update recorders. The
@@ -62,10 +62,10 @@ object importManagerMod {
     def recordChanges(): Unit = js.native
     
     /** Map of import declarations that need to be updated to include the given symbols. */
-    var updatedImports: js.Any = js.native
+    /* private */ var updatedImports: js.Any = js.native
     
     /** Map of source-files and their previously used identifier names. */
-    var usedIdentifierNames: js.Any = js.native
+    /* private */ var usedIdentifierNames: js.Any = js.native
   }
   
   trait ImportManagerUpdateRecorder extends StObject {
@@ -76,20 +76,16 @@ object importManagerMod {
   }
   object ImportManagerUpdateRecorder {
     
-    @scala.inline
-    def apply(addNewImport: (Double, String) => Unit, updateExistingImport: (NamedImports, String) => Unit): ImportManagerUpdateRecorder = {
+    inline def apply(addNewImport: (Double, String) => Unit, updateExistingImport: (NamedImports, String) => Unit): ImportManagerUpdateRecorder = {
       val __obj = js.Dynamic.literal(addNewImport = js.Any.fromFunction2(addNewImport), updateExistingImport = js.Any.fromFunction2(updateExistingImport))
       __obj.asInstanceOf[ImportManagerUpdateRecorder]
     }
     
-    @scala.inline
-    implicit class ImportManagerUpdateRecorderMutableBuilder[Self <: ImportManagerUpdateRecorder] (val x: Self) extends AnyVal {
+    extension [Self <: ImportManagerUpdateRecorder](x: Self) {
       
-      @scala.inline
-      def setAddNewImport(value: (Double, String) => Unit): Self = StObject.set(x, "addNewImport", js.Any.fromFunction2(value))
+      inline def setAddNewImport(value: (Double, String) => Unit): Self = StObject.set(x, "addNewImport", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateExistingImport(value: (NamedImports, String) => Unit): Self = StObject.set(x, "updateExistingImport", js.Any.fromFunction2(value))
+      inline def setUpdateExistingImport(value: (NamedImports, String) => Unit): Self = StObject.set(x, "updateExistingImport", js.Any.fromFunction2(value))
     }
   }
 }

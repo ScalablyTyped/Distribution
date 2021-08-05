@@ -291,8 +291,7 @@ trait Code extends StObject {
 }
 object Code {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: `478`,
     commits: `479`,
     issuesAndPullRequests: `480`,
@@ -305,28 +304,20 @@ object Code {
     __obj.asInstanceOf[Code]
   }
   
-  @scala.inline
-  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+  extension [Self <: Code](x: Self) {
     
-    @scala.inline
-    def setCode(value: `478`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: `478`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommits(value: `479`): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+    inline def setCommits(value: `479`): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuesAndPullRequests(value: `480`): Self = StObject.set(x, "issuesAndPullRequests", value.asInstanceOf[js.Any])
+    inline def setIssuesAndPullRequests(value: `480`): Self = StObject.set(x, "issuesAndPullRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: `481`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: `481`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepos(value: `482`): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
+    inline def setRepos(value: `482`): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopics(value: `483`): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+    inline def setTopics(value: `483`): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsers(value: `484`): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: `484`): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
   }
 }

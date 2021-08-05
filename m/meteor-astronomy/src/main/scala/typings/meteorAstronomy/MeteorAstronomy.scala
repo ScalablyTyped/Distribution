@@ -93,62 +93,44 @@ object MeteorAstronomy {
   }
   object ClassModel {
     
-    @scala.inline
-    def apply[T](fields: Fields[Omit[T, _id]], name: String): ClassModel[T] = {
+    inline def apply[T](fields: Fields[Omit[T, _id]], name: String): ClassModel[T] = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClassModel[T]]
     }
     
-    @scala.inline
-    implicit class ClassModelMutableBuilder[Self <: ClassModel[?], T] (val x: Self & ClassModel[T]) extends AnyVal {
+    extension [Self <: ClassModel[?], T](x: Self & ClassModel[T]) {
       
-      @scala.inline
-      def setBehaviors(value: js.Object): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
+      inline def setBehaviors(value: js.Object): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
+      inline def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
       
-      @scala.inline
-      def setCollection(value: Collection[T, T]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: Collection[T, T]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+      inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
       
-      @scala.inline
-      def setEvents(value: js.Object): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Object): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setFields(value: Fields[Omit[T, _id]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Fields[Omit[T, _id]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpers(value: Helpers[T]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
+      inline def setHelpers(value: Helpers[T]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
+      inline def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
       
-      @scala.inline
-      def setIndexes(value: js.Object): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+      inline def setIndexes(value: js.Object): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
+      inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
       
-      @scala.inline
-      def setMeteorMethods(value: js.Object): Self = StObject.set(x, "meteorMethods", value.asInstanceOf[js.Any])
+      inline def setMeteorMethods(value: js.Object): Self = StObject.set(x, "meteorMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeteorMethodsUndefined: Self = StObject.set(x, "meteorMethods", js.undefined)
+      inline def setMeteorMethodsUndefined: Self = StObject.set(x, "meteorMethods", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecured(value: Insert | Boolean): Self = StObject.set(x, "secured", value.asInstanceOf[js.Any])
+      inline def setSecured(value: Insert | Boolean): Self = StObject.set(x, "secured", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecuredUndefined: Self = StObject.set(x, "secured", js.undefined)
+      inline def setSecuredUndefined: Self = StObject.set(x, "secured", js.undefined)
     }
   }
   
@@ -162,23 +144,18 @@ object MeteorAstronomy {
   }
   object EnumModel {
     
-    @scala.inline
-    def apply[T](identifiers: js.Array[String] | T, name: String): EnumModel[T] = {
+    inline def apply[T](identifiers: js.Array[String] | T, name: String): EnumModel[T] = {
       val __obj = js.Dynamic.literal(identifiers = identifiers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnumModel[T]]
     }
     
-    @scala.inline
-    implicit class EnumModelMutableBuilder[Self <: EnumModel[?], T] (val x: Self & EnumModel[T]) extends AnyVal {
+    extension [Self <: EnumModel[?], T](x: Self & EnumModel[T]) {
       
-      @scala.inline
-      def setIdentifiers(value: js.Array[String] | T): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
+      inline def setIdentifiers(value: js.Array[String] | T): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
+      inline def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,62 +183,44 @@ object MeteorAstronomy {
   }
   object FindOneOptions {
     
-    @scala.inline
-    def apply(): FindOneOptions = {
+    inline def apply(): FindOneOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindOneOptions]
     }
     
-    @scala.inline
-    implicit class FindOneOptionsMutableBuilder[Self <: FindOneOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FindOneOptions](x: Self) {
       
-      @scala.inline
-      def setChildren(value: Double): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Double): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+      inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
-      @scala.inline
-      def setDisableEvents(value: Boolean): Self = StObject.set(x, "disableEvents", value.asInstanceOf[js.Any])
+      inline def setDisableEvents(value: Boolean): Self = StObject.set(x, "disableEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableEventsUndefined: Self = StObject.set(x, "disableEvents", js.undefined)
+      inline def setDisableEventsUndefined: Self = StObject.set(x, "disableEvents", js.undefined)
       
-      @scala.inline
-      def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setReactive(value: Boolean): Self = StObject.set(x, "reactive", value.asInstanceOf[js.Any])
+      inline def setReactive(value: Boolean): Self = StObject.set(x, "reactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReactiveUndefined: Self = StObject.set(x, "reactive", js.undefined)
+      inline def setReactiveUndefined: Self = StObject.set(x, "reactive", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setSort(value: SortSpecifier): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: SortSpecifier): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      @scala.inline
-      def setTransform(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   
@@ -273,20 +232,16 @@ object MeteorAstronomy {
   }
   object FindOptions {
     
-    @scala.inline
-    def apply(): FindOptions = {
+    inline def apply(): FindOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindOptions]
     }
     
-    @scala.inline
-    implicit class FindOptionsMutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FindOptions](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     }
   }
   
@@ -323,66 +278,47 @@ object MeteorAstronomy {
   }
   object ModelFullField {
     
-    @scala.inline
-    def apply[Field, Doc](`type`: TypeOptions): ModelFullField[Field, Doc] = {
+    inline def apply[Field, Doc](`type`: TypeOptions): ModelFullField[Field, Doc] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelFullField[Field, Doc]]
     }
     
-    @scala.inline
-    implicit class ModelFullFieldMutableBuilder[Self <: ModelFullField[?, ?], Field, Doc] (val x: Self & (ModelFullField[Field, Doc])) extends AnyVal {
+    extension [Self <: ModelFullField[?, ?], Field, Doc](x: Self & (ModelFullField[Field, Doc])) {
       
-      @scala.inline
-      def setDefault(value: () => Field): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
+      inline def setDefault(value: () => Field): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
+      inline def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
+      inline def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
       
-      @scala.inline
-      def setIndex(value: String | Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String | Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      @scala.inline
-      def setResolve(value: /* doc */ Doc => Field): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: /* doc */ Doc => Field): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
       
-      @scala.inline
-      def setTransient(value: Boolean): Self = StObject.set(x, "transient", value.asInstanceOf[js.Any])
+      inline def setTransient(value: Boolean): Self = StObject.set(x, "transient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransientUndefined: Self = StObject.set(x, "transient", js.undefined)
+      inline def setTransientUndefined: Self = StObject.set(x, "transient", js.undefined)
       
-      @scala.inline
-      def setType(value: TypeOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TypeOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeVarargs(value: TypeOptionsPrimitives*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: TypeOptionsPrimitives*): Self = StObject.set(x, "type", js.Array(value :_*))
       
-      @scala.inline
-      def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+      inline def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
+      inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
       
-      @scala.inline
-      def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
+      inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
     }
   }
   
@@ -411,41 +347,30 @@ object MeteorAstronomy {
   }
   object SaveAndValidateOptions {
     
-    @scala.inline
-    def apply[K](): SaveAndValidateOptions[K] = {
+    inline def apply[K](): SaveAndValidateOptions[K] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SaveAndValidateOptions[K]]
     }
     
-    @scala.inline
-    implicit class SaveAndValidateOptionsMutableBuilder[Self <: SaveAndValidateOptions[?], K] (val x: Self & SaveAndValidateOptions[K]) extends AnyVal {
+    extension [Self <: SaveAndValidateOptions[?], K](x: Self & SaveAndValidateOptions[K]) {
       
-      @scala.inline
-      def setCast(value: Boolean): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
+      inline def setCast(value: Boolean): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
+      inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
       
-      @scala.inline
-      def setFields(value: js.Array[K]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[K]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFieldsVarargs(value: K*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: K*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setSimulation(value: Boolean): Self = StObject.set(x, "simulation", value.asInstanceOf[js.Any])
+      inline def setSimulation(value: Boolean): Self = StObject.set(x, "simulation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimulationUndefined: Self = StObject.set(x, "simulation", js.undefined)
+      inline def setSimulationUndefined: Self = StObject.set(x, "simulation", js.undefined)
       
-      @scala.inline
-      def setStopOnFirstError(value: Boolean): Self = StObject.set(x, "stopOnFirstError", value.asInstanceOf[js.Any])
+      inline def setStopOnFirstError(value: Boolean): Self = StObject.set(x, "stopOnFirstError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopOnFirstErrorUndefined: Self = StObject.set(x, "stopOnFirstError", js.undefined)
+      inline def setStopOnFirstErrorUndefined: Self = StObject.set(x, "stopOnFirstError", js.undefined)
     }
   }
   
@@ -461,20 +386,16 @@ object MeteorAstronomy {
   }
   object UpdateOptions {
     
-    @scala.inline
-    def apply(): UpdateOptions = {
+    inline def apply(): UpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    @scala.inline
-    implicit class UpdateOptionsMutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateOptions](x: Self) {
       
-      @scala.inline
-      def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+      inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+      inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
     }
   }
   
@@ -484,20 +405,16 @@ object MeteorAstronomy {
   }
   object UpsertOptions {
     
-    @scala.inline
-    def apply(): UpsertOptions = {
+    inline def apply(): UpsertOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpsertOptions]
     }
     
-    @scala.inline
-    implicit class UpsertOptionsMutableBuilder[Self <: UpsertOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UpsertOptions](x: Self) {
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     }
   }
   
@@ -509,21 +426,17 @@ object MeteorAstronomy {
   }
   object Validator {
     
-    @scala.inline
-    def apply(param: js.Any, `type`: String): Validator = {
+    inline def apply(param: js.Any, `type`: String): Validator = {
       val __obj = js.Dynamic.literal(param = param.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Validator]
     }
     
-    @scala.inline
-    implicit class ValidatorMutableBuilder[Self <: Validator] (val x: Self) extends AnyVal {
+    extension [Self <: Validator](x: Self) {
       
-      @scala.inline
-      def setParam(value: js.Any): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+      inline def setParam(value: js.Any): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

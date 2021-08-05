@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(condition: js.Any, format: String, extra: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(condition: js.Any, format: Unit, extra: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(condition: js.Any, format: String, extra: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(condition: js.Any, format: Unit, extra: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("warning", JSImport.Namespace)
   @js.native

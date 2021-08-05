@@ -89,8 +89,6 @@ object structure {
     def this(id: Double, label: String, value: js.Any, properties: js.Array[Property]) = this()
   }
   
-  @scala.inline
-  def toLong(value: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("toLong")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def toLong(value: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("toLong")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def toLong(value: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("toLong")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def toLong(value: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("toLong")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
 }

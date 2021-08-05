@@ -28,8 +28,7 @@ trait XTextTablesSupplier
 }
 object XTextTablesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TextTables: XNameAccess,
     acquire: () => Unit,
     getTextTables: () => XNameAccess,
@@ -40,13 +39,10 @@ object XTextTablesSupplier {
     __obj.asInstanceOf[XTextTablesSupplier]
   }
   
-  @scala.inline
-  implicit class XTextTablesSupplierMutableBuilder[Self <: XTextTablesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XTextTablesSupplier](x: Self) {
     
-    @scala.inline
-    def setGetTextTables(value: () => XNameAccess): Self = StObject.set(x, "getTextTables", js.Any.fromFunction0(value))
+    inline def setGetTextTables(value: () => XNameAccess): Self = StObject.set(x, "getTextTables", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextTables(value: XNameAccess): Self = StObject.set(x, "TextTables", value.asInstanceOf[js.Any])
+    inline def setTextTables(value: XNameAccess): Self = StObject.set(x, "TextTables", value.asInstanceOf[js.Any])
   }
 }

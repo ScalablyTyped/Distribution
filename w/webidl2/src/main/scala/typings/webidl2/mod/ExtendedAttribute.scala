@@ -26,8 +26,7 @@ trait ExtendedAttribute
 }
 object ExtendedAttribute {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: js.Array[Argument],
     extAttrs: js.Array[ExtendedAttribute],
     name: String,
@@ -38,28 +37,20 @@ object ExtendedAttribute {
     __obj.asInstanceOf[ExtendedAttribute]
   }
   
-  @scala.inline
-  implicit class ExtendedAttributeMutableBuilder[Self <: ExtendedAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: ExtendedAttribute](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: IDLRootType | FieldType | IDLInterfaceMemberType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: IDLRootType | FieldType | IDLInterfaceMemberType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRhs(value: ExtendedAttributeRightHandSide): Self = StObject.set(x, "rhs", value.asInstanceOf[js.Any])
+    inline def setRhs(value: ExtendedAttributeRightHandSide): Self = StObject.set(x, "rhs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRhsNull: Self = StObject.set(x, "rhs", null)
+    inline def setRhsNull: Self = StObject.set(x, "rhs", null)
     
-    @scala.inline
-    def setType(value: `extended-attribute`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `extended-attribute`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

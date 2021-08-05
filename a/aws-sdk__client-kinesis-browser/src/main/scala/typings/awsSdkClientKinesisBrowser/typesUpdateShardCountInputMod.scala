@@ -52,43 +52,32 @@ object typesUpdateShardCountInputMod {
   }
   object UpdateShardCountInput {
     
-    @scala.inline
-    def apply(ScalingType: UNIFORM_SCALING | String, StreamName: String, TargetShardCount: Double): UpdateShardCountInput = {
+    inline def apply(ScalingType: UNIFORM_SCALING | String, StreamName: String, TargetShardCount: Double): UpdateShardCountInput = {
       val __obj = js.Dynamic.literal(ScalingType = ScalingType.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any], TargetShardCount = TargetShardCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateShardCountInput]
     }
     
-    @scala.inline
-    implicit class UpdateShardCountInputMutableBuilder[Self <: UpdateShardCountInput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateShardCountInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setScalingType(value: UNIFORM_SCALING | String): Self = StObject.set(x, "ScalingType", value.asInstanceOf[js.Any])
+      inline def setScalingType(value: UNIFORM_SCALING | String): Self = StObject.set(x, "ScalingType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+      inline def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetShardCount(value: Double): Self = StObject.set(x, "TargetShardCount", value.asInstanceOf[js.Any])
+      inline def setTargetShardCount(value: Double): Self = StObject.set(x, "TargetShardCount", value.asInstanceOf[js.Any])
     }
   }
 }

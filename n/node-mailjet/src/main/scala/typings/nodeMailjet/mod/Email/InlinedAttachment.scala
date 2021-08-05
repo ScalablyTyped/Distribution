@@ -12,16 +12,13 @@ trait InlinedAttachment
 }
 object InlinedAttachment {
   
-  @scala.inline
-  def apply(Base64Content: String, ContentID: String, ContentType: String, Filename: String): InlinedAttachment = {
+  inline def apply(Base64Content: String, ContentID: String, ContentType: String, Filename: String): InlinedAttachment = {
     val __obj = js.Dynamic.literal(Base64Content = Base64Content.asInstanceOf[js.Any], ContentID = ContentID.asInstanceOf[js.Any], ContentType = ContentType.asInstanceOf[js.Any], Filename = Filename.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlinedAttachment]
   }
   
-  @scala.inline
-  implicit class InlinedAttachmentMutableBuilder[Self <: InlinedAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: InlinedAttachment](x: Self) {
     
-    @scala.inline
-    def setContentID(value: String): Self = StObject.set(x, "ContentID", value.asInstanceOf[js.Any])
+    inline def setContentID(value: String): Self = StObject.set(x, "ContentID", value.asInstanceOf[js.Any])
   }
 }

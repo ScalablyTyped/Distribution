@@ -15,19 +15,15 @@ trait CellEditBegin
 }
 object CellEditBegin {
   
-  @scala.inline
-  def apply(fieldKey: String, recordKey: Double): CellEditBegin = {
+  inline def apply(fieldKey: String, recordKey: Double): CellEditBegin = {
     val __obj = js.Dynamic.literal(fieldKey = fieldKey.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellEditBegin]
   }
   
-  @scala.inline
-  implicit class CellEditBeginMutableBuilder[Self <: CellEditBegin] (val x: Self) extends AnyVal {
+  extension [Self <: CellEditBegin](x: Self) {
     
-    @scala.inline
-    def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
+    inline def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
+    inline def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
   }
 }

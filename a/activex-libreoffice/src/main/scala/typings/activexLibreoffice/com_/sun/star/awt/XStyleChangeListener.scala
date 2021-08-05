@@ -19,8 +19,7 @@ trait XStyleChangeListener
 }
 object XStyleChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -31,10 +30,8 @@ object XStyleChangeListener {
     __obj.asInstanceOf[XStyleChangeListener]
   }
   
-  @scala.inline
-  implicit class XStyleChangeListenerMutableBuilder[Self <: XStyleChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XStyleChangeListener](x: Self) {
     
-    @scala.inline
-    def setStyleSettingsChanged(value: EventObject => Unit): Self = StObject.set(x, "styleSettingsChanged", js.Any.fromFunction1(value))
+    inline def setStyleSettingsChanged(value: EventObject => Unit): Self = StObject.set(x, "styleSettingsChanged", js.Any.fromFunction1(value))
   }
 }

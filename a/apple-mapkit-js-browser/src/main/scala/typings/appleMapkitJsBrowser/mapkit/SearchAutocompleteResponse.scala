@@ -21,22 +21,17 @@ trait SearchAutocompleteResponse extends StObject {
 }
 object SearchAutocompleteResponse {
   
-  @scala.inline
-  def apply(query: String, results: js.Array[SearchAutocompleteResult]): SearchAutocompleteResponse = {
+  inline def apply(query: String, results: js.Array[SearchAutocompleteResult]): SearchAutocompleteResponse = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchAutocompleteResponse]
   }
   
-  @scala.inline
-  implicit class SearchAutocompleteResponseMutableBuilder[Self <: SearchAutocompleteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchAutocompleteResponse](x: Self) {
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: js.Array[SearchAutocompleteResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SearchAutocompleteResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: SearchAutocompleteResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SearchAutocompleteResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

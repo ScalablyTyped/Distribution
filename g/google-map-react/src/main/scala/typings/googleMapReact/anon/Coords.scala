@@ -10,16 +10,13 @@ trait Coords extends StObject {
 }
 object Coords {
   
-  @scala.inline
-  def apply(coords: typings.googleMapReact.mod.Coords): Coords = {
+  inline def apply(coords: typings.googleMapReact.mod.Coords): Coords = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coords]
   }
   
-  @scala.inline
-  implicit class CoordsMutableBuilder[Self <: Coords] (val x: Self) extends AnyVal {
+  extension [Self <: Coords](x: Self) {
     
-    @scala.inline
-    def setCoords(value: typings.googleMapReact.mod.Coords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: typings.googleMapReact.mod.Coords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
   }
 }

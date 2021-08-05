@@ -29,15 +29,12 @@ object Polygon {
     * @param element Element to parse
     * @param [options] Options object
     */
-  @scala.inline
-  def fromElement(element: SVGElement): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[Polygon]
-  @scala.inline
-  def fromElement(element: SVGElement, options: IPolylineOptions): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  inline def fromElement(element: SVGElement): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[Polygon]
+  inline def fromElement(element: SVGElement, options: IPolylineOptions): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Polygon]
   
   /**
     * Returns fabric.Polygon instance from an object representation
     * @param object Object to create an instance from
     */
-  @scala.inline
-  def fromObject(`object`: js.Any): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Polygon]
+  inline def fromObject(`object`: js.Any): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Polygon]
 }

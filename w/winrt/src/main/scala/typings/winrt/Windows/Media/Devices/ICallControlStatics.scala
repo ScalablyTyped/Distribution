@@ -12,19 +12,15 @@ trait ICallControlStatics extends StObject {
 }
 object ICallControlStatics {
   
-  @scala.inline
-  def apply(fromId: String => CallControl, getDefault: () => CallControl): ICallControlStatics = {
+  inline def apply(fromId: String => CallControl, getDefault: () => CallControl): ICallControlStatics = {
     val __obj = js.Dynamic.literal(fromId = js.Any.fromFunction1(fromId), getDefault = js.Any.fromFunction0(getDefault))
     __obj.asInstanceOf[ICallControlStatics]
   }
   
-  @scala.inline
-  implicit class ICallControlStaticsMutableBuilder[Self <: ICallControlStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ICallControlStatics](x: Self) {
     
-    @scala.inline
-    def setFromId(value: String => CallControl): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
+    inline def setFromId(value: String => CallControl): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDefault(value: () => CallControl): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
+    inline def setGetDefault(value: () => CallControl): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
   }
 }

@@ -13,22 +13,17 @@ trait SendParamsRecipient extends StObject {
 }
 object SendParamsRecipient {
   
-  @scala.inline
-  def apply(Email: String): SendParamsRecipient = {
+  inline def apply(Email: String): SendParamsRecipient = {
     val __obj = js.Dynamic.literal(Email = Email.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendParamsRecipient]
   }
   
-  @scala.inline
-  implicit class SendParamsRecipientMutableBuilder[Self <: SendParamsRecipient] (val x: Self) extends AnyVal {
+  extension [Self <: SendParamsRecipient](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

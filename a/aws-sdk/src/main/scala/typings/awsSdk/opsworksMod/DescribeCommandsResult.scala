@@ -13,22 +13,17 @@ trait DescribeCommandsResult extends StObject {
 }
 object DescribeCommandsResult {
   
-  @scala.inline
-  def apply(): DescribeCommandsResult = {
+  inline def apply(): DescribeCommandsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCommandsResult]
   }
   
-  @scala.inline
-  implicit class DescribeCommandsResultMutableBuilder[Self <: DescribeCommandsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCommandsResult](x: Self) {
     
-    @scala.inline
-    def setCommands(value: Commands): Self = StObject.set(x, "Commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: Commands): Self = StObject.set(x, "Commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandsUndefined: Self = StObject.set(x, "Commands", js.undefined)
+    inline def setCommandsUndefined: Self = StObject.set(x, "Commands", js.undefined)
     
-    @scala.inline
-    def setCommandsVarargs(value: Command*): Self = StObject.set(x, "Commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: Command*): Self = StObject.set(x, "Commands", js.Array(value :_*))
   }
 }

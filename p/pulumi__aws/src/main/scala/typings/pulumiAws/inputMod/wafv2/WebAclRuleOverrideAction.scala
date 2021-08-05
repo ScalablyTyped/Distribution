@@ -19,25 +19,19 @@ trait WebAclRuleOverrideAction extends StObject {
 }
 object WebAclRuleOverrideAction {
   
-  @scala.inline
-  def apply(): WebAclRuleOverrideAction = {
+  inline def apply(): WebAclRuleOverrideAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebAclRuleOverrideAction]
   }
   
-  @scala.inline
-  implicit class WebAclRuleOverrideActionMutableBuilder[Self <: WebAclRuleOverrideAction] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleOverrideAction](x: Self) {
     
-    @scala.inline
-    def setCount(value: Input[WebAclRuleOverrideActionCount]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Input[WebAclRuleOverrideActionCount]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setNone(value: Input[WebAclRuleOverrideActionNone]): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: Input[WebAclRuleOverrideActionNone]): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
+    inline def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
   }
 }

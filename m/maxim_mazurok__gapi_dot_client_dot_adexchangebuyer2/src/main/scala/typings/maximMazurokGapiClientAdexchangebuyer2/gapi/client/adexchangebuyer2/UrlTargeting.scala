@@ -14,31 +14,23 @@ trait UrlTargeting extends StObject {
 }
 object UrlTargeting {
   
-  @scala.inline
-  def apply(): UrlTargeting = {
+  inline def apply(): UrlTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UrlTargeting]
   }
   
-  @scala.inline
-  implicit class UrlTargetingMutableBuilder[Self <: UrlTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: UrlTargeting](x: Self) {
     
-    @scala.inline
-    def setExcludedUrls(value: js.Array[String]): Self = StObject.set(x, "excludedUrls", value.asInstanceOf[js.Any])
+    inline def setExcludedUrls(value: js.Array[String]): Self = StObject.set(x, "excludedUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedUrlsUndefined: Self = StObject.set(x, "excludedUrls", js.undefined)
+    inline def setExcludedUrlsUndefined: Self = StObject.set(x, "excludedUrls", js.undefined)
     
-    @scala.inline
-    def setExcludedUrlsVarargs(value: String*): Self = StObject.set(x, "excludedUrls", js.Array(value :_*))
+    inline def setExcludedUrlsVarargs(value: String*): Self = StObject.set(x, "excludedUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetedUrls(value: js.Array[String]): Self = StObject.set(x, "targetedUrls", value.asInstanceOf[js.Any])
+    inline def setTargetedUrls(value: js.Array[String]): Self = StObject.set(x, "targetedUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetedUrlsUndefined: Self = StObject.set(x, "targetedUrls", js.undefined)
+    inline def setTargetedUrlsUndefined: Self = StObject.set(x, "targetedUrls", js.undefined)
     
-    @scala.inline
-    def setTargetedUrlsVarargs(value: String*): Self = StObject.set(x, "targetedUrls", js.Array(value :_*))
+    inline def setTargetedUrlsVarargs(value: String*): Self = StObject.set(x, "targetedUrls", js.Array(value :_*))
   }
 }

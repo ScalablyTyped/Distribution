@@ -15,28 +15,21 @@ trait NavigationResult extends StObject {
 }
 object NavigationResult {
   
-  @scala.inline
-  def apply(hasNavigation: Boolean): NavigationResult = {
+  inline def apply(hasNavigation: Boolean): NavigationResult = {
     val __obj = js.Dynamic.literal(hasNavigation = hasNavigation.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationResult]
   }
   
-  @scala.inline
-  implicit class NavigationResultMutableBuilder[Self <: NavigationResult] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationResult](x: Self) {
     
-    @scala.inline
-    def setHasNavigation(value: Boolean): Self = StObject.set(x, "hasNavigation", value.asInstanceOf[js.Any])
+    inline def setHasNavigation(value: Boolean): Self = StObject.set(x, "hasNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: Uri): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: Uri): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setPrevious(value: Uri): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+    inline def setPrevious(value: Uri): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+    inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
   }
 }

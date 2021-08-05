@@ -79,8 +79,7 @@ object Color {
     * `null` and `'initial'` the method throws.
     * @param colorValue The value to create a Color instance from
     */
-  @scala.inline
-  def from(colorValue: ColorValue): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(colorValue.asInstanceOf[js.Any]).asInstanceOf[Color]
+  inline def from(colorValue: ColorValue): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(colorValue.asInstanceOf[js.Any]).asInstanceOf[Color]
   
   /**
     * @constant
@@ -108,16 +107,14 @@ object Color {
     * value will be accepted by a color property. This is also a valid TypeScript type guard function.
     * @param value The value to test
     */
-  @scala.inline
-  def isColorValue(value: js.Any): /* is tabris.tabris.ColorValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isColorValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ColorValue */ Boolean]
+  inline def isColorValue(value: js.Any): /* is tabris.tabris.ColorValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isColorValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ColorValue */ Boolean]
   
   /**
     * Returns true if value is a valid ColorValue. This excludes `null` and `'initial'`. Use this to check
     * if a value will be accepted by Color.from. This is also a valid TypeScript type guard function.
     * @param value The value to test
     */
-  @scala.inline
-  def isValidColorValue(value: js.Any): /* is tabris.tabris.ColorValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidColorValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ColorValue */ Boolean]
+  inline def isValidColorValue(value: js.Any): /* is tabris.tabris.ColorValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidColorValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ColorValue */ Boolean]
   
   /**
     * @constant

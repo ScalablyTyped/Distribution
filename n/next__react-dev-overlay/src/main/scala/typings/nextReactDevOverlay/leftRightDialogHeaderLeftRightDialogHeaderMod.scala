@@ -23,38 +23,28 @@ object leftRightDialogHeaderLeftRightDialogHeaderMod {
   }
   object LeftRightDialogHeaderProps {
     
-    @scala.inline
-    def apply(): LeftRightDialogHeaderProps = {
+    inline def apply(): LeftRightDialogHeaderProps = {
       val __obj = js.Dynamic.literal(next = null, previous = null)
       __obj.asInstanceOf[LeftRightDialogHeaderProps]
     }
     
-    @scala.inline
-    implicit class LeftRightDialogHeaderPropsMutableBuilder[Self <: LeftRightDialogHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: LeftRightDialogHeaderProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      @scala.inline
-      def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNextNull: Self = StObject.set(x, "next", null)
+      inline def setNextNull: Self = StObject.set(x, "next", null)
       
-      @scala.inline
-      def setPrevious(value: () => Unit): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
+      inline def setPrevious(value: () => Unit): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreviousNull: Self = StObject.set(x, "previous", null)
+      inline def setPreviousNull: Self = StObject.set(x, "previous", null)
     }
   }
 }

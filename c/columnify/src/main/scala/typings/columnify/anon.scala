@@ -15,26 +15,20 @@ object anon {
   }
   object PickOptionsminWidthmaxWid {
     
-    @scala.inline
-    def apply(): PickOptionsminWidthmaxWid = {
+    inline def apply(): PickOptionsminWidthmaxWid = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickOptionsminWidthmaxWid]
     }
     
-    @scala.inline
-    implicit class PickOptionsminWidthmaxWidMutableBuilder[Self <: PickOptionsminWidthmaxWid] (val x: Self) extends AnyVal {
+    extension [Self <: PickOptionsminWidthmaxWid](x: Self) {
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     }
   }
 }

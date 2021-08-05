@@ -11,20 +11,17 @@ object antDesignIconsAngularStrings {
   sealed trait fill
     extends StObject
        with ThemeType
-  @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
+  inline def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
   sealed trait outline
     extends StObject
        with ThemeType
-  @scala.inline
-  def outline: outline = "outline".asInstanceOf[outline]
+  inline def outline: outline = "outline".asInstanceOf[outline]
   
   @js.native
   sealed trait twotone
     extends StObject
        with ThemeType
-  @scala.inline
-  def twotone: twotone = "twotone".asInstanceOf[twotone]
+  inline def twotone: twotone = "twotone".asInstanceOf[twotone]
 }

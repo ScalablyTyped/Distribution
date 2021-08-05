@@ -31,18 +31,15 @@ object mod {
     @JSImport("@fluentui/react-focus", "FocusZone._onKeyDownCapture")
     @js.native
     def _onKeyDownCapture: js.Any = js.native
-    @scala.inline
-    def _onKeyDownCapture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_onKeyDownCapture")(x.asInstanceOf[js.Any])
+    inline def _onKeyDownCapture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_onKeyDownCapture")(x.asInstanceOf[js.Any])
     
     @JSImport("@fluentui/react-focus", "FocusZone.defaultProps")
     @js.native
     def defaultProps: IFocusZoneProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IFocusZoneProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IFocusZoneProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     /** Used for testing purposes only. */
-    @scala.inline
-    def getOuterZones(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getOuterZones")().asInstanceOf[Double]
+    inline def getOuterZones(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getOuterZones")().asInstanceOf[Double]
   }
   
   @JSImport("@fluentui/react-focus", "FocusZoneDirection")
@@ -71,21 +68,18 @@ object mod {
     @JSImport("@fluentui/react-focus", "FocusZoneTabbableElements.all")
     @js.native
     def all: `1` = js.native
-    @scala.inline
-    def all_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
+    inline def all_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
     
     /** Tabbing is allowed only on input elements */
     @JSImport("@fluentui/react-focus", "FocusZoneTabbableElements.inputOnly")
     @js.native
     def inputOnly: `2` = js.native
-    @scala.inline
-    def inputOnly_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputOnly")(x.asInstanceOf[js.Any])
+    inline def inputOnly_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputOnly")(x.asInstanceOf[js.Any])
     
     /** Tabbing is not allowed */
     @JSImport("@fluentui/react-focus", "FocusZoneTabbableElements.none")
     @js.native
     def none: `0` = js.native
-    @scala.inline
-    def none_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+    inline def none_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
   }
 }

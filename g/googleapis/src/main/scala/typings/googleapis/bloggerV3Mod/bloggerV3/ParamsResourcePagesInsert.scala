@@ -34,37 +34,27 @@ trait ParamsResourcePagesInsert
 }
 object ParamsResourcePagesInsert {
   
-  @scala.inline
-  def apply(): ParamsResourcePagesInsert = {
+  inline def apply(): ParamsResourcePagesInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePagesInsert]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePagesInsertMutableBuilder[Self <: ParamsResourcePagesInsert] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePagesInsert](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
+    inline def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
+    inline def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
     
-    @scala.inline
-    def setIsDraft(value: Boolean): Self = StObject.set(x, "isDraft", value.asInstanceOf[js.Any])
+    inline def setIsDraft(value: Boolean): Self = StObject.set(x, "isDraft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDraftUndefined: Self = StObject.set(x, "isDraft", js.undefined)
+    inline def setIsDraftUndefined: Self = StObject.set(x, "isDraft", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaPage): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaPage): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

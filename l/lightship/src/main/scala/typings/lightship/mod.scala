@@ -12,10 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createLightship(): LightshipType = ^.asInstanceOf[js.Dynamic].applyDynamic("createLightship")().asInstanceOf[LightshipType]
-  @scala.inline
-  def createLightship(configuration: ConfigurationInputType): LightshipType = ^.asInstanceOf[js.Dynamic].applyDynamic("createLightship")(configuration.asInstanceOf[js.Any]).asInstanceOf[LightshipType]
+  inline def createLightship(): LightshipType = ^.asInstanceOf[js.Dynamic].applyDynamic("createLightship")().asInstanceOf[LightshipType]
+  inline def createLightship(configuration: ConfigurationInputType): LightshipType = ^.asInstanceOf[js.Dynamic].applyDynamic("createLightship")(configuration.asInstanceOf[js.Any]).asInstanceOf[LightshipType]
   
   type BeaconContextType = js.Object
   
@@ -25,17 +23,14 @@ object mod {
   }
   object BeaconControllerType {
     
-    @scala.inline
-    def apply(die: () => js.Promise[Unit]): BeaconControllerType = {
+    inline def apply(die: () => js.Promise[Unit]): BeaconControllerType = {
       val __obj = js.Dynamic.literal(die = js.Any.fromFunction0(die))
       __obj.asInstanceOf[BeaconControllerType]
     }
     
-    @scala.inline
-    implicit class BeaconControllerTypeMutableBuilder[Self <: BeaconControllerType] (val x: Self) extends AnyVal {
+    extension [Self <: BeaconControllerType](x: Self) {
       
-      @scala.inline
-      def setDie(value: () => js.Promise[Unit]): Self = StObject.set(x, "die", js.Any.fromFunction0(value))
+      inline def setDie(value: () => js.Promise[Unit]): Self = StObject.set(x, "die", js.Any.fromFunction0(value))
     }
   }
   
@@ -80,53 +75,38 @@ object mod {
   }
   object ConfigurationInputType {
     
-    @scala.inline
-    def apply(): ConfigurationInputType = {
+    inline def apply(): ConfigurationInputType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationInputType]
     }
     
-    @scala.inline
-    implicit class ConfigurationInputTypeMutableBuilder[Self <: ConfigurationInputType] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationInputType](x: Self) {
       
-      @scala.inline
-      def setDetectKubernetes(value: Boolean): Self = StObject.set(x, "detectKubernetes", value.asInstanceOf[js.Any])
+      inline def setDetectKubernetes(value: Boolean): Self = StObject.set(x, "detectKubernetes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectKubernetesUndefined: Self = StObject.set(x, "detectKubernetes", js.undefined)
+      inline def setDetectKubernetesUndefined: Self = StObject.set(x, "detectKubernetes", js.undefined)
       
-      @scala.inline
-      def setGracefulShutdownTimeout(value: Double): Self = StObject.set(x, "gracefulShutdownTimeout", value.asInstanceOf[js.Any])
+      inline def setGracefulShutdownTimeout(value: Double): Self = StObject.set(x, "gracefulShutdownTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGracefulShutdownTimeoutUndefined: Self = StObject.set(x, "gracefulShutdownTimeout", js.undefined)
+      inline def setGracefulShutdownTimeoutUndefined: Self = StObject.set(x, "gracefulShutdownTimeout", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setShutdownHandlerTimeout(value: Double): Self = StObject.set(x, "shutdownHandlerTimeout", value.asInstanceOf[js.Any])
+      inline def setShutdownHandlerTimeout(value: Double): Self = StObject.set(x, "shutdownHandlerTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShutdownHandlerTimeoutUndefined: Self = StObject.set(x, "shutdownHandlerTimeout", js.undefined)
+      inline def setShutdownHandlerTimeoutUndefined: Self = StObject.set(x, "shutdownHandlerTimeout", js.undefined)
       
-      @scala.inline
-      def setSignals(value: js.Array[Signals]): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
+      inline def setSignals(value: js.Array[Signals]): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
+      inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
       
-      @scala.inline
-      def setSignalsVarargs(value: Signals*): Self = StObject.set(x, "signals", js.Array(value :_*))
+      inline def setSignalsVarargs(value: Signals*): Self = StObject.set(x, "signals", js.Array(value :_*))
       
-      @scala.inline
-      def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
+      inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTerminateUndefined: Self = StObject.set(x, "terminate", js.undefined)
+      inline def setTerminateUndefined: Self = StObject.set(x, "terminate", js.undefined)
     }
   }
   

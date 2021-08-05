@@ -28,31 +28,23 @@ trait BatchDeleteTableVersionRequest extends StObject {
 }
 object BatchDeleteTableVersionRequest {
   
-  @scala.inline
-  def apply(DatabaseName: NameString, TableName: NameString, VersionIds: BatchDeleteTableVersionList): BatchDeleteTableVersionRequest = {
+  inline def apply(DatabaseName: NameString, TableName: NameString, VersionIds: BatchDeleteTableVersionList): BatchDeleteTableVersionRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any], VersionIds = VersionIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteTableVersionRequest]
   }
   
-  @scala.inline
-  implicit class BatchDeleteTableVersionRequestMutableBuilder[Self <: BatchDeleteTableVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteTableVersionRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIds(value: BatchDeleteTableVersionList): Self = StObject.set(x, "VersionIds", value.asInstanceOf[js.Any])
+    inline def setVersionIds(value: BatchDeleteTableVersionList): Self = StObject.set(x, "VersionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdsVarargs(value: VersionString*): Self = StObject.set(x, "VersionIds", js.Array(value :_*))
+    inline def setVersionIdsVarargs(value: VersionString*): Self = StObject.set(x, "VersionIds", js.Array(value :_*))
   }
 }

@@ -80,8 +80,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getLanguageCode(locale: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageCode")(locale.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getLanguageCode(locale: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageCode")(locale.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait GetText extends StObject {
     
@@ -127,8 +126,7 @@ object mod {
   }
   object GetText {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addTranslations: (String, String, js.Object) => Unit,
       dgettext: (String, String) => String,
       dngettext: (String, String, String, Double) => String,
@@ -153,65 +151,45 @@ object mod {
       __obj.asInstanceOf[GetText]
     }
     
-    @scala.inline
-    implicit class GetTextMutableBuilder[Self <: GetText] (val x: Self) extends AnyVal {
+    extension [Self <: GetText](x: Self) {
       
-      @scala.inline
-      def setAddTranslations(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "addTranslations", js.Any.fromFunction3(value))
+      inline def setAddTranslations(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "addTranslations", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDgettext(value: (String, String) => String): Self = StObject.set(x, "dgettext", js.Any.fromFunction2(value))
+      inline def setDgettext(value: (String, String) => String): Self = StObject.set(x, "dgettext", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDngettext(value: (String, String, String, Double) => String): Self = StObject.set(x, "dngettext", js.Any.fromFunction4(value))
+      inline def setDngettext(value: (String, String, String, Double) => String): Self = StObject.set(x, "dngettext", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setDnpgettext(value: (String, String, String, String, Double) => String): Self = StObject.set(x, "dnpgettext", js.Any.fromFunction5(value))
+      inline def setDnpgettext(value: (String, String, String, String, Double) => String): Self = StObject.set(x, "dnpgettext", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDpgettext(value: (String, String, String) => String): Self = StObject.set(x, "dpgettext", js.Any.fromFunction3(value))
+      inline def setDpgettext(value: (String, String, String) => String): Self = StObject.set(x, "dpgettext", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setEmit(value: (String, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetComment(value: (String, String, String) => js.Object | Boolean): Self = StObject.set(x, "getComment", js.Any.fromFunction3(value))
+      inline def setGetComment(value: (String, String, String) => js.Object | Boolean): Self = StObject.set(x, "getComment", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGettext(value: String => String): Self = StObject.set(x, "gettext", js.Any.fromFunction1(value))
+      inline def setGettext(value: String => String): Self = StObject.set(x, "gettext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNgettext(value: (String, String, Double) => String): Self = StObject.set(x, "ngettext", js.Any.fromFunction3(value))
+      inline def setNgettext(value: (String, String, Double) => String): Self = StObject.set(x, "ngettext", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setNpgettext(value: (String, String, String, Double) => String): Self = StObject.set(x, "npgettext", js.Any.fromFunction4(value))
+      inline def setNpgettext(value: (String, String, String, Double) => String): Self = StObject.set(x, "npgettext", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOff(value: (error, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (error, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (error, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (error, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPgettext(value: (String, String) => String): Self = StObject.set(x, "pgettext", js.Any.fromFunction2(value))
+      inline def setPgettext(value: (String, String) => String): Self = StObject.set(x, "pgettext", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetLocale(value: String => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
+      inline def setSetLocale(value: String => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTextDomain(value: String => Unit): Self = StObject.set(x, "setTextDomain", js.Any.fromFunction1(value))
+      inline def setSetTextDomain(value: String => Unit): Self = StObject.set(x, "setTextDomain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTextdomain(value: String => Unit): Self = StObject.set(x, "textdomain", js.Any.fromFunction1(value))
+      inline def setTextdomain(value: String => Unit): Self = StObject.set(x, "textdomain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarn(value: String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
 }

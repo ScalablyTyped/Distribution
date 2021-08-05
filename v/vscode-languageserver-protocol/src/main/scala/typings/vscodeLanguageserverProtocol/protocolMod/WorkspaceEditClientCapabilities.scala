@@ -29,34 +29,25 @@ trait WorkspaceEditClientCapabilities extends StObject {
 }
 object WorkspaceEditClientCapabilities {
   
-  @scala.inline
-  def apply(): WorkspaceEditClientCapabilities = {
+  inline def apply(): WorkspaceEditClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceEditClientCapabilities]
   }
   
-  @scala.inline
-  implicit class WorkspaceEditClientCapabilitiesMutableBuilder[Self <: WorkspaceEditClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceEditClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setDocumentChanges(value: Boolean): Self = StObject.set(x, "documentChanges", value.asInstanceOf[js.Any])
+    inline def setDocumentChanges(value: Boolean): Self = StObject.set(x, "documentChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentChangesUndefined: Self = StObject.set(x, "documentChanges", js.undefined)
+    inline def setDocumentChangesUndefined: Self = StObject.set(x, "documentChanges", js.undefined)
     
-    @scala.inline
-    def setFailureHandling(value: FailureHandlingKind): Self = StObject.set(x, "failureHandling", value.asInstanceOf[js.Any])
+    inline def setFailureHandling(value: FailureHandlingKind): Self = StObject.set(x, "failureHandling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureHandlingUndefined: Self = StObject.set(x, "failureHandling", js.undefined)
+    inline def setFailureHandlingUndefined: Self = StObject.set(x, "failureHandling", js.undefined)
     
-    @scala.inline
-    def setResourceOperations(value: js.Array[ResourceOperationKind]): Self = StObject.set(x, "resourceOperations", value.asInstanceOf[js.Any])
+    inline def setResourceOperations(value: js.Array[ResourceOperationKind]): Self = StObject.set(x, "resourceOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceOperationsUndefined: Self = StObject.set(x, "resourceOperations", js.undefined)
+    inline def setResourceOperationsUndefined: Self = StObject.set(x, "resourceOperations", js.undefined)
     
-    @scala.inline
-    def setResourceOperationsVarargs(value: ResourceOperationKind*): Self = StObject.set(x, "resourceOperations", js.Array(value :_*))
+    inline def setResourceOperationsVarargs(value: ResourceOperationKind*): Self = StObject.set(x, "resourceOperations", js.Array(value :_*))
   }
 }

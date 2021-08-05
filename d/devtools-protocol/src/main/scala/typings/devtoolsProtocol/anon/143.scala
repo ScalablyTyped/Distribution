@@ -13,22 +13,17 @@ trait `143` extends StObject {
 }
 object `143` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[HandleJavaScriptDialogRequest], returnType: Unit): `143` = {
+  inline def apply(paramsType: js.Array[HandleJavaScriptDialogRequest], returnType: Unit): `143` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`143`]
   }
   
-  @scala.inline
-  implicit class `143MutableBuilder`[Self <: `143`] (val x: Self) extends AnyVal {
+  extension [Self <: `143`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[HandleJavaScriptDialogRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[HandleJavaScriptDialogRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: HandleJavaScriptDialogRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: HandleJavaScriptDialogRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

@@ -70,92 +70,64 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBlankReplacement(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "blankReplacement", js.Any.fromFunction3(value))
+      inline def setBlankReplacement(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "blankReplacement", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setBlankReplacementUndefined: Self = StObject.set(x, "blankReplacement", js.undefined)
+      inline def setBlankReplacementUndefined: Self = StObject.set(x, "blankReplacement", js.undefined)
       
-      @scala.inline
-      def setBr(value: String): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+      inline def setBr(value: String): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrUndefined: Self = StObject.set(x, "br", js.undefined)
+      inline def setBrUndefined: Self = StObject.set(x, "br", js.undefined)
       
-      @scala.inline
-      def setBulletListMarker(value: `-_` | Plussign | Asterisk): Self = StObject.set(x, "bulletListMarker", value.asInstanceOf[js.Any])
+      inline def setBulletListMarker(value: `-_` | Plussign | Asterisk): Self = StObject.set(x, "bulletListMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBulletListMarkerUndefined: Self = StObject.set(x, "bulletListMarker", js.undefined)
+      inline def setBulletListMarkerUndefined: Self = StObject.set(x, "bulletListMarker", js.undefined)
       
-      @scala.inline
-      def setCodeBlockStyle(value: indented | fenced): Self = StObject.set(x, "codeBlockStyle", value.asInstanceOf[js.Any])
+      inline def setCodeBlockStyle(value: indented | fenced): Self = StObject.set(x, "codeBlockStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeBlockStyleUndefined: Self = StObject.set(x, "codeBlockStyle", js.undefined)
+      inline def setCodeBlockStyleUndefined: Self = StObject.set(x, "codeBlockStyle", js.undefined)
       
-      @scala.inline
-      def setDefaultReplacement(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "defaultReplacement", js.Any.fromFunction3(value))
+      inline def setDefaultReplacement(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "defaultReplacement", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDefaultReplacementUndefined: Self = StObject.set(x, "defaultReplacement", js.undefined)
+      inline def setDefaultReplacementUndefined: Self = StObject.set(x, "defaultReplacement", js.undefined)
       
-      @scala.inline
-      def setEmDelimiter(value: _underscore | Asterisk): Self = StObject.set(x, "emDelimiter", value.asInstanceOf[js.Any])
+      inline def setEmDelimiter(value: _underscore | Asterisk): Self = StObject.set(x, "emDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmDelimiterUndefined: Self = StObject.set(x, "emDelimiter", js.undefined)
+      inline def setEmDelimiterUndefined: Self = StObject.set(x, "emDelimiter", js.undefined)
       
-      @scala.inline
-      def setFence(value: GraveaccentGraveaccentGraveaccent | TildeTildeTilde): Self = StObject.set(x, "fence", value.asInstanceOf[js.Any])
+      inline def setFence(value: GraveaccentGraveaccentGraveaccent | TildeTildeTilde): Self = StObject.set(x, "fence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFenceUndefined: Self = StObject.set(x, "fence", js.undefined)
+      inline def setFenceUndefined: Self = StObject.set(x, "fence", js.undefined)
       
-      @scala.inline
-      def setHeadingStyle(value: setext | atx): Self = StObject.set(x, "headingStyle", value.asInstanceOf[js.Any])
+      inline def setHeadingStyle(value: setext | atx): Self = StObject.set(x, "headingStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadingStyleUndefined: Self = StObject.set(x, "headingStyle", js.undefined)
+      inline def setHeadingStyleUndefined: Self = StObject.set(x, "headingStyle", js.undefined)
       
-      @scala.inline
-      def setHr(value: String): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
+      inline def setHr(value: String): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrUndefined: Self = StObject.set(x, "hr", js.undefined)
+      inline def setHrUndefined: Self = StObject.set(x, "hr", js.undefined)
       
-      @scala.inline
-      def setKeepReplacement(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "keepReplacement", js.Any.fromFunction3(value))
+      inline def setKeepReplacement(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "keepReplacement", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setKeepReplacementUndefined: Self = StObject.set(x, "keepReplacement", js.undefined)
+      inline def setKeepReplacementUndefined: Self = StObject.set(x, "keepReplacement", js.undefined)
       
-      @scala.inline
-      def setLinkReferenceStyle(value: full | collapsed | shortcut): Self = StObject.set(x, "linkReferenceStyle", value.asInstanceOf[js.Any])
+      inline def setLinkReferenceStyle(value: full | collapsed | shortcut): Self = StObject.set(x, "linkReferenceStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkReferenceStyleUndefined: Self = StObject.set(x, "linkReferenceStyle", js.undefined)
+      inline def setLinkReferenceStyleUndefined: Self = StObject.set(x, "linkReferenceStyle", js.undefined)
       
-      @scala.inline
-      def setLinkStyle(value: inlined | referenced): Self = StObject.set(x, "linkStyle", value.asInstanceOf[js.Any])
+      inline def setLinkStyle(value: inlined | referenced): Self = StObject.set(x, "linkStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkStyleUndefined: Self = StObject.set(x, "linkStyle", js.undefined)
+      inline def setLinkStyleUndefined: Self = StObject.set(x, "linkStyle", js.undefined)
       
-      @scala.inline
-      def setStrongDelimiter(value: __ | AsteriskAsterisk): Self = StObject.set(x, "strongDelimiter", value.asInstanceOf[js.Any])
+      inline def setStrongDelimiter(value: __ | AsteriskAsterisk): Self = StObject.set(x, "strongDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrongDelimiterUndefined: Self = StObject.set(x, "strongDelimiter", js.undefined)
+      inline def setStrongDelimiterUndefined: Self = StObject.set(x, "strongDelimiter", js.undefined)
     }
   }
   
@@ -171,29 +143,22 @@ object mod {
   }
   object Rule {
     
-    @scala.inline
-    def apply(filter: Filter): Rule = {
+    inline def apply(filter: Filter): Rule = {
       val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rule]
     }
     
-    @scala.inline
-    implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+    extension [Self <: Rule](x: Self) {
       
-      @scala.inline
-      def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction2(value: (/* node */ HTMLElement, /* options */ Options) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setFilterFunction2(value: (/* node */ HTMLElement, /* options */ Options) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterVarargs(value: TagName*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: TagName*): Self = StObject.set(x, "filter", js.Array(value :_*))
       
-      @scala.inline
-      def setReplacement(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "replacement", js.Any.fromFunction3(value))
+      inline def setReplacement(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "replacement", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
+      inline def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
     }
   }
   
@@ -227,8 +192,7 @@ object mod {
   }
   object Rules {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: (Filter, Rule) => Unit,
       array: js.Array[Rule],
       blankRule: (/* content */ String, /* node */ Node, /* options */ Options) => String,
@@ -244,41 +208,29 @@ object mod {
       __obj.asInstanceOf[Rules]
     }
     
-    @scala.inline
-    implicit class RulesMutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
+    extension [Self <: Rules](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (Filter, Rule) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (Filter, Rule) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setArray(value: js.Array[Rule]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(value: js.Array[Rule]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayVarargs(value: Rule*): Self = StObject.set(x, "array", js.Array(value :_*))
+      inline def setArrayVarargs(value: Rule*): Self = StObject.set(x, "array", js.Array(value :_*))
       
-      @scala.inline
-      def setBlankRule(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "blankRule", js.Any.fromFunction3(value))
+      inline def setBlankRule(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "blankRule", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDefaultRule(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "defaultRule", js.Any.fromFunction3(value))
+      inline def setDefaultRule(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "defaultRule", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setForEach(value: js.Function2[/* rule */ Rule, /* index */ Double, js.Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function2[/* rule */ Rule, /* index */ Double, js.Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForNode(value: Node => Rule): Self = StObject.set(x, "forNode", js.Any.fromFunction1(value))
+      inline def setForNode(value: Node => Rule): Self = StObject.set(x, "forNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeep(value: Filter => Unit): Self = StObject.set(x, "keep", js.Any.fromFunction1(value))
+      inline def setKeep(value: Filter => Unit): Self = StObject.set(x, "keep", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeepReplacement(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "keepReplacement", js.Any.fromFunction3(value))
+      inline def setKeepReplacement(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "keepReplacement", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: Filter => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: Filter => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     }
   }
   

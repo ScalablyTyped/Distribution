@@ -73,8 +73,7 @@ object Feflow {
   }
   object ctx {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       args: _empty,
       commander: Command,
       config: String,
@@ -91,41 +90,29 @@ object Feflow {
       __obj.asInstanceOf[ctx]
     }
     
-    @scala.inline
-    implicit class ctxMutableBuilder[Self <: ctx] (val x: Self) extends AnyVal {
+    extension [Self <: ctx](x: Self) {
       
-      @scala.inline
-      def setArgs(value: _empty): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: _empty): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommander(value: Command): Self = StObject.set(x, "commander", value.asInstanceOf[js.Any])
+      inline def setCommander(value: Command): Self = StObject.set(x, "commander", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
+      inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHook(value: Hook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+      inline def setHook(value: Hook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectConfig(value: String): Self = StObject.set(x, "projectConfig", value.asInstanceOf[js.Any])
+      inline def setProjectConfig(value: String): Self = StObject.set(x, "projectConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectPath(value: String): Self = StObject.set(x, "projectPath", value.asInstanceOf[js.Any])
+      inline def setProjectPath(value: String): Self = StObject.set(x, "projectPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootPkg(value: String): Self = StObject.set(x, "rootPkg", value.asInstanceOf[js.Any])
+      inline def setRootPkg(value: String): Self = StObject.set(x, "rootPkg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

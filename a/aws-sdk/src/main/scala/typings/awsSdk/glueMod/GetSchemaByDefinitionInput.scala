@@ -18,19 +18,15 @@ trait GetSchemaByDefinitionInput extends StObject {
 }
 object GetSchemaByDefinitionInput {
   
-  @scala.inline
-  def apply(SchemaDefinition: SchemaDefinitionString, SchemaId: SchemaId): GetSchemaByDefinitionInput = {
+  inline def apply(SchemaDefinition: SchemaDefinitionString, SchemaId: SchemaId): GetSchemaByDefinitionInput = {
     val __obj = js.Dynamic.literal(SchemaDefinition = SchemaDefinition.asInstanceOf[js.Any], SchemaId = SchemaId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSchemaByDefinitionInput]
   }
   
-  @scala.inline
-  implicit class GetSchemaByDefinitionInputMutableBuilder[Self <: GetSchemaByDefinitionInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetSchemaByDefinitionInput](x: Self) {
     
-    @scala.inline
-    def setSchemaDefinition(value: SchemaDefinitionString): Self = StObject.set(x, "SchemaDefinition", value.asInstanceOf[js.Any])
+    inline def setSchemaDefinition(value: SchemaDefinitionString): Self = StObject.set(x, "SchemaDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
+    inline def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
   }
 }

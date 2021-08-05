@@ -29,37 +29,27 @@ trait IonTab extends StObject {
 }
 object IonTab {
   
-  @scala.inline
-  def apply(active: Boolean, setActive: () => js.Promise[Unit], tab: String): IonTab = {
+  inline def apply(active: Boolean, setActive: () => js.Promise[Unit], tab: String): IonTab = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], setActive = js.Any.fromFunction0(setActive), tab = tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonTab]
   }
   
-  @scala.inline
-  implicit class IonTabMutableBuilder[Self <: IonTab] (val x: Self) extends AnyVal {
+  extension [Self <: IonTab](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponent(value: ComponentRef): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentRef): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentNull: Self = StObject.set(x, "component", null)
+    inline def setComponentNull: Self = StObject.set(x, "component", null)
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setDelegate(value: FrameworkDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+    inline def setDelegate(value: FrameworkDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
+    inline def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
     
-    @scala.inline
-    def setSetActive(value: () => js.Promise[Unit]): Self = StObject.set(x, "setActive", js.Any.fromFunction0(value))
+    inline def setSetActive(value: () => js.Promise[Unit]): Self = StObject.set(x, "setActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTab(value: String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

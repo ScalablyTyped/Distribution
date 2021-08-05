@@ -29,37 +29,27 @@ trait SchemaProductStatusDestinationStatus extends StObject {
 }
 object SchemaProductStatusDestinationStatus {
   
-  @scala.inline
-  def apply(): SchemaProductStatusDestinationStatus = {
+  inline def apply(): SchemaProductStatusDestinationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductStatusDestinationStatus]
   }
   
-  @scala.inline
-  implicit class SchemaProductStatusDestinationStatusMutableBuilder[Self <: SchemaProductStatusDestinationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductStatusDestinationStatus](x: Self) {
     
-    @scala.inline
-    def setApprovalPending(value: Boolean): Self = StObject.set(x, "approvalPending", value.asInstanceOf[js.Any])
+    inline def setApprovalPending(value: Boolean): Self = StObject.set(x, "approvalPending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalPendingUndefined: Self = StObject.set(x, "approvalPending", js.undefined)
+    inline def setApprovalPendingUndefined: Self = StObject.set(x, "approvalPending", js.undefined)
     
-    @scala.inline
-    def setApprovalStatus(value: String): Self = StObject.set(x, "approvalStatus", value.asInstanceOf[js.Any])
+    inline def setApprovalStatus(value: String): Self = StObject.set(x, "approvalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalStatusUndefined: Self = StObject.set(x, "approvalStatus", js.undefined)
+    inline def setApprovalStatusUndefined: Self = StObject.set(x, "approvalStatus", js.undefined)
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setIntention(value: String): Self = StObject.set(x, "intention", value.asInstanceOf[js.Any])
+    inline def setIntention(value: String): Self = StObject.set(x, "intention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentionUndefined: Self = StObject.set(x, "intention", js.undefined)
+    inline def setIntentionUndefined: Self = StObject.set(x, "intention", js.undefined)
   }
 }

@@ -33,8 +33,7 @@ trait AfterCellEdit[TEntity] extends StObject {
 }
 object AfterCellEdit {
   
-  @scala.inline
-  def apply[TEntity](
+  inline def apply[TEntity](
     afterCellEdit: (IScope, afterCellEditHandler[TEntity]) => Unit,
     beginCellEdit: (IScope, beginCellEditHandler[TEntity]) => Unit,
     cancelCellEdit: (IScope, cancelCellEditHandler[TEntity]) => Unit
@@ -43,16 +42,12 @@ object AfterCellEdit {
     __obj.asInstanceOf[AfterCellEdit[TEntity]]
   }
   
-  @scala.inline
-  implicit class AfterCellEditMutableBuilder[Self <: AfterCellEdit[?], TEntity] (val x: Self & AfterCellEdit[TEntity]) extends AnyVal {
+  extension [Self <: AfterCellEdit[?], TEntity](x: Self & AfterCellEdit[TEntity]) {
     
-    @scala.inline
-    def setAfterCellEdit(value: (IScope, afterCellEditHandler[TEntity]) => Unit): Self = StObject.set(x, "afterCellEdit", js.Any.fromFunction2(value))
+    inline def setAfterCellEdit(value: (IScope, afterCellEditHandler[TEntity]) => Unit): Self = StObject.set(x, "afterCellEdit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeginCellEdit(value: (IScope, beginCellEditHandler[TEntity]) => Unit): Self = StObject.set(x, "beginCellEdit", js.Any.fromFunction2(value))
+    inline def setBeginCellEdit(value: (IScope, beginCellEditHandler[TEntity]) => Unit): Self = StObject.set(x, "beginCellEdit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCancelCellEdit(value: (IScope, cancelCellEditHandler[TEntity]) => Unit): Self = StObject.set(x, "cancelCellEdit", js.Any.fromFunction2(value))
+    inline def setCancelCellEdit(value: (IScope, cancelCellEditHandler[TEntity]) => Unit): Self = StObject.set(x, "cancelCellEdit", js.Any.fromFunction2(value))
   }
 }

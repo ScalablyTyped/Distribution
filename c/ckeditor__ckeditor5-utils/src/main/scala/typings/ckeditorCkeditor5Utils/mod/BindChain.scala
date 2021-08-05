@@ -12,8 +12,7 @@ trait BindChain extends StObject {
 }
 object BindChain {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     to: (Observable, /* repeated */ Observable | String | js.Function) => Unit,
     toMany: (js.Array[Observable], /* repeated */ Observable | String | js.Function) => Unit
   ): BindChain = {
@@ -21,13 +20,10 @@ object BindChain {
     __obj.asInstanceOf[BindChain]
   }
   
-  @scala.inline
-  implicit class BindChainMutableBuilder[Self <: BindChain] (val x: Self) extends AnyVal {
+  extension [Self <: BindChain](x: Self) {
     
-    @scala.inline
-    def setTo(value: (Observable, /* repeated */ Observable | String | js.Function) => Unit): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
+    inline def setTo(value: (Observable, /* repeated */ Observable | String | js.Function) => Unit): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToMany(value: (js.Array[Observable], /* repeated */ Observable | String | js.Function) => Unit): Self = StObject.set(x, "toMany", js.Any.fromFunction2(value))
+    inline def setToMany(value: (js.Array[Observable], /* repeated */ Observable | String | js.Function) => Unit): Self = StObject.set(x, "toMany", js.Any.fromFunction2(value))
   }
 }

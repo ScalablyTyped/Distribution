@@ -12,25 +12,19 @@ trait AppointmentCount extends StObject {
 }
 object AppointmentCount {
   
-  @scala.inline
-  def apply(): AppointmentCount = {
+  inline def apply(): AppointmentCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppointmentCount]
   }
   
-  @scala.inline
-  implicit class AppointmentCountMutableBuilder[Self <: AppointmentCount] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentCount](x: Self) {
     
-    @scala.inline
-    def setAppointmentCount(value: Double): Self = StObject.set(x, "appointmentCount", value.asInstanceOf[js.Any])
+    inline def setAppointmentCount(value: Double): Self = StObject.set(x, "appointmentCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentCountUndefined: Self = StObject.set(x, "appointmentCount", js.undefined)
+    inline def setAppointmentCountUndefined: Self = StObject.set(x, "appointmentCount", js.undefined)
     
-    @scala.inline
-    def setIsCompact(value: Boolean): Self = StObject.set(x, "isCompact", value.asInstanceOf[js.Any])
+    inline def setIsCompact(value: Boolean): Self = StObject.set(x, "isCompact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCompactUndefined: Self = StObject.set(x, "isCompact", js.undefined)
+    inline def setIsCompactUndefined: Self = StObject.set(x, "isCompact", js.undefined)
   }
 }

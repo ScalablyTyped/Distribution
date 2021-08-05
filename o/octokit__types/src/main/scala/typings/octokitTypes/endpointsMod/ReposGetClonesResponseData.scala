@@ -15,25 +15,19 @@ trait ReposGetClonesResponseData extends StObject {
 }
 object ReposGetClonesResponseData {
   
-  @scala.inline
-  def apply(clones: js.Array[Count], count: Double, uniques: Double): ReposGetClonesResponseData = {
+  inline def apply(clones: js.Array[Count], count: Double, uniques: Double): ReposGetClonesResponseData = {
     val __obj = js.Dynamic.literal(clones = clones.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], uniques = uniques.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetClonesResponseData]
   }
   
-  @scala.inline
-  implicit class ReposGetClonesResponseDataMutableBuilder[Self <: ReposGetClonesResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetClonesResponseData](x: Self) {
     
-    @scala.inline
-    def setClones(value: js.Array[Count]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
+    inline def setClones(value: js.Array[Count]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClonesVarargs(value: Count*): Self = StObject.set(x, "clones", js.Array(value :_*))
+    inline def setClonesVarargs(value: Count*): Self = StObject.set(x, "clones", js.Array(value :_*))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniques(value: Double): Self = StObject.set(x, "uniques", value.asInstanceOf[js.Any])
+    inline def setUniques(value: Double): Self = StObject.set(x, "uniques", value.asInstanceOf[js.Any])
   }
 }

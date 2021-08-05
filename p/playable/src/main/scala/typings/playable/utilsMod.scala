@@ -13,9 +13,7 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def forEachMatch(string: String, pattern: RegExp, callback: js.Function1[/* match */ RegExpExecArray, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachMatch")(string.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEachMatch(string: String, pattern: RegExp, callback: js.Function1[/* match */ RegExpExecArray, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachMatch")(string.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def reduce(arrayLike: LengthNumber, callback: js.Function1[/* repeated */ js.Any, Unit], initialValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arrayLike.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def reduce(arrayLike: LengthNumber, callback: js.Function1[/* repeated */ js.Any, Unit], initialValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arrayLike.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

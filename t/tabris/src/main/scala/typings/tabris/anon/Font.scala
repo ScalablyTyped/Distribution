@@ -17,34 +17,25 @@ trait Font extends StObject {
 }
 object Font {
   
-  @scala.inline
-  def apply(text: String): Font = {
+  inline def apply(text: String): Font = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], font = null)
     __obj.asInstanceOf[Font]
   }
   
-  @scala.inline
-  implicit class FontMutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
+  extension [Self <: Font](x: Self) {
     
-    @scala.inline
-    def setFont(value: FontValue): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: FontValue): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontNull: Self = StObject.set(x, "font", null)
+    inline def setFontNull: Self = StObject.set(x, "font", null)
     
-    @scala.inline
-    def setMarkupEnabled(value: Boolean): Self = StObject.set(x, "markupEnabled", value.asInstanceOf[js.Any])
+    inline def setMarkupEnabled(value: Boolean): Self = StObject.set(x, "markupEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkupEnabledUndefined: Self = StObject.set(x, "markupEnabled", js.undefined)
+    inline def setMarkupEnabledUndefined: Self = StObject.set(x, "markupEnabled", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

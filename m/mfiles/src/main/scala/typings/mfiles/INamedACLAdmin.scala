@@ -16,8 +16,7 @@ trait INamedACLAdmin extends StObject {
 }
 object INamedACLAdmin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessControlListForNamedACL: IAccessControlList,
     Clone: () => INamedACLAdmin,
     NamedACL: INamedACL,
@@ -27,19 +26,14 @@ object INamedACLAdmin {
     __obj.asInstanceOf[INamedACLAdmin]
   }
   
-  @scala.inline
-  implicit class INamedACLAdminMutableBuilder[Self <: INamedACLAdmin] (val x: Self) extends AnyVal {
+  extension [Self <: INamedACLAdmin](x: Self) {
     
-    @scala.inline
-    def setAccessControlListForNamedACL(value: IAccessControlList): Self = StObject.set(x, "AccessControlListForNamedACL", value.asInstanceOf[js.Any])
+    inline def setAccessControlListForNamedACL(value: IAccessControlList): Self = StObject.set(x, "AccessControlListForNamedACL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => INamedACLAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => INamedACLAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNamedACL(value: INamedACL): Self = StObject.set(x, "NamedACL", value.asInstanceOf[js.Any])
+    inline def setNamedACL(value: INamedACL): Self = StObject.set(x, "NamedACL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
+    inline def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
   }
 }

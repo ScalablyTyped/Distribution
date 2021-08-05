@@ -13,19 +13,15 @@ trait ItemsDnssdServiceInstance extends StObject {
 }
 object ItemsDnssdServiceInstance {
   
-  @scala.inline
-  def apply(items: DnssdServiceInstance, returnValue: Double): ItemsDnssdServiceInstance = {
+  inline def apply(items: DnssdServiceInstance, returnValue: Double): ItemsDnssdServiceInstance = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsDnssdServiceInstance]
   }
   
-  @scala.inline
-  implicit class ItemsDnssdServiceInstanceMutableBuilder[Self <: ItemsDnssdServiceInstance] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsDnssdServiceInstance](x: Self) {
     
-    @scala.inline
-    def setItems(value: DnssdServiceInstance): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: DnssdServiceInstance): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

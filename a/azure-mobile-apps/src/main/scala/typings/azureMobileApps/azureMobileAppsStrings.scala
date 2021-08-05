@@ -11,20 +11,17 @@ object azureMobileAppsStrings {
   sealed trait anonymous
     extends StObject
        with AccessType
-  @scala.inline
-  def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait authenticated
     extends StObject
        with AccessType
-  @scala.inline
-  def authenticated: authenticated = "authenticated".asInstanceOf[authenticated]
+  inline def authenticated: authenticated = "authenticated".asInstanceOf[authenticated]
   
   @js.native
   sealed trait disabled
     extends StObject
        with AccessType
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
 }

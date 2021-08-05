@@ -11,22 +11,17 @@ trait ProductsCustomBatchRequest extends StObject {
 }
 object ProductsCustomBatchRequest {
   
-  @scala.inline
-  def apply(): ProductsCustomBatchRequest = {
+  inline def apply(): ProductsCustomBatchRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductsCustomBatchRequest]
   }
   
-  @scala.inline
-  implicit class ProductsCustomBatchRequestMutableBuilder[Self <: ProductsCustomBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ProductsCustomBatchRequest](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[ProductsCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[ProductsCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: ProductsCustomBatchRequestEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: ProductsCustomBatchRequestEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

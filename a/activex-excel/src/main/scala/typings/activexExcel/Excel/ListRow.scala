@@ -12,7 +12,7 @@ trait ListRow extends StObject {
   
   def Delete(): Unit
   
-  @JSName("Excel.ListRow_typekey")
+  /* private */ @JSName("Excel.ListRow_typekey")
   var ExcelDotListRow_typekey: ListRow
   
   val Index: Double
@@ -29,8 +29,7 @@ trait ListRow extends StObject {
 }
 object ListRow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     Delete: () => Unit,
@@ -45,31 +44,22 @@ object ListRow {
     __obj.asInstanceOf[ListRow]
   }
   
-  @scala.inline
-  implicit class ListRowMutableBuilder[Self <: ListRow] (val x: Self) extends AnyVal {
+  extension [Self <: ListRow](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcelDotListRow_typekey(value: ListRow): Self = StObject.set(x, "Excel.ListRow_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotListRow_typekey(value: ListRow): Self = StObject.set(x, "Excel.ListRow_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidData(value: Boolean): Self = StObject.set(x, "InvalidData", value.asInstanceOf[js.Any])
+    inline def setInvalidData(value: Boolean): Self = StObject.set(x, "InvalidData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
   }
 }

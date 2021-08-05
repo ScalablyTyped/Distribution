@@ -16,20 +16,16 @@ object anon {
   }
   object Delta {
     
-    @scala.inline
-    def apply(delta: Double, timestamp: Double): Delta = {
+    inline def apply(delta: Double, timestamp: Double): Delta = {
       val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delta]
     }
     
-    @scala.inline
-    implicit class DeltaMutableBuilder[Self <: Delta] (val x: Self) extends AnyVal {
+    extension [Self <: Delta](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,29 +44,22 @@ object anon {
   }
   object keyinStepIdStep {
     
-    @scala.inline
-    def apply(postRender: Step, preRender: Step, read: Step, render: Step, update: Step): keyinStepIdStep = {
+    inline def apply(postRender: Step, preRender: Step, read: Step, render: Step, update: Step): keyinStepIdStep = {
       val __obj = js.Dynamic.literal(postRender = postRender.asInstanceOf[js.Any], preRender = preRender.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
       __obj.asInstanceOf[keyinStepIdStep]
     }
     
-    @scala.inline
-    implicit class keyinStepIdStepMutableBuilder[Self <: keyinStepIdStep] (val x: Self) extends AnyVal {
+    extension [Self <: keyinStepIdStep](x: Self) {
       
-      @scala.inline
-      def setPostRender(value: Step): Self = StObject.set(x, "postRender", value.asInstanceOf[js.Any])
+      inline def setPostRender(value: Step): Self = StObject.set(x, "postRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreRender(value: Step): Self = StObject.set(x, "preRender", value.asInstanceOf[js.Any])
+      inline def setPreRender(value: Step): Self = StObject.set(x, "preRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead(value: Step): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      inline def setRead(value: Step): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender(value: Step): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: Step): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: Step): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: Step): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,8 +128,7 @@ object anon {
   }
   object keyinStepIdprocessProcess {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       postRender: (/* process */ Process, /* keepAlive */ js.UndefOr[Boolean], /* immediate */ js.UndefOr[Boolean]) => Process,
       preRender: (/* process */ Process, /* keepAlive */ js.UndefOr[Boolean], /* immediate */ js.UndefOr[Boolean]) => Process,
       read: (/* process */ Process, /* keepAlive */ js.UndefOr[Boolean], /* immediate */ js.UndefOr[Boolean]) => Process,
@@ -151,31 +139,25 @@ object anon {
       __obj.asInstanceOf[keyinStepIdprocessProcess]
     }
     
-    @scala.inline
-    implicit class keyinStepIdprocessProcessMutableBuilder[Self <: keyinStepIdprocessProcess] (val x: Self) extends AnyVal {
+    extension [Self <: keyinStepIdprocessProcess](x: Self) {
       
-      @scala.inline
-      def setPostRender(
+      inline def setPostRender(
         value: (/* process */ Process, /* keepAlive */ js.UndefOr[Boolean], /* immediate */ js.UndefOr[Boolean]) => Process
       ): Self = StObject.set(x, "postRender", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPreRender(
+      inline def setPreRender(
         value: (/* process */ Process, /* keepAlive */ js.UndefOr[Boolean], /* immediate */ js.UndefOr[Boolean]) => Process
       ): Self = StObject.set(x, "preRender", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRead(
+      inline def setRead(
         value: (/* process */ Process, /* keepAlive */ js.UndefOr[Boolean], /* immediate */ js.UndefOr[Boolean]) => Process
       ): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRender(
+      inline def setRender(
         value: (/* process */ Process, /* keepAlive */ js.UndefOr[Boolean], /* immediate */ js.UndefOr[Boolean]) => Process
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUpdate(
+      inline def setUpdate(
         value: (/* process */ Process, /* keepAlive */ js.UndefOr[Boolean], /* immediate */ js.UndefOr[Boolean]) => Process
       ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     }
@@ -206,8 +188,7 @@ object anon {
   }
   object keyinStepIdprocessProcessPostRender {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       postRender: /* process */ Process => Unit,
       preRender: /* process */ Process => Unit,
       read: /* process */ Process => Unit,
@@ -218,23 +199,17 @@ object anon {
       __obj.asInstanceOf[keyinStepIdprocessProcessPostRender]
     }
     
-    @scala.inline
-    implicit class keyinStepIdprocessProcessPostRenderMutableBuilder[Self <: keyinStepIdprocessProcessPostRender] (val x: Self) extends AnyVal {
+    extension [Self <: keyinStepIdprocessProcessPostRender](x: Self) {
       
-      @scala.inline
-      def setPostRender(value: /* process */ Process => Unit): Self = StObject.set(x, "postRender", js.Any.fromFunction1(value))
+      inline def setPostRender(value: /* process */ Process => Unit): Self = StObject.set(x, "postRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreRender(value: /* process */ Process => Unit): Self = StObject.set(x, "preRender", js.Any.fromFunction1(value))
+      inline def setPreRender(value: /* process */ Process => Unit): Self = StObject.set(x, "preRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRead(value: /* process */ Process => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: /* process */ Process => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRender(value: /* process */ Process => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* process */ Process => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: /* process */ Process => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: /* process */ Process => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
 }

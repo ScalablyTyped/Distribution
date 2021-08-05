@@ -10,8 +10,6 @@ object fixedBaseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(v: Double, base: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(v.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def default(v: Double, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(v.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(v: Double, base: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(v.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(v: Double, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(v.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -12,19 +12,15 @@ trait TransformProps
 }
 object TransformProps {
   
-  @scala.inline
-  def apply(): TransformProps = {
+  inline def apply(): TransformProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransformProps]
   }
   
-  @scala.inline
-  implicit class TransformPropsMutableBuilder[Self <: TransformProps] (val x: Self) extends AnyVal {
+  extension [Self <: TransformProps](x: Self) {
     
-    @scala.inline
-    def setTransform(value: ColumnMajorTransformMatrix | String | TransformObject): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: ColumnMajorTransformMatrix | String | TransformObject): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

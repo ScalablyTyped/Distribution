@@ -10,16 +10,13 @@ trait EnumValuesPreliminary extends StObject {
 }
 object EnumValuesPreliminary {
   
-  @scala.inline
-  def apply(enumValues: Preliminary): EnumValuesPreliminary = {
+  inline def apply(enumValues: Preliminary): EnumValuesPreliminary = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesPreliminary]
   }
   
-  @scala.inline
-  implicit class EnumValuesPreliminaryMutableBuilder[Self <: EnumValuesPreliminary] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesPreliminary](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Preliminary): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Preliminary): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

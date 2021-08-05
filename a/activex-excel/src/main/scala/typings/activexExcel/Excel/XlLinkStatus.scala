@@ -31,36 +31,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlLinkStatus extends StObject
 object XlLinkStatus {
   
-  @scala.inline
-  def xlLinkStatusCopiedValues: `10` = 10.asInstanceOf[`10`]
+  inline def xlLinkStatusCopiedValues: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def xlLinkStatusIndeterminate: `5` = 5.asInstanceOf[`5`]
+  inline def xlLinkStatusIndeterminate: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlLinkStatusInvalidName: `7` = 7.asInstanceOf[`7`]
+  inline def xlLinkStatusInvalidName: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def xlLinkStatusMissingFile: `1` = 1.asInstanceOf[`1`]
+  inline def xlLinkStatusMissingFile: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlLinkStatusMissingSheet: `2` = 2.asInstanceOf[`2`]
+  inline def xlLinkStatusMissingSheet: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlLinkStatusNotStarted: `6` = 6.asInstanceOf[`6`]
+  inline def xlLinkStatusNotStarted: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def xlLinkStatusOK: `0` = 0.asInstanceOf[`0`]
+  inline def xlLinkStatusOK: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlLinkStatusOld: `3` = 3.asInstanceOf[`3`]
+  inline def xlLinkStatusOld: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlLinkStatusSourceNotCalculated: `4` = 4.asInstanceOf[`4`]
+  inline def xlLinkStatusSourceNotCalculated: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlLinkStatusSourceNotOpen: `8` = 8.asInstanceOf[`8`]
+  inline def xlLinkStatusSourceNotOpen: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def xlLinkStatusSourceOpen: `9` = 9.asInstanceOf[`9`]
+  inline def xlLinkStatusSourceOpen: `9` = 9.asInstanceOf[`9`]
 }

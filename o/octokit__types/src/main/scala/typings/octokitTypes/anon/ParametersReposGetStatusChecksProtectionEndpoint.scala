@@ -18,8 +18,7 @@ trait ParametersReposGetStatusChecksProtectionEndpoint extends StObject {
 }
 object ParametersReposGetStatusChecksProtectionEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetStatusChecksProtectionEndpoint,
     request: ReposGetStatusChecksProtectionRequestOptions,
     response: OctokitResponse[ReposGetStatusChecksProtectionResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetStatusChecksProtectionEndpoint {
     __obj.asInstanceOf[ParametersReposGetStatusChecksProtectionEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetStatusChecksProtectionEndpointMutableBuilder[Self <: ParametersReposGetStatusChecksProtectionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetStatusChecksProtectionEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetStatusChecksProtectionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetStatusChecksProtectionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetStatusChecksProtectionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetStatusChecksProtectionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetStatusChecksProtectionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetStatusChecksProtectionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

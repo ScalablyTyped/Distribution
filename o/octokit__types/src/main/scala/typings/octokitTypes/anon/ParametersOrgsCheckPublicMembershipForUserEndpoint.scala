@@ -17,8 +17,7 @@ trait ParametersOrgsCheckPublicMembershipForUserEndpoint extends StObject {
 }
 object ParametersOrgsCheckPublicMembershipForUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: OrgsCheckPublicMembershipForUserEndpoint,
     request: OrgsCheckPublicMembershipForUserRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersOrgsCheckPublicMembershipForUserEndpoint {
     __obj.asInstanceOf[ParametersOrgsCheckPublicMembershipForUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersOrgsCheckPublicMembershipForUserEndpointMutableBuilder[Self <: ParametersOrgsCheckPublicMembershipForUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersOrgsCheckPublicMembershipForUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: OrgsCheckPublicMembershipForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: OrgsCheckPublicMembershipForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: OrgsCheckPublicMembershipForUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: OrgsCheckPublicMembershipForUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

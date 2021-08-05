@@ -52,8 +52,7 @@ object tabsMod {
     @JSImport("@storybook/components/dist/tabs/tabs", "TabsState.defaultProps")
     @js.native
     def defaultProps: TabsStateProps = js.native
-    @scala.inline
-    def defaultProps_=(x: TabsStateProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: TabsStateProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait ContentProps extends StObject {
@@ -64,26 +63,20 @@ object tabsMod {
   }
   object ContentProps {
     
-    @scala.inline
-    def apply(): ContentProps = {
+    inline def apply(): ContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContentProps]
     }
     
-    @scala.inline
-    implicit class ContentPropsMutableBuilder[Self <: ContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: ContentProps](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+      inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
       
-      @scala.inline
-      def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
     }
   }
   
@@ -99,29 +92,22 @@ object tabsMod {
   }
   object TabWrapperProps {
     
-    @scala.inline
-    def apply(active: Boolean): TabWrapperProps = {
+    inline def apply(active: Boolean): TabWrapperProps = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabWrapperProps]
     }
     
-    @scala.inline
-    implicit class TabWrapperPropsMutableBuilder[Self <: TabWrapperProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabWrapperProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setRender(value: () => Element): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+      inline def setRender(value: () => Element): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
   
@@ -143,56 +129,40 @@ object tabsMod {
   }
   object TabsProps {
     
-    @scala.inline
-    def apply(): TabsProps = {
+    inline def apply(): TabsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabsProps]
     }
     
-    @scala.inline
-    implicit class TabsPropsMutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabsProps](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+      inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
       
-      @scala.inline
-      def setActions(value: OnSelect & (Record[String, js.Any])): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: OnSelect & (Record[String, js.Any])): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setTools(value: ReactNode): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
+      inline def setTools(value: ReactNode): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
+      inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
     }
   }
   
@@ -210,8 +180,7 @@ object tabsMod {
   }
   object TabsStateProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       absolute: Boolean,
       backgroundColor: String,
       bordered: Boolean,
@@ -222,26 +191,19 @@ object tabsMod {
       __obj.asInstanceOf[TabsStateProps]
     }
     
-    @scala.inline
-    implicit class TabsStatePropsMutableBuilder[Self <: TabsStateProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabsStateProps](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactNode | FuncChildren]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactNode | FuncChildren]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: (ReactNode | FuncChildren)*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: (ReactNode | FuncChildren)*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     }
   }
   
@@ -251,17 +213,14 @@ object tabsMod {
   }
   object TabsStateState {
     
-    @scala.inline
-    def apply(selected: String): TabsStateState = {
+    inline def apply(selected: String): TabsStateState = {
       val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabsStateState]
     }
     
-    @scala.inline
-    implicit class TabsStateStateMutableBuilder[Self <: TabsStateState] (val x: Self) extends AnyVal {
+    extension [Self <: TabsStateState](x: Self) {
       
-      @scala.inline
-      def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -271,20 +230,16 @@ object tabsMod {
   }
   object VisuallyHiddenProps {
     
-    @scala.inline
-    def apply(): VisuallyHiddenProps = {
+    inline def apply(): VisuallyHiddenProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VisuallyHiddenProps]
     }
     
-    @scala.inline
-    implicit class VisuallyHiddenPropsMutableBuilder[Self <: VisuallyHiddenProps] (val x: Self) extends AnyVal {
+    extension [Self <: VisuallyHiddenProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     }
   }
   
@@ -296,26 +251,20 @@ object tabsMod {
   }
   object WrapperProps {
     
-    @scala.inline
-    def apply(): WrapperProps = {
+    inline def apply(): WrapperProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WrapperProps]
     }
     
-    @scala.inline
-    implicit class WrapperPropsMutableBuilder[Self <: WrapperProps] (val x: Self) extends AnyVal {
+    extension [Self <: WrapperProps](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+      inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
       
-      @scala.inline
-      def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
     }
   }
 }

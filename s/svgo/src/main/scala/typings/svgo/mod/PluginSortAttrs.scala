@@ -12,16 +12,13 @@ trait PluginSortAttrs
 }
 object PluginSortAttrs {
   
-  @scala.inline
-  def apply(sortAttrs: Boolean | js.Object): PluginSortAttrs = {
+  inline def apply(sortAttrs: Boolean | js.Object): PluginSortAttrs = {
     val __obj = js.Dynamic.literal(sortAttrs = sortAttrs.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginSortAttrs]
   }
   
-  @scala.inline
-  implicit class PluginSortAttrsMutableBuilder[Self <: PluginSortAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: PluginSortAttrs](x: Self) {
     
-    @scala.inline
-    def setSortAttrs(value: Boolean | js.Object): Self = StObject.set(x, "sortAttrs", value.asInstanceOf[js.Any])
+    inline def setSortAttrs(value: Boolean | js.Object): Self = StObject.set(x, "sortAttrs", value.asInstanceOf[js.Any])
   }
 }

@@ -18,40 +18,29 @@ trait ISignatureDef extends StObject {
 }
 object ISignatureDef {
   
-  @scala.inline
-  def apply(): ISignatureDef = {
+  inline def apply(): ISignatureDef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISignatureDef]
   }
   
-  @scala.inline
-  implicit class ISignatureDefMutableBuilder[Self <: ISignatureDef] (val x: Self) extends AnyVal {
+  extension [Self <: ISignatureDef](x: Self) {
     
-    @scala.inline
-    def setInputs(value: StringDictionary[ITensorInfo]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: StringDictionary[ITensorInfo]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsNull: Self = StObject.set(x, "inputs", null)
+    inline def setInputsNull: Self = StObject.set(x, "inputs", null)
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    @scala.inline
-    def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+    inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodNameNull: Self = StObject.set(x, "methodName", null)
+    inline def setMethodNameNull: Self = StObject.set(x, "methodName", null)
     
-    @scala.inline
-    def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
+    inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
     
-    @scala.inline
-    def setOutputs(value: StringDictionary[ITensorInfo]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: StringDictionary[ITensorInfo]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsNull: Self = StObject.set(x, "outputs", null)
+    inline def setOutputsNull: Self = StObject.set(x, "outputs", null)
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
   }
 }

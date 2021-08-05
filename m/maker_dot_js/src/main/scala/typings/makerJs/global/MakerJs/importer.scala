@@ -11,8 +11,7 @@ object importer {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromSVGPathData(pathData: String): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSVGPathData")(pathData.asInstanceOf[js.Any]).asInstanceOf[IModel]
+  inline def fromSVGPathData(pathData: String): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSVGPathData")(pathData.asInstanceOf[js.Any]).asInstanceOf[IModel]
   
   /**
     * Create a numeric array from a string of numbers. The numbers may be delimited by anything non-numeric.
@@ -25,6 +24,5 @@ object importer {
     * @param s The string of numbers.
     * @returns Array of numbers.
     */
-  @scala.inline
-  def parseNumericList(s: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseNumericList")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def parseNumericList(s: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseNumericList")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
 }

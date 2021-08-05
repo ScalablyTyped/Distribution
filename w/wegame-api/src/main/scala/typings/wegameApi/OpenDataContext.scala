@@ -19,19 +19,15 @@ trait OpenDataContext extends StObject {
 }
 object OpenDataContext {
   
-  @scala.inline
-  def apply(canvas: Canvas, postMessage: js.Any => Unit): OpenDataContext = {
+  inline def apply(canvas: Canvas, postMessage: js.Any => Unit): OpenDataContext = {
     val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], postMessage = js.Any.fromFunction1(postMessage))
     __obj.asInstanceOf[OpenDataContext]
   }
   
-  @scala.inline
-  implicit class OpenDataContextMutableBuilder[Self <: OpenDataContext] (val x: Self) extends AnyVal {
+  extension [Self <: OpenDataContext](x: Self) {
     
-    @scala.inline
-    def setCanvas(value: Canvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: Canvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostMessage(value: js.Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
+    inline def setPostMessage(value: js.Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
   }
 }

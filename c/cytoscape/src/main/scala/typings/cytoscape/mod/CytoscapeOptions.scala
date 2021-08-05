@@ -246,192 +246,131 @@ trait CytoscapeOptions extends StObject {
 }
 object CytoscapeOptions {
   
-  @scala.inline
-  def apply(): CytoscapeOptions = {
+  inline def apply(): CytoscapeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CytoscapeOptions]
   }
   
-  @scala.inline
-  implicit class CytoscapeOptionsMutableBuilder[Self <: CytoscapeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CytoscapeOptions](x: Self) {
     
-    @scala.inline
-    def setAutolock(value: Boolean): Self = StObject.set(x, "autolock", value.asInstanceOf[js.Any])
+    inline def setAutolock(value: Boolean): Self = StObject.set(x, "autolock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutolockUndefined: Self = StObject.set(x, "autolock", js.undefined)
+    inline def setAutolockUndefined: Self = StObject.set(x, "autolock", js.undefined)
     
-    @scala.inline
-    def setAutoungrabify(value: Boolean): Self = StObject.set(x, "autoungrabify", value.asInstanceOf[js.Any])
+    inline def setAutoungrabify(value: Boolean): Self = StObject.set(x, "autoungrabify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoungrabifyUndefined: Self = StObject.set(x, "autoungrabify", js.undefined)
+    inline def setAutoungrabifyUndefined: Self = StObject.set(x, "autoungrabify", js.undefined)
     
-    @scala.inline
-    def setAutounselectify(value: Boolean): Self = StObject.set(x, "autounselectify", value.asInstanceOf[js.Any])
+    inline def setAutounselectify(value: Boolean): Self = StObject.set(x, "autounselectify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutounselectifyUndefined: Self = StObject.set(x, "autounselectify", js.undefined)
+    inline def setAutounselectifyUndefined: Self = StObject.set(x, "autounselectify", js.undefined)
     
-    @scala.inline
-    def setBoxSelectionEnabled(value: Boolean): Self = StObject.set(x, "boxSelectionEnabled", value.asInstanceOf[js.Any])
+    inline def setBoxSelectionEnabled(value: Boolean): Self = StObject.set(x, "boxSelectionEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxSelectionEnabledUndefined: Self = StObject.set(x, "boxSelectionEnabled", js.undefined)
+    inline def setBoxSelectionEnabledUndefined: Self = StObject.set(x, "boxSelectionEnabled", js.undefined)
     
-    @scala.inline
-    def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNull: Self = StObject.set(x, "container", null)
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setDesktopTapThreshold(value: Double): Self = StObject.set(x, "desktopTapThreshold", value.asInstanceOf[js.Any])
+    inline def setDesktopTapThreshold(value: Double): Self = StObject.set(x, "desktopTapThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesktopTapThresholdUndefined: Self = StObject.set(x, "desktopTapThreshold", js.undefined)
+    inline def setDesktopTapThresholdUndefined: Self = StObject.set(x, "desktopTapThreshold", js.undefined)
     
-    @scala.inline
-    def setElements(
+    inline def setElements(
       value: ElementsDefinition | js.Array[ElementDefinition] | (js.Promise[js.Array[ElementDefinition] | ElementsDefinition])
     ): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    @scala.inline
-    def setElementsVarargs(value: ElementDefinition*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: ElementDefinition*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
+    inline def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
+    inline def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
     
-    @scala.inline
-    def setHideEdgesOnViewport(value: Boolean): Self = StObject.set(x, "hideEdgesOnViewport", value.asInstanceOf[js.Any])
+    inline def setHideEdgesOnViewport(value: Boolean): Self = StObject.set(x, "hideEdgesOnViewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideEdgesOnViewportUndefined: Self = StObject.set(x, "hideEdgesOnViewport", js.undefined)
+    inline def setHideEdgesOnViewportUndefined: Self = StObject.set(x, "hideEdgesOnViewport", js.undefined)
     
-    @scala.inline
-    def setHideLabelsOnViewport(value: Boolean): Self = StObject.set(x, "hideLabelsOnViewport", value.asInstanceOf[js.Any])
+    inline def setHideLabelsOnViewport(value: Boolean): Self = StObject.set(x, "hideLabelsOnViewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideLabelsOnViewportUndefined: Self = StObject.set(x, "hideLabelsOnViewport", js.undefined)
+    inline def setHideLabelsOnViewportUndefined: Self = StObject.set(x, "hideLabelsOnViewport", js.undefined)
     
-    @scala.inline
-    def setLayout(value: LayoutOptions): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: LayoutOptions): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
-    @scala.inline
-    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
-    @scala.inline
-    def setMotionBlur(value: Boolean): Self = StObject.set(x, "motionBlur", value.asInstanceOf[js.Any])
+    inline def setMotionBlur(value: Boolean): Self = StObject.set(x, "motionBlur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMotionBlurOpacity(value: Double): Self = StObject.set(x, "motionBlurOpacity", value.asInstanceOf[js.Any])
+    inline def setMotionBlurOpacity(value: Double): Self = StObject.set(x, "motionBlurOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMotionBlurOpacityUndefined: Self = StObject.set(x, "motionBlurOpacity", js.undefined)
+    inline def setMotionBlurOpacityUndefined: Self = StObject.set(x, "motionBlurOpacity", js.undefined)
     
-    @scala.inline
-    def setMotionBlurUndefined: Self = StObject.set(x, "motionBlur", js.undefined)
+    inline def setMotionBlurUndefined: Self = StObject.set(x, "motionBlur", js.undefined)
     
-    @scala.inline
-    def setPan(value: Position): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+    inline def setPan(value: Position): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
+    inline def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
     
-    @scala.inline
-    def setPanningEnabled(value: Boolean): Self = StObject.set(x, "panningEnabled", value.asInstanceOf[js.Any])
+    inline def setPanningEnabled(value: Boolean): Self = StObject.set(x, "panningEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanningEnabledUndefined: Self = StObject.set(x, "panningEnabled", js.undefined)
+    inline def setPanningEnabledUndefined: Self = StObject.set(x, "panningEnabled", js.undefined)
     
-    @scala.inline
-    def setPixelRatio(value: Double | auto): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+    inline def setPixelRatio(value: Double | auto): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+    inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
     
-    @scala.inline
-    def setSelectionType(value: SelectionType): Self = StObject.set(x, "selectionType", value.asInstanceOf[js.Any])
+    inline def setSelectionType(value: SelectionType): Self = StObject.set(x, "selectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionTypeUndefined: Self = StObject.set(x, "selectionType", js.undefined)
+    inline def setSelectionTypeUndefined: Self = StObject.set(x, "selectionType", js.undefined)
     
-    @scala.inline
-    def setStyle(value: js.Array[Stylesheet] | js.Promise[js.Array[Stylesheet]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: js.Array[Stylesheet] | js.Promise[js.Array[Stylesheet]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleEnabled(value: Boolean): Self = StObject.set(x, "styleEnabled", value.asInstanceOf[js.Any])
+    inline def setStyleEnabled(value: Boolean): Self = StObject.set(x, "styleEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleEnabledUndefined: Self = StObject.set(x, "styleEnabled", js.undefined)
+    inline def setStyleEnabledUndefined: Self = StObject.set(x, "styleEnabled", js.undefined)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setStyleVarargs(value: Stylesheet*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: Stylesheet*): Self = StObject.set(x, "style", js.Array(value :_*))
     
-    @scala.inline
-    def setTextureOnViewport(value: Boolean): Self = StObject.set(x, "textureOnViewport", value.asInstanceOf[js.Any])
+    inline def setTextureOnViewport(value: Boolean): Self = StObject.set(x, "textureOnViewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureOnViewportUndefined: Self = StObject.set(x, "textureOnViewport", js.undefined)
+    inline def setTextureOnViewportUndefined: Self = StObject.set(x, "textureOnViewport", js.undefined)
     
-    @scala.inline
-    def setTouchTapThreshold(value: Double): Self = StObject.set(x, "touchTapThreshold", value.asInstanceOf[js.Any])
+    inline def setTouchTapThreshold(value: Double): Self = StObject.set(x, "touchTapThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchTapThresholdUndefined: Self = StObject.set(x, "touchTapThreshold", js.undefined)
+    inline def setTouchTapThresholdUndefined: Self = StObject.set(x, "touchTapThreshold", js.undefined)
     
-    @scala.inline
-    def setUserPanningEnabled(value: Boolean): Self = StObject.set(x, "userPanningEnabled", value.asInstanceOf[js.Any])
+    inline def setUserPanningEnabled(value: Boolean): Self = StObject.set(x, "userPanningEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPanningEnabledUndefined: Self = StObject.set(x, "userPanningEnabled", js.undefined)
+    inline def setUserPanningEnabledUndefined: Self = StObject.set(x, "userPanningEnabled", js.undefined)
     
-    @scala.inline
-    def setUserZoomingEnabled(value: Boolean): Self = StObject.set(x, "userZoomingEnabled", value.asInstanceOf[js.Any])
+    inline def setUserZoomingEnabled(value: Boolean): Self = StObject.set(x, "userZoomingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserZoomingEnabledUndefined: Self = StObject.set(x, "userZoomingEnabled", js.undefined)
+    inline def setUserZoomingEnabledUndefined: Self = StObject.set(x, "userZoomingEnabled", js.undefined)
     
-    @scala.inline
-    def setWheelSensitivity(value: Double): Self = StObject.set(x, "wheelSensitivity", value.asInstanceOf[js.Any])
+    inline def setWheelSensitivity(value: Double): Self = StObject.set(x, "wheelSensitivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWheelSensitivityUndefined: Self = StObject.set(x, "wheelSensitivity", js.undefined)
+    inline def setWheelSensitivityUndefined: Self = StObject.set(x, "wheelSensitivity", js.undefined)
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     
-    @scala.inline
-    def setZoomingEnabled(value: Boolean): Self = StObject.set(x, "zoomingEnabled", value.asInstanceOf[js.Any])
+    inline def setZoomingEnabled(value: Boolean): Self = StObject.set(x, "zoomingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomingEnabledUndefined: Self = StObject.set(x, "zoomingEnabled", js.undefined)
+    inline def setZoomingEnabledUndefined: Self = StObject.set(x, "zoomingEnabled", js.undefined)
   }
 }

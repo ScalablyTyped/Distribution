@@ -17,8 +17,7 @@ object mod {
   // TODO 2. create underscore.deffered .d.ts file
   // TODO 3. refactor & improve specialized parameter methods
   // Merged declaration, ChatWork is both a callable function and a namespace
-  @scala.inline
-  def apply(): ChatWork = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ChatWork]
+  inline def apply(): ChatWork = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ChatWork]
   
   @JSImport("simple-cw-node", JSImport.Namespace)
   @js.native
@@ -110,17 +109,14 @@ object mod {
   }
   object ChatWorkInitOptions {
     
-    @scala.inline
-    def apply(token: String): ChatWorkInitOptions = {
+    inline def apply(token: String): ChatWorkInitOptions = {
       val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChatWorkInitOptions]
     }
     
-    @scala.inline
-    implicit class ChatWorkInitOptionsMutableBuilder[Self <: ChatWorkInitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChatWorkInitOptions](x: Self) {
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
 }

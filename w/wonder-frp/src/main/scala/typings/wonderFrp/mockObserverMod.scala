@@ -14,9 +14,9 @@ object mockObserverMod {
   class MockObserver protected () extends Observer {
     def this(scheduler: TestScheduler) = this()
     
-    var _messages: js.Any = js.native
+    /* private */ var _messages: js.Any = js.native
     
-    var _scheduler: js.Any = js.native
+    /* private */ var _scheduler: js.Any = js.native
     
     var messages: js.Array[Record] = js.native
   }
@@ -27,7 +27,6 @@ object mockObserverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(scheduler: TestScheduler): MockObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any]).asInstanceOf[MockObserver]
+    inline def create(scheduler: TestScheduler): MockObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any]).asInstanceOf[MockObserver]
   }
 }

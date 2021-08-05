@@ -12,22 +12,17 @@ trait Curve extends StObject {
 }
 object Curve {
   
-  @scala.inline
-  def apply(curve: String): Curve = {
+  inline def apply(curve: String): Curve = {
     val __obj = js.Dynamic.literal(curve = curve.asInstanceOf[js.Any])
     __obj.asInstanceOf[Curve]
   }
   
-  @scala.inline
-  implicit class CurveMutableBuilder[Self <: Curve] (val x: Self) extends AnyVal {
+  extension [Self <: Curve](x: Self) {
     
-    @scala.inline
-    def setCurve(value: String): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+    inline def setCurve(value: String): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPub(value: String): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
+    inline def setPub(value: String): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubUndefined: Self = StObject.set(x, "pub", js.undefined)
+    inline def setPubUndefined: Self = StObject.set(x, "pub", js.undefined)
   }
 }

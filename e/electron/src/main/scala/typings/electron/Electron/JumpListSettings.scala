@@ -23,22 +23,17 @@ trait JumpListSettings extends StObject {
 }
 object JumpListSettings {
   
-  @scala.inline
-  def apply(minItems: Double, removedItems: js.Array[JumpListItem]): JumpListSettings = {
+  inline def apply(minItems: Double, removedItems: js.Array[JumpListItem]): JumpListSettings = {
     val __obj = js.Dynamic.literal(minItems = minItems.asInstanceOf[js.Any], removedItems = removedItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[JumpListSettings]
   }
   
-  @scala.inline
-  implicit class JumpListSettingsMutableBuilder[Self <: JumpListSettings] (val x: Self) extends AnyVal {
+  extension [Self <: JumpListSettings](x: Self) {
     
-    @scala.inline
-    def setMinItems(value: Double): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
+    inline def setMinItems(value: Double): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedItems(value: js.Array[JumpListItem]): Self = StObject.set(x, "removedItems", value.asInstanceOf[js.Any])
+    inline def setRemovedItems(value: js.Array[JumpListItem]): Self = StObject.set(x, "removedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedItemsVarargs(value: JumpListItem*): Self = StObject.set(x, "removedItems", js.Array(value :_*))
+    inline def setRemovedItemsVarargs(value: JumpListItem*): Self = StObject.set(x, "removedItems", js.Array(value :_*))
   }
 }

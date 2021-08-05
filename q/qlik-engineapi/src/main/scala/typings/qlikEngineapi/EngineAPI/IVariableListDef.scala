@@ -31,25 +31,19 @@ trait IVariableListDef extends StObject {
 }
 object IVariableListDef {
   
-  @scala.inline
-  def apply(qData: js.Any, qShowConfig: Boolean, qShowReserved: Boolean, qType: String): IVariableListDef = {
+  inline def apply(qData: js.Any, qShowConfig: Boolean, qShowReserved: Boolean, qType: String): IVariableListDef = {
     val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qShowConfig = qShowConfig.asInstanceOf[js.Any], qShowReserved = qShowReserved.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVariableListDef]
   }
   
-  @scala.inline
-  implicit class IVariableListDefMutableBuilder[Self <: IVariableListDef] (val x: Self) extends AnyVal {
+  extension [Self <: IVariableListDef](x: Self) {
     
-    @scala.inline
-    def setQData(value: js.Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
+    inline def setQData(value: js.Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQShowConfig(value: Boolean): Self = StObject.set(x, "qShowConfig", value.asInstanceOf[js.Any])
+    inline def setQShowConfig(value: Boolean): Self = StObject.set(x, "qShowConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQShowReserved(value: Boolean): Self = StObject.set(x, "qShowReserved", value.asInstanceOf[js.Any])
+    inline def setQShowReserved(value: Boolean): Self = StObject.set(x, "qShowReserved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

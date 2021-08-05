@@ -18,19 +18,15 @@ trait DescribeResourceServerRequest extends StObject {
 }
 object DescribeResourceServerRequest {
   
-  @scala.inline
-  def apply(Identifier: ResourceServerIdentifierType, UserPoolId: UserPoolIdType): DescribeResourceServerRequest = {
+  inline def apply(Identifier: ResourceServerIdentifierType, UserPoolId: UserPoolIdType): DescribeResourceServerRequest = {
     val __obj = js.Dynamic.literal(Identifier = Identifier.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeResourceServerRequest]
   }
   
-  @scala.inline
-  implicit class DescribeResourceServerRequestMutableBuilder[Self <: DescribeResourceServerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeResourceServerRequest](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: ResourceServerIdentifierType): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: ResourceServerIdentifierType): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

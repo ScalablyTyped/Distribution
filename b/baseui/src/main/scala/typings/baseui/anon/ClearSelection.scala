@@ -18,8 +18,7 @@ trait ClearSelection extends StObject {
 }
 object ClearSelection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearSelection: () => js.Any,
     event: MouseEvent[HTMLButtonElement, NativeMouseEvent],
     selection: js.Array[RowT]
@@ -28,19 +27,14 @@ object ClearSelection {
     __obj.asInstanceOf[ClearSelection]
   }
   
-  @scala.inline
-  implicit class ClearSelectionMutableBuilder[Self <: ClearSelection] (val x: Self) extends AnyVal {
+  extension [Self <: ClearSelection](x: Self) {
     
-    @scala.inline
-    def setClearSelection(value: () => js.Any): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
+    inline def setClearSelection(value: () => js.Any): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEvent(value: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelection(value: js.Array[RowT]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: js.Array[RowT]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionVarargs(value: RowT*): Self = StObject.set(x, "selection", js.Array(value :_*))
+    inline def setSelectionVarargs(value: RowT*): Self = StObject.set(x, "selection", js.Array(value :_*))
   }
 }

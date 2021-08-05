@@ -150,21 +150,16 @@ object elbLoadBalancerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LoadBalancerState): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LoadBalancerState, opts: CustomResourceOptions): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
+    inline def get(name: String, id: Input[ID]): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
+    inline def get(name: String, id: Input[ID], state: LoadBalancerState): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
+    inline def get(name: String, id: Input[ID], state: LoadBalancerState, opts: CustomResourceOptions): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
     
     /**
       * Returns true if the given object is an instance of LoadBalancer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/loadBalancer.LoadBalancer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elb/loadBalancer.LoadBalancer */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/loadBalancer.LoadBalancer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elb/loadBalancer.LoadBalancer */ Boolean]
   }
   
   trait LoadBalancerArgs extends StObject {
@@ -255,122 +250,84 @@ object elbLoadBalancerMod {
   }
   object LoadBalancerArgs {
     
-    @scala.inline
-    def apply(listeners: Input[js.Array[Input[typings.pulumiAws.inputMod.elb.LoadBalancerListener]]]): LoadBalancerArgs = {
+    inline def apply(listeners: Input[js.Array[Input[typings.pulumiAws.inputMod.elb.LoadBalancerListener]]]): LoadBalancerArgs = {
       val __obj = js.Dynamic.literal(listeners = listeners.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadBalancerArgs]
     }
     
-    @scala.inline
-    implicit class LoadBalancerArgsMutableBuilder[Self <: LoadBalancerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LoadBalancerArgs](x: Self) {
       
-      @scala.inline
-      def setAccessLogs(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerAccessLogs]): Self = StObject.set(x, "accessLogs", value.asInstanceOf[js.Any])
+      inline def setAccessLogs(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerAccessLogs]): Self = StObject.set(x, "accessLogs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessLogsUndefined: Self = StObject.set(x, "accessLogs", js.undefined)
+      inline def setAccessLogsUndefined: Self = StObject.set(x, "accessLogs", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
+      inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZonesVarargs(value: Input[String]*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+      inline def setAvailabilityZonesVarargs(value: Input[String]*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
       
-      @scala.inline
-      def setConnectionDraining(value: Input[Boolean]): Self = StObject.set(x, "connectionDraining", value.asInstanceOf[js.Any])
+      inline def setConnectionDraining(value: Input[Boolean]): Self = StObject.set(x, "connectionDraining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionDrainingTimeout(value: Input[Double]): Self = StObject.set(x, "connectionDrainingTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectionDrainingTimeout(value: Input[Double]): Self = StObject.set(x, "connectionDrainingTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionDrainingTimeoutUndefined: Self = StObject.set(x, "connectionDrainingTimeout", js.undefined)
+      inline def setConnectionDrainingTimeoutUndefined: Self = StObject.set(x, "connectionDrainingTimeout", js.undefined)
       
-      @scala.inline
-      def setConnectionDrainingUndefined: Self = StObject.set(x, "connectionDraining", js.undefined)
+      inline def setConnectionDrainingUndefined: Self = StObject.set(x, "connectionDraining", js.undefined)
       
-      @scala.inline
-      def setCrossZoneLoadBalancing(value: Input[Boolean]): Self = StObject.set(x, "crossZoneLoadBalancing", value.asInstanceOf[js.Any])
+      inline def setCrossZoneLoadBalancing(value: Input[Boolean]): Self = StObject.set(x, "crossZoneLoadBalancing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossZoneLoadBalancingUndefined: Self = StObject.set(x, "crossZoneLoadBalancing", js.undefined)
+      inline def setCrossZoneLoadBalancingUndefined: Self = StObject.set(x, "crossZoneLoadBalancing", js.undefined)
       
-      @scala.inline
-      def setHealthCheck(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerHealthCheck]): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+      inline def setHealthCheck(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerHealthCheck]): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
+      inline def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
       
-      @scala.inline
-      def setIdleTimeout(value: Input[Double]): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
+      inline def setIdleTimeout(value: Input[Double]): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
+      inline def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
       
-      @scala.inline
-      def setInstances(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+      inline def setInstances(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+      inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
       
-      @scala.inline
-      def setInstancesVarargs(value: Input[String]*): Self = StObject.set(x, "instances", js.Array(value :_*))
+      inline def setInstancesVarargs(value: Input[String]*): Self = StObject.set(x, "instances", js.Array(value :_*))
       
-      @scala.inline
-      def setInternal(value: Input[Boolean]): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+      inline def setInternal(value: Input[Boolean]): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
+      inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
       
-      @scala.inline
-      def setListeners(value: Input[js.Array[Input[typings.pulumiAws.inputMod.elb.LoadBalancerListener]]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: Input[js.Array[Input[typings.pulumiAws.inputMod.elb.LoadBalancerListener]]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenersVarargs(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerListener]*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+      inline def setListenersVarargs(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerListener]*): Self = StObject.set(x, "listeners", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
+      inline def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
+      inline def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+      inline def setSecurityGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceSecurityGroup(value: Input[String]): Self = StObject.set(x, "sourceSecurityGroup", value.asInstanceOf[js.Any])
+      inline def setSourceSecurityGroup(value: Input[String]): Self = StObject.set(x, "sourceSecurityGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceSecurityGroupUndefined: Self = StObject.set(x, "sourceSecurityGroup", js.undefined)
+      inline def setSourceSecurityGroupUndefined: Self = StObject.set(x, "sourceSecurityGroup", js.undefined)
       
-      @scala.inline
-      def setSubnets(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
+      inline def setSubnets(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetsUndefined: Self = StObject.set(x, "subnets", js.undefined)
+      inline def setSubnetsUndefined: Self = StObject.set(x, "subnets", js.undefined)
       
-      @scala.inline
-      def setSubnetsVarargs(value: Input[String]*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+      inline def setSubnetsVarargs(value: Input[String]*): Self = StObject.set(x, "subnets", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -484,149 +441,102 @@ object elbLoadBalancerMod {
   }
   object LoadBalancerState {
     
-    @scala.inline
-    def apply(): LoadBalancerState = {
+    inline def apply(): LoadBalancerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoadBalancerState]
     }
     
-    @scala.inline
-    implicit class LoadBalancerStateMutableBuilder[Self <: LoadBalancerState] (val x: Self) extends AnyVal {
+    extension [Self <: LoadBalancerState](x: Self) {
       
-      @scala.inline
-      def setAccessLogs(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerAccessLogs]): Self = StObject.set(x, "accessLogs", value.asInstanceOf[js.Any])
+      inline def setAccessLogs(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerAccessLogs]): Self = StObject.set(x, "accessLogs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessLogsUndefined: Self = StObject.set(x, "accessLogs", js.undefined)
+      inline def setAccessLogsUndefined: Self = StObject.set(x, "accessLogs", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
+      inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZonesVarargs(value: Input[String]*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+      inline def setAvailabilityZonesVarargs(value: Input[String]*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
       
-      @scala.inline
-      def setConnectionDraining(value: Input[Boolean]): Self = StObject.set(x, "connectionDraining", value.asInstanceOf[js.Any])
+      inline def setConnectionDraining(value: Input[Boolean]): Self = StObject.set(x, "connectionDraining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionDrainingTimeout(value: Input[Double]): Self = StObject.set(x, "connectionDrainingTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectionDrainingTimeout(value: Input[Double]): Self = StObject.set(x, "connectionDrainingTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionDrainingTimeoutUndefined: Self = StObject.set(x, "connectionDrainingTimeout", js.undefined)
+      inline def setConnectionDrainingTimeoutUndefined: Self = StObject.set(x, "connectionDrainingTimeout", js.undefined)
       
-      @scala.inline
-      def setConnectionDrainingUndefined: Self = StObject.set(x, "connectionDraining", js.undefined)
+      inline def setConnectionDrainingUndefined: Self = StObject.set(x, "connectionDraining", js.undefined)
       
-      @scala.inline
-      def setCrossZoneLoadBalancing(value: Input[Boolean]): Self = StObject.set(x, "crossZoneLoadBalancing", value.asInstanceOf[js.Any])
+      inline def setCrossZoneLoadBalancing(value: Input[Boolean]): Self = StObject.set(x, "crossZoneLoadBalancing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossZoneLoadBalancingUndefined: Self = StObject.set(x, "crossZoneLoadBalancing", js.undefined)
+      inline def setCrossZoneLoadBalancingUndefined: Self = StObject.set(x, "crossZoneLoadBalancing", js.undefined)
       
-      @scala.inline
-      def setDnsName(value: Input[String]): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
+      inline def setDnsName(value: Input[String]): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsNameUndefined: Self = StObject.set(x, "dnsName", js.undefined)
+      inline def setDnsNameUndefined: Self = StObject.set(x, "dnsName", js.undefined)
       
-      @scala.inline
-      def setHealthCheck(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerHealthCheck]): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+      inline def setHealthCheck(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerHealthCheck]): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
+      inline def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
       
-      @scala.inline
-      def setIdleTimeout(value: Input[Double]): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
+      inline def setIdleTimeout(value: Input[Double]): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
+      inline def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
       
-      @scala.inline
-      def setInstances(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+      inline def setInstances(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+      inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
       
-      @scala.inline
-      def setInstancesVarargs(value: Input[String]*): Self = StObject.set(x, "instances", js.Array(value :_*))
+      inline def setInstancesVarargs(value: Input[String]*): Self = StObject.set(x, "instances", js.Array(value :_*))
       
-      @scala.inline
-      def setInternal(value: Input[Boolean]): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+      inline def setInternal(value: Input[Boolean]): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
+      inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
       
-      @scala.inline
-      def setListeners(value: Input[js.Array[Input[typings.pulumiAws.inputMod.elb.LoadBalancerListener]]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: Input[js.Array[Input[typings.pulumiAws.inputMod.elb.LoadBalancerListener]]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
+      inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
       
-      @scala.inline
-      def setListenersVarargs(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerListener]*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+      inline def setListenersVarargs(value: Input[typings.pulumiAws.inputMod.elb.LoadBalancerListener]*): Self = StObject.set(x, "listeners", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
+      inline def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
+      inline def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+      inline def setSecurityGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceSecurityGroup(value: Input[String]): Self = StObject.set(x, "sourceSecurityGroup", value.asInstanceOf[js.Any])
+      inline def setSourceSecurityGroup(value: Input[String]): Self = StObject.set(x, "sourceSecurityGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceSecurityGroupId(value: Input[String]): Self = StObject.set(x, "sourceSecurityGroupId", value.asInstanceOf[js.Any])
+      inline def setSourceSecurityGroupId(value: Input[String]): Self = StObject.set(x, "sourceSecurityGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceSecurityGroupIdUndefined: Self = StObject.set(x, "sourceSecurityGroupId", js.undefined)
+      inline def setSourceSecurityGroupIdUndefined: Self = StObject.set(x, "sourceSecurityGroupId", js.undefined)
       
-      @scala.inline
-      def setSourceSecurityGroupUndefined: Self = StObject.set(x, "sourceSecurityGroup", js.undefined)
+      inline def setSourceSecurityGroupUndefined: Self = StObject.set(x, "sourceSecurityGroup", js.undefined)
       
-      @scala.inline
-      def setSubnets(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
+      inline def setSubnets(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetsUndefined: Self = StObject.set(x, "subnets", js.undefined)
+      inline def setSubnetsUndefined: Self = StObject.set(x, "subnets", js.undefined)
       
-      @scala.inline
-      def setSubnetsVarargs(value: Input[String]*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+      inline def setSubnetsVarargs(value: Input[String]*): Self = StObject.set(x, "subnets", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
+      inline def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
     }
   }
 }

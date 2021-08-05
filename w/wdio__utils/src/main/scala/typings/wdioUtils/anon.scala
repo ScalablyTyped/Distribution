@@ -15,20 +15,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setValue(value: Record[String, js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Record[String, js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -54,30 +50,24 @@ object anon {
   }
   object Capabilities {
     
-    @scala.inline
-    def apply(): Capabilities = {
+    inline def apply(): Capabilities = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Capabilities]
     }
     
-    @scala.inline
-    implicit class CapabilitiesMutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
+    extension [Self <: Capabilities](x: Self) {
       
-      @scala.inline
-      def setCapabilities(
+      inline def setCapabilities(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ js.Any
       ): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+      inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
       
-      @scala.inline
-      def setRequestedCapabilities(
+      inline def setRequestedCapabilities(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ js.Any
       ): Self = StObject.set(x, "requestedCapabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestedCapabilitiesUndefined: Self = StObject.set(x, "requestedCapabilities", js.undefined)
+      inline def setRequestedCapabilitiesUndefined: Self = StObject.set(x, "requestedCapabilities", js.undefined)
     }
   }
   
@@ -89,20 +79,16 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(): Dictkey = {
+    inline def apply(): Dictkey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def set__elementOverrides__(value: ValueAny): Self = StObject.set(x, "__elementOverrides__", value.asInstanceOf[js.Any])
+      inline def set__elementOverrides__(value: ValueAny): Self = StObject.set(x, "__elementOverrides__", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__elementOverrides__Undefined: Self = StObject.set(x, "__elementOverrides__", js.undefined)
+      inline def set__elementOverrides__Undefined: Self = StObject.set(x, "__elementOverrides__", js.undefined)
     }
   }
   
@@ -112,20 +98,16 @@ object anon {
   }
   object File {
     
-    @scala.inline
-    def apply(): File = {
+    inline def apply(): File = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     }
   }
   
@@ -153,8 +135,7 @@ object anon {
   }
   object IgnoredWorkerServices {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ignoredWorkerServices: js.Array[String],
       launcherServices: js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.ServiceInstance */ js.Any
@@ -164,24 +145,19 @@ object anon {
       __obj.asInstanceOf[IgnoredWorkerServices]
     }
     
-    @scala.inline
-    implicit class IgnoredWorkerServicesMutableBuilder[Self <: IgnoredWorkerServices] (val x: Self) extends AnyVal {
+    extension [Self <: IgnoredWorkerServices](x: Self) {
       
-      @scala.inline
-      def setIgnoredWorkerServices(value: js.Array[String]): Self = StObject.set(x, "ignoredWorkerServices", value.asInstanceOf[js.Any])
+      inline def setIgnoredWorkerServices(value: js.Array[String]): Self = StObject.set(x, "ignoredWorkerServices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredWorkerServicesVarargs(value: String*): Self = StObject.set(x, "ignoredWorkerServices", js.Array(value :_*))
+      inline def setIgnoredWorkerServicesVarargs(value: String*): Self = StObject.set(x, "ignoredWorkerServices", js.Array(value :_*))
       
-      @scala.inline
-      def setLauncherServices(
+      inline def setLauncherServices(
         value: js.Array[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.ServiceInstance */ js.Any
             ]
       ): Self = StObject.set(x, "launcherServices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLauncherServicesVarargs(
+      inline def setLauncherServicesVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.ServiceInstance */ js.Any)*
       ): Self = StObject.set(x, "launcherServices", js.Array(value :_*))
     }
@@ -201,29 +177,22 @@ object anon {
   }
   object IsAndroid {
     
-    @scala.inline
-    def apply(isAndroid: Boolean, isChrome: Boolean, isIOS: Boolean, isMobile: Boolean, isSauce: Boolean): IsAndroid = {
+    inline def apply(isAndroid: Boolean, isChrome: Boolean, isIOS: Boolean, isMobile: Boolean, isSauce: Boolean): IsAndroid = {
       val __obj = js.Dynamic.literal(isAndroid = isAndroid.asInstanceOf[js.Any], isChrome = isChrome.asInstanceOf[js.Any], isIOS = isIOS.asInstanceOf[js.Any], isMobile = isMobile.asInstanceOf[js.Any], isSauce = isSauce.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsAndroid]
     }
     
-    @scala.inline
-    implicit class IsAndroidMutableBuilder[Self <: IsAndroid] (val x: Self) extends AnyVal {
+    extension [Self <: IsAndroid](x: Self) {
       
-      @scala.inline
-      def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
+      inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
+      inline def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIOS(value: Boolean): Self = StObject.set(x, "isIOS", value.asInstanceOf[js.Any])
+      inline def setIsIOS(value: Boolean): Self = StObject.set(x, "isIOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+      inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSauce(value: Boolean): Self = StObject.set(x, "isSauce", value.asInstanceOf[js.Any])
+      inline def setIsSauce(value: Boolean): Self = StObject.set(x, "isSauce", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,8 +214,7 @@ object anon {
   }
   object IsChrome {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isAndroid: Boolean,
       isChrome: Boolean,
       isIOS: Boolean,
@@ -259,29 +227,21 @@ object anon {
       __obj.asInstanceOf[IsChrome]
     }
     
-    @scala.inline
-    implicit class IsChromeMutableBuilder[Self <: IsChrome] (val x: Self) extends AnyVal {
+    extension [Self <: IsChrome](x: Self) {
       
-      @scala.inline
-      def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
+      inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
+      inline def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIOS(value: Boolean): Self = StObject.set(x, "isIOS", value.asInstanceOf[js.Any])
+      inline def setIsIOS(value: Boolean): Self = StObject.set(x, "isIOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+      inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSauce(value: Boolean): Self = StObject.set(x, "isSauce", value.asInstanceOf[js.Any])
+      inline def setIsSauce(value: Boolean): Self = StObject.set(x, "isSauce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSeleniumStandalone(value: Boolean): Self = StObject.set(x, "isSeleniumStandalone", value.asInstanceOf[js.Any])
+      inline def setIsSeleniumStandalone(value: Boolean): Self = StObject.set(x, "isSeleniumStandalone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsW3C(value: Boolean): Self = StObject.set(x, "isW3C", value.asInstanceOf[js.Any])
+      inline def setIsW3C(value: Boolean): Self = StObject.set(x, "isW3C", value.asInstanceOf[js.Any])
     }
   }
   
@@ -305,8 +265,7 @@ object anon {
   }
   object IsDevTools {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isAndroid: Boolean,
       isChrome: Boolean,
       isDevTools: Boolean,
@@ -320,32 +279,23 @@ object anon {
       __obj.asInstanceOf[IsDevTools]
     }
     
-    @scala.inline
-    implicit class IsDevToolsMutableBuilder[Self <: IsDevTools] (val x: Self) extends AnyVal {
+    extension [Self <: IsDevTools](x: Self) {
       
-      @scala.inline
-      def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
+      inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
+      inline def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDevTools(value: Boolean): Self = StObject.set(x, "isDevTools", value.asInstanceOf[js.Any])
+      inline def setIsDevTools(value: Boolean): Self = StObject.set(x, "isDevTools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIOS(value: Boolean): Self = StObject.set(x, "isIOS", value.asInstanceOf[js.Any])
+      inline def setIsIOS(value: Boolean): Self = StObject.set(x, "isIOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+      inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSauce(value: Boolean): Self = StObject.set(x, "isSauce", value.asInstanceOf[js.Any])
+      inline def setIsSauce(value: Boolean): Self = StObject.set(x, "isSauce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSeleniumStandalone(value: Boolean): Self = StObject.set(x, "isSeleniumStandalone", value.asInstanceOf[js.Any])
+      inline def setIsSeleniumStandalone(value: Boolean): Self = StObject.set(x, "isSeleniumStandalone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsW3C(value: Boolean): Self = StObject.set(x, "isW3C", value.asInstanceOf[js.Any])
+      inline def setIsW3C(value: Boolean): Self = StObject.set(x, "isW3C", value.asInstanceOf[js.Any])
     }
   }
   
@@ -355,20 +305,16 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply(value: js.Array[String]): Value = {
+    inline def apply(value: js.Array[String]): Value = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -378,17 +324,14 @@ object anon {
   }
   object ValueAny {
     
-    @scala.inline
-    def apply(value: js.Any): ValueAny = {
+    inline def apply(value: js.Any): ValueAny = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValueAny]
     }
     
-    @scala.inline
-    implicit class ValueAnyMutableBuilder[Self <: ValueAny] (val x: Self) extends AnyVal {
+    extension [Self <: ValueAny](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -398,17 +341,14 @@ object anon {
   }
   object ValueRecord {
     
-    @scala.inline
-    def apply(value: Record[String, js.Any]): ValueRecord = {
+    inline def apply(value: Record[String, js.Any]): ValueRecord = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValueRecord]
     }
     
-    @scala.inline
-    implicit class ValueRecordMutableBuilder[Self <: ValueRecord] (val x: Self) extends AnyVal {
+    extension [Self <: ValueRecord](x: Self) {
       
-      @scala.inline
-      def setValue(value: Record[String, js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Record[String, js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

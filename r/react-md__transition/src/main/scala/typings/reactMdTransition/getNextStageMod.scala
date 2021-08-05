@@ -11,6 +11,5 @@ object getNextStageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getNextStage(stage: TransitionStage): TransitionStage = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextStage")(stage.asInstanceOf[js.Any]).asInstanceOf[TransitionStage]
+  inline def getNextStage(stage: TransitionStage): TransitionStage = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextStage")(stage.asInstanceOf[js.Any]).asInstanceOf[TransitionStage]
 }

@@ -26,8 +26,7 @@ trait SourceImage extends StObject {
 }
 object SourceImage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ext: String,
     height: Double,
     path: String,
@@ -40,40 +39,28 @@ object SourceImage {
     __obj.asInstanceOf[SourceImage]
   }
   
-  @scala.inline
-  implicit class SourceImageMutableBuilder[Self <: SourceImage] (val x: Self) extends AnyVal {
+  extension [Self <: SourceImage](x: Self) {
     
-    @scala.inline
-    def setCachedId(value: String): Self = StObject.set(x, "cachedId", value.asInstanceOf[js.Any])
+    inline def setCachedId(value: String): Self = StObject.set(x, "cachedId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachedIdUndefined: Self = StObject.set(x, "cachedId", js.undefined)
+    inline def setCachedIdUndefined: Self = StObject.set(x, "cachedId", js.undefined)
     
-    @scala.inline
-    def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
+    inline def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResType(value: String): Self = StObject.set(x, "resType", value.asInstanceOf[js.Any])
+    inline def setResType(value: String): Self = StObject.set(x, "resType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVector(value: Boolean): Self = StObject.set(x, "vector", value.asInstanceOf[js.Any])
+    inline def setVector(value: Boolean): Self = StObject.set(x, "vector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

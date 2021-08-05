@@ -86,20 +86,16 @@ object mod {
     }
     object BatchOptions {
       
-      @scala.inline
-      def apply(): BatchOptions = {
+      inline def apply(): BatchOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BatchOptions]
       }
       
-      @scala.inline
-      implicit class BatchOptionsMutableBuilder[Self <: BatchOptions] (val x: Self) extends AnyVal {
+      extension [Self <: BatchOptions](x: Self) {
         
-        @scala.inline
-        def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+        inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+        inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
       }
     }
     
@@ -121,20 +117,16 @@ object mod {
     }
     object DelOptions {
       
-      @scala.inline
-      def apply(): DelOptions = {
+      inline def apply(): DelOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DelOptions]
       }
       
-      @scala.inline
-      implicit class DelOptionsMutableBuilder[Self <: DelOptions] (val x: Self) extends AnyVal {
+      extension [Self <: DelOptions](x: Self) {
         
-        @scala.inline
-        def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+        inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+        inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
       }
     }
     
@@ -148,20 +140,16 @@ object mod {
     }
     object GetOptions {
       
-      @scala.inline
-      def apply(): GetOptions = {
+      inline def apply(): GetOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GetOptions]
       }
       
-      @scala.inline
-      implicit class GetOptionsMutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
+      extension [Self <: GetOptions](x: Self) {
         
-        @scala.inline
-        def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
+        inline def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFillCacheUndefined: Self = StObject.set(x, "fillCache", js.undefined)
+        inline def setFillCacheUndefined: Self = StObject.set(x, "fillCache", js.undefined)
       }
     }
     
@@ -181,8 +169,7 @@ object mod {
     }
     object Iterator {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         binding: js.Any,
         cache: js.Any,
         db: AbstractLevelDOWN[Bytes, Bytes],
@@ -196,23 +183,17 @@ object mod {
         __obj.asInstanceOf[Iterator]
       }
       
-      @scala.inline
-      implicit class IteratorMutableBuilder[Self <: Iterator] (val x: Self) extends AnyVal {
+      extension [Self <: Iterator](x: Self) {
         
-        @scala.inline
-        def setBinding(value: js.Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+        inline def setBinding(value: js.Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+        inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFastFuture(value: js.Any): Self = StObject.set(x, "fastFuture", value.asInstanceOf[js.Any])
+        inline def setFastFuture(value: js.Any): Self = StObject.set(x, "fastFuture", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFinished(value: js.Any): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+        inline def setFinished(value: js.Any): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeek(value: Bytes => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
+        inline def setSeek(value: Bytes => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
       }
     }
     
@@ -224,20 +205,16 @@ object mod {
     }
     object IteratorOptions {
       
-      @scala.inline
-      def apply(): IteratorOptions = {
+      inline def apply(): IteratorOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IteratorOptions]
       }
       
-      @scala.inline
-      implicit class IteratorOptionsMutableBuilder[Self <: IteratorOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IteratorOptions](x: Self) {
         
-        @scala.inline
-        def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
+        inline def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFillCacheUndefined: Self = StObject.set(x, "fillCache", js.undefined)
+        inline def setFillCacheUndefined: Self = StObject.set(x, "fillCache", js.undefined)
       }
     }
     
@@ -252,20 +229,16 @@ object mod {
     }
     object PutOptions {
       
-      @scala.inline
-      def apply(): PutOptions = {
+      inline def apply(): PutOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PutOptions]
       }
       
-      @scala.inline
-      implicit class PutOptionsMutableBuilder[Self <: PutOptions] (val x: Self) extends AnyVal {
+      extension [Self <: PutOptions](x: Self) {
         
-        @scala.inline
-        def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+        inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+        inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
       }
     }
   }

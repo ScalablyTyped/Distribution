@@ -10,9 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def closest(str: String, arr: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(str.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def closest(str: String, arr: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(str.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def distance(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def distance(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

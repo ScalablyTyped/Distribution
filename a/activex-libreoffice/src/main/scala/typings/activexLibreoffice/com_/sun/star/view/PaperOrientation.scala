@@ -15,10 +15,8 @@ trait PaperOrientation extends StObject
 object PaperOrientation {
   
   /** set the paper orientation to landscape. */
-  @scala.inline
-  def LANDSCAPE: `1` = 1.asInstanceOf[`1`]
+  inline def LANDSCAPE: `1` = 1.asInstanceOf[`1`]
   
   /** set the paper orientation to portrait. */
-  @scala.inline
-  def PORTRAIT: `0` = 0.asInstanceOf[`0`]
+  inline def PORTRAIT: `0` = 0.asInstanceOf[`0`]
 }

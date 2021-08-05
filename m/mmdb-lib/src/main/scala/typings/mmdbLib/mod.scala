@@ -18,13 +18,13 @@ object mod {
     def this(db: Buffer) = this()
     def this(db: Buffer, opts: ReaderOptions) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var db: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var decoder: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var findAddressInTree: js.Any = js.native
     
     /* CompleteClass */
@@ -33,48 +33,47 @@ object mod {
     /* CompleteClass */
     override def getWithPrefixLength(ipAddress: String): js.Tuple2[T | Null, Double] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var ipv4Start: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var ipv4StartNodeNumber: js.Any = js.native
     
     /* CompleteClass */
     var metadata: Metadata = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var resolveDataPointer: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var walker: js.Any = js.native
   }
   
   trait Reader[T /* <: Response */] extends StObject {
     
-    var db: js.Any
+    /* private */ var db: js.Any
     
-    var decoder: js.Any
+    /* private */ var decoder: js.Any
     
-    var findAddressInTree: js.Any
+    /* private */ var findAddressInTree: js.Any
     
     def get(ipAddress: String): T | Null
     
     def getWithPrefixLength(ipAddress: String): js.Tuple2[T | Null, Double]
     
-    var ipv4Start: js.Any
+    /* private */ var ipv4Start: js.Any
     
-    var ipv4StartNodeNumber: js.Any
+    /* private */ var ipv4StartNodeNumber: js.Any
     
     var metadata: Metadata
     
-    var resolveDataPointer: js.Any
+    /* private */ var resolveDataPointer: js.Any
     
-    var walker: js.Any
+    /* private */ var walker: js.Any
   }
   object Reader {
     
-    @scala.inline
-    def apply[T /* <: Response */](
+    inline def apply[T /* <: Response */](
       db: js.Any,
       decoder: js.Any,
       findAddressInTree: js.Any,
@@ -90,38 +89,27 @@ object mod {
       __obj.asInstanceOf[Reader[T]]
     }
     
-    @scala.inline
-    implicit class ReaderMutableBuilder[Self <: Reader[?], T /* <: Response */] (val x: Self & Reader[T]) extends AnyVal {
+    extension [Self <: Reader[?], T /* <: Response */](x: Self & Reader[T]) {
       
-      @scala.inline
-      def setDb(value: js.Any): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: js.Any): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecoder(value: js.Any): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
+      inline def setDecoder(value: js.Any): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindAddressInTree(value: js.Any): Self = StObject.set(x, "findAddressInTree", value.asInstanceOf[js.Any])
+      inline def setFindAddressInTree(value: js.Any): Self = StObject.set(x, "findAddressInTree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet(value: String => T | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => T | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetWithPrefixLength(value: String => js.Tuple2[T | Null, Double]): Self = StObject.set(x, "getWithPrefixLength", js.Any.fromFunction1(value))
+      inline def setGetWithPrefixLength(value: String => js.Tuple2[T | Null, Double]): Self = StObject.set(x, "getWithPrefixLength", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIpv4Start(value: js.Any): Self = StObject.set(x, "ipv4Start", value.asInstanceOf[js.Any])
+      inline def setIpv4Start(value: js.Any): Self = StObject.set(x, "ipv4Start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv4StartNodeNumber(value: js.Any): Self = StObject.set(x, "ipv4StartNodeNumber", value.asInstanceOf[js.Any])
+      inline def setIpv4StartNodeNumber(value: js.Any): Self = StObject.set(x, "ipv4StartNodeNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveDataPointer(value: js.Any): Self = StObject.set(x, "resolveDataPointer", value.asInstanceOf[js.Any])
+      inline def setResolveDataPointer(value: js.Any): Self = StObject.set(x, "resolveDataPointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWalker(value: js.Any): Self = StObject.set(x, "walker", value.asInstanceOf[js.Any])
+      inline def setWalker(value: js.Any): Self = StObject.set(x, "walker", value.asInstanceOf[js.Any])
     }
   }
 }

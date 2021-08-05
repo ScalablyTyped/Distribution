@@ -12,23 +12,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def chord(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chord")().asInstanceOf[ChordLayout]
+  inline def chord(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chord")().asInstanceOf[ChordLayout]
   
-  @scala.inline
-  def chordDirected(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chordDirected")().asInstanceOf[ChordLayout]
+  inline def chordDirected(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chordDirected")().asInstanceOf[ChordLayout]
   
-  @scala.inline
-  def chordTranspose(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chordTranspose")().asInstanceOf[ChordLayout]
+  inline def chordTranspose(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chordTranspose")().asInstanceOf[ChordLayout]
   
-  @scala.inline
-  def ribbon(): RibbonGenerator[js.Any, Ribbon_, RibbonSubgroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[js.Any, Ribbon_, RibbonSubgroup]]
+  inline def ribbon(): RibbonGenerator[js.Any, Ribbon_, RibbonSubgroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[js.Any, Ribbon_, RibbonSubgroup]]
   
-  @scala.inline
-  def ribbon_DatumSubgroupDatum[Datum, SubgroupDatum](): RibbonGenerator[js.Any, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[js.Any, Datum, SubgroupDatum]]
+  inline def ribbon_DatumSubgroupDatum[Datum, SubgroupDatum](): RibbonGenerator[js.Any, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[js.Any, Datum, SubgroupDatum]]
   
-  @scala.inline
-  def ribbon_ThisDatumSubgroupDatum[This, Datum, SubgroupDatum](): RibbonGenerator[This, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[This, Datum, SubgroupDatum]]
+  inline def ribbon_ThisDatumSubgroupDatum[This, Datum, SubgroupDatum](): RibbonGenerator[This, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[This, Datum, SubgroupDatum]]
   
   trait ChordGroup extends StObject {
     
@@ -54,26 +48,20 @@ object mod {
   }
   object ChordGroup {
     
-    @scala.inline
-    def apply(endAngle: Double, index: Double, startAngle: Double, value: Double): ChordGroup = {
+    inline def apply(endAngle: Double, index: Double, startAngle: Double, value: Double): ChordGroup = {
       val __obj = js.Dynamic.literal(endAngle = endAngle.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChordGroup]
     }
     
-    @scala.inline
-    implicit class ChordGroupMutableBuilder[Self <: ChordGroup] (val x: Self) extends AnyVal {
+    extension [Self <: ChordGroup](x: Self) {
       
-      @scala.inline
-      def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+      inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+      inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,26 +174,20 @@ object mod {
   }
   object ChordSubgroup {
     
-    @scala.inline
-    def apply(endAngle: Double, index: Double, startAngle: Double, value: Double): ChordSubgroup = {
+    inline def apply(endAngle: Double, index: Double, startAngle: Double, value: Double): ChordSubgroup = {
       val __obj = js.Dynamic.literal(endAngle = endAngle.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChordSubgroup]
     }
     
-    @scala.inline
-    implicit class ChordSubgroupMutableBuilder[Self <: ChordSubgroup] (val x: Self) extends AnyVal {
+    extension [Self <: ChordSubgroup](x: Self) {
       
-      @scala.inline
-      def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+      inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+      inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,20 +205,16 @@ object mod {
   }
   object Chord_ {
     
-    @scala.inline
-    def apply(source: ChordSubgroup, target: ChordSubgroup): Chord_ = {
+    inline def apply(source: ChordSubgroup, target: ChordSubgroup): Chord_ = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[Chord_]
     }
     
-    @scala.inline
-    implicit class Chord_MutableBuilder[Self <: Chord_] (val x: Self) extends AnyVal {
+    extension [Self <: Chord_](x: Self) {
       
-      @scala.inline
-      def setSource(value: ChordSubgroup): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: ChordSubgroup): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: ChordSubgroup): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: ChordSubgroup): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -474,23 +452,18 @@ object mod {
   }
   object RibbonSubgroup {
     
-    @scala.inline
-    def apply(endAngle: Double, radius: Double, startAngle: Double): RibbonSubgroup = {
+    inline def apply(endAngle: Double, radius: Double, startAngle: Double): RibbonSubgroup = {
       val __obj = js.Dynamic.literal(endAngle = endAngle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
       __obj.asInstanceOf[RibbonSubgroup]
     }
     
-    @scala.inline
-    implicit class RibbonSubgroupMutableBuilder[Self <: RibbonSubgroup] (val x: Self) extends AnyVal {
+    extension [Self <: RibbonSubgroup](x: Self) {
       
-      @scala.inline
-      def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+      inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+      inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     }
   }
   
@@ -508,20 +481,16 @@ object mod {
   }
   object Ribbon_ {
     
-    @scala.inline
-    def apply(source: RibbonSubgroup, target: RibbonSubgroup): Ribbon_ = {
+    inline def apply(source: RibbonSubgroup, target: RibbonSubgroup): Ribbon_ = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ribbon_]
     }
     
-    @scala.inline
-    implicit class Ribbon_MutableBuilder[Self <: Ribbon_] (val x: Self) extends AnyVal {
+    extension [Self <: Ribbon_](x: Self) {
       
-      @scala.inline
-      def setSource(value: RibbonSubgroup): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: RibbonSubgroup): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: RibbonSubgroup): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: RibbonSubgroup): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

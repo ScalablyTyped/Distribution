@@ -73,56 +73,39 @@ object tagMod {
     @js.native
     val ^ : KIND = js.native
     
-    @scala.inline
-    implicit class KINDMutableBuilder[Self <: KIND] (val x: Self) extends AnyVal {
+    extension [Self <: KIND](x: Self) {
       
-      @scala.inline
-      def setAccent(value: accent): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
+      inline def setAccent(value: accent): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlack(value: black): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
+      inline def setBlack(value: black): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue(value: blue): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+      inline def setBlue(value: blue): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrown(value: brown): Self = StObject.set(x, "brown", value.asInstanceOf[js.Any])
+      inline def setBrown(value: brown): Self = StObject.set(x, "brown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustom(value: custom_): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: custom_): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreen(value: green): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+      inline def setGreen(value: green): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNegative(value: negative): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+      inline def setNegative(value: negative): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutral(value: neutral): Self = StObject.set(x, "neutral", value.asInstanceOf[js.Any])
+      inline def setNeutral(value: neutral): Self = StObject.set(x, "neutral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrange(value: orange): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
+      inline def setOrange(value: orange): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositive(value: positive): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
+      inline def setPositive(value: positive): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimary(value: primary): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: primary): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurple(value: purple): Self = StObject.set(x, "purple", value.asInstanceOf[js.Any])
+      inline def setPurple(value: purple): Self = StObject.set(x, "purple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed(value: red): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+      inline def setRed(value: red): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarning(value: warning): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: warning): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhite(value: white): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+      inline def setWhite(value: white): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellow(value: yellow): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+      inline def setYellow(value: yellow): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,17 +123,13 @@ object tagMod {
     @js.native
     val ^ : SIZE = js.native
     
-    @scala.inline
-    implicit class SIZEMutableBuilder[Self <: SIZE] (val x: Self) extends AnyVal {
+    extension [Self <: SIZE](x: Self) {
       
-      @scala.inline
-      def setLarge(value: large_): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: large_): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedium(value: medium_): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+      inline def setMedium(value: medium_): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmall(value: small_): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: small_): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,17 +179,13 @@ object tagMod {
     @js.native
     val ^ : VARIANT = js.native
     
-    @scala.inline
-    implicit class VARIANTMutableBuilder[Self <: VARIANT] (val x: Self) extends AnyVal {
+    extension [Self <: VARIANT](x: Self) {
       
-      @scala.inline
-      def setLight(value: light): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+      inline def setLight(value: light): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlined(value: outlined): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
+      inline def setOutlined(value: outlined): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolid(value: solid): Self = StObject.set(x, "solid", value.asInstanceOf[js.Any])
+      inline def setSolid(value: solid): Self = StObject.set(x, "solid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,46 +209,36 @@ object tagMod {
   }
   object TagOverrides {
     
-    @scala.inline
-    def apply(): TagOverrides = {
+    inline def apply(): TagOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TagOverrides]
     }
     
-    @scala.inline
-    implicit class TagOverridesMutableBuilder[Self <: TagOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: TagOverrides](x: Self) {
       
-      @scala.inline
-      def setAction(
+      inline def setAction(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionIcon(
+      inline def setActionIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "ActionIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionIconUndefined: Self = StObject.set(x, "ActionIcon", js.undefined)
+      inline def setActionIconUndefined: Self = StObject.set(x, "ActionIcon", js.undefined)
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setText(
+      inline def setText(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
     }
   }
   
@@ -313,106 +278,74 @@ object tagMod {
   }
   object TagProps {
     
-    @scala.inline
-    def apply(): TagProps = {
+    inline def apply(): TagProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TagProps]
     }
     
-    @scala.inline
-    implicit class TagPropsMutableBuilder[Self <: TagProps] (val x: Self) extends AnyVal {
+    extension [Self <: TagProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCloseable(value: Boolean): Self = StObject.set(x, "closeable", value.asInstanceOf[js.Any])
+      inline def setCloseable(value: Boolean): Self = StObject.set(x, "closeable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseableUndefined: Self = StObject.set(x, "closeable", js.undefined)
+      inline def setCloseableUndefined: Self = StObject.set(x, "closeable", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+      inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
+      inline def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
       
-      @scala.inline
-      def setIsHovered(value: Boolean): Self = StObject.set(x, "isHovered", value.asInstanceOf[js.Any])
+      inline def setIsHovered(value: Boolean): Self = StObject.set(x, "isHovered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHoveredUndefined: Self = StObject.set(x, "isHovered", js.undefined)
+      inline def setIsHoveredUndefined: Self = StObject.set(x, "isHovered", js.undefined)
       
-      @scala.inline
-      def setKind(
+      inline def setKind(
         value: orange | custom_ | brown | purple | yellow | red | accent | white | primary | blue | neutral | positive | black | green | warning | negative
       ): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setOnActionClick(value: (/* e */ Event, /* children */ js.UndefOr[ReactNode]) => js.Any): Self = StObject.set(x, "onActionClick", js.Any.fromFunction2(value))
+      inline def setOnActionClick(value: (/* e */ Event, /* children */ js.UndefOr[ReactNode]) => js.Any): Self = StObject.set(x, "onActionClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
+      inline def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
       
-      @scala.inline
-      def setOnActionKeyDown(value: (/* e */ Event, /* children */ js.UndefOr[ReactNode]) => js.Any): Self = StObject.set(x, "onActionKeyDown", js.Any.fromFunction2(value))
+      inline def setOnActionKeyDown(value: (/* e */ Event, /* children */ js.UndefOr[ReactNode]) => js.Any): Self = StObject.set(x, "onActionKeyDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnActionKeyDownUndefined: Self = StObject.set(x, "onActionKeyDown", js.undefined)
+      inline def setOnActionKeyDownUndefined: Self = StObject.set(x, "onActionKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* event */ Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* event */ Event => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* event */ Event => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: TagOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: TagOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setSize(value: small_ | medium_ | large_): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: small_ | medium_ | large_): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setVariant(value: solid | light | outlined): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: solid | light | outlined): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+      inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     }
   }
 }

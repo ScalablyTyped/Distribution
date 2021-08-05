@@ -19,22 +19,17 @@ trait BlockDetect extends StObject {
 }
 object BlockDetect {
   
-  @scala.inline
-  def apply(block: RegExp, detect: Sass, replace: Scss): BlockDetect = {
+  inline def apply(block: RegExp, detect: Sass, replace: Scss): BlockDetect = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], detect = detect.asInstanceOf[js.Any], replace = replace.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockDetect]
   }
   
-  @scala.inline
-  implicit class BlockDetectMutableBuilder[Self <: BlockDetect] (val x: Self) extends AnyVal {
+  extension [Self <: BlockDetect](x: Self) {
     
-    @scala.inline
-    def setBlock(value: RegExp): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: RegExp): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetect(value: Sass): Self = StObject.set(x, "detect", value.asInstanceOf[js.Any])
+    inline def setDetect(value: Sass): Self = StObject.set(x, "detect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace(value: Scss): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: Scss): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
   }
 }

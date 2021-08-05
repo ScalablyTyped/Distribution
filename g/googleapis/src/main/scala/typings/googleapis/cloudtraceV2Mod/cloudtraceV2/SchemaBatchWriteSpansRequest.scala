@@ -17,22 +17,17 @@ trait SchemaBatchWriteSpansRequest extends StObject {
 }
 object SchemaBatchWriteSpansRequest {
   
-  @scala.inline
-  def apply(): SchemaBatchWriteSpansRequest = {
+  inline def apply(): SchemaBatchWriteSpansRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchWriteSpansRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBatchWriteSpansRequestMutableBuilder[Self <: SchemaBatchWriteSpansRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchWriteSpansRequest](x: Self) {
     
-    @scala.inline
-    def setSpans(value: js.Array[SchemaSpan]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
+    inline def setSpans(value: js.Array[SchemaSpan]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpansUndefined: Self = StObject.set(x, "spans", js.undefined)
+    inline def setSpansUndefined: Self = StObject.set(x, "spans", js.undefined)
     
-    @scala.inline
-    def setSpansVarargs(value: SchemaSpan*): Self = StObject.set(x, "spans", js.Array(value :_*))
+    inline def setSpansVarargs(value: SchemaSpan*): Self = StObject.set(x, "spans", js.Array(value :_*))
   }
 }

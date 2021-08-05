@@ -18,8 +18,7 @@ trait ParametersReposGetCommunityProfileMetricsEndpoint extends StObject {
 }
 object ParametersReposGetCommunityProfileMetricsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetCommunityProfileMetricsEndpoint,
     request: ReposGetCommunityProfileMetricsRequestOptions,
     response: OctokitResponse[ReposGetCommunityProfileMetricsResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetCommunityProfileMetricsEndpoint {
     __obj.asInstanceOf[ParametersReposGetCommunityProfileMetricsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetCommunityProfileMetricsEndpointMutableBuilder[Self <: ParametersReposGetCommunityProfileMetricsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetCommunityProfileMetricsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetCommunityProfileMetricsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetCommunityProfileMetricsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetCommunityProfileMetricsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetCommunityProfileMetricsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetCommunityProfileMetricsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetCommunityProfileMetricsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -30,32 +30,24 @@ object mod {
   }
   object AddLineOptions {
     
-    @scala.inline
-    def apply(coords: js.Array[js.Tuple2[Double, Double]]): AddLineOptions = {
+    inline def apply(coords: js.Array[js.Tuple2[Double, Double]]): AddLineOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddLineOptions]
     }
     
-    @scala.inline
-    implicit class AddLineOptionsMutableBuilder[Self <: AddLineOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AddLineOptions](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCoords(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+      inline def setCoords(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "coords", js.Array(value :_*))
+      inline def setCoordsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "coords", js.Array(value :_*))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -75,38 +67,28 @@ object mod {
   }
   object AddMarkerOptions {
     
-    @scala.inline
-    def apply(coord: js.Tuple2[Double, Double], height: Double, img: String, width: Double): AddMarkerOptions = {
+    inline def apply(coord: js.Tuple2[Double, Double], height: Double, img: String, width: Double): AddMarkerOptions = {
       val __obj = js.Dynamic.literal(coord = coord.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddMarkerOptions]
     }
     
-    @scala.inline
-    implicit class AddMarkerOptionsMutableBuilder[Self <: AddMarkerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AddMarkerOptions](x: Self) {
       
-      @scala.inline
-      def setCoord(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
+      inline def setCoord(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+      inline def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+      inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
       
-      @scala.inline
-      def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+      inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,38 +104,28 @@ object mod {
   }
   object AddMultiPolygonOptions {
     
-    @scala.inline
-    def apply(coords: js.Array[js.Array[js.Tuple2[Double, Double]]]): AddMultiPolygonOptions = {
+    inline def apply(coords: js.Array[js.Array[js.Tuple2[Double, Double]]]): AddMultiPolygonOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddMultiPolygonOptions]
     }
     
-    @scala.inline
-    implicit class AddMultiPolygonOptionsMutableBuilder[Self <: AddMultiPolygonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AddMultiPolygonOptions](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCoords(value: js.Array[js.Array[js.Tuple2[Double, Double]]]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+      inline def setCoords(value: js.Array[js.Array[js.Tuple2[Double, Double]]]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordsVarargs(value: (js.Array[js.Tuple2[Double, Double]])*): Self = StObject.set(x, "coords", js.Array(value :_*))
+      inline def setCoordsVarargs(value: (js.Array[js.Tuple2[Double, Double]])*): Self = StObject.set(x, "coords", js.Array(value :_*))
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -165,20 +137,16 @@ object mod {
   }
   object AddPolygonOptions {
     
-    @scala.inline
-    def apply(coords: js.Array[js.Tuple2[Double, Double]]): AddPolygonOptions = {
+    inline def apply(coords: js.Array[js.Tuple2[Double, Double]]): AddPolygonOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddPolygonOptions]
     }
     
-    @scala.inline
-    implicit class AddPolygonOptionsMutableBuilder[Self <: AddPolygonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AddPolygonOptions](x: Self) {
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     }
   }
   
@@ -206,56 +174,40 @@ object mod {
   }
   object AddTextOptions {
     
-    @scala.inline
-    def apply(coord: js.Tuple2[Double, Double], text: String): AddTextOptions = {
+    inline def apply(coord: js.Tuple2[Double, Double], text: String): AddTextOptions = {
       val __obj = js.Dynamic.literal(coord = coord.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddTextOptions]
     }
     
-    @scala.inline
-    implicit class AddTextOptionsMutableBuilder[Self <: AddTextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AddTextOptions](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: TextAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: TextAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCoord(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
+      inline def setCoord(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -350,89 +302,62 @@ object mod {
   }
   object StaticMapsOptions {
     
-    @scala.inline
-    def apply(height: Double, width: Double): StaticMapsOptions = {
+    inline def apply(height: Double, width: Double): StaticMapsOptions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[StaticMapsOptions]
     }
     
-    @scala.inline
-    implicit class StaticMapsOptionsMutableBuilder[Self <: StaticMapsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StaticMapsOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+      inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
       
-      @scala.inline
-      def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+      inline def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
+      inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
       
-      @scala.inline
-      def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+      inline def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
+      inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
       
-      @scala.inline
-      def setReverseY(value: Boolean): Self = StObject.set(x, "reverseY", value.asInstanceOf[js.Any])
+      inline def setReverseY(value: Boolean): Self = StObject.set(x, "reverseY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseYUndefined: Self = StObject.set(x, "reverseY", js.undefined)
+      inline def setReverseYUndefined: Self = StObject.set(x, "reverseY", js.undefined)
       
-      @scala.inline
-      def setSubdomains(value: js.Array[String]): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
+      inline def setSubdomains(value: js.Array[String]): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
+      inline def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
       
-      @scala.inline
-      def setSubdomainsVarargs(value: String*): Self = StObject.set(x, "subdomains", js.Array(value :_*))
+      inline def setSubdomainsVarargs(value: String*): Self = StObject.set(x, "subdomains", js.Array(value :_*))
       
-      @scala.inline
-      def setTileRequestHeader(value: js.Object): Self = StObject.set(x, "tileRequestHeader", value.asInstanceOf[js.Any])
+      inline def setTileRequestHeader(value: js.Object): Self = StObject.set(x, "tileRequestHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileRequestHeaderUndefined: Self = StObject.set(x, "tileRequestHeader", js.undefined)
+      inline def setTileRequestHeaderUndefined: Self = StObject.set(x, "tileRequestHeader", js.undefined)
       
-      @scala.inline
-      def setTileRequestLimit(value: Double): Self = StObject.set(x, "tileRequestLimit", value.asInstanceOf[js.Any])
+      inline def setTileRequestLimit(value: Double): Self = StObject.set(x, "tileRequestLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileRequestLimitUndefined: Self = StObject.set(x, "tileRequestLimit", js.undefined)
+      inline def setTileRequestLimitUndefined: Self = StObject.set(x, "tileRequestLimit", js.undefined)
       
-      @scala.inline
-      def setTileRequestTimeout(value: Double): Self = StObject.set(x, "tileRequestTimeout", value.asInstanceOf[js.Any])
+      inline def setTileRequestTimeout(value: Double): Self = StObject.set(x, "tileRequestTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileRequestTimeoutUndefined: Self = StObject.set(x, "tileRequestTimeout", js.undefined)
+      inline def setTileRequestTimeoutUndefined: Self = StObject.set(x, "tileRequestTimeout", js.undefined)
       
-      @scala.inline
-      def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+      inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+      inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
       
-      @scala.inline
-      def setTileUrl(value: String): Self = StObject.set(x, "tileUrl", value.asInstanceOf[js.Any])
+      inline def setTileUrl(value: String): Self = StObject.set(x, "tileUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileUrlUndefined: Self = StObject.set(x, "tileUrl", js.undefined)
+      inline def setTileUrlUndefined: Self = StObject.set(x, "tileUrl", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomRange(value: Max): Self = StObject.set(x, "zoomRange", value.asInstanceOf[js.Any])
+      inline def setZoomRange(value: Max): Self = StObject.set(x, "zoomRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomRangeUndefined: Self = StObject.set(x, "zoomRange", js.undefined)
+      inline def setZoomRangeUndefined: Self = StObject.set(x, "zoomRange", js.undefined)
     }
   }
   
@@ -444,14 +369,11 @@ object mod {
   trait TextAnchor extends StObject
   object TextAnchor {
     
-    @scala.inline
-    def end: typings.staticmaps.staticmapsStrings.end = "end".asInstanceOf[typings.staticmaps.staticmapsStrings.end]
+    inline def end: typings.staticmaps.staticmapsStrings.end = "end".asInstanceOf[typings.staticmaps.staticmapsStrings.end]
     
-    @scala.inline
-    def middle: typings.staticmaps.staticmapsStrings.middle = "middle".asInstanceOf[typings.staticmaps.staticmapsStrings.middle]
+    inline def middle: typings.staticmaps.staticmapsStrings.middle = "middle".asInstanceOf[typings.staticmaps.staticmapsStrings.middle]
     
-    @scala.inline
-    def start: typings.staticmaps.staticmapsStrings.start = "start".asInstanceOf[typings.staticmaps.staticmapsStrings.start]
+    inline def start: typings.staticmaps.staticmapsStrings.start = "start".asInstanceOf[typings.staticmaps.staticmapsStrings.start]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -482,73 +404,50 @@ object mod {
   trait ZoomLevel extends StObject
   object ZoomLevel {
     
-    @scala.inline
-    def `1`: typings.staticmaps.staticmapsNumbers.`1` = 1.asInstanceOf[typings.staticmaps.staticmapsNumbers.`1`]
+    inline def `1`: typings.staticmaps.staticmapsNumbers.`1` = 1.asInstanceOf[typings.staticmaps.staticmapsNumbers.`1`]
     
-    @scala.inline
-    def `10`: typings.staticmaps.staticmapsNumbers.`10` = 10.asInstanceOf[typings.staticmaps.staticmapsNumbers.`10`]
+    inline def `10`: typings.staticmaps.staticmapsNumbers.`10` = 10.asInstanceOf[typings.staticmaps.staticmapsNumbers.`10`]
     
-    @scala.inline
-    def `11`: typings.staticmaps.staticmapsNumbers.`11` = 11.asInstanceOf[typings.staticmaps.staticmapsNumbers.`11`]
+    inline def `11`: typings.staticmaps.staticmapsNumbers.`11` = 11.asInstanceOf[typings.staticmaps.staticmapsNumbers.`11`]
     
-    @scala.inline
-    def `12`: typings.staticmaps.staticmapsNumbers.`12` = 12.asInstanceOf[typings.staticmaps.staticmapsNumbers.`12`]
+    inline def `12`: typings.staticmaps.staticmapsNumbers.`12` = 12.asInstanceOf[typings.staticmaps.staticmapsNumbers.`12`]
     
-    @scala.inline
-    def `13`: typings.staticmaps.staticmapsNumbers.`13` = 13.asInstanceOf[typings.staticmaps.staticmapsNumbers.`13`]
+    inline def `13`: typings.staticmaps.staticmapsNumbers.`13` = 13.asInstanceOf[typings.staticmaps.staticmapsNumbers.`13`]
     
-    @scala.inline
-    def `14`: typings.staticmaps.staticmapsNumbers.`14` = 14.asInstanceOf[typings.staticmaps.staticmapsNumbers.`14`]
+    inline def `14`: typings.staticmaps.staticmapsNumbers.`14` = 14.asInstanceOf[typings.staticmaps.staticmapsNumbers.`14`]
     
-    @scala.inline
-    def `15`: typings.staticmaps.staticmapsNumbers.`15` = 15.asInstanceOf[typings.staticmaps.staticmapsNumbers.`15`]
+    inline def `15`: typings.staticmaps.staticmapsNumbers.`15` = 15.asInstanceOf[typings.staticmaps.staticmapsNumbers.`15`]
     
-    @scala.inline
-    def `16`: typings.staticmaps.staticmapsNumbers.`16` = 16.asInstanceOf[typings.staticmaps.staticmapsNumbers.`16`]
+    inline def `16`: typings.staticmaps.staticmapsNumbers.`16` = 16.asInstanceOf[typings.staticmaps.staticmapsNumbers.`16`]
     
-    @scala.inline
-    def `17`: typings.staticmaps.staticmapsNumbers.`17` = 17.asInstanceOf[typings.staticmaps.staticmapsNumbers.`17`]
+    inline def `17`: typings.staticmaps.staticmapsNumbers.`17` = 17.asInstanceOf[typings.staticmaps.staticmapsNumbers.`17`]
     
-    @scala.inline
-    def `18`: typings.staticmaps.staticmapsNumbers.`18` = 18.asInstanceOf[typings.staticmaps.staticmapsNumbers.`18`]
+    inline def `18`: typings.staticmaps.staticmapsNumbers.`18` = 18.asInstanceOf[typings.staticmaps.staticmapsNumbers.`18`]
     
-    @scala.inline
-    def `19`: typings.staticmaps.staticmapsNumbers.`19` = 19.asInstanceOf[typings.staticmaps.staticmapsNumbers.`19`]
+    inline def `19`: typings.staticmaps.staticmapsNumbers.`19` = 19.asInstanceOf[typings.staticmaps.staticmapsNumbers.`19`]
     
-    @scala.inline
-    def `2`: typings.staticmaps.staticmapsNumbers.`2` = 2.asInstanceOf[typings.staticmaps.staticmapsNumbers.`2`]
+    inline def `2`: typings.staticmaps.staticmapsNumbers.`2` = 2.asInstanceOf[typings.staticmaps.staticmapsNumbers.`2`]
     
-    @scala.inline
-    def `20`: typings.staticmaps.staticmapsNumbers.`20` = 20.asInstanceOf[typings.staticmaps.staticmapsNumbers.`20`]
+    inline def `20`: typings.staticmaps.staticmapsNumbers.`20` = 20.asInstanceOf[typings.staticmaps.staticmapsNumbers.`20`]
     
-    @scala.inline
-    def `21`: typings.staticmaps.staticmapsNumbers.`21` = 21.asInstanceOf[typings.staticmaps.staticmapsNumbers.`21`]
+    inline def `21`: typings.staticmaps.staticmapsNumbers.`21` = 21.asInstanceOf[typings.staticmaps.staticmapsNumbers.`21`]
     
-    @scala.inline
-    def `22`: typings.staticmaps.staticmapsNumbers.`22` = 22.asInstanceOf[typings.staticmaps.staticmapsNumbers.`22`]
+    inline def `22`: typings.staticmaps.staticmapsNumbers.`22` = 22.asInstanceOf[typings.staticmaps.staticmapsNumbers.`22`]
     
-    @scala.inline
-    def `23`: typings.staticmaps.staticmapsNumbers.`23` = 23.asInstanceOf[typings.staticmaps.staticmapsNumbers.`23`]
+    inline def `23`: typings.staticmaps.staticmapsNumbers.`23` = 23.asInstanceOf[typings.staticmaps.staticmapsNumbers.`23`]
     
-    @scala.inline
-    def `3`: typings.staticmaps.staticmapsNumbers.`3` = 3.asInstanceOf[typings.staticmaps.staticmapsNumbers.`3`]
+    inline def `3`: typings.staticmaps.staticmapsNumbers.`3` = 3.asInstanceOf[typings.staticmaps.staticmapsNumbers.`3`]
     
-    @scala.inline
-    def `4`: typings.staticmaps.staticmapsNumbers.`4` = 4.asInstanceOf[typings.staticmaps.staticmapsNumbers.`4`]
+    inline def `4`: typings.staticmaps.staticmapsNumbers.`4` = 4.asInstanceOf[typings.staticmaps.staticmapsNumbers.`4`]
     
-    @scala.inline
-    def `5`: typings.staticmaps.staticmapsNumbers.`5` = 5.asInstanceOf[typings.staticmaps.staticmapsNumbers.`5`]
+    inline def `5`: typings.staticmaps.staticmapsNumbers.`5` = 5.asInstanceOf[typings.staticmaps.staticmapsNumbers.`5`]
     
-    @scala.inline
-    def `6`: typings.staticmaps.staticmapsNumbers.`6` = 6.asInstanceOf[typings.staticmaps.staticmapsNumbers.`6`]
+    inline def `6`: typings.staticmaps.staticmapsNumbers.`6` = 6.asInstanceOf[typings.staticmaps.staticmapsNumbers.`6`]
     
-    @scala.inline
-    def `7`: typings.staticmaps.staticmapsNumbers.`7` = 7.asInstanceOf[typings.staticmaps.staticmapsNumbers.`7`]
+    inline def `7`: typings.staticmaps.staticmapsNumbers.`7` = 7.asInstanceOf[typings.staticmaps.staticmapsNumbers.`7`]
     
-    @scala.inline
-    def `8`: typings.staticmaps.staticmapsNumbers.`8` = 8.asInstanceOf[typings.staticmaps.staticmapsNumbers.`8`]
+    inline def `8`: typings.staticmaps.staticmapsNumbers.`8` = 8.asInstanceOf[typings.staticmaps.staticmapsNumbers.`8`]
     
-    @scala.inline
-    def `9`: typings.staticmaps.staticmapsNumbers.`9` = 9.asInstanceOf[typings.staticmaps.staticmapsNumbers.`9`]
+    inline def `9`: typings.staticmaps.staticmapsNumbers.`9` = 9.asInstanceOf[typings.staticmaps.staticmapsNumbers.`9`]
   }
 }

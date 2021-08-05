@@ -28,34 +28,25 @@ trait TableResource extends StObject {
 }
 object TableResource {
   
-  @scala.inline
-  def apply(DatabaseName: NameString): TableResource = {
+  inline def apply(DatabaseName: NameString): TableResource = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableResource]
   }
   
-  @scala.inline
-  implicit class TableResourceMutableBuilder[Self <: TableResource] (val x: Self) extends AnyVal {
+  extension [Self <: TableResource](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setTableWildcard(value: TableWildcard): Self = StObject.set(x, "TableWildcard", value.asInstanceOf[js.Any])
+    inline def setTableWildcard(value: TableWildcard): Self = StObject.set(x, "TableWildcard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableWildcardUndefined: Self = StObject.set(x, "TableWildcard", js.undefined)
+    inline def setTableWildcardUndefined: Self = StObject.set(x, "TableWildcard", js.undefined)
   }
 }

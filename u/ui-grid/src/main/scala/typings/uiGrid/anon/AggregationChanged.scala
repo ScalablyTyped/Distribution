@@ -25,8 +25,7 @@ trait AggregationChanged[TEntity] extends StObject {
 }
 object AggregationChanged {
   
-  @scala.inline
-  def apply[TEntity](
+  inline def apply[TEntity](
     aggregationChanged: (IScope, aggregationChangedHandler[TEntity]) => Unit,
     groupingChanged: (IScope, groupingChangedHandler[TEntity]) => Unit
   ): AggregationChanged[TEntity] = {
@@ -34,13 +33,10 @@ object AggregationChanged {
     __obj.asInstanceOf[AggregationChanged[TEntity]]
   }
   
-  @scala.inline
-  implicit class AggregationChangedMutableBuilder[Self <: AggregationChanged[?], TEntity] (val x: Self & AggregationChanged[TEntity]) extends AnyVal {
+  extension [Self <: AggregationChanged[?], TEntity](x: Self & AggregationChanged[TEntity]) {
     
-    @scala.inline
-    def setAggregationChanged(value: (IScope, aggregationChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "aggregationChanged", js.Any.fromFunction2(value))
+    inline def setAggregationChanged(value: (IScope, aggregationChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "aggregationChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGroupingChanged(value: (IScope, groupingChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "groupingChanged", js.Any.fromFunction2(value))
+    inline def setGroupingChanged(value: (IScope, groupingChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "groupingChanged", js.Any.fromFunction2(value))
   }
 }

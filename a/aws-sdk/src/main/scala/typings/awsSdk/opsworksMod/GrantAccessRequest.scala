@@ -18,22 +18,17 @@ trait GrantAccessRequest extends StObject {
 }
 object GrantAccessRequest {
   
-  @scala.inline
-  def apply(InstanceId: String): GrantAccessRequest = {
+  inline def apply(InstanceId: String): GrantAccessRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrantAccessRequest]
   }
   
-  @scala.inline
-  implicit class GrantAccessRequestMutableBuilder[Self <: GrantAccessRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GrantAccessRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidForInMinutes(value: ValidForInMinutes): Self = StObject.set(x, "ValidForInMinutes", value.asInstanceOf[js.Any])
+    inline def setValidForInMinutes(value: ValidForInMinutes): Self = StObject.set(x, "ValidForInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidForInMinutesUndefined: Self = StObject.set(x, "ValidForInMinutes", js.undefined)
+    inline def setValidForInMinutesUndefined: Self = StObject.set(x, "ValidForInMinutes", js.undefined)
   }
 }

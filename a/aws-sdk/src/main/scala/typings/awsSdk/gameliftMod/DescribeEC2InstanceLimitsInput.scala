@@ -13,19 +13,15 @@ trait DescribeEC2InstanceLimitsInput extends StObject {
 }
 object DescribeEC2InstanceLimitsInput {
   
-  @scala.inline
-  def apply(): DescribeEC2InstanceLimitsInput = {
+  inline def apply(): DescribeEC2InstanceLimitsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEC2InstanceLimitsInput]
   }
   
-  @scala.inline
-  implicit class DescribeEC2InstanceLimitsInputMutableBuilder[Self <: DescribeEC2InstanceLimitsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEC2InstanceLimitsInput](x: Self) {
     
-    @scala.inline
-    def setEC2InstanceType(value: EC2InstanceType): Self = StObject.set(x, "EC2InstanceType", value.asInstanceOf[js.Any])
+    inline def setEC2InstanceType(value: EC2InstanceType): Self = StObject.set(x, "EC2InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2InstanceTypeUndefined: Self = StObject.set(x, "EC2InstanceType", js.undefined)
+    inline def setEC2InstanceTypeUndefined: Self = StObject.set(x, "EC2InstanceType", js.undefined)
   }
 }

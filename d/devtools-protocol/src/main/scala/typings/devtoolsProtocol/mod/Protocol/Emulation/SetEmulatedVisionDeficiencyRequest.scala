@@ -19,17 +19,14 @@ trait SetEmulatedVisionDeficiencyRequest extends StObject {
 }
 object SetEmulatedVisionDeficiencyRequest {
   
-  @scala.inline
-  def apply(`type`: none_ | achromatopsia | blurredVision | deuteranopia | protanopia | tritanopia): SetEmulatedVisionDeficiencyRequest = {
+  inline def apply(`type`: none_ | achromatopsia | blurredVision | deuteranopia | protanopia | tritanopia): SetEmulatedVisionDeficiencyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetEmulatedVisionDeficiencyRequest]
   }
   
-  @scala.inline
-  implicit class SetEmulatedVisionDeficiencyRequestMutableBuilder[Self <: SetEmulatedVisionDeficiencyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetEmulatedVisionDeficiencyRequest](x: Self) {
     
-    @scala.inline
-    def setType(value: none_ | achromatopsia | blurredVision | deuteranopia | protanopia | tritanopia): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: none_ | achromatopsia | blurredVision | deuteranopia | protanopia | tritanopia): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

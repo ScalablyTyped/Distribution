@@ -16,23 +16,18 @@ object anon {
   }
   object Auth {
     
-    @scala.inline
-    def apply(auth: String, perms: Double, scheme: String): Auth = {
+    inline def apply(auth: String, perms: Double, scheme: String): Auth = {
       val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], perms = perms.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
       __obj.asInstanceOf[Auth]
     }
     
-    @scala.inline
-    implicit class AuthMutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
+    extension [Self <: Auth](x: Self) {
       
-      @scala.inline
-      def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerms(value: Double): Self = StObject.set(x, "perms", value.asInstanceOf[js.Any])
+      inline def setPerms(value: Double): Self = StObject.set(x, "perms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     }
   }
 }

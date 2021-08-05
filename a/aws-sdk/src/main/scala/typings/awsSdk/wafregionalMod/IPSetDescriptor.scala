@@ -18,19 +18,15 @@ trait IPSetDescriptor extends StObject {
 }
 object IPSetDescriptor {
   
-  @scala.inline
-  def apply(Type: IPSetDescriptorType, Value: IPSetDescriptorValue): IPSetDescriptor = {
+  inline def apply(Type: IPSetDescriptorType, Value: IPSetDescriptorValue): IPSetDescriptor = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPSetDescriptor]
   }
   
-  @scala.inline
-  implicit class IPSetDescriptorMutableBuilder[Self <: IPSetDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: IPSetDescriptor](x: Self) {
     
-    @scala.inline
-    def setType(value: IPSetDescriptorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: IPSetDescriptorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: IPSetDescriptorValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: IPSetDescriptorValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

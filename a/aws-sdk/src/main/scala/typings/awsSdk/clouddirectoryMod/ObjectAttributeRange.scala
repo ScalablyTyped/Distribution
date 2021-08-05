@@ -18,25 +18,19 @@ trait ObjectAttributeRange extends StObject {
 }
 object ObjectAttributeRange {
   
-  @scala.inline
-  def apply(): ObjectAttributeRange = {
+  inline def apply(): ObjectAttributeRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectAttributeRange]
   }
   
-  @scala.inline
-  implicit class ObjectAttributeRangeMutableBuilder[Self <: ObjectAttributeRange] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectAttributeRange](x: Self) {
     
-    @scala.inline
-    def setAttributeKey(value: AttributeKey): Self = StObject.set(x, "AttributeKey", value.asInstanceOf[js.Any])
+    inline def setAttributeKey(value: AttributeKey): Self = StObject.set(x, "AttributeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeKeyUndefined: Self = StObject.set(x, "AttributeKey", js.undefined)
+    inline def setAttributeKeyUndefined: Self = StObject.set(x, "AttributeKey", js.undefined)
     
-    @scala.inline
-    def setRange(value: TypedAttributeValueRange): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: TypedAttributeValueRange): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "Range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "Range", js.undefined)
   }
 }

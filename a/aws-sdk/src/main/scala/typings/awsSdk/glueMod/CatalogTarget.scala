@@ -18,22 +18,17 @@ trait CatalogTarget extends StObject {
 }
 object CatalogTarget {
   
-  @scala.inline
-  def apply(DatabaseName: NameString, Tables: CatalogTablesList): CatalogTarget = {
+  inline def apply(DatabaseName: NameString, Tables: CatalogTablesList): CatalogTarget = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], Tables = Tables.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatalogTarget]
   }
   
-  @scala.inline
-  implicit class CatalogTargetMutableBuilder[Self <: CatalogTarget] (val x: Self) extends AnyVal {
+  extension [Self <: CatalogTarget](x: Self) {
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTables(value: CatalogTablesList): Self = StObject.set(x, "Tables", value.asInstanceOf[js.Any])
+    inline def setTables(value: CatalogTablesList): Self = StObject.set(x, "Tables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesVarargs(value: NameString*): Self = StObject.set(x, "Tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: NameString*): Self = StObject.set(x, "Tables", js.Array(value :_*))
   }
 }

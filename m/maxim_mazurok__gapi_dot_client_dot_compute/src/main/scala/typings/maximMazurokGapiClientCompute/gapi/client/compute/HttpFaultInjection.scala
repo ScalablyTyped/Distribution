@@ -14,25 +14,19 @@ trait HttpFaultInjection extends StObject {
 }
 object HttpFaultInjection {
   
-  @scala.inline
-  def apply(): HttpFaultInjection = {
+  inline def apply(): HttpFaultInjection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpFaultInjection]
   }
   
-  @scala.inline
-  implicit class HttpFaultInjectionMutableBuilder[Self <: HttpFaultInjection] (val x: Self) extends AnyVal {
+  extension [Self <: HttpFaultInjection](x: Self) {
     
-    @scala.inline
-    def setAbort(value: HttpFaultAbort): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
+    inline def setAbort(value: HttpFaultAbort): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
+    inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     
-    @scala.inline
-    def setDelay(value: HttpFaultDelay): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: HttpFaultDelay): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
   }
 }

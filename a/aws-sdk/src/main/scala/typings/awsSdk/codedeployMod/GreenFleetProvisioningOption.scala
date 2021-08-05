@@ -13,19 +13,15 @@ trait GreenFleetProvisioningOption extends StObject {
 }
 object GreenFleetProvisioningOption {
   
-  @scala.inline
-  def apply(): GreenFleetProvisioningOption = {
+  inline def apply(): GreenFleetProvisioningOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GreenFleetProvisioningOption]
   }
   
-  @scala.inline
-  implicit class GreenFleetProvisioningOptionMutableBuilder[Self <: GreenFleetProvisioningOption] (val x: Self) extends AnyVal {
+  extension [Self <: GreenFleetProvisioningOption](x: Self) {
     
-    @scala.inline
-    def setAction(value: GreenFleetProvisioningAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: GreenFleetProvisioningAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
   }
 }

@@ -75,10 +75,8 @@ object collapseMod {
       * with a DOM element.
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): Collapse = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Collapse]
-    @scala.inline
-    def getInstance(element: Element, options: PartialOptionsParent): Collapse = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Collapse]
+    inline def getInstance(element: Element): Collapse = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Collapse]
+    inline def getInstance(element: Element, options: PartialOptionsParent): Collapse = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Collapse]
   }
   
   trait Collapse extends StObject {
@@ -111,8 +109,7 @@ object collapseMod {
   }
   object Collapse {
     
-    @scala.inline
-    def apply(dispose: () => Unit, hide: () => Unit, show: () => Unit, toggle: () => Unit): Collapse = {
+    inline def apply(dispose: () => Unit, hide: () => Unit, show: () => Unit, toggle: () => Unit): Collapse = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
       __obj.asInstanceOf[Collapse]
     }
@@ -157,20 +154,15 @@ object collapseMod {
            with Events
     }
     
-    @scala.inline
-    implicit class CollapseMutableBuilder[Self <: Collapse] (val x: Self) extends AnyVal {
+    extension [Self <: Collapse](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     }
     
     trait Options extends StObject {
@@ -194,20 +186,16 @@ object collapseMod {
     }
     object Options {
       
-      @scala.inline
-      def apply(parent: String | Element | JQuery[HTMLElement], toggle: Boolean): Options = {
+      inline def apply(parent: String | Element | JQuery[HTMLElement], toggle: Boolean): Options = {
         val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setParent(value: String | Element | JQuery[HTMLElement]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: String | Element | JQuery[HTMLElement]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+        inline def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
       }
     }
   }

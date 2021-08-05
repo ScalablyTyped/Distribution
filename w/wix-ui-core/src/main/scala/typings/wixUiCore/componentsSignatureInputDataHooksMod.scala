@@ -15,7 +15,6 @@ object componentsSignatureInputDataHooksMod {
     @JSImport("wix-ui-core/dist/standalone/src/components/signature-input/dataHooks", "DataHooks.a11yInput")
     @js.native
     def a11yInput: String = js.native
-    @scala.inline
-    def a11yInput_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a11yInput")(x.asInstanceOf[js.Any])
+    inline def a11yInput_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a11yInput")(x.asInstanceOf[js.Any])
   }
 }

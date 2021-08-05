@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaymentIntentStripeProvidedCancellationReason extends StObject
 object PaymentIntentStripeProvidedCancellationReason {
   
-  @scala.inline
-  def automatic: typings.stripe.stripeStrings.automatic = "automatic".asInstanceOf[typings.stripe.stripeStrings.automatic]
+  inline def automatic: typings.stripe.stripeStrings.automatic = "automatic".asInstanceOf[typings.stripe.stripeStrings.automatic]
   
-  @scala.inline
-  def failed_invoice: typings.stripe.stripeStrings.failed_invoice = "failed_invoice".asInstanceOf[typings.stripe.stripeStrings.failed_invoice]
+  inline def failed_invoice: typings.stripe.stripeStrings.failed_invoice = "failed_invoice".asInstanceOf[typings.stripe.stripeStrings.failed_invoice]
   
-  @scala.inline
-  def void_invoice: typings.stripe.stripeStrings.void_invoice = "void_invoice".asInstanceOf[typings.stripe.stripeStrings.void_invoice]
+  inline def void_invoice: typings.stripe.stripeStrings.void_invoice = "void_invoice".asInstanceOf[typings.stripe.stripeStrings.void_invoice]
 }

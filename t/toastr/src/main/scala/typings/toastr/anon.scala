@@ -34,26 +34,20 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(error: String, info: String, success: String, warning: String): Error = {
+    inline def apply(error: String, info: String, success: String, warning: String): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,17 +57,14 @@ object anon {
   }
   object Force {
     
-    @scala.inline
-    def apply(force: Boolean): Force = {
+    inline def apply(force: Boolean): Force = {
       val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
       __obj.asInstanceOf[Force]
     }
     
-    @scala.inline
-    implicit class ForceMutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
+    extension [Self <: Force](x: Self) {
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     }
   }
 }

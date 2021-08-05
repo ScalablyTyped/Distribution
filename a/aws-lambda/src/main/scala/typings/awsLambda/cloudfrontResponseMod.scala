@@ -18,20 +18,16 @@ object cloudfrontResponseMod {
   }
   object CloudFrontResponseEvent {
     
-    @scala.inline
-    def apply(Records: js.Array[CfCloudFrontEventreadonlyre]): CloudFrontResponseEvent = {
+    inline def apply(Records: js.Array[CfCloudFrontEventreadonlyre]): CloudFrontResponseEvent = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudFrontResponseEvent]
     }
     
-    @scala.inline
-    implicit class CloudFrontResponseEventMutableBuilder[Self <: CloudFrontResponseEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CloudFrontResponseEvent](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[CfCloudFrontEventreadonlyre]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[CfCloudFrontEventreadonlyre]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: CfCloudFrontEventreadonlyre*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: CfCloudFrontEventreadonlyre*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   

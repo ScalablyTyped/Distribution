@@ -21,49 +21,35 @@ trait SpinnerProps extends StObject {
 }
 object SpinnerProps {
   
-  @scala.inline
-  def apply(): SpinnerProps = {
+  inline def apply(): SpinnerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpinnerProps]
   }
   
-  @scala.inline
-  implicit class SpinnerPropsMutableBuilder[Self <: SpinnerProps] (val x: Self) extends AnyVal {
+  extension [Self <: SpinnerProps](x: Self) {
     
-    @scala.inline
-    def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+    inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
+    inline def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setRingColor(value: String): Self = StObject.set(x, "ringColor", value.asInstanceOf[js.Any])
+    inline def setRingColor(value: String): Self = StObject.set(x, "ringColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRingColorUndefined: Self = StObject.set(x, "ringColor", js.undefined)
+    inline def setRingColorUndefined: Self = StObject.set(x, "ringColor", js.undefined)
     
-    @scala.inline
-    def setSize(value: SpinnerSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: SpinnerSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
+    inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
   }
 }

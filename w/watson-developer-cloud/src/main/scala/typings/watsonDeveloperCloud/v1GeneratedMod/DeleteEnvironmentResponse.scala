@@ -15,19 +15,15 @@ trait DeleteEnvironmentResponse extends StObject {
 }
 object DeleteEnvironmentResponse {
   
-  @scala.inline
-  def apply(environment_id: String, status: String): DeleteEnvironmentResponse = {
+  inline def apply(environment_id: String, status: String): DeleteEnvironmentResponse = {
     val __obj = js.Dynamic.literal(environment_id = environment_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEnvironmentResponse]
   }
   
-  @scala.inline
-  implicit class DeleteEnvironmentResponseMutableBuilder[Self <: DeleteEnvironmentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEnvironmentResponse](x: Self) {
     
-    @scala.inline
-    def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
+    inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

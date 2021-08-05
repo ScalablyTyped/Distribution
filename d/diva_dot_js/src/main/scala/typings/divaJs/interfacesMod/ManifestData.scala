@@ -23,8 +23,7 @@ trait ManifestData extends StObject {
 }
 object ManifestData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dims: Ahei,
     item_title: String,
     max_zoom: Double,
@@ -36,34 +35,24 @@ object ManifestData {
     __obj.asInstanceOf[ManifestData]
   }
   
-  @scala.inline
-  implicit class ManifestDataMutableBuilder[Self <: ManifestData] (val x: Self) extends AnyVal {
+  extension [Self <: ManifestData](x: Self) {
     
-    @scala.inline
-    def setDims(value: Ahei): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
+    inline def setDims(value: Ahei): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_title(value: String): Self = StObject.set(x, "item_title", value.asInstanceOf[js.Any])
+    inline def setItem_title(value: String): Self = StObject.set(x, "item_title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_zoom(value: Double): Self = StObject.set(x, "max_zoom", value.asInstanceOf[js.Any])
+    inline def setMax_zoom(value: Double): Self = StObject.set(x, "max_zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaged(value: Boolean): Self = StObject.set(x, "paged", value.asInstanceOf[js.Any])
+    inline def setPaged(value: Boolean): Self = StObject.set(x, "paged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPgs(value: js.Array[Page]): Self = StObject.set(x, "pgs", value.asInstanceOf[js.Any])
+    inline def setPgs(value: js.Array[Page]): Self = StObject.set(x, "pgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPgsVarargs(value: Page*): Self = StObject.set(x, "pgs", js.Array(value :_*))
+    inline def setPgsVarargs(value: Page*): Self = StObject.set(x, "pgs", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

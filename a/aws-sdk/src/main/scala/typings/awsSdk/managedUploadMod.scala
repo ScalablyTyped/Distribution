@@ -59,8 +59,7 @@ object managedUploadMod {
     @JSImport("aws-sdk/lib/s3/managed_upload", "ManagedUpload.maxTotalParts")
     @js.native
     def maxTotalParts: Double = js.native
-    @scala.inline
-    def maxTotalParts_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxTotalParts")(x.asInstanceOf[js.Any])
+    inline def maxTotalParts_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxTotalParts")(x.asInstanceOf[js.Any])
     
     /**
       * Returns the minimum number of bytes for an individual part upload.
@@ -70,8 +69,7 @@ object managedUploadMod {
     @JSImport("aws-sdk/lib/s3/managed_upload", "ManagedUpload.minPartSize")
     @js.native
     def minPartSize: Double = js.native
-    @scala.inline
-    def minPartSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minPartSize")(x.asInstanceOf[js.Any])
+    inline def minPartSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minPartSize")(x.asInstanceOf[js.Any])
     
     trait ManagedUploadOptions extends StObject {
       
@@ -112,53 +110,38 @@ object managedUploadMod {
     }
     object ManagedUploadOptions {
       
-      @scala.inline
-      def apply(): ManagedUploadOptions = {
+      inline def apply(): ManagedUploadOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ManagedUploadOptions]
       }
       
-      @scala.inline
-      implicit class ManagedUploadOptionsMutableBuilder[Self <: ManagedUploadOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ManagedUploadOptions](x: Self) {
         
-        @scala.inline
-        def setLeavePartsOnError(value: Boolean): Self = StObject.set(x, "leavePartsOnError", value.asInstanceOf[js.Any])
+        inline def setLeavePartsOnError(value: Boolean): Self = StObject.set(x, "leavePartsOnError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeavePartsOnErrorUndefined: Self = StObject.set(x, "leavePartsOnError", js.undefined)
+        inline def setLeavePartsOnErrorUndefined: Self = StObject.set(x, "leavePartsOnError", js.undefined)
         
-        @scala.inline
-        def setParams(value: PutObjectRequest): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: PutObjectRequest): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+        inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
-        @scala.inline
-        def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
+        inline def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
+        inline def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
         
-        @scala.inline
-        def setQueueSize(value: Double): Self = StObject.set(x, "queueSize", value.asInstanceOf[js.Any])
+        inline def setQueueSize(value: Double): Self = StObject.set(x, "queueSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQueueSizeUndefined: Self = StObject.set(x, "queueSize", js.undefined)
+        inline def setQueueSizeUndefined: Self = StObject.set(x, "queueSize", js.undefined)
         
-        @scala.inline
-        def setService(value: typings.awsSdk.s3Mod.^): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+        inline def setService(value: typings.awsSdk.s3Mod.^): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+        inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
         
-        @scala.inline
-        def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+        inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+        inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
         
-        @scala.inline
-        def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+        inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
       }
     }
     
@@ -170,20 +153,16 @@ object managedUploadMod {
     }
     object Progress {
       
-      @scala.inline
-      def apply(loaded: Double, total: Double): Progress = {
+      inline def apply(loaded: Double, total: Double): Progress = {
         val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
         __obj.asInstanceOf[Progress]
       }
       
-      @scala.inline
-      implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+      extension [Self <: Progress](x: Self) {
         
-        @scala.inline
-        def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+        inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+        inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       }
     }
     
@@ -211,26 +190,20 @@ object managedUploadMod {
     }
     object SendData {
       
-      @scala.inline
-      def apply(Bucket: String, ETag: String, Key: String, Location: String): SendData = {
+      inline def apply(Bucket: String, ETag: String, Key: String, Location: String): SendData = {
         val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], ETag = ETag.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], Location = Location.asInstanceOf[js.Any])
         __obj.asInstanceOf[SendData]
       }
       
-      @scala.inline
-      implicit class SendDataMutableBuilder[Self <: SendData] (val x: Self) extends AnyVal {
+      extension [Self <: SendData](x: Self) {
         
-        @scala.inline
-        def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+        inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+        inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -23,8 +23,7 @@ trait XLibraryContainer3
 }
 object XLibraryContainer3 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -51,10 +50,8 @@ object XLibraryContainer3 {
     __obj.asInstanceOf[XLibraryContainer3]
   }
   
-  @scala.inline
-  implicit class XLibraryContainer3MutableBuilder[Self <: XLibraryContainer3] (val x: Self) extends AnyVal {
+  extension [Self <: XLibraryContainer3](x: Self) {
     
-    @scala.inline
-    def setGetOriginalLibraryLinkURL(value: String => String): Self = StObject.set(x, "getOriginalLibraryLinkURL", js.Any.fromFunction1(value))
+    inline def setGetOriginalLibraryLinkURL(value: String => String): Self = StObject.set(x, "getOriginalLibraryLinkURL", js.Any.fromFunction1(value))
   }
 }

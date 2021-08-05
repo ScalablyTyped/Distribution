@@ -55,8 +55,7 @@ object generateMod {
   }
   object GenerateConfig {
     
-    @scala.inline
-    def apply[DateType](
+    inline def apply[DateType](
       addDate: (DateType, Double) => DateType,
       addMonth: (DateType, Double) => DateType,
       addYear: (DateType, Double) => DateType,
@@ -84,74 +83,51 @@ object generateMod {
       __obj.asInstanceOf[GenerateConfig[DateType]]
     }
     
-    @scala.inline
-    implicit class GenerateConfigMutableBuilder[Self <: GenerateConfig[?], DateType] (val x: Self & GenerateConfig[DateType]) extends AnyVal {
+    extension [Self <: GenerateConfig[?], DateType](x: Self & GenerateConfig[DateType]) {
       
-      @scala.inline
-      def setAddDate(value: (DateType, Double) => DateType): Self = StObject.set(x, "addDate", js.Any.fromFunction2(value))
+      inline def setAddDate(value: (DateType, Double) => DateType): Self = StObject.set(x, "addDate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddMonth(value: (DateType, Double) => DateType): Self = StObject.set(x, "addMonth", js.Any.fromFunction2(value))
+      inline def setAddMonth(value: (DateType, Double) => DateType): Self = StObject.set(x, "addMonth", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddYear(value: (DateType, Double) => DateType): Self = StObject.set(x, "addYear", js.Any.fromFunction2(value))
+      inline def setAddYear(value: (DateType, Double) => DateType): Self = StObject.set(x, "addYear", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetDate(value: DateType => Double): Self = StObject.set(x, "getDate", js.Any.fromFunction1(value))
+      inline def setGetDate(value: DateType => Double): Self = StObject.set(x, "getDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetEndDate(value: DateType => DateType): Self = StObject.set(x, "getEndDate", js.Any.fromFunction1(value))
+      inline def setGetEndDate(value: DateType => DateType): Self = StObject.set(x, "getEndDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFixedDate(value: String => DateType): Self = StObject.set(x, "getFixedDate", js.Any.fromFunction1(value))
+      inline def setGetFixedDate(value: String => DateType): Self = StObject.set(x, "getFixedDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetHour(value: DateType => Double): Self = StObject.set(x, "getHour", js.Any.fromFunction1(value))
+      inline def setGetHour(value: DateType => Double): Self = StObject.set(x, "getHour", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMinute(value: DateType => Double): Self = StObject.set(x, "getMinute", js.Any.fromFunction1(value))
+      inline def setGetMinute(value: DateType => Double): Self = StObject.set(x, "getMinute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMonth(value: DateType => Double): Self = StObject.set(x, "getMonth", js.Any.fromFunction1(value))
+      inline def setGetMonth(value: DateType => Double): Self = StObject.set(x, "getMonth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNow(value: () => DateType): Self = StObject.set(x, "getNow", js.Any.fromFunction0(value))
+      inline def setGetNow(value: () => DateType): Self = StObject.set(x, "getNow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSecond(value: DateType => Double): Self = StObject.set(x, "getSecond", js.Any.fromFunction1(value))
+      inline def setGetSecond(value: DateType => Double): Self = StObject.set(x, "getSecond", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetWeekDay(value: DateType => Double): Self = StObject.set(x, "getWeekDay", js.Any.fromFunction1(value))
+      inline def setGetWeekDay(value: DateType => Double): Self = StObject.set(x, "getWeekDay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetYear(value: DateType => Double): Self = StObject.set(x, "getYear", js.Any.fromFunction1(value))
+      inline def setGetYear(value: DateType => Double): Self = StObject.set(x, "getYear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsAfter(value: (DateType, DateType) => Boolean): Self = StObject.set(x, "isAfter", js.Any.fromFunction2(value))
+      inline def setIsAfter(value: (DateType, DateType) => Boolean): Self = StObject.set(x, "isAfter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsValidate(value: DateType => Boolean): Self = StObject.set(x, "isValidate", js.Any.fromFunction1(value))
+      inline def setIsValidate(value: DateType => Boolean): Self = StObject.set(x, "isValidate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocale(value: Format[DateType]): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Format[DateType]): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDate(value: (DateType, Double) => DateType): Self = StObject.set(x, "setDate", js.Any.fromFunction2(value))
+      inline def setSetDate(value: (DateType, Double) => DateType): Self = StObject.set(x, "setDate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetHour(value: (DateType, Double) => DateType): Self = StObject.set(x, "setHour", js.Any.fromFunction2(value))
+      inline def setSetHour(value: (DateType, Double) => DateType): Self = StObject.set(x, "setHour", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetMinute(value: (DateType, Double) => DateType): Self = StObject.set(x, "setMinute", js.Any.fromFunction2(value))
+      inline def setSetMinute(value: (DateType, Double) => DateType): Self = StObject.set(x, "setMinute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetMonth(value: (DateType, Double) => DateType): Self = StObject.set(x, "setMonth", js.Any.fromFunction2(value))
+      inline def setSetMonth(value: (DateType, Double) => DateType): Self = StObject.set(x, "setMonth", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetSecond(value: (DateType, Double) => DateType): Self = StObject.set(x, "setSecond", js.Any.fromFunction2(value))
+      inline def setSetSecond(value: (DateType, Double) => DateType): Self = StObject.set(x, "setSecond", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetYear(value: (DateType, Double) => DateType): Self = StObject.set(x, "setYear", js.Any.fromFunction2(value))
+      inline def setSetYear(value: (DateType, Double) => DateType): Self = StObject.set(x, "setYear", js.Any.fromFunction2(value))
     }
   }
 }

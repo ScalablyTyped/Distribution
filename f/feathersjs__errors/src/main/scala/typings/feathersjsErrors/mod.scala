@@ -196,8 +196,7 @@ object mod {
     def this(msg: Error, data: js.Any) = this()
   }
   
-  @scala.inline
-  def convert(error: js.Any): FeathersError = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(error.asInstanceOf[js.Any]).asInstanceOf[FeathersError]
+  inline def convert(error: js.Any): FeathersError = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(error.asInstanceOf[js.Any]).asInstanceOf[FeathersError]
   
   @JSImport("@feathersjs/errors", "errors")
   @js.native
@@ -245,8 +244,7 @@ object mod {
   }
   object Errors_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BadGateway: BadGateway,
       BadRequest: BadRequest,
       Conflict: Conflict,
@@ -269,59 +267,41 @@ object mod {
       __obj.asInstanceOf[Errors_]
     }
     
-    @scala.inline
-    implicit class Errors_MutableBuilder[Self <: Errors_] (val x: Self) extends AnyVal {
+    extension [Self <: Errors_](x: Self) {
       
-      @scala.inline
-      def setBadGateway(value: BadGateway): Self = StObject.set(x, "BadGateway", value.asInstanceOf[js.Any])
+      inline def setBadGateway(value: BadGateway): Self = StObject.set(x, "BadGateway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadRequest(value: BadRequest): Self = StObject.set(x, "BadRequest", value.asInstanceOf[js.Any])
+      inline def setBadRequest(value: BadRequest): Self = StObject.set(x, "BadRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConflict(value: Conflict): Self = StObject.set(x, "Conflict", value.asInstanceOf[js.Any])
+      inline def setConflict(value: Conflict): Self = StObject.set(x, "Conflict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeathersError(value: FeathersError): Self = StObject.set(x, "FeathersError", value.asInstanceOf[js.Any])
+      inline def setFeathersError(value: FeathersError): Self = StObject.set(x, "FeathersError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForbidden(value: Forbidden): Self = StObject.set(x, "Forbidden", value.asInstanceOf[js.Any])
+      inline def setForbidden(value: Forbidden): Self = StObject.set(x, "Forbidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneralError(value: GeneralError): Self = StObject.set(x, "GeneralError", value.asInstanceOf[js.Any])
+      inline def setGeneralError(value: GeneralError): Self = StObject.set(x, "GeneralError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthRequired(value: LengthRequired): Self = StObject.set(x, "LengthRequired", value.asInstanceOf[js.Any])
+      inline def setLengthRequired(value: LengthRequired): Self = StObject.set(x, "LengthRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodNotAllowed(value: MethodNotAllowed): Self = StObject.set(x, "MethodNotAllowed", value.asInstanceOf[js.Any])
+      inline def setMethodNotAllowed(value: MethodNotAllowed): Self = StObject.set(x, "MethodNotAllowed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotAcceptable(value: NotAcceptable): Self = StObject.set(x, "NotAcceptable", value.asInstanceOf[js.Any])
+      inline def setNotAcceptable(value: NotAcceptable): Self = StObject.set(x, "NotAcceptable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotAuthenticated(value: NotAuthenticated): Self = StObject.set(x, "NotAuthenticated", value.asInstanceOf[js.Any])
+      inline def setNotAuthenticated(value: NotAuthenticated): Self = StObject.set(x, "NotAuthenticated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotFound(value: NotFound): Self = StObject.set(x, "NotFound", value.asInstanceOf[js.Any])
+      inline def setNotFound(value: NotFound): Self = StObject.set(x, "NotFound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotImplemented(value: NotImplemented): Self = StObject.set(x, "NotImplemented", value.asInstanceOf[js.Any])
+      inline def setNotImplemented(value: NotImplemented): Self = StObject.set(x, "NotImplemented", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaymentError(value: PaymentError): Self = StObject.set(x, "PaymentError", value.asInstanceOf[js.Any])
+      inline def setPaymentError(value: PaymentError): Self = StObject.set(x, "PaymentError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooManyRequests(value: TooManyRequests): Self = StObject.set(x, "TooManyRequests", value.asInstanceOf[js.Any])
+      inline def setTooManyRequests(value: TooManyRequests): Self = StObject.set(x, "TooManyRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnavailable(value: Unavailable): Self = StObject.set(x, "Unavailable", value.asInstanceOf[js.Any])
+      inline def setUnavailable(value: Unavailable): Self = StObject.set(x, "Unavailable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnprocessable(value: Unprocessable): Self = StObject.set(x, "Unprocessable", value.asInstanceOf[js.Any])
+      inline def setUnprocessable(value: Unprocessable): Self = StObject.set(x, "Unprocessable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -341,32 +321,24 @@ object mod {
   }
   object FeathersErrorJSON {
     
-    @scala.inline
-    def apply(className: String, code: Double, data: js.Any, errors: js.Any, message: String, name: String): FeathersErrorJSON = {
+    inline def apply(className: String, code: Double, data: js.Any, errors: js.Any, message: String, name: String): FeathersErrorJSON = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeathersErrorJSON]
     }
     
-    @scala.inline
-    implicit class FeathersErrorJSONMutableBuilder[Self <: FeathersErrorJSON] (val x: Self) extends AnyVal {
+    extension [Self <: FeathersErrorJSON](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

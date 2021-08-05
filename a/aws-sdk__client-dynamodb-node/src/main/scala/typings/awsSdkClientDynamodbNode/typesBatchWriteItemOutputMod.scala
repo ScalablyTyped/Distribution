@@ -39,38 +39,28 @@ object typesBatchWriteItemOutputMod {
   }
   object BatchWriteItemOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): BatchWriteItemOutput = {
+    inline def apply($metadata: ResponseMetadata): BatchWriteItemOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[BatchWriteItemOutput]
     }
     
-    @scala.inline
-    implicit class BatchWriteItemOutputMutableBuilder[Self <: BatchWriteItemOutput] (val x: Self) extends AnyVal {
+    extension [Self <: BatchWriteItemOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacity(value: js.Array[UnmarshalledConsumedCapacity]): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: js.Array[UnmarshalledConsumedCapacity]): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setConsumedCapacityVarargs(value: UnmarshalledConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
+      inline def setConsumedCapacityVarargs(value: UnmarshalledConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
       
-      @scala.inline
-      def setItemCollectionMetrics(value: StringDictionary[js.Array[UnmarshalledItemCollectionMetrics]]): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
+      inline def setItemCollectionMetrics(value: StringDictionary[js.Array[UnmarshalledItemCollectionMetrics]]): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
+      inline def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
       
-      @scala.inline
-      def setUnprocessedItems(value: StringDictionary[js.Array[UnmarshalledWriteRequest]]): Self = StObject.set(x, "UnprocessedItems", value.asInstanceOf[js.Any])
+      inline def setUnprocessedItems(value: StringDictionary[js.Array[UnmarshalledWriteRequest]]): Self = StObject.set(x, "UnprocessedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnprocessedItemsUndefined: Self = StObject.set(x, "UnprocessedItems", js.undefined)
+      inline def setUnprocessedItemsUndefined: Self = StObject.set(x, "UnprocessedItems", js.undefined)
     }
   }
 }

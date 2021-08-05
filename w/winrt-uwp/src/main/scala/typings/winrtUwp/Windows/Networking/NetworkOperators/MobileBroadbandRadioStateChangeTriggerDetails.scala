@@ -13,16 +13,13 @@ trait MobileBroadbandRadioStateChangeTriggerDetails extends StObject {
 }
 object MobileBroadbandRadioStateChangeTriggerDetails {
   
-  @scala.inline
-  def apply(radioStateChanges: IVectorView[MobileBroadbandRadioStateChange]): MobileBroadbandRadioStateChangeTriggerDetails = {
+  inline def apply(radioStateChanges: IVectorView[MobileBroadbandRadioStateChange]): MobileBroadbandRadioStateChangeTriggerDetails = {
     val __obj = js.Dynamic.literal(radioStateChanges = radioStateChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandRadioStateChangeTriggerDetails]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandRadioStateChangeTriggerDetailsMutableBuilder[Self <: MobileBroadbandRadioStateChangeTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandRadioStateChangeTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setRadioStateChanges(value: IVectorView[MobileBroadbandRadioStateChange]): Self = StObject.set(x, "radioStateChanges", value.asInstanceOf[js.Any])
+    inline def setRadioStateChanges(value: IVectorView[MobileBroadbandRadioStateChange]): Self = StObject.set(x, "radioStateChanges", value.asInstanceOf[js.Any])
   }
 }

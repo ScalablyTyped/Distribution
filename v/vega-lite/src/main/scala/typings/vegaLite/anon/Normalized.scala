@@ -13,8 +13,7 @@ trait Normalized extends StObject {
 }
 object Normalized {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     normalized: NormalizedUnitSpecTopLeve | NormalizedLayerSpecTopLev | GenericFacetSpecNormalize | GenericConcatSpecGenericS | GenericVConcatSpecGeneric | GenericHConcatSpecGeneric,
     spec: Spec
   ): Normalized = {
@@ -22,15 +21,12 @@ object Normalized {
     __obj.asInstanceOf[Normalized]
   }
   
-  @scala.inline
-  implicit class NormalizedMutableBuilder[Self <: Normalized] (val x: Self) extends AnyVal {
+  extension [Self <: Normalized](x: Self) {
     
-    @scala.inline
-    def setNormalized(
+    inline def setNormalized(
       value: NormalizedUnitSpecTopLeve | NormalizedLayerSpecTopLev | GenericFacetSpecNormalize | GenericConcatSpecGenericS | GenericVConcatSpecGeneric | GenericHConcatSpecGeneric
     ): Self = StObject.set(x, "normalized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: Spec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: Spec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
   }
 }

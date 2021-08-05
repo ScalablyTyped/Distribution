@@ -11,16 +11,13 @@ trait PickImpluseCSS extends StObject {
 }
 object PickImpluseCSS {
   
-  @scala.inline
-  def apply(useCSS: Boolean): PickImpluseCSS = {
+  inline def apply(useCSS: Boolean): PickImpluseCSS = {
     val __obj = js.Dynamic.literal(useCSS = useCSS.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpluseCSS]
   }
   
-  @scala.inline
-  implicit class PickImpluseCSSMutableBuilder[Self <: PickImpluseCSS] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpluseCSS](x: Self) {
     
-    @scala.inline
-    def setUseCSS(value: Boolean): Self = StObject.set(x, "useCSS", value.asInstanceOf[js.Any])
+    inline def setUseCSS(value: Boolean): Self = StObject.set(x, "useCSS", value.asInstanceOf[js.Any])
   }
 }

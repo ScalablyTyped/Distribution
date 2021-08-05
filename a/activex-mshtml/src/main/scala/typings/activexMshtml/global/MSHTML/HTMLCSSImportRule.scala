@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLCSSImportRule")
 @js.native
-class HTMLCSSImportRule protected ()
+/* private */ class HTMLCSSImportRule ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLCSSImportRule {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLCSSImportRule_typekey")
   var MSHTMLDotHTMLCSSImportRule_typekey: typings.activexMshtml.MSHTML.HTMLCSSImportRule = js.native
   

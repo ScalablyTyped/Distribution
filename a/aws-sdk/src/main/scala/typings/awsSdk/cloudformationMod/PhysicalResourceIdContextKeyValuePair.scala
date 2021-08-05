@@ -18,19 +18,15 @@ trait PhysicalResourceIdContextKeyValuePair extends StObject {
 }
 object PhysicalResourceIdContextKeyValuePair {
   
-  @scala.inline
-  def apply(Key: Key, Value: Value): PhysicalResourceIdContextKeyValuePair = {
+  inline def apply(Key: Key, Value: Value): PhysicalResourceIdContextKeyValuePair = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhysicalResourceIdContextKeyValuePair]
   }
   
-  @scala.inline
-  implicit class PhysicalResourceIdContextKeyValuePairMutableBuilder[Self <: PhysicalResourceIdContextKeyValuePair] (val x: Self) extends AnyVal {
+  extension [Self <: PhysicalResourceIdContextKeyValuePair](x: Self) {
     
-    @scala.inline
-    def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Value): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

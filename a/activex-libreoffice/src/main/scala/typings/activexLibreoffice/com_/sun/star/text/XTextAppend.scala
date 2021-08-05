@@ -14,8 +14,7 @@ trait XTextAppend
      with XTextPortionAppend
 object XTextAppend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     End: XTextRange,
     Start: XTextRange,
     String: String,

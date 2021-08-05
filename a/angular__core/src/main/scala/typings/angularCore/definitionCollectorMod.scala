@@ -16,9 +16,9 @@ object definitionCollectorMod {
   class NgDefinitionCollector protected () extends StObject {
     def this(typeChecker: TypeChecker) = this()
     
-    var _visitDirectiveClass: js.Any = js.native
+    /* private */ var _visitDirectiveClass: js.Any = js.native
     
-    var _visitNgModuleClass: js.Any = js.native
+    /* private */ var _visitNgModuleClass: js.Any = js.native
     
     var resolvedDirectives: js.Array[ResolvedDirective] = js.native
     
@@ -26,7 +26,7 @@ object definitionCollectorMod {
     
     var typeChecker: TypeChecker = js.native
     
-    var visitClassDeclaration: js.Any = js.native
+    /* private */ var visitClassDeclaration: js.Any = js.native
     
     def visitNode(node: Node): Unit = js.native
   }
@@ -45,35 +45,26 @@ object definitionCollectorMod {
   }
   object ResolvedDirective {
     
-    @scala.inline
-    def apply(decorator: NgDecorator, name: String, node: ClassDeclaration): ResolvedDirective = {
+    inline def apply(decorator: NgDecorator, name: String, node: ClassDeclaration): ResolvedDirective = {
       val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], providersExpr = null, viewProvidersExpr = null)
       __obj.asInstanceOf[ResolvedDirective]
     }
     
-    @scala.inline
-    implicit class ResolvedDirectiveMutableBuilder[Self <: ResolvedDirective] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedDirective](x: Self) {
       
-      @scala.inline
-      def setDecorator(value: NgDecorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
+      inline def setDecorator(value: NgDecorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: ClassDeclaration): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: ClassDeclaration): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvidersExpr(value: Expression): Self = StObject.set(x, "providersExpr", value.asInstanceOf[js.Any])
+      inline def setProvidersExpr(value: Expression): Self = StObject.set(x, "providersExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvidersExprNull: Self = StObject.set(x, "providersExpr", null)
+      inline def setProvidersExprNull: Self = StObject.set(x, "providersExpr", null)
       
-      @scala.inline
-      def setViewProvidersExpr(value: Expression): Self = StObject.set(x, "viewProvidersExpr", value.asInstanceOf[js.Any])
+      inline def setViewProvidersExpr(value: Expression): Self = StObject.set(x, "viewProvidersExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewProvidersExprNull: Self = StObject.set(x, "viewProvidersExpr", null)
+      inline def setViewProvidersExprNull: Self = StObject.set(x, "viewProvidersExpr", null)
     }
   }
   
@@ -89,29 +80,22 @@ object definitionCollectorMod {
   }
   object ResolvedNgModule {
     
-    @scala.inline
-    def apply(decorator: NgDecorator, name: String, node: ClassDeclaration): ResolvedNgModule = {
+    inline def apply(decorator: NgDecorator, name: String, node: ClassDeclaration): ResolvedNgModule = {
       val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], providersExpr = null)
       __obj.asInstanceOf[ResolvedNgModule]
     }
     
-    @scala.inline
-    implicit class ResolvedNgModuleMutableBuilder[Self <: ResolvedNgModule] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedNgModule](x: Self) {
       
-      @scala.inline
-      def setDecorator(value: NgDecorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
+      inline def setDecorator(value: NgDecorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: ClassDeclaration): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: ClassDeclaration): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvidersExpr(value: Expression): Self = StObject.set(x, "providersExpr", value.asInstanceOf[js.Any])
+      inline def setProvidersExpr(value: Expression): Self = StObject.set(x, "providersExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvidersExprNull: Self = StObject.set(x, "providersExpr", null)
+      inline def setProvidersExprNull: Self = StObject.set(x, "providersExpr", null)
     }
   }
 }

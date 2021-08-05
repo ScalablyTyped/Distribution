@@ -16,39 +16,39 @@ object facepileBaseMod {
     extends Component[IFacepileProps, js.Object, js.Any] {
     def this(props: IFacepileProps) = this()
     
-    var _ariaDescriptionId: js.Any = js.native
+    /* private */ var _ariaDescriptionId: js.Any = js.native
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _getAddNewElement: js.Any = js.native
+    /* private */ var _getAddNewElement: js.Any = js.native
     
-    var _getDescriptiveOverflowElement: js.Any = js.native
+    /* private */ var _getDescriptiveOverflowElement: js.Any = js.native
     
-    var _getElementProps: js.Any = js.native
+    /* private */ var _getElementProps: js.Any = js.native
     
-    var _getElementWithOnClickEvent: js.Any = js.native
+    /* private */ var _getElementWithOnClickEvent: js.Any = js.native
     
-    var _getElementWithoutOnClickEvent: js.Any = js.native
+    /* private */ var _getElementWithoutOnClickEvent: js.Any = js.native
     
-    var _getIconElement: js.Any = js.native
+    /* private */ var _getIconElement: js.Any = js.native
     
-    var _getOverflowElement: js.Any = js.native
+    /* private */ var _getOverflowElement: js.Any = js.native
     
-    var _getPersonaCoinControl: js.Any = js.native
+    /* private */ var _getPersonaCoinControl: js.Any = js.native
     
-    var _getPersonaControl: js.Any = js.native
+    /* private */ var _getPersonaControl: js.Any = js.native
     
-    var _onPersonaClick: js.Any = js.native
+    /* private */ var _onPersonaClick: js.Any = js.native
     
-    var _onPersonaMouseMove: js.Any = js.native
+    /* private */ var _onPersonaMouseMove: js.Any = js.native
     
-    var _onPersonaMouseOut: js.Any = js.native
+    /* private */ var _onPersonaMouseOut: js.Any = js.native
     
-    var _onRenderVisiblePersonas: js.Any = js.native
+    /* private */ var _onRenderVisiblePersonas: js.Any = js.native
     
-    var _renderInitials: js.Any = js.native
+    /* private */ var _renderInitials: js.Any = js.native
     
-    var _renderInitialsNotPictured: js.Any = js.native
+    /* private */ var _renderInitialsNotPictured: js.Any = js.native
     
     /* protected */ def onRenderAriaDescription(): js.UndefOr[_empty | Element] = js.native
   }
@@ -62,7 +62,6 @@ object facepileBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/Facepile/Facepile.base", "FacepileBase.defaultProps")
     @js.native
     def defaultProps: IFacepileProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IFacepileProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IFacepileProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

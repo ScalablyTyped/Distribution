@@ -68,7 +68,7 @@ trait SlideShowView extends StObject {
   
   var PointerType: PpSlideShowPointerType = js.native
   
-  @JSName("PowerPoint.SlideShowView_typekey")
+  /* private */ @JSName("PowerPoint.SlideShowView_typekey")
   var PowerPointDotSlideShowView_typekey: SlideShowView = js.native
   
   val PresentationElapsedTime: Double = js.native

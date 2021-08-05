@@ -13,16 +13,13 @@ trait DeleteModelPackageInput extends StObject {
 }
 object DeleteModelPackageInput {
   
-  @scala.inline
-  def apply(ModelPackageName: VersionedArnOrName): DeleteModelPackageInput = {
+  inline def apply(ModelPackageName: VersionedArnOrName): DeleteModelPackageInput = {
     val __obj = js.Dynamic.literal(ModelPackageName = ModelPackageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteModelPackageInput]
   }
   
-  @scala.inline
-  implicit class DeleteModelPackageInputMutableBuilder[Self <: DeleteModelPackageInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteModelPackageInput](x: Self) {
     
-    @scala.inline
-    def setModelPackageName(value: VersionedArnOrName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
+    inline def setModelPackageName(value: VersionedArnOrName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
   }
 }

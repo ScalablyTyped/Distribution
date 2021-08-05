@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClientTypes extends StObject
 object ClientTypes {
   
-  @scala.inline
-  def all: typings.std.stdStrings.all = "all".asInstanceOf[typings.std.stdStrings.all]
+  inline def all: typings.std.stdStrings.all = "all".asInstanceOf[typings.std.stdStrings.all]
   
-  @scala.inline
-  def sharedworker: typings.std.stdStrings.sharedworker = "sharedworker".asInstanceOf[typings.std.stdStrings.sharedworker]
+  inline def sharedworker: typings.std.stdStrings.sharedworker = "sharedworker".asInstanceOf[typings.std.stdStrings.sharedworker]
   
-  @scala.inline
-  def window: typings.std.stdStrings.window = "window".asInstanceOf[typings.std.stdStrings.window]
+  inline def window: typings.std.stdStrings.window = "window".asInstanceOf[typings.std.stdStrings.window]
   
-  @scala.inline
-  def worker: typings.std.stdStrings.worker = "worker".asInstanceOf[typings.std.stdStrings.worker]
+  inline def worker: typings.std.stdStrings.worker = "worker".asInstanceOf[typings.std.stdStrings.worker]
 }

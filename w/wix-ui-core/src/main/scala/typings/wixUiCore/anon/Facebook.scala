@@ -21,8 +21,7 @@ trait Facebook extends StObject {
 }
 object Facebook {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dailymotion: /* url */ String | js.Array[String] => Boolean,
     facebook: /* url */ String | js.Array[String] => Boolean,
     playable: /* url */ String | js.Array[String] => Boolean,
@@ -34,25 +33,18 @@ object Facebook {
     __obj.asInstanceOf[Facebook]
   }
   
-  @scala.inline
-  implicit class FacebookMutableBuilder[Self <: Facebook] (val x: Self) extends AnyVal {
+  extension [Self <: Facebook](x: Self) {
     
-    @scala.inline
-    def setDailymotion(value: /* url */ String | js.Array[String] => Boolean): Self = StObject.set(x, "dailymotion", js.Any.fromFunction1(value))
+    inline def setDailymotion(value: /* url */ String | js.Array[String] => Boolean): Self = StObject.set(x, "dailymotion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFacebook(value: /* url */ String | js.Array[String] => Boolean): Self = StObject.set(x, "facebook", js.Any.fromFunction1(value))
+    inline def setFacebook(value: /* url */ String | js.Array[String] => Boolean): Self = StObject.set(x, "facebook", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPlayable(value: /* url */ String | js.Array[String] => Boolean): Self = StObject.set(x, "playable", js.Any.fromFunction1(value))
+    inline def setPlayable(value: /* url */ String | js.Array[String] => Boolean): Self = StObject.set(x, "playable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTwitch(value: /* url */ String | js.Array[String] => Boolean): Self = StObject.set(x, "twitch", js.Any.fromFunction1(value))
+    inline def setTwitch(value: /* url */ String | js.Array[String] => Boolean): Self = StObject.set(x, "twitch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVimeo(value: /* url */ String | js.Array[String] => Boolean): Self = StObject.set(x, "vimeo", js.Any.fromFunction1(value))
+    inline def setVimeo(value: /* url */ String | js.Array[String] => Boolean): Self = StObject.set(x, "vimeo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setYoutube(value: /* url */ String | js.Array[String] => Boolean): Self = StObject.set(x, "youtube", js.Any.fromFunction1(value))
+    inline def setYoutube(value: /* url */ String | js.Array[String] => Boolean): Self = StObject.set(x, "youtube", js.Any.fromFunction1(value))
   }
 }

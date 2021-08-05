@@ -61,49 +61,35 @@ trait IgGridSummariesColumnSettingSummaryOperand
 }
 object IgGridSummariesColumnSettingSummaryOperand {
   
-  @scala.inline
-  def apply(): IgGridSummariesColumnSettingSummaryOperand = {
+  inline def apply(): IgGridSummariesColumnSettingSummaryOperand = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridSummariesColumnSettingSummaryOperand]
   }
   
-  @scala.inline
-  implicit class IgGridSummariesColumnSettingSummaryOperandMutableBuilder[Self <: IgGridSummariesColumnSettingSummaryOperand] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridSummariesColumnSettingSummaryOperand](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setRowDisplayLabel(value: String): Self = StObject.set(x, "rowDisplayLabel", value.asInstanceOf[js.Any])
+    inline def setRowDisplayLabel(value: String): Self = StObject.set(x, "rowDisplayLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowDisplayLabelUndefined: Self = StObject.set(x, "rowDisplayLabel", js.undefined)
+    inline def setRowDisplayLabelUndefined: Self = StObject.set(x, "rowDisplayLabel", js.undefined)
     
-    @scala.inline
-    def setSummaryCalculator(value: String): Self = StObject.set(x, "summaryCalculator", value.asInstanceOf[js.Any])
+    inline def setSummaryCalculator(value: String): Self = StObject.set(x, "summaryCalculator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryCalculatorUndefined: Self = StObject.set(x, "summaryCalculator", js.undefined)
+    inline def setSummaryCalculatorUndefined: Self = StObject.set(x, "summaryCalculator", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

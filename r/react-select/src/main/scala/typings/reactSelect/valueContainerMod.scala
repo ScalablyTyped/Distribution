@@ -13,11 +13,9 @@ object valueContainerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[ValueContainerProps[OptionType]]): ComponentType[AnimatedValueContainerProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedValueContainerProps[OptionType]]]
+  inline def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[ValueContainerProps[OptionType]]): ComponentType[AnimatedValueContainerProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedValueContainerProps[OptionType]]]
   
-  @scala.inline
-  def AnimatedValueContainer[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[ValueContainerProps[OptionType]]): ComponentType[AnimatedValueContainerProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedValueContainer")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedValueContainerProps[OptionType]]]
+  inline def AnimatedValueContainer[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[ValueContainerProps[OptionType]]): ComponentType[AnimatedValueContainerProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedValueContainer")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedValueContainerProps[OptionType]]]
   
   type AnimatedValueContainerProps[OptionType /* <: OptionTypeBase */] = ValueContainerProps[OptionType]
 }

@@ -39,14 +39,14 @@ object http2ServerMod {
       * @param {ServerHttp2Stream} stream
       * @param {object} headers
       */
-    /* CompleteClass */
-    /* protected */ override def onStream(stream: ServerHttp2Stream, headers: StringDictionary[js.Any]): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def onStream(stream: ServerHttp2Stream, headers: StringDictionary[js.Any]): Unit = js.native
     
     /**
       * This is the road object that will handle all requests
       * @type {Road}
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var road: Road = js.native
     
     /**
@@ -55,15 +55,15 @@ object http2ServerMod {
       * @param {ServerHttp2Stream} stream
       * @param {Response} response
       */
-    /* CompleteClass */
-    /* protected */ override def sendResponse(stream: ServerHttp2Stream, response: Response): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def sendResponse(stream: ServerHttp2Stream, response: Response): Unit = js.native
     
     /**
       * This is the node.js http2 server from the http2 library.
       * @todo  support HTTPS
       * @type HTTPServer
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var server: Http2Server = js.native
   }
   
@@ -90,7 +90,7 @@ object http2ServerMod {
       * This is the road object that will handle all requests
       * @type {Road}
       */
-    var road: Road
+    /* protected */ var road: Road
     
     /**
       * Helper function to write a roads Response object to an HTTPResponse object
@@ -105,12 +105,11 @@ object http2ServerMod {
       * @todo  support HTTPS
       * @type HTTPServer
       */
-    var server: Http2Server
+    /* protected */ var server: Http2Server
   }
   object Server {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       listen: (Double, String) => Http2Server,
       onStream: (ServerHttp2Stream, StringDictionary[js.Any]) => Unit,
       road: Road,
@@ -121,23 +120,17 @@ object http2ServerMod {
       __obj.asInstanceOf[Server]
     }
     
-    @scala.inline
-    implicit class ServerMutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
+    extension [Self <: Server](x: Self) {
       
-      @scala.inline
-      def setListen(value: (Double, String) => Http2Server): Self = StObject.set(x, "listen", js.Any.fromFunction2(value))
+      inline def setListen(value: (Double, String) => Http2Server): Self = StObject.set(x, "listen", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnStream(value: (ServerHttp2Stream, StringDictionary[js.Any]) => Unit): Self = StObject.set(x, "onStream", js.Any.fromFunction2(value))
+      inline def setOnStream(value: (ServerHttp2Stream, StringDictionary[js.Any]) => Unit): Self = StObject.set(x, "onStream", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRoad(value: Road): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
+      inline def setRoad(value: Road): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendResponse(value: (ServerHttp2Stream, Response) => Unit): Self = StObject.set(x, "sendResponse", js.Any.fromFunction2(value))
+      inline def setSendResponse(value: (ServerHttp2Stream, Response) => Unit): Self = StObject.set(x, "sendResponse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setServer(value: Http2Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: Http2Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
 }

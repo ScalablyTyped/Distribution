@@ -515,8 +515,8 @@ object yamlYamlMod {
   @js.native
   abstract class CollectionComponentResource protected ()
     extends ComponentResource[js.Any] {
-    protected def this(resourceType: String, name: String, config: js.Any) = this()
-    protected def this(resourceType: String, name: String, config: js.Any, opts: ComponentResourceOptions) = this()
+    /* protected */ def this(resourceType: String, name: String, config: js.Any) = this()
+    /* protected */ def this(resourceType: String, name: String, config: js.Any, opts: ComponentResourceOptions) = this()
     
     /**
       * getCustomResource returns a resource defined by a CRD with the given group/version/kind and name.
@@ -527,7 +527,7 @@ object yamlYamlMod {
     def getCustomResource[T /* <: CustomResource */](groupVersionKind: String, namespace: String): Output_[T] = js.native
     def getCustomResource[T /* <: CustomResource */](groupVersionKind: String, namespace: String, name: String): Output_[T] = js.native
     
-    var getResourceImpl: js.Any = js.native
+    /* private */ var getResourceImpl: js.Any = js.native
     
     def getResourceProperty(
       groupVersionKind: admissionregistrationDotk8sDotioSlashv1SlashMutatingWebhookConfigurationList,
@@ -9073,10 +9073,8 @@ object yamlYamlMod {
     def this(name: String, config: ConfigGroupOpts, opts: ComponentResourceOptions) = this()
   }
   
-  @scala.inline
-  def parse(config: ConfigGroupOpts): Output_[StringDictionary[CustomResource]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(config.asInstanceOf[js.Any]).asInstanceOf[Output_[StringDictionary[CustomResource]]]
-  @scala.inline
-  def parse(config: ConfigGroupOpts, opts: CustomResourceOptions): Output_[StringDictionary[CustomResource]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(config.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Output_[StringDictionary[CustomResource]]]
+  inline def parse(config: ConfigGroupOpts): Output_[StringDictionary[CustomResource]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(config.asInstanceOf[js.Any]).asInstanceOf[Output_[StringDictionary[CustomResource]]]
+  inline def parse(config: ConfigGroupOpts, opts: CustomResourceOptions): Output_[StringDictionary[CustomResource]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(config.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Output_[StringDictionary[CustomResource]]]
   
   trait ConfigFileOpts extends StObject {
     
@@ -9094,35 +9092,26 @@ object yamlYamlMod {
   }
   object ConfigFileOpts {
     
-    @scala.inline
-    def apply(): ConfigFileOpts = {
+    inline def apply(): ConfigFileOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigFileOpts]
     }
     
-    @scala.inline
-    implicit class ConfigFileOptsMutableBuilder[Self <: ConfigFileOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigFileOpts](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setResourcePrefix(value: String): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
+      inline def setResourcePrefix(value: String): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
+      inline def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
       
-      @scala.inline
-      def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+      inline def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
+      inline def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
       
-      @scala.inline
-      def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+      inline def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
     }
   }
   
@@ -9148,56 +9137,40 @@ object yamlYamlMod {
   }
   object ConfigGroupOpts {
     
-    @scala.inline
-    def apply(): ConfigGroupOpts = {
+    inline def apply(): ConfigGroupOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigGroupOpts]
     }
     
-    @scala.inline
-    implicit class ConfigGroupOptsMutableBuilder[Self <: ConfigGroupOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigGroupOpts](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[String] | String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String] | String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setObjs(value: js.Array[js.Any] | js.Any): Self = StObject.set(x, "objs", value.asInstanceOf[js.Any])
+      inline def setObjs(value: js.Array[js.Any] | js.Any): Self = StObject.set(x, "objs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjsUndefined: Self = StObject.set(x, "objs", js.undefined)
+      inline def setObjsUndefined: Self = StObject.set(x, "objs", js.undefined)
       
-      @scala.inline
-      def setObjsVarargs(value: js.Any*): Self = StObject.set(x, "objs", js.Array(value :_*))
+      inline def setObjsVarargs(value: js.Any*): Self = StObject.set(x, "objs", js.Array(value :_*))
       
-      @scala.inline
-      def setResourcePrefix(value: String): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
+      inline def setResourcePrefix(value: String): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
+      inline def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
       
-      @scala.inline
-      def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+      inline def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
+      inline def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
       
-      @scala.inline
-      def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+      inline def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
       
-      @scala.inline
-      def setYaml(value: js.Array[String] | String): Self = StObject.set(x, "yaml", value.asInstanceOf[js.Any])
+      inline def setYaml(value: js.Array[String] | String): Self = StObject.set(x, "yaml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYamlUndefined: Self = StObject.set(x, "yaml", js.undefined)
+      inline def setYamlUndefined: Self = StObject.set(x, "yaml", js.undefined)
       
-      @scala.inline
-      def setYamlVarargs(value: String*): Self = StObject.set(x, "yaml", js.Array(value :_*))
+      inline def setYamlVarargs(value: String*): Self = StObject.set(x, "yaml", js.Array(value :_*))
     }
   }
   
@@ -9217,32 +9190,24 @@ object yamlYamlMod {
   }
   object ConfigOpts {
     
-    @scala.inline
-    def apply(objs: js.Promise[js.Array[js.Any]]): ConfigOpts = {
+    inline def apply(objs: js.Promise[js.Array[js.Any]]): ConfigOpts = {
       val __obj = js.Dynamic.literal(objs = objs.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigOpts]
     }
     
-    @scala.inline
-    implicit class ConfigOptsMutableBuilder[Self <: ConfigOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOpts](x: Self) {
       
-      @scala.inline
-      def setObjs(value: js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "objs", value.asInstanceOf[js.Any])
+      inline def setObjs(value: js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "objs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcePrefix(value: String): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
+      inline def setResourcePrefix(value: String): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
+      inline def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
       
-      @scala.inline
-      def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+      inline def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
+      inline def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
       
-      @scala.inline
-      def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+      inline def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
     }
   }
 }

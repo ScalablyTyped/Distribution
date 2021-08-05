@@ -20,15 +20,15 @@ object originalColumnGroupMod {
     
     /* private */ def addLeafColumns(leafColumns: js.Any): js.Any = js.native
     
-    var children: js.Any = js.native
+    /* private */ var children: js.Any = js.native
     
-    var colGroupDef: js.Any = js.native
+    /* private */ var colGroupDef: js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var expandable: js.Any = js.native
+    /* private */ var expandable: js.Any = js.native
     
-    var expanded: js.Any = js.native
+    /* private */ var expanded: js.Any = js.native
     
     def getChildren(): js.Array[OriginalColumnGroupChild] = js.native
     
@@ -46,9 +46,9 @@ object originalColumnGroupMod {
     
     def getLevel(): Double = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var groupId: js.Any = js.native
+    /* private */ var groupId: js.Any = js.native
     
     def isExpandable(): Boolean = js.native
     
@@ -59,13 +59,13 @@ object originalColumnGroupMod {
     /* CompleteClass */
     override def isVisible(): Boolean = js.native
     
-    var level: js.Any = js.native
+    /* private */ var level: js.Any = js.native
     
-    var localEventService: js.Any = js.native
+    /* private */ var localEventService: js.Any = js.native
     
     /* private */ def onColumnVisibilityChanged(): js.Any = js.native
     
-    var padding: js.Any = js.native
+    /* private */ var padding: js.Any = js.native
     
     def setChildren(children: js.Array[OriginalColumnGroupChild]): Unit = js.native
     
@@ -85,13 +85,11 @@ object originalColumnGroupMod {
     @JSImport("ag-grid/dist/lib/entities/originalColumnGroup", "OriginalColumnGroup.EVENT_EXPANDABLE_CHANGED")
     @js.native
     def EVENT_EXPANDABLE_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_EXPANDABLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_EXPANDABLE_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_EXPANDABLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_EXPANDABLE_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/originalColumnGroup", "OriginalColumnGroup.EVENT_EXPANDED_CHANGED")
     @js.native
     def EVENT_EXPANDED_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_EXPANDED_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_EXPANDED_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_EXPANDED_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_EXPANDED_CHANGED")(x.asInstanceOf[js.Any])
   }
 }

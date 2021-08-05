@@ -30,8 +30,7 @@ object searchMod {
     @JSImport("carbon-components/components/search/search", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -43,20 +42,16 @@ object searchMod {
   }
   object Search {
     
-    @scala.inline
-    def apply(showClear: (js.Any, js.Any) => Unit, toggleLayout: js.Any => Unit): Search = {
+    inline def apply(showClear: (js.Any, js.Any) => Unit, toggleLayout: js.Any => Unit): Search = {
       val __obj = js.Dynamic.literal(showClear = js.Any.fromFunction2(showClear), toggleLayout = js.Any.fromFunction1(toggleLayout))
       __obj.asInstanceOf[Search]
     }
     
-    @scala.inline
-    implicit class SearchMutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
+    extension [Self <: Search](x: Self) {
       
-      @scala.inline
-      def setShowClear(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "showClear", js.Any.fromFunction2(value))
+      inline def setShowClear(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "showClear", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToggleLayout(value: js.Any => Unit): Self = StObject.set(x, "toggleLayout", js.Any.fromFunction1(value))
+      inline def setToggleLayout(value: js.Any => Unit): Self = StObject.set(x, "toggleLayout", js.Any.fromFunction1(value))
     }
   }
 }

@@ -17,27 +17,22 @@ trait EnvelopeDocumentVisibility extends StObject {
 }
 object EnvelopeDocumentVisibility {
   
-  @scala.inline
-  def apply(): EnvelopeDocumentVisibility = {
+  inline def apply(): EnvelopeDocumentVisibility = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeDocumentVisibility]
   }
   
-  @scala.inline
-  implicit class EnvelopeDocumentVisibilityMutableBuilder[Self <: EnvelopeDocumentVisibility] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeDocumentVisibility](x: Self) {
     
-    @scala.inline
-    def setDocumentVisibility(
+    inline def setDocumentVisibility(
       value: js.Array[
           /* This object configures a recipient's read/write access to a document. */ DocumentVisibility
         ]
     ): Self = StObject.set(x, "documentVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentVisibilityUndefined: Self = StObject.set(x, "documentVisibility", js.undefined)
+    inline def setDocumentVisibilityUndefined: Self = StObject.set(x, "documentVisibility", js.undefined)
     
-    @scala.inline
-    def setDocumentVisibilityVarargs(
+    inline def setDocumentVisibilityVarargs(
       value: (/* This object configures a recipient's read/write access to a document. */ DocumentVisibility)*
     ): Self = StObject.set(x, "documentVisibility", js.Array(value :_*))
   }

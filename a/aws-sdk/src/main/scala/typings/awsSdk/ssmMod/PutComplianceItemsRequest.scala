@@ -43,8 +43,7 @@ trait PutComplianceItemsRequest extends StObject {
 }
 object PutComplianceItemsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ComplianceType: ComplianceTypeName,
     ExecutionSummary: ComplianceExecutionSummary,
     Items: ComplianceItemEntryList,
@@ -55,37 +54,26 @@ object PutComplianceItemsRequest {
     __obj.asInstanceOf[PutComplianceItemsRequest]
   }
   
-  @scala.inline
-  implicit class PutComplianceItemsRequestMutableBuilder[Self <: PutComplianceItemsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutComplianceItemsRequest](x: Self) {
     
-    @scala.inline
-    def setComplianceType(value: ComplianceTypeName): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
+    inline def setComplianceType(value: ComplianceTypeName): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionSummary(value: ComplianceExecutionSummary): Self = StObject.set(x, "ExecutionSummary", value.asInstanceOf[js.Any])
+    inline def setExecutionSummary(value: ComplianceExecutionSummary): Self = StObject.set(x, "ExecutionSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemContentHash(value: ComplianceItemContentHash): Self = StObject.set(x, "ItemContentHash", value.asInstanceOf[js.Any])
+    inline def setItemContentHash(value: ComplianceItemContentHash): Self = StObject.set(x, "ItemContentHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemContentHashUndefined: Self = StObject.set(x, "ItemContentHash", js.undefined)
+    inline def setItemContentHashUndefined: Self = StObject.set(x, "ItemContentHash", js.undefined)
     
-    @scala.inline
-    def setItems(value: ComplianceItemEntryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ComplianceItemEntryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ComplianceItemEntry*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ComplianceItemEntry*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceId(value: ComplianceResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ComplianceResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: ComplianceResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ComplianceResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadType(value: ComplianceUploadType): Self = StObject.set(x, "UploadType", value.asInstanceOf[js.Any])
+    inline def setUploadType(value: ComplianceUploadType): Self = StObject.set(x, "UploadType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadTypeUndefined: Self = StObject.set(x, "UploadType", js.undefined)
+    inline def setUploadTypeUndefined: Self = StObject.set(x, "UploadType", js.undefined)
   }
 }

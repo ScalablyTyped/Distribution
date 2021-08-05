@@ -13,16 +13,13 @@ trait GetLifecyclePolicyOutput extends StObject {
 }
 object GetLifecyclePolicyOutput {
   
-  @scala.inline
-  def apply(LifecyclePolicy: LifecyclePolicy): GetLifecyclePolicyOutput = {
+  inline def apply(LifecyclePolicy: LifecyclePolicy): GetLifecyclePolicyOutput = {
     val __obj = js.Dynamic.literal(LifecyclePolicy = LifecyclePolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLifecyclePolicyOutput]
   }
   
-  @scala.inline
-  implicit class GetLifecyclePolicyOutputMutableBuilder[Self <: GetLifecyclePolicyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetLifecyclePolicyOutput](x: Self) {
     
-    @scala.inline
-    def setLifecyclePolicy(value: LifecyclePolicy): Self = StObject.set(x, "LifecyclePolicy", value.asInstanceOf[js.Any])
+    inline def setLifecyclePolicy(value: LifecyclePolicy): Self = StObject.set(x, "LifecyclePolicy", value.asInstanceOf[js.Any])
   }
 }

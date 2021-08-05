@@ -60,32 +60,24 @@ object mode {
   }
   object ModeStatic {
     
-    @scala.inline
-    def apply(CBC: CBC, CFB: CFB, CTR: CTR, CTRGladman: CTRGladman, ECB: ECB, OFB: OFB): ModeStatic = {
+    inline def apply(CBC: CBC, CFB: CFB, CTR: CTR, CTRGladman: CTRGladman, ECB: ECB, OFB: OFB): ModeStatic = {
       val __obj = js.Dynamic.literal(CBC = CBC.asInstanceOf[js.Any], CFB = CFB.asInstanceOf[js.Any], CTR = CTR.asInstanceOf[js.Any], CTRGladman = CTRGladman.asInstanceOf[js.Any], ECB = ECB.asInstanceOf[js.Any], OFB = OFB.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModeStatic]
     }
     
-    @scala.inline
-    implicit class ModeStaticMutableBuilder[Self <: ModeStatic] (val x: Self) extends AnyVal {
+    extension [Self <: ModeStatic](x: Self) {
       
-      @scala.inline
-      def setCBC(value: CBC): Self = StObject.set(x, "CBC", value.asInstanceOf[js.Any])
+      inline def setCBC(value: CBC): Self = StObject.set(x, "CBC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCFB(value: CFB): Self = StObject.set(x, "CFB", value.asInstanceOf[js.Any])
+      inline def setCFB(value: CFB): Self = StObject.set(x, "CFB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCTR(value: CTR): Self = StObject.set(x, "CTR", value.asInstanceOf[js.Any])
+      inline def setCTR(value: CTR): Self = StObject.set(x, "CTR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCTRGladman(value: CTRGladman): Self = StObject.set(x, "CTRGladman", value.asInstanceOf[js.Any])
+      inline def setCTRGladman(value: CTRGladman): Self = StObject.set(x, "CTRGladman", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setECB(value: ECB): Self = StObject.set(x, "ECB", value.asInstanceOf[js.Any])
+      inline def setECB(value: ECB): Self = StObject.set(x, "ECB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOFB(value: OFB): Self = StObject.set(x, "OFB", value.asInstanceOf[js.Any])
+      inline def setOFB(value: OFB): Self = StObject.set(x, "OFB", value.asInstanceOf[js.Any])
     }
   }
   

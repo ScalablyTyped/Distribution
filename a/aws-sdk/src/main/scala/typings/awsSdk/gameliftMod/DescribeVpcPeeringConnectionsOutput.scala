@@ -13,22 +13,17 @@ trait DescribeVpcPeeringConnectionsOutput extends StObject {
 }
 object DescribeVpcPeeringConnectionsOutput {
   
-  @scala.inline
-  def apply(): DescribeVpcPeeringConnectionsOutput = {
+  inline def apply(): DescribeVpcPeeringConnectionsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVpcPeeringConnectionsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeVpcPeeringConnectionsOutputMutableBuilder[Self <: DescribeVpcPeeringConnectionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVpcPeeringConnectionsOutput](x: Self) {
     
-    @scala.inline
-    def setVpcPeeringConnections(value: VpcPeeringConnectionList): Self = StObject.set(x, "VpcPeeringConnections", value.asInstanceOf[js.Any])
+    inline def setVpcPeeringConnections(value: VpcPeeringConnectionList): Self = StObject.set(x, "VpcPeeringConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcPeeringConnectionsUndefined: Self = StObject.set(x, "VpcPeeringConnections", js.undefined)
+    inline def setVpcPeeringConnectionsUndefined: Self = StObject.set(x, "VpcPeeringConnections", js.undefined)
     
-    @scala.inline
-    def setVpcPeeringConnectionsVarargs(value: VpcPeeringConnection*): Self = StObject.set(x, "VpcPeeringConnections", js.Array(value :_*))
+    inline def setVpcPeeringConnectionsVarargs(value: VpcPeeringConnection*): Self = StObject.set(x, "VpcPeeringConnections", js.Array(value :_*))
   }
 }

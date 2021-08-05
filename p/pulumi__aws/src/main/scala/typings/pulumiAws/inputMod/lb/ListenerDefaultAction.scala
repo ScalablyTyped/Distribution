@@ -40,59 +40,42 @@ trait ListenerDefaultAction extends StObject {
 }
 object ListenerDefaultAction {
   
-  @scala.inline
-  def apply(`type`: Input[String]): ListenerDefaultAction = {
+  inline def apply(`type`: Input[String]): ListenerDefaultAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerDefaultAction]
   }
   
-  @scala.inline
-  implicit class ListenerDefaultActionMutableBuilder[Self <: ListenerDefaultAction] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerDefaultAction](x: Self) {
     
-    @scala.inline
-    def setAuthenticateCognito(value: Input[ListenerDefaultActionAuthenticateCognito]): Self = StObject.set(x, "authenticateCognito", value.asInstanceOf[js.Any])
+    inline def setAuthenticateCognito(value: Input[ListenerDefaultActionAuthenticateCognito]): Self = StObject.set(x, "authenticateCognito", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticateCognitoUndefined: Self = StObject.set(x, "authenticateCognito", js.undefined)
+    inline def setAuthenticateCognitoUndefined: Self = StObject.set(x, "authenticateCognito", js.undefined)
     
-    @scala.inline
-    def setAuthenticateOidc(value: Input[ListenerDefaultActionAuthenticateOidc]): Self = StObject.set(x, "authenticateOidc", value.asInstanceOf[js.Any])
+    inline def setAuthenticateOidc(value: Input[ListenerDefaultActionAuthenticateOidc]): Self = StObject.set(x, "authenticateOidc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticateOidcUndefined: Self = StObject.set(x, "authenticateOidc", js.undefined)
+    inline def setAuthenticateOidcUndefined: Self = StObject.set(x, "authenticateOidc", js.undefined)
     
-    @scala.inline
-    def setFixedResponse(value: Input[ListenerDefaultActionFixedResponse]): Self = StObject.set(x, "fixedResponse", value.asInstanceOf[js.Any])
+    inline def setFixedResponse(value: Input[ListenerDefaultActionFixedResponse]): Self = StObject.set(x, "fixedResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedResponseUndefined: Self = StObject.set(x, "fixedResponse", js.undefined)
+    inline def setFixedResponseUndefined: Self = StObject.set(x, "fixedResponse", js.undefined)
     
-    @scala.inline
-    def setForward(value: Input[ListenerDefaultActionForward]): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: Input[ListenerDefaultActionForward]): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
+    inline def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
     
-    @scala.inline
-    def setOrder(value: Input[Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Input[Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setRedirect(value: Input[ListenerDefaultActionRedirect]): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: Input[ListenerDefaultActionRedirect]): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+    inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
     
-    @scala.inline
-    def setTargetGroupArn(value: Input[String]): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
+    inline def setTargetGroupArn(value: Input[String]): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupArnUndefined: Self = StObject.set(x, "targetGroupArn", js.undefined)
+    inline def setTargetGroupArnUndefined: Self = StObject.set(x, "targetGroupArn", js.undefined)
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

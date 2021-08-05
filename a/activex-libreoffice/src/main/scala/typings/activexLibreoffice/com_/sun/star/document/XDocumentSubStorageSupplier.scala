@@ -39,8 +39,7 @@ trait XDocumentSubStorageSupplier
 }
 object XDocumentSubStorageSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DocumentSubStoragesNames: SafeArray[String],
     acquire: () => Unit,
     getDocumentSubStorage: (String, Double) => XStorage,
@@ -52,16 +51,12 @@ object XDocumentSubStorageSupplier {
     __obj.asInstanceOf[XDocumentSubStorageSupplier]
   }
   
-  @scala.inline
-  implicit class XDocumentSubStorageSupplierMutableBuilder[Self <: XDocumentSubStorageSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentSubStorageSupplier](x: Self) {
     
-    @scala.inline
-    def setDocumentSubStoragesNames(value: SafeArray[String]): Self = StObject.set(x, "DocumentSubStoragesNames", value.asInstanceOf[js.Any])
+    inline def setDocumentSubStoragesNames(value: SafeArray[String]): Self = StObject.set(x, "DocumentSubStoragesNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDocumentSubStorage(value: (String, Double) => XStorage): Self = StObject.set(x, "getDocumentSubStorage", js.Any.fromFunction2(value))
+    inline def setGetDocumentSubStorage(value: (String, Double) => XStorage): Self = StObject.set(x, "getDocumentSubStorage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDocumentSubStoragesNames(value: () => SafeArray[String]): Self = StObject.set(x, "getDocumentSubStoragesNames", js.Any.fromFunction0(value))
+    inline def setGetDocumentSubStoragesNames(value: () => SafeArray[String]): Self = StObject.set(x, "getDocumentSubStoragesNames", js.Any.fromFunction0(value))
   }
 }

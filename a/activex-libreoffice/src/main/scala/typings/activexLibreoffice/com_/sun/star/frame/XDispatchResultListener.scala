@@ -24,8 +24,7 @@ trait XDispatchResultListener
 }
 object XDispatchResultListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     dispatchFinished: DispatchResultEvent => Unit,
     disposing: EventObject => Unit,
@@ -36,10 +35,8 @@ object XDispatchResultListener {
     __obj.asInstanceOf[XDispatchResultListener]
   }
   
-  @scala.inline
-  implicit class XDispatchResultListenerMutableBuilder[Self <: XDispatchResultListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDispatchResultListener](x: Self) {
     
-    @scala.inline
-    def setDispatchFinished(value: DispatchResultEvent => Unit): Self = StObject.set(x, "dispatchFinished", js.Any.fromFunction1(value))
+    inline def setDispatchFinished(value: DispatchResultEvent => Unit): Self = StObject.set(x, "dispatchFinished", js.Any.fromFunction1(value))
   }
 }

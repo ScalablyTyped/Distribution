@@ -16,31 +16,23 @@ trait RouteLinkAttrs
 }
 object RouteLinkAttrs {
   
-  @scala.inline
-  def apply(href: String): RouteLinkAttrs = {
+  inline def apply(href: String): RouteLinkAttrs = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteLinkAttrs]
   }
   
-  @scala.inline
-  implicit class RouteLinkAttrsMutableBuilder[Self <: RouteLinkAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: RouteLinkAttrs](x: Self) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: RouteOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: RouteOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String | (ComponentTypes[js.Any, js.Object])): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String | (ComponentTypes[js.Any, js.Object])): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorFunction1(value: /* vnode */ Vnode[js.Any, js.Object] => Component[js.Any, js.Object]): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
+    inline def setSelectorFunction1(value: /* vnode */ Vnode[js.Any, js.Object] => Component[js.Any, js.Object]): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

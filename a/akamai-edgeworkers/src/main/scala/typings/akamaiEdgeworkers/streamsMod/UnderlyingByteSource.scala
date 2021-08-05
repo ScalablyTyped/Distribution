@@ -19,41 +19,30 @@ trait UnderlyingByteSource extends StObject {
 }
 object UnderlyingByteSource {
   
-  @scala.inline
-  def apply(): UnderlyingByteSource = {
+  inline def apply(): UnderlyingByteSource = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("bytes")
     __obj.asInstanceOf[UnderlyingByteSource]
   }
   
-  @scala.inline
-  implicit class UnderlyingByteSourceMutableBuilder[Self <: UnderlyingByteSource] (val x: Self) extends AnyVal {
+  extension [Self <: UnderlyingByteSource](x: Self) {
     
-    @scala.inline
-    def setAutoAllocateChunkSize(value: Double): Self = StObject.set(x, "autoAllocateChunkSize", value.asInstanceOf[js.Any])
+    inline def setAutoAllocateChunkSize(value: Double): Self = StObject.set(x, "autoAllocateChunkSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoAllocateChunkSizeUndefined: Self = StObject.set(x, "autoAllocateChunkSize", js.undefined)
+    inline def setAutoAllocateChunkSizeUndefined: Self = StObject.set(x, "autoAllocateChunkSize", js.undefined)
     
-    @scala.inline
-    def setCancel(value: /* reason */ js.Any => Unit | js.Thenable[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+    inline def setCancel(value: /* reason */ js.Any => Unit | js.Thenable[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setPull(value: /* controller */ ReadableByteStreamController => Unit | js.Thenable[Unit]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
+    inline def setPull(value: /* controller */ ReadableByteStreamController => Unit | js.Thenable[Unit]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
+    inline def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
     
-    @scala.inline
-    def setStart(value: /* controller */ ReadableByteStreamController => Unit | js.Thenable[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* controller */ ReadableByteStreamController => Unit | js.Thenable[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setType(value: bytes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: bytes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,8 +13,7 @@ trait XConnectionPool
      with XDriverAccess
 object XConnectionPool {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LoginTimeout: Double,
     acquire: () => Unit,
     getConnection: String => XConnection,

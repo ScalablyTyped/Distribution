@@ -10,19 +10,15 @@ trait ModifyCertificatesResult extends StObject {
 }
 object ModifyCertificatesResult {
   
-  @scala.inline
-  def apply(): ModifyCertificatesResult = {
+  inline def apply(): ModifyCertificatesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyCertificatesResult]
   }
   
-  @scala.inline
-  implicit class ModifyCertificatesResultMutableBuilder[Self <: ModifyCertificatesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyCertificatesResult](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
   }
 }

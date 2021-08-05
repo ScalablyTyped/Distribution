@@ -18,31 +18,23 @@ trait WordNetLookupResults extends StObject {
 }
 object WordNetLookupResults {
   
-  @scala.inline
-  def apply(gloss: String, lemma: String, pos: String, synonyms: js.Array[String], synsetOffset: Double): WordNetLookupResults = {
+  inline def apply(gloss: String, lemma: String, pos: String, synonyms: js.Array[String], synsetOffset: Double): WordNetLookupResults = {
     val __obj = js.Dynamic.literal(gloss = gloss.asInstanceOf[js.Any], lemma = lemma.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], synonyms = synonyms.asInstanceOf[js.Any], synsetOffset = synsetOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[WordNetLookupResults]
   }
   
-  @scala.inline
-  implicit class WordNetLookupResultsMutableBuilder[Self <: WordNetLookupResults] (val x: Self) extends AnyVal {
+  extension [Self <: WordNetLookupResults](x: Self) {
     
-    @scala.inline
-    def setGloss(value: String): Self = StObject.set(x, "gloss", value.asInstanceOf[js.Any])
+    inline def setGloss(value: String): Self = StObject.set(x, "gloss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLemma(value: String): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
+    inline def setLemma(value: String): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
+    inline def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+    inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
     
-    @scala.inline
-    def setSynsetOffset(value: Double): Self = StObject.set(x, "synsetOffset", value.asInstanceOf[js.Any])
+    inline def setSynsetOffset(value: Double): Self = StObject.set(x, "synsetOffset", value.asInstanceOf[js.Any])
   }
 }

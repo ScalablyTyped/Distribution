@@ -14,27 +14,22 @@ trait Resources extends StObject {
 }
 object Resources {
   
-  @scala.inline
-  def apply(): Resources = {
+  inline def apply(): Resources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Resources]
   }
   
-  @scala.inline
-  implicit class ResourcesMutableBuilder[Self <: Resources] (val x: Self) extends AnyVal {
+  extension [Self <: Resources](x: Self) {
     
-    @scala.inline
-    def setResources(
+    inline def setResources(
       value: js.Array[
           /* A name-value pair that describes an item and provides a value for the item. */ NameValue
         ]
     ): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(
+    inline def setResourcesVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
     ): Self = StObject.set(x, "resources", js.Array(value :_*))
   }

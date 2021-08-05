@@ -14,25 +14,19 @@ trait SDPHeaderExtension extends StObject {
 }
 object SDPHeaderExtension {
   
-  @scala.inline
-  def apply(id: Double, uri: String): SDPHeaderExtension = {
+  inline def apply(id: Double, uri: String): SDPHeaderExtension = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDPHeaderExtension]
   }
   
-  @scala.inline
-  implicit class SDPHeaderExtensionMutableBuilder[Self <: SDPHeaderExtension] (val x: Self) extends AnyVal {
+  extension [Self <: SDPHeaderExtension](x: Self) {
     
-    @scala.inline
-    def setDirection(value: SDPDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: SDPDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

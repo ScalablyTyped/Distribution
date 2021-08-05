@@ -46,8 +46,7 @@ trait BuildDefinitionTemplate extends StObject {
 }
 object BuildDefinitionTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canDelete: Boolean,
     category: String,
     description: String,
@@ -61,31 +60,22 @@ object BuildDefinitionTemplate {
     __obj.asInstanceOf[BuildDefinitionTemplate]
   }
   
-  @scala.inline
-  implicit class BuildDefinitionTemplateMutableBuilder[Self <: BuildDefinitionTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: BuildDefinitionTemplate](x: Self) {
     
-    @scala.inline
-    def setCanDelete(value: Boolean): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
+    inline def setCanDelete(value: Boolean): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconTaskId(value: String): Self = StObject.set(x, "iconTaskId", value.asInstanceOf[js.Any])
+    inline def setIconTaskId(value: String): Self = StObject.set(x, "iconTaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcons(value: StringDictionary[String]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: StringDictionary[String]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: BuildDefinition): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: BuildDefinition): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleBorderWidth extends StObject
 object styleBorderWidth {
   
-  @scala.inline
-  def styleBorderWidthMedium: `1` = 1.asInstanceOf[`1`]
+  inline def styleBorderWidthMedium: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleBorderWidthThick: `2` = 2.asInstanceOf[`2`]
+  inline def styleBorderWidthThick: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleBorderWidthThin: `0` = 0.asInstanceOf[`0`]
+  inline def styleBorderWidthThin: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleBorderWidth_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleBorderWidth_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

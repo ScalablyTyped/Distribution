@@ -30,32 +30,24 @@ object typesListTablesOutputMod {
   }
   object ListTablesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListTablesOutput = {
+    inline def apply($metadata: ResponseMetadata): ListTablesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListTablesOutput]
     }
     
-    @scala.inline
-    implicit class ListTablesOutputMutableBuilder[Self <: ListTablesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListTablesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastEvaluatedTableName(value: String): Self = StObject.set(x, "LastEvaluatedTableName", value.asInstanceOf[js.Any])
+      inline def setLastEvaluatedTableName(value: String): Self = StObject.set(x, "LastEvaluatedTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastEvaluatedTableNameUndefined: Self = StObject.set(x, "LastEvaluatedTableName", js.undefined)
+      inline def setLastEvaluatedTableNameUndefined: Self = StObject.set(x, "LastEvaluatedTableName", js.undefined)
       
-      @scala.inline
-      def setTableNames(value: js.Array[String]): Self = StObject.set(x, "TableNames", value.asInstanceOf[js.Any])
+      inline def setTableNames(value: js.Array[String]): Self = StObject.set(x, "TableNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNamesUndefined: Self = StObject.set(x, "TableNames", js.undefined)
+      inline def setTableNamesUndefined: Self = StObject.set(x, "TableNames", js.undefined)
       
-      @scala.inline
-      def setTableNamesVarargs(value: String*): Self = StObject.set(x, "TableNames", js.Array(value :_*))
+      inline def setTableNamesVarargs(value: String*): Self = StObject.set(x, "TableNames", js.Array(value :_*))
     }
   }
 }

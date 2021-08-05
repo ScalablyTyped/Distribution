@@ -14,8 +14,7 @@ trait Automatic extends StObject {
 }
 object Automatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     automatic: scala.Double,
     deploymentSubmitter: scala.Double,
     firstPreDeploymentApprover: scala.Double
@@ -24,16 +23,12 @@ object Automatic {
     __obj.asInstanceOf[Automatic]
   }
   
-  @scala.inline
-  implicit class AutomaticMutableBuilder[Self <: Automatic] (val x: Self) extends AnyVal {
+  extension [Self <: Automatic](x: Self) {
     
-    @scala.inline
-    def setAutomatic(value: scala.Double): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
+    inline def setAutomatic(value: scala.Double): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentSubmitter(value: scala.Double): Self = StObject.set(x, "deploymentSubmitter", value.asInstanceOf[js.Any])
+    inline def setDeploymentSubmitter(value: scala.Double): Self = StObject.set(x, "deploymentSubmitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPreDeploymentApprover(value: scala.Double): Self = StObject.set(x, "firstPreDeploymentApprover", value.asInstanceOf[js.Any])
+    inline def setFirstPreDeploymentApprover(value: scala.Double): Self = StObject.set(x, "firstPreDeploymentApprover", value.asInstanceOf[js.Any])
   }
 }

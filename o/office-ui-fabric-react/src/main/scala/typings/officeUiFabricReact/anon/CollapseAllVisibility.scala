@@ -15,8 +15,7 @@ trait CollapseAllVisibility extends StObject {
 }
 object CollapseAllVisibility {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collapseAllVisibility: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility,
     selectAllVisibility: SelectAllVisibility,
     useFastIcons: Boolean
@@ -25,16 +24,12 @@ object CollapseAllVisibility {
     __obj.asInstanceOf[CollapseAllVisibility]
   }
   
-  @scala.inline
-  implicit class CollapseAllVisibilityMutableBuilder[Self <: CollapseAllVisibility] (val x: Self) extends AnyVal {
+  extension [Self <: CollapseAllVisibility](x: Self) {
     
-    @scala.inline
-    def setCollapseAllVisibility(value: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility): Self = StObject.set(x, "collapseAllVisibility", value.asInstanceOf[js.Any])
+    inline def setCollapseAllVisibility(value: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility): Self = StObject.set(x, "collapseAllVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectAllVisibility(value: SelectAllVisibility): Self = StObject.set(x, "selectAllVisibility", value.asInstanceOf[js.Any])
+    inline def setSelectAllVisibility(value: SelectAllVisibility): Self = StObject.set(x, "selectAllVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFastIcons(value: Boolean): Self = StObject.set(x, "useFastIcons", value.asInstanceOf[js.Any])
+    inline def setUseFastIcons(value: Boolean): Self = StObject.set(x, "useFastIcons", value.asInstanceOf[js.Any])
   }
 }

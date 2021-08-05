@@ -13,9 +13,9 @@ object observerDoObserverMod {
   class DoObserver protected () extends Observer {
     def this(currentObserver: IObserver, prevObserver: IObserver) = this()
     
-    var _currentObserver: js.Any = js.native
+    /* private */ var _currentObserver: js.Any = js.native
     
-    var _prevObserver: js.Any = js.native
+    /* private */ var _prevObserver: js.Any = js.native
   }
   /* static members */
   object DoObserver {
@@ -24,7 +24,6 @@ object observerDoObserverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(currentObserver: IObserver, prevObserver: IObserver): DoObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], prevObserver.asInstanceOf[js.Any])).asInstanceOf[DoObserver]
+    inline def create(currentObserver: IObserver, prevObserver: IObserver): DoObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], prevObserver.asInstanceOf[js.Any])).asInstanceOf[DoObserver]
   }
 }

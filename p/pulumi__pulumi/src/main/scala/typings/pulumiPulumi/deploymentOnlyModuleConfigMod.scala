@@ -16,7 +16,7 @@ object deploymentOnlyModuleConfigMod {
       *
       * @param key The key to lookup.
       */
-    var fullKey: js.Any = js.native
+    /* private */ var fullKey: js.Any = js.native
     
     /**
       * get loads an optional configuration value by its key, or undefined if it doesn't exist.

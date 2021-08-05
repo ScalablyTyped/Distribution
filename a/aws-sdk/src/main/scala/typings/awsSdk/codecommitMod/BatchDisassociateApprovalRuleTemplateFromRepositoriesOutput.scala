@@ -18,8 +18,7 @@ trait BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput extends StObje
 }
 object BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disassociatedRepositoryNames: RepositoryNameList,
     errors: BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorsList
   ): BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput = {
@@ -27,19 +26,14 @@ object BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput {
     __obj.asInstanceOf[BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput]
   }
   
-  @scala.inline
-  implicit class BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputMutableBuilder[Self <: BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput](x: Self) {
     
-    @scala.inline
-    def setDisassociatedRepositoryNames(value: RepositoryNameList): Self = StObject.set(x, "disassociatedRepositoryNames", value.asInstanceOf[js.Any])
+    inline def setDisassociatedRepositoryNames(value: RepositoryNameList): Self = StObject.set(x, "disassociatedRepositoryNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisassociatedRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "disassociatedRepositoryNames", js.Array(value :_*))
+    inline def setDisassociatedRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "disassociatedRepositoryNames", js.Array(value :_*))
     
-    @scala.inline
-    def setErrors(value: BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorsList): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorsList): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: BatchDisassociateApprovalRuleTemplateFromRepositoriesError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: BatchDisassociateApprovalRuleTemplateFromRepositoriesError*): Self = StObject.set(x, "errors", js.Array(value :_*))
   }
 }

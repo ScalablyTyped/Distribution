@@ -12,19 +12,15 @@ trait StateReturnModelColumns extends StObject {
 }
 object StateReturnModelColumns {
   
-  @scala.inline
-  def apply(search: SearchSettings, visible: Boolean): StateReturnModelColumns = {
+  inline def apply(search: SearchSettings, visible: Boolean): StateReturnModelColumns = {
     val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateReturnModelColumns]
   }
   
-  @scala.inline
-  implicit class StateReturnModelColumnsMutableBuilder[Self <: StateReturnModelColumns] (val x: Self) extends AnyVal {
+  extension [Self <: StateReturnModelColumns](x: Self) {
     
-    @scala.inline
-    def setSearch(value: SearchSettings): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: SearchSettings): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

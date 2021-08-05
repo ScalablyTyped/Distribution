@@ -31,8 +31,7 @@ object mod {
     @JSImport("@bang88/react-native-drawer-layout", "default.positions")
     @js.native
     def positions: Left = js.native
-    @scala.inline
-    def positions_=(x: Left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("positions")(x.asInstanceOf[js.Any])
+    inline def positions_=(x: Left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("positions")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -142,86 +141,60 @@ object mod {
   }
   object DrawerLayoutProperties {
     
-    @scala.inline
-    def apply(drawerPosition: left | right, drawerWidth: Double): DrawerLayoutProperties = {
+    inline def apply(drawerPosition: left | right, drawerWidth: Double): DrawerLayoutProperties = {
       val __obj = js.Dynamic.literal(drawerPosition = drawerPosition.asInstanceOf[js.Any], drawerWidth = drawerWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[DrawerLayoutProperties]
     }
     
-    @scala.inline
-    implicit class DrawerLayoutPropertiesMutableBuilder[Self <: DrawerLayoutProperties] (val x: Self) extends AnyVal {
+    extension [Self <: DrawerLayoutProperties](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDrawerBackgroundColor(value: String): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setDrawerBackgroundColor(value: String): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerBackgroundColorUndefined: Self = StObject.set(x, "drawerBackgroundColor", js.undefined)
+      inline def setDrawerBackgroundColorUndefined: Self = StObject.set(x, "drawerBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setDrawerLockMode(value: unlocked | `locked-closed` | `locked-open`): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
+      inline def setDrawerLockMode(value: unlocked | `locked-closed` | `locked-open`): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerLockModeUndefined: Self = StObject.set(x, "drawerLockMode", js.undefined)
+      inline def setDrawerLockModeUndefined: Self = StObject.set(x, "drawerLockMode", js.undefined)
       
-      @scala.inline
-      def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
+      inline def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerWidth(value: Double): Self = StObject.set(x, "drawerWidth", value.asInstanceOf[js.Any])
+      inline def setDrawerWidth(value: Double): Self = StObject.set(x, "drawerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+      inline def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
+      inline def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
       
-      @scala.inline
-      def setOnDrawerClose(value: () => Unit): Self = StObject.set(x, "onDrawerClose", js.Any.fromFunction0(value))
+      inline def setOnDrawerClose(value: () => Unit): Self = StObject.set(x, "onDrawerClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDrawerCloseUndefined: Self = StObject.set(x, "onDrawerClose", js.undefined)
+      inline def setOnDrawerCloseUndefined: Self = StObject.set(x, "onDrawerClose", js.undefined)
       
-      @scala.inline
-      def setOnDrawerOpen(value: () => Unit): Self = StObject.set(x, "onDrawerOpen", js.Any.fromFunction0(value))
+      inline def setOnDrawerOpen(value: () => Unit): Self = StObject.set(x, "onDrawerOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDrawerOpenUndefined: Self = StObject.set(x, "onDrawerOpen", js.undefined)
+      inline def setOnDrawerOpenUndefined: Self = StObject.set(x, "onDrawerOpen", js.undefined)
       
-      @scala.inline
-      def setOnDrawerSlide(value: /* event */ DrawerLayoutSlideEvent => Unit): Self = StObject.set(x, "onDrawerSlide", js.Any.fromFunction1(value))
+      inline def setOnDrawerSlide(value: /* event */ DrawerLayoutSlideEvent => Unit): Self = StObject.set(x, "onDrawerSlide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDrawerSlideUndefined: Self = StObject.set(x, "onDrawerSlide", js.undefined)
+      inline def setOnDrawerSlideUndefined: Self = StObject.set(x, "onDrawerSlide", js.undefined)
       
-      @scala.inline
-      def setOnDrawerStateChanged(value: /* state */ String => Unit): Self = StObject.set(x, "onDrawerStateChanged", js.Any.fromFunction1(value))
+      inline def setOnDrawerStateChanged(value: /* state */ String => Unit): Self = StObject.set(x, "onDrawerStateChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDrawerStateChangedUndefined: Self = StObject.set(x, "onDrawerStateChanged", js.undefined)
+      inline def setOnDrawerStateChangedUndefined: Self = StObject.set(x, "onDrawerStateChanged", js.undefined)
       
-      @scala.inline
-      def setRenderNavigationView(value: ReactNode): Self = StObject.set(x, "renderNavigationView", value.asInstanceOf[js.Any])
+      inline def setRenderNavigationView(value: ReactNode): Self = StObject.set(x, "renderNavigationView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderNavigationViewUndefined: Self = StObject.set(x, "renderNavigationView", js.undefined)
+      inline def setRenderNavigationViewUndefined: Self = StObject.set(x, "renderNavigationView", js.undefined)
       
-      @scala.inline
-      def setStatusBarBackgroundColor(value: String): Self = StObject.set(x, "statusBarBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setStatusBarBackgroundColor(value: String): Self = StObject.set(x, "statusBarBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusBarBackgroundColorUndefined: Self = StObject.set(x, "statusBarBackgroundColor", js.undefined)
+      inline def setStatusBarBackgroundColorUndefined: Self = StObject.set(x, "statusBarBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setUseNativeAnimations(value: Boolean): Self = StObject.set(x, "useNativeAnimations", value.asInstanceOf[js.Any])
+      inline def setUseNativeAnimations(value: Boolean): Self = StObject.set(x, "useNativeAnimations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeAnimationsUndefined: Self = StObject.set(x, "useNativeAnimations", js.undefined)
+      inline def setUseNativeAnimationsUndefined: Self = StObject.set(x, "useNativeAnimations", js.undefined)
     }
   }
   
@@ -231,17 +204,14 @@ object mod {
   }
   object DrawerLayoutSlideEvent {
     
-    @scala.inline
-    def apply(nativeEvent: Offset): DrawerLayoutSlideEvent = {
+    inline def apply(nativeEvent: Offset): DrawerLayoutSlideEvent = {
       val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[DrawerLayoutSlideEvent]
     }
     
-    @scala.inline
-    implicit class DrawerLayoutSlideEventMutableBuilder[Self <: DrawerLayoutSlideEvent] (val x: Self) extends AnyVal {
+    extension [Self <: DrawerLayoutSlideEvent](x: Self) {
       
-      @scala.inline
-      def setNativeEvent(value: Offset): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+      inline def setNativeEvent(value: Offset): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }
   }
   

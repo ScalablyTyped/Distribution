@@ -26,8 +26,7 @@ trait XActivationEventListener
 }
 object XActivationEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     activeSpreadsheetChanged: ActivationEvent => Unit,
     disposing: EventObject => Unit,
@@ -38,10 +37,8 @@ object XActivationEventListener {
     __obj.asInstanceOf[XActivationEventListener]
   }
   
-  @scala.inline
-  implicit class XActivationEventListenerMutableBuilder[Self <: XActivationEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: XActivationEventListener](x: Self) {
     
-    @scala.inline
-    def setActiveSpreadsheetChanged(value: ActivationEvent => Unit): Self = StObject.set(x, "activeSpreadsheetChanged", js.Any.fromFunction1(value))
+    inline def setActiveSpreadsheetChanged(value: ActivationEvent => Unit): Self = StObject.set(x, "activeSpreadsheetChanged", js.Any.fromFunction1(value))
   }
 }

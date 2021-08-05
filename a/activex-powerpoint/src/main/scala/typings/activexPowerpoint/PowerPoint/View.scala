@@ -47,7 +47,7 @@ trait View extends StObject {
   
   def Player(ShapeId: js.Any): typings.activexPowerpoint.PowerPoint.Player = js.native
   
-  @JSName("PowerPoint.View_typekey")
+  /* private */ @JSName("PowerPoint.View_typekey")
   var PowerPointDotView_typekey: View = js.native
   
   val PrintOptions: typings.activexPowerpoint.PowerPoint.PrintOptions = js.native

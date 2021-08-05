@@ -24,7 +24,7 @@ class IonSegmentButton protected ()
   /* CompleteClass */
   var disabled: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * The type of the button.
@@ -38,5 +38,5 @@ class IonSegmentButton protected ()
   /* CompleteClass */
   var value: String = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

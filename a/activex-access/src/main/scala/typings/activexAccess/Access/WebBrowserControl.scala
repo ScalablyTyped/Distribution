@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WebBrowserControl extends StObject {
   
-  @JSName("Access.WebBrowserControl_typekey")
+  /* private */ @JSName("Access.WebBrowserControl_typekey")
   var AccessDotWebBrowserControl_typekey: WebBrowserControl = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native

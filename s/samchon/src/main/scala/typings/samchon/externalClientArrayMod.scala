@@ -82,6 +82,6 @@ object externalClientArrayMod {
     /**
       * @hidden
       */
-    var server_base_ : js.Any = js.native
+    /* private */ var server_base_ : js.Any = js.native
   }
 }

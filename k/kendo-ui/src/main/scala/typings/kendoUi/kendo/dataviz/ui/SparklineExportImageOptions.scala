@@ -12,25 +12,19 @@ trait SparklineExportImageOptions extends StObject {
 }
 object SparklineExportImageOptions {
   
-  @scala.inline
-  def apply(): SparklineExportImageOptions = {
+  inline def apply(): SparklineExportImageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SparklineExportImageOptions]
   }
   
-  @scala.inline
-  implicit class SparklineExportImageOptionsMutableBuilder[Self <: SparklineExportImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SparklineExportImageOptions](x: Self) {
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

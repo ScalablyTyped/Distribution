@@ -13,19 +13,15 @@ trait ListUserIDsResponse extends StObject {
 }
 object ListUserIDsResponse {
   
-  @scala.inline
-  def apply(userIDs: js.Array[UserIDResponse]): ListUserIDsResponse = {
+  inline def apply(userIDs: js.Array[UserIDResponse]): ListUserIDsResponse = {
     val __obj = js.Dynamic.literal(userIDs = userIDs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUserIDsResponse]
   }
   
-  @scala.inline
-  implicit class ListUserIDsResponseMutableBuilder[Self <: ListUserIDsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUserIDsResponse](x: Self) {
     
-    @scala.inline
-    def setUserIDs(value: js.Array[UserIDResponse]): Self = StObject.set(x, "userIDs", value.asInstanceOf[js.Any])
+    inline def setUserIDs(value: js.Array[UserIDResponse]): Self = StObject.set(x, "userIDs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIDsVarargs(value: UserIDResponse*): Self = StObject.set(x, "userIDs", js.Array(value :_*))
+    inline def setUserIDsVarargs(value: UserIDResponse*): Self = StObject.set(x, "userIDs", js.Array(value :_*))
   }
 }

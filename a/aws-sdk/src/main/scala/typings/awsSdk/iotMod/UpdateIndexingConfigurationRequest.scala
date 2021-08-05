@@ -18,25 +18,19 @@ trait UpdateIndexingConfigurationRequest extends StObject {
 }
 object UpdateIndexingConfigurationRequest {
   
-  @scala.inline
-  def apply(): UpdateIndexingConfigurationRequest = {
+  inline def apply(): UpdateIndexingConfigurationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateIndexingConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateIndexingConfigurationRequestMutableBuilder[Self <: UpdateIndexingConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateIndexingConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setThingGroupIndexingConfiguration(value: ThingGroupIndexingConfiguration): Self = StObject.set(x, "thingGroupIndexingConfiguration", value.asInstanceOf[js.Any])
+    inline def setThingGroupIndexingConfiguration(value: ThingGroupIndexingConfiguration): Self = StObject.set(x, "thingGroupIndexingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingGroupIndexingConfigurationUndefined: Self = StObject.set(x, "thingGroupIndexingConfiguration", js.undefined)
+    inline def setThingGroupIndexingConfigurationUndefined: Self = StObject.set(x, "thingGroupIndexingConfiguration", js.undefined)
     
-    @scala.inline
-    def setThingIndexingConfiguration(value: ThingIndexingConfiguration): Self = StObject.set(x, "thingIndexingConfiguration", value.asInstanceOf[js.Any])
+    inline def setThingIndexingConfiguration(value: ThingIndexingConfiguration): Self = StObject.set(x, "thingIndexingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingIndexingConfigurationUndefined: Self = StObject.set(x, "thingIndexingConfiguration", js.undefined)
+    inline def setThingIndexingConfigurationUndefined: Self = StObject.set(x, "thingIndexingConfiguration", js.undefined)
   }
 }

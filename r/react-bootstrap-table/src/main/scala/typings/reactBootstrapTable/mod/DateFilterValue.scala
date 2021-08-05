@@ -15,19 +15,15 @@ trait DateFilterValue
 }
 object DateFilterValue {
   
-  @scala.inline
-  def apply(comparator: FilterComparator, date: Date | String): DateFilterValue = {
+  inline def apply(comparator: FilterComparator, date: Date | String): DateFilterValue = {
     val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateFilterValue]
   }
   
-  @scala.inline
-  implicit class DateFilterValueMutableBuilder[Self <: DateFilterValue] (val x: Self) extends AnyVal {
+  extension [Self <: DateFilterValue](x: Self) {
     
-    @scala.inline
-    def setComparator(value: FilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+    inline def setComparator(value: FilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

@@ -17,11 +17,9 @@ object environmentAliasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapEnvironmentAlias(http: AxiosInstance, data: EnvironmentAliasProps): EnvironmentAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEnvironmentAlias")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[EnvironmentAlias]
+  inline def wrapEnvironmentAlias(http: AxiosInstance, data: EnvironmentAliasProps): EnvironmentAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEnvironmentAlias")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[EnvironmentAlias]
   
-  @scala.inline
-  def wrapEnvironmentAliasCollection(http: AxiosInstance, data: CollectionProp[EnvironmentAliasProps]): Collection[EnvironmentAlias, EnvironmentAliasProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEnvironmentAliasCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[EnvironmentAlias, EnvironmentAliasProps]]
+  inline def wrapEnvironmentAliasCollection(http: AxiosInstance, data: CollectionProp[EnvironmentAliasProps]): Collection[EnvironmentAlias, EnvironmentAliasProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEnvironmentAliasCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[EnvironmentAlias, EnvironmentAliasProps]]
   
   trait EnvironmentAlias
     extends StObject
@@ -54,8 +52,7 @@ object environmentAliasMod {
   }
   object EnvironmentAlias {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       environment: MetaLinkProps,
       sys: MetaSysProps,
       toPlainObject: () => EnvironmentAliasProps,
@@ -65,11 +62,9 @@ object environmentAliasMod {
       __obj.asInstanceOf[EnvironmentAlias]
     }
     
-    @scala.inline
-    implicit class EnvironmentAliasMutableBuilder[Self <: EnvironmentAlias] (val x: Self) extends AnyVal {
+    extension [Self <: EnvironmentAlias](x: Self) {
       
-      @scala.inline
-      def setUpdate(value: OmitEnvironmentAliasProps => js.Promise[EnvironmentAlias]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: OmitEnvironmentAliasProps => js.Promise[EnvironmentAlias]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -84,20 +79,16 @@ object environmentAliasMod {
   }
   object EnvironmentAliasProps {
     
-    @scala.inline
-    def apply(environment: MetaLinkProps, sys: MetaSysProps): EnvironmentAliasProps = {
+    inline def apply(environment: MetaLinkProps, sys: MetaSysProps): EnvironmentAliasProps = {
       val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnvironmentAliasProps]
     }
     
-    @scala.inline
-    implicit class EnvironmentAliasPropsMutableBuilder[Self <: EnvironmentAliasProps] (val x: Self) extends AnyVal {
+    extension [Self <: EnvironmentAliasProps](x: Self) {
       
-      @scala.inline
-      def setEnvironment(value: MetaLinkProps): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: MetaLinkProps): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

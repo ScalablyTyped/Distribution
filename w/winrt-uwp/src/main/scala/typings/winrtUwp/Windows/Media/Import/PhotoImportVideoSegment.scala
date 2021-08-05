@@ -26,8 +26,7 @@ trait PhotoImportVideoSegment extends StObject {
 }
 object PhotoImportVideoSegment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     date: Date,
     name: String,
     sibling: PhotoImportSidecar,
@@ -38,22 +37,16 @@ object PhotoImportVideoSegment {
     __obj.asInstanceOf[PhotoImportVideoSegment]
   }
   
-  @scala.inline
-  implicit class PhotoImportVideoSegmentMutableBuilder[Self <: PhotoImportVideoSegment] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoImportVideoSegment](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSibling(value: PhotoImportSidecar): Self = StObject.set(x, "sibling", value.asInstanceOf[js.Any])
+    inline def setSibling(value: PhotoImportSidecar): Self = StObject.set(x, "sibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidecars(value: IVectorView[PhotoImportSidecar]): Self = StObject.set(x, "sidecars", value.asInstanceOf[js.Any])
+    inline def setSidecars(value: IVectorView[PhotoImportSidecar]): Self = StObject.set(x, "sidecars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInBytes(value: Double): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSizeInBytes(value: Double): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait ActivityMetrics extends StObject {
 }
 object ActivityMetrics {
   
-  @scala.inline
-  def apply(): ActivityMetrics = {
+  inline def apply(): ActivityMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivityMetrics]
   }
   
-  @scala.inline
-  implicit class ActivityMetricsMutableBuilder[Self <: ActivityMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityMetrics](x: Self) {
     
-    @scala.inline
-    def setIsEnabled(value: IsEnabled): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: IsEnabled): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabledUndefined: Self = StObject.set(x, "IsEnabled", js.undefined)
+    inline def setIsEnabledUndefined: Self = StObject.set(x, "IsEnabled", js.undefined)
   }
 }

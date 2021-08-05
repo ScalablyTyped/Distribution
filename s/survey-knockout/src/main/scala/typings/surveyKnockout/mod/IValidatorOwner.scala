@@ -18,8 +18,7 @@ trait IValidatorOwner extends StObject {
 }
 object IValidatorOwner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDataFilteredProperties: () => js.Any,
     getDataFilteredValues: () => js.Any,
     getValidatorTitle: () => String,
@@ -30,22 +29,16 @@ object IValidatorOwner {
     __obj.asInstanceOf[IValidatorOwner]
   }
   
-  @scala.inline
-  implicit class IValidatorOwnerMutableBuilder[Self <: IValidatorOwner] (val x: Self) extends AnyVal {
+  extension [Self <: IValidatorOwner](x: Self) {
     
-    @scala.inline
-    def setGetDataFilteredProperties(value: () => js.Any): Self = StObject.set(x, "getDataFilteredProperties", js.Any.fromFunction0(value))
+    inline def setGetDataFilteredProperties(value: () => js.Any): Self = StObject.set(x, "getDataFilteredProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDataFilteredValues(value: () => js.Any): Self = StObject.set(x, "getDataFilteredValues", js.Any.fromFunction0(value))
+    inline def setGetDataFilteredValues(value: () => js.Any): Self = StObject.set(x, "getDataFilteredValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValidatorTitle(value: () => String): Self = StObject.set(x, "getValidatorTitle", js.Any.fromFunction0(value))
+    inline def setGetValidatorTitle(value: () => String): Self = StObject.set(x, "getValidatorTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValidators(value: () => js.Array[SurveyValidator]): Self = StObject.set(x, "getValidators", js.Any.fromFunction0(value))
+    inline def setGetValidators(value: () => js.Array[SurveyValidator]): Self = StObject.set(x, "getValidators", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValidatedValue(value: js.Any): Self = StObject.set(x, "validatedValue", value.asInstanceOf[js.Any])
+    inline def setValidatedValue(value: js.Any): Self = StObject.set(x, "validatedValue", value.asInstanceOf[js.Any])
   }
 }

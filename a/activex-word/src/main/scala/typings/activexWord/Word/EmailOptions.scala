@@ -90,13 +90,12 @@ trait EmailOptions extends StObject {
   
   var UseThemeStyleOnReply: Boolean
   
-  @JSName("Word.EmailOptions_typekey")
+  /* private */ @JSName("Word.EmailOptions_typekey")
   var WordDotEmailOptions_typekey: EmailOptions
 }
 object EmailOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     AutoFormatAsYouTypeApplyBorders: Boolean,
     AutoFormatAsYouTypeApplyBulletedLists: Boolean,
@@ -146,136 +145,92 @@ object EmailOptions {
     __obj.asInstanceOf[EmailOptions]
   }
   
-  @scala.inline
-  implicit class EmailOptionsMutableBuilder[Self <: EmailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EmailOptions](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeApplyBorders(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyBorders", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeApplyBorders(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyBorders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeApplyBulletedLists(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyBulletedLists", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeApplyBulletedLists(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyBulletedLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeApplyClosings(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyClosings", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeApplyClosings(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyClosings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeApplyDates(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyDates", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeApplyDates(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyDates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeApplyFirstIndents(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyFirstIndents", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeApplyFirstIndents(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyFirstIndents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeApplyHeadings(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyHeadings", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeApplyHeadings(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyHeadings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeApplyNumberedLists(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyNumberedLists", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeApplyNumberedLists(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyNumberedLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeApplyTables(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyTables", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeApplyTables(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeAutoLetterWizard(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeAutoLetterWizard", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeAutoLetterWizard(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeAutoLetterWizard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeDefineStyles(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeDefineStyles", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeDefineStyles(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeDefineStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeDeleteAutoSpaces(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeDeleteAutoSpaces", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeDeleteAutoSpaces(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeDeleteAutoSpaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeFormatListItemBeginning(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeFormatListItemBeginning", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeFormatListItemBeginning(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeFormatListItemBeginning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeInsertClosings(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeInsertClosings", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeInsertClosings(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeInsertClosings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeInsertOvers(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeInsertOvers", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeInsertOvers(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeInsertOvers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeMatchParentheses(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeMatchParentheses", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeMatchParentheses(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeMatchParentheses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeReplaceFarEastDashes(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceFarEastDashes", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeReplaceFarEastDashes(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceFarEastDashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeReplaceFractions(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceFractions", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeReplaceFractions(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceFractions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeReplaceHyperlinks(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceHyperlinks", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeReplaceHyperlinks(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceHyperlinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeReplaceOrdinals(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceOrdinals", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeReplaceOrdinals(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceOrdinals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeReplacePlainTextEmphasis(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplacePlainTextEmphasis", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeReplacePlainTextEmphasis(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplacePlainTextEmphasis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeReplaceQuotes(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceQuotes", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeReplaceQuotes(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceQuotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatAsYouTypeReplaceSymbols(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceSymbols", value.asInstanceOf[js.Any])
+    inline def setAutoFormatAsYouTypeReplaceSymbols(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceSymbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComposeStyle(value: Style): Self = StObject.set(x, "ComposeStyle", value.asInstanceOf[js.Any])
+    inline def setComposeStyle(value: Style): Self = StObject.set(x, "ComposeStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDummy1(value: Boolean): Self = StObject.set(x, "Dummy1", value.asInstanceOf[js.Any])
+    inline def setDummy1(value: Boolean): Self = StObject.set(x, "Dummy1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDummy2(value: Boolean): Self = StObject.set(x, "Dummy2", value.asInstanceOf[js.Any])
+    inline def setDummy2(value: Boolean): Self = StObject.set(x, "Dummy2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDummy3(value: () => Unit): Self = StObject.set(x, "Dummy3", js.Any.fromFunction0(value))
+    inline def setDummy3(value: () => Unit): Self = StObject.set(x, "Dummy3", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEmailSignature(value: EmailSignature): Self = StObject.set(x, "EmailSignature", value.asInstanceOf[js.Any])
+    inline def setEmailSignature(value: EmailSignature): Self = StObject.set(x, "EmailSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedSmartTag(value: Boolean): Self = StObject.set(x, "EmbedSmartTag", value.asInstanceOf[js.Any])
+    inline def setEmbedSmartTag(value: Boolean): Self = StObject.set(x, "EmbedSmartTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLFidelity(value: WdEmailHTMLFidelity): Self = StObject.set(x, "HTMLFidelity", value.asInstanceOf[js.Any])
+    inline def setHTMLFidelity(value: WdEmailHTMLFidelity): Self = StObject.set(x, "HTMLFidelity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkComments(value: Boolean): Self = StObject.set(x, "MarkComments", value.asInstanceOf[js.Any])
+    inline def setMarkComments(value: Boolean): Self = StObject.set(x, "MarkComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkCommentsWith(value: String): Self = StObject.set(x, "MarkCommentsWith", value.asInstanceOf[js.Any])
+    inline def setMarkCommentsWith(value: String): Self = StObject.set(x, "MarkCommentsWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewColorOnReply(value: Boolean): Self = StObject.set(x, "NewColorOnReply", value.asInstanceOf[js.Any])
+    inline def setNewColorOnReply(value: Boolean): Self = StObject.set(x, "NewColorOnReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlainTextStyle(value: Style): Self = StObject.set(x, "PlainTextStyle", value.asInstanceOf[js.Any])
+    inline def setPlainTextStyle(value: Style): Self = StObject.set(x, "PlainTextStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelyOnCSS(value: Boolean): Self = StObject.set(x, "RelyOnCSS", value.asInstanceOf[js.Any])
+    inline def setRelyOnCSS(value: Boolean): Self = StObject.set(x, "RelyOnCSS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyStyle(value: Style): Self = StObject.set(x, "ReplyStyle", value.asInstanceOf[js.Any])
+    inline def setReplyStyle(value: Style): Self = StObject.set(x, "ReplyStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabIndentKey(value: Boolean): Self = StObject.set(x, "TabIndentKey", value.asInstanceOf[js.Any])
+    inline def setTabIndentKey(value: Boolean): Self = StObject.set(x, "TabIndentKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeName(value: String): Self = StObject.set(x, "ThemeName", value.asInstanceOf[js.Any])
+    inline def setThemeName(value: String): Self = StObject.set(x, "ThemeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseThemeStyle(value: Boolean): Self = StObject.set(x, "UseThemeStyle", value.asInstanceOf[js.Any])
+    inline def setUseThemeStyle(value: Boolean): Self = StObject.set(x, "UseThemeStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseThemeStyleOnReply(value: Boolean): Self = StObject.set(x, "UseThemeStyleOnReply", value.asInstanceOf[js.Any])
+    inline def setUseThemeStyleOnReply(value: Boolean): Self = StObject.set(x, "UseThemeStyleOnReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotEmailOptions_typekey(value: EmailOptions): Self = StObject.set(x, "Word.EmailOptions_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotEmailOptions_typekey(value: EmailOptions): Self = StObject.set(x, "Word.EmailOptions_typekey", value.asInstanceOf[js.Any])
   }
 }

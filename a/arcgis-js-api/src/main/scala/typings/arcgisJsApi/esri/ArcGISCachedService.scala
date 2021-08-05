@@ -29,22 +29,17 @@ trait ArcGISCachedService extends StObject {
 }
 object ArcGISCachedService {
   
-  @scala.inline
-  def apply(copyright: String, spatialReference: SpatialReference, tileInfo: TileInfo): ArcGISCachedService = {
+  inline def apply(copyright: String, spatialReference: SpatialReference, tileInfo: TileInfo): ArcGISCachedService = {
     val __obj = js.Dynamic.literal(copyright = copyright.asInstanceOf[js.Any], spatialReference = spatialReference.asInstanceOf[js.Any], tileInfo = tileInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISCachedService]
   }
   
-  @scala.inline
-  implicit class ArcGISCachedServiceMutableBuilder[Self <: ArcGISCachedService] (val x: Self) extends AnyVal {
+  extension [Self <: ArcGISCachedService](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileInfo(value: TileInfo): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
+    inline def setTileInfo(value: TileInfo): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
   }
 }

@@ -115,14 +115,11 @@ object expressionConverterMod {
     @JSImport("@angular/compiler/src/compiler_util/expression_converter", "EventHandlerVars.event")
     @js.native
     def event: ReadVarExpr = js.native
-    @scala.inline
-    def event_=(x: ReadVarExpr): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("event")(x.asInstanceOf[js.Any])
+    inline def event_=(x: ReadVarExpr): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("event")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def convertActionBinding(localResolver: Null, implicitReceiver: Expression, action: AST, bindingId: String): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(localResolver: Null, implicitReceiver: Expression, action: AST, bindingId: String): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -132,8 +129,7 @@ object expressionConverterMod {
     implicitReceiverAccesses: Unit,
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -142,8 +138,7 @@ object expressionConverterMod {
     baseSourceSpan: Unit,
     implicitReceiverAccesses: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -153,8 +148,7 @@ object expressionConverterMod {
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -162,8 +156,7 @@ object expressionConverterMod {
     interpolationFunction: Unit,
     baseSourceSpan: ParseSourceSpan
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -173,8 +166,7 @@ object expressionConverterMod {
     implicitReceiverAccesses: Unit,
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -183,8 +175,7 @@ object expressionConverterMod {
     baseSourceSpan: ParseSourceSpan,
     implicitReceiverAccesses: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -194,16 +185,14 @@ object expressionConverterMod {
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
     interpolationFunction: InterpolationFunction
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -213,8 +202,7 @@ object expressionConverterMod {
     implicitReceiverAccesses: Unit,
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -223,8 +211,7 @@ object expressionConverterMod {
     baseSourceSpan: Unit,
     implicitReceiverAccesses: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -234,8 +221,7 @@ object expressionConverterMod {
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -243,8 +229,7 @@ object expressionConverterMod {
     interpolationFunction: InterpolationFunction,
     baseSourceSpan: ParseSourceSpan
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -254,8 +239,7 @@ object expressionConverterMod {
     implicitReceiverAccesses: Unit,
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -264,8 +248,7 @@ object expressionConverterMod {
     baseSourceSpan: ParseSourceSpan,
     implicitReceiverAccesses: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     action: AST,
@@ -275,10 +258,8 @@ object expressionConverterMod {
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(localResolver: LocalResolver, implicitReceiver: Expression, action: AST, bindingId: String): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(localResolver: LocalResolver, implicitReceiver: Expression, action: AST, bindingId: String): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -288,8 +269,7 @@ object expressionConverterMod {
     implicitReceiverAccesses: Unit,
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -298,8 +278,7 @@ object expressionConverterMod {
     baseSourceSpan: Unit,
     implicitReceiverAccesses: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -309,8 +288,7 @@ object expressionConverterMod {
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -318,8 +296,7 @@ object expressionConverterMod {
     interpolationFunction: Unit,
     baseSourceSpan: ParseSourceSpan
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -329,8 +306,7 @@ object expressionConverterMod {
     implicitReceiverAccesses: Unit,
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -339,8 +315,7 @@ object expressionConverterMod {
     baseSourceSpan: ParseSourceSpan,
     implicitReceiverAccesses: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -350,16 +325,14 @@ object expressionConverterMod {
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
     interpolationFunction: InterpolationFunction
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -369,8 +342,7 @@ object expressionConverterMod {
     implicitReceiverAccesses: Unit,
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -379,8 +351,7 @@ object expressionConverterMod {
     baseSourceSpan: Unit,
     implicitReceiverAccesses: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -390,8 +361,7 @@ object expressionConverterMod {
     implicitReceiverAccesses: Set[String],
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -399,8 +369,7 @@ object expressionConverterMod {
     interpolationFunction: InterpolationFunction,
     baseSourceSpan: ParseSourceSpan
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -410,8 +379,7 @@ object expressionConverterMod {
     implicitReceiverAccesses: Unit,
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -420,8 +388,7 @@ object expressionConverterMod {
     baseSourceSpan: ParseSourceSpan,
     implicitReceiverAccesses: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
-  @scala.inline
-  def convertActionBinding(
+  inline def convertActionBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     action: AST,
@@ -432,16 +399,14 @@ object expressionConverterMod {
     globals: Set[String]
   ): ConvertActionBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertActionBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], action.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any], baseSourceSpan.asInstanceOf[js.Any], implicitReceiverAccesses.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[ConvertActionBindingResult]
   
-  @scala.inline
-  def convertPropertyBinding(
+  inline def convertPropertyBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     expressionWithoutBuiltins: AST,
     bindingId: String,
     form: BindingForm
   ): ConvertPropertyBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPropertyBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], expressionWithoutBuiltins.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[ConvertPropertyBindingResult]
-  @scala.inline
-  def convertPropertyBinding(
+  inline def convertPropertyBinding(
     localResolver: Null,
     implicitReceiver: Expression,
     expressionWithoutBuiltins: AST,
@@ -449,16 +414,14 @@ object expressionConverterMod {
     form: BindingForm,
     interpolationFunction: InterpolationFunction
   ): ConvertPropertyBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPropertyBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], expressionWithoutBuiltins.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], form.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any])).asInstanceOf[ConvertPropertyBindingResult]
-  @scala.inline
-  def convertPropertyBinding(
+  inline def convertPropertyBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     expressionWithoutBuiltins: AST,
     bindingId: String,
     form: BindingForm
   ): ConvertPropertyBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPropertyBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], expressionWithoutBuiltins.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], form.asInstanceOf[js.Any])).asInstanceOf[ConvertPropertyBindingResult]
-  @scala.inline
-  def convertPropertyBinding(
+  inline def convertPropertyBinding(
     localResolver: LocalResolver,
     implicitReceiver: Expression,
     expressionWithoutBuiltins: AST,
@@ -467,19 +430,16 @@ object expressionConverterMod {
     interpolationFunction: InterpolationFunction
   ): ConvertPropertyBindingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPropertyBinding")(localResolver.asInstanceOf[js.Any], implicitReceiver.asInstanceOf[js.Any], expressionWithoutBuiltins.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any], form.asInstanceOf[js.Any], interpolationFunction.asInstanceOf[js.Any])).asInstanceOf[ConvertPropertyBindingResult]
   
-  @scala.inline
-  def convertPropertyBindingBuiltins(converterFactory: BuiltinConverterFactory, ast: AST): AST = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPropertyBindingBuiltins")(converterFactory.asInstanceOf[js.Any], ast.asInstanceOf[js.Any])).asInstanceOf[AST]
+  inline def convertPropertyBindingBuiltins(converterFactory: BuiltinConverterFactory, ast: AST): AST = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPropertyBindingBuiltins")(converterFactory.asInstanceOf[js.Any], ast.asInstanceOf[js.Any])).asInstanceOf[AST]
   
-  @scala.inline
-  def convertUpdateArguments(
+  inline def convertUpdateArguments(
     localResolver: LocalResolver,
     contextVariableExpression: Expression,
     expressionWithArgumentsToExtract: AST,
     bindingId: String
   ): Args = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUpdateArguments")(localResolver.asInstanceOf[js.Any], contextVariableExpression.asInstanceOf[js.Any], expressionWithArgumentsToExtract.asInstanceOf[js.Any], bindingId.asInstanceOf[js.Any])).asInstanceOf[Args]
   
-  @scala.inline
-  def temporaryDeclaration(bindingId: String, temporaryNumber: Double): Statement = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryDeclaration")(bindingId.asInstanceOf[js.Any], temporaryNumber.asInstanceOf[js.Any])).asInstanceOf[Statement]
+  inline def temporaryDeclaration(bindingId: String, temporaryNumber: Double): Statement = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryDeclaration")(bindingId.asInstanceOf[js.Any], temporaryNumber.asInstanceOf[js.Any])).asInstanceOf[Statement]
   
   type BuiltinConverter = js.Function1[/* args */ js.Array[Expression], Expression]
   
@@ -493,8 +453,7 @@ object expressionConverterMod {
   }
   object BuiltinConverterFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createLiteralArrayConverter: Double => BuiltinConverter,
       createLiteralMapConverter: js.Array[Quoted] => BuiltinConverter,
       createPipeConverter: (String, Double) => BuiltinConverter
@@ -503,17 +462,13 @@ object expressionConverterMod {
       __obj.asInstanceOf[BuiltinConverterFactory]
     }
     
-    @scala.inline
-    implicit class BuiltinConverterFactoryMutableBuilder[Self <: BuiltinConverterFactory] (val x: Self) extends AnyVal {
+    extension [Self <: BuiltinConverterFactory](x: Self) {
       
-      @scala.inline
-      def setCreateLiteralArrayConverter(value: Double => BuiltinConverter): Self = StObject.set(x, "createLiteralArrayConverter", js.Any.fromFunction1(value))
+      inline def setCreateLiteralArrayConverter(value: Double => BuiltinConverter): Self = StObject.set(x, "createLiteralArrayConverter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateLiteralMapConverter(value: js.Array[Quoted] => BuiltinConverter): Self = StObject.set(x, "createLiteralMapConverter", js.Any.fromFunction1(value))
+      inline def setCreateLiteralMapConverter(value: js.Array[Quoted] => BuiltinConverter): Self = StObject.set(x, "createLiteralMapConverter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreatePipeConverter(value: (String, Double) => BuiltinConverter): Self = StObject.set(x, "createPipeConverter", js.Any.fromFunction2(value))
+      inline def setCreatePipeConverter(value: (String, Double) => BuiltinConverter): Self = StObject.set(x, "createPipeConverter", js.Any.fromFunction2(value))
     }
   }
   
@@ -529,26 +484,20 @@ object expressionConverterMod {
   }
   object LocalResolver {
     
-    @scala.inline
-    def apply(getLocal: String => Expression | Null, notifyImplicitReceiverUse: () => Unit): LocalResolver = {
+    inline def apply(getLocal: String => Expression | Null, notifyImplicitReceiverUse: () => Unit): LocalResolver = {
       val __obj = js.Dynamic.literal(getLocal = js.Any.fromFunction1(getLocal), notifyImplicitReceiverUse = js.Any.fromFunction0(notifyImplicitReceiverUse))
       __obj.asInstanceOf[LocalResolver]
     }
     
-    @scala.inline
-    implicit class LocalResolverMutableBuilder[Self <: LocalResolver] (val x: Self) extends AnyVal {
+    extension [Self <: LocalResolver](x: Self) {
       
-      @scala.inline
-      def setGetLocal(value: String => Expression | Null): Self = StObject.set(x, "getLocal", js.Any.fromFunction1(value))
+      inline def setGetLocal(value: String => Expression | Null): Self = StObject.set(x, "getLocal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGlobals(value: Set[String]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+      inline def setGlobals(value: Set[String]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
+      inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
       
-      @scala.inline
-      def setNotifyImplicitReceiverUse(value: () => Unit): Self = StObject.set(x, "notifyImplicitReceiverUse", js.Any.fromFunction0(value))
+      inline def setNotifyImplicitReceiverUse(value: () => Unit): Self = StObject.set(x, "notifyImplicitReceiverUse", js.Any.fromFunction0(value))
     }
   }
 }

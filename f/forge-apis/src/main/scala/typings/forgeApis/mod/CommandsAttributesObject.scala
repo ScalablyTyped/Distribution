@@ -10,17 +10,14 @@ trait CommandsAttributesObject extends StObject {
 }
 object CommandsAttributesObject {
   
-  @scala.inline
-  def apply(`extension`: CommandsAttributesExtensionObject): CommandsAttributesObject = {
+  inline def apply(`extension`: CommandsAttributesExtensionObject): CommandsAttributesObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandsAttributesObject]
   }
   
-  @scala.inline
-  implicit class CommandsAttributesObjectMutableBuilder[Self <: CommandsAttributesObject] (val x: Self) extends AnyVal {
+  extension [Self <: CommandsAttributesObject](x: Self) {
     
-    @scala.inline
-    def setExtension(value: CommandsAttributesExtensionObject): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: CommandsAttributesExtensionObject): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
   }
 }

@@ -22,28 +22,21 @@ trait SchemaFootnote extends StObject {
 }
 object SchemaFootnote {
   
-  @scala.inline
-  def apply(): SchemaFootnote = {
+  inline def apply(): SchemaFootnote = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFootnote]
   }
   
-  @scala.inline
-  implicit class SchemaFootnoteMutableBuilder[Self <: SchemaFootnote] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFootnote](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Array[SchemaStructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Array[SchemaStructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setContentVarargs(value: SchemaStructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: SchemaStructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
     
-    @scala.inline
-    def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
+    inline def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteIdUndefined: Self = StObject.set(x, "footnoteId", js.undefined)
+    inline def setFootnoteIdUndefined: Self = StObject.set(x, "footnoteId", js.undefined)
   }
 }

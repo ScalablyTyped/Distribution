@@ -38,46 +38,33 @@ trait GetProtectionStatusRequest extends StObject {
 }
 object GetProtectionStatusRequest {
   
-  @scala.inline
-  def apply(PolicyId: PolicyId): GetProtectionStatusRequest = {
+  inline def apply(PolicyId: PolicyId): GetProtectionStatusRequest = {
     val __obj = js.Dynamic.literal(PolicyId = PolicyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetProtectionStatusRequest]
   }
   
-  @scala.inline
-  implicit class GetProtectionStatusRequestMutableBuilder[Self <: GetProtectionStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetProtectionStatusRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: TimeStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: TimeStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: PaginationMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PaginationMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMemberAccountId(value: AWSAccountId): Self = StObject.set(x, "MemberAccountId", value.asInstanceOf[js.Any])
+    inline def setMemberAccountId(value: AWSAccountId): Self = StObject.set(x, "MemberAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberAccountIdUndefined: Self = StObject.set(x, "MemberAccountId", js.undefined)
+    inline def setMemberAccountIdUndefined: Self = StObject.set(x, "MemberAccountId", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
+    inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: TimeStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: TimeStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

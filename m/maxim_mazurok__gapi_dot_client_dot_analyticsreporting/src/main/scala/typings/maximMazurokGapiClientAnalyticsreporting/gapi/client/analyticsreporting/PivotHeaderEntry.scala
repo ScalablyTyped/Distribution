@@ -17,37 +17,27 @@ trait PivotHeaderEntry extends StObject {
 }
 object PivotHeaderEntry {
   
-  @scala.inline
-  def apply(): PivotHeaderEntry = {
+  inline def apply(): PivotHeaderEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotHeaderEntry]
   }
   
-  @scala.inline
-  implicit class PivotHeaderEntryMutableBuilder[Self <: PivotHeaderEntry] (val x: Self) extends AnyVal {
+  extension [Self <: PivotHeaderEntry](x: Self) {
     
-    @scala.inline
-    def setDimensionNames(value: js.Array[String]): Self = StObject.set(x, "dimensionNames", value.asInstanceOf[js.Any])
+    inline def setDimensionNames(value: js.Array[String]): Self = StObject.set(x, "dimensionNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionNamesUndefined: Self = StObject.set(x, "dimensionNames", js.undefined)
+    inline def setDimensionNamesUndefined: Self = StObject.set(x, "dimensionNames", js.undefined)
     
-    @scala.inline
-    def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value :_*))
+    inline def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value :_*))
     
-    @scala.inline
-    def setDimensionValues(value: js.Array[String]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
+    inline def setDimensionValues(value: js.Array[String]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
+    inline def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
     
-    @scala.inline
-    def setDimensionValuesVarargs(value: String*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
+    inline def setDimensionValuesVarargs(value: String*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
     
-    @scala.inline
-    def setMetric(value: MetricHeaderEntry): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: MetricHeaderEntry): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
   }
 }

@@ -12,22 +12,17 @@ trait ITypeStat extends StObject {
 }
 object ITypeStat {
   
-  @scala.inline
-  def apply(): ITypeStat = {
+  inline def apply(): ITypeStat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITypeStat]
   }
   
-  @scala.inline
-  implicit class ITypeStatMutableBuilder[Self <: ITypeStat] (val x: Self) extends AnyVal {
+  extension [Self <: ITypeStat](x: Self) {
     
-    @scala.inline
-    def setPerFieldStat(value: StringDictionary[IFieldStat]): Self = StObject.set(x, "perFieldStat", value.asInstanceOf[js.Any])
+    inline def setPerFieldStat(value: StringDictionary[IFieldStat]): Self = StObject.set(x, "perFieldStat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerFieldStatNull: Self = StObject.set(x, "perFieldStat", null)
+    inline def setPerFieldStatNull: Self = StObject.set(x, "perFieldStat", null)
     
-    @scala.inline
-    def setPerFieldStatUndefined: Self = StObject.set(x, "perFieldStat", js.undefined)
+    inline def setPerFieldStatUndefined: Self = StObject.set(x, "perFieldStat", js.undefined)
   }
 }

@@ -33,34 +33,25 @@ trait CompositionRelatesTo
 }
 object CompositionRelatesTo {
   
-  @scala.inline
-  def apply(code: code): CompositionRelatesTo = {
+  inline def apply(code: code): CompositionRelatesTo = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositionRelatesTo]
   }
   
-  @scala.inline
-  implicit class CompositionRelatesToMutableBuilder[Self <: CompositionRelatesTo] (val x: Self) extends AnyVal {
+  extension [Self <: CompositionRelatesTo](x: Self) {
     
-    @scala.inline
-    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdentifier(value: Identifier): Self = StObject.set(x, "targetIdentifier", value.asInstanceOf[js.Any])
+    inline def setTargetIdentifier(value: Identifier): Self = StObject.set(x, "targetIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdentifierUndefined: Self = StObject.set(x, "targetIdentifier", js.undefined)
+    inline def setTargetIdentifierUndefined: Self = StObject.set(x, "targetIdentifier", js.undefined)
     
-    @scala.inline
-    def setTargetReference(value: Reference): Self = StObject.set(x, "targetReference", value.asInstanceOf[js.Any])
+    inline def setTargetReference(value: Reference): Self = StObject.set(x, "targetReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetReferenceUndefined: Self = StObject.set(x, "targetReference", js.undefined)
+    inline def setTargetReferenceUndefined: Self = StObject.set(x, "targetReference", js.undefined)
     
-    @scala.inline
-    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
+    inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
+    inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
   }
 }

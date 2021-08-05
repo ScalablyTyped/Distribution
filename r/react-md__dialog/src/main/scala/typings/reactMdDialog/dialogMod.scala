@@ -185,125 +185,86 @@ object dialogMod {
   }
   object BaseDialogProps {
     
-    @scala.inline
-    def apply(id: String, onRequestClose: () => Unit, visible: Boolean): BaseDialogProps = {
+    inline def apply(id: String, onRequestClose: () => Unit, visible: Boolean): BaseDialogProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onRequestClose = js.Any.fromFunction0(onRequestClose), visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseDialogProps]
     }
     
-    @scala.inline
-    implicit class BaseDialogPropsMutableBuilder[Self <: BaseDialogProps] (val x: Self) extends AnyVal {
+    extension [Self <: BaseDialogProps](x: Self) {
       
-      @scala.inline
-      def setComponent(value: div | nav): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: div | nav): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
+      inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
+      inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
       
-      @scala.inline
-      def setContainerStyle(value: CSSProperties): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      inline def setContainerStyle(value: CSSProperties): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+      inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      @scala.inline
-      def setDefaultFocus(value: first | last | String): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
+      inline def setDefaultFocus(value: first | last | String): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFocusUndefined: Self = StObject.set(x, "defaultFocus", js.undefined)
+      inline def setDefaultFocusUndefined: Self = StObject.set(x, "defaultFocus", js.undefined)
       
-      @scala.inline
-      def setDisableEscapeClose(value: Boolean): Self = StObject.set(x, "disableEscapeClose", value.asInstanceOf[js.Any])
+      inline def setDisableEscapeClose(value: Boolean): Self = StObject.set(x, "disableEscapeClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableEscapeCloseUndefined: Self = StObject.set(x, "disableEscapeClose", js.undefined)
+      inline def setDisableEscapeCloseUndefined: Self = StObject.set(x, "disableEscapeClose", js.undefined)
       
-      @scala.inline
-      def setDisableFocusContainer(value: Boolean): Self = StObject.set(x, "disableFocusContainer", value.asInstanceOf[js.Any])
+      inline def setDisableFocusContainer(value: Boolean): Self = StObject.set(x, "disableFocusContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFocusContainerUndefined: Self = StObject.set(x, "disableFocusContainer", js.undefined)
+      inline def setDisableFocusContainerUndefined: Self = StObject.set(x, "disableFocusContainer", js.undefined)
       
-      @scala.inline
-      def setDisableNestedDialogFixes(value: Boolean): Self = StObject.set(x, "disableNestedDialogFixes", value.asInstanceOf[js.Any])
+      inline def setDisableNestedDialogFixes(value: Boolean): Self = StObject.set(x, "disableNestedDialogFixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableNestedDialogFixesUndefined: Self = StObject.set(x, "disableNestedDialogFixes", js.undefined)
+      inline def setDisableNestedDialogFixesUndefined: Self = StObject.set(x, "disableNestedDialogFixes", js.undefined)
       
-      @scala.inline
-      def setDisableScrollLock(value: Boolean): Self = StObject.set(x, "disableScrollLock", value.asInstanceOf[js.Any])
+      inline def setDisableScrollLock(value: Boolean): Self = StObject.set(x, "disableScrollLock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableScrollLockUndefined: Self = StObject.set(x, "disableScrollLock", js.undefined)
+      inline def setDisableScrollLockUndefined: Self = StObject.set(x, "disableScrollLock", js.undefined)
       
-      @scala.inline
-      def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
+      inline def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableTransitionUndefined: Self = StObject.set(x, "disableTransition", js.undefined)
+      inline def setDisableTransitionUndefined: Self = StObject.set(x, "disableTransition", js.undefined)
       
-      @scala.inline
-      def setForceContainer(value: Boolean): Self = StObject.set(x, "forceContainer", value.asInstanceOf[js.Any])
+      inline def setForceContainer(value: Boolean): Self = StObject.set(x, "forceContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceContainerUndefined: Self = StObject.set(x, "forceContainer", js.undefined)
+      inline def setForceContainerUndefined: Self = StObject.set(x, "forceContainer", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+      inline def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+      inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
       
-      @scala.inline
-      def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
+      inline def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayClassName(value: String): Self = StObject.set(x, "overlayClassName", value.asInstanceOf[js.Any])
+      inline def setOverlayClassName(value: String): Self = StObject.set(x, "overlayClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayClassNameUndefined: Self = StObject.set(x, "overlayClassName", js.undefined)
+      inline def setOverlayClassNameUndefined: Self = StObject.set(x, "overlayClassName", js.undefined)
       
-      @scala.inline
-      def setOverlayHidden(value: Boolean): Self = StObject.set(x, "overlayHidden", value.asInstanceOf[js.Any])
+      inline def setOverlayHidden(value: Boolean): Self = StObject.set(x, "overlayHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayHiddenUndefined: Self = StObject.set(x, "overlayHidden", js.undefined)
+      inline def setOverlayHiddenUndefined: Self = StObject.set(x, "overlayHidden", js.undefined)
       
-      @scala.inline
-      def setOverlayStyle(value: CSSProperties): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
+      inline def setOverlayStyle(value: CSSProperties): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
+      inline def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      @scala.inline
-      def setRole(value: dialog | alertdialog | menu | none): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: dialog | alertdialog | menu | none): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setType(value: `full-page` | centered | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `full-page` | centered | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   

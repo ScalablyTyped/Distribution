@@ -67,8 +67,7 @@ object ratingRatingMod {
        with /* key */ StringDictionary[js.Any]
   object RatingProps {
     
-    @scala.inline
-    def apply(): RatingProps = {
+    inline def apply(): RatingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RatingProps]
     }
@@ -123,74 +122,52 @@ object ratingRatingMod {
   }
   object StrictRatingProps {
     
-    @scala.inline
-    def apply(): StrictRatingProps = {
+    inline def apply(): StrictRatingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictRatingProps]
     }
     
-    @scala.inline
-    implicit class StrictRatingPropsMutableBuilder[Self <: StrictRatingProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictRatingProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClearable(value: Boolean | auto): Self = StObject.set(x, "clearable", value.asInstanceOf[js.Any])
+      inline def setClearable(value: Boolean | auto): Self = StObject.set(x, "clearable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearableUndefined: Self = StObject.set(x, "clearable", js.undefined)
+      inline def setClearableUndefined: Self = StObject.set(x, "clearable", js.undefined)
       
-      @scala.inline
-      def setDefaultRating(value: Double | String): Self = StObject.set(x, "defaultRating", value.asInstanceOf[js.Any])
+      inline def setDefaultRating(value: Double | String): Self = StObject.set(x, "defaultRating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRatingUndefined: Self = StObject.set(x, "defaultRating", js.undefined)
+      inline def setDefaultRatingUndefined: Self = StObject.set(x, "defaultRating", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIcon(value: star | heart): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: star | heart): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setMaxRating(value: Double | String): Self = StObject.set(x, "maxRating", value.asInstanceOf[js.Any])
+      inline def setMaxRating(value: Double | String): Self = StObject.set(x, "maxRating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRatingUndefined: Self = StObject.set(x, "maxRating", js.undefined)
+      inline def setMaxRatingUndefined: Self = StObject.set(x, "maxRating", js.undefined)
       
-      @scala.inline
-      def setOnRate(value: (/* event */ MouseEvent[HTMLDivElement, NativeMouseEvent], /* data */ RatingProps) => Unit): Self = StObject.set(x, "onRate", js.Any.fromFunction2(value))
+      inline def setOnRate(value: (/* event */ MouseEvent[HTMLDivElement, NativeMouseEvent], /* data */ RatingProps) => Unit): Self = StObject.set(x, "onRate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRateUndefined: Self = StObject.set(x, "onRate", js.undefined)
+      inline def setOnRateUndefined: Self = StObject.set(x, "onRate", js.undefined)
       
-      @scala.inline
-      def setRating(value: Double | String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+      inline def setRating(value: Double | String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
+      inline def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
       
-      @scala.inline
-      def setSize(value: mini | tiny | small | large | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: mini | tiny | small | large | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

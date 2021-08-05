@@ -31,38 +31,28 @@ object acm {
   }
   object CertificateDomainValidationOption {
     
-    @scala.inline
-    def apply(): CertificateDomainValidationOption = {
+    inline def apply(): CertificateDomainValidationOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CertificateDomainValidationOption]
     }
     
-    @scala.inline
-    implicit class CertificateDomainValidationOptionMutableBuilder[Self <: CertificateDomainValidationOption] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateDomainValidationOption](x: Self) {
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setResourceRecordName(value: Input[String]): Self = StObject.set(x, "resourceRecordName", value.asInstanceOf[js.Any])
+      inline def setResourceRecordName(value: Input[String]): Self = StObject.set(x, "resourceRecordName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceRecordNameUndefined: Self = StObject.set(x, "resourceRecordName", js.undefined)
+      inline def setResourceRecordNameUndefined: Self = StObject.set(x, "resourceRecordName", js.undefined)
       
-      @scala.inline
-      def setResourceRecordType(value: Input[String]): Self = StObject.set(x, "resourceRecordType", value.asInstanceOf[js.Any])
+      inline def setResourceRecordType(value: Input[String]): Self = StObject.set(x, "resourceRecordType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceRecordTypeUndefined: Self = StObject.set(x, "resourceRecordType", js.undefined)
+      inline def setResourceRecordTypeUndefined: Self = StObject.set(x, "resourceRecordType", js.undefined)
       
-      @scala.inline
-      def setResourceRecordValue(value: Input[String]): Self = StObject.set(x, "resourceRecordValue", value.asInstanceOf[js.Any])
+      inline def setResourceRecordValue(value: Input[String]): Self = StObject.set(x, "resourceRecordValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceRecordValueUndefined: Self = StObject.set(x, "resourceRecordValue", js.undefined)
+      inline def setResourceRecordValueUndefined: Self = StObject.set(x, "resourceRecordValue", js.undefined)
     }
   }
   
@@ -75,20 +65,16 @@ object acm {
   }
   object CertificateOptions {
     
-    @scala.inline
-    def apply(): CertificateOptions = {
+    inline def apply(): CertificateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CertificateOptions]
     }
     
-    @scala.inline
-    implicit class CertificateOptionsMutableBuilder[Self <: CertificateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateOptions](x: Self) {
       
-      @scala.inline
-      def setCertificateTransparencyLoggingPreference(value: Input[String]): Self = StObject.set(x, "certificateTransparencyLoggingPreference", value.asInstanceOf[js.Any])
+      inline def setCertificateTransparencyLoggingPreference(value: Input[String]): Self = StObject.set(x, "certificateTransparencyLoggingPreference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateTransparencyLoggingPreferenceUndefined: Self = StObject.set(x, "certificateTransparencyLoggingPreference", js.undefined)
+      inline def setCertificateTransparencyLoggingPreferenceUndefined: Self = StObject.set(x, "certificateTransparencyLoggingPreference", js.undefined)
     }
   }
 }

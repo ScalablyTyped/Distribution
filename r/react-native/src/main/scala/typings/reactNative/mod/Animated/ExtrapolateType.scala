@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExtrapolateType extends StObject
 object ExtrapolateType {
   
-  @scala.inline
-  def clamp: typings.reactNative.reactNativeStrings.clamp = "clamp".asInstanceOf[typings.reactNative.reactNativeStrings.clamp]
+  inline def clamp: typings.reactNative.reactNativeStrings.clamp = "clamp".asInstanceOf[typings.reactNative.reactNativeStrings.clamp]
   
-  @scala.inline
-  def extend: typings.reactNative.reactNativeStrings.extend = "extend".asInstanceOf[typings.reactNative.reactNativeStrings.extend]
+  inline def extend: typings.reactNative.reactNativeStrings.extend = "extend".asInstanceOf[typings.reactNative.reactNativeStrings.extend]
   
-  @scala.inline
-  def identity: typings.reactNative.reactNativeStrings.identity = "identity".asInstanceOf[typings.reactNative.reactNativeStrings.identity]
+  inline def identity: typings.reactNative.reactNativeStrings.identity = "identity".asInstanceOf[typings.reactNative.reactNativeStrings.identity]
 }

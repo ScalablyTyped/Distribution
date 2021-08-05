@@ -18,28 +18,21 @@ trait DescribeTestCasesOutput extends StObject {
 }
 object DescribeTestCasesOutput {
   
-  @scala.inline
-  def apply(): DescribeTestCasesOutput = {
+  inline def apply(): DescribeTestCasesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTestCasesOutput]
   }
   
-  @scala.inline
-  implicit class DescribeTestCasesOutputMutableBuilder[Self <: DescribeTestCasesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTestCasesOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTestCases(value: TestCases): Self = StObject.set(x, "testCases", value.asInstanceOf[js.Any])
+    inline def setTestCases(value: TestCases): Self = StObject.set(x, "testCases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCasesUndefined: Self = StObject.set(x, "testCases", js.undefined)
+    inline def setTestCasesUndefined: Self = StObject.set(x, "testCases", js.undefined)
     
-    @scala.inline
-    def setTestCasesVarargs(value: TestCase*): Self = StObject.set(x, "testCases", js.Array(value :_*))
+    inline def setTestCasesVarargs(value: TestCase*): Self = StObject.set(x, "testCases", js.Array(value :_*))
   }
 }

@@ -18,22 +18,17 @@ trait ReposListBranchesForHeadCommitEndpoint
 }
 object ReposListBranchesForHeadCommitEndpoint {
   
-  @scala.inline
-  def apply(commit_sha: String, mediaType: `0`[groot], owner: String, repo: String): ReposListBranchesForHeadCommitEndpoint = {
+  inline def apply(commit_sha: String, mediaType: `0`[groot], owner: String, repo: String): ReposListBranchesForHeadCommitEndpoint = {
     val __obj = js.Dynamic.literal(commit_sha = commit_sha.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposListBranchesForHeadCommitEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposListBranchesForHeadCommitEndpointMutableBuilder[Self <: ReposListBranchesForHeadCommitEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposListBranchesForHeadCommitEndpoint](x: Self) {
     
-    @scala.inline
-    def setCommit_sha(value: String): Self = StObject.set(x, "commit_sha", value.asInstanceOf[js.Any])
+    inline def setCommit_sha(value: String): Self = StObject.set(x, "commit_sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

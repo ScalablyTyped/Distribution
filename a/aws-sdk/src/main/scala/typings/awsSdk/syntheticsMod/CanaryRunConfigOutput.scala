@@ -23,31 +23,23 @@ trait CanaryRunConfigOutput extends StObject {
 }
 object CanaryRunConfigOutput {
   
-  @scala.inline
-  def apply(): CanaryRunConfigOutput = {
+  inline def apply(): CanaryRunConfigOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanaryRunConfigOutput]
   }
   
-  @scala.inline
-  implicit class CanaryRunConfigOutputMutableBuilder[Self <: CanaryRunConfigOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CanaryRunConfigOutput](x: Self) {
     
-    @scala.inline
-    def setActiveTracing(value: NullableBoolean): Self = StObject.set(x, "ActiveTracing", value.asInstanceOf[js.Any])
+    inline def setActiveTracing(value: NullableBoolean): Self = StObject.set(x, "ActiveTracing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTracingUndefined: Self = StObject.set(x, "ActiveTracing", js.undefined)
+    inline def setActiveTracingUndefined: Self = StObject.set(x, "ActiveTracing", js.undefined)
     
-    @scala.inline
-    def setMemoryInMB(value: MaxSize3008): Self = StObject.set(x, "MemoryInMB", value.asInstanceOf[js.Any])
+    inline def setMemoryInMB(value: MaxSize3008): Self = StObject.set(x, "MemoryInMB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryInMBUndefined: Self = StObject.set(x, "MemoryInMB", js.undefined)
+    inline def setMemoryInMBUndefined: Self = StObject.set(x, "MemoryInMB", js.undefined)
     
-    @scala.inline
-    def setTimeoutInSeconds(value: MaxFifteenMinutesInSeconds): Self = StObject.set(x, "TimeoutInSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutInSeconds(value: MaxFifteenMinutesInSeconds): Self = StObject.set(x, "TimeoutInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInSecondsUndefined: Self = StObject.set(x, "TimeoutInSeconds", js.undefined)
+    inline def setTimeoutInSecondsUndefined: Self = StObject.set(x, "TimeoutInSeconds", js.undefined)
   }
 }

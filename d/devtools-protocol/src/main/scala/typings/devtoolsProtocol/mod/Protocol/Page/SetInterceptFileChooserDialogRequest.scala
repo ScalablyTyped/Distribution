@@ -10,16 +10,13 @@ trait SetInterceptFileChooserDialogRequest extends StObject {
 }
 object SetInterceptFileChooserDialogRequest {
   
-  @scala.inline
-  def apply(enabled: Boolean): SetInterceptFileChooserDialogRequest = {
+  inline def apply(enabled: Boolean): SetInterceptFileChooserDialogRequest = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetInterceptFileChooserDialogRequest]
   }
   
-  @scala.inline
-  implicit class SetInterceptFileChooserDialogRequestMutableBuilder[Self <: SetInterceptFileChooserDialogRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetInterceptFileChooserDialogRequest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

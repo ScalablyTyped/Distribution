@@ -23,31 +23,23 @@ trait ListBillingGroupsRequest extends StObject {
 }
 object ListBillingGroupsRequest {
   
-  @scala.inline
-  def apply(): ListBillingGroupsRequest = {
+  inline def apply(): ListBillingGroupsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBillingGroupsRequest]
   }
   
-  @scala.inline
-  implicit class ListBillingGroupsRequestMutableBuilder[Self <: ListBillingGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListBillingGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: RegistryMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: RegistryMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNamePrefixFilter(value: BillingGroupName): Self = StObject.set(x, "namePrefixFilter", value.asInstanceOf[js.Any])
+    inline def setNamePrefixFilter(value: BillingGroupName): Self = StObject.set(x, "namePrefixFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamePrefixFilterUndefined: Self = StObject.set(x, "namePrefixFilter", js.undefined)
+    inline def setNamePrefixFilterUndefined: Self = StObject.set(x, "namePrefixFilter", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

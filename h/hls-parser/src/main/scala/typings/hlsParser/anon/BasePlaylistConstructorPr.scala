@@ -21,46 +21,33 @@ trait BasePlaylistConstructorPr extends StObject {
 }
 object BasePlaylistConstructorPr {
   
-  @scala.inline
-  def apply(isMasterPlaylist: Boolean): BasePlaylistConstructorPr = {
+  inline def apply(isMasterPlaylist: Boolean): BasePlaylistConstructorPr = {
     val __obj = js.Dynamic.literal(isMasterPlaylist = isMasterPlaylist.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasePlaylistConstructorPr]
   }
   
-  @scala.inline
-  implicit class BasePlaylistConstructorPrMutableBuilder[Self <: BasePlaylistConstructorPr] (val x: Self) extends AnyVal {
+  extension [Self <: BasePlaylistConstructorPr](x: Self) {
     
-    @scala.inline
-    def setIndependentSegments(value: Boolean): Self = StObject.set(x, "independentSegments", value.asInstanceOf[js.Any])
+    inline def setIndependentSegments(value: Boolean): Self = StObject.set(x, "independentSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndependentSegmentsUndefined: Self = StObject.set(x, "independentSegments", js.undefined)
+    inline def setIndependentSegmentsUndefined: Self = StObject.set(x, "independentSegments", js.undefined)
     
-    @scala.inline
-    def setIsMasterPlaylist(value: Boolean): Self = StObject.set(x, "isMasterPlaylist", value.asInstanceOf[js.Any])
+    inline def setIsMasterPlaylist(value: Boolean): Self = StObject.set(x, "isMasterPlaylist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setStart(value: Offset): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Offset): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

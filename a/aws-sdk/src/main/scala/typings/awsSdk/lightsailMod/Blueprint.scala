@@ -68,85 +68,59 @@ trait Blueprint extends StObject {
 }
 object Blueprint {
   
-  @scala.inline
-  def apply(): Blueprint = {
+  inline def apply(): Blueprint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Blueprint]
   }
   
-  @scala.inline
-  implicit class BlueprintMutableBuilder[Self <: Blueprint] (val x: Self) extends AnyVal {
+  extension [Self <: Blueprint](x: Self) {
     
-    @scala.inline
-    def setBlueprintId(value: NonEmptyString): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
+    inline def setBlueprintId(value: NonEmptyString): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlueprintIdUndefined: Self = StObject.set(x, "blueprintId", js.undefined)
+    inline def setBlueprintIdUndefined: Self = StObject.set(x, "blueprintId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setGroup(value: NonEmptyString): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: NonEmptyString): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+    inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
-    @scala.inline
-    def setLicenseUrl(value: String): Self = StObject.set(x, "licenseUrl", value.asInstanceOf[js.Any])
+    inline def setLicenseUrl(value: String): Self = StObject.set(x, "licenseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseUrlUndefined: Self = StObject.set(x, "licenseUrl", js.undefined)
+    inline def setLicenseUrlUndefined: Self = StObject.set(x, "licenseUrl", js.undefined)
     
-    @scala.inline
-    def setMinPower(value: integer): Self = StObject.set(x, "minPower", value.asInstanceOf[js.Any])
+    inline def setMinPower(value: integer): Self = StObject.set(x, "minPower", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinPowerUndefined: Self = StObject.set(x, "minPower", js.undefined)
+    inline def setMinPowerUndefined: Self = StObject.set(x, "minPower", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: InstancePlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: InstancePlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setProductUrl(value: String): Self = StObject.set(x, "productUrl", value.asInstanceOf[js.Any])
+    inline def setProductUrl(value: String): Self = StObject.set(x, "productUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUrlUndefined: Self = StObject.set(x, "productUrl", js.undefined)
+    inline def setProductUrlUndefined: Self = StObject.set(x, "productUrl", js.undefined)
     
-    @scala.inline
-    def setType(value: BlueprintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BlueprintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCode(value: String): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
+    inline def setVersionCode(value: String): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
+    inline def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

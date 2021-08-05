@@ -11,34 +11,29 @@ object frappeGanttStrings {
   sealed trait Day
     extends StObject
        with viewMode
-  @scala.inline
-  def Day: Day = "Day".asInstanceOf[Day]
+  inline def Day: Day = "Day".asInstanceOf[Day]
   
   @js.native
   sealed trait `Half Day`
     extends StObject
        with viewMode
-  @scala.inline
-  def `Half Day`: `Half Day` = ("Half Day").asInstanceOf[`Half Day`]
+  inline def `Half Day`: `Half Day` = ("Half Day").asInstanceOf[`Half Day`]
   
   @js.native
   sealed trait Month
     extends StObject
        with viewMode
-  @scala.inline
-  def Month: Month = "Month".asInstanceOf[Month]
+  inline def Month: Month = "Month".asInstanceOf[Month]
   
   @js.native
   sealed trait `Quarter Day`
     extends StObject
        with viewMode
-  @scala.inline
-  def `Quarter Day`: `Quarter Day` = ("Quarter Day").asInstanceOf[`Quarter Day`]
+  inline def `Quarter Day`: `Quarter Day` = ("Quarter Day").asInstanceOf[`Quarter Day`]
   
   @js.native
   sealed trait Week
     extends StObject
        with viewMode
-  @scala.inline
-  def Week: Week = "Week".asInstanceOf[Week]
+  inline def Week: Week = "Week".asInstanceOf[Week]
 }

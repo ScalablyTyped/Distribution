@@ -116,67 +116,47 @@ trait PlusNativeUIToastOptions extends StObject {
 }
 object PlusNativeUIToastOptions {
   
-  @scala.inline
-  def apply(): PlusNativeUIToastOptions = {
+  inline def apply(): PlusNativeUIToastOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeUIToastOptions]
   }
   
-  @scala.inline
-  implicit class PlusNativeUIToastOptionsMutableBuilder[Self <: PlusNativeUIToastOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeUIToastOptions](x: Self) {
     
-    @scala.inline
-    def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setDuration(value: long | short): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: long | short): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconHeight(value: String): Self = StObject.set(x, "iconHeight", value.asInstanceOf[js.Any])
+    inline def setIconHeight(value: String): Self = StObject.set(x, "iconHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconHeightUndefined: Self = StObject.set(x, "iconHeight", js.undefined)
+    inline def setIconHeightUndefined: Self = StObject.set(x, "iconHeight", js.undefined)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setIconWidth(value: String): Self = StObject.set(x, "iconWidth", value.asInstanceOf[js.Any])
+    inline def setIconWidth(value: String): Self = StObject.set(x, "iconWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconWidthUndefined: Self = StObject.set(x, "iconWidth", js.undefined)
+    inline def setIconWidthUndefined: Self = StObject.set(x, "iconWidth", js.undefined)
     
-    @scala.inline
-    def setRichTextStyle(value: PlusNativeObjRichTextStyles): Self = StObject.set(x, "richTextStyle", value.asInstanceOf[js.Any])
+    inline def setRichTextStyle(value: PlusNativeObjRichTextStyles): Self = StObject.set(x, "richTextStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRichTextStyleUndefined: Self = StObject.set(x, "richTextStyle", js.undefined)
+    inline def setRichTextStyleUndefined: Self = StObject.set(x, "richTextStyle", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setType(value: text | richtext): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: text | richtext): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVerticalAlign(value: top | center | bottom): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: top | center | bottom): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
   }
 }

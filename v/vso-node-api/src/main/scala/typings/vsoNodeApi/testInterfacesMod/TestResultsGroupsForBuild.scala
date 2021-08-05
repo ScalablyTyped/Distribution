@@ -18,22 +18,17 @@ trait TestResultsGroupsForBuild extends StObject {
 }
 object TestResultsGroupsForBuild {
   
-  @scala.inline
-  def apply(buildId: Double, fields: js.Array[FieldDetailsForTestResults]): TestResultsGroupsForBuild = {
+  inline def apply(buildId: Double, fields: js.Array[FieldDetailsForTestResults]): TestResultsGroupsForBuild = {
     val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestResultsGroupsForBuild]
   }
   
-  @scala.inline
-  implicit class TestResultsGroupsForBuildMutableBuilder[Self <: TestResultsGroupsForBuild] (val x: Self) extends AnyVal {
+  extension [Self <: TestResultsGroupsForBuild](x: Self) {
     
-    @scala.inline
-    def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: js.Array[FieldDetailsForTestResults]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[FieldDetailsForTestResults]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: FieldDetailsForTestResults*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldDetailsForTestResults*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

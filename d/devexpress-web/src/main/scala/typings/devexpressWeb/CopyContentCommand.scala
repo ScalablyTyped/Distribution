@@ -19,16 +19,13 @@ trait CopyContentCommand
 }
 object CopyContentCommand {
   
-  @scala.inline
-  def apply(execute: Double => Boolean, getState: () => SimpleCommandState): CopyContentCommand = {
+  inline def apply(execute: Double => Boolean, getState: () => SimpleCommandState): CopyContentCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[CopyContentCommand]
   }
   
-  @scala.inline
-  implicit class CopyContentCommandMutableBuilder[Self <: CopyContentCommand] (val x: Self) extends AnyVal {
+  extension [Self <: CopyContentCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: Double => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: Double => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

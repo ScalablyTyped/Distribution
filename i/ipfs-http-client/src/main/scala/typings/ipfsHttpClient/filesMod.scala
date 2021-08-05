@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object filesMod {
   
-  @scala.inline
-  def apply(config: js.Any): Chmod = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Chmod]
+  inline def apply(config: js.Any): Chmod = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Chmod]
   
   @JSImport("ipfs-http-client/dist/src/files", JSImport.Namespace)
   @js.native

@@ -12,16 +12,13 @@ trait PickImpltotal extends StObject {
 }
 object PickImpltotal {
   
-  @scala.inline
-  def apply(total: `false` | Double): PickImpltotal = {
+  inline def apply(total: `false` | Double): PickImpltotal = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltotal]
   }
   
-  @scala.inline
-  implicit class PickImpltotalMutableBuilder[Self <: PickImpltotal] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpltotal](x: Self) {
     
-    @scala.inline
-    def setTotal(value: `false` | Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: `false` | Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

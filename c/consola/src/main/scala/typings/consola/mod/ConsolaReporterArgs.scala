@@ -15,22 +15,17 @@ trait ConsolaReporterArgs extends StObject {
 }
 object ConsolaReporterArgs {
   
-  @scala.inline
-  def apply(async: Boolean, stderr: WritableStream, stdout: WritableStream): ConsolaReporterArgs = {
+  inline def apply(async: Boolean, stderr: WritableStream, stdout: WritableStream): ConsolaReporterArgs = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsolaReporterArgs]
   }
   
-  @scala.inline
-  implicit class ConsolaReporterArgsMutableBuilder[Self <: ConsolaReporterArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ConsolaReporterArgs](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStderr(value: WritableStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+    inline def setStderr(value: WritableStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdout(value: WritableStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+    inline def setStdout(value: WritableStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
   }
 }

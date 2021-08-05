@@ -24,26 +24,20 @@ object anon {
   }
   object AllowVaultCardOverride {
     
-    @scala.inline
-    def apply(): AllowVaultCardOverride = {
+    inline def apply(): AllowVaultCardOverride = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AllowVaultCardOverride]
     }
     
-    @scala.inline
-    implicit class AllowVaultCardOverrideMutableBuilder[Self <: AllowVaultCardOverride] (val x: Self) extends AnyVal {
+    extension [Self <: AllowVaultCardOverride](x: Self) {
       
-      @scala.inline
-      def setAllowVaultCardOverride(value: Boolean): Self = StObject.set(x, "allowVaultCardOverride", value.asInstanceOf[js.Any])
+      inline def setAllowVaultCardOverride(value: Boolean): Self = StObject.set(x, "allowVaultCardOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowVaultCardOverrideUndefined: Self = StObject.set(x, "allowVaultCardOverride", js.undefined)
+      inline def setAllowVaultCardOverrideUndefined: Self = StObject.set(x, "allowVaultCardOverride", js.undefined)
       
-      @scala.inline
-      def setVaultCard(value: Boolean): Self = StObject.set(x, "vaultCard", value.asInstanceOf[js.Any])
+      inline def setVaultCard(value: Boolean): Self = StObject.set(x, "vaultCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVaultCardUndefined: Self = StObject.set(x, "vaultCard", js.undefined)
+      inline def setVaultCardUndefined: Self = StObject.set(x, "vaultCard", js.undefined)
     }
   }
   
@@ -67,50 +61,36 @@ object anon {
   }
   object BillingAddress {
     
-    @scala.inline
-    def apply(email: String, firstName: String, lastName: String, payerId: String): BillingAddress = {
+    inline def apply(email: String, firstName: String, lastName: String, payerId: String): BillingAddress = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], firstName = firstName.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any], payerId = payerId.asInstanceOf[js.Any])
       __obj.asInstanceOf[BillingAddress]
     }
     
-    @scala.inline
-    implicit class BillingAddressMutableBuilder[Self <: BillingAddress] (val x: Self) extends AnyVal {
+    extension [Self <: BillingAddress](x: Self) {
       
-      @scala.inline
-      def setBillingAddress(value: Address): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+      inline def setBillingAddress(value: Address): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
+      inline def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
       
-      @scala.inline
-      def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+      inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+      inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+      inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+      inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayerId(value: String): Self = StObject.set(x, "payerId", value.asInstanceOf[js.Any])
+      inline def setPayerId(value: String): Self = StObject.set(x, "payerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+      inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
       
-      @scala.inline
-      def setShippingAddress(value: Address): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
+      inline def setShippingAddress(value: Address): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippingAddressUndefined: Self = StObject.set(x, "shippingAddress", js.undefined)
+      inline def setShippingAddressUndefined: Self = StObject.set(x, "shippingAddress", js.undefined)
     }
   }
   
@@ -132,8 +112,7 @@ object anon {
   }
   object Bin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bin: String,
       cardType: String,
       cardholderName: String,
@@ -146,29 +125,21 @@ object anon {
       __obj.asInstanceOf[Bin]
     }
     
-    @scala.inline
-    implicit class BinMutableBuilder[Self <: Bin] (val x: Self) extends AnyVal {
+    extension [Self <: Bin](x: Self) {
       
-      @scala.inline
-      def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
+      inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+      inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
+      inline def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
+      inline def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
+      inline def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastFour(value: String): Self = StObject.set(x, "lastFour", value.asInstanceOf[js.Any])
+      inline def setLastFour(value: String): Self = StObject.set(x, "lastFour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastTwo(value: String): Self = StObject.set(x, "lastTwo", value.asInstanceOf[js.Any])
+      inline def setLastTwo(value: String): Self = StObject.set(x, "lastTwo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,26 +155,20 @@ object anon {
   }
   object CardHolderName {
     
-    @scala.inline
-    def apply(cardHolderName: String, cardType: String, dpanLastTwo: String, rawPaymentData: ApplePayPayment): CardHolderName = {
+    inline def apply(cardHolderName: String, cardType: String, dpanLastTwo: String, rawPaymentData: ApplePayPayment): CardHolderName = {
       val __obj = js.Dynamic.literal(cardHolderName = cardHolderName.asInstanceOf[js.Any], cardType = cardType.asInstanceOf[js.Any], dpanLastTwo = dpanLastTwo.asInstanceOf[js.Any], rawPaymentData = rawPaymentData.asInstanceOf[js.Any])
       __obj.asInstanceOf[CardHolderName]
     }
     
-    @scala.inline
-    implicit class CardHolderNameMutableBuilder[Self <: CardHolderName] (val x: Self) extends AnyVal {
+    extension [Self <: CardHolderName](x: Self) {
       
-      @scala.inline
-      def setCardHolderName(value: String): Self = StObject.set(x, "cardHolderName", value.asInstanceOf[js.Any])
+      inline def setCardHolderName(value: String): Self = StObject.set(x, "cardHolderName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+      inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDpanLastTwo(value: String): Self = StObject.set(x, "dpanLastTwo", value.asInstanceOf[js.Any])
+      inline def setDpanLastTwo(value: String): Self = StObject.set(x, "dpanLastTwo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawPaymentData(value: ApplePayPayment): Self = StObject.set(x, "rawPaymentData", value.asInstanceOf[js.Any])
+      inline def setRawPaymentData(value: ApplePayPayment): Self = StObject.set(x, "rawPaymentData", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,8 +188,7 @@ object anon {
   }
   object CardType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bin: String,
       cardType: String,
       isNetworkTokenized: Boolean,
@@ -236,26 +200,19 @@ object anon {
       __obj.asInstanceOf[CardType]
     }
     
-    @scala.inline
-    implicit class CardTypeMutableBuilder[Self <: CardType] (val x: Self) extends AnyVal {
+    extension [Self <: CardType](x: Self) {
       
-      @scala.inline
-      def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
+      inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+      inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNetworkTokenized(value: Boolean): Self = StObject.set(x, "isNetworkTokenized", value.asInstanceOf[js.Any])
+      inline def setIsNetworkTokenized(value: Boolean): Self = StObject.set(x, "isNetworkTokenized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastFour(value: String): Self = StObject.set(x, "lastFour", value.asInstanceOf[js.Any])
+      inline def setLastFour(value: String): Self = StObject.set(x, "lastFour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastTwo(value: String): Self = StObject.set(x, "lastTwo", value.asInstanceOf[js.Any])
+      inline def setLastTwo(value: String): Self = StObject.set(x, "lastTwo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawPaymentData(value: PaymentData): Self = StObject.set(x, "rawPaymentData", value.asInstanceOf[js.Any])
+      inline def setRawPaymentData(value: PaymentData): Self = StObject.set(x, "rawPaymentData", value.asInstanceOf[js.Any])
     }
   }
   
@@ -281,38 +238,28 @@ object anon {
   }
   object Cvv {
     
-    @scala.inline
-    def apply(): Cvv = {
+    inline def apply(): Cvv = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cvv]
     }
     
-    @scala.inline
-    implicit class CvvMutableBuilder[Self <: Cvv] (val x: Self) extends AnyVal {
+    extension [Self <: Cvv](x: Self) {
       
-      @scala.inline
-      def setCvv(value: HostedFieldsField): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
+      inline def setCvv(value: HostedFieldsField): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
+      inline def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
       
-      @scala.inline
-      def setExpirationDate(value: HostedFieldsField): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: HostedFieldsField): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
+      inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
       
-      @scala.inline
-      def setNumber(value: HostedFieldsField): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: HostedFieldsField): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setPostalCode(value: HostedFieldsField): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+      inline def setPostalCode(value: HostedFieldsField): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
+      inline def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
     }
   }
   
@@ -324,26 +271,20 @@ object anon {
   }
   object Fields {
     
-    @scala.inline
-    def apply(): Fields = {
+    inline def apply(): Fields = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Fields]
     }
     
-    @scala.inline
-    implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+    extension [Self <: Fields](x: Self) {
       
-      @scala.inline
-      def setFields(value: Cvv): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Cvv): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setStyles(value: js.Object): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Object): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   
@@ -362,44 +303,32 @@ object anon {
   }
   object PartialButtonStyle {
     
-    @scala.inline
-    def apply(): PartialButtonStyle = {
+    inline def apply(): PartialButtonStyle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialButtonStyle]
     }
     
-    @scala.inline
-    implicit class PartialButtonStyleMutableBuilder[Self <: PartialButtonStyle] (val x: Self) extends AnyVal {
+    extension [Self <: PartialButtonStyle](x: Self) {
       
-      @scala.inline
-      def setColor(value: ButtonColorOption): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ButtonColorOption): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ButtonLabelOption): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ButtonLabelOption): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setShape(value: ButtonShapeOption): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: ButtonShapeOption): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      @scala.inline
-      def setSize(value: ButtonSizeOption): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ButtonSizeOption): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTagline(value: Boolean): Self = StObject.set(x, "tagline", value.asInstanceOf[js.Any])
+      inline def setTagline(value: Boolean): Self = StObject.set(x, "tagline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaglineUndefined: Self = StObject.set(x, "tagline", js.undefined)
+      inline def setTaglineUndefined: Self = StObject.set(x, "tagline", js.undefined)
     }
   }
   
@@ -409,20 +338,16 @@ object anon {
   }
   object Required {
     
-    @scala.inline
-    def apply(): Required = {
+    inline def apply(): Required = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Required]
     }
     
-    @scala.inline
-    implicit class RequiredMutableBuilder[Self <: Required] (val x: Self) extends AnyVal {
+    extension [Self <: Required](x: Self) {
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     }
   }
   
@@ -432,17 +357,14 @@ object anon {
   }
   object Username {
     
-    @scala.inline
-    def apply(username: String): Username = {
+    inline def apply(username: String): Username = {
       val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Username]
     }
     
-    @scala.inline
-    implicit class UsernameMutableBuilder[Self <: Username] (val x: Self) extends AnyVal {
+    extension [Self <: Username](x: Self) {
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

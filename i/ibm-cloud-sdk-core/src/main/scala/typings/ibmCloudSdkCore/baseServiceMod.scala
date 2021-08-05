@@ -27,7 +27,7 @@ object baseServiceMod {
       */
     def this(userOptions: UserOptions) = this()
     
-    var _options: BaseServiceOptions = js.native
+    /* protected */ var _options: BaseServiceOptions = js.native
     
     /**
       * Wrapper around `sendRequest` that determines whether or not IAM tokens
@@ -46,7 +46,7 @@ object baseServiceMod {
       * @private
       * @returns {Credentials}
       */
-    var getCredentialsFromBluemix: js.Any = js.native
+    /* private */ var getCredentialsFromBluemix: js.Any = js.native
     
     /**
       * Pulls credentials from env properties
@@ -60,7 +60,7 @@ object baseServiceMod {
       * @param {string} name - the service snake case name
       * @returns {Credentials}
       */
-    var getCredentialsFromEnvironment: js.Any = js.native
+    /* private */ var getCredentialsFromEnvironment: js.Any = js.native
     
     /**
       * Retrieve this service's credentials - useful for passing to the authorization service
@@ -76,7 +76,7 @@ object baseServiceMod {
       * @param {UserOptions} options
       * @returns {BaseServiceOptions}
       */
-    var initCredentials: js.Any = js.native
+    /* private */ var initCredentials: js.Any = js.native
     
     var name: String = js.native
     
@@ -91,7 +91,7 @@ object baseServiceMod {
       */
     /* protected */ def preAuthenticate(callback: js.Any): Unit = js.native
     
-    var serviceDefaults: js.Object = js.native
+    /* protected */ var serviceDefaults: js.Object = js.native
     
     var serviceVersion: String = js.native
     
@@ -109,7 +109,7 @@ object baseServiceMod {
       */
     def setAccessToken(iam_access_token: String): Unit = js.native
     
-    var tokenManager: js.Any = js.native
+    /* protected */ var tokenManager: js.Any = js.native
   }
   /* static members */
   object BaseService {
@@ -121,8 +121,7 @@ object baseServiceMod {
     @JSImport("ibm-cloud-sdk-core/lib/base_service", "BaseService.URL")
     @js.native
     def URL: String = js.native
-    @scala.inline
-    def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
+    inline def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
   }
   
   trait BaseServiceOptions
@@ -141,29 +140,22 @@ object baseServiceMod {
   }
   object BaseServiceOptions {
     
-    @scala.inline
-    def apply(headers: HeaderOptions, qs: js.Any, url: String): BaseServiceOptions = {
+    inline def apply(headers: HeaderOptions, qs: js.Any, url: String): BaseServiceOptions = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], qs = qs.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseServiceOptions]
     }
     
-    @scala.inline
-    implicit class BaseServiceOptionsMutableBuilder[Self <: BaseServiceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseServiceOptions](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: HeaderOptions): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: HeaderOptions): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQs(value: js.Any): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
+      inline def setQs(value: js.Any): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
+      inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+      inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -183,50 +175,36 @@ object baseServiceMod {
   }
   object Credentials {
     
-    @scala.inline
-    def apply(): Credentials = {
+    inline def apply(): Credentials = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Credentials]
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials](x: Self) {
       
-      @scala.inline
-      def setIam_access_token(value: String): Self = StObject.set(x, "iam_access_token", value.asInstanceOf[js.Any])
+      inline def setIam_access_token(value: String): Self = StObject.set(x, "iam_access_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIam_access_tokenUndefined: Self = StObject.set(x, "iam_access_token", js.undefined)
+      inline def setIam_access_tokenUndefined: Self = StObject.set(x, "iam_access_token", js.undefined)
       
-      @scala.inline
-      def setIam_apikey(value: String): Self = StObject.set(x, "iam_apikey", value.asInstanceOf[js.Any])
+      inline def setIam_apikey(value: String): Self = StObject.set(x, "iam_apikey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIam_apikeyUndefined: Self = StObject.set(x, "iam_apikey", js.undefined)
+      inline def setIam_apikeyUndefined: Self = StObject.set(x, "iam_apikey", js.undefined)
       
-      @scala.inline
-      def setIam_url(value: String): Self = StObject.set(x, "iam_url", value.asInstanceOf[js.Any])
+      inline def setIam_url(value: String): Self = StObject.set(x, "iam_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIam_urlUndefined: Self = StObject.set(x, "iam_url", js.undefined)
+      inline def setIam_urlUndefined: Self = StObject.set(x, "iam_url", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -238,20 +216,16 @@ object baseServiceMod {
   }
   object HeaderOptions {
     
-    @scala.inline
-    def apply(): HeaderOptions = {
+    inline def apply(): HeaderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderOptions]
     }
     
-    @scala.inline
-    implicit class HeaderOptionsMutableBuilder[Self <: HeaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderOptions](x: Self) {
       
-      @scala.inline
-      def `setX-Watson-Learning-Opt-Out`(value: Boolean): Self = StObject.set(x, "X-Watson-Learning-Opt-Out", value.asInstanceOf[js.Any])
+      inline def `setX-Watson-Learning-Opt-Out`(value: Boolean): Self = StObject.set(x, "X-Watson-Learning-Opt-Out", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-Watson-Learning-Opt-OutUndefined`: Self = StObject.set(x, "X-Watson-Learning-Opt-Out", js.undefined)
+      inline def `setX-Watson-Learning-Opt-OutUndefined`: Self = StObject.set(x, "X-Watson-Learning-Opt-Out", js.undefined)
     }
   }
   
@@ -283,86 +257,60 @@ object baseServiceMod {
   }
   object UserOptions {
     
-    @scala.inline
-    def apply(): UserOptions = {
+    inline def apply(): UserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserOptions]
     }
     
-    @scala.inline
-    implicit class UserOptionsMutableBuilder[Self <: UserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UserOptions](x: Self) {
       
-      @scala.inline
-      def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
+      inline def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApikeyUndefined: Self = StObject.set(x, "apikey", js.undefined)
+      inline def setApikeyUndefined: Self = StObject.set(x, "apikey", js.undefined)
       
-      @scala.inline
-      def setDisable_ssl_verification(value: Boolean): Self = StObject.set(x, "disable_ssl_verification", value.asInstanceOf[js.Any])
+      inline def setDisable_ssl_verification(value: Boolean): Self = StObject.set(x, "disable_ssl_verification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_ssl_verificationUndefined: Self = StObject.set(x, "disable_ssl_verification", js.undefined)
+      inline def setDisable_ssl_verificationUndefined: Self = StObject.set(x, "disable_ssl_verification", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: HeaderOptions): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: HeaderOptions): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setIam_access_token(value: String): Self = StObject.set(x, "iam_access_token", value.asInstanceOf[js.Any])
+      inline def setIam_access_token(value: String): Self = StObject.set(x, "iam_access_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIam_access_tokenUndefined: Self = StObject.set(x, "iam_access_token", js.undefined)
+      inline def setIam_access_tokenUndefined: Self = StObject.set(x, "iam_access_token", js.undefined)
       
-      @scala.inline
-      def setIam_apikey(value: String): Self = StObject.set(x, "iam_apikey", value.asInstanceOf[js.Any])
+      inline def setIam_apikey(value: String): Self = StObject.set(x, "iam_apikey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIam_apikeyUndefined: Self = StObject.set(x, "iam_apikey", js.undefined)
+      inline def setIam_apikeyUndefined: Self = StObject.set(x, "iam_apikey", js.undefined)
       
-      @scala.inline
-      def setIam_url(value: String): Self = StObject.set(x, "iam_url", value.asInstanceOf[js.Any])
+      inline def setIam_url(value: String): Self = StObject.set(x, "iam_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIam_urlUndefined: Self = StObject.set(x, "iam_url", js.undefined)
+      inline def setIam_urlUndefined: Self = StObject.set(x, "iam_url", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setUse_unauthenticated(value: Boolean): Self = StObject.set(x, "use_unauthenticated", value.asInstanceOf[js.Any])
+      inline def setUse_unauthenticated(value: Boolean): Self = StObject.set(x, "use_unauthenticated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse_unauthenticatedUndefined: Self = StObject.set(x, "use_unauthenticated", js.undefined)
+      inline def setUse_unauthenticatedUndefined: Self = StObject.set(x, "use_unauthenticated", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

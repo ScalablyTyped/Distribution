@@ -23,31 +23,23 @@ trait MetricData extends StObject {
 }
 object MetricData {
   
-  @scala.inline
-  def apply(): MetricData = {
+  inline def apply(): MetricData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricData]
   }
   
-  @scala.inline
-  implicit class MetricDataMutableBuilder[Self <: MetricData] (val x: Self) extends AnyVal {
+  extension [Self <: MetricData](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
-    @scala.inline
-    def setValue(value: Float): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Float): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

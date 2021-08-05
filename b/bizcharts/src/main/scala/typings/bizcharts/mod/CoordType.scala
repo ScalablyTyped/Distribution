@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoordType extends StObject
 object CoordType {
   
-  @scala.inline
-  def helix: typings.bizcharts.bizchartsStrings.helix = "helix".asInstanceOf[typings.bizcharts.bizchartsStrings.helix]
+  inline def helix: typings.bizcharts.bizchartsStrings.helix = "helix".asInstanceOf[typings.bizcharts.bizchartsStrings.helix]
   
-  @scala.inline
-  def polar: typings.bizcharts.bizchartsStrings.polar = "polar".asInstanceOf[typings.bizcharts.bizchartsStrings.polar]
+  inline def polar: typings.bizcharts.bizchartsStrings.polar = "polar".asInstanceOf[typings.bizcharts.bizchartsStrings.polar]
   
-  @scala.inline
-  def rect: typings.bizcharts.bizchartsStrings.rect = "rect".asInstanceOf[typings.bizcharts.bizchartsStrings.rect]
+  inline def rect: typings.bizcharts.bizchartsStrings.rect = "rect".asInstanceOf[typings.bizcharts.bizchartsStrings.rect]
   
-  @scala.inline
-  def theta: typings.bizcharts.bizchartsStrings.theta = "theta".asInstanceOf[typings.bizcharts.bizchartsStrings.theta]
+  inline def theta: typings.bizcharts.bizchartsStrings.theta = "theta".asInstanceOf[typings.bizcharts.bizchartsStrings.theta]
 }

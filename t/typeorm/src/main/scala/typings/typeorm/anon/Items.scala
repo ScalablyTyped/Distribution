@@ -12,22 +12,17 @@ trait Items[R, T] extends StObject {
 }
 object Items {
   
-  @scala.inline
-  def apply[R, T](id: R, items: js.Array[T]): Items[R, T] = {
+  inline def apply[R, T](id: R, items: js.Array[T]): Items[R, T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[Items[R, T]]
   }
   
-  @scala.inline
-  implicit class ItemsMutableBuilder[Self <: Items[?, ?], R, T] (val x: Self & (Items[R, T])) extends AnyVal {
+  extension [Self <: Items[?, ?], R, T](x: Self & (Items[R, T])) {
     
-    @scala.inline
-    def setId(value: R): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: R): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

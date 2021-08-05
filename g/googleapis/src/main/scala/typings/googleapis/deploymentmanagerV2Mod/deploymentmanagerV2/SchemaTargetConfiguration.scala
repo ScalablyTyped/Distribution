@@ -20,28 +20,21 @@ trait SchemaTargetConfiguration extends StObject {
 }
 object SchemaTargetConfiguration {
   
-  @scala.inline
-  def apply(): SchemaTargetConfiguration = {
+  inline def apply(): SchemaTargetConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTargetConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaTargetConfigurationMutableBuilder[Self <: SchemaTargetConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTargetConfiguration](x: Self) {
     
-    @scala.inline
-    def setConfig(value: SchemaConfigFile): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: SchemaConfigFile): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setImports(value: js.Array[SchemaImportFile]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: js.Array[SchemaImportFile]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
+    inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    @scala.inline
-    def setImportsVarargs(value: SchemaImportFile*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: SchemaImportFile*): Self = StObject.set(x, "imports", js.Array(value :_*))
   }
 }

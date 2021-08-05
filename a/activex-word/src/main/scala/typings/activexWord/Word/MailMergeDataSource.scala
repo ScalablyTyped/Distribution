@@ -58,6 +58,6 @@ trait MailMergeDataSource extends StObject {
   
   val Type: WdMailMergeDataSource = js.native
   
-  @JSName("Word.MailMergeDataSource_typekey")
+  /* private */ @JSName("Word.MailMergeDataSource_typekey")
   var WordDotMailMergeDataSource_typekey: MailMergeDataSource = js.native
 }

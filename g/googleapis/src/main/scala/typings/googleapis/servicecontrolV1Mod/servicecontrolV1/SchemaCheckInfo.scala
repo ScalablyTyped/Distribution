@@ -23,28 +23,21 @@ trait SchemaCheckInfo extends StObject {
 }
 object SchemaCheckInfo {
   
-  @scala.inline
-  def apply(): SchemaCheckInfo = {
+  inline def apply(): SchemaCheckInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCheckInfo]
   }
   
-  @scala.inline
-  implicit class SchemaCheckInfoMutableBuilder[Self <: SchemaCheckInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCheckInfo](x: Self) {
     
-    @scala.inline
-    def setConsumerInfo(value: SchemaConsumerInfo): Self = StObject.set(x, "consumerInfo", value.asInstanceOf[js.Any])
+    inline def setConsumerInfo(value: SchemaConsumerInfo): Self = StObject.set(x, "consumerInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerInfoUndefined: Self = StObject.set(x, "consumerInfo", js.undefined)
+    inline def setConsumerInfoUndefined: Self = StObject.set(x, "consumerInfo", js.undefined)
     
-    @scala.inline
-    def setUnusedArguments(value: js.Array[String]): Self = StObject.set(x, "unusedArguments", value.asInstanceOf[js.Any])
+    inline def setUnusedArguments(value: js.Array[String]): Self = StObject.set(x, "unusedArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnusedArgumentsUndefined: Self = StObject.set(x, "unusedArguments", js.undefined)
+    inline def setUnusedArgumentsUndefined: Self = StObject.set(x, "unusedArguments", js.undefined)
     
-    @scala.inline
-    def setUnusedArgumentsVarargs(value: String*): Self = StObject.set(x, "unusedArguments", js.Array(value :_*))
+    inline def setUnusedArgumentsVarargs(value: String*): Self = StObject.set(x, "unusedArguments", js.Array(value :_*))
   }
 }

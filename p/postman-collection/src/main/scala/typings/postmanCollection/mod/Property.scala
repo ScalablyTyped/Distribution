@@ -36,11 +36,8 @@ object Property {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def replaceSubstitutions(str: String, variables: js.Array[VariableList]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutions")(str.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def replaceSubstitutions(str: String, variables: VariableList): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutions")(str.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def replaceSubstitutions(str: String, variables: js.Array[VariableList]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutions")(str.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def replaceSubstitutions(str: String, variables: VariableList): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutions")(str.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def replaceSubstitutionsIn[T](obj: T, variables: js.Array[VariableList], mutate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutionsIn")(obj.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], mutate.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def replaceSubstitutionsIn[T](obj: T, variables: js.Array[VariableList], mutate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutionsIn")(obj.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], mutate.asInstanceOf[js.Any])).asInstanceOf[T]
 }

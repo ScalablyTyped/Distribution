@@ -15,16 +15,13 @@ trait DescribeConfigurationRequest extends StObject {
 }
 object DescribeConfigurationRequest {
   
-  @scala.inline
-  def apply(Arn: string): DescribeConfigurationRequest = {
+  inline def apply(Arn: string): DescribeConfigurationRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConfigurationRequestMutableBuilder[Self <: DescribeConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }
 }

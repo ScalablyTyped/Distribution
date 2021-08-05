@@ -16,31 +16,23 @@ trait Parent extends StObject {
 }
 object Parent {
   
-  @scala.inline
-  def apply(providers: js.Array[StaticProvider]): Parent = {
+  inline def apply(providers: js.Array[StaticProvider]): Parent = {
     val __obj = js.Dynamic.literal(providers = providers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parent]
   }
   
-  @scala.inline
-  implicit class ParentMutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
+  extension [Self <: Parent](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParent(value: Injector): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Injector): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setProviders(value: js.Array[StaticProvider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[StaticProvider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersVarargs(value: StaticProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: StaticProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
   }
 }

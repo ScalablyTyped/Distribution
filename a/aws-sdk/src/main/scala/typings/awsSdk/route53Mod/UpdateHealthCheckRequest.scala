@@ -93,121 +93,83 @@ trait UpdateHealthCheckRequest extends StObject {
 }
 object UpdateHealthCheckRequest {
   
-  @scala.inline
-  def apply(HealthCheckId: HealthCheckId): UpdateHealthCheckRequest = {
+  inline def apply(HealthCheckId: HealthCheckId): UpdateHealthCheckRequest = {
     val __obj = js.Dynamic.literal(HealthCheckId = HealthCheckId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateHealthCheckRequest]
   }
   
-  @scala.inline
-  implicit class UpdateHealthCheckRequestMutableBuilder[Self <: UpdateHealthCheckRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateHealthCheckRequest](x: Self) {
     
-    @scala.inline
-    def setAlarmIdentifier(value: AlarmIdentifier): Self = StObject.set(x, "AlarmIdentifier", value.asInstanceOf[js.Any])
+    inline def setAlarmIdentifier(value: AlarmIdentifier): Self = StObject.set(x, "AlarmIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmIdentifierUndefined: Self = StObject.set(x, "AlarmIdentifier", js.undefined)
+    inline def setAlarmIdentifierUndefined: Self = StObject.set(x, "AlarmIdentifier", js.undefined)
     
-    @scala.inline
-    def setChildHealthChecks(value: ChildHealthCheckList): Self = StObject.set(x, "ChildHealthChecks", value.asInstanceOf[js.Any])
+    inline def setChildHealthChecks(value: ChildHealthCheckList): Self = StObject.set(x, "ChildHealthChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildHealthChecksUndefined: Self = StObject.set(x, "ChildHealthChecks", js.undefined)
+    inline def setChildHealthChecksUndefined: Self = StObject.set(x, "ChildHealthChecks", js.undefined)
     
-    @scala.inline
-    def setChildHealthChecksVarargs(value: HealthCheckId*): Self = StObject.set(x, "ChildHealthChecks", js.Array(value :_*))
+    inline def setChildHealthChecksVarargs(value: HealthCheckId*): Self = StObject.set(x, "ChildHealthChecks", js.Array(value :_*))
     
-    @scala.inline
-    def setDisabled(value: Disabled): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Disabled): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
-    @scala.inline
-    def setEnableSNI(value: EnableSNI): Self = StObject.set(x, "EnableSNI", value.asInstanceOf[js.Any])
+    inline def setEnableSNI(value: EnableSNI): Self = StObject.set(x, "EnableSNI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSNIUndefined: Self = StObject.set(x, "EnableSNI", js.undefined)
+    inline def setEnableSNIUndefined: Self = StObject.set(x, "EnableSNI", js.undefined)
     
-    @scala.inline
-    def setFailureThreshold(value: FailureThreshold): Self = StObject.set(x, "FailureThreshold", value.asInstanceOf[js.Any])
+    inline def setFailureThreshold(value: FailureThreshold): Self = StObject.set(x, "FailureThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureThresholdUndefined: Self = StObject.set(x, "FailureThreshold", js.undefined)
+    inline def setFailureThresholdUndefined: Self = StObject.set(x, "FailureThreshold", js.undefined)
     
-    @scala.inline
-    def setFullyQualifiedDomainName(value: FullyQualifiedDomainName): Self = StObject.set(x, "FullyQualifiedDomainName", value.asInstanceOf[js.Any])
+    inline def setFullyQualifiedDomainName(value: FullyQualifiedDomainName): Self = StObject.set(x, "FullyQualifiedDomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullyQualifiedDomainNameUndefined: Self = StObject.set(x, "FullyQualifiedDomainName", js.undefined)
+    inline def setFullyQualifiedDomainNameUndefined: Self = StObject.set(x, "FullyQualifiedDomainName", js.undefined)
     
-    @scala.inline
-    def setHealthCheckId(value: HealthCheckId): Self = StObject.set(x, "HealthCheckId", value.asInstanceOf[js.Any])
+    inline def setHealthCheckId(value: HealthCheckId): Self = StObject.set(x, "HealthCheckId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckVersion(value: HealthCheckVersion): Self = StObject.set(x, "HealthCheckVersion", value.asInstanceOf[js.Any])
+    inline def setHealthCheckVersion(value: HealthCheckVersion): Self = StObject.set(x, "HealthCheckVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckVersionUndefined: Self = StObject.set(x, "HealthCheckVersion", js.undefined)
+    inline def setHealthCheckVersionUndefined: Self = StObject.set(x, "HealthCheckVersion", js.undefined)
     
-    @scala.inline
-    def setHealthThreshold(value: HealthThreshold): Self = StObject.set(x, "HealthThreshold", value.asInstanceOf[js.Any])
+    inline def setHealthThreshold(value: HealthThreshold): Self = StObject.set(x, "HealthThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthThresholdUndefined: Self = StObject.set(x, "HealthThreshold", js.undefined)
+    inline def setHealthThresholdUndefined: Self = StObject.set(x, "HealthThreshold", js.undefined)
     
-    @scala.inline
-    def setIPAddress(value: IPAddress): Self = StObject.set(x, "IPAddress", value.asInstanceOf[js.Any])
+    inline def setIPAddress(value: IPAddress): Self = StObject.set(x, "IPAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPAddressUndefined: Self = StObject.set(x, "IPAddress", js.undefined)
+    inline def setIPAddressUndefined: Self = StObject.set(x, "IPAddress", js.undefined)
     
-    @scala.inline
-    def setInsufficientDataHealthStatus(value: InsufficientDataHealthStatus): Self = StObject.set(x, "InsufficientDataHealthStatus", value.asInstanceOf[js.Any])
+    inline def setInsufficientDataHealthStatus(value: InsufficientDataHealthStatus): Self = StObject.set(x, "InsufficientDataHealthStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsufficientDataHealthStatusUndefined: Self = StObject.set(x, "InsufficientDataHealthStatus", js.undefined)
+    inline def setInsufficientDataHealthStatusUndefined: Self = StObject.set(x, "InsufficientDataHealthStatus", js.undefined)
     
-    @scala.inline
-    def setInverted(value: Inverted): Self = StObject.set(x, "Inverted", value.asInstanceOf[js.Any])
+    inline def setInverted(value: Inverted): Self = StObject.set(x, "Inverted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertedUndefined: Self = StObject.set(x, "Inverted", js.undefined)
+    inline def setInvertedUndefined: Self = StObject.set(x, "Inverted", js.undefined)
     
-    @scala.inline
-    def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    @scala.inline
-    def setRegions(value: HealthCheckRegionList): Self = StObject.set(x, "Regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: HealthCheckRegionList): Self = StObject.set(x, "Regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "Regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "Regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: HealthCheckRegion*): Self = StObject.set(x, "Regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: HealthCheckRegion*): Self = StObject.set(x, "Regions", js.Array(value :_*))
     
-    @scala.inline
-    def setResetElements(value: ResettableElementNameList): Self = StObject.set(x, "ResetElements", value.asInstanceOf[js.Any])
+    inline def setResetElements(value: ResettableElementNameList): Self = StObject.set(x, "ResetElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetElementsUndefined: Self = StObject.set(x, "ResetElements", js.undefined)
+    inline def setResetElementsUndefined: Self = StObject.set(x, "ResetElements", js.undefined)
     
-    @scala.inline
-    def setResetElementsVarargs(value: ResettableElementName*): Self = StObject.set(x, "ResetElements", js.Array(value :_*))
+    inline def setResetElementsVarargs(value: ResettableElementName*): Self = StObject.set(x, "ResetElements", js.Array(value :_*))
     
-    @scala.inline
-    def setResourcePath(value: ResourcePath): Self = StObject.set(x, "ResourcePath", value.asInstanceOf[js.Any])
+    inline def setResourcePath(value: ResourcePath): Self = StObject.set(x, "ResourcePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcePathUndefined: Self = StObject.set(x, "ResourcePath", js.undefined)
+    inline def setResourcePathUndefined: Self = StObject.set(x, "ResourcePath", js.undefined)
     
-    @scala.inline
-    def setSearchString(value: SearchString): Self = StObject.set(x, "SearchString", value.asInstanceOf[js.Any])
+    inline def setSearchString(value: SearchString): Self = StObject.set(x, "SearchString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchStringUndefined: Self = StObject.set(x, "SearchString", js.undefined)
+    inline def setSearchStringUndefined: Self = StObject.set(x, "SearchString", js.undefined)
   }
 }

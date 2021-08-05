@@ -56,49 +56,35 @@ trait IRendererOptions extends StObject {
 }
 object IRendererOptions {
   
-  @scala.inline
-  def apply(): IRendererOptions = {
+  inline def apply(): IRendererOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRendererOptions]
   }
   
-  @scala.inline
-  implicit class IRendererOptionsMutableBuilder[Self <: IRendererOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IRendererOptions](x: Self) {
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setHasBounds(value: Boolean): Self = StObject.set(x, "hasBounds", value.asInstanceOf[js.Any])
+    inline def setHasBounds(value: Boolean): Self = StObject.set(x, "hasBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasBoundsUndefined: Self = StObject.set(x, "hasBounds", js.undefined)
+    inline def setHasBoundsUndefined: Self = StObject.set(x, "hasBounds", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setWireframeBackground(value: String): Self = StObject.set(x, "wireframeBackground", value.asInstanceOf[js.Any])
+    inline def setWireframeBackground(value: String): Self = StObject.set(x, "wireframeBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWireframeBackgroundUndefined: Self = StObject.set(x, "wireframeBackground", js.undefined)
+    inline def setWireframeBackgroundUndefined: Self = StObject.set(x, "wireframeBackground", js.undefined)
     
-    @scala.inline
-    def setWireframes(value: Boolean): Self = StObject.set(x, "wireframes", value.asInstanceOf[js.Any])
+    inline def setWireframes(value: Boolean): Self = StObject.set(x, "wireframes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWireframesUndefined: Self = StObject.set(x, "wireframes", js.undefined)
+    inline def setWireframesUndefined: Self = StObject.set(x, "wireframes", js.undefined)
   }
 }

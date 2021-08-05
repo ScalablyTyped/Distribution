@@ -13,16 +13,13 @@ trait ListTagsForResourceResponse extends StObject {
 }
 object ListTagsForResourceResponse {
   
-  @scala.inline
-  def apply(ResourceTagSet: ResourceTagSet): ListTagsForResourceResponse = {
+  inline def apply(ResourceTagSet: ResourceTagSet): ListTagsForResourceResponse = {
     val __obj = js.Dynamic.literal(ResourceTagSet = ResourceTagSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForResourceResponse]
   }
   
-  @scala.inline
-  implicit class ListTagsForResourceResponseMutableBuilder[Self <: ListTagsForResourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsForResourceResponse](x: Self) {
     
-    @scala.inline
-    def setResourceTagSet(value: ResourceTagSet): Self = StObject.set(x, "ResourceTagSet", value.asInstanceOf[js.Any])
+    inline def setResourceTagSet(value: ResourceTagSet): Self = StObject.set(x, "ResourceTagSet", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait DataNoop extends StObject {
 }
 object DataNoop {
   
-  @scala.inline
-  def apply(data: Noop): DataNoop = {
+  inline def apply(data: Noop): DataNoop = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataNoop]
   }
   
-  @scala.inline
-  implicit class DataNoopMutableBuilder[Self <: DataNoop] (val x: Self) extends AnyVal {
+  extension [Self <: DataNoop](x: Self) {
     
-    @scala.inline
-    def setData(value: Noop): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Noop): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

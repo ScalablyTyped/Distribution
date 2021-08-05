@@ -15,16 +15,13 @@ trait IGenericDimensionListLayout
 }
 object IGenericDimensionListLayout {
   
-  @scala.inline
-  def apply(qDimensionList: IDimensionList, qInfo: INxInfo, qMeta: INxMeta): IGenericDimensionListLayout = {
+  inline def apply(qDimensionList: IDimensionList, qInfo: INxInfo, qMeta: INxMeta): IGenericDimensionListLayout = {
     val __obj = js.Dynamic.literal(qDimensionList = qDimensionList.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericDimensionListLayout]
   }
   
-  @scala.inline
-  implicit class IGenericDimensionListLayoutMutableBuilder[Self <: IGenericDimensionListLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericDimensionListLayout](x: Self) {
     
-    @scala.inline
-    def setQDimensionList(value: IDimensionList): Self = StObject.set(x, "qDimensionList", value.asInstanceOf[js.Any])
+    inline def setQDimensionList(value: IDimensionList): Self = StObject.set(x, "qDimensionList", value.asInstanceOf[js.Any])
   }
 }

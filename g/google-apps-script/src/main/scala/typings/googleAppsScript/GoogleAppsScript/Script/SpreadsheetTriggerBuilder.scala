@@ -21,8 +21,7 @@ trait SpreadsheetTriggerBuilder extends StObject {
 }
 object SpreadsheetTriggerBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: () => Trigger,
     onChange: () => SpreadsheetTriggerBuilder,
     onEdit: () => SpreadsheetTriggerBuilder,
@@ -33,22 +32,16 @@ object SpreadsheetTriggerBuilder {
     __obj.asInstanceOf[SpreadsheetTriggerBuilder]
   }
   
-  @scala.inline
-  implicit class SpreadsheetTriggerBuilderMutableBuilder[Self <: SpreadsheetTriggerBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetTriggerBuilder](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnChange(value: () => SpreadsheetTriggerBuilder): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+    inline def setOnChange(value: () => SpreadsheetTriggerBuilder): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnEdit(value: () => SpreadsheetTriggerBuilder): Self = StObject.set(x, "onEdit", js.Any.fromFunction0(value))
+    inline def setOnEdit(value: () => SpreadsheetTriggerBuilder): Self = StObject.set(x, "onEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnFormSubmit(value: () => SpreadsheetTriggerBuilder): Self = StObject.set(x, "onFormSubmit", js.Any.fromFunction0(value))
+    inline def setOnFormSubmit(value: () => SpreadsheetTriggerBuilder): Self = StObject.set(x, "onFormSubmit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnOpen(value: () => SpreadsheetTriggerBuilder): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+    inline def setOnOpen(value: () => SpreadsheetTriggerBuilder): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
   }
 }

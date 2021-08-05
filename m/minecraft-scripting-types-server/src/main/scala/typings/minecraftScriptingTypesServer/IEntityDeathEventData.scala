@@ -17,16 +17,13 @@ trait IEntityDeathEventData extends StObject {
 }
 object IEntityDeathEventData {
   
-  @scala.inline
-  def apply(entity: IEntity): IEntityDeathEventData = {
+  inline def apply(entity: IEntity): IEntityDeathEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntityDeathEventData]
   }
   
-  @scala.inline
-  implicit class IEntityDeathEventDataMutableBuilder[Self <: IEntityDeathEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IEntityDeathEventData](x: Self) {
     
-    @scala.inline
-    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait PrinterXri extends StObject {
 }
 object PrinterXri {
   
-  @scala.inline
-  def apply(): PrinterXri = {
+  inline def apply(): PrinterXri = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrinterXri]
   }
   
-  @scala.inline
-  implicit class PrinterXriMutableBuilder[Self <: PrinterXri] (val x: Self) extends AnyVal {
+  extension [Self <: PrinterXri](x: Self) {
     
-    @scala.inline
-    def `setXri-authentication`(value: XriAuthentication): Self = StObject.set(x, "xri-authentication", value.asInstanceOf[js.Any])
+    inline def `setXri-authentication`(value: XriAuthentication): Self = StObject.set(x, "xri-authentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setXri-authenticationUndefined`: Self = StObject.set(x, "xri-authentication", js.undefined)
+    inline def `setXri-authenticationUndefined`: Self = StObject.set(x, "xri-authentication", js.undefined)
     
-    @scala.inline
-    def `setXri-security`(value: XriSecurity): Self = StObject.set(x, "xri-security", value.asInstanceOf[js.Any])
+    inline def `setXri-security`(value: XriSecurity): Self = StObject.set(x, "xri-security", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setXri-securityUndefined`: Self = StObject.set(x, "xri-security", js.undefined)
+    inline def `setXri-securityUndefined`: Self = StObject.set(x, "xri-security", js.undefined)
     
-    @scala.inline
-    def `setXri-uri`(value: String): Self = StObject.set(x, "xri-uri", value.asInstanceOf[js.Any])
+    inline def `setXri-uri`(value: String): Self = StObject.set(x, "xri-uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setXri-uriUndefined`: Self = StObject.set(x, "xri-uri", js.undefined)
+    inline def `setXri-uriUndefined`: Self = StObject.set(x, "xri-uri", js.undefined)
   }
 }

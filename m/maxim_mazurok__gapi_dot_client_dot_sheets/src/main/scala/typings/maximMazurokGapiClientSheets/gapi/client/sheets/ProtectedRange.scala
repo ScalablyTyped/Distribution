@@ -42,64 +42,45 @@ trait ProtectedRange extends StObject {
 }
 object ProtectedRange {
   
-  @scala.inline
-  def apply(): ProtectedRange = {
+  inline def apply(): ProtectedRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProtectedRange]
   }
   
-  @scala.inline
-  implicit class ProtectedRangeMutableBuilder[Self <: ProtectedRange] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectedRange](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEditors(value: Editors): Self = StObject.set(x, "editors", value.asInstanceOf[js.Any])
+    inline def setEditors(value: Editors): Self = StObject.set(x, "editors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorsUndefined: Self = StObject.set(x, "editors", js.undefined)
+    inline def setEditorsUndefined: Self = StObject.set(x, "editors", js.undefined)
     
-    @scala.inline
-    def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
+    inline def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
+    inline def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
     
-    @scala.inline
-    def setProtectedRangeId(value: Double): Self = StObject.set(x, "protectedRangeId", value.asInstanceOf[js.Any])
+    inline def setProtectedRangeId(value: Double): Self = StObject.set(x, "protectedRangeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectedRangeIdUndefined: Self = StObject.set(x, "protectedRangeId", js.undefined)
+    inline def setProtectedRangeIdUndefined: Self = StObject.set(x, "protectedRangeId", js.undefined)
     
-    @scala.inline
-    def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setRequestingUserCanEdit(value: Boolean): Self = StObject.set(x, "requestingUserCanEdit", value.asInstanceOf[js.Any])
+    inline def setRequestingUserCanEdit(value: Boolean): Self = StObject.set(x, "requestingUserCanEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestingUserCanEditUndefined: Self = StObject.set(x, "requestingUserCanEdit", js.undefined)
+    inline def setRequestingUserCanEditUndefined: Self = StObject.set(x, "requestingUserCanEdit", js.undefined)
     
-    @scala.inline
-    def setUnprotectedRanges(value: js.Array[GridRange]): Self = StObject.set(x, "unprotectedRanges", value.asInstanceOf[js.Any])
+    inline def setUnprotectedRanges(value: js.Array[GridRange]): Self = StObject.set(x, "unprotectedRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprotectedRangesUndefined: Self = StObject.set(x, "unprotectedRanges", js.undefined)
+    inline def setUnprotectedRangesUndefined: Self = StObject.set(x, "unprotectedRanges", js.undefined)
     
-    @scala.inline
-    def setUnprotectedRangesVarargs(value: GridRange*): Self = StObject.set(x, "unprotectedRanges", js.Array(value :_*))
+    inline def setUnprotectedRangesVarargs(value: GridRange*): Self = StObject.set(x, "unprotectedRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setWarningOnly(value: Boolean): Self = StObject.set(x, "warningOnly", value.asInstanceOf[js.Any])
+    inline def setWarningOnly(value: Boolean): Self = StObject.set(x, "warningOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningOnlyUndefined: Self = StObject.set(x, "warningOnly", js.undefined)
+    inline def setWarningOnlyUndefined: Self = StObject.set(x, "warningOnly", js.undefined)
   }
 }

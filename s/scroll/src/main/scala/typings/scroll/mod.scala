@@ -15,38 +15,24 @@ object mod {
   @JSImport("scroll", "left")
   @js.native
   def left: Scroll = js.native
-  @scala.inline
-  def left(el: HTMLElement, to: Double): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Cancel]
-  @scala.inline
-  def left(el: HTMLElement, to: Double, opts: Unit, cb: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Cancel]
-  @scala.inline
-  def left(el: HTMLElement, to: Double, opts: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cancel]
-  @scala.inline
-  def left(el: HTMLElement, to: Double, opts: ScrollCallback, cb: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Cancel]
-  @scala.inline
-  def left(el: HTMLElement, to: Double, opts: ScrollOptions): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cancel]
-  @scala.inline
-  def left(el: HTMLElement, to: Double, opts: ScrollOptions, cb: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Cancel]
-  @scala.inline
-  def left_=(x: Scroll): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
+  inline def left(el: HTMLElement, to: Double): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  inline def left(el: HTMLElement, to: Double, opts: Unit, cb: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  inline def left(el: HTMLElement, to: Double, opts: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  inline def left(el: HTMLElement, to: Double, opts: ScrollCallback, cb: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  inline def left(el: HTMLElement, to: Double, opts: ScrollOptions): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  inline def left(el: HTMLElement, to: Double, opts: ScrollOptions, cb: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  inline def left_=(x: Scroll): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
   
   @JSImport("scroll", "top")
   @js.native
   def top: Scroll = js.native
-  @scala.inline
-  def top(el: HTMLElement, to: Double): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("top")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Cancel]
-  @scala.inline
-  def top(el: HTMLElement, to: Double, opts: Unit, cb: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("top")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Cancel]
-  @scala.inline
-  def top(el: HTMLElement, to: Double, opts: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("top")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cancel]
-  @scala.inline
-  def top(el: HTMLElement, to: Double, opts: ScrollCallback, cb: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("top")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Cancel]
-  @scala.inline
-  def top(el: HTMLElement, to: Double, opts: ScrollOptions): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("top")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cancel]
-  @scala.inline
-  def top(el: HTMLElement, to: Double, opts: ScrollOptions, cb: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("top")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Cancel]
-  @scala.inline
-  def top_=(x: Scroll): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
+  inline def top(el: HTMLElement, to: Double): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("top")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  inline def top(el: HTMLElement, to: Double, opts: Unit, cb: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("top")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  inline def top(el: HTMLElement, to: Double, opts: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("top")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  inline def top(el: HTMLElement, to: Double, opts: ScrollCallback, cb: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("top")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  inline def top(el: HTMLElement, to: Double, opts: ScrollOptions): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("top")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  inline def top(el: HTMLElement, to: Double, opts: ScrollOptions, cb: ScrollCallback): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("top")(el.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  inline def top_=(x: Scroll): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
   
   type Cancel = js.Function0[Unit]
   
@@ -78,26 +64,20 @@ object mod {
   }
   object ScrollOptions {
     
-    @scala.inline
-    def apply(): ScrollOptions = {
+    inline def apply(): ScrollOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScrollOptions]
     }
     
-    @scala.inline
-    implicit class ScrollOptionsMutableBuilder[Self <: ScrollOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollOptions](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEase(value: /* time */ Double => Double): Self = StObject.set(x, "ease", js.Any.fromFunction1(value))
+      inline def setEase(value: /* time */ Double => Double): Self = StObject.set(x, "ease", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
+      inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
     }
   }
 }

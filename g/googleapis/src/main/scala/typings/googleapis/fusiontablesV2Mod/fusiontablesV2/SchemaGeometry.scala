@@ -23,34 +23,25 @@ trait SchemaGeometry extends StObject {
 }
 object SchemaGeometry {
   
-  @scala.inline
-  def apply(): SchemaGeometry = {
+  inline def apply(): SchemaGeometry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGeometry]
   }
   
-  @scala.inline
-  implicit class SchemaGeometryMutableBuilder[Self <: SchemaGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGeometry](x: Self) {
     
-    @scala.inline
-    def setGeometries(value: js.Array[js.Any]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    inline def setGeometries(value: js.Array[js.Any]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
+    inline def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
-    @scala.inline
-    def setGeometriesVarargs(value: js.Any*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+    inline def setGeometriesVarargs(value: js.Any*): Self = StObject.set(x, "geometries", js.Array(value :_*))
     
-    @scala.inline
-    def setGeometry(value: js.Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: js.Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+    inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

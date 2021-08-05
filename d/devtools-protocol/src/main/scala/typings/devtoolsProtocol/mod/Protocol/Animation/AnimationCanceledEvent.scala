@@ -13,16 +13,13 @@ trait AnimationCanceledEvent extends StObject {
 }
 object AnimationCanceledEvent {
   
-  @scala.inline
-  def apply(id: String): AnimationCanceledEvent = {
+  inline def apply(id: String): AnimationCanceledEvent = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationCanceledEvent]
   }
   
-  @scala.inline
-  implicit class AnimationCanceledEventMutableBuilder[Self <: AnimationCanceledEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationCanceledEvent](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

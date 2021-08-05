@@ -9,8 +9,7 @@ trait LanIdentifier
      with ILanIdentifier
 object LanIdentifier {
   
-  @scala.inline
-  def apply(infrastructureId: LanIdentifierData, networkAdapterId: String, portId: LanIdentifierData): LanIdentifier = {
+  inline def apply(infrastructureId: LanIdentifierData, networkAdapterId: String, portId: LanIdentifierData): LanIdentifier = {
     val __obj = js.Dynamic.literal(infrastructureId = infrastructureId.asInstanceOf[js.Any], networkAdapterId = networkAdapterId.asInstanceOf[js.Any], portId = portId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanIdentifier]
   }

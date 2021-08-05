@@ -19,8 +19,7 @@ object SQIPCardEntry {
     * call completeCardEntry after getting the card nonce from the `onCardNonceRequestSuccess` cardDetails parameter.
     * @param onCardEntryComplete - The callback invoked when card entry is completed and is closed.
     */
-  @scala.inline
-  def completeCardEntry(onCardEntryComplete: CardEntryCompleteCallback): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("completeCardEntry")(onCardEntryComplete.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def completeCardEntry(onCardEntryComplete: CardEntryCompleteCallback): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("completeCardEntry")(onCardEntryComplete.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Sets the customization theme for the card entry view controller in the native layer.
@@ -28,8 +27,7 @@ object SQIPCardEntry {
     * @platform IOS
     * @param themeConfiguration - An object that defines the theme of an iOS card entry view controller.
     */
-  @scala.inline
-  def setIOSCardEntryTheme(themeConfiguration: ThemeIOS): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setIOSCardEntryTheme")(themeConfiguration.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def setIOSCardEntryTheme(themeConfiguration: ThemeIOS): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setIOSCardEntryTheme")(themeConfiguration.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Called in the `onCardNonceRequestSuccess` callback. Returns execution to the card entry form with an error string to be shown in the form.
@@ -37,11 +35,9 @@ object SQIPCardEntry {
     * If callback logic makes a server call to request a payment with the supplied nonce, this method is called after getting an error response from the server call.
     * @param errorMessage - The error message to be shown in the card entry form.
     */
-  @scala.inline
-  def showCardNonceProcessingError(errorMessage: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("showCardNonceProcessingError")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def showCardNonceProcessingError(errorMessage: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("showCardNonceProcessingError")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def startCardEntryFlow(
+  inline def startCardEntryFlow(
     cardEntryConfig: Null,
     onCardNonceRequestSuccess: CardEntryNonceRequestSuccessCallback,
     onCardEntryCancel: CardEntryCancelCallback
@@ -54,15 +50,13 @@ object SQIPCardEntry {
     * @param onCardNonceRequestSuccess - Invoked when card entry is completed and the SDK has processed the payment card information.
     * @param onCardEntryCancel - Invoked when card entry is canceled.
     */
-  @scala.inline
-  def startCardEntryFlow(
+  inline def startCardEntryFlow(
     cardEntryConfig: CardEntryConfig,
     onCardNonceRequestSuccess: CardEntryNonceRequestSuccessCallback,
     onCardEntryCancel: CardEntryCancelCallback
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("startCardEntryFlow")(cardEntryConfig.asInstanceOf[js.Any], onCardNonceRequestSuccess.asInstanceOf[js.Any], onCardEntryCancel.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def startCardEntryFlowWithBuyerVerification(
+  inline def startCardEntryFlowWithBuyerVerification(
     cardEntryConfig: Null,
     onBuyerVerificationSuccess: BuyerVerificationSuccessCallback,
     onBuyerVerificationFailure: BuyerVerificationErrorCallback,
@@ -76,8 +70,7 @@ object SQIPCardEntry {
     * @param onBuyerVerificationFailure - Invoked when card entry with buyer verification encounters errors.
     * @param onCardEntryCancel - Invoked when card entry is canceled.
     */
-  @scala.inline
-  def startCardEntryFlowWithBuyerVerification(
+  inline def startCardEntryFlowWithBuyerVerification(
     cardEntryConfig: CardEntryConfig,
     onBuyerVerificationSuccess: BuyerVerificationSuccessCallback,
     onBuyerVerificationFailure: BuyerVerificationErrorCallback,
@@ -98,23 +91,18 @@ object SQIPCardEntry {
   }
   object BuyerVerificationDetails {
     
-    @scala.inline
-    def apply(card: Card, nonce: String, token: String): BuyerVerificationDetails = {
+    inline def apply(card: Card, nonce: String, token: String): BuyerVerificationDetails = {
       val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[BuyerVerificationDetails]
     }
     
-    @scala.inline
-    implicit class BuyerVerificationDetailsMutableBuilder[Self <: BuyerVerificationDetails] (val x: Self) extends AnyVal {
+    extension [Self <: BuyerVerificationDetails](x: Self) {
       
-      @scala.inline
-      def setCard(value: Card): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: Card): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,98 +218,68 @@ object SQIPCardEntry {
   }
   object CardEntryConfig {
     
-    @scala.inline
-    def apply(collectPostalCode: Boolean): CardEntryConfig = {
+    inline def apply(collectPostalCode: Boolean): CardEntryConfig = {
       val __obj = js.Dynamic.literal(collectPostalCode = collectPostalCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[CardEntryConfig]
     }
     
-    @scala.inline
-    implicit class CardEntryConfigMutableBuilder[Self <: CardEntryConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CardEntryConfig](x: Self) {
       
-      @scala.inline
-      def setAddressLines(value: js.Array[String]): Self = StObject.set(x, "addressLines", value.asInstanceOf[js.Any])
+      inline def setAddressLines(value: js.Array[String]): Self = StObject.set(x, "addressLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressLinesUndefined: Self = StObject.set(x, "addressLines", js.undefined)
+      inline def setAddressLinesUndefined: Self = StObject.set(x, "addressLines", js.undefined)
       
-      @scala.inline
-      def setAddressLinesVarargs(value: String*): Self = StObject.set(x, "addressLines", js.Array(value :_*))
+      inline def setAddressLinesVarargs(value: String*): Self = StObject.set(x, "addressLines", js.Array(value :_*))
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+      inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
       
-      @scala.inline
-      def setBuyerAction(value: String): Self = StObject.set(x, "buyerAction", value.asInstanceOf[js.Any])
+      inline def setBuyerAction(value: String): Self = StObject.set(x, "buyerAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuyerActionUndefined: Self = StObject.set(x, "buyerAction", js.undefined)
+      inline def setBuyerActionUndefined: Self = StObject.set(x, "buyerAction", js.undefined)
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+      inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
       
-      @scala.inline
-      def setCollectPostalCode(value: Boolean): Self = StObject.set(x, "collectPostalCode", value.asInstanceOf[js.Any])
+      inline def setCollectPostalCode(value: Boolean): Self = StObject.set(x, "collectPostalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+      inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+      inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
       
-      @scala.inline
-      def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+      inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+      inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+      inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
+      inline def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
       
-      @scala.inline
-      def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+      inline def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
+      inline def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+      inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
       
-      @scala.inline
-      def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+      inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
+      inline def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setSquareLocationId(value: String): Self = StObject.set(x, "squareLocationId", value.asInstanceOf[js.Any])
+      inline def setSquareLocationId(value: String): Self = StObject.set(x, "squareLocationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquareLocationIdUndefined: Self = StObject.set(x, "squareLocationId", js.undefined)
+      inline def setSquareLocationIdUndefined: Self = StObject.set(x, "squareLocationId", js.undefined)
     }
   }
   
@@ -340,20 +298,16 @@ object SQIPCardEntry {
   }
   object Font {
     
-    @scala.inline
-    def apply(name: String, size: Double): Font = {
+    inline def apply(name: String, size: Double): Font = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Font]
     }
     
-    @scala.inline
-    implicit class FontMutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
+    extension [Self <: Font](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -371,26 +325,20 @@ object SQIPCardEntry {
   }
   object RGBAColor {
     
-    @scala.inline
-    def apply(a: Double, b: Double, g: Double, r: Double): RGBAColor = {
+    inline def apply(a: Double, b: Double, g: Double, r: Double): RGBAColor = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[RGBAColor]
     }
     
-    @scala.inline
-    implicit class RGBAColorMutableBuilder[Self <: RGBAColor] (val x: Self) extends AnyVal {
+    extension [Self <: RGBAColor](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -435,86 +383,60 @@ object SQIPCardEntry {
   }
   object ThemeIOS {
     
-    @scala.inline
-    def apply(): ThemeIOS = {
+    inline def apply(): ThemeIOS = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThemeIOS]
     }
     
-    @scala.inline
-    implicit class ThemeIOSMutableBuilder[Self <: ThemeIOS] (val x: Self) extends AnyVal {
+    extension [Self <: ThemeIOS](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: RGBAColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: RGBAColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setErrorColor(value: RGBAColor): Self = StObject.set(x, "errorColor", value.asInstanceOf[js.Any])
+      inline def setErrorColor(value: RGBAColor): Self = StObject.set(x, "errorColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorColorUndefined: Self = StObject.set(x, "errorColor", js.undefined)
+      inline def setErrorColorUndefined: Self = StObject.set(x, "errorColor", js.undefined)
       
-      @scala.inline
-      def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setForegroundColor(value: RGBAColor): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+      inline def setForegroundColor(value: RGBAColor): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
+      inline def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
       
-      @scala.inline
-      def setKeyboardAppearance(value: KeyboardAppearance): Self = StObject.set(x, "keyboardAppearance", value.asInstanceOf[js.Any])
+      inline def setKeyboardAppearance(value: KeyboardAppearance): Self = StObject.set(x, "keyboardAppearance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardAppearanceUndefined: Self = StObject.set(x, "keyboardAppearance", js.undefined)
+      inline def setKeyboardAppearanceUndefined: Self = StObject.set(x, "keyboardAppearance", js.undefined)
       
-      @scala.inline
-      def setMessageColor(value: RGBAColor): Self = StObject.set(x, "messageColor", value.asInstanceOf[js.Any])
+      inline def setMessageColor(value: RGBAColor): Self = StObject.set(x, "messageColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageColorUndefined: Self = StObject.set(x, "messageColor", js.undefined)
+      inline def setMessageColorUndefined: Self = StObject.set(x, "messageColor", js.undefined)
       
-      @scala.inline
-      def setPlaceholderTextColor(value: RGBAColor): Self = StObject.set(x, "placeholderTextColor", value.asInstanceOf[js.Any])
+      inline def setPlaceholderTextColor(value: RGBAColor): Self = StObject.set(x, "placeholderTextColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderTextColorUndefined: Self = StObject.set(x, "placeholderTextColor", js.undefined)
+      inline def setPlaceholderTextColorUndefined: Self = StObject.set(x, "placeholderTextColor", js.undefined)
       
-      @scala.inline
-      def setSaveButtonFont(value: Font): Self = StObject.set(x, "saveButtonFont", value.asInstanceOf[js.Any])
+      inline def setSaveButtonFont(value: Font): Self = StObject.set(x, "saveButtonFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveButtonFontUndefined: Self = StObject.set(x, "saveButtonFont", js.undefined)
+      inline def setSaveButtonFontUndefined: Self = StObject.set(x, "saveButtonFont", js.undefined)
       
-      @scala.inline
-      def setSaveButtonTextColor(value: RGBAColor): Self = StObject.set(x, "saveButtonTextColor", value.asInstanceOf[js.Any])
+      inline def setSaveButtonTextColor(value: RGBAColor): Self = StObject.set(x, "saveButtonTextColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveButtonTextColorUndefined: Self = StObject.set(x, "saveButtonTextColor", js.undefined)
+      inline def setSaveButtonTextColorUndefined: Self = StObject.set(x, "saveButtonTextColor", js.undefined)
       
-      @scala.inline
-      def setSaveButtonTitle(value: String): Self = StObject.set(x, "saveButtonTitle", value.asInstanceOf[js.Any])
+      inline def setSaveButtonTitle(value: String): Self = StObject.set(x, "saveButtonTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveButtonTitleUndefined: Self = StObject.set(x, "saveButtonTitle", js.undefined)
+      inline def setSaveButtonTitleUndefined: Self = StObject.set(x, "saveButtonTitle", js.undefined)
       
-      @scala.inline
-      def setTextColor(value: RGBAColor): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+      inline def setTextColor(value: RGBAColor): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+      inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       
-      @scala.inline
-      def setTintColor(value: RGBAColor): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+      inline def setTintColor(value: RGBAColor): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+      inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     }
   }
 }

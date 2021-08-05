@@ -14,22 +14,17 @@ trait SocialColor extends StObject {
 }
 object SocialColor {
   
-  @scala.inline
-  def apply(facebook: String, facebookActive: String, facebookHover: String): SocialColor = {
+  inline def apply(facebook: String, facebookActive: String, facebookHover: String): SocialColor = {
     val __obj = js.Dynamic.literal(facebook = facebook.asInstanceOf[js.Any], facebookActive = facebookActive.asInstanceOf[js.Any], facebookHover = facebookHover.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocialColor]
   }
   
-  @scala.inline
-  implicit class SocialColorMutableBuilder[Self <: SocialColor] (val x: Self) extends AnyVal {
+  extension [Self <: SocialColor](x: Self) {
     
-    @scala.inline
-    def setFacebook(value: String): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
+    inline def setFacebook(value: String): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacebookActive(value: String): Self = StObject.set(x, "facebookActive", value.asInstanceOf[js.Any])
+    inline def setFacebookActive(value: String): Self = StObject.set(x, "facebookActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacebookHover(value: String): Self = StObject.set(x, "facebookHover", value.asInstanceOf[js.Any])
+    inline def setFacebookHover(value: String): Self = StObject.set(x, "facebookHover", value.asInstanceOf[js.Any])
   }
 }

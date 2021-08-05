@@ -19,8 +19,7 @@ trait GestureEnabled extends StObject {
 }
 object GestureEnabled {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     gestureEnabled: Boolean,
     gestureVelocityImpact: Double,
     overlay: StyleWithAnimatedValue => Element | Null,
@@ -31,22 +30,16 @@ object GestureEnabled {
     __obj.asInstanceOf[GestureEnabled]
   }
   
-  @scala.inline
-  implicit class GestureEnabledMutableBuilder[Self <: GestureEnabled] (val x: Self) extends AnyVal {
+  extension [Self <: GestureEnabled](x: Self) {
     
-    @scala.inline
-    def setGestureEnabled(value: Boolean): Self = StObject.set(x, "gestureEnabled", value.asInstanceOf[js.Any])
+    inline def setGestureEnabled(value: Boolean): Self = StObject.set(x, "gestureEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGestureVelocityImpact(value: Double): Self = StObject.set(x, "gestureVelocityImpact", value.asInstanceOf[js.Any])
+    inline def setGestureVelocityImpact(value: Double): Self = StObject.set(x, "gestureVelocityImpact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlay(value: StyleWithAnimatedValue => Element | Null): Self = StObject.set(x, "overlay", js.Any.fromFunction1(value))
+    inline def setOverlay(value: StyleWithAnimatedValue => Element | Null): Self = StObject.set(x, "overlay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOverlayEnabled(value: Boolean): Self = StObject.set(x, "overlayEnabled", value.asInstanceOf[js.Any])
+    inline def setOverlayEnabled(value: Boolean): Self = StObject.set(x, "overlayEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowEnabled(value: Boolean): Self = StObject.set(x, "shadowEnabled", value.asInstanceOf[js.Any])
+    inline def setShadowEnabled(value: Boolean): Self = StObject.set(x, "shadowEnabled", value.asInstanceOf[js.Any])
   }
 }

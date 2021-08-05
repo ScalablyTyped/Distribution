@@ -33,8 +33,7 @@ trait XSetSpellAlternatives
 }
 object XSetSpellAlternatives {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -45,13 +44,10 @@ object XSetSpellAlternatives {
     __obj.asInstanceOf[XSetSpellAlternatives]
   }
   
-  @scala.inline
-  implicit class XSetSpellAlternativesMutableBuilder[Self <: XSetSpellAlternatives] (val x: Self) extends AnyVal {
+  extension [Self <: XSetSpellAlternatives](x: Self) {
     
-    @scala.inline
-    def setSetAlternatives(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setAlternatives", js.Any.fromFunction1(value))
+    inline def setSetAlternatives(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setAlternatives", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFailureType(value: Double => Unit): Self = StObject.set(x, "setFailureType", js.Any.fromFunction1(value))
+    inline def setSetFailureType(value: Double => Unit): Self = StObject.set(x, "setFailureType", js.Any.fromFunction1(value))
   }
 }

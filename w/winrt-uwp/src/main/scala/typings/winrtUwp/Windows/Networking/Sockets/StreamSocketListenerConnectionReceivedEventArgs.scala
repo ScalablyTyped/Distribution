@@ -12,16 +12,13 @@ trait StreamSocketListenerConnectionReceivedEventArgs extends StObject {
 }
 object StreamSocketListenerConnectionReceivedEventArgs {
   
-  @scala.inline
-  def apply(socket: StreamSocket): StreamSocketListenerConnectionReceivedEventArgs = {
+  inline def apply(socket: StreamSocket): StreamSocketListenerConnectionReceivedEventArgs = {
     val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamSocketListenerConnectionReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class StreamSocketListenerConnectionReceivedEventArgsMutableBuilder[Self <: StreamSocketListenerConnectionReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: StreamSocketListenerConnectionReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSocket(value: StreamSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+    inline def setSocket(value: StreamSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
   }
 }

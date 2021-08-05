@@ -57,8 +57,7 @@ trait SingularPosition extends StObject {
 }
 object SingularPosition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: () => Boolean,
     height: () => Double,
     outerHeight: () => Double,
@@ -73,34 +72,24 @@ object SingularPosition {
     __obj.asInstanceOf[SingularPosition]
   }
   
-  @scala.inline
-  implicit class SingularPositionMutableBuilder[Self <: SingularPosition] (val x: Self) extends AnyVal {
+  extension [Self <: SingularPosition](x: Self) {
     
-    @scala.inline
-    def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
+    inline def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeight(value: () => Double): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
+    inline def setHeight(value: () => Double): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOuterHeight(value: () => Double): Self = StObject.set(x, "outerHeight", js.Any.fromFunction0(value))
+    inline def setOuterHeight(value: () => Double): Self = StObject.set(x, "outerHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOuterWidth(value: () => Double): Self = StObject.set(x, "outerWidth", js.Any.fromFunction0(value))
+    inline def setOuterWidth(value: () => Double): Self = StObject.set(x, "outerWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderedHeight(value: () => Double): Self = StObject.set(x, "renderedHeight", js.Any.fromFunction0(value))
+    inline def setRenderedHeight(value: () => Double): Self = StObject.set(x, "renderedHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderedOuterHeight(value: () => Double): Self = StObject.set(x, "renderedOuterHeight", js.Any.fromFunction0(value))
+    inline def setRenderedOuterHeight(value: () => Double): Self = StObject.set(x, "renderedOuterHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderedOuterWidth(value: () => Double): Self = StObject.set(x, "renderedOuterWidth", js.Any.fromFunction0(value))
+    inline def setRenderedOuterWidth(value: () => Double): Self = StObject.set(x, "renderedOuterWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderedWidth(value: () => Double): Self = StObject.set(x, "renderedWidth", js.Any.fromFunction0(value))
+    inline def setRenderedWidth(value: () => Double): Self = StObject.set(x, "renderedWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWidth(value: () => Double): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
+    inline def setWidth(value: () => Double): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
   }
 }

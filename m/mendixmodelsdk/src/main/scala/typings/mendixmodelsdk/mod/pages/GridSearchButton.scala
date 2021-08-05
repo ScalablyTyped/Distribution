@@ -39,8 +39,7 @@ object GridSearchButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSearchButton]
+  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSearchButton]
   
   /**
     * Creates and returns a new GridSearchButton instance in the SDK and on the server.
@@ -51,8 +50,7 @@ object GridSearchButton {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createIn(container: typings.mendixmodelsdk.pagesMod.pages.ControlBar): typings.mendixmodelsdk.pagesMod.pages.GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSearchButton]
+  inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.ControlBar): typings.mendixmodelsdk.pagesMod.pages.GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSearchButton]
   
   /**
     * Creates and returns a new GridSearchButton instance in the SDK and on the server.
@@ -60,8 +58,7 @@ object GridSearchButton {
     * of the parent ControlBar element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInControlBarUnderItems(container: typings.mendixmodelsdk.pagesMod.pages.ControlBar): typings.mendixmodelsdk.pagesMod.pages.GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarUnderItems")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSearchButton]
+  inline def createInControlBarUnderItems(container: typings.mendixmodelsdk.pagesMod.pages.ControlBar): typings.mendixmodelsdk.pagesMod.pages.GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarUnderItems")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSearchButton]
   
   /**
     * Creates and returns a new GridSearchButton instance in the SDK and on the server.
@@ -72,20 +69,17 @@ object GridSearchButton {
     *  6.0.0 to 7.12.0
     */
   /* static member */
-  @scala.inline
-  def createInGridControlBarUnderSearchButton(container: typings.mendixmodelsdk.pagesMod.pages.GridControlBar): typings.mendixmodelsdk.pagesMod.pages.GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridControlBarUnderSearchButton")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSearchButton]
+  inline def createInGridControlBarUnderSearchButton(container: typings.mendixmodelsdk.pagesMod.pages.GridControlBar): typings.mendixmodelsdk.pagesMod.pages.GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridControlBarUnderSearchButton")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSearchButton]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.GridSearchButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.GridSearchButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

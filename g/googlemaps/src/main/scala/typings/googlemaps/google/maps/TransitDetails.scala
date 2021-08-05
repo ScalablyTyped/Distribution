@@ -24,8 +24,7 @@ trait TransitDetails extends StObject {
 }
 object TransitDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arrival_stop: TransitStop,
     arrival_time: Time,
     departure_stop: TransitStop,
@@ -39,31 +38,22 @@ object TransitDetails {
     __obj.asInstanceOf[TransitDetails]
   }
   
-  @scala.inline
-  implicit class TransitDetailsMutableBuilder[Self <: TransitDetails] (val x: Self) extends AnyVal {
+  extension [Self <: TransitDetails](x: Self) {
     
-    @scala.inline
-    def setArrival_stop(value: TransitStop): Self = StObject.set(x, "arrival_stop", value.asInstanceOf[js.Any])
+    inline def setArrival_stop(value: TransitStop): Self = StObject.set(x, "arrival_stop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrival_time(value: Time): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
+    inline def setArrival_time(value: Time): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeparture_stop(value: TransitStop): Self = StObject.set(x, "departure_stop", value.asInstanceOf[js.Any])
+    inline def setDeparture_stop(value: TransitStop): Self = StObject.set(x, "departure_stop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeparture_time(value: Time): Self = StObject.set(x, "departure_time", value.asInstanceOf[js.Any])
+    inline def setDeparture_time(value: Time): Self = StObject.set(x, "departure_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadsign(value: String): Self = StObject.set(x, "headsign", value.asInstanceOf[js.Any])
+    inline def setHeadsign(value: String): Self = StObject.set(x, "headsign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadway(value: Double): Self = StObject.set(x, "headway", value.asInstanceOf[js.Any])
+    inline def setHeadway(value: Double): Self = StObject.set(x, "headway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: TransitLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: TransitLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum_stops(value: Double): Self = StObject.set(x, "num_stops", value.asInstanceOf[js.Any])
+    inline def setNum_stops(value: Double): Self = StObject.set(x, "num_stops", value.asInstanceOf[js.Any])
   }
 }

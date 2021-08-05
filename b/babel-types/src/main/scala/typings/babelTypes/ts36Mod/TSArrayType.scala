@@ -20,13 +20,10 @@ object TSArrayType {
   @js.native
   def apply(elementType: TSType): TSArrayType = js.native
   
-  @scala.inline
-  implicit class TSArrayTypeMutableBuilder[Self <: TSArrayType] (val x: Self) extends AnyVal {
+  extension [Self <: TSArrayType](x: Self) {
     
-    @scala.inline
-    def setElementType(value: TSType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: TSType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSArrayType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSArrayType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -36,31 +36,23 @@ trait SchemaRenewLeaseRequest extends StObject {
 }
 object SchemaRenewLeaseRequest {
   
-  @scala.inline
-  def apply(): SchemaRenewLeaseRequest = {
+  inline def apply(): SchemaRenewLeaseRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRenewLeaseRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRenewLeaseRequestMutableBuilder[Self <: SchemaRenewLeaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRenewLeaseRequest](x: Self) {
     
-    @scala.inline
-    def setLeaseDuration(value: String): Self = StObject.set(x, "leaseDuration", value.asInstanceOf[js.Any])
+    inline def setLeaseDuration(value: String): Self = StObject.set(x, "leaseDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaseDurationUndefined: Self = StObject.set(x, "leaseDuration", js.undefined)
+    inline def setLeaseDurationUndefined: Self = StObject.set(x, "leaseDuration", js.undefined)
     
-    @scala.inline
-    def setResponseView(value: String): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
+    inline def setResponseView(value: String): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
+    inline def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
     
-    @scala.inline
-    def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
+    inline def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
+    inline def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait ExecuteProvisionedProductPlanInput extends StObject {
 }
 object ExecuteProvisionedProductPlanInput {
   
-  @scala.inline
-  def apply(IdempotencyToken: IdempotencyToken, PlanId: Id): ExecuteProvisionedProductPlanInput = {
+  inline def apply(IdempotencyToken: IdempotencyToken, PlanId: Id): ExecuteProvisionedProductPlanInput = {
     val __obj = js.Dynamic.literal(IdempotencyToken = IdempotencyToken.asInstanceOf[js.Any], PlanId = PlanId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteProvisionedProductPlanInput]
   }
   
-  @scala.inline
-  implicit class ExecuteProvisionedProductPlanInputMutableBuilder[Self <: ExecuteProvisionedProductPlanInput] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteProvisionedProductPlanInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
+    inline def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanId(value: Id): Self = StObject.set(x, "PlanId", value.asInstanceOf[js.Any])
+    inline def setPlanId(value: Id): Self = StObject.set(x, "PlanId", value.asInstanceOf[js.Any])
   }
 }

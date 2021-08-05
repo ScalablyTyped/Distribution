@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimeUnit extends StObject
 object TimeUnit {
   
-  @scala.inline
-  def day: typings.chartJs.chartJsStrings.day = "day".asInstanceOf[typings.chartJs.chartJsStrings.day]
+  inline def day: typings.chartJs.chartJsStrings.day = "day".asInstanceOf[typings.chartJs.chartJsStrings.day]
   
-  @scala.inline
-  def hour: typings.chartJs.chartJsStrings.hour = "hour".asInstanceOf[typings.chartJs.chartJsStrings.hour]
+  inline def hour: typings.chartJs.chartJsStrings.hour = "hour".asInstanceOf[typings.chartJs.chartJsStrings.hour]
   
-  @scala.inline
-  def millisecond: typings.chartJs.chartJsStrings.millisecond = "millisecond".asInstanceOf[typings.chartJs.chartJsStrings.millisecond]
+  inline def millisecond: typings.chartJs.chartJsStrings.millisecond = "millisecond".asInstanceOf[typings.chartJs.chartJsStrings.millisecond]
   
-  @scala.inline
-  def minute: typings.chartJs.chartJsStrings.minute = "minute".asInstanceOf[typings.chartJs.chartJsStrings.minute]
+  inline def minute: typings.chartJs.chartJsStrings.minute = "minute".asInstanceOf[typings.chartJs.chartJsStrings.minute]
   
-  @scala.inline
-  def month: typings.chartJs.chartJsStrings.month = "month".asInstanceOf[typings.chartJs.chartJsStrings.month]
+  inline def month: typings.chartJs.chartJsStrings.month = "month".asInstanceOf[typings.chartJs.chartJsStrings.month]
   
-  @scala.inline
-  def quarter: typings.chartJs.chartJsStrings.quarter = "quarter".asInstanceOf[typings.chartJs.chartJsStrings.quarter]
+  inline def quarter: typings.chartJs.chartJsStrings.quarter = "quarter".asInstanceOf[typings.chartJs.chartJsStrings.quarter]
   
-  @scala.inline
-  def second: typings.chartJs.chartJsStrings.second = "second".asInstanceOf[typings.chartJs.chartJsStrings.second]
+  inline def second: typings.chartJs.chartJsStrings.second = "second".asInstanceOf[typings.chartJs.chartJsStrings.second]
   
-  @scala.inline
-  def week: typings.chartJs.chartJsStrings.week = "week".asInstanceOf[typings.chartJs.chartJsStrings.week]
+  inline def week: typings.chartJs.chartJsStrings.week = "week".asInstanceOf[typings.chartJs.chartJsStrings.week]
   
-  @scala.inline
-  def year: typings.chartJs.chartJsStrings.year = "year".asInstanceOf[typings.chartJs.chartJsStrings.year]
+  inline def year: typings.chartJs.chartJsStrings.year = "year".asInstanceOf[typings.chartJs.chartJsStrings.year]
 }

@@ -14,6 +14,5 @@ object launcherMod {
   @JSImport("protractor/built/launcher", "init")
   @js.native
   def init: js.Function2[/* configFile */ String, /* additionalConfig */ Config, Unit] = js.native
-  @scala.inline
-  def init_=(x: js.Function2[/* configFile */ String, /* additionalConfig */ Config, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("init")(x.asInstanceOf[js.Any])
+  inline def init_=(x: js.Function2[/* configFile */ String, /* additionalConfig */ Config, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("init")(x.asInstanceOf[js.Any])
 }

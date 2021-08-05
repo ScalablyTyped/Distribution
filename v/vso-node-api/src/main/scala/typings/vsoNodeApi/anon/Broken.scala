@@ -20,8 +20,7 @@ trait Broken extends StObject {
 }
 object Broken {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approved: scala.Double,
     broken: scala.Double,
     notApplicable: scala.Double,
@@ -33,25 +32,18 @@ object Broken {
     __obj.asInstanceOf[Broken]
   }
   
-  @scala.inline
-  implicit class BrokenMutableBuilder[Self <: Broken] (val x: Self) extends AnyVal {
+  extension [Self <: Broken](x: Self) {
     
-    @scala.inline
-    def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
+    inline def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBroken(value: scala.Double): Self = StObject.set(x, "broken", value.asInstanceOf[js.Any])
+    inline def setBroken(value: scala.Double): Self = StObject.set(x, "broken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotApplicable(value: scala.Double): Self = StObject.set(x, "notApplicable", value.asInstanceOf[js.Any])
+    inline def setNotApplicable(value: scala.Double): Self = StObject.set(x, "notApplicable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
+    inline def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejected(value: scala.Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+    inline def setRejected(value: scala.Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunning(value: scala.Double): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+    inline def setRunning(value: scala.Double): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
   }
 }

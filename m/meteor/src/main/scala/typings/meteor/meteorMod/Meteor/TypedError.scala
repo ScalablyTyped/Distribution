@@ -16,10 +16,8 @@ object TypedError {
   @js.native
   val ^ : TypedErrorStatic = js.native
   
-  @scala.inline
-  implicit class TypedErrorMutableBuilder[Self <: TypedError] (val x: Self) extends AnyVal {
+  extension [Self <: TypedError](x: Self) {
     
-    @scala.inline
-    def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+    inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
   }
 }

@@ -17,28 +17,21 @@ trait JSON2SheetOpts
 }
 object JSON2SheetOpts {
   
-  @scala.inline
-  def apply(): JSON2SheetOpts = {
+  inline def apply(): JSON2SheetOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JSON2SheetOpts]
   }
   
-  @scala.inline
-  implicit class JSON2SheetOptsMutableBuilder[Self <: JSON2SheetOpts] (val x: Self) extends AnyVal {
+  extension [Self <: JSON2SheetOpts](x: Self) {
     
-    @scala.inline
-    def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
+    inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
     
-    @scala.inline
-    def setSkipHeader(value: Boolean): Self = StObject.set(x, "skipHeader", value.asInstanceOf[js.Any])
+    inline def setSkipHeader(value: Boolean): Self = StObject.set(x, "skipHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipHeaderUndefined: Self = StObject.set(x, "skipHeader", js.undefined)
+    inline def setSkipHeaderUndefined: Self = StObject.set(x, "skipHeader", js.undefined)
   }
 }

@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClientNavigationDisposition extends StObject
 object ClientNavigationDisposition {
   
-  @scala.inline
-  def currentTab: typings.devtoolsProtocol.devtoolsProtocolStrings.currentTab = "currentTab".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.currentTab]
+  inline def currentTab: typings.devtoolsProtocol.devtoolsProtocolStrings.currentTab = "currentTab".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.currentTab]
   
-  @scala.inline
-  def download: download_ = "download".asInstanceOf[download_]
+  inline def download: download_ = "download".asInstanceOf[download_]
   
-  @scala.inline
-  def newTab: typings.devtoolsProtocol.devtoolsProtocolStrings.newTab = "newTab".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.newTab]
+  inline def newTab: typings.devtoolsProtocol.devtoolsProtocolStrings.newTab = "newTab".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.newTab]
   
-  @scala.inline
-  def newWindow: typings.devtoolsProtocol.devtoolsProtocolStrings.newWindow = "newWindow".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.newWindow]
+  inline def newWindow: typings.devtoolsProtocol.devtoolsProtocolStrings.newWindow = "newWindow".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.newWindow]
 }

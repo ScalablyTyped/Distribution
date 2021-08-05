@@ -11,11 +11,8 @@ object valueTypesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getValueAsType(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueAsType")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def getValueAsType(value: js.Any, `type`: ValueType): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueAsType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getValueAsType(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueAsType")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getValueAsType(value: js.Any, `type`: ValueType): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueAsType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getValueType(key: String): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueType")(key.asInstanceOf[js.Any]).asInstanceOf[ValueType]
+  inline def getValueType(key: String): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueType")(key.asInstanceOf[js.Any]).asInstanceOf[ValueType]
 }

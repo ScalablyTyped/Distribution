@@ -20,6 +20,5 @@ object wallpaper {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setWallpaper(details: WallpaperDetails, callback: js.Function1[/* thumbnail */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setWallpaper")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setWallpaper(details: WallpaperDetails, callback: js.Function1[/* thumbnail */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setWallpaper")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

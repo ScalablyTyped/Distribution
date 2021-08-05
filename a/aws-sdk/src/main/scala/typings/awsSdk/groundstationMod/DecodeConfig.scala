@@ -13,16 +13,13 @@ trait DecodeConfig extends StObject {
 }
 object DecodeConfig {
   
-  @scala.inline
-  def apply(unvalidatedJSON: JsonString): DecodeConfig = {
+  inline def apply(unvalidatedJSON: JsonString): DecodeConfig = {
     val __obj = js.Dynamic.literal(unvalidatedJSON = unvalidatedJSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecodeConfig]
   }
   
-  @scala.inline
-  implicit class DecodeConfigMutableBuilder[Self <: DecodeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DecodeConfig](x: Self) {
     
-    @scala.inline
-    def setUnvalidatedJSON(value: JsonString): Self = StObject.set(x, "unvalidatedJSON", value.asInstanceOf[js.Any])
+    inline def setUnvalidatedJSON(value: JsonString): Self = StObject.set(x, "unvalidatedJSON", value.asInstanceOf[js.Any])
   }
 }

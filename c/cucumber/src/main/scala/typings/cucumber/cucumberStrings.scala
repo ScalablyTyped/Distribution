@@ -8,6 +8,5 @@ object cucumberStrings {
   
   @js.native
   sealed trait TableDefinition extends StObject
-  @scala.inline
-  def TableDefinition: TableDefinition = "TableDefinition".asInstanceOf[TableDefinition]
+  inline def TableDefinition: TableDefinition = "TableDefinition".asInstanceOf[TableDefinition]
 }

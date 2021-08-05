@@ -18,8 +18,7 @@ trait IMarks
 }
 object IMarks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     add: String => IAnnotation,
     arrow: IArrow,
@@ -45,19 +44,14 @@ object IMarks {
     __obj.asInstanceOf[IMarks]
   }
   
-  @scala.inline
-  implicit class IMarksMutableBuilder[Self <: IMarks] (val x: Self) extends AnyVal {
+  extension [Self <: IMarks](x: Self) {
     
-    @scala.inline
-    def setArrow(value: IArrow): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+    inline def setArrow(value: IArrow): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawEvery(value: Double): Self = StObject.set(x, "drawEvery", value.asInstanceOf[js.Any])
+    inline def setDrawEvery(value: Double): Self = StObject.set(x, "drawEvery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeries(value: ISeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: ISeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

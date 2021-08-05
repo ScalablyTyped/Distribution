@@ -28,31 +28,23 @@ trait SchemaBackendServiceAppEngineBackend extends StObject {
 }
 object SchemaBackendServiceAppEngineBackend {
   
-  @scala.inline
-  def apply(): SchemaBackendServiceAppEngineBackend = {
+  inline def apply(): SchemaBackendServiceAppEngineBackend = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBackendServiceAppEngineBackend]
   }
   
-  @scala.inline
-  implicit class SchemaBackendServiceAppEngineBackendMutableBuilder[Self <: SchemaBackendServiceAppEngineBackend] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBackendServiceAppEngineBackend](x: Self) {
     
-    @scala.inline
-    def setAppEngineService(value: String): Self = StObject.set(x, "appEngineService", value.asInstanceOf[js.Any])
+    inline def setAppEngineService(value: String): Self = StObject.set(x, "appEngineService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppEngineServiceUndefined: Self = StObject.set(x, "appEngineService", js.undefined)
+    inline def setAppEngineServiceUndefined: Self = StObject.set(x, "appEngineService", js.undefined)
     
-    @scala.inline
-    def setTargetProject(value: String): Self = StObject.set(x, "targetProject", value.asInstanceOf[js.Any])
+    inline def setTargetProject(value: String): Self = StObject.set(x, "targetProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetProjectUndefined: Self = StObject.set(x, "targetProject", js.undefined)
+    inline def setTargetProjectUndefined: Self = StObject.set(x, "targetProject", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

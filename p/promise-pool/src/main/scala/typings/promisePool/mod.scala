@@ -37,23 +37,23 @@ object mod {
       tasksData: js.Array[T]
     ) = this()
     
-    var _currentConcurrency: js.Any = js.native
+    /* private */ var _currentConcurrency: js.Any = js.native
     
-    var _deferred: js.Any = js.native
+    /* private */ var _deferred: js.Any = js.native
     
-    var _index: js.Any = js.native
+    /* private */ var _index: js.Any = js.native
     
     /* private */ def _next(): js.Any = js.native
     
     /* private */ def _notifyProgress(index: js.Any, success: js.Any, err: js.Any, retries: js.Any): js.Any = js.native
     
-    var _pauseDeferred: js.Any = js.native
+    /* private */ var _pauseDeferred: js.Any = js.native
     
     /* private */ def _process(data: js.Any, index: js.Any): js.Any = js.native
     
     /* private */ def _start(): js.Any = js.native
     
-    var _tasksData: js.Any = js.native
+    /* private */ var _tasksData: js.Any = js.native
     
     /**
       * add a data item.
@@ -166,8 +166,7 @@ object mod {
   }
   object IProgress {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       error: js.Any,
       fulfilled: Double,
       index: Double,
@@ -181,32 +180,23 @@ object mod {
       __obj.asInstanceOf[IProgress]
     }
     
-    @scala.inline
-    implicit class IProgressMutableBuilder[Self <: IProgress] (val x: Self) extends AnyVal {
+    extension [Self <: IProgress](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFulfilled(value: Double): Self = StObject.set(x, "fulfilled", value.asInstanceOf[js.Any])
+      inline def setFulfilled(value: Double): Self = StObject.set(x, "fulfilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejected(value: Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+      inline def setRejected(value: Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -220,23 +210,18 @@ object mod {
   }
   object IResult {
     
-    @scala.inline
-    def apply(fulfilled: Double, rejected: Double, total: Double): IResult = {
+    inline def apply(fulfilled: Double, rejected: Double, total: Double): IResult = {
       val __obj = js.Dynamic.literal(fulfilled = fulfilled.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[IResult]
     }
     
-    @scala.inline
-    implicit class IResultMutableBuilder[Self <: IResult] (val x: Self) extends AnyVal {
+    extension [Self <: IResult](x: Self) {
       
-      @scala.inline
-      def setFulfilled(value: Double): Self = StObject.set(x, "fulfilled", value.asInstanceOf[js.Any])
+      inline def setFulfilled(value: Double): Self = StObject.set(x, "fulfilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejected(value: Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+      inline def setRejected(value: Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
 }

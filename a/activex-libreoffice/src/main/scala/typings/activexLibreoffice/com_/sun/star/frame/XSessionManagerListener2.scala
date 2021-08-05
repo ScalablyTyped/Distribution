@@ -18,8 +18,7 @@ trait XSessionManagerListener2
 }
 object XSessionManagerListener2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveInteraction: Boolean => Unit,
     disposing: EventObject => Unit,
@@ -34,10 +33,8 @@ object XSessionManagerListener2 {
     __obj.asInstanceOf[XSessionManagerListener2]
   }
   
-  @scala.inline
-  implicit class XSessionManagerListener2MutableBuilder[Self <: XSessionManagerListener2] (val x: Self) extends AnyVal {
+  extension [Self <: XSessionManagerListener2](x: Self) {
     
-    @scala.inline
-    def setDoQuit(value: () => Unit): Self = StObject.set(x, "doQuit", js.Any.fromFunction0(value))
+    inline def setDoQuit(value: () => Unit): Self = StObject.set(x, "doQuit", js.Any.fromFunction0(value))
   }
 }

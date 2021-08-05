@@ -18,25 +18,19 @@ trait GenerateDataKeyWithoutPlaintextResponse extends StObject {
 }
 object GenerateDataKeyWithoutPlaintextResponse {
   
-  @scala.inline
-  def apply(): GenerateDataKeyWithoutPlaintextResponse = {
+  inline def apply(): GenerateDataKeyWithoutPlaintextResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateDataKeyWithoutPlaintextResponse]
   }
   
-  @scala.inline
-  implicit class GenerateDataKeyWithoutPlaintextResponseMutableBuilder[Self <: GenerateDataKeyWithoutPlaintextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateDataKeyWithoutPlaintextResponse](x: Self) {
     
-    @scala.inline
-    def setCiphertextBlob(value: CiphertextType): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
+    inline def setCiphertextBlob(value: CiphertextType): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCiphertextBlobUndefined: Self = StObject.set(x, "CiphertextBlob", js.undefined)
+    inline def setCiphertextBlobUndefined: Self = StObject.set(x, "CiphertextBlob", js.undefined)
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
   }
 }

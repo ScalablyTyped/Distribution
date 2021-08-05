@@ -10,16 +10,13 @@ trait EnumValuesFull extends StObject {
 }
 object EnumValuesFull {
   
-  @scala.inline
-  def apply(enumValues: Full): EnumValuesFull = {
+  inline def apply(enumValues: Full): EnumValuesFull = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesFull]
   }
   
-  @scala.inline
-  implicit class EnumValuesFullMutableBuilder[Self <: EnumValuesFull] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesFull](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Full): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Full): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

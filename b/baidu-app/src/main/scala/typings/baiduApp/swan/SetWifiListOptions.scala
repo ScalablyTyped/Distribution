@@ -13,19 +13,15 @@ trait SetWifiListOptions
 }
 object SetWifiListOptions {
   
-  @scala.inline
-  def apply(wifiList: js.Array[SetWifiList]): SetWifiListOptions = {
+  inline def apply(wifiList: js.Array[SetWifiList]): SetWifiListOptions = {
     val __obj = js.Dynamic.literal(wifiList = wifiList.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetWifiListOptions]
   }
   
-  @scala.inline
-  implicit class SetWifiListOptionsMutableBuilder[Self <: SetWifiListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SetWifiListOptions](x: Self) {
     
-    @scala.inline
-    def setWifiList(value: js.Array[SetWifiList]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
+    inline def setWifiList(value: js.Array[SetWifiList]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiListVarargs(value: SetWifiList*): Self = StObject.set(x, "wifiList", js.Array(value :_*))
+    inline def setWifiListVarargs(value: SetWifiList*): Self = StObject.set(x, "wifiList", js.Array(value :_*))
   }
 }

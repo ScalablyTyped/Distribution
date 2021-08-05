@@ -15,31 +15,23 @@ trait Box extends StObject {
 }
 object Box {
   
-  @scala.inline
-  def apply(): Box = {
+  inline def apply(): Box = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Box]
   }
   
-  @scala.inline
-  implicit class BoxMutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
+  extension [Self <: Box](x: Self) {
     
-    @scala.inline
-    def setBox(value: CSSProperties): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
+    inline def setBox(value: CSSProperties): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
+    inline def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
     
-    @scala.inline
-    def setLine(value: CSSProperties): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: CSSProperties): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setTitle(value: CSSProperties): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: CSSProperties): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

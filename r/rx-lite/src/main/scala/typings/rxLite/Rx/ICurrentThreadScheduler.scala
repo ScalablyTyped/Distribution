@@ -14,8 +14,7 @@ trait ICurrentThreadScheduler
 }
 object ICurrentThreadScheduler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isScheduler: js.Any => Boolean,
     now: () => Double,
     schedule: js.Function0[Unit] => IDisposable,
@@ -38,10 +37,8 @@ object ICurrentThreadScheduler {
     __obj.asInstanceOf[ICurrentThreadScheduler]
   }
   
-  @scala.inline
-  implicit class ICurrentThreadSchedulerMutableBuilder[Self <: ICurrentThreadScheduler] (val x: Self) extends AnyVal {
+  extension [Self <: ICurrentThreadScheduler](x: Self) {
     
-    @scala.inline
-    def setScheduleRequired(value: () => Boolean): Self = StObject.set(x, "scheduleRequired", js.Any.fromFunction0(value))
+    inline def setScheduleRequired(value: () => Boolean): Self = StObject.set(x, "scheduleRequired", js.Any.fromFunction0(value))
   }
 }

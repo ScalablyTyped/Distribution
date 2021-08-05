@@ -14,12 +14,9 @@ object functionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createFunction(mOptions: MigrationOptions): CreateFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createFunction")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateFunction]
+  inline def createFunction(mOptions: MigrationOptions): CreateFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createFunction")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateFunction]
   
-  @scala.inline
-  def dropFunction(mOptions: MigrationOptions): DropFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("dropFunction")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropFunction]
+  inline def dropFunction(mOptions: MigrationOptions): DropFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("dropFunction")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropFunction]
   
-  @scala.inline
-  def renameFunction(mOptions: MigrationOptions): RenameFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("renameFunction")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameFunction]
+  inline def renameFunction(mOptions: MigrationOptions): RenameFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("renameFunction")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameFunction]
 }

@@ -31,8 +31,7 @@ trait AudioGraphSettings extends StObject {
 }
 object AudioGraphSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audioRenderCategory: AudioRenderCategory,
     desiredRenderDeviceAudioProcessing: AudioProcessing,
     desiredSamplesPerQuantum: Double,
@@ -44,25 +43,18 @@ object AudioGraphSettings {
     __obj.asInstanceOf[AudioGraphSettings]
   }
   
-  @scala.inline
-  implicit class AudioGraphSettingsMutableBuilder[Self <: AudioGraphSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AudioGraphSettings](x: Self) {
     
-    @scala.inline
-    def setAudioRenderCategory(value: AudioRenderCategory): Self = StObject.set(x, "audioRenderCategory", value.asInstanceOf[js.Any])
+    inline def setAudioRenderCategory(value: AudioRenderCategory): Self = StObject.set(x, "audioRenderCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredRenderDeviceAudioProcessing(value: AudioProcessing): Self = StObject.set(x, "desiredRenderDeviceAudioProcessing", value.asInstanceOf[js.Any])
+    inline def setDesiredRenderDeviceAudioProcessing(value: AudioProcessing): Self = StObject.set(x, "desiredRenderDeviceAudioProcessing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredSamplesPerQuantum(value: Double): Self = StObject.set(x, "desiredSamplesPerQuantum", value.asInstanceOf[js.Any])
+    inline def setDesiredSamplesPerQuantum(value: Double): Self = StObject.set(x, "desiredSamplesPerQuantum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingProperties(value: AudioEncodingProperties): Self = StObject.set(x, "encodingProperties", value.asInstanceOf[js.Any])
+    inline def setEncodingProperties(value: AudioEncodingProperties): Self = StObject.set(x, "encodingProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryRenderDevice(value: DeviceInformation): Self = StObject.set(x, "primaryRenderDevice", value.asInstanceOf[js.Any])
+    inline def setPrimaryRenderDevice(value: DeviceInformation): Self = StObject.set(x, "primaryRenderDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantumSizeSelectionMode(value: QuantumSizeSelectionMode): Self = StObject.set(x, "quantumSizeSelectionMode", value.asInstanceOf[js.Any])
+    inline def setQuantumSizeSelectionMode(value: QuantumSizeSelectionMode): Self = StObject.set(x, "quantumSizeSelectionMode", value.asInstanceOf[js.Any])
   }
 }

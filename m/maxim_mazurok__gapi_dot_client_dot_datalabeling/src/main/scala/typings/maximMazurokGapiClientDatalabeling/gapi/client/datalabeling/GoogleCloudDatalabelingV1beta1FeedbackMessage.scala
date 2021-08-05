@@ -27,49 +27,35 @@ trait GoogleCloudDatalabelingV1beta1FeedbackMessage extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1FeedbackMessage {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1FeedbackMessage = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1FeedbackMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1FeedbackMessage]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1FeedbackMessageMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1FeedbackMessage] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1FeedbackMessage](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOperatorFeedbackMetadata(value: js.Any): Self = StObject.set(x, "operatorFeedbackMetadata", value.asInstanceOf[js.Any])
+    inline def setOperatorFeedbackMetadata(value: js.Any): Self = StObject.set(x, "operatorFeedbackMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorFeedbackMetadataUndefined: Self = StObject.set(x, "operatorFeedbackMetadata", js.undefined)
+    inline def setOperatorFeedbackMetadataUndefined: Self = StObject.set(x, "operatorFeedbackMetadata", js.undefined)
     
-    @scala.inline
-    def setRequesterFeedbackMetadata(value: js.Any): Self = StObject.set(x, "requesterFeedbackMetadata", value.asInstanceOf[js.Any])
+    inline def setRequesterFeedbackMetadata(value: js.Any): Self = StObject.set(x, "requesterFeedbackMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequesterFeedbackMetadataUndefined: Self = StObject.set(x, "requesterFeedbackMetadata", js.undefined)
+    inline def setRequesterFeedbackMetadataUndefined: Self = StObject.set(x, "requesterFeedbackMetadata", js.undefined)
   }
 }

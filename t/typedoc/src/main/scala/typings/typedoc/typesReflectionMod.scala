@@ -17,6 +17,6 @@ object typesReflectionMod {
     
     def toObject(reference: ReflectionType, obj: PickReflectionTypetype): typings.typedoc.schemaMod.ReflectionType = js.native
     
-    var visited: js.Any = js.native
+    /* private */ var visited: js.Any = js.native
   }
 }

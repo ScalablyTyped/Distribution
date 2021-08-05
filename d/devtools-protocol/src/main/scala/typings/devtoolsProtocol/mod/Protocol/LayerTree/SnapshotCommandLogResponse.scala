@@ -13,19 +13,15 @@ trait SnapshotCommandLogResponse extends StObject {
 }
 object SnapshotCommandLogResponse {
   
-  @scala.inline
-  def apply(commandLog: js.Array[js.Any]): SnapshotCommandLogResponse = {
+  inline def apply(commandLog: js.Array[js.Any]): SnapshotCommandLogResponse = {
     val __obj = js.Dynamic.literal(commandLog = commandLog.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotCommandLogResponse]
   }
   
-  @scala.inline
-  implicit class SnapshotCommandLogResponseMutableBuilder[Self <: SnapshotCommandLogResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotCommandLogResponse](x: Self) {
     
-    @scala.inline
-    def setCommandLog(value: js.Array[js.Any]): Self = StObject.set(x, "commandLog", value.asInstanceOf[js.Any])
+    inline def setCommandLog(value: js.Array[js.Any]): Self = StObject.set(x, "commandLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandLogVarargs(value: js.Any*): Self = StObject.set(x, "commandLog", js.Array(value :_*))
+    inline def setCommandLogVarargs(value: js.Any*): Self = StObject.set(x, "commandLog", js.Array(value :_*))
   }
 }

@@ -50,8 +50,7 @@ object clientMod {
   }
   object Client {
     
-    @scala.inline
-    def apply[Input /* <: js.Object */, Output /* <: MetadataBearer */, ResolvedClientConfiguration](
+    inline def apply[Input /* <: js.Object */, Output /* <: MetadataBearer */, ResolvedClientConfiguration](
       config: ResolvedClientConfiguration,
       destroy: () => Unit,
       middlewareStack: MiddlewareStack[Input, Output],
@@ -61,20 +60,15 @@ object clientMod {
       __obj.asInstanceOf[Client[Input, Output, ResolvedClientConfiguration]]
     }
     
-    @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client[?, ?, ?], Input /* <: js.Object */, Output /* <: MetadataBearer */, ResolvedClientConfiguration] (val x: Self & (Client[Input, Output, ResolvedClientConfiguration])) extends AnyVal {
+    extension [Self <: Client[?, ?, ?], Input /* <: js.Object */, Output /* <: MetadataBearer */, ResolvedClientConfiguration](x: Self & (Client[Input, Output, ResolvedClientConfiguration])) {
       
-      @scala.inline
-      def setConfig(value: ResolvedClientConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: ResolvedClientConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMiddlewareStack(value: MiddlewareStack[Input, Output]): Self = StObject.set(x, "middlewareStack", value.asInstanceOf[js.Any])
+      inline def setMiddlewareStack(value: MiddlewareStack[Input, Output]): Self = StObject.set(x, "middlewareStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSend(value: InvokeFunction[Input, Output, ResolvedClientConfiguration]): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+      inline def setSend(value: InvokeFunction[Input, Output, ResolvedClientConfiguration]): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     }
   }
   

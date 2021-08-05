@@ -43,49 +43,35 @@ trait CreateSchemaInput extends StObject {
 }
 object CreateSchemaInput {
   
-  @scala.inline
-  def apply(DataFormat: DataFormat, SchemaName: SchemaRegistryNameString): CreateSchemaInput = {
+  inline def apply(DataFormat: DataFormat, SchemaName: SchemaRegistryNameString): CreateSchemaInput = {
     val __obj = js.Dynamic.literal(DataFormat = DataFormat.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSchemaInput]
   }
   
-  @scala.inline
-  implicit class CreateSchemaInputMutableBuilder[Self <: CreateSchemaInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSchemaInput](x: Self) {
     
-    @scala.inline
-    def setCompatibility(value: Compatibility): Self = StObject.set(x, "Compatibility", value.asInstanceOf[js.Any])
+    inline def setCompatibility(value: Compatibility): Self = StObject.set(x, "Compatibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibilityUndefined: Self = StObject.set(x, "Compatibility", js.undefined)
+    inline def setCompatibilityUndefined: Self = StObject.set(x, "Compatibility", js.undefined)
     
-    @scala.inline
-    def setDataFormat(value: DataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
+    inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "RegistryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "RegistryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "RegistryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "RegistryId", js.undefined)
     
-    @scala.inline
-    def setSchemaDefinition(value: SchemaDefinitionString): Self = StObject.set(x, "SchemaDefinition", value.asInstanceOf[js.Any])
+    inline def setSchemaDefinition(value: SchemaDefinitionString): Self = StObject.set(x, "SchemaDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaDefinitionUndefined: Self = StObject.set(x, "SchemaDefinition", js.undefined)
+    inline def setSchemaDefinitionUndefined: Self = StObject.set(x, "SchemaDefinition", js.undefined)
     
-    @scala.inline
-    def setSchemaName(value: SchemaRegistryNameString): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: SchemaRegistryNameString): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagsMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

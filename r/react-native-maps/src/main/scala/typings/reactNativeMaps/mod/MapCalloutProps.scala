@@ -16,25 +16,19 @@ trait MapCalloutProps
 }
 object MapCalloutProps {
   
-  @scala.inline
-  def apply(): MapCalloutProps = {
+  inline def apply(): MapCalloutProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapCalloutProps]
   }
   
-  @scala.inline
-  implicit class MapCalloutPropsMutableBuilder[Self <: MapCalloutProps] (val x: Self) extends AnyVal {
+  extension [Self <: MapCalloutProps](x: Self) {
     
-    @scala.inline
-    def setOnPress(value: /* event */ MapEvent[`0`] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+    inline def setOnPress(value: /* event */ MapEvent[`0`] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: Boolean): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: Boolean): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

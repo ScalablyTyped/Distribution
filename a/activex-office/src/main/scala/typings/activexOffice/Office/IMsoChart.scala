@@ -171,7 +171,7 @@ trait IMsoChart extends StObject {
   def LineGroups(): js.Any = js.native
   def LineGroups(Index: js.Any): js.Any = js.native
   
-  @JSName("Office.IMsoChart_typekey")
+  /* private */ @JSName("Office.IMsoChart_typekey")
   var OfficeDotIMsoChart_typekey: IMsoChart = js.native
   
   val Parent: js.Any = js.native

@@ -13,19 +13,15 @@ trait Anchor extends StObject {
 }
 object Anchor {
   
-  @scala.inline
-  def apply(anchor: Position, head: Position): Anchor = {
+  inline def apply(anchor: Position, head: Position): Anchor = {
     val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anchor]
   }
   
-  @scala.inline
-  implicit class AnchorMutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
+  extension [Self <: Anchor](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: Position): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: Position): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHead(value: Position): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: Position): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
   }
 }

@@ -23,8 +23,7 @@ trait ProtocolHandler
      with XInitialization
 object ProtocolHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     initialize: SeqEquiv[js.Any] => Unit,
     queryDispatch: (URL, String, Double) => XDispatch,

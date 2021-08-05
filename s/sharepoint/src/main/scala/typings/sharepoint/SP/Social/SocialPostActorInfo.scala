@@ -22,8 +22,7 @@ trait SocialPostActorInfo
 }
 object SocialPostActorInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -37,16 +36,12 @@ object SocialPostActorInfo {
     __obj.asInstanceOf[SocialPostActorInfo]
   }
   
-  @scala.inline
-  implicit class SocialPostActorInfoMutableBuilder[Self <: SocialPostActorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SocialPostActorInfo](x: Self) {
     
-    @scala.inline
-    def setGet_includesCurrentUser(value: () => Boolean): Self = StObject.set(x, "get_includesCurrentUser", js.Any.fromFunction0(value))
+    inline def setGet_includesCurrentUser(value: () => Boolean): Self = StObject.set(x, "get_includesCurrentUser", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_indexes(value: () => js.Array[Double]): Self = StObject.set(x, "get_indexes", js.Any.fromFunction0(value))
+    inline def setGet_indexes(value: () => js.Array[Double]): Self = StObject.set(x, "get_indexes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_totalCount(value: () => Double): Self = StObject.set(x, "get_totalCount", js.Any.fromFunction0(value))
+    inline def setGet_totalCount(value: () => Double): Self = StObject.set(x, "get_totalCount", js.Any.fromFunction0(value))
   }
 }

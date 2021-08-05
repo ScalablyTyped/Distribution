@@ -12,22 +12,17 @@ trait EventSource extends StObject {
 }
 object EventSource {
   
-  @scala.inline
-  def apply(applicationName: String, eventSource: String | js.Array[String]): EventSource = {
+  inline def apply(applicationName: String, eventSource: String | js.Array[String]): EventSource = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any], eventSource = eventSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSource]
   }
   
-  @scala.inline
-  implicit class EventSourceMutableBuilder[Self <: EventSource] (val x: Self) extends AnyVal {
+  extension [Self <: EventSource](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSource(value: String | js.Array[String]): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+    inline def setEventSource(value: String | js.Array[String]): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceVarargs(value: String*): Self = StObject.set(x, "eventSource", js.Array(value :_*))
+    inline def setEventSourceVarargs(value: String*): Self = StObject.set(x, "eventSource", js.Array(value :_*))
   }
 }

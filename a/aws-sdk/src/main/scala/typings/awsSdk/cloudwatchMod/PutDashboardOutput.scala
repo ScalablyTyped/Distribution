@@ -13,22 +13,17 @@ trait PutDashboardOutput extends StObject {
 }
 object PutDashboardOutput {
   
-  @scala.inline
-  def apply(): PutDashboardOutput = {
+  inline def apply(): PutDashboardOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutDashboardOutput]
   }
   
-  @scala.inline
-  implicit class PutDashboardOutputMutableBuilder[Self <: PutDashboardOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutDashboardOutput](x: Self) {
     
-    @scala.inline
-    def setDashboardValidationMessages(value: DashboardValidationMessages): Self = StObject.set(x, "DashboardValidationMessages", value.asInstanceOf[js.Any])
+    inline def setDashboardValidationMessages(value: DashboardValidationMessages): Self = StObject.set(x, "DashboardValidationMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardValidationMessagesUndefined: Self = StObject.set(x, "DashboardValidationMessages", js.undefined)
+    inline def setDashboardValidationMessagesUndefined: Self = StObject.set(x, "DashboardValidationMessages", js.undefined)
     
-    @scala.inline
-    def setDashboardValidationMessagesVarargs(value: DashboardValidationMessage*): Self = StObject.set(x, "DashboardValidationMessages", js.Array(value :_*))
+    inline def setDashboardValidationMessagesVarargs(value: DashboardValidationMessage*): Self = StObject.set(x, "DashboardValidationMessages", js.Array(value :_*))
   }
 }

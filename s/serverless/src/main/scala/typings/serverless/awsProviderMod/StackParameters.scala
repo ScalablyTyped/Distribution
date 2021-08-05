@@ -12,19 +12,15 @@ trait StackParameters extends StObject {
 }
 object StackParameters {
   
-  @scala.inline
-  def apply(ParameterKey: String, ParameterValue: String): StackParameters = {
+  inline def apply(ParameterKey: String, ParameterValue: String): StackParameters = {
     val __obj = js.Dynamic.literal(ParameterKey = ParameterKey.asInstanceOf[js.Any], ParameterValue = ParameterValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackParameters]
   }
   
-  @scala.inline
-  implicit class StackParametersMutableBuilder[Self <: StackParameters] (val x: Self) extends AnyVal {
+  extension [Self <: StackParameters](x: Self) {
     
-    @scala.inline
-    def setParameterKey(value: String): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
+    inline def setParameterKey(value: String): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterValue(value: String): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
+    inline def setParameterValue(value: String): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
   }
 }

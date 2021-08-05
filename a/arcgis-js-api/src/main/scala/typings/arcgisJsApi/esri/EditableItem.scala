@@ -26,8 +26,7 @@ trait EditableItem
 }
 object EditableItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer,
@@ -38,13 +37,10 @@ object EditableItem {
     __obj.asInstanceOf[EditableItem]
   }
   
-  @scala.inline
-  implicit class EditableItemMutableBuilder[Self <: EditableItem] (val x: Self) extends AnyVal {
+  extension [Self <: EditableItem](x: Self) {
     
-    @scala.inline
-    def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupports(value: String): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
+    inline def setSupports(value: String): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
   }
 }

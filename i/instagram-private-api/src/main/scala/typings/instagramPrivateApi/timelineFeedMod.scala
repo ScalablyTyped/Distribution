@@ -17,7 +17,7 @@ object timelineFeedMod {
   class TimelineFeed protected () extends Feed[TimelineFeedResponse, TimelineFeedResponseMediaOrAd] {
     def this(client: IgApiClient) = this()
     
-    var nextMaxId: js.Any = js.native
+    /* private */ var nextMaxId: js.Any = js.native
     
     var reason: TimelineFeedReason = js.native
     

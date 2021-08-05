@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NodeStatusShape extends StObject
 object NodeStatusShape {
   
-  @scala.inline
-  def dot: typings.nodeRedRegistry.nodeRedRegistryStrings.dot = "dot".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.dot]
+  inline def dot: typings.nodeRedRegistry.nodeRedRegistryStrings.dot = "dot".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.dot]
   
-  @scala.inline
-  def ring: typings.nodeRedRegistry.nodeRedRegistryStrings.ring = "ring".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.ring]
+  inline def ring: typings.nodeRedRegistry.nodeRedRegistryStrings.ring = "ring".asInstanceOf[typings.nodeRedRegistry.nodeRedRegistryStrings.ring]
 }

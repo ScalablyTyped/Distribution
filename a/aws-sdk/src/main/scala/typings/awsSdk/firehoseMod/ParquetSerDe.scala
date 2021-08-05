@@ -38,49 +38,35 @@ trait ParquetSerDe extends StObject {
 }
 object ParquetSerDe {
   
-  @scala.inline
-  def apply(): ParquetSerDe = {
+  inline def apply(): ParquetSerDe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParquetSerDe]
   }
   
-  @scala.inline
-  implicit class ParquetSerDeMutableBuilder[Self <: ParquetSerDe] (val x: Self) extends AnyVal {
+  extension [Self <: ParquetSerDe](x: Self) {
     
-    @scala.inline
-    def setBlockSizeBytes(value: BlockSizeBytes): Self = StObject.set(x, "BlockSizeBytes", value.asInstanceOf[js.Any])
+    inline def setBlockSizeBytes(value: BlockSizeBytes): Self = StObject.set(x, "BlockSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockSizeBytesUndefined: Self = StObject.set(x, "BlockSizeBytes", js.undefined)
+    inline def setBlockSizeBytesUndefined: Self = StObject.set(x, "BlockSizeBytes", js.undefined)
     
-    @scala.inline
-    def setCompression(value: ParquetCompression): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: ParquetCompression): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionUndefined: Self = StObject.set(x, "Compression", js.undefined)
+    inline def setCompressionUndefined: Self = StObject.set(x, "Compression", js.undefined)
     
-    @scala.inline
-    def setEnableDictionaryCompression(value: BooleanObject): Self = StObject.set(x, "EnableDictionaryCompression", value.asInstanceOf[js.Any])
+    inline def setEnableDictionaryCompression(value: BooleanObject): Self = StObject.set(x, "EnableDictionaryCompression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDictionaryCompressionUndefined: Self = StObject.set(x, "EnableDictionaryCompression", js.undefined)
+    inline def setEnableDictionaryCompressionUndefined: Self = StObject.set(x, "EnableDictionaryCompression", js.undefined)
     
-    @scala.inline
-    def setMaxPaddingBytes(value: NonNegativeIntegerObject): Self = StObject.set(x, "MaxPaddingBytes", value.asInstanceOf[js.Any])
+    inline def setMaxPaddingBytes(value: NonNegativeIntegerObject): Self = StObject.set(x, "MaxPaddingBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPaddingBytesUndefined: Self = StObject.set(x, "MaxPaddingBytes", js.undefined)
+    inline def setMaxPaddingBytesUndefined: Self = StObject.set(x, "MaxPaddingBytes", js.undefined)
     
-    @scala.inline
-    def setPageSizeBytes(value: ParquetPageSizeBytes): Self = StObject.set(x, "PageSizeBytes", value.asInstanceOf[js.Any])
+    inline def setPageSizeBytes(value: ParquetPageSizeBytes): Self = StObject.set(x, "PageSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeBytesUndefined: Self = StObject.set(x, "PageSizeBytes", js.undefined)
+    inline def setPageSizeBytesUndefined: Self = StObject.set(x, "PageSizeBytes", js.undefined)
     
-    @scala.inline
-    def setWriterVersion(value: ParquetWriterVersion): Self = StObject.set(x, "WriterVersion", value.asInstanceOf[js.Any])
+    inline def setWriterVersion(value: ParquetWriterVersion): Self = StObject.set(x, "WriterVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriterVersionUndefined: Self = StObject.set(x, "WriterVersion", js.undefined)
+    inline def setWriterVersionUndefined: Self = StObject.set(x, "WriterVersion", js.undefined)
   }
 }

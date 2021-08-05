@@ -22,6 +22,5 @@ object TagPickerBase {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "TagPickerBase.defaultProps")
   @js.native
   def defaultProps: OnRenderItem = js.native
-  @scala.inline
-  def defaultProps_=(x: OnRenderItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: OnRenderItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

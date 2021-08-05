@@ -20,8 +20,7 @@ trait FileChooser extends StObject {
 }
 object FileChooser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: js.Array[String] => js.Promise[Unit],
     cancel: () => js.Promise[Unit],
     isMultiple: () => Boolean
@@ -30,16 +29,12 @@ object FileChooser {
     __obj.asInstanceOf[FileChooser]
   }
   
-  @scala.inline
-  implicit class FileChooserMutableBuilder[Self <: FileChooser] (val x: Self) extends AnyVal {
+  extension [Self <: FileChooser](x: Self) {
     
-    @scala.inline
-    def setAccept(value: js.Array[String] => js.Promise[Unit]): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
+    inline def setAccept(value: js.Array[String] => js.Promise[Unit]): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsMultiple(value: () => Boolean): Self = StObject.set(x, "isMultiple", js.Any.fromFunction0(value))
+    inline def setIsMultiple(value: () => Boolean): Self = StObject.set(x, "isMultiple", js.Any.fromFunction0(value))
   }
 }

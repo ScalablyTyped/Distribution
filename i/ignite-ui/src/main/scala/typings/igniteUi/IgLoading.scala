@@ -18,25 +18,19 @@ trait IgLoading
 }
 object IgLoading {
   
-  @scala.inline
-  def apply(): IgLoading = {
+  inline def apply(): IgLoading = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgLoading]
   }
   
-  @scala.inline
-  implicit class IgLoadingMutableBuilder[Self <: IgLoading] (val x: Self) extends AnyVal {
+  extension [Self <: IgLoading](x: Self) {
     
-    @scala.inline
-    def setCssClass(value: js.Any): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: js.Any): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
-    @scala.inline
-    def setIncludeVerticalOffset(value: Boolean): Self = StObject.set(x, "includeVerticalOffset", value.asInstanceOf[js.Any])
+    inline def setIncludeVerticalOffset(value: Boolean): Self = StObject.set(x, "includeVerticalOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeVerticalOffsetUndefined: Self = StObject.set(x, "includeVerticalOffset", js.undefined)
+    inline def setIncludeVerticalOffsetUndefined: Self = StObject.set(x, "includeVerticalOffset", js.undefined)
   }
 }

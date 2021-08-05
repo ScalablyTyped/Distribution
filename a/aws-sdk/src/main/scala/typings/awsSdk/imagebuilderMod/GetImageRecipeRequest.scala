@@ -13,16 +13,13 @@ trait GetImageRecipeRequest extends StObject {
 }
 object GetImageRecipeRequest {
   
-  @scala.inline
-  def apply(imageRecipeArn: ImageRecipeArn): GetImageRecipeRequest = {
+  inline def apply(imageRecipeArn: ImageRecipeArn): GetImageRecipeRequest = {
     val __obj = js.Dynamic.literal(imageRecipeArn = imageRecipeArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetImageRecipeRequest]
   }
   
-  @scala.inline
-  implicit class GetImageRecipeRequestMutableBuilder[Self <: GetImageRecipeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetImageRecipeRequest](x: Self) {
     
-    @scala.inline
-    def setImageRecipeArn(value: ImageRecipeArn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
+    inline def setImageRecipeArn(value: ImageRecipeArn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
   }
 }

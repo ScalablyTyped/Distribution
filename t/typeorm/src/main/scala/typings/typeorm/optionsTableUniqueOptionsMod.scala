@@ -20,26 +20,20 @@ object optionsTableUniqueOptionsMod {
   }
   object TableUniqueOptions {
     
-    @scala.inline
-    def apply(columnNames: js.Array[String]): TableUniqueOptions = {
+    inline def apply(columnNames: js.Array[String]): TableUniqueOptions = {
       val __obj = js.Dynamic.literal(columnNames = columnNames.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableUniqueOptions]
     }
     
-    @scala.inline
-    implicit class TableUniqueOptionsMutableBuilder[Self <: TableUniqueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TableUniqueOptions](x: Self) {
       
-      @scala.inline
-      def setColumnNames(value: js.Array[String]): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
+      inline def setColumnNames(value: js.Array[String]): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "columnNames", js.Array(value :_*))
+      inline def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "columnNames", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

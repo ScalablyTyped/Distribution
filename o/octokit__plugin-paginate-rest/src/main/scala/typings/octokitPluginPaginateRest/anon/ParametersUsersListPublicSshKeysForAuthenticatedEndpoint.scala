@@ -15,8 +15,7 @@ trait ParametersUsersListPublicSshKeysForAuthenticatedEndpoint extends StObject 
 }
 object ParametersUsersListPublicSshKeysForAuthenticatedEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: UsersListPublicSshKeysForAuthenticatedEndpoint,
     response: OctokitResponse[UsersListPublicSshKeysForAuthenticatedResponseData]
   ): ParametersUsersListPublicSshKeysForAuthenticatedEndpoint = {
@@ -24,13 +23,10 @@ object ParametersUsersListPublicSshKeysForAuthenticatedEndpoint {
     __obj.asInstanceOf[ParametersUsersListPublicSshKeysForAuthenticatedEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersUsersListPublicSshKeysForAuthenticatedEndpointMutableBuilder[Self <: ParametersUsersListPublicSshKeysForAuthenticatedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersUsersListPublicSshKeysForAuthenticatedEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: UsersListPublicSshKeysForAuthenticatedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: UsersListPublicSshKeysForAuthenticatedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[UsersListPublicSshKeysForAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[UsersListPublicSshKeysForAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

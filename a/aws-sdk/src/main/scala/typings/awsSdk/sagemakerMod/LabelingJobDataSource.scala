@@ -18,25 +18,19 @@ trait LabelingJobDataSource extends StObject {
 }
 object LabelingJobDataSource {
   
-  @scala.inline
-  def apply(): LabelingJobDataSource = {
+  inline def apply(): LabelingJobDataSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelingJobDataSource]
   }
   
-  @scala.inline
-  implicit class LabelingJobDataSourceMutableBuilder[Self <: LabelingJobDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: LabelingJobDataSource](x: Self) {
     
-    @scala.inline
-    def setS3DataSource(value: LabelingJobS3DataSource): Self = StObject.set(x, "S3DataSource", value.asInstanceOf[js.Any])
+    inline def setS3DataSource(value: LabelingJobS3DataSource): Self = StObject.set(x, "S3DataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DataSourceUndefined: Self = StObject.set(x, "S3DataSource", js.undefined)
+    inline def setS3DataSourceUndefined: Self = StObject.set(x, "S3DataSource", js.undefined)
     
-    @scala.inline
-    def setSnsDataSource(value: LabelingJobSnsDataSource): Self = StObject.set(x, "SnsDataSource", value.asInstanceOf[js.Any])
+    inline def setSnsDataSource(value: LabelingJobSnsDataSource): Self = StObject.set(x, "SnsDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsDataSourceUndefined: Self = StObject.set(x, "SnsDataSource", js.undefined)
+    inline def setSnsDataSourceUndefined: Self = StObject.set(x, "SnsDataSource", js.undefined)
   }
 }

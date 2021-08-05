@@ -12,16 +12,13 @@ trait RequestSMSCodeOptions
 }
 object RequestSMSCodeOptions {
   
-  @scala.inline
-  def apply(client_id: String, phone_number: String): RequestSMSCodeOptions = {
+  inline def apply(client_id: String, phone_number: String): RequestSMSCodeOptions = {
     val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], phone_number = phone_number.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestSMSCodeOptions]
   }
   
-  @scala.inline
-  implicit class RequestSMSCodeOptionsMutableBuilder[Self <: RequestSMSCodeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestSMSCodeOptions](x: Self) {
     
-    @scala.inline
-    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
   }
 }

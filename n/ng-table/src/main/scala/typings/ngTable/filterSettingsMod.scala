@@ -16,11 +16,9 @@ object filterSettingsMod {
   trait FilterLayout extends StObject
   object FilterLayout {
     
-    @scala.inline
-    def horizontal: typings.ngTable.ngTableStrings.horizontal = "horizontal".asInstanceOf[typings.ngTable.ngTableStrings.horizontal]
+    inline def horizontal: typings.ngTable.ngTableStrings.horizontal = "horizontal".asInstanceOf[typings.ngTable.ngTableStrings.horizontal]
     
-    @scala.inline
-    def stack: typings.ngTable.ngTableStrings.stack = "stack".asInstanceOf[typings.ngTable.ngTableStrings.stack]
+    inline def stack: typings.ngTable.ngTableStrings.stack = "stack".asInstanceOf[typings.ngTable.ngTableStrings.stack]
   }
   
   trait IFilterSettings[T] extends StObject {
@@ -69,55 +67,40 @@ object filterSettingsMod {
   }
   object IFilterSettings {
     
-    @scala.inline
-    def apply[T](): IFilterSettings[T] = {
+    inline def apply[T](): IFilterSettings[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFilterSettings[T]]
     }
     
-    @scala.inline
-    implicit class IFilterSettingsMutableBuilder[Self <: IFilterSettings[?], T] (val x: Self & IFilterSettings[T]) extends AnyVal {
+    extension [Self <: IFilterSettings[?], T](x: Self & IFilterSettings[T]) {
       
-      @scala.inline
-      def setFilterComparator(value: FilterComparator[T]): Self = StObject.set(x, "filterComparator", value.asInstanceOf[js.Any])
+      inline def setFilterComparator(value: FilterComparator[T]): Self = StObject.set(x, "filterComparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterComparatorFunction2(value: (T, T) => Boolean): Self = StObject.set(x, "filterComparator", js.Any.fromFunction2(value))
+      inline def setFilterComparatorFunction2(value: (T, T) => Boolean): Self = StObject.set(x, "filterComparator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterComparatorUndefined: Self = StObject.set(x, "filterComparator", js.undefined)
+      inline def setFilterComparatorUndefined: Self = StObject.set(x, "filterComparator", js.undefined)
       
-      @scala.inline
-      def setFilterDelay(value: Double): Self = StObject.set(x, "filterDelay", value.asInstanceOf[js.Any])
+      inline def setFilterDelay(value: Double): Self = StObject.set(x, "filterDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterDelayThreshold(value: Double): Self = StObject.set(x, "filterDelayThreshold", value.asInstanceOf[js.Any])
+      inline def setFilterDelayThreshold(value: Double): Self = StObject.set(x, "filterDelayThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterDelayThresholdUndefined: Self = StObject.set(x, "filterDelayThreshold", js.undefined)
+      inline def setFilterDelayThresholdUndefined: Self = StObject.set(x, "filterDelayThreshold", js.undefined)
       
-      @scala.inline
-      def setFilterDelayUndefined: Self = StObject.set(x, "filterDelay", js.undefined)
+      inline def setFilterDelayUndefined: Self = StObject.set(x, "filterDelay", js.undefined)
       
-      @scala.inline
-      def setFilterFilterName(value: String): Self = StObject.set(x, "filterFilterName", value.asInstanceOf[js.Any])
+      inline def setFilterFilterName(value: String): Self = StObject.set(x, "filterFilterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFilterNameUndefined: Self = StObject.set(x, "filterFilterName", js.undefined)
+      inline def setFilterFilterNameUndefined: Self = StObject.set(x, "filterFilterName", js.undefined)
       
-      @scala.inline
-      def setFilterFn(
+      inline def setFilterFn(
         value: (/* data */ js.Array[T], /* filter */ IFilterValues, /* filterComparator */ FilterComparator[T]) => js.Array[T]
       ): Self = StObject.set(x, "filterFn", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFilterFnUndefined: Self = StObject.set(x, "filterFn", js.undefined)
+      inline def setFilterFnUndefined: Self = StObject.set(x, "filterFn", js.undefined)
       
-      @scala.inline
-      def setFilterLayout(value: FilterLayout): Self = StObject.set(x, "filterLayout", value.asInstanceOf[js.Any])
+      inline def setFilterLayout(value: FilterLayout): Self = StObject.set(x, "filterLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterLayoutUndefined: Self = StObject.set(x, "filterLayout", js.undefined)
+      inline def setFilterLayoutUndefined: Self = StObject.set(x, "filterLayout", js.undefined)
     }
   }
 }

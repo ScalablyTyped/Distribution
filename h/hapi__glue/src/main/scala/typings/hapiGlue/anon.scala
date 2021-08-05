@@ -13,20 +13,16 @@ object anon {
   }
   object Plugins {
     
-    @scala.inline
-    def apply(plugins: js.Array[PluginObject | String]): Plugins = {
+    inline def apply(plugins: js.Array[PluginObject | String]): Plugins = {
       val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any])
       __obj.asInstanceOf[Plugins]
     }
     
-    @scala.inline
-    implicit class PluginsMutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
+    extension [Self <: Plugins](x: Self) {
       
-      @scala.inline
-      def setPlugins(value: js.Array[PluginObject | String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[PluginObject | String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsVarargs(value: (PluginObject | String)*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: (PluginObject | String)*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     }
   }
 }

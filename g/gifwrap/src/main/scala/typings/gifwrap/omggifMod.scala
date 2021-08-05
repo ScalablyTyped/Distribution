@@ -42,8 +42,7 @@ object omggifMod {
   }
   object FrameInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data_length: Double,
       data_offset: Double,
       delay: Double,
@@ -61,44 +60,31 @@ object omggifMod {
       __obj.asInstanceOf[FrameInfo]
     }
     
-    @scala.inline
-    implicit class FrameInfoMutableBuilder[Self <: FrameInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FrameInfo](x: Self) {
       
-      @scala.inline
-      def setData_length(value: Double): Self = StObject.set(x, "data_length", value.asInstanceOf[js.Any])
+      inline def setData_length(value: Double): Self = StObject.set(x, "data_length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData_offset(value: Double): Self = StObject.set(x, "data_offset", value.asInstanceOf[js.Any])
+      inline def setData_offset(value: Double): Self = StObject.set(x, "data_offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisposal(value: Double): Self = StObject.set(x, "disposal", value.asInstanceOf[js.Any])
+      inline def setDisposal(value: Double): Self = StObject.set(x, "disposal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_local_palette(value: Boolean): Self = StObject.set(x, "has_local_palette", value.asInstanceOf[js.Any])
+      inline def setHas_local_palette(value: Boolean): Self = StObject.set(x, "has_local_palette", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterlaced(value: Boolean): Self = StObject.set(x, "interlaced", value.asInstanceOf[js.Any])
+      inline def setInterlaced(value: Boolean): Self = StObject.set(x, "interlaced", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPalette_offset(value: Double): Self = StObject.set(x, "palette_offset", value.asInstanceOf[js.Any])
+      inline def setPalette_offset(value: Double): Self = StObject.set(x, "palette_offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparent_index(value: Double): Self = StObject.set(x, "transparent_index", value.asInstanceOf[js.Any])
+      inline def setTransparent_index(value: Double): Self = StObject.set(x, "transparent_index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,41 +103,30 @@ object omggifMod {
   }
   object FrameOptions {
     
-    @scala.inline
-    def apply(): FrameOptions = {
+    inline def apply(): FrameOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FrameOptions]
     }
     
-    @scala.inline
-    implicit class FrameOptionsMutableBuilder[Self <: FrameOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FrameOptions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDisposal(value: Double): Self = StObject.set(x, "disposal", value.asInstanceOf[js.Any])
+      inline def setDisposal(value: Double): Self = StObject.set(x, "disposal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisposalUndefined: Self = StObject.set(x, "disposal", js.undefined)
+      inline def setDisposalUndefined: Self = StObject.set(x, "disposal", js.undefined)
       
-      @scala.inline
-      def setPalette(value: js.Array[Double]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+      inline def setPalette(value: js.Array[Double]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+      inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
       
-      @scala.inline
-      def setPaletteVarargs(value: Double*): Self = StObject.set(x, "palette", js.Array(value :_*))
+      inline def setPaletteVarargs(value: Double*): Self = StObject.set(x, "palette", js.Array(value :_*))
       
-      @scala.inline
-      def setTransparent(value: Double): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+      inline def setTransparent(value: Double): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+      inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
     }
   }
   
@@ -221,35 +196,26 @@ object omggifMod {
   }
   object GlobalOptions {
     
-    @scala.inline
-    def apply(): GlobalOptions = {
+    inline def apply(): GlobalOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalOptions]
     }
     
-    @scala.inline
-    implicit class GlobalOptionsMutableBuilder[Self <: GlobalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalOptions](x: Self) {
       
-      @scala.inline
-      def setBackground(value: Double): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Double): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setPalette(value: js.Array[Double]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+      inline def setPalette(value: js.Array[Double]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+      inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
       
-      @scala.inline
-      def setPaletteVarargs(value: Double*): Self = StObject.set(x, "palette", js.Array(value :_*))
+      inline def setPaletteVarargs(value: Double*): Self = StObject.set(x, "palette", js.Array(value :_*))
     }
   }
   
@@ -261,20 +227,16 @@ object omggifMod {
   }
   object OmggifModule {
     
-    @scala.inline
-    def apply(GifReader: GifReader, GifWriter: GifWriter): OmggifModule = {
+    inline def apply(GifReader: GifReader, GifWriter: GifWriter): OmggifModule = {
       val __obj = js.Dynamic.literal(GifReader = GifReader.asInstanceOf[js.Any], GifWriter = GifWriter.asInstanceOf[js.Any])
       __obj.asInstanceOf[OmggifModule]
     }
     
-    @scala.inline
-    implicit class OmggifModuleMutableBuilder[Self <: OmggifModule] (val x: Self) extends AnyVal {
+    extension [Self <: OmggifModule](x: Self) {
       
-      @scala.inline
-      def setGifReader(value: GifReader): Self = StObject.set(x, "GifReader", value.asInstanceOf[js.Any])
+      inline def setGifReader(value: GifReader): Self = StObject.set(x, "GifReader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGifWriter(value: GifWriter): Self = StObject.set(x, "GifWriter", value.asInstanceOf[js.Any])
+      inline def setGifWriter(value: GifWriter): Self = StObject.set(x, "GifWriter", value.asInstanceOf[js.Any])
     }
   }
 }

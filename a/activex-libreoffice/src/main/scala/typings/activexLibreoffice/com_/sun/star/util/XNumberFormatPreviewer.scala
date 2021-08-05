@@ -40,8 +40,7 @@ trait XNumberFormatPreviewer
 }
 object XNumberFormatPreviewer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     convertNumberToPreviewString: (String, Double, Locale, Boolean) => String,
     queryInterface: `type` => js.Any,
@@ -52,13 +51,10 @@ object XNumberFormatPreviewer {
     __obj.asInstanceOf[XNumberFormatPreviewer]
   }
   
-  @scala.inline
-  implicit class XNumberFormatPreviewerMutableBuilder[Self <: XNumberFormatPreviewer] (val x: Self) extends AnyVal {
+  extension [Self <: XNumberFormatPreviewer](x: Self) {
     
-    @scala.inline
-    def setConvertNumberToPreviewString(value: (String, Double, Locale, Boolean) => String): Self = StObject.set(x, "convertNumberToPreviewString", js.Any.fromFunction4(value))
+    inline def setConvertNumberToPreviewString(value: (String, Double, Locale, Boolean) => String): Self = StObject.set(x, "convertNumberToPreviewString", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setQueryPreviewColorForNumber(value: (String, Double, Locale, Boolean, Color) => Color): Self = StObject.set(x, "queryPreviewColorForNumber", js.Any.fromFunction5(value))
+    inline def setQueryPreviewColorForNumber(value: (String, Double, Locale, Boolean, Color) => Color): Self = StObject.set(x, "queryPreviewColorForNumber", js.Any.fromFunction5(value))
   }
 }

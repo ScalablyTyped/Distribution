@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecalculationInterval extends StObject
 object RecalculationInterval {
   
-  @scala.inline
-  def HOUR: typings.googleSpreadsheet.googleSpreadsheetStrings.HOUR = "HOUR".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.HOUR]
+  inline def HOUR: typings.googleSpreadsheet.googleSpreadsheetStrings.HOUR = "HOUR".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.HOUR]
   
-  @scala.inline
-  def MINUTE: typings.googleSpreadsheet.googleSpreadsheetStrings.MINUTE = "MINUTE".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.MINUTE]
+  inline def MINUTE: typings.googleSpreadsheet.googleSpreadsheetStrings.MINUTE = "MINUTE".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.MINUTE]
   
-  @scala.inline
-  def ON_CHANGE: typings.googleSpreadsheet.googleSpreadsheetStrings.ON_CHANGE = "ON_CHANGE".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.ON_CHANGE]
+  inline def ON_CHANGE: typings.googleSpreadsheet.googleSpreadsheetStrings.ON_CHANGE = "ON_CHANGE".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.ON_CHANGE]
 }

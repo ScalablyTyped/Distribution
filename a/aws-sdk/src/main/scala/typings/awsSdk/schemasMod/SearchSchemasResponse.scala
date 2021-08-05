@@ -18,28 +18,21 @@ trait SearchSchemasResponse extends StObject {
 }
 object SearchSchemasResponse {
   
-  @scala.inline
-  def apply(): SearchSchemasResponse = {
+  inline def apply(): SearchSchemasResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchSchemasResponse]
   }
   
-  @scala.inline
-  implicit class SearchSchemasResponseMutableBuilder[Self <: SearchSchemasResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchSchemasResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSchemas(value: listOfSearchSchemaSummary): Self = StObject.set(x, "Schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: listOfSearchSchemaSummary): Self = StObject.set(x, "Schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasUndefined: Self = StObject.set(x, "Schemas", js.undefined)
+    inline def setSchemasUndefined: Self = StObject.set(x, "Schemas", js.undefined)
     
-    @scala.inline
-    def setSchemasVarargs(value: SearchSchemaSummary*): Self = StObject.set(x, "Schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: SearchSchemaSummary*): Self = StObject.set(x, "Schemas", js.Array(value :_*))
   }
 }

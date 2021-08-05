@@ -13,6 +13,5 @@ class QualifyingProperties ()
   extends typings.xadesjs.xmlMod.QualifyingProperties
 object QualifyingProperties {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.QualifyingProperties] = ^.asInstanceOf[js.Dynamic].selectDynamic("QualifyingProperties").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.QualifyingProperties]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.QualifyingProperties] = ^.asInstanceOf[js.Dynamic].selectDynamic("QualifyingProperties").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.QualifyingProperties]]
 }

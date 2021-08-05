@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("connect-datadog", JSImport.Namespace)
   @js.native
@@ -39,65 +37,46 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBase_url(value: Boolean): Self = StObject.set(x, "base_url", value.asInstanceOf[js.Any])
+      inline def setBase_url(value: Boolean): Self = StObject.set(x, "base_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase_urlUndefined: Self = StObject.set(x, "base_url", js.undefined)
+      inline def setBase_urlUndefined: Self = StObject.set(x, "base_url", js.undefined)
       
-      @scala.inline
-      def setDogstatsd(value: StatsD): Self = StObject.set(x, "dogstatsd", value.asInstanceOf[js.Any])
+      inline def setDogstatsd(value: StatsD): Self = StObject.set(x, "dogstatsd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDogstatsdUndefined: Self = StObject.set(x, "dogstatsd", js.undefined)
+      inline def setDogstatsdUndefined: Self = StObject.set(x, "dogstatsd", js.undefined)
       
-      @scala.inline
-      def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setPath(value: Boolean): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Boolean): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: Boolean): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Boolean): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setResponse_code(value: Boolean): Self = StObject.set(x, "response_code", value.asInstanceOf[js.Any])
+      inline def setResponse_code(value: Boolean): Self = StObject.set(x, "response_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse_codeUndefined: Self = StObject.set(x, "response_code", js.undefined)
+      inline def setResponse_codeUndefined: Self = StObject.set(x, "response_code", js.undefined)
       
-      @scala.inline
-      def setStat(value: String): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(value: String): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
+      inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
 }

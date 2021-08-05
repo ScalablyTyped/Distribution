@@ -10,16 +10,13 @@ trait DeleteEventStreamResponse extends StObject {
 }
 object DeleteEventStreamResponse {
   
-  @scala.inline
-  def apply(EventStream: EventStream): DeleteEventStreamResponse = {
+  inline def apply(EventStream: EventStream): DeleteEventStreamResponse = {
     val __obj = js.Dynamic.literal(EventStream = EventStream.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEventStreamResponse]
   }
   
-  @scala.inline
-  implicit class DeleteEventStreamResponseMutableBuilder[Self <: DeleteEventStreamResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEventStreamResponse](x: Self) {
     
-    @scala.inline
-    def setEventStream(value: EventStream): Self = StObject.set(x, "EventStream", value.asInstanceOf[js.Any])
+    inline def setEventStream(value: EventStream): Self = StObject.set(x, "EventStream", value.asInstanceOf[js.Any])
   }
 }

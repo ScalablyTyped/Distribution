@@ -25,33 +25,25 @@ object Identities {
   }
   object CreateModel {
     
-    @scala.inline
-    def apply(`type`: IdentityType, value: String): typings.nodeZendesk.mod.Users.Identities.CreateModel = {
+    inline def apply(`type`: IdentityType, value: String): typings.nodeZendesk.mod.Users.Identities.CreateModel = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.CreateModel]
     }
     
-    @scala.inline
-    implicit class CreateModelMutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.CreateModel] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Users.Identities.CreateModel](x: Self) {
       
-      @scala.inline
-      def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+      inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
       
-      @scala.inline
-      def setType(value: IdentityType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: IdentityType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+      inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifiedUndefined: Self = StObject.set(x, "verified", js.undefined)
+      inline def setVerifiedUndefined: Self = StObject.set(x, "verified", js.undefined)
     }
   }
   
@@ -61,17 +53,14 @@ object Identities {
   }
   object CreatePayload {
     
-    @scala.inline
-    def apply(identity: typings.nodeZendesk.mod.Users.Identities.CreateModel): typings.nodeZendesk.mod.Users.Identities.CreatePayload = {
+    inline def apply(identity: typings.nodeZendesk.mod.Users.Identities.CreateModel): typings.nodeZendesk.mod.Users.Identities.CreatePayload = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.CreatePayload]
     }
     
-    @scala.inline
-    implicit class CreatePayloadMutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.CreatePayload] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Users.Identities.CreatePayload](x: Self) {
       
-      @scala.inline
-      def setIdentity(value: typings.nodeZendesk.mod.Users.Identities.CreateModel): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: typings.nodeZendesk.mod.Users.Identities.CreateModel): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,11 +71,9 @@ object Identities {
   trait DeliverableState extends StObject
   object DeliverableState {
     
-    @scala.inline
-    def deliverable: typings.nodeZendesk.nodeZendeskStrings.deliverable = "deliverable".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.deliverable]
+    inline def deliverable: typings.nodeZendesk.nodeZendeskStrings.deliverable = "deliverable".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.deliverable]
     
-    @scala.inline
-    def undeliverable: typings.nodeZendesk.nodeZendeskStrings.undeliverable = "undeliverable".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.undeliverable]
+    inline def undeliverable: typings.nodeZendesk.nodeZendeskStrings.undeliverable = "undeliverable".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.undeliverable]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -100,23 +87,17 @@ object Identities {
   trait IdentityType extends StObject
   object IdentityType {
     
-    @scala.inline
-    def agent_forwarding: typings.nodeZendesk.nodeZendeskStrings.agent_forwarding = "agent_forwarding".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.agent_forwarding]
+    inline def agent_forwarding: typings.nodeZendesk.nodeZendeskStrings.agent_forwarding = "agent_forwarding".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.agent_forwarding]
     
-    @scala.inline
-    def email: typings.nodeZendesk.nodeZendeskStrings.email = "email".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.email]
+    inline def email: typings.nodeZendesk.nodeZendeskStrings.email = "email".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.email]
     
-    @scala.inline
-    def facebook: typings.nodeZendesk.nodeZendeskStrings.facebook = "facebook".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.facebook]
+    inline def facebook: typings.nodeZendesk.nodeZendeskStrings.facebook = "facebook".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.facebook]
     
-    @scala.inline
-    def google: typings.nodeZendesk.nodeZendeskStrings.google = "google".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.google]
+    inline def google: typings.nodeZendesk.nodeZendeskStrings.google = "google".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.google]
     
-    @scala.inline
-    def phone_number: typings.nodeZendesk.nodeZendeskStrings.phone_number = "phone_number".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.phone_number]
+    inline def phone_number: typings.nodeZendesk.nodeZendeskStrings.phone_number = "phone_number".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.phone_number]
     
-    @scala.inline
-    def sdk: typings.nodeZendesk.nodeZendeskStrings.sdk = "sdk".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.sdk]
+    inline def sdk: typings.nodeZendesk.nodeZendeskStrings.sdk = "sdk".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.sdk]
   }
   
   trait ListPayload
@@ -127,20 +108,16 @@ object Identities {
   }
   object ListPayload {
     
-    @scala.inline
-    def apply(count: Double, identities: js.Array[typings.nodeZendesk.mod.Users.Identities.ResponseModel]): typings.nodeZendesk.mod.Users.Identities.ListPayload = {
+    inline def apply(count: Double, identities: js.Array[typings.nodeZendesk.mod.Users.Identities.ResponseModel]): typings.nodeZendesk.mod.Users.Identities.ListPayload = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], identities = identities.asInstanceOf[js.Any], next_page = null, previous_page = null)
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.ListPayload]
     }
     
-    @scala.inline
-    implicit class ListPayloadMutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.ListPayload] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Users.Identities.ListPayload](x: Self) {
       
-      @scala.inline
-      def setIdentities(value: js.Array[typings.nodeZendesk.mod.Users.Identities.ResponseModel]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
+      inline def setIdentities(value: js.Array[typings.nodeZendesk.mod.Users.Identities.ResponseModel]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentitiesVarargs(value: typings.nodeZendesk.mod.Users.Identities.ResponseModel*): Self = StObject.set(x, "identities", js.Array(value :_*))
+      inline def setIdentitiesVarargs(value: typings.nodeZendesk.mod.Users.Identities.ResponseModel*): Self = StObject.set(x, "identities", js.Array(value :_*))
     }
   }
   
@@ -212,8 +189,7 @@ object Identities {
   }
   object ResponseModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       created_at: String,
       deliverable_state: DeliverableState,
       id: ZendeskID,
@@ -230,32 +206,23 @@ object Identities {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.ResponseModel]
     }
     
-    @scala.inline
-    implicit class ResponseModelMutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.ResponseModel] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Users.Identities.ResponseModel](x: Self) {
       
-      @scala.inline
-      def setDeliverable_state(value: DeliverableState): Self = StObject.set(x, "deliverable_state", value.asInstanceOf[js.Any])
+      inline def setDeliverable_state(value: DeliverableState): Self = StObject.set(x, "deliverable_state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: IdentityType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: IdentityType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUndeliverable_count(value: Double): Self = StObject.set(x, "undeliverable_count", value.asInstanceOf[js.Any])
+      inline def setUndeliverable_count(value: Double): Self = StObject.set(x, "undeliverable_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_id(value: ZendeskID): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+      inline def setUser_id(value: ZendeskID): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+      inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
     }
   }
   
@@ -265,17 +232,14 @@ object Identities {
   }
   object ResponsePayload {
     
-    @scala.inline
-    def apply(identity: typings.nodeZendesk.mod.Users.Identities.ResponseModel): typings.nodeZendesk.mod.Users.Identities.ResponsePayload = {
+    inline def apply(identity: typings.nodeZendesk.mod.Users.Identities.ResponseModel): typings.nodeZendesk.mod.Users.Identities.ResponsePayload = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.ResponsePayload]
     }
     
-    @scala.inline
-    implicit class ResponsePayloadMutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.ResponsePayload] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Users.Identities.ResponsePayload](x: Self) {
       
-      @scala.inline
-      def setIdentity(value: typings.nodeZendesk.mod.Users.Identities.ResponseModel): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: typings.nodeZendesk.mod.Users.Identities.ResponseModel): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -287,26 +251,20 @@ object Identities {
   }
   object UpdateModel {
     
-    @scala.inline
-    def apply(): typings.nodeZendesk.mod.Users.Identities.UpdateModel = {
+    inline def apply(): typings.nodeZendesk.mod.Users.Identities.UpdateModel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.UpdateModel]
     }
     
-    @scala.inline
-    implicit class UpdateModelMutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.UpdateModel] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Users.Identities.UpdateModel](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+      inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifiedUndefined: Self = StObject.set(x, "verified", js.undefined)
+      inline def setVerifiedUndefined: Self = StObject.set(x, "verified", js.undefined)
     }
   }
   
@@ -316,17 +274,14 @@ object Identities {
   }
   object UpdatePayload {
     
-    @scala.inline
-    def apply(identity: typings.nodeZendesk.mod.Users.Identities.UpdateModel): typings.nodeZendesk.mod.Users.Identities.UpdatePayload = {
+    inline def apply(identity: typings.nodeZendesk.mod.Users.Identities.UpdateModel): typings.nodeZendesk.mod.Users.Identities.UpdatePayload = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.UpdatePayload]
     }
     
-    @scala.inline
-    implicit class UpdatePayloadMutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.UpdatePayload] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Users.Identities.UpdatePayload](x: Self) {
       
-      @scala.inline
-      def setIdentity(value: typings.nodeZendesk.mod.Users.Identities.UpdateModel): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: typings.nodeZendesk.mod.Users.Identities.UpdateModel): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     }
   }
 }

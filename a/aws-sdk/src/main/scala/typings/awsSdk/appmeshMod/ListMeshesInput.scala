@@ -18,25 +18,19 @@ trait ListMeshesInput extends StObject {
 }
 object ListMeshesInput {
   
-  @scala.inline
-  def apply(): ListMeshesInput = {
+  inline def apply(): ListMeshesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMeshesInput]
   }
   
-  @scala.inline
-  implicit class ListMeshesInputMutableBuilder[Self <: ListMeshesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListMeshesInput](x: Self) {
     
-    @scala.inline
-    def setLimit(value: ListMeshesLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: ListMeshesLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

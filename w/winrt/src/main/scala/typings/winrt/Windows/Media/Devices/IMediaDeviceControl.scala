@@ -20,8 +20,7 @@ trait IMediaDeviceControl extends StObject {
 }
 object IMediaDeviceControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     capabilities: MediaDeviceControlCapabilities,
     tryGetAuto: () => SucceededBoolean,
     tryGetValue: () => SucceededValue,
@@ -32,22 +31,16 @@ object IMediaDeviceControl {
     __obj.asInstanceOf[IMediaDeviceControl]
   }
   
-  @scala.inline
-  implicit class IMediaDeviceControlMutableBuilder[Self <: IMediaDeviceControl] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaDeviceControl](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: MediaDeviceControlCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: MediaDeviceControlCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryGetAuto(value: () => SucceededBoolean): Self = StObject.set(x, "tryGetAuto", js.Any.fromFunction0(value))
+    inline def setTryGetAuto(value: () => SucceededBoolean): Self = StObject.set(x, "tryGetAuto", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTryGetValue(value: () => SucceededValue): Self = StObject.set(x, "tryGetValue", js.Any.fromFunction0(value))
+    inline def setTryGetValue(value: () => SucceededValue): Self = StObject.set(x, "tryGetValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTrySetAuto(value: Boolean => Boolean): Self = StObject.set(x, "trySetAuto", js.Any.fromFunction1(value))
+    inline def setTrySetAuto(value: Boolean => Boolean): Self = StObject.set(x, "trySetAuto", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrySetValue(value: Double => Boolean): Self = StObject.set(x, "trySetValue", js.Any.fromFunction1(value))
+    inline def setTrySetValue(value: Double => Boolean): Self = StObject.set(x, "trySetValue", js.Any.fromFunction1(value))
   }
 }

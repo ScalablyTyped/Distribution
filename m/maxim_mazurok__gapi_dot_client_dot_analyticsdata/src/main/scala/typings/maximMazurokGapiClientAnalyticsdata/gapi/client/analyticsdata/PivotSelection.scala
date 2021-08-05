@@ -14,25 +14,19 @@ trait PivotSelection extends StObject {
 }
 object PivotSelection {
   
-  @scala.inline
-  def apply(): PivotSelection = {
+  inline def apply(): PivotSelection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotSelection]
   }
   
-  @scala.inline
-  implicit class PivotSelectionMutableBuilder[Self <: PivotSelection] (val x: Self) extends AnyVal {
+  extension [Self <: PivotSelection](x: Self) {
     
-    @scala.inline
-    def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
+    inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
+    inline def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
     
-    @scala.inline
-    def setDimensionValue(value: String): Self = StObject.set(x, "dimensionValue", value.asInstanceOf[js.Any])
+    inline def setDimensionValue(value: String): Self = StObject.set(x, "dimensionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionValueUndefined: Self = StObject.set(x, "dimensionValue", js.undefined)
+    inline def setDimensionValueUndefined: Self = StObject.set(x, "dimensionValue", js.undefined)
   }
 }

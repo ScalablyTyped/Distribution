@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Promise[(Middleware[DefaultState, DefaultContext]) & CombinedWebpackMiddleware] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[(Middleware[DefaultState, DefaultContext]) & CombinedWebpackMiddleware]]
-  @scala.inline
-  def apply(options: Options): js.Promise[(Middleware[DefaultState, DefaultContext]) & CombinedWebpackMiddleware] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[(Middleware[DefaultState, DefaultContext]) & CombinedWebpackMiddleware]]
+  inline def apply(): js.Promise[(Middleware[DefaultState, DefaultContext]) & CombinedWebpackMiddleware] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[(Middleware[DefaultState, DefaultContext]) & CombinedWebpackMiddleware]]
+  inline def apply(options: Options): js.Promise[(Middleware[DefaultState, DefaultContext]) & CombinedWebpackMiddleware] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[(Middleware[DefaultState, DefaultContext]) & CombinedWebpackMiddleware]]
   
   @JSImport("koa-webpack", JSImport.Namespace)
   @js.native
@@ -50,42 +48,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCompiler(
+      inline def setCompiler(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
       ): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
+      inline def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
       
-      @scala.inline
-      def setConfig(
+      inline def setConfig(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any
       ): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setDevMiddleware(value: typings.webpackDevMiddleware.mod.Options): Self = StObject.set(x, "devMiddleware", value.asInstanceOf[js.Any])
+      inline def setDevMiddleware(value: typings.webpackDevMiddleware.mod.Options): Self = StObject.set(x, "devMiddleware", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevMiddlewareUndefined: Self = StObject.set(x, "devMiddleware", js.undefined)
+      inline def setDevMiddlewareUndefined: Self = StObject.set(x, "devMiddleware", js.undefined)
       
-      @scala.inline
-      def setHotClient(value: typings.webpackHotClient.mod.Options | Boolean): Self = StObject.set(x, "hotClient", value.asInstanceOf[js.Any])
+      inline def setHotClient(value: typings.webpackHotClient.mod.Options | Boolean): Self = StObject.set(x, "hotClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHotClientUndefined: Self = StObject.set(x, "hotClient", js.undefined)
+      inline def setHotClientUndefined: Self = StObject.set(x, "hotClient", js.undefined)
     }
   }
   
@@ -100,25 +88,20 @@ object mod {
     }
     object DefaultState {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         stats: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Stats */ js.Any
       ): typings.koaWebpack.mod.koaAugmentingMod.DefaultState = {
         val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.koaWebpack.mod.koaAugmentingMod.DefaultState]
       }
       
-      @scala.inline
-      implicit class DefaultStateMutableBuilder[Self <: typings.koaWebpack.mod.koaAugmentingMod.DefaultState] (val x: Self) extends AnyVal {
+      extension [Self <: typings.koaWebpack.mod.koaAugmentingMod.DefaultState](x: Self) {
         
-        @scala.inline
-        def setFs(value: typings.memoryFs.mod.^): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+        inline def setFs(value: typings.memoryFs.mod.^): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+        inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
         
-        @scala.inline
-        def setStats(
+        inline def setStats(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Stats */ js.Any
         ): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecipientWallet extends StObject
 object RecipientWallet {
   
-  @scala.inline
-  def PAYPAL: typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PAYPAL = "PAYPAL".asInstanceOf[typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PAYPAL]
+  inline def PAYPAL: typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PAYPAL = "PAYPAL".asInstanceOf[typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PAYPAL]
   
-  @scala.inline
-  def VENMO: typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.VENMO = "VENMO".asInstanceOf[typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.VENMO]
+  inline def VENMO: typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.VENMO = "VENMO".asInstanceOf[typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.VENMO]
 }

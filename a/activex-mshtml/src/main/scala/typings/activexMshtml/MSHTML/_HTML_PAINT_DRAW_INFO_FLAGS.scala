@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _HTML_PAINT_DRAW_INFO_FLAGS extends StObject
 object _HTML_PAINT_DRAW_INFO_FLAGS {
   
-  @scala.inline
-  def HTMLPAINT_DRAWINFO_UPDATEREGION: `2` = 2.asInstanceOf[`2`]
+  inline def HTMLPAINT_DRAWINFO_UPDATEREGION: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def HTMLPAINT_DRAWINFO_VIEWPORT: `1` = 1.asInstanceOf[`1`]
+  inline def HTMLPAINT_DRAWINFO_VIEWPORT: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def HTMLPAINT_DRAWINFO_XFORM: `4` = 4.asInstanceOf[`4`]
+  inline def HTMLPAINT_DRAWINFO_XFORM: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def HTML_PAINT_DRAW_INFO_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def HTML_PAINT_DRAW_INFO_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

@@ -10,16 +10,13 @@ trait SafeArray[T] extends StObject {
 }
 object SafeArray {
   
-  @scala.inline
-  def apply[T](_brand: SafeArray[T]): SafeArray[T] = {
+  inline def apply[T](_brand: SafeArray[T]): SafeArray[T] = {
     val __obj = js.Dynamic.literal(_brand = _brand.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafeArray[T]]
   }
   
-  @scala.inline
-  implicit class SafeArrayMutableBuilder[Self <: SafeArray[?], T] (val x: Self & SafeArray[T]) extends AnyVal {
+  extension [Self <: SafeArray[?], T](x: Self & SafeArray[T]) {
     
-    @scala.inline
-    def set_brand(value: SafeArray[T]): Self = StObject.set(x, "_brand", value.asInstanceOf[js.Any])
+    inline def set_brand(value: SafeArray[T]): Self = StObject.set(x, "_brand", value.asInstanceOf[js.Any])
   }
 }

@@ -14,17 +14,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sliderBottom[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderBottom")(scale.asInstanceOf[js.Any]).asInstanceOf[Slider[Domain]]
+  inline def sliderBottom[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderBottom")(scale.asInstanceOf[js.Any]).asInstanceOf[Slider[Domain]]
   
-  @scala.inline
-  def sliderLeft[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderLeft")(scale.asInstanceOf[js.Any]).asInstanceOf[Slider[Domain]]
+  inline def sliderLeft[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderLeft")(scale.asInstanceOf[js.Any]).asInstanceOf[Slider[Domain]]
   
-  @scala.inline
-  def sliderRight[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderRight")(scale.asInstanceOf[js.Any]).asInstanceOf[Slider[Domain]]
+  inline def sliderRight[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderRight")(scale.asInstanceOf[js.Any]).asInstanceOf[Slider[Domain]]
   
-  @scala.inline
-  def sliderTop[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderTop")(scale.asInstanceOf[js.Any]).asInstanceOf[Slider[Domain]]
+  inline def sliderTop[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderTop")(scale.asInstanceOf[js.Any]).asInstanceOf[Slider[Domain]]
   
   @js.native
   trait Slider[Domain] extends StObject {

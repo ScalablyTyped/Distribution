@@ -13,19 +13,15 @@ trait DescribeSolutionVersionResponse extends StObject {
 }
 object DescribeSolutionVersionResponse {
   
-  @scala.inline
-  def apply(): DescribeSolutionVersionResponse = {
+  inline def apply(): DescribeSolutionVersionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSolutionVersionResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSolutionVersionResponseMutableBuilder[Self <: DescribeSolutionVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSolutionVersionResponse](x: Self) {
     
-    @scala.inline
-    def setSolutionVersion(value: SolutionVersion): Self = StObject.set(x, "solutionVersion", value.asInstanceOf[js.Any])
+    inline def setSolutionVersion(value: SolutionVersion): Self = StObject.set(x, "solutionVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionVersionUndefined: Self = StObject.set(x, "solutionVersion", js.undefined)
+    inline def setSolutionVersionUndefined: Self = StObject.set(x, "solutionVersion", js.undefined)
   }
 }

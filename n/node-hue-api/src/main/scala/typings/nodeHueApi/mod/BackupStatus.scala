@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BackupStatus extends StObject
 object BackupStatus {
   
-  @scala.inline
-  def fileready_disabled: typings.nodeHueApi.nodeHueApiStrings.fileready_disabled = "fileready_disabled".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.fileready_disabled]
+  inline def fileready_disabled: typings.nodeHueApi.nodeHueApiStrings.fileready_disabled = "fileready_disabled".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.fileready_disabled]
   
-  @scala.inline
-  def idle: typings.nodeHueApi.nodeHueApiStrings.idle = "idle".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.idle]
+  inline def idle: typings.nodeHueApi.nodeHueApiStrings.idle = "idle".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.idle]
   
-  @scala.inline
-  def prepare_restore: typings.nodeHueApi.nodeHueApiStrings.prepare_restore = "prepare_restore".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.prepare_restore]
+  inline def prepare_restore: typings.nodeHueApi.nodeHueApiStrings.prepare_restore = "prepare_restore".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.prepare_restore]
   
-  @scala.inline
-  def restoring: typings.nodeHueApi.nodeHueApiStrings.restoring = "restoring".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.restoring]
+  inline def restoring: typings.nodeHueApi.nodeHueApiStrings.restoring = "restoring".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.restoring]
   
-  @scala.inline
-  def startmigration: typings.nodeHueApi.nodeHueApiStrings.startmigration = "startmigration".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.startmigration]
+  inline def startmigration: typings.nodeHueApi.nodeHueApiStrings.startmigration = "startmigration".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.startmigration]
 }

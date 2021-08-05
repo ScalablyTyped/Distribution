@@ -11,16 +11,13 @@ trait PickImplalreadySetup extends StObject {
 }
 object PickImplalreadySetup {
   
-  @scala.inline
-  def apply(alreadySetup: String): PickImplalreadySetup = {
+  inline def apply(alreadySetup: String): PickImplalreadySetup = {
     val __obj = js.Dynamic.literal(alreadySetup = alreadySetup.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplalreadySetup]
   }
   
-  @scala.inline
-  implicit class PickImplalreadySetupMutableBuilder[Self <: PickImplalreadySetup] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplalreadySetup](x: Self) {
     
-    @scala.inline
-    def setAlreadySetup(value: String): Self = StObject.set(x, "alreadySetup", value.asInstanceOf[js.Any])
+    inline def setAlreadySetup(value: String): Self = StObject.set(x, "alreadySetup", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ trait IndexColumn
 }
 object IndexColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultValue: String,
     Description: String,
     IsAscending: Boolean,
@@ -50,10 +49,8 @@ object IndexColumn {
     __obj.asInstanceOf[IndexColumn]
   }
   
-  @scala.inline
-  implicit class IndexColumnMutableBuilder[Self <: IndexColumn] (val x: Self) extends AnyVal {
+  extension [Self <: IndexColumn](x: Self) {
     
-    @scala.inline
-    def setIsAscending(value: Boolean): Self = StObject.set(x, "IsAscending", value.asInstanceOf[js.Any])
+    inline def setIsAscending(value: Boolean): Self = StObject.set(x, "IsAscending", value.asInstanceOf[js.Any])
   }
 }

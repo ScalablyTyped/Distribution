@@ -16,37 +16,27 @@ trait FileManagerContextMenuItem extends StObject {
 }
 object FileManagerContextMenuItem {
   
-  @scala.inline
-  def apply(): FileManagerContextMenuItem = {
+  inline def apply(): FileManagerContextMenuItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileManagerContextMenuItem]
   }
   
-  @scala.inline
-  implicit class FileManagerContextMenuItemMutableBuilder[Self <: FileManagerContextMenuItem] (val x: Self) extends AnyVal {
+  extension [Self <: FileManagerContextMenuItem](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSpriteCssClass(value: String): Self = StObject.set(x, "spriteCssClass", value.asInstanceOf[js.Any])
+    inline def setSpriteCssClass(value: String): Self = StObject.set(x, "spriteCssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpriteCssClassUndefined: Self = StObject.set(x, "spriteCssClass", js.undefined)
+    inline def setSpriteCssClassUndefined: Self = StObject.set(x, "spriteCssClass", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

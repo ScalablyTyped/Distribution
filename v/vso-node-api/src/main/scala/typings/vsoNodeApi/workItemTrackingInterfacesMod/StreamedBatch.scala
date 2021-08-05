@@ -16,28 +16,21 @@ trait StreamedBatch[T] extends StObject {
 }
 object StreamedBatch {
   
-  @scala.inline
-  def apply[T](continuationToken: String, isLastBatch: Boolean, nextLink: String, values: js.Array[T]): StreamedBatch[T] = {
+  inline def apply[T](continuationToken: String, isLastBatch: Boolean, nextLink: String, values: js.Array[T]): StreamedBatch[T] = {
     val __obj = js.Dynamic.literal(continuationToken = continuationToken.asInstanceOf[js.Any], isLastBatch = isLastBatch.asInstanceOf[js.Any], nextLink = nextLink.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamedBatch[T]]
   }
   
-  @scala.inline
-  implicit class StreamedBatchMutableBuilder[Self <: StreamedBatch[?], T] (val x: Self & StreamedBatch[T]) extends AnyVal {
+  extension [Self <: StreamedBatch[?], T](x: Self & StreamedBatch[T]) {
     
-    @scala.inline
-    def setContinuationToken(value: String): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
+    inline def setContinuationToken(value: String): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLastBatch(value: Boolean): Self = StObject.set(x, "isLastBatch", value.asInstanceOf[js.Any])
+    inline def setIsLastBatch(value: Boolean): Self = StObject.set(x, "isLastBatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
+    inline def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[T]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[T]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: T*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: T*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

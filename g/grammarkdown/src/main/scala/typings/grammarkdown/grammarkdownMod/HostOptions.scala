@@ -18,37 +18,27 @@ trait HostOptions
 }
 object HostOptions {
   
-  @scala.inline
-  def apply(): HostOptions = {
+  inline def apply(): HostOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HostOptions]
   }
   
-  @scala.inline
-  implicit class HostOptionsMutableBuilder[Self <: HostOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HostOptions](x: Self) {
     
-    @scala.inline
-    def setReadFile(value: ReadFileCallback | LegacyReadFileCallback): Self = StObject.set(x, "readFile", value.asInstanceOf[js.Any])
+    inline def setReadFile(value: ReadFileCallback | LegacyReadFileCallback): Self = StObject.set(x, "readFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadFileSync(value: ReadFileSyncCallback | LegacyReadFileSyncCallback): Self = StObject.set(x, "readFileSync", value.asInstanceOf[js.Any])
+    inline def setReadFileSync(value: ReadFileSyncCallback | LegacyReadFileSyncCallback): Self = StObject.set(x, "readFileSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
+    inline def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
     
-    @scala.inline
-    def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
+    inline def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
     
-    @scala.inline
-    def setWriteFile(value: WriteFileCallback | LegacyWriteFileCallback): Self = StObject.set(x, "writeFile", value.asInstanceOf[js.Any])
+    inline def setWriteFile(value: WriteFileCallback | LegacyWriteFileCallback): Self = StObject.set(x, "writeFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteFileSync(value: WriteFileSyncCallback | LegacyWriteFileSyncCallback): Self = StObject.set(x, "writeFileSync", value.asInstanceOf[js.Any])
+    inline def setWriteFileSync(value: WriteFileSyncCallback | LegacyWriteFileSyncCallback): Self = StObject.set(x, "writeFileSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteFileSyncUndefined: Self = StObject.set(x, "writeFileSync", js.undefined)
+    inline def setWriteFileSyncUndefined: Self = StObject.set(x, "writeFileSync", js.undefined)
     
-    @scala.inline
-    def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
+    inline def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
   }
 }

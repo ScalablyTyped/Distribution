@@ -17,25 +17,19 @@ trait ResultSetMetadata extends StObject {
 }
 object ResultSetMetadata {
   
-  @scala.inline
-  def apply(): ResultSetMetadata = {
+  inline def apply(): ResultSetMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultSetMetadata]
   }
   
-  @scala.inline
-  implicit class ResultSetMetadataMutableBuilder[Self <: ResultSetMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ResultSetMetadata](x: Self) {
     
-    @scala.inline
-    def setRowType(value: StructType): Self = StObject.set(x, "rowType", value.asInstanceOf[js.Any])
+    inline def setRowType(value: StructType): Self = StObject.set(x, "rowType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowTypeUndefined: Self = StObject.set(x, "rowType", js.undefined)
+    inline def setRowTypeUndefined: Self = StObject.set(x, "rowType", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

@@ -15,20 +15,16 @@ object storeOptionsMod {
   }
   object IStoreOptions {
     
-    @scala.inline
-    def apply(): IStoreOptions = {
+    inline def apply(): IStoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStoreOptions]
     }
     
-    @scala.inline
-    implicit class IStoreOptionsMutableBuilder[Self <: IStoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IStoreOptions](x: Self) {
       
-      @scala.inline
-      def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
+      inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
+      inline def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
     }
   }
 }

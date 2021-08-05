@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextareaElementEventType extends StObject
 object TextareaElementEventType {
   
-  @scala.inline
-  def action: typings.blessed.blessedStrings.action = "action".asInstanceOf[typings.blessed.blessedStrings.action]
+  inline def action: typings.blessed.blessedStrings.action = "action".asInstanceOf[typings.blessed.blessedStrings.action]
   
-  @scala.inline
-  def cancel: typings.blessed.blessedStrings.cancel = "cancel".asInstanceOf[typings.blessed.blessedStrings.cancel]
+  inline def cancel: typings.blessed.blessedStrings.cancel = "cancel".asInstanceOf[typings.blessed.blessedStrings.cancel]
   
-  @scala.inline
-  def error: typings.blessed.blessedStrings.error = "error".asInstanceOf[typings.blessed.blessedStrings.error]
+  inline def error: typings.blessed.blessedStrings.error = "error".asInstanceOf[typings.blessed.blessedStrings.error]
   
-  @scala.inline
-  def submit: typings.blessed.blessedStrings.submit = "submit".asInstanceOf[typings.blessed.blessedStrings.submit]
+  inline def submit: typings.blessed.blessedStrings.submit = "submit".asInstanceOf[typings.blessed.blessedStrings.submit]
 }

@@ -18,25 +18,19 @@ trait AddAttachmentsToSetResponse extends StObject {
 }
 object AddAttachmentsToSetResponse {
   
-  @scala.inline
-  def apply(): AddAttachmentsToSetResponse = {
+  inline def apply(): AddAttachmentsToSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddAttachmentsToSetResponse]
   }
   
-  @scala.inline
-  implicit class AddAttachmentsToSetResponseMutableBuilder[Self <: AddAttachmentsToSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddAttachmentsToSetResponse](x: Self) {
     
-    @scala.inline
-    def setAttachmentSetId(value: AttachmentSetId): Self = StObject.set(x, "attachmentSetId", value.asInstanceOf[js.Any])
+    inline def setAttachmentSetId(value: AttachmentSetId): Self = StObject.set(x, "attachmentSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentSetIdUndefined: Self = StObject.set(x, "attachmentSetId", js.undefined)
+    inline def setAttachmentSetIdUndefined: Self = StObject.set(x, "attachmentSetId", js.undefined)
     
-    @scala.inline
-    def setExpiryTime(value: ExpiryTime): Self = StObject.set(x, "expiryTime", value.asInstanceOf[js.Any])
+    inline def setExpiryTime(value: ExpiryTime): Self = StObject.set(x, "expiryTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryTimeUndefined: Self = StObject.set(x, "expiryTime", js.undefined)
+    inline def setExpiryTimeUndefined: Self = StObject.set(x, "expiryTime", js.undefined)
   }
 }

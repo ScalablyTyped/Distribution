@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class QuestionSelectBaseImplementor protected () extends QuestionImplementor {
   def this(question: Question) = this()
   
-  val isOtherSelected: Boolean = js.native
+  /* protected */ val isOtherSelected: Boolean = js.native
   
   /* protected */ def onCreated(): Unit = js.native
 }

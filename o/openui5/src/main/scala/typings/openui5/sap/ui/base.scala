@@ -1056,8 +1056,7 @@ object base {
   }
   object Metadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getAllPublicMethods: () => js.Array[String],
       getName: () => String,
       getParent: () => Metadata,
@@ -1071,32 +1070,23 @@ object base {
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setGetAllPublicMethods(value: () => js.Array[String]): Self = StObject.set(x, "getAllPublicMethods", js.Any.fromFunction0(value))
+      inline def setGetAllPublicMethods(value: () => js.Array[String]): Self = StObject.set(x, "getAllPublicMethods", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParent(value: () => Metadata): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+      inline def setGetParent(value: () => Metadata): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPublicMethods(value: () => js.Array[String]): Self = StObject.set(x, "getPublicMethods", js.Any.fromFunction0(value))
+      inline def setGetPublicMethods(value: () => js.Array[String]): Self = StObject.set(x, "getPublicMethods", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsAbstract(value: () => Boolean): Self = StObject.set(x, "isAbstract", js.Any.fromFunction0(value))
+      inline def setIsAbstract(value: () => Boolean): Self = StObject.set(x, "isAbstract", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDeprecated(value: () => Boolean): Self = StObject.set(x, "isDeprecated", js.Any.fromFunction0(value))
+      inline def setIsDeprecated(value: () => Boolean): Self = StObject.set(x, "isDeprecated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFinal(value: () => Boolean): Self = StObject.set(x, "isFinal", js.Any.fromFunction0(value))
+      inline def setIsFinal(value: () => Boolean): Self = StObject.set(x, "isFinal", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsInstanceOf(value: String => Boolean): Self = StObject.set(x, "isInstanceOf", js.Any.fromFunction1(value))
+      inline def setIsInstanceOf(value: String => Boolean): Self = StObject.set(x, "isInstanceOf", js.Any.fromFunction1(value))
     }
   }
   
@@ -1181,20 +1171,16 @@ object base {
   }
   object Poolable {
     
-    @scala.inline
-    def apply(init: () => Unit, reset: () => Unit): Poolable = {
+    inline def apply(init: () => Unit, reset: () => Unit): Poolable = {
       val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init), reset = js.Any.fromFunction0(reset))
       __obj.asInstanceOf[Poolable]
     }
     
-    @scala.inline
-    implicit class PoolableMutableBuilder[Self <: Poolable] (val x: Self) extends AnyVal {
+    extension [Self <: Poolable](x: Self) {
       
-      @scala.inline
-      def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
 }

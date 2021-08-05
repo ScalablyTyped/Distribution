@@ -50,8 +50,7 @@ trait XFixedHyperlink
 }
 object XFixedHyperlink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Alignment: Double,
     Text: String,
     URL: String,
@@ -71,40 +70,28 @@ object XFixedHyperlink {
     __obj.asInstanceOf[XFixedHyperlink]
   }
   
-  @scala.inline
-  implicit class XFixedHyperlinkMutableBuilder[Self <: XFixedHyperlink] (val x: Self) extends AnyVal {
+  extension [Self <: XFixedHyperlink](x: Self) {
     
-    @scala.inline
-    def setAddActionListener(value: XActionListener => Unit): Self = StObject.set(x, "addActionListener", js.Any.fromFunction1(value))
+    inline def setAddActionListener(value: XActionListener => Unit): Self = StObject.set(x, "addActionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlignment(value: Double): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: Double): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAlignment(value: () => Double): Self = StObject.set(x, "getAlignment", js.Any.fromFunction0(value))
+    inline def setGetAlignment(value: () => Double): Self = StObject.set(x, "getAlignment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
+    inline def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveActionListener(value: XActionListener => Unit): Self = StObject.set(x, "removeActionListener", js.Any.fromFunction1(value))
+    inline def setRemoveActionListener(value: XActionListener => Unit): Self = StObject.set(x, "removeActionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAlignment(value: Double => Unit): Self = StObject.set(x, "setAlignment", js.Any.fromFunction1(value))
+    inline def setSetAlignment(value: Double => Unit): Self = StObject.set(x, "setAlignment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetURL(value: String => Unit): Self = StObject.set(x, "setURL", js.Any.fromFunction1(value))
+    inline def setSetURL(value: String => Unit): Self = StObject.set(x, "setURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

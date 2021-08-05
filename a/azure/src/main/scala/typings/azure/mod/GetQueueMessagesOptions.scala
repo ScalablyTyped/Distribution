@@ -14,25 +14,19 @@ trait GetQueueMessagesOptions
 }
 object GetQueueMessagesOptions {
   
-  @scala.inline
-  def apply(): GetQueueMessagesOptions = {
+  inline def apply(): GetQueueMessagesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetQueueMessagesOptions]
   }
   
-  @scala.inline
-  implicit class GetQueueMessagesOptionsMutableBuilder[Self <: GetQueueMessagesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetQueueMessagesOptions](x: Self) {
     
-    @scala.inline
-    def setPeekonly(value: Boolean): Self = StObject.set(x, "peekonly", value.asInstanceOf[js.Any])
+    inline def setPeekonly(value: Boolean): Self = StObject.set(x, "peekonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeekonlyUndefined: Self = StObject.set(x, "peekonly", js.undefined)
+    inline def setPeekonlyUndefined: Self = StObject.set(x, "peekonly", js.undefined)
     
-    @scala.inline
-    def setVisibilitytimeout(value: Double): Self = StObject.set(x, "visibilitytimeout", value.asInstanceOf[js.Any])
+    inline def setVisibilitytimeout(value: Double): Self = StObject.set(x, "visibilitytimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilitytimeoutUndefined: Self = StObject.set(x, "visibilitytimeout", js.undefined)
+    inline def setVisibilitytimeoutUndefined: Self = StObject.set(x, "visibilitytimeout", js.undefined)
   }
 }

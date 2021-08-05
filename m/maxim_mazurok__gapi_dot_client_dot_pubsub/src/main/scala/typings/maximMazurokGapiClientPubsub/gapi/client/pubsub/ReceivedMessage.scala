@@ -22,31 +22,23 @@ trait ReceivedMessage extends StObject {
 }
 object ReceivedMessage {
   
-  @scala.inline
-  def apply(): ReceivedMessage = {
+  inline def apply(): ReceivedMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReceivedMessage]
   }
   
-  @scala.inline
-  implicit class ReceivedMessageMutableBuilder[Self <: ReceivedMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ReceivedMessage](x: Self) {
     
-    @scala.inline
-    def setAckId(value: String): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
+    inline def setAckId(value: String): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAckIdUndefined: Self = StObject.set(x, "ackId", js.undefined)
+    inline def setAckIdUndefined: Self = StObject.set(x, "ackId", js.undefined)
     
-    @scala.inline
-    def setDeliveryAttempt(value: Double): Self = StObject.set(x, "deliveryAttempt", value.asInstanceOf[js.Any])
+    inline def setDeliveryAttempt(value: Double): Self = StObject.set(x, "deliveryAttempt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryAttemptUndefined: Self = StObject.set(x, "deliveryAttempt", js.undefined)
+    inline def setDeliveryAttemptUndefined: Self = StObject.set(x, "deliveryAttempt", js.undefined)
     
-    @scala.inline
-    def setMessage(value: PubsubMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: PubsubMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

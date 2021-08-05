@@ -19,26 +19,20 @@ object anon {
   }
   object Clear {
     
-    @scala.inline
-    def apply(clear: String, confirm: String, itemUnit: String, more: String): Clear = {
+    inline def apply(clear: String, confirm: String, itemUnit: String, more: String): Clear = {
       val __obj = js.Dynamic.literal(clear = clear.asInstanceOf[js.Any], confirm = confirm.asInstanceOf[js.Any], itemUnit = itemUnit.asInstanceOf[js.Any], more = more.asInstanceOf[js.Any])
       __obj.asInstanceOf[Clear]
     }
     
-    @scala.inline
-    implicit class ClearMutableBuilder[Self <: Clear] (val x: Self) extends AnyVal {
+    extension [Self <: Clear](x: Self) {
       
-      @scala.inline
-      def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirm(value: String): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
+      inline def setConfirm(value: String): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUnit(value: String): Self = StObject.set(x, "itemUnit", value.asInstanceOf[js.Any])
+      inline def setItemUnit(value: String): Self = StObject.set(x, "itemUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMore(value: String): Self = StObject.set(x, "more", value.asInstanceOf[js.Any])
+      inline def setMore(value: String): Self = StObject.set(x, "more", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,8 +54,7 @@ object anon {
   }
   object Collapsed {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       collapsed: String,
       expand: String,
       inputPlaceholder: String,
@@ -74,29 +67,21 @@ object anon {
       __obj.asInstanceOf[Collapsed]
     }
     
-    @scala.inline
-    implicit class CollapsedMutableBuilder[Self <: Collapsed] (val x: Self) extends AnyVal {
+    extension [Self <: Collapsed](x: Self) {
       
-      @scala.inline
-      def setCollapsed(value: String): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: String): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpand(value: String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPlaceholder(value: String): Self = StObject.set(x, "inputPlaceholder", value.asInstanceOf[js.Any])
+      inline def setInputPlaceholder(value: String): Self = StObject.set(x, "inputPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectPlaceholder(value: String): Self = StObject.set(x, "selectPlaceholder", value.asInstanceOf[js.Any])
+      inline def setSelectPlaceholder(value: String): Self = StObject.set(x, "selectPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmit(value: String): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
+      inline def setSubmit(value: String): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,8 +123,7 @@ object anon {
   }
   object ColumnDisplay {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       columnDisplay: String,
       columnSetting: String,
       density: String,
@@ -162,59 +146,41 @@ object anon {
       __obj.asInstanceOf[ColumnDisplay]
     }
     
-    @scala.inline
-    implicit class ColumnDisplayMutableBuilder[Self <: ColumnDisplay] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnDisplay](x: Self) {
       
-      @scala.inline
-      def setColumnDisplay(value: String): Self = StObject.set(x, "columnDisplay", value.asInstanceOf[js.Any])
+      inline def setColumnDisplay(value: String): Self = StObject.set(x, "columnDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnSetting(value: String): Self = StObject.set(x, "columnSetting", value.asInstanceOf[js.Any])
+      inline def setColumnSetting(value: String): Self = StObject.set(x, "columnSetting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensity(value: String): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+      inline def setDensity(value: String): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensityDefault(value: String): Self = StObject.set(x, "densityDefault", value.asInstanceOf[js.Any])
+      inline def setDensityDefault(value: String): Self = StObject.set(x, "densityDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensityLarger(value: String): Self = StObject.set(x, "densityLarger", value.asInstanceOf[js.Any])
+      inline def setDensityLarger(value: String): Self = StObject.set(x, "densityLarger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensityMiddle(value: String): Self = StObject.set(x, "densityMiddle", value.asInstanceOf[js.Any])
+      inline def setDensityMiddle(value: String): Self = StObject.set(x, "densityMiddle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensitySmall(value: String): Self = StObject.set(x, "densitySmall", value.asInstanceOf[js.Any])
+      inline def setDensitySmall(value: String): Self = StObject.set(x, "densitySmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitFullScreen(value: String): Self = StObject.set(x, "exitFullScreen", value.asInstanceOf[js.Any])
+      inline def setExitFullScreen(value: String): Self = StObject.set(x, "exitFullScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullScreen(value: String): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+      inline def setFullScreen(value: String): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftFixedTitle(value: String): Self = StObject.set(x, "leftFixedTitle", value.asInstanceOf[js.Any])
+      inline def setLeftFixedTitle(value: String): Self = StObject.set(x, "leftFixedTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftPin(value: String): Self = StObject.set(x, "leftPin", value.asInstanceOf[js.Any])
+      inline def setLeftPin(value: String): Self = StObject.set(x, "leftPin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoFixedTitle(value: String): Self = StObject.set(x, "noFixedTitle", value.asInstanceOf[js.Any])
+      inline def setNoFixedTitle(value: String): Self = StObject.set(x, "noFixedTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoPin(value: String): Self = StObject.set(x, "noPin", value.asInstanceOf[js.Any])
+      inline def setNoPin(value: String): Self = StObject.set(x, "noPin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReload(value: String): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
+      inline def setReload(value: String): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightFixedTitle(value: String): Self = StObject.set(x, "rightFixedTitle", value.asInstanceOf[js.Any])
+      inline def setRightFixedTitle(value: String): Self = StObject.set(x, "rightFixedTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightPin(value: String): Self = StObject.set(x, "rightPin", value.asInstanceOf[js.Any])
+      inline def setRightPin(value: String): Self = StObject.set(x, "rightPin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -254,8 +220,7 @@ object anon {
   }
   object ColumnSetting {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       columnDisplay: String,
       columnSetting: String,
       density: String,
@@ -277,56 +242,39 @@ object anon {
       __obj.asInstanceOf[ColumnSetting]
     }
     
-    @scala.inline
-    implicit class ColumnSettingMutableBuilder[Self <: ColumnSetting] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnSetting](x: Self) {
       
-      @scala.inline
-      def setColumnDisplay(value: String): Self = StObject.set(x, "columnDisplay", value.asInstanceOf[js.Any])
+      inline def setColumnDisplay(value: String): Self = StObject.set(x, "columnDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnSetting(value: String): Self = StObject.set(x, "columnSetting", value.asInstanceOf[js.Any])
+      inline def setColumnSetting(value: String): Self = StObject.set(x, "columnSetting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensity(value: String): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+      inline def setDensity(value: String): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensityLarger(value: String): Self = StObject.set(x, "densityLarger", value.asInstanceOf[js.Any])
+      inline def setDensityLarger(value: String): Self = StObject.set(x, "densityLarger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensityMiddle(value: String): Self = StObject.set(x, "densityMiddle", value.asInstanceOf[js.Any])
+      inline def setDensityMiddle(value: String): Self = StObject.set(x, "densityMiddle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensitySmall(value: String): Self = StObject.set(x, "densitySmall", value.asInstanceOf[js.Any])
+      inline def setDensitySmall(value: String): Self = StObject.set(x, "densitySmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitFullScreen(value: String): Self = StObject.set(x, "exitFullScreen", value.asInstanceOf[js.Any])
+      inline def setExitFullScreen(value: String): Self = StObject.set(x, "exitFullScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullScreen(value: String): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+      inline def setFullScreen(value: String): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftFixedTitle(value: String): Self = StObject.set(x, "leftFixedTitle", value.asInstanceOf[js.Any])
+      inline def setLeftFixedTitle(value: String): Self = StObject.set(x, "leftFixedTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftPin(value: String): Self = StObject.set(x, "leftPin", value.asInstanceOf[js.Any])
+      inline def setLeftPin(value: String): Self = StObject.set(x, "leftPin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoFixedTitle(value: String): Self = StObject.set(x, "noFixedTitle", value.asInstanceOf[js.Any])
+      inline def setNoFixedTitle(value: String): Self = StObject.set(x, "noFixedTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoPin(value: String): Self = StObject.set(x, "noPin", value.asInstanceOf[js.Any])
+      inline def setNoPin(value: String): Self = StObject.set(x, "noPin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReload(value: String): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
+      inline def setReload(value: String): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightFixedTitle(value: String): Self = StObject.set(x, "rightFixedTitle", value.asInstanceOf[js.Any])
+      inline def setRightFixedTitle(value: String): Self = StObject.set(x, "rightFixedTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightPin(value: String): Self = StObject.set(x, "rightPin", value.asInstanceOf[js.Any])
+      inline def setRightPin(value: String): Self = StObject.set(x, "rightPin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -336,17 +284,14 @@ object anon {
   }
   object Intl {
     
-    @scala.inline
-    def apply(intl: IntlType): Intl = {
+    inline def apply(intl: IntlType): Intl = {
       val __obj = js.Dynamic.literal(intl = intl.asInstanceOf[js.Any])
       __obj.asInstanceOf[Intl]
     }
     
-    @scala.inline
-    implicit class IntlMutableBuilder[Self <: Intl] (val x: Self) extends AnyVal {
+    extension [Self <: Intl](x: Self) {
       
-      @scala.inline
-      def setIntl(value: IntlType): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
+      inline def setIntl(value: IntlType): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -360,23 +305,18 @@ object anon {
   }
   object Item {
     
-    @scala.inline
-    def apply(clear: String, item: String, selected: String): Item = {
+    inline def apply(clear: String, item: String, selected: String): Item = {
       val __obj = js.Dynamic.literal(clear = clear.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -386,17 +326,14 @@ object anon {
   }
   object LightFilter {
     
-    @scala.inline
-    def apply(lightFilter: Clear): LightFilter = {
+    inline def apply(lightFilter: Clear): LightFilter = {
       val __obj = js.Dynamic.literal(lightFilter = lightFilter.asInstanceOf[js.Any])
       __obj.asInstanceOf[LightFilter]
     }
     
-    @scala.inline
-    implicit class LightFilterMutableBuilder[Self <: LightFilter] (val x: Self) extends AnyVal {
+    extension [Self <: LightFilter](x: Self) {
       
-      @scala.inline
-      def setLightFilter(value: Clear): Self = StObject.set(x, "lightFilter", value.asInstanceOf[js.Any])
+      inline def setLightFilter(value: Clear): Self = StObject.set(x, "lightFilter", value.asInstanceOf[js.Any])
     }
   }
   
@@ -408,20 +345,16 @@ object anon {
   }
   object Next {
     
-    @scala.inline
-    def apply(next: String, prev: String): Next = {
+    inline def apply(next: String, prev: String): Next = {
       val __obj = js.Dynamic.literal(next = next.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any])
       __obj.asInstanceOf[Next]
     }
     
-    @scala.inline
-    implicit class NextMutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
+    extension [Self <: Next](x: Self) {
       
-      @scala.inline
-      def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     }
   }
   
@@ -435,23 +368,18 @@ object anon {
   }
   object Prev {
     
-    @scala.inline
-    def apply(next: String, prev: String, submit: String): Prev = {
+    inline def apply(next: String, prev: String, submit: String): Prev = {
       val __obj = js.Dynamic.literal(next = next.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any])
       __obj.asInstanceOf[Prev]
     }
     
-    @scala.inline
-    implicit class PrevMutableBuilder[Self <: Prev] (val x: Self) extends AnyVal {
+    extension [Self <: Prev](x: Self) {
       
-      @scala.inline
-      def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmit(value: String): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
+      inline def setSubmit(value: String): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -465,23 +393,18 @@ object anon {
   }
   object Range {
     
-    @scala.inline
-    def apply(item: String, range: String, total: String): Range = {
+    inline def apply(item: String, range: String, total: String): Range = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Range]
     }
     
-    @scala.inline
-    implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+    extension [Self <: Range](x: Self) {
       
-      @scala.inline
-      def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -491,17 +414,14 @@ object anon {
   }
   object Total {
     
-    @scala.inline
-    def apply(total: Range): Total = {
+    inline def apply(total: Range): Total = {
       val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Total]
     }
     
-    @scala.inline
-    implicit class TotalMutableBuilder[Self <: Total] (val x: Self) extends AnyVal {
+    extension [Self <: Total](x: Self) {
       
-      @scala.inline
-      def setTotal(value: Range): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Range): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
 }

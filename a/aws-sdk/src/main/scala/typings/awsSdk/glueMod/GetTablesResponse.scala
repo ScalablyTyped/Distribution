@@ -18,28 +18,21 @@ trait GetTablesResponse extends StObject {
 }
 object GetTablesResponse {
   
-  @scala.inline
-  def apply(): GetTablesResponse = {
+  inline def apply(): GetTablesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTablesResponse]
   }
   
-  @scala.inline
-  implicit class GetTablesResponseMutableBuilder[Self <: GetTablesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTablesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTableList(value: TableList): Self = StObject.set(x, "TableList", value.asInstanceOf[js.Any])
+    inline def setTableList(value: TableList): Self = StObject.set(x, "TableList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableListUndefined: Self = StObject.set(x, "TableList", js.undefined)
+    inline def setTableListUndefined: Self = StObject.set(x, "TableList", js.undefined)
     
-    @scala.inline
-    def setTableListVarargs(value: Table*): Self = StObject.set(x, "TableList", js.Array(value :_*))
+    inline def setTableListVarargs(value: Table*): Self = StObject.set(x, "TableList", js.Array(value :_*))
   }
 }

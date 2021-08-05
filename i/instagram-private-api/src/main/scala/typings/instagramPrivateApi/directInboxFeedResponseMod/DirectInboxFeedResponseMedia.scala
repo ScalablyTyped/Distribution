@@ -12,19 +12,15 @@ trait DirectInboxFeedResponseMedia extends StObject {
 }
 object DirectInboxFeedResponseMedia {
   
-  @scala.inline
-  def apply(expiring_at: Double, user: DirectInboxFeedResponseUser): DirectInboxFeedResponseMedia = {
+  inline def apply(expiring_at: Double, user: DirectInboxFeedResponseUser): DirectInboxFeedResponseMedia = {
     val __obj = js.Dynamic.literal(expiring_at = expiring_at.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectInboxFeedResponseMedia]
   }
   
-  @scala.inline
-  implicit class DirectInboxFeedResponseMediaMutableBuilder[Self <: DirectInboxFeedResponseMedia] (val x: Self) extends AnyVal {
+  extension [Self <: DirectInboxFeedResponseMedia](x: Self) {
     
-    @scala.inline
-    def setExpiring_at(value: Double): Self = StObject.set(x, "expiring_at", value.asInstanceOf[js.Any])
+    inline def setExpiring_at(value: Double): Self = StObject.set(x, "expiring_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: DirectInboxFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: DirectInboxFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

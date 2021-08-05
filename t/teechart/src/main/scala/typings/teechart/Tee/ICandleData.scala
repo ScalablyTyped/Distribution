@@ -18,8 +18,7 @@ trait ICandleData
 }
 object ICandleData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: js.Array[Double],
     high: js.Array[Double],
     labels: js.Array[String],
@@ -32,31 +31,22 @@ object ICandleData {
     __obj.asInstanceOf[ICandleData]
   }
   
-  @scala.inline
-  implicit class ICandleDataMutableBuilder[Self <: ICandleData] (val x: Self) extends AnyVal {
+  extension [Self <: ICandleData](x: Self) {
     
-    @scala.inline
-    def setClose(value: js.Array[Double]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: js.Array[Double]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseVarargs(value: Double*): Self = StObject.set(x, "close", js.Array(value :_*))
+    inline def setCloseVarargs(value: Double*): Self = StObject.set(x, "close", js.Array(value :_*))
     
-    @scala.inline
-    def setHigh(value: js.Array[Double]): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+    inline def setHigh(value: js.Array[Double]): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighVarargs(value: Double*): Self = StObject.set(x, "high", js.Array(value :_*))
+    inline def setHighVarargs(value: Double*): Self = StObject.set(x, "high", js.Array(value :_*))
     
-    @scala.inline
-    def setLow(value: js.Array[Double]): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
+    inline def setLow(value: js.Array[Double]): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowVarargs(value: Double*): Self = StObject.set(x, "low", js.Array(value :_*))
+    inline def setLowVarargs(value: Double*): Self = StObject.set(x, "low", js.Array(value :_*))
     
-    @scala.inline
-    def setOpen(value: js.Array[Double]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: js.Array[Double]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenVarargs(value: Double*): Self = StObject.set(x, "open", js.Array(value :_*))
+    inline def setOpenVarargs(value: Double*): Self = StObject.set(x, "open", js.Array(value :_*))
   }
 }

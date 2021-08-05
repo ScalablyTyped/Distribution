@@ -16,9 +16,9 @@ object basicmousehandlerMod {
     extends StObject
        with IMouseHandler {
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
-    var _pressData: js.Any = js.native
+    /* private */ var _pressData: js.Any = js.native
     
     /**
       * Dispose of the resources held by the object.

@@ -19,20 +19,16 @@ object serverContextMod extends Shortcut {
   }
   object ServerContextType {
     
-    @scala.inline
-    def apply(): ServerContextType = {
+    inline def apply(): ServerContextType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServerContextType]
     }
     
-    @scala.inline
-    implicit class ServerContextTypeMutableBuilder[Self <: ServerContextType] (val x: Self) extends AnyVal {
+    extension [Self <: ServerContextType](x: Self) {
       
-      @scala.inline
-      def setLocation(value: Pathname): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Pathname): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     }
   }
   

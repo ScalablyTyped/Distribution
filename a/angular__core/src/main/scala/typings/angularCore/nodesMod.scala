@@ -12,9 +12,7 @@ object nodesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def closestNode[T /* <: Node */](node: Node, kind: SyntaxKind): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("closestNode")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  inline def closestNode[T /* <: Node */](node: Node, kind: SyntaxKind): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("closestNode")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[T | Null]
   
-  @scala.inline
-  def hasModifier(node: Node, modifierKind: SyntaxKind): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(node.asInstanceOf[js.Any], modifierKind.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasModifier(node: Node, modifierKind: SyntaxKind): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(node.asInstanceOf[js.Any], modifierKind.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

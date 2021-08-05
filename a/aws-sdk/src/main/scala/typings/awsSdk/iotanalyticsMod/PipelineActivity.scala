@@ -58,73 +58,51 @@ trait PipelineActivity extends StObject {
 }
 object PipelineActivity {
   
-  @scala.inline
-  def apply(): PipelineActivity = {
+  inline def apply(): PipelineActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PipelineActivity]
   }
   
-  @scala.inline
-  implicit class PipelineActivityMutableBuilder[Self <: PipelineActivity] (val x: Self) extends AnyVal {
+  extension [Self <: PipelineActivity](x: Self) {
     
-    @scala.inline
-    def setAddAttributes(value: AddAttributesActivity): Self = StObject.set(x, "addAttributes", value.asInstanceOf[js.Any])
+    inline def setAddAttributes(value: AddAttributesActivity): Self = StObject.set(x, "addAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddAttributesUndefined: Self = StObject.set(x, "addAttributes", js.undefined)
+    inline def setAddAttributesUndefined: Self = StObject.set(x, "addAttributes", js.undefined)
     
-    @scala.inline
-    def setChannel(value: ChannelActivity): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: ChannelActivity): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def setDatastore(value: DatastoreActivity): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+    inline def setDatastore(value: DatastoreActivity): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatastoreUndefined: Self = StObject.set(x, "datastore", js.undefined)
+    inline def setDatastoreUndefined: Self = StObject.set(x, "datastore", js.undefined)
     
-    @scala.inline
-    def setDeviceRegistryEnrich(value: DeviceRegistryEnrichActivity): Self = StObject.set(x, "deviceRegistryEnrich", value.asInstanceOf[js.Any])
+    inline def setDeviceRegistryEnrich(value: DeviceRegistryEnrichActivity): Self = StObject.set(x, "deviceRegistryEnrich", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceRegistryEnrichUndefined: Self = StObject.set(x, "deviceRegistryEnrich", js.undefined)
+    inline def setDeviceRegistryEnrichUndefined: Self = StObject.set(x, "deviceRegistryEnrich", js.undefined)
     
-    @scala.inline
-    def setDeviceShadowEnrich(value: DeviceShadowEnrichActivity): Self = StObject.set(x, "deviceShadowEnrich", value.asInstanceOf[js.Any])
+    inline def setDeviceShadowEnrich(value: DeviceShadowEnrichActivity): Self = StObject.set(x, "deviceShadowEnrich", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceShadowEnrichUndefined: Self = StObject.set(x, "deviceShadowEnrich", js.undefined)
+    inline def setDeviceShadowEnrichUndefined: Self = StObject.set(x, "deviceShadowEnrich", js.undefined)
     
-    @scala.inline
-    def setFilter(value: FilterActivity): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: FilterActivity): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setLambda(value: LambdaActivity): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+    inline def setLambda(value: LambdaActivity): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
+    inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
     
-    @scala.inline
-    def setMath(value: MathActivity): Self = StObject.set(x, "math", value.asInstanceOf[js.Any])
+    inline def setMath(value: MathActivity): Self = StObject.set(x, "math", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMathUndefined: Self = StObject.set(x, "math", js.undefined)
+    inline def setMathUndefined: Self = StObject.set(x, "math", js.undefined)
     
-    @scala.inline
-    def setRemoveAttributes(value: RemoveAttributesActivity): Self = StObject.set(x, "removeAttributes", value.asInstanceOf[js.Any])
+    inline def setRemoveAttributes(value: RemoveAttributesActivity): Self = StObject.set(x, "removeAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAttributesUndefined: Self = StObject.set(x, "removeAttributes", js.undefined)
+    inline def setRemoveAttributesUndefined: Self = StObject.set(x, "removeAttributes", js.undefined)
     
-    @scala.inline
-    def setSelectAttributes(value: SelectAttributesActivity): Self = StObject.set(x, "selectAttributes", value.asInstanceOf[js.Any])
+    inline def setSelectAttributes(value: SelectAttributesActivity): Self = StObject.set(x, "selectAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectAttributesUndefined: Self = StObject.set(x, "selectAttributes", js.undefined)
+    inline def setSelectAttributesUndefined: Self = StObject.set(x, "selectAttributes", js.undefined)
   }
 }

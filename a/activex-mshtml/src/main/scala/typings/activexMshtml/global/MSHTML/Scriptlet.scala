@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.Scriptlet")
 @js.native
-class Scriptlet protected ()
+/* private */ class Scriptlet ()
   extends StObject
      with typings.activexMshtml.MSHTML.Scriptlet {
   
   /* CompleteClass */
   override def AboutBox(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.Scriptlet_typekey")
   var MSHTMLDotScriptlet_typekey: typings.activexMshtml.MSHTML.Scriptlet = js.native
   

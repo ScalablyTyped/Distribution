@@ -12,7 +12,6 @@ object mgf {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(any: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(any.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create(any: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(any.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
 }

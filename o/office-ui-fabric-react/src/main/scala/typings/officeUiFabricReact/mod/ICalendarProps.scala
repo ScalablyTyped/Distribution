@@ -9,8 +9,7 @@ trait ICalendarProps
      with typings.officeUiFabricReact.calendarTypesMod.ICalendarProps
 object ICalendarProps {
   
-  @scala.inline
-  def apply(): ICalendarProps = {
+  inline def apply(): ICalendarProps = {
     val __obj = js.Dynamic.literal(strings = null)
     __obj.asInstanceOf[ICalendarProps]
   }

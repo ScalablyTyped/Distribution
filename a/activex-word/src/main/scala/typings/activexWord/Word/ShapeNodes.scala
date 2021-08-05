@@ -189,6 +189,6 @@ trait ShapeNodes extends StObject {
   
   def SetSegmentType(Index: Double, SegmentType: MsoSegmentType): Unit = js.native
   
-  @JSName("Word.ShapeNodes_typekey")
+  /* private */ @JSName("Word.ShapeNodes_typekey")
   var WordDotShapeNodes_typekey: ShapeNodes = js.native
 }

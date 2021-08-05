@@ -26,37 +26,27 @@ trait DeliverySchedule extends StObject {
 }
 object DeliverySchedule {
   
-  @scala.inline
-  def apply(): DeliverySchedule = {
+  inline def apply(): DeliverySchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeliverySchedule]
   }
   
-  @scala.inline
-  implicit class DeliveryScheduleMutableBuilder[Self <: DeliverySchedule] (val x: Self) extends AnyVal {
+  extension [Self <: DeliverySchedule](x: Self) {
     
-    @scala.inline
-    def setFrequencyCap(value: FrequencyCap): Self = StObject.set(x, "frequencyCap", value.asInstanceOf[js.Any])
+    inline def setFrequencyCap(value: FrequencyCap): Self = StObject.set(x, "frequencyCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyCapUndefined: Self = StObject.set(x, "frequencyCap", js.undefined)
+    inline def setFrequencyCapUndefined: Self = StObject.set(x, "frequencyCap", js.undefined)
     
-    @scala.inline
-    def setHardCutoff(value: Boolean): Self = StObject.set(x, "hardCutoff", value.asInstanceOf[js.Any])
+    inline def setHardCutoff(value: Boolean): Self = StObject.set(x, "hardCutoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardCutoffUndefined: Self = StObject.set(x, "hardCutoff", js.undefined)
+    inline def setHardCutoffUndefined: Self = StObject.set(x, "hardCutoff", js.undefined)
     
-    @scala.inline
-    def setImpressionRatio(value: String): Self = StObject.set(x, "impressionRatio", value.asInstanceOf[js.Any])
+    inline def setImpressionRatio(value: String): Self = StObject.set(x, "impressionRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpressionRatioUndefined: Self = StObject.set(x, "impressionRatio", js.undefined)
+    inline def setImpressionRatioUndefined: Self = StObject.set(x, "impressionRatio", js.undefined)
     
-    @scala.inline
-    def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TouchType extends StObject
 object TouchType {
   
-  @scala.inline
-  def direct: typings.std.stdStrings.direct = "direct".asInstanceOf[typings.std.stdStrings.direct]
+  inline def direct: typings.std.stdStrings.direct = "direct".asInstanceOf[typings.std.stdStrings.direct]
   
-  @scala.inline
-  def stylus: typings.std.stdStrings.stylus = "stylus".asInstanceOf[typings.std.stdStrings.stylus]
+  inline def stylus: typings.std.stdStrings.stylus = "stylus".asInstanceOf[typings.std.stdStrings.stylus]
 }

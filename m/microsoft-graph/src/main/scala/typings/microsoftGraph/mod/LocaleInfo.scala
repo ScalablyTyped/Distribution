@@ -18,31 +18,23 @@ trait LocaleInfo extends StObject {
 }
 object LocaleInfo {
   
-  @scala.inline
-  def apply(): LocaleInfo = {
+  inline def apply(): LocaleInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocaleInfo]
   }
   
-  @scala.inline
-  implicit class LocaleInfoMutableBuilder[Self <: LocaleInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LocaleInfo](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setLocale(value: NullableOption[String]): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: NullableOption[String]): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleNull: Self = StObject.set(x, "locale", null)
+    inline def setLocaleNull: Self = StObject.set(x, "locale", null)
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

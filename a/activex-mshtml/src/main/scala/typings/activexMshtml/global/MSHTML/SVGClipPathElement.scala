@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGClipPathElement")
 @js.native
-class SVGClipPathElement protected ()
+/* private */ class SVGClipPathElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGClipPathElement {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGClipPathElement_typekey")
   var MSHTMLDotSVGClipPathElement_typekey: typings.activexMshtml.MSHTML.SVGClipPathElement = js.native
   

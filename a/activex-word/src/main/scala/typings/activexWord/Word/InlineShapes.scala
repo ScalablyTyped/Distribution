@@ -64,6 +64,6 @@ trait InlineShapes extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.InlineShapes_typekey")
+  /* private */ @JSName("Word.InlineShapes_typekey")
   var WordDotInlineShapes_typekey: InlineShapes = js.native
 }

@@ -15,34 +15,25 @@ trait ITensorShape extends StObject {
 }
 object ITensorShape {
   
-  @scala.inline
-  def apply(): ITensorShape = {
+  inline def apply(): ITensorShape = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITensorShape]
   }
   
-  @scala.inline
-  implicit class ITensorShapeMutableBuilder[Self <: ITensorShape] (val x: Self) extends AnyVal {
+  extension [Self <: ITensorShape](x: Self) {
     
-    @scala.inline
-    def setDim(value: js.Array[IDim]): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
+    inline def setDim(value: js.Array[IDim]): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimNull: Self = StObject.set(x, "dim", null)
+    inline def setDimNull: Self = StObject.set(x, "dim", null)
     
-    @scala.inline
-    def setDimUndefined: Self = StObject.set(x, "dim", js.undefined)
+    inline def setDimUndefined: Self = StObject.set(x, "dim", js.undefined)
     
-    @scala.inline
-    def setDimVarargs(value: IDim*): Self = StObject.set(x, "dim", js.Array(value :_*))
+    inline def setDimVarargs(value: IDim*): Self = StObject.set(x, "dim", js.Array(value :_*))
     
-    @scala.inline
-    def setUnknownRank(value: Boolean): Self = StObject.set(x, "unknownRank", value.asInstanceOf[js.Any])
+    inline def setUnknownRank(value: Boolean): Self = StObject.set(x, "unknownRank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownRankNull: Self = StObject.set(x, "unknownRank", null)
+    inline def setUnknownRankNull: Self = StObject.set(x, "unknownRank", null)
     
-    @scala.inline
-    def setUnknownRankUndefined: Self = StObject.set(x, "unknownRank", js.undefined)
+    inline def setUnknownRankUndefined: Self = StObject.set(x, "unknownRank", js.undefined)
   }
 }

@@ -17,37 +17,27 @@ trait PartialReadonlyScrollbarS extends StObject {
 }
 object PartialReadonlyScrollbarS {
   
-  @scala.inline
-  def apply(): PartialReadonlyScrollbarS = {
+  inline def apply(): PartialReadonlyScrollbarS = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialReadonlyScrollbarS]
   }
   
-  @scala.inline
-  implicit class PartialReadonlyScrollbarSMutableBuilder[Self <: PartialReadonlyScrollbarS] (val x: Self) extends AnyVal {
+  extension [Self <: PartialReadonlyScrollbarS](x: Self) {
     
-    @scala.inline
-    def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+    inline def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
+    inline def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setThumbColor(value: String): Self = StObject.set(x, "thumbColor", value.asInstanceOf[js.Any])
+    inline def setThumbColor(value: String): Self = StObject.set(x, "thumbColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbColorUndefined: Self = StObject.set(x, "thumbColor", js.undefined)
+    inline def setThumbColorUndefined: Self = StObject.set(x, "thumbColor", js.undefined)
     
-    @scala.inline
-    def setTrackColor(value: String): Self = StObject.set(x, "trackColor", value.asInstanceOf[js.Any])
+    inline def setTrackColor(value: String): Self = StObject.set(x, "trackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackColorUndefined: Self = StObject.set(x, "trackColor", js.undefined)
+    inline def setTrackColorUndefined: Self = StObject.set(x, "trackColor", js.undefined)
   }
 }

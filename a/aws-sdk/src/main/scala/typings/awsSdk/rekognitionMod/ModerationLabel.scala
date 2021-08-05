@@ -23,31 +23,23 @@ trait ModerationLabel extends StObject {
 }
 object ModerationLabel {
   
-  @scala.inline
-  def apply(): ModerationLabel = {
+  inline def apply(): ModerationLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModerationLabel]
   }
   
-  @scala.inline
-  implicit class ModerationLabelMutableBuilder[Self <: ModerationLabel] (val x: Self) extends AnyVal {
+  extension [Self <: ModerationLabel](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setParentName(value: String): Self = StObject.set(x, "ParentName", value.asInstanceOf[js.Any])
+    inline def setParentName(value: String): Self = StObject.set(x, "ParentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNameUndefined: Self = StObject.set(x, "ParentName", js.undefined)
+    inline def setParentNameUndefined: Self = StObject.set(x, "ParentName", js.undefined)
   }
 }

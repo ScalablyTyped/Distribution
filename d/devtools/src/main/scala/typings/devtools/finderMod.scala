@@ -13,9 +13,7 @@ object finderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default_edge(browserName: edge, platform: Platform): js.Function0[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(browserName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Array[String]]]
+  inline def default_edge(browserName: edge, platform: Platform): js.Function0[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(browserName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Array[String]]]
   
-  @scala.inline
-  def default_firefox(browserName: firefox, platform: Platform): js.Function0[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(browserName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Array[String]]]
+  inline def default_firefox(browserName: firefox, platform: Platform): js.Function0[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(browserName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Array[String]]]
 }

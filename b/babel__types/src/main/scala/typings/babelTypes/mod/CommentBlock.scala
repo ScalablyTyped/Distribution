@@ -14,17 +14,14 @@ trait CommentBlock
 }
 object CommentBlock {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double, value: String): CommentBlock = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double, value: String): CommentBlock = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CommentBlock")
     __obj.asInstanceOf[CommentBlock]
   }
   
-  @scala.inline
-  implicit class CommentBlockMutableBuilder[Self <: CommentBlock] (val x: Self) extends AnyVal {
+  extension [Self <: CommentBlock](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.CommentBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.CommentBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

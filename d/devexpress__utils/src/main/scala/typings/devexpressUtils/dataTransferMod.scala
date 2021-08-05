@@ -19,22 +19,17 @@ object dataTransferMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getImageItem(items: DataTransferItemList): File | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageItem")(items.asInstanceOf[js.Any]).asInstanceOf[File | Null]
+    inline def getImageItem(items: DataTransferItemList): File | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageItem")(items.asInstanceOf[js.Any]).asInstanceOf[File | Null]
     
-    @scala.inline
-    def getPlainTextItem(items: DataTransferItemList): DataTransferItem | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlainTextItem")(items.asInstanceOf[js.Any]).asInstanceOf[DataTransferItem | Null]
+    inline def getPlainTextItem(items: DataTransferItemList): DataTransferItem | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlainTextItem")(items.asInstanceOf[js.Any]).asInstanceOf[DataTransferItem | Null]
     
-    @scala.inline
-    def getRtfTextItem(items: DataTransferItemList): DataTransferItem | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRtfTextItem")(items.asInstanceOf[js.Any]).asInstanceOf[DataTransferItem | Null]
+    inline def getRtfTextItem(items: DataTransferItemList): DataTransferItem | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRtfTextItem")(items.asInstanceOf[js.Any]).asInstanceOf[DataTransferItem | Null]
     
-    @scala.inline
-    def getTransferItemByType(items: DataTransferItemList, `type`: String): DataTransferItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransferItemByType")(items.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[DataTransferItem | Null]
+    inline def getTransferItemByType(items: DataTransferItemList, `type`: String): DataTransferItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransferItemByType")(items.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[DataTransferItem | Null]
     
     @JSImport("@devexpress/utils/lib/utils/data-transfer", "DataTransferUtils.isBrowserSupportExtendedClientBuffer")
     @js.native
     def isBrowserSupportExtendedClientBuffer: js.Any = js.native
-    @scala.inline
-    def isBrowserSupportExtendedClientBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isBrowserSupportExtendedClientBuffer")(x.asInstanceOf[js.Any])
+    inline def isBrowserSupportExtendedClientBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isBrowserSupportExtendedClientBuffer")(x.asInstanceOf[js.Any])
   }
 }

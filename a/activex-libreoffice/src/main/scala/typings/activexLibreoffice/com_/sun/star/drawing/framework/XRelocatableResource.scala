@@ -16,16 +16,13 @@ trait XRelocatableResource extends StObject {
 }
 object XRelocatableResource {
   
-  @scala.inline
-  def apply(relocateToAnchor: XResource => Boolean): XRelocatableResource = {
+  inline def apply(relocateToAnchor: XResource => Boolean): XRelocatableResource = {
     val __obj = js.Dynamic.literal(relocateToAnchor = js.Any.fromFunction1(relocateToAnchor))
     __obj.asInstanceOf[XRelocatableResource]
   }
   
-  @scala.inline
-  implicit class XRelocatableResourceMutableBuilder[Self <: XRelocatableResource] (val x: Self) extends AnyVal {
+  extension [Self <: XRelocatableResource](x: Self) {
     
-    @scala.inline
-    def setRelocateToAnchor(value: XResource => Boolean): Self = StObject.set(x, "relocateToAnchor", js.Any.fromFunction1(value))
+    inline def setRelocateToAnchor(value: XResource => Boolean): Self = StObject.set(x, "relocateToAnchor", js.Any.fromFunction1(value))
   }
 }

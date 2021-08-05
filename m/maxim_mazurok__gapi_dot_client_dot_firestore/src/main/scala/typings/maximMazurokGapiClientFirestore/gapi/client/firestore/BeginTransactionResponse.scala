@@ -11,19 +11,15 @@ trait BeginTransactionResponse extends StObject {
 }
 object BeginTransactionResponse {
   
-  @scala.inline
-  def apply(): BeginTransactionResponse = {
+  inline def apply(): BeginTransactionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BeginTransactionResponse]
   }
   
-  @scala.inline
-  implicit class BeginTransactionResponseMutableBuilder[Self <: BeginTransactionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BeginTransactionResponse](x: Self) {
     
-    @scala.inline
-    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

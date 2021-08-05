@@ -18,29 +18,22 @@ trait FillLayer
 }
 object FillLayer {
   
-  @scala.inline
-  def apply(id: String): FillLayer = {
+  inline def apply(id: String): FillLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("fill")
     __obj.asInstanceOf[FillLayer]
   }
   
-  @scala.inline
-  implicit class FillLayerMutableBuilder[Self <: FillLayer] (val x: Self) extends AnyVal {
+  extension [Self <: FillLayer](x: Self) {
     
-    @scala.inline
-    def setLayout(value: FillLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: FillLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setPaint(value: FillPaint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
+    inline def setPaint(value: FillPaint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
+    inline def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
     
-    @scala.inline
-    def setType(value: fill): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: fill): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

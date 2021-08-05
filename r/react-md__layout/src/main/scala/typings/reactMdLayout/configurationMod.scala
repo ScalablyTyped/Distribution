@@ -16,8 +16,7 @@ object configurationMod {
   
   object Configuration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasOnAppResizeChildrenIconsFormThemeDefaultDirPhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSizeRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleDisableTooltipHoverModeTooltipDefaultDelayTooltipDelayTimeout: ConfigurationProps
     ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasOnAppResizeChildrenIconsFormThemeDefaultDirPhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSizeRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleDisableTooltipHoverModeTooltipDefaultDelayTooltipDelayTimeout.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
@@ -34,110 +33,92 @@ object configurationMod {
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.defaultDir")
       @js.native
       def defaultDir: js.Any = js.native
-      @scala.inline
-      def defaultDir_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDir")(x.asInstanceOf[js.Any])
+      inline def defaultDir_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDir")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.defaultSize")
       @js.native
       def defaultSize: js.Any = js.native
-      @scala.inline
-      def defaultSize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSize")(x.asInstanceOf[js.Any])
+      inline def defaultSize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSize")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.desktopLargeMinWidth")
       @js.native
       def desktopLargeMinWidth: js.Any = js.native
-      @scala.inline
-      def desktopLargeMinWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desktopLargeMinWidth")(x.asInstanceOf[js.Any])
+      inline def desktopLargeMinWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desktopLargeMinWidth")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.desktopMinWidth")
       @js.native
       def desktopMinWidth: js.Any = js.native
-      @scala.inline
-      def desktopMinWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desktopMinWidth")(x.asInstanceOf[js.Any])
+      inline def desktopMinWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desktopMinWidth")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.disableProgrammaticRipple")
       @js.native
       def disableProgrammaticRipple: js.Any = js.native
-      @scala.inline
-      def disableProgrammaticRipple_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableProgrammaticRipple")(x.asInstanceOf[js.Any])
+      inline def disableProgrammaticRipple_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableProgrammaticRipple")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.disableRipple")
       @js.native
       def disableRipple: js.Any = js.native
-      @scala.inline
-      def disableRipple_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableRipple")(x.asInstanceOf[js.Any])
+      inline def disableRipple_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableRipple")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.disableTooltipHoverMode")
       @js.native
       def disableTooltipHoverMode: js.Any = js.native
-      @scala.inline
-      def disableTooltipHoverMode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableTooltipHoverMode")(x.asInstanceOf[js.Any])
+      inline def disableTooltipHoverMode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableTooltipHoverMode")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.formTheme")
       @js.native
       def formTheme: js.Any = js.native
-      @scala.inline
-      def formTheme_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formTheme")(x.asInstanceOf[js.Any])
+      inline def formTheme_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formTheme")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.icons")
       @js.native
       def icons: js.Any = js.native
-      @scala.inline
-      def icons_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icons")(x.asInstanceOf[js.Any])
+      inline def icons_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icons")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.onAppResize")
       @js.native
       def onAppResize: js.Any = js.native
-      @scala.inline
-      def onAppResize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onAppResize")(x.asInstanceOf[js.Any])
+      inline def onAppResize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onAppResize")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.phoneMaxWidth")
       @js.native
       def phoneMaxWidth: js.Any = js.native
-      @scala.inline
-      def phoneMaxWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phoneMaxWidth")(x.asInstanceOf[js.Any])
+      inline def phoneMaxWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phoneMaxWidth")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.rippleClassNames")
       @js.native
       def rippleClassNames: js.Any = js.native
-      @scala.inline
-      def rippleClassNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rippleClassNames")(x.asInstanceOf[js.Any])
+      inline def rippleClassNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rippleClassNames")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.rippleTimeout")
       @js.native
       def rippleTimeout: js.Any = js.native
-      @scala.inline
-      def rippleTimeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rippleTimeout")(x.asInstanceOf[js.Any])
+      inline def rippleTimeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rippleTimeout")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.tabletMaxWidth")
       @js.native
       def tabletMaxWidth: js.Any = js.native
-      @scala.inline
-      def tabletMaxWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabletMaxWidth")(x.asInstanceOf[js.Any])
+      inline def tabletMaxWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabletMaxWidth")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.tabletMinWidth")
       @js.native
       def tabletMinWidth: js.Any = js.native
-      @scala.inline
-      def tabletMinWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabletMinWidth")(x.asInstanceOf[js.Any])
+      inline def tabletMinWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabletMinWidth")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.tooltipDefaultDelay")
       @js.native
       def tooltipDefaultDelay: js.Any = js.native
-      @scala.inline
-      def tooltipDefaultDelay_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tooltipDefaultDelay")(x.asInstanceOf[js.Any])
+      inline def tooltipDefaultDelay_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tooltipDefaultDelay")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/Configuration", "Configuration.propTypes.tooltipDelayTimeout")
       @js.native
       def tooltipDelayTimeout: js.Any = js.native
-      @scala.inline
-      def tooltipDelayTimeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tooltipDelayTimeout")(x.asInstanceOf[js.Any])
+      inline def tooltipDelayTimeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tooltipDelayTimeout")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -198,65 +179,46 @@ object configurationMod {
   }
   object ConfigurationProps {
     
-    @scala.inline
-    def apply(): ConfigurationProps = {
+    inline def apply(): ConfigurationProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationProps]
     }
     
-    @scala.inline
-    implicit class ConfigurationPropsMutableBuilder[Self <: ConfigurationProps] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDefaultDir(value: WritingDirection | js.Function0[WritingDirection]): Self = StObject.set(x, "defaultDir", value.asInstanceOf[js.Any])
+      inline def setDefaultDir(value: WritingDirection | js.Function0[WritingDirection]): Self = StObject.set(x, "defaultDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultDirFunction0(value: () => WritingDirection): Self = StObject.set(x, "defaultDir", js.Any.fromFunction0(value))
+      inline def setDefaultDirFunction0(value: () => WritingDirection): Self = StObject.set(x, "defaultDir", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDefaultDirUndefined: Self = StObject.set(x, "defaultDir", js.undefined)
+      inline def setDefaultDirUndefined: Self = StObject.set(x, "defaultDir", js.undefined)
       
-      @scala.inline
-      def setDisableTooltipHoverMode(value: Boolean): Self = StObject.set(x, "disableTooltipHoverMode", value.asInstanceOf[js.Any])
+      inline def setDisableTooltipHoverMode(value: Boolean): Self = StObject.set(x, "disableTooltipHoverMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableTooltipHoverModeUndefined: Self = StObject.set(x, "disableTooltipHoverMode", js.undefined)
+      inline def setDisableTooltipHoverModeUndefined: Self = StObject.set(x, "disableTooltipHoverMode", js.undefined)
       
-      @scala.inline
-      def setFormTheme(value: FormThemeOptions): Self = StObject.set(x, "formTheme", value.asInstanceOf[js.Any])
+      inline def setFormTheme(value: FormThemeOptions): Self = StObject.set(x, "formTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormThemeUndefined: Self = StObject.set(x, "formTheme", js.undefined)
+      inline def setFormThemeUndefined: Self = StObject.set(x, "formTheme", js.undefined)
       
-      @scala.inline
-      def setIcons(value: ConfigurableIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: ConfigurableIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+      inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
-      @scala.inline
-      def setOnAppResize(value: (/* nextSize */ AppSize, /* lastSize */ AppSize) => Unit): Self = StObject.set(x, "onAppResize", js.Any.fromFunction2(value))
+      inline def setOnAppResize(value: (/* nextSize */ AppSize, /* lastSize */ AppSize) => Unit): Self = StObject.set(x, "onAppResize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnAppResizeUndefined: Self = StObject.set(x, "onAppResize", js.undefined)
+      inline def setOnAppResizeUndefined: Self = StObject.set(x, "onAppResize", js.undefined)
       
-      @scala.inline
-      def setTooltipDefaultDelay(value: Double): Self = StObject.set(x, "tooltipDefaultDelay", value.asInstanceOf[js.Any])
+      inline def setTooltipDefaultDelay(value: Double): Self = StObject.set(x, "tooltipDefaultDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipDefaultDelayUndefined: Self = StObject.set(x, "tooltipDefaultDelay", js.undefined)
+      inline def setTooltipDefaultDelayUndefined: Self = StObject.set(x, "tooltipDefaultDelay", js.undefined)
       
-      @scala.inline
-      def setTooltipDelayTimeout(value: Double): Self = StObject.set(x, "tooltipDelayTimeout", value.asInstanceOf[js.Any])
+      inline def setTooltipDelayTimeout(value: Double): Self = StObject.set(x, "tooltipDelayTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipDelayTimeoutUndefined: Self = StObject.set(x, "tooltipDelayTimeout", js.undefined)
+      inline def setTooltipDelayTimeoutUndefined: Self = StObject.set(x, "tooltipDelayTimeout", js.undefined)
     }
   }
 }

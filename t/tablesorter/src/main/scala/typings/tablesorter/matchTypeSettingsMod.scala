@@ -21,26 +21,20 @@ object matchTypeSettingsMod {
   }
   object MatchTypeSettings {
     
-    @scala.inline
-    def apply(): MatchTypeSettings = {
+    inline def apply(): MatchTypeSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MatchTypeSettings]
     }
     
-    @scala.inline
-    implicit class MatchTypeSettingsMutableBuilder[Self <: MatchTypeSettings] (val x: Self) extends AnyVal {
+    extension [Self <: MatchTypeSettings](x: Self) {
       
-      @scala.inline
-      def setInput(value: MatchType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: MatchType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setSelect(value: MatchType): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: MatchType): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     }
   }
 }

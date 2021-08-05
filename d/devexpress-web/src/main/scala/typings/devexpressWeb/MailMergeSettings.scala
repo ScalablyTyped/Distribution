@@ -31,25 +31,19 @@ trait MailMergeSettings extends StObject {
 }
 object MailMergeSettings {
   
-  @scala.inline
-  def apply(exportFrom: Double, exportRecordsCount: Double, mergeMode: MergeMode, range: MailMergeExportRange): MailMergeSettings = {
+  inline def apply(exportFrom: Double, exportRecordsCount: Double, mergeMode: MergeMode, range: MailMergeExportRange): MailMergeSettings = {
     val __obj = js.Dynamic.literal(exportFrom = exportFrom.asInstanceOf[js.Any], exportRecordsCount = exportRecordsCount.asInstanceOf[js.Any], mergeMode = mergeMode.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[MailMergeSettings]
   }
   
-  @scala.inline
-  implicit class MailMergeSettingsMutableBuilder[Self <: MailMergeSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MailMergeSettings](x: Self) {
     
-    @scala.inline
-    def setExportFrom(value: Double): Self = StObject.set(x, "exportFrom", value.asInstanceOf[js.Any])
+    inline def setExportFrom(value: Double): Self = StObject.set(x, "exportFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportRecordsCount(value: Double): Self = StObject.set(x, "exportRecordsCount", value.asInstanceOf[js.Any])
+    inline def setExportRecordsCount(value: Double): Self = StObject.set(x, "exportRecordsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeMode(value: MergeMode): Self = StObject.set(x, "mergeMode", value.asInstanceOf[js.Any])
+    inline def setMergeMode(value: MergeMode): Self = StObject.set(x, "mergeMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: MailMergeExportRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: MailMergeExportRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

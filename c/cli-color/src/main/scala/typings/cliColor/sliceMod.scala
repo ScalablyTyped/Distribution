@@ -6,14 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sliceMod {
   
-  @scala.inline
-  def apply(str: String): String = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(str: String, begin: Double): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], begin.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(str: String, begin: Double, end: Double): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(str: String, begin: Unit, end: Double): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(str: String): String = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(str: String, begin: Double): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], begin.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(str: String, begin: Double, end: Double): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(str: String, begin: Unit, end: Double): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("cli-color/slice", JSImport.Namespace)
   @js.native

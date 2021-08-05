@@ -58,73 +58,51 @@ trait AwsElasticsearchDomainDetails extends StObject {
 }
 object AwsElasticsearchDomainDetails {
   
-  @scala.inline
-  def apply(): AwsElasticsearchDomainDetails = {
+  inline def apply(): AwsElasticsearchDomainDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsElasticsearchDomainDetails]
   }
   
-  @scala.inline
-  implicit class AwsElasticsearchDomainDetailsMutableBuilder[Self <: AwsElasticsearchDomainDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsElasticsearchDomainDetails](x: Self) {
     
-    @scala.inline
-    def setAccessPolicies(value: NonEmptyString): Self = StObject.set(x, "AccessPolicies", value.asInstanceOf[js.Any])
+    inline def setAccessPolicies(value: NonEmptyString): Self = StObject.set(x, "AccessPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPoliciesUndefined: Self = StObject.set(x, "AccessPolicies", js.undefined)
+    inline def setAccessPoliciesUndefined: Self = StObject.set(x, "AccessPolicies", js.undefined)
     
-    @scala.inline
-    def setDomainEndpointOptions(value: AwsElasticsearchDomainDomainEndpointOptions): Self = StObject.set(x, "DomainEndpointOptions", value.asInstanceOf[js.Any])
+    inline def setDomainEndpointOptions(value: AwsElasticsearchDomainDomainEndpointOptions): Self = StObject.set(x, "DomainEndpointOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainEndpointOptionsUndefined: Self = StObject.set(x, "DomainEndpointOptions", js.undefined)
+    inline def setDomainEndpointOptionsUndefined: Self = StObject.set(x, "DomainEndpointOptions", js.undefined)
     
-    @scala.inline
-    def setDomainId(value: NonEmptyString): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
+    inline def setDomainId(value: NonEmptyString): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
+    inline def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: NonEmptyString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: NonEmptyString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
-    @scala.inline
-    def setElasticsearchVersion(value: NonEmptyString): Self = StObject.set(x, "ElasticsearchVersion", value.asInstanceOf[js.Any])
+    inline def setElasticsearchVersion(value: NonEmptyString): Self = StObject.set(x, "ElasticsearchVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticsearchVersionUndefined: Self = StObject.set(x, "ElasticsearchVersion", js.undefined)
+    inline def setElasticsearchVersionUndefined: Self = StObject.set(x, "ElasticsearchVersion", js.undefined)
     
-    @scala.inline
-    def setEncryptionAtRestOptions(value: AwsElasticsearchDomainEncryptionAtRestOptions): Self = StObject.set(x, "EncryptionAtRestOptions", value.asInstanceOf[js.Any])
+    inline def setEncryptionAtRestOptions(value: AwsElasticsearchDomainEncryptionAtRestOptions): Self = StObject.set(x, "EncryptionAtRestOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionAtRestOptionsUndefined: Self = StObject.set(x, "EncryptionAtRestOptions", js.undefined)
+    inline def setEncryptionAtRestOptionsUndefined: Self = StObject.set(x, "EncryptionAtRestOptions", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: NonEmptyString): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: NonEmptyString): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
-    @scala.inline
-    def setEndpoints(value: FieldMap): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: FieldMap): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
+    inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
-    @scala.inline
-    def setNodeToNodeEncryptionOptions(value: AwsElasticsearchDomainNodeToNodeEncryptionOptions): Self = StObject.set(x, "NodeToNodeEncryptionOptions", value.asInstanceOf[js.Any])
+    inline def setNodeToNodeEncryptionOptions(value: AwsElasticsearchDomainNodeToNodeEncryptionOptions): Self = StObject.set(x, "NodeToNodeEncryptionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeToNodeEncryptionOptionsUndefined: Self = StObject.set(x, "NodeToNodeEncryptionOptions", js.undefined)
+    inline def setNodeToNodeEncryptionOptionsUndefined: Self = StObject.set(x, "NodeToNodeEncryptionOptions", js.undefined)
     
-    @scala.inline
-    def setVPCOptions(value: AwsElasticsearchDomainVPCOptions): Self = StObject.set(x, "VPCOptions", value.asInstanceOf[js.Any])
+    inline def setVPCOptions(value: AwsElasticsearchDomainVPCOptions): Self = StObject.set(x, "VPCOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCOptionsUndefined: Self = StObject.set(x, "VPCOptions", js.undefined)
+    inline def setVPCOptionsUndefined: Self = StObject.set(x, "VPCOptions", js.undefined)
   }
 }

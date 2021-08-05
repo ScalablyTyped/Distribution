@@ -18,8 +18,7 @@ trait FieldRatingScaleQuestionAnswer
 }
 object FieldRatingScaleQuestionAnswer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -34,19 +33,14 @@ object FieldRatingScaleQuestionAnswer {
     __obj.asInstanceOf[FieldRatingScaleQuestionAnswer]
   }
   
-  @scala.inline
-  implicit class FieldRatingScaleQuestionAnswerMutableBuilder[Self <: FieldRatingScaleQuestionAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: FieldRatingScaleQuestionAnswer](x: Self) {
     
-    @scala.inline
-    def setGet_answer(value: () => Double): Self = StObject.set(x, "get_answer", js.Any.fromFunction0(value))
+    inline def setGet_answer(value: () => Double): Self = StObject.set(x, "get_answer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_question(value: () => String): Self = StObject.set(x, "get_question", js.Any.fromFunction0(value))
+    inline def setGet_question(value: () => String): Self = StObject.set(x, "get_question", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_answer(value: Double => Unit): Self = StObject.set(x, "set_answer", js.Any.fromFunction1(value))
+    inline def setSet_answer(value: Double => Unit): Self = StObject.set(x, "set_answer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_question(value: String => Unit): Self = StObject.set(x, "set_question", js.Any.fromFunction1(value))
+    inline def setSet_question(value: String => Unit): Self = StObject.set(x, "set_question", js.Any.fromFunction1(value))
   }
 }

@@ -12,8 +12,7 @@ trait PrepareRenameParams
      with WorkDoneProgressParams
 object PrepareRenameParams {
   
-  @scala.inline
-  def apply(position: Position, textDocument: TextDocumentIdentifier): PrepareRenameParams = {
+  inline def apply(position: Position, textDocument: TextDocumentIdentifier): PrepareRenameParams = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrepareRenameParams]
   }

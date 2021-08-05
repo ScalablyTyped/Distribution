@@ -18,25 +18,19 @@ trait IonImg extends StObject {
 }
 object IonImg {
   
-  @scala.inline
-  def apply(): IonImg = {
+  inline def apply(): IonImg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonImg]
   }
   
-  @scala.inline
-  implicit class IonImgMutableBuilder[Self <: IonImg] (val x: Self) extends AnyVal {
+  extension [Self <: IonImg](x: Self) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
   }
 }

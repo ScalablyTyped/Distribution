@@ -11,16 +11,13 @@ trait PickImplcacheCache extends StObject {
 }
 object PickImplcacheCache {
   
-  @scala.inline
-  def apply(cache: String): PickImplcacheCache = {
+  inline def apply(cache: String): PickImplcacheCache = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcacheCache]
   }
   
-  @scala.inline
-  implicit class PickImplcacheCacheMutableBuilder[Self <: PickImplcacheCache] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplcacheCache](x: Self) {
     
-    @scala.inline
-    def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
   }
 }

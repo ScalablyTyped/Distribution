@@ -430,8 +430,7 @@ trait XEnhancedCustomShapeDefaulter
 }
 object XEnhancedCustomShapeDefaulter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createCustomShapeDefaults: String => Unit,
     queryInterface: `type` => js.Any,
@@ -441,10 +440,8 @@ object XEnhancedCustomShapeDefaulter {
     __obj.asInstanceOf[XEnhancedCustomShapeDefaulter]
   }
   
-  @scala.inline
-  implicit class XEnhancedCustomShapeDefaulterMutableBuilder[Self <: XEnhancedCustomShapeDefaulter] (val x: Self) extends AnyVal {
+  extension [Self <: XEnhancedCustomShapeDefaulter](x: Self) {
     
-    @scala.inline
-    def setCreateCustomShapeDefaults(value: String => Unit): Self = StObject.set(x, "createCustomShapeDefaults", js.Any.fromFunction1(value))
+    inline def setCreateCustomShapeDefaults(value: String => Unit): Self = StObject.set(x, "createCustomShapeDefaults", js.Any.fromFunction1(value))
   }
 }

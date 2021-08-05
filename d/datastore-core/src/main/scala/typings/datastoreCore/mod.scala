@@ -52,14 +52,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[Value](store: Adapter[Value], shard: Shard): js.Promise[ShardingDatastore[Value]] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(store.asInstanceOf[js.Any], shard.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ShardingDatastore[Value]]]
+    inline def create[Value](store: Adapter[Value], shard: Shard): js.Promise[ShardingDatastore[Value]] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(store.asInstanceOf[js.Any], shard.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ShardingDatastore[Value]]]
     
-    @scala.inline
-    def createOrOpen[Value](store: Adapter[Value], shard: Shard): js.Promise[ShardingDatastore[Value]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrOpen")(store.asInstanceOf[js.Any], shard.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ShardingDatastore[Value]]]
+    inline def createOrOpen[Value](store: Adapter[Value], shard: Shard): js.Promise[ShardingDatastore[Value]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrOpen")(store.asInstanceOf[js.Any], shard.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ShardingDatastore[Value]]]
     
-    @scala.inline
-    def open[Value](store: Adapter[Value]): js.Promise[ShardingDatastore[Value]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(store.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ShardingDatastore[Value]]]
+    inline def open[Value](store: Adapter[Value]): js.Promise[ShardingDatastore[Value]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(store.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ShardingDatastore[Value]]]
   }
   
   @JSImport("datastore-core", "TieredDatastore")
@@ -120,11 +117,9 @@ object mod {
       def this(length: Double) = this()
     }
     
-    @scala.inline
-    def parseShardFun(str: String): Shard = ^.asInstanceOf[js.Dynamic].applyDynamic("parseShardFun")(str.asInstanceOf[js.Any]).asInstanceOf[Shard]
+    inline def parseShardFun(str: String): Shard = ^.asInstanceOf[js.Dynamic].applyDynamic("parseShardFun")(str.asInstanceOf[js.Any]).asInstanceOf[Shard]
     
-    @scala.inline
-    def readShardFun(path: String, store: Adapter[Buffer]): js.Promise[Shard] = (^.asInstanceOf[js.Dynamic].applyDynamic("readShardFun")(path.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Shard]]
+    inline def readShardFun(path: String, store: Adapter[Buffer]): js.Promise[Shard] = (^.asInstanceOf[js.Dynamic].applyDynamic("readShardFun")(path.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Shard]]
     
     @JSImport("datastore-core", "shard.readme")
     @js.native
@@ -145,20 +140,16 @@ object mod {
   }
   object Mount {
     
-    @scala.inline
-    def apply[Value](datastore: Adapter[Value], prefix: Key): Mount[Value] = {
+    inline def apply[Value](datastore: Adapter[Value], prefix: Key): Mount[Value] = {
       val __obj = js.Dynamic.literal(datastore = datastore.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[Mount[Value]]
     }
     
-    @scala.inline
-    implicit class MountMutableBuilder[Self <: Mount[?], Value] (val x: Self & Mount[Value]) extends AnyVal {
+    extension [Self <: Mount[?], Value](x: Self & Mount[Value]) {
       
-      @scala.inline
-      def setDatastore(value: Adapter[Value]): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+      inline def setDatastore(value: Adapter[Value]): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: Key): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: Key): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,20 +175,16 @@ object mod {
   }
   object Transform {
     
-    @scala.inline
-    def apply(convert: Key => Key, invert: Key => Key): Transform = {
+    inline def apply(convert: Key => Key, invert: Key => Key): Transform = {
       val __obj = js.Dynamic.literal(convert = js.Any.fromFunction1(convert), invert = js.Any.fromFunction1(invert))
       __obj.asInstanceOf[Transform]
     }
     
-    @scala.inline
-    implicit class TransformMutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
+    extension [Self <: Transform](x: Self) {
       
-      @scala.inline
-      def setConvert(value: Key => Key): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
+      inline def setConvert(value: Key => Key): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInvert(value: Key => Key): Self = StObject.set(x, "invert", js.Any.fromFunction1(value))
+      inline def setInvert(value: Key => Key): Self = StObject.set(x, "invert", js.Any.fromFunction1(value))
     }
   }
 }

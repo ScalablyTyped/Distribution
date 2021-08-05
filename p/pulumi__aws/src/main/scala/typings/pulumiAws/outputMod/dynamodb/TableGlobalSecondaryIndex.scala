@@ -50,49 +50,35 @@ trait TableGlobalSecondaryIndex extends StObject {
 }
 object TableGlobalSecondaryIndex {
   
-  @scala.inline
-  def apply(hashKey: String, name: String, projectionType: String): TableGlobalSecondaryIndex = {
+  inline def apply(hashKey: String, name: String, projectionType: String): TableGlobalSecondaryIndex = {
     val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectionType = projectionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableGlobalSecondaryIndex]
   }
   
-  @scala.inline
-  implicit class TableGlobalSecondaryIndexMutableBuilder[Self <: TableGlobalSecondaryIndex] (val x: Self) extends AnyVal {
+  extension [Self <: TableGlobalSecondaryIndex](x: Self) {
     
-    @scala.inline
-    def setHashKey(value: String): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
+    inline def setHashKey(value: String): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonKeyAttributes(value: js.Array[String]): Self = StObject.set(x, "nonKeyAttributes", value.asInstanceOf[js.Any])
+    inline def setNonKeyAttributes(value: js.Array[String]): Self = StObject.set(x, "nonKeyAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonKeyAttributesUndefined: Self = StObject.set(x, "nonKeyAttributes", js.undefined)
+    inline def setNonKeyAttributesUndefined: Self = StObject.set(x, "nonKeyAttributes", js.undefined)
     
-    @scala.inline
-    def setNonKeyAttributesVarargs(value: String*): Self = StObject.set(x, "nonKeyAttributes", js.Array(value :_*))
+    inline def setNonKeyAttributesVarargs(value: String*): Self = StObject.set(x, "nonKeyAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setProjectionType(value: String): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
+    inline def setProjectionType(value: String): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeKey(value: String): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
+    inline def setRangeKey(value: String): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
+    inline def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
     
-    @scala.inline
-    def setReadCapacity(value: Double): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
+    inline def setReadCapacity(value: Double): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadCapacityUndefined: Self = StObject.set(x, "readCapacity", js.undefined)
+    inline def setReadCapacityUndefined: Self = StObject.set(x, "readCapacity", js.undefined)
     
-    @scala.inline
-    def setWriteCapacity(value: Double): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
+    inline def setWriteCapacity(value: Double): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteCapacityUndefined: Self = StObject.set(x, "writeCapacity", js.undefined)
+    inline def setWriteCapacityUndefined: Self = StObject.set(x, "writeCapacity", js.undefined)
   }
 }

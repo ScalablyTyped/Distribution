@@ -8,21 +8,17 @@ object maximMazurokGapiClientSasportalStrings {
   
   @js.native
   sealed trait SasPortalOperation extends StObject
-  @scala.inline
-  def SasPortalOperation: SasPortalOperation = "SasPortalOperation".asInstanceOf[SasPortalOperation]
+  inline def SasPortalOperation: SasPortalOperation = "SasPortalOperation".asInstanceOf[SasPortalOperation]
   
   @js.native
   sealed trait SasPortalStatus extends StObject
-  @scala.inline
-  def SasPortalStatus: SasPortalStatus = "SasPortalStatus".asInstanceOf[SasPortalStatus]
+  inline def SasPortalStatus: SasPortalStatus = "SasPortalStatus".asInstanceOf[SasPortalStatus]
   
   @js.native
   sealed trait sasportal extends StObject
-  @scala.inline
-  def sasportal: sasportal = "sasportal".asInstanceOf[sasportal]
+  inline def sasportal: sasportal = "sasportal".asInstanceOf[sasportal]
   
   @js.native
   sealed trait v1alpha1 extends StObject
-  @scala.inline
-  def v1alpha1: v1alpha1 = "v1alpha1".asInstanceOf[v1alpha1]
+  inline def v1alpha1: v1alpha1 = "v1alpha1".asInstanceOf[v1alpha1]
 }

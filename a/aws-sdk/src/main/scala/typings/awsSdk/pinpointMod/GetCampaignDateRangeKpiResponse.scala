@@ -10,16 +10,13 @@ trait GetCampaignDateRangeKpiResponse extends StObject {
 }
 object GetCampaignDateRangeKpiResponse {
   
-  @scala.inline
-  def apply(CampaignDateRangeKpiResponse: CampaignDateRangeKpiResponse): GetCampaignDateRangeKpiResponse = {
+  inline def apply(CampaignDateRangeKpiResponse: CampaignDateRangeKpiResponse): GetCampaignDateRangeKpiResponse = {
     val __obj = js.Dynamic.literal(CampaignDateRangeKpiResponse = CampaignDateRangeKpiResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCampaignDateRangeKpiResponse]
   }
   
-  @scala.inline
-  implicit class GetCampaignDateRangeKpiResponseMutableBuilder[Self <: GetCampaignDateRangeKpiResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCampaignDateRangeKpiResponse](x: Self) {
     
-    @scala.inline
-    def setCampaignDateRangeKpiResponse(value: CampaignDateRangeKpiResponse): Self = StObject.set(x, "CampaignDateRangeKpiResponse", value.asInstanceOf[js.Any])
+    inline def setCampaignDateRangeKpiResponse(value: CampaignDateRangeKpiResponse): Self = StObject.set(x, "CampaignDateRangeKpiResponse", value.asInstanceOf[js.Any])
   }
 }

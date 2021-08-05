@@ -22,25 +22,19 @@ trait SchemaCounterStructuredNameAndMetadata extends StObject {
 }
 object SchemaCounterStructuredNameAndMetadata {
   
-  @scala.inline
-  def apply(): SchemaCounterStructuredNameAndMetadata = {
+  inline def apply(): SchemaCounterStructuredNameAndMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCounterStructuredNameAndMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaCounterStructuredNameAndMetadataMutableBuilder[Self <: SchemaCounterStructuredNameAndMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCounterStructuredNameAndMetadata](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: SchemaCounterMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaCounterMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: SchemaCounterStructuredName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SchemaCounterStructuredName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

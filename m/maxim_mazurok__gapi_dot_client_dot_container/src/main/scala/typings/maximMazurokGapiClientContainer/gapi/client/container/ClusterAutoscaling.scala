@@ -20,43 +20,31 @@ trait ClusterAutoscaling extends StObject {
 }
 object ClusterAutoscaling {
   
-  @scala.inline
-  def apply(): ClusterAutoscaling = {
+  inline def apply(): ClusterAutoscaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterAutoscaling]
   }
   
-  @scala.inline
-  implicit class ClusterAutoscalingMutableBuilder[Self <: ClusterAutoscaling] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterAutoscaling](x: Self) {
     
-    @scala.inline
-    def setAutoprovisioningLocations(value: js.Array[String]): Self = StObject.set(x, "autoprovisioningLocations", value.asInstanceOf[js.Any])
+    inline def setAutoprovisioningLocations(value: js.Array[String]): Self = StObject.set(x, "autoprovisioningLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoprovisioningLocationsUndefined: Self = StObject.set(x, "autoprovisioningLocations", js.undefined)
+    inline def setAutoprovisioningLocationsUndefined: Self = StObject.set(x, "autoprovisioningLocations", js.undefined)
     
-    @scala.inline
-    def setAutoprovisioningLocationsVarargs(value: String*): Self = StObject.set(x, "autoprovisioningLocations", js.Array(value :_*))
+    inline def setAutoprovisioningLocationsVarargs(value: String*): Self = StObject.set(x, "autoprovisioningLocations", js.Array(value :_*))
     
-    @scala.inline
-    def setAutoprovisioningNodePoolDefaults(value: AutoprovisioningNodePoolDefaults): Self = StObject.set(x, "autoprovisioningNodePoolDefaults", value.asInstanceOf[js.Any])
+    inline def setAutoprovisioningNodePoolDefaults(value: AutoprovisioningNodePoolDefaults): Self = StObject.set(x, "autoprovisioningNodePoolDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoprovisioningNodePoolDefaultsUndefined: Self = StObject.set(x, "autoprovisioningNodePoolDefaults", js.undefined)
+    inline def setAutoprovisioningNodePoolDefaultsUndefined: Self = StObject.set(x, "autoprovisioningNodePoolDefaults", js.undefined)
     
-    @scala.inline
-    def setEnableNodeAutoprovisioning(value: Boolean): Self = StObject.set(x, "enableNodeAutoprovisioning", value.asInstanceOf[js.Any])
+    inline def setEnableNodeAutoprovisioning(value: Boolean): Self = StObject.set(x, "enableNodeAutoprovisioning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableNodeAutoprovisioningUndefined: Self = StObject.set(x, "enableNodeAutoprovisioning", js.undefined)
+    inline def setEnableNodeAutoprovisioningUndefined: Self = StObject.set(x, "enableNodeAutoprovisioning", js.undefined)
     
-    @scala.inline
-    def setResourceLimits(value: js.Array[ResourceLimit]): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
+    inline def setResourceLimits(value: js.Array[ResourceLimit]): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
+    inline def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
     
-    @scala.inline
-    def setResourceLimitsVarargs(value: ResourceLimit*): Self = StObject.set(x, "resourceLimits", js.Array(value :_*))
+    inline def setResourceLimitsVarargs(value: ResourceLimit*): Self = StObject.set(x, "resourceLimits", js.Array(value :_*))
   }
 }

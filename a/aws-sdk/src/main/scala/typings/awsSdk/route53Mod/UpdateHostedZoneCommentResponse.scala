@@ -13,16 +13,13 @@ trait UpdateHostedZoneCommentResponse extends StObject {
 }
 object UpdateHostedZoneCommentResponse {
   
-  @scala.inline
-  def apply(HostedZone: HostedZone): UpdateHostedZoneCommentResponse = {
+  inline def apply(HostedZone: HostedZone): UpdateHostedZoneCommentResponse = {
     val __obj = js.Dynamic.literal(HostedZone = HostedZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateHostedZoneCommentResponse]
   }
   
-  @scala.inline
-  implicit class UpdateHostedZoneCommentResponseMutableBuilder[Self <: UpdateHostedZoneCommentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateHostedZoneCommentResponse](x: Self) {
     
-    @scala.inline
-    def setHostedZone(value: HostedZone): Self = StObject.set(x, "HostedZone", value.asInstanceOf[js.Any])
+    inline def setHostedZone(value: HostedZone): Self = StObject.set(x, "HostedZone", value.asInstanceOf[js.Any])
   }
 }

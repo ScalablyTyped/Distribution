@@ -16,16 +16,13 @@ trait ContentDialogHideInfo extends StObject {
 }
 object ContentDialogHideInfo {
   
-  @scala.inline
-  def apply(result: String): ContentDialogHideInfo = {
+  inline def apply(result: String): ContentDialogHideInfo = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentDialogHideInfo]
   }
   
-  @scala.inline
-  implicit class ContentDialogHideInfoMutableBuilder[Self <: ContentDialogHideInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ContentDialogHideInfo](x: Self) {
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

@@ -68,64 +68,45 @@ trait CapabilityStatementMessagingEvent
 }
 object CapabilityStatementMessagingEvent {
   
-  @scala.inline
-  def apply(code: Coding, focus: code, mode: code, request: Reference, response: Reference): CapabilityStatementMessagingEvent = {
+  inline def apply(code: Coding, focus: code, mode: code, request: Reference, response: Reference): CapabilityStatementMessagingEvent = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapabilityStatementMessagingEvent]
   }
   
-  @scala.inline
-  implicit class CapabilityStatementMessagingEventMutableBuilder[Self <: CapabilityStatementMessagingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CapabilityStatementMessagingEvent](x: Self) {
     
-    @scala.inline
-    def setCategory(value: code): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: code): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setCode(value: Coding): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Coding): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setFocus(value: code): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: code): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: Reference): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Reference): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: Reference): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Reference): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_category(value: Element): Self = StObject.set(x, "_category", value.asInstanceOf[js.Any])
+    inline def set_category(value: Element): Self = StObject.set(x, "_category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_categoryUndefined: Self = StObject.set(x, "_category", js.undefined)
+    inline def set_categoryUndefined: Self = StObject.set(x, "_category", js.undefined)
     
-    @scala.inline
-    def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
+    inline def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
+    inline def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
     
-    @scala.inline
-    def set_focus(value: Element): Self = StObject.set(x, "_focus", value.asInstanceOf[js.Any])
+    inline def set_focus(value: Element): Self = StObject.set(x, "_focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_focusUndefined: Self = StObject.set(x, "_focus", js.undefined)
+    inline def set_focusUndefined: Self = StObject.set(x, "_focus", js.undefined)
     
-    @scala.inline
-    def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
+    inline def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
+    inline def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
   }
 }

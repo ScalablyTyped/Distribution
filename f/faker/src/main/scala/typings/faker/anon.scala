@@ -24,26 +24,20 @@ object anon {
   }
   object Abbr {
     
-    @scala.inline
-    def apply(): Abbr = {
+    inline def apply(): Abbr = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Abbr]
     }
     
-    @scala.inline
-    implicit class AbbrMutableBuilder[Self <: Abbr] (val x: Self) extends AnyVal {
+    extension [Self <: Abbr](x: Self) {
       
-      @scala.inline
-      def setAbbr(value: Boolean): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
+      inline def setAbbr(value: Boolean): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbbrUndefined: Self = StObject.set(x, "abbr", js.undefined)
+      inline def setAbbrUndefined: Self = StObject.set(x, "abbr", js.undefined)
       
-      @scala.inline
-      def setContext(value: Boolean): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Boolean): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     }
   }
   
@@ -63,8 +57,7 @@ object anon {
   }
   object Abbreviation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abbreviation: () => String,
       adjective: () => String,
       ingverb: () => String,
@@ -76,26 +69,19 @@ object anon {
       __obj.asInstanceOf[Abbreviation]
     }
     
-    @scala.inline
-    implicit class AbbreviationMutableBuilder[Self <: Abbreviation] (val x: Self) extends AnyVal {
+    extension [Self <: Abbreviation](x: Self) {
       
-      @scala.inline
-      def setAbbreviation(value: () => String): Self = StObject.set(x, "abbreviation", js.Any.fromFunction0(value))
+      inline def setAbbreviation(value: () => String): Self = StObject.set(x, "abbreviation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAdjective(value: () => String): Self = StObject.set(x, "adjective", js.Any.fromFunction0(value))
+      inline def setAdjective(value: () => String): Self = StObject.set(x, "adjective", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIngverb(value: () => String): Self = StObject.set(x, "ingverb", js.Any.fromFunction0(value))
+      inline def setIngverb(value: () => String): Self = StObject.set(x, "ingverb", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNoun(value: () => String): Self = StObject.set(x, "noun", js.Any.fromFunction0(value))
+      inline def setNoun(value: () => String): Self = StObject.set(x, "noun", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPhrase(value: () => String): Self = StObject.set(x, "phrase", js.Any.fromFunction0(value))
+      inline def setPhrase(value: () => String): Self = StObject.set(x, "phrase", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVerb(value: () => String): Self = StObject.set(x, "verb", js.Any.fromFunction0(value))
+      inline def setVerb(value: () => String): Self = StObject.set(x, "verb", js.Any.fromFunction0(value))
     }
   }
   
@@ -587,27 +573,21 @@ object anon {
   }
   object Collation {
     
-    @scala.inline
-    def apply(collation: () => String, column: () => String, engine: () => String, `type`: () => String): Collation = {
+    inline def apply(collation: () => String, column: () => String, engine: () => String, `type`: () => String): Collation = {
       val __obj = js.Dynamic.literal(collation = js.Any.fromFunction0(collation), column = js.Any.fromFunction0(column), engine = js.Any.fromFunction0(engine))
       __obj.updateDynamic("type")(js.Any.fromFunction0(`type`))
       __obj.asInstanceOf[Collation]
     }
     
-    @scala.inline
-    implicit class CollationMutableBuilder[Self <: Collation] (val x: Self) extends AnyVal {
+    extension [Self <: Collation](x: Self) {
       
-      @scala.inline
-      def setCollation(value: () => String): Self = StObject.set(x, "collation", js.Any.fromFunction0(value))
+      inline def setCollation(value: () => String): Self = StObject.set(x, "collation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setColumn(value: () => String): Self = StObject.set(x, "column", js.Any.fromFunction0(value))
+      inline def setColumn(value: () => String): Self = StObject.set(x, "column", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEngine(value: () => String): Self = StObject.set(x, "engine", js.Any.fromFunction0(value))
+      inline def setEngine(value: () => String): Self = StObject.set(x, "engine", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: () => String): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+      inline def setType(value: () => String): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
     }
   }
   
@@ -726,26 +706,20 @@ object anon {
   }
   object Count {
     
-    @scala.inline
-    def apply(): Count = {
+    inline def apply(): Count = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Count]
     }
     
-    @scala.inline
-    implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
+    extension [Self <: Count](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setUpcase(value: Boolean): Self = StObject.set(x, "upcase", value.asInstanceOf[js.Any])
+      inline def setUpcase(value: Boolean): Self = StObject.set(x, "upcase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpcaseUndefined: Self = StObject.set(x, "upcase", js.undefined)
+      inline def setUpcaseUndefined: Self = StObject.set(x, "upcase", js.undefined)
     }
   }
   
@@ -803,8 +777,7 @@ object anon {
   }
   object Fuel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: () => String,
       fuel: () => String,
       manufacturer: () => String,
@@ -818,29 +791,21 @@ object anon {
       __obj.asInstanceOf[Fuel]
     }
     
-    @scala.inline
-    implicit class FuelMutableBuilder[Self <: Fuel] (val x: Self) extends AnyVal {
+    extension [Self <: Fuel](x: Self) {
       
-      @scala.inline
-      def setColor(value: () => String): Self = StObject.set(x, "color", js.Any.fromFunction0(value))
+      inline def setColor(value: () => String): Self = StObject.set(x, "color", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFuel(value: () => String): Self = StObject.set(x, "fuel", js.Any.fromFunction0(value))
+      inline def setFuel(value: () => String): Self = StObject.set(x, "fuel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setManufacturer(value: () => String): Self = StObject.set(x, "manufacturer", js.Any.fromFunction0(value))
+      inline def setManufacturer(value: () => String): Self = StObject.set(x, "manufacturer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setModel(value: () => String): Self = StObject.set(x, "model", js.Any.fromFunction0(value))
+      inline def setModel(value: () => String): Self = StObject.set(x, "model", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: () => String): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+      inline def setType(value: () => String): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVehicle(value: () => String): Self = StObject.set(x, "vehicle", js.Any.fromFunction0(value))
+      inline def setVehicle(value: () => String): Self = StObject.set(x, "vehicle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVin(value: () => String): Self = StObject.set(x, "vin", js.Any.fromFunction0(value))
+      inline def setVin(value: () => String): Self = StObject.set(x, "vin", js.Any.fromFunction0(value))
     }
   }
   
@@ -850,17 +815,14 @@ object anon {
   }
   object Genre {
     
-    @scala.inline
-    def apply(genre: () => String): Genre = {
+    inline def apply(genre: () => String): Genre = {
       val __obj = js.Dynamic.literal(genre = js.Any.fromFunction0(genre))
       __obj.asInstanceOf[Genre]
     }
     
-    @scala.inline
-    implicit class GenreMutableBuilder[Self <: Genre] (val x: Self) extends AnyVal {
+    extension [Self <: Genre](x: Self) {
       
-      @scala.inline
-      def setGenre(value: () => String): Self = StObject.set(x, "genre", js.Any.fromFunction0(value))
+      inline def setGenre(value: () => String): Self = StObject.set(x, "genre", js.Any.fromFunction0(value))
     }
   }
   
@@ -909,32 +871,24 @@ object anon {
   }
   object Max {
     
-    @scala.inline
-    def apply(): Max = {
+    inline def apply(): Max = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Max]
     }
     
-    @scala.inline
-    implicit class MaxMutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+    extension [Self <: Max](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     }
   }
   
@@ -944,17 +898,14 @@ object anon {
   }
   object Merge {
     
-    @scala.inline
-    def apply(merge: Boolean): Merge = {
+    inline def apply(merge: Boolean): Merge = {
       val __obj = js.Dynamic.literal(merge = merge.asInstanceOf[js.Any])
       __obj.asInstanceOf[Merge]
     }
     
-    @scala.inline
-    implicit class MergeMutableBuilder[Self <: Merge] (val x: Self) extends AnyVal {
+    extension [Self <: Merge](x: Self) {
       
-      @scala.inline
-      def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+      inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     }
   }
   

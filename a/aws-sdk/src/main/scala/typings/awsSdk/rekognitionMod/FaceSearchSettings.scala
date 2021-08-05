@@ -18,25 +18,19 @@ trait FaceSearchSettings extends StObject {
 }
 object FaceSearchSettings {
   
-  @scala.inline
-  def apply(): FaceSearchSettings = {
+  inline def apply(): FaceSearchSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FaceSearchSettings]
   }
   
-  @scala.inline
-  implicit class FaceSearchSettingsMutableBuilder[Self <: FaceSearchSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FaceSearchSettings](x: Self) {
     
-    @scala.inline
-    def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
+    inline def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionIdUndefined: Self = StObject.set(x, "CollectionId", js.undefined)
+    inline def setCollectionIdUndefined: Self = StObject.set(x, "CollectionId", js.undefined)
     
-    @scala.inline
-    def setFaceMatchThreshold(value: Percent): Self = StObject.set(x, "FaceMatchThreshold", value.asInstanceOf[js.Any])
+    inline def setFaceMatchThreshold(value: Percent): Self = StObject.set(x, "FaceMatchThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceMatchThresholdUndefined: Self = StObject.set(x, "FaceMatchThreshold", js.undefined)
+    inline def setFaceMatchThresholdUndefined: Self = StObject.set(x, "FaceMatchThreshold", js.undefined)
   }
 }

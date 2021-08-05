@@ -38,49 +38,35 @@ trait ListAccountSettingsRequest extends StObject {
 }
 object ListAccountSettingsRequest {
   
-  @scala.inline
-  def apply(): ListAccountSettingsRequest = {
+  inline def apply(): ListAccountSettingsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAccountSettingsRequest]
   }
   
-  @scala.inline
-  implicit class ListAccountSettingsRequestMutableBuilder[Self <: ListAccountSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAccountSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setEffectiveSettings(value: Boolean): Self = StObject.set(x, "effectiveSettings", value.asInstanceOf[js.Any])
+    inline def setEffectiveSettings(value: Boolean): Self = StObject.set(x, "effectiveSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveSettingsUndefined: Self = StObject.set(x, "effectiveSettings", js.undefined)
+    inline def setEffectiveSettingsUndefined: Self = StObject.set(x, "effectiveSettings", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setName(value: SettingName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SettingName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPrincipalArn(value: String): Self = StObject.set(x, "principalArn", value.asInstanceOf[js.Any])
+    inline def setPrincipalArn(value: String): Self = StObject.set(x, "principalArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalArnUndefined: Self = StObject.set(x, "principalArn", js.undefined)
+    inline def setPrincipalArnUndefined: Self = StObject.set(x, "principalArn", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

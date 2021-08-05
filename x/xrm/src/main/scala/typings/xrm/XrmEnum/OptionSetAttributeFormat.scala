@@ -17,9 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionSetAttributeFormat extends StObject
 object OptionSetAttributeFormat {
   
-  @scala.inline
-  def Language: language = "language".asInstanceOf[language]
+  inline def Language: language = "language".asInstanceOf[language]
   
-  @scala.inline
-  def TimeZone: timezone = "timezone".asInstanceOf[timezone]
+  inline def TimeZone: timezone = "timezone".asInstanceOf[timezone]
 }

@@ -93,23 +93,18 @@ object srcMessageCacheMod {
   }
   object CacheEntry {
     
-    @scala.inline
-    def apply(msgID: String, topics: js.Array[String]): CacheEntry = {
+    inline def apply(msgID: String, topics: js.Array[String]): CacheEntry = {
       val __obj = js.Dynamic.literal(msgID = msgID.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheEntry]
     }
     
-    @scala.inline
-    implicit class CacheEntryMutableBuilder[Self <: CacheEntry] (val x: Self) extends AnyVal {
+    extension [Self <: CacheEntry](x: Self) {
       
-      @scala.inline
-      def setMsgID(value: String): Self = StObject.set(x, "msgID", value.asInstanceOf[js.Any])
+      inline def setMsgID(value: String): Self = StObject.set(x, "msgID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
     }
   }
 }

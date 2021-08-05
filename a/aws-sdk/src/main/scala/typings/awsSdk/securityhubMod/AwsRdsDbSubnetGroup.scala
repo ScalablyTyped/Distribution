@@ -38,52 +38,37 @@ trait AwsRdsDbSubnetGroup extends StObject {
 }
 object AwsRdsDbSubnetGroup {
   
-  @scala.inline
-  def apply(): AwsRdsDbSubnetGroup = {
+  inline def apply(): AwsRdsDbSubnetGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRdsDbSubnetGroup]
   }
   
-  @scala.inline
-  implicit class AwsRdsDbSubnetGroupMutableBuilder[Self <: AwsRdsDbSubnetGroup] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRdsDbSubnetGroup](x: Self) {
     
-    @scala.inline
-    def setDbSubnetGroupArn(value: NonEmptyString): Self = StObject.set(x, "DbSubnetGroupArn", value.asInstanceOf[js.Any])
+    inline def setDbSubnetGroupArn(value: NonEmptyString): Self = StObject.set(x, "DbSubnetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbSubnetGroupArnUndefined: Self = StObject.set(x, "DbSubnetGroupArn", js.undefined)
+    inline def setDbSubnetGroupArnUndefined: Self = StObject.set(x, "DbSubnetGroupArn", js.undefined)
     
-    @scala.inline
-    def setDbSubnetGroupDescription(value: NonEmptyString): Self = StObject.set(x, "DbSubnetGroupDescription", value.asInstanceOf[js.Any])
+    inline def setDbSubnetGroupDescription(value: NonEmptyString): Self = StObject.set(x, "DbSubnetGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbSubnetGroupDescriptionUndefined: Self = StObject.set(x, "DbSubnetGroupDescription", js.undefined)
+    inline def setDbSubnetGroupDescriptionUndefined: Self = StObject.set(x, "DbSubnetGroupDescription", js.undefined)
     
-    @scala.inline
-    def setDbSubnetGroupName(value: NonEmptyString): Self = StObject.set(x, "DbSubnetGroupName", value.asInstanceOf[js.Any])
+    inline def setDbSubnetGroupName(value: NonEmptyString): Self = StObject.set(x, "DbSubnetGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbSubnetGroupNameUndefined: Self = StObject.set(x, "DbSubnetGroupName", js.undefined)
+    inline def setDbSubnetGroupNameUndefined: Self = StObject.set(x, "DbSubnetGroupName", js.undefined)
     
-    @scala.inline
-    def setSubnetGroupStatus(value: NonEmptyString): Self = StObject.set(x, "SubnetGroupStatus", value.asInstanceOf[js.Any])
+    inline def setSubnetGroupStatus(value: NonEmptyString): Self = StObject.set(x, "SubnetGroupStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetGroupStatusUndefined: Self = StObject.set(x, "SubnetGroupStatus", js.undefined)
+    inline def setSubnetGroupStatusUndefined: Self = StObject.set(x, "SubnetGroupStatus", js.undefined)
     
-    @scala.inline
-    def setSubnets(value: AwsRdsDbSubnetGroupSubnets): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
+    inline def setSubnets(value: AwsRdsDbSubnetGroupSubnets): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
+    inline def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
-    @scala.inline
-    def setSubnetsVarargs(value: AwsRdsDbSubnetGroupSubnet*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: AwsRdsDbSubnetGroupSubnet*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcId(value: NonEmptyString): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: NonEmptyString): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

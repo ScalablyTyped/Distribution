@@ -15,20 +15,16 @@ object anon {
   }
   object ToDate {
     
-    @scala.inline
-    def apply(toDate: () => Date, toEpochMilli: () => Double): ToDate = {
+    inline def apply(toDate: () => Date, toEpochMilli: () => Double): ToDate = {
       val __obj = js.Dynamic.literal(toDate = js.Any.fromFunction0(toDate), toEpochMilli = js.Any.fromFunction0(toEpochMilli))
       __obj.asInstanceOf[ToDate]
     }
     
-    @scala.inline
-    implicit class ToDateMutableBuilder[Self <: ToDate] (val x: Self) extends AnyVal {
+    extension [Self <: ToDate](x: Self) {
       
-      @scala.inline
-      def setToDate(value: () => Date): Self = StObject.set(x, "toDate", js.Any.fromFunction0(value))
+      inline def setToDate(value: () => Date): Self = StObject.set(x, "toDate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToEpochMilli(value: () => Double): Self = StObject.set(x, "toEpochMilli", js.Any.fromFunction0(value))
+      inline def setToEpochMilli(value: () => Double): Self = StObject.set(x, "toEpochMilli", js.Any.fromFunction0(value))
     }
   }
 }

@@ -17,31 +17,23 @@ trait GoogleCloudDialogflowCxV3ResponseMessageOutputAudioText extends StObject {
 }
 object GoogleCloudDialogflowCxV3ResponseMessageOutputAudioText {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3ResponseMessageOutputAudioText = {
+  inline def apply(): GoogleCloudDialogflowCxV3ResponseMessageOutputAudioText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ResponseMessageOutputAudioText]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3ResponseMessageOutputAudioTextMutableBuilder[Self <: GoogleCloudDialogflowCxV3ResponseMessageOutputAudioText] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3ResponseMessageOutputAudioText](x: Self) {
     
-    @scala.inline
-    def setAllowPlaybackInterruption(value: Boolean): Self = StObject.set(x, "allowPlaybackInterruption", value.asInstanceOf[js.Any])
+    inline def setAllowPlaybackInterruption(value: Boolean): Self = StObject.set(x, "allowPlaybackInterruption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPlaybackInterruptionUndefined: Self = StObject.set(x, "allowPlaybackInterruption", js.undefined)
+    inline def setAllowPlaybackInterruptionUndefined: Self = StObject.set(x, "allowPlaybackInterruption", js.undefined)
     
-    @scala.inline
-    def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
+    inline def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
+    inline def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

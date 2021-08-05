@@ -81,65 +81,46 @@ object permissionsIosMod {
   }
   object IOSPermissionMap {
     
-    @scala.inline
-    def apply(): IOSPermissionMap = {
+    inline def apply(): IOSPermissionMap = {
       val __obj = js.Dynamic.literal(APP_TRACKING_TRANSPARENCY = "ios.permission.APP_TRACKING_TRANSPARENCY", BLUETOOTH_PERIPHERAL = "ios.permission.BLUETOOTH_PERIPHERAL", CALENDARS = "ios.permission.CALENDARS", CAMERA = "ios.permission.CAMERA", CONTACTS = "ios.permission.CONTACTS", FACE_ID = "ios.permission.FACE_ID", LOCATION_ALWAYS = "ios.permission.LOCATION_ALWAYS", LOCATION_WHEN_IN_USE = "ios.permission.LOCATION_WHEN_IN_USE", MEDIA_LIBRARY = "ios.permission.MEDIA_LIBRARY", MICROPHONE = "ios.permission.MICROPHONE", MOTION = "ios.permission.MOTION", PHOTO_LIBRARY = "ios.permission.PHOTO_LIBRARY", PHOTO_LIBRARY_ADD_ONLY = "ios.permission.PHOTO_LIBRARY_ADD_ONLY", REMINDERS = "ios.permission.REMINDERS", SIRI = "ios.permission.SIRI", SPEECH_RECOGNITION = "ios.permission.SPEECH_RECOGNITION", STOREKIT = "ios.permission.STOREKIT")
       __obj.asInstanceOf[IOSPermissionMap]
     }
     
-    @scala.inline
-    implicit class IOSPermissionMapMutableBuilder[Self <: IOSPermissionMap] (val x: Self) extends AnyVal {
+    extension [Self <: IOSPermissionMap](x: Self) {
       
-      @scala.inline
-      def setAPP_TRACKING_TRANSPARENCY(value: iosDotpermissionDotAPP_TRACKING_TRANSPARENCY): Self = StObject.set(x, "APP_TRACKING_TRANSPARENCY", value.asInstanceOf[js.Any])
+      inline def setAPP_TRACKING_TRANSPARENCY(value: iosDotpermissionDotAPP_TRACKING_TRANSPARENCY): Self = StObject.set(x, "APP_TRACKING_TRANSPARENCY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBLUETOOTH_PERIPHERAL(value: iosDotpermissionDotBLUETOOTH_PERIPHERAL): Self = StObject.set(x, "BLUETOOTH_PERIPHERAL", value.asInstanceOf[js.Any])
+      inline def setBLUETOOTH_PERIPHERAL(value: iosDotpermissionDotBLUETOOTH_PERIPHERAL): Self = StObject.set(x, "BLUETOOTH_PERIPHERAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCALENDARS(value: iosDotpermissionDotCALENDARS): Self = StObject.set(x, "CALENDARS", value.asInstanceOf[js.Any])
+      inline def setCALENDARS(value: iosDotpermissionDotCALENDARS): Self = StObject.set(x, "CALENDARS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCAMERA(value: iosDotpermissionDotCAMERA): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
+      inline def setCAMERA(value: iosDotpermissionDotCAMERA): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONTACTS(value: iosDotpermissionDotCONTACTS): Self = StObject.set(x, "CONTACTS", value.asInstanceOf[js.Any])
+      inline def setCONTACTS(value: iosDotpermissionDotCONTACTS): Self = StObject.set(x, "CONTACTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFACE_ID(value: iosDotpermissionDotFACE_ID): Self = StObject.set(x, "FACE_ID", value.asInstanceOf[js.Any])
+      inline def setFACE_ID(value: iosDotpermissionDotFACE_ID): Self = StObject.set(x, "FACE_ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOCATION_ALWAYS(value: iosDotpermissionDotLOCATION_ALWAYS): Self = StObject.set(x, "LOCATION_ALWAYS", value.asInstanceOf[js.Any])
+      inline def setLOCATION_ALWAYS(value: iosDotpermissionDotLOCATION_ALWAYS): Self = StObject.set(x, "LOCATION_ALWAYS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOCATION_WHEN_IN_USE(value: iosDotpermissionDotLOCATION_WHEN_IN_USE): Self = StObject.set(x, "LOCATION_WHEN_IN_USE", value.asInstanceOf[js.Any])
+      inline def setLOCATION_WHEN_IN_USE(value: iosDotpermissionDotLOCATION_WHEN_IN_USE): Self = StObject.set(x, "LOCATION_WHEN_IN_USE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMEDIA_LIBRARY(value: iosDotpermissionDotMEDIA_LIBRARY): Self = StObject.set(x, "MEDIA_LIBRARY", value.asInstanceOf[js.Any])
+      inline def setMEDIA_LIBRARY(value: iosDotpermissionDotMEDIA_LIBRARY): Self = StObject.set(x, "MEDIA_LIBRARY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMICROPHONE(value: iosDotpermissionDotMICROPHONE): Self = StObject.set(x, "MICROPHONE", value.asInstanceOf[js.Any])
+      inline def setMICROPHONE(value: iosDotpermissionDotMICROPHONE): Self = StObject.set(x, "MICROPHONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMOTION(value: iosDotpermissionDotMOTION): Self = StObject.set(x, "MOTION", value.asInstanceOf[js.Any])
+      inline def setMOTION(value: iosDotpermissionDotMOTION): Self = StObject.set(x, "MOTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPHOTO_LIBRARY(value: iosDotpermissionDotPHOTO_LIBRARY): Self = StObject.set(x, "PHOTO_LIBRARY", value.asInstanceOf[js.Any])
+      inline def setPHOTO_LIBRARY(value: iosDotpermissionDotPHOTO_LIBRARY): Self = StObject.set(x, "PHOTO_LIBRARY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPHOTO_LIBRARY_ADD_ONLY(value: iosDotpermissionDotPHOTO_LIBRARY_ADD_ONLY): Self = StObject.set(x, "PHOTO_LIBRARY_ADD_ONLY", value.asInstanceOf[js.Any])
+      inline def setPHOTO_LIBRARY_ADD_ONLY(value: iosDotpermissionDotPHOTO_LIBRARY_ADD_ONLY): Self = StObject.set(x, "PHOTO_LIBRARY_ADD_ONLY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREMINDERS(value: iosDotpermissionDotREMINDERS): Self = StObject.set(x, "REMINDERS", value.asInstanceOf[js.Any])
+      inline def setREMINDERS(value: iosDotpermissionDotREMINDERS): Self = StObject.set(x, "REMINDERS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSIRI(value: iosDotpermissionDotSIRI): Self = StObject.set(x, "SIRI", value.asInstanceOf[js.Any])
+      inline def setSIRI(value: iosDotpermissionDotSIRI): Self = StObject.set(x, "SIRI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPEECH_RECOGNITION(value: iosDotpermissionDotSPEECH_RECOGNITION): Self = StObject.set(x, "SPEECH_RECOGNITION", value.asInstanceOf[js.Any])
+      inline def setSPEECH_RECOGNITION(value: iosDotpermissionDotSPEECH_RECOGNITION): Self = StObject.set(x, "SPEECH_RECOGNITION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTOREKIT(value: iosDotpermissionDotSTOREKIT): Self = StObject.set(x, "STOREKIT", value.asInstanceOf[js.Any])
+      inline def setSTOREKIT(value: iosDotpermissionDotSTOREKIT): Self = StObject.set(x, "STOREKIT", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -20,19 +20,15 @@ trait IModalService extends StObject {
 }
 object IModalService {
   
-  @scala.inline
-  def apply(getPromiseChain: () => IPromise[js.Any], open: IModalSettings => IModalInstanceService): IModalService = {
+  inline def apply(getPromiseChain: () => IPromise[js.Any], open: IModalSettings => IModalInstanceService): IModalService = {
     val __obj = js.Dynamic.literal(getPromiseChain = js.Any.fromFunction0(getPromiseChain), open = js.Any.fromFunction1(open))
     __obj.asInstanceOf[IModalService]
   }
   
-  @scala.inline
-  implicit class IModalServiceMutableBuilder[Self <: IModalService] (val x: Self) extends AnyVal {
+  extension [Self <: IModalService](x: Self) {
     
-    @scala.inline
-    def setGetPromiseChain(value: () => IPromise[js.Any]): Self = StObject.set(x, "getPromiseChain", js.Any.fromFunction0(value))
+    inline def setGetPromiseChain(value: () => IPromise[js.Any]): Self = StObject.set(x, "getPromiseChain", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpen(value: IModalSettings => IModalInstanceService): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: IModalSettings => IModalInstanceService): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
   }
 }

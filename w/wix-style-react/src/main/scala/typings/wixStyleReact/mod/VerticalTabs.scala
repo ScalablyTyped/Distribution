@@ -21,18 +21,15 @@ object VerticalTabs {
   @JSImport("wix-style-react", "VerticalTabs.Footer")
   @js.native
   def Footer: SFC[js.Object] = js.native
-  @scala.inline
-  def Footer_=(x: SFC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
+  inline def Footer_=(x: SFC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "VerticalTabs.TabItem")
   @js.native
   def TabItem: Instantiable0[typings.wixStyleReact.verticalTabsItemMod.default] = js.native
-  @scala.inline
-  def TabItem_=(x: Instantiable0[typings.wixStyleReact.verticalTabsItemMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabItem")(x.asInstanceOf[js.Any])
+  inline def TabItem_=(x: Instantiable0[typings.wixStyleReact.verticalTabsItemMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabItem")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "VerticalTabs.TabsGroup")
   @js.native
   def TabsGroup: SFC[typings.wixStyleReact.verticalTabsMod.TabsGroup] = js.native
-  @scala.inline
-  def TabsGroup_=(x: SFC[TabsGroup]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabsGroup")(x.asInstanceOf[js.Any])
+  inline def TabsGroup_=(x: SFC[TabsGroup]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabsGroup")(x.asInstanceOf[js.Any])
 }

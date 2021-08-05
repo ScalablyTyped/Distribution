@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(bits: Double, radix: Double): String = (^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(bits: Double, radix: Double): String = (^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("csprng", JSImport.Namespace)
   @js.native

@@ -8,11 +8,9 @@ object maximMazurokGapiClientLicensingStrings {
   
   @js.native
   sealed trait licensing extends StObject
-  @scala.inline
-  def licensing: licensing = "licensing".asInstanceOf[licensing]
+  inline def licensing: licensing = "licensing".asInstanceOf[licensing]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

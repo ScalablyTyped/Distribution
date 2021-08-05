@@ -13,16 +13,13 @@ trait ScaleString
 }
 object ScaleString {
   
-  @scala.inline
-  def apply(scale: String): ScaleString = {
+  inline def apply(scale: String): ScaleString = {
     val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleString]
   }
   
-  @scala.inline
-  implicit class ScaleStringMutableBuilder[Self <: ScaleString] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleString](x: Self) {
     
-    @scala.inline
-    def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }
 }

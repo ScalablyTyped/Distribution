@@ -24,8 +24,7 @@ trait ASPxClientMediaFileSelector
 }
 object ASPxClientMediaFileSelector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
@@ -48,13 +47,10 @@ object ASPxClientMediaFileSelector {
     __obj.asInstanceOf[ASPxClientMediaFileSelector]
   }
   
-  @scala.inline
-  implicit class ASPxClientMediaFileSelectorMutableBuilder[Self <: ASPxClientMediaFileSelector] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientMediaFileSelector](x: Self) {
     
-    @scala.inline
-    def setGetUrl(value: () => String): Self = StObject.set(x, "GetUrl", js.Any.fromFunction0(value))
+    inline def setGetUrl(value: () => String): Self = StObject.set(x, "GetUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetUrl(value: String => Unit): Self = StObject.set(x, "SetUrl", js.Any.fromFunction1(value))
+    inline def setSetUrl(value: String => Unit): Self = StObject.set(x, "SetUrl", js.Any.fromFunction1(value))
   }
 }

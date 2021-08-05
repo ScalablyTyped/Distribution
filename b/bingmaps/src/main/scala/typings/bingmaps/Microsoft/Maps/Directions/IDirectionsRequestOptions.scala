@@ -39,76 +39,53 @@ trait IDirectionsRequestOptions extends StObject {
 }
 object IDirectionsRequestOptions {
   
-  @scala.inline
-  def apply(): IDirectionsRequestOptions = {
+  inline def apply(): IDirectionsRequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDirectionsRequestOptions]
   }
   
-  @scala.inline
-  implicit class IDirectionsRequestOptionsMutableBuilder[Self <: IDirectionsRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDirectionsRequestOptions](x: Self) {
     
-    @scala.inline
-    def setDistanceUnit(value: DistanceUnit): Self = StObject.set(x, "distanceUnit", value.asInstanceOf[js.Any])
+    inline def setDistanceUnit(value: DistanceUnit): Self = StObject.set(x, "distanceUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUnitUndefined: Self = StObject.set(x, "distanceUnit", js.undefined)
+    inline def setDistanceUnitUndefined: Self = StObject.set(x, "distanceUnit", js.undefined)
     
-    @scala.inline
-    def setMaxRoutes(value: Double): Self = StObject.set(x, "maxRoutes", value.asInstanceOf[js.Any])
+    inline def setMaxRoutes(value: Double): Self = StObject.set(x, "maxRoutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRoutesUndefined: Self = StObject.set(x, "maxRoutes", js.undefined)
+    inline def setMaxRoutesUndefined: Self = StObject.set(x, "maxRoutes", js.undefined)
     
-    @scala.inline
-    def setRouteAvoidance(value: js.Array[RouteAvoidance]): Self = StObject.set(x, "routeAvoidance", value.asInstanceOf[js.Any])
+    inline def setRouteAvoidance(value: js.Array[RouteAvoidance]): Self = StObject.set(x, "routeAvoidance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteAvoidanceUndefined: Self = StObject.set(x, "routeAvoidance", js.undefined)
+    inline def setRouteAvoidanceUndefined: Self = StObject.set(x, "routeAvoidance", js.undefined)
     
-    @scala.inline
-    def setRouteAvoidanceVarargs(value: RouteAvoidance*): Self = StObject.set(x, "routeAvoidance", js.Array(value :_*))
+    inline def setRouteAvoidanceVarargs(value: RouteAvoidance*): Self = StObject.set(x, "routeAvoidance", js.Array(value :_*))
     
-    @scala.inline
-    def setRouteDraggable(value: Boolean): Self = StObject.set(x, "routeDraggable", value.asInstanceOf[js.Any])
+    inline def setRouteDraggable(value: Boolean): Self = StObject.set(x, "routeDraggable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteDraggableUndefined: Self = StObject.set(x, "routeDraggable", js.undefined)
+    inline def setRouteDraggableUndefined: Self = StObject.set(x, "routeDraggable", js.undefined)
     
-    @scala.inline
-    def setRouteIndex(value: Double): Self = StObject.set(x, "routeIndex", value.asInstanceOf[js.Any])
+    inline def setRouteIndex(value: Double): Self = StObject.set(x, "routeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteIndexUndefined: Self = StObject.set(x, "routeIndex", js.undefined)
+    inline def setRouteIndexUndefined: Self = StObject.set(x, "routeIndex", js.undefined)
     
-    @scala.inline
-    def setRouteMode(value: RouteMode): Self = StObject.set(x, "routeMode", value.asInstanceOf[js.Any])
+    inline def setRouteMode(value: RouteMode): Self = StObject.set(x, "routeMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteModeUndefined: Self = StObject.set(x, "routeMode", js.undefined)
+    inline def setRouteModeUndefined: Self = StObject.set(x, "routeMode", js.undefined)
     
-    @scala.inline
-    def setRouteOptimization(value: RouteOptimization): Self = StObject.set(x, "routeOptimization", value.asInstanceOf[js.Any])
+    inline def setRouteOptimization(value: RouteOptimization): Self = StObject.set(x, "routeOptimization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteOptimizationUndefined: Self = StObject.set(x, "routeOptimization", js.undefined)
+    inline def setRouteOptimizationUndefined: Self = StObject.set(x, "routeOptimization", js.undefined)
     
-    @scala.inline
-    def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeType(value: TimeType): Self = StObject.set(x, "timeType", value.asInstanceOf[js.Any])
+    inline def setTimeType(value: TimeType): Self = StObject.set(x, "timeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeTypeUndefined: Self = StObject.set(x, "timeType", js.undefined)
+    inline def setTimeTypeUndefined: Self = StObject.set(x, "timeType", js.undefined)
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
-    @scala.inline
-    def setVehicleSpec(value: IVehicleSpec): Self = StObject.set(x, "vehicleSpec", value.asInstanceOf[js.Any])
+    inline def setVehicleSpec(value: IVehicleSpec): Self = StObject.set(x, "vehicleSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVehicleSpecUndefined: Self = StObject.set(x, "vehicleSpec", js.undefined)
+    inline def setVehicleSpecUndefined: Self = StObject.set(x, "vehicleSpec", js.undefined)
   }
 }

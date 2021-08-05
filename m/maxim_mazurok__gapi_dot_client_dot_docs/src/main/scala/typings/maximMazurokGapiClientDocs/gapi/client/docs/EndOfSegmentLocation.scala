@@ -11,19 +11,15 @@ trait EndOfSegmentLocation extends StObject {
 }
 object EndOfSegmentLocation {
   
-  @scala.inline
-  def apply(): EndOfSegmentLocation = {
+  inline def apply(): EndOfSegmentLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndOfSegmentLocation]
   }
   
-  @scala.inline
-  implicit class EndOfSegmentLocationMutableBuilder[Self <: EndOfSegmentLocation] (val x: Self) extends AnyVal {
+  extension [Self <: EndOfSegmentLocation](x: Self) {
     
-    @scala.inline
-    def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
+    inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
+    inline def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
   }
 }

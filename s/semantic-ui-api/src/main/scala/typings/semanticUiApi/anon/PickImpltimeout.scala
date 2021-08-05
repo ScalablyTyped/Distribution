@@ -11,16 +11,13 @@ trait PickImpltimeout extends StObject {
 }
 object PickImpltimeout {
   
-  @scala.inline
-  def apply(timeout: String): PickImpltimeout = {
+  inline def apply(timeout: String): PickImpltimeout = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltimeout]
   }
   
-  @scala.inline
-  implicit class PickImpltimeoutMutableBuilder[Self <: PickImpltimeout] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpltimeout](x: Self) {
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

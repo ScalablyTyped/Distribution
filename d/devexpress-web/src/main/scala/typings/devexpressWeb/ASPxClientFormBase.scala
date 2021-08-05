@@ -28,8 +28,7 @@ trait ASPxClientFormBase extends StObject {
 }
 object ASPxClientFormBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Close: () => Unit,
     FormClosed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientFormBase]],
     SetVisibleCore: (js.Any, Boolean) => Unit
@@ -38,16 +37,12 @@ object ASPxClientFormBase {
     __obj.asInstanceOf[ASPxClientFormBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientFormBaseMutableBuilder[Self <: ASPxClientFormBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFormBase](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFormClosed(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientFormBase]]): Self = StObject.set(x, "FormClosed", value.asInstanceOf[js.Any])
+    inline def setFormClosed(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientFormBase]]): Self = StObject.set(x, "FormClosed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetVisibleCore(value: (js.Any, Boolean) => Unit): Self = StObject.set(x, "SetVisibleCore", js.Any.fromFunction2(value))
+    inline def setSetVisibleCore(value: (js.Any, Boolean) => Unit): Self = StObject.set(x, "SetVisibleCore", js.Any.fromFunction2(value))
   }
 }

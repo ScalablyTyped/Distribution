@@ -81,23 +81,18 @@ object modelTypesMod {
   }
   object MetaGraph {
     
-    @scala.inline
-    def apply(signatureDefs: SignatureDef, tags: js.Array[String]): MetaGraph = {
+    inline def apply(signatureDefs: SignatureDef, tags: js.Array[String]): MetaGraph = {
       val __obj = js.Dynamic.literal(signatureDefs = signatureDefs.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetaGraph]
     }
     
-    @scala.inline
-    implicit class MetaGraphMutableBuilder[Self <: MetaGraph] (val x: Self) extends AnyVal {
+    extension [Self <: MetaGraph](x: Self) {
       
-      @scala.inline
-      def setSignatureDefs(value: SignatureDef): Self = StObject.set(x, "signatureDefs", value.asInstanceOf[js.Any])
+      inline def setSignatureDefs(value: SignatureDef): Self = StObject.set(x, "signatureDefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   
@@ -109,23 +104,18 @@ object modelTypesMod {
   }
   object MetaGraphInfo {
     
-    @scala.inline
-    def apply(signatureDefs: SignatureDefInfo, tags: js.Array[String]): MetaGraphInfo = {
+    inline def apply(signatureDefs: SignatureDefInfo, tags: js.Array[String]): MetaGraphInfo = {
       val __obj = js.Dynamic.literal(signatureDefs = signatureDefs.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetaGraphInfo]
     }
     
-    @scala.inline
-    implicit class MetaGraphInfoMutableBuilder[Self <: MetaGraphInfo] (val x: Self) extends AnyVal {
+    extension [Self <: MetaGraphInfo](x: Self) {
       
-      @scala.inline
-      def setSignatureDefs(value: SignatureDefInfo): Self = StObject.set(x, "signatureDefs", value.asInstanceOf[js.Any])
+      inline def setSignatureDefs(value: SignatureDefInfo): Self = StObject.set(x, "signatureDefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   
@@ -143,26 +133,20 @@ object modelTypesMod {
   }
   object ModelPredictConfig {
     
-    @scala.inline
-    def apply(): ModelPredictConfig = {
+    inline def apply(): ModelPredictConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModelPredictConfig]
     }
     
-    @scala.inline
-    implicit class ModelPredictConfigMutableBuilder[Self <: ModelPredictConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ModelPredictConfig](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -178,35 +162,26 @@ object modelTypesMod {
   }
   object ModelTensorInfo {
     
-    @scala.inline
-    def apply(dtype: DataType, name: String): ModelTensorInfo = {
+    inline def apply(dtype: DataType, name: String): ModelTensorInfo = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelTensorInfo]
     }
     
-    @scala.inline
-    implicit class ModelTensorInfoMutableBuilder[Self <: ModelTensorInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ModelTensorInfo](x: Self) {
       
-      @scala.inline
-      def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      @scala.inline
-      def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
       
-      @scala.inline
-      def setTfDtype(value: String): Self = StObject.set(x, "tfDtype", value.asInstanceOf[js.Any])
+      inline def setTfDtype(value: String): Self = StObject.set(x, "tfDtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTfDtypeUndefined: Self = StObject.set(x, "tfDtype", js.undefined)
+      inline def setTfDtypeUndefined: Self = StObject.set(x, "tfDtype", js.undefined)
     }
   }
   
@@ -220,26 +195,20 @@ object modelTypesMod {
   }
   object SavedModelTensorInfo {
     
-    @scala.inline
-    def apply(dtype: String, name: String, shape: js.Array[Double]): SavedModelTensorInfo = {
+    inline def apply(dtype: String, name: String, shape: js.Array[Double]): SavedModelTensorInfo = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
       __obj.asInstanceOf[SavedModelTensorInfo]
     }
     
-    @scala.inline
-    implicit class SavedModelTensorInfoMutableBuilder[Self <: SavedModelTensorInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SavedModelTensorInfo](x: Self) {
       
-      @scala.inline
-      def setDtype(value: String): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: String): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
     }
   }
   
@@ -253,20 +222,16 @@ object modelTypesMod {
   }
   object SignatureDefEntry {
     
-    @scala.inline
-    def apply(inputs: StringDictionary[ModelTensorInfo], outputs: StringDictionary[ModelTensorInfo]): SignatureDefEntry = {
+    inline def apply(inputs: StringDictionary[ModelTensorInfo], outputs: StringDictionary[ModelTensorInfo]): SignatureDefEntry = {
       val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignatureDefEntry]
     }
     
-    @scala.inline
-    implicit class SignatureDefEntryMutableBuilder[Self <: SignatureDefEntry] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureDefEntry](x: Self) {
       
-      @scala.inline
-      def setInputs(value: StringDictionary[ModelTensorInfo]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: StringDictionary[ModelTensorInfo]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputs(value: StringDictionary[ModelTensorInfo]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: StringDictionary[ModelTensorInfo]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     }
   }
   

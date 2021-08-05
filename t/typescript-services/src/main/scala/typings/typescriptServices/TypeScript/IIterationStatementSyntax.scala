@@ -12,8 +12,7 @@ trait IIterationStatementSyntax
 }
 object IIterationStatementSyntax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: ISyntaxVisitor => js.Any,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
@@ -43,10 +42,8 @@ object IIterationStatementSyntax {
     __obj.asInstanceOf[IIterationStatementSyntax]
   }
   
-  @scala.inline
-  implicit class IIterationStatementSyntaxMutableBuilder[Self <: IIterationStatementSyntax] (val x: Self) extends AnyVal {
+  extension [Self <: IIterationStatementSyntax](x: Self) {
     
-    @scala.inline
-    def setIsIterationStatement(value: () => Boolean): Self = StObject.set(x, "isIterationStatement", js.Any.fromFunction0(value))
+    inline def setIsIterationStatement(value: () => Boolean): Self = StObject.set(x, "isIterationStatement", js.Any.fromFunction0(value))
   }
 }

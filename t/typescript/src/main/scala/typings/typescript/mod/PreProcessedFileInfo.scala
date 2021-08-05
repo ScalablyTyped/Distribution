@@ -20,8 +20,7 @@ trait PreProcessedFileInfo extends StObject {
 }
 object PreProcessedFileInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     importedFiles: js.Array[FileReference],
     isLibFile: Boolean,
     libReferenceDirectives: js.Array[FileReference],
@@ -32,43 +31,30 @@ object PreProcessedFileInfo {
     __obj.asInstanceOf[PreProcessedFileInfo]
   }
   
-  @scala.inline
-  implicit class PreProcessedFileInfoMutableBuilder[Self <: PreProcessedFileInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PreProcessedFileInfo](x: Self) {
     
-    @scala.inline
-    def setAmbientExternalModules(value: js.Array[java.lang.String]): Self = StObject.set(x, "ambientExternalModules", value.asInstanceOf[js.Any])
+    inline def setAmbientExternalModules(value: js.Array[java.lang.String]): Self = StObject.set(x, "ambientExternalModules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmbientExternalModulesUndefined: Self = StObject.set(x, "ambientExternalModules", js.undefined)
+    inline def setAmbientExternalModulesUndefined: Self = StObject.set(x, "ambientExternalModules", js.undefined)
     
-    @scala.inline
-    def setAmbientExternalModulesVarargs(value: java.lang.String*): Self = StObject.set(x, "ambientExternalModules", js.Array(value :_*))
+    inline def setAmbientExternalModulesVarargs(value: java.lang.String*): Self = StObject.set(x, "ambientExternalModules", js.Array(value :_*))
     
-    @scala.inline
-    def setImportedFiles(value: js.Array[FileReference]): Self = StObject.set(x, "importedFiles", value.asInstanceOf[js.Any])
+    inline def setImportedFiles(value: js.Array[FileReference]): Self = StObject.set(x, "importedFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportedFilesVarargs(value: FileReference*): Self = StObject.set(x, "importedFiles", js.Array(value :_*))
+    inline def setImportedFilesVarargs(value: FileReference*): Self = StObject.set(x, "importedFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setIsLibFile(value: Boolean): Self = StObject.set(x, "isLibFile", value.asInstanceOf[js.Any])
+    inline def setIsLibFile(value: Boolean): Self = StObject.set(x, "isLibFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibReferenceDirectives(value: js.Array[FileReference]): Self = StObject.set(x, "libReferenceDirectives", value.asInstanceOf[js.Any])
+    inline def setLibReferenceDirectives(value: js.Array[FileReference]): Self = StObject.set(x, "libReferenceDirectives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibReferenceDirectivesVarargs(value: FileReference*): Self = StObject.set(x, "libReferenceDirectives", js.Array(value :_*))
+    inline def setLibReferenceDirectivesVarargs(value: FileReference*): Self = StObject.set(x, "libReferenceDirectives", js.Array(value :_*))
     
-    @scala.inline
-    def setReferencedFiles(value: js.Array[FileReference]): Self = StObject.set(x, "referencedFiles", value.asInstanceOf[js.Any])
+    inline def setReferencedFiles(value: js.Array[FileReference]): Self = StObject.set(x, "referencedFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencedFilesVarargs(value: FileReference*): Self = StObject.set(x, "referencedFiles", js.Array(value :_*))
+    inline def setReferencedFilesVarargs(value: FileReference*): Self = StObject.set(x, "referencedFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setTypeReferenceDirectives(value: js.Array[FileReference]): Self = StObject.set(x, "typeReferenceDirectives", value.asInstanceOf[js.Any])
+    inline def setTypeReferenceDirectives(value: js.Array[FileReference]): Self = StObject.set(x, "typeReferenceDirectives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeReferenceDirectivesVarargs(value: FileReference*): Self = StObject.set(x, "typeReferenceDirectives", js.Array(value :_*))
+    inline def setTypeReferenceDirectivesVarargs(value: FileReference*): Self = StObject.set(x, "typeReferenceDirectives", js.Array(value :_*))
   }
 }

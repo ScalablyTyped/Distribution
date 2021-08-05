@@ -11,16 +11,13 @@ trait PickImplcheckOnRefresh extends StObject {
 }
 object PickImplcheckOnRefresh {
   
-  @scala.inline
-  def apply(checkOnRefresh: Boolean): PickImplcheckOnRefresh = {
+  inline def apply(checkOnRefresh: Boolean): PickImplcheckOnRefresh = {
     val __obj = js.Dynamic.literal(checkOnRefresh = checkOnRefresh.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcheckOnRefresh]
   }
   
-  @scala.inline
-  implicit class PickImplcheckOnRefreshMutableBuilder[Self <: PickImplcheckOnRefresh] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplcheckOnRefresh](x: Self) {
     
-    @scala.inline
-    def setCheckOnRefresh(value: Boolean): Self = StObject.set(x, "checkOnRefresh", value.asInstanceOf[js.Any])
+    inline def setCheckOnRefresh(value: Boolean): Self = StObject.set(x, "checkOnRefresh", value.asInstanceOf[js.Any])
   }
 }

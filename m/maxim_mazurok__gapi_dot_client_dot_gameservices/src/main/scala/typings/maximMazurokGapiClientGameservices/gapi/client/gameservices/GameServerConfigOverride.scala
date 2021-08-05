@@ -14,25 +14,19 @@ trait GameServerConfigOverride extends StObject {
 }
 object GameServerConfigOverride {
   
-  @scala.inline
-  def apply(): GameServerConfigOverride = {
+  inline def apply(): GameServerConfigOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GameServerConfigOverride]
   }
   
-  @scala.inline
-  implicit class GameServerConfigOverrideMutableBuilder[Self <: GameServerConfigOverride] (val x: Self) extends AnyVal {
+  extension [Self <: GameServerConfigOverride](x: Self) {
     
-    @scala.inline
-    def setConfigVersion(value: String): Self = StObject.set(x, "configVersion", value.asInstanceOf[js.Any])
+    inline def setConfigVersion(value: String): Self = StObject.set(x, "configVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigVersionUndefined: Self = StObject.set(x, "configVersion", js.undefined)
+    inline def setConfigVersionUndefined: Self = StObject.set(x, "configVersion", js.undefined)
     
-    @scala.inline
-    def setRealmsSelector(value: RealmSelector): Self = StObject.set(x, "realmsSelector", value.asInstanceOf[js.Any])
+    inline def setRealmsSelector(value: RealmSelector): Self = StObject.set(x, "realmsSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealmsSelectorUndefined: Self = StObject.set(x, "realmsSelector", js.undefined)
+    inline def setRealmsSelectorUndefined: Self = StObject.set(x, "realmsSelector", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait NetworksRemovePeeringRequest extends StObject {
 }
 object NetworksRemovePeeringRequest {
   
-  @scala.inline
-  def apply(): NetworksRemovePeeringRequest = {
+  inline def apply(): NetworksRemovePeeringRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworksRemovePeeringRequest]
   }
   
-  @scala.inline
-  implicit class NetworksRemovePeeringRequestMutableBuilder[Self <: NetworksRemovePeeringRequest] (val x: Self) extends AnyVal {
+  extension [Self <: NetworksRemovePeeringRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

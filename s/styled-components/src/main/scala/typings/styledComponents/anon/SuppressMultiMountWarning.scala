@@ -10,19 +10,15 @@ trait SuppressMultiMountWarning extends StObject {
 }
 object SuppressMultiMountWarning {
   
-  @scala.inline
-  def apply(): SuppressMultiMountWarning = {
+  inline def apply(): SuppressMultiMountWarning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuppressMultiMountWarning]
   }
   
-  @scala.inline
-  implicit class SuppressMultiMountWarningMutableBuilder[Self <: SuppressMultiMountWarning] (val x: Self) extends AnyVal {
+  extension [Self <: SuppressMultiMountWarning](x: Self) {
     
-    @scala.inline
-    def setSuppressMultiMountWarning(value: Boolean): Self = StObject.set(x, "suppressMultiMountWarning", value.asInstanceOf[js.Any])
+    inline def setSuppressMultiMountWarning(value: Boolean): Self = StObject.set(x, "suppressMultiMountWarning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressMultiMountWarningUndefined: Self = StObject.set(x, "suppressMultiMountWarning", js.undefined)
+    inline def setSuppressMultiMountWarningUndefined: Self = StObject.set(x, "suppressMultiMountWarning", js.undefined)
   }
 }

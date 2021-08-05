@@ -16,31 +16,23 @@ trait StateSchema[TC] extends StObject {
 }
 object StateSchema {
   
-  @scala.inline
-  def apply[TC](): StateSchema[TC] = {
+  inline def apply[TC](): StateSchema[TC] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StateSchema[TC]]
   }
   
-  @scala.inline
-  implicit class StateSchemaMutableBuilder[Self <: StateSchema[?], TC] (val x: Self & StateSchema[TC]) extends AnyVal {
+  extension [Self <: StateSchema[?], TC](x: Self & StateSchema[TC]) {
     
-    @scala.inline
-    def setContext(value: Partial[TC]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Partial[TC]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setStates(value: StringDictionary[StateSchema[TC]]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: StringDictionary[StateSchema[TC]]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
+    inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
   }
 }

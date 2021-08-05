@@ -19,10 +19,8 @@ trait DocumentStoreMode extends StObject
 object DocumentStoreMode {
   
   /** Document contents are stored locally. */
-  @scala.inline
-  def LOCAL: `1` = 1.asInstanceOf[`1`]
+  inline def LOCAL: `1` = 1.asInstanceOf[`1`]
   
   /** Document contents are not stored locally. */
-  @scala.inline
-  def REMOTE: `0` = 0.asInstanceOf[`0`]
+  inline def REMOTE: `0` = 0.asInstanceOf[`0`]
 }

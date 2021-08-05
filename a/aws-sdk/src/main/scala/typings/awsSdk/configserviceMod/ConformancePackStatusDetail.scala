@@ -48,8 +48,7 @@ trait ConformancePackStatusDetail extends StObject {
 }
 object ConformancePackStatusDetail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConformancePackArn: ConformancePackArn,
     ConformancePackId: ConformancePackId,
     ConformancePackName: ConformancePackName,
@@ -61,37 +60,26 @@ object ConformancePackStatusDetail {
     __obj.asInstanceOf[ConformancePackStatusDetail]
   }
   
-  @scala.inline
-  implicit class ConformancePackStatusDetailMutableBuilder[Self <: ConformancePackStatusDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ConformancePackStatusDetail](x: Self) {
     
-    @scala.inline
-    def setConformancePackArn(value: ConformancePackArn): Self = StObject.set(x, "ConformancePackArn", value.asInstanceOf[js.Any])
+    inline def setConformancePackArn(value: ConformancePackArn): Self = StObject.set(x, "ConformancePackArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackId(value: ConformancePackId): Self = StObject.set(x, "ConformancePackId", value.asInstanceOf[js.Any])
+    inline def setConformancePackId(value: ConformancePackId): Self = StObject.set(x, "ConformancePackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
+    inline def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackState(value: ConformancePackState): Self = StObject.set(x, "ConformancePackState", value.asInstanceOf[js.Any])
+    inline def setConformancePackState(value: ConformancePackState): Self = StObject.set(x, "ConformancePackState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackStatusReason(value: ConformancePackStatusReason): Self = StObject.set(x, "ConformancePackStatusReason", value.asInstanceOf[js.Any])
+    inline def setConformancePackStatusReason(value: ConformancePackStatusReason): Self = StObject.set(x, "ConformancePackStatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackStatusReasonUndefined: Self = StObject.set(x, "ConformancePackStatusReason", js.undefined)
+    inline def setConformancePackStatusReasonUndefined: Self = StObject.set(x, "ConformancePackStatusReason", js.undefined)
     
-    @scala.inline
-    def setLastUpdateCompletedTime(value: Date): Self = StObject.set(x, "LastUpdateCompletedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateCompletedTime(value: Date): Self = StObject.set(x, "LastUpdateCompletedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateCompletedTimeUndefined: Self = StObject.set(x, "LastUpdateCompletedTime", js.undefined)
+    inline def setLastUpdateCompletedTimeUndefined: Self = StObject.set(x, "LastUpdateCompletedTime", js.undefined)
     
-    @scala.inline
-    def setLastUpdateRequestedTime(value: Date): Self = StObject.set(x, "LastUpdateRequestedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateRequestedTime(value: Date): Self = StObject.set(x, "LastUpdateRequestedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackArn(value: StackArn): Self = StObject.set(x, "StackArn", value.asInstanceOf[js.Any])
+    inline def setStackArn(value: StackArn): Self = StObject.set(x, "StackArn", value.asInstanceOf[js.Any])
   }
 }

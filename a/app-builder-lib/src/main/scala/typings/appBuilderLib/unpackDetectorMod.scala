@@ -10,6 +10,5 @@ object unpackDetectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isLibOrExe(file: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLibOrExe")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLibOrExe(file: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLibOrExe")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

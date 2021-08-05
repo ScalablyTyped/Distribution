@@ -13,8 +13,7 @@ object runnerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def run(options: Options, logger: Logger): js.Promise[Status] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Status]]
+  inline def run(options: Options, logger: Logger): js.Promise[Status] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Status]]
   
   trait Logger extends StObject {
     
@@ -24,20 +23,16 @@ object runnerMod {
   }
   object Logger {
     
-    @scala.inline
-    def apply(error: String => Unit, log: String => Unit): Logger = {
+    inline def apply(error: String => Unit, log: String => Unit): Logger = {
       val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), log = js.Any.fromFunction1(log))
       __obj.asInstanceOf[Logger]
     }
     
-    @scala.inline
-    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+    extension [Self <: Logger](x: Self) {
       
-      @scala.inline
-      def setError(value: String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     }
   }
   
@@ -126,113 +121,78 @@ object runnerMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(exclude: js.Array[String], files: js.Array[String]): Options = {
+    inline def apply(exclude: js.Array[String], files: js.Array[String]): Options = {
       val __obj = js.Dynamic.literal(exclude = exclude.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setFix(value: Boolean): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
+      inline def setFix(value: Boolean): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixUndefined: Self = StObject.set(x, "fix", js.undefined)
+      inline def setFixUndefined: Self = StObject.set(x, "fix", js.undefined)
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setFormattersDirectory(value: String): Self = StObject.set(x, "formattersDirectory", value.asInstanceOf[js.Any])
+      inline def setFormattersDirectory(value: String): Self = StObject.set(x, "formattersDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormattersDirectoryUndefined: Self = StObject.set(x, "formattersDirectory", js.undefined)
+      inline def setFormattersDirectoryUndefined: Self = StObject.set(x, "formattersDirectory", js.undefined)
       
-      @scala.inline
-      def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      inline def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setOut(value: String): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
+      inline def setOut(value: String): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
+      inline def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
       
-      @scala.inline
-      def setOutputAbsolutePaths(value: Boolean): Self = StObject.set(x, "outputAbsolutePaths", value.asInstanceOf[js.Any])
+      inline def setOutputAbsolutePaths(value: Boolean): Self = StObject.set(x, "outputAbsolutePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputAbsolutePathsUndefined: Self = StObject.set(x, "outputAbsolutePaths", js.undefined)
+      inline def setOutputAbsolutePathsUndefined: Self = StObject.set(x, "outputAbsolutePaths", js.undefined)
       
-      @scala.inline
-      def setPrintConfig(value: Boolean): Self = StObject.set(x, "printConfig", value.asInstanceOf[js.Any])
+      inline def setPrintConfig(value: Boolean): Self = StObject.set(x, "printConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintConfigUndefined: Self = StObject.set(x, "printConfig", js.undefined)
+      inline def setPrintConfigUndefined: Self = StObject.set(x, "printConfig", js.undefined)
       
-      @scala.inline
-      def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
-      @scala.inline
-      def setRulesDirectory(value: String | js.Array[String]): Self = StObject.set(x, "rulesDirectory", value.asInstanceOf[js.Any])
+      inline def setRulesDirectory(value: String | js.Array[String]): Self = StObject.set(x, "rulesDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesDirectoryUndefined: Self = StObject.set(x, "rulesDirectory", js.undefined)
+      inline def setRulesDirectoryUndefined: Self = StObject.set(x, "rulesDirectory", js.undefined)
       
-      @scala.inline
-      def setRulesDirectoryVarargs(value: String*): Self = StObject.set(x, "rulesDirectory", js.Array(value :_*))
+      inline def setRulesDirectoryVarargs(value: String*): Self = StObject.set(x, "rulesDirectory", js.Array(value :_*))
       
-      @scala.inline
-      def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      @scala.inline
-      def setTypeCheck(value: Boolean): Self = StObject.set(x, "typeCheck", value.asInstanceOf[js.Any])
+      inline def setTypeCheck(value: Boolean): Self = StObject.set(x, "typeCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeCheckUndefined: Self = StObject.set(x, "typeCheck", js.undefined)
+      inline def setTypeCheckUndefined: Self = StObject.set(x, "typeCheck", js.undefined)
     }
   }
   
@@ -244,13 +204,10 @@ object runnerMod {
   trait Status extends StObject
   object Status {
     
-    @scala.inline
-    def FatalError: `1` = 1.asInstanceOf[`1`]
+    inline def FatalError: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def LintError: `2` = 2.asInstanceOf[`2`]
+    inline def LintError: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def Ok: `0` = 0.asInstanceOf[`0`]
+    inline def Ok: `0` = 0.asInstanceOf[`0`]
   }
 }

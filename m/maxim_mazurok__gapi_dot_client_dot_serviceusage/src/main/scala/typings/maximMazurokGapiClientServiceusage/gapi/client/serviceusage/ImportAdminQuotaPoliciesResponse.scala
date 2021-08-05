@@ -11,22 +11,17 @@ trait ImportAdminQuotaPoliciesResponse extends StObject {
 }
 object ImportAdminQuotaPoliciesResponse {
   
-  @scala.inline
-  def apply(): ImportAdminQuotaPoliciesResponse = {
+  inline def apply(): ImportAdminQuotaPoliciesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportAdminQuotaPoliciesResponse]
   }
   
-  @scala.inline
-  implicit class ImportAdminQuotaPoliciesResponseMutableBuilder[Self <: ImportAdminQuotaPoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ImportAdminQuotaPoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setPolicies(value: js.Array[AdminQuotaPolicy]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
+    inline def setPolicies(value: js.Array[AdminQuotaPolicy]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
+    inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    @scala.inline
-    def setPoliciesVarargs(value: AdminQuotaPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: AdminQuotaPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
   }
 }

@@ -13,19 +13,15 @@ trait PanelBarDataBoundEvent
 }
 object PanelBarDataBoundEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PanelBar): PanelBarDataBoundEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PanelBar): PanelBarDataBoundEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanelBarDataBoundEvent]
   }
   
-  @scala.inline
-  implicit class PanelBarDataBoundEventMutableBuilder[Self <: PanelBarDataBoundEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PanelBarDataBoundEvent](x: Self) {
     
-    @scala.inline
-    def setNode(value: JQuery): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: JQuery): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
   }
 }

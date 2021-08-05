@@ -90,8 +90,7 @@ object ApplicationPages {
        with ISelectorComponent
   object BaseSelectorComponent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       get_callback: () => js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit],
       get_componentType: () => SelectorType,
       get_scopeKey: () => String,
@@ -130,8 +129,7 @@ object ApplicationPages {
   }
   object CalendarSelector {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addHandler: (String, Boolean, Boolean, js.Function2[/* sender */ js.Any, /* selection */ SelectorSelectionEventArgs, Unit]) => Unit,
       add_disposing: js.Function => Unit,
       add_propertyChanged: js.Function => Unit,
@@ -157,25 +155,19 @@ object ApplicationPages {
       __obj.asInstanceOf[CalendarSelector]
     }
     
-    @scala.inline
-    implicit class CalendarSelectorMutableBuilder[Self <: CalendarSelector] (val x: Self) extends AnyVal {
+    extension [Self <: CalendarSelector](x: Self) {
       
-      @scala.inline
-      def setAddHandler(
+      inline def setAddHandler(
         value: (String, Boolean, Boolean, js.Function2[/* sender */ js.Any, /* selection */ SelectorSelectionEventArgs, Unit]) => Unit
       ): Self = StObject.set(x, "addHandler", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGetSelector(value: (SelectorType, String) => ISelectorComponent): Self = StObject.set(x, "getSelector", js.Any.fromFunction2(value))
+      inline def setGetSelector(value: (SelectorType, String) => ISelectorComponent): Self = StObject.set(x, "getSelector", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterSelector(value: ISelectorComponent => Unit): Self = StObject.set(x, "registerSelector", js.Any.fromFunction1(value))
+      inline def setRegisterSelector(value: ISelectorComponent => Unit): Self = StObject.set(x, "registerSelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveEntity(value: (String, ResolveEntity) => Unit): Self = StObject.set(x, "removeEntity", js.Any.fromFunction2(value))
+      inline def setRemoveEntity(value: (String, ResolveEntity) => Unit): Self = StObject.set(x, "removeEntity", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRevertTo(value: (String, ResolveEntity) => Unit): Self = StObject.set(x, "revertTo", js.Any.fromFunction2(value))
+      inline def setRevertTo(value: (String, ResolveEntity) => Unit): Self = StObject.set(x, "revertTo", js.Any.fromFunction2(value))
     }
   }
   
@@ -245,8 +237,7 @@ object ApplicationPages {
   }
   object ClientPeoplePickerQueryParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       customFromJson: js.Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
       fromJson: js.Any => Unit,
@@ -287,98 +278,67 @@ object ApplicationPages {
       __obj.asInstanceOf[ClientPeoplePickerQueryParameters]
     }
     
-    @scala.inline
-    implicit class ClientPeoplePickerQueryParametersMutableBuilder[Self <: ClientPeoplePickerQueryParameters] (val x: Self) extends AnyVal {
+    extension [Self <: ClientPeoplePickerQueryParameters](x: Self) {
       
-      @scala.inline
-      def setGet_allUrlZones(value: () => Boolean): Self = StObject.set(x, "get_allUrlZones", js.Any.fromFunction0(value))
+      inline def setGet_allUrlZones(value: () => Boolean): Self = StObject.set(x, "get_allUrlZones", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_allowEmailAddresses(value: () => Boolean): Self = StObject.set(x, "get_allowEmailAddresses", js.Any.fromFunction0(value))
+      inline def setGet_allowEmailAddresses(value: () => Boolean): Self = StObject.set(x, "get_allowEmailAddresses", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_allowMultipleEntities(value: () => Boolean): Self = StObject.set(x, "get_allowMultipleEntities", js.Any.fromFunction0(value))
+      inline def setGet_allowMultipleEntities(value: () => Boolean): Self = StObject.set(x, "get_allowMultipleEntities", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_enabledClaimProviders(value: () => String): Self = StObject.set(x, "get_enabledClaimProviders", js.Any.fromFunction0(value))
+      inline def setGet_enabledClaimProviders(value: () => String): Self = StObject.set(x, "get_enabledClaimProviders", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_forceClaims(value: () => Boolean): Self = StObject.set(x, "get_forceClaims", js.Any.fromFunction0(value))
+      inline def setGet_forceClaims(value: () => Boolean): Self = StObject.set(x, "get_forceClaims", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_maximumEntitySuggestions(value: () => Double): Self = StObject.set(x, "get_maximumEntitySuggestions", js.Any.fromFunction0(value))
+      inline def setGet_maximumEntitySuggestions(value: () => Double): Self = StObject.set(x, "get_maximumEntitySuggestions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_principalSource(value: () => PrincipalSource): Self = StObject.set(x, "get_principalSource", js.Any.fromFunction0(value))
+      inline def setGet_principalSource(value: () => PrincipalSource): Self = StObject.set(x, "get_principalSource", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_principalType(value: () => PrincipalType): Self = StObject.set(x, "get_principalType", js.Any.fromFunction0(value))
+      inline def setGet_principalType(value: () => PrincipalType): Self = StObject.set(x, "get_principalType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_queryString(value: () => String): Self = StObject.set(x, "get_queryString", js.Any.fromFunction0(value))
+      inline def setGet_queryString(value: () => String): Self = StObject.set(x, "get_queryString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_required(value: () => Boolean): Self = StObject.set(x, "get_required", js.Any.fromFunction0(value))
+      inline def setGet_required(value: () => Boolean): Self = StObject.set(x, "get_required", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_sharePointGroupID(value: () => Double): Self = StObject.set(x, "get_sharePointGroupID", js.Any.fromFunction0(value))
+      inline def setGet_sharePointGroupID(value: () => Double): Self = StObject.set(x, "get_sharePointGroupID", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_urlZone(value: () => UrlZone): Self = StObject.set(x, "get_urlZone", js.Any.fromFunction0(value))
+      inline def setGet_urlZone(value: () => UrlZone): Self = StObject.set(x, "get_urlZone", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_urlZoneSpecified(value: () => Boolean): Self = StObject.set(x, "get_urlZoneSpecified", js.Any.fromFunction0(value))
+      inline def setGet_urlZoneSpecified(value: () => Boolean): Self = StObject.set(x, "get_urlZoneSpecified", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_web(value: () => Web): Self = StObject.set(x, "get_web", js.Any.fromFunction0(value))
+      inline def setGet_web(value: () => Web): Self = StObject.set(x, "get_web", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_webApplicationID(value: () => Guid): Self = StObject.set(x, "get_webApplicationID", js.Any.fromFunction0(value))
+      inline def setGet_webApplicationID(value: () => Guid): Self = StObject.set(x, "get_webApplicationID", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet_allUrlZones(value: Boolean => Unit): Self = StObject.set(x, "set_allUrlZones", js.Any.fromFunction1(value))
+      inline def setSet_allUrlZones(value: Boolean => Unit): Self = StObject.set(x, "set_allUrlZones", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_allowEmailAddresses(value: Boolean => Unit): Self = StObject.set(x, "set_allowEmailAddresses", js.Any.fromFunction1(value))
+      inline def setSet_allowEmailAddresses(value: Boolean => Unit): Self = StObject.set(x, "set_allowEmailAddresses", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_allowMultipleEntities(value: Boolean => Unit): Self = StObject.set(x, "set_allowMultipleEntities", js.Any.fromFunction1(value))
+      inline def setSet_allowMultipleEntities(value: Boolean => Unit): Self = StObject.set(x, "set_allowMultipleEntities", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_enabledClaimProviders(value: String => Unit): Self = StObject.set(x, "set_enabledClaimProviders", js.Any.fromFunction1(value))
+      inline def setSet_enabledClaimProviders(value: String => Unit): Self = StObject.set(x, "set_enabledClaimProviders", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_forceClaims(value: Boolean => Unit): Self = StObject.set(x, "set_forceClaims", js.Any.fromFunction1(value))
+      inline def setSet_forceClaims(value: Boolean => Unit): Self = StObject.set(x, "set_forceClaims", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_maximumEntitySuggestions(value: Double => Unit): Self = StObject.set(x, "set_maximumEntitySuggestions", js.Any.fromFunction1(value))
+      inline def setSet_maximumEntitySuggestions(value: Double => Unit): Self = StObject.set(x, "set_maximumEntitySuggestions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_principalSource(value: PrincipalSource => Unit): Self = StObject.set(x, "set_principalSource", js.Any.fromFunction1(value))
+      inline def setSet_principalSource(value: PrincipalSource => Unit): Self = StObject.set(x, "set_principalSource", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_principalType(value: PrincipalType => Unit): Self = StObject.set(x, "set_principalType", js.Any.fromFunction1(value))
+      inline def setSet_principalType(value: PrincipalType => Unit): Self = StObject.set(x, "set_principalType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_queryString(value: String => Unit): Self = StObject.set(x, "set_queryString", js.Any.fromFunction1(value))
+      inline def setSet_queryString(value: String => Unit): Self = StObject.set(x, "set_queryString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_required(value: Boolean => Unit): Self = StObject.set(x, "set_required", js.Any.fromFunction1(value))
+      inline def setSet_required(value: Boolean => Unit): Self = StObject.set(x, "set_required", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_sharePointGroupID(value: Double => Unit): Self = StObject.set(x, "set_sharePointGroupID", js.Any.fromFunction1(value))
+      inline def setSet_sharePointGroupID(value: Double => Unit): Self = StObject.set(x, "set_sharePointGroupID", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_urlZone(value: UrlZone => Unit): Self = StObject.set(x, "set_urlZone", js.Any.fromFunction1(value))
+      inline def setSet_urlZone(value: UrlZone => Unit): Self = StObject.set(x, "set_urlZone", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_urlZoneSpecified(value: Boolean => Unit): Self = StObject.set(x, "set_urlZoneSpecified", js.Any.fromFunction1(value))
+      inline def setSet_urlZoneSpecified(value: Boolean => Unit): Self = StObject.set(x, "set_urlZoneSpecified", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_web(value: Web => Unit): Self = StObject.set(x, "set_web", js.Any.fromFunction1(value))
+      inline def setSet_web(value: Web => Unit): Self = StObject.set(x, "set_web", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_webApplicationID(value: Guid => Unit): Self = StObject.set(x, "set_webApplicationID", js.Any.fromFunction1(value))
+      inline def setSet_webApplicationID(value: Guid => Unit): Self = StObject.set(x, "set_webApplicationID", js.Any.fromFunction1(value))
     }
   }
   
@@ -408,8 +368,7 @@ object ApplicationPages {
   }
   object ICalendarController {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       collapseAll: () => Unit,
       deleteItem: String => Unit,
       expandAll: () => Unit,
@@ -425,38 +384,27 @@ object ApplicationPages {
       __obj.asInstanceOf[ICalendarController]
     }
     
-    @scala.inline
-    implicit class ICalendarControllerMutableBuilder[Self <: ICalendarController] (val x: Self) extends AnyVal {
+    extension [Self <: ICalendarController](x: Self) {
       
-      @scala.inline
-      def setCollapseAll(value: () => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction0(value))
+      inline def setCollapseAll(value: () => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeleteItem(value: String => Unit): Self = StObject.set(x, "deleteItem", js.Any.fromFunction1(value))
+      inline def setDeleteItem(value: String => Unit): Self = StObject.set(x, "deleteItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExpandAll(value: () => Unit): Self = StObject.set(x, "expandAll", js.Any.fromFunction0(value))
+      inline def setExpandAll(value: () => Unit): Self = StObject.set(x, "expandAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetActiveScope(value: () => CalendarScope): Self = StObject.set(x, "getActiveScope", js.Any.fromFunction0(value))
+      inline def setGetActiveScope(value: () => CalendarScope): Self = StObject.set(x, "getActiveScope", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMoveToDate(value: String => Unit): Self = StObject.set(x, "moveToDate", js.Any.fromFunction1(value))
+      inline def setMoveToDate(value: String => Unit): Self = StObject.set(x, "moveToDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMoveToView(value: CalendarScope => Unit): Self = StObject.set(x, "moveToView", js.Any.fromFunction1(value))
+      inline def setMoveToView(value: CalendarScope => Unit): Self = StObject.set(x, "moveToView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMoveToViewDate(value: (CalendarScope, String) => Unit): Self = StObject.set(x, "moveToViewDate", js.Any.fromFunction2(value))
+      inline def setMoveToViewDate(value: (CalendarScope, String) => Unit): Self = StObject.set(x, "moveToViewDate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMoveToViewType(value: String => Unit): Self = StObject.set(x, "moveToViewType", js.Any.fromFunction1(value))
+      inline def setMoveToViewType(value: String => Unit): Self = StObject.set(x, "moveToViewType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNewItemDialog(value: String => Unit): Self = StObject.set(x, "newItemDialog", js.Any.fromFunction1(value))
+      inline def setNewItemDialog(value: String => Unit): Self = StObject.set(x, "newItemDialog", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefreshItems(value: () => Unit): Self = StObject.set(x, "refreshItems", js.Any.fromFunction0(value))
+      inline def setRefreshItems(value: () => Unit): Self = StObject.set(x, "refreshItems", js.Any.fromFunction0(value))
     }
   }
   
@@ -482,8 +430,7 @@ object ApplicationPages {
   }
   object ISelectorComponent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       get_callback: () => js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit],
       get_componentType: () => SelectorType,
       get_scopeKey: () => String,
@@ -498,35 +445,25 @@ object ApplicationPages {
       __obj.asInstanceOf[ISelectorComponent]
     }
     
-    @scala.inline
-    implicit class ISelectorComponentMutableBuilder[Self <: ISelectorComponent] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectorComponent](x: Self) {
       
-      @scala.inline
-      def setGet_callback(value: () => js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Self = StObject.set(x, "get_callback", js.Any.fromFunction0(value))
+      inline def setGet_callback(value: () => js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Self = StObject.set(x, "get_callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_componentType(value: () => SelectorType): Self = StObject.set(x, "get_componentType", js.Any.fromFunction0(value))
+      inline def setGet_componentType(value: () => SelectorType): Self = StObject.set(x, "get_componentType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_scopeKey(value: () => String): Self = StObject.set(x, "get_scopeKey", js.Any.fromFunction0(value))
+      inline def setGet_scopeKey(value: () => String): Self = StObject.set(x, "get_scopeKey", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_selectedEntities(value: () => js.Any): Self = StObject.set(x, "get_selectedEntities", js.Any.fromFunction0(value))
+      inline def setGet_selectedEntities(value: () => js.Any): Self = StObject.set(x, "get_selectedEntities", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveEntity(value: ResolveEntity => Unit): Self = StObject.set(x, "removeEntity", js.Any.fromFunction1(value))
+      inline def setRemoveEntity(value: ResolveEntity => Unit): Self = StObject.set(x, "removeEntity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRevertTo(value: ResolveEntity => Unit): Self = StObject.set(x, "revertTo", js.Any.fromFunction1(value))
+      inline def setRevertTo(value: ResolveEntity => Unit): Self = StObject.set(x, "revertTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetEntity(value: ResolveEntity => Unit): Self = StObject.set(x, "setEntity", js.Any.fromFunction1(value))
+      inline def setSetEntity(value: ResolveEntity => Unit): Self = StObject.set(x, "setEntity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_callback(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] => Unit): Self = StObject.set(x, "set_callback", js.Any.fromFunction1(value))
+      inline def setSet_callback(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] => Unit): Self = StObject.set(x, "set_callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_selectedEntities(value: js.Any => Unit): Self = StObject.set(x, "set_selectedEntities", js.Any.fromFunction1(value))
+      inline def setSet_selectedEntities(value: js.Any => Unit): Self = StObject.set(x, "set_selectedEntities", js.Any.fromFunction1(value))
     }
   }
   
@@ -562,8 +499,7 @@ object ApplicationPages {
   }
   object ResolveEntity {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accountName: String,
       displayName: String,
       email: String,
@@ -582,50 +518,35 @@ object ApplicationPages {
       __obj.asInstanceOf[ResolveEntity]
     }
     
-    @scala.inline
-    implicit class ResolveEntityMutableBuilder[Self <: ResolveEntity] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveEntity](x: Self) {
       
-      @scala.inline
-      def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+      inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+      inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet_key(value: () => String): Self = StObject.set(x, "get_key", js.Any.fromFunction0(value))
+      inline def setGet_key(value: () => String): Self = StObject.set(x, "get_key", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsGroup(value: Boolean): Self = StObject.set(x, "isGroup", value.asInstanceOf[js.Any])
+      inline def setIsGroup(value: Boolean): Self = StObject.set(x, "isGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers(value: js.Array[ResolveEntity]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: js.Array[ResolveEntity]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersVarargs(value: ResolveEntity*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: ResolveEntity*): Self = StObject.set(x, "members", js.Array(value :_*))
       
-      @scala.inline
-      def setNeedResolve(value: Boolean): Self = StObject.set(x, "needResolve", value.asInstanceOf[js.Any])
+      inline def setNeedResolve(value: Boolean): Self = StObject.set(x, "needResolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTYPE_EVENT(value: String): Self = StObject.set(x, "tYPE_EVENT", value.asInstanceOf[js.Any])
+      inline def setTYPE_EVENT(value: String): Self = StObject.set(x, "tYPE_EVENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTYPE_EXCHANGE(value: String): Self = StObject.set(x, "tYPE_EXCHANGE", value.asInstanceOf[js.Any])
+      inline def setTYPE_EXCHANGE(value: String): Self = StObject.set(x, "tYPE_EXCHANGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTYPE_RESOURCE(value: String): Self = StObject.set(x, "tYPE_RESOURCE", value.asInstanceOf[js.Any])
+      inline def setTYPE_RESOURCE(value: String): Self = StObject.set(x, "tYPE_RESOURCE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTYPE_USER(value: String): Self = StObject.set(x, "tYPE_USER", value.asInstanceOf[js.Any])
+      inline def setTYPE_USER(value: String): Self = StObject.set(x, "tYPE_USER", value.asInstanceOf[js.Any])
     }
   }
   
@@ -637,17 +558,14 @@ object ApplicationPages {
   }
   object SelectorSelectionEventArgs {
     
-    @scala.inline
-    def apply(Empty: EventArgs, get_entities: () => js.Any): SelectorSelectionEventArgs = {
+    inline def apply(Empty: EventArgs, get_entities: () => js.Any): SelectorSelectionEventArgs = {
       val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], get_entities = js.Any.fromFunction0(get_entities))
       __obj.asInstanceOf[SelectorSelectionEventArgs]
     }
     
-    @scala.inline
-    implicit class SelectorSelectionEventArgsMutableBuilder[Self <: SelectorSelectionEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SelectorSelectionEventArgs](x: Self) {
       
-      @scala.inline
-      def setGet_entities(value: () => js.Any): Self = StObject.set(x, "get_entities", js.Any.fromFunction0(value))
+      inline def setGet_entities(value: () => js.Any): Self = StObject.set(x, "get_entities", js.Any.fromFunction0(value))
     }
   }
 }

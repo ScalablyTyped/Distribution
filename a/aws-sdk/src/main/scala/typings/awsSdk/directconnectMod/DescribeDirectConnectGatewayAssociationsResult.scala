@@ -18,28 +18,21 @@ trait DescribeDirectConnectGatewayAssociationsResult extends StObject {
 }
 object DescribeDirectConnectGatewayAssociationsResult {
   
-  @scala.inline
-  def apply(): DescribeDirectConnectGatewayAssociationsResult = {
+  inline def apply(): DescribeDirectConnectGatewayAssociationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDirectConnectGatewayAssociationsResult]
   }
   
-  @scala.inline
-  implicit class DescribeDirectConnectGatewayAssociationsResultMutableBuilder[Self <: DescribeDirectConnectGatewayAssociationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDirectConnectGatewayAssociationsResult](x: Self) {
     
-    @scala.inline
-    def setDirectConnectGatewayAssociations(value: DirectConnectGatewayAssociationList): Self = StObject.set(x, "directConnectGatewayAssociations", value.asInstanceOf[js.Any])
+    inline def setDirectConnectGatewayAssociations(value: DirectConnectGatewayAssociationList): Self = StObject.set(x, "directConnectGatewayAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectConnectGatewayAssociationsUndefined: Self = StObject.set(x, "directConnectGatewayAssociations", js.undefined)
+    inline def setDirectConnectGatewayAssociationsUndefined: Self = StObject.set(x, "directConnectGatewayAssociations", js.undefined)
     
-    @scala.inline
-    def setDirectConnectGatewayAssociationsVarargs(value: DirectConnectGatewayAssociation*): Self = StObject.set(x, "directConnectGatewayAssociations", js.Array(value :_*))
+    inline def setDirectConnectGatewayAssociationsVarargs(value: DirectConnectGatewayAssociation*): Self = StObject.set(x, "directConnectGatewayAssociations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

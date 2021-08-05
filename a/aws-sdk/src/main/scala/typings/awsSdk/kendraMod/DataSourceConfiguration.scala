@@ -43,55 +43,39 @@ trait DataSourceConfiguration extends StObject {
 }
 object DataSourceConfiguration {
   
-  @scala.inline
-  def apply(): DataSourceConfiguration = {
+  inline def apply(): DataSourceConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceConfiguration]
   }
   
-  @scala.inline
-  implicit class DataSourceConfigurationMutableBuilder[Self <: DataSourceConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceConfiguration](x: Self) {
     
-    @scala.inline
-    def setConfluenceConfiguration(value: ConfluenceConfiguration): Self = StObject.set(x, "ConfluenceConfiguration", value.asInstanceOf[js.Any])
+    inline def setConfluenceConfiguration(value: ConfluenceConfiguration): Self = StObject.set(x, "ConfluenceConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfluenceConfigurationUndefined: Self = StObject.set(x, "ConfluenceConfiguration", js.undefined)
+    inline def setConfluenceConfigurationUndefined: Self = StObject.set(x, "ConfluenceConfiguration", js.undefined)
     
-    @scala.inline
-    def setDatabaseConfiguration(value: DatabaseConfiguration): Self = StObject.set(x, "DatabaseConfiguration", value.asInstanceOf[js.Any])
+    inline def setDatabaseConfiguration(value: DatabaseConfiguration): Self = StObject.set(x, "DatabaseConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseConfigurationUndefined: Self = StObject.set(x, "DatabaseConfiguration", js.undefined)
+    inline def setDatabaseConfigurationUndefined: Self = StObject.set(x, "DatabaseConfiguration", js.undefined)
     
-    @scala.inline
-    def setOneDriveConfiguration(value: OneDriveConfiguration): Self = StObject.set(x, "OneDriveConfiguration", value.asInstanceOf[js.Any])
+    inline def setOneDriveConfiguration(value: OneDriveConfiguration): Self = StObject.set(x, "OneDriveConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneDriveConfigurationUndefined: Self = StObject.set(x, "OneDriveConfiguration", js.undefined)
+    inline def setOneDriveConfigurationUndefined: Self = StObject.set(x, "OneDriveConfiguration", js.undefined)
     
-    @scala.inline
-    def setS3Configuration(value: S3DataSourceConfiguration): Self = StObject.set(x, "S3Configuration", value.asInstanceOf[js.Any])
+    inline def setS3Configuration(value: S3DataSourceConfiguration): Self = StObject.set(x, "S3Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ConfigurationUndefined: Self = StObject.set(x, "S3Configuration", js.undefined)
+    inline def setS3ConfigurationUndefined: Self = StObject.set(x, "S3Configuration", js.undefined)
     
-    @scala.inline
-    def setSalesforceConfiguration(value: SalesforceConfiguration): Self = StObject.set(x, "SalesforceConfiguration", value.asInstanceOf[js.Any])
+    inline def setSalesforceConfiguration(value: SalesforceConfiguration): Self = StObject.set(x, "SalesforceConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSalesforceConfigurationUndefined: Self = StObject.set(x, "SalesforceConfiguration", js.undefined)
+    inline def setSalesforceConfigurationUndefined: Self = StObject.set(x, "SalesforceConfiguration", js.undefined)
     
-    @scala.inline
-    def setServiceNowConfiguration(value: ServiceNowConfiguration): Self = StObject.set(x, "ServiceNowConfiguration", value.asInstanceOf[js.Any])
+    inline def setServiceNowConfiguration(value: ServiceNowConfiguration): Self = StObject.set(x, "ServiceNowConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNowConfigurationUndefined: Self = StObject.set(x, "ServiceNowConfiguration", js.undefined)
+    inline def setServiceNowConfigurationUndefined: Self = StObject.set(x, "ServiceNowConfiguration", js.undefined)
     
-    @scala.inline
-    def setSharePointConfiguration(value: SharePointConfiguration): Self = StObject.set(x, "SharePointConfiguration", value.asInstanceOf[js.Any])
+    inline def setSharePointConfiguration(value: SharePointConfiguration): Self = StObject.set(x, "SharePointConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharePointConfigurationUndefined: Self = StObject.set(x, "SharePointConfiguration", js.undefined)
+    inline def setSharePointConfigurationUndefined: Self = StObject.set(x, "SharePointConfiguration", js.undefined)
   }
 }

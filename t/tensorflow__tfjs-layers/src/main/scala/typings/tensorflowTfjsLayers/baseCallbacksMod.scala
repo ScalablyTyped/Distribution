@@ -55,9 +55,9 @@ object baseCallbacksMod {
   @js.native
   class BaseLogger () extends BaseCallback {
     
-    var seen: js.Any = js.native
+    /* private */ var seen: js.Any = js.native
     
-    var totals: js.Any = js.native
+    /* private */ var totals: js.Any = js.native
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "CallbackConstructorRegistry")
@@ -65,7 +65,7 @@ object baseCallbacksMod {
   /**
     * Blocks public access to constructor.
     */
-  class CallbackConstructorRegistry protected () extends StObject
+  /* private */ class CallbackConstructorRegistry () extends StObject
   /* static members */
   object CallbackConstructorRegistry {
     
@@ -76,20 +76,17 @@ object baseCallbacksMod {
     @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "CallbackConstructorRegistry.checkForDuplicate")
     @js.native
     def checkForDuplicate: js.Any = js.native
-    @scala.inline
-    def checkForDuplicate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkForDuplicate")(x.asInstanceOf[js.Any])
+    inline def checkForDuplicate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkForDuplicate")(x.asInstanceOf[js.Any])
     
     /**
       * Clear all registered callback constructors.
       */
-    @scala.inline
-    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+    inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
     
     @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "CallbackConstructorRegistry.constructors")
     @js.native
     def constructors: js.Any = js.native
-    @scala.inline
-    def constructors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("constructors")(x.asInstanceOf[js.Any])
+    inline def constructors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("constructors")(x.asInstanceOf[js.Any])
     
     /**
       * Create callbacks using the registered callback constructors.
@@ -99,8 +96,7 @@ object baseCallbacksMod {
       *
       * @param verbosityLevel: Level of verbosity.
       */
-    @scala.inline
-    def createCallbacks(verbosityLevel: Double): js.Array[BaseCallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCallbacks")(verbosityLevel.asInstanceOf[js.Any]).asInstanceOf[js.Array[BaseCallback]]
+    inline def createCallbacks(verbosityLevel: Double): js.Array[BaseCallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCallbacks")(verbosityLevel.asInstanceOf[js.Any]).asInstanceOf[js.Array[BaseCallback]]
     
     /**
       * Register a tf.LayersModel.fit() callback constructor.
@@ -114,8 +110,7 @@ object baseCallbacksMod {
       * @throws Error, if the same callbackConstructor has been registered before,
       *   either at the same or a different `verbosityLevel`.
       */
-    @scala.inline
-    def registerCallbackConstructor(verbosityLevel: Double, callbackConstructor: BaseCallbackConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCallbackConstructor")(verbosityLevel.asInstanceOf[js.Any], callbackConstructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerCallbackConstructor(verbosityLevel: Double, callbackConstructor: BaseCallbackConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCallbackConstructor")(verbosityLevel.asInstanceOf[js.Any], callbackConstructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "CallbackList")
@@ -200,7 +195,7 @@ object baseCallbacksMod {
     /* protected */ def batchEnd(batch: Double): Unit | js.Promise[Unit] = js.native
     /* protected */ def batchEnd(batch: Double, logs: Logs): Unit | js.Promise[Unit] = js.native
     
-    var currentEpoch: js.Any = js.native
+    /* private */ var currentEpoch: js.Any = js.native
     
     /* protected */ def epochBegin(epoch: Double): Unit | js.Promise[Unit] = js.native
     /* protected */ def epochBegin(epoch: Double, logs: Logs): Unit | js.Promise[Unit] = js.native
@@ -218,7 +213,7 @@ object baseCallbacksMod {
     
     /* protected */ def `yield`(epoch: Double, batch: Double, logs: Logs): Unit | js.Promise[Unit] = js.native
     
-    var yieldEvery: js.Any = js.native
+    /* private */ var yieldEvery: js.Any = js.native
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "DEFAULT_YIELD_EVERY_MS")
@@ -261,8 +256,7 @@ object baseCallbacksMod {
     /* 1 */ val VERBOSE: typings.tensorflowTfjsLayers.baseCallbacksMod.ModelLoggingVerbosity.VERBOSE & Double = js.native
   }
   
-  @scala.inline
-  def configureCallbacks(
+  inline def configureCallbacks(
     callbacks: js.Array[BaseCallback],
     verbose: ModelLoggingVerbosity,
     epochs: Double,
@@ -274,12 +268,9 @@ object baseCallbacksMod {
     callbackMetrics: js.Array[String]
   ): typings.tensorflowTfjsLayers.anon.CallbackList = (^.asInstanceOf[js.Dynamic].applyDynamic("configureCallbacks")(callbacks.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], epochs.asInstanceOf[js.Any], initialEpoch.asInstanceOf[js.Any], numTrainSamples.asInstanceOf[js.Any], stepsPerEpoch.asInstanceOf[js.Any], batchSize.asInstanceOf[js.Any], doValidation.asInstanceOf[js.Any], callbackMetrics.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsLayers.anon.CallbackList]
   
-  @scala.inline
-  def standardizeCallbacks(callbacks: js.Array[BaseCallback | CustomCallbackArgs], yieldEvery: YieldEveryOptions): js.Array[BaseCallback] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeCallbacks")(callbacks.asInstanceOf[js.Any], yieldEvery.asInstanceOf[js.Any])).asInstanceOf[js.Array[BaseCallback]]
-  @scala.inline
-  def standardizeCallbacks(callbacks: BaseCallback, yieldEvery: YieldEveryOptions): js.Array[BaseCallback] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeCallbacks")(callbacks.asInstanceOf[js.Any], yieldEvery.asInstanceOf[js.Any])).asInstanceOf[js.Array[BaseCallback]]
-  @scala.inline
-  def standardizeCallbacks(callbacks: CustomCallbackArgs, yieldEvery: YieldEveryOptions): js.Array[BaseCallback] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeCallbacks")(callbacks.asInstanceOf[js.Any], yieldEvery.asInstanceOf[js.Any])).asInstanceOf[js.Array[BaseCallback]]
+  inline def standardizeCallbacks(callbacks: js.Array[BaseCallback | CustomCallbackArgs], yieldEvery: YieldEveryOptions): js.Array[BaseCallback] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeCallbacks")(callbacks.asInstanceOf[js.Any], yieldEvery.asInstanceOf[js.Any])).asInstanceOf[js.Array[BaseCallback]]
+  inline def standardizeCallbacks(callbacks: BaseCallback, yieldEvery: YieldEveryOptions): js.Array[BaseCallback] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeCallbacks")(callbacks.asInstanceOf[js.Any], yieldEvery.asInstanceOf[js.Any])).asInstanceOf[js.Array[BaseCallback]]
+  inline def standardizeCallbacks(callbacks: CustomCallbackArgs, yieldEvery: YieldEveryOptions): js.Array[BaseCallback] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeCallbacks")(callbacks.asInstanceOf[js.Any], yieldEvery.asInstanceOf[js.Any])).asInstanceOf[js.Array[BaseCallback]]
   
   @js.native
   trait BaseCallbackConstructor
@@ -314,56 +305,40 @@ object baseCallbacksMod {
   }
   object CustomCallbackArgs {
     
-    @scala.inline
-    def apply(): CustomCallbackArgs = {
+    inline def apply(): CustomCallbackArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomCallbackArgs]
     }
     
-    @scala.inline
-    implicit class CustomCallbackArgsMutableBuilder[Self <: CustomCallbackArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CustomCallbackArgs](x: Self) {
       
-      @scala.inline
-      def setOnBatchBegin(value: (/* batch */ Double, /* logs */ js.UndefOr[Logs]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "onBatchBegin", js.Any.fromFunction2(value))
+      inline def setOnBatchBegin(value: (/* batch */ Double, /* logs */ js.UndefOr[Logs]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "onBatchBegin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBatchBeginUndefined: Self = StObject.set(x, "onBatchBegin", js.undefined)
+      inline def setOnBatchBeginUndefined: Self = StObject.set(x, "onBatchBegin", js.undefined)
       
-      @scala.inline
-      def setOnBatchEnd(value: (/* batch */ Double, /* logs */ js.UndefOr[Logs]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "onBatchEnd", js.Any.fromFunction2(value))
+      inline def setOnBatchEnd(value: (/* batch */ Double, /* logs */ js.UndefOr[Logs]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "onBatchEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBatchEndUndefined: Self = StObject.set(x, "onBatchEnd", js.undefined)
+      inline def setOnBatchEndUndefined: Self = StObject.set(x, "onBatchEnd", js.undefined)
       
-      @scala.inline
-      def setOnEpochBegin(value: (/* epoch */ Double, /* logs */ js.UndefOr[Logs]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "onEpochBegin", js.Any.fromFunction2(value))
+      inline def setOnEpochBegin(value: (/* epoch */ Double, /* logs */ js.UndefOr[Logs]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "onEpochBegin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnEpochBeginUndefined: Self = StObject.set(x, "onEpochBegin", js.undefined)
+      inline def setOnEpochBeginUndefined: Self = StObject.set(x, "onEpochBegin", js.undefined)
       
-      @scala.inline
-      def setOnEpochEnd(value: (/* epoch */ Double, /* logs */ js.UndefOr[Logs]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "onEpochEnd", js.Any.fromFunction2(value))
+      inline def setOnEpochEnd(value: (/* epoch */ Double, /* logs */ js.UndefOr[Logs]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "onEpochEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnEpochEndUndefined: Self = StObject.set(x, "onEpochEnd", js.undefined)
+      inline def setOnEpochEndUndefined: Self = StObject.set(x, "onEpochEnd", js.undefined)
       
-      @scala.inline
-      def setOnTrainBegin(value: /* logs */ js.UndefOr[Logs] => Unit | js.Promise[Unit]): Self = StObject.set(x, "onTrainBegin", js.Any.fromFunction1(value))
+      inline def setOnTrainBegin(value: /* logs */ js.UndefOr[Logs] => Unit | js.Promise[Unit]): Self = StObject.set(x, "onTrainBegin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTrainBeginUndefined: Self = StObject.set(x, "onTrainBegin", js.undefined)
+      inline def setOnTrainBeginUndefined: Self = StObject.set(x, "onTrainBegin", js.undefined)
       
-      @scala.inline
-      def setOnTrainEnd(value: /* logs */ js.UndefOr[Logs] => Unit | js.Promise[Unit]): Self = StObject.set(x, "onTrainEnd", js.Any.fromFunction1(value))
+      inline def setOnTrainEnd(value: /* logs */ js.UndefOr[Logs] => Unit | js.Promise[Unit]): Self = StObject.set(x, "onTrainEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTrainEndUndefined: Self = StObject.set(x, "onTrainEnd", js.undefined)
+      inline def setOnTrainEndUndefined: Self = StObject.set(x, "onTrainEnd", js.undefined)
       
-      @scala.inline
-      def setOnYield(value: (/* epoch */ Double, /* batch */ Double, /* logs */ Logs) => Unit | js.Promise[Unit]): Self = StObject.set(x, "onYield", js.Any.fromFunction3(value))
+      inline def setOnYield(value: (/* epoch */ Double, /* batch */ Double, /* logs */ Logs) => Unit | js.Promise[Unit]): Self = StObject.set(x, "onYield", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnYieldUndefined: Self = StObject.set(x, "onYield", js.undefined)
+      inline def setOnYieldUndefined: Self = StObject.set(x, "onYield", js.undefined)
     }
   }
   

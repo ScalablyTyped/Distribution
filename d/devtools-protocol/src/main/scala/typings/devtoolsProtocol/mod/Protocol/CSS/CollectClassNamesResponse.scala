@@ -13,19 +13,15 @@ trait CollectClassNamesResponse extends StObject {
 }
 object CollectClassNamesResponse {
   
-  @scala.inline
-  def apply(classNames: js.Array[String]): CollectClassNamesResponse = {
+  inline def apply(classNames: js.Array[String]): CollectClassNamesResponse = {
     val __obj = js.Dynamic.literal(classNames = classNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectClassNamesResponse]
   }
   
-  @scala.inline
-  implicit class CollectClassNamesResponseMutableBuilder[Self <: CollectClassNamesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CollectClassNamesResponse](x: Self) {
     
-    @scala.inline
-    def setClassNames(value: js.Array[String]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+    inline def setClassNames(value: js.Array[String]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNamesVarargs(value: String*): Self = StObject.set(x, "classNames", js.Array(value :_*))
+    inline def setClassNamesVarargs(value: String*): Self = StObject.set(x, "classNames", js.Array(value :_*))
   }
 }

@@ -12,16 +12,13 @@ trait MenuOptions
 }
 object MenuOptions {
   
-  @scala.inline
-  def apply(menuButton: MenuButton): MenuOptions = {
+  inline def apply(menuButton: MenuButton): MenuOptions = {
     val __obj = js.Dynamic.literal(menuButton = menuButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuOptions]
   }
   
-  @scala.inline
-  implicit class MenuOptionsMutableBuilder[Self <: MenuOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MenuOptions](x: Self) {
     
-    @scala.inline
-    def setMenuButton(value: MenuButton): Self = StObject.set(x, "menuButton", value.asInstanceOf[js.Any])
+    inline def setMenuButton(value: MenuButton): Self = StObject.set(x, "menuButton", value.asInstanceOf[js.Any])
   }
 }

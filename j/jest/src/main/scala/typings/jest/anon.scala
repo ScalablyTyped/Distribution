@@ -119,8 +119,7 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply[T /* <: js.Array[js.Any] */](
+    inline def apply[T /* <: js.Array[js.Any] */](
       `1`: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
         ],
@@ -212,18 +211,15 @@ object anon {
       __obj.asInstanceOf[`1`[T]]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`[?], T /* <: js.Array[js.Any] */] (val x: Self & `1`[T]) extends AnyVal {
+    extension [Self <: `1`[?], T /* <: js.Array[js.Any] */](x: Self & `1`[T]) {
       
-      @scala.inline
-      def set1(
+      inline def set1(
         value: js.Array[
               /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
             ]
       ): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set10(
+      inline def set10(
         value: js.Tuple10[
               /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
@@ -238,19 +234,16 @@ object anon {
             ]
       ): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1Varargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any)*): Self = StObject.set(x, "1", js.Array(value :_*))
+      inline def set1Varargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any)*): Self = StObject.set(x, "1", js.Array(value :_*))
       
-      @scala.inline
-      def set2(
+      inline def set2(
         value: js.Tuple2[
               /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
             ]
       ): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set3(
+      inline def set3(
         value: js.Tuple3[
               /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
@@ -258,8 +251,7 @@ object anon {
             ]
       ): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4(
+      inline def set4(
         value: js.Tuple4[
               /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
@@ -268,8 +260,7 @@ object anon {
             ]
       ): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5(
+      inline def set5(
         value: js.Tuple5[
               /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
@@ -279,8 +270,7 @@ object anon {
             ]
       ): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set6(
+      inline def set6(
         value: js.Tuple6[
               /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
@@ -291,8 +281,7 @@ object anon {
             ]
       ): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set7(
+      inline def set7(
         value: js.Tuple7[
               /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
@@ -304,8 +293,7 @@ object anon {
             ]
       ): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set8(
+      inline def set8(
         value: js.Tuple8[
               /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
@@ -318,8 +306,7 @@ object anon {
             ]
       ): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set9(
+      inline def set9(
         value: js.Tuple9[
               /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
@@ -333,11 +320,9 @@ object anon {
             ]
       ): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallback(value: js.Array[js.Any]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: js.Array[js.Any]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackVarargs(value: js.Any*): Self = StObject.set(x, "fallback", js.Array(value :_*))
+      inline def setFallbackVarargs(value: js.Any*): Self = StObject.set(x, "fallback", js.Array(value :_*))
     }
   }
   
@@ -350,20 +335,16 @@ object anon {
   }
   object Args {
     
-    @scala.inline
-    def apply(args: js.Array[js.Any]): Args = {
+    inline def apply(args: js.Array[js.Any]): Args = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
     }
     
-    @scala.inline
-    implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
+    extension [Self <: Args](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
     }
   }
   
@@ -450,20 +431,16 @@ object anon {
   }
   object JestMatchersShape {
     
-    @scala.inline
-    def apply(rejects: AndNot, resolves: AndNot): JestMatchersShape = {
+    inline def apply(rejects: AndNot, resolves: AndNot): JestMatchersShape = {
       val __obj = js.Dynamic.literal(rejects = rejects.asInstanceOf[js.Any], resolves = resolves.asInstanceOf[js.Any])
       __obj.asInstanceOf[JestMatchersShape]
     }
     
-    @scala.inline
-    implicit class JestMatchersShapeMutableBuilder[Self <: JestMatchersShape] (val x: Self) extends AnyVal {
+    extension [Self <: JestMatchersShape](x: Self) {
       
-      @scala.inline
-      def setRejects(value: AndNot): Self = StObject.set(x, "rejects", value.asInstanceOf[js.Any])
+      inline def setRejects(value: AndNot): Self = StObject.set(x, "rejects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolves(value: AndNot): Self = StObject.set(x, "resolves", value.asInstanceOf[js.Any])
+      inline def setResolves(value: AndNot): Self = StObject.set(x, "resolves", value.asInstanceOf[js.Any])
     }
   }
   
@@ -473,17 +450,14 @@ object anon {
   }
   object Message {
     
-    @scala.inline
-    def apply(message: String): Message = {
+    inline def apply(message: String): Message = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -493,17 +467,14 @@ object anon {
   }
   object Not {
     
-    @scala.inline
-    def apply[T](not: T): Not[T] = {
+    inline def apply[T](not: T): Not[T] = {
       val __obj = js.Dynamic.literal(not = not.asInstanceOf[js.Any])
       __obj.asInstanceOf[Not[T]]
     }
     
-    @scala.inline
-    implicit class NotMutableBuilder[Self <: Not[?], T] (val x: Self & Not[T]) extends AnyVal {
+    extension [Self <: Not[?], T](x: Self & Not[T]) {
       
-      @scala.inline
-      def setNot(value: T): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+      inline def setNot(value: T): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     }
   }
   
@@ -523,20 +494,16 @@ object anon {
   }
   object Rejects {
     
-    @scala.inline
-    def apply[TPromise /* <: js.Object */](rejects: typings.jest.mod.jest.AndNot[TPromise], resolves: typings.jest.mod.jest.AndNot[TPromise]): Rejects[TPromise] = {
+    inline def apply[TPromise /* <: js.Object */](rejects: typings.jest.mod.jest.AndNot[TPromise], resolves: typings.jest.mod.jest.AndNot[TPromise]): Rejects[TPromise] = {
       val __obj = js.Dynamic.literal(rejects = rejects.asInstanceOf[js.Any], resolves = resolves.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rejects[TPromise]]
     }
     
-    @scala.inline
-    implicit class RejectsMutableBuilder[Self <: Rejects[?], TPromise /* <: js.Object */] (val x: Self & Rejects[TPromise]) extends AnyVal {
+    extension [Self <: Rejects[?], TPromise /* <: js.Object */](x: Self & Rejects[TPromise]) {
       
-      @scala.inline
-      def setRejects(value: typings.jest.mod.jest.AndNot[TPromise]): Self = StObject.set(x, "rejects", value.asInstanceOf[js.Any])
+      inline def setRejects(value: typings.jest.mod.jest.AndNot[TPromise]): Self = StObject.set(x, "rejects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolves(value: typings.jest.mod.jest.AndNot[TPromise]): Self = StObject.set(x, "resolves", value.asInstanceOf[js.Any])
+      inline def setResolves(value: typings.jest.mod.jest.AndNot[TPromise]): Self = StObject.set(x, "resolves", value.asInstanceOf[js.Any])
     }
   }
   

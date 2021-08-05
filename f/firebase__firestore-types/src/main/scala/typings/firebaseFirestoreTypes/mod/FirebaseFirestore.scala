@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/firestore-types", "FirebaseFirestore")
 @js.native
-class FirebaseFirestore protected () extends StObject {
+/* private */ class FirebaseFirestore () extends StObject {
   
   var INTERNAL: Delete = js.native
   

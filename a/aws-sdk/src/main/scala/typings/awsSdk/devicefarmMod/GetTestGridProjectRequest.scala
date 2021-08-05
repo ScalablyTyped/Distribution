@@ -13,16 +13,13 @@ trait GetTestGridProjectRequest extends StObject {
 }
 object GetTestGridProjectRequest {
   
-  @scala.inline
-  def apply(projectArn: DeviceFarmArn): GetTestGridProjectRequest = {
+  inline def apply(projectArn: DeviceFarmArn): GetTestGridProjectRequest = {
     val __obj = js.Dynamic.literal(projectArn = projectArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTestGridProjectRequest]
   }
   
-  @scala.inline
-  implicit class GetTestGridProjectRequestMutableBuilder[Self <: GetTestGridProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetTestGridProjectRequest](x: Self) {
     
-    @scala.inline
-    def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
+    inline def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
   }
 }

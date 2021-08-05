@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCIceTransportState extends StObject
 object RTCIceTransportState {
   
-  @scala.inline
-  def checking: typings.std.stdStrings.checking = "checking".asInstanceOf[typings.std.stdStrings.checking]
+  inline def checking: typings.std.stdStrings.checking = "checking".asInstanceOf[typings.std.stdStrings.checking]
   
-  @scala.inline
-  def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
+  inline def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
   
-  @scala.inline
-  def completed: typings.std.stdStrings.completed = "completed".asInstanceOf[typings.std.stdStrings.completed]
+  inline def completed: typings.std.stdStrings.completed = "completed".asInstanceOf[typings.std.stdStrings.completed]
   
-  @scala.inline
-  def connected: typings.std.stdStrings.connected = "connected".asInstanceOf[typings.std.stdStrings.connected]
+  inline def connected: typings.std.stdStrings.connected = "connected".asInstanceOf[typings.std.stdStrings.connected]
   
-  @scala.inline
-  def disconnected: typings.std.stdStrings.disconnected = "disconnected".asInstanceOf[typings.std.stdStrings.disconnected]
+  inline def disconnected: typings.std.stdStrings.disconnected = "disconnected".asInstanceOf[typings.std.stdStrings.disconnected]
   
-  @scala.inline
-  def failed: typings.std.stdStrings.failed = "failed".asInstanceOf[typings.std.stdStrings.failed]
+  inline def failed: typings.std.stdStrings.failed = "failed".asInstanceOf[typings.std.stdStrings.failed]
   
-  @scala.inline
-  def `new`: typings.std.stdStrings.`new` = "new".asInstanceOf[typings.std.stdStrings.`new`]
+  inline def `new`: typings.std.stdStrings.`new` = "new".asInstanceOf[typings.std.stdStrings.`new`]
 }

@@ -16,8 +16,7 @@ trait RaphaelReadAttributes
 }
 object RaphaelReadAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `arrow-end`: String,
     `clip-rect`: String,
     cursor: String,
@@ -70,13 +69,10 @@ object RaphaelReadAttributes {
     __obj.asInstanceOf[RaphaelReadAttributes]
   }
   
-  @scala.inline
-  implicit class RaphaelReadAttributesMutableBuilder[Self <: RaphaelReadAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: RaphaelReadAttributes](x: Self) {
     
-    @scala.inline
-    def setTransform(value: js.Array[RaphaelTransformSegment]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: js.Array[RaphaelTransformSegment]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformVarargs(value: RaphaelTransformSegment*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: RaphaelTransformSegment*): Self = StObject.set(x, "transform", js.Array(value :_*))
   }
 }

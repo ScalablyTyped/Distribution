@@ -26,49 +26,35 @@ trait DriveItemReference extends StObject {
 }
 object DriveItemReference {
   
-  @scala.inline
-  def apply(): DriveItemReference = {
+  inline def apply(): DriveItemReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DriveItemReference]
   }
   
-  @scala.inline
-  implicit class DriveItemReferenceMutableBuilder[Self <: DriveItemReference] (val x: Self) extends AnyVal {
+  extension [Self <: DriveItemReference](x: Self) {
     
-    @scala.inline
-    def setDriveFile(value: js.Any): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
+    inline def setDriveFile(value: js.Any): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveFileUndefined: Self = StObject.set(x, "driveFile", js.undefined)
+    inline def setDriveFileUndefined: Self = StObject.set(x, "driveFile", js.undefined)
     
-    @scala.inline
-    def setDriveFolder(value: DriveFolder): Self = StObject.set(x, "driveFolder", value.asInstanceOf[js.Any])
+    inline def setDriveFolder(value: DriveFolder): Self = StObject.set(x, "driveFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveFolderUndefined: Self = StObject.set(x, "driveFolder", js.undefined)
+    inline def setDriveFolderUndefined: Self = StObject.set(x, "driveFolder", js.undefined)
     
-    @scala.inline
-    def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+    inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class PlatformRef () extends StObject {
   
-  var _destroyListeners: js.Any = js.native
+  /* private */ var _destroyListeners: js.Any = js.native
   
-  var _destroyed: js.Any = js.native
+  /* private */ var _destroyed: js.Any = js.native
   
-  var _injector: js.Any = js.native
+  /* private */ var _injector: js.Any = js.native
   
-  var _moduleDoBootstrap: js.Any = js.native
+  /* private */ var _moduleDoBootstrap: js.Any = js.native
   
-  var _modules: js.Any = js.native
+  /* private */ var _modules: js.Any = js.native
   
   /**
     * Creates an instance of an `@NgModule` for a given platform using the given runtime compiler.

@@ -14,19 +14,15 @@ trait PanoProviderOptions extends StObject {
 }
 object PanoProviderOptions {
   
-  @scala.inline
-  def apply(): PanoProviderOptions = {
+  inline def apply(): PanoProviderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PanoProviderOptions]
   }
   
-  @scala.inline
-  implicit class PanoProviderOptionsMutableBuilder[Self <: PanoProviderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PanoProviderOptions](x: Self) {
     
-    @scala.inline
-    def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+    inline def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+    inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
   }
 }

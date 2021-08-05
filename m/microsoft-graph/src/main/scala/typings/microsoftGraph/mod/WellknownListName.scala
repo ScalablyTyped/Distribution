@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WellknownListName extends StObject
 object WellknownListName {
   
-  @scala.inline
-  def defaultList: typings.microsoftGraph.microsoftGraphStrings.defaultList = "defaultList".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.defaultList]
+  inline def defaultList: typings.microsoftGraph.microsoftGraphStrings.defaultList = "defaultList".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.defaultList]
   
-  @scala.inline
-  def flaggedEmails: typings.microsoftGraph.microsoftGraphStrings.flaggedEmails = "flaggedEmails".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.flaggedEmails]
+  inline def flaggedEmails: typings.microsoftGraph.microsoftGraphStrings.flaggedEmails = "flaggedEmails".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.flaggedEmails]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

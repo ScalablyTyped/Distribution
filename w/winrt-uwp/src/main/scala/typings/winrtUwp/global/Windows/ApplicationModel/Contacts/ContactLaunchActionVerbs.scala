@@ -21,38 +21,33 @@ object ContactLaunchActionVerbs {
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactLaunchActionVerbs.call")
   @js.native
   def call: String = js.native
-  @scala.inline
-  def call_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("call")(x.asInstanceOf[js.Any])
+  inline def call_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("call")(x.asInstanceOf[js.Any])
   
   /** Gets the map contact action. */
   /* static member */
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactLaunchActionVerbs.map")
   @js.native
   def map: String = js.native
-  @scala.inline
-  def map_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("map")(x.asInstanceOf[js.Any])
+  inline def map_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("map")(x.asInstanceOf[js.Any])
   
   /** Gets the send message to a contact action. */
   /* static member */
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactLaunchActionVerbs.message")
   @js.native
   def message: String = js.native
-  @scala.inline
-  def message_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
+  inline def message_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
   
   /** Gets the post to a contact action. */
   /* static member */
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactLaunchActionVerbs.post")
   @js.native
   def post: String = js.native
-  @scala.inline
-  def post_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("post")(x.asInstanceOf[js.Any])
+  inline def post_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("post")(x.asInstanceOf[js.Any])
   
   /** Gets the video call contact action. */
   /* static member */
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactLaunchActionVerbs.videoCall")
   @js.native
   def videoCall: String = js.native
-  @scala.inline
-  def videoCall_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("videoCall")(x.asInstanceOf[js.Any])
+  inline def videoCall_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("videoCall")(x.asInstanceOf[js.Any])
 }

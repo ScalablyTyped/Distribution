@@ -36,7 +36,7 @@ trait DiagramNode extends StObject {
   
   val Diagram: IMsoDiagram = js.native
   
-  @JSName("Excel.DiagramNode_typekey")
+  /* private */ @JSName("Excel.DiagramNode_typekey")
   var ExcelDotDiagramNode_typekey: DiagramNode = js.native
   
   var Layout: MsoOrgChartLayoutType = js.native

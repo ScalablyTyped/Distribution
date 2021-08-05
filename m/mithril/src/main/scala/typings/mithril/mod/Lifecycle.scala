@@ -39,25 +39,20 @@ trait Lifecycle[Attrs, State]
 }
 object Lifecycle {
   
-  @scala.inline
-  def apply[Attrs, State](): Lifecycle[Attrs, State] = {
+  inline def apply[Attrs, State](): Lifecycle[Attrs, State] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Lifecycle[Attrs, State]]
   }
   
-  @scala.inline
-  implicit class LifecycleMutableBuilder[Self <: Lifecycle[?, ?], Attrs, State] (val x: Self & (Lifecycle[Attrs, State])) extends AnyVal {
+  extension [Self <: Lifecycle[?, ?], Attrs, State](x: Self & (Lifecycle[Attrs, State])) {
     
-    @scala.inline
-    def setOnbeforeremove(
+    inline def setOnbeforeremove(
       value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], js.Promise[js.Any] | Unit]
     ): Self = StObject.set(x, "onbeforeremove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnbeforeremoveUndefined: Self = StObject.set(x, "onbeforeremove", js.undefined)
+    inline def setOnbeforeremoveUndefined: Self = StObject.set(x, "onbeforeremove", js.undefined)
     
-    @scala.inline
-    def setOnbeforeupdate(
+    inline def setOnbeforeupdate(
       value: js.ThisFunction2[
           /* this */ State, 
           /* vnode */ Vnode[Attrs, State], 
@@ -66,31 +61,22 @@ object Lifecycle {
         ]
     ): Self = StObject.set(x, "onbeforeupdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnbeforeupdateUndefined: Self = StObject.set(x, "onbeforeupdate", js.undefined)
+    inline def setOnbeforeupdateUndefined: Self = StObject.set(x, "onbeforeupdate", js.undefined)
     
-    @scala.inline
-    def setOncreate(value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], js.Any]): Self = StObject.set(x, "oncreate", value.asInstanceOf[js.Any])
+    inline def setOncreate(value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], js.Any]): Self = StObject.set(x, "oncreate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOncreateUndefined: Self = StObject.set(x, "oncreate", js.undefined)
+    inline def setOncreateUndefined: Self = StObject.set(x, "oncreate", js.undefined)
     
-    @scala.inline
-    def setOninit(value: js.ThisFunction1[/* this */ State, /* vnode */ Vnode[Attrs, State], js.Any]): Self = StObject.set(x, "oninit", value.asInstanceOf[js.Any])
+    inline def setOninit(value: js.ThisFunction1[/* this */ State, /* vnode */ Vnode[Attrs, State], js.Any]): Self = StObject.set(x, "oninit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOninitUndefined: Self = StObject.set(x, "oninit", js.undefined)
+    inline def setOninitUndefined: Self = StObject.set(x, "oninit", js.undefined)
     
-    @scala.inline
-    def setOnremove(value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], js.Any]): Self = StObject.set(x, "onremove", value.asInstanceOf[js.Any])
+    inline def setOnremove(value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], js.Any]): Self = StObject.set(x, "onremove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnremoveUndefined: Self = StObject.set(x, "onremove", js.undefined)
+    inline def setOnremoveUndefined: Self = StObject.set(x, "onremove", js.undefined)
     
-    @scala.inline
-    def setOnupdate(value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], js.Any]): Self = StObject.set(x, "onupdate", value.asInstanceOf[js.Any])
+    inline def setOnupdate(value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], js.Any]): Self = StObject.set(x, "onupdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnupdateUndefined: Self = StObject.set(x, "onupdate", js.undefined)
+    inline def setOnupdateUndefined: Self = StObject.set(x, "onupdate", js.undefined)
   }
 }

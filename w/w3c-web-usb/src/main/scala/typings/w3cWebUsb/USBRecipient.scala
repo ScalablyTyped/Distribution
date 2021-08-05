@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait USBRecipient extends StObject
 object USBRecipient {
   
-  @scala.inline
-  def device: typings.w3cWebUsb.w3cWebUsbStrings.device = "device".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.device]
+  inline def device: typings.w3cWebUsb.w3cWebUsbStrings.device = "device".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.device]
   
-  @scala.inline
-  def endpoint: typings.w3cWebUsb.w3cWebUsbStrings.endpoint = "endpoint".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.endpoint]
+  inline def endpoint: typings.w3cWebUsb.w3cWebUsbStrings.endpoint = "endpoint".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.endpoint]
   
-  @scala.inline
-  def interface: typings.w3cWebUsb.w3cWebUsbStrings.interface = "interface".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.interface]
+  inline def interface: typings.w3cWebUsb.w3cWebUsbStrings.interface = "interface".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.interface]
   
-  @scala.inline
-  def other: typings.w3cWebUsb.w3cWebUsbStrings.other = "other".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.other]
+  inline def other: typings.w3cWebUsb.w3cWebUsbStrings.other = "other".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.other]
 }

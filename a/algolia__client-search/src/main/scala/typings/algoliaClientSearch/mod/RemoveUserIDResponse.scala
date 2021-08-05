@@ -13,16 +13,13 @@ trait RemoveUserIDResponse extends StObject {
 }
 object RemoveUserIDResponse {
   
-  @scala.inline
-  def apply(deletedAt: String): RemoveUserIDResponse = {
+  inline def apply(deletedAt: String): RemoveUserIDResponse = {
     val __obj = js.Dynamic.literal(deletedAt = deletedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveUserIDResponse]
   }
   
-  @scala.inline
-  implicit class RemoveUserIDResponseMutableBuilder[Self <: RemoveUserIDResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveUserIDResponse](x: Self) {
     
-    @scala.inline
-    def setDeletedAt(value: String): Self = StObject.set(x, "deletedAt", value.asInstanceOf[js.Any])
+    inline def setDeletedAt(value: String): Self = StObject.set(x, "deletedAt", value.asInstanceOf[js.Any])
   }
 }

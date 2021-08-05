@@ -24,8 +24,7 @@ trait Directive
 }
 object Directive {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     anchor: Null,
     hasComment: Boolean,
     hasProps: Boolean,
@@ -42,25 +41,18 @@ object Directive {
     __obj.asInstanceOf[Directive]
   }
   
-  @scala.inline
-  implicit class DirectiveMutableBuilder[Self <: Directive] (val x: Self) extends AnyVal {
+  extension [Self <: Directive](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: Null): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: Null): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: js.Array[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersVarargs(value: String*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: String*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setTag(value: Null): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Null): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DIRECTIVE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DIRECTIVE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

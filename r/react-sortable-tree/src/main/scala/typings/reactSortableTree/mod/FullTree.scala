@@ -10,19 +10,15 @@ trait FullTree extends StObject {
 }
 object FullTree {
   
-  @scala.inline
-  def apply(treeData: js.Array[TreeItem]): FullTree = {
+  inline def apply(treeData: js.Array[TreeItem]): FullTree = {
     val __obj = js.Dynamic.literal(treeData = treeData.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullTree]
   }
   
-  @scala.inline
-  implicit class FullTreeMutableBuilder[Self <: FullTree] (val x: Self) extends AnyVal {
+  extension [Self <: FullTree](x: Self) {
     
-    @scala.inline
-    def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
+    inline def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
+    inline def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
   }
 }

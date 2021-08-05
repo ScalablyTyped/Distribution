@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ScaleEffect")
 @js.native
-class ScaleEffect protected ()
+/* private */ class ScaleEffect ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ScaleEffect {
   
@@ -28,7 +28,7 @@ class ScaleEffect protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ScaleEffect_typekey")
   var PowerPointDotScaleEffect_typekey: typings.activexPowerpoint.PowerPoint.ScaleEffect = js.native
   

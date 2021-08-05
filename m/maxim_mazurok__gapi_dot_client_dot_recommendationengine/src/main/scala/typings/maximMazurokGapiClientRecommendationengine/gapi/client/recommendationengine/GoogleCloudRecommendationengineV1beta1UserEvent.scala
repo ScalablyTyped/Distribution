@@ -37,49 +37,35 @@ trait GoogleCloudRecommendationengineV1beta1UserEvent extends StObject {
 }
 object GoogleCloudRecommendationengineV1beta1UserEvent {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1UserEvent = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1UserEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1UserEvent]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1UserEventMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1UserEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1UserEvent](x: Self) {
     
-    @scala.inline
-    def setEventDetail(value: GoogleCloudRecommendationengineV1beta1EventDetail): Self = StObject.set(x, "eventDetail", value.asInstanceOf[js.Any])
+    inline def setEventDetail(value: GoogleCloudRecommendationengineV1beta1EventDetail): Self = StObject.set(x, "eventDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDetailUndefined: Self = StObject.set(x, "eventDetail", js.undefined)
+    inline def setEventDetailUndefined: Self = StObject.set(x, "eventDetail", js.undefined)
     
-    @scala.inline
-    def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+    inline def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceUndefined: Self = StObject.set(x, "eventSource", js.undefined)
+    inline def setEventSourceUndefined: Self = StObject.set(x, "eventSource", js.undefined)
     
-    @scala.inline
-    def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
+    inline def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
+    inline def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
-    @scala.inline
-    def setProductEventDetail(value: GoogleCloudRecommendationengineV1beta1ProductEventDetail): Self = StObject.set(x, "productEventDetail", value.asInstanceOf[js.Any])
+    inline def setProductEventDetail(value: GoogleCloudRecommendationengineV1beta1ProductEventDetail): Self = StObject.set(x, "productEventDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductEventDetailUndefined: Self = StObject.set(x, "productEventDetail", js.undefined)
+    inline def setProductEventDetailUndefined: Self = StObject.set(x, "productEventDetail", js.undefined)
     
-    @scala.inline
-    def setUserInfo(value: GoogleCloudRecommendationengineV1beta1UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: GoogleCloudRecommendationengineV1beta1UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
+    inline def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
   }
 }

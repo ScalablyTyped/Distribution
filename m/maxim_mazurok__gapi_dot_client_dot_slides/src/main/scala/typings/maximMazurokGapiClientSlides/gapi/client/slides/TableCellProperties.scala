@@ -14,25 +14,19 @@ trait TableCellProperties extends StObject {
 }
 object TableCellProperties {
   
-  @scala.inline
-  def apply(): TableCellProperties = {
+  inline def apply(): TableCellProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableCellProperties]
   }
   
-  @scala.inline
-  implicit class TableCellPropertiesMutableBuilder[Self <: TableCellProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TableCellProperties](x: Self) {
     
-    @scala.inline
-    def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
+    inline def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
+    inline def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
     
-    @scala.inline
-    def setTableCellBackgroundFill(value: TableCellBackgroundFill): Self = StObject.set(x, "tableCellBackgroundFill", value.asInstanceOf[js.Any])
+    inline def setTableCellBackgroundFill(value: TableCellBackgroundFill): Self = StObject.set(x, "tableCellBackgroundFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableCellBackgroundFillUndefined: Self = StObject.set(x, "tableCellBackgroundFill", js.undefined)
+    inline def setTableCellBackgroundFillUndefined: Self = StObject.set(x, "tableCellBackgroundFill", js.undefined)
   }
 }

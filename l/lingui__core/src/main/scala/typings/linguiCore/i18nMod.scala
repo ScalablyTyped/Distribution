@@ -68,10 +68,8 @@ object i18nMod {
   @js.native
   val i18n: I18n_ = js.native
   
-  @scala.inline
-  def setupI18n(): I18n_ = ^.asInstanceOf[js.Dynamic].applyDynamic("setupI18n")().asInstanceOf[I18n_]
-  @scala.inline
-  def setupI18n(params: setupI18nProps): I18n_ = ^.asInstanceOf[js.Dynamic].applyDynamic("setupI18n")(params.asInstanceOf[js.Any]).asInstanceOf[I18n_]
+  inline def setupI18n(): I18n_ = ^.asInstanceOf[js.Dynamic].applyDynamic("setupI18n")().asInstanceOf[I18n_]
+  inline def setupI18n(params: setupI18nProps): I18n_ = ^.asInstanceOf[js.Dynamic].applyDynamic("setupI18n")(params.asInstanceOf[js.Any]).asInstanceOf[I18n_]
   
   trait Catalog extends StObject {
     
@@ -81,23 +79,18 @@ object i18nMod {
   }
   object Catalog {
     
-    @scala.inline
-    def apply(messages: Messages): Catalog = {
+    inline def apply(messages: Messages): Catalog = {
       val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
       __obj.asInstanceOf[Catalog]
     }
     
-    @scala.inline
-    implicit class CatalogMutableBuilder[Self <: Catalog] (val x: Self) extends AnyVal {
+    extension [Self <: Catalog](x: Self) {
       
-      @scala.inline
-      def setLanguageData(value: LanguageData): Self = StObject.set(x, "languageData", value.asInstanceOf[js.Any])
+      inline def setLanguageData(value: LanguageData): Self = StObject.set(x, "languageData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageDataUndefined: Self = StObject.set(x, "languageData", js.undefined)
+      inline def setLanguageDataUndefined: Self = StObject.set(x, "languageData", js.undefined)
       
-      @scala.inline
-      def setMessages(value: Messages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: Messages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,20 +104,16 @@ object i18nMod {
   }
   object LanguageData {
     
-    @scala.inline
-    def apply(): LanguageData = {
+    inline def apply(): LanguageData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LanguageData]
     }
     
-    @scala.inline
-    implicit class LanguageDataMutableBuilder[Self <: LanguageData] (val x: Self) extends AnyVal {
+    extension [Self <: LanguageData](x: Self) {
       
-      @scala.inline
-      def setPlurals(value: (/* n */ Double, /* pluralType */ js.UndefOr[cardinal | ordinal]) => String): Self = StObject.set(x, "plurals", js.Any.fromFunction2(value))
+      inline def setPlurals(value: (/* n */ Double, /* pluralType */ js.UndefOr[cardinal | ordinal]) => String): Self = StObject.set(x, "plurals", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPluralsUndefined: Self = StObject.set(x, "plurals", js.undefined)
+      inline def setPluralsUndefined: Self = StObject.set(x, "plurals", js.undefined)
     }
   }
   
@@ -140,35 +129,26 @@ object i18nMod {
   }
   object MessageDescriptor {
     
-    @scala.inline
-    def apply(id: String): MessageDescriptor = {
+    inline def apply(id: String): MessageDescriptor = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageDescriptor]
     }
     
-    @scala.inline
-    implicit class MessageDescriptorMutableBuilder[Self <: MessageDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: MessageDescriptor](x: Self) {
       
-      @scala.inline
-      def setDefaults(value: String): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: String): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+      inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
-      @scala.inline
-      def setFormats(value: js.Object): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: js.Object): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+      inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
   }
   
@@ -180,26 +160,20 @@ object i18nMod {
   }
   object MessageOptions {
     
-    @scala.inline
-    def apply(): MessageOptions = {
+    inline def apply(): MessageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MessageOptions]
     }
     
-    @scala.inline
-    implicit class MessageOptionsMutableBuilder[Self <: MessageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MessageOptions](x: Self) {
       
-      @scala.inline
-      def setDefaults(value: String): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: String): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+      inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
-      @scala.inline
-      def setFormats(value: js.Object): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: js.Object): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+      inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     }
   }
   
@@ -229,50 +203,36 @@ object i18nMod {
   }
   object setupI18nProps {
     
-    @scala.inline
-    def apply(): setupI18nProps = {
+    inline def apply(): setupI18nProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[setupI18nProps]
     }
     
-    @scala.inline
-    implicit class setupI18nPropsMutableBuilder[Self <: setupI18nProps] (val x: Self) extends AnyVal {
+    extension [Self <: setupI18nProps](x: Self) {
       
-      @scala.inline
-      def setCatalogs(value: Catalogs): Self = StObject.set(x, "catalogs", value.asInstanceOf[js.Any])
+      inline def setCatalogs(value: Catalogs): Self = StObject.set(x, "catalogs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatalogsUndefined: Self = StObject.set(x, "catalogs", js.undefined)
+      inline def setCatalogsUndefined: Self = StObject.set(x, "catalogs", js.undefined)
       
-      @scala.inline
-      def setDevelopment(value: js.Object): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
+      inline def setDevelopment(value: js.Object): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevelopmentUndefined: Self = StObject.set(x, "development", js.undefined)
+      inline def setDevelopmentUndefined: Self = StObject.set(x, "development", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+      inline def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+      inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
       
-      @scala.inline
-      def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
       
-      @scala.inline
-      def setMissing(value: String | (js.Function2[/* language */ String, /* id */ String, String])): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+      inline def setMissing(value: String | (js.Function2[/* language */ String, /* id */ String, String])): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingFunction2(value: (/* language */ String, /* id */ String) => String): Self = StObject.set(x, "missing", js.Any.fromFunction2(value))
+      inline def setMissingFunction2(value: (/* language */ String, /* id */ String) => String): Self = StObject.set(x, "missing", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+      inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
     }
   }
 }

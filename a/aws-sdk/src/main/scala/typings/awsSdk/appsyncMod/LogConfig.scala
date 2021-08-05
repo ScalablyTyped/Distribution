@@ -23,25 +23,19 @@ trait LogConfig extends StObject {
 }
 object LogConfig {
   
-  @scala.inline
-  def apply(cloudWatchLogsRoleArn: String, fieldLogLevel: FieldLogLevel): LogConfig = {
+  inline def apply(cloudWatchLogsRoleArn: String, fieldLogLevel: FieldLogLevel): LogConfig = {
     val __obj = js.Dynamic.literal(cloudWatchLogsRoleArn = cloudWatchLogsRoleArn.asInstanceOf[js.Any], fieldLogLevel = fieldLogLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogConfig]
   }
   
-  @scala.inline
-  implicit class LogConfigMutableBuilder[Self <: LogConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LogConfig](x: Self) {
     
-    @scala.inline
-    def setCloudWatchLogsRoleArn(value: String): Self = StObject.set(x, "cloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
+    inline def setCloudWatchLogsRoleArn(value: String): Self = StObject.set(x, "cloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeVerboseContent(value: Boolean): Self = StObject.set(x, "excludeVerboseContent", value.asInstanceOf[js.Any])
+    inline def setExcludeVerboseContent(value: Boolean): Self = StObject.set(x, "excludeVerboseContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeVerboseContentUndefined: Self = StObject.set(x, "excludeVerboseContent", js.undefined)
+    inline def setExcludeVerboseContentUndefined: Self = StObject.set(x, "excludeVerboseContent", js.undefined)
     
-    @scala.inline
-    def setFieldLogLevel(value: FieldLogLevel): Self = StObject.set(x, "fieldLogLevel", value.asInstanceOf[js.Any])
+    inline def setFieldLogLevel(value: FieldLogLevel): Self = StObject.set(x, "fieldLogLevel", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,6 @@ object convertSpeedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(metersPerSecond: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(metersPerSecond.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def default(metersPerSecond: Double, targetUnit: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(metersPerSecond.asInstanceOf[js.Any], targetUnit.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(metersPerSecond: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(metersPerSecond.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(metersPerSecond: Double, targetUnit: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(metersPerSecond.asInstanceOf[js.Any], targetUnit.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -12,28 +12,21 @@ trait EndpointSpec extends StObject {
 }
 object EndpointSpec {
   
-  @scala.inline
-  def apply(): EndpointSpec = {
+  inline def apply(): EndpointSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointSpec]
   }
   
-  @scala.inline
-  implicit class EndpointSpecMutableBuilder[Self <: EndpointSpec] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointSpec](x: Self) {
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
-    @scala.inline
-    def setPorts(value: js.Array[PortConfig]): Self = StObject.set(x, "Ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: js.Array[PortConfig]): Self = StObject.set(x, "Ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsUndefined: Self = StObject.set(x, "Ports", js.undefined)
+    inline def setPortsUndefined: Self = StObject.set(x, "Ports", js.undefined)
     
-    @scala.inline
-    def setPortsVarargs(value: PortConfig*): Self = StObject.set(x, "Ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: PortConfig*): Self = StObject.set(x, "Ports", js.Array(value :_*))
   }
 }

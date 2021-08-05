@@ -24,25 +24,19 @@ trait SchemaFormatComplexity extends StObject {
 }
 object SchemaFormatComplexity {
   
-  @scala.inline
-  def apply(): SchemaFormatComplexity = {
+  inline def apply(): SchemaFormatComplexity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFormatComplexity]
   }
   
-  @scala.inline
-  implicit class SchemaFormatComplexityMutableBuilder[Self <: SchemaFormatComplexity] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFormatComplexity](x: Self) {
     
-    @scala.inline
-    def setLodHint(value: Double): Self = StObject.set(x, "lodHint", value.asInstanceOf[js.Any])
+    inline def setLodHint(value: Double): Self = StObject.set(x, "lodHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLodHintUndefined: Self = StObject.set(x, "lodHint", js.undefined)
+    inline def setLodHintUndefined: Self = StObject.set(x, "lodHint", js.undefined)
     
-    @scala.inline
-    def setTriangleCount(value: String): Self = StObject.set(x, "triangleCount", value.asInstanceOf[js.Any])
+    inline def setTriangleCount(value: String): Self = StObject.set(x, "triangleCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangleCountUndefined: Self = StObject.set(x, "triangleCount", js.undefined)
+    inline def setTriangleCountUndefined: Self = StObject.set(x, "triangleCount", js.undefined)
   }
 }

@@ -35,67 +35,47 @@ trait SharingLink extends StObject {
 }
 object SharingLink {
   
-  @scala.inline
-  def apply(): SharingLink = {
+  inline def apply(): SharingLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SharingLink]
   }
   
-  @scala.inline
-  implicit class SharingLinkMutableBuilder[Self <: SharingLink] (val x: Self) extends AnyVal {
+  extension [Self <: SharingLink](x: Self) {
     
-    @scala.inline
-    def setApplication(value: NullableOption[Identity]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: NullableOption[Identity]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNull: Self = StObject.set(x, "application", null)
+    inline def setApplicationNull: Self = StObject.set(x, "application", null)
     
-    @scala.inline
-    def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+    inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
     
-    @scala.inline
-    def setPreventsDownload(value: NullableOption[Boolean]): Self = StObject.set(x, "preventsDownload", value.asInstanceOf[js.Any])
+    inline def setPreventsDownload(value: NullableOption[Boolean]): Self = StObject.set(x, "preventsDownload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventsDownloadNull: Self = StObject.set(x, "preventsDownload", null)
+    inline def setPreventsDownloadNull: Self = StObject.set(x, "preventsDownload", null)
     
-    @scala.inline
-    def setPreventsDownloadUndefined: Self = StObject.set(x, "preventsDownload", js.undefined)
+    inline def setPreventsDownloadUndefined: Self = StObject.set(x, "preventsDownload", js.undefined)
     
-    @scala.inline
-    def setScope(value: NullableOption[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: NullableOption[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeNull: Self = StObject.set(x, "scope", null)
+    inline def setScopeNull: Self = StObject.set(x, "scope", null)
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWebHtml(value: NullableOption[String]): Self = StObject.set(x, "webHtml", value.asInstanceOf[js.Any])
+    inline def setWebHtml(value: NullableOption[String]): Self = StObject.set(x, "webHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebHtmlNull: Self = StObject.set(x, "webHtml", null)
+    inline def setWebHtmlNull: Self = StObject.set(x, "webHtml", null)
     
-    @scala.inline
-    def setWebHtmlUndefined: Self = StObject.set(x, "webHtml", js.undefined)
+    inline def setWebHtmlUndefined: Self = StObject.set(x, "webHtml", js.undefined)
     
-    @scala.inline
-    def setWebUrl(value: NullableOption[String]): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
+    inline def setWebUrl(value: NullableOption[String]): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebUrlNull: Self = StObject.set(x, "webUrl", null)
+    inline def setWebUrlNull: Self = StObject.set(x, "webUrl", null)
     
-    @scala.inline
-    def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
+    inline def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
   }
 }

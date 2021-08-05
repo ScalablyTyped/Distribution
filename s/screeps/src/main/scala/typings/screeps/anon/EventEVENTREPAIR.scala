@@ -18,8 +18,7 @@ trait EventEVENTREPAIR
 }
 object EventEVENTREPAIR {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_REPAIR] */ js.Any,
     event: EVENT_REPAIR,
     objectId: String
@@ -28,18 +27,14 @@ object EventEVENTREPAIR {
     __obj.asInstanceOf[EventEVENTREPAIR]
   }
   
-  @scala.inline
-  implicit class EventEVENTREPAIRMutableBuilder[Self <: EventEVENTREPAIR] (val x: Self) extends AnyVal {
+  extension [Self <: EventEVENTREPAIR](x: Self) {
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_REPAIR] */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: EVENT_REPAIR): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: EVENT_REPAIR): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }
 }

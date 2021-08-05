@@ -17,19 +17,15 @@ trait SectionUpdateData extends StObject {
 }
 object SectionUpdateData {
   
-  @scala.inline
-  def apply(): SectionUpdateData = {
+  inline def apply(): SectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SectionUpdateData]
   }
   
-  @scala.inline
-  implicit class SectionUpdateDataMutableBuilder[Self <: SectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: SectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setBody(value: BodyUpdateData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BodyUpdateData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
   }
 }

@@ -29,8 +29,7 @@ trait Location
 }
 object Location {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destination: (Location, Double) => Double,
     distanceTo: (Double, Double) => Location,
     equals_ : Location => Boolean,
@@ -46,34 +45,24 @@ object Location {
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setDestination(value: (Location, Double) => Double): Self = StObject.set(x, "destination", js.Any.fromFunction2(value))
+    inline def setDestination(value: (Location, Double) => Double): Self = StObject.set(x, "destination", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDistanceTo(value: (Double, Double) => Location): Self = StObject.set(x, "distanceTo", js.Any.fromFunction2(value))
+    inline def setDistanceTo(value: (Double, Double) => Location): Self = StObject.set(x, "distanceTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEquals_(value: Location => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: Location => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+    inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+    inline def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: LocationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: LocationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRound(value: Double => Location): Self = StObject.set(x, "round", js.Any.fromFunction1(value))
+    inline def setRound(value: Double => Location): Self = StObject.set(x, "round", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToArray(value: () => js.Any): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+    inline def setToArray(value: () => js.Any): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWrap(value: () => Location): Self = StObject.set(x, "wrap", js.Any.fromFunction0(value))
+    inline def setWrap(value: () => Location): Self = StObject.set(x, "wrap", js.Any.fromFunction0(value))
   }
 }

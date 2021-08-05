@@ -36,8 +36,7 @@ trait XGraphic
 }
 object XGraphic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Type: Double,
     acquire: () => Unit,
     getType: () => Double,
@@ -48,13 +47,10 @@ object XGraphic {
     __obj.asInstanceOf[XGraphic]
   }
   
-  @scala.inline
-  implicit class XGraphicMutableBuilder[Self <: XGraphic] (val x: Self) extends AnyVal {
+  extension [Self <: XGraphic](x: Self) {
     
-    @scala.inline
-    def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

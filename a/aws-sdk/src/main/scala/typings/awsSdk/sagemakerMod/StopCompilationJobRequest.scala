@@ -13,16 +13,13 @@ trait StopCompilationJobRequest extends StObject {
 }
 object StopCompilationJobRequest {
   
-  @scala.inline
-  def apply(CompilationJobName: EntityName): StopCompilationJobRequest = {
+  inline def apply(CompilationJobName: EntityName): StopCompilationJobRequest = {
     val __obj = js.Dynamic.literal(CompilationJobName = CompilationJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopCompilationJobRequest]
   }
   
-  @scala.inline
-  implicit class StopCompilationJobRequestMutableBuilder[Self <: StopCompilationJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopCompilationJobRequest](x: Self) {
     
-    @scala.inline
-    def setCompilationJobName(value: EntityName): Self = StObject.set(x, "CompilationJobName", value.asInstanceOf[js.Any])
+    inline def setCompilationJobName(value: EntityName): Self = StObject.set(x, "CompilationJobName", value.asInstanceOf[js.Any])
   }
 }

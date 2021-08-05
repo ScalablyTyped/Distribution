@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreationDetails extends StObject
 object CreationDetails {
   
-  @scala.inline
-  def CADetails(
+  inline def CADetails(
     AccountNumber: String,
     BankName: String,
     BranchCode: String,
@@ -28,26 +27,22 @@ object CreationDetails {
     __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.bankAccount.CADetails]
   }
   
-  @scala.inline
-  def GBDetails(AccountNumber: String, OwnerAddress: AddressType, OwnerName: String, SortCode: String): typings.mangopay2NodejsSdk.mod.bankAccount.GBDetails = {
+  inline def GBDetails(AccountNumber: String, OwnerAddress: AddressType, OwnerName: String, SortCode: String): typings.mangopay2NodejsSdk.mod.bankAccount.GBDetails = {
     val __obj = js.Dynamic.literal(AccountNumber = AccountNumber.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], SortCode = SortCode.asInstanceOf[js.Any], Type = "GB")
     __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.bankAccount.GBDetails]
   }
   
-  @scala.inline
-  def IBANDetails(IBAN: String, OwnerAddress: AddressType, OwnerName: String): typings.mangopay2NodejsSdk.mod.bankAccount.IBANDetails = {
+  inline def IBANDetails(IBAN: String, OwnerAddress: AddressType, OwnerName: String): typings.mangopay2NodejsSdk.mod.bankAccount.IBANDetails = {
     val __obj = js.Dynamic.literal(IBAN = IBAN.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], Type = "IBAN")
     __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.bankAccount.IBANDetails]
   }
   
-  @scala.inline
-  def OtherDetails(AccountNumber: String, BIC: String, Country: String, OwnerAddress: AddressType, OwnerName: String): typings.mangopay2NodejsSdk.mod.bankAccount.OtherDetails = {
+  inline def OtherDetails(AccountNumber: String, BIC: String, Country: String, OwnerAddress: AddressType, OwnerName: String): typings.mangopay2NodejsSdk.mod.bankAccount.OtherDetails = {
     val __obj = js.Dynamic.literal(AccountNumber = AccountNumber.asInstanceOf[js.Any], BIC = BIC.asInstanceOf[js.Any], Country = Country.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], Type = "OTHER")
     __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.bankAccount.OtherDetails]
   }
   
-  @scala.inline
-  def USDetails(ABA: String, AccountNumber: String, OwnerAddress: AddressType, OwnerName: String): typings.mangopay2NodejsSdk.mod.bankAccount.USDetails = {
+  inline def USDetails(ABA: String, AccountNumber: String, OwnerAddress: AddressType, OwnerName: String): typings.mangopay2NodejsSdk.mod.bankAccount.USDetails = {
     val __obj = js.Dynamic.literal(ABA = ABA.asInstanceOf[js.Any], AccountNumber = AccountNumber.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], Type = "US")
     __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.bankAccount.USDetails]
   }

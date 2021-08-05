@@ -15,25 +15,19 @@ trait ListStateMachinesOutput extends StObject {
 }
 object ListStateMachinesOutput {
   
-  @scala.inline
-  def apply(stateMachines: StateMachineList): ListStateMachinesOutput = {
+  inline def apply(stateMachines: StateMachineList): ListStateMachinesOutput = {
     val __obj = js.Dynamic.literal(stateMachines = stateMachines.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStateMachinesOutput]
   }
   
-  @scala.inline
-  implicit class ListStateMachinesOutputMutableBuilder[Self <: ListStateMachinesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListStateMachinesOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setStateMachines(value: StateMachineList): Self = StObject.set(x, "stateMachines", value.asInstanceOf[js.Any])
+    inline def setStateMachines(value: StateMachineList): Self = StObject.set(x, "stateMachines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateMachinesVarargs(value: StateMachineListItem*): Self = StObject.set(x, "stateMachines", js.Array(value :_*))
+    inline def setStateMachinesVarargs(value: StateMachineListItem*): Self = StObject.set(x, "stateMachines", js.Array(value :_*))
   }
 }

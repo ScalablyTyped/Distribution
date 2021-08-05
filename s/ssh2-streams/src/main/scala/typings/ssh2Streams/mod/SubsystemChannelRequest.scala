@@ -19,25 +19,19 @@ trait SubsystemChannelRequest
 }
 object SubsystemChannelRequest {
   
-  @scala.inline
-  def apply(recipient: Double, subsystem: String, wantReply: Boolean): SubsystemChannelRequest = {
+  inline def apply(recipient: Double, subsystem: String, wantReply: Boolean): SubsystemChannelRequest = {
     val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = "subsystem", subsystem = subsystem.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubsystemChannelRequest]
   }
   
-  @scala.inline
-  implicit class SubsystemChannelRequestMutableBuilder[Self <: SubsystemChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubsystemChannelRequest](x: Self) {
     
-    @scala.inline
-    def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: subsystem): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: subsystem): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubsystem(value: String): Self = StObject.set(x, "subsystem", value.asInstanceOf[js.Any])
+    inline def setSubsystem(value: String): Self = StObject.set(x, "subsystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWantReply(value: Boolean): Self = StObject.set(x, "wantReply", value.asInstanceOf[js.Any])
+    inline def setWantReply(value: Boolean): Self = StObject.set(x, "wantReply", value.asInstanceOf[js.Any])
   }
 }

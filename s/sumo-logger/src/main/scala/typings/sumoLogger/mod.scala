@@ -38,23 +38,18 @@ object mod {
   }
   object PerMessageOptions {
     
-    @scala.inline
-    def apply(sessionKey: String, timestamp: Date, url: String): PerMessageOptions = {
+    inline def apply(sessionKey: String, timestamp: Date, url: String): PerMessageOptions = {
       val __obj = js.Dynamic.literal(sessionKey = sessionKey.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[PerMessageOptions]
     }
     
-    @scala.inline
-    implicit class PerMessageOptionsMutableBuilder[Self <: PerMessageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PerMessageOptions](x: Self) {
       
-      @scala.inline
-      def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
+      inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,95 +197,66 @@ object mod {
   }
   object SumoLoggerOptions {
     
-    @scala.inline
-    def apply(endpoint: String): SumoLoggerOptions = {
+    inline def apply(endpoint: String): SumoLoggerOptions = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[SumoLoggerOptions]
     }
     
-    @scala.inline
-    implicit class SumoLoggerOptionsMutableBuilder[Self <: SumoLoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SumoLoggerOptions](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setClientUrl(value: String): Self = StObject.set(x, "clientUrl", value.asInstanceOf[js.Any])
+      inline def setClientUrl(value: String): Self = StObject.set(x, "clientUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUrlUndefined: Self = StObject.set(x, "clientUrl", js.undefined)
+      inline def setClientUrlUndefined: Self = StObject.set(x, "clientUrl", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphite(value: Boolean): Self = StObject.set(x, "graphite", value.asInstanceOf[js.Any])
+      inline def setGraphite(value: Boolean): Self = StObject.set(x, "graphite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphiteUndefined: Self = StObject.set(x, "graphite", js.undefined)
+      inline def setGraphiteUndefined: Self = StObject.set(x, "graphite", js.undefined)
       
-      @scala.inline
-      def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
+      inline def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostNameUndefined: Self = StObject.set(x, "hostName", js.undefined)
+      inline def setHostNameUndefined: Self = StObject.set(x, "hostName", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
+      inline def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
+      inline def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+      inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      @scala.inline
-      def setSendErrors(value: Boolean): Self = StObject.set(x, "sendErrors", value.asInstanceOf[js.Any])
+      inline def setSendErrors(value: Boolean): Self = StObject.set(x, "sendErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendErrorsUndefined: Self = StObject.set(x, "sendErrors", js.undefined)
+      inline def setSendErrorsUndefined: Self = StObject.set(x, "sendErrors", js.undefined)
       
-      @scala.inline
-      def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
+      inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
+      inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
       
-      @scala.inline
-      def setSourceCategory(value: String): Self = StObject.set(x, "sourceCategory", value.asInstanceOf[js.Any])
+      inline def setSourceCategory(value: String): Self = StObject.set(x, "sourceCategory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCategoryUndefined: Self = StObject.set(x, "sourceCategory", js.undefined)
+      inline def setSourceCategoryUndefined: Self = StObject.set(x, "sourceCategory", js.undefined)
       
-      @scala.inline
-      def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
+      inline def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceNameUndefined: Self = StObject.set(x, "sourceName", js.undefined)
+      inline def setSourceNameUndefined: Self = StObject.set(x, "sourceName", js.undefined)
       
-      @scala.inline
-      def setUseIntervalOnly(value: Boolean): Self = StObject.set(x, "useIntervalOnly", value.asInstanceOf[js.Any])
+      inline def setUseIntervalOnly(value: Boolean): Self = StObject.set(x, "useIntervalOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseIntervalOnlyUndefined: Self = StObject.set(x, "useIntervalOnly", js.undefined)
+      inline def setUseIntervalOnlyUndefined: Self = StObject.set(x, "useIntervalOnly", js.undefined)
     }
   }
 }

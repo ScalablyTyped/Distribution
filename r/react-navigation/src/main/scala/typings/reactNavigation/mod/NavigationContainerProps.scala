@@ -51,87 +51,61 @@ trait NavigationContainerProps[State, Options, ScreenProps] extends StObject {
 }
 object NavigationContainerProps {
   
-  @scala.inline
-  def apply[State, Options, ScreenProps](): NavigationContainerProps[State, Options, ScreenProps] = {
+  inline def apply[State, Options, ScreenProps](): NavigationContainerProps[State, Options, ScreenProps] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationContainerProps[State, Options, ScreenProps]]
   }
   
-  @scala.inline
-  implicit class NavigationContainerPropsMutableBuilder[Self <: NavigationContainerProps[?, ?, ?], State, Options, ScreenProps] (val x: Self & (NavigationContainerProps[State, Options, ScreenProps])) extends AnyVal {
+  extension [Self <: NavigationContainerProps[?, ?, ?], State, Options, ScreenProps](x: Self & (NavigationContainerProps[State, Options, ScreenProps])) {
     
-    @scala.inline
-    def setEnableURLHandling(value: Boolean): Self = StObject.set(x, "enableURLHandling", value.asInstanceOf[js.Any])
+    inline def setEnableURLHandling(value: Boolean): Self = StObject.set(x, "enableURLHandling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableURLHandlingUndefined: Self = StObject.set(x, "enableURLHandling", js.undefined)
+    inline def setEnableURLHandlingUndefined: Self = StObject.set(x, "enableURLHandling", js.undefined)
     
-    @scala.inline
-    def setLoadNavigationState(value: () => js.Promise[js.Any]): Self = StObject.set(x, "loadNavigationState", js.Any.fromFunction0(value))
+    inline def setLoadNavigationState(value: () => js.Promise[js.Any]): Self = StObject.set(x, "loadNavigationState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadNavigationStateUndefined: Self = StObject.set(x, "loadNavigationState", js.undefined)
+    inline def setLoadNavigationStateUndefined: Self = StObject.set(x, "loadNavigationState", js.undefined)
     
-    @scala.inline
-    def setNavigation(value: NavigationScreenProp[State, NavigationParams]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: NavigationScreenProp[State, NavigationParams]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationOptions(value: Options): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
+    inline def setNavigationOptions(value: Options): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
+    inline def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
     
-    @scala.inline
-    def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
+    inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
     
-    @scala.inline
-    def setOnNavigationStateChange(
+    inline def setOnNavigationStateChange(
       value: (/* prevNavigationState */ NavigationState, /* nextNavigationState */ NavigationState, /* action */ NavigationAction) => js.UndefOr[Unit | Null]
     ): Self = StObject.set(x, "onNavigationStateChange", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnNavigationStateChangeUndefined: Self = StObject.set(x, "onNavigationStateChange", js.undefined)
+    inline def setOnNavigationStateChangeUndefined: Self = StObject.set(x, "onNavigationStateChange", js.undefined)
     
-    @scala.inline
-    def setPersistNavigationState(value: /* state */ NavigationState => js.Promise[js.Any]): Self = StObject.set(x, "persistNavigationState", js.Any.fromFunction1(value))
+    inline def setPersistNavigationState(value: /* state */ NavigationState => js.Promise[js.Any]): Self = StObject.set(x, "persistNavigationState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPersistNavigationStateUndefined: Self = StObject.set(x, "persistNavigationState", js.undefined)
+    inline def setPersistNavigationStateUndefined: Self = StObject.set(x, "persistNavigationState", js.undefined)
     
-    @scala.inline
-    def setPersistenceKey(value: String): Self = StObject.set(x, "persistenceKey", value.asInstanceOf[js.Any])
+    inline def setPersistenceKey(value: String): Self = StObject.set(x, "persistenceKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistenceKeyNull: Self = StObject.set(x, "persistenceKey", null)
+    inline def setPersistenceKeyNull: Self = StObject.set(x, "persistenceKey", null)
     
-    @scala.inline
-    def setPersistenceKeyUndefined: Self = StObject.set(x, "persistenceKey", js.undefined)
+    inline def setPersistenceKeyUndefined: Self = StObject.set(x, "persistenceKey", js.undefined)
     
-    @scala.inline
-    def setRenderLoadingExperimental(value: ComponentType[js.Object]): Self = StObject.set(x, "renderLoadingExperimental", value.asInstanceOf[js.Any])
+    inline def setRenderLoadingExperimental(value: ComponentType[js.Object]): Self = StObject.set(x, "renderLoadingExperimental", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderLoadingExperimentalUndefined: Self = StObject.set(x, "renderLoadingExperimental", js.undefined)
+    inline def setRenderLoadingExperimentalUndefined: Self = StObject.set(x, "renderLoadingExperimental", js.undefined)
     
-    @scala.inline
-    def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+    inline def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
+    inline def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
     
-    @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setUriPrefix(value: String | RegExp): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
+    inline def setUriPrefix(value: String | RegExp): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriPrefixUndefined: Self = StObject.set(x, "uriPrefix", js.undefined)
+    inline def setUriPrefixUndefined: Self = StObject.set(x, "uriPrefix", js.undefined)
   }
 }

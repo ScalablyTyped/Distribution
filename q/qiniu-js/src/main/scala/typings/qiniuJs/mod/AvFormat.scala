@@ -25,8 +25,7 @@ trait AvFormat extends StObject {
 }
 object AvFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bit_rate: String,
     duration: String,
     format_long_name: String,
@@ -40,31 +39,22 @@ object AvFormat {
     __obj.asInstanceOf[AvFormat]
   }
   
-  @scala.inline
-  implicit class AvFormatMutableBuilder[Self <: AvFormat] (val x: Self) extends AnyVal {
+  extension [Self <: AvFormat](x: Self) {
     
-    @scala.inline
-    def setBit_rate(value: String): Self = StObject.set(x, "bit_rate", value.asInstanceOf[js.Any])
+    inline def setBit_rate(value: String): Self = StObject.set(x, "bit_rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat_long_name(value: String): Self = StObject.set(x, "format_long_name", value.asInstanceOf[js.Any])
+    inline def setFormat_long_name(value: String): Self = StObject.set(x, "format_long_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat_name(value: String): Self = StObject.set(x, "format_name", value.asInstanceOf[js.Any])
+    inline def setFormat_name(value: String): Self = StObject.set(x, "format_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNb_streams(value: Double): Self = StObject.set(x, "nb_streams", value.asInstanceOf[js.Any])
+    inline def setNb_streams(value: Double): Self = StObject.set(x, "nb_streams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
+    inline def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Dictkey): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Dictkey): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait VastCompanionTrackingEvents
 }
 object VastCompanionTrackingEvents {
   
-  @scala.inline
-  def apply(creativeView: js.Array[String]): VastCompanionTrackingEvents = {
+  inline def apply(creativeView: js.Array[String]): VastCompanionTrackingEvents = {
     val __obj = js.Dynamic.literal(creativeView = creativeView.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastCompanionTrackingEvents]
   }
   
-  @scala.inline
-  implicit class VastCompanionTrackingEventsMutableBuilder[Self <: VastCompanionTrackingEvents] (val x: Self) extends AnyVal {
+  extension [Self <: VastCompanionTrackingEvents](x: Self) {
     
-    @scala.inline
-    def setCreativeView(value: js.Array[String]): Self = StObject.set(x, "creativeView", value.asInstanceOf[js.Any])
+    inline def setCreativeView(value: js.Array[String]): Self = StObject.set(x, "creativeView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeViewVarargs(value: String*): Self = StObject.set(x, "creativeView", js.Array(value :_*))
+    inline def setCreativeViewVarargs(value: String*): Self = StObject.set(x, "creativeView", js.Array(value :_*))
   }
 }

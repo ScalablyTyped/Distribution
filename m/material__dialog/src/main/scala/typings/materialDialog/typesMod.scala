@@ -21,20 +21,16 @@ object typesMod {
   }
   object MDCDialogCloseEventDetail {
     
-    @scala.inline
-    def apply(): MDCDialogCloseEventDetail = {
+    inline def apply(): MDCDialogCloseEventDetail = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MDCDialogCloseEventDetail]
     }
     
-    @scala.inline
-    implicit class MDCDialogCloseEventDetailMutableBuilder[Self <: MDCDialogCloseEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: MDCDialogCloseEventDetail](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     }
   }
 }

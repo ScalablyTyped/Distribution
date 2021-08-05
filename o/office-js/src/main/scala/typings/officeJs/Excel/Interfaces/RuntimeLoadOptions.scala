@@ -28,25 +28,19 @@ trait RuntimeLoadOptions extends StObject {
 }
 object RuntimeLoadOptions {
   
-  @scala.inline
-  def apply(): RuntimeLoadOptions = {
+  inline def apply(): RuntimeLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuntimeLoadOptions]
   }
   
-  @scala.inline
-  implicit class RuntimeLoadOptionsMutableBuilder[Self <: RuntimeLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RuntimeLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setEnableEvents(value: Boolean): Self = StObject.set(x, "enableEvents", value.asInstanceOf[js.Any])
+    inline def setEnableEvents(value: Boolean): Self = StObject.set(x, "enableEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableEventsUndefined: Self = StObject.set(x, "enableEvents", js.undefined)
+    inline def setEnableEventsUndefined: Self = StObject.set(x, "enableEvents", js.undefined)
   }
 }

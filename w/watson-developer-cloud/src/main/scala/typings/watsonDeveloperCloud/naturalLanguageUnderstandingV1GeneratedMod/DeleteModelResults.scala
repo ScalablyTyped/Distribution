@@ -12,19 +12,15 @@ trait DeleteModelResults extends StObject {
 }
 object DeleteModelResults {
   
-  @scala.inline
-  def apply(): DeleteModelResults = {
+  inline def apply(): DeleteModelResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteModelResults]
   }
   
-  @scala.inline
-  implicit class DeleteModelResultsMutableBuilder[Self <: DeleteModelResults] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteModelResults](x: Self) {
     
-    @scala.inline
-    def setDeleted(value: String): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: String): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait IPrintTaskSourceRequestedDeferral extends StObject {
 }
 object IPrintTaskSourceRequestedDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): IPrintTaskSourceRequestedDeferral = {
+  inline def apply(complete: () => Unit): IPrintTaskSourceRequestedDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[IPrintTaskSourceRequestedDeferral]
   }
   
-  @scala.inline
-  implicit class IPrintTaskSourceRequestedDeferralMutableBuilder[Self <: IPrintTaskSourceRequestedDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintTaskSourceRequestedDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

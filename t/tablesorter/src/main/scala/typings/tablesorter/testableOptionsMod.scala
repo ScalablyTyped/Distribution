@@ -15,20 +15,16 @@ object testableOptionsMod {
   }
   object TestableOptions {
     
-    @scala.inline
-    def apply(): TestableOptions = {
+    inline def apply(): TestableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TestableOptions]
     }
     
-    @scala.inline
-    implicit class TestableOptionsMutableBuilder[Self <: TestableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TestableOptions](x: Self) {
       
-      @scala.inline
-      def setSkipTest(value: Boolean): Self = StObject.set(x, "skipTest", value.asInstanceOf[js.Any])
+      inline def setSkipTest(value: Boolean): Self = StObject.set(x, "skipTest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipTestUndefined: Self = StObject.set(x, "skipTest", js.undefined)
+      inline def setSkipTestUndefined: Self = StObject.set(x, "skipTest", js.undefined)
     }
   }
 }

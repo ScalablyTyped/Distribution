@@ -15,6 +15,5 @@ object BufferUtils {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertArrayToArrayBuffer(`type`: typings.wonderJs.evariabletypeMod.EVariableType, value: js.Array[js.Any]): typings.wonderJs.arrayBufferMod.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convertArrayToArrayBuffer")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.arrayBufferMod.ArrayBuffer]
+  inline def convertArrayToArrayBuffer(`type`: typings.wonderJs.evariabletypeMod.EVariableType, value: js.Array[js.Any]): typings.wonderJs.arrayBufferMod.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convertArrayToArrayBuffer")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.arrayBufferMod.ArrayBuffer]
 }

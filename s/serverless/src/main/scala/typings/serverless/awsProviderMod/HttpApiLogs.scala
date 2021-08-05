@@ -10,19 +10,15 @@ trait HttpApiLogs extends StObject {
 }
 object HttpApiLogs {
   
-  @scala.inline
-  def apply(): HttpApiLogs = {
+  inline def apply(): HttpApiLogs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpApiLogs]
   }
   
-  @scala.inline
-  implicit class HttpApiLogsMutableBuilder[Self <: HttpApiLogs] (val x: Self) extends AnyVal {
+  extension [Self <: HttpApiLogs](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

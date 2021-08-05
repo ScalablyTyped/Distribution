@@ -11,19 +11,15 @@ trait UpgradeInstanceInternalRequest extends StObject {
 }
 object UpgradeInstanceInternalRequest {
   
-  @scala.inline
-  def apply(): UpgradeInstanceInternalRequest = {
+  inline def apply(): UpgradeInstanceInternalRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpgradeInstanceInternalRequest]
   }
   
-  @scala.inline
-  implicit class UpgradeInstanceInternalRequestMutableBuilder[Self <: UpgradeInstanceInternalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpgradeInstanceInternalRequest](x: Self) {
     
-    @scala.inline
-    def setVmId(value: String): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
+    inline def setVmId(value: String): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmIdUndefined: Self = StObject.set(x, "vmId", js.undefined)
+    inline def setVmIdUndefined: Self = StObject.set(x, "vmId", js.undefined)
   }
 }

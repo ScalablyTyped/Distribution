@@ -14,22 +14,17 @@ trait ReadableStreamBYOBRequest extends StObject {
 }
 object ReadableStreamBYOBRequest {
   
-  @scala.inline
-  def apply(respond: Double => Unit, respondWithNewView: ArrayBufferView => Unit, view: ArrayBufferView): ReadableStreamBYOBRequest = {
+  inline def apply(respond: Double => Unit, respondWithNewView: ArrayBufferView => Unit, view: ArrayBufferView): ReadableStreamBYOBRequest = {
     val __obj = js.Dynamic.literal(respond = js.Any.fromFunction1(respond), respondWithNewView = js.Any.fromFunction1(respondWithNewView), view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadableStreamBYOBRequest]
   }
   
-  @scala.inline
-  implicit class ReadableStreamBYOBRequestMutableBuilder[Self <: ReadableStreamBYOBRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReadableStreamBYOBRequest](x: Self) {
     
-    @scala.inline
-    def setRespond(value: Double => Unit): Self = StObject.set(x, "respond", js.Any.fromFunction1(value))
+    inline def setRespond(value: Double => Unit): Self = StObject.set(x, "respond", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRespondWithNewView(value: ArrayBufferView => Unit): Self = StObject.set(x, "respondWithNewView", js.Any.fromFunction1(value))
+    inline def setRespondWithNewView(value: ArrayBufferView => Unit): Self = StObject.set(x, "respondWithNewView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setView(value: ArrayBufferView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: ArrayBufferView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

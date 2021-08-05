@@ -16,8 +16,7 @@ trait AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience]
 }
 object AdGroupTargeting {
   
-  @scala.inline
-  def apply[SearchAdGroupAudience, SearchAdGroupExcludedAudience](
+  inline def apply[SearchAdGroupAudience, SearchAdGroupExcludedAudience](
     audiences: () => AdWordsSelector[SearchAdGroupAudience],
     exculdedAudiences: () => AdWordsSelector[SearchAdGroupExcludedAudience],
     getTargetingSetting: () => String,
@@ -28,16 +27,12 @@ object AdGroupTargeting {
     __obj.asInstanceOf[AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience]]
   }
   
-  @scala.inline
-  implicit class AdGroupTargetingMutableBuilder[Self <: AdGroupTargeting[?, ?], SearchAdGroupAudience, SearchAdGroupExcludedAudience] (val x: Self & (AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience])) extends AnyVal {
+  extension [Self <: AdGroupTargeting[?, ?], SearchAdGroupAudience, SearchAdGroupExcludedAudience](x: Self & (AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience])) {
     
-    @scala.inline
-    def setGetTargetingSetting(value: () => String): Self = StObject.set(x, "getTargetingSetting", js.Any.fromFunction0(value))
+    inline def setGetTargetingSetting(value: () => String): Self = StObject.set(x, "getTargetingSetting", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUserListBuilder(value: () => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = StObject.set(x, "newUserListBuilder", js.Any.fromFunction0(value))
+    inline def setNewUserListBuilder(value: () => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = StObject.set(x, "newUserListBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetTargetingSetting(value: (CriterionTypeGroup, TargetingSetting) => Unit): Self = StObject.set(x, "setTargetingSetting", js.Any.fromFunction2(value))
+    inline def setSetTargetingSetting(value: (CriterionTypeGroup, TargetingSetting) => Unit): Self = StObject.set(x, "setTargetingSetting", js.Any.fromFunction2(value))
   }
 }

@@ -335,319 +335,215 @@ trait IgTreeGridPaging
 }
 object IgTreeGridPaging {
   
-  @scala.inline
-  def apply(): IgTreeGridPaging = {
+  inline def apply(): IgTreeGridPaging = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTreeGridPaging]
   }
   
-  @scala.inline
-  implicit class IgTreeGridPagingMutableBuilder[Self <: IgTreeGridPaging] (val x: Self) extends AnyVal {
+  extension [Self <: IgTreeGridPaging](x: Self) {
     
-    @scala.inline
-    def setBreadcrumbDelimiter(value: String): Self = StObject.set(x, "breadcrumbDelimiter", value.asInstanceOf[js.Any])
+    inline def setBreadcrumbDelimiter(value: String): Self = StObject.set(x, "breadcrumbDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreadcrumbDelimiterUndefined: Self = StObject.set(x, "breadcrumbDelimiter", js.undefined)
+    inline def setBreadcrumbDelimiterUndefined: Self = StObject.set(x, "breadcrumbDelimiter", js.undefined)
     
-    @scala.inline
-    def setBreadcrumbKey(value: String): Self = StObject.set(x, "breadcrumbKey", value.asInstanceOf[js.Any])
+    inline def setBreadcrumbKey(value: String): Self = StObject.set(x, "breadcrumbKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreadcrumbKeyUndefined: Self = StObject.set(x, "breadcrumbKey", js.undefined)
+    inline def setBreadcrumbKeyUndefined: Self = StObject.set(x, "breadcrumbKey", js.undefined)
     
-    @scala.inline
-    def setContextRowLoadingText(value: String): Self = StObject.set(x, "contextRowLoadingText", value.asInstanceOf[js.Any])
+    inline def setContextRowLoadingText(value: String): Self = StObject.set(x, "contextRowLoadingText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextRowLoadingTextUndefined: Self = StObject.set(x, "contextRowLoadingText", js.undefined)
+    inline def setContextRowLoadingTextUndefined: Self = StObject.set(x, "contextRowLoadingText", js.undefined)
     
-    @scala.inline
-    def setContextRowMode(value: String): Self = StObject.set(x, "contextRowMode", value.asInstanceOf[js.Any])
+    inline def setContextRowMode(value: String): Self = StObject.set(x, "contextRowMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextRowModeUndefined: Self = StObject.set(x, "contextRowMode", js.undefined)
+    inline def setContextRowModeUndefined: Self = StObject.set(x, "contextRowMode", js.undefined)
     
-    @scala.inline
-    def setContextRowRendered(value: (/* event */ Event, /* ui */ ContextRowRenderedEventUIParam) => Unit): Self = StObject.set(x, "contextRowRendered", js.Any.fromFunction2(value))
+    inline def setContextRowRendered(value: (/* event */ Event, /* ui */ ContextRowRenderedEventUIParam) => Unit): Self = StObject.set(x, "contextRowRendered", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setContextRowRenderedUndefined: Self = StObject.set(x, "contextRowRendered", js.undefined)
+    inline def setContextRowRenderedUndefined: Self = StObject.set(x, "contextRowRendered", js.undefined)
     
-    @scala.inline
-    def setContextRowRendering(value: (/* event */ Event, /* ui */ ContextRowRenderingEventUIParam) => Unit): Self = StObject.set(x, "contextRowRendering", js.Any.fromFunction2(value))
+    inline def setContextRowRendering(value: (/* event */ Event, /* ui */ ContextRowRenderingEventUIParam) => Unit): Self = StObject.set(x, "contextRowRendering", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setContextRowRenderingUndefined: Self = StObject.set(x, "contextRowRendering", js.undefined)
+    inline def setContextRowRenderingUndefined: Self = StObject.set(x, "contextRowRendering", js.undefined)
     
-    @scala.inline
-    def setContextRowRootText(value: String): Self = StObject.set(x, "contextRowRootText", value.asInstanceOf[js.Any])
+    inline def setContextRowRootText(value: String): Self = StObject.set(x, "contextRowRootText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextRowRootTextUndefined: Self = StObject.set(x, "contextRowRootText", js.undefined)
+    inline def setContextRowRootTextUndefined: Self = StObject.set(x, "contextRowRootText", js.undefined)
     
-    @scala.inline
-    def setCurrentPageDropDownLeadingLabel(value: String): Self = StObject.set(x, "currentPageDropDownLeadingLabel", value.asInstanceOf[js.Any])
+    inline def setCurrentPageDropDownLeadingLabel(value: String): Self = StObject.set(x, "currentPageDropDownLeadingLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageDropDownLeadingLabelUndefined: Self = StObject.set(x, "currentPageDropDownLeadingLabel", js.undefined)
+    inline def setCurrentPageDropDownLeadingLabelUndefined: Self = StObject.set(x, "currentPageDropDownLeadingLabel", js.undefined)
     
-    @scala.inline
-    def setCurrentPageDropDownTooltip(value: String): Self = StObject.set(x, "currentPageDropDownTooltip", value.asInstanceOf[js.Any])
+    inline def setCurrentPageDropDownTooltip(value: String): Self = StObject.set(x, "currentPageDropDownTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageDropDownTooltipUndefined: Self = StObject.set(x, "currentPageDropDownTooltip", js.undefined)
+    inline def setCurrentPageDropDownTooltipUndefined: Self = StObject.set(x, "currentPageDropDownTooltip", js.undefined)
     
-    @scala.inline
-    def setCurrentPageDropDownTrailingLabel(value: String): Self = StObject.set(x, "currentPageDropDownTrailingLabel", value.asInstanceOf[js.Any])
+    inline def setCurrentPageDropDownTrailingLabel(value: String): Self = StObject.set(x, "currentPageDropDownTrailingLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageDropDownTrailingLabelUndefined: Self = StObject.set(x, "currentPageDropDownTrailingLabel", js.undefined)
+    inline def setCurrentPageDropDownTrailingLabelUndefined: Self = StObject.set(x, "currentPageDropDownTrailingLabel", js.undefined)
     
-    @scala.inline
-    def setCurrentPageIndex(value: Double): Self = StObject.set(x, "currentPageIndex", value.asInstanceOf[js.Any])
+    inline def setCurrentPageIndex(value: Double): Self = StObject.set(x, "currentPageIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageIndexUndefined: Self = StObject.set(x, "currentPageIndex", js.undefined)
+    inline def setCurrentPageIndexUndefined: Self = StObject.set(x, "currentPageIndex", js.undefined)
     
-    @scala.inline
-    def setDefaultDropDownWidth(value: Double): Self = StObject.set(x, "defaultDropDownWidth", value.asInstanceOf[js.Any])
+    inline def setDefaultDropDownWidth(value: Double): Self = StObject.set(x, "defaultDropDownWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultDropDownWidthUndefined: Self = StObject.set(x, "defaultDropDownWidth", js.undefined)
+    inline def setDefaultDropDownWidthUndefined: Self = StObject.set(x, "defaultDropDownWidth", js.undefined)
     
-    @scala.inline
-    def setDelayOnPageChanged(value: Double): Self = StObject.set(x, "delayOnPageChanged", value.asInstanceOf[js.Any])
+    inline def setDelayOnPageChanged(value: Double): Self = StObject.set(x, "delayOnPageChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayOnPageChangedUndefined: Self = StObject.set(x, "delayOnPageChanged", js.undefined)
+    inline def setDelayOnPageChangedUndefined: Self = StObject.set(x, "delayOnPageChanged", js.undefined)
     
-    @scala.inline
-    def setFirstPageLabelText(value: String): Self = StObject.set(x, "firstPageLabelText", value.asInstanceOf[js.Any])
+    inline def setFirstPageLabelText(value: String): Self = StObject.set(x, "firstPageLabelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPageLabelTextUndefined: Self = StObject.set(x, "firstPageLabelText", js.undefined)
+    inline def setFirstPageLabelTextUndefined: Self = StObject.set(x, "firstPageLabelText", js.undefined)
     
-    @scala.inline
-    def setFirstPageTooltip(value: String): Self = StObject.set(x, "firstPageTooltip", value.asInstanceOf[js.Any])
+    inline def setFirstPageTooltip(value: String): Self = StObject.set(x, "firstPageTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPageTooltipUndefined: Self = StObject.set(x, "firstPageTooltip", js.undefined)
+    inline def setFirstPageTooltipUndefined: Self = StObject.set(x, "firstPageTooltip", js.undefined)
     
-    @scala.inline
-    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
-    @scala.inline
-    def setLastPageLabelText(value: String): Self = StObject.set(x, "lastPageLabelText", value.asInstanceOf[js.Any])
+    inline def setLastPageLabelText(value: String): Self = StObject.set(x, "lastPageLabelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastPageLabelTextUndefined: Self = StObject.set(x, "lastPageLabelText", js.undefined)
+    inline def setLastPageLabelTextUndefined: Self = StObject.set(x, "lastPageLabelText", js.undefined)
     
-    @scala.inline
-    def setLastPageTooltip(value: String): Self = StObject.set(x, "lastPageTooltip", value.asInstanceOf[js.Any])
+    inline def setLastPageTooltip(value: String): Self = StObject.set(x, "lastPageTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastPageTooltipUndefined: Self = StObject.set(x, "lastPageTooltip", js.undefined)
+    inline def setLastPageTooltipUndefined: Self = StObject.set(x, "lastPageTooltip", js.undefined)
     
-    @scala.inline
-    def setLocale(value: IgTreeGridPagingLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: IgTreeGridPagingLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setNextPageLabelText(value: String): Self = StObject.set(x, "nextPageLabelText", value.asInstanceOf[js.Any])
+    inline def setNextPageLabelText(value: String): Self = StObject.set(x, "nextPageLabelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageLabelTextUndefined: Self = StObject.set(x, "nextPageLabelText", js.undefined)
+    inline def setNextPageLabelTextUndefined: Self = StObject.set(x, "nextPageLabelText", js.undefined)
     
-    @scala.inline
-    def setNextPageTooltip(value: String): Self = StObject.set(x, "nextPageTooltip", value.asInstanceOf[js.Any])
+    inline def setNextPageTooltip(value: String): Self = StObject.set(x, "nextPageTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTooltipUndefined: Self = StObject.set(x, "nextPageTooltip", js.undefined)
+    inline def setNextPageTooltipUndefined: Self = StObject.set(x, "nextPageTooltip", js.undefined)
     
-    @scala.inline
-    def setPageCountLimit(value: Double): Self = StObject.set(x, "pageCountLimit", value.asInstanceOf[js.Any])
+    inline def setPageCountLimit(value: Double): Self = StObject.set(x, "pageCountLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageCountLimitUndefined: Self = StObject.set(x, "pageCountLimit", js.undefined)
+    inline def setPageCountLimitUndefined: Self = StObject.set(x, "pageCountLimit", js.undefined)
     
-    @scala.inline
-    def setPageIndexChanged(value: (/* event */ Event, /* ui */ PageIndexChangedEventUIParam) => Unit): Self = StObject.set(x, "pageIndexChanged", js.Any.fromFunction2(value))
+    inline def setPageIndexChanged(value: (/* event */ Event, /* ui */ PageIndexChangedEventUIParam) => Unit): Self = StObject.set(x, "pageIndexChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPageIndexChangedUndefined: Self = StObject.set(x, "pageIndexChanged", js.undefined)
+    inline def setPageIndexChangedUndefined: Self = StObject.set(x, "pageIndexChanged", js.undefined)
     
-    @scala.inline
-    def setPageIndexChanging(value: (/* event */ Event, /* ui */ PageIndexChangingEventUIParam) => Unit): Self = StObject.set(x, "pageIndexChanging", js.Any.fromFunction2(value))
+    inline def setPageIndexChanging(value: (/* event */ Event, /* ui */ PageIndexChangingEventUIParam) => Unit): Self = StObject.set(x, "pageIndexChanging", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPageIndexChangingUndefined: Self = StObject.set(x, "pageIndexChanging", js.undefined)
+    inline def setPageIndexChangingUndefined: Self = StObject.set(x, "pageIndexChanging", js.undefined)
     
-    @scala.inline
-    def setPageIndexUrlKey(value: String): Self = StObject.set(x, "pageIndexUrlKey", value.asInstanceOf[js.Any])
+    inline def setPageIndexUrlKey(value: String): Self = StObject.set(x, "pageIndexUrlKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIndexUrlKeyUndefined: Self = StObject.set(x, "pageIndexUrlKey", js.undefined)
+    inline def setPageIndexUrlKeyUndefined: Self = StObject.set(x, "pageIndexUrlKey", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeChanged(value: (/* event */ Event, /* ui */ PageSizeChangedEventUIParam) => Unit): Self = StObject.set(x, "pageSizeChanged", js.Any.fromFunction2(value))
+    inline def setPageSizeChanged(value: (/* event */ Event, /* ui */ PageSizeChangedEventUIParam) => Unit): Self = StObject.set(x, "pageSizeChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPageSizeChangedUndefined: Self = StObject.set(x, "pageSizeChanged", js.undefined)
+    inline def setPageSizeChangedUndefined: Self = StObject.set(x, "pageSizeChanged", js.undefined)
     
-    @scala.inline
-    def setPageSizeChanging(value: (/* event */ Event, /* ui */ PageSizeChangingEventUIParam) => Unit): Self = StObject.set(x, "pageSizeChanging", js.Any.fromFunction2(value))
+    inline def setPageSizeChanging(value: (/* event */ Event, /* ui */ PageSizeChangingEventUIParam) => Unit): Self = StObject.set(x, "pageSizeChanging", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPageSizeChangingUndefined: Self = StObject.set(x, "pageSizeChanging", js.undefined)
+    inline def setPageSizeChangingUndefined: Self = StObject.set(x, "pageSizeChanging", js.undefined)
     
-    @scala.inline
-    def setPageSizeDropDownLabel(value: String): Self = StObject.set(x, "pageSizeDropDownLabel", value.asInstanceOf[js.Any])
+    inline def setPageSizeDropDownLabel(value: String): Self = StObject.set(x, "pageSizeDropDownLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeDropDownLabelUndefined: Self = StObject.set(x, "pageSizeDropDownLabel", js.undefined)
+    inline def setPageSizeDropDownLabelUndefined: Self = StObject.set(x, "pageSizeDropDownLabel", js.undefined)
     
-    @scala.inline
-    def setPageSizeDropDownLocation(value: String): Self = StObject.set(x, "pageSizeDropDownLocation", value.asInstanceOf[js.Any])
+    inline def setPageSizeDropDownLocation(value: String): Self = StObject.set(x, "pageSizeDropDownLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeDropDownLocationUndefined: Self = StObject.set(x, "pageSizeDropDownLocation", js.undefined)
+    inline def setPageSizeDropDownLocationUndefined: Self = StObject.set(x, "pageSizeDropDownLocation", js.undefined)
     
-    @scala.inline
-    def setPageSizeDropDownTooltip(value: String): Self = StObject.set(x, "pageSizeDropDownTooltip", value.asInstanceOf[js.Any])
+    inline def setPageSizeDropDownTooltip(value: String): Self = StObject.set(x, "pageSizeDropDownTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeDropDownTooltipUndefined: Self = StObject.set(x, "pageSizeDropDownTooltip", js.undefined)
+    inline def setPageSizeDropDownTooltipUndefined: Self = StObject.set(x, "pageSizeDropDownTooltip", js.undefined)
     
-    @scala.inline
-    def setPageSizeDropDownTrailingLabel(value: String): Self = StObject.set(x, "pageSizeDropDownTrailingLabel", value.asInstanceOf[js.Any])
+    inline def setPageSizeDropDownTrailingLabel(value: String): Self = StObject.set(x, "pageSizeDropDownTrailingLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeDropDownTrailingLabelUndefined: Self = StObject.set(x, "pageSizeDropDownTrailingLabel", js.undefined)
+    inline def setPageSizeDropDownTrailingLabelUndefined: Self = StObject.set(x, "pageSizeDropDownTrailingLabel", js.undefined)
     
-    @scala.inline
-    def setPageSizeList(value: js.Any): Self = StObject.set(x, "pageSizeList", value.asInstanceOf[js.Any])
+    inline def setPageSizeList(value: js.Any): Self = StObject.set(x, "pageSizeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeListUndefined: Self = StObject.set(x, "pageSizeList", js.undefined)
+    inline def setPageSizeListUndefined: Self = StObject.set(x, "pageSizeList", js.undefined)
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageSizeUrlKey(value: String): Self = StObject.set(x, "pageSizeUrlKey", value.asInstanceOf[js.Any])
+    inline def setPageSizeUrlKey(value: String): Self = StObject.set(x, "pageSizeUrlKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUrlKeyUndefined: Self = StObject.set(x, "pageSizeUrlKey", js.undefined)
+    inline def setPageSizeUrlKeyUndefined: Self = StObject.set(x, "pageSizeUrlKey", js.undefined)
     
-    @scala.inline
-    def setPageTooltipFormat(value: String): Self = StObject.set(x, "pageTooltipFormat", value.asInstanceOf[js.Any])
+    inline def setPageTooltipFormat(value: String): Self = StObject.set(x, "pageTooltipFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTooltipFormatUndefined: Self = StObject.set(x, "pageTooltipFormat", js.undefined)
+    inline def setPageTooltipFormatUndefined: Self = StObject.set(x, "pageTooltipFormat", js.undefined)
     
-    @scala.inline
-    def setPagerRecordsLabelTemplate(value: String): Self = StObject.set(x, "pagerRecordsLabelTemplate", value.asInstanceOf[js.Any])
+    inline def setPagerRecordsLabelTemplate(value: String): Self = StObject.set(x, "pagerRecordsLabelTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagerRecordsLabelTemplateUndefined: Self = StObject.set(x, "pagerRecordsLabelTemplate", js.undefined)
+    inline def setPagerRecordsLabelTemplateUndefined: Self = StObject.set(x, "pagerRecordsLabelTemplate", js.undefined)
     
-    @scala.inline
-    def setPagerRecordsLabelTooltip(value: String): Self = StObject.set(x, "pagerRecordsLabelTooltip", value.asInstanceOf[js.Any])
+    inline def setPagerRecordsLabelTooltip(value: String): Self = StObject.set(x, "pagerRecordsLabelTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagerRecordsLabelTooltipUndefined: Self = StObject.set(x, "pagerRecordsLabelTooltip", js.undefined)
+    inline def setPagerRecordsLabelTooltipUndefined: Self = StObject.set(x, "pagerRecordsLabelTooltip", js.undefined)
     
-    @scala.inline
-    def setPagerRendered(value: (/* event */ Event, /* ui */ PagerRenderedEventUIParam) => Unit): Self = StObject.set(x, "pagerRendered", js.Any.fromFunction2(value))
+    inline def setPagerRendered(value: (/* event */ Event, /* ui */ PagerRenderedEventUIParam) => Unit): Self = StObject.set(x, "pagerRendered", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPagerRenderedUndefined: Self = StObject.set(x, "pagerRendered", js.undefined)
+    inline def setPagerRenderedUndefined: Self = StObject.set(x, "pagerRendered", js.undefined)
     
-    @scala.inline
-    def setPagerRendering(value: (/* event */ Event, /* ui */ PagerRenderingEventUIParam) => Unit): Self = StObject.set(x, "pagerRendering", js.Any.fromFunction2(value))
+    inline def setPagerRendering(value: (/* event */ Event, /* ui */ PagerRenderingEventUIParam) => Unit): Self = StObject.set(x, "pagerRendering", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPagerRenderingUndefined: Self = StObject.set(x, "pagerRendering", js.undefined)
+    inline def setPagerRenderingUndefined: Self = StObject.set(x, "pagerRendering", js.undefined)
     
-    @scala.inline
-    def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+    inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
+    inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
-    @scala.inline
-    def setPrevPageLabelText(value: String): Self = StObject.set(x, "prevPageLabelText", value.asInstanceOf[js.Any])
+    inline def setPrevPageLabelText(value: String): Self = StObject.set(x, "prevPageLabelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevPageLabelTextUndefined: Self = StObject.set(x, "prevPageLabelText", js.undefined)
+    inline def setPrevPageLabelTextUndefined: Self = StObject.set(x, "prevPageLabelText", js.undefined)
     
-    @scala.inline
-    def setPrevPageTooltip(value: String): Self = StObject.set(x, "prevPageTooltip", value.asInstanceOf[js.Any])
+    inline def setPrevPageTooltip(value: String): Self = StObject.set(x, "prevPageTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevPageTooltipUndefined: Self = StObject.set(x, "prevPageTooltip", js.undefined)
+    inline def setPrevPageTooltipUndefined: Self = StObject.set(x, "prevPageTooltip", js.undefined)
     
-    @scala.inline
-    def setRecordCountKey(value: String): Self = StObject.set(x, "recordCountKey", value.asInstanceOf[js.Any])
+    inline def setRecordCountKey(value: String): Self = StObject.set(x, "recordCountKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordCountKeyUndefined: Self = StObject.set(x, "recordCountKey", js.undefined)
+    inline def setRecordCountKeyUndefined: Self = StObject.set(x, "recordCountKey", js.undefined)
     
-    @scala.inline
-    def setRenderContextRowFunc(value: js.Function | String): Self = StObject.set(x, "renderContextRowFunc", value.asInstanceOf[js.Any])
+    inline def setRenderContextRowFunc(value: js.Function | String): Self = StObject.set(x, "renderContextRowFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderContextRowFuncUndefined: Self = StObject.set(x, "renderContextRowFunc", js.undefined)
+    inline def setRenderContextRowFuncUndefined: Self = StObject.set(x, "renderContextRowFunc", js.undefined)
     
-    @scala.inline
-    def setShowFirstLastPages(value: Boolean): Self = StObject.set(x, "showFirstLastPages", value.asInstanceOf[js.Any])
+    inline def setShowFirstLastPages(value: Boolean): Self = StObject.set(x, "showFirstLastPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFirstLastPagesUndefined: Self = StObject.set(x, "showFirstLastPages", js.undefined)
+    inline def setShowFirstLastPagesUndefined: Self = StObject.set(x, "showFirstLastPages", js.undefined)
     
-    @scala.inline
-    def setShowPageSizeDropDown(value: Boolean): Self = StObject.set(x, "showPageSizeDropDown", value.asInstanceOf[js.Any])
+    inline def setShowPageSizeDropDown(value: Boolean): Self = StObject.set(x, "showPageSizeDropDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPageSizeDropDownUndefined: Self = StObject.set(x, "showPageSizeDropDown", js.undefined)
+    inline def setShowPageSizeDropDownUndefined: Self = StObject.set(x, "showPageSizeDropDown", js.undefined)
     
-    @scala.inline
-    def setShowPagerRecordsLabel(value: Boolean): Self = StObject.set(x, "showPagerRecordsLabel", value.asInstanceOf[js.Any])
+    inline def setShowPagerRecordsLabel(value: Boolean): Self = StObject.set(x, "showPagerRecordsLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPagerRecordsLabelUndefined: Self = StObject.set(x, "showPagerRecordsLabel", js.undefined)
+    inline def setShowPagerRecordsLabelUndefined: Self = StObject.set(x, "showPagerRecordsLabel", js.undefined)
     
-    @scala.inline
-    def setShowPrevNextPages(value: Boolean): Self = StObject.set(x, "showPrevNextPages", value.asInstanceOf[js.Any])
+    inline def setShowPrevNextPages(value: Boolean): Self = StObject.set(x, "showPrevNextPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPrevNextPagesUndefined: Self = StObject.set(x, "showPrevNextPages", js.undefined)
+    inline def setShowPrevNextPagesUndefined: Self = StObject.set(x, "showPrevNextPages", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVisiblePageCount(value: Double): Self = StObject.set(x, "visiblePageCount", value.asInstanceOf[js.Any])
+    inline def setVisiblePageCount(value: Double): Self = StObject.set(x, "visiblePageCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisiblePageCountUndefined: Self = StObject.set(x, "visiblePageCount", js.undefined)
+    inline def setVisiblePageCountUndefined: Self = StObject.set(x, "visiblePageCount", js.undefined)
   }
 }

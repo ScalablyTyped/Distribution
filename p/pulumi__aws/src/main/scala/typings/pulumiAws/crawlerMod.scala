@@ -129,21 +129,16 @@ object crawlerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Crawler = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Crawler]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Crawler = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Crawler]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CrawlerState): Crawler = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Crawler]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CrawlerState, opts: CustomResourceOptions): Crawler = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Crawler]
+    inline def get(name: String, id: Input[ID]): Crawler = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Crawler]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Crawler = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Crawler]
+    inline def get(name: String, id: Input[ID], state: CrawlerState): Crawler = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Crawler]
+    inline def get(name: String, id: Input[ID], state: CrawlerState, opts: CustomResourceOptions): Crawler = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Crawler]
     
     /**
       * Returns true if the given object is an instance of Crawler.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/crawler.Crawler */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/crawler.Crawler */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/crawler.Crawler */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/crawler.Crawler */ Boolean]
   }
   
   trait CrawlerArgs extends StObject {
@@ -227,122 +222,84 @@ object crawlerMod {
   }
   object CrawlerArgs {
     
-    @scala.inline
-    def apply(databaseName: Input[String], role: Input[String]): CrawlerArgs = {
+    inline def apply(databaseName: Input[String], role: Input[String]): CrawlerArgs = {
       val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
       __obj.asInstanceOf[CrawlerArgs]
     }
     
-    @scala.inline
-    implicit class CrawlerArgsMutableBuilder[Self <: CrawlerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CrawlerArgs](x: Self) {
       
-      @scala.inline
-      def setCatalogTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerCatalogTarget]]]): Self = StObject.set(x, "catalogTargets", value.asInstanceOf[js.Any])
+      inline def setCatalogTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerCatalogTarget]]]): Self = StObject.set(x, "catalogTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatalogTargetsUndefined: Self = StObject.set(x, "catalogTargets", js.undefined)
+      inline def setCatalogTargetsUndefined: Self = StObject.set(x, "catalogTargets", js.undefined)
       
-      @scala.inline
-      def setCatalogTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerCatalogTarget]*): Self = StObject.set(x, "catalogTargets", js.Array(value :_*))
+      inline def setCatalogTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerCatalogTarget]*): Self = StObject.set(x, "catalogTargets", js.Array(value :_*))
       
-      @scala.inline
-      def setClassifiers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "classifiers", value.asInstanceOf[js.Any])
+      inline def setClassifiers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "classifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassifiersUndefined: Self = StObject.set(x, "classifiers", js.undefined)
+      inline def setClassifiersUndefined: Self = StObject.set(x, "classifiers", js.undefined)
       
-      @scala.inline
-      def setClassifiersVarargs(value: Input[String]*): Self = StObject.set(x, "classifiers", js.Array(value :_*))
+      inline def setClassifiersVarargs(value: Input[String]*): Self = StObject.set(x, "classifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setConfiguration(value: Input[String]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: Input[String]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+      inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
       
-      @scala.inline
-      def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+      inline def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDynamodbTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerDynamodbTarget]]]): Self = StObject.set(x, "dynamodbTargets", value.asInstanceOf[js.Any])
+      inline def setDynamodbTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerDynamodbTarget]]]): Self = StObject.set(x, "dynamodbTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamodbTargetsUndefined: Self = StObject.set(x, "dynamodbTargets", js.undefined)
+      inline def setDynamodbTargetsUndefined: Self = StObject.set(x, "dynamodbTargets", js.undefined)
       
-      @scala.inline
-      def setDynamodbTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerDynamodbTarget]*): Self = StObject.set(x, "dynamodbTargets", js.Array(value :_*))
+      inline def setDynamodbTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerDynamodbTarget]*): Self = StObject.set(x, "dynamodbTargets", js.Array(value :_*))
       
-      @scala.inline
-      def setJdbcTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerJdbcTarget]]]): Self = StObject.set(x, "jdbcTargets", value.asInstanceOf[js.Any])
+      inline def setJdbcTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerJdbcTarget]]]): Self = StObject.set(x, "jdbcTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJdbcTargetsUndefined: Self = StObject.set(x, "jdbcTargets", js.undefined)
+      inline def setJdbcTargetsUndefined: Self = StObject.set(x, "jdbcTargets", js.undefined)
       
-      @scala.inline
-      def setJdbcTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerJdbcTarget]*): Self = StObject.set(x, "jdbcTargets", js.Array(value :_*))
+      inline def setJdbcTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerJdbcTarget]*): Self = StObject.set(x, "jdbcTargets", js.Array(value :_*))
       
-      @scala.inline
-      def setMongodbTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerMongodbTarget]]]): Self = StObject.set(x, "mongodbTargets", value.asInstanceOf[js.Any])
+      inline def setMongodbTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerMongodbTarget]]]): Self = StObject.set(x, "mongodbTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMongodbTargetsUndefined: Self = StObject.set(x, "mongodbTargets", js.undefined)
+      inline def setMongodbTargetsUndefined: Self = StObject.set(x, "mongodbTargets", js.undefined)
       
-      @scala.inline
-      def setMongodbTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerMongodbTarget]*): Self = StObject.set(x, "mongodbTargets", js.Array(value :_*))
+      inline def setMongodbTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerMongodbTarget]*): Self = StObject.set(x, "mongodbTargets", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3Targets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerS3Target]]]): Self = StObject.set(x, "s3Targets", value.asInstanceOf[js.Any])
+      inline def setS3Targets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerS3Target]]]): Self = StObject.set(x, "s3Targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3TargetsUndefined: Self = StObject.set(x, "s3Targets", js.undefined)
+      inline def setS3TargetsUndefined: Self = StObject.set(x, "s3Targets", js.undefined)
       
-      @scala.inline
-      def setS3TargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerS3Target]*): Self = StObject.set(x, "s3Targets", js.Array(value :_*))
+      inline def setS3TargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerS3Target]*): Self = StObject.set(x, "s3Targets", js.Array(value :_*))
       
-      @scala.inline
-      def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
       
-      @scala.inline
-      def setSchemaChangePolicy(value: Input[typings.pulumiAws.inputMod.glue.CrawlerSchemaChangePolicy]): Self = StObject.set(x, "schemaChangePolicy", value.asInstanceOf[js.Any])
+      inline def setSchemaChangePolicy(value: Input[typings.pulumiAws.inputMod.glue.CrawlerSchemaChangePolicy]): Self = StObject.set(x, "schemaChangePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaChangePolicyUndefined: Self = StObject.set(x, "schemaChangePolicy", js.undefined)
+      inline def setSchemaChangePolicyUndefined: Self = StObject.set(x, "schemaChangePolicy", js.undefined)
       
-      @scala.inline
-      def setSecurityConfiguration(value: Input[String]): Self = StObject.set(x, "securityConfiguration", value.asInstanceOf[js.Any])
+      inline def setSecurityConfiguration(value: Input[String]): Self = StObject.set(x, "securityConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityConfigurationUndefined: Self = StObject.set(x, "securityConfiguration", js.undefined)
+      inline def setSecurityConfigurationUndefined: Self = StObject.set(x, "securityConfiguration", js.undefined)
       
-      @scala.inline
-      def setTablePrefix(value: Input[String]): Self = StObject.set(x, "tablePrefix", value.asInstanceOf[js.Any])
+      inline def setTablePrefix(value: Input[String]): Self = StObject.set(x, "tablePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablePrefixUndefined: Self = StObject.set(x, "tablePrefix", js.undefined)
+      inline def setTablePrefixUndefined: Self = StObject.set(x, "tablePrefix", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -432,134 +389,92 @@ object crawlerMod {
   }
   object CrawlerState {
     
-    @scala.inline
-    def apply(): CrawlerState = {
+    inline def apply(): CrawlerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CrawlerState]
     }
     
-    @scala.inline
-    implicit class CrawlerStateMutableBuilder[Self <: CrawlerState] (val x: Self) extends AnyVal {
+    extension [Self <: CrawlerState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCatalogTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerCatalogTarget]]]): Self = StObject.set(x, "catalogTargets", value.asInstanceOf[js.Any])
+      inline def setCatalogTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerCatalogTarget]]]): Self = StObject.set(x, "catalogTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatalogTargetsUndefined: Self = StObject.set(x, "catalogTargets", js.undefined)
+      inline def setCatalogTargetsUndefined: Self = StObject.set(x, "catalogTargets", js.undefined)
       
-      @scala.inline
-      def setCatalogTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerCatalogTarget]*): Self = StObject.set(x, "catalogTargets", js.Array(value :_*))
+      inline def setCatalogTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerCatalogTarget]*): Self = StObject.set(x, "catalogTargets", js.Array(value :_*))
       
-      @scala.inline
-      def setClassifiers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "classifiers", value.asInstanceOf[js.Any])
+      inline def setClassifiers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "classifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassifiersUndefined: Self = StObject.set(x, "classifiers", js.undefined)
+      inline def setClassifiersUndefined: Self = StObject.set(x, "classifiers", js.undefined)
       
-      @scala.inline
-      def setClassifiersVarargs(value: Input[String]*): Self = StObject.set(x, "classifiers", js.Array(value :_*))
+      inline def setClassifiersVarargs(value: Input[String]*): Self = StObject.set(x, "classifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setConfiguration(value: Input[String]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: Input[String]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+      inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
       
-      @scala.inline
-      def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+      inline def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
+      inline def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDynamodbTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerDynamodbTarget]]]): Self = StObject.set(x, "dynamodbTargets", value.asInstanceOf[js.Any])
+      inline def setDynamodbTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerDynamodbTarget]]]): Self = StObject.set(x, "dynamodbTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamodbTargetsUndefined: Self = StObject.set(x, "dynamodbTargets", js.undefined)
+      inline def setDynamodbTargetsUndefined: Self = StObject.set(x, "dynamodbTargets", js.undefined)
       
-      @scala.inline
-      def setDynamodbTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerDynamodbTarget]*): Self = StObject.set(x, "dynamodbTargets", js.Array(value :_*))
+      inline def setDynamodbTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerDynamodbTarget]*): Self = StObject.set(x, "dynamodbTargets", js.Array(value :_*))
       
-      @scala.inline
-      def setJdbcTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerJdbcTarget]]]): Self = StObject.set(x, "jdbcTargets", value.asInstanceOf[js.Any])
+      inline def setJdbcTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerJdbcTarget]]]): Self = StObject.set(x, "jdbcTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJdbcTargetsUndefined: Self = StObject.set(x, "jdbcTargets", js.undefined)
+      inline def setJdbcTargetsUndefined: Self = StObject.set(x, "jdbcTargets", js.undefined)
       
-      @scala.inline
-      def setJdbcTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerJdbcTarget]*): Self = StObject.set(x, "jdbcTargets", js.Array(value :_*))
+      inline def setJdbcTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerJdbcTarget]*): Self = StObject.set(x, "jdbcTargets", js.Array(value :_*))
       
-      @scala.inline
-      def setMongodbTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerMongodbTarget]]]): Self = StObject.set(x, "mongodbTargets", value.asInstanceOf[js.Any])
+      inline def setMongodbTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerMongodbTarget]]]): Self = StObject.set(x, "mongodbTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMongodbTargetsUndefined: Self = StObject.set(x, "mongodbTargets", js.undefined)
+      inline def setMongodbTargetsUndefined: Self = StObject.set(x, "mongodbTargets", js.undefined)
       
-      @scala.inline
-      def setMongodbTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerMongodbTarget]*): Self = StObject.set(x, "mongodbTargets", js.Array(value :_*))
+      inline def setMongodbTargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerMongodbTarget]*): Self = StObject.set(x, "mongodbTargets", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setS3Targets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerS3Target]]]): Self = StObject.set(x, "s3Targets", value.asInstanceOf[js.Any])
+      inline def setS3Targets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerS3Target]]]): Self = StObject.set(x, "s3Targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3TargetsUndefined: Self = StObject.set(x, "s3Targets", js.undefined)
+      inline def setS3TargetsUndefined: Self = StObject.set(x, "s3Targets", js.undefined)
       
-      @scala.inline
-      def setS3TargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerS3Target]*): Self = StObject.set(x, "s3Targets", js.Array(value :_*))
+      inline def setS3TargetsVarargs(value: Input[typings.pulumiAws.inputMod.glue.CrawlerS3Target]*): Self = StObject.set(x, "s3Targets", js.Array(value :_*))
       
-      @scala.inline
-      def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
       
-      @scala.inline
-      def setSchemaChangePolicy(value: Input[typings.pulumiAws.inputMod.glue.CrawlerSchemaChangePolicy]): Self = StObject.set(x, "schemaChangePolicy", value.asInstanceOf[js.Any])
+      inline def setSchemaChangePolicy(value: Input[typings.pulumiAws.inputMod.glue.CrawlerSchemaChangePolicy]): Self = StObject.set(x, "schemaChangePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaChangePolicyUndefined: Self = StObject.set(x, "schemaChangePolicy", js.undefined)
+      inline def setSchemaChangePolicyUndefined: Self = StObject.set(x, "schemaChangePolicy", js.undefined)
       
-      @scala.inline
-      def setSecurityConfiguration(value: Input[String]): Self = StObject.set(x, "securityConfiguration", value.asInstanceOf[js.Any])
+      inline def setSecurityConfiguration(value: Input[String]): Self = StObject.set(x, "securityConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityConfigurationUndefined: Self = StObject.set(x, "securityConfiguration", js.undefined)
+      inline def setSecurityConfigurationUndefined: Self = StObject.set(x, "securityConfiguration", js.undefined)
       
-      @scala.inline
-      def setTablePrefix(value: Input[String]): Self = StObject.set(x, "tablePrefix", value.asInstanceOf[js.Any])
+      inline def setTablePrefix(value: Input[String]): Self = StObject.set(x, "tablePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablePrefixUndefined: Self = StObject.set(x, "tablePrefix", js.undefined)
+      inline def setTablePrefixUndefined: Self = StObject.set(x, "tablePrefix", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

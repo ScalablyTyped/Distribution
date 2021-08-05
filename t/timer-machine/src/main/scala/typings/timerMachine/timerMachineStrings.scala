@@ -11,20 +11,17 @@ object timerMachineStrings {
   sealed trait start
     extends StObject
        with TimerEvent
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait stop
     extends StObject
        with TimerEvent
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
+  inline def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
   sealed trait time
     extends StObject
        with TimerEvent
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
+  inline def time: time = "time".asInstanceOf[time]
 }

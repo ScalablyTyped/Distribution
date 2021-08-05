@@ -12,19 +12,15 @@ trait ContainerSizeAndOffset extends StObject {
 }
 object ContainerSizeAndOffset {
   
-  @scala.inline
-  def apply(containerSize: Double, offset: Double): ContainerSizeAndOffset = {
+  inline def apply(containerSize: Double, offset: Double): ContainerSizeAndOffset = {
     val __obj = js.Dynamic.literal(containerSize = containerSize.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerSizeAndOffset]
   }
   
-  @scala.inline
-  implicit class ContainerSizeAndOffsetMutableBuilder[Self <: ContainerSizeAndOffset] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerSizeAndOffset](x: Self) {
     
-    @scala.inline
-    def setContainerSize(value: Double): Self = StObject.set(x, "containerSize", value.asInstanceOf[js.Any])
+    inline def setContainerSize(value: Double): Self = StObject.set(x, "containerSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

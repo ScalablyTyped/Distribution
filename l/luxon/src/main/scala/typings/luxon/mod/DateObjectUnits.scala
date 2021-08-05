@@ -30,79 +30,55 @@ trait DateObjectUnits extends StObject {
 }
 object DateObjectUnits {
   
-  @scala.inline
-  def apply(): DateObjectUnits = {
+  inline def apply(): DateObjectUnits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateObjectUnits]
   }
   
-  @scala.inline
-  implicit class DateObjectUnitsMutableBuilder[Self <: DateObjectUnits] (val x: Self) extends AnyVal {
+  extension [Self <: DateObjectUnits](x: Self) {
     
-    @scala.inline
-    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+    inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
-    @scala.inline
-    def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+    inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
     
-    @scala.inline
-    def setMillisecond(value: Double): Self = StObject.set(x, "millisecond", value.asInstanceOf[js.Any])
+    inline def setMillisecond(value: Double): Self = StObject.set(x, "millisecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMillisecondUndefined: Self = StObject.set(x, "millisecond", js.undefined)
+    inline def setMillisecondUndefined: Self = StObject.set(x, "millisecond", js.undefined)
     
-    @scala.inline
-    def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+    inline def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+    inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
     
-    @scala.inline
-    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
-    @scala.inline
-    def setOrdinal(value: Double): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
+    inline def setOrdinal(value: Double): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
+    inline def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
     
-    @scala.inline
-    def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+    inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
     
-    @scala.inline
-    def setWeekNumber(value: Double): Self = StObject.set(x, "weekNumber", value.asInstanceOf[js.Any])
+    inline def setWeekNumber(value: Double): Self = StObject.set(x, "weekNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekNumberUndefined: Self = StObject.set(x, "weekNumber", js.undefined)
+    inline def setWeekNumberUndefined: Self = StObject.set(x, "weekNumber", js.undefined)
     
-    @scala.inline
-    def setWeekYear(value: Double): Self = StObject.set(x, "weekYear", value.asInstanceOf[js.Any])
+    inline def setWeekYear(value: Double): Self = StObject.set(x, "weekYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekYearUndefined: Self = StObject.set(x, "weekYear", js.undefined)
+    inline def setWeekYearUndefined: Self = StObject.set(x, "weekYear", js.undefined)
     
-    @scala.inline
-    def setWeekday(value: Double): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+    inline def setWeekday(value: Double): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
+    inline def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
     
-    @scala.inline
-    def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+    inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

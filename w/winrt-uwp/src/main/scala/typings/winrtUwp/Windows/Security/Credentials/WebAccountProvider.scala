@@ -29,8 +29,7 @@ trait WebAccountProvider extends StObject {
 }
 object WebAccountProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authority: String,
     displayName: String,
     displayPurpose: String,
@@ -42,25 +41,18 @@ object WebAccountProvider {
     __obj.asInstanceOf[WebAccountProvider]
   }
   
-  @scala.inline
-  implicit class WebAccountProviderMutableBuilder[Self <: WebAccountProvider] (val x: Self) extends AnyVal {
+  extension [Self <: WebAccountProvider](x: Self) {
     
-    @scala.inline
-    def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
+    inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayPurpose(value: String): Self = StObject.set(x, "displayPurpose", value.asInstanceOf[js.Any])
+    inline def setDisplayPurpose(value: String): Self = StObject.set(x, "displayPurpose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUri(value: Uri): Self = StObject.set(x, "iconUri", value.asInstanceOf[js.Any])
+    inline def setIconUri(value: Uri): Self = StObject.set(x, "iconUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

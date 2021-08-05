@@ -14,25 +14,19 @@ trait Suffix extends StObject {
 }
 object Suffix {
   
-  @scala.inline
-  def apply(): Suffix = {
+  inline def apply(): Suffix = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Suffix]
   }
   
-  @scala.inline
-  implicit class SuffixMutableBuilder[Self <: Suffix] (val x: Self) extends AnyVal {
+  extension [Self <: Suffix](x: Self) {
     
-    @scala.inline
-    def setCustomSuffix(value: String): Self = StObject.set(x, "customSuffix", value.asInstanceOf[js.Any])
+    inline def setCustomSuffix(value: String): Self = StObject.set(x, "customSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSuffixUndefined: Self = StObject.set(x, "customSuffix", js.undefined)
+    inline def setCustomSuffixUndefined: Self = StObject.set(x, "customSuffix", js.undefined)
     
-    @scala.inline
-    def setOption(value: String): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+    inline def setOption(value: String): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+    inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
   }
 }

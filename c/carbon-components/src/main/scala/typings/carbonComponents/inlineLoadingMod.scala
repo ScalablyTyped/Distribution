@@ -27,8 +27,7 @@ object inlineLoadingMod {
     @JSImport("carbon-components/components/inline-loading/inline-loading", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
     
     /* static member */
     object states {
@@ -40,26 +39,22 @@ object inlineLoadingMod {
       @JSImport("carbon-components/components/inline-loading/inline-loading", "default.states.ACTIVE")
       @js.native
       def ACTIVE: String = js.native
-      @scala.inline
-      def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
+      inline def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/inline-loading/inline-loading", "default.states.ERROR")
       @js.native
       def ERROR: String = js.native
-      @scala.inline
-      def ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
+      inline def ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/inline-loading/inline-loading", "default.states.FINISHED")
       @js.native
       def FINISHED: String = js.native
-      @scala.inline
-      def FINISHED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FINISHED")(x.asInstanceOf[js.Any])
+      inline def FINISHED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FINISHED")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/inline-loading/inline-loading", "default.states.INACTIVE")
       @js.native
       def INACTIVE: String = js.native
-      @scala.inline
-      def INACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INACTIVE")(x.asInstanceOf[js.Any])
+      inline def INACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INACTIVE")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -70,17 +65,14 @@ object inlineLoadingMod {
   }
   object InlineLoading {
     
-    @scala.inline
-    def apply(setState: js.Any => InlineLoading): InlineLoading = {
+    inline def apply(setState: js.Any => InlineLoading): InlineLoading = {
       val __obj = js.Dynamic.literal(setState = js.Any.fromFunction1(setState))
       __obj.asInstanceOf[InlineLoading]
     }
     
-    @scala.inline
-    implicit class InlineLoadingMutableBuilder[Self <: InlineLoading] (val x: Self) extends AnyVal {
+    extension [Self <: InlineLoading](x: Self) {
       
-      @scala.inline
-      def setSetState(value: js.Any => InlineLoading): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+      inline def setSetState(value: js.Any => InlineLoading): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
     }
   }
 }

@@ -50,64 +50,47 @@ trait PickCalendarDayShapedaySi extends StObject {
 }
 object PickCalendarDayShapedaySi {
   
-  @scala.inline
-  def apply(): PickCalendarDayShapedaySi = {
+  inline def apply(): PickCalendarDayShapedaySi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickCalendarDayShapedaySi]
   }
   
-  @scala.inline
-  implicit class PickCalendarDayShapedaySiMutableBuilder[Self <: PickCalendarDayShapedaySi] (val x: Self) extends AnyVal {
+  extension [Self <: PickCalendarDayShapedaySi](x: Self) {
     
-    @scala.inline
-    def setDaySize(value: Double): Self = StObject.set(x, "daySize", value.asInstanceOf[js.Any])
+    inline def setDaySize(value: Double): Self = StObject.set(x, "daySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaySizeUndefined: Self = StObject.set(x, "daySize", js.undefined)
+    inline def setDaySizeUndefined: Self = StObject.set(x, "daySize", js.undefined)
     
-    @scala.inline
-    def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+    inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
+    inline def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
     
-    @scala.inline
-    def setOnDayClick(
+    inline def setOnDayClick(
       value: (/* day */ Moment, /* event */ MouseEvent[HTMLTableDataCellElement, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onDayClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnDayClickUndefined: Self = StObject.set(x, "onDayClick", js.undefined)
+    inline def setOnDayClickUndefined: Self = StObject.set(x, "onDayClick", js.undefined)
     
-    @scala.inline
-    def setOnDayMouseEnter(
+    inline def setOnDayMouseEnter(
       value: (/* day */ Moment, /* event */ MouseEvent[HTMLTableDataCellElement, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onDayMouseEnter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnDayMouseEnterUndefined: Self = StObject.set(x, "onDayMouseEnter", js.undefined)
+    inline def setOnDayMouseEnterUndefined: Self = StObject.set(x, "onDayMouseEnter", js.undefined)
     
-    @scala.inline
-    def setOnDayMouseLeave(
+    inline def setOnDayMouseLeave(
       value: (/* day */ Moment, /* event */ MouseEvent[HTMLTableDataCellElement, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onDayMouseLeave", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnDayMouseLeaveUndefined: Self = StObject.set(x, "onDayMouseLeave", js.undefined)
+    inline def setOnDayMouseLeaveUndefined: Self = StObject.set(x, "onDayMouseLeave", js.undefined)
     
-    @scala.inline
-    def setPhrases(value: CalendarDayPhrases): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
+    inline def setPhrases(value: CalendarDayPhrases): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
+    inline def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
     
-    @scala.inline
-    def setRenderDayContents(value: (/* day */ Moment, /* modifiers */ ModifiersShape) => ReactNode): Self = StObject.set(x, "renderDayContents", js.Any.fromFunction2(value))
+    inline def setRenderDayContents(value: (/* day */ Moment, /* modifiers */ ModifiersShape) => ReactNode): Self = StObject.set(x, "renderDayContents", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderDayContentsNull: Self = StObject.set(x, "renderDayContents", null)
+    inline def setRenderDayContentsNull: Self = StObject.set(x, "renderDayContents", null)
     
-    @scala.inline
-    def setRenderDayContentsUndefined: Self = StObject.set(x, "renderDayContents", js.undefined)
+    inline def setRenderDayContentsUndefined: Self = StObject.set(x, "renderDayContents", js.undefined)
   }
 }

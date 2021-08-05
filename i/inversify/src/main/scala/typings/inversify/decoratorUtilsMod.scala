@@ -14,22 +14,14 @@ object decoratorUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decorate(decorator: MethodDecorator | ParameterDecorator, target: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def decorate(decorator: MethodDecorator | ParameterDecorator, target: js.Any, parameterIndex: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def decorate(decorator: MethodDecorator | ParameterDecorator, target: js.Any, parameterIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def decorate(decorator: ClassDecorator, target: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def decorate(decorator: ClassDecorator, target: js.Any, parameterIndex: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def decorate(decorator: ClassDecorator, target: js.Any, parameterIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decorate(decorator: MethodDecorator | ParameterDecorator, target: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decorate(decorator: MethodDecorator | ParameterDecorator, target: js.Any, parameterIndex: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decorate(decorator: MethodDecorator | ParameterDecorator, target: js.Any, parameterIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decorate(decorator: ClassDecorator, target: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decorate(decorator: ClassDecorator, target: js.Any, parameterIndex: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decorate(decorator: ClassDecorator, target: js.Any, parameterIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorator.asInstanceOf[js.Any], target.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def tagParameter(annotationTarget: js.Any, propertyName: String, parameterIndex: Double, metadata: Metadata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tagParameter")(annotationTarget.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def tagParameter(annotationTarget: js.Any, propertyName: String, parameterIndex: Double, metadata: Metadata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tagParameter")(annotationTarget.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], parameterIndex.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def tagProperty(annotationTarget: js.Any, propertyName: String, metadata: Metadata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tagProperty")(annotationTarget.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def tagProperty(annotationTarget: js.Any, propertyName: String, metadata: Metadata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tagProperty")(annotationTarget.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

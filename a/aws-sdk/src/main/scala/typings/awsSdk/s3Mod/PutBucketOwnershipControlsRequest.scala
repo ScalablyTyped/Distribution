@@ -28,31 +28,23 @@ trait PutBucketOwnershipControlsRequest extends StObject {
 }
 object PutBucketOwnershipControlsRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName, OwnershipControls: OwnershipControls): PutBucketOwnershipControlsRequest = {
+  inline def apply(Bucket: BucketName, OwnershipControls: OwnershipControls): PutBucketOwnershipControlsRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], OwnershipControls = OwnershipControls.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketOwnershipControlsRequest]
   }
   
-  @scala.inline
-  implicit class PutBucketOwnershipControlsRequestMutableBuilder[Self <: PutBucketOwnershipControlsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutBucketOwnershipControlsRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
+    inline def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
+    inline def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
-    @scala.inline
-    def setOwnershipControls(value: OwnershipControls): Self = StObject.set(x, "OwnershipControls", value.asInstanceOf[js.Any])
+    inline def setOwnershipControls(value: OwnershipControls): Self = StObject.set(x, "OwnershipControls", value.asInstanceOf[js.Any])
   }
 }

@@ -13,14 +13,10 @@ object getLocalGatewayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLocalGateway(): js.Promise[GetLocalGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateway")().asInstanceOf[js.Promise[GetLocalGatewayResult]]
-  @scala.inline
-  def getLocalGateway(args: Unit, opts: InvokeOptions): js.Promise[GetLocalGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayResult]]
-  @scala.inline
-  def getLocalGateway(args: GetLocalGatewayArgs): js.Promise[GetLocalGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalGatewayResult]]
-  @scala.inline
-  def getLocalGateway(args: GetLocalGatewayArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayResult]]
+  inline def getLocalGateway(): js.Promise[GetLocalGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateway")().asInstanceOf[js.Promise[GetLocalGatewayResult]]
+  inline def getLocalGateway(args: Unit, opts: InvokeOptions): js.Promise[GetLocalGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayResult]]
+  inline def getLocalGateway(args: GetLocalGatewayArgs): js.Promise[GetLocalGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalGatewayResult]]
+  inline def getLocalGateway(args: GetLocalGatewayArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayResult]]
   
   trait GetLocalGatewayArgs extends StObject {
     
@@ -48,41 +44,30 @@ object getLocalGatewayMod {
   }
   object GetLocalGatewayArgs {
     
-    @scala.inline
-    def apply(): GetLocalGatewayArgs = {
+    inline def apply(): GetLocalGatewayArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetLocalGatewayArgs]
     }
     
-    @scala.inline
-    implicit class GetLocalGatewayArgsMutableBuilder[Self <: GetLocalGatewayArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetLocalGatewayArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetLocalGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetLocalGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetLocalGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetLocalGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -111,38 +96,28 @@ object getLocalGatewayMod {
   }
   object GetLocalGatewayResult {
     
-    @scala.inline
-    def apply(id: String, outpostArn: String, ownerId: String, state: String, tags: StringDictionary[String]): GetLocalGatewayResult = {
+    inline def apply(id: String, outpostArn: String, ownerId: String, state: String, tags: StringDictionary[String]): GetLocalGatewayResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], outpostArn = outpostArn.asInstanceOf[js.Any], ownerId = ownerId.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetLocalGatewayResult]
     }
     
-    @scala.inline
-    implicit class GetLocalGatewayResultMutableBuilder[Self <: GetLocalGatewayResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetLocalGatewayResult](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetLocalGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetLocalGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpostArn(value: String): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
+      inline def setOutpostArn(value: String): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

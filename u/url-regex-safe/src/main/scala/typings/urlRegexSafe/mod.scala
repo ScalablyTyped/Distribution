@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
-  @scala.inline
-  def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
+  inline def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
   @JSImport("url-regex-safe", JSImport.Namespace)
   @js.native
@@ -43,83 +41,58 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setApostrophes(value: Boolean): Self = StObject.set(x, "apostrophes", value.asInstanceOf[js.Any])
+      inline def setApostrophes(value: Boolean): Self = StObject.set(x, "apostrophes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApostrophesUndefined: Self = StObject.set(x, "apostrophes", js.undefined)
+      inline def setApostrophesUndefined: Self = StObject.set(x, "apostrophes", js.undefined)
       
-      @scala.inline
-      def setAuth(value: Boolean): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: Boolean): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
       
-      @scala.inline
-      def setIpv4(value: Boolean): Self = StObject.set(x, "ipv4", value.asInstanceOf[js.Any])
+      inline def setIpv4(value: Boolean): Self = StObject.set(x, "ipv4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv4Undefined: Self = StObject.set(x, "ipv4", js.undefined)
+      inline def setIpv4Undefined: Self = StObject.set(x, "ipv4", js.undefined)
       
-      @scala.inline
-      def setIpv6(value: Boolean): Self = StObject.set(x, "ipv6", value.asInstanceOf[js.Any])
+      inline def setIpv6(value: Boolean): Self = StObject.set(x, "ipv6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv6Undefined: Self = StObject.set(x, "ipv6", js.undefined)
+      inline def setIpv6Undefined: Self = StObject.set(x, "ipv6", js.undefined)
       
-      @scala.inline
-      def setLocalhost(value: Boolean): Self = StObject.set(x, "localhost", value.asInstanceOf[js.Any])
+      inline def setLocalhost(value: Boolean): Self = StObject.set(x, "localhost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalhostUndefined: Self = StObject.set(x, "localhost", js.undefined)
+      inline def setLocalhostUndefined: Self = StObject.set(x, "localhost", js.undefined)
       
-      @scala.inline
-      def setParens(value: Boolean): Self = StObject.set(x, "parens", value.asInstanceOf[js.Any])
+      inline def setParens(value: Boolean): Self = StObject.set(x, "parens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParensUndefined: Self = StObject.set(x, "parens", js.undefined)
+      inline def setParensUndefined: Self = StObject.set(x, "parens", js.undefined)
       
-      @scala.inline
-      def setReturnString(value: Boolean): Self = StObject.set(x, "returnString", value.asInstanceOf[js.Any])
+      inline def setReturnString(value: Boolean): Self = StObject.set(x, "returnString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnStringUndefined: Self = StObject.set(x, "returnString", js.undefined)
+      inline def setReturnStringUndefined: Self = StObject.set(x, "returnString", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setTlds(value: js.Array[String]): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
+      inline def setTlds(value: js.Array[String]): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTldsUndefined: Self = StObject.set(x, "tlds", js.undefined)
+      inline def setTldsUndefined: Self = StObject.set(x, "tlds", js.undefined)
       
-      @scala.inline
-      def setTldsVarargs(value: String*): Self = StObject.set(x, "tlds", js.Array(value :_*))
+      inline def setTldsVarargs(value: String*): Self = StObject.set(x, "tlds", js.Array(value :_*))
       
-      @scala.inline
-      def setTrailingPeriod(value: Boolean): Self = StObject.set(x, "trailingPeriod", value.asInstanceOf[js.Any])
+      inline def setTrailingPeriod(value: Boolean): Self = StObject.set(x, "trailingPeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingPeriodUndefined: Self = StObject.set(x, "trailingPeriod", js.undefined)
+      inline def setTrailingPeriodUndefined: Self = StObject.set(x, "trailingPeriod", js.undefined)
     }
   }
 }

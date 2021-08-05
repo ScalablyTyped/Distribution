@@ -14,25 +14,19 @@ trait ThirdPartyUrl extends StObject {
 }
 object ThirdPartyUrl {
   
-  @scala.inline
-  def apply(): ThirdPartyUrl = {
+  inline def apply(): ThirdPartyUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThirdPartyUrl]
   }
   
-  @scala.inline
-  implicit class ThirdPartyUrlMutableBuilder[Self <: ThirdPartyUrl] (val x: Self) extends AnyVal {
+  extension [Self <: ThirdPartyUrl](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

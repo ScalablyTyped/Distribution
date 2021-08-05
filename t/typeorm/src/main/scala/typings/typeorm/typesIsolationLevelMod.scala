@@ -15,16 +15,12 @@ object typesIsolationLevelMod {
   trait IsolationLevel extends StObject
   object IsolationLevel {
     
-    @scala.inline
-    def `READ COMMITTED`: typings.typeorm.typeormStrings.`READ COMMITTED` = ("READ COMMITTED").asInstanceOf[typings.typeorm.typeormStrings.`READ COMMITTED`]
+    inline def `READ COMMITTED`: typings.typeorm.typeormStrings.`READ COMMITTED` = ("READ COMMITTED").asInstanceOf[typings.typeorm.typeormStrings.`READ COMMITTED`]
     
-    @scala.inline
-    def `READ UNCOMMITTED`: typings.typeorm.typeormStrings.`READ UNCOMMITTED` = ("READ UNCOMMITTED").asInstanceOf[typings.typeorm.typeormStrings.`READ UNCOMMITTED`]
+    inline def `READ UNCOMMITTED`: typings.typeorm.typeormStrings.`READ UNCOMMITTED` = ("READ UNCOMMITTED").asInstanceOf[typings.typeorm.typeormStrings.`READ UNCOMMITTED`]
     
-    @scala.inline
-    def `REPEATABLE READ`: typings.typeorm.typeormStrings.`REPEATABLE READ` = ("REPEATABLE READ").asInstanceOf[typings.typeorm.typeormStrings.`REPEATABLE READ`]
+    inline def `REPEATABLE READ`: typings.typeorm.typeormStrings.`REPEATABLE READ` = ("REPEATABLE READ").asInstanceOf[typings.typeorm.typeormStrings.`REPEATABLE READ`]
     
-    @scala.inline
-    def SERIALIZABLE: typings.typeorm.typeormStrings.SERIALIZABLE = "SERIALIZABLE".asInstanceOf[typings.typeorm.typeormStrings.SERIALIZABLE]
+    inline def SERIALIZABLE: typings.typeorm.typeormStrings.SERIALIZABLE = "SERIALIZABLE".asInstanceOf[typings.typeorm.typeormStrings.SERIALIZABLE]
   }
 }

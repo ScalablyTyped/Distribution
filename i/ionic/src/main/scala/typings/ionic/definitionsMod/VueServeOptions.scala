@@ -16,8 +16,7 @@ trait VueServeOptions
 }
 object VueServeOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `--`: js.Array[String],
     address: String,
     devapp: Boolean,
@@ -35,25 +34,18 @@ object VueServeOptions {
     __obj.asInstanceOf[VueServeOptions]
   }
   
-  @scala.inline
-  implicit class VueServeOptionsMutableBuilder[Self <: VueServeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VueServeOptions](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setSourcemaps(value: Boolean): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
+    inline def setSourcemaps(value: Boolean): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
+    inline def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
     
-    @scala.inline
-    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
   }
 }

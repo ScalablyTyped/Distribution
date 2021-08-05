@@ -22,8 +22,8 @@ object urlDataSourceMod {
     def this(url: RequestInfo) = this()
     def this(url: RequestInfo, fileOptions: FileChunkIteratorOptions) = this()
     
-    val fileOptions: FileChunkIteratorOptions = js.native
+    /* protected */ val fileOptions: FileChunkIteratorOptions = js.native
     
-    val url: RequestInfo = js.native
+    /* protected */ val url: RequestInfo = js.native
   }
 }

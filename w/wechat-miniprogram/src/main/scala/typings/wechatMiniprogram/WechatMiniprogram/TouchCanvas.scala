@@ -10,8 +10,7 @@ trait TouchCanvas[Mark /* <: IAnyObject */, TargetDataset /* <: IAnyObject */]
      with Touch[scala.Nothing, TouchCanvasDetail, Mark, scala.Nothing, TargetDataset]
 object TouchCanvas {
   
-  @scala.inline
-  def apply[Mark /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](
+  inline def apply[Mark /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](
     changedTouches: js.Array[TouchCanvasDetail],
     currentTarget: Target[scala.Nothing],
     target: Target[TargetDataset],

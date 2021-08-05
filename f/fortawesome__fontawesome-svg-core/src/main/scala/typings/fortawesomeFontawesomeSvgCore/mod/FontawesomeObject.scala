@@ -15,29 +15,22 @@ trait FontawesomeObject extends StObject {
 }
 object FontawesomeObject {
   
-  @scala.inline
-  def apply(`abstract`: js.Array[AbstractElement], html: js.Array[String], node: HTMLCollection): FontawesomeObject = {
+  inline def apply(`abstract`: js.Array[AbstractElement], html: js.Array[String], node: HTMLCollection): FontawesomeObject = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontawesomeObject]
   }
   
-  @scala.inline
-  implicit class FontawesomeObjectMutableBuilder[Self <: FontawesomeObject] (val x: Self) extends AnyVal {
+  extension [Self <: FontawesomeObject](x: Self) {
     
-    @scala.inline
-    def setAbstract(value: js.Array[AbstractElement]): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
+    inline def setAbstract(value: js.Array[AbstractElement]): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbstractVarargs(value: AbstractElement*): Self = StObject.set(x, "abstract", js.Array(value :_*))
+    inline def setAbstractVarargs(value: AbstractElement*): Self = StObject.set(x, "abstract", js.Array(value :_*))
     
-    @scala.inline
-    def setHtml(value: js.Array[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: js.Array[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlVarargs(value: String*): Self = StObject.set(x, "html", js.Array(value :_*))
+    inline def setHtmlVarargs(value: String*): Self = StObject.set(x, "html", js.Array(value :_*))
     
-    @scala.inline
-    def setNode(value: HTMLCollection): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: HTMLCollection): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

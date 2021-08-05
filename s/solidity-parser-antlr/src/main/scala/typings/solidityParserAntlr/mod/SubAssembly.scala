@@ -15,17 +15,14 @@ trait SubAssembly
 }
 object SubAssembly {
   
-  @scala.inline
-  def apply(): SubAssembly = {
+  inline def apply(): SubAssembly = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("SubAssembly")
     __obj.asInstanceOf[SubAssembly]
   }
   
-  @scala.inline
-  implicit class SubAssemblyMutableBuilder[Self <: SubAssembly] (val x: Self) extends AnyVal {
+  extension [Self <: SubAssembly](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.SubAssembly): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.SubAssembly): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

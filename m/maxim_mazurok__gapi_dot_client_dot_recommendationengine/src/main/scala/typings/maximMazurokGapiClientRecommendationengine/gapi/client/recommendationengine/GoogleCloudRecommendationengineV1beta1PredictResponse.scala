@@ -34,59 +34,43 @@ trait GoogleCloudRecommendationengineV1beta1PredictResponse extends StObject {
 }
 object GoogleCloudRecommendationengineV1beta1PredictResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1PredictResponse = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1PredictResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1PredictResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1PredictResponseMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PredictResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1PredictResponse](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
-    @scala.inline
-    def setItemsMissingInCatalog(value: js.Array[String]): Self = StObject.set(x, "itemsMissingInCatalog", value.asInstanceOf[js.Any])
+    inline def setItemsMissingInCatalog(value: js.Array[String]): Self = StObject.set(x, "itemsMissingInCatalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsMissingInCatalogUndefined: Self = StObject.set(x, "itemsMissingInCatalog", js.undefined)
+    inline def setItemsMissingInCatalogUndefined: Self = StObject.set(x, "itemsMissingInCatalog", js.undefined)
     
-    @scala.inline
-    def setItemsMissingInCatalogVarargs(value: String*): Self = StObject.set(x, "itemsMissingInCatalog", js.Array(value :_*))
+    inline def setItemsMissingInCatalogVarargs(value: String*): Self = StObject.set(x, "itemsMissingInCatalog", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRecommendationToken(value: String): Self = StObject.set(x, "recommendationToken", value.asInstanceOf[js.Any])
+    inline def setRecommendationToken(value: String): Self = StObject.set(x, "recommendationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationTokenUndefined: Self = StObject.set(x, "recommendationToken", js.undefined)
+    inline def setRecommendationTokenUndefined: Self = StObject.set(x, "recommendationToken", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

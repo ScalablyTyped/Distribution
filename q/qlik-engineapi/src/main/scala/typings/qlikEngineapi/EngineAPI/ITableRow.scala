@@ -16,19 +16,15 @@ trait ITableRow extends StObject {
 }
 object ITableRow {
   
-  @scala.inline
-  def apply(vqValue: js.Array[IFieldValue]): ITableRow = {
+  inline def apply(vqValue: js.Array[IFieldValue]): ITableRow = {
     val __obj = js.Dynamic.literal(vqValue = vqValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITableRow]
   }
   
-  @scala.inline
-  implicit class ITableRowMutableBuilder[Self <: ITableRow] (val x: Self) extends AnyVal {
+  extension [Self <: ITableRow](x: Self) {
     
-    @scala.inline
-    def setVqValue(value: js.Array[IFieldValue]): Self = StObject.set(x, "vqValue", value.asInstanceOf[js.Any])
+    inline def setVqValue(value: js.Array[IFieldValue]): Self = StObject.set(x, "vqValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVqValueVarargs(value: IFieldValue*): Self = StObject.set(x, "vqValue", js.Array(value :_*))
+    inline def setVqValueVarargs(value: IFieldValue*): Self = StObject.set(x, "vqValue", js.Array(value :_*))
   }
 }

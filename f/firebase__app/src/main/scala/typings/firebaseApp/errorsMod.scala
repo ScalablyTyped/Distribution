@@ -29,23 +29,17 @@ object errorsMod {
   trait AppError extends StObject
   object AppError {
     
-    @scala.inline
-    def APP_DELETED: `app-deleted` = "app-deleted".asInstanceOf[`app-deleted`]
+    inline def APP_DELETED: `app-deleted` = "app-deleted".asInstanceOf[`app-deleted`]
     
-    @scala.inline
-    def BAD_APP_NAME: `bad-app-name` = "bad-app-name".asInstanceOf[`bad-app-name`]
+    inline def BAD_APP_NAME: `bad-app-name` = "bad-app-name".asInstanceOf[`bad-app-name`]
     
-    @scala.inline
-    def DUPLICATE_APP: `duplicate-app` = "duplicate-app".asInstanceOf[`duplicate-app`]
+    inline def DUPLICATE_APP: `duplicate-app` = "duplicate-app".asInstanceOf[`duplicate-app`]
     
-    @scala.inline
-    def INVALID_APP_ARGUMENT: `invalid-app-argument` = "invalid-app-argument".asInstanceOf[`invalid-app-argument`]
+    inline def INVALID_APP_ARGUMENT: `invalid-app-argument` = "invalid-app-argument".asInstanceOf[`invalid-app-argument`]
     
-    @scala.inline
-    def INVALID_LOG_ARGUMENT: `invalid-log-argument` = "invalid-log-argument".asInstanceOf[`invalid-log-argument`]
+    inline def INVALID_LOG_ARGUMENT: `invalid-log-argument` = "invalid-log-argument".asInstanceOf[`invalid-log-argument`]
     
-    @scala.inline
-    def NO_APP: `no-app` = "no-app".asInstanceOf[`no-app`]
+    inline def NO_APP: `no-app` = "no-app".asInstanceOf[`no-app`]
   }
   
   /* Inlined {[ key in @firebase/app.@firebase/app/dist/packages/app/src/errors.AppError ]: {  appName :string}} */
@@ -65,8 +59,7 @@ object errorsMod {
   }
   object ErrorParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `app-deleted`: AppName,
       `bad-app-name`: AppName,
       `duplicate-app`: AppName,
@@ -84,26 +77,19 @@ object errorsMod {
       __obj.asInstanceOf[ErrorParams]
     }
     
-    @scala.inline
-    implicit class ErrorParamsMutableBuilder[Self <: ErrorParams] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorParams](x: Self) {
       
-      @scala.inline
-      def `setApp-deleted`(value: AppName): Self = StObject.set(x, "app-deleted", value.asInstanceOf[js.Any])
+      inline def `setApp-deleted`(value: AppName): Self = StObject.set(x, "app-deleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBad-app-name`(value: AppName): Self = StObject.set(x, "bad-app-name", value.asInstanceOf[js.Any])
+      inline def `setBad-app-name`(value: AppName): Self = StObject.set(x, "bad-app-name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDuplicate-app`(value: AppName): Self = StObject.set(x, "duplicate-app", value.asInstanceOf[js.Any])
+      inline def `setDuplicate-app`(value: AppName): Self = StObject.set(x, "duplicate-app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setInvalid-app-argument`(value: AppName): Self = StObject.set(x, "invalid-app-argument", value.asInstanceOf[js.Any])
+      inline def `setInvalid-app-argument`(value: AppName): Self = StObject.set(x, "invalid-app-argument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setInvalid-log-argument`(value: AppName): Self = StObject.set(x, "invalid-log-argument", value.asInstanceOf[js.Any])
+      inline def `setInvalid-log-argument`(value: AppName): Self = StObject.set(x, "invalid-log-argument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setNo-app`(value: AppName): Self = StObject.set(x, "no-app", value.asInstanceOf[js.Any])
+      inline def `setNo-app`(value: AppName): Self = StObject.set(x, "no-app", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,19 +13,15 @@ trait AwsElasticsearchDomainNodeToNodeEncryptionOptions extends StObject {
 }
 object AwsElasticsearchDomainNodeToNodeEncryptionOptions {
   
-  @scala.inline
-  def apply(): AwsElasticsearchDomainNodeToNodeEncryptionOptions = {
+  inline def apply(): AwsElasticsearchDomainNodeToNodeEncryptionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsElasticsearchDomainNodeToNodeEncryptionOptions]
   }
   
-  @scala.inline
-  implicit class AwsElasticsearchDomainNodeToNodeEncryptionOptionsMutableBuilder[Self <: AwsElasticsearchDomainNodeToNodeEncryptionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AwsElasticsearchDomainNodeToNodeEncryptionOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

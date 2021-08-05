@@ -27,8 +27,7 @@ trait OnLoadData extends StObject {
 }
 object OnLoadData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canPlayFastForward: Boolean,
     canPlayReverse: Boolean,
     canPlaySlowForward: Boolean,
@@ -43,34 +42,24 @@ object OnLoadData {
     __obj.asInstanceOf[OnLoadData]
   }
   
-  @scala.inline
-  implicit class OnLoadDataMutableBuilder[Self <: OnLoadData] (val x: Self) extends AnyVal {
+  extension [Self <: OnLoadData](x: Self) {
     
-    @scala.inline
-    def setCanPlayFastForward(value: Boolean): Self = StObject.set(x, "canPlayFastForward", value.asInstanceOf[js.Any])
+    inline def setCanPlayFastForward(value: Boolean): Self = StObject.set(x, "canPlayFastForward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanPlayReverse(value: Boolean): Self = StObject.set(x, "canPlayReverse", value.asInstanceOf[js.Any])
+    inline def setCanPlayReverse(value: Boolean): Self = StObject.set(x, "canPlayReverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanPlaySlowForward(value: Boolean): Self = StObject.set(x, "canPlaySlowForward", value.asInstanceOf[js.Any])
+    inline def setCanPlaySlowForward(value: Boolean): Self = StObject.set(x, "canPlaySlowForward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanPlaySlowReverse(value: Boolean): Self = StObject.set(x, "canPlaySlowReverse", value.asInstanceOf[js.Any])
+    inline def setCanPlaySlowReverse(value: Boolean): Self = StObject.set(x, "canPlaySlowReverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanStepBackward(value: Boolean): Self = StObject.set(x, "canStepBackward", value.asInstanceOf[js.Any])
+    inline def setCanStepBackward(value: Boolean): Self = StObject.set(x, "canStepBackward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanStepForward(value: Boolean): Self = StObject.set(x, "canStepForward", value.asInstanceOf[js.Any])
+    inline def setCanStepForward(value: Boolean): Self = StObject.set(x, "canStepForward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNaturalSize(value: Height): Self = StObject.set(x, "naturalSize", value.asInstanceOf[js.Any])
+    inline def setNaturalSize(value: Height): Self = StObject.set(x, "naturalSize", value.asInstanceOf[js.Any])
   }
 }

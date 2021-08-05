@@ -36,8 +36,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): typings.materialBanner.componentMod.MDCBanner = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialBanner.componentMod.MDCBanner]
+    inline def attachTo(root: Element): typings.materialBanner.componentMod.MDCBanner = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialBanner.componentMod.MDCBanner]
   }
   
   @JSImport("@material/banner", "MDCBannerFoundation")
@@ -56,8 +55,7 @@ object mod {
     @JSImport("@material/banner", "cssClasses.CLOSING")
     @js.native
     def CLOSING: String = js.native
-    @scala.inline
-    def CLOSING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
+    inline def CLOSING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/banner", "cssClasses.OPEN")
     @js.native
@@ -66,11 +64,9 @@ object mod {
     @JSImport("@material/banner", "cssClasses.OPENING")
     @js.native
     def OPENING: String = js.native
-    @scala.inline
-    def OPENING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENING")(x.asInstanceOf[js.Any])
+    inline def OPENING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENING")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
+    inline def OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
   }
   
   object events {
@@ -82,26 +78,22 @@ object mod {
     @JSImport("@material/banner", "events.CLOSED")
     @js.native
     def CLOSED: String = js.native
-    @scala.inline
-    def CLOSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
+    inline def CLOSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/banner", "events.CLOSING")
     @js.native
     def CLOSING: String = js.native
-    @scala.inline
-    def CLOSING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
+    inline def CLOSING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/banner", "events.OPENED")
     @js.native
     def OPENED: String = js.native
-    @scala.inline
-    def OPENED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENED")(x.asInstanceOf[js.Any])
+    inline def OPENED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENED")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/banner", "events.OPENING")
     @js.native
     def OPENING: String = js.native
-    @scala.inline
-    def OPENING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENING")(x.asInstanceOf[js.Any])
+    inline def OPENING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENING")(x.asInstanceOf[js.Any])
   }
   
   object numbers {
@@ -113,14 +105,12 @@ object mod {
     @JSImport("@material/banner", "numbers.BANNER_ANIMATION_CLOSE_TIME_MS")
     @js.native
     def BANNER_ANIMATION_CLOSE_TIME_MS: Double = js.native
-    @scala.inline
-    def BANNER_ANIMATION_CLOSE_TIME_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BANNER_ANIMATION_CLOSE_TIME_MS")(x.asInstanceOf[js.Any])
+    inline def BANNER_ANIMATION_CLOSE_TIME_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BANNER_ANIMATION_CLOSE_TIME_MS")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/banner", "numbers.BANNER_ANIMATION_OPEN_TIME_MS")
     @js.native
     def BANNER_ANIMATION_OPEN_TIME_MS: Double = js.native
-    @scala.inline
-    def BANNER_ANIMATION_OPEN_TIME_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BANNER_ANIMATION_OPEN_TIME_MS")(x.asInstanceOf[js.Any])
+    inline def BANNER_ANIMATION_OPEN_TIME_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BANNER_ANIMATION_OPEN_TIME_MS")(x.asInstanceOf[js.Any])
   }
   
   object selectors {
@@ -132,25 +122,21 @@ object mod {
     @JSImport("@material/banner", "selectors.CONTENT")
     @js.native
     def CONTENT: String = js.native
-    @scala.inline
-    def CONTENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTENT")(x.asInstanceOf[js.Any])
+    inline def CONTENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTENT")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/banner", "selectors.PRIMARY_ACTION")
     @js.native
     def PRIMARY_ACTION: String = js.native
-    @scala.inline
-    def PRIMARY_ACTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY_ACTION")(x.asInstanceOf[js.Any])
+    inline def PRIMARY_ACTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY_ACTION")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/banner", "selectors.SECONDARY_ACTION")
     @js.native
     def SECONDARY_ACTION: String = js.native
-    @scala.inline
-    def SECONDARY_ACTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY_ACTION")(x.asInstanceOf[js.Any])
+    inline def SECONDARY_ACTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY_ACTION")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/banner", "selectors.TEXT")
     @js.native
     def TEXT: String = js.native
-    @scala.inline
-    def TEXT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT")(x.asInstanceOf[js.Any])
+    inline def TEXT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT")(x.asInstanceOf[js.Any])
   }
 }

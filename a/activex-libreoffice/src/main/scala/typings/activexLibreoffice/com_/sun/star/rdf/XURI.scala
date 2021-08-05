@@ -25,19 +25,15 @@ trait XURI
 }
 object XURI {
   
-  @scala.inline
-  def apply(LocalName: String, Namespace: String, StringValue: String): XURI = {
+  inline def apply(LocalName: String, Namespace: String, StringValue: String): XURI = {
     val __obj = js.Dynamic.literal(LocalName = LocalName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], StringValue = StringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[XURI]
   }
   
-  @scala.inline
-  implicit class XURIMutableBuilder[Self <: XURI] (val x: Self) extends AnyVal {
+  extension [Self <: XURI](x: Self) {
     
-    @scala.inline
-    def setLocalName(value: String): Self = StObject.set(x, "LocalName", value.asInstanceOf[js.Any])
+    inline def setLocalName(value: String): Self = StObject.set(x, "LocalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
   }
 }

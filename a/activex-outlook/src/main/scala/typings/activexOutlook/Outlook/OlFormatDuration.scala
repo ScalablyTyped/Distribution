@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlFormatDuration extends StObject
 object OlFormatDuration {
   
-  @scala.inline
-  def olFormatDurationLong: `2` = 2.asInstanceOf[`2`]
+  inline def olFormatDurationLong: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olFormatDurationLongBusiness: `4` = 4.asInstanceOf[`4`]
+  inline def olFormatDurationLongBusiness: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olFormatDurationShort: `1` = 1.asInstanceOf[`1`]
+  inline def olFormatDurationShort: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olFormatDurationShortBusiness: `3` = 3.asInstanceOf[`3`]
+  inline def olFormatDurationShortBusiness: `3` = 3.asInstanceOf[`3`]
 }

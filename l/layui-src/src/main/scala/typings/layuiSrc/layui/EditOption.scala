@@ -17,43 +17,31 @@ trait EditOption extends StObject {
 }
 object EditOption {
   
-  @scala.inline
-  def apply(): EditOption = {
+  inline def apply(): EditOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditOption]
   }
   
-  @scala.inline
-  implicit class EditOptionMutableBuilder[Self <: EditOption] (val x: Self) extends AnyVal {
+  extension [Self <: EditOption](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHideTool(value: js.Array[String]): Self = StObject.set(x, "hideTool", value.asInstanceOf[js.Any])
+    inline def setHideTool(value: js.Array[String]): Self = StObject.set(x, "hideTool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideToolUndefined: Self = StObject.set(x, "hideTool", js.undefined)
+    inline def setHideToolUndefined: Self = StObject.set(x, "hideTool", js.undefined)
     
-    @scala.inline
-    def setHideToolVarargs(value: String*): Self = StObject.set(x, "hideTool", js.Array(value :_*))
+    inline def setHideToolVarargs(value: String*): Self = StObject.set(x, "hideTool", js.Array(value :_*))
     
-    @scala.inline
-    def setTool(value: js.Array[String]): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+    inline def setTool(value: js.Array[String]): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolUndefined: Self = StObject.set(x, "tool", js.undefined)
+    inline def setToolUndefined: Self = StObject.set(x, "tool", js.undefined)
     
-    @scala.inline
-    def setToolVarargs(value: String*): Self = StObject.set(x, "tool", js.Array(value :_*))
+    inline def setToolVarargs(value: String*): Self = StObject.set(x, "tool", js.Array(value :_*))
     
-    @scala.inline
-    def setUploadImage(value: Type): Self = StObject.set(x, "uploadImage", value.asInstanceOf[js.Any])
+    inline def setUploadImage(value: Type): Self = StObject.set(x, "uploadImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadImageUndefined: Self = StObject.set(x, "uploadImage", js.undefined)
+    inline def setUploadImageUndefined: Self = StObject.set(x, "uploadImage", js.undefined)
   }
 }

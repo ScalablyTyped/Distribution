@@ -23,8 +23,7 @@ trait ExtensionFilterResult extends StObject {
 }
 object ExtensionFilterResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extensions: js.Array[PublishedExtension],
     pagingToken: String,
     resultMetadata: js.Array[ExtensionFilterResultMetadata]
@@ -33,22 +32,16 @@ object ExtensionFilterResult {
     __obj.asInstanceOf[ExtensionFilterResult]
   }
   
-  @scala.inline
-  implicit class ExtensionFilterResultMutableBuilder[Self <: ExtensionFilterResult] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionFilterResult](x: Self) {
     
-    @scala.inline
-    def setExtensions(value: js.Array[PublishedExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[PublishedExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsVarargs(value: PublishedExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: PublishedExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setPagingToken(value: String): Self = StObject.set(x, "pagingToken", value.asInstanceOf[js.Any])
+    inline def setPagingToken(value: String): Self = StObject.set(x, "pagingToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultMetadata(value: js.Array[ExtensionFilterResultMetadata]): Self = StObject.set(x, "resultMetadata", value.asInstanceOf[js.Any])
+    inline def setResultMetadata(value: js.Array[ExtensionFilterResultMetadata]): Self = StObject.set(x, "resultMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultMetadataVarargs(value: ExtensionFilterResultMetadata*): Self = StObject.set(x, "resultMetadata", js.Array(value :_*))
+    inline def setResultMetadataVarargs(value: ExtensionFilterResultMetadata*): Self = StObject.set(x, "resultMetadata", js.Array(value :_*))
   }
 }

@@ -16,8 +16,7 @@ trait AgentNotebookHistoryResult
 }
 object AgentNotebookHistoryResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorMessage: String,
     histories: js.Array[AgentNotebookHistoryInfo],
     schedules: js.Array[AgentJobScheduleInfo],
@@ -28,25 +27,18 @@ object AgentNotebookHistoryResult {
     __obj.asInstanceOf[AgentNotebookHistoryResult]
   }
   
-  @scala.inline
-  implicit class AgentNotebookHistoryResultMutableBuilder[Self <: AgentNotebookHistoryResult] (val x: Self) extends AnyVal {
+  extension [Self <: AgentNotebookHistoryResult](x: Self) {
     
-    @scala.inline
-    def setHistories(value: js.Array[AgentNotebookHistoryInfo]): Self = StObject.set(x, "histories", value.asInstanceOf[js.Any])
+    inline def setHistories(value: js.Array[AgentNotebookHistoryInfo]): Self = StObject.set(x, "histories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoriesVarargs(value: AgentNotebookHistoryInfo*): Self = StObject.set(x, "histories", js.Array(value :_*))
+    inline def setHistoriesVarargs(value: AgentNotebookHistoryInfo*): Self = StObject.set(x, "histories", js.Array(value :_*))
     
-    @scala.inline
-    def setSchedules(value: js.Array[AgentJobScheduleInfo]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
+    inline def setSchedules(value: js.Array[AgentJobScheduleInfo]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedulesVarargs(value: AgentJobScheduleInfo*): Self = StObject.set(x, "schedules", js.Array(value :_*))
+    inline def setSchedulesVarargs(value: AgentJobScheduleInfo*): Self = StObject.set(x, "schedules", js.Array(value :_*))
     
-    @scala.inline
-    def setSteps(value: js.Array[AgentJobStepInfo]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[AgentJobStepInfo]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsVarargs(value: AgentJobStepInfo*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: AgentJobStepInfo*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

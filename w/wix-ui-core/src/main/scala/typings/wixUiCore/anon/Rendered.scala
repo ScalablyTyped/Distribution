@@ -12,19 +12,15 @@ trait Rendered extends StObject {
 }
 object Rendered {
   
-  @scala.inline
-  def apply(rendered: Boolean, token: js.Any): Rendered = {
+  inline def apply(rendered: Boolean, token: js.Any): Rendered = {
     val __obj = js.Dynamic.literal(rendered = rendered.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rendered]
   }
   
-  @scala.inline
-  implicit class RenderedMutableBuilder[Self <: Rendered] (val x: Self) extends AnyVal {
+  extension [Self <: Rendered](x: Self) {
     
-    @scala.inline
-    def setRendered(value: Boolean): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+    inline def setRendered(value: Boolean): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

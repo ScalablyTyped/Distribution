@@ -16,10 +16,8 @@ object fileMod {
   @js.native
   val COMMON_MIME_TYPES: Map[String, String] = js.native
   
-  @scala.inline
-  def toFileWithPath(file: FileWithPath): FileWithPath = ^.asInstanceOf[js.Dynamic].applyDynamic("toFileWithPath")(file.asInstanceOf[js.Any]).asInstanceOf[FileWithPath]
-  @scala.inline
-  def toFileWithPath(file: FileWithPath, path: String): FileWithPath = (^.asInstanceOf[js.Dynamic].applyDynamic("toFileWithPath")(file.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[FileWithPath]
+  inline def toFileWithPath(file: FileWithPath): FileWithPath = ^.asInstanceOf[js.Dynamic].applyDynamic("toFileWithPath")(file.asInstanceOf[js.Any]).asInstanceOf[FileWithPath]
+  inline def toFileWithPath(file: FileWithPath, path: String): FileWithPath = (^.asInstanceOf[js.Dynamic].applyDynamic("toFileWithPath")(file.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[FileWithPath]
   
   @js.native
   trait DOMFile

@@ -18,28 +18,21 @@ trait GetDistributionMetricDataResult extends StObject {
 }
 object GetDistributionMetricDataResult {
   
-  @scala.inline
-  def apply(): GetDistributionMetricDataResult = {
+  inline def apply(): GetDistributionMetricDataResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDistributionMetricDataResult]
   }
   
-  @scala.inline
-  implicit class GetDistributionMetricDataResultMutableBuilder[Self <: GetDistributionMetricDataResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetDistributionMetricDataResult](x: Self) {
     
-    @scala.inline
-    def setMetricData(value: MetricDatapointList): Self = StObject.set(x, "metricData", value.asInstanceOf[js.Any])
+    inline def setMetricData(value: MetricDatapointList): Self = StObject.set(x, "metricData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDataUndefined: Self = StObject.set(x, "metricData", js.undefined)
+    inline def setMetricDataUndefined: Self = StObject.set(x, "metricData", js.undefined)
     
-    @scala.inline
-    def setMetricDataVarargs(value: MetricDatapoint*): Self = StObject.set(x, "metricData", js.Array(value :_*))
+    inline def setMetricDataVarargs(value: MetricDatapoint*): Self = StObject.set(x, "metricData", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricName(value: DistributionMetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: DistributionMetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
   }
 }

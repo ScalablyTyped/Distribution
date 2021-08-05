@@ -15,19 +15,15 @@ trait ChaptersTrackMenuItemOptions
 }
 object ChaptersTrackMenuItemOptions {
   
-  @scala.inline
-  def apply(cue: TextTrackCue, track: TextTrack): ChaptersTrackMenuItemOptions = {
+  inline def apply(cue: TextTrackCue, track: TextTrack): ChaptersTrackMenuItemOptions = {
     val __obj = js.Dynamic.literal(cue = cue.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChaptersTrackMenuItemOptions]
   }
   
-  @scala.inline
-  implicit class ChaptersTrackMenuItemOptionsMutableBuilder[Self <: ChaptersTrackMenuItemOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChaptersTrackMenuItemOptions](x: Self) {
     
-    @scala.inline
-    def setCue(value: TextTrackCue): Self = StObject.set(x, "cue", value.asInstanceOf[js.Any])
+    inline def setCue(value: TextTrackCue): Self = StObject.set(x, "cue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack(value: TextTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: TextTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
   }
 }

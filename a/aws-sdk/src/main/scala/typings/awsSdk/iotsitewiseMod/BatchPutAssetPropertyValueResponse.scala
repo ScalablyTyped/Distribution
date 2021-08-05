@@ -13,19 +13,15 @@ trait BatchPutAssetPropertyValueResponse extends StObject {
 }
 object BatchPutAssetPropertyValueResponse {
   
-  @scala.inline
-  def apply(errorEntries: BatchPutAssetPropertyErrorEntries): BatchPutAssetPropertyValueResponse = {
+  inline def apply(errorEntries: BatchPutAssetPropertyErrorEntries): BatchPutAssetPropertyValueResponse = {
     val __obj = js.Dynamic.literal(errorEntries = errorEntries.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchPutAssetPropertyValueResponse]
   }
   
-  @scala.inline
-  implicit class BatchPutAssetPropertyValueResponseMutableBuilder[Self <: BatchPutAssetPropertyValueResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchPutAssetPropertyValueResponse](x: Self) {
     
-    @scala.inline
-    def setErrorEntries(value: BatchPutAssetPropertyErrorEntries): Self = StObject.set(x, "errorEntries", value.asInstanceOf[js.Any])
+    inline def setErrorEntries(value: BatchPutAssetPropertyErrorEntries): Self = StObject.set(x, "errorEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorEntriesVarargs(value: BatchPutAssetPropertyErrorEntry*): Self = StObject.set(x, "errorEntries", js.Array(value :_*))
+    inline def setErrorEntriesVarargs(value: BatchPutAssetPropertyErrorEntry*): Self = StObject.set(x, "errorEntries", js.Array(value :_*))
   }
 }

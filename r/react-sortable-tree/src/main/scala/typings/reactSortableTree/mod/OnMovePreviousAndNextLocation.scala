@@ -12,8 +12,7 @@ trait OnMovePreviousAndNextLocation
 }
 object OnMovePreviousAndNextLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     nextPath: NumberOrStringArray,
     nextTreeIndex: Double,
     prevPath: NumberOrStringArray,
@@ -23,13 +22,10 @@ object OnMovePreviousAndNextLocation {
     __obj.asInstanceOf[OnMovePreviousAndNextLocation]
   }
   
-  @scala.inline
-  implicit class OnMovePreviousAndNextLocationMutableBuilder[Self <: OnMovePreviousAndNextLocation] (val x: Self) extends AnyVal {
+  extension [Self <: OnMovePreviousAndNextLocation](x: Self) {
     
-    @scala.inline
-    def setNextParentNode(value: TreeItem): Self = StObject.set(x, "nextParentNode", value.asInstanceOf[js.Any])
+    inline def setNextParentNode(value: TreeItem): Self = StObject.set(x, "nextParentNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextParentNodeNull: Self = StObject.set(x, "nextParentNode", null)
+    inline def setNextParentNodeNull: Self = StObject.set(x, "nextParentNode", null)
   }
 }

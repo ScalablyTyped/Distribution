@@ -21,49 +21,35 @@ trait PartialClassNameMapListSu extends StObject {
 }
 object PartialClassNameMapListSu {
   
-  @scala.inline
-  def apply(): PartialClassNameMapListSu = {
+  inline def apply(): PartialClassNameMapListSu = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapListSu]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapListSuMutableBuilder[Self <: PartialClassNameMapListSu] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapListSu](x: Self) {
     
-    @scala.inline
-    def setColorInherit(value: String): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
+    inline def setColorInherit(value: String): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorInheritUndefined: Self = StObject.set(x, "colorInherit", js.undefined)
+    inline def setColorInheritUndefined: Self = StObject.set(x, "colorInherit", js.undefined)
     
-    @scala.inline
-    def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
+    inline def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
+    inline def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
     
-    @scala.inline
-    def setGutters(value: String): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
+    inline def setGutters(value: String): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
+    inline def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
     
-    @scala.inline
-    def setInset(value: String): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: String): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSticky(value: String): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+    inline def setSticky(value: String): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+    inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
   }
 }

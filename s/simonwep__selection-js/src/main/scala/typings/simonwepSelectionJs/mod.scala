@@ -47,22 +47,19 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(options: SelectionOptions): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Selection]
+  inline def create(options: SelectionOptions): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Selection]
   
   /* static member */
   @JSImport("@simonwep/selection-js", "utils")
   @js.native
   def utils: SelectionUtils = js.native
-  @scala.inline
-  def utils_=(x: SelectionUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utils")(x.asInstanceOf[js.Any])
+  inline def utils_=(x: SelectionUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utils")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("@simonwep/selection-js", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   type ElementList = HTMLCollection | HTMLElement | js.Array[HTMLElement]
   
@@ -74,14 +71,11 @@ object mod {
   trait Mode extends StObject
   object Mode {
     
-    @scala.inline
-    def center: typings.simonwepSelectionJs.simonwepSelectionJsStrings.center = "center".asInstanceOf[typings.simonwepSelectionJs.simonwepSelectionJsStrings.center]
+    inline def center: typings.simonwepSelectionJs.simonwepSelectionJsStrings.center = "center".asInstanceOf[typings.simonwepSelectionJs.simonwepSelectionJsStrings.center]
     
-    @scala.inline
-    def cover: typings.simonwepSelectionJs.simonwepSelectionJsStrings.cover = "cover".asInstanceOf[typings.simonwepSelectionJs.simonwepSelectionJsStrings.cover]
+    inline def cover: typings.simonwepSelectionJs.simonwepSelectionJsStrings.cover = "cover".asInstanceOf[typings.simonwepSelectionJs.simonwepSelectionJsStrings.cover]
     
-    @scala.inline
-    def touch: typings.simonwepSelectionJs.simonwepSelectionJsStrings.touch = "touch".asInstanceOf[typings.simonwepSelectionJs.simonwepSelectionJsStrings.touch]
+    inline def touch: typings.simonwepSelectionJs.simonwepSelectionJsStrings.touch = "touch".asInstanceOf[typings.simonwepSelectionJs.simonwepSelectionJsStrings.touch]
   }
   
   @js.native
@@ -195,8 +189,7 @@ object mod {
   }
   object SelectionEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       area: Element,
       changed: Added,
       inst: Selection,
@@ -207,26 +200,19 @@ object mod {
       __obj.asInstanceOf[SelectionEvent]
     }
     
-    @scala.inline
-    implicit class SelectionEventMutableBuilder[Self <: SelectionEvent] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionEvent](x: Self) {
       
-      @scala.inline
-      def setArea(value: Element): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+      inline def setArea(value: Element): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChanged(value: Added): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+      inline def setChanged(value: Added): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInst(value: Selection): Self = StObject.set(x, "inst", value.asInstanceOf[js.Any])
+      inline def setInst(value: Selection): Self = StObject.set(x, "inst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOe(value: MouseEvent | TouchEvent): Self = StObject.set(x, "oe", value.asInstanceOf[js.Any])
+      inline def setOe(value: MouseEvent | TouchEvent): Self = StObject.set(x, "oe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: js.Array[Element]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: js.Array[Element]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedVarargs(value: Element*): Self = StObject.set(x, "selected", js.Array(value :_*))
+      inline def setSelectedVarargs(value: Element*): Self = StObject.set(x, "selected", js.Array(value :_*))
     }
   }
   
@@ -242,8 +228,7 @@ object mod {
   }
   object SelectionEvents {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       beforestart: SelectionEvent => Boolean,
       move: SelectionEvent => Unit,
       start: SelectionEvent => Unit,
@@ -253,20 +238,15 @@ object mod {
       __obj.asInstanceOf[SelectionEvents]
     }
     
-    @scala.inline
-    implicit class SelectionEventsMutableBuilder[Self <: SelectionEvents] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionEvents](x: Self) {
       
-      @scala.inline
-      def setBeforestart(value: SelectionEvent => Boolean): Self = StObject.set(x, "beforestart", js.Any.fromFunction1(value))
+      inline def setBeforestart(value: SelectionEvent => Boolean): Self = StObject.set(x, "beforestart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMove(value: SelectionEvent => Unit): Self = StObject.set(x, "move", js.Any.fromFunction1(value))
+      inline def setMove(value: SelectionEvent => Unit): Self = StObject.set(x, "move", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: SelectionEvent => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+      inline def setStart(value: SelectionEvent => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStop(value: SelectionEvent => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+      inline def setStop(value: SelectionEvent => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
     }
   }
   
@@ -300,104 +280,72 @@ object mod {
   }
   object SelectionOptions {
     
-    @scala.inline
-    def apply(): SelectionOptions = {
+    inline def apply(): SelectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectionOptions]
     }
     
-    @scala.inline
-    implicit class SelectionOptionsMutableBuilder[Self <: SelectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionOptions](x: Self) {
       
-      @scala.inline
-      def setBoundaries(value: js.Array[String]): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
+      inline def setBoundaries(value: js.Array[String]): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundariesUndefined: Self = StObject.set(x, "boundaries", js.undefined)
+      inline def setBoundariesUndefined: Self = StObject.set(x, "boundaries", js.undefined)
       
-      @scala.inline
-      def setBoundariesVarargs(value: String*): Self = StObject.set(x, "boundaries", js.Array(value :_*))
+      inline def setBoundariesVarargs(value: String*): Self = StObject.set(x, "boundaries", js.Array(value :_*))
       
-      @scala.inline
-      def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+      inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
-      @scala.inline
-      def setDisableTouch(value: Boolean): Self = StObject.set(x, "disableTouch", value.asInstanceOf[js.Any])
+      inline def setDisableTouch(value: Boolean): Self = StObject.set(x, "disableTouch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableTouchUndefined: Self = StObject.set(x, "disableTouch", js.undefined)
+      inline def setDisableTouchUndefined: Self = StObject.set(x, "disableTouch", js.undefined)
       
-      @scala.inline
-      def setFrame(value: Node): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: Node): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+      inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
       
-      @scala.inline
-      def setManualScrollSpeed(value: Double): Self = StObject.set(x, "manualScrollSpeed", value.asInstanceOf[js.Any])
+      inline def setManualScrollSpeed(value: Double): Self = StObject.set(x, "manualScrollSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManualScrollSpeedUndefined: Self = StObject.set(x, "manualScrollSpeed", js.undefined)
+      inline def setManualScrollSpeedUndefined: Self = StObject.set(x, "manualScrollSpeed", js.undefined)
       
-      @scala.inline
-      def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setScrollSpeedDivider(value: Double): Self = StObject.set(x, "scrollSpeedDivider", value.asInstanceOf[js.Any])
+      inline def setScrollSpeedDivider(value: Double): Self = StObject.set(x, "scrollSpeedDivider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollSpeedDividerUndefined: Self = StObject.set(x, "scrollSpeedDivider", js.undefined)
+      inline def setScrollSpeedDividerUndefined: Self = StObject.set(x, "scrollSpeedDivider", js.undefined)
       
-      @scala.inline
-      def setSelectables(value: js.Array[String]): Self = StObject.set(x, "selectables", value.asInstanceOf[js.Any])
+      inline def setSelectables(value: js.Array[String]): Self = StObject.set(x, "selectables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectablesUndefined: Self = StObject.set(x, "selectables", js.undefined)
+      inline def setSelectablesUndefined: Self = StObject.set(x, "selectables", js.undefined)
       
-      @scala.inline
-      def setSelectablesVarargs(value: String*): Self = StObject.set(x, "selectables", js.Array(value :_*))
+      inline def setSelectablesVarargs(value: String*): Self = StObject.set(x, "selectables", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectionAreaContainer(value: String | HTMLElement | (js.Array[String | HTMLElement])): Self = StObject.set(x, "selectionAreaContainer", value.asInstanceOf[js.Any])
+      inline def setSelectionAreaContainer(value: String | HTMLElement | (js.Array[String | HTMLElement])): Self = StObject.set(x, "selectionAreaContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionAreaContainerUndefined: Self = StObject.set(x, "selectionAreaContainer", js.undefined)
+      inline def setSelectionAreaContainerUndefined: Self = StObject.set(x, "selectionAreaContainer", js.undefined)
       
-      @scala.inline
-      def setSelectionAreaContainerVarargs(value: (String | HTMLElement)*): Self = StObject.set(x, "selectionAreaContainer", js.Array(value :_*))
+      inline def setSelectionAreaContainerVarargs(value: (String | HTMLElement)*): Self = StObject.set(x, "selectionAreaContainer", js.Array(value :_*))
       
-      @scala.inline
-      def setSingleClick(value: Boolean): Self = StObject.set(x, "singleClick", value.asInstanceOf[js.Any])
+      inline def setSingleClick(value: Boolean): Self = StObject.set(x, "singleClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleClickUndefined: Self = StObject.set(x, "singleClick", js.undefined)
+      inline def setSingleClickUndefined: Self = StObject.set(x, "singleClick", js.undefined)
       
-      @scala.inline
-      def setStartThreshold(value: Double): Self = StObject.set(x, "startThreshold", value.asInstanceOf[js.Any])
+      inline def setStartThreshold(value: Double): Self = StObject.set(x, "startThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartThresholdUndefined: Self = StObject.set(x, "startThreshold", js.undefined)
+      inline def setStartThresholdUndefined: Self = StObject.set(x, "startThreshold", js.undefined)
       
-      @scala.inline
-      def setStartareas(value: js.Array[String]): Self = StObject.set(x, "startareas", value.asInstanceOf[js.Any])
+      inline def setStartareas(value: js.Array[String]): Self = StObject.set(x, "startareas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartareasUndefined: Self = StObject.set(x, "startareas", js.undefined)
+      inline def setStartareasUndefined: Self = StObject.set(x, "startareas", js.undefined)
       
-      @scala.inline
-      def setStartareasVarargs(value: String*): Self = StObject.set(x, "startareas", js.Array(value :_*))
+      inline def setStartareasVarargs(value: String*): Self = StObject.set(x, "startareas", js.Array(value :_*))
       
-      @scala.inline
-      def setTapMode(value: TapMode): Self = StObject.set(x, "tapMode", value.asInstanceOf[js.Any])
+      inline def setTapMode(value: TapMode): Self = StObject.set(x, "tapMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTapModeUndefined: Self = StObject.set(x, "tapMode", js.undefined)
+      inline def setTapModeUndefined: Self = StObject.set(x, "tapMode", js.undefined)
     }
   }
   
@@ -456,10 +404,8 @@ object mod {
   trait TapMode extends StObject
   object TapMode {
     
-    @scala.inline
-    def native: typings.simonwepSelectionJs.simonwepSelectionJsStrings.native = "native".asInstanceOf[typings.simonwepSelectionJs.simonwepSelectionJsStrings.native]
+    inline def native: typings.simonwepSelectionJs.simonwepSelectionJsStrings.native = "native".asInstanceOf[typings.simonwepSelectionJs.simonwepSelectionJsStrings.native]
     
-    @scala.inline
-    def touch: typings.simonwepSelectionJs.simonwepSelectionJsStrings.touch = "touch".asInstanceOf[typings.simonwepSelectionJs.simonwepSelectionJsStrings.touch]
+    inline def touch: typings.simonwepSelectionJs.simonwepSelectionJsStrings.touch = "touch".asInstanceOf[typings.simonwepSelectionJs.simonwepSelectionJsStrings.touch]
   }
 }

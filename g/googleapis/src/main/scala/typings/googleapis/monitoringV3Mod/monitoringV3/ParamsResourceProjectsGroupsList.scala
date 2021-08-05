@@ -61,55 +61,39 @@ trait ParamsResourceProjectsGroupsList
 }
 object ParamsResourceProjectsGroupsList {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsGroupsList = {
+  inline def apply(): ParamsResourceProjectsGroupsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsGroupsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsGroupsListMutableBuilder[Self <: ParamsResourceProjectsGroupsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsGroupsList](x: Self) {
     
-    @scala.inline
-    def setAncestorsOfGroup(value: String): Self = StObject.set(x, "ancestorsOfGroup", value.asInstanceOf[js.Any])
+    inline def setAncestorsOfGroup(value: String): Self = StObject.set(x, "ancestorsOfGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAncestorsOfGroupUndefined: Self = StObject.set(x, "ancestorsOfGroup", js.undefined)
+    inline def setAncestorsOfGroupUndefined: Self = StObject.set(x, "ancestorsOfGroup", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setChildrenOfGroup(value: String): Self = StObject.set(x, "childrenOfGroup", value.asInstanceOf[js.Any])
+    inline def setChildrenOfGroup(value: String): Self = StObject.set(x, "childrenOfGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenOfGroupUndefined: Self = StObject.set(x, "childrenOfGroup", js.undefined)
+    inline def setChildrenOfGroupUndefined: Self = StObject.set(x, "childrenOfGroup", js.undefined)
     
-    @scala.inline
-    def setDescendantsOfGroup(value: String): Self = StObject.set(x, "descendantsOfGroup", value.asInstanceOf[js.Any])
+    inline def setDescendantsOfGroup(value: String): Self = StObject.set(x, "descendantsOfGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescendantsOfGroupUndefined: Self = StObject.set(x, "descendantsOfGroup", js.undefined)
+    inline def setDescendantsOfGroupUndefined: Self = StObject.set(x, "descendantsOfGroup", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

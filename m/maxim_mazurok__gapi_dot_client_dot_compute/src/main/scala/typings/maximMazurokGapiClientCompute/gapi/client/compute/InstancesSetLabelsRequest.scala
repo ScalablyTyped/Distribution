@@ -18,29 +18,23 @@ trait InstancesSetLabelsRequest extends StObject {
 }
 object InstancesSetLabelsRequest {
   
-  @scala.inline
-  def apply(): InstancesSetLabelsRequest = {
+  inline def apply(): InstancesSetLabelsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstancesSetLabelsRequest]
   }
   
-  @scala.inline
-  implicit class InstancesSetLabelsRequestMutableBuilder[Self <: InstancesSetLabelsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstancesSetLabelsRequest](x: Self) {
     
-    @scala.inline
-    def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
+    inline def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
+    inline def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.InstancesSetLabelsRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }
 }

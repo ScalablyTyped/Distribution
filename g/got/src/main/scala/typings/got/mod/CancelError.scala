@@ -19,10 +19,8 @@ object CancelError {
   @js.native
   val ^ : Instantiable0[CancelError] = js.native
   
-  @scala.inline
-  implicit class CancelErrorMutableBuilder[Self <: CancelError] (val x: Self) extends AnyVal {
+  extension [Self <: CancelError](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.got.gotStrings.CancelError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.got.gotStrings.CancelError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

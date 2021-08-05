@@ -40,109 +40,75 @@ trait Messages extends StObject {
 }
 object Messages {
   
-  @scala.inline
-  def apply(): Messages = {
+  inline def apply(): Messages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Messages]
   }
   
-  @scala.inline
-  implicit class MessagesMutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
+  extension [Self <: Messages](x: Self) {
     
-    @scala.inline
-    def setAgenda(value: String): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])
+    inline def setAgenda(value: String): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgendaUndefined: Self = StObject.set(x, "agenda", js.undefined)
+    inline def setAgendaUndefined: Self = StObject.set(x, "agenda", js.undefined)
     
-    @scala.inline
-    def setAllDay(value: String): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
+    inline def setAllDay(value: String): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllDayUndefined: Self = StObject.set(x, "allDay", js.undefined)
+    inline def setAllDayUndefined: Self = StObject.set(x, "allDay", js.undefined)
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+    inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
-    @scala.inline
-    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setNoEventsInRange(value: String): Self = StObject.set(x, "noEventsInRange", value.asInstanceOf[js.Any])
+    inline def setNoEventsInRange(value: String): Self = StObject.set(x, "noEventsInRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoEventsInRangeUndefined: Self = StObject.set(x, "noEventsInRange", js.undefined)
+    inline def setNoEventsInRangeUndefined: Self = StObject.set(x, "noEventsInRange", js.undefined)
     
-    @scala.inline
-    def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+    inline def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+    inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     
-    @scala.inline
-    def setShowMore(value: /* count */ Double => String): Self = StObject.set(x, "showMore", js.Any.fromFunction1(value))
+    inline def setShowMore(value: /* count */ Double => String): Self = StObject.set(x, "showMore", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowMoreUndefined: Self = StObject.set(x, "showMore", js.undefined)
+    inline def setShowMoreUndefined: Self = StObject.set(x, "showMore", js.undefined)
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
-    @scala.inline
-    def setToday(value: String): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+    inline def setToday(value: String): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
+    inline def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
     
-    @scala.inline
-    def setTomorrow(value: String): Self = StObject.set(x, "tomorrow", value.asInstanceOf[js.Any])
+    inline def setTomorrow(value: String): Self = StObject.set(x, "tomorrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTomorrowUndefined: Self = StObject.set(x, "tomorrow", js.undefined)
+    inline def setTomorrowUndefined: Self = StObject.set(x, "tomorrow", js.undefined)
     
-    @scala.inline
-    def setWeek(value: String): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+    inline def setWeek(value: String): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
+    inline def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
     
-    @scala.inline
-    def setWork_week(value: String): Self = StObject.set(x, "work_week", value.asInstanceOf[js.Any])
+    inline def setWork_week(value: String): Self = StObject.set(x, "work_week", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWork_weekUndefined: Self = StObject.set(x, "work_week", js.undefined)
+    inline def setWork_weekUndefined: Self = StObject.set(x, "work_week", js.undefined)
     
-    @scala.inline
-    def setYesterday(value: String): Self = StObject.set(x, "yesterday", value.asInstanceOf[js.Any])
+    inline def setYesterday(value: String): Self = StObject.set(x, "yesterday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYesterdayUndefined: Self = StObject.set(x, "yesterday", js.undefined)
+    inline def setYesterdayUndefined: Self = StObject.set(x, "yesterday", js.undefined)
   }
 }

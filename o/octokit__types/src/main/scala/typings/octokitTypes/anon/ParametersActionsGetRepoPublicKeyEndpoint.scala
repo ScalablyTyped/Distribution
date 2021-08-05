@@ -18,8 +18,7 @@ trait ParametersActionsGetRepoPublicKeyEndpoint extends StObject {
 }
 object ParametersActionsGetRepoPublicKeyEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsGetRepoPublicKeyEndpoint,
     request: ActionsGetRepoPublicKeyRequestOptions,
     response: OctokitResponse[ActionsGetRepoPublicKeyResponseData]
@@ -28,16 +27,12 @@ object ParametersActionsGetRepoPublicKeyEndpoint {
     __obj.asInstanceOf[ParametersActionsGetRepoPublicKeyEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsGetRepoPublicKeyEndpointMutableBuilder[Self <: ParametersActionsGetRepoPublicKeyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsGetRepoPublicKeyEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsGetRepoPublicKeyEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsGetRepoPublicKeyEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActionsGetRepoPublicKeyRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActionsGetRepoPublicKeyRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsGetRepoPublicKeyResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActionsGetRepoPublicKeyResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

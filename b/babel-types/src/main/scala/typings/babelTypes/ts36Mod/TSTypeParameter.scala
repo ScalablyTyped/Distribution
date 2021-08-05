@@ -32,28 +32,20 @@ object TSTypeParameter {
   @js.native
   def apply(constraint: TSType, default_ : TSType): TSTypeParameter = js.native
   
-  @scala.inline
-  implicit class TSTypeParameterMutableBuilder[Self <: TSTypeParameter] (val x: Self) extends AnyVal {
+  extension [Self <: TSTypeParameter](x: Self) {
     
-    @scala.inline
-    def setConstraint(value: TSType): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    inline def setConstraint(value: TSType): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintNull: Self = StObject.set(x, "constraint", null)
+    inline def setConstraintNull: Self = StObject.set(x, "constraint", null)
     
-    @scala.inline
-    def setDefault(value: TSType): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: TSType): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNull: Self = StObject.set(x, "default", null)
+    inline def setDefaultNull: Self = StObject.set(x, "default", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSTypeParameter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSTypeParameter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

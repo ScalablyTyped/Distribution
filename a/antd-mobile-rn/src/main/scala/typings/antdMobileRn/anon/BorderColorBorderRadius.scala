@@ -18,8 +18,7 @@ trait BorderColorBorderRadius extends StObject {
 }
 object BorderColorBorderRadius {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     borderColor: String,
     borderRadius: Double,
     borderWidth: Double,
@@ -30,22 +29,16 @@ object BorderColorBorderRadius {
     __obj.asInstanceOf[BorderColorBorderRadius]
   }
   
-  @scala.inline
-  implicit class BorderColorBorderRadiusMutableBuilder[Self <: BorderColorBorderRadius] (val x: Self) extends AnyVal {
+  extension [Self <: BorderColorBorderRadius](x: Self) {
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
   }
 }

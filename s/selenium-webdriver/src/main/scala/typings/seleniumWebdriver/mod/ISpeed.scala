@@ -12,19 +12,15 @@ trait ISpeed extends StObject {
 }
 object ISpeed {
   
-  @scala.inline
-  def apply(xspeed: Double, yspeed: Double): ISpeed = {
+  inline def apply(xspeed: Double, yspeed: Double): ISpeed = {
     val __obj = js.Dynamic.literal(xspeed = xspeed.asInstanceOf[js.Any], yspeed = yspeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpeed]
   }
   
-  @scala.inline
-  implicit class ISpeedMutableBuilder[Self <: ISpeed] (val x: Self) extends AnyVal {
+  extension [Self <: ISpeed](x: Self) {
     
-    @scala.inline
-    def setXspeed(value: Double): Self = StObject.set(x, "xspeed", value.asInstanceOf[js.Any])
+    inline def setXspeed(value: Double): Self = StObject.set(x, "xspeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYspeed(value: Double): Self = StObject.set(x, "yspeed", value.asInstanceOf[js.Any])
+    inline def setYspeed(value: Double): Self = StObject.set(x, "yspeed", value.asInstanceOf[js.Any])
   }
 }

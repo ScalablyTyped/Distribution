@@ -14,8 +14,7 @@ trait Behavior[Data, Props, Methods] extends StObject {
 }
 object Behavior {
   
-  @scala.inline
-  def apply[Data, Props, Methods](
+  inline def apply[Data, Props, Methods](
     __DO_NOT_USE_INTERNAL_FIELD_DATA: Data,
     __DO_NOT_USE_INTERNAL_FIELD_METHODS: Methods,
     __DO_NOT_USE_INTERNAL_FIELD_PROPS: Props
@@ -24,16 +23,12 @@ object Behavior {
     __obj.asInstanceOf[Behavior[Data, Props, Methods]]
   }
   
-  @scala.inline
-  implicit class BehaviorMutableBuilder[Self <: Behavior[?, ?, ?], Data, Props, Methods] (val x: Self & (Behavior[Data, Props, Methods])) extends AnyVal {
+  extension [Self <: Behavior[?, ?, ?], Data, Props, Methods](x: Self & (Behavior[Data, Props, Methods])) {
     
-    @scala.inline
-    def set__DO_NOT_USE_INTERNAL_FIELD_DATA(value: Data): Self = StObject.set(x, "__DO_NOT_USE_INTERNAL_FIELD_DATA", value.asInstanceOf[js.Any])
+    inline def set__DO_NOT_USE_INTERNAL_FIELD_DATA(value: Data): Self = StObject.set(x, "__DO_NOT_USE_INTERNAL_FIELD_DATA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__DO_NOT_USE_INTERNAL_FIELD_METHODS(value: Methods): Self = StObject.set(x, "__DO_NOT_USE_INTERNAL_FIELD_METHODS", value.asInstanceOf[js.Any])
+    inline def set__DO_NOT_USE_INTERNAL_FIELD_METHODS(value: Methods): Self = StObject.set(x, "__DO_NOT_USE_INTERNAL_FIELD_METHODS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__DO_NOT_USE_INTERNAL_FIELD_PROPS(value: Props): Self = StObject.set(x, "__DO_NOT_USE_INTERNAL_FIELD_PROPS", value.asInstanceOf[js.Any])
+    inline def set__DO_NOT_USE_INTERNAL_FIELD_PROPS(value: Props): Self = StObject.set(x, "__DO_NOT_USE_INTERNAL_FIELD_PROPS", value.asInstanceOf[js.Any])
   }
 }

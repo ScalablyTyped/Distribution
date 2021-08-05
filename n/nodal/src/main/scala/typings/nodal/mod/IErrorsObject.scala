@@ -13,19 +13,15 @@ trait IErrorsObject
 }
 object IErrorsObject {
   
-  @scala.inline
-  def apply(): IErrorsObject = {
+  inline def apply(): IErrorsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IErrorsObject]
   }
   
-  @scala.inline
-  implicit class IErrorsObjectMutableBuilder[Self <: IErrorsObject] (val x: Self) extends AnyVal {
+  extension [Self <: IErrorsObject](x: Self) {
     
-    @scala.inline
-    def set_query(value: js.Any): Self = StObject.set(x, "_query", value.asInstanceOf[js.Any])
+    inline def set_query(value: js.Any): Self = StObject.set(x, "_query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_queryUndefined: Self = StObject.set(x, "_query", js.undefined)
+    inline def set_queryUndefined: Self = StObject.set(x, "_query", js.undefined)
   }
 }

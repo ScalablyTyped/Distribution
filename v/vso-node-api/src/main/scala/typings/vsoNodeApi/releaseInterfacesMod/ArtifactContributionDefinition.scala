@@ -30,8 +30,7 @@ trait ArtifactContributionDefinition extends StObject {
 }
 object ArtifactContributionDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     artifactType: String,
     artifactTypeStreamMapping: StringDictionary[String],
     browsableArtifactTypeMapping: StringDictionary[String],
@@ -47,43 +46,30 @@ object ArtifactContributionDefinition {
     __obj.asInstanceOf[ArtifactContributionDefinition]
   }
   
-  @scala.inline
-  implicit class ArtifactContributionDefinitionMutableBuilder[Self <: ArtifactContributionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactContributionDefinition](x: Self) {
     
-    @scala.inline
-    def setArtifactType(value: String): Self = StObject.set(x, "artifactType", value.asInstanceOf[js.Any])
+    inline def setArtifactType(value: String): Self = StObject.set(x, "artifactType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactTypeStreamMapping(value: StringDictionary[String]): Self = StObject.set(x, "artifactTypeStreamMapping", value.asInstanceOf[js.Any])
+    inline def setArtifactTypeStreamMapping(value: StringDictionary[String]): Self = StObject.set(x, "artifactTypeStreamMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowsableArtifactTypeMapping(value: StringDictionary[String]): Self = StObject.set(x, "browsableArtifactTypeMapping", value.asInstanceOf[js.Any])
+    inline def setBrowsableArtifactTypeMapping(value: StringDictionary[String]): Self = StObject.set(x, "browsableArtifactTypeMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceBindings(value: js.Array[DataSourceBinding]): Self = StObject.set(x, "dataSourceBindings", value.asInstanceOf[js.Any])
+    inline def setDataSourceBindings(value: js.Array[DataSourceBinding]): Self = StObject.set(x, "dataSourceBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceBindingsVarargs(value: DataSourceBinding*): Self = StObject.set(x, "dataSourceBindings", js.Array(value :_*))
+    inline def setDataSourceBindingsVarargs(value: DataSourceBinding*): Self = StObject.set(x, "dataSourceBindings", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadTaskId(value: String): Self = StObject.set(x, "downloadTaskId", value.asInstanceOf[js.Any])
+    inline def setDownloadTaskId(value: String): Self = StObject.set(x, "downloadTaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointTypeId(value: String): Self = StObject.set(x, "endpointTypeId", value.asInstanceOf[js.Any])
+    inline def setEndpointTypeId(value: String): Self = StObject.set(x, "endpointTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescriptors(value: js.Array[InputDescriptor]): Self = StObject.set(x, "inputDescriptors", value.asInstanceOf[js.Any])
+    inline def setInputDescriptors(value: js.Array[InputDescriptor]): Self = StObject.set(x, "inputDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescriptorsVarargs(value: InputDescriptor*): Self = StObject.set(x, "inputDescriptors", js.Array(value :_*))
+    inline def setInputDescriptorsVarargs(value: InputDescriptor*): Self = StObject.set(x, "inputDescriptors", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueSourceIdentifier(value: String): Self = StObject.set(x, "uniqueSourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setUniqueSourceIdentifier(value: String): Self = StObject.set(x, "uniqueSourceIdentifier", value.asInstanceOf[js.Any])
   }
 }

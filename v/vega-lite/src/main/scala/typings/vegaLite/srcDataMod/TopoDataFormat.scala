@@ -30,31 +30,23 @@ trait TopoDataFormat
 }
 object TopoDataFormat {
   
-  @scala.inline
-  def apply(): TopoDataFormat = {
+  inline def apply(): TopoDataFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopoDataFormat]
   }
   
-  @scala.inline
-  implicit class TopoDataFormatMutableBuilder[Self <: TopoDataFormat] (val x: Self) extends AnyVal {
+  extension [Self <: TopoDataFormat](x: Self) {
     
-    @scala.inline
-    def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
+    inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
     
-    @scala.inline
-    def setMesh(value: String): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
+    inline def setMesh(value: String): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshUndefined: Self = StObject.set(x, "mesh", js.undefined)
+    inline def setMeshUndefined: Self = StObject.set(x, "mesh", js.undefined)
     
-    @scala.inline
-    def setType(value: topojson): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: topojson): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

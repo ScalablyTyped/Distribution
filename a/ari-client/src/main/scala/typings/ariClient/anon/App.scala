@@ -12,25 +12,19 @@ trait App extends StObject {
 }
 object App {
   
-  @scala.inline
-  def apply(app: String | js.Array[String]): App = {
+  inline def apply(app: String | js.Array[String]): App = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
     __obj.asInstanceOf[App]
   }
   
-  @scala.inline
-  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
+  extension [Self <: App](x: Self) {
     
-    @scala.inline
-    def setApp(value: String | js.Array[String]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: String | js.Array[String]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value :_*))
+    inline def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value :_*))
     
-    @scala.inline
-    def setSubscribeAll(value: Boolean): Self = StObject.set(x, "subscribeAll", value.asInstanceOf[js.Any])
+    inline def setSubscribeAll(value: Boolean): Self = StObject.set(x, "subscribeAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribeAllUndefined: Self = StObject.set(x, "subscribeAll", js.undefined)
+    inline def setSubscribeAllUndefined: Self = StObject.set(x, "subscribeAll", js.undefined)
   }
 }

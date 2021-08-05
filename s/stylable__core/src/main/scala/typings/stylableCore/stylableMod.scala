@@ -49,22 +49,22 @@ object stylableMod {
     
     /* protected */ def cssParser(css: String): Root_ = js.native
     /* protected */ def cssParser(css: String, options: ProcessOptions): Root_ = js.native
-    @JSName("cssParser")
+    /* protected */ @JSName("cssParser")
     var cssParser_Original: CssParser = js.native
     
     var delimiter: String = js.native
     
-    var diagnostics: Diagnostics = js.native
+    /* protected */ var diagnostics: Diagnostics = js.native
     
     var fileProcessor: FileProcessor[StylableMeta] = js.native
     
-    var fileSystem: MinimalFS = js.native
+    /* protected */ var fileSystem: MinimalFS = js.native
     
-    var hooks: TransformHooks = js.native
+    /* protected */ var hooks: TransformHooks = js.native
     
-    var mode: production | development = js.native
+    /* protected */ var mode: production | development = js.native
     
-    var onProcess: js.UndefOr[js.Function2[/* meta */ StylableMeta, /* path */ String, StylableMeta]] = js.native
+    /* protected */ var onProcess: js.UndefOr[js.Function2[/* meta */ StylableMeta, /* path */ String, StylableMeta]] = js.native
     
     var optimizer: js.UndefOr[IStylableOptimizer] = js.native
     
@@ -77,18 +77,18 @@ object stylableMod {
     
     /* protected */ def requireModule(path: String): js.Any = js.native
     
-    var resolveModule: js.UndefOr[ModuleResolver] = js.native
+    /* protected */ var resolveModule: js.UndefOr[ModuleResolver] = js.native
     
     var resolveNamespace: js.UndefOr[js.Function2[/* namespace */ String, /* source */ String, String]] = js.native
     
-    var resolveOptions: js.Any = js.native
+    /* protected */ var resolveOptions: js.Any = js.native
     
     def resolvePath(ctx: String, path: String): String = js.native
     def resolvePath(ctx: Unit, path: String): String = js.native
     
     var resolver: StylableResolver = js.native
     
-    var timedCacheOptions: OmitTimedCacheOptionscrea = js.native
+    /* protected */ var timedCacheOptions: OmitTimedCacheOptionscrea = js.native
     
     def transform(meta: StylableMeta): StylableResults = js.native
     def transform(source: String, resourcePath: String): StylableResults = js.native
@@ -100,8 +100,7 @@ object stylableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(config: StylableConfig): Stylable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[Stylable]
+    inline def create(config: StylableConfig): Stylable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[Stylable]
   }
   
   trait StylableConfig extends StObject {
@@ -136,92 +135,64 @@ object stylableMod {
   }
   object StylableConfig {
     
-    @scala.inline
-    def apply(fileSystem: MinimalFS, projectRoot: String): StylableConfig = {
+    inline def apply(fileSystem: MinimalFS, projectRoot: String): StylableConfig = {
       val __obj = js.Dynamic.literal(fileSystem = fileSystem.asInstanceOf[js.Any], projectRoot = projectRoot.asInstanceOf[js.Any])
       __obj.asInstanceOf[StylableConfig]
     }
     
-    @scala.inline
-    implicit class StylableConfigMutableBuilder[Self <: StylableConfig] (val x: Self) extends AnyVal {
+    extension [Self <: StylableConfig](x: Self) {
       
-      @scala.inline
-      def setCssParser(value: (/* css */ String, /* options */ js.UndefOr[ProcessOptions]) => Root_): Self = StObject.set(x, "cssParser", js.Any.fromFunction2(value))
+      inline def setCssParser(value: (/* css */ String, /* options */ js.UndefOr[ProcessOptions]) => Root_): Self = StObject.set(x, "cssParser", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCssParserUndefined: Self = StObject.set(x, "cssParser", js.undefined)
+      inline def setCssParserUndefined: Self = StObject.set(x, "cssParser", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setDiagnostics(value: Diagnostics): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+      inline def setDiagnostics(value: Diagnostics): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+      inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
       
-      @scala.inline
-      def setFileSystem(value: MinimalFS): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
+      inline def setFileSystem(value: MinimalFS): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHooks(value: TransformHooks): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      inline def setHooks(value: TransformHooks): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+      inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
       
-      @scala.inline
-      def setMode(value: production | development): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: production | development): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOnProcess(value: (/* meta */ StylableMeta, /* path */ String) => StylableMeta): Self = StObject.set(x, "onProcess", js.Any.fromFunction2(value))
+      inline def setOnProcess(value: (/* meta */ StylableMeta, /* path */ String) => StylableMeta): Self = StObject.set(x, "onProcess", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnProcessUndefined: Self = StObject.set(x, "onProcess", js.undefined)
+      inline def setOnProcessUndefined: Self = StObject.set(x, "onProcess", js.undefined)
       
-      @scala.inline
-      def setOptimizer(value: IStylableOptimizer): Self = StObject.set(x, "optimizer", value.asInstanceOf[js.Any])
+      inline def setOptimizer(value: IStylableOptimizer): Self = StObject.set(x, "optimizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimizerUndefined: Self = StObject.set(x, "optimizer", js.undefined)
+      inline def setOptimizerUndefined: Self = StObject.set(x, "optimizer", js.undefined)
       
-      @scala.inline
-      def setProjectRoot(value: String): Self = StObject.set(x, "projectRoot", value.asInstanceOf[js.Any])
+      inline def setProjectRoot(value: String): Self = StObject.set(x, "projectRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireModule(value: /* path */ String => js.Any): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
+      inline def setRequireModule(value: /* path */ String => js.Any): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequireModuleUndefined: Self = StObject.set(x, "requireModule", js.undefined)
+      inline def setRequireModuleUndefined: Self = StObject.set(x, "requireModule", js.undefined)
       
-      @scala.inline
-      def setResolveModule(value: (/* directoryPath */ String, /* request */ String) => String): Self = StObject.set(x, "resolveModule", js.Any.fromFunction2(value))
+      inline def setResolveModule(value: (/* directoryPath */ String, /* request */ String) => String): Self = StObject.set(x, "resolveModule", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResolveModuleUndefined: Self = StObject.set(x, "resolveModule", js.undefined)
+      inline def setResolveModuleUndefined: Self = StObject.set(x, "resolveModule", js.undefined)
       
-      @scala.inline
-      def setResolveNamespace(value: (/* namespace */ String, /* source */ String) => String): Self = StObject.set(x, "resolveNamespace", js.Any.fromFunction2(value))
+      inline def setResolveNamespace(value: (/* namespace */ String, /* source */ String) => String): Self = StObject.set(x, "resolveNamespace", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResolveNamespaceUndefined: Self = StObject.set(x, "resolveNamespace", js.undefined)
+      inline def setResolveNamespaceUndefined: Self = StObject.set(x, "resolveNamespace", js.undefined)
       
-      @scala.inline
-      def setResolveOptions(value: Dictkey): Self = StObject.set(x, "resolveOptions", value.asInstanceOf[js.Any])
+      inline def setResolveOptions(value: Dictkey): Self = StObject.set(x, "resolveOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveOptionsUndefined: Self = StObject.set(x, "resolveOptions", js.undefined)
+      inline def setResolveOptionsUndefined: Self = StObject.set(x, "resolveOptions", js.undefined)
       
-      @scala.inline
-      def setTimedCacheOptions(value: OmitTimedCacheOptionscrea): Self = StObject.set(x, "timedCacheOptions", value.asInstanceOf[js.Any])
+      inline def setTimedCacheOptions(value: OmitTimedCacheOptionscrea): Self = StObject.set(x, "timedCacheOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimedCacheOptionsUndefined: Self = StObject.set(x, "timedCacheOptions", js.undefined)
+      inline def setTimedCacheOptionsUndefined: Self = StObject.set(x, "timedCacheOptions", js.undefined)
     }
   }
 }

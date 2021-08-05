@@ -21,55 +21,47 @@ object FirstDayOfWeekEnum {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.FirstDayOfWeekEnum.Default")
   @js.native
   def Default: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum = js.native
-  @scala.inline
-  def Default_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+  inline def Default_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.FirstDayOfWeekEnum.Friday")
   @js.native
   def Friday: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum = js.native
-  @scala.inline
-  def Friday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Friday")(x.asInstanceOf[js.Any])
+  inline def Friday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Friday")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.FirstDayOfWeekEnum.Monday")
   @js.native
   def Monday: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum = js.native
-  @scala.inline
-  def Monday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Monday")(x.asInstanceOf[js.Any])
+  inline def Monday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Monday")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.FirstDayOfWeekEnum.Saturday")
   @js.native
   def Saturday: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum = js.native
-  @scala.inline
-  def Saturday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Saturday")(x.asInstanceOf[js.Any])
+  inline def Saturday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Saturday")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.FirstDayOfWeekEnum.Sunday")
   @js.native
   def Sunday: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum = js.native
-  @scala.inline
-  def Sunday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sunday")(x.asInstanceOf[js.Any])
+  inline def Sunday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sunday")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.FirstDayOfWeekEnum.Thursday")
   @js.native
   def Thursday: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum = js.native
-  @scala.inline
-  def Thursday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Thursday")(x.asInstanceOf[js.Any])
+  inline def Thursday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Thursday")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.FirstDayOfWeekEnum.Tuesday")
   @js.native
   def Tuesday: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum = js.native
-  @scala.inline
-  def Tuesday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tuesday")(x.asInstanceOf[js.Any])
+  inline def Tuesday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tuesday")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.FirstDayOfWeekEnum.Wednesday")
   @js.native
   def Wednesday: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum = js.native
-  @scala.inline
-  def Wednesday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Wednesday")(x.asInstanceOf[js.Any])
+  inline def Wednesday_=(x: typings.mendixmodelsdk.settingsMod.settings.FirstDayOfWeekEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Wednesday")(x.asInstanceOf[js.Any])
 }

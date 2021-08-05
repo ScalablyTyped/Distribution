@@ -11,22 +11,17 @@ trait ProductstatusesCustomBatchRequest extends StObject {
 }
 object ProductstatusesCustomBatchRequest {
   
-  @scala.inline
-  def apply(): ProductstatusesCustomBatchRequest = {
+  inline def apply(): ProductstatusesCustomBatchRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductstatusesCustomBatchRequest]
   }
   
-  @scala.inline
-  implicit class ProductstatusesCustomBatchRequestMutableBuilder[Self <: ProductstatusesCustomBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ProductstatusesCustomBatchRequest](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[ProductstatusesCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[ProductstatusesCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: ProductstatusesCustomBatchRequestEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: ProductstatusesCustomBatchRequestEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

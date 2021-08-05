@@ -15,12 +15,8 @@ object iteratorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def iterator(octokit: Octokit, route: RequestInterface[js.Object]): AsyncIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator]
-  @scala.inline
-  def iterator(octokit: Octokit, route: RequestInterface[js.Object], parameters: RequestParameters): AsyncIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator]
-  @scala.inline
-  def iterator(octokit: Octokit, route: Route): AsyncIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator]
-  @scala.inline
-  def iterator(octokit: Octokit, route: Route, parameters: RequestParameters): AsyncIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator]
+  inline def iterator(octokit: Octokit, route: RequestInterface[js.Object]): AsyncIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator]
+  inline def iterator(octokit: Octokit, route: RequestInterface[js.Object], parameters: RequestParameters): AsyncIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator]
+  inline def iterator(octokit: Octokit, route: Route): AsyncIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator]
+  inline def iterator(octokit: Octokit, route: Route, parameters: RequestParameters): AsyncIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator]
 }

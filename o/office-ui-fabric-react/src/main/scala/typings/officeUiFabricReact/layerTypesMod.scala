@@ -76,74 +76,52 @@ object layerTypesMod {
   }
   object ILayerProps {
     
-    @scala.inline
-    def apply(): ILayerProps = {
+    inline def apply(): ILayerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILayerProps]
     }
     
-    @scala.inline
-    implicit class ILayerPropsMutableBuilder[Self <: ILayerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ILayerProps](x: Self) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[ILayer]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[ILayer]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ ILayer | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ ILayer | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setEventBubblingEnabled(value: Boolean): Self = StObject.set(x, "eventBubblingEnabled", value.asInstanceOf[js.Any])
+      inline def setEventBubblingEnabled(value: Boolean): Self = StObject.set(x, "eventBubblingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventBubblingEnabledUndefined: Self = StObject.set(x, "eventBubblingEnabled", js.undefined)
+      inline def setEventBubblingEnabledUndefined: Self = StObject.set(x, "eventBubblingEnabled", js.undefined)
       
-      @scala.inline
-      def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
+      inline def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostIdUndefined: Self = StObject.set(x, "hostId", js.undefined)
+      inline def setHostIdUndefined: Self = StObject.set(x, "hostId", js.undefined)
       
-      @scala.inline
-      def setInsertFirst(value: Boolean): Self = StObject.set(x, "insertFirst", value.asInstanceOf[js.Any])
+      inline def setInsertFirst(value: Boolean): Self = StObject.set(x, "insertFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertFirstUndefined: Self = StObject.set(x, "insertFirst", js.undefined)
+      inline def setInsertFirstUndefined: Self = StObject.set(x, "insertFirst", js.undefined)
       
-      @scala.inline
-      def setOnLayerDidMount(value: () => Unit): Self = StObject.set(x, "onLayerDidMount", js.Any.fromFunction0(value))
+      inline def setOnLayerDidMount(value: () => Unit): Self = StObject.set(x, "onLayerDidMount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLayerDidMountUndefined: Self = StObject.set(x, "onLayerDidMount", js.undefined)
+      inline def setOnLayerDidMountUndefined: Self = StObject.set(x, "onLayerDidMount", js.undefined)
       
-      @scala.inline
-      def setOnLayerMounted(value: () => Unit): Self = StObject.set(x, "onLayerMounted", js.Any.fromFunction0(value))
+      inline def setOnLayerMounted(value: () => Unit): Self = StObject.set(x, "onLayerMounted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLayerMountedUndefined: Self = StObject.set(x, "onLayerMounted", js.undefined)
+      inline def setOnLayerMountedUndefined: Self = StObject.set(x, "onLayerMounted", js.undefined)
       
-      @scala.inline
-      def setOnLayerWillUnmount(value: () => Unit): Self = StObject.set(x, "onLayerWillUnmount", js.Any.fromFunction0(value))
+      inline def setOnLayerWillUnmount(value: () => Unit): Self = StObject.set(x, "onLayerWillUnmount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLayerWillUnmountUndefined: Self = StObject.set(x, "onLayerWillUnmount", js.undefined)
+      inline def setOnLayerWillUnmountUndefined: Self = StObject.set(x, "onLayerWillUnmount", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[ILayerStyleProps, ILayerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[ILayerStyleProps, ILayerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: ILayerStyleProps => DeepPartial[ILayerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: ILayerStyleProps => DeepPartial[ILayerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -166,29 +144,22 @@ object layerTypesMod {
   }
   object ILayerStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): ILayerStyleProps = {
+    inline def apply(theme: ITheme): ILayerStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILayerStyleProps]
     }
     
-    @scala.inline
-    implicit class ILayerStylePropsMutableBuilder[Self <: ILayerStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ILayerStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setIsNotHost(value: Boolean): Self = StObject.set(x, "isNotHost", value.asInstanceOf[js.Any])
+      inline def setIsNotHost(value: Boolean): Self = StObject.set(x, "isNotHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNotHostUndefined: Self = StObject.set(x, "isNotHost", js.undefined)
+      inline def setIsNotHostUndefined: Self = StObject.set(x, "isNotHost", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,32 +177,24 @@ object layerTypesMod {
   }
   object ILayerStyles {
     
-    @scala.inline
-    def apply(): ILayerStyles = {
+    inline def apply(): ILayerStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILayerStyles]
     }
     
-    @scala.inline
-    implicit class ILayerStylesMutableBuilder[Self <: ILayerStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ILayerStyles](x: Self) {
       
-      @scala.inline
-      def setContent(value: IStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: IStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentNull: Self = StObject.set(x, "content", null)
+      inline def setContentNull: Self = StObject.set(x, "content", null)
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

@@ -13,19 +13,15 @@ trait IPointerDeviceStatics extends StObject {
 }
 object IPointerDeviceStatics {
   
-  @scala.inline
-  def apply(getPointerDevice: Double => PointerDevice, getPointerDevices: () => IVectorView[PointerDevice]): IPointerDeviceStatics = {
+  inline def apply(getPointerDevice: Double => PointerDevice, getPointerDevices: () => IVectorView[PointerDevice]): IPointerDeviceStatics = {
     val __obj = js.Dynamic.literal(getPointerDevice = js.Any.fromFunction1(getPointerDevice), getPointerDevices = js.Any.fromFunction0(getPointerDevices))
     __obj.asInstanceOf[IPointerDeviceStatics]
   }
   
-  @scala.inline
-  implicit class IPointerDeviceStaticsMutableBuilder[Self <: IPointerDeviceStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IPointerDeviceStatics](x: Self) {
     
-    @scala.inline
-    def setGetPointerDevice(value: Double => PointerDevice): Self = StObject.set(x, "getPointerDevice", js.Any.fromFunction1(value))
+    inline def setGetPointerDevice(value: Double => PointerDevice): Self = StObject.set(x, "getPointerDevice", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPointerDevices(value: () => IVectorView[PointerDevice]): Self = StObject.set(x, "getPointerDevices", js.Any.fromFunction0(value))
+    inline def setGetPointerDevices(value: () => IVectorView[PointerDevice]): Self = StObject.set(x, "getPointerDevices", js.Any.fromFunction0(value))
   }
 }

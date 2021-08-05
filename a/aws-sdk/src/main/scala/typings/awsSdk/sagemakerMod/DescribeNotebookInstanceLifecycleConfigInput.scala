@@ -13,16 +13,13 @@ trait DescribeNotebookInstanceLifecycleConfigInput extends StObject {
 }
 object DescribeNotebookInstanceLifecycleConfigInput {
   
-  @scala.inline
-  def apply(NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName): DescribeNotebookInstanceLifecycleConfigInput = {
+  inline def apply(NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName): DescribeNotebookInstanceLifecycleConfigInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceLifecycleConfigName = NotebookInstanceLifecycleConfigName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNotebookInstanceLifecycleConfigInput]
   }
   
-  @scala.inline
-  implicit class DescribeNotebookInstanceLifecycleConfigInputMutableBuilder[Self <: DescribeNotebookInstanceLifecycleConfigInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNotebookInstanceLifecycleConfigInput](x: Self) {
     
-    @scala.inline
-    def setNotebookInstanceLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = StObject.set(x, "NotebookInstanceLifecycleConfigName", value.asInstanceOf[js.Any])
+    inline def setNotebookInstanceLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = StObject.set(x, "NotebookInstanceLifecycleConfigName", value.asInstanceOf[js.Any])
   }
 }

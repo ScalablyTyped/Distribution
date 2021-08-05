@@ -14,19 +14,15 @@ trait WindowsStreamOptions extends StObject {
 }
 object WindowsStreamOptions {
   
-  @scala.inline
-  def apply(): WindowsStreamOptions = {
+  inline def apply(): WindowsStreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsStreamOptions]
   }
   
-  @scala.inline
-  implicit class WindowsStreamOptionsMutableBuilder[Self <: WindowsStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsStreamOptions](x: Self) {
     
-    @scala.inline
-    def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+    inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
+    inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
   }
 }

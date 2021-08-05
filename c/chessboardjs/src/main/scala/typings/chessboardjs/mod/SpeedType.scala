@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpeedType extends StObject
 object SpeedType {
   
-  @scala.inline
-  def fast: typings.chessboardjs.chessboardjsStrings.fast = "fast".asInstanceOf[typings.chessboardjs.chessboardjsStrings.fast]
+  inline def fast: typings.chessboardjs.chessboardjsStrings.fast = "fast".asInstanceOf[typings.chessboardjs.chessboardjsStrings.fast]
   
-  @scala.inline
-  def slow: typings.chessboardjs.chessboardjsStrings.slow = "slow".asInstanceOf[typings.chessboardjs.chessboardjsStrings.slow]
+  inline def slow: typings.chessboardjs.chessboardjsStrings.slow = "slow".asInstanceOf[typings.chessboardjs.chessboardjsStrings.slow]
 }

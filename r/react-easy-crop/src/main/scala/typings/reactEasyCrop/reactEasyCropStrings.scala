@@ -8,11 +8,9 @@ object reactEasyCropStrings {
   
   @js.native
   sealed trait rect extends StObject
-  @scala.inline
-  def rect: rect = "rect".asInstanceOf[rect]
+  inline def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
   sealed trait round extends StObject
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
+  inline def round: round = "round".asInstanceOf[round]
 }

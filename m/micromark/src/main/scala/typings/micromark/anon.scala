@@ -17,17 +17,14 @@ object anon {
   }
   object Enter {
     
-    @scala.inline
-    def apply(enter: Record[Type, js.Function0[Unit]]): Enter = {
+    inline def apply(enter: Record[Type, js.Function0[Unit]]): Enter = {
       val __obj = js.Dynamic.literal(enter = enter.asInstanceOf[js.Any])
       __obj.asInstanceOf[Enter]
     }
     
-    @scala.inline
-    implicit class EnterMutableBuilder[Self <: Enter] (val x: Self) extends AnyVal {
+    extension [Self <: Enter](x: Self) {
       
-      @scala.inline
-      def setEnter(value: Record[Type, js.Function0[Unit]]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: Record[Type, js.Function0[Unit]]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,17 +36,14 @@ object anon {
   }
   object EnterRecord {
     
-    @scala.inline
-    def apply(enter: Record[typings.micromark.constantTypesMod.Type, js.Function0[Unit]]): EnterRecord = {
+    inline def apply(enter: Record[typings.micromark.constantTypesMod.Type, js.Function0[Unit]]): EnterRecord = {
       val __obj = js.Dynamic.literal(enter = enter.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnterRecord]
     }
     
-    @scala.inline
-    implicit class EnterRecordMutableBuilder[Self <: EnterRecord] (val x: Self) extends AnyVal {
+    extension [Self <: EnterRecord](x: Self) {
       
-      @scala.inline
-      def setEnter(value: Record[typings.micromark.constantTypesMod.Type, js.Function0[Unit]]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: Record[typings.micromark.constantTypesMod.Type, js.Function0[Unit]]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,17 +55,14 @@ object anon {
   }
   object Exit {
     
-    @scala.inline
-    def apply(exit: Record[Type, js.Function0[Unit]]): Exit = {
+    inline def apply(exit: Record[Type, js.Function0[Unit]]): Exit = {
       val __obj = js.Dynamic.literal(exit = exit.asInstanceOf[js.Any])
       __obj.asInstanceOf[Exit]
     }
     
-    @scala.inline
-    implicit class ExitMutableBuilder[Self <: Exit] (val x: Self) extends AnyVal {
+    extension [Self <: Exit](x: Self) {
       
-      @scala.inline
-      def setExit(value: Record[Type, js.Function0[Unit]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: Record[Type, js.Function0[Unit]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,17 +74,14 @@ object anon {
   }
   object ExitRecord {
     
-    @scala.inline
-    def apply(exit: Record[typings.micromark.constantTypesMod.Type, js.Function0[Unit]]): ExitRecord = {
+    inline def apply(exit: Record[typings.micromark.constantTypesMod.Type, js.Function0[Unit]]): ExitRecord = {
       val __obj = js.Dynamic.literal(exit = exit.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExitRecord]
     }
     
-    @scala.inline
-    implicit class ExitRecordMutableBuilder[Self <: ExitRecord] (val x: Self) extends AnyVal {
+    extension [Self <: ExitRecord](x: Self) {
       
-      @scala.inline
-      def setExit(value: Record[typings.micromark.constantTypesMod.Type, js.Function0[Unit]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: Record[typings.micromark.constantTypesMod.Type, js.Function0[Unit]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     }
   }
 }

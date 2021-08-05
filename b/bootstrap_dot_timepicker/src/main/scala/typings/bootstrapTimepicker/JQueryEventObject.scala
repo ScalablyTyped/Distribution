@@ -10,19 +10,15 @@ trait JQueryEventObject extends StObject {
 }
 object JQueryEventObject {
   
-  @scala.inline
-  def apply(): JQueryEventObject = {
+  inline def apply(): JQueryEventObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryEventObject]
   }
   
-  @scala.inline
-  implicit class JQueryEventObjectMutableBuilder[Self <: JQueryEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryEventObject](x: Self) {
     
-    @scala.inline
-    def setTime(value: TimepickerTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: TimepickerTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

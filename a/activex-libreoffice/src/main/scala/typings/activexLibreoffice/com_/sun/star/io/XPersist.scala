@@ -19,8 +19,7 @@ trait XPersist
 }
 object XPersist {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     read: String => Unit,
@@ -31,13 +30,10 @@ object XPersist {
     __obj.asInstanceOf[XPersist]
   }
   
-  @scala.inline
-  implicit class XPersistMutableBuilder[Self <: XPersist] (val x: Self) extends AnyVal {
+  extension [Self <: XPersist](x: Self) {
     
-    @scala.inline
-    def setRead(value: String => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: String => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

@@ -16,26 +16,20 @@ trait Statekey extends StObject {
 }
 object Statekey {
   
-  @scala.inline
-  def apply(content: Displayname, room_id: String, state_key: js.Any, `type`: String): Statekey = {
+  inline def apply(content: Displayname, room_id: String, state_key: js.Any, `type`: String): Statekey = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], room_id = room_id.asInstanceOf[js.Any], state_key = state_key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Statekey]
   }
   
-  @scala.inline
-  implicit class StatekeyMutableBuilder[Self <: Statekey] (val x: Self) extends AnyVal {
+  extension [Self <: Statekey](x: Self) {
     
-    @scala.inline
-    def setContent(value: Displayname): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Displayname): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoom_id(value: String): Self = StObject.set(x, "room_id", value.asInstanceOf[js.Any])
+    inline def setRoom_id(value: String): Self = StObject.set(x, "room_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState_key(value: js.Any): Self = StObject.set(x, "state_key", value.asInstanceOf[js.Any])
+    inline def setState_key(value: js.Any): Self = StObject.set(x, "state_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

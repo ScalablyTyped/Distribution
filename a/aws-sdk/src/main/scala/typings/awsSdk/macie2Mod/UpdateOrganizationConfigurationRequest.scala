@@ -13,16 +13,13 @@ trait UpdateOrganizationConfigurationRequest extends StObject {
 }
 object UpdateOrganizationConfigurationRequest {
   
-  @scala.inline
-  def apply(autoEnable: boolean): UpdateOrganizationConfigurationRequest = {
+  inline def apply(autoEnable: boolean): UpdateOrganizationConfigurationRequest = {
     val __obj = js.Dynamic.literal(autoEnable = autoEnable.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOrganizationConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateOrganizationConfigurationRequestMutableBuilder[Self <: UpdateOrganizationConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateOrganizationConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAutoEnable(value: boolean): Self = StObject.set(x, "autoEnable", value.asInstanceOf[js.Any])
+    inline def setAutoEnable(value: boolean): Self = StObject.set(x, "autoEnable", value.asInstanceOf[js.Any])
   }
 }

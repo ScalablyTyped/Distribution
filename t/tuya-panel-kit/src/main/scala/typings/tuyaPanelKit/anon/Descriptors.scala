@@ -24,8 +24,7 @@ trait Descriptors[State /* <: NavigationState[ParamListBase] */, EventMap /* <: 
 }
 object Descriptors {
   
-  @scala.inline
-  def apply[State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, js.Any] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */](
+  inline def apply[State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, js.Any] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */](
     descriptors: Record[
       String, 
       Descriptor[Record[String, js.UndefOr[js.Object]], String, State, ScreenOptions, js.Object]
@@ -37,23 +36,19 @@ object Descriptors {
     __obj.asInstanceOf[Descriptors[State, EventMap, ActionHelpers, ScreenOptions]]
   }
   
-  @scala.inline
-  implicit class DescriptorsMutableBuilder[Self <: Descriptors[?, ?, ?, ?], State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, js.Any] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */] (val x: Self & (Descriptors[State, EventMap, ActionHelpers, ScreenOptions])) extends AnyVal {
+  extension [Self <: Descriptors[?, ?, ?, ?], State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, js.Any] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */](x: Self & (Descriptors[State, EventMap, ActionHelpers, ScreenOptions])) {
     
-    @scala.inline
-    def setDescriptors(
+    inline def setDescriptors(
       value: Record[
           String, 
           Descriptor[Record[String, js.UndefOr[js.Object]], String, State, ScreenOptions, js.Object]
         ]
     ): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigation(
+    inline def setNavigation(
       value: CanGoBack & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) & EventEmitter[EventMap] & EventConsumer[js.Any] & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Any]) & ActionHelpers
     ): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "raspi"
-version := "5.0-dt-20200515Z-3dcd4d"
+version := "5.0-dt-20200515Z-130d0b"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

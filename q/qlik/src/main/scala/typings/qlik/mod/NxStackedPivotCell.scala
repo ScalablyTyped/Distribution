@@ -43,8 +43,7 @@ trait NxStackedPivotCell extends StObject {
 }
 object NxStackedPivotCell {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qAttrDims: NxAttributeDimValues,
     qAttrExps: NxAttributeExpressionValues,
     qCanCollapse: Boolean,
@@ -64,52 +63,36 @@ object NxStackedPivotCell {
     __obj.asInstanceOf[NxStackedPivotCell]
   }
   
-  @scala.inline
-  implicit class NxStackedPivotCellMutableBuilder[Self <: NxStackedPivotCell] (val x: Self) extends AnyVal {
+  extension [Self <: NxStackedPivotCell](x: Self) {
     
-    @scala.inline
-    def setQAttrDims(value: NxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
+    inline def setQAttrDims(value: NxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttrExps(value: NxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
+    inline def setQAttrExps(value: NxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQCanCollapse(value: Boolean): Self = StObject.set(x, "qCanCollapse", value.asInstanceOf[js.Any])
+    inline def setQCanCollapse(value: Boolean): Self = StObject.set(x, "qCanCollapse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQCanExpand(value: Boolean): Self = StObject.set(x, "qCanExpand", value.asInstanceOf[js.Any])
+    inline def setQCanExpand(value: Boolean): Self = StObject.set(x, "qCanExpand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDown(value: Double): Self = StObject.set(x, "qDown", value.asInstanceOf[js.Any])
+    inline def setQDown(value: Double): Self = StObject.set(x, "qDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQElemNo(value: Double): Self = StObject.set(x, "qElemNo", value.asInstanceOf[js.Any])
+    inline def setQElemNo(value: Double): Self = StObject.set(x, "qElemNo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMaxPos(value: Double): Self = StObject.set(x, "qMaxPos", value.asInstanceOf[js.Any])
+    inline def setQMaxPos(value: Double): Self = StObject.set(x, "qMaxPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMinNeg(value: Double): Self = StObject.set(x, "qMinNeg", value.asInstanceOf[js.Any])
+    inline def setQMinNeg(value: Double): Self = StObject.set(x, "qMinNeg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQRow(value: Double): Self = StObject.set(x, "qRow", value.asInstanceOf[js.Any])
+    inline def setQRow(value: Double): Self = StObject.set(x, "qRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSubNodes(value: js.Array[NxStackedPivotCell]): Self = StObject.set(x, "qSubNodes", value.asInstanceOf[js.Any])
+    inline def setQSubNodes(value: js.Array[NxStackedPivotCell]): Self = StObject.set(x, "qSubNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSubNodesVarargs(value: NxStackedPivotCell*): Self = StObject.set(x, "qSubNodes", js.Array(value :_*))
+    inline def setQSubNodesVarargs(value: NxStackedPivotCell*): Self = StObject.set(x, "qSubNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: V | E | N | T | P | R | U): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: V | E | N | T | P | R | U): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUp(value: Double): Self = StObject.set(x, "qUp", value.asInstanceOf[js.Any])
+    inline def setQUp(value: Double): Self = StObject.set(x, "qUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValue(value: Double): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
+    inline def setQValue(value: Double): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
   }
 }

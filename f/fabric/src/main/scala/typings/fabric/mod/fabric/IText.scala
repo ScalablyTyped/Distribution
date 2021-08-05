@@ -31,8 +31,6 @@ object IText {
     * @param {Object} object Object to create an instance from
     * @param {function} [callback] invoked with new instance as argument
     */
-  @scala.inline
-  def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.IText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.IText]
-  @scala.inline
-  def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.IText = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.IText]
+  inline def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.IText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.IText]
+  inline def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.IText = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.IText]
 }

@@ -18,25 +18,19 @@ trait FormatOptions extends StObject {
 }
 object FormatOptions {
   
-  @scala.inline
-  def apply(): FormatOptions = {
+  inline def apply(): FormatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormatOptions]
   }
   
-  @scala.inline
-  implicit class FormatOptionsMutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FormatOptions](x: Self) {
     
-    @scala.inline
-    def setExcel(value: ExcelOptions): Self = StObject.set(x, "Excel", value.asInstanceOf[js.Any])
+    inline def setExcel(value: ExcelOptions): Self = StObject.set(x, "Excel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelUndefined: Self = StObject.set(x, "Excel", js.undefined)
+    inline def setExcelUndefined: Self = StObject.set(x, "Excel", js.undefined)
     
-    @scala.inline
-    def setJson(value: JsonOptions): Self = StObject.set(x, "Json", value.asInstanceOf[js.Any])
+    inline def setJson(value: JsonOptions): Self = StObject.set(x, "Json", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonUndefined: Self = StObject.set(x, "Json", js.undefined)
+    inline def setJsonUndefined: Self = StObject.set(x, "Json", js.undefined)
   }
 }

@@ -109,49 +109,36 @@ object anon {
   }
   object FallbackToNetwork {
     
-    @scala.inline
-    def apply(): FallbackToNetwork = {
+    inline def apply(): FallbackToNetwork = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FallbackToNetwork]
     }
     
-    @scala.inline
-    implicit class FallbackToNetworkMutableBuilder[Self <: FallbackToNetwork] (val x: Self) extends AnyVal {
+    extension [Self <: FallbackToNetwork](x: Self) {
       
-      @scala.inline
-      def setFallbackToNetwork(value: Boolean | always): Self = StObject.set(x, "fallbackToNetwork", value.asInstanceOf[js.Any])
+      inline def setFallbackToNetwork(value: Boolean | always): Self = StObject.set(x, "fallbackToNetwork", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackToNetworkUndefined: Self = StObject.set(x, "fallbackToNetwork", js.undefined)
+      inline def setFallbackToNetworkUndefined: Self = StObject.set(x, "fallbackToNetwork", js.undefined)
       
-      @scala.inline
-      def setFetch(
+      inline def setFetch(
         value: (/* input */ js.UndefOr[String | Request], /* init */ js.UndefOr[RequestInit]) => js.Promise[Response]
       ): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Instantiable0[Headers]): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Instantiable0[Headers]): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
       
-      @scala.inline
-      def setIncludeContentLength(value: Boolean): Self = StObject.set(x, "includeContentLength", value.asInstanceOf[js.Any])
+      inline def setIncludeContentLength(value: Boolean): Self = StObject.set(x, "includeContentLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeContentLengthUndefined: Self = StObject.set(x, "includeContentLength", js.undefined)
+      inline def setIncludeContentLengthUndefined: Self = StObject.set(x, "includeContentLength", js.undefined)
       
-      @scala.inline
-      def setOverwriteRoutes(value: Boolean): Self = StObject.set(x, "overwriteRoutes", value.asInstanceOf[js.Any])
+      inline def setOverwriteRoutes(value: Boolean): Self = StObject.set(x, "overwriteRoutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteRoutesUndefined: Self = StObject.set(x, "overwriteRoutes", js.undefined)
+      inline def setOverwriteRoutesUndefined: Self = StObject.set(x, "overwriteRoutes", js.undefined)
       
-      @scala.inline
-      def setPromise(
+      inline def setPromise(
         value: Instantiable1[
               /* executor */ js.Function2[
                 /* resolve */ js.Function1[/* value */ Response | js.Thenable[Response], Unit], 
@@ -162,32 +149,23 @@ object anon {
             ]
       ): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
       
-      @scala.inline
-      def setRequest(value: Instantiable2[/* input */ String | Request, /* init */ js.UndefOr[RequestInit], Request]): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Instantiable2[/* input */ String | Request, /* init */ js.UndefOr[RequestInit], Request]): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "Request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "Request", js.undefined)
       
-      @scala.inline
-      def setResponse(value: Instantiable0[Response]): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Instantiable0[Response]): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "Response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "Response", js.undefined)
       
-      @scala.inline
-      def setSendAsJson(value: Boolean): Self = StObject.set(x, "sendAsJson", value.asInstanceOf[js.Any])
+      inline def setSendAsJson(value: Boolean): Self = StObject.set(x, "sendAsJson", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendAsJsonUndefined: Self = StObject.set(x, "sendAsJson", js.undefined)
+      inline def setSendAsJsonUndefined: Self = StObject.set(x, "sendAsJson", js.undefined)
       
-      @scala.inline
-      def setWarnOnFallback(value: Boolean): Self = StObject.set(x, "warnOnFallback", value.asInstanceOf[js.Any])
+      inline def setWarnOnFallback(value: Boolean): Self = StObject.set(x, "warnOnFallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnOnFallbackUndefined: Self = StObject.set(x, "warnOnFallback", js.undefined)
+      inline def setWarnOnFallbackUndefined: Self = StObject.set(x, "warnOnFallback", js.undefined)
     }
   }
 }

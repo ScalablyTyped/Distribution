@@ -25,8 +25,7 @@ object mod {
     @JSImport("react-highcharts", "default.Highcharts")
     @js.native
     def Highcharts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Highcharts.Static */ js.Any = js.native
-    @scala.inline
-    def Highcharts_=(
+    inline def Highcharts_=(
       x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Highcharts.Static */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Highcharts")(x.asInstanceOf[js.Any])
   }
@@ -64,31 +63,24 @@ object mod {
   }
   object ReactHighchartsProps {
     
-    @scala.inline
-    def apply(config: Options): ReactHighchartsProps = {
+    inline def apply(config: Options): ReactHighchartsProps = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactHighchartsProps]
     }
     
-    @scala.inline
-    implicit class ReactHighchartsPropsMutableBuilder[Self <: ReactHighchartsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactHighchartsProps](x: Self) {
       
-      @scala.inline
-      def setCallback(
+      inline def setCallback(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Highcharts.ChartObject */ /* chart */ js.Any => Unit
       ): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setConfig(value: Options): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Options): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPureConfig(value: Boolean): Self = StObject.set(x, "isPureConfig", value.asInstanceOf[js.Any])
+      inline def setIsPureConfig(value: Boolean): Self = StObject.set(x, "isPureConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPureConfigUndefined: Self = StObject.set(x, "isPureConfig", js.undefined)
+      inline def setIsPureConfigUndefined: Self = StObject.set(x, "isPureConfig", js.undefined)
     }
   }
 }

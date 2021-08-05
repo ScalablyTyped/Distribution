@@ -18,19 +18,15 @@ trait WorkflowExecution extends StObject {
 }
 object WorkflowExecution {
   
-  @scala.inline
-  def apply(runId: WorkflowRunId, workflowId: WorkflowId): WorkflowExecution = {
+  inline def apply(runId: WorkflowRunId, workflowId: WorkflowId): WorkflowExecution = {
     val __obj = js.Dynamic.literal(runId = runId.asInstanceOf[js.Any], workflowId = workflowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowExecution]
   }
   
-  @scala.inline
-  implicit class WorkflowExecutionMutableBuilder[Self <: WorkflowExecution] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowExecution](x: Self) {
     
-    @scala.inline
-    def setRunId(value: WorkflowRunId): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: WorkflowRunId): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
+    inline def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
   }
 }

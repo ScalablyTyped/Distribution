@@ -18,19 +18,15 @@ trait TimeRange extends StObject {
 }
 object TimeRange {
   
-  @scala.inline
-  def apply(from: Double, until: Double): TimeRange = {
+  inline def apply(from: Double, until: Double): TimeRange = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], until = until.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeRange]
   }
   
-  @scala.inline
-  implicit class TimeRangeMutableBuilder[Self <: TimeRange] (val x: Self) extends AnyVal {
+  extension [Self <: TimeRange](x: Self) {
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUntil(value: Double): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
+    inline def setUntil(value: Double): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
   }
 }

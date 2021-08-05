@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Request_[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Request_[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: js.Object): Request_[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Request_[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): Request_[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Request_[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: js.Object): Request_[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Request_[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("mock-express-request", JSImport.Namespace)
   @js.native

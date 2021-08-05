@@ -33,8 +33,7 @@ trait DocumentMacroConfirmationRequest
 }
 object DocumentMacroConfirmationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Classification: InteractionClassification,
     Context: XInterface,
     DocumentSignatureInformation: SafeArray[DocumentSignatureInformation],
@@ -47,19 +46,14 @@ object DocumentMacroConfirmationRequest {
     __obj.asInstanceOf[DocumentMacroConfirmationRequest]
   }
   
-  @scala.inline
-  implicit class DocumentMacroConfirmationRequestMutableBuilder[Self <: DocumentMacroConfirmationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentMacroConfirmationRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentSignatureInformation(value: SafeArray[DocumentSignatureInformation]): Self = StObject.set(x, "DocumentSignatureInformation", value.asInstanceOf[js.Any])
+    inline def setDocumentSignatureInformation(value: SafeArray[DocumentSignatureInformation]): Self = StObject.set(x, "DocumentSignatureInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentStorage(value: XStorage): Self = StObject.set(x, "DocumentStorage", value.asInstanceOf[js.Any])
+    inline def setDocumentStorage(value: XStorage): Self = StObject.set(x, "DocumentStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentURL(value: String): Self = StObject.set(x, "DocumentURL", value.asInstanceOf[js.Any])
+    inline def setDocumentURL(value: String): Self = StObject.set(x, "DocumentURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentVersion(value: String): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
+    inline def setDocumentVersion(value: String): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
   }
 }

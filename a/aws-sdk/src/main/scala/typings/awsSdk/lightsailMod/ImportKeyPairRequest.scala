@@ -18,19 +18,15 @@ trait ImportKeyPairRequest extends StObject {
 }
 object ImportKeyPairRequest {
   
-  @scala.inline
-  def apply(keyPairName: ResourceName, publicKeyBase64: Base64): ImportKeyPairRequest = {
+  inline def apply(keyPairName: ResourceName, publicKeyBase64: Base64): ImportKeyPairRequest = {
     val __obj = js.Dynamic.literal(keyPairName = keyPairName.asInstanceOf[js.Any], publicKeyBase64 = publicKeyBase64.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportKeyPairRequest]
   }
   
-  @scala.inline
-  implicit class ImportKeyPairRequestMutableBuilder[Self <: ImportKeyPairRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportKeyPairRequest](x: Self) {
     
-    @scala.inline
-    def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
+    inline def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyBase64(value: Base64): Self = StObject.set(x, "publicKeyBase64", value.asInstanceOf[js.Any])
+    inline def setPublicKeyBase64(value: Base64): Self = StObject.set(x, "publicKeyBase64", value.asInstanceOf[js.Any])
   }
 }

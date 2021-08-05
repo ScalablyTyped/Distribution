@@ -31,8 +31,7 @@ trait XPropertySetInfoChangeNotifier
 }
 object XPropertySetInfoChangeNotifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addPropertySetInfoChangeListener: XPropertySetInfoChangeListener => Unit,
     queryInterface: `type` => js.Any,
@@ -43,13 +42,10 @@ object XPropertySetInfoChangeNotifier {
     __obj.asInstanceOf[XPropertySetInfoChangeNotifier]
   }
   
-  @scala.inline
-  implicit class XPropertySetInfoChangeNotifierMutableBuilder[Self <: XPropertySetInfoChangeNotifier] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertySetInfoChangeNotifier](x: Self) {
     
-    @scala.inline
-    def setAddPropertySetInfoChangeListener(value: XPropertySetInfoChangeListener => Unit): Self = StObject.set(x, "addPropertySetInfoChangeListener", js.Any.fromFunction1(value))
+    inline def setAddPropertySetInfoChangeListener(value: XPropertySetInfoChangeListener => Unit): Self = StObject.set(x, "addPropertySetInfoChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemovePropertySetInfoChangeListener(value: XPropertySetInfoChangeListener => Unit): Self = StObject.set(x, "removePropertySetInfoChangeListener", js.Any.fromFunction1(value))
+    inline def setRemovePropertySetInfoChangeListener(value: XPropertySetInfoChangeListener => Unit): Self = StObject.set(x, "removePropertySetInfoChangeListener", js.Any.fromFunction1(value))
   }
 }

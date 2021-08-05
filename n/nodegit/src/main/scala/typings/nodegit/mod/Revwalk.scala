@@ -15,6 +15,5 @@ object Revwalk {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(repo: typings.nodegit.repositoryMod.Repository): typings.nodegit.revWalkMod.Revwalk = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[typings.nodegit.revWalkMod.Revwalk]
+  inline def create(repo: typings.nodegit.repositoryMod.Repository): typings.nodegit.revWalkMod.Revwalk = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[typings.nodegit.revWalkMod.Revwalk]
 }

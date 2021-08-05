@@ -8,11 +8,9 @@ object maximMazurokGapiClientFirebaserulesStrings {
   
   @js.native
   sealed trait firebaserules extends StObject
-  @scala.inline
-  def firebaserules: firebaserules = "firebaserules".asInstanceOf[firebaserules]
+  inline def firebaserules: firebaserules = "firebaserules".asInstanceOf[firebaserules]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

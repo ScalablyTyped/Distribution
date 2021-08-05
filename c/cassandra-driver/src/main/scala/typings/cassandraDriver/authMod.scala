@@ -50,17 +50,14 @@ object authMod {
     }
     object AuthProvider {
       
-      @scala.inline
-      def apply(newAuthenticator: (String, String) => Authenticator): AuthProvider = {
+      inline def apply(newAuthenticator: (String, String) => Authenticator): AuthProvider = {
         val __obj = js.Dynamic.literal(newAuthenticator = js.Any.fromFunction2(newAuthenticator))
         __obj.asInstanceOf[AuthProvider]
       }
       
-      @scala.inline
-      implicit class AuthProviderMutableBuilder[Self <: AuthProvider] (val x: Self) extends AnyVal {
+      extension [Self <: AuthProvider](x: Self) {
         
-        @scala.inline
-        def setNewAuthenticator(value: (String, String) => Authenticator): Self = StObject.set(x, "newAuthenticator", js.Any.fromFunction2(value))
+        inline def setNewAuthenticator(value: (String, String) => Authenticator): Self = StObject.set(x, "newAuthenticator", js.Any.fromFunction2(value))
       }
     }
     

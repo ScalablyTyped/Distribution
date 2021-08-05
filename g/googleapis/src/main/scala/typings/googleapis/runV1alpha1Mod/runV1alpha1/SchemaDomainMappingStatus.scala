@@ -37,43 +37,31 @@ trait SchemaDomainMappingStatus extends StObject {
 }
 object SchemaDomainMappingStatus {
   
-  @scala.inline
-  def apply(): SchemaDomainMappingStatus = {
+  inline def apply(): SchemaDomainMappingStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDomainMappingStatus]
   }
   
-  @scala.inline
-  implicit class SchemaDomainMappingStatusMutableBuilder[Self <: SchemaDomainMappingStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDomainMappingStatus](x: Self) {
     
-    @scala.inline
-    def setConditions(value: js.Array[SchemaDomainMappingCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[SchemaDomainMappingCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: SchemaDomainMappingCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: SchemaDomainMappingCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setMappedRouteName(value: String): Self = StObject.set(x, "mappedRouteName", value.asInstanceOf[js.Any])
+    inline def setMappedRouteName(value: String): Self = StObject.set(x, "mappedRouteName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappedRouteNameUndefined: Self = StObject.set(x, "mappedRouteName", js.undefined)
+    inline def setMappedRouteNameUndefined: Self = StObject.set(x, "mappedRouteName", js.undefined)
     
-    @scala.inline
-    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
+    inline def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
+    inline def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
     
-    @scala.inline
-    def setResourceRecords(value: js.Array[SchemaResourceRecord]): Self = StObject.set(x, "resourceRecords", value.asInstanceOf[js.Any])
+    inline def setResourceRecords(value: js.Array[SchemaResourceRecord]): Self = StObject.set(x, "resourceRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRecordsUndefined: Self = StObject.set(x, "resourceRecords", js.undefined)
+    inline def setResourceRecordsUndefined: Self = StObject.set(x, "resourceRecords", js.undefined)
     
-    @scala.inline
-    def setResourceRecordsVarargs(value: SchemaResourceRecord*): Self = StObject.set(x, "resourceRecords", js.Array(value :_*))
+    inline def setResourceRecordsVarargs(value: SchemaResourceRecord*): Self = StObject.set(x, "resourceRecords", js.Array(value :_*))
   }
 }

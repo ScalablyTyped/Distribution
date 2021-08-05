@@ -18,25 +18,19 @@ trait JobBookmarksEncryption extends StObject {
 }
 object JobBookmarksEncryption {
   
-  @scala.inline
-  def apply(): JobBookmarksEncryption = {
+  inline def apply(): JobBookmarksEncryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobBookmarksEncryption]
   }
   
-  @scala.inline
-  implicit class JobBookmarksEncryptionMutableBuilder[Self <: JobBookmarksEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: JobBookmarksEncryption](x: Self) {
     
-    @scala.inline
-    def setJobBookmarksEncryptionMode(value: JobBookmarksEncryptionMode): Self = StObject.set(x, "JobBookmarksEncryptionMode", value.asInstanceOf[js.Any])
+    inline def setJobBookmarksEncryptionMode(value: JobBookmarksEncryptionMode): Self = StObject.set(x, "JobBookmarksEncryptionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobBookmarksEncryptionModeUndefined: Self = StObject.set(x, "JobBookmarksEncryptionMode", js.undefined)
+    inline def setJobBookmarksEncryptionModeUndefined: Self = StObject.set(x, "JobBookmarksEncryptionMode", js.undefined)
     
-    @scala.inline
-    def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
   }
 }

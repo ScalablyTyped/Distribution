@@ -16,8 +16,7 @@ trait Map
 }
 object Map {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     map: js.Tuple2[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
@@ -27,11 +26,9 @@ object Map {
     __obj.asInstanceOf[Map]
   }
   
-  @scala.inline
-  implicit class MapMutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
+  extension [Self <: Map](x: Self) {
     
-    @scala.inline
-    def setMap(
+    inline def setMap(
       value: js.Tuple2[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object

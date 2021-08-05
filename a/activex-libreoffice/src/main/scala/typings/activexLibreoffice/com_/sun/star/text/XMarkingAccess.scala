@@ -11,16 +11,13 @@ trait XMarkingAccess extends StObject {
 }
 object XMarkingAccess {
   
-  @scala.inline
-  def apply(invalidateMarkings: Double => Unit): XMarkingAccess = {
+  inline def apply(invalidateMarkings: Double => Unit): XMarkingAccess = {
     val __obj = js.Dynamic.literal(invalidateMarkings = js.Any.fromFunction1(invalidateMarkings))
     __obj.asInstanceOf[XMarkingAccess]
   }
   
-  @scala.inline
-  implicit class XMarkingAccessMutableBuilder[Self <: XMarkingAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XMarkingAccess](x: Self) {
     
-    @scala.inline
-    def setInvalidateMarkings(value: Double => Unit): Self = StObject.set(x, "invalidateMarkings", js.Any.fromFunction1(value))
+    inline def setInvalidateMarkings(value: Double => Unit): Self = StObject.set(x, "invalidateMarkings", js.Any.fromFunction1(value))
   }
 }

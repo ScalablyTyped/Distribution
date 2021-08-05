@@ -13,20 +13,16 @@ object anon {
   }
   object Exceptions {
     
-    @scala.inline
-    def apply(): Exceptions = {
+    inline def apply(): Exceptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Exceptions]
     }
     
-    @scala.inline
-    implicit class ExceptionsMutableBuilder[Self <: Exceptions] (val x: Self) extends AnyVal {
+    extension [Self <: Exceptions](x: Self) {
       
-      @scala.inline
-      def setExceptions(value: StringDictionary[String]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
+      inline def setExceptions(value: StringDictionary[String]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
+      inline def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
     }
   }
 }

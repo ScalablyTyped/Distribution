@@ -16,17 +16,14 @@ object typesDeveloperUserAlreadyRegisteredExceptionMod {
   }
   object DeveloperUserAlreadyRegisteredException {
     
-    @scala.inline
-    def apply(): DeveloperUserAlreadyRegisteredException = {
+    inline def apply(): DeveloperUserAlreadyRegisteredException = {
       val __obj = js.Dynamic.literal(name = "DeveloperUserAlreadyRegisteredException")
       __obj.asInstanceOf[DeveloperUserAlreadyRegisteredException]
     }
     
-    @scala.inline
-    implicit class DeveloperUserAlreadyRegisteredExceptionMutableBuilder[Self <: DeveloperUserAlreadyRegisteredException] (val x: Self) extends AnyVal {
+    extension [Self <: DeveloperUserAlreadyRegisteredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.DeveloperUserAlreadyRegisteredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,20 +38,16 @@ object typesDeveloperUserAlreadyRegisteredExceptionMod {
   }
   object DeveloperUserAlreadyRegisteredExceptionDetails {
     
-    @scala.inline
-    def apply(): DeveloperUserAlreadyRegisteredExceptionDetails = {
+    inline def apply(): DeveloperUserAlreadyRegisteredExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeveloperUserAlreadyRegisteredExceptionDetails]
     }
     
-    @scala.inline
-    implicit class DeveloperUserAlreadyRegisteredExceptionDetailsMutableBuilder[Self <: DeveloperUserAlreadyRegisteredExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: DeveloperUserAlreadyRegisteredExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

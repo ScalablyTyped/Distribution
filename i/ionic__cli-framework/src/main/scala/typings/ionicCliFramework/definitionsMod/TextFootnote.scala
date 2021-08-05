@@ -14,19 +14,15 @@ trait TextFootnote
 }
 object TextFootnote {
   
-  @scala.inline
-  def apply(id: String | Double, text: String): TextFootnote = {
+  inline def apply(id: String | Double, text: String): TextFootnote = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextFootnote]
   }
   
-  @scala.inline
-  implicit class TextFootnoteMutableBuilder[Self <: TextFootnote] (val x: Self) extends AnyVal {
+  extension [Self <: TextFootnote](x: Self) {
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

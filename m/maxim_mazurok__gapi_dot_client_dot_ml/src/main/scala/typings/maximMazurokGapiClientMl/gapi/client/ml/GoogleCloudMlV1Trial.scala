@@ -38,79 +38,55 @@ trait GoogleCloudMlV1Trial extends StObject {
 }
 object GoogleCloudMlV1Trial {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1Trial = {
+  inline def apply(): GoogleCloudMlV1Trial = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1Trial]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1TrialMutableBuilder[Self <: GoogleCloudMlV1Trial] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1Trial](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setFinalMeasurement(value: GoogleCloudMlV1Measurement): Self = StObject.set(x, "finalMeasurement", value.asInstanceOf[js.Any])
+    inline def setFinalMeasurement(value: GoogleCloudMlV1Measurement): Self = StObject.set(x, "finalMeasurement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalMeasurementUndefined: Self = StObject.set(x, "finalMeasurement", js.undefined)
+    inline def setFinalMeasurementUndefined: Self = StObject.set(x, "finalMeasurement", js.undefined)
     
-    @scala.inline
-    def setInfeasibleReason(value: String): Self = StObject.set(x, "infeasibleReason", value.asInstanceOf[js.Any])
+    inline def setInfeasibleReason(value: String): Self = StObject.set(x, "infeasibleReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfeasibleReasonUndefined: Self = StObject.set(x, "infeasibleReason", js.undefined)
+    inline def setInfeasibleReasonUndefined: Self = StObject.set(x, "infeasibleReason", js.undefined)
     
-    @scala.inline
-    def setMeasurements(value: js.Array[GoogleCloudMlV1Measurement]): Self = StObject.set(x, "measurements", value.asInstanceOf[js.Any])
+    inline def setMeasurements(value: js.Array[GoogleCloudMlV1Measurement]): Self = StObject.set(x, "measurements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurementsUndefined: Self = StObject.set(x, "measurements", js.undefined)
+    inline def setMeasurementsUndefined: Self = StObject.set(x, "measurements", js.undefined)
     
-    @scala.inline
-    def setMeasurementsVarargs(value: GoogleCloudMlV1Measurement*): Self = StObject.set(x, "measurements", js.Array(value :_*))
+    inline def setMeasurementsVarargs(value: GoogleCloudMlV1Measurement*): Self = StObject.set(x, "measurements", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParameters(value: js.Array[GoogleCloudMlV1TrialParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[GoogleCloudMlV1TrialParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: GoogleCloudMlV1TrialParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: GoogleCloudMlV1TrialParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTrialInfeasible(value: Boolean): Self = StObject.set(x, "trialInfeasible", value.asInstanceOf[js.Any])
+    inline def setTrialInfeasible(value: Boolean): Self = StObject.set(x, "trialInfeasible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialInfeasibleUndefined: Self = StObject.set(x, "trialInfeasible", js.undefined)
+    inline def setTrialInfeasibleUndefined: Self = StObject.set(x, "trialInfeasible", js.undefined)
   }
 }

@@ -20,9 +20,9 @@ object rowCompMod {
   @js.native
   class LoadingCellRenderer () extends Component {
     
-    var eLoadingIcon: js.Any = js.native
+    /* private */ var eLoadingIcon: js.Any = js.native
     
-    var eLoadingText: js.Any = js.native
+    /* private */ var eLoadingText: js.Any = js.native
     
     var gridOptionsWrapper: GridOptionsWrapper = js.native
     
@@ -41,8 +41,7 @@ object rowCompMod {
     @JSImport("ag-grid/dist/lib/rendering/rowComp", "LoadingCellRenderer.TEMPLATE")
     @js.native
     def TEMPLATE: js.Any = js.native
-    @scala.inline
-    def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp")
@@ -60,7 +59,7 @@ object rowCompMod {
       useAnimationFrameForCreate: Boolean
     ) = this()
     
-    var active: js.Any = js.native
+    /* private */ var active: js.Any = js.native
     
     /* private */ def addDomData(eRowContainer: js.Any): js.Any = js.native
     
@@ -76,15 +75,15 @@ object rowCompMod {
     
     /* private */ def applyPaginationOffset(topPx: js.Any, reverse: js.Any): js.Any = js.native
     
-    var beans: js.Any = js.native
+    /* private */ var beans: js.Any = js.native
     
-    var bodyContainerComp: js.Any = js.native
+    /* private */ var bodyContainerComp: js.Any = js.native
     
     /* private */ def callAfterRowAttachedOnCells(newCellComps: js.Any, eRow: js.Any): js.Any = js.native
     
-    var cellComps: js.Any = js.native
+    /* private */ var cellComps: js.Any = js.native
     
-    var columnRefreshPending: js.Any = js.native
+    /* private */ var columnRefreshPending: js.Any = js.native
     
     /* private */ def createCells(cols: js.Any): js.Any = js.native
     
@@ -112,7 +111,7 @@ object rowCompMod {
     
     /* private */ def createRowEventWithSource(`type`: js.Any, domEvent: js.Any): js.Any = js.native
     
-    var createSecondPassFuncs: js.Any = js.native
+    /* private */ var createSecondPassFuncs: js.Any = js.native
     
     /* private */ def createTemplate(contents: js.Any, extraCssClass: js.Any): js.Any = js.native
     
@@ -122,23 +121,23 @@ object rowCompMod {
     
     /* private */ def destroyFullWidthComponents(): js.Any = js.native
     
-    var eAllRowContainers: js.Any = js.native
+    /* private */ var eAllRowContainers: js.Any = js.native
     
-    var eBodyRow: js.Any = js.native
+    /* private */ var eBodyRow: js.Any = js.native
     
-    var eFullWidthRow: js.Any = js.native
+    /* private */ var eFullWidthRow: js.Any = js.native
     
-    var eFullWidthRowBody: js.Any = js.native
+    /* private */ var eFullWidthRowBody: js.Any = js.native
     
-    var eFullWidthRowLeft: js.Any = js.native
+    /* private */ var eFullWidthRowLeft: js.Any = js.native
     
-    var eFullWidthRowRight: js.Any = js.native
+    /* private */ var eFullWidthRowRight: js.Any = js.native
     
-    var ePinnedLeftRow: js.Any = js.native
+    /* private */ var ePinnedLeftRow: js.Any = js.native
     
-    var ePinnedRightRow: js.Any = js.native
+    /* private */ var ePinnedRightRow: js.Any = js.native
     
-    var editingRow: js.Any = js.native
+    /* private */ var editingRow: js.Any = js.native
     
     /* private */ def ensureCellInCorrectContainer(cellComp: js.Any): js.Any = js.native
     
@@ -146,23 +145,23 @@ object rowCompMod {
     
     /* private */ def executeProcessRowPostCreateFunc(): js.Any = js.native
     
-    var fadeRowIn: js.Any = js.native
+    /* private */ var fadeRowIn: js.Any = js.native
     
     def forEachCellComp(callback: js.Function1[/* renderedCell */ CellComp, Unit]): Unit = js.native
     
-    var fullWidthContainerComp: js.Any = js.native
+    /* private */ var fullWidthContainerComp: js.Any = js.native
     
-    var fullWidthRow: js.Any = js.native
+    /* private */ var fullWidthRow: js.Any = js.native
     
-    var fullWidthRowComponent: js.Any = js.native
+    /* private */ var fullWidthRowComponent: js.Any = js.native
     
-    var fullWidthRowComponentBody: js.Any = js.native
+    /* private */ var fullWidthRowComponentBody: js.Any = js.native
     
-    var fullWidthRowComponentLeft: js.Any = js.native
+    /* private */ var fullWidthRowComponentLeft: js.Any = js.native
     
-    var fullWidthRowComponentRight: js.Any = js.native
+    /* private */ var fullWidthRowComponentRight: js.Any = js.native
     
-    var fullWidthRowEmbedded: js.Any = js.native
+    /* private */ var fullWidthRowEmbedded: js.Any = js.native
     
     def getAndClearDelayedDestroyFunctions(): js.Array[js.Function] = js.native
     
@@ -193,7 +192,7 @@ object rowCompMod {
     @JSName("init")
     def init_MRowComp(): Unit = js.native
     
-    var initialised: js.Any = js.native
+    /* private */ var initialised: js.Any = js.native
     
     /* private */ def insertCellsIntoContainer(eRow: js.Any, cols: js.Any): js.Any = js.native
     
@@ -241,13 +240,13 @@ object rowCompMod {
     
     /* private */ def onVirtualColumnsChanged(): js.Any = js.native
     
-    var paginationPage: js.Any = js.native
+    /* private */ var paginationPage: js.Any = js.native
     
-    var parentScope: js.Any = js.native
+    /* private */ var parentScope: js.Any = js.native
     
-    var pinnedLeftContainerComp: js.Any = js.native
+    /* private */ var pinnedLeftContainerComp: js.Any = js.native
     
-    var pinnedRightContainerComp: js.Any = js.native
+    /* private */ var pinnedRightContainerComp: js.Any = js.native
     
     /* private */ def postProcessClassesFromGridOptions(): js.Any = js.native
     
@@ -273,21 +272,21 @@ object rowCompMod {
     
     /* private */ def refreshCellsInAnimationFrame(): js.Any = js.native
     
-    var removeFirstPassFuncs: js.Any = js.native
+    /* private */ var removeFirstPassFuncs: js.Any = js.native
     
     /* private */ def removeRenderedCells(colIds: js.Any): js.Any = js.native
     
-    var removeSecondPassFuncs: js.Any = js.native
+    /* private */ var removeSecondPassFuncs: js.Any = js.native
     
     /* private */ def roundRowTopToBounds(rowTop: js.Any): js.Any = js.native
     
-    var rowFocused: js.Any = js.native
+    /* private */ var rowFocused: js.Any = js.native
     
-    var rowIsEven: js.Any = js.native
+    /* private */ var rowIsEven: js.Any = js.native
     
-    var rowNode: js.Any = js.native
+    /* private */ var rowNode: js.Any = js.native
     
-    var scope: js.Any = js.native
+    /* private */ var scope: js.Any = js.native
     
     /* private */ def setAnimateFlags(animateIn: js.Any): js.Any = js.native
     
@@ -299,7 +298,7 @@ object rowCompMod {
     
     /* private */ def setupRowContainers(): js.Any = js.native
     
-    var slideRowIn: js.Any = js.native
+    /* private */ var slideRowIn: js.Any = js.native
     
     def startRowEditing(): Unit = js.native
     def startRowEditing(keyPress: Double): Unit = js.native
@@ -317,7 +316,7 @@ object rowCompMod {
     
     /* private */ def updateRowIndexes(): js.Any = js.native
     
-    var useAnimationFrameForCreate: js.Any = js.native
+    /* private */ var useAnimationFrameForCreate: js.Any = js.native
   }
   /* static members */
   object RowComp {
@@ -329,49 +328,41 @@ object rowCompMod {
     @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.DETAIL_CELL_RENDERER")
     @js.native
     def DETAIL_CELL_RENDERER: js.Any = js.native
-    @scala.inline
-    def DETAIL_CELL_RENDERER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DETAIL_CELL_RENDERER")(x.asInstanceOf[js.Any])
+    inline def DETAIL_CELL_RENDERER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DETAIL_CELL_RENDERER")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.DETAIL_CELL_RENDERER_COMP_NAME")
     @js.native
     def DETAIL_CELL_RENDERER_COMP_NAME: js.Any = js.native
-    @scala.inline
-    def DETAIL_CELL_RENDERER_COMP_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DETAIL_CELL_RENDERER_COMP_NAME")(x.asInstanceOf[js.Any])
+    inline def DETAIL_CELL_RENDERER_COMP_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DETAIL_CELL_RENDERER_COMP_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.DOM_DATA_KEY_RENDERED_ROW")
     @js.native
     def DOM_DATA_KEY_RENDERED_ROW: String = js.native
-    @scala.inline
-    def DOM_DATA_KEY_RENDERED_ROW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_DATA_KEY_RENDERED_ROW")(x.asInstanceOf[js.Any])
+    inline def DOM_DATA_KEY_RENDERED_ROW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_DATA_KEY_RENDERED_ROW")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.FULL_WIDTH_CELL_RENDERER")
     @js.native
     def FULL_WIDTH_CELL_RENDERER: js.Any = js.native
-    @scala.inline
-    def FULL_WIDTH_CELL_RENDERER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FULL_WIDTH_CELL_RENDERER")(x.asInstanceOf[js.Any])
+    inline def FULL_WIDTH_CELL_RENDERER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FULL_WIDTH_CELL_RENDERER")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.GROUP_ROW_RENDERER")
     @js.native
     def GROUP_ROW_RENDERER: js.Any = js.native
-    @scala.inline
-    def GROUP_ROW_RENDERER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP_ROW_RENDERER")(x.asInstanceOf[js.Any])
+    inline def GROUP_ROW_RENDERER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP_ROW_RENDERER")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.GROUP_ROW_RENDERER_COMP_NAME")
     @js.native
     def GROUP_ROW_RENDERER_COMP_NAME: js.Any = js.native
-    @scala.inline
-    def GROUP_ROW_RENDERER_COMP_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP_ROW_RENDERER_COMP_NAME")(x.asInstanceOf[js.Any])
+    inline def GROUP_ROW_RENDERER_COMP_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP_ROW_RENDERER_COMP_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.LOADING_CELL_RENDERER")
     @js.native
     def LOADING_CELL_RENDERER: js.Any = js.native
-    @scala.inline
-    def LOADING_CELL_RENDERER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING_CELL_RENDERER")(x.asInstanceOf[js.Any])
+    inline def LOADING_CELL_RENDERER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING_CELL_RENDERER")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.LOADING_CELL_RENDERER_COMP_NAME")
     @js.native
     def LOADING_CELL_RENDERER_COMP_NAME: js.Any = js.native
-    @scala.inline
-    def LOADING_CELL_RENDERER_COMP_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING_CELL_RENDERER_COMP_NAME")(x.asInstanceOf[js.Any])
+    inline def LOADING_CELL_RENDERER_COMP_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING_CELL_RENDERER_COMP_NAME")(x.asInstanceOf[js.Any])
   }
 }

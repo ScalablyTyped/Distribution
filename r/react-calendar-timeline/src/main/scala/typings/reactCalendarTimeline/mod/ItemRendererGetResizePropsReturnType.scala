@@ -13,25 +13,19 @@ trait ItemRendererGetResizePropsReturnType extends StObject {
 }
 object ItemRendererGetResizePropsReturnType {
   
-  @scala.inline
-  def apply(): ItemRendererGetResizePropsReturnType = {
+  inline def apply(): ItemRendererGetResizePropsReturnType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItemRendererGetResizePropsReturnType]
   }
   
-  @scala.inline
-  implicit class ItemRendererGetResizePropsReturnTypeMutableBuilder[Self <: ItemRendererGetResizePropsReturnType] (val x: Self) extends AnyVal {
+  extension [Self <: ItemRendererGetResizePropsReturnType](x: Self) {
     
-    @scala.inline
-    def setLeft(value: ClassName): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: ClassName): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setRight(value: ClassName): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: ClassName): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
   }
 }

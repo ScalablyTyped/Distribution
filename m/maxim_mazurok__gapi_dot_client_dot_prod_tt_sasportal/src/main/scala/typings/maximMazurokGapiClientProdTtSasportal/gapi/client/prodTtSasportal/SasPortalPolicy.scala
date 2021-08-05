@@ -18,28 +18,21 @@ trait SasPortalPolicy extends StObject {
 }
 object SasPortalPolicy {
   
-  @scala.inline
-  def apply(): SasPortalPolicy = {
+  inline def apply(): SasPortalPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalPolicy]
   }
   
-  @scala.inline
-  implicit class SasPortalPolicyMutableBuilder[Self <: SasPortalPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalPolicy](x: Self) {
     
-    @scala.inline
-    def setAssignments(value: js.Array[SasPortalAssignment]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
+    inline def setAssignments(value: js.Array[SasPortalAssignment]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
+    inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    @scala.inline
-    def setAssignmentsVarargs(value: SasPortalAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: SasPortalAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
   }
 }

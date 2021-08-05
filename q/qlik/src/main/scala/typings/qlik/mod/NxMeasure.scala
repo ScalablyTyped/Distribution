@@ -20,8 +20,7 @@ trait NxMeasure extends StObject {
 }
 object NxMeasure {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qAttributeDimensions: js.Array[NxAttrDimDef],
     qAttributeExpressions: js.Array[NxAttrExprDef],
     qCalcCond: ValueExpr,
@@ -33,31 +32,22 @@ object NxMeasure {
     __obj.asInstanceOf[NxMeasure]
   }
   
-  @scala.inline
-  implicit class NxMeasureMutableBuilder[Self <: NxMeasure] (val x: Self) extends AnyVal {
+  extension [Self <: NxMeasure](x: Self) {
     
-    @scala.inline
-    def setQAttributeDimensions(value: js.Array[NxAttrDimDef]): Self = StObject.set(x, "qAttributeDimensions", value.asInstanceOf[js.Any])
+    inline def setQAttributeDimensions(value: js.Array[NxAttrDimDef]): Self = StObject.set(x, "qAttributeDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttributeDimensionsVarargs(value: NxAttrDimDef*): Self = StObject.set(x, "qAttributeDimensions", js.Array(value :_*))
+    inline def setQAttributeDimensionsVarargs(value: NxAttrDimDef*): Self = StObject.set(x, "qAttributeDimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setQAttributeExpressions(value: js.Array[NxAttrExprDef]): Self = StObject.set(x, "qAttributeExpressions", value.asInstanceOf[js.Any])
+    inline def setQAttributeExpressions(value: js.Array[NxAttrExprDef]): Self = StObject.set(x, "qAttributeExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttributeExpressionsVarargs(value: NxAttrExprDef*): Self = StObject.set(x, "qAttributeExpressions", js.Array(value :_*))
+    inline def setQAttributeExpressionsVarargs(value: NxAttrExprDef*): Self = StObject.set(x, "qAttributeExpressions", js.Array(value :_*))
     
-    @scala.inline
-    def setQCalcCond(value: ValueExpr): Self = StObject.set(x, "qCalcCond", value.asInstanceOf[js.Any])
+    inline def setQCalcCond(value: ValueExpr): Self = StObject.set(x, "qCalcCond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDef(value: NxInlineMeasureDef): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
+    inline def setQDef(value: NxInlineMeasureDef): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
+    inline def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSortBy(value: SortCriteria): Self = StObject.set(x, "qSortBy", value.asInstanceOf[js.Any])
+    inline def setQSortBy(value: SortCriteria): Self = StObject.set(x, "qSortBy", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait SchemaNetworkConfiguration extends StObject {
 }
 object SchemaNetworkConfiguration {
   
-  @scala.inline
-  def apply(): SchemaNetworkConfiguration = {
+  inline def apply(): SchemaNetworkConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNetworkConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaNetworkConfigurationMutableBuilder[Self <: SchemaNetworkConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNetworkConfiguration](x: Self) {
     
-    @scala.inline
-    def setDownRule(value: SchemaTrafficRule): Self = StObject.set(x, "downRule", value.asInstanceOf[js.Any])
+    inline def setDownRule(value: SchemaTrafficRule): Self = StObject.set(x, "downRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownRuleUndefined: Self = StObject.set(x, "downRule", js.undefined)
+    inline def setDownRuleUndefined: Self = StObject.set(x, "downRule", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setUpRule(value: SchemaTrafficRule): Self = StObject.set(x, "upRule", value.asInstanceOf[js.Any])
+    inline def setUpRule(value: SchemaTrafficRule): Self = StObject.set(x, "upRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpRuleUndefined: Self = StObject.set(x, "upRule", js.undefined)
+    inline def setUpRuleUndefined: Self = StObject.set(x, "upRule", js.undefined)
   }
 }

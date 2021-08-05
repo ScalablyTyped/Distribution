@@ -28,31 +28,23 @@ trait IsDecimalOptions extends StObject {
 }
 object IsDecimalOptions {
   
-  @scala.inline
-  def apply(): IsDecimalOptions = {
+  inline def apply(): IsDecimalOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsDecimalOptions]
   }
   
-  @scala.inline
-  implicit class IsDecimalOptionsMutableBuilder[Self <: IsDecimalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IsDecimalOptions](x: Self) {
     
-    @scala.inline
-    def setDecimal_digits(value: String): Self = StObject.set(x, "decimal_digits", value.asInstanceOf[js.Any])
+    inline def setDecimal_digits(value: String): Self = StObject.set(x, "decimal_digits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimal_digitsUndefined: Self = StObject.set(x, "decimal_digits", js.undefined)
+    inline def setDecimal_digitsUndefined: Self = StObject.set(x, "decimal_digits", js.undefined)
     
-    @scala.inline
-    def setForce_decimal(value: Boolean): Self = StObject.set(x, "force_decimal", value.asInstanceOf[js.Any])
+    inline def setForce_decimal(value: Boolean): Self = StObject.set(x, "force_decimal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForce_decimalUndefined: Self = StObject.set(x, "force_decimal", js.undefined)
+    inline def setForce_decimalUndefined: Self = StObject.set(x, "force_decimal", js.undefined)
     
-    @scala.inline
-    def setLocale(value: DecimalLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: DecimalLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

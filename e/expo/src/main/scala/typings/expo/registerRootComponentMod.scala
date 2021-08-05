@@ -11,6 +11,5 @@ object registerRootComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[P](component: ComponentType[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default[P](component: ComponentType[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -78,8 +78,7 @@ object mod {
   }
   object EmailTemplates {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       generateSubject: (String, js.Any, js.Function2[/* error */ js.Any, /* text */ String | Null, Unit]) => Unit,
       generateText: (String, js.Any, String, js.Function2[/* error */ js.Any, /* text */ String | Null, Unit]) => Unit,
       render: (String, js.Any, js.Function4[
@@ -95,19 +94,15 @@ object mod {
       __obj.asInstanceOf[EmailTemplates]
     }
     
-    @scala.inline
-    implicit class EmailTemplatesMutableBuilder[Self <: EmailTemplates] (val x: Self) extends AnyVal {
+    extension [Self <: EmailTemplates](x: Self) {
       
-      @scala.inline
-      def setGenerateSubject(value: (String, js.Any, js.Function2[/* error */ js.Any, /* text */ String | Null, Unit]) => Unit): Self = StObject.set(x, "generateSubject", js.Any.fromFunction3(value))
+      inline def setGenerateSubject(value: (String, js.Any, js.Function2[/* error */ js.Any, /* text */ String | Null, Unit]) => Unit): Self = StObject.set(x, "generateSubject", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGenerateText(
+      inline def setGenerateText(
         value: (String, js.Any, String, js.Function2[/* error */ js.Any, /* text */ String | Null, Unit]) => Unit
       ): Self = StObject.set(x, "generateText", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setRender(
+      inline def setRender(
         value: (String, js.Any, js.Function4[
               /* error */ js.Any, 
               /* inlinedHTML */ js.UndefOr[String], 
@@ -117,8 +112,7 @@ object mod {
             ]) => Unit
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRewriteUrls(value: (JQueryStatic, js.Function1[/* href */ String, Unit]) => Unit): Self = StObject.set(x, "rewriteUrls", js.Any.fromFunction2(value))
+      inline def setRewriteUrls(value: (JQueryStatic, js.Function1[/* href */ String, Unit]) => Unit): Self = StObject.set(x, "rewriteUrls", js.Any.fromFunction2(value))
     }
   }
   
@@ -136,38 +130,28 @@ object mod {
   }
   object SwigEmailTemplatesOptions {
     
-    @scala.inline
-    def apply(): SwigEmailTemplatesOptions = {
+    inline def apply(): SwigEmailTemplatesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwigEmailTemplatesOptions]
     }
     
-    @scala.inline
-    implicit class SwigEmailTemplatesOptionsMutableBuilder[Self <: SwigEmailTemplatesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SwigEmailTemplatesOptions](x: Self) {
       
-      @scala.inline
-      def setJuice(value: js.Any): Self = StObject.set(x, "juice", value.asInstanceOf[js.Any])
+      inline def setJuice(value: js.Any): Self = StObject.set(x, "juice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJuiceUndefined: Self = StObject.set(x, "juice", js.undefined)
+      inline def setJuiceUndefined: Self = StObject.set(x, "juice", js.undefined)
       
-      @scala.inline
-      def setRewrite(value: /* $ */ JQueryStatic => Unit): Self = StObject.set(x, "rewrite", js.Any.fromFunction1(value))
+      inline def setRewrite(value: /* $ */ JQueryStatic => Unit): Self = StObject.set(x, "rewrite", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRewriteUndefined: Self = StObject.set(x, "rewrite", js.undefined)
+      inline def setRewriteUndefined: Self = StObject.set(x, "rewrite", js.undefined)
       
-      @scala.inline
-      def setRewriteUrl(value: /* href */ String => String): Self = StObject.set(x, "rewriteUrl", js.Any.fromFunction1(value))
+      inline def setRewriteUrl(value: /* href */ String => String): Self = StObject.set(x, "rewriteUrl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRewriteUrlUndefined: Self = StObject.set(x, "rewriteUrl", js.undefined)
+      inline def setRewriteUrlUndefined: Self = StObject.set(x, "rewriteUrl", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
   

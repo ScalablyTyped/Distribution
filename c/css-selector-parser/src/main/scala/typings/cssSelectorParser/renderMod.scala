@@ -11,6 +11,5 @@ object renderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def renderEntity(entity: SelectorEntity): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderEntity")(entity.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def renderEntity(entity: SelectorEntity): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderEntity")(entity.asInstanceOf[js.Any]).asInstanceOf[String]
 }

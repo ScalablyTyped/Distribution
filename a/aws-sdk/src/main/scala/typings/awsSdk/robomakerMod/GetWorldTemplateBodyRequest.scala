@@ -18,25 +18,19 @@ trait GetWorldTemplateBodyRequest extends StObject {
 }
 object GetWorldTemplateBodyRequest {
   
-  @scala.inline
-  def apply(): GetWorldTemplateBodyRequest = {
+  inline def apply(): GetWorldTemplateBodyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetWorldTemplateBodyRequest]
   }
   
-  @scala.inline
-  implicit class GetWorldTemplateBodyRequestMutableBuilder[Self <: GetWorldTemplateBodyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetWorldTemplateBodyRequest](x: Self) {
     
-    @scala.inline
-    def setGenerationJob(value: Arn): Self = StObject.set(x, "generationJob", value.asInstanceOf[js.Any])
+    inline def setGenerationJob(value: Arn): Self = StObject.set(x, "generationJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationJobUndefined: Self = StObject.set(x, "generationJob", js.undefined)
+    inline def setGenerationJobUndefined: Self = StObject.set(x, "generationJob", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

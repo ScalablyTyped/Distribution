@@ -14,25 +14,19 @@ trait ValueCount extends StObject {
 }
 object ValueCount {
   
-  @scala.inline
-  def apply(): ValueCount = {
+  inline def apply(): ValueCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValueCount]
   }
   
-  @scala.inline
-  implicit class ValueCountMutableBuilder[Self <: ValueCount] (val x: Self) extends AnyVal {
+  extension [Self <: ValueCount](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

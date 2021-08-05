@@ -14,30 +14,24 @@ object cosineDistanceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, axis: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+  inline def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, axis: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
     labels: T | TensorLike,
     predictions: T | TensorLike,
     axis: Double,
     weights: Unit,
     reduction: Reduction
   ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, axis: Double, weights: Tensor[Rank]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+  inline def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, axis: Double, weights: Tensor[Rank]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
     labels: T | TensorLike,
     predictions: T | TensorLike,
     axis: Double,
     weights: Tensor[Rank],
     reduction: Reduction
   ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, axis: Double, weights: TensorLike): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+  inline def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, axis: Double, weights: TensorLike): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
     labels: T | TensorLike,
     predictions: T | TensorLike,
     axis: Double,

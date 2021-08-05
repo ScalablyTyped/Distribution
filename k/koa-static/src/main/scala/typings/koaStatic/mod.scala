@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(root: String): Middleware[js.Object, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, DefaultContext]]
-  @scala.inline
-  def apply(root: String, opts: Options): Middleware[js.Object, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, DefaultContext]]
+  inline def apply(root: String): Middleware[js.Object, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, DefaultContext]]
+  inline def apply(root: String, opts: Options): Middleware[js.Object, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, DefaultContext]]
   
   @JSImport("koa-static", JSImport.Namespace)
   @js.native
@@ -27,20 +25,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+      inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+      inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
     }
   }
 }

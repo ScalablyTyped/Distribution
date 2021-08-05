@@ -21,37 +21,27 @@ trait MetricAggregationResult extends StObject {
 }
 object MetricAggregationResult {
   
-  @scala.inline
-  def apply(): MetricAggregationResult = {
+  inline def apply(): MetricAggregationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricAggregationResult]
   }
   
-  @scala.inline
-  implicit class MetricAggregationResultMutableBuilder[Self <: MetricAggregationResult] (val x: Self) extends AnyVal {
+  extension [Self <: MetricAggregationResult](x: Self) {
     
-    @scala.inline
-    def setEvent_rate(value: Double): Self = StObject.set(x, "event_rate", value.asInstanceOf[js.Any])
+    inline def setEvent_rate(value: Double): Self = StObject.set(x, "event_rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent_rateUndefined: Self = StObject.set(x, "event_rate", js.undefined)
+    inline def setEvent_rateUndefined: Self = StObject.set(x, "event_rate", js.undefined)
     
-    @scala.inline
-    def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setKey_as_string(value: String): Self = StObject.set(x, "key_as_string", value.asInstanceOf[js.Any])
+    inline def setKey_as_string(value: String): Self = StObject.set(x, "key_as_string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey_as_stringUndefined: Self = StObject.set(x, "key_as_string", js.undefined)
+    inline def setKey_as_stringUndefined: Self = StObject.set(x, "key_as_string", js.undefined)
     
-    @scala.inline
-    def setMatching_results(value: Double): Self = StObject.set(x, "matching_results", value.asInstanceOf[js.Any])
+    inline def setMatching_results(value: Double): Self = StObject.set(x, "matching_results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatching_resultsUndefined: Self = StObject.set(x, "matching_results", js.undefined)
+    inline def setMatching_resultsUndefined: Self = StObject.set(x, "matching_results", js.undefined)
   }
 }

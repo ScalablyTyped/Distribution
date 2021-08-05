@@ -8,14 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](tasks: js.Array[Task[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def apply[T](tasks: js.Array[Task[T]], callback: Callback[js.Array[T]]): Unit = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply[T](tasks: TaskObj[T]): Record[String, T] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[Record[String, T]]
-  @scala.inline
-  def apply[T](tasks: TaskObj[T], callback: Callback[Record[String, T]]): Unit = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply[T](tasks: js.Array[Task[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def apply[T](tasks: js.Array[Task[T]], callback: Callback[js.Array[T]]): Unit = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply[T](tasks: TaskObj[T]): Record[String, T] = ^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any]).asInstanceOf[Record[String, T]]
+  inline def apply[T](tasks: TaskObj[T], callback: Callback[Record[String, T]]): Unit = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("run-parallel", JSImport.Namespace)
   @js.native

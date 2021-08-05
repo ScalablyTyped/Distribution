@@ -34,8 +34,7 @@ trait RNFetchBlobFetchRepsonse extends StObject {
 }
 object RNFetchBlobFetchRepsonse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arrayBuffer: () => js.Promise[js.Array[js.Any]],
     blob: () => js.Promise[PolyfillBlob],
     bodyUsed: Boolean,
@@ -55,46 +54,32 @@ object RNFetchBlobFetchRepsonse {
     __obj.asInstanceOf[RNFetchBlobFetchRepsonse]
   }
   
-  @scala.inline
-  implicit class RNFetchBlobFetchRepsonseMutableBuilder[Self <: RNFetchBlobFetchRepsonse] (val x: Self) extends AnyVal {
+  extension [Self <: RNFetchBlobFetchRepsonse](x: Self) {
     
-    @scala.inline
-    def setArrayBuffer(value: () => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+    inline def setArrayBuffer(value: () => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBlob(value: () => js.Promise[PolyfillBlob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
+    inline def setBlob(value: () => js.Promise[PolyfillBlob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBodyUsed(value: Boolean): Self = StObject.set(x, "bodyUsed", value.asInstanceOf[js.Any])
+    inline def setBodyUsed(value: Boolean): Self = StObject.set(x, "bodyUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+    inline def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawResp(value: () => js.Promise[FetchBlobResponse]): Self = StObject.set(x, "rawResp", js.Any.fromFunction0(value))
+    inline def setRawResp(value: () => js.Promise[FetchBlobResponse]): Self = StObject.set(x, "rawResp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResp(value: FetchBlobResponse): Self = StObject.set(x, "resp", value.asInstanceOf[js.Any])
+    inline def setResp(value: FetchBlobResponse): Self = StObject.set(x, "resp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRnfbResp(value: FetchBlobResponse): Self = StObject.set(x, "rnfbResp", value.asInstanceOf[js.Any])
+    inline def setRnfbResp(value: FetchBlobResponse): Self = StObject.set(x, "rnfbResp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRnfbRespInfo(value: RNFetchBlobResponseInfo): Self = StObject.set(x, "rnfbRespInfo", value.asInstanceOf[js.Any])
+    inline def setRnfbRespInfo(value: RNFetchBlobResponseInfo): Self = StObject.set(x, "rnfbRespInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

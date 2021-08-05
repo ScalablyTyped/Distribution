@@ -18,17 +18,14 @@ object typesContinuousBackupsUnavailableExceptionMod {
   }
   object ContinuousBackupsUnavailableException {
     
-    @scala.inline
-    def apply(): ContinuousBackupsUnavailableException = {
+    inline def apply(): ContinuousBackupsUnavailableException = {
       val __obj = js.Dynamic.literal(name = "ContinuousBackupsUnavailableException")
       __obj.asInstanceOf[ContinuousBackupsUnavailableException]
     }
     
-    @scala.inline
-    implicit class ContinuousBackupsUnavailableExceptionMutableBuilder[Self <: ContinuousBackupsUnavailableException] (val x: Self) extends AnyVal {
+    extension [Self <: ContinuousBackupsUnavailableException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ContinuousBackupsUnavailableException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -43,20 +40,16 @@ object typesContinuousBackupsUnavailableExceptionMod {
   }
   object ContinuousBackupsUnavailableExceptionDetails {
     
-    @scala.inline
-    def apply(): ContinuousBackupsUnavailableExceptionDetails = {
+    inline def apply(): ContinuousBackupsUnavailableExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContinuousBackupsUnavailableExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ContinuousBackupsUnavailableExceptionDetailsMutableBuilder[Self <: ContinuousBackupsUnavailableExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ContinuousBackupsUnavailableExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

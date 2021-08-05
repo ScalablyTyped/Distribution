@@ -46,20 +46,16 @@ object binaryExtensionMod {
   }
   object BinaryExtension {
     
-    @scala.inline
-    def apply(incoming: /* message */ Message => Unit, outgoing: /* message */ Message => Unit): BinaryExtension = {
+    inline def apply(incoming: /* message */ Message => Unit, outgoing: /* message */ Message => Unit): BinaryExtension = {
       val __obj = js.Dynamic.literal(incoming = js.Any.fromFunction1(incoming), outgoing = js.Any.fromFunction1(outgoing))
       __obj.asInstanceOf[BinaryExtension]
     }
     
-    @scala.inline
-    implicit class BinaryExtensionMutableBuilder[Self <: BinaryExtension] (val x: Self) extends AnyVal {
+    extension [Self <: BinaryExtension](x: Self) {
       
-      @scala.inline
-      def setIncoming(value: /* message */ Message => Unit): Self = StObject.set(x, "incoming", js.Any.fromFunction1(value))
+      inline def setIncoming(value: /* message */ Message => Unit): Self = StObject.set(x, "incoming", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOutgoing(value: /* message */ Message => Unit): Self = StObject.set(x, "outgoing", js.Any.fromFunction1(value))
+      inline def setOutgoing(value: /* message */ Message => Unit): Self = StObject.set(x, "outgoing", js.Any.fromFunction1(value))
     }
   }
 }

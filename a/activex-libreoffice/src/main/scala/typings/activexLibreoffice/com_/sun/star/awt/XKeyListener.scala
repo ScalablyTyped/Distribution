@@ -20,8 +20,7 @@ trait XKeyListener
 }
 object XKeyListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     keyPressed: KeyEvent => Unit,
@@ -33,13 +32,10 @@ object XKeyListener {
     __obj.asInstanceOf[XKeyListener]
   }
   
-  @scala.inline
-  implicit class XKeyListenerMutableBuilder[Self <: XKeyListener] (val x: Self) extends AnyVal {
+  extension [Self <: XKeyListener](x: Self) {
     
-    @scala.inline
-    def setKeyPressed(value: KeyEvent => Unit): Self = StObject.set(x, "keyPressed", js.Any.fromFunction1(value))
+    inline def setKeyPressed(value: KeyEvent => Unit): Self = StObject.set(x, "keyPressed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeyReleased(value: KeyEvent => Unit): Self = StObject.set(x, "keyReleased", js.Any.fromFunction1(value))
+    inline def setKeyReleased(value: KeyEvent => Unit): Self = StObject.set(x, "keyReleased", js.Any.fromFunction1(value))
   }
 }

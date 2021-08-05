@@ -13,16 +13,13 @@ trait ServiceNowConnectorProfileProperties extends StObject {
 }
 object ServiceNowConnectorProfileProperties {
   
-  @scala.inline
-  def apply(instanceUrl: InstanceUrl): ServiceNowConnectorProfileProperties = {
+  inline def apply(instanceUrl: InstanceUrl): ServiceNowConnectorProfileProperties = {
     val __obj = js.Dynamic.literal(instanceUrl = instanceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceNowConnectorProfileProperties]
   }
   
-  @scala.inline
-  implicit class ServiceNowConnectorProfilePropertiesMutableBuilder[Self <: ServiceNowConnectorProfileProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceNowConnectorProfileProperties](x: Self) {
     
-    @scala.inline
-    def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
+    inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }
 }

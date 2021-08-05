@@ -13,13 +13,10 @@ object fsHandlersMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isChangeErrorOk(error: Exception): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChangeErrorOk")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isChangeErrorOk(error: Exception): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChangeErrorOk")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isRetriableError(error: Exception): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRetriableError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isRetriableError(error: Exception): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRetriableError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def onChangeError(error: Exception): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChangeError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onChangeError(error: Exception): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChangeError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

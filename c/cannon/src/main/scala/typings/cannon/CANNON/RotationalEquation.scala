@@ -26,8 +26,7 @@ trait RotationalEquation
 }
 object RotationalEquation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a: Double,
     addToWlamda: Double => Double,
     b: Double,
@@ -61,31 +60,22 @@ object RotationalEquation {
     __obj.asInstanceOf[RotationalEquation]
   }
   
-  @scala.inline
-  implicit class RotationalEquationMutableBuilder[Self <: RotationalEquation] (val x: Self) extends AnyVal {
+  extension [Self <: RotationalEquation](x: Self) {
     
-    @scala.inline
-    def setInvIi(value: Mat3): Self = StObject.set(x, "invIi", value.asInstanceOf[js.Any])
+    inline def setInvIi(value: Mat3): Self = StObject.set(x, "invIi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvIj(value: Mat3): Self = StObject.set(x, "invIj", value.asInstanceOf[js.Any])
+    inline def setInvIj(value: Mat3): Self = StObject.set(x, "invIj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNi(value: Vec3): Self = StObject.set(x, "ni", value.asInstanceOf[js.Any])
+    inline def setNi(value: Vec3): Self = StObject.set(x, "ni", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNixnj(value: Vec3): Self = StObject.set(x, "nixnj", value.asInstanceOf[js.Any])
+    inline def setNixnj(value: Vec3): Self = StObject.set(x, "nixnj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNj(value: Vec3): Self = StObject.set(x, "nj", value.asInstanceOf[js.Any])
+    inline def setNj(value: Vec3): Self = StObject.set(x, "nj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNjxni(value: Vec3): Self = StObject.set(x, "njxni", value.asInstanceOf[js.Any])
+    inline def setNjxni(value: Vec3): Self = StObject.set(x, "njxni", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelForce(value: Vec3): Self = StObject.set(x, "relForce", value.asInstanceOf[js.Any])
+    inline def setRelForce(value: Vec3): Self = StObject.set(x, "relForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelVel(value: Vec3): Self = StObject.set(x, "relVel", value.asInstanceOf[js.Any])
+    inline def setRelVel(value: Vec3): Self = StObject.set(x, "relVel", value.asInstanceOf[js.Any])
   }
 }

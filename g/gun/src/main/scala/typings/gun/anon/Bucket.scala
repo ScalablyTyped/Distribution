@@ -14,22 +14,17 @@ trait Bucket extends StObject {
 }
 object Bucket {
   
-  @scala.inline
-  def apply(bucket: js.Any, key: js.Any, secret: js.Any): Bucket = {
+  inline def apply(bucket: js.Any, key: js.Any, secret: js.Any): Bucket = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bucket]
   }
   
-  @scala.inline
-  implicit class BucketMutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
+  extension [Self <: Bucket](x: Self) {
     
-    @scala.inline
-    def setBucket(value: js.Any): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: js.Any): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecret(value: js.Any): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: js.Any): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
   }
 }

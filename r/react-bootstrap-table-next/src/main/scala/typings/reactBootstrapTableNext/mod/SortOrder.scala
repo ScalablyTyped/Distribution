@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SortOrder extends StObject
 object SortOrder {
   
-  @scala.inline
-  def asc: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.asc = "asc".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.asc]
+  inline def asc: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.asc = "asc".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.asc]
   
-  @scala.inline
-  def desc: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.desc = "desc".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.desc]
+  inline def desc: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.desc = "desc".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.desc]
 }

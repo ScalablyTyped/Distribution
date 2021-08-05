@@ -21,8 +21,7 @@ object projectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setupProject(
+  inline def setupProject(
     projectDirectory: String,
     configFileName: String,
     rawConfig: js.Any,
@@ -89,8 +88,7 @@ object projectMod {
   }
   object ProjectInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compiler: ICompiler,
       directory: String,
       input: FileCache,
@@ -105,38 +103,27 @@ object projectMod {
       __obj.asInstanceOf[ProjectInfo]
     }
     
-    @scala.inline
-    implicit class ProjectInfoMutableBuilder[Self <: ProjectInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ProjectInfo](x: Self) {
       
-      @scala.inline
-      def setCompiler(value: ICompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      inline def setCompiler(value: ICompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: FileCache): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: FileCache): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: CompilerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: CompilerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectReferences(value: js.Array[ProjectReference]): Self = StObject.set(x, "projectReferences", value.asInstanceOf[js.Any])
+      inline def setProjectReferences(value: js.Array[ProjectReference]): Self = StObject.set(x, "projectReferences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectReferencesVarargs(value: ProjectReference*): Self = StObject.set(x, "projectReferences", js.Array(value :_*))
+      inline def setProjectReferencesVarargs(value: ProjectReference*): Self = StObject.set(x, "projectReferences", js.Array(value :_*))
       
-      @scala.inline
-      def setReporter(value: Reporter): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+      inline def setReporter(value: Reporter): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleOutput(value: Boolean): Self = StObject.set(x, "singleOutput", value.asInstanceOf[js.Any])
+      inline def setSingleOutput(value: Boolean): Self = StObject.set(x, "singleOutput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypescript(value: Typeofts): Self = StObject.set(x, "typescript", value.asInstanceOf[js.Any])
+      inline def setTypescript(value: Typeofts): Self = StObject.set(x, "typescript", value.asInstanceOf[js.Any])
     }
   }
 }

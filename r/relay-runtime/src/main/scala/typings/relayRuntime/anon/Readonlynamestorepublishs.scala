@@ -20,22 +20,17 @@ trait Readonlynamestorepublishs
 }
 object Readonlynamestorepublishs {
   
-  @scala.inline
-  def apply(optimistic: Boolean, source: RecordSource): Readonlynamestorepublishs = {
+  inline def apply(optimistic: Boolean, source: RecordSource): Readonlynamestorepublishs = {
     val __obj = js.Dynamic.literal(name = "store.publish", optimistic = optimistic.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynamestorepublishs]
   }
   
-  @scala.inline
-  implicit class ReadonlynamestorepublishsMutableBuilder[Self <: Readonlynamestorepublishs] (val x: Self) extends AnyVal {
+  extension [Self <: Readonlynamestorepublishs](x: Self) {
     
-    @scala.inline
-    def setName(value: storeDotpublish): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: storeDotpublish): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimistic(value: Boolean): Self = StObject.set(x, "optimistic", value.asInstanceOf[js.Any])
+    inline def setOptimistic(value: Boolean): Self = StObject.set(x, "optimistic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: RecordSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: RecordSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

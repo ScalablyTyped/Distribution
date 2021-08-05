@@ -18,25 +18,19 @@ trait WriteRequest extends StObject {
 }
 object WriteRequest {
   
-  @scala.inline
-  def apply(): WriteRequest = {
+  inline def apply(): WriteRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WriteRequest]
   }
   
-  @scala.inline
-  implicit class WriteRequestMutableBuilder[Self <: WriteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: WriteRequest](x: Self) {
     
-    @scala.inline
-    def setDeleteRequest(value: DeleteRequest): Self = StObject.set(x, "DeleteRequest", value.asInstanceOf[js.Any])
+    inline def setDeleteRequest(value: DeleteRequest): Self = StObject.set(x, "DeleteRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteRequestUndefined: Self = StObject.set(x, "DeleteRequest", js.undefined)
+    inline def setDeleteRequestUndefined: Self = StObject.set(x, "DeleteRequest", js.undefined)
     
-    @scala.inline
-    def setPutRequest(value: PutRequest): Self = StObject.set(x, "PutRequest", value.asInstanceOf[js.Any])
+    inline def setPutRequest(value: PutRequest): Self = StObject.set(x, "PutRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPutRequestUndefined: Self = StObject.set(x, "PutRequest", js.undefined)
+    inline def setPutRequestUndefined: Self = StObject.set(x, "PutRequest", js.undefined)
   }
 }

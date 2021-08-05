@@ -10,19 +10,15 @@ trait ListAllGroupsResponse extends StObject {
 }
 object ListAllGroupsResponse {
   
-  @scala.inline
-  def apply(groups: js.Array[String]): ListAllGroupsResponse = {
+  inline def apply(groups: js.Array[String]): ListAllGroupsResponse = {
     val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAllGroupsResponse]
   }
   
-  @scala.inline
-  implicit class ListAllGroupsResponseMutableBuilder[Self <: ListAllGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAllGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
   }
 }

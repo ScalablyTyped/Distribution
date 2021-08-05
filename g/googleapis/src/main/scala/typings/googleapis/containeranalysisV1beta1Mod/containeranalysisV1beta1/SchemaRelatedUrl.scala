@@ -21,25 +21,19 @@ trait SchemaRelatedUrl extends StObject {
 }
 object SchemaRelatedUrl {
   
-  @scala.inline
-  def apply(): SchemaRelatedUrl = {
+  inline def apply(): SchemaRelatedUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRelatedUrl]
   }
   
-  @scala.inline
-  implicit class SchemaRelatedUrlMutableBuilder[Self <: SchemaRelatedUrl] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRelatedUrl](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

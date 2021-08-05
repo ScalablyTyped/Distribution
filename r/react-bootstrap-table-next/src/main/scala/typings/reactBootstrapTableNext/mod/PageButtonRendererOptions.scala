@@ -33,8 +33,7 @@ trait PageButtonRendererOptions extends StObject {
 }
 object PageButtonRendererOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     disabled: Boolean,
     onPageChange: (Double, Double) => Unit,
@@ -45,22 +44,16 @@ object PageButtonRendererOptions {
     __obj.asInstanceOf[PageButtonRendererOptions]
   }
   
-  @scala.inline
-  implicit class PageButtonRendererOptionsMutableBuilder[Self <: PageButtonRendererOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageButtonRendererOptions](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPageChange(value: (Double, Double) => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction2(value))
+    inline def setOnPageChange(value: (Double, Double) => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPage(value: Double | String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double | String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

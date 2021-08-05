@@ -23,22 +23,17 @@ trait ISearchFieldDictionary extends StObject {
 }
 object ISearchFieldDictionary {
   
-  @scala.inline
-  def apply(qField: Double, qResult: js.Array[ISearchTermResult]): ISearchFieldDictionary = {
+  inline def apply(qField: Double, qResult: js.Array[ISearchTermResult]): ISearchFieldDictionary = {
     val __obj = js.Dynamic.literal(qField = qField.asInstanceOf[js.Any], qResult = qResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchFieldDictionary]
   }
   
-  @scala.inline
-  implicit class ISearchFieldDictionaryMutableBuilder[Self <: ISearchFieldDictionary] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchFieldDictionary](x: Self) {
     
-    @scala.inline
-    def setQField(value: Double): Self = StObject.set(x, "qField", value.asInstanceOf[js.Any])
+    inline def setQField(value: Double): Self = StObject.set(x, "qField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQResult(value: js.Array[ISearchTermResult]): Self = StObject.set(x, "qResult", value.asInstanceOf[js.Any])
+    inline def setQResult(value: js.Array[ISearchTermResult]): Self = StObject.set(x, "qResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQResultVarargs(value: ISearchTermResult*): Self = StObject.set(x, "qResult", js.Array(value :_*))
+    inline def setQResultVarargs(value: ISearchTermResult*): Self = StObject.set(x, "qResult", js.Array(value :_*))
   }
 }

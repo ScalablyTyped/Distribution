@@ -29,19 +29,15 @@ trait RotationDescriptor extends StObject {
 }
 object RotationDescriptor {
   
-  @scala.inline
-  def apply(RotateAngle: Double, ShearAngle: Double): RotationDescriptor = {
+  inline def apply(RotateAngle: Double, ShearAngle: Double): RotationDescriptor = {
     val __obj = js.Dynamic.literal(RotateAngle = RotateAngle.asInstanceOf[js.Any], ShearAngle = ShearAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotationDescriptor]
   }
   
-  @scala.inline
-  implicit class RotationDescriptorMutableBuilder[Self <: RotationDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: RotationDescriptor](x: Self) {
     
-    @scala.inline
-    def setRotateAngle(value: Double): Self = StObject.set(x, "RotateAngle", value.asInstanceOf[js.Any])
+    inline def setRotateAngle(value: Double): Self = StObject.set(x, "RotateAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShearAngle(value: Double): Self = StObject.set(x, "ShearAngle", value.asInstanceOf[js.Any])
+    inline def setShearAngle(value: Double): Self = StObject.set(x, "ShearAngle", value.asInstanceOf[js.Any])
   }
 }

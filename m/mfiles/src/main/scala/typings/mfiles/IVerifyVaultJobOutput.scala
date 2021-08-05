@@ -10,16 +10,13 @@ trait IVerifyVaultJobOutput extends StObject {
 }
 object IVerifyVaultJobOutput {
   
-  @scala.inline
-  def apply(Errors: IStrings): IVerifyVaultJobOutput = {
+  inline def apply(Errors: IStrings): IVerifyVaultJobOutput = {
     val __obj = js.Dynamic.literal(Errors = Errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVerifyVaultJobOutput]
   }
   
-  @scala.inline
-  implicit class IVerifyVaultJobOutputMutableBuilder[Self <: IVerifyVaultJobOutput] (val x: Self) extends AnyVal {
+  extension [Self <: IVerifyVaultJobOutput](x: Self) {
     
-    @scala.inline
-    def setErrors(value: IStrings): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: IStrings): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
   }
 }

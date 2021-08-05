@@ -14,31 +14,23 @@ trait GoogleCloudTalentV4JobDerivedInfo extends StObject {
 }
 object GoogleCloudTalentV4JobDerivedInfo {
   
-  @scala.inline
-  def apply(): GoogleCloudTalentV4JobDerivedInfo = {
+  inline def apply(): GoogleCloudTalentV4JobDerivedInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudTalentV4JobDerivedInfo]
   }
   
-  @scala.inline
-  implicit class GoogleCloudTalentV4JobDerivedInfoMutableBuilder[Self <: GoogleCloudTalentV4JobDerivedInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudTalentV4JobDerivedInfo](x: Self) {
     
-    @scala.inline
-    def setJobCategories(value: js.Array[String]): Self = StObject.set(x, "jobCategories", value.asInstanceOf[js.Any])
+    inline def setJobCategories(value: js.Array[String]): Self = StObject.set(x, "jobCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobCategoriesUndefined: Self = StObject.set(x, "jobCategories", js.undefined)
+    inline def setJobCategoriesUndefined: Self = StObject.set(x, "jobCategories", js.undefined)
     
-    @scala.inline
-    def setJobCategoriesVarargs(value: String*): Self = StObject.set(x, "jobCategories", js.Array(value :_*))
+    inline def setJobCategoriesVarargs(value: String*): Self = StObject.set(x, "jobCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setLocations(value: js.Array[GoogleCloudTalentV4Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[GoogleCloudTalentV4Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: GoogleCloudTalentV4Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: GoogleCloudTalentV4Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
   }
 }

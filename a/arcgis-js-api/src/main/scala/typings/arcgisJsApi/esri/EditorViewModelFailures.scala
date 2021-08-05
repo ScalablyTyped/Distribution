@@ -19,8 +19,7 @@ trait EditorViewModelFailures
 }
 object EditorViewModelFailures {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     error: Error,
     hasOwnProperty: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object EditorViewModelFailures {
     __obj.asInstanceOf[EditorViewModelFailures]
   }
   
-  @scala.inline
-  implicit class EditorViewModelFailuresMutableBuilder[Self <: EditorViewModelFailures] (val x: Self) extends AnyVal {
+  extension [Self <: EditorViewModelFailures](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

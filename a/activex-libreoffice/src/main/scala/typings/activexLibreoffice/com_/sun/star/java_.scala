@@ -75,17 +75,14 @@ object java_ {
   }
   object JavaVMCreationFailureException {
     
-    @scala.inline
-    def apply(Context: XInterface, ErrorCode: Double, Message: String): JavaVMCreationFailureException = {
+    inline def apply(Context: XInterface, ErrorCode: Double, Message: String): JavaVMCreationFailureException = {
       val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], ErrorCode = ErrorCode.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
       __obj.asInstanceOf[JavaVMCreationFailureException]
     }
     
-    @scala.inline
-    implicit class JavaVMCreationFailureExceptionMutableBuilder[Self <: JavaVMCreationFailureException] (val x: Self) extends AnyVal {
+    extension [Self <: JavaVMCreationFailureException](x: Self) {
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,17 +107,14 @@ object java_ {
   }
   object MissingJavaRuntimeException {
     
-    @scala.inline
-    def apply(Context: XInterface, Message: String, URLRuntimeLib: String): MissingJavaRuntimeException = {
+    inline def apply(Context: XInterface, Message: String, URLRuntimeLib: String): MissingJavaRuntimeException = {
       val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], URLRuntimeLib = URLRuntimeLib.asInstanceOf[js.Any])
       __obj.asInstanceOf[MissingJavaRuntimeException]
     }
     
-    @scala.inline
-    implicit class MissingJavaRuntimeExceptionMutableBuilder[Self <: MissingJavaRuntimeException] (val x: Self) extends AnyVal {
+    extension [Self <: MissingJavaRuntimeException](x: Self) {
       
-      @scala.inline
-      def setURLRuntimeLib(value: String): Self = StObject.set(x, "URLRuntimeLib", value.asInstanceOf[js.Any])
+      inline def setURLRuntimeLib(value: String): Self = StObject.set(x, "URLRuntimeLib", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,8 +140,7 @@ object java_ {
   }
   object WrongJavaVersionException {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Context: XInterface,
       DetectedVersion: String,
       HighestSupportedVersion: String,
@@ -158,17 +151,13 @@ object java_ {
       __obj.asInstanceOf[WrongJavaVersionException]
     }
     
-    @scala.inline
-    implicit class WrongJavaVersionExceptionMutableBuilder[Self <: WrongJavaVersionException] (val x: Self) extends AnyVal {
+    extension [Self <: WrongJavaVersionException](x: Self) {
       
-      @scala.inline
-      def setDetectedVersion(value: String): Self = StObject.set(x, "DetectedVersion", value.asInstanceOf[js.Any])
+      inline def setDetectedVersion(value: String): Self = StObject.set(x, "DetectedVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighestSupportedVersion(value: String): Self = StObject.set(x, "HighestSupportedVersion", value.asInstanceOf[js.Any])
+      inline def setHighestSupportedVersion(value: String): Self = StObject.set(x, "HighestSupportedVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowestSupportedVersion(value: String): Self = StObject.set(x, "LowestSupportedVersion", value.asInstanceOf[js.Any])
+      inline def setLowestSupportedVersion(value: String): Self = StObject.set(x, "LowestSupportedVersion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,8 +188,7 @@ object java_ {
   }
   object XJavaThreadRegister11 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       isThreadAttached: () => Boolean,
       queryInterface: `type` => js.Any,
@@ -212,17 +200,13 @@ object java_ {
       __obj.asInstanceOf[XJavaThreadRegister11]
     }
     
-    @scala.inline
-    implicit class XJavaThreadRegister11MutableBuilder[Self <: XJavaThreadRegister11] (val x: Self) extends AnyVal {
+    extension [Self <: XJavaThreadRegister11](x: Self) {
       
-      @scala.inline
-      def setIsThreadAttached(value: () => Boolean): Self = StObject.set(x, "isThreadAttached", js.Any.fromFunction0(value))
+      inline def setIsThreadAttached(value: () => Boolean): Self = StObject.set(x, "isThreadAttached", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegisterThread(value: () => Unit): Self = StObject.set(x, "registerThread", js.Any.fromFunction0(value))
+      inline def setRegisterThread(value: () => Unit): Self = StObject.set(x, "registerThread", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRevokeThread(value: () => Unit): Self = StObject.set(x, "revokeThread", js.Any.fromFunction0(value))
+      inline def setRevokeThread(value: () => Unit): Self = StObject.set(x, "revokeThread", js.Any.fromFunction0(value))
     }
   }
   
@@ -275,8 +259,7 @@ object java_ {
   }
   object XJavaVM {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       getJavaVM: SeqEquiv[Double] => js.Any,
       isVMEnabled: () => Boolean,
@@ -288,17 +271,13 @@ object java_ {
       __obj.asInstanceOf[XJavaVM]
     }
     
-    @scala.inline
-    implicit class XJavaVMMutableBuilder[Self <: XJavaVM] (val x: Self) extends AnyVal {
+    extension [Self <: XJavaVM](x: Self) {
       
-      @scala.inline
-      def setGetJavaVM(value: SeqEquiv[Double] => js.Any): Self = StObject.set(x, "getJavaVM", js.Any.fromFunction1(value))
+      inline def setGetJavaVM(value: SeqEquiv[Double] => js.Any): Self = StObject.set(x, "getJavaVM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsVMEnabled(value: () => Boolean): Self = StObject.set(x, "isVMEnabled", js.Any.fromFunction0(value))
+      inline def setIsVMEnabled(value: () => Boolean): Self = StObject.set(x, "isVMEnabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsVMStarted(value: () => Boolean): Self = StObject.set(x, "isVMStarted", js.Any.fromFunction0(value))
+      inline def setIsVMStarted(value: () => Boolean): Self = StObject.set(x, "isVMStarted", js.Any.fromFunction0(value))
     }
   }
 }

@@ -18,28 +18,21 @@ trait DescribeReservedInstancesOfferingsResult extends StObject {
 }
 object DescribeReservedInstancesOfferingsResult {
   
-  @scala.inline
-  def apply(): DescribeReservedInstancesOfferingsResult = {
+  inline def apply(): DescribeReservedInstancesOfferingsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReservedInstancesOfferingsResult]
   }
   
-  @scala.inline
-  implicit class DescribeReservedInstancesOfferingsResultMutableBuilder[Self <: DescribeReservedInstancesOfferingsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReservedInstancesOfferingsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setReservedInstancesOfferings(value: ReservedInstancesOfferingList): Self = StObject.set(x, "ReservedInstancesOfferings", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesOfferings(value: ReservedInstancesOfferingList): Self = StObject.set(x, "ReservedInstancesOfferings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesOfferingsUndefined: Self = StObject.set(x, "ReservedInstancesOfferings", js.undefined)
+    inline def setReservedInstancesOfferingsUndefined: Self = StObject.set(x, "ReservedInstancesOfferings", js.undefined)
     
-    @scala.inline
-    def setReservedInstancesOfferingsVarargs(value: ReservedInstancesOffering*): Self = StObject.set(x, "ReservedInstancesOfferings", js.Array(value :_*))
+    inline def setReservedInstancesOfferingsVarargs(value: ReservedInstancesOffering*): Self = StObject.set(x, "ReservedInstancesOfferings", js.Array(value :_*))
   }
 }

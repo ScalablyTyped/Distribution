@@ -28,37 +28,27 @@ trait SignedExchangeInfo extends StObject {
 }
 object SignedExchangeInfo {
   
-  @scala.inline
-  def apply(outerResponse: Response): SignedExchangeInfo = {
+  inline def apply(outerResponse: Response): SignedExchangeInfo = {
     val __obj = js.Dynamic.literal(outerResponse = outerResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignedExchangeInfo]
   }
   
-  @scala.inline
-  implicit class SignedExchangeInfoMutableBuilder[Self <: SignedExchangeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SignedExchangeInfo](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[SignedExchangeError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[SignedExchangeError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: SignedExchangeError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SignedExchangeError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setHeader(value: SignedExchangeHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: SignedExchangeHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setOuterResponse(value: Response): Self = StObject.set(x, "outerResponse", value.asInstanceOf[js.Any])
+    inline def setOuterResponse(value: Response): Self = StObject.set(x, "outerResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityDetails(value: SecurityDetails): Self = StObject.set(x, "securityDetails", value.asInstanceOf[js.Any])
+    inline def setSecurityDetails(value: SecurityDetails): Self = StObject.set(x, "securityDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityDetailsUndefined: Self = StObject.set(x, "securityDetails", js.undefined)
+    inline def setSecurityDetailsUndefined: Self = StObject.set(x, "securityDetails", js.undefined)
   }
 }

@@ -77,8 +77,7 @@ trait XDateField
 }
 object XDateField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Date: Date,
     First: Date,
     Last: Date,
@@ -108,70 +107,48 @@ object XDateField {
     __obj.asInstanceOf[XDateField]
   }
   
-  @scala.inline
-  implicit class XDateFieldMutableBuilder[Self <: XDateField] (val x: Self) extends AnyVal {
+  extension [Self <: XDateField](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst(value: Date): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
+    inline def setFirst(value: Date): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDate(value: () => Date): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
+    inline def setGetDate(value: () => Date): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFirst(value: () => Date): Self = StObject.set(x, "getFirst", js.Any.fromFunction0(value))
+    inline def setGetFirst(value: () => Date): Self = StObject.set(x, "getFirst", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLast(value: () => Date): Self = StObject.set(x, "getLast", js.Any.fromFunction0(value))
+    inline def setGetLast(value: () => Date): Self = StObject.set(x, "getLast", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMax(value: () => Date): Self = StObject.set(x, "getMax", js.Any.fromFunction0(value))
+    inline def setGetMax(value: () => Date): Self = StObject.set(x, "getMax", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMin(value: () => Date): Self = StObject.set(x, "getMin", js.Any.fromFunction0(value))
+    inline def setGetMin(value: () => Date): Self = StObject.set(x, "getMin", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+    inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLongFormat(value: () => Boolean): Self = StObject.set(x, "isLongFormat", js.Any.fromFunction0(value))
+    inline def setIsLongFormat(value: () => Boolean): Self = StObject.set(x, "isLongFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsStrictFormat(value: () => Boolean): Self = StObject.set(x, "isStrictFormat", js.Any.fromFunction0(value))
+    inline def setIsStrictFormat(value: () => Boolean): Self = StObject.set(x, "isStrictFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLast(value: Date): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
+    inline def setLast(value: Date): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Date): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Date): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Date): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Date): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDate(value: Date => Unit): Self = StObject.set(x, "setDate", js.Any.fromFunction1(value))
+    inline def setSetDate(value: Date => Unit): Self = StObject.set(x, "setDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEmpty(value: () => Unit): Self = StObject.set(x, "setEmpty", js.Any.fromFunction0(value))
+    inline def setSetEmpty(value: () => Unit): Self = StObject.set(x, "setEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFirst(value: Date => Unit): Self = StObject.set(x, "setFirst", js.Any.fromFunction1(value))
+    inline def setSetFirst(value: Date => Unit): Self = StObject.set(x, "setFirst", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLast(value: Date => Unit): Self = StObject.set(x, "setLast", js.Any.fromFunction1(value))
+    inline def setSetLast(value: Date => Unit): Self = StObject.set(x, "setLast", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLongFormat(value: Boolean => Unit): Self = StObject.set(x, "setLongFormat", js.Any.fromFunction1(value))
+    inline def setSetLongFormat(value: Boolean => Unit): Self = StObject.set(x, "setLongFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMax(value: Date => Unit): Self = StObject.set(x, "setMax", js.Any.fromFunction1(value))
+    inline def setSetMax(value: Date => Unit): Self = StObject.set(x, "setMax", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMin(value: Date => Unit): Self = StObject.set(x, "setMin", js.Any.fromFunction1(value))
+    inline def setSetMin(value: Date => Unit): Self = StObject.set(x, "setMin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStrictFormat(value: Boolean => Unit): Self = StObject.set(x, "setStrictFormat", js.Any.fromFunction1(value))
+    inline def setSetStrictFormat(value: Boolean => Unit): Self = StObject.set(x, "setStrictFormat", js.Any.fromFunction1(value))
   }
 }

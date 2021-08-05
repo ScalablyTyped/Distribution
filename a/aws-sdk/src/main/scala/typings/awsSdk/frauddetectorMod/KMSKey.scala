@@ -13,19 +13,15 @@ trait KMSKey extends StObject {
 }
 object KMSKey {
   
-  @scala.inline
-  def apply(): KMSKey = {
+  inline def apply(): KMSKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KMSKey]
   }
   
-  @scala.inline
-  implicit class KMSKeyMutableBuilder[Self <: KMSKey] (val x: Self) extends AnyVal {
+  extension [Self <: KMSKey](x: Self) {
     
-    @scala.inline
-    def setKmsEncryptionKeyArn(value: KmsEncryptionKeyArn): Self = StObject.set(x, "kmsEncryptionKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsEncryptionKeyArn(value: KmsEncryptionKeyArn): Self = StObject.set(x, "kmsEncryptionKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsEncryptionKeyArnUndefined: Self = StObject.set(x, "kmsEncryptionKeyArn", js.undefined)
+    inline def setKmsEncryptionKeyArnUndefined: Self = StObject.set(x, "kmsEncryptionKeyArn", js.undefined)
   }
 }

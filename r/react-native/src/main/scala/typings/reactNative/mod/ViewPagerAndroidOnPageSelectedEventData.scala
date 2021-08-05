@@ -10,16 +10,13 @@ trait ViewPagerAndroidOnPageSelectedEventData extends StObject {
 }
 object ViewPagerAndroidOnPageSelectedEventData {
   
-  @scala.inline
-  def apply(position: Double): ViewPagerAndroidOnPageSelectedEventData = {
+  inline def apply(position: Double): ViewPagerAndroidOnPageSelectedEventData = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPagerAndroidOnPageSelectedEventData]
   }
   
-  @scala.inline
-  implicit class ViewPagerAndroidOnPageSelectedEventDataMutableBuilder[Self <: ViewPagerAndroidOnPageSelectedEventData] (val x: Self) extends AnyVal {
+  extension [Self <: ViewPagerAndroidOnPageSelectedEventData](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

@@ -10,7 +10,7 @@ trait Sparkline extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.Sparkline_typekey")
+  /* private */ @JSName("Excel.Sparkline_typekey")
   var ExcelDotSparkline_typekey: Sparkline
   
   def Location(Address: String): Range
@@ -29,8 +29,7 @@ trait Sparkline extends StObject {
 }
 object Sparkline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     ExcelDotSparkline_typekey: Sparkline,
@@ -45,31 +44,22 @@ object Sparkline {
     __obj.asInstanceOf[Sparkline]
   }
   
-  @scala.inline
-  implicit class SparklineMutableBuilder[Self <: Sparkline] (val x: Self) extends AnyVal {
+  extension [Self <: Sparkline](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotSparkline_typekey(value: Sparkline): Self = StObject.set(x, "Excel.Sparkline_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotSparkline_typekey(value: Sparkline): Self = StObject.set(x, "Excel.Sparkline_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Range): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Range): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifyLocation(value: Range => Unit): Self = StObject.set(x, "ModifyLocation", js.Any.fromFunction1(value))
+    inline def setModifyLocation(value: Range => Unit): Self = StObject.set(x, "ModifyLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setModifySourceData(value: String => Unit): Self = StObject.set(x, "ModifySourceData", js.Any.fromFunction1(value))
+    inline def setModifySourceData(value: String => Unit): Self = StObject.set(x, "ModifySourceData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceData(value: String): Self = StObject.set(x, "SourceData", value.asInstanceOf[js.Any])
+    inline def setSourceData(value: String): Self = StObject.set(x, "SourceData", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait PostCustomFieldItemParams extends StObject {
 }
 object PostCustomFieldItemParams {
   
-  @scala.inline
-  def apply(name: String): PostCustomFieldItemParams = {
+  inline def apply(name: String): PostCustomFieldItemParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostCustomFieldItemParams]
   }
   
-  @scala.inline
-  implicit class PostCustomFieldItemParamsMutableBuilder[Self <: PostCustomFieldItemParams] (val x: Self) extends AnyVal {
+  extension [Self <: PostCustomFieldItemParams](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

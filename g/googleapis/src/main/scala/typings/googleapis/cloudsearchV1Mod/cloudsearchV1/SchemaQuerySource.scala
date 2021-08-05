@@ -32,40 +32,29 @@ trait SchemaQuerySource extends StObject {
 }
 object SchemaQuerySource {
   
-  @scala.inline
-  def apply(): SchemaQuerySource = {
+  inline def apply(): SchemaQuerySource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQuerySource]
   }
   
-  @scala.inline
-  implicit class SchemaQuerySourceMutableBuilder[Self <: SchemaQuerySource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQuerySource](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setOperators(value: js.Array[SchemaQueryOperator]): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
+    inline def setOperators(value: js.Array[SchemaQueryOperator]): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
+    inline def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
     
-    @scala.inline
-    def setOperatorsVarargs(value: SchemaQueryOperator*): Self = StObject.set(x, "operators", js.Array(value :_*))
+    inline def setOperatorsVarargs(value: SchemaQueryOperator*): Self = StObject.set(x, "operators", js.Array(value :_*))
     
-    @scala.inline
-    def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+    inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
+    inline def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
     
-    @scala.inline
-    def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

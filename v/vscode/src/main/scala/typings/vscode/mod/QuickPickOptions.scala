@@ -38,49 +38,35 @@ trait QuickPickOptions extends StObject {
 }
 object QuickPickOptions {
   
-  @scala.inline
-  def apply(): QuickPickOptions = {
+  inline def apply(): QuickPickOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QuickPickOptions]
   }
   
-  @scala.inline
-  implicit class QuickPickOptionsMutableBuilder[Self <: QuickPickOptions] (val x: Self) extends AnyVal {
+  extension [Self <: QuickPickOptions](x: Self) {
     
-    @scala.inline
-    def setCanPickMany(value: Boolean): Self = StObject.set(x, "canPickMany", value.asInstanceOf[js.Any])
+    inline def setCanPickMany(value: Boolean): Self = StObject.set(x, "canPickMany", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanPickManyUndefined: Self = StObject.set(x, "canPickMany", js.undefined)
+    inline def setCanPickManyUndefined: Self = StObject.set(x, "canPickMany", js.undefined)
     
-    @scala.inline
-    def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
+    inline def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreFocusOutUndefined: Self = StObject.set(x, "ignoreFocusOut", js.undefined)
+    inline def setIgnoreFocusOutUndefined: Self = StObject.set(x, "ignoreFocusOut", js.undefined)
     
-    @scala.inline
-    def setMatchOnDescription(value: Boolean): Self = StObject.set(x, "matchOnDescription", value.asInstanceOf[js.Any])
+    inline def setMatchOnDescription(value: Boolean): Self = StObject.set(x, "matchOnDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchOnDescriptionUndefined: Self = StObject.set(x, "matchOnDescription", js.undefined)
+    inline def setMatchOnDescriptionUndefined: Self = StObject.set(x, "matchOnDescription", js.undefined)
     
-    @scala.inline
-    def setMatchOnDetail(value: Boolean): Self = StObject.set(x, "matchOnDetail", value.asInstanceOf[js.Any])
+    inline def setMatchOnDetail(value: Boolean): Self = StObject.set(x, "matchOnDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchOnDetailUndefined: Self = StObject.set(x, "matchOnDetail", js.undefined)
+    inline def setMatchOnDetailUndefined: Self = StObject.set(x, "matchOnDetail", js.undefined)
     
-    @scala.inline
-    def setOnDidSelectItem(value: /* item */ QuickPickItem | String => js.Any): Self = StObject.set(x, "onDidSelectItem", js.Any.fromFunction1(value))
+    inline def setOnDidSelectItem(value: /* item */ QuickPickItem | String => js.Any): Self = StObject.set(x, "onDidSelectItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidSelectItemUndefined: Self = StObject.set(x, "onDidSelectItem", js.undefined)
+    inline def setOnDidSelectItemUndefined: Self = StObject.set(x, "onDidSelectItem", js.undefined)
     
-    @scala.inline
-    def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
+    inline def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
+    inline def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
   }
 }

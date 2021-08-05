@@ -11,20 +11,17 @@ object udpDiscoveryStrings {
   sealed trait availabilityChange
     extends StObject
        with ReasonType
-  @scala.inline
-  def availabilityChange: availabilityChange = "availabilityChange".asInstanceOf[availabilityChange]
+  inline def availabilityChange: availabilityChange = "availabilityChange".asInstanceOf[availabilityChange]
   
   @js.native
   sealed trait `new`
     extends StObject
        with ReasonType
-  @scala.inline
-  def `new`: `new` = "new".asInstanceOf[`new`]
+  inline def `new`: `new` = "new".asInstanceOf[`new`]
   
   @js.native
   sealed trait timedOut
     extends StObject
        with ReasonType
-  @scala.inline
-  def timedOut: timedOut = "timedOut".asInstanceOf[timedOut]
+  inline def timedOut: timedOut = "timedOut".asInstanceOf[timedOut]
 }

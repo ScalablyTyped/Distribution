@@ -31,49 +31,35 @@ trait UpdateConnection extends StObject {
 }
 object UpdateConnection {
   
-  @scala.inline
-  def apply(): UpdateConnection = {
+  inline def apply(): UpdateConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateConnection]
   }
   
-  @scala.inline
-  implicit class UpdateConnectionMutableBuilder[Self <: UpdateConnection] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConnection](x: Self) {
     
-    @scala.inline
-    def setEnabled_clients(value: js.Array[String]): Self = StObject.set(x, "enabled_clients", value.asInstanceOf[js.Any])
+    inline def setEnabled_clients(value: js.Array[String]): Self = StObject.set(x, "enabled_clients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled_clientsUndefined: Self = StObject.set(x, "enabled_clients", js.undefined)
+    inline def setEnabled_clientsUndefined: Self = StObject.set(x, "enabled_clients", js.undefined)
     
-    @scala.inline
-    def setEnabled_clientsVarargs(value: String*): Self = StObject.set(x, "enabled_clients", js.Array(value :_*))
+    inline def setEnabled_clientsVarargs(value: String*): Self = StObject.set(x, "enabled_clients", js.Array(value :_*))
     
-    @scala.inline
-    def setIs_domain_connection(value: Boolean): Self = StObject.set(x, "is_domain_connection", value.asInstanceOf[js.Any])
+    inline def setIs_domain_connection(value: Boolean): Self = StObject.set(x, "is_domain_connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_domain_connectionUndefined: Self = StObject.set(x, "is_domain_connection", js.undefined)
+    inline def setIs_domain_connectionUndefined: Self = StObject.set(x, "is_domain_connection", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setRealms(value: js.Array[String]): Self = StObject.set(x, "realms", value.asInstanceOf[js.Any])
+    inline def setRealms(value: js.Array[String]): Self = StObject.set(x, "realms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealmsUndefined: Self = StObject.set(x, "realms", js.undefined)
+    inline def setRealmsUndefined: Self = StObject.set(x, "realms", js.undefined)
     
-    @scala.inline
-    def setRealmsVarargs(value: String*): Self = StObject.set(x, "realms", js.Array(value :_*))
+    inline def setRealmsVarargs(value: String*): Self = StObject.set(x, "realms", js.Array(value :_*))
   }
 }

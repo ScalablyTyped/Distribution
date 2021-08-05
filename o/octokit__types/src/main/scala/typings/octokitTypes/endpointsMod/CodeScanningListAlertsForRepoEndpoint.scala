@@ -25,31 +25,23 @@ trait CodeScanningListAlertsForRepoEndpoint extends StObject {
 }
 object CodeScanningListAlertsForRepoEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): CodeScanningListAlertsForRepoEndpoint = {
+  inline def apply(owner: String, repo: String): CodeScanningListAlertsForRepoEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeScanningListAlertsForRepoEndpoint]
   }
   
-  @scala.inline
-  implicit class CodeScanningListAlertsForRepoEndpointMutableBuilder[Self <: CodeScanningListAlertsForRepoEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: CodeScanningListAlertsForRepoEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: open | dismissed | fixed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: open | dismissed | fixed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

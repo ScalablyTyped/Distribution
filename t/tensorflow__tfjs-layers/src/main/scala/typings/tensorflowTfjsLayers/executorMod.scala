@@ -76,11 +76,11 @@ object executorMod {
       */
     def hasKey(key: SymbolicTensor): Boolean = js.native
     
-    var id2Mask: js.Any = js.native
+    /* private */ var id2Mask: js.Any = js.native
     
-    var id2Value: js.Any = js.native
+    /* private */ var id2Value: js.Any = js.native
     
-    var name2Id: js.Any = js.native
+    /* private */ var name2Id: js.Any = js.native
     
     /**
       * Get all the SymbolicTensor available in this FeedDict.
@@ -88,25 +88,16 @@ object executorMod {
     def names(): js.Array[String] = js.native
   }
   
-  @scala.inline
-  def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
-  @scala.inline
-  def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Unit, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
-  @scala.inline
-  def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Kwargs): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
-  @scala.inline
-  def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Kwargs, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
-  @scala.inline
-  def execute(fetches: SymbolicTensor, feedDict: FeedDict): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
-  @scala.inline
-  def execute(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Unit, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
-  @scala.inline
-  def execute(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Kwargs): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
-  @scala.inline
-  def execute(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Kwargs, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  inline def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  inline def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Unit, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  inline def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Kwargs): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  inline def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Kwargs, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  inline def execute(fetches: SymbolicTensor, feedDict: FeedDict): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  inline def execute(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Unit, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  inline def execute(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Kwargs): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  inline def execute(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Kwargs, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
   
-  @scala.inline
-  def getTopologicalSortAndRecipientCountsForOneFetch(fetch: SymbolicTensor, feedDict: FeedDict): typings.tensorflowTfjsLayers.anon.RecipientMap = (^.asInstanceOf[js.Dynamic].applyDynamic("getTopologicalSortAndRecipientCountsForOneFetch")(fetch.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsLayers.anon.RecipientMap]
+  inline def getTopologicalSortAndRecipientCountsForOneFetch(fetch: SymbolicTensor, feedDict: FeedDict): typings.tensorflowTfjsLayers.anon.RecipientMap = (^.asInstanceOf[js.Dynamic].applyDynamic("getTopologicalSortAndRecipientCountsForOneFetch")(fetch.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsLayers.anon.RecipientMap]
   
   trait ExecutionProbe extends StObject {
     
@@ -126,26 +117,20 @@ object executorMod {
   }
   object ExecutionProbe {
     
-    @scala.inline
-    def apply(): ExecutionProbe = {
+    inline def apply(): ExecutionProbe = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExecutionProbe]
     }
     
-    @scala.inline
-    implicit class ExecutionProbeMutableBuilder[Self <: ExecutionProbe] (val x: Self) extends AnyVal {
+    extension [Self <: ExecutionProbe](x: Self) {
       
-      @scala.inline
-      def setMaxNumTensors(value: Double): Self = StObject.set(x, "maxNumTensors", value.asInstanceOf[js.Any])
+      inline def setMaxNumTensors(value: Double): Self = StObject.set(x, "maxNumTensors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxNumTensorsUndefined: Self = StObject.set(x, "maxNumTensors", js.undefined)
+      inline def setMaxNumTensorsUndefined: Self = StObject.set(x, "maxNumTensors", js.undefined)
       
-      @scala.inline
-      def setMinNumTensors(value: Double): Self = StObject.set(x, "minNumTensors", value.asInstanceOf[js.Any])
+      inline def setMinNumTensors(value: Double): Self = StObject.set(x, "minNumTensors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinNumTensorsUndefined: Self = StObject.set(x, "minNumTensors", js.undefined)
+      inline def setMinNumTensorsUndefined: Self = StObject.set(x, "minNumTensors", js.undefined)
     }
   }
   
@@ -157,20 +142,16 @@ object executorMod {
   }
   object Feed {
     
-    @scala.inline
-    def apply(key: SymbolicTensor, value: Tensor[Rank]): Feed = {
+    inline def apply(key: SymbolicTensor, value: Tensor[Rank]): Feed = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Feed]
     }
     
-    @scala.inline
-    implicit class FeedMutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
+    extension [Self <: Feed](x: Self) {
       
-      @scala.inline
-      def setKey(value: SymbolicTensor): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: SymbolicTensor): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Tensor[Rank]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Tensor[Rank]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

@@ -65,21 +65,16 @@ object domainPermissionsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainPermissions]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainPermissions]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DomainPermissionsState): DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainPermissions]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DomainPermissionsState, opts: CustomResourceOptions): DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainPermissions]
+    inline def get(name: String, id: Input[ID]): DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainPermissions]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainPermissions]
+    inline def get(name: String, id: Input[ID], state: DomainPermissionsState): DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainPermissions]
+    inline def get(name: String, id: Input[ID], state: DomainPermissionsState, opts: CustomResourceOptions): DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainPermissions]
     
     /**
       * Returns true if the given object is an instance of DomainPermissions.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/domainPermissions.DomainPermissions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codeartifact/domainPermissions.DomainPermissions */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/domainPermissions.DomainPermissions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codeartifact/domainPermissions.DomainPermissions */ Boolean]
   }
   
   trait DomainPermissionsArgs extends StObject {
@@ -106,32 +101,24 @@ object domainPermissionsMod {
   }
   object DomainPermissionsArgs {
     
-    @scala.inline
-    def apply(domain: Input[String], policyDocument: Input[String]): DomainPermissionsArgs = {
+    inline def apply(domain: Input[String], policyDocument: Input[String]): DomainPermissionsArgs = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], policyDocument = policyDocument.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainPermissionsArgs]
     }
     
-    @scala.inline
-    implicit class DomainPermissionsArgsMutableBuilder[Self <: DomainPermissionsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DomainPermissionsArgs](x: Self) {
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainOwner(value: Input[String]): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
+      inline def setDomainOwner(value: Input[String]): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
+      inline def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
       
-      @scala.inline
-      def setPolicyDocument(value: Input[String]): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
+      inline def setPolicyDocument(value: Input[String]): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyRevision(value: Input[String]): Self = StObject.set(x, "policyRevision", value.asInstanceOf[js.Any])
+      inline def setPolicyRevision(value: Input[String]): Self = StObject.set(x, "policyRevision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyRevisionUndefined: Self = StObject.set(x, "policyRevision", js.undefined)
+      inline def setPolicyRevisionUndefined: Self = StObject.set(x, "policyRevision", js.undefined)
     }
   }
   
@@ -164,44 +151,32 @@ object domainPermissionsMod {
   }
   object DomainPermissionsState {
     
-    @scala.inline
-    def apply(): DomainPermissionsState = {
+    inline def apply(): DomainPermissionsState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomainPermissionsState]
     }
     
-    @scala.inline
-    implicit class DomainPermissionsStateMutableBuilder[Self <: DomainPermissionsState] (val x: Self) extends AnyVal {
+    extension [Self <: DomainPermissionsState](x: Self) {
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainOwner(value: Input[String]): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
+      inline def setDomainOwner(value: Input[String]): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
+      inline def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setPolicyDocument(value: Input[String]): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
+      inline def setPolicyDocument(value: Input[String]): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyDocumentUndefined: Self = StObject.set(x, "policyDocument", js.undefined)
+      inline def setPolicyDocumentUndefined: Self = StObject.set(x, "policyDocument", js.undefined)
       
-      @scala.inline
-      def setPolicyRevision(value: Input[String]): Self = StObject.set(x, "policyRevision", value.asInstanceOf[js.Any])
+      inline def setPolicyRevision(value: Input[String]): Self = StObject.set(x, "policyRevision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyRevisionUndefined: Self = StObject.set(x, "policyRevision", js.undefined)
+      inline def setPolicyRevisionUndefined: Self = StObject.set(x, "policyRevision", js.undefined)
       
-      @scala.inline
-      def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
+      inline def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
     }
   }
 }

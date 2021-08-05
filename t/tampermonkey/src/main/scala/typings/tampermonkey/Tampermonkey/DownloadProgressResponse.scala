@@ -13,8 +13,7 @@ trait DownloadProgressResponse
 }
 object DownloadProgressResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     done: Double,
     finalUrl: String,
     lengthComputable: Boolean,
@@ -27,10 +26,8 @@ object DownloadProgressResponse {
     __obj.asInstanceOf[DownloadProgressResponse]
   }
   
-  @scala.inline
-  implicit class DownloadProgressResponseMutableBuilder[Self <: DownloadProgressResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadProgressResponse](x: Self) {
     
-    @scala.inline
-    def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
+    inline def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
   }
 }

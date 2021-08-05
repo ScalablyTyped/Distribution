@@ -20,23 +20,18 @@ trait DetailedChooseSpecifier extends StObject {
 }
 object DetailedChooseSpecifier {
   
-  @scala.inline
-  def apply(`class`: Object): DetailedChooseSpecifier = {
+  inline def apply(`class`: Object): DetailedChooseSpecifier = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailedChooseSpecifier]
   }
   
-  @scala.inline
-  implicit class DetailedChooseSpecifierMutableBuilder[Self <: DetailedChooseSpecifier] (val x: Self) extends AnyVal {
+  extension [Self <: DetailedChooseSpecifier](x: Self) {
     
-    @scala.inline
-    def setClass(value: Object): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: Object): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubclasses(value: Boolean): Self = StObject.set(x, "subclasses", value.asInstanceOf[js.Any])
+    inline def setSubclasses(value: Boolean): Self = StObject.set(x, "subclasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubclassesUndefined: Self = StObject.set(x, "subclasses", js.undefined)
+    inline def setSubclassesUndefined: Self = StObject.set(x, "subclasses", js.undefined)
   }
 }

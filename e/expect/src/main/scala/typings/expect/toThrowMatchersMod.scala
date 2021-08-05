@@ -16,8 +16,6 @@ object toThrowMatchersMod {
   @js.native
   val default: MatchersObject = js.native
   
-  @scala.inline
-  def createMatcher(matcherName: String): RawMatcherFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createMatcher")(matcherName.asInstanceOf[js.Any]).asInstanceOf[RawMatcherFn]
-  @scala.inline
-  def createMatcher(matcherName: String, fromPromise: Boolean): RawMatcherFn = (^.asInstanceOf[js.Dynamic].applyDynamic("createMatcher")(matcherName.asInstanceOf[js.Any], fromPromise.asInstanceOf[js.Any])).asInstanceOf[RawMatcherFn]
+  inline def createMatcher(matcherName: String): RawMatcherFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createMatcher")(matcherName.asInstanceOf[js.Any]).asInstanceOf[RawMatcherFn]
+  inline def createMatcher(matcherName: String, fromPromise: Boolean): RawMatcherFn = (^.asInstanceOf[js.Dynamic].applyDynamic("createMatcher")(matcherName.asInstanceOf[js.Any], fromPromise.asInstanceOf[js.Any])).asInstanceOf[RawMatcherFn]
 }

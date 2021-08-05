@@ -10,8 +10,7 @@ trait InclinometerReading
      with IInclinometerReading
 object InclinometerReading {
   
-  @scala.inline
-  def apply(pitchDegrees: Double, rollDegrees: Double, timestamp: Date, yawDegrees: Double): InclinometerReading = {
+  inline def apply(pitchDegrees: Double, rollDegrees: Double, timestamp: Date, yawDegrees: Double): InclinometerReading = {
     val __obj = js.Dynamic.literal(pitchDegrees = pitchDegrees.asInstanceOf[js.Any], rollDegrees = rollDegrees.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], yawDegrees = yawDegrees.asInstanceOf[js.Any])
     __obj.asInstanceOf[InclinometerReading]
   }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilterCondition extends StObject
 object FilterCondition {
   
-  @scala.inline
-  def eq: typings.reactBootstrapTable.reactBootstrapTableStrings.eq = "eq".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.eq]
+  inline def eq: typings.reactBootstrapTable.reactBootstrapTableStrings.eq = "eq".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.eq]
   
-  @scala.inline
-  def like: typings.reactBootstrapTable.reactBootstrapTableStrings.like = "like".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.like]
+  inline def like: typings.reactBootstrapTable.reactBootstrapTableStrings.like = "like".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.like]
 }

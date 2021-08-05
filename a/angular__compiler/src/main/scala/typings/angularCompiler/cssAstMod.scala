@@ -315,10 +315,8 @@ object cssAstMod {
     var tokens: js.Array[CssToken] = js.native
   }
   
-  @scala.inline
-  def mergeTokens(tokens: js.Array[CssToken]): CssToken = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeTokens")(tokens.asInstanceOf[js.Any]).asInstanceOf[CssToken]
-  @scala.inline
-  def mergeTokens(tokens: js.Array[CssToken], separator: String): CssToken = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeTokens")(tokens.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[CssToken]
+  inline def mergeTokens(tokens: js.Array[CssToken]): CssToken = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeTokens")(tokens.asInstanceOf[js.Any]).asInstanceOf[CssToken]
+  inline def mergeTokens(tokens: js.Array[CssToken], separator: String): CssToken = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeTokens")(tokens.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[CssToken]
   
   @js.native
   trait CssAstVisitor extends StObject {

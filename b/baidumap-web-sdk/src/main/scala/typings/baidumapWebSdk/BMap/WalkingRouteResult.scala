@@ -18,8 +18,7 @@ trait WalkingRouteResult extends StObject {
 }
 object WalkingRouteResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     city: String,
     getEnd: () => LocalResultPoi,
     getNumPlans: () => Double,
@@ -30,22 +29,16 @@ object WalkingRouteResult {
     __obj.asInstanceOf[WalkingRouteResult]
   }
   
-  @scala.inline
-  implicit class WalkingRouteResultMutableBuilder[Self <: WalkingRouteResult] (val x: Self) extends AnyVal {
+  extension [Self <: WalkingRouteResult](x: Self) {
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEnd(value: () => LocalResultPoi): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
+    inline def setGetEnd(value: () => LocalResultPoi): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumPlans(value: () => Double): Self = StObject.set(x, "getNumPlans", js.Any.fromFunction0(value))
+    inline def setGetNumPlans(value: () => Double): Self = StObject.set(x, "getNumPlans", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPlan(value: Double => RoutePlan): Self = StObject.set(x, "getPlan", js.Any.fromFunction1(value))
+    inline def setGetPlan(value: Double => RoutePlan): Self = StObject.set(x, "getPlan", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStart(value: () => LocalResultPoi): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
+    inline def setGetStart(value: () => LocalResultPoi): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
   }
 }

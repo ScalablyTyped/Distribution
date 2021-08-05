@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CSSDirection extends StObject
 object CSSDirection {
   
-  @scala.inline
-  def ltr: typings.reactWindow.reactWindowStrings.ltr = "ltr".asInstanceOf[typings.reactWindow.reactWindowStrings.ltr]
+  inline def ltr: typings.reactWindow.reactWindowStrings.ltr = "ltr".asInstanceOf[typings.reactWindow.reactWindowStrings.ltr]
   
-  @scala.inline
-  def rtl: typings.reactWindow.reactWindowStrings.rtl = "rtl".asInstanceOf[typings.reactWindow.reactWindowStrings.rtl]
+  inline def rtl: typings.reactWindow.reactWindowStrings.rtl = "rtl".asInstanceOf[typings.reactWindow.reactWindowStrings.rtl]
 }

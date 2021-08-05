@@ -43,7 +43,7 @@ trait Bar
     * Sets classes and tag according to the context of the page. Possible contexts are header, footer and
     * sub-header.
     */
-  var applyTagAndContextClassFor: js.Any = js.native
+  /* protected */ var applyTagAndContextClassFor: js.Any = js.native
   
   /**
     * Destroys all the contentLeft in the aggregation <code>contentLeft</code>.
@@ -93,7 +93,7 @@ trait Bar
   /**
     * Gets the available Bar contexts.
     */
-  var getContext: js.Any = js.native
+  /* protected */ var getContext: js.Any = js.native
   
   /**
     * Gets current value of property <code>design</code>.Determines the design of the bar. If set to auto,
@@ -114,7 +114,7 @@ trait Bar
   /**
     * Gets the HTML tag of the root element.
     */
-  var getHTMLTag: js.Any = js.native
+  /* protected */ var getHTMLTag: js.Any = js.native
   
   /**
     * Gets current value of property <code>translucent</code>.Indicates whether the Bar is partially
@@ -185,7 +185,7 @@ trait Bar
     * Determines whether the Bar is sensitive to the container context.Implementation of the IBar
     * interface.
     */
-  var isContextSensitive: js.Any = js.native
+  /* protected */ var isContextSensitive: js.Any = js.native
   
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
@@ -274,7 +274,7 @@ trait Bar
   /**
     * Sets the HTML tag of the root element.
     */
-  var setHTMLTag: js.Any = js.native
+  /* protected */ var setHTMLTag: js.Any = js.native
   
   /**
     * Sets a new value for property <code>translucent</code>.Indicates whether the Bar is partially

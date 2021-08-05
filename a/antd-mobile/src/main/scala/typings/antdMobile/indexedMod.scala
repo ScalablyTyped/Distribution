@@ -25,8 +25,7 @@ object indexedMod {
     @JSImport("antd-mobile/lib/list-view/Indexed", "default.defaultProps")
     @js.native
     def defaultProps: ListViewPrefixCls = js.native
-    @scala.inline
-    def defaultProps_=(x: ListViewPrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ListViewPrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

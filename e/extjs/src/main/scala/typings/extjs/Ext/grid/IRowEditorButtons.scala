@@ -10,8 +10,7 @@ trait IRowEditorButtons
      with IContainer
 object IRowEditorButtons {
   
-  @scala.inline
-  def apply(): IRowEditorButtons = {
+  inline def apply(): IRowEditorButtons = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRowEditorButtons]
   }

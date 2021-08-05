@@ -11,16 +11,13 @@ trait Ease extends StObject {
 }
 object Ease {
   
-  @scala.inline
-  def apply(getRatio: Double => Double): Ease = {
+  inline def apply(getRatio: Double => Double): Ease = {
     val __obj = js.Dynamic.literal(getRatio = js.Any.fromFunction1(getRatio))
     __obj.asInstanceOf[Ease]
   }
   
-  @scala.inline
-  implicit class EaseMutableBuilder[Self <: Ease] (val x: Self) extends AnyVal {
+  extension [Self <: Ease](x: Self) {
     
-    @scala.inline
-    def setGetRatio(value: Double => Double): Self = StObject.set(x, "getRatio", js.Any.fromFunction1(value))
+    inline def setGetRatio(value: Double => Double): Self = StObject.set(x, "getRatio", js.Any.fromFunction1(value))
   }
 }

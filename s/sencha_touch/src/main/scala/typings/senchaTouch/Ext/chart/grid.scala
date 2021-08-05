@@ -33,22 +33,18 @@ object grid {
   }
   object IHorizontalGrid {
     
-    @scala.inline
-    def apply(): IHorizontalGrid = {
+    inline def apply(): IHorizontalGrid = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IHorizontalGrid]
     }
     
-    @scala.inline
-    implicit class IHorizontalGridMutableBuilder[Self <: IHorizontalGrid] (val x: Self) extends AnyVal {
+    extension [Self <: IHorizontalGrid](x: Self) {
       
-      @scala.inline
-      def setRender(
+      inline def setRender(
         value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
   
@@ -71,26 +67,20 @@ object grid {
   }
   object IRadialGrid {
     
-    @scala.inline
-    def apply(): IRadialGrid = {
+    inline def apply(): IRadialGrid = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRadialGrid]
     }
     
-    @scala.inline
-    implicit class IRadialGridMutableBuilder[Self <: IRadialGrid] (val x: Self) extends AnyVal {
+    extension [Self <: IRadialGrid](x: Self) {
       
-      @scala.inline
-      def setRender(value: () => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+      inline def setRender(value: () => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setUpdatePath(value: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
+      inline def setUpdatePath(value: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
+      inline def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
     }
   }
   
@@ -116,22 +106,18 @@ object grid {
   }
   object IVerticalGrid {
     
-    @scala.inline
-    def apply(): IVerticalGrid = {
+    inline def apply(): IVerticalGrid = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IVerticalGrid]
     }
     
-    @scala.inline
-    implicit class IVerticalGridMutableBuilder[Self <: IVerticalGrid] (val x: Self) extends AnyVal {
+    extension [Self <: IVerticalGrid](x: Self) {
       
-      @scala.inline
-      def setRender(
+      inline def setRender(
         value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
 }

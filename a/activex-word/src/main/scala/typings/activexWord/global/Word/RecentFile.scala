@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.RecentFile")
 @js.native
-class RecentFile protected ()
+/* private */ class RecentFile ()
   extends StObject
      with typings.activexWord.Word.RecentFile {
   
@@ -37,7 +37,7 @@ class RecentFile protected ()
   /* CompleteClass */
   var ReadOnly: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.RecentFile_typekey")
   var WordDotRecentFile_typekey: typings.activexWord.Word.RecentFile = js.native
 }

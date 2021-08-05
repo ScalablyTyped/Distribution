@@ -13,16 +13,13 @@ trait MediaCaptureFocusChangedEventArgs extends StObject {
 }
 object MediaCaptureFocusChangedEventArgs {
   
-  @scala.inline
-  def apply(focusState: MediaCaptureFocusState): MediaCaptureFocusChangedEventArgs = {
+  inline def apply(focusState: MediaCaptureFocusState): MediaCaptureFocusChangedEventArgs = {
     val __obj = js.Dynamic.literal(focusState = focusState.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaCaptureFocusChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class MediaCaptureFocusChangedEventArgsMutableBuilder[Self <: MediaCaptureFocusChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MediaCaptureFocusChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setFocusState(value: MediaCaptureFocusState): Self = StObject.set(x, "focusState", value.asInstanceOf[js.Any])
+    inline def setFocusState(value: MediaCaptureFocusState): Self = StObject.set(x, "focusState", value.asInstanceOf[js.Any])
   }
 }

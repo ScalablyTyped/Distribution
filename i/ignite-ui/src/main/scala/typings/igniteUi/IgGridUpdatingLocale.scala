@@ -62,61 +62,43 @@ trait IgGridUpdatingLocale
 }
 object IgGridUpdatingLocale {
   
-  @scala.inline
-  def apply(): IgGridUpdatingLocale = {
+  inline def apply(): IgGridUpdatingLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridUpdatingLocale]
   }
   
-  @scala.inline
-  implicit class IgGridUpdatingLocaleMutableBuilder[Self <: IgGridUpdatingLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridUpdatingLocale](x: Self) {
     
-    @scala.inline
-    def setAddRowLabel(value: String): Self = StObject.set(x, "addRowLabel", value.asInstanceOf[js.Any])
+    inline def setAddRowLabel(value: String): Self = StObject.set(x, "addRowLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddRowLabelUndefined: Self = StObject.set(x, "addRowLabel", js.undefined)
+    inline def setAddRowLabelUndefined: Self = StObject.set(x, "addRowLabel", js.undefined)
     
-    @scala.inline
-    def setAddRowTooltip(value: String): Self = StObject.set(x, "addRowTooltip", value.asInstanceOf[js.Any])
+    inline def setAddRowTooltip(value: String): Self = StObject.set(x, "addRowTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddRowTooltipUndefined: Self = StObject.set(x, "addRowTooltip", js.undefined)
+    inline def setAddRowTooltipUndefined: Self = StObject.set(x, "addRowTooltip", js.undefined)
     
-    @scala.inline
-    def setCancelLabel(value: String): Self = StObject.set(x, "cancelLabel", value.asInstanceOf[js.Any])
+    inline def setCancelLabel(value: String): Self = StObject.set(x, "cancelLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelLabelUndefined: Self = StObject.set(x, "cancelLabel", js.undefined)
+    inline def setCancelLabelUndefined: Self = StObject.set(x, "cancelLabel", js.undefined)
     
-    @scala.inline
-    def setCancelTooltip(value: String): Self = StObject.set(x, "cancelTooltip", value.asInstanceOf[js.Any])
+    inline def setCancelTooltip(value: String): Self = StObject.set(x, "cancelTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelTooltipUndefined: Self = StObject.set(x, "cancelTooltip", js.undefined)
+    inline def setCancelTooltipUndefined: Self = StObject.set(x, "cancelTooltip", js.undefined)
     
-    @scala.inline
-    def setDeleteRowLabel(value: String): Self = StObject.set(x, "deleteRowLabel", value.asInstanceOf[js.Any])
+    inline def setDeleteRowLabel(value: String): Self = StObject.set(x, "deleteRowLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteRowLabelUndefined: Self = StObject.set(x, "deleteRowLabel", js.undefined)
+    inline def setDeleteRowLabelUndefined: Self = StObject.set(x, "deleteRowLabel", js.undefined)
     
-    @scala.inline
-    def setDeleteRowTooltip(value: String): Self = StObject.set(x, "deleteRowTooltip", value.asInstanceOf[js.Any])
+    inline def setDeleteRowTooltip(value: String): Self = StObject.set(x, "deleteRowTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteRowTooltipUndefined: Self = StObject.set(x, "deleteRowTooltip", js.undefined)
+    inline def setDeleteRowTooltipUndefined: Self = StObject.set(x, "deleteRowTooltip", js.undefined)
     
-    @scala.inline
-    def setDoneLabel(value: String): Self = StObject.set(x, "doneLabel", value.asInstanceOf[js.Any])
+    inline def setDoneLabel(value: String): Self = StObject.set(x, "doneLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoneLabelUndefined: Self = StObject.set(x, "doneLabel", js.undefined)
+    inline def setDoneLabelUndefined: Self = StObject.set(x, "doneLabel", js.undefined)
     
-    @scala.inline
-    def setDoneTooltip(value: String): Self = StObject.set(x, "doneTooltip", value.asInstanceOf[js.Any])
+    inline def setDoneTooltip(value: String): Self = StObject.set(x, "doneTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoneTooltipUndefined: Self = StObject.set(x, "doneTooltip", js.undefined)
+    inline def setDoneTooltipUndefined: Self = StObject.set(x, "doneTooltip", js.undefined)
   }
 }

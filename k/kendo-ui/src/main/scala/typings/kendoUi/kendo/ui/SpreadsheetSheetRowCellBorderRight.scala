@@ -12,25 +12,19 @@ trait SpreadsheetSheetRowCellBorderRight extends StObject {
 }
 object SpreadsheetSheetRowCellBorderRight {
   
-  @scala.inline
-  def apply(): SpreadsheetSheetRowCellBorderRight = {
+  inline def apply(): SpreadsheetSheetRowCellBorderRight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpreadsheetSheetRowCellBorderRight]
   }
   
-  @scala.inline
-  implicit class SpreadsheetSheetRowCellBorderRightMutableBuilder[Self <: SpreadsheetSheetRowCellBorderRight] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetSheetRowCellBorderRight](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

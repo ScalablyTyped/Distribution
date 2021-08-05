@@ -16,13 +16,12 @@ trait OMathScrSub extends StObject {
   
   val Sub: OMath
   
-  @JSName("Word.OMathScrSub_typekey")
+  /* private */ @JSName("Word.OMathScrSub_typekey")
   var WordDotOMathScrSub_typekey: OMathScrSub
 }
 object OMathScrSub {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     E: OMath,
@@ -35,25 +34,18 @@ object OMathScrSub {
     __obj.asInstanceOf[OMathScrSub]
   }
   
-  @scala.inline
-  implicit class OMathScrSubMutableBuilder[Self <: OMathScrSub] (val x: Self) extends AnyVal {
+  extension [Self <: OMathScrSub](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+    inline def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSub(value: OMath): Self = StObject.set(x, "Sub", value.asInstanceOf[js.Any])
+    inline def setSub(value: OMath): Self = StObject.set(x, "Sub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOMathScrSub_typekey(value: OMathScrSub): Self = StObject.set(x, "Word.OMathScrSub_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathScrSub_typekey(value: OMathScrSub): Self = StObject.set(x, "Word.OMathScrSub_typekey", value.asInstanceOf[js.Any])
   }
 }

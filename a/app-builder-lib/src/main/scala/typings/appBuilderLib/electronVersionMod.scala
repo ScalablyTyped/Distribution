@@ -13,20 +13,14 @@ object electronVersionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getElectronPackage(projectDir: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElectronPackage")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def getElectronPackage(projectDir: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElectronPackage")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def getElectronVersion(projectDir: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElectronVersion")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def getElectronVersion(projectDir: String, config: Unit, projectMetadata: MetadataValue): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElectronVersion")(projectDir.asInstanceOf[js.Any], config.asInstanceOf[js.Any], projectMetadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def getElectronVersion(projectDir: String, config: Configuration): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElectronVersion")(projectDir.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def getElectronVersion(projectDir: String, config: Configuration, projectMetadata: MetadataValue): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElectronVersion")(projectDir.asInstanceOf[js.Any], config.asInstanceOf[js.Any], projectMetadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getElectronVersion(projectDir: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElectronVersion")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getElectronVersion(projectDir: String, config: Unit, projectMetadata: MetadataValue): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElectronVersion")(projectDir.asInstanceOf[js.Any], config.asInstanceOf[js.Any], projectMetadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getElectronVersion(projectDir: String, config: Configuration): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElectronVersion")(projectDir.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getElectronVersion(projectDir: String, config: Configuration, projectMetadata: MetadataValue): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElectronVersion")(projectDir.asInstanceOf[js.Any], config.asInstanceOf[js.Any], projectMetadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getElectronVersionFromInstalled(projectDir: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElectronVersionFromInstalled")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def getElectronVersionFromInstalled(projectDir: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElectronVersionFromInstalled")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
   type MetadataValue = Lazy[StringDictionary[js.Any] | Null]
 }

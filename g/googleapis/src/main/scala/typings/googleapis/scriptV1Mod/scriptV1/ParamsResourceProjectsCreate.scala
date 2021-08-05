@@ -24,25 +24,19 @@ trait ParamsResourceProjectsCreate
 }
 object ParamsResourceProjectsCreate {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsCreate = {
+  inline def apply(): ParamsResourceProjectsCreate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsCreate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsCreateMutableBuilder[Self <: ParamsResourceProjectsCreate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsCreate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaCreateProjectRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaCreateProjectRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

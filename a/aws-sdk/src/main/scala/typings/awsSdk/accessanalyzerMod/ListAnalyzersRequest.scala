@@ -23,31 +23,23 @@ trait ListAnalyzersRequest extends StObject {
 }
 object ListAnalyzersRequest {
   
-  @scala.inline
-  def apply(): ListAnalyzersRequest = {
+  inline def apply(): ListAnalyzersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAnalyzersRequest]
   }
   
-  @scala.inline
-  implicit class ListAnalyzersRequestMutableBuilder[Self <: ListAnalyzersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAnalyzersRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

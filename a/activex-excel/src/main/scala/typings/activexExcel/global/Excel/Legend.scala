@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Legend")
 @js.native
-class Legend protected ()
+/* private */ class Legend ()
   extends StObject
      with typings.activexExcel.Excel.Legend {
   
@@ -31,7 +31,7 @@ class Legend protected ()
   /* CompleteClass */
   override def Delete(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Legend_typekey")
   var ExcelDotLegend_typekey: typings.activexExcel.Excel.Legend = js.native
   

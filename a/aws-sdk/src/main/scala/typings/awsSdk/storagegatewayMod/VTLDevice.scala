@@ -33,43 +33,31 @@ trait VTLDevice extends StObject {
 }
 object VTLDevice {
   
-  @scala.inline
-  def apply(): VTLDevice = {
+  inline def apply(): VTLDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VTLDevice]
   }
   
-  @scala.inline
-  implicit class VTLDeviceMutableBuilder[Self <: VTLDevice] (val x: Self) extends AnyVal {
+  extension [Self <: VTLDevice](x: Self) {
     
-    @scala.inline
-    def setDeviceiSCSIAttributes(value: DeviceiSCSIAttributes): Self = StObject.set(x, "DeviceiSCSIAttributes", value.asInstanceOf[js.Any])
+    inline def setDeviceiSCSIAttributes(value: DeviceiSCSIAttributes): Self = StObject.set(x, "DeviceiSCSIAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceiSCSIAttributesUndefined: Self = StObject.set(x, "DeviceiSCSIAttributes", js.undefined)
+    inline def setDeviceiSCSIAttributesUndefined: Self = StObject.set(x, "DeviceiSCSIAttributes", js.undefined)
     
-    @scala.inline
-    def setVTLDeviceARN(value: VTLDeviceARN): Self = StObject.set(x, "VTLDeviceARN", value.asInstanceOf[js.Any])
+    inline def setVTLDeviceARN(value: VTLDeviceARN): Self = StObject.set(x, "VTLDeviceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVTLDeviceARNUndefined: Self = StObject.set(x, "VTLDeviceARN", js.undefined)
+    inline def setVTLDeviceARNUndefined: Self = StObject.set(x, "VTLDeviceARN", js.undefined)
     
-    @scala.inline
-    def setVTLDeviceProductIdentifier(value: VTLDeviceProductIdentifier): Self = StObject.set(x, "VTLDeviceProductIdentifier", value.asInstanceOf[js.Any])
+    inline def setVTLDeviceProductIdentifier(value: VTLDeviceProductIdentifier): Self = StObject.set(x, "VTLDeviceProductIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVTLDeviceProductIdentifierUndefined: Self = StObject.set(x, "VTLDeviceProductIdentifier", js.undefined)
+    inline def setVTLDeviceProductIdentifierUndefined: Self = StObject.set(x, "VTLDeviceProductIdentifier", js.undefined)
     
-    @scala.inline
-    def setVTLDeviceType(value: VTLDeviceType): Self = StObject.set(x, "VTLDeviceType", value.asInstanceOf[js.Any])
+    inline def setVTLDeviceType(value: VTLDeviceType): Self = StObject.set(x, "VTLDeviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVTLDeviceTypeUndefined: Self = StObject.set(x, "VTLDeviceType", js.undefined)
+    inline def setVTLDeviceTypeUndefined: Self = StObject.set(x, "VTLDeviceType", js.undefined)
     
-    @scala.inline
-    def setVTLDeviceVendor(value: VTLDeviceVendor): Self = StObject.set(x, "VTLDeviceVendor", value.asInstanceOf[js.Any])
+    inline def setVTLDeviceVendor(value: VTLDeviceVendor): Self = StObject.set(x, "VTLDeviceVendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVTLDeviceVendorUndefined: Self = StObject.set(x, "VTLDeviceVendor", js.undefined)
+    inline def setVTLDeviceVendorUndefined: Self = StObject.set(x, "VTLDeviceVendor", js.undefined)
   }
 }

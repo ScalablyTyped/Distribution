@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Literal extends StObject
 object Literal {
   
-  @scala.inline
-  def NumericLiteral(value: Double): typings.esquery.mod.NumericLiteral = {
+  inline def NumericLiteral(value: Double): typings.esquery.mod.NumericLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("literal")
     __obj.asInstanceOf[typings.esquery.mod.NumericLiteral]
   }
   
-  @scala.inline
-  def StringLiteral(value: String): typings.esquery.mod.StringLiteral = {
+  inline def StringLiteral(value: String): typings.esquery.mod.StringLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("literal")
     __obj.asInstanceOf[typings.esquery.mod.StringLiteral]

@@ -16,28 +16,21 @@ trait OmaSettingStringXml
 }
 object OmaSettingStringXml {
   
-  @scala.inline
-  def apply(): OmaSettingStringXml = {
+  inline def apply(): OmaSettingStringXml = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OmaSettingStringXml]
   }
   
-  @scala.inline
-  implicit class OmaSettingStringXmlMutableBuilder[Self <: OmaSettingStringXml] (val x: Self) extends AnyVal {
+  extension [Self <: OmaSettingStringXml](x: Self) {
     
-    @scala.inline
-    def setFileName(value: NullableOption[String]): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: NullableOption[String]): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameNull: Self = StObject.set(x, "fileName", null)
+    inline def setFileNameNull: Self = StObject.set(x, "fileName", null)
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

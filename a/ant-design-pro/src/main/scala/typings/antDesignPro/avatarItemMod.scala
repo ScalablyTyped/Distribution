@@ -32,41 +32,30 @@ object avatarItemMod {
   }
   object AvatarItemProps {
     
-    @scala.inline
-    def apply(src: String): AvatarItemProps = {
+    inline def apply(src: String): AvatarItemProps = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[AvatarItemProps]
     }
     
-    @scala.inline
-    implicit class AvatarItemPropsMutableBuilder[Self <: AvatarItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: AvatarItemProps](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTips(value: ReactNode): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
+      inline def setTips(value: ReactNode): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTipsUndefined: Self = StObject.set(x, "tips", js.undefined)
+      inline def setTipsUndefined: Self = StObject.set(x, "tips", js.undefined)
     }
   }
   

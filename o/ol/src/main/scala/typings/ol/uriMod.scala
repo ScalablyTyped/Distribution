@@ -10,6 +10,5 @@ object uriMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def appendParams(uri: String, params: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendParams")(uri.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def appendParams(uri: String, params: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendParams")(uri.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
 }

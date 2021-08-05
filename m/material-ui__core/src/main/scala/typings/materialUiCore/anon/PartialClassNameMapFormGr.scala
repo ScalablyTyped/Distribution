@@ -13,25 +13,19 @@ trait PartialClassNameMapFormGr extends StObject {
 }
 object PartialClassNameMapFormGr {
   
-  @scala.inline
-  def apply(): PartialClassNameMapFormGr = {
+  inline def apply(): PartialClassNameMapFormGr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapFormGr]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapFormGrMutableBuilder[Self <: PartialClassNameMapFormGr] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapFormGr](x: Self) {
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoBlogCategorySupport extends StObject
 object MsoBlogCategorySupport {
   
-  @scala.inline
-  def msoBlogMultipleCategories: `2` = 2.asInstanceOf[`2`]
+  inline def msoBlogMultipleCategories: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoBlogNoCategories: `0` = 0.asInstanceOf[`0`]
+  inline def msoBlogNoCategories: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoBlogOneCategory: `1` = 1.asInstanceOf[`1`]
+  inline def msoBlogOneCategory: `1` = 1.asInstanceOf[`1`]
 }

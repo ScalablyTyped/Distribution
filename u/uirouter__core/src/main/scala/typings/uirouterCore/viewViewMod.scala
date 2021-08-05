@@ -20,24 +20,24 @@ object viewViewMod {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
     
-    /** @internal */ var _listeners: js.Any = js.native
+    /** @internal */ /* private */ var _listeners: js.Any = js.native
     
     /** @internal */
     var _pluginapi: ViewServicePluginAPI = js.native
     
-    /** @internal */ var _rootContext: js.Any = js.native
+    /** @internal */ /* private */ var _rootContext: js.Any = js.native
     
     /** @internal */
-    var _rootViewContext: js.Any = js.native
+    /* private */ var _rootViewContext: js.Any = js.native
     
-    /** @internal */ var _uiViews: js.Any = js.native
+    /** @internal */ /* private */ var _uiViews: js.Any = js.native
     
-    /** @internal */ var _viewConfigFactories: js.Any = js.native
+    /** @internal */ /* private */ var _viewConfigFactories: js.Any = js.native
     
     /** @internal */
-    var _viewConfigFactory: js.Any = js.native
+    /* private */ var _viewConfigFactory: js.Any = js.native
     
-    /** @internal */ var _viewConfigs: js.Any = js.native
+    /** @internal */ /* private */ var _viewConfigs: js.Any = js.native
     
     def activateViewConfig(viewConfig: ViewConfig): Unit = js.native
     
@@ -84,7 +84,7 @@ object viewViewMod {
       */
     def registerUIView(uiView: ActiveUIView): js.Function0[Unit] = js.native
     
-    var router: js.Any = js.native
+    /* private */ var router: js.Any = js.native
     
     def sync(): Unit = js.native
   }
@@ -152,8 +152,7 @@ object viewViewMod {
       *
       * @internal
       */
-    @scala.inline
-    def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(uiViewsByFqn.asInstanceOf[js.Any], uiView.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* viewConfig */ ViewConfig, Boolean]]
+    inline def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(uiViewsByFqn.asInstanceOf[js.Any], uiView.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* viewConfig */ ViewConfig, Boolean]]
     
     /**
       * Normalizes a view's name from a state.views configuration block.
@@ -166,10 +165,8 @@ object viewViewMod {
       *
       * @returns the normalized uiViewName and uiViewContextAnchor that the view targets
       */
-    @scala.inline
-    def normalizeUIViewTarget(context: ViewContext): UiViewContextAnchor = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUIViewTarget")(context.asInstanceOf[js.Any]).asInstanceOf[UiViewContextAnchor]
-    @scala.inline
-    def normalizeUIViewTarget(context: ViewContext, rawViewName: String): UiViewContextAnchor = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUIViewTarget")(context.asInstanceOf[js.Any], rawViewName.asInstanceOf[js.Any])).asInstanceOf[UiViewContextAnchor]
+    inline def normalizeUIViewTarget(context: ViewContext): UiViewContextAnchor = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUIViewTarget")(context.asInstanceOf[js.Any]).asInstanceOf[UiViewContextAnchor]
+    inline def normalizeUIViewTarget(context: ViewContext, rawViewName: String): UiViewContextAnchor = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUIViewTarget")(context.asInstanceOf[js.Any], rawViewName.asInstanceOf[js.Any])).asInstanceOf[UiViewContextAnchor]
   }
   
   type ViewConfigFactory = js.Function2[
@@ -206,20 +203,16 @@ object viewViewMod {
   }
   object ViewTuple {
     
-    @scala.inline
-    def apply(uiView: ActiveUIView, viewConfig: ViewConfig): ViewTuple = {
+    inline def apply(uiView: ActiveUIView, viewConfig: ViewConfig): ViewTuple = {
       val __obj = js.Dynamic.literal(uiView = uiView.asInstanceOf[js.Any], viewConfig = viewConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewTuple]
     }
     
-    @scala.inline
-    implicit class ViewTupleMutableBuilder[Self <: ViewTuple] (val x: Self) extends AnyVal {
+    extension [Self <: ViewTuple](x: Self) {
       
-      @scala.inline
-      def setUiView(value: ActiveUIView): Self = StObject.set(x, "uiView", value.asInstanceOf[js.Any])
+      inline def setUiView(value: ActiveUIView): Self = StObject.set(x, "uiView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewConfig(value: ViewConfig): Self = StObject.set(x, "viewConfig", value.asInstanceOf[js.Any])
+      inline def setViewConfig(value: ViewConfig): Self = StObject.set(x, "viewConfig", value.asInstanceOf[js.Any])
     }
   }
 }

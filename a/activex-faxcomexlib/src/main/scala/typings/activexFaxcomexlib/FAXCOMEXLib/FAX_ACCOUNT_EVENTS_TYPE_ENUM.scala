@@ -22,21 +22,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FAX_ACCOUNT_EVENTS_TYPE_ENUM extends StObject
 object FAX_ACCOUNT_EVENTS_TYPE_ENUM {
   
-  @scala.inline
-  def faetFXSSVC_ENDED: `16` = 16.asInstanceOf[`16`]
+  inline def faetFXSSVC_ENDED: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def faetIN_ARCHIVE: `4` = 4.asInstanceOf[`4`]
+  inline def faetIN_ARCHIVE: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def faetIN_QUEUE: `1` = 1.asInstanceOf[`1`]
+  inline def faetIN_QUEUE: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def faetNONE: `0` = 0.asInstanceOf[`0`]
+  inline def faetNONE: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def faetOUT_ARCHIVE: `8` = 8.asInstanceOf[`8`]
+  inline def faetOUT_ARCHIVE: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def faetOUT_QUEUE: `2` = 2.asInstanceOf[`2`]
+  inline def faetOUT_QUEUE: `2` = 2.asInstanceOf[`2`]
 }

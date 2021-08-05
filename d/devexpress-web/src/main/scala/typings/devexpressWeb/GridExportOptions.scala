@@ -23,19 +23,15 @@ trait GridExportOptions extends StObject {
 }
 object GridExportOptions {
   
-  @scala.inline
-  def apply(FitToPageWidth: Boolean, PrintHeadersOnEveryPage: Boolean): GridExportOptions = {
+  inline def apply(FitToPageWidth: Boolean, PrintHeadersOnEveryPage: Boolean): GridExportOptions = {
     val __obj = js.Dynamic.literal(FitToPageWidth = FitToPageWidth.asInstanceOf[js.Any], PrintHeadersOnEveryPage = PrintHeadersOnEveryPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridExportOptions]
   }
   
-  @scala.inline
-  implicit class GridExportOptionsMutableBuilder[Self <: GridExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GridExportOptions](x: Self) {
     
-    @scala.inline
-    def setFitToPageWidth(value: Boolean): Self = StObject.set(x, "FitToPageWidth", value.asInstanceOf[js.Any])
+    inline def setFitToPageWidth(value: Boolean): Self = StObject.set(x, "FitToPageWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintHeadersOnEveryPage(value: Boolean): Self = StObject.set(x, "PrintHeadersOnEveryPage", value.asInstanceOf[js.Any])
+    inline def setPrintHeadersOnEveryPage(value: Boolean): Self = StObject.set(x, "PrintHeadersOnEveryPage", value.asInstanceOf[js.Any])
   }
 }

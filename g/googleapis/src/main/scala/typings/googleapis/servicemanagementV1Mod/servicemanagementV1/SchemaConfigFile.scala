@@ -26,31 +26,23 @@ trait SchemaConfigFile extends StObject {
 }
 object SchemaConfigFile {
   
-  @scala.inline
-  def apply(): SchemaConfigFile = {
+  inline def apply(): SchemaConfigFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConfigFile]
   }
   
-  @scala.inline
-  implicit class SchemaConfigFileMutableBuilder[Self <: SchemaConfigFile] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConfigFile](x: Self) {
     
-    @scala.inline
-    def setFileContents(value: String): Self = StObject.set(x, "fileContents", value.asInstanceOf[js.Any])
+    inline def setFileContents(value: String): Self = StObject.set(x, "fileContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileContentsUndefined: Self = StObject.set(x, "fileContents", js.undefined)
+    inline def setFileContentsUndefined: Self = StObject.set(x, "fileContents", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
-    @scala.inline
-    def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+    inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
   }
 }

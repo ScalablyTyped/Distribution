@@ -14,8 +14,7 @@ trait ISyntaxList
 }
 object ISyntaxList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
     collectTextElements: js.Array[String] => Unit,
@@ -42,13 +41,10 @@ object ISyntaxList {
     __obj.asInstanceOf[ISyntaxList]
   }
   
-  @scala.inline
-  implicit class ISyntaxListMutableBuilder[Self <: ISyntaxList] (val x: Self) extends AnyVal {
+  extension [Self <: ISyntaxList](x: Self) {
     
-    @scala.inline
-    def setInsertChildrenInto(value: (js.Array[ISyntaxElement], Double) => Unit): Self = StObject.set(x, "insertChildrenInto", js.Any.fromFunction2(value))
+    inline def setInsertChildrenInto(value: (js.Array[ISyntaxElement], Double) => Unit): Self = StObject.set(x, "insertChildrenInto", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToArray(value: () => js.Array[ISyntaxNodeOrToken]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+    inline def setToArray(value: () => js.Array[ISyntaxNodeOrToken]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
   }
 }

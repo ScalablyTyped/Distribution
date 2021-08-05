@@ -14,69 +14,59 @@ object reactGoogleRecaptchaStrings {
   sealed trait audio
     extends StObject
        with Type
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
+  inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
   sealed trait bottomleft
     extends StObject
        with Badge
-  @scala.inline
-  def bottomleft: bottomleft = "bottomleft".asInstanceOf[bottomleft]
+  inline def bottomleft: bottomleft = "bottomleft".asInstanceOf[bottomleft]
   
   @js.native
   sealed trait bottomright
     extends StObject
        with Badge
-  @scala.inline
-  def bottomright: bottomright = "bottomright".asInstanceOf[bottomright]
+  inline def bottomright: bottomright = "bottomright".asInstanceOf[bottomright]
   
   @js.native
   sealed trait compact
     extends StObject
        with Size
-  @scala.inline
-  def compact: compact = "compact".asInstanceOf[compact]
+  inline def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
   sealed trait dark
     extends StObject
        with Theme
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
   sealed trait image
     extends StObject
        with Type
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
+  inline def image: image = "image".asInstanceOf[image]
   
   @js.native
   sealed trait `inline`
     extends StObject
        with Badge
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
   sealed trait invisible
     extends StObject
        with Size
-  @scala.inline
-  def invisible: invisible = "invisible".asInstanceOf[invisible]
+  inline def invisible: invisible = "invisible".asInstanceOf[invisible]
   
   @js.native
   sealed trait light
     extends StObject
        with Theme
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
+  inline def light: light = "light".asInstanceOf[light]
   
   @js.native
   sealed trait normal
     extends StObject
        with Size
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
+  inline def normal: normal = "normal".asInstanceOf[normal]
 }

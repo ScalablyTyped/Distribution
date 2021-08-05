@@ -27,8 +27,7 @@ trait MobileBroadbandUiccAppRecordDetailsResult extends StObject {
 }
 object MobileBroadbandUiccAppRecordDetailsResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: UiccAppRecordKind,
     readAccessCondition: UiccAccessCondition,
     recordCount: Double,
@@ -40,25 +39,18 @@ object MobileBroadbandUiccAppRecordDetailsResult {
     __obj.asInstanceOf[MobileBroadbandUiccAppRecordDetailsResult]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandUiccAppRecordDetailsResultMutableBuilder[Self <: MobileBroadbandUiccAppRecordDetailsResult] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandUiccAppRecordDetailsResult](x: Self) {
     
-    @scala.inline
-    def setKind(value: UiccAppRecordKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: UiccAppRecordKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadAccessCondition(value: UiccAccessCondition): Self = StObject.set(x, "readAccessCondition", value.asInstanceOf[js.Any])
+    inline def setReadAccessCondition(value: UiccAccessCondition): Self = StObject.set(x, "readAccessCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordCount(value: Double): Self = StObject.set(x, "recordCount", value.asInstanceOf[js.Any])
+    inline def setRecordCount(value: Double): Self = StObject.set(x, "recordCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordSize(value: Double): Self = StObject.set(x, "recordSize", value.asInstanceOf[js.Any])
+    inline def setRecordSize(value: Double): Self = StObject.set(x, "recordSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: MobileBroadbandUiccAppOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MobileBroadbandUiccAppOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteAccessCondition(value: UiccAccessCondition): Self = StObject.set(x, "writeAccessCondition", value.asInstanceOf[js.Any])
+    inline def setWriteAccessCondition(value: UiccAccessCondition): Self = StObject.set(x, "writeAccessCondition", value.asInstanceOf[js.Any])
   }
 }

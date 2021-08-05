@@ -13,16 +13,13 @@ trait EdgeDefinition
 }
 object EdgeDefinition {
   
-  @scala.inline
-  def apply(data: EdgeDataDefinition): EdgeDefinition = {
+  inline def apply(data: EdgeDataDefinition): EdgeDefinition = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeDefinition]
   }
   
-  @scala.inline
-  implicit class EdgeDefinitionMutableBuilder[Self <: EdgeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: EdgeDefinition](x: Self) {
     
-    @scala.inline
-    def setData(value: EdgeDataDefinition): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: EdgeDataDefinition): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

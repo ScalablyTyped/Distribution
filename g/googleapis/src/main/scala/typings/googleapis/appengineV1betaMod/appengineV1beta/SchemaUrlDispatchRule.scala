@@ -31,31 +31,23 @@ trait SchemaUrlDispatchRule extends StObject {
 }
 object SchemaUrlDispatchRule {
   
-  @scala.inline
-  def apply(): SchemaUrlDispatchRule = {
+  inline def apply(): SchemaUrlDispatchRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUrlDispatchRule]
   }
   
-  @scala.inline
-  implicit class SchemaUrlDispatchRuleMutableBuilder[Self <: SchemaUrlDispatchRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUrlDispatchRule](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

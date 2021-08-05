@@ -20,25 +20,19 @@ trait GitListMatchingRefsRequestOptions extends StObject {
 }
 object GitListMatchingRefsRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): GitListMatchingRefsRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): GitListMatchingRefsRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/git/matching-refs/:ref")
     __obj.asInstanceOf[GitListMatchingRefsRequestOptions]
   }
   
-  @scala.inline
-  implicit class GitListMatchingRefsRequestOptionsMutableBuilder[Self <: GitListMatchingRefsRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GitListMatchingRefsRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: `SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: `SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

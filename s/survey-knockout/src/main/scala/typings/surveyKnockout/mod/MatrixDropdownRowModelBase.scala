@@ -22,7 +22,7 @@ class MatrixDropdownRowModelBase protected ()
   
   /* protected */ def createCell(column: MatrixDropdownColumn): MatrixDropdownCell = js.native
   
-  var data: IMatrixDropdownData = js.native
+  /* protected */ var data: IMatrixDropdownData = js.native
   
   val detailPanel: PanelModel = js.native
   
@@ -72,7 +72,7 @@ class MatrixDropdownRowModelBase protected ()
   
   val isEmpty: Boolean = js.native
   
-  var isSettingValue: Boolean = js.native
+  /* protected */ var isSettingValue: Boolean = js.native
   
   def locStrsChanged(): Unit = js.native
   
@@ -91,7 +91,7 @@ class MatrixDropdownRowModelBase protected ()
   
   val questions: js.Array[Question] = js.native
   
-  val rowIndex: Double = js.native
+  /* protected */ val rowIndex: Double = js.native
   
   val rowName: js.Any = js.native
   
@@ -119,24 +119,20 @@ object MatrixDropdownRowModelBase {
   @JSImport("survey-knockout", "MatrixDropdownRowModelBase.IndexVariableName")
   @js.native
   def IndexVariableName: String = js.native
-  @scala.inline
-  def IndexVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndexVariableName")(x.asInstanceOf[js.Any])
+  inline def IndexVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndexVariableName")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "MatrixDropdownRowModelBase.OwnerVariableName")
   @js.native
   def OwnerVariableName: String = js.native
-  @scala.inline
-  def OwnerVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OwnerVariableName")(x.asInstanceOf[js.Any])
+  inline def OwnerVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OwnerVariableName")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "MatrixDropdownRowModelBase.RowValueVariableName")
   @js.native
   def RowValueVariableName: String = js.native
-  @scala.inline
-  def RowValueVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RowValueVariableName")(x.asInstanceOf[js.Any])
+  inline def RowValueVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RowValueVariableName")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "MatrixDropdownRowModelBase.RowVariableName")
   @js.native
   def RowVariableName: String = js.native
-  @scala.inline
-  def RowVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RowVariableName")(x.asInstanceOf[js.Any])
+  inline def RowVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RowVariableName")(x.asInstanceOf[js.Any])
 }

@@ -30,55 +30,39 @@ trait ConnectionAdvancedParameters extends StObject {
 }
 object ConnectionAdvancedParameters {
   
-  @scala.inline
-  def apply(): ConnectionAdvancedParameters = {
+  inline def apply(): ConnectionAdvancedParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionAdvancedParameters]
   }
   
-  @scala.inline
-  implicit class ConnectionAdvancedParametersMutableBuilder[Self <: ConnectionAdvancedParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionAdvancedParameters](x: Self) {
     
-    @scala.inline
-    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
+    inline def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setUseJDBCCompliantTimeZoneShift(value: Boolean): Self = StObject.set(x, "useJDBCCompliantTimeZoneShift", value.asInstanceOf[js.Any])
+    inline def setUseJDBCCompliantTimeZoneShift(value: Boolean): Self = StObject.set(x, "useJDBCCompliantTimeZoneShift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseJDBCCompliantTimeZoneShiftUndefined: Self = StObject.set(x, "useJDBCCompliantTimeZoneShift", js.undefined)
+    inline def setUseJDBCCompliantTimeZoneShiftUndefined: Self = StObject.set(x, "useJDBCCompliantTimeZoneShift", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
-    @scala.inline
-    def set_clientSslCertificate(value: String): Self = StObject.set(x, "_clientSslCertificate", value.asInstanceOf[js.Any])
+    inline def set_clientSslCertificate(value: String): Self = StObject.set(x, "_clientSslCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_clientSslCertificateUndefined: Self = StObject.set(x, "_clientSslCertificate", js.undefined)
+    inline def set_clientSslCertificateUndefined: Self = StObject.set(x, "_clientSslCertificate", js.undefined)
     
-    @scala.inline
-    def set_clientSslKey(value: String): Self = StObject.set(x, "_clientSslKey", value.asInstanceOf[js.Any])
+    inline def set_clientSslKey(value: String): Self = StObject.set(x, "_clientSslKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_clientSslKeyUndefined: Self = StObject.set(x, "_clientSslKey", js.undefined)
+    inline def set_clientSslKeyUndefined: Self = StObject.set(x, "_clientSslKey", js.undefined)
     
-    @scala.inline
-    def set_serverSslCertificate(value: String): Self = StObject.set(x, "_serverSslCertificate", value.asInstanceOf[js.Any])
+    inline def set_serverSslCertificate(value: String): Self = StObject.set(x, "_serverSslCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_serverSslCertificateUndefined: Self = StObject.set(x, "_serverSslCertificate", js.undefined)
+    inline def set_serverSslCertificateUndefined: Self = StObject.set(x, "_serverSslCertificate", js.undefined)
   }
 }

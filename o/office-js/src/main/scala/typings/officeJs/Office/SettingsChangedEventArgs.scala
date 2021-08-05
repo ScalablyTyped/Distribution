@@ -36,20 +36,16 @@ trait SettingsChangedEventArgs extends StObject {
 }
 object SettingsChangedEventArgs {
   
-  @scala.inline
-  def apply(settings: Settings, `type`: EventType): SettingsChangedEventArgs = {
+  inline def apply(settings: Settings, `type`: EventType): SettingsChangedEventArgs = {
     val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class SettingsChangedEventArgsMutableBuilder[Self <: SettingsChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SettingsChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

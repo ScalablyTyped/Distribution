@@ -34,98 +34,68 @@ object Organizations {
   }
   object Model {
     
-    @scala.inline
-    def apply(created_at: String, id: ZendeskID, name: String): Model = {
+    inline def apply(created_at: String, id: ZendeskID, name: String): Model = {
       val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], updated_at = null)
       __obj.asInstanceOf[Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
+    extension [Self <: Model](x: Self) {
       
-      @scala.inline
-      def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsNull: Self = StObject.set(x, "details", null)
+      inline def setDetailsNull: Self = StObject.set(x, "details", null)
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setDomain_names(value: js.Array[String]): Self = StObject.set(x, "domain_names", value.asInstanceOf[js.Any])
+      inline def setDomain_names(value: js.Array[String]): Self = StObject.set(x, "domain_names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomain_namesUndefined: Self = StObject.set(x, "domain_names", js.undefined)
+      inline def setDomain_namesUndefined: Self = StObject.set(x, "domain_names", js.undefined)
       
-      @scala.inline
-      def setDomain_namesVarargs(value: String*): Self = StObject.set(x, "domain_names", js.Array(value :_*))
+      inline def setDomain_namesVarargs(value: String*): Self = StObject.set(x, "domain_names", js.Array(value :_*))
       
-      @scala.inline
-      def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
+      inline def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_idNull: Self = StObject.set(x, "external_id", null)
+      inline def setExternal_idNull: Self = StObject.set(x, "external_id", null)
       
-      @scala.inline
-      def setExternal_idUndefined: Self = StObject.set(x, "external_id", js.undefined)
+      inline def setExternal_idUndefined: Self = StObject.set(x, "external_id", js.undefined)
       
-      @scala.inline
-      def setGroup_id(value: Double): Self = StObject.set(x, "group_id", value.asInstanceOf[js.Any])
+      inline def setGroup_id(value: Double): Self = StObject.set(x, "group_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroup_idNull: Self = StObject.set(x, "group_id", null)
+      inline def setGroup_idNull: Self = StObject.set(x, "group_id", null)
       
-      @scala.inline
-      def setGroup_idUndefined: Self = StObject.set(x, "group_id", js.undefined)
+      inline def setGroup_idUndefined: Self = StObject.set(x, "group_id", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+      inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotesNull: Self = StObject.set(x, "notes", null)
+      inline def setNotesNull: Self = StObject.set(x, "notes", null)
       
-      @scala.inline
-      def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+      inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
       
-      @scala.inline
-      def setOrganization_fields(value: js.Object): Self = StObject.set(x, "organization_fields", value.asInstanceOf[js.Any])
+      inline def setOrganization_fields(value: js.Object): Self = StObject.set(x, "organization_fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganization_fieldsNull: Self = StObject.set(x, "organization_fields", null)
+      inline def setOrganization_fieldsNull: Self = StObject.set(x, "organization_fields", null)
       
-      @scala.inline
-      def setOrganization_fieldsUndefined: Self = StObject.set(x, "organization_fields", js.undefined)
+      inline def setOrganization_fieldsUndefined: Self = StObject.set(x, "organization_fields", js.undefined)
       
-      @scala.inline
-      def setShared_comments(value: Boolean): Self = StObject.set(x, "shared_comments", value.asInstanceOf[js.Any])
+      inline def setShared_comments(value: Boolean): Self = StObject.set(x, "shared_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShared_commentsUndefined: Self = StObject.set(x, "shared_comments", js.undefined)
+      inline def setShared_commentsUndefined: Self = StObject.set(x, "shared_comments", js.undefined)
       
-      @scala.inline
-      def setShared_tickets(value: Boolean): Self = StObject.set(x, "shared_tickets", value.asInstanceOf[js.Any])
+      inline def setShared_tickets(value: Boolean): Self = StObject.set(x, "shared_tickets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShared_ticketsUndefined: Self = StObject.set(x, "shared_tickets", js.undefined)
+      inline def setShared_ticketsUndefined: Self = StObject.set(x, "shared_tickets", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

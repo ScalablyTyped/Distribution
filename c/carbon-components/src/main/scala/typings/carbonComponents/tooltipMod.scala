@@ -39,8 +39,7 @@ object tooltipMod {
     @JSImport("carbon-components/components/tooltip/tooltip", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -58,8 +57,7 @@ object tooltipMod {
   }
   object Tooltip {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _handleClick: js.Any => Unit,
       _hasContextMenu: Boolean,
       _hookOn: js.Any => Unit,
@@ -70,23 +68,17 @@ object tooltipMod {
       __obj.asInstanceOf[Tooltip]
     }
     
-    @scala.inline
-    implicit class TooltipMutableBuilder[Self <: Tooltip] (val x: Self) extends AnyVal {
+    extension [Self <: Tooltip](x: Self) {
       
-      @scala.inline
-      def setChangeState(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "changeState", js.Any.fromFunction3(value))
+      inline def setChangeState(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "changeState", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCreatedByEvent(value: js.Any => Unit): Self = StObject.set(x, "createdByEvent", js.Any.fromFunction1(value))
+      inline def setCreatedByEvent(value: js.Any => Unit): Self = StObject.set(x, "createdByEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_handleClick(value: js.Any => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction1(value))
+      inline def set_handleClick(value: js.Any => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_hasContextMenu(value: Boolean): Self = StObject.set(x, "_hasContextMenu", value.asInstanceOf[js.Any])
+      inline def set_hasContextMenu(value: Boolean): Self = StObject.set(x, "_hasContextMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_hookOn(value: js.Any => Unit): Self = StObject.set(x, "_hookOn", js.Any.fromFunction1(value))
+      inline def set_hookOn(value: js.Any => Unit): Self = StObject.set(x, "_hookOn", js.Any.fromFunction1(value))
     }
   }
 }

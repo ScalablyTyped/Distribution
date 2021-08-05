@@ -17,19 +17,15 @@ trait InstantEvent
 }
 object InstantEvent {
   
-  @scala.inline
-  def apply(ph: INSTANT_EVENTS, s: String): InstantEvent = {
+  inline def apply(ph: INSTANT_EVENTS, s: String): InstantEvent = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstantEvent]
   }
   
-  @scala.inline
-  implicit class InstantEventMutableBuilder[Self <: InstantEvent] (val x: Self) extends AnyVal {
+  extension [Self <: InstantEvent](x: Self) {
     
-    @scala.inline
-    def setPh(value: INSTANT_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: INSTANT_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
   }
 }

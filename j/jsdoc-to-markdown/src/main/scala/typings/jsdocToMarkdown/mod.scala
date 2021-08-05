@@ -10,33 +10,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clear(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Promise[Unit]]
+  inline def clear(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def getJsdocData(options: JsdocOptions): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJsdocData")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
+  inline def getJsdocData(options: JsdocOptions): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJsdocData")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
   
-  @scala.inline
-  def getJsdocDataSync(options: JsdocOptions): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJsdocDataSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+  inline def getJsdocDataSync(options: JsdocOptions): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJsdocDataSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
   
-  @scala.inline
-  def getNamepaths(options: JsdocOptions): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamepaths")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  inline def getNamepaths(options: JsdocOptions): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamepaths")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
-  @scala.inline
-  def getTemplateData(options: JsdocOptions): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateData")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
+  inline def getTemplateData(options: JsdocOptions): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateData")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
   
-  @scala.inline
-  def getTemplateDataSync(options: JsdocOptions): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateDataSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+  inline def getTemplateDataSync(options: JsdocOptions): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateDataSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
   
-  @scala.inline
-  def render(options: JsdocOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def render(options: RenderOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def render(options: JsdocOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def render(options: RenderOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def renderSync(options: JsdocOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def renderSync(options: RenderOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def renderSync(options: JsdocOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def renderSync(options: RenderOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait JsdocOptions extends StObject {
     
@@ -66,38 +56,28 @@ object mod {
   }
   object JsdocOptions {
     
-    @scala.inline
-    def apply(files: String | js.Array[String]): JsdocOptions = {
+    inline def apply(files: String | js.Array[String]): JsdocOptions = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsdocOptions]
     }
     
-    @scala.inline
-    implicit class JsdocOptionsMutableBuilder[Self <: JsdocOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JsdocOptions](x: Self) {
       
-      @scala.inline
-      def setConfigure(value: String): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
+      inline def setConfigure(value: String): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigureUndefined: Self = StObject.set(x, "configure", js.undefined)
+      inline def setConfigureUndefined: Self = StObject.set(x, "configure", js.undefined)
       
-      @scala.inline
-      def setFiles(value: String | js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: String | js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setNoCache(value: Boolean): Self = StObject.set(x, "noCache", value.asInstanceOf[js.Any])
+      inline def setNoCache(value: Boolean): Self = StObject.set(x, "noCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoCacheUndefined: Self = StObject.set(x, "noCache", js.undefined)
+      inline def setNoCacheUndefined: Self = StObject.set(x, "noCache", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
   
@@ -108,11 +88,9 @@ object mod {
   trait MemberIndexFormat extends StObject
   object MemberIndexFormat {
     
-    @scala.inline
-    def grouped: typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped = "grouped".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped]
+    inline def grouped: typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped = "grouped".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped]
     
-    @scala.inline
-    def list: typings.jsdocToMarkdown.jsdocToMarkdownStrings.list = "list".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.list]
+    inline def list: typings.jsdocToMarkdown.jsdocToMarkdownStrings.list = "list".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.list]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -122,11 +100,9 @@ object mod {
   trait RenderListFormat extends StObject
   object RenderListFormat {
     
-    @scala.inline
-    def list: typings.jsdocToMarkdown.jsdocToMarkdownStrings.list = "list".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.list]
+    inline def list: typings.jsdocToMarkdown.jsdocToMarkdownStrings.list = "list".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.list]
     
-    @scala.inline
-    def table: typings.jsdocToMarkdown.jsdocToMarkdownStrings.table = "table".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.table]
+    inline def table: typings.jsdocToMarkdown.jsdocToMarkdownStrings.table = "table".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.table]
   }
   
   trait RenderOptions extends StObject {
@@ -209,116 +185,80 @@ object mod {
   }
   object RenderOptions {
     
-    @scala.inline
-    def apply(): RenderOptions = {
+    inline def apply(): RenderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenderOptions]
     }
     
-    @scala.inline
-    implicit class RenderOptionsMutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RenderOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setExampleLang(value: String): Self = StObject.set(x, "exampleLang", value.asInstanceOf[js.Any])
+      inline def setExampleLang(value: String): Self = StObject.set(x, "exampleLang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExampleLangUndefined: Self = StObject.set(x, "exampleLang", js.undefined)
+      inline def setExampleLangUndefined: Self = StObject.set(x, "exampleLang", js.undefined)
       
-      @scala.inline
-      def setGlobalIndexFormat(value: StyleListFormat): Self = StObject.set(x, "globalIndexFormat", value.asInstanceOf[js.Any])
+      inline def setGlobalIndexFormat(value: StyleListFormat): Self = StObject.set(x, "globalIndexFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalIndexFormatUndefined: Self = StObject.set(x, "globalIndexFormat", js.undefined)
+      inline def setGlobalIndexFormatUndefined: Self = StObject.set(x, "globalIndexFormat", js.undefined)
       
-      @scala.inline
-      def setHeadingDepth(value: Double): Self = StObject.set(x, "headingDepth", value.asInstanceOf[js.Any])
+      inline def setHeadingDepth(value: Double): Self = StObject.set(x, "headingDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadingDepthUndefined: Self = StObject.set(x, "headingDepth", js.undefined)
+      inline def setHeadingDepthUndefined: Self = StObject.set(x, "headingDepth", js.undefined)
       
-      @scala.inline
-      def setHelper(value: String | js.Array[String]): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+      inline def setHelper(value: String | js.Array[String]): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
+      inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
       
-      @scala.inline
-      def setHelperVarargs(value: String*): Self = StObject.set(x, "helper", js.Array(value :_*))
+      inline def setHelperVarargs(value: String*): Self = StObject.set(x, "helper", js.Array(value :_*))
       
-      @scala.inline
-      def setMemberIndexFormat(value: MemberIndexFormat): Self = StObject.set(x, "memberIndexFormat", value.asInstanceOf[js.Any])
+      inline def setMemberIndexFormat(value: MemberIndexFormat): Self = StObject.set(x, "memberIndexFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemberIndexFormatUndefined: Self = StObject.set(x, "memberIndexFormat", js.undefined)
+      inline def setMemberIndexFormatUndefined: Self = StObject.set(x, "memberIndexFormat", js.undefined)
       
-      @scala.inline
-      def setModuleIndexFormat(value: StyleListFormat): Self = StObject.set(x, "moduleIndexFormat", value.asInstanceOf[js.Any])
+      inline def setModuleIndexFormat(value: StyleListFormat): Self = StObject.set(x, "moduleIndexFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleIndexFormatUndefined: Self = StObject.set(x, "moduleIndexFormat", js.undefined)
+      inline def setModuleIndexFormatUndefined: Self = StObject.set(x, "moduleIndexFormat", js.undefined)
       
-      @scala.inline
-      def setNameFormat(value: String): Self = StObject.set(x, "nameFormat", value.asInstanceOf[js.Any])
+      inline def setNameFormat(value: String): Self = StObject.set(x, "nameFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameFormatUndefined: Self = StObject.set(x, "nameFormat", js.undefined)
+      inline def setNameFormatUndefined: Self = StObject.set(x, "nameFormat", js.undefined)
       
-      @scala.inline
-      def setNoGfm(value: Boolean): Self = StObject.set(x, "noGfm", value.asInstanceOf[js.Any])
+      inline def setNoGfm(value: Boolean): Self = StObject.set(x, "noGfm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoGfmUndefined: Self = StObject.set(x, "noGfm", js.undefined)
+      inline def setNoGfmUndefined: Self = StObject.set(x, "noGfm", js.undefined)
       
-      @scala.inline
-      def setParamListFormat(value: RenderListFormat): Self = StObject.set(x, "paramListFormat", value.asInstanceOf[js.Any])
+      inline def setParamListFormat(value: RenderListFormat): Self = StObject.set(x, "paramListFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamListFormatUndefined: Self = StObject.set(x, "paramListFormat", js.undefined)
+      inline def setParamListFormatUndefined: Self = StObject.set(x, "paramListFormat", js.undefined)
       
-      @scala.inline
-      def setPartial(value: String | js.Array[String]): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+      inline def setPartial(value: String | js.Array[String]): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
+      inline def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
       
-      @scala.inline
-      def setPartialVarargs(value: String*): Self = StObject.set(x, "partial", js.Array(value :_*))
+      inline def setPartialVarargs(value: String*): Self = StObject.set(x, "partial", js.Array(value :_*))
       
-      @scala.inline
-      def setPlugin(value: String | js.Array[String]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: String | js.Array[String]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
       
-      @scala.inline
-      def setPluginVarargs(value: String*): Self = StObject.set(x, "plugin", js.Array(value :_*))
+      inline def setPluginVarargs(value: String*): Self = StObject.set(x, "plugin", js.Array(value :_*))
       
-      @scala.inline
-      def setPropertyListFormat(value: RenderListFormat): Self = StObject.set(x, "propertyListFormat", value.asInstanceOf[js.Any])
+      inline def setPropertyListFormat(value: RenderListFormat): Self = StObject.set(x, "propertyListFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyListFormatUndefined: Self = StObject.set(x, "propertyListFormat", js.undefined)
+      inline def setPropertyListFormatUndefined: Self = StObject.set(x, "propertyListFormat", js.undefined)
       
-      @scala.inline
-      def setSeperators(value: Boolean): Self = StObject.set(x, "seperators", value.asInstanceOf[js.Any])
+      inline def setSeperators(value: Boolean): Self = StObject.set(x, "seperators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeperatorsUndefined: Self = StObject.set(x, "seperators", js.undefined)
+      inline def setSeperatorsUndefined: Self = StObject.set(x, "seperators", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   
@@ -331,16 +271,12 @@ object mod {
   trait StyleListFormat extends StObject
   object StyleListFormat {
     
-    @scala.inline
-    def dl: typings.jsdocToMarkdown.jsdocToMarkdownStrings.dl = "dl".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.dl]
+    inline def dl: typings.jsdocToMarkdown.jsdocToMarkdownStrings.dl = "dl".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.dl]
     
-    @scala.inline
-    def grouped: typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped = "grouped".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped]
+    inline def grouped: typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped = "grouped".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped]
     
-    @scala.inline
-    def none: typings.jsdocToMarkdown.jsdocToMarkdownStrings.none = "none".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.none]
+    inline def none: typings.jsdocToMarkdown.jsdocToMarkdownStrings.none = "none".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.none]
     
-    @scala.inline
-    def table: typings.jsdocToMarkdown.jsdocToMarkdownStrings.table = "table".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.table]
+    inline def table: typings.jsdocToMarkdown.jsdocToMarkdownStrings.table = "table".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.table]
   }
 }

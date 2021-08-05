@@ -28,34 +28,25 @@ trait StartExecutionInput extends StObject {
 }
 object StartExecutionInput {
   
-  @scala.inline
-  def apply(stateMachineArn: Arn): StartExecutionInput = {
+  inline def apply(stateMachineArn: Arn): StartExecutionInput = {
     val __obj = js.Dynamic.literal(stateMachineArn = stateMachineArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartExecutionInput]
   }
   
-  @scala.inline
-  implicit class StartExecutionInputMutableBuilder[Self <: StartExecutionInput] (val x: Self) extends AnyVal {
+  extension [Self <: StartExecutionInput](x: Self) {
     
-    @scala.inline
-    def setInput(value: SensitiveData): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: SensitiveData): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
+    inline def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceHeader(value: TraceHeader): Self = StObject.set(x, "traceHeader", value.asInstanceOf[js.Any])
+    inline def setTraceHeader(value: TraceHeader): Self = StObject.set(x, "traceHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceHeaderUndefined: Self = StObject.set(x, "traceHeader", js.undefined)
+    inline def setTraceHeaderUndefined: Self = StObject.set(x, "traceHeader", js.undefined)
   }
 }

@@ -48,64 +48,45 @@ trait UserDefinedFunction extends StObject {
 }
 object UserDefinedFunction {
   
-  @scala.inline
-  def apply(): UserDefinedFunction = {
+  inline def apply(): UserDefinedFunction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserDefinedFunction]
   }
   
-  @scala.inline
-  implicit class UserDefinedFunctionMutableBuilder[Self <: UserDefinedFunction] (val x: Self) extends AnyVal {
+  extension [Self <: UserDefinedFunction](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setClassName(value: NameString): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
+    inline def setClassName(value: NameString): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "ClassName", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "ClassName", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: Timestamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: Timestamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
+    inline def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
-    @scala.inline
-    def setFunctionName(value: NameString): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: NameString): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionNameUndefined: Self = StObject.set(x, "FunctionName", js.undefined)
+    inline def setFunctionNameUndefined: Self = StObject.set(x, "FunctionName", js.undefined)
     
-    @scala.inline
-    def setOwnerName(value: NameString): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
+    inline def setOwnerName(value: NameString): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerNameUndefined: Self = StObject.set(x, "OwnerName", js.undefined)
+    inline def setOwnerNameUndefined: Self = StObject.set(x, "OwnerName", js.undefined)
     
-    @scala.inline
-    def setOwnerType(value: PrincipalType): Self = StObject.set(x, "OwnerType", value.asInstanceOf[js.Any])
+    inline def setOwnerType(value: PrincipalType): Self = StObject.set(x, "OwnerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerTypeUndefined: Self = StObject.set(x, "OwnerType", js.undefined)
+    inline def setOwnerTypeUndefined: Self = StObject.set(x, "OwnerType", js.undefined)
     
-    @scala.inline
-    def setResourceUris(value: ResourceUriList): Self = StObject.set(x, "ResourceUris", value.asInstanceOf[js.Any])
+    inline def setResourceUris(value: ResourceUriList): Self = StObject.set(x, "ResourceUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUrisUndefined: Self = StObject.set(x, "ResourceUris", js.undefined)
+    inline def setResourceUrisUndefined: Self = StObject.set(x, "ResourceUris", js.undefined)
     
-    @scala.inline
-    def setResourceUrisVarargs(value: ResourceUri*): Self = StObject.set(x, "ResourceUris", js.Array(value :_*))
+    inline def setResourceUrisVarargs(value: ResourceUri*): Self = StObject.set(x, "ResourceUris", js.Array(value :_*))
   }
 }

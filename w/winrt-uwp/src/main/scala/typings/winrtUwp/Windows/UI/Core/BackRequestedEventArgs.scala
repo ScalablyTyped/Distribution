@@ -12,16 +12,13 @@ trait BackRequestedEventArgs extends StObject {
 }
 object BackRequestedEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean): BackRequestedEventArgs = {
+  inline def apply(handled: Boolean): BackRequestedEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class BackRequestedEventArgsMutableBuilder[Self <: BackRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BackRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }
 }

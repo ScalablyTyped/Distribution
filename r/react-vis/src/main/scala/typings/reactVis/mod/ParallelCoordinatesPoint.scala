@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with AbstractSeriesPoint
 object ParallelCoordinatesPoint {
   
-  @scala.inline
-  def apply(): ParallelCoordinatesPoint = {
+  inline def apply(): ParallelCoordinatesPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParallelCoordinatesPoint]
   }

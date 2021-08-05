@@ -24,25 +24,19 @@ trait HashNavigationOptions extends StObject {
 }
 object HashNavigationOptions {
   
-  @scala.inline
-  def apply(): HashNavigationOptions = {
+  inline def apply(): HashNavigationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HashNavigationOptions]
   }
   
-  @scala.inline
-  implicit class HashNavigationOptionsMutableBuilder[Self <: HashNavigationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HashNavigationOptions](x: Self) {
     
-    @scala.inline
-    def setReplaceState(value: Boolean): Self = StObject.set(x, "replaceState", value.asInstanceOf[js.Any])
+    inline def setReplaceState(value: Boolean): Self = StObject.set(x, "replaceState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceStateUndefined: Self = StObject.set(x, "replaceState", js.undefined)
+    inline def setReplaceStateUndefined: Self = StObject.set(x, "replaceState", js.undefined)
     
-    @scala.inline
-    def setWatchState(value: Boolean): Self = StObject.set(x, "watchState", value.asInstanceOf[js.Any])
+    inline def setWatchState(value: Boolean): Self = StObject.set(x, "watchState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchStateUndefined: Self = StObject.set(x, "watchState", js.undefined)
+    inline def setWatchStateUndefined: Self = StObject.set(x, "watchState", js.undefined)
   }
 }

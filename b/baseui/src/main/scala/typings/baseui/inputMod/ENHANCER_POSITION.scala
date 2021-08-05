@@ -18,13 +18,10 @@ object ENHANCER_POSITION {
   @js.native
   val ^ : ENHANCER_POSITION = js.native
   
-  @scala.inline
-  implicit class ENHANCER_POSITIONMutableBuilder[Self <: ENHANCER_POSITION] (val x: Self) extends AnyVal {
+  extension [Self <: ENHANCER_POSITION](x: Self) {
     
-    @scala.inline
-    def setEnd(value: end): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: end): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: start): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: start): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

@@ -23,43 +23,31 @@ trait Space extends StObject {
 }
 object Space {
   
-  @scala.inline
-  def apply(): Space = {
+  inline def apply(): Space = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Space]
   }
   
-  @scala.inline
-  implicit class SpaceMutableBuilder[Self <: Space] (val x: Self) extends AnyVal {
+  extension [Self <: Space](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSingleUserBotDm(value: Boolean): Self = StObject.set(x, "singleUserBotDm", value.asInstanceOf[js.Any])
+    inline def setSingleUserBotDm(value: Boolean): Self = StObject.set(x, "singleUserBotDm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleUserBotDmUndefined: Self = StObject.set(x, "singleUserBotDm", js.undefined)
+    inline def setSingleUserBotDmUndefined: Self = StObject.set(x, "singleUserBotDm", js.undefined)
     
-    @scala.inline
-    def setThreaded(value: Boolean): Self = StObject.set(x, "threaded", value.asInstanceOf[js.Any])
+    inline def setThreaded(value: Boolean): Self = StObject.set(x, "threaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadedUndefined: Self = StObject.set(x, "threaded", js.undefined)
+    inline def setThreadedUndefined: Self = StObject.set(x, "threaded", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

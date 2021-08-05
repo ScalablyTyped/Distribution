@@ -23,31 +23,23 @@ trait AssociateTargetsWithJobResponse extends StObject {
 }
 object AssociateTargetsWithJobResponse {
   
-  @scala.inline
-  def apply(): AssociateTargetsWithJobResponse = {
+  inline def apply(): AssociateTargetsWithJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateTargetsWithJobResponse]
   }
   
-  @scala.inline
-  implicit class AssociateTargetsWithJobResponseMutableBuilder[Self <: AssociateTargetsWithJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateTargetsWithJobResponse](x: Self) {
     
-    @scala.inline
-    def setDescription(value: JobDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: JobDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setJobArn(value: JobArn): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
+    inline def setJobArn(value: JobArn): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
+    inline def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
   }
 }
